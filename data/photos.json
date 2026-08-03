@@ -1,5 +1,195 @@
 {
- "leaders": [],
+ "leaders": [
+  {
+   "year": "2015-16",
+   "name": "Jay Todd Richey",
+   "file": "2015-16-jay-todd-richey.jpg",
+   "src": {
+    "label": "Herald, Mar 2017",
+    "url": "https://wkuherald.com/29658/news/graduating-sga-president-reflects-on-two-terms/"
+   }
+  },
+  {
+   "year": "2022-23",
+   "name": "Cole Bornefeld",
+   "file": "2022-23-cole-bornefeld.jpg",
+   "src": {
+    "label": "Herald, Oct 2022",
+    "url": "https://wkuherald.com/69113/news/the-making-of-an-sga-president/"
+   }
+  },
+  {
+   "year": "2019-20",
+   "name": "Will Harris",
+   "file": "2019-20-will-harris.jpg",
+   "src": {
+    "label": "Herald, Feb 2020",
+    "url": "https://wkuherald.com/17087/news/sga-plans-trip-to-rally-for-higher-education-in-march/"
+   }
+  },
+  {
+   "year": "2017-18",
+   "name": "Andi Dahmer",
+   "file": "2017-18-andi-dahmer.jpg",
+   "src": {
+    "label": "Herald, Apr 2019",
+    "url": "https://wkuherald.com/20416/news/wku-to-release-records-to-former-sga-president/"
+   }
+  },
+  {
+   "year": "2025-26",
+   "name": "Rush Robinson",
+   "file": "2025-26-rush-robinson-solo.jpg",
+   "src": {
+    "label": "WKU News, 2025",
+    "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13040"
+   }
+  },
+  {
+   "year": "2018-19",
+   "name": "Stephen Mayer",
+   "file": "2018-19-stephen-mayer.jpg",
+   "src": {
+    "label": "Herald, Apr 2019",
+    "url": "https://wkuherald.com/20349/news/sga-allocates-17000-to-fund-scholarships/"
+   }
+  },
+  {
+   "year": "2021-22",
+   "name": "Matthew Wininger",
+   "file": "2021-22-matthew-wininger.jpg",
+   "src": {
+    "label": "WKU News, Apr 2021",
+    "url": "https://www.wku.edu/news/articles/index.php?articleid=9622&view=article"
+   }
+  },
+  {
+   "year": "2023-24",
+   "name": "Sam Kurtz",
+   "file": "2023-24-sam-kurtz.jpg",
+   "src": {
+    "label": "Herald, Aug 2024",
+    "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
+   }
+  },
+  {
+   "year": "2026-27",
+   "name": "Caden Lucas",
+   "file": "2026-27-caden-lucas-solo.jpg",
+   "src": {
+    "label": "WKU News, 2026",
+    "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13098"
+   }
+  },
+  {
+   "year": "2020-21",
+   "name": "J. Garrett Edmonds",
+   "file": "2020-21-garrett-edmonds.jpg",
+   "src": {
+    "label": "Herald, Oct 2018",
+    "url": "https://wkuherald.com/23183/news/sga-vice-president-moves-forward-after-election-controversy/"
+   }
+  },
+  {
+   "year": "2011-12",
+   "name": "Billy Stephens",
+   "file": "2011-12-billy-stephens.jpg",
+   "src": {
+    "label": "Herald, 15 Apr 2011",
+    "url": "https://wkuherald.com/51759/news/stephens-already-an-experienced-leader/"
+   }
+  },
+  {
+   "year": "2010-11",
+   "name": "Colton Jessie",
+   "file": "2010-11-colton-jessie.jpg",
+   "src": {
+    "label": "Herald, Apr 2011",
+    "url": "https://wkuherald.com/52039/news/jessie-reflects-on-year-as-sga-president/"
+   }
+  },
+  {
+   "year": "2009-10",
+   "name": "Kevin Smiley",
+   "file": "2009-10-kevin-smiley.jpg",
+   "src": {
+    "label": "Daily News, Nov 2008",
+    "url": "https://bgdailynews.com/2008/11/13/2-students-on-gov-s-higher-ed-committee/"
+   }
+  },
+  {
+   "year": "2012-13",
+   "name": "Cory Dodds",
+   "file": "2012-13-cory-dodds.jpg",
+   "src": {
+    "label": "Herald, Mar 2012",
+    "url": "https://wkuherald.com/48077/news/dodds-elected-sga-president/"
+   }
+  },
+  {
+   "year": "2014-15",
+   "name": "Janet \"Nicki\" Seay",
+   "file": "2014-15-nicki-seay.jpg",
+   "src": {
+    "label": "Herald, Aug 2014",
+    "url": "https://wkuherald.com/39702/news/students-attend-special-dsu-celebration/"
+   }
+  },
+  {
+   "year": "2008-09",
+   "name": "Johnathon Boles",
+   "file": "2008-09-johnathon-boles.jpg",
+   "src": {
+    "label": "BG Daily News, Nov 2008",
+    "url": "https://bgdailynews.com/2008/11/13/2-students-on-gov-s-higher-ed-committee/"
+   }
+  },
+  {
+   "year": "2013-14",
+   "name": "Keyanna Boka",
+   "file": "2013-14-keyanna-boka.jpg",
+   "src": {
+    "label": "Herald, Apr 2013",
+    "url": "https://wkuherald.com/44046/news/boka-reinstated-as-sga-president-elect/"
+   }
+  },
+  {
+   "year": "2014-15",
+   "name": "Nicki Taylor",
+   "file": "2014-15-nicki-taylor.jpg",
+   "src": {
+    "label": "Herald, Mar 2015",
+    "url": "https://wkuherald.com/36634/life/sga-president-juggles-school-government-marriage/"
+   }
+  },
+  {
+   "year": "2005-06",
+   "name": "Katie Dawson",
+   "file": "2005-06-katie-dawson.jpg",
+   "src": {
+    "label": "Daily News, 31 Mar 2006",
+    "url": "https://bgdailynews.com/2006/03/31/a-show-of-voices/"
+   }
+  },
+  {
+   "year": "2016-17",
+   "name": "Jay Todd Richey",
+   "file": "2015-16-jay-todd-richey.jpg",
+   "src": {
+    "label": "Herald, Mar 2017",
+    "url": "https://wkuherald.com/29658/news/graduating-sga-president-reflects-on-two-terms/"
+   }
+  },
+  {
+   "year": "2024-25",
+   "name": "Sam Kurtz",
+   "file": "2023-24-sam-kurtz.jpg",
+   "src": {
+    "label": "Herald, Aug 2024",
+    "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
+   }
+  }
+ ],
  "years": [
   {
    "year": "2025-26",

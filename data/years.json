@@ -1345,8 +1345,13 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Single-year plate and the only name attached to 2006. No plate covers a full 2006-07 term. Something happened here. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage.",
-     "sources": []
+     "note": "Single-year plate and the only name attached to 2006. No plate covers a full 2006-07 term. Something happened here. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage. Confirmed: Watkins resigned from SGA in fall 2006, partway through the term, which explains the plaque's single-year plate.",
+     "sources": [
+      {
+       "label": "Herald - SGA drama settled, Apr 2013",
+       "url": "https://wkuherald.com/44025/news/sga-drama-settled-what-does-baileys-ruling-mean-for-the-future-of-sga/"
+      }
+     ]
     }
    ],
    "events": [],
@@ -1397,11 +1402,15 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Appears in the WKU Archives regents index marked as student regent for 2008. In office for the February 2008 Frankfort rally, after which roughly fifty senators each filed a written reflection - the richest first-person source in the collection. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage.",
+     "note": "Appears in the WKU Archives regents index marked as student regent for 2008. In office for the February 2008 Frankfort rally, after which roughly fifty senators each filed a written reflection - the richest first-person source in the collection. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage. The Herald's 2013 retrospective records that Boles resigned in January 2009.",
      "sources": [
       {
        "label": "TopSCHOLAR - Frankfort rally reflections",
        "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
+      },
+      {
+       "label": "Herald - SGA drama settled, Apr 2013",
+       "url": "https://wkuherald.com/44025/news/sga-drama-settled-what-does-baileys-ruling-mean-for-the-future-of-sga/"
       }
      ]
     }
@@ -1423,7 +1432,7 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Single-year plate; overlaps Kevin Smiley 2009-10. By this period the SGA president automatically held the student regent seat, so a second name in the same year indicates a mid-year succession - a resignation, graduation or removal - not a separately elected regent. Which of the two finished the term is not yet established.",
+     "note": "Single-year plate; overlaps Kevin Smiley 2009-10. By this period the SGA president automatically held the student regent seat, so a second name in the same year indicates a mid-year succession - a resignation, graduation or removal - not a separately elected regent. Which of the two finished the term is not yet established. An August 2026 open-web sweep found no corroboration of this presidency at all; verify against the digitised Herald before treating the plate as fact.",
      "sources": []
     },
     {
@@ -1610,8 +1619,8 @@
      "note": "Re-elected. In office for Resolution 6-17-S, the reparations resolution, which passed 19-10-1 on 18 April 2017 and drew national coverage. Richey publicly framed it as a conversation starter; President Gary Ransdell stated within days that WKU would not adopt it.",
      "sources": [
       {
-       "label": "Bowling Green Daily News, Apr 2017",
-       "url": "https://www.bgdailynews.com/news/sga-passes-resolution-supporting-reparations-for-black-students/article_8daeb133-844e-5052-a5ac-87189800ef25.html"
+       "label": "Bowling Green Daily News, Apr 2017 (archived copy)",
+       "url": "https://web.archive.org/web/20181116203332id_/https://www.bgdailynews.com/news/sga-passes-resolution-supporting-reparations-for-black-students/article_8daeb133-844e-5052-a5ac-87189800ef25.html"
       }
      ]
     }
@@ -1622,8 +1631,9 @@
      "title": "Resolution 6-17-S passes 19-10-1",
      "body": "Senators Andrea Ambam and Brian Anderson wrote a resolution supporting reparations for Black students, calling for full and free access to WKU for all Black people and asking for a task force on test-optional and geographically weighted admissions. Modelled on a resolution passed at Wisconsin-Madison earlier that year.",
      "src": {
-      "label": "Bowling Green Daily News",
-      "url": "https://www.bgdailynews.com/news/sga-passes-resolution-supporting-reparations-for-black-students/article_8daeb133-844e-5052-a5ac-87189800ef25.html"
+      "label": "Daily News, Apr 2017 (archived copy)",
+      "url": "https://web.archive.org/web/20181116203332id_/https://www.bgdailynews.com/news/sga-passes-resolution-supporting-reparations-for-black-students/article_8daeb133-844e-5052-a5ac-87189800ef25.html",
+      "file": "2016-17-senate-minutes-smm-4-18-17.pdf"
      }
     },
     {
@@ -1636,7 +1646,21 @@
      }
     }
    ],
-   "status": "partial"
+   "status": "partial",
+   "documents": [
+    {
+     "file": "2016-17-senate-minutes-smm-4-18-17.pdf",
+     "title": "Senate minutes, 18 April 2017",
+     "summary": "The SGA's own record of the meeting that passed Resolution 6-17-S, the reparations resolution that drew national coverage. Also records Resolutions 4-17-S and 5-17-S and Bill 29-17-S passing the same night.",
+     "extract": "Resolution 6-17-S passes.",
+     "sga_pages": "1-3",
+     "page": 2,
+     "src": {
+      "label": "WKU SGA legislative minutes",
+      "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_4_18_17.pdf"
+     }
+    }
+   ]
   },
   {
    "id": "2017-18",
@@ -1945,8 +1969,8 @@
      "title": "Turnout jumps 66% in a contested race",
      "body": "1,601 students voted, 635 more than the year before. Lucas won. The clearest evidence in the whole record that WKU turnout tracks whether there is an actual contest.",
      "src": {
-      "label": "Herald, April 2026",
-      "url": "https://wkuherald.com/92808/news/lucas-wins-sga-presidential-election/"
+      "label": "WKU News - Lucas elected",
+      "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13041"
      }
     },
     {
@@ -1961,7 +1985,7 @@
     {
      "date": "2026-04-28",
      "title": "The red suit jacket changes hands",
-     "body": "Lucas, Barker and Derryberry sworn in at the first meeting of the 26th Senate. Robinson handed Lucas the same red jacket his own predecessor had given him a year earlier.",
+     "body": "At the first meeting of the 26th Senate, Robinson handed Lucas the red suit jacket, \"the one that Sam (Kurtz) gave me.\" The same night, Gabby Pace, Cayden Bailey, Maggie Phelps and Jaden Marshall were sworn in to their new roles.",
      "src": {
       "label": "Herald, April 2026",
       "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"

@@ -24,11 +24,9 @@ YDIR = SITE / "y"
 def h(s):
     return html_mod.escape(str(s), quote=True)
 
-FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
-         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-         '<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700'
-         '&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400'
-         '&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">')
+# San Francisco on Apple devices via the system font stack; graceful fallbacks
+# elsewhere. No webfont downloads, no external requests, instant rendering.
+FONTS = ""
 
 # ---------------------------------------------------------------- tokens
 BASE = """
@@ -38,14 +36,16 @@ BASE = """
  --engrave:#22241F; --tungsten:#FFE6BC; --tungsten-dim:#C9A970;
  --red:#B01E24; --red-dim:#7A171C;
  --txt:#D9DBD5; --txt2:#9AA096; --txt3:#666B62;
- --inscribe:"Cinzel",Georgia,serif; --ui:"Public Sans",system-ui,sans-serif;
- --mono:"IBM Plex Mono",ui-monospace,monospace;
+ --inscribe:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
+ --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
+ --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--void);color:var(--txt);font-family:var(--ui);
- font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+ font-size:clamp(15px,0.35vw + 13.8px,18px);line-height:1.6;
+ -webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:var(--tungsten-dim);text-underline-offset:3px}
 a:hover{color:var(--tungsten)}
 :focus-visible{outline:2px solid var(--tungsten);outline-offset:3px;border-radius:2px}
@@ -465,10 +465,15 @@ def render_gallery(y):
     return f'<h2 class="sub">The year in pictures</h2><div class="gallery">{figs}</div>'
 
 
+def leg_sorted(entries):
+    return sorted(entries, key=lambda e: (e.get("date") or "9999-99-99", e["title"]))
+
+
 def leg_row(e, depth):
     up = "../" * depth
+    when = f'<br>{e["date"]}' if e.get("date") else ""
     return (f'<div class="lrow" data-t="{h(e["title"].lower())} {h(e["type"])}">'
-            f'<span class="ltype">{h(e["type"])}</span><span class="lt">{h(e["title"])}</span>'
+            f'<span class="ltype">{h(e["type"])}{when}</span><span class="lt">{h(e["title"])}</span>'
             f'<span class="lls"><a href="{up}legislation/{e["file"]}" target="_blank" rel="noopener">read &#8599;</a>'
             f'<a href="{h(e["source_url"])}" target="_blank" rel="noopener">original &#8599;</a></span></div>')
 
@@ -485,7 +490,7 @@ def render_legislation(entries):
     secs = "".join(
         f'<section class="lsec" id="s{k}"><h2 class="sub">{lab} '
         f'<span class="lcount">{len(groups[k])} documents</span></h2>'
-        + "".join(leg_row(e, 0) for e in groups[k]) + '</section>'
+        + "".join(leg_row(e, 0) for e in leg_sorted(groups[k])) + '</section>'
         for k, lab in order)
     body = f"""
 <nav class="nav"><div class="wrap">
@@ -518,7 +523,7 @@ def render_leg_year(leg):
     if not leg:
         return ""
     return (f'<h2 class="sub">Legislation &mdash; {len(leg)} documents on file</h2>'
-            + "".join(leg_row(e, 1) for e in leg))
+            + "".join(leg_row(e, 1) for e in leg_sorted(leg)))
 
 
 # ---------------------------------------------------------------- year page

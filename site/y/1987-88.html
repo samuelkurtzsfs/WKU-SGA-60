@@ -3,21 +3,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#08090B">
 <meta name="description" content="Sixty years of student government at Western Kentucky University, 1966-2026.">
-<title>1987-88 · SGA 60</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Public+Sans:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style>
+<title>1987-88 · SGA 60</title><style>
 :root{
  --void:#08090B; --room:#101216; --room2:#171A20;
  --metal-hi:#D6D9D2; --metal:#B4B8B0; --metal-lo:#8B8F88; --metal-edge:#5E625C;
  --engrave:#22241F; --tungsten:#FFE6BC; --tungsten-dim:#C9A970;
  --red:#B01E24; --red-dim:#7A171C;
  --txt:#D9DBD5; --txt2:#9AA096; --txt3:#666B62;
- --inscribe:"Cinzel",Georgia,serif; --ui:"Public Sans",system-ui,sans-serif;
- --mono:"IBM Plex Mono",ui-monospace,monospace;
+ --inscribe:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
+ --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
+ --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--void);color:var(--txt);font-family:var(--ui);
- font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+ font-size:clamp(15px,0.35vw + 13.8px,18px);line-height:1.6;
+ -webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:var(--tungsten-dim);text-underline-offset:3px}
 a:hover{color:var(--tungsten)}
 :focus-visible{outline:2px solid var(--tungsten);outline-offset:3px;border-radius:2px}
