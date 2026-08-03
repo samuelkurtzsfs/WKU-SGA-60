@@ -195,7 +195,8 @@ header.top .sub{color:var(--txt2);font-weight:300;max-width:56ch;margin:16px aut
 </div>
 <p class="readout"><span id="readout"></span> &nbsp;&middot;&nbsp; 50 events logged &nbsp;&middot;&nbsp;
  6 of 61 years complete &nbsp;&middot;&nbsp; 10 names still disputed &nbsp;&middot;&nbsp;
- <a href="history.html">the full timeline &#8599;</a></p>
+ <a href="history.html">the full timeline &#8599;</a> &nbsp;&middot;&nbsp;
+ <a href="legislation.html">the legislation archive &#8599;</a></p>
 
 <div class="scrim" id="scrim"></div>
 <aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="pYear">
@@ -235,6 +236,7 @@ function openYear(id){
   ? y.events.map(e=>`<article class="ev"><div class="d">${esc(e.date)}${e.campus?'<span class="ctx">campus</span>':''}</div><div>
       <h4>${esc(e.title)}</h4><p>${esc(e.body)}</p>
       ${e.src?`<a class="cite" href="${e.src.url}" target="_blank" rel="noopener">${esc(e.src.label)} &#8599;</a>`:''}
+      ${e.src&&e.src.file?` <a class="cite" href="docs/${e.src.file}" target="_blank" rel="noopener">read it on this site &#8599;</a>`:''}
       </div></article>`).join('')
   : `<div class="p-empty">This year has not been researched yet. Open the full page for the
      pre-built archive searches.</div>`;

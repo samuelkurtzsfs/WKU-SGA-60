@@ -8,14 +8,20 @@ Writes site/index.html   the board
 
 Pure Python. No AI, no API key, no network.
 """
+import html as html_mod
 import json, shutil, urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "years.json"
 DOCS = ROOT / "data" / "documents"
+LEG = ROOT / "data" / "legislation"
+LEGMETA = ROOT / "data" / "legislation.json"
 SITE = ROOT / "site"
 YDIR = SITE / "y"
+
+def h(s):
+    return html_mod.escape(str(s), quote=True)
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
@@ -277,6 +283,24 @@ h2.sub{font-family:var(--inscribe);font-weight:600;font-size:1.1rem;letter-spaci
  color:var(--tungsten-dim);border:1px solid rgba(255,230,188,.3);padding:4px 9px;
  text-decoration:none;border-radius:2px}
 .doc-foot a:hover{background:rgba(255,230,188,.14);color:var(--tungsten)}
+
+/* ---- legislation ---- */
+.lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
+ padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:.93rem}
+@media(max-width:640px){.lrow{grid-template-columns:1fr;gap:4px}}
+.ltype{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt3)}
+.lt{color:var(--txt2)}
+.lls{display:flex;gap:8px;white-space:nowrap}
+.lls a{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+ color:var(--tungsten-dim);border:1px solid rgba(255,230,188,.3);padding:3px 8px;
+ text-decoration:none;border-radius:2px}
+.lls a:hover{background:rgba(255,230,188,.14);color:var(--tungsten)}
+.lsec{margin:0 0 34px}
+.lcount{font-family:var(--mono);font-size:10px;color:var(--txt3);letter-spacing:.1em}
+.lfilter{width:100%;max-width:420px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);
+ color:var(--txt);font-family:var(--mono);font-size:12px;padding:10px 14px;border-radius:2px;margin:6px 0 26px}
+.lfilter:focus{outline:2px solid var(--tungsten);outline-offset:2px}
+.ljump{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 22px}
 """
 
 ORG_TERMS = ['"student government association"', '"associated student government"',
@@ -398,8 +422,64 @@ def render_docs(y):
     return "".join(out)
 
 
+def leg_row(e, depth):
+    up = "../" * depth
+    return (f'<div class="lrow" data-t="{h(e["title"].lower())} {h(e["type"])}">'
+            f'<span class="ltype">{h(e["type"])}</span><span class="lt">{h(e["title"])}</span>'
+            f'<span class="lls"><a href="{up}legislation/{e["file"]}" target="_blank" rel="noopener">read &#8599;</a>'
+            f'<a href="{h(e["source_url"])}" target="_blank" rel="noopener">original &#8599;</a></span></div>')
+
+
+def render_legislation(entries):
+    groups = {}
+    for e in entries:
+        groups.setdefault(e["session"], []).append(e)
+    sessions = sorted((k for k in groups if k not in ("governing", "undated")), reverse=True)
+    order = ([("governing", "Governing documents")] if "governing" in groups else []) \
+        + [(s, s) for s in sessions] \
+        + ([("undated", "Undated")] if "undated" in groups else [])
+    jump = "".join(f'<a class="chip" href="#s{k}">{lab}</a>' for k, lab in order)
+    secs = "".join(
+        f'<section class="lsec" id="s{k}"><h2 class="sub">{lab} '
+        f'<span class="lcount">{len(groups[k])} documents</span></h2>'
+        + "".join(leg_row(e, 0) for e in groups[k]) + '</section>'
+        for k, lab in order)
+    body = f"""
+<nav class="nav"><div class="wrap">
+ <a class="brand" href="index.html">SGA <b>60</b></a>
+ <div style="display:flex;gap:20px"><a href="index.html">The Board</a><a href="history.html">Timeline</a></div>
+</div></nav>
+<header class="yhead"><div class="wrap">
+ <div class="eyebrow">The paper trail &middot; every document readable on this site</div>
+ <h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Legislation</h1>
+</div></header>
+<div class="wrap" style="position:relative;z-index:2;padding-bottom:70px">
+ <input class="lfilter" id="lf" type="search" placeholder="filter by title, type, keyword&hellip;"
+  aria-label="Filter legislation">
+ <div class="ljump">{jump}</div>
+ {secs}
+</div>
+<script>
+const lf=document.getElementById('lf');
+lf.addEventListener('input',()=>{{
+ const q=lf.value.toLowerCase().trim();
+ document.querySelectorAll('.lrow').forEach(r=>{{r.style.display=!q||r.dataset.t.includes(q)?'':'none';}});
+ document.querySelectorAll('.lsec').forEach(s=>{{
+  s.style.display=[...s.querySelectorAll('.lrow')].some(r=>r.style.display!=='none')?'':'none';}});
+}});
+</script>"""
+    return shell("Legislation · SGA 60", body, PAGE_CSS, depth=0)
+
+
+def render_leg_year(leg):
+    if not leg:
+        return ""
+    return (f'<h2 class="sub">Legislation &mdash; {len(leg)} documents on file</h2>'
+            + "".join(leg_row(e, 1) for e in leg))
+
+
 # ---------------------------------------------------------------- year page
-def render_year(y, prev, nxt):
+def render_year(y, prev, nxt, leg=()):
     leads = "".join(
         f'<div class="lead plate-face engraved"><b>{l["name"]}</b>'
         f'<div class="role">{role_flags(l)}</div></div>' for l in y["leaders"])
@@ -420,7 +500,9 @@ def render_year(y, prev, nxt):
             + ('<span class="ctx">campus</span>' if e.get("campus") else '') + '</div><div>'
             f'<h3>{e["title"]}</h3><p>{e["body"]}</p>'
             + (f'<a class="cite" href="{e["src"]["url"]}" target="_blank" rel="noopener">{e["src"]["label"]} &#8599;</a>'
-               if e.get("src") else "") + '</div></article>'
+               if e.get("src") else "")
+            + (f' <a class="cite" href="../docs/{e["src"]["file"]}" target="_blank" rel="noopener">read it on this site &#8599;</a>'
+               if e.get("src", {}).get("file") else "") + '</div></article>'
             for e in sorted(y["events"], key=lambda e: e["date"]))
     else:
         evs = ('<div class="empty">Nothing logged for this year yet. Run the sweep on the right &mdash; six '
@@ -442,7 +524,7 @@ def render_year(y, prev, nxt):
     body = f"""
 <nav class="nav"><div class="wrap">
  <a class="brand" href="../index.html">SGA <b>60</b></a>
- <div style="display:flex;gap:20px"><a href="../index.html">The Board</a><a href="../history.html">Timeline</a></div>
+ <div style="display:flex;gap:20px"><a href="../index.html">The Board</a><a href="../history.html">Timeline</a><a href="../legislation.html">Legislation</a></div>
 </div></nav>
 <header class="yhead"><div class="wrap">
  <div class="eyebrow">{y['org']}</div>
@@ -450,7 +532,7 @@ def render_year(y, prev, nxt):
  <div class="leads">{leads}</div>
 </div></header>
 <div class="wrap"><div class="cols">
- <div>{notes}{profs}{render_org(y)}<h2 class="sub">What happened, in order</h2>{evs}{render_docs(y)}</div>
+ <div>{notes}{profs}{render_org(y)}<h2 class="sub">What happened, in order</h2>{evs}{render_docs(y)}{render_leg_year(leg)}</div>
  <aside><div class="dig">
   <h2>Dig here</h2>
   <p class="lede">Verify the name first &mdash; plaque years are disputed. Then sweep the year.</p>
@@ -523,7 +605,8 @@ def render_index(ys):
 </div>
 <p class="readout"><span id="readout"></span> &nbsp;&middot;&nbsp; {evn} events logged &nbsp;&middot;&nbsp;
  {done} of {tot} years complete &nbsp;&middot;&nbsp; {open_q} names still disputed &nbsp;&middot;&nbsp;
- <a href="history.html">the full timeline &#8599;</a></p>
+ <a href="history.html">the full timeline &#8599;</a> &nbsp;&middot;&nbsp;
+ <a href="legislation.html">the legislation archive &#8599;</a></p>
 
 <div class="scrim" id="scrim"></div>
 <aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="pYear">
@@ -563,6 +646,7 @@ function openYear(id){{
   ? y.events.map(e=>`<article class="ev"><div class="d">${{esc(e.date)}}${{e.campus?'<span class="ctx">campus</span>':''}}</div><div>
       <h4>${{esc(e.title)}}</h4><p>${{esc(e.body)}}</p>
       ${{e.src?`<a class="cite" href="${{e.src.url}}" target="_blank" rel="noopener">${{esc(e.src.label)}} &#8599;</a>`:''}}
+      ${{e.src&&e.src.file?` <a class="cite" href="docs/${{e.src.file}}" target="_blank" rel="noopener">read it on this site &#8599;</a>`:''}}
       </div></article>`).join('')
   : `<div class="p-empty">This year has not been researched yet. Open the full page for the
      pre-built archive searches.</div>`;
@@ -603,11 +687,19 @@ if(location.hash && D[location.hash.slice(1)]) openYear(location.hash.slice(1));
 
 def main():
     ys = json.loads(DATA.read_text())["years"]
+    leg = json.loads(LEGMETA.read_text())["entries"] if LEGMETA.exists() else []
+    by_session = {}
+    for e in leg:
+        by_session.setdefault(e["session"], []).append(e)
     YDIR.mkdir(parents=True, exist_ok=True)
     (SITE / "index.html").write_text(render_index(ys))
     for i, y in enumerate(ys):
         (YDIR / f'{y["id"]}.html').write_text(
-            render_year(y, ys[i - 1] if i else None, ys[i + 1] if i < len(ys) - 1 else None))
+            render_year(y, ys[i - 1] if i else None, ys[i + 1] if i < len(ys) - 1 else None,
+                        by_session.get(y["id"], ())))
+    (SITE / "legislation.html").write_text(render_legislation(leg))
+    if LEG.is_dir():
+        shutil.copytree(LEG, SITE / "legislation", dirs_exist_ok=True)
     shutil.copy(DATA, SITE / "years.json")
     ndocs = 0
     if DOCS.is_dir():
@@ -616,7 +708,8 @@ def main():
             if f.is_file() and not f.name.startswith(".") and f.suffix != ".md":
                 shutil.copy(f, SITE / "docs" / f.name)
                 ndocs += 1
-    print(f'built the board + {len(ys)} year pages + {ndocs} archive documents -> {SITE}')
+    print(f'built the board + {len(ys)} year pages + {ndocs} archive documents '
+          f'+ {len(leg)} legislation files -> {SITE}')
 
 
 if __name__ == "__main__":

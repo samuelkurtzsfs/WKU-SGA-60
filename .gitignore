@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 .vercel
+
+# generated copies of archive files - rebuilt on every deploy
+site/legislation/
+site/docs/

@@ -118,6 +118,35 @@ The build copies it into the site so readers get the real file. Attach it to the
 - Only mirror files that are openly downloadable from TopSCHOLAR. Always keep `src`
   pointing at the original. Never upload a file that did not come from the archive.
 
+**Mirror the article behind every event where you can.** When the source an event cites is
+itself an openly downloadable PDF (a Herald issue on TopSCHOLAR, minutes, a letter), download
+it into `data/documents/` and add `"file": "<filename>.pdf"` inside the event's `src` object.
+The site then shows a "read it on this site" link next to the citation, so a reader never has
+to leave the archive to check a claim. The external `url` stays; the file is in addition.
+
+## The legislation archive
+`data/legislation/` holds the actual PDF of every piece of SGA legislation we can get, one
+folder per session (`2016-17/`, `governing/`, `undated/`), indexed by `data/legislation.json`:
+
+```json
+{"session": "2016-17", "type": "bill",
+ "title": "Funding for ...", "file": "2016-17/bill_7-16-f.pdf",
+ "source_url": "https://..."}
+```
+
+The build renders these into `site/legislation.html` and onto each year's page automatically.
+
+- `scripts/harvest_legislation.py` pulls everything on wku.edu/sga and is rerun each
+  semester. Do not duplicate what it already fetched.
+- **Older legislation (pre-2011) lives on TopSCHOLAR** in the SGA collection
+  (`digitalcommons.wku.edu/sga/`). When your decade's sweep turns up legislation there,
+  download the PDF into `data/legislation/<session>/`, add its entry to
+  `data/legislation.json` with `source_url` pointing at TopSCHOLAR, and give it a real
+  `title` and `type` (bill / resolution). Verify it starts with `%PDF`.
+- Missing recent sessions (2013-14 through 2015-16, 2020-21, 2024-25) were never posted on
+  wku.edu; they may exist on TopSCHOLAR or in the Wayback Machine
+  (`web.archive.org/web/*/wku.edu/sga/*`). Same rules apply.
+
 ## The organization — break down the exec and the Senate
 Where sources allow, record the whole structure for a year, not just the president:
 
