@@ -36,7 +36,7 @@ BASE = """
  --paper:#FFFFFF; --paper2:#F7F6F3; --line:#E7E4DF;
  --inscribe:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
- --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+ --mono:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -47,7 +47,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
 a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--red-dark)}
 :focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
-.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.eyebrow{font-family:var(--ui);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
 .wrap{max-width:1200px;margin:0 auto;padding:0 30px}
 @media(max-width:640px){.wrap{padding:0 18px}}
 
@@ -57,17 +57,21 @@ a:hover{color:var(--red-dark)}
 
 /* ---- Big Red ---- */
 .bigred{position:fixed;right:18px;bottom:10px;z-index:80;cursor:pointer;user-select:none;-webkit-user-select:none;line-height:0}
-.bigred svg{display:block;filter:drop-shadow(0 8px 14px rgba(0,0,0,.28));image-rendering:pixelated}
+.bigred{width:170px}
+.bigred img{display:block;width:100%;height:auto;image-rendering:pixelated;
+ filter:drop-shadow(0 8px 14px rgba(0,0,0,.28))}
+.bigred .wig{position:absolute;top:-24px;left:24%;pointer-events:none}
+.bigred .gavel{position:absolute;top:16%;right:-14px;pointer-events:none}
 .bigred .close{position:absolute;top:-12px;right:-6px;width:22px;height:22px;border-radius:50%;
  border:1px solid var(--line);background:var(--paper);color:var(--ink2);font-size:13px;line-height:19px;
  text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
 .bigred .close:hover{color:var(--red);border-color:var(--red)}
 .bigred .say{position:absolute;bottom:100%;right:8%;margin-bottom:12px;background:var(--black);color:#fff;
- font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:8px 12px;border-radius:8px;white-space:nowrap;
+ font-family:var(--ui);font-size:11px;letter-spacing:.06em;padding:8px 12px;border-radius:8px;white-space:nowrap;
  opacity:0;transform:translateY(6px);transition:.25s;pointer-events:none;line-height:1.4}
 .bigred .say:after{content:"";position:absolute;top:100%;right:22px;border:6px solid transparent;border-top-color:var(--black)}
 .bigred.talk .say{opacity:1;transform:none}
-.bigred .gavel{transform-origin:122px 70px}
+.bigred .gavel{transform-origin:24% 88%}
 @keyframes br-bounce{0%,100%{transform:none}30%{transform:translateY(-28px) rotate(-5deg)}60%{transform:translateY(0) rotate(3deg)}80%{transform:translateY(-10px)}}
 @keyframes br-spin{to{transform:rotate(360deg)}}
 @keyframes br-bang{0%,100%{transform:rotate(0)}35%{transform:rotate(-60deg)}55%{transform:rotate(16deg)}75%{transform:rotate(-8deg)}}
@@ -86,7 +90,7 @@ header.top h1{font-family:var(--inscribe);font-weight:800;font-size:clamp(2rem,3
 header.top .sub{color:var(--ink2);max-width:58ch;margin:16px auto 0;font-size:1.04rem}
 
 /* ---- the board ---- */
-.stage{padding:26px 0 8px}
+.stage{padding:6px 0 90px}
 .board{position:relative;margin:0 auto;max-width:1180px;padding:26px;border-radius:16px;
  background:var(--black);box-shadow:0 24px 60px rgba(0,0,0,.28)}
 .board-inner{padding:2px}
@@ -102,7 +106,7 @@ header.top .sub{color:var(--ink2);max-width:58ch;margin:16px auto 0;font-size:1.
  padding:14px 10px 12px;border-radius:8px;transition:transform .18s,box-shadow .18s}
 .plate::before{display:none}
 .plate:hover,.plate:focus-visible{transform:translateY(-3px);box-shadow:0 10px 22px rgba(0,0,0,.4)}
-.plate .yr{display:block;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.12em;color:var(--red)}
+.plate .yr{display:block;font-family:var(--ui);font-size:11.5px;font-weight:700;letter-spacing:.02em;color:var(--red)}
 .plate .nm{display:block;font-family:var(--inscribe);font-weight:700;font-size:.86rem;line-height:1.3;
  letter-spacing:0;margin-top:5px;color:var(--ink);text-transform:none}
 .plate .nm.two{font-size:.72rem}
@@ -113,14 +117,14 @@ header.top .sub{color:var(--ink2);max-width:58ch;margin:16px auto 0;font-size:1.
 .plate .depth i{display:block;height:100%;background:var(--red)}
 
 /* ---- controls ---- */
-.bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:26px 0 4px;max-width:1180px;margin:0 auto}
+.bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:0 0 8px;max-width:1180px;margin:0 auto}
 .chip{font-family:var(--ui);font-size:13px;font-weight:500;padding:6px 15px;border:1px solid var(--line);
  background:var(--paper);color:var(--ink2);cursor:pointer;border-radius:999px;transition:.16s}
 .chip:hover{border-color:var(--red);color:var(--red)}
 .chip[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff;font-weight:600}
-.readout{text-align:center;font-size:.85rem;color:var(--ink3);padding:16px 0 80px}
+.readout{text-align:center;font-size:.85rem;color:var(--ink3);padding:4px 0 18px}
 
-.search{display:block;width:100%;max-width:520px;margin:26px auto 0;background:var(--paper);
+.search{display:block;width:100%;max-width:520px;margin:6px auto 16px;background:var(--paper);
  border:1px solid var(--line);color:var(--ink);font-family:var(--ui);font-size:16px;
  padding:12px 18px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
 .search:focus{outline:2px solid var(--red);outline-offset:2px}
@@ -150,7 +154,7 @@ header.top .sub{color:var(--ink2);max-width:58ch;margin:16px auto 0;font-size:1.
 .p-hr{border:0;border-top:1px solid var(--line);margin:30px 0 22px}
 .ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
 @media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
-.ev .d{font-family:var(--mono);font-size:12px;color:var(--red);padding-top:4px;font-weight:600}
+.ev .d{font-family:var(--ui);font-size:13px;color:var(--red);padding-top:3px;font-weight:600}
 .ev .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:5px;font-family:var(--ui)}
 .ev h4{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;margin:0 0 7px;color:var(--ink)}
 .ev p{margin:0;color:var(--ink2);font-size:.95rem}
@@ -191,7 +195,7 @@ h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spac
 .note b{color:var(--ink)}
 .ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
 @media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
-.ev .d{font-family:var(--mono);font-size:12px;color:var(--red);padding-top:4px;font-weight:600}
+.ev .d{font-family:var(--ui);font-size:13px;color:var(--red);padding-top:3px;font-weight:600}
 .ev .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:5px;font-family:var(--ui)}
 .ev h3{font-family:var(--inscribe);font-weight:700;font-size:1.06rem;margin:0 0 7px;color:var(--ink)}
 .ev p{margin:0;color:var(--ink2);font-size:.95rem}
@@ -257,7 +261,7 @@ h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spac
 .lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
  padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
 @media(max-width:640px){.lrow{grid-template-columns:1fr;gap:4px}}
-.ltype{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--red);font-weight:600}
+.ltype{font-family:var(--ui);font-size:12px;letter-spacing:.01em;color:var(--red);font-weight:600}
 .lt{color:var(--ink)}
 .lls{display:flex;gap:14px;white-space:nowrap}
 .lls a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
@@ -277,58 +281,49 @@ h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spac
 
 
 # ---------------------------------------------------------------- big red
-_PX = {"R": "#B01E24", "D": "#7E1014", "W": "#FFFFFF", "B": "#1A1A1C", "O": "#8B5A2B"}
-_BODY = [
-    "......RRRRRRRR........",
-    ".....RRRRRRRRRR.......",
-    "....RRRRRRRRRRRR......",
-    "....RRWWRRRRWWRR......",
-    "....RWBWRRRRWBWR......",
-    "....RRWWRRRRWWRR......",
-    "....RRRRRRRRRRRR......",
-    "....RDDDDDDDDDDR......",
-    "...RRDBBBBBBBBDRR.....",
-    "...RRDDDDDDDDDDRR.....",
-    "...RRRRRRRRRRRRRRRR...",
-    "...RRRRRRRRRRRRRR.....",
-    "...RRR.RRRRRR.RRR.....",
-    "...RR...RRRR...RR.....",
-    "....R...RRRR...R......",
-    "........RRRR..........",
-    ".......RRR.RRR........",
-    "......RRR...RRR.......",
-    "......RR.....RR.......",
+# The official Big Red artwork, downsampled to a 30px sprite (data/photos/
+# bigred-8bit.png) and rendered pixelated - true 8-bit. Wig and gavel are
+# pixel-drawn overlays.
+_PX = {"W": "#F4F2ED", "G": "#D8D5CE", "B": "#1A1A1C", "O": "#8B5A2B"}
+_WIG = [
+    "..WWWWWWWWWW..",
+    ".WWWWWWWWWWWW.",
+    "WWWGWWWWWWGWWW",
+    "WWW........WWW",
+    "GWG........GWG",
+    "WWW........WWW",
+    "GWG........GWG",
+    "WWW........WWW",
 ]
 _GAVEL = [
-    "......................",
-    "......................",
-    "......................",
-    "......................",
-    "................BBBB..",
-    "................BBBB..",
-    "................BBBB..",
-    ".................OO...",
-    ".................OO...",
-    ".................OO...",
-    ".................OO...",
+    "BBBBBB..",
+    "BBBBBB..",
+    "BBBBBB..",
+    "...OO...",
+    "...OO...",
+    "...OO...",
+    "...OO...",
+    "...OO...",
 ]
 
 
-def _pixels(rows):
+def _pixels(rows, s=7):
     out = []
     for y, row in enumerate(rows):
         for x, c in enumerate(row):
             if c != ".":
-                out.append(f'<rect x="{x*7}" y="{y*7}" width="7.4" height="7.4" fill="{_PX[c]}"/>')
+                out.append(f'<rect x="{x*s}" y="{y*s}" width="{s+0.4}" height="{s+0.4}" fill="{_PX[c]}"/>')
     return "".join(out)
 
 
 BIGRED = (
-    '<div class="bigred" id="bigred" role="img" aria-label="Big Red holding the SGA gavel. Click to play.">'
+    '<div class="bigred" id="bigred" role="img" aria-label="8-bit Big Red in a judicial wig, holding the SGA gavel. Click to play.">'
     '<button class="close" id="brx" aria-label="Dismiss Big Red">&times;</button>'
     '<div class="say" id="brsay">Order, order!</div>'
-    f'<svg width="154" height="133" viewBox="0 0 154 133">{_pixels(_BODY)}'
-    f'<g class="gavel">{_pixels(_GAVEL)}</g></svg></div>'
+    '<img src="{up}photos/bigred-8bit.png" alt="" width="170" height="142">'
+    f'<svg class="wig" width="98" height="56" viewBox="0 0 98 56">{_pixels(_WIG)}</svg>'
+    f'<svg class="gavel" width="56" height="56" viewBox="0 0 56 56">{_pixels(_GAVEL)}</svg>'
+    '</div>'
     '<script>(function(){var br=document.getElementById("bigred");if(!br)return;'
     'try{if(localStorage.getItem("bigred")==="hidden"){br.remove();return}}catch(e){}'
     'document.getElementById("brx").addEventListener("click",function(e){e.stopPropagation();br.remove();'
@@ -339,6 +334,7 @@ BIGRED = (
     'else if(m===1){br.classList.add("bounce")}else{br.classList.add("spin")}'
     'clearTimeout(br._t);br._t=setTimeout(function(){br.classList.remove("talk")},1600)});})();</script>'
 )
+
 
 ORG_TERMS = ['"student government association"', '"associated student government"',
              '"student government"', 'SGA', 'ASG', '"student regent"']
@@ -395,7 +391,7 @@ def shell(title, body, css, depth, extra_head=""):
 <title>{title}</title>{FONTS}<style>{BASE}{css}</style>{extra_head}</head><body>
 <div class="room"></div>
 {body}
-""" + BIGRED + """
+""" + BIGRED.replace("{up}", up) + """
 </body></html>"""
 
 
@@ -655,11 +651,6 @@ def render_index(ys):
  ratified in April 1966. Touch a plate to open that year.</p>
 </div></header>
 
-<div class="stage"><div class="board" id="board"><div class="board-inner">
- <div class="board-head"><div class="sign plate-face engraved">WKU Student <b>Government</b> Association</div></div>
- <div class="grid" id="grid">{''.join(plates)}</div>
-</div></div></div>
-
 <input class="search" id="q" type="search" aria-label="Search sixty years"
  placeholder="Search sixty years &mdash; names, events, dates&hellip;">
 
@@ -679,6 +670,13 @@ def render_index(ys):
  {done} of {tot} years complete &nbsp;&middot;&nbsp; {open_q} names still disputed &nbsp;&middot;&nbsp;
  <a href="history.html">the full timeline &#8599;</a> &nbsp;&middot;&nbsp;
  <a href="legislation.html">the legislation archive &#8599;</a></p>
+
+<div class="stage"><div class="board" id="board"><div class="board-inner">
+ <div class="board-head"><div class="sign plate-face engraved">WKU Student <b>Government</b> Association</div></div>
+ <div class="grid" id="grid">{''.join(plates)}</div>
+</div></div></div>
+
+
 
 <div class="scrim" id="scrim"></div>
 <aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="pYear">
