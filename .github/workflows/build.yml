@@ -1,0 +1,56 @@
+name: Build check
+
+# Validates the data and the generator on every push, so a broken JSON file
+# is caught here instead of on the live site. No API key, no AI, no cost.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate data/years.json
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          from pathlib import Path
+          d = json.loads(Path('data/years.json').read_text())
+          ys = d['years']
+          ids = [y['id'] for y in ys]
+          assert len(ids) == len(set(ids)), 'duplicate year id'
+          bad = []
+          for y in ys:
+              for e in y.get('events', []):
+                  for k in ('date', 'title', 'body'):
+                      if not e.get(k):
+                          bad.append(f"{y['id']}: event missing {k}")
+                  if not e.get('src', {}).get('url'):
+                      bad.append(f"{y['id']}: event '{e.get('title','?')}' has no source URL")
+          if bad:
+              print('\n'.join(bad)); sys.exit(1)
+          print(f"{len(ys)} years, {sum(len(y['events']) for y in ys)} events, all sourced")
+          PY
+
+      - name: Build the site
+        run: python3 scripts/build.py
+
+      - name: Check every internal link resolves
+        run: |
+          python3 - <<'PY'
+          import re, sys
+          from pathlib import Path
+          bad = 0
+          for f in Path('site').rglob('*.html'):
+              for href in re.findall(r'href="([^"#:]+\.html)[^"]*"', f.read_text()):
+                  if not (f.parent / href).resolve().exists():
+                      print('broken:', f, '->', href); bad += 1
+          sys.exit(1 if bad else 0)
+          PY

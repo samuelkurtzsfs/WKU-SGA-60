@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1980-81 &middot; SGA 60</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400&family=Public+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root{--paper:#E7E9E0;--card:#F3F4EE;--ink:#15171A;--ink2:#53595C;--ink3:#7C8285;
+ --ditto:#57429A;--ditto-soft:#EDE8F8;--red:#A0181F;--rule:#C4C7B9;--rule-soft:#D8DACE;
+ --display:"Zilla Slab",Georgia,serif;--body:"Public Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.62;
+ -webkit-font-smoothing:antialiased;background-image:repeating-linear-gradient(90deg,rgba(21,23,26,.018) 0 1px,transparent 1px 3px)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+@media(max-width:640px){.wrap{padding:0 18px}}
+a{color:var(--ditto);text-underline-offset:3px}a:hover{color:var(--red)}
+:focus-visible{outline:2.5px solid var(--ditto);outline-offset:3px;border-radius:2px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);font-weight:500}
+.topbar{border-bottom:1.5px solid var(--ink);background:var(--paper)}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:13px 28px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:700;font-size:1.05rem;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--red)}
+.navlinks{display:flex;gap:18px}
+.navlinks a{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--ink2)}
+.navlinks a:hover,.navlinks a[aria-current]{color:var(--red)}
+footer{border-top:1.5px solid var(--ink);margin-top:70px;padding:34px 0 60px;font-size:.88rem;color:var(--ink2)}
+footer p{max-width:72ch;margin:0 0 10px}
+
+.yhead{padding:52px 0 30px;border-bottom:1.5px solid var(--ink)}
+.yhead .eyebrow{margin-bottom:8px}
+.yhead h1{font-family:var(--display);font-weight:700;font-size:clamp(3rem,9vw,5.4rem);line-height:.95;letter-spacing:-.03em;margin:0}
+.leaders{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.lead{background:var(--card);border:1px solid var(--rule);padding:13px 16px;min-width:210px}
+.lead b{display:block;font-family:var(--display);font-size:1.12rem;font-weight:600;text-transform:uppercase;letter-spacing:.01em}
+.lead .r{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-top:3px}
+.lead .warn{color:var(--red)}
+.lead .ok{color:var(--ditto)}
+.cols{display:grid;grid-template-columns:1.4fr .6fr;gap:50px;padding:40px 0}
+@media(max-width:880px){.cols{grid-template-columns:1fr;gap:32px}}
+h2.sub{font-family:var(--display);font-size:1.3rem;font-weight:600;margin:0 0 16px}
+.ev{display:grid;grid-template-columns:104px 1fr;gap:22px;padding:20px 0;border-bottom:1px solid var(--rule-soft)}
+@media(max-width:700px){.ev{grid-template-columns:1fr;gap:6px}}
+.ev .d{font-family:var(--mono);font-size:11.5px;font-weight:600;color:var(--ink);padding-top:3px}
+.ev h3{font-family:var(--display);font-size:1.1rem;font-weight:600;margin:0 0 7px;line-height:1.28}
+.ev p{margin:0;color:var(--ink2);font-size:.97rem}
+.ev a.cite{display:inline-block;margin-top:10px;font-family:var(--mono);font-size:10.5px;color:var(--ditto);
+ border:1px solid var(--ditto);background:var(--ditto-soft);padding:2.5px 7px;text-decoration:none}
+.ev a.cite:hover{background:var(--ditto);color:var(--card)}
+.empty{background:var(--card);border:1px dashed var(--rule);padding:22px;color:var(--ink3);font-size:.95rem}
+.note{background:var(--card);border-left:3px solid var(--ditto);padding:14px 16px;margin:0 0 20px;font-size:.94rem;color:var(--ink2)}
+.dig{background:var(--card);border:1px solid var(--rule);padding:20px 18px;position:sticky;top:18px;max-height:88vh;overflow:auto}
+.dig h2{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;margin:0 0 3px;color:var(--red);font-weight:600}
+.dig h3{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;margin:18px 0 4px;color:var(--ink3)}
+.dig .lede{font-size:.85rem;color:var(--ink3);margin:0 0 6px;line-height:1.45}
+.dig a.q{display:block;text-decoration:none;padding:7px 0;border-top:1px solid var(--rule-soft);
+ font-family:var(--mono);font-size:11px;color:var(--ditto);line-height:1.4}
+.dig a.q:hover{color:var(--red)}
+.pager{display:flex;justify-content:space-between;gap:18px;padding:24px 0;border-top:1.5px solid var(--ink);flex-wrap:wrap}
+.pager a{font-family:var(--mono);font-size:11.5px;text-decoration:none;max-width:46%}
+.pager a b{display:block;font-family:var(--body);font-size:1rem;font-weight:600;color:var(--ink);margin-top:3px}
+.pager a:hover b{color:var(--red)}
+.pager .r{text-align:right;margin-left:auto}
+</style></head><body>
+<nav class="topbar"><div class="wrap">
+ <a class="brand" href="../index.html">SGA<span>60</span> &middot; The Record</a>
+ <div class="navlinks"><a href="../index.html">Years</a><a href="../history.html">Timeline</a></div>
+</div></nav>
+
+<header class="yhead"><div class="wrap">
+ <div class="eyebrow">Associated Students &middot; academic year</div>
+ <h1>1980-81</h1>
+ <div class="leaders"><div class="lead"><b>Steven Fuller</b><div class="r">plaque reads 1980-81</div></div></div>
+</div></header>
+<div class="wrap"><div class="cols">
+ <div>
+  
+  <h2 class="sub">What happened, in order</h2>
+  <div class="empty">No events recorded for this year yet. Run the year sweep on the right &mdash; twelve searches, one per keyword per calendar year &mdash; and add what you find to <code>data/years.json</code> under this year&rsquo;s <code>events</code> array.</div>
+ </div>
+ <aside><div class="dig">
+  <h2>Dig here</h2>
+  <p class="lede">Check the name first &mdash; plaque years are disputed. Then sweep the year.</p>
+  <h3>Check: Steven Fuller</h3><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22Steven+Fuller%22+%28%22student+government+association%22+OR+%22associated+student+government%22+OR+%22student+government%22+OR+SGA+OR+ASG+OR+%22student+regent%22%29" target="_blank" rel="noopener">Steven Fuller + SGA terms &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22Steven+Fuller%22" target="_blank" rel="noopener">Steven Fuller anywhere on TopSCHOLAR &#8599;</a><a class="q" href="https://wkuherald.com/?s=Steven+Fuller" target="_blank" rel="noopener">Steven Fuller in the Herald &#8599;</a>
+  <h3>Year sweep &mdash; 1980 and 1981</h3>
+  <a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+government+association%22+1980" target="_blank" rel="noopener">"student government association" 1980 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22associated+student+government%22+1980" target="_blank" rel="noopener">"associated student government" 1980 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+government%22+1980" target="_blank" rel="noopener">"student government" 1980 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+SGA+1980" target="_blank" rel="noopener">SGA 1980 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+ASG+1980" target="_blank" rel="noopener">ASG 1980 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+regent%22+1980" target="_blank" rel="noopener">"student regent" 1980 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+government+association%22+1981" target="_blank" rel="noopener">"student government association" 1981 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22associated+student+government%22+1981" target="_blank" rel="noopener">"associated student government" 1981 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+government%22+1981" target="_blank" rel="noopener">"student government" 1981 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+SGA+1981" target="_blank" rel="noopener">SGA 1981 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+ASG+1981" target="_blank" rel="noopener">ASG 1981 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+regent%22+1981" target="_blank" rel="noopener">"student regent" 1981 &#8599;</a>
+ </div></aside>
+</div>
+<div class="pager"><a href="1979-80.html">&larr; previous year<b>1979-80</b></a><a class="r" href="1981-82.html">next year &rarr;<b>1981-82</b></a></div></div>
+<footer><div class="wrap">
+<p>Names transcribed from the plaque in the SGA Chambers, Downing Student Union 2081. Plaque years are treated as
+a claim, not a fact &mdash; several are disputed. Everything is checked against the archive before it is confirmed.</p>
+<p>Built for SGA 60 &mdash; sixty years of student government at Western Kentucky University, 1966&ndash;2026.</p>
+</div></footer></body></html>
