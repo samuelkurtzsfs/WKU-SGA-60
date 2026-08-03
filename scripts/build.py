@@ -175,6 +175,8 @@ header.top .sub{color:var(--txt2);font-weight:300;max-width:56ch;margin:16px aut
 .ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:17px 0;border-bottom:1px solid rgba(255,255,255,.06)}
 @media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
 .ev .d{font-family:var(--mono);font-size:11px;color:var(--tungsten-dim);padding-top:3px;letter-spacing:.04em}
+.ev .ctx{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--txt3);margin-top:5px}
 .ev h4{font-family:var(--inscribe);font-weight:600;font-size:1.02rem;margin:0 0 7px;letter-spacing:.02em;color:var(--txt)}
 .ev p{margin:0;color:var(--txt2);font-size:.94rem}
 .ev .cite{display:inline-block;margin-top:9px;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;
@@ -238,6 +240,12 @@ h2.sub{font-family:var(--inscribe);font-weight:600;font-size:1.1rem;letter-spaci
 .pager a b{display:block;font-family:var(--inscribe);font-size:1.05rem;color:var(--txt);margin-top:4px;letter-spacing:.04em}
 .pager a:hover b{color:var(--tungsten)}
 .pager .r{text-align:right;margin-left:auto}
+
+/* ---- president profiles ---- */
+.profile{margin:0 0 26px}
+.profile p{color:var(--txt2);font-size:.95rem;margin:0 0 12px}
+.ev .ctx{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--txt3);margin-top:5px}
 
 /* ---- the organization: exec + senate ---- */
 .org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
@@ -399,9 +407,17 @@ def render_year(y, prev, nxt):
     notes = "".join(f'<div class="note"><b>{l["name"]}:</b> {l["note"]}</div>'
                     for l in y["leaders"] if l.get("note"))
 
+    profs = "".join(
+        f'<section class="profile"><h2 class="sub">{l["name"]} &mdash; the term</h2>'
+        + "".join(f'<p>{p}</p>' for p in
+                  (l["profile"] if isinstance(l["profile"], list) else [l["profile"]]))
+        + '</section>'
+        for l in y["leaders"] if l.get("profile"))
+
     if y["events"]:
         evs = "".join(
-            f'<article class="ev"><div class="d">{e["date"]}</div><div>'
+            f'<article class="ev"><div class="d">{e["date"]}'
+            + ('<span class="ctx">campus</span>' if e.get("campus") else '') + '</div><div>'
             f'<h3>{e["title"]}</h3><p>{e["body"]}</p>'
             + (f'<a class="cite" href="{e["src"]["url"]}" target="_blank" rel="noopener">{e["src"]["label"]} &#8599;</a>'
                if e.get("src") else "") + '</div></article>'
@@ -434,7 +450,7 @@ def render_year(y, prev, nxt):
  <div class="leads">{leads}</div>
 </div></header>
 <div class="wrap"><div class="cols">
- <div>{notes}{render_org(y)}<h2 class="sub">What happened, in order</h2>{evs}{render_docs(y)}</div>
+ <div>{notes}{profs}{render_org(y)}<h2 class="sub">What happened, in order</h2>{evs}{render_docs(y)}</div>
  <aside><div class="dig">
   <h2>Dig here</h2>
   <p class="lede">Verify the name first &mdash; plaque years are disputed. Then sweep the year.</p>
@@ -544,7 +560,7 @@ function openYear(id){{
  const notes=y.leaders.filter(l=>l.note).map(l=>
    `<div class="p-note"><b>${{esc(l.name)}}:</b> ${{esc(l.note)}}</div>`).join('');
  const evs=y.events.length
-  ? y.events.map(e=>`<article class="ev"><div class="d">${{esc(e.date)}}</div><div>
+  ? y.events.map(e=>`<article class="ev"><div class="d">${{esc(e.date)}}${{e.campus?'<span class="ctx">campus</span>':''}}</div><div>
       <h4>${{esc(e.title)}}</h4><p>${{esc(e.body)}}</p>
       ${{e.src?`<a class="cite" href="${{e.src.url}}" target="_blank" rel="noopener">${{esc(e.src.label)}} &#8599;</a>`:''}}
       </div></article>`).join('')

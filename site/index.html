@@ -151,6 +151,8 @@ header.top .sub{color:var(--txt2);font-weight:300;max-width:56ch;margin:16px aut
 .ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:17px 0;border-bottom:1px solid rgba(255,255,255,.06)}
 @media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
 .ev .d{font-family:var(--mono);font-size:11px;color:var(--tungsten-dim);padding-top:3px;letter-spacing:.04em}
+.ev .ctx{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--txt3);margin-top:5px}
 .ev h4{font-family:var(--inscribe);font-weight:600;font-size:1.02rem;margin:0 0 7px;letter-spacing:.02em;color:var(--txt)}
 .ev p{margin:0;color:var(--txt2);font-size:.94rem}
 .ev .cite{display:inline-block;margin-top:9px;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;
@@ -230,7 +232,7 @@ function openYear(id){
  const notes=y.leaders.filter(l=>l.note).map(l=>
    `<div class="p-note"><b>${esc(l.name)}:</b> ${esc(l.note)}</div>`).join('');
  const evs=y.events.length
-  ? y.events.map(e=>`<article class="ev"><div class="d">${esc(e.date)}</div><div>
+  ? y.events.map(e=>`<article class="ev"><div class="d">${esc(e.date)}${e.campus?'<span class="ctx">campus</span>':''}</div><div>
       <h4>${esc(e.title)}</h4><p>${esc(e.body)}</p>
       ${e.src?`<a class="cite" href="${e.src.url}" target="_blank" rel="noopener">${esc(e.src.label)} &#8599;</a>`:''}
       </div></article>`).join('')

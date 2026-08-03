@@ -65,6 +65,37 @@ history of the organisation.
 - Events sort chronologically on build. Order in the file does not matter.
 - Update `status`: `researched` (3+ events), `partial` (1–2), `empty` (0).
 
+## President profiles — the full term, not a caption
+Every leader can carry a `profile`: a list of paragraphs telling the whole story of their time
+in office, as deep as the archive physically allows. What they ran on, the election and its
+numbers, what they passed, what failed, what they fought with the administration or the Herald
+about, how the term ended, and what the record says happened to them after. Every fact in it
+must be traceable to a source already cited in the year's events, documents, or leader sources.
+
+```json
+"profile": [
+ "Paragraph one. Elected on ... The campaign promised ...",
+ "Paragraph two. In office, the Senate under them ...",
+ "Paragraph three. The term ended ..."
+]
+```
+
+Plain past tense. No filler, no praise, no guessing at motive. If the archive is thin, the
+profile is short. Short and true beats long and padded.
+
+## Campus context — the year around SGA
+Major campus events that shaped the year belong in the record even when SGA was not the actor:
+a president hired or fired, a building opened, a protest, a tuition hike, an enrollment shock.
+Mark them with `"campus": true` in the event and they render with a campus tag:
+
+```json
+{"date": "1969-05-01", "title": "...", "body": "...", "campus": true,
+ "src": {"label": "...", "url": "..."}}
+```
+
+Same rule as everything else: no source, no entry. Campus context should stay the minority of
+a year's events — it frames the SGA story, it does not replace it.
+
 ## Documents — the actual files, not just links
 When a TopSCHOLAR document is central to a year (minutes, a constitution, correspondence,
 a Herald issue), download the PDF into `data/documents/`, named `<year>-<what-it-is>.pdf`.
