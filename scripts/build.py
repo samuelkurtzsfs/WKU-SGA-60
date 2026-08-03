@@ -15,6 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "years.json"
 DOCS = ROOT / "data" / "documents"
+PHOTOS = ROOT / "data" / "photos"
 LEG = ROOT / "data" / "legislation"
 LEGMETA = ROOT / "data" / "legislation.json"
 SITE = ROOT / "site"
@@ -250,6 +251,22 @@ h2.sub{font-family:var(--inscribe);font-weight:600;font-size:1.1rem;letter-spaci
 /* ---- president profiles ---- */
 .profile{margin:0 0 26px}
 .profile p{color:var(--txt2);font-size:.95rem;margin:0 0 12px}
+
+/* ---- photographs ---- */
+.portraits{display:flex;gap:16px;flex-wrap:wrap;margin:0 0 28px}
+.portrait{margin:0;width:160px}
+.portrait img{width:100%;height:190px;object-fit:cover;object-position:top;border-radius:2px;
+ border:1px solid rgba(255,255,255,.16);filter:saturate(.85) contrast(1.02);
+ box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.portrait figcaption{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--txt3);margin-top:7px;line-height:1.5}
+.portrait figcaption b{display:block;font-family:var(--inscribe);font-size:.85rem;
+ letter-spacing:.04em;color:var(--txt);text-transform:none}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:0 0 28px}
+.gallery figure{margin:0}
+.gallery img{width:100%;border-radius:2px;border:1px solid rgba(255,255,255,.12);
+ filter:saturate(.85);box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.gallery figcaption{font-size:.84rem;color:var(--txt3);margin-top:7px;line-height:1.5}
 .ev .ctx{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;
  text-transform:uppercase;color:var(--txt3);margin-top:5px}
 
@@ -422,6 +439,32 @@ def render_docs(y):
     return "".join(out)
 
 
+def render_portraits(y):
+    ports = [(l, l["photo"]) for l in y["leaders"] if l.get("photo")]
+    if not ports:
+        return ""
+    figs = "".join(
+        f'<figure class="portrait"><img src="../photos/{p["file"]}" alt="{h(l["name"])}" loading="lazy">'
+        f'<figcaption><b>{h(l["name"])}</b>'
+        + (f'<a class="cite" style="margin-top:5px" href="{h(p["src"]["url"])}" target="_blank" '
+           f'rel="noopener">{h(p["src"]["label"])} &#8599;</a>' if p.get("src") else "")
+        + '</figcaption></figure>' for l, p in ports)
+    return f'<div class="portraits">{figs}</div>'
+
+
+def render_gallery(y):
+    photos = y.get("photos")
+    if not photos:
+        return ""
+    figs = "".join(
+        f'<figure><img src="../photos/{p["file"]}" alt="{h(p.get("caption", ""))}" loading="lazy">'
+        f'<figcaption>{p.get("caption", "")}'
+        + (f' <a class="cite" style="margin-top:5px" href="{h(p["src"]["url"])}" target="_blank" '
+           f'rel="noopener">{h(p["src"]["label"])} &#8599;</a>' if p.get("src") else "")
+        + '</figcaption></figure>' for p in photos)
+    return f'<h2 class="sub">The year in pictures</h2><div class="gallery">{figs}</div>'
+
+
 def leg_row(e, depth):
     up = "../" * depth
     return (f'<div class="lrow" data-t="{h(e["title"].lower())} {h(e["type"])}">'
@@ -532,7 +575,7 @@ def render_year(y, prev, nxt, leg=()):
  <div class="leads">{leads}</div>
 </div></header>
 <div class="wrap"><div class="cols">
- <div>{notes}{profs}{render_org(y)}<h2 class="sub">What happened, in order</h2>{evs}{render_docs(y)}{render_leg_year(leg)}</div>
+ <div>{render_portraits(y)}{notes}{profs}{render_org(y)}<h2 class="sub">What happened, in order</h2>{evs}{render_gallery(y)}{render_docs(y)}{render_leg_year(leg)}</div>
  <aside><div class="dig">
   <h2>Dig here</h2>
   <p class="lede">Verify the name first &mdash; plaque years are disputed. Then sweep the year.</p>
@@ -708,6 +751,8 @@ def main():
             if f.is_file() and not f.name.startswith(".") and f.suffix != ".md":
                 shutil.copy(f, SITE / "docs" / f.name)
                 ndocs += 1
+    if PHOTOS.is_dir():
+        shutil.copytree(PHOTOS, SITE / "photos", dirs_exist_ok=True)
     print(f'built the board + {len(ys)} year pages + {ndocs} archive documents '
           f'+ {len(leg)} legislation files -> {SITE}')
 

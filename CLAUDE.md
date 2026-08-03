@@ -65,6 +65,12 @@ history of the organisation.
 - Events sort chronologically on build. Order in the file does not matter.
 - Update `status`: `researched` (3+ events), `partial` (1–2), `empty` (0).
 
+## Presidents are the heart of this project
+The single most important deliverable is a full, verified account of every president and
+student regent: profile, portrait, their year's complete record. When choosing what to work
+on, presidential material outranks everything except name/year verification. A year whose
+president has a rich profile and a portrait beats a year with two extra events.
+
 ## President profiles — the full term, not a caption
 Every leader can carry a `profile`: a list of paragraphs telling the whole story of their time
 in office, as deep as the archive physically allows. What they ran on, the election and its
@@ -82,6 +88,40 @@ must be traceable to a source already cited in the year's events, documents, or 
 
 Plain past tense. No filler, no praise, no guessing at motive. If the archive is thin, the
 profile is short. Short and true beats long and padded.
+
+## Pictures — as many as the archive gives up
+Every president should eventually have a portrait, and every year should have photographs.
+Image files live in `data/photos/`, named `<year>-<slug>.jpg`; the build copies them into
+the site.
+
+A leader's portrait:
+```json
+"photo": {"file": "1989-90-amos-gott.jpg",
+          "src": {"label": "1990 Talisman, p. 214", "url": "https://digitalcommons.wku.edu/..."}}
+```
+
+A year's photographs, in the year object:
+```json
+"photos": [
+ {"file": "1969-70-registration-line.jpg",
+  "caption": "What the photograph shows, one sentence, factual.",
+  "src": {"label": "WKU Archives UA1C...", "url": "https://digitalcommons.wku.edu/..."}}
+]
+```
+
+Where to hunt, in order:
+1. **The Talisman yearbooks** on TopSCHOLAR (`digitalcommons.wku.edu/talisman/`) - every
+   yearbook has a student government section with names in the captions. The best source
+   for portraits, decade after decade.
+2. **WKU Archives photograph collections** on TopSCHOLAR (search `UA1C` image collections).
+3. **Herald pages** - the digitised issues are image PDFs; a page with a good photograph
+   can be excerpted as an image.
+4. **wku.edu/news and wkuherald.com** for the recent decades.
+
+Rules: only images from the university's own open archives or news pages. Always record
+`src` with the exact volume and page where you found it. Verify the file is a real image
+(JPEG starts with bytes FF D8, PNG with 89 50 4E 47). Never use a photo whose subject you
+cannot confirm from the caption or context - a misidentified face is worse than no face.
 
 ## Campus context — the year around SGA
 Major campus events that shaped the year belong in the record even when SGA was not the actor:
