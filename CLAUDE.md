@@ -220,12 +220,16 @@ Every field is optional. Same rule as events: no source, no claim.
 
 
 ## Cloud agents: how to land your work when git push is restricted
-The cloud GitHub proxy may refuse pushes to branches you create and only allow pushing the
-session's own branch. If your push to a research-* branch is denied: commit your work to the
-branch you are currently on (`git branch --show-current`), push THAT branch, and open the PR
-to main from it, using your designated PR title. If even that push is denied, write your
-complete findings - every fact with its source URL - into your final run report so nothing is
-lost. Never abandon verified research because a push was refused, and never push to main.
+Try in this order and use the first that works:
+1. Normal push of your designated research-* branch.
+2. If refused: commit to the branch you are currently on (`git branch --show-current`),
+   push that, and open the PR from it with your designated title.
+3. If refused and the GH_TOKEN environment variable is set: run `gh auth setup-git`
+   (the gh CLI reads GH_TOKEN on its own and becomes git's credential helper), then retry
+   the normal push and open the PR with `gh pr create`. Never print or write the token.
+4. If everything is refused, put your complete findings - every fact with its source URL -
+   into your final run report so nothing is lost.
+Never abandon verified research because a push was refused, and never push to main.
 
 ## Hard rules
 - **Never invent.** No plausible-sounding filler. If a year is thin, it is thin.
