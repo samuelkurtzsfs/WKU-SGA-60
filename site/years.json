@@ -1968,7 +1968,17 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "photos": [
+    {
+     "file": "2025-26-rush-robinson.jpg",
+     "caption": "The executive ticket elected in the 13-15 April 2025 election, photographed on campus. Robinson's ticket won on a turnout of 966.",
+     "src": {
+      "label": "WKU News - Robinson elected",
+      "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12496"
+     }
+    }
+   ]
   },
   {
    "id": "2026-27",
@@ -1998,7 +2008,17 @@
     }
    ],
    "events": [],
-   "status": "empty"
+   "status": "empty",
+   "photos": [
+    {
+     "file": "2026-27-caden-lucas.jpg",
+     "caption": "The new executive council photographed in the SGA chambers after the 15 April 2026 election. Photo: Jacob Sebastian, WKU.",
+     "src": {
+      "label": "WKU News - Lucas elected",
+      "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13041"
+     }
+    }
+   ]
   }
  ]
 }
