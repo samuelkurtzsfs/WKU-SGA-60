@@ -186,7 +186,7 @@ PAGE_CSS = """
 .lead b{display:block;font-family:var(--inscribe);font-weight:700;font-size:1.02rem;text-transform:none;letter-spacing:0}
 .lead .role{font-size:.78rem;margin-top:4px;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em;text-transform:none}
 .lead .role .w{color:var(--red);font-weight:600}
-.cols{display:grid;grid-template-columns:1.45fr .55fr;gap:48px;padding:34px 0 20px}
+.cols{max-width:860px;padding:34px 0 20px}
 @media(max-width:900px){.cols{grid-template-columns:1fr;gap:30px}}
 h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spacing:.01em;margin:34px 0 14px;
  color:var(--ink);text-transform:none;border-bottom:2px solid var(--red);display:inline-block;padding-bottom:4px}
@@ -570,15 +570,8 @@ def render_year(y, prev, nxt, leg=()):
                if e.get("src", {}).get("file") else "") + '</div></article>'
             for e in sorted(y["events"], key=lambda e: e["date"]))
     else:
-        evs = ('<div class="empty">Nothing logged for this year yet. Run the sweep on the right &mdash; six '
-               'keywords against each calendar year &mdash; then add what you find to '
-               '<code>data/years.json</code>.</div>')
-
-    nq = "".join(f'<h3>Check: {l["name"]}</h3>' + "".join(
-        f'<a class="q" href="{u}" target="_blank" rel="noopener">{lab} &#8599;</a>'
-        for lab, u in name_searches(l["name"])) for l in y["leaders"])
-    yq = "".join(f'<a class="q" href="{u}" target="_blank" rel="noopener">{lab} &#8599;</a>'
-                 for lab, u in year_searches(y))
+        evs = ('<div class="empty">Nothing verified for this year yet. The researchers are working '
+               'through the archive; entries appear here as soon as their sources check out.</div>')
 
     pager = ""
     if prev:
@@ -598,11 +591,6 @@ def render_year(y, prev, nxt, leg=()):
 </div></header>
 <div class="wrap"><div class="cols">
  <div>{render_portraits(y)}{notes}{profs}{render_org(y)}<h2 class="sub">What happened, in order</h2>{evs}{render_gallery(y)}{render_docs(y)}{render_leg_year(leg)}</div>
- <aside><div class="dig">
-  <h2>Dig here</h2>
-  <p class="lede">Verify the name first &mdash; plaque years are disputed. Then sweep the year.</p>
-  {nq}<h3>Year sweep &mdash; {y['start']} &amp; {y['end']}</h3>{yq}
- </div></aside>
 </div><div class="pager">{pager}</div></div>"""
     return shell(f"{y['id']} · SGA 60", body, PAGE_CSS, depth=1)
 
@@ -718,13 +706,12 @@ function openYear(id){{
       ${{e.src?`<a class="cite" href="${{e.src.url}}" target="_blank" rel="noopener">${{esc(e.src.label)}} &#8599;</a>`:''}}
       ${{e.src&&e.src.file?` <a class="cite" href="docs/${{e.src.file}}" target="_blank" rel="noopener">read it on this site &#8599;</a>`:''}}
       </div></article>`).join('')
-  : `<div class="p-empty">This year has not been researched yet. Open the full page for the
-     pre-built archive searches.</div>`;
+  : `<div class="p-empty">This year has not been researched yet. The researchers are working through the archive.</div>`;
  pin.innerHTML=`<div class="eyebrow">${{esc(y.org)}}</div>
   <h2 class="p-year" id="pYear">${{esc(id)}}</h2>
   <div class="p-leads">${{leads}}</div>${{notes}}
   <hr class="p-hr"><h3 class="eyebrow" style="margin-bottom:14px">What happened, in order</h3>${{evs}}
-  <div class="p-foot"><a href="y/${{id}}.html">Full record &amp; archive searches &#8599;</a>
+  <div class="p-foot"><a href="y/${{id}}.html">Full record &#8599;</a>
   <a href="history.html">The whole timeline &#8599;</a></div>`;
  scrim.classList.add('open');panel.classList.add('open');
  document.body.style.overflow='hidden';

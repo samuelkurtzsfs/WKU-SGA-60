@@ -216,13 +216,12 @@ function openYear(id){
       ${e.src?`<a class="cite" href="${e.src.url}" target="_blank" rel="noopener">${esc(e.src.label)} &#8599;</a>`:''}
       ${e.src&&e.src.file?` <a class="cite" href="docs/${e.src.file}" target="_blank" rel="noopener">read it on this site &#8599;</a>`:''}
       </div></article>`).join('')
-  : `<div class="p-empty">This year has not been researched yet. Open the full page for the
-     pre-built archive searches.</div>`;
+  : `<div class="p-empty">This year has not been researched yet. The researchers are working through the archive.</div>`;
  pin.innerHTML=`<div class="eyebrow">${esc(y.org)}</div>
   <h2 class="p-year" id="pYear">${esc(id)}</h2>
   <div class="p-leads">${leads}</div>${notes}
   <hr class="p-hr"><h3 class="eyebrow" style="margin-bottom:14px">What happened, in order</h3>${evs}
-  <div class="p-foot"><a href="y/${id}.html">Full record &amp; archive searches &#8599;</a>
+  <div class="p-foot"><a href="y/${id}.html">Full record &#8599;</a>
   <a href="history.html">The whole timeline &#8599;</a></div>`;
  scrim.classList.add('open');panel.classList.add('open');
  document.body.style.overflow='hidden';
