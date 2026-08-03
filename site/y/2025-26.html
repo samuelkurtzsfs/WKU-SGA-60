@@ -90,6 +90,37 @@ h2.sub{font-family:var(--inscribe);font-weight:600;font-size:1.1rem;letter-spaci
 .pager a b{display:block;font-family:var(--inscribe);font-size:1.05rem;color:var(--txt);margin-top:4px;letter-spacing:.04em}
 .pager a:hover b{color:var(--tungsten)}
 .pager .r{text-align:right;margin-left:auto}
+
+/* ---- the organization: exec + senate ---- */
+.org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
+@media(max-width:640px){.org{grid-template-columns:1fr}}
+.org h3{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+ margin:0 0 10px;color:var(--red)}
+.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;
+ border-bottom:1px solid rgba(255,255,255,.06);font-size:.93rem}
+.off .o{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+ color:var(--txt3);padding-top:3px;min-width:110px}
+.off b{font-family:var(--inscribe);font-weight:600;letter-spacing:.03em;color:var(--txt)}
+.off p{margin:3px 0 0;color:var(--txt2);font-size:.88rem}
+.org .meta{font-size:.88rem;color:var(--txt2);margin:10px 0 0}
+
+/* ---- the archive shelf: real documents ---- */
+.doc{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.02);border-radius:2px;
+ margin:0 0 24px;overflow:hidden}
+.doc-head{padding:17px 19px 14px}
+.doc-head h3{font-family:var(--inscribe);font-weight:600;font-size:1.04rem;margin:0 0 7px;letter-spacing:.02em}
+.doc-head p{margin:0;color:var(--txt2);font-size:.93rem}
+.doc-extract{border-left:2px solid var(--red-dim);background:rgba(176,30,36,.05);margin:0 19px 15px;
+ padding:12px 16px;font-size:.93rem;color:var(--txt2)}
+.doc-extract .from{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;
+ text-transform:uppercase;color:var(--txt3);margin-bottom:6px}
+.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid rgba(255,255,255,.09);
+ background:#16181C}
+.doc-foot{display:flex;gap:10px;flex-wrap:wrap;padding:13px 19px}
+.doc-foot a{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+ color:var(--tungsten-dim);border:1px solid rgba(255,230,188,.3);padding:4px 9px;
+ text-decoration:none;border-radius:2px}
+.doc-foot a:hover{background:rgba(255,230,188,.14);color:var(--tungsten)}
 </style></head><body>
 <div class="room"></div>
 
@@ -100,7 +131,7 @@ h2.sub{font-family:var(--inscribe);font-weight:600;font-size:1.1rem;letter-spaci
 <header class="yhead"><div class="wrap">
  <div class="eyebrow">Student Government Association</div>
  <h1>2025-26</h1>
- <div class="leads"><div class="lead plate-face engraved"><b>Rush Robinson</b><div class="role">president &middot; <span class="w">not on the wall</span> &middot; plaque: 2025-26</div></div></div>
+ <div class="leads"><div class="lead plate-face engraved"><b>Rush Robinson</b><div class="role">president &middot; plaque: 2025-26</div></div></div>
 </div></header>
 <div class="wrap"><div class="cols">
  <div><div class="note"><b>Rush Robinson:</b> Elected 13-15 April 2025 on a turnout of 966. Told the Faculty Senate to 'take a field trip' to see the state of WKU's residence halls. Handed his successor the red suit jacket on 28 April 2026.</div><h2 class="sub">What happened, in order</h2><article class="ev"><div class="d">2026-04-07</div><div><h3>Two tickets take questions in the DSU auditorium</h3><p>Caden Lucas with Jakob Barker and Will Derryberry against Jaden Marshall with Kaden Blankenship and Miles VanRude. Chief Justice Sophie Stirling moderated questions submitted by the student body.</p><a class="cite" href="https://wkuherald.com/92534/news/sga-holds-town-hall-qa-for-executive-candidates-before-election/" target="_blank" rel="noopener">Herald, April 2026 &#8599;</a></div></article><article class="ev"><div class="d">2026-04-15</div><div><h3>Turnout jumps 66% in a contested race</h3><p>1,601 students voted, 635 more than the year before. Lucas won. The clearest evidence in the whole record that WKU turnout tracks whether there is an actual contest.</p><a class="cite" href="https://wkuherald.com/92808/news/lucas-wins-sga-presidential-election/" target="_blank" rel="noopener">Herald, April 2026 &#8599;</a></div></article><article class="ev"><div class="d">2026-04-16</div><div><h3>Robinson tells the Faculty Senate to look at the dorms</h3><p>Sitting next to Faculty Regent Shane Spiller during a discussion of WKU housing, Robinson told senators to 'take a field trip' and see the state of the residence halls.</p><a class="cite" href="https://wkuherald.com/92855/news/faculty-senate-holds-election-debates-senate-charter-changes/" target="_blank" rel="noopener">Herald, April 2026 &#8599;</a></div></article><article class="ev"><div class="d">2026-04-28</div><div><h3>The red suit jacket changes hands</h3><p>Lucas, Barker and Derryberry sworn in at the first meeting of the 26th Senate. Robinson handed Lucas the same red jacket his own predecessor had given him a year earlier.</p><a class="cite" href="https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/" target="_blank" rel="noopener">Herald, April 2026 &#8599;</a></div></article></div>

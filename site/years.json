@@ -1826,7 +1826,7 @@
      "role": "president",
      "year_confidence": "stated",
      "name_verified": true,
-     "missing_from_plaque": true,
+     "missing_from_plaque": false,
      "current": false,
      "note": "Former administrative vice president. Elected April 2023 on an unopposed ticket with Salvador Leon and Annalise Finch.",
      "sources": [
@@ -1862,7 +1862,7 @@
      "role": "president",
      "year_confidence": "stated",
      "name_verified": true,
-     "missing_from_plaque": true,
+     "missing_from_plaque": false,
      "current": false,
      "note": "Re-elected unopposed. Warned the Senate repeatedly that an unusually senior chamber meant the 2025 election mattered more than usual.",
      "sources": [
@@ -1907,7 +1907,7 @@
      "role": "president",
      "year_confidence": "stated",
      "name_verified": true,
-     "missing_from_plaque": true,
+     "missing_from_plaque": false,
      "current": false,
      "note": "Elected 13-15 April 2025 on a turnout of 966. Told the Faculty Senate to 'take a field trip' to see the state of WKU's residence halls. Handed his successor the red suit jacket on 28 April 2026.",
      "sources": [

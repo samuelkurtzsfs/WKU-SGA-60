@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "years.json"
+DOCS = ROOT / "data" / "documents"
 SITE = ROOT / "site"
 YDIR = SITE / "y"
 
@@ -237,6 +238,37 @@ h2.sub{font-family:var(--inscribe);font-weight:600;font-size:1.1rem;letter-spaci
 .pager a b{display:block;font-family:var(--inscribe);font-size:1.05rem;color:var(--txt);margin-top:4px;letter-spacing:.04em}
 .pager a:hover b{color:var(--tungsten)}
 .pager .r{text-align:right;margin-left:auto}
+
+/* ---- the organization: exec + senate ---- */
+.org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
+@media(max-width:640px){.org{grid-template-columns:1fr}}
+.org h3{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+ margin:0 0 10px;color:var(--red)}
+.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;
+ border-bottom:1px solid rgba(255,255,255,.06);font-size:.93rem}
+.off .o{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+ color:var(--txt3);padding-top:3px;min-width:110px}
+.off b{font-family:var(--inscribe);font-weight:600;letter-spacing:.03em;color:var(--txt)}
+.off p{margin:3px 0 0;color:var(--txt2);font-size:.88rem}
+.org .meta{font-size:.88rem;color:var(--txt2);margin:10px 0 0}
+
+/* ---- the archive shelf: real documents ---- */
+.doc{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.02);border-radius:2px;
+ margin:0 0 24px;overflow:hidden}
+.doc-head{padding:17px 19px 14px}
+.doc-head h3{font-family:var(--inscribe);font-weight:600;font-size:1.04rem;margin:0 0 7px;letter-spacing:.02em}
+.doc-head p{margin:0;color:var(--txt2);font-size:.93rem}
+.doc-extract{border-left:2px solid var(--red-dim);background:rgba(176,30,36,.05);margin:0 19px 15px;
+ padding:12px 16px;font-size:.93rem;color:var(--txt2)}
+.doc-extract .from{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;
+ text-transform:uppercase;color:var(--txt3);margin-bottom:6px}
+.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid rgba(255,255,255,.09);
+ background:#16181C}
+.doc-foot{display:flex;gap:10px;flex-wrap:wrap;padding:13px 19px}
+.doc-foot a{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+ color:var(--tungsten-dim);border:1px solid rgba(255,230,188,.3);padding:4px 9px;
+ text-decoration:none;border-radius:2px}
+.doc-foot a:hover{background:rgba(255,230,188,.14);color:var(--tungsten)}
 """
 
 ORG_TERMS = ['"student government association"', '"associated student government"',
@@ -278,8 +310,6 @@ def role_flags(l):
         out.append("president")
     if l.get("year_confidence") == "ambiguous":
         out.append('<span class="w">year uncertain</span>')
-    if l.get("missing_from_plaque"):
-        out.append('<span class="w">not on the wall</span>')
     if l.get("current"):
         out.append("in office")
     out.append(f'plaque: {l["plaque_term"]}')
@@ -297,6 +327,67 @@ def shell(title, body, css, depth, extra_head=""):
 <div class="room"></div>
 {body}
 </body></html>"""
+
+
+def render_office(o):
+    return (f'<div class="off"><span class="o">{o.get("office", "")}</span><span>'
+            f'<b>{o.get("name", "")}</b>'
+            + (f'<p>{o["note"]}</p>' if o.get("note") else "")
+            + (f' <a class="cite" href="{o["src"]["url"]}" target="_blank" rel="noopener">'
+               f'{o["src"]["label"]} &#8599;</a>' if o.get("src") else "")
+            + '</span></div>')
+
+
+def render_org(y):
+    org = y.get("organization")
+    if not org:
+        return ""
+    exec_rows = "".join(render_office(o) for o in org.get("executive", []))
+    sen = org.get("senate", {})
+    sen_rows = "".join(render_office(o) for o in sen.get("officers", []))
+    sen_rows += "".join(
+        f'<div class="off"><span class="o">committee</span><span><b>{c.get("name", "")}</b>'
+        + (f'<p>chair: {c["chair"]}</p>' if c.get("chair") else "")
+        + (f'<p>{c["note"]}</p>' if c.get("note") else "")
+        + '</span></div>' for c in sen.get("committees", []))
+    sen_meta = ""
+    if sen.get("size"):
+        sen_meta += f'<p class="meta">{sen["size"]} senators this year.</p>'
+    if sen.get("note"):
+        sen_meta += f'<p class="meta">{sen["note"]}</p>'
+    if not (exec_rows or sen_rows or sen_meta):
+        return ""
+    return (f'<h2 class="sub">The organization</h2><div class="org">'
+            f'<div><h3>The Executive</h3>{exec_rows or "<p class=meta>Not yet researched.</p>"}</div>'
+            f'<div><h3>The Senate</h3>{sen_rows}{sen_meta or ""}'
+            + ("<p class=meta>Not yet researched.</p>" if not (sen_rows or sen_meta) else "")
+            + '</div></div>')
+
+
+def render_docs(y):
+    docs = y.get("documents")
+    if not docs:
+        return ""
+    out = ['<h2 class="sub">From the archive</h2>']
+    for d in docs:
+        page = f'#page={d["page"]}' if d.get("page") else ""
+        extract = ""
+        if d.get("extract"):
+            extract = (f'<div class="doc-extract"><span class="from">the part about SGA'
+                       + (f' &middot; pages {d["sga_pages"]}' if d.get("sga_pages") else "")
+                       + f'</span>{d["extract"]}</div>')
+        viewer = (f'<iframe class="doc-view" src="../docs/{d["file"]}{page}" loading="lazy" '
+                  f'title="{d.get("title", d["file"])}"></iframe>') if d.get("file") else ""
+        links = []
+        if d.get("file"):
+            links.append(f'<a href="../docs/{d["file"]}" target="_blank" rel="noopener">Open the full file &#8599;</a>')
+        if d.get("src"):
+            links.append(f'<a href="{d["src"]["url"]}" target="_blank" rel="noopener">{d["src"]["label"]} &#8599;</a>')
+        out.append(
+            f'<article class="doc"><div class="doc-head"><h3>{d.get("title", d.get("file", ""))}</h3>'
+            + (f'<p>{d["summary"]}</p>' if d.get("summary") else "")
+            + f'</div>{extract}{viewer}<div class="doc-foot">{"".join(links)}</div></article>')
+    return "".join(out)
 
 
 # ---------------------------------------------------------------- year page
@@ -343,7 +434,7 @@ def render_year(y, prev, nxt):
  <div class="leads">{leads}</div>
 </div></header>
 <div class="wrap"><div class="cols">
- <div>{notes}<h2 class="sub">What happened, in order</h2>{evs}</div>
+ <div>{notes}{render_org(y)}<h2 class="sub">What happened, in order</h2>{evs}{render_docs(y)}</div>
  <aside><div class="dig">
   <h2>Dig here</h2>
   <p class="lede">Verify the name first &mdash; plaque years are disputed. Then sweep the year.</p>
@@ -502,7 +593,14 @@ def main():
         (YDIR / f'{y["id"]}.html').write_text(
             render_year(y, ys[i - 1] if i else None, ys[i + 1] if i < len(ys) - 1 else None))
     shutil.copy(DATA, SITE / "years.json")
-    print(f'built the board + {len(ys)} year pages -> {SITE}')
+    ndocs = 0
+    if DOCS.is_dir():
+        (SITE / "docs").mkdir(exist_ok=True)
+        for f in DOCS.iterdir():
+            if f.is_file() and not f.name.startswith(".") and f.suffix != ".md":
+                shutil.copy(f, SITE / "docs" / f.name)
+                ndocs += 1
+    print(f'built the board + {len(ys)} year pages + {ndocs} archive documents -> {SITE}')
 
 
 if __name__ == "__main__":

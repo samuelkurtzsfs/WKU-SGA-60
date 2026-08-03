@@ -65,6 +65,48 @@ history of the organisation.
 - Events sort chronologically on build. Order in the file does not matter.
 - Update `status`: `researched` (3+ events), `partial` (1–2), `empty` (0).
 
+## Documents — the actual files, not just links
+When a TopSCHOLAR document is central to a year (minutes, a constitution, correspondence,
+a Herald issue), download the PDF into `data/documents/`, named `<year>-<what-it-is>.pdf`.
+The build copies it into the site so readers get the real file. Attach it to the year:
+
+```json
+"documents": [
+ {"file": "1974-75-senate-minutes.pdf",
+  "title": "Senate minutes, 12 November 1974",
+  "summary": "Two or three sentences: what this document is and why it matters.",
+  "extract": "A tight paraphrase, or a quote under 15 words, of the part about SGA.",
+  "sga_pages": "3-5",
+  "page": 3,
+  "src": {"label": "TopSCHOLAR UA68/6/1", "url": "https://digitalcommons.wku.edu/..."}}
+]
+```
+
+- `page` is where the embedded viewer opens. `sga_pages` is the range shown to readers,
+  so they know which part of the file is relevant.
+- Only mirror files that are openly downloadable from TopSCHOLAR. Always keep `src`
+  pointing at the original. Never upload a file that did not come from the archive.
+
+## The organization — break down the exec and the Senate
+Where sources allow, record the whole structure for a year, not just the president:
+
+```json
+"organization": {
+ "executive": [
+  {"office": "President", "name": "...", "note": "...", "src": {"label": "...", "url": "..."}},
+  {"office": "Administrative Vice President", "name": "...", "src": {"...": "..."}}
+ ],
+ "senate": {
+  "officers": [{"office": "Speaker of the Senate", "name": "...", "src": {"...": "..."}}],
+  "size": 35,
+  "committees": [{"name": "Campus Improvements", "chair": "...", "note": "..."}],
+  "note": "Anything structural: how many seats, what changed, what the fights were."
+ }
+}
+```
+
+Every field is optional. Same rule as events: no source, no claim.
+
 ## Hard rules
 - **Never invent.** No plausible-sounding filler. If a year is thin, it is thin.
 - **Every event needs a `src`.** No source, no entry.

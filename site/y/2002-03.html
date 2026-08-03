@@ -90,6 +90,37 @@ h2.sub{font-family:var(--inscribe);font-weight:600;font-size:1.1rem;letter-spaci
 .pager a b{display:block;font-family:var(--inscribe);font-size:1.05rem;color:var(--txt);margin-top:4px;letter-spacing:.04em}
 .pager a:hover b{color:var(--tungsten)}
 .pager .r{text-align:right;margin-left:auto}
+
+/* ---- the organization: exec + senate ---- */
+.org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
+@media(max-width:640px){.org{grid-template-columns:1fr}}
+.org h3{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+ margin:0 0 10px;color:var(--red)}
+.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;
+ border-bottom:1px solid rgba(255,255,255,.06);font-size:.93rem}
+.off .o{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+ color:var(--txt3);padding-top:3px;min-width:110px}
+.off b{font-family:var(--inscribe);font-weight:600;letter-spacing:.03em;color:var(--txt)}
+.off p{margin:3px 0 0;color:var(--txt2);font-size:.88rem}
+.org .meta{font-size:.88rem;color:var(--txt2);margin:10px 0 0}
+
+/* ---- the archive shelf: real documents ---- */
+.doc{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.02);border-radius:2px;
+ margin:0 0 24px;overflow:hidden}
+.doc-head{padding:17px 19px 14px}
+.doc-head h3{font-family:var(--inscribe);font-weight:600;font-size:1.04rem;margin:0 0 7px;letter-spacing:.02em}
+.doc-head p{margin:0;color:var(--txt2);font-size:.93rem}
+.doc-extract{border-left:2px solid var(--red-dim);background:rgba(176,30,36,.05);margin:0 19px 15px;
+ padding:12px 16px;font-size:.93rem;color:var(--txt2)}
+.doc-extract .from{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;
+ text-transform:uppercase;color:var(--txt3);margin-bottom:6px}
+.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid rgba(255,255,255,.09);
+ background:#16181C}
+.doc-foot{display:flex;gap:10px;flex-wrap:wrap;padding:13px 19px}
+.doc-foot a{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+ color:var(--tungsten-dim);border:1px solid rgba(255,230,188,.3);padding:4px 9px;
+ text-decoration:none;border-radius:2px}
+.doc-foot a:hover{background:rgba(255,230,188,.14);color:var(--tungsten)}
 </style></head><body>
 <div class="room"></div>
 
