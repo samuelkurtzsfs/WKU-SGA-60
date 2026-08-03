@@ -25,6 +25,13 @@ PAGES = [
 
 GOVERNING = ("constitution", "bylaws", "election_codes", "jc_general", "governingdocuments")
 
+# Sessions read off the face of the document where the URL carries no date.
+SESSION_OVERRIDES = {
+    "sgatutionfreeze.pdf": "2015-16",  # header: First Reading 16 Feb 2016, Resolution 2-16-S
+    "presidentialqualificationsresolution.pdf": "2015-16",  # header: Res 2-16-S
+    "ea1-12.pdf": "2012-13",  # Executive Action 1 of 2012, signed by Cory Dodds, president 2012-13
+}
+
 
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": "SGA60-archive/1.0"})
@@ -34,6 +41,9 @@ def fetch(url):
 def session_for(url):
     """Work out the academic session a document belongs to from its URL."""
     low = url.lower()
+    base = low.rsplit("/", 1)[-1]
+    if base in SESSION_OVERRIDES:
+        return SESSION_OVERRIDES[base]
     if any(g in low for g in GOVERNING):
         return "governing"
     m = re.search(r"/sga/[^/]*?(\d{4})[_-](\d{4})", low) or re.search(r"legislation-(\d{4})-(\d{4})", low)
