@@ -5,11 +5,9 @@
 <meta name="description" content="Sixty years of student government at Western Kentucky University, 1966-2026.">
 <title>1968-69 · SGA 60</title><style>
 :root{
- --void:#08090B; --room:#101216; --room2:#171A20;
- --metal-hi:#D6D9D2; --metal:#B4B8B0; --metal-lo:#8B8F88; --metal-edge:#5E625C;
- --engrave:#22241F; --tungsten:#FFE6BC; --tungsten-dim:#C9A970;
- --red:#B01E24; --red-dim:#7A171C;
- --txt:#D9DBD5; --txt2:#9AA096; --txt3:#666B62;
+ --red:#B01E24; --red-dark:#8E1218; --black:#0B0B0C;
+ --ink:#151517; --ink2:#4C4C4F; --ink3:#8A8A8E;
+ --paper:#FFFFFF; --paper2:#F7F6F3; --line:#E7E4DF;
  --inscribe:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
@@ -17,152 +15,147 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--void);color:var(--txt);font-family:var(--ui);
- font-size:clamp(15px,0.35vw + 13.8px,18px);line-height:1.6;
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
+ font-size:clamp(15px,0.35vw + 13.8px,18px);line-height:1.65;
  -webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:var(--tungsten-dim);text-underline-offset:3px}
-a:hover{color:var(--tungsten)}
-:focus-visible{outline:2px solid var(--tungsten);outline-offset:3px;border-radius:2px}
-.eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--txt3)}
-.wrap{max-width:1240px;margin:0 auto;padding:0 30px}
+a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--red-dark)}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
 @media(max-width:640px){.wrap{padding:0 18px}}
 
-/* engraved metal plate — shared by the board and the page headers */
-.plate-face{
- background:linear-gradient(158deg,var(--metal-hi) 0%,var(--metal) 42%,var(--metal-lo) 100%);
- box-shadow:
-   inset 0 1px 0 rgba(255,255,255,.65),
-   inset 1px 0 0 rgba(255,255,255,.28),
-   inset 0 -1px 0 rgba(0,0,0,.45),
-   inset -1px 0 0 rgba(0,0,0,.3),
-   0 2px 5px rgba(0,0,0,.55);
- position:relative;
-}
-.plate-face::before{ /* brushed grain */
- content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;
- background:repeating-linear-gradient(96deg,rgba(255,255,255,.10) 0 1px,transparent 1px 3px);
-}
-.engraved{color:var(--engrave);text-shadow:0 1px 0 rgba(255,255,255,.5),0 -1px 0 rgba(0,0,0,.22)}
+/* plaque plates: clean white cards on the black wall */
+.plate-face{background:var(--paper);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.25);position:relative}
+.engraved{color:var(--ink)}
 
-.room{position:fixed;inset:0;z-index:0;pointer-events:none;
- background:radial-gradient(120% 70% at 50% -10%, rgba(255,230,188,.10) 0%, transparent 55%),
- linear-gradient(180deg,var(--room) 0%,var(--void) 60%)}
-.nav{position:relative;z-index:2;border-bottom:1px solid rgba(255,255,255,.07)}
+/* ---- Big Red ---- */
+.bigred{position:fixed;right:18px;bottom:10px;z-index:80;cursor:pointer;user-select:none;-webkit-user-select:none;line-height:0}
+.bigred svg{display:block;filter:drop-shadow(0 8px 14px rgba(0,0,0,.28));image-rendering:pixelated}
+.bigred .close{position:absolute;top:-12px;right:-6px;width:22px;height:22px;border-radius:50%;
+ border:1px solid var(--line);background:var(--paper);color:var(--ink2);font-size:13px;line-height:19px;
+ text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
+.bigred .close:hover{color:var(--red);border-color:var(--red)}
+.bigred .say{position:absolute;bottom:100%;right:8%;margin-bottom:12px;background:var(--black);color:#fff;
+ font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:8px 12px;border-radius:8px;white-space:nowrap;
+ opacity:0;transform:translateY(6px);transition:.25s;pointer-events:none;line-height:1.4}
+.bigred .say:after{content:"";position:absolute;top:100%;right:22px;border:6px solid transparent;border-top-color:var(--black)}
+.bigred.talk .say{opacity:1;transform:none}
+.bigred .gavel{transform-origin:122px 70px}
+@keyframes br-bounce{0%,100%{transform:none}30%{transform:translateY(-28px) rotate(-5deg)}60%{transform:translateY(0) rotate(3deg)}80%{transform:translateY(-10px)}}
+@keyframes br-spin{to{transform:rotate(360deg)}}
+@keyframes br-bang{0%,100%{transform:rotate(0)}35%{transform:rotate(-60deg)}55%{transform:rotate(16deg)}75%{transform:rotate(-8deg)}}
+.bigred.bounce{animation:br-bounce .9s cubic-bezier(.3,.7,.3,1)}
+.bigred.spin{animation:br-spin .8s ease}
+.bigred.bang .gavel{animation:br-bang .7s ease}
+@media(prefers-reduced-motion:reduce){.bigred,.bigred .gavel{animation:none!important}}
+
+.room{display:none}
+.nav{background:var(--black)}
 .nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 30px;flex-wrap:wrap}
-.nav a{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--txt2)}
-.nav a:hover{color:var(--tungsten)}
-.nav .brand{font-family:var(--inscribe);font-weight:700;letter-spacing:.14em;color:var(--txt);font-size:.9rem}
+.nav a{font-size:.85rem;font-weight:500;text-decoration:none;color:rgba(255,255,255,.75);
+ font-family:var(--ui);letter-spacing:.02em;text-transform:none}
+.nav a:hover{color:#fff}
+.nav .brand{font-family:var(--inscribe);font-weight:800;letter-spacing:.06em;color:#fff;font-size:1rem}
 .nav .brand b{color:var(--red)}
-.yhead{position:relative;z-index:2;padding:60px 0 34px}
-.yhead h1{font-family:var(--inscribe);font-weight:700;font-size:clamp(3rem,8vw,5.2rem);letter-spacing:.02em;
- margin:8px 0 0;line-height:1;text-shadow:0 0 46px rgba(255,230,188,.24)}
-.leads{display:flex;gap:11px;flex-wrap:wrap;margin-top:26px}
-.lead{padding:13px 18px;border-radius:2px;min-width:200px}
-.lead b{display:block;font-family:var(--inscribe);font-weight:600;font-size:1.02rem;letter-spacing:.03em;text-transform:uppercase}
-.lead .role{font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;margin-top:4px;color:#4E524B}
-.lead .role .w{color:var(--red-dim);font-weight:600}
-.cols{position:relative;z-index:2;display:grid;grid-template-columns:1.45fr .55fr;gap:48px;padding:34px 0 20px}
+.yhead{padding:56px 0 30px;border-bottom:1px solid var(--line)}
+.yhead h1{font-family:var(--inscribe);font-weight:800;font-size:clamp(2.8rem,7vw,4.6rem);letter-spacing:-.02em;
+ margin:8px 0 0;line-height:1;color:var(--ink)}
+.leads{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}
+.lead{padding:13px 18px;border-radius:10px;min-width:200px;border:1px solid var(--line);box-shadow:none}
+.lead b{display:block;font-family:var(--inscribe);font-weight:700;font-size:1.02rem;text-transform:none;letter-spacing:0}
+.lead .role{font-size:.78rem;margin-top:4px;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em;text-transform:none}
+.lead .role .w{color:var(--red);font-weight:600}
+.cols{display:grid;grid-template-columns:1.45fr .55fr;gap:48px;padding:34px 0 20px}
 @media(max-width:900px){.cols{grid-template-columns:1fr;gap:30px}}
-h2.sub{font-family:var(--inscribe);font-weight:600;font-size:1.1rem;letter-spacing:.13em;text-transform:uppercase;
- margin:0 0 18px;color:var(--txt2)}
-.note{border-left:2px solid var(--tungsten-dim);background:rgba(255,230,188,.05);padding:12px 16px;margin:0 0 18px;
- font-size:.93rem;color:var(--txt2)}
-.note b{color:var(--txt)}
-.ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spacing:.01em;margin:34px 0 14px;
+ color:var(--ink);text-transform:none;border-bottom:2px solid var(--red);display:inline-block;padding-bottom:4px}
+.note{border-left:3px solid var(--red);background:var(--paper2);border-radius:0 8px 8px 0;
+ padding:12px 16px;margin:0 0 18px;font-size:.93rem;color:var(--ink2)}
+.note b{color:var(--ink)}
+.ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
 @media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
-.ev .d{font-family:var(--mono);font-size:11px;color:var(--tungsten-dim);padding-top:3px}
-.ev h3{font-family:var(--inscribe);font-weight:600;font-size:1.04rem;margin:0 0 7px;letter-spacing:.02em}
-.ev p{margin:0;color:var(--txt2);font-size:.95rem}
-.ev .cite{display:inline-block;margin-top:9px;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;
- text-transform:uppercase;color:var(--tungsten-dim);border:1px solid rgba(255,230,188,.3);padding:3px 8px;
- text-decoration:none;border-radius:2px}
-.ev .cite:hover{background:rgba(255,230,188,.14);color:var(--tungsten)}
-.empty{border:1px dashed rgba(255,255,255,.16);padding:24px;color:var(--txt3);font-size:.94rem;border-radius:2px}
-.dig{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.02);padding:20px 18px;
- position:sticky;top:18px;max-height:88vh;overflow:auto;border-radius:2px}
-.dig h2{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 3px;color:var(--red)}
-.dig h3{font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;margin:18px 0 4px;color:var(--txt3)}
-.dig .lede{font-size:.82rem;color:var(--txt3);margin:0 0 8px;line-height:1.45}
-.dig a.q{display:block;text-decoration:none;padding:7px 0;border-top:1px solid rgba(255,255,255,.07);
- font-family:var(--mono);font-size:10.5px;color:var(--tungsten-dim);line-height:1.4}
-.dig a.q:hover{color:var(--tungsten)}
-.pager{position:relative;z-index:2;display:flex;justify-content:space-between;gap:18px;padding:26px 0 70px;
- border-top:1px solid rgba(255,255,255,.09);flex-wrap:wrap}
-.pager a{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-decoration:none;max-width:46%;color:var(--txt3)}
-.pager a b{display:block;font-family:var(--inscribe);font-size:1.05rem;color:var(--txt);margin-top:4px;letter-spacing:.04em}
-.pager a:hover b{color:var(--tungsten)}
+.ev .d{font-family:var(--mono);font-size:12px;color:var(--red);padding-top:4px;font-weight:600}
+.ev .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:5px;font-family:var(--ui)}
+.ev h3{font-family:var(--inscribe);font-weight:700;font-size:1.06rem;margin:0 0 7px;color:var(--ink)}
+.ev p{margin:0;color:var(--ink2);font-size:.95rem}
+.ev .cite{display:inline-block;margin-top:8px;margin-right:14px;font-size:.85rem;color:var(--red);border:0;padding:0;
+ text-decoration:underline;text-underline-offset:3px;text-transform:none;font-family:var(--ui);letter-spacing:0}
+.ev .cite:hover{background:none;color:var(--red-dark)}
+.empty{border:1px dashed var(--line);padding:24px;color:var(--ink3);font-size:.94rem;border-radius:10px}
+.dig{border:1px solid var(--line);background:var(--paper2);padding:20px 18px;position:sticky;top:18px;
+ max-height:88vh;overflow:auto;border-radius:12px}
+.dig h2{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 3px;color:var(--red);font-family:var(--ui)}
+.dig h3{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 4px;color:var(--ink3);font-family:var(--ui)}
+.dig .lede{font-size:.84rem;color:var(--ink3);margin:0 0 8px;line-height:1.5}
+.dig a.q{display:block;text-decoration:none;padding:7px 0;border-top:1px solid var(--line);
+ font-size:.84rem;color:var(--ink2);line-height:1.4;font-family:var(--ui)}
+.dig a.q:hover{color:var(--red)}
+.pager{display:flex;justify-content:space-between;gap:18px;padding:26px 0 90px;border-top:1px solid var(--line);flex-wrap:wrap}
+.pager a{font-size:.8rem;letter-spacing:.04em;text-decoration:none;max-width:46%;color:var(--ink3);font-family:var(--ui)}
+.pager a b{display:block;font-family:var(--inscribe);font-size:1.1rem;font-weight:700;color:var(--ink);margin-top:4px}
+.pager a:hover b{color:var(--red)}
 .pager .r{text-align:right;margin-left:auto}
 
 /* ---- president profiles ---- */
 .profile{margin:0 0 26px}
-.profile p{color:var(--txt2);font-size:.95rem;margin:0 0 12px}
+.profile p{color:var(--ink2);font-size:.96rem;margin:0 0 12px}
 
 /* ---- photographs ---- */
-.portraits{display:flex;gap:16px;flex-wrap:wrap;margin:0 0 28px}
+.portraits{display:flex;gap:16px;flex-wrap:wrap;margin:26px 0 4px}
 .portrait{margin:0;width:160px}
-.portrait img{width:100%;height:190px;object-fit:cover;object-position:top;border-radius:2px;
- border:1px solid rgba(255,255,255,.16);filter:saturate(.85) contrast(1.02);
- box-shadow:0 6px 18px rgba(0,0,0,.5)}
-.portrait figcaption{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;
- text-transform:uppercase;color:var(--txt3);margin-top:7px;line-height:1.5}
-.portrait figcaption b{display:block;font-family:var(--inscribe);font-size:.85rem;
- letter-spacing:.04em;color:var(--txt);text-transform:none}
+.portrait img{width:100%;height:190px;object-fit:cover;object-position:top;border-radius:10px;
+ box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.portrait figcaption{font-size:.78rem;color:var(--ink3);margin-top:7px;line-height:1.5}
+.portrait figcaption b{display:block;font-family:var(--inscribe);font-size:.92rem;font-weight:700;color:var(--ink)}
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:0 0 28px}
 .gallery figure{margin:0}
-.gallery img{width:100%;border-radius:2px;border:1px solid rgba(255,255,255,.12);
- filter:saturate(.85);box-shadow:0 6px 18px rgba(0,0,0,.5)}
-.gallery figcaption{font-size:.84rem;color:var(--txt3);margin-top:7px;line-height:1.5}
-.ev .ctx{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;
- text-transform:uppercase;color:var(--txt3);margin-top:5px}
+.gallery img{width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.gallery figcaption{font-size:.84rem;color:var(--ink3);margin-top:7px;line-height:1.5}
 
-/* ---- the organization: exec + senate ---- */
+/* ---- the organization ---- */
 .org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
 @media(max-width:640px){.org{grid-template-columns:1fr}}
-.org h3{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
- margin:0 0 10px;color:var(--red)}
-.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;
- border-bottom:1px solid rgba(255,255,255,.06);font-size:.93rem}
-.off .o{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
- color:var(--txt3);padding-top:3px;min-width:110px}
-.off b{font-family:var(--inscribe);font-weight:600;letter-spacing:.03em;color:var(--txt)}
-.off p{margin:3px 0 0;color:var(--txt2);font-size:.88rem}
-.org .meta{font-size:.88rem;color:var(--txt2);margin:10px 0 0}
+.org h3{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--red);font-family:var(--ui)}
+.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.93rem}
+.off .o{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding-top:4px;min-width:110px;font-family:var(--ui)}
+.off b{font-family:var(--inscribe);font-weight:700;color:var(--ink)}
+.off p{margin:3px 0 0;color:var(--ink2);font-size:.88rem}
+.org .meta{font-size:.88rem;color:var(--ink2);margin:10px 0 0}
 
-/* ---- the archive shelf: real documents ---- */
-.doc{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.02);border-radius:2px;
- margin:0 0 24px;overflow:hidden}
+/* ---- the archive shelf ---- */
+.doc{border:1px solid var(--line);border-radius:12px;margin:0 0 24px;overflow:hidden;background:var(--paper)}
 .doc-head{padding:17px 19px 14px}
-.doc-head h3{font-family:var(--inscribe);font-weight:600;font-size:1.04rem;margin:0 0 7px;letter-spacing:.02em}
-.doc-head p{margin:0;color:var(--txt2);font-size:.93rem}
-.doc-extract{border-left:2px solid var(--red-dim);background:rgba(176,30,36,.05);margin:0 19px 15px;
- padding:12px 16px;font-size:.93rem;color:var(--txt2)}
-.doc-extract .from{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;
- text-transform:uppercase;color:var(--txt3);margin-bottom:6px}
-.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid rgba(255,255,255,.09);
- background:#16181C}
-.doc-foot{display:flex;gap:10px;flex-wrap:wrap;padding:13px 19px}
-.doc-foot a{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
- color:var(--tungsten-dim);border:1px solid rgba(255,230,188,.3);padding:4px 9px;
- text-decoration:none;border-radius:2px}
-.doc-foot a:hover{background:rgba(255,230,188,.14);color:var(--tungsten)}
+.doc-head h3{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;margin:0 0 7px;color:var(--ink)}
+.doc-head p{margin:0;color:var(--ink2);font-size:.93rem}
+.doc-extract{border-left:3px solid var(--red);background:var(--paper2);margin:0 19px 15px;border-radius:0 8px 8px 0;
+ padding:12px 16px;font-size:.93rem;color:var(--ink2)}
+.doc-extract .from{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;font-family:var(--ui)}
+.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid var(--line);background:var(--paper2)}
+.doc-foot{display:flex;gap:18px;flex-wrap:wrap;padding:13px 19px}
+.doc-foot a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
+ text-transform:none;font-family:var(--ui);letter-spacing:0}
+.doc-foot a:hover{background:none;color:var(--red-dark)}
 
 /* ---- legislation ---- */
 .lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
- padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:.93rem}
+ padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
 @media(max-width:640px){.lrow{grid-template-columns:1fr;gap:4px}}
-.ltype{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt3)}
-.lt{color:var(--txt2)}
-.lls{display:flex;gap:8px;white-space:nowrap}
-.lls a{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
- color:var(--tungsten-dim);border:1px solid rgba(255,230,188,.3);padding:3px 8px;
- text-decoration:none;border-radius:2px}
-.lls a:hover{background:rgba(255,230,188,.14);color:var(--tungsten)}
+.ltype{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--red);font-weight:600}
+.lt{color:var(--ink)}
+.lls{display:flex;gap:14px;white-space:nowrap}
+.lls a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
+ text-transform:none;font-family:var(--ui);letter-spacing:0}
+.lls a:hover{background:none;color:var(--red-dark)}
 .lsec{margin:0 0 34px}
-.lcount{font-family:var(--mono);font-size:10px;color:var(--txt3);letter-spacing:.1em}
-.lfilter{width:100%;max-width:420px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);
- color:var(--txt);font-family:var(--mono);font-size:12px;padding:10px 14px;border-radius:2px;margin:6px 0 26px}
-.lfilter:focus{outline:2px solid var(--tungsten);outline-offset:2px}
+.lcount{font-size:.78rem;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em}
+.lfilter{width:100%;max-width:420px;background:var(--paper);border:1px solid var(--line);color:var(--ink);
+ font-family:var(--ui);font-size:15px;padding:11px 16px;border-radius:10px;margin:6px 0 26px}
+.lfilter:focus{outline:2px solid var(--red);outline-offset:2px}
 .ljump{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 22px}
+.ljump .chip{font-family:var(--ui);font-size:13px;padding:5px 13px;border:1px solid var(--line);border-radius:999px;
+ color:var(--ink2);text-decoration:none}
+.ljump .chip:hover{border-color:var(--red);color:var(--red)}
 </style></head><body>
 <div class="room"></div>
 
@@ -183,4 +176,5 @@ h2.sub{font-family:var(--inscribe);font-weight:600;font-size:1.1rem;letter-spaci
   <h3>Check: Reed Morgan</h3><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22Reed+Morgan%22+%28%22student+government+association%22+OR+%22associated+student+government%22+OR+%22student+government%22+OR+SGA+OR+ASG+OR+%22student+regent%22%29" target="_blank" rel="noopener">Reed Morgan + SGA terms &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22Reed+Morgan%22" target="_blank" rel="noopener">Reed Morgan on TopSCHOLAR &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu/wku_timeline+%22Reed+Morgan%22" target="_blank" rel="noopener">Reed Morgan in WKU Timeline &#8599;</a><a class="q" href="https://wkuherald.com/?s=Reed+Morgan" target="_blank" rel="noopener">Reed Morgan in the Herald &#8599;</a><h3>Check: Bill Straeffer</h3><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22Bill+Straeffer%22+%28%22student+government+association%22+OR+%22associated+student+government%22+OR+%22student+government%22+OR+SGA+OR+ASG+OR+%22student+regent%22%29" target="_blank" rel="noopener">Bill Straeffer + SGA terms &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22Bill+Straeffer%22" target="_blank" rel="noopener">Bill Straeffer on TopSCHOLAR &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu/wku_timeline+%22Bill+Straeffer%22" target="_blank" rel="noopener">Bill Straeffer in WKU Timeline &#8599;</a><a class="q" href="https://wkuherald.com/?s=Bill+Straeffer" target="_blank" rel="noopener">Bill Straeffer in the Herald &#8599;</a><h3>Check: Paul Gerard, III</h3><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22Paul+Gerard%2C+III%22+%28%22student+government+association%22+OR+%22associated+student+government%22+OR+%22student+government%22+OR+SGA+OR+ASG+OR+%22student+regent%22%29" target="_blank" rel="noopener">Paul Gerard, III + SGA terms &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22Paul+Gerard%2C+III%22" target="_blank" rel="noopener">Paul Gerard, III on TopSCHOLAR &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu/wku_timeline+%22Paul+Gerard%2C+III%22" target="_blank" rel="noopener">Paul Gerard, III in WKU Timeline &#8599;</a><a class="q" href="https://wkuherald.com/?s=Paul+Gerard%2C+III" target="_blank" rel="noopener">Paul Gerard, III in the Herald &#8599;</a><h3>Year sweep &mdash; 1968 &amp; 1969</h3><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+government+association%22+1968" target="_blank" rel="noopener">"student government association" 1968 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22associated+student+government%22+1968" target="_blank" rel="noopener">"associated student government" 1968 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+government%22+1968" target="_blank" rel="noopener">"student government" 1968 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+SGA+1968" target="_blank" rel="noopener">SGA 1968 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+ASG+1968" target="_blank" rel="noopener">ASG 1968 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+regent%22+1968" target="_blank" rel="noopener">"student regent" 1968 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+government+association%22+1969" target="_blank" rel="noopener">"student government association" 1969 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22associated+student+government%22+1969" target="_blank" rel="noopener">"associated student government" 1969 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+government%22+1969" target="_blank" rel="noopener">"student government" 1969 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+SGA+1969" target="_blank" rel="noopener">SGA 1969 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+ASG+1969" target="_blank" rel="noopener">ASG 1969 &#8599;</a><a class="q" href="https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+regent%22+1969" target="_blank" rel="noopener">"student regent" 1969 &#8599;</a>
  </div></aside>
 </div><div class="pager"><a href="1967-68.html">&larr; previous<b>1967-68</b></a><a class="r" href="1969-70.html">next &rarr;<b>1969-70</b></a></div></div>
+<div class="bigred" id="bigred" role="img" aria-label="Big Red holding the SGA gavel. Click to play."><button class="close" id="brx" aria-label="Dismiss Big Red">&times;</button><div class="say" id="brsay">Order, order!</div><svg width="154" height="133" viewBox="0 0 154 133"><rect x="42" y="0" width="7.4" height="7.4" fill="#B01E24"/><rect x="49" y="0" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="0" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="0" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="0" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="0" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="0" width="7.4" height="7.4" fill="#B01E24"/><rect x="91" y="0" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="7" width="7.4" height="7.4" fill="#B01E24"/><rect x="42" y="7" width="7.4" height="7.4" fill="#B01E24"/><rect x="49" y="7" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="7" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="7" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="7" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="7" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="7" width="7.4" height="7.4" fill="#B01E24"/><rect x="91" y="7" width="7.4" height="7.4" fill="#B01E24"/><rect x="98" y="7" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="42" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="49" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="91" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="98" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="105" y="14" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="21" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="21" width="7.4" height="7.4" fill="#B01E24"/><rect x="42" y="21" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="49" y="21" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="56" y="21" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="21" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="21" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="21" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="21" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="91" y="21" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="98" y="21" width="7.4" height="7.4" fill="#B01E24"/><rect x="105" y="21" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="28" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="28" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="42" y="28" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="49" y="28" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="56" y="28" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="28" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="28" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="28" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="28" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="91" y="28" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="98" y="28" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="105" y="28" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="35" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="35" width="7.4" height="7.4" fill="#B01E24"/><rect x="42" y="35" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="49" y="35" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="56" y="35" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="35" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="35" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="35" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="35" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="91" y="35" width="7.4" height="7.4" fill="#FFFFFF"/><rect x="98" y="35" width="7.4" height="7.4" fill="#B01E24"/><rect x="105" y="35" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="42" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="49" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="91" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="98" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="105" y="42" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="49" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="49" width="7.4" height="7.4" fill="#7E1014"/><rect x="42" y="49" width="7.4" height="7.4" fill="#7E1014"/><rect x="49" y="49" width="7.4" height="7.4" fill="#7E1014"/><rect x="56" y="49" width="7.4" height="7.4" fill="#7E1014"/><rect x="63" y="49" width="7.4" height="7.4" fill="#7E1014"/><rect x="70" y="49" width="7.4" height="7.4" fill="#7E1014"/><rect x="77" y="49" width="7.4" height="7.4" fill="#7E1014"/><rect x="84" y="49" width="7.4" height="7.4" fill="#7E1014"/><rect x="91" y="49" width="7.4" height="7.4" fill="#7E1014"/><rect x="98" y="49" width="7.4" height="7.4" fill="#7E1014"/><rect x="105" y="49" width="7.4" height="7.4" fill="#B01E24"/><rect x="21" y="56" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="56" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="56" width="7.4" height="7.4" fill="#7E1014"/><rect x="42" y="56" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="49" y="56" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="56" y="56" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="63" y="56" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="70" y="56" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="77" y="56" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="84" y="56" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="91" y="56" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="98" y="56" width="7.4" height="7.4" fill="#7E1014"/><rect x="105" y="56" width="7.4" height="7.4" fill="#B01E24"/><rect x="112" y="56" width="7.4" height="7.4" fill="#B01E24"/><rect x="21" y="63" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="63" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="63" width="7.4" height="7.4" fill="#7E1014"/><rect x="42" y="63" width="7.4" height="7.4" fill="#7E1014"/><rect x="49" y="63" width="7.4" height="7.4" fill="#7E1014"/><rect x="56" y="63" width="7.4" height="7.4" fill="#7E1014"/><rect x="63" y="63" width="7.4" height="7.4" fill="#7E1014"/><rect x="70" y="63" width="7.4" height="7.4" fill="#7E1014"/><rect x="77" y="63" width="7.4" height="7.4" fill="#7E1014"/><rect x="84" y="63" width="7.4" height="7.4" fill="#7E1014"/><rect x="91" y="63" width="7.4" height="7.4" fill="#7E1014"/><rect x="98" y="63" width="7.4" height="7.4" fill="#7E1014"/><rect x="105" y="63" width="7.4" height="7.4" fill="#B01E24"/><rect x="112" y="63" width="7.4" height="7.4" fill="#B01E24"/><rect x="21" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="42" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="49" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="91" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="98" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="105" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="112" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="119" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="126" y="70" width="7.4" height="7.4" fill="#B01E24"/><rect x="21" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="42" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="49" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="91" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="98" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="105" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="112" y="77" width="7.4" height="7.4" fill="#B01E24"/><rect x="21" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="35" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="49" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="98" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="105" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="112" y="84" width="7.4" height="7.4" fill="#B01E24"/><rect x="21" y="91" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="91" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="91" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="91" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="91" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="91" width="7.4" height="7.4" fill="#B01E24"/><rect x="105" y="91" width="7.4" height="7.4" fill="#B01E24"/><rect x="112" y="91" width="7.4" height="7.4" fill="#B01E24"/><rect x="28" y="98" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="98" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="98" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="98" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="98" width="7.4" height="7.4" fill="#B01E24"/><rect x="105" y="98" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="105" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="105" width="7.4" height="7.4" fill="#B01E24"/><rect x="70" y="105" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="105" width="7.4" height="7.4" fill="#B01E24"/><rect x="49" y="112" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="112" width="7.4" height="7.4" fill="#B01E24"/><rect x="63" y="112" width="7.4" height="7.4" fill="#B01E24"/><rect x="77" y="112" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="112" width="7.4" height="7.4" fill="#B01E24"/><rect x="91" y="112" width="7.4" height="7.4" fill="#B01E24"/><rect x="42" y="119" width="7.4" height="7.4" fill="#B01E24"/><rect x="49" y="119" width="7.4" height="7.4" fill="#B01E24"/><rect x="56" y="119" width="7.4" height="7.4" fill="#B01E24"/><rect x="84" y="119" width="7.4" height="7.4" fill="#B01E24"/><rect x="91" y="119" width="7.4" height="7.4" fill="#B01E24"/><rect x="98" y="119" width="7.4" height="7.4" fill="#B01E24"/><rect x="42" y="126" width="7.4" height="7.4" fill="#B01E24"/><rect x="49" y="126" width="7.4" height="7.4" fill="#B01E24"/><rect x="91" y="126" width="7.4" height="7.4" fill="#B01E24"/><rect x="98" y="126" width="7.4" height="7.4" fill="#B01E24"/><g class="gavel"><rect x="112" y="28" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="119" y="28" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="126" y="28" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="133" y="28" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="112" y="35" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="119" y="35" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="126" y="35" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="133" y="35" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="112" y="42" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="119" y="42" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="126" y="42" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="133" y="42" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="119" y="49" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="126" y="49" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="119" y="56" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="126" y="56" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="119" y="63" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="126" y="63" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="119" y="70" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="126" y="70" width="7.4" height="7.4" fill="#8B5A2B"/></g></svg></div><script>(function(){var br=document.getElementById("bigred");if(!br)return;try{if(localStorage.getItem("bigred")==="hidden"){br.remove();return}}catch(e){}document.getElementById("brx").addEventListener("click",function(e){e.stopPropagation();br.remove();try{localStorage.setItem("bigred","hidden")}catch(e){}});var says=["Order, order!","Go Tops!","Sixty years on the Hill.","Motion carries.","The Spirit Makes the Master."],i=0,m=-1;br.addEventListener("click",function(){br.classList.remove("bounce","spin","bang","talk");void br.offsetWidth;m=(m+1)%3;if(m===0){br.classList.add("bang","talk");document.getElementById("brsay").textContent=says[i++%says.length];}else if(m===1){br.classList.add("bounce")}else{br.classList.add("spin")}clearTimeout(br._t);br._t=setTimeout(function(){br.classList.remove("talk")},1600)});})();</script>
 </body></html>
