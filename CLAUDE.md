@@ -12,6 +12,22 @@ Accuracy beats completeness. An empty year is fine. A wrong year is not.
 Names come from the plaque in the SGA Chambers. **People who served have reported their year on it
 is wrong.** Treat every `plaque_term` as a claim to verify, not a fact to copy.
 
+## Settled facts — do not re-litigate these
+- The student regent was a **separately elected office** from April 1968. That is why plaque years
+  carry two names. William Menser was the first, April 1968. The seat was non-voting until at least 1972.
+- Confirmed regents rather than presidents: Michael Fiorella 1972-73, Gregory McKinney 1974-75
+  (first African American student regent), Sandra Norfleet 1982-83.
+- By ~2001 the offices merged. After that, a second name in a year is a mid-year succession.
+- Still open: Reed Morgan 1968-69, John Lyne vs Larry Zielke 1970-71, David Payne 1982-83.
+
+## Sources, in order of usefulness
+1. `digitalcommons.wku.edu/dlsc_ua_records/` — Herald back file, indexed article by article
+2. `digitalcommons.wku.edu/wku_timeline/` — dated, described, citable single events
+3. `digitalcommons.wku.edu/sga/` — SGA's own constitutions, minutes, legislation, correspondence
+4. `wkuherald.com` — full text, roughly 2003 onward
+
+TopSCHOLAR blocks bots on its own search page. Use `site:digitalcommons.wku.edu "query"` on Google.
+
 ## Per-year workflow
 
 ### 1. Verify the leader, before anything else

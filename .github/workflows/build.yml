@@ -49,7 +49,7 @@ jobs:
           from pathlib import Path
           bad = 0
           for f in Path('site').rglob('*.html'):
-              for href in re.findall(r'href="([^"#:]+\.html)[^"]*"', f.read_text()):
+              for href in re.findall(r'href="([^"#:$]+\.html)[^"]*"', f.read_text()):
                   if not (f.parent / href).resolve().exists():
                       print('broken:', f, '->', href); bad += 1
           sys.exit(1 if bad else 0)

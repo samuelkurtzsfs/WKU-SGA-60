@@ -40,17 +40,39 @@ Every year page has the searches pre-built in the sidebar. For each leader:
 1975-76."` A history project that quietly edits its own primary source is worse than one with an
 error in it.
 
-### The one question that unlocks 18 entries
-The plaque does not distinguish presidents from student regents, and 18 plates share a year with
-another name. The overlaps: 1968–70, 1970–71, 1972–73, 1974–75, 1982 (three names), 2006, 2007–09, 2014.
+### The president-vs-regent question — SOLVED
 
-Two explanations, not mutually exclusive: mid-year successions, or a separately elected student
-regent from before the offices merged. WKU began lobbying Frankfort for a student regent seat in
-February 1968, which is exactly when the pairs start.
+It was in the Herald index the whole time. The student regent was a **separately elected office**,
+which is why plaque years carry two names.
 
-Settle it at: the 1966 constitution and 1969 minutes (`digitalcommons.wku.edu/sga/`), Board of
-Regents minutes for the first year a student appears (`digitalcommons.wku.edu/bor/`), the legislative
-history of KRS 164.321, or one email to `archives@wku.edu`. The email is fastest.
+| Date | Herald | What it says |
+|---|---|---|
+| 8 Feb 1968 | 47:18 | "Bill Proposing Student Regent in Committee" |
+| 4 Apr 1968 | 47:26 | "William Menser Assumes Duties as Regent Board Member" — the first |
+| 10 Feb 1970 | 49:26 | "'Associate' Regents Want Voting Power" — the seat had no vote |
+| 1 Feb 1972 | 51:32 | "Student Regent May Get Vote" — still fighting, four years on |
+| 26 Sep 1972 | 52:6 | "Three New Regents Sworn In — Michael Fiorella, Gerald Edds, Chalmer Embry" |
+| 19 Jun 1974 | WKU Timeline | Gregory McKinney, WKU's first African American student regent |
+| 18 Feb 1982 | 57:41 | "Sandra Norfleet Elected Student Regent" |
+
+**Confirmed regents, not presidents:** Michael Fiorella (1972-73), Gregory McKinney (1974-75),
+Sandra Norfleet (1982-83). Paul Gerard III (1968-70) is a likely second regent, unconfirmed.
+
+**By roughly 2001 the offices had merged** — Leslie Bedo appears as both president and student regent
+for 2001-02. So a second name in a year after that is a mid-year succession, not a separate office.
+
+**Four pairs remain genuinely open:** Reed Morgan (1968-69), John Lyne and Larry Zielke (1970-71),
+David Payne (1982-83). All four should fall out of April election coverage in the Herald for those years.
+
+### The resource that cracked it
+`digitalcommons.wku.edu/wku_timeline/` — the WKU Timeline collection. Dated, described, citable,
+one entry per event. It is not obvious from the SGA collection and it is where the McKinney fact came
+from. Search it by name and by year alongside the Herald.
+
+Note: TopSCHOLAR blocks automated search, but Google indexes it fully, so
+`site:digitalcommons.wku.edu "name"` works and is what the sidebar links use. The native search box
+works fine for a human in a browser.
+
 
 ---
 
