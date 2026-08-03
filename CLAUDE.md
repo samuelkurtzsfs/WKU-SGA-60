@@ -28,6 +28,11 @@ is wrong.** Treat every `plaque_term` as a claim to verify, not a fact to copy.
 
 TopSCHOLAR blocks bots on its own search page. Use `site:digitalcommons.wku.edu "query"` on Google.
 
+**Pace yourself on digitalcommons.wku.edu or lose the whole run.** Its bot protection triggers
+on burst volume: parallel or rapid requests get every subsequent request refused with a 403.
+One request at a time, 3 seconds apart, and if you get a 403, wait 90 seconds and retry.
+A slow polite crawl gets everything; a fast one gets nothing.
+
 ## Per-year workflow
 
 ### 1. Verify the leader, before anything else
@@ -91,23 +96,29 @@ profile is short. Short and true beats long and padded.
 
 ## Pictures — as many as the archive gives up
 Every president should eventually have a portrait, and every year should have photographs.
-Image files live in `data/photos/`, named `<year>-<slug>.jpg`; the build copies them into
-the site.
+Image files live in `data/photos/`, named `<year>-<slug>.jpg`. **All photo metadata goes in
+`data/photos.json`, never in years.json** — photos have their own file so the photograph
+agent and the decade agents never collide. The build merges it in automatically.
 
-A leader's portrait:
+`data/photos.json`:
 ```json
-"photo": {"file": "1989-90-amos-gott.jpg",
-          "src": {"label": "1990 Talisman, p. 214", "url": "https://digitalcommons.wku.edu/..."}}
+{
+ "leaders": [
+  {"year": "1989-90", "name": "Amos Gott", "file": "1989-90-amos-gott.jpg",
+   "src": {"label": "1990 Talisman, p. 214", "url": "https://digitalcommons.wku.edu/..."}}
+ ],
+ "years": [
+  {"year": "1969-70", "file": "1969-70-registration-line.jpg",
+   "caption": "What the photograph shows, one sentence, factual.",
+   "src": {"label": "WKU Archives UA1C...", "url": "https://digitalcommons.wku.edu/..."}}
+ ]
+}
 ```
+The `name` in a leaders entry must exactly match the leader's name in years.json.
 
-A year's photographs, in the year object:
-```json
-"photos": [
- {"file": "1969-70-registration-line.jpg",
-  "caption": "What the photograph shows, one sentence, factual.",
-  "src": {"label": "WKU Archives UA1C...", "url": "https://digitalcommons.wku.edu/..."}}
-]
-```
+Old Herald articles on TopSCHOLAR usually print the subject's name in the caption or the
+article text right by the photograph — that is your identification. Quote it in your PR
+report as evidence.
 
 Where to hunt, in order:
 1. **The Talisman yearbooks** on TopSCHOLAR (`digitalcommons.wku.edu/talisman/`) - every

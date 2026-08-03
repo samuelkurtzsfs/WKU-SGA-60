@@ -728,8 +728,29 @@ if(location.hash && D[location.hash.slice(1)]) openYear(location.hash.slice(1));
     return shell("SGA 60 · Sixty Years on the Hill", body, INDEX_CSS, depth=0)
 
 
+def apply_photo_overlay(ys):
+    """Merge data/photos.json onto the years. Photos live in their own file so the
+    photograph agent and the six decade agents never edit the same file."""
+    overlay_path = ROOT / "data" / "photos.json"
+    if not overlay_path.exists():
+        return
+    overlay = json.loads(overlay_path.read_text())
+    by_id = {y["id"]: y for y in ys}
+    for p in overlay.get("leaders", []):
+        y = by_id.get(p["year"])
+        for l in (y["leaders"] if y else []):
+            if l["name"] == p["name"]:
+                l["photo"] = {"file": p["file"], "src": p.get("src")}
+    for p in overlay.get("years", []):
+        y = by_id.get(p["year"])
+        if y:
+            y.setdefault("photos", []).append(
+                {"file": p["file"], "caption": p.get("caption", ""), "src": p.get("src")})
+
+
 def main():
     ys = json.loads(DATA.read_text())["years"]
+    apply_photo_overlay(ys)
     leg = json.loads(LEGMETA.read_text())["entries"] if LEGMETA.exists() else []
     by_session = {}
     for e in leg:
