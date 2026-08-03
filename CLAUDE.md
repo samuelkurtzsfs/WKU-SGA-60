@@ -218,6 +218,15 @@ Where sources allow, record the whole structure for a year, not just the preside
 
 Every field is optional. Same rule as events: no source, no claim.
 
+
+## Cloud agents: how to land your work when git push is restricted
+The cloud GitHub proxy may refuse pushes to branches you create and only allow pushing the
+session's own branch. If your push to a research-* branch is denied: commit your work to the
+branch you are currently on (`git branch --show-current`), push THAT branch, and open the PR
+to main from it, using your designated PR title. If even that push is denied, write your
+complete findings - every fact with its source URL - into your final run report so nothing is
+lost. Never abandon verified research because a push was refused, and never push to main.
+
 ## Hard rules
 - **Never invent.** No plausible-sounding filler. If a year is thin, it is thin.
 - **Every event needs a `src`.** No source, no entry.
