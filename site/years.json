@@ -183,7 +183,19 @@
    "start": 1969,
    "end": 1970,
    "org": "Associated Students",
-   "leaders": [],
+   "leaders": [
+    {
+     "name": "Paul Gerard, III",
+     "plaque_term": "1968-70",
+     "role": "regent",
+     "year_confidence": "likely",
+     "name_verified": false,
+     "missing_from_plaque": false,
+     "current": false,
+     "note": "Second year of the two-year 1968-70 plate; see 1968-69. The plaque names no president at all for 1969-70 - the only year in the whole record with no president plate. Who actually led the body this year is an open research question for the Herald's spring 1969 election coverage.",
+     "sources": []
+    }
+   ],
    "events": [
     {
      "date": "1969-10-07",
