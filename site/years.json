@@ -2760,6 +2760,42 @@
    ],
    "events": [
     {
+     "date": "1982-02-16",
+     "title": "Norfleet wins the student regent runoff",
+     "body": "No candidate won a majority in the February 9 student regent primary, forcing a runoff. Sandra Norfleet won the runoff on February 16.",
+     "src": {
+      "label": "Herald 57:41, 18 Feb 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2447"
+     }
+    },
+    {
+     "date": "1982-04-08",
+     "title": "Ragan and Sargent survive the ASG primary",
+     "body": "Margaret Ragan and Glenn Sargent survived the Associated Student Government presidential primary, emerging from a five-way field.",
+     "src": {
+      "label": "Herald 57:53, 8 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2462"
+     }
+    },
+    {
+     "date": "1982-04-15",
+     "title": "Norfleet's short regent term nears its end",
+     "body": "The Herald noted that the student regent's two-month term was already nearing its end, a reminder of how short a stopgap the office had been.",
+     "src": {
+      "label": "Herald 57:55, 15 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2464"
+     }
+    },
+    {
+     "date": "1982-04-20",
+     "title": "Ragan wins the presidency in a repeated election",
+     "body": "The first general election was voided, and Margaret Ragan won the Associated Student Government presidency in the repeated election held April 20. She and the other new officers were sworn in before the month was out.",
+     "src": {
+      "label": "Herald 57:57, 22 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2466"
+     }
+    },
+    {
      "date": "1983-02-03",
      "title": "ASG floats a shuttle service, and Ragan explains the split with the regent seat",
      "body": "The same issue that carried President Margaret Ragan's Herald piece explaining that the ASG presidency and student regent seat were now separate positions also reported ASG was considering a shuttle service, the proposal put to a student vote the following week.",
@@ -2771,7 +2807,7 @@
     {
      "date": "1983-02-10",
      "title": "Grade plan passes; students vote for a shuttle",
-     "body": "ASG passed a grade plan, and 206 students voted for a campus shuttle service. The shuttle idea drew an offer of help from the TVA two weeks later.",
+     "body": "ASG passed a grade plan, and 206 students voted for a campus shuttle service.",
      "src": {
       "label": "Herald 58:40, 10 Feb 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2341"
@@ -2805,6 +2841,15 @@
      }
     },
     {
+     "date": "1983-03-01",
+     "title": "24 elected to Senate",
+     "body": "Twenty-four students were elected to the Associated Student Government Senate, the same issue reporting increased dormitory hours had been proposed.",
+     "src": {
+      "label": "Herald 58:45, 1 Mar 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2346"
+     }
+    },
+    {
      "date": "1983-04-28",
      "title": "ASG endorses a $15 athletic fee",
      "body": "The outgoing congress endorsed a $15 athletic fee. The vote came as the Board of Regents turned its focus to the budget.",
@@ -2812,19 +2857,35 @@
       "label": "Herald 58:59, 28 Apr 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2360"
      }
-    },
-    {
-     "date": "1983-02-03",
-     "title": "Ragan: ASG presidency and student regent are separate jobs",
-     "body": "President Margaret Ragan wrote in the Herald that the Associated Student Government presidency and the student regent position were separate. The distinction reflected the 1982 change that made the student regent directly elected by the student body.",
-     "src": {
-      "label": "Herald 58:38, 3 Feb 1983",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2339"
-     },
-     "campus": true
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Margaret Ragan",
+      "note": "Won a repeated general election 20 April 1982 after the first was voided; succeeded by Jack Smith in April 1983.",
+      "src": {
+       "label": "Herald 57:57, 22 Apr 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2466"
+      }
+     },
+     {
+      "office": "Student Regent",
+      "name": "Sandra Norfleet",
+      "note": "Separately elected office; her term ran only from mid-February to roughly mid-April 1982, a two-month stopgap before the 1982-83 cycle.",
+      "src": {
+       "label": "Herald 57:41, 18 Feb 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2447"
+      }
+     }
+    ],
+    "senate": {
+     "size": 24,
+     "note": "Twenty-four senators were elected 1 March 1983; the Herald did not name a Speaker or list committees in the coverage found so far."
+    }
+   }
   },
   {
    "id": "1983-84",
@@ -3075,14 +3136,18 @@
      "plaque_term": "1985-86",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "February 1985 Herald ran an apathy editorial and cartoon plus a report on 24-hour open house discussions.",
+     "note": "Named explicitly as SGA president in the outgoing congress's own commendation bill, Bill 86-13-S (3 Apr 1986), which settles the name.",
      "sources": [
       {
        "label": "Herald 60:38, 14 Feb 1985",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5721"
+      },
+      {
+       "label": "Herald 60:45, 21 Mar 1985",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5760"
       },
       {
        "label": "Herald 60:47, 28 Mar 1985",
@@ -3095,16 +3160,80 @@
       {
        "label": "Herald 61:46, 4 Mar 1986",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6810"
+      },
+      {
+       "label": "SGA Bill 86-13-S, Commendation of President, 3 Apr 1986",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/35"
+      },
+      {
+       "label": "Board of Regents minutes, 8 Aug 1986",
+       "url": "https://digitalcommons.wku.edu/bor/1986/mtgs/4"
       }
      ],
      "profile": [
-      "McKinney won the spring 1985 primary on a ticket with Chris Watkins; the Herald's headline said the pair rode experience to their primary victory.",
-      "He was announced as the new Associated Student Government president in the Herald of 4 April 1985, in the same issue that reported a legislative group rejoining ASG.",
-      "In March 1986 McKinney pulled out of the race for a second term. The same issue carried a piece arguing that student government needed a strong leader, and the field he left behind grew to four candidates before Tim Todd won the presidency that April. A 1986 presidential proclamation he signed honoring English professor Thomas Jones survives in the SGA records."
+      "Before he was a candidate, McKinney wrote a Herald op-ed on 21 March 1985 headlined 'Associated Student Government Shouldn't Force Bill,' one of a pair of dueling pieces the paper ran on the same question - a sign he was already active in ASG's legislative debates a week before he entered the presidential race.",
+      "McKinney won the spring 1985 primary on a ticket with Chris Watkins on March 28, the Herald's headline saying the pair rode experience to their primary victory over a field that included candidate Stan Reagan. He was announced as the new Associated Student Government president in the Herald of April 4, in the same issue that reported an unnamed legislative group rejoining ASG. The record found so far does not confirm what office, if any, Watkins went on to hold.",
+      "In office, the congress abolished its own Finance Committee that September and, the following spring, wrote a Financial Advisory Council into the ASG bylaws in its place. The spring 1986 session was especially active: bills created major/minor college representative seats, revised the membership application process, asked Board of Regents members to attend an SGA meeting, sought chains for Pearce-Ford Tower windows, and pushed for a welcome sign at Normal Drive and University Boulevard.",
+      "In March 1986 McKinney pulled out of the race for a second term. The same issue carried a piece arguing that student government needed a strong leader, and the field he left behind grew to four candidates before Tim Todd won the presidency that April. The outgoing congress commended McKinney's work in Bill 86-13-S on April 3, and the WKU Board of Regents included a resolution honoring him, alongside outgoing president John D. Minton, at its meeting of August 8, 1986. A 1986 presidential proclamation he signed honoring English professor Thomas Jones survives in the SGA records."
      ]
     }
    ],
    "events": [
+    {
+     "date": "1985-02-14",
+     "title": "An apathy editorial greets a 24-hour open house debate",
+     "body": "The Herald ran an apathy editorial and cartoon aimed at student government alongside a report on debate over 24-hour open house policy in the dorms.",
+     "src": {
+      "label": "Herald 60:38, 14 Feb 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5721"
+     },
+     "campus": true
+    },
+    {
+     "date": "1985-03-21",
+     "title": "Dueling op-eds spar over forcing a bill",
+     "body": "The Herald ran a pair of opposing opinion pieces, both headlined \"Associated Student Government Shouldn't Force Bill,\" one by future ASG president Mitchell McKinney and the other by Jamie Morton.",
+     "src": {
+      "label": "Herald 60:45, 21 Mar 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5760"
+     }
+    },
+    {
+     "date": "1985-03-28",
+     "title": "McKinney and Watkins win the ASG primary",
+     "body": "Mitchell McKinney and Chris Watkins won the Associated Student Government presidential primary over a field that included candidate Stan Reagan.",
+     "src": {
+      "label": "Herald 60:47, 28 Mar 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5759"
+     }
+    },
+    {
+     "date": "1985-04-04",
+     "title": "McKinney elected president; a legislative group rejoins ASG",
+     "body": "Mitchell McKinney was elected Associated Student Government president. The same issue reported that an unnamed legislative group had rejoined ASG.",
+     "src": {
+      "label": "Herald 60:49, 4 Apr 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5757"
+     }
+    },
+    {
+     "date": "1985-09-24",
+     "title": "ASG abolishes its Finance Committee",
+     "body": "The congress voted to abolish its own Finance Committee, a structural change later reversed in part when a Financial Advisory Council was written into the bylaws the following spring.",
+     "src": {
+      "label": "SGA Bill 85-1-F, Abolishment of Finance Committee",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/31"
+     }
+    },
+    {
+     "date": "1985-10-12",
+     "title": "ASG orders its own student discount card",
+     "body": "The congress passed legislation calling for ASG to produce its own student discount card, one of several consumer-service ideas the group pursued that fall.",
+     "src": {
+      "label": "SGA Bill 85-15-F, Production of Own Student Discount Card",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/18"
+     }
+    },
     {
      "date": "1985-10-31",
      "title": "A 20-vote margin and a GPA debate",
@@ -3160,12 +3289,75 @@
      }
     },
     {
+     "date": "1986-03-04",
+     "title": "McKinney withdraws from re-election",
+     "body": "Mitchell McKinney pulled out of the race for a second term as ASG president. The same issue carried a piece arguing that student government needed a strong leader.",
+     "src": {
+      "label": "Herald 61:46, 4 Mar 1986",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6810"
+     }
+    },
+    {
      "date": "1986-03-20",
      "title": "Library hours proposals, and elections delayed a week",
      "body": "ASG proposals asked for more library hours, and the spring elections were pushed back a week. The same issue carried dueling letters on whether the organization was in trouble.",
      "src": {
       "label": "Herald 61:48, 20 Mar 1986",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6806"
+     }
+    },
+    {
+     "date": "1986-03-25",
+     "title": "College representative seats created",
+     "body": "The congress created major/minor college representative seats within its own membership.",
+     "src": {
+      "label": "SGA Bill 86-19-S, Voting of Representatives for Colleges",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/59"
+     }
+    },
+    {
+     "date": "1986-04-01",
+     "title": "ASG revises its membership application",
+     "body": "The congress adopted a revised application process for SGA membership.",
+     "src": {
+      "label": "SGA Bill 86-21-S, Adoption of New Application",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/57"
+     }
+    },
+    {
+     "date": "1986-04-01",
+     "title": "ASG asks regents to attend a meeting",
+     "body": "The congress asked that Board of Regents members attend and speak at one SGA meeting during their term.",
+     "src": {
+      "label": "SGA Bill 86-22-S, Attendance of Regents at Meetings",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/56"
+     }
+    },
+    {
+     "date": "1986-04-01",
+     "title": "ASG seeks chains for Pearce-Ford Tower windows",
+     "body": "The congress asked for chains to be placed on Pearce-Ford Tower windows so they could be opened.",
+     "src": {
+      "label": "SGA Bill 86-26-S, Placing of Chain on Windows",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/55"
+     }
+    },
+    {
+     "date": "1986-04-02",
+     "title": "Financial Advisory Council written into the bylaws",
+     "body": "The congress incorporated the Financial Advisory Council into the ASG bylaws, months after abolishing its own Finance Committee.",
+     "src": {
+      "label": "SGA Bill 86-3-S, Incorporation of Councils into By-Laws",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/44"
+     }
+    },
+    {
+     "date": "1986-04-03",
+     "title": "Outgoing congress commends President McKinney",
+     "body": "The outgoing congress passed a bill commending the work of SGA president Mitchell McKinney as his term ended.",
+     "src": {
+      "label": "SGA Bill 86-13-S, Commendation of President",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/35"
      }
     },
     {
@@ -3176,9 +3368,64 @@
       "label": "Herald 61:54, 10 Apr 1986",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6818"
      }
+    },
+    {
+     "date": "1986-04-15",
+     "title": "ASG pushes for a campus welcome sign",
+     "body": "The congress pushed for a welcome sign to be placed at the intersection of Normal Drive and University Boulevard.",
+     "src": {
+      "label": "SGA Bill 86-36-S, Placing of Welcome Sign on Campus",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/68"
+     }
+    },
+    {
+     "date": "1986-04-15",
+     "title": "ASG commends outgoing President Minton",
+     "body": "The congress passed a bill commending outgoing WKU president John D. Minton for his service to the university.",
+     "src": {
+      "label": "SGA Bill 86-39-S, Commendation of Dr. John D. Minton",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/65"
+     },
+     "campus": true
+    },
+    {
+     "date": "1986-08-08",
+     "title": "Regents honor McKinney at term's end",
+     "body": "The WKU Board of Regents included a resolution honoring outgoing ASG president Mitchell McKinney, alongside honors for Georgia Bates and outgoing WKU president John Minton, at its August meeting - held the same day Kern Alexander was named the university's new president.",
+     "src": {
+      "label": "Board of Regents minutes, 8 Aug 1986",
+      "url": "https://digitalcommons.wku.edu/bor/1986/mtgs/4"
+     },
+     "campus": true
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Mitchell McKinney",
+      "note": "Ran on a primary ticket with Chris Watkins in spring 1985; the record found so far does not confirm what office, if any, Watkins held afterward. Withdrew from re-election in March 1986 and was commended by the outgoing congress that April.",
+      "src": {
+       "label": "Herald 60:49, 4 Apr 1985",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5757"
+      }
+     }
+    ],
+    "senate": {
+     "committees": [
+      {
+       "name": "Finance Committee",
+       "note": "Abolished by the congress in September 1985."
+      },
+      {
+       "name": "Financial Advisory Council",
+       "note": "Written into the ASG bylaws in April 1986, replacing the abolished Finance Committee."
+      }
+     ],
+     "note": "Spring 1986 also created major/minor college representative seats (Bill 86-19-S) and revised the SGA membership application process (Bill 86-21-S)."
+    }
+   }
   },
   {
    "id": "1986-87",
