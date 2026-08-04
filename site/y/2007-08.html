@@ -1,189 +1,306 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#08090B">
-<meta name="description" content="Sixty years of student government at Western Kentucky University, 1966-2026.">
-<title>2007-08 · SGA 60</title><style>
+<meta name="theme-color" content="#0B0B0C">
+<meta name="description" content="Student government at Western Kentucky University, 2007-08. Jeanne Johnson. 13 sourced entries.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2007-08 · SGA 60">
+<meta property="og:description" content="Student government at Western Kentucky University, 2007-08. Jeanne Johnson. 13 sourced entries.">
+<title>2007-08 · SGA 60</title>
+<style>
 :root{
- --red:#B01E24; --red-dark:#8E1218; --black:#0B0B0C;
- --ink:#151517; --ink2:#4C4C4F; --ink3:#8A8A8E;
- --paper:#FFFFFF; --paper2:#F7F6F3; --line:#E7E4DF;
- --inscribe:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
+ --red:#B01E24; --red-dark:#8A171C; --black:#0B0B0C;
+ --ink:#141416; --ink2:#44444B; --ink3:#76767D;
+ --paper:#FFFFFF; --paper2:#F6F5F2; --line:#DCD9D3; --line2:#EBE8E3;
+ --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
- --mono:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
+ --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+ --measure:35rem;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
- font-size:clamp(15px,0.35vw + 13.8px,18px);line-height:1.65;
- -webkit-font-smoothing:antialiased;overflow-x:hidden}
+ font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+@media(max-width:640px){body{font-size:16px}}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;letter-spacing:-.012em;
+ text-wrap:balance;margin:0}
+p{margin:0 0 1em;text-wrap:pretty}
 a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--red-dark)}
-:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
-.eyebrow{font-family:var(--ui);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
-.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+a.ext::after{content:"\00A0\2197";color:var(--ink3);font-size:.82em;text-decoration:none}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 34px}
 @media(max-width:640px){.wrap{padding:0 18px}}
+.prose{max-width:var(--measure)}
+.num{font-variant-numeric:tabular-nums}
+.lab{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px}
 
-/* plaque plates: clean white cards on the black wall */
-.plate-face{background:var(--paper);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.25);position:relative}
-.engraved{color:var(--ink)}
+/* ---- masthead nav ---- */
+.nav{background:var(--black);color:#fff}
+.nav .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+ padding:13px 34px;flex-wrap:wrap}
+@media(max-width:640px){.nav .wrap{padding:11px 18px}}
+.nav a{color:rgba(255,255,255,.72);text-decoration:none;font-size:.86rem}
+.nav a:hover,.nav a[aria-current]{color:#fff}
+.nav a[aria-current]{box-shadow:inset 0 -2px 0 var(--red)}
+.nav .brand{font-family:var(--display);font-weight:800;letter-spacing:.05em;color:#fff;font-size:1rem}
+.nav .brand b{color:var(--red);font-weight:800}
+.nav ul{display:flex;gap:20px;margin:0;padding:0;list-style:none;flex-wrap:wrap}
 
-/* ---- Big Red ---- */
-.bigred{position:fixed;right:18px;bottom:10px;z-index:80;cursor:pointer;user-select:none;-webkit-user-select:none;line-height:0}
-.bigred{width:170px}
-.bigred img{display:block;width:100%;height:auto;image-rendering:pixelated;
- filter:drop-shadow(0 8px 14px rgba(0,0,0,.28))}
-.bigred .wig{position:absolute;top:-24px;left:24%;pointer-events:none}
-.bigred .gavel{position:absolute;top:16%;right:-14px;pointer-events:none}
-.bigred .close{position:absolute;top:-12px;right:-6px;width:22px;height:22px;border-radius:50%;
- border:1px solid var(--line);background:var(--paper);color:var(--ink2);font-size:13px;line-height:19px;
- text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
-.bigred .close:hover{color:var(--red);border-color:var(--red)}
-.bigred .say{position:absolute;bottom:100%;right:8%;margin-bottom:12px;background:var(--black);color:#fff;
- font-family:var(--ui);font-size:11px;letter-spacing:.06em;padding:8px 12px;border-radius:8px;white-space:nowrap;
- opacity:0;transform:translateY(6px);transition:.25s;pointer-events:none;line-height:1.4}
-.bigred .say:after{content:"";position:absolute;top:100%;right:22px;border:6px solid transparent;border-top-color:var(--black)}
-.bigred.talk .say{opacity:1;transform:none}
-.bigred .gavel{transform-origin:24% 88%}
-@keyframes br-bounce{0%,100%{transform:none}30%{transform:translateY(-28px) rotate(-5deg)}60%{transform:translateY(0) rotate(3deg)}80%{transform:translateY(-10px)}}
-@keyframes br-spin{to{transform:rotate(360deg)}}
-@keyframes br-bang{0%,100%{transform:rotate(0)}35%{transform:rotate(-60deg)}55%{transform:rotate(16deg)}75%{transform:rotate(-8deg)}}
-.bigred.bounce{animation:br-bounce .9s cubic-bezier(.3,.7,.3,1)}
-.bigred.spin{animation:br-spin .8s ease}
-.bigred.bang .gavel{animation:br-bang .7s ease}
-@media(prefers-reduced-motion:reduce){.bigred,.bigred .gavel{animation:none!important}}
+/* ---- page head ---- */
+.head{padding:56px 0 26px;border-bottom:1px solid var(--line)}
+@media(max-width:640px){.head{padding:34px 0 20px}}
+.head .kicker{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 12px}
+.head h1{font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.04}
+.head .lede{font-size:1.12rem;color:var(--ink);max-width:var(--measure);margin:18px 0 0}
+.head .scope{color:var(--ink2);max-width:var(--measure);margin:14px 0 0;font-size:.97rem}
 
-.room{display:none}
-.nav{background:var(--black)}
-.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 30px;flex-wrap:wrap}
-.nav a{font-size:.85rem;font-weight:500;text-decoration:none;color:rgba(255,255,255,.75);
- font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.nav a:hover{color:#fff}
-.nav .brand{font-family:var(--inscribe);font-weight:800;letter-spacing:.06em;color:#fff;font-size:1rem}
-.nav .brand b{color:var(--red)}
-.yhead{padding:56px 0 30px;border-bottom:1px solid var(--line)}
-.yhead h1{font-family:var(--inscribe);font-weight:800;font-size:clamp(2.8rem,7vw,4.6rem);letter-spacing:-.02em;
- margin:8px 0 0;line-height:1;color:var(--ink)}
-.leads{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}
-.lead{padding:13px 18px;border-radius:10px;min-width:200px;border:1px solid var(--line);box-shadow:none}
-.lead b{display:block;font-family:var(--inscribe);font-weight:700;font-size:1.02rem;text-transform:none;letter-spacing:0}
-.lead .role{font-size:.78rem;margin-top:4px;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.lead .role .w{color:var(--red);font-weight:600}
-.cols{max-width:860px;padding:34px 0 20px}
-@media(max-width:900px){.cols{grid-template-columns:1fr;gap:30px}}
-h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spacing:.01em;margin:34px 0 14px;
- color:var(--ink);text-transform:none;border-bottom:2px solid var(--red);display:inline-block;padding-bottom:4px}
-.note{border-left:3px solid var(--red);background:var(--paper2);border-radius:0 8px 8px 0;
- padding:12px 16px;margin:0 0 18px;font-size:.93rem;color:var(--ink2)}
-.note b{color:var(--ink)}
-.ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
-@media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
-.ev .d{font-family:var(--ui);font-size:13px;color:var(--red);padding-top:3px;font-weight:600}
-.ev .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:5px;font-family:var(--ui)}
-.ev h3{font-family:var(--inscribe);font-weight:700;font-size:1.06rem;margin:0 0 7px;color:var(--ink)}
-.ev p{margin:0;color:var(--ink2);font-size:.95rem}
-.ev .cite{display:inline-block;margin-top:8px;margin-right:14px;font-size:.85rem;color:var(--red);border:0;padding:0;
- text-decoration:underline;text-underline-offset:3px;text-transform:none;font-family:var(--ui);letter-spacing:0}
-.ev .cite:hover{background:none;color:var(--red-dark)}
-.empty{border:1px dashed var(--line);padding:24px;color:var(--ink3);font-size:.94rem;border-radius:10px}
-.dig{border:1px solid var(--line);background:var(--paper2);padding:20px 18px;position:sticky;top:18px;
- max-height:88vh;overflow:auto;border-radius:12px}
-.dig h2{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 3px;color:var(--red);font-family:var(--ui)}
-.dig h3{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 4px;color:var(--ink3);font-family:var(--ui)}
-.dig .lede{font-size:.84rem;color:var(--ink3);margin:0 0 8px;line-height:1.5}
-.dig a.q{display:block;text-decoration:none;padding:7px 0;border-top:1px solid var(--line);
- font-size:.84rem;color:var(--ink2);line-height:1.4;font-family:var(--ui)}
-.dig a.q:hover{color:var(--red)}
-.pager{display:flex;justify-content:space-between;gap:18px;padding:26px 0 90px;border-top:1px solid var(--line);flex-wrap:wrap}
-.pager a{font-size:.8rem;letter-spacing:.04em;text-decoration:none;max-width:46%;color:var(--ink3);font-family:var(--ui)}
-.pager a b{display:block;font-family:var(--inscribe);font-size:1.1rem;font-weight:700;color:var(--ink);margin-top:4px}
+/* ---- record head ---- */
+.rec-head{padding:48px 0 22px}
+.rec-head h1{font-size:clamp(2.6rem,6.5vw,4rem);line-height:.98;letter-spacing:-.03em;
+ font-variant-numeric:tabular-nums}
+.glance{display:grid;grid-template-columns:max-content 1fr;gap:0 28px;margin:26px 0 0;
+ border-top:1px solid var(--line);max-width:46rem}
+.glance dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:9px 0 0}
+.glance dd{margin:0;padding:7px 0 0;font-variant-numeric:tabular-nums}
+.glance dd a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+@media(max-width:520px){.glance{grid-template-columns:1fr;gap:0}
+ .glance dt{padding-top:12px}.glance dd{padding-top:2px}}
+
+/* ---- sections ---- */
+section{margin:0}
+h2.sec{font-size:1.16rem;margin:52px 0 4px;padding-top:15px;border-top:1px solid var(--line)}
+h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.02em;
+ color:var(--ink3);margin-left:10px;font-variant-numeric:tabular-nums}
+.secnote{color:var(--ink3);font-size:.88rem;margin:0 0 18px}
+.body{padding-bottom:40px}
+
+/* ---- leaders ---- */
+.leader{padding:34px 0 0}
+.leader h2{font-size:1.5rem;letter-spacing:-.02em}
+.leader h2 .r{font-family:var(--ui);font-weight:400;font-size:1rem;color:var(--ink2);
+ letter-spacing:0;white-space:nowrap}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:0 26px;margin:14px 0 20px;
+ max-width:46rem;font-size:.95rem}
+.facts dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:7px 0 0}
+.facts dd{margin:0;padding:5px 0 0;color:var(--ink)}
+@media(max-width:520px){.facts{grid-template-columns:1fr}.facts dt{padding-top:11px}.facts dd{padding-top:1px}}
+.editorial{max-width:var(--measure);color:var(--ink);border-left:2px solid var(--line);
+ padding-left:18px;margin:0 0 22px}
+.editorial p{margin:0 0 .8em}
+.editorial p:last-child{margin-bottom:0}
+.editorial.flagged{border-left-color:var(--red)}
+.profile{max-width:var(--measure)}
+.profile p{font-size:1.02rem;margin:0 0 1.05em}
+.profile sup{font-size:.66em;line-height:0}
+.profile sup a{text-decoration:none;padding:0 1px}
+.srclist{max-width:46rem;margin:6px 0 0;padding:0 0 0 1.4em;font-size:.88rem;color:var(--ink3)}
+.srclist li{margin:0 0 5px}
+.srclist a{color:var(--red)}
+
+/* ---- portraits and photographs ---- */
+.plates-photo{display:flex;gap:26px;flex-wrap:wrap;margin:30px 0 6px}
+.portrait{margin:0;width:190px}
+.portrait img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.portrait figcaption{font-size:.82rem;color:var(--ink2);margin-top:9px;line-height:1.45}
+.portrait figcaption b{display:block;font-family:var(--display);font-size:.95rem;
+ font-weight:700;color:var(--ink);margin-bottom:2px}
+.portrait figcaption .who{display:block}
+.credit{display:block;color:var(--ink3);font-size:.78rem;margin-top:3px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;margin:16px 0 0}
+.gallery figure{margin:0}
+.gallery img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.gallery figcaption{font-size:.87rem;color:var(--ink2);margin-top:9px;line-height:1.5}
+
+/* ---- the organization ---- */
+.org{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin:16px 0 0}
+@media(max-width:700px){.org{grid-template-columns:1fr;gap:24px}}
+.org h3{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 6px}
+.off{display:grid;grid-template-columns:9rem 1fr;gap:0 16px;padding:9px 0;
+ border-top:1px solid var(--line2);font-size:.94rem}
+@media(max-width:520px){.off{grid-template-columns:1fr;gap:1px}}
+.off .o{font-size:.8rem;color:var(--ink3);padding-top:3px}
+.off b{font-weight:600}
+.off p{margin:2px 0 0;color:var(--ink2);font-size:.88rem}
+.org .meta{font-size:.92rem;color:var(--ink2);margin:12px 0 0;max-width:var(--measure)}
+
+/* ---- entries ---- */
+.ev{display:grid;grid-template-columns:9rem 1fr;gap:0 26px;padding:17px 0;
+ border-top:1px solid var(--line2)}
+@media(max-width:640px){.ev{grid-template-columns:1fr;gap:3px;padding:15px 0}}
+.ev .when{font-size:.83rem;color:var(--ink3);padding-top:5px;font-variant-numeric:tabular-nums}
+.ev .when .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+.ev h3{font-size:1.04rem;margin:0 0 6px}
+.ev p{margin:0;max-width:var(--measure)}
+.srcline{font-size:.84rem;color:var(--ink3);margin-top:9px}
+.srcline a{margin-right:14px}
+.pl{float:right;font-family:var(--mono);font-size:.78rem;color:var(--ink3);
+ text-decoration:none;opacity:0;margin-left:12px}
+.ev:hover .pl,.ev:focus-within .pl{opacity:1}
+.ev:target{background:var(--paper2);box-shadow:-14px 0 0 var(--paper2),14px 0 0 var(--paper2)}
+.empty{max-width:var(--measure);color:var(--ink2)}
+.searchlist{columns:2;column-gap:30px;padding:0;margin:10px 0 0;list-style:none;font-size:.86rem}
+@media(max-width:640px){.searchlist{columns:1}}
+.searchlist li{margin:0 0 4px;break-inside:avoid}
+
+/* ---- documents ---- */
+.doc{border-top:1px solid var(--line2);padding:22px 0 6px}
+.doc h3{font-size:1.05rem;margin:0 0 7px}
+.doc p{color:var(--ink);max-width:var(--measure);margin:0 0 12px}
+.doc-extract{border-left:2px solid var(--red);padding:2px 0 2px 16px;margin:0 0 14px;
+ max-width:var(--measure);color:var(--ink2);font-size:.95rem}
+.doc-extract .lab{margin-bottom:4px}
+.doc-view{display:block;width:100%;height:460px;border:1px solid var(--line);background:var(--paper2)}
+.doc-foot{font-size:.86rem;color:var(--ink3);margin:10px 0 0}
+.doc-foot a{margin-right:18px}
+
+/* ---- legislation rows ---- */
+.lrow{display:grid;grid-template-columns:7.5rem 1fr auto;gap:0 18px;align-items:baseline;
+ padding:10px 0;border-top:1px solid var(--line2);font-size:.95rem}
+@media(max-width:700px){.lrow{grid-template-columns:1fr;gap:2px}}
+.lrow .lt{color:var(--ink3);font-size:.82rem;font-variant-numeric:tabular-nums}
+.lrow .ll{font-size:.85rem;white-space:nowrap}
+.lrow .ll a{margin-left:16px}
+@media(max-width:700px){.lrow .ll a{margin:0 16px 0 0}}
+.lsec{margin:0 0 26px}
+
+/* ---- timeline ---- */
+.hx{display:grid;grid-template-columns:8rem 1fr;gap:0 24px;padding:6px 0;
+ border-top:1px solid var(--line2);font-size:.92rem;line-height:1.45}
+@media(max-width:640px){.hx{grid-template-columns:1fr;gap:0;padding:8px 0}}
+.hx .when{color:var(--ink3);font-size:.8rem;padding-top:3px;font-variant-numeric:tabular-nums}
+.hx .t{color:var(--ink2);max-width:52rem}
+.hx .t b{color:var(--ink);font-weight:600}
+.hx .t a{font-size:.84rem;margin-left:8px;white-space:nowrap}
+.hyear{font-size:1.35rem;margin:38px 0 2px;padding-top:14px;border-top:1px solid var(--line)}
+.hyear .who{font-family:var(--ui);font-weight:400;font-size:.9rem;color:var(--ink3);
+ display:block;margin-top:5px;letter-spacing:0}
+.hyear .who a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+details.hidx{margin:14px 0 0;font-size:.9rem}
+details.hidx summary{cursor:pointer;color:var(--ink3);font-size:.84rem}
+details.hidx summary:hover{color:var(--red)}
+.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:0 0 24px;font-size:.92rem}
+.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
+.decnav span{color:var(--ink3)}
+
+/* ---- filters and search ---- */
+.tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
+.field{display:block;max-width:26rem}
+.field .lab{margin-bottom:6px}
+.field input{width:100%;background:var(--paper);border:1px solid var(--line);color:var(--ink);
+ font-family:var(--ui);font-size:16px;padding:10px 12px;border-radius:2px}
+.field input:focus{outline:2px solid var(--red);outline-offset:-1px;border-color:var(--red)}
+.facets{display:flex;flex-wrap:wrap;gap:0 20px;margin:20px 0 0}
+.facets button{background:none;border:0;border-bottom:2px solid transparent;padding:4px 0 5px;
+ font-family:var(--ui);font-size:.92rem;color:var(--ink2);cursor:pointer}
+.facets button:hover{color:var(--red)}
+.facets button[aria-pressed="true"]{color:var(--ink);font-weight:600;border-bottom-color:var(--red)}
+.facets button .c{color:var(--ink3);font-weight:400;font-variant-numeric:tabular-nums}
+.readout{font-size:.9rem;color:var(--ink2);margin:16px 0 0;font-variant-numeric:tabular-nums}
+
+/* ---- citation ---- */
+.citebox{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+ padding:16px 0;margin:46px 0 0;max-width:46rem}
+.citestr{font-size:.92rem;color:var(--ink);margin:8px 0 0;line-height:1.55}
+.copy{background:none;border:1px solid var(--line);border-radius:2px;color:var(--ink2);
+ font-family:var(--ui);font-size:.8rem;padding:5px 11px;margin-top:12px;cursor:pointer}
+.copy:hover{border-color:var(--red);color:var(--red)}
+.revised{font-size:.84rem;color:var(--ink3);margin:12px 0 0}
+
+/* ---- pager ---- */
+.pager{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+ border-top:1px solid var(--line);padding:20px 0 0;margin-top:44px}
+.pager a{font-size:.82rem;color:var(--ink3);text-decoration:none;max-width:46%}
+.pager a b{display:block;font-family:var(--display);font-size:1.15rem;color:var(--ink);
+ margin-top:3px;font-variant-numeric:tabular-nums}
 .pager a:hover b{color:var(--red)}
 .pager .r{text-align:right;margin-left:auto}
 
-/* ---- president profiles ---- */
-.profile{margin:0 0 26px}
-.profile p{color:var(--ink2);font-size:.96rem;margin:0 0 12px}
+/* ---- footer ---- */
+.foot{border-top:1px solid var(--line);background:var(--paper2);margin-top:70px;
+ padding:36px 0 54px;font-size:.88rem;color:var(--ink2)}
+.foot .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px}
+.foot p{max-width:34rem;margin:0 0 .9em}
+.foot h2{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.foot .fine{color:var(--ink3);font-size:.82rem;margin-top:26px;
+ border-top:1px solid var(--line);padding-top:16px}
 
-/* ---- photographs ---- */
-.portraits{display:flex;gap:16px;flex-wrap:wrap;margin:26px 0 4px}
-.portrait{margin:0;width:160px}
-.portrait img{width:100%;height:190px;object-fit:cover;object-position:top;border-radius:10px;
- box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.portrait figcaption{font-size:.78rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-.portrait figcaption b{display:block;font-family:var(--inscribe);font-size:.92rem;font-weight:700;color:var(--ink)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:0 0 28px}
-.gallery figure{margin:0}
-.gallery img{width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.gallery figcaption{font-size:.84rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-
-/* ---- the organization ---- */
-.org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
-@media(max-width:640px){.org{grid-template-columns:1fr}}
-.org h3{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--red);font-family:var(--ui)}
-.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-.off .o{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding-top:4px;min-width:110px;font-family:var(--ui)}
-.off b{font-family:var(--inscribe);font-weight:700;color:var(--ink)}
-.off p{margin:3px 0 0;color:var(--ink2);font-size:.88rem}
-.org .meta{font-size:.88rem;color:var(--ink2);margin:10px 0 0}
-
-/* ---- the archive shelf ---- */
-.doc{border:1px solid var(--line);border-radius:12px;margin:0 0 24px;overflow:hidden;background:var(--paper)}
-.doc-head{padding:17px 19px 14px}
-.doc-head h3{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;margin:0 0 7px;color:var(--ink)}
-.doc-head p{margin:0;color:var(--ink2);font-size:.93rem}
-.doc-extract{border-left:3px solid var(--red);background:var(--paper2);margin:0 19px 15px;border-radius:0 8px 8px 0;
- padding:12px 16px;font-size:.93rem;color:var(--ink2)}
-.doc-extract .from{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;font-family:var(--ui)}
-.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid var(--line);background:var(--paper2)}
-.doc-foot{display:flex;gap:18px;flex-wrap:wrap;padding:13px 19px}
-.doc-foot a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.doc-foot a:hover{background:none;color:var(--red-dark)}
-
-/* ---- complete timeline ---- */
-.hx{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
-@media(max-width:640px){.hx{grid-template-columns:1fr;gap:2px}}
-.hx .d{font-family:var(--ui);font-size:12.5px;color:var(--ink3);padding-top:2px;font-weight:600}
-.hx .t{color:var(--ink2)}
-.hx a{margin-left:10px;font-size:.82rem}
-.hyear{font-family:var(--inscribe);font-weight:800;font-size:1.6rem;margin:44px 0 6px;color:var(--ink)}
-.hyear a{font-size:.8rem;font-weight:600;margin-left:14px}
-.hsub{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin:18px 0 4px;font-family:var(--ui)}
-
-/* ---- legislation ---- */
-.lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
- padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-@media(max-width:640px){.lrow{grid-template-columns:1fr;gap:4px}}
-.ltype{font-family:var(--ui);font-size:12px;letter-spacing:.01em;color:var(--red);font-weight:600}
-.lt{color:var(--ink)}
-.lls{display:flex;gap:14px;white-space:nowrap}
-.lls a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.lls a:hover{background:none;color:var(--red-dark)}
-.lsec{margin:0 0 34px}
-.lcount{font-size:.78rem;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em}
-.lfilter{width:100%;max-width:420px;background:var(--paper);border:1px solid var(--line);color:var(--ink);
- font-family:var(--ui);font-size:15px;padding:11px 16px;border-radius:10px;margin:6px 0 26px}
-.lfilter:focus{outline:2px solid var(--red);outline-offset:2px}
-.ljump{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 22px}
-.ljump .chip{font-family:var(--ui);font-size:13px;padding:5px 13px;border:1px solid var(--line);border-radius:999px;
- color:var(--ink2);text-decoration:none}
-.ljump .chip:hover{border-color:var(--red);color:var(--red)}
+/* ---- print ---- */
+@media print{
+ .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav{display:none!important}
+ body{font-size:11pt;color:#000}
+ a{color:#000;text-decoration:none}
+ a.ext::after{content:""}
+ .body a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#444;word-break:break-all}
+ .citebox{margin:0 0 18px;border-top:0}
+ .doc-view{display:none}
+ h2.sec{break-after:avoid}
+ .ev,.doc,.leader{break-inside:avoid}
+}
 </style></head><body>
-<div class="room"></div>
+<a class="skip" href="#main">Skip to the record</a>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="../index.html">SGA <b>60</b></a><ul><li><a href="../index.html" aria-current="page">The board</a></li><li><a href="../history.html">Timeline</a></li><li><a href="../legislation.html">Legislation</a></li><li><a href="../corrections.html">Corrections</a></li><li><a href="../about.html">About and method</a></li></ul></div></nav>
+<main id="main">
 
-<nav class="nav"><div class="wrap">
- <a class="brand" href="../index.html">SGA <b>60</b></a>
- <div style="display:flex;gap:20px"><a href="../index.html">The Board</a><a href="../history.html">Timeline</a><a href="../legislation.html">Legislation</a></div>
-</div></nav>
-<header class="yhead"><div class="wrap">
- <div class="eyebrow">Student Government Association</div>
+<header class="rec-head"><div class="wrap">
+ <p class="kicker">Student Government Association &middot; academic year</p>
  <h1>2007-08</h1>
- <div class="leads"><div class="lead plate-face engraved"><b>Jeanne Johnson</b><div class="role">president &middot; plaque: 2007-08</div></div></div>
+ <dl class="glance"><dt>Organization</dt><dd>Student Government Association</dd><dt>President</dt><dd>Jeanne Johnson</dd><dt>Entries</dt><dd>13</dd><dt>Sources cited</dt><dd>16</dd></dl>
 </div></header>
-<div class="wrap"><div class="cols">
- <div><div class="note"><b>Jeanne Johnson:</b> Confirmed against primary Board of Regents records: a resolution read into the 18 Jul 2008 board minutes states she served as the board's student member from 27 Apr 2007 to 18 Jul 2008, and the same minutes record Johnathon Boles taking the oath to replace her that day. Also confirmed in Herald coverage of the 24 Apr 2008 Board of Regents meeting, where she is named 'Student Government Association President Jeanne Johnson.'</div><section class="profile"><h2 class="sub">Jeanne Johnson &mdash; the term</h2><p>Jeanne Lynn Johnson, a Marion senior and Kappa Delta member, had served as SGA's president pro tempore after Rob Watkins's November 2006 resignation and won the February 2007 special election for the vacant student regent seat with 688 votes. She became SGA president and student regent for 2007-08 in her own right, sworn onto the Board of Regents on April 27, 2007, and installed as president at SGA's May 2007 banquet.</p><p>That fall her administration reported record interest in the senate election, 25 candidates for 20 seats, and she and Executive Vice President Johnathon Boles helped organize a mock gubernatorial election that drew 127 student voters. She pushed a senate resolution asking the state for more funding after Western received only 54 percent of its recommended budget increase, and organized Walk Out Western, an Oct. 25 class walkout protesting state budget cuts that President Gary Ransdell said he could not condone.</p><p>As student regent, Johnson voted against the scale of the board's 9 percent tuition increase at the April 24, 2008 quarterly meeting, seconding Louisville regent Larry Zielke's motion to cap the increase at 6 percent and push the General Assembly for more funding instead; the motion died with only two votes. At the same meeting she argued the $370,000 budgeted for the Honors College should be cut, saying the college "only benefits 900 students" and other students should not have to pay for it; Ransdell defended it as part of the university's strategic plan.</p><p>In the spring, as her administration ran the election to choose her successor, Johnson defended the one-week campaign window written into election codes she said were inherited from past administrations, warning that longer campaigns could hurt candidates' schoolwork and that "too much PR hurts." She pointed to new turnout efforts her administration tried, including holding the debate during SGA week and adding candidate profiles and questionnaires to the SGA website.</p><p>Johnathon Boles won the March 2008 election and was installed as SGA president at the spring banquet, but Johnson kept the Board of Regents seat until the board's next quarterly meeting; a resolution read there on July 18, 2008 thanked her for "able leadership, faithful service, and dedication" and Boles took the oath as student regent the same day.</p><p>In the spring, as her administration ran the election to choose her successor, Johnson defended the one-week campaign window written into election codes she said were inherited from past administrations, warning that longer campaigns could hurt candidates' schoolwork and that "too much PR hurts." She pointed to new turnout efforts her administration tried, including holding the debate during SGA week, arranging extra credit for students who attended it, and adding candidate profiles and questionnaires to the SGA website.</p></section><h2 class="sub">The organization</h2><div class="org"><div><h3>The Executive</h3><div class="off"><span class="o">President</span><span><b>Jeanne Johnson</b><p>Also held the Board of Regents' student seat; sworn onto the board 27 Apr 2007 and continued as regent through 18 Jul 2008, past the end of her presidency.</p> <a class="cite" href="https://digitalcommons.wku.edu/bor/2008/qtrly/4" target="_blank" rel="noopener">WKU Board of Regents minutes, 18 Jul 2008 (TopSCHOLAR) &#8599;</a></span></div><div class="off"><span class="o">Executive Vice President</span><span><b>Johnathon Boles</b><p>Sat on a faculty advisory committee for athletics and arranged the November 2007 consultation with Athletics Director Wood Selig; ran to succeed Johnson as president in the March 2008 election.</p> <a class="cite" href="https://web.archive.org/web/20071106035708/http://www.wkuherald.com/home/news/2007/11/01/News/Athletics.Director.Consults.Sga.On.Increasing.Football.Attendance-3071116.shtml" target="_blank" rel="noopener">Herald, 1 Nov 2007 (Wayback) &#8599;</a></span></div><div class="off"><span class="o">Chief of Staff</span><span><b>Skylar Jordan</b><p>Laid groundwork for the Listen Up Legislators spring lobbying campaign after the traditional February Frankfort rally alone had not worked.</p> <a class="cite" href="https://web.archive.org/web/20071212063840/http://www.wkuherald.com/home/news/2007/11/15/News/Sga-Coordinating.Frankfort.Lobbying.Effort-3102675.shtml" target="_blank" rel="noopener">Herald, 15 Nov 2007 (Wayback) &#8599;</a></span></div><div class="off"><span class="o">Director of Public Relations</span><span><b>Liz Goddard</b> <a class="cite" href="https://web.archive.org/web/20071021062401/http://media.www.wkuherald.com/media/storage/paper603/news/2007/09/13/News/Sga-Election.To.Be.Contested.When.Polls.Open.Wednesday-2966627.shtml" target="_blank" rel="noopener">Herald, 13 Sep 2007 (Wayback) &#8599;</a></span></div></div><div><h3>The Senate</h3><div class="off"><span class="o">committee</span><span><b>Academic Affairs</b><p>chair: Drew Eclov</p><p>Prepared legislation for a roughly $1,995 educational-video subscription, per an October 2007 Herald report.</p></span></div><p class="meta">The fall 2007 senate election drew 25 candidates for 20 open seats, which Johnson called the most applications she had ever seen. The spring 2008 ballot carried three executive seats and 28 senate seats.</p></div></div><h2 class="sub">What happened, in order</h2><article class="ev"><div class="d">2007-09-13</div><div><h3>Fall senate election drew 25 candidates for 20 seats</h3><p>SGA reported record interest in its fall senate election, with 25 students running for 20 available seats, the most applications President Jeanne Johnson said she had ever seen. Elections were set for Sept. 19 and 20 through TopNet, with an informational table in Downing University Center on Sept. 18. Public relations director Liz Goddard said more competition would produce harder workers.</p><a class="cite" href="https://web.archive.org/web/20071021062401/http://media.www.wkuherald.com/media/storage/paper603/news/2007/09/13/News/Sga-Election.To.Be.Contested.When.Polls.Open.Wednesday-2966627.shtml" target="_blank" rel="noopener">Herald, 13 Sep 2007 &#8599;</a></div></article><article class="ev"><div class="d">2007-10-02</div><div><h3>SGA co-sponsored mock gubernatorial election</h3><p>SGA and the Office of the Secretary of State co-sponsored a mock gubernatorial election at Centennial Mall as part of Secretary of State Trey Grayson's Civic Literacy Initiative of Kentucky. The 127 students who voted chose challenger Steve Beshear over incumbent Gov. Ernie Fletcher, 74 to 50. President Jeanne Johnson and Executive Vice President Johnathon Boles called the event a success.</p><a class="cite" href="https://web.archive.org/web/20071009102623/http://media.www.wkuherald.com/media/storage/paper603/news/2007/10/02/News/Sga-Encourages.Voting.With.Mock.Election-3005163.shtml" target="_blank" rel="noopener">Herald, 2 Oct 2007 &#8599;</a></div></article><article class="ev"><div class="d">2007-10-18</div><div><h3>Resolution demanded more state funding for Western</h3><p>At its Oct. 9 meeting SGA passed a resolution asking the state government to appropriate more money to Western, which had received 54 percent of the funding the Council on Postsecondary Education recommended for fiscal year 2008. President Jeanne Johnson argued that tuition increases to cover the shortfall hurt students. The resolution stated Western needed the full recommended amount to meet its 2020 educational goals.</p><a class="cite" href="https://web.archive.org/web/20071028151319/http://www.wkuherald.com/news/2007/10/18/News/Sga-Resolution.Requests.Increase.In.State.Funding-3040044.shtml" target="_blank" rel="noopener">Herald, 18 Oct 2007 &#8599;</a></div></article><article class="ev"><div class="d">2007-10-18</div><div><h3>SGA organized Walk Out Western budget protest</h3><p>SGA sponsored Walk Out Western, asking students to leave class at 12:20 p.m. on Oct. 25 for a rally at the Colonnade to protest state budget cuts, with empty seats meant as a message to Frankfort legislators. President Gary Ransdell said he could not condone students walking out of class and doubted a single-campus protest would affect state funding. Johnson said other state universities declined to join but were watching how it worked at Western.</p><a class="cite" href="https://web.archive.org/web/20071020061137/http://media.www.wkuherald.com/media/storage/paper603/news/2007/10/18/News/Sga-To.Stage.Walkout.To.Protest.State.Budget.Cuts-3040047.shtml?xmlsyn=1" target="_blank" rel="noopener">Herald, 18 Oct 2007 &#8599;</a></div></article><article class="ev"><div class="d">2007-10-25</div><div><h3>Committee proposed $1,995 educational video subscription</h3><p>SGA's Academic Affairs Committee, chaired by Drew Eclov, prepared legislation to buy a roughly $1,995 subscription to United Streaming, a Discovery Channel-owned site with about 45,000 educational video clips that Eclov called a version of YouTube for higher education. The committee planned to survey students and professors before bringing it to a vote. SGA also scheduled a vote on a resolution placing $1,000 in a field trip fund to support learning outside the classroom.</p><a class="cite" href="https://web.archive.org/web/20071213001716/http://www.wkuherald.com/news/2007/10/25/News/Sga-Committee.Wants.To.Purchase.Subscription.To.Educational.Media-3055992.shtml" target="_blank" rel="noopener">Herald, 25 Oct 2007 &#8599;</a></div></article><article class="ev"><div class="d">2007-11-01</div><div><h3>Athletics director asked SGA for help on football attendance</h3><p>Athletics Director Wood Selig came to the SGA meeting to ask senators for ideas on getting more students to football games as Western moved to the Football Bowl Subdivision, which required an average attendance of 15,000 to keep bowl eligibility. Senators suggested advertising on Western's website and Facebook rather than email, and later game times. Executive Vice President Johnathon Boles, who sat on a faculty advisory committee for athletics, arranged the consultation.</p><a class="cite" href="https://web.archive.org/web/20071106035708/http://www.wkuherald.com/home/news/2007/11/01/News/Athletics.Director.Consults.Sga.On.Increasing.Football.Attendance-3071116.shtml" target="_blank" rel="noopener">Herald, 1 Nov 2007 &#8599;</a></div></article><article class="ev"><div class="d">2007-11-15</div><div><h3>SGA planned Listen Up Legislators lobbying campaign</h3><p>SGA began laying groundwork for Listen Up Legislators, a spring lobbying campaign in which senators would meet legislators one-on-one in Frankfort to push for university funding, after the Council on Postsecondary Education recommended a $174 million increase for public universities. Chief of staff Skylar Jordan said the traditional February rally had not worked, pointing to Western receiving only 54 percent of the recommended increase. Other state student governments expressed interest in coordinating lobbying dates.</p><a class="cite" href="https://web.archive.org/web/20071212063840/http://www.wkuherald.com/home/news/2007/11/15/News/Sga-Coordinating.Frankfort.Lobbying.Effort-3102675.shtml" target="_blank" rel="noopener">Herald, 15 Nov 2007 &#8599;</a></div></article><article class="ev"><div class="d">2008-01-31</div><div><h3>Spring session opened with ONE Campus bill</h3><p>At its first spring meeting on Jan. 29, SGA introduced legislation by Senators Matt Vaughan and Doug Tate asking the senate to recognize Western as a ONE Campus, part of the national campaign against global AIDS and extreme poverty. SGA also released its spring schedule, including Listen Up Legislators on Feb. 14, the Frankfort rally for higher education on Feb. 20 and the annual banquet on April 29. In the semester's opening handout, Executive Vice President Johnathon Boles pointed members to the constitution's purpose of serving the student body equally.</p><a class="cite" href="https://web.archive.org/web/20080201170334/http://www.wkuherald.com/home/news/2008/01/31/News/Sga-Introduces.New.Legislation-3179295.shtml" target="_blank" rel="noopener">Herald, 31 Jan 2008 &#8599;</a></div></article><article class="ev"><div class="d">2008-02-20</div><div><h3>Fifty senators write down what a lobbying trip felt like</h3><p>After a student rally at the Capitol in Frankfort, dozens of SGA members each filed an individual written reflection, archived one per person. The richest first-person source in the entire collection.</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Documents/Reports" target="_blank" rel="noopener">TopSCHOLAR - Frankfort rally reflections &#8599;</a></div></article><article class="ev"><div class="d">2008-04-01</div><div><h3>Spring election closed amid low-turnout criticism</h3><p>Voting for three executive seats and 28 senate seats ended after a one-week campaign that candidates criticized as part of SGA's low-involvement problem; turnout had been 1,424 the year before and 1,376 the year before that. Red Towel Party presidential candidate Tedde Harden promised to rework what he called outdated election codes, while opponent Johnathon Boles agreed campaign time should be extended. President Jeanne Johnson said her administration inherited the codes and had tried new turnout methods, including extra credit for attending the debate.</p><a class="cite" href="https://web.archive.org/web/20080411220253/http://media.www.wkuherald.com/media/storage/paper603/news/2008/04/01/News/Student.Government.Aims.To.Increase.Voter.Turnout-3294737.shtml" target="_blank" rel="noopener">Herald, 1 Apr 2008 &#8599;</a></div></article><article class="ev"><div class="d">2008-04-17<span class="ctx">campus</span></div><div><h3>Ransdell announced 9 percent tuition increase</h3><p>President Gary Ransdell announced at campus forums that he would recommend a 9 percent tuition increase for 2008-09, abandoning a plan to hold increases at 6 percent. The change followed a state budget crisis in which Gov. Steve Beshear ordered a 3 percent cut to postsecondary education in December 2007 and proposed an additional 12 percent, later reduced by the General Assembly to 3 percent. Ransdell said the swing from expected state revenue was about $11 million to $12 million.</p><a class="cite" href="https://web.archive.org/web/20080421164710/http://media.www.wkuherald.com/media/storage/paper603/news/2008/04/17/BreakingNews/Ransdell.Announces.9.Percent.Tuition.Increase-3333308.shtml" target="_blank" rel="noopener">Herald, 17 Apr 2008 &#8599;</a></div></article><article class="ev"><div class="d">2008-04-24</div><div><h3>Student regent Johnson opposed scale of 9 percent tuition increase</h3><p>The Board of Regents approved a 9 percent tuition increase for 2008-09 and finalized $2.5 million in cuts to the 2007-08 budget. Louisville regent Larry Zielke moved to cap the increase at 6 percent and push the General Assembly for more funding instead; SGA President and student regent Jeanne Johnson seconded the motion, but it died with only two votes. Johnson also argued the $370,000 budgeted for the Honors College should be reduced, saying the college benefited only 900 students and other students should not have to pay for it.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/6698/" target="_blank" rel="noopener">Herald 83:51, 29 Apr 2008 - "Regents approve 9 percent tuition increase, finalize 07-08 budget cuts" &#8599;</a></div></article><article class="ev"><div class="d">2008-07-18</div><div><h3>Johnson's regent term ended as Boles took the board oath</h3><p>The Board of Regents read a resolution thanking Jeanne Johnson for her service as the board's student member from April 27, 2007 to July 18, 2008, calling her term one of "able leadership, faithful service, and dedication." Johnathon Boles, who had already been installed as SGA president that spring, took the oath of office as student regent the same day, formally completing the transition between administrations.</p><a class="cite" href="https://digitalcommons.wku.edu/bor/2008/qtrly/4" target="_blank" rel="noopener">WKU Board of Regents minutes, 18 Jul 2008 (TopSCHOLAR) &#8599;</a> <a class="cite" href="../docs/2007-08-bor-minutes-18-jul-2008.pdf" target="_blank" rel="noopener">read it on this site &#8599;</a></div></article></div>
-</div><div class="pager"><a href="2006-07.html">&larr; previous<b>2006-07</b></a><a class="r" href="2008-09.html">next &rarr;<b>2008-09</b></a></div></div>
-<div class="bigred" id="bigred" role="img" aria-label="8-bit Big Red in a judicial wig, holding the SGA gavel. Click to play."><button class="close" id="brx" aria-label="Dismiss Big Red">&times;</button><div class="say" id="brsay">Order, order!</div><img src="../photos/bigred-8bit.png" alt="" width="170" height="142"><svg class="wig" width="98" height="56" viewBox="0 0 98 56"><rect x="14" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="28" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="49" width="7.4" height="7.4" fill="#F4F2ED"/></svg><svg class="gavel" width="56" height="56" viewBox="0 0 56 56"><rect x="0" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="49" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="49" width="7.4" height="7.4" fill="#8B5A2B"/></svg></div><script>(function(){var br=document.getElementById("bigred");if(!br)return;try{if(localStorage.getItem("bigred")==="hidden"){br.remove();return}}catch(e){}document.getElementById("brx").addEventListener("click",function(e){e.stopPropagation();br.remove();try{localStorage.setItem("bigred","hidden")}catch(e){}});var says=["Order, order!","Go Tops!","Sixty years on the Hill.","Motion carries.","The Spirit Makes the Master."],i=0,m=-1;br.addEventListener("click",function(){br.classList.remove("bounce","spin","bang","talk");void br.offsetWidth;m=(m+1)%3;if(m===0){br.classList.add("bang","talk");document.getElementById("brsay").textContent=says[i++%says.length];}else if(m===1){br.classList.add("bounce")}else{br.classList.add("spin")}clearTimeout(br._t);br._t=setTimeout(function(){br.classList.remove("talk")},1600)});})();</script>
+<div class="wrap"><div class="body">
+
+<section class="leader" id="jeanne-johnson"><h2>Jeanne Johnson <span class="r">president, 2007-08</span></h2><dl class="facts"><dt>Office</dt><dd>President</dd><dt>Term recorded here</dt><dd>2007-08</dd><dt>Standing of the record</dt><dd>As recorded on the plaque. Not yet corroborated in the archive.</dd><dt>Name in the archive</dt><dd>Found in the sources below.</dd></dl><div class="editorial"><p>Confirmed against primary Board of Regents records: a resolution read into the 18 Jul 2008 board minutes states she served as the board&#x27;s student member from 27 Apr 2007 to 18 Jul 2008, and the same minutes record Johnathon Boles taking the oath to replace her that day. Also confirmed in Herald coverage of the 24 Apr 2008 Board of Regents meeting, where she is named &#x27;Student Government Association President Jeanne Johnson.&#x27;</p></div><div class="profile"><p>Jeanne Lynn Johnson, a Marion senior and Kappa Delta member, had served as SGA&#x27;s president pro tempore after Rob Watkins&#x27;s November 2006 resignation and won the February 2007 special election for the vacant student regent seat with 688 votes. She became SGA president and student regent for 2007-08 in her own right, sworn onto the Board of Regents on April 27, 2007, and installed as president at SGA&#x27;s May 2007 banquet.</p><p>That fall her administration reported record interest in the senate election, 25 candidates for 20 seats, and she and Executive Vice President Johnathon Boles helped organize a mock gubernatorial election that drew 127 student voters. She pushed a senate resolution asking the state for more funding after Western received only 54 percent of its recommended budget increase, and organized Walk Out Western, an Oct. 25 class walkout protesting state budget cuts that President Gary Ransdell said he could not condone.</p><p>As student regent, Johnson voted against the scale of the board&#x27;s 9 percent tuition increase at the April 24, 2008 quarterly meeting, seconding Louisville regent Larry Zielke&#x27;s motion to cap the increase at 6 percent and push the General Assembly for more funding instead; the motion died with only two votes. At the same meeting she argued the $370,000 budgeted for the Honors College should be cut, saying the college &quot;only benefits 900 students&quot; and other students should not have to pay for it; Ransdell defended it as part of the university&#x27;s strategic plan.</p><p>In the spring, as her administration ran the election to choose her successor, Johnson defended the one-week campaign window written into election codes she said were inherited from past administrations, warning that longer campaigns could hurt candidates&#x27; schoolwork and that &quot;too much PR hurts.&quot; She pointed to new turnout efforts her administration tried, including holding the debate during SGA week and adding candidate profiles and questionnaires to the SGA website.</p><p>Johnathon Boles won the March 2008 election and was installed as SGA president at the spring banquet, but Johnson kept the Board of Regents seat until the board&#x27;s next quarterly meeting; a resolution read there on July 18, 2008 thanked her for &quot;able leadership, faithful service, and dedication&quot; and Boles took the oath as student regent the same day.</p><p>In the spring, as her administration ran the election to choose her successor, Johnson defended the one-week campaign window written into election codes she said were inherited from past administrations, warning that longer campaigns could hurt candidates&#x27; schoolwork and that &quot;too much PR hurts.&quot; She pointed to new turnout efforts her administration tried, including holding the debate during SGA week, arranging extra credit for students who attended it, and adding candidate profiles and questionnaires to the SGA website.</p></div><p class="lab" style="margin:18px 0 6px">Sources for this account</p><ol class="srclist"><li id="jeanne-johnson-s1"><a class="ext" href="https://web.archive.org/web/20071021062401/http://media.www.wkuherald.com/media/storage/paper603/news/2007/09/13/News/Sga-Election.To.Be.Contested.When.Polls.Open.Wednesday-2966627.shtml" rel="noopener">Herald, 13 Sep 2007</a></li><li id="jeanne-johnson-s2"><a class="ext" href="https://web.archive.org/web/20071020061137/http://media.www.wkuherald.com/media/storage/paper603/news/2007/10/18/News/Sga-To.Stage.Walkout.To.Protest.State.Budget.Cuts-3040047.shtml?xmlsyn=1" rel="noopener">Herald, 18 Oct 2007</a></li><li id="jeanne-johnson-s3"><a class="ext" href="https://web.archive.org/web/20080411220253/http://media.www.wkuherald.com/media/storage/paper603/news/2008/04/01/News/Student.Government.Aims.To.Increase.Voter.Turnout-3294737.shtml" rel="noopener">Herald, 1 Apr 2008</a></li><li id="jeanne-johnson-s4"><a class="ext" href="https://digitalcommons.wku.edu/bor/2008/qtrly/4" rel="noopener">WKU Board of Regents minutes, 18 Jul 2008 (TopSCHOLAR)</a></li><li id="jeanne-johnson-s5"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/6698/" rel="noopener">Herald 83:51, 29 Apr 2008 - &quot;Regents approve 9 percent tuition increase, finalize 07-08 budget cuts&quot;</a></li></ol></section>
+<h2 class="sec">The organization</h2><div class="org"><div><h3>The executive</h3><div class="off"><span class="o">President</span><span><b>Jeanne Johnson</b><p>Also held the Board of Regents&#x27; student seat; sworn onto the board 27 Apr 2007 and continued as regent through 18 Jul 2008, past the end of her presidency.</p><span class="credit"><a class="ext" href="https://digitalcommons.wku.edu/bor/2008/qtrly/4" rel="noopener">WKU Board of Regents minutes, 18 Jul 2008 (TopSCHOLAR)</a></span></span></div><div class="off"><span class="o">Executive Vice President</span><span><b>Johnathon Boles</b><p>Sat on a faculty advisory committee for athletics and arranged the November 2007 consultation with Athletics Director Wood Selig; ran to succeed Johnson as president in the March 2008 election.</p><span class="credit"><a class="ext" href="https://web.archive.org/web/20071106035708/http://www.wkuherald.com/home/news/2007/11/01/News/Athletics.Director.Consults.Sga.On.Increasing.Football.Attendance-3071116.shtml" rel="noopener">Herald, 1 Nov 2007 (Wayback)</a></span></span></div><div class="off"><span class="o">Chief of Staff</span><span><b>Skylar Jordan</b><p>Laid groundwork for the Listen Up Legislators spring lobbying campaign after the traditional February Frankfort rally alone had not worked.</p><span class="credit"><a class="ext" href="https://web.archive.org/web/20071212063840/http://www.wkuherald.com/home/news/2007/11/15/News/Sga-Coordinating.Frankfort.Lobbying.Effort-3102675.shtml" rel="noopener">Herald, 15 Nov 2007 (Wayback)</a></span></span></div><div class="off"><span class="o">Director of Public Relations</span><span><b>Liz Goddard</b><span class="credit"><a class="ext" href="https://web.archive.org/web/20071021062401/http://media.www.wkuherald.com/media/storage/paper603/news/2007/09/13/News/Sga-Election.To.Be.Contested.When.Polls.Open.Wednesday-2966627.shtml" rel="noopener">Herald, 13 Sep 2007 (Wayback)</a></span></span></div></div><div><h3>The senate</h3><div class="off"><span class="o">committee</span><span><b>Academic Affairs</b><p>Chair: Drew Eclov</p><p>Prepared legislation for a roughly $1,995 educational-video subscription, per an October 2007 Herald report.</p></span></div><p class="meta">The fall 2007 senate election drew 25 candidates for 20 open seats, which Johnson called the most applications she had ever seen. The spring 2008 ballot carried three executive seats and 28 senate seats.</p></div></div>
+<h2 class="sec">The year, in order<span class="n">13</span></h2><article class="ev" id="e-20070913-1"><div class="when"><time datetime="2007-09-13">13 September 2007</time></div><div><a class="pl" href="#e-20070913-1" aria-label="Link to this entry">#</a><h3>Fall senate election drew 25 candidates for 20 seats</h3><p>SGA reported record interest in its fall senate election, with 25 students running for 20 available seats, the most applications President Jeanne Johnson said she had ever seen. Elections were set for Sept. 19 and 20 through TopNet, with an informational table in Downing University Center on Sept. 18. Public relations director Liz Goddard said more competition would produce harder workers.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20071021062401/http://media.www.wkuherald.com/media/storage/paper603/news/2007/09/13/News/Sga-Election.To.Be.Contested.When.Polls.Open.Wednesday-2966627.shtml" rel="noopener">Herald, 13 Sep 2007</a></p></div></article><article class="ev" id="e-20071002-1"><div class="when"><time datetime="2007-10-02">2 October 2007</time></div><div><a class="pl" href="#e-20071002-1" aria-label="Link to this entry">#</a><h3>SGA co-sponsored mock gubernatorial election</h3><p>SGA and the Office of the Secretary of State co-sponsored a mock gubernatorial election at Centennial Mall as part of Secretary of State Trey Grayson&#x27;s Civic Literacy Initiative of Kentucky. The 127 students who voted chose challenger Steve Beshear over incumbent Gov. Ernie Fletcher, 74 to 50. President Jeanne Johnson and Executive Vice President Johnathon Boles called the event a success.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20071009102623/http://media.www.wkuherald.com/media/storage/paper603/news/2007/10/02/News/Sga-Encourages.Voting.With.Mock.Election-3005163.shtml" rel="noopener">Herald, 2 Oct 2007</a></p></div></article><article class="ev" id="e-20071018-1"><div class="when"><time datetime="2007-10-18">18 October 2007</time></div><div><a class="pl" href="#e-20071018-1" aria-label="Link to this entry">#</a><h3>Resolution demanded more state funding for Western</h3><p>At its Oct. 9 meeting SGA passed a resolution asking the state government to appropriate more money to Western, which had received 54 percent of the funding the Council on Postsecondary Education recommended for fiscal year 2008. President Jeanne Johnson argued that tuition increases to cover the shortfall hurt students. The resolution stated Western needed the full recommended amount to meet its 2020 educational goals.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20071028151319/http://www.wkuherald.com/news/2007/10/18/News/Sga-Resolution.Requests.Increase.In.State.Funding-3040044.shtml" rel="noopener">Herald, 18 Oct 2007</a></p></div></article><article class="ev" id="e-20071018-2"><div class="when"><time datetime="2007-10-18">18 October 2007</time></div><div><a class="pl" href="#e-20071018-2" aria-label="Link to this entry">#</a><h3>SGA organized Walk Out Western budget protest</h3><p>SGA sponsored Walk Out Western, asking students to leave class at 12:20 p.m. on Oct. 25 for a rally at the Colonnade to protest state budget cuts, with empty seats meant as a message to Frankfort legislators. President Gary Ransdell said he could not condone students walking out of class and doubted a single-campus protest would affect state funding. Johnson said other state universities declined to join but were watching how it worked at Western.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20071020061137/http://media.www.wkuherald.com/media/storage/paper603/news/2007/10/18/News/Sga-To.Stage.Walkout.To.Protest.State.Budget.Cuts-3040047.shtml?xmlsyn=1" rel="noopener">Herald, 18 Oct 2007</a></p></div></article><article class="ev" id="e-20071025-1"><div class="when"><time datetime="2007-10-25">25 October 2007</time></div><div><a class="pl" href="#e-20071025-1" aria-label="Link to this entry">#</a><h3>Committee proposed $1,995 educational video subscription</h3><p>SGA&#x27;s Academic Affairs Committee, chaired by Drew Eclov, prepared legislation to buy a roughly $1,995 subscription to United Streaming, a Discovery Channel-owned site with about 45,000 educational video clips that Eclov called a version of YouTube for higher education. The committee planned to survey students and professors before bringing it to a vote. SGA also scheduled a vote on a resolution placing $1,000 in a field trip fund to support learning outside the classroom.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20071213001716/http://www.wkuherald.com/news/2007/10/25/News/Sga-Committee.Wants.To.Purchase.Subscription.To.Educational.Media-3055992.shtml" rel="noopener">Herald, 25 Oct 2007</a></p></div></article><article class="ev" id="e-20071101-1"><div class="when"><time datetime="2007-11">November 2007</time></div><div><a class="pl" href="#e-20071101-1" aria-label="Link to this entry">#</a><h3>Athletics director asked SGA for help on football attendance</h3><p>Athletics Director Wood Selig came to the SGA meeting to ask senators for ideas on getting more students to football games as Western moved to the Football Bowl Subdivision, which required an average attendance of 15,000 to keep bowl eligibility. Senators suggested advertising on Western&#x27;s website and Facebook rather than email, and later game times. Executive Vice President Johnathon Boles, who sat on a faculty advisory committee for athletics, arranged the consultation.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20071106035708/http://www.wkuherald.com/home/news/2007/11/01/News/Athletics.Director.Consults.Sga.On.Increasing.Football.Attendance-3071116.shtml" rel="noopener">Herald, 1 Nov 2007</a></p></div></article><article class="ev" id="e-20071115-1"><div class="when"><time datetime="2007-11-15">15 November 2007</time></div><div><a class="pl" href="#e-20071115-1" aria-label="Link to this entry">#</a><h3>SGA planned Listen Up Legislators lobbying campaign</h3><p>SGA began laying groundwork for Listen Up Legislators, a spring lobbying campaign in which senators would meet legislators one-on-one in Frankfort to push for university funding, after the Council on Postsecondary Education recommended a $174 million increase for public universities. Chief of staff Skylar Jordan said the traditional February rally had not worked, pointing to Western receiving only 54 percent of the recommended increase. Other state student governments expressed interest in coordinating lobbying dates.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20071212063840/http://www.wkuherald.com/home/news/2007/11/15/News/Sga-Coordinating.Frankfort.Lobbying.Effort-3102675.shtml" rel="noopener">Herald, 15 Nov 2007</a></p></div></article><article class="ev" id="e-20080131-1"><div class="when"><time datetime="2008-01-31">31 January 2008</time></div><div><a class="pl" href="#e-20080131-1" aria-label="Link to this entry">#</a><h3>Spring session opened with ONE Campus bill</h3><p>At its first spring meeting on Jan. 29, SGA introduced legislation by Senators Matt Vaughan and Doug Tate asking the senate to recognize Western as a ONE Campus, part of the national campaign against global AIDS and extreme poverty. SGA also released its spring schedule, including Listen Up Legislators on Feb. 14, the Frankfort rally for higher education on Feb. 20 and the annual banquet on April 29. In the semester&#x27;s opening handout, Executive Vice President Johnathon Boles pointed members to the constitution&#x27;s purpose of serving the student body equally.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20080201170334/http://www.wkuherald.com/home/news/2008/01/31/News/Sga-Introduces.New.Legislation-3179295.shtml" rel="noopener">Herald, 31 Jan 2008</a></p></div></article><article class="ev" id="e-20080220-1"><div class="when"><time datetime="2008-02-20">20 February 2008</time></div><div><a class="pl" href="#e-20080220-1" aria-label="Link to this entry">#</a><h3>Fifty senators write down what a lobbying trip felt like</h3><p>After a student rally at the Capitol in Frankfort, dozens of SGA members each filed an individual written reflection, archived one per person. The richest first-person source in the entire collection.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Documents/Reports" rel="noopener">TopSCHOLAR - Frankfort rally reflections</a></p></div></article><article class="ev" id="e-20080401-1"><div class="when"><time datetime="2008-04">April 2008</time></div><div><a class="pl" href="#e-20080401-1" aria-label="Link to this entry">#</a><h3>Spring election closed amid low-turnout criticism</h3><p>Voting for three executive seats and 28 senate seats ended after a one-week campaign that candidates criticized as part of SGA&#x27;s low-involvement problem; turnout had been 1,424 the year before and 1,376 the year before that. Red Towel Party presidential candidate Tedde Harden promised to rework what he called outdated election codes, while opponent Johnathon Boles agreed campaign time should be extended. President Jeanne Johnson said her administration inherited the codes and had tried new turnout methods, including extra credit for attending the debate.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20080411220253/http://media.www.wkuherald.com/media/storage/paper603/news/2008/04/01/News/Student.Government.Aims.To.Increase.Voter.Turnout-3294737.shtml" rel="noopener">Herald, 1 Apr 2008</a></p></div></article><article class="ev" id="e-20080417-1"><div class="when"><time datetime="2008-04-17">17 April 2008</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-20080417-1" aria-label="Link to this entry">#</a><h3>Ransdell announced 9 percent tuition increase</h3><p>President Gary Ransdell announced at campus forums that he would recommend a 9 percent tuition increase for 2008-09, abandoning a plan to hold increases at 6 percent. The change followed a state budget crisis in which Gov. Steve Beshear ordered a 3 percent cut to postsecondary education in December 2007 and proposed an additional 12 percent, later reduced by the General Assembly to 3 percent. Ransdell said the swing from expected state revenue was about $11 million to $12 million.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20080421164710/http://media.www.wkuherald.com/media/storage/paper603/news/2008/04/17/BreakingNews/Ransdell.Announces.9.Percent.Tuition.Increase-3333308.shtml" rel="noopener">Herald, 17 Apr 2008</a></p></div></article><article class="ev" id="e-20080424-1"><div class="when"><time datetime="2008-04-24">24 April 2008</time></div><div><a class="pl" href="#e-20080424-1" aria-label="Link to this entry">#</a><h3>Student regent Johnson opposed scale of 9 percent tuition increase</h3><p>The Board of Regents approved a 9 percent tuition increase for 2008-09 and finalized $2.5 million in cuts to the 2007-08 budget. Louisville regent Larry Zielke moved to cap the increase at 6 percent and push the General Assembly for more funding instead; SGA President and student regent Jeanne Johnson seconded the motion, but it died with only two votes. Johnson also argued the $370,000 budgeted for the Honors College should be reduced, saying the college benefited only 900 students and other students should not have to pay for it.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/6698/" rel="noopener">Herald 83:51, 29 Apr 2008 - &quot;Regents approve 9 percent tuition increase, finalize 07-08 budget cuts&quot;</a></p></div></article><article class="ev" id="e-20080718-1"><div class="when"><time datetime="2008-07-18">18 July 2008</time></div><div><a class="pl" href="#e-20080718-1" aria-label="Link to this entry">#</a><h3>Johnson&#x27;s regent term ended as Boles took the board oath</h3><p>The Board of Regents read a resolution thanking Jeanne Johnson for her service as the board&#x27;s student member from April 27, 2007 to July 18, 2008, calling her term one of &quot;able leadership, faithful service, and dedication.&quot; Johnathon Boles, who had already been installed as SGA president that spring, took the oath of office as student regent the same day, formally completing the transition between administrations.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/bor/2008/qtrly/4" rel="noopener">WKU Board of Regents minutes, 18 Jul 2008 (TopSCHOLAR)</a><a href="../docs/2007-08-bor-minutes-18-jul-2008.pdf">Read it on this site</a></p></div></article>
+
+
+
+<h2 class="sec">Sources for this year<span class="n">16</span></h2><p class="secnote">Every source cited above, once, with the number of entries that rest on it.</p><ol class="srclist" style="font-size:.92rem;color:var(--ink2)"><li><a class="ext" href="https://web.archive.org/web/20071021062401/http://media.www.wkuherald.com/media/storage/paper603/news/2007/09/13/News/Sga-Election.To.Be.Contested.When.Polls.Open.Wednesday-2966627.shtml" rel="noopener">Herald, 13 Sep 2007</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://web.archive.org/web/20071020061137/http://media.www.wkuherald.com/media/storage/paper603/news/2007/10/18/News/Sga-To.Stage.Walkout.To.Protest.State.Budget.Cuts-3040047.shtml?xmlsyn=1" rel="noopener">Herald, 18 Oct 2007</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://web.archive.org/web/20080411220253/http://media.www.wkuherald.com/media/storage/paper603/news/2008/04/01/News/Student.Government.Aims.To.Increase.Voter.Turnout-3294737.shtml" rel="noopener">Herald, 1 Apr 2008</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/bor/2008/qtrly/4" rel="noopener">WKU Board of Regents minutes, 18 Jul 2008 (TopSCHOLAR)</a> <span class="credit">3 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/6698/" rel="noopener">Herald 83:51, 29 Apr 2008 - &quot;Regents approve 9 percent tuition increase, finalize 07-08 budget cuts&quot;</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Documents/Reports" rel="noopener">TopSCHOLAR - Frankfort rally reflections</a></li><li><a class="ext" href="https://web.archive.org/web/20071009102623/http://media.www.wkuherald.com/media/storage/paper603/news/2007/10/02/News/Sga-Encourages.Voting.With.Mock.Election-3005163.shtml" rel="noopener">Herald, 2 Oct 2007</a></li><li><a class="ext" href="https://web.archive.org/web/20071028151319/http://www.wkuherald.com/news/2007/10/18/News/Sga-Resolution.Requests.Increase.In.State.Funding-3040044.shtml" rel="noopener">Herald, 18 Oct 2007</a></li><li><a class="ext" href="https://web.archive.org/web/20071213001716/http://www.wkuherald.com/news/2007/10/25/News/Sga-Committee.Wants.To.Purchase.Subscription.To.Educational.Media-3055992.shtml" rel="noopener">Herald, 25 Oct 2007</a></li><li><a class="ext" href="https://web.archive.org/web/20071106035708/http://www.wkuherald.com/home/news/2007/11/01/News/Athletics.Director.Consults.Sga.On.Increasing.Football.Attendance-3071116.shtml" rel="noopener">Herald, 1 Nov 2007</a></li><li><a class="ext" href="https://web.archive.org/web/20071212063840/http://www.wkuherald.com/home/news/2007/11/15/News/Sga-Coordinating.Frankfort.Lobbying.Effort-3102675.shtml" rel="noopener">Herald, 15 Nov 2007</a></li><li><a class="ext" href="https://web.archive.org/web/20080201170334/http://www.wkuherald.com/home/news/2008/01/31/News/Sga-Introduces.New.Legislation-3179295.shtml" rel="noopener">Herald, 31 Jan 2008</a></li><li><a class="ext" href="https://web.archive.org/web/20080421164710/http://media.www.wkuherald.com/media/storage/paper603/news/2008/04/17/BreakingNews/Ransdell.Announces.9.Percent.Tuition.Increase-3333308.shtml" rel="noopener">Herald, 17 Apr 2008</a></li><li><a class="ext" href="https://web.archive.org/web/20071106035708/http://www.wkuherald.com/home/news/2007/11/01/News/Athletics.Director.Consults.Sga.On.Increasing.Football.Attendance-3071116.shtml" rel="noopener">Herald, 1 Nov 2007 (Wayback)</a></li><li><a class="ext" href="https://web.archive.org/web/20071212063840/http://www.wkuherald.com/home/news/2007/11/15/News/Sga-Coordinating.Frankfort.Lobbying.Effort-3102675.shtml" rel="noopener">Herald, 15 Nov 2007 (Wayback)</a></li><li><a class="ext" href="https://web.archive.org/web/20071021062401/http://media.www.wkuherald.com/media/storage/paper603/news/2007/09/13/News/Sga-Election.To.Be.Contested.When.Polls.Open.Wednesday-2966627.shtml" rel="noopener">Herald, 13 Sep 2007 (Wayback)</a></li></ol>
+<section class="citebox">
+ <p class="lab">Preferred citation</p>
+ <p class="citestr" id="cite">&#8220;2007-08,&#8221; <cite>SGA 60: Student Government at Western Kentucky University, 1966&#8211;2026</cite>, revised 4 August 2026, <span id="citeurl">y/2007-08.html</span></p>
+ <button class="copy" id="copy" type="button">Copy the citation</button>
+ <p class="revised">This record was last rebuilt on 4 August 2026. Where a name here differs from
+ the plaque in the SGA Chambers, the difference is explained above and listed on the
+ <a href="../corrections.html">corrections page</a>.</p>
+</section>
+<div class="pager"><a href="2006-07.html">Previous year<b>2006-07</b></a><a class="r" href="2008-09.html">Next year<b>2008-09</b></a></div>
+</div></div>
+<script>
+(function(){
+ var u=document.getElementById('citeurl');if(u)u.textContent=location.href.split('#')[0];
+ var b=document.getElementById('copy'),c=document.getElementById('cite');
+ if(b&&c&&navigator.clipboard){b.addEventListener('click',function(){
+  navigator.clipboard.writeText(c.textContent.replace(/\s+/g,' ').trim()).then(function(){
+   b.textContent='Copied';setTimeout(function(){b.textContent='Copy the citation'},1800);});});}
+ else if(b){b.style.display='none'}
+})();
+</script>
+</main>
+<footer class="foot"><div class="wrap"><div class="cols">
+<div><h2>What this is</h2>
+<p>A year-by-year record of student government at Western Kentucky University, from the
+ratification of the Associated Students constitution in April 1966 to the present. Every
+entry names the source it came from.</p></div>
+<div><h2>Corrections</h2>
+<p>The names here start with the plaque in the SGA Chambers, and the plaque is known to be
+wrong in places. Where the archive disagrees with it, this site follows the archive and
+records the change on the <a href="../corrections.html">corrections page</a>. If you
+served, or you know that a year here is wrong, the project wants to hear from you through
+the Student Government Association office.</p></div>
+<div><h2>Reuse</h2><p>Text on this site is the work of the project. Photographs, documents and legislation are reproduced from Western Kentucky University's own open archives and from the <cite>College Heights Herald</cite> and the <cite>Talisman</cite>; each item names the collection, issue and page it came from and links to the original.</p></div>
+</div>
+<p class="fine">Built 4 August 2026. The whole record is readable as data:
+<a href="../years.json">years.json</a>. Method and scope are set out
+<a href="../about.html">on the about page</a>.</p>
+</div></footer>
+
 </body></html>

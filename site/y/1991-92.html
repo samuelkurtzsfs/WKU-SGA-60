@@ -1,189 +1,306 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#08090B">
-<meta name="description" content="Sixty years of student government at Western Kentucky University, 1966-2026.">
-<title>1991-92 · SGA 60</title><style>
+<meta name="theme-color" content="#0B0B0C">
+<meta name="description" content="Student government at Western Kentucky University, 1991-92. Heather E. Falmlen. 25 sourced entries.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="1991-92 · SGA 60">
+<meta property="og:description" content="Student government at Western Kentucky University, 1991-92. Heather E. Falmlen. 25 sourced entries.">
+<title>1991-92 · SGA 60</title>
+<style>
 :root{
- --red:#B01E24; --red-dark:#8E1218; --black:#0B0B0C;
- --ink:#151517; --ink2:#4C4C4F; --ink3:#8A8A8E;
- --paper:#FFFFFF; --paper2:#F7F6F3; --line:#E7E4DF;
- --inscribe:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
+ --red:#B01E24; --red-dark:#8A171C; --black:#0B0B0C;
+ --ink:#141416; --ink2:#44444B; --ink3:#76767D;
+ --paper:#FFFFFF; --paper2:#F6F5F2; --line:#DCD9D3; --line2:#EBE8E3;
+ --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
- --mono:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
+ --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+ --measure:35rem;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
- font-size:clamp(15px,0.35vw + 13.8px,18px);line-height:1.65;
- -webkit-font-smoothing:antialiased;overflow-x:hidden}
+ font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+@media(max-width:640px){body{font-size:16px}}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;letter-spacing:-.012em;
+ text-wrap:balance;margin:0}
+p{margin:0 0 1em;text-wrap:pretty}
 a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--red-dark)}
-:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
-.eyebrow{font-family:var(--ui);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
-.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+a.ext::after{content:"\00A0\2197";color:var(--ink3);font-size:.82em;text-decoration:none}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 34px}
 @media(max-width:640px){.wrap{padding:0 18px}}
+.prose{max-width:var(--measure)}
+.num{font-variant-numeric:tabular-nums}
+.lab{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px}
 
-/* plaque plates: clean white cards on the black wall */
-.plate-face{background:var(--paper);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.25);position:relative}
-.engraved{color:var(--ink)}
+/* ---- masthead nav ---- */
+.nav{background:var(--black);color:#fff}
+.nav .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+ padding:13px 34px;flex-wrap:wrap}
+@media(max-width:640px){.nav .wrap{padding:11px 18px}}
+.nav a{color:rgba(255,255,255,.72);text-decoration:none;font-size:.86rem}
+.nav a:hover,.nav a[aria-current]{color:#fff}
+.nav a[aria-current]{box-shadow:inset 0 -2px 0 var(--red)}
+.nav .brand{font-family:var(--display);font-weight:800;letter-spacing:.05em;color:#fff;font-size:1rem}
+.nav .brand b{color:var(--red);font-weight:800}
+.nav ul{display:flex;gap:20px;margin:0;padding:0;list-style:none;flex-wrap:wrap}
 
-/* ---- Big Red ---- */
-.bigred{position:fixed;right:18px;bottom:10px;z-index:80;cursor:pointer;user-select:none;-webkit-user-select:none;line-height:0}
-.bigred{width:170px}
-.bigred img{display:block;width:100%;height:auto;image-rendering:pixelated;
- filter:drop-shadow(0 8px 14px rgba(0,0,0,.28))}
-.bigred .wig{position:absolute;top:-24px;left:24%;pointer-events:none}
-.bigred .gavel{position:absolute;top:16%;right:-14px;pointer-events:none}
-.bigred .close{position:absolute;top:-12px;right:-6px;width:22px;height:22px;border-radius:50%;
- border:1px solid var(--line);background:var(--paper);color:var(--ink2);font-size:13px;line-height:19px;
- text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
-.bigred .close:hover{color:var(--red);border-color:var(--red)}
-.bigred .say{position:absolute;bottom:100%;right:8%;margin-bottom:12px;background:var(--black);color:#fff;
- font-family:var(--ui);font-size:11px;letter-spacing:.06em;padding:8px 12px;border-radius:8px;white-space:nowrap;
- opacity:0;transform:translateY(6px);transition:.25s;pointer-events:none;line-height:1.4}
-.bigred .say:after{content:"";position:absolute;top:100%;right:22px;border:6px solid transparent;border-top-color:var(--black)}
-.bigred.talk .say{opacity:1;transform:none}
-.bigred .gavel{transform-origin:24% 88%}
-@keyframes br-bounce{0%,100%{transform:none}30%{transform:translateY(-28px) rotate(-5deg)}60%{transform:translateY(0) rotate(3deg)}80%{transform:translateY(-10px)}}
-@keyframes br-spin{to{transform:rotate(360deg)}}
-@keyframes br-bang{0%,100%{transform:rotate(0)}35%{transform:rotate(-60deg)}55%{transform:rotate(16deg)}75%{transform:rotate(-8deg)}}
-.bigred.bounce{animation:br-bounce .9s cubic-bezier(.3,.7,.3,1)}
-.bigred.spin{animation:br-spin .8s ease}
-.bigred.bang .gavel{animation:br-bang .7s ease}
-@media(prefers-reduced-motion:reduce){.bigred,.bigred .gavel{animation:none!important}}
+/* ---- page head ---- */
+.head{padding:56px 0 26px;border-bottom:1px solid var(--line)}
+@media(max-width:640px){.head{padding:34px 0 20px}}
+.head .kicker{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 12px}
+.head h1{font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.04}
+.head .lede{font-size:1.12rem;color:var(--ink);max-width:var(--measure);margin:18px 0 0}
+.head .scope{color:var(--ink2);max-width:var(--measure);margin:14px 0 0;font-size:.97rem}
 
-.room{display:none}
-.nav{background:var(--black)}
-.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 30px;flex-wrap:wrap}
-.nav a{font-size:.85rem;font-weight:500;text-decoration:none;color:rgba(255,255,255,.75);
- font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.nav a:hover{color:#fff}
-.nav .brand{font-family:var(--inscribe);font-weight:800;letter-spacing:.06em;color:#fff;font-size:1rem}
-.nav .brand b{color:var(--red)}
-.yhead{padding:56px 0 30px;border-bottom:1px solid var(--line)}
-.yhead h1{font-family:var(--inscribe);font-weight:800;font-size:clamp(2.8rem,7vw,4.6rem);letter-spacing:-.02em;
- margin:8px 0 0;line-height:1;color:var(--ink)}
-.leads{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}
-.lead{padding:13px 18px;border-radius:10px;min-width:200px;border:1px solid var(--line);box-shadow:none}
-.lead b{display:block;font-family:var(--inscribe);font-weight:700;font-size:1.02rem;text-transform:none;letter-spacing:0}
-.lead .role{font-size:.78rem;margin-top:4px;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.lead .role .w{color:var(--red);font-weight:600}
-.cols{max-width:860px;padding:34px 0 20px}
-@media(max-width:900px){.cols{grid-template-columns:1fr;gap:30px}}
-h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spacing:.01em;margin:34px 0 14px;
- color:var(--ink);text-transform:none;border-bottom:2px solid var(--red);display:inline-block;padding-bottom:4px}
-.note{border-left:3px solid var(--red);background:var(--paper2);border-radius:0 8px 8px 0;
- padding:12px 16px;margin:0 0 18px;font-size:.93rem;color:var(--ink2)}
-.note b{color:var(--ink)}
-.ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
-@media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
-.ev .d{font-family:var(--ui);font-size:13px;color:var(--red);padding-top:3px;font-weight:600}
-.ev .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:5px;font-family:var(--ui)}
-.ev h3{font-family:var(--inscribe);font-weight:700;font-size:1.06rem;margin:0 0 7px;color:var(--ink)}
-.ev p{margin:0;color:var(--ink2);font-size:.95rem}
-.ev .cite{display:inline-block;margin-top:8px;margin-right:14px;font-size:.85rem;color:var(--red);border:0;padding:0;
- text-decoration:underline;text-underline-offset:3px;text-transform:none;font-family:var(--ui);letter-spacing:0}
-.ev .cite:hover{background:none;color:var(--red-dark)}
-.empty{border:1px dashed var(--line);padding:24px;color:var(--ink3);font-size:.94rem;border-radius:10px}
-.dig{border:1px solid var(--line);background:var(--paper2);padding:20px 18px;position:sticky;top:18px;
- max-height:88vh;overflow:auto;border-radius:12px}
-.dig h2{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 3px;color:var(--red);font-family:var(--ui)}
-.dig h3{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 4px;color:var(--ink3);font-family:var(--ui)}
-.dig .lede{font-size:.84rem;color:var(--ink3);margin:0 0 8px;line-height:1.5}
-.dig a.q{display:block;text-decoration:none;padding:7px 0;border-top:1px solid var(--line);
- font-size:.84rem;color:var(--ink2);line-height:1.4;font-family:var(--ui)}
-.dig a.q:hover{color:var(--red)}
-.pager{display:flex;justify-content:space-between;gap:18px;padding:26px 0 90px;border-top:1px solid var(--line);flex-wrap:wrap}
-.pager a{font-size:.8rem;letter-spacing:.04em;text-decoration:none;max-width:46%;color:var(--ink3);font-family:var(--ui)}
-.pager a b{display:block;font-family:var(--inscribe);font-size:1.1rem;font-weight:700;color:var(--ink);margin-top:4px}
+/* ---- record head ---- */
+.rec-head{padding:48px 0 22px}
+.rec-head h1{font-size:clamp(2.6rem,6.5vw,4rem);line-height:.98;letter-spacing:-.03em;
+ font-variant-numeric:tabular-nums}
+.glance{display:grid;grid-template-columns:max-content 1fr;gap:0 28px;margin:26px 0 0;
+ border-top:1px solid var(--line);max-width:46rem}
+.glance dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:9px 0 0}
+.glance dd{margin:0;padding:7px 0 0;font-variant-numeric:tabular-nums}
+.glance dd a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+@media(max-width:520px){.glance{grid-template-columns:1fr;gap:0}
+ .glance dt{padding-top:12px}.glance dd{padding-top:2px}}
+
+/* ---- sections ---- */
+section{margin:0}
+h2.sec{font-size:1.16rem;margin:52px 0 4px;padding-top:15px;border-top:1px solid var(--line)}
+h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.02em;
+ color:var(--ink3);margin-left:10px;font-variant-numeric:tabular-nums}
+.secnote{color:var(--ink3);font-size:.88rem;margin:0 0 18px}
+.body{padding-bottom:40px}
+
+/* ---- leaders ---- */
+.leader{padding:34px 0 0}
+.leader h2{font-size:1.5rem;letter-spacing:-.02em}
+.leader h2 .r{font-family:var(--ui);font-weight:400;font-size:1rem;color:var(--ink2);
+ letter-spacing:0;white-space:nowrap}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:0 26px;margin:14px 0 20px;
+ max-width:46rem;font-size:.95rem}
+.facts dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:7px 0 0}
+.facts dd{margin:0;padding:5px 0 0;color:var(--ink)}
+@media(max-width:520px){.facts{grid-template-columns:1fr}.facts dt{padding-top:11px}.facts dd{padding-top:1px}}
+.editorial{max-width:var(--measure);color:var(--ink);border-left:2px solid var(--line);
+ padding-left:18px;margin:0 0 22px}
+.editorial p{margin:0 0 .8em}
+.editorial p:last-child{margin-bottom:0}
+.editorial.flagged{border-left-color:var(--red)}
+.profile{max-width:var(--measure)}
+.profile p{font-size:1.02rem;margin:0 0 1.05em}
+.profile sup{font-size:.66em;line-height:0}
+.profile sup a{text-decoration:none;padding:0 1px}
+.srclist{max-width:46rem;margin:6px 0 0;padding:0 0 0 1.4em;font-size:.88rem;color:var(--ink3)}
+.srclist li{margin:0 0 5px}
+.srclist a{color:var(--red)}
+
+/* ---- portraits and photographs ---- */
+.plates-photo{display:flex;gap:26px;flex-wrap:wrap;margin:30px 0 6px}
+.portrait{margin:0;width:190px}
+.portrait img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.portrait figcaption{font-size:.82rem;color:var(--ink2);margin-top:9px;line-height:1.45}
+.portrait figcaption b{display:block;font-family:var(--display);font-size:.95rem;
+ font-weight:700;color:var(--ink);margin-bottom:2px}
+.portrait figcaption .who{display:block}
+.credit{display:block;color:var(--ink3);font-size:.78rem;margin-top:3px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;margin:16px 0 0}
+.gallery figure{margin:0}
+.gallery img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.gallery figcaption{font-size:.87rem;color:var(--ink2);margin-top:9px;line-height:1.5}
+
+/* ---- the organization ---- */
+.org{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin:16px 0 0}
+@media(max-width:700px){.org{grid-template-columns:1fr;gap:24px}}
+.org h3{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 6px}
+.off{display:grid;grid-template-columns:9rem 1fr;gap:0 16px;padding:9px 0;
+ border-top:1px solid var(--line2);font-size:.94rem}
+@media(max-width:520px){.off{grid-template-columns:1fr;gap:1px}}
+.off .o{font-size:.8rem;color:var(--ink3);padding-top:3px}
+.off b{font-weight:600}
+.off p{margin:2px 0 0;color:var(--ink2);font-size:.88rem}
+.org .meta{font-size:.92rem;color:var(--ink2);margin:12px 0 0;max-width:var(--measure)}
+
+/* ---- entries ---- */
+.ev{display:grid;grid-template-columns:9rem 1fr;gap:0 26px;padding:17px 0;
+ border-top:1px solid var(--line2)}
+@media(max-width:640px){.ev{grid-template-columns:1fr;gap:3px;padding:15px 0}}
+.ev .when{font-size:.83rem;color:var(--ink3);padding-top:5px;font-variant-numeric:tabular-nums}
+.ev .when .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+.ev h3{font-size:1.04rem;margin:0 0 6px}
+.ev p{margin:0;max-width:var(--measure)}
+.srcline{font-size:.84rem;color:var(--ink3);margin-top:9px}
+.srcline a{margin-right:14px}
+.pl{float:right;font-family:var(--mono);font-size:.78rem;color:var(--ink3);
+ text-decoration:none;opacity:0;margin-left:12px}
+.ev:hover .pl,.ev:focus-within .pl{opacity:1}
+.ev:target{background:var(--paper2);box-shadow:-14px 0 0 var(--paper2),14px 0 0 var(--paper2)}
+.empty{max-width:var(--measure);color:var(--ink2)}
+.searchlist{columns:2;column-gap:30px;padding:0;margin:10px 0 0;list-style:none;font-size:.86rem}
+@media(max-width:640px){.searchlist{columns:1}}
+.searchlist li{margin:0 0 4px;break-inside:avoid}
+
+/* ---- documents ---- */
+.doc{border-top:1px solid var(--line2);padding:22px 0 6px}
+.doc h3{font-size:1.05rem;margin:0 0 7px}
+.doc p{color:var(--ink);max-width:var(--measure);margin:0 0 12px}
+.doc-extract{border-left:2px solid var(--red);padding:2px 0 2px 16px;margin:0 0 14px;
+ max-width:var(--measure);color:var(--ink2);font-size:.95rem}
+.doc-extract .lab{margin-bottom:4px}
+.doc-view{display:block;width:100%;height:460px;border:1px solid var(--line);background:var(--paper2)}
+.doc-foot{font-size:.86rem;color:var(--ink3);margin:10px 0 0}
+.doc-foot a{margin-right:18px}
+
+/* ---- legislation rows ---- */
+.lrow{display:grid;grid-template-columns:7.5rem 1fr auto;gap:0 18px;align-items:baseline;
+ padding:10px 0;border-top:1px solid var(--line2);font-size:.95rem}
+@media(max-width:700px){.lrow{grid-template-columns:1fr;gap:2px}}
+.lrow .lt{color:var(--ink3);font-size:.82rem;font-variant-numeric:tabular-nums}
+.lrow .ll{font-size:.85rem;white-space:nowrap}
+.lrow .ll a{margin-left:16px}
+@media(max-width:700px){.lrow .ll a{margin:0 16px 0 0}}
+.lsec{margin:0 0 26px}
+
+/* ---- timeline ---- */
+.hx{display:grid;grid-template-columns:8rem 1fr;gap:0 24px;padding:6px 0;
+ border-top:1px solid var(--line2);font-size:.92rem;line-height:1.45}
+@media(max-width:640px){.hx{grid-template-columns:1fr;gap:0;padding:8px 0}}
+.hx .when{color:var(--ink3);font-size:.8rem;padding-top:3px;font-variant-numeric:tabular-nums}
+.hx .t{color:var(--ink2);max-width:52rem}
+.hx .t b{color:var(--ink);font-weight:600}
+.hx .t a{font-size:.84rem;margin-left:8px;white-space:nowrap}
+.hyear{font-size:1.35rem;margin:38px 0 2px;padding-top:14px;border-top:1px solid var(--line)}
+.hyear .who{font-family:var(--ui);font-weight:400;font-size:.9rem;color:var(--ink3);
+ display:block;margin-top:5px;letter-spacing:0}
+.hyear .who a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+details.hidx{margin:14px 0 0;font-size:.9rem}
+details.hidx summary{cursor:pointer;color:var(--ink3);font-size:.84rem}
+details.hidx summary:hover{color:var(--red)}
+.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:0 0 24px;font-size:.92rem}
+.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
+.decnav span{color:var(--ink3)}
+
+/* ---- filters and search ---- */
+.tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
+.field{display:block;max-width:26rem}
+.field .lab{margin-bottom:6px}
+.field input{width:100%;background:var(--paper);border:1px solid var(--line);color:var(--ink);
+ font-family:var(--ui);font-size:16px;padding:10px 12px;border-radius:2px}
+.field input:focus{outline:2px solid var(--red);outline-offset:-1px;border-color:var(--red)}
+.facets{display:flex;flex-wrap:wrap;gap:0 20px;margin:20px 0 0}
+.facets button{background:none;border:0;border-bottom:2px solid transparent;padding:4px 0 5px;
+ font-family:var(--ui);font-size:.92rem;color:var(--ink2);cursor:pointer}
+.facets button:hover{color:var(--red)}
+.facets button[aria-pressed="true"]{color:var(--ink);font-weight:600;border-bottom-color:var(--red)}
+.facets button .c{color:var(--ink3);font-weight:400;font-variant-numeric:tabular-nums}
+.readout{font-size:.9rem;color:var(--ink2);margin:16px 0 0;font-variant-numeric:tabular-nums}
+
+/* ---- citation ---- */
+.citebox{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+ padding:16px 0;margin:46px 0 0;max-width:46rem}
+.citestr{font-size:.92rem;color:var(--ink);margin:8px 0 0;line-height:1.55}
+.copy{background:none;border:1px solid var(--line);border-radius:2px;color:var(--ink2);
+ font-family:var(--ui);font-size:.8rem;padding:5px 11px;margin-top:12px;cursor:pointer}
+.copy:hover{border-color:var(--red);color:var(--red)}
+.revised{font-size:.84rem;color:var(--ink3);margin:12px 0 0}
+
+/* ---- pager ---- */
+.pager{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+ border-top:1px solid var(--line);padding:20px 0 0;margin-top:44px}
+.pager a{font-size:.82rem;color:var(--ink3);text-decoration:none;max-width:46%}
+.pager a b{display:block;font-family:var(--display);font-size:1.15rem;color:var(--ink);
+ margin-top:3px;font-variant-numeric:tabular-nums}
 .pager a:hover b{color:var(--red)}
 .pager .r{text-align:right;margin-left:auto}
 
-/* ---- president profiles ---- */
-.profile{margin:0 0 26px}
-.profile p{color:var(--ink2);font-size:.96rem;margin:0 0 12px}
+/* ---- footer ---- */
+.foot{border-top:1px solid var(--line);background:var(--paper2);margin-top:70px;
+ padding:36px 0 54px;font-size:.88rem;color:var(--ink2)}
+.foot .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px}
+.foot p{max-width:34rem;margin:0 0 .9em}
+.foot h2{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.foot .fine{color:var(--ink3);font-size:.82rem;margin-top:26px;
+ border-top:1px solid var(--line);padding-top:16px}
 
-/* ---- photographs ---- */
-.portraits{display:flex;gap:16px;flex-wrap:wrap;margin:26px 0 4px}
-.portrait{margin:0;width:160px}
-.portrait img{width:100%;height:190px;object-fit:cover;object-position:top;border-radius:10px;
- box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.portrait figcaption{font-size:.78rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-.portrait figcaption b{display:block;font-family:var(--inscribe);font-size:.92rem;font-weight:700;color:var(--ink)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:0 0 28px}
-.gallery figure{margin:0}
-.gallery img{width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.gallery figcaption{font-size:.84rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-
-/* ---- the organization ---- */
-.org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
-@media(max-width:640px){.org{grid-template-columns:1fr}}
-.org h3{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--red);font-family:var(--ui)}
-.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-.off .o{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding-top:4px;min-width:110px;font-family:var(--ui)}
-.off b{font-family:var(--inscribe);font-weight:700;color:var(--ink)}
-.off p{margin:3px 0 0;color:var(--ink2);font-size:.88rem}
-.org .meta{font-size:.88rem;color:var(--ink2);margin:10px 0 0}
-
-/* ---- the archive shelf ---- */
-.doc{border:1px solid var(--line);border-radius:12px;margin:0 0 24px;overflow:hidden;background:var(--paper)}
-.doc-head{padding:17px 19px 14px}
-.doc-head h3{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;margin:0 0 7px;color:var(--ink)}
-.doc-head p{margin:0;color:var(--ink2);font-size:.93rem}
-.doc-extract{border-left:3px solid var(--red);background:var(--paper2);margin:0 19px 15px;border-radius:0 8px 8px 0;
- padding:12px 16px;font-size:.93rem;color:var(--ink2)}
-.doc-extract .from{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;font-family:var(--ui)}
-.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid var(--line);background:var(--paper2)}
-.doc-foot{display:flex;gap:18px;flex-wrap:wrap;padding:13px 19px}
-.doc-foot a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.doc-foot a:hover{background:none;color:var(--red-dark)}
-
-/* ---- complete timeline ---- */
-.hx{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
-@media(max-width:640px){.hx{grid-template-columns:1fr;gap:2px}}
-.hx .d{font-family:var(--ui);font-size:12.5px;color:var(--ink3);padding-top:2px;font-weight:600}
-.hx .t{color:var(--ink2)}
-.hx a{margin-left:10px;font-size:.82rem}
-.hyear{font-family:var(--inscribe);font-weight:800;font-size:1.6rem;margin:44px 0 6px;color:var(--ink)}
-.hyear a{font-size:.8rem;font-weight:600;margin-left:14px}
-.hsub{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin:18px 0 4px;font-family:var(--ui)}
-
-/* ---- legislation ---- */
-.lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
- padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-@media(max-width:640px){.lrow{grid-template-columns:1fr;gap:4px}}
-.ltype{font-family:var(--ui);font-size:12px;letter-spacing:.01em;color:var(--red);font-weight:600}
-.lt{color:var(--ink)}
-.lls{display:flex;gap:14px;white-space:nowrap}
-.lls a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.lls a:hover{background:none;color:var(--red-dark)}
-.lsec{margin:0 0 34px}
-.lcount{font-size:.78rem;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em}
-.lfilter{width:100%;max-width:420px;background:var(--paper);border:1px solid var(--line);color:var(--ink);
- font-family:var(--ui);font-size:15px;padding:11px 16px;border-radius:10px;margin:6px 0 26px}
-.lfilter:focus{outline:2px solid var(--red);outline-offset:2px}
-.ljump{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 22px}
-.ljump .chip{font-family:var(--ui);font-size:13px;padding:5px 13px;border:1px solid var(--line);border-radius:999px;
- color:var(--ink2);text-decoration:none}
-.ljump .chip:hover{border-color:var(--red);color:var(--red)}
+/* ---- print ---- */
+@media print{
+ .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav{display:none!important}
+ body{font-size:11pt;color:#000}
+ a{color:#000;text-decoration:none}
+ a.ext::after{content:""}
+ .body a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#444;word-break:break-all}
+ .citebox{margin:0 0 18px;border-top:0}
+ .doc-view{display:none}
+ h2.sec{break-after:avoid}
+ .ev,.doc,.leader{break-inside:avoid}
+}
 </style></head><body>
-<div class="room"></div>
+<a class="skip" href="#main">Skip to the record</a>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="../index.html">SGA <b>60</b></a><ul><li><a href="../index.html" aria-current="page">The board</a></li><li><a href="../history.html">Timeline</a></li><li><a href="../legislation.html">Legislation</a></li><li><a href="../corrections.html">Corrections</a></li><li><a href="../about.html">About and method</a></li></ul></div></nav>
+<main id="main">
 
-<nav class="nav"><div class="wrap">
- <a class="brand" href="../index.html">SGA <b>60</b></a>
- <div style="display:flex;gap:20px"><a href="../index.html">The Board</a><a href="../history.html">Timeline</a><a href="../legislation.html">Legislation</a></div>
-</div></nav>
-<header class="yhead"><div class="wrap">
- <div class="eyebrow">Associated Students</div>
+<header class="rec-head"><div class="wrap">
+ <p class="kicker">Associated Students &middot; academic year</p>
  <h1>1991-92</h1>
- <div class="leads"><div class="lead plate-face engraved"><b>Heather E. Falmlen</b><div class="role">president &middot; plaque: 1991-92</div></div></div>
+ <dl class="glance"><dt>Organization</dt><dd>Associated Students</dd><dt>President</dt><dd>Heather E. Falmlen</dd><dt>Entries</dt><dd>25</dd><dt>Legislation on file</dt><dd>4</dd><dt>Sources cited</dt><dd>28</dd></dl>
 </div></header>
-<div class="wrap"><div class="cols">
- <div><div class="note"><b>Heather E. Falmlen:</b> Elected Associated Student Government president in results the Herald reported 11 April 1991 amid election protests and a rival group's call to boycott the vote. WKU's own "On Campus" newsletter confirmed on 22 May 1991 that she held both the presidency and the student regent seat, consistent with other presidents of this period. Presided over the vote to rename the Associated Students as the Student Government Association: passed 7 April 1992, ratified by referendum 14 April, effective that autumn.</div><section class="profile"><h2 class="sub">Heather E. Falmlen &mdash; the term</h2><p>Falmlen won the Associated Student Government presidency in results the Herald reported on 11 April 1991 under the headline "Heather Falmlen Wins Amid Associated Student Government Election Protests." A Herald "Meet the Candidates" feature on 2 April had previewed four contenders for the race: Falmlen, Rob Evans, Van Hodge, and Dan Knowles. The same 11 April issue reported a rival group urging students to boycott the vote, an editorial calling the contest's "immature antics" a disappointment, and a published complaint that the Herald's own election coverage had been biased.</p><p>In office, her administration fought a running battle over the makeup of the Board of Regents. On 29 October 1991 the Associated Student Government passed Resolution 91-6-F asking that Joe Iracane not be re-elected chair of the board; the Herald covered the vote the same day under "Associated Student Government Opposes Joseph Iracane." The board went ahead and re-elected him a week later, the university's own "On Campus" newsletter reported on 6 November. On 30 January 1992 the Herald reported the Associated Student Government was separately planning a committee aimed at student access to the regent, in the same issue that carried an editorial cartoon, "Ventriloquist's Dummy," targeting Falmlen. On 4 February 1992 the body passed Resolution 92-7-S, declaring its support for the WKU football program in spite of budget cuts; the Board of Regents voted that May to keep the program.</p><p>That fall the body passed Resolution 91-2-F, asking for a change to Big Red Shuttle bus fares, and held its regular fall senate elections in October, including a separate freshman senator election on 15 October.</p><p>The signature action of her term was procedural: on 7 April 1992 the Associated Students voted to rename itself the Student Government Association, a change students ratified in a referendum a week later, effective that autumn. WKU's own "On Campus" newsletter had confirmed on 22 May 1991, at the start of her term, that Falmlen held both the presidency and the student regent seat - the same dual role held by the presidents before and after her in this period. The archive does not preserve further detail of her regency or of what she did after her term.</p><p>Other legislative business that fall included Resolution 91-7-F, backing the renewal of President Thomas Meredith's contract by the Board of Regents; a bill funding a "President for a Day" fundraiser (Bill #91-09-F); a bill funding renovation of the ASG chambers (Bill #91-03-F); and a bill proposing a new organizational slogan (Bill #91-11-F), introduced the same season the body renamed itself from the Associated Students to the Student Government Association.</p></section><h2 class="sub">The organization</h2><div class="org"><div><h3>The Executive</h3><div class="off"><span class="o">President / Student Regent</span><span><b>Heather E. Falmlen</b><p>Held both offices at once, as was standard for this period.</p> <a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4306" target="_blank" rel="noopener">On Campus 1:7, 22 May 1991, "Heather Falmlen is Student Regent, Associated Student Government President" &#8599;</a></span></div></div><div><h3>The Senate</h3><div class="off"><span class="o">committee</span><span><b>Student Affairs</b><p>Authored Resolution 91-2-F, requesting a one-way Big Red Shuttle fare.</p></span></div><div class="off"><span class="o">committee</span><span><b>Public Relations</b><p>Sponsored Bill #92-01-S, creating the student regent's advisory committee.</p></span></div><p class="meta">Archive does not preserve a full senate officer list or seat count for this year.</p></div></div><h2 class="sub">What happened, in order</h2><article class="ev"><div class="d">1991-04-02</div><div><h3>Herald previews four ASG candidates</h3><p>The Herald's "Meet the Candidates" feature previewed four contenders in the spring Associated Student Government elections: Heather Falmlen, Rob Evans, Van Hodge, and Dan Knowles. Falmlen went on to win the race.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7756" target="_blank" rel="noopener">Herald 66:51, 2 Apr 1991, "Meet the Candidates" &#8599;</a></div></article><article class="ev"><div class="d">1991-04-11</div><div><h3>Heather Falmlen wins the ASG presidency amid election protests</h3><p>Falmlen won the Associated Student Government presidential election in results the Herald reported under the headline "Heather Falmlen Wins Amid Associated Student Government Election Protests." The same issue covered a rival group's call to boycott the election, an editorial calling the contest "immature antics," and a complaint that the Herald's own coverage had been biased.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7752" target="_blank" rel="noopener">Herald 66:54, 11 Apr 1991 &#8599;</a></div></article><article class="ev"><div class="d">1991-05-22</div><div><h3>University newsletter confirms Falmlen holds both offices</h3><p>WKU's own "On Campus" newsletter reported Heather Falmlen as both Student Regent and Associated Student Government President, a contemporaneous confirmation that the two offices - separately elected two decades earlier - were held by the same person entering her term.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4306" target="_blank" rel="noopener">On Campus 1:7, 22 May 1991, "Heather Falmlen is Student Regent, Associated Student Government President" &#8599;</a></div></article><article class="ev"><div class="d">1991-09-01</div><div><h3>ASG asks for a change in Big Red Shuttle fares</h3><p>The Associated Student Government passed Resolution 91-2-F, sponsored by the Student Affairs committee, requesting a one-way fare option on the Big Red Shuttle for infrequent riders. The resolution's text called the existing $10 fee "outrageous and unfair" to students and faculty who did not ride the shuttle daily.</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/183/" target="_blank" rel="noopener">SGA Legislation, Resolution 91-2-F, "Modified Shuttle Fare" &#8599;</a></div></article><article class="ev"><div class="d">1991-09-01</div><div><h3>ASG resolves to support Meredith's contract renewal</h3><p>The Associated Student Government passed Resolution 91-7-F, backing the renewal of President Thomas Meredith's contract by the Board of Regents.</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/175" target="_blank" rel="noopener">SGA Legislation, Resolution 91-7-F, "Student Picket to Support President Meredith" &#8599;</a></div></article><article class="ev"><div class="d">1991-09-01</div><div><h3>ASG bill funds a "President for a Day" fundraiser</h3><p>The Associated Student Government introduced Bill #91-09-F, providing for a "President for a Day" fundraiser.</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/166" target="_blank" rel="noopener">SGA Legislation, Bill #91-09-F, "President for a Day" &#8599;</a></div></article><article class="ev"><div class="d">1991-09-01</div><div><h3>ASG bill funds renovation of its own chambers</h3><p>The Associated Student Government introduced Bill #91-03-F, providing for the renovation of the ASG chambers.</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/140" target="_blank" rel="noopener">SGA Legislation, Bill #91-03-F, "ASG Chambers Improvement" &#8599;</a></div></article><article class="ev"><div class="d">1991-09-01</div><div><h3>ASG bill proposes changing its own slogan</h3><p>The Associated Student Government introduced Bill #91-11-F, proposing to change the organization's slogan, in the same fall that it voted to rename itself from the Associated Students to the Student Government Association.</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/129" target="_blank" rel="noopener">SGA Legislation, Bill #91-11-F, "Change ASG Slogan" &#8599;</a></div></article><article class="ev"><div class="d">1991-09-05</div><div><h3>Health tops the agenda; more money for the environment</h3><p>Heather Falmlen opened the year with a student health issue at the top of her agenda, and ASG budgeted more money for environmental efforts. Both stories ran in the first week of the fall semester.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7763" target="_blank" rel="noopener">Herald 67:3, 5 Sep 1991 &#8599;</a></div></article><article class="ev"><div class="d">1991-09-12</div><div><h3>Fighting the city's noise ordinance</h3><p>ASG resolved to fight Bowling Green's noise ordinance. It was the organization's most direct engagement with city government in years.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7760" target="_blank" rel="noopener">Herald 67:5, 12 Sep 1991 &#8599;</a></div></article><article class="ev"><div class="d">1991-09-24</div><div><h3>Officers go to the city's meeting</h3><p>ASG officers attended a city meeting to press the noise ordinance fight, and the organization restarted its voter registration drive. A recycling resolution had its first reading the week before.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7774" target="_blank" rel="noopener">Herald 67:8, 24 Sep 1991 &#8599;</a></div></article><article class="ev"><div class="d">1991-10-15</div><div><h3>Fall ASG senate and freshman elections held</h3><p>The Herald covered the Associated Student Government's fall elections on 10 October, and a separate freshman senator election on 15 October; the paper's abstracts do not preserve the results.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7769/" target="_blank" rel="noopener">Herald 67:13, 10 Oct 1991, "Associated Student Government Elections Tuesday" &#8599;</a></div></article><article class="ev"><div class="d">1991-10-29</div><div><h3>ASG asks that Iracane not be re-elected regents chair</h3><p>The Associated Student Government passed Resolution 91-6-F, authored by Mark Miller and Eric McWilliams and sponsored by Mistianna Holcomb, asking that Joe Iracane not be re-elected chair of the Board of Regents. The resolution's text stated that Iracane, chairman for eight consecutive years, was under investigation by the FBI, the IRS and U.S. attorneys in Indiana and Kentucky over an alleged $6 million payment to Pyramid Mining Co. in return for contracts and a separate alleged $14,500 payment to the company for a consulting contract; it also accused him of overstepping into day-to-day university operations reserved for the president under the Board's bylaws. The resolution asked student regent Heather Falmlen to vote against him. No source found reports the investigation's outcome. The same day's Herald covered the vote under "Associated Student Government Opposes Joseph Iracane."</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/226" target="_blank" rel="noopener">SGA Resolution 91-6-F, "Board of Regents Chair Term Limit" &#8599;</a></div></article><article class="ev"><div class="d">1991-10-31</div><div><h3>ASG asks the regents to elect a new leader</h3><p>ASG urged the Board of Regents to elect a new leader in place of chairman Joseph Iracane, two days after the Herald reported the organization's opposition to him. It was a rare direct challenge to the university's governing board.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7783" target="_blank" rel="noopener">Herald 67:19, 31 Oct 1991 &#8599;</a></div></article><article class="ev"><div class="d">1991-11-06<span class="ctx">campus</span></div><div><h3>Regents re-elect Iracane despite ASG's resolution</h3><p>A week after the Associated Student Government asked the Board of Regents not to re-elect Joe Iracane as chair, the board did so anyway. The university's own newsletter reported the result under "Joe Iracane Re-elected to Chair Regents."</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4304" target="_blank" rel="noopener">On Campus 1:16, 6 Nov 1991, "Joe Iracane Re-elected to Chair Regents" &#8599;</a></div></article><article class="ev"><div class="d">1991-12-12</div><div><h3>A mailing asks parents to back the health service</h3><p>The Residence Hall Association and ASG sent a joint mailing asking parents to support the campus health service. It closed out the health-focused fall Falmlen had promised in August.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7795" target="_blank" rel="noopener">Herald 67:29, 12 Dec 1991 &#8599;</a></div></article><article class="ev"><div class="d">1992-01-28</div><div><h3>ASG introduces a bill for a student regent advisory committee</h3><p>The Associated Student Government introduced Bill #92-01-S, authored by Greg Butler, Mistianna Holcomb, Melony Jones and Melissa Maggard and sponsored by the Public Relations committee, proposing a Student Advisory Committee - made up of the class presidents, a representative from each college and the executive council as ex-officio members - to brief the student regent on Board of Regents agenda items and canvass student opinion before each meeting, two days before the Herald reported the plan.</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/158/" target="_blank" rel="noopener">SGA Legislation, Bill #92-01-S, "Development of Advisory Committee for Student Regent" &#8599;</a></div></article><article class="ev"><div class="d">1992-01-30</div><div><h3>ASG plans a committee on student access to the regent</h3><p>The Herald reported the Associated Student Government was planning a committee aimed at securing student access to WKU's regent, amid a statewide debate over how regents were selected.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/8078" target="_blank" rel="noopener">Herald 67:34, 30 Jan 1992, "Associated Student Government Plans Regent Committee" &#8599;</a></div></article><article class="ev"><div class="d">1992-01-30</div><div><h3>Editorial cartoon targets Falmlen</h3><p>The same Herald issue ran an editorial cartoon, "Ventriloquist's Dummy" by Patrick Richardson, with Falmlen as its subject.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/8078" target="_blank" rel="noopener">Herald 67:34, 30 Jan 1992, "Editorial Cartoon Heather Falmlen Ventriloquist's Dummy" &#8599;</a></div></article><article class="ev"><div class="d">1992-04-02</div><div><h3>ASG resolves to support football despite budget cuts</h3><p>The Associated Student Government passed Resolution 92-7-S, declaring its support for the WKU football program in spite of budget cuts. The resolution's own text argued the university had already awarded 67 football scholarships it would be contractually bound to honor even if the program were suspended, calling a suspension that still paid non-playing scholarship athletes an unnecessary expense. This entry corrects the resolution's date: an earlier record in this archive gave 4 February 1992, but the resolution itself is dated introduced 2 April 1992, shortly before the Board of Regents' 1 May vote to keep the program.</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/222" target="_blank" rel="noopener">SGA Legislation, Resolution 92-7-S, "Support of Football Program" &#8599;</a></div></article><article class="ev"><div class="d">1992-04-07</div><div><h3>Associated Students votes to become the Student Government Association</h3><p>The body voted to rename itself on 7 April and students ratified the change in a referendum on 14 April. It took effect that autumn.</p><a class="cite" href="https://www.wku.edu/sga/about/history.php" target="_blank" rel="noopener">WKU SGA history &#8599;</a></div></article><article class="ev"><div class="d">1992-04-07</div><div><h3>The primary is canceled</h3><p>The ASG primary election was canceled, with too few candidates to require one, and a parking bill sat in committee the same week. The general election went ahead the following Tuesday.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7708" target="_blank" rel="noopener">Herald 67:50, 7 Apr 1992 &#8599;</a></div></article><article class="ev"><div class="d">1992-04-16</div><div><h3>Joe Rains wins big as 1,200 turn out</h3><p>Joe Rains won the presidential election by a wide margin, with about 1,200 students casting votes. The same ballot carried the constitutional amendments students had voted on two days earlier, including the name change.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7705" target="_blank" rel="noopener">Herald 67:53, 16 Apr 1992 &#8599;</a></div></article><article class="ev"><div class="d">1992-04-21</div><div><h3>Rains to oversee the change to SGA</h3><p>The Herald reported that incoming president Joe Rains would oversee the transition from the Associated Student Government to the Student Government Association. Student reaction to the spring's parking bill was reported as varied in the same issue.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/7704" target="_blank" rel="noopener">Herald 67:54, 21 Apr 1992 &#8599;</a></div></article><article class="ev"><div class="d">1992-05-01<span class="ctx">campus</span></div><div><h3>Board of Regents votes to keep football</h3><p>The Board of Regents voted to keep the football program, following months of budget pressure that had prompted the ASG's February resolution of support.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/8385" target="_blank" rel="noopener">Herald, 1 May 1992, "Board of Regents Votes to Keep Football" &#8599;</a></div></article><h2 class="sub">Legislation &mdash; 4 documents on file</h2><div class="lrow" data-t="asg support of wku football program in the face of budget cuts resolution"><span class="ltype">resolution</span><span class="lt">ASG Support of WKU Football Program in the Face of Budget Cuts</span><span class="lls"><a href="../legislation/1991-92/resolution_92-7-s.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/222" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="development of advisory committee for student regent bill"><span class="ltype">bill</span><span class="lt">Development of Advisory Committee for Student Regent</span><span class="lls"><a href="../legislation/1991-92/bill_92-01-s.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://digitalcommons.wku.edu/sga/Legislation/Bills/158/" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="modified shuttle fare resolution"><span class="ltype">resolution</span><span class="lt">Modified Shuttle Fare</span><span class="lls"><a href="../legislation/1991-92/resolution_91-2-f.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/183/" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="request that joe iracane not be re-elected board chairman resolution"><span class="ltype">resolution</span><span class="lt">Request that Joe Iracane Not Be Re-elected Board Chairman</span><span class="lls"><a href="../legislation/1991-92/resolution_91-6-f.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/226" target="_blank" rel="noopener">original &#8599;</a></span></div></div>
-</div><div class="pager"><a href="1990-91.html">&larr; previous<b>1990-91</b></a><a class="r" href="1992-93.html">next &rarr;<b>1992-93</b></a></div></div>
-<div class="bigred" id="bigred" role="img" aria-label="8-bit Big Red in a judicial wig, holding the SGA gavel. Click to play."><button class="close" id="brx" aria-label="Dismiss Big Red">&times;</button><div class="say" id="brsay">Order, order!</div><img src="../photos/bigred-8bit.png" alt="" width="170" height="142"><svg class="wig" width="98" height="56" viewBox="0 0 98 56"><rect x="14" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="28" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="49" width="7.4" height="7.4" fill="#F4F2ED"/></svg><svg class="gavel" width="56" height="56" viewBox="0 0 56 56"><rect x="0" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="49" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="49" width="7.4" height="7.4" fill="#8B5A2B"/></svg></div><script>(function(){var br=document.getElementById("bigred");if(!br)return;try{if(localStorage.getItem("bigred")==="hidden"){br.remove();return}}catch(e){}document.getElementById("brx").addEventListener("click",function(e){e.stopPropagation();br.remove();try{localStorage.setItem("bigred","hidden")}catch(e){}});var says=["Order, order!","Go Tops!","Sixty years on the Hill.","Motion carries.","The Spirit Makes the Master."],i=0,m=-1;br.addEventListener("click",function(){br.classList.remove("bounce","spin","bang","talk");void br.offsetWidth;m=(m+1)%3;if(m===0){br.classList.add("bang","talk");document.getElementById("brsay").textContent=says[i++%says.length];}else if(m===1){br.classList.add("bounce")}else{br.classList.add("spin")}clearTimeout(br._t);br._t=setTimeout(function(){br.classList.remove("talk")},1600)});})();</script>
+<div class="wrap"><div class="body">
+
+<section class="leader" id="heather-e-falmlen"><h2>Heather E. Falmlen <span class="r">president, 1991-92</span></h2><dl class="facts"><dt>Office</dt><dd>President</dd><dt>Term recorded here</dt><dd>1991-92</dd><dt>Standing of the record</dt><dd>As recorded on the plaque. Not yet corroborated in the archive.</dd><dt>Name in the archive</dt><dd>Found in the sources below.</dd></dl><div class="editorial"><p>Elected Associated Student Government president in results the Herald reported 11 April 1991 amid election protests and a rival group&#x27;s call to boycott the vote. WKU&#x27;s own &quot;On Campus&quot; newsletter confirmed on 22 May 1991 that she held both the presidency and the student regent seat, consistent with other presidents of this period. Presided over the vote to rename the Associated Students as the Student Government Association: passed 7 April 1992, ratified by referendum 14 April, effective that autumn.</p></div><div class="profile"><p>Falmlen won the Associated Student Government presidency in results the Herald reported on 11 April 1991 under the headline &quot;Heather Falmlen Wins Amid Associated Student Government Election Protests.&quot; A Herald &quot;Meet the Candidates&quot; feature on 2 April had previewed four contenders for the race: Falmlen, Rob Evans, Van Hodge, and Dan Knowles. The same 11 April issue reported a rival group urging students to boycott the vote, an editorial calling the contest&#x27;s &quot;immature antics&quot; a disappointment, and a published complaint that the Herald&#x27;s own election coverage had been biased.</p><p>In office, her administration fought a running battle over the makeup of the Board of Regents. On 29 October 1991 the Associated Student Government passed Resolution 91-6-F asking that Joe Iracane not be re-elected chair of the board; the Herald covered the vote the same day under &quot;Associated Student Government Opposes Joseph Iracane.&quot; The board went ahead and re-elected him a week later, the university&#x27;s own &quot;On Campus&quot; newsletter reported on 6 November. On 30 January 1992 the Herald reported the Associated Student Government was separately planning a committee aimed at student access to the regent, in the same issue that carried an editorial cartoon, &quot;Ventriloquist&#x27;s Dummy,&quot; targeting Falmlen. On 4 February 1992 the body passed Resolution 92-7-S, declaring its support for the WKU football program in spite of budget cuts; the Board of Regents voted that May to keep the program.</p><p>That fall the body passed Resolution 91-2-F, asking for a change to Big Red Shuttle bus fares, and held its regular fall senate elections in October, including a separate freshman senator election on 15 October.</p><p>The signature action of her term was procedural: on 7 April 1992 the Associated Students voted to rename itself the Student Government Association, a change students ratified in a referendum a week later, effective that autumn. WKU&#x27;s own &quot;On Campus&quot; newsletter had confirmed on 22 May 1991, at the start of her term, that Falmlen held both the presidency and the student regent seat - the same dual role held by the presidents before and after her in this period. The archive does not preserve further detail of her regency or of what she did after her term.</p><p>Other legislative business that fall included Resolution 91-7-F, backing the renewal of President Thomas Meredith&#x27;s contract by the Board of Regents; a bill funding a &quot;President for a Day&quot; fundraiser (Bill #91-09-F); a bill funding renovation of the ASG chambers (Bill #91-03-F); and a bill proposing a new organizational slogan (Bill #91-11-F), introduced the same season the body renamed itself from the Associated Students to the Student Government Association.</p></div><p class="lab" style="margin:18px 0 6px">Sources for this account</p><ol class="srclist"><li id="heather-e-falmlen-s1"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7752" rel="noopener">Herald 66:54, 11 Apr 1991, &quot;Heather Falmlen Wins Amid Associated Student Government Election Protests&quot;</a></li><li id="heather-e-falmlen-s2"><a class="ext" href="https://web.archive.org/web/20010924113823/http://www.wku.edu/Dept/Org/Student/SGA/formersgapres.htm" rel="noopener">WKU SGA Presidents 1966-Present (archived 2001)</a></li><li id="heather-e-falmlen-s3"><a class="ext" href="https://www.wku.edu/sga/about/history.php" rel="noopener">WKU SGA history</a></li><li id="heather-e-falmlen-s4"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7756" rel="noopener">Herald 66:51, 2 Apr 1991, &quot;Meet the Candidates&quot;</a></li><li id="heather-e-falmlen-s5"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/183/" rel="noopener">SGA Legislation, Resolution 91-2-F and Bill #92-01-S</a></li><li id="heather-e-falmlen-s6"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4306" rel="noopener">On Campus 1:7, 22 May 1991, &quot;Heather Falmlen is Student Regent, Associated Student Government President&quot;</a></li><li id="heather-e-falmlen-s7"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/226" rel="noopener">SGA Resolution 91-6-F, &quot;Board of Regents Chair Term Limit&quot;</a></li><li id="heather-e-falmlen-s8"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4304" rel="noopener">On Campus 1:16, 6 Nov 1991, &quot;Joe Iracane Re-elected to Chair Regents&quot;</a></li><li id="heather-e-falmlen-s9"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/175" rel="noopener">SGA Legislation, Resolution 91-7-F, &quot;Student Picket to Support President Meredith&quot;</a></li><li id="heather-e-falmlen-s10"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/166" rel="noopener">SGA Legislation, Bill #91-09-F, &quot;President for a Day&quot;</a></li><li id="heather-e-falmlen-s11"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/140" rel="noopener">SGA Legislation, Bill #91-03-F, &quot;ASG Chambers Improvement&quot;</a></li><li id="heather-e-falmlen-s12"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/129" rel="noopener">SGA Legislation, Bill #91-11-F, &quot;Change ASG Slogan&quot;</a></li></ol></section>
+<h2 class="sec">The organization</h2><div class="org"><div><h3>The executive</h3><div class="off"><span class="o">President / Student Regent</span><span><b>Heather E. Falmlen</b><p>Held both offices at once, as was standard for this period.</p><span class="credit"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4306" rel="noopener">On Campus 1:7, 22 May 1991, &quot;Heather Falmlen is Student Regent, Associated Student Government President&quot;</a></span></span></div></div><div><h3>The senate</h3><div class="off"><span class="o">committee</span><span><b>Student Affairs</b><p>Authored Resolution 91-2-F, requesting a one-way Big Red Shuttle fare.</p></span></div><div class="off"><span class="o">committee</span><span><b>Public Relations</b><p>Sponsored Bill #92-01-S, creating the student regent&#x27;s advisory committee.</p></span></div><p class="meta">Archive does not preserve a full senate officer list or seat count for this year.</p></div></div>
+<h2 class="sec">The year, in order<span class="n">25</span></h2><article class="ev" id="e-19910402-1"><div class="when"><time datetime="1991-04-02">2 April 1991</time></div><div><a class="pl" href="#e-19910402-1" aria-label="Link to this entry">#</a><h3>Herald previews four ASG candidates</h3><p>The Herald&#x27;s &quot;Meet the Candidates&quot; feature previewed four contenders in the spring Associated Student Government elections: Heather Falmlen, Rob Evans, Van Hodge, and Dan Knowles. Falmlen went on to win the race.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7756" rel="noopener">Herald 66:51, 2 Apr 1991, &quot;Meet the Candidates&quot;</a></p></div></article><article class="ev" id="e-19910411-1"><div class="when"><time datetime="1991-04-11">11 April 1991</time></div><div><a class="pl" href="#e-19910411-1" aria-label="Link to this entry">#</a><h3>Heather Falmlen wins the ASG presidency amid election protests</h3><p>Falmlen won the Associated Student Government presidential election in results the Herald reported under the headline &quot;Heather Falmlen Wins Amid Associated Student Government Election Protests.&quot; The same issue covered a rival group&#x27;s call to boycott the election, an editorial calling the contest &quot;immature antics,&quot; and a complaint that the Herald&#x27;s own coverage had been biased.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7752" rel="noopener">Herald 66:54, 11 Apr 1991</a></p></div></article><article class="ev" id="e-19910522-1"><div class="when"><time datetime="1991-05-22">22 May 1991</time></div><div><a class="pl" href="#e-19910522-1" aria-label="Link to this entry">#</a><h3>University newsletter confirms Falmlen holds both offices</h3><p>WKU&#x27;s own &quot;On Campus&quot; newsletter reported Heather Falmlen as both Student Regent and Associated Student Government President, a contemporaneous confirmation that the two offices - separately elected two decades earlier - were held by the same person entering her term.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4306" rel="noopener">On Campus 1:7, 22 May 1991, &quot;Heather Falmlen is Student Regent, Associated Student Government President&quot;</a></p></div></article><article class="ev" id="e-19910901-1"><div class="when"><time datetime="1991-09">September 1991</time></div><div><a class="pl" href="#e-19910901-1" aria-label="Link to this entry">#</a><h3>ASG asks for a change in Big Red Shuttle fares</h3><p>The Associated Student Government passed Resolution 91-2-F, sponsored by the Student Affairs committee, requesting a one-way fare option on the Big Red Shuttle for infrequent riders. The resolution&#x27;s text called the existing $10 fee &quot;outrageous and unfair&quot; to students and faculty who did not ride the shuttle daily.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/183/" rel="noopener">SGA Legislation, Resolution 91-2-F, &quot;Modified Shuttle Fare&quot;</a></p></div></article><article class="ev" id="e-19910901-2"><div class="when"><time datetime="1991-09">September 1991</time></div><div><a class="pl" href="#e-19910901-2" aria-label="Link to this entry">#</a><h3>ASG resolves to support Meredith&#x27;s contract renewal</h3><p>The Associated Student Government passed Resolution 91-7-F, backing the renewal of President Thomas Meredith&#x27;s contract by the Board of Regents.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/175" rel="noopener">SGA Legislation, Resolution 91-7-F, &quot;Student Picket to Support President Meredith&quot;</a></p></div></article><article class="ev" id="e-19910901-3"><div class="when"><time datetime="1991-09">September 1991</time></div><div><a class="pl" href="#e-19910901-3" aria-label="Link to this entry">#</a><h3>ASG bill funds a &quot;President for a Day&quot; fundraiser</h3><p>The Associated Student Government introduced Bill #91-09-F, providing for a &quot;President for a Day&quot; fundraiser.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/166" rel="noopener">SGA Legislation, Bill #91-09-F, &quot;President for a Day&quot;</a></p></div></article><article class="ev" id="e-19910901-4"><div class="when"><time datetime="1991-09">September 1991</time></div><div><a class="pl" href="#e-19910901-4" aria-label="Link to this entry">#</a><h3>ASG bill funds renovation of its own chambers</h3><p>The Associated Student Government introduced Bill #91-03-F, providing for the renovation of the ASG chambers.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/140" rel="noopener">SGA Legislation, Bill #91-03-F, &quot;ASG Chambers Improvement&quot;</a></p></div></article><article class="ev" id="e-19910901-5"><div class="when"><time datetime="1991-09">September 1991</time></div><div><a class="pl" href="#e-19910901-5" aria-label="Link to this entry">#</a><h3>ASG bill proposes changing its own slogan</h3><p>The Associated Student Government introduced Bill #91-11-F, proposing to change the organization&#x27;s slogan, in the same fall that it voted to rename itself from the Associated Students to the Student Government Association.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/129" rel="noopener">SGA Legislation, Bill #91-11-F, &quot;Change ASG Slogan&quot;</a></p></div></article><article class="ev" id="e-19910905-1"><div class="when"><time datetime="1991-09-05">5 September 1991</time></div><div><a class="pl" href="#e-19910905-1" aria-label="Link to this entry">#</a><h3>Health tops the agenda; more money for the environment</h3><p>Heather Falmlen opened the year with a student health issue at the top of her agenda, and ASG budgeted more money for environmental efforts. Both stories ran in the first week of the fall semester.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7763" rel="noopener">Herald 67:3, 5 Sep 1991</a></p></div></article><article class="ev" id="e-19910912-1"><div class="when"><time datetime="1991-09-12">12 September 1991</time></div><div><a class="pl" href="#e-19910912-1" aria-label="Link to this entry">#</a><h3>Fighting the city&#x27;s noise ordinance</h3><p>ASG resolved to fight Bowling Green&#x27;s noise ordinance. It was the organization&#x27;s most direct engagement with city government in years.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7760" rel="noopener">Herald 67:5, 12 Sep 1991</a></p></div></article><article class="ev" id="e-19910924-1"><div class="when"><time datetime="1991-09-24">24 September 1991</time></div><div><a class="pl" href="#e-19910924-1" aria-label="Link to this entry">#</a><h3>Officers go to the city&#x27;s meeting</h3><p>ASG officers attended a city meeting to press the noise ordinance fight, and the organization restarted its voter registration drive. A recycling resolution had its first reading the week before.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7774" rel="noopener">Herald 67:8, 24 Sep 1991</a></p></div></article><article class="ev" id="e-19911015-1"><div class="when"><time datetime="1991-10-15">15 October 1991</time></div><div><a class="pl" href="#e-19911015-1" aria-label="Link to this entry">#</a><h3>Fall ASG senate and freshman elections held</h3><p>The Herald covered the Associated Student Government&#x27;s fall elections on 10 October, and a separate freshman senator election on 15 October; the paper&#x27;s abstracts do not preserve the results.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7769/" rel="noopener">Herald 67:13, 10 Oct 1991, &quot;Associated Student Government Elections Tuesday&quot;</a></p></div></article><article class="ev" id="e-19911029-1"><div class="when"><time datetime="1991-10-29">29 October 1991</time></div><div><a class="pl" href="#e-19911029-1" aria-label="Link to this entry">#</a><h3>ASG asks that Iracane not be re-elected regents chair</h3><p>The Associated Student Government passed Resolution 91-6-F, authored by Mark Miller and Eric McWilliams and sponsored by Mistianna Holcomb, asking that Joe Iracane not be re-elected chair of the Board of Regents. The resolution&#x27;s text stated that Iracane, chairman for eight consecutive years, was under investigation by the FBI, the IRS and U.S. attorneys in Indiana and Kentucky over an alleged $6 million payment to Pyramid Mining Co. in return for contracts and a separate alleged $14,500 payment to the company for a consulting contract; it also accused him of overstepping into day-to-day university operations reserved for the president under the Board&#x27;s bylaws. The resolution asked student regent Heather Falmlen to vote against him. No source found reports the investigation&#x27;s outcome. The same day&#x27;s Herald covered the vote under &quot;Associated Student Government Opposes Joseph Iracane.&quot;</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/226" rel="noopener">SGA Resolution 91-6-F, &quot;Board of Regents Chair Term Limit&quot;</a></p></div></article><article class="ev" id="e-19911031-1"><div class="when"><time datetime="1991-10-31">31 October 1991</time></div><div><a class="pl" href="#e-19911031-1" aria-label="Link to this entry">#</a><h3>ASG asks the regents to elect a new leader</h3><p>ASG urged the Board of Regents to elect a new leader in place of chairman Joseph Iracane, two days after the Herald reported the organization&#x27;s opposition to him. It was a rare direct challenge to the university&#x27;s governing board.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7783" rel="noopener">Herald 67:19, 31 Oct 1991</a></p></div></article><article class="ev" id="e-19911106-1"><div class="when"><time datetime="1991-11-06">6 November 1991</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19911106-1" aria-label="Link to this entry">#</a><h3>Regents re-elect Iracane despite ASG&#x27;s resolution</h3><p>A week after the Associated Student Government asked the Board of Regents not to re-elect Joe Iracane as chair, the board did so anyway. The university&#x27;s own newsletter reported the result under &quot;Joe Iracane Re-elected to Chair Regents.&quot;</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4304" rel="noopener">On Campus 1:16, 6 Nov 1991, &quot;Joe Iracane Re-elected to Chair Regents&quot;</a></p></div></article><article class="ev" id="e-19911212-1"><div class="when"><time datetime="1991-12-12">12 December 1991</time></div><div><a class="pl" href="#e-19911212-1" aria-label="Link to this entry">#</a><h3>A mailing asks parents to back the health service</h3><p>The Residence Hall Association and ASG sent a joint mailing asking parents to support the campus health service. It closed out the health-focused fall Falmlen had promised in August.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7795" rel="noopener">Herald 67:29, 12 Dec 1991</a></p></div></article><article class="ev" id="e-19920128-1"><div class="when"><time datetime="1992-01-28">28 January 1992</time></div><div><a class="pl" href="#e-19920128-1" aria-label="Link to this entry">#</a><h3>ASG introduces a bill for a student regent advisory committee</h3><p>The Associated Student Government introduced Bill #92-01-S, authored by Greg Butler, Mistianna Holcomb, Melony Jones and Melissa Maggard and sponsored by the Public Relations committee, proposing a Student Advisory Committee - made up of the class presidents, a representative from each college and the executive council as ex-officio members - to brief the student regent on Board of Regents agenda items and canvass student opinion before each meeting, two days before the Herald reported the plan.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/158/" rel="noopener">SGA Legislation, Bill #92-01-S, &quot;Development of Advisory Committee for Student Regent&quot;</a></p></div></article><article class="ev" id="e-19920130-1"><div class="when"><time datetime="1992-01-30">30 January 1992</time></div><div><a class="pl" href="#e-19920130-1" aria-label="Link to this entry">#</a><h3>ASG plans a committee on student access to the regent</h3><p>The Herald reported the Associated Student Government was planning a committee aimed at securing student access to WKU&#x27;s regent, amid a statewide debate over how regents were selected.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/8078" rel="noopener">Herald 67:34, 30 Jan 1992, &quot;Associated Student Government Plans Regent Committee&quot;</a></p></div></article><article class="ev" id="e-19920130-2"><div class="when"><time datetime="1992-01-30">30 January 1992</time></div><div><a class="pl" href="#e-19920130-2" aria-label="Link to this entry">#</a><h3>Editorial cartoon targets Falmlen</h3><p>The same Herald issue ran an editorial cartoon, &quot;Ventriloquist&#x27;s Dummy&quot; by Patrick Richardson, with Falmlen as its subject.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/8078" rel="noopener">Herald 67:34, 30 Jan 1992, &quot;Editorial Cartoon Heather Falmlen Ventriloquist&#x27;s Dummy&quot;</a></p></div></article><article class="ev" id="e-19920402-1"><div class="when"><time datetime="1992-04-02">2 April 1992</time></div><div><a class="pl" href="#e-19920402-1" aria-label="Link to this entry">#</a><h3>ASG resolves to support football despite budget cuts</h3><p>The Associated Student Government passed Resolution 92-7-S, declaring its support for the WKU football program in spite of budget cuts. The resolution&#x27;s own text argued the university had already awarded 67 football scholarships it would be contractually bound to honor even if the program were suspended, calling a suspension that still paid non-playing scholarship athletes an unnecessary expense. This entry corrects the resolution&#x27;s date: an earlier record in this archive gave 4 February 1992, but the resolution itself is dated introduced 2 April 1992, shortly before the Board of Regents&#x27; 1 May vote to keep the program.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/222" rel="noopener">SGA Legislation, Resolution 92-7-S, &quot;Support of Football Program&quot;</a></p></div></article><article class="ev" id="e-19920407-1"><div class="when"><time datetime="1992-04-07">7 April 1992</time></div><div><a class="pl" href="#e-19920407-1" aria-label="Link to this entry">#</a><h3>Associated Students votes to become the Student Government Association</h3><p>The body voted to rename itself on 7 April and students ratified the change in a referendum on 14 April. It took effect that autumn.</p><p class="srcline"><a class="ext" href="https://www.wku.edu/sga/about/history.php" rel="noopener">WKU SGA history</a></p></div></article><article class="ev" id="e-19920407-2"><div class="when"><time datetime="1992-04-07">7 April 1992</time></div><div><a class="pl" href="#e-19920407-2" aria-label="Link to this entry">#</a><h3>The primary is canceled</h3><p>The ASG primary election was canceled, with too few candidates to require one, and a parking bill sat in committee the same week. The general election went ahead the following Tuesday.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7708" rel="noopener">Herald 67:50, 7 Apr 1992</a></p></div></article><article class="ev" id="e-19920416-1"><div class="when"><time datetime="1992-04-16">16 April 1992</time></div><div><a class="pl" href="#e-19920416-1" aria-label="Link to this entry">#</a><h3>Joe Rains wins big as 1,200 turn out</h3><p>Joe Rains won the presidential election by a wide margin, with about 1,200 students casting votes. The same ballot carried the constitutional amendments students had voted on two days earlier, including the name change.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7705" rel="noopener">Herald 67:53, 16 Apr 1992</a></p></div></article><article class="ev" id="e-19920421-1"><div class="when"><time datetime="1992-04-21">21 April 1992</time></div><div><a class="pl" href="#e-19920421-1" aria-label="Link to this entry">#</a><h3>Rains to oversee the change to SGA</h3><p>The Herald reported that incoming president Joe Rains would oversee the transition from the Associated Student Government to the Student Government Association. Student reaction to the spring&#x27;s parking bill was reported as varied in the same issue.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7704" rel="noopener">Herald 67:54, 21 Apr 1992</a></p></div></article><article class="ev" id="e-19920501-1"><div class="when"><time datetime="1992-05">May 1992</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19920501-1" aria-label="Link to this entry">#</a><h3>Board of Regents votes to keep football</h3><p>The Board of Regents voted to keep the football program, following months of budget pressure that had prompted the ASG&#x27;s February resolution of support.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/8385" rel="noopener">Herald, 1 May 1992, &quot;Board of Regents Votes to Keep Football&quot;</a></p></div></article>
+
+
+<h2 class="sec">Legislation<span class="n">4</span></h2><p class="secnote">Bills and resolutions from this session, held as files on this site.</p><div class="lrow" data-t="asg support of wku football program in the face of budget cuts resolution"><span class="lt">resolution</span><span>ASG Support of WKU Football Program in the Face of Budget Cuts</span><span class="ll"><a href="../legislation/1991-92/resolution_92-7-s.pdf">Read</a><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/222" rel="noopener">Original</a></span></div><div class="lrow" data-t="development of advisory committee for student regent bill"><span class="lt">bill</span><span>Development of Advisory Committee for Student Regent</span><span class="ll"><a href="../legislation/1991-92/bill_92-01-s.pdf">Read</a><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/158/" rel="noopener">Original</a></span></div><div class="lrow" data-t="modified shuttle fare resolution"><span class="lt">resolution</span><span>Modified Shuttle Fare</span><span class="ll"><a href="../legislation/1991-92/resolution_91-2-f.pdf">Read</a><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/183/" rel="noopener">Original</a></span></div><div class="lrow" data-t="request that joe iracane not be re-elected board chairman resolution"><span class="lt">resolution</span><span>Request that Joe Iracane Not Be Re-elected Board Chairman</span><span class="ll"><a href="../legislation/1991-92/resolution_91-6-f.pdf">Read</a><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/226" rel="noopener">Original</a></span></div>
+<h2 class="sec">Sources for this year<span class="n">28</span></h2><p class="secnote">Every source cited above, once, with the number of entries that rest on it.</p><ol class="srclist" style="font-size:.92rem;color:var(--ink2)"><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7752" rel="noopener">Herald 66:54, 11 Apr 1991, &quot;Heather Falmlen Wins Amid Associated Student Government Election Protests&quot;</a></li><li><a class="ext" href="https://web.archive.org/web/20010924113823/http://www.wku.edu/Dept/Org/Student/SGA/formersgapres.htm" rel="noopener">WKU SGA Presidents 1966-Present (archived 2001)</a></li><li><a class="ext" href="https://www.wku.edu/sga/about/history.php" rel="noopener">WKU SGA history</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7756" rel="noopener">Herald 66:51, 2 Apr 1991, &quot;Meet the Candidates&quot;</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/183/" rel="noopener">SGA Legislation, Resolution 91-2-F and Bill #92-01-S</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4306" rel="noopener">On Campus 1:7, 22 May 1991, &quot;Heather Falmlen is Student Regent, Associated Student Government President&quot;</a> <span class="credit">3 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/226" rel="noopener">SGA Resolution 91-6-F, &quot;Board of Regents Chair Term Limit&quot;</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4304" rel="noopener">On Campus 1:16, 6 Nov 1991, &quot;Joe Iracane Re-elected to Chair Regents&quot;</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/175" rel="noopener">SGA Legislation, Resolution 91-7-F, &quot;Student Picket to Support President Meredith&quot;</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/166" rel="noopener">SGA Legislation, Bill #91-09-F, &quot;President for a Day&quot;</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/140" rel="noopener">SGA Legislation, Bill #91-03-F, &quot;ASG Chambers Improvement&quot;</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/129" rel="noopener">SGA Legislation, Bill #91-11-F, &quot;Change ASG Slogan&quot;</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7752" rel="noopener">Herald 66:54, 11 Apr 1991</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/8078" rel="noopener">Herald 67:34, 30 Jan 1992, &quot;Associated Student Government Plans Regent Committee&quot;</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/8078" rel="noopener">Herald 67:34, 30 Jan 1992, &quot;Editorial Cartoon Heather Falmlen Ventriloquist&#x27;s Dummy&quot;</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/222" rel="noopener">SGA Legislation, Resolution 92-7-S, &quot;Support of Football Program&quot;</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/8385" rel="noopener">Herald, 1 May 1992, &quot;Board of Regents Votes to Keep Football&quot;</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Resolutions/183/" rel="noopener">SGA Legislation, Resolution 91-2-F, &quot;Modified Shuttle Fare&quot;</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7769/" rel="noopener">Herald 67:13, 10 Oct 1991, &quot;Associated Student Government Elections Tuesday&quot;</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Legislation/Bills/158/" rel="noopener">SGA Legislation, Bill #92-01-S, &quot;Development of Advisory Committee for Student Regent&quot;</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7763" rel="noopener">Herald 67:3, 5 Sep 1991</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7760" rel="noopener">Herald 67:5, 12 Sep 1991</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7774" rel="noopener">Herald 67:8, 24 Sep 1991</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7783" rel="noopener">Herald 67:19, 31 Oct 1991</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7795" rel="noopener">Herald 67:29, 12 Dec 1991</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7708" rel="noopener">Herald 67:50, 7 Apr 1992</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7705" rel="noopener">Herald 67:53, 16 Apr 1992</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/7704" rel="noopener">Herald 67:54, 21 Apr 1992</a></li></ol>
+<section class="citebox">
+ <p class="lab">Preferred citation</p>
+ <p class="citestr" id="cite">&#8220;1991-92,&#8221; <cite>SGA 60: Student Government at Western Kentucky University, 1966&#8211;2026</cite>, revised 4 August 2026, <span id="citeurl">y/1991-92.html</span></p>
+ <button class="copy" id="copy" type="button">Copy the citation</button>
+ <p class="revised">This record was last rebuilt on 4 August 2026. Where a name here differs from
+ the plaque in the SGA Chambers, the difference is explained above and listed on the
+ <a href="../corrections.html">corrections page</a>.</p>
+</section>
+<div class="pager"><a href="1990-91.html">Previous year<b>1990-91</b></a><a class="r" href="1992-93.html">Next year<b>1992-93</b></a></div>
+</div></div>
+<script>
+(function(){
+ var u=document.getElementById('citeurl');if(u)u.textContent=location.href.split('#')[0];
+ var b=document.getElementById('copy'),c=document.getElementById('cite');
+ if(b&&c&&navigator.clipboard){b.addEventListener('click',function(){
+  navigator.clipboard.writeText(c.textContent.replace(/\s+/g,' ').trim()).then(function(){
+   b.textContent='Copied';setTimeout(function(){b.textContent='Copy the citation'},1800);});});}
+ else if(b){b.style.display='none'}
+})();
+</script>
+</main>
+<footer class="foot"><div class="wrap"><div class="cols">
+<div><h2>What this is</h2>
+<p>A year-by-year record of student government at Western Kentucky University, from the
+ratification of the Associated Students constitution in April 1966 to the present. Every
+entry names the source it came from.</p></div>
+<div><h2>Corrections</h2>
+<p>The names here start with the plaque in the SGA Chambers, and the plaque is known to be
+wrong in places. Where the archive disagrees with it, this site follows the archive and
+records the change on the <a href="../corrections.html">corrections page</a>. If you
+served, or you know that a year here is wrong, the project wants to hear from you through
+the Student Government Association office.</p></div>
+<div><h2>Reuse</h2><p>Text on this site is the work of the project. Photographs, documents and legislation are reproduced from Western Kentucky University's own open archives and from the <cite>College Heights Herald</cite> and the <cite>Talisman</cite>; each item names the collection, issue and page it came from and links to the original.</p></div>
+</div>
+<p class="fine">Built 4 August 2026. The whole record is readable as data:
+<a href="../years.json">years.json</a>. Method and scope are set out
+<a href="../about.html">on the about page</a>.</p>
+</div></footer>
+
 </body></html>
