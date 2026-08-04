@@ -5156,10 +5156,10 @@
      "plaque_term": "1996-97",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
+     "note": "Confirmed by Herald 71:54 (18 Apr 1996, election coverage headlined \"It's Kristen Miller's Time\") and Herald 72:46 (27 Mar 1997, term-end reflection piece), both naming her SGA president in the plaque year.",
      "sources": [
       {
        "label": "Herald 72:4, 29 Aug 1996",
@@ -5332,10 +5332,10 @@
      "plaque_term": "1997-98",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Outgoing letters from this period cover the Dogwood Drive crosswalk and student seating at athletic events.",
+     "note": "Outgoing letters from this period cover the Dogwood Drive crosswalk and student seating at athletic events. Confirmed by Herald 72:54 (24 Apr 1997, \"Keith Coffman Takes Charge\") and the SGA's own 2001 presidents list naming him the 31st president, 1997-98.",
      "sources": [
       {
        "label": "WKU SGA legislation archive, 1997 (archived 2003)",
@@ -5469,6 +5469,15 @@
      "campus": true
     },
     {
+     "date": "1998-04-07",
+     "title": "Coffman gets high marks as candidates line up",
+     "body": "The Herald ran \"Keith Coffman Served Students Well\" alongside a People Poll asking students what they thought of his job performance, in the same issue that reported candidates preparing for the spring election.",
+     "src": {
+      "label": "Herald 73:47, 7 Apr 1998",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7977"
+     }
+    },
+    {
      "date": "1998-04-28",
      "title": "A $15,000 electronic sign and a campaign for scholarships",
      "body": "In election week the Herald polled students on how they would spend $15,000 of SGA's money, ran a column arguing the money for a big electronic message sign could be better used, and printed dueling letters on whether the association served students. Its campaign coverage reported that candidate Stephanie Cosby wanted more scholarships.",
@@ -5488,7 +5497,31 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Keith Coffman",
+      "src": {
+       "label": "Herald 72:54, 24 Apr 1997, \"Keith Coffman Takes Charge\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3012"
+      }
+     },
+     {
+      "office": "Secretary",
+      "name": "Jamie Fite",
+      "note": "Signed outgoing SGA correspondence to the administration throughout the year, on athletic seating, housing stipends and stalled legislation.",
+      "src": {
+       "label": "TopSCHOLAR - SGA Documents/Reports/14",
+       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/14"
+      }
+     }
+    ],
+    "senate": {
+     "note": "The archive preserves at least 24 numbered bills and resolutions from the fall 1997 session alone and a further spring 1998 session, but no full officer list or seat count survives beyond the president and secretary."
+    }
+   }
   },
   {
    "id": "1998-99",
