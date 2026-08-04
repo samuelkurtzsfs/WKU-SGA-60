@@ -8396,6 +8396,61 @@
       "label": "Herald, 16 Apr 2013",
       "url": "https://wkuherald.com/44216/news/sga-decides-not-to-contest-baileys-decision-in-emergency-meeting/"
      }
+    },
+    {
+     "date": "2012-09-25",
+     "title": "Fall senate seats filled after two resignations",
+     "body": "Two senators resigned over time commitments and student Shea Wyatt was named to fill in. New freshman senators Barrett Greenwell, Taylor Ruby, Cole McDowell and Paige Settles were sworn in along with Gatton Academy senator Linda Cruz and graduate senators Mark Reeves and Katie Martin.",
+     "src": {
+      "label": "Herald, 27 Sep 2012",
+      "url": "https://wkuherald.com/46320/news/sga-welcomes-new-senators/"
+     }
+    },
+    {
+     "date": "2012-11-14",
+     "title": "Senate reviewed its budget and heard a retention pitch",
+     "body": "Speaker of the Senate Christopher Costa opened the floor to Joelle Carter, assistant vice president for Retention and Student Services, who asked senators for ideas on keeping students enrolled to graduation, and SGA's current budget balance was distributed to members.",
+     "src": {
+      "label": "Herald, 14 Nov 2012",
+      "url": "https://wkuherald.com/45465/news/sga-looks-at-budget-retention-efforts/"
+     }
+    },
+    {
+     "date": "2013-02-20",
+     "title": "Senate tabled a plus-minus grading resolution",
+     "body": "Senator Hannah Garland's resolution to adopt plus and minus grades for high and low letter grades was tabled after public relations chair Mac Mullins argued for a more formal proposal and more student input first; a similar plan had drawn SGA resistance when the provost proposed it in 2007.",
+     "src": {
+      "label": "Herald, 21 Feb 2013",
+      "url": "https://wkuherald.com/44945/news/sga-tables-plus-minus-grading-system-resolution-2/"
+     }
+    },
+    {
+     "date": "2013-02-26",
+     "title": "Senate amended the constitution, adding regional-campus seats",
+     "body": "After two to three years of executive discussion, the senate passed most of a package of constitutional amendments, replacing class-year senate seats with college-based representation and guaranteeing seats for regional campuses such as Glasgow and Owensboro. A bylaw that would have made SGA members permanently ineligible for SGA-sponsored scholarships was stripped out and did not pass.",
+     "src": {
+      "label": "Herald, 1 Mar 2013",
+      "url": "https://wkuherald.com/44618/news/sga-passes-resolution-to-amend-its-constitution/"
+     }
+    },
+    {
+     "date": "2013-04-16",
+     "title": "Costa stepped down as speaker; Settles elected to succeed him",
+     "body": "Christopher Costa did not seek another term as speaker of the senate, and senators elected Paige Settles to replace him. The same meeting confirmed presidential appointments Roy Ratliff as senator-at-large and Jackie Stewart as associate justice, with Chief of Staff Travis Taylor and public relations chair Mac Mullins giving reports.",
+     "src": {
+      "label": "Herald, 17 Apr 2013",
+      "url": "https://wkuherald.com/44058/news/sga-elects-a-new-speaker-of-the-senate/"
+     }
+    },
+    {
+     "date": "2013-04-25",
+     "title": "Senate opposed automatic athletic-fee increases ahead of C-USA move",
+     "body": "The senate passed a resolution against the annual automatic increase in the student athletic fee, arguing the revenue-sharing WKU would gain on joining Conference USA that July would outweigh the roughly $40,000 the university lost annually in the Sun Belt. Executive vice president-elect Mark Reeves, who introduced it, said the resolution set a precedent against automatic fee increases generally.",
+     "campus": true,
+     "src": {
+      "label": "Herald, 26 Apr 2013",
+      "url": "https://wkuherald.com/44093/news/sga-passes-resolution-against-annual-increase-of-student-athletic-fee/"
+     }
     }
    ],
    "status": "researched",
@@ -8411,6 +8466,15 @@
       }
      },
      {
+      "office": "Executive Vice President",
+      "name": "Keyana Boka",
+      "note": "Elected uncontested alongside Dodds in March 2012; went on to be elected 2013-14 president, spelled \"Keyanna\" in that year's coverage. Spelling unverified between the two forms.",
+      "src": {
+       "label": "Herald, 30 Mar 2012",
+       "url": "https://wkuherald.com/48077/news/dodds-elected-sga-president/"
+      }
+     },
+     {
       "office": "Administrative Vice President",
       "name": "Cain Alvey",
       "note": "Ran unsuccessfully for president in the April 2013 election as outgoing administrative vice president.",
@@ -8420,17 +8484,43 @@
       }
      },
      {
-      "office": "Executive Vice President",
-      "name": "Keyana Boka",
-      "note": "Elected uncontested alongside Dodds in March 2012; went on to be elected 2013-14 president, spelled \"Keyanna\" in that year's coverage. Spelling unverified between the two forms.",
+      "office": "Chief of Staff",
+      "name": "Travis Taylor",
       "src": {
-       "label": "Herald, 30 Mar 2012",
-       "url": "https://wkuherald.com/48077/news/dodds-elected-sga-president/"
+       "label": "Herald, 17 Apr 2013",
+       "url": "https://wkuherald.com/44058/news/sga-elects-a-new-speaker-of-the-senate/"
       }
      }
     ],
     "senate": {
-     "note": "Nicki Seay chaired the Legislative Research Committee, which drafted the teaching assistant evaluation bill Dodds had campaigned on."
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Christopher Costa",
+       "note": "Did not seek another term; Paige Settles was elected to succeed him in April 2013 for 2013-14.",
+       "src": {
+        "label": "Herald, 14 Nov 2012",
+        "url": "https://wkuherald.com/45465/news/sga-looks-at-budget-retention-efforts/"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Legislative Research",
+       "chair": "Nicki Seay",
+       "note": "Wrote the teaching assistant evaluation bill Dodds campaigned on."
+      },
+      {
+       "name": "Public Relations",
+       "chair": "Mac Mullins"
+      },
+      {
+       "name": "Campus Improvements",
+       "chair": "Mallory Chaney",
+       "note": "Postponed the annual campus safety walk to April 2013."
+      }
+     ],
+     "note": "Constitutional amendments passed 26 Feb 2013 replaced class-year senate seats with college-based representation and added guaranteed seats for the Glasgow and Owensboro regional campuses."
     }
    }
   },
@@ -9437,6 +9527,52 @@
       "label": "Herald, 29 Jan 2018",
       "url": "https://wkuherald.com/26444/news/judicial-council-holds-emergency-meeting-to-discuss-election-discrepancies/"
      }
+    },
+    {
+     "date": "2017-08-17",
+     "title": "Dahmer joined national solidarity letter after Charlottesville",
+     "body": "President Andi Dahmer was one of more than 120 college student body presidents nationwide who signed an open letter backing the University of Virginia after the violent Charlottesville protests, and said developing campus-wide \"cultural competency training\" was a goal for the semester.",
+     "campus": true,
+     "src": {
+      "label": "Herald, 17 Aug 2017",
+      "url": "https://wkuherald.com/28223/news/sga-president-signals-support-for-uva-following-charlottesville-protests/"
+     }
+    },
+    {
+     "date": "2017-09-26",
+     "title": "Senate passed a required sexual assault education resolution, 29-1",
+     "body": "Resolution 1-17-F, co-authored by public relations chair William Hurst, S.A.V.E.S. chair Ashlyn Jones and three senators, supported adding a one-credit-hour sexual assault education course to freshman colonnade requirements, arguing existing options like HAVEN and Green Dot carried no penalty for skipping them. The senate also funded a \"No-Shave November\" beard contest and fixed the timing of constitutional-amendment elections in the bylaws.",
+     "src": {
+      "label": "Herald, 28 Sep 2017",
+      "url": "https://wkuherald.com/27737/news/sga-passes-resolution-for-required-sexual-assault-course/"
+     }
+    },
+    {
+     "date": "2018-02-13",
+     "title": "Senate backed LGBTQ health curriculum, chair swap on Diversity committee",
+     "body": "The senate unanimously passed a resolution supporting integrated LGBTQ health curriculum in WKU's medical education programs, co-authored by diversity and inclusion chair Mark Clark, chief of staff Conner Hounshell and administrative vice president Kara Lowry. Clark was approved as the committee's new chair after Corey Newsome stepped down over scheduling conflicts.",
+     "src": {
+      "label": "Herald, 14 Feb 2018",
+      "url": "https://wkuherald.com/26075/news/sga-approves-lgbtq-healthcare-resolution/"
+     }
+    },
+    {
+     "date": "2018-04-03",
+     "title": "Dahmer announced she would not seek reelection",
+     "body": "Citing tension in the senate that she called \"almost toxic in nature\" and that she attributed to partisan ideology in a body meant to be nonpartisan, Dahmer said in a Facebook post she would not run again and endorsed Conner Hounshell for president alongside Savannah Molyneaux and Kara Lowry, seeking reelection to their executive vice president and administrative vice president seats.",
+     "src": {
+      "label": "Herald, 4 Apr 2018",
+      "url": "https://wkuherald.com/24409/news/sga-president-andi-dahmer-is-not-running-for-reelection/"
+     }
+    },
+    {
+     "date": "2018-05-01",
+     "title": "Caboni announced Title IX review after Dahmer harassment report",
+     "body": "University president Timothy Caboni said he would convene a faculty-staff-student committee, co-chaired by sociology professor Lauren McClain and counseling official Karl Laves, to review WKU's Title IX, Equal Employment Opportunity and Office of Student Conduct processes following the Herald's report on the harassment Dahmer said she experienced. President-elect Stephen Mayer called Dahmer \"a super strong woman\" and said he did not stand for harassment or sexual assault.",
+     "src": {
+      "label": "Herald, 1 May 2018",
+      "url": "https://wkuherald.com/24171/news/caboni-sga-president-respond-to-harassment/"
+     }
     }
    ],
    "status": "researched",
@@ -9536,7 +9672,8 @@
       },
       {
        "name": "Diversity and Inclusion (MyCampusToo)",
-       "chair": "Divya Gangavelli"
+       "chair": "Divya Gangavelli",
+       "note": "Chaired by Divya Gangavelli as of the September 2017 minutes; Corey Newsome later held the chair before stepping down over scheduling conflicts, and Mark Clark was approved to replace him in February 2018."
       },
       {
        "name": "Sustainability",
@@ -9725,28 +9862,138 @@
    "status": "researched",
    "organization": {
     "executive": [
-      {"office": "President", "name": "Stephen Mayer", "note": "Also served as student regent under the merged offices.", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
-      {"office": "Executive Vice President", "name": "Garrett Edmonds", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
-      {"office": "Administrative Vice President", "name": "Harper Anderson", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
-      {"office": "Chief of Staff", "name": "Will Harris", "note": "Elected student body president for 2019-20 the following spring.", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
-      {"office": "Director of Public Relations", "name": "Noah Moore", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
-      {"office": "Director of Information Technology", "name": "Paul Brosky", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
-      {"office": "Director of Academic and Student Affairs", "name": "Aubrey Kelly", "note": "Third nominee for the seat; confirmed 24-3-4 on Sep. 25, 2018 after Ashley Cox withdrew and Anna McAvoy's confirmation failed 6-9-1.", "src": {"label": "SGA Senate minutes, 25 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"}}
+     {
+      "office": "President",
+      "name": "Stephen Mayer",
+      "note": "Also served as student regent under the merged offices.",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Garrett Edmonds",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Harper Anderson",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Will Harris",
+      "note": "Elected student body president for 2019-20 the following spring.",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Director of Public Relations",
+      "name": "Noah Moore",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Director of Information Technology",
+      "name": "Paul Brosky",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Director of Academic and Student Affairs",
+      "name": "Aubrey Kelly",
+      "note": "Third nominee for the seat; confirmed 24-3-4 on Sep. 25, 2018 after Ashley Cox withdrew and Anna McAvoy's confirmation failed 6-9-1.",
+      "src": {
+       "label": "SGA Senate minutes, 25 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"
+      }
+     }
     ],
     "senate": {
-      "officers": [
-        {"office": "Speaker of the Senate", "name": "Asha McWilliams", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
-        {"office": "Secretary of the Senate", "name": "Andrew Merritt", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}}
-      ],
-      "committees": [
-        {"name": "Campus Improvements", "chair": "Matt Barr", "src": {"label": "SGA Senate minutes, 25 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"}},
-        {"name": "Public Relations", "chair": "Brigid Stakelum", "note": "Rendered \"Bridget Stakelum\" in the Sept. 25, 2018 minutes and \"Brigid Stakelum\" in the Oct. 23 and Nov. 13 minutes; spelling unverified.", "src": {"label": "SGA Senate minutes, 23 Oct 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"}},
-        {"name": "Sustainability", "chair": "Jayden Thomas", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
-        {"name": "Legislative Research", "chair": "Trevor Huffman", "src": {"label": "SGA Senate minutes, 23 Oct 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"}},
-        {"name": "Diversity and Inclusion", "chair": "Mark Clark", "src": {"label": "SGA Senate minutes, 23 Oct 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"}},
-        {"name": "Committee of Academic and Student Affairs (CASA)", "chair": "Amanda Harder", "note": "A Senate committee distinct from the executive Director of Academic and Student Affairs.", "src": {"label": "SGA Senate minutes, 13 Nov 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-13-nov.docx"}}
-      ],
-      "note": "This was the 17th Senate, called to order each week by Speaker Asha McWilliams. Randall P. Bogard served as SGA's faculty advisor. Minutes for this term were posted by WKU as Word documents rather than PDFs."
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Asha McWilliams",
+       "src": {
+        "label": "SGA Senate minutes, 4 Sep 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+       }
+      },
+      {
+       "office": "Secretary of the Senate",
+       "name": "Andrew Merritt",
+       "src": {
+        "label": "SGA Senate minutes, 4 Sep 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Campus Improvements",
+       "chair": "Matt Barr",
+       "src": {
+        "label": "SGA Senate minutes, 25 Sep 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"
+       }
+      },
+      {
+       "name": "Public Relations",
+       "chair": "Brigid Stakelum",
+       "note": "Rendered \"Bridget Stakelum\" in the Sept. 25, 2018 minutes and \"Brigid Stakelum\" in the Oct. 23 and Nov. 13 minutes; spelling unverified.",
+       "src": {
+        "label": "SGA Senate minutes, 23 Oct 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"
+       }
+      },
+      {
+       "name": "Sustainability",
+       "chair": "Jayden Thomas",
+       "src": {
+        "label": "SGA Senate minutes, 4 Sep 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+       }
+      },
+      {
+       "name": "Legislative Research",
+       "chair": "Trevor Huffman",
+       "src": {
+        "label": "SGA Senate minutes, 23 Oct 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"
+       }
+      },
+      {
+       "name": "Diversity and Inclusion",
+       "chair": "Mark Clark",
+       "src": {
+        "label": "SGA Senate minutes, 23 Oct 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"
+       }
+      },
+      {
+       "name": "Committee of Academic and Student Affairs (CASA)",
+       "chair": "Amanda Harder",
+       "note": "A Senate committee distinct from the executive Director of Academic and Student Affairs.",
+       "src": {
+        "label": "SGA Senate minutes, 13 Nov 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-13-nov.docx"
+       }
+      }
+     ],
+     "note": "This was the 17th Senate, called to order each week by Speaker Asha McWilliams. Randall P. Bogard served as SGA's faculty advisor. Minutes for this term were posted by WKU as Word documents rather than PDFs."
     }
    }
   },
