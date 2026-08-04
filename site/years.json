@@ -432,7 +432,7 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Single-year plate. Sits between Menser and Straeffer, whose election the Herald reported on 9 May 1968 - so Morgan likely finished a partial term or held the seat between elections. The only Reed Morgan found in the archive is a different, earlier role: chair of the organizing committee that received President Kelly Thompson's approval letter for the Associated Students constitution, 1 April 1966 - two years before this plaque entry. No Herald or WKU Timeline coverage connects a Reed Morgan to a 1968-69 SGA office. Left unresolved rather than moved, since the 1966 role (committee chair, pre-election) is not the same office the plaque implies. Re-checked 4 Aug 2026: fresh TopSCHOLAR searches (name plus SGA/regent/student-government terms) turned up only the same 1963-67 WKU Forensics team roster (M. Reed Morgan, debater) and the 1966 constitution-committee material already cited. Nothing new for 1968-69.",
+     "note": "Single-year plate. Sits between Menser and Straeffer, whose election the Herald reported on 9 May 1968 - so Morgan likely finished a partial term or held the seat between elections. The only Reed Morgan found in the archive is a different, earlier role: chair of the organizing committee that received President Kelly Thompson's approval letter for the Associated Students constitution, 1 April 1966 - two years before this plaque entry. No Herald or WKU Timeline coverage connects a Reed Morgan to a 1968-69 SGA office. Left unresolved rather than moved, since the 1966 role (committee chair, pre-election) is not the same office the plaque implies. Re-checked 4 Aug 2026: fresh TopSCHOLAR searches (name plus SGA/regent/student-government terms) turned up only the same 1963-67 WKU Forensics team roster (M. Reed Morgan, debater) and the 1966 constitution-committee material already cited. Nothing new for 1968-69. The portrait on this page was published in the Herald of 7 April 1966, when Morgan was a graduating senior chairing the committee that drafted the constitution; it predates the plaque's 1968 placement by two years, and no source describes him as president.",
      "sources": [
       {
        "label": "UA3/3/1, Letter to Organizational Committee for a Western Student Organization, 1 Apr 1966",
@@ -500,11 +500,11 @@
      "name": "Paul Gerard, III",
      "plaque_term": "1968-70",
      "role": "regent",
-     "year_confidence": "likely",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Two-year plate reading 1968-70, immediately after William Menser took the first student regent seat in April 1968. Almost certainly the second student regent. Early student regents were non-voting 'associate regents', which may explain the longer term. Not yet confirmed as regent. A Paul Gerard did appear on the same 2 May 1968 ballot that elected Straeffer, winning the Junior Class presidency 461 votes to Mike Collins' 277 - circumstantially consistent (a junior in spring 1968 would be positioned for a campus-wide office the next year) but not proof of identity or of the regent seat specifically. Two people can share a name; this is flagged, not merged.",
+     "note": "Two-year plate reading 1968-70, immediately after William Menser took the first student regent seat in April 1968. Almost certainly the second student regent. Early student regents were non-voting 'associate regents', which may explain the longer term. Not yet confirmed as regent. A Paul Gerard did appear on the same 2 May 1968 ballot that elected Straeffer, winning the Junior Class presidency 461 votes to Mike Collins' 277 - circumstantially consistent (a junior in spring 1968 would be positioned for a campus-wide office the next year) but not proof of identity or of the regent seat specifically. Two people can share a name; this is flagged, not merged. Resolved: the 1969 Talisman captions him \"Paul Gerard, the Student Regent\" and the Herald of 27 February 1969 explains the mechanism - Kentucky's 1968 law required a student regent at every state campus, and because Associated Students president Bill Straeffer was an out-of-state student, the Congress of Associated Students elected Gerard, a Bowling Green junior and junior class president, to the seat instead. He sat as a non-voting member. Contemporary sources print his name without the suffix the plaque carries.",
      "sources": [
       {
        "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
@@ -519,6 +519,14 @@
        "label": "Herald 48:19, 27 Feb 1969",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2100/",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3101&context=dlsc_ua_records"
+      },
+      {
+       "label": "1969 Talisman pt. 1, p. 52",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
+      },
+      {
+       "label": "Herald 48:19, 27 Feb 1969",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2100"
       }
      ],
      "profile": [
@@ -722,11 +730,11 @@
      "name": "Paul Gerard, III",
      "plaque_term": "1968-70",
      "role": "regent",
-     "year_confidence": "likely",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Second year of the two-year 1968-70 plate; see 1968-69.",
+     "note": "Second year of the two-year 1968-70 plate; see 1968-69. Resolved: the 1969 Talisman captions him \"Paul Gerard, the Student Regent\" and the Herald of 27 February 1969 explains the mechanism - Kentucky's 1968 law required a student regent at every state campus, and because Associated Students president Bill Straeffer was an out-of-state student, the Congress of Associated Students elected Gerard, a Bowling Green junior and junior class president, to the seat instead. He sat as a non-voting member. Contemporary sources print his name without the suffix the plaque carries.",
      "sources": [
       {
        "label": "Herald 48:19, 27 Feb 1969",
@@ -737,6 +745,14 @@
        "label": "Herald 49:35, 13 Mar 1970",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4936/",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=5938&context=dlsc_ua_records"
+      },
+      {
+       "label": "1969 Talisman pt. 1, p. 52",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
+      },
+      {
+       "label": "Herald 48:19, 27 Feb 1969",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2100"
       }
      ],
      "profile": [
@@ -3139,7 +3155,7 @@
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Plaque reads 1982; this site originally filed him under 1982-83. Board of Regents minutes (30 Jan 1982) and Herald coverage place him as SGA president succeeding Marcel Bush, who resigned 14 Jan 1982, filling the balance of the 1981-82 term. Margaret Ragan, elected president in April 1982, led the separate 1982-83 term - the two are not the same office-year.",
+     "note": "Plaque reads 1982; this site originally filed him under 1982-83. Board of Regents minutes (30 Jan 1982) and Herald coverage place him as SGA president succeeding Marcel Bush, who resigned 14 Jan 1982, filling the balance of the 1981-82 term. Margaret Ragan, elected president in April 1982, led the separate 1982-83 term - the two are not the same office-year. The Herald of 14 January 1982 photographed Payne, then Associated Student Government vice president, announcing the resignation of president and student regent Marcell Bush, whom he succeeded.",
      "sources": [
       {
        "label": "Herald 57:12, 12 Oct 1981",
