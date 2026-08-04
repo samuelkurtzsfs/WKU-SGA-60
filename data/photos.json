@@ -1,6 +1,24 @@
 {
  "leaders": [
   {
+   "year": "1966-67",
+   "name": "Jim Haynes",
+   "file": "1966-67-jim-haynes.jpg",
+   "src": {
+    "label": "1967 Talisman pt. 1, p. 136",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/382"
+   }
+  },
+  {
+   "year": "1967-68",
+   "name": "William Menser",
+   "file": "1967-68-william-menser.jpg",
+   "src": {
+    "label": "1968 Talisman, p. 153",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384"
+   }
+  },
+  {
    "year": "2015-16",
    "name": "Jay Todd Richey",
    "file": "2015-16-jay-todd-richey.jpg",
@@ -191,6 +209,24 @@
   }
  ],
  "years": [
+  {
+   "year": "1966-67",
+   "file": "1966-67-associated-students.jpg",
+   "caption": "The Associated Students executive council and members, photographed in the conference room, 1966-67 academic year.",
+   "src": {
+    "label": "1967 Talisman pt. 1, p. 136",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/382"
+   }
+  },
+  {
+   "year": "1967-68",
+   "file": "1967-68-associated-students.jpg",
+   "caption": "The Associated Students council photographed on the steps outside campus, 1967-68 academic year, the group's second year of existence.",
+   "src": {
+    "label": "1968 Talisman, p. 153",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384"
+   }
+  },
   {
    "year": "2025-26",
    "file": "2025-26-rush-robinson.jpg",
