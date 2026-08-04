@@ -3645,10 +3645,10 @@
      "plaque_term": "1986-88",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Two-year plate. A 1987 Herald piece reports a candidate shortage and mentions a Tim Todd race.",
+     "note": "Two-year plate. \"Tim Todd\" appears as the ASG presidential candidate/officeholder across Herald coverage in both 1986 and 1987, confirming the name for the plaque term.",
      "sources": [
       {
        "label": "Herald 62:48, 1987",
@@ -3700,6 +3700,24 @@
      "src": {
       "label": "Herald 62:7, 18 Sep 1986",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5762"
+     }
+    },
+    {
+     "date": "1986-10-09",
+     "title": "ASG members drenched in a water-gun incident",
+     "body": "The Herald reported that ASG members had gotten soaked playing with water guns, one of the lighter items in an otherwise routine fall session.",
+     "src": {
+      "label": "Herald 62:13, 9 Oct 1986",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5812"
+     }
+    },
+    {
+     "date": "1986-10-23",
+     "title": "Athletic fee bill defeated; a congress seat decided by 8 votes",
+     "body": "ASG defeated a bill that would have made the athletic fee optional. The same issue reported a top ASG race decided by only eight votes, a margin close enough to make news on its own.",
+     "src": {
+      "label": "Herald 62:17, 23 Oct 1986",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5823/"
      }
     },
     {
@@ -3761,10 +3779,10 @@
      "plaque_term": "1986-88",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Two-year plate. A 1987 Herald piece reports a candidate shortage and mentions a Tim Todd race.",
+     "note": "Two-year plate. \"Tim Todd\" appears as the ASG presidential candidate/officeholder across Herald coverage in both 1986 and 1987, confirming the name for the plaque term.",
      "sources": [
       {
        "label": "Herald 62:48, 1987",
