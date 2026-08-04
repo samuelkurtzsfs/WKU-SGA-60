@@ -6062,10 +6062,25 @@
       {
        "label": "Herald, 30 Aug 2023",
        "url": "https://wkuherald.com/72365/news/wku-student-government-association-selects-judicial-council-committee-heads/"
+      },
+      {
+       "label": "Herald, 11 Apr 2024",
+       "url": "https://wkuherald.com/76361/news/sga-holds-executive-town-hall-in-preparation-for-sga-spring-election/"
+      },
+      {
+       "label": "Herald, 17 Apr 2024",
+       "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
+      },
+      {
+       "label": "SGA Constitution, 2023-2024",
+       "url": "https://www.wku.edu/sga/2023-2024-executive/sga_constitution_2023.pdf"
       }
      ],
      "profile": [
-      "Sam Kurtz, then the outgoing administrative vice president, was elected student body president in the spring 2023 election, with results announced early on April 19, 2023 in the Downing Student Union senate chambers. His KFL executive ticket, with Annalise Finch as executive vice president and Salvador León as administrative vice president, ran unopposed. In a statement he promised to \"listen to students' concerns, represent their voices, lead with integrity.\""
+      "Sam Kurtz, then the outgoing administrative vice president, was elected student body president in results announced early on April 19, 2023 in the Downing Student Union senate chambers, after voting opened on TopNet on April 17. His KFL ticket, with Annalise Finch as executive vice president and Salvador León as administrative vice president, ran unopposed, and Chief Justice Justin Goins read the results. In a statement, Kurtz said the ticket would \"listen to students' concerns, represent their voices, lead with integrity, and promote transparency.\"",
+      "At the 23rd Senate's first fall meeting on Aug. 29, Kurtz nominated Ashley Ranger, Anna Kate Hardin, Ellen Henderson, Morgan Gammons and Garrison Reed to the Judicial Council from what he called a record number of applicants, and named seven committee heads, including Rush Robinson for Campus Improvements and Sustainability and Karley Solorzano for Diversity, Equity and Inclusion. The Senate's first bill of the year, passed unanimously that September, funded the SGA Pink Walk breast-cancer event. Speaker of the Senate Sydney Denney wrote or co-wrote several of the year's bills, including a resolution capping student parking fees at $50, a $700 fund to help students pay parking fines, and voucher funding for the Dental Hygiene Center and ID Center. In February 2024 Kurtz and Chief of Staff Donté Reed rolled out a 450-voucher Uber giveaway aimed at student safety and outreach.",
+      "The year's fight was internal. In February 2024 the Judicial Council voted 6-0 to censure Administrative Vice President Salvador León after a hearing brought by Denney and the executive cabinet, which alleged León had spent SGA funds - including a $425.25 Preston Center deposit for Neurodiversity Acceptance Week - before the Senate passed the funding bill, in violation of the constitution's clause 2.5.3 requiring the administrative vice president to expend funds only as the Senate authorizes. León countered that text messages showed Kurtz had signed off on the spending in advance; the council found the spending improper but recommended no discipline beyond the censure itself.",
+      "In January 2024 Chief of Staff Lindsey Kelly and enrollment director Donte Reed both resigned, with Reed moving up to chief of staff. That April, Kurtz ran for a second term with Reed as his executive vice president candidate and junior senator Ethan Taylor for administrative vice president; the ticket again ran unopposed, and the three were re-elected as the 24th Senate's 34 members were announced the night of April 16-17, 2024. The 23rd Senate held its last meeting on April 16 with no legislation on the agenda, and Kurtz thanked senators in his final report for what the group had accomplished that year."
      ]
     }
    ],
@@ -6150,8 +6165,53 @@
       "label": "Herald, 17 Apr 2024",
       "url": "https://wkuherald.com/76443/news/sga-holds-final-meeting-of-23rd-senate/"
      }
+    },
+    {
+     "date": "2024-04-17",
+     "title": "Kurtz re-elected unopposed to a second term",
+     "body": "Running with Chief of Staff Donté Reed for executive vice president and junior senator Ethan Taylor for administrative vice president, Kurtz was re-elected without opposition as the 24th Senate's 34 members were announced the same night. More than 60 students had appeared on the ballot for the spring 2024 general election.",
+     "src": {
+      "label": "Herald, 17 Apr 2024",
+      "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
+     }
     }
    ],
+   "documents": [
+    {
+     "file": "2023-24-sga-constitution.pdf",
+     "title": "SGA Constitution, as amended for 2023-2024",
+     "summary": "The governing constitution posted for Kurtz's first term, defining the executive, legislative and judicial branches and their duties.",
+     "extract": "Clause 2.5.3: the Administrative Vice President shall \"Expend funds as authorized by the Senate.\"",
+     "sga_pages": "1-8",
+     "page": 3,
+     "src": {
+      "label": "WKU SGA, 2023-2024 Executive constitution",
+      "url": "https://www.wku.edu/sga/2023-2024-executive/sga_constitution_2023.pdf"
+     }
+    }
+   ],
+   "organization": {
+    "executive": [
+     {"office": "President", "name": "Sam Kurtz", "src": {"label": "Herald - 2023 election results", "url": "https://wkuherald.com/71533/news/sga-announces-election-results/"}},
+     {"office": "Executive Vice President", "name": "Annalise Finch", "src": {"label": "Herald - 2023 election results", "url": "https://wkuherald.com/71533/news/sga-announces-election-results/"}},
+     {"office": "Administrative Vice President", "name": "Salvador León", "note": "Censured 6-0 by the Judicial Council on 7 Feb 2024 over premature spending.", "src": {"label": "Herald, 9 Feb 2024", "url": "https://wkuherald.com/74786/news/sga-administrative-vice-president-salvador-leon-censured-no-further-disciplinary-action/"}}
+    ],
+    "senate": {
+     "officers": [
+      {"office": "Speaker of the Senate", "name": "Sydney Denney", "src": {"label": "Herald, 15 Feb 2024", "url": "https://wkuherald.com/74907/news/sga-announces-uber-voucher-program-passes-legislation-to-lower-student-parking-fees/"}}
+     ],
+     "committees": [
+      {"name": "Campus Improvements and Sustainability Committee", "chair": "Rush Robinson"},
+      {"name": "Diversity, Equity and Inclusion Committee", "chair": "Karley Solorzano"},
+      {"name": "Legislative Operations Committee", "chair": "Meghan Pierce"},
+      {"name": "Student Experience and Enrollment Committee", "chair": "Anne-Marie Wright"},
+      {"name": "Outreach and Student Experience Committee", "chair": "Griffin Plumb"},
+      {"name": "Community Relations Committee", "chair": "Maiah Cisco"},
+      {"name": "Student Mental Health and Wellbeing Committee", "chair": "Callison Padgett"}
+     ],
+     "note": "The 2023-2024 Judicial Council was Ashley Ranger, Anna Kate Hardin, Ellen Henderson, Morgan Gammons and Garrison Reed, nominated by Kurtz from a 'record number' of applicants (Herald, 30 Aug 2023). Justin Goins, chief justice of the outgoing Judicial Council, read the April 2023 election results; Isaac King was chief justice by the April 2024 town hall. Which of the two - or whether both - held the post across the 23rd Senate's term is not established."
+    }
+   },
    "status": "researched"
   },
   {
@@ -6565,11 +6625,21 @@
       {
        "label": "Herald, 28 Apr 2026",
        "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"
+      },
+      {
+       "label": "WKU News - Truman Scholar",
+       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13063"
+      },
+      {
+       "label": "WKU News - ODK Circle Leader of the Year",
+       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13098"
       }
      ],
      "profile": [
       "Caden Lucas, a junior senator, WKU Spiritmaster, chairman of the Hilltoppers Vote Coalition and an employee of Bowling Green's Downtown Development Division, won the SGA presidential election on April 15, 2026, with running mates Jakob Barker for vice president and Will Derryberry for chief financial officer. Running under the motto \"Lead, build, deliver,\" his campaign centered on increasing awareness of SGA operations and outreach to the student body, and he defeated Jaden Marshall, who had sought to become the first Black male student body president. After the results were announced Lucas said he felt \"electric\" and that the \"work starts tomorrow,\" beginning with thank-you cards to supporters.",
-      "Lucas took office at the first meeting of the 26th Senate on April 28, 2026, where outgoing president Rush Robinson presented him with the traditional red suit jacket passed from president to president. Lucas thanked the new cabinet, nominated his defeated campaign opponent Jaden Marshall as an at-large senator, calling his campus work \"phenomenal,\" and saw Gabi Pace and Cayden Bailey sworn in as chief of staff and chief communications officer. The meeting's speaker election deadlocked 9-9 between Amelia Tucker and Veronica Butler, a situation the governing documents did not address, and Butler won the seat in a re-vote."
+      "Lucas took office at the first meeting of the 26th Senate on April 28, 2026, where outgoing president Rush Robinson presented him with the traditional red suit jacket passed from president to president. Lucas thanked the new cabinet, nominated his defeated campaign opponent Jaden Marshall as an at-large senator, calling his campus work \"phenomenal,\" and saw Gabi Pace and Cayden Bailey sworn in as chief of staff and chief communications officer. The meeting's speaker election deadlocked 9-9 between Amelia Tucker and Veronica Butler, a situation the governing documents did not address, and Butler won the seat in a re-vote.",
+      "Days after taking office, Lucas was named a 2026 Truman Scholar, WKU's second in the award's history and Kentucky's only recipient that year, chosen from 781 candidates nationally; the scholarship funds $30,000 toward graduate or professional study for students committed to public service. A political science, legal studies and strategic communications major, he had founded the Civic Engagement Resource Center as a Mahurin Honors College teaching fellow before taking SGA's top office. In May, WKU's Omicron Delta Kappa circle named him its Heather Strode Circle Leader of the Year, an award recognizing collaboration, inclusivity, integrity, scholarship and service.",
+      "Before he was sworn in as student regent, Lucas told the Herald he was \"generally concerned\" by a proposed $210 tuition increase; the Board of Regents approved a $204 increase days later, with outgoing regent Rush Robinson casting the only dissenting vote before handing the seat to Lucas."
      ]
     }
    ],
@@ -6628,8 +6698,41 @@
       "label": "Herald, 8 Apr 2026",
       "url": "https://wkuherald.com/92534/news/sga-holds-town-hall-qa-for-executive-candidates-before-election/"
      }
+    },
+    {
+     "date": "2026-04-24",
+     "title": "Lucas named a 2026 Truman Scholar",
+     "body": "Days after taking SGA's top office, President Caden Lucas was named a 2026 Truman Scholar, WKU's second in the scholarship's history and Kentucky's only recipient that year. The award, chosen from 781 candidates at 305 colleges nationally, provides $30,000 toward graduate or professional study and recognizes commitment to public service.",
+     "src": {
+      "label": "WKU News, 24 Apr 2026",
+      "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13063"
+     }
+    },
+    {
+     "date": "2026-05-11",
+     "title": "Lucas named ODK Circle Leader of the Year",
+     "body": "WKU's Omicron Delta Kappa circle named President Caden Lucas its Heather Strode Circle Leader of the Year, an award for a student demonstrating leadership and dedication to the campus community across ODK's five core values.",
+     "src": {
+      "label": "WKU News, 11 May 2026",
+      "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13098"
+     }
     }
    ],
+   "organization": {
+    "executive": [
+     {"office": "President", "name": "Caden Lucas", "note": "Also student regent on the WKU Board of Regents.", "src": {"label": "Herald - Lucas wins", "url": "https://wkuherald.com/92808/news/lucas-wins-sga-presidential-election/"}},
+     {"office": "Vice President", "name": "Jakob Barker", "src": {"label": "Herald - Lucas wins", "url": "https://wkuherald.com/92808/news/lucas-wins-sga-presidential-election/"}},
+     {"office": "Chief Financial Officer", "name": "Will Derryberry", "src": {"label": "Herald - Lucas wins", "url": "https://wkuherald.com/92808/news/lucas-wins-sga-presidential-election/"}},
+     {"office": "Chief of Staff", "name": "Gabi Pace", "src": {"label": "Herald, 28 Apr 2026", "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"}},
+     {"office": "Chief Communications Officer", "name": "Cayden Bailey", "src": {"label": "Herald, 28 Apr 2026", "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"}}
+    ],
+    "senate": {
+     "officers": [
+      {"office": "Speaker of the Senate", "name": "Veronica Butler", "note": "Won a re-vote after a 9-9 tie with Amelia Tucker; the governing documents had no tie-break procedure.", "src": {"label": "Herald, 28 Apr 2026", "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"}}
+     ],
+     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026) in Herald reporting; unresolved which spelling is correct. No committee chairs had been reported as of this update - the 26th Senate's first fall meeting had not yet occurred."
+    }
+   },
    "status": "researched"
   }
  ]
