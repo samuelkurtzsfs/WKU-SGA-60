@@ -1,7 +1,7 @@
 name: Build check
 
 # Validates the data and the generator on every push, so a broken JSON file
-# is caught here instead of on the live site. No API key, no AI, no cost.
+# is caught here instead of on the live site. Pure Python, no external services.
 
 on:
   push:
