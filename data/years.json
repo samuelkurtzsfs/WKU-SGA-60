@@ -6591,7 +6591,7 @@
     "senate": {
      "officers": [],
      "committees": [],
-     "note": "No senate officer or committee roster for 2002-03 could be confirmed; the ad hoc financial review committee formed in the gazebo-funds dispute is the only committee named in the sources found."
+     "note": "No senate officer or committee roster for 2002-03 could be confirmed. TopSCHOLAR holds weekly meeting-minutes abstracts for this year (Aug 2002-Apr 2003, e.g. digitalcommons.wku.edu/sga/Meetings/Minutes/), but the full-text PDFs return an automated bot challenge that this run could not clear; abstracts alone name agenda topics (committee vacancies discussed 9 Oct 2002) without naming chairs. The ad hoc financial review committee formed in the gazebo-funds dispute is the only committee identified by name in confirmed sources."
     }
    }
   },
@@ -7928,6 +7928,15 @@
       "label": "Herald, 1 Apr 2010",
       "url": "https://web.archive.org/web/20100407041457/http://www.wkuherald.com/2010/04/01/jessie-elected-sga-president/"
      }
+    },
+    {
+     "date": "2010-02-22",
+     "title": "Senate passes funding bills for baseball, a sorority event and study abroad",
+     "body": "At its Feb. 22 meeting the senate unanimously passed a funding bill and, with single dissents apiece, a bill funding the baseball program and a $1,300 allocation for an Alpha Kappa Alpha event. It also unanimously approved several study-abroad reimbursement bills and confirmed Daniel Shaw as parliamentarian, along with a new Academic Affairs committee chair nominee and a new Student Affairs chair.",
+     "src": {
+      "label": "SGA senate minutes, 22 Feb 2010",
+      "url": "https://www.wku.edu/sga/uploads/minutes/february22.doc"
+     }
     }
    ],
    "status": "researched",
@@ -7966,6 +7975,39 @@
        "label": "Herald, 4 Sep 2009",
        "url": "https://web.archive.org/web/20090918022921/http://www.wkuherald.com/2009/09/04/smiley-nominates-brother/"
       }
+     },
+     {
+      "office": "Secretary",
+      "name": "Ann-Blair Thornton",
+      "src": {
+       "label": "SGA senate minutes, 22 Feb 2010",
+       "url": "https://www.wku.edu/sga/uploads/minutes/february22.doc"
+      }
+     },
+     {
+      "office": "Director of Public Relations",
+      "name": "Angelika Masero",
+      "src": {
+       "label": "SGA senate minutes, 20 Oct 2009",
+       "url": "https://www.wku.edu/sga/uploads/minutes/october20.doc"
+      }
+     },
+     {
+      "office": "Director of Academic and Student Affairs",
+      "name": "Aaron Pawley",
+      "note": "Resigned as senator in late January 2010 to study abroad in England; unclear from sources whether he kept this cabinet post afterward.",
+      "src": {
+       "label": "SGA senate minutes, 20 Oct 2009",
+       "url": "https://www.wku.edu/sga/uploads/minutes/october20.doc"
+      }
+     },
+     {
+      "office": "Director of Information Technology",
+      "name": "Sarah Howell",
+      "src": {
+       "label": "SGA senate minutes, 20 Oct 2009",
+       "url": "https://www.wku.edu/sga/uploads/minutes/october20.doc"
+      }
      }
     ],
     "senate": {
@@ -7977,10 +8019,52 @@
         "label": "Herald, 14 Oct 2009",
         "url": "https://web.archive.org/web/20091018185425/http://www.wkuherald.com/2009/10/14/sga-sponsors-tailgating-forum/"
        }
+      },
+      {
+       "office": "Chief Justice",
+       "name": "Stuart Kenderes",
+       "src": {
+        "label": "Herald, 10 Nov 2009",
+        "url": "https://web.archive.org/web/20100226061045/http://www.wkuherald.com/tag/sga/"
+       }
+      },
+      {
+       "office": "Parliamentarian",
+       "name": "Daniel Shaw",
+       "note": "Approved to this post at the 22 Feb 2010 meeting, months after resigning his own senate seat in October 2009 over the Capillo committee-appointment dispute.",
+       "src": {
+        "label": "SGA senate minutes, 22 Feb 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/february22.doc"
+       }
       }
      ],
-     "committees": [],
-     "note": "Chief Justice Stuart Kenderes led the Judicial Council, which in November 2009 removed a senator for excessive unexcused absences. Three senators resigned in October 2009 over a contested committee appointment, and two more resigned in January 2010 for unrelated personal reasons; TopSCHOLAR's digitised SGA meeting-minutes collection ends in 2008 and no minutes for 2009-10 could be found there, so senate size and committee chairs for this year are not yet confirmed."
+     "size": 32,
+     "committees": [
+      {
+       "name": "Academic Affairs",
+       "chair": "Dave Vickery",
+       "note": "Replaced by chair-nominee Brandon Logan by the 22 Feb 2010 meeting."
+      },
+      {
+       "name": "Campus Improvements",
+       "chair": "Kaylee Egerer"
+      },
+      {
+       "name": "Legislative Research",
+       "chair": "Eileen Forsythe",
+       "note": "Forsythe resigned her senate seat in late January 2010 to study abroad; the committee passed to chair Jacob Turner by the 22 Feb 2010 meeting."
+      },
+      {
+       "name": "Public Relations",
+       "chair": "Austin Wingate"
+      },
+      {
+       "name": "Student Affairs",
+       "chair": "Currie Martin",
+       "note": "Replaced by Emily Woosley, approved with one abstention, by the 22 Feb 2010 meeting."
+      }
+     ],
+     "note": "Roster stood at 32 senators as of the 20 Oct 2009 meeting (24 present) and had fallen to a 30-seat roster by 22 Feb 2010 (20 present, 10 absent), consistent with the resignations recorded across the fall and January. Chief Justice Stuart Kenderes led the Judicial Council, which in November 2009 removed a senator for excessive unexcused absences."
     }
    }
   },
