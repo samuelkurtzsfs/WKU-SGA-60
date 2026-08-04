@@ -112,6 +112,8 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
 h1,h2,h3,h4{font-family:var(--display);font-weight:700;letter-spacing:-.012em;
  text-wrap:balance;margin:0}
 p{margin:0 0 1em;text-wrap:pretty}
+img{max-width:100%;height:auto}
+.srclist a,.srcline a,.credit a,.doc-foot a{overflow-wrap:anywhere}
 a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--red-dark)}
 a.ext::after{content:"\\00A0\\2197";color:var(--ink3);font-size:.82em;text-decoration:none}
@@ -119,7 +121,6 @@ a.ext::after{content:"\\00A0\\2197";color:var(--ink3);font-size:.82em;text-decor
 .wrap{max-width:1120px;margin:0 auto;padding:0 34px}
 @media(max-width:640px){.wrap{padding:0 18px}}
 .prose{max-width:var(--measure)}
-.num{font-variant-numeric:tabular-nums}
 .lab{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
  text-transform:uppercase;color:var(--ink3);margin:0}
 .skip{position:absolute;left:-9999px}
@@ -140,7 +141,7 @@ a.ext::after{content:"\\00A0\\2197";color:var(--ink3);font-size:.82em;text-decor
 /* ---- page head ---- */
 .head{padding:56px 0 26px;border-bottom:1px solid var(--line)}
 @media(max-width:640px){.head{padding:34px 0 20px}}
-.head .kicker{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.12em;
+.kicker{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.12em;
  text-transform:uppercase;color:var(--ink3);margin:0 0 12px}
 .head h1{font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.04}
 .head .lede{font-size:1.12rem;color:var(--ink);max-width:var(--measure);margin:18px 0 0}
@@ -171,7 +172,7 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
 .leader{padding:34px 0 0}
 .leader h2{font-size:1.5rem;letter-spacing:-.02em}
 .leader h2 .r{font-family:var(--ui);font-weight:400;font-size:1rem;color:var(--ink2);
- letter-spacing:0;white-space:nowrap}
+ letter-spacing:0}
 .facts{display:grid;grid-template-columns:max-content 1fr;gap:0 26px;margin:14px 0 20px;
  max-width:46rem;font-size:.95rem}
 .facts dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
@@ -253,7 +254,7 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
  padding:10px 0;border-top:1px solid var(--line2);font-size:.95rem}
 @media(max-width:700px){.lrow{grid-template-columns:1fr;gap:2px}}
 .lrow .lt{color:var(--ink3);font-size:.82rem;font-variant-numeric:tabular-nums}
-.lrow .ll{font-size:.85rem;white-space:nowrap}
+.lrow .ll{font-size:.85rem;overflow-wrap:anywhere}
 .lrow .ll a{margin-left:16px}
 @media(max-width:700px){.lrow .ll a{margin:0 16px 0 0}}
 .lsec{margin:0 0 26px}
@@ -265,7 +266,7 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
 .hx .when{color:var(--ink3);font-size:.8rem;padding-top:3px;font-variant-numeric:tabular-nums}
 .hx .t{color:var(--ink2);max-width:52rem}
 .hx .t b{color:var(--ink);font-weight:600}
-.hx .t a{font-size:.84rem;margin-left:8px;white-space:nowrap}
+.hx .t a{font-size:.84rem;margin-left:8px;overflow-wrap:anywhere}
 .hyear{font-size:1.35rem;margin:38px 0 2px;padding-top:14px;border-top:1px solid var(--line)}
 .hyear .who{font-family:var(--ui);font-weight:400;font-size:.9rem;color:var(--ink3);
  display:block;margin-top:5px;letter-spacing:0}
@@ -608,14 +609,18 @@ def render_leader(l, y, also):
     facts = [("Office", role_word(l).capitalize()),
              ("Term recorded here", h(y["id"]))]
     if l.get("plaque_term") and l["plaque_term"] != y["id"]:
-        facts.append(("Plaque in the Chambers", f'reads {h(l["plaque_term"])}'))
+        facts.append(("On the plaque", h(l["plaque_term"])))
     line = confidence_line(l, y["id"])
     if line:
         facts.append(("Standing of the record", line))
-    if l.get("name_verified"):
-        facts.append(("Name in the archive", "Found in the sources below."))
-    elif l.get("sources"):
-        facts.append(("Name in the archive", "Not yet confirmed against a contemporary source."))
+    # Only speak to the name separately when it adds something the standing
+    # line did not already say; otherwise the two rows contradict each other.
+    if not line:
+        if l.get("name_verified"):
+            facts.append(("Name in the archive", "Found in the sources below."))
+        elif l.get("sources"):
+            facts.append(("Name in the archive",
+                          "Not yet confirmed against a contemporary source."))
     if l.get("missing_from_plaque"):
         facts.append(("Not yet on the plaque",
                       "The Chambers plaque does not carry this name."))
@@ -769,14 +774,21 @@ def year_sources(y):
     how many entries rest on it."""
     counts = {}
     order = []
+    labels = {}
+    urls = {}
 
     def add(src):
         if not src or not src.get("label"):
             return
-        k = (src.get("label"), src.get("url"))
+        url = (src.get("url") or "").rstrip("/")
+        k = url or src.get("label")
         if k not in counts:
             counts[k] = 0
             order.append(k)
+            labels[k] = src.get("label")
+            urls[k] = src.get("url")
+        elif len(src.get("label") or "") > len(labels.get(k) or ""):
+            labels[k] = src.get("label")   # keep the fullest form of the label
         counts[k] += 1
 
     for l in y["leaders"]:
@@ -796,7 +808,7 @@ def year_sources(y):
     for l in y["leaders"]:
         if l.get("photo") and l["photo"].get("src"):
             add(l["photo"]["src"])
-    return [(label, url, counts[(label, url)]) for label, url in order]
+    return [(labels[k], urls[k], counts[k]) for k in order]
 
 
 def render_year(y, prev, nxt, leg, repeats):
@@ -902,8 +914,8 @@ def render_year(y, prev, nxt, leg, repeats):
  <p class="lab">Preferred citation</p>
  <p class="citestr" id="cite">{citation}<span id="citeurl">y/{h(yid)}.html</span></p>
  <button class="copy" id="copy" type="button">Copy the citation</button>
- <p class="revised">This record was last rebuilt on {BUILT}. Where a name here differs from
- the plaque in the SGA Chambers, the difference is explained above and listed on the
+ <p class="revised">Where a name on this page differs from the plaque in the SGA
+ Chambers, the difference is explained above and recorded on the
  <a href="../corrections.html">corrections page</a>.</p>
 </section>
 <div class="pager">{pager}</div>
@@ -1076,8 +1088,8 @@ def render_index(ys, n_leg, n_herald):
 
  <section class="starthere">
   <h2 class="sec" style="margin-top:0;border-top:0;padding-top:0">Where to start</h2>
-  <p class="secnote">Sixty-one years is a lot of doors. These six are the ones worth
-  opening first.</p>
+  <p class="secnote">Six entry points, chosen for what they show about how this
+  record was put together.</p>
   <ol>__STARTS__</ol>
  </section>
 </div>
@@ -1119,7 +1131,7 @@ if(params.get('in')){facet=params.get('in');
 apply();
 </script>"""
     counts_line = (
-        f"Sixty-one academic years have a page. {n_ev} entries are sourced to the "
+        f"All {len(ys)} academic years have a page. {n_ev} entries are sourced to the "
         f"<cite>Herald</cite>, the WKU Timeline, SGA's own papers or the university archive; "
         f"{n_lead} presidents and student regents are recorded, {n_leg} pieces of legislation "
         f"are held as files, and {n_herald} further <cite>Herald</cite> index lines are "
@@ -1131,8 +1143,8 @@ apply();
                 .replace("__STARTS__", starts)
                 .replace("__PAYLOAD__", payload))
     desc = (f"A year-by-year record of the Student Government Association at Western "
-            f"Kentucky University, 1966 to 2026. {n_ev} sourced entries across 61 "
-            f"academic years, {n_src} citations.")
+            f"Kentucky University, 1966 to 2026. {n_ev} sourced entries across "
+            f"{len(ys)} academic years, {n_src} citations.")
     return shell("SGA 60 · Student Government at Western Kentucky University",
                  desc, body, BOARD_CSS, depth=0, current="index.html", mascot=True)
 
@@ -1358,13 +1370,20 @@ def render_corrections(ys):
         note = f'<div class="editorial flagged"><p>{h(l["note"])}</p></div>' if l.get("note") else ""
         srcs = ""
         if l.get("sources"):
-            srcs = ('<p class="lab" style="margin:14px 0 6px">What the change rests on</p>'
+            label = ("What the change rests on" if l.get("year_confidence") == "corrected"
+                     else "What has been found so far")
+            srcs = (f'<p class="lab" style="margin:14px 0 6px">{label}</p>'
                     '<ol class="srclist">'
                     + "".join(f"<li>{src_link(s)}</li>" for s in l["sources"]) + "</ol>")
+        hunt = ""
+        if not l.get("name_verified"):
+            links = "".join(f'<li>{ext(u, h(t))}</li>' for t, u in name_searches(l["name"]))
+            hunt = ('<p class="lab" style="margin:16px 0 6px">Where to look next</p>'
+                    f'<ul class="searchlist">{links}</ul>')
         dl = "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in facts)
         return (f'<section class="leader"><h2>{h(l["name"])} '
                 f'<span class="r">{h(y["id"])}</span></h2>'
-                f'<dl class="facts">{dl}</dl>{note}{srcs}</section>')
+                f'<dl class="facts">{dl}</dl>{note}{srcs}{hunt}</section>')
 
     def group(title, note, rows, plaque_label):
         if not rows:
@@ -1422,9 +1441,9 @@ def render_about(ys, meta, n_leg, n_herald, n_docs, n_port, n_gal):
 
 <h2 class="sec">Scope and content</h2>
 <div class="prose">
-<p>The archive holds one page for each academic year from 1966-67 to 2026-27, {n_ev} dated
-entries, and {n_lead} presidents and student regents with their terms as far as the record
-supports them. Entries cover the organization, not only its presidents: elections and turnout,
+<p>The archive holds one page for each of the {len(ys)} academic years from {h(ys[0]["id"])} to
+{h(ys[-1]["id"])}, {n_ev} dated entries, and {n_lead} presidents and student regents with
+their terms as far as the record supports them. Entries cover the organization, not only its presidents: elections and turnout,
 budgets, appointments, committee work, resolutions that passed and resolutions that failed,
 and the fights with the administration and the <cite>Herald</cite>. Campus events that shaped
 a year are included where they bear on student government and are marked as such.</p>
@@ -1453,9 +1472,7 @@ reading is kept and printed beside the corrected one on the year page and on the
 
 <h2 class="sec">What is settled</h2>
 <div class="prose">
-<p>The student seat on the Board of Regents was a separately elected office from April 1968.
-William Menser was the first to hold it. That is why several plaque years carry two names:
-one president and one regent. {h(meta.get("student_regent_history", ""))}</p>
+<p>{h(meta.get("student_regent_history", ""))}</p>
 <p>Michael Fiorella in 1972-73, Gregory McKinney in 1974-75 and Sandra Norfleet in 1982-83
 are confirmed as regents rather than presidents. By about 2001 the two offices had merged;
 after that, a second name in a year means a mid-year succession.</p>
