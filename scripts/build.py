@@ -257,6 +257,16 @@ h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spac
  text-transform:none;font-family:var(--ui);letter-spacing:0}
 .doc-foot a:hover{background:none;color:var(--red-dark)}
 
+/* ---- complete timeline ---- */
+.hx{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+@media(max-width:640px){.hx{grid-template-columns:1fr;gap:2px}}
+.hx .d{font-family:var(--ui);font-size:12.5px;color:var(--ink3);padding-top:2px;font-weight:600}
+.hx .t{color:var(--ink2)}
+.hx a{margin-left:10px;font-size:.82rem}
+.hyear{font-family:var(--inscribe);font-weight:800;font-size:1.6rem;margin:44px 0 6px;color:var(--ink)}
+.hyear a{font-size:.8rem;font-weight:600;margin-left:14px}
+.hsub{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin:18px 0 4px;font-family:var(--ui)}
+
 /* ---- legislation ---- */
 .lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
  padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
@@ -774,6 +784,67 @@ def apply_photo_overlay(ys):
                 {"file": p["file"], "caption": p.get("caption", ""), "src": p.get("src")})
 
 
+
+def render_history(ys, herald):
+    def ay(date):
+        y = int(date[:4])
+        m = int(date[5:7]) if len(date) >= 7 else 1
+        start = y if m >= 8 else y - 1
+        if start == 1965:
+            start = 1966  # the founding spring belongs to year one
+        if start < 1966 or start > 2026:
+            return None   # pre-history stays out of the sixty years
+        return f"{start}-{str(start + 1)[2:]}"
+    by_year = {y["id"]: {"events": sorted(y["events"], key=lambda e: e["date"]), "herald": []} for y in ys}
+    for e in herald:
+        yid = ay(e["date"])
+        if yid and yid in by_year:
+            by_year[yid]["herald"].append(e)
+    n_ev = sum(len(v["events"]) for v in by_year.values())
+    n_hx = sum(len(x["lines"]) for v in by_year.values() for x in v["herald"])
+    jump = "".join(f'<a class="chip" href="#y{d}">{d}s</a>' for d in range(1960, 2030, 10))
+    secs = []
+    for y in ys:
+        v = by_year[y["id"]]
+        dec = (y["start"] // 10) * 10
+        anchor = f'<span id="y{dec}"></span>' if y["start"] % 10 == 0 or y["start"] == 1966 else ""
+        evs = "".join(
+            f'<div class="hx" data-t="{h(e["title"].lower())} {h(e["body"].lower())}">'
+            f'<span class="d">{e["date"]}</span><span class="t"><b>{h(e["title"])}.</b> {h(e["body"])}'
+            f' <a href="{h(e["src"]["url"])}" target="_blank" rel="noopener">{h(e["src"]["label"])} &#8599;</a>'
+            + (f' <a href="docs/{e["src"]["file"]}" target="_blank" rel="noopener">read it here &#8599;</a>'
+               if e.get("src", {}).get("file") else "") + '</span></div>'
+            for e in v["events"])
+        hx = "".join(
+            f'<div class="hx" data-t="{h(ln.lower())}"><span class="d">{x["date"]}</span>'
+            f'<span class="t">{h(ln)}<a href="{h(x["url"])}" target="_blank" rel="noopener">{h(x["issue"][:60])} &#8599;</a></span></div>'
+            for x in sorted(v["herald"], key=lambda e: e["date"]) for ln in x["lines"])
+        secs.append(f'{anchor}<h2 class="hyear">{y["id"]}<a href="y/{y["id"]}.html">the year page &#8599;</a></h2>'
+                    + (evs or "") + (f'<div class="hsub">Every mention in the Herald index</div>{hx}' if hx else ""))
+    body = f"""
+<nav class="nav"><div class="wrap">
+ <a class="brand" href="index.html">SGA <b>60</b></a>
+ <div style="display:flex;gap:20px"><a href="index.html">The Board</a><a href="history.html">Timeline</a><a href="legislation.html">Legislation</a></div>
+</div></nav>
+<header class="yhead"><div class="wrap">
+ <div class="eyebrow">The complete timeline &middot; {n_ev} verified events &middot; {n_hx} Herald index mentions</div>
+ <h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Sixty Years, Everything</h1>
+</div></header>
+<div class="wrap" style="position:relative;z-index:2;padding-bottom:80px">
+ <input class="lfilter" id="hf" type="search" placeholder="filter everything&hellip;" aria-label="Filter the timeline">
+ <div class="ljump">{jump}</div>
+ {''.join(secs)}
+</div>
+<script>
+const hf=document.getElementById('hf');
+hf.addEventListener('input',()=>{{
+ const q=hf.value.toLowerCase().trim();
+ document.querySelectorAll('.hx').forEach(r=>{{r.style.display=!q||r.dataset.t.includes(q)?'':'none';}});
+}});
+</script>"""
+    return shell("The Complete Timeline · SGA 60", body, PAGE_CSS, depth=0)
+
+
 def main():
     ys = json.loads(DATA.read_text())["years"]
     apply_photo_overlay(ys)
@@ -788,6 +859,9 @@ def main():
             render_year(y, ys[i - 1] if i else None, ys[i + 1] if i < len(ys) - 1 else None,
                         by_session.get(y["id"], ())))
     (SITE / "legislation.html").write_text(render_legislation(leg))
+    hpath = ROOT / "data" / "herald-index.json"
+    herald = json.loads(hpath.read_text())["entries"] if hpath.exists() else []
+    (SITE / "history.html").write_text(render_history(ys, herald))
     if LEG.is_dir():
         shutil.copytree(LEG, SITE / "legislation", dirs_exist_ok=True)
     shutil.copy(DATA, SITE / "years.json")
