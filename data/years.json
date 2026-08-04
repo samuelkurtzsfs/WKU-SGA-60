@@ -11426,9 +11426,137 @@
       "label": "Herald, 20 Apr 2022",
       "url": "https://wkuherald.com/65850/news/sga-votes-to-allocate-funds-towards-scholarships-hardin-planetarium-donation/"
      }
+    },
+    {
+     "date": "2021-11-09",
+     "title": "ISEC's assistant director urged closer ties with SGA",
+     "body": "Lamario Moore, assistant director of the Intercultural Student Engagement Center, told senators that improving the relationship between SGA and ISEC was pivotal and could be as simple as showing up. The senate passed Resolution 2.21f to give a gift basket to veterans at a Veterans Day wreath-laying, Bill 11.21f funding the Chinese club, and after a long debate, Bill 12.21f funding three $250 scholarships at an Advising and Career Development Center job fair.",
+     "src": {
+      "label": "Herald, 10 Nov 2021",
+      "url": "https://wkuherald.com/62230/news/isec-assistant-director-speaks-at-sga-meeting/"
+     }
+    },
+    {
+     "date": "2021-11-17",
+     "title": "CEBS dean visited; predatory-loan resolution stalled on a 17-16 vote",
+     "body": "CEBS Dean Corinne Murphy spoke to the senate about the college's programs and the student life cycle. Executive Vice President Me'Lon Craighead announced new senate committee nominations, two of them to the newly created restaurant group committee. Resolution 3.21f, opposing predatory student loans for first-year students and prompted by state Rep. Patti Minter's visit to SGA, split 17-16 and was pushed to the next meeting rather than passing. Bill 13.21f, funding a $350 stress-relief tabling event before finals, passed by a wide margin.",
+     "src": {
+      "label": "Herald, 18 Nov 2021",
+      "url": "https://wkuherald.com/62452/news/corinne-murphy-speaks-at-sga-meeting/"
+     }
+    },
+    {
+     "date": "2022-02-01",
+     "title": "Former state Rep. Debra Maggart spoke on lobbying; Faculty Awards Committee launched",
+     "body": "Debra Maggart, a WKU alumna and Tennessee state representative from 2004 to 2012, told the senate that being part of SGA had inspired her political career and urged senators to get involved in issues they cared about. President Matthew Wininger nominated four new senators, all confirmed. Executive Vice President Me'Lon Craighead announced 10 nominations to a newly created Faculty Awards Committee meant to help students identify helpful professors. Bill 4.22s (removing the requirement of an author at LOC meetings) and Bill 5.22s (on when office hours may be collected) both passed by unanimous consent.",
+     "src": {
+      "label": "Herald, 2 Feb 2022",
+      "url": "https://wkuherald.com/63595/news/sga-welcomes-wku-alumna-and-former-state-representative-passes-pair-of-bills/"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Matthew Wininger",
+      "note": "Also student regent on the WKU Board of Regents. The Herald's 12 Apr 2021 ballot-guide article spells his name 'Waninger' throughout; every other Herald and WKU News article on him spells it 'Wininger', which this site follows.",
+      "src": {
+       "label": "Herald, 12 Apr 2021",
+       "url": "https://wkuherald.com/3942/news/sga-voting-opens-today-who-is-on-the-ballot/"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Me'Lon Craighead",
+      "src": {
+       "label": "Herald, 12 Apr 2021",
+       "url": "https://wkuherald.com/3942/news/sga-voting-opens-today-who-is-on-the-ballot/"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Parker Raybourne",
+      "src": {
+       "label": "Herald, 1 Sep 2021",
+       "url": "https://wkuherald.com/60500/news/sga-confirms-new-senators-election-codes-during-first-meeting/"
+      }
+     },
+     {
+      "office": "Director of Information Technology",
+      "name": "Jamison Moorehead",
+      "src": {
+       "label": "Herald, 1 Sep 2021",
+       "url": "https://wkuherald.com/60500/news/sga-confirms-new-senators-election-codes-during-first-meeting/"
+      }
+     },
+     {
+      "office": "Director of Public Relations",
+      "name": "Alexis Courtenay",
+      "src": {
+       "label": "Herald, 10 Nov 2021",
+       "url": "https://wkuherald.com/62230/news/isec-assistant-director-speaks-at-sga-meeting/"
+      }
+     },
+     {
+      "office": "Director of Academic and Student Affairs",
+      "name": "Trib Singh",
+      "src": {
+       "label": "Herald, 15 Sep 2021",
+       "url": "https://wkuherald.com/60866/news/sga-swears-in-seven-members-elects-new-senators/"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Tess Welch",
+       "src": {
+        "label": "Herald, 15 Sep 2021",
+        "url": "https://wkuherald.com/60866/news/sga-swears-in-seven-members-elects-new-senators/"
+       }
+      },
+      {
+       "office": "Chief Justice",
+       "name": "Holden Schroeder",
+       "src": {
+        "label": "Herald, 1 Sep 2021",
+        "url": "https://wkuherald.com/60500/news/sga-confirms-new-senators-election-codes-during-first-meeting/"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Legislative Operations"
+      },
+      {
+       "name": "Student Experience"
+      },
+      {
+       "name": "Mental Health"
+      },
+      {
+       "name": "Sustainability"
+      },
+      {
+       "name": "Campus Improvement"
+      },
+      {
+       "name": "Diversity"
+      },
+      {
+       "name": "Student Outreach"
+      },
+      {
+       "name": "Restaurant Group",
+       "note": "A new committee announced by EVP Me'Lon Craighead in fall 2021, tied to a new university committee of the same name."
+      }
+     ],
+     "note": "Committees introduced by Speaker Tess Welch at the second meeting of the 21st Senate, 14 Sep 2021; no chairs found in Herald coverage of 2021-22. The administrative vice presidency's occupant for the year, if any, was not confirmed in Herald coverage - Reed Breunig ran for the office on Wininger's ticket in the April 2021 election, but only Wininger and Craighead were marked as winners in the Herald's ballot-guide article."
+    }
+   }
   },
   {
    "id": "2022-23",
@@ -11588,9 +11716,178 @@
       "url": "https://wkuherald.com/67758/news/wku-dedicates-commons-caboni-sets-sights-on-cherry-hall/"
      },
      "campus": true
+    },
+    {
+     "date": "2022-09-06",
+     "title": "Senate elected committee chairs, heard the provost on WKU's Quality Enhancement Plan",
+     "body": "At its second meeting of the year, SGA confirmed Trevor Clark and Tate Sign as senators-at-large and elected five committee chairs: Olivia Feck for student mental health and wellbeing, Matt Gadd for outreach and student experience, Elizabeth DeLozier for legislative operations, Will Hemenover for sustainability, Ahatali Tahiri for diversity, equity and inclusion, and Caleb Collins for community outreach. Provost Bud Fischer discussed the university's Quality Enhancement Plan, part of WKU's 2025 reaccreditation submission, and senators proposed ideas including freshman mentoring and financial-competency assistance. President Bornefeld also credited Executive Vice President Garrison Reed's work on Gov. Andy Beshear's higher education committee.",
+     "src": {
+      "label": "Herald, 7 Sep 2022",
+      "url": "https://wkuherald.com/67853/news/sga-elects-committee-chairs-hears-from-provost-on-enhancement-plan/"
+     }
+    },
+    {
+     "date": "2022-11-08",
+     "title": "Senate funded Midnight on the Hill, seated Sarah Vincent",
+     "body": "At the 22nd Senate's twelfth meeting, senators unanimously passed Bill 17-22-F, giving $500 in legislative discretionary funds to Midnight on the Hill, a St. Jude's fundraiser that had raised $85,000 the previous year, after the group lost its usual advisor-linked funding. The Senate also unanimously seated Sarah Vincent as a senator-at-large, and Outreach and Student Engagement chair Matt Gadd reported he had applied for a grant to help fund the Narcan initiative senators would pass three months later.",
+     "src": {
+      "label": "SGA Senate minutes, 8 Nov 2022",
+      "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes/minutes_11_8_22.pdf",
+      "file": "2022-23-senate-minutes-11-8-22.pdf"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Cole Bornefeld",
+      "note": "Also student regent on the WKU Board of Regents.",
+      "src": {
+       "label": "Herald - censure hearing",
+       "url": "https://wkuherald.com/70591/news/sga-judicial-council-unanimously-votes-against-censure-of-president-bornefeld-regarding-use-of-social-media/"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Sam Kurtz",
+      "src": {
+       "label": "Herald, 20 Apr 2022",
+       "url": "https://wkuherald.com/65821/news/gallery-sga-results-announced-cole-bornefeld-wins-presidency/"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Garrison Reed",
+      "note": "Also served as WKU's student representative on Kentucky's Council on Postsecondary Education, term through 30 Jun 2023.",
+      "src": {
+       "label": "Herald, 20 Apr 2022",
+       "url": "https://wkuherald.com/65821/news/gallery-sga-results-announced-cole-bornefeld-wins-presidency/"
+      }
+     },
+     {
+      "office": "Director of Information Technology",
+      "name": "Aniya Johnson",
+      "src": {
+       "label": "Herald, 1 Sep 2022",
+       "url": "https://wkuherald.com/67791/news/sga-votes-in-new-senators-cabinet-members-at-first-meeting/"
+      }
+     },
+     {
+      "office": "Director of Enrollment and Student Experience",
+      "name": "Donte' Reed",
+      "src": {
+       "label": "Herald, 1 Sep 2022",
+       "url": "https://wkuherald.com/67791/news/sga-votes-in-new-senators-cabinet-members-at-first-meeting/"
+      }
+     },
+     {
+      "office": "Director of Public Relations",
+      "name": "Preston Romanov",
+      "src": {
+       "label": "Herald, 7 Sep 2022",
+       "url": "https://wkuherald.com/67853/news/sga-elects-committee-chairs-hears-from-provost-on-enhancement-plan/"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Lauren Willett",
+      "src": {
+       "label": "SGA Senate minutes, 8 Nov 2022",
+       "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes/minutes_11_8_22.pdf"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Yulia 'Julie' Mishchuk",
+       "src": {
+        "label": "Herald - censure hearing",
+        "url": "https://wkuherald.com/70591/news/sga-judicial-council-unanimously-votes-against-censure-of-president-bornefeld-regarding-use-of-social-media/"
+       }
+      },
+      {
+       "office": "Chief Justice",
+       "name": "Holden Schroeder",
+       "src": {
+        "label": "Herald, 1 Sep 2022",
+        "url": "https://wkuherald.com/67791/news/sga-votes-in-new-senators-cabinet-members-at-first-meeting/"
+       }
+      },
+      {
+       "office": "Secretary of the Senate",
+       "name": "Antonina Clementi",
+       "src": {
+        "label": "SGA Senate minutes, 8 Nov 2022",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes/minutes_11_8_22.pdf"
+       }
+      },
+      {
+       "office": "Parliamentarian",
+       "name": "Meghan Pierce",
+       "src": {
+        "label": "SGA Senate minutes, 8 Nov 2022",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes/minutes_11_8_22.pdf"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Student Mental Health and Wellbeing",
+       "chair": "Olivia Feck"
+      },
+      {
+       "name": "Outreach and Student Engagement",
+       "chair": "Matt Gadd",
+       "note": "Herald's 7 Sep 2022 first-meeting story called this 'Outreach and Student Experience'; the 8 Nov 2022 official Senate minutes call it 'Outreach and Student Engagement', which this site follows."
+      },
+      {
+       "name": "Legislative Operations",
+       "chair": "Elizabeth DeLozier"
+      },
+      {
+       "name": "Campus Improvements and Sustainability",
+       "chair": "Will Hemenover"
+      },
+      {
+       "name": "Diversity, Equity and Inclusion",
+       "chair": "Ahatali Tahiri",
+       "note": "Spelling unverified: Herald's 7 Sep 2022 story gives 'Ahatali Tahiri'; the 8 Nov 2022 official Senate minutes give 'Ataullah Tahiri'. Not resolved."
+      },
+      {
+       "name": "Community Relations",
+       "chair": "Caleb Collins",
+       "note": "Herald's 7 Sep 2022 first-meeting story called this 'Community Outreach'; the 8 Nov 2022 official Senate minutes call it 'Community Relations', which this site follows."
+      },
+      {
+       "name": "Enrollment and Student Experience",
+       "chair": "Jenna Wells",
+       "src": {
+        "label": "SGA Senate minutes, 8 Nov 2022",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes/minutes_11_8_22.pdf"
+       }
+      }
+     ],
+     "note": "Chairs elected at the second meeting of the year, 6 Sep 2022. Judiciary Council: Isaac Kind and Garrett Baum, confirmed 30 Aug 2022. A Nov. 8, 2022 Senate meeting also swore in Sarah Vincent as a senator-at-large, funded Midnight on the Hill with Bill 17-22-F, and heard that the Narcan initiative later passed in Feb. 2023 was already being pursued via grant application."
+    }
+   },
+   "documents": [
+    {
+     "file": "2022-23-senate-minutes-11-8-22.pdf",
+     "title": "Senate minutes, 8 November 2022",
+     "summary": "Official minutes of the 22nd Senate's twelfth meeting: officer and committee reports, Bill 17-22-F funding Midnight on the Hill, and the swearing-in of senator-at-large Sarah Vincent.",
+     "extract": "the organization has not been receiving as much money as they have in years passed",
+     "sga_pages": "1-8",
+     "page": 1,
+     "src": {
+      "label": "WKU SGA, Senate minutes 8 Nov 2022",
+      "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes/minutes_11_8_22.pdf"
+     }
+    }
+   ]
   },
   {
    "id": "2023-24",
@@ -12618,6 +12915,10 @@
       {
        "label": "WKU News, 30 Oct 2024",
        "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12212"
+      },
+      {
+       "label": "Herald, 29 Apr 2026",
+       "url": "https://wkuherald.com/93408/life/life-health/day-proclaimed-for-alzheimers-non-profit/"
       }
      ],
      "profile": [
@@ -12625,7 +12926,7 @@
       "Lucas took office at the first meeting of the 26th Senate on April 28, 2026, where outgoing president Rush Robinson presented him with the traditional red suit jacket passed from president to president. Lucas thanked the new cabinet, nominated his defeated campaign opponent Jaden Marshall as an at-large senator, calling his campus work \"phenomenal,\" and saw Gabi Pace and Cayden Bailey sworn in as chief of staff and chief communications officer. The meeting's speaker election deadlocked 9-9 between Amelia Tucker and Veronica Butler, a situation the governing documents did not address, and Butler won the seat in a re-vote.",
       "Days after taking office, Lucas was named a 2026 Truman Scholar, WKU's second in the award's history and Kentucky's only recipient that year, chosen from 781 candidates nationally; the scholarship funds $30,000 toward graduate or professional study for students committed to public service. A political science, legal studies and strategic communications major, he had spent that summer establishing the Civic Engagement Resource Center, a joint Mahurin Honors College, SGA and Housing and Residence Life initiative that opened 30 October 2024 with a lending collection on civic life, saying his goal was to get students \"talking about what it means to be a good citizen.\" In May, WKU's Omicron Delta Kappa circle named him its Heather Strode Circle Leader of the Year, an award recognizing collaboration, inclusivity, integrity, scholarship and service.",
       "Before he was sworn in as student regent, Lucas told the Herald he was \"generally concerned\" by a proposed $210 tuition increase; the Board of Regents approved a $204 increase days later, with outgoing regent Rush Robinson casting the only dissenting vote before handing the seat to Lucas.",
-      "Caden Lucas, a junior senator, WKU Spiritmaster, chairman of the Hilltoppers Vote Coalition and an employee of Bowling Green's Downtown Development Division, won the SGA presidential election on April 15, 2026, with running mates Jakob Barker for vice president and Will Derryberry for chief financial officer. Running under the motto \"Lead, build, deliver,\" his campaign centered on increasing awareness of SGA operations and outreach to the student body, and he defeated Jaden Marshall, who had sought to become the first Black male student body president. After the results were announced Lucas said he felt \"electric\" and that the \"work starts tomorrow,\" beginning with thank-you cards to supporters."
+      "At an April 28, 2026 proclamation ceremony in Centennial Mall marking \"Bike4Alz Awareness Day\" in Kentucky and Bowling Green, Lucas, then president-elect, spoke about losing both grandparents to dementia and Alzheimer's: his grandfather was diagnosed with dementia in 2016 and died in 2018, and his grandmother was diagnosed with Alzheimer's in 2021 and died in 2025. \"This is what this disease does,\" Lucas said. \"It doesn't just take a person. It separates them from the people who love them most and creates a barrier that feels insurmountable.\""
      ]
     }
    ],
@@ -12711,6 +13012,16 @@
       "label": "WKU News, 11 May 2026",
       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13098"
      }
+    },
+    {
+     "date": "2026-04-28",
+     "title": "Bike4Alz Awareness Day proclaimed in Centennial Mall",
+     "body": "Kentucky and Bowling Green proclaimed April 28, 2026 \"Bike4Alz Awareness Day,\" honoring the WKU-founded non-profit that has raised over $600,000 for Alzheimer's research since 2010. At the Centennial Mall ceremony, SGA President-elect Caden Lucas, a member of the fraternity that founded Bike4Alz, described losing his grandfather to dementia in 2018 and his grandmother to Alzheimer's in 2025.",
+     "src": {
+      "label": "Herald, 29 Apr 2026",
+      "url": "https://wkuherald.com/93408/life/life-health/day-proclaimed-for-alzheimers-non-profit/"
+     },
+     "campus": true
     }
    ],
    "organization": {
@@ -12769,7 +13080,7 @@
        }
       }
      ],
-     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026 and Herald, 5 Apr 2026, the latter quoting her 2 Apr 2026 weekly report to the 25th Senate) in Herald reporting; the official 25th Senate minutes of 14 Apr 2026 (in 2025-26's documents) twice give 'Sophie Stirling'. That is now three Herald mentions and the official minutes agreeing on 'Stirling' against one 'Sterling', which favors that spelling but does not fully settle it, since the 28 Apr Herald report post-dates all of them and could reflect a correction rather than an error. No committee chairs had been reported as of this update - the 26th Senate's first fall meeting had not yet occurred."
+     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026 and Herald, 5 Apr 2026, the latter quoting her 2 Apr 2026 weekly report to the 25th Senate) in Herald reporting; the official 25th Senate minutes of 14 Apr 2026 (in 2025-26's documents) twice give 'Sophie Stirling'. That is now three Herald mentions and the official minutes agreeing on 'Stirling' against one 'Sterling', which favors that spelling but does not fully settle it, since the 28 Apr Herald report post-dates all of them and could reflect a correction rather than an error. No committee chairs had been reported as of this update - the 26th Senate's first fall meeting had not yet occurred. The Herald's own 12 Nov 2025 story on Stirling's election to chief justice compounds the puzzle: it spells her name 'Stirling' four times in the body but 'Sterling' once in a quote attribution, so the inconsistency appears to be a recurring copy-editing slip rather than a deliberate correction."
     }
    },
    "status": "researched"
