@@ -2382,9 +2382,10 @@
       }
      ],
      "profile": [
-      "Steve Fuller entered the April 1980 Associated Student Government presidential race against David Rue and Tim Irons, the Herald reporting the three-way field on April 10.",
+      "Steve Fuller entered the April 1980 Associated Student Government presidential race against David Rue and Tim Irons; the Herald covered ASG hopefuls debating the issues at an April 3 candidates' forum before reporting the three-way field on April 10.",
       "Fuller won the presidency in the April 24 election, reported under the headline \"Persistence Pays Off in Steve Fuller Campaign.\" Mark Wilson and Greg Zoeller were elected to other top ASG offices the same day; Tim Irons's loss was covered separately.",
-      "In office, ASG under Fuller proposed a change to the organization's own title in October 1980 and asked the state to evaluate higher education funding in February 1981, as budget worries dominated the legislative session. His successor, Marcel Bush, was elected that April."
+      "Fuller's fall term was consumed by a running fight over dormitory room inspections. A September 4 inspection measure was voted down amid criticism of how the vote was conducted; a September 11 bill calling for a ban on bugs in the dorms drew a mocking editorial cartoon and an editorial calling the university's protective inspection policy unnecessary; and by November 13 the Herald reported ASG had nearly slept through its own vote before re-endorsing inspections, followed a week later by a bill proposing a stricter room-entry rule.",
+      "In office, ASG under Fuller also proposed a change to the organization's own title in October 1980 and asked the state to evaluate higher education funding in February 1981, as budget worries dominated the legislative session. His successor, Marcel Bush, was elected that April."
      ]
     }
    ],
@@ -2468,6 +2469,60 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5627"
      },
      "campus": true
+    },
+    {
+     "date": "1980-04-03",
+     "title": "ASG hopefuls debate the issues; ASG weighs opposing a UCB change",
+     "body": "Associated Student Government presidential hopefuls discussed the issues and courted votes at a candidates' forum ahead of the spring election. The same issue reported ASG considering opposition to a proposed change to the University Center Board's structure.",
+     "src": {
+      "label": "Herald 55:49, 3 Apr 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5633"
+     }
+    },
+    {
+     "date": "1980-09-04",
+     "title": "ASG room inspection measure defeated amid criticism",
+     "body": "A proposed ASG measure on dormitory room inspections was voted down, in a session a separate Herald article criticized for how the vote was conducted. The defeat opened a fall-long fight over dorm inspection policy.",
+     "src": {
+      "label": "Herald 56:3, 4 Sep 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5526"
+     }
+    },
+    {
+     "date": "1980-09-11",
+     "title": "ASG bill targets pests in the dorms",
+     "body": "ASG introduced a bill calling for a ban on bugs in residence halls; the Herald's editorial cartoon depicted a cockroach imperiled by the resolution. The paper's editorial page separately argued the university's protective inspection policy was unnecessary.",
+     "src": {
+      "label": "Herald 56:5, 11 Sep 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5524"
+     }
+    },
+    {
+     "date": "1980-11-13",
+     "title": "ASG re-endorses dorm inspections after nearly missing the vote",
+     "body": "ASG voted to re-endorse dormitory room inspections, in a session the Herald reported the government had nearly slept through. The same issue covered ASG's sponsorship of an international film and dance series and an attorney's interest in a dorm inspection case.",
+     "src": {
+      "label": "Herald 56:22, 13 Nov 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5547"
+     }
+    },
+    {
+     "date": "1980-11-20",
+     "title": "ASG bill proposes a stricter room-entry rule",
+     "body": "ASG introduced a bill proposing a stricter rule governing staff entry into student rooms, continuing the fall's running fight over dormitory inspections.",
+     "src": {
+      "label": "Herald 56:24, 20 Nov 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5544"
+     }
+    },
+    {
+     "date": "1981-03-24",
+     "title": "Resolution 80-32 asks for change machines in the dorms",
+     "body": "ASG passed Resolution 80-32, requesting that change machines be installed in residence halls.",
+     "src": {
+      "label": "SGA Resolution 80-32, Change Machines",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/277/"
+     }
     }
    ],
    "status": "researched",
@@ -3000,9 +3055,31 @@
       "label": "Herald 59:51, 10 Apr 1984",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5900"
      }
+    },
+    {
+     "date": "1983-04-12",
+     "title": "ASG election day: candidates court votes for the top offices",
+     "body": "The Herald urged students to the polls for the Associated Student Government election. Beyond the presidential contest, candidates for ASG's other top offices - including Bob Shults, Laura McClellan, Traci Turner, Kim Binkley and Allan Kujala - each drew endorsement letters in the paper; the Herald index does not specify which office each sought.",
+     "src": {
+      "label": "Herald 58:54, 12 Apr 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2355"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Jack Smith",
+      "src": {
+       "label": "Herald 58:55, 14 Apr 1983",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2356"
+      }
+     }
+    ],
+    "note": "Bob Shults, Laura McClellan, Traci Turner, Kim Binkley and Allan Kujala all appear as candidates for ASG's top offices in the April 1983 election coverage; the Herald index does not specify which offices they sought or who won them."
+   }
   },
   {
    "id": "1984-85",
