@@ -4551,9 +4551,42 @@
       "url": "https://digitalcommons.wku.edu/context/sga/article/1941/viewcontent/sga_1993_4_13_minutes.pdf"
      },
      "campus": true
+    },
+    {
+     "date": "1992-04-09",
+     "title": "Herald previews the race and the rename referendum",
+     "body": "The Herald previewed the Associated Student Government presidential race under \"Mistianna Holcomb, Joe Rains Vying for Presidency,\" profiled candidate Susan Mitchell under \"Susan Mitchell Has a Fresh Perspective,\" and reported that students would soon vote on a referendum to rename the Associated Student Government the Student Government Association. No source found confirms what office Mitchell sought or whether she won it.",
+     "src": {
+      "label": "Herald 67:51, 9 Apr 1992",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7707"
+     }
+    },
+    {
+     "date": "1992-04-14",
+     "title": "Turnout worries and candidate profiles filled the ballot issue",
+     "body": "The same issue that reported Rains' win ran the Herald's concern piece \"Many Students Won't Vote\" alongside profile pieces on the other candidates: \"Mark Miller's Involvement Makes Him a Leader,\" \"Mistianna Holcomb Takes a Stand for Students,\" and \"Melony Jones Loved & Respected by Peers.\"",
+     "src": {
+      "label": "Herald 67:52, 14 Apr 1992",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7706"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Joe Rains",
+      "src": {
+       "label": "Herald 67:54, 21 Apr 1992",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7704"
+      }
+     }
+    ],
+    "senate": {
+     "note": "Minutes from 25 Aug 1992 through 13 Apr 1993 survive, recording a congress occupied with state budget cuts, tuition increases and a Frankfort rally, but no full officer list, committee structure, or seat count survives beyond the president."
+    }
+   }
   },
   {
    "id": "1993-94",
@@ -5317,9 +5350,57 @@
       "url": "https://digitalcommons.wku.edu/context/sga/article/2303/viewcontent/sga_1997_4_22_minutes_w.pdf"
      },
      "campus": true
+    },
+    {
+     "date": "1996-04-18",
+     "title": "Few turn out for the election that chose Miller",
+     "body": "The same Herald issue that declared \"It's Kristen Miller's Time\" also ran the headline \"Few Turn Out for Election,\" continuing the decade's pattern of falling voter participation in SGA races.",
+     "src": {
+      "label": "Herald 71:54, 18 Apr 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2988"
+     }
+    },
+    {
+     "date": "1996-09-24",
+     "title": "Roller blades, skateboards, and a technology push",
+     "body": "A September 24 meeting took up campus rules on roller blading and skateboards alongside Provide-A-Ride, a voter registration drive, a bonfire, Big Red Roar, the budget, and student email accounts.",
+     "src": {
+      "label": "SGA Meeting Minutes, 24 Sep 1996",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/548/"
+     }
+    },
+    {
+     "date": "1997-01-21",
+     "title": "Website, vacancies, and bylaws open the spring",
+     "body": "The January 21 meeting discussed the organization's website, Provide-A-Ride, open vacancies on the body, the budget, and the by-laws, as the congress organized itself for the spring semester.",
+     "src": {
+      "label": "SGA Meeting Minutes, 21 Jan 1997",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Kristen Miller",
+      "src": {
+       "label": "Herald 71:54, 18 Apr 1996, \"It's Kristen Miller's Time\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2988"
+      }
+     }
+    ],
+    "senate": {
+     "committees": [
+      {
+       "name": "Technology Committee",
+       "note": "Created at the 17 September 1996 meeting to take up student email accounts and other technology questions."
+      }
+     ],
+     "note": "Archive does not preserve a full senate officer list or seat count for this year."
+    }
+   }
   },
   {
    "id": "1997-98",
