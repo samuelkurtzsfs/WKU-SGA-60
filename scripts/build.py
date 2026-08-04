@@ -88,9 +88,14 @@ def ext(url, label, cls="", extra=""):
 
 
 def src_link(src, cls=""):
+    """Render a citation. When the archive gives us a direct file, offer it:
+    the record page for context, the PDF for the document itself."""
     if not src or not src.get("url"):
         return h(src.get("label", "")) if src else ""
-    return ext(src["url"], h(src.get("label", src["url"])), cls)
+    out = ext(src["url"], h(src.get("label", src["url"])), cls)
+    if src.get("pdf"):
+        out += " " + ext(src["pdf"], "PDF", (cls + " pdf").strip())
+    return out
 
 
 # ---------------------------------------------------------------- style
@@ -260,6 +265,9 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
 .lsec{margin:0 0 26px}
 
 /* ---- filters and search ---- */
+.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:22px 0 0;font-size:.92rem}
+.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
+.decnav span{color:var(--ink3)}
 .tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
 .field{display:block;max-width:26rem}
 .field .lab{margin-bottom:6px}
@@ -307,8 +315,8 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
  .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav,
  .yearnav{display:none!important}
  .yrbar{position:static!important;box-shadow:none}
- details.hidx{background:none}
- details.hidx[open] .hxin{display:block}
+ details.hidx{background:none;border-left-color:#999}
+ .yr,.hx{break-inside:avoid}
  body{font-size:11pt;color:#000}
  a{color:#000;text-decoration:none}
  a.ext::after{content:""}
@@ -1200,9 +1208,6 @@ details.hidx summary .hn{font-weight:600}
 .hidx .hx .when{font-size:.79rem}
 
 /* ---- timeline: navigation and filters ---- */
-.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:22px 0 0;font-size:.92rem}
-.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
-.decnav span{color:var(--ink3)}
 .yearnav{border-top:1px solid var(--line2);margin:20px 0 0;padding:14px 0 4px}
 .ynrow{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px 8px;margin:0 0 9px}
 .ynlab{flex:0 0 3.6rem;font-size:11px;font-weight:600;letter-spacing:.12em;
@@ -1234,7 +1239,7 @@ def hx_date(iso):
         top, yr = parts[0], parts[1]
     else:
         top, yr = disp, ""
-    y = f'<span class="yy">{h(yr)}</span>' if yr else ""
+    y = f' <span class="yy">{h(yr)}</span>' if yr else ""
     return f'<time datetime="{mach}"><span class="dm">{h(top)}</span>{y}</time>'
 
 
@@ -1253,20 +1258,18 @@ def timeline_sections(ys, by_year, up):
             if e.get("src", {}).get("file"):
                 cites.append(f'<a href="{up}docs/{h(e["src"]["file"])}">Read it here</a>')
             tag = '<span class="tag">campus</span>' if e.get("campus") else ""
-            key = h(f'{e["title"]} {e["body"]} {fmt_date(e["date"])[0]} {yid}'.lower())
             rows.append(
-                f'<article class="hx" id="{h(yid)}-{aid}" data-k="e" data-t="{key}">'
+                f'<article class="hx" id="{h(yid)}-{aid}" data-k="e">'
                 f'<div class="when">{hx_date(e["date"])}{tag}</div>'
                 f'<div class="t"><h3>{h(e["title"])}</h3><p>{h(e["body"])}</p>'
                 f'<p class="cite">{"".join(cites)}</p></div></article>')
         hx = []
         for x in sorted(v["herald"], key=lambda e: e["date"]):
             when = hx_date(x["date"])
-            cite = src_link({"label": x["issue"][:60], "url": x["url"]})
-            shown = fmt_date(x["date"])[0]
+            cite = src_link({"label": x["issue"][:60], "url": x["url"],
+                             "pdf": x.get("pdf")})
             for ln in x["lines"]:
-                key = h(" ".join((ln, shown, yid)).lower())
-                hx.append(f'<div class="hx" data-k="i" data-t="{key}">'
+                hx.append(f'<div class="hx" data-k="i">'
                           f'<div class="when">{when}</div>'
                           f'<div class="t">{h(ln)} {cite}</div></div>')
         hx = "".join(hx)
@@ -1305,14 +1308,22 @@ var hf=document.getElementById('hf'),hr=document.getElementById('hr'),
     jumps={},kind='all';
 [].slice.call(document.querySelectorAll('.yearnav a')).forEach(function(a){
  jumps[a.dataset.y]=a;});
+// the search key is the text of the line itself, plus the year and the names in
+// the year's heading, so a president's name finds their year
+secs.forEach(function(sec){
+ var head=sec.querySelector('.yrbar').textContent+' '+sec.dataset.y;
+ sec._rows=[].slice.call(sec.querySelectorAll('.hx'));
+ sec._rows.forEach(function(r){
+  r._k=(r.textContent+' '+head).replace(/\\s+/g,' ').toLowerCase();});
+});
 function word(n,s,p){return n+' '+(n===1?s:p);}
 function run(){
  var q=hf.value.toLowerCase().trim(),ne=0,ni=0,ny=0;
  secs.forEach(function(sec){
-  var ve=0,vi=0,rows=sec.querySelectorAll('.hx');
+  var ve=0,vi=0,rows=sec._rows;
   for(var i=0;i<rows.length;i++){
    var r=rows[i],isx=r.dataset.k==='i',
-       ok=(kind==='all'||(kind==='e')===!isx)&&(!q||r.dataset.t.indexOf(q)>-1);
+       ok=(kind==='all'||(kind==='e')===!isx)&&(!q||r._k.indexOf(q)>-1);
    r.hidden=!ok;
    if(ok){if(isx)vi++;else ve++;}
   }
@@ -1326,13 +1337,13 @@ function run(){
   ne+=ve;ni+=vi;if(ve+vi)ny++;
  });
  var counted=[];
- if(kind!=='i')counted.push(word(ne,'entry','entries'));
- if(kind!=='e')counted.push(word(ni,'index line','index lines'));
+ if(kind!=='i'&&(ne||!q))counted.push(word(ne,'entry','entries'));
+ if(kind!=='e'&&(ni||!q))counted.push(word(ni,'index line','index lines'));
  var what=counted.join(' and ');
  if(q&&!(ne+ni))hr.textContent='Nothing matches \\u201c'+hf.value.trim()+'\\u201d. '
    +'Try a name, a year or a single word.';
- else if(q)hr.textContent=what+' match \\u201c'+hf.value.trim()+'\\u201d, in '
-   +word(ny,'year','years')+'.';
+ else if(q)hr.textContent=what+(ne+ni===1?' matches \\u201c':' match \\u201c')
+   +hf.value.trim()+'\\u201d, in '+word(ny,'year','years')+'.';
  else hr.textContent='Showing '+what+' across '+word(secs.length,'year','years')+'.';
  if(cl)cl.hidden=!q;
  var p=new URLSearchParams(location.search);
@@ -1812,7 +1823,7 @@ def _span(rep, key):
 
 def render_sources(ys, leg, herald, n_docs, n_port, n_gal):
     rep = source_report(ys)
-    total = rep["_total"]
+    total = rep["_total"] or 1
     vols = herald_volumes(ys)
     n_lead = sum(len(y["leaders"]) for y in ys)
     n_hx = sum(len(e["lines"]) for e in herald
@@ -1837,7 +1848,7 @@ def render_sources(ys, leg, herald, n_docs, n_port, n_gal):
             f'<tr><td>{name}'
             f'<span class="sh"><br>{h(r["first"])}&#8211;{h(r["last"])}</span></td>'
             f'<td class="n">{r["n"]}</td><td class="n">{share}%</td>'
-            f'<td class="n">{len(r["urls"]) or "&#8212;"}</td>'
+            f'<td class="n">{len(r["urls"])}</td>'
             f'<td class="n">{len(r["years"])}</td></tr>')
     holdings = (
         '<div class="tscroll"><table class="holdings">'
@@ -1994,9 +2005,9 @@ def render_sources(ys, leg, herald, n_docs, n_port, n_gal):
         '<p>Minutes are summaries typed by a secretary, not transcripts. Bills are numbered '
         'by session and the numbering restarts, so a bill number without its session year '
         'identifies nothing.</p>',
-        f'<li>The archived collection: '
+        f'<li>The archived collection at '
         f'{ext("https://digitalcommons.wku.edu/sga/", "digitalcommons.wku.edu/sga")} '
-        f'&#8212; constitutions, minutes, correspondence, older legislation.</li>'
+        f'holds constitutions, minutes, correspondence and older legislation.</li>'
         f'<li>What SGA posts now: {ext("https://www.wku.edu/sga/", "wku.edu/sga")}.</li>'
         f'<li>For a missing session, try '
         f'{ext("https://web.archive.org/web/*/wku.edu/sga/*", "web.archive.org/web/*/wku.edu/sga/*")}.</li>'
@@ -2066,8 +2077,8 @@ def render_sources(ys, leg, herald, n_docs, n_port, n_gal):
         'headlines, and the wire stories themselves are not held here. Treat national '
         'coverage of a student government as evidence of what was said about SGA, not of '
         'what SGA did.</p>',
-        f'<li>{ext("https://www.bgdailynews.com/search/?q=WKU+student+government", "bgdailynews.com, search WKU student government")} '
-        f'&#8212; most of it behind a paywall.</li>'
+        f'<li>{ext("https://www.bgdailynews.com/search/?q=WKU+student+government", "bgdailynews.com, search WKU student government")}. '
+        f'Most of it sits behind a paywall.</li>'
         f'<li>Check any national claim against the <cite>Herald</cite> and against SGA&#8217;s '
         f'own minutes for the same week before it goes into the record.</li>'))
 

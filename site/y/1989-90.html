@@ -173,6 +173,9 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
 .lsec{margin:0 0 26px}
 
 /* ---- filters and search ---- */
+.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:22px 0 0;font-size:.92rem}
+.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
+.decnav span{color:var(--ink3)}
 .tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
 .field{display:block;max-width:26rem}
 .field .lab{margin-bottom:6px}
@@ -220,8 +223,8 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
  .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav,
  .yearnav{display:none!important}
  .yrbar{position:static!important;box-shadow:none}
- details.hidx{background:none}
- details.hidx[open] .hxin{display:block}
+ details.hidx{background:none;border-left-color:#999}
+ .yr,.hx{break-inside:avoid}
  body{font-size:11pt;color:#000}
  a{color:#000;text-decoration:none}
  a.ext::after{content:""}
