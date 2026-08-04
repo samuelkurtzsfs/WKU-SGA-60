@@ -5790,11 +5790,15 @@
      "plaque_term": "2002-03",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
+     "note": "Confirmed in the College Heights Herald's own election headline, which ran the week she won.",
      "sources": [
+      {
+       "label": "College Heights Herald 77:51, 11 Apr 2002 - \"Jamie Sears Wins Election in Landslide\" (O'Connor, Molly)",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9175/"
+      },
       {
        "label": "Herald, 19 Sep 2002",
        "url": "https://wkuherald.com/57861/news/sga-to-look-for-lost-funds/"
@@ -5809,6 +5813,7 @@
       }
      ],
      "profile": [
+      "Sears, a junior public relations major from Melber, won the presidency in a landslide, defeating senior Sam Stinson 1,284 votes to 594 in the April 2002 general election that also seated her incoming executive team: John Bradley as executive vice president, Ross Pruitt as vice president of finance, Anna Coats as vice president of public relations, and Brandon Copeland as vice president of administration.",
       "Sears opened her 2002-03 term as SGA president under immediate scrutiny. Seventeen months after congress passed a bill putting about $5,000 of leftover budget money toward an on-campus gazebo, members discovered the gazebo was never built and the money was gone. When three members petitioned congress in September over $28,000 they said was unaccounted for, Sears told the Herald, \"I have absolutely no idea where that money went.\" The petition was withdrawn only after her executive council created an ad hoc financial review committee.",
       "By October the money had been traced: it had slipped back into SGA's general fund and been spent on other things, including computers for the SGA office. Sears acknowledged that she and former student activities director Scott Taylor had decided during the summer where the leftover money, which included the gazebo funds, would be allocated, saying other executive council members were consulted through email. She said the financial review committee would explain the budget findings to congress, and no move was made to set aside new gazebo money.",
       "Sears finished the year on stronger footing. She traveled with about 20 Western students to Frankfort to oppose state budget cuts to higher education, calling the trip one of SGA's greatest accomplishments: \"That was a great feeling seeing students from everywhere rallying for the same cause.\" Under her leadership congress debated more than 55 pieces of legislation and passed the first student referendum in SGA history, a $3 fee for radio station Revolution 91.7 that students approved in the spring election. Her final meeting as president came on April 22, 2003."
@@ -5917,7 +5922,57 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Jamie Sears",
+      "src": {
+       "label": "WKU News, 11 Apr 2002",
+       "url": "http://web.archive.org/web/20020423023003/http://www.wku.edu/news/releases02/april/sga.html"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "John Bradley",
+      "note": "Championed the WWHR radio-fee referendum; elected SGA president for 2003-04.",
+      "src": {
+       "label": "Herald, 4 Mar 2003",
+       "url": "https://wkuherald.com/57037/news/students-to-vote-on-proposal-calling-for-a-student-fee-for-funding-campus-radio-station/"
+      }
+     },
+     {
+      "office": "Vice President of Finance",
+      "name": "Ross Pruitt",
+      "src": {
+       "label": "Herald, 1 Oct 2002",
+       "url": "https://wkuherald.com/57669/news/missing-sga-funds-accounted-for/"
+      }
+     },
+     {
+      "office": "Vice President of Public Relations",
+      "name": "Anna Coats",
+      "src": {
+       "label": "WKU News, 11 Apr 2002",
+       "url": "http://web.archive.org/web/20020423023003/http://www.wku.edu/news/releases02/april/sga.html"
+      }
+     },
+     {
+      "office": "Vice President of Administration",
+      "name": "Brandon Copeland",
+      "src": {
+       "label": "WKU News, 11 Apr 2002",
+       "url": "http://web.archive.org/web/20020423023003/http://www.wku.edu/news/releases02/april/sga.html"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [],
+     "committees": [],
+     "note": "No senate officer or committee roster for 2002-03 could be confirmed; the ad hoc financial review committee formed in the gazebo-funds dispute is the only committee named in the sources found."
+    }
+   }
   },
   {
    "id": "2003-04",
@@ -6247,11 +6302,15 @@
      "plaque_term": "2005-06",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Named in April 2004 Herald coverage as incoming executive vice president, so she came up through the cabinet.",
+     "note": "Named in April 2004 Herald coverage as incoming executive vice president, so she came up through the cabinet. Confirmed as a 2005 presidential candidate in College Heights Herald election coverage, and the paper's own election-night story names her as the winner.",
      "sources": [
+      {
+       "label": "College Heights Herald 80:38, 24 Feb 2005 - \"Two Announce Plans to Run for Student Government Association President - Katie Dawson, Josh Collins\" (Coulter, Amber)",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8934/"
+      },
       {
        "label": "Daily News, 20 Nov 2005",
        "url": "https://bgdailynews.com/2005/11/20/happy-birthday-dear-western/"
@@ -6374,7 +6433,43 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Katie Dawson",
+      "src": {
+       "label": "Herald via Wayback, 17 Mar 2005",
+       "url": "https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Mason Stevenson",
+      "note": "Read a letter to the March 2006 SGA meeting airing a rift between the executive and legislative branches.",
+      "src": {
+       "label": "Herald via Wayback, 17 Mar 2005",
+       "url": "https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml"
+      }
+     },
+     {
+      "office": "Vice President",
+      "name": "Melissa Paris",
+      "note": "Office not further specified in the election coverage; won unopposed alongside Stevenson.",
+      "src": {
+       "label": "Herald via Wayback, 17 Mar 2005",
+       "url": "https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [],
+     "size": 25,
+     "committees": [],
+     "note": "All 25 senate candidates on the March 2005 ballot ran unopposed and were elected. A senator surnamed Johnson was reported elected speaker of the senate in December 2005, but no source found gives a first name, so the office is left unfilled here rather than guessed."
+    }
+   }
   },
   {
    "id": "2006-07",
