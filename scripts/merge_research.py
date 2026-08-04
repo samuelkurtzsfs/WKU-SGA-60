@@ -92,6 +92,16 @@ def main():
             t = e["title"].strip()
             if t.lower() in existing or ev_v.get(t) in BAD:
                 continue
+            # Sam's dating law: every event carries at least a year. A date that
+            # is not YYYY, YYYY-MM or YYYY-MM-DD does not get published.
+            import re as _re
+            if not _re.fullmatch(r"\d{4}(-\d{2})?(-\d{2})?", str(e.get("date", ""))):
+                pruned += 1
+                continue
+            if len(e["date"]) == 4:
+                e["date"] = e["date"] + "-01-01"
+            elif len(e["date"]) == 7:
+                e["date"] = e["date"] + "-01"
             ne = {"date": e["date"], "title": t, "body": e["body"],
                   "src": {"label": e["src"]["label"], "url": e["src"]["url"]}}
             if e.get("campus"):
