@@ -1603,11 +1603,11 @@
      "name": "Steve Henry",
      "plaque_term": "1975-76",
      "role": "president",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Check whether this is the Steve Henry who later served as Lieutenant Governor of Kentucky (1995-2003). Do not assert the identification without a source.",
+     "note": "Likely the Steve Henry who later served as Lieutenant Governor of Kentucky (1995-2003). Wikipedia's biography of Stephen L. Henry (b. 8 Oct 1953) states he was elected WKU Student Body President \"in his second attempt, after losing a close election the preceding year to Jeff Costello,\" and served on the WKU Board of Regents as a Kentucky resident while president - matching this record's own Herald sourcing almost exactly: Jeffrey Consolo (not \"Costello\", likely a Wikipedia transcription of the same name) won the presidency in spring 1974, and the Herald's 30 Apr 1976 wrap-up of Henry's term specifically describes him balancing the dual jobs of student regent and ASG president. The match in name, university, era, and this specific narrative beat is treated as verification, but the identification rests on a secondary source (Wikipedia), not a WKU archive document that states it outright - flagged here rather than treated as fully closed.",
      "sources": [
       {
        "label": "Herald 52:7, 19 Sep 1972",
@@ -1620,12 +1620,17 @@
       {
        "label": "Herald 51:59, 30 Apr 1976",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5150/"
+      },
+      {
+       "label": "Wikipedia - Steve Henry",
+       "url": "https://en.wikipedia.org/wiki/Steve_Henry"
       }
      ],
      "profile": [
       "Steve Henry appeared in ASG coverage as early as September 1972, when the Herald reported his view that the Associated Student Government had lost respect.",
       "Henry won the spring 1974 election on a ticket with Jeff Consolo, and resigned his post running the student discount program after the victory.",
-      "As president in 1975-76 Henry moved in November to change ASG's concert proposal after a money-losing fall season, while a student group urged support for his energy awareness plan. At year's end the Herald summed up his tenure with a piece on how the role had required balancing the twin jobs of student regent and ASG president, which he held at the same time."
+      "As president in 1975-76 Henry moved in November to change ASG's concert proposal after a money-losing fall season, while a student group urged support for his energy awareness plan. At year's end the Herald summed up his tenure with a piece on how the role had required balancing the twin jobs of student regent and ASG president, which he held at the same time.",
+      "A Wikipedia biography of Stephen L. Henry, later the 52nd Lieutenant Governor of Kentucky (1995-2003), describes an orthopedic surgeon and WKU alumnus who was elected Student Body President on his second attempt after an earlier loss, and who sat on the WKU Board of Regents as president - a career arc that lines up point for point with this record's own Herald sourcing, though no WKU archive document has yet been found that states the identification directly."
      ]
     }
    ],
@@ -1729,6 +1734,26 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5139/"
      },
      "campus": true
+    },
+    {
+     "date": "1976-04-02",
+     "title": "Bruce Smith and Christy Vogt survive the primary, 527 ballots cast",
+     "body": "The Herald reported the Associated Student Government presidential primary under the headline \"Bruce Smith, Christy Vogt Survive as 527 Cast Ballots,\" the two advancing to the 9 April runoff that Vogt went on to win.",
+     "src": {
+      "label": "Herald 51:51, 2 Apr 1976",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5141/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1976-04-27",
+     "title": "Herald supplement recaps a year of ASG wins",
+     "body": "A special supplement to the Herald, paid for and written by the Associated Student Government, summed up the outgoing Henry administration's year: women's hours abolished with ASG's backing, better intramural facilities credited to ASG resolutions, a new ASG discount card program, a second campus site for cashing checks, and a Veterans on Campus book exchange. The supplement also printed the year's roster of congress members and its bills and resolutions, and carried Christy Vogt's own piece on laundry facility improvement.",
+     "src": {
+      "label": "Student Insight (Herald supplement), 27 Apr 1976",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5151/"
+     },
+     "campus": true
     }
    ],
    "status": "researched"
@@ -1758,8 +1783,16 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5143/"
       },
       {
+       "label": "Herald 51:51, 2 Apr 1976",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5141/"
+      },
+      {
        "label": "Herald 51:53, 9 Apr 1976",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5139/"
+      },
+      {
+       "label": "Herald 52:49, 1 Apr 1977",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5374/"
       },
       {
        "label": "Herald 52:52, 12 Apr 1977",
@@ -1772,7 +1805,7 @@
      ],
      "profile": [
       "Christy Vogt entered the spring 1976 Associated Student Government campaign with an endorsement from Herald columnist John Butchko, in an issue whose front section also covered the start of impeachment hearings against congress member Gerard Faulk and an editorial warning the university's new Faculty Senate away from ASG's own troubles.",
-      "Vogt won the presidency, the Herald reporting the result on 9 April 1976 under the headline \"Christy Vogt Wins Election,\" with her own note of thanks to voters in the same issue - the same week Faulk was acquitted.",
+      "Vogt and Bruce Smith survived the 2 April primary as the Herald reported 527 ballots cast, then Vogt won the presidency outright, the paper reporting the result on 9 April 1976 under the headline \"Christy Vogt Wins Election,\" with her own note of thanks to voters in the same issue - the same week Faulk was acquitted.",
       "In office for 1976-77, Vogt's congress created a constitutional revision committee within its first month (Bill 2, 7 September 1976) and kept revision on its agenda all year. It asked the university for a minimum wage policy for student employees (Resolution, 26 October 1976), recommended preregistration for all students, and opposed a proposed tuition increase (Bill 9, 8 March 1977) while creating a Complaint Committee to field student grievances the same meeting. A resolution on discrimination failed in February 1977 with fourteen members abstaining. The fall Seals and Crofts concert lost the organization $3,800, a recurring sore point ASG had wrestled with under Vogt's predecessors as well.",
       "Vogt wrote her own case for the office in the Herald - \"Urges Involvement,\" 12 April 1977, days before Bob Moore won the presidency to succeed her by a 26-vote margin. She closed her term on 26 April 1977 with a letter to Congress thanking its members and recommending four items to the administration: constitutional revision, extended hours for student buildings, open visitation, and advance registration - the same four causes her congress had pushed all year.",
       "WKU's own archive later indexes her, alongside her maiden name, as Christy Vogt Mollozzi, and separately as Christy Mollozzi in President's Office records tied to Marketing & Promotions - evidence, though not a documented statement, that she went on to a career on the university's own staff."
@@ -1788,6 +1821,16 @@
       "label": "Herald 52:53, 15 Apr 1977",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5370"
      }
+    },
+    {
+     "date": "1977-04-01",
+     "title": "Four candidates open the race to succeed Vogt",
+     "body": "The Herald previewed a crowded ASG election: Tom Blair, Kirt Grubbs, Mark McChesney and Bob Moore all sought the presidency, with voting set for a Tuesday primary. Three candidates ran for the administrative vice presidency and four for the activities post in the same election.",
+     "src": {
+      "label": "Herald 52:49, 1 Apr 1977",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5374/"
+     },
+     "campus": true
     },
     {
      "date": "1976-09-07",
@@ -1888,6 +1931,10 @@
      "note": "Elected ASG president by a 26-vote margin, reported 15 April 1977. Herald bylines call him 'Bob Moore.'",
      "sources": [
       {
+       "label": "Herald 52:49, 1 Apr 1977",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5374/"
+      },
+      {
        "label": "Herald 52:51, 8 Apr 1977",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5372"
       },
@@ -1909,7 +1956,7 @@
       }
      ],
      "profile": [
-      "Moore entered the 1977 Associated Student Government presidential race against Tom Blair. The Herald's April 8 issue set up the contest alongside the treasurer's race between George Carlson and rivals; four days later Mark McChesney's letter backing Moore ran alongside endorsements for the rest of the ticket, as outgoing president Christy Vogt urged students to get involved.",
+      "Moore was one of four candidates - with Tom Blair, Kirt Grubbs and Mark McChesney - who opened the 1977 Associated Student Government presidential race on April 1. Moore and Blair survived the primary into the general election; McChesney did not, and by April 12 his letter backing Moore ran in the Herald alongside endorsements for the rest of the ticket, as outgoing president Christy Vogt urged students to get involved. The Herald's April 8 issue had set up the contest alongside the treasurer's race between George Carlson and rivals.",
       "Moore won on April 15, 1977, by 26 votes over Blair - one of the narrowest presidential margins in the record - in an issue that also carried the faculty asking for a say in hiring and Western fighting a beer licence for a local pizzeria.",
       "That October, as president, Moore publicly questioned how freshman candidates in that fall's class elections were spending their campaign money. The comment drew enough pushback that the Herald ran an editorial the same week headlined 'Bob Moore's Comment Isn't Good Politics.'",
       "The archive does not yet show what Moore's administration did over the winter and into the spring beyond the ordinary business of readying his succession - see the 1978 election events below. By September 1978, after his term had ended, the Herald reported that Moore had been found ineligible for another Associated Student Government job; the archive does not yet hold the article's account of why."
