@@ -184,6 +184,7 @@
      ],
      "profile": [
       "Menser headed the Associated Student Government from the start of the 1967-68 year, appearing alongside President Kelly Thompson in a 14 September 1967 Herald article welcoming students back to campus.",
+      "That fall the idea of a student seat on the Board of Regents was already circulating: a 2 November 1967 Herald article headlined 'Ward Favors Student on Board of Regents' reported support for the idea four months before an enabling bill reached committee.",
       "That December the Herald reported an Associated Students survey of student activity preferences and, in the same 8 December 1967 issue, ran a piece by Dennis Jaffe commending the government's efforts; the same issue covered the Kentucky Intercollegiate Press Association backing a proposal for student representation.",
       "In February 1968 Western sent lobbyists to Frankfort for a bill to seat a student on the Board of Regents; on 4 April 1968 the Herald reported Menser had assumed duties as the board's first student regent, a non-voting seat.",
       "As his term closed, the Herald's 29 April 1968 issue - the same one covering the Straeffer-Whitley presidential race to succeed him - carried both a piece headlined 'Menser Discusses Head Fee' and a separate retrospective, 'Past Performance of Associated Student Government Analyzed'. The archive does not yet hold the text of either article, only their headlines."
@@ -191,6 +192,34 @@
     }
    ],
    "events": [
+    {
+     "date": "1967-10-14",
+     "title": "Rodes-Harlin Hall opens as a nine-story women's dorm",
+     "body": "The Herald covered the opening of Rodes-Harlin Hall, a new nine-story women's residence hall, as campus construction continued to expand housing capacity.",
+     "src": {
+      "label": "Herald 47:6, 14 Oct 1967",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4727/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1967-11-02",
+     "title": "Herald floats a student seat on the Board of Regents",
+     "body": "A Herald article headlined 'Ward Favors Student on Board of Regents' reported support for putting a student on the Board of Regents, months before Western sent lobbyists to Frankfort or a bill reached committee.",
+     "src": {
+      "label": "Herald 47:10, 2 Nov 1967",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4735/"
+     }
+    },
+    {
+     "date": "1967-11-02",
+     "title": "ASG sponsors a Friday dance",
+     "body": "The same issue that floated a student regent seat also reported the Associated Student Government sponsoring a campus dance that Friday.",
+     "src": {
+      "label": "Herald 47:10, 2 Nov 1967",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4735/"
+     }
+    },
     {
      "date": "1967-12-08",
      "title": "ASG survey of student activity preferences",
@@ -210,11 +239,11 @@
      }
     },
     {
-     "date": "1968-02-01",
+     "date": "1968-02-29",
      "title": "WKU sends lobbyists to Frankfort for a student on the Board of Regents",
      "body": "The same Herald issue carries a tuition increase, a discussion group on major issues before the Associated Student Government and a committee investigating women's dormitory rules. This is the origin of the student regent seat.",
      "src": {
-      "label": "Herald 47:20, 1968",
+      "label": "Herald 47:20 [21], 29 Feb 1968",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9003/"
      }
     },
@@ -225,6 +254,24 @@
      "src": {
       "label": "Herald 47:18, 8 Feb 1968",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9006"
+     }
+    },
+    {
+     "date": "1968-02-22",
+     "title": "Herald questions ASG's Judicial Council as students organize a book swap",
+     "body": "Bill Martin's column questioned the Judicial Council's work, while the same issue reported the Associated Student Government directing a student book swap.",
+     "src": {
+      "label": "Herald 47:20, 22 Feb 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9004/"
+     }
+    },
+    {
+     "date": "1968-04-11",
+     "title": "Filing reveals few candidates for the spring election",
+     "body": "Alana White reported that filing for Associated Student Government offices turned up few candidates, in the same issue as a piece urging that criteria for the offices be voiced.",
+     "src": {
+      "label": "Herald 47:27, 11 Apr 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8997/"
      }
     },
     {
@@ -1212,11 +1259,11 @@
      "name": "Steven Yater",
      "plaque_term": "1973-74",
      "role": "president",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "No name is listed for 1974-75 as a single term; the next two plates both read 1974-75. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage.",
+     "note": "Confirmed by the Herald's own 16 April 1974 retrospective, 'Presidency Ends for Steve Yater; One Major Program Started,' which places his presidency closing out at the end of the 1973-74 year, matching the plaque term.",
      "sources": [
       {
        "label": "Herald 53:4, 11 Sep 1973",
@@ -1227,6 +1274,10 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3538/"
       },
       {
+       "label": "Herald 53:53, 16 Apr 1974",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3546/"
+      },
+      {
        "label": "Herald 53:57, 30 Apr 1974",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3541/"
       }
@@ -1234,7 +1285,8 @@
      "profile": [
       "Steve Yater led the Associated Student Government through 1973-74. Early in his term he publicly commended the Board of Regents in the Herald, weeks after the board had increased ASG's budget allotment.",
       "In April 1974, stung by election-season criticism, President Yater defended his administration in a letter to the Herald.",
-      "His final weeks in office stayed argumentative: the Herald of April 30 carried dueling letters under the heading 'Linda Jones vs. Steven Yater' as the student regent race closed out the year."
+      "His final weeks in office stayed argumentative: the Herald of April 30 carried dueling letters under the heading 'Linda Jones vs. Steven Yater' as the student regent race closed out the year.",
+      "The Herald's own retrospective on his term, by Al Cross, ran 16 April 1974 under the headline 'Presidency Ends for Steve Yater; One Major Program Started' - the archive does not yet hold the article's text, only its headline crediting his administration with a single major accomplishment."
      ]
     }
    ],
@@ -1255,8 +1307,7 @@
      "src": {
       "label": "Herald 53:1, 28 Aug 1973",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3496/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1973-09-18",
@@ -1265,8 +1316,7 @@
      "src": {
       "label": "Herald 53:6, 18 Sep 1973",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3491/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1973-09-25",
@@ -1275,8 +1325,7 @@
      "src": {
       "label": "Herald 53:8, 25 Sep 1973",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3489/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1973-12-04",
@@ -1285,8 +1334,7 @@
      "src": {
       "label": "Herald 53:26, 4 Dec 1973",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3507/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1974-02-15",
@@ -1295,8 +1343,7 @@
      "src": {
       "label": "Herald 53:39, 15 Feb 1974",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3528/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1974-02-22",
@@ -1305,8 +1352,7 @@
      "src": {
       "label": "Herald 53:41, 22 Feb 1974",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3526/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1974-03-29",
@@ -1315,8 +1361,7 @@
      "src": {
       "label": "Herald 53:48, 29 Mar 1974",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3532/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1974-04-19",
@@ -1325,8 +1370,16 @@
      "src": {
       "label": "Herald 53:54, 19 Apr 1974",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3544/"
-     },
-     "campus": true
+     }
+    },
+    {
+     "date": "1974-04-16",
+     "title": "Herald retrospective closes out Yater's presidency",
+     "body": "Al Cross wrote the Herald's retrospective on Steve Yater's term, headlined 'Presidency Ends for Steve Yater; One Major Program Started.' The same issue reported the regent post election set for the following week.",
+     "src": {
+      "label": "Herald 53:53, 16 Apr 1974",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3546/"
+     }
     }
    ],
    "status": "researched"
