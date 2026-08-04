@@ -787,16 +787,19 @@ def apply_photo_overlay(ys):
 
 def render_history(ys, herald):
     def ay(date):
-        y, m = int(date[:4]), int(date[5:7] or "1") if len(date) >= 7 else (int(date[:4]), 1)
+        y = int(date[:4])
+        m = int(date[5:7]) if len(date) >= 7 else 1
         start = y if m >= 8 else y - 1
-        start = min(max(start, 1966), 2026)
+        if start == 1965:
+            start = 1966  # the founding spring belongs to year one
+        if start < 1966 or start > 2026:
+            return None   # pre-history stays out of the sixty years
         return f"{start}-{str(start + 1)[2:]}"
     by_year = {y["id"]: {"events": sorted(y["events"], key=lambda e: e["date"]), "herald": []} for y in ys}
     for e in herald:
-        try:
-            by_year[ay(e["date"])]["herald"].append(e)
-        except Exception:
-            continue
+        yid = ay(e["date"])
+        if yid and yid in by_year:
+            by_year[yid]["herald"].append(e)
     n_ev = sum(len(v["events"]) for v in by_year.values())
     n_hx = sum(len(x["lines"]) for v in by_year.values() for x in v["herald"])
     jump = "".join(f'<a class="chip" href="#y{d}">{d}s</a>' for d in range(1960, 2030, 10))

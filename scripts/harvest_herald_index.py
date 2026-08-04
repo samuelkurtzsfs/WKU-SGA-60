@@ -46,17 +46,16 @@ def main():
             break
         root = ET.fromstring(xml)
         for rec in root.iter("{http://www.openarchives.org/OAI/2.0/}record"):
-            ident = rec.findtext(".//oai:identifier", "", NS)
-            m = re.search(r"dlsc_ua_records-(\d+)", ident)
-            if not m:
+            item_url = next((el.text.strip() for el in rec.iter()
+                             if el.tag.endswith("identifier") and el.text
+                             and "/dlsc_ua_records/" in el.text), "")
+            if not item_url or item_url in entries:
                 continue
-            item_url = f"https://digitalcommons.wku.edu/dlsc_ua_records/{m.group(1)}/"
-            if item_url in entries:
-                continue
-            title = rec.findtext(".//dc:title", "", NS) or ""
-            desc = rec.findtext(".//dc:description", "", NS) or ""
-            date = (rec.findtext(".//{http://purl.org/dc/terms/}created", "", {}) or
-                    next((el.text for el in rec.iter() if el.tag.endswith("date.created") and el.text), "") or "")
+            title = next((el.text for el in rec.iter() if el.tag.endswith("title") and el.text), "")
+            desc = " \n ".join(el.text for el in rec.iter()
+                               if el.text and ("description" in el.tag or el.tag.endswith("abstract")))
+            date = next((el.text for el in rec.iter()
+                         if ("date.created" in el.tag or el.tag.endswith("created")) and el.text), "")
             date = (date or "")[:10]
             if not (KW.search(title) or KW.search(desc)):
                 continue
