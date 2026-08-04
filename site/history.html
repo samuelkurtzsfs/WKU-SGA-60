@@ -321,11 +321,24 @@ var hf=document.getElementById('hf'),hr=document.getElementById('hr'),
  jumps[a.dataset.y]=a;});
 // the search key is the text of the line itself, plus the year and the names in
 // the year's heading, so a president's name finds their year
+function keyOf(el,skip,skipTag){
+ // the words a reader would search for: the record itself, not the furniture
+ // (no role labels, no citation chrome, no tallies)
+ var t='';
+ [].slice.call(el.childNodes).forEach(function(n){
+  if(n.nodeType===3){t+=' '+n.nodeValue;return;}
+  if(n.nodeType!==1)return;
+  if(skipTag&&n.tagName===skipTag)return;
+  if(skip&&skip.test(n.className||''))return;
+  t+=' '+keyOf(n,skip,skipTag);});
+ return t;}
 secs.forEach(function(sec){
- var head=sec.querySelector('.yrbar').textContent+' '+sec.dataset.y;
+ var bar=sec.querySelector('.yrbar'),
+     who=sec.querySelector('.yrbar .who'),
+     head=(who?keyOf(who,/^$/,'SPAN'):'')+' '+sec.dataset.y;
  sec._rows=[].slice.call(sec.querySelectorAll('.hx'));
  sec._rows.forEach(function(r){
-  r._k=(r.textContent+' '+head).replace(/\s+/g,' ').toLowerCase();});
+  r._k=(keyOf(r,/cite|srcline|ext/)+' '+head).replace(/\s+/g,' ').toLowerCase();});
 });
 function word(n,s,p){return n+' '+(n===1?s:p);}
 function run(){
