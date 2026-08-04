@@ -7547,7 +7547,95 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Jay Todd Richey",
+      "note": "Also served as student regent under the merged offices.",
+      "src": {
+       "label": "SGA Executive Cabinet minutes, 1 Dec 2015",
+       "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf",
+       "file": "2015-16-executive-cabinet-minutes-12-1-15.pdf"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Nolan Miles",
+      "src": {
+       "label": "SGA Executive Cabinet minutes, 1 Dec 2015",
+       "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf",
+       "file": "2015-16-executive-cabinet-minutes-12-1-15.pdf"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Liz Koehler",
+      "src": {
+       "label": "SGA Executive Cabinet minutes, 1 Dec 2015",
+       "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf",
+       "file": "2015-16-executive-cabinet-minutes-12-1-15.pdf"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "James Line",
+      "src": {
+       "label": "SGA Executive Cabinet minutes, 1 Dec 2015",
+       "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf",
+       "file": "2015-16-executive-cabinet-minutes-12-1-15.pdf"
+      }
+     },
+     {
+      "office": "Public Relations Director",
+      "name": "Sawyer Coffey",
+      "src": {
+       "label": "SGA Executive Cabinet minutes, 1 Dec 2015",
+       "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf",
+       "file": "2015-16-executive-cabinet-minutes-12-1-15.pdf"
+      }
+     },
+     {
+      "office": "Director of Academic and Student Affairs",
+      "name": "Barrett Greenwell",
+      "src": {
+       "label": "SGA Executive Cabinet minutes, 1 Dec 2015",
+       "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf",
+       "file": "2015-16-executive-cabinet-minutes-12-1-15.pdf"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Page Settles",
+       "note": "Listed among non-voting officers in attendance at the 1 Dec 2015 executive cabinet meeting.",
+       "src": {
+        "label": "SGA Executive Cabinet minutes, 1 Dec 2015",
+        "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf",
+        "file": "2015-16-executive-cabinet-minutes-12-1-15.pdf"
+       }
+      }
+     ],
+     "note": "At the 1 Dec 2015 executive cabinet meeting, Miles and Koehler disagreed with then-Chief Justice Kelsey Luttrell's call for a separate Judicial Council adviser; Luttrell resigned two days later."
+    }
+   },
+   "documents": [
+    {
+     "file": "2015-16-executive-cabinet-minutes-12-1-15.pdf",
+     "title": "Executive Cabinet meeting minutes, 1 December 2015",
+     "summary": "The Richey administration's own record of a fall 2015 cabinet meeting: the voting and non-voting officers then serving, a discussion of a possible independent Judicial Council adviser two days before Chief Justice Kelsey Luttrell's resignation, and routine business including finals-week library-hours funding and an early suicide-awareness discussion.",
+     "extract": "Miles and Koehler disagree with Luttrell's remarks on the need for a separate Judicial Council adviser.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "WKU SGA Executive Cabinet minutes, 1 Dec 2015",
+      "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf"
+     }
+    }
+   ]
   },
   {
    "id": "2016-17",
@@ -7648,10 +7736,51 @@
       "label": "Herald, 19 Apr 2017",
       "url": "https://wkuherald.com/28871/news/next-student-body-president-elected-to-office/"
      }
+    },
+    {
+     "date": "2016-09-12",
+     "title": "Ransdell condemns racist incidents after notes, vandalism",
+     "body": "In the weeks before, racist notes had been left in a WKU assistant dean's office and a racial slur was scratched into a student's car following a parking dispute. President Gary Ransdell called the acts \"cowardly\" and \"heinous,\" said they did not reflect the university's values, and called for campus dialogue on intolerance.",
+     "src": {
+      "label": "WKMS, 12 Sep 2016",
+      "url": "https://www.wkms.org/education/2016-09-12/wku-president-cowardly-racist-acts-dont-define-schools-values"
+     },
+     "campus": true
+    },
+    {
+     "date": "2016-09-13",
+     "title": "Senators raise campus racism at first fall meeting",
+     "body": "At the third meeting of the 15th Senate, student speakers Jeb Veeck, Francisco Serrano and Spencer Wells addressed the recent racist incidents on campus. Veeck suggested a Q&A session on the issue and Serrano urged senators to help end racism on campus.",
+     "src": {
+      "label": "SGA Senate minutes, 13 Sep 2016",
+      "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+      "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+     }
+    },
+    {
+     "date": "2016-10-12",
+     "title": "Two SGA members resign amid racism complaint; investigation nullified",
+     "body": "After Chief Justice Cody Cox told the Oct. 11 senate meeting he had received a complaint that several SGA members made racist remarks, senator Braxton Powell and justice John McKinney resigned the next morning, citing scheduling conflicts and personal reasons respectively; neither confirmed, denied, nor acknowledged any link between the resignations and the complaint. The Judicial Council's planned investigation was dropped because the students in question had already left SGA, and the organization never released the identities of the accused or the nature of the alleged remarks. President Richey and MyCampusToo chair Helen Vickrey issued a statement the next day condemning the alleged acts.",
+     "src": {
+      "label": "Herald, 17 Oct 2016",
+      "url": "https://wkuherald.com/31013/news/sga-members-resign-after-allegations-of-racism/"
+     }
     }
    ],
    "status": "researched",
    "documents": [
+    {
+     "file": "2016-17-senate-minutes-smm-9-13-16.pdf",
+     "title": "Senate minutes, 13 September 2016",
+     "summary": "Minutes of the third meeting of the 15th Senate, recording the fall 2016-17 executive cabinet, Senate officers, and committee chairs under President Jay Todd Richey's second term, plus early senator discussion of that fall's racist incidents on campus.",
+     "extract": "Senators address recent racism on campus; full cabinet and committee roster.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "WKU SGA Senate minutes, 13 Sep 2016",
+      "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf"
+     }
+    },
     {
      "file": "2016-17-senate-minutes-smm-4-18-17.pdf",
      "title": "Senate minutes, 18 April 2017",
@@ -7664,7 +7793,147 @@
       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_4_18_17.pdf"
      }
     }
-   ]
+   ],
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Jay Todd Richey",
+      "note": "Also served as student regent under the merged offices.",
+      "src": {
+       "label": "SGA Senate minutes, 13 Sep 2016",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+       "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Kate Hart",
+      "src": {
+       "label": "SGA Senate minutes, 13 Sep 2016",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+       "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Hannah Neeper",
+      "src": {
+       "label": "SGA Senate minutes, 13 Sep 2016",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+       "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "James Line",
+      "src": {
+       "label": "SGA Senate minutes, 13 Sep 2016",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+       "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      }
+     },
+     {
+      "office": "Director of Public Relations",
+      "name": "Murphy Burke",
+      "src": {
+       "label": "SGA Senate minutes, 13 Sep 2016",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+       "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      }
+     },
+     {
+      "office": "Director of Academic and Student Affairs",
+      "name": "Josh Knight",
+      "src": {
+       "label": "SGA Senate minutes, 13 Sep 2016",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+       "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      }
+     },
+     {
+      "office": "Director of Information Technology",
+      "name": "Abhishek Bose",
+      "src": {
+       "label": "SGA Senate minutes, 13 Sep 2016",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+       "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Nathan Cherry",
+       "src": {
+        "label": "SGA Senate minutes, 13 Sep 2016",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+       }
+      },
+      {
+       "office": "Secretary of the Senate",
+       "name": "Kara Lowry",
+       "src": {
+        "label": "SGA Senate minutes, 13 Sep 2016",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Academic Affairs",
+       "chair": "Amy Wyer",
+       "note": "Appointed by President Richey and confirmed by the senate 13 Sep 2016.",
+       "src": {
+        "label": "SGA Senate minutes, 13 Sep 2016",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+       }
+      },
+      {
+       "name": "Campus Improvements",
+       "chair": "Zach Jones",
+       "src": {
+        "label": "SGA Senate minutes, 13 Sep 2016",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+       }
+      },
+      {
+       "name": "MyCampusToo",
+       "chair": "Michael Shelton",
+       "note": "By mid-October 2016 Helen Vickrey was reported as MyCampusToo committee chair; the record does not show when or why the chair changed.",
+       "src": {
+        "label": "SGA Senate minutes, 13 Sep 2016",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+       }
+      },
+      {
+       "name": "Sustainability",
+       "chair": "Savannah Molyneaux",
+       "src": {
+        "label": "SGA Senate minutes, 13 Sep 2016",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+       }
+      },
+      {
+       "name": "Legislative Research",
+       "chair": "Brian Anderson",
+       "src": {
+        "label": "SGA Senate minutes, 13 Sep 2016",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
+        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+       }
+      }
+     ],
+     "note": "This was the 15th Senate. Chief Justice of the Judicial Council was Cody Cox; Associate Chief Justice was Annalicia Carlson."
+    }
+   }
   },
   {
    "id": "2017-18",
