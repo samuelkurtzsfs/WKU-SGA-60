@@ -1322,12 +1322,17 @@
       {
        "label": "WKU Timeline: Gregory McKinney (Western Alumnus, 19 Jun 1974)",
        "url": "https://digitalcommons.wku.edu/wku_timeline/354/"
+      },
+      {
+       "label": "UA3/6/2 Greg McKinney File, 1983",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9305/"
       }
      ],
      "profile": [
       "Gregory McKinney came to campus prominence as a speaker: in March 1974 the Herald reported him winning top honors in competition.",
       "That spring McKinney ran for the student seat on the Board of Regents against Sid Stevens, the two candidates' final appeals running side by side in the Herald as an editorial called the race a clear choice for voters.",
-      "McKinney won the seat and was sworn in on June 19, 1974, becoming WKU's first African American student regent."
+      "McKinney won the seat and was sworn in on June 19, 1974, becoming WKU's first African American student regent.",
+      "After his term as student regent, McKinney stayed on at WKU as a graduate assistant in Student Affairs. The university's own file on him, opened in 1983, holds correspondence between McKinney and President Donald Zacharias and a paper he wrote titled \"Student Affairs: An Analysis\" - the record of a former student regent moving into the administration whose board he had once sat on."
      ]
     },
     {
@@ -1388,6 +1393,16 @@
      "src": {
       "label": "Herald 50:50, 15 Apr 1975",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5078/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1975-02-07",
+     "title": "Budget crisis threatens ASG's entertainment program",
+     "body": "The Herald reported that financial difficulties might force Associated Student Government to drop its entertainment duties, as the congress heard the treasurer explain the budget shortfall. A separate piece the same issue examined ASG's budget problems in depth.",
+     "src": {
+      "label": "Herald 50:35, 7 Feb 1975",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5048/"
      },
      "campus": true
     }
@@ -1510,6 +1525,26 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5150/"
      },
      "campus": true
+    },
+    {
+     "date": "1976-03-26",
+     "title": "Faulk impeachment hearings open as campaign begins",
+     "body": "The Associated Student Government began impeachment hearings against congress member Gerard Faulk the same week candidates for the spring election, including Christy Vogt, were set to speak to students. An editorial the same issue held up Associated Student Government's troubles as a cautionary example for the university's newly forming Faculty Senate.",
+     "src": {
+      "label": "Herald 51:49, 26 Mar 1976",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5143/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1976-04-09",
+     "title": "Christy Vogt wins the ASG presidency",
+     "body": "The Herald reported Christy Vogt's win in the Associated Student Government presidential election under the headline \"Christy Vogt Wins Election,\" with Vogt's own \"Winner Says Thanks\" running in the same issue. The paper reported the result the same week Gerard Faulk was acquitted in his impeachment case.",
+     "src": {
+      "label": "Herald 51:53, 9 Apr 1976",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5139/"
+     },
+     "campus": true
     }
    ],
    "status": "researched"
@@ -1524,16 +1559,39 @@
      "name": "Christy Mollozzi",
      "plaque_term": "1976-77",
      "role": "president",
-     "year_confidence": "likely",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "The outgoing president who 'congratulates voters' in the 15 April 1977 Herald is Christy Vogt, and a Christy Vogt letter dated 26 April 1977 sits in the SGA document series. Vogt and Mollozzi are very likely the same person under maiden and married names. Confirm before merging.",
+     "note": "The Herald's 9 April 1976 headline \"Christy Vogt Wins Election\" and her own \"Winner Says Thanks\" the same issue confirm the 1976-77 ASG presidency was won under the name Christy Vogt; her byline runs through the term (campaign endorsement 26 Mar 1976, \"Urges Involvement\" 12 Apr 1977, the closing letter to Congress 26 Apr 1977). The plaque records her as Christy Mollozzi. WKU's own archive ties the two names together in multiple places written by the university itself, not by this project: a WKU Archives research notecard indexed as \"Mollozzi, Christy Vogt,\" and Christy Mollozzi appearing in the President's Office finding aids for the Meredith and Ransdell administrations in connection with Marketing & Promotions, meaning she had a further career on the WKU staff. \"Christy Vogt Mollozzi\" follows the ordinary American convention of a married name with the maiden name kept as a middle name. No single source states outright \"formerly Christy Vogt,\" so this is an inference from a consistent name pattern repeated across independent WKU records over three decades, not a documented fact - flagged here rather than asserted as certain.",
      "sources": [
       {
        "label": "TopSCHOLAR - SGA Documents",
        "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/1"
+      },
+      {
+       "label": "Herald 51:49, 26 Mar 1976",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5143/"
+      },
+      {
+       "label": "Herald 51:53, 9 Apr 1976",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5139/"
+      },
+      {
+       "label": "Herald 52:52, 12 Apr 1977",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5371/"
+      },
+      {
+       "label": "UA37/30/2 WKU Research Notecards-Sources (\"Mollozzi, Christy Vogt\")",
+       "url": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=1227&context=fac_staff_papers"
       }
+     ],
+     "profile": [
+      "Christy Vogt entered the spring 1976 Associated Student Government campaign with an endorsement from Herald columnist John Butchko, in an issue whose front section also covered the start of impeachment hearings against congress member Gerard Faulk and an editorial warning the university's new Faculty Senate away from ASG's own troubles.",
+      "Vogt won the presidency, the Herald reporting the result on 9 April 1976 under the headline \"Christy Vogt Wins Election,\" with her own note of thanks to voters in the same issue - the same week Faulk was acquitted.",
+      "In office for 1976-77, Vogt's congress created a constitutional revision committee within its first month (Bill 2, 7 September 1976) and kept revision on its agenda all year. It asked the university for a minimum wage policy for student employees (Resolution, 26 October 1976), recommended preregistration for all students, and opposed a proposed tuition increase (Bill 9, 8 March 1977) while creating a Complaint Committee to field student grievances the same meeting. A resolution on discrimination failed in February 1977 with fourteen members abstaining. The fall Seals and Crofts concert lost the organization $3,800, a recurring sore point ASG had wrestled with under Vogt's predecessors as well.",
+      "Vogt wrote her own case for the office in the Herald - \"Urges Involvement,\" 12 April 1977, days before Bob Moore won the presidency to succeed her by a 26-vote margin. She closed her term on 26 April 1977 with a letter to Congress thanking its members and recommending four items to the administration: constitutional revision, extended hours for student buildings, open visitation, and advance registration - the same four causes her congress had pushed all year.",
+      "WKU's own archive later indexes her, alongside her maiden name, as Christy Vogt Mollozzi, and separately as Christy Mollozzi in President's Office records tied to Marketing & Promotions - evidence, though not a documented statement, that she went on to a career on the university's own staff."
      ]
     }
    ],
@@ -1616,6 +1674,15 @@
       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/1"
      },
      "campus": true
+    },
+    {
+     "date": "1977-04-12",
+     "title": "Vogt urges involvement as her term closes",
+     "body": "With her term nearly over, president Christy Vogt wrote \"Urges Involvement\" for the Herald, days before Bob Moore's election to succeed her.",
+     "src": {
+      "label": "Herald 52:52, 12 Apr 1977",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5371/"
+     }
     }
    ],
    "status": "researched"
