@@ -315,7 +315,7 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
 
 /* ---- print ---- */
 @media print{
- .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav,
+ .nav,.tools,.pager,.board,.legend,.starthere,.foot .cols,.copy,.decnav,
  .yearnav{display:none!important}
  .yrbar{position:static!important;box-shadow:none}
  details.hidx{background:none;border-left-color:#999}
@@ -368,86 +368,9 @@ BOARD_CSS = """
 .starthere span{display:block;color:var(--ink2);font-size:.92rem;margin-top:4px}
 
 /* ---- Big Red ---- */
-.bigred{position:fixed;right:16px;bottom:8px;z-index:20;width:150px;cursor:pointer;
- user-select:none;-webkit-user-select:none;line-height:0}
-.bigred img{display:block;width:100%;height:auto;image-rendering:pixelated}
-.bigred .wig{position:absolute;top:-22px;left:24%;pointer-events:none}
-.bigred .gavel{position:absolute;top:16%;right:-12px;pointer-events:none;transform-origin:24% 88%}
-.bigred .close{position:absolute;top:-10px;right:-4px;width:20px;height:20px;
- border:1px solid var(--line);background:var(--paper);color:var(--ink3);font-size:12px;
  line-height:17px;text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
-.bigred .close:hover{color:var(--red);border-color:var(--red)}
-.bigred .say{position:absolute;bottom:100%;right:6%;margin-bottom:12px;background:var(--black);
- color:#fff;font-family:var(--ui);font-size:11px;letter-spacing:.05em;padding:7px 11px;
  white-space:nowrap;opacity:0;transition:opacity .2s;pointer-events:none;line-height:1.4}
-.bigred .say:after{content:"";position:absolute;top:100%;right:20px;border:6px solid transparent;
- border-top-color:var(--black)}
-.bigred.talk .say{opacity:1}
-@keyframes br-bang{0%,100%{transform:rotate(0)}35%{transform:rotate(-58deg)}
- 60%{transform:rotate(14deg)}80%{transform:rotate(-6deg)}}
-.bigred.bang .gavel{animation:br-bang .7s ease}
-@media(prefers-reduced-motion:reduce){.bigred .gavel{animation:none!important}}
-@media(max-width:640px){.bigred{width:104px;right:8px}}
 """
-
-# ---------------------------------------------------------------- Big Red
-# The official Big Red artwork, downsampled to a 30px sprite
-# (data/photos/bigred-8bit.png) and rendered pixelated. The wig and the gavel
-# are pixel-drawn overlays.
-_PX = {"W": "#F4F2ED", "G": "#D8D5CE", "B": "#1A1A1C", "O": "#8B5A2B"}
-_WIG = [
-    "..WWWWWWWWWW..",
-    ".WWWWWWWWWWWW.",
-    "WWWGWWWWWWGWWW",
-    "WWW........WWW",
-    "GWG........GWG",
-    "WWW........WWW",
-    "GWG........GWG",
-    "WWW........WWW",
-]
-_GAVEL = [
-    "BBBBBB..",
-    "BBBBBB..",
-    "BBBBBB..",
-    "...OO...",
-    "...OO...",
-    "...OO...",
-    "...OO...",
-    "...OO...",
-]
-
-
-def _pixels(rows, s=7):
-    out = []
-    for y, row in enumerate(rows):
-        for x, c in enumerate(row):
-            if c != ".":
-                out.append(f'<rect x="{x*s}" y="{y*s}" width="{s+0.4}" '
-                           f'height="{s+0.4}" fill="{_PX[c]}"/>')
-    return "".join(out)
-
-
-BIGRED = (
-    '<div class="bigred" id="bigred" role="img" aria-label="Big Red in a judicial wig, '
-    'holding the SGA gavel.">'
-    '<button class="close" id="brx" aria-label="Dismiss Big Red">&times;</button>'
-    '<div class="say" id="brsay">Order, order.</div>'
-    '<img src="photos/bigred-8bit.png" alt="" width="150" height="125">'
-    f'<svg class="wig" width="98" height="56" viewBox="0 0 98 56" aria-hidden="true">{_pixels(_WIG)}</svg>'
-    f'<svg class="gavel" width="56" height="56" viewBox="0 0 56 56" aria-hidden="true">{_pixels(_GAVEL)}</svg>'
-    '</div>'
-    '<script>(function(){var br=document.getElementById("bigred");if(!br)return;'
-    'try{if(localStorage.getItem("bigred")==="hidden"){br.remove();return}}catch(e){}'
-    'document.getElementById("brx").addEventListener("click",function(e){e.stopPropagation();'
-    'br.remove();try{localStorage.setItem("bigred","hidden")}catch(e){}});'
-    'var says=["Order, order.","Go Tops.","Sixty years on the Hill.","Motion carries.",'
-    '"The Spirit Makes the Master."],i=0;'
-    'br.addEventListener("click",function(){br.classList.remove("bang");void br.offsetWidth;'
-    'document.getElementById("brsay").textContent=says[i++%says.length];'
-    'br.classList.add("bang","talk");clearTimeout(br._t);'
-    'br._t=setTimeout(function(){br.classList.remove("talk")},1800)});})();</script>'
-)
-
 
 # ---------------------------------------------------------------- searches
 ORG_TERMS = ['"student government association"', '"associated student government"',
@@ -522,7 +445,7 @@ the Student Government Association office.</p></div>
 
 def shell(title, desc, body, css, depth, current, mascot=False):
     up = "../" * depth
-    extra = BIGRED if mascot else ""
+    extra = ""
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
