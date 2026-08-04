@@ -1240,6 +1240,24 @@
      }
     },
     {
+     "date": "2000-04-18",
+     "title": "SGA planned to conduct and publish faculty evaluations",
+     "body": "The Herald reported that SGA planned to conduct student evaluations of faculty and publish the results starting in fall 2000, in the same issue that covered the close of the Martin-Bedo campaign. The same issue carried an editorial titled \"Cassie Martin Must Stand Up on Tough Issues,\" urging the incoming president to take firmer positions once in office.",
+     "src": {
+      "label": "College Heights Herald 75:53, 18 Apr 2000",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8115/"
+     }
+    },
+    {
+     "date": "2000-04-20",
+     "title": "Herald reported SGA membership still declining",
+     "body": "The Herald ran a story headlined \"Student Government Association Membership Still Declining,\" tracking a drop in participation as the Martin administration prepared to take office.",
+     "src": {
+      "label": "College Heights Herald 75:54, 20 Apr 2000",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8116/"
+     }
+    },
+    {
      "date": "2001-03-09",
      "title": "WKU took student health service back in-house",
      "body": "WKU announced it would return to self-operation of its campus student health service after its contractor, Collegiate Health Care, notified employees it would be out of business at the end of the day. The university hired the clinic's 17 employees on a temporary basis through the end of the spring semester, and the vice president for Student Affairs promised students would see no reduction in health services.",
@@ -1250,6 +1268,23 @@
      "campus": true
     }
    ],
+   "organization": {
+    "executive": [
+     {"office": "President", "name": "Cassie Martin", "note": "Also student regent.",
+      "src": {"label": "WKU news release, 14 Apr 2000 (archived)", "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"}},
+     {"office": "Vice President", "name": "Leslie Bedo", "note": "Martin's running mate on the winning ticket.",
+      "src": {"label": "WKU news release, 14 Apr 2000 (archived)", "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"}},
+     {"office": "Vice President of Finance", "name": "Amy Caswell",
+      "src": {"label": "WKU news release, 14 Apr 2000 (archived)", "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"}},
+     {"office": "Vice President of Administration", "name": "Adam Howard", "note": "Ran unopposed.",
+      "src": {"label": "WKU news release, 14 Apr 2000 (archived)", "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"}},
+     {"office": "Vice President of Public Relations", "name": "Leslie McClard", "note": "Ran unopposed.",
+      "src": {"label": "WKU news release, 14 Apr 2000 (archived)", "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"}}
+    ],
+    "senate": {
+     "note": "Called Congress this year; met weekly on Tuesdays in Downing University Center room 305."
+    }
+   },
    "status": "researched"
   },
   {
@@ -1938,16 +1973,29 @@
      "name": "Robert Watkins",
      "plaque_term": "2006",
      "role": "president",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
+     "year_confidence": "stated",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Single-year plate and the only name attached to 2006. No plate covers a full 2006-07 term. Something happened here. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage. Confirmed: Watkins resigned from SGA in fall 2006, partway through the term, which explains the plaque's single-year plate.",
+     "note": "Single-year plate and the only name attached to 2006 because Watkins resigned partway through the 2006-07 term; no plate covers the full year. Confirmed against Herald election coverage: a Bowling Green senior, he won the SGA presidency in the 13 April 2006 online election, defeating Berea junior Kara Ratliff. He had been elected the first speaker of the senate under the new constitution on 15 April 2004, a result contested 9-8 and then upheld. He resigned as president and student regent on 30 November 2006.",
      "sources": [
       {
        "label": "Herald - SGA drama settled, Apr 2013",
        "url": "https://wkuherald.com/44025/news/sga-drama-settled-what-does-baileys-ruling-mean-for-the-future-of-sga/"
+      },
+      {
+       "label": "College Heights Herald 81:42, 13 Apr 2006 - \"See Rob Run, Win . . . Barely\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3692/"
+      },
+      {
+       "label": "College Heights Herald 79:53, 20 Apr 2004 - \"Robert Watkins Upheld as Speaker\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9387"
       }
+     ],
+     "profile": [
+      "Robert \"Rob\" Watkins, a Bowling Green student, wrote the SGA constitution adopted in 2004 and was elected the first speaker of the senate under it on 15 April 2004, defeating Brittany Fausey 9 votes to 8 in a result immediately contested over what quorum the new constitution required; the vote was upheld later that month.",
+      "Watkins won the SGA presidency in the 13 April 2006 online election, defeating Berea junior Kara Ratliff after more than a week courting TopNet voters, with results announced at a crowded Revolution 91.7. He took office for 2006-07 alongside Administrative Vice President Amanda Allen, who by October was tightening the budget after the prior administration left roughly $24,000 unspent.",
+      "Watkins resigned as SGA president and student regent at 5 p.m. on 30 November 2006, announcing the decision publicly at a called 10 p.m. meeting the same night, after senators aired concerns about him at an unannounced 10 p.m. meeting the evening before. A Herald editorial the same week was headlined \"SGA actions an embarrassment to Western.\" The resignation left students without a voting voice on the Board of Regents for at least a month and put junior Jeanne Johnson in as a fill-in leader for the rest of the term."
      ]
     }
    ],
@@ -1998,6 +2046,17 @@
      }
     }
    ],
+   "organization": {
+    "executive": [
+     {"office": "President", "name": "Robert Watkins", "note": "Resigned 30 Nov 2006.",
+      "src": {"label": "College Heights Herald 81:42, 13 Apr 2006", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3692/"}},
+     {"office": "Administrative Vice President", "name": "Amanda Allen", "note": "Received the Charles A. Keown Award at the May 2007 banquet, SGA's highest honor.",
+      "src": {"label": "Herald, 24 Oct 2006 (Wayback)", "url": "http://web.archive.org/web/20071215135957/http://media.www.wkuherald.com/media/storage/paper603/news/2006/10/24/News/Sga-To.Improve.Spending.Habits-2383879.shtml"}}
+    ],
+    "senate": {
+     "note": "Jeanne Johnson served as a fill-in leader after Watkins' resignation and was elected president in her own right for 2007-08 at the May 2007 banquet."
+    }
+   },
    "status": "researched"
   },
   {
@@ -2150,11 +2209,11 @@
      "name": "Johnathon Boles",
      "plaque_term": "2008",
      "role": "president",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
+     "year_confidence": "stated",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Appears in the WKU Archives regents index marked as student regent for 2008. In office for the February 2008 Frankfort rally, after which roughly fifty senators each filed a written reflection - the richest first-person source in the collection. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage. The Herald's 2013 retrospective records that Boles resigned in January 2009.",
+     "note": "Confirmed against Herald election coverage. Boles led the \"Red Towel Party\" ticket - with Theodore Harden, Reagan Gilley, Skylar Johnson, Kayla Shelton and Kevin Smiley also on the March 2008 candidate slate - in the spring 2008 SGA election. After the vote, Skylar Jordan filed a complaint against the Red Towel Party; the SGA council took no action on it on 22 April 2008, letting the result stand. In office for the February 2008 Frankfort rally, after which roughly fifty senators each filed a written reflection - the richest first-person source in the collection. The Herald's 2013 retrospective records that Boles resigned in January 2009.",
      "sources": [
       {
        "label": "TopSCHOLAR - Frankfort rally reflections",
@@ -2175,12 +2234,53 @@
       {
        "label": "Herald, 26 Feb 2009",
        "url": "https://web.archive.org/web/20090228081141/http://media.www.wkuherald.com/media/storage/paper603/news/2009/02/26/News/Gilley.Elected.Student.Regent-3650062.shtml"
+      },
+      {
+       "label": "College Heights Herald 83:42, 27 Mar 2008 - candidate coverage",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6705"
+      },
+      {
+       "label": "College Heights Herald 83:45, 8 Apr 2008 - \"Skylar Jordan Files Complaint Against Red Towel Party\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6703"
+      },
+      {
+       "label": "College Heights Herald 83:49, 22 Apr 2008 - \"Council Decides to Take No Action on Complaint\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6702"
       }
      ],
      "profile": [
-      "Johnathon Boles, a junior from Elizabethtown, served as SGA president and student regent for 2008-09. In November 2008, Gov. Steve Beshear appointed him and fellow SGA member Kevin Smiley to the student committee of the governor's College Access Work Group on college affordability, and Boles traveled to Frankfort for its first meeting, where he raised the burden of textbook costs. \"I'm honored the governor chose me to represent WKU,\" he said.",
+      "Johnathon Boles ran for SGA president in spring 2008 on the \"Red Towel Party\" ticket, a slate that also carried Theodore Harden, Reagan Gilley, Skylar Johnson, Kayla Shelton and Kevin Smiley as candidates for other executive and senate offices. After Boles's ticket won, Skylar Jordan filed a complaint against the Red Towel Party; the SGA council took no action on it on 22 April 2008, and the result stood. Boles, a junior from Elizabethtown, served as SGA president and student regent for 2008-09. In November 2008, Gov. Steve Beshear appointed him and fellow SGA member Kevin Smiley to the student committee of the governor's College Access Work Group on college affordability, and Boles traveled to Frankfort for its first meeting, where he raised the burden of textbook costs. \"I'm honored the governor chose me to represent WKU,\" he said.",
       "In December 2008, Boles led SGA through its first mid-year budget cut, after a state shortfall required the university to trim about 4 percent. He and Administrative Vice President Reagan Gilley cut $4,100 from SGA's $110,000 budget while protecting scholarships and Provide-A-Ride, and Boles addressed the senate about the cuts, saying he would keep fighting for the affordability of higher education. He also worked to arrange charter buses to a Feb. 3 rally in Frankfort against cuts to higher education.",
       "Boles resigned on Jan. 30, 2009, for health reasons, midway through his term. Executive Vice President Kayla Shelton took his place as president but not as student regent, and the student body went 26 days without a regent until Reagan Gilley won a special election on Feb. 25. Gilley said he planned to contact Boles the day after his win to get up to date on Board of Regents business."
+     ]
+    },
+    {
+     "name": "Kayla Shelton",
+     "plaque_term": "2009",
+     "role": "president",
+     "year_confidence": "corrected",
+     "name_verified": true,
+     "missing_from_plaque": false,
+     "current": false,
+     "note": "Plaque plate reads \"2009\" and had been filed under 2009-10, overlapping Kevin Smiley there; moved to 2008-09. Shelton was executive vice president on Johnathon Boles's Red Towel Party ticket and became president - but not student regent - when Boles resigned on 30 Jan 2009, finishing out his 2008-09 term. Kevin Smiley won the next regular election on 16 April 2009 for the 2009-10 term, so Shelton's presidency did not extend into 2009-10.",
+     "sources": [
+      {
+       "label": "Herald, 12 Feb 2009",
+       "url": "https://web.archive.org/web/20090220232842/http://media.www.wkuherald.com/media/storage/paper603/news/2009/02/12/News/Sga-Sets.Date.For.Student.Regent.Election-3626160.shtml"
+      },
+      {
+       "label": "Herald, 26 Feb 2009",
+       "url": "https://web.archive.org/web/20090228081141/http://media.www.wkuherald.com/media/storage/paper603/news/2009/02/26/News/Gilley.Elected.Student.Regent-3650062.shtml"
+      },
+      {
+       "label": "College Heights Herald 83:42, 27 Mar 2008 - candidate coverage naming Shelton on the Red Towel ticket",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6705"
+      }
+     ],
+     "profile": [
+      "Kayla Shelton ran on Johnathon Boles's \"Red Towel Party\" ticket in the spring 2008 SGA election and served as executive vice president for 2008-09. When Boles resigned as president and student regent on 30 Jan. 2009 for health reasons, Shelton succeeded him as president but not as student regent, leaving the regent seat vacant.",
+      "As president, Shelton backed the SGA Judicial Council's 2-1 decision to hold a special student regent election rather than leave the seat vacant, over the dissent of Executive Vice President Skylar Jordan. She also accepted Chief Justice Lisa Kappler's resignation in mid-February, which came with the regent election two weeks away. Administrative Vice President Reagan Gilley won that special election on 25 Feb. 2009, taking over the regent's seat while Shelton continued as president through the rest of the term.",
+      "Shelton did not continue as president into 2009-10; Kevin Smiley won the regular spring election for that term on 16 April 2009."
      ]
     }
    ],
@@ -2249,6 +2349,15 @@
      }
     },
     {
+     "date": "2009-04-16",
+     "title": "Kevin Smiley won the SGA presidential election",
+     "body": "The Herald reported Kevin Smiley's win in the spring SGA presidential election under the headline \"All Smiles, Kevin Smiley Wins Student Government Association Election,\" ending Kayla Shelton's term as the president who had finished out Johnathon Boles's 2008-09 year. Smiley took office as president and student regent for 2009-10.",
+     "src": {
+      "label": "College Heights Herald 84:46, 16 Apr 2009",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6747"
+     }
+    },
+    {
      "date": "2009-04-23",
      "title": "SGA negotiated removal of proposed $30 per-credit-hour fee",
      "body": "SGA and university officials agreed to strike a proposed $30 fee for every credit hour over 15 from the Board of Regents agenda, replacing it with a proposal to raise the add/drop fee from $20 to $50. SGA canceled a planned protest after the compromise, and Student Regent Reagan Gilley called the outcome \"really a win-win for everyone.\"",
@@ -2277,25 +2386,14 @@
    "org": "Student Government Association",
    "leaders": [
     {
-     "name": "Kayla Shelton",
-     "plaque_term": "2009",
-     "role": "president",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
-     "missing_from_plaque": false,
-     "current": false,
-     "note": "Single-year plate; overlaps Kevin Smiley 2009-10. By this period the SGA president automatically held the student regent seat, so a second name in the same year indicates a mid-year succession - a resignation, graduation or removal - not a separately elected regent. Which of the two finished the term is not yet established. An August 2026 open-web sweep found no corroboration of this presidency at all; verify against the digitised Herald before treating the plate as fact.",
-     "sources": []
-    },
-    {
      "name": "Kevin Smiley",
      "plaque_term": "2009-10",
      "role": "president",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
+     "year_confidence": "stated",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "By this period the SGA president automatically held the student regent seat, so a second name in the same year indicates a mid-year succession - a resignation, graduation or removal - not a separately elected regent. Which of the two finished the term is not yet established.",
+     "note": "Confirmed against Herald election coverage: Smiley won the SGA presidential election on 16 April 2009. The plaque's separate \"2009\" plate for Kayla Shelton is not a competing 2009-10 term - Shelton was finishing Johnathon Boles's 2008-09 term after his January 2009 resignation and has been moved to that year. By this period the SGA president automatically held the student regent seat.",
      "sources": [
       {
        "label": "WKU SGA site, 23 Nov 2009 (archived)",
@@ -2308,6 +2406,10 @@
       {
        "label": "Herald, 20 Oct 2009",
        "url": "https://web.archive.org/web/20091024020637/http://www.wkuherald.com/2009/10/20/senators-resign-at-sga-meeting/"
+      },
+      {
+       "label": "College Heights Herald 84:46, 16 Apr 2009 - \"All Smiles, Kevin Smiley Wins Student Government Association Election\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6747"
       }
      ],
      "profile": [
