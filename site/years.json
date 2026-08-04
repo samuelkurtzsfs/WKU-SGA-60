@@ -5539,7 +5539,7 @@
      "plaque_term": "2020-21",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
      "note": "The COVID year. Almost certainly the most unusual term in the organisation's history and worth a dedicated oral history.",
@@ -5547,14 +5547,50 @@
       {
        "label": "Herald, 31 Mar 2021",
        "url": "https://wkuherald.com/9351/news/sga-funds-student-organizations-passes-legislation-to-vet-dining-vendors/"
+      },
+      {
+       "label": "Herald, 6 Oct 2020",
+       "url": "https://wkuherald.com/13578/opinion/garrett-edmonds-was-elected-as-the-student-body-president-of-wku/"
+      },
+      {
+       "label": "WKU Talisman, Voter's Guide, 28 Sep 2020",
+       "url": "http://wkutalisman.com/voters-guide-2020-sga-election/"
+      },
+      {
+       "label": "Herald, 22 Oct 2018",
+       "url": "https://wkuherald.com/23183/news/sga-vice-president-moves-forward-after-election-controversy/"
+      },
+      {
+       "label": "WKU News - Class of 2021 Commencement",
+       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=9659"
       }
      ],
      "profile": [
-      "In the spring he presided over a productive senate that passed SGA's largest organizational aid bill ever and a bill seeking a codified vetting process for campus dining vendors. Near the end of his term he declined to fill the chief justice seat vacated by Erika Puhakka, saying the choice belonged to his successor: \"I think that's the only thing that is right in this scenario.\" He also worried publicly that only 13 students were running for senate in the April election."
+      "Edmonds, a senior from Island, Kentucky, spent his freshman year as chair of the Campus Improvements Committee, working with Vice President of Student Affairs Brian Kuster on projects including a campus safety walk, before winning election as executive vice president in April 2018 on a ticket with Harper Anderson and Stephen Mayer. He served two years as executive vice president under President Will Harris, pushing for a budget model geared toward campus amenities and recreational life and working to diversify Senate appointments with seats for underrepresented students.",
+      "He ran for the presidency in fall 2020 on the Edmonds-Norvell ticket, after his original running mate for administrative vice president, Nathan Terrell, dropped out and was replaced by Abbey Norvell. The campaign centered on a pledge to create a Director of Outreach position to close the communication gap between campus organizations and SGA, and the Sept. 24 Herald town hall covered WKU's COVID-19 response and the summer's Black Lives Matter protests on campus. Voting ran Sept. 28-29 on TopNet; Edmonds defeated senator MJ Mayo, becoming SGA president and, since the two offices had merged by then, student regent on the WKU Board of Regents.",
+      "Taking office amid the pandemic, his cabinet confirmed Isaac Keller as administrative vice president 29-1 in October after Edmonds said he wanted a deputy willing to challenge him, with Matt Barr, Ashlynn Evans, Kody Okert and Paul Brosky rounding out the executive and Shelby Robertson serving as non-voting speaker of the senate. Early cabinet business set up officer office hours, an ad hoc outreach committee and a push toward inclusive pronoun language in Senate proceedings. That fall SGA's petition for a pass/no-pass grading option during COVID disruptions, backed by over 3,500 signatures, succeeded; in the spring his senate passed the organization's largest-ever organizational aid bill and a resolution seeking a codified vetting process for campus dining vendors. Near the end of his term he declined to fill the chief justice seat vacated by Erika Puhakka, saying the choice belonged to his successor: \"I think that's the only thing that is right in this scenario.\" He also worried publicly that only 13 students were running for senate in the April election, and closed his term addressing the Class of 2021 at the delayed Fall 2020/Spring 2021 commencement, telling graduates their perseverance through \"this past year\" had brought them to their day of celebration."
      ]
     }
    ],
    "events": [
+    {
+     "date": "2020-09-24",
+     "title": "Town hall debate pitted the sitting EVP against a senator",
+     "body": "SGA held a town hall debate in the DSU auditorium between presidential candidates Garrett Edmonds, the sitting executive vice president, and senator MJ Mayo. Edmonds's original running mate for administrative vice president, Nathan Terrell, had dropped off the Edmonds-Norvell ticket and was replaced by Abbey Norvell; the debate covered WKU's COVID-19 response and the summer's Black Lives Matter protests on campus.",
+     "src": {
+      "label": "WKU Talisman, Voter's Guide, 28 Sep 2020",
+      "url": "http://wkutalisman.com/voters-guide-2020-sga-election/"
+     }
+    },
+    {
+     "date": "2020-09-29",
+     "title": "Edmonds elected president over Mayo",
+     "body": "Garrett Edmonds, the sitting executive vice president, was elected student body president over senator MJ Mayo in balloting held on TopNet Sept. 28-29, succeeding Will Harris. Edmonds had campaigned on creating a Director of Outreach position to link campus organizations more directly with SGA.",
+     "src": {
+      "label": "Herald, 6 Oct 2020",
+      "url": "https://wkuherald.com/13578/opinion/garrett-edmonds-was-elected-as-the-student-body-president-of-wku/"
+     }
+    },
     {
      "date": "2020-10-07",
      "title": "Senate passed the annual budget 28-5 and elected Shelby Robertson speaker",
@@ -5562,6 +5598,25 @@
      "src": {
       "label": "Herald, 7 Oct 2020",
       "url": "https://wkuherald.com/13485/news/sga-votes-on-budget-at-first-official-meeting-of-the-year/"
+     }
+    },
+    {
+     "date": "2020-10-13",
+     "title": "Cabinet set office hours, an outreach committee, and pushed inclusive language",
+     "body": "At the executive cabinet's first recorded meeting, Edmonds set up officer office hours and an ad hoc outreach committee for RSO leadership. Speaker Shelby Robertson pushed to connect senators with similar legislative interests, adopt inclusive pronoun language in the chamber, and find a parliamentarian.",
+     "src": {
+      "label": "SGA Executive Cabinet minutes, 13 Oct 2020",
+      "url": "https://www.wku.edu/sga/executive/execs_minutes/sga_execminutes_10_13_20.pdf",
+      "file": "2020-21-exec-cabinet-minutes-10-13-20.pdf"
+     }
+    },
+    {
+     "date": "2020-10-21",
+     "title": "Keller confirmed AVP 29-1; two new committee chairs elected",
+     "body": "The senate confirmed Isaac Keller as administrative vice president 29-1 after Edmonds said he wanted a deputy willing to challenge him when they disagreed. Roderick Maul and Tess Welch were elected committee chairs, and senators voted to form a new Ad Hoc committee chaired by Me'Lon Craighead.",
+     "src": {
+      "label": "Herald, 21 Oct 2020",
+      "url": "https://wkuherald.com/13430/news/sga-votes-on-administrative-vice-president-at-this-weeks-meeting/"
      }
     },
     {
@@ -5600,8 +5655,73 @@
       "label": "Herald, 1 Dec 2020",
       "url": "https://wkuherald.com/12510/news/students-who-faced-covid-related-problems-this-fall-can-opt-for-a-pass-grade/"
      }
+    },
+    {
+     "date": "2021-05-01",
+     "title": "Edmonds addressed the Class of 2021 at the delayed commencement",
+     "body": "As SGA president, Edmonds spoke at WKU's Fall 2020/Spring 2021 commencement ceremony, telling graduates that the class's perseverance through the pandemic year had brought them to their day of celebration.",
+     "src": {
+      "label": "WKU News - Class of 2021 Commencement",
+      "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=9659"
+     }
     }
    ],
+   "documents": [
+    {
+     "file": "2020-21-exec-cabinet-minutes-10-13-20.pdf",
+     "title": "SGA Executive Cabinet minutes, 13 October 2020",
+     "summary": "Minutes from the first recorded fall 2020 executive cabinet meeting under President Garrett Edmonds, covering officer office hours, an ad hoc outreach committee, and Speaker Shelby Robertson's push for inclusive language and a parliamentarian.",
+     "extract": "Ad hoc committee for outreach; inclusive language in senate; looking for a parliamentarian.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "WKU SGA Executive Cabinet Minutes, 13 Oct 2020",
+      "url": "https://www.wku.edu/sga/executive/execs_minutes/sga_execminutes_10_13_20.pdf"
+     }
+    }
+   ],
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "J. Garrett Edmonds",
+      "note": "Also student regent on the WKU Board of Regents.",
+      "src": {
+       "label": "WKU Talisman, Voter's Guide, 28 Sep 2020",
+       "url": "http://wkutalisman.com/voters-guide-2020-sga-election/"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Isaac Keller",
+      "note": "Confirmed 29-1 in October 2020.",
+      "src": {
+       "label": "Herald, 21 Oct 2020",
+       "url": "https://wkuherald.com/13430/news/sga-votes-on-administrative-vice-president-at-this-weeks-meeting/"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Shelby Robertson",
+       "src": {
+        "label": "Herald, 7 Oct 2020",
+        "url": "https://wkuherald.com/13485/news/sga-votes-on-budget-at-first-official-meeting-of-the-year/"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Ad Hoc (Outreach)",
+       "chair": "Me'Lon Craighead",
+       "note": "Formed October 2020."
+      }
+     ],
+     "note": "Cabinet also included Matt Barr, Ashlynn Evans, Kody Okert and Paul Brosky; Roderick Maul and Tess Welch were elected committee chairs in October 2020 (SGA Executive Cabinet minutes, 13 Oct 2020, https://www.wku.edu/sga/executive/execs_minutes/sga_execminutes_10_13_20.pdf)."
+    }
+   },
    "status": "researched"
   },
   {
@@ -6196,11 +6316,123 @@
       {
        "label": "WKU News - Robinson elected",
        "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12496"
+      },
+      {
+       "label": "WKU News - Robinson profile, Apr 2026",
+       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13040"
+      },
+      {
+       "label": "WKU News - Board of Regents, 8 Aug 2025",
+       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12637"
+      },
+      {
+       "label": "Herald, 5 Jun 2026",
+       "url": "https://wkuherald.com/93781/news/wku-board-of-regents-approves-tuition-increase/"
+      },
+      {
+       "label": "Herald, 15 Sep 2025",
+       "url": "https://wkuherald.com/86549/news/sga-announces-opportunity-for-students-to-leave-a-lasting-legacy-on-campus/"
       }
+     ],
+     "profile": [
+      "Robinson, a senior from Benton, Kentucky triple-majoring in psychology, philosophy and sociology and a member of Sigma Phi Epsilon and Omicron Delta Kappa, won the SGA presidency in the 13-15 April 2025 general election on a turnout of 966, running with Savanna Kurtz for vice president and Gabriel Jerdon for chief financial officer. He also succeeded Sam Kurtz as WKU's student regent; the Board of Regents administered his oath of office on 8 August 2025, the same meeting at which it named the new Gordon Ford College of Business building Amy and David Chandler Hall and elected Jan West chair, Doris Thomas vice chair and Melissa Dennison secretary for 2025-26.",
+      "Robinson ran on turning SGA away from national politics and toward direct student advocacy, saying the organization had sometimes echoed national political talking points and that he wanted it to act as \"an advocate and resource for students\" who could be pointed to the right contact in the administration. His cabinet - Kurtz as vice president, Jerdon as chief financial officer, Maggie Yelton as chief of staff, and Preston Jenkins, reappointed chief communications officer on 22 April 2025 and confirmed by the Senate - ran a legislative program heavy on small, direct-benefit measures: vouchers for CPR certification, dental cleanings, transcripts and identification cards, equipment to borrow such as umbrellas, calculators and hammocks, and a resolution urging accessible restroom stalls in Grise Hall. Jenkins also organized a student-painted mural for a column in the SGA chambers. In March 2026 SGA drew on its projects fund to host a baseball-game tailgate, a response to Athletics Director Todd Stewart's call for more student engagement.",
+      "At the Senate's first meeting under his successor, Robinson opened by telling the mostly-new chamber they looked untainted by SGA's usual troubles, then handed president-elect Caden Lucas the red suit jacket passed president to president - the same jacket Sam Kurtz had given him the year before. His term as student regent outlasted his SGA presidency: at the Board of Regents' 5 June 2026 meeting, his last as regent, he cast the lone vote against a $204, 1.69 percent tuition increase, saying the board had \"to do whatever we can to not raise the tuition\" to preserve affordability. Afterward he planned to remain at WKU for an Ed.S. in school psychology, aiming for a career as a school psychologist in a school district."
      ]
     }
    ],
    "events": [
+    {
+     "date": "2025-04-22",
+     "title": "Robinson reappoints Jenkins chief communications officer",
+     "body": "In one of his first acts after taking office, Robinson reappointed Preston Jenkins as chief communications officer; the Senate later confirmed the pick unanimously.",
+     "src": {
+      "label": "Herald, 15 Sep 2025",
+      "url": "https://wkuherald.com/86549/news/sga-announces-opportunity-for-students-to-leave-a-lasting-legacy-on-campus/"
+     }
+    },
+    {
+     "date": "2025-08-08",
+     "title": "Robinson sworn in as student regent, succeeding Kurtz",
+     "body": "The Board of Regents administered Robinson's oath of office as student regent, succeeding graduating president Sam Kurtz. At the same meeting the board elected Jan West chair, Doris Thomas vice chair and Melissa Dennison secretary for 2025-26.",
+     "src": {
+      "label": "WKU News - Board of Regents, 8 Aug 2025",
+      "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12637"
+     }
+    },
+    {
+     "date": "2025-08-18",
+     "title": "Chandler Hall opened for the fall semester",
+     "body": "The new Gordon Ford College of Business building, named Amy and David Chandler Hall after a $7.5 million gift and funded largely by a Kentucky General Assembly appropriation, opened to students on the first day of fall classes.",
+     "src": {
+      "label": "WKU News - Board of Regents, 8 Aug 2025",
+      "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12637"
+     },
+     "campus": true
+    },
+    {
+     "date": "2025-08-19",
+     "title": "SGA commissioned a student-painted mural for the chambers",
+     "body": "Chief Communications Officer Preston Jenkins announced a plan to have four student artists each paint one side of a column in the SGA chambers, incorporating WKU campus elements, with selections due by 19 September.",
+     "src": {
+      "label": "Herald, 15 Sep 2025",
+      "url": "https://wkuherald.com/86549/news/sga-announces-opportunity-for-students-to-leave-a-lasting-legacy-on-campus/"
+     }
+    },
+    {
+     "date": "2025-11-25",
+     "title": "Senate revived the transcript voucher program",
+     "body": "The senate passed Bill 24-25-F, authored by Legislative Operations Committee Chair Caden Lucas, allocating $195 to reestablish the transcript voucher program, giving students one free official transcript a semester. It also funded a new \"Professor of the Month\" award and ping pong equipment for the DSU recreation area.",
+     "src": {
+      "label": "Herald, 27 Nov 2025",
+      "url": "https://wkuherald.com/89272/news/sga-votes-to-assist-with-student-transcripts/"
+     }
+    },
+    {
+     "date": "2026-02-10",
+     "title": "WKU Restaurant Group answered senators' questions",
+     "body": "Restaurant Group representatives fielded senator questions on the removal of Steak 'n Shake seasoning, kiosks in Subway and adding spicy chicken sandwiches to Chick-fil-A's meal-swipe menu, and said the service handled about 60,000 meal transactions a week.",
+     "src": {
+      "label": "Herald, 11 Feb 2026",
+      "url": "https://wkuherald.com/90387/news/wku-restaurant-group-answers-sgas-questions/"
+     }
+    },
+    {
+     "date": "2026-02-17",
+     "title": "CPR-voucher bill and Grise Hall accessibility resolution passed",
+     "body": "The senate unanimously passed Bill 2-26-S, funding six vouchers for free CPR certification, and Resolution 7-25-F, supporting additional handicapped-accessible restroom stalls in Grise Hall after a student's father said the building had only one large stall.",
+     "src": {
+      "label": "Herald, 17 Feb 2026",
+      "url": "https://wkuherald.com/90713/news/sga-passes-six-new-vouchers-for-cpr-certifications/"
+     }
+    },
+    {
+     "date": "2026-03-24",
+     "title": "SGA funded a tailgate to boost turnout at a baseball game",
+     "body": "SGA used its projects fund to host free hot dogs, giveaways and a scholarship drawing before WKU baseball's home game against Louisville, an effort Robinson said answered Athletics Director Todd Stewart's call for more student engagement at games.",
+     "src": {
+      "label": "Herald, 25 Mar 2026",
+      "url": "https://wkuherald.com/92067/life/sga-hosts-a-home-run-tailgate-for-wku-baseball-game/"
+     }
+    },
+    {
+     "date": "2026-04-07",
+     "title": "Weekly meeting funded a senior cookout, transfer cords and spikeball nets",
+     "body": "SGA allocated $602.58 through three bills and a resolution: a senior sunset cookout, 240 transfer-student graduation cords, borrowable spikeball nets, and DSU signage improvements. CFO Gabriel Jerdon said the legislative discretionary fund would have $71.17 left if the following week's final bills all passed as written.",
+     "src": {
+      "label": "Herald, 8 Apr 2026",
+      "url": "https://wkuherald.com/92550/news/sga-spends-second-to-last-meeting-deliberating-on-final-bills/"
+     }
+    },
+    {
+     "date": "2026-06-05",
+     "title": "Robinson cast the lone dissenting vote on a tuition increase",
+     "body": "At his last meeting as student regent, Robinson voted against a $204, 1.69 percent tuition increase that the rest of the Board of Regents approved, saying the board had to do everything it could to preserve affordability.",
+     "src": {
+      "label": "Herald, 5 Jun 2026",
+      "url": "https://wkuherald.com/93781/news/wku-board-of-regents-approves-tuition-increase/"
+     }
+    },
     {
      "date": "2026-04-07",
      "title": "Two tickets take questions in the DSU auditorium",
@@ -6238,6 +6470,72 @@
      }
     }
    ],
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Rush Robinson",
+      "note": "Also student regent on the WKU Board of Regents.",
+      "src": {
+       "label": "Wayback Machine capture, 15 Dec 2025",
+       "url": "https://web.archive.org/web/20251215185802/https://www.wku.edu/sga/executive/index.php"
+      }
+     },
+     {
+      "office": "Vice President",
+      "name": "Savanna Kurtz",
+      "src": {
+       "label": "WKU News - Robinson elected",
+       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12496"
+      }
+     },
+     {
+      "office": "Chief Financial Officer",
+      "name": "Gabriel Jerdon",
+      "src": {
+       "label": "WKU News - Robinson elected",
+       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12496"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Maggie Yelton",
+      "src": {
+       "label": "Wayback Machine capture, 15 Dec 2025",
+       "url": "https://web.archive.org/web/20251215185802/https://www.wku.edu/sga/executive/index.php"
+      }
+     },
+     {
+      "office": "Chief Communications Officer",
+      "name": "Preston Jenkins",
+      "note": "Reappointed 22 April 2025; confirmed by the Senate.",
+      "src": {
+       "label": "Herald, 15 Sep 2025",
+       "url": "https://wkuherald.com/86549/news/sga-announces-opportunity-for-students-to-leave-a-lasting-legacy-on-campus/"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Hadley Whipple",
+       "src": {
+        "label": "Herald, 8 Apr 2026",
+        "url": "https://wkuherald.com/92550/news/sga-spends-second-to-last-meeting-deliberating-on-final-bills/"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Legislative Operations Committee",
+       "chair": "Caden Lucas",
+       "note": "Authored the transcript voucher bill among other legislation."
+      }
+     ],
+     "note": "13 senators-at-large were elected alongside class, transfer/non-traditional, first-generation and college-specific seats in the April 2025 general election; three seniors elected as senior senators were Sophia Bryant, Maggie Yelton and Malachi Humble."
+    }
+   },
    "status": "researched"
   },
   {
