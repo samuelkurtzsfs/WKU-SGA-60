@@ -1122,12 +1122,24 @@
      "name": "Edward Jordan, Jr.",
      "plaque_term": "1972-73",
      "role": "president",
-     "year_confidence": "likely",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Paired on the plaque with Michael Fiorella, who is confirmed as the student regent that year - so Jordan is the president by elimination. Confirm with April 1972 Herald election coverage.",
+     "note": "Confirmed by direct Herald election coverage: he ran on a platform the paper labeled progressivism, beat Bob Hatfield in the 20 April 1972 election, and the Herald reported the win five days later. Paired on the plaque with Michael Fiorella, the student regent that year.",
      "sources": [
+      {
+       "label": "Herald 51:47, 7 Apr 1972",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4864/"
+      },
+      {
+       "label": "Herald 51:51, 20 Apr 1972",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4860/"
+      },
+      {
+       "label": "Herald 51:52, 25 Apr 1972",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4859/"
+      },
       {
        "label": "Herald 52:21, 7 Nov 1972",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4887/"
@@ -1142,6 +1154,8 @@
       }
      ],
      "profile": [
+      "Jordan ran for the Associated Student Government presidency on a platform the Herald's Roger Miller labeled progressivism, profiled a week before the vote. Congress had separately voted to place his opponent, Bob Hatfield, on the ballot after a dispute over Hatfield's eligibility.",
+      "Jordan beat Hatfield in the 20 April 1972 election; the Herald reported his win on 25 April under the headline 'Ed Jordan Wins Top Office,' in the same issue as an editorial by Pence and Carter arguing the new ASG president needed cooperation and support.",
       "Edward Jordan's name entered the Herald's letters columns on November 7, 1972, when he and Charles Boteler urged readers to restore ideals. The digitized index does not label the ASG office Jordan held.",
       "On April 10, 1973, as top ASG offices went on the line in the spring election, a letter praising Ed Jordan ran in the Herald.",
       "Jordan stayed in student politics after his year: in April 1974 he wrote to the Herald judging Steve Henry the most qualified candidate in that spring's races."
@@ -1275,6 +1289,52 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5011/"
      },
      "campus": true
+    },
+    {
+     "date": "1972-04-07",
+     "title": "Ed Jordan's theme is progressivism",
+     "body": "The Herald profiled presidential candidate Ed Jordan ahead of the ASG election, describing his campaign theme as progressivism.",
+     "src": {
+      "label": "Herald 51:47, 7 Apr 1972",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4864"
+     }
+    },
+    {
+     "date": "1972-04-20",
+     "title": "Jordan and Hatfield face off for the presidency",
+     "body": "Ed Jordan and Bob Hatfield contested the ASG presidency in the day's election, after Congress had voted to place Hatfield on the ballot. The same issue carried both candidates' comments on key election issues.",
+     "src": {
+      "label": "Herald 51:51, 20 Apr 1972",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4860"
+     }
+    },
+    {
+     "date": "1972-04-25",
+     "title": "Jordan wins the presidency",
+     "body": "The Herald reported Ed Jordan's win under the headline 'Ed Jordan Wins Top Office,' alongside an editorial by Pence and Carter arguing the new ASG president needed cooperation and support to succeed.",
+     "src": {
+      "label": "Herald 51:52, 25 Apr 1972",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4859"
+     }
+    },
+    {
+     "date": "1973-01-16",
+     "title": "ASG sponsors a book exchange, fights a recycling ordinance",
+     "body": "Associated Student Government sponsored a student book exchange. The same issue reported a city recycling ordinance had left ASG holding the bag on trash collection for its paper-recycling program.",
+     "src": {
+      "label": "Herald 52:29, 16 Jan 1973",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4995"
+     },
+     "campus": true
+    },
+    {
+     "date": "1973-01-19",
+     "title": "ASG considers aid to a North Vietnam hospital",
+     "body": "Associated Student Government considered sending aid to a hospital in North Vietnam, the Herald's Carter Pence reported, as the Paris Peace Accords negotiations neared their end.",
+     "src": {
+      "label": "Herald 52:30, 19 Jan 1973",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4994"
+     }
     }
    ],
    "status": "researched"
@@ -1310,10 +1370,15 @@
       {
        "label": "Herald 53:57, 30 Apr 1974",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3541/"
+      },
+      {
+       "label": "Herald 52:50, 13 Apr 1973",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5010/"
       }
      ],
      "profile": [
       "Steve Yater led the Associated Student Government through 1973-74. Early in his term he publicly commended the Board of Regents in the Herald, weeks after the board had increased ASG's budget allotment.",
+      "Yater's win was reported in the Herald's 13 April 1973 election returns; the same issue profiled him as making a good impression in his first contact with Congress and stressing a calm approach to the office. Carter Pence's companion article covered new officers being installed at a Congress party the same week, though the archive index does not yet name who besides Yater took office.",
       "In April 1974, stung by election-season criticism, President Yater defended his administration in a letter to the Herald.",
       "His final weeks in office stayed argumentative: the Herald of April 30 carried dueling letters under the heading 'Linda Jones vs. Steven Yater' as the student regent race closed out the year.",
       "The Herald's own retrospective on his term, by Al Cross, ran 16 April 1974 under the headline 'Presidency Ends for Steve Yater; One Major Program Started' - the archive does not yet hold the article's text, only its headline crediting his administration with a single major accomplishment."
@@ -1321,6 +1386,15 @@
     }
    ],
    "events": [
+    {
+     "date": "1973-04-13",
+     "title": "Yater wins the presidency; new officers installed",
+     "body": "The Herald reported Steve Yater's win in the spring election under 'Associated Student Government Election Returns,' profiling him as making a good impression in his first Congress contact and stressing a calm approach. The same issue covered new officers being installed at a Congress party.",
+     "src": {
+      "label": "Herald 52:50, 13 Apr 1973",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5010"
+     }
+    },
     {
      "date": "1974-06-19",
      "title": "Gregory McKinney sworn in as WKU's first African American student regent",
