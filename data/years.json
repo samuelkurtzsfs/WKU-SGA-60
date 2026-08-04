@@ -10885,9 +10885,173 @@
       "label": "Herald, 16 Apr 2025",
       "url": "https://wkuherald.com/83879/news/sga-holds-final-24th-senate-meeting/"
      }
+    },
+    {
+     "date": "2024-04-23",
+     "title": "24th Senate installed: Vincent elected speaker, Henderson named chief justice",
+     "body": "At the 24th Senate's first meeting, newly elected senators were sworn in and Sarah Vincent, College of Health and Human Services senator, was elected Speaker of the Senate over Sophia Bryant. Senior senator Anne-Marie Wright was appointed Chief of Staff, and Associate Chief Justice Ellen Henderson was appointed Chief Justice. Outgoing Chief Justice Isaac King swore in the new officers, officially opening the 2024-25 term.",
+     "src": {
+      "label": "Herald, 24 Apr 2024",
+      "url": "https://wkuherald.com/76579/news/sga-holds-first-meeting-of-24th-senate/"
+     }
+    },
+    {
+     "date": "2024-08-27",
+     "title": "Committee chairs and Judicial Council approved at fall opener",
+     "body": "At the 24th Senate's first fall meeting, the Senate unanimously approved Kurtz's nominations of Aziz Umarov, Madison Payne, Neill Kane and Sam Dorris to the 2024-25 Judicial Council, and confirmed six committee chairs: Hannah Evans (Legislative Operations), Savanna Kurtz (Student Experience and Enrollment), Ryan Dilts (Outreach and Public Relations), Megan Farmer (DEI), Sophia Bryant (Student Mental Health and Wellbeing) and Annie Finch (Community Relations). President Timothy Caboni addressed the Senate on campus building renovations, the Mahurin Honors College restructuring and WKU's push for R2 research status.",
+     "src": {
+      "label": "Herald, 27 Aug 2024",
+      "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+     }
+    },
+    {
+     "date": "2024-10-22",
+     "title": "Senate backs Myanmar flag, funds organizational aid and calculators",
+     "body": "The Senate unanimously passed Resolution 5-24-F backing a Myanmar flag on the empty pole outside the Mahurin Honors College, sought by senators after students said Burmese and Chin students had no flag representing them; Bill 9-24-F distributed $10,000 in fall Organizational Aid funding across 58 graded applications; and Bill 10-24-F added $540 to buy five more calculators for the Borrow-a-Calculator program, which had lent 28 calculators that semester. Kurtz appointed freshman Emaun Riley as ISEC senator and Mahurin Honors College senator Caden Lucas as the Senate's parliamentarian.",
+     "src": {
+      "label": "Herald, 23 Oct 2024",
+      "url": "https://wkuherald.com/79487/news/sga-to-put-up-new-flag-outside-mahurin-honors-college-two-appointments-made-at-weekly-meeting/"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Sam Kurtz",
+      "note": "Re-elected without opposition to a second term.",
+      "src": {
+       "label": "Herald, 17 Apr 2024",
+       "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Donté Reed",
+      "src": {
+       "label": "Herald, 17 Apr 2024",
+       "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
+      }
+     },
+     {
+      "office": "Chief Financial Officer",
+      "name": "Ethan Taylor",
+      "note": "Listed as Administrative Vice President in the spring 2024 election results; called Chief Financial Officer in Herald coverage through the year.",
+      "src": {
+       "label": "Herald, 17 Apr 2024",
+       "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Anne-Marie Wright",
+      "note": "Appointed at the 24th Senate's first meeting, 23 April 2024.",
+      "src": {
+       "label": "Herald, 24 Apr 2024",
+       "url": "https://wkuherald.com/76579/news/sga-holds-first-meeting-of-24th-senate/"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Sarah Vincent",
+       "note": "Elected over Sophia Bryant at the 24th Senate's first meeting, 23 April 2024.",
+       "src": {
+        "label": "Herald, 24 Apr 2024",
+        "url": "https://wkuherald.com/76579/news/sga-holds-first-meeting-of-24th-senate/"
+       }
+      },
+      {
+       "office": "Chief Justice",
+       "name": "Ellen Henderson",
+       "note": "Appointed from Associate Chief Justice at the 24th Senate's first meeting, 23 April 2024; still Chief Justice as of the 27 August 2024 meeting.",
+       "src": {
+        "label": "Herald, 24 Apr 2024",
+        "url": "https://wkuherald.com/76579/news/sga-holds-first-meeting-of-24th-senate/"
+       }
+      },
+      {
+       "office": "Chief Justice (successor)",
+       "name": "Morgan Gammons",
+       "note": "Serving as Chief Justice by the Senate's 4 February 2025 meeting; the Herald's coverage does not pin the exact date she succeeded Henderson.",
+       "src": {
+        "label": "Herald, 5 Feb 2025",
+        "url": "https://wkuherald.com/81839/news/news-campus-government/national-dei-legislation-sparks-possibility-of-changes-to-sga-constitution/"
+       }
+      }
+     ],
+     "size": 34,
+     "committees": [
+      {
+       "name": "Legislative Operations Committee",
+       "chair": "Hannah Evans",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      },
+      {
+       "name": "Student Experience and Enrollment Committee",
+       "chair": "Savanna Kurtz",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      },
+      {
+       "name": "Outreach and Public Relations Committee",
+       "chair": "Ryan Dilts",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      },
+      {
+       "name": "DEI Committee",
+       "chair": "Megan Farmer",
+       "note": "Renamed the Action and Opportunity Committee by Bill 21-25-S, ratified 88%-in-favor by student referendum in the April 2025 election.",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      },
+      {
+       "name": "Student Mental Health and Wellbeing Committee",
+       "chair": "Sophia Bryant",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      },
+      {
+       "name": "Community Relations Committee",
+       "chair": "Annie Finch",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      }
+     ],
+     "note": "34 senators were elected in the April 2024 general election from a field of over 60 candidates; five more were seated after the fall 2024 special election, plus later appointments including Emaun Riley (ISEC) and Caden Lucas (Mahurin Honors College, the seat's first occupant). The 2024-25 Judicial Council, approved 27 August 2024, was Aziz Umarov, Madison Payne, Neill Kane and Sam Dorris."
+    }
+   },
+   "documents": [
+    {
+     "file": "2024-25-sga-constitution-amended.pdf",
+     "title": "SGA Constitution, updated pursuant to Bill 21-25-S",
+     "summary": "The constitution as re-posted after the April 2025 referendum, showing the Diversity, Equity and Inclusion Committee's replacement by the Action & Opportunity Committee (AOC).",
+     "extract": "focusing on making tangible, lasting improvements in students' lives",
+     "sga_pages": "15",
+     "page": 15,
+     "src": {
+      "label": "WKU SGA, Constitution updated pursuant to Bill 21-25-S",
+      "url": "https://www.wku.edu/sga/2024_2025_judicial/documents/sga_constitution.pdf"
+     }
+    }
+   ]
   },
   {
    "id": "2025-26",
