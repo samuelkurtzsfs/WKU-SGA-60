@@ -1,189 +1,307 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#08090B">
-<meta name="description" content="Sixty years of student government at Western Kentucky University, 1966-2026.">
-<title>2019-20 · SGA 60</title><style>
+<meta name="theme-color" content="#0B0B0C">
+<meta name="description" content="Student government at Western Kentucky University, 2019-20. Will Harris. 10 sourced entries.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2019-20 · SGA 60">
+<meta property="og:description" content="Student government at Western Kentucky University, 2019-20. Will Harris. 10 sourced entries.">
+<title>2019-20 · SGA 60</title>
+<style>
 :root{
- --red:#B01E24; --red-dark:#8E1218; --black:#0B0B0C;
- --ink:#151517; --ink2:#4C4C4F; --ink3:#8A8A8E;
- --paper:#FFFFFF; --paper2:#F7F6F3; --line:#E7E4DF;
- --inscribe:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
+ --red:#B01E24; --red-dark:#8A171C; --black:#0B0B0C;
+ --ink:#141416; --ink2:#44444B; --ink3:#76767D;
+ --paper:#FFFFFF; --paper2:#F6F5F2; --line:#DCD9D3; --line2:#EBE8E3;
+ --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
- --mono:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
+ --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+ --measure:35rem;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
- font-size:clamp(15px,0.35vw + 13.8px,18px);line-height:1.65;
- -webkit-font-smoothing:antialiased;overflow-x:hidden}
+ font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+@media(max-width:640px){body{font-size:16px}}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;letter-spacing:-.012em;
+ text-wrap:balance;margin:0}
+p{margin:0 0 1em;text-wrap:pretty}
+img{max-width:100%;height:auto}
+.srclist a,.srcline a,.credit a,.doc-foot a{overflow-wrap:anywhere}
 a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--red-dark)}
-:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
-.eyebrow{font-family:var(--ui);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
-.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+a.ext::after{content:"\00A0\2197";color:var(--ink3);font-size:.82em;text-decoration:none}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 34px}
 @media(max-width:640px){.wrap{padding:0 18px}}
+.prose{max-width:var(--measure)}
+.lab{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px}
 
-/* plaque plates: clean white cards on the black wall */
-.plate-face{background:var(--paper);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.25);position:relative}
-.engraved{color:var(--ink)}
+/* ---- masthead nav ---- */
+.nav{background:var(--black);color:#fff}
+.nav .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+ padding:13px 34px;flex-wrap:wrap}
+@media(max-width:640px){.nav .wrap{padding:11px 18px}}
+.nav a{color:rgba(255,255,255,.72);text-decoration:none;font-size:.86rem}
+.nav a:hover,.nav a[aria-current]{color:#fff}
+.nav a[aria-current]{box-shadow:inset 0 -2px 0 var(--red)}
+.nav .brand{font-family:var(--display);font-weight:800;letter-spacing:.05em;color:#fff;font-size:1rem}
+.nav .brand b{color:var(--red);font-weight:800}
+.nav ul{display:flex;gap:20px;margin:0;padding:0;list-style:none;flex-wrap:wrap}
 
-/* ---- Big Red ---- */
-.bigred{position:fixed;right:18px;bottom:10px;z-index:80;cursor:pointer;user-select:none;-webkit-user-select:none;line-height:0}
-.bigred{width:170px}
-.bigred img{display:block;width:100%;height:auto;image-rendering:pixelated;
- filter:drop-shadow(0 8px 14px rgba(0,0,0,.28))}
-.bigred .wig{position:absolute;top:-24px;left:24%;pointer-events:none}
-.bigred .gavel{position:absolute;top:16%;right:-14px;pointer-events:none}
-.bigred .close{position:absolute;top:-12px;right:-6px;width:22px;height:22px;border-radius:50%;
- border:1px solid var(--line);background:var(--paper);color:var(--ink2);font-size:13px;line-height:19px;
- text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
-.bigred .close:hover{color:var(--red);border-color:var(--red)}
-.bigred .say{position:absolute;bottom:100%;right:8%;margin-bottom:12px;background:var(--black);color:#fff;
- font-family:var(--ui);font-size:11px;letter-spacing:.06em;padding:8px 12px;border-radius:8px;white-space:nowrap;
- opacity:0;transform:translateY(6px);transition:.25s;pointer-events:none;line-height:1.4}
-.bigred .say:after{content:"";position:absolute;top:100%;right:22px;border:6px solid transparent;border-top-color:var(--black)}
-.bigred.talk .say{opacity:1;transform:none}
-.bigred .gavel{transform-origin:24% 88%}
-@keyframes br-bounce{0%,100%{transform:none}30%{transform:translateY(-28px) rotate(-5deg)}60%{transform:translateY(0) rotate(3deg)}80%{transform:translateY(-10px)}}
-@keyframes br-spin{to{transform:rotate(360deg)}}
-@keyframes br-bang{0%,100%{transform:rotate(0)}35%{transform:rotate(-60deg)}55%{transform:rotate(16deg)}75%{transform:rotate(-8deg)}}
-.bigred.bounce{animation:br-bounce .9s cubic-bezier(.3,.7,.3,1)}
-.bigred.spin{animation:br-spin .8s ease}
-.bigred.bang .gavel{animation:br-bang .7s ease}
-@media(prefers-reduced-motion:reduce){.bigred,.bigred .gavel{animation:none!important}}
+/* ---- page head ---- */
+.head{padding:56px 0 26px;border-bottom:1px solid var(--line)}
+@media(max-width:640px){.head{padding:34px 0 20px}}
+.kicker{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 12px}
+.head h1{font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.04}
+.head .lede{font-size:1.12rem;color:var(--ink);max-width:var(--measure);margin:18px 0 0}
+.head .scope{color:var(--ink2);max-width:var(--measure);margin:14px 0 0;font-size:.97rem}
 
-.room{display:none}
-.nav{background:var(--black)}
-.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 30px;flex-wrap:wrap}
-.nav a{font-size:.85rem;font-weight:500;text-decoration:none;color:rgba(255,255,255,.75);
- font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.nav a:hover{color:#fff}
-.nav .brand{font-family:var(--inscribe);font-weight:800;letter-spacing:.06em;color:#fff;font-size:1rem}
-.nav .brand b{color:var(--red)}
-.yhead{padding:56px 0 30px;border-bottom:1px solid var(--line)}
-.yhead h1{font-family:var(--inscribe);font-weight:800;font-size:clamp(2.8rem,7vw,4.6rem);letter-spacing:-.02em;
- margin:8px 0 0;line-height:1;color:var(--ink)}
-.leads{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}
-.lead{padding:13px 18px;border-radius:10px;min-width:200px;border:1px solid var(--line);box-shadow:none}
-.lead b{display:block;font-family:var(--inscribe);font-weight:700;font-size:1.02rem;text-transform:none;letter-spacing:0}
-.lead .role{font-size:.78rem;margin-top:4px;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.lead .role .w{color:var(--red);font-weight:600}
-.cols{max-width:860px;padding:34px 0 20px}
-@media(max-width:900px){.cols{grid-template-columns:1fr;gap:30px}}
-h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spacing:.01em;margin:34px 0 14px;
- color:var(--ink);text-transform:none;border-bottom:2px solid var(--red);display:inline-block;padding-bottom:4px}
-.note{border-left:3px solid var(--red);background:var(--paper2);border-radius:0 8px 8px 0;
- padding:12px 16px;margin:0 0 18px;font-size:.93rem;color:var(--ink2)}
-.note b{color:var(--ink)}
-.ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
-@media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
-.ev .d{font-family:var(--ui);font-size:13px;color:var(--red);padding-top:3px;font-weight:600}
-.ev .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:5px;font-family:var(--ui)}
-.ev h3{font-family:var(--inscribe);font-weight:700;font-size:1.06rem;margin:0 0 7px;color:var(--ink)}
-.ev p{margin:0;color:var(--ink2);font-size:.95rem}
-.ev .cite{display:inline-block;margin-top:8px;margin-right:14px;font-size:.85rem;color:var(--red);border:0;padding:0;
- text-decoration:underline;text-underline-offset:3px;text-transform:none;font-family:var(--ui);letter-spacing:0}
-.ev .cite:hover{background:none;color:var(--red-dark)}
-.empty{border:1px dashed var(--line);padding:24px;color:var(--ink3);font-size:.94rem;border-radius:10px}
-.dig{border:1px solid var(--line);background:var(--paper2);padding:20px 18px;position:sticky;top:18px;
- max-height:88vh;overflow:auto;border-radius:12px}
-.dig h2{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 3px;color:var(--red);font-family:var(--ui)}
-.dig h3{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 4px;color:var(--ink3);font-family:var(--ui)}
-.dig .lede{font-size:.84rem;color:var(--ink3);margin:0 0 8px;line-height:1.5}
-.dig a.q{display:block;text-decoration:none;padding:7px 0;border-top:1px solid var(--line);
- font-size:.84rem;color:var(--ink2);line-height:1.4;font-family:var(--ui)}
-.dig a.q:hover{color:var(--red)}
-.pager{display:flex;justify-content:space-between;gap:18px;padding:26px 0 90px;border-top:1px solid var(--line);flex-wrap:wrap}
-.pager a{font-size:.8rem;letter-spacing:.04em;text-decoration:none;max-width:46%;color:var(--ink3);font-family:var(--ui)}
-.pager a b{display:block;font-family:var(--inscribe);font-size:1.1rem;font-weight:700;color:var(--ink);margin-top:4px}
+/* ---- record head ---- */
+.rec-head{padding:48px 0 22px}
+.rec-head h1{font-size:clamp(2.6rem,6.5vw,4rem);line-height:.98;letter-spacing:-.03em;
+ font-variant-numeric:tabular-nums}
+.glance{display:grid;grid-template-columns:max-content 1fr;gap:0 28px;margin:26px 0 0;
+ border-top:1px solid var(--line);max-width:46rem}
+.glance dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:9px 0 0}
+.glance dd{margin:0;padding:7px 0 0;font-variant-numeric:tabular-nums}
+.glance dd a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+@media(max-width:520px){.glance{grid-template-columns:1fr;gap:0}
+ .glance dt{padding-top:12px}.glance dd{padding-top:2px}}
+
+/* ---- sections ---- */
+section{margin:0}
+h2.sec{font-size:1.16rem;margin:52px 0 4px;padding-top:15px;border-top:1px solid var(--line)}
+h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.02em;
+ color:var(--ink3);margin-left:10px;font-variant-numeric:tabular-nums}
+.secnote{color:var(--ink3);font-size:.88rem;margin:0 0 18px}
+.body{padding-bottom:40px}
+
+/* ---- leaders ---- */
+.leader{padding:34px 0 0}
+.leader h2{font-size:1.5rem;letter-spacing:-.02em}
+.leader h2 .r{font-family:var(--ui);font-weight:400;font-size:1rem;color:var(--ink2);
+ letter-spacing:0}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:0 26px;margin:14px 0 20px;
+ max-width:46rem;font-size:.95rem}
+.facts dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:7px 0 0}
+.facts dd{margin:0;padding:5px 0 0;color:var(--ink)}
+@media(max-width:520px){.facts{grid-template-columns:1fr}.facts dt{padding-top:11px}.facts dd{padding-top:1px}}
+.editorial{max-width:var(--measure);color:var(--ink);border-left:2px solid var(--line);
+ padding-left:18px;margin:0 0 22px}
+.editorial p{margin:0 0 .8em}
+.editorial p:last-child{margin-bottom:0}
+.editorial.flagged{border-left-color:var(--red)}
+.profile{max-width:var(--measure)}
+.profile p{font-size:1.02rem;margin:0 0 1.05em}
+.profile sup{font-size:.66em;line-height:0}
+.profile sup a{text-decoration:none;padding:0 1px}
+.srclist{max-width:46rem;margin:6px 0 0;padding:0 0 0 1.4em;font-size:.88rem;color:var(--ink3)}
+.srclist li{margin:0 0 5px}
+.srclist a{color:var(--red)}
+
+/* ---- portraits and photographs ---- */
+.plates-photo{display:flex;gap:26px;flex-wrap:wrap;margin:30px 0 6px}
+.portrait{margin:0;width:190px}
+.portrait img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.portrait figcaption{font-size:.82rem;color:var(--ink2);margin-top:9px;line-height:1.45}
+.portrait figcaption b{display:block;font-family:var(--display);font-size:.95rem;
+ font-weight:700;color:var(--ink);margin-bottom:2px}
+.portrait figcaption .who{display:block}
+.credit{display:block;color:var(--ink3);font-size:.78rem;margin-top:3px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;margin:16px 0 0}
+.gallery figure{margin:0}
+.gallery img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.gallery figcaption{font-size:.87rem;color:var(--ink2);margin-top:9px;line-height:1.5}
+
+/* ---- the organization ---- */
+.org{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin:16px 0 0}
+@media(max-width:700px){.org{grid-template-columns:1fr;gap:24px}}
+.org h3{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 6px}
+.off{display:grid;grid-template-columns:9rem 1fr;gap:0 16px;padding:9px 0;
+ border-top:1px solid var(--line2);font-size:.94rem}
+@media(max-width:520px){.off{grid-template-columns:1fr;gap:1px}}
+.off .o{font-size:.8rem;color:var(--ink3);padding-top:3px}
+.off b{font-weight:600}
+.off p{margin:2px 0 0;color:var(--ink2);font-size:.88rem}
+.org .meta{font-size:.92rem;color:var(--ink2);margin:12px 0 0;max-width:var(--measure)}
+
+/* ---- entries ---- */
+.ev{display:grid;grid-template-columns:9rem 1fr;gap:0 26px;padding:17px 0;
+ border-top:1px solid var(--line2)}
+@media(max-width:640px){.ev{grid-template-columns:1fr;gap:3px;padding:15px 0}}
+.ev .when{font-size:.83rem;color:var(--ink3);padding-top:5px;font-variant-numeric:tabular-nums}
+.ev .when .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+.ev h3{font-size:1.04rem;margin:0 0 6px}
+.ev p{margin:0;max-width:var(--measure)}
+.srcline{font-size:.84rem;color:var(--ink3);margin-top:9px}
+.srcline a{margin-right:14px}
+.pl{float:right;font-family:var(--mono);font-size:.78rem;color:var(--ink3);
+ text-decoration:none;opacity:0;margin-left:12px}
+.ev:hover .pl,.ev:focus-within .pl{opacity:1}
+.ev:target{background:var(--paper2);box-shadow:-14px 0 0 var(--paper2),14px 0 0 var(--paper2)}
+.empty{max-width:var(--measure);color:var(--ink2)}
+.searchlist{columns:2;column-gap:30px;padding:0;margin:10px 0 0;list-style:none;font-size:.86rem}
+@media(max-width:640px){.searchlist{columns:1}}
+.searchlist li{margin:0 0 4px;break-inside:avoid}
+
+/* ---- documents ---- */
+.doc{border-top:1px solid var(--line2);padding:22px 0 6px}
+.doc h3{font-size:1.05rem;margin:0 0 7px}
+.doc p{color:var(--ink);max-width:var(--measure);margin:0 0 12px}
+.doc-extract{border-left:2px solid var(--red);padding:2px 0 2px 16px;margin:0 0 14px;
+ max-width:var(--measure);color:var(--ink2);font-size:.95rem}
+.doc-extract .lab{margin-bottom:4px}
+.doc-view{display:block;width:100%;height:460px;border:1px solid var(--line);background:var(--paper2)}
+.doc-foot{font-size:.86rem;color:var(--ink3);margin:10px 0 0}
+.doc-foot a{margin-right:18px}
+
+/* ---- legislation rows ---- */
+.lrow{display:grid;grid-template-columns:7.5rem 1fr auto;gap:0 18px;align-items:baseline;
+ padding:10px 0;border-top:1px solid var(--line2);font-size:.95rem}
+@media(max-width:700px){.lrow{grid-template-columns:1fr;gap:2px}}
+.lrow .lt{color:var(--ink3);font-size:.82rem;font-variant-numeric:tabular-nums}
+.lrow .ll{font-size:.85rem;overflow-wrap:anywhere}
+.lrow .ll a{margin-left:16px}
+@media(max-width:700px){.lrow .ll a{margin:0 16px 0 0}}
+.lsec{margin:0 0 26px}
+
+/* ---- timeline ---- */
+.hx{display:grid;grid-template-columns:8rem 1fr;gap:0 24px;padding:6px 0;
+ border-top:1px solid var(--line2);font-size:.92rem;line-height:1.45}
+@media(max-width:640px){.hx{grid-template-columns:1fr;gap:0;padding:8px 0}}
+.hx .when{color:var(--ink3);font-size:.8rem;padding-top:3px;font-variant-numeric:tabular-nums}
+.hx .t{color:var(--ink2);max-width:52rem}
+.hx .t b{color:var(--ink);font-weight:600}
+.hx .t a{font-size:.84rem;margin-left:8px;overflow-wrap:anywhere}
+.hyear{font-size:1.35rem;margin:38px 0 2px;padding-top:14px;border-top:1px solid var(--line)}
+.hyear .who{font-family:var(--ui);font-weight:400;font-size:.9rem;color:var(--ink3);
+ display:block;margin-top:5px;letter-spacing:0}
+.hyear .who a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+details.hidx{margin:14px 0 0;font-size:.9rem}
+details.hidx summary{cursor:pointer;color:var(--ink3);font-size:.84rem}
+details.hidx summary:hover{color:var(--red)}
+.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:0 0 24px;font-size:.92rem}
+.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
+.decnav span{color:var(--ink3)}
+
+/* ---- filters and search ---- */
+.tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
+.field{display:block;max-width:26rem}
+.field .lab{margin-bottom:6px}
+.field input{width:100%;background:var(--paper);border:1px solid var(--line);color:var(--ink);
+ font-family:var(--ui);font-size:16px;padding:10px 12px;border-radius:2px}
+.field input:focus{outline:2px solid var(--red);outline-offset:-1px;border-color:var(--red)}
+.facets{display:flex;flex-wrap:wrap;gap:0 20px;margin:20px 0 0}
+.facets button{background:none;border:0;border-bottom:2px solid transparent;padding:4px 0 5px;
+ font-family:var(--ui);font-size:.92rem;color:var(--ink2);cursor:pointer}
+.facets button:hover{color:var(--red)}
+.facets button[aria-pressed="true"]{color:var(--ink);font-weight:600;border-bottom-color:var(--red)}
+.facets button .c{color:var(--ink3);font-weight:400;font-variant-numeric:tabular-nums}
+.readout{font-size:.9rem;color:var(--ink2);margin:16px 0 0;font-variant-numeric:tabular-nums}
+
+/* ---- citation ---- */
+.citebox{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+ padding:16px 0;margin:46px 0 0;max-width:46rem}
+.citestr{font-size:.92rem;color:var(--ink);margin:8px 0 0;line-height:1.55}
+.copy{background:none;border:1px solid var(--line);border-radius:2px;color:var(--ink2);
+ font-family:var(--ui);font-size:.8rem;padding:5px 11px;margin-top:12px;cursor:pointer}
+.copy:hover{border-color:var(--red);color:var(--red)}
+.revised{font-size:.84rem;color:var(--ink3);margin:12px 0 0}
+
+/* ---- pager ---- */
+.pager{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+ border-top:1px solid var(--line);padding:20px 0 0;margin-top:44px}
+.pager a{font-size:.82rem;color:var(--ink3);text-decoration:none;max-width:46%}
+.pager a b{display:block;font-family:var(--display);font-size:1.15rem;color:var(--ink);
+ margin-top:3px;font-variant-numeric:tabular-nums}
 .pager a:hover b{color:var(--red)}
 .pager .r{text-align:right;margin-left:auto}
 
-/* ---- president profiles ---- */
-.profile{margin:0 0 26px}
-.profile p{color:var(--ink2);font-size:.96rem;margin:0 0 12px}
+/* ---- footer ---- */
+.foot{border-top:1px solid var(--line);background:var(--paper2);margin-top:70px;
+ padding:36px 0 54px;font-size:.88rem;color:var(--ink2)}
+.foot .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px}
+.foot p{max-width:34rem;margin:0 0 .9em}
+.foot h2{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.foot .fine{color:var(--ink3);font-size:.82rem;margin-top:26px;
+ border-top:1px solid var(--line);padding-top:16px}
 
-/* ---- photographs ---- */
-.portraits{display:flex;gap:16px;flex-wrap:wrap;margin:26px 0 4px}
-.portrait{margin:0;width:160px}
-.portrait img{width:100%;height:190px;object-fit:cover;object-position:top;border-radius:10px;
- box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.portrait figcaption{font-size:.78rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-.portrait figcaption b{display:block;font-family:var(--inscribe);font-size:.92rem;font-weight:700;color:var(--ink)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:0 0 28px}
-.gallery figure{margin:0}
-.gallery img{width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.gallery figcaption{font-size:.84rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-
-/* ---- the organization ---- */
-.org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
-@media(max-width:640px){.org{grid-template-columns:1fr}}
-.org h3{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--red);font-family:var(--ui)}
-.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-.off .o{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding-top:4px;min-width:110px;font-family:var(--ui)}
-.off b{font-family:var(--inscribe);font-weight:700;color:var(--ink)}
-.off p{margin:3px 0 0;color:var(--ink2);font-size:.88rem}
-.org .meta{font-size:.88rem;color:var(--ink2);margin:10px 0 0}
-
-/* ---- the archive shelf ---- */
-.doc{border:1px solid var(--line);border-radius:12px;margin:0 0 24px;overflow:hidden;background:var(--paper)}
-.doc-head{padding:17px 19px 14px}
-.doc-head h3{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;margin:0 0 7px;color:var(--ink)}
-.doc-head p{margin:0;color:var(--ink2);font-size:.93rem}
-.doc-extract{border-left:3px solid var(--red);background:var(--paper2);margin:0 19px 15px;border-radius:0 8px 8px 0;
- padding:12px 16px;font-size:.93rem;color:var(--ink2)}
-.doc-extract .from{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;font-family:var(--ui)}
-.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid var(--line);background:var(--paper2)}
-.doc-foot{display:flex;gap:18px;flex-wrap:wrap;padding:13px 19px}
-.doc-foot a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.doc-foot a:hover{background:none;color:var(--red-dark)}
-
-/* ---- complete timeline ---- */
-.hx{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
-@media(max-width:640px){.hx{grid-template-columns:1fr;gap:2px}}
-.hx .d{font-family:var(--ui);font-size:12.5px;color:var(--ink3);padding-top:2px;font-weight:600}
-.hx .t{color:var(--ink2)}
-.hx a{margin-left:10px;font-size:.82rem}
-.hyear{font-family:var(--inscribe);font-weight:800;font-size:1.6rem;margin:44px 0 6px;color:var(--ink)}
-.hyear a{font-size:.8rem;font-weight:600;margin-left:14px}
-.hsub{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin:18px 0 4px;font-family:var(--ui)}
-
-/* ---- legislation ---- */
-.lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
- padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-@media(max-width:640px){.lrow{grid-template-columns:1fr;gap:4px}}
-.ltype{font-family:var(--ui);font-size:12px;letter-spacing:.01em;color:var(--red);font-weight:600}
-.lt{color:var(--ink)}
-.lls{display:flex;gap:14px;white-space:nowrap}
-.lls a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.lls a:hover{background:none;color:var(--red-dark)}
-.lsec{margin:0 0 34px}
-.lcount{font-size:.78rem;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em}
-.lfilter{width:100%;max-width:420px;background:var(--paper);border:1px solid var(--line);color:var(--ink);
- font-family:var(--ui);font-size:15px;padding:11px 16px;border-radius:10px;margin:6px 0 26px}
-.lfilter:focus{outline:2px solid var(--red);outline-offset:2px}
-.ljump{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 22px}
-.ljump .chip{font-family:var(--ui);font-size:13px;padding:5px 13px;border:1px solid var(--line);border-radius:999px;
- color:var(--ink2);text-decoration:none}
-.ljump .chip:hover{border-color:var(--red);color:var(--red)}
+/* ---- print ---- */
+@media print{
+ .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav{display:none!important}
+ body{font-size:11pt;color:#000}
+ a{color:#000;text-decoration:none}
+ a.ext::after{content:""}
+ .body a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#444;word-break:break-all}
+ .citebox{margin:0 0 18px;border-top:0}
+ .doc-view{display:none}
+ h2.sec{break-after:avoid}
+ .ev,.doc,.leader{break-inside:avoid}
+}
 </style></head><body>
-<div class="room"></div>
+<a class="skip" href="#main">Skip to the record</a>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="../index.html">SGA <b>60</b></a><ul><li><a href="../index.html" aria-current="page">The board</a></li><li><a href="../history.html">Timeline</a></li><li><a href="../legislation.html">Legislation</a></li><li><a href="../corrections.html">Corrections</a></li><li><a href="../about.html">About and method</a></li></ul></div></nav>
+<main id="main">
 
-<nav class="nav"><div class="wrap">
- <a class="brand" href="../index.html">SGA <b>60</b></a>
- <div style="display:flex;gap:20px"><a href="../index.html">The Board</a><a href="../history.html">Timeline</a><a href="../legislation.html">Legislation</a></div>
-</div></nav>
-<header class="yhead"><div class="wrap">
- <div class="eyebrow">Student Government Association</div>
+<header class="rec-head"><div class="wrap">
+ <p class="kicker">Student Government Association &middot; academic year</p>
  <h1>2019-20</h1>
- <div class="leads"><div class="lead plate-face engraved"><b>Will Harris</b><div class="role">president &middot; plaque: 2019-20</div></div></div>
+ <dl class="glance"><dt>Organization</dt><dd>Student Government Association</dd><dt>President</dt><dd>Will Harris</dd><dt>Entries</dt><dd>10</dd><dt>Photographs</dt><dd>1</dd><dt>Legislation on file</dt><dd>15</dd><dt>Sources cited</dt><dd>13</dd></dl>
 </div></header>
-<div class="wrap"><div class="cols">
- <div><div class="portraits"><figure class="portrait"><img src="../photos/2019-20-will-harris.jpg" alt="Will Harris" loading="lazy"><figcaption><b>Will Harris</b><a class="cite" style="margin-top:5px" href="https://wkuherald.com/17087/news/sga-plans-trip-to-rally-for-higher-education-in-march/" target="_blank" rel="noopener">Herald, Feb 2020 &#8599;</a></figcaption></figure></div><div class="note"><b>Will Harris:</b> From Glasgow. Sworn in as student regent 2 August 2019. His term ran into the March 2020 campus shutdown.</div><section class="profile"><h2 class="sub">Will Harris &mdash; the term</h2><p>Harris won the student body presidency in April 2019 at the head of the WGK ticket with Garrett Edmonds and Kenan Mujkanovic, defeating Asha McWilliams. After the results were announced at SGA's election party, he said he looked forward to "making a positive impact for all students here at WKU" and to collaborating with the opposing ticket. He took office at SGA's annual banquet and presided over his first meeting the following Tuesday.</p><p>The defining controversy of his fall semester was Resolution 4-19-F, the senate's push to punish Alpha Xi Delta after a video showed members singing a racial slur. Harris abstained when his executive board vetoed the resolution 4-0, explaining that the discrimination claim would have to come from the Student Code of Conduct and that no violation had been noted by the Office of Student Conduct. When senators suggested his position as a knight of Alpha Xi Delta motivated him, he rejected the charge and said he wanted to reach an amicable outcome with the resolution's authors.</p></section><h2 class="sub">What happened, in order</h2><article class="ev"><div class="d">2019-04-17</div><div><h3>Harris-led WGK ticket wins SGA executive election</h3><p>The WGK ticket of Will Harris, Garrett Edmonds and Kenan Mujkanovic won the spring SGA elections, with Harris defeating Asha McWilliams for student body president. Edmonds was re-elected to a second term as executive vice president and Mujkanovic defeated Symone Whalin for administrative vice president. Results were announced at SGA's election party, with the new officers set to take office at the annual banquet; the Herald's results story reported no turnout figures.</p><a class="cite" href="https://wkuherald.com/20289/news/wgk-ticket-wins-spring-sga-elections/" target="_blank" rel="noopener">Herald, 17 Apr 2019 &#8599;</a></div></article><article class="ev"><div class="d">2019-09-04</div><div><h3>First meeting of the year confirms five executive appointments</h3><p>At its first official meeting of the semester, the senate confirmed all five of President Will Harris's executive branch nominees: Aubrey Kelley as chief of staff, Ashlynn Evans as chief of public relations, Abbey Norvell as director of academic and student affairs, Paul Brosky as director of information technology and Josh Zaczek as Legislative Research Committee chair. Appointees outlined plans including wider use of counseling center fee vouchers and a revival of the need-based Earn-a-Computer program.</p><a class="cite" href="https://wkuherald.com/19756/news/student-government-associations-first-meeting-of-the-semester-yields-5-confirmations/" target="_blank" rel="noopener">Herald, 4 Sep 2019 &#8599;</a></div></article><article class="ev"><div class="d">2019-09-11</div><div><h3>Senate blocks budget over special projects fund</h3><p>The senate refused to pass the year's budget over a $6,500 special projects fund the executive branch wanted for a sand volleyball court and hammock space at the First Year Village green space. Senators including Anthony Survance objected that the allocation cut into scholarship money, with Survance calling the motion "slimy", and the senate voted to keep $3,000 in its discretionary fund and $35,000 in scholarships. The executive branch pulled the budget, forcing a week's wait before a revised version could be voted on.</p><a class="cite" href="https://wkuherald.com/19462/news/scholarships-or-sand-volleyball-sga-at-impasse-over-budget/" target="_blank" rel="noopener">Herald, 11 Sep 2019 &#8599;</a></div></article><article class="ev"><div class="d">2019-09-19</div><div><h3>Budget passes unanimously with spending stipulations</h3><p>All 13 senators approved the yearly budget after a compromise added stipulations restricting the special projects fund to the First Year Village plans and redistributing any money unspent by March 3 back to discretionary and voucher funds. The budget's passage let Bills 1-19-F (Greeks Go Green) and 2-19-F (funding for Bowling Green Pride) pass unanimously. The senate also amended its election codes to halve campaign spending maximums, which had been $300 for presidential candidates, $125 for vice presidential candidates and $50 for senate candidates.</p><a class="cite" href="https://wkuherald.com/19445/news/sga-passes-budget-and-election-codes-in-productive-pre-election-meeting/" target="_blank" rel="noopener">Herald, 19 Sep 2019 &#8599;</a></div></article><article class="ev"><div class="d">2019-10-24</div><div><h3>Senate passes Resolution 4-19-F against Alpha Xi Delta</h3><p>The senate voted 24-7 to pass Resolution 4-19-F, authored by senators Symone Whalin and Anthony Survance, supporting disciplinary action up to suspension from Greek affairs against the Epsilon Kappa chapter of Alpha Xi Delta. The resolution followed an August Twitter video showing AXiD members singing a racial slur in a rap song, and the authors said administrative silence signaled the university did not care about minority students. Before passage the senate amended the title to drop a call for outright removal from campus.</p><a class="cite" href="https://wkuherald.com/19223/news/student-government-seeks-repercussions-against-alpha-xi-delta/" target="_blank" rel="noopener">Herald, 24 Oct 2019 &#8599;</a></div></article><article class="ev"><div class="d">2019-10-30</div><div><h3>Executive board veto of Resolution 4-19-F upheld</h3><p>The executive board vetoed Resolution 4-19-F by a 4-0 vote with two abstentions, and the senate confirmed the veto at its Tuesday meeting. President Will Harris, one of the abstainers, said the resolution's discrimination claim would have to come from the Student Code of Conduct and no violation had been noted by the Office of Student Conduct, while co-author Anthony Survance accused the executive branch of dragging the issue out. Senators also raised Harris's connection to Alpha Xi Delta as one of its knights, which he rejected as grounds for bias.</p><a class="cite" href="https://wkuherald.com/18899/news/executive-board-questions-constitutionality-of-resolution-4-19-f-explains-veto/" target="_blank" rel="noopener">Herald, 30 Oct 2019 &#8599;</a></div></article><article class="ev"><div class="d">2020-02-12</div><div><h3>Go With the Flow feminine hygiene bill passes unanimously</h3><p>Bill 1-20-S, funding the Go With the Flow program that supplies feminine hygiene products in campus restrooms, passed the senate unanimously. The bill, carried forward by Campus Improvement Chair Matthew Barr, doubled the program's budget from $588, and a floor amendment from Senator Symone Whalin raised the final amount to $1,300 from senate discretionary funds. Products were to be placed in Grise Hall, DSU, Preston Center, Gary Ransdell Hall and Snell Hall, including gender neutral bathrooms.</p><a class="cite" href="https://wkuherald.com/16573/news/sga-bill-creates-additional-funding-for-feminine-hygiene-products-in-campus-restrooms/" target="_blank" rel="noopener">Herald, 12 Feb 2020 &#8599;</a></div></article><article class="ev"><div class="d">2020-03-04</div><div><h3>Senate approves $5,000 hammocks project</h3><p>The senate voted to pass Bill 3-20-S, allocating $5,000 from the special projects fund to begin planning hammock poles across campus, after the sand volleyball court proposed earlier in the year was deemed too expensive. Planned locations included spots near most residence halls and the Valley, and Executive Vice President Garrett Edmonds said he and Harris ran so SGA would be known for more than "scantrons and greenbooks". Legislative Research Chair Josh Zaczek criticized having to vote without seeing budget numbers, and the senate retained power to halt spending during planning.</p><a class="cite" href="https://wkuherald.com/16420/news/sga-hammocks-project-begins-planning-phase-following-passing-vote/" target="_blank" rel="noopener">Herald, 4 Mar 2020 &#8599;</a></div></article><article class="ev"><div class="d">2020-03-11<span class="ctx">campus</span></div><div><h3>WKU extends spring break, moves classes online amid COVID-19</h3><p>WKU announced it would extend spring break by one week and transition to "alternative delivery formats" for classes amid growing coronavirus concerns, with President Tim Caboni recommending that students who could safely return home do so. The announcement came after the University of Kentucky and University of Louisville suspended in-person classes. In-person instruction never resumed that semester, upending the rest of SGA's spring calendar.</p><a class="cite" href="https://wkuherald.com/16498/news/wku-extending-spring-break-switching-classes-to-alternative-delivery-format-amid-coronavirus-concerns/" target="_blank" rel="noopener">Herald, 11 Mar 2020 &#8599;</a></div></article><article class="ev"><div class="d">2020-04-20</div><div><h3>Spring elections postponed until fall as SGA moves to Zoom</h3><p>With campus closed by COVID-19, SGA postponed its spring elections until at least September so voting could happen in person, and added an "emergency clause" constitutional amendment allowing cabinet terms to be extended until the following election with judicial oversight. The cabinet continued meeting over Zoom every Tuesday. Harris said that after scholarships were awarded, the remainder of SGA's budget would be donated to the WKU Opportunity Fund and Emergency Relief Fund, and SGA gave its remaining food bank goods to the Office of Sustainability for redistribution.</p><a class="cite" href="https://wkuherald.com/15736/news/sga-spring-elections-postponed-until-fall-committee-continues-meeting-over-zoom/" target="_blank" rel="noopener">Herald, 20 Apr 2020 &#8599;</a></div></article><h2 class="sub">Legislation &mdash; 15 documents on file</h2><div class="lrow" data-t="a bill to establish an honor society membership reimbursement fund bill"><span class="ltype">bill</span><span class="lt">A Bill to Establish an Honor Society Membership Reimbursement Fund</span><span class="lls"><a href="../legislation/2019-20/6_20_s.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/6_20_s.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="bill to initiate emergency clauses bill"><span class="ltype">bill</span><span class="lt">Bill to Initiate Emergency Clauses</span><span class="lls"><a href="../legislation/2019-20/8_20_s.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/8_20_s.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="continuing a partnership for study away scholarships bill"><span class="ltype">bill</span><span class="lt">Continuing a Partnership for Study Away Scholarships</span><span class="lls"><a href="../legislation/2019-20/5_19_f.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/5_19_f.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="donation to the wku food recovery network to replenish supplies for the office of sustainability food pantry amidst covid-19 bill"><span class="ltype">bill</span><span class="lt">Donation to the WKU Food Recovery Network to replenish supplies for the Office of Sustainability food pantry amidst COVID-19</span><span class="lls"><a href="../legislation/2019-20/9_20_s.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/9_20_s.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="funding for greeks go green bill"><span class="ltype">bill</span><span class="lt">Funding for Greeks Go Green</span><span class="lls"><a href="../legislation/2019-20/1_19_f.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/1_19_f.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="funding for spring 2020 sga scholarship recipients bill"><span class="ltype">bill</span><span class="lt">Funding for Spring 2020 SGA Scholarship Recipients</span><span class="lls"><a href="../legislation/2019-20/10_20_s.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/10_20_s.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="funding for the addressing educational disparities scholarship bill"><span class="ltype">bill</span><span class="lt">Funding for the Addressing Educational Disparities Scholarship</span><span class="lls"><a href="../legislation/2019-20/7_20_s.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/7_20_s.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="funding for the bowling green pride festival bill"><span class="ltype">bill</span><span class="lt">Funding for the Bowling Green Pride Festival</span><span class="lls"><a href="../legislation/2019-20/2_19_f.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/2_19_f.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="funding for the glasgow regional campus to host a professional development etiquette dinner for their students bill"><span class="ltype">bill</span><span class="lt">Funding for the Glasgow Regional Campus to host a professional development etiquette dinner for their students</span><span class="lls"><a href="../legislation/2019-20/3_20_s.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/3_20_s.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="funding for the healthy days fair bill"><span class="ltype">bill</span><span class="lt">Funding for the Healthy Days Fair</span><span class="lls"><a href="../legislation/2019-20/5_20_s.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/5_20_s.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="organizational aid funding for western kentucky university ky public health association, student national association teachers society, phi sigma pi – beta phi, american society of civil engineers, wku food recovery, korean pop culture club, iota phi theta fraternity inc., and wku holas to allocate the special projects fund of $5,000 to facilities management to start the hammock initiative on campus bill"><span class="ltype">bill</span><span class="lt">Organizational Aid Funding for Western Kentucky University KY Public Health Association, Student National Association Teachers Society, Phi Sigma Pi – Beta Phi, American Society of Civil Engineers, WKU Food Recovery, Korean Pop Culture Club, Iota Phi Theta Fraternity Inc., and WKU HOLAS To allocate the special projects fund of $5,000 to Facilities Management to start the hammock initiative on campus</span><span class="lls"><a href="../legislation/2019-20/4_20_s.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/4_20_s.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="organizational aid funding for western kentucky university social work student union, nonprofit student association, building men of worth, black student alliance, delta sigma theta, and phi beta sigma bill"><span class="ltype">bill</span><span class="lt">Organizational Aid Funding for Western Kentucky University Social Work Student Union, Nonprofit Student Association, Building Men of Worth, Black Student Alliance, Delta Sigma Theta, and Phi Beta Sigma</span><span class="lls"><a href="../legislation/2019-20/7_19_f.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/7_19_f.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="organizational aid funding for western kentucky university student affairs graduate organization, black women of western, association for the study of african american life and history, delta sigma theta, chi sigma iota, and phi beta sigma bill"><span class="ltype">bill</span><span class="lt">Organizational Aid Funding for Western Kentucky University Student Affairs Graduate Organization, Black Women of Western, Association for the Study of African American Life and History, Delta Sigma Theta, Chi Sigma Iota, and Phi Beta Sigma</span><span class="lls"><a href="../legislation/2019-20/8_19_f.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/8_19_f.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="organizational aid funding for western kentucky university wise, jump rope club, honorstoppers, and queer student union bill"><span class="ltype">bill</span><span class="lt">Organizational Aid Funding for Western Kentucky University WiSE, Jump Rope Club, HonorsToppers, and Queer Student Union</span><span class="lls"><a href="../legislation/2019-20/6_19_f.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/6_19_f.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div><div class="lrow" data-t="resolution to support the disciplinary action, up to their suspension in wku greek affairs, against the epsilon kappa chapter of alpha xi delta resolution"><span class="ltype">resolution</span><span class="lt">Resolution to Support the disciplinary action, up to their suspension in WKU Greek Affairs, against the Epsilon Kappa chapter of Alpha Xi Delta</span><span class="lls"><a href="../legislation/2019-20/res_1_19_f.pdf" target="_blank" rel="noopener">read &#8599;</a><a href="https://www.wku.edu/sga/legislative/2019_2020_legislation/res_1_19_f.pdf" target="_blank" rel="noopener">original &#8599;</a></span></div></div>
-</div><div class="pager"><a href="2018-19.html">&larr; previous<b>2018-19</b></a><a class="r" href="2020-21.html">next &rarr;<b>2020-21</b></a></div></div>
-<div class="bigred" id="bigred" role="img" aria-label="8-bit Big Red in a judicial wig, holding the SGA gavel. Click to play."><button class="close" id="brx" aria-label="Dismiss Big Red">&times;</button><div class="say" id="brsay">Order, order!</div><img src="../photos/bigred-8bit.png" alt="" width="170" height="142"><svg class="wig" width="98" height="56" viewBox="0 0 98 56"><rect x="14" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="28" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="49" width="7.4" height="7.4" fill="#F4F2ED"/></svg><svg class="gavel" width="56" height="56" viewBox="0 0 56 56"><rect x="0" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="49" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="49" width="7.4" height="7.4" fill="#8B5A2B"/></svg></div><script>(function(){var br=document.getElementById("bigred");if(!br)return;try{if(localStorage.getItem("bigred")==="hidden"){br.remove();return}}catch(e){}document.getElementById("brx").addEventListener("click",function(e){e.stopPropagation();br.remove();try{localStorage.setItem("bigred","hidden")}catch(e){}});var says=["Order, order!","Go Tops!","Sixty years on the Hill.","Motion carries.","The Spirit Makes the Master."],i=0,m=-1;br.addEventListener("click",function(){br.classList.remove("bounce","spin","bang","talk");void br.offsetWidth;m=(m+1)%3;if(m===0){br.classList.add("bang","talk");document.getElementById("brsay").textContent=says[i++%says.length];}else if(m===1){br.classList.add("bounce")}else{br.classList.add("spin")}clearTimeout(br._t);br._t=setTimeout(function(){br.classList.remove("talk")},1600)});})();</script>
+<div class="wrap"><div class="body">
+<div class="plates-photo"><figure class="portrait"><img src="../photos/2019-20-will-harris.jpg" alt="Portrait of Will Harris." loading="lazy"><figcaption><b>Will Harris</b><span class="who">President, 2019-20.</span><span class="credit"><a class="ext" href="https://wkuherald.com/17087/news/sga-plans-trip-to-rally-for-higher-education-in-march/" rel="noopener">Herald, Feb 2020</a></span></figcaption></figure></div>
+<section class="leader" id="will-harris"><h2>Will Harris <span class="r">president, 2019-20</span></h2><dl class="facts"><dt>Office</dt><dd>President</dd><dt>Term recorded here</dt><dd>2019-20</dd><dt>Standing of the record</dt><dd>As recorded on the plaque. Not yet corroborated in the archive.</dd></dl><div class="editorial"><p>From Glasgow. Sworn in as student regent 2 August 2019. His term ran into the March 2020 campus shutdown.</p></div><div class="profile"><p>Harris won the student body presidency in April 2019 at the head of the WGK ticket with Garrett Edmonds and Kenan Mujkanovic, defeating Asha McWilliams. After the results were announced at SGA&#x27;s election party, he said he looked forward to &quot;making a positive impact for all students here at WKU&quot; and to collaborating with the opposing ticket. He took office at SGA&#x27;s annual banquet and presided over his first meeting the following Tuesday.</p><p>The defining controversy of his fall semester was Resolution 4-19-F, the senate&#x27;s push to punish Alpha Xi Delta after a video showed members singing a racial slur. Harris abstained when his executive board vetoed the resolution 4-0, explaining that the discrimination claim would have to come from the Student Code of Conduct and that no violation had been noted by the Office of Student Conduct. When senators suggested his position as a knight of Alpha Xi Delta motivated him, he rejected the charge and said he wanted to reach an amicable outcome with the resolution&#x27;s authors.</p></div><p class="lab" style="margin:18px 0 6px">Sources for this account</p><ol class="srclist"><li id="will-harris-s1"><a class="ext" href="https://www.wku.edu/news/articles/index.php?articleid=7901&amp;return=archive&amp;view=article" rel="noopener">WKU News - regents swear in student regent</a></li><li id="will-harris-s2"><a class="ext" href="https://wkuherald.com/20289/news/wgk-ticket-wins-spring-sga-elections/" rel="noopener">Herald, 17 Apr 2019</a></li><li id="will-harris-s3"><a class="ext" href="https://wkuherald.com/18899/news/executive-board-questions-constitutionality-of-resolution-4-19-f-explains-veto/" rel="noopener">Herald, 30 Oct 2019</a></li><li id="will-harris-s4"><a class="ext" href="https://wkuherald.com/16002/news/sga-to-attend-rally-for-higher-education/" rel="noopener">Herald, 3 Mar 2020</a></li></ol></section>
+
+<h2 class="sec">The year, in order<span class="n">10</span></h2><article class="ev" id="e-20190417-1"><div class="when"><time datetime="2019-04-17">17 April 2019</time></div><div><a class="pl" href="#e-20190417-1" aria-label="Link to this entry">#</a><h3>Harris-led WGK ticket wins SGA executive election</h3><p>The WGK ticket of Will Harris, Garrett Edmonds and Kenan Mujkanovic won the spring SGA elections, with Harris defeating Asha McWilliams for student body president. Edmonds was re-elected to a second term as executive vice president and Mujkanovic defeated Symone Whalin for administrative vice president. Results were announced at SGA&#x27;s election party, with the new officers set to take office at the annual banquet; the Herald&#x27;s results story reported no turnout figures.</p><p class="srcline"><a class="ext" href="https://wkuherald.com/20289/news/wgk-ticket-wins-spring-sga-elections/" rel="noopener">Herald, 17 Apr 2019</a></p></div></article><article class="ev" id="e-20190904-1"><div class="when"><time datetime="2019-09-04">4 September 2019</time></div><div><a class="pl" href="#e-20190904-1" aria-label="Link to this entry">#</a><h3>First meeting of the year confirms five executive appointments</h3><p>At its first official meeting of the semester, the senate confirmed all five of President Will Harris&#x27;s executive branch nominees: Aubrey Kelley as chief of staff, Ashlynn Evans as chief of public relations, Abbey Norvell as director of academic and student affairs, Paul Brosky as director of information technology and Josh Zaczek as Legislative Research Committee chair. Appointees outlined plans including wider use of counseling center fee vouchers and a revival of the need-based Earn-a-Computer program.</p><p class="srcline"><a class="ext" href="https://wkuherald.com/19756/news/student-government-associations-first-meeting-of-the-semester-yields-5-confirmations/" rel="noopener">Herald, 4 Sep 2019</a></p></div></article><article class="ev" id="e-20190911-1"><div class="when"><time datetime="2019-09-11">11 September 2019</time></div><div><a class="pl" href="#e-20190911-1" aria-label="Link to this entry">#</a><h3>Senate blocks budget over special projects fund</h3><p>The senate refused to pass the year&#x27;s budget over a $6,500 special projects fund the executive branch wanted for a sand volleyball court and hammock space at the First Year Village green space. Senators including Anthony Survance objected that the allocation cut into scholarship money, with Survance calling the motion &quot;slimy&quot;, and the senate voted to keep $3,000 in its discretionary fund and $35,000 in scholarships. The executive branch pulled the budget, forcing a week&#x27;s wait before a revised version could be voted on.</p><p class="srcline"><a class="ext" href="https://wkuherald.com/19462/news/scholarships-or-sand-volleyball-sga-at-impasse-over-budget/" rel="noopener">Herald, 11 Sep 2019</a></p></div></article><article class="ev" id="e-20190919-1"><div class="when"><time datetime="2019-09-19">19 September 2019</time></div><div><a class="pl" href="#e-20190919-1" aria-label="Link to this entry">#</a><h3>Budget passes unanimously with spending stipulations</h3><p>All 13 senators approved the yearly budget after a compromise added stipulations restricting the special projects fund to the First Year Village plans and redistributing any money unspent by March 3 back to discretionary and voucher funds. The budget&#x27;s passage let Bills 1-19-F (Greeks Go Green) and 2-19-F (funding for Bowling Green Pride) pass unanimously. The senate also amended its election codes to halve campaign spending maximums, which had been $300 for presidential candidates, $125 for vice presidential candidates and $50 for senate candidates.</p><p class="srcline"><a class="ext" href="https://wkuherald.com/19445/news/sga-passes-budget-and-election-codes-in-productive-pre-election-meeting/" rel="noopener">Herald, 19 Sep 2019</a></p></div></article><article class="ev" id="e-20191024-1"><div class="when"><time datetime="2019-10-24">24 October 2019</time></div><div><a class="pl" href="#e-20191024-1" aria-label="Link to this entry">#</a><h3>Senate passes Resolution 4-19-F against Alpha Xi Delta</h3><p>The senate voted 24-7 to pass Resolution 4-19-F, authored by senators Symone Whalin and Anthony Survance, supporting disciplinary action up to suspension from Greek affairs against the Epsilon Kappa chapter of Alpha Xi Delta. The resolution followed an August Twitter video showing AXiD members singing a racial slur in a rap song, and the authors said administrative silence signaled the university did not care about minority students. Before passage the senate amended the title to drop a call for outright removal from campus.</p><p class="srcline"><a class="ext" href="https://wkuherald.com/19223/news/student-government-seeks-repercussions-against-alpha-xi-delta/" rel="noopener">Herald, 24 Oct 2019</a></p></div></article><article class="ev" id="e-20191030-1"><div class="when"><time datetime="2019-10-30">30 October 2019</time></div><div><a class="pl" href="#e-20191030-1" aria-label="Link to this entry">#</a><h3>Executive board veto of Resolution 4-19-F upheld</h3><p>The executive board vetoed Resolution 4-19-F by a 4-0 vote with two abstentions, and the senate confirmed the veto at its Tuesday meeting. President Will Harris, one of the abstainers, said the resolution&#x27;s discrimination claim would have to come from the Student Code of Conduct and no violation had been noted by the Office of Student Conduct, while co-author Anthony Survance accused the executive branch of dragging the issue out. Senators also raised Harris&#x27;s connection to Alpha Xi Delta as one of its knights, which he rejected as grounds for bias.</p><p class="srcline"><a class="ext" href="https://wkuherald.com/18899/news/executive-board-questions-constitutionality-of-resolution-4-19-f-explains-veto/" rel="noopener">Herald, 30 Oct 2019</a></p></div></article><article class="ev" id="e-20200212-1"><div class="when"><time datetime="2020-02-12">12 February 2020</time></div><div><a class="pl" href="#e-20200212-1" aria-label="Link to this entry">#</a><h3>Go With the Flow feminine hygiene bill passes unanimously</h3><p>Bill 1-20-S, funding the Go With the Flow program that supplies feminine hygiene products in campus restrooms, passed the senate unanimously. The bill, carried forward by Campus Improvement Chair Matthew Barr, doubled the program&#x27;s budget from $588, and a floor amendment from Senator Symone Whalin raised the final amount to $1,300 from senate discretionary funds. Products were to be placed in Grise Hall, DSU, Preston Center, Gary Ransdell Hall and Snell Hall, including gender neutral bathrooms.</p><p class="srcline"><a class="ext" href="https://wkuherald.com/16573/news/sga-bill-creates-additional-funding-for-feminine-hygiene-products-in-campus-restrooms/" rel="noopener">Herald, 12 Feb 2020</a></p></div></article><article class="ev" id="e-20200304-1"><div class="when"><time datetime="2020-03-04">4 March 2020</time></div><div><a class="pl" href="#e-20200304-1" aria-label="Link to this entry">#</a><h3>Senate approves $5,000 hammocks project</h3><p>The senate voted to pass Bill 3-20-S, allocating $5,000 from the special projects fund to begin planning hammock poles across campus, after the sand volleyball court proposed earlier in the year was deemed too expensive. Planned locations included spots near most residence halls and the Valley, and Executive Vice President Garrett Edmonds said he and Harris ran so SGA would be known for more than &quot;scantrons and greenbooks&quot;. Legislative Research Chair Josh Zaczek criticized having to vote without seeing budget numbers, and the senate retained power to halt spending during planning.</p><p class="srcline"><a class="ext" href="https://wkuherald.com/16420/news/sga-hammocks-project-begins-planning-phase-following-passing-vote/" rel="noopener">Herald, 4 Mar 2020</a></p></div></article><article class="ev" id="e-20200311-1"><div class="when"><time datetime="2020-03-11">11 March 2020</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-20200311-1" aria-label="Link to this entry">#</a><h3>WKU extends spring break, moves classes online amid COVID-19</h3><p>WKU announced it would extend spring break by one week and transition to &quot;alternative delivery formats&quot; for classes amid growing coronavirus concerns, with President Tim Caboni recommending that students who could safely return home do so. The announcement came after the University of Kentucky and University of Louisville suspended in-person classes. In-person instruction never resumed that semester, upending the rest of SGA&#x27;s spring calendar.</p><p class="srcline"><a class="ext" href="https://wkuherald.com/16498/news/wku-extending-spring-break-switching-classes-to-alternative-delivery-format-amid-coronavirus-concerns/" rel="noopener">Herald, 11 Mar 2020</a></p></div></article><article class="ev" id="e-20200420-1"><div class="when"><time datetime="2020-04-20">20 April 2020</time></div><div><a class="pl" href="#e-20200420-1" aria-label="Link to this entry">#</a><h3>Spring elections postponed until fall as SGA moves to Zoom</h3><p>With campus closed by COVID-19, SGA postponed its spring elections until at least September so voting could happen in person, and added an &quot;emergency clause&quot; constitutional amendment allowing cabinet terms to be extended until the following election with judicial oversight. The cabinet continued meeting over Zoom every Tuesday. Harris said that after scholarships were awarded, the remainder of SGA&#x27;s budget would be donated to the WKU Opportunity Fund and Emergency Relief Fund, and SGA gave its remaining food bank goods to the Office of Sustainability for redistribution.</p><p class="srcline"><a class="ext" href="https://wkuherald.com/15736/news/sga-spring-elections-postponed-until-fall-committee-continues-meeting-over-zoom/" rel="noopener">Herald, 20 Apr 2020</a></p></div></article>
+
+
+<h2 class="sec">Legislation<span class="n">15</span></h2><p class="secnote">Bills and resolutions from this session, held as files on this site.</p><div class="lrow" data-t="a bill to establish an honor society membership reimbursement fund bill"><span class="lt">bill</span><span>A Bill to Establish an Honor Society Membership Reimbursement Fund</span><span class="ll"><a href="../legislation/2019-20/6_20_s.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/6_20_s.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="bill to initiate emergency clauses bill"><span class="lt">bill</span><span>Bill to Initiate Emergency Clauses</span><span class="ll"><a href="../legislation/2019-20/8_20_s.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/8_20_s.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="continuing a partnership for study away scholarships bill"><span class="lt">bill</span><span>Continuing a Partnership for Study Away Scholarships</span><span class="ll"><a href="../legislation/2019-20/5_19_f.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/5_19_f.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="donation to the wku food recovery network to replenish supplies for the office of sustainability food pantry amidst covid-19 bill"><span class="lt">bill</span><span>Donation to the WKU Food Recovery Network to replenish supplies for the Office of Sustainability food pantry amidst COVID-19</span><span class="ll"><a href="../legislation/2019-20/9_20_s.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/9_20_s.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="funding for greeks go green bill"><span class="lt">bill</span><span>Funding for Greeks Go Green</span><span class="ll"><a href="../legislation/2019-20/1_19_f.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/1_19_f.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="funding for spring 2020 sga scholarship recipients bill"><span class="lt">bill</span><span>Funding for Spring 2020 SGA Scholarship Recipients</span><span class="ll"><a href="../legislation/2019-20/10_20_s.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/10_20_s.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="funding for the addressing educational disparities scholarship bill"><span class="lt">bill</span><span>Funding for the Addressing Educational Disparities Scholarship</span><span class="ll"><a href="../legislation/2019-20/7_20_s.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/7_20_s.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="funding for the bowling green pride festival bill"><span class="lt">bill</span><span>Funding for the Bowling Green Pride Festival</span><span class="ll"><a href="../legislation/2019-20/2_19_f.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/2_19_f.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="funding for the glasgow regional campus to host a professional development etiquette dinner for their students bill"><span class="lt">bill</span><span>Funding for the Glasgow Regional Campus to host a professional development etiquette dinner for their students</span><span class="ll"><a href="../legislation/2019-20/3_20_s.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/3_20_s.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="funding for the healthy days fair bill"><span class="lt">bill</span><span>Funding for the Healthy Days Fair</span><span class="ll"><a href="../legislation/2019-20/5_20_s.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/5_20_s.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="organizational aid funding for western kentucky university ky public health association, student national association teachers society, phi sigma pi – beta phi, american society of civil engineers, wku food recovery, korean pop culture club, iota phi theta fraternity inc., and wku holas to allocate the special projects fund of $5,000 to facilities management to start the hammock initiative on campus bill"><span class="lt">bill</span><span>Organizational Aid Funding for Western Kentucky University KY Public Health Association, Student National Association Teachers Society, Phi Sigma Pi – Beta Phi, American Society of Civil Engineers, WKU Food Recovery, Korean Pop Culture Club, Iota Phi Theta Fraternity Inc., and WKU HOLAS To allocate the special projects fund of $5,000 to Facilities Management to start the hammock initiative on campus</span><span class="ll"><a href="../legislation/2019-20/4_20_s.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/4_20_s.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="organizational aid funding for western kentucky university social work student union, nonprofit student association, building men of worth, black student alliance, delta sigma theta, and phi beta sigma bill"><span class="lt">bill</span><span>Organizational Aid Funding for Western Kentucky University Social Work Student Union, Nonprofit Student Association, Building Men of Worth, Black Student Alliance, Delta Sigma Theta, and Phi Beta Sigma</span><span class="ll"><a href="../legislation/2019-20/7_19_f.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/7_19_f.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="organizational aid funding for western kentucky university student affairs graduate organization, black women of western, association for the study of african american life and history, delta sigma theta, chi sigma iota, and phi beta sigma bill"><span class="lt">bill</span><span>Organizational Aid Funding for Western Kentucky University Student Affairs Graduate Organization, Black Women of Western, Association for the Study of African American Life and History, Delta Sigma Theta, Chi Sigma Iota, and Phi Beta Sigma</span><span class="ll"><a href="../legislation/2019-20/8_19_f.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/8_19_f.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="organizational aid funding for western kentucky university wise, jump rope club, honorstoppers, and queer student union bill"><span class="lt">bill</span><span>Organizational Aid Funding for Western Kentucky University WiSE, Jump Rope Club, HonorsToppers, and Queer Student Union</span><span class="ll"><a href="../legislation/2019-20/6_19_f.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/6_19_f.pdf" rel="noopener">Original</a></span></div><div class="lrow" data-t="resolution to support the disciplinary action, up to their suspension in wku greek affairs, against the epsilon kappa chapter of alpha xi delta resolution"><span class="lt">resolution</span><span>Resolution to Support the disciplinary action, up to their suspension in WKU Greek Affairs, against the Epsilon Kappa chapter of Alpha Xi Delta</span><span class="ll"><a href="../legislation/2019-20/res_1_19_f.pdf">Read</a><a class="ext" href="https://www.wku.edu/sga/legislative/2019_2020_legislation/res_1_19_f.pdf" rel="noopener">Original</a></span></div>
+<h2 class="sec">Sources for this year<span class="n">13</span></h2><p class="secnote">Every source cited above, once, with the number of entries that rest on it.</p><ol class="srclist" style="font-size:.92rem;color:var(--ink2)"><li><a class="ext" href="https://www.wku.edu/news/articles/index.php?articleid=7901&amp;return=archive&amp;view=article" rel="noopener">WKU News - regents swear in student regent</a></li><li><a class="ext" href="https://wkuherald.com/20289/news/wgk-ticket-wins-spring-sga-elections/" rel="noopener">Herald, 17 Apr 2019</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://wkuherald.com/18899/news/executive-board-questions-constitutionality-of-resolution-4-19-f-explains-veto/" rel="noopener">Herald, 30 Oct 2019</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://wkuherald.com/16002/news/sga-to-attend-rally-for-higher-education/" rel="noopener">Herald, 3 Mar 2020</a></li><li><a class="ext" href="https://wkuherald.com/19756/news/student-government-associations-first-meeting-of-the-semester-yields-5-confirmations/" rel="noopener">Herald, 4 Sep 2019</a></li><li><a class="ext" href="https://wkuherald.com/19462/news/scholarships-or-sand-volleyball-sga-at-impasse-over-budget/" rel="noopener">Herald, 11 Sep 2019</a></li><li><a class="ext" href="https://wkuherald.com/19445/news/sga-passes-budget-and-election-codes-in-productive-pre-election-meeting/" rel="noopener">Herald, 19 Sep 2019</a></li><li><a class="ext" href="https://wkuherald.com/19223/news/student-government-seeks-repercussions-against-alpha-xi-delta/" rel="noopener">Herald, 24 Oct 2019</a></li><li><a class="ext" href="https://wkuherald.com/16573/news/sga-bill-creates-additional-funding-for-feminine-hygiene-products-in-campus-restrooms/" rel="noopener">Herald, 12 Feb 2020</a></li><li><a class="ext" href="https://wkuherald.com/16420/news/sga-hammocks-project-begins-planning-phase-following-passing-vote/" rel="noopener">Herald, 4 Mar 2020</a></li><li><a class="ext" href="https://wkuherald.com/16498/news/wku-extending-spring-break-switching-classes-to-alternative-delivery-format-amid-coronavirus-concerns/" rel="noopener">Herald, 11 Mar 2020</a></li><li><a class="ext" href="https://wkuherald.com/15736/news/sga-spring-elections-postponed-until-fall-committee-continues-meeting-over-zoom/" rel="noopener">Herald, 20 Apr 2020</a></li><li><a class="ext" href="https://wkuherald.com/17087/news/sga-plans-trip-to-rally-for-higher-education-in-march/" rel="noopener">Herald, Feb 2020</a></li></ol>
+<section class="citebox">
+ <p class="lab">Preferred citation</p>
+ <p class="citestr" id="cite">&#8220;2019-20,&#8221; <cite>SGA 60: Student Government at Western Kentucky University, 1966&#8211;2026</cite>, revised 4 August 2026, <span id="citeurl">y/2019-20.html</span></p>
+ <button class="copy" id="copy" type="button">Copy the citation</button>
+ <p class="revised">Where a name on this page differs from the plaque in the SGA
+ Chambers, the difference is explained above and recorded on the
+ <a href="../corrections.html">corrections page</a>.</p>
+</section>
+<div class="pager"><a href="2018-19.html">Previous year<b>2018-19</b></a><a class="r" href="2020-21.html">Next year<b>2020-21</b></a></div>
+</div></div>
+<script>
+(function(){
+ var u=document.getElementById('citeurl');if(u)u.textContent=location.href.split('#')[0];
+ var b=document.getElementById('copy'),c=document.getElementById('cite');
+ if(b&&c&&navigator.clipboard){b.addEventListener('click',function(){
+  navigator.clipboard.writeText(c.textContent.replace(/\s+/g,' ').trim()).then(function(){
+   b.textContent='Copied';setTimeout(function(){b.textContent='Copy the citation'},1800);});});}
+ else if(b){b.style.display='none'}
+})();
+</script>
+</main>
+<footer class="foot"><div class="wrap"><div class="cols">
+<div><h2>What this is</h2>
+<p>A year-by-year record of student government at Western Kentucky University, from the
+ratification of the Associated Students constitution in April 1966 to the present. Every
+entry names the source it came from.</p></div>
+<div><h2>Corrections</h2>
+<p>The names here start with the plaque in the SGA Chambers, and the plaque is known to be
+wrong in places. Where the archive disagrees with it, this site follows the archive and
+records the change on the <a href="../corrections.html">corrections page</a>. If you
+served, or you know that a year here is wrong, the project wants to hear from you through
+the Student Government Association office.</p></div>
+<div><h2>Reuse</h2><p>Text on this site is the work of the project. Photographs, documents and legislation are reproduced from Western Kentucky University's own open archives and from the <cite>College Heights Herald</cite> and the <cite>Talisman</cite>; each item names the collection, issue and page it came from and links to the original.</p></div>
+</div>
+<p class="fine">Built 4 August 2026. The whole record is readable as data:
+<a href="../years.json">years.json</a>. Method and scope are set out
+<a href="../about.html">on the about page</a>.</p>
+</div></footer>
+
 </body></html>

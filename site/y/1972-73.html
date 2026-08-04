@@ -1,189 +1,307 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#08090B">
-<meta name="description" content="Sixty years of student government at Western Kentucky University, 1966-2026.">
-<title>1972-73 · SGA 60</title><style>
+<meta name="theme-color" content="#0B0B0C">
+<meta name="description" content="Student government at Western Kentucky University, 1972-73. Edward Jordan, Jr., Michael Fiorella. 15 sourced entries.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="1972-73 · SGA 60">
+<meta property="og:description" content="Student government at Western Kentucky University, 1972-73. Edward Jordan, Jr., Michael Fiorella. 15 sourced entries.">
+<title>1972-73 · SGA 60</title>
+<style>
 :root{
- --red:#B01E24; --red-dark:#8E1218; --black:#0B0B0C;
- --ink:#151517; --ink2:#4C4C4F; --ink3:#8A8A8E;
- --paper:#FFFFFF; --paper2:#F7F6F3; --line:#E7E4DF;
- --inscribe:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
+ --red:#B01E24; --red-dark:#8A171C; --black:#0B0B0C;
+ --ink:#141416; --ink2:#44444B; --ink3:#76767D;
+ --paper:#FFFFFF; --paper2:#F6F5F2; --line:#DCD9D3; --line2:#EBE8E3;
+ --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
- --mono:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
+ --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+ --measure:35rem;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
- font-size:clamp(15px,0.35vw + 13.8px,18px);line-height:1.65;
- -webkit-font-smoothing:antialiased;overflow-x:hidden}
+ font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+@media(max-width:640px){body{font-size:16px}}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;letter-spacing:-.012em;
+ text-wrap:balance;margin:0}
+p{margin:0 0 1em;text-wrap:pretty}
+img{max-width:100%;height:auto}
+.srclist a,.srcline a,.credit a,.doc-foot a{overflow-wrap:anywhere}
 a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--red-dark)}
-:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
-.eyebrow{font-family:var(--ui);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
-.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+a.ext::after{content:"\00A0\2197";color:var(--ink3);font-size:.82em;text-decoration:none}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 34px}
 @media(max-width:640px){.wrap{padding:0 18px}}
+.prose{max-width:var(--measure)}
+.lab{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px}
 
-/* plaque plates: clean white cards on the black wall */
-.plate-face{background:var(--paper);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.25);position:relative}
-.engraved{color:var(--ink)}
+/* ---- masthead nav ---- */
+.nav{background:var(--black);color:#fff}
+.nav .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+ padding:13px 34px;flex-wrap:wrap}
+@media(max-width:640px){.nav .wrap{padding:11px 18px}}
+.nav a{color:rgba(255,255,255,.72);text-decoration:none;font-size:.86rem}
+.nav a:hover,.nav a[aria-current]{color:#fff}
+.nav a[aria-current]{box-shadow:inset 0 -2px 0 var(--red)}
+.nav .brand{font-family:var(--display);font-weight:800;letter-spacing:.05em;color:#fff;font-size:1rem}
+.nav .brand b{color:var(--red);font-weight:800}
+.nav ul{display:flex;gap:20px;margin:0;padding:0;list-style:none;flex-wrap:wrap}
 
-/* ---- Big Red ---- */
-.bigred{position:fixed;right:18px;bottom:10px;z-index:80;cursor:pointer;user-select:none;-webkit-user-select:none;line-height:0}
-.bigred{width:170px}
-.bigred img{display:block;width:100%;height:auto;image-rendering:pixelated;
- filter:drop-shadow(0 8px 14px rgba(0,0,0,.28))}
-.bigred .wig{position:absolute;top:-24px;left:24%;pointer-events:none}
-.bigred .gavel{position:absolute;top:16%;right:-14px;pointer-events:none}
-.bigred .close{position:absolute;top:-12px;right:-6px;width:22px;height:22px;border-radius:50%;
- border:1px solid var(--line);background:var(--paper);color:var(--ink2);font-size:13px;line-height:19px;
- text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
-.bigred .close:hover{color:var(--red);border-color:var(--red)}
-.bigred .say{position:absolute;bottom:100%;right:8%;margin-bottom:12px;background:var(--black);color:#fff;
- font-family:var(--ui);font-size:11px;letter-spacing:.06em;padding:8px 12px;border-radius:8px;white-space:nowrap;
- opacity:0;transform:translateY(6px);transition:.25s;pointer-events:none;line-height:1.4}
-.bigred .say:after{content:"";position:absolute;top:100%;right:22px;border:6px solid transparent;border-top-color:var(--black)}
-.bigred.talk .say{opacity:1;transform:none}
-.bigred .gavel{transform-origin:24% 88%}
-@keyframes br-bounce{0%,100%{transform:none}30%{transform:translateY(-28px) rotate(-5deg)}60%{transform:translateY(0) rotate(3deg)}80%{transform:translateY(-10px)}}
-@keyframes br-spin{to{transform:rotate(360deg)}}
-@keyframes br-bang{0%,100%{transform:rotate(0)}35%{transform:rotate(-60deg)}55%{transform:rotate(16deg)}75%{transform:rotate(-8deg)}}
-.bigred.bounce{animation:br-bounce .9s cubic-bezier(.3,.7,.3,1)}
-.bigred.spin{animation:br-spin .8s ease}
-.bigred.bang .gavel{animation:br-bang .7s ease}
-@media(prefers-reduced-motion:reduce){.bigred,.bigred .gavel{animation:none!important}}
+/* ---- page head ---- */
+.head{padding:56px 0 26px;border-bottom:1px solid var(--line)}
+@media(max-width:640px){.head{padding:34px 0 20px}}
+.kicker{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 12px}
+.head h1{font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.04}
+.head .lede{font-size:1.12rem;color:var(--ink);max-width:var(--measure);margin:18px 0 0}
+.head .scope{color:var(--ink2);max-width:var(--measure);margin:14px 0 0;font-size:.97rem}
 
-.room{display:none}
-.nav{background:var(--black)}
-.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 30px;flex-wrap:wrap}
-.nav a{font-size:.85rem;font-weight:500;text-decoration:none;color:rgba(255,255,255,.75);
- font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.nav a:hover{color:#fff}
-.nav .brand{font-family:var(--inscribe);font-weight:800;letter-spacing:.06em;color:#fff;font-size:1rem}
-.nav .brand b{color:var(--red)}
-.yhead{padding:56px 0 30px;border-bottom:1px solid var(--line)}
-.yhead h1{font-family:var(--inscribe);font-weight:800;font-size:clamp(2.8rem,7vw,4.6rem);letter-spacing:-.02em;
- margin:8px 0 0;line-height:1;color:var(--ink)}
-.leads{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}
-.lead{padding:13px 18px;border-radius:10px;min-width:200px;border:1px solid var(--line);box-shadow:none}
-.lead b{display:block;font-family:var(--inscribe);font-weight:700;font-size:1.02rem;text-transform:none;letter-spacing:0}
-.lead .role{font-size:.78rem;margin-top:4px;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.lead .role .w{color:var(--red);font-weight:600}
-.cols{max-width:860px;padding:34px 0 20px}
-@media(max-width:900px){.cols{grid-template-columns:1fr;gap:30px}}
-h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spacing:.01em;margin:34px 0 14px;
- color:var(--ink);text-transform:none;border-bottom:2px solid var(--red);display:inline-block;padding-bottom:4px}
-.note{border-left:3px solid var(--red);background:var(--paper2);border-radius:0 8px 8px 0;
- padding:12px 16px;margin:0 0 18px;font-size:.93rem;color:var(--ink2)}
-.note b{color:var(--ink)}
-.ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
-@media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
-.ev .d{font-family:var(--ui);font-size:13px;color:var(--red);padding-top:3px;font-weight:600}
-.ev .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:5px;font-family:var(--ui)}
-.ev h3{font-family:var(--inscribe);font-weight:700;font-size:1.06rem;margin:0 0 7px;color:var(--ink)}
-.ev p{margin:0;color:var(--ink2);font-size:.95rem}
-.ev .cite{display:inline-block;margin-top:8px;margin-right:14px;font-size:.85rem;color:var(--red);border:0;padding:0;
- text-decoration:underline;text-underline-offset:3px;text-transform:none;font-family:var(--ui);letter-spacing:0}
-.ev .cite:hover{background:none;color:var(--red-dark)}
-.empty{border:1px dashed var(--line);padding:24px;color:var(--ink3);font-size:.94rem;border-radius:10px}
-.dig{border:1px solid var(--line);background:var(--paper2);padding:20px 18px;position:sticky;top:18px;
- max-height:88vh;overflow:auto;border-radius:12px}
-.dig h2{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 3px;color:var(--red);font-family:var(--ui)}
-.dig h3{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 4px;color:var(--ink3);font-family:var(--ui)}
-.dig .lede{font-size:.84rem;color:var(--ink3);margin:0 0 8px;line-height:1.5}
-.dig a.q{display:block;text-decoration:none;padding:7px 0;border-top:1px solid var(--line);
- font-size:.84rem;color:var(--ink2);line-height:1.4;font-family:var(--ui)}
-.dig a.q:hover{color:var(--red)}
-.pager{display:flex;justify-content:space-between;gap:18px;padding:26px 0 90px;border-top:1px solid var(--line);flex-wrap:wrap}
-.pager a{font-size:.8rem;letter-spacing:.04em;text-decoration:none;max-width:46%;color:var(--ink3);font-family:var(--ui)}
-.pager a b{display:block;font-family:var(--inscribe);font-size:1.1rem;font-weight:700;color:var(--ink);margin-top:4px}
+/* ---- record head ---- */
+.rec-head{padding:48px 0 22px}
+.rec-head h1{font-size:clamp(2.6rem,6.5vw,4rem);line-height:.98;letter-spacing:-.03em;
+ font-variant-numeric:tabular-nums}
+.glance{display:grid;grid-template-columns:max-content 1fr;gap:0 28px;margin:26px 0 0;
+ border-top:1px solid var(--line);max-width:46rem}
+.glance dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:9px 0 0}
+.glance dd{margin:0;padding:7px 0 0;font-variant-numeric:tabular-nums}
+.glance dd a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+@media(max-width:520px){.glance{grid-template-columns:1fr;gap:0}
+ .glance dt{padding-top:12px}.glance dd{padding-top:2px}}
+
+/* ---- sections ---- */
+section{margin:0}
+h2.sec{font-size:1.16rem;margin:52px 0 4px;padding-top:15px;border-top:1px solid var(--line)}
+h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.02em;
+ color:var(--ink3);margin-left:10px;font-variant-numeric:tabular-nums}
+.secnote{color:var(--ink3);font-size:.88rem;margin:0 0 18px}
+.body{padding-bottom:40px}
+
+/* ---- leaders ---- */
+.leader{padding:34px 0 0}
+.leader h2{font-size:1.5rem;letter-spacing:-.02em}
+.leader h2 .r{font-family:var(--ui);font-weight:400;font-size:1rem;color:var(--ink2);
+ letter-spacing:0}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:0 26px;margin:14px 0 20px;
+ max-width:46rem;font-size:.95rem}
+.facts dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:7px 0 0}
+.facts dd{margin:0;padding:5px 0 0;color:var(--ink)}
+@media(max-width:520px){.facts{grid-template-columns:1fr}.facts dt{padding-top:11px}.facts dd{padding-top:1px}}
+.editorial{max-width:var(--measure);color:var(--ink);border-left:2px solid var(--line);
+ padding-left:18px;margin:0 0 22px}
+.editorial p{margin:0 0 .8em}
+.editorial p:last-child{margin-bottom:0}
+.editorial.flagged{border-left-color:var(--red)}
+.profile{max-width:var(--measure)}
+.profile p{font-size:1.02rem;margin:0 0 1.05em}
+.profile sup{font-size:.66em;line-height:0}
+.profile sup a{text-decoration:none;padding:0 1px}
+.srclist{max-width:46rem;margin:6px 0 0;padding:0 0 0 1.4em;font-size:.88rem;color:var(--ink3)}
+.srclist li{margin:0 0 5px}
+.srclist a{color:var(--red)}
+
+/* ---- portraits and photographs ---- */
+.plates-photo{display:flex;gap:26px;flex-wrap:wrap;margin:30px 0 6px}
+.portrait{margin:0;width:190px}
+.portrait img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.portrait figcaption{font-size:.82rem;color:var(--ink2);margin-top:9px;line-height:1.45}
+.portrait figcaption b{display:block;font-family:var(--display);font-size:.95rem;
+ font-weight:700;color:var(--ink);margin-bottom:2px}
+.portrait figcaption .who{display:block}
+.credit{display:block;color:var(--ink3);font-size:.78rem;margin-top:3px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;margin:16px 0 0}
+.gallery figure{margin:0}
+.gallery img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.gallery figcaption{font-size:.87rem;color:var(--ink2);margin-top:9px;line-height:1.5}
+
+/* ---- the organization ---- */
+.org{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin:16px 0 0}
+@media(max-width:700px){.org{grid-template-columns:1fr;gap:24px}}
+.org h3{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 6px}
+.off{display:grid;grid-template-columns:9rem 1fr;gap:0 16px;padding:9px 0;
+ border-top:1px solid var(--line2);font-size:.94rem}
+@media(max-width:520px){.off{grid-template-columns:1fr;gap:1px}}
+.off .o{font-size:.8rem;color:var(--ink3);padding-top:3px}
+.off b{font-weight:600}
+.off p{margin:2px 0 0;color:var(--ink2);font-size:.88rem}
+.org .meta{font-size:.92rem;color:var(--ink2);margin:12px 0 0;max-width:var(--measure)}
+
+/* ---- entries ---- */
+.ev{display:grid;grid-template-columns:9rem 1fr;gap:0 26px;padding:17px 0;
+ border-top:1px solid var(--line2)}
+@media(max-width:640px){.ev{grid-template-columns:1fr;gap:3px;padding:15px 0}}
+.ev .when{font-size:.83rem;color:var(--ink3);padding-top:5px;font-variant-numeric:tabular-nums}
+.ev .when .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+.ev h3{font-size:1.04rem;margin:0 0 6px}
+.ev p{margin:0;max-width:var(--measure)}
+.srcline{font-size:.84rem;color:var(--ink3);margin-top:9px}
+.srcline a{margin-right:14px}
+.pl{float:right;font-family:var(--mono);font-size:.78rem;color:var(--ink3);
+ text-decoration:none;opacity:0;margin-left:12px}
+.ev:hover .pl,.ev:focus-within .pl{opacity:1}
+.ev:target{background:var(--paper2);box-shadow:-14px 0 0 var(--paper2),14px 0 0 var(--paper2)}
+.empty{max-width:var(--measure);color:var(--ink2)}
+.searchlist{columns:2;column-gap:30px;padding:0;margin:10px 0 0;list-style:none;font-size:.86rem}
+@media(max-width:640px){.searchlist{columns:1}}
+.searchlist li{margin:0 0 4px;break-inside:avoid}
+
+/* ---- documents ---- */
+.doc{border-top:1px solid var(--line2);padding:22px 0 6px}
+.doc h3{font-size:1.05rem;margin:0 0 7px}
+.doc p{color:var(--ink);max-width:var(--measure);margin:0 0 12px}
+.doc-extract{border-left:2px solid var(--red);padding:2px 0 2px 16px;margin:0 0 14px;
+ max-width:var(--measure);color:var(--ink2);font-size:.95rem}
+.doc-extract .lab{margin-bottom:4px}
+.doc-view{display:block;width:100%;height:460px;border:1px solid var(--line);background:var(--paper2)}
+.doc-foot{font-size:.86rem;color:var(--ink3);margin:10px 0 0}
+.doc-foot a{margin-right:18px}
+
+/* ---- legislation rows ---- */
+.lrow{display:grid;grid-template-columns:7.5rem 1fr auto;gap:0 18px;align-items:baseline;
+ padding:10px 0;border-top:1px solid var(--line2);font-size:.95rem}
+@media(max-width:700px){.lrow{grid-template-columns:1fr;gap:2px}}
+.lrow .lt{color:var(--ink3);font-size:.82rem;font-variant-numeric:tabular-nums}
+.lrow .ll{font-size:.85rem;overflow-wrap:anywhere}
+.lrow .ll a{margin-left:16px}
+@media(max-width:700px){.lrow .ll a{margin:0 16px 0 0}}
+.lsec{margin:0 0 26px}
+
+/* ---- timeline ---- */
+.hx{display:grid;grid-template-columns:8rem 1fr;gap:0 24px;padding:6px 0;
+ border-top:1px solid var(--line2);font-size:.92rem;line-height:1.45}
+@media(max-width:640px){.hx{grid-template-columns:1fr;gap:0;padding:8px 0}}
+.hx .when{color:var(--ink3);font-size:.8rem;padding-top:3px;font-variant-numeric:tabular-nums}
+.hx .t{color:var(--ink2);max-width:52rem}
+.hx .t b{color:var(--ink);font-weight:600}
+.hx .t a{font-size:.84rem;margin-left:8px;overflow-wrap:anywhere}
+.hyear{font-size:1.35rem;margin:38px 0 2px;padding-top:14px;border-top:1px solid var(--line)}
+.hyear .who{font-family:var(--ui);font-weight:400;font-size:.9rem;color:var(--ink3);
+ display:block;margin-top:5px;letter-spacing:0}
+.hyear .who a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+details.hidx{margin:14px 0 0;font-size:.9rem}
+details.hidx summary{cursor:pointer;color:var(--ink3);font-size:.84rem}
+details.hidx summary:hover{color:var(--red)}
+.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:0 0 24px;font-size:.92rem}
+.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
+.decnav span{color:var(--ink3)}
+
+/* ---- filters and search ---- */
+.tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
+.field{display:block;max-width:26rem}
+.field .lab{margin-bottom:6px}
+.field input{width:100%;background:var(--paper);border:1px solid var(--line);color:var(--ink);
+ font-family:var(--ui);font-size:16px;padding:10px 12px;border-radius:2px}
+.field input:focus{outline:2px solid var(--red);outline-offset:-1px;border-color:var(--red)}
+.facets{display:flex;flex-wrap:wrap;gap:0 20px;margin:20px 0 0}
+.facets button{background:none;border:0;border-bottom:2px solid transparent;padding:4px 0 5px;
+ font-family:var(--ui);font-size:.92rem;color:var(--ink2);cursor:pointer}
+.facets button:hover{color:var(--red)}
+.facets button[aria-pressed="true"]{color:var(--ink);font-weight:600;border-bottom-color:var(--red)}
+.facets button .c{color:var(--ink3);font-weight:400;font-variant-numeric:tabular-nums}
+.readout{font-size:.9rem;color:var(--ink2);margin:16px 0 0;font-variant-numeric:tabular-nums}
+
+/* ---- citation ---- */
+.citebox{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+ padding:16px 0;margin:46px 0 0;max-width:46rem}
+.citestr{font-size:.92rem;color:var(--ink);margin:8px 0 0;line-height:1.55}
+.copy{background:none;border:1px solid var(--line);border-radius:2px;color:var(--ink2);
+ font-family:var(--ui);font-size:.8rem;padding:5px 11px;margin-top:12px;cursor:pointer}
+.copy:hover{border-color:var(--red);color:var(--red)}
+.revised{font-size:.84rem;color:var(--ink3);margin:12px 0 0}
+
+/* ---- pager ---- */
+.pager{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+ border-top:1px solid var(--line);padding:20px 0 0;margin-top:44px}
+.pager a{font-size:.82rem;color:var(--ink3);text-decoration:none;max-width:46%}
+.pager a b{display:block;font-family:var(--display);font-size:1.15rem;color:var(--ink);
+ margin-top:3px;font-variant-numeric:tabular-nums}
 .pager a:hover b{color:var(--red)}
 .pager .r{text-align:right;margin-left:auto}
 
-/* ---- president profiles ---- */
-.profile{margin:0 0 26px}
-.profile p{color:var(--ink2);font-size:.96rem;margin:0 0 12px}
+/* ---- footer ---- */
+.foot{border-top:1px solid var(--line);background:var(--paper2);margin-top:70px;
+ padding:36px 0 54px;font-size:.88rem;color:var(--ink2)}
+.foot .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px}
+.foot p{max-width:34rem;margin:0 0 .9em}
+.foot h2{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.foot .fine{color:var(--ink3);font-size:.82rem;margin-top:26px;
+ border-top:1px solid var(--line);padding-top:16px}
 
-/* ---- photographs ---- */
-.portraits{display:flex;gap:16px;flex-wrap:wrap;margin:26px 0 4px}
-.portrait{margin:0;width:160px}
-.portrait img{width:100%;height:190px;object-fit:cover;object-position:top;border-radius:10px;
- box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.portrait figcaption{font-size:.78rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-.portrait figcaption b{display:block;font-family:var(--inscribe);font-size:.92rem;font-weight:700;color:var(--ink)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:0 0 28px}
-.gallery figure{margin:0}
-.gallery img{width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.gallery figcaption{font-size:.84rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-
-/* ---- the organization ---- */
-.org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
-@media(max-width:640px){.org{grid-template-columns:1fr}}
-.org h3{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--red);font-family:var(--ui)}
-.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-.off .o{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding-top:4px;min-width:110px;font-family:var(--ui)}
-.off b{font-family:var(--inscribe);font-weight:700;color:var(--ink)}
-.off p{margin:3px 0 0;color:var(--ink2);font-size:.88rem}
-.org .meta{font-size:.88rem;color:var(--ink2);margin:10px 0 0}
-
-/* ---- the archive shelf ---- */
-.doc{border:1px solid var(--line);border-radius:12px;margin:0 0 24px;overflow:hidden;background:var(--paper)}
-.doc-head{padding:17px 19px 14px}
-.doc-head h3{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;margin:0 0 7px;color:var(--ink)}
-.doc-head p{margin:0;color:var(--ink2);font-size:.93rem}
-.doc-extract{border-left:3px solid var(--red);background:var(--paper2);margin:0 19px 15px;border-radius:0 8px 8px 0;
- padding:12px 16px;font-size:.93rem;color:var(--ink2)}
-.doc-extract .from{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;font-family:var(--ui)}
-.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid var(--line);background:var(--paper2)}
-.doc-foot{display:flex;gap:18px;flex-wrap:wrap;padding:13px 19px}
-.doc-foot a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.doc-foot a:hover{background:none;color:var(--red-dark)}
-
-/* ---- complete timeline ---- */
-.hx{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
-@media(max-width:640px){.hx{grid-template-columns:1fr;gap:2px}}
-.hx .d{font-family:var(--ui);font-size:12.5px;color:var(--ink3);padding-top:2px;font-weight:600}
-.hx .t{color:var(--ink2)}
-.hx a{margin-left:10px;font-size:.82rem}
-.hyear{font-family:var(--inscribe);font-weight:800;font-size:1.6rem;margin:44px 0 6px;color:var(--ink)}
-.hyear a{font-size:.8rem;font-weight:600;margin-left:14px}
-.hsub{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin:18px 0 4px;font-family:var(--ui)}
-
-/* ---- legislation ---- */
-.lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
- padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-@media(max-width:640px){.lrow{grid-template-columns:1fr;gap:4px}}
-.ltype{font-family:var(--ui);font-size:12px;letter-spacing:.01em;color:var(--red);font-weight:600}
-.lt{color:var(--ink)}
-.lls{display:flex;gap:14px;white-space:nowrap}
-.lls a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.lls a:hover{background:none;color:var(--red-dark)}
-.lsec{margin:0 0 34px}
-.lcount{font-size:.78rem;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em}
-.lfilter{width:100%;max-width:420px;background:var(--paper);border:1px solid var(--line);color:var(--ink);
- font-family:var(--ui);font-size:15px;padding:11px 16px;border-radius:10px;margin:6px 0 26px}
-.lfilter:focus{outline:2px solid var(--red);outline-offset:2px}
-.ljump{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 22px}
-.ljump .chip{font-family:var(--ui);font-size:13px;padding:5px 13px;border:1px solid var(--line);border-radius:999px;
- color:var(--ink2);text-decoration:none}
-.ljump .chip:hover{border-color:var(--red);color:var(--red)}
+/* ---- print ---- */
+@media print{
+ .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav{display:none!important}
+ body{font-size:11pt;color:#000}
+ a{color:#000;text-decoration:none}
+ a.ext::after{content:""}
+ .body a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#444;word-break:break-all}
+ .citebox{margin:0 0 18px;border-top:0}
+ .doc-view{display:none}
+ h2.sec{break-after:avoid}
+ .ev,.doc,.leader{break-inside:avoid}
+}
 </style></head><body>
-<div class="room"></div>
+<a class="skip" href="#main">Skip to the record</a>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="../index.html">SGA <b>60</b></a><ul><li><a href="../index.html" aria-current="page">The board</a></li><li><a href="../history.html">Timeline</a></li><li><a href="../legislation.html">Legislation</a></li><li><a href="../corrections.html">Corrections</a></li><li><a href="../about.html">About and method</a></li></ul></div></nav>
+<main id="main">
 
-<nav class="nav"><div class="wrap">
- <a class="brand" href="../index.html">SGA <b>60</b></a>
- <div style="display:flex;gap:20px"><a href="../index.html">The Board</a><a href="../history.html">Timeline</a><a href="../legislation.html">Legislation</a></div>
-</div></nav>
-<header class="yhead"><div class="wrap">
- <div class="eyebrow">Associated Students</div>
+<header class="rec-head"><div class="wrap">
+ <p class="kicker">Associated Students &middot; academic year</p>
  <h1>1972-73</h1>
- <div class="leads"><div class="lead plate-face engraved"><b>Edward Jordan, Jr.</b><div class="role">president &middot; plaque: 1972-73</div></div><div class="lead plate-face engraved"><b>Michael Fiorella</b><div class="role"><span class="w">student regent</span> &middot; plaque: 1972-73</div></div></div>
+ <dl class="glance"><dt>Organization</dt><dd>Associated Students</dd><dt>President</dt><dd>Edward Jordan, Jr.</dd><dt>Student regent</dt><dd>Michael Fiorella</dd><dt>Entries</dt><dd>15</dd><dt>Photographs</dt><dd>2</dd><dt>Sources cited</dt><dd>19</dd></dl>
 </div></header>
-<div class="wrap"><div class="cols">
- <div><div class="portraits"><figure class="portrait"><img src="../photos/1972-73-edward-jordan.jpg" alt="Edward Jordan, Jr." loading="lazy"><figcaption><b>Edward Jordan, Jr.</b><a class="cite" style="margin-top:5px" href="https://digitalcommons.wku.edu/dlsc_ua_records/393" target="_blank" rel="noopener">1973 Talisman, p. 75, &quot;Upper—Ed Jordan, ASG president, sought to stimulate student interest through a more organized governing group&quot; &#8599;</a></figcaption></figure><figure class="portrait"><img src="../photos/1972-73-michael-fiorella.jpg" alt="Michael Fiorella" loading="lazy"><figcaption><b>Michael Fiorella</b><a class="cite" style="margin-top:5px" href="https://archive.org/details/talisman1973west/page/n241/mode/1up" target="_blank" rel="noopener">1973 Talisman, &quot;ASG Veep &#x27;looks beneath the surface&#x27;&quot; profile, p. 236 &#8599;</a></figcaption></figure></div><div class="note"><b>Edward Jordan, Jr.:</b> Confirmed by direct Herald election coverage: he ran on a platform the paper labeled progressivism, beat Bob Hatfield in the 20 April 1972 election, and the Herald reported the win five days later. Paired on the plaque with Michael Fiorella, the student regent that year.</div><div class="note"><b>Michael Fiorella:</b> Student regent, not president. Sworn in 26 September 1972 alongside gubernatorial appointees Gerald Edds and Chalmer Embry, who Gov. Wendell Ford had named the previous month.</div><section class="profile"><h2 class="sub">Edward Jordan, Jr. &mdash; the term</h2><p>Jordan ran for the Associated Student Government presidency on a platform the Herald's Roger Miller labeled progressivism, profiled a week before the vote. Congress had separately voted to place his opponent, Bob Hatfield, on the ballot after a dispute over Hatfield's eligibility.</p><p>Jordan beat Hatfield in the 20 April 1972 election; the Herald reported his win on 25 April under the headline 'Ed Jordan Wins Top Office,' in the same issue as an editorial by Pence and Carter arguing the new ASG president needed cooperation and support.</p><p>Edward Jordan's name entered the Herald's letters columns on November 7, 1972, when he and Charles Boteler urged readers to restore ideals. The digitized index does not label the ASG office Jordan held.</p><p>On April 10, 1973, as top ASG offices went on the line in the spring election, a letter praising Ed Jordan ran in the Herald.</p><p>Jordan stayed in student politics after his year: in April 1974 he wrote to the Herald judging Steve Henry the most qualified candidate in that spring's races.</p></section><section class="profile"><h2 class="sub">Michael Fiorella &mdash; the term</h2><p>In September 1972 the Herald profiled Michael Fiorella, the Associated Student Government vice president, under the headline that he was anti-apathy.</p><p>A week later the Herald reported that Fiorella had won the student seat on the Board of Regents.</p><p>Fiorella was sworn in on September 26, 1972, alongside Gerald Edds and Chalmer Embry, the board's two other new members.</p></section><h2 class="sub">What happened, in order</h2><article class="ev"><div class="d">1972-04-07</div><div><h3>Ed Jordan's theme is progressivism</h3><p>The Herald profiled presidential candidate Ed Jordan ahead of the ASG election, describing his campaign theme as progressivism.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4864" target="_blank" rel="noopener">Herald 51:47, 7 Apr 1972 &#8599;</a></div></article><article class="ev"><div class="d">1972-04-20</div><div><h3>Jordan and Hatfield face off for the presidency</h3><p>Ed Jordan and Bob Hatfield contested the ASG presidency in the day's election, after Congress had voted to place Hatfield on the ballot. The same issue carried both candidates' comments on key election issues.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4860" target="_blank" rel="noopener">Herald 51:51, 20 Apr 1972 &#8599;</a></div></article><article class="ev"><div class="d">1972-04-25</div><div><h3>Jordan wins the presidency</h3><p>The Herald reported Ed Jordan's win under the headline 'Ed Jordan Wins Top Office,' alongside an editorial by Pence and Carter arguing the new ASG president needed cooperation and support to succeed.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4859" target="_blank" rel="noopener">Herald 51:52, 25 Apr 1972 &#8599;</a></div></article><article class="ev"><div class="d">1972-08-22<span class="ctx">campus</span></div><div><h3>A year of involvement promised</h3><p>The Herald opened the year reporting Associated Student Government plans for a year of involvement, in an issue that also covered the regents approving a five dollar vehicle registration fee.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4873/" target="_blank" rel="noopener">Herald 52:1, 22 Aug 1972 &#8599;</a></div></article><article class="ev"><div class="d">1972-08-29</div><div><h3>Gov. Wendell Ford names two regents</h3><p>Gerald Edds and Chalmer Embry. The same issue reports the best ASG course evaluation yet, students questioning the $5 car registration fee, and filing opening for ASG offices.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4872" target="_blank" rel="noopener">Herald 52:2, 29 Aug 1972 &#8599;</a></div></article><article class="ev"><div class="d">1972-08-29<span class="ctx">campus</span></div><div><h3>Course evaluation called the best yet</h3><p>The Herald judged ASG's course evaluation the best yet, as filing opened for fall ASG offices.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4872/" target="_blank" rel="noopener">Herald 52:2, 29 Aug 1972 &#8599;</a></div></article><article class="ev"><div class="d">1972-09-08<span class="ctx">campus</span></div><div><h3>Five file for student regent; cheerleader ruling deplored</h3><p>Five students filed for the student seat on the Board of Regents. In the same issue, an ASG resolution deplored a cheerleader ruling as the university bowed to Black students' demands after a bitter squabble over squad selection.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4870/" target="_blank" rel="noopener">Herald 52:4, 8 Sep 1972 &#8599;</a></div></article><article class="ev"><div class="d">1972-09-19<span class="ctx">campus</span></div><div><h3>Funds fly as Chicago is booked</h3><p>ASG funds flew as the group set a Chicago concert, corrected a tactical error by adding more polls to a campus vote, and made its student activity card available.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4878/" target="_blank" rel="noopener">Herald 52:7, 19 Sep 1972 &#8599;</a></div></article><article class="ev"><div class="d">1972-09-22<span class="ctx">campus</span></div><div><h3>Fiorella wins the regent seat</h3><p>Michael Fiorella, the Associated Student Government vice president, won the student seat on the Board of Regents. Days earlier the Herald had profiled him as anti-apathy.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4877/" target="_blank" rel="noopener">Herald 52:8, 22 Sep 1972 &#8599;</a></div></article><article class="ev"><div class="d">1972-09-26</div><div><h3>Three new regents sworn in, one of them a student</h3><p>Michael Fiorella took the student seat alongside Edds and Embry. The same issue reports 'Slack Time at Associated Student Government Congress', an ASG bankruptcy plan and the open-dorm visitation fight continuing.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4876" target="_blank" rel="noopener">Herald 52:6, 26 Sep 1972 &#8599;</a></div></article><article class="ev"><div class="d">1972-09-29<span class="ctx">campus</span></div><div><h3>ASG rejects Downing's position on Black affairs</h3><p>The Associated Student Government rejected President Dero Downing's position on an Office of Black Affairs, one of the sharpest confrontations of the fall. A congressman's letter the same day called criticism of ASG unjustified.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4875/" target="_blank" rel="noopener">Herald 52:10, 29 Sep 1972 &#8599;</a></div></article><article class="ev"><div class="d">1973-01-16<span class="ctx">campus</span></div><div><h3>ASG sponsors a book exchange, fights a recycling ordinance</h3><p>Associated Student Government sponsored a student book exchange. The same issue reported a city recycling ordinance had left ASG holding the bag on trash collection for its paper-recycling program.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4995" target="_blank" rel="noopener">Herald 52:29, 16 Jan 1973 &#8599;</a></div></article><article class="ev"><div class="d">1973-01-19</div><div><h3>ASG considers aid to a North Vietnam hospital</h3><p>Associated Student Government considered sending aid to a hospital in North Vietnam, the Herald's Carter Pence reported, as the Paris Peace Accords negotiations neared their end.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4994" target="_blank" rel="noopener">Herald 52:30, 19 Jan 1973 &#8599;</a></div></article><article class="ev"><div class="d">1973-03-27<span class="ctx">campus</span></div><div><h3>Students as campus cops</h3><p>ASG wanted students serving as campus police, the Herald reported, while the editorial page argued more time was needed between elections.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/5005/" target="_blank" rel="noopener">Herald 52:45, 27 Mar 1973 &#8599;</a></div></article><article class="ev"><div class="d">1973-04-10<span class="ctx">campus</span></div><div><h3>Top offices on the line</h3><p>Top Associated Student Government offices went on the line in the day's election, and a letter writer praised Ed Jordan as the voting opened.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/5011/" target="_blank" rel="noopener">Herald 52:49, 10 Apr 1973 &#8599;</a></div></article></div>
-</div><div class="pager"><a href="1971-72.html">&larr; previous<b>1971-72</b></a><a class="r" href="1973-74.html">next &rarr;<b>1973-74</b></a></div></div>
-<div class="bigred" id="bigred" role="img" aria-label="8-bit Big Red in a judicial wig, holding the SGA gavel. Click to play."><button class="close" id="brx" aria-label="Dismiss Big Red">&times;</button><div class="say" id="brsay">Order, order!</div><img src="../photos/bigred-8bit.png" alt="" width="170" height="142"><svg class="wig" width="98" height="56" viewBox="0 0 98 56"><rect x="14" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="28" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="49" width="7.4" height="7.4" fill="#F4F2ED"/></svg><svg class="gavel" width="56" height="56" viewBox="0 0 56 56"><rect x="0" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="49" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="49" width="7.4" height="7.4" fill="#8B5A2B"/></svg></div><script>(function(){var br=document.getElementById("bigred");if(!br)return;try{if(localStorage.getItem("bigred")==="hidden"){br.remove();return}}catch(e){}document.getElementById("brx").addEventListener("click",function(e){e.stopPropagation();br.remove();try{localStorage.setItem("bigred","hidden")}catch(e){}});var says=["Order, order!","Go Tops!","Sixty years on the Hill.","Motion carries.","The Spirit Makes the Master."],i=0,m=-1;br.addEventListener("click",function(){br.classList.remove("bounce","spin","bang","talk");void br.offsetWidth;m=(m+1)%3;if(m===0){br.classList.add("bang","talk");document.getElementById("brsay").textContent=says[i++%says.length];}else if(m===1){br.classList.add("bounce")}else{br.classList.add("spin")}clearTimeout(br._t);br._t=setTimeout(function(){br.classList.remove("talk")},1600)});})();</script>
+<div class="wrap"><div class="body">
+<div class="plates-photo"><figure class="portrait"><img src="../photos/1972-73-edward-jordan.jpg" alt="Portrait of Edward Jordan, Jr.." loading="lazy"><figcaption><b>Edward Jordan, Jr.</b><span class="who">President, 1972-73.</span><span class="credit"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/393" rel="noopener">1973 Talisman, p. 75, &quot;Upper—Ed Jordan, ASG president, sought to stimulate student interest through a more organized governing group&quot;</a></span></figcaption></figure><figure class="portrait"><img src="../photos/1972-73-michael-fiorella.jpg" alt="Portrait of Michael Fiorella." loading="lazy"><figcaption><b>Michael Fiorella</b><span class="who">Student regent, 1972-73.</span><span class="credit"><a class="ext" href="https://archive.org/details/talisman1973west/page/n241/mode/1up" rel="noopener">1973 Talisman, &quot;ASG Veep &#x27;looks beneath the surface&#x27;&quot; profile, p. 236</a></span></figcaption></figure></div>
+<section class="leader" id="edward-jordan-jr"><h2>Edward Jordan, Jr. <span class="r">president, 1972-73</span></h2><dl class="facts"><dt>Office</dt><dd>President</dd><dt>Term recorded here</dt><dd>1972-73</dd><dt>Standing of the record</dt><dd>Confirmed in the sources below.</dd></dl><div class="editorial"><p>Confirmed by direct Herald election coverage: he ran on a platform the paper labeled progressivism, beat Bob Hatfield in the 20 April 1972 election, and the Herald reported the win five days later. Paired on the plaque with Michael Fiorella, the student regent that year.</p></div><div class="profile"><p>Jordan ran for the Associated Student Government presidency on a platform the Herald&#x27;s Roger Miller labeled progressivism, profiled a week before the vote. Congress had separately voted to place his opponent, Bob Hatfield, on the ballot after a dispute over Hatfield&#x27;s eligibility.</p><p>Jordan beat Hatfield in the 20 April 1972 election; the Herald reported his win on 25 April under the headline &#x27;Ed Jordan Wins Top Office,&#x27; in the same issue as an editorial by Pence and Carter arguing the new ASG president needed cooperation and support.</p><p>Edward Jordan&#x27;s name entered the Herald&#x27;s letters columns on November 7, 1972, when he and Charles Boteler urged readers to restore ideals. The digitized index does not label the ASG office Jordan held.</p><p>On April 10, 1973, as top ASG offices went on the line in the spring election, a letter praising Ed Jordan ran in the Herald.</p><p>Jordan stayed in student politics after his year: in April 1974 he wrote to the Herald judging Steve Henry the most qualified candidate in that spring&#x27;s races.</p></div><p class="lab" style="margin:18px 0 6px">Sources for this account</p><ol class="srclist"><li id="edward-jordan-jr-s1"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4864/" rel="noopener">Herald 51:47, 7 Apr 1972</a></li><li id="edward-jordan-jr-s2"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4860/" rel="noopener">Herald 51:51, 20 Apr 1972</a></li><li id="edward-jordan-jr-s3"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4859/" rel="noopener">Herald 51:52, 25 Apr 1972</a></li><li id="edward-jordan-jr-s4"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4887/" rel="noopener">Herald 52:21, 7 Nov 1972</a></li><li id="edward-jordan-jr-s5"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/5011/" rel="noopener">Herald 52:49, 10 Apr 1973</a></li><li id="edward-jordan-jr-s6"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/3539/" rel="noopener">Herald 53:50, 5 Apr 1974</a></li></ol></section><section class="leader" id="michael-fiorella"><h2>Michael Fiorella <span class="r">student regent, 1972-73</span></h2><dl class="facts"><dt>Office</dt><dd>Student regent</dd><dt>Term recorded here</dt><dd>1972-73</dd><dt>Standing of the record</dt><dd>Confirmed in the sources below.</dd></dl><div class="editorial"><p>Student regent, not president. Sworn in 26 September 1972 alongside gubernatorial appointees Gerald Edds and Chalmer Embry, who Gov. Wendell Ford had named the previous month.</p></div><div class="profile"><p>In September 1972 the Herald profiled Michael Fiorella, the Associated Student Government vice president, under the headline that he was anti-apathy.</p><p>A week later the Herald reported that Fiorella had won the student seat on the Board of Regents.</p><p>Fiorella was sworn in on September 26, 1972, alongside Gerald Edds and Chalmer Embry, the board&#x27;s two other new members.</p></div><p class="lab" style="margin:18px 0 6px">Sources for this account</p><ol class="srclist"><li id="michael-fiorella-s1"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4879/" rel="noopener">Herald 52:6, 15 Sep 1972</a></li><li id="michael-fiorella-s2"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4877/" rel="noopener">Herald 52:8, 22 Sep 1972</a></li><li id="michael-fiorella-s3"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4876/" rel="noopener">Herald 52:9, 26 Sep 1972</a></li></ol></section>
+
+<h2 class="sec">The year, in order<span class="n">15</span></h2><article class="ev" id="e-19720407-1"><div class="when"><time datetime="1972-04-07">7 April 1972</time></div><div><a class="pl" href="#e-19720407-1" aria-label="Link to this entry">#</a><h3>Ed Jordan&#x27;s theme is progressivism</h3><p>The Herald profiled presidential candidate Ed Jordan ahead of the ASG election, describing his campaign theme as progressivism.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4864" rel="noopener">Herald 51:47, 7 Apr 1972</a></p></div></article><article class="ev" id="e-19720420-1"><div class="when"><time datetime="1972-04-20">20 April 1972</time></div><div><a class="pl" href="#e-19720420-1" aria-label="Link to this entry">#</a><h3>Jordan and Hatfield face off for the presidency</h3><p>Ed Jordan and Bob Hatfield contested the ASG presidency in the day&#x27;s election, after Congress had voted to place Hatfield on the ballot. The same issue carried both candidates&#x27; comments on key election issues.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4860" rel="noopener">Herald 51:51, 20 Apr 1972</a></p></div></article><article class="ev" id="e-19720425-1"><div class="when"><time datetime="1972-04-25">25 April 1972</time></div><div><a class="pl" href="#e-19720425-1" aria-label="Link to this entry">#</a><h3>Jordan wins the presidency</h3><p>The Herald reported Ed Jordan&#x27;s win under the headline &#x27;Ed Jordan Wins Top Office,&#x27; alongside an editorial by Pence and Carter arguing the new ASG president needed cooperation and support to succeed.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4859" rel="noopener">Herald 51:52, 25 Apr 1972</a></p></div></article><article class="ev" id="e-19720822-1"><div class="when"><time datetime="1972-08-22">22 August 1972</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19720822-1" aria-label="Link to this entry">#</a><h3>A year of involvement promised</h3><p>The Herald opened the year reporting Associated Student Government plans for a year of involvement, in an issue that also covered the regents approving a five dollar vehicle registration fee.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4873/" rel="noopener">Herald 52:1, 22 Aug 1972</a></p></div></article><article class="ev" id="e-19720829-1"><div class="when"><time datetime="1972-08-29">29 August 1972</time></div><div><a class="pl" href="#e-19720829-1" aria-label="Link to this entry">#</a><h3>Gov. Wendell Ford names two regents</h3><p>Gerald Edds and Chalmer Embry. The same issue reports the best ASG course evaluation yet, students questioning the $5 car registration fee, and filing opening for ASG offices.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4872" rel="noopener">Herald 52:2, 29 Aug 1972</a></p></div></article><article class="ev" id="e-19720829-2"><div class="when"><time datetime="1972-08-29">29 August 1972</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19720829-2" aria-label="Link to this entry">#</a><h3>Course evaluation called the best yet</h3><p>The Herald judged ASG&#x27;s course evaluation the best yet, as filing opened for fall ASG offices.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4872/" rel="noopener">Herald 52:2, 29 Aug 1972</a></p></div></article><article class="ev" id="e-19720908-1"><div class="when"><time datetime="1972-09-08">8 September 1972</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19720908-1" aria-label="Link to this entry">#</a><h3>Five file for student regent; cheerleader ruling deplored</h3><p>Five students filed for the student seat on the Board of Regents. In the same issue, an ASG resolution deplored a cheerleader ruling as the university bowed to Black students&#x27; demands after a bitter squabble over squad selection.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4870/" rel="noopener">Herald 52:4, 8 Sep 1972</a></p></div></article><article class="ev" id="e-19720919-1"><div class="when"><time datetime="1972-09-19">19 September 1972</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19720919-1" aria-label="Link to this entry">#</a><h3>Funds fly as Chicago is booked</h3><p>ASG funds flew as the group set a Chicago concert, corrected a tactical error by adding more polls to a campus vote, and made its student activity card available.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4878/" rel="noopener">Herald 52:7, 19 Sep 1972</a></p></div></article><article class="ev" id="e-19720922-1"><div class="when"><time datetime="1972-09-22">22 September 1972</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19720922-1" aria-label="Link to this entry">#</a><h3>Fiorella wins the regent seat</h3><p>Michael Fiorella, the Associated Student Government vice president, won the student seat on the Board of Regents. Days earlier the Herald had profiled him as anti-apathy.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4877/" rel="noopener">Herald 52:8, 22 Sep 1972</a></p></div></article><article class="ev" id="e-19720926-1"><div class="when"><time datetime="1972-09-26">26 September 1972</time></div><div><a class="pl" href="#e-19720926-1" aria-label="Link to this entry">#</a><h3>Three new regents sworn in, one of them a student</h3><p>Michael Fiorella took the student seat alongside Edds and Embry. The same issue reports &#x27;Slack Time at Associated Student Government Congress&#x27;, an ASG bankruptcy plan and the open-dorm visitation fight continuing.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4876" rel="noopener">Herald 52:6, 26 Sep 1972</a></p></div></article><article class="ev" id="e-19720929-1"><div class="when"><time datetime="1972-09-29">29 September 1972</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19720929-1" aria-label="Link to this entry">#</a><h3>ASG rejects Downing&#x27;s position on Black affairs</h3><p>The Associated Student Government rejected President Dero Downing&#x27;s position on an Office of Black Affairs, one of the sharpest confrontations of the fall. A congressman&#x27;s letter the same day called criticism of ASG unjustified.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4875/" rel="noopener">Herald 52:10, 29 Sep 1972</a></p></div></article><article class="ev" id="e-19730116-1"><div class="when"><time datetime="1973-01-16">16 January 1973</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19730116-1" aria-label="Link to this entry">#</a><h3>ASG sponsors a book exchange, fights a recycling ordinance</h3><p>Associated Student Government sponsored a student book exchange. The same issue reported a city recycling ordinance had left ASG holding the bag on trash collection for its paper-recycling program.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4995" rel="noopener">Herald 52:29, 16 Jan 1973</a></p></div></article><article class="ev" id="e-19730119-1"><div class="when"><time datetime="1973-01-19">19 January 1973</time></div><div><a class="pl" href="#e-19730119-1" aria-label="Link to this entry">#</a><h3>ASG considers aid to a North Vietnam hospital</h3><p>Associated Student Government considered sending aid to a hospital in North Vietnam, the Herald&#x27;s Carter Pence reported, as the Paris Peace Accords negotiations neared their end.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4994" rel="noopener">Herald 52:30, 19 Jan 1973</a></p></div></article><article class="ev" id="e-19730327-1"><div class="when"><time datetime="1973-03-27">27 March 1973</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19730327-1" aria-label="Link to this entry">#</a><h3>Students as campus cops</h3><p>ASG wanted students serving as campus police, the Herald reported, while the editorial page argued more time was needed between elections.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/5005/" rel="noopener">Herald 52:45, 27 Mar 1973</a></p></div></article><article class="ev" id="e-19730410-1"><div class="when"><time datetime="1973-04-10">10 April 1973</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19730410-1" aria-label="Link to this entry">#</a><h3>Top offices on the line</h3><p>Top Associated Student Government offices went on the line in the day&#x27;s election, and a letter writer praised Ed Jordan as the voting opened.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/5011/" rel="noopener">Herald 52:49, 10 Apr 1973</a></p></div></article>
+
+
+
+<h2 class="sec">Sources for this year<span class="n">19</span></h2><p class="secnote">Every source cited above, once, with the number of entries that rest on it.</p><ol class="srclist" style="font-size:.92rem;color:var(--ink2)"><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4864/" rel="noopener">Herald 51:47, 7 Apr 1972</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4860/" rel="noopener">Herald 51:51, 20 Apr 1972</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4859/" rel="noopener">Herald 51:52, 25 Apr 1972</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4887/" rel="noopener">Herald 52:21, 7 Nov 1972</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/5011/" rel="noopener">Herald 52:49, 10 Apr 1973</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/3539/" rel="noopener">Herald 53:50, 5 Apr 1974</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4879/" rel="noopener">Herald 52:6, 15 Sep 1972</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4877/" rel="noopener">Herald 52:8, 22 Sep 1972</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4876/" rel="noopener">Herald 52:9, 26 Sep 1972</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4872" rel="noopener">Herald 52:2, 29 Aug 1972</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4873/" rel="noopener">Herald 52:1, 22 Aug 1972</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4870/" rel="noopener">Herald 52:4, 8 Sep 1972</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4878/" rel="noopener">Herald 52:7, 19 Sep 1972</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4875/" rel="noopener">Herald 52:10, 29 Sep 1972</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/5005/" rel="noopener">Herald 52:45, 27 Mar 1973</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4995" rel="noopener">Herald 52:29, 16 Jan 1973</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4994" rel="noopener">Herald 52:30, 19 Jan 1973</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/393" rel="noopener">1973 Talisman, p. 75, &quot;Upper—Ed Jordan, ASG president, sought to stimulate student interest through a more organized governing group&quot;</a></li><li><a class="ext" href="https://archive.org/details/talisman1973west/page/n241/mode/1up" rel="noopener">1973 Talisman, &quot;ASG Veep &#x27;looks beneath the surface&#x27;&quot; profile, p. 236</a></li></ol>
+<section class="citebox">
+ <p class="lab">Preferred citation</p>
+ <p class="citestr" id="cite">&#8220;1972-73,&#8221; <cite>SGA 60: Student Government at Western Kentucky University, 1966&#8211;2026</cite>, revised 4 August 2026, <span id="citeurl">y/1972-73.html</span></p>
+ <button class="copy" id="copy" type="button">Copy the citation</button>
+ <p class="revised">Where a name on this page differs from the plaque in the SGA
+ Chambers, the difference is explained above and recorded on the
+ <a href="../corrections.html">corrections page</a>.</p>
+</section>
+<div class="pager"><a href="1971-72.html">Previous year<b>1971-72</b></a><a class="r" href="1973-74.html">Next year<b>1973-74</b></a></div>
+</div></div>
+<script>
+(function(){
+ var u=document.getElementById('citeurl');if(u)u.textContent=location.href.split('#')[0];
+ var b=document.getElementById('copy'),c=document.getElementById('cite');
+ if(b&&c&&navigator.clipboard){b.addEventListener('click',function(){
+  navigator.clipboard.writeText(c.textContent.replace(/\s+/g,' ').trim()).then(function(){
+   b.textContent='Copied';setTimeout(function(){b.textContent='Copy the citation'},1800);});});}
+ else if(b){b.style.display='none'}
+})();
+</script>
+</main>
+<footer class="foot"><div class="wrap"><div class="cols">
+<div><h2>What this is</h2>
+<p>A year-by-year record of student government at Western Kentucky University, from the
+ratification of the Associated Students constitution in April 1966 to the present. Every
+entry names the source it came from.</p></div>
+<div><h2>Corrections</h2>
+<p>The names here start with the plaque in the SGA Chambers, and the plaque is known to be
+wrong in places. Where the archive disagrees with it, this site follows the archive and
+records the change on the <a href="../corrections.html">corrections page</a>. If you
+served, or you know that a year here is wrong, the project wants to hear from you through
+the Student Government Association office.</p></div>
+<div><h2>Reuse</h2><p>Text on this site is the work of the project. Photographs, documents and legislation are reproduced from Western Kentucky University's own open archives and from the <cite>College Heights Herald</cite> and the <cite>Talisman</cite>; each item names the collection, issue and page it came from and links to the original.</p></div>
+</div>
+<p class="fine">Built 4 August 2026. The whole record is readable as data:
+<a href="../years.json">years.json</a>. Method and scope are set out
+<a href="../about.html">on the about page</a>.</p>
+</div></footer>
+
 </body></html>

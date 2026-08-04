@@ -1,189 +1,307 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#08090B">
-<meta name="description" content="Sixty years of student government at Western Kentucky University, 1966-2026.">
-<title>2005-06 · SGA 60</title><style>
+<meta name="theme-color" content="#0B0B0C">
+<meta name="description" content="Student government at Western Kentucky University, 2005-06. Katie Dawson. 11 sourced entries.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2005-06 · SGA 60">
+<meta property="og:description" content="Student government at Western Kentucky University, 2005-06. Katie Dawson. 11 sourced entries.">
+<title>2005-06 · SGA 60</title>
+<style>
 :root{
- --red:#B01E24; --red-dark:#8E1218; --black:#0B0B0C;
- --ink:#151517; --ink2:#4C4C4F; --ink3:#8A8A8E;
- --paper:#FFFFFF; --paper2:#F7F6F3; --line:#E7E4DF;
- --inscribe:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
+ --red:#B01E24; --red-dark:#8A171C; --black:#0B0B0C;
+ --ink:#141416; --ink2:#44444B; --ink3:#76767D;
+ --paper:#FFFFFF; --paper2:#F6F5F2; --line:#DCD9D3; --line2:#EBE8E3;
+ --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
- --mono:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
+ --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+ --measure:35rem;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
- font-size:clamp(15px,0.35vw + 13.8px,18px);line-height:1.65;
- -webkit-font-smoothing:antialiased;overflow-x:hidden}
+ font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+@media(max-width:640px){body{font-size:16px}}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;letter-spacing:-.012em;
+ text-wrap:balance;margin:0}
+p{margin:0 0 1em;text-wrap:pretty}
+img{max-width:100%;height:auto}
+.srclist a,.srcline a,.credit a,.doc-foot a{overflow-wrap:anywhere}
 a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--red-dark)}
-:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
-.eyebrow{font-family:var(--ui);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
-.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+a.ext::after{content:"\00A0\2197";color:var(--ink3);font-size:.82em;text-decoration:none}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 34px}
 @media(max-width:640px){.wrap{padding:0 18px}}
+.prose{max-width:var(--measure)}
+.lab{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px}
 
-/* plaque plates: clean white cards on the black wall */
-.plate-face{background:var(--paper);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.25);position:relative}
-.engraved{color:var(--ink)}
+/* ---- masthead nav ---- */
+.nav{background:var(--black);color:#fff}
+.nav .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+ padding:13px 34px;flex-wrap:wrap}
+@media(max-width:640px){.nav .wrap{padding:11px 18px}}
+.nav a{color:rgba(255,255,255,.72);text-decoration:none;font-size:.86rem}
+.nav a:hover,.nav a[aria-current]{color:#fff}
+.nav a[aria-current]{box-shadow:inset 0 -2px 0 var(--red)}
+.nav .brand{font-family:var(--display);font-weight:800;letter-spacing:.05em;color:#fff;font-size:1rem}
+.nav .brand b{color:var(--red);font-weight:800}
+.nav ul{display:flex;gap:20px;margin:0;padding:0;list-style:none;flex-wrap:wrap}
 
-/* ---- Big Red ---- */
-.bigred{position:fixed;right:18px;bottom:10px;z-index:80;cursor:pointer;user-select:none;-webkit-user-select:none;line-height:0}
-.bigred{width:170px}
-.bigred img{display:block;width:100%;height:auto;image-rendering:pixelated;
- filter:drop-shadow(0 8px 14px rgba(0,0,0,.28))}
-.bigred .wig{position:absolute;top:-24px;left:24%;pointer-events:none}
-.bigred .gavel{position:absolute;top:16%;right:-14px;pointer-events:none}
-.bigred .close{position:absolute;top:-12px;right:-6px;width:22px;height:22px;border-radius:50%;
- border:1px solid var(--line);background:var(--paper);color:var(--ink2);font-size:13px;line-height:19px;
- text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
-.bigred .close:hover{color:var(--red);border-color:var(--red)}
-.bigred .say{position:absolute;bottom:100%;right:8%;margin-bottom:12px;background:var(--black);color:#fff;
- font-family:var(--ui);font-size:11px;letter-spacing:.06em;padding:8px 12px;border-radius:8px;white-space:nowrap;
- opacity:0;transform:translateY(6px);transition:.25s;pointer-events:none;line-height:1.4}
-.bigred .say:after{content:"";position:absolute;top:100%;right:22px;border:6px solid transparent;border-top-color:var(--black)}
-.bigred.talk .say{opacity:1;transform:none}
-.bigred .gavel{transform-origin:24% 88%}
-@keyframes br-bounce{0%,100%{transform:none}30%{transform:translateY(-28px) rotate(-5deg)}60%{transform:translateY(0) rotate(3deg)}80%{transform:translateY(-10px)}}
-@keyframes br-spin{to{transform:rotate(360deg)}}
-@keyframes br-bang{0%,100%{transform:rotate(0)}35%{transform:rotate(-60deg)}55%{transform:rotate(16deg)}75%{transform:rotate(-8deg)}}
-.bigred.bounce{animation:br-bounce .9s cubic-bezier(.3,.7,.3,1)}
-.bigred.spin{animation:br-spin .8s ease}
-.bigred.bang .gavel{animation:br-bang .7s ease}
-@media(prefers-reduced-motion:reduce){.bigred,.bigred .gavel{animation:none!important}}
+/* ---- page head ---- */
+.head{padding:56px 0 26px;border-bottom:1px solid var(--line)}
+@media(max-width:640px){.head{padding:34px 0 20px}}
+.kicker{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 12px}
+.head h1{font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.04}
+.head .lede{font-size:1.12rem;color:var(--ink);max-width:var(--measure);margin:18px 0 0}
+.head .scope{color:var(--ink2);max-width:var(--measure);margin:14px 0 0;font-size:.97rem}
 
-.room{display:none}
-.nav{background:var(--black)}
-.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 30px;flex-wrap:wrap}
-.nav a{font-size:.85rem;font-weight:500;text-decoration:none;color:rgba(255,255,255,.75);
- font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.nav a:hover{color:#fff}
-.nav .brand{font-family:var(--inscribe);font-weight:800;letter-spacing:.06em;color:#fff;font-size:1rem}
-.nav .brand b{color:var(--red)}
-.yhead{padding:56px 0 30px;border-bottom:1px solid var(--line)}
-.yhead h1{font-family:var(--inscribe);font-weight:800;font-size:clamp(2.8rem,7vw,4.6rem);letter-spacing:-.02em;
- margin:8px 0 0;line-height:1;color:var(--ink)}
-.leads{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}
-.lead{padding:13px 18px;border-radius:10px;min-width:200px;border:1px solid var(--line);box-shadow:none}
-.lead b{display:block;font-family:var(--inscribe);font-weight:700;font-size:1.02rem;text-transform:none;letter-spacing:0}
-.lead .role{font-size:.78rem;margin-top:4px;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.lead .role .w{color:var(--red);font-weight:600}
-.cols{max-width:860px;padding:34px 0 20px}
-@media(max-width:900px){.cols{grid-template-columns:1fr;gap:30px}}
-h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spacing:.01em;margin:34px 0 14px;
- color:var(--ink);text-transform:none;border-bottom:2px solid var(--red);display:inline-block;padding-bottom:4px}
-.note{border-left:3px solid var(--red);background:var(--paper2);border-radius:0 8px 8px 0;
- padding:12px 16px;margin:0 0 18px;font-size:.93rem;color:var(--ink2)}
-.note b{color:var(--ink)}
-.ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
-@media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
-.ev .d{font-family:var(--ui);font-size:13px;color:var(--red);padding-top:3px;font-weight:600}
-.ev .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:5px;font-family:var(--ui)}
-.ev h3{font-family:var(--inscribe);font-weight:700;font-size:1.06rem;margin:0 0 7px;color:var(--ink)}
-.ev p{margin:0;color:var(--ink2);font-size:.95rem}
-.ev .cite{display:inline-block;margin-top:8px;margin-right:14px;font-size:.85rem;color:var(--red);border:0;padding:0;
- text-decoration:underline;text-underline-offset:3px;text-transform:none;font-family:var(--ui);letter-spacing:0}
-.ev .cite:hover{background:none;color:var(--red-dark)}
-.empty{border:1px dashed var(--line);padding:24px;color:var(--ink3);font-size:.94rem;border-radius:10px}
-.dig{border:1px solid var(--line);background:var(--paper2);padding:20px 18px;position:sticky;top:18px;
- max-height:88vh;overflow:auto;border-radius:12px}
-.dig h2{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 3px;color:var(--red);font-family:var(--ui)}
-.dig h3{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 4px;color:var(--ink3);font-family:var(--ui)}
-.dig .lede{font-size:.84rem;color:var(--ink3);margin:0 0 8px;line-height:1.5}
-.dig a.q{display:block;text-decoration:none;padding:7px 0;border-top:1px solid var(--line);
- font-size:.84rem;color:var(--ink2);line-height:1.4;font-family:var(--ui)}
-.dig a.q:hover{color:var(--red)}
-.pager{display:flex;justify-content:space-between;gap:18px;padding:26px 0 90px;border-top:1px solid var(--line);flex-wrap:wrap}
-.pager a{font-size:.8rem;letter-spacing:.04em;text-decoration:none;max-width:46%;color:var(--ink3);font-family:var(--ui)}
-.pager a b{display:block;font-family:var(--inscribe);font-size:1.1rem;font-weight:700;color:var(--ink);margin-top:4px}
+/* ---- record head ---- */
+.rec-head{padding:48px 0 22px}
+.rec-head h1{font-size:clamp(2.6rem,6.5vw,4rem);line-height:.98;letter-spacing:-.03em;
+ font-variant-numeric:tabular-nums}
+.glance{display:grid;grid-template-columns:max-content 1fr;gap:0 28px;margin:26px 0 0;
+ border-top:1px solid var(--line);max-width:46rem}
+.glance dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:9px 0 0}
+.glance dd{margin:0;padding:7px 0 0;font-variant-numeric:tabular-nums}
+.glance dd a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+@media(max-width:520px){.glance{grid-template-columns:1fr;gap:0}
+ .glance dt{padding-top:12px}.glance dd{padding-top:2px}}
+
+/* ---- sections ---- */
+section{margin:0}
+h2.sec{font-size:1.16rem;margin:52px 0 4px;padding-top:15px;border-top:1px solid var(--line)}
+h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.02em;
+ color:var(--ink3);margin-left:10px;font-variant-numeric:tabular-nums}
+.secnote{color:var(--ink3);font-size:.88rem;margin:0 0 18px}
+.body{padding-bottom:40px}
+
+/* ---- leaders ---- */
+.leader{padding:34px 0 0}
+.leader h2{font-size:1.5rem;letter-spacing:-.02em}
+.leader h2 .r{font-family:var(--ui);font-weight:400;font-size:1rem;color:var(--ink2);
+ letter-spacing:0}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:0 26px;margin:14px 0 20px;
+ max-width:46rem;font-size:.95rem}
+.facts dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:7px 0 0}
+.facts dd{margin:0;padding:5px 0 0;color:var(--ink)}
+@media(max-width:520px){.facts{grid-template-columns:1fr}.facts dt{padding-top:11px}.facts dd{padding-top:1px}}
+.editorial{max-width:var(--measure);color:var(--ink);border-left:2px solid var(--line);
+ padding-left:18px;margin:0 0 22px}
+.editorial p{margin:0 0 .8em}
+.editorial p:last-child{margin-bottom:0}
+.editorial.flagged{border-left-color:var(--red)}
+.profile{max-width:var(--measure)}
+.profile p{font-size:1.02rem;margin:0 0 1.05em}
+.profile sup{font-size:.66em;line-height:0}
+.profile sup a{text-decoration:none;padding:0 1px}
+.srclist{max-width:46rem;margin:6px 0 0;padding:0 0 0 1.4em;font-size:.88rem;color:var(--ink3)}
+.srclist li{margin:0 0 5px}
+.srclist a{color:var(--red)}
+
+/* ---- portraits and photographs ---- */
+.plates-photo{display:flex;gap:26px;flex-wrap:wrap;margin:30px 0 6px}
+.portrait{margin:0;width:190px}
+.portrait img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.portrait figcaption{font-size:.82rem;color:var(--ink2);margin-top:9px;line-height:1.45}
+.portrait figcaption b{display:block;font-family:var(--display);font-size:.95rem;
+ font-weight:700;color:var(--ink);margin-bottom:2px}
+.portrait figcaption .who{display:block}
+.credit{display:block;color:var(--ink3);font-size:.78rem;margin-top:3px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;margin:16px 0 0}
+.gallery figure{margin:0}
+.gallery img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.gallery figcaption{font-size:.87rem;color:var(--ink2);margin-top:9px;line-height:1.5}
+
+/* ---- the organization ---- */
+.org{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin:16px 0 0}
+@media(max-width:700px){.org{grid-template-columns:1fr;gap:24px}}
+.org h3{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 6px}
+.off{display:grid;grid-template-columns:9rem 1fr;gap:0 16px;padding:9px 0;
+ border-top:1px solid var(--line2);font-size:.94rem}
+@media(max-width:520px){.off{grid-template-columns:1fr;gap:1px}}
+.off .o{font-size:.8rem;color:var(--ink3);padding-top:3px}
+.off b{font-weight:600}
+.off p{margin:2px 0 0;color:var(--ink2);font-size:.88rem}
+.org .meta{font-size:.92rem;color:var(--ink2);margin:12px 0 0;max-width:var(--measure)}
+
+/* ---- entries ---- */
+.ev{display:grid;grid-template-columns:9rem 1fr;gap:0 26px;padding:17px 0;
+ border-top:1px solid var(--line2)}
+@media(max-width:640px){.ev{grid-template-columns:1fr;gap:3px;padding:15px 0}}
+.ev .when{font-size:.83rem;color:var(--ink3);padding-top:5px;font-variant-numeric:tabular-nums}
+.ev .when .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+.ev h3{font-size:1.04rem;margin:0 0 6px}
+.ev p{margin:0;max-width:var(--measure)}
+.srcline{font-size:.84rem;color:var(--ink3);margin-top:9px}
+.srcline a{margin-right:14px}
+.pl{float:right;font-family:var(--mono);font-size:.78rem;color:var(--ink3);
+ text-decoration:none;opacity:0;margin-left:12px}
+.ev:hover .pl,.ev:focus-within .pl{opacity:1}
+.ev:target{background:var(--paper2);box-shadow:-14px 0 0 var(--paper2),14px 0 0 var(--paper2)}
+.empty{max-width:var(--measure);color:var(--ink2)}
+.searchlist{columns:2;column-gap:30px;padding:0;margin:10px 0 0;list-style:none;font-size:.86rem}
+@media(max-width:640px){.searchlist{columns:1}}
+.searchlist li{margin:0 0 4px;break-inside:avoid}
+
+/* ---- documents ---- */
+.doc{border-top:1px solid var(--line2);padding:22px 0 6px}
+.doc h3{font-size:1.05rem;margin:0 0 7px}
+.doc p{color:var(--ink);max-width:var(--measure);margin:0 0 12px}
+.doc-extract{border-left:2px solid var(--red);padding:2px 0 2px 16px;margin:0 0 14px;
+ max-width:var(--measure);color:var(--ink2);font-size:.95rem}
+.doc-extract .lab{margin-bottom:4px}
+.doc-view{display:block;width:100%;height:460px;border:1px solid var(--line);background:var(--paper2)}
+.doc-foot{font-size:.86rem;color:var(--ink3);margin:10px 0 0}
+.doc-foot a{margin-right:18px}
+
+/* ---- legislation rows ---- */
+.lrow{display:grid;grid-template-columns:7.5rem 1fr auto;gap:0 18px;align-items:baseline;
+ padding:10px 0;border-top:1px solid var(--line2);font-size:.95rem}
+@media(max-width:700px){.lrow{grid-template-columns:1fr;gap:2px}}
+.lrow .lt{color:var(--ink3);font-size:.82rem;font-variant-numeric:tabular-nums}
+.lrow .ll{font-size:.85rem;overflow-wrap:anywhere}
+.lrow .ll a{margin-left:16px}
+@media(max-width:700px){.lrow .ll a{margin:0 16px 0 0}}
+.lsec{margin:0 0 26px}
+
+/* ---- timeline ---- */
+.hx{display:grid;grid-template-columns:8rem 1fr;gap:0 24px;padding:6px 0;
+ border-top:1px solid var(--line2);font-size:.92rem;line-height:1.45}
+@media(max-width:640px){.hx{grid-template-columns:1fr;gap:0;padding:8px 0}}
+.hx .when{color:var(--ink3);font-size:.8rem;padding-top:3px;font-variant-numeric:tabular-nums}
+.hx .t{color:var(--ink2);max-width:52rem}
+.hx .t b{color:var(--ink);font-weight:600}
+.hx .t a{font-size:.84rem;margin-left:8px;overflow-wrap:anywhere}
+.hyear{font-size:1.35rem;margin:38px 0 2px;padding-top:14px;border-top:1px solid var(--line)}
+.hyear .who{font-family:var(--ui);font-weight:400;font-size:.9rem;color:var(--ink3);
+ display:block;margin-top:5px;letter-spacing:0}
+.hyear .who a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+details.hidx{margin:14px 0 0;font-size:.9rem}
+details.hidx summary{cursor:pointer;color:var(--ink3);font-size:.84rem}
+details.hidx summary:hover{color:var(--red)}
+.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:0 0 24px;font-size:.92rem}
+.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
+.decnav span{color:var(--ink3)}
+
+/* ---- filters and search ---- */
+.tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
+.field{display:block;max-width:26rem}
+.field .lab{margin-bottom:6px}
+.field input{width:100%;background:var(--paper);border:1px solid var(--line);color:var(--ink);
+ font-family:var(--ui);font-size:16px;padding:10px 12px;border-radius:2px}
+.field input:focus{outline:2px solid var(--red);outline-offset:-1px;border-color:var(--red)}
+.facets{display:flex;flex-wrap:wrap;gap:0 20px;margin:20px 0 0}
+.facets button{background:none;border:0;border-bottom:2px solid transparent;padding:4px 0 5px;
+ font-family:var(--ui);font-size:.92rem;color:var(--ink2);cursor:pointer}
+.facets button:hover{color:var(--red)}
+.facets button[aria-pressed="true"]{color:var(--ink);font-weight:600;border-bottom-color:var(--red)}
+.facets button .c{color:var(--ink3);font-weight:400;font-variant-numeric:tabular-nums}
+.readout{font-size:.9rem;color:var(--ink2);margin:16px 0 0;font-variant-numeric:tabular-nums}
+
+/* ---- citation ---- */
+.citebox{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+ padding:16px 0;margin:46px 0 0;max-width:46rem}
+.citestr{font-size:.92rem;color:var(--ink);margin:8px 0 0;line-height:1.55}
+.copy{background:none;border:1px solid var(--line);border-radius:2px;color:var(--ink2);
+ font-family:var(--ui);font-size:.8rem;padding:5px 11px;margin-top:12px;cursor:pointer}
+.copy:hover{border-color:var(--red);color:var(--red)}
+.revised{font-size:.84rem;color:var(--ink3);margin:12px 0 0}
+
+/* ---- pager ---- */
+.pager{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+ border-top:1px solid var(--line);padding:20px 0 0;margin-top:44px}
+.pager a{font-size:.82rem;color:var(--ink3);text-decoration:none;max-width:46%}
+.pager a b{display:block;font-family:var(--display);font-size:1.15rem;color:var(--ink);
+ margin-top:3px;font-variant-numeric:tabular-nums}
 .pager a:hover b{color:var(--red)}
 .pager .r{text-align:right;margin-left:auto}
 
-/* ---- president profiles ---- */
-.profile{margin:0 0 26px}
-.profile p{color:var(--ink2);font-size:.96rem;margin:0 0 12px}
+/* ---- footer ---- */
+.foot{border-top:1px solid var(--line);background:var(--paper2);margin-top:70px;
+ padding:36px 0 54px;font-size:.88rem;color:var(--ink2)}
+.foot .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px}
+.foot p{max-width:34rem;margin:0 0 .9em}
+.foot h2{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.foot .fine{color:var(--ink3);font-size:.82rem;margin-top:26px;
+ border-top:1px solid var(--line);padding-top:16px}
 
-/* ---- photographs ---- */
-.portraits{display:flex;gap:16px;flex-wrap:wrap;margin:26px 0 4px}
-.portrait{margin:0;width:160px}
-.portrait img{width:100%;height:190px;object-fit:cover;object-position:top;border-radius:10px;
- box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.portrait figcaption{font-size:.78rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-.portrait figcaption b{display:block;font-family:var(--inscribe);font-size:.92rem;font-weight:700;color:var(--ink)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:0 0 28px}
-.gallery figure{margin:0}
-.gallery img{width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.gallery figcaption{font-size:.84rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-
-/* ---- the organization ---- */
-.org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
-@media(max-width:640px){.org{grid-template-columns:1fr}}
-.org h3{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--red);font-family:var(--ui)}
-.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-.off .o{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding-top:4px;min-width:110px;font-family:var(--ui)}
-.off b{font-family:var(--inscribe);font-weight:700;color:var(--ink)}
-.off p{margin:3px 0 0;color:var(--ink2);font-size:.88rem}
-.org .meta{font-size:.88rem;color:var(--ink2);margin:10px 0 0}
-
-/* ---- the archive shelf ---- */
-.doc{border:1px solid var(--line);border-radius:12px;margin:0 0 24px;overflow:hidden;background:var(--paper)}
-.doc-head{padding:17px 19px 14px}
-.doc-head h3{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;margin:0 0 7px;color:var(--ink)}
-.doc-head p{margin:0;color:var(--ink2);font-size:.93rem}
-.doc-extract{border-left:3px solid var(--red);background:var(--paper2);margin:0 19px 15px;border-radius:0 8px 8px 0;
- padding:12px 16px;font-size:.93rem;color:var(--ink2)}
-.doc-extract .from{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;font-family:var(--ui)}
-.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid var(--line);background:var(--paper2)}
-.doc-foot{display:flex;gap:18px;flex-wrap:wrap;padding:13px 19px}
-.doc-foot a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.doc-foot a:hover{background:none;color:var(--red-dark)}
-
-/* ---- complete timeline ---- */
-.hx{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
-@media(max-width:640px){.hx{grid-template-columns:1fr;gap:2px}}
-.hx .d{font-family:var(--ui);font-size:12.5px;color:var(--ink3);padding-top:2px;font-weight:600}
-.hx .t{color:var(--ink2)}
-.hx a{margin-left:10px;font-size:.82rem}
-.hyear{font-family:var(--inscribe);font-weight:800;font-size:1.6rem;margin:44px 0 6px;color:var(--ink)}
-.hyear a{font-size:.8rem;font-weight:600;margin-left:14px}
-.hsub{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin:18px 0 4px;font-family:var(--ui)}
-
-/* ---- legislation ---- */
-.lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
- padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-@media(max-width:640px){.lrow{grid-template-columns:1fr;gap:4px}}
-.ltype{font-family:var(--ui);font-size:12px;letter-spacing:.01em;color:var(--red);font-weight:600}
-.lt{color:var(--ink)}
-.lls{display:flex;gap:14px;white-space:nowrap}
-.lls a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.lls a:hover{background:none;color:var(--red-dark)}
-.lsec{margin:0 0 34px}
-.lcount{font-size:.78rem;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em}
-.lfilter{width:100%;max-width:420px;background:var(--paper);border:1px solid var(--line);color:var(--ink);
- font-family:var(--ui);font-size:15px;padding:11px 16px;border-radius:10px;margin:6px 0 26px}
-.lfilter:focus{outline:2px solid var(--red);outline-offset:2px}
-.ljump{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 22px}
-.ljump .chip{font-family:var(--ui);font-size:13px;padding:5px 13px;border:1px solid var(--line);border-radius:999px;
- color:var(--ink2);text-decoration:none}
-.ljump .chip:hover{border-color:var(--red);color:var(--red)}
+/* ---- print ---- */
+@media print{
+ .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav{display:none!important}
+ body{font-size:11pt;color:#000}
+ a{color:#000;text-decoration:none}
+ a.ext::after{content:""}
+ .body a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#444;word-break:break-all}
+ .citebox{margin:0 0 18px;border-top:0}
+ .doc-view{display:none}
+ h2.sec{break-after:avoid}
+ .ev,.doc,.leader{break-inside:avoid}
+}
 </style></head><body>
-<div class="room"></div>
+<a class="skip" href="#main">Skip to the record</a>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="../index.html">SGA <b>60</b></a><ul><li><a href="../index.html" aria-current="page">The board</a></li><li><a href="../history.html">Timeline</a></li><li><a href="../legislation.html">Legislation</a></li><li><a href="../corrections.html">Corrections</a></li><li><a href="../about.html">About and method</a></li></ul></div></nav>
+<main id="main">
 
-<nav class="nav"><div class="wrap">
- <a class="brand" href="../index.html">SGA <b>60</b></a>
- <div style="display:flex;gap:20px"><a href="../index.html">The Board</a><a href="../history.html">Timeline</a><a href="../legislation.html">Legislation</a></div>
-</div></nav>
-<header class="yhead"><div class="wrap">
- <div class="eyebrow">Student Government Association</div>
+<header class="rec-head"><div class="wrap">
+ <p class="kicker">Student Government Association &middot; academic year</p>
  <h1>2005-06</h1>
- <div class="leads"><div class="lead plate-face engraved"><b>Katie Dawson</b><div class="role">president &middot; plaque: 2005-06</div></div></div>
+ <dl class="glance"><dt>Organization</dt><dd>Student Government Association</dd><dt>President</dt><dd>Katie Dawson</dd><dt>Entries</dt><dd>11</dd><dt>Photographs</dt><dd>1</dd><dt>Sources cited</dt><dd>13</dd></dl>
 </div></header>
-<div class="wrap"><div class="cols">
- <div><div class="portraits"><figure class="portrait"><img src="../photos/2005-06-katie-dawson.jpg" alt="Katie Dawson" loading="lazy"><figcaption><b>Katie Dawson</b><a class="cite" style="margin-top:5px" href="https://bgdailynews.com/2006/03/31/a-show-of-voices/" target="_blank" rel="noopener">Daily News, 31 Mar 2006 &#8599;</a></figcaption></figure></div><div class="note"><b>Katie Dawson:</b> Named in April 2004 Herald coverage as incoming executive vice president, so she came up through the cabinet. Confirmed as a 2005 presidential candidate in College Heights Herald election coverage, and the paper's own election-night story names her as the winner.</div><section class="profile"><h2 class="sub">Katie Dawson &mdash; the term</h2><p>Dawson served as both SGA president and student regent during Western's centennial year. When the university launched its 14-month centennial celebration on Nov. 19, 2005, she spoke at the dedication of Centennial Plaza, offering her own meaning for the school slogan: "Find what you love and carry it with you your whole life through."</p><p>Her spring semester was dominated by a proposed $46-per-semester fee for three campus construction projects. At a student forum with President Gary Ransdell she suggested exempting the next year's seniors, who would graduate before any project was finished; the Board of Regents rejected the exemption 10-1 at its April 7 meeting and approved the fee 9-1. Dawson cast the lone abstention, saying that although she supported the fee, she could not vote for it with so many seniors counting on the exemption.</p><p>Her term ended at Western's 159th commencement on May 13, 2006, where the Radcliff native graduated with a degree in corporate and organizational communication and addressed her 1,797 fellow undergraduates as SGA president. She charged the graduates to have courage, endurance, strength, patience and character, saying success was knowing "when to throw in the towel and when to wave it around and cheer."</p></section><h2 class="sub">The organization</h2><div class="org"><div><h3>The Executive</h3><div class="off"><span class="o">President</span><span><b>Katie Dawson</b> <a class="cite" href="https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml" target="_blank" rel="noopener">Herald via Wayback, 17 Mar 2005 &#8599;</a></span></div><div class="off"><span class="o">Executive Vice President</span><span><b>Mason Stevenson</b><p>Read a letter to the March 2006 SGA meeting airing a rift between the executive and legislative branches.</p> <a class="cite" href="https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml" target="_blank" rel="noopener">Herald via Wayback, 17 Mar 2005 &#8599;</a></span></div><div class="off"><span class="o">Vice President</span><span><b>Melissa Paris</b><p>Office not further specified in the election coverage; won unopposed alongside Stevenson.</p> <a class="cite" href="https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml" target="_blank" rel="noopener">Herald via Wayback, 17 Mar 2005 &#8599;</a></span></div></div><div><h3>The Senate</h3><p class="meta">25 senators this year.</p><p class="meta">All 25 senate candidates on the March 2005 ballot ran unopposed and were elected. A senator surnamed Johnson was reported elected speaker of the senate in December 2005, but no source found gives a first name, so the office is left unfilled here rather than guessed.</p></div></div><h2 class="sub">What happened, in order</h2><article class="ev"><div class="d">2005-01-01</div><div><h3>The plus/minus grading fight</h3><p>An Institutional Research report on plus and minus grading, a protest broadside, a post-winter-term student survey and an SGA handbook all survive - one of the few academic-policy campaigns documented from research through to public agitation.</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Documents/Reports" target="_blank" rel="noopener">TopSCHOLAR - Documents/Reports &#8599;</a></div></article><article class="ev"><div class="d">2005-11-20<span class="ctx">campus</span></div><div><h3>WKU launched its centennial celebration</h3><p>Western kicked off a 14-month celebration of its 1906 founding on Saturday, Nov. 19, dedicating three new campus landmarks including Centennial Plaza. SGA President Katie Dawson spoke at the plaza dedication, offering her own meaning of the school slogan "The Spirit Makes the Master."</p><a class="cite" href="https://bgdailynews.com/2005/11/20/happy-birthday-dear-western/" target="_blank" rel="noopener">Daily News, 20 Nov 2005 &#8599;</a></div></article><article class="ev"><div class="d">2005-12-08</div><div><h3>SGA closed the fall with 10 pieces of legislation</h3><p>The Herald reported that SGA passed 10 pieces of legislation in the fall semester, fewer than in previous fall semesters. Its legislation brought bikes, a cancer documentary and iPods to Western. The same issue reported that a senator named Johnson had been elected the new speaker of the senate.</p><a class="cite" href="https://web.archive.org/web/20051212222444/http://www.wkuherald.com/" target="_blank" rel="noopener">Herald, 8 Dec 2005 (via Wayback) &#8599;</a></div></article><article class="ev"><div class="d">2006-02-01</div><div><h3>SGA took up a proposed $45 construction fee</h3><p>At its first regular meeting of the spring semester, SGA discussed a proposed $45-per-semester fee to pay for a campus-wide wireless network, a new health center and renovations to the Ivan Wilson Center for Fine Arts. President Katie Dawson supported the fee, and Western's chief financial officer estimated it would raise about $1.4 million a year.</p><a class="cite" href="https://bgdailynews.com/2006/02/01/sga-leaders-take-look-at-new-fee/" target="_blank" rel="noopener">Daily News, 1 Feb 2006 &#8599;</a></div></article><article class="ev"><div class="d">2006-02-08</div><div><h3>Ransdell asked SGA for a resolution backing the fee</h3><p>WKU President Gary Ransdell came to the SGA meeting and urged senators to pass a resolution supporting the proposed $45 fee, which the Board of Regents would vote on April 7. Dawson sat on that board as student regent, and SGA officers said a supporting resolution was likely within a few weeks.</p><a class="cite" href="https://bgdailynews.com/2006/02/08/local-news-briefs-wku-president-urges-sga-to-support-new-fee/" target="_blank" rel="noopener">Daily News, 8 Feb 2006 &#8599;</a></div></article><article class="ev"><div class="d">2006-03-03</div><div><h3>Executive vice president aired an internal rift</h3><p>Executive Vice President Mason Stevenson read a letter at the SGA meeting saying some members trying to protect their political interests had "thwarted" SGA's mission to improve Western. The letter outlined his concerns about relations between the executive and legislative branches.</p><a class="cite" href="https://web.archive.org/web/20060612230006/http://www.wkuherald.com/" target="_blank" rel="noopener">Herald, 3 Mar 2006 (via Wayback) &#8599;</a></div></article><article class="ev"><div class="d">2006-03-16</div><div><h3>Senate put $2,000 toward SGA's 40th anniversary party</h3><p>Two bills devoting $2,000 to a party for SGA's 40th anniversary passed unanimously at the group's Tuesday meeting. The Herald reported the organization planned a campus-wide party to mark four decades of student government at Western.</p><a class="cite" href="https://web.archive.org/web/20060324055737/http://www.wkuherald.com/" target="_blank" rel="noopener">Herald, 16 Mar 2006 (via Wayback) &#8599;</a></div></article><article class="ev"><div class="d">2006-04-08</div><div><h3>Regents approved the fee; Dawson's senior exemption failed</h3><p>The Board of Regents voted 9-1 to approve the $46-per-semester construction fee, with Dawson abstaining, and rejected 10-1 her proposal to exempt next year's seniors, an idea she had raised at a student forum the week before. Dawson said that although she supported the fee, she could not vote for it with so many seniors counting on the exemption.</p><a class="cite" href="https://bgdailynews.com/2006/04/08/wku-seniors-to-pay-project-charge/" target="_blank" rel="noopener">Daily News, 8 Apr 2006 &#8599;</a></div></article><article class="ev"><div class="d">2006-04-13</div><div><h3>Rob Watkins elected SGA president</h3><p>Bowling Green senior Robert Watkins won the online election for SGA president after spending more than a week seeking supporters who would vote on TopNet. He defeated Berea junior Kara Ratliff, and the results were announced Tuesday at a crowded Revolution 91.</p><a class="cite" href="https://web.archive.org/web/20060612230006/http://www.wkuherald.com/" target="_blank" rel="noopener">Herald, 13 Apr 2006 (via Wayback) &#8599;</a></div></article><article class="ev"><div class="d">2006-04-20</div><div><h3>Executive board issued its first veto of the year</h3><p>After the Tuesday senate meeting, the SGA executive board vetoed a bill that would have financed community- and campus-oriented projects through civic engagement grants, the first time it exercised its veto power that year. The Herald reported the grants were "a reality for only about 30 minutes" and that time restraints halted an appeal of the veto.</p><a class="cite" href="https://web.archive.org/web/20060423175038/http://www.wkuherald.com/" target="_blank" rel="noopener">Herald, 20 Apr 2006 (via Wayback) &#8599;</a></div></article><article class="ev"><div class="d">2006-04-20</div><div><h3>Herald editorial attacked SGA misspending</h3><p>A Herald editorial titled "SGA misspending" said members should not have to be "motivated by a giveaway to show up for meetings." It noted that the opinion page had devoted considerable space in recent weeks to both positive and negative aspects of SGA, which it said could and should be an important organization on campus.</p><a class="cite" href="https://web.archive.org/web/20060423175038/http://www.wkuherald.com/" target="_blank" rel="noopener">Herald, 20 Apr 2006 (via Wayback) &#8599;</a></div></article></div>
-</div><div class="pager"><a href="2004-05.html">&larr; previous<b>2004-05</b></a><a class="r" href="2006-07.html">next &rarr;<b>2006-07</b></a></div></div>
-<div class="bigred" id="bigred" role="img" aria-label="8-bit Big Red in a judicial wig, holding the SGA gavel. Click to play."><button class="close" id="brx" aria-label="Dismiss Big Red">&times;</button><div class="say" id="brsay">Order, order!</div><img src="../photos/bigred-8bit.png" alt="" width="170" height="142"><svg class="wig" width="98" height="56" viewBox="0 0 98 56"><rect x="14" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="28" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="49" width="7.4" height="7.4" fill="#F4F2ED"/></svg><svg class="gavel" width="56" height="56" viewBox="0 0 56 56"><rect x="0" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="49" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="49" width="7.4" height="7.4" fill="#8B5A2B"/></svg></div><script>(function(){var br=document.getElementById("bigred");if(!br)return;try{if(localStorage.getItem("bigred")==="hidden"){br.remove();return}}catch(e){}document.getElementById("brx").addEventListener("click",function(e){e.stopPropagation();br.remove();try{localStorage.setItem("bigred","hidden")}catch(e){}});var says=["Order, order!","Go Tops!","Sixty years on the Hill.","Motion carries.","The Spirit Makes the Master."],i=0,m=-1;br.addEventListener("click",function(){br.classList.remove("bounce","spin","bang","talk");void br.offsetWidth;m=(m+1)%3;if(m===0){br.classList.add("bang","talk");document.getElementById("brsay").textContent=says[i++%says.length];}else if(m===1){br.classList.add("bounce")}else{br.classList.add("spin")}clearTimeout(br._t);br._t=setTimeout(function(){br.classList.remove("talk")},1600)});})();</script>
+<div class="wrap"><div class="body">
+<div class="plates-photo"><figure class="portrait"><img src="../photos/2005-06-katie-dawson.jpg" alt="Portrait of Katie Dawson." loading="lazy"><figcaption><b>Katie Dawson</b><span class="who">President, 2005-06.</span><span class="credit"><a class="ext" href="https://bgdailynews.com/2006/03/31/a-show-of-voices/" rel="noopener">Daily News, 31 Mar 2006</a></span></figcaption></figure></div>
+<section class="leader" id="katie-dawson"><h2>Katie Dawson <span class="r">president, 2005-06</span></h2><dl class="facts"><dt>Office</dt><dd>President</dd><dt>Term recorded here</dt><dd>2005-06</dd><dt>Standing of the record</dt><dd>As recorded on the plaque. Not yet corroborated in the archive.</dd></dl><div class="editorial"><p>Named in April 2004 Herald coverage as incoming executive vice president, so she came up through the cabinet. Confirmed as a 2005 presidential candidate in College Heights Herald election coverage, and the paper&#x27;s own election-night story names her as the winner.</p></div><div class="profile"><p>Dawson served as both SGA president and student regent during Western&#x27;s centennial year. When the university launched its 14-month centennial celebration on Nov. 19, 2005, she spoke at the dedication of Centennial Plaza, offering her own meaning for the school slogan: &quot;Find what you love and carry it with you your whole life through.&quot;</p><p>Her spring semester was dominated by a proposed $46-per-semester fee for three campus construction projects. At a student forum with President Gary Ransdell she suggested exempting the next year&#x27;s seniors, who would graduate before any project was finished; the Board of Regents rejected the exemption 10-1 at its April 7 meeting and approved the fee 9-1. Dawson cast the lone abstention, saying that although she supported the fee, she could not vote for it with so many seniors counting on the exemption.</p><p>Her term ended at Western&#x27;s 159th commencement on May 13, 2006, where the Radcliff native graduated with a degree in corporate and organizational communication and addressed her 1,797 fellow undergraduates as SGA president. She charged the graduates to have courage, endurance, strength, patience and character, saying success was knowing &quot;when to throw in the towel and when to wave it around and cheer.&quot;</p></div><p class="lab" style="margin:18px 0 6px">Sources for this account</p><ol class="srclist"><li id="katie-dawson-s1"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/8934/" rel="noopener">College Heights Herald 80:38, 24 Feb 2005 - &quot;Two Announce Plans to Run for Student Government Association President - Katie Dawson, Josh Collins&quot; (Coulter, Amber)</a></li><li id="katie-dawson-s2"><a class="ext" href="https://bgdailynews.com/2005/11/20/happy-birthday-dear-western/" rel="noopener">Daily News, 20 Nov 2005</a></li><li id="katie-dawson-s3"><a class="ext" href="https://bgdailynews.com/2006/04/08/wku-seniors-to-pay-project-charge/" rel="noopener">Daily News, 8 Apr 2006</a></li><li id="katie-dawson-s4"><a class="ext" href="https://bgdailynews.com/2006/05/14/not-a-dry-eye/" rel="noopener">Daily News, 14 May 2006</a></li></ol></section>
+<h2 class="sec">The organization</h2><div class="org"><div><h3>The executive</h3><div class="off"><span class="o">President</span><span><b>Katie Dawson</b><span class="credit"><a class="ext" href="https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml" rel="noopener">Herald via Wayback, 17 Mar 2005</a></span></span></div><div class="off"><span class="o">Executive Vice President</span><span><b>Mason Stevenson</b><p>Read a letter to the March 2006 SGA meeting airing a rift between the executive and legislative branches.</p><span class="credit"><a class="ext" href="https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml" rel="noopener">Herald via Wayback, 17 Mar 2005</a></span></span></div><div class="off"><span class="o">Vice President</span><span><b>Melissa Paris</b><p>Office not further specified in the election coverage; won unopposed alongside Stevenson.</p><span class="credit"><a class="ext" href="https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml" rel="noopener">Herald via Wayback, 17 Mar 2005</a></span></span></div></div><div><h3>The senate</h3><p class="meta">25 senators this year.</p><p class="meta">All 25 senate candidates on the March 2005 ballot ran unopposed and were elected. A senator surnamed Johnson was reported elected speaker of the senate in December 2005, but no source found gives a first name, so the office is left unfilled here rather than guessed.</p></div></div>
+<h2 class="sec">The year, in order<span class="n">11</span></h2><article class="ev" id="e-20050101-1"><div class="when"><time datetime="2005">2005</time></div><div><a class="pl" href="#e-20050101-1" aria-label="Link to this entry">#</a><h3>The plus/minus grading fight</h3><p>An Institutional Research report on plus and minus grading, a protest broadside, a post-winter-term student survey and an SGA handbook all survive - one of the few academic-policy campaigns documented from research through to public agitation.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Documents/Reports" rel="noopener">TopSCHOLAR - Documents/Reports</a></p></div></article><article class="ev" id="e-20051120-1"><div class="when"><time datetime="2005-11-20">20 November 2005</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-20051120-1" aria-label="Link to this entry">#</a><h3>WKU launched its centennial celebration</h3><p>Western kicked off a 14-month celebration of its 1906 founding on Saturday, Nov. 19, dedicating three new campus landmarks including Centennial Plaza. SGA President Katie Dawson spoke at the plaza dedication, offering her own meaning of the school slogan &quot;The Spirit Makes the Master.&quot;</p><p class="srcline"><a class="ext" href="https://bgdailynews.com/2005/11/20/happy-birthday-dear-western/" rel="noopener">Daily News, 20 Nov 2005</a></p></div></article><article class="ev" id="e-20051208-1"><div class="when"><time datetime="2005-12-08">8 December 2005</time></div><div><a class="pl" href="#e-20051208-1" aria-label="Link to this entry">#</a><h3>SGA closed the fall with 10 pieces of legislation</h3><p>The Herald reported that SGA passed 10 pieces of legislation in the fall semester, fewer than in previous fall semesters. Its legislation brought bikes, a cancer documentary and iPods to Western. The same issue reported that a senator named Johnson had been elected the new speaker of the senate.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20051212222444/http://www.wkuherald.com/" rel="noopener">Herald, 8 Dec 2005 (via Wayback)</a></p></div></article><article class="ev" id="e-20060201-1"><div class="when"><time datetime="2006-02">February 2006</time></div><div><a class="pl" href="#e-20060201-1" aria-label="Link to this entry">#</a><h3>SGA took up a proposed $45 construction fee</h3><p>At its first regular meeting of the spring semester, SGA discussed a proposed $45-per-semester fee to pay for a campus-wide wireless network, a new health center and renovations to the Ivan Wilson Center for Fine Arts. President Katie Dawson supported the fee, and Western&#x27;s chief financial officer estimated it would raise about $1.4 million a year.</p><p class="srcline"><a class="ext" href="https://bgdailynews.com/2006/02/01/sga-leaders-take-look-at-new-fee/" rel="noopener">Daily News, 1 Feb 2006</a></p></div></article><article class="ev" id="e-20060208-1"><div class="when"><time datetime="2006-02-08">8 February 2006</time></div><div><a class="pl" href="#e-20060208-1" aria-label="Link to this entry">#</a><h3>Ransdell asked SGA for a resolution backing the fee</h3><p>WKU President Gary Ransdell came to the SGA meeting and urged senators to pass a resolution supporting the proposed $45 fee, which the Board of Regents would vote on April 7. Dawson sat on that board as student regent, and SGA officers said a supporting resolution was likely within a few weeks.</p><p class="srcline"><a class="ext" href="https://bgdailynews.com/2006/02/08/local-news-briefs-wku-president-urges-sga-to-support-new-fee/" rel="noopener">Daily News, 8 Feb 2006</a></p></div></article><article class="ev" id="e-20060303-1"><div class="when"><time datetime="2006-03-03">3 March 2006</time></div><div><a class="pl" href="#e-20060303-1" aria-label="Link to this entry">#</a><h3>Executive vice president aired an internal rift</h3><p>Executive Vice President Mason Stevenson read a letter at the SGA meeting saying some members trying to protect their political interests had &quot;thwarted&quot; SGA&#x27;s mission to improve Western. The letter outlined his concerns about relations between the executive and legislative branches.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20060612230006/http://www.wkuherald.com/" rel="noopener">Herald, 3 Mar 2006 (via Wayback)</a></p></div></article><article class="ev" id="e-20060316-1"><div class="when"><time datetime="2006-03-16">16 March 2006</time></div><div><a class="pl" href="#e-20060316-1" aria-label="Link to this entry">#</a><h3>Senate put $2,000 toward SGA&#x27;s 40th anniversary party</h3><p>Two bills devoting $2,000 to a party for SGA&#x27;s 40th anniversary passed unanimously at the group&#x27;s Tuesday meeting. The Herald reported the organization planned a campus-wide party to mark four decades of student government at Western.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20060324055737/http://www.wkuherald.com/" rel="noopener">Herald, 16 Mar 2006 (via Wayback)</a></p></div></article><article class="ev" id="e-20060408-1"><div class="when"><time datetime="2006-04-08">8 April 2006</time></div><div><a class="pl" href="#e-20060408-1" aria-label="Link to this entry">#</a><h3>Regents approved the fee; Dawson&#x27;s senior exemption failed</h3><p>The Board of Regents voted 9-1 to approve the $46-per-semester construction fee, with Dawson abstaining, and rejected 10-1 her proposal to exempt next year&#x27;s seniors, an idea she had raised at a student forum the week before. Dawson said that although she supported the fee, she could not vote for it with so many seniors counting on the exemption.</p><p class="srcline"><a class="ext" href="https://bgdailynews.com/2006/04/08/wku-seniors-to-pay-project-charge/" rel="noopener">Daily News, 8 Apr 2006</a></p></div></article><article class="ev" id="e-20060413-1"><div class="when"><time datetime="2006-04-13">13 April 2006</time></div><div><a class="pl" href="#e-20060413-1" aria-label="Link to this entry">#</a><h3>Rob Watkins elected SGA president</h3><p>Bowling Green senior Robert Watkins won the online election for SGA president after spending more than a week seeking supporters who would vote on TopNet. He defeated Berea junior Kara Ratliff, and the results were announced Tuesday at a crowded Revolution 91.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20060612230006/http://www.wkuherald.com/" rel="noopener">Herald, 13 Apr 2006 (via Wayback)</a></p></div></article><article class="ev" id="e-20060420-1"><div class="when"><time datetime="2006-04-20">20 April 2006</time></div><div><a class="pl" href="#e-20060420-1" aria-label="Link to this entry">#</a><h3>Executive board issued its first veto of the year</h3><p>After the Tuesday senate meeting, the SGA executive board vetoed a bill that would have financed community- and campus-oriented projects through civic engagement grants, the first time it exercised its veto power that year. The Herald reported the grants were &quot;a reality for only about 30 minutes&quot; and that time restraints halted an appeal of the veto.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20060423175038/http://www.wkuherald.com/" rel="noopener">Herald, 20 Apr 2006 (via Wayback)</a></p></div></article><article class="ev" id="e-20060420-2"><div class="when"><time datetime="2006-04-20">20 April 2006</time></div><div><a class="pl" href="#e-20060420-2" aria-label="Link to this entry">#</a><h3>Herald editorial attacked SGA misspending</h3><p>A Herald editorial titled &quot;SGA misspending&quot; said members should not have to be &quot;motivated by a giveaway to show up for meetings.&quot; It noted that the opinion page had devoted considerable space in recent weeks to both positive and negative aspects of SGA, which it said could and should be an important organization on campus.</p><p class="srcline"><a class="ext" href="https://web.archive.org/web/20060423175038/http://www.wkuherald.com/" rel="noopener">Herald, 20 Apr 2006 (via Wayback)</a></p></div></article>
+
+
+
+<h2 class="sec">Sources for this year<span class="n">13</span></h2><p class="secnote">Every source cited above, once, with the number of entries that rest on it.</p><ol class="srclist" style="font-size:.92rem;color:var(--ink2)"><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/8934/" rel="noopener">College Heights Herald 80:38, 24 Feb 2005 - &quot;Two Announce Plans to Run for Student Government Association President - Katie Dawson, Josh Collins&quot; (Coulter, Amber)</a></li><li><a class="ext" href="https://bgdailynews.com/2005/11/20/happy-birthday-dear-western/" rel="noopener">Daily News, 20 Nov 2005</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://bgdailynews.com/2006/04/08/wku-seniors-to-pay-project-charge/" rel="noopener">Daily News, 8 Apr 2006</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://bgdailynews.com/2006/05/14/not-a-dry-eye/" rel="noopener">Daily News, 14 May 2006</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Documents/Reports" rel="noopener">TopSCHOLAR - Documents/Reports</a></li><li><a class="ext" href="https://web.archive.org/web/20051212222444/http://www.wkuherald.com/" rel="noopener">Herald, 8 Dec 2005 (via Wayback)</a></li><li><a class="ext" href="https://bgdailynews.com/2006/02/01/sga-leaders-take-look-at-new-fee/" rel="noopener">Daily News, 1 Feb 2006</a></li><li><a class="ext" href="https://bgdailynews.com/2006/02/08/local-news-briefs-wku-president-urges-sga-to-support-new-fee/" rel="noopener">Daily News, 8 Feb 2006</a></li><li><a class="ext" href="https://web.archive.org/web/20060612230006/http://www.wkuherald.com/" rel="noopener">Herald, 13 Apr 2006 (via Wayback)</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://web.archive.org/web/20060324055737/http://www.wkuherald.com/" rel="noopener">Herald, 16 Mar 2006 (via Wayback)</a></li><li><a class="ext" href="https://web.archive.org/web/20060423175038/http://www.wkuherald.com/" rel="noopener">Herald, 20 Apr 2006 (via Wayback)</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml" rel="noopener">Herald via Wayback, 17 Mar 2005</a> <span class="credit">3 entries</span></li><li><a class="ext" href="https://bgdailynews.com/2006/03/31/a-show-of-voices/" rel="noopener">Daily News, 31 Mar 2006</a></li></ol>
+<section class="citebox">
+ <p class="lab">Preferred citation</p>
+ <p class="citestr" id="cite">&#8220;2005-06,&#8221; <cite>SGA 60: Student Government at Western Kentucky University, 1966&#8211;2026</cite>, revised 4 August 2026, <span id="citeurl">y/2005-06.html</span></p>
+ <button class="copy" id="copy" type="button">Copy the citation</button>
+ <p class="revised">Where a name on this page differs from the plaque in the SGA
+ Chambers, the difference is explained above and recorded on the
+ <a href="../corrections.html">corrections page</a>.</p>
+</section>
+<div class="pager"><a href="2004-05.html">Previous year<b>2004-05</b></a><a class="r" href="2006-07.html">Next year<b>2006-07</b></a></div>
+</div></div>
+<script>
+(function(){
+ var u=document.getElementById('citeurl');if(u)u.textContent=location.href.split('#')[0];
+ var b=document.getElementById('copy'),c=document.getElementById('cite');
+ if(b&&c&&navigator.clipboard){b.addEventListener('click',function(){
+  navigator.clipboard.writeText(c.textContent.replace(/\s+/g,' ').trim()).then(function(){
+   b.textContent='Copied';setTimeout(function(){b.textContent='Copy the citation'},1800);});});}
+ else if(b){b.style.display='none'}
+})();
+</script>
+</main>
+<footer class="foot"><div class="wrap"><div class="cols">
+<div><h2>What this is</h2>
+<p>A year-by-year record of student government at Western Kentucky University, from the
+ratification of the Associated Students constitution in April 1966 to the present. Every
+entry names the source it came from.</p></div>
+<div><h2>Corrections</h2>
+<p>The names here start with the plaque in the SGA Chambers, and the plaque is known to be
+wrong in places. Where the archive disagrees with it, this site follows the archive and
+records the change on the <a href="../corrections.html">corrections page</a>. If you
+served, or you know that a year here is wrong, the project wants to hear from you through
+the Student Government Association office.</p></div>
+<div><h2>Reuse</h2><p>Text on this site is the work of the project. Photographs, documents and legislation are reproduced from Western Kentucky University's own open archives and from the <cite>College Heights Herald</cite> and the <cite>Talisman</cite>; each item names the collection, issue and page it came from and links to the original.</p></div>
+</div>
+<p class="fine">Built 4 August 2026. The whole record is readable as data:
+<a href="../years.json">years.json</a>. Method and scope are set out
+<a href="../about.html">on the about page</a>.</p>
+</div></footer>
+
 </body></html>

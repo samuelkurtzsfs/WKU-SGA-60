@@ -1,189 +1,307 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#08090B">
-<meta name="description" content="Sixty years of student government at Western Kentucky University, 1966-2026.">
-<title>1966-67 · SGA 60</title><style>
+<meta name="theme-color" content="#0B0B0C">
+<meta name="description" content="Student government at Western Kentucky University, 1966-67. Jim Haynes. 13 sourced entries.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="1966-67 · SGA 60">
+<meta property="og:description" content="Student government at Western Kentucky University, 1966-67. Jim Haynes. 13 sourced entries.">
+<title>1966-67 · SGA 60</title>
+<style>
 :root{
- --red:#B01E24; --red-dark:#8E1218; --black:#0B0B0C;
- --ink:#151517; --ink2:#4C4C4F; --ink3:#8A8A8E;
- --paper:#FFFFFF; --paper2:#F7F6F3; --line:#E7E4DF;
- --inscribe:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
+ --red:#B01E24; --red-dark:#8A171C; --black:#0B0B0C;
+ --ink:#141416; --ink2:#44444B; --ink3:#76767D;
+ --paper:#FFFFFF; --paper2:#F6F5F2; --line:#DCD9D3; --line2:#EBE8E3;
+ --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
- --mono:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
+ --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+ --measure:35rem;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);
- font-size:clamp(15px,0.35vw + 13.8px,18px);line-height:1.65;
- -webkit-font-smoothing:antialiased;overflow-x:hidden}
+ font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+@media(max-width:640px){body{font-size:16px}}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;letter-spacing:-.012em;
+ text-wrap:balance;margin:0}
+p{margin:0 0 1em;text-wrap:pretty}
+img{max-width:100%;height:auto}
+.srclist a,.srcline a,.credit a,.doc-foot a{overflow-wrap:anywhere}
 a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--red-dark)}
-:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
-.eyebrow{font-family:var(--ui);font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
-.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+a.ext::after{content:"\00A0\2197";color:var(--ink3);font-size:.82em;text-decoration:none}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 34px}
 @media(max-width:640px){.wrap{padding:0 18px}}
+.prose{max-width:var(--measure)}
+.lab{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:8px}
 
-/* plaque plates: clean white cards on the black wall */
-.plate-face{background:var(--paper);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.25);position:relative}
-.engraved{color:var(--ink)}
+/* ---- masthead nav ---- */
+.nav{background:var(--black);color:#fff}
+.nav .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+ padding:13px 34px;flex-wrap:wrap}
+@media(max-width:640px){.nav .wrap{padding:11px 18px}}
+.nav a{color:rgba(255,255,255,.72);text-decoration:none;font-size:.86rem}
+.nav a:hover,.nav a[aria-current]{color:#fff}
+.nav a[aria-current]{box-shadow:inset 0 -2px 0 var(--red)}
+.nav .brand{font-family:var(--display);font-weight:800;letter-spacing:.05em;color:#fff;font-size:1rem}
+.nav .brand b{color:var(--red);font-weight:800}
+.nav ul{display:flex;gap:20px;margin:0;padding:0;list-style:none;flex-wrap:wrap}
 
-/* ---- Big Red ---- */
-.bigred{position:fixed;right:18px;bottom:10px;z-index:80;cursor:pointer;user-select:none;-webkit-user-select:none;line-height:0}
-.bigred{width:170px}
-.bigred img{display:block;width:100%;height:auto;image-rendering:pixelated;
- filter:drop-shadow(0 8px 14px rgba(0,0,0,.28))}
-.bigred .wig{position:absolute;top:-24px;left:24%;pointer-events:none}
-.bigred .gavel{position:absolute;top:16%;right:-14px;pointer-events:none}
-.bigred .close{position:absolute;top:-12px;right:-6px;width:22px;height:22px;border-radius:50%;
- border:1px solid var(--line);background:var(--paper);color:var(--ink2);font-size:13px;line-height:19px;
- text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
-.bigred .close:hover{color:var(--red);border-color:var(--red)}
-.bigred .say{position:absolute;bottom:100%;right:8%;margin-bottom:12px;background:var(--black);color:#fff;
- font-family:var(--ui);font-size:11px;letter-spacing:.06em;padding:8px 12px;border-radius:8px;white-space:nowrap;
- opacity:0;transform:translateY(6px);transition:.25s;pointer-events:none;line-height:1.4}
-.bigred .say:after{content:"";position:absolute;top:100%;right:22px;border:6px solid transparent;border-top-color:var(--black)}
-.bigred.talk .say{opacity:1;transform:none}
-.bigred .gavel{transform-origin:24% 88%}
-@keyframes br-bounce{0%,100%{transform:none}30%{transform:translateY(-28px) rotate(-5deg)}60%{transform:translateY(0) rotate(3deg)}80%{transform:translateY(-10px)}}
-@keyframes br-spin{to{transform:rotate(360deg)}}
-@keyframes br-bang{0%,100%{transform:rotate(0)}35%{transform:rotate(-60deg)}55%{transform:rotate(16deg)}75%{transform:rotate(-8deg)}}
-.bigred.bounce{animation:br-bounce .9s cubic-bezier(.3,.7,.3,1)}
-.bigred.spin{animation:br-spin .8s ease}
-.bigred.bang .gavel{animation:br-bang .7s ease}
-@media(prefers-reduced-motion:reduce){.bigred,.bigred .gavel{animation:none!important}}
+/* ---- page head ---- */
+.head{padding:56px 0 26px;border-bottom:1px solid var(--line)}
+@media(max-width:640px){.head{padding:34px 0 20px}}
+.kicker{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 12px}
+.head h1{font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.04}
+.head .lede{font-size:1.12rem;color:var(--ink);max-width:var(--measure);margin:18px 0 0}
+.head .scope{color:var(--ink2);max-width:var(--measure);margin:14px 0 0;font-size:.97rem}
 
-.room{display:none}
-.nav{background:var(--black)}
-.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 30px;flex-wrap:wrap}
-.nav a{font-size:.85rem;font-weight:500;text-decoration:none;color:rgba(255,255,255,.75);
- font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.nav a:hover{color:#fff}
-.nav .brand{font-family:var(--inscribe);font-weight:800;letter-spacing:.06em;color:#fff;font-size:1rem}
-.nav .brand b{color:var(--red)}
-.yhead{padding:56px 0 30px;border-bottom:1px solid var(--line)}
-.yhead h1{font-family:var(--inscribe);font-weight:800;font-size:clamp(2.8rem,7vw,4.6rem);letter-spacing:-.02em;
- margin:8px 0 0;line-height:1;color:var(--ink)}
-.leads{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}
-.lead{padding:13px 18px;border-radius:10px;min-width:200px;border:1px solid var(--line);box-shadow:none}
-.lead b{display:block;font-family:var(--inscribe);font-weight:700;font-size:1.02rem;text-transform:none;letter-spacing:0}
-.lead .role{font-size:.78rem;margin-top:4px;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em;text-transform:none}
-.lead .role .w{color:var(--red);font-weight:600}
-.cols{max-width:860px;padding:34px 0 20px}
-@media(max-width:900px){.cols{grid-template-columns:1fr;gap:30px}}
-h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spacing:.01em;margin:34px 0 14px;
- color:var(--ink);text-transform:none;border-bottom:2px solid var(--red);display:inline-block;padding-bottom:4px}
-.note{border-left:3px solid var(--red);background:var(--paper2);border-radius:0 8px 8px 0;
- padding:12px 16px;margin:0 0 18px;font-size:.93rem;color:var(--ink2)}
-.note b{color:var(--ink)}
-.ev{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
-@media(max-width:640px){.ev{grid-template-columns:1fr;gap:5px}}
-.ev .d{font-family:var(--ui);font-size:13px;color:var(--red);padding-top:3px;font-weight:600}
-.ev .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:5px;font-family:var(--ui)}
-.ev h3{font-family:var(--inscribe);font-weight:700;font-size:1.06rem;margin:0 0 7px;color:var(--ink)}
-.ev p{margin:0;color:var(--ink2);font-size:.95rem}
-.ev .cite{display:inline-block;margin-top:8px;margin-right:14px;font-size:.85rem;color:var(--red);border:0;padding:0;
- text-decoration:underline;text-underline-offset:3px;text-transform:none;font-family:var(--ui);letter-spacing:0}
-.ev .cite:hover{background:none;color:var(--red-dark)}
-.empty{border:1px dashed var(--line);padding:24px;color:var(--ink3);font-size:.94rem;border-radius:10px}
-.dig{border:1px solid var(--line);background:var(--paper2);padding:20px 18px;position:sticky;top:18px;
- max-height:88vh;overflow:auto;border-radius:12px}
-.dig h2{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 3px;color:var(--red);font-family:var(--ui)}
-.dig h3{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 4px;color:var(--ink3);font-family:var(--ui)}
-.dig .lede{font-size:.84rem;color:var(--ink3);margin:0 0 8px;line-height:1.5}
-.dig a.q{display:block;text-decoration:none;padding:7px 0;border-top:1px solid var(--line);
- font-size:.84rem;color:var(--ink2);line-height:1.4;font-family:var(--ui)}
-.dig a.q:hover{color:var(--red)}
-.pager{display:flex;justify-content:space-between;gap:18px;padding:26px 0 90px;border-top:1px solid var(--line);flex-wrap:wrap}
-.pager a{font-size:.8rem;letter-spacing:.04em;text-decoration:none;max-width:46%;color:var(--ink3);font-family:var(--ui)}
-.pager a b{display:block;font-family:var(--inscribe);font-size:1.1rem;font-weight:700;color:var(--ink);margin-top:4px}
+/* ---- record head ---- */
+.rec-head{padding:48px 0 22px}
+.rec-head h1{font-size:clamp(2.6rem,6.5vw,4rem);line-height:.98;letter-spacing:-.03em;
+ font-variant-numeric:tabular-nums}
+.glance{display:grid;grid-template-columns:max-content 1fr;gap:0 28px;margin:26px 0 0;
+ border-top:1px solid var(--line);max-width:46rem}
+.glance dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:9px 0 0}
+.glance dd{margin:0;padding:7px 0 0;font-variant-numeric:tabular-nums}
+.glance dd a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+@media(max-width:520px){.glance{grid-template-columns:1fr;gap:0}
+ .glance dt{padding-top:12px}.glance dd{padding-top:2px}}
+
+/* ---- sections ---- */
+section{margin:0}
+h2.sec{font-size:1.16rem;margin:52px 0 4px;padding-top:15px;border-top:1px solid var(--line)}
+h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.02em;
+ color:var(--ink3);margin-left:10px;font-variant-numeric:tabular-nums}
+.secnote{color:var(--ink3);font-size:.88rem;margin:0 0 18px}
+.body{padding-bottom:40px}
+
+/* ---- leaders ---- */
+.leader{padding:34px 0 0}
+.leader h2{font-size:1.5rem;letter-spacing:-.02em}
+.leader h2 .r{font-family:var(--ui);font-weight:400;font-size:1rem;color:var(--ink2);
+ letter-spacing:0}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:0 26px;margin:14px 0 20px;
+ max-width:46rem;font-size:.95rem}
+.facts dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:7px 0 0}
+.facts dd{margin:0;padding:5px 0 0;color:var(--ink)}
+@media(max-width:520px){.facts{grid-template-columns:1fr}.facts dt{padding-top:11px}.facts dd{padding-top:1px}}
+.editorial{max-width:var(--measure);color:var(--ink);border-left:2px solid var(--line);
+ padding-left:18px;margin:0 0 22px}
+.editorial p{margin:0 0 .8em}
+.editorial p:last-child{margin-bottom:0}
+.editorial.flagged{border-left-color:var(--red)}
+.profile{max-width:var(--measure)}
+.profile p{font-size:1.02rem;margin:0 0 1.05em}
+.profile sup{font-size:.66em;line-height:0}
+.profile sup a{text-decoration:none;padding:0 1px}
+.srclist{max-width:46rem;margin:6px 0 0;padding:0 0 0 1.4em;font-size:.88rem;color:var(--ink3)}
+.srclist li{margin:0 0 5px}
+.srclist a{color:var(--red)}
+
+/* ---- portraits and photographs ---- */
+.plates-photo{display:flex;gap:26px;flex-wrap:wrap;margin:30px 0 6px}
+.portrait{margin:0;width:190px}
+.portrait img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.portrait figcaption{font-size:.82rem;color:var(--ink2);margin-top:9px;line-height:1.45}
+.portrait figcaption b{display:block;font-family:var(--display);font-size:.95rem;
+ font-weight:700;color:var(--ink);margin-bottom:2px}
+.portrait figcaption .who{display:block}
+.credit{display:block;color:var(--ink3);font-size:.78rem;margin-top:3px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;margin:16px 0 0}
+.gallery figure{margin:0}
+.gallery img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.gallery figcaption{font-size:.87rem;color:var(--ink2);margin-top:9px;line-height:1.5}
+
+/* ---- the organization ---- */
+.org{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin:16px 0 0}
+@media(max-width:700px){.org{grid-template-columns:1fr;gap:24px}}
+.org h3{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 6px}
+.off{display:grid;grid-template-columns:9rem 1fr;gap:0 16px;padding:9px 0;
+ border-top:1px solid var(--line2);font-size:.94rem}
+@media(max-width:520px){.off{grid-template-columns:1fr;gap:1px}}
+.off .o{font-size:.8rem;color:var(--ink3);padding-top:3px}
+.off b{font-weight:600}
+.off p{margin:2px 0 0;color:var(--ink2);font-size:.88rem}
+.org .meta{font-size:.92rem;color:var(--ink2);margin:12px 0 0;max-width:var(--measure)}
+
+/* ---- entries ---- */
+.ev{display:grid;grid-template-columns:9rem 1fr;gap:0 26px;padding:17px 0;
+ border-top:1px solid var(--line2)}
+@media(max-width:640px){.ev{grid-template-columns:1fr;gap:3px;padding:15px 0}}
+.ev .when{font-size:.83rem;color:var(--ink3);padding-top:5px;font-variant-numeric:tabular-nums}
+.ev .when .ctx{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+.ev h3{font-size:1.04rem;margin:0 0 6px}
+.ev p{margin:0;max-width:var(--measure)}
+.srcline{font-size:.84rem;color:var(--ink3);margin-top:9px}
+.srcline a{margin-right:14px}
+.pl{float:right;font-family:var(--mono);font-size:.78rem;color:var(--ink3);
+ text-decoration:none;opacity:0;margin-left:12px}
+.ev:hover .pl,.ev:focus-within .pl{opacity:1}
+.ev:target{background:var(--paper2);box-shadow:-14px 0 0 var(--paper2),14px 0 0 var(--paper2)}
+.empty{max-width:var(--measure);color:var(--ink2)}
+.searchlist{columns:2;column-gap:30px;padding:0;margin:10px 0 0;list-style:none;font-size:.86rem}
+@media(max-width:640px){.searchlist{columns:1}}
+.searchlist li{margin:0 0 4px;break-inside:avoid}
+
+/* ---- documents ---- */
+.doc{border-top:1px solid var(--line2);padding:22px 0 6px}
+.doc h3{font-size:1.05rem;margin:0 0 7px}
+.doc p{color:var(--ink);max-width:var(--measure);margin:0 0 12px}
+.doc-extract{border-left:2px solid var(--red);padding:2px 0 2px 16px;margin:0 0 14px;
+ max-width:var(--measure);color:var(--ink2);font-size:.95rem}
+.doc-extract .lab{margin-bottom:4px}
+.doc-view{display:block;width:100%;height:460px;border:1px solid var(--line);background:var(--paper2)}
+.doc-foot{font-size:.86rem;color:var(--ink3);margin:10px 0 0}
+.doc-foot a{margin-right:18px}
+
+/* ---- legislation rows ---- */
+.lrow{display:grid;grid-template-columns:7.5rem 1fr auto;gap:0 18px;align-items:baseline;
+ padding:10px 0;border-top:1px solid var(--line2);font-size:.95rem}
+@media(max-width:700px){.lrow{grid-template-columns:1fr;gap:2px}}
+.lrow .lt{color:var(--ink3);font-size:.82rem;font-variant-numeric:tabular-nums}
+.lrow .ll{font-size:.85rem;overflow-wrap:anywhere}
+.lrow .ll a{margin-left:16px}
+@media(max-width:700px){.lrow .ll a{margin:0 16px 0 0}}
+.lsec{margin:0 0 26px}
+
+/* ---- timeline ---- */
+.hx{display:grid;grid-template-columns:8rem 1fr;gap:0 24px;padding:6px 0;
+ border-top:1px solid var(--line2);font-size:.92rem;line-height:1.45}
+@media(max-width:640px){.hx{grid-template-columns:1fr;gap:0;padding:8px 0}}
+.hx .when{color:var(--ink3);font-size:.8rem;padding-top:3px;font-variant-numeric:tabular-nums}
+.hx .t{color:var(--ink2);max-width:52rem}
+.hx .t b{color:var(--ink);font-weight:600}
+.hx .t a{font-size:.84rem;margin-left:8px;overflow-wrap:anywhere}
+.hyear{font-size:1.35rem;margin:38px 0 2px;padding-top:14px;border-top:1px solid var(--line)}
+.hyear .who{font-family:var(--ui);font-weight:400;font-size:.9rem;color:var(--ink3);
+ display:block;margin-top:5px;letter-spacing:0}
+.hyear .who a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
+details.hidx{margin:14px 0 0;font-size:.9rem}
+details.hidx summary{cursor:pointer;color:var(--ink3);font-size:.84rem}
+details.hidx summary:hover{color:var(--red)}
+.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:0 0 24px;font-size:.92rem}
+.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
+.decnav span{color:var(--ink3)}
+
+/* ---- filters and search ---- */
+.tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
+.field{display:block;max-width:26rem}
+.field .lab{margin-bottom:6px}
+.field input{width:100%;background:var(--paper);border:1px solid var(--line);color:var(--ink);
+ font-family:var(--ui);font-size:16px;padding:10px 12px;border-radius:2px}
+.field input:focus{outline:2px solid var(--red);outline-offset:-1px;border-color:var(--red)}
+.facets{display:flex;flex-wrap:wrap;gap:0 20px;margin:20px 0 0}
+.facets button{background:none;border:0;border-bottom:2px solid transparent;padding:4px 0 5px;
+ font-family:var(--ui);font-size:.92rem;color:var(--ink2);cursor:pointer}
+.facets button:hover{color:var(--red)}
+.facets button[aria-pressed="true"]{color:var(--ink);font-weight:600;border-bottom-color:var(--red)}
+.facets button .c{color:var(--ink3);font-weight:400;font-variant-numeric:tabular-nums}
+.readout{font-size:.9rem;color:var(--ink2);margin:16px 0 0;font-variant-numeric:tabular-nums}
+
+/* ---- citation ---- */
+.citebox{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+ padding:16px 0;margin:46px 0 0;max-width:46rem}
+.citestr{font-size:.92rem;color:var(--ink);margin:8px 0 0;line-height:1.55}
+.copy{background:none;border:1px solid var(--line);border-radius:2px;color:var(--ink2);
+ font-family:var(--ui);font-size:.8rem;padding:5px 11px;margin-top:12px;cursor:pointer}
+.copy:hover{border-color:var(--red);color:var(--red)}
+.revised{font-size:.84rem;color:var(--ink3);margin:12px 0 0}
+
+/* ---- pager ---- */
+.pager{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+ border-top:1px solid var(--line);padding:20px 0 0;margin-top:44px}
+.pager a{font-size:.82rem;color:var(--ink3);text-decoration:none;max-width:46%}
+.pager a b{display:block;font-family:var(--display);font-size:1.15rem;color:var(--ink);
+ margin-top:3px;font-variant-numeric:tabular-nums}
 .pager a:hover b{color:var(--red)}
 .pager .r{text-align:right;margin-left:auto}
 
-/* ---- president profiles ---- */
-.profile{margin:0 0 26px}
-.profile p{color:var(--ink2);font-size:.96rem;margin:0 0 12px}
+/* ---- footer ---- */
+.foot{border-top:1px solid var(--line);background:var(--paper2);margin-top:70px;
+ padding:36px 0 54px;font-size:.88rem;color:var(--ink2)}
+.foot .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px}
+.foot p{max-width:34rem;margin:0 0 .9em}
+.foot h2{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.foot .fine{color:var(--ink3);font-size:.82rem;margin-top:26px;
+ border-top:1px solid var(--line);padding-top:16px}
 
-/* ---- photographs ---- */
-.portraits{display:flex;gap:16px;flex-wrap:wrap;margin:26px 0 4px}
-.portrait{margin:0;width:160px}
-.portrait img{width:100%;height:190px;object-fit:cover;object-position:top;border-radius:10px;
- box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.portrait figcaption{font-size:.78rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-.portrait figcaption b{display:block;font-family:var(--inscribe);font-size:.92rem;font-weight:700;color:var(--ink)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:0 0 28px}
-.gallery figure{margin:0}
-.gallery img{width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
-.gallery figcaption{font-size:.84rem;color:var(--ink3);margin-top:7px;line-height:1.5}
-
-/* ---- the organization ---- */
-.org{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 30px}
-@media(max-width:640px){.org{grid-template-columns:1fr}}
-.org h3{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--red);font-family:var(--ui)}
-.off{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-.off .o{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding-top:4px;min-width:110px;font-family:var(--ui)}
-.off b{font-family:var(--inscribe);font-weight:700;color:var(--ink)}
-.off p{margin:3px 0 0;color:var(--ink2);font-size:.88rem}
-.org .meta{font-size:.88rem;color:var(--ink2);margin:10px 0 0}
-
-/* ---- the archive shelf ---- */
-.doc{border:1px solid var(--line);border-radius:12px;margin:0 0 24px;overflow:hidden;background:var(--paper)}
-.doc-head{padding:17px 19px 14px}
-.doc-head h3{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;margin:0 0 7px;color:var(--ink)}
-.doc-head p{margin:0;color:var(--ink2);font-size:.93rem}
-.doc-extract{border-left:3px solid var(--red);background:var(--paper2);margin:0 19px 15px;border-radius:0 8px 8px 0;
- padding:12px 16px;font-size:.93rem;color:var(--ink2)}
-.doc-extract .from{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;font-family:var(--ui)}
-.doc-view{display:block;width:100%;height:480px;border:0;border-top:1px solid var(--line);background:var(--paper2)}
-.doc-foot{display:flex;gap:18px;flex-wrap:wrap;padding:13px 19px}
-.doc-foot a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.doc-foot a:hover{background:none;color:var(--red-dark)}
-
-/* ---- complete timeline ---- */
-.hx{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
-@media(max-width:640px){.hx{grid-template-columns:1fr;gap:2px}}
-.hx .d{font-family:var(--ui);font-size:12.5px;color:var(--ink3);padding-top:2px;font-weight:600}
-.hx .t{color:var(--ink2)}
-.hx a{margin-left:10px;font-size:.82rem}
-.hyear{font-family:var(--inscribe);font-weight:800;font-size:1.6rem;margin:44px 0 6px;color:var(--ink)}
-.hyear a{font-size:.8rem;font-weight:600;margin-left:14px}
-.hsub{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin:18px 0 4px;font-family:var(--ui)}
-
-/* ---- legislation ---- */
-.lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
- padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
-@media(max-width:640px){.lrow{grid-template-columns:1fr;gap:4px}}
-.ltype{font-family:var(--ui);font-size:12px;letter-spacing:.01em;color:var(--red);font-weight:600}
-.lt{color:var(--ink)}
-.lls{display:flex;gap:14px;white-space:nowrap}
-.lls a{font-size:.85rem;color:var(--red);border:0;padding:0;text-decoration:underline;text-underline-offset:3px;
- text-transform:none;font-family:var(--ui);letter-spacing:0}
-.lls a:hover{background:none;color:var(--red-dark)}
-.lsec{margin:0 0 34px}
-.lcount{font-size:.78rem;color:var(--ink3);font-family:var(--ui);letter-spacing:.02em}
-.lfilter{width:100%;max-width:420px;background:var(--paper);border:1px solid var(--line);color:var(--ink);
- font-family:var(--ui);font-size:15px;padding:11px 16px;border-radius:10px;margin:6px 0 26px}
-.lfilter:focus{outline:2px solid var(--red);outline-offset:2px}
-.ljump{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 22px}
-.ljump .chip{font-family:var(--ui);font-size:13px;padding:5px 13px;border:1px solid var(--line);border-radius:999px;
- color:var(--ink2);text-decoration:none}
-.ljump .chip:hover{border-color:var(--red);color:var(--red)}
+/* ---- print ---- */
+@media print{
+ .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav{display:none!important}
+ body{font-size:11pt;color:#000}
+ a{color:#000;text-decoration:none}
+ a.ext::after{content:""}
+ .body a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#444;word-break:break-all}
+ .citebox{margin:0 0 18px;border-top:0}
+ .doc-view{display:none}
+ h2.sec{break-after:avoid}
+ .ev,.doc,.leader{break-inside:avoid}
+}
 </style></head><body>
-<div class="room"></div>
+<a class="skip" href="#main">Skip to the record</a>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="../index.html">SGA <b>60</b></a><ul><li><a href="../index.html" aria-current="page">The board</a></li><li><a href="../history.html">Timeline</a></li><li><a href="../legislation.html">Legislation</a></li><li><a href="../corrections.html">Corrections</a></li><li><a href="../about.html">About and method</a></li></ul></div></nav>
+<main id="main">
 
-<nav class="nav"><div class="wrap">
- <a class="brand" href="../index.html">SGA <b>60</b></a>
- <div style="display:flex;gap:20px"><a href="../index.html">The Board</a><a href="../history.html">Timeline</a><a href="../legislation.html">Legislation</a></div>
-</div></nav>
-<header class="yhead"><div class="wrap">
- <div class="eyebrow">Associated Students</div>
+<header class="rec-head"><div class="wrap">
+ <p class="kicker">Associated Students &middot; academic year</p>
  <h1>1966-67</h1>
- <div class="leads"><div class="lead plate-face engraved"><b>Jim Haynes</b><div class="role">president &middot; plaque: 1966-67</div></div></div>
+ <dl class="glance"><dt>Organization</dt><dd>Associated Students</dd><dt>President</dt><dd>Jim Haynes</dd><dt>Entries</dt><dd>13</dd><dt>Photographs</dt><dd>2</dd><dt>Sources cited</dt><dd>15</dd></dl>
 </div></header>
-<div class="wrap"><div class="cols">
- <div><div class="portraits"><figure class="portrait"><img src="../photos/1966-67-jim-haynes.jpg" alt="Jim Haynes" loading="lazy"><figcaption><b>Jim Haynes</b><a class="cite" style="margin-top:5px" href="https://digitalcommons.wku.edu/dlsc_ua_records/382" target="_blank" rel="noopener">1967 Talisman pt. 1, p. 136 &#8599;</a></figcaption></figure></div><div class="note"><b>Jim Haynes:</b> First president of the Associated Students of Western Kentucky University, elected 18 May 1966, seven weeks after President Kelly Thompson approved the constitution.</div><section class="profile"><h2 class="sub">Jim Haynes &mdash; the term</h2><p>Jim Haynes was one of three candidates, with Leonard Heydt and John Lovett, who presented their views to the Herald in the race for the first presidency of the Associated Students in May 1966, days after the student body ratified the new constitution.</p><p>Haynes captured the presidency the following week, becoming the first president of the Associated Students of Western Kentucky University. The same issue carried a skeptical editorial titled 'We Do Not Deserve Student Government,' a measure of the doubts his administration set out to answer.</p><p>Haynes's term closed in May 1967, when the Herald summed up the government's first year as one of organization, progress and apathy and carried president-elect William Menser's plans for 1967-68.</p></section><h2 class="sub">What happened, in order</h2><article class="ev"><div class="d">1966-04-01</div><div><h3>President Kelly Thompson approves the constitution</h3><p>The proposed constitution of the Associated Students of Western Kentucky University was completed in late March and approved on 1 April. The copy held by WKU Archives is dated 7 April 1966.</p><a class="cite" href="https://digitalcommons.wku.edu/sga/Constitution/Constitution" target="_blank" rel="noopener">TopSCHOLAR - SGA Constitution &#8599;</a></div></article><article class="ev"><div class="d">1966-04-01</div><div><h3>Thompson's approval letter is addressed to committee chair Reed Morgan</h3><p>The archived copy of Thompson's approval letter names the organizing committee that drafted the constitution: Reed Morgan as chair, John Lovett as vice chair. Morgan's committee did the drafting; Jim Haynes was elected to lead the government it created six weeks later.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/527" target="_blank" rel="noopener">UA3/3/1, Letter to Organizational Committee for a Western Student Organization, 1 Apr 1966 &#8599;</a></div></article><article class="ev"><div class="d">1966-04-26</div><div><h3>Students ratify the constitution, 1,812 to 726</h3><p>A four-day referendum. 2,538 students voted - a larger raw turnout than most SGA elections have managed since.</p><a class="cite" href="https://www.wku.edu/sga/about/history.php" target="_blank" rel="noopener">WKU SGA history &#8599;</a></div></article><article class="ev"><div class="d">1966-05-18</div><div><h3>Jim Haynes elected first president</h3><p>Seven weeks from presidential approval to a seated student president. Western Kentucky State College became Western Kentucky University on 16 June, so the university and its student government are almost exactly the same age.</p><a class="cite" href="https://www.wku.edu/sga/about/history.php" target="_blank" rel="noopener">WKU SGA history &#8599;</a></div></article><article class="ev"><div class="d">1966-09-29<span class="ctx">campus</span></div><div><h3>The new government opens its first full year</h3><p>The Herald's first issue of the fall reported the student senate ratifying a government appointment as the Associated Students began their first full academic year. Students had approved the constitution and elected officers the previous spring.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4701/" target="_blank" rel="noopener">Herald 46:1, 29 Sep 1966 &#8599;</a></div></article><article class="ev"><div class="d">1966-10-27<span class="ctx">campus</span></div><div><h3>Doing well, but lacking communication</h3><p>Midway through the fall semester the Herald judged that Associated Students leaders were performing well but were failing to communicate with the students they represented. It was the first public report card on the year-old government.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4703/" target="_blank" rel="noopener">Herald 46:5, 27 Oct 1966 &#8599;</a></div></article><article class="ev"><div class="d">1966-11-10<span class="ctx">campus</span></div><div><h3>Government and administration meet on campus problems</h3><p>The Herald reported Student Government Association leaders meeting with President Kelly Thompson to discuss campus problems, an early instance of the year-old government dealing directly with the administration.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4697/" target="_blank" rel="noopener">Herald 46:7, 10 Nov 1966 &#8599;</a></div></article><article class="ev"><div class="d">1967-03-09<span class="ctx">campus</span></div><div><h3>Herald warns of a 'popularity bandwagon' in the spring election</h3><p>A week before the presidential campaign opened, the Herald ran a piece by Fran Salyers arguing that popularity, not merit, was set to decide the Associated Students election.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4709/" target="_blank" rel="noopener">Herald 46:16, 9 Mar 1967 &#8599;</a></div></article><article class="ev"><div class="d">1967-03-16<span class="ctx">campus</span></div><div><h3>Two vie for the presidency</h3><p>The Herald reported two candidates seeking the Associated Students presidency, with campaigns for the organization's second presidential election set to open the following Monday.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4708/" target="_blank" rel="noopener">Herald 46:17, 16 Mar 1967 &#8599;</a></div></article><article class="ev"><div class="d">1967-05-04<span class="ctx">campus</span></div><div><h3>Swearing-in set for May 10</h3><p>The Herald announced that newly elected Associated Student officers would be sworn in on May 10, 1967, completing the organization's first full transfer of leadership.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4722/" target="_blank" rel="noopener">Herald 46:22, 4 May 1967 &#8599;</a></div></article><article class="ev"><div class="d">1967-05-12<span class="ctx">campus</span></div><div><h3>First year judged: organization, progress, apathy</h3><p>Reviewing the government's first year, the Herald found organization and progress alongside persistent student apathy. The same issue carried president-elect William Menser's plans for 1967-68 and a letter arguing that the Associated Students really worked.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4721/" target="_blank" rel="noopener">Herald 46:23, 12 May 1967 &#8599;</a></div></article><article class="ev"><div class="d">1967-05-18<span class="ctx">campus</span></div><div><h3>Herald presses students to vote as the year closes</h3><p>Days after the outgoing administration's year-end review, the Herald ran a piece headlined 'Goof Government Needs Student Vote,' pressing students toward greater turnout as Menser's incoming administration took over.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/4720/" target="_blank" rel="noopener">Herald 46:24, 18 May 1967 &#8599;</a></div></article><article class="ev"><div class="d">1967-05-30<span class="ctx">campus</span></div><div><h3>Dean Keown proposes a budget for the new government</h3><p>Dean of Students Charles Keown sent President Kelly Thompson a memo proposing a student fee structure to create a budget for the Associated Student Government. He attached fee models gathered from universities across the South and Midwest.</p><a class="cite" href="https://digitalcommons.wku.edu/dlsc_ua_records/504/" target="_blank" rel="noopener">UA3/3/1 Keown memo, 30 May 1967 &#8599;</a></div></article><h2 class="sub">The year in pictures</h2><div class="gallery"><figure><img src="../photos/1966-67-associated-students.jpg" alt="The Associated Students executive council and members, photographed in the conference room, 1966-67 academic year." loading="lazy"><figcaption>The Associated Students executive council and members, photographed in the conference room, 1966-67 academic year. <a class="cite" style="margin-top:5px" href="https://digitalcommons.wku.edu/dlsc_ua_records/382" target="_blank" rel="noopener">1967 Talisman pt. 1, p. 136 &#8599;</a></figcaption></figure></div></div>
-</div><div class="pager"><a class="r" href="1967-68.html">next &rarr;<b>1967-68</b></a></div></div>
-<div class="bigred" id="bigred" role="img" aria-label="8-bit Big Red in a judicial wig, holding the SGA gavel. Click to play."><button class="close" id="brx" aria-label="Dismiss Big Red">&times;</button><div class="say" id="brsay">Order, order!</div><img src="../photos/bigred-8bit.png" alt="" width="170" height="142"><svg class="wig" width="98" height="56" viewBox="0 0 98 56"><rect x="14" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="0" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="28" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="7" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="21" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="28" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="35" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="42" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="49" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="56" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="63" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="70" y="14" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="14" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="21" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="28" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="28" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="35" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="0" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="7" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="77" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="84" y="42" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="42" width="7.4" height="7.4" fill="#D8D5CE"/><rect x="0" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="7" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="14" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="77" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="84" y="49" width="7.4" height="7.4" fill="#F4F2ED"/><rect x="91" y="49" width="7.4" height="7.4" fill="#F4F2ED"/></svg><svg class="gavel" width="56" height="56" viewBox="0 0 56 56"><rect x="0" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="0" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="7" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="0" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="7" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="14" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="28" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="35" y="14" width="7.4" height="7.4" fill="#1A1A1C"/><rect x="21" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="21" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="28" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="35" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="42" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="21" y="49" width="7.4" height="7.4" fill="#8B5A2B"/><rect x="28" y="49" width="7.4" height="7.4" fill="#8B5A2B"/></svg></div><script>(function(){var br=document.getElementById("bigred");if(!br)return;try{if(localStorage.getItem("bigred")==="hidden"){br.remove();return}}catch(e){}document.getElementById("brx").addEventListener("click",function(e){e.stopPropagation();br.remove();try{localStorage.setItem("bigred","hidden")}catch(e){}});var says=["Order, order!","Go Tops!","Sixty years on the Hill.","Motion carries.","The Spirit Makes the Master."],i=0,m=-1;br.addEventListener("click",function(){br.classList.remove("bounce","spin","bang","talk");void br.offsetWidth;m=(m+1)%3;if(m===0){br.classList.add("bang","talk");document.getElementById("brsay").textContent=says[i++%says.length];}else if(m===1){br.classList.add("bounce")}else{br.classList.add("spin")}clearTimeout(br._t);br._t=setTimeout(function(){br.classList.remove("talk")},1600)});})();</script>
+<div class="wrap"><div class="body">
+<div class="plates-photo"><figure class="portrait"><img src="../photos/1966-67-jim-haynes.jpg" alt="Portrait of Jim Haynes." loading="lazy"><figcaption><b>Jim Haynes</b><span class="who">President, 1966-67.</span><span class="credit"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/382" rel="noopener">1967 Talisman pt. 1, p. 136</a></span></figcaption></figure></div>
+<section class="leader" id="jim-haynes"><h2>Jim Haynes <span class="r">president, 1966-67</span></h2><dl class="facts"><dt>Office</dt><dd>President</dd><dt>Term recorded here</dt><dd>1966-67</dd><dt>Standing of the record</dt><dd>As recorded on the plaque. Not yet corroborated in the archive.</dd></dl><div class="editorial"><p>First president of the Associated Students of Western Kentucky University, elected 18 May 1966, seven weeks after President Kelly Thompson approved the constitution.</p></div><div class="profile"><p>Jim Haynes was one of three candidates, with Leonard Heydt and John Lovett, who presented their views to the Herald in the race for the first presidency of the Associated Students in May 1966, days after the student body ratified the new constitution.</p><p>Haynes captured the presidency the following week, becoming the first president of the Associated Students of Western Kentucky University. The same issue carried a skeptical editorial titled &#x27;We Do Not Deserve Student Government,&#x27; a measure of the doubts his administration set out to answer.</p><p>Haynes&#x27;s term closed in May 1967, when the Herald summed up the government&#x27;s first year as one of organization, progress and apathy and carried president-elect William Menser&#x27;s plans for 1967-68.</p></div><p class="lab" style="margin:18px 0 6px">Sources for this account</p><ol class="srclist"><li id="jim-haynes-s1"><a class="ext" href="https://www.wku.edu/sga/about/history.php" rel="noopener">WKU SGA history</a></li><li id="jim-haynes-s2"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4686/" rel="noopener">Herald 45:23, 12 May 1966</a></li><li id="jim-haynes-s3"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4685/" rel="noopener">Herald, 19 May 1966</a></li><li id="jim-haynes-s4"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4721/" rel="noopener">Herald 46:23, 12 May 1967</a></li></ol></section>
+
+<h2 class="sec">The year, in order<span class="n">13</span></h2><article class="ev" id="e-19660401-1"><div class="when"><time datetime="1966-04">April 1966</time></div><div><a class="pl" href="#e-19660401-1" aria-label="Link to this entry">#</a><h3>President Kelly Thompson approves the constitution</h3><p>The proposed constitution of the Associated Students of Western Kentucky University was completed in late March and approved on 1 April. The copy held by WKU Archives is dated 7 April 1966.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/sga/Constitution/Constitution" rel="noopener">TopSCHOLAR - SGA Constitution</a></p></div></article><article class="ev" id="e-19660401-2"><div class="when"><time datetime="1966-04">April 1966</time></div><div><a class="pl" href="#e-19660401-2" aria-label="Link to this entry">#</a><h3>Thompson&#x27;s approval letter is addressed to committee chair Reed Morgan</h3><p>The archived copy of Thompson&#x27;s approval letter names the organizing committee that drafted the constitution: Reed Morgan as chair, John Lovett as vice chair. Morgan&#x27;s committee did the drafting; Jim Haynes was elected to lead the government it created six weeks later.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/527" rel="noopener">UA3/3/1, Letter to Organizational Committee for a Western Student Organization, 1 Apr 1966</a></p></div></article><article class="ev" id="e-19660426-1"><div class="when"><time datetime="1966-04-26">26 April 1966</time></div><div><a class="pl" href="#e-19660426-1" aria-label="Link to this entry">#</a><h3>Students ratify the constitution, 1,812 to 726</h3><p>A four-day referendum. 2,538 students voted - a larger raw turnout than most SGA elections have managed since.</p><p class="srcline"><a class="ext" href="https://www.wku.edu/sga/about/history.php" rel="noopener">WKU SGA history</a></p></div></article><article class="ev" id="e-19660518-1"><div class="when"><time datetime="1966-05-18">18 May 1966</time></div><div><a class="pl" href="#e-19660518-1" aria-label="Link to this entry">#</a><h3>Jim Haynes elected first president</h3><p>Seven weeks from presidential approval to a seated student president. Western Kentucky State College became Western Kentucky University on 16 June, so the university and its student government are almost exactly the same age.</p><p class="srcline"><a class="ext" href="https://www.wku.edu/sga/about/history.php" rel="noopener">WKU SGA history</a></p></div></article><article class="ev" id="e-19660929-1"><div class="when"><time datetime="1966-09-29">29 September 1966</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19660929-1" aria-label="Link to this entry">#</a><h3>The new government opens its first full year</h3><p>The Herald&#x27;s first issue of the fall reported the student senate ratifying a government appointment as the Associated Students began their first full academic year. Students had approved the constitution and elected officers the previous spring.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4701/" rel="noopener">Herald 46:1, 29 Sep 1966</a></p></div></article><article class="ev" id="e-19661027-1"><div class="when"><time datetime="1966-10-27">27 October 1966</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19661027-1" aria-label="Link to this entry">#</a><h3>Doing well, but lacking communication</h3><p>Midway through the fall semester the Herald judged that Associated Students leaders were performing well but were failing to communicate with the students they represented. It was the first public report card on the year-old government.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4703/" rel="noopener">Herald 46:5, 27 Oct 1966</a></p></div></article><article class="ev" id="e-19661110-1"><div class="when"><time datetime="1966-11-10">10 November 1966</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19661110-1" aria-label="Link to this entry">#</a><h3>Government and administration meet on campus problems</h3><p>The Herald reported Student Government Association leaders meeting with President Kelly Thompson to discuss campus problems, an early instance of the year-old government dealing directly with the administration.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4697/" rel="noopener">Herald 46:7, 10 Nov 1966</a></p></div></article><article class="ev" id="e-19670309-1"><div class="when"><time datetime="1967-03-09">9 March 1967</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19670309-1" aria-label="Link to this entry">#</a><h3>Herald warns of a &#x27;popularity bandwagon&#x27; in the spring election</h3><p>A week before the presidential campaign opened, the Herald ran a piece by Fran Salyers arguing that popularity, not merit, was set to decide the Associated Students election.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4709/" rel="noopener">Herald 46:16, 9 Mar 1967</a></p></div></article><article class="ev" id="e-19670316-1"><div class="when"><time datetime="1967-03-16">16 March 1967</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19670316-1" aria-label="Link to this entry">#</a><h3>Two vie for the presidency</h3><p>The Herald reported two candidates seeking the Associated Students presidency, with campaigns for the organization&#x27;s second presidential election set to open the following Monday.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4708/" rel="noopener">Herald 46:17, 16 Mar 1967</a></p></div></article><article class="ev" id="e-19670504-1"><div class="when"><time datetime="1967-05-04">4 May 1967</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19670504-1" aria-label="Link to this entry">#</a><h3>Swearing-in set for May 10</h3><p>The Herald announced that newly elected Associated Student officers would be sworn in on May 10, 1967, completing the organization&#x27;s first full transfer of leadership.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4722/" rel="noopener">Herald 46:22, 4 May 1967</a></p></div></article><article class="ev" id="e-19670512-1"><div class="when"><time datetime="1967-05-12">12 May 1967</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19670512-1" aria-label="Link to this entry">#</a><h3>First year judged: organization, progress, apathy</h3><p>Reviewing the government&#x27;s first year, the Herald found organization and progress alongside persistent student apathy. The same issue carried president-elect William Menser&#x27;s plans for 1967-68 and a letter arguing that the Associated Students really worked.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4721/" rel="noopener">Herald 46:23, 12 May 1967</a></p></div></article><article class="ev" id="e-19670518-1"><div class="when"><time datetime="1967-05-18">18 May 1967</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19670518-1" aria-label="Link to this entry">#</a><h3>Herald presses students to vote as the year closes</h3><p>Days after the outgoing administration&#x27;s year-end review, the Herald ran a piece headlined &#x27;Goof Government Needs Student Vote,&#x27; pressing students toward greater turnout as Menser&#x27;s incoming administration took over.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4720/" rel="noopener">Herald 46:24, 18 May 1967</a></p></div></article><article class="ev" id="e-19670530-1"><div class="when"><time datetime="1967-05-30">30 May 1967</time><span class="ctx">campus</span></div><div><a class="pl" href="#e-19670530-1" aria-label="Link to this entry">#</a><h3>Dean Keown proposes a budget for the new government</h3><p>Dean of Students Charles Keown sent President Kelly Thompson a memo proposing a student fee structure to create a budget for the Associated Student Government. He attached fee models gathered from universities across the South and Midwest.</p><p class="srcline"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/504/" rel="noopener">UA3/3/1 Keown memo, 30 May 1967</a></p></div></article>
+<h2 class="sec">The year in photographs<span class="n">1</span></h2><div class="gallery"><figure><img src="../photos/1966-67-associated-students.jpg" alt="" loading="lazy"><figcaption>The Associated Students executive council and members, photographed in the conference room, 1966-67 academic year.<span class="credit"><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/382" rel="noopener">1967 Talisman pt. 1, p. 136</a></span></figcaption></figure></div>
+
+
+<h2 class="sec">Sources for this year<span class="n">15</span></h2><p class="secnote">Every source cited above, once, with the number of entries that rest on it.</p><ol class="srclist" style="font-size:.92rem;color:var(--ink2)"><li><a class="ext" href="https://www.wku.edu/sga/about/history.php" rel="noopener">WKU SGA history</a> <span class="credit">3 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4686/" rel="noopener">Herald 45:23, 12 May 1966</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4685/" rel="noopener">Herald, 19 May 1966</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4721/" rel="noopener">Herald 46:23, 12 May 1967</a> <span class="credit">2 entries</span></li><li><a class="ext" href="https://digitalcommons.wku.edu/sga/Constitution/Constitution" rel="noopener">TopSCHOLAR - SGA Constitution</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/527" rel="noopener">UA3/3/1, Letter to Organizational Committee for a Western Student Organization, 1 Apr 1966</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4701/" rel="noopener">Herald 46:1, 29 Sep 1966</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4703/" rel="noopener">Herald 46:5, 27 Oct 1966</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4708/" rel="noopener">Herald 46:17, 16 Mar 1967</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4722/" rel="noopener">Herald 46:22, 4 May 1967</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/504/" rel="noopener">UA3/3/1 Keown memo, 30 May 1967</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4697/" rel="noopener">Herald 46:7, 10 Nov 1966</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4709/" rel="noopener">Herald 46:16, 9 Mar 1967</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/4720/" rel="noopener">Herald 46:24, 18 May 1967</a></li><li><a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/382" rel="noopener">1967 Talisman pt. 1, p. 136</a> <span class="credit">2 entries</span></li></ol>
+<section class="citebox">
+ <p class="lab">Preferred citation</p>
+ <p class="citestr" id="cite">&#8220;1966-67,&#8221; <cite>SGA 60: Student Government at Western Kentucky University, 1966&#8211;2026</cite>, revised 4 August 2026, <span id="citeurl">y/1966-67.html</span></p>
+ <button class="copy" id="copy" type="button">Copy the citation</button>
+ <p class="revised">Where a name on this page differs from the plaque in the SGA
+ Chambers, the difference is explained above and recorded on the
+ <a href="../corrections.html">corrections page</a>.</p>
+</section>
+<div class="pager"><a class="r" href="1967-68.html">Next year<b>1967-68</b></a></div>
+</div></div>
+<script>
+(function(){
+ var u=document.getElementById('citeurl');if(u)u.textContent=location.href.split('#')[0];
+ var b=document.getElementById('copy'),c=document.getElementById('cite');
+ if(b&&c&&navigator.clipboard){b.addEventListener('click',function(){
+  navigator.clipboard.writeText(c.textContent.replace(/\s+/g,' ').trim()).then(function(){
+   b.textContent='Copied';setTimeout(function(){b.textContent='Copy the citation'},1800);});});}
+ else if(b){b.style.display='none'}
+})();
+</script>
+</main>
+<footer class="foot"><div class="wrap"><div class="cols">
+<div><h2>What this is</h2>
+<p>A year-by-year record of student government at Western Kentucky University, from the
+ratification of the Associated Students constitution in April 1966 to the present. Every
+entry names the source it came from.</p></div>
+<div><h2>Corrections</h2>
+<p>The names here start with the plaque in the SGA Chambers, and the plaque is known to be
+wrong in places. Where the archive disagrees with it, this site follows the archive and
+records the change on the <a href="../corrections.html">corrections page</a>. If you
+served, or you know that a year here is wrong, the project wants to hear from you through
+the Student Government Association office.</p></div>
+<div><h2>Reuse</h2><p>Text on this site is the work of the project. Photographs, documents and legislation are reproduced from Western Kentucky University's own open archives and from the <cite>College Heights Herald</cite> and the <cite>Talisman</cite>; each item names the collection, issue and page it came from and links to the original.</p></div>
+</div>
+<p class="fine">Built 4 August 2026. The whole record is readable as data:
+<a href="../years.json">years.json</a>. Method and scope are set out
+<a href="../about.html">on the about page</a>.</p>
+</div></footer>
+
 </body></html>
