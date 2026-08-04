@@ -5448,10 +5448,10 @@
      "plaque_term": "1995-96",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Plaque gives maiden name in parentheses - search both Higdon and Howard.",
+     "note": "Plaque gives maiden name in parentheses - confirmed under Higdon. Named as SGA president for 1995-96 in Herald election coverage (\"Tara Higdon Moves Up; Voting Down,\" 11 Apr 1995) and again as outgoing president in the 1996 succession coverage; the 1994-95 organization record independently names her as that year's Administrative Vice President, noting she would succeed Evans as president and student regent the following year.",
      "sources": [
       {
        "label": "Herald 70:51, 11 Apr 1995",
@@ -5630,7 +5630,41 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Tara Higdon",
+      "note": "A Slaughters junior; had served as Administrative Vice President and student regent in 1994-95 before moving up to the presidency.",
+      "src": {
+       "label": "Herald 70:51, 11 Apr 1995, \"Tara Higdon Moves Up; Voting Down\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7932"
+      }
+     },
+     {
+      "office": "Officer (title not specified in the archive)",
+      "name": "Horace Johnson",
+      "note": "Defended in a Herald letter, alongside Kristen Miller, against a charge of being 'hair-brained' in the skywalk controversy.",
+      "src": {
+       "label": "Herald 71:38, 13 Feb 1996",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2959"
+      }
+     },
+     {
+      "office": "Officer (title not specified in the archive)",
+      "name": "Kristen Miller",
+      "note": "Succeeded Higdon as president in 1996-97; Higdon publicly endorsed her in the spring 1996 election.",
+      "src": {
+       "label": "Herald 71:38, 13 Feb 1996",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2959"
+      }
+     }
+    ],
+    "senate": {
+     "note": "No full senate officer list, committee structure, or seat count survives for this year beyond the president and the two officers named defending the skywalk proposal in February 1996."
+    }
+   }
   },
   {
    "id": "1996-97",
@@ -6069,10 +6103,10 @@
      "plaque_term": "1998-99",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Letters survive on ice machines in the residence halls, campus safety, food court hours and professors posting office hours.",
+     "note": "Letters survive on ice machines in the residence halls, campus safety, food court hours and professors posting office hours. Confirmed as SGA president for 1998-99 by Herald election coverage (\"Stephanie Cosby Rolls to Huge Victory,\" 30 Apr 1998) and by the Kentucky Board of Student Body Presidents' fall 1998 dues letter addressed to her by name and title.",
      "sources": [
       {
        "label": "TopSCHOLAR - SGA Documents/Reports/19",
@@ -6179,7 +6213,8 @@
      "body": "Resolution 98-7-F requested that University Boulevard be widened and that a traffic island be added for pedestrians. The Herald reported the following week that the University Boulevard proposal had failed, but the advising checklist was approved and grew into a run of advising-reform legislation through the fall.",
      "src": {
       "label": "SGA Records: Resolution 98-7-F, 6 Oct 1998",
-      "url": "https://digitalcommons.wku.edu/context/sga/article/2018/viewcontent/sga_res_98_7_f.pdf"
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2018/viewcontent/sga_res_98_7_f.pdf",
+      "file": "1998-99-resolution-98-7-f.pdf"
      },
      "campus": true
     },
@@ -6199,7 +6234,8 @@
      "body": "Bill 98-10-F proposed allocating funds to the Kappa Alpha fraternity after its house burned. The proposal set off the sharpest fight of the fall.",
      "src": {
       "label": "SGA Records: Bill 98-10-F, 17 Nov 1998",
-      "url": "https://digitalcommons.wku.edu/context/sga/article/2102/viewcontent/sga_bill_98_10_f.pdf"
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2102/viewcontent/sga_bill_98_10_f.pdf",
+      "file": "1998-99-bill-98-10-f.pdf"
      },
      "campus": true
     },
@@ -6240,7 +6276,67 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Stephanie Cosby",
+      "note": "Of Greenville; also served as student regent.",
+      "src": {
+       "label": "Herald 73:53, 30 Apr 1998, \"Stephanie Cosby Rolls to Huge Victory\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7982"
+      }
+     },
+     {
+      "office": "Vice President",
+      "name": "Matthew Bastin",
+      "note": "Circulated the fall 1998 legislative record to answer charges of unproductiveness, and wrote to president Gary Ransdell on student health services in April 1999.",
+      "src": {
+       "label": "TopSCHOLAR - SGA Documents/Reports/24",
+       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/24"
+      }
+     },
+     {
+      "office": "Officer (title not specified in the archive)",
+      "name": "Mitchell Bailey",
+      "note": "Issued the Executive Council's written response to an anonymous congress member's complaint about the tone of SGA meetings, November 1998.",
+      "src": {
+       "label": "TopSCHOLAR - SGA Documents/Reports/28",
+       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/28"
+      }
+     }
+    ],
+    "senate": {
+     "note": "Congress numbered its fall 1998 legislation sequentially, at least 98-1-F through 98-13-F, covering everything from an advisor checklist to Murray State fire relief; no full senate officer list, committee structure, or seat count survives beyond the executive officers named in the record."
+    }
+   },
+   "documents": [
+    {
+     "file": "1998-99-resolution-98-7-f.pdf",
+     "title": "Resolution 98-7-F, University Boulevard widening, 6 Oct 1998",
+     "summary": "SGA's resolution asking WKU to widen University Boulevard and add a pedestrian traffic island. The Herald reported the following week that the request had failed even as a companion advising-checklist bill was approved and grew into a run of advising-reform legislation that fall.",
+     "extract": "Requested the widening of University Boulevard and a pedestrian traffic island.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Records: Resolution 98-7-F, 6 Oct 1998",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2018/viewcontent/sga_res_98_7_f.pdf"
+     }
+    },
+    {
+     "file": "1998-99-bill-98-10-f.pdf",
+     "title": "Bill 98-10-F, aid to Kappa Alpha after fire, 17 Nov 1998",
+     "summary": "SGA's bill proposing funds for the Kappa Alpha fraternity after its house burned. It set off the sharpest fight of the fall: the Herald reported the following month that the congress voted the aid down, and letters defending and attacking the decision ran for the rest of the semester.",
+     "extract": "Proposed allocating SGA funds to Kappa Alpha after its house fire.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Records: Bill 98-10-F, 17 Nov 1998",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2102/viewcontent/sga_bill_98_10_f.pdf"
+     }
+    }
+   ]
   },
   {
    "id": "1999-00",
