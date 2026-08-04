@@ -47,6 +47,15 @@
      }
     },
     {
+     "date": "1966-04-01",
+     "title": "Thompson's approval letter is addressed to committee chair Reed Morgan",
+     "body": "The archived copy of Thompson's approval letter names the organizing committee that drafted the constitution: Reed Morgan as chair, John Lovett as vice chair. Morgan's committee did the drafting; Jim Haynes was elected to lead the government it created six weeks later.",
+     "src": {
+      "label": "UA3/3/1, Letter to Organizational Committee for a Western Student Organization, 1 Apr 1966",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/527"
+     }
+    },
+    {
      "date": "1966-04-26",
      "title": "Students ratify the constitution, 1,812 to 726",
      "body": "A four-day referendum. 2,538 students voted - a larger raw turnout than most SGA elections have managed since.",
@@ -144,23 +153,36 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Single-year plate. Sits between Menser and Straeffer, whose election the Herald reported on 9 May 1968 - so Morgan likely finished a partial term or held the seat between elections.",
-     "sources": []
+     "note": "Single-year plate. Sits between Menser and Straeffer, whose election the Herald reported on 9 May 1968 - so Morgan likely finished a partial term or held the seat between elections. The only Reed Morgan found in the archive is a different, earlier role: chair of the organizing committee that received President Kelly Thompson's approval letter for the Associated Students constitution, 1 April 1966 - two years before this plaque entry. No Herald or WKU Timeline coverage connects a Reed Morgan to a 1968-69 SGA office. Left unresolved rather than moved, since the 1966 role (committee chair, pre-election) is not the same office the plaque implies.",
+     "sources": [
+      {
+       "label": "UA3/3/1, Letter to Organizational Committee for a Western Student Organization, 1 Apr 1966",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/527"
+      }
+     ]
     },
     {
      "name": "Bill Straeffer",
      "plaque_term": "1968-69",
      "role": "president",
-     "year_confidence": "stated",
+     "year_confidence": "confirmed",
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Election win reported in the Herald, 9 May 1968, in the same issue as an editorial headed 'Elections Illustrate Faults, Indifference'.",
+     "note": "Election win reported in the Herald, 9 May 1968, in the same issue as an editorial headed 'Elections Illustrate Faults, Indifference'. The internal election-results memo (mirrored below) gives his exact margin: 1,732 votes to Charles Whitley's 1,098.",
      "sources": [
       {
        "label": "Herald 47:30, 9 May 1968",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9010"
+      },
+      {
+       "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
       }
+     ],
+     "profile": [
+      "Straeffer ran for the Associated Students presidency against Charles Whitley in the 2 May 1968 election, the organization's second contested presidential race. He won 1,732 votes to Whitley's 1,098. Terry Gilpin was elected vice president in the same election, beating Bob Van Corbach 1,516 to 1,206. Total turnout was 2,894 votes, about 34 percent of the roughly 8,500-student enrollment - a turnout the Herald's coverage of the result treated as a persistent problem, running an editorial in the same issue headed 'Elections Illustrate Faults, Indifference'.",
+      "A year later, the Herald's 8 May 1969 issue carried Straeffer and Gilpin's own review of their year in office, headlined 'Associated Students Produces Year of Advancement,' alongside a companion piece, 'Bill Straeffer, Terry Gilpin Review Their Year with Associated Students.' The archive does not yet hold the article text itself, only its headline and byline (Ellen Bennett), so the specifics of what the administration counted as advancement are not yet confirmed."
      ]
     },
     {
@@ -171,12 +193,71 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Two-year plate reading 1968-70, immediately after William Menser took the first student regent seat in April 1968. Almost certainly the second student regent. Early student regents were non-voting 'associate regents', which may explain the longer term. Not yet confirmed.",
-     "sources": []
+     "note": "Two-year plate reading 1968-70, immediately after William Menser took the first student regent seat in April 1968. Almost certainly the second student regent. Early student regents were non-voting 'associate regents', which may explain the longer term. Not yet confirmed as regent. A Paul Gerard did appear on the same 2 May 1968 ballot that elected Straeffer, winning the Junior Class presidency 461 votes to Mike Collins' 277 - circumstantially consistent (a junior in spring 1968 would be positioned for a campus-wide office the next year) but not proof of identity or of the regent seat specifically. Two people can share a name; this is flagged, not merged.",
+     "sources": [
+      {
+       "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+      }
+     ]
     }
    ],
-   "events": [],
-   "status": "empty"
+   "events": [
+    {
+     "date": "1968-04-29",
+     "title": "Straeffer and Whitley vie for the presidency",
+     "body": "The Herald's pre-election coverage set out the field: Bill Straeffer against Charles Whitley for president, Terry Gilpin against Bob Van Corbach for vice president, and contested races down to secretary, treasurer, and congressman at large.",
+     "src": {
+      "label": "Herald 47:28, 29 Apr 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9012"
+     }
+    },
+    {
+     "date": "1968-05-02",
+     "title": "Straeffer elected president, 1,732 to 1,098; turnout 34 percent",
+     "body": "The Associated Students' internal election-results memo lists the full slate: Bill Straeffer over Charles Whitley for president, Terry Gilpin over Bob Van Corbach for vice president, Becky Cooper over Mary Miller for secretary, Tonii Rizzo over John Combs for treasurer, and John Cobelli and Janie Heathcoat elected congressmen at large over Billy Goodman and Scott Phillips. Total turnout was 2,894 votes, about 34 percent of enrollment.",
+     "src": {
+      "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543",
+      "file": "1968-69-election-results-memo.pdf"
+     }
+    },
+    {
+     "date": "1969-05-08",
+     "title": "Straeffer and Gilpin review their year",
+     "body": "The Herald ran the outgoing administration's own account of its year under the headline 'Associated Students Produces Year of Advancement,' alongside a companion piece on Straeffer and Gilpin reviewing their term.",
+     "src": {
+      "label": "Herald 48:28 [29], 8 May 1969",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2109"
+     }
+    }
+   ],
+   "organization": {
+    "executive": [
+     {"office": "President", "name": "Bill Straeffer", "src": {"label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"}},
+     {"office": "Vice President", "name": "Terry Gilpin", "src": {"label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"}},
+     {"office": "Secretary", "name": "Becky Cooper", "src": {"label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"}},
+     {"office": "Treasurer", "name": "Tonii Rizzo", "src": {"label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"}},
+     {"office": "Congressman at large", "name": "John Cobelli", "src": {"label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"}},
+     {"office": "Congressman at large", "name": "Janie Heathcoat", "src": {"label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"}}
+    ],
+    "note": "Officer slate and vote counts from the Associated Students' own internal results memo to President Kelly Thompson, 3 May 1968."
+   },
+   "documents": [
+    {
+     "file": "1968-69-election-results-memo.pdf",
+     "title": "Associated Students election results memo, 3 May 1968",
+     "summary": "Vice President Ron Beck's memo to President Kelly Thompson reporting the full results of the 2 May 1968 Associated Students and class elections, office by office with vote counts.",
+     "extract": "Total number of voters was 2,894 - approximately 34 percent of 8,500.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+     }
+    }
+   ],
+   "status": "researched"
   },
   {
    "id": "1969-70",
@@ -192,11 +273,53 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Second year of the two-year 1968-70 plate; see 1968-69. The plaque names no president at all for 1969-70 - the only year in the whole record with no president plate. Who actually led the body this year is an open research question for the Herald's spring 1969 election coverage.",
+     "note": "Second year of the two-year 1968-70 plate; see 1968-69.",
      "sources": []
+    },
+    {
+     "name": "Larry Zielke",
+     "plaque_term": "1970-71",
+     "role": "president",
+     "year_confidence": "corrected",
+     "name_verified": true,
+     "missing_from_plaque": false,
+     "current": false,
+     "note": "Plaque reads 1970-71, paired with John Lyne. Herald coverage places Zielke's actual term here, in 1969-70: he and Frank Genzianelli 'clash for the presidency' in the 25 March 1969 special election edition, and by 22 May 1969 the Herald reports Zielke and running mate David Porter outlining their incoming administration - the term that would open that fall. Lyne, who lost the companion 'second spot' race to Porter in the same 1969 election, went on to win the presidency unopposed in March 1970 for 1970-71 (see that year). The plaque's 1970-71 pairing of Lyne and Zielke conflates two separate one-year terms.",
+     "sources": [
+      {
+       "label": "Herald 48:23, 25 Mar 1969",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2104"
+      },
+      {
+       "label": "Herald 48:30 [31], 22 May 1969",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111"
+      }
+     ],
+     "profile": [
+      "Zielke won the Associated Students presidency in the 25 March 1969 election, beating Frank Genzianelli. David Porter won the companion vice-presidential race the same day, beating John Lyne - the two men who would face each other for the presidency the following year. By 22 May 1969 the Herald was running Zielke and Porter's own outline of their coming administration, in the same issue that covered President Kelly Thompson's resignation announcement.",
+      "The plaque records this term one year late, under 1970-71 and paired with Lyne - who did not take office until the following spring. What the Zielke-Porter administration did in office beyond the year-opening outline is not yet confirmed from the archive."
+     ]
     }
    ],
    "events": [
+    {
+     "date": "1969-03-25",
+     "title": "Genzianelli and Zielke clash for the presidency",
+     "body": "The Herald's Associated Students election special edition covered a two-way presidential race between Frank Genzianelli and Larry Zielke, and a separate race for the second officer spot between John Lyne and David Porter.",
+     "src": {
+      "label": "Herald 48:23, 25 Mar 1969",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2104"
+     }
+    },
+    {
+     "date": "1969-05-22",
+     "title": "Zielke and Porter outline the coming administration",
+     "body": "With Larry Zielke elected president and David Porter as his second officer, the Herald ran their plans for the 1969-70 Associated Students administration. The same issue covered President Kelly Thompson's resignation announcement.",
+     "src": {
+      "label": "Herald 48:30 [31], 22 May 1969",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111"
+     }
+    },
     {
      "date": "1969-10-07",
      "title": "Associated Student Congress endorses the Vietnam Moratorium",
@@ -223,6 +346,16 @@
       "label": "Herald 49:26, 10 Feb 1970",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4927"
      }
+    },
+    {
+     "date": "1969-05-22",
+     "title": "President Kelly Thompson announces his resignation",
+     "body": "Thompson, who had approved the Associated Students constitution in 1966, announced he would step down as WKU's president. The Herald covered it in the same issue as the incoming Zielke-Porter student administration.",
+     "campus": true,
+     "src": {
+      "label": "Herald 48:30 [31], 22 May 1969",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111"
+     }
     }
    ],
    "status": "researched"
@@ -236,27 +369,43 @@
     {
      "name": "John Lyne",
      "plaque_term": "1970-71",
-     "role": "unresolved",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "role": "president",
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Shares 1970-71 with Larry Zielke.",
-     "sources": []
-    },
-    {
-     "name": "Larry Zielke",
-     "plaque_term": "1970-71",
-     "role": "unresolved",
-     "year_confidence": "stated",
-     "name_verified": false,
-     "missing_from_plaque": false,
-     "current": false,
-     "note": "Shares 1970-71 with John Lyne.",
-     "sources": []
+     "note": "Ran for the Associated Students' second officer spot against David Porter in the 1969 election and lost; won the presidency outright in the 1970 election, unopposed, for the 1970-71 term. The plaque's pairing with Larry Zielke under 1970-71 is wrong - Zielke's term was 1969-70; see that year.",
+     "sources": [
+      {
+       "label": "Herald 49:35, 13 Mar 1970 - \"John Lyne Wins Presidency Before Race Begins\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4936"
+      }
+     ],
+     "profile": [
+      "Lyne first ran for Associated Students office in the March 1969 election, contesting the vice-presidential ('second spot') race against David Porter and losing; Porter went on to serve as Larry Zielke's vice president for 1969-70. A year later, no one filed against Lyne for the 1970-71 presidency, and the Herald reported on 13 March 1970 that he had 'won the presidency before the race begins.' Doug Alexander won the vice presidency the same election cycle, beating Steve Tichenor, in a vote held the following week.",
+      "The term began against the backdrop of the Kent State shootings that May: the Associated Student Congress's October 1970 resolution on the women's curfew ran in a Herald issue whose letters page was dominated by students arguing about Kent State, and the same fall the Board of Regents seated eight students on the Academic Council. What Lyne's administration itself proposed or passed beyond the curfew resolution is not yet confirmed from the archive."
+     ]
     }
    ],
    "events": [
+    {
+     "date": "1970-03-13",
+     "title": "John Lyne wins the presidency before the race begins",
+     "body": "No opponent filed against Lyne for the 1970-71 Associated Students presidency, and the Herald reported him elected without a contest.",
+     "src": {
+      "label": "Herald 49:35, 13 Mar 1970",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4936"
+     }
+    },
+    {
+     "date": "1970-03-27",
+     "title": "Doug Alexander captures the vice presidency",
+     "body": "Alexander beat Steve Tichenor for the Associated Students vice presidency in the vote held the week after Lyne's uncontested presidential win.",
+     "src": {
+      "label": "Herald 49:39, 27 Mar 1970",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4932"
+     }
+    },
     {
      "date": "1970-08-28",
      "title": "Regents seat eight students on the Academic Council",
@@ -276,7 +425,13 @@
      }
     }
    ],
-   "status": "partial"
+   "organization": {
+    "executive": [
+     {"office": "President", "name": "John Lyne", "note": "Unopposed.", "src": {"label": "Herald 49:35, 13 Mar 1970", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4936"}},
+     {"office": "Vice President", "name": "Doug Alexander", "note": "Beat Steve Tichenor.", "src": {"label": "Herald 49:39, 27 Mar 1970", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4932"}}
+    ]
+   },
+   "status": "researched"
   },
   {
    "id": "1971-72",
