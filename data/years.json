@@ -2823,10 +2823,10 @@
      "plaque_term": "2000-01",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
+     "note": "Confirmed against Herald campaign coverage: Rex Hall's series on the Martin-Wright race ran from the candidacy announcement in late March 2000 through an issues debate on the eve of the 13 April 2000 election.",
      "sources": [
       {
        "label": "WKU news release, 14 Apr 2000 (archived)",
@@ -2839,16 +2839,77 @@
       {
        "label": "Herald, 1 Oct 2002",
        "url": "https://wkuherald.com/57669/news/missing-sga-funds-accounted-for/"
+      },
+      {
+       "label": "College Heights Herald 75:47, 28 Mar 2000",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8109/"
+      },
+      {
+       "label": "College Heights Herald 75:52, 13 Apr 2000",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8114/"
+      },
+      {
+       "label": "College Heights Herald 75:39, 17 Feb 2000",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8101/"
+      },
+      {
+       "label": "College Heights Herald 75:43, 2 Mar 2000",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8105/"
       }
      ],
      "profile": [
-      "Cassie Martin, a junior from Glasgow, was elected SGA president in April 2000 to lead the association for 2000-2001. With running mate Leslie Bedo, she defeated the ticket of Duan Wright and Dwight Campbell by 654 votes to 541, and the win also made her the student representative on Western's Board of Regents.",
+      "Cassie Martin, a junior from Glasgow, was elected SGA president in April 2000 to lead the association for 2000-2001. With running mate Leslie Bedo, she defeated the ticket of Duan Wright and Dwight Campbell by 654 votes to 541, and the win also made her the student representative on Western's Board of Regents. The race followed weeks of Herald coverage of proposed SGA election-code reforms meant to close loopholes and set spending limits, and the Martin-Wright contest itself was covered from the candidacy announcement in late March through a pre-election issues debate.",
       "Her most visible stand of the year came at the Board of Regents meeting on October 27, 2000, when the board voted 8-2 to raise the student athletic fee by $80 in two installments. Martin was one of only two dissenters, alongside Faculty Regent Mary Ellen Miller. She said she understood the need for the additional funding but questioned the timing and the amount, and disagreed with raising student fees in the middle of an academic year.",
       "SGA's congress in 2001 passed legislation putting $13,000 toward a campus gazebo that was never built. In October 2002 the Herald reported that the money had mistakenly gone back into SGA's general fund and been spent on other things, including computers, and SGA's finance vice president said leaders from the past two years, including former presidents Martin and Leslie Bedo, were all partly responsible for not properly earmarking it."
      ]
     }
    ],
    "events": [
+    {
+     "date": "2000-02-17",
+     "title": "SGA proposed election code rewrite to close loopholes",
+     "body": "The Herald reported on new Student Government Association election codes intended to close loopholes in how campaigns were run, ahead of the spring 2000 officer elections that Cassie Martin and Leslie Bedo would go on to win.",
+     "src": {
+      "label": "College Heights Herald 75:39, 17 Feb 2000",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8101/"
+     }
+    },
+    {
+     "date": "2000-03-02",
+     "title": "Insurance dispute put SGA \"on edge\"",
+     "body": "The Herald ran a story headlined \"Insurance Puts Student Government Association on Edge,\" in the same issue that covered the ongoing debate over the association's new election codes.",
+     "src": {
+      "label": "College Heights Herald 75:43, 2 Mar 2000",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8105/"
+     }
+    },
+    {
+     "date": "2000-03-02",
+     "title": "Election-code debate turned to fairness and spending limits",
+     "body": "The Herald reported that SGA's proposed election codes were meant to ensure fairness between candidates and set campaign spending limits, continuing coverage begun two weeks earlier of loopholes in the existing rules.",
+     "src": {
+      "label": "College Heights Herald 75:43, 2 Mar 2000",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8105/"
+     }
+    },
+    {
+     "date": "2000-03-28",
+     "title": "Martin and Wright set to battle for SGA presidency",
+     "body": "The Herald reported that Cassie Martin and Duan Wright would face off for the SGA presidency in the coming spring election, the first coverage of what became the Martin-Bedo versus Wright-Campbell race.",
+     "src": {
+      "label": "College Heights Herald 75:47, 28 Mar 2000",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8109/"
+     }
+    },
+    {
+     "date": "2000-04-13",
+     "title": "Martin and Wright discussed the issues on the eve of the vote",
+     "body": "The day before the election, the Herald ran a piece by Rex Hall in which presidential candidates Cassie Martin and Duan Wright discussed the issues facing the campaign.",
+     "src": {
+      "label": "College Heights Herald 75:52, 13 Apr 2000",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8114/"
+     }
+    },
     {
      "date": "2000-04-14",
      "title": "Martin-Bedo ticket won SGA presidency",
@@ -3657,7 +3718,7 @@
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Single-year plate and the only name attached to 2006 because Watkins resigned partway through the 2006-07 term; no plate covers the full year. Confirmed against Herald election coverage: a Bowling Green senior, he won the SGA presidency in the 13 April 2006 online election, defeating Berea junior Kara Ratliff. He had been elected the first speaker of the senate under the new constitution on 15 April 2004, a result contested 9-8 and then upheld. He resigned as president and student regent on 30 November 2006.",
+     "note": "Single-year plate and the only name attached to 2006 because Watkins resigned partway through the 2006-07 term; no plate covers the full year. Confirmed against Herald election coverage: a Bowling Green senior, he won the SGA presidency in the 13 April 2006 online election, defeating Berea junior Kara Ratliff. He had been elected the first speaker of the senate under the new constitution on 15 April 2004, a result contested 9-8 and then upheld. He resigned as president and student regent on 28 November 2006, per SGA's own senate minutes for that day's regularly scheduled Tuesday meeting, which record the resignation being read into the record; this site previously followed a Herald account giving the date as 30 November, which this run corrects against the primary minutes.",
      "sources": [
       {
        "label": "Herald - SGA drama settled, Apr 2013",
@@ -3679,7 +3740,7 @@
      "profile": [
       "Robert \"Rob\" Watkins, a Bowling Green student, wrote the SGA constitution adopted in 2004 and was elected the first speaker of the senate under it on 15 April 2004, defeating Brittany Fausey 9 votes to 8 in a result immediately contested over what quorum the new constitution required; the vote was upheld later that month.",
       "Watkins won the SGA presidency in the 13 April 2006 online election, defeating Berea junior Kara Ratliff after more than a week courting TopNet voters, with results announced at a crowded Revolution 91.7. He took office for 2006-07 alongside Administrative Vice President Amanda Allen, who by October was tightening the budget after the prior administration left roughly $24,000 unspent.",
-      "Watkins resigned as SGA president and student regent at 5 p.m. on 30 November 2006, announcing the decision publicly at a called 10 p.m. meeting the same night, after senators aired concerns about him at an unannounced 10 p.m. meeting the evening before. A Herald editorial the same week was headlined \"SGA actions an embarrassment to Western.\" The resignation left students without a voting voice on the Board of Regents for at least a month and put junior Jeanne Johnson in as a fill-in leader for the rest of the term."
+      "Watkins resigned as SGA president and student regent on 28 November 2006, with the resignation read into the senate's own minutes at that day's regularly scheduled Tuesday meeting, after senators had aired concerns about him at an unannounced 10 p.m. meeting the evening before. (A Herald account this site had followed gave the date as 30 November; the primary senate minutes are treated as authoritative here.) A Herald editorial the same week was headlined \"SGA actions an embarrassment to Western.\" The resignation left students without a voting voice on the Board of Regents for at least a month and put junior Jeanne Johnson in as a fill-in leader for the rest of the term, sworn in at the 5 December Winter Banquet."
      ]
     }
    ],
@@ -3694,12 +3755,13 @@
      }
     },
     {
-     "date": "2006-11-30",
+     "date": "2006-11-28",
      "title": "Watkins resigned as SGA president and student regent",
-     "body": "Rob Watkins resigned as SGA president and student regent at 5 p.m. that Tuesday and publicly announced the decision at a called meeting at 10 p.m., leaving students without representation on Western's governing board for at least a month. Senators had voiced their concerns at a 10 p.m. Monday meeting that was unannounced to the public and to Watkins himself. A Herald editorial the same day was headlined 'SGA actions an embarrassment to Western.'",
+     "body": "SGA's own senate minutes record that president and student regent Rob Watkins's resignation was formally read into the meeting at the senate's regularly scheduled Tuesday session, with senators told Jeanne Johnson would be sworn in as president at the Dec. 5 Winter Banquet. Senators had voiced concerns about Watkins at an unannounced 10 p.m. meeting the evening before. A Herald front-page account (Wayback, 2 Dec 2006) covered the same resignation but gave the date as 30 November; this entry follows the primary senate minutes, which date the reading of the resignation to 28 November, leaving students without representation on Western's governing board for at least a month.",
      "src": {
-      "label": "Herald front page, 2 Dec 2006 (Wayback)",
-      "url": "http://web.archive.org/web/20061202010533/http://wkuherald.com/"
+      "label": "SGA Senate minutes, 28 Nov 2006 (TopSCHOLAR)",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717",
+      "file": "2006-07-sga-minutes-28-nov-2006.pdf"
      }
     },
     {
@@ -3755,6 +3817,41 @@
       "label": "Herald front page, 3 Feb 2007 (Wayback)",
       "url": "http://web.archive.org/web/20070203063949/http://wkuherald.com/"
      }
+    },
+    {
+     "date": "2006-11-28",
+     "title": "Senate passed Books for Africa bill and a printing-quota resolution",
+     "body": "At the same Nov. 28 meeting where Watkins's resignation was read into the record, the senate unanimously passed Bill 11-06-F, sponsored by Lucas Humble, to collect textbooks the university bookstore would not buy back and send them to Africa. Senators also unanimously passed Resolution 08-06-F, sponsored by Seth Norman, backing a university study of a computer-lab printing quota after administrators told SGA's Student Affairs committee how many pages some students were printing.",
+     "src": {
+      "label": "SGA Senate minutes, 28 Nov 2006 (TopSCHOLAR)",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717",
+      "file": "2006-07-sga-minutes-28-nov-2006.pdf"
+     }
+    },
+    {
+     "date": "2006-11-28",
+     "title": "Senate heard Douglas Keen Hall was next for renovation",
+     "body": "In a University Committees report to the senate, a member reported that the Student Life Foundation had discussed campus housing renovations and that Douglas Keen Hall would be the next residence hall to be renovated, within about three years. The same report covered a Budget Council discussion of rolling several student organizations' budgets, including SGA's, into the university's base budget.",
+     "src": {
+      "label": "SGA Senate minutes, 28 Nov 2006 (TopSCHOLAR)",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717",
+      "file": "2006-07-sga-minutes-28-nov-2006.pdf"
+     },
+     "campus": true
+    }
+   ],
+   "documents": [
+    {
+     "file": "2006-07-sga-minutes-28-nov-2006.pdf",
+     "title": "SGA Senate minutes, 28 November 2006",
+     "summary": "Minutes of the twelfth meeting of that senate, called to order with 22 of 31 senators present. President Robert Watkins's resignation was read into the record, with senators told Jeanne Johnson would be sworn in as president at the Dec. 5 Winter Banquet. The senate also passed a bill and a resolution, heard committee reports, and voted on semester awards.",
+     "extract": "President Robert S. Watkins \"formally resigned from office.\"",
+     "sga_pages": "1-3",
+     "page": 1,
+     "src": {
+      "label": "SGA Senate minutes, 28 Nov 2006, TopSCHOLAR",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717"
+     }
     }
    ],
    "organization": {
@@ -3762,7 +3859,7 @@
      {
       "office": "President",
       "name": "Robert Watkins",
-      "note": "Resigned 30 Nov 2006.",
+      "note": "Resigned 28 Nov 2006, per SGA's own senate minutes; earlier Herald coverage this site had followed gave 30 Nov.",
       "src": {
        "label": "College Heights Herald 81:42, 13 Apr 2006",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3692/"
@@ -3776,10 +3873,46 @@
        "label": "Herald, 24 Oct 2006 (Wayback)",
        "url": "http://web.archive.org/web/20071215135957/http://media.www.wkuherald.com/media/storage/paper603/news/2006/10/24/News/Sga-To.Improve.Spending.Habits-2383879.shtml"
       }
+     },
+     {
+      "office": "President Pro Tempore",
+      "name": "Jeanne Johnson",
+      "note": "Presided in this capacity at the 28 Nov. 2006 meeting, before her formal swearing-in as president at the 5 Dec. 2006 Winter Banquet.",
+      "src": {
+       "label": "SGA Senate minutes, 28 Nov 2006, TopSCHOLAR",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717"
+      }
      }
     ],
     "senate": {
-     "note": "Jeanne Johnson served as a fill-in leader after Watkins' resignation and was elected president in her own right for 2007-08 at the May 2007 banquet."
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Johnathon Boles",
+       "src": {
+        "label": "SGA Senate minutes, 28 Nov 2006, TopSCHOLAR",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717"
+       }
+      },
+      {
+       "office": "Secretary of the Senate",
+       "name": "Cherieth Lea Lineweaver",
+       "src": {
+        "label": "SGA Senate minutes, 28 Nov 2006, TopSCHOLAR",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717"
+       }
+      }
+     ],
+     "size": 31,
+     "committees": [
+      {"name": "Academic Affairs", "chair": "Lucas Humble"},
+      {"name": "Campus Improvements", "chair": "Tori Theiss", "note": "Theiss stepped down as chair in late Nov. 2006 for another leadership position."},
+      {"name": "Legislative Research Committee", "chair": "Kendrick Bryan", "note": "Acting as vice-chair at the 28 Nov. 2006 meeting."},
+      {"name": "Public Relations", "chair": "Jonathan Sprowles", "note": "Director of Public Relations."},
+      {"name": "Professor Accountability", "chair": "Earlene Whitaker"},
+      {"name": "Student Affairs", "chair": "Kayla Shelton"}
+     ],
+     "note": "Jeanne Johnson served as a fill-in leader after Watkins' resignation and was elected president in her own right for 2007-08 at the May 2007 banquet. Senate size, officers and committee chairs per the 28 Nov. 2006 meeting minutes; 22 of 31 senators were present that night."
     }
    },
    "status": "researched"
