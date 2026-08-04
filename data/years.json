@@ -2517,10 +2517,10 @@
      "plaque_term": "1982-83",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
+     "note": "Confirmed by her own byline in the Herald, 3 Feb 1983 ('Ragan, Margaret. Associated Student Government, Student Regent Position Separate'), plus the primary and election-night headlines in the same spring.",
      "sources": [
       {
        "label": "Herald 57:53, 8 Apr 1982",
@@ -2545,13 +2545,12 @@
    "events": [
     {
      "date": "1983-02-03",
-     "title": "Ragan: ASG presidency and student regent are separate jobs",
-     "body": "President Margaret Ragan wrote in the Herald that the Associated Student Government presidency and the student regent position were separate. The distinction reflected the 1982 change that made the student regent directly elected by the student body.",
+     "title": "ASG floats a shuttle service, and Ragan explains the split with the regent seat",
+     "body": "The same issue that carried President Margaret Ragan's Herald piece explaining that the ASG presidency and student regent seat were now separate positions also reported ASG was considering a shuttle service, the proposal put to a student vote the following week.",
      "src": {
       "label": "Herald 58:38, 3 Feb 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2339"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1983-02-10",
@@ -2560,8 +2559,7 @@
      "src": {
       "label": "Herald 58:40, 10 Feb 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2341"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1983-03-17",
@@ -2570,8 +2568,7 @@
      "src": {
       "label": "Herald 58:47, 17 Mar 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2348"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1983-04-07",
@@ -2580,8 +2577,7 @@
      "src": {
       "label": "Herald 58:53, 7 Apr 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2354"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1983-04-14",
@@ -2590,8 +2586,7 @@
      "src": {
       "label": "Herald 58:55, 14 Apr 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2356"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1983-04-28",
@@ -2600,8 +2595,7 @@
      "src": {
       "label": "Herald 58:59, 28 Apr 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2360"
-     },
-     "campus": true
+     }
     }
    ],
    "status": "researched"
@@ -2617,10 +2611,10 @@
      "plaque_term": "1983-85",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Two-year plate. Either re-elected or the plaque compresses two terms.",
+     "note": "Two-year plate. Confirmed by name in Herald headlines across his whole term, from the April 1983 win through the April 1985 retrospective on his presidency ending.",
      "sources": [
       {
        "label": "Herald 58:49, 24 Mar 1983",
@@ -2633,12 +2627,17 @@
       {
        "label": "Herald 59:51, 10 Apr 1984",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5900"
+      },
+      {
+       "label": "Herald 60:51, 11 Apr 1985",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5712"
       }
      ],
      "profile": [
       "Jack Smith first ran for the Associated Student Government presidency in spring 1982, drawing repeated endorsement letters in the Herald, and though Margaret Ragan won that race, Smith and Lonnie Sears took awards as the year closed. He returned as a candidate in March 1983, when 68 students filed for ASG positions and his supporters again filled the letters pages.",
       "Smith won the presidency of the Associated Student Government in the April 12, 1983 election, in which students also approved constitutional revisions. His victory came after roughly 500 students had voted in the primary the week before.",
-      "His presidency was colorful and contentious: the fall brought a discount card controversy, letters accusing him of partying while committees waited and others defending him, and a December cartoon that he wrote in to protest. In April 1984 the Herald caught him impersonating a bunny as his ASG ran a low-turnout poll on beer and a campus pub."
+      "His presidency was colorful and contentious: the fall brought a discount card controversy, letters accusing him of partying while committees waited and others defending him, and a December cartoon that he wrote in to protest. In April 1984 the Herald caught him impersonating a bunny as his ASG ran a low-turnout poll on beer and a campus pub.",
+      "Smith's plaque term runs two years, 1983-85, and the Herald's own account of his exit backs that up: its April 11, 1985 issue reported him ending his term as ASG president in an article headlined 'Jack Smith Ends Term as Associated Student Government President,' alongside a companion piece crediting his enthusiasm with reviving interest in the organization."
      ]
     }
    ],
@@ -2650,8 +2649,7 @@
      "src": {
       "label": "Herald 59:1, 23 Aug 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5843"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1983-09-01",
@@ -2660,8 +2658,7 @@
      "src": {
       "label": "Herald 59:4, 1 Sep 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5838"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1983-10-27",
@@ -2670,8 +2667,7 @@
      "src": {
       "label": "Herald 59:19, 27 Oct 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5848"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1983-12-06",
@@ -2680,8 +2676,7 @@
      "src": {
       "label": "Herald 59:27, 6 Dec 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5859"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1984-02-14",
@@ -2690,8 +2685,7 @@
      "src": {
       "label": "Herald 59:38, 14 Feb 1984",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5890"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1984-03-20",
@@ -2700,8 +2694,7 @@
      "src": {
       "label": "Herald 59:45, 20 Mar 1984",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5896"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1984-04-03",
@@ -2710,8 +2703,7 @@
      "src": {
       "label": "Herald 59:49, 3 Apr 1984",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5901"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1984-04-10",
@@ -2720,8 +2712,7 @@
      "src": {
       "label": "Herald 59:51, 10 Apr 1984",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5900"
-     },
-     "campus": true
+     }
     }
    ],
    "status": "researched"
