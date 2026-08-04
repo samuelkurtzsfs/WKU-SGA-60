@@ -3194,6 +3194,15 @@
       "label": "Herald 58:54, 12 Apr 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2355"
      }
+    },
+    {
+     "date": "1983-09-29",
+     "title": "ASG forms grade-scale study group; Smith backs Herald opinion",
+     "body": "Associated Student Government moved to study the university's grade scale, the opening step in a fight over grading policy that ran into the October incomplete-grade proposal. President Jack Smith wrote to the Herald that ASG supported the paper's own opinion on the issue.",
+     "src": {
+      "label": "Herald 59:11, 29 Sep 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5857"
+     }
     }
    ],
    "status": "researched",
@@ -3222,10 +3231,10 @@
      "plaque_term": "1983-85",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Two-year plate. Either re-elected or the plaque compresses two terms.",
+     "note": "Two-year plate. The Herald's April 11, 1985 exit coverage headlined 'Jack Smith Ends Term as Associated Student Government President,' directly naming him as ASG president through the close of the 1984-85 year, alongside the September 1984 and January 1985 coverage of his term's projects. That confirms one continuous two-year term rather than a second election or the plaque compressing separate terms. No separate student regent for 1984-85 turned up in the indexed Herald coverage or the WKU Board of Regents meeting index; the seat's occupant for this year is unconfirmed.",
      "sources": [
       {
        "label": "Herald 60:7, 20 Sep 1984",
@@ -3330,7 +3339,20 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Jack Smith",
+      "src": {
+       "label": "Herald 60:51, 11 Apr 1985",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5712"
+      }
+     }
+    ],
+    "note": "Mitchell McKinney and Chris Watkins won the spring 1985 ASG primary for the next term's top offices; the Herald did not specify which offices they sought. No other 1984-85 ASG officer names surfaced in the indexed Herald coverage."
+   }
   },
   {
    "id": "1985-86",
