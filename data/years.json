@@ -4478,7 +4478,7 @@
      "plaque_term": "2012-13",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
      "note": "",
@@ -4486,9 +4486,25 @@
       {
        "label": "Herald, 30 Mar 2012",
        "url": "https://wkuherald.com/48077/news/dodds-elected-sga-president/"
+      },
+      {
+       "label": "WKU Office of Scholar Development, 2 May 2012",
+       "url": "https://www.wku.edu/osd/news/index.php?view=article&articleid=6481"
+      },
+      {
+       "label": "WKU Office of Scholar Development, 15 Nov 2012",
+       "url": "https://www.wku.edu/osd/news/index.php?view=article&articleid=6473"
+      },
+      {
+       "label": "University of Kentucky J. David Rosenberg College of Law faculty profile",
+       "url": "https://law.uky.edu/people/cory-dodds"
       }
      ],
-     "profile": []
+     "profile": [
+      "Cory Dodds, a junior political science major from Smithland, Kentucky, was elected SGA president for 2012-13 in spring 2012 over Austin Wingate and Corey Johnson, after two years as SGA's director of information technology, during which he built a legislation and minutes archive for the SGA website that he said promoted transparency and accountability. Under the merged offices, Dodds also served as the student regent representing students on WKU's Board of Regents.",
+      "In office, Dodds led SGA in unanimously opposing an administration proposal to shift tuition to a per-credit-hour, bi-term model, which Provost Gordon Emslie dropped in February 2013 after student and faculty pushback. His administration also drafted a teaching assistant evaluation program the senate passed in February 2013, worked to restart a dormant student government at WKU's Glasgow campus, donated cameras to the Teaching and Learning Resource Center, and passed a resolution opposing a new $150 Study Abroad application fee; a Dodds amendment to bar SGA members from receiving SGA-awarded study-abroad scholarships, after 11 of 125 such awards had gone to SGA members that year, failed.",
+      "Dodds's term ended amid a contested succession: his successor, Keyana Boka, was elected in April 2013 but disqualified five days later by the Judicial Council 3-2 over a campaign email, then reinstated after appealing to Vice President for Student Affairs Howard Bailey. Later in 2012 Dodds was named a finalist for the Harry S. Truman Scholarship and, that November, WKU's first finalist for the George J. Mitchell Scholarship, the only Kentuckian among 20 national finalists. He went on to earn a law degree from Georgetown University, worked as directing attorney of the Children's Law Center and as a legal services staff attorney representing low-income clients in public benefits, housing and family law matters, and by the mid-2020s was a visiting professor at the University of Kentucky's J. David Rosenberg College of Law teaching Civil Procedure and Children and the Law, with research on rural \"legal deserts\" and the attorney shortage."
+     ]
     }
    ],
    "events": [
@@ -4566,7 +4582,32 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Cory Dodds",
+      "note": "Also served as student regent under the merged offices.",
+      "src": {
+       "label": "Herald, 30 Mar 2012",
+       "url": "https://wkuherald.com/48077/news/dodds-elected-sga-president/"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Cain Alvey",
+      "note": "Ran unsuccessfully for president in the April 2013 election as outgoing administrative vice president.",
+      "src": {
+       "label": "Herald, 4 Apr 2013",
+       "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"
+      }
+     }
+    ],
+    "senate": {
+     "note": "Nicki Seay chaired the Legislative Research Committee, which drafted the teaching assistant evaluation bill Dodds had campaigned on."
+    }
+   }
   },
   {
    "id": "2013-14",
@@ -5194,7 +5235,7 @@
      "plaque_term": "2017-18",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
      "note": "Took office alongside incoming university president Timothy Caboni, who began 1 July 2017.",
@@ -5210,12 +5251,21 @@
       {
        "label": "Herald, 24 Apr 2018",
        "url": "https://wkuherald.com/24696/news/sga-president-details-harassment-experience/"
+      },
+      {
+       "label": "Bowling Green Daily News, \"Federal judge tosses lawsuit against WKU from former student body president\"",
+       "url": "https://bgdailynews.com/news/federal-judge-tosses-lawsuit-against-wku-from-former-student-body-president/article_fbdc9025-2782-5cb6-b0c7-cbb7daf0b49a.html"
+      },
+      {
+       "label": "Bowling Green Daily News, 3 Feb 2024, \"WKU, ex-SGA president settle lawsuit\"",
+       "url": "https://bgdailynews.com/2024/02/03/wku-ex-sga-president-settle-lawsuit/"
       }
      ],
      "profile": [
       "Andi Dahmer, a Louisville sophomore who had served as a senator and chair of the MyCampusToo committee, was announced as the next student body president shortly after midnight on April 19, 2017, winning 930 of the 1,579 votes cast against Kenan Mujkanovic's 305 and Lily Nellans' 212. Her running mates Savannah Molyneaux and Kara Lowry were elected executive vice president and administrative vice president, and Dahmer entered office already drafting legislation aimed at improving retention, making study abroad more affordable and supporting sensitivity training.",
       "Her year in office was marked by internal division. The senate saw longer debates, more than 15 proposed constitutional amendments compared with about 10 the year before, and an emergency Judicial Council meeting on Jan. 29, with contention peaking around the DACA debates of October and November 2017, when the senate failed a clean DREAM Act resolution before passing a resolution supporting DACA students. Dahmer said the year had become \"almost toxic in nature\" and blamed partisan ideologies brought into what was supposed to be a nonpartisan organization.",
-      "In April 2018 Dahmer told the Herald she had endured months of harassment as president and student regent, including senators cursing at her in the SGA office, a group message thread of eight people called the \"Justice Friends\" that wished her physical harm, and a profane note left on her car on Feb. 9 that prompted a police report. Of the note she said, \"That's when I really started fearing for my life on this campus.\" Her residence hall director reported her case to the Title IX office, which found it did not meet the legal standard for harassment; it was processed instead through the Office of Student Conduct, which issued no-contact orders against two senators, and she did not seek reelection."
+      "In April 2018 Dahmer told the Herald she had endured months of harassment as president and student regent, including senators cursing at her in the SGA office, a group message thread of eight people called the \"Justice Friends\" that wished her physical harm, and a profane note left on her car on Feb. 9 that prompted a police report. Of the note she said, \"That's when I really started fearing for my life on this campus.\" Her residence hall director reported her case to the Title IX office, which found it did not meet the legal standard for harassment; it was processed instead through the Office of Student Conduct, which issued no-contact orders against two senators, and she did not seek reelection.",
+      "In 2018 Dahmer, whose full name is Loandria \"Andi\" Dahmer, sued WKU, university president Timothy Caboni, director of student activities Charley Pride and assistant general counsel and Title IX coordinator Andrea Anderson, alleging sex-based discrimination and harassment by fellow SGA members, negligence by the university in responding to it, and that Caboni retaliated against her by declining to write a letter of recommendation for a Rhodes Scholarship application. U.S. District Judge David Hale granted the defendants summary judgment in March 2021, finding WKU had not been deliberately indifferent and that the incidents were not severe enough to constitute actionable harassment; the Sixth Circuit Court of Appeals partially revived the case in 2022, directing the district court to consider whether student-on-student harassment had occurred before February 2018. The parties settled in January 2024, with WKU's insurance carrier paying Dahmer $10,000 and the university's attorney describing the payment as nominal and made without any admission of wrongdoing."
      ]
     }
    ],
@@ -5273,9 +5323,150 @@
       "label": "Herald, 24 Apr 2018",
       "url": "https://wkuherald.com/24696/news/sga-president-details-harassment-experience/"
      }
+    },
+    {
+     "date": "2018-01-29",
+     "title": "Judicial Council censured PR committee chair over election-discrepancy complaint",
+     "body": "At an emergency meeting, the Judicial Council took up a complaint public relations committee chair Will Hurst had raised at the Jan. 23 senate meeting, alleging the executive board failed its constitutional duty to advertise the fall election and citing a discrepancy in vote totals between constitutional amendments that passed and failed. The council found the executive board had complied with the constitution and issued a censure against Hurst; Dahmer said she was pleased the council had upheld the board's conduct. The censure was confirmed at the Feb. 6 senate meeting.",
+     "src": {
+      "label": "Herald, 29 Jan 2018",
+      "url": "https://wkuherald.com/26444/news/judicial-council-holds-emergency-meeting-to-discuss-election-discrepancies/"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Andi Dahmer",
+      "note": "Also served as student regent under the merged offices.",
+      "src": {
+       "label": "SGA Senate minutes, 12 Sep 2017",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Savannah Molyneaux",
+      "src": {
+       "label": "SGA Senate minutes, 12 Sep 2017",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Kara Lowry",
+      "src": {
+       "label": "SGA Senate minutes, 12 Sep 2017",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Connor Hounshell",
+      "src": {
+       "label": "SGA Senate minutes, 12 Sep 2017",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      }
+     },
+     {
+      "office": "Director of Public Relations",
+      "name": "Amy Wyer",
+      "src": {
+       "label": "SGA Senate minutes, 12 Sep 2017",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      }
+     },
+     {
+      "office": "Director of Academic and Student Affairs",
+      "name": "Emily Houston",
+      "src": {
+       "label": "SGA Senate minutes, 12 Sep 2017",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      }
+     },
+     {
+      "office": "Director of Information Technology",
+      "name": "Smita Peter",
+      "src": {
+       "label": "SGA Senate minutes, 12 Sep 2017",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Ryan Richardson",
+       "src": {
+        "label": "SGA Senate minutes, 12 Sep 2017",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+       }
+      },
+      {
+       "office": "Secretary of the Senate",
+       "name": "Asha McWilliams",
+       "src": {
+        "label": "SGA Senate minutes, 12 Sep 2017",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+       }
+      }
+     ],
+     "size": 36,
+     "committees": [
+      {
+       "name": "Legislative Research",
+       "chair": "Lillian Nellans"
+      },
+      {
+       "name": "Public Relations",
+       "chair": "William Hurst",
+       "note": "Censured by the Judicial Council in January 2018 over an election-discrepancy complaint."
+      },
+      {
+       "name": "Student Affairs",
+       "chair": "Ashley Cox"
+      },
+      {
+       "name": "Diversity and Inclusion (MyCampusToo)",
+       "chair": "Divya Gangavelli"
+      },
+      {
+       "name": "Sustainability",
+       "chair": "Ian Hamilton"
+      }
+     ],
+     "note": "This was the 16th Senate. Under the constitution as amended spring 2017, the Senate was composed of 36 seats: 3 each for senior, junior, sophomore and freshman classes, 2 graduate, 1 ESL international student, 1 Gatton Academy, 6 academic-college, and 14 at-large."
+    }
+   },
+   "documents": [
+    {
+     "file": "2017-18-senate-minutes-09-12-17.pdf",
+     "title": "SGA Senate minutes, 12 September 2017",
+     "summary": "Minutes of the third meeting of the 16th Senate, recording the full 2017-18 executive cabinet, Senate officers and committee chairs under President Andi Dahmer.",
+     "extract": "Full executive cabinet and committee chair roster for the 16th Senate.",
+     "sga_pages": "1-3",
+     "page": 2,
+     "src": {
+      "label": "WKU SGA Senate minutes, 12 Sep 2017",
+      "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+     }
+    },
+    {
+     "file": "2017-18-sga-constitution.pdf",
+     "title": "SGA Constitution, as amended spring 2017",
+     "summary": "The governing constitution in effect for the 2017-18 term, defining the executive branch, the 36-seat Senate, standing committees and the seven-member Judicial Council.",
+     "extract": "Senate composed of 36 seats across class, college, and at-large positions.",
+     "sga_pages": "1-17",
+     "page": 9,
+     "src": {
+      "label": "WKU SGA Constitution, as amended spring 2017",
+      "url": "https://www.wku.edu/sga/wku_sga_constitution_2017-2018.pdf"
+     }
+    }
+   ]
   },
   {
    "id": "2018-19",
