@@ -10,7 +10,7 @@
 <style>
 :root{
  --red:#B01E24; --red-dark:#8A171C; --black:#0B0B0C;
- --ink:#141416; --ink2:#44444B; --ink3:#76767D;
+ --ink:#141416; --ink2:#44444B; --ink3:#6B6B72;
  --paper:#FFFFFF; --paper2:#F6F5F2; --line:#DCD9D3; --line2:#EBE8E3;
  --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
@@ -31,6 +31,7 @@ a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--red-dark)}
 a.ext::after{content:"\00A0\2197";color:var(--ink3);font-size:.82em;text-decoration:none}
 :focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.nav :focus-visible,.board :focus-visible,.foot :focus-visible{outline-color:#FFFFFF}
 .wrap{max-width:1120px;margin:0 auto;padding:0 34px}
 @media(max-width:640px){.wrap{padding:0 18px}}
 .prose{max-width:var(--measure)}

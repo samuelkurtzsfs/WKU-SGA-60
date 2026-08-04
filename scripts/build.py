@@ -94,7 +94,9 @@ def src_link(src, cls=""):
         return h(src.get("label", "")) if src else ""
     out = ext(src["url"], h(src.get("label", src["url"])), cls)
     if src.get("pdf"):
-        out += " " + ext(src["pdf"], "PDF", (cls + " pdf").strip())
+        lbl = src.get("label", "this source")
+        out += (f' <a class="{(cls + " ext pdf").strip()}" href="{h(src["pdf"])}"'
+                f' rel="noopener" aria-label="PDF of {h(lbl)}">PDF</a>')
     return out
 
 
@@ -102,7 +104,7 @@ def src_link(src, cls=""):
 CORE = """
 :root{
  --red:#B01E24; --red-dark:#8A171C; --black:#0B0B0C;
- --ink:#141416; --ink2:#44444B; --ink3:#76767D;
+ --ink:#141416; --ink2:#44444B; --ink3:#6B6B72;
  --paper:#FFFFFF; --paper2:#F6F5F2; --line:#DCD9D3; --line2:#EBE8E3;
  --display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,sans-serif;
  --ui:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,sans-serif;
@@ -123,6 +125,7 @@ a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--red-dark)}
 a.ext::after{content:"\\00A0\\2197";color:var(--ink3);font-size:.82em;text-decoration:none}
 :focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.nav :focus-visible,.board :focus-visible,.foot :focus-visible{outline-color:#FFFFFF}
 .wrap{max-width:1120px;margin:0 auto;padding:0 34px}
 @media(max-width:640px){.wrap{padding:0 18px}}
 .prose{max-width:var(--measure)}
@@ -661,7 +664,7 @@ def render_gallery(y):
     for p in photos:
         credit = f'<span class="credit">{src_link(p["src"])}</span>' if p.get("src") else ""
         figs.append(
-            f'<figure><img src="../photos/{h(p["file"])}" alt="" loading="lazy">'
+            f'<figure><img src="../photos/{h(p["file"])}" alt="{h(p.get("caption","Archive photograph"))[:180]}" loading="lazy">'
             f'<figcaption>{h(p.get("caption", ""))}{credit}</figcaption></figure>')
     n = len(photos)
     return (f'<h2 class="sec">The year in photographs<span class="n">{n}</span></h2>'
@@ -742,8 +745,10 @@ def leg_row(e, up):
     return (f'<div class="lrow" data-t="{h(e["title"].lower())} {h(e["type"])}">'
             f'<span class="lt">{h(e["type"])}{when}</span>'
             f'<span>{h(e["title"])}</span>'
-            f'<span class="ll"><a href="{up}legislation/{h(e["file"])}">Read</a>'
-            f'{ext(e["source_url"], "Original")}</span></div>')
+            f'<span class="ll"><a href="{up}legislation/{h(e["file"])}"'
+            f' aria-label="Read {h(e["title"])}">Read</a>'
+            f'<a class="ext" href="{h(e["source_url"])}" rel="noopener"'
+            f' aria-label="Original record for {h(e["title"])}">Original</a></span></div>')
 
 
 def render_leg_year(leg):
@@ -1989,7 +1994,7 @@ def render_sources(ys, leg, herald, n_docs, n_port, n_gal):
         'Captions misspell names, and a portrait can outlive the term it illustrates: never '
         'let a yearbook caption alone move a name into a year.</p>',
         f'<li>The run on TopSCHOLAR: '
-        f'{ext("https://digitalcommons.wku.edu/talisman/", "digitalcommons.wku.edu/talisman")}.</li>'
+        f'{ext("https://digitalcommons.wku.edu/dlsc_ua_records/", "digitalcommons.wku.edu/talisman")}.</li>'
         f'<li>The same volumes on the Internet Archive: '
         f'{ext("https://archive.org/search?query=talisman+western+kentucky", "archive.org, talisman western kentucky")}. '
         f'Try this first if a TopSCHOLAR download stalls.</li>'
@@ -2090,7 +2095,7 @@ def render_sources(ys, leg, herald, n_docs, n_port, n_gal):
         'headlines, and the wire stories themselves are not held here. Treat national '
         'coverage of a student government as evidence of what was said about SGA, not of '
         'what SGA did.</p>',
-        f'<li>{ext("https://www.bgdailynews.com/search/?q=WKU+student+government", "bgdailynews.com, search WKU student government")}. '
+        f'<li>{ext("https://bgdailynews.com/?s=WKU+student+government", "bgdailynews.com, search WKU student government")}. '
         f'Most of it sits behind a paywall.</li>'
         f'<li>Check any national claim against the <cite>Herald</cite> and against SGA&#8217;s '
         f'own minutes for the same week before it goes into the record.</li>'))
