@@ -5178,7 +5178,7 @@
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Confirmed: president-elect Nick Todd resigned in July 2004 amid a dining-funds investigation; Johnson, the sitting executive vice president, ran unopposed in the September 2004 special election and was sworn in Sept. 23, matching the plaque year.",
+     "note": "Confirmed: president-elect Nick Todd resigned in July 2004 amid a dining-funds investigation; Johnson, the sitting executive vice president, ran unopposed in the September 2004 special election and was sworn in Sept. 23, matching the plaque year. A Board of Regents resolution read into the 22 Jul 2005 minutes confirms she served as the board's student member from August 2004 to July 2005, when Katie Dawson was sworn in to replace her.",
      "sources": [
       {
        "label": "Herald - president-elect under investigation",
@@ -5195,12 +5195,21 @@
       {
        "label": "Herald via Wayback, 28 Sep 2004",
        "url": "https://web.archive.org/web/20050110051728/http://www.wkuherald.com/news/2004/09/28/News/Johnson.Gets.Sworn.In-733425.shtml"
+      },
+      {
+       "label": "WKU Board of Regents minutes, 22 Jul 2005 (TopSCHOLAR)",
+       "url": "https://digitalcommons.wku.edu/bor/2005/qtrly/2"
+      },
+      {
+       "label": "Herald, 20 Apr 2004 - \"SGA President-Elect Under Investigation\" (Wayback)",
+       "url": "https://web.archive.org/web/20210730065202/https://wkuherald.com/55298/news/sga-president-elect-under-investigation/"
       }
      ],
      "profile": [
-      "Patti Johnson, a senior from Marion, had been active in SGA for over three years and served on committees including public relations and athletics before becoming executive vice president in 2003-04. She had not planned to run for president, but after Nick Todd's resignation she entered the September 2004 special election as the only candidate to show interest, saying she stayed on because of \"the turmoil within the organization\" and that she knew \"what it takes to get the job done.\"",
+      "Patti Johnson, a senior from Marion, had been active in SGA for over three years and served on committees including public relations and athletics before becoming executive vice president in 2003-04. Nick Todd, the vice president of finance, was elected president for 2004-05 in March 2004, but before the new officers were sworn in on April 27, SGA's judicial council fielded an allegation that $611 was missing from the SGA Dining Dollars account, an account that had started the year with $5,000. Senator Josh Collins drafted articles of impeachment against Todd's vice presidency, but the judicial council ruled a two-week impeachment process could not finish before he left that office anyway. Johnson had not planned to run for president herself, but after Todd's resignation that July she entered the September 2004 special election as the only candidate to show interest, saying she stayed on because of \"the turmoil within the organization\" and that she knew \"what it takes to get the job done.\"",
       "Johnson ran unopposed for president and student regent in the Sept. 14-15 online election, the group having been without an elected president since July. She said she was disappointed that students would not \"really get to make a decision,\" but still planned light campaigning, and she wanted to continue reviewing the plus/minus grading proposal and to make faculty evaluations available to students.",
-      "Johnson received 1,291 votes in the two-day uncontested election and was sworn in as president at SGA's fall reception on Sept. 23, 2004, one week after her election. She said committees had been formed and members had begun proposing legislation, and she looked forward to being sworn in as student regent at the Oct. 29 Board of Regents meeting, declaring it was \"back to business.\" She served through the year until Katie Dawson was elected to succeed her in the March 2005 spring election."
+      "Johnson received 1,291 votes in the two-day uncontested election and was sworn in as president at SGA's fall reception on Sept. 23, 2004, one week after her election. She said committees had been formed and members had begun proposing legislation, and she looked forward to being sworn in as student regent at the Oct. 29 Board of Regents meeting, declaring it was \"back to business.\" She served through the year until Katie Dawson was elected to succeed her in the March 2005 spring election.",
+      "Johnson served as the Board of Regents' student member from August 2004 to July 2005, a term confirmed by the resolution of appreciation the board read into its July 22, 2005 minutes when Katie Dawson, the executive vice president who had served alongside her all year, was sworn in to replace her. Dawson had come up through the cabinet as Todd's running mate in the original March 2004 election and had acted as interim president during the summer vacancy before Johnson's win."
      ]
     }
    ],
@@ -5295,9 +5304,43 @@
       "url": "https://web.archive.org/web/20050403231039/http://www.wkuherald.com/news/2005/03/31/GoodrumSpecialSection/Not-Guilty-908059.shtml"
      },
      "campus": true
+    },
+    {
+     "date": "2004-04-20",
+     "title": "SGA judicial council fielded impeachment bid against president-elect Todd",
+     "body": "Days before new officers were due to be sworn in on April 27, SGA's judicial council found that $611 was missing from the SGA Aramark Dining Dollars account, which had started the academic year with $5,000 and had about $1,200 left. Senator Josh Collins drafted articles of impeachment against Todd's outgoing vice presidency of finance, but the council ruled a two-week impeachment process could not be completed before he left that office regardless. Only Todd, outgoing president John Bradley and adviser Charley Pride held cards to the account.",
+     "src": {
+      "label": "Herald, 20 Apr 2004 - \"SGA President-Elect Under Investigation\" (Wayback)",
+      "url": "https://web.archive.org/web/20210730065202/https://wkuherald.com/55298/news/sga-president-elect-under-investigation/"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Patti Johnson",
+      "note": "Also held the Board of Regents' student seat from August 2004 to July 2005.",
+      "src": {
+       "label": "WKU Board of Regents minutes, 22 Jul 2005 (TopSCHOLAR)",
+       "url": "https://digitalcommons.wku.edu/bor/2005/qtrly/2"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Katie Dawson",
+      "note": "Elected Todd's running mate in March 2004; acted as interim president during the summer 2004 vacancy and continued as Johnson's EVP through the year before winning the presidency herself for 2005-06.",
+      "src": {
+       "label": "Herald, 24 Aug 2004",
+       "url": "https://wkuherald.com/55173/news/todd-cites-personal-conflicts-in-resignation/"
+      }
+     }
+    ],
+    "senate": {
+     "note": "Senator Josh Collins, who had drafted the spring 2004 impeachment articles against Nick Todd, was still serving that fall when he co-wrote the faculty-evaluation proposal with Troy Ransdell and Morgan Phelps. Senator Katharine Pettit sponsored the spring 2005 Buy-A-Book bill. No senate officer or committee-chair list survives in the sources found so far."
+    }
+   }
   },
   {
    "id": "2005-06",
@@ -5684,10 +5727,10 @@
      "plaque_term": "2007-08",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Overlaps the Johnathon Boles 2008 plate. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage.",
+     "note": "Confirmed against primary Board of Regents records: a resolution read into the 18 Jul 2008 board minutes states she served as the board's student member from 27 Apr 2007 to 18 Jul 2008, and the same minutes record Johnathon Boles taking the oath to replace her that day. Also confirmed in Herald coverage of the 24 Apr 2008 Board of Regents meeting, where she is named 'Student Government Association President Jeanne Johnson.'",
      "sources": [
       {
        "label": "Herald, 13 Sep 2007",
@@ -5700,10 +5743,22 @@
       {
        "label": "Herald, 1 Apr 2008",
        "url": "https://web.archive.org/web/20080411220253/http://media.www.wkuherald.com/media/storage/paper603/news/2008/04/01/News/Student.Government.Aims.To.Increase.Voter.Turnout-3294737.shtml"
+      },
+      {
+       "label": "WKU Board of Regents minutes, 18 Jul 2008 (TopSCHOLAR)",
+       "url": "https://digitalcommons.wku.edu/bor/2008/qtrly/4"
+      },
+      {
+       "label": "Herald 83:51, 29 Apr 2008 - \"Regents approve 9 percent tuition increase, finalize 07-08 budget cuts\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6698/"
       }
      ],
      "profile": [
-      "In the spring, as her administration ran the election to choose her successor, Johnson defended the one-week campaign window written into election codes she said were inherited from past administrations, warning that longer campaigns could hurt candidates' schoolwork and that \"too much PR hurts.\" She pointed to new turnout efforts her administration tried, including holding the debate during SGA week, arranging extra credit for students who attended it, and adding candidate profiles and questionnaires to the SGA website."
+      "Jeanne Lynn Johnson, a Marion senior and Kappa Delta member, had served as SGA's president pro tempore after Rob Watkins's November 2006 resignation and won the February 2007 special election for the vacant student regent seat with 688 votes. She became SGA president and student regent for 2007-08 in her own right, sworn onto the Board of Regents on April 27, 2007, and installed as president at SGA's May 2007 banquet.",
+      "That fall her administration reported record interest in the senate election, 25 candidates for 20 seats, and she and Executive Vice President Johnathon Boles helped organize a mock gubernatorial election that drew 127 student voters. She pushed a senate resolution asking the state for more funding after Western received only 54 percent of its recommended budget increase, and organized Walk Out Western, an Oct. 25 class walkout protesting state budget cuts that President Gary Ransdell said he could not condone.",
+      "As student regent, Johnson voted against the scale of the board's 9 percent tuition increase at the April 24, 2008 quarterly meeting, seconding Louisville regent Larry Zielke's motion to cap the increase at 6 percent and push the General Assembly for more funding instead; the motion died with only two votes. At the same meeting she argued the $370,000 budgeted for the Honors College should be cut, saying the college \"only benefits 900 students\" and other students should not have to pay for it; Ransdell defended it as part of the university's strategic plan.",
+      "In the spring, as her administration ran the election to choose her successor, Johnson defended the one-week campaign window written into election codes she said were inherited from past administrations, warning that longer campaigns could hurt candidates' schoolwork and that \"too much PR hurts.\" She pointed to new turnout efforts her administration tried, including holding the debate during SGA week and adding candidate profiles and questionnaires to the SGA website.",
+      "Johnathon Boles won the March 2008 election and was installed as SGA president at the spring banquet, but Johnson kept the Board of Regents seat until the board's next quarterly meeting; a resolution read there on July 18, 2008 thanked her for \"able leadership, faithful service, and dedication\" and Boles took the oath as student regent the same day."
      ]
     }
    ],
@@ -5807,9 +5862,77 @@
       "url": "https://web.archive.org/web/20080421164710/http://media.www.wkuherald.com/media/storage/paper603/news/2008/04/17/BreakingNews/Ransdell.Announces.9.Percent.Tuition.Increase-3333308.shtml"
      },
      "campus": true
+    },
+    {
+     "date": "2008-04-24",
+     "title": "Student regent Johnson opposed scale of 9 percent tuition increase",
+     "body": "The Board of Regents approved a 9 percent tuition increase for 2008-09 and finalized $2.5 million in cuts to the 2007-08 budget. Louisville regent Larry Zielke moved to cap the increase at 6 percent and push the General Assembly for more funding instead; SGA President and student regent Jeanne Johnson seconded the motion, but it died with only two votes. Johnson also argued the $370,000 budgeted for the Honors College should be reduced, saying the college benefited only 900 students and other students should not have to pay for it.",
+     "src": {
+      "label": "Herald 83:51, 29 Apr 2008 - \"Regents approve 9 percent tuition increase, finalize 07-08 budget cuts\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6698/"
+     }
+    },
+    {
+     "date": "2008-07-18",
+     "title": "Johnson's regent term ended as Boles took the board oath",
+     "body": "The Board of Regents read a resolution thanking Jeanne Johnson for her service as the board's student member from April 27, 2007 to July 18, 2008, calling her term one of \"able leadership, faithful service, and dedication.\" Johnathon Boles, who had already been installed as SGA president that spring, took the oath of office as student regent the same day, formally completing the transition between administrations.",
+     "src": {
+      "label": "WKU Board of Regents minutes, 18 Jul 2008 (TopSCHOLAR)",
+      "url": "https://digitalcommons.wku.edu/bor/2008/qtrly/4",
+      "file": "2007-08-bor-minutes-18-jul-2008.pdf"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Jeanne Johnson",
+      "note": "Also held the Board of Regents' student seat; sworn onto the board 27 Apr 2007 and continued as regent through 18 Jul 2008, past the end of her presidency.",
+      "src": {
+       "label": "WKU Board of Regents minutes, 18 Jul 2008 (TopSCHOLAR)",
+       "url": "https://digitalcommons.wku.edu/bor/2008/qtrly/4"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Johnathon Boles",
+      "note": "Sat on a faculty advisory committee for athletics and arranged the November 2007 consultation with Athletics Director Wood Selig; ran to succeed Johnson as president in the March 2008 election.",
+      "src": {
+       "label": "Herald, 1 Nov 2007 (Wayback)",
+       "url": "https://web.archive.org/web/20071106035708/http://www.wkuherald.com/home/news/2007/11/01/News/Athletics.Director.Consults.Sga.On.Increasing.Football.Attendance-3071116.shtml"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Skylar Jordan",
+      "note": "Laid groundwork for the Listen Up Legislators spring lobbying campaign after the traditional February Frankfort rally alone had not worked.",
+      "src": {
+       "label": "Herald, 15 Nov 2007 (Wayback)",
+       "url": "https://web.archive.org/web/20071212063840/http://www.wkuherald.com/home/news/2007/11/15/News/Sga-Coordinating.Frankfort.Lobbying.Effort-3102675.shtml"
+      }
+     },
+     {
+      "office": "Director of Public Relations",
+      "name": "Liz Goddard",
+      "src": {
+       "label": "Herald, 13 Sep 2007 (Wayback)",
+       "url": "https://web.archive.org/web/20071021062401/http://media.www.wkuherald.com/media/storage/paper603/news/2007/09/13/News/Sga-Election.To.Be.Contested.When.Polls.Open.Wednesday-2966627.shtml"
+      }
+     }
+    ],
+    "senate": {
+     "committees": [
+      {
+       "name": "Academic Affairs",
+       "chair": "Drew Eclov",
+       "note": "Prepared legislation for a roughly $1,995 educational-video subscription, per an October 2007 Herald report."
+      }
+     ],
+     "note": "The fall 2007 senate election drew 25 candidates for 20 open seats, which Johnson called the most applications she had ever seen. The spring 2008 ballot carried three executive seats and 28 senate seats."
+    }
+   }
   },
   {
    "id": "2008-09",
