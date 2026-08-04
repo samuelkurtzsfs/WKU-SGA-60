@@ -47,6 +47,15 @@
      }
     },
     {
+     "date": "1966-04-01",
+     "title": "Thompson's approval letter is addressed to committee chair Reed Morgan",
+     "body": "The archived copy of Thompson's approval letter names the organizing committee that drafted the constitution: Reed Morgan as chair, John Lovett as vice chair. Morgan's committee did the drafting; Jim Haynes was elected to lead the government it created six weeks later.",
+     "src": {
+      "label": "UA3/3/1, Letter to Organizational Committee for a Western Student Organization, 1 Apr 1966",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/527"
+     }
+    },
+    {
      "date": "1966-04-26",
      "title": "Students ratify the constitution, 1,812 to 726",
      "body": "A four-day referendum. 2,538 students voted - a larger raw turnout than most SGA elections have managed since.",
@@ -144,23 +153,36 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Single-year plate. Sits between Menser and Straeffer, whose election the Herald reported on 9 May 1968 - so Morgan likely finished a partial term or held the seat between elections.",
-     "sources": []
+     "note": "Single-year plate. Sits between Menser and Straeffer, whose election the Herald reported on 9 May 1968 - so Morgan likely finished a partial term or held the seat between elections. The only Reed Morgan found in the archive is a different, earlier role: chair of the organizing committee that received President Kelly Thompson's approval letter for the Associated Students constitution, 1 April 1966 - two years before this plaque entry. No Herald or WKU Timeline coverage connects a Reed Morgan to a 1968-69 SGA office. Left unresolved rather than moved, since the 1966 role (committee chair, pre-election) is not the same office the plaque implies.",
+     "sources": [
+      {
+       "label": "UA3/3/1, Letter to Organizational Committee for a Western Student Organization, 1 Apr 1966",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/527"
+      }
+     ]
     },
     {
      "name": "Bill Straeffer",
      "plaque_term": "1968-69",
      "role": "president",
-     "year_confidence": "stated",
+     "year_confidence": "confirmed",
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Election win reported in the Herald, 9 May 1968, in the same issue as an editorial headed 'Elections Illustrate Faults, Indifference'.",
+     "note": "Election win reported in the Herald, 9 May 1968, in the same issue as an editorial headed 'Elections Illustrate Faults, Indifference'. The internal election-results memo (mirrored below) gives his exact margin: 1,732 votes to Charles Whitley's 1,098.",
      "sources": [
       {
        "label": "Herald 47:30, 9 May 1968",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9010"
+      },
+      {
+       "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
       }
+     ],
+     "profile": [
+      "Straeffer ran for the Associated Students presidency against Charles Whitley in the 2 May 1968 election, the organization's second contested presidential race. He won 1,732 votes to Whitley's 1,098. Terry Gilpin was elected vice president in the same election, beating Bob Van Corbach 1,516 to 1,206. Total turnout was 2,894 votes, about 34 percent of the roughly 8,500-student enrollment - a turnout the Herald's coverage of the result treated as a persistent problem, running an editorial in the same issue headed 'Elections Illustrate Faults, Indifference'.",
+      "A year later, the Herald's 8 May 1969 issue carried Straeffer and Gilpin's own review of their year in office, headlined 'Associated Students Produces Year of Advancement,' alongside a companion piece, 'Bill Straeffer, Terry Gilpin Review Their Year with Associated Students.' The archive does not yet hold the article text itself, only its headline and byline (Ellen Bennett), so the specifics of what the administration counted as advancement are not yet confirmed."
      ]
     },
     {
@@ -171,12 +193,113 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Two-year plate reading 1968-70, immediately after William Menser took the first student regent seat in April 1968. Almost certainly the second student regent. Early student regents were non-voting 'associate regents', which may explain the longer term. Not yet confirmed.",
-     "sources": []
+     "note": "Two-year plate reading 1968-70, immediately after William Menser took the first student regent seat in April 1968. Almost certainly the second student regent. Early student regents were non-voting 'associate regents', which may explain the longer term. Not yet confirmed as regent. A Paul Gerard did appear on the same 2 May 1968 ballot that elected Straeffer, winning the Junior Class presidency 461 votes to Mike Collins' 277 - circumstantially consistent (a junior in spring 1968 would be positioned for a campus-wide office the next year) but not proof of identity or of the regent seat specifically. Two people can share a name; this is flagged, not merged.",
+     "sources": [
+      {
+       "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+      }
+     ]
     }
    ],
-   "events": [],
-   "status": "empty"
+   "events": [
+    {
+     "date": "1968-04-29",
+     "title": "Straeffer and Whitley vie for the presidency",
+     "body": "The Herald's pre-election coverage set out the field: Bill Straeffer against Charles Whitley for president, Terry Gilpin against Bob Van Corbach for vice president, and contested races down to secretary, treasurer, and congressman at large.",
+     "src": {
+      "label": "Herald 47:28, 29 Apr 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9012"
+     }
+    },
+    {
+     "date": "1968-05-02",
+     "title": "Straeffer elected president, 1,732 to 1,098; turnout 34 percent",
+     "body": "The Associated Students' internal election-results memo lists the full slate: Bill Straeffer over Charles Whitley for president, Terry Gilpin over Bob Van Corbach for vice president, Becky Cooper over Mary Miller for secretary, Tonii Rizzo over John Combs for treasurer, and John Cobelli and Janie Heathcoat elected congressmen at large over Billy Goodman and Scott Phillips. Total turnout was 2,894 votes, about 34 percent of enrollment.",
+     "src": {
+      "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543",
+      "file": "1968-69-election-results-memo.pdf"
+     }
+    },
+    {
+     "date": "1969-05-08",
+     "title": "Straeffer and Gilpin review their year",
+     "body": "The Herald ran the outgoing administration's own account of its year under the headline 'Associated Students Produces Year of Advancement,' alongside a companion piece on Straeffer and Gilpin reviewing their term.",
+     "src": {
+      "label": "Herald 48:28 [29], 8 May 1969",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2109"
+     }
+    }
+   ],
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Bill Straeffer",
+      "src": {
+       "label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+      }
+     },
+     {
+      "office": "Vice President",
+      "name": "Terry Gilpin",
+      "src": {
+       "label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+      }
+     },
+     {
+      "office": "Secretary",
+      "name": "Becky Cooper",
+      "src": {
+       "label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+      }
+     },
+     {
+      "office": "Treasurer",
+      "name": "Tonii Rizzo",
+      "src": {
+       "label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+      }
+     },
+     {
+      "office": "Congressman at large",
+      "name": "John Cobelli",
+      "src": {
+       "label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+      }
+     },
+     {
+      "office": "Congressman at large",
+      "name": "Janie Heathcoat",
+      "src": {
+       "label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+      }
+     }
+    ],
+    "note": "Officer slate and vote counts from the Associated Students' own internal results memo to President Kelly Thompson, 3 May 1968."
+   },
+   "documents": [
+    {
+     "file": "1968-69-election-results-memo.pdf",
+     "title": "Associated Students election results memo, 3 May 1968",
+     "summary": "Vice President Ron Beck's memo to President Kelly Thompson reporting the full results of the 2 May 1968 Associated Students and class elections, office by office with vote counts.",
+     "extract": "Total number of voters was 2,894 - approximately 34 percent of 8,500.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+     }
+    }
+   ],
+   "status": "researched"
   },
   {
    "id": "1969-70",
@@ -192,11 +315,53 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Second year of the two-year 1968-70 plate; see 1968-69. The plaque names no president at all for 1969-70 - the only year in the whole record with no president plate. Who actually led the body this year is an open research question for the Herald's spring 1969 election coverage.",
+     "note": "Second year of the two-year 1968-70 plate; see 1968-69.",
      "sources": []
+    },
+    {
+     "name": "Larry Zielke",
+     "plaque_term": "1970-71",
+     "role": "president",
+     "year_confidence": "corrected",
+     "name_verified": true,
+     "missing_from_plaque": false,
+     "current": false,
+     "note": "Plaque reads 1970-71, paired with John Lyne. Herald coverage places Zielke's actual term here, in 1969-70: he and Frank Genzianelli 'clash for the presidency' in the 25 March 1969 special election edition, and by 22 May 1969 the Herald reports Zielke and running mate David Porter outlining their incoming administration - the term that would open that fall. Lyne, who lost the companion 'second spot' race to Porter in the same 1969 election, went on to win the presidency unopposed in March 1970 for 1970-71 (see that year). The plaque's 1970-71 pairing of Lyne and Zielke conflates two separate one-year terms.",
+     "sources": [
+      {
+       "label": "Herald 48:23, 25 Mar 1969",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2104"
+      },
+      {
+       "label": "Herald 48:30 [31], 22 May 1969",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111"
+      }
+     ],
+     "profile": [
+      "Zielke won the Associated Students presidency in the 25 March 1969 election, beating Frank Genzianelli. David Porter won the companion vice-presidential race the same day, beating John Lyne - the two men who would face each other for the presidency the following year. By 22 May 1969 the Herald was running Zielke and Porter's own outline of their coming administration, in the same issue that covered President Kelly Thompson's resignation announcement.",
+      "The plaque records this term one year late, under 1970-71 and paired with Lyne - who did not take office until the following spring. What the Zielke-Porter administration did in office beyond the year-opening outline is not yet confirmed from the archive."
+     ]
     }
    ],
    "events": [
+    {
+     "date": "1969-03-25",
+     "title": "Genzianelli and Zielke clash for the presidency",
+     "body": "The Herald's Associated Students election special edition covered a two-way presidential race between Frank Genzianelli and Larry Zielke, and a separate race for the second officer spot between John Lyne and David Porter.",
+     "src": {
+      "label": "Herald 48:23, 25 Mar 1969",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2104"
+     }
+    },
+    {
+     "date": "1969-05-22",
+     "title": "Zielke and Porter outline the coming administration",
+     "body": "With Larry Zielke elected president and David Porter as his second officer, the Herald ran their plans for the 1969-70 Associated Students administration. The same issue covered President Kelly Thompson's resignation announcement.",
+     "src": {
+      "label": "Herald 48:30 [31], 22 May 1969",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111"
+     }
+    },
     {
      "date": "1969-10-07",
      "title": "Associated Student Congress endorses the Vietnam Moratorium",
@@ -223,6 +388,16 @@
       "label": "Herald 49:26, 10 Feb 1970",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4927"
      }
+    },
+    {
+     "date": "1969-05-22",
+     "title": "President Kelly Thompson announces his resignation",
+     "body": "Thompson, who had approved the Associated Students constitution in 1966, announced he would step down as WKU's president. The Herald covered it in the same issue as the incoming Zielke-Porter student administration.",
+     "campus": true,
+     "src": {
+      "label": "Herald 48:30 [31], 22 May 1969",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111"
+     }
     }
    ],
    "status": "researched"
@@ -236,27 +411,43 @@
     {
      "name": "John Lyne",
      "plaque_term": "1970-71",
-     "role": "unresolved",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "role": "president",
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Shares 1970-71 with Larry Zielke.",
-     "sources": []
-    },
-    {
-     "name": "Larry Zielke",
-     "plaque_term": "1970-71",
-     "role": "unresolved",
-     "year_confidence": "stated",
-     "name_verified": false,
-     "missing_from_plaque": false,
-     "current": false,
-     "note": "Shares 1970-71 with John Lyne.",
-     "sources": []
+     "note": "Ran for the Associated Students' second officer spot against David Porter in the 1969 election and lost; won the presidency outright in the 1970 election, unopposed, for the 1970-71 term. The plaque's pairing with Larry Zielke under 1970-71 is wrong - Zielke's term was 1969-70; see that year.",
+     "sources": [
+      {
+       "label": "Herald 49:35, 13 Mar 1970 - \"John Lyne Wins Presidency Before Race Begins\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4936"
+      }
+     ],
+     "profile": [
+      "Lyne first ran for Associated Students office in the March 1969 election, contesting the vice-presidential ('second spot') race against David Porter and losing; Porter went on to serve as Larry Zielke's vice president for 1969-70. A year later, no one filed against Lyne for the 1970-71 presidency, and the Herald reported on 13 March 1970 that he had 'won the presidency before the race begins.' Doug Alexander won the vice presidency the same election cycle, beating Steve Tichenor, in a vote held the following week.",
+      "The term began against the backdrop of the Kent State shootings that May: the Associated Student Congress's October 1970 resolution on the women's curfew ran in a Herald issue whose letters page was dominated by students arguing about Kent State, and the same fall the Board of Regents seated eight students on the Academic Council. What Lyne's administration itself proposed or passed beyond the curfew resolution is not yet confirmed from the archive."
+     ]
     }
    ],
    "events": [
+    {
+     "date": "1970-03-13",
+     "title": "John Lyne wins the presidency before the race begins",
+     "body": "No opponent filed against Lyne for the 1970-71 Associated Students presidency, and the Herald reported him elected without a contest.",
+     "src": {
+      "label": "Herald 49:35, 13 Mar 1970",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4936"
+     }
+    },
+    {
+     "date": "1970-03-27",
+     "title": "Doug Alexander captures the vice presidency",
+     "body": "Alexander beat Steve Tichenor for the Associated Students vice presidency in the vote held the week after Lyne's uncontested presidential win.",
+     "src": {
+      "label": "Herald 49:39, 27 Mar 1970",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4932"
+     }
+    },
     {
      "date": "1970-08-28",
      "title": "Regents seat eight students on the Academic Council",
@@ -276,7 +467,29 @@
      }
     }
    ],
-   "status": "partial"
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "John Lyne",
+      "note": "Unopposed.",
+      "src": {
+       "label": "Herald 49:35, 13 Mar 1970",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4936"
+      }
+     },
+     {
+      "office": "Vice President",
+      "name": "Doug Alexander",
+      "note": "Beat Steve Tichenor.",
+      "src": {
+       "label": "Herald 49:39, 27 Mar 1970",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4932"
+      }
+     }
+    ]
+   },
+   "status": "researched"
   },
   {
    "id": "1971-72",
@@ -1357,6 +1570,24 @@
      }
     },
     {
+     "date": "2000-04-18",
+     "title": "SGA planned to conduct and publish faculty evaluations",
+     "body": "The Herald reported that SGA planned to conduct student evaluations of faculty and publish the results starting in fall 2000, in the same issue that covered the close of the Martin-Bedo campaign. The same issue carried an editorial titled \"Cassie Martin Must Stand Up on Tough Issues,\" urging the incoming president to take firmer positions once in office.",
+     "src": {
+      "label": "College Heights Herald 75:53, 18 Apr 2000",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8115/"
+     }
+    },
+    {
+     "date": "2000-04-20",
+     "title": "Herald reported SGA membership still declining",
+     "body": "The Herald ran a story headlined \"Student Government Association Membership Still Declining,\" tracking a drop in participation as the Martin administration prepared to take office.",
+     "src": {
+      "label": "College Heights Herald 75:54, 20 Apr 2000",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8116/"
+     }
+    },
+    {
      "date": "2001-03-09",
      "title": "WKU took student health service back in-house",
      "body": "WKU announced it would return to self-operation of its campus student health service after its contractor, Collegiate Health Care, notified employees it would be out of business at the end of the day. The university hired the clinic's 17 employees on a temporary basis through the end of the spring semester, and the vice president for Student Affairs promised students would see no reduction in health services.",
@@ -1367,6 +1598,57 @@
      "campus": true
     }
    ],
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Cassie Martin",
+      "note": "Also student regent.",
+      "src": {
+       "label": "WKU news release, 14 Apr 2000 (archived)",
+       "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"
+      }
+     },
+     {
+      "office": "Vice President",
+      "name": "Leslie Bedo",
+      "note": "Martin's running mate on the winning ticket.",
+      "src": {
+       "label": "WKU news release, 14 Apr 2000 (archived)",
+       "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"
+      }
+     },
+     {
+      "office": "Vice President of Finance",
+      "name": "Amy Caswell",
+      "src": {
+       "label": "WKU news release, 14 Apr 2000 (archived)",
+       "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"
+      }
+     },
+     {
+      "office": "Vice President of Administration",
+      "name": "Adam Howard",
+      "note": "Ran unopposed.",
+      "src": {
+       "label": "WKU news release, 14 Apr 2000 (archived)",
+       "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"
+      }
+     },
+     {
+      "office": "Vice President of Public Relations",
+      "name": "Leslie McClard",
+      "note": "Ran unopposed.",
+      "src": {
+       "label": "WKU news release, 14 Apr 2000 (archived)",
+       "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"
+      }
+     }
+    ],
+    "senate": {
+     "note": "Called Congress this year; met weekly on Tuesdays in Downing University Center room 305."
+    }
+   },
    "status": "researched"
   },
   {
@@ -2055,16 +2337,33 @@
      "name": "Robert Watkins",
      "plaque_term": "2006",
      "role": "president",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
+     "year_confidence": "stated",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Single-year plate and the only name attached to 2006. No plate covers a full 2006-07 term. Something happened here. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage. Confirmed: Watkins resigned from SGA in fall 2006, partway through the term, which explains the plaque's single-year plate.",
+     "note": "Single-year plate and the only name attached to 2006 because Watkins resigned partway through the 2006-07 term; no plate covers the full year. Confirmed against Herald election coverage: a Bowling Green senior, he won the SGA presidency in the 13 April 2006 online election, defeating Berea junior Kara Ratliff. He had been elected the first speaker of the senate under the new constitution on 15 April 2004, a result contested 9-8 and then upheld. He resigned as president and student regent on 30 November 2006.",
      "sources": [
       {
        "label": "Herald - SGA drama settled, Apr 2013",
        "url": "https://wkuherald.com/44025/news/sga-drama-settled-what-does-baileys-ruling-mean-for-the-future-of-sga/"
+      },
+      {
+       "label": "College Heights Herald 81:42, 13 Apr 2006 - \"See Rob Run, Win . . . Barely\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3692/"
+      },
+      {
+       "label": "College Heights Herald 79:53, 20 Apr 2004 - \"Robert Watkins Upheld as Speaker\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9387"
+      },
+      {
+       "label": "SGA meeting minutes, 28 Nov 2006 (TopSCHOLAR) - agenda covers Watkins' resignation",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717"
       }
+     ],
+     "profile": [
+      "Robert \"Rob\" Watkins, a Bowling Green student, wrote the SGA constitution adopted in 2004 and was elected the first speaker of the senate under it on 15 April 2004, defeating Brittany Fausey 9 votes to 8 in a result immediately contested over what quorum the new constitution required; the vote was upheld later that month.",
+      "Watkins won the SGA presidency in the 13 April 2006 online election, defeating Berea junior Kara Ratliff after more than a week courting TopNet voters, with results announced at a crowded Revolution 91.7. He took office for 2006-07 alongside Administrative Vice President Amanda Allen, who by October was tightening the budget after the prior administration left roughly $24,000 unspent.",
+      "Watkins resigned as SGA president and student regent at 5 p.m. on 30 November 2006, announcing the decision publicly at a called 10 p.m. meeting the same night, after senators aired concerns about him at an unannounced 10 p.m. meeting the evening before. A Herald editorial the same week was headlined \"SGA actions an embarrassment to Western.\" The resignation left students without a voting voice on the Board of Regents for at least a month and put junior Jeanne Johnson in as a fill-in leader for the rest of the term."
      ]
     }
    ],
@@ -2115,6 +2414,31 @@
      }
     }
    ],
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Robert Watkins",
+      "note": "Resigned 30 Nov 2006.",
+      "src": {
+       "label": "College Heights Herald 81:42, 13 Apr 2006",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3692/"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Amanda Allen",
+      "note": "Received the Charles A. Keown Award at the May 2007 banquet, SGA's highest honor.",
+      "src": {
+       "label": "Herald, 24 Oct 2006 (Wayback)",
+       "url": "http://web.archive.org/web/20071215135957/http://media.www.wkuherald.com/media/storage/paper603/news/2006/10/24/News/Sga-To.Improve.Spending.Habits-2383879.shtml"
+      }
+     }
+    ],
+    "senate": {
+     "note": "Jeanne Johnson served as a fill-in leader after Watkins' resignation and was elected president in her own right for 2007-08 at the May 2007 banquet."
+    }
+   },
    "status": "researched"
   },
   {
@@ -2267,11 +2591,11 @@
      "name": "Johnathon Boles",
      "plaque_term": "2008",
      "role": "president",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
+     "year_confidence": "stated",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Appears in the WKU Archives regents index marked as student regent for 2008. In office for the February 2008 Frankfort rally, after which roughly fifty senators each filed a written reflection - the richest first-person source in the collection. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage. The Herald's 2013 retrospective records that Boles resigned in January 2009.",
+     "note": "Confirmed against Herald election coverage. Boles led the \"Red Towel Party\" ticket - with Theodore Harden, Reagan Gilley, Skylar Johnson, Kayla Shelton and Kevin Smiley also on the March 2008 candidate slate - in the spring 2008 SGA election. After the vote, Skylar Jordan filed a complaint against the Red Towel Party; the SGA council took no action on it on 22 April 2008, letting the result stand. In office for the February 2008 Frankfort rally, after which roughly fifty senators each filed a written reflection - the richest first-person source in the collection. The Herald's 2013 retrospective records that Boles resigned in January 2009.",
      "sources": [
       {
        "label": "TopSCHOLAR - Frankfort rally reflections",
@@ -2292,12 +2616,53 @@
       {
        "label": "Herald, 26 Feb 2009",
        "url": "https://web.archive.org/web/20090228081141/http://media.www.wkuherald.com/media/storage/paper603/news/2009/02/26/News/Gilley.Elected.Student.Regent-3650062.shtml"
+      },
+      {
+       "label": "College Heights Herald 83:42, 27 Mar 2008 - candidate coverage",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6705"
+      },
+      {
+       "label": "College Heights Herald 83:45, 8 Apr 2008 - \"Skylar Jordan Files Complaint Against Red Towel Party\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6703"
+      },
+      {
+       "label": "College Heights Herald 83:49, 22 Apr 2008 - \"Council Decides to Take No Action on Complaint\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6702"
       }
      ],
      "profile": [
-      "Johnathon Boles, a junior from Elizabethtown, served as SGA president and student regent for 2008-09. In November 2008, Gov. Steve Beshear appointed him and fellow SGA member Kevin Smiley to the student committee of the governor's College Access Work Group on college affordability, and Boles traveled to Frankfort for its first meeting, where he raised the burden of textbook costs. \"I'm honored the governor chose me to represent WKU,\" he said.",
+      "Johnathon Boles ran for SGA president in spring 2008 on the \"Red Towel Party\" ticket, a slate that also carried Theodore Harden, Reagan Gilley, Skylar Johnson, Kayla Shelton and Kevin Smiley as candidates for other executive and senate offices. After Boles's ticket won, Skylar Jordan filed a complaint against the Red Towel Party; the SGA council took no action on it on 22 April 2008, and the result stood. Boles, a junior from Elizabethtown, served as SGA president and student regent for 2008-09. In November 2008, Gov. Steve Beshear appointed him and fellow SGA member Kevin Smiley to the student committee of the governor's College Access Work Group on college affordability, and Boles traveled to Frankfort for its first meeting, where he raised the burden of textbook costs. \"I'm honored the governor chose me to represent WKU,\" he said.",
       "In December 2008, Boles led SGA through its first mid-year budget cut, after a state shortfall required the university to trim about 4 percent. He and Administrative Vice President Reagan Gilley cut $4,100 from SGA's $110,000 budget while protecting scholarships and Provide-A-Ride, and Boles addressed the senate about the cuts, saying he would keep fighting for the affordability of higher education. He also worked to arrange charter buses to a Feb. 3 rally in Frankfort against cuts to higher education.",
       "Boles resigned on Jan. 30, 2009, for health reasons, midway through his term. Executive Vice President Kayla Shelton took his place as president but not as student regent, and the student body went 26 days without a regent until Reagan Gilley won a special election on Feb. 25. Gilley said he planned to contact Boles the day after his win to get up to date on Board of Regents business."
+     ]
+    },
+    {
+     "name": "Kayla Shelton",
+     "plaque_term": "2009",
+     "role": "president",
+     "year_confidence": "corrected",
+     "name_verified": true,
+     "missing_from_plaque": false,
+     "current": false,
+     "note": "Plaque plate reads \"2009\" and had been filed under 2009-10, overlapping Kevin Smiley there; moved to 2008-09. Shelton was executive vice president on Johnathon Boles's Red Towel Party ticket and became president - but not student regent - when Boles resigned on 30 Jan 2009, finishing out his 2008-09 term. Kevin Smiley won the next regular election on 16 April 2009 for the 2009-10 term, so Shelton's presidency did not extend into 2009-10.",
+     "sources": [
+      {
+       "label": "Herald, 12 Feb 2009",
+       "url": "https://web.archive.org/web/20090220232842/http://media.www.wkuherald.com/media/storage/paper603/news/2009/02/12/News/Sga-Sets.Date.For.Student.Regent.Election-3626160.shtml"
+      },
+      {
+       "label": "Herald, 26 Feb 2009",
+       "url": "https://web.archive.org/web/20090228081141/http://media.www.wkuherald.com/media/storage/paper603/news/2009/02/26/News/Gilley.Elected.Student.Regent-3650062.shtml"
+      },
+      {
+       "label": "College Heights Herald 83:42, 27 Mar 2008 - candidate coverage naming Shelton on the Red Towel ticket",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6705"
+      }
+     ],
+     "profile": [
+      "Kayla Shelton ran on Johnathon Boles's \"Red Towel Party\" ticket in the spring 2008 SGA election and served as executive vice president for 2008-09. When Boles resigned as president and student regent on 30 Jan. 2009 for health reasons, Shelton succeeded him as president but not as student regent, leaving the regent seat vacant.",
+      "As president, Shelton backed the SGA Judicial Council's 2-1 decision to hold a special student regent election rather than leave the seat vacant, over the dissent of Executive Vice President Skylar Jordan. She also accepted Chief Justice Lisa Kappler's resignation in mid-February, which came with the regent election two weeks away. Administrative Vice President Reagan Gilley won that special election on 25 Feb. 2009, taking over the regent's seat while Shelton continued as president through the rest of the term.",
+      "Shelton did not continue as president into 2009-10; Kevin Smiley won the regular spring election for that term on 16 April 2009."
      ]
     }
    ],
@@ -2366,6 +2731,15 @@
      }
     },
     {
+     "date": "2009-04-16",
+     "title": "Kevin Smiley won the SGA presidential election",
+     "body": "The Herald reported Kevin Smiley's win in the spring SGA presidential election under the headline \"All Smiles, Kevin Smiley Wins Student Government Association Election,\" ending Kayla Shelton's term as the president who had finished out Johnathon Boles's 2008-09 year. Smiley took office as president and student regent for 2009-10.",
+     "src": {
+      "label": "College Heights Herald 84:46, 16 Apr 2009",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6747"
+     }
+    },
+    {
      "date": "2009-04-23",
      "title": "SGA negotiated removal of proposed $30 per-credit-hour fee",
      "body": "SGA and university officials agreed to strike a proposed $30 fee for every credit hour over 15 from the Board of Regents agenda, replacing it with a proposal to raise the add/drop fee from $20 to $50. SGA canceled a planned protest after the compromise, and Student Regent Reagan Gilley called the outcome \"really a win-win for everyone.\"",
@@ -2394,25 +2768,14 @@
    "org": "Student Government Association",
    "leaders": [
     {
-     "name": "Kayla Shelton",
-     "plaque_term": "2009",
-     "role": "president",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
-     "missing_from_plaque": false,
-     "current": false,
-     "note": "Single-year plate; overlaps Kevin Smiley 2009-10. By this period the SGA president automatically held the student regent seat, so a second name in the same year indicates a mid-year succession - a resignation, graduation or removal - not a separately elected regent. Which of the two finished the term is not yet established. An August 2026 open-web sweep found no corroboration of this presidency at all; verify against the digitised Herald before treating the plate as fact.",
-     "sources": []
-    },
-    {
      "name": "Kevin Smiley",
      "plaque_term": "2009-10",
      "role": "president",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
+     "year_confidence": "stated",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "By this period the SGA president automatically held the student regent seat, so a second name in the same year indicates a mid-year succession - a resignation, graduation or removal - not a separately elected regent. Which of the two finished the term is not yet established.",
+     "note": "Confirmed against Herald election coverage: Smiley won the SGA presidential election on 16 April 2009. The plaque's separate \"2009\" plate for Kayla Shelton is not a competing 2009-10 term - Shelton was finishing Johnathon Boles's 2008-09 term after his January 2009 resignation and has been moved to that year. By this period the SGA president automatically held the student regent seat.",
      "sources": [
       {
        "label": "WKU SGA site, 23 Nov 2009 (archived)",
@@ -2425,6 +2788,10 @@
       {
        "label": "Herald, 20 Oct 2009",
        "url": "https://web.archive.org/web/20091024020637/http://www.wkuherald.com/2009/10/20/senators-resign-at-sga-meeting/"
+      },
+      {
+       "label": "College Heights Herald 84:46, 16 Apr 2009 - \"All Smiles, Kevin Smiley Wins Student Government Association Election\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6747"
       }
      ],
      "profile": [
