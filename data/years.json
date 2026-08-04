@@ -2718,6 +2718,15 @@
      }
     },
     {
+     "date": "2013-04-09",
+     "title": "Judicial Council disqualified president-elect Boka, 3-2",
+     "body": "In an emergency meeting, SGA's Judicial Council voted 3-2 to disqualify president-elect Keyana Boka after runner-up and outgoing administrative vice president Cain Alvey complained that a self-promotional email had gone to Honors College students at Boka's request, sent by Honors College graduate assistant Destiny Savage, violating the election code. The disqualification would have made Alvey, who had placed second in the April 4 vote, the incoming president; Boka said she would appeal.",
+     "src": {
+      "label": "Herald, 9 Apr 2013",
+      "url": "https://wkuherald.com/43964/news/boka-disqualifed-in-sga-election/"
+     }
+    },
+    {
      "date": "2013-04-16",
      "title": "Judicial Council declined to contest Bailey's reinstatement of Boka",
      "body": "In an emergency meeting, the Judicial Council unanimously decided not to challenge Bailey's memorandum reinstating Boka, saying it did not believe it had the power to do so, while expressing official disapproval. Chief Justice Seth Church called the intervention \"a serious infringement on our autonomy\" and said it set a bad precedent. Boka said the council had conflicts of interest and needed to be held accountable by a neutral party in the administration.",
@@ -2744,7 +2753,16 @@
      "missing_from_plaque": false,
      "current": false,
      "note": "Appears in the WKU Archives regents index as student regent, 2013. Plaque spells the first name KEYANNA; the archives index reads Boka, Keyana - confirm which is correct.",
-     "sources": []
+     "sources": [
+      {"label": "Herald, 4 Apr 2013", "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"},
+      {"label": "Herald, 9 Apr 2013", "url": "https://wkuherald.com/43964/news/boka-disqualifed-in-sga-election/"},
+      {"label": "Herald, 16 Apr 2013", "url": "https://wkuherald.com/44216/news/sga-decides-not-to-contest-baileys-decision-in-emergency-meeting/"}
+     ],
+     "profile": [
+      "Boka, the outgoing executive vice president, was elected 2013-14 SGA president on 4 April 2013 with 626 votes (47 percent), beating administrative vice president Cain Alvey (419 votes) and Austin Wingate (300). Five days later the Judicial Council voted 3-2 to disqualify her after Alvey, the runner-up who stood to become president if she were removed, complained that a self-promotional email had gone to Honors College students at her request. Boka appealed to Howard Bailey, WKU's vice president for Student Affairs, who reinstated her; the Judicial Council declined to contest his ruling in an emergency meeting on 16 April, with Chief Justice Seth Church calling the intervention \"a serious infringement on our autonomy\" and Boka countering that the council itself had conflicts of interest.",
+      "In office, Boka's fall 2013 senate created a new international student senate seat for Navitas/ESL students and finalized a $125,000 budget, part of which sent her and executive vice president Mark Reeves on a Washington, D.C. higher-education lobbying trip. She fielded student anger over new two-tier priority registration rules at a November open forum with Provost Gordon Emslie, and announced the permanent closure of Thompson Complex North Wing, long slated for demolition. A senate attempt to reverse SGA's support for the Talisman's student fee was struck down by the Judicial Council as unconstitutional, as was the underlying 2005 policy.",
+      "In spring 2014 Boka organized a Frankfort rally against a $1.8 million state budget cut to WKU and opposed a senate amendment stripping the president's sole power to appoint Judicial Council justices, which was sent back to committee after the council found too few senators had been present to pass it. At the year's final meeting she announced a 4.8 percent tuition increase for the coming year, and the senate passed a resolution backing a Good Samaritan policy to protect students who called 911 during drug or alcohol overdoses."
+     ]
     }
    ],
    "events": [
@@ -2822,6 +2840,18 @@
      }
     }
    ],
+   "organization": {
+    "executive": [
+     {"office": "President", "name": "Keyana Boka", "src": {"label": "Herald, 4 Apr 2013", "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"}},
+     {"office": "Executive Vice President", "name": "Mark Reeves", "src": {"label": "Herald, 4 Apr 2013", "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"}},
+     {"office": "Administrative Vice President", "name": "Nicki Seay", "src": {"label": "Herald, 4 Apr 2013", "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"}},
+     {"office": "Chief Justice, Judicial Council", "name": "Seth Church", "src": {"label": "Herald, 16 Apr 2013", "url": "https://wkuherald.com/44216/news/sga-decides-not-to-contest-baileys-decision-in-emergency-meeting/"}}
+    ],
+    "senate": {
+     "size": 26,
+     "note": "Twenty-six student senators were elected in the April 2013 spring election alongside the executive officers."
+    }
+   },
    "status": "researched"
   },
   {
@@ -2831,26 +2861,27 @@
    "org": "Student Government Association",
    "leaders": [
     {
-     "name": "Janet \"Nicki\" Seay",
-     "plaque_term": "2014",
-     "role": "president",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
-     "missing_from_plaque": false,
-     "current": false,
-     "note": "Single-year plate immediately before Nicki Taylor 2014-15. By this period the SGA president automatically held the student regent seat, so a second name in the same year indicates a mid-year succession - a resignation, graduation or removal - not a separately elected regent. Which of the two finished the term is not yet established.",
-     "sources": []
-    },
-    {
      "name": "Nicki Taylor",
      "plaque_term": "2014-15",
      "role": "president",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
+     "year_confidence": "corrected",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "By this period the SGA president automatically held the student regent seat, so a second name in the same year indicates a mid-year succession - a resignation, graduation or removal - not a separately elected regent. Which of the two finished the term is not yet established.",
-     "sources": []
+     "note": "The chambers plaque carries two consecutive plates for this year: \"Janet 'Nicki' Seay\" and \"Nicki Taylor.\" Herald coverage shows one continuous officeholder, not a succession: she opened the year as \"Nicki Seay\" (Herald, 28 Aug and 25 Sep 2014), was already being called \"Nicki Taylor\" by the very next issue on 15 Oct 2014, and was still SGA president under that name through the 2 Apr 2015 election that chose her successor - no election, resignation or hand-off for a second officeholder appears anywhere in that span. Treated here as a single president who changed her surname partway through the term.",
+     "sources": [
+      {"label": "Herald, 28 Aug 2014", "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"},
+      {"label": "Herald, 25 Sep 2014", "url": "https://wkuherald.com/39075/news/sga-announces-fall-election-results-17-senators-elected/"},
+      {"label": "Herald, 15 Oct 2014", "url": "https://wkuherald.com/38655/news/sga-shoots-down-prayer-policy-resolution/"},
+      {"label": "Herald, 14 Dec 2014", "url": "https://wkuherald.com/37829/news/wku-graduates-pursue-lives-beyond-the-hill/"},
+      {"label": "Bowling Green Daily News, 4 Feb 2015", "url": "https://bgdailynews.com/2015/02/04/limited-smoking-ban-could-come-to-wku/"},
+      {"label": "Herald, 2 Apr 2015", "url": "https://wkuherald.com/36521/news/sga-election-results/"}
+     ],
+     "profile": [
+      "Nicki Seay had been SGA's Legislative Research Chair in 2012-13 and ran successfully for administrative vice president in the spring 2013 election. She took office as SGA president in August 2014, a Crofton senior, alongside Administrative Vice President Liz Koehler and Executive Vice President Nolan Miles, and named student involvement, retention and graduation her priorities. Her administration opened the year by expanding SGA's summer and winter need-based scholarship program from $6,000 to $21,000.",
+      "By the middle of October 2014 the Herald was referring to the same sitting president as Nicki Taylor; no election or resignation separates the two names in the paper's coverage. As Taylor, she presided over a fall senate that voted down a nonsectarian prayer resolution, saw its smoke-free campus resolution vetoed by the Executive Cabinet and sustained on a failed override vote, and passed a resolution backing changes to the campus alcohol policy. She addressed WKU's December 2014 commencement as SGA president, telling graduates, \"You have the rest of your life to look forward to.\"",
+      "In the spring semester the senate under Taylor passed a limited-smoking-campus resolution and a resolution backing a $10 million parking garage funded by a new student fee; President Gary Ransdell responded formally to both. She also sat, by virtue of the office, on the WKU Board of Regents, and abstained from an Executive Council vote on the smoking measure because of that seat. Her term ended with the 2 April 2015 election of Jay Todd Richey as her successor."
+     ]
     }
    ],
    "events": [
@@ -2919,6 +2950,24 @@
      }
     },
     {
+     "date": "2014-12-14",
+     "title": "President Taylor addressed December graduates",
+     "body": "SGA President Nicki Taylor spoke at WKU's December commencement, telling graduates to celebrate what they had accomplished: \"You have the rest of your life to look forward to.\" She had opened the year in August under her previous surname, Seay, and was going by Taylor in Herald coverage by mid-October.",
+     "src": {
+      "label": "Herald, 14 Dec 2014",
+      "url": "https://wkuherald.com/37829/news/wku-graduates-pursue-lives-beyond-the-hill/"
+     }
+    },
+    {
+     "date": "2015-02-04",
+     "title": "President Taylor abstained on smoking vote as a sitting regent",
+     "body": "The Bowling Green Daily News reported that Nicki Taylor, in addition to serving as SGA president, sat on the WKU Board of Regents, and abstained from an Executive Council vote on the smoking-campus proposal because of that seat.",
+     "src": {
+      "label": "Bowling Green Daily News, 4 Feb 2015",
+      "url": "https://bgdailynews.com/2015/02/04/limited-smoking-ban-could-come-to-wku/"
+     }
+    },
+    {
      "date": "2015-02-03",
      "title": "Limited smoking campus resolution passed 13-11",
      "body": "SGA passed Resolution 1-15-S, supporting a limited smoking campus, by a 13-11 vote. The resolution would restrict tobacco use to 39 designated areas that the Administrative Council would gradually phase out over three years, while leaving electronic cigarettes and smokeless tobacco unrestricted. Co-author Seth Church said it was roughly the fifth version of the resolution since the smoking debate began the previous semester.",
@@ -2955,6 +3004,17 @@
      }
     }
    ],
+   "organization": {
+    "executive": [
+     {"office": "President", "name": "Nicki Taylor", "note": "Took office in August 2014 as Nicki Seay; called Nicki Taylor in coverage from mid-October 2014 on.", "src": {"label": "Herald, 28 Aug 2014", "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"}},
+     {"office": "Administrative Vice President", "name": "Liz Koehler", "src": {"label": "Herald, 28 Aug 2014", "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"}},
+     {"office": "Executive Vice President", "name": "Nolan Miles", "src": {"label": "Herald, 28 Aug 2014", "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"}},
+     {"office": "Chief of Staff", "name": "Seth Church", "src": {"label": "Herald, 20 Nov 2014", "url": "https://wkuherald.com/38186/news/sga-executive-cabinet-vetoes-smoke-free-resolution/"}}
+    ],
+    "senate": {
+     "note": "17 senators were elected in the September 2014 fall election out of 742 votes cast; the spring 2015 election filled 20 of 34 contested senate seats."
+    }
+   },
    "status": "researched"
   },
   {
