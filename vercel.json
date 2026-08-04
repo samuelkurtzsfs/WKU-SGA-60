@@ -3,6 +3,6 @@
   "buildCommand": "python3 scripts/build.py",
   "outputDirectory": "site",
   "installCommand": "",
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false
 }
