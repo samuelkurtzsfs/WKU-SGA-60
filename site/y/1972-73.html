@@ -141,6 +141,16 @@ h2.sub{font-family:var(--inscribe);font-weight:700;font-size:1.05rem;letter-spac
  text-transform:none;font-family:var(--ui);letter-spacing:0}
 .doc-foot a:hover{background:none;color:var(--red-dark)}
 
+/* ---- complete timeline ---- */
+.hx{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+@media(max-width:640px){.hx{grid-template-columns:1fr;gap:2px}}
+.hx .d{font-family:var(--ui);font-size:12.5px;color:var(--ink3);padding-top:2px;font-weight:600}
+.hx .t{color:var(--ink2)}
+.hx a{margin-left:10px;font-size:.82rem}
+.hyear{font-family:var(--inscribe);font-weight:800;font-size:1.6rem;margin:44px 0 6px;color:var(--ink)}
+.hyear a{font-size:.8rem;font-weight:600;margin-left:14px}
+.hsub{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin:18px 0 4px;font-family:var(--ui)}
+
 /* ---- legislation ---- */
 .lrow{display:grid;grid-template-columns:110px 1fr auto;gap:14px;align-items:baseline;
  padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
