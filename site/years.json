@@ -927,15 +927,86 @@
      "plaque_term": "1990-91",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
-     "sources": []
+     "note": "Elected Associated Student Government president in results the Herald reported on 19 April 1990; the 1991 Talisman independently confirms him as Associated Student Government President for that year.",
+     "sources": [
+      {
+       "label": "1991 Talisman (Western World), \"Sitting In & Speaking Up\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/415/"
+      },
+      {
+       "label": "Herald 65:55, 19 Apr 1990, \"Michael Colvin Aces Associated Student Government Election\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7635/"
+      }
+     ],
+     "profile": [
+      "Michael Colvin won the Associated Student Government presidential election in results the Herald reported on 19 April 1990 under the headline \"Michael Colvin Aces Associated Student Government Election.\" The 1991 Talisman independently lists him as Associated Student Government President for 1990-91.",
+      "In office, the Herald reported ASG considering a four-day class week (7 February 1991) and covered concern inside the organization over a change affecting student insurance (15 January 1991).",
+      "The archive does not preserve further detail of how the term ended or what Colvin did afterward."
+     ]
     }
    ],
-   "events": [],
-   "status": "empty"
+   "events": [
+    {
+     "date": "1990-04-19",
+     "title": "Michael Colvin elected Associated Student Government president",
+     "body": "Colvin won the Associated Student Government's presidential election, the Herald reported under the headline \"Michael Colvin Aces Associated Student Government Election.\"",
+     "src": {
+      "label": "Herald 65:55, 19 Apr 1990",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7635/"
+     }
+    },
+    {
+     "date": "1990-04-19",
+     "title": "ASG pushed for a higher student activity fee",
+     "body": "The same Herald issue that reported Colvin's election win reported the Associated Student Government was seeking an increase to the student activity fee.",
+     "src": {
+      "label": "Herald 65:55, 19 Apr 1990, \"Associated Student Government Wants Activity Fee Raised\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7635/"
+     }
+    },
+    {
+     "date": "1990-05-30",
+     "title": "Regents set the 1990-91 tuition and operating budget",
+     "body": "WKU's Board of Regents met in special session and approved the university's 1990-91 operating budget, tuition rates, and personnel changes ahead of Colvin's term.",
+     "src": {
+      "label": "WKU Board of Regents, special meeting, 30 May 1990",
+      "url": "https://digitalcommons.wku.edu/bor/1990/spcl/3"
+     },
+     "campus": true
+    },
+    {
+     "date": "1991-01-15",
+     "title": "ASG raised concern over an insurance change",
+     "body": "The Herald reported that a change in insurance practice was \"upsetting\" the Associated Student Government; the archive does not preserve further detail of what the change was or how ASG responded.",
+     "src": {
+      "label": "Herald 66:32, 15 Jan 1991, \"Insurance Trend Upsets Associated Student Government\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7740/"
+     }
+    },
+    {
+     "date": "1991-01-15",
+     "title": "Students held a campus vigil as the Gulf War approached",
+     "body": "The same Herald issue covered a campus prayer vigil for peace as the U.N. deadline for Iraq's withdrawal from Kuwait neared, two days before the United States led a coalition into the Gulf War.",
+     "src": {
+      "label": "Herald 66:32, 15 Jan 1991, \"Students Pray for Peace\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7740/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1991-02-07",
+     "title": "ASG looked at a four-day class week",
+     "body": "The Associated Student Government considered the idea of moving to a four-day class week, the Herald reported.",
+     "src": {
+      "label": "Herald 66:39, 7 Feb 1991, \"Associated Student Government Looks at Having Four-Day Class Week\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7735/"
+     }
+    }
+   ],
+   "status": "researched"
   },
   {
    "id": "1991-92",
@@ -984,15 +1055,61 @@
      "plaque_term": "1992-93",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "First president to serve under the SGA name.",
-     "sources": []
+     "note": "First president to serve under the SGA name. Elected 14 April 1992 in a contested race the Herald covered with dueling opinion pieces; took office that autumn once the ASG-to-SGA renaming took effect.",
+     "sources": [
+      {
+       "label": "Herald 67:52, 14 Apr 1992 (election-day issue)",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7706/"
+      },
+      {
+       "label": "Herald 68:27, 10 Dec 1992, \"Joe Rains Says Student Government Association Should Support Student Escort Service\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7802/"
+      },
+      {
+       "label": "WKU University Senate, Resolution R92.11",
+       "url": "https://digitalcommons.wku.edu/univ_senate/leg/res/56"
+      }
+     ],
+     "profile": [
+      "Joe Rains was elected Associated Student Government president on 14 April 1992, a contested race the Herald's election-day issue covered with dueling opinion pieces: an editorial headlined \"Associated Student Government Needs Joe Rains\" ran alongside a cartoon depicting him as Darth Vader, and the paper carried separate profile pieces on candidates Mark Miller, Mistianna Holcomb and Melony Jones. The same ballot carried the referendum that renamed Associated Students as the Student Government Association; Rains took office that autumn as the first president to serve under the new name.",
+      "In office, Rains argued that SGA should support a campus student escort service (Herald, 10 December 1992) and took part in a rally at the state capitol in Frankfort urging the legislature to stop cuts to higher-education funding, for which the WKU University Senate commended him in Resolution R92.11.",
+      "The archive does not preserve further detail of how the term ended."
+     ]
     }
    ],
-   "events": [],
-   "status": "empty"
+   "events": [
+    {
+     "date": "1992-04-14",
+     "title": "Joe Rains elected SGA president as the ASG-to-SGA renaming took effect",
+     "body": "Rains won a contested Associated Student Government presidential election covered by the Herald under the headline \"Associated Student Government Needs Joe Rains,\" alongside a rival editorial cartoon depicting him as Darth Vader and profile pieces on candidates Mark Miller, Mistianna Holcomb and Melony Jones. The same ballot carried the referendum renaming Associated Students as the Student Government Association.",
+     "src": {
+      "label": "Herald 67:52, 14 Apr 1992",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7706/"
+     }
+    },
+    {
+     "date": "1992-12-10",
+     "title": "Rains pushed SGA to back a student escort service",
+     "body": "SGA president Joe Rains argued the organization should support a campus student escort service, the Herald reported.",
+     "src": {
+      "label": "Herald 68:27, 10 Dec 1992",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7802/"
+     }
+    },
+    {
+     "date": "1992-12-11",
+     "title": "University Senate honored Rains for a Frankfort budget-cut rally",
+     "body": "The WKU University Senate adopted Resolution R92.11, commending SGA president Joe Rains for taking part in a rally at the state capitol in Frankfort asking the legislature to stop cuts to higher-education funding. TopSCHOLAR records the resolution's history running from 11 December 1992 to its adoption on 29 January 1993.",
+     "src": {
+      "label": "WKU University Senate, Resolution R92.11",
+      "url": "https://digitalcommons.wku.edu/univ_senate/leg/res/56"
+     }
+    }
+   ],
+   "status": "researched"
   },
   {
    "id": "1993-94",
@@ -2754,9 +2871,18 @@
      "current": false,
      "note": "Appears in the WKU Archives regents index as student regent, 2013. Plaque spells the first name KEYANNA; the archives index reads Boka, Keyana - confirm which is correct.",
      "sources": [
-      {"label": "Herald, 4 Apr 2013", "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"},
-      {"label": "Herald, 9 Apr 2013", "url": "https://wkuherald.com/43964/news/boka-disqualifed-in-sga-election/"},
-      {"label": "Herald, 16 Apr 2013", "url": "https://wkuherald.com/44216/news/sga-decides-not-to-contest-baileys-decision-in-emergency-meeting/"}
+      {
+       "label": "Herald, 4 Apr 2013",
+       "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"
+      },
+      {
+       "label": "Herald, 9 Apr 2013",
+       "url": "https://wkuherald.com/43964/news/boka-disqualifed-in-sga-election/"
+      },
+      {
+       "label": "Herald, 16 Apr 2013",
+       "url": "https://wkuherald.com/44216/news/sga-decides-not-to-contest-baileys-decision-in-emergency-meeting/"
+      }
      ],
      "profile": [
       "Boka, the outgoing executive vice president, was elected 2013-14 SGA president on 4 April 2013 with 626 votes (47 percent), beating administrative vice president Cain Alvey (419 votes) and Austin Wingate (300). Five days later the Judicial Council voted 3-2 to disqualify her after Alvey, the runner-up who stood to become president if she were removed, complained that a self-promotional email had gone to Honors College students at her request. Boka appealed to Howard Bailey, WKU's vice president for Student Affairs, who reinstated her; the Judicial Council declined to contest his ruling in an emergency meeting on 16 April, with Chief Justice Seth Church calling the intervention \"a serious infringement on our autonomy\" and Boka countering that the council itself had conflicts of interest.",
@@ -2842,10 +2968,38 @@
    ],
    "organization": {
     "executive": [
-     {"office": "President", "name": "Keyana Boka", "src": {"label": "Herald, 4 Apr 2013", "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"}},
-     {"office": "Executive Vice President", "name": "Mark Reeves", "src": {"label": "Herald, 4 Apr 2013", "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"}},
-     {"office": "Administrative Vice President", "name": "Nicki Seay", "src": {"label": "Herald, 4 Apr 2013", "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"}},
-     {"office": "Chief Justice, Judicial Council", "name": "Seth Church", "src": {"label": "Herald, 16 Apr 2013", "url": "https://wkuherald.com/44216/news/sga-decides-not-to-contest-baileys-decision-in-emergency-meeting/"}}
+     {
+      "office": "President",
+      "name": "Keyana Boka",
+      "src": {
+       "label": "Herald, 4 Apr 2013",
+       "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Mark Reeves",
+      "src": {
+       "label": "Herald, 4 Apr 2013",
+       "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Nicki Seay",
+      "src": {
+       "label": "Herald, 4 Apr 2013",
+       "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"
+      }
+     },
+     {
+      "office": "Chief Justice, Judicial Council",
+      "name": "Seth Church",
+      "src": {
+       "label": "Herald, 16 Apr 2013",
+       "url": "https://wkuherald.com/44216/news/sga-decides-not-to-contest-baileys-decision-in-emergency-meeting/"
+      }
+     }
     ],
     "senate": {
      "size": 26,
@@ -2870,12 +3024,30 @@
      "current": false,
      "note": "The chambers plaque carries two consecutive plates for this year: \"Janet 'Nicki' Seay\" and \"Nicki Taylor.\" Herald coverage shows one continuous officeholder, not a succession: she opened the year as \"Nicki Seay\" (Herald, 28 Aug and 25 Sep 2014), was already being called \"Nicki Taylor\" by the very next issue on 15 Oct 2014, and was still SGA president under that name through the 2 Apr 2015 election that chose her successor - no election, resignation or hand-off for a second officeholder appears anywhere in that span. Treated here as a single president who changed her surname partway through the term.",
      "sources": [
-      {"label": "Herald, 28 Aug 2014", "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"},
-      {"label": "Herald, 25 Sep 2014", "url": "https://wkuherald.com/39075/news/sga-announces-fall-election-results-17-senators-elected/"},
-      {"label": "Herald, 15 Oct 2014", "url": "https://wkuherald.com/38655/news/sga-shoots-down-prayer-policy-resolution/"},
-      {"label": "Herald, 14 Dec 2014", "url": "https://wkuherald.com/37829/news/wku-graduates-pursue-lives-beyond-the-hill/"},
-      {"label": "Bowling Green Daily News, 4 Feb 2015", "url": "https://bgdailynews.com/2015/02/04/limited-smoking-ban-could-come-to-wku/"},
-      {"label": "Herald, 2 Apr 2015", "url": "https://wkuherald.com/36521/news/sga-election-results/"}
+      {
+       "label": "Herald, 28 Aug 2014",
+       "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"
+      },
+      {
+       "label": "Herald, 25 Sep 2014",
+       "url": "https://wkuherald.com/39075/news/sga-announces-fall-election-results-17-senators-elected/"
+      },
+      {
+       "label": "Herald, 15 Oct 2014",
+       "url": "https://wkuherald.com/38655/news/sga-shoots-down-prayer-policy-resolution/"
+      },
+      {
+       "label": "Herald, 14 Dec 2014",
+       "url": "https://wkuherald.com/37829/news/wku-graduates-pursue-lives-beyond-the-hill/"
+      },
+      {
+       "label": "Bowling Green Daily News, 4 Feb 2015",
+       "url": "https://bgdailynews.com/2015/02/04/limited-smoking-ban-could-come-to-wku/"
+      },
+      {
+       "label": "Herald, 2 Apr 2015",
+       "url": "https://wkuherald.com/36521/news/sga-election-results/"
+      }
      ],
      "profile": [
       "Nicki Seay had been SGA's Legislative Research Chair in 2012-13 and ran successfully for administrative vice president in the spring 2013 election. She took office as SGA president in August 2014, a Crofton senior, alongside Administrative Vice President Liz Koehler and Executive Vice President Nolan Miles, and named student involvement, retention and graduation her priorities. Her administration opened the year by expanding SGA's summer and winter need-based scholarship program from $6,000 to $21,000.",
@@ -3006,10 +3178,39 @@
    ],
    "organization": {
     "executive": [
-     {"office": "President", "name": "Nicki Taylor", "note": "Took office in August 2014 as Nicki Seay; called Nicki Taylor in coverage from mid-October 2014 on.", "src": {"label": "Herald, 28 Aug 2014", "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"}},
-     {"office": "Administrative Vice President", "name": "Liz Koehler", "src": {"label": "Herald, 28 Aug 2014", "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"}},
-     {"office": "Executive Vice President", "name": "Nolan Miles", "src": {"label": "Herald, 28 Aug 2014", "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"}},
-     {"office": "Chief of Staff", "name": "Seth Church", "src": {"label": "Herald, 20 Nov 2014", "url": "https://wkuherald.com/38186/news/sga-executive-cabinet-vetoes-smoke-free-resolution/"}}
+     {
+      "office": "President",
+      "name": "Nicki Taylor",
+      "note": "Took office in August 2014 as Nicki Seay; called Nicki Taylor in coverage from mid-October 2014 on.",
+      "src": {
+       "label": "Herald, 28 Aug 2014",
+       "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Liz Koehler",
+      "src": {
+       "label": "Herald, 28 Aug 2014",
+       "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Nolan Miles",
+      "src": {
+       "label": "Herald, 28 Aug 2014",
+       "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Seth Church",
+      "src": {
+       "label": "Herald, 20 Nov 2014",
+       "url": "https://wkuherald.com/38186/news/sga-executive-cabinet-vetoes-smoke-free-resolution/"
+      }
+     }
     ],
     "senate": {
      "note": "17 senators were elected in the September 2014 fall election out of 742 votes cast; the spring 2015 election filled 20 of 34 contested senate seats."
