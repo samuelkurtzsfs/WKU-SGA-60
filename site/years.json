@@ -1885,11 +1885,25 @@
      "plaque_term": "1980-81",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
-     "sources": []
+     "note": "Herald bylines consistently call him \"Steve Fuller\"; the plaque and this site list \"Steven Fuller\" - spelling unverified.",
+     "sources": [
+      {
+       "label": "Herald 55:51, 10 Apr 1980",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5631"
+      },
+      {
+       "label": "Herald 55:55, 24 Apr 1980",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5627"
+      }
+     ],
+     "profile": [
+      "Steve Fuller entered the April 1980 Associated Student Government presidential race against David Rue and Tim Irons, the Herald reporting the three-way field on April 10.",
+      "Fuller won the presidency in the April 24 election, reported under the headline \"Persistence Pays Off in Steve Fuller Campaign.\" Mark Wilson and Greg Zoeller were elected to other top ASG offices the same day; Tim Irons's loss was covered separately.",
+      "In office, ASG under Fuller proposed a change to the organization's own title in October 1980 and asked the state to evaluate higher education funding in February 1981, as budget worries dominated the legislative session. His successor, Marcel Bush, was elected that April."
+     ]
     }
    ],
    "events": [
@@ -1952,9 +1966,42 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5667"
      },
      "campus": true
+    },
+    {
+     "date": "1980-04-10",
+     "title": "Three seek the ASG presidency",
+     "body": "Steve Fuller, David Rue and Tim Irons entered the race for Associated Student Government president.",
+     "src": {
+      "label": "Herald 55:51, 10 Apr 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5631"
+     },
+     "campus": true
+    },
+    {
+     "date": "1980-04-24",
+     "title": "Fuller elected ASG president",
+     "body": "Steve Fuller won the Associated Student Government presidency over David Rue and Tim Irons. Mark Wilson and Greg Zoeller were elected to other top ASG offices the same day.",
+     "src": {
+      "label": "Herald 55:55, 24 Apr 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5627"
+     },
+     "campus": true
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Steve Fuller",
+      "src": {
+       "label": "Herald 55:55, 24 Apr 1980",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5627"
+      }
+     }
+    ],
+    "note": "Mark Wilson and Greg Zoeller were elected to other top ASG offices in the same April 1980 election; the Herald index does not specify which."
+   }
   },
   {
    "id": "1981-82",
@@ -1966,12 +2013,63 @@
      "name": "Marcell Bush",
      "plaque_term": "1981-82",
      "role": "president",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
-     "sources": []
+     "note": "Herald bylines consistently spell this \"Marcel Bush\" (one L); the plaque and this site list \"Marcell Bush\" - spelling unverified. Resigned the ASG presidency 14 January 1982; David Payne succeeded him for the balance of the term.",
+     "sources": [
+      {
+       "label": "Herald 56:52, 9 Apr 1981",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5661"
+      },
+      {
+       "label": "Herald 57:31, 14 Jan 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2436"
+      }
+     ],
+     "profile": [
+      "Marcel Bush won the Associated Student Government presidency in April 1981, defeating David Sturgeon after a campaign the Herald said saw candidates \"playing big time politics.\" Close races elsewhere on the ballot prompted recounts.",
+      "In office that fall, ASG raised its own campaign spending limit and vetoed a plan to pay an education lobbyist, days after rallying publicly for higher education funding. Bush later listed the fall rally as one achievement of his term.",
+      "Bush resigned the presidency on or shortly before 14 January 1982, reported the same week as the retrospective on his term. David Payne succeeded him; Board of Regents minutes from 30 January 1982 name Payne the new SGA president."
+     ]
+    },
+    {
+     "name": "David Payne",
+     "plaque_term": "1982",
+     "role": "president",
+     "year_confidence": "corrected",
+     "name_verified": true,
+     "missing_from_plaque": false,
+     "current": false,
+     "note": "Plaque reads 1982; this site originally filed him under 1982-83. Board of Regents minutes (30 Jan 1982) and Herald coverage place him as SGA president succeeding Marcel Bush, who resigned 14 Jan 1982, filling the balance of the 1981-82 term. Margaret Ragan, elected president in April 1982, led the separate 1982-83 term - the two are not the same office-year.",
+     "sources": [
+      {
+       "label": "Herald 57:12, 12 Oct 1981",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2414"
+      },
+      {
+       "label": "Herald 57:31, 14 Jan 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2436"
+      },
+      {
+       "label": "WKU Board of Regents minutes, 30 Jan 1982",
+       "url": "https://digitalcommons.wku.edu/bor/1982/mtgs/1"
+      },
+      {
+       "label": "Herald 57:37, 4 Feb 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2443"
+      },
+      {
+       "label": "Herald 57:42, 23 Feb 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2448"
+      }
+     ],
+     "profile": [
+      "David Payne first appears in the indexed record in February 1981 with a Herald letter titled 'Apathy Erased.' By October 1981, before he held the presidency, he was writing on the Associated Student Government's behalf, declaring that ASG was rallying for higher education as budget cuts loomed.",
+      "Payne became ASG's president after Marcel Bush resigned on 14 January 1982; Board of Regents minutes from the January 30 meeting name him the new SGA president. In early February the Herald reported that Payne wanted another adviser for ASG, and its editorial page attacked his judgment, while a report the next week said Payne considered certain resolutions misdirected.",
+      "Later that month, letter writers to the Herald argued that Payne had been made a victim in the affair; the indexed headline does not state what precipitated it. His name does not appear in the indexed headlines of the April 1982 election that chose Margaret Ragan for the 1982-83 term, nor in the 1982-83 issues examined - consistent with his presidency ending with Bush's original term."
+     ]
     }
    ],
    "events": [
@@ -2063,9 +2161,60 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2466"
      },
      "campus": true
+    },
+    {
+     "date": "1982-01-14",
+     "title": "ASG president Marcel Bush resigns",
+     "body": "Associated Student Government president Marcel Bush resigned. The same issue reported him listing the fall's higher-education rally as one achievement of his term.",
+     "src": {
+      "label": "Herald 57:31, 14 Jan 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2436"
+     },
+     "campus": true
+    },
+    {
+     "date": "1982-01-30",
+     "title": "Board of Regents minutes name David Payne the new SGA president",
+     "body": "Minutes of the WKU Board of Regents meeting identified David Payne as the new Student Government Association president, confirming his succession after Marcel Bush's resignation.",
+     "src": {
+      "label": "WKU Board of Regents minutes, 30 Jan 1982",
+      "url": "https://digitalcommons.wku.edu/bor/1982/mtgs/1"
+     }
+    },
+    {
+     "date": "1982-02-04",
+     "title": "Payne asks for a second ASG adviser",
+     "body": "President David Payne said the Associated Student Government wanted another adviser. The Herald's editorial page criticized his judgment the same week.",
+     "src": {
+      "label": "Herald 57:37, 4 Feb 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2443"
+     },
+     "campus": true
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Marcel Bush",
+      "note": "Resigned 14 Jan 1982.",
+      "src": {
+       "label": "Herald 56:52, 9 Apr 1981",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5661"
+      }
+     },
+     {
+      "office": "President",
+      "name": "David Payne",
+      "note": "Succeeded Bush; named in Board of Regents minutes 30 Jan 1982.",
+      "src": {
+       "label": "WKU Board of Regents minutes, 30 Jan 1982",
+       "url": "https://digitalcommons.wku.edu/bor/1982/mtgs/1"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "1982-83",
@@ -2073,35 +2222,6 @@
    "end": 1983,
    "org": "Associated Students",
    "leaders": [
-    {
-     "name": "David Payne",
-     "plaque_term": "1982",
-     "role": "unresolved",
-     "year_confidence": "ambiguous",
-     "name_verified": false,
-     "missing_from_plaque": false,
-     "current": false,
-     "note": "One of three names attached to 1982. Likely a mid-year succession.",
-     "sources": [
-      {
-       "label": "Herald 57:12, 12 Oct 1981",
-       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2414"
-      },
-      {
-       "label": "Herald 57:37, 4 Feb 1982",
-       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2443"
-      },
-      {
-       "label": "Herald 57:42, 23 Feb 1982",
-       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2448"
-      }
-     ],
-     "profile": [
-      "David Payne first appears in the indexed record in February 1981 with a Herald letter titled 'Apathy Erased'. By October 1981 he was writing on the Associated Student Government's behalf, declaring that ASG was rallying for higher education as budget cuts loomed.",
-      "In early February 1982 the Herald reported that Payne wanted another adviser for ASG, and its editorial page attacked his judgment, while a report the next week said Payne considered certain resolutions misdirected. The indexed headlines identify him as ASG's leading spokesman that winter but do not state his office.",
-      "Later that month, letter writers to the Herald argued that Payne had been made a victim in the affair. His name does not appear in the indexed headlines of the spring 1982 election that chose Margaret Ragan, nor in the 1982-83 issues examined."
-     ]
-    },
     {
      "name": "Sandra Norfleet",
      "plaque_term": "1982",
