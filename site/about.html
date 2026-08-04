@@ -172,25 +172,6 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
 @media(max-width:700px){.lrow .ll a{margin:0 16px 0 0}}
 .lsec{margin:0 0 26px}
 
-/* ---- timeline ---- */
-.hx{display:grid;grid-template-columns:8rem 1fr;gap:0 24px;padding:6px 0;
- border-top:1px solid var(--line2);font-size:.92rem;line-height:1.45}
-@media(max-width:640px){.hx{grid-template-columns:1fr;gap:0;padding:8px 0}}
-.hx .when{color:var(--ink3);font-size:.8rem;padding-top:3px;font-variant-numeric:tabular-nums}
-.hx .t{color:var(--ink2);max-width:52rem}
-.hx .t b{color:var(--ink);font-weight:600}
-.hx .t a{font-size:.84rem;margin-left:8px;overflow-wrap:anywhere}
-.hyear{font-size:1.35rem;margin:38px 0 2px;padding-top:14px;border-top:1px solid var(--line)}
-.hyear .who{font-family:var(--ui);font-weight:400;font-size:.9rem;color:var(--ink3);
- display:block;margin-top:5px;letter-spacing:0}
-.hyear .who a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
-details.hidx{margin:14px 0 0;font-size:.9rem}
-details.hidx summary{cursor:pointer;color:var(--ink3);font-size:.84rem}
-details.hidx summary:hover{color:var(--red)}
-.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:0 0 24px;font-size:.92rem}
-.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
-.decnav span{color:var(--ink3)}
-
 /* ---- filters and search ---- */
 .tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
 .field{display:block;max-width:26rem}
@@ -236,7 +217,11 @@ details.hidx summary:hover{color:var(--red)}
 
 /* ---- print ---- */
 @media print{
- .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav{display:none!important}
+ .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav,
+ .yearnav{display:none!important}
+ .yrbar{position:static!important;box-shadow:none}
+ details.hidx{background:none}
+ details.hidx[open] .hxin{display:block}
  body{font-size:11pt;color:#000}
  a{color:#000;text-decoration:none}
  a.ext::after{content:""}
@@ -248,7 +233,7 @@ details.hidx summary:hover{color:var(--red)}
 }
 </style></head><body>
 <a class="skip" href="#main">Skip to the record</a>
-<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="index.html">SGA <b>60</b></a><ul><li><a href="index.html">The board</a></li><li><a href="history.html">Timeline</a></li><li><a href="legislation.html">Legislation</a></li><li><a href="corrections.html">Corrections</a></li><li><a href="about.html" aria-current="page">About and method</a></li></ul></div></nav>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="index.html">SGA <b>60</b></a><ul><li><a href="index.html">The board</a></li><li><a href="history.html">Timeline</a></li><li><a href="legislation.html">Legislation</a></li><li><a href="corrections.html">Corrections</a></li><li><a href="sources.html">Sources</a></li><li><a href="about.html" aria-current="page">About and method</a></li></ul></div></nav>
 <main id="main">
 
 <header class="head"><div class="wrap">
@@ -268,7 +253,7 @@ their terms as far as the record supports them. Entries cover the organization, 
 budgets, appointments, committee work, resolutions that passed and resolutions that failed,
 and the fights with the administration and the <cite>Herald</cite>. Campus events that shaped
 a year are included where they bear on student government and are marked as such.</p>
-<p>Alongside the entries the site holds 60 portraits, 6 year photographs,
+<p>Alongside the entries the site holds 62 portraits, 7 year photographs,
 24 archival documents mirrored as files, 390 pieces of legislation, and
 2318 further lines from the <cite>Herald</cite> index that have been recorded but not
 yet worked into the record.</p>
@@ -299,19 +284,18 @@ are confirmed as regents rather than presidents. By about 2001 the two offices h
 after that, a second name in a year means a mid-year succession.</p>
 </div>
 
-<h2 class="sec">Sources, in the order they are useful</h2>
-<div class="prose"><ol class="srclist" style="font-size:1rem;color:var(--ink)">
-<li>The <cite>College Heights Herald</cite> back file on TopSCHOLAR, indexed article by
-article, at <a class="ext" href="https://digitalcommons.wku.edu/dlsc_ua_records/" rel="noopener">digitalcommons.wku.edu/dlsc_ua_records</a>.</li>
-<li>The WKU Timeline, dated and citable single events, at
-<a class="ext" href="https://digitalcommons.wku.edu/wku_timeline/" rel="noopener">digitalcommons.wku.edu/wku_timeline</a>.</li>
-<li>SGA's own constitutions, minutes, legislation and correspondence at
-<a class="ext" href="https://digitalcommons.wku.edu/sga/" rel="noopener">digitalcommons.wku.edu/sga</a>.</li>
-<li>The <cite>Herald</cite> online, roughly 2003 onward, at
-<a class="ext" href="https://wkuherald.com/" rel="noopener">wkuherald.com</a>.</li>
-<li>The <cite>Talisman</cite> yearbooks, the best source for portraits, at
-<a class="ext" href="https://digitalcommons.wku.edu/talisman/" rel="noopener">digitalcommons.wku.edu/talisman</a>.</li>
-</ol></div>
+<h2 class="sec">Sources</h2>
+<div class="prose">
+<p>The record rests on the <cite>College Heights Herald</cite>, digitised issue by issue on
+TopSCHOLAR and then full text at <a class="ext" href="https://wkuherald.com/" rel="noopener">wkuherald.com</a>; on SGA's
+own constitutions, minutes and legislation; on the university's administrative record; on
+the <cite>Talisman</cite> yearbooks for portraits; and on the Wayback Machine for the pages
+the university has taken down.</p>
+<p>What each of those collections holds, the period it covers, how complete it is, how to
+search it and where it fails is set out in full on the
+<a href="sources.html">sources page</a>, together with the volume-to-year map for
+<cite>Herald</cite> citations and the rules this project works by.</p>
+</div>
 
 <h2 class="sec">How an entry gets on the site</h2>
 <div class="prose">

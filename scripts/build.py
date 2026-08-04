@@ -259,25 +259,6 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
 @media(max-width:700px){.lrow .ll a{margin:0 16px 0 0}}
 .lsec{margin:0 0 26px}
 
-/* ---- timeline ---- */
-.hx{display:grid;grid-template-columns:8rem 1fr;gap:0 24px;padding:6px 0;
- border-top:1px solid var(--line2);font-size:.92rem;line-height:1.45}
-@media(max-width:640px){.hx{grid-template-columns:1fr;gap:0;padding:8px 0}}
-.hx .when{color:var(--ink3);font-size:.8rem;padding-top:3px;font-variant-numeric:tabular-nums}
-.hx .t{color:var(--ink2);max-width:52rem}
-.hx .t b{color:var(--ink);font-weight:600}
-.hx .t a{font-size:.84rem;margin-left:8px;overflow-wrap:anywhere}
-.hyear{font-size:1.35rem;margin:38px 0 2px;padding-top:14px;border-top:1px solid var(--line)}
-.hyear .who{font-family:var(--ui);font-weight:400;font-size:.9rem;color:var(--ink3);
- display:block;margin-top:5px;letter-spacing:0}
-.hyear .who a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
-details.hidx{margin:14px 0 0;font-size:.9rem}
-details.hidx summary{cursor:pointer;color:var(--ink3);font-size:.84rem}
-details.hidx summary:hover{color:var(--red)}
-.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:0 0 24px;font-size:.92rem}
-.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
-.decnav span{color:var(--ink3)}
-
 /* ---- filters and search ---- */
 .tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
 .field{display:block;max-width:26rem}
@@ -323,7 +304,11 @@ details.hidx summary:hover{color:var(--red)}
 
 /* ---- print ---- */
 @media print{
- .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav{display:none!important}
+ .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav,
+ .yearnav{display:none!important}
+ .yrbar{position:static!important;box-shadow:none}
+ details.hidx{background:none}
+ details.hidx[open] .hxin{display:block}
  body{font-size:11pt;color:#000}
  a{color:#000;text-decoration:none}
  a.ext::after{content:""}
@@ -486,7 +471,7 @@ def name_searches(name):
 # ---------------------------------------------------------------- shell
 NAV_ITEMS = [("index.html", "The board"), ("history.html", "Timeline"),
              ("legislation.html", "Legislation"), ("corrections.html", "Corrections"),
-             ("about.html", "About and method")]
+             ("sources.html", "Sources"), ("about.html", "About and method")]
 
 RIGHTS = ("Text on this site is the work of the project. Photographs, documents and "
           "legislation are reproduced from Western Kentucky University's own open "
@@ -1161,89 +1146,259 @@ def academic_year(dstr):
     return f"{start}-{str(start + 1)[2:]}"
 
 
+TIMELINE_CSS = """
+/* ---- timeline: the year block ---- */
+.tl{padding-bottom:56px}
+.yr{margin:0;scroll-margin-top:2px}
+.yr:first-child .yrbar{margin-top:8px}
+.yrbar{position:sticky;top:0;z-index:6;background:var(--paper);
+ display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 18px;
+ margin:46px 0 0;padding:12px 0 9px;border-top:2px solid var(--black);
+ box-shadow:0 1px 0 var(--line),0 10px 12px -10px rgba(11,11,12,.10)}
+.yrbar h2{font-size:1.32rem;letter-spacing:-.022em;font-variant-numeric:tabular-nums}
+.yrbar h2 a{color:var(--ink);text-decoration:none}
+.yrbar h2 a:hover{color:var(--red)}
+.yrbar .who{margin:0;font-size:.9rem;color:var(--ink2)}
+.yrbar .who span{color:var(--ink3)}
+.yrbar .tally{margin:0 0 0 auto;font-size:.8rem;color:var(--ink3);
+ font-variant-numeric:tabular-nums;white-space:nowrap}
+.yrbar .tally b{font-weight:600;color:var(--ink2)}
+@media(max-width:640px){.yrbar{gap:2px 12px;padding:10px 0 8px;margin-top:36px}
+ .yrbar .tally{margin-left:0;flex-basis:100%}}
+
+/* ---- timeline: one line ---- */
+.hx{display:grid;grid-template-columns:7.5rem 1fr;gap:0 26px;padding:16px 0;
+ border-top:1px solid var(--line2)}
+.rows .hx:first-child{border-top:0}
+@media(max-width:640px){.hx{grid-template-columns:1fr;gap:4px;padding:14px 0}}
+.hx .when{padding-top:4px;font-size:.83rem;font-variant-numeric:tabular-nums}
+.hx .when time{display:flex;flex-direction:column;line-height:1.25}
+.hx .when .dm{color:var(--ink2);font-weight:600}
+.hx .when .yy{color:var(--ink3);font-size:.77rem}
+@media(max-width:640px){.hx .when time{flex-direction:row;gap:0 6px}}
+.hx .when .tag{display:block;margin-top:6px;font-size:10px;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--ink3)}
+@media(max-width:640px){.hx .when .tag{display:inline-block;margin:0 0 0 10px}}
+.hx .t{max-width:38rem}
+.hx h3{font-size:1.03rem;line-height:1.35;margin:0 0 5px}
+.hx .t p{margin:0;color:var(--ink);line-height:1.55}
+.hx .cite{margin:9px 0 0;font-size:.82rem;color:var(--ink3);line-height:1.5}
+.hx .cite a{margin-right:15px;overflow-wrap:anywhere}
+.hx:target{background:var(--paper2);box-shadow:-14px 0 0 var(--paper2),14px 0 0 var(--paper2)}
+
+/* ---- timeline: the unworked index ---- */
+details.hidx{margin:18px 0 4px;border-left:2px solid var(--line);background:var(--paper2)}
+details.hidx summary{cursor:pointer;padding:11px 16px;font-size:.86rem;color:var(--ink2);
+ font-variant-numeric:tabular-nums}
+details.hidx summary:hover{color:var(--red)}
+details.hidx summary .hn{font-weight:600}
+.hidx .hxin{padding:0 16px 10px}
+.hidx .note{margin:0 0 4px;font-size:.8rem;color:var(--ink3);max-width:38rem}
+.hidx .hx{padding:10px 0;border-top:1px solid var(--line)}
+.hidx .hx .t{max-width:44rem;color:var(--ink2);font-size:.9rem;line-height:1.5}
+.hidx .hx .t a{font-size:.8rem;margin-left:10px;overflow-wrap:anywhere}
+.hidx .hx .when{font-size:.79rem}
+
+/* ---- timeline: navigation and filters ---- */
+.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:22px 0 0;font-size:.92rem}
+.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
+.decnav span{color:var(--ink3)}
+.yearnav{border-top:1px solid var(--line2);margin:20px 0 0;padding:14px 0 4px}
+.ynrow{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px 8px;margin:0 0 9px}
+.ynlab{flex:0 0 3.6rem;font-size:11px;font-weight:600;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--ink3)}
+.yearnav a{font-size:.83rem;text-decoration:none;color:var(--ink2);white-space:nowrap;
+ border:1px solid var(--line);padding:3px 8px;font-variant-numeric:tabular-nums}
+.yearnav a:hover{border-color:var(--red);color:var(--red)}
+.yearnav a .n{color:var(--ink3);margin-left:7px;font-size:.78rem}
+.yearnav a.off{opacity:.34}
+.tlkey{margin:14px 0 0;font-size:.84rem;color:var(--ink3);max-width:44rem}
+.tlkey b{color:var(--ink2);font-weight:600}
+.clearq{background:none;border:0;padding:0;margin-left:12px;color:var(--red);
+ font-family:var(--ui);font-size:.86rem;cursor:pointer;text-decoration:underline;
+ text-underline-offset:3px}
+.totop{margin:34px 0 0;font-size:.86rem}
+.hxnone{margin:0;padding:14px 0;color:var(--ink3);font-size:.9rem}
+.hx[hidden],.yr[hidden],details.hidx[hidden],.hxnone[hidden]{display:none!important}
+"""
+
+
+def hx_date(iso):
+    """A timeline date, stacked so the column scans down the page: day and month
+    on one line, the year under it."""
+    disp, mach, prec = fmt_date(iso)
+    parts = disp.split(" ")
+    if prec == "day":
+        top, yr = " ".join(parts[:2]), parts[2]
+    elif prec == "month":
+        top, yr = parts[0], parts[1]
+    else:
+        top, yr = disp, ""
+    y = f'<span class="yy">{h(yr)}</span>' if yr else ""
+    return f'<time datetime="{mach}"><span class="dm">{h(top)}</span>{y}</time>'
+
+
 def timeline_sections(ys, by_year, up):
     secs = []
     for y in ys:
         v = by_year[y["id"]]
+        yid = y["id"]
         seen = {}
         rows = []
         for e in v["events"]:
             aid = event_anchor(e, seen)
-            links = f'{src_link(e["src"])}' if e.get("src") else ""
+            cites = [f'<a href="{up}y/{h(yid)}.html#{aid}">In the record</a>']
+            if e.get("src"):
+                cites.append(src_link(e["src"]))
             if e.get("src", {}).get("file"):
-                links += f'<a href="{up}docs/{h(e["src"]["file"])}">Read it here</a>'
+                cites.append(f'<a href="{up}docs/{h(e["src"]["file"])}">Read it here</a>')
+            tag = '<span class="tag">campus</span>' if e.get("campus") else ""
+            key = h(f'{e["title"]} {e["body"]} {fmt_date(e["date"])[0]} {yid}'.lower())
             rows.append(
-                f'<div class="hx" data-t="{h(e["title"].lower())} {h(e["body"].lower())}">'
-                f'<span class="when">{time_tag(e["date"])}</span>'
-                f'<span class="t"><b>{h(e["title"])}.</b> {h(e["body"])} '
-                f'<a href="{up}y/{h(y["id"])}.html#{aid}">In the record</a>{links}</span></div>')
-        hx = "".join(
-            f'<div class="hx" data-t="{h(ln.lower())}">'
-            f'<span class="when">{time_tag(x["date"])}</span>'
-            f'<span class="t">{h(ln)} {src_link({"label": x["issue"][:60], "url": x["url"]})}'
-            f'</span></div>'
-            for x in sorted(v["herald"], key=lambda e: e["date"]) for ln in x["lines"])
+                f'<article class="hx" id="{h(yid)}-{aid}" data-k="e" data-t="{key}">'
+                f'<div class="when">{hx_date(e["date"])}{tag}</div>'
+                f'<div class="t"><h3>{h(e["title"])}</h3><p>{h(e["body"])}</p>'
+                f'<p class="cite">{"".join(cites)}</p></div></article>')
+        hx = []
+        for x in sorted(v["herald"], key=lambda e: e["date"]):
+            when = hx_date(x["date"])
+            cite = src_link({"label": x["issue"][:60], "url": x["url"]})
+            shown = fmt_date(x["date"])[0]
+            for ln in x["lines"]:
+                key = h(" ".join((ln, shown, yid)).lower())
+                hx.append(f'<div class="hx" data-k="i" data-t="{key}">'
+                          f'<div class="when">{when}</div>'
+                          f'<div class="t">{h(ln)} {cite}</div></div>')
+        hx = "".join(hx)
         n_hx = sum(len(x["lines"]) for x in v["herald"])
         who = " &middot; ".join(f'{h(l["name"])} <span>({role_word(l)})</span>'
-                                for l in y["leaders"])
+                                for l in y["leaders"]) or "No name recorded"
+        tally = [f'<b>{len(v["events"])}</b> {"entry" if len(v["events"]) == 1 else "entries"}']
+        if n_hx:
+            tally.append(f'<b>{n_hx}</b> index {"line" if n_hx == 1 else "lines"}')
+        idx = ""
+        if hx:
+            idx = (f'<details class="hidx"><summary><span class="hn">{n_hx}</span> further '
+                   f'{"mention" if n_hx == 1 else "mentions"} in the <cite>Herald</cite> '
+                   f'index</summary><div class="hxin">'
+                   f'<p class="note">Article-index lines recorded from the digitised '
+                   f'<cite>Herald</cite> and not yet written up as entries. Each one links '
+                   f'to the issue it came from.</p>{hx}</div></details>')
+        body = ("".join(rows) if rows
+                else '<p class="hxnone">No entry has been sourced for this year yet.</p>')
         secs.append(
-            f'<h2 class="hyear" id="y{h(y["id"])}">'
-            f'<a href="{up}y/{h(y["id"])}.html">{h(y["id"])}</a>'
-            f'<span class="who">{who}</span></h2>' + "".join(rows)
-            + (f'<details class="hidx"><summary>{n_hx} further mentions in the '
-               f'<cite>Herald</cite> index</summary>{hx}</details>' if hx else ""))
+            f'<section class="yr" id="y{h(yid)}" data-y="{h(yid)}">'
+            f'<div class="yrbar"><h2><a href="{up}y/{h(yid)}.html">{h(yid)}</a></h2>'
+            f'<p class="who">{who}</p>'
+            f'<p class="tally">{" &middot; ".join(tally)}</p></div>'
+            f'<div class="rows">{body}</div>{idx}</section>')
     return "".join(secs)
 
 
 TIMELINE_JS = """
 <script>
+(function(){
 var hf=document.getElementById('hf'),hr=document.getElementById('hr'),
-    rows=[].slice.call(document.querySelectorAll('.hx')),
-    heads=[].slice.call(document.querySelectorAll('.hyear'));
+    cl=document.getElementById('hclear'),
+    secs=[].slice.call(document.querySelectorAll('.yr')),
+    chips=[].slice.call(document.querySelectorAll('.tlfilter button')),
+    jumps={},kind='all';
+[].slice.call(document.querySelectorAll('.yearnav a')).forEach(function(a){
+ jumps[a.dataset.y]=a;});
+function word(n,s,p){return n+' '+(n===1?s:p);}
 function run(){
- var q=hf.value.toLowerCase().trim(),n=0;
- rows.forEach(function(r){var ok=!q||r.dataset.t.indexOf(q)>-1;
-  r.style.display=ok?'':'none';if(ok)n++;});
- heads.forEach(function(hd){
-  var any=false,el=hd.nextElementSibling;
-  while(el&&!el.classList.contains('hyear')){
-   if(el.classList.contains('hx')&&el.style.display!=='none')any=true;
-   if(el.tagName==='DETAILS'&&el.querySelector('.hx:not([style*="none"])'))any=true;
-   el=el.nextElementSibling;}
-  hd.style.display=(!q||any)?'':'none';});
- if(!q){hr.textContent='Showing all '+rows.length+' lines.';return;}
- hr.textContent=n?n+' of '+rows.length+' lines match \\u201c'+hf.value.trim()+'\\u201d.'
-  :'Nothing in the timeline matches \\u201c'+hf.value.trim()+'\\u201d.';
+ var q=hf.value.toLowerCase().trim(),ne=0,ni=0,ny=0;
+ secs.forEach(function(sec){
+  var ve=0,vi=0,rows=sec.querySelectorAll('.hx');
+  for(var i=0;i<rows.length;i++){
+   var r=rows[i],isx=r.dataset.k==='i',
+       ok=(kind==='all'||(kind==='e')===!isx)&&(!q||r.dataset.t.indexOf(q)>-1);
+   r.hidden=!ok;
+   if(ok){if(isx)vi++;else ve++;}
+  }
+  var d=sec.querySelector('details.hidx');
+  if(d){d.hidden=!vi;d.open=!!(q&&vi);
+   var c=d.querySelector('.hn');if(c)c.textContent=vi;}
+  var none=sec.querySelector('.hxnone');
+  if(none)none.hidden=!!q||kind==='i';
+  sec.hidden=!(ve+vi)&&!(!q&&kind==='all');
+  if(jumps[sec.dataset.y])jumps[sec.dataset.y].classList.toggle('off',sec.hidden);
+  ne+=ve;ni+=vi;if(ve+vi)ny++;
+ });
+ var counted=[];
+ if(kind!=='i')counted.push(word(ne,'entry','entries'));
+ if(kind!=='e')counted.push(word(ni,'index line','index lines'));
+ var what=counted.join(' and ');
+ if(q&&!(ne+ni))hr.textContent='Nothing matches \\u201c'+hf.value.trim()+'\\u201d. '
+   +'Try a name, a year or a single word.';
+ else if(q)hr.textContent=what+' match \\u201c'+hf.value.trim()+'\\u201d, in '
+   +word(ny,'year','years')+'.';
+ else hr.textContent='Showing '+what+' across '+word(secs.length,'year','years')+'.';
+ if(cl)cl.hidden=!q;
  var p=new URLSearchParams(location.search);
  if(q)p.set('q',hf.value.trim());else p.delete('q');
+ if(kind!=='all')p.set('show',kind);else p.delete('show');
  var qs=p.toString();
  history.replaceState(null,'',location.pathname+(qs?'?'+qs:''));
 }
+chips.forEach(function(c){c.addEventListener('click',function(){
+ kind=c.dataset.k;chips.forEach(function(x){
+  x.setAttribute('aria-pressed',String(x.dataset.k===kind))});run();});});
 hf.addEventListener('input',run);
-var pq=new URLSearchParams(location.search).get('q');
-if(pq)hf.value=pq;
+if(cl)cl.addEventListener('click',function(){hf.value='';hf.focus();run();});
+var p0=new URLSearchParams(location.search);
+if(p0.get('q'))hf.value=p0.get('q');
+if(p0.get('show')==='e'||p0.get('show')==='i'){kind=p0.get('show');
+ chips.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.k===kind))});}
 run();
+})();
 </script>"""
 
 
-def timeline_head(title, kicker, lede, up, current_dec):
+def year_nav(rows, group):
+    """Jump links to every year on the page, in decade rows."""
+    out = []
+    for label, items in rows:
+        links = "".join(
+            f'<a href="#y{h(yid)}" data-y="{h(yid)}">{h(yid)}'
+            f'<span class="n">{n}</span></a>' for yid, n in items)
+        lab = f'<span class="ynlab">{h(label)}</span>' if group else ""
+        out.append(f'<div class="ynrow">{lab}{links}</div>')
+    return (f'<nav class="yearnav" aria-label="Jump to a year">{"".join(out)}</nav>')
+
+
+def timeline_head(title, kicker, lede, up, current_dec, counts, ynav):
     links = []
     for lo, hi, label, short, stem in DECADES:
         if lo == current_dec:
             links.append(f'<span>{h(short)}</span>')
         else:
             links.append(f'<a href="{up}history/{stem}.html">{h(short)}</a>')
-    if current_dec is None:
-        allx = '<span>The complete timeline</span>'
-    else:
-        allx = f'<a href="{up}history.html">The complete timeline</a>'
+    allx = ('<span>The complete timeline</span>' if current_dec is None
+            else f'<a href="{up}history.html">The complete timeline</a>')
+    n_ev, n_hx = counts
+    facets = [("all", "Everything", n_ev + n_hx), ("e", "Archive entries", n_ev),
+              ("i", "Herald index", n_hx)]
+    chips = "".join(
+        f'<button type="button" data-k="{k}" '
+        f'aria-pressed="{"true" if k == "all" else "false"}">{h(lab)} '
+        f'<span class="c">{n}</span></button>' for k, lab, n in facets if n or k != "i")
     return (f'<header class="head"><div class="wrap"><p class="kicker">{h(kicker)}</p>'
             f'<h1>{h(title)}</h1><p class="scope">{lede}</p></div></header>'
-            f'<div class="wrap"><div class="tools">'
+            f'<div class="wrap">'
+            f'<div class="decnav">{" ".join(links)} {allx}</div>'
+            f'<div class="tools">'
             f'<label class="field" for="hf"><span class="lab">Search the entries</span>'
             f'<input id="hf" type="search" autocomplete="off" spellcheck="false"></label>'
-            f'<p class="readout" id="hr" role="status"></p></div>'
-            f'<div class="decnav" style="margin-top:22px">{" ".join(links)} {allx}</div>')
+            f'<div class="facets tlfilter" role="group" aria-label="What to show">'
+            f'{chips}</div>'
+            f'<p class="readout" id="hr" role="status"></p>'
+            f'<button class="clearq" id="hclear" type="button" hidden>Clear the search</button>'
+            f'<p class="tlkey"><b>Entries</b> are the archive’s own record: each one is '
+            f'dated, written up and carries the source it rests on. The grey blocks under a '
+            f'year hold <b>index lines</b> from the digitised <cite>Herald</cite> that have '
+            f'been recorded but not yet worked into the record.</p>'
+            f'</div>{ynav}')
 
 
 def render_history(ys, herald):
@@ -1254,30 +1409,43 @@ def render_history(ys, herald):
         if yid and yid in by_year:
             by_year[yid]["herald"].append(e)
 
-    n_ev = sum(len(v["events"]) for v in by_year.values())
-    n_hx = sum(len(x["lines"]) for v in by_year.values() for x in v["herald"])
+    def tally(block):
+        return (sum(len(by_year[y["id"]]["events"]) for y in block),
+                sum(len(x["lines"]) for y in block for x in by_year[y["id"]]["herald"]))
+
+    def nav_items(block):
+        return [(y["id"], len(by_year[y["id"]]["events"])) for y in block]
+
+    n_ev, n_hx = tally(ys)
     lede = (f"Every sourced entry in the archive, {n_ev} of them, in the order they "
-            f"happened. Under each year sit a further {n_hx} lines from the "
-            f"<cite>Herald</cite> index: headlines the project has recorded but not yet "
-            f"worked into the record. On a phone, one decade at a time reads better.")
+            f"happened, with the {n_hx} unworked lines from the <cite>Herald</cite> index "
+            f"kept separate under the year they belong to. Jump to a year below, or read "
+            f"one decade at a time.")
     pages = {}
-    body = (timeline_head("The complete timeline", "1966 to 2026", lede, "", None)
-            + '<div class="body">'
-            + timeline_sections(ys, by_year, "") + '</div></div>' + TIMELINE_JS)
+    rows = []
+    for lo, hi, label, short, stem in DECADES:
+        block = [y for y in ys if lo <= y["start"] <= hi]
+        if block:
+            rows.append((short, nav_items(block)))
+    body = (timeline_head("The complete timeline", "1966 to 2026", lede, "", None,
+                          (n_ev, n_hx), year_nav(rows, True))
+            + '<div class="body tl">'
+            + timeline_sections(ys, by_year, "")
+            + '<p class="totop"><a href="#main">Back to the top of the timeline</a></p>'
+            + '</div></div>' + TIMELINE_JS)
     pages["history.html"] = shell(
         "The complete timeline · SGA 60",
         f"Every sourced entry in the SGA 60 archive, {n_ev} entries from 1966 to 2026, "
-        f"in chronological order.", body, "", depth=0, current="history.html")
+        f"in chronological order.", body, TIMELINE_CSS, depth=0, current="history.html")
 
     for i, (lo, hi, label, short, stem) in enumerate(DECADES):
         block = [y for y in ys if lo <= y["start"] <= hi]
         if not block:
             continue
-        ev = sum(len(by_year[y["id"]]["events"]) for y in block)
-        hxn = sum(len(x["lines"]) for y in block for x in by_year[y["id"]]["herald"])
+        ev, hxn = tally(block)
         d_lede = (f"{ev} sourced entries across {len(block)} academic years, "
                   f"{block[0]['id']} to {block[-1]['id']}, with {hxn} further lines from "
-                  f"the <cite>Herald</cite> index under the years they belong to.")
+                  f"the <cite>Herald</cite> index held under the years they belong to.")
         pager = ""
         if i:
             p = DECADES[i - 1]
@@ -1285,15 +1453,17 @@ def render_history(ys, herald):
         if i < len(DECADES) - 1:
             nx = DECADES[i + 1]
             pager += (f'<a class="r" href="{nx[4]}.html">Next decade<b>{h(nx[3])}</b></a>')
-        dbody = (timeline_head(label, "The timeline", d_lede, "../", lo)
-                 + '<div class="body">'
+        dbody = (timeline_head(label, "The timeline", d_lede, "../", lo,
+                               (ev, hxn), year_nav([("Years", nav_items(block))], False))
+                 + '<div class="body tl">'
                  + timeline_sections(block, by_year, "../")
+                 + '<p class="totop"><a href="#main">Back to the top of the decade</a></p>'
                  + f'<div class="pager">{pager}</div></div></div>' + TIMELINE_JS)
         pages[f"history/{stem}.html"] = shell(
             f"{label} · SGA 60",
             f"The SGA 60 timeline, {label.lower()}: {ev} sourced entries from "
             f"{block[0]['id']} to {block[-1]['id']}.",
-            dbody, "", depth=1, current="history.html")
+            dbody, TIMELINE_CSS, depth=1, current="history.html")
     return pages
 
 
@@ -1425,6 +1595,577 @@ them.</p>
 
 
 # ---------------------------------------------------------------- about
+# ---------------------------------------------------------------- sources
+def all_citations(ys):
+    """Every citation on the site, once per use, as (academic year, label, url).
+    Not deduplicated: the point is to weigh how much of the record rests on each
+    collection."""
+    for y in ys:
+        for l in y["leaders"]:
+            for s in l.get("sources") or []:
+                yield y, s
+            if l.get("photo") and l["photo"].get("src"):
+                yield y, l["photo"]["src"]
+        for e in y["events"]:
+            if e.get("src"):
+                yield y, e["src"]
+        for d in y.get("documents") or []:
+            if d.get("src"):
+                yield y, d["src"]
+        for p in y.get("photos") or []:
+            if p.get("src"):
+                yield y, p["src"]
+        org = y.get("organization") or {}
+        for o in org.get("executive", []):
+            if o.get("src"):
+                yield y, o["src"]
+        for o in (org.get("senate") or {}).get("officers", []):
+            if o.get("src"):
+                yield y, o["src"]
+
+
+def source_bucket(url, label=""):
+    """Which collection a citation comes from. The buckets are the ones a
+    researcher actually has to work differently."""
+    u = (url or "").lower()
+    if not u:
+        return "unlinked"
+    if "web.archive.org" in u:
+        return "wayback"
+    if "talisman" in (label or "").lower():
+        return "talisman"   # the yearbook is scanned into more than one collection
+    if "digitalcommons.wku.edu" in u:
+        segs = [s for s in urllib.parse.urlparse(u).path.split("/") if s]
+        seg = segs[0] if segs else ""
+        if seg in ("context", "cgi"):
+            seg = next((s for s in segs[1:] if s not in ("viewcontent", "article")), "")
+        return {"dlsc_ua_records": "herald_print", "sga": "sga_records",
+                "wku_timeline": "timeline", "talisman": "talisman",
+                "bor": "wku_admin", "univ_senate": "wku_admin"}.get(seg, "topscholar")
+    if "wkuherald.com" in u:
+        return "herald_web"
+    if "talisman" in u or "archive.org" in u:
+        return "talisman"
+    if "wku.edu" in u:
+        return "sga_records" if "/sga" in u else "wku_admin"
+    if "wikipedia" in u or "wikimedia" in u or ".edu" in u or ".gov" in u:
+        return "elsewhere"
+    return "press"
+
+
+SOURCE_ORDER = ["herald_print", "herald_web", "talisman", "sga_records", "wku_admin",
+                "timeline", "press", "wayback", "topscholar", "elsewhere", "unlinked"]
+SOURCE_NAMES = {
+    "herald_print": "The <cite>Herald</cite> back file, digitised",
+    "herald_web": "The <cite>Herald</cite> online",
+    "talisman": "The <cite>Talisman</cite>",
+    "sga_records": "SGA's own records",
+    "wku_admin": "WKU administrative records",
+    "timeline": "The WKU Timeline",
+    "press": "Local and national press",
+    "wayback": "The Wayback Machine",
+    "topscholar": "Other TopSCHOLAR collections",
+    "elsewhere": "Reference works and other institutions",
+    "unlinked": "Cited without a link",
+}
+SOURCE_SECTIONS = {"herald_print", "herald_web", "talisman", "sga_records",
+                   "wku_admin", "timeline", "press", "wayback"}
+
+
+def source_report(ys):
+    """Count what the archive actually rests on, collection by collection."""
+    rep = {k: {"n": 0, "urls": set(), "years": set(), "dec": {}, "hosts": {}}
+           for k in SOURCE_ORDER}
+    for y, s in all_citations(ys):
+        k = source_bucket(s.get("url"), s.get("label"))
+        r = rep[k]
+        r["n"] += 1
+        if s.get("url"):
+            r["urls"].add(s["url"].rstrip("/"))
+        r["years"].add(y["id"])
+        d = (y["start"] // 10) * 10
+        r["dec"][d] = r["dec"].get(d, 0) + 1
+        host = urllib.parse.urlparse((s.get("url") or "").lower()).netloc
+        if k == "wayback":
+            m = re.search(r"web/[^/]+/(?:https?://)?([^/]+)", s.get("url") or "")
+            host = m.group(1).lower() if m else "unknown"
+        if host:
+            r["hosts"][host] = r["hosts"].get(host, 0) + 1
+    for r in rep.values():
+        yrs = sorted(r["years"])
+        r["first"], r["last"] = (yrs[0], yrs[-1]) if yrs else ("", "")
+        r["thick"] = sorted(r["dec"].items(), key=lambda kv: -kv[1])[:3]
+    rep["_total"] = sum(rep[k]["n"] for k in SOURCE_ORDER)
+    return rep
+
+
+HERALD_CITE = re.compile(
+    r"\bHerald\b[^,;]*?\b(\d{2,3})\s*[:.]\s*\d+\s*,\s*\d{1,2}\s+([A-Za-z]{3,9})\.?\s+"
+    r"((?:19|20)\d{2})")
+
+
+def herald_volumes(ys):
+    """The volume-to-academic-year map, read back out of the archive's own
+    citations. Every pair here is carried by a citation that prints both the
+    volume and the issue date."""
+    pairs = {}
+    for _, s in all_citations(ys):
+        m = HERALD_CITE.search(s.get("label") or "")
+        if not m:
+            continue
+        mon = next((i for i, name in enumerate(MONTHS, 1)
+                    if name[:3].lower() == m.group(2)[:3].lower()), 0)
+        if not mon:
+            continue
+        cal = int(m.group(3))
+        start = cal if mon >= 8 else cal - 1
+        pairs.setdefault(int(m.group(1)), {}).setdefault(
+            f"{start}-{str(start + 1)[2:]}", 0)
+        pairs[int(m.group(1))][f"{start}-{str(start + 1)[2:]}"] += 1
+    return {v: sorted(d, key=lambda k: -d[k]) for v, d in sorted(pairs.items())}
+
+
+def year_gaps(have, ys):
+    """The academic years missing from a set, compressed into readable runs."""
+    ids = [y["id"] for y in ys]
+    runs = []
+    for i, yid in enumerate(ids):
+        if yid in have:
+            continue
+        if runs and runs[-1][1] == i - 1:
+            runs[-1][1] = i
+        else:
+            runs.append([i, i])
+    return [ids[a] if a == b else f"{ids[a]} to {ids[b]}" for a, b in runs]
+
+
+SOURCES_CSS = """
+.srcguide{max-width:none}
+.holdings{width:100%;border-collapse:collapse;margin:18px 0 0;font-size:.92rem}
+.holdings th,.holdings td{text-align:left;padding:9px 16px 9px 0;
+ border-top:1px solid var(--line2);vertical-align:baseline}
+.holdings thead th{border-top:0;border-bottom:1px solid var(--line);font-size:11px;
+ font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--ink3);
+ padding-bottom:7px}
+.holdings td.n,.holdings th.n{text-align:right;font-variant-numeric:tabular-nums;
+ padding-right:0;white-space:nowrap}
+.holdings tbody tr:hover{background:var(--paper2)}
+.holdings .sh{color:var(--ink3);font-size:.85rem}
+.tscroll{overflow-x:auto;margin:0 0 6px}
+.coll{padding:0 0 8px}
+.coll h2{font-size:1.32rem;margin:52px 0 0;padding-top:16px;border-top:2px solid var(--black)}
+.coll .what{font-size:.9rem;color:var(--ink3);margin:6px 0 0}
+.cfacts{display:grid;grid-template-columns:max-content 1fr;gap:0 26px;margin:16px 0 20px;
+ max-width:46rem;font-size:.93rem;border-top:1px solid var(--line2)}
+.cfacts dt{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.11em;
+ text-transform:uppercase;color:var(--ink3);padding:9px 0 0}
+.cfacts dd{margin:0;padding:7px 0 0;color:var(--ink);font-variant-numeric:tabular-nums}
+@media(max-width:560px){.cfacts{grid-template-columns:1fr}.cfacts dt{padding-top:12px}
+ .cfacts dd{padding-top:2px}}
+.good,.bad{max-width:var(--measure);margin:0 0 14px;padding-left:16px;
+ border-left:2px solid var(--line)}
+.bad{border-left-color:var(--red)}
+.good p,.bad p{margin:0 0 .7em}
+.good p:last-child,.bad p:last-child{margin-bottom:0}
+.good .lab,.bad .lab{margin:0 0 5px}
+.howto{max-width:46rem;margin:0 0 6px;padding:0 0 0 1.2em;font-size:.94rem}
+.howto li{margin:0 0 7px}
+.voltab{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:0 22px;
+ margin:14px 0 6px;font-size:.88rem;max-width:56rem}
+.voltab div{display:flex;justify-content:space-between;gap:10px;padding:5px 0;
+ border-top:1px solid var(--line2);font-variant-numeric:tabular-nums}
+.voltab .v{color:var(--ink3)}
+.voltab .twice{color:var(--red)}
+.voltab .twice b{font-weight:600}
+.method{max-width:var(--measure)}
+.method ol{padding-left:1.2em}
+.method li{margin:0 0 9px}
+.rule{border-top:2px solid var(--black);margin:38px 0 0;padding:16px 0 0;max-width:46rem}
+.rule p{font-size:1.05rem;margin:0 0 .6em}
+.rule p b{font-weight:700}
+"""
+
+
+def _fact(rows):
+    return "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in rows if v)
+
+
+def _weight(rep, key, total):
+    r = rep[key]
+    if not r["n"]:
+        return "Nothing in the archive rests on it yet."
+    share = round(100 * r["n"] / total)
+    items = f'{len(r["urls"])} separate items' if r["urls"] else "no linked items"
+    return (f'{r["n"]} citations, about {share} per cent of the archive, drawn from '
+            f'{items}.')
+
+
+def _span(rep, key):
+    r = rep[key]
+    if not r["years"]:
+        return ""
+    same = r["first"] == r["last"]
+    thick = ", ".join(f"{d}s ({n})" for d, n in r["thick"])
+    span = r["first"] if same else f'{r["first"]} to {r["last"]}'
+    return f"{span} &middot; thickest in {thick}" if thick else span
+
+
+def render_sources(ys, leg, herald, n_docs, n_port, n_gal):
+    rep = source_report(ys)
+    total = rep["_total"]
+    vols = herald_volumes(ys)
+    n_lead = sum(len(y["leaders"]) for y in ys)
+    n_hx = sum(len(e["lines"]) for e in herald
+               if academic_year(e["date"]) in {y["id"] for y in ys})
+    leg_years = {e["session"] for e in leg}
+    leg_gaps = year_gaps(leg_years, ys)
+    doc_sessions = len({y["id"] for y in ys if y.get("documents")})
+    wayback_hosts = sorted(rep["wayback"]["hosts"].items(), key=lambda kv: -kv[1])[:4]
+    talisman_ia = sum(n for host, n in rep["talisman"]["hosts"].items()
+                      if "archive.org" in host)
+
+    # holdings table
+    trows = []
+    for k in SOURCE_ORDER:
+        r = rep[k]
+        if not r["n"]:
+            continue
+        share = round(100 * r["n"] / total)
+        name = (f'<a href="#{k}">{SOURCE_NAMES[k]}</a>'
+                if k in SOURCE_SECTIONS else SOURCE_NAMES[k])
+        trows.append(
+            f'<tr><td>{name}'
+            f'<span class="sh"><br>{h(r["first"])}&#8211;{h(r["last"])}</span></td>'
+            f'<td class="n">{r["n"]}</td><td class="n">{share}%</td>'
+            f'<td class="n">{len(r["urls"]) or "&#8212;"}</td>'
+            f'<td class="n">{len(r["years"])}</td></tr>')
+    holdings = (
+        '<div class="tscroll"><table class="holdings">'
+        '<thead><tr><th scope="col">Collection</th><th scope="col" class="n">Citations</th>'
+        '<th scope="col" class="n">Share</th><th scope="col" class="n">Items</th>'
+        '<th scope="col" class="n">Years</th></tr></thead>'
+        f'<tbody>{"".join(trows)}</tbody>'
+        f'<tfoot><tr><td><b>Everything cited</b></td><td class="n"><b>{total}</b></td>'
+        f'<td class="n">100%</td><td class="n"></td><td class="n">{len(ys)}</td>'
+        f'</tr></tfoot></table></div>')
+
+    # the volume map
+    vcells = []
+    twice = [v for v, yy in vols.items() if len(yy) > 1]
+    for v, yy in vols.items():
+        cls = ' class="twice"' if len(yy) > 1 else ""
+        label = " and ".join(h(a) for a in sorted(yy))
+        vcells.append(f'<div{cls}><span class="v">Vol. {v}</span><b>{label}</b></div>')
+    volmap = f'<div class="voltab">{"".join(vcells)}</div>'
+    twice_line = (
+        f'Volumes {", ".join(str(v) for v in twice)} each carry two academic years, '
+        f'four years apart: the <cite>Herald</cite>&#8217;s volume numbering was restarted '
+        f'in the mid-1970s and the archive holds citations from both runs. A volume number '
+        f'on its own does not pin a year. The printed issue date does.'
+        if twice else
+        'Every volume in the archive maps to one academic year.')
+
+    def coll(key, title, what, facts, good, bad, howto):
+        return (f'<section class="coll" id="{key}"><h2>{title}</h2>'
+                f'<p class="what">{what}</p>'
+                f'<dl class="cfacts">{_fact(facts)}</dl>'
+                f'<div class="good"><p class="lab">What it is good for</p>{good}</div>'
+                f'<div class="bad"><p class="lab">Where it fails</p>{bad}</div>'
+                f'<p class="lab" style="margin:18px 0 6px">How to search it</p>'
+                f'<ol class="howto">{howto}</ol></section>')
+
+    sections = []
+
+    sections.append(coll(
+        "herald_print", 'The <cite>College Heights Herald</cite>, digitised',
+        'WKU Archives&#8217; scanned run of the student newspaper on TopSCHOLAR, '
+        'catalogued issue by issue with the contents of each issue listed in the record.',
+        [("What it holds", "Page-image PDFs of the paper, one record per issue, each "
+                           "record carrying an article-level index of that issue"),
+         ("Period it covers", _span(rep, "herald_print")),
+         ("Weight here", _weight(rep, "herald_print", total)),
+         ("Unworked index lines", f"{n_hx} lines are listed on the timeline but not yet "
+                                  f"written up as entries" if n_hx else "")],
+        '<p>This is the spine of the archive. Nothing else covers student government week '
+        'by week for the first forty years: election results and turnout, senate votes, '
+        'budget fights, resignations, and the editorials that argued with all of it. '
+        'Because the index is catalogued per issue, a search returns the specific issue '
+        'and date rather than a year, which is what makes a dated entry possible.</p>',
+        '<p>The searchable text is the index, not the page. The body of an article is a '
+        'scanned image, so a name that appears only in the fourth paragraph is invisible to '
+        'search, and the index line is often the whole of what you can cite without opening '
+        'the PDF.</p>'
+        '<p>The digitised run thins out at the end of the 2000s. Nothing in this archive '
+        f'after {h(rep["herald_print"]["last"])} rests on it; from there the '
+        '<cite>Herald</cite> online takes over.</p>'
+        '<p>TopSCHOLAR blocks automated requests. Its own search page refuses bots, and a '
+        'burst of rapid requests gets every following request refused for a while.</p>',
+        f'<li>Search Google rather than the site: '
+        f'{ext("https://www.google.com/search?q=site:digitalcommons.wku.edu+%22student+government%22", "site:digitalcommons.wku.edu &quot;student government&quot;")}, '
+        f'crossed with both calendar years of the academic year you are working on.</li>'
+        f'<li>Try each name the organisation has used: Associated Students, Associated '
+        f'Student Government, ASG, Student Government Association, SGA, student regent.</li>'
+        f'<li>Browse the collection directly at '
+        f'{ext("https://digitalcommons.wku.edu/dlsc_ua_records/", "digitalcommons.wku.edu/dlsc_ua_records")}.</li>'
+        f'<li>One request at a time, a few seconds apart. If you are refused, stop for a '
+        f'minute and start again slowly.</li>'))
+
+    sections.append(
+        f'<section class="coll" id="volumes"><h2>Reading a <cite>Herald</cite> citation</h2>'
+        f'<p class="what">A citation here reads <b>Herald 50:45, 28 Mar 1975</b>: volume, '
+        f'issue number, printed date. This table is the volume-to-year map the project has '
+        f'established, read back out of the {len(vols)} volumes already cited here with '
+        f'both a volume number and a printed date.</p>'
+        f'{volmap}<p class="secnote" style="max-width:46rem">{twice_line} Volumes with no '
+        f'row are volumes nothing has been cited from yet, not volumes that do not exist. '
+        f'In the 1970s the paper published twice a week, so issue numbers run into the '
+        f'fifties within a single year.</p></section>')
+
+    sections.append(coll(
+        "herald_web", 'The <cite>Herald</cite> online, wkuherald.com',
+        'The student newspaper&#8217;s own website: full text, searchable, and the only '
+        'continuous account of SGA for the recent decades.',
+        [("What it holds", "Full-text articles, roughly 2003 to today"),
+         ("Period it covers", _span(rep, "herald_web")),
+         ("Weight here", _weight(rep, "herald_web", total))],
+        '<p>Full text means a name, a bill number or a vote count can be searched directly, '
+        'and meeting coverage is often detailed enough to date an event to the day. For '
+        'everything after about 2003 this is the first place to look and usually the last.</p>',
+        '<p>The site has been rebuilt more than once and the older articles moved with it. '
+        'Links to the previous system, media.www.wkuherald.com, are dead, and the surviving '
+        'copies are in the Wayback Machine.</p>'
+        '<p>Its own search is weighted to recent material and misses much of the 2000s. '
+        'Photographs and captions were frequently lost in the migrations, so an article can '
+        'survive with its illustration gone.</p>',
+        f'<li>Search the site directly: {ext("https://wkuherald.com/?s=student+government", "wkuherald.com/?s=student government")}, '
+        f'then by officer name.</li>'
+        f'<li>Where a result is missing or truncated, look the same URL up in the Wayback '
+        f'Machine before giving up on it.</li>'
+        f'<li>Google with {ext("https://www.google.com/search?q=site:wkuherald.com+SGA", "site:wkuherald.com SGA")} '
+        f'catches pages the paper&#8217;s own search does not return.</li>'))
+
+    sections.append(coll(
+        "talisman", 'The <cite>Talisman</cite> yearbooks',
+        'The university yearbook. For most of the twentieth century every volume carried a '
+        'student government section with named portraits.',
+        [("What it holds", "Officer portraits and organisation pages, named in the caption"),
+         ("Period it covers", _span(rep, "talisman")),
+         ("Weight here", _weight(rep, "talisman", total)),
+         ("Portraits on this site", f"{n_port} of {n_lead} recorded leaders have a "
+                                    f"portrait; {n_gal} further year photographs")],
+        '<p>The yearbook is the best answer to the question of what these people looked '
+        'like, and often the only place an executive council is listed office by office. '
+        'The caption names the sitter, which is the identification this project requires '
+        'before an image goes on a page.</p>',
+        '<p>The <cite>Talisman</cite> PDFs on TopSCHOLAR are large and frequently refuse to '
+        'download. The Internet Archive copies of the same volumes are far more reliably '
+        f'downloadable, and {talisman_ia} of the images here came that way.</p>'
+        '<p>A yearbook is published at the end of the year it names, so its portraits belong '
+        'to the officers who served that year, not the ones elected in the spring it appeared. '
+        'Captions misspell names, and a portrait can outlive the term it illustrates: never '
+        'let a yearbook caption alone move a name into a year.</p>',
+        f'<li>The run on TopSCHOLAR: '
+        f'{ext("https://digitalcommons.wku.edu/talisman/", "digitalcommons.wku.edu/talisman")}.</li>'
+        f'<li>The same volumes on the Internet Archive: '
+        f'{ext("https://archive.org/search?query=talisman+western+kentucky", "archive.org, talisman western kentucky")}. '
+        f'Try this first if a TopSCHOLAR download stalls.</li>'
+        f'<li>The <cite>Talisman</cite> as it publishes now: '
+        f'{ext("https://wkutalisman.com/", "wkutalisman.com")}.</li>'))
+
+    sections.append(coll(
+        "sga_records", "SGA&#8217;s own records",
+        'Constitutions, bylaws, senate and cabinet minutes, and the legislation itself, '
+        'split between the archived collection on TopSCHOLAR and what SGA currently posts.',
+        [("What it holds", f"{len(leg)} pieces of legislation held here as files, "
+                           f"{n_docs} archival documents mirrored across {doc_sessions} years"),
+         ("Period it covers", _span(rep, "sga_records")),
+         ("Weight here", _weight(rep, "sga_records", total)),
+         ("Sessions with no legislation on file",
+          h(", ".join(leg_gaps)) if leg_gaps else "None")],
+        '<p>This is the only source that gives the exact text of what was passed, the vote '
+        'as it was recorded, and the names of the senators in the room. Minutes settle '
+        'arguments the <cite>Herald</cite> reports second-hand, and the constitutions date '
+        'every structural change: when the regent seat merged with the presidency, when the '
+        'senate was resized, what the judicial council could do.</p>',
+        '<p>Coverage is lumpy rather than continuous. The archived collection is thickest '
+        'for the 1990s; SGA&#8217;s own site holds only recent sessions and has dropped '
+        'whole years when it was rebuilt. The gaps listed above are gaps in what has been '
+        'found, and some of them are recoverable from the Wayback Machine.</p>'
+        '<p>Minutes are summaries typed by a secretary, not transcripts. Bills are numbered '
+        'by session and the numbering restarts, so a bill number without its session year '
+        'identifies nothing.</p>',
+        f'<li>The archived collection: '
+        f'{ext("https://digitalcommons.wku.edu/sga/", "digitalcommons.wku.edu/sga")} '
+        f'&#8212; constitutions, minutes, correspondence, older legislation.</li>'
+        f'<li>What SGA posts now: {ext("https://www.wku.edu/sga/", "wku.edu/sga")}.</li>'
+        f'<li>For a missing session, try '
+        f'{ext("https://web.archive.org/web/*/wku.edu/sga/*", "web.archive.org/web/*/wku.edu/sga/*")}.</li>'
+        f'<li>What this archive already holds is listed on the '
+        f'<a href="legislation.html">legislation page</a>.</li>'))
+
+    sections.append(coll(
+        "wku_admin", "WKU administrative records",
+        'The other side of the table: Board of Regents minutes, university news releases, '
+        'and the presidential correspondence held in the UA collections on TopSCHOLAR.',
+        [("What it holds", "Regents minutes, UA record groups, WKU News releases"),
+         ("Period it covers", _span(rep, "wku_admin")),
+         ("Weight here", _weight(rep, "wku_admin", total))],
+        '<p>Regents minutes are where a student resolution either becomes policy or dies, '
+        'and they record the student regent as present, voting or absent. The UA collections '
+        'hold the letters: the 1966 approval of the constitution is a letter from President '
+        'Kelly Thompson to the committee that drafted it. WKU News dates appointments and '
+        'awards precisely.</p>',
+        '<p>Regents minutes are scanned and indexed by meeting, not by subject, so you need '
+        'an approximate date before you can find anything. Student government is usually a '
+        'line in a long agenda.</p>'
+        '<p>WKU News is the university speaking about itself: it publishes what the '
+        'administration wanted published and quietly retires old pages. Anything cited from '
+        'it should be checked against the <cite>Herald</cite>, and older releases often '
+        'survive only in the Wayback Machine.</p>',
+        f'<li>Regents minutes: '
+        f'{ext("https://digitalcommons.wku.edu/bor/", "digitalcommons.wku.edu/bor")}.</li>'
+        f'<li>UA record groups and correspondence: search '
+        f'{ext("https://www.google.com/search?q=site:digitalcommons.wku.edu+UA3+%22student+government%22", "site:digitalcommons.wku.edu UA3 &quot;student government&quot;")}.</li>'
+        f'<li>{ext("https://www.wku.edu/news/", "wku.edu/news")} for the recent decades.</li>'))
+
+    sections.append(coll(
+        "timeline", "The WKU Timeline",
+        'A curated collection of single dated events in the university&#8217;s history, '
+        'each one described and citable on its own.',
+        [("What it holds", "One record per event, with a date and a short description"),
+         ("Period it covers", _span(rep, "timeline")),
+         ("Weight here", _weight(rep, "timeline", total))],
+        '<p>The quickest way to pin a date when you know roughly when something happened. '
+        'Each record is already checked and already citable, which makes it a good anchor '
+        'for the founding period and for campus events that frame an SGA year.</p>',
+        '<p>It is a selection, not a record. Student government appears in it only when an '
+        'event was significant to the university as a whole, so it will never carry an '
+        'ordinary senate vote, and it is of little use for anything recent.</p>',
+        f'<li>{ext("https://digitalcommons.wku.edu/wku_timeline/", "digitalcommons.wku.edu/wku_timeline")}, '
+        f'browsable by year.</li>'
+        f'<li>Or {ext("https://www.google.com/search?q=site:digitalcommons.wku.edu/wku_timeline+student+government", "site:digitalcommons.wku.edu/wku_timeline student government")}.</li>'))
+
+    sections.append(coll(
+        "press", "Local and national press",
+        'Reporting from outside the university: the <cite>Bowling Green Daily News</cite>, '
+        'regional public radio, and the national coverage that arrived in 2017.',
+        [("What it holds", "Off-campus reporting on SGA and on the university"),
+         ("Period it covers", _span(rep, "press")),
+         ("Weight here", _weight(rep, "press", total))],
+        '<p>Useful at exactly the moments when SGA stopped being a campus story: a fee '
+        'increase that reached the city, a regent appointment, a resolution that drew '
+        'attention beyond the Hill. The town paper also names people the <cite>Herald</cite> '
+        'left as titles.</p>',
+        '<p>There is no free, indexed archive of the <cite>Daily News</cite> before the '
+        '2000s, so the founding decades have no local press record here at all: every '
+        'citation for 1966 in this archive is a campus one, the <cite>Herald</cite>, the '
+        'constitution file and the president&#8217;s approval letter.</p>'
+        '<p>National attention came once, in 2017, around the reparations resolution, and '
+        'much of what circulated was wrong: fabricated headlines claiming the university had '
+        'granted free tuition. The archive cites the correction rather than the false '
+        'headlines, and the wire stories themselves are not held here. Treat national '
+        'coverage of a student government as evidence of what was said about SGA, not of '
+        'what SGA did.</p>',
+        f'<li>{ext("https://www.bgdailynews.com/search/?q=WKU+student+government", "bgdailynews.com, search WKU student government")} '
+        f'&#8212; most of it behind a paywall.</li>'
+        f'<li>Check any national claim against the <cite>Herald</cite> and against SGA&#8217;s '
+        f'own minutes for the same week before it goes into the record.</li>'))
+
+    wb_list = ", ".join(f"{h(host)} ({n})" for host, n in wayback_hosts)
+    sections.append(coll(
+        "wayback", "The Wayback Machine",
+        'Not a collection of its own: the route back to pages the university and the '
+        'newspaper have taken down.',
+        [("What it holds", f"Captures of pages that no longer exist, mostly {wb_list}"
+                           if wb_list else "Captures of pages that no longer exist"),
+         ("Period it covers", _span(rep, "wayback")),
+         ("Weight here", _weight(rep, "wayback", total))],
+        '<p>Officer lists, election results, committee rosters and news releases that WKU '
+        'has since removed are frequently still readable in a capture, and the dead '
+        '<cite>Herald</cite> CMS survives almost entirely this way. For the 1990s and 2000s '
+        'web record it is not a fallback, it is the primary route.</p>',
+        '<p>Crawls are irregular. A page may exist in one capture and never again, and the '
+        'capture you find may predate the change you are looking for, so read the timestamp '
+        'as the date of the evidence.</p>'
+        '<p>Attached files are often not captured, navigation frequently breaks, and pages '
+        'built by scripts come back half-empty. Always cite the dated capture URL, never the '
+        'live URL it was taken from, because the live URL is the thing that failed.</p>',
+        f'<li>Wildcard search a directory: '
+        f'{ext("https://web.archive.org/web/*/wku.edu/sga/*", "web.archive.org/web/*/wku.edu/sga/*")}.</li>'
+        f'<li>For older <cite>Herald</cite> articles, try the dead host: '
+        f'{ext("https://web.archive.org/web/*/media.www.wkuherald.com/*", "web.archive.org/web/*/media.www.wkuherald.com/*")}.</li>'
+        f'<li>Copy the capture URL with its timestamp into the citation.</li>'))
+
+    body = f"""
+<header class="head"><div class="wrap">
+ <p class="kicker">Where the evidence lives</p>
+ <h1>Sources</h1>
+ <p class="lede">A working guide to the collections this archive is built from: what each
+ one holds, the period it covers, how complete it is, how to search it, and where it lets
+ you down.</p>
+ <p class="scope">The {total} citations on this site come from the collections below. The
+ figures are counted from the archive itself when the site is built, so they describe what
+ has actually been found, not what exists.</p>
+</div></header>
+<div class="wrap"><div class="body srcguide">
+
+<h2 class="sec" style="margin-top:34px">The holdings, weighed</h2>
+<p class="secnote">Every citation on the site, grouped by the collection it comes from.
+&#8220;Items&#8221; counts separate documents, issues or pages; a single issue cited by
+four entries is one item.</p>
+{holdings}
+
+{"".join(sections)}
+
+<section class="coll" id="method"><h2>The method, in practice</h2>
+<p class="what">Three habits do most of the work.</p>
+
+<p class="lab" style="margin:20px 0 6px">How to pin a date</p>
+<div class="method"><ol>
+<li>Date the event, not the paper. A <cite>Herald</cite> issue of 25 February reporting a
+Tuesday senate vote dates the vote to the Tuesday, and the issue is the citation.</li>
+<li>Use the printed issue date, never the volume and issue number alone. Volume numbers in
+this run repeat four years apart.</li>
+<li>Record only the precision the source gives. A day where it gives a day, a month where it
+gives a month, a bare year where it gives a year. Padding a date to look precise is the one
+error that cannot be spotted later.</li>
+<li>Where a source says &#8220;last week&#8221; or &#8220;earlier this semester&#8221; and
+nothing else fixes it, keep the month and stop.</li>
+</ol></div>
+
+<p class="lab" style="margin:20px 0 6px">How to check a name</p>
+<div class="method"><ol>
+<li>Start from the plaque in the SGA Chambers as a claim, not a fact. People who served have
+reported that their year on it is wrong.</li>
+<li>Cross the name with every name the organisation has used, in both calendar years of the
+academic year, and look for election coverage rather than a passing mention.</li>
+<li>Separate the offices. The student regent was separately elected from 1968 until the seats
+merged around 2001, which is why several plaque years carry two names.</li>
+<li>Two people can share a name. Do not merge a later career into a student record without a
+source that connects them.</li>
+<li>If the archive puts the term in a different year, move the person and keep the plaque
+reading beside the correction. The correction is part of the history and is written down on
+the <a href="corrections.html">corrections page</a>.</li>
+</ol></div>
+
+<div class="rule">
+<p><b>No year, no entry.</b> A fact that cannot be placed in a year has nowhere to live in
+this archive, and a fact without a source is not a fact yet. A thin year stays thin.</p>
+<p class="secnote" style="max-width:none">Accuracy beats completeness. Everything on this
+site can be checked from the links it carries; the whole record is published as data in
+<a href="years.json">years.json</a>, and what is still unsettled is listed on the
+<a href="corrections.html">corrections page</a>.</p>
+</div>
+</section>
+</div></div>"""
+    return shell("Sources · SGA 60",
+                 "Where the evidence for SGA 60 lives: the Herald back file, the Herald "
+                 "online, the Talisman, SGA's own records, WKU administrative records, the "
+                 "WKU Timeline, the press and the Wayback Machine, with what each is good "
+                 "for and where it fails.",
+                 body, SOURCES_CSS, depth=0, current="sources.html")
+
+
 def render_about(ys, meta, n_leg, n_herald, n_docs, n_port, n_gal):
     n_ev = sum(len(y["events"]) for y in ys)
     n_lead = sum(len(y["leaders"]) for y in ys)
@@ -1478,19 +2219,18 @@ are confirmed as regents rather than presidents. By about 2001 the two offices h
 after that, a second name in a year means a mid-year succession.</p>
 </div>
 
-<h2 class="sec">Sources, in the order they are useful</h2>
-<div class="prose"><ol class="srclist" style="font-size:1rem;color:var(--ink)">
-<li>The <cite>College Heights Herald</cite> back file on TopSCHOLAR, indexed article by
-article, at {ext("https://digitalcommons.wku.edu/dlsc_ua_records/", "digitalcommons.wku.edu/dlsc_ua_records")}.</li>
-<li>The WKU Timeline, dated and citable single events, at
-{ext("https://digitalcommons.wku.edu/wku_timeline/", "digitalcommons.wku.edu/wku_timeline")}.</li>
-<li>SGA's own constitutions, minutes, legislation and correspondence at
-{ext("https://digitalcommons.wku.edu/sga/", "digitalcommons.wku.edu/sga")}.</li>
-<li>The <cite>Herald</cite> online, roughly 2003 onward, at
-{ext("https://wkuherald.com/", "wkuherald.com")}.</li>
-<li>The <cite>Talisman</cite> yearbooks, the best source for portraits, at
-{ext("https://digitalcommons.wku.edu/talisman/", "digitalcommons.wku.edu/talisman")}.</li>
-</ol></div>
+<h2 class="sec">Sources</h2>
+<div class="prose">
+<p>The record rests on the <cite>College Heights Herald</cite>, digitised issue by issue on
+TopSCHOLAR and then full text at {ext("https://wkuherald.com/", "wkuherald.com")}; on SGA's
+own constitutions, minutes and legislation; on the university's administrative record; on
+the <cite>Talisman</cite> yearbooks for portraits; and on the Wayback Machine for the pages
+the university has taken down.</p>
+<p>What each of those collections holds, the period it covers, how complete it is, how to
+search it and where it fails is set out in full on the
+<a href="sources.html">sources page</a>, together with the volume-to-year map for
+<cite>Herald</cite> citations and the rules this project works by.</p>
+</div>
 
 <h2 class="sec">How an entry gets on the site</h2>
 <div class="prose">
@@ -1604,6 +2344,8 @@ def main():
     n_docs = sum(len(y.get("documents") or []) for y in ys)
     (SITE / "about.html").write_text(
         render_about(ys, meta, len(leg), n_herald, n_docs, n_port, n_gal))
+    (SITE / "sources.html").write_text(
+        render_sources(ys, leg, herald, n_docs, n_port, n_gal))
 
     if LEG.is_dir():
         shutil.copytree(LEG, SITE / "legislation", dirs_exist_ok=True)

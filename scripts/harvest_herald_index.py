@@ -35,7 +35,7 @@ def main():
     existing = {}
     if OUT.exists():
         existing = {e["url"]: e for e in json.loads(OUT.read_text())["entries"]}
-    url = BASE + "?verb=ListRecords&metadataPrefix=qdc&set=publication:dlsc_ua_records"
+    url = BASE + "?verb=ListRecords&metadataPrefix=document-export&set=publication:dlsc_ua_records"
     entries = dict(existing)
     pages = 0
     while url:
@@ -47,8 +47,13 @@ def main():
         root = ET.fromstring(xml)
         for rec in root.iter("{http://www.openarchives.org/OAI/2.0/}record"):
             item_url = next((el.text.strip() for el in rec.iter()
+                             if el.tag.endswith("coverpage-url") and el.text), "") or \
+                       next((el.text.strip() for el in rec.iter()
                              if el.tag.endswith("identifier") and el.text
                              and "/dlsc_ua_records/" in el.text), "")
+            pdf = next((el.text.strip() for el in rec.iter()
+                        if el.tag.endswith("fulltext-url") and el.text), "")
+            pdf = pdf.replace("&amp;", "&").replace("&unstamped=1", "")
             if not item_url or item_url in entries:
                 continue
             title = next((el.text for el in rec.iter() if el.tag.endswith("title") and el.text), "")
@@ -66,7 +71,7 @@ def main():
             if not re.match(r"\d{4}", date):
                 continue  # the dating law: no year, no timeline
             entries[item_url] = {"date": date, "issue": title[:160],
-                                 "url": item_url, "lines": hits[:12]}
+                                 "url": item_url, "pdf": pdf, "lines": hits[:12]}
         pages += 1
         if pages % 10 == 0:
             print(f"page {pages}: {len(entries)} matching items", flush=True)

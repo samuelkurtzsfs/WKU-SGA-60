@@ -2,10 +2,10 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0B0B0C">
-<meta name="description" content="A year-by-year record of the Student Government Association at Western Kentucky University, 1966 to 2026. 832 sourced entries across 61 academic years, 976 citations.">
+<meta name="description" content="A year-by-year record of the Student Government Association at Western Kentucky University, 1966 to 2026. 832 sourced entries across 61 academic years, 978 citations.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SGA 60 · Student Government at Western Kentucky University">
-<meta property="og:description" content="A year-by-year record of the Student Government Association at Western Kentucky University, 1966 to 2026. 832 sourced entries across 61 academic years, 976 citations.">
+<meta property="og:description" content="A year-by-year record of the Student Government Association at Western Kentucky University, 1966 to 2026. 832 sourced entries across 61 academic years, 978 citations.">
 <title>SGA 60 · Student Government at Western Kentucky University</title>
 <style>
 :root{
@@ -172,25 +172,6 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
 @media(max-width:700px){.lrow .ll a{margin:0 16px 0 0}}
 .lsec{margin:0 0 26px}
 
-/* ---- timeline ---- */
-.hx{display:grid;grid-template-columns:8rem 1fr;gap:0 24px;padding:6px 0;
- border-top:1px solid var(--line2);font-size:.92rem;line-height:1.45}
-@media(max-width:640px){.hx{grid-template-columns:1fr;gap:0;padding:8px 0}}
-.hx .when{color:var(--ink3);font-size:.8rem;padding-top:3px;font-variant-numeric:tabular-nums}
-.hx .t{color:var(--ink2);max-width:52rem}
-.hx .t b{color:var(--ink);font-weight:600}
-.hx .t a{font-size:.84rem;margin-left:8px;overflow-wrap:anywhere}
-.hyear{font-size:1.35rem;margin:38px 0 2px;padding-top:14px;border-top:1px solid var(--line)}
-.hyear .who{font-family:var(--ui);font-weight:400;font-size:.9rem;color:var(--ink3);
- display:block;margin-top:5px;letter-spacing:0}
-.hyear .who a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.3)}
-details.hidx{margin:14px 0 0;font-size:.9rem}
-details.hidx summary{cursor:pointer;color:var(--ink3);font-size:.84rem}
-details.hidx summary:hover{color:var(--red)}
-.decnav{display:flex;flex-wrap:wrap;gap:0 18px;margin:0 0 24px;font-size:.92rem}
-.decnav a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.35);padding-bottom:1px}
-.decnav span{color:var(--ink3)}
-
 /* ---- filters and search ---- */
 .tools{padding:26px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
 .field{display:block;max-width:26rem}
@@ -236,7 +217,11 @@ details.hidx summary:hover{color:var(--red)}
 
 /* ---- print ---- */
 @media print{
- .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav{display:none!important}
+ .nav,.tools,.pager,.bigred,.board,.legend,.starthere,.foot .cols,.copy,.decnav,
+ .yearnav{display:none!important}
+ .yrbar{position:static!important;box-shadow:none}
+ details.hidx{background:none}
+ details.hidx[open] .hxin{display:block}
  body{font-size:11pt;color:#000}
  a{color:#000;text-decoration:none}
  a.ext::after{content:""}
@@ -305,7 +290,7 @@ details.hidx summary:hover{color:var(--red)}
 @media(max-width:640px){.bigred{width:104px;right:8px}}
 </style></head><body>
 <a class="skip" href="#main">Skip to the record</a>
-<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="index.html">SGA <b>60</b></a><ul><li><a href="index.html" aria-current="page">The board</a></li><li><a href="history.html">Timeline</a></li><li><a href="legislation.html">Legislation</a></li><li><a href="corrections.html">Corrections</a></li><li><a href="about.html">About and method</a></li></ul></div></nav>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="index.html">SGA <b>60</b></a><ul><li><a href="index.html" aria-current="page">The board</a></li><li><a href="history.html">Timeline</a></li><li><a href="legislation.html">Legislation</a></li><li><a href="corrections.html">Corrections</a></li><li><a href="sources.html">Sources</a></li><li><a href="about.html">About and method</a></li></ul></div></nav>
 <main id="main">
 
 <header class="head"><div class="wrap">
