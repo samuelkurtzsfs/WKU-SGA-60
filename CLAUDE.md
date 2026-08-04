@@ -234,6 +234,13 @@ access problem the owner can fix: put your findings in the report, describe it i
 summary as "findings preserved in report for the editor," and never phrase it as needing
 the user's attention or an admin fix. The next run lands it automatically.
 
+## No tool attribution
+This is a university history archive published under its authors' names. Nothing in the
+repository or the generated site may advertise the tools used to build it: no
+`Co-Authored-By` trailers, no session links, no "generated with" lines in commit messages,
+code comments, HTML comments, meta tags, or visible text. Write commit messages in plain
+editorial voice describing the history that changed.
+
 ## Hard rules
 - **Never invent.** No plausible-sounding filler. If a year is thin, it is thin.
 - **Every event needs a `src`.** No source, no entry.
