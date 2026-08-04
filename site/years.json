@@ -5682,15 +5682,42 @@
    ],
    "organization": {
     "executive": [
-     {"office": "President", "name": "J. Garrett Edmonds", "note": "Also student regent on the WKU Board of Regents.", "src": {"label": "WKU Talisman, Voter's Guide, 28 Sep 2020", "url": "http://wkutalisman.com/voters-guide-2020-sga-election/"}},
-     {"office": "Administrative Vice President", "name": "Isaac Keller", "note": "Confirmed 29-1 in October 2020.", "src": {"label": "Herald, 21 Oct 2020", "url": "https://wkuherald.com/13430/news/sga-votes-on-administrative-vice-president-at-this-weeks-meeting/"}}
+     {
+      "office": "President",
+      "name": "J. Garrett Edmonds",
+      "note": "Also student regent on the WKU Board of Regents.",
+      "src": {
+       "label": "WKU Talisman, Voter's Guide, 28 Sep 2020",
+       "url": "http://wkutalisman.com/voters-guide-2020-sga-election/"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Isaac Keller",
+      "note": "Confirmed 29-1 in October 2020.",
+      "src": {
+       "label": "Herald, 21 Oct 2020",
+       "url": "https://wkuherald.com/13430/news/sga-votes-on-administrative-vice-president-at-this-weeks-meeting/"
+      }
+     }
     ],
     "senate": {
      "officers": [
-      {"office": "Speaker of the Senate", "name": "Shelby Robertson", "src": {"label": "Herald, 7 Oct 2020", "url": "https://wkuherald.com/13485/news/sga-votes-on-budget-at-first-official-meeting-of-the-year/"}}
+      {
+       "office": "Speaker of the Senate",
+       "name": "Shelby Robertson",
+       "src": {
+        "label": "Herald, 7 Oct 2020",
+        "url": "https://wkuherald.com/13485/news/sga-votes-on-budget-at-first-official-meeting-of-the-year/"
+       }
+      }
      ],
      "committees": [
-      {"name": "Ad Hoc (Outreach)", "chair": "Me'Lon Craighead", "note": "Formed October 2020."}
+      {
+       "name": "Ad Hoc (Outreach)",
+       "chair": "Me'Lon Craighead",
+       "note": "Formed October 2020."
+      }
      ],
      "note": "Cabinet also included Matt Barr, Ashlynn Evans, Kody Okert and Paul Brosky; Roderick Maul and Tess Welch were elected committee chairs in October 2020 (SGA Executive Cabinet minutes, 13 Oct 2020, https://www.wku.edu/sga/executive/execs_minutes/sga_execminutes_10_13_20.pdf)."
     }
@@ -6445,18 +6472,66 @@
    ],
    "organization": {
     "executive": [
-     {"office": "President", "name": "Rush Robinson", "note": "Also student regent on the WKU Board of Regents.", "src": {"label": "Wayback Machine capture, 15 Dec 2025", "url": "https://web.archive.org/web/20251215185802/https://www.wku.edu/sga/executive/index.php"}},
-     {"office": "Vice President", "name": "Savanna Kurtz", "src": {"label": "WKU News - Robinson elected", "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12496"}},
-     {"office": "Chief Financial Officer", "name": "Gabriel Jerdon", "src": {"label": "WKU News - Robinson elected", "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12496"}},
-     {"office": "Chief of Staff", "name": "Maggie Yelton", "src": {"label": "Wayback Machine capture, 15 Dec 2025", "url": "https://web.archive.org/web/20251215185802/https://www.wku.edu/sga/executive/index.php"}},
-     {"office": "Chief Communications Officer", "name": "Preston Jenkins", "note": "Reappointed 22 April 2025; confirmed by the Senate.", "src": {"label": "Herald, 15 Sep 2025", "url": "https://wkuherald.com/86549/news/sga-announces-opportunity-for-students-to-leave-a-lasting-legacy-on-campus/"}}
+     {
+      "office": "President",
+      "name": "Rush Robinson",
+      "note": "Also student regent on the WKU Board of Regents.",
+      "src": {
+       "label": "Wayback Machine capture, 15 Dec 2025",
+       "url": "https://web.archive.org/web/20251215185802/https://www.wku.edu/sga/executive/index.php"
+      }
+     },
+     {
+      "office": "Vice President",
+      "name": "Savanna Kurtz",
+      "src": {
+       "label": "WKU News - Robinson elected",
+       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12496"
+      }
+     },
+     {
+      "office": "Chief Financial Officer",
+      "name": "Gabriel Jerdon",
+      "src": {
+       "label": "WKU News - Robinson elected",
+       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12496"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Maggie Yelton",
+      "src": {
+       "label": "Wayback Machine capture, 15 Dec 2025",
+       "url": "https://web.archive.org/web/20251215185802/https://www.wku.edu/sga/executive/index.php"
+      }
+     },
+     {
+      "office": "Chief Communications Officer",
+      "name": "Preston Jenkins",
+      "note": "Reappointed 22 April 2025; confirmed by the Senate.",
+      "src": {
+       "label": "Herald, 15 Sep 2025",
+       "url": "https://wkuherald.com/86549/news/sga-announces-opportunity-for-students-to-leave-a-lasting-legacy-on-campus/"
+      }
+     }
     ],
     "senate": {
      "officers": [
-      {"office": "Speaker of the Senate", "name": "Hadley Whipple", "src": {"label": "Herald, 8 Apr 2026", "url": "https://wkuherald.com/92550/news/sga-spends-second-to-last-meeting-deliberating-on-final-bills/"}}
+      {
+       "office": "Speaker of the Senate",
+       "name": "Hadley Whipple",
+       "src": {
+        "label": "Herald, 8 Apr 2026",
+        "url": "https://wkuherald.com/92550/news/sga-spends-second-to-last-meeting-deliberating-on-final-bills/"
+       }
+      }
      ],
      "committees": [
-      {"name": "Legislative Operations Committee", "chair": "Caden Lucas", "note": "Authored the transcript voucher bill among other legislation."}
+      {
+       "name": "Legislative Operations Committee",
+       "chair": "Caden Lucas",
+       "note": "Authored the transcript voucher bill among other legislation."
+      }
      ],
      "note": "13 senators-at-large were elected alongside class, transfer/non-traditional, first-generation and college-specific seats in the April 2025 general election; three seniors elected as senior senators were Sophia Bryant, Maggie Yelton and Malachi Humble."
     }
