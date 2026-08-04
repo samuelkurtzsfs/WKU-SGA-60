@@ -9097,6 +9097,17 @@
      }
     },
     {
+     "date": "2017-10-24",
+     "title": "Dahmer condemned a blackface Halloween incident at senate meeting",
+     "body": "President Andi Dahmer opened the eighth meeting of the Senate by telling members that a student had worn blackface to a Halloween party the previous weekend and that it was not acceptable. She also hosted student body presidents from other Kentucky universities on campus that weekend and reminded senators that Herald reporters were allowed into all university committee meetings.",
+     "campus": true,
+     "src": {
+      "label": "SGA Senate meeting minutes, 24 Oct 2017",
+      "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_10_24_17.pdf",
+      "file": "2017-18-senate-minutes-10-24-17.pdf"
+     }
+    },
+    {
      "date": "2017-11-09",
      "title": "SGA passes resolution supporting DACA students",
      "body": "At its Nov. 7 meeting the senate passed a resolution, co-authored by President Andi Dahmer and Francisco Serrano, standing in solidarity with WKU students who were DACA recipients. The measure passed 32-1 and was a revision of the clean DREAM Act resolution rejected the previous week, reframed to address only the WKU student community. Dahmer noted WKU was one of the last Kentucky schools to pass something of this nature.",
@@ -9282,6 +9293,18 @@
       "label": "WKU SGA Constitution, as amended spring 2017",
       "url": "https://www.wku.edu/sga/wku_sga_constitution_2017-2018.pdf"
      }
+    },
+    {
+     "file": "2017-18-senate-minutes-10-24-17.pdf",
+     "title": "SGA Senate minutes, 24 October 2017",
+     "summary": "Minutes of the eighth meeting of the 16th Senate, opening with President Andi Dahmer's condemnation of a student who wore blackface to a Halloween party that weekend.",
+     "extract": "\"A student dressed in black face for a Halloween party and this is not acceptable.\"",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "WKU SGA Senate minutes, 24 Oct 2017",
+      "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_10_24_17.pdf"
+     }
     }
    ]
   },
@@ -9296,10 +9319,10 @@
      "plaque_term": "2018-19",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
+     "note": "Confirmed by an independent WKU record outside the plaque: the University Senate's Nov. 15, 2018 meeting agenda lists him under reports as \"SGA President: Stephen Mayer.\"",
      "sources": [
       {
        "label": "Herald, 18 Apr 2018",
@@ -9308,6 +9331,10 @@
       {
        "label": "Herald, 11 Sep 2018",
        "url": "https://wkuherald.com/23449/news/sga-president-prepares-for-a-tough-year/"
+      },
+      {
+       "label": "WKU University Senate meeting agenda, 15 Nov 2018",
+       "url": "https://www.wku.edu/senate/archives/senate_nov15_2018.php"
       }
      ],
      "profile": [
@@ -9317,6 +9344,24 @@
     }
    ],
    "events": [
+    {
+     "date": "2018-09-11",
+     "title": "Senate rejected first Judicial Council nominee of the term",
+     "body": "The senate voted 8-7-1 against confirming Wood Brown, a Pike fraternity member and law clerk, as associate justice of the Judicial Council, after Mayer said his constitutional duty required him to appoint whom he judged best despite recusing himself from the interview process; senators argued the Judicial Council's own top-ranked applicant, not Brown, should have been chosen. Mayer's next nominee, Alex Rivera, was confirmed the following week.",
+     "src": {
+      "label": "SGA Senate meeting minutes, 11 Sep 2018",
+      "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_11_sep.docx"
+     }
+    },
+    {
+     "date": "2018-09-25",
+     "title": "Academic and Student Affairs directorship filled after two failed tries",
+     "body": "The senate confirmed Aubrey Kelly as Director of Academic and Student Affairs 24-3-4, three weeks into the term. Initial nominee Ashley Cox was not confirmed at the first meeting after senators questioned her committee attendance, then withdrew when a family member was hospitalized; her replacement, Anna McAvoy, failed confirmation 6-9-1 on Sept. 11 after a senator raised concerns about her scholarship-grading experience.",
+     "src": {
+      "label": "SGA Senate meeting minutes, 25 Sep 2018",
+      "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"
+     }
+    },
     {
      "date": "2018-09-20",
      "title": "Senate asked WKU to cancel classes on Election Day",
@@ -9400,7 +9445,33 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+      {"office": "President", "name": "Stephen Mayer", "note": "Also served as student regent under the merged offices.", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
+      {"office": "Executive Vice President", "name": "Garrett Edmonds", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
+      {"office": "Administrative Vice President", "name": "Harper Anderson", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
+      {"office": "Chief of Staff", "name": "Will Harris", "note": "Elected student body president for 2019-20 the following spring.", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
+      {"office": "Director of Public Relations", "name": "Noah Moore", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
+      {"office": "Director of Information Technology", "name": "Paul Brosky", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
+      {"office": "Director of Academic and Student Affairs", "name": "Aubrey Kelly", "note": "Third nominee for the seat; confirmed 24-3-4 on Sep. 25, 2018 after Ashley Cox withdrew and Anna McAvoy's confirmation failed 6-9-1.", "src": {"label": "SGA Senate minutes, 25 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"}}
+    ],
+    "senate": {
+      "officers": [
+        {"office": "Speaker of the Senate", "name": "Asha McWilliams", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
+        {"office": "Secretary of the Senate", "name": "Andrew Merritt", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}}
+      ],
+      "committees": [
+        {"name": "Campus Improvements", "chair": "Matt Barr", "src": {"label": "SGA Senate minutes, 25 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"}},
+        {"name": "Public Relations", "chair": "Brigid Stakelum", "note": "Rendered \"Bridget Stakelum\" in the Sept. 25, 2018 minutes and \"Brigid Stakelum\" in the Oct. 23 and Nov. 13 minutes; spelling unverified.", "src": {"label": "SGA Senate minutes, 23 Oct 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"}},
+        {"name": "Sustainability", "chair": "Jayden Thomas", "src": {"label": "SGA Senate minutes, 4 Sep 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"}},
+        {"name": "Legislative Research", "chair": "Trevor Huffman", "src": {"label": "SGA Senate minutes, 23 Oct 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"}},
+        {"name": "Diversity and Inclusion", "chair": "Mark Clark", "src": {"label": "SGA Senate minutes, 23 Oct 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"}},
+        {"name": "Committee of Academic and Student Affairs (CASA)", "chair": "Amanda Harder", "note": "A Senate committee distinct from the executive Director of Academic and Student Affairs.", "src": {"label": "SGA Senate minutes, 13 Nov 2018", "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-13-nov.docx"}}
+      ],
+      "note": "This was the 17th Senate, called to order each week by Speaker Asha McWilliams. Randall P. Bogard served as SGA's faculty advisor. Minutes for this term were posted by WKU as Word documents rather than PDFs."
+    }
+   }
   },
   {
    "id": "2019-20",
