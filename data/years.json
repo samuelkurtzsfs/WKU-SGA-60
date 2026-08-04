@@ -3489,6 +3489,54 @@
       {
        "label": "TopSCHOLAR SGA Reports 66",
        "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/66"
+      },
+      {
+       "label": "SGA Legislation, Resolution 90-10-F, \"Left Handed Desks\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/147"
+      },
+      {
+       "label": "SGA Legislation, Resolution 90-12-F, \"Excused Absences for Earthquake Prediction\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/145"
+      },
+      {
+       "label": "SGA Legislation, Resolution 91-7-S, \"Intramural Field\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/174"
+      },
+      {
+       "label": "SGA Legislation, Bill #90-2-F, \"Organizational Presidents Roundtable\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/127"
+      },
+      {
+       "label": "SGA Legislation, Bill #90-4-F, \"Microwaves\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/125"
+      },
+      {
+       "label": "SGA Legislation, Bill #91-3-S, \"ASG to Join Hilltopper Athletic Foundation\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/139"
+      },
+      {
+       "label": "SGA Legislation, Bill #91-4-S, \"Suspending By-Laws\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/138"
+      },
+      {
+       "label": "SGA Legislation, Bill #91-5-S, \"Amend By-Laws\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/137"
+      },
+      {
+       "label": "SGA Legislation, Bill #91-6-S, \"By-Laws\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/135"
+      },
+      {
+       "label": "SGA Legislation, Bill #91-7-S, \"Presidential Scholar Recognition\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/133"
+      },
+      {
+       "label": "SGA Legislation, Bill #91-9-S, \"Book Exchanger Bill\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/130"
+      },
+      {
+       "label": "Herald 66:33, 17 Jan 1991, \"Two Associated Student Government Officers Step Down\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7730"
       }
      ],
      "profile": [
@@ -3497,7 +3545,8 @@
       "The archive does not preserve further detail of how the term ended or what Colvin did afterward.",
       "Colvin took office in August 1990, introduced by the Herald as a new leader who wanted to make ideas reality. He had been active in the organization at least since September 1989, when he signed a Herald piece soliciting help for ASG.",
       "His spring 1991 agenda was the widest of the era: in a single February week ASG moved to cap tuition boosts, proposed overhauling the Detrex registration system, and planned lobbying to protect student financial aid.",
-      "Letters he signed under Resolution 91-7-S survive in the SGA records, pressing administrators Kemble Johnson and Debby Cherwak for improvements to Detrex Field."
+      "Letters he signed under Resolution 91-7-S survive in the SGA records, pressing administrators Kemble Johnson and Debby Cherwak for improvements to Detrex Field.",
+      "Legislative records fill out the year beyond what the Herald's brief items captured. In fall 1990 the body introduced bills for a roundtable of student organization presidents (Bill #90-2-F) and for microwaves in the cafeterias (Bill #90-4-F). On 29 November 1990 it passed Resolution 90-10-F asking for a left-handed desk in every classroom, and killed Resolution 90-12-F, which had asked that absences tied to Iben Browning's widely publicized New Madrid Fault earthquake prediction be excused; no earthquake came. In the spring the Senate suspended and amended its own by-laws in a short cluster of bills, including Bill #91-6-S changing the procedure for overriding a presidential veto - a procedure tested weeks later when the emergency-kit resolution survived a veto on 14 March 1991. The spring term also produced a resolution asking the university to improve Detrex Field, the intramural field, and bills on joining the Hilltopper Athletic Foundation, recognizing presidential scholars in the Herald, and a book exchange board for Grise Hall."
      ]
     }
    ],
@@ -3577,15 +3626,6 @@
      }
     },
     {
-     "date": "1990-11-29",
-     "title": "Left-handed desks pushed; excused absences killed",
-     "body": "ASG pushed for left-handed desks in classrooms and killed a resolution on excused absences in the same stretch of meetings. The two items closed out the fall legislative calendar.",
-     "src": {
-      "label": "Herald 66:27, 29 Nov 1990",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7666"
-     }
-    },
-    {
      "date": "1991-01-10",
      "title": "Survey backs a dead week",
      "body": "An ASG survey supported creating a dead week before finals. The same issue carried an opinion piece headlined that Colvin failed on final examinations.",
@@ -3629,9 +3669,132 @@
       "label": "Herald 66:54, 11 Apr 1991",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7752"
      }
+    },
+    {
+     "date": "1990-11-29",
+     "title": "ASG passes resolution for left-handed desks",
+     "body": "The Associated Student Government passed Resolution 90-10-F, requesting that a left-handed desk be provided in each classroom. The Herald reported the vote in its 29 November 1990 issue, alongside news that a companion resolution on excused absences had been killed the same week.",
+     "src": {
+      "label": "SGA Legislation, Resolution 90-10-F, \"Left Handed Desks\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/147"
+     }
+    },
+    {
+     "date": "1990-11-29",
+     "title": "ASG kills resolution on earthquake-prediction absences",
+     "body": "The Associated Student Government killed Resolution 90-12-F, which had asked that student absences tied to Iben Browning's widely publicized forecast of a major New Madrid Fault earthquake be excused. Browning had predicted the quake for on or near 3 December 1990; it prompted regional anxiety and some school closures, but no earthquake occurred. The Herald reported the resolution's defeat in its 29 November 1990 issue.",
+     "src": {
+      "label": "SGA Legislation, Resolution 90-12-F, \"Excused Absences for Earthquake Prediction\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/145"
+     }
+    },
+    {
+     "date": "1990-09-01",
+     "title": "ASG bill proposes an organizational presidents roundtable",
+     "body": "The Associated Student Government introduced Bill #90-2-F, proposing a roundtable of student organization presidents.",
+     "src": {
+      "label": "SGA Legislation, Bill #90-2-F, \"Organizational Presidents Roundtable\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/127"
+     }
+    },
+    {
+     "date": "1990-09-01",
+     "title": "ASG bill would put microwaves in cafeterias",
+     "body": "The Associated Student Government introduced Bill #90-4-F, requesting that microwaves be placed in campus cafeterias.",
+     "src": {
+      "label": "SGA Legislation, Bill #90-4-F, \"Microwaves\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/125"
+     }
+    },
+    {
+     "date": "1991-01-01",
+     "title": "ASG votes to join the Hilltopper Athletic Foundation",
+     "body": "The Associated Student Government passed Bill #91-3-S, providing for ASG membership in the Hilltopper Athletic Foundation.",
+     "src": {
+      "label": "SGA Legislation, Bill #91-3-S, \"ASG to Join Hilltopper Athletic Foundation\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/139"
+     }
+    },
+    {
+     "date": "1991-01-01",
+     "title": "ASG overhauls its by-laws, including veto-override procedure",
+     "body": "In the spring term the Associated Student Government passed a cluster of by-law bills: Bill #91-4-S suspended the by-laws to allow a vote on a pending matter, Bill #91-5-S amended the by-laws on how resolutions could be submitted, and Bill #91-6-S changed the by-laws on overriding a presidential veto. The new override procedure was tested weeks later when the Senate's emergency-kit resolution survived a veto on 14 March 1991.",
+     "src": {
+      "label": "SGA Legislation, Bill #91-6-S, \"By-Laws\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/135"
+     }
+    },
+    {
+     "date": "1991-01-01",
+     "title": "ASG resolves to improve Detrex Field",
+     "body": "The Associated Student Government passed Resolution 91-7-S, requesting improvements to Detrex Field, the campus intramural field.",
+     "src": {
+      "label": "SGA Legislation, Resolution 91-7-S, \"Intramural Field\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/174"
+     }
+    },
+    {
+     "date": "1991-01-01",
+     "title": "ASG bill would recognize presidential scholars in the Herald",
+     "body": "The Associated Student Government introduced Bill #91-7-S, a bill separate from the same-numbered resolution on Detrex Field, proposing that WKU's presidential scholars be recognized in the College Heights Herald.",
+     "src": {
+      "label": "SGA Legislation, Bill #91-7-S, \"Presidential Scholar Recognition\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/133"
+     }
+    },
+    {
+     "date": "1991-01-01",
+     "title": "ASG bill proposes a book exchange board in Grise Hall",
+     "body": "The Associated Student Government introduced Bill #91-9-S, proposing a book exchange bulletin board be placed in Grise Hall.",
+     "src": {
+      "label": "SGA Legislation, Bill #91-9-S, \"Book Exchanger Bill\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/130"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Michael Colvin",
+      "src": {
+       "label": "Herald 65:55, 19 Apr 1990, \"Michael Colvin Aces Associated Student Government Election\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7635/"
+      }
+     },
+     {
+      "office": "Officer (title not specified in the archive)",
+      "name": "Amos Gott",
+      "note": "Stepped down as an ASG officer in January 1991, reported in the same Herald issue as Van Hodge's resignation.",
+      "src": {
+       "label": "Herald 66:33, 17 Jan 1991, \"Two Associated Student Government Officers Step Down\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7730"
+      }
+     },
+     {
+      "office": "Officer (title not specified in the archive)",
+      "name": "Van Hodge",
+      "note": "Stepped down as an ASG officer in January 1991, reported in the same Herald issue as Amos Gott's resignation.",
+      "src": {
+       "label": "Herald 66:33, 17 Jan 1991, \"Two Associated Student Government Officers Step Down\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7730"
+      }
+     },
+     {
+      "office": "Public Relations Vice President",
+      "name": "Karl Miller",
+      "note": "Picked to fill the public relations vice presidency after Gott and Hodge stepped down.",
+      "src": {
+       "label": "Herald 66:33, 17 Jan 1991",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7730"
+      }
+     }
+    ],
+    "senate": {
+     "note": "The remaining officers publicly clashed over comprehensive exams the same month Gott and Hodge stepped down. Archive does not preserve a full senate officer list or seat count for this year."
+    }
+   }
   },
   {
    "id": "1991-92",
@@ -3680,13 +3843,30 @@
       {
        "label": "On Campus 1:16, 6 Nov 1991, \"Joe Iracane Re-elected to Chair Regents\"",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4304"
+      },
+      {
+       "label": "SGA Legislation, Resolution 91-7-F, \"Student Picket to Support President Meredith\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/175"
+      },
+      {
+       "label": "SGA Legislation, Bill #91-09-F, \"President for a Day\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/166"
+      },
+      {
+       "label": "SGA Legislation, Bill #91-03-F, \"ASG Chambers Improvement\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/140"
+      },
+      {
+       "label": "SGA Legislation, Bill #91-11-F, \"Change ASG Slogan\"",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/129"
       }
      ],
      "profile": [
       "Falmlen won the Associated Student Government presidency in results the Herald reported on 11 April 1991 under the headline \"Heather Falmlen Wins Amid Associated Student Government Election Protests.\" A Herald \"Meet the Candidates\" feature on 2 April had previewed four contenders for the race: Falmlen, Rob Evans, Van Hodge, and Dan Knowles. The same 11 April issue reported a rival group urging students to boycott the vote, an editorial calling the contest's \"immature antics\" a disappointment, and a published complaint that the Herald's own election coverage had been biased.",
       "In office, her administration fought a running battle over the makeup of the Board of Regents. On 29 October 1991 the Associated Student Government passed Resolution 91-6-F asking that Joe Iracane not be re-elected chair of the board; the Herald covered the vote the same day under \"Associated Student Government Opposes Joseph Iracane.\" The board went ahead and re-elected him a week later, the university's own \"On Campus\" newsletter reported on 6 November. On 30 January 1992 the Herald reported the Associated Student Government was separately planning a committee aimed at student access to the regent, in the same issue that carried an editorial cartoon, \"Ventriloquist's Dummy,\" targeting Falmlen. On 4 February 1992 the body passed Resolution 92-7-S, declaring its support for the WKU football program in spite of budget cuts; the Board of Regents voted that May to keep the program.",
       "That fall the body passed Resolution 91-2-F, asking for a change to Big Red Shuttle bus fares, and held its regular fall senate elections in October, including a separate freshman senator election on 15 October.",
-      "The signature action of her term was procedural: on 7 April 1992 the Associated Students voted to rename itself the Student Government Association, a change students ratified in a referendum a week later, effective that autumn. WKU's own \"On Campus\" newsletter had confirmed on 22 May 1991, at the start of her term, that Falmlen held both the presidency and the student regent seat - the same dual role held by the presidents before and after her in this period. The archive does not preserve further detail of her regency or of what she did after her term."
+      "The signature action of her term was procedural: on 7 April 1992 the Associated Students voted to rename itself the Student Government Association, a change students ratified in a referendum a week later, effective that autumn. WKU's own \"On Campus\" newsletter had confirmed on 22 May 1991, at the start of her term, that Falmlen held both the presidency and the student regent seat - the same dual role held by the presidents before and after her in this period. The archive does not preserve further detail of her regency or of what she did after her term.",
+      "Other legislative business that fall included Resolution 91-7-F, backing the renewal of President Thomas Meredith's contract by the Board of Regents; a bill funding a \"President for a Day\" fundraiser (Bill #91-09-F); a bill funding renovation of the ASG chambers (Bill #91-03-F); and a bill proposing a new organizational slogan (Bill #91-11-F), introduced the same season the body renamed itself from the Associated Students to the Student Government Association."
      ]
     }
    ],
@@ -3809,6 +3989,42 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4304"
      },
      "campus": true
+    },
+    {
+     "date": "1991-09-01",
+     "title": "ASG resolves to support Meredith's contract renewal",
+     "body": "The Associated Student Government passed Resolution 91-7-F, backing the renewal of President Thomas Meredith's contract by the Board of Regents.",
+     "src": {
+      "label": "SGA Legislation, Resolution 91-7-F, \"Student Picket to Support President Meredith\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/175"
+     }
+    },
+    {
+     "date": "1991-09-01",
+     "title": "ASG bill funds a \"President for a Day\" fundraiser",
+     "body": "The Associated Student Government introduced Bill #91-09-F, providing for a \"President for a Day\" fundraiser.",
+     "src": {
+      "label": "SGA Legislation, Bill #91-09-F, \"President for a Day\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/166"
+     }
+    },
+    {
+     "date": "1991-09-01",
+     "title": "ASG bill funds renovation of its own chambers",
+     "body": "The Associated Student Government introduced Bill #91-03-F, providing for the renovation of the ASG chambers.",
+     "src": {
+      "label": "SGA Legislation, Bill #91-03-F, \"ASG Chambers Improvement\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/140"
+     }
+    },
+    {
+     "date": "1991-09-01",
+     "title": "ASG bill proposes changing its own slogan",
+     "body": "The Associated Student Government introduced Bill #91-11-F, proposing to change the organization's slogan, in the same fall that it voted to rename itself from the Associated Students to the Student Government Association.",
+     "src": {
+      "label": "SGA Legislation, Bill #91-11-F, \"Change ASG Slogan\"",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/129"
+     }
     }
    ],
    "status": "researched",
