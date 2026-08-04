@@ -1322,12 +1322,23 @@
       {
        "label": "WKU Timeline: Gregory McKinney (Western Alumnus, 19 Jun 1974)",
        "url": "https://digitalcommons.wku.edu/wku_timeline/354/"
+      },
+      {
+       "label": "Herald 50:17, 25 Oct 1974",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5032/"
+      },
+      {
+       "label": "Herald 50:54, 29 Apr 1975",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5074/"
       }
      ],
      "profile": [
       "Gregory McKinney came to campus prominence as a speaker: in March 1974 the Herald reported him winning top honors in competition.",
       "That spring McKinney ran for the student seat on the Board of Regents against Sid Stevens, the two candidates' final appeals running side by side in the Herald as an editorial called the race a clear choice for voters.",
-      "McKinney won the seat and was sworn in on June 19, 1974, becoming WKU's first African American student regent."
+      "McKinney won the seat and was sworn in on June 19, 1974, becoming WKU's first African American student regent.",
+      "Gregory McKinney was sworn in as WKU's first African American student regent on June 19, 1974, a milestone recorded in the university's official timeline collection.",
+      "Midway through the fall 1974 semester, Herald writer Al Cross profiled the new regent under the headline 'Greg McKinney Feels Regents Can Aid Western's Progress,' as McKinney settled into his seat on the Board of Regents.",
+      "As the academic year closed, the Herald reported 'Student Regent Greg McKinney Calls Year Rewarding,' in the same issue that covered the regents approving a record budget and academic proposals."
      ]
     },
     {
@@ -1351,12 +1362,27 @@
       {
        "label": "Herald 50:50, 15 Apr 1975",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5078/"
+      },
+      {
+       "label": "WKU SGA, Presidents 1966-Present (archived 24 Sep 2001)",
+       "url": "https://web.archive.org/web/20010924113823/http://www.wku.edu/Dept/Org/Student/SGA/formersgapres.htm"
+      },
+      {
+       "label": "Herald 50:9, 27 Sep 1974",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5015/"
+      },
+      {
+       "label": "Herald 50:47, 4 Apr 1975",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5065/"
       }
      ],
      "profile": [
       "Jeff Consolo won the Associated Student Government presidency in the March 1974 election on a ticket with Steve Henry, in a cycle whose primary the Herald said showed Greek influence.",
       "Taking office, Consolo told the Herald he hoped for increased student involvement during his term.",
-      "Consolo's term closed on April 15, 1975, when new ASG officers were installed at the day's meeting after a spring in which his congress had simplified election procedures and wound down its concert program."
+      "Consolo's term closed on April 15, 1975, when new ASG officers were installed at the day's meeting after a spring in which his congress had simplified election procedures and wound down its concert program.",
+      "Jeffrey Paul Consolo, of Mansfield, Ohio, served as the ninth president of WKU's Associated Student Government for the 1974-75 term, according to the SGA's own roster of former presidents.",
+      "Early in the fall 1974 semester, Consolo appointed eight students to seats in the ASG congress, reported by Jim Reynolds under the headline 'Jeff Consolo Tabs Eight for Congress.'",
+      "In early April 1975, as the polls prepared to open to elect his successor, the Herald ran 'Jeff Consolo Notes Progress in His Term' alongside items crediting ASG moves with cutting bookstore prices, gaining parking board input and folding the Volunteer Bureau into the organization."
      ]
     }
    ],
@@ -1388,6 +1414,86 @@
      "src": {
       "label": "Herald 50:50, 15 Apr 1975",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5078/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1974-09-27",
+     "title": "Keffer wins freshman vote; Consolo names eight to congress",
+     "body": "The Herald reported that Jay Keffer won the freshman election for the top freshman post. In the same issue, ASG president Jeff Consolo tabbed eight students for seats in the ASG congress, and the Academic Council heard a proposal for more student votes.",
+     "src": {
+      "label": "Herald 50:9, 27 Sep 1974",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5015/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1974-10-15",
+     "title": "Protesters urge ASG revamping",
+     "body": "Protesters urged a revamping of the Associated Student Government. The same issue carried Janet Steen's report that ASG ecology projects were non-existent.",
+     "src": {
+      "label": "Herald 50:14, 15 Oct 1974",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5026/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1974-11-19",
+     "title": "ASG schedules Kiss and initiates concert hour",
+     "body": "ASG scheduled the rock band Kiss and initiated a concert hour, part of its role booking campus entertainment that fall. The concert program later became a major source of financial trouble for the organization.",
+     "src": {
+      "label": "Herald 50:24, 19 Nov 1974",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5035/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1975-01-21",
+     "title": "ASG rescues the Student Volunteer Bureau",
+     "body": "ASG agreed to administer the Student Volunteer Bureau. The Herald reported that the bureau was rescued by the student government's action.",
+     "src": {
+      "label": "Herald 50:30, 21 Jan 1975",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5053/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1975-02-07",
+     "title": "Budget troubles threaten ASG entertainment role",
+     "body": "The Herald reported that financial difficulties might force ASG to drop its entertainment duties, and the ASG congress heard the treasurer's budget explanation. Columnists Dave Allen and Craig Griffith examined the organization's budget problems in the same issue.",
+     "src": {
+      "label": "Herald 50:35, 7 Feb 1975",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5048/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1975-02-28",
+     "title": "Quorum failures halt ASG twice in one week",
+     "body": "ASG action was halted twice during the week by a lack of quorum. A Herald editorial said the confusion in ASG signaled a need for change.",
+     "src": {
+      "label": "Herald 50:41, 28 Feb 1975",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5056/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1975-03-21",
+     "title": "Primary canceled; constitutional change approved",
+     "body": "The primary election for Associated Student Government was canceled, and the student government approved a constitutional change. A letter writer in the same issue criticized the Herald's coverage of ASG.",
+     "src": {
+      "label": "Herald 50:43, 21 Mar 1975",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5069/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1975-04-11",
+     "title": "Steve Henry elected to lead ASG",
+     "body": "Following the spring election, the Herald reported that incoming president Steve Henry would give activities priority in Associated Student Government. The organization also prepared to name its top member, and the paper noted that Greeks continued to dominate the campus political scene.",
+     "src": {
+      "label": "Herald 50:49, 11 Apr 1975",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5079/"
      },
      "campus": true
     }
