@@ -149,6 +149,36 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/504/"
      },
      "campus": true
+    },
+    {
+     "date": "1966-11-10",
+     "title": "Government and administration meet on campus problems",
+     "body": "The Herald reported Student Government Association leaders meeting with President Kelly Thompson to discuss campus problems, an early instance of the year-old government dealing directly with the administration.",
+     "src": {
+      "label": "Herald 46:7, 10 Nov 1966",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4697/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1967-03-09",
+     "title": "Herald warns of a 'popularity bandwagon' in the spring election",
+     "body": "A week before the presidential campaign opened, the Herald ran a piece by Fran Salyers arguing that popularity, not merit, was set to decide the Associated Students election.",
+     "src": {
+      "label": "Herald 46:16, 9 Mar 1967",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4709/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1967-05-18",
+     "title": "Herald presses students to vote as the year closes",
+     "body": "Days after the outgoing administration's year-end review, the Herald ran a piece headlined 'Goof Government Needs Student Vote,' pressing students toward greater turnout as Menser's incoming administration took over.",
+     "src": {
+      "label": "Herald 46:24, 18 May 1967",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4720/"
+     },
+     "campus": true
     }
    ],
    "status": "researched"
@@ -184,6 +214,7 @@
      ],
      "profile": [
       "Menser headed the Associated Student Government from the start of the 1967-68 year, appearing alongside President Kelly Thompson in a 14 September 1967 Herald article welcoming students back to campus.",
+      "That fall the idea of a student seat on the Board of Regents was already circulating: a 2 November 1967 Herald article headlined 'Ward Favors Student on Board of Regents' reported support for the idea four months before an enabling bill reached committee.",
       "That December the Herald reported an Associated Students survey of student activity preferences and, in the same 8 December 1967 issue, ran a piece by Dennis Jaffe commending the government's efforts; the same issue covered the Kentucky Intercollegiate Press Association backing a proposal for student representation.",
       "In February 1968 Western sent lobbyists to Frankfort for a bill to seat a student on the Board of Regents; on 4 April 1968 the Herald reported Menser had assumed duties as the board's first student regent, a non-voting seat.",
       "As his term closed, the Herald's 29 April 1968 issue - the same one covering the Straeffer-Whitley presidential race to succeed him - carried both a piece headlined 'Menser Discusses Head Fee' and a separate retrospective, 'Past Performance of Associated Student Government Analyzed'. The archive does not yet hold the text of either article, only their headlines."
@@ -191,6 +222,34 @@
     }
    ],
    "events": [
+    {
+     "date": "1967-10-14",
+     "title": "Rodes-Harlin Hall opens as a nine-story women's dorm",
+     "body": "The Herald covered the opening of Rodes-Harlin Hall, a new nine-story women's residence hall, as campus construction continued to expand housing capacity.",
+     "src": {
+      "label": "Herald 47:6, 14 Oct 1967",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4727/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1967-11-02",
+     "title": "Herald floats a student seat on the Board of Regents",
+     "body": "A Herald article headlined 'Ward Favors Student on Board of Regents' reported support for putting a student on the Board of Regents, months before Western sent lobbyists to Frankfort or a bill reached committee.",
+     "src": {
+      "label": "Herald 47:10, 2 Nov 1967",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4735/"
+     }
+    },
+    {
+     "date": "1967-11-02",
+     "title": "ASG sponsors a Friday dance",
+     "body": "The same issue that floated a student regent seat also reported the Associated Student Government sponsoring a campus dance that Friday.",
+     "src": {
+      "label": "Herald 47:10, 2 Nov 1967",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4735/"
+     }
+    },
     {
      "date": "1967-12-08",
      "title": "ASG survey of student activity preferences",
@@ -210,11 +269,11 @@
      }
     },
     {
-     "date": "1968-02-01",
+     "date": "1968-02-29",
      "title": "WKU sends lobbyists to Frankfort for a student on the Board of Regents",
      "body": "The same Herald issue carries a tuition increase, a discussion group on major issues before the Associated Student Government and a committee investigating women's dormitory rules. This is the origin of the student regent seat.",
      "src": {
-      "label": "Herald 47:20, 1968",
+      "label": "Herald 47:20 [21], 29 Feb 1968",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9003/"
      }
     },
@@ -225,6 +284,24 @@
      "src": {
       "label": "Herald 47:18, 8 Feb 1968",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9006"
+     }
+    },
+    {
+     "date": "1968-02-22",
+     "title": "Herald questions ASG's Judicial Council as students organize a book swap",
+     "body": "Bill Martin's column questioned the Judicial Council's work, while the same issue reported the Associated Student Government directing a student book swap.",
+     "src": {
+      "label": "Herald 47:20, 22 Feb 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9004/"
+     }
+    },
+    {
+     "date": "1968-04-11",
+     "title": "Filing reveals few candidates for the spring election",
+     "body": "Alana White reported that filing for Associated Student Government offices turned up few candidates, in the same issue as a piece urging that criteria for the offices be voiced.",
+     "src": {
+      "label": "Herald 47:27, 11 Apr 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8997/"
      }
     },
     {
@@ -280,7 +357,7 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Single-year plate. Sits between Menser and Straeffer, whose election the Herald reported on 9 May 1968 - so Morgan likely finished a partial term or held the seat between elections. The only Reed Morgan found in the archive is a different, earlier role: chair of the organizing committee that received President Kelly Thompson's approval letter for the Associated Students constitution, 1 April 1966 - two years before this plaque entry. No Herald or WKU Timeline coverage connects a Reed Morgan to a 1968-69 SGA office. Left unresolved rather than moved, since the 1966 role (committee chair, pre-election) is not the same office the plaque implies.",
+     "note": "Single-year plate. Sits between Menser and Straeffer, whose election the Herald reported on 9 May 1968 - so Morgan likely finished a partial term or held the seat between elections. The only Reed Morgan found in the archive is a different, earlier role: chair of the organizing committee that received President Kelly Thompson's approval letter for the Associated Students constitution, 1 April 1966 - two years before this plaque entry. No Herald or WKU Timeline coverage connects a Reed Morgan to a 1968-69 SGA office. Left unresolved rather than moved, since the 1966 role (committee chair, pre-election) is not the same office the plaque implies. Re-checked 4 Aug 2026: fresh TopSCHOLAR searches (name plus SGA/regent/student-government terms) turned up only the same 1963-67 WKU Forensics team roster (M. Reed Morgan, debater) and the 1966 constitution-committee material already cited. Nothing new for 1968-69.",
      "sources": [
       {
        "label": "UA3/3/1, Letter to Organizational Committee for a Western Student Organization, 1 Apr 1966",
@@ -1212,11 +1289,11 @@
      "name": "Steven Yater",
      "plaque_term": "1973-74",
      "role": "president",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "No name is listed for 1974-75 as a single term; the next two plates both read 1974-75. Sole name on the plaque for this year and no competing entry, so almost certainly the president. Not yet confirmed against Herald election coverage.",
+     "note": "Confirmed by the Herald's own 16 April 1974 retrospective, 'Presidency Ends for Steve Yater; One Major Program Started,' which places his presidency closing out at the end of the 1973-74 year, matching the plaque term.",
      "sources": [
       {
        "label": "Herald 53:4, 11 Sep 1973",
@@ -1227,6 +1304,10 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3538/"
       },
       {
+       "label": "Herald 53:53, 16 Apr 1974",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3546/"
+      },
+      {
        "label": "Herald 53:57, 30 Apr 1974",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3541/"
       }
@@ -1234,7 +1315,8 @@
      "profile": [
       "Steve Yater led the Associated Student Government through 1973-74. Early in his term he publicly commended the Board of Regents in the Herald, weeks after the board had increased ASG's budget allotment.",
       "In April 1974, stung by election-season criticism, President Yater defended his administration in a letter to the Herald.",
-      "His final weeks in office stayed argumentative: the Herald of April 30 carried dueling letters under the heading 'Linda Jones vs. Steven Yater' as the student regent race closed out the year."
+      "His final weeks in office stayed argumentative: the Herald of April 30 carried dueling letters under the heading 'Linda Jones vs. Steven Yater' as the student regent race closed out the year.",
+      "The Herald's own retrospective on his term, by Al Cross, ran 16 April 1974 under the headline 'Presidency Ends for Steve Yater; One Major Program Started' - the archive does not yet hold the article's text, only its headline crediting his administration with a single major accomplishment."
      ]
     }
    ],
@@ -1255,8 +1337,7 @@
      "src": {
       "label": "Herald 53:1, 28 Aug 1973",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3496/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1973-09-18",
@@ -1265,8 +1346,7 @@
      "src": {
       "label": "Herald 53:6, 18 Sep 1973",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3491/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1973-09-25",
@@ -1275,8 +1355,7 @@
      "src": {
       "label": "Herald 53:8, 25 Sep 1973",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3489/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1973-12-04",
@@ -1285,8 +1364,7 @@
      "src": {
       "label": "Herald 53:26, 4 Dec 1973",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3507/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1974-02-15",
@@ -1295,8 +1373,7 @@
      "src": {
       "label": "Herald 53:39, 15 Feb 1974",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3528/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1974-02-22",
@@ -1305,8 +1382,7 @@
      "src": {
       "label": "Herald 53:41, 22 Feb 1974",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3526/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1974-03-29",
@@ -1315,8 +1391,7 @@
      "src": {
       "label": "Herald 53:48, 29 Mar 1974",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3532/"
-     },
-     "campus": true
+     }
     },
     {
      "date": "1974-04-19",
@@ -1325,8 +1400,16 @@
      "src": {
       "label": "Herald 53:54, 19 Apr 1974",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3544/"
-     },
-     "campus": true
+     }
+    },
+    {
+     "date": "1974-04-16",
+     "title": "Herald retrospective closes out Yater's presidency",
+     "body": "Al Cross wrote the Herald's retrospective on Steve Yater's term, headlined 'Presidency Ends for Steve Yater; One Major Program Started.' The same issue reported the regent post election set for the following week.",
+     "src": {
+      "label": "Herald 53:53, 16 Apr 1974",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3546/"
+     }
     }
    ],
    "status": "researched"
@@ -1550,11 +1633,11 @@
      "name": "Steve Henry",
      "plaque_term": "1975-76",
      "role": "president",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Check whether this is the Steve Henry who later served as Lieutenant Governor of Kentucky (1995-2003). Do not assert the identification without a source.",
+     "note": "Likely the Steve Henry who later served as Lieutenant Governor of Kentucky (1995-2003). Wikipedia's biography of Stephen L. Henry (b. 8 Oct 1953) states he was elected WKU Student Body President \"in his second attempt, after losing a close election the preceding year to Jeff Costello,\" and served on the WKU Board of Regents as a Kentucky resident while president - matching this record's own Herald sourcing almost exactly: Jeffrey Consolo (not \"Costello\", likely a Wikipedia transcription of the same name) won the presidency in spring 1974, and the Herald's 30 Apr 1976 wrap-up of Henry's term specifically describes him balancing the dual jobs of student regent and ASG president. The match in name, university, era, and this specific narrative beat is treated as verification, but the identification rests on a secondary source (Wikipedia), not a WKU archive document that states it outright - flagged here rather than treated as fully closed.",
      "sources": [
       {
        "label": "Herald 52:7, 19 Sep 1972",
@@ -1567,12 +1650,17 @@
       {
        "label": "Herald 51:59, 30 Apr 1976",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5150/"
+      },
+      {
+       "label": "Wikipedia - Steve Henry",
+       "url": "https://en.wikipedia.org/wiki/Steve_Henry"
       }
      ],
      "profile": [
       "Steve Henry appeared in ASG coverage as early as September 1972, when the Herald reported his view that the Associated Student Government had lost respect.",
       "Henry won the spring 1974 election on a ticket with Jeff Consolo, and resigned his post running the student discount program after the victory.",
-      "As president in 1975-76 Henry moved in November to change ASG's concert proposal after a money-losing fall season, while a student group urged support for his energy awareness plan. At year's end the Herald summed up his tenure with a piece on how the role had required balancing the twin jobs of student regent and ASG president, which he held at the same time."
+      "As president in 1975-76 Henry moved in November to change ASG's concert proposal after a money-losing fall season, while a student group urged support for his energy awareness plan. At year's end the Herald summed up his tenure with a piece on how the role had required balancing the twin jobs of student regent and ASG president, which he held at the same time.",
+      "A Wikipedia biography of Stephen L. Henry, later the 52nd Lieutenant Governor of Kentucky (1995-2003), describes an orthopedic surgeon and WKU alumnus who was elected Student Body President on his second attempt after an earlier loss, and who sat on the WKU Board of Regents as president - a career arc that lines up point for point with this record's own Herald sourcing, though no WKU archive document has yet been found that states the identification directly."
      ]
     }
    ],
@@ -1676,6 +1764,26 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5139/"
      },
      "campus": true
+    },
+    {
+     "date": "1976-04-02",
+     "title": "Bruce Smith and Christy Vogt survive the primary, 527 ballots cast",
+     "body": "The Herald reported the Associated Student Government presidential primary under the headline \"Bruce Smith, Christy Vogt Survive as 527 Cast Ballots,\" the two advancing to the 9 April runoff that Vogt went on to win.",
+     "src": {
+      "label": "Herald 51:51, 2 Apr 1976",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5141/"
+     },
+     "campus": true
+    },
+    {
+     "date": "1976-04-27",
+     "title": "Herald supplement recaps a year of ASG wins",
+     "body": "A special supplement to the Herald, paid for and written by the Associated Student Government, summed up the outgoing Henry administration's year: women's hours abolished with ASG's backing, better intramural facilities credited to ASG resolutions, a new ASG discount card program, a second campus site for cashing checks, and a Veterans on Campus book exchange. The supplement also printed the year's roster of congress members and its bills and resolutions, and carried Christy Vogt's own piece on laundry facility improvement.",
+     "src": {
+      "label": "Student Insight (Herald supplement), 27 Apr 1976",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5151/"
+     },
+     "campus": true
     }
    ],
    "status": "researched"
@@ -1705,8 +1813,16 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5143/"
       },
       {
+       "label": "Herald 51:51, 2 Apr 1976",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5141/"
+      },
+      {
        "label": "Herald 51:53, 9 Apr 1976",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5139/"
+      },
+      {
+       "label": "Herald 52:49, 1 Apr 1977",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5374/"
       },
       {
        "label": "Herald 52:52, 12 Apr 1977",
@@ -1719,7 +1835,7 @@
      ],
      "profile": [
       "Christy Vogt entered the spring 1976 Associated Student Government campaign with an endorsement from Herald columnist John Butchko, in an issue whose front section also covered the start of impeachment hearings against congress member Gerard Faulk and an editorial warning the university's new Faculty Senate away from ASG's own troubles.",
-      "Vogt won the presidency, the Herald reporting the result on 9 April 1976 under the headline \"Christy Vogt Wins Election,\" with her own note of thanks to voters in the same issue - the same week Faulk was acquitted.",
+      "Vogt and Bruce Smith survived the 2 April primary as the Herald reported 527 ballots cast, then Vogt won the presidency outright, the paper reporting the result on 9 April 1976 under the headline \"Christy Vogt Wins Election,\" with her own note of thanks to voters in the same issue - the same week Faulk was acquitted.",
       "In office for 1976-77, Vogt's congress created a constitutional revision committee within its first month (Bill 2, 7 September 1976) and kept revision on its agenda all year. It asked the university for a minimum wage policy for student employees (Resolution, 26 October 1976), recommended preregistration for all students, and opposed a proposed tuition increase (Bill 9, 8 March 1977) while creating a Complaint Committee to field student grievances the same meeting. A resolution on discrimination failed in February 1977 with fourteen members abstaining. The fall Seals and Crofts concert lost the organization $3,800, a recurring sore point ASG had wrestled with under Vogt's predecessors as well.",
       "Vogt wrote her own case for the office in the Herald - \"Urges Involvement,\" 12 April 1977, days before Bob Moore won the presidency to succeed her by a 26-vote margin. She closed her term on 26 April 1977 with a letter to Congress thanking its members and recommending four items to the administration: constitutional revision, extended hours for student buildings, open visitation, and advance registration - the same four causes her congress had pushed all year.",
       "WKU's own archive later indexes her, alongside her maiden name, as Christy Vogt Mollozzi, and separately as Christy Mollozzi in President's Office records tied to Marketing & Promotions - evidence, though not a documented statement, that she went on to a career on the university's own staff."
@@ -1735,6 +1851,16 @@
       "label": "Herald 52:53, 15 Apr 1977",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5370"
      }
+    },
+    {
+     "date": "1977-04-01",
+     "title": "Four candidates open the race to succeed Vogt",
+     "body": "The Herald previewed a crowded ASG election: Tom Blair, Kirt Grubbs, Mark McChesney and Bob Moore all sought the presidency, with voting set for a Tuesday primary. Three candidates ran for the administrative vice presidency and four for the activities post in the same election.",
+     "src": {
+      "label": "Herald 52:49, 1 Apr 1977",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5374/"
+     },
+     "campus": true
     },
     {
      "date": "1976-09-07",
@@ -1835,6 +1961,10 @@
      "note": "Elected ASG president by a 26-vote margin, reported 15 April 1977. Herald bylines call him 'Bob Moore.'",
      "sources": [
       {
+       "label": "Herald 52:49, 1 Apr 1977",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5374/"
+      },
+      {
        "label": "Herald 52:51, 8 Apr 1977",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5372"
       },
@@ -1856,7 +1986,7 @@
       }
      ],
      "profile": [
-      "Moore entered the 1977 Associated Student Government presidential race against Tom Blair. The Herald's April 8 issue set up the contest alongside the treasurer's race between George Carlson and rivals; four days later Mark McChesney's letter backing Moore ran alongside endorsements for the rest of the ticket, as outgoing president Christy Vogt urged students to get involved.",
+      "Moore was one of four candidates - with Tom Blair, Kirt Grubbs and Mark McChesney - who opened the 1977 Associated Student Government presidential race on April 1. Moore and Blair survived the primary into the general election; McChesney did not, and by April 12 his letter backing Moore ran in the Herald alongside endorsements for the rest of the ticket, as outgoing president Christy Vogt urged students to get involved. The Herald's April 8 issue had set up the contest alongside the treasurer's race between George Carlson and rivals.",
       "Moore won on April 15, 1977, by 26 votes over Blair - one of the narrowest presidential margins in the record - in an issue that also carried the faculty asking for a say in hiring and Western fighting a beer licence for a local pizzeria.",
       "That October, as president, Moore publicly questioned how freshman candidates in that fall's class elections were spending their campaign money. The comment drew enough pushback that the Herald ran an editorial the same week headlined 'Bob Moore's Comment Isn't Good Politics.'",
       "The archive does not yet show what Moore's administration did over the winter and into the spring beyond the ordinary business of readying his succession - see the 1978 election events below. By September 1978, after his term had ended, the Herald reported that Moore had been found ineligible for another Associated Student Government job; the archive does not yet hold the article's account of why."
@@ -2382,9 +2512,10 @@
       }
      ],
      "profile": [
-      "Steve Fuller entered the April 1980 Associated Student Government presidential race against David Rue and Tim Irons, the Herald reporting the three-way field on April 10.",
+      "Steve Fuller entered the April 1980 Associated Student Government presidential race against David Rue and Tim Irons; the Herald covered ASG hopefuls debating the issues at an April 3 candidates' forum before reporting the three-way field on April 10.",
       "Fuller won the presidency in the April 24 election, reported under the headline \"Persistence Pays Off in Steve Fuller Campaign.\" Mark Wilson and Greg Zoeller were elected to other top ASG offices the same day; Tim Irons's loss was covered separately.",
-      "In office, ASG under Fuller proposed a change to the organization's own title in October 1980 and asked the state to evaluate higher education funding in February 1981, as budget worries dominated the legislative session. His successor, Marcel Bush, was elected that April."
+      "Fuller's fall term was consumed by a running fight over dormitory room inspections. A September 4 inspection measure was voted down amid criticism of how the vote was conducted; a September 11 bill calling for a ban on bugs in the dorms drew a mocking editorial cartoon and an editorial calling the university's protective inspection policy unnecessary; and by November 13 the Herald reported ASG had nearly slept through its own vote before re-endorsing inspections, followed a week later by a bill proposing a stricter room-entry rule.",
+      "In office, ASG under Fuller also proposed a change to the organization's own title in October 1980 and asked the state to evaluate higher education funding in February 1981, as budget worries dominated the legislative session. His successor, Marcel Bush, was elected that April."
      ]
     }
    ],
@@ -2468,6 +2599,60 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5627"
      },
      "campus": true
+    },
+    {
+     "date": "1980-04-03",
+     "title": "ASG hopefuls debate the issues; ASG weighs opposing a UCB change",
+     "body": "Associated Student Government presidential hopefuls discussed the issues and courted votes at a candidates' forum ahead of the spring election. The same issue reported ASG considering opposition to a proposed change to the University Center Board's structure.",
+     "src": {
+      "label": "Herald 55:49, 3 Apr 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5633"
+     }
+    },
+    {
+     "date": "1980-09-04",
+     "title": "ASG room inspection measure defeated amid criticism",
+     "body": "A proposed ASG measure on dormitory room inspections was voted down, in a session a separate Herald article criticized for how the vote was conducted. The defeat opened a fall-long fight over dorm inspection policy.",
+     "src": {
+      "label": "Herald 56:3, 4 Sep 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5526"
+     }
+    },
+    {
+     "date": "1980-09-11",
+     "title": "ASG bill targets pests in the dorms",
+     "body": "ASG introduced a bill calling for a ban on bugs in residence halls; the Herald's editorial cartoon depicted a cockroach imperiled by the resolution. The paper's editorial page separately argued the university's protective inspection policy was unnecessary.",
+     "src": {
+      "label": "Herald 56:5, 11 Sep 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5524"
+     }
+    },
+    {
+     "date": "1980-11-13",
+     "title": "ASG re-endorses dorm inspections after nearly missing the vote",
+     "body": "ASG voted to re-endorse dormitory room inspections, in a session the Herald reported the government had nearly slept through. The same issue covered ASG's sponsorship of an international film and dance series and an attorney's interest in a dorm inspection case.",
+     "src": {
+      "label": "Herald 56:22, 13 Nov 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5547"
+     }
+    },
+    {
+     "date": "1980-11-20",
+     "title": "ASG bill proposes a stricter room-entry rule",
+     "body": "ASG introduced a bill proposing a stricter rule governing staff entry into student rooms, continuing the fall's running fight over dormitory inspections.",
+     "src": {
+      "label": "Herald 56:24, 20 Nov 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5544"
+     }
+    },
+    {
+     "date": "1981-03-24",
+     "title": "Resolution 80-32 asks for change machines in the dorms",
+     "body": "ASG passed Resolution 80-32, requesting that change machines be installed in residence halls.",
+     "src": {
+      "label": "SGA Resolution 80-32, Change Machines",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/277/"
+     }
     }
    ],
    "status": "researched",
@@ -2760,6 +2945,42 @@
    ],
    "events": [
     {
+     "date": "1982-02-16",
+     "title": "Norfleet wins the student regent runoff",
+     "body": "No candidate won a majority in the February 9 student regent primary, forcing a runoff. Sandra Norfleet won the runoff on February 16.",
+     "src": {
+      "label": "Herald 57:41, 18 Feb 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2447"
+     }
+    },
+    {
+     "date": "1982-04-08",
+     "title": "Ragan and Sargent survive the ASG primary",
+     "body": "Margaret Ragan and Glenn Sargent survived the Associated Student Government presidential primary, emerging from a five-way field.",
+     "src": {
+      "label": "Herald 57:53, 8 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2462"
+     }
+    },
+    {
+     "date": "1982-04-15",
+     "title": "Norfleet's short regent term nears its end",
+     "body": "The Herald noted that the student regent's two-month term was already nearing its end, a reminder of how short a stopgap the office had been.",
+     "src": {
+      "label": "Herald 57:55, 15 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2464"
+     }
+    },
+    {
+     "date": "1982-04-20",
+     "title": "Ragan wins the presidency in a repeated election",
+     "body": "The first general election was voided, and Margaret Ragan won the Associated Student Government presidency in the repeated election held April 20. She and the other new officers were sworn in before the month was out.",
+     "src": {
+      "label": "Herald 57:57, 22 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2466"
+     }
+    },
+    {
      "date": "1983-02-03",
      "title": "ASG floats a shuttle service, and Ragan explains the split with the regent seat",
      "body": "The same issue that carried President Margaret Ragan's Herald piece explaining that the ASG presidency and student regent seat were now separate positions also reported ASG was considering a shuttle service, the proposal put to a student vote the following week.",
@@ -2771,7 +2992,7 @@
     {
      "date": "1983-02-10",
      "title": "Grade plan passes; students vote for a shuttle",
-     "body": "ASG passed a grade plan, and 206 students voted for a campus shuttle service. The shuttle idea drew an offer of help from the TVA two weeks later.",
+     "body": "ASG passed a grade plan, and 206 students voted for a campus shuttle service.",
      "src": {
       "label": "Herald 58:40, 10 Feb 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2341"
@@ -2805,6 +3026,15 @@
      }
     },
     {
+     "date": "1983-03-01",
+     "title": "24 elected to Senate",
+     "body": "Twenty-four students were elected to the Associated Student Government Senate, the same issue reporting increased dormitory hours had been proposed.",
+     "src": {
+      "label": "Herald 58:45, 1 Mar 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2346"
+     }
+    },
+    {
      "date": "1983-04-28",
      "title": "ASG endorses a $15 athletic fee",
      "body": "The outgoing congress endorsed a $15 athletic fee. The vote came as the Board of Regents turned its focus to the budget.",
@@ -2812,19 +3042,35 @@
       "label": "Herald 58:59, 28 Apr 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2360"
      }
-    },
-    {
-     "date": "1983-02-03",
-     "title": "Ragan: ASG presidency and student regent are separate jobs",
-     "body": "President Margaret Ragan wrote in the Herald that the Associated Student Government presidency and the student regent position were separate. The distinction reflected the 1982 change that made the student regent directly elected by the student body.",
-     "src": {
-      "label": "Herald 58:38, 3 Feb 1983",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2339"
-     },
-     "campus": true
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Margaret Ragan",
+      "note": "Won a repeated general election 20 April 1982 after the first was voided; succeeded by Jack Smith in April 1983.",
+      "src": {
+       "label": "Herald 57:57, 22 Apr 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2466"
+      }
+     },
+     {
+      "office": "Student Regent",
+      "name": "Sandra Norfleet",
+      "note": "Separately elected office; her term ran only from mid-February to roughly mid-April 1982, a two-month stopgap before the 1982-83 cycle.",
+      "src": {
+       "label": "Herald 57:41, 18 Feb 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2447"
+      }
+     }
+    ],
+    "senate": {
+     "size": 24,
+     "note": "Twenty-four senators were elected 1 March 1983; the Herald did not name a Speaker or list committees in the coverage found so far."
+    }
+   }
   },
   {
    "id": "1983-84",
@@ -2939,9 +3185,31 @@
       "label": "Herald 59:51, 10 Apr 1984",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5900"
      }
+    },
+    {
+     "date": "1983-04-12",
+     "title": "ASG election day: candidates court votes for the top offices",
+     "body": "The Herald urged students to the polls for the Associated Student Government election. Beyond the presidential contest, candidates for ASG's other top offices - including Bob Shults, Laura McClellan, Traci Turner, Kim Binkley and Allan Kujala - each drew endorsement letters in the paper; the Herald index does not specify which office each sought.",
+     "src": {
+      "label": "Herald 58:54, 12 Apr 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2355"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Jack Smith",
+      "src": {
+       "label": "Herald 58:55, 14 Apr 1983",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2356"
+      }
+     }
+    ],
+    "note": "Bob Shults, Laura McClellan, Traci Turner, Kim Binkley and Allan Kujala all appear as candidates for ASG's top offices in the April 1983 election coverage; the Herald index does not specify which offices they sought or who won them."
+   }
   },
   {
    "id": "1984-85",
@@ -3075,14 +3343,18 @@
      "plaque_term": "1985-86",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "February 1985 Herald ran an apathy editorial and cartoon plus a report on 24-hour open house discussions.",
+     "note": "Named explicitly as SGA president in the outgoing congress's own commendation bill, Bill 86-13-S (3 Apr 1986), which settles the name.",
      "sources": [
       {
        "label": "Herald 60:38, 14 Feb 1985",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5721"
+      },
+      {
+       "label": "Herald 60:45, 21 Mar 1985",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5760"
       },
       {
        "label": "Herald 60:47, 28 Mar 1985",
@@ -3095,16 +3367,80 @@
       {
        "label": "Herald 61:46, 4 Mar 1986",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6810"
+      },
+      {
+       "label": "SGA Bill 86-13-S, Commendation of President, 3 Apr 1986",
+       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/35"
+      },
+      {
+       "label": "Board of Regents minutes, 8 Aug 1986",
+       "url": "https://digitalcommons.wku.edu/bor/1986/mtgs/4"
       }
      ],
      "profile": [
-      "McKinney won the spring 1985 primary on a ticket with Chris Watkins; the Herald's headline said the pair rode experience to their primary victory.",
-      "He was announced as the new Associated Student Government president in the Herald of 4 April 1985, in the same issue that reported a legislative group rejoining ASG.",
-      "In March 1986 McKinney pulled out of the race for a second term. The same issue carried a piece arguing that student government needed a strong leader, and the field he left behind grew to four candidates before Tim Todd won the presidency that April. A 1986 presidential proclamation he signed honoring English professor Thomas Jones survives in the SGA records."
+      "Before he was a candidate, McKinney wrote a Herald op-ed on 21 March 1985 headlined 'Associated Student Government Shouldn't Force Bill,' one of a pair of dueling pieces the paper ran on the same question - a sign he was already active in ASG's legislative debates a week before he entered the presidential race.",
+      "McKinney won the spring 1985 primary on a ticket with Chris Watkins on March 28, the Herald's headline saying the pair rode experience to their primary victory over a field that included candidate Stan Reagan. He was announced as the new Associated Student Government president in the Herald of April 4, in the same issue that reported an unnamed legislative group rejoining ASG. The record found so far does not confirm what office, if any, Watkins went on to hold.",
+      "In office, the congress abolished its own Finance Committee that September and, the following spring, wrote a Financial Advisory Council into the ASG bylaws in its place. The spring 1986 session was especially active: bills created major/minor college representative seats, revised the membership application process, asked Board of Regents members to attend an SGA meeting, sought chains for Pearce-Ford Tower windows, and pushed for a welcome sign at Normal Drive and University Boulevard.",
+      "In March 1986 McKinney pulled out of the race for a second term. The same issue carried a piece arguing that student government needed a strong leader, and the field he left behind grew to four candidates before Tim Todd won the presidency that April. The outgoing congress commended McKinney's work in Bill 86-13-S on April 3, and the WKU Board of Regents included a resolution honoring him, alongside outgoing president John D. Minton, at its meeting of August 8, 1986. A 1986 presidential proclamation he signed honoring English professor Thomas Jones survives in the SGA records."
      ]
     }
    ],
    "events": [
+    {
+     "date": "1985-02-14",
+     "title": "An apathy editorial greets a 24-hour open house debate",
+     "body": "The Herald ran an apathy editorial and cartoon aimed at student government alongside a report on debate over 24-hour open house policy in the dorms.",
+     "src": {
+      "label": "Herald 60:38, 14 Feb 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5721"
+     },
+     "campus": true
+    },
+    {
+     "date": "1985-03-21",
+     "title": "Dueling op-eds spar over forcing a bill",
+     "body": "The Herald ran a pair of opposing opinion pieces, both headlined \"Associated Student Government Shouldn't Force Bill,\" one by future ASG president Mitchell McKinney and the other by Jamie Morton.",
+     "src": {
+      "label": "Herald 60:45, 21 Mar 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5760"
+     }
+    },
+    {
+     "date": "1985-03-28",
+     "title": "McKinney and Watkins win the ASG primary",
+     "body": "Mitchell McKinney and Chris Watkins won the Associated Student Government presidential primary over a field that included candidate Stan Reagan.",
+     "src": {
+      "label": "Herald 60:47, 28 Mar 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5759"
+     }
+    },
+    {
+     "date": "1985-04-04",
+     "title": "McKinney elected president; a legislative group rejoins ASG",
+     "body": "Mitchell McKinney was elected Associated Student Government president. The same issue reported that an unnamed legislative group had rejoined ASG.",
+     "src": {
+      "label": "Herald 60:49, 4 Apr 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5757"
+     }
+    },
+    {
+     "date": "1985-09-24",
+     "title": "ASG abolishes its Finance Committee",
+     "body": "The congress voted to abolish its own Finance Committee, a structural change later reversed in part when a Financial Advisory Council was written into the bylaws the following spring.",
+     "src": {
+      "label": "SGA Bill 85-1-F, Abolishment of Finance Committee",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/31"
+     }
+    },
+    {
+     "date": "1985-10-12",
+     "title": "ASG orders its own student discount card",
+     "body": "The congress passed legislation calling for ASG to produce its own student discount card, one of several consumer-service ideas the group pursued that fall.",
+     "src": {
+      "label": "SGA Bill 85-15-F, Production of Own Student Discount Card",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/18"
+     }
+    },
     {
      "date": "1985-10-31",
      "title": "A 20-vote margin and a GPA debate",
@@ -3160,12 +3496,75 @@
      }
     },
     {
+     "date": "1986-03-04",
+     "title": "McKinney withdraws from re-election",
+     "body": "Mitchell McKinney pulled out of the race for a second term as ASG president. The same issue carried a piece arguing that student government needed a strong leader.",
+     "src": {
+      "label": "Herald 61:46, 4 Mar 1986",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6810"
+     }
+    },
+    {
      "date": "1986-03-20",
      "title": "Library hours proposals, and elections delayed a week",
      "body": "ASG proposals asked for more library hours, and the spring elections were pushed back a week. The same issue carried dueling letters on whether the organization was in trouble.",
      "src": {
       "label": "Herald 61:48, 20 Mar 1986",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6806"
+     }
+    },
+    {
+     "date": "1986-03-25",
+     "title": "College representative seats created",
+     "body": "The congress created major/minor college representative seats within its own membership.",
+     "src": {
+      "label": "SGA Bill 86-19-S, Voting of Representatives for Colleges",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/59"
+     }
+    },
+    {
+     "date": "1986-04-01",
+     "title": "ASG revises its membership application",
+     "body": "The congress adopted a revised application process for SGA membership.",
+     "src": {
+      "label": "SGA Bill 86-21-S, Adoption of New Application",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/57"
+     }
+    },
+    {
+     "date": "1986-04-01",
+     "title": "ASG asks regents to attend a meeting",
+     "body": "The congress asked that Board of Regents members attend and speak at one SGA meeting during their term.",
+     "src": {
+      "label": "SGA Bill 86-22-S, Attendance of Regents at Meetings",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/56"
+     }
+    },
+    {
+     "date": "1986-04-01",
+     "title": "ASG seeks chains for Pearce-Ford Tower windows",
+     "body": "The congress asked for chains to be placed on Pearce-Ford Tower windows so they could be opened.",
+     "src": {
+      "label": "SGA Bill 86-26-S, Placing of Chain on Windows",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/55"
+     }
+    },
+    {
+     "date": "1986-04-02",
+     "title": "Financial Advisory Council written into the bylaws",
+     "body": "The congress incorporated the Financial Advisory Council into the ASG bylaws, months after abolishing its own Finance Committee.",
+     "src": {
+      "label": "SGA Bill 86-3-S, Incorporation of Councils into By-Laws",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/44"
+     }
+    },
+    {
+     "date": "1986-04-03",
+     "title": "Outgoing congress commends President McKinney",
+     "body": "The outgoing congress passed a bill commending the work of SGA president Mitchell McKinney as his term ended.",
+     "src": {
+      "label": "SGA Bill 86-13-S, Commendation of President",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/35"
      }
     },
     {
@@ -3176,9 +3575,64 @@
       "label": "Herald 61:54, 10 Apr 1986",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6818"
      }
+    },
+    {
+     "date": "1986-04-15",
+     "title": "ASG pushes for a campus welcome sign",
+     "body": "The congress pushed for a welcome sign to be placed at the intersection of Normal Drive and University Boulevard.",
+     "src": {
+      "label": "SGA Bill 86-36-S, Placing of Welcome Sign on Campus",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/68"
+     }
+    },
+    {
+     "date": "1986-04-15",
+     "title": "ASG commends outgoing President Minton",
+     "body": "The congress passed a bill commending outgoing WKU president John D. Minton for his service to the university.",
+     "src": {
+      "label": "SGA Bill 86-39-S, Commendation of Dr. John D. Minton",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/65"
+     },
+     "campus": true
+    },
+    {
+     "date": "1986-08-08",
+     "title": "Regents honor McKinney at term's end",
+     "body": "The WKU Board of Regents included a resolution honoring outgoing ASG president Mitchell McKinney, alongside honors for Georgia Bates and outgoing WKU president John Minton, at its August meeting - held the same day Kern Alexander was named the university's new president.",
+     "src": {
+      "label": "Board of Regents minutes, 8 Aug 1986",
+      "url": "https://digitalcommons.wku.edu/bor/1986/mtgs/4"
+     },
+     "campus": true
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Mitchell McKinney",
+      "note": "Ran on a primary ticket with Chris Watkins in spring 1985; the record found so far does not confirm what office, if any, Watkins held afterward. Withdrew from re-election in March 1986 and was commended by the outgoing congress that April.",
+      "src": {
+       "label": "Herald 60:49, 4 Apr 1985",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5757"
+      }
+     }
+    ],
+    "senate": {
+     "committees": [
+      {
+       "name": "Finance Committee",
+       "note": "Abolished by the congress in September 1985."
+      },
+      {
+       "name": "Financial Advisory Council",
+       "note": "Written into the ASG bylaws in April 1986, replacing the abolished Finance Committee."
+      }
+     ],
+     "note": "Spring 1986 also created major/minor college representative seats (Bill 86-19-S) and revised the SGA membership application process (Bill 86-21-S)."
+    }
+   }
   },
   {
    "id": "1986-87",
@@ -4551,9 +5005,42 @@
       "url": "https://digitalcommons.wku.edu/context/sga/article/1941/viewcontent/sga_1993_4_13_minutes.pdf"
      },
      "campus": true
+    },
+    {
+     "date": "1992-04-09",
+     "title": "Herald previews the race and the rename referendum",
+     "body": "The Herald previewed the Associated Student Government presidential race under \"Mistianna Holcomb, Joe Rains Vying for Presidency,\" profiled candidate Susan Mitchell under \"Susan Mitchell Has a Fresh Perspective,\" and reported that students would soon vote on a referendum to rename the Associated Student Government the Student Government Association. No source found confirms what office Mitchell sought or whether she won it.",
+     "src": {
+      "label": "Herald 67:51, 9 Apr 1992",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7707"
+     }
+    },
+    {
+     "date": "1992-04-14",
+     "title": "Turnout worries and candidate profiles filled the ballot issue",
+     "body": "The same issue that reported Rains' win ran the Herald's concern piece \"Many Students Won't Vote\" alongside profile pieces on the other candidates: \"Mark Miller's Involvement Makes Him a Leader,\" \"Mistianna Holcomb Takes a Stand for Students,\" and \"Melony Jones Loved & Respected by Peers.\"",
+     "src": {
+      "label": "Herald 67:52, 14 Apr 1992",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7706"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Joe Rains",
+      "src": {
+       "label": "Herald 67:54, 21 Apr 1992",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7704"
+      }
+     }
+    ],
+    "senate": {
+     "note": "Minutes from 25 Aug 1992 through 13 Apr 1993 survive, recording a congress occupied with state budget cuts, tuition increases and a Frankfort rally, but no full officer list, committee structure, or seat count survives beyond the president."
+    }
+   }
   },
   {
    "id": "1993-94",
@@ -5156,10 +5643,10 @@
      "plaque_term": "1996-97",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
+     "note": "Confirmed by Herald 71:54 (18 Apr 1996, election coverage headlined \"It's Kristen Miller's Time\") and Herald 72:46 (27 Mar 1997, term-end reflection piece), both naming her SGA president in the plaque year.",
      "sources": [
       {
        "label": "Herald 72:4, 29 Aug 1996",
@@ -5317,9 +5804,57 @@
       "url": "https://digitalcommons.wku.edu/context/sga/article/2303/viewcontent/sga_1997_4_22_minutes_w.pdf"
      },
      "campus": true
+    },
+    {
+     "date": "1996-04-18",
+     "title": "Few turn out for the election that chose Miller",
+     "body": "The same Herald issue that declared \"It's Kristen Miller's Time\" also ran the headline \"Few Turn Out for Election,\" continuing the decade's pattern of falling voter participation in SGA races.",
+     "src": {
+      "label": "Herald 71:54, 18 Apr 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2988"
+     }
+    },
+    {
+     "date": "1996-09-24",
+     "title": "Roller blades, skateboards, and a technology push",
+     "body": "A September 24 meeting took up campus rules on roller blading and skateboards alongside Provide-A-Ride, a voter registration drive, a bonfire, Big Red Roar, the budget, and student email accounts.",
+     "src": {
+      "label": "SGA Meeting Minutes, 24 Sep 1996",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/548/"
+     }
+    },
+    {
+     "date": "1997-01-21",
+     "title": "Website, vacancies, and bylaws open the spring",
+     "body": "The January 21 meeting discussed the organization's website, Provide-A-Ride, open vacancies on the body, the budget, and the by-laws, as the congress organized itself for the spring semester.",
+     "src": {
+      "label": "SGA Meeting Minutes, 21 Jan 1997",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Kristen Miller",
+      "src": {
+       "label": "Herald 71:54, 18 Apr 1996, \"It's Kristen Miller's Time\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2988"
+      }
+     }
+    ],
+    "senate": {
+     "committees": [
+      {
+       "name": "Technology Committee",
+       "note": "Created at the 17 September 1996 meeting to take up student email accounts and other technology questions."
+      }
+     ],
+     "note": "Archive does not preserve a full senate officer list or seat count for this year."
+    }
+   }
   },
   {
    "id": "1997-98",
@@ -5332,10 +5867,10 @@
      "plaque_term": "1997-98",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Outgoing letters from this period cover the Dogwood Drive crosswalk and student seating at athletic events.",
+     "note": "Outgoing letters from this period cover the Dogwood Drive crosswalk and student seating at athletic events. Confirmed by Herald 72:54 (24 Apr 1997, \"Keith Coffman Takes Charge\") and the SGA's own 2001 presidents list naming him the 31st president, 1997-98.",
      "sources": [
       {
        "label": "WKU SGA legislation archive, 1997 (archived 2003)",
@@ -5469,6 +6004,15 @@
      "campus": true
     },
     {
+     "date": "1998-04-07",
+     "title": "Coffman gets high marks as candidates line up",
+     "body": "The Herald ran \"Keith Coffman Served Students Well\" alongside a People Poll asking students what they thought of his job performance, in the same issue that reported candidates preparing for the spring election.",
+     "src": {
+      "label": "Herald 73:47, 7 Apr 1998",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7977"
+     }
+    },
+    {
      "date": "1998-04-28",
      "title": "A $15,000 electronic sign and a campaign for scholarships",
      "body": "In election week the Herald polled students on how they would spend $15,000 of SGA's money, ran a column arguing the money for a big electronic message sign could be better used, and printed dueling letters on whether the association served students. Its campaign coverage reported that candidate Stephanie Cosby wanted more scholarships.",
@@ -5488,7 +6032,31 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Keith Coffman",
+      "src": {
+       "label": "Herald 72:54, 24 Apr 1997, \"Keith Coffman Takes Charge\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3012"
+      }
+     },
+     {
+      "office": "Secretary",
+      "name": "Jamie Fite",
+      "note": "Signed outgoing SGA correspondence to the administration throughout the year, on athletic seating, housing stipends and stalled legislation.",
+      "src": {
+       "label": "TopSCHOLAR - SGA Documents/Reports/14",
+       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/14"
+      }
+     }
+    ],
+    "senate": {
+     "note": "The archive preserves at least 24 numbered bills and resolutions from the fall 1997 session alone and a further spring 1998 session, but no full officer list or seat count survives beyond the president and secretary."
+    }
+   }
   },
   {
    "id": "1998-99",
@@ -6411,11 +6979,15 @@
      "plaque_term": "2002-03",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
+     "note": "Confirmed in the College Heights Herald's own election headline, which ran the week she won.",
      "sources": [
+      {
+       "label": "College Heights Herald 77:51, 11 Apr 2002 - \"Jamie Sears Wins Election in Landslide\" (O'Connor, Molly)",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9175/"
+      },
       {
        "label": "Herald, 19 Sep 2002",
        "url": "https://wkuherald.com/57861/news/sga-to-look-for-lost-funds/"
@@ -6430,6 +7002,7 @@
       }
      ],
      "profile": [
+      "Sears, a junior public relations major from Melber, won the presidency in a landslide, defeating senior Sam Stinson 1,284 votes to 594 in the April 2002 general election that also seated her incoming executive team: John Bradley as executive vice president, Ross Pruitt as vice president of finance, Anna Coats as vice president of public relations, and Brandon Copeland as vice president of administration.",
       "Sears opened her 2002-03 term as SGA president under immediate scrutiny. Seventeen months after congress passed a bill putting about $5,000 of leftover budget money toward an on-campus gazebo, members discovered the gazebo was never built and the money was gone. When three members petitioned congress in September over $28,000 they said was unaccounted for, Sears told the Herald, \"I have absolutely no idea where that money went.\" The petition was withdrawn only after her executive council created an ad hoc financial review committee.",
       "By October the money had been traced: it had slipped back into SGA's general fund and been spent on other things, including computers for the SGA office. Sears acknowledged that she and former student activities director Scott Taylor had decided during the summer where the leftover money, which included the gazebo funds, would be allocated, saying other executive council members were consulted through email. She said the financial review committee would explain the budget findings to congress, and no move was made to set aside new gazebo money.",
       "Sears finished the year on stronger footing. She traveled with about 20 Western students to Frankfort to oppose state budget cuts to higher education, calling the trip one of SGA's greatest accomplishments: \"That was a great feeling seeing students from everywhere rallying for the same cause.\" Under her leadership congress debated more than 55 pieces of legislation and passed the first student referendum in SGA history, a $3 fee for radio station Revolution 91.7 that students approved in the spring election. Her final meeting as president came on April 22, 2003."
@@ -6538,7 +7111,57 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Jamie Sears",
+      "src": {
+       "label": "WKU News, 11 Apr 2002",
+       "url": "http://web.archive.org/web/20020423023003/http://www.wku.edu/news/releases02/april/sga.html"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "John Bradley",
+      "note": "Championed the WWHR radio-fee referendum; elected SGA president for 2003-04.",
+      "src": {
+       "label": "Herald, 4 Mar 2003",
+       "url": "https://wkuherald.com/57037/news/students-to-vote-on-proposal-calling-for-a-student-fee-for-funding-campus-radio-station/"
+      }
+     },
+     {
+      "office": "Vice President of Finance",
+      "name": "Ross Pruitt",
+      "src": {
+       "label": "Herald, 1 Oct 2002",
+       "url": "https://wkuherald.com/57669/news/missing-sga-funds-accounted-for/"
+      }
+     },
+     {
+      "office": "Vice President of Public Relations",
+      "name": "Anna Coats",
+      "src": {
+       "label": "WKU News, 11 Apr 2002",
+       "url": "http://web.archive.org/web/20020423023003/http://www.wku.edu/news/releases02/april/sga.html"
+      }
+     },
+     {
+      "office": "Vice President of Administration",
+      "name": "Brandon Copeland",
+      "src": {
+       "label": "WKU News, 11 Apr 2002",
+       "url": "http://web.archive.org/web/20020423023003/http://www.wku.edu/news/releases02/april/sga.html"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [],
+     "committees": [],
+     "note": "No senate officer or committee roster for 2002-03 could be confirmed. TopSCHOLAR holds weekly meeting-minutes abstracts for this year (Aug 2002-Apr 2003, e.g. digitalcommons.wku.edu/sga/Meetings/Minutes/), but the full-text PDFs return an automated bot challenge that this run could not clear; abstracts alone name agenda topics (committee vacancies discussed 9 Oct 2002) without naming chairs. The ad hoc financial review committee formed in the gazebo-funds dispute is the only committee identified by name in confirmed sources."
+    }
+   }
   },
   {
    "id": "2003-04",
@@ -6868,11 +7491,15 @@
      "plaque_term": "2005-06",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Named in April 2004 Herald coverage as incoming executive vice president, so she came up through the cabinet.",
+     "note": "Named in April 2004 Herald coverage as incoming executive vice president, so she came up through the cabinet. Confirmed as a 2005 presidential candidate in College Heights Herald election coverage, and the paper's own election-night story names her as the winner.",
      "sources": [
+      {
+       "label": "College Heights Herald 80:38, 24 Feb 2005 - \"Two Announce Plans to Run for Student Government Association President - Katie Dawson, Josh Collins\" (Coulter, Amber)",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8934/"
+      },
       {
        "label": "Daily News, 20 Nov 2005",
        "url": "https://bgdailynews.com/2005/11/20/happy-birthday-dear-western/"
@@ -6995,7 +7622,43 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Katie Dawson",
+      "src": {
+       "label": "Herald via Wayback, 17 Mar 2005",
+       "url": "https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Mason Stevenson",
+      "note": "Read a letter to the March 2006 SGA meeting airing a rift between the executive and legislative branches.",
+      "src": {
+       "label": "Herald via Wayback, 17 Mar 2005",
+       "url": "https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml"
+      }
+     },
+     {
+      "office": "Vice President",
+      "name": "Melissa Paris",
+      "note": "Office not further specified in the election coverage; won unopposed alongside Stevenson.",
+      "src": {
+       "label": "Herald via Wayback, 17 Mar 2005",
+       "url": "https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [],
+     "size": 25,
+     "committees": [],
+     "note": "All 25 senate candidates on the March 2005 ballot ran unopposed and were elected. A senator surnamed Johnson was reported elected speaker of the senate in December 2005, but no source found gives a first name, so the office is left unfilled here rather than guessed."
+    }
+   }
   },
   {
    "id": "2006-07",
@@ -7833,6 +8496,15 @@
       "label": "Herald, 1 Apr 2010",
       "url": "https://web.archive.org/web/20100407041457/http://www.wkuherald.com/2010/04/01/jessie-elected-sga-president/"
      }
+    },
+    {
+     "date": "2010-02-22",
+     "title": "Senate passes funding bills for baseball, a sorority event and study abroad",
+     "body": "At its Feb. 22 meeting the senate unanimously passed a funding bill and, with single dissents apiece, a bill funding the baseball program and a $1,300 allocation for an Alpha Kappa Alpha event. It also unanimously approved several study-abroad reimbursement bills and confirmed Daniel Shaw as parliamentarian, along with a new Academic Affairs committee chair nominee and a new Student Affairs chair.",
+     "src": {
+      "label": "SGA senate minutes, 22 Feb 2010",
+      "url": "https://www.wku.edu/sga/uploads/minutes/february22.doc"
+     }
     }
    ],
    "status": "researched",
@@ -7871,6 +8543,39 @@
        "label": "Herald, 4 Sep 2009",
        "url": "https://web.archive.org/web/20090918022921/http://www.wkuherald.com/2009/09/04/smiley-nominates-brother/"
       }
+     },
+     {
+      "office": "Secretary",
+      "name": "Ann-Blair Thornton",
+      "src": {
+       "label": "SGA senate minutes, 22 Feb 2010",
+       "url": "https://www.wku.edu/sga/uploads/minutes/february22.doc"
+      }
+     },
+     {
+      "office": "Director of Public Relations",
+      "name": "Angelika Masero",
+      "src": {
+       "label": "SGA senate minutes, 20 Oct 2009",
+       "url": "https://www.wku.edu/sga/uploads/minutes/october20.doc"
+      }
+     },
+     {
+      "office": "Director of Academic and Student Affairs",
+      "name": "Aaron Pawley",
+      "note": "Resigned as senator in late January 2010 to study abroad in England; unclear from sources whether he kept this cabinet post afterward.",
+      "src": {
+       "label": "SGA senate minutes, 20 Oct 2009",
+       "url": "https://www.wku.edu/sga/uploads/minutes/october20.doc"
+      }
+     },
+     {
+      "office": "Director of Information Technology",
+      "name": "Sarah Howell",
+      "src": {
+       "label": "SGA senate minutes, 20 Oct 2009",
+       "url": "https://www.wku.edu/sga/uploads/minutes/october20.doc"
+      }
      }
     ],
     "senate": {
@@ -7882,10 +8587,52 @@
         "label": "Herald, 14 Oct 2009",
         "url": "https://web.archive.org/web/20091018185425/http://www.wkuherald.com/2009/10/14/sga-sponsors-tailgating-forum/"
        }
+      },
+      {
+       "office": "Chief Justice",
+       "name": "Stuart Kenderes",
+       "src": {
+        "label": "Herald, 10 Nov 2009",
+        "url": "https://web.archive.org/web/20100226061045/http://www.wkuherald.com/tag/sga/"
+       }
+      },
+      {
+       "office": "Parliamentarian",
+       "name": "Daniel Shaw",
+       "note": "Approved to this post at the 22 Feb 2010 meeting, months after resigning his own senate seat in October 2009 over the Capillo committee-appointment dispute.",
+       "src": {
+        "label": "SGA senate minutes, 22 Feb 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/february22.doc"
+       }
       }
      ],
-     "committees": [],
-     "note": "Chief Justice Stuart Kenderes led the Judicial Council, which in November 2009 removed a senator for excessive unexcused absences. Three senators resigned in October 2009 over a contested committee appointment, and two more resigned in January 2010 for unrelated personal reasons; TopSCHOLAR's digitised SGA meeting-minutes collection ends in 2008 and no minutes for 2009-10 could be found there, so senate size and committee chairs for this year are not yet confirmed."
+     "size": 32,
+     "committees": [
+      {
+       "name": "Academic Affairs",
+       "chair": "Dave Vickery",
+       "note": "Replaced by chair-nominee Brandon Logan by the 22 Feb 2010 meeting."
+      },
+      {
+       "name": "Campus Improvements",
+       "chair": "Kaylee Egerer"
+      },
+      {
+       "name": "Legislative Research",
+       "chair": "Eileen Forsythe",
+       "note": "Forsythe resigned her senate seat in late January 2010 to study abroad; the committee passed to chair Jacob Turner by the 22 Feb 2010 meeting."
+      },
+      {
+       "name": "Public Relations",
+       "chair": "Austin Wingate"
+      },
+      {
+       "name": "Student Affairs",
+       "chair": "Currie Martin",
+       "note": "Replaced by Emily Woosley, approved with one abstention, by the 22 Feb 2010 meeting."
+      }
+     ],
+     "note": "Roster stood at 32 senators as of the 20 Oct 2009 meeting (24 present) and had fallen to a 30-seat roster by 22 Feb 2010 (20 present, 10 absent), consistent with the resignations recorded across the fall and January. Chief Justice Stuart Kenderes led the Judicial Council, which in November 2009 removed a senator for excessive unexcused absences."
     }
    }
   },
@@ -8396,6 +9143,61 @@
       "label": "Herald, 16 Apr 2013",
       "url": "https://wkuherald.com/44216/news/sga-decides-not-to-contest-baileys-decision-in-emergency-meeting/"
      }
+    },
+    {
+     "date": "2012-09-25",
+     "title": "Fall senate seats filled after two resignations",
+     "body": "Two senators resigned over time commitments and student Shea Wyatt was named to fill in. New freshman senators Barrett Greenwell, Taylor Ruby, Cole McDowell and Paige Settles were sworn in along with Gatton Academy senator Linda Cruz and graduate senators Mark Reeves and Katie Martin.",
+     "src": {
+      "label": "Herald, 27 Sep 2012",
+      "url": "https://wkuherald.com/46320/news/sga-welcomes-new-senators/"
+     }
+    },
+    {
+     "date": "2012-11-14",
+     "title": "Senate reviewed its budget and heard a retention pitch",
+     "body": "Speaker of the Senate Christopher Costa opened the floor to Joelle Carter, assistant vice president for Retention and Student Services, who asked senators for ideas on keeping students enrolled to graduation, and SGA's current budget balance was distributed to members.",
+     "src": {
+      "label": "Herald, 14 Nov 2012",
+      "url": "https://wkuherald.com/45465/news/sga-looks-at-budget-retention-efforts/"
+     }
+    },
+    {
+     "date": "2013-02-20",
+     "title": "Senate tabled a plus-minus grading resolution",
+     "body": "Senator Hannah Garland's resolution to adopt plus and minus grades for high and low letter grades was tabled after public relations chair Mac Mullins argued for a more formal proposal and more student input first; a similar plan had drawn SGA resistance when the provost proposed it in 2007.",
+     "src": {
+      "label": "Herald, 21 Feb 2013",
+      "url": "https://wkuherald.com/44945/news/sga-tables-plus-minus-grading-system-resolution-2/"
+     }
+    },
+    {
+     "date": "2013-02-26",
+     "title": "Senate amended the constitution, adding regional-campus seats",
+     "body": "After two to three years of executive discussion, the senate passed most of a package of constitutional amendments, replacing class-year senate seats with college-based representation and guaranteeing seats for regional campuses such as Glasgow and Owensboro. A bylaw that would have made SGA members permanently ineligible for SGA-sponsored scholarships was stripped out and did not pass.",
+     "src": {
+      "label": "Herald, 1 Mar 2013",
+      "url": "https://wkuherald.com/44618/news/sga-passes-resolution-to-amend-its-constitution/"
+     }
+    },
+    {
+     "date": "2013-04-16",
+     "title": "Costa stepped down as speaker; Settles elected to succeed him",
+     "body": "Christopher Costa did not seek another term as speaker of the senate, and senators elected Paige Settles to replace him. The same meeting confirmed presidential appointments Roy Ratliff as senator-at-large and Jackie Stewart as associate justice, with Chief of Staff Travis Taylor and public relations chair Mac Mullins giving reports.",
+     "src": {
+      "label": "Herald, 17 Apr 2013",
+      "url": "https://wkuherald.com/44058/news/sga-elects-a-new-speaker-of-the-senate/"
+     }
+    },
+    {
+     "date": "2013-04-25",
+     "title": "Senate opposed automatic athletic-fee increases ahead of C-USA move",
+     "body": "The senate passed a resolution against the annual automatic increase in the student athletic fee, arguing the revenue-sharing WKU would gain on joining Conference USA that July would outweigh the roughly $40,000 the university lost annually in the Sun Belt. Executive vice president-elect Mark Reeves, who introduced it, said the resolution set a precedent against automatic fee increases generally.",
+     "campus": true,
+     "src": {
+      "label": "Herald, 26 Apr 2013",
+      "url": "https://wkuherald.com/44093/news/sga-passes-resolution-against-annual-increase-of-student-athletic-fee/"
+     }
     }
    ],
    "status": "researched",
@@ -8411,6 +9213,15 @@
       }
      },
      {
+      "office": "Executive Vice President",
+      "name": "Keyana Boka",
+      "note": "Elected uncontested alongside Dodds in March 2012; went on to be elected 2013-14 president, spelled \"Keyanna\" in that year's coverage. Spelling unverified between the two forms.",
+      "src": {
+       "label": "Herald, 30 Mar 2012",
+       "url": "https://wkuherald.com/48077/news/dodds-elected-sga-president/"
+      }
+     },
+     {
       "office": "Administrative Vice President",
       "name": "Cain Alvey",
       "note": "Ran unsuccessfully for president in the April 2013 election as outgoing administrative vice president.",
@@ -8420,17 +9231,43 @@
       }
      },
      {
-      "office": "Executive Vice President",
-      "name": "Keyana Boka",
-      "note": "Elected uncontested alongside Dodds in March 2012; went on to be elected 2013-14 president, spelled \"Keyanna\" in that year's coverage. Spelling unverified between the two forms.",
+      "office": "Chief of Staff",
+      "name": "Travis Taylor",
       "src": {
-       "label": "Herald, 30 Mar 2012",
-       "url": "https://wkuherald.com/48077/news/dodds-elected-sga-president/"
+       "label": "Herald, 17 Apr 2013",
+       "url": "https://wkuherald.com/44058/news/sga-elects-a-new-speaker-of-the-senate/"
       }
      }
     ],
     "senate": {
-     "note": "Nicki Seay chaired the Legislative Research Committee, which drafted the teaching assistant evaluation bill Dodds had campaigned on."
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Christopher Costa",
+       "note": "Did not seek another term; Paige Settles was elected to succeed him in April 2013 for 2013-14.",
+       "src": {
+        "label": "Herald, 14 Nov 2012",
+        "url": "https://wkuherald.com/45465/news/sga-looks-at-budget-retention-efforts/"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Legislative Research",
+       "chair": "Nicki Seay",
+       "note": "Wrote the teaching assistant evaluation bill Dodds campaigned on."
+      },
+      {
+       "name": "Public Relations",
+       "chair": "Mac Mullins"
+      },
+      {
+       "name": "Campus Improvements",
+       "chair": "Mallory Chaney",
+       "note": "Postponed the annual campus safety walk to April 2013."
+      }
+     ],
+     "note": "Constitutional amendments passed 26 Feb 2013 replaced class-year senate seats with college-based representation and added guaranteed seats for the Glasgow and Owensboro regional campuses."
     }
    }
   },
@@ -8552,6 +9389,51 @@
       "label": "Herald, 12 Sep 2013",
       "url": "https://wkuherald.com/43057/news/international-amendment-passes-sga-senate-vote/"
      }
+    },
+    {
+     "date": "2013-03-28",
+     "title": "Presidential debate drew full field of candidates",
+     "body": "Ahead of the spring 2013 election, outgoing president Cory Dodds opened a debate in Ransdell Hall Auditorium among presidential candidates Cain Alvey, Keyana Boka and Austin Wingate, plus executive vice presidential candidates Brad Cockrel and Mark Reeves and administrative vice presidential candidate Nicki Seay. Boka said SGA members needed better training in their roles, Alvey said the presidency's responsibilities went beyond the constitution, and Wingate, a former Speaker of the Senate, called for better representation across student groups.",
+     "src": {
+      "label": "Herald, 28 Mar 2013",
+      "url": "https://wkuherald.com/44526/news/sga-presidential-vice-presidential-candidates-debate-before-elections/"
+     }
+    },
+    {
+     "date": "2013-09-10",
+     "title": "Executive Council floated plus/minus grading, set fall calendar",
+     "body": "At the Executive Council's weekly meeting, Executive Vice President Mark Reeves reported that the University Senate Council had discussed reviving a plus/minus grading system and that Provost Gordon Emslie was interested in SGA's support. The council set a Nov. 9 Picnic with the President for the presidents' council and deans, and swore in Samantha Johnson to an executive cabinet seat vacated by the resignation of Keith Watson.",
+     "src": {
+      "label": "SGA Executive Council minutes, 10 Sep 2013",
+      "url": "https://www.wku.edu/sga/uploads/executive/minutes/2013/execsep10.docx"
+     }
+    },
+    {
+     "date": "2013-09-11",
+     "title": "SGA reviewed 24-hour dining, grading and registration proposals",
+     "body": "SGA gave first read to a proposal for a 24-hour on-campus dining option, with the Organizational Aid Committee sponsoring the resolution and assistant vice president for auxiliary services Gary Meszaros set to attend the next meeting. Reeves told senators Provost Gordon Emslie was reviving a plus/minus grading proposal and had brought priority registration and major-declaration changes to University Senate.",
+     "src": {
+      "label": "Herald, 11 Sep 2013",
+      "url": "https://wkuherald.com/43098/news/sga-convenes-to-update-senate-review-proposals/"
+     }
+    },
+    {
+     "date": "2013-11-05",
+     "title": "Herald editorial faulted SGA over registration policy",
+     "body": "A Herald editorial accused SGA of failing to represent students on the new priority-registration hour cap, saying executive vice president Mark Reeves voted for the policy at University Senate on Sept. 10 without SGA questioning or debating it first. The editorial argued SGA had one job, representing students, and had not done it on this issue.",
+     "src": {
+      "label": "Herald, 5 Nov 2013",
+      "url": "https://wkuherald.com/42230/opinion/priority-check-sga-too-little-too-late-with-registration/"
+     }
+    },
+    {
+     "date": "2014-02-26",
+     "title": "Mid-year budget report showed $46,883 surplus",
+     "body": "SGA's mid-year budget report showed a $46,883.62 surplus on its $125,000 budget. The Senate approved Bill 3-14-S allocating organizational funds and suspended its bylaws to pass Resolution 3-14-S supporting WKU's participation in the Campus Pride Index, and approved Hannah Neeper, Elizabeth Gribbins and AJ Stewart as new senators as six senate seats remained open.",
+     "src": {
+      "label": "Herald, 26 Feb 2014",
+      "url": "https://wkuherald.com/41395/news/sga-releases-budget-report/"
+     }
     }
    ],
    "organization": {
@@ -8587,11 +9469,19 @@
        "label": "Herald, 16 Apr 2013",
        "url": "https://wkuherald.com/44216/news/sga-decides-not-to-contest-baileys-decision-in-emergency-meeting/"
       }
+     },
+     {
+      "office": "Student Affairs Committee Chair",
+      "name": "Barrett Greenwell",
+      "src": {
+       "label": "Herald, 26 Feb 2014",
+       "url": "https://wkuherald.com/41395/news/sga-releases-budget-report/"
+      }
      }
     ],
     "senate": {
      "size": 26,
-     "note": "Twenty-six student senators were elected in the April 2013 spring election alongside the executive officers."
+     "note": "Twenty-six student senators were elected in the April 2013 spring election alongside the executive officers. Executive Council minutes for 10 Sept 2013 list cabinet members Sarah Hazelip, Hannah Garland, Paige Settles, Laura Harper and Brad Cockrel alongside Boka, Reeves and Seay; Samantha Johnson was sworn in that night to a seat vacated by Keith Watson's resignation."
     }
    },
    "status": "researched"
@@ -8837,12 +9727,16 @@
       {
        "label": "Herald, 21 Apr 2016",
        "url": "https://wkuherald.com/32654/news/richey-wins-high-turnout-sga-election/"
+      },
+      {
+       "label": "Herald, 22 Mar 2017",
+       "url": "https://wkuherald.com/29658/news/graduating-sga-president-reflects-on-two-terms/"
       }
      ],
      "profile": [
       "Richey opened his first term in fall 2015 \"leaving behind the Postergate controversy\" of the spring election, saying he had \"about a hundred things\" he wanted to do. His priorities included MyCampusToo, a campaign initiative to bring underrepresented students into SGA, more outreach to international students and the regional campuses, and stronger communication between the executive cabinet and senate. He also oversaw a student competition to name the new pub coming to the Garrett Conference Center, a product of the alcohol-policy change SGA had supported the previous year.",
       "In September he championed the senate's resolution disapproving of how the Confucius Institute building was approved, writing in a letter to the Herald that the contract was signed in China before the Board of Regents voted and that many controversial details were never disclosed. He rejected warnings that the vote made \"powerful enemies,\" saying he hoped it sent a message that \"accountability and transparency should always be top priorities\" at WKU, while noting he respected Ransdell and would keep working with him.",
-      "In April 2016 Richey won reelection with 1,497 of 2,341 presidential votes, becoming a two-term president in a high-turnout election announced after midnight in the Downing Student Union senate chambers. \"It's a tremendous honor to be elected the first time,\" he said, \"but a second time is verification of promises kept.\" His running mate Kate Hart won executive vice president and MyCampusToo chairwoman Hannah Neeper won administrative vice president, keeping his allies in the executive branch for 2016-17."
+      "In April 2016 Richey won reelection with 1,497 of 2,341 presidential votes, becoming a two-term president in a high-turnout election announced after midnight in the Downing Student Union senate chambers. \"It's a tremendous honor to be elected the first time,\" he said, \"but a second time is verification of promises kept.\" His running mate Kate Hart won executive vice president and MyCampusToo chairwoman Hannah Neeper won administrative vice president, keeping his allies in the executive branch for 2016-17. A March 2017 Herald profile noted the win made him WKU SGA's first two-term president since 1988 and one of only three since 1974."
      ]
     }
    ],
@@ -8927,6 +9821,33 @@
      "src": {
       "label": "Herald, 20 Apr 2016",
       "url": "https://wkuherald.com/32649/news/richey-reelected-sga-president-hart-wins-evp/"
+     }
+    },
+    {
+     "date": "2015-08-27",
+     "title": "Richey outlined fall goals, MyCampusToo launch",
+     "body": "Opening his first term, President Jay Todd Richey said he wanted more executive-cabinet and senate communication and more outreach to international students and regional campuses, and confirmed his campaign initiative MyCampusToo would launch that semester. Executive Vice President Nolan Miles said he would push senators to sit on university committees and revive the Dine with Decision Makers event.",
+     "src": {
+      "label": "Herald, 27 Aug 2015",
+      "url": "https://wkuherald.com/35480/news/sga-outlines-goals-for-the-semester/"
+     }
+    },
+    {
+     "date": "2015-09-22",
+     "title": "Senate voted to disapprove Confucius Institute approval process",
+     "body": "The Student Senate voted overwhelmingly to pass a resolution disapproving of how the Confucius Institute building project was approved, after President Gary Ransdell signed the contract in China in December 2014 and the Board of Regents, including the Student Regent, voted on it more than a month later without full details disclosed. Richey said the vote was not meant to set a precedent beyond ensuring the Board had full information before acting.",
+     "src": {
+      "label": "Herald, 24 Sep 2015",
+      "url": "https://wkuherald.com/35440/opinion/letter-to-the-editor-sga-president-discusses-confucius-vote/"
+     }
+    },
+    {
+     "date": "2015-11-18",
+     "title": "Senate backed meningitis vaccine requirement, amended bylaws",
+     "body": "The Senate unanimously passed Resolution 6-15-F supporting a meningococcal meningitis vaccination requirement for incoming freshmen in on-campus housing beginning with the class of 2020, and unanimously passed Bill 10-15-F amending SGA's bylaws. Richey reported that his fall listening tours of the regional campuses had gone well and turned up how different those campuses were from main campus.",
+     "src": {
+      "label": "Herald, 18 Nov 2015",
+      "url": "https://wkuherald.com/34232/news/sga-supports-requirement-for-meningitis-vaccinations/"
      }
     }
    ],
@@ -9374,6 +10295,17 @@
      }
     },
     {
+     "date": "2017-10-24",
+     "title": "Dahmer condemned a blackface Halloween incident at senate meeting",
+     "body": "President Andi Dahmer opened the eighth meeting of the Senate by telling members that a student had worn blackface to a Halloween party the previous weekend and that it was not acceptable. She also hosted student body presidents from other Kentucky universities on campus that weekend and reminded senators that Herald reporters were allowed into all university committee meetings.",
+     "campus": true,
+     "src": {
+      "label": "SGA Senate meeting minutes, 24 Oct 2017",
+      "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_10_24_17.pdf",
+      "file": "2017-18-senate-minutes-10-24-17.pdf"
+     }
+    },
+    {
      "date": "2017-11-09",
      "title": "SGA passes resolution supporting DACA students",
      "body": "At its Nov. 7 meeting the senate passed a resolution, co-authored by President Andi Dahmer and Francisco Serrano, standing in solidarity with WKU students who were DACA recipients. The measure passed 32-1 and was a revision of the clean DREAM Act resolution rejected the previous week, reframed to address only the WKU student community. Dahmer noted WKU was one of the last Kentucky schools to pass something of this nature.",
@@ -9425,6 +10357,52 @@
      "src": {
       "label": "Herald, 29 Jan 2018",
       "url": "https://wkuherald.com/26444/news/judicial-council-holds-emergency-meeting-to-discuss-election-discrepancies/"
+     }
+    },
+    {
+     "date": "2017-08-17",
+     "title": "Dahmer joined national solidarity letter after Charlottesville",
+     "body": "President Andi Dahmer was one of more than 120 college student body presidents nationwide who signed an open letter backing the University of Virginia after the violent Charlottesville protests, and said developing campus-wide \"cultural competency training\" was a goal for the semester.",
+     "campus": true,
+     "src": {
+      "label": "Herald, 17 Aug 2017",
+      "url": "https://wkuherald.com/28223/news/sga-president-signals-support-for-uva-following-charlottesville-protests/"
+     }
+    },
+    {
+     "date": "2017-09-26",
+     "title": "Senate passed a required sexual assault education resolution, 29-1",
+     "body": "Resolution 1-17-F, co-authored by public relations chair William Hurst, S.A.V.E.S. chair Ashlyn Jones and three senators, supported adding a one-credit-hour sexual assault education course to freshman colonnade requirements, arguing existing options like HAVEN and Green Dot carried no penalty for skipping them. The senate also funded a \"No-Shave November\" beard contest and fixed the timing of constitutional-amendment elections in the bylaws.",
+     "src": {
+      "label": "Herald, 28 Sep 2017",
+      "url": "https://wkuherald.com/27737/news/sga-passes-resolution-for-required-sexual-assault-course/"
+     }
+    },
+    {
+     "date": "2018-02-13",
+     "title": "Senate backed LGBTQ health curriculum, chair swap on Diversity committee",
+     "body": "The senate unanimously passed a resolution supporting integrated LGBTQ health curriculum in WKU's medical education programs, co-authored by diversity and inclusion chair Mark Clark, chief of staff Conner Hounshell and administrative vice president Kara Lowry. Clark was approved as the committee's new chair after Corey Newsome stepped down over scheduling conflicts.",
+     "src": {
+      "label": "Herald, 14 Feb 2018",
+      "url": "https://wkuherald.com/26075/news/sga-approves-lgbtq-healthcare-resolution/"
+     }
+    },
+    {
+     "date": "2018-04-03",
+     "title": "Dahmer announced she would not seek reelection",
+     "body": "Citing tension in the senate that she called \"almost toxic in nature\" and that she attributed to partisan ideology in a body meant to be nonpartisan, Dahmer said in a Facebook post she would not run again and endorsed Conner Hounshell for president alongside Savannah Molyneaux and Kara Lowry, seeking reelection to their executive vice president and administrative vice president seats.",
+     "src": {
+      "label": "Herald, 4 Apr 2018",
+      "url": "https://wkuherald.com/24409/news/sga-president-andi-dahmer-is-not-running-for-reelection/"
+     }
+    },
+    {
+     "date": "2018-05-01",
+     "title": "Caboni announced Title IX review after Dahmer harassment report",
+     "body": "University president Timothy Caboni said he would convene a faculty-staff-student committee, co-chaired by sociology professor Lauren McClain and counseling official Karl Laves, to review WKU's Title IX, Equal Employment Opportunity and Office of Student Conduct processes following the Herald's report on the harassment Dahmer said she experienced. President-elect Stephen Mayer called Dahmer \"a super strong woman\" and said he did not stand for harassment or sexual assault.",
+     "src": {
+      "label": "Herald, 1 May 2018",
+      "url": "https://wkuherald.com/24171/news/caboni-sga-president-respond-to-harassment/"
      }
     }
    ],
@@ -9525,7 +10503,8 @@
       },
       {
        "name": "Diversity and Inclusion (MyCampusToo)",
-       "chair": "Divya Gangavelli"
+       "chair": "Divya Gangavelli",
+       "note": "Chaired by Divya Gangavelli as of the September 2017 minutes; Corey Newsome later held the chair before stepping down over scheduling conflicts, and Mark Clark was approved to replace him in February 2018."
       },
       {
        "name": "Sustainability",
@@ -9559,6 +10538,18 @@
       "label": "WKU SGA Constitution, as amended spring 2017",
       "url": "https://www.wku.edu/sga/wku_sga_constitution_2017-2018.pdf"
      }
+    },
+    {
+     "file": "2017-18-senate-minutes-10-24-17.pdf",
+     "title": "SGA Senate minutes, 24 October 2017",
+     "summary": "Minutes of the eighth meeting of the 16th Senate, opening with President Andi Dahmer's condemnation of a student who wore blackface to a Halloween party that weekend.",
+     "extract": "\"A student dressed in black face for a Halloween party and this is not acceptable.\"",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "WKU SGA Senate minutes, 24 Oct 2017",
+      "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_10_24_17.pdf"
+     }
     }
    ]
   },
@@ -9573,10 +10564,10 @@
      "plaque_term": "2018-19",
      "role": "president",
      "year_confidence": "stated",
-     "name_verified": false,
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "",
+     "note": "Confirmed by an independent WKU record outside the plaque: the University Senate's Nov. 15, 2018 meeting agenda lists him under reports as \"SGA President: Stephen Mayer.\"",
      "sources": [
       {
        "label": "Herald, 18 Apr 2018",
@@ -9585,6 +10576,10 @@
       {
        "label": "Herald, 11 Sep 2018",
        "url": "https://wkuherald.com/23449/news/sga-president-prepares-for-a-tough-year/"
+      },
+      {
+       "label": "WKU University Senate meeting agenda, 15 Nov 2018",
+       "url": "https://www.wku.edu/senate/archives/senate_nov15_2018.php"
       }
      ],
      "profile": [
@@ -9594,6 +10589,24 @@
     }
    ],
    "events": [
+    {
+     "date": "2018-09-11",
+     "title": "Senate rejected first Judicial Council nominee of the term",
+     "body": "The senate voted 8-7-1 against confirming Wood Brown, a Pike fraternity member and law clerk, as associate justice of the Judicial Council, after Mayer said his constitutional duty required him to appoint whom he judged best despite recusing himself from the interview process; senators argued the Judicial Council's own top-ranked applicant, not Brown, should have been chosen. Mayer's next nominee, Alex Rivera, was confirmed the following week.",
+     "src": {
+      "label": "SGA Senate meeting minutes, 11 Sep 2018",
+      "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_11_sep.docx"
+     }
+    },
+    {
+     "date": "2018-09-25",
+     "title": "Academic and Student Affairs directorship filled after two failed tries",
+     "body": "The senate confirmed Aubrey Kelly as Director of Academic and Student Affairs 24-3-4, three weeks into the term. Initial nominee Ashley Cox was not confirmed at the first meeting after senators questioned her committee attendance, then withdrew when a family member was hospitalized; her replacement, Anna McAvoy, failed confirmation 6-9-1 on Sept. 11 after a senator raised concerns about her scholarship-grading experience.",
+     "src": {
+      "label": "SGA Senate meeting minutes, 25 Sep 2018",
+      "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"
+     }
+    },
     {
      "date": "2018-09-20",
      "title": "Senate asked WKU to cancel classes on Election Day",
@@ -9677,7 +10690,143 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Stephen Mayer",
+      "note": "Also served as student regent under the merged offices.",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Garrett Edmonds",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Harper Anderson",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Will Harris",
+      "note": "Elected student body president for 2019-20 the following spring.",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Director of Public Relations",
+      "name": "Noah Moore",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Director of Information Technology",
+      "name": "Paul Brosky",
+      "src": {
+       "label": "SGA Senate minutes, 4 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+      }
+     },
+     {
+      "office": "Director of Academic and Student Affairs",
+      "name": "Aubrey Kelly",
+      "note": "Third nominee for the seat; confirmed 24-3-4 on Sep. 25, 2018 after Ashley Cox withdrew and Anna McAvoy's confirmation failed 6-9-1.",
+      "src": {
+       "label": "SGA Senate minutes, 25 Sep 2018",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Asha McWilliams",
+       "src": {
+        "label": "SGA Senate minutes, 4 Sep 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+       }
+      },
+      {
+       "office": "Secretary of the Senate",
+       "name": "Andrew Merritt",
+       "src": {
+        "label": "SGA Senate minutes, 4 Sep 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Campus Improvements",
+       "chair": "Matt Barr",
+       "src": {
+        "label": "SGA Senate minutes, 25 Sep 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"
+       }
+      },
+      {
+       "name": "Public Relations",
+       "chair": "Brigid Stakelum",
+       "note": "Rendered \"Bridget Stakelum\" in the Sept. 25, 2018 minutes and \"Brigid Stakelum\" in the Oct. 23 and Nov. 13 minutes; spelling unverified.",
+       "src": {
+        "label": "SGA Senate minutes, 23 Oct 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"
+       }
+      },
+      {
+       "name": "Sustainability",
+       "chair": "Jayden Thomas",
+       "src": {
+        "label": "SGA Senate minutes, 4 Sep 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
+       }
+      },
+      {
+       "name": "Legislative Research",
+       "chair": "Trevor Huffman",
+       "src": {
+        "label": "SGA Senate minutes, 23 Oct 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"
+       }
+      },
+      {
+       "name": "Diversity and Inclusion",
+       "chair": "Mark Clark",
+       "src": {
+        "label": "SGA Senate minutes, 23 Oct 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-23-oct.docx"
+       }
+      },
+      {
+       "name": "Committee of Academic and Student Affairs (CASA)",
+       "chair": "Amanda Harder",
+       "note": "A Senate committee distinct from the executive Director of Academic and Student Affairs.",
+       "src": {
+        "label": "SGA Senate minutes, 13 Nov 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-13-nov.docx"
+       }
+      }
+     ],
+     "note": "This was the 17th Senate, called to order each week by Speaker Asha McWilliams. Randall P. Bogard served as SGA's faculty advisor. Minutes for this term were posted by WKU as Word documents rather than PDFs."
+    }
+   }
   },
   {
    "id": "2019-20",
@@ -9848,13 +10997,21 @@
       {
        "label": "WKU News - Class of 2021 Commencement",
        "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=9659"
+      },
+      {
+       "label": "Herald, 30 Sep 2020",
+       "url": "https://wkuherald.com/14211/news/edmonds-norvell-ticket-wins-sga-elections-at-virtual-event/"
+      },
+      {
+       "label": "Herald, 21 Oct 2020 (corrected)",
+       "url": "https://wkuherald.com/13430/news/sga-votes-on-administrative-vice-president-at-this-weeks-meeting/"
       }
      ],
      "profile": [
       "Edmonds, a senior from Island, Kentucky, spent his freshman year as chair of the Campus Improvements Committee, working with Vice President of Student Affairs Brian Kuster on projects including a campus safety walk, before winning election as executive vice president in April 2018 on a ticket with Harper Anderson and Stephen Mayer. He served two years as executive vice president under President Will Harris, pushing for a budget model geared toward campus amenities and recreational life and working to diversify Senate appointments with seats for underrepresented students.",
-      "He ran for the presidency in fall 2020 on the Edmonds-Norvell ticket, after his original running mate for administrative vice president, Nathan Terrell, dropped out and was replaced by Abbey Norvell. The campaign centered on a pledge to create a Director of Outreach position to close the communication gap between campus organizations and SGA, and the Sept. 24 Herald town hall covered WKU's COVID-19 response and the summer's Black Lives Matter protests on campus. Voting ran Sept. 28-29 on TopNet; Edmonds defeated senator MJ Mayo, becoming SGA president and, since the two offices had merged by then, student regent on the WKU Board of Regents.",
-      "Taking office amid the pandemic, his cabinet confirmed Isaac Keller as administrative vice president 29-1 in October after Edmonds said he wanted a deputy willing to challenge him, with Matt Barr, Ashlynn Evans, Kody Okert and Paul Brosky rounding out the executive and Shelby Robertson serving as non-voting speaker of the senate. Early cabinet business set up officer office hours, an ad hoc outreach committee and a push toward inclusive pronoun language in Senate proceedings. That fall SGA's petition for a pass/no-pass grading option during COVID disruptions, backed by over 3,500 signatures, succeeded; in the spring his senate passed the organization's largest-ever organizational aid bill and a resolution seeking a codified vetting process for campus dining vendors. Near the end of his term he declined to fill the chief justice seat vacated by Erika Puhakka, saying the choice belonged to his successor: \"I think that's the only thing that is right in this scenario.\" He also worried publicly that only 13 students were running for senate in the April election, and closed his term addressing the Class of 2021 at the delayed Fall 2020/Spring 2021 commencement, telling graduates their perseverance through \"this past year\" had brought them to their day of celebration.",
-      "In the spring he presided over a productive senate that passed SGA's largest organizational aid bill ever and a bill seeking a codified vetting process for campus dining vendors. Near the end of his term he declined to fill the chief justice seat vacated by Erika Puhakka, saying the choice belonged to his successor: \"I think that's the only thing that is right in this scenario.\" He also worried publicly that only 13 students were running for senate in the April election."
+      "He ran for the presidency in fall 2020 on the Edmonds-Norvell ticket, after his original running mate for administrative vice president, Nathan Terrell, dropped out and was replaced by Abbey Norvell. The campaign centered on a pledge to create a Director of Outreach position to close the communication gap between campus organizations and SGA, and the Sept. 24 Herald town hall covered WKU's COVID-19 response and the summer's Black Lives Matter protests on campus. Voting ran Sept. 28-29 on TopNet; Edmonds defeated senator MJ Mayo, becoming SGA president and, since the two offices had merged by then, student regent on the WKU Board of Regents. Norvell was elected administrative vice president alongside him, with the Herald reporting no decision yet made on a separate executive vice president post.",
+      "Taking office amid the pandemic, the senate confirmed Isaac Keller to a vice-president post 29-1 in October after Edmonds said he wanted a deputy willing to challenge him; the Herald's report on that vote first called the office executive vice president, then ran a correction changing it to administrative vice president -- the same title the Herald had given Norvell in September, a conflict the record does not resolve. Matt Barr, Ashlynn Evans, Kody Okert and Paul Brosky rounded out the executive and Shelby Robertson served as non-voting speaker of the senate. Early cabinet business set up officer office hours, an ad hoc outreach committee chaired by Me'Lon Craighead and a push toward inclusive pronoun language in Senate proceedings. That fall SGA petitioned WKU to restore Pass/D/Fail grading for COVID-disrupted students; Associate Provost Rob Hale initially rebuffed the request, calling the university's extended drop deadline sufficient, but by December the petition -- more than 3,500 signatures in three days -- had succeeded, and Edmonds thanked senators for the work behind it at the semester's final meeting alongside bills funding campus safe-driving signage and several student organizations.",
+      "In the spring his senate passed the organization's largest-ever organizational aid bill and a resolution seeking a codified vetting process for campus dining vendors after a controversial social media post by a local pizzeria owner, alongside legislation backing WKU's Naming and Symbols Task Force in renaming buildings tied to racism, a community garden, and a diversity-event push by DEI chair Fatin Yaro. Near the end of his term he declined to fill the chief justice seat vacated by Erika Puhakka, saying the choice belonged to his successor: \"I think that's the only thing that is right in this scenario.\" He also worried publicly that only 13 students were running for senate in the April election, and closed his term addressing the Class of 2021 at the delayed Fall 2020/Spring 2021 commencement, telling graduates their perseverance through \"this past year\" had brought them to their day of celebration."
      ]
     }
    ],
@@ -9950,6 +11107,97 @@
       "label": "WKU News - Class of 2021 Commencement",
       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=9659"
      }
+    },
+    {
+     "date": "2020-09-30",
+     "title": "Norvell elected administrative vice president; EVP still open",
+     "body": "SGA held a virtual election party over Zoom to announce results. The Edmonds-Norvell ticket defeated MJ Mayo for the presidency, and Abbey Norvell was elected administrative vice president alongside Edmonds. The Herald reported no official decision had yet been made on a separate executive vice president post, with an announcement expected at the next SGA meeting.",
+     "src": {
+      "label": "Herald, 30 Sep 2020",
+      "url": "https://wkuherald.com/14211/news/edmonds-norvell-ticket-wins-sga-elections-at-virtual-event/"
+     }
+    },
+    {
+     "date": "2020-11-11",
+     "title": "Judicial nominations confirmed; senate revives a Pass/D/Fail request",
+     "body": "The senate unanimously confirmed Edmonds's nominations of Derek Collins and Lexi Mayne as associate justices and Addison McCoun as senator at large. Senators passed a Tess Welch/Eric Barry bill to increase campus accessibility and split funding for SGA-branded masks and hand sanitizer between the senate and SGA's PR team. A closing bill by Tate McClard and Jacob Congleton, with every senator listed as a co-author, asked WKU to restore the Pass/D/Fail grading option it had offered in spring 2020 but declined to bring back that fall.",
+     "src": {
+      "label": "Herald, 11 Nov 2020 (corrected)",
+      "url": "https://wkuherald.com/13354/news/sga-discusses-pass-d-fail-option-at-weekly-meeting/"
+     }
+    },
+    {
+     "date": "2020-11-16",
+     "title": "Edmonds launched a P/D/F petition",
+     "body": "President Garrett Edmonds released a student petition asking WKU to offer a Pass/D/Fail grading option for the fall semester, citing inconsistent course modalities and the strain of quarantine on students without an online-learning fallback. The petition reached half its 1,000-signature goal within an hour and the target was raised to 5,000.",
+     "src": {
+      "label": "Herald, 18 Nov 2020",
+      "url": "https://wkuherald.com/12957/news/sga-creates-petition-for-p-d-f-option/"
+     }
+    },
+    {
+     "date": "2020-11-18",
+     "title": "Associate provost rebuffed SGA's P/D/F request; computers bill passes 28-3",
+     "body": "Edmonds told senators that Associate Provost Rob Hale had defended the university's decision to extend the drop deadline rather than restore Pass/D/Fail grading, and said he was \"deeply disturbed\" by the response; senator Brenna Mathews argued the policy left students choosing between attending in person or paying for an extra semester. Edmonds urged senators to keep circulating his petition, which had passed 3,000 signatures, and the senate voted 28-3 to fund recycled computers for the SGA office, a number scaled back to meet CDC guidelines.",
+     "src": {
+      "label": "Herald, 18 Nov 2020",
+      "url": "https://wkuherald.com/13074/news/sga-discusses-p-d-f-option-new-computers-at-weekly-meeting/"
+     }
+    },
+    {
+     "date": "2020-12-02",
+     "title": "Fall semester closed with a safe-driving pledge and organization funding",
+     "body": "At the last meeting of the fall semester, Edmonds thanked senators for the work that led to the new P/D/F option. Senators unanimously passed a Matthew Thomas bill committing SGA's social media to a \"Drive Safe Hilltoppers\" safety campaign, and unanimously funded a bill supporting HonorsToppers, College Republicans, Zeta Phi Beta and the Sociology and Criminology Club.",
+     "src": {
+      "label": "Herald, 2 Dec 2020",
+      "url": "https://wkuherald.com/12608/news/sga-passes-two-bills-at-final-meeting-of-the-semester/"
+     }
+    },
+    {
+     "date": "2021-01-20",
+     "title": "Spring semester opened over Zoom with a late-fee pledge",
+     "body": "At its first meeting of the spring semester, held on Zoom, SGA heard Edmonds say the provost search was in its final stage with interviews starting within weeks, and that he planned to look at changing or removing the late fees charged when a student's financial aid arrives late. Senators unanimously nominated Jamison Moorehead as director of IT and funded Dance Big Red and a Delta Sigma Pi virtual leadership conference.",
+     "src": {
+      "label": "Herald, 20 Jan 2021",
+      "url": "https://wkuherald.com/12067/news/news-campus-government/sga-discusses-dance-big-red-provost-search-late-fees-in-first-meeting-of-semester/"
+     }
+    },
+    {
+     "date": "2021-01-26",
+     "title": "Committee chairs set spring priorities",
+     "body": "Legislative Research Chair Dawson McCoun said the shift to remote meetings after March 2020 had made it harder to connect with students and pass legislation. Diversity and Inclusion Chair Fatin Yaro announced a Feb. 24 diversity event and legislation to set consequences for discrimination within student organizations, and Chief of Staff Matt Barr said he would continue the \"Go with the Flow\" program installing free menstrual-product dispensers on campus. SGA planned a return to masked, socially distanced in-person meetings that semester.",
+     "src": {
+      "label": "Herald, 26 Jan 2021",
+      "url": "https://wkuherald.com/11724/news/programs-to-look-out-for-from-the-sga-this-semester/"
+     }
+    },
+    {
+     "date": "2021-02-03",
+     "title": "New senator seated; rally with Gov. Beshear announced",
+     "body": "SGA nominated pre-law sophomore Will Dykeman as a new senator and Edmonds announced a virtual Student Body President rally for March 26 featuring Kentucky Gov. Andy Beshear, with Edmonds working to add state Rep. Charles Booker. Senators unanimously funded a bill by AVP Isaac Keller supporting Amazing Tones of Joy, Black Women of Western, Queer Student Union and the Business Association for Development, and voted $2,500 for ISEC's Black Magic Masquerade Ball on a bill by Me'Lon Craighead.",
+     "src": {
+      "label": "Herald, 3 Feb 2021",
+      "url": "https://wkuherald.com/11107/news/sga-nominates-new-senator-fund-diversity-and-inclusion-events/"
+     }
+    },
+    {
+     "date": "2021-02-11",
+     "title": "Outreach signage and safe-driving bills pass",
+     "body": "Guest speaker Ethan Logan, vice president of enrollment and student experience, briefed senators on how his office could help SGA. Edmonds pointed senators toward an upcoming provost-search update and urged them to consider running in the April officer elections. Senators unanimously passed a Me'Lon Craighead bill funding 50 laminated, QR-coded outreach signs for campus and a Matthew Thomas bill adding 12 safe-driving signs to campus parking lots; a bill on WKU's Naming and Symbols Task Force was held for the following week.",
+     "src": {
+      "label": "Herald, 11 Feb 2021",
+      "url": "https://wkuherald.com/11364/news/sga-focuses-on-outreach-safe-driving-initiative-in-weekly-meeting/"
+     }
+    },
+    {
+     "date": "2021-03-18",
+     "title": "Constitution amended; Caboni's contract extended",
+     "body": "Edmonds told senators the WKU Board of Regents had extended President Timothy Caboni's contract four years. The senate elected Addison McCoun to head the Legislative Research Committee after Dawson McCoun's resignation, passed a Tess Welch/Erika Puhakka bill amending constitutional wording 19-4, and funded a Sustainability Committee spring photo contest on a bill by Matthew Waninger and Elizabeth DeLozier.",
+     "src": {
+      "label": "Herald, 18 Mar 2021",
+      "url": "https://wkuherald.com/7830/news/sga-meets-for-new-nominations-fundraisers-constitution-chances/"
+     },
+     "campus": true
     }
    ],
    "documents": [
@@ -9980,10 +11228,19 @@
      {
       "office": "Administrative Vice President",
       "name": "Isaac Keller",
-      "note": "Confirmed 29-1 in October 2020.",
+      "note": "Confirmed by the senate 29-1 on 20 Oct 2020. The Herald's report on this vote originally called the post executive vice president and ran a correction changing it to administrative vice president -- the same title the Herald's 30 Sep 2020 election story gives to Abbey Norvell, elected AVP alongside Edmonds. Sourcing does not resolve which title is correct.",
       "src": {
        "label": "Herald, 21 Oct 2020",
        "url": "https://wkuherald.com/13430/news/sga-votes-on-administrative-vice-president-at-this-weeks-meeting/"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Abbey Norvell",
+      "note": "Elected on the Edmonds ticket 29 Sep 2020. The Herald's election story used the same 'administrative vice president' title later given (after a correction) to Isaac Keller, confirmed by the senate that October; the conflict between the two Herald reports is unresolved. As of the 30 Sep 2020 story, no decision had been made on a separate executive vice president post.",
+      "src": {
+       "label": "Herald, 30 Sep 2020",
+       "url": "https://wkuherald.com/14211/news/edmonds-norvell-ticket-wins-sga-elections-at-virtual-event/"
       }
      }
     ],
@@ -10003,9 +11260,19 @@
        "name": "Ad Hoc (Outreach)",
        "chair": "Me'Lon Craighead",
        "note": "Formed October 2020."
+      },
+      {
+       "name": "Diversity and Inclusion Committee",
+       "chair": "Fatin Yaro",
+       "note": "Held a diversity event 24 Feb 2021 and pursued legislation on organizational discrimination consequences."
+      },
+      {
+       "name": "Legislative Research Committee",
+       "chair": "Dawson McCoun",
+       "note": "McCoun resigned in March 2021; Addison McCoun was elected to succeed him 18 Mar 2021."
       }
      ],
-     "note": "Cabinet also included Matt Barr, Ashlynn Evans, Kody Okert and Paul Brosky; Roderick Maul and Tess Welch were elected committee chairs in October 2020 (SGA Executive Cabinet minutes, 13 Oct 2020, https://www.wku.edu/sga/executive/execs_minutes/sga_execminutes_10_13_20.pdf)."
+     "note": "Cabinet also included Matt Barr, Ashlynn Evans, Kody Okert and Paul Brosky; Roderick Maul and Tess Welch were elected committee chairs in October 2020 (SGA Executive Cabinet minutes, 13 Oct 2020, https://www.wku.edu/sga/executive/execs_minutes/sga_execminutes_10_13_20.pdf). Roderick Maul and Tess Welch were also elected general committee chairs in October 2020; Me'Lon Craighead chaired the Ad Hoc/Outreach committee. Speaker Shelby Robertson announced full committee rosters by Zoom breakout room at the 20 Oct 2020 meeting."
     }
    },
    "status": "researched"
@@ -10360,14 +11627,37 @@
       {
        "label": "SGA Constitution, 2023-2024",
        "url": "https://www.wku.edu/sga/2023-2024-executive/sga_constitution_2023.pdf"
+      },
+      {
+       "label": "Herald, 15 Nov 2023",
+       "url": "https://wkuherald.com/73874/news/sga-passes-legislation-swears-in-senator-names-awards-at-weekly-meeting/"
+      },
+      {
+       "label": "Herald, 31 Jan 2024",
+       "url": "https://wkuherald.com/74527/news/sga-swears-in-committee-heads-discusses-scholarship-opportunities/"
+      },
+      {
+       "label": "Herald, 6 Feb 2024",
+       "url": "https://wkuherald.com/74704/news/sga-announces-censure-hearing-against-administrative-vice-president-salvador-leon/"
+      },
+      {
+       "label": "Herald, 6 Mar 2024",
+       "url": "https://wkuherald.com/75487/news/sga-passes-legislation-introduces-new-scholarship/"
+      },
+      {
+       "label": "Herald, 8 Apr 2024",
+       "url": "https://wkuherald.com/76220/news/sga-to-host-final-tailgate-of-the-academic-year/"
+      },
+      {
+       "label": "Herald, 15 Apr 2024",
+       "url": "https://wkuherald.com/76396/news/sga-spring-general-election-voting-who-the-candidates-are-and-how-to-vote/"
       }
      ],
      "profile": [
       "Sam Kurtz, then the outgoing administrative vice president, was elected student body president in results announced early on April 19, 2023 in the Downing Student Union senate chambers, after voting opened on TopNet on April 17. His KFL ticket, with Annalise Finch as executive vice president and Salvador León as administrative vice president, ran unopposed, and Chief Justice Justin Goins read the results. In a statement, Kurtz said the ticket would \"listen to students' concerns, represent their voices, lead with integrity, and promote transparency.\"",
-      "At the 23rd Senate's first fall meeting on Aug. 29, Kurtz nominated Ashley Ranger, Anna Kate Hardin, Ellen Henderson, Morgan Gammons and Garrison Reed to the Judicial Council from what he called a record number of applicants, and named seven committee heads, including Rush Robinson for Campus Improvements and Sustainability and Karley Solorzano for Diversity, Equity and Inclusion. The Senate's first bill of the year, passed unanimously that September, funded the SGA Pink Walk breast-cancer event. Speaker of the Senate Sydney Denney wrote or co-wrote several of the year's bills, including a resolution capping student parking fees at $50, a $700 fund to help students pay parking fines, and voucher funding for the Dental Hygiene Center and ID Center. In February 2024 Kurtz and Chief of Staff Donté Reed rolled out a 450-voucher Uber giveaway aimed at student safety and outreach.",
-      "The year's fight was internal. In February 2024 the Judicial Council voted 6-0 to censure Administrative Vice President Salvador León after a hearing brought by Denney and the executive cabinet, which alleged León had spent SGA funds - including a $425.25 Preston Center deposit for Neurodiversity Acceptance Week - before the Senate passed the funding bill, in violation of the constitution's clause 2.5.3 requiring the administrative vice president to expend funds only as the Senate authorizes. León countered that text messages showed Kurtz had signed off on the spending in advance; the council found the spending improper but recommended no discipline beyond the censure itself.",
-      "In January 2024 Chief of Staff Lindsey Kelly and enrollment director Donte Reed both resigned, with Reed moving up to chief of staff. That April, Kurtz ran for a second term with Reed as his executive vice president candidate and junior senator Ethan Taylor for administrative vice president; the ticket again ran unopposed, and the three were re-elected as the 24th Senate's 34 members were announced the night of April 16-17, 2024. The 23rd Senate held its last meeting on April 16 with no legislation on the agenda, and Kurtz thanked senators in his final report for what the group had accomplished that year.",
-      "Sam Kurtz, then the outgoing administrative vice president, was elected student body president in the spring 2023 election, with results announced early on April 19, 2023 in the Downing Student Union senate chambers. His KFL executive ticket, with Annalise Finch as executive vice president and Salvador León as administrative vice president, ran unopposed. In a statement he promised to \"listen to students' concerns, represent their voices, lead with integrity.\""
+      "At the 23rd Senate's first fall meeting on Aug. 29, Kurtz nominated Ashley Ranger, Anna Kate Hardin, Ellen Henderson, Morgan Gammons and Garrison Reed to the Judicial Council from what he called a record number of applicants, and named seven committee heads, including Rush Robinson for Campus Improvements and Sustainability and Karley Solorzano for Diversity, Equity and Inclusion. The Senate's first bill of the year, passed unanimously that September, funded the SGA Pink Walk breast-cancer event. That November the senate backed moving DSU fire drills from 5 a.m. to 2 a.m. and funded a Boys and Girls Club toy drive. Speaker of the Senate Sydney Denney wrote or co-wrote several of the year's bills, including a resolution capping student parking fees at $50, a $700 fund to help students pay parking fines, and voucher funding for the Dental Hygiene Center and ID Center. In February 2024 Kurtz and Chief of Staff Donté Reed rolled out a 450-voucher Uber giveaway aimed at student safety and outreach, followed in March by a need-based scholarship awarding Uber vouchers and a Community Builder Excellence Scholarship for incoming Bowling Green-area freshmen; that month the senate also planned a Frankfort trip for the Rally for Higher Education.",
+      "The year's fight was internal. In February 2024 the Judicial Council voted 6-0 to censure Administrative Vice President Salvador León after a hearing brought by Denney and the executive cabinet, which alleged León had spent SGA funds - including a $425.25 Preston Center deposit for Neurodiversity Acceptance Week - before the Senate passed the funding bill, in violation of the constitution's clause 2.5.3 requiring the administrative vice president to expend funds only as the Senate authorizes. Chief Justice Isaac King said the cabinet, excluding León, had asked for the censure after León spent the funds despite Kurtz's condition that he wait for Bill 22-23-F to pass, and after he pushed PR Director Preston Romanov to promote the week on SGA social media ahead of the vote, effectively forcing the Senate's hand. León countered that text messages showed Kurtz had signed off on the spending in advance; the council found the spending improper but recommended no discipline beyond the censure itself.",
+      "In January 2024 Chief of Staff Lindsey Kelly and enrollment director Donte Reed both resigned, with Reed moving up to chief of staff. That April, Kurtz ran for a second term with Reed as his executive vice president candidate and junior senator Ethan Taylor for administrative vice president; the ticket again ran unopposed on a ballot of more than 60 legislative candidates, and the three were re-elected as the 24th Senate's 34 members were announced the night of April 16-17, 2024. Before that, SGA partnered with WKU Red Wave for a final Red Wave tailgate on April 9, with a student-DJ contest winner earning a $500 scholarship. The 23rd Senate held its last meeting on April 16 with no legislation on the agenda, and Kurtz thanked senators in his final report for what the group had accomplished that year."
      ]
     }
    ],
@@ -10461,6 +11751,60 @@
       "label": "Herald, 17 Apr 2024",
       "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
      }
+    },
+    {
+     "date": "2023-11-14",
+     "title": "Senate backs a later fire-drill time, funds a toy drive",
+     "body": "At the 23rd Senate's 11th meeting, senators unanimously passed Resolution 6-23-F, backing a change to DSU fire-drill timing from 5 a.m. to 2 a.m. after the Mental Health and Wellness Committee argued the earlier hour caused sleep problems and anxiety for students on early schedules or with accommodations. They also unanimously passed Bill 12-23-F, allocating $200 from the legislative discretionary fund for a Boys and Girls Club of Bowling Green toy drive, and swore in newly elected ISEC senator Ashlee Potter.",
+     "src": {
+      "label": "Herald, 15 Nov 2023",
+      "url": "https://wkuherald.com/73874/news/sga-passes-legislation-swears-in-senator-names-awards-at-weekly-meeting/"
+     }
+    },
+    {
+     "date": "2024-01-23",
+     "title": "Spring committee heads sworn in",
+     "body": "At the spring semester's first meeting, Kurtz appointed Madison Parker Payne as Outreach Committee chair and Sophia Bryant as Mental Health and Well-Being Committee chair; both were approved without contested debate. Executive Vice President Annalise Finch appointed Jaden Marshall to chair the Graduate Advisory Council campus committee and Chloe Ralston to chair the Colonnade General Education committee. Kurtz urged senators to spend down the senate's still-large discretionary budget before the semester's end.",
+     "src": {
+      "label": "Herald, 31 Jan 2024",
+      "url": "https://wkuherald.com/74527/news/sga-swears-in-committee-heads-discusses-scholarship-opportunities/"
+     }
+    },
+    {
+     "date": "2024-02-06",
+     "title": "Cabinet requests censure hearing against León",
+     "body": "Kurtz told the senate the Executive Cabinet had filed a formal report seeking a Judicial Council censure hearing against Administrative Vice President Salvador León. Chief Justice Isaac King said the cabinet's complaint was that León spent project funds before President Kurtz or EVP Finch consented, that he had done so after Kurtz conditioned permission on Bill 22-23-F first passing, and that he pushed PR Director Preston Romanov to promote Neurodiversity Week on SGA social media before the funding bill passed, effectively forcing the Senate's hand. The Executive Cabinet, excluding León, asked for a censure; the hearing was set for Feb. 7.",
+     "src": {
+      "label": "Herald, 6 Feb 2024",
+      "url": "https://wkuherald.com/74704/news/sga-announces-censure-hearing-against-administrative-vice-president-salvador-leon/"
+     }
+    },
+    {
+     "date": "2024-03-05",
+     "title": "Rally trip to Frankfort, new voucher and cleanup plans",
+     "body": "Kurtz previewed a senate trip to Frankfort for the Rally for Higher Education, where SGA planned to meet state Rep. Kevin Jackson and other Kentucky campus governments, and urged senators to seek re-election to preserve institutional knowledge. Chief of Staff Donté Reed introduced a need-based scholarship awarding four Uber vouchers and the Community Builder Excellence Scholarship for incoming Bowling Green-area freshmen. Campus Improvements and Sustainability chair Rush Robinson moved Earth Day from April 22 to April 19 and set a tentative Bowling Green cleanup for March 28.",
+     "src": {
+      "label": "Herald, 6 Mar 2024",
+      "url": "https://wkuherald.com/75487/news/sga-passes-legislation-introduces-new-scholarship/"
+     }
+    },
+    {
+     "date": "2024-04-09",
+     "title": "SGA closed the year with a Red Wave tailgate",
+     "body": "SGA partnered with WKU Red Wave for the school year's last tailgate before a baseball game against Louisville, featuring winners of a \"Battle of the DJs\" social-media poll; sophomore Wilson Patterson won the $500 top scholarship prize as \"DJ WLZN.\" Kurtz called the crowd to \"savor one last tailgate of the 2023-2024 school year,\" with SGA grilling food for attendees.",
+     "src": {
+      "label": "Herald, 8 Apr 2024",
+      "url": "https://wkuherald.com/76220/news/sga-to-host-final-tailgate-of-the-academic-year/"
+     }
+    },
+    {
+     "date": "2024-04-16",
+     "title": "Spring general election opened with over 60 candidates",
+     "body": "Voting for the spring 2024 general election opened on TopNet with more than 60 students on the ballot for legislative seats. Kurtz, Chief of Staff Donté Reed and junior senator Ethan Taylor ran unopposed for student body president, executive vice president and administrative vice president respectively; the legislative council ballot included three senior, three junior and three sophomore senator seats, six college seats, an ISEC senator, a first-generation senator, a transfer/non-traditional senator and 14 senator-at-large seats.",
+     "src": {
+      "label": "Herald, 15 Apr 2024",
+      "url": "https://wkuherald.com/76396/news/sga-spring-general-election-voting-who-the-candidates-are-and-how-to-vote/"
+     }
     }
    ],
    "documents": [
@@ -10546,7 +11890,7 @@
        "chair": "Callison Padgett"
       }
      ],
-     "note": "The 2023-2024 Judicial Council was Ashley Ranger, Anna Kate Hardin, Ellen Henderson, Morgan Gammons and Garrison Reed, nominated by Kurtz from a 'record number' of applicants (Herald, 30 Aug 2023). Justin Goins, chief justice of the outgoing Judicial Council, read the April 2023 election results; Isaac King was chief justice by the April 2024 town hall. Which of the two - or whether both - held the post across the 23rd Senate's term is not established."
+     "note": "The 2023-2024 Judicial Council was Ashley Ranger, Anna Kate Hardin, Ellen Henderson, Morgan Gammons and Garrison Reed, nominated by Kurtz from a 'record number' of applicants (Herald, 30 Aug 2023). Justin Goins, chief justice of the outgoing Judicial Council, read the April 2023 election results. Isaac King is confirmed as chief justice by 6 Feb 2024, explaining the Executive Cabinet's censure complaint against León (Herald, 6 Feb 2024), and was still chief justice at the April 2024 town hall; exactly when he succeeded Goins between Aug 2023 and Feb 2024 is not established in available sourcing."
     }
    },
    "status": "researched"
@@ -10690,9 +12034,173 @@
       "label": "Herald, 16 Apr 2025",
       "url": "https://wkuherald.com/83879/news/sga-holds-final-24th-senate-meeting/"
      }
+    },
+    {
+     "date": "2024-04-23",
+     "title": "24th Senate installed: Vincent elected speaker, Henderson named chief justice",
+     "body": "At the 24th Senate's first meeting, newly elected senators were sworn in and Sarah Vincent, College of Health and Human Services senator, was elected Speaker of the Senate over Sophia Bryant. Senior senator Anne-Marie Wright was appointed Chief of Staff, and Associate Chief Justice Ellen Henderson was appointed Chief Justice. Outgoing Chief Justice Isaac King swore in the new officers, officially opening the 2024-25 term.",
+     "src": {
+      "label": "Herald, 24 Apr 2024",
+      "url": "https://wkuherald.com/76579/news/sga-holds-first-meeting-of-24th-senate/"
+     }
+    },
+    {
+     "date": "2024-08-27",
+     "title": "Committee chairs and Judicial Council approved at fall opener",
+     "body": "At the 24th Senate's first fall meeting, the Senate unanimously approved Kurtz's nominations of Aziz Umarov, Madison Payne, Neill Kane and Sam Dorris to the 2024-25 Judicial Council, and confirmed six committee chairs: Hannah Evans (Legislative Operations), Savanna Kurtz (Student Experience and Enrollment), Ryan Dilts (Outreach and Public Relations), Megan Farmer (DEI), Sophia Bryant (Student Mental Health and Wellbeing) and Annie Finch (Community Relations). President Timothy Caboni addressed the Senate on campus building renovations, the Mahurin Honors College restructuring and WKU's push for R2 research status.",
+     "src": {
+      "label": "Herald, 27 Aug 2024",
+      "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+     }
+    },
+    {
+     "date": "2024-10-22",
+     "title": "Senate backs Myanmar flag, funds organizational aid and calculators",
+     "body": "The Senate unanimously passed Resolution 5-24-F backing a Myanmar flag on the empty pole outside the Mahurin Honors College, sought by senators after students said Burmese and Chin students had no flag representing them; Bill 9-24-F distributed $10,000 in fall Organizational Aid funding across 58 graded applications; and Bill 10-24-F added $540 to buy five more calculators for the Borrow-a-Calculator program, which had lent 28 calculators that semester. Kurtz appointed freshman Emaun Riley as ISEC senator and Mahurin Honors College senator Caden Lucas as the Senate's parliamentarian.",
+     "src": {
+      "label": "Herald, 23 Oct 2024",
+      "url": "https://wkuherald.com/79487/news/sga-to-put-up-new-flag-outside-mahurin-honors-college-two-appointments-made-at-weekly-meeting/"
+     }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Sam Kurtz",
+      "note": "Re-elected without opposition to a second term.",
+      "src": {
+       "label": "Herald, 17 Apr 2024",
+       "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Donté Reed",
+      "src": {
+       "label": "Herald, 17 Apr 2024",
+       "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
+      }
+     },
+     {
+      "office": "Chief Financial Officer",
+      "name": "Ethan Taylor",
+      "note": "Listed as Administrative Vice President in the spring 2024 election results; called Chief Financial Officer in Herald coverage through the year.",
+      "src": {
+       "label": "Herald, 17 Apr 2024",
+       "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Anne-Marie Wright",
+      "note": "Appointed at the 24th Senate's first meeting, 23 April 2024.",
+      "src": {
+       "label": "Herald, 24 Apr 2024",
+       "url": "https://wkuherald.com/76579/news/sga-holds-first-meeting-of-24th-senate/"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Sarah Vincent",
+       "note": "Elected over Sophia Bryant at the 24th Senate's first meeting, 23 April 2024.",
+       "src": {
+        "label": "Herald, 24 Apr 2024",
+        "url": "https://wkuherald.com/76579/news/sga-holds-first-meeting-of-24th-senate/"
+       }
+      },
+      {
+       "office": "Chief Justice",
+       "name": "Ellen Henderson",
+       "note": "Appointed from Associate Chief Justice at the 24th Senate's first meeting, 23 April 2024; still Chief Justice as of the 27 August 2024 meeting.",
+       "src": {
+        "label": "Herald, 24 Apr 2024",
+        "url": "https://wkuherald.com/76579/news/sga-holds-first-meeting-of-24th-senate/"
+       }
+      },
+      {
+       "office": "Chief Justice (successor)",
+       "name": "Morgan Gammons",
+       "note": "Serving as Chief Justice by the Senate's 4 February 2025 meeting; the Herald's coverage does not pin the exact date she succeeded Henderson.",
+       "src": {
+        "label": "Herald, 5 Feb 2025",
+        "url": "https://wkuherald.com/81839/news/news-campus-government/national-dei-legislation-sparks-possibility-of-changes-to-sga-constitution/"
+       }
+      }
+     ],
+     "size": 34,
+     "committees": [
+      {
+       "name": "Legislative Operations Committee",
+       "chair": "Hannah Evans",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      },
+      {
+       "name": "Student Experience and Enrollment Committee",
+       "chair": "Savanna Kurtz",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      },
+      {
+       "name": "Outreach and Public Relations Committee",
+       "chair": "Ryan Dilts",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      },
+      {
+       "name": "DEI Committee",
+       "chair": "Megan Farmer",
+       "note": "Renamed the Action and Opportunity Committee by Bill 21-25-S, ratified 88%-in-favor by student referendum in the April 2025 election.",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      },
+      {
+       "name": "Student Mental Health and Wellbeing Committee",
+       "chair": "Sophia Bryant",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      },
+      {
+       "name": "Community Relations Committee",
+       "chair": "Annie Finch",
+       "src": {
+        "label": "Herald, 27 Aug 2024",
+        "url": "https://wkuherald.com/77380/news/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
+       }
+      }
+     ],
+     "note": "34 senators were elected in the April 2024 general election from a field of over 60 candidates; five more were seated after the fall 2024 special election, plus later appointments including Emaun Riley (ISEC) and Caden Lucas (Mahurin Honors College, the seat's first occupant). The 2024-25 Judicial Council, approved 27 August 2024, was Aziz Umarov, Madison Payne, Neill Kane and Sam Dorris."
+    }
+   },
+   "documents": [
+    {
+     "file": "2024-25-sga-constitution-amended.pdf",
+     "title": "SGA Constitution, updated pursuant to Bill 21-25-S",
+     "summary": "The constitution as re-posted after the April 2025 referendum, showing the Diversity, Equity and Inclusion Committee's replacement by the Action & Opportunity Committee (AOC).",
+     "extract": "focusing on making tangible, lasting improvements in students' lives",
+     "sga_pages": "15",
+     "page": 15,
+     "src": {
+      "label": "WKU SGA, Constitution updated pursuant to Bill 21-25-S",
+      "url": "https://www.wku.edu/sga/2024_2025_judicial/documents/sga_constitution.pdf"
+     }
+    }
+   ]
   },
   {
    "id": "2025-26",
@@ -10813,6 +12321,25 @@
      }
     },
     {
+     "date": "2026-02-24",
+     "title": "Senate adopted a fully codified rewrite of its bylaws",
+     "body": "The Senate adopted an official codified version of the SGA Executive and Legislative Bylaws, superseding all prior versions, effective 24 February 2026.",
+     "src": {
+      "label": "WKU SGA, Executive and Legislative Bylaws, as amended 24 Feb 2026",
+      "url": "https://www.wku.edu/sga/2026_bylaws/sga_bylaws_2026.pdf",
+      "file": "2025-26-bylaws-02-24-26.pdf"
+     }
+    },
+    {
+     "date": "2026-04-02",
+     "title": "Senate learns the Gilbane housing partnership cleared the legislature",
+     "body": "At its Thursday meeting SGA senators learned that the Kentucky Legislature had approved WKU's public-private partnership with developer Gilbane, which the Board of Regents had provisionally approved 11 December 2025 to design and build a new residence hall replacing Douglas Keen and Hugh Poland Halls. \"WKU is now in the clear to start building the new residence halls,\" said Senator Jakob Barker, who with Senator Ethan Vietze also sponsored Resolution 7-26-S, backing a crosswalk at Alumni Avenue and Kentucky Street for residents of the 1355 Kentucky Street apartments who Barker's resolution said had to \"step into oncoming traffic\" to reach the Alumni Square parking garage. The same meeting passed legislation funding textbooks, exam supplies and lab goggles and authorizing a student-experience survey.",
+     "src": {
+      "label": "Herald, 5 Apr 2026",
+      "url": "https://wkuherald.com/92425/news/sga-announces-gilbane-partnership-approval-passes-legislation-for-student-resource-funding/"
+     }
+    },
+    {
      "date": "2026-03-24",
      "title": "SGA funded a tailgate to boost turnout at a baseball game",
      "body": "SGA used its projects fund to host free hot dogs, giveaways and a scholarship drawing before WKU baseball's home game against Louisville, an effort Robinson said answered Athletics Director Todd Stewart's call for more student engagement at games.",
@@ -10906,6 +12433,18 @@
      "src": {
       "label": "WKU SGA, Senate minutes, 14 Apr 2026",
       "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_minutes/senate_minutes_04_14_2026.pdf"
+     }
+    },
+    {
+     "file": "2025-26-bylaws-02-24-26.pdf",
+     "title": "SGA Executive and Legislative Bylaws, official codified version, 24 February 2026",
+     "summary": "The 25th Senate's full rewrite of its governing bylaws, covering procedure, attendance, judicial review, and amendment rules, adopted as the official codified version superseding all prior bylaws.",
+     "extract": "\"shall supersede all prior versions.\"",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "WKU SGA, Executive and Legislative Bylaws, as amended 24 Feb 2026",
+      "url": "https://www.wku.edu/sga/2026_bylaws/sga_bylaws_2026.pdf"
      }
     }
    ],
@@ -11147,6 +12686,15 @@
      }
     },
     {
+     "date": "2026-04-09",
+     "title": "Herald and Revolution Radio hosted a presidential debate",
+     "body": "College Heights Herald Editor-in-Chief Jake McMahon and Assistant News Editor Kane Smith sat down with presidential candidates Caden Lucas and Jaden Marshall for a debate co-hosted with campus station Revolution Radio, ahead of voting opening the following Monday on TopNet.",
+     "src": {
+      "label": "Herald, 9 Apr 2026",
+      "url": "https://wkuherald.com/92590/news/2026-sga-presidential-debate-hosted-by-revolution-radio-and-the-college-heights-herald/"
+     }
+    },
+    {
      "date": "2026-04-24",
      "title": "Lucas named a 2026 Truman Scholar",
      "body": "Days after taking SGA's top office, President Caden Lucas was named a 2026 Truman Scholar, WKU's second in the scholarship's history and Kentucky's only recipient that year. The award, chosen from 781 candidates at 305 colleges nationally, provides $30,000 toward graduate or professional study and recognizes commitment to public service.",
@@ -11221,7 +12769,7 @@
        }
       }
      ],
-     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026) in Herald reporting; the official 25th Senate minutes of 14 Apr 2026 (in 2025-26's documents) twice give 'Sophie Stirling', which favors that spelling but does not fully settle it, since the 28 Apr Herald report post-dates the minutes. No committee chairs had been reported as of this update - the 26th Senate's first fall meeting had not yet occurred."
+     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026 and Herald, 5 Apr 2026, the latter quoting her 2 Apr 2026 weekly report to the 25th Senate) in Herald reporting; the official 25th Senate minutes of 14 Apr 2026 (in 2025-26's documents) twice give 'Sophie Stirling'. That is now three Herald mentions and the official minutes agreeing on 'Stirling' against one 'Sterling', which favors that spelling but does not fully settle it, since the 28 Apr Herald report post-dates all of them and could reflect a correction rather than an error. No committee chairs had been reported as of this update - the 26th Senate's first fall meeting had not yet occurred."
     }
    },
    "status": "researched"
