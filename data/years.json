@@ -408,16 +408,6 @@
      "campus": true
     },
     {
-     "date": "1969-05-15",
-     "title": "New officers installed",
-     "body": "Newly elected Associated Students officers were installed, completing the transition to the administration chosen in the May balloting.",
-     "src": {
-      "label": "Herald 48:29, 15 May 1969",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2110/"
-     },
-     "campus": true
-    },
-    {
      "date": "1969-05-22",
      "title": "Zielke and Porter outline the coming year",
      "body": "Incoming leaders Larry Zielke and David Porter outlined the coming Associated Students administration for the Herald, closing the 1968-69 transition.",
@@ -607,16 +597,6 @@
       "label": "Herald 48:30 [31], 22 May 1969",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111"
      }
-    },
-    {
-     "date": "1969-09-18",
-     "title": "Congress meetings resume",
-     "body": "Associated Student Congress meetings resumed with the opening of the fall semester, the first full term for the administration elected the previous May.",
-     "src": {
-      "label": "Herald 49:1, 18 Sep 1969",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4764/"
-     },
-     "campus": true
     },
     {
      "date": "1969-11-04",
@@ -1465,9 +1445,79 @@
       "label": "Herald 52:53, 15 Apr 1977",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5370"
      }
+    },
+    {
+     "date": "1976-09-07",
+     "title": "ASG creates constitutional revision committee",
+     "body": "The Associated Student Government congress passed Bill 2, creating a committee charged with revising the organization's constitution. Constitutional revision remained on the ASG agenda for the rest of the school year and appeared again among proposed amendments and a spring referendum bill.",
+     "src": {
+      "label": "SGA Records (UA66), Bill 2 - Constitutional Revision Committee, 7 Sep 1976",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/2"
+     },
+     "campus": true
+    },
+    {
+     "date": "1976-10-26",
+     "title": "ASG asks WKU for a student minimum wage",
+     "body": "The congress adopted Resolution 13, proposing that Western institute a minimum wage policy for all student employees. It was part of a heavy fall docket that also included resolutions on parking, laundry services, non-smoking areas and residence hall change machines.",
+     "src": {
+      "label": "SGA Records (UA66), Resolution 13 - Minimum Wage, 26 Oct 1976",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/15"
+     },
+     "campus": true
+    },
+    {
+     "date": "1976-11-09",
+     "title": "Seals and Crofts concert loses ASG $3,800",
+     "body": "The Herald reported that the Seals and Crofts concert set the Associated Student Government back $3,800. Concert finances would remain a recurring sore point for ASG through the rest of the decade.",
+     "src": {
+      "label": "Herald 52:21, 9 Nov 1976",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5345"
+     },
+     "campus": true
+    },
+    {
+     "date": "1976-11-23",
+     "title": "ASG recommends preregistration for all students",
+     "body": "The Herald reported that ASG would recommend preregistration for all students. Advance registration was one of the four items president Christy Vogt later carried into her end-of-year recommendations to the administration.",
+     "src": {
+      "label": "Herald 52:25, 23 Nov 1976",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5341"
+     },
+     "campus": true
+    },
+    {
+     "date": "1977-02-25",
+     "title": "Discrimination resolution fails as 14 abstain",
+     "body": "Fourteen members abstained as the Associated Student Government rejected a resolution on discrimination, the Herald reported. The same issue noted that filing for ASG posts would begin the following Monday.",
+     "src": {
+      "label": "Herald 52:43, 25 Feb 1977",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5380"
+     },
+     "campus": true
+    },
+    {
+     "date": "1977-03-08",
+     "title": "ASG passes bill opposing tuition increase",
+     "body": "The congress approved Bill 9, formally opposing a proposed tuition increase. The same March meeting produced Bill 8, which created a Complaint Committee to handle student grievances.",
+     "src": {
+      "label": "SGA Records (UA66), Bill 9 - Opposition to Tuition Increase, 8 Mar 1977",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/9"
+     },
+     "campus": true
+    },
+    {
+     "date": "1977-04-26",
+     "title": "Vogt closes the congress with four recommendations",
+     "body": "President Christy Vogt sent a letter closing the congress and thanking ASG members for their work. She left four items to recommend to the administration: constitutional revision, extended hours for student buildings, open visitation and advanced registration.",
+     "src": {
+      "label": "SGA Records (UA66), Christy Vogt Letter, 26 Apr 1977",
+      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/1"
+     },
+     "campus": true
     }
    ],
-   "status": "partial"
+   "status": "researched"
   },
   {
    "id": "1977-78",
@@ -1487,8 +1537,89 @@
      "sources": []
     }
    ],
-   "events": [],
-   "status": "empty"
+   "events": [
+    {
+     "date": "1977-09-08",
+     "title": "ASG awaits approval of constitution changes",
+     "body": "The Herald reported that the Associated Student Government was awaiting approval of changes to its constitution as the fall term opened. The story ran alongside a look at how ASG's concert booking process actually worked.",
+     "src": {
+      "label": "Herald 53:5, 8 Sep 1977",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5447"
+     },
+     "campus": true
+    },
+    {
+     "date": "1977-10-25",
+     "title": "'A$G?' - Moore questions freshman campaign spending",
+     "body": "President Bob Moore publicly questioned spending by freshman candidates, in a story the Herald headlined 'A$G?'. The paper answered with an editorial arguing that Moore's comment was not good politics, and Moore wrote back disputing it.",
+     "src": {
+      "label": "Herald 53:18, 25 Oct 1977",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5464"
+     },
+     "campus": true
+    },
+    {
+     "date": "1977-10-27",
+     "title": "David Bass named ASG vice president",
+     "body": "The Associated Student Government named David Bass its new vice president. The same issue carried Moore's letter disputing the Herald's editorial on candidate spending.",
+     "src": {
+      "label": "Herald 53:19, 27 Oct 1977",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5462"
+     },
+     "campus": true
+    },
+    {
+     "date": "1977-11-17",
+     "title": "ASG and Interhall Council back coed dorm, end of door-ajar rule",
+     "body": "ASG and the Interhall Council backed a coed dorm and abolition of the door-ajar visitation rule. The vote followed weeks in which the two bodies weighed a dorm petition and the Herald urged ASG to represent students in the dorm protest.",
+     "src": {
+      "label": "Herald 53:25, 17 Nov 1977",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5475"
+     },
+     "campus": true
+    },
+    {
+     "date": "1978-01-24",
+     "title": "ASG signs Atlanta Rhythm Section and Brick",
+     "body": "ASG signed Atlanta Rhythm Section and Brick for spring concerts. Ticket sales proved weak, and by late February the Herald was reporting on the organization's concert losses.",
+     "src": {
+      "label": "Herald 53:35, 24 Jan 1978",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5493"
+     },
+     "campus": true
+    },
+    {
+     "date": "1978-02-21",
+     "title": "Concert losses will not stop a free concert",
+     "body": "The Herald reported that losses would not halt an ASG free concert, and that ASG had thrown in towels as a bonus for performers. An editorial declared that the cry for better concerts had finally been heard.",
+     "src": {
+      "label": "Herald 53:43, 21 Feb 1978",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5485"
+     },
+     "campus": true
+    },
+    {
+     "date": "1978-04-06",
+     "title": "ASG elections held with four offices uncontested",
+     "body": "Students voted in the Associated Student Government elections with four offices uncontested. Candidate Steve Thornton told the Herald his experience was an important factor in the race.",
+     "src": {
+      "label": "Herald 53:54, 6 Apr 1978",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5500"
+     },
+     "campus": true
+    },
+    {
+     "date": "1978-04-18",
+     "title": "Judicial council denies election appeal",
+     "body": "After losing candidate Ed Johnson contested the election result, the ASG judicial council denied his appeal following a long debate. The Herald had criticized the appeal system's lack of objectivity while the case was pending.",
+     "src": {
+      "label": "Herald 53:57, 18 Apr 1978",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5497"
+     },
+     "campus": true
+    }
+   ],
+   "status": "researched"
   },
   {
    "id": "1978-79",
@@ -1522,9 +1653,88 @@
       "label": "Herald 54:54, 12 Apr 1979",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3456"
      }
+    },
+    {
+     "date": "1978-09-07",
+     "title": "Roll-call votes made public; Moore ruled ineligible",
+     "body": "ASG decided its roll-call votes would be made public, the Herald reported. The same issue reported that former president Bob Moore was ineligible for an Associated Student Government job.",
+     "src": {
+      "label": "Herald 54:5, 7 Sep 1978",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3404"
+     },
+     "campus": true
+    },
+    {
+     "date": "1978-09-28",
+     "title": "David Rue wins freshman presidency by 11 votes",
+     "body": "In the freshman election held under ASG, David Rue was elected president by 11 votes. Only 95 students had voted in the freshman primary the week before.",
+     "src": {
+      "label": "Herald 54:11, 28 Sep 1978",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3423"
+     },
+     "campus": true
+    },
+    {
+     "date": "1978-10-19",
+     "title": "ASG backs Thornton's plan for minority representation",
+     "body": "The Associated Student Government backed president Steve Thornton's plan to add minorities to the regents' presidential screening panel. The Herald's editorial page argued the regents should appoint a minority representative.",
+     "src": {
+      "label": "Herald 54:17, 19 Oct 1978",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3406"
+     },
+     "campus": true
+    },
+    {
+     "date": "1978-11-30",
+     "title": "ASG approves revised constitution",
+     "body": "The congress approved a revised Associated Student Government constitution. The revision capped a fall in which ASG also pushed teacher evaluations and parking rezoning.",
+     "src": {
+      "label": "Herald 54:28, 30 Nov 1978",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3424"
+     },
+     "campus": true
+    },
+    {
+     "date": "1979-02-15",
+     "title": "ASG establishes a Minorities Board",
+     "body": "ASG established a Minorities Board, the Herald reported. The move followed the fall's push to add minority voices to the presidential screening process.",
+     "src": {
+      "label": "Herald 54:41, 15 Feb 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3442"
+     },
+     "campus": true
+    },
+    {
+     "date": "1979-03-27",
+     "title": "Thornton and Craig elected to SGAK executive council",
+     "body": "Two Western students, Steve Thornton and Terri Craig, were elected to the Student Government Association of Kentucky executive council. The Herald also editorialized that ASG should make its teacher evaluation public.",
+     "src": {
+      "label": "Herald 54:48, 27 Mar 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3448"
+     }
+    },
+    {
+     "date": "1979-04-17",
+     "title": "Election day: candidates lean on experience",
+     "body": "Students voted in the ASG general election, with the presidential candidates relying on their experience, the Herald reported. United Black Students backed Jamie Hargrove, and outgoing president Steve Thornton and former president Bob Moore published endorsements.",
+     "src": {
+      "label": "Herald 54:55, 17 Apr 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3455"
+     },
+     "campus": true
+    },
+    {
+     "date": "1979-04-19",
+     "title": "Jamie Hargrove easily wins the presidency",
+     "body": "The Herald reported that Jamie Hargrove easily won the Associated Student Government president race. The result closed an election season that had begun with 70 candidates signing up for offices.",
+     "src": {
+      "label": "Herald 54:56, 19 Apr 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454"
+     },
+     "campus": true
     }
    ],
-   "status": "partial"
+   "status": "researched"
   },
   {
    "id": "1979-80",
@@ -1544,8 +1754,89 @@
      "sources": []
     }
    ],
-   "events": [],
-   "status": "empty"
+   "events": [
+    {
+     "date": "1979-08-30",
+     "title": "Hargrove opens the year saying students are interested",
+     "body": "Associated Student Government head Jamie Hargrove told the Herald he believed students were interested in their government as the year opened. A week later ASG heard its 1979-80 budget and discussed changing its delegate policy.",
+     "src": {
+      "label": "Herald 55:2, 30 Aug 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5597"
+     },
+     "campus": true
+    },
+    {
+     "date": "1979-09-20",
+     "title": "Seats bill passes after revision under pressure",
+     "body": "A bill on Associated Student Government seats passed after being revised under pressure, expanding on earlier talk of broader residence hall representation. The Herald called the representation bill a small step in the right direction.",
+     "src": {
+      "label": "Herald 55:7, 20 Sep 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5570"
+     },
+     "campus": true
+    },
+    {
+     "date": "1979-11-01",
+     "title": "ASG rejects move to close Diddle Hall",
+     "body": "The Associated Student Government rejected a move to close Diddle Hall dormitory. The vote came amid a fall of housing debates that later included a push to make Keen Hall a coed dorm.",
+     "src": {
+      "label": "Herald 55:19, 1 Nov 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5575"
+     },
+     "campus": true
+    },
+    {
+     "date": "1979-11-29",
+     "title": "ASG proposes an activity fee for part-time students",
+     "body": "ASG proposed a part-time student activity fee. The proposal came as the Board of Regents weighed budget requests for the coming biennium.",
+     "src": {
+      "label": "Herald 55:25, 29 Nov 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5581"
+     },
+     "campus": true
+    },
+    {
+     "date": "1980-02-21",
+     "title": "ASG considers moving its spring elections",
+     "body": "The Associated Student Government considered changing the date of its spring elections. The discussion took place against campus anger over a proposed tuition increase.",
+     "src": {
+      "label": "Herald 55:40, 21 Feb 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5608"
+     },
+     "campus": true
+    },
+    {
+     "date": "1980-04-17",
+     "title": "Fuller and Irons win the presidential primary",
+     "body": "Steve Fuller and Tim Irons emerged as victors in the ASG presidential primary, from a field of three that also included David Rue. Candidates had been certified earlier in the month.",
+     "src": {
+      "label": "Herald 55:53, 17 Apr 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5629"
+     },
+     "campus": true
+    },
+    {
+     "date": "1980-04-24",
+     "title": "Steve Fuller elected ASG president",
+     "body": "Steve Fuller, Mark Wilson and Greg Zoeller were elected to the top Associated Student Government jobs. The Herald wrote that persistence had paid off in Fuller's campaign, while runner-up Tim Irons looked to the future after losing.",
+     "src": {
+      "label": "Herald 55:55, 24 Apr 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5627"
+     },
+     "campus": true
+    },
+    {
+     "date": "1980-05-01",
+     "title": "New ASG officers and members sworn in",
+     "body": "The new Associated Student Government officers and members were sworn in. ASG and the Interhall Council were also conducting student polls as the year closed.",
+     "src": {
+      "label": "Herald 55:57, 1 May 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5625"
+     },
+     "campus": true
+    }
+   ],
+   "status": "researched"
   },
   {
    "id": "1980-81",
@@ -1565,8 +1856,69 @@
      "sources": []
     }
    ],
-   "events": [],
-   "status": "empty"
+   "events": [
+    {
+     "date": "1980-10-30",
+     "title": "ASG proposes a title change",
+     "body": "The Associated Student Government proposed a title change for the organization. The proposal surfaced in the same week campus activities were limited for the national election day.",
+     "src": {
+      "label": "Herald 56:19, 30 Oct 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5530"
+     },
+     "campus": true
+    },
+    {
+     "date": "1981-02-05",
+     "title": "ASG asks the state to evaluate higher education",
+     "body": "ASG asked the state to evaluate higher education. The request came in a legislative season dominated by budget worries across Kentucky's universities.",
+     "src": {
+      "label": "Herald 56:36, 5 Feb 1981",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5640"
+     },
+     "campus": true
+    },
+    {
+     "date": "1981-04-02",
+     "title": "Sturgeon and Bush win the ASG primary",
+     "body": "David Sturgeon and Marcel Bush won the Associated Student Government primary, in a campaign the Herald said saw candidates playing big time politics. The same issue carried a resolution asking for a new ASG logo.",
+     "src": {
+      "label": "Herald 56:50, 2 Apr 1981",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5664"
+     },
+     "campus": true
+    },
+    {
+     "date": "1981-04-09",
+     "title": "Bush defeats Sturgeon for the presidency",
+     "body": "David Sturgeon was defeated in the Associated Student Government race, leaving Marcel Bush the winner after endorsements had split between the two. The congress also voted to keep the present ASG logo.",
+     "src": {
+      "label": "Herald 56:52, 9 Apr 1981",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5661"
+     },
+     "campus": true
+    },
+    {
+     "date": "1981-04-14",
+     "title": "Close races prompt ASG recounts",
+     "body": "Close races prompted recounts in the Associated Student Government election. The recounts came in the same week the Council on Higher Education approved a tuition increase.",
+     "src": {
+      "label": "Herald 56:53, 14 Apr 1981",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5670"
+     },
+     "campus": true
+    },
+    {
+     "date": "1981-04-23",
+     "title": "ASG changes its mind on changing minds",
+     "body": "The Herald reported that the Associated Student Government changed its mind on changing minds, capping a contentious election month. The same issue covered a withdrawn regent selection and the board's study of reorganizing the university.",
+     "src": {
+      "label": "Herald 56:56, 23 Apr 1981",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5667"
+     },
+     "campus": true
+    }
+   ],
+   "status": "researched"
   },
   {
    "id": "1981-82",
@@ -1595,9 +1947,89 @@
       "label": "Herald 57:41, 18 Feb 1982",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2447"
      }
+    },
+    {
+     "date": "1981-09-03",
+     "title": "ASG announces its goals for the year",
+     "body": "The Associated Student Government announced its goals for the coming year. Within two weeks its executives were defending their actions in the Herald, whose editorial page complained that petty politics plagued the organization.",
+     "src": {
+      "label": "Herald 57:4, 3 Sep 1981",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2406"
+     },
+     "campus": true
+    },
+    {
+     "date": "1981-09-24",
+     "title": "Campaign spending limit raised",
+     "body": "ASG voted to increase its campaign spending limit. The change followed a week of debate over whether the cap should rise.",
+     "src": {
+      "label": "Herald 57:9, 24 Sep 1981",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2411"
+     },
+     "campus": true
+    },
+    {
+     "date": "1981-10-29",
+     "title": "ASG vetoes plan to pay an education lobbyist",
+     "body": "The Associated Student Government vetoed a plan to pay an education lobbyist. The vote came weeks after ASG had rallied publicly for higher education funding.",
+     "src": {
+      "label": "Herald 57:19, 29 Oct 1981",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2422"
+     },
+     "campus": true
+    },
+    {
+     "date": "1982-01-28",
+     "title": "ASG appoints a council to decide disputes",
+     "body": "ASG appointed a council to decide internal disputes. The same issue reported that the regents bill, changing how the student regent was chosen, had passed the state House.",
+     "src": {
+      "label": "Herald 57:35, 28 Jan 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2440"
+     },
+     "campus": true
+    },
+    {
+     "date": "1982-02-02",
+     "title": "Five students seek the student regent seat",
+     "body": "Five students sought the student regent spot in the first campus-wide election for the seat. The February 9 vote produced no majority, forcing a runoff the following week.",
+     "src": {
+      "label": "Herald 57:36, 2 Feb 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2442"
+     },
+     "campus": true
+    },
+    {
+     "date": "1982-04-08",
+     "title": "Ragan and Sargent survive the presidential primary",
+     "body": "Margaret Ragan and Glenn Sargent survived the Associated Student Government presidential primary. The field had included Jack Smith, Kerrie Stewart and Jack Murphree, whose supporters filled the Herald's letters pages.",
+     "src": {
+      "label": "Herald 57:53, 8 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2462"
+     },
+     "campus": true
+    },
+    {
+     "date": "1982-04-15",
+     "title": "General election results voided",
+     "body": "The student government election results were voided, a decision the Herald said disgusted the candidates. A repeat general election was scheduled for April 20.",
+     "src": {
+      "label": "Herald 57:55, 15 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2464"
+     },
+     "campus": true
+    },
+    {
+     "date": "1982-04-22",
+     "title": "Margaret Ragan wins the repeated election",
+     "body": "Margaret Ragan won the ASG presidency in the repeated general election. The new officers were sworn in the following week.",
+     "src": {
+      "label": "Herald 57:57, 22 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2466"
+     },
+     "campus": true
     }
    ],
-   "status": "partial"
+   "status": "researched"
   },
   {
    "id": "1982-83",
@@ -1614,7 +2046,25 @@
      "missing_from_plaque": false,
      "current": false,
      "note": "One of three names attached to 1982. Likely a mid-year succession.",
-     "sources": []
+     "sources": [
+      {
+       "label": "Herald 57:12, 12 Oct 1981",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2414"
+      },
+      {
+       "label": "Herald 57:37, 4 Feb 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2443"
+      },
+      {
+       "label": "Herald 57:42, 23 Feb 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2448"
+      }
+     ],
+     "profile": [
+      "David Payne first appears in the indexed record in February 1981 with a Herald letter titled 'Apathy Erased'. By October 1981 he was writing on the Associated Student Government's behalf, declaring that ASG was rallying for higher education as budget cuts loomed.",
+      "In early February 1982 the Herald reported that Payne wanted another adviser for ASG, and its editorial page attacked his judgment, while a report the next week said Payne considered certain resolutions misdirected. The indexed headlines identify him as ASG's leading spokesman that winter but do not state his office.",
+      "Later that month, letter writers to the Herald argued that Payne had been made a victim in the affair. His name does not appear in the indexed headlines of the spring 1982 election that chose Margaret Ragan, nor in the 1982-83 issues examined."
+     ]
     },
     {
      "name": "Sandra Norfleet",
@@ -1625,7 +2075,20 @@
      "missing_from_plaque": false,
      "current": false,
      "note": "Student regent, not president. Election reported in the Herald, 18 February 1982.",
-     "sources": []
+     "sources": [
+      {
+       "label": "Herald 57:41, 18 Feb 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2447"
+      },
+      {
+       "label": "Herald 57:55, 15 Apr 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2464"
+      }
+     ],
+     "profile": [
+      "No candidate won a majority on February 9, forcing a runoff, which Norfleet won on February 16. The Herald reported her election as student regent in its February 18 issue.",
+      "Her initial term was short: by mid-April 1982 the Herald noted that the student regent's 2-month term was nearing its end. She is listed among the 1982-83 student leaders, and in February 1983 the Herald's editorial page was still weighing the office, insisting the student regent must represent everyone."
+     ]
     },
     {
      "name": "Margaret Ragan",
@@ -1636,11 +2099,90 @@
      "missing_from_plaque": false,
      "current": false,
      "note": "",
-     "sources": []
+     "sources": [
+      {
+       "label": "Herald 57:53, 8 Apr 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2462"
+      },
+      {
+       "label": "Herald 57:57, 22 Apr 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2466"
+      },
+      {
+       "label": "Herald 58:38, 3 Feb 1983",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2339"
+      }
+     ],
+     "profile": [
+      "Margaret Ragan survived the April 1982 Associated Student Government presidential primary along with Glenn Sargent, emerging from a five-way field. Endorsement letters for her ran in the Herald through both rounds of the election.",
+      "After the first general election was voided, Ragan won the presidency in the repeated election held April 20, 1982. She and the other new officers were sworn in before the month was out.",
+      "Midway through her term Ragan used the Herald's pages to explain that the ASG presidency and the student regent seat were now separate positions. Her spring saw a grade plan, a student shuttle vote, and a contested rewrite of the ASG constitution before Jack Smith was elected to succeed her."
+     ]
     }
    ],
-   "events": [],
-   "status": "empty"
+   "events": [
+    {
+     "date": "1983-02-03",
+     "title": "Ragan: ASG presidency and student regent are separate jobs",
+     "body": "President Margaret Ragan wrote in the Herald that the Associated Student Government presidency and the student regent position were separate. The distinction reflected the 1982 change that made the student regent directly elected by the student body.",
+     "src": {
+      "label": "Herald 58:38, 3 Feb 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2339"
+     },
+     "campus": true
+    },
+    {
+     "date": "1983-02-10",
+     "title": "Grade plan passes; students vote for a shuttle",
+     "body": "ASG passed a grade plan, and 206 students voted for a campus shuttle service. The shuttle idea drew an offer of help from the TVA two weeks later.",
+     "src": {
+      "label": "Herald 58:40, 10 Feb 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2341"
+     },
+     "campus": true
+    },
+    {
+     "date": "1983-03-17",
+     "title": "Constitution changes approved; filing opens",
+     "body": "The Associated Student Government approved changes to its constitution, and ten students filed for offices ahead of the deadline. Dean Charles Keown publicly questioned the revisions the following week, as filings swelled to 68.",
+     "src": {
+      "label": "Herald 58:47, 17 Mar 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2348"
+     },
+     "campus": true
+    },
+    {
+     "date": "1983-04-07",
+     "title": "500 vote in the ASG primary",
+     "body": "About 500 students voted in the Associated Student Government primary. The Herald's letters pages carried a steady stream of endorsements for presidential candidate Jack Smith.",
+     "src": {
+      "label": "Herald 58:53, 7 Apr 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2354"
+     },
+     "campus": true
+    },
+    {
+     "date": "1983-04-14",
+     "title": "Jack Smith wins the ASG presidency",
+     "body": "Jack Smith won the presidency of the Associated Student Government, and students voted for the ASG constitutional revisions on the same ballot. The Herald had dared students to vote at all in a sardonic election day editorial.",
+     "src": {
+      "label": "Herald 58:55, 14 Apr 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2356"
+     },
+     "campus": true
+    },
+    {
+     "date": "1983-04-28",
+     "title": "ASG endorses a $15 athletic fee",
+     "body": "The outgoing congress endorsed a $15 athletic fee. The vote came as the Board of Regents turned its focus to the budget.",
+     "src": {
+      "label": "Herald 58:59, 28 Apr 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2360"
+     },
+     "campus": true
+    }
+   ],
+   "status": "researched"
   },
   {
    "id": "1983-84",
@@ -1657,11 +2199,110 @@
      "missing_from_plaque": false,
      "current": false,
      "note": "Two-year plate. Either re-elected or the plaque compresses two terms.",
-     "sources": []
+     "sources": [
+      {
+       "label": "Herald 58:49, 24 Mar 1983",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2350"
+      },
+      {
+       "label": "Herald 58:55, 14 Apr 1983",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2356"
+      },
+      {
+       "label": "Herald 59:51, 10 Apr 1984",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5900"
+      }
+     ],
+     "profile": [
+      "Jack Smith first ran for the Associated Student Government presidency in spring 1982, drawing repeated endorsement letters in the Herald, and though Margaret Ragan won that race, Smith and Lonnie Sears took awards as the year closed. He returned as a candidate in March 1983, when 68 students filed for ASG positions and his supporters again filled the letters pages.",
+      "Smith won the presidency of the Associated Student Government in the April 12, 1983 election, in which students also approved constitutional revisions. His victory came after roughly 500 students had voted in the primary the week before.",
+      "His presidency was colorful and contentious: the fall brought a discount card controversy, letters accusing him of partying while committees waited and others defending him, and a December cartoon that he wrote in to protest. In April 1984 the Herald caught him impersonating a bunny as his ASG ran a low-turnout poll on beer and a campus pub."
+     ]
     }
    ],
-   "events": [],
-   "status": "empty"
+   "events": [
+    {
+     "date": "1983-08-23",
+     "title": "Escort service returns; discount card floated",
+     "body": "The Herald's opening issue reported that the student escort service would resume and that ASG might sponsor a discount card. Filing for freshman elections was set to begin September 19.",
+     "src": {
+      "label": "Herald 59:1, 23 Aug 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5843"
+     },
+     "campus": true
+    },
+    {
+     "date": "1983-09-01",
+     "title": "Discount card plan draws fire",
+     "body": "ASG voted to study the discount card after the Herald editorialized that the organization should govern, not market cards. A week later the paper reported ASG would offer members a commission on card sales, prompting letters calling the plan cheap shots and old tricks.",
+     "src": {
+      "label": "Herald 59:4, 1 Sep 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5838"
+     },
+     "campus": true
+    },
+    {
+     "date": "1983-10-27",
+     "title": "ASG passes incomplete-grade deadline proposal",
+     "body": "The Associated Student Government passed its proposal on the deadline for incomplete grades, after tabling it the week before. The grade issue had occupied ASG since September.",
+     "src": {
+      "label": "Herald 59:19, 27 Oct 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5848"
+     },
+     "campus": true
+    },
+    {
+     "date": "1983-12-06",
+     "title": "ASG voids its own procedures amid growth",
+     "body": "The Herald reported that ASG voided its own procedures, while also noting growth in membership and a congress weighing 14 proposals. The editorial page mocked the body with a cartoon, and Jack Smith wrote in to say the cartoon aggravated him.",
+     "src": {
+      "label": "Herald 59:27, 6 Dec 1983",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5859"
+     },
+     "campus": true
+    },
+    {
+     "date": "1984-02-14",
+     "title": "Student legislature may rejoin ASG",
+     "body": "The Kentucky Student Legislature delegation was reported possibly rejoining the Associated Student Government. Letter writers sparred the same day over whether the ASG stereotype was deserved.",
+     "src": {
+      "label": "Herald 59:38, 14 Feb 1984",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5890"
+     },
+     "campus": true
+    },
+    {
+     "date": "1984-03-20",
+     "title": "Top four ASG offices decided without runoffs",
+     "body": "The top four Associated Student Government spots were decided, the Herald reported, as ASG emphasized representation. About 450 students had voted in the primary the week before.",
+     "src": {
+      "label": "Herald 59:45, 20 Mar 1984",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5896"
+     },
+     "campus": true
+    },
+    {
+     "date": "1984-04-03",
+     "title": "ASG polls students on beer and a campus pub",
+     "body": "ASG began a student poll on the beer and campus pub issue on general election day. The Herald's editorial page argued the economics of the campus pub plan were faulty.",
+     "src": {
+      "label": "Herald 59:49, 3 Apr 1984",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5901"
+     },
+     "campus": true
+    },
+    {
+     "date": "1984-04-10",
+     "title": "Low turnout may force a beer poll revote",
+     "body": "Low turnout threatened to spur a revote in the ASG beer poll. The same issue reported president Jack Smith impersonating a bunny for the season.",
+     "src": {
+      "label": "Herald 59:51, 10 Apr 1984",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5900"
+     },
+     "campus": true
+    }
+   ],
+   "status": "researched"
   },
   {
    "id": "1984-85",
@@ -1678,7 +2319,25 @@
      "missing_from_plaque": false,
      "current": false,
      "note": "Two-year plate. Either re-elected or the plaque compresses two terms.",
-     "sources": []
+     "sources": [
+      {
+       "label": "Herald 60:7, 20 Sep 1984",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5678"
+      },
+      {
+       "label": "Herald 60:34, 31 Jan 1985",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5750"
+      },
+      {
+       "label": "Herald 60:51, 11 Apr 1985",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5712"
+      }
+     ],
+     "profile": [
+      "Smith presided over a productive opening to the 1984-85 year. By the third week of September the Herald reported that four ASG proposals had been made reality, and the congress had begun studying a student book exchange, which became the signature project of his final year.",
+      "By mid-year the record was mixed. The book exchange venture appeared likely to take a summer pause, and the organization was weighing whether to fight cuts to education funding.",
+      "His term ended in April 1985. The Herald covered his exit with a news story headlined that Smith was ending his term as ASG president, an editorial crediting his enthusiasm with reviving interest in the organization, and an editorial cartoon. The SGA plaque records him on a two-year 1983-85 plate."
+     ]
     }
    ],
    "events": [
@@ -1690,9 +2349,81 @@
       "label": "Herald 60:38, 14 Feb 1985",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5721"
      }
+    },
+    {
+     "date": "1984-09-20",
+     "title": "Four proposals made reality in the third week of class",
+     "body": "The Herald reported that four Associated Student Government proposals had already been carried out, and that the congress was beginning a study of a student book exchange. The exchange went on to become the running project of the year.",
+     "src": {
+      "label": "Herald 60:7, 20 Sep 1984",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5678"
+     }
+    },
+    {
+     "date": "1984-09-27",
+     "title": "The grade scale proposal is denied",
+     "body": "ASG's proposal for a new grade scale was denied, one week after the congress's early run of successes. It was the first setback of the fall reported in the Herald's coverage.",
+     "src": {
+      "label": "Herald 60:9, 27 Sep 1984",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5676"
+     }
+    },
+    {
+     "date": "1984-10-18",
+     "title": "ASG wants less general education",
+     "body": "The congress went on record wanting a reduction in general education requirements. It was an early instance of the body intervening in curriculum policy, three years before the fights over the General Education Task Force.",
+     "src": {
+      "label": "Herald 60:15, 18 Oct 1984",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5691"
+     }
+    },
+    {
+     "date": "1984-11-08",
+     "title": "LaMont Jones drops out of a revote",
+     "body": "LaMont Jones withdrew from an ASG revote, and the same issue carried an editorial cartoon on the organization. A disputed election requiring a revote marked the low point of the fall semester.",
+     "src": {
+      "label": "Herald 60:19, 8 Nov 1984",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5705"
+     }
+    },
+    {
+     "date": "1985-01-31",
+     "title": "Education cuts loom and the book exchange stalls",
+     "body": "ASG weighed a fight against state education cuts, while its book exchange venture looked likely to pause for the summer. Both stories ran in the same late-January issue.",
+     "src": {
+      "label": "Herald 60:34, 31 Jan 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5750"
+     }
+    },
+    {
+     "date": "1985-02-28",
+     "title": "Four file for congress president",
+     "body": "A fourth candidate filed for ASG congress president and a debate was set, as the spring filing period opened. The same issue carried letters both applauding an ASG bill and requesting its support.",
+     "src": {
+      "label": "Herald 60:42, 28 Feb 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5753"
+     }
+    },
+    {
+     "date": "1985-03-28",
+     "title": "McKinney and Watkins take the primary",
+     "body": "Mitchell McKinney and Chris Watkins rode their experience to victory in the ASG primary. The congress also passed a resolution on grade point averages the same week.",
+     "src": {
+      "label": "Herald 60:47, 28 Mar 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5759"
+     }
+    },
+    {
+     "date": "1985-04-11",
+     "title": "Jack Smith ends his term",
+     "body": "The Herald marked the end of Jack Smith's presidency with a news story, an editorial crediting his enthusiasm with reviving interest in ASG, and an editorial cartoon. Mitchell McKinney had been elected the new president the week before.",
+     "src": {
+      "label": "Herald 60:51, 11 Apr 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5712"
+     }
     }
    ],
-   "status": "partial"
+   "status": "researched"
   },
   {
    "id": "1985-86",
@@ -1713,12 +2444,102 @@
       {
        "label": "Herald 60:38, 14 Feb 1985",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5721"
+      },
+      {
+       "label": "Herald 60:47, 28 Mar 1985",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5759"
+      },
+      {
+       "label": "Herald 60:49, 4 Apr 1985",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5757"
+      },
+      {
+       "label": "Herald 61:46, 4 Mar 1986",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6810"
       }
+     ],
+     "profile": [
+      "McKinney won the spring 1985 primary on a ticket with Chris Watkins; the Herald's headline said the pair rode experience to their primary victory.",
+      "He was announced as the new Associated Student Government president in the Herald of 4 April 1985, in the same issue that reported a legislative group rejoining ASG.",
+      "In March 1986 McKinney pulled out of the race for a second term. The same issue carried a piece arguing that student government needed a strong leader, and the field he left behind grew to four candidates before Tim Todd won the presidency that April. A 1986 presidential proclamation he signed honoring English professor Thomas Jones survives in the SGA records."
      ]
     }
    ],
-   "events": [],
-   "status": "empty"
+   "events": [
+    {
+     "date": "1985-10-31",
+     "title": "A 20-vote margin and a GPA debate",
+     "body": "About 20 votes separated the top two finishers in a fall ASG election, and the congress debated setting a grade-point average requirement for its own members. Both stories ran in the same late-October issue.",
+     "src": {
+      "label": "Herald 61:19, 31 Oct 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6785"
+     }
+    },
+    {
+     "date": "1985-11-05",
+     "title": "Alcohol on campus studied again",
+     "body": "ASG returned to the question of alcohol on campus, an issue that had already produced a student poll and a campus pub debate in 1984. The congress opened a new study of the policy.",
+     "src": {
+      "label": "Herald 61:20, 5 Nov 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6780"
+     }
+    },
+    {
+     "date": "1985-11-21",
+     "title": "A shuttle to the mall",
+     "body": "The congress discussed running a shuttle service from campus to the mall. It was one of several consumer-service ideas, alongside student discount cards, floated that fall.",
+     "src": {
+      "label": "Herald 61:25, 21 Nov 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6775"
+     }
+    },
+    {
+     "date": "1985-12-12",
+     "title": "Lighting proposal defeated",
+     "body": "Student government defeated a campus lighting proposal in the last week of the fall semester. It was one of the few outright defeats of legislation reported that year.",
+     "src": {
+      "label": "Herald 61:30, 12 Dec 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6772"
+     }
+    },
+    {
+     "date": "1986-01-23",
+     "title": "Fall-break bill narrowly passes",
+     "body": "A bill calling for a fall break narrowly passed ASG. The proposal drew an opposing editorial in the next issue calling the extra break impractical and not needed.",
+     "src": {
+      "label": "Herald 61:35, 23 Jan 1986",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6790"
+     }
+    },
+    {
+     "date": "1986-01-30",
+     "title": "No day off for Martin Luther King Day",
+     "body": "ASG rejected a proposal to dismiss classes for the Martin Luther King holiday, one week after passing the fall-break bill. The King holiday question returned to the congress the following year.",
+     "src": {
+      "label": "Herald 61:37, 30 Jan 1986",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6788"
+     }
+    },
+    {
+     "date": "1986-03-20",
+     "title": "Library hours proposals, and elections delayed a week",
+     "body": "ASG proposals asked for more library hours, and the spring elections were pushed back a week. The same issue carried dueling letters on whether the organization was in trouble.",
+     "src": {
+      "label": "Herald 61:48, 20 Mar 1986",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6806"
+     }
+    },
+    {
+     "date": "1986-04-10",
+     "title": "Pranks and accusations mar the races",
+     "body": "The Herald reported that pranks and accusations had marred the ASG races, and printed the election results in the same issue. Tim Todd emerged from the field as the new president.",
+     "src": {
+      "label": "Herald 61:54, 10 Apr 1986",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6818"
+     }
+    }
+   ],
+   "status": "researched"
   },
   {
    "id": "1986-87",
@@ -1739,7 +2560,24 @@
       {
        "label": "Herald 62:48, 1987",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5916/"
+      },
+      {
+       "label": "Herald 61:52, 3 Apr 1986",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6820"
+      },
+      {
+       "label": "Herald 61:55, 15 Apr 1986",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6817"
+      },
+      {
+       "label": "Herald 62:5, 11 Sep 1986",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5764"
       }
+     ],
+     "profile": [
+      "Todd reached the April 1986 runoff against Greg Elder after Mitchell McKinney's withdrawal left the presidential field open. The Herald reported the two-man race on 3 April, with the general election the following week.",
+      "Days after an election week the Herald described as marred by pranks and accusations, the paper identified Todd as the new ASG president in a sharply critical opinion piece headlined that he lacked knowledge of his own issues. Todd answered in print the following issue, criticizing the paper's reporting.",
+      "His first fall opened with an approved budget of $12,100, a plan to reach students by phone for their ideas and needs, and an ASG retreat featuring university president Kern Alexander."
      ]
     }
    ],
@@ -1752,9 +2590,72 @@
       "label": "TopSCHOLAR - SGA Constitution",
       "url": "https://digitalcommons.wku.edu/sga/Constitution/Constitution"
      }
+    },
+    {
+     "date": "1986-09-11",
+     "title": "A $12,100 budget and a retreat with the university president",
+     "body": "ASG approved a $12,100 budget, planned a phone outreach effort to hear students' ideas and needs, and announced a retreat featuring university president Kern Alexander. All three stories ran in the second week of the fall semester.",
+     "src": {
+      "label": "Herald 62:5, 11 Sep 1986",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5764"
+     }
+    },
+    {
+     "date": "1986-09-18",
+     "title": "A minor change in voting",
+     "body": "ASG sought a minor change in its voting procedures early in the fall term. It was the first structural tinkering of the Todd presidency.",
+     "src": {
+      "label": "Herald 62:7, 18 Sep 1986",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5762"
+     }
+    },
+    {
+     "date": "1987-03-05",
+     "title": "Rules suspended, bills passed",
+     "body": "The congress suspended its rules to pass a batch of bills in a single meeting. The rush came as the spring filing period for elections was opening.",
+     "src": {
+      "label": "Herald 62:45, 5 Mar 1987",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5919"
+     }
+    },
+    {
+     "date": "1987-03-19",
+     "title": "Martin Luther King bill splits the congress",
+     "body": "A Martin Luther King bill passed the congress with members split by the argument, a year after ASG had rejected dismissing classes for the holiday. The same issue reported that Tim Todd and Greg Elder would battle again for the presidency.",
+     "src": {
+      "label": "Herald 62:46, 19 Mar 1987",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5918"
+     }
+    },
+    {
+     "date": "1987-04-02",
+     "title": "Attendance drops after the speeches",
+     "body": "The Herald reported that ASG attendance fell off once campaign speeches had been heard. An accompanying piece warned voters that talk was cheap in the presidential race.",
+     "src": {
+      "label": "Herald 62:50, 2 Apr 1987",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5915"
+     }
+    },
+    {
+     "date": "1987-04-09",
+     "title": "An amendment dies of low member turnout",
+     "body": "A constitutional amendment was defeated because too few members turned up to vote on it. The failure came in the same week as the presidential election.",
+     "src": {
+      "label": "Herald 62:52, 9 Apr 1987",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5913"
+     }
+    },
+    {
+     "date": "1987-04-14",
+     "title": "The Herald calls the race for Elder; the index calls it no contest",
+     "body": "On election day the Herald endorsed challenger Greg Elder as the better choice to lead ASG, ran a letter calling the organization impotent, and headlined the race itself as no contest. The indexed issues that survive do not record the published result; the SGA plaque carries Todd through 1988 on a two-year plate.",
+     "src": {
+      "label": "Herald 62:53, 14 Apr 1987",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5912"
+     }
     }
    ],
-   "status": "partial"
+   "status": "researched"
   },
   {
    "id": "1987-88",
@@ -1775,7 +2676,24 @@
       {
        "label": "Herald 62:48, 1987",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5916/"
+      },
+      {
+       "label": "Herald 62:46, 19 Mar 1987",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5918"
+      },
+      {
+       "label": "Herald 62:53, 14 Apr 1987",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5912"
+      },
+      {
+       "label": "Herald 63:52, 7 Apr 1988",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7505"
       }
+     ],
+     "profile": [
+      "Todd sought a second term in spring 1987 in a rematch against Greg Elder, the man he had beaten the year before. The Herald reported the two would battle again in its 19 March issue.",
+      "On election day the Herald endorsed Elder as the better choice and indexed the race itself under the headline no contest. The surviving indexed issues do not record the published result; the SGA plaque lists Todd on a single 1986-88 plate, and no other president appears in the 1987-88 record.",
+      "The 1987-88 year under the two-year plate ended with the election of Scott Whitehouse on 7 April 1988, closing out the era of the Todd presidency."
      ]
     }
    ],
@@ -1788,9 +2706,81 @@
       "label": "Herald 62:48, 1987",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5916/"
      }
+    },
+    {
+     "date": "1987-09-10",
+     "title": "Dropping the intercollegiate legislature considered",
+     "body": "ASG considered dropping its membership in the intercollegiate legislature, while the Herald warned that sharing an officer with Interhall Council could mean trouble for both groups. An editorial the following week argued the Kentucky Intercollegiate State Legislature was worth keeping as a way to promote ideas.",
+     "src": {
+      "label": "Herald 63:5, 10 Sep 1987",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6854"
+     }
+    },
+    {
+     "date": "1987-10-01",
+     "title": "Crosswalk resolution passes",
+     "body": "The congress passed a resolution calling for a crosswalk. Campus safety items, including new screens for dormitory windows, filled much of the fall agenda.",
+     "src": {
+      "label": "Herald 63:11, 1 Oct 1987",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6866"
+     }
+    },
+    {
+     "date": "1987-10-27",
+     "title": "Getting tough on absenteeism",
+     "body": "ASG moved to get tough on absenteeism after a member lost his seat the week before. The Herald was simultaneously reporting that apathy was killing both ASG and the Residence Hall Association.",
+     "src": {
+      "label": "Herald 63:18, 27 Oct 1987",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6877"
+     }
+    },
+    {
+     "date": "1987-11-10",
+     "title": "Constitutional amendments up for a vote",
+     "body": "Constitutional amendments went before the body in November, in the same season the congress was pushing for required teacher evaluations. It was the third straight year of structural revision attempts.",
+     "src": {
+      "label": "Herald 63:22, 10 Nov 1987",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6873"
+     }
+    },
+    {
+     "date": "1988-02-23",
+     "title": "ASG explains its empty seats",
+     "body": "The organization publicly cited its reasons for the vacancies in its ranks, and four congress positions had been filled at a single meeting earlier that month. Days later an editorial told the body it needed better ideas, not gimmicks.",
+     "src": {
+      "label": "Herald 63:42, 23 Feb 1988",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7466"
+     }
+    },
+    {
+     "date": "1988-03-31",
+     "title": "Ragland and Whitehouse win the primaries",
+     "body": "Shannon Ragland and Scott Whitehouse won the ASG presidential primaries, narrowing a field of seven. The same issue reported passage of a proposal requesting a memorial area on campus.",
+     "src": {
+      "label": "Herald 63:50, 31 Mar 1988",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7487"
+     }
+    },
+    {
+     "date": "1988-04-07",
+     "title": "Whitehouse elected; condom machines approved",
+     "body": "Scott Whitehouse won the ASG presidential election, in an issue that also reported the congress approving condom machines for campus. The election coverage ran alongside editorials saying oversight and closed minds had marred the process.",
+     "src": {
+      "label": "Herald 63:52, 7 Apr 1988",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7505"
+     }
+    },
+    {
+     "date": "1988-04-14",
+     "title": "Bruce Cambron calls for a new election",
+     "body": "Bruce Cambron called for a new election a week after the results, following coverage of votes cast for a write-in candidate that ASG was told it could not ignore. The dispute carried into the following fall.",
+     "src": {
+      "label": "Herald 63:54, 14 Apr 1988",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7502"
+     }
     }
    ],
-   "status": "partial"
+   "status": "researched"
   },
   {
    "id": "1988-89",
@@ -1811,7 +2801,24 @@
       {
        "label": "TopSCHOLAR - Gen Ed response",
        "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/11"
+      },
+      {
+       "label": "Herald 63:50, 31 Mar 1988",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7487"
+      },
+      {
+       "label": "Herald 63:52, 7 Apr 1988",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7505"
+      },
+      {
+       "label": "Herald 64:13, 6 Oct 1988",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5964"
       }
+     ],
+     "profile": [
+      "Whitehouse won the March 1988 ASG presidential primary alongside Shannon Ragland, emerging from a field of seven candidates in a year when only two of 32 congress positions were contested.",
+      "He won the presidency on 7 April 1988, in an election the Herald's own editorial pages said had been marred by oversight and closed minds, and amid coverage of votes for a write-in candidate that the congress was told it could not ignore.",
+      "The disputed election shadowed his term into the fall: Bruce Cambron, who had demanded a new election in April, took his complaint to university president Thomas Meredith in October 1988, weeks after the congress banned future write-in campaigns. His year also produced ASG's formal written reaction to the General Education Task Force proposal."
      ]
     }
    ],
@@ -1824,9 +2831,81 @@
       "label": "TopSCHOLAR - Documents/Reports/11",
       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/11"
      }
+    },
+    {
+     "date": "1988-09-15",
+     "title": "Write-in campaigns banned",
+     "body": "ASG approved a ban on future write-in campaigns, five months after write-in votes had thrown its own presidential election into dispute. An editorial the next issue said the block showed ASG was not listening.",
+     "src": {
+      "label": "Herald 64:7, 15 Sep 1988",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5946"
+     }
+    },
+    {
+     "date": "1988-09-29",
+     "title": "Freshman election turnout called pretty good",
+     "body": "Turnout in the ASG freshman election was reported as \"pretty good.\" The same issue said the organization was working to make the importance of voting register with students.",
+     "src": {
+      "label": "Herald 64:11, 29 Sep 1988",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5941"
+     }
+    },
+    {
+     "date": "1988-10-06",
+     "title": "Cambron takes his election complaint to the president",
+     "body": "Bruce Cambron, who had called for a new election in April, talked to university president Thomas Meredith about the ASG election. The spring's disputed result was still alive six months on.",
+     "src": {
+      "label": "Herald 64:13, 6 Oct 1988",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5964"
+     }
+    },
+    {
+     "date": "1988-11-03",
+     "title": "Half the open slots filled; shelters for shuttle stops",
+     "body": "ASG filled half of its open congress seats and sought shelters and seats for campus shuttle stops. The following week the Herald editorialized that ASG's efforts directly helped and served students.",
+     "src": {
+      "label": "Herald 64:21, 3 Nov 1988",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5976"
+     }
+    },
+    {
+     "date": "1988-12-12",
+     "title": "The weeklong Thanksgiving break is dropped",
+     "body": "ASG dropped its push for a weeklong Thanksgiving break, three weeks after voting to seek one. In the same issue, members rated their own organization as average.",
+     "src": {
+      "label": "Herald 64:28, 12 Dec 1988",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5966"
+     }
+    },
+    {
+     "date": "1989-02-16",
+     "title": "An extra study day recommended",
+     "body": "ASG recommended adding an extra study day before exams. The proposal followed January efforts to find a way to print teacher evaluations.",
+     "src": {
+      "label": "Herald 64:39, 16 Feb 1989",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7541"
+     }
+    },
+    {
+     "date": "1989-03-02",
+     "title": "More movie hours wanted",
+     "body": "The congress asked for more movie hours on campus. It was one of the quality-of-life items that filled the spring agenda before election season.",
+     "src": {
+      "label": "Herald 64:43, 2 Mar 1989",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7566"
+     }
+    },
+    {
+     "date": "1989-04-13",
+     "title": "Amos Gott edges Lynn Groemling",
+     "body": "Amos Gott narrowly defeated Lynn Groemling in the ASG presidential race. The campaign season had drawn complaints from candidates about the brief primary and an editorial warning that name recognition should not decide the race.",
+     "src": {
+      "label": "Herald 64:49, 13 Apr 1989",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7572"
+     }
     }
    ],
-   "status": "partial"
+   "status": "researched"
   },
   {
    "id": "1989-90",
@@ -1847,7 +2926,24 @@
       {
        "label": "TopSCHOLAR - Gott correspondence",
        "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
+      },
+      {
+       "label": "Herald 64:32, 24 Jan 1989",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7533"
+      },
+      {
+       "label": "Herald 64:49, 13 Apr 1989",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7572"
+      },
+      {
+       "label": "TopSCHOLAR SGA Reports 56",
+       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/56"
       }
+     ],
+     "profile": [
+      "Gott was a visible member before he was president, signing Herald letters on ASG's behalf, including a January 1989 piece promoting Campus Pride '89 and an earlier letter urging readers to understand the organization.",
+      "He won the presidency in April 1989, edging Lynn Groemling in a race that had drawn candidate complaints about the brief primary.",
+      "His presidency ran on correspondence: resolutions went out over his signature as memoranda to named administrators and answers came back. In spring 1990 he wrote to six administrators under Resolution 90-6-S seeking changes to the final exam schedule, part of a surviving file that also covers extended library hours, the Downing University Center flagpole, mace sales at the bookstore, AIDS education and larger diplomas."
      ]
     }
    ],
@@ -1869,9 +2965,72 @@
       "label": "TopSCHOLAR - Documents/Reports",
       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
      }
+    },
+    {
+     "date": "1989-08-24",
+     "title": "Gott gets a jump on the semester",
+     "body": "The Herald reported that Amos Gott had gotten a jump on the ASG semester, opening his presidency before classes settled in. A companion piece urged students to participate in the organization.",
+     "src": {
+      "label": "Herald 65:2, 24 Aug 1989",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7578"
+     }
+    },
+    {
+     "date": "1989-09-12",
+     "title": "A budget tiny compared to other schools",
+     "body": "The Herald reported that ASG's budget was tiny compared to student governments at other schools. Two days later the congress approved joining a new board but admitted it could not afford the membership.",
+     "src": {
+      "label": "Herald 65:6, 12 Sep 1989",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7596"
+     }
+    },
+    {
+     "date": "1989-01-01",
+     "title": "Resolution 89-3-F asks for AIDS education",
+     "body": "Under Resolution 89-3-F, ASG corresponded with administrators requesting education on AIDS, HIV and sexually transmitted diseases. The letters survive in the SGA records alongside the year's other resolution correspondence on mace sales, larger diplomas and a food services committee.",
+     "src": {
+      "label": "TopSCHOLAR SGA Reports 52",
+      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/52"
+     }
+    },
+    {
+     "date": "1989-10-17",
+     "title": "Student government goes to Glasgow",
+     "body": "Student government went to the WKU Glasgow campus, and the congress agreed to look again at a Public Interest Research Group. Both stories ran in the same mid-October issue.",
+     "src": {
+      "label": "Herald 65:16, 17 Oct 1989",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7612"
+     }
+    },
+    {
+     "date": "1989-11-30",
+     "title": "PIRG sunk over its fee system",
+     "body": "ASG voted down the proposed Public Interest Research Group, saying its fee system was the culprit. The decision ended a semester of on-and-off consideration of the group.",
+     "src": {
+      "label": "Herald 65:27, 30 Nov 1989",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7622"
+     }
+    },
+    {
+     "date": "1990-03-29",
+     "title": "Congress votes to expand",
+     "body": "ASG voted to expand its congress, a week after reporting it might add representatives. A follow-up story said classes and student groups would get more voice in the organization.",
+     "src": {
+      "label": "Herald 65:49, 29 Mar 1990",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7629"
+     }
+    },
+    {
+     "date": "1990-04-12",
+     "title": "Withdrawals save an invalid primary",
+     "body": "Candidates withdrew from the ASG races, saving a primary that would otherwise have been invalid; only two candidates were running for president. The Herald had already reported that interest in the organization might be lower, illustrated by a cartoon of student government in an empty room.",
+     "src": {
+      "label": "Herald 65:53, 12 Apr 1990",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7633"
+     }
     }
    ],
-   "status": "partial"
+   "status": "researched"
   },
   {
    "id": "1990-91",
@@ -1896,12 +3055,27 @@
       {
        "label": "Herald 65:55, 19 Apr 1990, \"Michael Colvin Aces Associated Student Government Election\"",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7635/"
+      },
+      {
+       "label": "Herald 66:2, 23 Aug 1990",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7651"
+      },
+      {
+       "label": "Herald 66:40, 12 Feb 1991",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7734"
+      },
+      {
+       "label": "TopSCHOLAR SGA Reports 66",
+       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/66"
       }
      ],
      "profile": [
       "Michael Colvin won the Associated Student Government presidential election in results the Herald reported on 19 April 1990 under the headline \"Michael Colvin Aces Associated Student Government Election.\" The 1991 Talisman independently lists him as Associated Student Government President for 1990-91.",
       "In office, the Herald reported ASG considering a four-day class week (7 February 1991) and covered concern inside the organization over a change affecting student insurance (15 January 1991).",
-      "The archive does not preserve further detail of how the term ended or what Colvin did afterward."
+      "The archive does not preserve further detail of how the term ended or what Colvin did afterward.",
+      "Colvin took office in August 1990, introduced by the Herald as a new leader who wanted to make ideas reality. He had been active in the organization at least since September 1989, when he signed a Herald piece soliciting help for ASG.",
+      "His spring 1991 agenda was the widest of the era: in a single February week ASG moved to cap tuition boosts, proposed overhauling the Detrex registration system, and planned lobbying to protect student financial aid.",
+      "Letters he signed under Resolution 91-7-S survive in the SGA records, pressing administrators Kemble Johnson and Debby Cherwak for improvements to Detrex Field."
      ]
     }
    ],
@@ -1961,6 +3135,78 @@
       "label": "Herald 66:39, 7 Feb 1991, \"Associated Student Government Looks at Having Four-Day Class Week\"",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7735/"
      }
+    },
+    {
+     "date": "1990-08-23",
+     "title": "Colvin wants to make ideas reality",
+     "body": "The Herald introduced Michael Colvin as the new ASG leader who wanted to make ideas reality. The profile opened the organization's year in the second issue of the fall.",
+     "src": {
+      "label": "Herald 66:2, 23 Aug 1990",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7651"
+     }
+    },
+    {
+     "date": "1990-09-13",
+     "title": "Glasgow's student body budget cut",
+     "body": "ASG cut the budget of the WKU Glasgow associated student body. The move came a year after the main campus organization had helped Glasgow change its constitution.",
+     "src": {
+      "label": "Herald 66:7, 13 Sep 1990",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7655"
+     }
+    },
+    {
+     "date": "1990-11-29",
+     "title": "Left-handed desks pushed; excused absences killed",
+     "body": "ASG pushed for left-handed desks in classrooms and killed a resolution on excused absences in the same stretch of meetings. The two items closed out the fall legislative calendar.",
+     "src": {
+      "label": "Herald 66:27, 29 Nov 1990",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7666"
+     }
+    },
+    {
+     "date": "1991-01-10",
+     "title": "Survey backs a dead week",
+     "body": "An ASG survey supported creating a dead week before finals. The same issue carried an opinion piece headlined that Colvin failed on final examinations.",
+     "src": {
+      "label": "Herald 66:31, 10 Jan 1991",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7731"
+     }
+    },
+    {
+     "date": "1991-01-17",
+     "title": "Two officers step down",
+     "body": "Amos Gott and Van Hodge stepped down as ASG officers, and the remaining officers clashed over comprehensive exams in the same issue's coverage. Two weeks later Karl Miller was picked as public relations vice president.",
+     "src": {
+      "label": "Herald 66:33, 17 Jan 1991",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7730"
+     }
+    },
+    {
+     "date": "1991-02-12",
+     "title": "Tuition caps, Detrex, and financial aid",
+     "body": "In a single February issue, ASG wanted to cap tuition increases, proposed an overhaul of Detrex registration, and planned lobbying to protect financial aid. It was the broadest policy week of the Colvin year.",
+     "src": {
+      "label": "Herald 66:40, 12 Feb 1991",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7734"
+     }
+    },
+    {
+     "date": "1991-03-14",
+     "title": "Emergency kit resolution survives a veto",
+     "body": "A resolution on emergency kits survived a veto and stood as passed. It was the only veto fight reported in the Herald index that year.",
+     "src": {
+      "label": "Herald 66:49, 14 Mar 1991",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7758"
+     }
+    },
+    {
+     "date": "1991-04-11",
+     "title": "Heather Falmlen wins amid protests",
+     "body": "Heather Falmlen won the ASG presidency amid election protests, with a group urging students to boycott the vote and an editorial condemning immature antics in the campaign. The results issue reported three races as clear-cut.",
+     "src": {
+      "label": "Herald 66:54, 11 Apr 1991",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7752"
+     }
     }
    ],
    "status": "researched"
@@ -1984,7 +3230,24 @@
       {
        "label": "WKU SGA history",
        "url": "https://www.wku.edu/sga/about/history.php"
+      },
+      {
+       "label": "Herald 66:52, 4 Apr 1991",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7754"
+      },
+      {
+       "label": "Herald 66:54, 11 Apr 1991",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7752"
+      },
+      {
+       "label": "Herald 67:3, 5 Sep 1991",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7763"
       }
+     ],
+     "profile": [
+      "Falmlen won the April 1991 primary alongside Dan Knowles, in a season when the Herald reported that ASG's top spots paid big bucks. She had campaigned as a hard worker, according to a supporting letter in the candidates issue.",
+      "She won the presidency the following week amid election protests, with a group urging a student boycott of the vote and her opponent accused of a smear campaign in the run-up. The Herald condemned the campaign's antics while reporting her win.",
+      "In office she opened the fall of 1991 with a student health issue at the top of her agenda and more ASG money budgeted for the environment, then led the organization through the noise ordinance fight, the challenge to the regents' chairman, and the spring 1992 votes that renamed the Associated Students the Student Government Association."
      ]
     }
    ],
@@ -1997,9 +3260,81 @@
       "label": "WKU SGA history",
       "url": "https://www.wku.edu/sga/about/history.php"
      }
+    },
+    {
+     "date": "1991-09-05",
+     "title": "Health tops the agenda; more money for the environment",
+     "body": "Heather Falmlen opened the year with a student health issue at the top of her agenda, and ASG budgeted more money for environmental efforts. Both stories ran in the first week of the fall semester.",
+     "src": {
+      "label": "Herald 67:3, 5 Sep 1991",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7763"
+     }
+    },
+    {
+     "date": "1991-09-12",
+     "title": "Fighting the city's noise ordinance",
+     "body": "ASG resolved to fight Bowling Green's noise ordinance. It was the organization's most direct engagement with city government in years.",
+     "src": {
+      "label": "Herald 67:5, 12 Sep 1991",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7760"
+     }
+    },
+    {
+     "date": "1991-09-24",
+     "title": "Officers go to the city's meeting",
+     "body": "ASG officers attended a city meeting to press the noise ordinance fight, and the organization restarted its voter registration drive. A recycling resolution had its first reading the week before.",
+     "src": {
+      "label": "Herald 67:8, 24 Sep 1991",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7774"
+     }
+    },
+    {
+     "date": "1991-10-31",
+     "title": "ASG asks the regents to elect a new leader",
+     "body": "ASG urged the Board of Regents to elect a new leader in place of chairman Joseph Iracane, two days after the Herald reported the organization's opposition to him. It was a rare direct challenge to the university's governing board.",
+     "src": {
+      "label": "Herald 67:19, 31 Oct 1991",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7783"
+     }
+    },
+    {
+     "date": "1991-12-12",
+     "title": "A mailing asks parents to back the health service",
+     "body": "The Residence Hall Association and ASG sent a joint mailing asking parents to support the campus health service. It closed out the health-focused fall Falmlen had promised in August.",
+     "src": {
+      "label": "Herald 67:29, 12 Dec 1991",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7795"
+     }
+    },
+    {
+     "date": "1992-04-07",
+     "title": "The primary is canceled",
+     "body": "The ASG primary election was canceled, with too few candidates to require one, and a parking bill sat in committee the same week. The general election went ahead the following Tuesday.",
+     "src": {
+      "label": "Herald 67:50, 7 Apr 1992",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7708"
+     }
+    },
+    {
+     "date": "1992-04-16",
+     "title": "Joe Rains wins big as 1,200 turn out",
+     "body": "Joe Rains won the presidential election by a wide margin, with about 1,200 students casting votes. The same ballot carried the constitutional amendments students had voted on two days earlier, including the name change.",
+     "src": {
+      "label": "Herald 67:53, 16 Apr 1992",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7705"
+     }
+    },
+    {
+     "date": "1992-04-21",
+     "title": "Rains to oversee the change to SGA",
+     "body": "The Herald reported that incoming president Joe Rains would oversee the transition from the Associated Student Government to the Student Government Association. Student reaction to the spring's parking bill was reported as varied in the same issue.",
+     "src": {
+      "label": "Herald 67:54, 21 Apr 1992",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7704"
+     }
     }
    ],
-   "status": "partial"
+   "status": "researched"
   },
   {
    "id": "1992-93",
@@ -2040,6 +3375,10 @@
       {
        "label": "WKU SGA, Presidents 1966-Present (archived 2001)",
        "url": "https://web.archive.org/web/20010924113823/http://www.wku.edu/Dept/Org/Student/SGA/formersgapres.htm"
+      },
+      {
+       "label": "SGA Records: Meeting Minutes, 1 Dec 1992",
+       "url": "https://digitalcommons.wku.edu/context/sga/article/1927/viewcontent/sga_1992_12_1_minutes.pdf"
       }
      ],
      "profile": [
@@ -2048,7 +3387,8 @@
       "The archive does not preserve further detail of how the term ended.",
       "Rains ran for the presidency in April 1992 against Mistianna Holcomb, in the same election week that students voted on a referendum to rename the Associated Student Government as the Student Government Association. The Herald covered both races in a single issue, so his campaign and the rename were decided together.",
       "On election day the Herald's opinion pages carried a letter headlined \"Associated Student Government Needs Joe Rains\" alongside a Patrick Richardson editorial cartoon depicting Rains as Darth Vader, a sign of how visible the race had become on campus.",
-      "The SGA's own list of presidents, published on its website in 2001, records Joe Rains of Nashville, Tennessee as the organization's 26th president, serving 1992-93, and marks him as having also served as student regent."
+      "The SGA's own list of presidents, published on its website in 2001, records Joe Rains of Nashville, Tennessee as the organization's 26th president, serving 1992-93, and marks him as having also served as student regent.",
+      "The digitised record of his year does not name him directly in any indexed description, but it carries one distinctive trace: the minutes for December 1, 1992 record plans for a call-in radio show the association titled 'Just Ask Joe,' alongside Project Western and President for a Day. The same year's minutes show a congress preoccupied with state budget cuts, tuition increases, student health insurance and repeated plans for a rally in Frankfort."
      ]
     }
    ],
@@ -2124,6 +3464,76 @@
       "label": "Herald 68:54, 22 Apr 1993",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7837"
      }
+    },
+    {
+     "date": "1992-08-25",
+     "title": "Fall opened with a new logo and discount cards",
+     "body": "At its first meeting of the fall on August 25, 1992, the student government discussed a new logo, student discount cards, a voter registration drive and committee assignments. The group was still transitioning from the Associated Student Government name to SGA, and its minutes from this year appear under both titles.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 25 Aug 1992",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/1910/viewcontent/sga_1992_8_25_minutes.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1992-10-13",
+     "title": "Resolution asked WKU to spare academics from budget cuts",
+     "body": "Resolution 92-7-F asked the university to exempt academic units from a round of proposed budget cuts. State funding pressure ran through the whole fall; the same weeks produced repeated plans for a student rally in Frankfort.",
+     "src": {
+      "label": "SGA Records: Resolution 92-7-F, 13 Oct 1992",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/1815/viewcontent/asg_res_92_7_f.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1992-10-13",
+     "title": "President Meredith addressed the student congress",
+     "body": "WKU President Thomas Meredith came to the October 13 meeting to talk about computers, laundry facilities, cable television, lighting and Potter Hall. The same minutes record discussion of budget cuts, homecoming elections, a newsletter and joint forums with the Residence Hall Association.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 13 Oct 1992",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/1922/viewcontent/sga_1992_10_13_minutes.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1992-10-20",
+     "title": "Congress honored the Lady Toppers",
+     "body": "Resolution 92-8-F honored the WKU women's basketball team for its runner-up finish in the NCAA tournament. It was one of a string of numbered resolutions the congress produced that fall on subjects from drop-add fees to parking.",
+     "src": {
+      "label": "SGA Records: Resolution 92-8-F, 20 Oct 1992",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/1816/viewcontent/asg_res_92_8_f.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1992-12-01",
+     "title": "Just Ask Joe radio program and Project Western",
+     "body": "The December 1 minutes record plans for a Just Ask Joe call-in radio program, the Project Western campus cleanup, a President for a Day event, recycling bins and student health insurance. The meeting closed out a semester dominated by tuition and budget worries.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 1 Dec 1992",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/1927/viewcontent/sga_1992_12_1_minutes.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1993-02-02",
+     "title": "Meredith returned to pitch Potter Hall as a student service center",
+     "body": "President Thomas Meredith addressed the February 2 meeting about campus laundry, cable television and turning Potter Hall into a student service center. Members also discussed tuition increases, resignations and general education requirements.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 2 Feb 1993",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/1932/viewcontent/sga_1993_2_2_minutes.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1993-04-13",
+     "title": "Spring closed with elections and Earth Day plans",
+     "body": "The April 13 meeting took up the budget, spring elections, the annual banquet, a one-card ID system, smoking policy, Adopt-a-Spot and Earth Day. It was the last full meeting recorded in the digitised minutes for the year.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 13 Apr 1993",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/1941/viewcontent/sga_1993_4_13_minutes.pdf"
+     },
+     "campus": true
     }
    ],
    "status": "researched"
@@ -2227,6 +3637,83 @@
       "label": "Herald 69:52, 21 Apr 1994",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7879"
      }
+    },
+    {
+     "date": "1993-09-07",
+     "title": "A new constitution came up first",
+     "body": "Bill 93-1-F, introduced at the second meeting of the fall, proposed amendments to the SGA constitution. Constitutional revision stayed on the agenda through October, alongside the tuition rally the congress was planning.",
+     "src": {
+      "label": "SGA Records: Bill 93-1-F, 7 Sep 1993",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2121/viewcontent/sga_bill_93_1_fw.pdf"
+     }
+    },
+    {
+     "date": "1993-10-12",
+     "title": "Congress planned a tuition rally",
+     "body": "The October 12 meeting discussed a tuition rally, the budget, the Plus System and parking. The rally kept appearing in the minutes for the next month as tuition increases moved through the state process.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 12 Oct 1993",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/1968/viewcontent/sga_1993_10_12_minutes.pdf"
+     }
+    },
+    {
+     "date": "1993-11-09",
+     "title": "Bill funded emergency phones on campus",
+     "body": "Bill 93-6-F proposed purchasing and installing emergency telephones on campus. The Herald was still reporting on SGA's security phones the following February, and campus lighting and safety stayed on the agenda into the spring.",
+     "src": {
+      "label": "SGA Records: Bill 93-6-F, 9 Nov 1993",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2116/viewcontent/sga_bill_93_6_f_w.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1993-11-30",
+     "title": "Memorial trees for students who die while enrolled",
+     "body": "Bill 93-12-F proposed planting memorial trees in tribute to students who die while enrolled at WKU. It capped a heavy late-November run of legislation that also included child care grants for non-traditional students, a book exchange and opening the Downing University Center computer lab during finals.",
+     "src": {
+      "label": "SGA Records: Bill 93-12-F, 30 Nov 1993",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2112/viewcontent/sga_bill_93_12_f.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1994-02-17",
+     "title": "President for a Day swapped a student into Meredith's office",
+     "body": "The Herald reported that student Angelo Rodriguez would switch places with President Thomas Meredith through SGA's President for a Day program. The same issue covered SGA's security phones on campus and a proposal to let students retake C grades that was killed in committee.",
+     "src": {
+      "label": "Herald 69:37, 17 Feb 1994",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7856"
+     },
+     "campus": true
+    },
+    {
+     "date": "1994-03-08",
+     "title": "A $3 fee to support the Big Red Card",
+     "body": "Resolution 94-4-S proposed a three dollar student fee to support the Big Red Card program. The card system and its fees ran through the minutes for the rest of the spring.",
+     "src": {
+      "label": "SGA Records: Resolution 94-4-S, 8 Mar 1994",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2139/viewcontent/sga_res_94_4_s.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1994-03-29",
+     "title": "Willard's resignation reached the floor",
+     "body": "The March 29 meeting took up the resignation of basketball coach Ralph Willard along with the Big Red Card fee, teacher evaluations, emergency telephones, campus lighting and the coming elections. Dialogue Day and Adopt-a-Spot rounded out a crowded agenda.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 29 Mar 1994",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2014/viewcontent/sga_1994_3_29_minutes.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1994-04-28",
+     "title": "A year-end banquet, and corners cut on the budget",
+     "body": "The Herald closed the year with two SGA stories: the year-end banquet recognizing award winners and officers, and a report that the association was cutting corners with its budget.",
+     "src": {
+      "label": "Herald 69:54, 28 Apr 1994",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7882"
+     }
     }
    ],
    "status": "researched"
@@ -2258,12 +3745,17 @@
       {
        "label": "WKU SGA, Presidents 1966-Present (archived 2001)",
        "url": "https://web.archive.org/web/20010924113823/http://www.wku.edu/Dept/Org/Student/SGA/formersgapres.htm"
+      },
+      {
+       "label": "Herald 71:55, 23 Apr 1996",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2987"
       }
      ],
      "profile": [
       "Running for president in April 1994, Evans was profiled by the Herald as the candidate who urged discussion of the issues. The same issue's editorial pages told students \"The Choice Is Yours\" in the SGA vote.",
       "He won, and the Herald introduced the incoming leadership with \"Rob Evans & Tara Higdon Ready to Lead Students.\" Higdon, elected alongside him, would succeed him as president a year later.",
-      "The SGA's 2001 list of presidents records Robert Evans of Owensboro as the 28th president, serving 1994-95, and marks him as having also served as student regent."
+      "The SGA's 2001 list of presidents records Robert Evans of Owensboro as the 28th president, serving 1994-95, and marks him as having also served as student regent.",
+      "After his year leading the WKU student body, Rob Evans kept a statewide role: in April 1996 the Herald profiled him under the headline 'Rob Evans Representing Students from Across State,' describing his seat on the Kentucky Council on Higher Education, the body that then oversaw the state's public universities."
      ]
     }
    ],
@@ -2303,6 +3795,25 @@
       "label": "Herald 70:56, 27 Apr 1995",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7936"
      }
+    },
+    {
+     "date": "1995-04-20",
+     "title": "Tara Higdon moved up as turnout moved down",
+     "body": "The Herald reported the spring election under the headline 'Tara Higdon Moves Up; Voting Down,' recording both the choice of the next president and a drop in voter participation. The election closed out the 1994-95 administration.",
+     "src": {
+      "label": "Herald 70:54, 20 Apr 1995",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7934"
+     }
+    },
+    {
+     "date": "1995-04-25",
+     "title": "The Herald called visibility the key to SGA's success",
+     "body": "As the year ended, the Herald ran an editorial package on the association, pairing a Stacy Curtis cartoon of student government in a glass box with the editorial 'Visibility Key to Student Government Association Success.' It was a summing-up of a year in which the paper pressed SGA to be seen doing its work.",
+     "src": {
+      "label": "Herald 70:55, 25 Apr 1995",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7935"
+     },
+     "campus": true
     }
    ],
    "status": "researched"
@@ -2334,12 +3845,27 @@
       {
        "label": "WKU SGA, Presidents 1966-Present (archived 2001)",
        "url": "https://web.archive.org/web/20010924113823/http://www.wku.edu/Dept/Org/Student/SGA/formersgapres.htm"
+      },
+      {
+       "label": "Herald 70:54, 20 Apr 1995",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7934"
+      },
+      {
+       "label": "Herald 71:53, 16 Apr 1996",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2989"
+      },
+      {
+       "label": "Herald 71:38, 13 Feb 1996",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2959"
       }
      ],
      "profile": [
       "Higdon's path to the presidency ran through the campus security debates of 1995. During the spring campaign the Herald reported that her experience of being stalked had influenced her, under the headline \"Campus Security: Stalking Influenced Tara Higdon.\"",
       "After a year as part of the elected leadership alongside Robert Evans, she won the presidency, and the Herald marked the transition with \"Tara Higdon Sees New Beginning.\" Her term brought new emergency phones, a skywalk proposal, a campus store proposal and a push for longer visitation hours.",
-      "The SGA's 2001 list of presidents records Tara D. Higdon of Slaughters as the 29th president, serving 1995-96, and marks her as having also served as student regent."
+      "The SGA's 2001 list of presidents records Tara D. Higdon of Slaughters as the 29th president, serving 1995-96, and marks her as having also served as student regent.",
+      "Higdon won the presidency in April 1995, with the Herald reporting the result under the headline 'Tara Higdon Moves Up; Voting Down' - she moved up to the top office even as voter turnout fell. The paper's year-end editorial the following week argued that visibility would be the key to the association's success.",
+      "Her year ended in a contested, four-way race to succeed her, and Higdon took a public side: her letter 'Vote for Kristin Miller' ran in the Herald's April 16, 1996 issue, in the same election-week pages as the candidates' debate coverage and the campaign for SGA's constitutional amendments.",
+      "The spring of her term was the stormiest stretch in the association's decade of Herald coverage: within a single week in February 1996 the paper carried both SGA's skywalk proposal for the bottom of the Hill and a letter dismissing the association as a 'puppet' group, and by late April a columnist was asking whether students cared about student government at all."
      ]
     }
    ],
@@ -2406,6 +3932,83 @@
       "label": "Herald 71:47, 14 Mar 1996",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2969"
      }
+    },
+    {
+     "date": "1996-01-23",
+     "title": "A student credited SGA for its trees",
+     "body": "A Herald opinion piece ran under the headline 'Student Government Association Doing Good Job with Trees,' crediting the association's campus planting work. Trees and campus grounds were among the group's most visible projects that year.",
+     "src": {
+      "label": "Herald 71:32, 23 Jan 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2965"
+     },
+     "campus": true
+    },
+    {
+     "date": "1996-02-08",
+     "title": "SGA proposed a skywalk at the bottom of the Hill",
+     "body": "The Herald reported SGA's proposal for a pedestrian skywalk at the bottom of the Hill, and the same issue covered its push to bring emergency phones to campus. The skywalk became the most argued-about SGA idea of the spring.",
+     "src": {
+      "label": "Herald 71:37, 8 Feb 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2960"
+     },
+     "campus": true
+    },
+    {
+     "date": "1996-02-13",
+     "title": "The skywalk drew fire within a week",
+     "body": "Five days after the proposal, the Herald ran a column telling SGA to 'ditch' the 'pie-in-the-sky' skywalk idea, and a letter in the same issue called the association a 'puppet' group. The episode set the combative tone of the spring semester.",
+     "src": {
+      "label": "Herald 71:38, 13 Feb 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2959"
+     },
+     "campus": true
+    },
+    {
+     "date": "1996-03-05",
+     "title": "A campus store proposal followed",
+     "body": "SGA proposed a new store on campus, the Herald reported, as the association kept generating campus improvement ideas through the spring. A week earlier the paper had covered its wish to see the next university president promoted from within.",
+     "src": {
+      "label": "Herald 71:44, 5 Mar 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2972"
+     },
+     "campus": true
+    },
+    {
+     "date": "1996-03-28",
+     "title": "Four candidates ran for the top office",
+     "body": "The Herald reported that four students were running for SGA president. The campaign filled the opinion pages for the next three weeks, with endorsements, a debate and a proposed slate of constitutional amendments on the ballot.",
+     "src": {
+      "label": "Herald 71:48, 28 Mar 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2968"
+     }
+    },
+    {
+     "date": "1996-04-09",
+     "title": "A test-free week before finals",
+     "body": "SGA proposed a test-free week before finals, one of the last legislative pushes of the year. The idea ran in the Herald alongside Board of Regents coverage of fee increases.",
+     "src": {
+      "label": "Herald 71:51, 9 Apr 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2991"
+     },
+     "campus": true
+    },
+    {
+     "date": "1996-04-16",
+     "title": "Debate, amendments and endorsements filled election week",
+     "body": "The Herald covered the presidential debate under the headline 'Debate Reflects Attitudes,' while letters urged a yes vote on SGA's constitutional amendments. Outgoing officer Tara Higdon's letter backing Kristen Miller ran on the same pages.",
+     "src": {
+      "label": "Herald 71:53, 16 Apr 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2989"
+     }
+    },
+    {
+     "date": "1996-04-25",
+     "title": "New officers sworn in as a columnist shrugged",
+     "body": "The Herald reported the swearing-in of SGA's new officers for 1996-97. A column in the same issue, 'Students Just Don't Care About Student Government Association,' summed up the year's running argument about relevance.",
+     "src": {
+      "label": "Herald 71:56, 25 Apr 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2986"
+     }
     }
    ],
    "status": "researched"
@@ -2437,12 +4040,19 @@
       {
        "label": "Herald 72:46, 27 Mar 1997",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3020"
+      },
+      {
+       "label": "Herald 71:54, 18 Apr 1996",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2988"
       }
      ],
      "profile": [
       "Miller had been a Herald columnist and an SGA officer before winning the presidency; her letters in the paper defending the organization date to 1994. In her first weeks as president in August 1996 she made a plan to drive party-goers home, the beginning of what became the Provide-A-Ride service.",
       "As student body president she was the student representative on the committee searching for WKU's ninth president. Interviewed in 2016, she recalled serious talk of cutting football or academic programs, saying \"there was one pot of money everyone was fighting over,\" and described how a late-arriving alumnus candidate named Gary Ransdell impressed the committee by pulling out a binder full of plans after his interview.",
-      "In March 1997 the Herald ran \"Kristen Miller Reflects on Year as Student Government Association President\" as her term wound down. The SGA's 2001 list of presidents records Kristen L. Miller of Louisville as the 30th president and marks her as having also served as student regent."
+      "In March 1997 the Herald ran \"Kristen Miller Reflects on Year as Student Government Association President\" as her term wound down. The SGA's 2001 list of presidents records Kristen L. Miller of Louisville as the 30th president and marks her as having also served as student regent.",
+      "Miller won the SGA presidency in April 1996 at the end of a four-way race, with the Herald's news coverage declaring 'It's Kristen Miller's Time.' A week earlier the paper had profiled her campaign under the headline 'Kristen Miller Focuses on Experience in Student Government Association.'",
+      "Days into the fall semester, the Herald reported 'Kristen Miller Makes Plan to Drive Party-Goers Home.' The idea became Provide-a-Ride, the safe-ride program that appears in SGA's minutes throughout 1996-97 and was still being funded by the congress years later.",
+      "Near the end of her term, the Herald ran 'Kristen Miller Reflects on Year as Student Government Association President,' looking back on a year that included the creation of a Technology Committee, the Provide-a-Ride launch and SGA's narrow vote to back adding sexual orientation to Western's anti-discrimination policy."
      ]
     }
    ],
@@ -2518,6 +4128,63 @@
       "label": "Herald 72:49, 8 Apr 1997",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3017"
      }
+    },
+    {
+     "date": "1996-08-27",
+     "title": "Officers sworn in at the first fall meeting",
+     "body": "The August 27 meeting swore in officers and took up the retreat, an open house, the budget and homecoming. It opened the first full year of minutes in the digitised record since 1994.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 27 Aug 1996",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2289/viewcontent/sga_1996_8_27_minutes_w.pdf"
+     }
+    },
+    {
+     "date": "1996-09-17",
+     "title": "SGA created a Technology Committee",
+     "body": "The September 17 meeting created the SGA Technology Committee and discussed intramural facilities, photocopiers in dorms and Campus Clean Up. Student email accounts and other technology questions recur in the fall's minutes.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 17 Sep 1996",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2281/viewcontent/sga_1996_9_17_minutes_w.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1996-10-10",
+     "title": "More lights proposed, and a veto recorded",
+     "body": "The Herald reported SGA proposing more campus lighting while a resolution was vetoed. Campus lighting had been a steady SGA cause since the earlier emergency phones push.",
+     "src": {
+      "label": "Herald 72:15, 10 Oct 1996",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2996"
+     },
+     "campus": true
+    },
+    {
+     "date": "1997-03-25",
+     "title": "SGA followed the presidential search",
+     "body": "With Thomas Meredith's departure looming, the March 25 meeting discussed the university's presidential search along with an Orientation, Admissions and Registration Pal program, the Bridging the Gap forum and Campus Clean Up.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 25 Mar 1997",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2299/viewcontent/sga_1997_3_25_minutes_w.pdf"
+     }
+    },
+    {
+     "date": "1997-04-17",
+     "title": "An anti-discrimination stand passed by a slim margin",
+     "body": "The Herald reported that SGA passed a measure calling for gays to be included in Western's anti-discrimination policy by a slim margin, a week after covering the proposal's introduction. A letter in the same issue congratulated both SGA and the paper.",
+     "src": {
+      "label": "Herald 72:52, 17 Apr 1997",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3014"
+     }
+    },
+    {
+     "date": "1997-04-22",
+     "title": "The year closed with a memorial tree dedication",
+     "body": "The last recorded meeting of the year discussed the memorial tree dedication, elections, Earth Day, Thomas Meredith, Campus Clean Up, off-campus housing scholarships and a residence hall privatization study.",
+     "src": {
+      "label": "SGA Records: Meeting Minutes, 22 Apr 1997",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2303/viewcontent/sga_1997_4_22_minutes_w.pdf"
+     },
+     "campus": true
     }
    ],
    "status": "researched"
@@ -2545,11 +4212,16 @@
       {
        "label": "WKU SGA, Presidents 1966-Present (archived 2001)",
        "url": "https://web.archive.org/web/20010924113823/http://www.wku.edu/Dept/Org/Student/SGA/formersgapres.htm"
+      },
+      {
+       "label": "Herald 72:54, 24 Apr 1997",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3012"
       }
      ],
      "profile": [
       "Coffman presided over one of the busiest legislative years in the surviving 1990s record. The SGA's own legislation archive for 1997 preserves at least 24 numbered bills and resolutions from his fall semester alone, from the Dogwood Drive crosswalk to the ten-point grade scale, student e-mail addresses in the directory and ice machines in every residence hall.",
-      "The SGA's 2001 list of presidents records Keith Coffman of Russellville as the 31st president, serving 1997-98, and marks him as having also served as student regent. His term coincided with Gary Ransdell's first year as university president."
+      "The SGA's 2001 list of presidents records Keith Coffman of Russellville as the 31st president, serving 1997-98, and marks him as having also served as student regent. His term coincided with Gary Ransdell's first year as university president.",
+      "Coffman's presidency opened with the Herald's April 24, 1997 headline 'Keith Coffman Takes Charge,' paired with a story in the same issue in which the new Student Government Association president mapped out his upcoming term."
      ]
     }
    ],
@@ -2634,6 +4306,54 @@
       "label": "TopSCHOLAR - SGA Documents/Reports/21",
       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/21"
      }
+    },
+    {
+     "date": "1997-04-24",
+     "title": "Keith Coffman took charge",
+     "body": "The Herald announced the new administration with 'Keith Coffman Takes Charge,' and a companion piece reported the new president mapping his upcoming term. His term began as the spring semester closed.",
+     "src": {
+      "label": "Herald 72:54, 24 Apr 1997",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3012"
+     }
+    },
+    {
+     "date": "1997-11-04",
+     "title": "Paper towels for the Downing University Center",
+     "body": "Resolution 97-9-F asked that paper towels be placed in the restrooms of the Downing University Center. It is one of only two pieces of legislation from the year in the digitised SGA collection.",
+     "src": {
+      "label": "SGA Records: Resolution 97-9-F, 4 Nov 1997",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2023/viewcontent/sga_res_94_9_f.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1997-11-18",
+     "title": "Picnic tables for the bottom of campus",
+     "body": "Resolution 97-23-F requested picnic tables for the campus area near Zacharias Hall, Meredith Hall and Pearce-Ford Tower. Its numbering shows the congress had produced at least 23 fall resolutions by mid-November.",
+     "src": {
+      "label": "SGA Records: Resolution 97-23-F, 18 Nov 1997",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2022/viewcontent/sga_res_97_23_f.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1998-04-28",
+     "title": "A $15,000 electronic sign and a campaign for scholarships",
+     "body": "In election week the Herald polled students on how they would spend $15,000 of SGA's money, ran a column arguing the money for a big electronic message sign could be better used, and printed dueling letters on whether the association served students. Its campaign coverage reported that candidate Stephanie Cosby wanted more scholarships.",
+     "src": {
+      "label": "Herald 73:52, 28 Apr 1998",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7981"
+     },
+     "campus": true
+    },
+    {
+     "date": "1998-04-30",
+     "title": "Stephanie Cosby rolled to a huge victory",
+     "body": "The Herald reported 'Stephanie Cosby Rolls to Huge Victory' in the SGA election that closed the year, alongside a story on how taxing election day was for officer candidates. Cosby would lead the association in 1998-99.",
+     "src": {
+      "label": "Herald 73:53, 30 Apr 1998",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7982"
+     }
     }
    ],
    "status": "researched"
@@ -2661,11 +4381,21 @@
       {
        "label": "WKU SGA, Presidents 1966-Present (archived 2001)",
        "url": "https://web.archive.org/web/20010924113823/http://www.wku.edu/Dept/Org/Student/SGA/formersgapres.htm"
+      },
+      {
+       "label": "Herald 73:53, 30 Apr 1998",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7982"
+      },
+      {
+       "label": "Herald 74:17, 27 Oct 1998",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9061"
       }
      ],
      "profile": [
       "Cosby is documented in office from the start of the 1998 fall semester, when the Kentucky Board of Student Body Presidents billed its dues in a memo addressed to \"SGA president Stephanie Cosby.\" Her congress passed at least thirteen numbered bills that fall, from Murray State fire relief to Bookswap.com, and her officers answered public charges of unproductiveness with a written record of what had passed.",
-      "The SGA's 2001 list of presidents records Stephanie Cosby of Greenville as the 32nd president, serving 1998-99, and marks her as having also served as student regent."
+      "The SGA's 2001 list of presidents records Stephanie Cosby of Greenville as the 32nd president, serving 1998-99, and marks her as having also served as student regent.",
+      "Cosby campaigned on financial aid, with the Herald's election-week coverage reporting that she wanted more scholarships. She won the presidency in a rout: the paper's April 30, 1998 election story ran under the headline 'Stephanie Cosby Rolls to Huge Victory,' next to a report on how taxing election day had been for the officer candidates.",
+      "Midway through her term she picked up a second title, with the Herald reporting 'Stephanie Cosby Named Queen of Hill' at homecoming in October 1998. Her year in office produced a steady advising-reform push, the failed University Boulevard widening request, the Kappa Alpha aid fight, and ended with the Judicial Council overturning the election to choose her successor."
      ]
     }
    ],
@@ -2732,6 +4462,82 @@
       "label": "TopSCHOLAR - SGA Documents/Reports/29",
       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/29"
      }
+    },
+    {
+     "date": "1998-09-29",
+     "title": "Dorm sprinklers and an advisor checklist",
+     "body": "The Herald reported SGA wanted sprinklers added in the dorms, while Bill 98-1-F created a checklist of questions for students to ask their advisors. Days earlier the paper had counted the association's legislative efforts trailing the previous year, and a letter in this issue accused it of wasting time and money.",
+     "src": {
+      "label": "Herald 74:10, 29 Sep 1998",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9073"
+     },
+     "campus": true
+    },
+    {
+     "date": "1998-10-06",
+     "title": "SGA asked for a wider University Boulevard",
+     "body": "Resolution 98-7-F requested that University Boulevard be widened and that a traffic island be added for pedestrians. The Herald reported the following week that the University Boulevard proposal had failed, but the advising checklist was approved and grew into a run of advising-reform legislation through the fall.",
+     "src": {
+      "label": "SGA Records: Resolution 98-7-F, 6 Oct 1998",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2018/viewcontent/sga_res_98_7_f.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1998-10-27",
+     "title": "The SGA president was crowned homecoming queen",
+     "body": "The Herald reported 'Stephanie Cosby Named Queen of Hill' at homecoming. SGA had its own stake in the festivities that fall, funding a joint homecoming float with the Hillraisers.",
+     "src": {
+      "label": "Herald 74:17, 27 Oct 1998",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9061"
+     },
+     "campus": true
+    },
+    {
+     "date": "1998-11-17",
+     "title": "A bill to help the burned-out Kappa Alphas",
+     "body": "Bill 98-10-F proposed allocating funds to the Kappa Alpha fraternity after its house burned. The proposal set off the sharpest fight of the fall.",
+     "src": {
+      "label": "SGA Records: Bill 98-10-F, 17 Nov 1998",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2102/viewcontent/sga_bill_98_10_f.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1998-12-08",
+     "title": "The Kappa Alpha aid vote failed, loudly",
+     "body": "The Herald reported some SGA members were upset after the group voted down aid to the fraternity, and a companion letter said SGA had 'abandoned' the Kappa Alphas. Letters defending and attacking the decision ran for the rest of the semester.",
+     "src": {
+      "label": "Herald 74:27, 8 Dec 1998",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9052"
+     }
+    },
+    {
+     "date": "1999-04-15",
+     "title": "Turbulent elections declared complete",
+     "body": "The Herald reported the spring elections finished under the headline 'Turbulent Elections Complete,' while an opinion piece charged that SGA offered no leadership and a letter questioned the probe of candidate Will Jones. The turbulence was not over.",
+     "src": {
+      "label": "Herald 74:51, 15 Apr 1999",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8052"
+     }
+    },
+    {
+     "date": "1999-04-20",
+     "title": "The Judicial Council overturned the election",
+     "body": "The Herald reported that SGA's Judicial Council overturned the spring election, with coverage centering on candidate Joe Matheis, an editorial cartoon on nasty campaigns, and an opinion piece describing a 'swath of scandal' around the elections.",
+     "src": {
+      "label": "Herald 74:52, 20 Apr 1999",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/477"
+     }
+    },
+    {
+     "date": "1999-04-22",
+     "title": "A final rush of legislation amid the election mess",
+     "body": "Two days later the Herald reported SGA passing a final rush of legislation, while the election fallout continued in the letters column and a story urged students to vote again on Monday. The same issue introduced the incoming president as a self-described workaholic.",
+     "src": {
+      "label": "Herald 74:53, 22 Apr 1999",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8053"
+     }
     }
    ],
    "status": "researched"
@@ -2763,12 +4569,22 @@
       {
        "label": "WKU SGA site, home page (archived Aug 2000)",
        "url": "https://web.archive.org/web/20000817211804/http://www.wku.edu/Dept/Org/Student/SGA/index2.htm"
+      },
+      {
+       "label": "Herald 74:53, 22 Apr 1999",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8053"
+      },
+      {
+       "label": "SGA Records: Bill 99-10-F, 15 Sep 1999",
+       "url": "https://digitalcommons.wku.edu/context/sga/article/2214/viewcontent/sga_bill_99_10_f.pdf"
       }
      ],
      "profile": [
       "Contemporaneous records give her name as Amanda J. Coates. The SGA's own 2001 list of presidents records Amanda J. Coates of Brownsville as the 33rd president, serving 1999-2000, and marks her as having also served as student regent. The organization's website during and just after her term consistently refers to \"President Amanda Coates.\"",
       "Her signature project was publishing faculty evaluations. From February 2000 she led meetings with the university president, the Faculty Senate chair and the senate's executive committee, and in April she co-authored Resolution 00-2-S with Adam Howard asking the Faculty Senate to approve a mandatory published evaluation beginning that fall.",
-      "At the end of her term the SGA website opened with the words \"What SGA has done for you,\" showcasing three things: the faculty evaluations project, the fight over the Vice President of Student Affairs position and the Provide-A-Ride service. It is as close to a self-written record of her administration's priorities as survives."
+      "At the end of her term the SGA website opened with the words \"What SGA has done for you,\" showcasing three things: the faculty evaluations project, the fight over the Vice President of Student Affairs position and the Provide-A-Ride service. It is as close to a self-written record of her administration's priorities as survives.",
+      "The Herald introduced the incoming 1999-2000 president on April 22, 1999 under the headline 'New Student Government Association Leader Workaholic.' The paper's index records the new leader's name as Amanda Coates, and she took office in the aftermath of a spring election that SGA's Judicial Council had overturned two days earlier.",
+      "Her congress spent the fall of 1999 building institutions: it created an Information Technology Director and website guidelines, established a senior awards banquet and hall of distinguished seniors, launched the toll-free Topline activity line, and publicly opposed an administrative move in Student Affairs while asking that Vice President Jerry Wilder be retained."
      ]
     }
    ],
@@ -2807,6 +4623,79 @@
      "src": {
       "label": "WKU SGA site, Resolution 00-2-S (archived 2000)",
       "url": "https://web.archive.org/web/20000902184238/http://www.wku.edu/Dept/Org/Student/SGA/newsuse/r002sFacultyEvaluations.htm"
+     }
+    },
+    {
+     "date": "1999-09-15",
+     "title": "SGA created an Information Technology Director",
+     "body": "Bill 99-10-F created the SGA position of Information Technology Director, and the same month produced a bill amending the constitution to include website guidelines. The association was formalising its web presence as the decade closed.",
+     "src": {
+      "label": "SGA Records: Bill 99-10-F, 15 Sep 1999",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2214/viewcontent/sga_bill_99_10_f.pdf"
+     }
+    },
+    {
+     "date": "1999-09-28",
+     "title": "A senior awards banquet and hall of distinguished seniors",
+     "body": "Bill 99-5-F established a senior awards banquet and a hall of distinguished seniors, with a companion bill creating an ad hoc committee to run the event. A Meet Your Dean reception bill passed through the same September meetings.",
+     "src": {
+      "label": "SGA Records: Bill 99-5-F, 28 Sep 1999",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2218/viewcontent/sga_bill_99_5_f.pdf"
+     }
+    },
+    {
+     "date": "1999-10-26",
+     "title": "Congress asked WKU to keep Jerry Wilder",
+     "body": "Resolution 99-1-F requested that Jerry Wilder remain vice president of Student Affairs. The Herald reported the following week that SGA members opposed the move in Student Affairs.",
+     "src": {
+      "label": "SGA Records: Resolution 99-1-F, 26 Oct 1999",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2123/viewcontent/sga_res_99_11_f_w.pdf"
+     }
+    },
+    {
+     "date": "1999-11-02",
+     "title": "Topline, a toll-free campus activity line",
+     "body": "Resolution 99-4-F proposed creating a toll-free activity phone line called Topline. The same weeks produced resolutions on WKU banners and suggestion boxes in residence halls.",
+     "src": {
+      "label": "SGA Records: Resolution 99-4-F, 2 Nov 1999",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2126/viewcontent/sga_res_99_4_f.pdf"
+     },
+     "campus": true
+    },
+    {
+     "date": "1999-11-04",
+     "title": "Members took the Student Affairs fight public",
+     "body": "The Herald reported that Student Government Association members opposed the administrative move in Student Affairs. The story followed the congress's resolution asking that Vice President Jerry Wilder be retained.",
+     "src": {
+      "label": "Herald 75:20, 4 Nov 1999",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/488"
+     }
+    },
+    {
+     "date": "1999-11-11",
+     "title": "SGA endorsed ending Flip Friday",
+     "body": "A fall resolution endorsed the schedule proposed by the Class Schedule Review Committee to do away with Flip Friday. It was the association's formal word on one of the era's odder scheduling experiments.",
+     "src": {
+      "label": "SGA Records: Resolution 99-F, 11 Nov 1999",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2130/viewcontent/sga_res_99____f.pdf"
+     }
+    },
+    {
+     "date": "1999-11-30",
+     "title": "VarsityBooks.com came to the SGA website",
+     "body": "Bill 99-17-F had SGA join VarsityBooks.com and post a link from its website, and a same-day bill extended library hours during finals week. The dot-com partnership marked the first e-commerce deal in the digitised SGA record.",
+     "src": {
+      "label": "SGA Records: Bill 99-17-F, 30 Nov 1999",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2205/viewcontent/sga_bill_99_17_f.pdf"
+     }
+    },
+    {
+     "date": "2000-04-04",
+     "title": "SGA proposed its own faculty evaluations",
+     "body": "Resolution 00-2-S proposed creating an SGA faculty evaluation to help students select courses, reviving an idea the congress had pushed since the mid-1990s. It is the last piece of spring 2000 legislation in the digitised collection.",
+     "src": {
+      "label": "SGA Records: Resolution 00-2-S, 4 Apr 2000",
+      "url": "https://digitalcommons.wku.edu/context/sga/article/2195/viewcontent/sga_res_00_2_s.pdf"
      }
     }
    ],
@@ -5568,7 +7457,8 @@
      "profile": [
       "Edmonds, a senior from Island, Kentucky, spent his freshman year as chair of the Campus Improvements Committee, working with Vice President of Student Affairs Brian Kuster on projects including a campus safety walk, before winning election as executive vice president in April 2018 on a ticket with Harper Anderson and Stephen Mayer. He served two years as executive vice president under President Will Harris, pushing for a budget model geared toward campus amenities and recreational life and working to diversify Senate appointments with seats for underrepresented students.",
       "He ran for the presidency in fall 2020 on the Edmonds-Norvell ticket, after his original running mate for administrative vice president, Nathan Terrell, dropped out and was replaced by Abbey Norvell. The campaign centered on a pledge to create a Director of Outreach position to close the communication gap between campus organizations and SGA, and the Sept. 24 Herald town hall covered WKU's COVID-19 response and the summer's Black Lives Matter protests on campus. Voting ran Sept. 28-29 on TopNet; Edmonds defeated senator MJ Mayo, becoming SGA president and, since the two offices had merged by then, student regent on the WKU Board of Regents.",
-      "Taking office amid the pandemic, his cabinet confirmed Isaac Keller as administrative vice president 29-1 in October after Edmonds said he wanted a deputy willing to challenge him, with Matt Barr, Ashlynn Evans, Kody Okert and Paul Brosky rounding out the executive and Shelby Robertson serving as non-voting speaker of the senate. Early cabinet business set up officer office hours, an ad hoc outreach committee and a push toward inclusive pronoun language in Senate proceedings. That fall SGA's petition for a pass/no-pass grading option during COVID disruptions, backed by over 3,500 signatures, succeeded; in the spring his senate passed the organization's largest-ever organizational aid bill and a resolution seeking a codified vetting process for campus dining vendors. Near the end of his term he declined to fill the chief justice seat vacated by Erika Puhakka, saying the choice belonged to his successor: \"I think that's the only thing that is right in this scenario.\" He also worried publicly that only 13 students were running for senate in the April election, and closed his term addressing the Class of 2021 at the delayed Fall 2020/Spring 2021 commencement, telling graduates their perseverance through \"this past year\" had brought them to their day of celebration."
+      "Taking office amid the pandemic, his cabinet confirmed Isaac Keller as administrative vice president 29-1 in October after Edmonds said he wanted a deputy willing to challenge him, with Matt Barr, Ashlynn Evans, Kody Okert and Paul Brosky rounding out the executive and Shelby Robertson serving as non-voting speaker of the senate. Early cabinet business set up officer office hours, an ad hoc outreach committee and a push toward inclusive pronoun language in Senate proceedings. That fall SGA's petition for a pass/no-pass grading option during COVID disruptions, backed by over 3,500 signatures, succeeded; in the spring his senate passed the organization's largest-ever organizational aid bill and a resolution seeking a codified vetting process for campus dining vendors. Near the end of his term he declined to fill the chief justice seat vacated by Erika Puhakka, saying the choice belonged to his successor: \"I think that's the only thing that is right in this scenario.\" He also worried publicly that only 13 students were running for senate in the April election, and closed his term addressing the Class of 2021 at the delayed Fall 2020/Spring 2021 commencement, telling graduates their perseverance through \"this past year\" had brought them to their day of celebration.",
+      "In the spring he presided over a productive senate that passed SGA's largest organizational aid bill ever and a bill seeking a codified vetting process for campus dining vendors. Near the end of his term he declined to fill the chief justice seat vacated by Erika Puhakka, saying the choice belonged to his successor: \"I think that's the only thing that is right in this scenario.\" He also worried publicly that only 13 students were running for senate in the April election."
      ]
     }
    ],
