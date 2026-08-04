@@ -5815,7 +5815,7 @@
      "profile": [
       "Robert \"Rob\" Watkins, a Bowling Green student, wrote the SGA constitution adopted in 2004 and was elected the first speaker of the senate under it on 15 April 2004, defeating Brittany Fausey 9 votes to 8 in a result immediately contested over what quorum the new constitution required; the vote was upheld later that month.",
       "Watkins won the SGA presidency in the 13 April 2006 online election, defeating Berea junior Kara Ratliff after more than a week courting TopNet voters, with results announced at a crowded Revolution 91.7. He took office for 2006-07 alongside Administrative Vice President Amanda Allen, who by October was tightening the budget after the prior administration left roughly $24,000 unspent.",
-      "Watkins resigned as SGA president and student regent on 28 November 2006, with the resignation read into the senate's own minutes at that day's regularly scheduled Tuesday meeting, after senators had aired concerns about him at an unannounced 10 p.m. meeting the evening before. (A Herald account this site had followed gave the date as 30 November; the primary senate minutes are treated as authoritative here.) A Herald editorial the same week was headlined \"SGA actions an embarrassment to Western.\" The resignation left students without a voting voice on the Board of Regents for at least a month and put junior Jeanne Johnson in as a fill-in leader for the rest of the term, sworn in at the 5 December Winter Banquet."
+      "Watkins resigned as SGA president and student regent on 28 November 2006, with the resignation read into the senate's own minutes at that day's regularly scheduled Tuesday meeting, after senators had aired concerns about him at an unannounced 10 p.m. meeting the evening before. (A Herald account this site had followed gave the date as 30 November; the primary senate minutes are treated as authoritative here.) A Herald editorial the same week was headlined \"SGA actions an embarrassment to Western.\" The resignation left students without a voting voice on the Board of Regents for at least a month and put junior Jeanne Johnson, already serving as his executive vice president since the 5 September season-opening meeting, in as a fill-in leader for the rest of the term, formally sworn in as president at the 5 December Winter Banquet."
      ]
     }
    ],
@@ -5913,9 +5913,41 @@
       "file": "2006-07-sga-minutes-28-nov-2006.pdf"
      },
      "campus": true
+    },
+    {
+     "date": "2006-09-05",
+     "title": "Fifth SGA opened its year, swore in eight senators",
+     "body": "At the first meeting of that year's Senate, called to order with 8 of 18 senators present, eight new senators were sworn in: Chris Anderson, Diane DeRosa-Reynolds, Leah Keys, Amanda Kidd, Suzie Moghaddam, Seth Norman, Tori Theiss and Christa Wilcox. Administrative Vice President Amanda Allen reported $30,000 in organizational aid for the year, and the senate nominated committee heads and Judicial Council members, including Matt Holland as chief justice. The minutes record Jeanne L. Johnson delivering the executive vice president's report.",
+     "src": {
+      "label": "SGA Senate minutes, 5 Sep 2006 (TopSCHOLAR)",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699",
+      "file": "2006-07-sga-minutes-05-sep-2006.pdf"
+     }
+    },
+    {
+     "date": "2006-12-05",
+     "title": "Senate tabled two resolutions for lack of quorum at Winter Banquet meeting",
+     "body": "With 16 of 31 senators present, the senate lacked quorum to act on Resolution 09-06-F on vending machine prices and Resolution 10-06-F on special events parking, so both were tabled. Executive Vice President was listed vacant, since Jeanne Johnson had moved into the presidency after Robert Watkins's resignation. The Judicial Council reported meeting on the time requirements for the student regent seat. Winners of the Outstanding Senator and Outstanding Committee Member awards, chosen by secret ballot, were announced later that evening at the Winter Banquet.",
+     "src": {
+      "label": "SGA Senate minutes, 5 Dec 2006 (TopSCHOLAR)",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/715",
+      "file": "2006-07-sga-minutes-05-dec-2006.pdf"
+     }
     }
    ],
    "documents": [
+    {
+     "file": "2006-07-sga-minutes-05-sep-2006.pdf",
+     "title": "SGA Senate minutes, 5 September 2006",
+     "summary": "Minutes of the first meeting of that year's senate, with 8 of 18 senators present before eight more were sworn in. Officers gave welcome-back reports, committee heads and Judicial Council nominees were named, and Administrative Vice President Amanda Allen reported the year's $30,000 organizational aid budget.",
+     "extract": "The first meeting of the fifth Student Government Association.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "SGA Senate minutes, 5 Sep 2006, TopSCHOLAR",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+     }
+    },
     {
      "file": "2006-07-sga-minutes-28-nov-2006.pdf",
      "title": "SGA Senate minutes, 28 November 2006",
@@ -5926,6 +5958,18 @@
      "src": {
       "label": "SGA Senate minutes, 28 Nov 2006, TopSCHOLAR",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717"
+     }
+    },
+    {
+     "file": "2006-07-sga-minutes-05-dec-2006.pdf",
+     "title": "SGA Senate minutes, 5 December 2006",
+     "summary": "Minutes of the thirteenth meeting of that senate, held the evening of the Winter Banquet. The senate lacked quorum to act on two tabled resolutions, heard that the executive vice presidency was vacant after Jeanne Johnson's move into the presidency, and heard a Judicial Council report on student regent time requirements.",
+     "extract": "Tabled to lack of quorum: Resolution 09-06-F, Resolution 10-06-F.",
+     "sga_pages": "1-3",
+     "page": 1,
+     "src": {
+      "label": "SGA Senate minutes, 5 Dec 2006, TopSCHOLAR",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/715"
      }
     }
    ],
@@ -5950,9 +5994,18 @@
       }
      },
      {
+      "office": "Executive Vice President",
+      "name": "Jeanne Johnson",
+      "note": "Gave the EVP's report at the 5 Sep. 2006 season-opening meeting; the seat was vacant by the 5 Dec. 2006 meeting after she moved into the presidency following Watkins's resignation.",
+      "src": {
+       "label": "SGA Senate minutes, 5 Sep 2006, TopSCHOLAR",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+      }
+     },
+     {
       "office": "President Pro Tempore",
       "name": "Jeanne Johnson",
-      "note": "Presided in this capacity at the 28 Nov. 2006 meeting, before her formal swearing-in as president at the 5 Dec. 2006 Winter Banquet.",
+      "note": "Already the sitting executive vice president (see her separate EVP entry); presided in this capacity at the 28 Nov. 2006 meeting before her formal swearing-in as president at the 5 Dec. 2006 Winter Banquet.",
       "src": {
        "label": "SGA Senate minutes, 28 Nov 2006, TopSCHOLAR",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717"
@@ -5982,33 +6035,36 @@
      "committees": [
       {
        "name": "Academic Affairs",
-       "chair": "Lucas Humble"
+       "chair": "Lucas Humble",
+       "note": "Chaired by Leah Keys at the 5 Sep. 2006 opening meeting; Humble had the chair by 28 Nov. 2006."
       },
       {
        "name": "Campus Improvements",
        "chair": "Tori Theiss",
-       "note": "Theiss stepped down as chair in late Nov. 2006 for another leadership position."
+       "note": "Theiss's second semester as chair per the 5 Sep. 2006 meeting; she stepped down in late Nov. 2006 for another leadership position."
       },
       {
        "name": "Legislative Research Committee",
-       "chair": "Kendrick Bryan",
-       "note": "Acting as vice-chair at the 28 Nov. 2006 meeting."
+       "chair": "Tim Hill",
+       "note": "Chaired by Tim Hill at the 5 Sep. 2006 opening meeting; Kendrick Bryan was acting vice-chair by 28 Nov. 2006 and Ashley Gore reported for the committee by 5 Dec. 2006."
       },
       {
        "name": "Public Relations",
        "chair": "Jonathan Sprowles",
-       "note": "Director of Public Relations."
+       "note": "Unfilled at the 5 Sep. 2006 opening meeting; Sprowles was director of public relations by 28 Nov. 2006, and Josh Fries reported as vice-chair on 5 Dec. 2006."
       },
       {
        "name": "Professor Accountability",
-       "chair": "Earlene Whitaker"
+       "chair": "Earlene Whitaker",
+       "note": "An ad hoc committee, the Professor Accountability and Evaluation Committee."
       },
       {
        "name": "Student Affairs",
-       "chair": "Kayla Shelton"
+       "chair": "Kayla Shelton",
+       "note": "Unfilled at the 5 Sep. 2006 opening meeting; Shelton chaired it by the 28 Nov. and 5 Dec. 2006 meetings."
       }
      ],
-     "note": "Jeanne Johnson served as a fill-in leader after Watkins' resignation and was elected president in her own right for 2007-08 at the May 2007 banquet. Senate size, officers and committee chairs per the 28 Nov. 2006 meeting minutes; 22 of 31 senators were present that night."
+     "note": "Jeanne Johnson served as a fill-in leader after Watkins' resignation and was elected president in her own right for 2007-08 at the May 2007 banquet. Senate size, officers and committee chairs per the 28 Nov. 2006 meeting minutes; 22 of 31 senators were present that night. The senate opened the year on 5 Sep. 2006 with 18 seats and 8 senators present, swearing in eight more that night; it had grown to 31 seats, 22 present, by 28 Nov. 2006. Jeanne Johnson served as executive vice president from the 5 Sep. 2006 opening meeting until Watkins's resignation, then as a fill-in leader before her own election in 2007-08."
     }
    },
    "status": "researched"
@@ -6559,7 +6615,59 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "President",
+      "name": "Kevin Smiley",
+      "note": "Also held the student regent seat, per the roles having merged by this period.",
+      "src": {
+       "label": "College Heights Herald 84:46, 16 Apr 2009",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6747"
+      }
+     },
+     {
+      "office": "Executive Vice President",
+      "name": "Kendrick Bryan",
+      "src": {
+       "label": "WKU SGA site, 23 Nov 2009 (archived)",
+       "url": "https://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"
+      }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Justin Thurman",
+      "src": {
+       "label": "WKU SGA site, 23 Nov 2009 (archived)",
+       "url": "https://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"
+      }
+     },
+     {
+      "office": "Chief of Staff",
+      "name": "Eric Smiley",
+      "note": "The president's brother; his September 2009 nomination to the paid, voting cabinet post drew a public rebuke from a former executive vice president as \"completely unethical.\"",
+      "src": {
+       "label": "Herald, 4 Sep 2009",
+       "url": "https://web.archive.org/web/20090918022921/http://www.wkuherald.com/2009/09/04/smiley-nominates-brother/"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Speaker of the Senate",
+       "name": "Wade Pierce",
+       "src": {
+        "label": "Herald, 14 Oct 2009",
+        "url": "https://web.archive.org/web/20091018185425/http://www.wkuherald.com/2009/10/14/sga-sponsors-tailgating-forum/"
+       }
+      }
+     ],
+     "committees": [],
+     "note": "Chief Justice Stuart Kenderes led the Judicial Council, which in November 2009 removed a senator for excessive unexcused absences. Three senators resigned in October 2009 over a contested committee appointment, and two more resigned in January 2010 for unrelated personal reasons; TopSCHOLAR's digitised SGA meeting-minutes collection ends in 2008 and no minutes for 2009-10 could be found there, so senate size and committee chairs for this year are not yet confirmed."
+    }
+   }
   },
   {
    "id": "2010-11",
