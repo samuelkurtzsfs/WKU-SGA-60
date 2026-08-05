@@ -16,6 +16,8 @@ import html as html_mod
 import json
 import re
 import shutil
+import subprocess
+import sys
 import urllib.parse
 from datetime import date
 from pathlib import Path
@@ -5825,6 +5827,18 @@ def main():
     print(f'built the board, {len(ys)} year pages, the timeline and {len(DECADES)} decade '
           f'pages, the legislation archive, corrections and about '
           f'+ {ndocs} documents + {len(leg)} legislation files -> {SITE}')
+
+    # Say so loudly if the record broke its own rules. The build still runs, so
+    # a page is never held hostage to a bad citation, but it does not get to
+    # finish quietly either.
+    checker = Path(__file__).with_name("check_data.py")
+    if checker.exists():
+        r = subprocess.run([sys.executable, str(checker), "--quiet"],
+                           capture_output=True, text=True)
+        if r.returncode:
+            print("\n!! the archive does not check out against its own rules:")
+            print(r.stdout.strip() or r.stderr.strip())
+            print("!! run python3 scripts/check_data.py for the detail")
 
 
 if __name__ == "__main__":

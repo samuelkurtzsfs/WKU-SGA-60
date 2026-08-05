@@ -99,6 +99,21 @@ def main():
             print(f"page {pages}: {len(entries)} matching items", flush=True)
         tok = root.findtext(".//oai:resumptionToken", "", NS)
         url = BASE + f"?verb=ListRecords&resumptionToken={tok}" if tok else None
+    # Refuse to report success while destroying the file. A harvest that comes
+    # back empty, or far smaller than what is already on disk, means the feed
+    # moved or the parse broke, not that the archive shrank. This script once
+    # wrote an empty file and printed "done" because it was reading the date
+    # from a tag that no longer existed.
+    had = len(existing)
+    if not entries:
+        sys.exit(f"REFUSING TO WRITE: harvested 0 items over {pages} pages. "
+                 f"{OUT.name} left as it was ({had} items). The feed or the "
+                 f"parse is broken; fix it before trusting this script again.")
+    if had and len(entries) < had * 0.9:
+        sys.exit(f"REFUSING TO WRITE: harvested {len(entries)} items but "
+                 f"{OUT.name} already holds {had}. That is a big enough drop to "
+                 f"be a bug rather than a change. Delete the file deliberately "
+                 f"if the shrinkage is real.")
     OUT.write_text(json.dumps(
         {"entries": sorted(entries.values(), key=lambda e: e["date"])},
         ensure_ascii=False, indent=1) + "\n")

@@ -1,0 +1,209 @@
+#!/usr/bin/env python3
+"""
+Check data/years.json against the rules this archive says it keeps.
+
+The failure this guards against is not a crash. It is a script that reports
+success while quietly producing something wrong: a harvest that wrote an empty
+file and printed "done", a merge that dropped a field nobody was reading, an
+edit that left two entries describing one event. Those survive because nothing
+looks. This looks.
+
+Exit status is 1 if anything is wrong, so it can gate a deploy.
+
+    python3 scripts/check_data.py            everything
+    python3 scripts/check_data.py --quiet    only the failures
+"""
+import json
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+ROLES = {"president", "regent", "unresolved"}
+KINDS = {"concert", "speaker", "film", "festival", "tradition",
+         "service", "program", "other"}
+DATE = re.compile(r"\d{4}-\d{2}-\d{2}$")
+YEAR_ID = re.compile(r"\d{4}-\d{2}$")
+
+problems = []
+notes = []
+
+
+def bad(msg):
+    problems.append(msg)
+
+
+def note(msg):
+    notes.append(msg)
+
+
+def check_years(ys):
+    ids = [y["id"] for y in ys]
+    for yid in ids:
+        if not YEAR_ID.match(yid):
+            bad(f"year id is not YYYY-YY: {yid}")
+    for a, b in zip(ys, ys[1:]):
+        if b["start"] != a["start"] + 1:
+            bad(f"a year is missing between {a['id']} and {b['id']}")
+    if len(set(ids)) != len(ids):
+        bad("two years share an id: "
+            + ", ".join(k for k, v in Counter(ids).items() if v > 1))
+
+
+def check_events(ys):
+    for y in ys:
+        seen = Counter()
+        for e in y["events"]:
+            where = f"{y['id']} \"{e.get('title', '')[:48]}\""
+            if not str(e.get("title", "")).strip():
+                bad(f"{y['id']}: an event has no title")
+            if not str(e.get("body", "")).strip():
+                bad(f"{where}: no body")
+            d = str(e.get("date", ""))
+            if not DATE.match(d):
+                bad(f"{where}: date {d!r} is not YYYY-MM-DD")
+            elif not (y["start"] <= int(d[:4]) <= y["start"] + 2):
+                bad(f"{where}: dated {d}, outside {y['id']}")
+            src = e.get("src") or {}
+            if not src.get("url") or not src.get("label"):
+                bad(f"{where}: no source. The rule is no source, no entry")
+            if e.get("kind") and e["kind"] not in KINDS:
+                bad(f"{where}: kind {e['kind']!r} is not one of {sorted(KINDS)}")
+            if e.get("campus") and e.get("kind"):
+                bad(f"{where}: tagged campus context and also a programme SGA put on")
+            seen[e.get("title", "").strip().lower()] += 1
+        for t, n in seen.items():
+            if n > 1:
+                bad(f"{y['id']}: {n} events share the title \"{t[:52]}\"")
+
+
+def check_leaders(ys):
+    for y in ys:
+        for l in y["leaders"]:
+            who = f"{y['id']} {l.get('name', '?')}"
+            if not str(l.get("name", "")).strip():
+                bad(f"{y['id']}: a leader has no name")
+            if l.get("role") not in ROLES:
+                bad(f"{who}: role {l.get('role')!r} is not one of {sorted(ROLES)}")
+            if "also_regent" in l and l["role"] != "president":
+                bad(f"{who}: also_regent is only meaningful on a president")
+            if l.get("acting") and l["role"] != "president":
+                bad(f"{who}: acting is only meaningful on a president")
+            for s in l.get("sources") or []:
+                if not s.get("url") or not s.get("label"):
+                    bad(f"{who}: a source is missing its label or url")
+        # a year with more than one name cannot infer who held the Board seat
+        pres = [l for l in y["leaders"] if l["role"] == "president"]
+        if len(y["leaders"]) > 1 and y["start"] >= 1967:
+            for l in pres:
+                if "also_regent" not in l:
+                    bad(f"{y['id']} {l['name']}: more than one name this year, so "
+                        f"also_regent has to be stated, not guessed")
+
+
+def check_seat(ys):
+    def held_both(l, y):
+        if l["role"] != "president":
+            return False
+        if "also_regent" in l:
+            return bool(l["also_regent"])
+        return len(y["leaders"]) == 1 and y["start"] >= 1967
+    for y in ys:
+        if y["start"] < 1967:
+            continue
+        if not any(l["role"] == "regent" or held_both(l, y) for l in y["leaders"]):
+            note(f"{y['id']}: nobody is recorded in the student seat on the Board")
+
+
+def is_pdf(path):
+    try:
+        with open(path, "rb") as fh:
+            return fh.read(4) == b"%PDF"
+    except OSError:
+        return False
+
+
+def is_image(path):
+    try:
+        with open(path, "rb") as fh:
+            head = fh.read(8)
+        return head[:2] == b"\xff\xd8" or head[:8] == b"\x89PNG\r\n\x1a\n"
+    except OSError:
+        return False
+
+
+def check_files(ys):
+    """A file that is present is not the same as a file that is what it claims.
+    TopSCHOLAR answers a blocked download with an HTML page and HTTP 202, which
+    lands on disk named .pdf and reads as a successful mirror until someone
+    opens it."""
+    docs = ROOT / "data" / "documents"
+    photos = ROOT / "data" / "photos"
+
+    def want_pdf(where, f):
+        path = docs / f
+        if not path.exists():
+            bad(f"{where}: file missing: {f}")
+        elif not is_pdf(path):
+            bad(f"{where}: {f} is not a PDF. A blocked download saves the "
+                f"bot-check page under the right name")
+
+    for y in ys:
+        for d in y.get("documents") or []:
+            if d.get("file"):
+                want_pdf(y["id"], d["file"])
+        for e in y["events"]:
+            f = (e.get("src") or {}).get("file")
+            if f:
+                want_pdf(f"{y['id']} \"{e.get('title','')[:40]}\"", f)
+        for p in y.get("photos") or []:
+            if not p.get("file"):
+                continue
+            path = photos / p["file"]
+            if not path.exists():
+                bad(f"{y['id']}: photograph missing: {p['file']}")
+            elif not is_image(path):
+                bad(f"{y['id']}: {p['file']} is not a JPEG or PNG")
+        for l in y["leaders"]:
+            ph = (l.get("photo") or {}).get("file")
+            if ph and not (photos / ph).exists():
+                bad(f"{y['id']} {l['name']}: portrait missing: {ph}")
+            elif ph and not is_image(photos / ph):
+                bad(f"{y['id']} {l['name']}: portrait {ph} is not a JPEG or PNG")
+
+
+def check_counts(ys):
+    n_ev = sum(len(y["events"]) for y in ys)
+    pres = {l["name"] for y in ys for l in y["leaders"] if l["role"] == "president"}
+    note(f"{len(ys)} years, {n_ev} events, {len(pres)} people have been president")
+    for y in ys:
+        n = len(y["events"])
+        want = "researched" if n >= 3 else ("partial" if n else "empty")
+        if y.get("status") != want:
+            bad(f"{y['id']}: status is {y.get('status')!r} but it has {n} events "
+                f"so it should be {want!r}")
+
+
+def main(argv):
+    quiet = "--quiet" in argv
+    data = json.loads((ROOT / "data" / "years.json").read_text())
+    ys = data["years"]
+    for fn in (check_years, check_events, check_leaders, check_seat,
+               check_files, check_counts):
+        fn(ys)
+
+    if not quiet:
+        for n in notes:
+            print(f"  {n}")
+    if problems:
+        print(f"\n{len(problems)} problems:")
+        for p in problems:
+            print(f"  ! {p}")
+        return 1
+    print("\nthe archive checks out against its own rules")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
