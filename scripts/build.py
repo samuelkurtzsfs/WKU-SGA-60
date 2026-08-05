@@ -906,7 +906,9 @@ def render_index(ys, n_leg, n_herald):
     counts = {"all": len(ys),
               "disputed": sum(1 for y in ys if disputed(y)),
               "corrected": sum(1 for y in ys if corrected(y)),
-              "unconfirmed": sum(1 for y in ys if unconfirmed(y))}
+              "unconfirmed": sum(1 for y in ys if unconfirmed(y)),
+              "regent": sum(1 for y in ys
+                            if any(l["role"] == "regent" for l in y["leaders"]))}
     for lo, hi, *_ in DECADES:
         counts[f"d{lo}"] = sum(1 for y in ys if lo <= y["start"] <= hi)
 
@@ -928,6 +930,8 @@ def render_index(ys, n_leg, n_herald):
                 tags.append("corrected")
             if unconfirmed(y):
                 tags.append("unconfirmed")
+            if any(l["role"] == "regent" for l in y["leaders"]):
+                tags.append("regent")
             flag = ""
             if disputed(y):
                 flag = '<span class="q">a name here is unsettled</span>'
@@ -939,7 +943,10 @@ def render_index(ys, n_leg, n_herald):
                 f'data-tags="{" ".join(tags)}" data-y="{h(y["id"])}">'
                 f'<span class="yr">{h(y["id"])}</span>'
                 f'<span class="nm{" two" if len(names) > 1 else ""}">'
-                f'{" &middot; ".join(h(n) for n in names)}</span>'
+                + (" &middot; ".join(
+                    f'{h(l["name"])}<span class="ro">{h(role_word(l))}</span>'
+                    for l in y["leaders"])
+                   if len(names) > 1 else h(names[0])) + '</span>'
                 f'<span class="ct">{n} entries</span>{flag}</a>')
         ev = sum(len(y["events"]) for y in block)
         groups.append(
@@ -948,6 +955,8 @@ def render_index(ys, n_leg, n_herald):
             f'<div class="grid">{"".join(plates)}</div></section>')
 
     facets = [("all", "All years")]
+    if counts["regent"]:
+        facets.append(("regent", "With a student regent"))
     for lo, hi, label, short, stem in DECADES:
         facets.append((f"d{lo}", short))
     for key, label in (("corrected", "Corrected"), ("disputed", "Unsettled"),
