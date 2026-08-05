@@ -8,13 +8,24 @@ Writes data/herald-index.json: one entry per matching archive item, with the
 item's date, its title (issue label), its TopSCHOLAR URL, and every line of its
 article index that matches the keyword set. These lines become the complete
 timeline. Paced politely; resumable by rerunning (skips known URLs).
+
+    python3 scripts/harvest_herald_index.py --all
+
+keeps EVERYTHING instead, into data/herald-index-full.json: every dated item and
+every line of its article index, whether or not student government is named.
+The filtered file is what the timeline renders, but the filter is a real blind
+spot for research: a president named in a headline that does not contain "SGA",
+"ASG" or "student government" cannot be found in it, and several of this
+archive's hardest questions turned on exactly that. Harvest the full index when
+you need to search the Herald rather than render it.
 """
 import json, re, sys, time, urllib.request
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "data" / "herald-index.json"
+KEEP_ALL = "--all" in sys.argv
+OUT = ROOT / "data" / ("herald-index-full.json" if KEEP_ALL else "herald-index.json")
 BASE = "https://digitalcommons.wku.edu/do/oai/"
 NS = {"oai": "http://www.openarchives.org/OAI/2.0/",
       "dc": "http://purl.org/dc/elements/1.1/"}
@@ -62,16 +73,20 @@ def main():
             date = next((el.text for el in rec.iter()
                          if ("date.created" in el.tag or el.tag.endswith("created")) and el.text), "")
             date = (date or "")[:10]
-            if not (KW.search(title) or KW.search(desc)):
+            if not KEEP_ALL and not (KW.search(title) or KW.search(desc)):
                 continue
             lines = [ln.strip() for ln in re.split(r"[\n\r]+|(?<=[.?!])\s{2,}", desc)]
-            hits = [ln[:300] for ln in lines if ln and KW.search(ln)]
-            if not hits and KW.search(title):
-                hits = [title[:300]]
+            if KEEP_ALL:
+                hits = [ln[:300] for ln in lines if ln]
+            else:
+                hits = [ln[:300] for ln in lines if ln and KW.search(ln)]
+                if not hits and KW.search(title):
+                    hits = [title[:300]]
             if not re.match(r"\d{4}", date):
                 continue  # the dating law: no year, no timeline
             entries[item_url] = {"date": date, "issue": title[:160],
-                                 "url": item_url, "pdf": pdf, "lines": hits[:12]}
+                                 "url": item_url, "pdf": pdf,
+                                 "lines": hits if KEEP_ALL else hits[:12]}
         pages += 1
         if pages % 10 == 0:
             print(f"page {pages}: {len(entries)} matching items", flush=True)
