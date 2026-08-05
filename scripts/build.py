@@ -591,6 +591,14 @@ def held_both(l, y):
 ORDINAL = {"president": {}, "regent": {}}
 
 
+def seat_gaps(ys):
+    """Years since the seat was created in which the archive cannot name whoever
+    sat on the Board. Reported at build time rather than papered over, because
+    the alternative is a guess that reads like a fact."""
+    return [y["id"] for y in ys if y["start"] >= REGENT_SEAT_CREATED
+            and not any(l["role"] == "regent" or held_both(l, y) for l in y["leaders"])]
+
+
 def index_offices(ys):
     for k in ORDINAL:
         ORDINAL[k].clear()
@@ -3191,7 +3199,7 @@ apply only to the governor's appointees.</p>
 <p>So a single name on the plaque after 1968 means one person holding both offices. More than one
 name can mean either of two different things, and the difference matters. In six years the
 offices were genuinely split, with someone other than the president on the Board: 1968-69 and
-1969-70 (Paul Gerard), 1972-73 (Michael Fiorella), 1974-75 (Gregory McKinney), 1982-83
+1969-70 (Paul Gerard), 1972-73 (Michael Fiorella), 1974-75 (Gregory McKinney), 1981-82
 (Sandra Norfleet), and 2008-09, when Johnathon Boles resigned the presidency in January 2009,
 Kayla Shelton succeeded him without taking the Board seat, and Reagan Gilley won it in a
 special election the following month.</p>
@@ -3216,8 +3224,10 @@ their terms as far as the record supports them. {n_pres} people have been studen
 president, holding {n_pterm} terms between them, and {n_reg} people have held the student
 seat on the Board of Regents since it was created in April 1968; each of them is given their
 number in the line on their year page. The two counts differ because for most of the last
-sixty years one person held both offices, and because the archive cannot yet say who held
-the seat in 1981-82, the year Marcell Bush resigned and David Payne finished the term. Entries cover the organization, not only its presidents: elections and turnout,
+sixty years one person held both offices, and because of 1982-83, the one year since the seat
+was created where the archive has no name for it at all: Margaret Ragan wrote in February 1983
+that the presidency and the seat were separate posts, and who held the other one has not yet
+been found. Entries cover the organization, not only its presidents: elections and turnout,
 budgets, appointments, committee work, resolutions that passed and resolutions that failed,
 and the fights with the administration and the <cite>Herald</cite>. Campus events that shaped
 a year are included where they bear on student government and are marked as such.</p>
@@ -5728,6 +5738,9 @@ def main():
     apply_photo_overlay(ys)
     index_anchors(ys)
     index_offices(ys)
+    gaps = seat_gaps(ys)
+    if gaps:
+        print('the Board seat is unidentified in: ' + ', '.join(gaps))
     leg = json.loads(LEGMETA.read_text())["entries"] if LEGMETA.exists() else []
     by_session = {}
     for e in leg:
