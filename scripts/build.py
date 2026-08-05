@@ -467,9 +467,25 @@ def shell(title, desc, body, css, depth, current, mascot=False):
 
 
 # ---------------------------------------------------------------- pieces
-def role_word(l):
-    return {"regent": "student regent", "unresolved": "role unresolved"}.get(
-        l["role"], "president")
+REGENT_ERA = range(1968, 2001)
+
+
+def held_both(l, y):
+    """In the regent era a lone name on the plaque held both offices: the
+    presidency and the student seat on the Board of Regents. Only the years
+    that carry two names split them between two people."""
+    return (l["role"] == "president" and len(y["leaders"]) == 1
+            and y["start"] in REGENT_ERA)
+
+
+def role_word(l, y=None):
+    if l["role"] == "regent":
+        return "student regent"
+    if l["role"] == "unresolved":
+        return "role unresolved"
+    if y is not None and held_both(l, y):
+        return "president and student regent"
+    return "president"
 
 
 def confidence_line(l, yid):
@@ -524,8 +540,8 @@ def leader_sources(l, key):
 
 def render_leader(l, y, also):
     key = slug(l["name"])
-    head = f'{h(l["name"])} <span class="r">{role_word(l)}, {h(y["id"])}</span>'
-    facts = [("Office", role_word(l).capitalize()),
+    head = f'{h(l["name"])} <span class="r">{role_word(l, y)}, {h(y["id"])}</span>'
+    facts = [("Office", role_word(l, y).capitalize()),
              ("Term recorded here", h(y["id"]))]
     if l.get("plaque_term") and l["plaque_term"] != y["id"]:
         facts.append(("On the plaque", h(l["plaque_term"])))
@@ -574,7 +590,7 @@ def render_portraits(y):
             f'<figure class="portrait">'
             f'<img src="../photos/{h(p["file"])}" alt="Portrait of {h(l["name"])}." loading="lazy">'
             f'<figcaption><b>{h(l["name"])}</b>'
-            f'<span class="who">{role_word(l).capitalize()}, {h(y["id"])}.</span>{credit}</figcaption>'
+            f'<span class="who">{role_word(l, y).capitalize()}, {h(y["id"])}.</span>{credit}</figcaption>'
             f'</figure>')
     return f'<div class="plates-photo">{"".join(figs)}</div>'
 
@@ -944,7 +960,7 @@ def render_index(ys, n_leg, n_herald):
                 f'<span class="yr">{h(y["id"])}</span>'
                 f'<span class="nm{" two" if len(names) > 1 else ""}">'
                 + (" &middot; ".join(
-                    f'{h(l["name"])}<span class="ro">{h(role_word(l))}</span>'
+                    f'{h(l["name"])}<span class="ro">{h(role_word(l, y))}</span>'
                     for l in y["leaders"])
                    if len(names) > 1 else h(names[0])) + '</span>'
                 f'<span class="ct">{n} entries</span>{flag}</a>')
@@ -956,7 +972,7 @@ def render_index(ys, n_leg, n_herald):
 
     facets = [("all", "All years")]
     if counts["regent"]:
-        facets.append(("regent", "With a student regent"))
+        facets.append(("regent", "Offices held by two people"))
     for lo, hi, label, short, stem in DECADES:
         facets.append((f"d{lo}", short))
     for key, label in (("corrected", "Corrected"), ("disputed", "Unsettled"),
