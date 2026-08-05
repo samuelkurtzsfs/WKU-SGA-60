@@ -241,6 +241,26 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
  text-decoration:none;opacity:0;margin-left:12px}
 .ev:hover .pl,.ev:focus-within .pl{opacity:1}
 .ev:target{background:var(--paper2);box-shadow:-14px 0 0 var(--paper2),14px 0 0 var(--paper2)}
+.ev .money{margin:8px 0 0;font-size:.88rem;color:var(--ink2);
+ border-left:2px solid var(--red);padding-left:11px;max-width:var(--measure)}
+/* the badge on an entry that records something student government put on */
+.kind{color:var(--red);font-weight:600}
+.ev .when .kind{display:block;font-size:10px;letter-spacing:.1em;
+ text-transform:uppercase;margin-top:4px}
+
+/* ---- what they put on, on a year page ---- */
+.puton{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+ gap:22px 34px;margin:4px 0 0}
+.pgrp h3{font-size:12px;font-family:var(--ui);font-weight:600;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--ink3);margin:0 0 7px;padding-bottom:6px;
+ border-bottom:1px solid var(--line)}
+.pgrp h3 .n{color:var(--red);margin-left:8px;letter-spacing:0}
+.pgrp ul{list-style:none;margin:0;padding:0}
+.pgrp li{margin:0 0 7px;font-size:.9rem;line-height:1.35}
+.pgrp li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.pgrp li a:hover{color:var(--red);border-color:var(--red)}
+.pgrp .pw{display:block;font-size:.78rem;color:var(--ink3);
+ font-variant-numeric:tabular-nums}
 .empty{max-width:var(--measure);color:var(--ink2)}
 .searchlist{columns:2;column-gap:30px;padding:0;margin:10px 0 0;list-style:none;font-size:.86rem}
 @media(max-width:640px){.searchlist{columns:1}}
@@ -368,7 +388,8 @@ BOARD_CSS = """
 .starthere span{display:block;color:var(--ink2);font-size:.92rem;margin-top:4px}
 
 /* ---- the story, on the front page ---- */
-.twoup{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin:30px 0 0}
+.twoup{display:grid;grid-template-columns:repeat(3,1fr);gap:0 36px;margin:30px 0 0}
+@media(max-width:1000px){.twoup{grid-template-columns:1fr 1fr;gap:0 32px}}
 @media(max-width:820px){.twoup{grid-template-columns:1fr;gap:0}}
 .twoup .readfirst{margin:0}
 @media(max-width:820px){.twoup .readfirst+.readfirst{border-top-width:1px}}
@@ -420,7 +441,8 @@ def name_searches(name):
 
 # ---------------------------------------------------------------- shell
 NAV_ITEMS = [("index.html", "The board"), ("story.html", "The story"),
-             ("patterns.html", "Patterns"), ("history.html", "Timeline"),
+             ("patterns.html", "Patterns"), ("events.html", "What SGA put on"),
+             ("history.html", "Timeline"),
              ("legislation.html", "Legislation"), ("corrections.html", "Corrections"),
              ("sources.html", "Sources"), ("about.html", "About and method")]
 
@@ -481,6 +503,61 @@ def shell(title, desc, body, css, depth, current, mascot=False):
 {footer(up)}
 {extra}
 </body></html>"""
+
+
+# ---------------------------------------------------------------- programmes
+# What student government put on: the concerts, lectures, films, festivals,
+# annual traditions and standing services it ran for the campus. These are
+# ordinary events carrying a `kind`, so the same entry appears in its year, in
+# the complete timeline and on the programmes page without being stored twice.
+KINDS = [
+    ("concert", "Concert", "Concerts",
+     "Music student government booked and paid for, from the block-booked "
+     "package shows of the 1960s to the co-funded bills of the present."),
+    ("speaker", "Lecture", "Lectures",
+     "The lecture series: writers, politicians, scientists and activists "
+     "brought to campus on student government's budget."),
+    ("film", "Film", "Films",
+     "Film series and single screenings run for students."),
+    ("festival", "Festival", "Festivals",
+     "Multi-day events built around music, spring weather or a cause."),
+    ("tradition", "Tradition", "Traditions",
+     "The things that came back every year: homecoming week, registration "
+     "week, mock elections, awards and welcome events."),
+    ("service", "Service", "Services",
+     "Standing services rather than single nights: escorts, shuttles, "
+     "book exchanges, discount cards, legal aid, printed guides."),
+    ("program", "Programme", "Programmes",
+     "Programmes and initiatives that were neither a single show nor a "
+     "permanent service."),
+    ("other", "Other", "Other",
+     "Programme business that does not fit the categories above, including "
+     "what students said about what was booked."),
+]
+KIND_ONE = {k: one for k, one, _, _ in KINDS}
+KIND_MANY = {k: many for k, _, many, _ in KINDS}
+KIND_BLURB = {k: b for k, _, _, b in KINDS}
+KIND_ORDER = [k for k, _, _, _ in KINDS]
+
+
+def is_program(e):
+    return e.get("kind") in KIND_ONE
+
+
+def kind_tag(e, cls="kind"):
+    """The badge that marks an entry as something SGA put on."""
+    if not is_program(e):
+        return ""
+    k = e["kind"]
+    return f'<span class="{cls} k-{k}">{h(KIND_ONE[k])}</span>'
+
+
+def money_line(e):
+    """A sourced figure - a budget, a loss, a gate, a crowd - shown under the
+    entry it belongs to, because the money is most of the story with these."""
+    if not e.get("money"):
+        return ""
+    return f'<p class="money">{h(e["money"])}</p>'
 
 
 # ---------------------------------------------------------------- pieces
@@ -787,6 +864,9 @@ def render_year(y, prev, nxt, leg, repeats):
     if unres:
         glance.append(("Name not yet placed", h(" and ".join(unres))))
     glance.append(("Entries", str(n_ev)))
+    n_prog = sum(1 for e in y["events"] if is_program(e))
+    if n_prog:
+        glance.append(("Put on for students", str(n_prog)))
     if n_pho:
         glance.append(("Photographs", str(n_pho)))
     if n_doc:
@@ -802,9 +882,12 @@ def render_year(y, prev, nxt, leg, repeats):
     # the chronology
     seen = {}
     rows = []
+    anchors = {}
     for e in sorted(y["events"], key=lambda e: e["date"]):
         aid = event_anchor(e, seen)
+        anchors[id(e)] = aid
         ctx = '<span class="ctx">campus</span>' if e.get("campus") else ""
+        ctx += kind_tag(e, "ctx kind")
         cites = []
         if e.get("src"):
             cites.append(src_link(e["src"]))
@@ -814,7 +897,7 @@ def render_year(y, prev, nxt, leg, repeats):
         rows.append(
             f'<article class="ev" id="{aid}"><div class="when">{time_tag(e["date"])}{ctx}</div>'
             f'<div><a class="pl" href="#{aid}" aria-label="Link to this entry">#</a>'
-            f'<h3>{h(e["title"])}</h3><p>{h(e["body"])}</p>{cite}</div></article>')
+            f'<h3>{h(e["title"])}</h3><p>{h(e["body"])}</p>{money_line(e)}{cite}</div></article>')
     if rows:
         chron = ""
         if n_ev >= 3:
@@ -828,6 +911,30 @@ def render_year(y, prev, nxt, leg, repeats):
                  '<p>These are the searches that cover the year. Anyone can pick up the '
                  'work from them.</p></div>'
                  f'<ul class="searchlist">{links}</ul>')
+
+    # what student government put on this year, gathered out of the chronology
+    progs = [e for e in sorted(y["events"], key=lambda e: e["date"]) if is_program(e)]
+    puton = ""
+    if progs:
+        groups = []
+        for k in KIND_ORDER:
+            inks = [e for e in progs if e["kind"] == k]
+            if not inks:
+                continue
+            lis = "".join(
+                f'<li><a href="#{anchors[id(e)]}">{h(e["title"])}</a>'
+                f'<span class="pw">{h(fmt_date(e["date"])[0])}</span></li>' for e in inks)
+            groups.append(f'<div class="pgrp"><h3>{h(KIND_MANY[k])}'
+                          f'<span class="n">{len(inks)}</span></h3>'
+                          f'<ul>{lis}</ul></div>')
+        word = "thing" if len(progs) == 1 else "things"
+        puton = (f'<h2 class="sec">What they put on<span class="n">{len(progs)}</span></h2>'
+                 f'<p class="secnote">The {len(progs)} {word} student government staged or '
+                 f'ran for the campus this year, drawn from the chronology below. Every one '
+                 f'of them also appears on the '
+                 f'<a href="../events.html">programmes page</a>, which runs the whole '
+                 f'sixty years together.</p>'
+                 f'<div class="puton">{"".join(groups)}</div>')
 
     # the bibliography for the year
     bib = ""
@@ -861,6 +968,7 @@ def render_year(y, prev, nxt, leg, repeats):
 {render_portraits(y)}
 {leaders}
 {render_org(y)}
+{puton}
 {chron}
 {render_gallery(y)}
 {render_docs(y)}
@@ -1050,6 +1158,12 @@ def render_index(ys, n_leg, n_herald):
   listening.</p>
   <span class="go">Read the patterns</span>
  </a>
+ <a class="readfirst" href="events.html">
+  <p class="lab">Or read what it did</p>
+  <h2>What SGA put on</h2>
+  <p>__PUTON__</p>
+  <span class="go">Read the programmes</span>
+ </a>
  </div>
 
  <div class="tools">
@@ -1123,7 +1237,24 @@ apply();
         f"are held as files, and {n_herald} further <cite>Herald</cite> index lines are "
         f"listed on the timeline. What is still unsettled is set out on the "
         f'<a href="corrections.html">corrections page</a>.')
-    body = (body.replace("__COUNTS__", counts_line)
+    progs = [e for y in ys for e in y["events"] if is_program(e)]
+    kc = {}
+    for e in progs:
+        kc[e["kind"]] = kc.get(e["kind"], 0) + 1
+    top = sorted(kc.items(), key=lambda kv: -kv[1])[:3]
+    named = ", ".join(f"{n} {KIND_MANY[k].lower()}" for k, n in top)
+    puton_line = (
+        f"The other half of the job: the concerts it booked, the lecturers it paid, the "
+        f"films it screened and the services it kept running. {len(progs)} of them are "
+        f"here, dated and sourced, from "
+        f"{min(e['date'][:4] for e in progs)} to {max(e['date'][:4] for e in progs)}, "
+        f"among them {named}. Where a source records what a night cost or what it took "
+        f"at the gate, the figure is on the entry."
+        if progs else
+        "The concerts, lecturers, films and services student government ran for the "
+        "campus, gathered in one place as the archive turns them up.")
+    body = (body.replace("__PUTON__", puton_line)
+                .replace("__COUNTS__", counts_line)
                 .replace("__FACETS__", facet_html)
                 .replace("__GROUPS__", "".join(groups))
                 .replace("__STARTS__", starts)
@@ -1168,6 +1299,8 @@ TIMELINE_CSS = """
  .yrbar .tally{margin-left:0;flex-basis:100%}}
 
 /* ---- timeline: one line ---- */
+.hx .t .money{margin:7px 0 0;font-size:.87rem;color:var(--ink2);
+ border-left:2px solid var(--red);padding-left:11px;max-width:var(--measure)}
 .hx{display:grid;grid-template-columns:7.5rem 1fr;gap:0 26px;padding:16px 0;
  border-top:1px solid var(--line2)}
 .rows .hx:first-child{border-top:0}
@@ -1251,11 +1384,13 @@ def timeline_sections(ys, by_year, up):
             if e.get("src", {}).get("file"):
                 cites.append(f'<a href="{up}docs/{h(e["src"]["file"])}">Read it here</a>')
             tag = '<span class="tag">campus</span>' if e.get("campus") else ""
+            tag += kind_tag(e, "tag kind")
+            pflag = ' data-p="1"' if is_program(e) else ""
             rows.append(
-                f'<article class="hx" id="{h(yid)}-{aid}" data-k="e">'
+                f'<article class="hx" id="{h(yid)}-{aid}" data-k="e"{pflag}>'
                 f'<div class="when">{hx_date(e["date"])}{tag}</div>'
                 f'<div class="t"><h3>{h(e["title"])}</h3><p>{h(e["body"])}</p>'
-                f'<p class="cite">{"".join(cites)}</p></div></article>')
+                f'{money_line(e)}<p class="cite">{"".join(cites)}</p></div></article>')
         hx = []
         for x in sorted(v["herald"], key=lambda e: e["date"]):
             when = hx_date(x["date"])
@@ -1328,8 +1463,9 @@ function run(){
  secs.forEach(function(sec){
   var ve=0,vi=0,rows=sec._rows;
   for(var i=0;i<rows.length;i++){
-   var r=rows[i],isx=r.dataset.k==='i',
-       ok=(kind==='all'||(kind==='e')===!isx)&&(!q||r._k.indexOf(q)>-1);
+   var r=rows[i],isx=r.dataset.k==='i',isp=r.dataset.p==='1',
+       km=kind==='all'?true:kind==='i'?isx:kind==='p'?isp:!isx,
+       ok=km&&(!q||r._k.indexOf(q)>-1);
    r.hidden=!ok;
    if(ok){if(isx)vi++;else ve++;}
   }
@@ -1337,14 +1473,16 @@ function run(){
   if(d){d.hidden=!vi;d.open=!!(q&&vi);
    var c=d.querySelector('.hn');if(c)c.textContent=vi;}
   var none=sec.querySelector('.hxnone');
-  if(none)none.hidden=!!q||kind==='i';
+  if(none)none.hidden=!!q||kind==='i'||kind==='p';
   sec.hidden=!(ve+vi)&&!(!q&&kind==='all');
   if(jumps[sec.dataset.y])jumps[sec.dataset.y].classList.toggle('off',sec.hidden);
   ne+=ve;ni+=vi;if(ve+vi)ny++;
  });
  var counted=[];
- if(kind!=='i'&&(ne||!q))counted.push(word(ne,'entry','entries'));
- if(kind!=='e'&&(ni||!q))counted.push(word(ni,'index line','index lines'));
+ if(kind==='p')counted.push(word(ne,'thing SGA put on','things SGA put on'));
+ else{
+  if(kind!=='i'&&(ne||!q))counted.push(word(ne,'entry','entries'));
+  if(kind!=='e'&&(ni||!q))counted.push(word(ni,'index line','index lines'));}
  var what=counted.join(' and ');
  if(q&&!(ne+ni))hr.textContent='Nothing matches \\u201c'+hf.value.trim()+'\\u201d. '
    +'Try a name, a year or a single word.';
@@ -1365,7 +1503,7 @@ hf.addEventListener('input',run);
 if(cl)cl.addEventListener('click',function(){hf.value='';hf.focus();run();});
 var p0=new URLSearchParams(location.search);
 if(p0.get('q'))hf.value=p0.get('q');
-if(p0.get('show')==='e'||p0.get('show')==='i'){kind=p0.get('show');
+if(/^[eip]$/.test(p0.get('show')||'')){kind=p0.get('show');
  chips.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.k===kind))});}
 run();
 })();
@@ -1393,13 +1531,14 @@ def timeline_head(title, kicker, lede, up, current_dec, counts, ynav):
             links.append(f'<a href="{up}history/{stem}.html">{h(short)}</a>')
     allx = ('<span>The complete timeline</span>' if current_dec is None
             else f'<a href="{up}history.html">The complete timeline</a>')
-    n_ev, n_hx = counts
+    n_ev, n_hx, n_prog = counts
     facets = [("all", "Everything", n_ev + n_hx), ("e", "Archive entries", n_ev),
-              ("i", "Herald index", n_hx)]
+              ("p", "What SGA put on", n_prog), ("i", "Herald index", n_hx)]
     chips = "".join(
         f'<button type="button" data-k="{k}" '
         f'aria-pressed="{"true" if k == "all" else "false"}">{h(lab)} '
-        f'<span class="c">{n}</span></button>' for k, lab, n in facets if n or k != "i")
+        f'<span class="c">{n}</span></button>' for k, lab, n in facets
+        if n or k not in ("i", "p"))
     return (f'<header class="head"><div class="wrap"><p class="kicker">{h(kicker)}</p>'
             f'<h1>{h(title)}</h1><p class="scope">{lede}</p></div></header>'
             f'<div class="wrap">'
@@ -1428,16 +1567,18 @@ def render_history(ys, herald):
 
     def tally(block):
         return (sum(len(by_year[y["id"]]["events"]) for y in block),
-                sum(len(x["lines"]) for y in block for x in by_year[y["id"]]["herald"]))
+                sum(len(x["lines"]) for y in block for x in by_year[y["id"]]["herald"]),
+                sum(1 for y in block for e in by_year[y["id"]]["events"] if is_program(e)))
 
     def nav_items(block):
         return [(y["id"], len(by_year[y["id"]]["events"])) for y in block]
 
-    n_ev, n_hx = tally(ys)
+    n_ev, n_hx, n_prog = tally(ys)
     lede = (f"Every sourced entry in the archive, {n_ev} of them, in the order they "
             f"happened, with the {n_hx} unworked lines from the <cite>Herald</cite> index "
-            f"kept separate under the year they belong to. Jump to a year below, or read "
-            f"one decade at a time.")
+            f"kept separate under the year they belong to. {n_prog} of the entries are "
+            f"things student government put on for the campus, and the filter above "
+            f"will show only those. Jump to a year below, or read one decade at a time.")
     pages = {}
     rows = []
     for lo, hi, label, short, stem in DECADES:
@@ -1445,7 +1586,7 @@ def render_history(ys, herald):
         if block:
             rows.append((short, nav_items(block)))
     body = (timeline_head("The complete timeline", "1966 to 2026", lede, "", None,
-                          (n_ev, n_hx), year_nav(rows, True))
+                          (n_ev, n_hx, n_prog), year_nav(rows, True))
             + '<div class="body tl">'
             + timeline_sections(ys, by_year, "")
             + '<p class="totop"><a href="#main">Back to the top of the timeline</a></p>'
@@ -1459,10 +1600,13 @@ def render_history(ys, herald):
         block = [y for y in ys if lo <= y["start"] <= hi]
         if not block:
             continue
-        ev, hxn = tally(block)
+        ev, hxn, pn = tally(block)
         d_lede = (f"{ev} sourced entries across {len(block)} academic years, "
                   f"{block[0]['id']} to {block[-1]['id']}, with {hxn} further lines from "
                   f"the <cite>Herald</cite> index held under the years they belong to.")
+        if pn:
+            d_lede += (f" {pn} of the entries are things student government put on for "
+                       f"the campus.")
         pager = ""
         if i:
             p = DECADES[i - 1]
@@ -1471,7 +1615,8 @@ def render_history(ys, herald):
             nx = DECADES[i + 1]
             pager += (f'<a class="r" href="{nx[4]}.html">Next decade<b>{h(nx[3])}</b></a>')
         dbody = (timeline_head(label, "The timeline", d_lede, "../", lo,
-                               (ev, hxn), year_nav([("Years", nav_items(block))], False))
+                               (ev, hxn, pn),
+                               year_nav([("Years", nav_items(block))], False))
                  + '<div class="body tl">'
                  + timeline_sections(block, by_year, "../")
                  + '<p class="totop"><a href="#main">Back to the top of the decade</a></p>'
@@ -5208,6 +5353,207 @@ def render_patterns(ys):
 
 
 # ---------------------------------------------------------------- data
+# ---------------------------------------------------------------- programmes
+PROGRAMS_CSS = """
+.pgheads{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+ gap:1px;background:var(--line);border:1px solid var(--line);margin:26px 0 0}
+.pgheads a{background:var(--paper);padding:13px 14px 12px;text-decoration:none;
+ display:block;transition:background .12s}
+.pgheads a:hover{background:var(--paper2)}
+.pgheads b{display:block;font-size:1.5rem;font-weight:600;letter-spacing:-.02em;
+ color:var(--red);font-variant-numeric:tabular-nums;line-height:1.05}
+.pgheads span{display:block;font-family:var(--ui);font-size:11.5px;font-weight:600;
+ letter-spacing:.09em;text-transform:uppercase;color:var(--ink3);margin-top:5px}
+
+.pgsec{margin:0 0 8px;scroll-margin-top:14px}
+.pgsec>h2{font-size:1.3rem;margin:56px 0 3px;padding-top:16px;
+ border-top:2px solid var(--black);letter-spacing:-.02em}
+.pgsec>h2 .n{font-family:var(--ui);font-size:12px;font-weight:600;color:var(--red);
+ letter-spacing:.02em;margin-left:11px;vertical-align:2px}
+.pgsec>.blurb{color:var(--ink2);font-size:.93rem;max-width:var(--measure);margin:0 0 6px}
+
+.pg{display:grid;grid-template-columns:8.5rem 1fr;gap:0 26px;padding:16px 0;
+ border-top:1px solid var(--line2)}
+@media(max-width:640px){.pg{grid-template-columns:1fr;gap:3px;padding:14px 0}}
+.pg .when{font-size:.83rem;color:var(--ink3);padding-top:4px;
+ font-variant-numeric:tabular-nums}
+.pg .when time{display:block;color:var(--ink2);font-weight:600}
+.pg .when .yr{display:block;margin-top:3px}
+.pg .when .yr a{color:var(--ink3);text-decoration:none;border-bottom:1px solid var(--line)}
+.pg .when .yr a:hover{color:var(--red)}
+.pg h3{font-size:1.02rem;margin:0 0 5px;letter-spacing:-.01em}
+.pg p{margin:0;max-width:var(--measure)}
+.pg .money{margin:7px 0 0;font-size:.87rem;color:var(--ink2);
+ border-left:2px solid var(--red);padding-left:11px}
+.pg .cite{font-size:.83rem;color:var(--ink3);margin-top:8px}
+.pg .cite a{margin-right:14px}
+.pg[hidden]{display:none}
+.pgnone{color:var(--ink3);font-size:.9rem;margin:14px 0 0}
+"""
+
+PROGRAMS_JS = """
+<script>
+(function(){
+var f=document.getElementById('pf'),ro=document.getElementById('pr'),
+    cl=document.getElementById('pclear'),
+    rows=[].slice.call(document.querySelectorAll('.pg')),
+    secs=[].slice.call(document.querySelectorAll('.pgsec')),
+    chips=[].slice.call(document.querySelectorAll('.pgfilter button')),era='all';
+rows.forEach(function(r){
+ r._k=(r.textContent||'').replace(/\\s+/g,' ').toLowerCase();});
+function word(n,s,p){return n+' '+(n===1?s:p);}
+function run(){
+ var q=f.value.toLowerCase().trim(),n=0;
+ rows.forEach(function(r){
+  var ok=(era==='all'||r.dataset.d===era)&&(!q||r._k.indexOf(q)>-1);
+  r.hidden=!ok;if(ok)n++;});
+ secs.forEach(function(s){
+  var v=s.querySelectorAll('.pg:not([hidden])').length;
+  s.hidden=!v;
+  var c=s.querySelector('h2 .n');if(c)c.textContent=v;});
+ if(q&&!n)ro.textContent='Nothing matches \\u201c'+f.value.trim()+'\\u201d. Try a '
+  +'performer, a year or a single word.';
+ else ro.textContent=word(n,'thing','things')+' student government put on'
+  +(q?' matching \\u201c'+f.value.trim()+'\\u201d':'')+'.';
+ if(cl)cl.hidden=!q;
+ var p=new URLSearchParams(location.search);
+ if(q)p.set('q',f.value.trim());else p.delete('q');
+ if(era!=='all')p.set('era',era);else p.delete('era');
+ var qs=p.toString();
+ history.replaceState(null,'',location.pathname+(qs?'?'+qs:''));
+}
+chips.forEach(function(c){c.addEventListener('click',function(){
+ era=c.dataset.d;chips.forEach(function(x){
+  x.setAttribute('aria-pressed',String(x.dataset.d===era))});run();});});
+f.addEventListener('input',run);
+if(cl)cl.addEventListener('click',function(){f.value='';f.focus();run();});
+var p0=new URLSearchParams(location.search);
+if(p0.get('q'))f.value=p0.get('q');
+if(p0.get('era')){era=p0.get('era');chips.forEach(function(x){
+ x.setAttribute('aria-pressed',String(x.dataset.d===era))});}
+run();
+})();
+</script>"""
+
+
+def year_anchors(y):
+    """The anchor each event gets on its own year page, computed the same way
+    render_year computes it so the links land on the right entry."""
+    seen = {}
+    return {id(e): event_anchor(e, seen)
+            for e in sorted(y["events"], key=lambda e: e["date"])}
+
+
+def render_programs(ys):
+    """Everything student government put on for the campus, sixty years of it,
+    gathered out of the year records and grouped by what kind of thing it was."""
+    items = []
+    for y in ys:
+        anch = year_anchors(y)
+        for e in y["events"]:
+            if is_program(e):
+                items.append((y, e, anch[id(e)]))
+    items.sort(key=lambda t: t[1]["date"])
+    n = len(items)
+
+    def dec_of(yid):
+        s = int(yid[:4])
+        for lo, hi, label, short, stem in DECADES:
+            if lo <= s <= hi:
+                return short, label
+        return None, None
+
+    dec_counts = {}
+    for y, e, _ in items:
+        short, _lab = dec_of(y["id"])
+        dec_counts[short] = dec_counts.get(short, 0) + 1
+
+    by_kind = {}
+    for y, e, a in items:
+        by_kind.setdefault(e["kind"], []).append((y, e, a))
+
+    # the summary strip: one figure per kind, linking to its section
+    heads = "".join(
+        f'<a href="#k-{k}"><b>{len(by_kind[k])}</b>'
+        f'<span>{h(KIND_MANY[k])}</span></a>'
+        for k in KIND_ORDER if by_kind.get(k))
+
+    span = f"{items[0][1]['date'][:4]} to {items[-1][1]['date'][:4]}" if items else ""
+    n_years = len({y["id"] for y, _, _ in items})
+    n_money = sum(1 for _, e, _ in items if e.get("money"))
+    lede = (f"Student government has always been more than a legislature. It booked the "
+            f"bands, paid the lecturers, ran the film series and kept the services going. "
+            f"This page gathers {n} of those things, {span}, across {n_years} academic "
+            f"years, each one dated and carrying the source it rests on. "
+            f"{n_money} of them record what it cost, what it took at the gate, or how "
+            f"many people came.")
+
+    chips = ['<button type="button" data-d="all" aria-pressed="true">All sixty years '
+             f'<span class="c">{n}</span></button>']
+    for lo, hi, label, short, stem in DECADES:
+        if dec_counts.get(short):
+            chips.append(f'<button type="button" data-d="{h(short)}" aria-pressed="false">'
+                         f'{h(short)} <span class="c">{dec_counts[short]}</span></button>')
+
+    secs = []
+    for k in KIND_ORDER:
+        block = by_kind.get(k)
+        if not block:
+            continue
+        rows = []
+        for y, e, a in block:
+            disp, mach, _ = fmt_date(e["date"])
+            cites = [f'<a href="y/{h(y["id"])}.html#{a}">In the record</a>']
+            if e.get("src"):
+                cites.append(src_link(e["src"]))
+            if e.get("src", {}).get("file"):
+                cites.append(f'<a href="docs/{h(e["src"]["file"])}">Read it here</a>')
+            short, _lab = dec_of(y["id"])
+            rows.append(
+                f'<article class="pg" data-d="{h(short or "")}">'
+                f'<div class="when"><time datetime="{mach}">{h(disp)}</time>'
+                f'<span class="yr"><a href="y/{h(y["id"])}.html">{h(y["id"])}</a></span></div>'
+                f'<div><h3>{h(e["title"])}</h3><p>{h(e["body"])}</p>{money_line(e)}'
+                f'<p class="cite">{"".join(cites)}</p></div></article>')
+        secs.append(
+            f'<section class="pgsec" id="k-{k}">'
+            f'<h2>{h(KIND_MANY[k])}<span class="n">{len(block)}</span></h2>'
+            f'<p class="blurb">{h(KIND_BLURB[k])}</p>{"".join(rows)}</section>')
+
+    body = f"""
+<header class="head"><div class="wrap">
+ <p class="kicker">1966 to 2026</p>
+ <h1>What SGA put on</h1>
+ <p class="scope">{lede}</p>
+ <div class="pgheads">{heads}</div>
+</div></header>
+<div class="wrap">
+<div class="tools">
+ <label class="field" for="pf"><span class="lab">Search what they put on</span>
+ <input id="pf" type="search" autocomplete="off" spellcheck="false"
+  placeholder="a performer, a speaker, a service"></label>
+ <div class="facets pgfilter" role="group" aria-label="Which decade">{"".join(chips)}</div>
+ <p class="readout" id="pr" role="status"></p>
+ <button class="clearq" id="pclear" type="button" hidden>Clear the search</button>
+ <p class="tlkey">Every item here is also an entry in its own year and in the
+ <a href="history.html?show=p">complete timeline</a>. Nothing on this page is stored
+ twice: it is the same record, sorted by what kind of thing it was. Where a source is
+ an advance notice rather than a review, the entry says so, because the archive can
+ prove what was booked more often than it can prove how the night went.</p>
+</div>
+<div class="body">
+{"".join(secs)}
+<p class="pgnone">This page is built from what the archive has so far. Years thin
+here are years whose <cite>Herald</cite> issues have not yet been worked through, not
+years when student government put nothing on.</p>
+</div></div>{PROGRAMS_JS}"""
+    desc = (f"Every concert, lecture, film, festival, tradition and service the Western "
+            f"Kentucky University Student Government Association put on, {span}: {n} "
+            f"dated and sourced entries.")
+    return shell("What SGA put on · SGA 60", desc, body,
+                 PROGRAMS_CSS, depth=0, current="events.html")
+
+
 def apply_photo_overlay(ys):
     """Merge data/photos.json onto the years. Photographs live in their own file so
     the photograph agent and the decade agents never edit the same file."""
@@ -5271,6 +5617,7 @@ def main():
             f.unlink()
     (SITE / "story.html").write_text(render_story(ys))
     (SITE / "patterns.html").write_text(render_patterns(ys))
+    (SITE / "events.html").write_text(render_programs(ys))
     (SITE / "legislation.html").write_text(render_legislation(leg))
     (SITE / "corrections.html").write_text(render_corrections(ys))
 
