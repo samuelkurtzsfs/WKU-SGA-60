@@ -3074,8 +3074,9 @@ year pages themselves.</p>
 
 <p class="storyfoot">Every fact above is drawn from a dated, sourced entry on this site. The
 <a href="history.html">complete timeline</a> holds all __NEV__ of them in order; the
-<a href="index.html">board</a> holds every year; the <a href="sources.html">sources page</a>
-sets out what each collection covers and where it fails.</p>
+<a href="index.html">board</a> holds every year; <a href="events.html">what SGA put on</a>
+gathers the concerts, lectures and services separately; the <a href="sources.html">sources
+page</a> sets out what each collection covers and where it fails.</p>
 
 </div>
 </section>
@@ -3096,6 +3097,7 @@ def render_story(ys):
 def render_about(ys, meta, n_leg, n_herald, n_docs, n_port, n_gal):
     n_ev = sum(len(y["events"]) for y in ys)
     n_lead = sum(len(y["leaders"]) for y in ys)
+    n_prog = sum(1 for y in ys for e in y["events"] if is_program(e))
     thick = sorted(ys, key=lambda y: -len(y["events"]))[:1][0]
     body = f"""
 <header class="head"><div class="wrap">
@@ -3148,6 +3150,13 @@ their terms as far as the record supports them. Entries cover the organization, 
 budgets, appointments, committee work, resolutions that passed and resolutions that failed,
 and the fights with the administration and the <cite>Herald</cite>. Campus events that shaped
 a year are included where they bear on student government and are marked as such.</p>
+<p>{n_prog} of those entries record something student government put on for the campus
+rather than something it debated: the concerts it booked, the lecturers it paid, the films it
+screened, the festivals and annual traditions it ran, and the standing services it kept going.
+Those entries carry a kind, which is what lets the same record appear on
+<a href="events.html">its own page</a> grouped by what sort of thing it was, in a summary on
+each president's year page, and as a filter on the timeline, without being stored more than
+once.</p>
 <p>Alongside the entries the site holds {n_port} portraits, {n_gal} year photographs,
 {n_docs} archival documents mirrored as files, {n_leg} pieces of legislation, and
 {n_herald} further lines from the <cite>Herald</cite> index that have been recorded but not
@@ -5110,7 +5119,8 @@ PATTERNS_BODY = """
  every one of them drawn from a sourced entry on this site and checked against the record.
  Each pattern gives its span, a spread of instances across different decades, and what changed
  between the first and the last. Where the record is thin, that is said rather than smoothed
- over. The <a href="story.html">story</a> reads the same archive in order.</p>
+ over. The <a href="story.html">story</a> reads the same archive in order, and
+ <a href="events.html">what SGA put on</a> reads it by what the organization staged.</p>
 </div></header>
 
 <div class="wrap">
