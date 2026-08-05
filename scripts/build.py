@@ -3252,6 +3252,22 @@ gives it: a day where the source gives a day, a month where it gives a month, a 
 gives only a year.</p>
 </div>
 
+<h2 class="sec">Who counts as a president</h2>
+<div class="prose">
+<p>Anyone who held the office, for any length of time, by any route. Elected in April and served
+the year; won a special election; succeeded to it as vice president when the president resigned;
+or filled it in an acting capacity. Duration is not a qualification. Someone who held the office
+for a week held it, and is counted and named here with everyone else.</p>
+<p>This is not how the office has usually been recorded. The plaque in the Chambers gives one name
+to each year, and so does every later list, including the history page on the university's own
+site. A list written afterwards cannot show a year in which the presidency changed hands, so the
+people who finished those years quietly drop out of the count. Each of them is on this site,
+whether or not any plate carries their name.</p>
+<p>A person is counted once, at the first time they held the office, however many terms they serve
+afterwards. Two plates are not two presidents when the surname changed in between, which has
+happened at least four times here.</p>
+</div>
+
 <h2 class="sec">The plaque, and why it is not trusted</h2>
 <div class="prose">
 <p>The names come first from the plaque in the SGA Chambers. People who served have reported

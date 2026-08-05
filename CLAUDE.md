@@ -12,6 +12,30 @@ Accuracy beats completeness. An empty year is fine. A wrong year is not.
 Names come from the plaque in the SGA Chambers. **People who served have reported their year on it
 is wrong.** Treat every `plaque_term` as a claim to verify, not a fact to copy.
 
+The same goes for **every later list**: the plaque, the history page on wku.edu/sga, the officer
+lists on the old SGA website, any banquet programme. These were all compiled after the fact, they
+all carry one name per year, and they all drop the people who held the office for part of a year.
+A contemporaneous source beats a later list every time. In order: SGA's own minutes recording a
+resignation or a swearing-in, Board of Regents minutes naming who sat in the student seat, a
+*Herald* report from the week it happened. Only then a list.
+
+## Who counts as a student body president
+**Anyone who held the office, for any length of time, by any route.** Elected in April and served
+the year; won a special election; succeeded to it as vice president when the president left; or
+filled it in an acting capacity. **Duration is not a qualification. A week counts.** Someone who
+served eleven days between a resignation and a successor being sworn in was the student body
+president, and belongs on the list with everyone else.
+
+A person is counted **once**, at the first time they held the office, however many terms they serve
+later. Two plates for one person is not two presidents: check for a changed surname before adding
+anyone. Known cases in this record are Christy Vogt / Christy Mollozzi, Janet "Nicki" Seay / Nicki
+Taylor, Amanda Coates / Amanda Lich, and James Hargroave / Jamie Hargrove.
+
+Because SGA elects in April and the winner serves the next academic year, the test for a missing
+president is simple: find who the sources name as president in the **fall**, then again late in the
+following **spring**. If they differ, someone is missing. Mark an acting officeholder with
+`"acting": true`, and record whether they also held the Board seat with `"also_regent"`.
+
 ## Settled facts — do not re-litigate these
 - The student regent was a **separately elected office** from April 1968. That is why plaque years
   carry two names. William Menser was the first, April 1968. The seat was non-voting until at least 1972.
