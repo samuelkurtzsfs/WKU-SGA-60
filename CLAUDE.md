@@ -265,6 +265,18 @@ editorial voice describing the history that changed.
 - **Living people.** Some entries touch resignations, investigations and conduct cases. Report only
   what a cited source reported, name no accusers who were not named publicly, and state outcomes
   where they exist. If a source only covers an allegation and never a resolution, say so.
+- **Do not write an event up twice.** Successive passes have described the same event in
+  different words, and matching whole titles never catches it. Before you add to a year, read
+  the entries already in it. After any merge run `python3 scripts/check_duplicates.py`, which
+  compares the words in titles and prints close pairs. It only reports; you judge. Same-day
+  legislative business is genuinely several events, so three bills introduced on 1 September
+  stay three entries. When two entries really are one event, combine them so that no sourced
+  fact from either is lost, and cite both sources if they differ.
+- **An advance notice is not a report.** The digitised *Herald* index is full of items like
+  "Mini-Concert Set Thursday", printed before the event. It proves what was booked, never how
+  the night went. Do not write a crowd size, a review or a financial result out of one. The
+  following week's issue often carries the actual report, and the *Talisman* full texts on
+  archive.org are readable as plain text and are not rate limited.
 - Run `python3 scripts/build.py` before finishing. Report what you could not confirm.
 
 ## Scope per session
