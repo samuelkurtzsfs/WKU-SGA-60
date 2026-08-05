@@ -573,9 +573,17 @@ def held_both(l, y):
     has never gone away. In most years the elected president also holds it, so a
     lone name on the plaque means one person in both offices. The years that
     carry two names are the exceptions, when someone other than the president
-    held the seat - usually because the president was ineligible."""
-    return (l["role"] == "president" and len(y["leaders"]) == 1
-            and y["start"] >= REGENT_SEAT_CREATED)
+    held the seat - usually because the president was ineligible.
+
+    A year in which the presidency changed hands has two presidents, and then
+    the count of names cannot answer the question: one of them may have held the
+    seat, or neither, or both in turn. Where a source settles it, the leader
+    carries `also_regent` and that is used instead of the guess."""
+    if l["role"] != "president":
+        return False
+    if "also_regent" in l:
+        return bool(l["also_regent"])
+    return len(y["leaders"]) == 1 and y["start"] >= REGENT_SEAT_CREATED
 
 
 # How many people have held each office, and in what order. A person is counted
@@ -608,6 +616,9 @@ def role_word(l, y=None):
         return "student regent"
     if l["role"] == "unresolved":
         return "role unresolved"
+    # someone who filled the office without being elected to it says so
+    if l.get("acting"):
+        return "acting president"
     if y is not None and held_both(l, y):
         return "president and student regent"
     return "president"
@@ -3177,12 +3188,24 @@ language altogether. Today
 164.321(1)(j)</a>) the student member must be the elected student body president and a
 full-time student, and nothing more; the residency conditions that remain in that section
 apply only to the governor's appointees.</p>
-<p>So a single name on the plaque after 1968 means one person holding both offices. Two names
-mean the offices were split that year, and there are six such years in this record: 1968-69
-and 1969-70 (Paul Gerard), 1972-73 (Michael Fiorella), 1974-75 (Gregory McKinney), 1982-83
+<p>So a single name on the plaque after 1968 means one person holding both offices. More than one
+name can mean either of two different things, and the difference matters. In six years the
+offices were genuinely split, with someone other than the president on the Board: 1968-69 and
+1969-70 (Paul Gerard), 1972-73 (Michael Fiorella), 1974-75 (Gregory McKinney), 1982-83
 (Sandra Norfleet), and 2008-09, when Johnathon Boles resigned the presidency in January 2009,
 Kayla Shelton succeeded him without taking the Board seat, and Reagan Gilley won it in a
 special election the following month.</p>
+
+<p>In the other years the presidency simply changed hands partway through, and the plaque
+records the change poorly or not at all. Four presidents have left office early: Marcell Bush
+in January 1982, Nick Todd in July 2004, Rob Watkins in November 2006 and Johnathon Boles in
+January 2009. Each was followed by someone who finished the year, and this archive counts
+those people as presidents, because they held the office, however briefly. The wall does not.
+Nick Todd, elected in March 2004 and resigned by July, has no plate at all; Katie
+Dawson, who filled the office through that summer, has one only for the year she was later
+elected to; and Jeanne Johnson, who took over in December 2006, is plated only for the full
+term she won afterwards. No president in this record has ever been removed by impeachment,
+though the attempt has been made more than once.</p>
 </div>
 
 <h2 class="sec">Scope and content</h2>

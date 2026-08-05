@@ -12142,6 +12142,62 @@
    "org": "Student Government Association",
    "leaders": [
     {
+     "name": "Nick Todd",
+     "plaque_term": "",
+     "role": "president",
+     "year_confidence": "confirmed",
+     "name_verified": true,
+     "missing_from_plaque": true,
+     "current": false,
+     "also_regent": false,
+     "note": "Elected SGA president in March 2004 with 772 of 1,232 votes and sworn in on 27 April, then resigned in July, citing personal conflicts within the association, after an investigation into money missing from an SGA Dining Dollars account. Executive vice president Katie Dawson acted as president until a special election in September, which Patti Johnson won unopposed. No plate on the Chambers wall carries his name; the 2004-05 plate reads Patti Johnson. Whether Todd ever took the student regent seat is not settled in the sources found so far.",
+     "sources": [
+      {
+       "label": "Herald, 24 Aug 2004 - Todd cites personal conflicts in resignation",
+       "url": "https://wkuherald.com/55173/news/todd-cites-personal-conflicts-in-resignation/"
+      },
+      {
+       "label": "Herald, 20 Apr 2004 - SGA president-elect under investigation (Wayback)",
+       "url": "https://web.archive.org/web/20210730065202/https://wkuherald.com/55298/news/sga-president-elect-under-investigation/"
+      },
+      {
+       "label": "Herald, 26 Aug 2004 - Report recommends reimbursement of funds",
+       "url": "https://wkuherald.com/55185/news/report-recommends-reimbursement-of-funds/"
+      }
+     ],
+     "profile": [
+      "Nick Todd, a Henderson senior and SGA's outgoing vice president of finance, won the presidency in March 2004 with 772 of the 1,232 votes cast. Days before the new officers were sworn in on 27 April, the judicial council found $611 missing from the SGA Aramark Dining Dollars account, which had opened the year with $5,000. A senator drafted articles of impeachment against the finance post Todd was about to leave, and the council ruled a two-week process could not finish before he left it anyway. Only Todd, outgoing president John Bradley and the adviser held cards to the account.",
+      "He submitted his resignation in July, citing personal conflicts within the association. In May the university's internal auditor had reported more than $800 of questionable purchases from the account between August 2003 and May 2004, mostly small buys at campus restaurants with no receipts, and recommended he reimburse the money along with $71 charged on the SGA purchasing card after a spring break car rental. Campus police determined no police action was necessary. In September the dean of Student Life said Todd had been sanctioned by judicial affairs in July, disputing Todd's public account that losing the card was the only action taken against him.",
+      "Executive vice president Katie Dawson acted as president until the special election of 14 and 15 September. Patti Johnson, the previous year's executive vice president, was the only student to come forward for the office, saying she ran because of the turmoil within the organization, and was sworn in on 23 September. The Herald noted at the time that a re-election for SGA president is rare."
+     ]
+    },
+    {
+     "name": "Katie Dawson",
+     "plaque_term": "",
+     "role": "president",
+     "year_confidence": "confirmed",
+     "name_verified": true,
+     "missing_from_plaque": true,
+     "current": false,
+     "acting": true,
+     "also_regent": false,
+     "note": "Filled the presidency through the summer of 2004. Dawson had run as Nick Todd's running mate in the March 2004 election and was executive vice president when he resigned in July; she acted as president until the special election of 14 and 15 September, which Patti Johnson won unopposed. She was elected president in her own right the following spring and is on the Chambers wall for 2005-06 only, so the plaque does not record this stretch. The student regent seat did not pass to her.",
+     "sources": [
+      {
+       "label": "Herald, 24 Aug 2004 - Todd cites personal conflicts in resignation",
+       "url": "https://wkuherald.com/55173/news/todd-cites-personal-conflicts-in-resignation/"
+      },
+      {
+       "label": "Herald, 2 Sep 2004 - SGA preparing for September elections",
+       "url": "https://wkuherald.com/55159/news/sga-preparing-for-september-elections/"
+      }
+     ],
+     "profile": [
+      "Katie Dawson held the SGA presidency for about two months in the summer of 2004 without having been elected to it. She had come up through the cabinet as Nick Todd's running mate in the March election and was his executive vice president when he resigned in July amid the Dining Dollars investigation. She acted in the office until students voted in a special election that September.",
+      "She was elected president in her own right for 2005-06, and the Chambers wall carries her for that year alone."
+     ]
+    },
+    {
      "name": "Patti Johnson",
      "plaque_term": "2004-05",
      "role": "president",
@@ -12182,7 +12238,8 @@
       "Johnson received 1,291 votes in the two-day uncontested election and was sworn in as president at SGA's fall reception on Sept. 23, 2004, one week after her election. She said committees had been formed and members had begun proposing legislation, and she looked forward to being sworn in as student regent at the Oct. 29 Board of Regents meeting, declaring it was \"back to business.\" She served through the year until Katie Dawson was elected to succeed her in the March 2005 spring election.",
       "Johnson served as the Board of Regents' student member from August 2004 to July 2005, a term confirmed by the resolution of appreciation the board read into its July 22, 2005 minutes when Katie Dawson, the executive vice president who had served alongside her all year, was sworn in to replace her. Dawson had come up through the cabinet as Todd's running mate in the original March 2004 election and had acted as interim president during the summer vacancy before Johnson's win.",
       "Patti Johnson, a senior from Marion, had been active in SGA for over three years and served on committees including public relations and athletics before becoming executive vice president in 2003-04. She had not planned to run for president, but after Nick Todd's resignation she entered the September 2004 special election as the only candidate to show interest, saying she stayed on because of \"the turmoil within the organization\" and that she knew \"what it takes to get the job done.\""
-     ]
+     ],
+     "also_regent": true
     }
    ],
    "events": [
@@ -12659,6 +12716,41 @@
       "Robert \"Rob\" Watkins, a Bowling Green student, wrote the SGA constitution adopted in 2004 and was elected the first speaker of the senate under it on 15 April 2004, defeating Brittany Fausey 9 votes to 8 in a result immediately contested over what quorum the new constitution required; the vote was upheld later that month.",
       "Watkins won the SGA presidency in the 13 April 2006 online election, defeating Berea junior Kara Ratliff after more than a week courting TopNet voters, with results announced at a crowded Revolution 91.7. He took office for 2006-07 alongside Administrative Vice President Amanda Allen, who by October was tightening the budget after the prior administration left roughly $24,000 unspent.",
       "Watkins resigned as SGA president and student regent on 28 November 2006, with the resignation read into the senate's own minutes at that day's regularly scheduled Tuesday meeting, after senators had aired concerns about him at an unannounced 10 p.m. meeting the evening before. (A Herald account this site had followed gave the date as 30 November; the primary senate minutes are treated as authoritative here.) A Herald editorial the same week was headlined \"SGA actions an embarrassment to Western.\" The resignation left students without a voting voice on the Board of Regents for at least a month and put junior Jeanne Johnson, already serving as his executive vice president since the 5 September season-opening meeting, in as a fill-in leader for the rest of the term, formally sworn in as president at the 5 December Winter Banquet."
+     ],
+     "also_regent": true
+    },
+    {
+     "name": "Jeanne Johnson",
+     "plaque_term": "",
+     "role": "president",
+     "year_confidence": "confirmed",
+     "name_verified": true,
+     "missing_from_plaque": true,
+     "current": false,
+     "also_regent": true,
+     "note": "Succeeded to the presidency partway through 2006-07. SGA's senate minutes record Rob Watkins's resignation read into the meeting of 28 November 2006 and Johnson sworn in as president at the Winter Banquet on 5 December, and she then won the special election for the vacant student regent seat in February 2007. The Chambers wall carries her only for 2007-08, the full term she was elected to in her own right, so the plaque understates her service by about five months.",
+     "sources": [
+      {
+       "label": "SGA Senate minutes, 28 Nov 2006 (TopSCHOLAR)",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717"
+      },
+      {
+       "label": "SGA Senate minutes, 5 Dec 2006 (TopSCHOLAR)",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/715"
+      },
+      {
+       "label": "Herald front page, 3 Feb 2007 (Wayback)",
+       "url": "http://web.archive.org/web/20070203063949/http://wkuherald.com/"
+      },
+      {
+       "label": "Daily News, 27 Jan 2007 - Board OKs 7.8 percent tuition hike at WKU",
+       "url": "https://bgdailynews.com/2007/01/27/board-oks-7-8-percent-tuition-hike-at-wku/"
+      }
+     ],
+     "profile": [
+      "Jeanne Johnson was executive vice president when Rob Watkins resigned the presidency and the student regent seat in November 2006. The senate minutes for 28 November record his resignation being read to the chamber and senators being told she would be sworn in at the Winter Banquet on 5 December; the minutes of that meeting list the executive vice presidency as vacant because she had moved up.",
+      "The regent seat did not pass with the presidency, and Western went about two months without a student on its governing board. At the Board of Regents meeting of 26 January 2007 she spoke against the size of a 7.8 per cent tuition increase for online and distance learners without holding a vote, saying tuition increases were inevitable but that distance learners should not carry the burden. She won the special election for the seat the following week with 688 votes, 41 per cent of those cast.",
+      "She was elected to a full term in her own right and sworn in as president and student regent at the SGA banquet on 1 May 2007, where she also received the Dero Downing Award."
      ]
     }
    ],
@@ -13205,7 +13297,8 @@
       "Johnathon Boles ran for SGA president in spring 2008 on the \"Red Towel Party\" ticket, a slate that also carried Theodore Harden, Reagan Gilley, Skylar Johnson, Kayla Shelton and Kevin Smiley as candidates for other executive and senate offices. After Boles's ticket won, Skylar Jordan filed a complaint against the Red Towel Party; the SGA council took no action on it on 22 April 2008, and the result stood. Boles, a junior from Elizabethtown, served as SGA president and student regent for 2008-09. In November 2008, Gov. Steve Beshear appointed him and fellow SGA member Kevin Smiley to the student committee of the governor's College Access Work Group on college affordability, and Boles traveled to Frankfort for its first meeting, where he raised the burden of textbook costs. \"I'm honored the governor chose me to represent WKU,\" he said.",
       "In December 2008, Boles led SGA through its first mid-year budget cut, after a state shortfall required the university to trim about 4 percent. He and Administrative Vice President Reagan Gilley cut $4,100 from SGA's $110,000 budget while protecting scholarships and Provide-A-Ride, and Boles addressed the senate about the cuts, saying he would keep fighting for the affordability of higher education. He also worked to arrange charter buses to a Feb. 3 rally in Frankfort against cuts to higher education.",
       "Boles resigned on Jan. 30, 2009, for health reasons, midway through his term. Executive Vice President Kayla Shelton took his place as president but not as student regent, and the student body went 26 days without a regent until Reagan Gilley won a special election on Feb. 25. Gilley said he planned to contact Boles the day after his win to get up to date on Board of Regents business."
-     ]
+     ],
+     "also_regent": true
     },
     {
      "name": "Kayla Shelton",
@@ -13244,7 +13337,8 @@
       "Shelton presided over the senate through the spring, including a Feb. 24 meeting where senators debated and rejected, 13 votes to 9, a bill to cover an extra $82.27 for water bottles SGA had earlier agreed to fund as prizes for a Housing and Residence Life energy-saving contest. Shelton said she thought it was great that the senate debated something it felt passionate about rather than casting \"just a general yes or no.\"",
       "Shelton did not continue as president into 2009-10; Kevin Smiley won the regular spring election for that term on 16 April 2009.",
       "Kayla Shelton, who had been executive vice president, became SGA president after Johnathon Boles resigned, serving out the rest of the 2008-09 year. She inherited a dispute over whether to hold a special election for the vacant student regent seat, and when the Judicial Council voted 2-1 in February to hold one despite objections from other executives, she backed the decision. \"That's what they decided, so I support it,\" Shelton said, adding that her main focus remained serving the student body."
-     ]
+     ],
+     "also_regent": false
     },
     {
      "name": "Reagan Gilley",
