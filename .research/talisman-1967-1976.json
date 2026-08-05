@@ -1,0 +1,298 @@
+[
+  {
+    "year": "1966-67",
+    "yearbook": "1967 Talisman",
+    "president_named": null,
+    "officers": [],
+    "quote": null,
+    "changed_midyear": false,
+    "new_people": [],
+    "confidence": "unknown",
+    "note": "Not checkable from this source. The 1967 Talisman is not on archive.org. An archive.org search of every Talisman item held there returns only 1943, 1946, 1947, 1963, 1964, 1965, 1971-1981, 1986 and 1987; the 1967 through 1970 volumes are absent, so nothing was read for this year. The 1971 Talisman does say Associated Students was 'in its fifth year of operation' in 1970-71, which is consistent with a 1966-67 founding, but it names no 1966-67 officers."
+  },
+  {
+    "year": "1967-68",
+    "yearbook": "1968 Talisman",
+    "president_named": null,
+    "officers": [],
+    "quote": null,
+    "changed_midyear": false,
+    "new_people": [],
+    "confidence": "unknown",
+    "note": "Not checkable from this source. The 1968 Talisman is not on archive.org (see 1966-67 note for the full list of what is held). years.json records William Menser as president 1967-68; nothing in the volumes that are on archive.org either confirms or contradicts that."
+  },
+  {
+    "year": "1968-69",
+    "yearbook": "1969 Talisman",
+    "president_named": null,
+    "officers": [],
+    "quote": null,
+    "changed_midyear": false,
+    "new_people": [],
+    "confidence": "unknown",
+    "note": "Not checkable from this source. The 1969 Talisman is not on archive.org, so the open Reed Morgan / Bill Straeffer question for this year could not be settled here. One sideways data point: the 1971 and 1972 Talismans both place a Reed Morgan on the university's own staff, as a staff assistant for Greek affairs alongside Mrs. Suzanne Chitwood and as a fraternity advisor. That is a staff role, not a student office, and it is not proof that this is the same Reed Morgan on the plaque. Do not merge the two without a source that links them."
+  },
+  {
+    "year": "1969-70",
+    "yearbook": "1970 Talisman",
+    "president_named": null,
+    "officers": [],
+    "quote": null,
+    "changed_midyear": false,
+    "new_people": [],
+    "confidence": "unknown",
+    "note": "Not checkable from this source. The 1970 Talisman is not on archive.org. years.json places Larry Zielke's term here on Herald evidence; the 1971 Talisman, which covers the following year, does not mention Zielke at all and gives no retrospective list of 1969-70 officers."
+  },
+  {
+    "year": "1970-71",
+    "yearbook": "1971 Talisman",
+    "president_named": "John Lyne",
+    "officers": [
+      "Doug Alexander, vice president",
+      "Brett Butler, treasurer",
+      "Carol Gray, secretary",
+      "Peggy Hundley, Joe Gerard, Glen Sweet, elected Executive Council members"
+    ],
+    "quote": "John Lyne will remember 1970-71 as a good school year",
+    "changed_midyear": false,
+    "new_people": [
+      {
+        "name": "Doug Alexander",
+        "role": "vice president",
+        "how": "Named as vice president in the Executive Council photograph caption in the Associated Students section of the 1971 Talisman.",
+        "note": "Alexander was vice president of Associated Students in 1970-71 under John Lyne. The 1971 Talisman caption lists the Executive Council as Brett Butler, treasurer; Carol Gray, secretary; John Lyne, president; Peggy Hundley; Joe Gerard; Glen Sweet; and Doug Alexander, vice president. The volume describes the Executive Council as the four executive officers plus three members elected from Congress.",
+        "src": {"label": "1971 Talisman, Associated Students, p. 67", "url": "https://archive.org/details/talisman1971west"}
+      },
+      {
+        "name": "Brett Butler",
+        "role": "treasurer",
+        "how": "Named as treasurer in the same Executive Council caption.",
+        "note": "Butler was treasurer of Associated Students in 1970-71. He appears only in the Executive Council photograph caption; the yearbook's signed essay by Lyne does not discuss individual officers.",
+        "src": {"label": "1971 Talisman, Associated Students, p. 67", "url": "https://archive.org/details/talisman1971west"}
+      },
+      {
+        "name": "Carol Gray",
+        "role": "secretary",
+        "how": "Named as secretary in the same Executive Council caption.",
+        "note": "Gray was secretary of Associated Students in 1970-71. As with Butler, the only appearance is the Executive Council photograph caption.",
+        "src": {"label": "1971 Talisman, Associated Students, p. 67", "url": "https://archive.org/details/talisman1971west"}
+      }
+    ],
+    "confidence": "confirmed",
+    "note": "Matches years.json. The volume carries a full-page profile headed 'JOHN LYNE: Associated Students' president' and a signed end-of-year essay closing '—John Lyne, president, Associated Students', so he held the office at both ends of the year. No resignation, acting or succession language anywhere in the volume. The essay describes Associated Students as being in its fifth year of operation and reports a year spent on a new constitution, a student judiciary, self-regulated dorm hours and an open speaker policy."
+  },
+  {
+    "year": "1971-72",
+    "yearbook": "1972 Talisman",
+    "president_named": "Linda Jones",
+    "officers": [
+      "Reginald Glass, vice president",
+      "Nancy Pape, secretary",
+      "Joe Glasser, treasurer"
+    ],
+    "quote": "Reginald Glass, vice president; Nancy Pape, secretary; Linda Jones, president; Joe Glasser, treasurer.",
+    "changed_midyear": false,
+    "new_people": [
+      {
+        "name": "Reginald Glass",
+        "role": "vice president",
+        "how": "Given his own profile page in the 1972 Talisman, headed as the first black vice president of Associated Students.",
+        "note": "Glass was vice president of Associated Students in 1971-72 and the yearbook calls him the first black vice president of the body and the first black student to hold any high student leadership position at Western. As vice president he assisted the president, sat on the Academic Council as one of two voting student members, and chaired the activities committee. He was a member of Alpha Phi Alpha, which received its national charter on 31 October 1971, and was named outstanding Black Greek. The 1974 Talisman records a later chapter: as ASG representative from the Graduate College he resigned in protest, having asked for better minority representation in student government and on the Academic Council.",
+        "src": {"label": "1972 Talisman, Associated Students", "url": "https://archive.org/details/talisman1972west"}
+      },
+      {
+        "name": "Nancy Pape",
+        "role": "secretary",
+        "how": "Named in the officers photograph caption in the Associated Students section.",
+        "note": "Pape was secretary of Associated Students in 1971-72 under Linda Jones. The volume notes the four A.S. officers attended conferences and meetings at national level during the year.",
+        "src": {"label": "1972 Talisman, Associated Students", "url": "https://archive.org/details/talisman1972west"}
+      },
+      {
+        "name": "Joe Glasser",
+        "role": "treasurer",
+        "how": "Named in the same officers photograph caption.",
+        "note": "Glasser was treasurer of Associated Students in 1971-72. A Jack Glasser is separately listed as junior class treasurer in the same volume; the yearbook treats them as two names and this archive should not merge them.",
+        "src": {"label": "1972 Talisman, Associated Students", "url": "https://archive.org/details/talisman1972west"}
+      }
+    ],
+    "confidence": "confirmed",
+    "note": "Matches years.json. Two separate passages carry her: a profile headed 'Being a female poses no problems for A.S. President' and a review page opening 'Last spring, with the election of Linda Jones as first female student government president'. No sign of a change of hands. One structural point worth recording: the yearbook says the A.S. president also sat as a student member of the Board of Regents, and a photograph caption refers to 'Linda Jones' responsibilities as student regent and Academic Council member'. years.json treats regent as a separately elected office throughout; in this year the yearbook has the president holding it."
+  },
+  {
+    "year": "1972-73",
+    "yearbook": "1973 Talisman",
+    "president_named": "Ed Jordan",
+    "officers": [
+      "Charles Boteler, administrative vice president",
+      "Mike Fiorella, activities vice president",
+      "Pat Newton, treasurer",
+      "Debby Clark, secretary",
+      "Don Carter, Judicial Council chair",
+      "Pat Long and Gary Whitfield, Legal Rights Committee",
+      "R.G. Meade and Fred Price, Rules and Elections Committee",
+      "Joe Cheak, Environmental Committee"
+    ],
+    "quote": "The Congress, led by President Ed Jordan, has been restructured by the new constitution",
+    "changed_midyear": false,
+    "new_people": [
+      {
+        "name": "Charles Boteler",
+        "role": "administrative vice president",
+        "how": "Named in the Associated Students section as one of the two vice presidents created by the new constitution.",
+        "note": "Boteler was administrative vice president in 1972-73, the first year the office existed in that form. The volume explains that the revised constitution split the vice presidency in two, one for administrative duties and one for activities, and that Boteler and Mike Fiorella held them respectively.",
+        "src": {"label": "1973 Talisman, Associated Students", "url": "https://archive.org/details/talisman1973west"}
+      },
+      {
+        "name": "Pat Newton",
+        "role": "treasurer",
+        "how": "Named in the officers paragraph of the Associated Students section.",
+        "note": "Newton was ASG treasurer in 1972-73. The same paragraph sets out the remade Congress: ten representatives at large, two from each academic college, the president and vice president of each class, and the ten Academic Council members and alternates.",
+        "src": {"label": "1973 Talisman, Associated Students", "url": "https://archive.org/details/talisman1973west"}
+      },
+      {
+        "name": "Debby Clark",
+        "role": "secretary",
+        "how": "Named in the same officers paragraph.",
+        "note": "Clark was ASG secretary in 1972-73, the year the body took the name Associated Student Government in place of the Office of Associated Students.",
+        "src": {"label": "1973 Talisman, Associated Students", "url": "https://archive.org/details/talisman1973west"}
+      },
+      {
+        "name": "Don Carter",
+        "role": "chair, Judicial Council",
+        "how": "Named as leading the Judicial Council in the Associated Students section.",
+        "note": "Carter led the ten-member Judicial Council in 1972-73, which heard student appeals on parking tickets, dorm campusing and election violations and served as the deciding court for campus rule violations.",
+        "src": {"label": "1973 Talisman, Associated Students", "url": "https://archive.org/details/talisman1973west"}
+      }
+    ],
+    "confidence": "confirmed",
+    "note": "Matches years.json on the president. One correction to flag: years.json carries Michael Fiorella for this year as regent only, but the 1973 Talisman shows he held both jobs at once. The Associated Students section names him activities vice president and says the Activity Committee was headed by 'Vice-President Mike Fiorella', while the Board of Regents section lists him among three new regents and says 'Fiorella was elected student representative by the student body'. The same Board of Regents page is headed 'Student and teacher given Regent vote' and reports that voting privileges were extended to the faculty and student regents that year, which dates the end of the non-voting seat to 1972-73. Fiorella had been sophomore class president in 1971-72 per the 1972 Talisman. Ed Jordan had been junior class president in 1971-72 in the same volume. A photograph caption says Jordan 'continues to victory in the most widely disputed election Western has ever known'. No change of hands in the office."
+  },
+  {
+    "year": "1973-74",
+    "yearbook": "1974 Talisman",
+    "president_named": "Steve Yater",
+    "officers": [
+      "Glenn Jackson, administrative vice president",
+      "Thomas LaCivita, activities vice president",
+      "Pam Stewart, secretary",
+      "Lee Goodpaster, treasurer"
+    ],
+    "quote": "Members of this branch include: Steve Yater, president; Glenn Jackson, administrative vice president",
+    "changed_midyear": false,
+    "new_people": [
+      {
+        "name": "Glenn Jackson",
+        "role": "administrative vice president",
+        "how": "Named in the executive branch list and quoted at length in the ASG reorganization story.",
+        "note": "Jackson was administrative vice president in 1973-74 and the yearbook's spokesman for the reorganization bill that abolished ASG's committee system and folded all programs into two areas, student affairs and academic affairs. He said the old system was too rigid and that ideas often fitted no committee, leaving some with nothing to do and others with too much. He also co-ordinated the free university, and cited lack of interest and difficulty finding teachers as its main problem.",
+        "src": {"label": "1974 Talisman, Associated Student Government, p. 56", "url": "https://archive.org/details/talisman1974west"}
+      },
+      {
+        "name": "Thomas LaCivita",
+        "role": "activities vice president",
+        "how": "Named in the executive branch list and throughout the entertainment coverage; he held the same office again the following year.",
+        "note": "LaCivita was activities vice president in 1973-74 and again in 1974-75, making him one of the few officers to serve two consecutive years in this decade. The 1974 volume says he was elected in one of the closest races and carries a Herald reviewer's criticism of the concert programme; the 1975 volume has President Jeff Consolo crediting him with a more diversified entertainment series on a $42,000 budget.",
+        "src": {"label": "1974 Talisman, Associated Student Government, p. 56", "url": "https://archive.org/details/talisman1974west"}
+      },
+      {
+        "name": "Pam Stewart",
+        "role": "secretary",
+        "how": "Named in the executive branch list and in a meeting photograph caption.",
+        "note": "Stewart was ASG secretary in 1973-74. She appears in the section's officer list and in a caption of officers conducting a meeting with Yater, LaCivita, Jackson and Goodpaster.",
+        "src": {"label": "1974 Talisman, Associated Student Government, p. 56", "url": "https://archive.org/details/talisman1974west"}
+      },
+      {
+        "name": "Lee Goodpaster",
+        "role": "treasurer",
+        "how": "Named in the executive branch list; the volume elsewhere records her election.",
+        "note": "Goodpaster was ASG treasurer in 1973-74 and appears in the same officer list and meeting caption. The yearbook mentions her separately in its elections and homecoming coverage.",
+        "src": {"label": "1974 Talisman, Associated Student Government, p. 56", "url": "https://archive.org/details/talisman1974west"}
+      }
+    ],
+    "confidence": "confirmed",
+    "note": "Matches years.json. Yater is named as president in the executive branch list, in the reorganization story and in the Board of Regents section. As in 1971-72, the president also held the student seat on the board: a Board of Regents caption reads 'Sworn in as student Regent was ASG President Steve Yater, a senior from Owensboro', with Miss Georgia Bates administering the oath, and the housing story calls him 'Student regent and ASG president'. No succession language. The volume records one resignation in ASG that year, but from Congress, not the presidency: Reginald Glass resigned as representative from the Graduate College in protest at minority representation."
+  },
+  {
+    "year": "1974-75",
+    "yearbook": "1975 Talisman",
+    "president_named": "Jeff Consolo",
+    "officers": [
+      "Tom LaCivita, activities vice president",
+      "Ricky Johnson, treasurer",
+      "Cindy Kirkpatrick, secretary",
+      "Greg McKinney, student regent"
+    ],
+    "quote": "Jeff Consolo, president of the Associated Student Government, said the ASG accomplished more",
+    "changed_midyear": false,
+    "new_people": [
+      {
+        "name": "Ricky Johnson",
+        "role": "treasurer",
+        "how": "Named as treasurer in a photograph caption in the Associated Student Government section.",
+        "note": "Johnson was ASG treasurer in 1974-75. The caption shows him discussing the signing of War and the Charlie Daniels Band with activities vice president Tom LaCivita. A Rickie Johnson appears on the ASG Congress attendance roll printed in the 1976 Talisman, so he may have stayed in Congress the following year; the spelling differs between the two volumes and is not settled.",
+        "src": {"label": "1975 Talisman, Associated Student Government", "url": "https://archive.org/details/talisman1975west"}
+      },
+      {
+        "name": "Cindy Kirkpatrick",
+        "role": "secretary",
+        "how": "Named as secretary in a photograph caption in the Associated Student Government section.",
+        "note": "Kirkpatrick was ASG secretary in 1974-75, shown checking meeting notes while Consolo conferred with Panhellenic Council president Donna Filburn. She also appears in the 1974 Talisman talking with LaCivita and Vice President for Academic Affairs Dr. John Minton.",
+        "src": {"label": "1975 Talisman, Associated Student Government", "url": "https://archive.org/details/talisman1975west"}
+      },
+      {
+        "name": "Marc Levy",
+        "role": "ASG Congress member",
+        "how": "Quoted in the Associated Student Government section from his letter to the Herald of 4 October 1974 attacking Congress attendance.",
+        "note": "Levy was an ASG Congress member in 1974-75 and again in 1975-76. In a letter to the College Heights Herald he wrote that he had hoped the year's meetings would differ from the previous year's invisible congress, and reported a good number absent from the 1 October 1974 meeting, at which three of four committee reports were given by the president himself. In 1975-76 he brought charges against ASG treasurer David Payne over spending before budget approval, appeared twice before the Judicial Council, and lost, the council ruling in Payne's favour.",
+        "src": {"label": "1975 Talisman, Associated Student Government", "url": "https://archive.org/details/talisman1975west"}
+      }
+    ],
+    "confidence": "confirmed",
+    "note": "Matches years.json on both names. Consolo is named president in the ASG section and in a Who's Who profile; Greg McKinney is profiled separately as the first black student regent, elected after losing a bid for ASG representative-at-large by seven votes, and the volume's year-in-review line reads 'First black student regent elected'. So this is a year where president and regent were genuinely two people, unlike 1971-72, 1973-74 and 1975-76. No succession language in the volume."
+  },
+  {
+    "year": "1975-76",
+    "yearbook": "1976 Talisman",
+    "president_named": "Steve Henry",
+    "officers": [
+      "Christy Vogt, administrative vice president",
+      "Rick Kelley, activities vice president",
+      "David Payne, treasurer",
+      "Nancy Wilk, secretary"
+    ],
+    "quote": "said Steve Henry, president of Associated Student Government (ASG) and student regent",
+    "changed_midyear": false,
+    "new_people": [
+      {
+        "name": "Christy Vogt",
+        "role": "administrative vice president",
+        "how": "Named as administrative vice president in the ASG section and quoted on the executive officers' working relations.",
+        "note": "Vogt was ASG administrative vice president in 1975-76. She ran the book exchange ASG co-sponsored with Veterans on Campus from 12 to 26 January 1976, reporting that the two groups had covered expenses by 21 January on sales of over 600 books at a margin of 25 cents a book. She said the executive officers were closer than in any past administration she had witnessed.",
+        "src": {"label": "1976 Talisman, ASG", "url": "https://archive.org/details/talisman1976west"}
+      },
+      {
+        "name": "Rick Kelley",
+        "role": "activities vice president",
+        "how": "Named repeatedly in the entertainment and ASG sections as activities vice president.",
+        "note": "Kelley was ASG activities vice president in 1975-76. He introduced a bill in October creating a student activities committee, whose members were chosen in December from open applications and which ran three subcommittees for concerts, lectures and special events and publicity. The volume credits the year's concerts with turning a profit of around $4,300 for ASG. His surname is printed both Kelley and Kelly in the same volume; the spelling is not settled.",
+        "src": {"label": "1976 Talisman, ASG", "url": "https://archive.org/details/talisman1976west"}
+      },
+      {
+        "name": "David Payne",
+        "role": "treasurer",
+        "how": "Named as ASG treasurer in a photograph caption reporting the charges Congress member Marc Levy brought against him.",
+        "note": "Payne was ASG treasurer in 1975-76. Congress member Marc Levy brought charges against him for spending before budget approval had been given, and Levy appeared twice before the Judicial Council. Payne argued the constitution provided for such spending and the council ruled in his favour. Note for the editor: years.json carries a David Payne under 1982-83 as an unresolved name. These may or may not be the same person and this archive should not merge them without a source that links them.",
+        "src": {"label": "1976 Talisman, ASG", "url": "https://archive.org/details/talisman1976west"}
+      },
+      {
+        "name": "Nancy Wilk",
+        "role": "secretary",
+        "how": "Named as ASG secretary in the pull-quote beside the printed Congress attendance roll.",
+        "note": "Wilk was ASG secretary in 1975-76 and kept the attendance roll the yearbook printed in full, effective 6 April 1976. She explained the rule: a warning after four absences and automatic removal from Congress after two more. The printed roll names some fifty Congress members and marks Mitchell Deep as resigned.",
+        "src": {"label": "1976 Talisman, ASG", "url": "https://archive.org/details/talisman1976west"}
+      }
+    ],
+    "confidence": "confirmed",
+    "note": "Matches years.json. The ASG section is built around Henry's campaign platform point by point and he is described as president and student regent in the same sentence; the Board of Regents section lists him among the board and quotes him on a concert appeals committee. He is also on the Congress attendance roll dated 6 April 1976, so he was in office to the end of the year. No succession language. The only resignation printed is Mitchell Deep, a Congress member."
+  }
+]
