@@ -1,0 +1,390 @@
+[
+ {
+  "decision": "distinct",
+  "year": "1971-72",
+  "remove": [
+   "Kentucky Civil Liberties Union plans court action on behalf of Associated Students",
+   "Associated Students endorses the Kentucky Civil Liberties Union lawsuit"
+  ],
+  "why": "Two different Herald issues a month apart: 29 Feb reported the KCLU planning court action, 28 Mar reported Associated Students voting to endorse the suit."
+ },
+ {
+  "decision": "merge",
+  "year": "1977-78",
+  "remove": [
+   "Moore questions freshman candidates' campaign spending",
+   "'A$G?' - Moore questions freshman campaign spending"
+  ],
+  "entry": {
+   "date": "1977-10-25",
+   "title": "Moore questioned freshman campaign spending and the Herald answered him",
+   "body": "President Bob Moore publicly questioned how freshman class candidates were spending their campaign money, in a story the Herald headlined \"A$G?\". The paper answered the same week with an editorial arguing that Moore's comment was not good politics. Moore wrote back disputing the editorial.",
+   "src": {
+    "label": "Herald 53:18, 25 Oct 1977",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5464",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6467&context=dlsc_ua_records"
+   }
+  },
+  "why": "One story and its editorial fallout in Herald 53:18, written up twice from the same page; campus:true is carried over from B under the preserve rule, though this was SGA's own business and the editor may want it dropped."
+ },
+ {
+  "decision": "merge",
+  "year": "1981-82",
+  "remove": [
+   "ASG appoints a council to decide disputes",
+   "ASG sets up a council to settle its own disputes"
+  ],
+  "entry": {
+   "date": "1982-01-28",
+   "title": "ASG appointed a council to settle its internal disputes",
+   "body": "The Associated Student Government appointed a council to decide disputes inside the organization. The Herald report, by Kevin Francke, ran two weeks after his coverage of the resignation of ASG president Marcel Bush. The same issue reported that the regents bill, changing how the student regent was chosen, had passed the state House.",
+   "src": {
+    "label": "Herald 57:35, 28 Jan 1982",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2440",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3443&context=dlsc_ua_records"
+   }
+  },
+  "why": "Same date, same Herald issue and same action; the merged body keeps A's regents-bill note and B's reporter and Bush context."
+ },
+ {
+  "decision": "merge",
+  "year": "1986-87",
+  "remove": [
+   "Student government conference set for the weekend",
+   "ASG prepares to host the second statewide student government conference"
+  ],
+  "entry": {
+   "date": "1987-03-26",
+   "title": "ASG prepared to host the second statewide student government conference",
+   "body": "The Herald reported that ASG would host the second annual statewide student government conference from Friday 27 March through Sunday, at the American Plaza on Scottsville Road. President Tim Todd expected about 50 student leaders, against about 65 at the first conference, which ASG had also hosted, and put the cost of hosting at $400 to $500. Registration was $18 and the conference was open to all students. Saturday seminars covered leadership, communication and financial aid, with the Council on Higher Education flying in a financial aid consultant from Washington and sending its director, Gary S. Cox.",
+   "kind": "program",
+   "money": "$18 registration; $400 to $500 to host",
+   "src": {
+    "label": "Herald 62:48, 26 Mar 1987",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5916/",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6933&context=dlsc_ua_records"
+   }
+  },
+  "why": "A is a bare notice of the same weekend conference in the same issue that B reports in full; A's Friday-to-Sunday span matches B, since 26 March 1987 was a Thursday."
+ },
+ {
+  "decision": "distinct",
+  "year": "1991-92",
+  "remove": [
+   "ASG bill funds a \"President for a Day\" fundraiser",
+   "ASG bill funds renovation of its own chambers"
+  ],
+  "why": "Two separate bills introduced the same day, #91-09-F for a fundraiser and #91-03-F for chamber renovation, with different numbers, subjects and TopSCHOLAR records."
+ },
+ {
+  "decision": "merge",
+  "year": "1995-96",
+  "remove": [
+   "A new store on campus",
+   "A campus store proposal followed"
+  ],
+  "entry": {
+   "date": "1996-03-05",
+   "title": "SGA proposed a new store on campus",
+   "body": "SGA proposed a new store on campus, the Herald reported, as the association kept producing campus improvement ideas through the spring. A week earlier the paper had covered SGA's wish that the next university president be promoted from within.",
+   "src": {
+    "label": "Herald 71:44, 5 Mar 1996",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2972",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3974&context=dlsc_ua_records"
+   }
+  },
+  "why": "Identical claim, date and Herald issue, written twice; B's note about the previous week's coverage is the only extra fact and is kept."
+ },
+ {
+  "decision": "merge",
+  "year": "1999-00",
+  "remove": [
+   "Bill proposes an SGA Information Technology Director",
+   "SGA created an Information Technology Director"
+  ],
+  "entry": {
+   "date": "1999-09-15",
+   "title": "Bill 99-10-F sought to create an SGA Information Technology Director",
+   "body": "SGA took up Bill 99-10-F, to create the SGA position of Information Technology Director. The SGA records date the bill 15 September 1999 through 5 October 1999 and do not say whether it passed, so the archive does not show that the post was in fact filled. The same month produced a bill amending the constitution to include website guidelines.",
+   "src": {
+    "label": "SGA Bill 99-10-F, Information Technology Director",
+    "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/225/"
+   },
+   "src2": {
+    "label": "SGA Records: Bill 99-10-F, 15 Sep 1999",
+    "url": "https://digitalcommons.wku.edu/context/sga/article/2214/viewcontent/sga_bill_99_10_f.pdf"
+   }
+  },
+  "why": "Same bill, same date, two different citations, both kept; I opened the TopSCHOLAR record and it gives the bill's date range and abstract but no vote, so the proposed-versus-created contradiction is stated in the body rather than decided."
+ },
+ {
+  "decision": "merge",
+  "year": "2011-12",
+  "remove": [
+   "Fall senate election fills 11 seats with 977 votes cast",
+   "Fall senate election draws 977 voters for 11 seats"
+  ],
+  "entry": {
+   "date": "2011-09-23",
+   "title": "Fall senate election filled 11 seats with 977 votes cast",
+   "body": "SGA announced its fall senator election results just after midnight on Thursday, with 11 senators elected from a field of 20 candidates and 977 students voting. Those elected were Kelley Boothe, Hannah Garland, Corey Johnson, Elizabeth Wininger, Mallory Chaney, Mallory Treece, Kevin Asbery, Christopher Costa, Jordan Campbell, Nolan Miles and Ross Nowland. President Billy Stephens said he was happy with the turnout for a fall election and that he had got the contested race he wanted.",
+   "src": {
+    "label": "Herald, 23 Sep 2011",
+    "url": "https://wkuherald.com/50726/news/wku-students-elect-new-sga-senators/"
+   }
+  },
+  "why": "Same election, same article; B's full list of 11 names covers the three A named, and A's Stephens comment is kept."
+ },
+ {
+  "decision": "merge",
+  "year": "2011-12",
+  "remove": [
+   "SGA approves $50,026 spring budget after $54,000 fall spending",
+   "SGA approves $50,026 spring budget after $54,000 fall semester"
+  ],
+  "entry": {
+   "date": "2012-02-24",
+   "title": "SGA approved a $50,026 spring budget after spending $54,000 in the fall",
+   "body": "The senate approved a spring 2012 budget of $50,026, of which $43,476.17 remained. It was divided among operations, public relations, executive programming and senate programming, with $10,500 set aside for organizational aid, $12,000 for scholarships and $5,500 in stipends already spent. Chief of Staff Katie Stillwell told senators SGA had spent about $54,000 in the fall, $15,000 of it the retroactive Provide-A-Ride payment.",
+   "src": {
+    "label": "Herald, 24 Feb 2012",
+    "url": "https://wkuherald.com/48468/news/sga-approves-spring-2012-budget/"
+   }
+  },
+  "why": "Same meeting and article; the figures do not conflict, so the merged body carries A's organizational aid and scholarship lines alongside B's remaining balance and stipends."
+ },
+ {
+  "decision": "merge",
+  "year": "2012-13",
+  "remove": [
+   "SGA passed a resolution opposing the $150 Study Abroad application fee",
+   "SGA opposes the new $150 study abroad application fee"
+  ],
+  "entry": {
+   "date": "2013-03-19",
+   "title": "SGA passed a resolution opposing the $150 study abroad application fee",
+   "body": "The senate passed a resolution opposing a new $150 application fee for Study Abroad and Global Learning, due to begin with summer 2013 programs, arguing it could put program costs out of reach. Executive Vice President Keyana Boka said SGA took a formal stance because the fee had come up so suddenly, and the University Senate passed a similar resolution seeking to delay the fee until fall 2013. A separate amendment proposed by Dodds, to make SGA members ineligible for SGA-awarded study abroad scholarships, failed. Dodds said 11 of the 125 such scholarships and grants awarded that year had gone to SGA members, which he called a conflict of interest.",
+   "src": {
+    "label": "Herald, 19 Mar 2013",
+    "url": "https://wkuherald.com/44337/news/sga-passes-resolution-to-oppose-study-abroad-fee/"
+   }
+  },
+  "why": "Same resolution, meeting and article; A's failed Dodds amendment and B's Boka explanation are both kept, with the spelling Keyana left as the source has it."
+ },
+ {
+  "decision": "merge",
+  "year": "2013-14",
+  "remove": [
+   "SGA finalized $125,000 budget",
+   "SGA finalizes a $125,000 budget with no planned increase"
+  ],
+  "entry": {
+   "date": "2013-10-10",
+   "title": "SGA finalized a $125,000 budget after a planned increase fell through",
+   "body": "SGA finalized a 2013-14 budget of $125,000 drawn from student tuition, after a planned funding increase did not come through. Director of Public Relations Laura Harper said the figure equated to about $6.25 per student. The organizational aid committee was allotted $30,000, with campus organizations able to receive up to $500 each, and the executive discretionary fund held $5,900, part of which covered a Washington, D.C. higher education lobbying trip by Boka and Reeves. Administrative Vice President Nicki Seay, who built the budget, said senate discretionary spending required a senate majority and executive discretionary spending an executive committee majority.",
+   "src": {
+    "label": "Herald, 10 Oct 2013",
+    "url": "https://wkuherald.com/42891/news/student-government-association-budget-finalized/"
+   }
+  },
+  "why": "Same budget, date and article; A's allocation detail and B's named officers agree on every figure and are combined."
+ },
+ {
+  "decision": "merge",
+  "year": "2013-14",
+  "remove": [
+   "Mid-year budget report showed $46,883 surplus",
+   "Budget report shows a $46,883.62 surplus"
+  ],
+  "entry": {
+   "date": "2014-02-26",
+   "title": "Mid-year budget report showed a $46,883.62 surplus",
+   "body": "SGA's mid-year report on its $125,000 budget showed a surplus of $46,883.62. Administrative Vice President Nicki Seay said the budget had changed little since December and that she had more funds to allocate back to the student body, and $54,000 had gone to the legislative branch for items such as organizational aid and grants. The senate approved Bill 3-14-S allocating organizational funds and suspended its bylaws to pass Resolution 3-14-S supporting WKU's participation in the Campus Pride Index. Hannah Neeper, Elizabeth Gribbins and AJ Stewart were approved as senators, leaving six senate seats open.",
+   "src": {
+    "label": "Herald, 26 Feb 2014",
+    "url": "https://wkuherald.com/41395/news/sga-releases-budget-report/"
+   }
+  },
+  "why": "Same report, meeting and article; A rounded the surplus and B gave it to the cent, and the legislation, the named senators and Seay's comments are all kept."
+ },
+ {
+  "decision": "merge",
+  "year": "2014-15",
+  "remove": [
+   "Executive Cabinet vetoed the smoke-free campus resolution",
+   "Executive Cabinet vetoes the smoke-free campus resolution hours after it passes"
+  ],
+  "entry": {
+   "date": "2014-11-20",
+   "title": "Executive Cabinet vetoed the smoke-free campus resolution hours after it passed",
+   "body": "The senate passed Resolution 11-14-F, supporting a smoke-free campus, on a 14-10 vote, and the SGA Executive Cabinet vetoed it after the meeting. Chief of Staff Seth Church argued a ban was unfair to students required to live on campus for two years, while author William Berry said he left the location of any smoking areas to the administration and that the ban infringed no student's rights. Senator Haley Jones countered that smoking is legal and that students over 18 can buy tobacco. The policy would not have covered other tobacco products or electronic cigarettes, and senators kept the power to override the veto with a two-thirds vote.",
+   "src": {
+    "label": "Herald, 20 Nov 2014",
+    "url": "https://wkuherald.com/38186/news/sga-executive-cabinet-vetoes-smoke-free-resolution/"
+   }
+  },
+  "why": "Same vote, veto and article; the two write-ups quote different senators and both sets of arguments are preserved."
+ },
+ {
+  "decision": "merge",
+  "year": "2014-15",
+  "remove": [
+   "Ransdell formally responded to four SGA resolutions",
+   "Ransdell answers four SGA resolutions by email to faculty and staff"
+  ],
+  "entry": {
+   "date": "2015-03-04",
+   "title": "Ransdell answered four SGA resolutions in an email to faculty and staff",
+   "body": "President Gary Ransdell emailed faculty and staff his official response to four SGA resolutions, on limited smoking, amending the alcohol policy and Student Code of Conduct for students over 21, a new parking structure and a student fee for WKU Student Legal Services. On smoking he announced a six-person ad hoc committee of students, faculty and staff to recommend how to implement a limited smoking campus by the end of 2017. On alcohol he said a restaurant facility would be built in the Garrett Conference Center where beer, and possibly wine, could be served in the evenings. He said the parking and legal services fees would need Board of Regents and Council on Postsecondary Education approval.",
+   "src": {
+    "label": "Herald, 4 Mar 2015",
+    "url": "https://wkuherald.com/36791/news/ransdell-responds-to-sga-resolutions/"
+   }
+  },
+  "why": "Same email and article; B's fuller description of the alcohol resolution and A's note on the fees needing regents and CPE approval are both kept."
+ },
+ {
+  "decision": "merge",
+  "year": "2015-16",
+  "remove": [
+   "Senate opposed state tuition-freeze bill",
+   "SGA opposes state tuition-freeze bill; Richey says he appointed 42 percent of the senate"
+  ],
+  "entry": {
+   "date": "2016-02-17",
+   "title": "Senate opposed the state tuition-freeze bill",
+   "body": "The senate approved Resolution 2-16-S, opposing Kentucky Senate Bill 75, which would have frozen resident tuition at 2015-16 levels for four years, after debate. Richey argued such freezes were dangerous risks that could wreck universities and cost students more in the long run. Administrative Vice President Liz Koehler reported an expected 4.5 percent cut to SGA's own budget, a loss of $1,301.27. Richey also told senators appointments should be more democratic, noting that he had appointed 42 percent of the sitting senate.",
+   "src": {
+    "label": "Herald, 17 Feb 2016",
+    "url": "https://wkuherald.com/33611/news/sga-passes-resolution-opposing-tuition-freeze-legislation/"
+   }
+  },
+  "why": "Same resolution, meeting and article; B's exact budget cut of $1,301.27 supersedes A's rounded $1,301 and B's appointments remark is kept."
+ },
+ {
+  "decision": "merge",
+  "year": "2017-18",
+  "remove": [
+   "Senate passed a required sexual assault education resolution, 29-1",
+   "Senate votes 29-1 for a required sexual assault course in the Colonnade"
+  ],
+  "entry": {
+   "date": "2017-09-26",
+   "title": "Senate voted 29-1 for a required sexual assault course in the Colonnade",
+   "body": "Resolution 1-17-F, supporting the addition of a one-credit-hour sexual assault education course to Colonnade requirements for first-year students, passed 29-1 with two abstentions at the Tuesday night meeting. It was co-authored by public relations chair William Hurst, S.A.V.E.S. chair Ashlyn Jones and three other members, and argued that existing options such as HAVEN and Green Dot carried no penalty for skipping them. Hurst said a student could pass four years at WKU without any sexual assault training, calling that \"a disgrace, to say the least.\" Senator Alex Sergent described the resolution as closing holes in an existing net rather than adding a graduation hurdle, and the same meeting funded a No-Shave November beard contest and fixed the timing of constitutional-amendment elections in the bylaws.",
+   "src": {
+    "label": "Herald, 27 Sep 2017",
+    "url": "https://wkuherald.com/27737/news/sga-passes-resolution-for-required-sexual-assault-course/"
+   }
+  },
+  "why": "The two entries disagreed on the date and the citation, so I opened the article: it was published 27 September 2017 and describes the meeting as Tuesday night, which was 26 September, so the entry is dated the 26th and cited to the 27th, correcting A's 28 September label."
+ },
+ {
+  "decision": "merge",
+  "year": "2019-20",
+  "remove": [
+   "Budget passes unanimously with spending stipulations",
+   "Budget passes with spending stipulations; senate halves campaign spending caps"
+  ],
+  "entry": {
+   "date": "2019-09-19",
+   "title": "Budget passed with spending stipulations and campaign spending caps halved",
+   "body": "All 13 senators approved the yearly budget after a three-part compromise confined the special projects fund to the First Year Village plans and redistributed any money unspent by March 3 back to discretionary and voucher funds. Its passage let Bill 1-19-F, Greeks Go Green, and Bill 2-19-F, funding for Bowling Green Pride, pass unanimously. The senate also amended its election codes to halve campaign spending maximums, which had been $300 for presidential candidates, $125 for vice presidential candidates and $50 for senate candidates. Executive Vice President Garrett Edmonds objected, calling SGA turnout awful and estimating 1,500 students voted the previous year, while Senator Symone Whalin said poorer students were less likely to run for executive office.",
+   "src": {
+    "label": "Herald, 19 Sep 2019",
+    "url": "https://wkuherald.com/19445/news/sga-passes-budget-and-election-codes-in-productive-pre-election-meeting/"
+   }
+  },
+  "why": "Same meeting and article; A's two bills and B's debate over the spending caps are both kept."
+ },
+ {
+  "decision": "merge",
+  "year": "2019-20",
+  "remove": [
+   "Senate approves $5,000 hammocks project",
+   "Senate approves $5,000 hammock project after volleyball court dropped"
+  ],
+  "entry": {
+   "date": "2020-03-04",
+   "title": "Senate approved a $5,000 hammock project after the volleyball court was dropped",
+   "body": "The senate passed Bill 3-20-S, allocating $5,000 from the special projects fund to begin planning hammock poles across campus, after the sand volleyball court proposed earlier in the year was judged too expensive. Planned locations included spots near most residence halls and the Valley, and Executive Vice President Garrett Edmonds said he and Harris had run so SGA would be known for more than scantrons and greenbooks. Legislative Research Chair Josh Zaczek criticized having to vote without seeing budget numbers, said he had met friction getting figures from Edmonds and wanted assurance the money would be spent inclusively. Residence Hall Association President Emily Whitney backed the project and noted RHA's own budget cuts, and the senate kept the power to halt spending during planning.",
+   "src": {
+    "label": "Herald, 4 Mar 2020",
+    "url": "https://wkuherald.com/16420/news/sga-hammocks-project-begins-planning-phase-following-passing-vote/"
+   }
+  },
+  "why": "Same bill, meeting and article; A's planned locations and Edmonds comment and B's Zaczek and Whitney detail are combined."
+ },
+ {
+  "decision": "merge",
+  "year": "2021-22",
+  "remove": [
+   "Senate confirmed the year's budget",
+   "Bill 1.21f confirms the year's budget"
+  ],
+  "entry": {
+   "date": "2021-09-10",
+   "title": "Senate confirmed the year's budget in Bill 1.21f",
+   "body": "At the third meeting of the 21st Senate, on 7 September, SGA passed Bill 1.21f, confirming its budget for the year. Dean of Students Martha Sales opened the meeting on leadership, telling senators they had to learn how to lead and pressing them on their purpose as a student body. President Matthew Wininger announced a planned donor drive in partnership with at least four other student organizations, and Chief of Staff Parker Raybourne announced a Hilltopper Hangout event for 24 September.",
+   "src": {
+    "label": "Herald, 10 Sep 2021",
+    "url": "https://wkuherald.com/60719/news/sga-confirms-budget-martha-sales-speaks/"
+   }
+  },
+  "why": "Same meeting and article; both entries carry the 10 September publication date, and A's Raybourne announcement and B's identification of Wininger as president are kept."
+ },
+ {
+  "decision": "merge",
+  "year": "2022-23",
+  "remove": [
+   "Sam Kurtz elected on an unopposed ticket",
+   "Kurtz ticket elected unopposed"
+  ],
+  "entry": {
+   "date": "2023-04-19",
+   "title": "Kurtz ticket elected unopposed",
+   "body": "Sam Kurtz, the outgoing administrative vice president, was elected student body president on a ticket that ran unopposed, with Salvador León as administrative vice president and Annalise Finch as executive vice president. Voting opened on TopNet on 17 April. Fourteen at-large senators were elected, along with the college, class and first-generation seats. Results were read at about 12:30 a.m. in the Downing Student Union senate chambers by Judicial Council Chief Justice Justin Goins.",
+   "src": {
+    "label": "Herald, 19 Apr 2023",
+    "url": "https://wkuherald.com/71533/news/sga-announces-election-results/"
+   }
+  },
+  "why": "A is a fragment of the same result B reports; I opened the article, which spells the name León with an accent as B had it and not Leon as A had it, gives the 12:30 a.m. announcement and the 17 April opening of voting, and lists no Gatton seat, so that one claim from B is left out as unsupported."
+ },
+ {
+  "decision": "merge",
+  "year": "2023-24",
+  "remove": [
+   "23rd Senate seats Judicial Council and committee heads",
+   "Kurtz seats five-member Judicial Council and committee heads"
+  ],
+  "entry": {
+   "date": "2023-08-30",
+   "title": "Kurtz seated a five-member Judicial Council and seven committee heads",
+   "body": "At SGA's first meeting of the fall semester, the senate approved President Sam Kurtz's nominations of Ashley Ranger, Anna Kate Hardin, Ellen Henderson, Morgan Gammons and Garrison Reed to the 2023-24 Judicial Council. Kurtz said a record number of students had applied and were interviewed over the summer before the field was narrowed to five. He also announced seven committee heads, among them Rush Robinson for Campus Improvements and Sustainability and Karley Solorzano for Diversity, Equity and Inclusion. The new appointees took the oath of office at the meeting.",
+   "src": {
+    "label": "Herald, 30 Aug 2023",
+    "url": "https://wkuherald.com/72365/news/wku-student-government-association-selects-judicial-council-committee-heads/"
+   }
+  },
+  "why": "Same meeting and article; A's count of seven committee heads and the oath of office and B's summer interview detail are all kept."
+ },
+ {
+  "decision": "merge",
+  "year": "2024-25",
+  "remove": [
+   "Senate voted to rename DEI Committee",
+   "Senate renames DEI committee after scrambling for quorum"
+  ],
+  "entry": {
+   "date": "2025-04-04",
+   "title": "Senate renamed the DEI Committee the Action and Opportunity Committee",
+   "body": "Senators unanimously passed Bill 21-25-S, a constitutional amendment restructuring the Diversity, Equity and Inclusion Committee as the Action and Opportunity Committee and retitling Chief Diversity Officers as Chief Engagement and Opportunity Officers, following President Trump's executive order dismantling DEI mandates. Rush Robinson moved to table the bill to the fall, but senators chose to vote; with fewer than the 21 members needed for a two-thirds vote present, absent members were called onto Zoom to reach quorum. Co-author Gammons called the change mostly a formality and said a loss of federal funding had been alluded to as a possible issue. The amendment then went to a student referendum during the 13-15 April election.",
+   "src": {
+    "label": "Herald, 4 Apr 2025",
+    "url": "https://wkuherald.com/83591/news/sga-votes-to-rename-and-reformat-dei-committee/"
+   }
+  },
+  "why": "Same bill, meeting and article; A's referendum dates and B's tabling motion, officer retitling and Gammons comment are all kept."
+ }
+]

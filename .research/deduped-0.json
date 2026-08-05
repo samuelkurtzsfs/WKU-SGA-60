@@ -1,0 +1,406 @@
+[
+ {
+  "decision": "merge",
+  "year": "1967-68",
+  "remove": [
+   "ASG survey of student activity preferences",
+   "Associated Students survey students on activity preferences"
+  ],
+  "entry": {
+   "date": "1967-12-08",
+   "title": "Herald reported Associated Students survey of activity preferences",
+   "body": "The Herald published the results of an Associated Students survey of what activities students wanted, in a story by Ellen Bennett. The same issue carried a letter commending the Associated Student Government's efforts. It also reported the Kentucky Intercollegiate Press Association backing a proposal for student representation.",
+   "src": {
+    "label": "Herald 47:14, 8 Dec 1967",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4732/",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=5739&context=dlsc_ua_records"
+   }
+  },
+  "why": "Both entries describe the same survey story in the same 8 December Herald issue from the same citation, so they were combined to keep Ellen Bennett's byline, the commendation letter and the press association item."
+ },
+ {
+  "decision": "merge",
+  "year": "1974-75",
+  "remove": [
+   "ASG rescues the Student Volunteer Bureau",
+   "Volunteer Bureau and tutorial programme absorbed into ASG"
+  ],
+  "entry": {
+   "date": "1975-01-21",
+   "title": "ASG took over the Student Volunteer Bureau and the tutorial programme",
+   "body": "The Student Volunteer Bureau, which placed students in community volunteer work, weakened when founder Rodney Berry could not secure administrators or funds. Berry approached ASG president Jeff Consolo about folding it into ASG, and the Talisman recorded the merger passing at the last meeting of the fall semester by better than 80 per cent, with the tutorial programme consolidated into ASG at the same time. The Herald of 21 January 1975 reported that ASG had agreed to administer the bureau and had rescued it.",
+   "kind": "service",
+   "src": {
+    "label": "Herald 50:30, 21 Jan 1975",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5053/",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6053&context=dlsc_ua_records"
+   },
+   "src2": {
+    "label": "1975 Talisman, Associated Student Government",
+    "url": "https://archive.org/details/talisman1975west"
+   }
+  },
+  "why": "Both describe ASG absorbing the Volunteer Bureau; the date both entries carried, 21 January 1975, is kept as the Herald report, and the Talisman's fall-semester vote is attributed to the Talisman rather than silently replacing it."
+ },
+ {
+  "decision": "merge",
+  "year": "1977-78",
+  "remove": [
+   "Judicial Council denies Johnson's appeal",
+   "Judicial council denies election appeal"
+  ],
+  "entry": {
+   "date": "1978-04-18",
+   "title": "Judicial Council denied Ed Johnson's election appeal",
+   "body": "Losing candidate Ed Johnson contested the election result, and after a long debate the Associated Student Government Judicial Council denied his appeal. The ruling let Steve Thornton's win stand. While the case was pending the Herald had criticized the appeal system for a lack of objectivity.",
+   "src": {
+    "label": "Herald 53:57, 18 Apr 1978",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5497",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6511&context=dlsc_ua_records"
+   }
+  },
+  "why": "Same ruling, same date and same Herald issue, so the merged entry carries both Thornton's name and the Herald's criticism of the appeal system."
+ },
+ {
+  "decision": "merge",
+  "year": "1984-85",
+  "remove": [
+   "Jack Smith ends his term",
+   "Jack Smith ended his term as ASG president"
+  ],
+  "entry": {
+   "date": "1985-04-11",
+   "title": "Jack Smith ended his term as ASG president",
+   "body": "The Herald of 11 April 1985 marked the end of Jack Smith's term as Associated Student Government president with a news story by Mack Humphreys. A companion editorial credited Smith's enthusiasm with reviving student interest in ASG, and Kevin Knapp drew an editorial cartoon on Smith and the organisation. Mitchell McKinney had been elected the new president the week before.",
+   "src": {
+    "label": "Herald 60:51, 11 Apr 1985",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5712",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6728&context=dlsc_ua_records"
+   }
+  },
+  "why": "One event in one Herald issue written up twice; merging keeps the reporter and cartoonist names from one side and McKinney's election from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "1988-89",
+  "remove": [
+   "An extra study day recommended",
+   "ASG recommended an extra study day"
+  ],
+  "entry": {
+   "date": "1989-02-16",
+   "title": "ASG recommended an extra study day before exams",
+   "body": "Associated Student Government recommended adding an extra study day before exams to the university calendar. Diane Tsimekles reported the recommendation in the Herald's 16 February issue. The proposal followed January efforts to find a way to print teacher evaluations.",
+   "src": {
+    "label": "Herald 64:39, 16 Feb 1989",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7541"
+   }
+  },
+  "why": "Identical recommendation, date and source; the merged entry keeps the reporter's name and the link to the January teacher-evaluation work."
+ },
+ {
+  "decision": "distinct",
+  "year": "1991-92",
+  "remove": [
+   "ASG bill funds renovation of its own chambers",
+   "ASG bill proposes changing its own slogan"
+  ],
+  "why": "Bill #91-03-F on renovating the chambers and Bill #91-11-F on the slogan are two separate pieces of legislation with two separate archive records, sharing only the fall introduction date."
+ },
+ {
+  "decision": "distinct",
+  "year": "1997-98",
+  "remove": [
+   "Designated driver cards",
+   "Designated driver cards announced for distribution"
+  ],
+  "why": "Bill 97-3-F funding the cards in November 1997 and the Herald's February 1998 report that the cards were about to be handed out are separate steps three months apart with different sources."
+ },
+ {
+  "decision": "distinct",
+  "year": "2003-04",
+  "remove": [
+   "SGA lines up against plus/minus grading",
+   "SGA unanimously passes legislation against plus/minus grading"
+  ],
+  "why": "The 25 September meeting where members voiced concern and prepared a questionnaire and the 16 October unanimous vote against the grading plan are three weeks and two Herald stories apart."
+ },
+ {
+  "decision": "merge",
+  "year": "2011-12",
+  "remove": [
+   "Two senators removed for absences; ten faced judicial review",
+   "Ten of 36 senators face judicial review; two dismissed for absences"
+  ],
+  "entry": {
+   "date": "2011-11-15",
+   "title": "Two senators dismissed for absences as ten of 36 faced judicial review",
+   "body": "Ten of SGA's 36 senators were called before the judicial board during the fall semester for excessive absences from committee and full senate meetings. Kevin Adams and Kevin Preston were dismissed after failing to attend their judicial hearings, and Justice Chris Jankowski said each had between eight and 10 absences. Chief Justice David Spalding said the council treated a failure to appear at a review as intent to resign. The other senators received warnings, and Stephens said he would appoint replacements for the two empty seats.",
+   "src": {
+    "label": "Herald, 15 Nov 2011",
+    "url": "https://wkuherald.com/49872/news/two-wku-sga-senators-removed-others-go-under-review/"
+   }
+  },
+  "why": "Same review, same two dismissals and the same Herald article, so the merged entry keeps the warnings and Stephens' replacements alongside Jankowski's absence count and Spalding's explanation."
+ },
+ {
+  "decision": "merge",
+  "year": "2012-13",
+  "remove": [
+   "Senate unanimously opposed the bi-term and per-credit-hour tuition proposal",
+   "SGA resolution opposes bi-term calendar and per-credit-hour tuition"
+  ],
+  "entry": {
+   "date": "2012-09-06",
+   "title": "Senate unanimously opposed the bi-term calendar and per-credit-hour tuition",
+   "body": "SGA unanimously passed a resolution opposing the administration's proposal to emphasize bi-term courses and shift tuition to a per-credit-hour model. The bi-term plan would have put students in 80-minute classes on Mondays, Tuesdays, Thursdays and Fridays, and President Gary Ransdell had said it would let a student carry a full load plus a summer or winter course and graduate in three years. President Cory Dodds objected chiefly to the per-credit-hour shift, arguing it would charge students more because full-time students then paid for 12 hours but could enroll in up to 18. He called it a financial burden students should not have to bear.",
+   "src": {
+    "label": "Herald, 6 Sep 2012",
+    "url": "https://wkuherald.com/46756/news/sga-resolution-opposes-bi-term-per-credit-hour-proposal/"
+   }
+  },
+  "why": "One resolution at one meeting reported in one article; merging keeps the unanimous vote and Dodds' credit-hour arithmetic together with the 80-minute class schedule and Ransdell's three-year rationale."
+ },
+ {
+  "decision": "merge",
+  "year": "2012-13",
+  "remove": [
+   "Senate tabled a plus-minus grading resolution",
+   "Plus-minus grading resolution tabled with a student ballot floated"
+  ],
+  "entry": {
+   "date": "2013-02-19",
+   "title": "Senate tabled Hannah Garland's plus-minus grading resolution",
+   "body": "Academic Affairs chair Hannah Garland's resolution to add plus and minus grades to As, Bs, Cs and Ds was tabled at the Tuesday meeting after public relations chair Mac Mullins argued for a more formal proposal and more student input first, and most of the senate agreed. Garland said the system would make GPAs more exact and might make WKU more competitive. President Cory Dodds said the executive board had discussed putting the question directly to students on the spring ballot. A similar plan had drawn SGA resistance when the provost proposed it in 2007.",
+   "src": {
+    "label": "Herald, 26 Feb 2013",
+    "url": "https://wkuherald.com/44920/news/sga-tables-plus-minus-grading-system-resolution/"
+   },
+   "src2": {
+    "label": "Herald, 21 Feb 2013",
+    "url": "https://wkuherald.com/44945/news/sga-tables-plus-minus-grading-system-resolution-2/"
+   }
+  },
+  "why": "Both Sarah Stukenborg stories report the same tabling with the same Garland and Mullins quotes, the later one as follow-up; the 21 February story places the vote at Tuesday's meeting, so the date is 19 February 2013 rather than either entry's 20 or 26 February."
+ },
+ {
+  "decision": "merge",
+  "year": "2013-14",
+  "remove": [
+   "Executive Council nullified judicial appointment amendment",
+   "Executive council voids an amendment stripping the president's judicial appointments"
+  ],
+  "entry": {
+   "date": "2014-02-13",
+   "title": "Executive Council voided the amendment stripping the president's judicial appointments",
+   "body": "An amendment removing the SGA president's sole power to appoint judicial council justices and raising the council to seven justices passed at the Tuesday meeting, over President Keyana Boka's objection that it bypassed both presidential appointment and the senate. Boka said the president is elected by the student body to make appointments in all three branches and that she was wary of the direction, while Chief Justice Seth Church argued that vesting appointments in the executive branch as a whole created a fairer system. After the meeting the Executive Council reviewed the constitution, found too few senators had attended for the vote to count and declared the amendment unconstitutional, sending it back to first read. The SGA office had temporarily moved to Garrett after flooding in Cravens.",
+   "src": {
+    "label": "Herald, 13 Feb 2014",
+    "url": "https://wkuherald.com/41441/news/sga-executive-council-alters-amendment-approval/"
+   }
+  },
+  "why": "Same amendment, same meeting and same article; the two sides described the reversal as a quorum finding and as an unconstitutionality ruling, which the merged body states as the one sequence, and the Cravens flooding detail is kept."
+ },
+ {
+  "decision": "merge",
+  "year": "2014-15",
+  "remove": [
+   "Fall election drew 742 voters and seated 17 senators",
+   "742 vote in fall election as 17 senators are elected"
+  ],
+  "entry": {
+   "date": "2014-09-25",
+   "title": "Fall election drew 742 voters and seated 17 senators",
+   "body": "SGA announced its fall election results around 12:20 a.m. in the Senate Chamber of Downing Student Union, before a crowd of about 15 people. There were 742 voters and 17 senators elected, including three freshman senators led by Emily Pride with 281 votes. President Nicki Seay called the election very competitive and said not everyone who ran won a seat. The senators-elect were sworn in at the 30 September meeting.",
+   "src": {
+    "label": "Herald, 25 Sep 2014",
+    "url": "https://wkuherald.com/39075/news/sga-announces-fall-election-results-17-senators-elected/"
+   }
+  },
+  "why": "One announcement in one article; merging keeps the crowd size and the 30 September swearing-in alongside the turnout, the senator count and Pride's total."
+ },
+ {
+  "decision": "merge",
+  "year": "2014-15",
+  "remove": [
+   "Veto override failed; alcohol policy resolution passed",
+   "Senate fails to override the smoking veto and passes an alcohol resolution"
+  ],
+  "entry": {
+   "date": "2014-12-04",
+   "title": "Senate failed to override the smoking veto and passed an alcohol resolution",
+   "body": "At the final meeting of the fall semester, which ran two and a half hours, the senate failed to overturn the Executive Cabinet's veto of the smoke-free campus resolution. President Nicki Taylor read the cabinet's official veto statement, which cited enforcement, housing requirements and practicality. The senate then passed Resolution 13-14-F, supporting amendments to WKU's alcohol policy and Student Code of Conduct to let students 21 and older purchase and possess alcohol on campus. Co-author Jody Dahmer called the existing policy ineffective and hard to enforce fairly.",
+   "src": {
+    "label": "Herald, 4 Dec 2014",
+    "url": "https://wkuherald.com/37835/news/sga-passes-alcohol-resolution/"
+   }
+  },
+  "why": "Same meeting and same article; the merged entry keeps the resolution number and Dahmer's argument from one side and the two-and-a-half-hour length from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2015-16",
+  "remove": [
+   "SGA budget fell by $19,500",
+   "SGA budget falls by $19,500"
+  ],
+  "entry": {
+   "date": "2015-09-15",
+   "title": "SGA budget fell by $19,500",
+   "body": "SGA's budget dropped $19,500 from the previous year, largely because a $15,000 private donation was not repeated and the university cut another $4,500 in reallocations. Organizational funding took the hardest hit, losing $9,000, and the Academic Affairs and Student Affairs scholarship pools each fell by more than $5,000. Administrative Vice President Liz Koehler reallocated $4,000 from organizational aid back into scholarships to soften the loss. The Herald noted WKU's SGA budget stood at $138,500 against the University of Louisville's $1.2 million.",
+   "src": {
+    "label": "Herald, 15 Sep 2015",
+    "url": "https://wkuherald.com/35370/news/sga-budget-decreases-by-19500/"
+   }
+  },
+  "why": "Same budget story from the same article; merging keeps the scholarship-pool detail from one side and the $138,500 total and Louisville comparison from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2015-16",
+  "remove": [
+   "Senate voted to disapprove Confucius Institute approval process",
+   "Senate votes 21-4 to disapprove Confucius Institute building process"
+  ],
+  "entry": {
+   "date": "2015-09-22",
+   "title": "Senate voted 21-4 to disapprove the Confucius Institute approval process",
+   "body": "The senate passed Resolution 2-15-F by 21 votes to 4, disapproving of the nontransparent procedure by which the Model Confucius Institute building was authorized, after President Gary Ransdell signed the contract in China in December 2014 and the Board of Regents, including the student regent, voted on it more than a month later without full details disclosed. Several senators argued the institute was an asset to WKU and Bowling Green, while Campus Improvement Chairman Zachary Jones backed the resolution as an expression of student opinion. Richey wrote separately that the vote was not meant to set a precedent beyond ensuring the Board had full information, and that some senators had warned it would make \"powerful enemies\" for SGA.",
+   "src": {
+    "label": "Herald, 24 Sep 2015",
+    "url": "https://wkuherald.com/35122/news/sga-disapproves-confucius-institute-building-process/"
+   },
+   "src2": {
+    "label": "Herald, 24 Sep 2015, letter to the editor from the SGA president",
+    "url": "https://wkuherald.com/35440/opinion/letter-to-the-editor-sga-president-discusses-confucius-vote/"
+   }
+  },
+  "why": "The news story and Richey's letter cover the same vote on Resolution 2-15-F; the news story dates it to Tuesday's meeting, so 22 September 2015 stands over the 24 September publication date, and both sources are kept."
+ },
+ {
+  "decision": "merge",
+  "year": "2018-19",
+  "remove": [
+   "Senate asked WKU to cancel classes on Election Day",
+   "Senate asks WKU to cancel classes on Election Day and to let students record meetings"
+  ],
+  "entry": {
+   "date": "2018-09-20",
+   "title": "Senate asked WKU to cancel classes on Election Day and to loosen the conduct code",
+   "body": "SGA passed Resolution 5-18-F 15-0, asking the university to cancel classes on 6 November 2018 so students could get to the polls, and Bill 7-18-F, giving $300 to the get-out-the-vote campaign Reg 2 Vote. Francis Wilson of Reg 2 Vote told senators that of 290,000 Kentucky students registered in 2016, only about 13 percent voted. Resolutions 1-18-F and 2-18-F, which asked WKU to strike Student Code of Conduct language barring students from refusing a direction from a university official and from audio recording student-faculty meetings, both passed 14-0. Mayer's nominee Alex Rivera was confirmed as associate justice of the Judicial Council 12-3 after an earlier nomination had failed.",
+   "src": {
+    "label": "Herald, 20 Sep 2018",
+    "url": "https://wkuherald.com/23687/uncategorized/sga-approves-resolution-to-cancel-class-on-election-day/"
+   }
+  },
+  "why": "Same meeting and same article; merging keeps the vote counts and Wilson's turnout figure from one side and the Rivera confirmation from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2019-20",
+  "remove": [
+   "Senate passes Resolution 4-19-F against Alpha Xi Delta",
+   "Senate passes Resolution 4-19-F seeking discipline against Alpha Xi Delta, 24-7"
+  ],
+  "entry": {
+   "date": "2019-10-24",
+   "title": "Senate passed Resolution 4-19-F seeking discipline against Alpha Xi Delta, 24-7",
+   "body": "The senate voted 24-7 for Resolution 4-19-F, authored by senators Symone Whalin and Anthony Survance, supporting disciplinary action up to suspension from Greek affairs against the Epsilon Kappa chapter of Alpha Xi Delta. The resolution followed an August Twitter video showing chapter members singing a racial slur in a rap song, and the authors said administrative silence signaled the university did not care about minority students, wanting more than \"an article from the Herald or an email from Bob Skipper.\" Before passage a motion struck the call for removal from campus out of the title and a friendly amendment substituted suspension from Greek affairs. Senator Mary Mayo said it was not SGA's job to act as a disciplinary committee, and the resolution was to be submitted to the Faculty Senate.",
+   "src": {
+    "label": "Herald, 24 Oct 2019",
+    "url": "https://wkuherald.com/19223/news/student-government-seeks-repercussions-against-alpha-xi-delta/"
+   }
+  },
+  "why": "Same resolution, same 24-7 vote and same article; the merged entry keeps the video background and the authors' reasoning together with the title amendment, Mayo's objection and the referral to the Faculty Senate."
+ },
+ {
+  "decision": "merge",
+  "year": "2020-21",
+  "remove": [
+   "SGA backed renaming buildings tied to racism and funded a community garden",
+   "Senate endorses renaming buildings with ties to racism and funds a community garden"
+  ],
+  "entry": {
+   "date": "2021-03-03",
+   "title": "Senate backed renaming buildings tied to racism and funded a community garden",
+   "body": "The senate passed legislation by Brenna Matthews and Tess Welch, after debate, offering SGA's support to WKU's Naming and Symbols Task Force in changing the names of buildings with ties to racism or injustice. Matthews said ties to slave owning and the Confederate army were not something a public university dedicated to diversity would want on campus. Senators also unanimously funded a community garden outside the Office of Sustainability and allocated $3,500 to four student organizations. Title IX coordinator Deborah Wilkins opened the meeting by reviewing previous SGA legislation that potentially violated Title IX.",
+   "src": {
+    "label": "Herald, 3 Mar 2021",
+    "url": "https://wkuherald.com/7634/news/sga-offer-support-in-changing-controversial-namesakes-building-community-garden/"
+   }
+  },
+  "why": "Same bill at the same meeting from the same article; merging keeps the garden and the $3,500 in organizational funding from one side and Wilkins' Title IX review from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2021-22",
+  "remove": [
+   "Resolution condemning critical race theory bans passed 16-15",
+   "Critical race theory resolution passes by one vote"
+  ],
+  "entry": {
+   "date": "2021-12-01",
+   "title": "Resolution condemning critical race theory bans passed 16-15",
+   "body": "After weeks of debate and several speeches of affirmation and negation, the senate passed Resolution 7.21f, condemning the banning of critical race theory teaching in postsecondary education. The vote was 16 in favor and 15 against, with two abstentions. Sponsors cited an anticipated bill request in the Kentucky General Assembly, and sponsor Olivia Blackmon said the measure was meant to ensure intellectual freedom in the curriculum rather than politicize classrooms.",
+   "src": {
+    "label": "Herald, 1 Dec 2021",
+    "url": "https://wkuherald.com/62662/news/sga-discusses-critical-race-theory-legislation/"
+   }
+  },
+  "why": "Identical vote on the same resolution from one article, so the entries were combined without any change to the count."
+ },
+ {
+  "decision": "merge",
+  "year": "2022-23",
+  "remove": [
+   "Fall election turnout doubled; Reed appointed to state council",
+   "Fall election turnout doubles; vice president appointed to state postsecondary council"
+  ],
+  "entry": {
+   "date": "2022-09-21",
+   "title": "Fall election turnout doubled and vice president Garrison Reed joined the state postsecondary council",
+   "body": "Fall 2022 election results, announced at midnight, seated Rush Robinson, Callison Padgett and Rhett Helland as freshman senators, Neel Patel for the Gatton Academy, Shy'Ante Williams as graduate senator and Salvador Leon Golib as international student senator. President Cole Bornefeld said the vote total rose from 398 the previous fall to 805. SGA also announced that student body vice president Garrison Reed had been appointed student representative on Kentucky's Council on Postsecondary Education, with a term running through 30 June 2023.",
+   "src": {
+    "label": "Herald, 21 Sep 2022",
+    "url": "https://wkuherald.com/68255/news/sga-fall-election-results-announced-vp-reed-appointed-to-council-on-postsecondary-education/"
+   }
+  },
+  "why": "Same announcement in one article; the two sides gave Reed different titles, and the Herald calls him student body vice president, which the merged entry follows."
+ },
+ {
+  "decision": "merge",
+  "year": "2023-24",
+  "remove": [
+   "First bill of the year funds the Pink Walk",
+   "First bill of the 23rd Senate funds the Pink Walk"
+  ],
+  "entry": {
+   "date": "2023-09-20",
+   "title": "First bill of the 23rd Senate funded the Pink Walk",
+   "body": "At its fifth meeting the 23rd Senate passed its first piece of legislation, Bill 1-23-F, allocating $500 from SGA's scholarship budget to the SGA Pink Walk, an October breast cancer awareness event for students and the Bowling Green community. The money covered bracelets, ribbons, water and raffle prizes. The bill was written by Donte Reed, Rush Robinson and Anne-Marie Wright and passed unanimously, 28-0.",
+   "src": {
+    "label": "Herald, 20 Sep 2023",
+    "url": "https://wkuherald.com/72754/news/sga-passes-first-legislation-of-the-23rd-senate/"
+   }
+  },
+  "why": "Same bill, same meeting and same article; merging keeps the fifth-meeting context and the event's purpose alongside the authors and what the money bought."
+ },
+ {
+  "decision": "merge",
+  "year": "2024-25",
+  "remove": [
+   "Senate backs Myanmar flag, funds organizational aid and calculators",
+   "Senate backs Myanmar flag at Honors College, distributes $10,000 in aid"
+  ],
+  "entry": {
+   "date": "2024-10-22",
+   "title": "Senate backed a Myanmar flag, distributed $10,000 in organizational aid and funded more calculators",
+   "body": "The senate unanimously passed Resolution 5-24-F, authored by Senator Van Zing, supporting a Myanmar flag on the empty pole outside the Mahurin Honors College after students said Burmese and Chin students had no flag representing them. Bill 9-24-F distributed the fall organizational aid budget of $10,000 to registered student organizations graded from 58 applications, with a $500 annual cap per group. Bill 10-24-F added $540 to buy five more calculators for the Borrow-a-Calculator program, which had lent 28 calculators that semester. Kurtz appointed freshman Emaun Riley as ISEC senator and Mahurin Honors College senator Caden Lucas as the senate's parliamentarian.",
+   "src": {
+    "label": "Herald, 22 Oct 2024",
+    "url": "https://wkuherald.com/79487/news/sga-to-put-up-new-flag-outside-mahurin-honors-college-two-appointments-made-at-weekly-meeting/"
+   }
+  },
+  "why": "One meeting report under one URL; the two sides dated the same article 22 and 23 October, and the Herald page carries 22 October 2024, which the merged citation uses."
+ }
+]

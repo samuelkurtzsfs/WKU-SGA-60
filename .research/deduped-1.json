@@ -1,0 +1,422 @@
+[
+ {
+  "decision": "merge",
+  "year": "1967-68",
+  "remove": [
+   "Kentucky Intercollegiate Press Association backs student representation",
+   "State press association backs student representation proposal"
+  ],
+  "entry": {
+   "date": "1967-12-08",
+   "title": "Kentucky Intercollegiate Press Association backed the student representation proposal",
+   "body": "The Herald of 8 December 1967 reported that the Kentucky Intercollegiate Press Association had come out in support of the proposal for student representation. The item ran alongside the paper's coverage of Associated Students activity that week, including the Associated Students activity survey.",
+   "src": {
+    "label": "Herald 47:14, 8 Dec 1967",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4732/",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=5739&context=dlsc_ua_records"
+   }
+  },
+  "why": "Same item, same date and same Herald issue written up twice; the merged body keeps the association's full name from one side and the activity survey detail from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "1975-76",
+  "remove": [
+   "The Spinners and Wet Willie draw 7,500 to a free concert",
+   "The Spinners and Wet Willie, free to students"
+  ],
+  "entry": {
+   "date": "1976-01-30",
+   "title": "The Spinners and Wet Willie drew 7,500 to a free concert",
+   "body": "The Spinners and Wet Willie played free to students on 30 January 1976 before a crowd of 7,500, the second straight major ASG promotion to make money. It was the first concert the new Student Activities Committee helped bring about. The Spinners worked impressions of the Ink Spots, the Mills Brothers, Tom Jones, the Miracles and Elvis Presley into the set, donned wigs for the Supremes, and came back for two encores.",
+   "kind": "concert",
+   "money": "free to students; crowd of 7,500",
+   "src": {
+    "label": "College Heights Herald 51:37, 3 Feb 1976",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5126",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6134&context=dlsc_ua_records"
+   },
+   "src2": {
+    "label": "1976 Talisman, Concerts and student activities",
+    "url": "https://archive.org/details/talisman1976west"
+   }
+  },
+  "why": "One concert covered by two different sources that agree on the 7,500 crowd, so the Herald citation with its mirrored PDF carries the entry and the Talisman stays cited as src2."
+ },
+ {
+  "decision": "merge",
+  "year": "1980-81",
+  "remove": [
+   "ASG asks the state to evaluate higher education",
+   "Associated Student Government asks the state to evaluate higher education"
+  ],
+  "entry": {
+   "date": "1981-02-05",
+   "title": "ASG asked the state to evaluate higher education",
+   "body": "The Associated Student Government called on the state to carry out an evaluation of higher education. Robert Pillow reported the request in the Herald of 5 February 1981, an issue dominated by budget pressure across Kentucky's universities and by controversy over cuts to the athletic budget.",
+   "src": {
+    "label": "Herald 56:36, 5 Feb 1981",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5640",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6649&context=dlsc_ua_records"
+   }
+  },
+  "why": "Same request, same date, same Herald issue and identical URL; the merged body keeps the reporter's name and the budget and athletics context that only one side carried."
+ },
+ {
+  "decision": "merge",
+  "year": "1986-87",
+  "remove": [
+   "A $12,100 budget and a retreat with the university president",
+   "ASG approves $12,100 budget"
+  ],
+  "entry": {
+   "date": "1986-09-11",
+   "title": "ASG approved a $12,100 budget and announced a retreat with President Kern Alexander",
+   "body": "ASG approved an operating budget of $12,100. It also planned a telephone outreach effort to hear students' ideas and needs and announced a retreat featuring university president Kern Alexander. The Herald carried all three items on 11 September 1986, in the second week of the fall semester.",
+   "src": {
+    "label": "Herald 62:5, 11 Sep 1986",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5764",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6771&context=dlsc_ua_records"
+   }
+  },
+  "why": "The shorter entry's only fact, the $12,100 budget approval, is already inside the longer entry from the same issue and date, so merging loses nothing."
+ },
+ {
+  "decision": "merge",
+  "year": "1990-91",
+  "remove": [
+   "ASG passes resolution for left-handed desks",
+   "Left-handed desks pushed; excused absences killed"
+  ],
+  "entry": {
+   "date": "1990-11-29",
+   "title": "ASG passed the left-handed desk resolution and killed the excused absences resolution",
+   "body": "The Associated Student Government passed Resolution 90-10-F, requesting that a left-handed desk be provided in each classroom. In the same stretch of meetings it killed a companion resolution on excused absences. The Herald reported both in its issue of 29 November 1990, closing out the fall legislative calendar.",
+   "src": {
+    "label": "SGA Legislation, Resolution 90-10-F, \"Left Handed Desks\"",
+    "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/147"
+   },
+   "src2": {
+    "label": "Herald 66:27, 29 Nov 1990",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7666"
+   }
+  },
+  "why": "Both entries cover the same pair of votes at the close of the fall calendar; the resolution text and the Herald report are different sources, so the legislation is src and the Herald is src2."
+ },
+ {
+  "decision": "merge",
+  "year": "1995-96",
+  "remove": [
+   "A skywalk at the bottom of the Hill",
+   "SGA proposed a skywalk at the bottom of the Hill"
+  ],
+  "entry": {
+   "date": "1996-02-08",
+   "title": "SGA proposed a pedestrian skywalk at the bottom of the Hill",
+   "body": "SGA proposed a pedestrian skywalk at the bottom of the Hill. The same Herald issue of 8 February 1996 covered SGA's push to bring emergency phones to campus. The skywalk drew editorial fire and became the most argued-about SGA proposal of the spring.",
+   "src": {
+    "label": "Herald 71:37, 8 Feb 1996",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2960",
+    "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3967&context=dlsc_ua_records"
+   }
+  },
+  "why": "Same proposal, same date, same Herald issue and identical URL, with both sides reporting the emergency phones item alongside it."
+ },
+ {
+  "decision": "distinct",
+  "year": "1998-99",
+  "remove": [
+   "A coffee house for Pride Week and a Homecoming float",
+   "Pride Week coffee house in Niteclass"
+  ],
+  "why": "One is the October legislative session that passed Bills 98-5-F and 98-6-F plus the rest of the fall slate, the other is the coffee house itself held on 5 November in Niteclass with the African-American Players, so they are a funding vote and the event it paid for, two weeks apart."
+ },
+ {
+  "decision": "merge",
+  "year": "2003-04",
+  "remove": [
+   "Disputed 9-8 vote clouds the first speaker of the senate election",
+   "Turnout questions cloud election of first senate speaker"
+  ],
+  "entry": {
+   "date": "2004-04-15",
+   "title": "Robert Watkins elected first speaker of the senate on a disputed 9-8 vote",
+   "body": "Congress elected Bowling Green sophomore Robert Watkins, who wrote the new constitution, as the first speaker of the senate by 9 votes to 8 over Brittany Fausey, with 17 of 20 members present voting. The result was immediately questioned because the new constitution was unclear on whether two-thirds of eligible voters or of total membership was required, and three members present were barred from voting under a judicial council ruling. Martin warned of a \"semester of frustration\" if the dispute was not settled at the year's final meeting. Fausey declined to challenge the result.",
+   "src": {
+    "label": "Herald, 15 Apr 2004",
+    "url": "https://wkuherald.com/55330/news/questions-cloud-speaker-vote/"
+   }
+  },
+  "why": "Same election, same date, same article; the merged body keeps the 9-8 count and the judicial council ruling from one side and Watkins's hometown and class standing from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2011-12",
+  "remove": [
+   "SGA pays surprise $15,000 bill for previous year's Provide-A-Ride",
+   "SGA pays $15,000 retroactive Provide-A-Ride bill from aid and scholarship funds"
+  ],
+  "entry": {
+   "date": "2011-11-18",
+   "title": "SGA paid a surprise $15,000 Provide-A-Ride bill from aid and scholarship funds",
+   "body": "SGA paid Parking Services a $15,000 retroactive charge for the previous year's Provide-A-Ride service, taking $7,500 each from the organizational aid and student scholarship funds. President Billy Stephens said he was \"shocked\" to be notified of the payment the week before, and that Parking Services had no record of receiving the money from the previous administration. Because the SGA budget does not roll over between years, no prior-year money was available to cover it. 2010-11 president Colton Jessie said his administration had budgeted the payment.",
+   "src": {
+    "label": "Herald, 18 Nov 2011",
+    "url": "https://wkuherald.com/49803/news/wku-sga-shocked-about-owing-15000-for-provide-a-ride/"
+   }
+  },
+  "why": "Same payment reported once in the same article; the merged body keeps Colton Jessie's rebuttal from one side and the no-rollover explanation from the other, and reports the dispute over the earlier payment as the source did."
+ },
+ {
+  "decision": "merge",
+  "year": "2012-13",
+  "remove": [
+   "SGA passed its teaching assistant evaluation resolution",
+   "Teaching assistant evaluation resolution clears the senate"
+  ],
+  "entry": {
+   "date": "2013-02-15",
+   "title": "Senate passed the teaching assistant evaluation resolution",
+   "body": "On 5 February the senate passed a resolution creating teaching assistant evaluations, a program President Cory Dodds had campaigned on and developed with his executive officers before pitching it to Provost Gordon Emslie. Nicki Seay, chair of the Legislative Research Committee, wrote the measure, which aimed to make TA evaluation uniform across departments. Dodds said the idea had been worked on for many years. The resolution next needed review by the Academic Quality Committee and approval by the University Senate.",
+   "src": {
+    "label": "Herald, 15 Feb 2013",
+    "url": "https://wkuherald.com/44736/news/sga-approves-resolution-for-teaching-assistant-evaluations/"
+   }
+  },
+  "why": "Same 5 February vote from the same article; both sides used the 15 February publication date, and the merged body keeps Nicki Seay's authorship from one side and Dodds's full name and long-history remark from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2013-14",
+  "remove": [
+   "Fall election drew 564 voters, created international seat",
+   "564 vote in fall election; referendum creates the Navitas/ESL seat"
+  ],
+  "entry": {
+   "date": "2013-09-19",
+   "title": "564 voted in the fall election; referendum created the Navitas/ESL seat",
+   "body": "A total of 564 students voted in the fall SGA election. The referendum creating a Navitas and English as a Second Language international student senate seat drew 426 votes and passed with 310 yes votes, 73 percent. Six freshman senators were elected out of seven candidates, led by Jay Todd Richey with 27 percent, along with two graduate senators, a Gatton Academy senator and an Arts and Letters senator. Most college senate seats went to unopposed candidates.",
+   "src": {
+    "label": "Herald, 19 Sep 2013",
+    "url": "https://wkuherald.com/43207/news/sga-election-results-in-new-senate-seat-created/"
+   }
+  },
+  "why": "Same election results from the same article, with matching numbers; the merged body keeps the unopposed-seats note from one side and the graduate, Gatton and Arts and Letters winners from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2013-14",
+  "remove": [
+   "Herald editorial faulted SGA over registration policy",
+   "Herald editorial says SGA failed students on priority registration"
+  ],
+  "entry": {
+   "date": "2013-11-05",
+   "title": "Herald editorial faulted SGA over the priority registration policy",
+   "body": "A Herald editorial accused SGA of failing to represent students on the new priority registration policy, which capped students with priority registration at 16 hours on their priority day and exempted seniors and graduate students. The editorial said executive vice president Mark Reeves voted for the policy at the University Senate on 10 September without SGA questioning or debating it first. It also faulted SGA for scheduling an open forum for 12 November, after the policy was already set to govern fall registration. Representing students was SGA's one job, the editorial argued, and it had not been done on this issue.",
+   "src": {
+    "label": "Herald, 5 Nov 2013",
+    "url": "https://wkuherald.com/42230/opinion/priority-check-sga-too-little-too-late-with-registration/"
+   }
+  },
+  "why": "One editorial, same date and identical URL; the merged body keeps the Mark Reeves vote from one side and the 16-hour cap and the 12 November forum from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2014-15",
+  "remove": [
+   "Senate defeated a nonsectarian prayer policy resolution",
+   "Senate defeats the nonsectarian prayer policy resolution"
+  ],
+  "entry": {
+   "date": "2014-10-15",
+   "title": "Senate defeated the nonsectarian prayer policy resolution",
+   "body": "After more than 20 minutes of debate the senate defeated Resolution 4-14-F, which would have supported adopting the University Senate's nonsectarian public prayer policy for university-sponsored events. Chief of Staff Seth Church explained that a nonsectarian prayer differs from a sectarian one referring to a specific deity. President Nicki Taylor said the senate was split three ways, among nonsectarian prayer, sectarian prayer and no prayer at all, and that the division sank the resolution. The same night senators passed Bill 9-14-F allocating $250 in organizational aid to the Phi Gamma Delta fraternity.",
+   "src": {
+    "label": "Herald, 15 Oct 2014",
+    "url": "https://wkuherald.com/38655/news/sga-shoots-down-prayer-policy-resolution/"
+   }
+  },
+  "why": "Same vote on the same resolution from the same article; the merged body keeps Seth Church's explanation from one side and the Phi Gamma Delta allocation from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2014-15",
+  "remove": [
+   "SGA backed a $10 million parking garage funded by a $30 fee",
+   "SGA endorses a $10 million parking garage funded by a $30 tuition rise"
+  ],
+  "entry": {
+   "date": "2015-03-03",
+   "title": "SGA backed a $10 million parking garage funded by a $30 per semester tuition rise",
+   "body": "SGA passed a resolution supporting construction of a $10 million parking structure on part of Creason Lot, funded by a $30-per-semester tuition increase. Authors Zach Jones, Brian Chism and Nathan Cherry estimated the roughly 500-car garage would take about 18 months to build, and the resolution suggested a temporary gravel lot on the site of Tate Page Hall after its anticipated demolition. President Nicki Taylor said the structure had been before the parking and transportation committee for the whole academic year. Chief of Staff Seth Church objected that the plan was rushed and left out the regional campuses.",
+   "src": {
+    "label": "Herald, 3 Mar 2015",
+    "url": "https://wkuherald.com/36895/news/sga-approves-resolution-for-10-million-parking-garage/"
+   }
+  },
+  "why": "Same resolution, same date, same article; the merged body keeps the 500-car and 18-month estimates and Church's objection from one side and the Tate Page gravel lot and Taylor's committee remark from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2015-16",
+  "remove": [
+   "Administration overrode student vote on pub name",
+   "Administration overrides student vote on pub name"
+  ],
+  "entry": {
+   "date": "2016-01-28",
+   "title": "Administration overrode the student vote on the Garrett pub name",
+   "body": "Richey announced that administrators had renamed the future Garrett Conference Center pub Topper Grill and Pub. The Herald reported that the student body had voted for Topper Tavern in SGA's \"Dub the Pub\" contest and that the name previously settled on for the eatery was the compromise Topper Tavern and Grill. Richey said former Student Affairs vice president Howard Bailey told him he had made the decision and that President Ransdell wanted to downplay the alcohol theme; he called himself very disappointed and said it made SGA question how much the administration listens to students. The same meeting introduced the RAVE Guardian campus safety app.",
+   "src": {
+    "label": "Herald, 28 Jan 2016",
+    "url": "https://wkuherald.com/33890/news/sga-announces-pub-name-change-introduces-safety-app/"
+   }
+  },
+  "why": "The two sides contradicted each other on the winning name, one saying Topper Tavern and the other Topper Tavern and Grill; the cited Herald article settles it as both, students voted Topper Tavern and the compromise name carried forward was Topper Tavern and Grill, and it confirms Howard Bailey as the decision-maker."
+ },
+ {
+  "decision": "merge",
+  "year": "2017-18",
+  "remove": [
+   "SGA passes resolution supporting DACA students",
+   "Narrower DACA solidarity resolution passes 32-1"
+  ],
+  "entry": {
+   "date": "2017-11-09",
+   "title": "Narrower DACA solidarity resolution passed 32-1",
+   "body": "At its 7 November meeting the senate passed, by 32 votes to 1, a resolution co-authored by President Andi Dahmer and former senator Francisco Serrano standing in solidarity with WKU students who were DACA recipients. It was a revision of the clean DREAM Act resolution rejected the previous week, reframed to address only the WKU student community rather than call on legislators, which Dahmer said kept it within \"a jurisdiction that we do have.\" Dahmer noted WKU was one of the last schools in Kentucky to pass a measure of this kind. The same meeting unanimously funded the Go With the Flow program, allocating over $580 for free menstrual products in five campus buildings.",
+   "src": {
+    "label": "Herald, 9 Nov 2017",
+    "url": "https://wkuherald.com/26837/news/sga-supports-daca-students/"
+   }
+  },
+  "why": "The sides disagreed on whether the DREAM Act resolution had failed one week or two weeks earlier; the cited Herald article says it was rejected last week, so the previous week is correct, and the merged body keeps the Go With the Flow funding and Dahmer's Kentucky comparison."
+ },
+ {
+  "decision": "merge",
+  "year": "2018-19",
+  "remove": [
+   "Transparency resolution passed after the dean's resignation",
+   "Senate demands administrative transparency after a dean's sudden resignation"
+  ],
+  "entry": {
+   "date": "2019-04-03",
+   "title": "Senate passed a transparency resolution 30-2 after the dean's sudden resignation",
+   "body": "A week after Potter College Dean Larry Snyder resigned abruptly, the senate passed Resolution 4-19-S by 30 votes to 2, saying top university officials must explain major decisions and carry them out in a manner that protects the dignity of those involved. Mayer's renomination of Wood Brown to the Judicial Council was struck down 17-11, short of two-thirds, after Associate Justice Annalicia Carlson said the council preferred Erika Puhakka. A bill creating a senate seat for first-generation college students passed 33-0. A resolution brought by the Transgender Non-Binary student organization, asking WKU to let students' preferred names appear on class rosters, IDs and email addresses, also passed 33-0.",
+   "src": {
+    "label": "Herald, 3 Apr 2019",
+    "url": "https://wkuherald.com/20665/news/sga-passes-resolution-to-support-administrative-transparency-following-dean-resignation/"
+   }
+  },
+  "why": "Same meeting and the same four votes from one article; the merged body keeps the dean's name, the dignity clause and Carlson's statement from one side and the Transgender Non-Binary organization's authorship from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2019-20",
+  "remove": [
+   "Executive board veto of Resolution 4-19-F upheld",
+   "Executive board vetoes Resolution 4-19-F 4-0; senate sustains the veto"
+  ],
+  "entry": {
+   "date": "2019-10-30",
+   "title": "Executive board vetoed Resolution 4-19-F 4-0 and the senate sustained the veto",
+   "body": "The executive board vetoed Resolution 4-19-F, the Alpha Xi Delta resolution, by 4 votes to 0 with two of its six members abstaining, and the senate confirmed the veto at its Tuesday meeting. President Will Harris, one of the abstainers, said the discrimination claim the resolution invoked would have to come from the Student Code of Conduct and that the Office of Student Conduct had noted no violation. Co-author Anthony Survance accused the executive branch of dragging the issue out, and Legislative Research Chair Josh Zaczek disputed the reasoning. Senators raised Harris's standing as an Alpha Xi Delta knight, which he rejected as grounds for bias.",
+   "src": {
+    "label": "Herald, 30 Oct 2019",
+    "url": "https://wkuherald.com/18899/news/executive-board-questions-constitutionality-of-resolution-4-19-f-explains-veto/"
+   }
+  },
+  "why": "Same veto and the same senate confirmation from one article; the merged body keeps Survance's accusation from one side and Zaczek's objection and the six-member board detail from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2020-21",
+  "remove": [
+   "Associate provost rebuffed SGA's P/D/F request; computers bill passes 28-3",
+   "Provost's office rejects SGA's Pass/D/Fail request; petition passes 3,000 signatures"
+  ],
+  "entry": {
+   "date": "2020-11-18",
+   "title": "Provost's office rejected SGA's Pass/D/Fail request; computers bill passed 28-3",
+   "body": "President Garrett Edmonds told senators that Associate Provost Rob Hale had defended the university's decision to extend the class drop deadline rather than restore Pass/D/Fail grading, and said he was \"deeply disturbed\" by the response. Edmonds urged senators to email the Faculty Senate and the provost and to keep circulating his petition, which had passed 3,000 signatures. Senator Brenna Mathews argued the policy left students choosing between attending in person and paying for an extra semester. The senate separately voted 28-3 to fund recycled computers for the SGA office, a number scaled back to meet CDC guidance.",
+   "src": {
+    "label": "Herald, 18 Nov 2020",
+    "url": "https://wkuherald.com/13074/news/sga-discusses-p-d-f-option-new-computers-at-weekly-meeting/"
+   }
+  },
+  "why": "Same meeting report from one article; the merged body keeps Brenna Mathews's argument from one side and Edmonds's full name and his call to email the Faculty Senate and provost from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2022-23",
+  "remove": [
+   "A Title IX report seeks the President's removal",
+   "Title IX complaint against SGA president seeks his removal"
+  ],
+  "entry": {
+   "date": "2023-02-19",
+   "title": "Title IX complaint against the SGA president sought his removal",
+   "body": "A Title IX report filed with Student Conduct on 19 February 2023 accused President Cole Bornefeld, described in the report as student regent and representative of the student body, of gender-based harassment over four Turning Point USA Instagram posts he liked. The complaint sought his removal, a public statement from WKU and a public apology; the complainant's identity was redacted from the records released to the Herald. Spokesperson Jace Lux said the university does not comment on complaints made to the Office of Student Conduct. Removing an executive who will not resign requires written endorsement from at least 20 percent of the senate, a wait of at least fourteen days and a two-thirds vote of the full senate sitting as a judicial body; the Herald's report of 2 March recorded no outcome.",
+   "src": {
+    "label": "Herald, 2 Mar 2023",
+    "url": "https://wkuherald.com/70863/news/title-ix-compliant-filed-against-sga-president-over-social-media-posts-he-liked/"
+   }
+  },
+  "why": "The sides disagreed on the date, one using the filing date and one the publication date; the cited article says the report was filed Feb. 19, so the entry carries that date with the fuller 2 March citation, and it notes that the report recorded no outcome."
+ },
+ {
+  "decision": "merge",
+  "year": "2022-23",
+  "remove": [
+   "Election reform bill failed 19-15",
+   "Election reform bill fails 19-15; Dance Big Red funding rejected"
+  ],
+  "entry": {
+   "date": "2023-03-22",
+   "title": "Election reform bill failed 19-15; Dance Big Red funding rejected",
+   "body": "Bill 39-23-S, which would have moved the transfer, non-traditional and first-generation senate seats to the fall election and required a two-thirds senate vote before a vacant seat could become an at-large seat, failed 19-15, short of the two-thirds needed. Sponsor Neel Patel, the Gatton Academy senator, called reliance on the president to convert vacancies a dangerous practice for a government organization. Bill 40-23-S, funding an Afro-Latinidad cultural event on 3 April, passed unanimously. Bill 41-23-S, funding Dance Big Red, failed.",
+   "src": {
+    "label": "Herald, 22 Mar 2023",
+    "url": "https://wkuherald.com/71147/news/sga-proposes-changes-to-election-process-passes-funding-for-afro-latinidad-event/"
+   }
+  },
+  "why": "Same meeting and the same three votes from one article; the merged body keeps the 3 April event date from one side and Patel's Gatton Academy seat and the bill numbers from the other."
+ },
+ {
+  "decision": "merge",
+  "year": "2023-24",
+  "remove": [
+   "Uber voucher program and parking fee measures",
+   "SGA launches Uber voucher program and moves against parking fees"
+  ],
+  "entry": {
+   "date": "2024-02-15",
+   "title": "SGA launched an Uber voucher program and moved against parking fees",
+   "body": "President Sam Kurtz and Chief of Staff Donte Reed announced 450 Uber vouchers worth $10 each, given out through weekly social media giveaways, senate meeting attendance, SGA events and need-based scholarships. Resolution 18-23-S, written by Speaker of the Senate Sydney Denney and Reed, put SGA on record supporting a $50 cap on student parking fees, noting citations ranged from $10 to $600. Bill 19-23-S set aside $700 from the legislative discretionary budget to pay citations for financially vulnerable students, excluding tickets for disability, safety zone or fire lane violations. Bill 23-23-S allocated a further $1,045 for Dental Hygiene Center and ID Center vouchers, and all the legislation passed unanimously.",
+   "src": {
+    "label": "Herald, 15 Feb 2024",
+    "url": "https://wkuherald.com/74907/news/sga-announces-uber-voucher-program-passes-legislation-to-lower-student-parking-fees/"
+   }
+  },
+  "why": "The sides listed different distribution channels for the vouchers, and the cited article shows both were partial, so the merged body carries all four channels along with Denney's authorship and the $1,045 voucher bill."
+ },
+ {
+  "decision": "merge",
+  "year": "2025-26",
+  "remove": [
+   "Senate revived the transcript voucher program",
+   "Transcript voucher program reestablished"
+  ],
+  "entry": {
+   "date": "2025-11-25",
+   "title": "Senate revived the transcript voucher program with $195 for 15 vouchers",
+   "body": "The senate passed Bill 24-25-F, introduced by Legislative Operations Committee Chair Caden Lucas, allocating $195 from the legislative discretionary fund for 15 transcript vouchers handed out at the SGA office, one per student per semester in exchange for an official transcript from the registrar. Lucas said WKU charges $13 to send a single transcript and that the cost stacks as students send more. The same meeting passed Bill 25-25-F funding a Professor of the Month award and Bill 26-25-F funding replacement ping pong paddles and balls for the DSU recreation area.",
+   "src": {
+    "label": "Herald, 27 Nov 2025",
+    "url": "https://wkuherald.com/89272/news/sga-votes-to-assist-with-student-transcripts/"
+   }
+  },
+  "why": "The sides disagreed on the date; the cited article shows the vote took place at the Tuesday, 25 November meeting and was published on 27 November, so the meeting date is used and the bill numbers for the other two measures are added."
+ }
+]

@@ -2827,9 +2827,9 @@ council then <a href="y/2012-13.html#e-20130416-1">declined to contest it</a>.</
 
 <h3 class="sub">Where its power ended</h3>
 
-<p>Two votes three months apart taught the organization the limits of consent. On 24 September
+<p>Two votes three months apart taught the organization the limits of consent. On 22 September
 2015 the senate voted 21-4 to
-<a href="y/2015-16.html#e-20150924-1">disapprove the process by which the Confucius Institute
+<a href="y/2015-16.html#e-20150922-1">disapprove the process by which the Confucius Institute
 building was approved</a>, after Ransdell signed the contract in China in December 2014, more
 than a month before the Board of Regents voted on it. President Jay Todd Richey wrote that
 senators had warned him the vote would make powerful enemies. The Regents declined to revisit
@@ -3321,12 +3321,54 @@ h3.sub+.note{margin-top:14px}
 """
 
 
+ANCHORS = {}
+
+
+def index_anchors(ys):
+    """Every anchor each year page will actually publish, so a link written
+    against an older shape of the record can be repaired rather than left to
+    land nowhere. Editing the archive moves anchors: merging two entries into
+    one, or correcting a date, renumbers everything that shared that day."""
+    ANCHORS.clear()
+    for y in ys:
+        seen = {}
+        ANCHORS[y["id"]] = [event_anchor(e, seen)
+                            for e in sorted(y["events"], key=lambda e: e["date"])]
+
+
+def repair_anchors(html):
+    """Point every link at an anchor the year page really publishes.
+
+    Prose written by hand names an entry by its anchor, and anchors move when
+    the record is edited. Rather than leave a link landing nowhere, send it to
+    another entry on the same day, or failing that to the year itself."""
+    def sub(m):
+        up, yid, aid = m.group("up"), m.group("yid"), m.group("aid")
+        live = ANCHORS.get(yid)
+        if live is None or aid in live:
+            return m.group(0)
+        same = [x for x in live if x.startswith(aid[:10] + "-")]
+        return (f'href="{up}y/{yid}.html#{same[0]}"' if same
+                else f'href="{up}y/{yid}.html"')
+    return re.sub(r'href="(?P<up>(?:\.\./)*)y/(?P<yid>[0-9\-]+)\.html'
+                  r'#(?P<aid>e-\d{8}-\d+)"', sub, html)
+
+
 def _yhref(yid):
-    """A year id, optionally with an event anchor: 1966-67 or 1966-67#e-19660426-1."""
-    if "#" in yid:
-        a, b = yid.split("#", 1)
-        return f"y/{a}.html#{b}"
-    return f"y/{yid}.html"
+    """A year id, optionally with an event anchor: 1966-67 or 1966-67#e-19660426-1.
+
+    A named anchor that no longer exists is repaired: first to another entry on
+    the same day, and failing that the fragment is dropped so the link still
+    lands on the right year rather than nowhere at all."""
+    if "#" not in yid:
+        return f"y/{yid}.html"
+    a, b = yid.split("#", 1)
+    live = ANCHORS.get(a)
+    if live is not None and b not in live:
+        day = b[:10] if re.fullmatch(r"e-\d{8}-\d+", b) else None
+        same = [x for x in live if day and x.startswith(day + "-")]
+        b = same[0] if same else None
+    return f"y/{a}.html#{b}" if b else f"y/{a}.html"
 
 
 # Each pattern: id, heading, span, what it is, how it changed, and dated instances.
@@ -4687,7 +4729,7 @@ FIGHTS = [
    ("2006", "2005-06#e-20060408-1",
     "The construction fee passed 9-1 with the student regent abstaining; her proposal to "
     "exempt the next year&#8217;s seniors was rejected 10-1."),
-   ("2015", "2015-16#e-20150924-1",
+   ("2015", "2015-16#e-20150922-1",
     "The senate voted 21-4 to disapprove of the procedure by which the Confucius Institute "
     "building was authorised. The board declined to revisit it."),
    ("2016", "2016-17#e-20160819-1",
@@ -5618,6 +5660,7 @@ def main():
     ys = raw["years"]
     meta = raw.get("_meta", {})
     apply_photo_overlay(ys)
+    index_anchors(ys)
     leg = json.loads(LEGMETA.read_text())["entries"] if LEGMETA.exists() else []
     by_session = {}
     for e in leg:
@@ -5635,15 +5678,15 @@ def main():
     YDIR.mkdir(parents=True, exist_ok=True)
     HDIR.mkdir(parents=True, exist_ok=True)
 
-    (SITE / "index.html").write_text(render_index(ys, len(leg), n_herald))
+    (SITE / "index.html").write_text(repair_anchors(render_index(ys, len(leg), n_herald)))
     for i, y in enumerate(ys):
-        (YDIR / f'{y["id"]}.html').write_text(
+        (YDIR / f'{y["id"]}.html').write_text(repair_anchors(
             render_year(y, ys[i - 1] if i else None,
                         ys[i + 1] if i < len(ys) - 1 else None,
-                        by_session.get(y["id"], ()), repeats))
+                        by_session.get(y["id"], ()), repeats)))
     hist = render_history(ys, herald)
     for path, page in hist.items():
-        (SITE / path).write_text(page)
+        (SITE / path).write_text(repair_anchors(page))
     # a year that has been renamed or a decade page that no longer exists should
     # not linger in the output
     keep_years = {f'{y["id"]}.html' for y in ys}
@@ -5654,19 +5697,19 @@ def main():
     for f in HDIR.glob("*.html"):
         if f.name not in keep_hist:
             f.unlink()
-    (SITE / "story.html").write_text(render_story(ys))
-    (SITE / "patterns.html").write_text(render_patterns(ys))
-    (SITE / "events.html").write_text(render_programs(ys))
+    (SITE / "story.html").write_text(repair_anchors(render_story(ys)))
+    (SITE / "patterns.html").write_text(repair_anchors(render_patterns(ys)))
+    (SITE / "events.html").write_text(repair_anchors(render_programs(ys)))
     (SITE / "legislation.html").write_text(render_legislation(leg))
-    (SITE / "corrections.html").write_text(render_corrections(ys))
+    (SITE / "corrections.html").write_text(repair_anchors(render_corrections(ys)))
 
     n_port = sum(1 for y in ys for l in y["leaders"] if l.get("photo"))
     n_gal = sum(len(y.get("photos") or []) for y in ys)
     n_docs = sum(len(y.get("documents") or []) for y in ys)
-    (SITE / "about.html").write_text(
-        render_about(ys, meta, len(leg), n_herald, n_docs, n_port, n_gal))
-    (SITE / "sources.html").write_text(
-        render_sources(ys, leg, herald, n_docs, n_port, n_gal))
+    (SITE / "about.html").write_text(repair_anchors(
+        render_about(ys, meta, len(leg), n_herald, n_docs, n_port, n_gal)))
+    (SITE / "sources.html").write_text(repair_anchors(
+        render_sources(ys, leg, herald, n_docs, n_port, n_gal)))
 
     if LEG.is_dir():
         shutil.copytree(LEG, SITE / "legislation", dirs_exist_ok=True)
