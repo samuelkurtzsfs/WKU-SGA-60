@@ -562,7 +562,10 @@ def money_line(e):
 
 
 # ---------------------------------------------------------------- pieces
-REGENT_SEAT_CREATED = 1968
+# The seat was created in April 1968, inside the 1967-68 academic year, and
+# William Menser took it while serving as that year's president. The year the
+# archive starts counting the dual office from is therefore 1967-68, not 1968-69.
+REGENT_SEAT_CREATED = 1967
 
 
 def held_both(l, y):
@@ -573,6 +576,31 @@ def held_both(l, y):
     held the seat - usually because the president was ineligible."""
     return (l["role"] == "president" and len(y["leaders"]) == 1
             and y["start"] >= REGENT_SEAT_CREATED)
+
+
+# How many people have held each office, and in what order. A person is counted
+# once, at their first term, so a second term does not make a second holder.
+ORDINAL = {"president": {}, "regent": {}}
+
+
+def index_offices(ys):
+    for k in ORDINAL:
+        ORDINAL[k].clear()
+    for y in ys:
+        for l in y["leaders"]:
+            if l["role"] == "president" and l["name"] not in ORDINAL["president"]:
+                ORDINAL["president"][l["name"]] = len(ORDINAL["president"]) + 1
+            if (l["role"] == "regent" or held_both(l, y)) \
+                    and l["name"] not in ORDINAL["regent"]:
+                ORDINAL["regent"][l["name"]] = len(ORDINAL["regent"]) + 1
+
+
+def nth(n):
+    if 10 <= n % 100 <= 20:
+        suf = "th"
+    else:
+        suf = {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suf}"
 
 
 def role_word(l, y=None):
@@ -640,6 +668,13 @@ def render_leader(l, y, also):
     head = f'{h(l["name"])} <span class="r">{role_word(l, y)}, {h(y["id"])}</span>'
     facts = [("Office", role_word(l, y).capitalize()),
              ("Term recorded here", h(y["id"]))]
+    place = []
+    if ORDINAL["president"].get(l["name"]):
+        place.append(f'the {nth(ORDINAL["president"][l["name"]])} president')
+    if ORDINAL["regent"].get(l["name"]):
+        place.append(f'the {nth(ORDINAL["regent"][l["name"]])} student regent')
+    if place:
+        facts.append(("Place in the line", h(" and ".join(place))))
     if l.get("plaque_term") and l["plaque_term"] != y["id"]:
         facts.append(("On the plaque", h(l["plaque_term"])))
     line = confidence_line(l, y["id"])
@@ -3103,6 +3138,9 @@ def render_about(ys, meta, n_leg, n_herald, n_docs, n_port, n_gal):
     n_ev = sum(len(y["events"]) for y in ys)
     n_lead = sum(len(y["leaders"]) for y in ys)
     n_prog = sum(1 for y in ys for e in y["events"] if is_program(e))
+    n_pres = len(ORDINAL["president"])
+    n_reg = len(ORDINAL["regent"])
+    n_pterm = sum(1 for y in ys for l in y["leaders"] if l["role"] == "president")
     thick = sorted(ys, key=lambda y: -len(y["events"]))[:1][0]
     body = f"""
 <header class="head"><div class="wrap">
@@ -3151,7 +3189,12 @@ special election the following month.</p>
 <div class="prose">
 <p>The archive holds one page for each of the {len(ys)} academic years from {h(ys[0]["id"])} to
 {h(ys[-1]["id"])}, {n_ev} dated entries, and {n_lead} presidents and student regents with
-their terms as far as the record supports them. Entries cover the organization, not only its presidents: elections and turnout,
+their terms as far as the record supports them. {n_pres} people have been student body
+president, holding {n_pterm} terms between them, and {n_reg} people have held the student
+seat on the Board of Regents since it was created in April 1968; each of them is given their
+number in the line on their year page. The two counts differ because for most of the last
+sixty years one person held both offices, and because the archive cannot yet say who held
+the seat in 1981-82, the year Marcell Bush resigned and David Payne finished the term. Entries cover the organization, not only its presidents: elections and turnout,
 budgets, appointments, committee work, resolutions that passed and resolutions that failed,
 and the fights with the administration and the <cite>Herald</cite>. Campus events that shaped
 a year are included where they bear on student government and are marked as such.</p>
@@ -5661,6 +5704,7 @@ def main():
     meta = raw.get("_meta", {})
     apply_photo_overlay(ys)
     index_anchors(ys)
+    index_offices(ys)
     leg = json.loads(LEGMETA.read_text())["entries"] if LEGMETA.exists() else []
     by_session = {}
     for e in leg:
