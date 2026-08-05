@@ -368,6 +368,10 @@ BOARD_CSS = """
 .starthere span{display:block;color:var(--ink2);font-size:.92rem;margin-top:4px}
 
 /* ---- the story, on the front page ---- */
+.twoup{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin:30px 0 0}
+@media(max-width:820px){.twoup{grid-template-columns:1fr;gap:0}}
+.twoup .readfirst{margin:0}
+@media(max-width:820px){.twoup .readfirst+.readfirst{border-top-width:1px}}
 .readfirst{display:block;text-decoration:none;color:var(--ink);border-top:2px solid var(--black);
  border-bottom:1px solid var(--line);padding:20px 0 22px;margin:30px 0 0}
 .readfirst:hover{color:var(--ink)}
@@ -416,7 +420,7 @@ def name_searches(name):
 
 # ---------------------------------------------------------------- shell
 NAV_ITEMS = [("index.html", "The board"), ("story.html", "The story"),
-             ("history.html", "Timeline"),
+             ("patterns.html", "Patterns"), ("history.html", "Timeline"),
              ("legislation.html", "Legislation"), ("corrections.html", "Corrections"),
              ("sources.html", "Sources"), ("about.html", "About and method")]
 
@@ -1027,6 +1031,7 @@ def render_index(ys, n_leg, n_herald):
 </div></header>
 
 <div class="wrap">
+ <div class="twoup">
  <a class="readfirst" href="story.html">
   <p class="lab">Start here</p>
   <h2>The story</h2>
@@ -1036,6 +1041,16 @@ def render_index(ys, n_leg, n_herald):
   within days. Every claim links back to the year it came from.</p>
   <span class="go">Read the narrative</span>
  </a>
+ <a class="readfirst" href="patterns.html">
+  <p class="lab">Or read across</p>
+  <h2>The patterns</h2>
+  <p>What recurs rather than what happened: campus lighting, textbook prices, tuition and the
+  road to Frankfort, the turnout numbers in sequence, the constitutional rewrites that won the
+  organization almost no new power, and sixty years of verdicts on whether anyone was
+  listening.</p>
+  <span class="go">Read the patterns</span>
+ </a>
+ </div>
 
  <div class="tools">
   <label class="field" for="q"><span class="lab">Search the board</span>
@@ -3074,6 +3089,2074 @@ if(u)u.textContent=location.href.split('/').slice(0,-1).join('/')+'/';</script>"
                  body, "", depth=0, current="about.html")
 
 
+# ---------------------------------------------------------------- patterns
+PATTERNS_CSS = """
+.contents{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+ padding:18px 0 20px;margin:30px 0 0;max-width:46rem}
+.contents ol{list-style:none;margin:12px 0 0;padding:0;
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0 30px}
+.contents li{padding:8px 0;border-top:1px solid var(--line2)}
+.contents a{font-family:var(--display);font-weight:650;text-decoration:none;
+ border-bottom:1px solid rgba(176,30,36,.35)}
+.contents span{display:block;font-family:var(--mono);font-size:.76rem;color:var(--ink3);
+ letter-spacing:.05em;margin-bottom:3px}
+.part{scroll-margin-top:14px}
+.parthead{border-top:2px solid var(--black);margin:78px 0 0;padding-top:17px}
+.parthead:first-of-type{margin-top:42px}
+.parthead .n{font-family:var(--mono);font-size:.78rem;letter-spacing:.07em;color:var(--red);
+ display:block}
+.parthead h2{font-size:clamp(1.55rem,3.7vw,2.15rem);line-height:1.06;margin:9px 0 0}
+.stand{max-width:37rem;color:var(--ink2);font-size:1.06rem;line-height:1.6;margin:14px 0 26px}
+.note{max-width:37rem;font-size:1.02rem;line-height:1.64;margin:0 0 1.1em}
+.finding{border-left:3px solid var(--red);padding:2px 0 2px 20px;margin:28px 0 32px;
+ max-width:35rem;font-family:var(--display);font-weight:650;font-size:1.18rem;
+ line-height:1.38;letter-spacing:-.01em;text-wrap:balance}
+.finding b{display:block;font-family:var(--ui);font-weight:400;font-size:.83rem;
+ letter-spacing:0;color:var(--ink3);margin-top:9px;line-height:1.5}
+.pindex{margin:0 0 6px;padding:0;list-style:none;max-width:46rem;
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0 30px}
+.pindex li{padding:9px 0;border-top:1px solid var(--line2);font-size:.93rem}
+.pindex a{text-decoration:none;border-bottom:1px solid rgba(176,30,36,.32);
+ font-family:var(--display);font-weight:650}
+.pindex .sp{display:block;font-family:var(--mono);font-size:.74rem;letter-spacing:.05em;
+ color:var(--ink3);margin-top:3px;font-variant-numeric:tabular-nums}
+.pat{border-top:1px solid var(--line);padding:30px 0 4px;scroll-margin-top:14px}
+.pat h3{font-size:1.16rem;margin:0}
+.pat .sp{display:block;font-family:var(--mono);font-size:.76rem;letter-spacing:.05em;
+ color:var(--ink3);margin-top:6px;font-variant-numeric:tabular-nums}
+.pat .what{max-width:37rem;color:var(--ink2);font-size:.98rem;margin:11px 0 0}
+.inst{list-style:none;margin:18px 0 0;padding:0;max-width:45rem}
+.inst li{display:grid;grid-template-columns:4.4rem 1fr;gap:0 22px;padding:10px 0;
+ border-top:1px solid var(--line2);font-size:.95rem}
+.inst p{margin:0;max-width:var(--measure)}
+.inst .yr{font-variant-numeric:tabular-nums;font-size:.85rem;color:var(--ink3);
+ text-decoration:none;border-bottom:1px solid rgba(176,30,36,.28);justify-self:start;
+ padding-top:2px}
+.inst .yr:hover{color:var(--red)}
+@media(max-width:560px){.inst li{grid-template-columns:1fr;gap:3px}
+ .inst .yr{padding-top:0}}
+.shift{max-width:37rem;margin:18px 0 4px;font-size:.95rem;color:var(--ink);
+ border-left:2px solid var(--line);padding-left:16px}
+.shift b{font-family:var(--display);font-weight:700}
+.tn{list-style:none;margin:22px 0 0;padding:0;max-width:46rem}
+.tn li{display:grid;grid-template-columns:4.4rem 6rem 1fr;gap:0 22px;padding:11px 0;
+ border-top:1px solid var(--line2);font-size:.95rem}
+.tn .yr{font-variant-numeric:tabular-nums;font-size:.85rem;color:var(--ink3);
+ text-decoration:none;border-bottom:1px solid rgba(176,30,36,.28);justify-self:start;
+ padding-top:4px}
+.tn .yr:hover{color:var(--red)}
+.tn .c{font-family:var(--display);font-weight:700;font-size:1.05rem;
+ font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.tn p{margin:0;color:var(--ink2);max-width:var(--measure)}
+.tn li.up .c{color:var(--red)}
+@media(max-width:640px){.tn li{grid-template-columns:4.4rem 1fr;gap:0 18px}
+ .tn .c{grid-column:2}.tn p{grid-column:2;margin-top:3px}}
+.patfoot{border-top:1px solid var(--line);margin:60px 0 0;padding:18px 0 0;
+ max-width:37rem;color:var(--ink2);font-size:.95rem}
+@media print{.contents{display:none}.parthead{break-before:page}
+ .pat,.inst li,.tn li{break-inside:avoid}}
+"""
+
+
+def _yhref(yid):
+    """A year id, optionally with an event anchor: 1966-67 or 1966-67#e-19660426-1."""
+    if "#" in yid:
+        a, b = yid.split("#", 1)
+        return f"y/{a}.html#{b}"
+    return f"y/{yid}.html"
+
+
+# Each pattern: id, heading, span, what it is, how it changed, and dated instances.
+# An instance is (label, year id [+ anchor], what happened). Every instance is
+# checked against data/years.json; where the miners' reading was not in the record
+# it has been dropped rather than repeated.
+
+STANDING = [
+ {"id": "safety", "name": "Campus safety, lighting and getting home at night",
+  "span": "1983&#8211;2026",
+  "what": "Lighting, crosswalks, emergency telephones, escorts and rides home. Nothing "
+          "on lighting or night safety appears in this archive before 1983, which is a "
+          "fact about the surviving record as much as about the organization.",
+  "shift": "The 1980s ask was a resolution asking the university to install something. "
+           "The 1990s ask was hardware SGA lobbied for and then counted, one phone at a "
+           "time. From 1996 it stopped asking and ran the service itself, and by 2011 that "
+           "was costing it real money. By 2024 the answer was to subsidise a commercial "
+           "service instead, and to go back to crosswalks, where the 1987 congress started.",
+  "inst": [
+   ("1983", "1983-84#e-19830823-1",
+    "The <cite>Herald</cite>&#8217;s opening issue reported that the student escort service "
+    "would resume."),
+   ("1985", "1985-86#e-19851212-1",
+    "Student government defeated a campus lighting proposal in the last week of the autumn "
+    "semester."),
+   ("1987", "1987-88#e-19871001-1",
+    "The congress passed a crosswalk resolution; screens for dormitory windows filled much "
+    "of the same autumn agenda."),
+   ("1993", "1993-94#e-19931109-1",
+    "Bill 93-6-F proposed buying and installing emergency telephones on campus."),
+   ("1995", "1995-96#e-19950822-1",
+    "Two more emergency phones went in at the start of the year."),
+   ("1996", "1996-97#e-19960829-1",
+    "&#8220;Kristen Miller Makes Plan to Drive Party-Goers Home&#8221; is the earliest "
+    "indexed trace of what became Provide-A-Ride."),
+   ("2000", "1999-00#e-20000101-1",
+    "Provide-A-Ride ran free on Thursday and Friday nights, a fifteen-passenger van "
+    "answering calls in about fifteen minutes."),
+   ("2001", "2001-02#e-20011109-1",
+    "929 riders over twelve nights between 20 September and 9 November."),
+   ("2011", "2011-12#e-20111118-2",
+    "A surprise $15,000 retroactive Provide-A-Ride bill took $7,500 from organizational aid "
+    "and $7,500 from scholarships."),
+   ("2015", "2014-15#e-20150429-1",
+    "Bill 10-15-S put $825.95 into a surveillance camera by the Downing Student Union cash "
+    "machines, passing 15-5."),
+   ("2016", "2016-17#e-20161116-1",
+    "SafeWalk launched, pairing students who felt unsafe with student escorts."),
+   ("2017", "2016-17#e-20170208-1",
+    "Safe Ride lost its Thursday service as ridership fell from about 5,000 in autumn 2015 "
+    "to nearly 1,500 in autumn 2016. Richey blamed Uber&#8217;s arrival in Bowling Green."),
+   ("2022", "2021-22#e-20220216-2",
+    "Three crosswalk resolutions passed in a single night."),
+   ("2024", "2023-24#e-20240215-2",
+    "450 Uber vouchers worth $10 each, handed out through giveaways, meeting attendance and "
+    "need-based scholarships."),
+   ("2026", "2025-26#e-20260402-1",
+    "Resolution 7-26-S backed a crosswalk at Alumni Avenue and Kentucky Street."),
+  ]},
+ {"id": "parking", "name": "Parking, the shuttle and getting around campus",
+  "span": "1972&#8211;2026",
+  "what": "Fees, spaces, routes, shelters and fines. The clearest register in the archive "
+          "of a campus physically outgrowing itself.",
+  "shift": "In 1972 students questioned a $5 vehicle registration fee. In 1983 two hundred "
+           "of them voted for the idea of a shuttle at all. By 1991 the shuttle existed and "
+           "the fight was over its fare. By 2015 SGA was voting to raise its own tuition to "
+           "build a garage, and by 2024 it was capping the fines and paying them for "
+           "students who could not.",
+  "inst": [
+   ("1972", "1972-73#e-19720822-1",
+    "The regents approved a five dollar vehicle registration fee; the same issue reported "
+    "students questioning it."),
+   ("1979", "1978-79#e-19790426-1",
+    "One of the outgoing Thornton administration&#8217;s final acts was a pair of "
+    "resolutions on campus housing and parking policy."),
+   ("1983", "1982-83#e-19830210-1",
+    "206 students voted for a campus shuttle service."),
+   ("1985", "1985-86#e-19851121-1",
+    "The congress discussed running a shuttle from campus to the mall."),
+   ("1988", "1988-89#e-19881103-1",
+    "ASG sought shelters and seats for the campus shuttle stops."),
+   ("1991", "1991-92#e-19910901-1",
+    "Resolution 91-2-F asked for a one-way fare on the Big Red Shuttle for students who did "
+    "not ride daily."),
+   ("1994", "1994-95#e-19941101-1",
+    "Expanded shuttle service, a route SGA had pushed to extend, drew enthusiasm from shops "
+    "along the new stops."),
+   ("1997", "1997-98#e-19971111-1",
+    "A speed hump for the Regents Avenue lot and fifteen-minute parking spaces, among at "
+    "least fifteen resolutions passed in a fortnight."),
+   ("2002", "2001-02#e-20020327-1",
+    "Bedo pressed the university after the Forest Park Trailer Park purchase collapsed and "
+    "the Diddle Arena renovation removed about 200 spaces."),
+   ("2003", "2003-04#e-20030930-1",
+    "$8,000 asked for a shuttle shelter at the Jones-Jaggers stop."),
+   ("2014", "2014-15#e-20141001-1",
+    "A commuter focus group asked for an iWKU function listing free spaces in each lot, and "
+    "a South Campus park and ride."),
+   ("2015", "2014-15#e-20150303-1",
+    "SGA backed a roughly 500-space, $10 million structure on part of Creason Lot, funded by "
+    "a $30-a-semester tuition rise."),
+   ("2024", "2023-24#e-20240215-2",
+    "Resolution 18-23-S supported capping student parking fees at $50, noting citations ran "
+    "from $10 to $600; a companion bill set aside $700 to pay other students&#8217; fines."),
+   ("2026", "2025-26#e-20260414-2",
+    "The parking director told the senate the monthly diesel bill for WKU buses, normally "
+    "seven to eight thousand dollars, had reached fourteen."),
+  ]},
+ {"id": "textbooks", "name": "Textbooks and what they cost",
+  "span": "1968&#8211;2026",
+  "what": "Book swaps, exchanges, subsidies and the bookstore. One of the two oldest "
+          "continuous service ideas in the record, and the one reinvented in every "
+          "technology that came along.",
+  "shift": "The grievance never changed and the object never stopped changing shape: a "
+           "physical book swap, then a bulletin board in Grise Hall, then a dot-com link on "
+           "the SGA website, then a cash subsidy matched by the bookstore, then two iPads, "
+           "then a shelf of used Colonnade texts, then an argument about whether an "
+           "inclusive-access programme should default to opt-out.",
+  "inst": [
+   ("1968", "1967-68#e-19680222-1",
+    "The <cite>Herald</cite> reported the Associated Student Government directing a student "
+    "book swap, in the same issue that questioned its Judicial Council."),
+   ("1973", "1972-73#e-19730116-1",
+    "ASG sponsored a student book exchange."),
+   ("1975", "1975-76#e-19751125-1",
+    "A spring book exchange co-sponsored by ASG and Veterans on Campus."),
+   ("1984", "1984-85#e-19840920-1",
+    "The congress began studying a book exchange; by January 1985 the venture looked likely "
+    "to pause for the summer."),
+   ("1991", "1990-91#e-19910101-5",
+    "Bill #91-9-S proposed a book exchange bulletin board in Grise Hall."),
+   ("1998", "1998-99#e-19981201-1",
+    "Bill 98-12-F had SGA sponsor Bookswap.com."),
+   ("1999", "1999-00#e-19991130-1",
+    "Bill 99-17-F joined VarsityBooks.com and put a link on the SGA website, the first "
+    "e-commerce deal in the digitised SGA record."),
+   ("2005", "2004-05#e-20050414-1",
+    "$2,000 to Buy-A-Book, matched by the University Bookstore and amended unanimously to "
+    "help twenty students rather than ten."),
+   ("2006", "2006-07#e-20061128-2",
+    "Bill 11-06-F collected textbooks the bookstore would not buy back and sent them to "
+    "Africa."),
+   ("2008", "2008-09#e-20081119-1",
+    "$500 to start a Textbook Subsidy Program, with $500 matched by the bookstore."),
+   ("2011", "2011-12#e-20110930-1",
+    "Two iPads loaded with textbooks, lent free through the Educational Resource Center."),
+   ("2018", "2018-19#e-20181113-1",
+    "Bill 18-18-F, $1,000 for a used-textbook library for Colonnade courses, was tabled "
+    "24-3."),
+   ("2022", "2022-23#e-20220914-1",
+    "SGA pressed the administrator of the Big Red Backpack programme on why it defaulted to "
+    "opt-out."),
+  ]},
+ {"id": "housing", "name": "Housing and the residence halls",
+  "span": "1968&#8211;2026",
+  "what": "Who may be in the building, what is in the building, who the building is for, "
+          "and finally whether the building should still be standing.",
+  "shift": "Three distinct eras. Rules, from 1968 to about 1985: women&#8217;s dormitory "
+           "rules, curfews, visitation, coed halls, room inspections. Amenities, through the "
+           "1980s and 1990s: cable, change machines, ice machines, sprinklers, windows that "
+           "open. Then belonging and fabric, from 2011: the live-on requirement used as a "
+           "bargaining chip, integration, rooming questions, mould, failing air conditioning "
+           "and buildings scheduled for demolition.",
+  "inst": [
+   ("1968", "1967-68#e-19680229-1",
+    "A committee investigating women&#8217;s dormitory rules ran in the same issue as a "
+    "tuition increase and the Frankfort lobbying for a student regent."),
+   ("1970", "1970-71#e-19701027-1",
+    "The congress passed a resolution on the women&#8217;s curfew; the paper reported "
+    "abolition was unlikely that year and called the curfew obsolete."),
+   ("1972", "1971-72#e-19720428-1",
+    "A Mass Action Committee called for a strike over dormitory visitation in the same week "
+    "next year&#8217;s officers were installed."),
+   ("1973", "1973-74#e-19730925-1",
+    "An ASG housing survey urged improvement in dormitory conditions."),
+   ("1977", "1977-78#e-19771117-1",
+    "ASG and the Interhall Council backed a coed dormitory and the end of the door-ajar "
+    "visitation rule."),
+   ("1979", "1979-80#e-19791101-1",
+    "ASG rejected a move to close Diddle Hall."),
+   ("1980", "1980-81#e-19801113-1",
+    "Having voted them down in September, ASG re-endorsed dormitory room inspections in a "
+    "session the paper said it had nearly slept through."),
+   ("1981", "1980-81#e-19810324-1",
+    "Resolution 80-32 asked for change machines in the residence halls."),
+   ("1986", "1985-86#e-19860401-3",
+    "Bill 86-26-S asked for chains on Pearce-Ford Tower windows so they could be opened. "
+    "In February 1990 the congress was still asking."),
+   ("2011", "2011-12#e-20111005-1",
+    "Ransdell told senators that ending the two-year on-campus living requirement did not "
+    "work &#8220;from a business standpoint&#8221; while debt remained on renovations."),
+   ("2017", "2016-17#e-20170223-1",
+    "Housing and Residence Life&#8217;s ten-year plan made Southwest honors housing and "
+    "Northeast international housing, with no mention of the integration SGA had endorsed "
+    "27-1."),
+   ("2018", "2017-18#e-20180411-1",
+    "The senate voted 28-2 to make the sexual orientation question on housing applications "
+    "optional and add one asking whether an applicant was comfortable rooming with an LGBTQ "
+    "student."),
+   ("2021", "2021-22#e-20210929-1",
+    "SGA reported working with Housing and Residence Life on mould in the residence halls."),
+   ("2025", "2025-26#e-20250902-1",
+    "Caboni told the senate that community showers and bathrooms would be phased out as "
+    "halls were replaced."),
+   ("2026", "2025-26#e-20260416-1",
+    "Sitting beside the faculty regent, Robinson told the Faculty Senate to take a field "
+    "trip and see the state of the halls."),
+  ]},
+ {"id": "tuition", "name": "Tuition, fees and the road to Frankfort",
+  "span": "1968&#8211;2026",
+  "what": "Opposing the price of attending Western, lobbying the state about it, and &#8212; "
+          "once the presidency and the student regent seat merged &#8212; voting on it.",
+  "shift": "The 1970s and 1980s form was a resolution. The 1990s added the bus. The 2000s "
+           "industrialised it, with reserved seats and a transport budget, and then began to "
+           "doubt it: by 2012 the bus was cancelled when eight people signed up. Meanwhile "
+           "the same student who wrote the resolution against the increase now sat on the "
+           "board that passed it, and lost, usually alone.",
+  "inst": [
+   ("1968", "1967-68#e-19680229-1",
+    "A tuition increase ran in the same <cite>Herald</cite> issue as the lobbying for a "
+    "student seat on the Board of Regents."),
+   ("1977", "1976-77#e-19770308-1",
+    "Bill 9 formally opposed a proposed tuition increase, in the same March meeting that "
+    "created a Complaint Committee for student grievances."),
+   ("1981", "1980-81#e-19810205-1",
+    "ASG asked the state to evaluate higher education, in a legislative season dominated by "
+    "budget worries."),
+   ("1991", "1990-91#e-19910212-1",
+    "In a single February issue ASG wanted to cap tuition increases, proposed overhauling "
+    "the Detrex registration system and planned lobbying to protect financial aid."),
+   ("1992", "1992-93#e-19921211-1",
+    "The University Senate adopted Resolution R92.11 commending president Joe Rains for "
+    "joining a Frankfort rally against cuts."),
+   ("2000", "2000-01#e-20001027-1",
+    "The Board of Regents voted 8-2 to raise the $16 athletics fee by $80 in two "
+    "instalments. Student regent Cassie Martin was one of the two dissenters."),
+   ("2001", "2001-02#e-20010818-1",
+    "Bedo told the board an August vote sent students a message, then joined the unanimous "
+    "vote for a 9 per cent increase."),
+   ("2003", "2002-03#e-20030304-1",
+    "About 200 students from six public universities rallied at the Capitol. Sears said "
+    "seventeen took the initiative to get on the bus."),
+   ("2004", "2003-04#e-20040129-1",
+    "The congress approved $650 for transport and reserved 47 seats for a February rally, "
+    "under slogans about not balancing the budget on students&#8217; backs."),
+   ("2006", "2005-06#e-20060408-1",
+    "The regents approved a $46-a-semester construction fee 9-1 with Katie Dawson "
+    "abstaining, and rejected her proposal to exempt the next year&#8217;s seniors 10-1."),
+   ("2007", "2007-08#e-20071018-2",
+    "SGA ran Walk Out Western, a class walkout aimed at Frankfort. Ransdell said he could "
+    "not condone it."),
+   ("2008", "2007-08#e-20080424-1",
+    "Student regent Jeanne Johnson seconded a motion to cap the increase at 6 per cent. It "
+    "died with two votes and the board approved 9."),
+   ("2012", "2011-12#e-20120206-1",
+    "SGA cancelled the $1,175 bus to the Frankfort rally after eight people confirmed, and "
+    "arranged carpools instead."),
+   ("2016", "2015-16#e-20160224-1",
+    "Senators lobbied eight state officials in Frankfort against cuts that could have taken "
+    "as much as 9 per cent of WKU&#8217;s funding."),
+   ("2026", "2025-26#e-20260605-1",
+    "At his last board meeting Robinson cast the only vote against a $204 increase, the "
+    "sixth consecutive yearly rise."),
+  ]},
+ {"id": "aid", "name": "Scholarships and organizational aid",
+  "span": "1979&#8211;2026",
+  "what": "Money going out of the door: grants to student organizations and scholarships to "
+          "individual students. The largest discretionary line in the modern budget, and the "
+          "thing the organization most reliably points to when asked what it does.",
+  "shift": "It began as a request that somebody else do it. By the mid-2000s SGA was the "
+           "granting body, and its categories track whoever the campus had decided it was "
+           "neglecting: study abroad, disability, the displaced Jonesville community, "
+           "first-generation students, international students. Demand outran the money. "
+           "About forty applications a year became 398 in 2019 and 295 in a single spring "
+           "in 2025.",
+  "inst": [
+   ("1979", "1979-80#e-19791113-1",
+    "Resolution 79-10 urged the university to assign staff to administer academic "
+    "scholarships."),
+   ("2006", "2006-07#e-20061024-1",
+    "About $24,000 of the previous year&#8217;s $115,000 budget had gone unspent back into "
+    "WKU&#8217;s general fund; the administrative vice president added almost $10,000 more "
+    "to organizational aid."),
+   ("2010", "2010-11#e-20100914-1",
+    "The scholarship budget rose from $12,000 to $20,000 and general senate funding fell "
+    "from $20,000 to $12,000 to pay for it."),
+   ("2012", "2011-12#e-20120420-1",
+    "About $34,000 in organizational aid reached roughly 50 organizations."),
+   ("2016", "2016-17#e-20160907-1",
+    "Bill 4-16-F created SGA&#8217;s first scholarships for students with disabilities, "
+    "passing unanimously after a sophomore told senators his ADHD and dyslexia had cost him "
+    "merit money."),
+   ("2016", "2016-17#e-20161130-2",
+    "$750, matched by $100, created the Jonesville Memorial Scholarship for the Black "
+    "community WKU bought and displaced."),
+   ("2018", "2018-19#e-20181024-2",
+    "A recurring $2,000 first-generation scholarship passed 31-1."),
+   ("2019", "2019-20#e-20191120-1",
+    "A record 398 applications: 132 winter term, 122 first-generation, 81 study abroad, 31 "
+    "scholar development, 10 for the Intercultural Student Engagement Center and 22 for a "
+    "revived Earn-a-Computer scheme."),
+   ("2022", "2021-22#e-20220420-3",
+    "$15,500 across five scholarship programmes, including a first $500 for Black Student "
+    "Alliance awards, alongside $8,000 of organizational aid at $500 a group."),
+   ("2024", "2024-25#e-20240828-1",
+    "A $100,000 budget carrying $20,000 for organizational aid and $23,500 for "
+    "scholarships."),
+   ("2025", "2024-25#e-20250416-4",
+    "295 scholarship applications in one spring."),
+   ("2026", "2025-26#e-20260311-1",
+    "$10,000 split among 33 organizations in grants of $100 to $500."),
+  ]},
+ {"id": "grading", "name": "Grading",
+  "span": "1983&#8211;2020",
+  "what": "The scale itself and the mechanics around it: incompletes, the withdrawal "
+          "deadline, the ten-point scale, plus and minus grades, value-added grading and "
+          "finally pass/fail.",
+  "shift": "Early legislation was procedural and small. From 2003 the category became a "
+           "defensive war: three separate administrations proposed a finer grading scale and "
+           "each time it came back under a new name. In 2020 the polarity reversed. Instead "
+           "of resisting a grading change SGA campaigned for one, and won.",
+  "inst": [
+   ("1983", "1983-84#e-19831027-1",
+    "ASG passed its proposal on the deadline for incomplete grades after tabling it the "
+    "week before."),
+   ("1984", "1984-85#e-19840927-1",
+    "Its proposal for a new grade scale was denied, the first setback of the autumn."),
+   ("1994", "1994-95#e-19941101-3",
+    "Resolution 94-11-F asked that students receive a grade before the withdrawal deadline "
+    "so they could decide whether to drop."),
+   ("1997", "1997-98#e-19970923-1",
+    "Resolution 97-6-F called for the ten-point grade scale to be reinstated."),
+   ("2003", "2003-04#e-20031016-1",
+    "SGA unanimously passed legislation against the plus/minus system proposed in the "
+    "University Senate. By November its petition had passed 1,500 signatures."),
+   ("2007", "2006-07#e-20070424-1",
+    "Provost Barbara Burch told the University Senate she would not implement the "
+    "plus/minus system it had passed 36-23. President Jeanne Johnson credited SGA&#8217;s "
+    "campaign."),
+   ("2012", "2012-13#e-20121205-1",
+    "Provost Gordon Emslie pitched value-added grading to SGA; the senate rejected the "
+    "resolution in a close vote that February."),
+   ("2013", "2012-13#e-20130226-2",
+    "A plus-minus resolution was tabled with the idea floated of putting the question "
+    "straight to students on the spring ballot."),
+   ("2020", "2020-21#e-20201202-2",
+    "After the provost&#8217;s office refused and a petition passed 3,500 signatures in "
+    "three days, students could take a pass in place of a B or C."),
+  ]},
+ {"id": "library", "name": "Library hours",
+  "span": "1986&#8211;2026",
+  "what": "Keeping the library and the study space open later, particularly at finals.",
+  "shift": "It started as a request to the administration. From 1999 SGA simply paid for it "
+           "&#8212; $600 a year, described by 2011 as an annual practice, covering staff "
+           "time and lighting to 2 a.m. By 2025 the ask had grown to round-the-clock hours, "
+           "and the answer was that staffing made it unworkable.",
+  "inst": [
+   ("1986", "1985-86#e-19860320-1",
+    "ASG proposals asked for more library hours, in the same issue that pushed the spring "
+    "elections back a week."),
+   ("1989", "1989-90#e-19891109-1",
+    "Extended hours pursued through signed correspondence between president Amos Gott and "
+    "three named administrators."),
+   ("1999", "1999-00#e-19991130-1",
+    "A bill extended library hours during finals week, passed the same day as the "
+    "VarsityBooks.com deal."),
+   ("2010", "2010-11#e-20101207-1",
+    "The senate approved $600 to keep the library open until 2 a.m. during finals. "
+    "President Colton Jessie said continuing the service was never in question."),
+   ("2011", "2011-12#e-20111130-1",
+    "$600 to Helm-Cravens for a 2 a.m. closing Sunday through Thursday of finals week, by "
+    "then an annual practice."),
+   ("2025", "2024-25#e-20250226-1",
+    "Resolution 1-25-S sought 24/7 hours at the Commons at Helm during finals week."),
+   ("2025", "2024-25#e-20250418-1",
+    "The Faculty Senate endorsed it. The dean&#8217;s position was that staffing made "
+    "24-hour service unworkable."),
+  ]},
+ {"id": "technology", "name": "Technology",
+  "span": "1983&#8211;2026",
+  "what": "Whatever the university had not yet bought students. The subject changes "
+          "completely every decade; the posture does not.",
+  "shift": "Cable television gave way to photocopiers and email accounts, then typewriters, "
+           "then a printing quota, then a wireless network, then streaming video, then "
+           "iPads, charging stations, second-hand computers, graphing calculators and "
+           "finally bulk subscriptions to commercial artificial intelligence. The consistent "
+           "move is SGA buying, on a small scale, the device gap it can see.",
+  "inst": [
+   ("1983", "1983-84#e-19831013-1",
+    "ASG asked for cable television in dormitory rooms."),
+   ("1996", "1996-97#e-19960917-1",
+    "The September meeting created the SGA Technology Committee; student email accounts ran "
+    "through the autumn minutes."),
+   ("1997", "1997-98#e-19971104-1",
+    "A bill to buy typewriters for the library, in the same week as designated driver "
+    "cards."),
+   ("1999", "1999-00#e-19990915-2",
+    "Bill 99-10-F created an SGA Information Technology Director, with a companion bill "
+    "writing website guidelines into the constitution."),
+   ("2006", "2005-06#e-20060201-1",
+    "SGA took up a $45-a-semester fee to pay for a campus-wide wireless network, a health "
+    "centre and renovations."),
+   ("2006", "2006-07#e-20061128-2",
+    "Resolution 08-06-F backed a university study of a printing quota in the computer labs."),
+   ("2007", "2007-08#e-20071025-1",
+    "The Academic Affairs Committee prepared legislation for a roughly $1,995 subscription "
+    "to some 45,000 educational video clips."),
+   ("2013", "2013-14#e-20131024-1",
+    "$1,598 with WKU Libraries for five charging stations, two of them for the Glasgow and "
+    "Owensboro campuses."),
+   ("2020", "2020-21#e-20201118-1",
+    "The senate voted 28-3 to fund second-hand computers for the SGA office, the number "
+    "scaled back to meet distancing guidance."),
+   ("2024", "2023-24#e-20240228-1",
+    "Borrow-a-Calculator, created after a survey found 17 per cent of students surveyed "
+    "owned no calculator and 93 per cent had taken a class requiring one."),
+   ("2026", "2025-26#e-20260414-1",
+    "WKU&#8217;s new Artificial Intelligence Committee was in early talks about bulk "
+    "subscriptions for all students."),
+  ]},
+ {"id": "health", "name": "Mental health, health services and wellbeing",
+  "span": "1989&#8211;2026",
+  "what": "The campus clinic, vaccination, sexual assault prevention, suicide prevention "
+          "and counselling. Nothing on this appears in the archive before 1989.",
+  "shift": "It entered the record as a single resolution asking for education about a "
+           "disease, and as a defence of the campus clinic. From 2016 it became structural: "
+           "a standing committee, then a constitutionally defined one, then a required "
+           "termly meeting with the counselling director and the Title IX coordinator, then "
+           "a full-year programme with its own campus data.",
+  "inst": [
+   ("1989", "1989-90#e-19890101-1",
+    "Resolution 89-3-F had ASG write to administrators asking for education on AIDS, HIV "
+    "and sexually transmitted diseases."),
+   ("1991", "1991-92#e-19911212-1",
+    "The Residence Hall Association and ASG sent a joint mailing asking parents to support "
+    "the campus health service."),
+   ("2015", "2015-16#e-20151119-1",
+    "Resolution 6-15-F unanimously supported a meningitis vaccination requirement for "
+    "incoming freshmen in campus housing."),
+   ("2016", "2015-16#e-20160302-1",
+    "Ransdell declined it, citing a $143.77 cost for uninsured students, and said WKU would "
+    "stop short of requiring it."),
+   ("2016", "2016-17#e-20161012-2",
+    "The senate created SAVES, on sexual assault prevention, suicide prevention and "
+    "expanded mental health resources."),
+   ("2017", "2017-18#e-20170927-1",
+    "A resolution supporting a one-credit sexual assault education course in the Colonnade "
+    "passed 29-1."),
+   ("2022", "2021-22#e-20220323-1",
+    "Bill 22-22-S amended the constitution to redefine the Student Mental Health and "
+    "Wellbeing Committee&#8217;s duties."),
+   ("2023", "2022-23#e-20230215-2",
+    "Resolution 2-23-S unanimously supported putting Narcan in the residence halls."),
+   ("2025", "2024-25#e-20250326-1",
+    "Resolution 4-25-S supported a Mental Health and Suicide Prevention Advisory Board to "
+    "advise senior administrators."),
+   ("2026", "2025-26#e-20260418-1",
+    "A year-long push closed with an Out of the Darkness walk, built on a WKU "
+    "professor&#8217;s finding that 44 per cent of students reported symptoms of "
+    "depression."),
+  ]},
+ {"id": "green", "name": "Sustainability, recycling and the campus environment",
+  "span": "1973&#8211;2026",
+  "what": "Paper drives, bins and cleanups, then committees, food and a dedicated fee. The "
+          "thread has one documented hole of nearly twenty years.",
+  "shift": "A scrappy volunteer effort in the 1970s, which a <cite>Herald</cite> reporter "
+           "found had come to nothing by 1974. It returned in the early 1990s as budgeted "
+           "money and bins, and from 2015 became institutional: a committee created by "
+           "executive proposal, made permanent by constitutional amendment, and by 2024 "
+           "proposing a fee on students to fund the university office whose food pantry SGA "
+           "was already restocking.",
+  "inst": [
+   ("1973", "1972-73#e-19730116-1",
+    "A city recycling ordinance left ASG holding the bag on trash collection for its own "
+    "paper-recycling programme."),
+   ("1974", "1974-75#e-19741015-1",
+    "A <cite>Herald</cite> reporter found ASG&#8217;s ecology projects were non-existent, in "
+    "the same issue as protesters urging the organization be revamped."),
+   ("1991", "1991-92#e-19910924-1",
+    "A recycling resolution had its first reading in the same week officers went to a city "
+    "meeting over the noise ordinance."),
+   ("1993", "1992-93#e-19930413-1",
+    "The last meeting of the year took up Adopt-a-Spot and Earth Day alongside the budget "
+    "and the elections."),
+   ("2015", "2015-16#e-20150910-1",
+    "An executive proposal creating a sustainability committee passed unanimously."),
+   ("2016", "2015-16#e-20160427-1",
+    "Resolution 3-16-S supported recycling in the Downing Student Union, Garrett and Tower "
+    "food courts."),
+   ("2016", "2016-17#e-20161116-1",
+    "The Sustainability committee was written into the constitution as a permanent standing "
+    "committee."),
+   ("2021", "2020-21#e-20210303-2",
+    "Senators unanimously funded a community garden outside the Office of Sustainability."),
+   ("2022", "2021-22#e-20220118-2",
+    "$1,000 to restock the Office of Sustainability food pantry, drained by tornado "
+    "recovery."),
+   ("2024", "2023-24#e-20240222-1",
+    "Resolution 26-23-S put SGA behind a $5-a-semester sustainability fee, with the proceeds "
+    "going to the Office of Sustainability."),
+  ]},
+ {"id": "dining", "name": "Dining, food service and food insecurity",
+  "span": "1990&#8211;2026",
+  "what": "Hours, menus, contracts and, recently, whether students can afford to eat.",
+  "shift": "For twenty years the subject was convenience: microwaves, food court hours, "
+           "notice of closures, 24-hour dining, vegetarian options. In 2018 the object "
+           "changed from the food to the contract. From 2022 the frame is hunger: donated "
+           "meal swipes, a food insecurity clause in course syllabi, and a pantry bill "
+           "amended upward when federal food assistance was cut.",
+  "inst": [
+   ("1990", "1990-91#e-19900901-2",
+    "Bill #90-4-F requested microwaves in the campus cafeterias."),
+   ("1997", "1997-98#e-19971022-1",
+    "Outgoing correspondence to the administration covered food court hours alongside ice "
+    "machines and campus safety."),
+   ("2003", "2003-04#e-20031023-1",
+    "SGA unanimously called on Dining Services to advertise changes to service hours or "
+    "facilities at least two weeks in advance."),
+   ("2013", "2013-14#e-20130912-2",
+    "A resident assistant gathered more than 700 signatures in about a week for a 24-hour "
+    "dining option and brought the petition to SGA."),
+   ("2016", "2015-16#e-20160427-1",
+    "Resolution 5-16-S supported vegetarian options on the Downing Student Union meal plan."),
+   ("2018", "2017-18#e-20180228-1",
+    "A unanimous resolution sought renegotiation of the 20-year Aramark contract, under "
+    "which the fee for full-time students without a meal plan would climb from $75 to $350 "
+    "a semester."),
+   ("2021", "2021-22#e-20210929-1",
+    "Long queues in the Downing Student Union were raised with the senate, attributed partly "
+    "to a shortage of staff."),
+   ("2022", "2021-22#e-20220217-1",
+    "A meal-swipe donation programme let students give up unused swipes, with the WKU "
+    "Restaurant Group matching one for every four."),
+   ("2025", "2025-26#e-20251104-1",
+    "A food pantry bill introduced at $123 was amended up to $750 after cuts to federal food "
+    "assistance."),
+   ("2026", "2025-26#e-20260210-1",
+    "Restaurant Group representatives answered senators on Steak &#8217;n Shake seasoning, "
+    "Subway kiosks and the meal-swipe menu."),
+  ]},
+ {"id": "teaching", "name": "Evaluating the teaching",
+  "span": "1969&#8211;2021",
+  "what": "Student evaluation of faculty, courses, teaching assistants and advisors. "
+          "Repeatedly won, repeatedly lost, repeatedly restarted.",
+  "shift": "Every generation fought the same two-stage battle: get the evaluation done, "
+           "then get the results published. The first attempt was in 1969. A mandatory "
+           "published evaluation was won on paper in 2000, scaled back to five questions on "
+           "TopNet by 2004, extended to teaching assistants in 2013 and to academic advisors "
+           "in 2021.",
+  "inst": [
+   ("1969", "1969-70#e-19691107-1",
+    "An ASG committee compiled the results of Western&#8217;s first student "
+    "teacher-evaluation effort, after the paper had editorialised demanding the tabulation "
+    "move faster."),
+   ("1972", "1972-73#e-19720829-2",
+    "The <cite>Herald</cite> judged ASG&#8217;s course evaluation the best yet, as filing "
+    "opened for autumn offices."),
+   ("1987", "1987-88#e-19871029-1",
+    "ASG took up a proposal to make course evaluations a requirement."),
+   ("1989", "1988-89#e-19890216-1",
+    "January efforts to find a way to print the teacher evaluations preceded a "
+    "recommendation for an extra study day before exams."),
+   ("2000", "1999-00#e-20000404-1",
+    "Resolution 00-2-S asked the Faculty Senate to approve a mandatory, published "
+    "SGA-sponsored evaluation from that autumn."),
+   ("2004", "2004-05#e-20041116-1",
+    "A two-year pilot scaled the plan back to five questions added to faculty evaluations "
+    "and posted on TopNet."),
+   ("2013", "2012-13#e-20130409-2",
+    "A Board of Regents committee unanimously approved SGA&#8217;s teaching assistant "
+    "evaluation policy."),
+   ("2021", "2021-22#e-20211006-1",
+    "Resolution 1.21f, on the lack of any advisor evaluation system, passed 21-2 as the "
+    "first resolution of the 21st Senate."),
+  ]},
+ {"id": "voting", "name": "Voter registration and getting students to the polls",
+  "span": "1991&#8211;2026",
+  "what": "SGA turning outward to state and national elections, as opposed to worrying "
+          "about its own.",
+  "shift": "It began as a table in a corridor. In the 2000s it became a resolution, with the "
+           "bylaws suspended so it could pass before polling day. By 2018 it was a demand on "
+           "the university to cancel classes, and by the 2020s the ask was infrastructural: "
+           "a trolley to the polling place, then a polling place on campus.",
+  "inst": [
+   ("1991", "1991-92#e-19910924-1",
+    "The organization restarted its voter registration drive."),
+   ("1992", "1992-93#e-19920825-1",
+    "The first meeting of the autumn took up a new logo, discount cards and a voter "
+    "registration drive."),
+   ("1996", "1996-97#e-19960924-1",
+    "A voter registration drive sat on a September agenda alongside Provide-A-Ride, roller "
+    "blading rules and the budget."),
+   ("2003", "2003-04#e-20031030-1",
+    "The senate suspended its bylaws to pass a resolution urging students to vote on 4 "
+    "November and to research candidates&#8217; stands on higher education."),
+   ("2007", "2007-08#e-20071002-1",
+    "A mock gubernatorial election co-sponsored with the Secretary of State&#8217;s office "
+    "drew 127 student voters."),
+   ("2018", "2018-19#e-20180920-2",
+    "Resolution 5-18-F asked WKU to cancel classes for the midterm elections and gave $300 "
+    "to a registration campaign."),
+   ("2023", "2023-24#e-20231101-1",
+    "Caboni told the senate WKU would use the Historic RailPark&#8217;s trolley to carry "
+    "students to the State Street polling places on a class day."),
+   ("2024", "2024-25#e-20240910-1",
+    "The vice president told the senate he was working to get a polling centre on campus, "
+    "because otherwise he had to drive about three hours home to vote."),
+   ("2026", "2026-27",
+    "The chair of the Hilltoppers Vote Coalition was elected student body president."),
+  ]},
+ {"id": "race", "name": "Race, representation and who gets a seat",
+  "span": "1972&#8211;2026",
+  "what": "Who is in the room, whose name is on the building, and whether the organization "
+          "speaks for anyone outside itself.",
+  "shift": "It starts as individual fights the record holds mostly as headlines. WKU&#8217;s "
+           "student seat integrated the Board of Regents in 1974, seven years before the "
+           "first Black gubernatorial appointee. From the mid-1990s the mechanism shifts to "
+           "policy, and from 2013 to guaranteed seats. The 2016-17 peak drew national "
+           "coverage and a flat rejection; the 2025 amendment ran the other way, renaming "
+           "the diversity committee under a federal executive order.",
+  "inst": [
+   ("1972", "1972-73#e-19720929-1",
+    "ASG rejected President Dero Downing&#8217;s position on an Office of Black Affairs, one "
+    "of the sharpest confrontations of the autumn."),
+   ("1974", "1973-74#e-19740619-1",
+    "Gregory McKinney was sworn in as WKU&#8217;s first African American student regent, "
+    "seven years before the first Black gubernatorial appointee joined the board."),
+   ("1977", "1976-77#e-19770225-1",
+    "Fourteen members abstained as ASG rejected a resolution on discrimination."),
+   ("1979", "1978-79#e-19790215-1",
+    "ASG established a Minorities Board, following the previous autumn&#8217;s push to add "
+    "minority voices to the presidential screening panel."),
+   ("1997", "1996-97#e-19970417-1",
+    "SGA passed a measure calling for gay students to be included in Western&#8217;s "
+    "anti-discrimination policy, by a slim margin."),
+   ("2011", "2010-11#e-20110211-1",
+    "The <cite>Herald</cite> reported 21 of SGA&#8217;s 50 members belonged to Greek "
+    "organizations, more than 40 per cent, against less than 8 per cent of the student "
+    "body."),
+   ("2012", "2011-12#e-20120502-1",
+    "A transgender and gender-nonconforming support resolution passed 18-5 at the last "
+    "meeting of the year, watched by students who were not SGA members."),
+   ("2013", "2013-14#e-20130919-2",
+    "A referendum created a Navitas/ESL international student senate seat, passing with 310 "
+    "of 426 votes."),
+   ("2017", "2016-17#e-20170418-1",
+    "Resolution 6-17-S, supporting reparations for Black students, passed 19-10-1 and drew "
+    "national coverage. Ransdell stated within days that it was not a university position."),
+   ("2019", "2019-20#e-20191030-2",
+    "A resolution seeking discipline against a sorority over a video of members singing a "
+    "racial slur passed 24-7 and was vetoed 4-0."),
+   ("2021", "2021-22#e-20210806-1",
+    "Northeast Hall was renamed for Margaret Munday, WKU&#8217;s first African American "
+    "student to enrol, at the meeting where the student regent was sworn in."),
+   ("2024", "2023-24#e-20240329-1",
+    "The student group For the People told the senate that 40 per cent of it belonged to "
+    "Greek life and that SGA had a disconnect with cultural communities."),
+   ("2025", "2024-25#e-20250404-2",
+    "Bill 21-25-S renamed the Diversity, Equity and Inclusion Committee the Action and "
+    "Opportunity Committee, after a federal executive order. Students ratified it with 88 "
+    "per cent."),
+  ]},
+]
+
+VERDICTS = [
+ {"id": "v-deserve", "name": "&#8220;We do not deserve student government&#8221;",
+  "span": "1966&#8211;1987",
+  "what": "The <cite>Herald</cite> doubted the organization&#8217;s right to exist in the "
+          "week it was created, and recycled the doubt as a standing editorial frame for "
+          "twenty years.",
+  "shift": "Framed at first as a judgement on the student body &#8212; <em>we</em> do not "
+           "deserve it &#8212; and recast by the mid-1970s as a judgement on the "
+           "organization. By 1987 the word in the letters column was simply impotent.",
+  "inst": [
+   ("1966", "1966-67",
+    "The issue reporting Jim Haynes&#8217;s election as first president carried an editorial "
+    "headed &#8220;We Do Not Deserve Student Government.&#8221;"),
+   ("1966", "1966-67#e-19661027-1",
+    "Midway through the first autumn the paper judged leaders were performing well but "
+    "failing to communicate with the students they represented."),
+   ("1967", "1966-67#e-19670512-1",
+    "Reviewing the first year, the paper settled on three words: organization, progress and "
+    "apathy."),
+   ("1968", "1967-68#e-19680429-3",
+    "As Menser&#8217;s term ended the paper ran &#8220;Past Performance of Associated "
+    "Student Government Analyzed.&#8221; The archive holds the headline, not the text."),
+   ("1972", "1971-72#e-19720225-1",
+    "&#8220;Chaos Reigns at Associated Students Meeting,&#8221; alongside a piece arguing "
+    "student interest had collapsed and the organization had followed it down."),
+   ("1976", "1975-76#e-19760326-1",
+    "An editorial held ASG&#8217;s troubles up as a cautionary example for the "
+    "university&#8217;s newly forming Faculty Senate."),
+   ("1987", "1987-88",
+    "On election day the paper endorsed the challenger, printed a letter calling the "
+    "organization impotent and indexed the race itself as no contest."),
+  ]},
+ {"id": "v-apathy", "name": "Apathy, named and renamed each decade",
+  "span": "1967&#8211;2014",
+  "what": "The single most persistent charge. Apathy was diagnosed in editorials, drawn in "
+          "cartoons, made into a candidate&#8217;s platform and eventually turned into an "
+          "SGA-branded week.",
+  "shift": "The paper scolded non-voters into the late 1970s, then began explaining them: "
+           "the 1979 primary issue carried a defence of not voting. SGA answered by "
+           "adopting the word itself. After 2003 apathy is discussed as a turnout statistic "
+           "rather than a moral failing.",
+  "inst": [
+   ("1967", "1966-67#e-19670518-1",
+    "&#8220;Goof Government Needs Student Vote&#8221; ran as Menser&#8217;s administration "
+    "took over."),
+   ("1968", "1967-68#e-19680509-1",
+    "The issue reporting Bill Straeffer&#8217;s win carried &#8220;Elections Illustrate "
+    "Faults, Indifference.&#8221;"),
+   ("1979", "1979-80#e-19790412-1",
+    "830 students voted in the spring primary and the same issue carried a defence of "
+    "student apathy in ASG voting."),
+   ("1985", "1985-86#e-19850214-1",
+    "&#8220;Voter Apathy Can be Solved&#8221; ran with a cartoon on election apathy."),
+   ("1987", "1987-88#e-19871029-2",
+    "The paper argued apathy was killing both ASG and the Residence Hall Association."),
+   ("1990", "1989-90#e-19900222-1",
+    "Anti-Apathy Week drew enough criticism that president Amos Gott published a defence of "
+    "it a week later."),
+   ("1994", "1993-94#e-19940208-1",
+    "&#8220;Let&#8217;s Work Together for Change,&#8221; with a People Poll asking how SGA "
+    "could reach more students."),
+   ("2004", "2003-04#e-20040316-1",
+    "An editorial faulted students after 132 of about 18,000 voted on the new constitution, "
+    "contrasting it with 86 per cent turnout in South Africa&#8217;s 1999 election."),
+   ("2014", "2013-14#e-20140415-1",
+    "Reporting turnout of 908, an editorial called turnout below 1,000 pathetic and said the "
+    "student body could do better."),
+  ]},
+ {"id": "v-cartoons", "name": "The cartoons: drawing the presidents",
+  "span": "1980&#8211;1999",
+  "what": "For two decades the paper&#8217;s sharpest commentary on student government was "
+          "pictorial, and several cartoons took a named sitting president as their subject.",
+  "shift": "The cartoons begin with policy mockery, move by the end of the 1980s to "
+           "caricaturing the president himself, and end in images of emptiness: student "
+           "government in an empty room, then in a glass box. No editorial cartoon about SGA "
+           "appears anywhere in this archive after 1999.",
+  "inst": [
+   ("1980", "1980-81#e-19800911-1",
+    "A bill against bugs in the dormitories drew a cartoon of an imperilled cockroach."),
+   ("1983", "1983-84#e-19831013-1",
+    "A Lou Bloss cartoon on an ASG penalty ran in the same issue as the request for cable "
+    "television."),
+   ("1984", "1984-85#e-19841108-1",
+    "LaMont Jones withdrew from a revote and the same issue carried an editorial cartoon on "
+    "the organization."),
+   ("1985", "1984-85#e-19850411-1",
+    "The end of Jack Smith&#8217;s presidency was marked with a news story, an editorial "
+    "crediting his enthusiasm, and a cartoon."),
+   ("1989", "1988-89#e-19890202-1",
+    "John Chattin drew Scott Whitehouse as a salesman, alongside &#8220;Scott Whitehouse "
+    "Selling Good Government.&#8221;"),
+   ("1992", "1991-92#e-19920130-2",
+    "Patrick Richardson&#8217;s &#8220;Ventriloquist&#8217;s Dummy&#8221; took president "
+    "Heather Falmlen as its subject."),
+   ("1992", "1992-93#e-19920414-1",
+    "On election day the same cartoonist drew Joe Rains as Darth Vader."),
+   ("1995", "1994-95#e-19950425-1",
+    "A Stacy Curtis cartoon put student government in a glass box, paired with an editorial "
+    "on visibility."),
+   ("1999", "1998-99#e-19990420-1",
+    "A cartoon on nasty campaigns ran with the report that the Judicial Council had "
+    "overturned the spring election."),
+  ]},
+ {"id": "v-reply", "name": "Presidents answering back in print",
+  "span": "1972&#8211;2015",
+  "what": "A distinct sub-genre: the sitting or outgoing president using the "
+          "<cite>Herald</cite>&#8217;s own pages to correct, dispute or defend against its "
+          "coverage. One of the few places the archive preserves an officer&#8217;s voice.",
+  "shift": "Early replies correct facts. By the 1980s they complain about tone and about "
+           "cartoons. By the late 1990s the reply becomes documentary &#8212; circulating "
+           "the legislative record as the rebuttal &#8212; and after 2001 presidents publish "
+           "self-criticism rather than defence.",
+  "inst": [
+   ("1972", "1971-72",
+    "President Linda Jones published a piece headed &#8220;Associated Students Corrects "
+    "Herald.&#8221; The archive holds the headline, not the text."),
+   ("1977", "1977-78#e-19771027-1",
+    "After the editorial answering his questions about freshman campaign spending, Bob Moore "
+    "wrote back disputing it."),
+   ("1983", "1983-84#e-19831206-1",
+    "ASG voided its own procedures, the editorial page mocked it, and president Jack Smith "
+    "wrote in under the heading &#8220;Cartoon Aggravates.&#8221;"),
+   ("1985", "1984-85#e-19850405-1",
+    "A reader&#8217;s letter took issue with a <cite>Herald</cite> editorial about ASG in "
+    "the middle of the campaign season."),
+   ("1990", "1989-90#e-19900222-1",
+    "Amos Gott published a defence of Anti-Apathy Week in the same issue as ASG&#8217;s "
+    "demand that the Pearce-Ford Tower windows be opened."),
+   ("1998", "1998-99#e-19981210-1",
+    "Vice president Matthew Bastin circulated the autumn&#8217;s passed legislation to the "
+    "adviser, the officers and the <cite>Herald</cite>&#8217;s editor. The list was the "
+    "rebuttal."),
+   ("2001", "2001-02#e-20011129-1",
+    "President Leslie Bedo&#8217;s own opinion piece on meeting SGA&#8217;s goals but not "
+    "students&#8217; was answered in the same issue by a member of her own organization."),
+  ]},
+ {"id": "v-admin", "name": "Administrators speaking to and about it",
+  "span": "1966&#8211;2025",
+  "what": "University presidents, deans, provosts and general counsel appearing before the "
+          "body, answering it, overruling it or being rejected by it. After the "
+          "<cite>Herald</cite>, the most continuous relationship in the archive.",
+  "shift": "In the first years the administration creates and funds the body: Thompson "
+           "approves the constitution, the Dean of Students designs its budget. From the "
+           "1980s presidents come to meetings to ask SGA for something. From 2006 the "
+           "pattern is a formal written answer to SGA legislation. By 2025 the "
+           "administration is telling SGA what state law forbids it to fund.",
+  "inst": [
+   ("1966", "1966-67#e-19661110-1",
+    "Student government leaders met President Kelly Thompson to discuss campus problems."),
+   ("1967", "1966-67#e-19670530-1",
+    "Dean of Students Charles Keown sent Thompson a memo proposing a student fee structure "
+    "to create a budget for the new government, attaching fee models from universities "
+    "across the South and Midwest."),
+   ("1983", "1982-83#e-19830203-1",
+    "Dean Keown publicly questioned ASG&#8217;s constitutional revisions the week after they "
+    "were approved."),
+   ("1992", "1992-93#e-19921013-2",
+    "President Thomas Meredith came to the October meeting to talk about computers, laundry, "
+    "cable television, lighting and Potter Hall."),
+   ("2006", "2005-06#e-20060201-1",
+    "President Gary Ransdell urged senators to back the proposed construction fee before the "
+    "regents voted on it."),
+   ("2011", "2011-12#e-20111005-1",
+    "In his first visit of the semester Ransdell told senators that ending the two-year "
+    "housing requirement did not work from a business standpoint."),
+   ("2015", "2014-15#e-20150304-2",
+    "Ransdell emailed faculty and staff his official response to four SGA resolutions at "
+    "once."),
+   ("2020", "2020-21#e-20201118-2",
+    "Associate Provost Rob Hale rebuffed SGA&#8217;s Pass/D/Fail request; the president said "
+    "he was deeply disturbed."),
+   ("2025", "2025-26#e-20251001-1",
+    "General Counsel Andrea Anderson told the senate that House Bill 4 binds SGA&#8217;s "
+    "spending because SGA receives university money."),
+  ]},
+ {"id": "v-floor", "name": "Students confronting it from the floor",
+  "span": "1974&#8211;2025",
+  "what": "Non-members, and sometimes their own constituents, coming to meetings and forums "
+          "to tell the organization it had failed them.",
+  "shift": "Almost absent before 2000. From 2012 it becomes routine, and after the editorial "
+           "cartoons stop it is the archive&#8217;s main channel for criticism: petitions, "
+           "testimony about disability and racism, and organised groups reading SGA its own "
+           "demographics.",
+  "inst": [
+   ("1974", "1974-75#e-19741015-1",
+    "Protesters urged a revamping of the Associated Student Government, in the same issue "
+    "that reported its ecology projects were non-existent."),
+   ("2013", "2013-14#e-20130912-2",
+    "A resident assistant brought SGA a petition of more than 700 signatures for 24-hour "
+    "dining."),
+   ("2016", "2016-17#e-20160907-1",
+    "A sophomore told senators his ADHD and dyslexia had cost him merit scholarships. The "
+    "bill creating disability scholarships passed unanimously."),
+   ("2018", "2017-18#e-20180404-1",
+    "LGBTQ activists addressed the senate after a senator read Bible verses to explain his "
+    "vote against funding Lavender Graduation stoles."),
+   ("2023", "2022-23#e-20230222-2",
+    "The Queer Student Union told the senate it had removed SGA meetings from its list of "
+    "campus safe spaces."),
+   ("2024", "2023-24#e-20240329-1",
+    "The advocacy group For the People told the senate SGA was the only major organization "
+    "not to oppose a Kyle Rittenhouse campus visit, and called the executive board&#8217;s "
+    "response unacceptable."),
+   ("2025", "2024-25#e-20250225-1",
+    "A wheelchair user and honorary SGA member drove the resolution for an elevator in "
+    "Gordon Wilson Hall after being scheduled for a third-floor class in a 1927 building."),
+  ]},
+ {"id": "v-exit", "name": "Walking out: resignation and withdrawal",
+  "span": "1973&#8211;2025",
+  "what": "The strongest criticism short of a lawsuit: resigning, breaking affiliation, or "
+          "formally refusing to associate with the organization.",
+  "shift": "Early withdrawals are institutional and reversible &#8212; a delegation leaves a "
+           "statewide legislature and rejoins. From 2009 they are personal and reputational: "
+           "senators and justices resigning over appointments, complaints and ridicule, and "
+           "in 2023 an outside organization publicly withdrawing recognition of SGA as a safe "
+           "space.",
+  "inst": [
+   ("1973", "1973-74#e-19731204-1",
+    "ASG representative Reginald Glass resigned his post in protest, an early sign of strain "
+    "inside the congress."),
+   ("1987", "1987-88#e-19870910-1",
+    "ASG considered dropping its membership in the intercollegiate legislature."),
+   ("2009", "2009-10#e-20091020-1",
+    "Three senators resigned over the president&#8217;s nomination to the Student "
+    "Publications Committee, one saying the pick was not based on merit or experience."),
+   ("2015", "2015-16#e-20151203-3",
+    "Chief Justice Kelsey Luttrell resigned, saying the Judicial Council had been publicly "
+    "ridiculed and lacked support from fellow members."),
+   ("2016", "2016-17#e-20161012-1",
+    "A senator and a justice resigned the morning after a complaint of racist remarks by SGA "
+    "members was aired; the planned investigation was dropped because they had already "
+    "left."),
+   ("2017", "2016-17#e-20170222-1",
+    "Senator Chase Coffey resigned the same night the Executive Council vetoed his "
+    "unanimously passed resolution."),
+   ("2020", "2020-21#e-20200923-1",
+    "The Speaker of the Senate resigned and quit the executive vice president race after a "
+    "video showing him using a racial slur was sent anonymously to the paper."),
+   ("2023", "2022-23#e-20230222-2",
+    "The Queer Student Union said it would not associate with SGA until a public apology was "
+    "released."),
+  ]},
+ {"id": "v-greek", "name": "Greek dominance, the standing charge",
+  "span": "1974&#8211;2024",
+  "what": "That fraternities and sororities control the organization out of all proportion "
+          "to their numbers. Unusually, the archive supplies the arithmetic.",
+  "shift": "Reported as an observation about elections in the 1970s, quantified in 2011 at "
+           "more than 40 per cent of the membership against under 8 per cent of the student "
+           "body, legislated against and defeated by one vote in 2018, and thrown back at "
+           "SGA by outside students in 2024 with the same figure.",
+  "inst": [
+   ("1974", "1973-74#e-19740329-1",
+    "Jeff Consolo and Steve Henry won the spring election in a cycle whose primary the paper "
+    "said showed Greek influence."),
+   ("2011", "2010-11#e-20110211-1",
+    "21 of SGA&#8217;s 50 members belonged to Greek organizations, with two fraternities "
+    "accounting for nine of them."),
+   ("2011", "2010-11#e-20110401-1",
+    "The administrative vice president, who chaired the organizational aid committee, said "
+    "he would be succeeded by his committee co-chair and fraternity brother, who ran "
+    "unopposed."),
+   ("2018", "2017-18#e-20180124-1",
+    "A senator objected that nominating another fraternity man was hypocritical given the "
+    "executive board&#8217;s stated concern about Greek over-representation."),
+   ("2018", "2018-19#e-20181017-1",
+    "Bill 10-18-F, barring SGA funding to Interfraternity and Panhellenic chapters, failed "
+    "16-17. Its author, herself in a sorority, cited the University of Alabama."),
+   ("2019", "2019-20#e-20191002-1",
+    "The senate voted 17-15 to cancel a meeting for a sorority philanthropy event; two "
+    "senators organised a protest at the event instead."),
+   ("2024", "2023-24#e-20240329-1",
+    "For the People told the senate 40 per cent of it belonged to Greek life. Kurtz replied "
+    "that he did not control who chose to run."),
+  ]},
+ {"id": "v-money", "name": "Money as the sharpest charge",
+  "span": "1975&#8211;2024",
+  "what": "Financial trouble produces the harshest language in the archive, from the paper "
+          "and from SGA&#8217;s own members. Every decade from the 1970s has at least one "
+          "episode.",
+  "shift": "In the 1970s the charges were heard and settled internally. Between 1998 and 2011 "
+           "they were investigated by the paper and the university&#8217;s internal auditor, "
+           "and ended careers. From 2013 the criticism turns to conflict of interest and "
+           "procedure, and is brought by officers against each other.",
+  "inst": [
+   ("1975", "1975-76#e-19751024-1",
+    "Charges of ASG fund misuse were heard the same week the congress voted to create an "
+    "activities committee."),
+   ("1983", "1983-84#e-19830908-1",
+    "ASG offered its own members a commission on discount card sales, drawing columns headed "
+    "&#8220;Cheap Shots&#8221; and &#8220;And Old Tricks.&#8221;"),
+   ("2002", "2002-03#e-20020924-1",
+    "The <cite>Herald</cite>&#8217;s eleven-member editorial board called leaders&#8217; "
+    "ignorance about the missing gazebo money shameful."),
+   ("2004", "2004-05#e-20040824-2",
+    "WKU&#8217;s internal auditor found $872 in questionable purchases from an SGA dining "
+    "account. Former officers wrote to the paper about the president-elect&#8217;s lack of "
+    "integrity."),
+   ("2006", "2005-06#e-20060420-2",
+    "An editorial headed &#8220;SGA misspending&#8221; said members should not have to be "
+    "motivated by a giveaway to show up for meetings."),
+   ("2011", "2011-12#e-20111118-2",
+    "A $15,000 retroactive bill for a predecessor&#8217;s contract took $7,500 each from "
+    "organizational aid and scholarships. The president said he was shocked."),
+   ("2013", "2012-13#e-20130301-3",
+    "The president and three colleagues published a commentary attacking their own senate "
+    "for refusing to bar serving members from SGA-sponsored scholarships."),
+   ("2024", "2023-24#e-20240209-1",
+    "The Judicial Council censured the administrative vice president 6-0 for spending funds "
+    "before the senate authorised them."),
+  ]},
+ {"id": "v-praise", "name": "Praise, and who was willing to give it",
+  "span": "1967&#8211;2026",
+  "what": "The minority report. Praise in this archive comes overwhelmingly from three "
+          "places: individual letter writers, the outgoing body commending itself, and the "
+          "institution&#8217;s own formal resolutions. Rarely from the editorial page.",
+  "shift": "In the early years praise is a letter defending the idea of student government "
+           "at all. In the 1980s and 1990s it becomes institutional: commendation bills and "
+           "resolutions from the Board of Regents and the University Senate. After 2000 "
+           "editorial praise nearly vanishes, replaced by SGA&#8217;s own ceremonies. Praise "
+           "is also structurally under-recorded, because most of the pre-2003 record is a "
+           "headline index and the paper headlined complaints more readily than approval.",
+  "inst": [
+   ("1967", "1967-68#e-19671208-3",
+    "The issue carrying the ASG activity survey also ran a letter commending the "
+    "government&#8217;s efforts."),
+   ("1969", "1968-69",
+    "The outgoing administration&#8217;s own account of its year ran under &#8220;Associated "
+    "Students Produces Year of Advancement.&#8221;"),
+   ("1985", "1984-85#e-19850411-2",
+    "An editorial said Jack Smith&#8217;s enthusiasm had revived student interest in ASG."),
+   ("1986", "1985-86#e-19860403-1",
+    "The outgoing congress passed Bill 86-13-S commending president Mitchell McKinney; the "
+    "Board of Regents honoured him that August."),
+   ("1988", "1988-89#e-19881103-1",
+    "A week after ASG filled half its open seats and sought shelters for the shuttle stops, "
+    "an editorial said its efforts directly helped and served students."),
+   ("2008", "2007-08#e-20080718-1",
+    "A Board of Regents resolution thanked Jeanne Johnson for able leadership, faithful "
+    "service and dedication as the board&#8217;s student member."),
+   ("2022", "1993-94",
+    "Donald Smith, president in 1993-94, told the paper that structures had changed but a "
+    "voice for the students had remained."),
+   ("2025", "2024-25#e-20250416-2",
+    "At the 24th Senate&#8217;s final meeting the three executives each received a standing "
+    "ovation."),
+  ]},
+]
+
+# The turnout series, in sequence. (label, year id, count, note, jumped?)
+TURNOUT = [
+ ("1966", "1966-67#e-19660426-1", "2,538",
+  "The four-day referendum that ratified the constitution, 1,812 to 726. The high point of "
+  "the whole record, and it was a vote to create the organization rather than to staff it.",
+  True),
+ ("1968", "1968-69#e-19680502-1", "2,894",
+  "About 34 per cent of a roughly 8,500-student enrolment, in the second contested "
+  "presidential race, with contests all the way down the ballot. The only turnout percentage "
+  "in the entire archive.", True),
+ ("1976", "1975-76#e-19760402-1", "527",
+  "Ballots cast in the presidential primary. The 1970s yield no general-election total at "
+  "all.", False),
+ ("1978", "1978-79#e-19780928-2", "95",
+  "Voters in the freshman primary the week before a freshman president was elected by eleven "
+  "votes.", False),
+ ("1979", "1979-80#e-19790412-1", "830",
+  "The spring primary. The same issue carried a defence of not voting.", False),
+ ("1983", "1982-83#e-19830407-1", "500",
+  "About five hundred in the ASG primary; about 450 the following March. Primaries are the "
+  "only counts the 1980s preserve.", False),
+ ("1992", "1991-92#e-19920407-2", "0",
+  "The primary was cancelled outright for want of candidates. The same week the organization "
+  "voted to rename itself.", False),
+ ("1999", "1999-00#e-19990415-2", "1,436",
+  "Amanda Coates led 616-611; a recount narrowed it to 614-611. Five days later the Judicial "
+  "Council overturned the election.", False),
+ ("2002", "2001-02#e-20020411-1", "1,878",
+  "Jamie Sears beat Sam Stinson 1,284 to 594 in the first online voting the record "
+  "describes.", False),
+ ("2003", "2002-03#e-20030408-1", "2,014",
+  "The presidency was uncontested, but a $3 radio-station fee was on the ballot &#8212; the "
+  "first student referendum in SGA history.", True),
+ ("2004", "2003-04#e-20040316-1", "132",
+  "Students voting on the new constitution, out of about 18,000. It is the lowest number in "
+  "the archive and it decided the organization&#8217;s shape for the next twenty years.",
+  False),
+ ("2004", "2003-04#e-20040318-1", "1,232",
+  "The presidential election a fortnight later. The outgoing president said he was "
+  "disappointed by the turnout.", False),
+ ("2005", "2004-05#e-20050317-1", "1,740",
+  "Katie Dawson beat Josh Collins 1,268 to 472 in the only contested race on the ballot.",
+  False),
+ ("2007", "2006-07#e-20070201-1", "688",
+  "Votes for Jeanne Johnson in the special election for the vacant student regent seat, 41 "
+  "per cent of the ballots cast.", False),
+ ("2010", "2009-10#e-20100401-1", "1,150",
+  "Colton Jessie took 726 to Justin Thurman&#8217;s 424.", False),
+ ("2011", "2010-11#e-20110407-1", "1,066",
+  "Billy Stephens took 56 per cent. Both vice presidencies were uncontested, and all 35 "
+  "senate candidates were elected to 36 seats, each needing a single vote to win.", False),
+ ("2013", "2013-14#e-20130919-2", "564",
+  "The autumn senate election, which also carried the referendum creating an international "
+  "student seat.", False),
+ ("2014", "2013-14#e-20140415-1", "908",
+  "Down 555 votes on the year before, in a year the sitting president had run unopposed and "
+  "spent nothing. The editorial called it pathetic.", False),
+ ("2016", "2015-16#e-20160420-1", "2,442",
+  "One of the highest turnouts in the association&#8217;s history, in Richey&#8217;s "
+  "contested re-election, in the year of the Confucius Institute vote and the pub-name "
+  "override.", True),
+ ("2017", "2016-17#e-20170419-1", "1,579",
+  "A three-way race: Dahmer 930, Mujkanovic 305, Nellans 212. All six referendums passed.",
+  False),
+ ("2018", "2017-18#e-20180418-1", "2,378",
+  "A genuine three-way race decided 35-33-32 per cent, days after the Judicial Council had "
+  "disqualified the winning ticket and then downgraded the penalty.", True),
+ ("2021", "2022-23#e-20220921-2", "398",
+  "The autumn senate election. The figure survives only because the following "
+  "year&#8217;s story compared against it.", False),
+ ("2022", "2021-22#e-20220420-1", "1,448",
+  "Cole Bornefeld took 49 per cent. That autumn the fall election doubled, 805 against 398.",
+  False),
+ ("2023", "2022-23#e-20230419-2", "0",
+  "The Kurtz ticket ran unopposed; no turnout figure survives. It ran unopposed again in "
+  "2024.", False),
+ ("2025", "2024-25#e-20250415-1", "966",
+  "Rush Robinson elected unopposed. Kurtz had told the senate in February that his goal was "
+  "3,000 voters.", False),
+ ("2026", "2025-26#e-20260415-1", "1,601",
+  "635 more than the year before, a rise of 66 per cent, in the first genuinely contested "
+  "presidential race in three years.", True),
+]
+
+FIGHTS = [
+ {"id": "f-elections", "name": "Disputed elections and the court that decides them",
+  "span": "1978&#8211;2022",
+  "what": "The most reliable conflict in the record. A losing candidate, an anonymous "
+          "complaint or a rules technicality throws the result to the Judicial Council, "
+          "which then decides who governs.",
+  "shift": "It began as an appeal heard by a body the paper said lacked objectivity, became "
+           "a habit of voiding and re-running elections, and after 2004 matured into a formal "
+           "power to disqualify winners outright. The 2013 case set the ceiling: the "
+           "council disqualified a president-elect, a vice president for student affairs "
+           "reinstated her, and the council concluded it had no power to contest him.",
+  "inst": [
+   ("1978", "1977-78#e-19780418-1",
+    "Ed Johnson, having lost the presidency, contested the result; the Judicial Council "
+    "denied his appeal after a long debate."),
+   ("1982", "1982-83#e-19820420-1",
+    "The general election results were voided, a decision the paper said disgusted the "
+    "candidates, and the whole thing was run again."),
+   ("1988", "1987-88#e-19880414-1",
+    "Bruce Cambron called for a new election over write-in votes the congress was told it "
+    "could not ignore. He was still pressing the university president in October."),
+   ("1999", "1998-99#e-19990420-1",
+    "The Judicial Council overturned the spring election outright, amid what one opinion "
+    "piece called a swath of scandal."),
+   ("2013", "2012-13#e-20130416-1",
+    "The council voted 3-2 to disqualify president-elect Keyana Boka. She appealed to the "
+    "vice president for student affairs, who reinstated her; the council then decided "
+    "unanimously that it did not believe it could challenge his memorandum."),
+   ("2015", "2015-16",
+    "Anonymous accusations alleged the president-elect had breached the election code on "
+    "poster placement. The council warned him and confirmed he had rightfully won."),
+   ("2018", "2017-18#e-20180417-1",
+    "Two days before results, the council disqualified an entire presidential ticket and a "
+    "senate candidate over a Pepe the Frog image in campaign chalkings, then reduced it to a "
+    "suspension."),
+   ("2022", "2021-22#e-20220414-2",
+    "An hour-long hearing cleared a candidate whose student-wide email about a hunger "
+    "initiative was said to breach the ban on self-promotion."),
+  ]},
+ {"id": "f-code", "name": "The election code itself",
+  "span": "1974&#8211;2023",
+  "what": "Separate from disputed results: the recurring fight over the rules of campaigning "
+          "&#8212; spending caps, campaign length, who may run, which seats go on which "
+          "ballot.",
+  "shift": "The 1970s and 1980s fought over one number, the spending cap. From 2000 the "
+           "argument became explicitly about access: closing loopholes, whether a one-week "
+           "campaign suppresses turnout, whether high caps price out poorer candidates. The "
+           "direction of travel reverses repeatedly, which is itself the finding. Caps go up "
+           "in 2017 and are halved in 2019.",
+  "inst": [
+   ("1974", "1973-74#e-19740222-1",
+    "ASG voted to retain its campaign spending limit rather than loosen the cap."),
+   ("1978", "1977-78#e-19780309-1",
+    "Spending limits set for the coming spring election."),
+   ("1981", "1981-82#e-19810924-1",
+    "ASG voted to increase its own campaign spending limit."),
+   ("2008", "2007-08#e-20080401-1",
+    "Candidates blamed the one-week campaign window for low turnout. President Jeanne "
+    "Johnson said the codes were inherited and warned that too much publicity hurts."),
+   ("2016", "2015-16#e-20160323-1",
+    "The senate refused even to vote on codes drafted by the Judicial Council that would "
+    "have halved senate campaign spending. The president called it too much red tape."),
+   ("2017", "2016-17#e-20170215-1",
+    "Revised codes raised the spending allowances again, one year after the senate declined "
+    "to lower them."),
+   ("2019", "2019-20#e-20190919-1",
+    "The senate halved the maximums over the executive vice president&#8217;s objection that "
+    "turnout was awful. A senator argued poorer students were less likely to be able to run."),
+   ("2023", "2022-23#e-20230322-2",
+    "Bill 39-23-S, which would have required a two-thirds vote before a vacant seat could "
+    "become a presidential appointment, failed 19-15. Its sponsor called the reliance on "
+    "appointments a dangerous practice for a government organization."),
+  ]},
+ {"id": "f-discipline", "name": "Impeachment, censure and removal",
+  "span": "1976&#8211;2024",
+  "what": "The formal disciplinary machinery, used against senators, justices, vice "
+          "presidents and once against a sitting president. There is a near-total "
+          "documentary gap between 1976 and 2004.",
+  "shift": "The first documented case is an acquittal. For nearly thirty years afterwards "
+           "the archive records no impeachment at all, and discipline appears only as "
+           "enforcement against absence. It returns in 2004 as articles that die on a "
+           "technicality, and from 2009 becomes routine and bureaucratic, until a 2024 "
+           "amendment made two censures in one year automatic grounds for removal.",
+  "inst": [
+   ("1976", "1975-76#e-19760409-1",
+    "Congress member Gerard Faulk was acquitted at impeachment, in the same issue that "
+    "reported the presidential election result."),
+   ("1987", "1987-88#e-19871027-1",
+    "ASG moved to get tough on absenteeism after a member lost his seat."),
+   ("2004", "2004-05#e-20040420-1",
+    "Articles of impeachment were drafted against the outgoing finance vice president after "
+    "$611 was found missing. The council ruled the two-week process could not finish before "
+    "he left the office anyway."),
+   ("2009", "2009-10#e-20091110-1",
+    "The Judicial Council removed a senator for excessive unexcused absences; he did not "
+    "attend to defend himself."),
+   ("2011", "2011-12#e-20111115-1",
+    "Ten of 36 senators were called before the judicial board for absences. Two were "
+    "dismissed for failing to attend their own hearings; one was reappointed by the "
+    "president three months later."),
+   ("2015", "2015-16#e-20151203-3",
+    "The council voted unanimously not to censure a senator over an &#8220;impeach "
+    "Ransdell&#8221; sign, finding his conduct protected by the First Amendment. The chief "
+    "justice resigned days later."),
+   ("2023", "2022-23#e-20230217-1",
+    "The Speaker of the Senate requested a censure hearing against her own president. The "
+    "council voted unanimously against censure; a Title IX report seeking his removal was "
+    "filed two days later."),
+   ("2024", "2024-25#e-20241106-1",
+    "The council voted 7-0 to remove three senators, each with at least six unexcused "
+    "absences, under the provision requiring removal after a second censure."),
+  ]},
+ {"id": "f-veto", "name": "Vetoes and overrides",
+  "span": "1981&#8211;2019",
+  "what": "The executive striking down what the senate has passed, and the senate&#8217;s "
+          "usually failed attempt to strike back.",
+  "shift": "Before 2004 the archive records vetoes only as isolated index lines. After the "
+           "three-branch constitution the veto becomes a live weapon used against the "
+           "senate&#8217;s most contested votes, and the override becomes the senate&#8217;s "
+           "most reliable failure.",
+  "inst": [
+   ("1981", "1981-82#e-19811029-1",
+    "ASG vetoed a plan to pay an education lobbyist, weeks after rallying publicly for "
+    "higher education funding."),
+   ("1991", "1990-91#e-19910314-1",
+    "Bill #91-6-S rewrote the by-law on overriding a presidential veto; the new procedure "
+    "was tested weeks later when the emergency-kit resolution survived a veto."),
+   ("1996", "1996-97#e-19961010-1",
+    "A resolution was vetoed in the same week SGA proposed more campus lighting. The archive "
+    "does not name it."),
+   ("2014", "2014-15#e-20141204-1",
+    "Resolution 11-14-F, supporting a smoke-free campus, passed 14-10 and was vetoed after "
+    "the meeting. The override failed at the last meeting of the semester."),
+   ("2017", "2016-17#e-20170222-1",
+    "A resolution that had passed the senate unanimously was vetoed as unconstitutional. Its "
+    "author resigned the same night."),
+   ("2019", "2019-20#e-20191030-2",
+    "The executive board vetoed the Alpha Xi Delta resolution 4-0 with two abstentions, and "
+    "the senate sustained the veto."),
+  ]},
+ {"id": "f-quorum", "name": "Quorum failures and empty seats",
+  "span": "1975&#8211;2025",
+  "what": "Meetings that could not be held, votes that failed for want of bodies, and "
+          "senators removed or resigned for absence. The internal face of the apathy "
+          "argument.",
+  "shift": "Early instances are reported as one-off embarrassments in the "
+           "<cite>Herald</cite>. From the 2000s SGA&#8217;s own minutes record quorum "
+           "failures directly, and by the 2020s the Judicial Council has codified machinery "
+           "for removing absentees.",
+  "inst": [
+   ("1975", "1974-75#e-19750228-1",
+    "ASG action was halted twice in one week for lack of quorum. An editorial said the "
+    "confusion signalled a need for change."),
+   ("1987", "1986-87#e-19870409-1",
+    "A constitutional amendment was defeated because too few members turned up to vote on "
+    "it."),
+   ("2006", "2006-07#e-20061205-1",
+    "With 16 of 31 senators present the senate lacked quorum and tabled two resolutions."),
+   ("2014", "2013-14#e-20140213-1",
+    "An amendment that had passed was voided when the Executive Council found too few "
+    "senators had attended for the vote to count."),
+   ("2016", "2016-17#e-20160921-1",
+    "The Speaker told the senate that eleven at-large seats should have been filled the "
+    "previous spring but only ten were, leaving SGA a senator short all summer."),
+   ("2019", "2018-19#e-20190130-1",
+    "Nine senators were forced to step down at once, leaving the chamber depleted with no "
+    "new legislation introduced."),
+   ("2020", "2019-20#e-20200205-1",
+    "Senators and committee chairs had quietly vacated their positions since the autumn; two "
+    "committee chairs were empty."),
+   ("2025", "2024-25#e-20250404-2",
+    "The meeting to pass the DEI amendment initially lacked the 21 members needed for a "
+    "two-thirds vote, so absent members were phoned onto Zoom to reach quorum."),
+  ]},
+ {"id": "f-cash", "name": "Money that cannot be accounted for",
+  "span": "1975&#8211;2024",
+  "what": "Lost concert money, missing funds, unspent budgets, retroactive bills, and the "
+          "scholarships SGA awards to its own members.",
+  "shift": "In the 1970s the problem was operational: SGA ran concerts and lost on them. "
+           "From 2002 it becomes accountability failure &#8212; money that vanished into the "
+           "general fund, purchases with no receipts, a surprise bill for a "
+           "predecessor&#8217;s contract. By the 2010s the fight is over whether SGA members "
+           "may take SGA&#8217;s own scholarship money.",
+  "inst": [
+   ("1975", "1975-76#e-19750919-1",
+    "A September concert drew 4,300 people and lost $7,000."),
+   ("1976", "1976-77#e-19761109-1",
+    "The Seals and Crofts concert set the organization back $3,800."),
+   ("2002", "2002-03#e-20020919-1",
+    "Three members petitioned congress over $28,000 they said was unaccounted for. President "
+    "Jamie Sears said she had absolutely no idea where the money went."),
+   ("2002", "2002-03#e-20021024-1",
+    "By October the $13,000 had been traced: it had slipped back into the general fund and "
+    "been spent on other things, including computers for the SGA office."),
+   ("2006", "2006-07#e-20061024-1",
+    "About $24,000 of a $115,000 budget went unspent and returned to the university&#8217;s "
+    "general fund."),
+   ("2013", "2012-13#e-20130301-2",
+    "The senate stripped out the bylaw that would have barred serving SGA members from "
+    "SGA-sponsored scholarships."),
+   ("2015", "2014-15#e-20150423-1",
+    "A former senator published a letter arguing a precedent set that session had damaged "
+    "the organizational aid process."),
+   ("2024", "2023-24#e-20240209-1",
+    "A 6-0 censure of the administrative vice president for spending a $425.25 deposit "
+    "before the funding bill passed."),
+  ]},
+ {"id": "f-regents", "name": "Fighting the Board of Regents",
+  "span": "1991&#8211;2026",
+  "what": "Direct confrontation with WKU&#8217;s governing board, over its chairman, its "
+          "contracts, its fees and its process. The place where SGA&#8217;s formal "
+          "representation and its actual power are furthest apart.",
+  "shift": "The pattern is stable: SGA passes a resolution and the board does what it was "
+           "going to do. What changes is the student regent&#8217;s posture &#8212; from "
+           "voting yes under protest, through abstention, to open letters of dissent and "
+           "lone recorded no votes. The dissent gets louder as it stays equally ineffective.",
+  "inst": [
+   ("1991", "1991-92#e-19911029-1",
+    "Resolution 91-6-F asked that Joe Iracane not be re-elected chair, citing federal "
+    "investigations. The board re-elected him a week later."),
+   ("2000", "2000-01#e-20001027-1",
+    "The board raised the athletics fee 8-2. Student regent Cassie Martin was one of two "
+    "dissenters."),
+   ("2006", "2005-06#e-20060408-1",
+    "The construction fee passed 9-1 with the student regent abstaining; her proposal to "
+    "exempt the next year&#8217;s seniors was rejected 10-1."),
+   ("2015", "2015-16#e-20150924-1",
+    "The senate voted 21-4 to disapprove of the procedure by which the Confucius Institute "
+    "building was authorised. The board declined to revisit it."),
+   ("2016", "2016-17#e-20160819-1",
+    "The student regent published an open letter to students explaining his vote against a "
+    "medical centre partnership approved 6-4-1."),
+   ("2018", "2017-18#e-20180228-1",
+    "A unanimous resolution sought renegotiation of a 20-year dining contract the president "
+    "said had never come to SGA or to the full board."),
+   ("2024", "2024-25#e-20240808-1",
+    "At the regents&#8217; retreat the student regent challenged administrators over student "
+    "worker funding and afterwards called the answers cookie-cutter."),
+   ("2026", "2025-26#e-20260605-1",
+    "The student regent cast the only vote against a $204 tuition increase at his last "
+    "meeting."),
+  ]},
+ {"id": "f-override", "name": "The administration overrules the students",
+  "span": "1972&#8211;2025",
+  "what": "SGA passes something, the administration declines it, and the organization "
+          "discovers the limit of a resolution. Including the rare inverse: the campaigns "
+          "that worked.",
+  "shift": "Early confrontations were about campus life and rights. From the 2000s they "
+           "became academic and contractual, and the pattern hardened into a formula: SGA "
+           "passes a resolution, an administrator answers by email or letter, the answer is "
+           "no. The wins came when SGA supplied a number an administrator could act on, not "
+           "when it passed a resolution.",
+  "inst": [
+   ("1972", "1972-73#e-19720929-1",
+    "ASG rejected the university president&#8217;s position on an Office of Black Affairs."),
+   ("2003", "2003-04#e-20031120-1",
+    "The petition against plus/minus grading passed 1,500 signatures. Four years later the "
+    "provost declined to implement the system."),
+   ("2011", "2011-12#e-20111109-2",
+    "The senate voted 19-8 against renaming Downing University Center. The Administrative "
+    "Council decided it would be called Downing Student Union anyway."),
+   ("2016", "2015-16#e-20160128-2",
+    "Administrators changed the pub name students had chosen. The president said it made SGA "
+    "question how much the administration listens to students."),
+   ("2016", "2015-16#e-20160302-1",
+    "Ransdell declined the meningitis vaccination requirement the senate had passed "
+    "unanimously."),
+   ("2017", "2016-17#e-20170223-1",
+    "Housing and Residence Life&#8217;s ten-year plan made no mention of the integration SGA "
+    "had endorsed 27-1."),
+   ("2020", "2020-21#e-20201202-2",
+    "After a petition of more than 3,500 signatures in three days and a 40-9 Faculty Senate "
+    "vote, the provost reversed the university&#8217;s position on Pass/D/Fail. It is the "
+    "clearest win in the record against a decision already made."),
+   ("2025", "2025-26#e-20251001-1",
+    "General Counsel told the senate that state law now bound SGA&#8217;s spending, that its "
+    "funding had to be content neutral, and that the Pride Center would lose its office."),
+  ]},
+ {"id": "f-opinions", "name": "Whether it is allowed to have opinions about the world",
+  "span": "1969&#8211;2025",
+  "what": "The recurring argument about temperament: is student government a service "
+          "organization or a political one? It surfaces whenever the senate takes a position "
+          "beyond the campus fence.",
+  "shift": "The archive dates the origin to 1969 and the Vietnam Moratorium endorsement, and "
+           "the same argument returns in 1982, 1986, 2017 and 2023. It has never settled. In "
+           "2017 a clean DREAM Act resolution failed and a narrower solidarity resolution "
+           "passed two weeks later by staying inside a jurisdiction the senate agreed it "
+           "had. By 2024 the senate voted unanimously to declare itself nonpartisan.",
+  "inst": [
+   ("1969", "1969-70#e-19691007-1",
+    "The Associated Student Congress endorsed the Vietnam Moratorium; the paper called it a "
+    "bold step."),
+   ("1982", "1982-83#e-19820401-1",
+    "ASG endorsed a congressional candidate; five days later the paper editorialised that "
+    "endorsing was not wise for the organization."),
+   ("2017", "2016-17#e-20170418-1",
+    "The reparations resolution passed 19-10-1 and drew national coverage. Both authors "
+    "described it as a conversation starter."),
+   ("2017", "2017-18#e-20171025-1",
+    "Resolution 2-17-F urging a clean DREAM Act failed 12-17, one senator saying it was not "
+    "the university&#8217;s place to put a political hat in the ring."),
+   ("2021", "2021-22#e-20211201-2",
+    "A resolution condemning bans on the teaching of critical race theory passed 16-15 with "
+    "two abstentions after weeks of debate."),
+   ("2024", "2024-25#e-20240903-1",
+    "Bill 50-23-S, reaffirming SGA as nonpartisan and stating a duty to put forward only "
+    "nonpartisan legislation, passed unanimously."),
+   ("2025", "2024-25#e-20250404-2",
+    "The diversity committee was renamed under a federal executive order, ratified by 88 per "
+    "cent of voters."),
+  ]},
+]
+
+SHAPE = [
+ {"id": "s-name", "name": "The name changed once in sixty years",
+  "span": "1966&#8211;1992",
+  "what": "Founded as the Associated Students of Western Kentucky University, renamed the "
+          "Student Government Association only in 1992. Two earlier attempts to change the "
+          "branding failed outright.",
+  "shift": "After 1992 the renaming energy moved down to committee and officer titles, where "
+           "it has stayed. The most recent rename, in 2025, was a response to a federal "
+           "executive order and its co-author called the change mostly a formality.",
+  "inst": [
+   ("1966", "1966-67#e-19660401-1",
+    "President Kelly Thompson approved the constitution of the Associated Students on 1 "
+    "April; students ratified it on 26 April."),
+   ("1980", "1980-81#e-19801030-1",
+    "ASG proposed a title change. Nothing in the archive shows it taking effect."),
+   ("1981", "1980-81#e-19810409-1",
+    "A resolution asked for a new logo; the congress voted to keep the one it had."),
+   ("1992", "1991-92#e-19920407-1",
+    "The Associated Students voted to rename themselves the Student Government Association; "
+    "students ratified it a week later and it took effect that autumn."),
+   ("1992", "1992-93",
+    "The August minutes appear under both titles. The organization was still in "
+    "transition at its first autumn meeting."),
+   ("2016", "2016-17#e-20161116-1",
+    "MyCampusToo was made a permanent standing committee and simultaneously renamed the "
+    "Committee for Diversity and Inclusion."),
+   ("2025", "2024-25#e-20250404-2",
+    "Bill 21-25-S renamed the Diversity, Equity and Inclusion Committee the Action and "
+    "Opportunity Committee and retitled its officers."),
+  ]},
+ {"id": "s-constitution", "name": "The constitution as a permanent construction site",
+  "span": "1969&#8211;2026",
+  "what": "Constitutional revision is the single most repeated activity in the entire "
+          "record. There is a revision committee, a referendum, an amendment package or a "
+          "full rewrite in more years than not, from the organization&#8217;s third year to "
+          "its last.",
+  "shift": "The early rewrites were fought section by section in public, with the paper "
+           "printing the proposed text. From the 1980s they became routine housekeeping. The "
+           "2004 convention was the only true rebuild. After it the pattern is annual "
+           "amendment packages, and by the 2020s the work is largely custodial: fixing "
+           "references to bodies that no longer exist.",
+  "inst": [
+   ("1969", "1968-69#e-19690227-1",
+    "A committee was appointed to study revision of the constitution, three years in."),
+   ("1972", "1971-72#e-19720222-1",
+    "The congress voted section by section on a rewritten constitution, with the "
+    "<cite>Herald</cite> printing the full proposed executive-branch text. The archive does "
+    "not show the referendum&#8217;s result or turnout."),
+   ("1978", "1978-79#e-19781130-1",
+    "The congress approved a revised constitution."),
+   ("1983", "1982-83#e-19830317-1",
+    "Changes were approved in March; the Dean of Students publicly questioned them the "
+    "following week; students voted on them on the same April ballot that elected Jack "
+    "Smith."),
+   ("1986", "1986-87#e-19860804-1",
+    "Twenty years of amendments were consolidated into one document, the only surviving "
+    "snapshot of how the 1966 framework had been patched."),
+   ("2004", "2003-04#e-20040316-1",
+    "The Constitutional Convention rebuilt the body into three branches. 132 students voted "
+    "on it."),
+   ("2005", "2004-05#e-20050317-1",
+    "A package of 40 constitutional amendments passed 1,193 to 262."),
+   ("2013", "2012-13#e-20130226-1",
+    "The senate went through the constitution article by article, replacing class-year seats "
+    "with college seats and guaranteeing seats for the regional campuses."),
+   ("2023", "2023-24#e-20231128-1",
+    "Three Legislative Operations bills corrected the governing documents, including "
+    "references to a University Senate that had since split in two."),
+   ("2026", "2025-26#e-20260224-1",
+    "The 25th Senate adopted a codified version of the Executive and Legislative Bylaws, to "
+    "supersede all prior versions."),
+  ]},
+ {"id": "s-regent", "name": "The student regent seat, made and remade by statute",
+  "span": "1967&#8211;2026",
+  "what": "The largest single expansion of student power in the record was written in "
+          "Frankfort, not in the SGA constitution. The seat was created by state "
+          "legislation, carried no vote for years, was separately elected for most of its "
+          "first two decades, then merged into the presidency.",
+  "shift": "Created non-voting in 1968 and filled by the Congress. Campaigns for a vote "
+           "failed repeatedly into the 1970s. A 1982 state bill changed how the regent was "
+           "chosen and produced WKU&#8217;s first campus-wide regent election. By 1991 one "
+           "person held both offices, which is why every presidential resignation since has "
+           "been a governance problem.",
+  "inst": [
+   ("1967", "1967-68#e-19671102-1",
+    "A <cite>Herald</cite> article reported support for putting a student on the Board of "
+    "Regents, months before a bill reached committee."),
+   ("1968", "1967-68#e-19680404-1",
+    "William Menser assumed duties as a board member. The seat carried no vote."),
+   ("1969", "1968-69",
+    "Because president Bill Straeffer was an out-of-state student, the Congress elected Paul "
+    "Gerard to the seat instead. He sat as a non-voting member."),
+   ("1970", "1969-70#e-19700313-1",
+    "The legislature dropped the bill that would have given the seat a vote, under a headline "
+    "saying lawmakers had kept students impotent."),
+   ("1972", "1971-72#e-19720201-1",
+    "&#8220;Student Regent May Get Vote.&#8221; Four years after the seat was created it was "
+    "still non-voting."),
+   ("1974", "1973-74#e-19740619-1",
+    "Gregory McKinney was sworn in as WKU&#8217;s first African American student regent."),
+   ("1982", "1982-83#e-19820216-1",
+    "After a state bill changed how the regent was chosen, five students stood in the first "
+    "campus-wide election for the seat. No majority on 9 February forced a runoff; the "
+    "resulting term ran about two months."),
+   ("1983", "1982-83#e-19830203-1",
+    "President Margaret Ragan published a piece explaining that the presidency and the "
+    "student regent seat were now separate positions."),
+   ("1991", "1991-92",
+    "WKU&#8217;s own newsletter reported Heather Falmlen as both student regent and ASG "
+    "president &#8212; the two offices, separately elected two decades earlier, held by one "
+    "person."),
+   ("2009", "2008-09#e-20090212-1",
+    "After a resignation split the offices, the Judicial Council voted 2-1 to hold a special "
+    "election over the chief justice&#8217;s dissent. The seat had sat empty 26 days."),
+  ]},
+ {"id": "s-senate", "name": "Senate size and who counts as a constituency",
+  "span": "1968&#8211;2026",
+  "what": "The chamber has been called a Congress and a Senate, has run from a handful of "
+          "at-large congressmen to 50 members, and has repeatedly redefined which students "
+          "get a guaranteed seat.",
+  "shift": "From four executives and two congressmen at large in 1968, through residence "
+           "hall and college representation in the late 1970s and 1980s, to a 2013 rebuild "
+           "that replaced class-year seats with college seats and guaranteed the regional "
+           "campuses, to a 36-seat constitutional formula and then a proliferation of "
+           "identity and status seats: international, Gatton Academy, graduate, "
+           "first-generation, transfer, Honors.",
+  "inst": [
+   ("1968", "1968-69#e-19680502-1",
+    "The elected slate was president, vice president, secretary, treasurer and two "
+    "congressmen at large."),
+   ("1979", "1979-80#e-19790920-1",
+    "A seats bill passed after being revised under pressure; the paper called the "
+    "representation bill a small step in the right direction."),
+   ("1983", "1982-83#e-19830301-1",
+    "Twenty-four students were elected to the Senate &#8212; the only hard seat count the "
+    "archive preserves for the whole of the 1980s."),
+   ("1988", "1987-88#e-19880223-1",
+    "The organization publicly explained its empty seats; four congress positions had been "
+    "filled at a single meeting."),
+   ("1990", "1989-90#e-19900329-1",
+    "The congress voted to expand itself so that classes and student groups would get more "
+    "voice."),
+   ("2011", "2010-11#e-20110211-1",
+    "The <cite>Herald</cite> reported 50 total members and an operating budget of $121,335 "
+    "drawn from tuition."),
+   ("2013", "2013-14#e-20130919-2",
+    "A referendum created an international student senate seat, which the president said "
+    "would make WKU the first student government in the state to have one."),
+   ("2018", "2017-18#e-20180228-1",
+    "A bill replacing at-large and graduate seats with first-generation, transfer, "
+    "non-traditional and intercultural seats failed 14-18."),
+   ("2006", "2006-07#e-20060905-1",
+    "The senate opened the year with 18 seats and eight senators present, swore in eight "
+    "more that night, and had grown to 31 seats by November."),
+   ("2023", "2023-24#e-20231129-1",
+    "Bill 14-23-F created a Mahurin Honors College senator. Its first occupant was elected "
+    "student body president in 2026."),
+   ("2025", "2024-25#e-20250415-1",
+    "The spring ballot filled at-large, class, transfer, non-traditional, first-generation, "
+    "intercultural and college seats &#8212; constituencies the 1966 constitution had no "
+    "concept of."),
+  ]},
+ {"id": "s-real", "name": "What actually changed the organization&#8217;s reach",
+  "span": "1966&#8211;2025",
+  "what": "A short list. Each of these altered what SGA could actually do, and almost every "
+          "one originated outside SGA&#8217;s own constitution.",
+  "shift": "The record&#8217;s hardest finding about itself: sixty years of internal "
+           "constitutional revision redistributed authority among students, and the changes "
+           "that enlarged or reduced the organization&#8217;s actual reach came from a state "
+           "statute, a state bill, a university budget line, a referendum mechanism and, in "
+           "2025, a state law.",
+  "inst": [
+   ("1967", "1966-67#e-19670530-1",
+    "Dean Keown&#8217;s memo proposing a student fee structure to create a budget. Money "
+    "made the body operational, and it was proposed by the Dean of Students, not by "
+    "students."),
+   ("1968", "1967-68#e-19680404-1",
+    "The state statute creating the student regent seat gave students a permanent chair in "
+    "the room where tuition and fees are set. SGA neither wrote it nor could amend it."),
+   ("1982", "1982-83#e-19820216-1",
+    "The state regents bill changed how the student regent was chosen, producing the first "
+    "campus-wide election for the seat."),
+   ("2003", "2002-03#e-20030304-2",
+    "The first student referendum in SGA history put a $3 radio fee to students and sent it "
+    "to the regents. The mechanism was used again for the Talisman fee and the football "
+    "question."),
+   ("2004", "2003-04#e-20040316-1",
+    "The Constitutional Convention made every enrolled student a member of SGA with the "
+    "right to vote in its elections. It is the quietest clause in the record and the one "
+    "that changed the organization&#8217;s standing most."),
+   ("2011", "2010-11#e-20110222-1",
+    "SGA had to pass a resolution on the Downing renovation&#8217;s design and fees before "
+    "the regents could approve the project; the senate tabled it in December for lack of "
+    "student input. A veto point that actually bit."),
+   ("2020", "2020-21#e-20201202-2",
+    "Pass/D/Fail was won by mobilisation rather than by any clause: a petition of more than "
+    "3,500 signatures in three days and nearly twenty pages of student testimony."),
+   ("2025", "2025-26#e-20251001-1",
+    "House Bill 4 bound SGA&#8217;s spending because SGA receives university money. A "
+    "genuine reduction in its discretion, imposed entirely from outside."),
+  ]},
+ {"id": "s-cosmetic", "name": "Reform that was cosmetic",
+  "span": "1977&#8211;2025",
+  "what": "Changes framed as structural reform that left the organization&#8217;s capacity "
+          "untouched: renamings, symbolic committees, procedural tinkering and "
+          "self-evaluations with no recorded follow-through.",
+  "shift": "The pattern does not change. The clearest single case is 1985-86, when the "
+           "congress abolished its Finance Committee in September and wrote a Financial "
+           "Advisory Council into the by-laws the following April &#8212; the same function "
+           "under a new name, seven months apart.",
+  "inst": [
+   ("1977", "1976-77#e-19770215-1",
+    "Bill 6 proposed that ASG conduct a self-evaluation for transparency and improvement. "
+    "The archive holds the bill and nothing about a result."),
+   ("1981", "1980-81#e-19810409-1",
+    "The proposed title change and the new-logo resolution both went nowhere."),
+   ("1986", "1985-86#e-19850924-1",
+    "The congress abolished its own Finance Committee, then wrote a Financial Advisory "
+    "Council into the by-laws seven months later."),
+   ("2014", "2013-14#e-20140213-1",
+    "An amendment stripping the president&#8217;s sole power to appoint justices passed, "
+    "then was undone by the same attendance problem it was meant to address."),
+   ("2018", "2017-18#e-20180328-1",
+    "Moving committee-chair appointments from the president to the speaker failed 26-2, with "
+    "the speaker himself voting against. It had failed the year before too."),
+   ("2021", "2021-22#e-20211006-2",
+    "A bill barred the Speaker of the Senate from voting on legislation, alongside two bills "
+    "scrubbing obsolete 2007-era bylaws."),
+   ("2025", "2024-25#e-20250404-2",
+    "The DEI committee rename. A co-author called the change mostly a formality; the chair "
+    "said the committee at its core was not changing."),
+  ]},
+ {"id": "s-budget", "name": "The budget, and what could be done with it",
+  "span": "1967&#8211;2026",
+  "what": "The total is set by the university. What SGA controls is how it is divided, and "
+          "in several years how much of it goes unspent.",
+  "shift": "ASG ran concerts and lost money on them through the 1970s until the function "
+           "became untenable and was dropped. The modern budget has been flat or falling "
+           "since 2013, when university cuts removed the automatic inflation increase SGA "
+           "had been receiving. The recurring problem is not only scarcity but the failure "
+           "to spend.",
+  "inst": [
+   ("1973", "1973-74#e-19730828-1",
+    "The Board of Regents voted to increase the ASG allotment, and the organization became "
+    "something else: a concert promoter, a survey-taker, a runner of free evening courses."),
+   ("1979", "1978-79#e-19790125-1",
+    "ASG faced losing control of student activities funding. The archive does not show how "
+    "the fight was resolved."),
+   ("1986", "1986-87#e-19860911-1",
+    "A $12,100 budget, reported alongside a plan to reach students by telephone."),
+   ("2004", "2003-04#e-20040408-1",
+    "With about $45,000 left of a $105,000 budget, SGA moved to spend the remainder before "
+    "leftover funds went to offset university cuts."),
+   ("2006", "2006-07#e-20061024-1",
+    "About $24,000 of $115,000 had gone unspent the previous year and returned to the "
+    "general fund."),
+   ("2013", "2013-14#e-20131010-1",
+    "A $125,000 budget funded from tuition at about $6.25 a student, after a planned "
+    "increase did not come through."),
+   ("2015", "2015-16#e-20150915-2",
+    "The budget fell $19,500 when a private donation was not repeated and the university cut "
+    "a further $4,500. Organizational funding took the largest share of the loss."),
+   ("2024", "2024-25#e-20240828-1",
+    "$100,000, the same total as the year before, with $20,000 for organizational aid and "
+    "$23,500 for scholarships."),
+  ]},
+]
+
+THIN = [
+ ("1969&#8211;1975", "1971-72",
+  "No general-election turnout figure survives for any year in this stretch. The "
+  "constitutional referendum of March 1972 is the most consequential structural vote of the "
+  "decade, and the archive does not show its result or its turnout."),
+ ("The 1970s", "1975-76",
+  "The decade yields three raw vote counts in total &#8212; 527 in the 1976 primary, 95 in a "
+  "1978 freshman primary, 830 in the 1979 primary &#8212; and one margin, the 26 votes by "
+  "which Bob Moore won in 1977. There is not one general-election total for the whole "
+  "decade."),
+ ("1979&#8211;80", "1979-80",
+  "The emptiest presidency in the file. The year page states outright that the archive does "
+  "not yet show what the Hargrove administration passed or fought over, and that "
+  "<cite>Herald</cite> issues from that autumn and spring have not been checked."),
+ ("The 1980s", "1986-87",
+  "Only one senate seat count survives for the entire decade: the 24 senators elected in "
+  "March 1983. Committee structure is known from two bills and one filed Judicial Council "
+  "roster. The published result of the April 1987 presidential election is not recorded at "
+  "all."),
+ ("1990&#8211;1998", "1994-95",
+  "One turnout number in nine years. Several years&#8217; pages state that no full officer "
+  "list, committee structure or seat count survives beyond the president. The 1995 and 1996 "
+  "headlines describe a decline the archive cannot quantify."),
+ ("2002&#8211;03", "2002-03",
+  "TopSCHOLAR&#8217;s full-text files for this year sit behind an automated-access check and "
+  "have not been read. The ad hoc financial review committee formed in the gazebo dispute is "
+  "the only committee identified by name."),
+ ("2019&#8211;2021", "2020-21",
+  "No presidential turnout figure survives for the September 2020 or April 2021 elections, "
+  "and the 2019 results story reported none either. The COVID year carries no editorial "
+  "criticism of SGA at all &#8212; which is a fact about the sources, not about the year."),
+ ("Cartoons after 1999", "1998-99",
+  "No editorial cartoon about SGA appears anywhere in this archive after the 1999 cartoon on "
+  "nasty campaigns. Whether the paper stopped drawing student government, or the digitised "
+  "index stopped recording cartoons, cannot be resolved from this record."),
+ ("Questions the record drops", "1991-92",
+  "No source found reports how the investigations into the regents&#8217; chairman ended, or "
+  "how SGA resolved its 1999 investigation into racially charged campaign fliers, or why Bob "
+  "Moore was ruled ineligible for an SGA job in 1978."),
+]
+
+
+def _pat_block(p):
+    rows = []
+    for lab, yid, txt in p["inst"]:
+        rows.append('<li><a class="yr" href="' + _yhref(yid) + '">' + lab
+                    + '</a><p>' + txt + '</p></li>')
+    return ('<article class="pat" id="' + p["id"] + '">'
+            + '<h3>' + p["name"] + '<span class="sp">' + p["span"]
+            + ' &middot; ' + str(len(p["inst"])) + ' instances</span></h3>'
+            + '<p class="what">' + p["what"] + '</p>'
+            + '<ol class="inst">' + "".join(rows) + '</ol>'
+            + '<p class="shift"><b>How it changed.</b> ' + p["shift"] + '</p>'
+            + '</article>')
+
+
+def _pat_group(group):
+    return "".join(_pat_block(p) for p in group)
+
+
+def _pat_index(group, label):
+    rows = []
+    for p in group:
+        rows.append('<li><a href="#' + p["id"] + '">' + p["name"] + '</a>'
+                    + '<span class="sp">' + p["span"] + ' &middot; '
+                    + str(len(p["inst"])) + ' instances</span></li>')
+    return '<p class="lab">' + label + '</p><ul class="pindex">' + "".join(rows) + '</ul>'
+
+
+PATTERNS_BODY = """
+<header class="head"><div class="wrap">
+ <p class="kicker">Read across the years, not down them</p>
+ <h1>The patterns</h1>
+ <p class="lede">The same arguments come back. Campus lighting, the price of a textbook, who
+ is in the room, whether anybody voted: the subjects that recur across sixty years of student
+ government at Western, set out with the years they recur in.</p>
+ <p class="scope">This page holds __NPAT__ recurring patterns and __NINST__ dated instances,
+ every one of them drawn from a sourced entry on this site and checked against the record.
+ Each pattern gives its span, a spread of instances across different decades, and what changed
+ between the first and the last. Where the record is thin, that is said rather than smoothed
+ over. The <a href="story.html">story</a> reads the same archive in order.</p>
+</div></header>
+
+<div class="wrap">
+<nav class="contents" aria-label="Contents">
+ <p class="lab">On this page</p>
+ <ol>
+  <li><span>One</span><a href="#business">What it does, generation after generation</a></li>
+  <li><span>Two</span><a href="#verdicts">What people said about it</a></li>
+  <li><span>Three</span><a href="#apathy">The apathy argument</a></li>
+  <li><span>Four</span><a href="#fights">The recurring fights</a></li>
+  <li><span>Five</span><a href="#shape">How the organization changed shape</a></li>
+  <li><span>Six</span><a href="#thin">Where the record is thin</a></li>
+ </ol>
+</nav>
+
+<div class="body">
+
+<section class="part" id="business">
+<header class="parthead"><span class="n">One</span>
+<h2>What it does, generation after generation</h2></header>
+<p class="stand">Fifteen subjects the organization has come back to every four or five years
+since 1966, wearing whatever clothes the decade supplied. What changes is not the subject but
+SGA&#8217;s position in relation to it.</p>
+
+<div class="note">
+<p>The strongest single finding in this material is a change of role rather than of subject.
+For its first thirty years SGA asked the university to do things: put a telephone there, open
+the library later, run a shuttle, assign staff to administer scholarships. For its last thirty
+it increasingly does them itself, out of its own budget: $600 a year to keep the library open
+until 2 a.m., $15,000 a year for a safe-ride van, $23,500 in scholarships, 450 Uber vouchers,
+28 borrowable calculators, $10,000 split among 33 clubs.</p>
+</div>
+
+<p class="finding">Petitioner to vendor. The organization converts from an applicant for
+university action into a small vendor of student services, and calls that its central
+programme.
+<b>The arc runs from Resolution 79-10, which asked WKU to assign somebody to administer
+scholarships, to a $100,000 budget in 2024 that awarded them itself.</b></p>
+
+__IX_STANDING__
+
+__G_STANDING__
+</section>
+
+<section class="part" id="verdicts">
+<header class="parthead"><span class="n">Two</span>
+<h2>What people said about it</h2></header>
+<p class="stand">Sixty years of verdicts, grouped by the kind of verdict rather than by the
+year. The <cite>College Heights Herald</cite> is both the only witness for most of this period
+and the standing antagonist, and it opened with a judgement rather than a welcome.</p>
+
+<div class="note">
+<p>The register moves in phases. From 1966 to about 1980 the paper scolds the student body for
+not deserving its government. From 1980 to 1999 it stops arguing and starts drawing, and the
+presidents write back in the letters column. After 1999 no editorial cartoon about SGA appears
+in this archive at all, and the criticism migrates from the opinion page into the room itself:
+students standing up at meetings, organizations withdrawing recognition, censure hearings and
+eventually a federal lawsuit. The harshest quotations in the whole record come from a sitting
+president and vice president describing their own year.</p>
+</div>
+
+__IX_VERDICTS__
+
+__G_VERDICTS__
+</section>
+
+<section class="part" id="apathy">
+<header class="parthead"><span class="n">Three</span>
+<h2>The apathy argument</h2></header>
+<p class="stand">One continuous thread, and the only one in the archive that can be read as a
+series of numbers. Every count the record preserves, in order.</p>
+
+<div class="note">
+<p>The organization has spent sixty years measuring itself against the day it was created.
+2,538 students voted in the founding referendum of April 1966, and 2,894 in the election of
+1968 &#8212; about 34 per cent of a roughly 8,500-student enrolment, and the only turnout
+percentage anywhere in the archive. Enrolment then more than doubled and the raw count never
+recovered. Against the 17,500 students reported in 2002 and about 18,000 in 2004, the modern
+ceiling is roughly 2,400.</p>
+<p>Three cautions before reading the series as a trend. The denominators change and are
+recorded only at scattered points, so the modern counts cannot be turned into comparable
+percentages. Autumn senate elections and spring executive elections are different animals:
+autumn totals in the record run from 398 to 977, spring totals from 908 to 2,442. And some
+figures are ballots cast while others are votes in the presidential race, which is why 2018
+appears here as 2,378. The long gap in the middle is real: between the 1992 rename and the
+collapsed election of 1999, not one race in this archive carries a vote total.</p>
+</div>
+
+<ol class="tn">__TURNOUT__</ol>
+
+<h3 class="sub">Where it jumped, and what caused it</h3>
+<div class="note">
+<p>Every upward spike in the series is attached to one of three things: a constitutional
+moment, a referendum sharing the ballot, or a genuinely contested race. 1966 and 1968 were
+votes about whether the organization should exist and who should run it. In 2003 the presidency
+was uncontested but a $3 radio-station fee was on the ballot, and the executive vice president
+who championed it had argued in as many words that it would boost turnout. In 2006 SGA
+deliberately ran its Division I-A football referendum alongside the homecoming queen election,
+and the president conceded the tie-in probably drew football-friendly voters. 2016 and 2018
+were real contests. So was 2026.</p>
+<p>The counterexamples point the same way. Turnout fell to 908 in 2014, in a year the sitting
+president ran unopposed and, she said, spent nothing on her campaign. The presidency was
+uncontested in 2023, 2024 and 2025. Then in April 2026 two tickets took 27 student-submitted
+questions at a town hall, sat for a debate with the campus radio station, and 1,601 students
+voted &#8212; 635 more than the year before. The archive&#8217;s own verdict is that turnout
+tracks whether there is an actual contest.</p>
+<p>What the organization tried instead fills sixty years: a survey of wanted activities in
+1967, extra polling places in 1972, published roll-call votes in 1978, a telephone campaign in
+1986, a ban on write-in campaigns in 1988, Anti-Apathy Week in 1990, an ambassador council in
+2003, extra credit for attending the debate in 2008, a public relations relaunch in 2011, new
+seats for constituencies that had none, an SGA clause in every course syllabus in 2022, Uber
+vouchers in 2024, and a POLLapalooza in 2025 that fell 2,034 votes short of its stated goal.
+Two moves in the same decade cut in opposite directions on the same problem: in 2017 the senate
+lowered its own grade-point requirement from 2.5 to 2.0 to make the body more representative,
+ratified by referendum, and in 2024 senators voted to put the floors back up.</p>
+</div>
+</section>
+
+<section class="part" id="fights">
+<header class="parthead"><span class="n">Four</span>
+<h2>The recurring fights</h2></header>
+<p class="stand">Inside its own walls the organization can do almost anything: void an
+election, disqualify a president-elect, censure a vice president, remove three senators in one
+vote. Outside them it has never compelled anything.</p>
+
+<div class="note">
+<p>The sharpest artefact of that ceiling is 2013. SGA&#8217;s Judicial Council disqualified the
+president-elect 3-2; she appealed to the vice president for student affairs; he reinstated her;
+and the council concluded in an emergency meeting that it did not believe it had the power to
+contest him, while recording its official disapproval. The student judiciary discovered it was
+not final.</p>
+<p>What SGA wins outside itself, it wins by producing evidence somebody else can act on: 1,500
+signatures against plus/minus grading in 2003, a 1,066-765 referendum that sent a fee to the
+regents that same spring, 3,500 signatures in three days in 2020. Not by passing a
+resolution.</p>
+</div>
+
+__IX_FIGHTS__
+
+__G_FIGHTS__
+</section>
+
+<section class="part" id="shape">
+<header class="parthead"><span class="n">Five</span>
+<h2>How the organization changed shape</h2></header>
+<p class="stand">Across sixty years SGA rewrote its own constitution constantly and gained
+almost no new power by doing it.</p>
+
+<div class="note">
+<p>Every structural change that actually enlarged what the organization could do came from
+outside its own document: a 1968 state statute that created the student regent seat, a 1982
+state bill that changed how the seat was filled, the university&#8217;s annual decision about
+the budget line, and in 2025 a state law that told SGA what it may spend money on. The internal
+rewrites &#8212; from the revision fights of 1969 to 1972, through the 2004 Constitutional
+Convention, to the codified bylaws of 2026 &#8212; almost always redistributed authority among
+students rather than adding any against the administration.</p>
+<p>The one internal clause that genuinely changed the organization&#8217;s standing is the
+quietest in the record. The 2004 convention made every enrolled student a member of SGA with
+the right to vote in its elections. 132 of roughly 18,000 students voted on the constitution
+that did it.</p>
+</div>
+
+__IX_SHAPE__
+
+__G_SHAPE__
+</section>
+
+<section class="part" id="thin">
+<header class="parthead"><span class="n">Six</span>
+<h2>Where the record is thin</h2></header>
+<p class="stand">The shape of these patterns is partly the shape of what survived. The gaps are
+findings too, and reading past them would make the recent decades look worse than the early
+ones simply because they are better documented.</p>
+
+<div class="note">
+<p>For roughly the first twenty-five years the evidence is a digitised article index rather
+than article text: we know what the <cite>Herald</cite> said a piece was about, not what it
+said. Disciplinary conflict only becomes visible when SGA starts keeping and posting its own
+minutes, which is why the 1970s look less litigious than the 2010s. The 1980s produced
+recounts, a voided general election, a revote and a write-in dispute that ran six months, which
+is not the profile of an organization with no internal conflict.</p>
+</div>
+
+<ol class="inst wide">__THIN__</ol>
+
+<p class="patfoot">Every instance above is drawn from a dated, sourced entry on this site and
+links to the year it came from. The <a href="history.html">complete timeline</a> holds them all
+in order, the <a href="index.html">board</a> holds every year, and the
+<a href="sources.html">sources page</a> sets out what each collection covers and where it
+fails.</p>
+</section>
+
+</div></div>
+"""
+
+
+def render_patterns(ys):
+    groups = STANDING + VERDICTS + FIGHTS + SHAPE
+    n_pat = len(groups)
+    n_inst = sum(len(p["inst"]) for p in groups) + len(TURNOUT) + len(THIN)
+
+    trows = []
+    for lab, yid, count, note, up in TURNOUT:
+        trows.append('<li' + (' class="up"' if up else '') + '>'
+                     + '<a class="yr" href="' + _yhref(yid) + '">' + lab + '</a>'
+                     + '<span class="c">' + (count if count != "0" else "&#8212;")
+                     + '</span><p>' + note + '</p></li>')
+
+    hrows = []
+    for lab, yid, txt in THIN:
+        hrows.append('<li><a class="yr" href="' + _yhref(yid) + '">' + lab
+                     + '</a><p>' + txt + '</p></li>')
+
+    body = (PATTERNS_BODY
+            .replace("__NPAT__", str(n_pat))
+            .replace("__NINST__", str(n_inst))
+            .replace("__IX_STANDING__", _pat_index(STANDING, "The fifteen"))
+            .replace("__G_STANDING__", _pat_group(STANDING))
+            .replace("__IX_VERDICTS__", _pat_index(VERDICTS, "Ten kinds of verdict"))
+            .replace("__G_VERDICTS__", _pat_group(VERDICTS))
+            .replace("__IX_FIGHTS__", _pat_index(FIGHTS, "Nine standing fights"))
+            .replace("__G_FIGHTS__", _pat_group(FIGHTS))
+            .replace("__IX_SHAPE__", _pat_index(SHAPE, "Seven structural threads"))
+            .replace("__G_SHAPE__", _pat_group(SHAPE))
+            .replace("__TURNOUT__", "".join(trows))
+            .replace("__THIN__", "".join(hrows)))
+
+    desc = ("What recurs across sixty years of student government at Western Kentucky "
+            "University: " + str(n_pat) + " patterns and " + str(n_inst) + " dated "
+            "instances, from campus lighting and textbook prices to turnout, constitutional "
+            "rewrites and the student regent seat.")
+    return shell("The patterns · SGA 60", desc, body, PATTERNS_CSS,
+                 depth=0, current="patterns.html")
+
+
 # ---------------------------------------------------------------- data
 def apply_photo_overlay(ys):
     """Merge data/photos.json onto the years. Photographs live in their own file so
@@ -3137,6 +5220,7 @@ def main():
         if f.name not in keep_hist:
             f.unlink()
     (SITE / "story.html").write_text(render_story(ys))
+    (SITE / "patterns.html").write_text(render_patterns(ys))
     (SITE / "legislation.html").write_text(render_legislation(leg))
     (SITE / "corrections.html").write_text(render_corrections(ys))
 

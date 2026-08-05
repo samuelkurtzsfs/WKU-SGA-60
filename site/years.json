@@ -10,7 +10,8 @@
    "regent": "Held the student seat on the WKU Board of Regents - a separately elected office from 1968 until the two merged",
    "unresolved": "Shares a year with another name and the split is not yet established"
   },
-  "student_regent_history": "The student regent seat was created by state legislation reported in committee in February 1968 and filled in April 1968 by William Menser. It carried no vote for at least four years - students were campaigning for voting power in February 1970 and the Herald was still reporting 'Student Regent May Get Vote' in February 1972. Because it was separately elected, several plaque years carry two names: one president and one regent."
+  "student_regent_history": "The student regent seat was created by state legislation reported in committee in February 1968 and filled in April 1968 by William Menser. It carried no vote for at least four years - students were campaigning for voting power in February 1970 and the Herald was still reporting 'Student Regent May Get Vote' in February 1972. Because it was separately elected, several plaque years carry two names: one president and one regent.",
+  "dating": "Events are filed under the academic year they belong to, August through July. One deliberate exception: a spring election is filed under the term it created, so the April 2026 election appears under 2026-27, the year it elected. Entries dated 1 January are items the archive can place in a year but not to a day; the date is a placeholder, not a claim."
  },
  "years": [
   {
@@ -627,6 +628,16 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111/",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3112&context=dlsc_ua_records"
      }
+    },
+    {
+     "date": "1969-05-22",
+     "title": "President Kelly Thompson announces his resignation",
+     "body": "Thompson, who had approved the Associated Students constitution in 1966, announced he would step down as WKU's president. The Herald covered it in the same issue as the incoming Zielke-Porter student administration.",
+     "src": {
+      "label": "Herald 48:30 [31], 22 May 1969",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3112&context=dlsc_ua_records"
+     }
     }
    ],
    "organization": {
@@ -824,16 +835,6 @@
      }
     },
     {
-     "date": "1969-05-22",
-     "title": "President Kelly Thompson announces his resignation",
-     "body": "Thompson, who had approved the Associated Students constitution in 1966, announced he would step down as WKU's president. The Herald covered it in the same issue as the incoming Zielke-Porter student administration.",
-     "src": {
-      "label": "Herald 48:30 [31], 22 May 1969",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3112&context=dlsc_ua_records"
-     }
-    },
-    {
      "date": "1969-11-04",
      "title": "New constitution sent back for study",
      "body": "The Associated Student Government returned its proposed new constitution for further study while limiting how long the review could run. The same issue reported the group enlisting merchants for a student discount plan.",
@@ -900,6 +901,16 @@
       "label": "Herald 49:49, 16 May 1970",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4945/"
      }
+    },
+    {
+     "date": "1970-03-27",
+     "title": "Doug Alexander captures the vice presidency",
+     "body": "Alexander beat Steve Tichenor for the Associated Students vice presidency in the vote held the week after Lyne's uncontested presidential win.",
+     "src": {
+      "label": "Herald 49:39, 27 Mar 1970",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4932",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=5942&context=dlsc_ua_records"
+     }
     }
    ],
    "status": "researched"
@@ -959,16 +970,6 @@
       "label": "Herald 49:35, 13 Mar 1970",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4936",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=5938&context=dlsc_ua_records"
-     }
-    },
-    {
-     "date": "1970-03-27",
-     "title": "Doug Alexander captures the vice presidency",
-     "body": "Alexander beat Steve Tichenor for the Associated Students vice presidency in the vote held the week after Lyne's uncontested presidential win.",
-     "src": {
-      "label": "Herald 49:39, 27 Mar 1970",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4932",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=5942&context=dlsc_ua_records"
      }
     },
     {
@@ -3207,6 +3208,36 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2443",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3446&context=dlsc_ua_records"
      }
+    },
+    {
+     "date": "1982-04-15",
+     "title": "Norfleet's short regent term nears its end",
+     "body": "The Herald noted that the student regent's two-month term was already nearing its end, a reminder of how short a stopgap the office had been.",
+     "src": {
+      "label": "Herald 57:55, 15 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2464",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3467&context=dlsc_ua_records"
+     }
+    },
+    {
+     "date": "1982-01-28",
+     "title": "ASG sets up a council to settle its own disputes",
+     "body": "The Herald reported that the Associated Student Government had appointed a council to decide disputes inside the organization. The story ran two weeks after the same reporter, Kevin Francke, covered the resignation of ASG president Marcel Bush.",
+     "src": {
+      "label": "Herald 57:35, 28 Jan 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2440",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3443&context=dlsc_ua_records"
+     }
+    },
+    {
+     "date": "1982-02-11",
+     "title": "ASG and the University Center Board both ask for more money",
+     "body": "The Herald reported that the Associated Student Government and the University Center Board both wanted larger budgets and planned to submit requests. Two weeks later the paper ran a piece arguing that the Center Board outshone ASG.",
+     "src": {
+      "label": "Herald 57:39, 11 Feb 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2445",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3448&context=dlsc_ua_records"
+     }
     }
    ],
    "status": "researched",
@@ -3342,16 +3373,6 @@
      }
     },
     {
-     "date": "1982-04-15",
-     "title": "Norfleet's short regent term nears its end",
-     "body": "The Herald noted that the student regent's two-month term was already nearing its end, a reminder of how short a stopgap the office had been.",
-     "src": {
-      "label": "Herald 57:55, 15 Apr 1982",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2464",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3467&context=dlsc_ua_records"
-     }
-    },
-    {
      "date": "1982-04-20",
      "title": "Ragan wins the presidency in a repeated election",
      "body": "The first general election was voided, and Margaret Ragan won the Associated Student Government presidency in the repeated election held April 20. She and the other new officers were sworn in before the month was out.",
@@ -3429,26 +3450,6 @@
       "label": "Herald 58:59, 28 Apr 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2360",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3362&context=dlsc_ua_records"
-     }
-    },
-    {
-     "date": "1982-01-28",
-     "title": "ASG sets up a council to settle its own disputes",
-     "body": "The Herald reported that the Associated Student Government had appointed a council to decide disputes inside the organization. The story ran two weeks after the same reporter, Kevin Francke, covered the resignation of ASG president Marcel Bush.",
-     "src": {
-      "label": "Herald 57:35, 28 Jan 1982",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2440",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3443&context=dlsc_ua_records"
-     }
-    },
-    {
-     "date": "1982-02-11",
-     "title": "ASG and the University Center Board both ask for more money",
-     "body": "The Herald reported that the Associated Student Government and the University Center Board both wanted larger budgets and planned to submit requests. Two weeks later the paper ran a piece arguing that the Center Board outshone ASG.",
-     "src": {
-      "label": "Herald 57:39, 11 Feb 1982",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2445",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3448&context=dlsc_ua_records"
      }
     },
     {
@@ -3949,6 +3950,26 @@
       "label": "Herald 60:51, 11 Apr 1985",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5712/"
      }
+    },
+    {
+     "date": "1985-02-14",
+     "title": "An apathy editorial greets a 24-hour open house debate",
+     "body": "The Herald ran an apathy editorial and cartoon aimed at student government alongside a report on debate over 24-hour open house policy in the dorms.",
+     "src": {
+      "label": "Herald 60:38, 14 Feb 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5721",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6719&context=dlsc_ua_records"
+     }
+    },
+    {
+     "date": "1985-03-21",
+     "title": "Dueling op-eds spar over forcing a bill",
+     "body": "The Herald ran a pair of opposing opinion pieces, both headlined \"Associated Student Government Shouldn't Force Bill,\" one by future ASG president Mitchell McKinney and the other by Jamie Morton.",
+     "src": {
+      "label": "Herald 60:45, 21 Mar 1985",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5760",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6758&context=dlsc_ua_records"
+     }
     }
    ],
    "status": "researched"
@@ -4012,26 +4033,6 @@
     }
    ],
    "events": [
-    {
-     "date": "1985-02-14",
-     "title": "An apathy editorial greets a 24-hour open house debate",
-     "body": "The Herald ran an apathy editorial and cartoon aimed at student government alongside a report on debate over 24-hour open house policy in the dorms.",
-     "src": {
-      "label": "Herald 60:38, 14 Feb 1985",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5721",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6719&context=dlsc_ua_records"
-     }
-    },
-    {
-     "date": "1985-03-21",
-     "title": "Dueling op-eds spar over forcing a bill",
-     "body": "The Herald ran a pair of opposing opinion pieces, both headlined \"Associated Student Government Shouldn't Force Bill,\" one by future ASG president Mitchell McKinney and the other by Jamie Morton.",
-     "src": {
-      "label": "Herald 60:45, 21 Mar 1985",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5760",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6758&context=dlsc_ua_records"
-     }
-    },
     {
      "date": "1985-03-28",
      "title": "McKinney and Watkins win the ASG primary",
@@ -4229,15 +4230,6 @@
      "src": {
       "label": "SGA Bill 86-39-S, Commendation of Dr. John D. Minton",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/65"
-     }
-    },
-    {
-     "date": "1986-08-08",
-     "title": "Regents honor McKinney at term's end",
-     "body": "The WKU Board of Regents included a resolution honoring outgoing ASG president Mitchell McKinney, alongside honors for Georgia Bates and outgoing WKU president John Minton, at its August meeting - held the same day Kern Alexander was named the university's new president.",
-     "src": {
-      "label": "Board of Regents minutes, 8 Aug 1986",
-      "url": "https://digitalcommons.wku.edu/bor/1986/mtgs/4"
      }
     }
    ],
@@ -4443,6 +4435,15 @@
      "src": {
       "label": "Herald 62:48, 26 Mar 1987",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5916/"
+     }
+    },
+    {
+     "date": "1986-08-08",
+     "title": "Regents honor McKinney at term's end",
+     "body": "The WKU Board of Regents included a resolution honoring outgoing ASG president Mitchell McKinney, alongside honors for Georgia Bates and outgoing WKU president John Minton, at its August meeting - held the same day Kern Alexander was named the university's new president.",
+     "src": {
+      "label": "Board of Regents minutes, 8 Aug 1986",
+      "url": "https://digitalcommons.wku.edu/bor/1986/mtgs/4"
      }
     }
    ],
@@ -4980,6 +4981,15 @@
       "label": "Herald 65:55, 19 Apr 1990",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7635"
      }
+    },
+    {
+     "date": "1990-05-30",
+     "title": "Regents set the 1990-91 tuition and operating budget",
+     "body": "WKU's Board of Regents met in special session and approved the university's 1990-91 operating budget, tuition rates, and personnel changes ahead of Colvin's term.",
+     "src": {
+      "label": "WKU Board of Regents, special meeting, 30 May 1990",
+      "url": "https://digitalcommons.wku.edu/bor/1990/spcl/3"
+     }
     }
    ],
    "status": "researched"
@@ -5098,15 +5108,6 @@
      "src": {
       "label": "Herald 65:55, 19 Apr 1990, \"Associated Student Government Wants Activity Fee Raised\"",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7635/"
-     }
-    },
-    {
-     "date": "1990-05-30",
-     "title": "Regents set the 1990-91 tuition and operating budget",
-     "body": "WKU's Board of Regents met in special session and approved the university's 1990-91 operating budget, tuition rates, and personnel changes ahead of Colvin's term.",
-     "src": {
-      "label": "WKU Board of Regents, special meeting, 30 May 1990",
-      "url": "https://digitalcommons.wku.edu/bor/1990/spcl/3"
      }
     },
     {
@@ -5638,6 +5639,15 @@
       "label": "Herald 67:54, 21 Apr 1992",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7704"
      }
+    },
+    {
+     "date": "1992-04-21",
+     "title": "Rains takes office with a rename to carry out",
+     "body": "The Herald reported that incoming president Joe Rains would oversee the change from Associated Student Government to Student Government Association, which students had ratified by referendum the week before. The new name took effect that fall, making Rains the first president to serve under it.",
+     "src": {
+      "label": "Herald 67:54, 21 Apr 1992",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7704"
+     }
     }
    ],
    "status": "researched",
@@ -5751,15 +5761,6 @@
      "src": {
       "label": "WKU University Senate, Resolution R92.11",
       "url": "https://digitalcommons.wku.edu/univ_senate/leg/res/56"
-     }
-    },
-    {
-     "date": "1992-04-21",
-     "title": "Rains takes office with a rename to carry out",
-     "body": "The Herald reported that incoming president Joe Rains would oversee the change from Associated Student Government to Student Government Association, which students had ratified by referendum the week before. The new name took effect that fall, making Rains the first president to serve under it.",
-     "src": {
-      "label": "Herald 67:54, 21 Apr 1992",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7704"
      }
     },
     {
@@ -6855,6 +6856,16 @@
       "label": "SGA Meeting Minutes, 21 Jan 1997",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559"
      }
+    },
+    {
+     "date": "1997-04-24",
+     "title": "Keith Coffman took charge",
+     "body": "The Herald announced the new administration with 'Keith Coffman Takes Charge,' and a companion piece reported the new president mapping his upcoming term. His term began as the spring semester closed.",
+     "src": {
+      "label": "Herald 72:54, 24 Apr 1997",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3012",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4039&context=dlsc_ua_records"
+     }
     }
    ],
    "status": "researched",
@@ -6998,16 +7009,6 @@
      "src": {
       "label": "TopSCHOLAR - SGA Documents/Reports/21",
       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/21"
-     }
-    },
-    {
-     "date": "1997-04-24",
-     "title": "Keith Coffman took charge",
-     "body": "The Herald announced the new administration with 'Keith Coffman Takes Charge,' and a companion piece reported the new president mapping his upcoming term. His term began as the spring semester closed.",
-     "src": {
-      "label": "Herald 72:54, 24 Apr 1997",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3012",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4039&context=dlsc_ua_records"
      }
     },
     {
@@ -7262,6 +7263,26 @@
       "label": "Herald 74:53, 22 Apr 1999",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8053"
      }
+    },
+    {
+     "date": "1999-04-15",
+     "title": "Recount narrows Coates and Martin's win to three votes",
+     "body": "Amanda Coates and running mate Cassie Martin initially led Will Jones and Kara Yeckering 616-611 for president and vice president; after the Coates-Martin ticket asked for a recount to be sure of the win, the recount that night found an even closer margin, 614-611. A write-in ticket of Dwight Campbell and Kerri Richardson finished third with 145 votes. Total turnout was 1,436 students.",
+     "src": {
+      "label": "Herald 74:51, 15 Apr 1999",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8052/",
+      "file": "1999-00-herald-74-51-elections.pdf"
+     }
+    },
+    {
+     "date": "1999-04-15",
+     "title": "Griffey and Bastin win the remaining executive seats",
+     "body": "Brandon Griffey defeated Amanda Kirby 729-652 for vice president of administration, and Matt Bastin defeated Duan Wright 806-570 for vice president of public relations, completing the 1999-2000 executive slate.",
+     "src": {
+      "label": "Herald 74:51, 15 Apr 1999",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8052/",
+      "file": "1999-00-herald-74-51-elections.pdf"
+     }
     }
    ],
    "status": "researched",
@@ -7481,28 +7502,8 @@
     },
     {
      "date": "1999-04-15",
-     "title": "Recount narrows Coates and Martin's win to three votes",
-     "body": "Amanda Coates and running mate Cassie Martin initially led Will Jones and Kara Yeckering 616-611 for president and vice president; after the Coates-Martin ticket asked for a recount to be sure of the win, the recount that night found an even closer margin, 614-611. A write-in ticket of Dwight Campbell and Kerri Richardson finished third with 145 votes. Total turnout was 1,436 students.",
-     "src": {
-      "label": "Herald 74:51, 15 Apr 1999",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8052/",
-      "file": "1999-00-herald-74-51-elections.pdf"
-     }
-    },
-    {
-     "date": "1999-04-15",
      "title": "Matheis survives a flier scandal to win vice president of finance",
      "body": "Joe Matheis defeated Ryan Morrison 700-688 for vice president of finance in the campaign's most contentious race. Two hours after the initial result, SGA's judicial council placed the race under review after fliers Matheis had distributed turned up left on classroom desks and in computer labs overnight, violating election code; the council warned Matheis could lose the seat if he had not made a good-faith effort to collect them. The council let the result stand the next day, and Morrison filed a complaint with the judicial council disputing that decision, saying fliers were still on desks in Garrett and the fine arts center.",
-     "src": {
-      "label": "Herald 74:51, 15 Apr 1999",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8052/",
-      "file": "1999-00-herald-74-51-elections.pdf"
-     }
-    },
-    {
-     "date": "1999-04-15",
-     "title": "Griffey and Bastin win the remaining executive seats",
-     "body": "Brandon Griffey defeated Amanda Kirby 729-652 for vice president of administration, and Matt Bastin defeated Duan Wright 806-570 for vice president of public relations, completing the 1999-2000 executive slate.",
      "src": {
       "label": "Herald 74:51, 15 Apr 1999",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8052/",
@@ -7590,6 +7591,15 @@
      "src": {
       "label": "SGA Records: Resolution 00-2-S, 4 Apr 2000",
       "url": "https://digitalcommons.wku.edu/context/sga/article/2195/viewcontent/sga_res_00_2_s.pdf"
+     }
+    },
+    {
+     "date": "2000-04-20",
+     "title": "Herald reported SGA membership still declining",
+     "body": "The Herald ran a story headlined \"Student Government Association Membership Still Declining,\" tracking a drop in participation as the Martin administration prepared to take office.",
+     "src": {
+      "label": "College Heights Herald 75:54, 20 Apr 2000",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8116/"
      }
     }
    ],
@@ -7808,15 +7818,6 @@
      "src": {
       "label": "College Heights Herald 75:53, 18 Apr 2000",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8115/"
-     }
-    },
-    {
-     "date": "2000-04-20",
-     "title": "Herald reported SGA membership still declining",
-     "body": "The Herald ran a story headlined \"Student Government Association Membership Still Declining,\" tracking a drop in participation as the Martin administration prepared to take office.",
-     "src": {
-      "label": "College Heights Herald 75:54, 20 Apr 2000",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8116/"
      }
     },
     {
@@ -15603,6 +15604,15 @@
       "label": "Herald, 19 May 2025",
       "url": "https://wkuherald.com/84745/news/gordon-wilson-hall-to-receive-elevator-alongside-other-campus-construction-projects/"
      }
+    },
+    {
+     "date": "2025-04-22",
+     "title": "Robinson reappoints Jenkins chief communications officer",
+     "body": "In one of his first acts after taking office, Robinson reappointed Preston Jenkins as chief communications officer; the Senate later confirmed the pick unanimously.",
+     "src": {
+      "label": "Herald, 15 Sep 2025",
+      "url": "https://wkuherald.com/86549/news/sga-announces-opportunity-for-students-to-leave-a-lasting-legacy-on-campus/"
+     }
     }
    ],
    "status": "researched",
@@ -15798,15 +15808,6 @@
     }
    ],
    "events": [
-    {
-     "date": "2025-04-22",
-     "title": "Robinson reappoints Jenkins chief communications officer",
-     "body": "In one of his first acts after taking office, Robinson reappointed Preston Jenkins as chief communications officer; the Senate later confirmed the pick unanimously.",
-     "src": {
-      "label": "Herald, 15 Sep 2025",
-      "url": "https://wkuherald.com/86549/news/sga-announces-opportunity-for-students-to-leave-a-lasting-legacy-on-campus/"
-     }
-    },
     {
      "date": "2025-08-08",
      "title": "Robinson sworn in as student regent, succeeding Kurtz",
@@ -16124,6 +16125,42 @@
       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12637"
      },
      "campus": true
+    },
+    {
+     "date": "2026-06-02",
+     "title": "Lucas voices concern over proposed tuition increase",
+     "body": "WKU released a proposed 2026-27 budget that would raise tuition by $210 to $6,246 per semester within a $405.1 million operating plan. Lucas, identified as SGA president and soon-to-be student regent, said he was \"generally concerned\" by a proposal that would raise the cost of attending WKU. He said students deserved both a high-quality education and an affordable way to achieve it.",
+     "src": {
+      "label": "Herald, 2 Jun 2026",
+      "url": "https://wkuherald.com/93769/news/wkus-proposed-budget-for-next-year-awaits-approval/"
+     }
+    },
+    {
+     "date": "2026-06-05",
+     "title": "Regents approve tuition increase over student regent's lone no vote",
+     "body": "The Board of Regents approved a $204 tuition increase to $6,240 per semester, the sixth consecutive yearly increase, along with a 5% housing rate increase and a 2% meal plan increase as part of a $405 million operating budget. Every regent voted in favor except outgoing SGA president Rush Robinson, casting his final vote as student regent before Lucas took the seat. The board also suspended several majors, including kinesiology and geological sciences, for reworking and mergers.",
+     "src": {
+      "label": "Herald, 5 Jun 2026",
+      "url": "https://wkuherald.com/93781/news/wku-board-of-regents-approves-tuition-increase/"
+     }
+    },
+    {
+     "date": "2026-07-07",
+     "title": "SGA got a new adviser in Student Activities leadership change",
+     "body": "Andrew Rash, who had served as SGA's faculty adviser and Associate Director of Student Activities and Greek Life since 2022, became interim director of the Department of Student Activities on July 1 following the retirement of longtime director Charley Pride. Assistant Director of Student Activities and Leadership and Volunteerism Amelia Kolb took over as SGA's adviser going forward.",
+     "src": {
+      "label": "Herald, 7 Jul 2026",
+      "url": "https://wkuherald.com/96322/news/andrew-rash-announced-as-student-activities-interim-director/"
+     }
+    },
+    {
+     "date": "2026-05-11",
+     "title": "Lucas named ODK Circle Leader of the Year",
+     "body": "WKU's Omicron Delta Kappa circle named President Caden Lucas its Heather Strode Circle Leader of the Year, an award for a student demonstrating leadership and dedication to the campus community across ODK's five core values.",
+     "src": {
+      "label": "WKU News, 11 May 2026",
+      "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13098"
+     }
     }
    ],
    "documents": [
@@ -16353,33 +16390,6 @@
      }
     },
     {
-     "date": "2026-06-02",
-     "title": "Lucas voices concern over proposed tuition increase",
-     "body": "WKU released a proposed 2026-27 budget that would raise tuition by $210 to $6,246 per semester within a $405.1 million operating plan. Lucas, identified as SGA president and soon-to-be student regent, said he was \"generally concerned\" by a proposal that would raise the cost of attending WKU. He said students deserved both a high-quality education and an affordable way to achieve it.",
-     "src": {
-      "label": "Herald, 2 Jun 2026",
-      "url": "https://wkuherald.com/93769/news/wkus-proposed-budget-for-next-year-awaits-approval/"
-     }
-    },
-    {
-     "date": "2026-06-05",
-     "title": "Regents approve tuition increase over student regent's lone no vote",
-     "body": "The Board of Regents approved a $204 tuition increase to $6,240 per semester, the sixth consecutive yearly increase, along with a 5% housing rate increase and a 2% meal plan increase as part of a $405 million operating budget. Every regent voted in favor except outgoing SGA president Rush Robinson, casting his final vote as student regent before Lucas took the seat. The board also suspended several majors, including kinesiology and geological sciences, for reworking and mergers.",
-     "src": {
-      "label": "Herald, 5 Jun 2026",
-      "url": "https://wkuherald.com/93781/news/wku-board-of-regents-approves-tuition-increase/"
-     }
-    },
-    {
-     "date": "2026-07-07",
-     "title": "SGA got a new adviser in Student Activities leadership change",
-     "body": "Andrew Rash, who had served as SGA's faculty adviser and Associate Director of Student Activities and Greek Life since 2022, became interim director of the Department of Student Activities on July 1 following the retirement of longtime director Charley Pride. Assistant Director of Student Activities and Leadership and Volunteerism Amelia Kolb took over as SGA's adviser going forward.",
-     "src": {
-      "label": "Herald, 7 Jul 2026",
-      "url": "https://wkuherald.com/96322/news/andrew-rash-announced-as-student-activities-interim-director/"
-     }
-    },
-    {
      "date": "2026-04-08",
      "title": "Executive candidates face off at SGA town hall",
      "body": "SGA held a town hall in the Downing Student Union Auditorium for the two executive tickets: Caden Lucas with Jakob Barker and Will Derryberry, and Jaden Marshall with Kaden Blankenship and Miles VanRude. Chief Justice Sophie Stirling moderated as the candidates answered 27 questions submitted by students. Both tickets made increasing awareness of SGA operations and outreach to the student body their central campaign promise.",
@@ -16404,15 +16414,6 @@
      "src": {
       "label": "WKU News, 24 Apr 2026",
       "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13063"
-     }
-    },
-    {
-     "date": "2026-05-11",
-     "title": "Lucas named ODK Circle Leader of the Year",
-     "body": "WKU's Omicron Delta Kappa circle named President Caden Lucas its Heather Strode Circle Leader of the Year, an award for a student demonstrating leadership and dedication to the campus community across ODK's five core values.",
-     "src": {
-      "label": "WKU News, 11 May 2026",
-      "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13098"
      }
     }
    ],
