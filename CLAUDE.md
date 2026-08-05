@@ -134,10 +134,21 @@ Rules: only images from the university's own open archives or news pages. Always
 (JPEG starts with bytes FF D8, PNG with 89 50 4E 47). Never use a photo whose subject you
 cannot confirm from the caption or context - a misidentified face is worse than no face.
 
-## Campus context — the year around SGA
-Major campus events that shaped the year belong in the record even when SGA was not the actor:
-a president hired or fired, a building opened, a protest, a tuition hike, an enrollment shock.
-Mark them with `"campus": true` in the event and they render with a campus tag:
+## Campus context — a high bar, not a catch-all
+An event earns a place in this archive one of two ways: SGA did it, decided it, debated it or
+was formally part of it; or it is major news that shaped the year for students — September 11,
+the 2021 tornado, the COVID shutdown, a university president resigning, a murder trial, a
+tuition increase, a campus lockdown.
+
+Nothing else. A building opening, a centennial kickoff, an enrollment milestone, a charity
+proclamation, a ribbon cutting: these are university publicity, not student government
+history, and they do not belong here even when an SGA officer attended. An officer being
+present at something does not make it SGA's history.
+
+Mark true context events — the second category, where SGA was not the actor — with
+`"campus": true`. Never mark SGA's own business as campus context; the tag exists to tell a
+reader "this is the world around student government," and it is worthless if it is on
+everything.
 
 ```json
 {"date": "1969-05-01", "title": "...", "body": "...", "campus": true,
