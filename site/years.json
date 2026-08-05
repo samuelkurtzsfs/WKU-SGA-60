@@ -4801,28 +4801,6 @@
      }
     },
     {
-     "date": "1979-03-31",
-     "title": "Regents take concerts and lectures away from ASG",
-     "body": "On 31 March the Board of Regents approved moving the activities that ASG had run, lectures and concerts among them, to a rebuilt University Center Board and funded that board with $80,000 for programming from autumn 1979. The new committees were to include the ASG president, the activities vice president and one congress member alongside Greek, United Black Students, residence hall and faculty representatives. Programs coordinator Tim Nemeth said the new board would involve at most ten students in lectures and concerts where ASG had involved fifty.",
-     "kind": "program",
-     "money": "$80,000 to the University Center Board",
-     "src": {
-      "label": "Talisman 1979, University Center Board",
-      "url": "https://archive.org/details/talisman1979west"
-     }
-    },
-    {
-     "date": "1979-03-31",
-     "title": "The Regents move concerts and lectures away from ASG",
-     "body": "The Board of Regents approved a reorganisation of the University Center Board on 31 March 1979 and funded it with $80,000 for programming. From the autumn, committees of students and administrators would run the lectures and concerts that Associated Student Government had run. ASG kept three seats on those committees, held by its president, its activities vice president and one member of congress, alongside representatives of the Interfraternity and Panhellenic councils, United Black Students, the men's and women's residence hall councils, two other students and three faculty members.",
-     "kind": "other",
-     "money": "$80,000 moved to the University Center Board for programming",
-     "src": {
-      "label": "1979 Talisman, University Center Board",
-      "url": "https://archive.org/details/talisman1979west"
-     }
-    },
-    {
      "date": "1978-10-26",
      "title": "ASG's promoter had not signed a contract days before the Player and Exile concert",
      "body": "ASG said in the early autumn of 1978 that it would sign a contract with Sunshine Promotions, an Indianapolis concert firm, and its activities vice president David Carwell said the company met the three requirements for an outside promoter: an office within 500 miles of Western, at least 75 major concerts promoted, and $2 million grossed on them. Eight days before the Player and Exile concert of 3 November, the Herald reported that Western had still not signed, because the firm would not post the $100,000 performance bond the university required to guarantee that all the bills would be paid. Sunshine's Sybesma said Indiana insurance companies wanted 100 per cent collateral and a $2,000 service fee for the bond, and said his company might instead put up money before each concert. Sunshine later posted an irrevocable letter of credit that Western could cash if the concert bills went unpaid.",
@@ -4853,6 +4831,17 @@
      "money": "about 250 attended",
      "src": {
       "label": "Talisman 1979, Black Awareness Symposium and lectures sections",
+      "url": "https://archive.org/details/talisman1979west"
+     }
+    },
+    {
+     "date": "1979-03-31",
+     "kind": "other",
+     "title": "The Regents take concerts and lectures away from ASG",
+     "body": "The Board of Regents approved a rebuilt University Center Board on 31 March 1979 and funded it with $80,000 for programming. From the autumn its committees of students and administrators would run the lectures and concerts Associated Student Government had been running. ASG kept three seats, held by its president, its activities vice president and one member of congress, alongside representatives of the Interfraternity and Panhellenic councils, United Black Students, the men's and women's residence hall councils, two other students and three faculty members. The university programs coordinator, Tim Nemeth, said the new board would involve more student participation, and then put its maximum at ten students working on lectures and concerts against the fifty involved under ASG.",
+     "money": "$80,000 to the University Center Board for programming",
+     "src": {
+      "label": "1979 Talisman, University Center Board",
       "url": "https://archive.org/details/talisman1979west"
      }
     }

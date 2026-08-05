@@ -5007,7 +5007,9 @@ SHAPE = [
   "span": "1973&#8211;2024",
   "what": "The total is set by the university. What SGA controls is how it is divided, and "
           "in several years how much of it goes unspent.",
-  "shift": "ASG ran concerts and lost money on them through the 1970s. University cuts in "
+  "shift": "ASG ran concerts and lost money on them through the 1970s, until the Regents "
+           "moved the lectures and concerts to a rebuilt University Center Board in March "
+           "1979 and funded it with $80,000. University cuts in "
            "2013 removed the automatic inflation increase SGA had been receiving, but the "
            "modern totals did not move in one direction: $125,000 in 2013-14, $138,500 in "
            "2015-16, $100,000 in 2024-25. The recurring problem was not only scarcity but "
@@ -5016,9 +5018,10 @@ SHAPE = [
    ("1973", "1973-74#e-19730828-1",
     "The Board of Regents voted to increase the ASG allotment, and the organization became "
     "something else: a concert promoter, a survey-taker, a runner of free evening courses."),
-   ("1979", "1978-79#e-19790125-1",
-    "ASG faced losing control of student activities funding. The archive does not show how "
-    "the fight was resolved."),
+   ("1979", "1978-79#e-19790331-1",
+    "ASG faced losing control of student activities funding, and lost it. On 31 March the "
+    "Board of Regents gave the lectures and concerts to a rebuilt University Center Board "
+    "and funded that board with $80,000 for programming."),
    ("1986", "1986-87#e-19860911-1",
     "A $12,100 budget, reported alongside a plan to reach students by telephone."),
    ("2004", "2003-04#e-20040408-1",
