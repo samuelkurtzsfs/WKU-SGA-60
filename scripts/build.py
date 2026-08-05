@@ -1799,10 +1799,12 @@ def render_corrections(ys):
 {group("Still open", "Two names on one plate, or a name the record cannot yet place. Nothing is asserted here that a source does not carry.", open_q, "What the plaque reads")}
 {group("Recorded, not yet confirmed", "These names are on the plaque and stand in the record, but no contemporary source has been found that puts them in the year given. They are printed as the plaque has them until the archive says otherwise.", unconfirmed, "What the plaque reads")}
 <h2 class="sec">Spellings the project will not quietly fix</h2>
-<p class="prose">Two names on the plaque are recorded here exactly as they appear on it,
-because no source has been found that settles them: <b>Hargroave</b>, which may be a
-misspelling of Hargrove, and <b>Keyanna</b>, which appears elsewhere as Keyana. Guessing at
-a spelling would put a person in the record under a name they never used.</p>
+<p class="prose">One name on the plaque is still recorded here exactly as it appears on it,
+because no source has been found that settles it: <b>Keyanna</b>, which appears elsewhere as
+Keyana. Guessing at a spelling would put a person in the record under a name they never used.
+<b>Hargroave</b> and <b>Marcell</b> are settled and no longer guesses: the <cite>Herald</cite>
+and SGA's own roster of former presidents, archived in September 2001, both give Hargrove and
+Marcel, so the site follows them and prints the plaque's reading beside each.</p>
 <h2 class="sec">Telling us</h2>
 <p class="prose">If you served, or you know that a year here is wrong, the project wants to
 hear it. Corrections come through the Student Government Association office at Western
@@ -3110,8 +3112,9 @@ after. David Payne&#8217;s plate reads 1982; he filled the balance of
 <a href="y/1981-82.html">Marcel Bush&#8217;s 1981-82 term</a>. Every contemporaneous source for
 1999-2000 gives the president as <a href="y/1999-00.html">Amanda Coates, never Lich</a>. Two
 consecutive plates for 2014-15 record one continuous officeholder who
-<a href="y/2014-15.html">changed her surname in mid-term</a>. Hargroave, Mollozzi, Keyana or
-Keyanna: doubtful spellings are flagged on the year pages, not fixed.</p>
+<a href="y/2014-15.html">changed her surname in mid-term</a>. The same happened to
+<a href="y/1976-77.html">Christy Vogt</a>, whom the plaque calls Mollozzi. Keyana or Keyanna
+is still doubtful, and doubtful spellings are flagged on the year pages, not fixed.</p>
 
 <p>Whole stretches are thin in specific ways. For most of the 1980s the only witness is the
 <cite>Herald</cite>&#8217;s article index, which reliably gives a headline and rarely gives a
@@ -3205,7 +3208,7 @@ Kayla Shelton succeeded him without taking the Board seat, and Reagan Gilley won
 special election the following month.</p>
 
 <p>In the other years the presidency simply changed hands partway through, and the plaque
-records the change poorly or not at all. Four presidents have left office early: Marcell Bush
+records the change poorly or not at all. Four presidents have left office early: Marcel Bush
 in January 1982, Nick Todd in July 2004, Rob Watkins in November 2006 and Johnathon Boles in
 January 2009. Each was followed by someone who finished the year, and this archive counts
 those people as presidents, because they held the office, however briefly. The wall does not.

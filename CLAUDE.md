@@ -29,7 +29,7 @@ president, and belongs on the list with everyone else.
 A person is counted **once**, at the first time they held the office, however many terms they serve
 later. Two plates for one person is not two presidents: check for a changed surname before adding
 anyone. Known cases in this record are Christy Vogt / Christy Mollozzi, Janet "Nicki" Seay / Nicki
-Taylor, Amanda Coates / Amanda Lich, and James Hargroave / Jamie Hargrove.
+Taylor, Amanda Coates / Amanda Lich, and James Hargrove / James Hargroave.
 
 Because SGA elects in April and the winner serves the next academic year, the test for a missing
 president is simple: find who the sources name as president in the **fall**, then again late in the
@@ -285,7 +285,9 @@ editorial voice describing the history that changed.
 - **Quote under 15 words, once per source, maximum.** Paraphrase and link. This is a public site
   reusing a university archive and a student newspaper; do not reproduce their text.
 - **Do not merge people by name.** Two people can share a name. Verify before claiming a later career.
-- **Flag, do not fix, spelling doubts.** `Hargroave` and `Keyanna`/`Keyana` are unverified.
+- **Flag, do not fix, spelling doubts.** `Keyanna`/`Keyana` is still unverified. `Hargroave`,
+  `Mollozzi` and `Marcell` are settled: the Herald and SGA's own 2001 roster of former
+  presidents give Hargrove, Vogt and Marcel, and the site follows them with the plaque printed beside.
 - **Living people.** Some entries touch resignations, investigations and conduct cases. Report only
   what a cited source reported, name no accusers who were not named publicly, and state outcomes
   where they exist. If a source only covers an allegation and never a resolution, say so.
