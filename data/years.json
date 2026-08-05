@@ -9724,7 +9724,7 @@
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Plaque plate reads \"2009\" and had been filed under 2009-10, overlapping Kevin Smiley there; moved to 2008-09. Shelton was executive vice president on Johnathon Boles's Red Towel Party ticket and became president - but not student regent - when Boles resigned on 30 Jan 2009, finishing out his 2008-09 term. Kevin Smiley won the next regular election on 16 April 2009 for the 2009-10 term, so Shelton's presidency did not extend into 2009-10. Confirmed: the Herald of April 2009 describes her as the sitting Student Government Association president, having taken office after Johnathon Boles resigned, and previously senator, student affairs chair, speaker of the senate and executive vice president.",
+     "note": "Plaque plate reads \"2009\" and had been filed under 2009-10, overlapping Kevin Smiley there; moved to 2008-09. Shelton was executive vice president on Johnathon Boles's Red Towel Party ticket and became president - but not student regent - when Boles resigned on 30 Jan 2009, finishing out his 2008-09 term. Kevin Smiley won the next regular election on 16 April 2009 for the 2009-10 term, so Shelton's presidency did not extend into 2009-10. Confirmed: the Herald of April 2009 describes her as the sitting Student Government Association president, having taken office after Johnathon Boles resigned, and previously senator, student affairs chair, speaker of the senate and executive vice president. She did not take the seat on the Board of Regents with the presidency: that seat had been vacated by Boles's resignation and was filled separately by Reagan Gilley in a special election in February 2009.",
      "sources": [
       {
        "label": "Herald, 12 Feb 2009",
@@ -9753,6 +9753,30 @@
       "Shelton presided over the senate through the spring, including a Feb. 24 meeting where senators debated and rejected, 13 votes to 9, a bill to cover an extra $82.27 for water bottles SGA had earlier agreed to fund as prizes for a Housing and Residence Life energy-saving contest. Shelton said she thought it was great that the senate debated something it felt passionate about rather than casting \"just a general yes or no.\"",
       "Shelton did not continue as president into 2009-10; Kevin Smiley won the regular spring election for that term on 16 April 2009.",
       "Kayla Shelton, who had been executive vice president, became SGA president after Johnathon Boles resigned, serving out the rest of the 2008-09 year. She inherited a dispute over whether to hold a special election for the vacant student regent seat, and when the Judicial Council voted 2-1 in February to hold one despite objections from other executives, she backed the decision. \"That's what they decided, so I support it,\" Shelton said, adding that her main focus remained serving the student body."
+     ]
+    },
+    {
+     "name": "Reagan Gilley",
+     "plaque_term": "",
+     "role": "regent",
+     "year_confidence": "confirmed",
+     "name_verified": true,
+     "missing_from_plaque": true,
+     "current": false,
+     "note": "Elected student regent in a special election held 25-26 February 2009, beating Nate Eaton 477 to 224 of 701 votes cast. Then the administrative vice president, Gilley took the Board seat that Johnathon Boles vacated when he resigned the presidency on 30 January 2009; Kayla Shelton succeeded Boles as president but did not take the regent seat, so for the rest of that year the two offices were held by two people. The Board of Regents minutes of 24 April 2009 record the constitutional oath being administered to him as student regent. The split closed at the regular summer handover: the Board's roll call of 31 July 2009 lists Kevin Smiley as student regent.",
+     "sources": [
+      {
+       "label": "Herald 84:35, 26 Feb 2009 - Gilley elected student regent",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6718"
+      },
+      {
+       "label": "Herald 84:28, 3 Feb 2009 - Boles resigns",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6726"
+      },
+      {
+       "label": "WKU Board of Regents minutes, 24 Apr 2009",
+       "url": "https://www.wku.edu/regents/documents/wku_bor_042409.pdf"
+      }
      ]
     }
    ],

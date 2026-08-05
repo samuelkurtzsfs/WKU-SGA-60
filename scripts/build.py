@@ -2159,6 +2159,39 @@ def render_about(ys, meta, n_leg, n_herald, n_docs, n_port, n_gal):
 </div></header>
 <div class="wrap"><div class="body">
 
+<h2 class="sec">The two offices</h2>
+<div class="prose">
+<p>The Kentucky legislature added a student to every state university's governing board in
+1968. At Western the seat and the presidency of the student body have usually been held by
+the same person, but they are two offices, and the record turns on the difference.</p>
+<p>As the statute stood in 1972, the student regent <em>was</em> the student body president
+by right &mdash; unless that president failed a test. KRS 164.320(8) then read that if the
+president "is not a full-time student who maintains permanent residency in the Commonwealth
+of Kentucky, a special election shall be held to select a full-time student who does maintain
+permanent residency in this Commonwealth as the student member."
+(<a class="ext" href="https://files.eric.ed.gov/fulltext/ED067026.pdf" rel="noopener">Kentucky
+Revised Statutes Pertaining to Higher Education, June 1972, p. 12</a>)</p>
+<p>That residency bar is why the offices came apart in the archive's early years. Bill
+Straeffer, elected president in 1968, was an out-of-state student, so the Congress of
+Associated Students elected Paul Gerard to the Board seat instead. The <cite>Herald</cite>
+explained the same mechanism again in September 1972: "The student regent normally is the
+president of the student governing body, if he is a Kentucky resident."</p>
+<p>The requirement did not merely lapse; it was reversed. By the 1997 amendment the statute
+said the student member "may be an out-of-state resident if applicable," and that permission
+stayed on the books for at least sixteen years. The 2016 and 2017 rewrite dropped residency
+language altogether. Today
+(<a class="ext" href="https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=57974" rel="noopener">KRS
+164.321(1)(j)</a>) the student member must be the elected student body president and a
+full-time student, and nothing more; the residency conditions that remain in that section
+apply only to the governor's appointees.</p>
+<p>So a single name on the plaque after 1968 means one person holding both offices. Two names
+mean the offices were split that year, and there are six such years in this record: 1968-69
+and 1969-70 (Paul Gerard), 1972-73 (Michael Fiorella), 1974-75 (Gregory McKinney), 1982-83
+(Sandra Norfleet), and 2008-09, when Johnathon Boles resigned the presidency in January 2009,
+Kayla Shelton succeeded him without taking the Board seat, and Reagan Gilley won it in a
+special election the following month.</p>
+</div>
+
 <h2 class="sec">Scope and content</h2>
 <div class="prose">
 <p>The archive holds one page for each of the {len(ys)} academic years from {h(ys[0]["id"])} to
