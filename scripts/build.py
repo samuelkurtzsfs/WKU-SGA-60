@@ -367,6 +367,18 @@ BOARD_CSS = """
  border-bottom:1px solid rgba(176,30,36,.35)}
 .starthere span{display:block;color:var(--ink2);font-size:.92rem;margin-top:4px}
 
+/* ---- the story, on the front page ---- */
+.readfirst{display:block;text-decoration:none;color:var(--ink);border-top:2px solid var(--black);
+ border-bottom:1px solid var(--line);padding:20px 0 22px;margin:30px 0 0}
+.readfirst:hover{color:var(--ink)}
+.readfirst .lab{color:var(--red)}
+.readfirst h2{font-size:clamp(1.5rem,3.4vw,2rem);line-height:1.05;margin:9px 0 0;
+ max-width:30rem}
+.readfirst p{max-width:var(--measure);color:var(--ink2);margin:11px 0 0;font-size:1rem}
+.readfirst .go{display:inline-block;margin-top:13px;font-size:.9rem;color:var(--red);
+ border-bottom:1px solid rgba(176,30,36,.4)}
+.readfirst:hover .go{color:var(--red-dark)}
+
 /* ---- Big Red ---- */
  line-height:17px;text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
  white-space:nowrap;opacity:0;transition:opacity .2s;pointer-events:none;line-height:1.4}
@@ -403,7 +415,8 @@ def name_searches(name):
 
 
 # ---------------------------------------------------------------- shell
-NAV_ITEMS = [("index.html", "The board"), ("history.html", "Timeline"),
+NAV_ITEMS = [("index.html", "The board"), ("story.html", "The story"),
+             ("history.html", "Timeline"),
              ("legislation.html", "Legislation"), ("corrections.html", "Corrections"),
              ("sources.html", "Sources"), ("about.html", "About and method")]
 
@@ -1014,6 +1027,16 @@ def render_index(ys, n_leg, n_herald):
 </div></header>
 
 <div class="wrap">
+ <a class="readfirst" href="story.html">
+  <p class="lab">Start here</p>
+  <h2>The story</h2>
+  <p>Sixty years of student government at Western Kentucky University, read straight through:
+  the fight for a seat on the Board of Regents, the concert losses that nearly cost it the job, the
+  gazebo that was never built, the resolution that drew national coverage and was rejected
+  within days. Every claim links back to the year it came from.</p>
+  <span class="go">Read the narrative</span>
+ </a>
+
  <div class="tools">
   <label class="field" for="q"><span class="lab">Search the board</span>
    <input id="q" type="search" autocomplete="off" spellcheck="false"></label>
@@ -2145,6 +2168,771 @@ site can be checked from the links it carries; the whole record is published as 
                  body, SOURCES_CSS, depth=0, current="sources.html")
 
 
+STORY_CSS = """
+.story{max-width:37rem}
+.story p{font-size:1.06rem;line-height:1.66;margin:0 0 1.15em}
+.story a{text-decoration-color:rgba(176,30,36,.42)}
+.era{scroll-margin-top:14px}
+.erahead{border-top:2px solid var(--black);margin:76px 0 0;padding-top:17px}
+.erahead:first-of-type{margin-top:44px}
+.erahead .yrs{font-family:var(--mono);font-size:.78rem;letter-spacing:.07em;
+ color:var(--red);font-variant-numeric:tabular-nums;display:block}
+.erahead h2{font-size:clamp(1.55rem,3.7vw,2.15rem);line-height:1.06;margin:9px 0 0}
+.stand{max-width:37rem;color:var(--ink2);font-size:1.06rem;line-height:1.6;
+ margin:14px 0 30px}
+h3.sub{font-size:1.06rem;margin:36px 0 9px;max-width:37rem}
+.pq{max-width:34rem;margin:30px 0 32px;padding:2px 0 2px 20px;
+ border-left:3px solid var(--red);font-family:var(--display);font-weight:650;
+ font-size:1.2rem;line-height:1.36;letter-spacing:-.01em;text-wrap:balance}
+.pq b{display:block;font-family:var(--ui);font-weight:400;font-size:.83rem;
+ letter-spacing:0;color:var(--ink3);margin-top:9px;line-height:1.5}
+.contents{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+ padding:18px 0 20px;margin:30px 0 0;max-width:46rem}
+.contents ol{list-style:none;margin:12px 0 0;padding:0;
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0 30px}
+.contents li{padding:8px 0;border-top:1px solid var(--line2)}
+.contents a{font-family:var(--display);font-weight:650;text-decoration:none;
+ border-bottom:1px solid rgba(176,30,36,.35)}
+.contents span{display:block;font-family:var(--mono);font-size:.76rem;color:var(--ink3);
+ letter-spacing:.05em;margin-bottom:3px}
+.storyfoot{border-top:1px solid var(--line);margin:60px 0 0;padding:18px 0 0;
+ max-width:37rem;color:var(--ink2);font-size:.95rem}
+@media print{.contents{display:none}.erahead{break-before:page}}
+"""
+
+STORY_BODY = """
+<header class="head"><div class="wrap">
+ <p class="kicker">Sixty years, read straight through</p>
+ <h1>The story</h1>
+ <p class="lede">President Kelly Thompson approved a student constitution on 1 April 1966.
+ Students ratified it on 26 April, 1,812 to 726. On 18 May they elected Jim Haynes the first
+ president, and on 16 June Western Kentucky State College became Western Kentucky University.
+ The student government and the university are almost exactly the same age.</p>
+ <p class="scope">What follows is one continuous account of what that organization has done
+ with itself since, drawn from the __NEV__ dated entries on this site. Every claim links back
+ to the year it came from. Where the record is thin or contradicts itself, this page says so.</p>
+</div></header>
+
+<div class="wrap">
+<nav class="contents" aria-label="The four eras">
+ <p class="lab">Four eras</p>
+ <ol>
+  <li><span>1966&#8211;1980</span><a href="#seats">Seats, and then money</a></li>
+  <li><span>1980&#8211;1992</span><a href="#vendor">Government or vendor</a></li>
+  <li><span>1992&#8211;2010</span><a href="#apparatus">The apparatus arrives</a></li>
+  <li><span>2010&#8211;2026</span><a href="#loud">Loud, then useful</a></li>
+  <li><span>Across all four</span><a href="#repeats">What repeats</a></li>
+  <li><span>The gaps</span><a href="#gaps">What the record does not hold</a></li>
+ </ol>
+</nav>
+
+<div class="body">
+
+<section class="era" id="seats">
+<header class="erahead"><span class="yrs">1966 to 1980</span>
+<h2>Seats, and then money</h2></header>
+<p class="stand">Fourteen years spent converting an organization&#8217;s existence into
+actual power. The first half is about winning seats. The second half is about spending a
+budget, and nearly losing the organization over it.</p>
+
+<div class="story">
+
+<p>The ratification referendum drew 2,538 votes. It is a number worth holding onto, because
+the record says most SGA elections since have not matched it. The
+<cite>College Heights Herald</cite> greeted the founding with an editorial headed
+&#8220;We Do Not Deserve Student Government.&#8221; A year later, reviewing the first full
+term, the paper settled on three words: organization, progress, apathy. Those three words
+describe the next fourteen years better than any summary written since.</p>
+
+<p>The first half of the era is a hunt for seats. In February 1968 Western sent lobbyists to
+Frankfort for a bill seating a student on the Board of Regents, and on 4 April the
+<cite>Herald</cite> reported that president William Menser
+<a href="y/1967-68.html#e-19680404-1">assumed duties as a board member</a>. It was the single
+largest expansion of what the organization could reach, and it carried no vote. Students were
+still campaigning for voting power in February 1970, the enabling bill
+<a href="y/1969-70.html#e-19700313-1">was dropped that March</a> under a headline saying
+lawmakers had kept students impotent, and the paper was still running
+&#8220;Student Regent May Get Vote&#8221;
+<a href="y/1971-72.html#e-19720201-1">in February 1972</a>.</p>
+
+<p>The seat also came detached from the presidency almost immediately, which is why the plaque
+in the SGA Chambers carries two names in several years. Bill Straeffer, elected president in
+1968 by 1,732 votes to 1,098, was an out-of-state student, and the seat required a Kentucky
+resident, so the Congress of Associated Students
+<a href="y/1968-69.html">elected Paul Gerard to the board seat instead</a>. Straeffer&#8217;s
+election is also the era&#8217;s most exactly measured: the organization&#8217;s own results
+memo puts turnout at 2,894, about 34 per cent of roughly 8,500 students. The
+<cite>Herald</cite> ran an editorial in the same issue headed &#8220;Elections Illustrate
+Faults, Indifference.&#8221;</p>
+
+<p>Blocked at the board, the organization took representation wherever it was actually offered.
+The Regents <a href="y/1970-71.html#e-19700828-1">seated eight students on the Academic
+Council</a> in August 1970. Students won six votes on a university council in April 1972. In
+March 1979 president Steve Thornton and Terri Craig were
+<a href="y/1978-79.html#e-19790327-1">elected to the executive council</a> of the Student
+Government Association of Kentucky, two months after the body had pressed for a student seat
+on a state-level council. Academic committees and statewide bodies opened before the board
+did.</p>
+
+<h3 class="sub">The week that decided what it was</h3>
+
+<p>In one semester of 1969-70 the organization did two things it had never done. On 7 October
+the Associated Student Congress <a href="y/1969-70.html#e-19691007-1">endorsed the Vietnam
+Moratorium</a>, the clearest early instance of taking a position outside the campus fence. In
+November an ASG committee <a href="y/1969-70.html#e-19691107-1">compiled Western&#8217;s first
+student evaluations of teachers</a>, the first time the body produced data the university had
+to reckon with rather than a resolution it could ignore.</p>
+
+<p>Then came May 1970. In the Strike Western! week after the Kent State shootings, John Lyne
+and Larry Zielke <a href="y/1969-70.html#e-19700508-1">presented resolutions to President Dero
+Downing and Dean Charles Keown</a> on 8 May. On 16 May the Associated Student Congress
+unanimously endorsed Downing&#8217;s reply to the protesters. Offered the most volatile campus
+politics of the era, the elected student government positioned itself as the channel to the
+administration rather than the opposition to it, exactly as a <cite>Herald</cite> piece of
+February 1969 had suggested it might, saying the organization could deter turmoil at Western.
+That posture explains why the era&#8217;s durable wins are procedural and domestic:
+evaluations, visitation, women&#8217;s hours, book exchanges, a discount card.</p>
+
+<p>It was not always accommodation. Linda Jones, <a href="y/1970-71.html#e-19710406-1">elected
+the first woman president</a> on 6 April 1971, spent a single year on a section-by-section
+constitutional rewrite, a formal endorsement of a Kentucky Civil Liberties Union lawsuit, under a headline that
+also named the underground paper <cite>The Fly</cite>, a front page reading &#8220;Chaos Reigns at
+Associated Students Meeting,&#8221; and her own published piece correcting the
+<cite>Herald</cite>. Her <a href="y/1971-72.html">term closed</a> with a Mass Action Committee
+calling for a strike over dorm visitation. In September 1972 the body
+<a href="y/1972-73.html#e-19720929-1">rejected President Downing&#8217;s position on an Office
+of Black Affairs</a>, weeks after passing a resolution deploring a cheerleader selection ruling
+amid Black students&#8217; demands. And in June 1974 Gregory McKinney was
+<a href="y/1973-74.html#e-19740619-1">sworn in as WKU&#8217;s first African American student
+regent</a>, seven years before the first Black gubernatorial appointee joined the board. The
+student seat integrated the Board of Regents before the governor did.</p>
+
+<h3 class="sub">What money did to it</h3>
+
+<p>In August 1973 the Board of Regents
+<a href="y/1973-74.html#e-19730828-1">voted to increase the ASG allotment</a>, and the
+organization became something else. It ran a Free University of no-cost evening courses, a
+housing survey, paper recycling, and it booked Senate Watergate chairman Sam Ervin to speak in
+April 1974. It also became a concert promoter. In September 1975 a show
+<a href="y/1975-76.html#e-19750919-1">drew 4,300 people and lost $7,000</a>. Fund misuse
+charges were aired in October. Quorum failure had already halted business twice in a single
+week the previous February, and a <cite>Herald</cite> editorial said the confusion signalled a
+need for change. Congress member Gerard Faulk faced impeachment hearings in March 1976 and was
+acquitted in April. Seals and Crofts lost the organization $3,800 that November. By January
+1979 ASG <a href="y/1978-79.html#e-19790125-1">faced losing control of student activities
+funding</a> altogether.</p>
+
+<p>The best single document of what a year of this organization actually consisted of is the
+supplement ASG wrote and paid for in the <cite>Herald</cite> of
+<a href="y/1975-76.html#e-19760427-1">27 April 1976</a>: women&#8217;s hours abolished with ASG
+backing, better intramural facilities credited to its resolutions, a new discount card, a
+second check-cashing site, a book exchange run with Veterans on Campus, plus the full roster of
+congress members and every bill and resolution of the year. It is the first time in the record
+the organization publishes its own accounting rather than letting the paper judge it.</p>
+
+<p>The last stretch of the era is self-reform. Christy Vogt&#8217;s congress created a
+constitutional revision committee in its first month, asked the university for a student
+minimum wage, opposed a tuition increase, created a complaint committee, and in February 1977
+passed Bill 6 proposing that ASG evaluate itself
+<a href="y/1976-77.html#e-19770215-1">for transparency and improvement</a>. A resolution on
+discrimination <a href="y/1976-77.html#e-19770225-1">failed the same month with fourteen
+members abstaining</a>. Bob Moore won the following year by 26 votes, one of the narrowest
+margins in the record. Steve Thornton&#8217;s year, 1978-79, produced the tightest cluster of
+institutional change in the era: roll-call votes made public in September, a plan to
+<a href="y/1978-79.html#e-19781019-1">add minorities to the regents&#8217; presidential
+screening panel</a> in October, a revised constitution in November, a Minorities Board in
+February. It landed during a presidential succession, with Downing resigning effective 31
+December 1978 and Donald Zacharias taking office the following August. ASG intervened in how
+the university chose its next president rather than reacting after the fact.</p>
+
+<p>And the era ends where it began, on turnout. The spring 1979 primary
+<a href="y/1979-80.html#e-19790412-1">drew 830 voters</a>. The same issue carried a piece
+justifying student apathy in ASG voting. In thirteen years the <cite>Herald</cite> had moved
+from scolding non-voters to explaining them.</p>
+
+</div>
+</section>
+
+<section class="era" id="vendor">
+<header class="erahead"><span class="yrs">1980 to 1992</span>
+<h2>Government or vendor</h2></header>
+<p class="stand">Twelve years of a body with very little money, chronic trouble filling its own
+seats, and a student newspaper that treated it as a running joke. It answers by selling things,
+then by rebuilding its own machinery, then by naming a chairman of the Board of Regents.</p>
+
+<div class="story">
+
+<p>Steve Fuller opened the era in autumn 1980 with a fight over dormitory room inspections. A
+measure was voted down in September. A bill against bugs in the dorms
+<a href="y/1980-81.html#e-19800911-1">drew a cartoon of an imperilled cockroach</a>. In
+November ASG re-endorsed inspections in a session the <cite>Herald</cite> reported it had
+nearly slept through, and a week later introduced a stricter room-entry rule. In October 1980
+it also proposed changing its own name, twelve years before that actually happened.</p>
+
+<p>From there almost no spring election in the era passes cleanly. Close races forced recounts
+in April 1981. Marcel Bush resigned the presidency
+<a href="y/1981-82.html#e-19820114-1">on 14 January 1982</a> and vice president David Payne
+finished the term, which the Board of Regents minutes of 30 January confirm and the plaque
+does not. That February the student regency became a campus-wide elected office for the first
+time: five students filed, the 9 February vote produced no majority, and Sandra Norfleet
+<a href="y/1982-83.html#e-19820216-1">won the runoff</a> into a term that ran about two months.
+In April the general election results were voided, a decision the paper said disgusted the
+candidates, and <a href="y/1982-83.html#e-19820420-1">the whole thing was run again</a> on 20
+April. Margaret Ragan won the do-over.</p>
+
+<p class="pq">Govern, the paper said, rather than market cards.
+<b>The <cite>Herald</cite>&#8217;s verdict on the student discount card, 1 September 1983</b></p>
+
+<p>The card was the era&#8217;s defining argument. ASG floated it in August 1983; the
+<cite>Herald</cite> told it to govern instead; and on 8 September the paper reported that ASG
+<a href="y/1983-84.html#e-19830908-1">would pay its own members a commission</a> on card sales,
+drawing columns headed &#8220;Cheap Shots&#8221; and &#8220;And Old Tricks.&#8221; The body did
+not settle the question. In October 1985 the congress passed Bill 85-15-F ordering production
+of <a href="y/1985-86.html#e-19851012-1">its own discount card</a> anyway. Around it sat the
+rest of the catalogue: a shuttle to the mall, a student book exchange, change machines in the
+dorms, cable television in dorm rooms, weekend pizza from the Unicorn, microwaves in the
+cafeterias, a left-handed desk in every classroom.</p>
+
+<p>Jack Smith presided over two years of this and is the era&#8217;s most argued-over figure:
+68 students filed the spring he won, his supporters filled the letters pages, he was accused in
+print of partying while committees waited, he wrote in to protest a cartoon, and in April 1984
+the paper caught him <a href="y/1983-84.html#e-19840410-1">impersonating a bunny</a> while his
+ASG ran a low-turnout poll on beer and a campus pub. When he left in April 1985 the
+<cite>Herald</cite> credited his enthusiasm with reviving interest in the organization.</p>
+
+<h3 class="sub">The year the record changes shape</h3>
+
+<p>Then the archive itself changes texture. <a href="y/1985-86.html">1985-86</a> is the first
+year of the decade that holds a run of ASG&#8217;s own numbered legislation rather than only
+<cite>Herald</cite> headlines: ten bills survive with their numbers and subjects, and the
+story stops being about personalities. Mitchell McKinney&#8217;s congress abolished its
+own Finance Committee in September 1985, wrote a Financial Advisory Council into the by-laws
+the following April, created major and minor college representative seats, adopted a new
+membership application, and
+<a href="y/1985-86.html#e-19860401-2">asked that Board of Regents members attend and speak at
+an SGA meeting</a> during their term - one of the few recorded attempts to bring the regents
+into the room. McKinney then withdrew from re-election in March 1986, was commended by his own
+outgoing congress, and was honoured by the Board of Regents on 8 August 1986, the same day the
+board named Kern Alexander president. That summer the twenty years of amendments to the 1966
+framework were <a href="y/1986-87.html#e-19860804-1">consolidated into a single document</a>,
+the only such snapshot that survives.</p>
+
+<p>What follows is a legitimacy crisis that ran six months. Scott Whitehouse won on 7 April
+1988 amid editorials saying oversight and closed minds had marred the process, in a year when
+only two of 32 congress positions were contested. Bruce Cambron demanded a new election a week
+later over write-in votes the congress was told it could not ignore. ASG&#8217;s answer, on 15
+September, was to <a href="y/1988-89.html#e-19880915-1">ban write-in campaigns</a>. The paper
+said the block showed ASG was not listening. Cambron took his complaint to university president
+Thomas Meredith on 6 October. The body narrowed its own franchise rather than reopen the
+result. The same year it filed a formal written reaction to the General Education Task Force
+proposal, one of the <a href="y/1988-89.html#e-19880101-1">earliest surviving examples</a> of
+student government intervening in curriculum rather than campus life.</p>
+
+<h3 class="sub">Letters, and then a name</h3>
+
+<p>Amos Gott&#8217;s <a href="y/1989-90.html">1989-90</a> is the best-documented presidency
+before 1992, and it is well documented because his ASG kept its mail. Resolutions went out as
+memoranda to named administrators and answers came back: extended library hours, the final exam
+schedule, AIDS and HIV education, the Downing University Center flagpole, the stadium press
+box, mace sales at the bookstore, larger diplomas. For the first time in the era there is
+evidence of what administrators said back.</p>
+
+<p>Money shaped everything around it. In September 1989 the <cite>Herald</cite>
+<a href="y/1989-90.html#e-19890912-1">reported ASG&#8217;s budget was tiny</a> compared with
+student governments at other schools. Two weeks later the congress joined the Board of Student
+Body Presidents while admitting it could not afford the dues. In November it killed a proposed
+Public Interest Research Group over its fee system. Faced with being too small and too poor, it
+voted in March 1990 to make itself bigger, and on the day Michael Colvin&#8217;s election was
+reported it <a href="y/1989-90.html#e-19900419-1">called for the student activity fee to be
+raised</a>.</p>
+
+<p>Colvin&#8217;s year is the one where the internal machinery visibly works. His congress
+asked for a left-handed desk in every classroom, killed a resolution that would have excused
+absences tied to a widely publicised prediction of a New Madrid earthquake that never came,
+rewrote the by-law governing how a presidential veto is overridden, and then
+<a href="y/1990-91.html#e-19910314-1">used the new rule weeks later</a> when the emergency-kit
+resolution survived a veto. It is the only veto fight the Herald index records that year, of the
+organization&#8217;s separation of powers being exercised.</p>
+
+<p>Heather Falmlen, who won in April 1991 amid protests, a boycott call and an editorial
+condemning immature antics, held the presidency and the regency at once, which WKU&#8217;s own
+newsletter confirmed that May. On 29 October 1991 her ASG passed Resolution 91-6-F
+<a href="y/1991-92.html#e-19911029-1">asking that Joe Iracane not be re-elected chair of the
+Board of Regents</a>, citing FBI, IRS and U.S. attorney investigations into an alleged $6
+million payment to a mining company in return for contracts, and a separate alleged $14,500
+consulting payment, and accusing him of overstepping into operations the board&#8217;s own
+by-laws reserved for the president. It asked Falmlen to vote against him. The board re-elected
+him <a href="y/1991-92.html#e-19911106-1">a week later</a>. No source in the archive reports
+how the investigations ended.</p>
+
+<p>The institutional answer came in January 1992, when the body introduced
+<a href="y/1991-92.html#e-19920128-1">Bill #92-01-S</a>, creating a Student Advisory Committee
+of class presidents, one representative from each college and the executive council, to brief
+the student regent on Board of Regents agenda items and canvass student opinion before every
+meeting. Having failed to move the board, it built a mechanism to bind the student seat to the
+students.</p>
+
+<p>Then the era ends in one week and in miniature. On 7 April 1992 the spring primary was
+<a href="y/1991-92.html#e-19920407-2">cancelled outright</a> for want of candidates. The same
+day the Associated Students voted to rename itself the Student Government Association, and
+students ratified the change on 14 April. An organization that could not field enough
+candidates to require a primary successfully renamed itself into a government.</p>
+
+</div>
+</section>
+
+<section class="era" id="apparatus">
+<header class="erahead"><span class="yrs">1992 to 2010</span>
+<h2>The apparatus arrives</h2></header>
+<p class="stand">Eighteen years in which the organization acquires every instrument of a real
+government, faster than it acquires the mandate to use them. Each new power then turns on it in
+sequence.</p>
+
+<div class="story">
+
+<p>Joe Rains took office that autumn as the first president under the new name, having been
+elected in a race the <cite>Herald</cite> covered with a
+<a href="y/1992-93.html#e-19920414-1">cartoon drawing him as Darth Vader</a>. His year&#8217;s
+minutes appear under both titles, which is the only physical trace of the changeover. He pushed
+an escort service, ran a call-in radio programme called Just Ask Joe, and went to Frankfort to
+argue against cuts to higher education, for which the University Senate formally commended
+him.</p>
+
+<p>Four years later the organization built the one thing in this era that outlasted every
+administration in it. Kristen Miller opened her term in August 1996 with
+<a href="y/1996-97.html#e-19960829-1">a plan to drive party-goers home</a>. It became
+Provide-A-Ride: a free blue fifteen-passenger van running Thursday and Friday nights from 11
+p.m. to 2 a.m. anywhere in Bowling Green on a valid Western ID. It survived the doubts, posted
+929 riders over twelve nights in the autumn of 2001, and was one of two things a president
+explicitly protected when he made the first mid-year budget cut in SGA history twelve years
+later. Miller also sat as the student representative on the committee that hired Gary Ransdell,
+recalling in 2016 that there was one pot of money everyone was fighting over.</p>
+
+<p>In one April 1997 session the congress passed resolutions to
+<a href="y/1996-97.html#e-19970415-1">reactivate the Kentucky Students Association and
+establish a student representative on the Council for Postsecondary Education</a>. Days later
+it passed, by a slim margin, a measure calling for gay students to be included in
+Western&#8217;s anti-discrimination policy. It is a rare recorded instance of
+the congress dividing narrowly over a question that was not money, parking or grades.</p>
+
+<h3 class="sub">The spring the Judicial Council became real</h3>
+
+<p>In April 1999 the spring election collapsed. The Judicial Council
+<a href="y/1998-99.html#e-19990420-1">overturned it on 20 April</a>. On the recount the
+presidential margin narrowed from 616-611 to 614-611 out of 1,436 votes cast. The
+vice-presidential race for finance was decided 700-688 and survived a judicial review over
+campaign fliers left overnight on classroom desks. A letter to the editor reported fliers
+circulating in dorms that attached the word racism to Will Jones, described as the first Black
+candidate for the presidency in years, and questioned whether SGA&#8217;s investigation was
+following proper procedure rather than assuming his involvement. The archive records plainly
+that <a href="y/1999-00.html#e-19990415-5">no source found says how, or whether, that
+investigation was resolved</a>.</p>
+
+<p>Out of that election came Amanda Coates, whose signature project was publishing faculty
+evaluations. From February 2000 she met the university president, the Faculty Senate chair and
+its executive committee, and in April
+<a href="y/1999-00.html#e-20000404-1">co-authored Resolution 00-2-S</a> asking for a mandatory
+published evaluation from that autumn. The <cite>Herald</cite> confirmed that month that the
+evaluations would be conducted and published. It did not hold: by November 2004 the ask had
+been scaled back to a five-question pilot posted on TopNet, and faculty evaluations were still
+listed as an unfinished goal.</p>
+
+<p>On 27 October 2000 the Board of Regents voted 8-2 to raise the $16 student athletic fee by
+$40 in January and another $40 that autumn. Student regent Cassie Martin was
+<a href="y/2000-01.html#e-20001027-1">one of two dissenters</a>. That is the start of a pattern
+that runs four administrations deep. Leslie Bedo told the board in August 2001 that voting a 9
+per cent tuition rise before classes began sent a message to students, then joined the
+unanimous vote. Katie Dawson abstained on a $46 construction fee in April 2006 after her
+proposal to exempt the coming year&#8217;s seniors was rejected 10-1. Jeanne Johnson seconded a
+motion to cap the 2008 increase at 6 per cent; it died with two votes. The seat gave students a
+voice and almost never a result. By about 2001 the presidency and the separately elected
+regency had merged into one office, which is what made every later resignation strip students
+of board representation.</p>
+
+<h3 class="sub">A fee it wrote itself, and a constitution nobody voted on</h3>
+
+<p>In March 2003 the congress unanimously put a $3 student fee for campus radio station
+Revolution 91.7 to the April ballot. The station was operating on a $7,000 budget unchanged
+since 1998. The fee <a href="y/2002-03.html#e-20030408-1">passed 1,066 to 765 with 2,014
+students voting</a>, the highest turnout figure recorded anywhere in the era. It was the first
+student referendum in SGA history, and it demonstrated the thing the organization spent sixty
+years failing to believe: a real question on the ballot brings students out.</p>
+
+<p>The following spring the Constitutional Convention rebuilt the body into three branches and
+made every enrolled student a member of SGA with the right to vote in its elections. That
+document is the one WKU still recognises. Only
+<a href="y/2003-04.html#e-20040316-1">132 of about 18,000 students voted to ratify it</a>.
+Within weeks it failed its own first test: its author was elected the first speaker of the
+senate 9 votes to 8, and the result was
+<a href="y/2003-04.html#e-20040415-1">immediately contested</a> because the new text was
+unclear on whether two-thirds meant of those eligible or of total membership.</p>
+
+<p class="pq">&#8220;The turmoil within the organization.&#8221;
+<b>Patti Johnson, 2004, on why she stayed in the job</b></p>
+
+<p>Three presidencies did not survive their terms. Nick Todd was elected in March 2004 with 772
+of 1,232 votes, was investigated over $611 missing from an SGA Dining Dollars account that had
+started the year with $5,000, was <a href="y/2003-04.html#e-20040429-1">sworn in anyway</a> on
+27 April with the case unresolved, and resigned in July citing personal conflicts. The internal
+auditor found $872 in questionable purchases plus a $71 charge and recommended repayment.
+About thirteen students turned up to the meeting for prospective candidates; Patti Johnson, the
+sitting executive vice president, was the only one interested, and
+<a href="y/2004-05.html#e-20040928-1">won the special election with 1,291 votes</a>.</p>
+
+<p>Rob Watkins, who had written the 2004 constitution and served as its first speaker, resigned
+as president and student regent in November 2006. The resignation was read into the
+senate&#8217;s own minutes on <a href="y/2006-07.html#e-20061128-1">28 November</a>, the day
+after senators aired concerns about him at an unannounced 10 p.m. meeting. The
+<cite>Herald</cite>&#8217;s editorial that week was headed &#8220;SGA actions an embarrassment
+to Western.&#8221; Students had no voting voice on the governing board for at least a month,
+and Jeanne Johnson had to win a February special election with 688 votes, 41 per cent of
+ballots cast, to get it back. Two years later Johnathon Boles
+<a href="y/2008-09.html">resigned on 30 January 2009</a> for health reasons; Kayla Shelton
+succeeded him as president but not as regent; the Judicial Council voted 2-1 to hold a special
+election over the written objection of the executive vice president and the dissent of the
+chief justice, who then resigned; and the seat sat empty 26 days before Reagan Gilley won it
+477 to 224.</p>
+
+<p>Against all that, the era&#8217;s largest policy win. SGA had opposed plus/minus grading
+since September 2003 with unanimous legislation, a petition past 1,500 signatures, a rally and
+meetings with university donors. On 24 April 2007 Provost Barbara Burch told the University
+Senate she <a href="y/2006-07.html#e-20070424-1">would not implement the system</a> the senate
+itself had passed 36-23 the month before. It is the only case in the record where SGA beat the
+faculty&#8217;s own governing body, across four years and three administrations.</p>
+
+<p>The other genuinely new thing was a change in tactics. In October 2007 SGA organised Walk
+Out Western, a class walkout protesting state cuts after Western received 54 per cent of the
+funding the Council on Postsecondary Education had recommended; President Ransdell
+<a href="y/2007-08.html#e-20071018-2">said he could not condone it</a>. Chief of staff Skylar
+Jordan then built Listen Up Legislators, one-on-one senator-to-legislator meetings in Frankfort,
+explicitly because the traditional February rally had not worked. Fifteen years of bus trips
+were finally being examined as a tactic rather than repeated as a ritual. About fifty senators
+filed <a href="y/2007-08.html#e-20080220-1">individual written reflections</a> after the
+February 2008 trip, which the archive calls the richest first-person source in the whole
+collection.</p>
+
+<p>The era closes on the question it spent eighteen years arguing. In September 2009 Kevin
+Smiley <a href="y/2009-10.html#e-20090904-1">nominated his brother</a> to the paid, voting post
+of chief of staff, saying he had chosen him because he had no previous political agenda; a
+former executive vice president called it completely unethical. In October three senators
+resigned over his nomination of a member to the Student Publications Committee, which helps
+choose the <cite>Herald</cite>&#8217;s editor-in-chief. That the flashpoint was the committee
+choosing the paper&#8217;s editor closes a circle opened by the Darth Vader cartoon of 1992.</p>
+
+</div>
+</section>
+
+<section class="era" id="loud">
+<header class="erahead"><span class="yrs">2010 to 2026</span>
+<h2>Loud, then useful</h2></header>
+<p class="stand">The organization discovers it holds a gate, becomes an openly political actor,
+pays for it, and then deliberately rebuilds itself as something smaller and more practical.</p>
+
+<div class="story">
+
+<p>In 2010 SGA was a 50-member body spending a $121,335 tuition-funded budget, with
+<a href="y/2010-11.html#e-20110211-1">21 of its 50 members in Greek organizations</a> on a
+campus under 8 per cent Greek. Its one piece of real leverage was procedural: the Board of
+Regents could not approve the $49 million Downing renovation until SGA voted on the design and
+the fee. President Gary Ransdell brought the plan to the 16 November 2010 meeting. Senators
+<a href="y/2010-11.html#e-20101210-1">tabled it on 7 December</a> because three weeks was not
+enough student input, which pushed SGA&#8217;s presentation to the Board of Regents from
+January to April. It passed on second reading on 22 February 2011, capped at $49,128,545 with a
+student fee of up to $70 a semester for twenty years. Students ended up paying $36 million of
+the total. Nothing else in the era shows the organization exercising, and knowingly delaying,
+formal consent over a capital decision.</p>
+
+<p>In February 2013 the senate <a href="y/2012-13.html#e-20130301-2">rewrote its own
+constitution</a>, replacing class-year seats with college-based representation and guaranteeing
+seats for Glasgow and Owensboro. Every later expansion of the franchise runs from there: an
+international student seat created by referendum in 2013, regional ambassadors in 2017, a
+first-generation seat passed 33-0 in 2019, a Mahurin Honors College seat in 2023. The same
+package had one clause stripped out of it, the one that would have barred SGA members from
+receiving SGA scholarships. Four leaders, including the sitting president, published a
+commentary calling that a breach of student trust and noting that
+<a href="y/2012-13.html#e-20130319-1">eleven serving SGA members</a> had received such
+members.</p>
+
+<p>That spring also settled who could overrule SGA&#8217;s own judiciary. Keyana Boka won the
+presidency on 4 April 2013 with 626 votes; five days later the Judicial Council disqualified
+her 3-2 over a self-promotional email, on a complaint from the runner-up who would have become
+president; Vice President for Student Affairs Howard Bailey reinstated her. Chief Justice Seth
+Church called the intervention a serious infringement on the council&#8217;s autonomy, and the
+council then <a href="y/2012-13.html#e-20130416-1">declined to contest it</a>.</p>
+
+<h3 class="sub">Where its power ended</h3>
+
+<p>Two votes three months apart taught the organization the limits of consent. On 24 September
+2015 the senate voted 21-4 to
+<a href="y/2015-16.html#e-20150924-1">disapprove the process by which the Confucius Institute
+building was approved</a>, after Ransdell signed the contract in China in December 2014, more
+than a month before the Board of Regents voted on it. President Jay Todd Richey wrote that
+senators had warned him the vote would make powerful enemies. The Regents declined to revisit
+the matter on 25 September and Richey told the senate it was a done deal. Then in January 2016
+administrators <a href="y/2015-16.html#e-20160128-1">discarded Topper Tavern</a>, the pub name
+students had chosen with 2,132 votes cast, in favour of Topper Grill and Pub. Richey said it
+made SGA question how much the administration listened.</p>
+
+<p>Richey was re-elected in April 2016 with 64 per cent of 2,442 votes, one of the
+highest-turnout elections in the record and the first two-term presidency since 1988. His
+second year produced the era&#8217;s two most revealing votes. In April 2017 a bill lowering
+SGA&#8217;s own GPA floor from 2.5 to 2.0 <a href="y/2016-17.html#e-20170405-1">passed 24-7</a>,
+exactly the margin required, after failing twice the previous year on arguments that senators
+are expected to be elitist. It settled, for a decade, whether SGA existed to be representative
+or exemplary. Two weeks later Resolution 6-17-S, supporting reparations for Black students,
+<a href="y/2016-17.html#e-20170418-1">passed 19-10-1</a> and became national news, with wire
+coverage, a cable television interview and fabricated headlines claiming WKU had granted free
+tuition. Ransdell stated within days that it was not a university position. The substantive act
+had come five months earlier: $750, matched by $100 from the Center
+for Citizenship and Social Justice, for a
+<a href="y/2016-17.html#e-20161130-2">scholarship memorializing Jonesville</a>, the Black
+community WKU bought and demolished for under $200,000 in the late 1960s.</p>
+
+<p class="pq">&#8220;Almost toxic in nature.&#8221;
+<b>Andi Dahmer, March 2018, describing her own year as president</b></p>
+
+<p>Andi Dahmer&#8217;s term is the most consequential single year in the era. Her senate failed
+a clean DREAM Act resolution 12-17 in October 2017, then passed a narrowed DACA solidarity
+resolution 32-1 in November. More than fifteen constitutional amendments were proposed against
+about ten the year before. In April 2018 she
+<a href="y/2017-18.html#e-20180424-1">told the <cite>Herald</cite></a> she had endured months
+of harassment: senators cursing at her, a group message thread wishing her harm, and a profane
+note left on her car on 9 February that prompted a police report. Title IX found the conduct
+below the legal standard; the Office of Student Conduct issued no-contact orders against two
+senators. She did not seek re-election, sued in September 2018, lost on summary judgment in
+2021, had the case partially revived by the Sixth Circuit in 2022, and settled in January 2024
+for $10,000 paid by WKU&#8217;s insurer. President Timothy Caboni
+<a href="y/2017-18.html#e-20180501-1">convened a review</a> of the university&#8217;s Title IX,
+equal opportunity and student conduct processes in May 2018.</p>
+
+<p>The years on either side of it are the era at full volume. Stephen Mayer won the following
+April with 35 per cent of 2,378 presidential votes, days after the Judicial Council had
+<a href="y/2017-18.html#e-20180417-1">disqualified his ticket</a> over a Pepe the Frog image
+used in campaign chalkings and then downgraded the penalty to a suspension before results were
+announced. His senate voted 29-1 to relocate the marker identifying Bowling Green as the
+Confederate capital of Kentucky, 30-0 to protect transgender students against a proposed
+federal redefinition of sex,
+and <a href="y/2018-19.html#e-20190424-1">23-1 to endorse a $5 per-student fee</a> to fund the
+<cite>Herald</cite>, the paper that had been criticising it since 1966. In October 2019 senators
+Symone Whalin and Anthony Survance organised a protest at a sorority philanthropy event over a
+video of members singing a racial slur, wrote a resolution seeking discipline up to suspension,
+got it through the senate 24-7, and
+<a href="y/2019-20.html#e-20191030-1">lost it to a 4-0 executive veto</a>, with President Will
+Harris abstaining and then facing questions about his standing as an Alpha Xi Delta knight.
+Survance said they had wanted more than an article in the <cite>Herald</cite>.</p>
+
+<h3 class="sub">The one it won outright</h3>
+
+<p>Then the pandemic. With campus closed, SGA postponed its spring 2020 elections until at
+least September, wrote an emergency clause into its constitution extending cabinet terms under
+judicial oversight, and <a href="y/2019-20.html#e-20200420-1">gave its remaining budget</a> to
+WKU&#8217;s Opportunity and Emergency Relief funds. That autumn Associate Provost Rob Hale
+rebuffed SGA&#8217;s request to restore Pass/D/Fail grading, calling the extended drop deadline
+sufficient. President Garrett Edmonds said he was deeply disturbed, ran a petition that took
+3,500 signatures in three days, the Faculty Senate voted 40-9, and on 1 December Provost Cheryl
+Stevens <a href="y/2020-21.html#e-20201201-1">told faculty</a> students could take a pass in
+place of a B or C. It is the era&#8217;s only unambiguous win against an administration
+decision already made.</p>
+
+<p>The volume kept rising for two more years. In December 2021 a resolution condemning bans on
+the teaching of critical race theory <a href="y/2021-22.html#e-20211201-1">passed 16-15</a>
+with two abstentions. In February 2023 the Speaker of the Senate took the President to the
+Judicial Council over anti-transgender Instagram posts he had liked; the council
+<a href="y/2022-23.html#e-20230217-1">voted unanimously against censure</a>; a Title IX report
+seeking his removal was filed two days later; and on 21 February the Queer Student Union told
+the senate it had struck SGA from its list of campus safe spaces and would not associate with
+it until a public apology was issued, questioning the fairness of a council most of whose
+members the president nominates. Cole Bornefeld, who was also student regent, said he always
+commits to loving thy neighbor but could not commit to always agreeing.</p>
+
+<h3 class="sub">Smaller on purpose</h3>
+
+<p>What followed was a deliberate change in what the organization was for. Sam Kurtz ran
+unopposed in 2023 and again in 2024. On 3 September 2024 the senate passed
+<a href="y/2024-25.html#e-20240903-1">Bill 50-23-S</a> unanimously, reaffirming that SGA
+represents the student body rather than acting as a political group and stating a duty to put
+forward only nonpartisan legislation. The programme shifted to things a student could pick up
+at an office: 450 Uber vouchers at $10 each, a Borrow-a-Calculator scheme built on a survey
+finding 17 per cent of students owned none, dental and ID and transcript vouchers, $700 set
+aside to pay other students&#8217; parking fines, money for the food pantry. When the student
+group For the People told the senate in March 2024 that SGA was the only major organization not
+to oppose a Kyle Rittenhouse campus visit, and that 40 per cent of the senate was Greek, Kurtz
+replied that <a href="y/2023-24.html#e-20240329-1">as an apolitical organization</a> SGA&#8217;s
+role was to ensure all voices could be heard. Spring 2025 scholarship applications reached 295
+against a past average of about 40.</p>
+
+<p>None of that made it independent. After the January 2025 executive order on federal
+diversity programmes, the chief justice said the constitution might need amending, and Bill
+21-25-S restructured the Diversity, Equity and Inclusion Committee as the Action and
+Opportunity Committee. It <a href="y/2024-25.html#e-20250404-2">passed only after absent
+senators were phoned onto Zoom</a> to make the two-thirds quorum, and was then ratified by 88
+per cent of voters in April. On 1 October 2025 General Counsel Andrea Anderson
+<a href="y/2025-26.html#e-20251001-1">told the senate</a> that Kentucky&#8217;s House Bill 4
+applies to SGA because it receives university money, that its funding must be content neutral,
+that social media counts as a resource, and that the WKU Pride Center would lose its Downing
+Student Union office. For the first time in the record, outside statute rather than campus
+politics was dictating SGA&#8217;s internal structure.</p>
+
+<p>Rush Robinson ran in 2025 explicitly on turning SGA away from national politics toward
+direct student advocacy, won unopposed on a turnout of 966, and presided over 56 pieces of
+legislation, the most since 2018-19. He spent the year on student mental health with committee
+chair Veronica Butler, citing a WKU professor&#8217;s finding that 44 per cent of students
+reported depression symptoms and 10 per cent had considered suicide in the past year. Sitting
+beside the faculty regent during a discussion of housing, he
+<a href="y/2025-26.html#e-20260416-1">told the Faculty Senate to take a field trip</a> and look
+at the residence halls. At his last Board of Regents meeting, on 5 June 2026, he
+<a href="y/2025-26.html#e-20260605-1">cast the only vote against</a> a $204 tuition
+increase.</p>
+
+<p>The last thing the record shows is the clearest answer it gives to its own oldest complaint.
+The 2026 presidential race was the first genuinely contested one in three years. Two tickets
+took 27 student-submitted questions at a town hall and sat for a debate hosted with the campus
+radio station. Caden Lucas, who had entered SGA as the inaugural Mahurin
+Honors College senator in 2024, beat Jaden Marshall, who was seeking to become the first Black
+male
+student body president. <a href="y/2025-26.html#e-20260415-1">1,601 students voted</a>, 635
+more than the year before, a rise of 66 per cent. At his
+<a href="y/2026-27.html#e-20260428-1">first meeting</a> Lucas nominated Marshall as an at-large
+senator. Days later he was named a 2026 Truman Scholar. Outgoing president
+Robinson handed him the red suit jacket that passes from president to president, the one Sam
+Kurtz had given Robinson the year before.</p>
+
+</div>
+</section>
+
+<section class="era" id="repeats">
+<header class="erahead"><span class="yrs">Across all four eras</span>
+<h2>What repeats</h2></header>
+<p class="stand">Six arguments the organization has never finished having.</p>
+
+<div class="story">
+
+<h3 class="sub">Turnout, and what actually moves it</h3>
+<p>Every generation has treated low turnout as a moral failure of the student body. The numbers
+say otherwise. The high points in the record are all contests or referendums: 2,538 in the 1966
+ratification, 2,894 in the 1968 presidential race, 2,014 in 2003 when a radio-station fee was on
+the ballot, 2,442 in Richey&#8217;s contested 2016 re-election, 2,447 in the disputed 2018
+election, 1,601 in the contested 2026 race. The low points are all uncontested: 830 in the 1979
+primary, about 500 in 1983, a cancelled 1992 primary, 132 votes to ratify a whole constitution
+in 2004, 908 in 2014 which a <cite>Herald</cite> editorial called pathetic, 398 in the autumn of
+2021, 966 for an unopposed ticket in 2025. In the spring of 2011
+<a href="y/2010-11.html#e-20110407-1">all 35 senate candidates were elected to 36 seats</a>,
+each needing a single vote to win. The variable is the contest, not the electorate.</p>
+
+<h3 class="sub">The constitution is never finished</h3>
+<p>A new constitution was sent back for study in November 1969, four amendments went to a vote
+in April 1970, a study committee reopened the question in January 1971, Linda Jones&#8217;s
+congress voted section by section in February 1972, a constitutional change passed in March
+1975, Bill 2 created another revision committee in September 1976, and a revised constitution
+finally passed in November 1978. That is one rewrite attempt roughly every two years for the
+whole first era, and the pattern never stops: revisions ratified in 1983, twenty years of
+amendments consolidated in 1986, a by-law cluster in 1991, a three-branch rebuild in 2004, a
+constitutional package in 2013, six referendums in 2017, a DEI committee renamed by referendum
+in 2025, and a fully codified rewrite of the bylaws adopted on
+<a href="y/2025-26.html#e-20260224-1">24 February 2026</a>.</p>
+
+<h3 class="sub">Government or vendor</h3>
+<p>Concerts in the 1970s, discount cards in the 1980s, book exchanges and web textbook deals in
+the 1990s, vouchers and lending programmes in the 2020s. The <cite>Herald</cite> put the
+question directly in 1983, telling the organization to govern rather than market cards, and the
+organization answered by ordering its own card two years later. Forty years on it was buying
+umbrellas, calculators, transcripts and CPR certifications for students to borrow or collect,
+and calling that its central programme.</p>
+
+<h3 class="sub">The paper</h3>
+<p>The <cite>Herald</cite> is both the only witness for most of these sixty years and a standing
+antagonist. It graded the government at the end of every year. It drew ASG as a cockroach
+problem in 1980, its president as a salesman in 1989, and in the spring of 1992 one president
+as a ventriloquist&#8217;s dummy and the next as Darth Vader. It ran
+&#8220;Students Just Don&#8217;t Care&#8221; in 1996, &#8220;Gazebo-Gate&#8221; in 2002 and
+&#8220;SGA misspending&#8221; in 2006. Presidents answered in print, sometimes for years. In April 2019 the senate voted 23-1 to endorse a student fee to
+fund it.</p>
+
+<h3 class="sub">Who gets appointed, and who gets the money</h3>
+<p>In February 2016 a president told his own senate he had appointed 42 per cent of it and that
+appointments should be more democratic. Bills to move committee chair appointments from the
+president to the speaker failed in 2017 and again in March 2018, 26-2, with the speaker himself
+voting against. A 2023 bill requiring a two-thirds vote before a vacant seat could become a
+presidential at-large appointment failed 19-15, its sponsor calling appointment dependence a
+dangerous practice for a government organization. The money question runs alongside it: an ASG
+commission on discount card sales in 1983, SGA members receiving SGA scholarships in 2013, an
+administrative vice president <a href="y/2023-24.html#e-20240209-1">censured 6-0 in 2024</a>
+for spending funds before the senate approved them.</p>
+
+<h3 class="sub">Never enough of it</h3>
+<p>The operating budget was $12,100 in 1986-87, $121,335 in 2010-11, $138,500 in 2015-16 against
+the University of Louisville&#8217;s $1.2 million, and $100,000 flat from 2018-19 onward. The
+recurring problem is not only scarcity but the failure to spend: about $24,000 of $115,000 left
+unspent and lost to the general fund in 2005-06, a $46,883.62 surplus at mid-year in 2014, and
+a chief financial officer reporting in February 2026 that the autumn had produced more bills
+than usual and spent under half the semester budget. The most memorable financial event in
+sixty years is a surprise: a <a href="y/2011-12.html#e-20111118-1">$15,000 retroactive
+Provide-A-Ride bill</a> in November 2011 that took $7,500 each from organizational aid and
+scholarships.</p>
+
+</div>
+</section>
+
+<section class="era" id="gaps">
+<header class="erahead"><span class="yrs">The limits of the record</span>
+<h2>What the record does not hold</h2></header>
+<p class="stand">The shape of this story is partly the shape of what survived. Saying so is
+part of the archive&#8217;s job.</p>
+
+<div class="story">
+
+<p>The plaque in the SGA Chambers is where the names start, and it is wrong in places. A
+single-year 1968 plate reads Reed Morgan, and searches have turned up only his 1966 role as
+chair of the committee that drafted the constitution and a forensics roster;
+<a href="y/1968-69.html">no source describes him as president</a>. The plaque pairs Larry
+Zielke and John Lyne under 1970-71, but <cite>Herald</cite> election coverage puts
+<a href="y/1969-70.html">Zielke&#8217;s term a year earlier</a> and Lyne&#8217;s the year
+after. David Payne&#8217;s plate reads 1982; he filled the balance of
+<a href="y/1981-82.html">Marcel Bush&#8217;s 1981-82 term</a>. Every contemporaneous source for
+1999-2000 gives the president as <a href="y/1999-00.html">Amanda Coates, never Lich</a>. Two
+consecutive plates for 2014-15 record one continuous officeholder who
+<a href="y/2014-15.html">changed her surname in mid-term</a>. Hargroave, Mollozzi, Keyana or
+Keyanna: doubtful spellings are flagged on the year pages, not fixed.</p>
+
+<p>Whole stretches are thin in specific ways. For most of the 1980s the only witness is the
+<cite>Herald</cite>&#8217;s article index, which reliably gives a headline and rarely gives a
+result. The archive cannot confirm who won the April 1987 presidential election: the paper
+endorsed the challenger on election day, indexed the race as no contest, and the surviving
+issues never record the published outcome. For much of the 1990s the year pages note that no
+full officer list, committee structure or seat count survives beyond the president, and between
+the 1992 rename and the collapsed election of 1999 not one race in the record carries a vote
+total. Three recent years, <a href="y/2019-20.html">2019-20</a>,
+<a href="y/2021-22.html">2021-22</a> and <a href="y/2022-23.html">2022-23</a>, hold no account
+of the organization&#8217;s own structure at all.</p>
+
+<p>Some questions the record simply drops. No source found reports how the investigations into
+Board of Regents chair Joe Iracane ended. No source found reports how, or whether, SGA resolved
+its 1999 investigation into racially charged campaign fliers. The archive does not hold the
+reason Bob Moore was ruled ineligible for an SGA job in September 1978. What is not known here
+is written down as not known, on the <a href="corrections.html">corrections page</a> and on the
+year pages themselves.</p>
+
+<p class="storyfoot">Every fact above is drawn from a dated, sourced entry on this site. The
+<a href="history.html">complete timeline</a> holds all __NEV__ of them in order; the
+<a href="index.html">board</a> holds every year; the <a href="sources.html">sources page</a>
+sets out what each collection covers and where it fails.</p>
+
+</div>
+</section>
+
+</div></div>
+"""
+
+
+def render_story(ys):
+    n_ev = sum(len(y["events"]) for y in ys)
+    body = STORY_BODY.replace("__NEV__", f"{n_ev:,}")
+    desc = ("Sixty years of student government at Western Kentucky University read as one "
+            "continuous narrative, from the 1966 constitution to the 2026 election, with "
+            "every claim linked to the year it came from.")
+    return shell("The story · SGA 60", desc, body, STORY_CSS, depth=0, current="story.html")
+
+
 def render_about(ys, meta, n_leg, n_herald, n_docs, n_port, n_gal):
     n_ev = sum(len(y["events"]) for y in ys)
     n_lead = sum(len(y["leaders"]) for y in ys)
@@ -2348,6 +3136,7 @@ def main():
     for f in HDIR.glob("*.html"):
         if f.name not in keep_hist:
             f.unlink()
+    (SITE / "story.html").write_text(render_story(ys))
     (SITE / "legislation.html").write_text(render_legislation(leg))
     (SITE / "corrections.html").write_text(render_corrections(ys))
 

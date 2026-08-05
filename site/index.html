@@ -271,12 +271,24 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
  border-bottom:1px solid rgba(176,30,36,.35)}
 .starthere span{display:block;color:var(--ink2);font-size:.92rem;margin-top:4px}
 
+/* ---- the story, on the front page ---- */
+.readfirst{display:block;text-decoration:none;color:var(--ink);border-top:2px solid var(--black);
+ border-bottom:1px solid var(--line);padding:20px 0 22px;margin:30px 0 0}
+.readfirst:hover{color:var(--ink)}
+.readfirst .lab{color:var(--red)}
+.readfirst h2{font-size:clamp(1.5rem,3.4vw,2rem);line-height:1.05;margin:9px 0 0;
+ max-width:30rem}
+.readfirst p{max-width:var(--measure);color:var(--ink2);margin:11px 0 0;font-size:1rem}
+.readfirst .go{display:inline-block;margin-top:13px;font-size:.9rem;color:var(--red);
+ border-bottom:1px solid rgba(176,30,36,.4)}
+.readfirst:hover .go{color:var(--red-dark)}
+
 /* ---- Big Red ---- */
  line-height:17px;text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
  white-space:nowrap;opacity:0;transition:opacity .2s;pointer-events:none;line-height:1.4}
 </style></head><body>
 <a class="skip" href="#main">Skip to the record</a>
-<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="index.html">SGA <b>60</b></a><ul><li><a href="index.html" aria-current="page">The board</a></li><li><a href="history.html">Timeline</a></li><li><a href="legislation.html">Legislation</a></li><li><a href="corrections.html">Corrections</a></li><li><a href="sources.html">Sources</a></li><li><a href="about.html">About and method</a></li></ul></div></nav>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="index.html">SGA <b>60</b></a><ul><li><a href="index.html" aria-current="page">The board</a></li><li><a href="story.html">The story</a></li><li><a href="history.html">Timeline</a></li><li><a href="legislation.html">Legislation</a></li><li><a href="corrections.html">Corrections</a></li><li><a href="sources.html">Sources</a></li><li><a href="about.html">About and method</a></li></ul></div></nav>
 <main id="main">
 
 <header class="head"><div class="wrap">
@@ -292,6 +304,16 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
 </div></header>
 
 <div class="wrap">
+ <a class="readfirst" href="story.html">
+  <p class="lab">Start here</p>
+  <h2>The story</h2>
+  <p>Sixty years of student government at Western Kentucky University, read straight through:
+  the fight for a seat on the Board of Regents, the concert losses that nearly cost it the job, the
+  gazebo that was never built, the resolution that drew national coverage and was rejected
+  within days. Every claim links back to the year it came from.</p>
+  <span class="go">Read the narrative</span>
+ </a>
+
  <div class="tools">
   <label class="field" for="q"><span class="lab">Search the board</span>
    <input id="q" type="search" autocomplete="off" spellcheck="false"></label>
