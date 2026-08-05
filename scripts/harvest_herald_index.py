@@ -70,8 +70,15 @@ def main():
             title = next((el.text for el in rec.iter() if el.tag.endswith("title") and el.text), "")
             desc = " \n ".join(el.text for el in rec.iter()
                                if el.text and ("description" in el.tag or el.tag.endswith("abstract")))
-            date = next((el.text for el in rec.iter()
-                         if ("date.created" in el.tag or el.tag.endswith("created")) and el.text), "")
+            # The document-export schema calls this publication-date. It has been
+            # through other names, so the older ones are still tried after it;
+            # miss it and every record fails the dating law and nothing is kept.
+            date = ""
+            for want in ("publication-date", "date.created", "created", "date"):
+                date = next((el.text for el in rec.iter()
+                             if el.tag.split("}")[-1] == want and el.text), "")
+                if date:
+                    break
             date = (date or "")[:10]
             if not KEEP_ALL and not (KW.search(title) or KW.search(desc)):
                 continue
