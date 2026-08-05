@@ -91,6 +91,12 @@
   "why": "Said plainly that the Herald item was a same-day advance notice and moved the audience and the content onto the 1976 Talisman, which I read in full text and which names ASG as the sponsor of the series."
  },
  {
+  "action": "drop",
+  "year": "1975-76",
+  "title": "Harrison Salisbury lectures",
+  "why": "Nothing ties the lecture to ASG: the cited Herald item is a same-day notice naming no sponsor, and the 1976 Talisman only lists him among lecturers scheduled for the spring; the lecture itself did happen, since the Herald of 2 April 1976 (51:51, dlsc_ua_records/5141) reported his remarks on politics and US-China relations, so it can return if a sponsor is ever sourced."
+ },
+ {
   "action": "rewrite",
   "year": "1978-79",
   "date": "1979-01-18",
