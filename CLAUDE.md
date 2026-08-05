@@ -140,10 +140,13 @@ was formally part of it; or it is major news that shaped the year for students �
 the 2021 tornado, the COVID shutdown, a university president resigning, a murder trial, a
 tuition increase, a campus lockdown.
 
-Nothing else. A building opening, a centennial kickoff, an enrollment milestone, a charity
-proclamation, a ribbon cutting: these are university publicity, not student government
-history, and they do not belong here even when an SGA officer attended. An officer being
-present at something does not make it SGA's history.
+Capital projects count. New buildings, renovations and the fees that pay for them come
+before the Board of Regents, where the student regent sits and votes, so a building opening
+belongs in the record as the visible end of a decision students had a seat in.
+
+What does not belong: charity proclamations, ribbon cuttings, awareness days and other
+university publicity where SGA neither acted nor voted. An officer being present at something
+does not make it SGA's history.
 
 Mark true context events — the second category, where SGA was not the actor — with
 `"campus": true`. Never mark SGA's own business as campus context; the tag exists to tell a
