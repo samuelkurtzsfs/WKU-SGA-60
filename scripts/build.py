@@ -467,15 +467,17 @@ def shell(title, desc, body, css, depth, current, mascot=False):
 
 
 # ---------------------------------------------------------------- pieces
-REGENT_ERA = range(1968, 2001)
+REGENT_SEAT_CREATED = 1968
 
 
 def held_both(l, y):
-    """In the regent era a lone name on the plaque held both offices: the
-    presidency and the student seat on the Board of Regents. Only the years
-    that carry two names split them between two people."""
+    """The student seat on the Board of Regents has existed since April 1968 and
+    has never gone away. In most years the elected president also holds it, so a
+    lone name on the plaque means one person in both offices. The years that
+    carry two names are the exceptions, when someone other than the president
+    held the seat - usually because the president was ineligible."""
     return (l["role"] == "president" and len(y["leaders"]) == 1
-            and y["start"] in REGENT_ERA)
+            and y["start"] >= REGENT_SEAT_CREATED)
 
 
 def role_word(l, y=None):
