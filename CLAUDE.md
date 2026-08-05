@@ -44,6 +44,16 @@ following **spring**. If they differ, someone is missing. Mark an acting officeh
 - By ~2001 the offices merged. After that, a second name in a year is a mid-year succession.
 - Still open: Reed Morgan 1968-69, John Lyne vs Larry Zielke 1970-71, David Payne 1982-83.
 
+## Search locally before you crawl
+`data/herald-index-full.json` is the **complete** article index of the digitised collection:
+11,850 items and 17,601 index lines, 1875 to 2026, with no keyword filter. Grep it first. It
+answers most "was X president that spring" questions in a second and costs TopSCHOLAR nothing.
+Rebuild with `python3 scripts/harvest_herald_index.py --all` (about 35 minutes, paced).
+
+`data/herald-index.json` is the filtered subset the site renders and is **not** a research tool:
+it keeps only issues whose index mentions student government, so anyone named in a headline that
+does not say SGA, ASG or student government is invisible in it.
+
 ## Sources, in order of usefulness
 1. `digitalcommons.wku.edu/dlsc_ua_records/` — Herald back file, indexed article by article
 2. `digitalcommons.wku.edu/wku_timeline/` — dated, described, citable single events
