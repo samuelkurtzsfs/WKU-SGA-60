@@ -3789,11 +3789,11 @@
      "name": "Jack Smith",
      "plaque_term": "1983-85",
      "role": "president",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Two-year plate. Either re-elected or the plaque compresses two terms.",
+     "note": "Two-year plate. Either re-elected or the plaque compresses two terms. Confirmed from inside the term: the Herald of 20 March 1984 reported the top four ASG posts decided, and coverage through 1984-85 names Smith as president in his second year.",
      "sources": [
       {
        "label": "Herald 60:7, 20 Sep 1984",
@@ -4272,11 +4272,11 @@
      "name": "Timothy Todd",
      "plaque_term": "1986-88",
      "role": "president",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Two-year plate. A 1987 Herald piece reports a candidate shortage and mentions a Tim Todd race.",
+     "note": "Two-year plate. A 1987 Herald piece reports a candidate shortage and mentions a Tim Todd race. Confirmed from inside the term by his own signed Herald column of 11 September 1986 explaining what ASG was and what it was for.",
      "sources": [
       {
        "label": "Herald 62:48, 1987",
@@ -4459,11 +4459,11 @@
      "name": "Timothy Todd",
      "plaque_term": "1986-88",
      "role": "president",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Two-year plate. A 1987 Herald piece reports a candidate shortage and mentions a Tim Todd race.",
+     "note": "Two-year plate. A 1987 Herald piece reports a candidate shortage and mentions a Tim Todd race. Confirmed from inside the term: the Herald of 31 March 1988, reporting the ASG presidential primary, refers to Todd as the sitting president.",
      "sources": [
       {
        "label": "Herald 62:48, 1987",
@@ -4630,11 +4630,11 @@
      "name": "Scott Whitehouse",
      "plaque_term": "1988-89",
      "role": "president",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "year_confidence": "confirmed",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "ASG filed a formal reaction to the General Education Task Force proposal in 1988.",
+     "note": "ASG filed a formal reaction to the General Education Task Force proposal in 1988. Confirmed twice: the Herald of 7 April 1988 reported 'Whitehouse winner in presidential election', and coverage through the year names him as president.",
      "sources": [
       {
        "label": "TopSCHOLAR - Gen Ed response",
@@ -7361,7 +7361,7 @@
      "name_verified": false,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Every contemporaneous 1999-2000 source found - the Herald's election and reflection coverage, the SGA's own website, and the organization's 2001 list of former presidents - gives her name as Amanda J. Coates or Amanda Coates, never Lich. A WKU employee working today in the university's Philanthropy & Alumni Engagement office in Bowling Green goes by Amanda Coates Lich; the combined surname is consistent with Coates being a maiden name and Lich a married name, but no source found ties that person directly to the 1999-2000 SGA presidency. The plaque's \"Lich\" is flagged here, not confirmed. The portrait on this page is captioned Amanda Coates in the Herald of 25 April 2000, in a profile of the sitting Student Government Association president; it is published here as the verified holder of the office, not as confirmation of the plaque's surname.",
+     "note": "Every contemporaneous 1999-2000 source found - the Herald's election and reflection coverage, the SGA's own website, and the organization's 2001 list of former presidents - gives her name as Amanda J. Coates or Amanda Coates, never Lich. A WKU employee working today in the university's Philanthropy & Alumni Engagement office in Bowling Green goes by Amanda Coates Lich; the combined surname is consistent with Coates being a maiden name and Lich a married name, but no source found ties that person directly to the 1999-2000 SGA presidency. The plaque's \"Lich\" is flagged here, not confirmed. The portrait on this page is captioned Amanda Coates in the Herald of 25 April 2000, in a profile of the sitting Student Government Association president; it is published here as the verified holder of the office, not as confirmation of the plaque's surname. SGA's own list of past presidents, captured in 2001, records the holder of this office as \"Amanda J. Coates\" of Brownsville, marked as student regent. The office and the year are therefore confirmed; the plaque's surname is not, and no source found states that Coates and Lich are the same person.",
      "sources": [
       {
        "label": "WKU SGA, Presidents 1966-Present (archived 2001)",
@@ -9612,7 +9612,20 @@
       {
        "label": "WKU Board of Regents minutes, 24 Apr 2009",
        "url": "https://www.wku.edu/regents/documents/wku_bor_042409.pdf"
+      },
+      {
+       "label": "College Heights Herald, 26 Feb 2009, \"Gilley elected student regent\" (archived)",
+       "url": "https://web.archive.org/web/20090228081141/http://media.www.wkuherald.com/media/storage/paper603/news/2009/02/26/News/Gilley.Elected.Student.Regent-3650062.shtml"
+      },
+      {
+       "label": "WKU Board of Regents minutes, special budget meeting, 19 Jun 2009",
+       "url": "https://www.wku.edu/regents/documents/wku_bor_061909.pdf"
       }
+     ],
+     "profile": [
+      "Reagan Gilley was a Pineville senior and the Student Government Association's administrative vice president when he won the special election for student regent held 25-26 February 2009, filling the seat left empty for 26 days after President Johnathon Boles resigned on 30 January for health reasons. He beat Fairdale senior Nate Eaton, the speaker of the senate, 477 votes to 224 of the 701 cast, and Chief Justice Corey Bewley announced the verified result at 12:17 a.m. Thursday in the SGA office. Gilley had campaigned on short notice through a Facebook group, announcements in classes and a YouTube video built around the Rick Astley song \"Never Gonna Give You Up,\" and after the count he handed Eaton a plaque he had bought at Kroger that day. He said he planned to contact Boles the next day to catch up on Board of Regents business and then to contact Faculty Regent Patricia Minter, and that he wished more students had voted. \"I am very relieved but excited for things to come,\" he said.",
+      "Gilley took the constitutional oath of office from Board Chair Lois Gray at the second quarterly meeting on 24 April 2009, where President Gary Ransdell presented him with the regent's pin, and he answered the roll call as student regent. He seconded Larry Zielke's motion to approve the naming of designated facilities and rooms, and seconded Yevette Haskins's motion to accept the 2008-09 second quarter statement of revenues and expenditures for filing. On the 2009-10 tuition and fees schedule, which carried a 4 percent increase, Gilley asked to amend the motion to strike the proposed per credit hour fee on course loads above 15 hours; the amended motion was seconded by Zielke and carried unanimously. He then moved to add a drop/add fee of $50 per transaction to the schedule, which Zielke seconded and which also carried unanimously, and afterwards told the Board that tuition increases were a major concern of the student body and that \"for the record, I meant to vote in opposition to the tuition increase.\" During a long exchange over personnel actions and campus morale, in which the faculty and staff regents described resignations and low morale, Gilley said that on behalf of the student body there was concern about fewer staff being available for classes. The minutes list the Board's next meetings as a special budget meeting on 19 June 2009 and the third quarterly meeting on 31 July 2009.",
+      "His time on the Board was over by the summer. The minutes of the special budget meeting of 19 June 2009 record the constitutional oath of office being administered to Kevin Smiley as student regent, again by Chair Lois Gray and with the regent's pin presented by President Ransdell, and the roll call for that meeting lists Smiley rather than Gilley. Gilley's name does not appear in those minutes at all, so the quarterly meeting of 24 April 2009 was the only Board meeting that fell within his tenure, and the record of his service as student regent runs to that single day of votes. Gilley's name does not appear in those minutes, so the handover had happened by 19 June 2009, earlier than the 31 July roll call previously recorded here."
      ]
     }
    ],
