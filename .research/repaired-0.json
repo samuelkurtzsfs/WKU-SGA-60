@@ -1,0 +1,173 @@
+[
+ {
+  "action": "drop",
+  "year": "1966-67",
+  "title": "Complaints about the turnout for the New Christy Minstrels",
+  "why": "The two letters are real, but nothing in the issue ties the concert to Associated Students, and the claim that this was the earliest recorded grumble about an empty house is an unsourced superlative, so no SGA content survives."
+ },
+ {
+  "action": "drop",
+  "year": "1967-68",
+  "title": "Wilson Pickett headlines a soul concert",
+  "why": "The index of Herald 47:15 confirms only an advance notice of a soul concert that night; no source names a sponsor, so the show cannot be shown to be an Associated Students programme, and the front-page placement and 'biggest single act' claims have no support."
+ },
+ {
+  "action": "rewrite",
+  "year": "1970-71",
+  "date": "1970-10-01",
+  "kind": "concert",
+  "title": "Pacific Gas and Electric panned after Homecoming weekend",
+  "body": "Pacific Gas and Electric played at Western as part of Homecoming weekend in October 1970. Ernie Hearion reviewed the show in the Herald of 13 October under the heading \"Utilities Down Sharply on Entertainment Market\", and the 1971 Talisman said the group won over very few of the crowd. The same yearbook recorded that the Herald was outspoken that year about the entertainment on which the Associated Students chose to spend students' activity funds.",
+  "src": {
+   "label": "College Heights Herald 50:13, 13 Oct 1970 (review); 1971 Talisman, Homecoming and Concerts",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4976/"
+  },
+  "why": "Cut 13 October as the concert date, since that is the review's publication date and the Talisman places the show in Homecoming weekend, and demoted the date to October 1970 with the day unknown; replaced the Talisman quotation with a paraphrase and added the sourced line about Associated Students entertainment spending, which is the only student government tie any source gives."
+ },
+ {
+  "action": "rewrite",
+  "year": "1971-72",
+  "date": "1972-01-01",
+  "kind": "program",
+  "title": "Reginald Glass signs the Associated Students' entertainment contracts",
+  "body": "The 1972 Talisman photographed Reginald Glass, vice-president of Associated Students, signing a speaker contract, and said signing contracts for concerts and speakers was one of his responsibilities. The first speaker the Associated Students sponsored was Dr Benjamin Spock. Its other activities that year included bringing in the Trinidad Steel Band, Ike and Tina Turner and several mini-concerts, sponsoring the Homecoming dance, and running a mock election before the Kentucky governor's race.",
+  "src": {
+   "label": "1972 Talisman, pp. 56-58 (Associated Students)",
+   "url": "https://archive.org/details/talisman1972west"
+  },
+  "why": "Cut the block-booking and high-prices views, which are not in the 1972 Talisman, and the unsourced claim that Glass was the first black vice president; kept the caption the source does carry and added the list of Associated Students entertainment on the same pages."
+ },
+ {
+  "action": "rewrite",
+  "year": "1973-74",
+  "date": "1973-12-11",
+  "kind": "speaker",
+  "title": "Edmund Muskie calls for Nixon's impeachment in an ASG lecture",
+  "body": "ASG sponsored the lecture Senator Edmund Muskie of Maine gave at Western on 11 December 1973, on the restoration of confidence in government. Muskie called for the impeachment of President Nixon, saying he had decided on the night of the Saturday Massacre that impeachment was the only way the issue should be raised. He cited a Harris poll in which 19 per cent of Americans said they had confidence in the executive branch. The 1974 Talisman lists Muskie with Barry Goldwater and Elliot Richardson among the lectures ASG sponsored that year.",
+  "src": {
+   "label": "1974 Talisman, pp. 52-55 (Lectures); date from College Heights Herald 53:26, 4 Dec 1973",
+   "url": "https://archive.org/details/talisman1974west"
+  },
+  "why": "The cited Herald issue is only an advance notice, so the substance now rests on the 1974 Talisman, which I read and which carries the ASG sponsorship, the topic, the impeachment call and the Harris poll figure; the Herald keeps only the 11 December date."
+ },
+ {
+  "action": "rewrite",
+  "year": "1974-75",
+  "date": "1975-01-31",
+  "kind": "concert",
+  "title": "Pure Prairie League: sound ruins the first show, the second is far better",
+  "body": "Associated Student Government billed Pure Prairie League, and the group played two shows in Van Meter on 31 January 1975. Sound problems ruined most of the first act at 7:30, and the bassist, printed in the Talisman as Mike Rieley, asked the 9:30 audience whether anyone had seen the first show. He said it was the group's first experience with the sound crew the university had contracted. The problems were solved before the second show, which the 1975 Talisman rated far better.",
+  "src": {
+   "label": "1975 Talisman, Entertainment; announced in College Heights Herald 50:31, 24 Jan 1975",
+   "url": "https://archive.org/details/talisman1975west"
+  },
+  "why": "The Herald citation was an advance notice, so the review now rests on the 1975 Talisman, which I read and which supplies the 31 January date and the two shows, while ASG's billing comes from the Herald headline; the bassist's name is left as the Talisman prints it, Rieley, and a caption elsewhere in the same volume misdates this concert to 30 October."
+ },
+ {
+  "action": "drop",
+  "year": "1975-76",
+  "title": "Andrae Crouch and the Disciples in the Garrett ballroom",
+  "why": "The 1976 Talisman places the show in the Garrett Conference Center ballroom on 8 February but attributes it to nobody; I read the surrounding concerts section and it credits ASG's new Student Activities Committee with the Spinners and Wet Willie show of 30 January, not with this one, so the ASG framing cannot be rescued."
+ },
+ {
+  "action": "rewrite",
+  "year": "1978-79",
+  "date": "1978-10-26",
+  "kind": "concert",
+  "title": "ASG's promoter had not signed a contract days before the Player and Exile concert",
+  "body": "ASG said in the early autumn of 1978 that it would sign a contract with Sunshine Promotions, an Indianapolis concert firm, and its activities vice president David Carwell said the company met the three requirements for an outside promoter: an office within 500 miles of Western, at least 75 major concerts promoted, and $2 million grossed on them. Eight days before the Player and Exile concert of 3 November, the Herald reported that Western had still not signed, because the firm would not post the $100,000 performance bond the university required to guarantee that all the bills would be paid. Sunshine's Sybesma said Indiana insurance companies wanted 100 per cent collateral and a $2,000 service fee for the bond, and said his company might instead put up money before each concert. Sunshine later posted an irrevocable letter of credit that Western could cash if the concert bills went unpaid.",
+  "money": "$100,000 performance bond in dispute",
+  "src": {
+   "label": "College Heights Herald 54:19, 26 Oct 1978; 1979 Talisman, Associated Student Government section",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3422/"
+  },
+  "why": "Cut the closing claim that the concert went ahead on an oral agreement, which belongs to the 9 November editorial and not to this issue, and softened 'refused to sign' to the firm's refusal to post the bond; added the ASG tie, the three promoter requirements, the Indiana insurers and the letter of credit from the 1979 Talisman, which I read."
+ },
+ {
+  "action": "drop",
+  "year": "1978-79",
+  "title": "Randy Crawford and the Crusaders play free to 1,409",
+  "why": "Every figure checks out, but the Herald article credits the university with the concert and its expenses and never mentions ASG, and the 1979 Talisman files it among shows Western ran independent of Sunshine Promotions, so it is not an ASG programme; the verified figures are in the checker's note if the archive later covers university-run shows."
+ },
+ {
+  "action": "rewrite",
+  "year": "1986-87",
+  "date": "1987-03-26",
+  "kind": "program",
+  "title": "ASG prepares to host the second statewide student government conference",
+  "body": "The Herald reported on 26 March 1987 that ASG would be host, from the following day through Sunday, to the second annual statewide student government conference, at the American Plaza on Scottsville Road. President Tim Todd expected about 50 student leaders, against about 65 at the first conference, which ASG had also hosted, and said hosting would cost between $400 and $500. Registration was $18 and the conference was open to all students. Saturday seminars were to cover leadership, communication and financial aid, with the Council on Higher Education flying in a financial aid consultant from Washington and sending its director, Gary S. Cox.",
+  "money": "$18 registration; $400 to $500 to host",
+  "src": {
+   "label": "Herald 62:48, 26 Mar 1987",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5916/"
+  },
+  "why": "Rewritten as the announcement the source actually is and redated from the conference weekend to the 26 March issue; I checked the issues either side, 62:47 of 24 March and 62:50 of 2 April, and found no report of how the weekend went, so nothing here says the conference took place."
+ },
+ {
+  "action": "rewrite",
+  "year": "1992-93",
+  "date": "1993-02-08",
+  "kind": "program",
+  "title": "Project Western Week and the planned Don't Trash The Spirit clean-up",
+  "body": "SGA's Project Western Week began on Monday 8 February 1993 and ran through the week. Its biggest part was to be a mass campus clean-up the next day under the motto Don't Trash The Spirit. President Joe Rains said students would start picking up trash at about 3:30 p.m. at the New Co-Ed and New Sorority dorms, spread out across the width of campus and finish at Cherry Hall, and about 600 people were expected. The campus was to be divided into 23 sections taken by organisations that had until 5 February to sign up and that would stay responsible for their areas until the end of the semester, with $500 from SGA for the group keeping the cleanest area.",
+  "money": "$500 prize to the organisation with the cleanest area",
+  "src": {
+   "label": "Herald 68:35, 9 Feb 1993",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7815/"
+  },
+  "why": "Recast the 10 February clean-up as announced rather than reported and redated the entry to the 8 February start of Project Western Week, which the source does give in the past tense; I checked the next issue, 68:36 of 11 February, and it carries no follow-up on the clean-up."
+ },
+ {
+  "action": "rewrite",
+  "year": "1993-94",
+  "date": "1994-03-29",
+  "kind": "program",
+  "title": "SGA sets a Dialogue Day with administrators",
+  "body": "President Smith told the SGA meeting of 29 March 1994 that 6 April would be Dialogue Day, when students could talk with administrators in Niteclass from noon to 2 p.m. The public relations committee handed out flyers for it alongside flyers for the coming election. The same minutes record that security phones were expected to be in place by 26 April, and report on the memorial tree programme.",
+  "src": {
+   "label": "SGA Records: Meeting Minutes, 29 Mar 1994",
+   "url": "https://digitalcommons.wku.edu/context/sga/article/2014/viewcontent/sga_1994_3_29_minutes.pdf"
+  },
+  "why": "Redated from 6 April to the 29 March minutes and rewritten as the announcement they contain, since nothing shows the event took place; also dropped the 'run of access events' framing and the president's first name, which the minutes do not give. The 12 April 1994 minutes exist on TopSCHOLAR at sga/Meetings/Minutes/501 but the archive refused the PDF, so the event is still unconfirmed."
+ },
+ {
+  "action": "rewrite",
+  "year": "1996-97",
+  "date": "1997-01-23",
+  "kind": "service",
+  "title": "Herald reports SGA giving students rides",
+  "body": "The Herald of 23 January 1997 carried Matt Batcheldor's report that the Student Government Association was giving rides to students. The archive's index of the issue records the article's title and byline and nothing more about the service.",
+  "src": {
+   "label": "College Heights Herald 72:31, 23 Jan 1997 - Batcheldor, \"Student Government Association Gives Rides to Students\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3034"
+  },
+  "why": "Corrected the issue number from 72:29 to 72:31, which the record confirms, and cut everything the source does not carry: the name Provide-A-Ride, the January 1997 start, and the Herald warning a week later. SGA's own website described a free Provide-a-Ride van service on Thursday and Friday nights in a 2000 capture, but that does not date the start."
+ },
+ {
+  "action": "rewrite",
+  "year": "2003-04",
+  "date": "2003-12-02",
+  "kind": "program",
+  "title": "The last Congress meeting of the autumn, with the banquet to follow",
+  "body": "SGA's website announced on 30 November 2003 that the banquet would be held right after the next Congress meeting, which would also be the last Congress meeting of the autumn semester. That meeting, the fourteenth of the year, was called to order at 5:05 p.m. on 2 December 2003 with 25 of the 43 members present, and the vice president of public relations, Abby Lovan, told it that a picture would be taken for the yearbook at the banquet.",
+  "src": {
+   "label": "WKU SGA Congress minutes, 2 Dec 2003, and SGA news page, 30 Nov 2003 (Wayback captures)",
+   "url": "https://web.archive.org/web/20040907093756/http://www.wku.edu:80/Dept/Org/Student/SGA/archive/minutes/l/2003-04/12-02minutes.pdf"
+  },
+  "why": "Dropped the claims that the banquet was held and the yearbook photograph taken, which no source reports, and moved the entry onto the 2 December minutes and the SGA news page, which I read and which give the meeting, its attendance and the plan for the photograph; the events calendar items the checker verified, Parents' Weekend lunch, the lighting and safety walk and the forums, are sound and belong in their own entries."
+ },
+ {
+  "action": "rewrite",
+  "year": "2011-12",
+  "date": "2012-02-28",
+  "kind": "service",
+  "title": "Senate funds a transcript voucher programme",
+  "body": "The first bill passed at the SGA meeting on Tuesday 28 February 2012 allocated $1,225 for transcript vouchers, so that students applying for scholarships, jobs and graduate or professional school could get copies of their official transcripts free. A total of 175 vouchers were to be available, with a limit of two per student. A second bill put $500 of general senate funding into five $100 Study Away scholarships, and a further $2,300 went to Scholar Development Grant Awards and Study Abroad Awards. An organisational aid bill allocating $2,400 to five student groups had its first reading at the same meeting.",
+  "money": "$1,225 for 175 vouchers; $500 in Study Away scholarships; $2,300 in grants; $2,400 organisational aid on first reading",
+  "src": {
+   "label": "College Heights Herald, 29 Feb 2012 - Taylor Harrison, \"SGA to launch transcript voucher program\"",
+   "url": "https://wkuherald.com/48876/news/sga-to-launch-transcript-voucher-program/"
+  },
+  "why": "Cut the $7 transcript price, the Cory Dodds quotation and Registrar Freida Eggleton, none of which appear in the article, which I read in full; added the organisational aid bill it does report and the author's name."
+ }
+]

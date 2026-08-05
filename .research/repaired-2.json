@@ -1,0 +1,174 @@
+[
+ {
+  "action": "drop",
+  "year": "1967-68",
+  "title": "A mock election for governor, preceded by debates",
+  "why": "Both Herald headlines are real, but nothing in 47:7 or its neighbours ties the gubernatorial mock election to the student government - the issue's index carries no sponsoring body - and the entry's date was the announcement issue, not the 31 October balloting, so it is neither an SGA programme nor correctly dated."
+ },
+ {
+  "action": "drop",
+  "year": "1968-69",
+  "title": "A presidential mock election on campus",
+  "why": "Herald 48:5 does carry the balloting notice and the editorial, but the issue's index names no sponsor for the mock election (its Associated Students items are a dance and an organisation feature), balloting was Monday 21 October rather than the 17th, and the Nixon and Cook result was never cited, so nothing survives as an SGA programme."
+ },
+ {
+  "action": "rewrite",
+  "year": "1971-72",
+  "date": "1971-08-31",
+  "kind": "concert",
+  "title": "The Emme Kemp Jazz Trio opens the ASG mini-concert season",
+  "body": "The Herald reported on 31 August 1971 that the Kemp Trio had set a concert. The 1972 Talisman recorded that the Associated Students entertained students with several mini-concerts that fall semester, small-scale shows meant to give top quality entertainment at less cost and presented in cooperation with other Kentucky colleges, and that the season started with the Emme Kemp Jazz Trio; student requests then brought the Trinidad Steel Band back with the Serendipity Singers.",
+  "src": {
+   "label": "College Heights Herald 51:2, 31 Aug 1971",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4815/"
+  },
+  "why": "Removed the invented 2 September concert date and dated the entry to the Herald issue that reports the booking; the mini-concert framing is now attributed in the body to the 1972 Talisman, which I read at archive.org/details/talisman1972west and which is the only source that ties the series to the Associated Students."
+ },
+ {
+  "action": "rewrite",
+  "year": "1972-73",
+  "date": "1972-10-06",
+  "kind": "service",
+  "title": "ASG announces a paper recycling project",
+  "body": "The Herald of 6 October 1972 reported that Associated Student Government would launch a paper recycling project. The 1973 Talisman recorded that the project ran: paper was collected in ecology trash cans set at points across campus, collection was later extended to cans and bottles, and the money from the sale of recycled paper went back into the work of the Environmental Committee, which Joe Cheak headed.",
+  "src": {
+   "label": "College Heights Herald 52:12, 6 Oct 1972",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4885"
+  },
+  "why": "Recast the cited article as the announcement it is, fixed the citation label to Vol. 52 No. 12, and attributed the ecology cans, the cans and bottles, the proceeds and Joe Cheak in the body to the 1973 Talisman, which I verified at archive.org/details/talisman1973west."
+ },
+ {
+  "action": "rewrite",
+  "year": "1974-75",
+  "date": "1974-08-30",
+  "kind": "other",
+  "title": "ASG books its fall entertainment fare",
+  "body": "The Herald reported on 30 August 1974 that Associated Student Government had booked its entertainment programme for the fall semester. The 1975 Talisman set out the season that followed: an ASG bluegrass festival on 28 August, moved indoors to Van Meter Auditorium by rain and headlined by Lester Flatt and the Clinch Mountain Clan; Doc Severinsen at Homecoming on 11 October, picketed by about 30 students; and America free on 7 November. ASG had booked Al Stewart for a 3 November mini-concert, but his United States tour was cancelled over immigration law and activities vice-president Tom LaCivita booked Kiss in his place.",
+  "src": {
+   "label": "College Heights Herald 50:2, 30 Aug 1974",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5021"
+  },
+  "why": "Cut the claim that Kiss and the rest were on the slate announced in August; the 1975 Talisman (archive.org/details/talisman1975west), now named in the body, shows Kiss was LaCivita's November replacement for the cancelled Al Stewart date, so the entry separates what the Herald reported on 30 August from the season the yearbook records."
+ },
+ {
+  "action": "rewrite",
+  "year": "1975-76",
+  "date": "1975-11-01",
+  "kind": "concert",
+  "title": "Linda Ronstadt's Homecoming concert nets ASG $4,300",
+  "body": "Linda Ronstadt played the Homecoming concert in Diddle Arena on Saturday 1 November 1975, opening with \"Colorado\", with Goose Creek Symphony before her and Andrew Gold as her backup group. The 1976 Talisman put the crowd at about 6,500 and the profit to ASG at $4,300, and reported that activities vice-president Rick Kelley and ASG president Steve Henry rated it among the most successful concerts in years - successful enough, the yearbook said, to guarantee a free Spinners and Wet Willie concert for students on 30 January.",
+  "money": "netted $4,300 for ASG; attendance about 6,500, though the same yearbook's opening section gives 6,300",
+  "src": {
+   "label": "1976 Talisman, Concerts",
+   "url": "https://archive.org/details/talisman1976west"
+  },
+  "why": "Moved the citation off the 31 October advance notice, which cannot carry an attendance or a profit, onto the 1976 Talisman where every figure and quotation actually appears, and flagged the yearbook's own conflicting 6,300 attendance figure."
+ },
+ {
+  "action": "rewrite",
+  "year": "1975-76",
+  "date": "1976-04-23",
+  "kind": "concert",
+  "title": "James Taylor plays a free concert to close the year",
+  "body": "The Herald of 20 April 1976 billed James Taylor for a free concert that Friday, and the issue of 23 April told readers the performance would be that night. The next issue, 27 April, carried Tip Shanklin's review under the headline \"Evening with James Taylor Well Spent\", so the concert took place. The 1976 Talisman listed James Taylor among the year's concerts but, before the event, recorded only that he was scheduled to give a free concert in April.",
+  "src": {
+   "label": "College Heights Herald 51:58, 27 Apr 1976",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5152"
+  },
+  "why": "Cut Henry Gross and the 'big success' follow-up, which no source seen supports, and rescued the entry by finding the review in Herald 51:58 (27 Apr 1976), which confirms the show happened; no source seen names ASG as the booker, so the entry does not claim one."
+ },
+ {
+  "action": "rewrite",
+  "year": "1978-79",
+  "date": "1979-04-02",
+  "kind": "speaker",
+  "title": "Gerald O'Neill on space colonies",
+  "body": "Gerald O'Neill, a physics professor at Princeton and author of \"The High Frontier\", told 100 people in the Center Theater in his lecture of 2 April 1979 that space colonies and solar power stations were possible with current technology, and that electricity from solar cells could be sent back to Earth as low energy microwaves. He said plans for space colonies existed but President Carter had abolished the NASA office exploring space colonisation, and that he was concerned about the militarisation of space because Carter had signed a bill to develop a particle beam weapon to be placed in space. The same yearbook records that lectures and concerts had been run by Associated Student Government until the Board of Regents voted on 31 March 1979 to hand that programming to a new University Center Board from the following autumn.",
+  "money": "100 in the audience",
+  "src": {
+   "label": "1979 Talisman, Lectures p. 97 and University Center Board p. 81",
+   "url": "https://archive.org/details/talisman1979west"
+  },
+  "why": "Cut the $2,000 fee and the flat claim that ASG signed him, neither of which is in the cited Talisman, and replaced them with the same volume's statement that ASG ran lectures and concerts until the University Center Board took over; note the Talisman spells him Gerald O'Neill, so the spelling of the first name is unverified here."
+ },
+ {
+  "action": "rewrite",
+  "year": "1981-82",
+  "date": "1981-10-01",
+  "kind": "service",
+  "title": "Discount cards arrive, but do not go out",
+  "body": "The ASG discount cards reached campus the day before the Herald's report of 1 October 1981. There were 14,000 of them and they offered students discounts at 21 listed merchants, valid until 1 September 1982. They were not handed out: Bush had been busy with other projects and passed the job to the communications committee, whose chairwoman, Laura Simms, was still working on a plan.",
+  "src": {
+   "label": "College Heights Herald 57:11, 1 Oct 1981",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2413/"
+  },
+  "why": "Corrected a misread: the article says ASG did not yet know how the 14,000 cards would be distributed, not how many it had or what was on them, and gives the delay a different cause; also cut the six businesses and at least fifteen figures, which belong to the 29 September issue, not this one."
+ },
+ {
+  "action": "rewrite",
+  "year": "1988-89",
+  "date": "1988-10-20",
+  "kind": "service",
+  "title": "ASG sets up a Wednesday afternoon hotline",
+  "body": "Student government set up a hotline for complaints and suggestions about the organisation. From Wednesday 26 October the ASG secretary was to answer the office line, 745-4354, from 1 to 4 p.m. every Wednesday, referring anything she could not answer to an executive officer. Public relations vice president Amos Gott said students could call at any time during the week but did not, and that with a set time people were more apt to call.",
+  "src": {
+   "label": "College Heights Herald 64:17, 20 Oct 1988",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5959/"
+  },
+  "why": "Reattributed the quotation from administrative vice president Adrian Smoot, who was quoted on the page about the vacant parliamentarian post, to public relations vice president Amos Gott, who actually said it, and moved the entry's date to the 20 October issue because 26 October was still a prospective start."
+ },
+ {
+  "action": "rewrite",
+  "year": "1993-94",
+  "date": "1993-10-12",
+  "kind": "speaker",
+  "title": "Judge-executive candidates invited to congress",
+  "body": "Administrative vice-president Scott Sivley told congress on 12 October 1993 that the Warren County judge-executive candidates, Miller and Buchanon, would be guests at the meeting of 26 October. The same minutes record speakers from Head Start before congress that evening.",
+  "src": {
+   "label": "SGA Records: Meeting Minutes, 12 Oct 1993",
+   "url": "https://digitalcommons.wku.edu/context/sga/article/1968/viewcontent/sga_1993_10_12_minutes.pdf"
+  },
+  "why": "Redated to the meeting the minutes actually record and recast as an invitation, since nothing here shows the candidates appeared on 26 October, and cut the closing claim about state legislators questioned earlier in the term, which is not in this document."
+ },
+ {
+  "action": "rewrite",
+  "year": "1994-95",
+  "date": "1994-09-22",
+  "kind": "tradition",
+  "title": "SGA to enter a homecoming queen candidate",
+  "body": "The Herald reported on 22 September 1994 that the Student Government Association would enter a candidate for homecoming queen.",
+  "src": {
+   "label": "College Heights Herald 70:9, 22 Sep 1994 - Quarles and Mitchell, \"Student Government Association to Enter Queen Candidate\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7891"
+  },
+  "why": "Cut the People Poll, the editorial cartoon and the week of argument - that issue's poll and cartoon are on other subjects entirely - and the congress vote, which the headline does not establish; corrected the citation from 70:11 to Vol. 70 No. 9."
+ },
+ {
+  "action": "rewrite",
+  "year": "1998-99",
+  "date": "1998-10-27",
+  "kind": "program",
+  "title": "Organizational Aid pays out $6,200 to 41 groups",
+  "body": "Bill 98-9-F divided the $6,200 budgeted for Organizational Aid among 41 student organisations, a list the committee settled in two meetings running to over six hours. Awards ran from a floor of $100 to the Residence Hall Association's $205, and reached groups from Free the Planet to the Jewish Student Organization.",
+  "money": "$6,200 shared among 41 organisations",
+  "src": {
+   "label": "SGA Bill 98-9-F, Organizational Aid Recipients, 27 Oct 1998 (TopSCHOLAR)",
+   "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/92"
+  },
+  "why": "Corrected the recipient count from 26 to the 41 organisations the bill lists; the total, the six hours over two meetings, the $205 top award and the $100 floor all stand."
+ },
+ {
+  "action": "rewrite",
+  "year": "2009-10",
+  "date": "2009-12-08",
+  "kind": "program",
+  "title": "SGA sets a dinner with lawmakers",
+  "body": "SGA set its Dine with the Decision Makers for the evening of 8 December 2009, from 4:30 to 6 p.m. in the Cupola Room of Downing University Center, so students could talk about higher education with elected officials over dinner. President Kevin Smiley said 25 students had signed up through an online RSVP, a number capped by the cost of the dinner, and that five legislators and Bowling Green mayor Elaine Walker would attend. The event came out of a decision by the Board of Student Body Presidents that autumn that Kentucky's public universities should each mount student lobbying events.",
+  "money": "25 students signed up; numbers capped by the cost of the dinner",
+  "src": {
+   "label": "College Heights Herald 85:24, 8 Dec 2009 - \"SGA to dine with lawmakers\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6235"
+  },
+  "why": "The cited article is a same-day preview, so the body now says what SGA scheduled rather than what happened, and \"first\" is gone: the source never calls it the inaugural edition."
+ }
+]

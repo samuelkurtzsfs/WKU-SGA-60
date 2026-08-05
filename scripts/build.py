@@ -531,8 +531,9 @@ KINDS = [
      "Programmes and initiatives that were neither a single show nor a "
      "permanent service."),
     ("other", "Other", "Other",
-     "Programme business that does not fit the categories above, including "
-     "what students said about what was booked."),
+     "Programme business that does not fit the categories above: what students "
+     "said about what was booked, and the decisions that changed who did the "
+     "booking at all."),
 ]
 KIND_ONE = {k: one for k, one, _, _ in KINDS}
 KIND_MANY = {k: many for k, _, many, _ in KINDS}
@@ -5525,10 +5526,29 @@ def render_programs(ys):
                 f'<span class="yr"><a href="y/{h(y["id"])}.html">{h(y["id"])}</a></span></div>'
                 f'<div><h3>{h(e["title"])}</h3><p>{h(e["body"])}</p>{money_line(e)}'
                 f'<p class="cite">{"".join(cites)}</p></div></article>')
+        blurb = h(KIND_BLURB[k])
+        if k == "concert":
+            # The record's own shape: the concert era and the decision that closed
+            # it. Said with the caveat it needs, because a gap in an archive can
+            # always be a gap in the research instead.
+            VOTE = "1979-03-31"
+            pre = sum(1 for _, e, _ in block if e["date"] < VOTE)
+            post = len(block) - pre
+            if pre and post < pre:
+                blurb += (
+                    f' The shape of this list is worth noticing: {pre} of the {len(block)} '
+                    f'fall before 31 March 1979, and {post} after it. On that day the '
+                    f'Regents moved lectures and concerts away from Associated Student '
+                    f'Government to a reorganised University Center Board, with $80,000 '
+                    f'for programming (<a href="y/1978-79.html">1978-79</a>). Booking '
+                    f'concerts had been student government’s work for a decade; after '
+                    f'that vote it was somebody else’s. Later years are thinner in the '
+                    f'record generally, so the fall in this list is not proof on its own, '
+                    f'but the decision behind it is on the page.')
         secs.append(
             f'<section class="pgsec" id="k-{k}">'
             f'<h2>{h(KIND_MANY[k])}<span class="n">{len(block)}</span></h2>'
-            f'<p class="blurb">{h(KIND_BLURB[k])}</p>{"".join(rows)}</section>')
+            f'<p class="blurb">{blurb}</p>{"".join(rows)}</section>')
 
     body = f"""
 <header class="head"><div class="wrap">
