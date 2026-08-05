@@ -892,6 +892,8 @@ def render_year(y, prev, nxt, leg, repeats):
         cites = []
         if e.get("src"):
             cites.append(src_link(e["src"]))
+            if e.get("src2"):
+                cites.append(src_link(e["src2"]))
         if e.get("src", {}).get("file"):
             cites.append(f'<a href="../docs/{h(e["src"]["file"])}">Read it on this site</a>')
         cite = f'<p class="srcline">{"".join(cites)}</p>' if cites else ""
@@ -1382,6 +1384,8 @@ def timeline_sections(ys, by_year, up):
             cites = [f'<a href="{up}y/{h(yid)}.html#{aid}">In the record</a>']
             if e.get("src"):
                 cites.append(src_link(e["src"]))
+                if e.get("src2"):
+                    cites.append(src_link(e["src2"]))
             if e.get("src", {}).get("file"):
                 cites.append(f'<a href="{up}docs/{h(e["src"]["file"])}">Read it here</a>')
             tag = '<span class="tag">campus</span>' if e.get("campus") else ""
@@ -5520,6 +5524,8 @@ def render_programs(ys):
             cites = [f'<a href="y/{h(y["id"])}.html#{a}">In the record</a>']
             if e.get("src"):
                 cites.append(src_link(e["src"]))
+                if e.get("src2"):
+                    cites.append(src_link(e["src2"]))
             if e.get("src", {}).get("file"):
                 cites.append(f'<a href="docs/{h(e["src"]["file"])}">Read it here</a>')
             short, _lab = dec_of(y["id"])

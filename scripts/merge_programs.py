@@ -83,6 +83,12 @@ def main(paths):
                 ev["src"]["pdf"] = src["pdf"]
             if src.get("file"):
                 ev["src"]["file"] = src["file"]
+            # some entries rest on two sources - an advance notice and the report,
+            # or a Herald item and the yearbook. Both get cited.
+            s2 = p.get("src2") or {}
+            if s2.get("url") and s2.get("label"):
+                ev["src2"] = {k: v for k, v in s2.items()
+                              if k in ("label", "url", "pdf", "file")}
             y["events"].append(ev)
             seen[y["id"]].add(key)
             per_year[y["id"]] = per_year.get(y["id"], 0) + 1

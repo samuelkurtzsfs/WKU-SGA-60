@@ -500,7 +500,8 @@
      "kind": "program",
      "src": {
       "label": "College Heights Herald 47:2, 21 Sep 1967",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4723/"
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4723/",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=5728&context=dlsc_ua_records"
      }
     }
    ],
@@ -834,6 +835,10 @@
      "src": {
       "label": "College Heights Herald 48:4, 10 Oct 1968",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2085/"
+     },
+     "src2": {
+      "label": "College Heights Herald 48:6, 24 Oct 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2087/"
      }
     }
    ],
@@ -3004,7 +3009,12 @@
      "kind": "speaker",
      "src": {
       "label": "College Heights Herald 53:50, 5 Apr 1974",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3539"
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3539",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4541&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "College Heights Herald 53:39, 15 Feb 1974",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3528"
      }
     }
    ],
@@ -3838,7 +3848,12 @@
      "kind": "speaker",
      "src": {
       "label": "College Heights Herald 51:4, 9 Sep 1975",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5085"
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5085",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6088&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "1976 Talisman, p. 52",
+      "url": "https://archive.org/details/talisman1976west"
      }
     }
    ],
@@ -5317,7 +5332,12 @@
      "kind": "festival",
      "src": {
       "label": "College Heights Herald 56:22, 13 Nov 1980",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5547/"
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5547/",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6546&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "1981 Talisman, \"A year of resolutions\", pp. 282-83",
+      "url": "https://archive.org/details/talisman1981west"
      }
     }
    ],
@@ -7411,7 +7431,12 @@
      "kind": "program",
      "src": {
       "label": "College Heights Herald 64:17, 20 Oct 1988",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5959/"
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5959/",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6965&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "College Heights Herald 64:19, 27 Oct 1988",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5956/"
      }
     }
    ],
@@ -17394,6 +17419,10 @@
      "src": {
       "label": "College Heights Herald, 1 Nov 2017 - Ziege, \"SGA funds Day of Action to engage students with legislation\"",
       "url": "https://wkuherald.com/26846/news/sga-funds-day-of-action-to-engage-students-with-legislation/"
+     },
+     "src2": {
+      "label": "College Heights Herald, 16 Nov 2017 - Singleton, \"Students learn the hidden hacks of the Hill\"",
+      "url": "https://wkuherald.com/27004/news/students-learn-the-hidden-hacks-of-the-hill/"
      }
     }
    ],
