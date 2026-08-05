@@ -7684,7 +7684,7 @@
     {
      "date": "1991-01-10",
      "title": "Survey backs a dead week",
-     "body": "An ASG survey supported creating a dead week before finals. The same issue carried an opinion piece headlined that Colvin failed on final examinations.",
+     "body": "An ASG survey supported creating a dead week before finals. The same issue carried an opinion piece headed \"Michael Colvin Fails on Finals Examinations\", which was an attack on the president's proposal for comprehensive final examinations and not a report about his own grades.",
      "src": {
       "label": "Herald 66:31, 10 Jan 1991",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7731"
@@ -7824,18 +7824,18 @@
       }
      },
      {
-      "office": "Officer (title not specified in the archive)",
+      "office": "Judicial Council Chairman",
       "name": "Amos Gott",
-      "note": "Stepped down as an ASG officer in January 1991, reported in the same Herald issue as Van Hodge's resignation.",
+      "note": "Resigned in January 1991: a new part-time university staff job made him ineligible under the ASG constitution. He had been ASG president in 1989-90.",
       "src": {
        "label": "Herald 66:33, 17 Jan 1991, \"Two Associated Student Government Officers Step Down\"",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7730"
       }
      },
      {
-      "office": "Officer (title not specified in the archive)",
+      "office": "Public Relations Vice President",
       "name": "Van Hodge",
-      "note": "Stepped down as an ASG officer in January 1991, reported in the same Herald issue as Amos Gott's resignation.",
+      "note": "Resigned in January 1991, citing his workload. Karl Miller was picked to fill the office two weeks later.",
       "src": {
        "label": "Herald 66:33, 17 Jan 1991, \"Two Associated Student Government Officers Step Down\"",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7730"
@@ -10449,14 +10449,14 @@
    "org": "Student Government Association",
    "leaders": [
     {
-     "name": "Amanda Lich",
+     "name": "Amanda Coates",
      "plaque_term": "1999-2000",
      "role": "president",
-     "year_confidence": "stated",
-     "name_verified": false,
+     "year_confidence": "corrected",
+     "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Every contemporaneous 1999-2000 source found - the Herald's election and reflection coverage, the SGA's own website, and the organization's 2001 list of former presidents - gives her name as Amanda J. Coates or Amanda Coates, never Lich. A WKU employee working today in the university's Philanthropy & Alumni Engagement office in Bowling Green goes by Amanda Coates Lich; the combined surname is consistent with Coates being a maiden name and Lich a married name, but no source found ties that person directly to the 1999-2000 SGA presidency. The plaque's \"Lich\" is flagged here, not confirmed. The portrait on this page is captioned Amanda Coates in the Herald of 25 April 2000, in a profile of the sitting Student Government Association president; it is published here as the verified holder of the office, not as confirmation of the plaque's surname. SGA's own list of past presidents, captured in 2001, records the holder of this office as \"Amanda J. Coates\" of Brownsville, marked as student regent. The office and the year are therefore confirmed; the plaque's surname is not, and no source found states that Coates and Lich are the same person.",
+     "note": "The plaque reads \"Amanda Lich\". No contemporaneous source uses that surname. The Herald has Amanda Coates winning the presidency in a recount on 15 April 1999, covers her as president through the autumn, and ran her year-end reflection as president on 25 April 2000; Resolution 00-2-S is authored by Amanda J. Coates. This site follows the sources and names her Coates. The two names are taken to be one person because the office and the year match exactly, which is the same pattern as Janet \"Nicki\" Seay and Nicki Taylor in 2014-15; no source found states the connection outright.",
      "sources": [
       {
        "label": "WKU SGA, Presidents 1966-Present (archived 2001)",
@@ -10481,6 +10481,14 @@
       {
        "label": "SGA Records: Bill 99-10-F, 15 Sep 1999",
        "url": "https://digitalcommons.wku.edu/context/sga/article/2214/viewcontent/sga_bill_99_10_f.pdf"
+      },
+      {
+       "label": "Herald, 25 Apr 2000 - Amanda Coates Reflects on Year as President",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
+      },
+      {
+       "label": "WKU SGA site, Resolution 00-2-S (archived 2000)",
+       "url": "https://web.archive.org/web/*/wku.edu/Dept/Org/Student/SGA/*"
       }
      ],
      "profile": [
@@ -10808,8 +10816,8 @@
      },
      {
       "office": "Vice President of Finance",
-      "name": "Joe Matheis",
-      "note": "Defeated Ryan Morrison 700-688 after surviving a judicial council review over campaign fliers.",
+      "name": "Ryan Morrison",
+      "note": "The 15 April 1999 result gave the office to Joe Matheis, 700-688, but the Judicial Council voided that race over Matheis's election code violations and Morrison won the re-run on 26 April 1999, 346-99.",
       "src": {
        "label": "Herald 74:51, 15 Apr 1999",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8052/",
