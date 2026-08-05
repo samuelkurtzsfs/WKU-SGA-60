@@ -5403,8 +5403,8 @@ PROGRAMS_CSS = """
 .pg p{margin:0;max-width:var(--measure)}
 .pg .money{margin:7px 0 0;font-size:.87rem;color:var(--ink2);
  border-left:2px solid var(--red);padding-left:11px}
-.pg .cite{font-size:.83rem;color:var(--ink3);margin-top:8px}
-.pg .cite a{margin-right:14px}
+.pg .cite{font-size:.83rem;color:var(--ink3);margin-top:8px;line-height:1.5}
+.pg .cite a{margin-right:14px;overflow-wrap:anywhere}
 .pg[hidden]{display:none}
 .pgnone{color:var(--ink3);font-size:.9rem;margin:14px 0 0}
 """
