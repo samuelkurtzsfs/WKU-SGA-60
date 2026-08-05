@@ -17926,7 +17926,7 @@
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "From Glasgow. Sworn in as student regent 2 August 2019. His term ran into the March 2020 campus shutdown.",
+     "note": "From Glasgow. Sworn in as student regent 2 August 2019. His term ran into the March 2020 campus shutdown. His term ran past its normal end. SGA voted on 20 April 2020 to postpone the spring election to the autumn because the campus had closed for COVID-19, and Harris stayed in office under that postponement: he was still president when the senate met for the first time since April on 15 September 2020, and gave the election update at the meeting of 22 September. Garrett Edmonds was elected on 29 September and took over in October. The extension is not a second term and Harris is counted once, for 2019-20.",
      "sources": [
       {
        "label": "WKU News - regents swear in student regent",
@@ -17943,6 +17943,14 @@
       {
        "label": "Herald, 3 Mar 2020",
        "url": "https://wkuherald.com/16002/news/sga-to-attend-rally-for-higher-education/"
+      },
+      {
+       "label": "Herald, 16 Sep 2020 - SGA holds first meeting since April",
+       "url": "https://wkuherald.com/14391/life/sga-holds-first-meeting-since-april/"
+      },
+      {
+       "label": "Herald, 22 Sep 2020 - Hammock project, elections discussed at second SGA meeting",
+       "url": "https://wkuherald.com/14126/news/hammock-project-elections-discussed-at-second-sga-meeting-of-the-year/"
       }
      ],
      "profile": [
@@ -17995,15 +18003,6 @@
      "src": {
       "label": "Herald, 11 Mar 2020",
       "url": "https://wkuherald.com/16498/news/wku-extending-spring-break-switching-classes-to-alternative-delivery-format-amid-coronavirus-concerns/"
-     }
-    },
-    {
-     "date": "2020-04-20",
-     "title": "Spring elections postponed until fall as SGA moves to Zoom",
-     "body": "With campus closed by COVID-19, SGA postponed its spring elections until at least September so voting could happen in person, and added an \"emergency clause\" constitutional amendment allowing cabinet terms to be extended until the following election with judicial oversight. The cabinet continued meeting over Zoom every Tuesday. Harris said that after scholarships were awarded, the remainder of SGA's budget would be donated to the WKU Opportunity Fund and Emergency Relief Fund, and SGA gave its remaining food bank goods to the Office of Sustainability for redistribution.",
-     "src": {
-      "label": "Herald, 20 Apr 2020",
-      "url": "https://wkuherald.com/15736/news/sga-spring-elections-postponed-until-fall-committee-continues-meeting-over-zoom/"
      }
     },
     {
@@ -18079,15 +18078,6 @@
      }
     },
     {
-     "date": "2020-04-20",
-     "title": "SGA adds constitutional emergency clause and redirects remaining budget to relief funds",
-     "body": "Executive Vice President Garrett Edmonds said the postponement of spring elections came with an emergency clause amendment to the constitution allowing cabinet terms to be extended until the following election under judicial oversight. President Will Harris said that after scholarships were awarded the remainder of SGA's budget would go to the WKU Opportunity Fund and Emergency Relief Fund. SGA also donated its remaining food bank goods to the Office of Sustainability.",
-     "src": {
-      "label": "Herald, 20 Apr 2020",
-      "url": "https://wkuherald.com/15736/news/sga-spring-elections-postponed-until-fall-committee-continues-meeting-over-zoom/"
-     }
-    },
-    {
      "date": "2019-09-10",
      "title": "Greeks Go Green sustainability contest funded at $75",
      "body": "Bill 1-19-F allocated $75 from senate discretionary funding for prizes in Greeks Go Green, a competition between WKU's Greek organisations to run the most sustainable chapter house by logging environmentally friendly actions for points. The contest ran from 20 September 2019 through April, with winners announced at the Greek Week convocation. The bill passed its second reading on 10 September 2019.",
@@ -18143,6 +18133,15 @@
       "label": "Herald, 4 Mar 2020",
       "url": "https://wkuherald.com/16420/news/sga-hammocks-project-begins-planning-phase-following-passing-vote/"
      }
+    },
+    {
+     "date": "2020-04-20",
+     "title": "Elections postponed, and a clause written to keep the officers in place",
+     "body": "With the campus closed by COVID-19, SGA postponed its spring elections until at least September so that voting could happen in person, and passed an emergency clause amending the constitution to let cabinet terms run on until the following election under judicial oversight. Executive vice president Garrett Edmonds explained the amendment. President Will Harris said that once scholarships were awarded the remainder of SGA's budget would go to the WKU Opportunity Fund and the Emergency Relief Fund, and the organisation gave what was left in its food bank to the Office of Sustainability to redistribute. The cabinet kept meeting over Zoom every Tuesday. The clause is why the year that followed had no handover in the spring: Harris stayed in office through the summer and was still president when the senate met for the first time since April on 15 September, and Edmonds was not elected to succeed him until 29 September.",
+     "src": {
+      "label": "Herald, 20 Apr 2020 - SGA spring elections postponed until fall",
+      "url": "https://wkuherald.com/15736/news/sga-spring-elections-postponed-until-fall-committee-donates-remaining-budget/"
+     }
     }
    ],
    "status": "researched"
@@ -18154,30 +18153,6 @@
    "org": "Student Government Association",
    "leaders": [
     {
-     "name": "Will Harris",
-     "plaque_term": "",
-     "role": "president",
-     "year_confidence": "confirmed",
-     "name_verified": true,
-     "missing_from_plaque": true,
-     "current": false,
-     "note": "Carried over into 2020-21. SGA voted on 20 April 2020 to postpone its spring election because of the COVID-19 shutdown, so the 2019-20 president stayed in office into the autumn. Harris was still president at the senate's first two meetings of the year, on 15 and 22 September 2020, and gave the election update at the second. The delayed election was decided at the end of September and Garrett Edmonds took over from the start of October. The plaque gives 2020-21 to Edmonds alone. Whether Harris still held the Board seat during those weeks is not established here.",
-     "sources": [
-      {
-       "label": "Herald, 16 Sep 2020 - SGA holds first meeting since April",
-       "url": "https://wkuherald.com/14391/life/sga-holds-first-meeting-since-april/"
-      },
-      {
-       "label": "Herald, 22 Sep 2020 - Hammock project, elections discussed at second SGA meeting",
-       "url": "https://wkuherald.com/14126/news/hammock-project-elections-discussed-at-second-sga-meeting-of-the-year/"
-      }
-     ],
-     "profile": [
-      "Will Harris was president of SGA for the first weeks of 2020-21 as well as for 2019-20. SGA voted on 20 April 2020 to postpone its spring election because the campus had shut down for COVID-19, and the sitting president stayed in office until it could be held. He was still president when the senate met for the first time since April on 15 September 2020, and gave the election update at the meeting of 22 September.",
-      "The delayed election was decided at the end of September and Garrett Edmonds, who beat MJ Mayo, took over at the start of October. No plate records the overlap."
-     ]
-    },
-    {
      "name": "J. Garrett Edmonds",
      "plaque_term": "2020-21",
      "role": "president",
@@ -18185,7 +18160,7 @@
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "The COVID year. Almost certainly the most unusual term in the organisation's history and worth a dedicated oral history.",
+     "note": "The COVID year. Almost certainly the most unusual term in the organisation's history and worth a dedicated oral history. Took office in October 2020 rather than at the usual spring handover: SGA had voted on 20 April 2020 to postpone its election to the autumn because of the COVID-19 shutdown, so his predecessor stayed in the chair until the delayed vote was decided on 29 September.",
      "sources": [
       {
        "label": "Herald, 31 Mar 2021",
