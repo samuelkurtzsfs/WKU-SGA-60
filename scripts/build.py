@@ -372,7 +372,12 @@ BOARD_CSS = """
  font-variant-numeric:tabular-nums;letter-spacing:.01em}
 .plate .nm{display:block;font-family:var(--display);font-weight:650;font-size:.92rem;
  line-height:1.25;margin-top:6px}
-.plate .nm.two{font-size:.82rem}
+.plate{position:relative}
+.plate .num{position:absolute;top:9px;right:10px;font-family:var(--mono);font-size:11px;
+ font-variant-numeric:tabular-nums;color:var(--ink3);letter-spacing:.02em}
+.plate:hover .num,.plate:focus-visible .num{color:var(--red)}
+.plate .yr{padding-right:26px}
+.plate .ro{display:block;font-size:11px;color:var(--ink3);margin-top:3px;line-height:1.3}
 .plate .ct{display:block;font-size:11px;color:var(--ink3);margin-top:7px;
  font-variant-numeric:tabular-nums}
 .plate .q{display:block;font-size:11px;color:var(--red);margin-top:3px}
@@ -1106,15 +1111,39 @@ def render_index(ys, n_leg, n_herald):
     def unconfirmed(y):
         return any(not l.get("name_verified") for l in y["leaders"])
 
-    counts = {"all": len(ys),
-              "disputed": sum(1 for y in ys if disputed(y)),
-              "corrected": sum(1 for y in ys if corrected(y)),
-              "unconfirmed": sum(1 for y in ys if unconfirmed(y)),
-              "regent": sum(1 for y in ys
-                            if any(l["role"] == "regent" for l in y["leaders"]))}
+    leaders_all = [(y, l) for y in ys for l in y["leaders"]]
+    counts = {
+        "all": len(leaders_all),
+        "disputed": sum(1 for _, l in leaders_all
+                        if l["role"] == "unresolved"
+                        or l.get("year_confidence") == "ambiguous"),
+        "corrected": sum(1 for _, l in leaders_all
+                         if l.get("year_confidence") == "corrected"),
+        "unconfirmed": sum(1 for _, l in leaders_all if not l.get("name_verified")),
+        "regent": sum(1 for _, l in leaders_all if l["role"] == "regent"),
+        "acting": sum(1 for _, l in leaders_all if l.get("acting")),
+    }
     for lo, hi, *_ in DECADES:
-        counts[f"d{lo}"] = sum(1 for y in ys if lo <= y["start"] <= hi)
+        counts[f"d{lo}"] = sum(1 for y, _ in leaders_all if lo <= y["start"] <= hi)
 
+    # One plate to a person, the way the wall does it, rather than one to a year.
+    # A year in which the presidency changed hands puts two or three names on the
+    # board, each with its own number in the line.
+    def leader_tags(l, y, lo):
+        t = [f"d{lo}"]
+        if l["role"] == "unresolved" or l.get("year_confidence") == "ambiguous":
+            t.append("disputed")
+        if l.get("year_confidence") == "corrected":
+            t.append("corrected")
+        if not l.get("name_verified"):
+            t.append("unconfirmed")
+        if l["role"] == "regent":
+            t.append("regent")
+        if l.get("acting"):
+            t.append("acting")
+        return t
+
+    all_plates = []
     groups = []
     for lo, hi, label, short, stem in DECADES:
         block = [y for y in ys if lo <= y["start"] <= hi]
@@ -1122,44 +1151,47 @@ def render_index(ys, n_leg, n_herald):
             continue
         plates = []
         for y in block:
-            names = [l["name"] for l in y["leaders"]]
-            cls = ["plate"]
-            if any(l.get("current") for l in y["leaders"]):
-                cls.append("now")
-            tags = [f"d{lo}"]
-            if disputed(y):
-                tags.append("disputed")
-            if corrected(y):
-                tags.append("corrected")
-            if unconfirmed(y):
-                tags.append("unconfirmed")
-            if any(l["role"] == "regent" for l in y["leaders"]):
-                tags.append("regent")
-            flag = ""
-            if disputed(y):
-                flag = '<span class="q">a name here is unsettled</span>'
-            elif corrected(y):
-                flag = '<span class="q">corrected against the plaque</span>'
             n = len(y["events"])
-            plates.append(
-                f'<a class="{" ".join(cls)}" href="y/{h(y["id"])}.html" '
-                f'data-tags="{" ".join(tags)}" data-y="{h(y["id"])}">'
-                f'<span class="yr">{h(y["id"])}</span>'
-                f'<span class="nm{" two" if len(names) > 1 else ""}">'
-                + (" &middot; ".join(
-                    f'{h(l["name"])}<span class="ro">{h(role_word(l, y))}</span>'
-                    for l in y["leaders"])
-                   if len(names) > 1 else h(names[0])) + '</span>'
-                f'<span class="ct">{n} entries</span>{flag}</a>')
+            for l in y["leaders"]:
+                pid = f'{y["id"]}--{slug(l["name"])}'
+                cls = ["plate"]
+                if l.get("current"):
+                    cls.append("now")
+                tags = leader_tags(l, y, lo)
+                flag = ""
+                if "disputed" in tags:
+                    flag = '<span class="q">unsettled</span>'
+                elif "corrected" in tags:
+                    flag = '<span class="q">corrected against the plaque</span>'
+                num = ORDINAL["president"].get(l["name"])
+                what = "president"
+                if not num:
+                    num = ORDINAL["regent"].get(l["name"])
+                    what = "student regent"
+                badge = ""
+                if num:
+                    badge = (f'<span class="num" title="the {nth(num)} {what} of the '
+                             f'Student Government Association">{num}</span>')
+                all_plates.append((pid, y, l))
+                plates.append(
+                    f'<a class="{" ".join(cls)}" href="y/{h(y["id"])}.html#{slug(l["name"])}" '
+                    f'data-tags="{" ".join(tags)}" data-y="{h(pid)}">'
+                    f'{badge}<span class="yr">{h(y["id"])}</span>'
+                    f'<span class="nm">{h(l["name"])}</span>'
+                    f'<span class="ro">{h(role_word(l, y))}</span>'
+                    f'<span class="ct">{n} entries</span>{flag}</a>')
         ev = sum(len(y["events"]) for y in block)
         groups.append(
             f'<section class="decade" data-dec="d{lo}"><div class="dechead">'
-            f'<h2>{h(label)}</h2><span class="c">{len(block)} years, {ev} entries</span></div>'
+            f'<h2>{h(label)}</h2><span class="c">{len(block)} years, {len(plates)} names, '
+            f'{ev} entries</span></div>'
             f'<div class="grid">{"".join(plates)}</div></section>')
 
-    facets = [("all", "All years")]
+    facets = [("all", "All names")]
     if counts["regent"]:
-        facets.append(("regent", "Offices held by two people"))
+        facets.append(("regent", "Student regents"))
+    if counts["acting"]:
+        facets.append(("acting", "Acting"))
     for lo, hi, label, short, stem in DECADES:
         facets.append((f"d{lo}", short))
     for key, label in (("corrected", "Corrected"), ("disputed", "Unsettled"),
@@ -1174,11 +1206,14 @@ def render_index(ys, n_leg, n_herald):
     # carried here; the complete timeline searches the full text.
     idx = {}
     for y in ys:
-        parts = [y["id"]] + [l["name"] for l in y["leaders"]]
+        shared = [y["id"]]
         for e in y["events"]:
-            parts.append(fmt_date(e["date"])[0])
-            parts.append(e["title"])
-        idx[y["id"]] = " ".join(parts).lower()
+            shared.append(fmt_date(e["date"])[0])
+            shared.append(e["title"])
+        for l in y["leaders"]:
+            n = ORDINAL["president"].get(l["name"]) or ORDINAL["regent"].get(l["name"])
+            own = [l["name"], role_word(l, y)] + ([str(n), nth(n)] if n else [])
+            idx[f'{y["id"]}--{slug(l["name"])}'] = " ".join(shared + own).lower()
     payload = json.dumps(idx, ensure_ascii=False, separators=(",", ":"))
 
     starts = "".join(
@@ -1238,9 +1273,16 @@ def render_index(ys, n_leg, n_herald):
  <div class="board" id="board">__GROUPS__</div>
 
  <div class="legend">
-  <p>Each plate carries the year, the names on it, and how many sourced entries that year has
-  so far. A year with three entries is a year the archive has not given up much of yet, not a
-  year in which little happened.</p>
+  <p>One plate to a person, the way the wall does it. A year in which the presidency changed
+  hands therefore carries two or three plates, which is the whole point: the wall gives each
+  year a single name and the people who finished somebody else's term disappear. The number in
+  the corner is their place in the line, counting people rather than years: the line of
+  presidents, or for the six who held the Board seat but never the presidency, the line of
+  student regents. One plate has no number, because the archive cannot yet say which office
+  that name held. They are gathered on the <a href="irregular.html">irregular terms page</a>.</p>
+  <p>Each plate also carries the year and how many sourced entries that year has so far. A
+  year with three entries is a year the archive has not given up much of yet, not a year in
+  which little happened.</p>
   <p>A plate marked <b>unsettled</b> holds a name the record cannot yet place. A plate marked
   <b>corrected</b> holds a name this site has moved from the year the plaque gives it.
   The current year is outlined in red.</p>
@@ -1270,10 +1312,10 @@ function apply(){
  decs.forEach(function(d){
   d.classList.toggle('hidden',!d.querySelector('.plate:not(.hidden)'));
  });
- var word=n===1?'year':'years';
+ var word=n===1?'name':'names';
  if(s)readout.textContent=n+' '+word+' match \\u201c'+qi.value.trim()+'\\u201d.';
  else if(facet!=='all')readout.textContent='Showing '+n+' '+word+' of '+plates.length+'.';
- else readout.textContent='Showing all '+plates.length+' years.';
+ else readout.textContent='Showing all '+plates.length+' names.';
  var p=new URLSearchParams(location.search);
  if(s)p.set('q',qi.value.trim());else p.delete('q');
  if(facet!=='all')p.set('in',facet);else p.delete('in');
@@ -5760,6 +5802,14 @@ IRREGULAR_CSS = """
 .plist li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
 .plist li a:hover{color:var(--red);border-color:var(--red)}
 .plist li span{display:block;font-size:.82rem;color:var(--ink3)}
+.roll{margin:12px 0 0;padding:0 0 0 3.1rem;columns:2;column-gap:38px;font-size:.93rem}
+@media(max-width:700px){.roll{columns:1}}
+.roll li{margin:0 0 8px;break-inside:avoid;padding-left:4px}
+.roll li::marker{font-family:var(--mono);font-size:.8rem;color:var(--ink3)}
+.roll li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.roll li a:hover{color:var(--red);border-color:var(--red)}
+.roll li b{color:var(--red);font-weight:600;margin-left:4px;cursor:help}
+.roll li span{display:block;font-size:.8rem;color:var(--ink3);font-variant-numeric:tabular-nums}
 """
 
 # The four handovers, written out because there are four of them and each is a
@@ -5883,6 +5933,28 @@ def render_irregular(ys):
 
     n_pres = len({l["name"] for y in ys for l in y["leaders"] if l["role"] == "president"})
 
+    # the whole line, first term first, with the irregular ones marked
+    odd_years = {yid for yid, _ in handovers}
+    seen_p = {}
+    roll_items = []
+    for y in ys:
+        for l in y["leaders"]:
+            if l["role"] != "president" or l["name"] in seen_p:
+                continue
+            seen_p[l["name"]] = True
+            terms = [z["id"] for z in ys
+                     for m in z["leaders"] if m["name"] == l["name"] and m["role"] == "president"]
+            odd = y["id"] in odd_years or l.get("acting")
+            note = " and ".join(terms)
+            if l.get("acting"):
+                note += ", acting"
+            star = ('<b title="term began or ended out of the ordinary">*</b>'
+                    if odd else '')
+            roll_items.append(
+                f'<li><a href="y/{h(y["id"])}.html#{slug(l["name"])}">{h(l["name"])}</a>'
+                f'{star}<span>{h(note)}</span></li>')
+    roll = "".join(roll_items)
+
     body = f"""
 <header class="head"><div class="wrap">
  <p class="kicker">The terms that did not run to the pattern</p>
@@ -5941,6 +6013,12 @@ presidents, which is also why a changed surname has to be checked before anyone 
 <h2 class="sec">Still unsettled</h2>
 <p class="secnote">A name on the wall the archive cannot place in an office.</p>
 {plist(unresolved) if unresolved else '<p class="prose">Nothing outstanding.</p>'}
+
+<h2 class="sec">Every president, in order<span class="n">{n_pres}</span></h2>
+<p class="secnote">The whole line, counting people rather than years. Somebody who served
+twice is counted once, at their first term. An asterisk marks the terms this page is about:
+the ones that began or ended somewhere other than the usual spring handover.</p>
+<ol class="roll">{roll}</ol>
 
 <div class="prose" style="margin-top:34px">
 <p>Where a name here differs from the plaque, the difference and the evidence that settled it
