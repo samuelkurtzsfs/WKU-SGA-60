@@ -1150,6 +1150,7 @@ START_HERE = [
 def render_index(ys, n_leg, n_herald):
     n_ev = sum(len(y["events"]) for y in ys)
     n_lead = sum(len(y["leaders"]) for y in ys)
+    n_people = len({l["name"] for y in ys for l in y["leaders"]})
     n_src = sum(len(year_sources(y)) for y in ys)
 
     def disputed(y):
@@ -1400,7 +1401,7 @@ apply();
         f"All {len(ys)} academic years have a page, {ys[0]['id']} to {ys[-1]['id']}: sixty "
         f"years of student government, plus the year now running. {n_ev} entries are sourced to the "
         f"<cite>Herald</cite>, the WKU Timeline, SGA's own papers or the university archive; "
-        f"{n_lead} presidents and student regents are recorded, {n_leg} pieces of legislation "
+        f"{n_people} people are recorded as president or student regent, {n_leg} pieces of legislation "
         f"are held as files, and {n_herald} further <cite>Herald</cite> index lines are "
         f"listed on the timeline. What is still unsettled is set out on the "
         f'<a href="corrections.html">corrections page</a>.')
@@ -2148,6 +2149,7 @@ def render_sources(ys, leg, herald, n_docs, n_port, n_gal):
     total = rep["_total"] or 1
     vols = herald_volumes(ys)
     n_lead = sum(len(y["leaders"]) for y in ys)
+    n_people = len({l["name"] for y in ys for l in y["leaders"]})
     n_hx = sum(len(e["lines"]) for e in herald
                if academic_year(e["date"]) in {y["id"] for y in ys})
     leg_years = {e["session"] for e in leg}
@@ -2284,7 +2286,7 @@ def render_sources(ys, leg, herald, n_docs, n_port, n_gal):
         [("What it holds", "Officer portraits and organisation pages, named in the caption"),
          ("Period it covers", _span(rep, "talisman")),
          ("Weight here", _weight(rep, "talisman", total)),
-         ("Portraits on this site", f"{n_port} of {n_lead} recorded leaders have a "
+         ("Portraits on this site", f"{n_port} of {n_lead} recorded terms have a "
                                     f"portrait; {n_gal} further year photographs")],
         '<p>The yearbook is the best answer to the question of what these people looked '
         'like, and often the only place an executive council is listed office by office. '
@@ -3449,9 +3451,11 @@ def render_story(ys):
 def render_about(ys, meta, n_leg, n_herald, n_docs, n_port, n_gal):
     n_ev = sum(len(y["events"]) for y in ys)
     n_lead = sum(len(y["leaders"]) for y in ys)
+    n_people = len({l["name"] for y in ys for l in y["leaders"]})
     n_prog = sum(1 for y in ys for e in y["events"] if is_program(e))
     n_pres = len(ORDINAL["president"])
     n_reg = len(ORDINAL["regent"])
+    n_regonly = len(set(ORDINAL["regent"]) - set(ORDINAL["president"]))
     n_pterm = sum(1 for y in ys for l in y["leaders"] if l["role"] == "president")
     thick = sorted(ys, key=lambda y: -len(y["events"]))[:1][0]
     body = f"""
@@ -3512,8 +3516,11 @@ though the attempt has been made more than once.</p>
 <h2 class="sec">Scope and content</h2>
 <div class="prose">
 <p>The archive holds one page for each of the {len(ys)} academic years from {h(ys[0]["id"])} to
-{h(ys[-1]["id"])}, {n_ev} dated entries, and {n_lead} presidents and student regents with
-their terms as far as the record supports them. Sixty years of student government come to
+{h(ys[-1]["id"])}, {n_ev} dated entries, and {n_people} people who have been president or student
+regent, with their terms as far as the record supports them. Those {n_people} are {n_pres} who
+were president, {n_regonly} who held the seat on the Board of Regents and never the presidency,
+and one name the archive cannot yet place in either office. They are counted once each, however
+many years they served, which is why the figure is smaller than the {n_lead} terms on record. Sixty years of student government come to
 {len(ys)} academic years, which looks like an error and is not: the constitution was ratified
 in April 1966, so {h(ys[0]["id"])} is the first year and {h(ys[-2]["id"])} the sixtieth, the
 anniversary year. The {nth(len(ys))}, {h(ys[-1]["id"])}, is the one running now, and it is the
