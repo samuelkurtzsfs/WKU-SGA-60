@@ -1372,7 +1372,8 @@ if(params.get('in')){facet=params.get('in');
 apply();
 </script>"""
     counts_line = (
-        f"All {len(ys)} academic years have a page. {n_ev} entries are sourced to the "
+        f"All {len(ys)} academic years have a page, {ys[0]['id']} to {ys[-1]['id']}: sixty "
+        f"years of student government, plus the year now running. {n_ev} entries are sourced to the "
         f"<cite>Herald</cite>, the WKU Timeline, SGA's own papers or the university archive; "
         f"{n_lead} presidents and student regents are recorded, {n_leg} pieces of legislation "
         f"are held as files, and {n_herald} further <cite>Herald</cite> index lines are "
@@ -3307,7 +3308,10 @@ though the attempt has been made more than once.</p>
 <div class="prose">
 <p>The archive holds one page for each of the {len(ys)} academic years from {h(ys[0]["id"])} to
 {h(ys[-1]["id"])}, {n_ev} dated entries, and {n_lead} presidents and student regents with
-their terms as far as the record supports them. {n_pres} people have been student body
+their terms as far as the record supports them. Sixty years of student government come to
+{len(ys)} academic years, which looks like an error and is not: the constitution was ratified
+in April 1966, so {h(ys[0]["id"])} is the first year and {h(ys[-2]["id"])} the sixtieth, the
+anniversary year. The {nth(len(ys))}, {h(ys[-1]["id"])}, is the one running now. {n_pres} people have been student body
 president, holding {n_pterm} terms between them, and {n_reg} people have held the student
 seat on the Board of Regents since it was created in April 1968; each of them is given their
 number in the line on their year page. The two counts differ because for most of the last
