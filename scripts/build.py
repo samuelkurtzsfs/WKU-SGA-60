@@ -6547,12 +6547,49 @@ LEG_CITE = re.compile(r"\b(Bill|Resolution)\s+([0-9]{1,4}[-\u2013][0-9]{1,3}(?:[
                       re.I)
 
 
+AUTHORSHIP = []
+
+
+def load_authorship():
+    """Who wrote what, read off the legislation itself.
+
+    373 of the 390 bills and resolutions in this archive print an AUTHOR line.
+    That is the document saying so in its own words, which beats any inference
+    from an entry that happens to mention two things at once."""
+    AUTHORSHIP.clear()
+    p = ROOT / "data" / "legislation-authors.json"
+    if p.exists():
+        AUTHORSHIP.extend(json.loads(p.read_text()))
+
+
+def authored_by(person, leg):
+    """Legislation this person is named on, from the documents themselves."""
+    import unicodedata
+
+    def fold(x):
+        return unicodedata.normalize("NFKD", x).encode("ascii", "ignore").decode().lower()
+
+    want = {fold(x) for x in person["spellings"] | {person["name"]}}
+    byfile = {e["file"]: e for e in leg}
+    out, seen = [], set()
+    for row in AUTHORSHIP:
+        if fold(row["name"]) not in want:
+            continue
+        k = (row["file"], row["role"])
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append((row, byfile.get(row["file"])))
+    out.sort(key=lambda t: (t[0].get("session") or "", t[0].get("title") or ""))
+    return out
+
+
 def legislation_for(entries, leg):
     """Bills and resolutions the record names in the same breath as a person.
 
-    The link comes from the archive's own entries, which say who wrote and
-    sponsored what, not from the legislation files, which do not carry authors.
-    A citation that matches a file on disk becomes a link to it."""
+    A weaker signal than the AUTHOR line on the document, kept because it catches
+    legislation somebody carried, spoke to or was reported on without being named
+    as its author."""
     def key(t):
         return re.sub(r"[^a-z0-9]", "", str(t).lower())
     index = {}
@@ -6696,6 +6733,23 @@ def render_officer(person, ys, leg=()):
                        f'made, written or run the thing, in the archive\'s own words.</p>'
                        f'<ul class="leglist">{"".join(crows)}</ul>')
 
+    wrote = authored_by(person, leg)
+    wroteblock = ""
+    if wrote:
+        rws = "".join(
+            f'<li><b>{h((row.get("title") or row["file"]))}</b>'
+            + (f' &middot; {ext("../legislation/" + h(item["file"]), "read it")}'
+               if item and item.get("file") else "")
+            + f'<span class="s">{h(row.get("session") or "")} &middot; '
+              f'named as {h(row["role"])} on the document</span></li>'
+            for row, item in wrote)
+        wroteblock = (f'<h2 class="sec">Legislation they are named on'
+                      f'<span class="n">{len(wrote)}</span></h2>'
+                      f'<p class="secnote">Taken from the AUTHOR and SPONSOR lines printed on '
+                      f'the bills and resolutions themselves, which this archive holds as '
+                      f'files. This is the document saying so, not an inference.</p>'
+                      f'<ul class="leglist">{rws}</ul>')
+
     cites = legislation_for(ment, leg)
     legblock = ""
     if cites:
@@ -6739,6 +6793,8 @@ the full name, never on a surname alone, because a surname on its own catches ot
 sometimes catches buildings.</p>
 <div class="mentions">{"".join(mrows) if mrows
     else '<p class="prose">No entry in the archive names them beyond the offices above.</p>'}</div>
+
+{wroteblock}
 
 {legblock}
 
@@ -6864,6 +6920,7 @@ def main():
     meta = raw.get("_meta", {})
     apply_photo_overlay(ys)
     load_aliases()          # before anything renders a name, or links miss their page
+    load_authorship()
     index_anchors(ys)
     index_offices(ys)
     gaps = seat_gaps(ys)
