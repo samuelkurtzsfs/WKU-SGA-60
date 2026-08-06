@@ -3311,7 +3311,11 @@ though the attempt has been made more than once.</p>
 their terms as far as the record supports them. Sixty years of student government come to
 {len(ys)} academic years, which looks like an error and is not: the constitution was ratified
 in April 1966, so {h(ys[0]["id"])} is the first year and {h(ys[-2]["id"])} the sixtieth, the
-anniversary year. The {nth(len(ys))}, {h(ys[-1]["id"])}, is the one running now. {n_pres} people have been student body
+anniversary year. The {nth(len(ys))}, {h(ys[-1]["id"])}, is the one running now, and it is the
+one in which the sixtieth anniversary is being marked: sixty calendar years from the spring of
+1966 fall in the spring of 2026, at the end of the sixtieth academic year, and the occasion is
+being kept the following autumn. So the archive covers sixty years of student government across
+sixty-one academic years, and is published in the sixty-first. {n_pres} people have been student body
 president, holding {n_pterm} terms between them, and {n_reg} people have held the student
 seat on the Board of Regents since it was created in April 1968; each of them is given their
 number in the line on their year page. The two counts differ because for most of the last
