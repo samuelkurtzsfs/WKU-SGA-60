@@ -387,6 +387,14 @@ BOARD_CSS = """
 .plate.now{border-color:var(--red);box-shadow:inset 0 0 0 1px var(--red)}
 .plate.hidden{display:none}
 .decade.hidden{display:none}
+.numkey{display:flex;flex-wrap:wrap;gap:8px 28px;margin:20px 0 12px;padding:12px 14px;
+ background:var(--paper2);font-size:.87rem;color:var(--ink2)}
+.numkey .sw{display:flex;align-items:baseline;gap:8px}
+.numkey .num{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums;
+ font-weight:600}
+.numkey .num.pres{color:var(--red)}
+.numkey .num.reg{color:var(--ink)}
+.numkey .kred{color:var(--red)}
 .legend .kred{color:var(--red)}
 .legend{margin:18px 0 0;font-size:.85rem;color:var(--ink3);max-width:44rem}
 .legend p{margin:0 0 .5em}
@@ -649,6 +657,13 @@ def role_word(l, y=None):
     if y is not None and held_both(l, y):
         return "president and student regent"
     return "president"
+
+
+def role_title(l, y=None):
+    """The office as a name rather than a description, for the board plates."""
+    w = role_word(l, y)
+    w = w.replace("student regent", "Student Regent").replace("president", "President")
+    return w[:1].upper() + w[1:]
 
 
 def confidence_line(l, yid):
@@ -1194,7 +1209,7 @@ def render_index(ys, n_leg, n_herald):
                     f'data-tags="{" ".join(tags)}" data-y="{h(pid)}">'
                     f'{badge}<span class="yr">{h(y["id"])}</span>'
                     f'<span class="nm">{h(l["name"])}</span>'
-                    f'<span class="ro">{h(role_word(l, y))}</span>'
+                    f'<span class="ro">{h(role_title(l, y))}</span>'
                     f'<span class="ct">{n} entries</span>{flag}</a>')
         ev = sum(len(y["events"]) for y in block)
         groups.append(
@@ -1285,6 +1300,11 @@ def render_index(ys, n_leg, n_herald):
   <div class="facets" role="group" aria-label="Filter the years">__FACETS__</div>
   <p class="readout" id="readout" role="status"></p>
  </div>
+
+ <p class="numkey"><span class="sw"><b class="num pres">58</b> the number in
+ <b class="kred">red</b> is which President of student government they are</span>
+ <span class="sw"><b class="num reg">55</b> the number in <b>black</b> is which Student
+ Regent they are</span></p>
 
  <div class="board" id="board">__GROUPS__</div>
 
