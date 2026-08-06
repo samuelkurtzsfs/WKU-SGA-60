@@ -444,6 +444,7 @@ def name_searches(name):
 # ---------------------------------------------------------------- shell
 NAV_ITEMS = [("index.html", "The board"), ("story.html", "The story"),
              ("patterns.html", "Patterns"), ("events.html", "What SGA put on"),
+             ("irregular.html", "Irregular terms"),
              ("history.html", "Timeline"),
              ("legislation.html", "Legislation"), ("corrections.html", "Corrections"),
              ("sources.html", "Sources"), ("about.html", "About and method")]
@@ -3267,7 +3268,8 @@ for a week held it, and is counted and named here with everyone else.</p>
 to each year, and so does every later list, including the history page on the university's own
 site. A list written afterwards cannot show a year in which the presidency changed hands, so the
 people who finished those years quietly drop out of the count. Each of them is on this site,
-whether or not any plate carries their name.</p>
+whether or not any plate carries their name, and they are gathered on the
+<a href="irregular.html">irregular terms page</a>.</p>
 <p>A person is counted once, at the first time they held the office, however many terms they serve
 afterwards. Two plates are not two presidents when the surname changed in between, which has
 happened at least four times here.</p>
@@ -5732,6 +5734,229 @@ years when student government put nothing on.</p>
                  PROGRAMS_CSS, depth=0, current="events.html")
 
 
+# ---------------------------------------------------------------- irregular terms
+IRREGULAR_CSS = """
+.hand{border-top:1px solid var(--line);padding:26px 0 4px}
+.hand h3{font-size:1.12rem;margin:0 0 3px;letter-spacing:-.015em}
+.hand .yr{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--red);margin:0 0 9px}
+.hand p{margin:0 0 10px;max-width:var(--measure)}
+.baton{display:grid;grid-template-columns:1fr auto 1fr;gap:0 18px;align-items:stretch;
+ margin:14px 0 4px;max-width:38rem}
+@media(max-width:640px){.baton{grid-template-columns:1fr;gap:10px}}
+.baton .who{background:var(--paper2);padding:12px 14px;border-top:2px solid var(--black)}
+.baton .who.in{border-top-color:var(--red)}
+.baton .lab{display:block;font-family:var(--ui);font-size:10.5px;font-weight:600;
+ letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:4px}
+.baton .who b{display:block;font-size:1rem;font-weight:600;letter-spacing:-.01em}
+.baton .who b a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.baton .who b a:hover{color:var(--red);border-color:var(--red)}
+.baton .who span.d{display:block;font-size:.83rem;color:var(--ink2);margin-top:3px}
+.baton .arrow{align-self:center;color:var(--red);font-size:1.3rem;line-height:1}
+@media(max-width:640px){.baton .arrow{display:none}}
+.plist{list-style:none;padding:0;margin:10px 0 0;
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px 30px}
+.plist li{font-size:.93rem;line-height:1.4;break-inside:avoid}
+.plist li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.plist li a:hover{color:var(--red);border-color:var(--red)}
+.plist li span{display:block;font-size:.82rem;color:var(--ink3)}
+"""
+
+# The four handovers, written out because there are four of them and each is a
+# different kind of ending. Keyed by year and checked against the record at build
+# time, so a case that leaves the data cannot leave a paragraph behind.
+HANDOVERS = {
+    "1981-82": (
+        "The first mid-year handover in the record",
+        "Marcel Bush resigned the presidency on 14 January 1982, in the same week the "
+        "Herald ran a retrospective in which he listed the autumn's higher-education "
+        "rally among his achievements. David Payne, his administrative vice president, "
+        "took over for the balance of the year; the Board of Regents minutes of 30 "
+        "January name Payne the new president. The Board seat did not travel with the "
+        "office. Bush had held it, Payne did not, and it went instead to a campus-wide "
+        "special election in February, which Sandra Norfleet won for a term the Herald "
+        "measured at two months."),
+    "2004-05": (
+        "A resignation, a summer with an acting president, and a second election",
+        "Nick Todd was elected in March 2004 and sworn in on 27 April, days after the "
+        "judicial council found $611 missing from an SGA dining account. He resigned "
+        "that July, citing personal conflicts within the association, after the "
+        "university's internal auditor reported more than $800 of questionable "
+        "purchases and recommended he repay them. His executive vice president, Katie "
+        "Dawson, filled the office through the summer. Patti Johnson, the previous "
+        "year's executive vice president, was the only student to come forward and won "
+        "the special election of 14 and 15 September, saying she ran because of the "
+        "turmoil within the organisation. Three people held the presidency in twelve "
+        "months, and the plaque records one."),
+    "2006-07": (
+        "A resignation read into the minutes, and a seat left empty",
+        "SGA's senate minutes for 28 November 2006 record Rob Watkins's resignation as "
+        "president and student regent being read to the chamber, with senators told "
+        "that Jeanne Johnson would be sworn in at the Winter Banquet on 5 December. The "
+        "minutes of that meeting list the executive vice presidency as vacant because "
+        "she had moved up. The Board seat did not pass with the presidency and Western "
+        "went about two months without a student on its governing board: Johnson spoke "
+        "against a tuition increase at the January meeting without a vote, then won the "
+        "seat in a special election the following week."),
+    "2008-09": (
+        "A president who resigned, and a successor who did not take the seat",
+        "Johnathon Boles resigned on 30 January 2009 for health reasons. Kayla Shelton, "
+        "his executive vice president, became president but not student regent, so the "
+        "seat stood empty for 26 days until Reagan Gilley won a special election on 25 "
+        "and 26 February, beating Nate Eaton 477 to 224. It is the clearest case in the "
+        "record of the two offices coming apart, and the year carries three names."),
+}
+
+
+def _leader_link(name, yid, extra=""):
+    return (f'<b><a href="y/{h(yid)}.html#{slug(name)}">{h(name)}</a></b>'
+            + (f'<span class="d">{extra}</span>' if extra else ""))
+
+
+def render_irregular(ys):
+    """The presidents the plaque's one-name-per-year format cannot show."""
+    by_year = {y["id"]: y for y in ys}
+
+    # who left early, and who finished, taken from the order of names in a year
+    handovers = []
+    for y in ys:
+        pres = [l for l in y["leaders"] if l["role"] == "president"]
+        if len(pres) > 1:
+            handovers.append((y["id"], pres))
+
+    hblocks = []
+    for yid, pres in handovers:
+        head, body = HANDOVERS.get(
+            yid, (f"The presidency changed hands during {yid}",
+                  "The record carries more than one president for this year."))
+        cells = []
+        for i, l in enumerate(pres):
+            role = ("Elected, left early" if i == 0 else
+                    ("Filled the office" if l.get("acting") else "Finished the year"))
+            cells.append(f'<div class="who{"" if i == 0 else " in"}">'
+                         f'<span class="lab">{role}</span>'
+                         f'{_leader_link(l["name"], yid, role_word(l, by_year[yid]))}</div>')
+        baton = '<div class="arrow">&rarr;</div>'.join(cells)
+        hblocks.append(
+            f'<article class="hand"><p class="yr">{h(yid)}</p><h3>{h(head)}</h3>'
+            f'<p>{h(body)}</p><div class="baton">{baton}</div></article>')
+
+    def plist(items):
+        return ('<ul class="plist">'
+                + "".join(f'<li><a href="y/{h(yid)}.html#{slug(n)}">{h(n)}</a>'
+                          f'<span>{h(note)}</span></li>' for n, yid, note in items)
+                + "</ul>")
+
+    # people the wall does not carry, setting aside the year still running
+    plated = {l["name"] for y in ys for l in y["leaders"]
+              if not l.get("missing_from_plaque")}
+    noplate = []
+    for y in ys:
+        for l in y["leaders"]:
+            if not l.get("missing_from_plaque") or l.get("current") or y["id"] == ys[-1]["id"]:
+                continue
+            if l["role"] == "regent":
+                why = "held the Board seat, no plate anywhere on the wall"
+            elif l["name"] in plated:
+                why = f"no plate for {y['id']}; plated only for the later term"
+            else:
+                why = "no plate anywhere on the wall"
+            noplate.append((l["name"], y["id"], why))
+
+    twice = {}
+    for y in ys:
+        for l in y["leaders"]:
+            if l["role"] == "president":
+                twice.setdefault(l["name"], []).append(y["id"])
+    twice = [(n, v[0], "served " + " and ".join(v)) for n, v in twice.items() if len(v) > 1]
+
+    regents = {}
+    for y in ys:
+        for l in y["leaders"]:
+            if l["role"] == "regent":
+                regents.setdefault(l["name"], []).append(y["id"])
+    regents = [(n, v[0], "held the Board seat " + " and ".join(v) + ", never the presidency")
+               for n, v in regents.items()]
+
+    unresolved = [(l["name"], y["id"], "office not established")
+                  for y in ys for l in y["leaders"] if l["role"] == "unresolved"]
+
+    n_pres = len({l["name"] for y in ys for l in y["leaders"] if l["role"] == "president"})
+
+    body = f"""
+<header class="head"><div class="wrap">
+ <p class="kicker">The terms that did not run to the pattern</p>
+ <h1>Irregular terms</h1>
+ <p class="scope">Student government elects a president in April and that person serves the
+ following academic year. Most of the {n_pres} people who have held the office did exactly
+ that. This page is for the ones who did not: the four who left before their year was out,
+ the people who finished those years in their place, the one who filled the office without
+ ever being elected to it, and the term a pandemic stretched by five months.</p>
+ <p class="scope">They are gathered here because the ordinary record cannot hold them. The
+ plaque in the SGA Chambers gives one name to each year, and so does every list written
+ afterwards, including the university's own. A format like that cannot show a year in which
+ the presidency changed hands, so the people who finished those years drop quietly out of
+ the count. This archive counts them. Anyone who held the office held it, and a week counts
+ as much as a year.</p>
+</div></header>
+
+<div class="wrap"><div class="body">
+
+<h2 class="sec">The handovers<span class="n">{len(hblocks)}</span></h2>
+<p class="secnote">Four times in sixty years a president has left before the year ended.
+Each time somebody finished it.</p>
+{"".join(hblocks)}
+
+<h2 class="sec">Filled the office without being elected to it</h2>
+<p class="secnote">One person in the record held the presidency without ever having won it.</p>
+{plist([(l["name"], y["id"], "acting president, " + y["id"])
+        for y in ys for l in y["leaders"] if l.get("acting")])}
+
+<h2 class="sec">A term the pandemic extended</h2>
+<div class="prose">
+<p>SGA voted on 20 April 2020 to postpone its spring election because the campus had closed
+for COVID-19, and passed an emergency clause letting cabinet terms run on until the next
+election under judicial oversight. Will Harris stayed in office through the summer and was
+still president when the senate met for the first time since April on 15 September. Garrett
+Edmonds was not elected to succeed him until 29 September and took office in October. It is
+the only year in the record with no spring handover, and it is an extension rather than a
+second term, so Harris is counted once.</p>
+</div>
+
+<h2 class="sec">No plate on the wall<span class="n">{len(noplate)}</span></h2>
+<p class="secnote">Held the office, or the Board seat, and the Chambers wall does not say so.
+Two of them appear on it only for a later term they went on to win in their own right.</p>
+{plist(noplate)}
+
+<h2 class="sec">Held the seat but never the presidency<span class="n">{len(regents)}</span></h2>
+<p class="secnote">The student seat on the Board of Regents was separately elected from 1968.
+In most years the president held it too, but not in these.</p>
+{plist(regents)}
+
+<h2 class="sec">Two terms<span class="n">{len(twice)}</span></h2>
+<p class="secnote">Counted once each, at the first term. Two plates for one person is not two
+presidents, which is also why a changed surname has to be checked before anyone is added.</p>
+{plist(twice)}
+
+<h2 class="sec">Still unsettled</h2>
+<p class="secnote">A name on the wall the archive cannot place in an office.</p>
+{plist(unresolved) if unresolved else '<p class="prose">Nothing outstanding.</p>'}
+
+<div class="prose" style="margin-top:34px">
+<p>Where a name here differs from the plaque, the difference and the evidence that settled it
+are on the <a href="corrections.html">corrections page</a>. How the count is kept, and what
+makes somebody a president for the purposes of this archive, is set out
+<a href="about.html">on the about page</a>.</p>
+</div>
+
+</div></div>"""
+    desc = (f"The WKU student body presidents whose terms did not run to the pattern: the four "
+            f"who resigned mid-year, the people who finished those years, the acting president, "
+            f"and the term extended by COVID-19.")
+    return shell("Irregular terms · SGA 60", desc, body, IRREGULAR_CSS,
+                 depth=0, current="irregular.html")
+
+
 def apply_photo_overlay(ys):
     """Merge data/photos.json onto the years. Photographs live in their own file so
     the photograph agent and the decade agents never edit the same file."""
@@ -5801,6 +6026,7 @@ def main():
     (SITE / "story.html").write_text(repair_anchors(render_story(ys)))
     (SITE / "patterns.html").write_text(repair_anchors(render_patterns(ys)))
     (SITE / "events.html").write_text(repair_anchors(render_programs(ys)))
+    (SITE / "irregular.html").write_text(repair_anchors(render_irregular(ys)))
     (SITE / "legislation.html").write_text(render_legislation(leg))
     (SITE / "corrections.html").write_text(repair_anchors(render_corrections(ys)))
 
