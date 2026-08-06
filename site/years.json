@@ -14776,7 +14776,7 @@
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Confirmed: president-elect Nick Todd resigned in July 2004 amid a dining-funds investigation; Johnson, the sitting executive vice president, ran unopposed in the September 2004 special election and was sworn in Sept. 23, matching the plaque year. A Board of Regents resolution read into the 22 Jul 2005 minutes confirms she served as the board's student member from August 2004 to July 2005, when Katie Dawson was sworn in to replace her.",
+     "note": "Confirmed: president-elect Nick Todd resigned in July 2004 amid a dining-funds investigation; Johnson, who had been executive vice president the year before, ran unopposed in the September 2004 special election and was sworn in Sept. 23, matching the plaque year. A Board of Regents resolution read into the 22 Jul 2005 minutes confirms she served as the board's student member from August 2004 to July 2005, when Katie Dawson was sworn in to replace her.",
      "sources": [
       {
        "label": "Herald - president-elect under investigation",
@@ -14807,22 +14807,12 @@
       "Patti Johnson, a senior from Marion, had been active in SGA for over three years and served on committees including public relations and athletics before becoming executive vice president in 2003-04. Nick Todd, the vice president of finance, was elected president for 2004-05 in March 2004, but before the new officers were sworn in on April 27, SGA's judicial council fielded an allegation that $611 was missing from the SGA Dining Dollars account, an account that had started the year with $5,000. Senator Josh Collins drafted articles of impeachment against Todd's vice presidency, but the judicial council ruled a two-week impeachment process could not finish before he left that office anyway. Johnson had not planned to run for president herself, but after Todd's resignation that July she entered the September 2004 special election as the only candidate to show interest, saying she stayed on because of \"the turmoil within the organization\" and that she knew \"what it takes to get the job done.\"",
       "Johnson ran unopposed for president and student regent in the Sept. 14-15 online election, the group having been without an elected president since July. She said she was disappointed that students would not \"really get to make a decision,\" but still planned light campaigning, and she wanted to continue reviewing the plus/minus grading proposal and to make faculty evaluations available to students.",
       "Johnson received 1,291 votes in the two-day uncontested election and was sworn in as president at SGA's fall reception on Sept. 23, 2004, one week after her election. She said committees had been formed and members had begun proposing legislation, and she looked forward to being sworn in as student regent at the Oct. 29 Board of Regents meeting, declaring it was \"back to business.\" She served through the year until Katie Dawson was elected to succeed her in the March 2005 spring election.",
-      "Johnson served as the Board of Regents' student member from August 2004 to July 2005, a term confirmed by the resolution of appreciation the board read into its July 22, 2005 minutes when Katie Dawson, the executive vice president who had served alongside her all year, was sworn in to replace her. Dawson had come up through the cabinet as Todd's running mate in the original March 2004 election and had acted as interim president during the summer vacancy before Johnson's win.",
-      "Patti Johnson, a senior from Marion, had been active in SGA for over three years and served on committees including public relations and athletics before becoming executive vice president in 2003-04. She had not planned to run for president, but after Nick Todd's resignation she entered the September 2004 special election as the only candidate to show interest, saying she stayed on because of \"the turmoil within the organization\" and that she knew \"what it takes to get the job done.\""
+      "Johnson served as the Board of Regents' student member from August 2004 to July 2005, a term confirmed by the resolution of appreciation the board read into its July 22, 2005 minutes when Katie Dawson, the executive vice president who had served alongside her all year, was sworn in to replace her. Dawson had come up through the cabinet as Todd's running mate in the original March 2004 election and had acted as interim president during the summer vacancy before Johnson's win."
      ],
      "also_regent": true
     }
    ],
    "events": [
-    {
-     "date": "2004-08-24",
-     "title": "SGA president Nick Todd resigned amid funds investigation",
-     "body": "Nick Todd, elected SGA president in March with 772 of 1,232 votes cast, submitted his resignation in July, citing personal conflicts within the association. The former vice president of finance had come under investigation in April for the misuse of more than $600 in an SGA Dining Dollars account. Executive Vice President Katie Dawson acted as president until a new election set for Sept. 14-15.",
-     "src": {
-      "label": "Herald, 24 Aug 2004",
-      "url": "https://wkuherald.com/55173/news/todd-cites-personal-conflicts-in-resignation/"
-     }
-    },
     {
      "date": "2004-08-26",
      "title": "Internal audit recommended Todd repay SGA money",
@@ -14912,15 +14902,6 @@
      "src": {
       "label": "Herald, 20 Apr 2004 - \"SGA President-Elect Under Investigation\" (Wayback)",
       "url": "https://web.archive.org/web/20210730065202/https://wkuherald.com/55298/news/sga-president-elect-under-investigation/"
-     }
-    },
-    {
-     "date": "2004-08-24",
-     "title": "Todd resigns presidency citing conflicts within SGA",
-     "body": "Nick Todd, a Henderson senior, submitted his resignation as SGA president in July, citing personal conflicts within the association. The former vice president of finance had come under investigation in April.",
-     "src": {
-      "label": "Herald, 24 Aug 2004",
-      "url": "https://wkuherald.com/55173/news/todd-cites-personal-conflicts-in-resignation/"
      }
     },
     {
@@ -15040,6 +15021,15 @@
      "src": {
       "label": "Herald, 21 Apr 2005 - \"SGA spends money left in budget\" (Wayback)",
       "url": "https://web.archive.org/web/20050524153247/http://www.wkuherald.com/media/paper603/news/2005/04/21/News/Sga-Spends.Money.Left.In.Budget-932829.shtml"
+     }
+    },
+    {
+     "date": "2004-07-01",
+     "title": "Nick Todd resigns the presidency",
+     "body": "Nick Todd, a Henderson senior elected in March with 772 of the 1,232 votes cast, submitted his resignation as SGA president in July 2004, citing personal conflicts within the association. The former vice president of finance had come under investigation in April over the misuse of more than $600 from an SGA Dining Dollars account. Executive vice president Katie Dawson acted as president until a new election, set for 14 and 15 September. The Herald reported the resignation when students returned, on 24 August.",
+     "src": {
+      "label": "Herald, 24 Aug 2004 - Todd cites personal conflicts in resignation",
+      "url": "https://wkuherald.com/55173/news/todd-cites-personal-conflicts-in-resignation/"
      }
     }
    ],
