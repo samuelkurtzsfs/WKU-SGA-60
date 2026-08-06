@@ -6428,6 +6428,9 @@ OFFICERS_CSS = """
 .whoindex li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
 .whoindex li a:hover{color:var(--red);border-color:var(--red)}
 .whoindex li span{display:block;font-size:.79rem;color:var(--ink3)}
+.leglist{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 30px}
+.leglist li{font-size:.92rem;line-height:1.4;break-inside:avoid}
+.leglist li .s{display:block;font-size:.79rem;color:var(--ink3)}
 .decadehead{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.1em;
  text-transform:uppercase;color:var(--red);margin:34px 0 0;padding-top:14px;
  border-top:1px solid var(--line)}
@@ -6512,7 +6515,68 @@ def officer_mentions(person, ys):
     return out
 
 
-def render_officer(person, ys):
+LEG_CITE = re.compile(r"\b(Bill|Resolution)\s+([0-9]{1,4}[-\u2013][0-9]{1,3}(?:[-\u2013][A-Za-z])?)",
+                      re.I)
+
+
+def legislation_for(entries, leg):
+    """Bills and resolutions the record names in the same breath as a person.
+
+    The link comes from the archive's own entries, which say who wrote and
+    sponsored what, not from the legislation files, which do not carry authors.
+    A citation that matches a file on disk becomes a link to it."""
+    def key(t):
+        return re.sub(r"[^a-z0-9]", "", str(t).lower())
+    index = {}
+    for item in leg:
+        m = LEG_CITE.search(item.get("title", ""))
+        if m:
+            index.setdefault(key(m.group(2)), item)
+    out, seen = [], set()
+    for y, e in entries:
+        for m in LEG_CITE.finditer(e["title"] + " " + e["body"]):
+            cite = f"{m.group(1).title()} {m.group(2)}"
+            if cite.lower() in seen:
+                continue
+            seen.add(cite.lower())
+            out.append((cite, index.get(key(m.group(2))), y["id"]))
+    return out
+
+
+CREDIT_VERB = (r"(?:created|founded|started|launched|organised|organized|hosted|written|"
+               r"authored|co-authored|wrote|introduced|set up|established|revived|brought back)")
+
+
+def credited_with(person, entries):
+    """Entries where the record attributes something to this person directly.
+
+    Only a verb bound to the name counts: "created and hosted by Donte Reed",
+    "written by Rush Robinson". A loose search for creation words near a name
+    returns things like "the government it created" and puts a concert on a
+    person's page, so it is not used."""
+    pats = []
+    for spelling in person["spellings"] | {person["name"]}:
+        parts = [x for x in unicodedata.normalize("NFKD", spelling)
+                 .encode("ascii", "ignore").decode().split()
+                 if x not in ("Jr.", "Jr", "II", "III", "IV")]
+        if len(parts) < 2:
+            continue
+        n = rf"{re.escape(parts[0])}\w*\s+(?:[A-Z][\w.'-]*\s+)?{re.escape(parts[-1])}"
+        pats.append(re.compile(rf"{CREDIT_VERB}\b(?:\s+and\s+\w+)?\s+by\s+[^.]{{0,45}}?{n}", re.I))
+        pats.append(re.compile(rf"\b{n}\b[^.]{{0,30}}?\b{CREDIT_VERB}\b", re.I))
+    out = []
+    for y, e in entries:
+        txt = unicodedata.normalize("NFKD", e["title"] + " " + e["body"]) \
+            .encode("ascii", "ignore").decode()
+        for q in pats:
+            m = q.search(txt)
+            if m:
+                out.append((y, e, " ".join(m.group(0).split())))
+                break
+    return out
+
+
+def render_officer(person, ys, leg=()):
     slug_ = slug(person["name"])
     terms = person["terms"]
     offices = []
@@ -6534,6 +6598,19 @@ def render_officer(person, ys):
             f'<div><b>{h(t["office"])}</b>{note}{cite}</div></div>')
 
     ment = officer_mentions(person, ys)
+    # Entries that are about this person come first: named in the headline, then
+    # named early in the body. No claim is made about importance beyond that,
+    # because the record does not carry one that can be read mechanically.
+    pats = [q for q in (name_pattern(x) for x in person["spellings"] | {person["name"]}) if q]
+
+    def prominence(pair):
+        _, e = pair
+        intitle = any(q.search(e["title"]) for q in pats)
+        pos = min((q.search(e["body"]).start() for q in pats if q.search(e["body"])),
+                  default=9999)
+        return (0 if intitle else 1, pos, e["date"])
+
+    ment.sort(key=prominence)
     seen_titles = set()
     mrows = []
     for y, e in ment:
@@ -6550,6 +6627,23 @@ def render_officer(person, ys):
             f'<div><h3>{h(e["title"])}</h3><p>{h(e["body"])}</p>'
             f'{money_line(e)}<p class="srcline">{"".join(cites)}</p></div></article>')
 
+    # what the shape of their service was, counted rather than characterised
+    yrs = sorted({t["year"] for t in terms})
+    n_years = len(yrs)
+    branch = ("the executive" if all(not t["senate"] for t in terms)
+              else "the senate and judiciary" if all(t["senate"] for t in terms)
+              else "both the executive and the senate")
+    starts = [int(v[:4]) for v in yrs]
+    unbroken = starts == list(range(starts[0], starts[0] + len(starts)))
+    glance = [f'{n_years} {"year" if n_years == 1 else "years"} in office',
+              f'{"consecutive, " if unbroken and n_years > 1 else ""}{h(span)}',
+              f'{len(terms)} {"post" if len(terms) == 1 else "posts"} on {branch}']
+    at_glance = ('<dl class="glance">'
+                 + "".join(f'<dt>{k}</dt><dd>{v}</dd>' for k, v in
+                           (("Service", glance[0]), ("Span", glance[1]),
+                            ("Offices", glance[2])))
+                 + '</dl>')
+
     spellings = ""
     others = sorted(s for s in person["spellings"] if s != person["name"])
     if others:
@@ -6557,6 +6651,39 @@ def render_officer(person, ys):
                      + ", ".join(f"<b>{h(s)}</b>" for s in others)
                      + ". The archive keeps each source's own spelling and treats them as "
                        "one person here.</p>")
+
+    credit = credited_with(person, ment)
+    creditblock = ""
+    if credit:
+        crows = []
+        for y, e, phrase in credit:
+            anch = year_anchors(y).get(id(e))
+            crows.append(
+                f'<li><a href="../y/{h(y["id"])}.html#{anch}">{h(e["title"])}</a>'
+                f'<span class="s">{h(y["id"])} &middot; the record says '
+                f'&#8220;{h(phrase)}&#8221;</span></li>')
+        creditblock = (f'<h2 class="sec">What the record credits them with'
+                       f'<span class="n">{len(credit)}</span></h2>'
+                       f'<p class="secnote">Entries in which this person is named as having '
+                       f'made, written or run the thing, in the archive\'s own words.</p>'
+                       f'<ul class="leglist">{"".join(crows)}</ul>')
+
+    cites = legislation_for(ment, leg)
+    legblock = ""
+    if cites:
+        rows_l = "".join(
+            f'<li><b>{h(c)}</b>'
+            + (f' &middot; {ext("../legislation/" + h(item["file"]), h(item["title"]))}'
+               if item and item.get("file") else "")
+            + f'<span class="s">named in the record for {h(yid)}</span></li>'
+            for c, item, yid in cites)
+        legblock = (f'<h2 class="sec">Legislation the record ties to them'
+                    f'<span class="n">{len(cites)}</span></h2>'
+                    f'<p class="secnote">Bills and resolutions named in the same entries as '
+                    f'this person. The link is the archive\'s own text, which says who wrote '
+                    f'and sponsored what; the legislation files themselves do not carry '
+                    f'authors. Where the archive holds the document, it is linked.</p>'
+                    f'<ul class="leglist">{rows_l}</ul>')
 
     lead = ""
     if person["president"]:
@@ -6569,11 +6696,14 @@ def render_officer(person, ys):
  <h1>{h(person["name"])}</h1>
  <p class="roles">{h(", ".join(offices))}.</p>
  {lead}{spellings}
+ {at_glance}
 </div></header>
 
 <div class="wrap"><div class="body">
 <h2 class="sec">Offices held<span class="n">{len(terms)}</span></h2>
 {"".join(rows)}
+
+{creditblock}
 
 <h2 class="sec">Where the record names them<span class="n">{len(mrows)}</span></h2>
 <p class="secnote">Entries elsewhere in this archive that name this person. They are matched on
@@ -6581,6 +6711,8 @@ the full name, never on a surname alone, because a surname on its own catches ot
 sometimes catches buildings.</p>
 <div class="mentions">{"".join(mrows) if mrows
     else '<p class="prose">No entry in the archive names them beyond the offices above.</p>'}</div>
+
+{legblock}
 
 <div class="prose" style="margin-top:34px">
 <p>Everyone recorded in office is listed on the <a href="../officers.html">officers page</a>.
@@ -6626,6 +6758,23 @@ def render_officers(ys, people):
  anywhere until now. The record is thinner for them, and uneven: it is fullest where SGA's own
  minutes survive, and thinnest in the years the minutes do not cover.</p>
 </div></header>
+
+<div class="wrap"><div class="gapnote" style="margin-top:26px">
+ <h3>The senators are not here yet, and should be</h3>
+ <p>This page holds the officers: the executive, the speakers and secretaries of the chamber,
+ and the justices. It does not hold the ordinary members of the Congress and the Senate, of
+ whom there have been thousands, and it should. Every one of them stood for election and
+ sat in the room where this was decided.</p>
+ <p>The reason is a limit in the sources this archive has read so far, not a judgement about
+ who matters. Its entries almost always report an election as a number rather than a list:
+ seventeen senators seated, twenty-three seats filled, 908 votes cast. Ten senators can be
+ recovered by name from entries that happen to name them, and no more. The roll itself is in
+ SGA's own meeting minutes, which record who attended week by week and run to some 830 items
+ between 1969 and 2008, and in the fall election results the <cite>Herald</cite> printed each
+ September. Both are reachable. Neither has been worked through for this purpose.</p>
+ <p>Until that is done, a senator who is not on this page is missing from a list, not from the
+ history.</p>
+</div></div>
 
 <div class="wrap"><div class="body">
 {"".join(secs)}
@@ -6719,7 +6868,7 @@ def main():
     for person in people.values():
         fn = f'{slug(person["name"])}.html'
         keep_o.add(fn)
-        (ODIR / fn).write_text(repair_anchors(render_officer(person, ys)))
+        (ODIR / fn).write_text(repair_anchors(render_officer(person, ys, leg)))
     for f in ODIR.glob("*.html"):
         if f.name not in keep_o:
             f.unlink()
