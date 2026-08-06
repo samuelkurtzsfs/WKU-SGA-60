@@ -373,10 +373,13 @@ BOARD_CSS = """
 .plate .nm{display:block;font-family:var(--display);font-weight:650;font-size:.92rem;
  line-height:1.25;margin-top:6px}
 .plate{position:relative}
-.plate .num{position:absolute;top:9px;right:10px;font-family:var(--mono);font-size:11px;
- font-variant-numeric:tabular-nums;color:var(--ink3);letter-spacing:.02em}
+.plate .nums{position:absolute;top:8px;right:10px;display:flex;gap:5px;align-items:baseline}
+.plate .num{font-family:var(--mono);font-size:11.5px;font-variant-numeric:tabular-nums;
+ letter-spacing:.02em;font-weight:600}
+.plate .num.pres{color:var(--red)}
+.plate .num.reg{color:var(--ink);font-weight:500}
 .plate:hover .num,.plate:focus-visible .num{color:var(--red)}
-.plate .yr{padding-right:26px}
+.plate .yr{padding-right:46px}
 .plate .ro{display:block;font-size:11px;color:var(--ink3);margin-top:3px;line-height:1.3}
 .plate .ct{display:block;font-size:11px;color:var(--ink3);margin-top:7px;
  font-variant-numeric:tabular-nums}
@@ -384,6 +387,7 @@ BOARD_CSS = """
 .plate.now{border-color:var(--red);box-shadow:inset 0 0 0 1px var(--red)}
 .plate.hidden{display:none}
 .decade.hidden{display:none}
+.legend .kred{color:var(--red)}
 .legend{margin:18px 0 0;font-size:.85rem;color:var(--ink3);max-width:44rem}
 .legend p{margin:0 0 .5em}
 .starthere{margin:56px 0 0;padding-top:16px;border-top:1px solid var(--line)}
@@ -482,6 +486,13 @@ wrong in places. Where the archive disagrees with it, this site follows the arch
 records the change on the <a href="{up}corrections.html">corrections page</a>. If you
 served, or you know that a year here is wrong, the project wants to hear from you through
 the Student Government Association office.</p></div>
+<div><h2>What it rests on</h2>
+<p>Everything here comes from what is publicly available online: the digitised
+<cite>Herald</cite> and SGA's own papers on TopSCHOLAR, the <cite>Talisman</cite> yearbooks,
+wkuherald.com, the university's news pages and the Wayback Machine. That is a fraction of
+what happened. Student government has met most weeks for sixty years, and the greater part
+of it was never written down, or was written down on paper that has never been scanned. A
+thin year here is a thin record, not a quiet one.</p></div>
 <div><h2>Reuse</h2><p>{RIGHTS}</p></div>
 </div>
 <p class="fine">Built {BUILT}. The whole record is readable as data:
@@ -1163,15 +1174,20 @@ def render_index(ys, n_leg, n_herald):
                     flag = '<span class="q">unsettled</span>'
                 elif "corrected" in tags:
                     flag = '<span class="q">corrected against the plaque</span>'
-                num = ORDINAL["president"].get(l["name"])
-                what = "president"
-                if not num:
-                    num = ORDINAL["regent"].get(l["name"])
-                    what = "student regent"
-                badge = ""
-                if num:
-                    badge = (f'<span class="num" title="the {nth(num)} {what} of the '
-                             f'Student Government Association">{num}</span>')
+                # Two separate lines of succession, shown as two numbers rather than
+                # one: red for the president's place in the line of presidents, black
+                # for their place in the line of student regents. Most people after
+                # 1968 held both offices and so carry both numbers.
+                pnum = ORDINAL["president"].get(l["name"])
+                rnum = ORDINAL["regent"].get(l["name"])
+                nums = []
+                if pnum:
+                    nums.append(f'<span class="num pres" title="the {nth(pnum)} president '
+                                f'of student government at Western">{pnum}</span>')
+                if rnum:
+                    nums.append(f'<span class="num reg" title="the {nth(rnum)} student '
+                                f'regent on the WKU Board of Regents">{rnum}</span>')
+                badge = f'<span class="nums">{"".join(nums)}</span>' if nums else ""
                 all_plates.append((pid, y, l))
                 plates.append(
                     f'<a class="{" ".join(cls)}" href="y/{h(y["id"])}.html#{slug(l["name"])}" '
@@ -1275,11 +1291,14 @@ def render_index(ys, n_leg, n_herald):
  <div class="legend">
   <p>One plate to a person, the way the wall does it. A year in which the presidency changed
   hands therefore carries two or three plates, which is the whole point: the wall gives each
-  year a single name and the people who finished somebody else's term disappear. The number in
-  the corner is their place in the line, counting people rather than years: the line of
-  presidents, or for the six who held the Board seat but never the presidency, the line of
-  student regents. One plate has no number, because the archive cannot yet say which office
-  that name held. They are gathered on the <a href="irregular.html">irregular terms page</a>.</p>
+  year a single name and the people who finished somebody else's term disappear. The corner
+  carries two numbers, because there are two offices and two lines of succession. The
+  <b class="kred">red</b> number is their place in the line of presidents, counting people
+  rather than years, so the fifty-eighth plate is the fifty-eighth person to hold the office.
+  The <b>black</b> number is their place in the line of student regents, the seat on the
+  Board of Regents that has existed since April 1968. Most people since then held both and
+  carry both numbers; a few held only one. One plate has no number at all, because the
+  archive cannot yet say which office that name held. They are gathered on the <a href="irregular.html">irregular terms page</a>.</p>
   <p>Each plate also carries the year and how many sourced entries that year has so far. A
   year with three entries is a year the archive has not given up much of yet, not a year in
   which little happened.</p>
@@ -3345,6 +3364,15 @@ the university has taken down.</p>
 search it and where it fails is set out in full on the
 <a href="sources.html">sources page</a>, together with the volume-to-year map for
 <cite>Herald</cite> citations and the rules this project works by.</p>
+<p>Every one of them is a public source available online, and that is the boundary of this
+archive. Nothing here comes from a filing cabinet, a private paper, or anyone's memory. To
+be on this site a thing had to happen and then be written down somewhere that has since
+been scanned and published. Most of what student government has done in sixty years does
+not clear that bar. The organisation has met most weeks since 1966; the record holds a few
+thousand entries. What is missing is not the quiet part of the history, it is simply the
+part that was never digitised, and a year that looks thin here is a thin record rather than
+an uneventful year. Anyone who served, or was there, knows things this site cannot, and the
+project would rather be told than go on guessing.</p>
 </div>
 
 <h2 class="sec">How an entry gets on the site</h2>
@@ -5762,6 +5790,17 @@ def render_programs(ys):
  twice: it is the same record, sorted by what kind of thing it was. Where a source is
  an advance notice rather than a review, the entry says so, because the archive can
  prove what was booked more often than it can prove how the night went.</p>
+ <p class="tlkey"><b>This is not everything SGA put on. It is not close.</b> To reach this
+ page a thing had to survive twice: it had to happen, and somebody had to write it down
+ somewhere that has since been digitised and put online. What that leaves is the
+ <cite>Herald</cite> back file, the <cite>Talisman</cite> yearbooks, SGA's own legislation
+ and minutes on TopSCHOLAR, wkuherald.com from about 2003, the university news pages and
+ the Wayback Machine. Everything on this page came from those. Student government has been
+ running events most weeks for sixty years, and the great majority of them left no trace
+ that a search can reach: no notice in the paper, or a notice in an issue nobody has
+ scanned, or a flyer on a board, or a night that was simply remembered. If you were at
+ something that is not here, it is missing from the record rather than from the history,
+ and the project would like to hear about it.</p>
 </div>
 <div class="body">
 {"".join(secs)}
