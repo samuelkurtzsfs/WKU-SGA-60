@@ -6747,22 +6747,46 @@ How the organisation was arranged in each period is set out under
                  depth=1, current="officers.html")
 
 
+SEAT_WORDS = re.compile(r"senator|representative|congressman|congresswoman|member", re.I)
+
+
 def render_officers(ys, people):
-    by_decade = {}
-    for p in people.values():
-        start = int(p["terms"][0]["year"][:4])
-        by_decade.setdefault(start // 10 * 10, []).append(p)
-    secs = []
-    for dec in sorted(by_decade):
-        rows = sorted(by_decade[dec], key=lambda p: p["name"].split()[-1].lower())
-        lis = "".join(
-            f'<li><a href="o/{slug(p["name"])}.html">{h(p["name"])}</a>'
-            f'<span>{h(p["terms"][0]["office"])}'
-            + (f', {h(p["terms"][0]["year"])}' if len(p["terms"]) == 1
-               else f', {h(p["terms"][0]["year"])} to {h(p["terms"][-1]["year"])}')
-            + '</span></li>' for p in rows)
-        secs.append(f'<p class="decadehead">First took office in the {dec}s'
-                    f' &middot; {len(rows)}</p><ul class="whoindex">{lis}</ul>')
+    """Two lists, because they are two different things and one of them may run
+    to thousands. Officers held a named post; members sat in the chamber."""
+    def is_member(p):
+        return all(SEAT_WORDS.search(t["office"] or "") for t in p["terms"])
+
+    officers = [p for p in people.values() if not is_member(p)]
+    members = [p for p in people.values() if is_member(p)]
+
+    def block(group, heading, note):
+        if not group:
+            return ""
+        by_decade = {}
+        for p in group:
+            by_decade.setdefault(int(p["terms"][0]["year"][:4]) // 10 * 10, []).append(p)
+        secs = []
+        for dec in sorted(by_decade):
+            rows = sorted(by_decade[dec], key=lambda p: p["name"].split()[-1].lower())
+            lis = "".join(
+                f'<li><a href="o/{slug(p["name"])}.html">{h(p["name"])}</a>'
+                f'<span>{h(p["terms"][0]["office"])}'
+                + (f', {h(p["terms"][0]["year"])}' if len(p["terms"]) == 1
+                   else f', {h(p["terms"][0]["year"])} to {h(p["terms"][-1]["year"])}')
+                + '</span></li>' for p in rows)
+            secs.append(f'<p class="decadehead">{dec}s &middot; {len(rows)}</p>'
+                        f'<ul class="whoindex">{lis}</ul>')
+        return (f'<h2 class="sec">{h(heading)}<span class="n">{len(group)}</span></h2>'
+                f'<p class="secnote">{note}</p>{"".join(secs)}')
+
+    secs = [block(officers, "The officers",
+                  "Everyone who held a named post: the executive, the speakers and "
+                  "secretaries of the chamber, and the justices. Grouped by the decade "
+                  "they first took office."),
+            block(members, "The chamber",
+                  "Everyone the record shows holding a seat in the Congress or the Senate "
+                  "without a named office. Most of them appear once, which is the whole "
+                  "point: they stood, they were elected, and they sat in the room.")]
 
     n_terms = sum(len(p["terms"]) for p in people.values())
     body = f"""
