@@ -462,6 +462,7 @@ def name_searches(name):
 NAV_ITEMS = [("index.html", "The board"), ("story.html", "The story"),
              ("patterns.html", "Patterns"), ("events.html", "What SGA put on"),
              ("irregular.html", "Irregular terms"),
+             ("branches.html", "How it was built"),
              ("history.html", "Timeline"),
              ("legislation.html", "Legislation"), ("corrections.html", "Corrections"),
              ("sources.html", "Sources"), ("about.html", "About and method")]
@@ -6282,6 +6283,113 @@ makes somebody a president for the purposes of this archive, is set out
                  depth=0, current="irregular.html")
 
 
+# ---------------------------------------------------------------- the branches
+BRANCHES_CSS = """
+.branch{margin:0 0 10px}
+.branch>h2{font-size:1.3rem;margin:56px 0 2px;padding-top:16px;
+ border-top:2px solid var(--black);letter-spacing:-.02em}
+.branch>.yrs{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--red);margin:0 0 14px}
+.branch .sum p{max-width:var(--measure);margin:0 0 14px}
+.facts{margin:18px 0 0;border-top:1px solid var(--line)}
+.facts summary{cursor:pointer;padding:11px 0;font-family:var(--ui);font-size:12px;
+ font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.facts summary::marker{color:var(--red)}
+.facts summary:hover{color:var(--red)}
+.facts ol{margin:2px 0 16px;padding-left:1.4rem;font-size:.9rem;color:var(--ink2)}
+.facts li{margin:0 0 9px;max-width:var(--measure)}
+.facts li .s{display:block;font-size:.8rem;color:var(--ink3);margin-top:2px}
+.gapnote{background:var(--paper2);padding:16px 18px;margin:26px 0 0;
+ border-left:3px solid var(--red);max-width:var(--measure)}
+.gapnote h3{font-size:.95rem;margin:0 0 7px}
+.gapnote p{margin:0 0 9px;font-size:.92rem;color:var(--ink2)}
+.gapnote p:last-child{margin-bottom:0}
+"""
+
+
+def render_branches(ys):
+    """The legislature and the judiciary as institutions, era by era.
+
+    Only blocks whose claims were read back against their sources appear here.
+    Ten more were written and are held out of the site until they can be
+    checked, because every single one of the eight that was checked came back
+    needing correction."""
+    path = ROOT / ".research" / "branches-checked.json"
+    if not path.exists():
+        return None
+    blocks = json.loads(path.read_text())
+    held = 0
+    hp = ROOT / ".research" / "branches-unverified.json"
+    if hp.exists():
+        held = len(json.loads(hp.read_text()))
+
+    LABEL = {"legislative": "The legislature", "judicial": "The judiciary",
+             "governing": "The governing documents"}
+    secs = []
+    for b in blocks:
+        paras = "".join(f"<p>{h(t.strip())}</p>"
+                        for t in (b.get("summary") or "").split("\n") if t.strip())
+        facts = ""
+        rows = b.get("structure") or []
+        if rows:
+            lis = "".join(
+                f'<li>{h(f.get("fact", ""))}'
+                f'<span class="s">{src_link({"label": f.get("src_label", ""), "url": f.get("src_url", "")})}</span>'
+                f'</li>' for f in rows if f.get("fact"))
+            facts = (f'<details class="facts"><summary>The {len(rows)} facts this rests on'
+                     f'</summary><ol>{lis}</ol></details>')
+        secs.append(
+            f'<section class="branch" id="{h(b["block"]).lower()}">'
+            f'<h2>{h(LABEL.get(b["branch"], b["branch"]))}</h2>'
+            f'<p class="yrs">{h(b["years"])}</p>'
+            f'<div class="sum">{paras}</div>{facts}</section>')
+
+    n_leg = sum(1 for b in blocks if b["branch"] == "legislative")
+    n_jud = sum(1 for b in blocks if b["branch"] == "judicial")
+    body = f"""
+<header class="head"><div class="wrap">
+ <p class="kicker">The other two branches</p>
+ <h1>How it was built</h1>
+ <p class="scope">Student government at Western is not only its presidents. A legislature has
+ met since 1966, first as a Congress of class and club representatives and since 2004 as a
+ Senate of college and at-large seats, and a judicial body has ruled on impeachments,
+ elections and eligibility since the early 1970s. This page is the history of those two, as
+ institutions: how they were constituted, who sat in them, what they could actually do, and
+ how each was rebuilt when a new constitution arrived.</p>
+ <p class="scope">It covers {n_leg} periods of the legislature and {n_jud} of the judiciary.
+ Each account is followed by the facts it rests on, every one separately sourced, so a reader
+ can check it rather than take it.</p>
+</div></header>
+
+<div class="wrap"><div class="body">
+{"".join(secs)}
+
+<div class="gapnote">
+ <h3>What is missing here, and why</h3>
+ <p>{held} further accounts have been written and are not on this page. Every one of the
+ {len(blocks)} published here was read back against its sources by a second reader, and every
+ one came back needing correction before it could be published. The {held} held back were
+ written the same way but their checks did not run, and an unchecked account of this kind is
+ not worth reading. They cover the founding Congress of 1966 to 1970, the late eighties, the
+ 2010s Senate, four periods of the judiciary and the constitutions themselves.</p>
+ <p>They will appear when they have been checked. Nothing is being hidden: the work exists in
+ the project's research files, it simply has not earned a place on the site yet.</p>
+</div>
+
+<div class="prose" style="margin-top:34px">
+<p>The people who filled these offices are recorded year by year on the
+<a href="index.html">board</a>, and the legislation the Senate and the Congress passed is in
+the <a href="legislation.html">legislation archive</a>.</p>
+</div>
+
+</div></div>"""
+    desc = ("How WKU student government was built: the Congress and the Senate, and the "
+            "judicial body that ruled on impeachments, elections and eligibility, as "
+            "institutions rather than as a list of names.")
+    return shell("How it was built · SGA 60", desc, body, BRANCHES_CSS,
+                 depth=0, current="branches.html")
+
+
 def apply_photo_overlay(ys):
     """Merge data/photos.json onto the years. Photographs live in their own file so
     the photograph agent and the decade agents never edit the same file."""
@@ -6352,6 +6460,9 @@ def main():
     (SITE / "patterns.html").write_text(repair_anchors(render_patterns(ys)))
     (SITE / "events.html").write_text(repair_anchors(render_programs(ys)))
     (SITE / "irregular.html").write_text(repair_anchors(render_irregular(ys)))
+    _br = render_branches(ys)
+    if _br:
+        (SITE / "branches.html").write_text(repair_anchors(_br))
     (SITE / "legislation.html").write_text(render_legislation(leg))
     (SITE / "corrections.html").write_text(repair_anchors(render_corrections(ys)))
 
