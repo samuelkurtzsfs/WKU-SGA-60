@@ -829,6 +829,16 @@ def render_org(y):
         + (f'<p>Chair: {h(c["chair"])}</p>' if c.get("chair") else "")
         + (f'<p>{h(c["note"])}</p>' if c.get("note") else "")
         + '</span></div>' for c in committees)
+    members = sen.get("members") or []
+    if members:
+        lis = "".join(
+            f'<li><a href="../o/{slug(canonical(m["name"]))}.html">{h(m["name"])}</a>'
+            + (f'<span>{h(m["seat"])}</span>' if m.get("seat") else "")
+            + '</li>' for m in members)
+        sen_rows += (f'<div class="off"><span class="o">members</span><span>'
+                     f'<b>{len(members)} recorded</b>'
+                     f'<ul class="memberlist">{lis}</ul></span></div>')
+
     meta = ""
     if sen.get("size"):
         meta += f'<p class="meta">{h(sen["size"])} senators this year.</p>'
@@ -6431,6 +6441,12 @@ OFFICERS_CSS = """
 .leglist{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 30px}
 .leglist li{font-size:.92rem;line-height:1.4;break-inside:avoid}
 .leglist li .s{display:block;font-size:.79rem;color:var(--ink3)}
+.memberlist{list-style:none;margin:8px 0 0;padding:0;columns:2;column-gap:24px;font-size:.88rem}
+@media(max-width:640px){.memberlist{columns:1}}
+.memberlist li{break-inside:avoid;margin:0 0 5px;line-height:1.3}
+.memberlist li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.memberlist li a:hover{color:var(--red);border-color:var(--red)}
+.memberlist li span{display:block;font-size:.76rem;color:var(--ink3)}
 .decadehead{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.1em;
  text-transform:uppercase;color:var(--red);margin:34px 0 0;padding-top:14px;
  border-top:1px solid var(--line)}
@@ -6479,6 +6495,11 @@ def officer_index(ys):
         org = y.get("organization") or {}
         rows = [(o, False) for o in (org.get("executive") or [])]
         rows += [(o, True) for o in ((org.get("senate") or {}).get("officers") or [])]
+        # the rank and file get a page too; their office is the seat they held
+        for m in ((org.get("senate") or {}).get("members") or []):
+            rows.append(({"name": m.get("name"),
+                          "office": m.get("seat") or "Senator",
+                          "note": m.get("note"), "src": m.get("src")}, True))
         for o, is_sen in rows:
             if not o.get("name") or not o.get("office"):
                 continue
