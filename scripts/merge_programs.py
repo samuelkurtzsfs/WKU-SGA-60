@@ -62,8 +62,10 @@ def main(paths):
             if not date:
                 undated += 1
                 continue
-            kind = p.get("kind")
-            if kind not in KINDS:
+            # a kind is what makes an entry a programme; without one it is an
+            # ordinary event and still belongs in the year
+            kind = p.get("kind") or None
+            if kind is not None and kind not in KINDS:
                 badkind += 1
                 continue
             key = norm(p.get("title"))
@@ -74,8 +76,11 @@ def main(paths):
             if not src.get("url") or not src.get("label"):
                 skipped += 1
                 continue
-            ev = {"date": date, "title": p["title"].strip(), "body": p["body"].strip(),
-                  "kind": kind}
+            ev = {"date": date, "title": p["title"].strip(), "body": p["body"].strip()}
+            if kind:
+                ev["kind"] = kind
+            if p.get("campus"):
+                ev["campus"] = True
             if p.get("money"):
                 ev["money"] = p["money"].strip()
             ev["src"] = {"label": src["label"], "url": src["url"]}

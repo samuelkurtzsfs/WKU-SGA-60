@@ -173,6 +173,37 @@ def check_files(ys):
                 bad(f"{y['id']} {l['name']}: portrait {ph} is not a JPEG or PNG")
 
 
+def check_photos(ys):
+    """The photo overlay in data/photos.json is keyed by name and year, so
+    correcting a name or moving a term silently detaches the portrait. That has
+    happened, so it is checked: an entry naming somebody the archive no longer
+    has is almost always a rename nobody followed through."""
+    path = ROOT / "data" / "photos.json"
+    if not path.exists():
+        return
+    overlay = json.loads(path.read_text())
+    live = {(l["name"], y["id"]) for y in ys for l in y["leaders"]}
+    names = {l["name"] for y in ys for l in y["leaders"]}
+    photos = ROOT / "data" / "photos"
+    for e in overlay.get("leaders", []):
+        who, when = e.get("name"), e.get("year")
+        if e.get("file") and not (photos / e["file"]).exists():
+            bad(f"photos.json: image missing for {who}: {e['file']}")
+        if who not in names:
+            bad(f"photos.json names {who!r}, who is not in the archive. If a name "
+                f"was corrected, the overlay has to be corrected with it or the "
+                f"portrait detaches")
+        elif (who, when) not in live:
+            bad(f"photos.json puts {who!r} in {when}, where the archive does not "
+                f"have them; the portrait will not attach")
+    withpic = {(e.get("name"), e.get("year")) for e in overlay.get("leaders", [])}
+    missing = [f"{y['id']} {l['name']}" for y in ys for l in y["leaders"]
+               if (l["name"], y["id"]) not in withpic]
+    if missing:
+        note(f"{len(missing)} leaders have no portrait: " + ", ".join(missing[:8])
+             + (" ..." if len(missing) > 8 else ""))
+
+
 def check_counts(ys):
     n_ev = sum(len(y["events"]) for y in ys)
     pres = {l["name"] for y in ys for l in y["leaders"] if l["role"] == "president"}
@@ -190,7 +221,7 @@ def main(argv):
     data = json.loads((ROOT / "data" / "years.json").read_text())
     ys = data["years"]
     for fn in (check_years, check_events, check_leaders, check_seat,
-               check_files, check_counts):
+               check_files, check_photos, check_counts):
         fn(ys)
 
     if not quiet:

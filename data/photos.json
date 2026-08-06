@@ -145,15 +145,6 @@
    }
   },
   {
-   "year": "2014-15",
-   "name": "Janet \"Nicki\" Seay",
-   "file": "2014-15-nicki-seay.jpg",
-   "src": {
-    "label": "Herald, Aug 2014",
-    "url": "https://wkuherald.com/39702/news/students-attend-special-dsu-celebration/"
-   }
-  },
-  {
    "year": "2008-09",
    "name": "Johnathon Boles",
    "file": "2008-09-johnathon-boles.jpg",
@@ -281,7 +272,7 @@
   },
   {
    "year": "1979-80",
-   "name": "James Hargroave",
+   "name": "James Hargrove",
    "file": "1979-80-james-hargrove.jpg",
    "src": {
     "label": "1980 Talisman, p. 275",
@@ -452,7 +443,7 @@
   },
   {
    "year": "1999-00",
-   "name": "Amanda Lich",
+   "name": "Amanda Coates",
    "file": "1999-00-amanda-lich.jpg",
    "src": {
     "label": "Herald 75:55, 25 Apr 2000, p. 6",
@@ -497,7 +488,7 @@
   },
   {
    "year": "1981-82",
-   "name": "Marcell Bush",
+   "name": "Marcel Bush",
    "file": "1981-82-marcell-bush.jpg",
    "src": {
     "label": "Herald, 27 Aug 1981",
@@ -523,7 +514,7 @@
    }
   },
   {
-   "year": "1982-83",
+   "year": "1981-82",
    "name": "Sandra Norfleet",
    "file": "1982-83-sandra-norfleet.jpg",
    "src": {
@@ -560,7 +551,7 @@
   },
   {
    "year": "1976-77",
-   "name": "Christy Mollozzi",
+   "name": "Christy Vogt",
    "file": "1976-77-christy-vogt.jpg",
    "src": {
     "label": "1977 Talisman, p. 128, \"Informal discussion precedes and follows Board of Regents meetings. Student Regent Christy Vogt talked to Regent Bill Kuegel at the October meeting.\"",
@@ -693,6 +684,15 @@
    "src": {
     "label": "1969 Talisman pt. 1, p. 95",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
+   }
+  },
+  {
+   "year": "2014-15",
+   "file": "2014-15-nicki-seay.jpg",
+   "caption": "The 2014-15 president photographed in August 2014, when the Herald was still reporting her as Nicki Seay. The Chambers wall carries her twice, as Janet \"Nicki\" Seay for 2014 and Nicki Taylor for 2014-15; the Herald shows one continuous term and a change of surname, and this archive counts one president.",
+   "src": {
+    "label": "Herald, Aug 2014",
+    "url": "https://wkuherald.com/39702/news/students-attend-special-dsu-celebration/"
    }
   }
  ]
