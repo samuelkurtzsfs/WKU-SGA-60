@@ -17,6 +17,7 @@ import json
 import re
 import shutil
 import subprocess
+import unicodedata
 import sys
 import urllib.parse
 from datetime import date
@@ -78,7 +79,10 @@ def time_tag(iso, cls=""):
 
 
 def slug(s):
-    return re.sub(r"[^a-z0-9]+", "-", str(s).lower()).strip("-")
+    """Accents are folded rather than dropped, so Donte' Reed and Donte Reed
+    reach the same page and Salvador Leon does not become salvador-len."""
+    s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
 # ---------------------------------------------------------------- links
@@ -463,6 +467,7 @@ NAV_ITEMS = [("index.html", "The board"), ("story.html", "The story"),
              ("patterns.html", "Patterns"), ("events.html", "What SGA put on"),
              ("irregular.html", "Irregular terms"),
              ("branches.html", "How it was built"),
+             ("officers.html", "The officers"),
              ("history.html", "Timeline"),
              ("legislation.html", "Legislation"), ("corrections.html", "Corrections"),
              ("sources.html", "Sources"), ("about.html", "About and method")]
@@ -797,9 +802,14 @@ def render_gallery(y):
 
 
 def render_office(o):
+    """One officer on a year page. The name links to their own page, where every
+    office they held and everything the record says about them is gathered."""
     src = f'<span class="credit">{src_link(o["src"])}</span>' if o.get("src") else ""
+    nm = h(o.get("name", ""))
+    if o.get("name"):
+        nm = f'<a href="../o/{slug(canonical(o["name"]))}.html">{nm}</a>'
     return (f'<div class="off"><span class="o">{h(o.get("office", ""))}</span><span>'
-            f'<b>{h(o.get("name", ""))}</b>'
+            f'<b>{nm}</b>'
             + (f'<p>{h(o["note"])}</p>' if o.get("note") else "")
             + src + '</span></div>')
 
@@ -828,7 +838,11 @@ def render_org(y):
         return ""
     left = f'<div><h3>The executive</h3>{exec_rows}</div>' if exec_rows else ""
     right = f'<div><h3>The senate</h3>{sen_rows}{meta}</div>' if (sen_rows or meta) else ""
-    return (f'<h2 class="sec">The organization</h2><div class="org">{left}{right}</div>')
+    return (f'<h2 class="sec">The organization</h2>'
+            f'<p class="secnote">Everyone the record shows in office this year. Each name '
+            f'goes to their own page, with every office they held and everything the archive '
+            f'says they did.</p>'
+            f'<div class="org">{left}{right}</div>')
 
 
 def render_docs(y):
@@ -6390,6 +6404,239 @@ the <a href="legislation.html">legislation archive</a>.</p>
                  depth=0, current="branches.html")
 
 
+# ---------------------------------------------------------------- the officers
+OFFICERS_CSS = """
+.who-head{padding:44px 0 22px;border-bottom:1px solid var(--line)}
+.who-head h1{font-size:2rem;letter-spacing:-.03em;margin:6px 0 0}
+.who-head .roles{margin:12px 0 0;color:var(--ink2);max-width:var(--measure)}
+.termline{display:grid;grid-template-columns:7rem 1fr;gap:0 22px;padding:14px 0;
+ border-top:1px solid var(--line2)}
+@media(max-width:640px){.termline{grid-template-columns:1fr;gap:3px}}
+.termline .yr{font-family:var(--mono);font-size:.83rem;color:var(--ink3);padding-top:3px;
+ font-variant-numeric:tabular-nums}
+.termline .yr a{color:var(--ink3);text-decoration:none;border-bottom:1px solid var(--line)}
+.termline .yr a:hover{color:var(--red);border-color:var(--red)}
+.termline b{font-size:1rem;font-weight:600;letter-spacing:-.01em}
+.termline p{margin:5px 0 0;max-width:var(--measure);color:var(--ink)}
+.termline .srcline{font-size:.83rem;color:var(--ink3);margin-top:7px}
+.spellings{font-size:.85rem;color:var(--ink3);margin:10px 0 0}
+.mentions .ev{grid-template-columns:8rem 1fr}
+.whoindex{columns:3;column-gap:34px;margin:14px 0 0;padding:0;list-style:none}
+@media(max-width:900px){.whoindex{columns:2}}
+@media(max-width:600px){.whoindex{columns:1}}
+.whoindex li{break-inside:avoid;margin:0 0 9px;font-size:.93rem;line-height:1.35}
+.whoindex li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.whoindex li a:hover{color:var(--red);border-color:var(--red)}
+.whoindex li span{display:block;font-size:.79rem;color:var(--ink3)}
+.decadehead{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--red);margin:34px 0 0;padding-top:14px;
+ border-top:1px solid var(--line)}
+"""
+
+ALIASES = {}
+
+
+def load_aliases():
+    p = ROOT / "data" / "name-aliases.json"
+    ALIASES.clear()
+    if p.exists():
+        ALIASES.update(json.loads(p.read_text()).get("aliases", {}))
+
+
+def canonical(name):
+    """One person, however many ways the sources spell them."""
+    return ALIASES.get((name or "").strip(), (name or "").strip())
+
+
+def name_pattern(name):
+    """First name and surname, tolerating a middle name or initial between them,
+    and accents and apostrophes on either. Deliberately strict: matching a bare
+    surname finds every residence hall for a Hall and every phone line for a
+    Line, and would put another person's work on this page."""
+    import unicodedata
+
+    def fold(s):
+        return unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
+
+    parts = [p for p in re.split(r"\s+", fold(name))
+             if p and p not in ("Jr.", "Jr", "II", "III", "IV")]
+    parts = [re.sub(r"[^A-Za-z]", "", p) for p in parts]
+    parts = [p for p in parts if p]
+    if len(parts) < 2:
+        return None
+    first, last = parts[0], parts[-1]
+    return re.compile(rf"\b{first}\w*\b(?:\s+[A-Z][\w.'’-]*)?\s+{last}\b", re.I)
+
+
+def officer_index(ys):
+    """Everyone the record shows holding an office, with every term they held."""
+    load_aliases()
+    people = {}
+    for y in ys:
+        org = y.get("organization") or {}
+        rows = [(o, False) for o in (org.get("executive") or [])]
+        rows += [(o, True) for o in ((org.get("senate") or {}).get("officers") or [])]
+        for o, is_sen in rows:
+            if not o.get("name") or not o.get("office"):
+                continue
+            key = canonical(o["name"])
+            p = people.setdefault(key, {"name": key, "spellings": set(), "terms": [],
+                                        "president": False})
+            p["spellings"].add(o["name"])
+            p["terms"].append({"year": y["id"], "office": o["office"],
+                               "note": o.get("note"), "src": o.get("src"),
+                               "senate": is_sen})
+    # anyone who was also president or regent is marked, to link the two records
+    for y in ys:
+        for l in y["leaders"]:
+            key = canonical(l["name"])
+            if key in people:
+                people[key]["president"] = True
+    for p in people.values():
+        p["terms"].sort(key=lambda t: (t["year"], t["office"]))
+    return people
+
+
+def officer_mentions(person, ys):
+    """Entries elsewhere in the archive that name this person."""
+    pats = [q for q in (name_pattern(s) for s in person["spellings"] | {person["name"]}) if q]
+    if not pats:
+        return []
+    out = []
+    for y in ys:
+        for e in y["events"]:
+            hay = e["title"] + " " + e["body"]
+            if any(q.search(hay) for q in pats):
+                out.append((y, e))
+    out.sort(key=lambda t: t[1]["date"])
+    return out
+
+
+def render_officer(person, ys):
+    slug_ = slug(person["name"])
+    terms = person["terms"]
+    offices = []
+    for t in terms:
+        if t["office"] not in offices:
+            offices.append(t["office"])
+    span = f'{terms[0]["year"]}' if len(terms) == 1 else \
+           f'{terms[0]["year"]} to {terms[-1]["year"]}'
+
+    rows = []
+    for t in terms:
+        cite = ""
+        if t.get("src"):
+            cite = f'<p class="srcline">{src_link(t["src"], "")}</p>'
+        note = f'<p>{h(t["note"])}</p>' if t.get("note") else ""
+        rows.append(
+            f'<div class="termline"><div class="yr">'
+            f'<a href="../y/{h(t["year"])}.html">{h(t["year"])}</a></div>'
+            f'<div><b>{h(t["office"])}</b>{note}{cite}</div></div>')
+
+    ment = officer_mentions(person, ys)
+    seen_titles = set()
+    mrows = []
+    for y, e in ment:
+        if e["title"] in seen_titles:
+            continue
+        seen_titles.add(e["title"])
+        anch = year_anchors(y).get(id(e))
+        cites = [f'<a href="../y/{h(y["id"])}.html#{anch}">In the record</a>']
+        if e.get("src"):
+            cites.append(src_link(e["src"]))
+        mrows.append(
+            f'<article class="ev"><div class="when">{time_tag(e["date"])}'
+            f'{kind_tag(e, "ctx kind")}</div>'
+            f'<div><h3>{h(e["title"])}</h3><p>{h(e["body"])}</p>'
+            f'{money_line(e)}<p class="srcline">{"".join(cites)}</p></div></article>')
+
+    spellings = ""
+    others = sorted(s for s in person["spellings"] if s != person["name"])
+    if others:
+        spellings = (f'<p class="spellings">The sources also spell the name '
+                     + ", ".join(f"<b>{h(s)}</b>" for s in others)
+                     + ". The archive keeps each source's own spelling and treats them as "
+                       "one person here.</p>")
+
+    lead = ""
+    if person["president"]:
+        lead = ('<p class="roles">Also served as president or student regent; that record is '
+                'on the year pages linked below.</p>')
+
+    body = f"""
+<header class="wrap"><div class="who-head">
+ <p class="kicker">{h(span)}</p>
+ <h1>{h(person["name"])}</h1>
+ <p class="roles">{h(", ".join(offices))}.</p>
+ {lead}{spellings}
+</div></header>
+
+<div class="wrap"><div class="body">
+<h2 class="sec">Offices held<span class="n">{len(terms)}</span></h2>
+{"".join(rows)}
+
+<h2 class="sec">Where the record names them<span class="n">{len(mrows)}</span></h2>
+<p class="secnote">Entries elsewhere in this archive that name this person. They are matched on
+the full name, never on a surname alone, because a surname on its own catches other people and
+sometimes catches buildings.</p>
+<div class="mentions">{"".join(mrows) if mrows
+    else '<p class="prose">No entry in the archive names them beyond the offices above.</p>'}</div>
+
+<div class="prose" style="margin-top:34px">
+<p>Everyone recorded in office is listed on the <a href="../officers.html">officers page</a>.
+How the organisation was arranged in each period is set out under
+<a href="../branches.html">how it was built</a>.</p>
+</div>
+</div></div>"""
+    desc = (f'{person["name"]}, {", ".join(offices[:3])} in the Student Government Association '
+            f'at Western Kentucky University, {span}.')
+    return shell(f'{person["name"]} · SGA 60', desc, body, OFFICERS_CSS,
+                 depth=1, current="officers.html")
+
+
+def render_officers(ys, people):
+    by_decade = {}
+    for p in people.values():
+        start = int(p["terms"][0]["year"][:4])
+        by_decade.setdefault(start // 10 * 10, []).append(p)
+    secs = []
+    for dec in sorted(by_decade):
+        rows = sorted(by_decade[dec], key=lambda p: p["name"].split()[-1].lower())
+        lis = "".join(
+            f'<li><a href="o/{slug(p["name"])}.html">{h(p["name"])}</a>'
+            f'<span>{h(p["terms"][0]["office"])}'
+            + (f', {h(p["terms"][0]["year"])}' if len(p["terms"]) == 1
+               else f', {h(p["terms"][0]["year"])} to {h(p["terms"][-1]["year"])}')
+            + '</span></li>' for p in rows)
+        secs.append(f'<p class="decadehead">First took office in the {dec}s'
+                    f' &middot; {len(rows)}</p><ul class="whoindex">{lis}</ul>')
+
+    n_terms = sum(len(p["terms"]) for p in people.values())
+    body = f"""
+<header class="head"><div class="wrap">
+ <p class="kicker">Everyone else who ran it</p>
+ <h1>The officers</h1>
+ <p class="scope">{len(people)} people are recorded holding {n_terms} offices in student
+ government at Western: the vice presidents, the treasurers and chief financial officers, the
+ secretaries, chiefs of staff and directors, the speakers of the Congress and the Senate, and
+ the justices. Each has a page carrying every office they held, what the sources say they did
+ in it, and every entry elsewhere in this archive that names them.</p>
+ <p class="scope">The presidents are the part of this institution that gets remembered. These
+ are the people who did most of the work, and almost none of them has been written down
+ anywhere until now. The record is thinner for them, and uneven: it is fullest where SGA's own
+ minutes survive, and thinnest in the years the minutes do not cover.</p>
+</div></header>
+
+<div class="wrap"><div class="body">
+{"".join(secs)}
+</div></div>"""
+    desc = (f"{len(people)} people who held office in the WKU Student Government Association: "
+            f"vice presidents, treasurers, secretaries, chiefs of staff, directors, speakers "
+            f"and justices, each with what the record says they did.")
+    return shell("The officers · SGA 60", desc, body, OFFICERS_CSS,
+                 depth=0, current="officers.html")
+
+
 def apply_photo_overlay(ys):
     """Merge data/photos.json onto the years. Photographs live in their own file so
     the photograph agent and the decade agents never edit the same file."""
@@ -6415,6 +6662,7 @@ def main():
     ys = raw["years"]
     meta = raw.get("_meta", {})
     apply_photo_overlay(ys)
+    load_aliases()          # before anything renders a name, or links miss their page
     index_anchors(ys)
     index_offices(ys)
     gaps = seat_gaps(ys)
@@ -6463,6 +6711,18 @@ def main():
     _br = render_branches(ys)
     if _br:
         (SITE / "branches.html").write_text(repair_anchors(_br))
+    people = officer_index(ys)
+    ODIR = SITE / "o"
+    ODIR.mkdir(parents=True, exist_ok=True)
+    (SITE / "officers.html").write_text(repair_anchors(render_officers(ys, people)))
+    keep_o = set()
+    for person in people.values():
+        fn = f'{slug(person["name"])}.html'
+        keep_o.add(fn)
+        (ODIR / fn).write_text(repair_anchors(render_officer(person, ys)))
+    for f in ODIR.glob("*.html"):
+        if f.name not in keep_o:
+            f.unlink()
     (SITE / "legislation.html").write_text(render_legislation(leg))
     (SITE / "corrections.html").write_text(repair_anchors(render_corrections(ys)))
 
