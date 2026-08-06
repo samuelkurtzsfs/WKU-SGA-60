@@ -1,5 +1,5 @@
 {
- "note": "One person, spelled more than one way across the sources. The data keeps each source's own spelling; this maps them to a single person for the officer profiles. Adding a pair here asserts they are the same human, so check before adding one.",
+ "note": "One person, spelled more than one way across the sources. The data keeps each source's own spelling; this maps them to a single person for the officer profiles. Adding a pair here asserts they are the same human, so check before adding one. Short forms used in the entry text are mapped here too, so an article calling him Jamie Hargrove reaches the page of James Hargrove. A short form is only added when the surname matches a recorded person AND the years overlap: Ron Beck of 1971-74 is an assistant dean, not the Ronald Beck who sat in the 1966-67 Congress, and is deliberately not mapped.",
  "aliases": {
   "Amanda B. Allen": "Amanda Allen",
   "Matthew D. Bastin": "Matthew Bastin",
@@ -20,6 +20,13 @@
   "Lane (Caroline) Simpson": "Caroline Simpson",
   "Carmen Ann Willoughby": "Carmen Willoughby",
   "Donte Reed": "Donté Reed",
-  "Donte' Reed": "Donté Reed"
+  "Donte' Reed": "Donté Reed",
+  "Bob Moore": "Robert Moore",
+  "Jamie Hargrove": "James Hargrove",
+  "Jeff Consolo": "Jeffrey Consolo",
+  "Mike Fiorella": "Michael Fiorella",
+  "Steve Thornton": "Steven Thornton",
+  "Steve Yater": "Steven Yater",
+  "Trib Singh": "Tribhuwan Singh"
  }
 }

@@ -764,8 +764,12 @@ def render_leader(l, y, also):
     prof = ""
     if l.get("profile"):
         prof = f'<div class="profile">{profile_paragraphs(l, key)}</div>'
+    profile_link = (f'<p class="secnote" style="margin-top:14px">'
+                    f'<a href="../o/{slug(canonical(l["name"]))}.html">Everything the archive '
+                    f'holds on {h(l["name"])}</a>, gathered on one page.</p>')
     return (f'<section class="leader" id="{key}"><h2>{head}</h2>'
-            f'<dl class="facts">{dl}</dl>{note}{prof}{leader_sources(l, key)}</section>')
+            f'<dl class="facts">{dl}</dl>{note}{prof}{leader_sources(l, key)}'
+            f'{profile_link}</section>')
 
 
 def render_portraits(y):
@@ -6514,15 +6518,31 @@ def officer_index(ys):
             p = people.setdefault(key, {"name": key, "spellings": set(), "terms": [],
                                         "president": False})
             p["spellings"].add(o["name"])
+            # a short form used only in the entry text still has to reach this page
+            for variant, target in ALIASES.items():
+                if target == key:
+                    p["spellings"].add(variant)
             p["terms"].append({"year": y["id"], "office": o["office"],
                                "note": o.get("note"), "src": o.get("src"),
                                "senate": is_sen})
-    # anyone who was also president or regent is marked, to link the two records
+    # Presidents and student regents get a page too. Without this a president who
+    # never held a cabinet post has no profile at all, and their record stays
+    # scattered across year pages with nothing gathering it.
     for y in ys:
         for l in y["leaders"]:
             key = canonical(l["name"])
-            if key in people:
-                people[key]["president"] = True
+            p = people.setdefault(key, {"name": key, "spellings": set(), "terms": [],
+                                        "president": False})
+            p["president"] = True
+            p["spellings"].add(l["name"])
+            for variant, target in ALIASES.items():
+                if target == key:
+                    p["spellings"].add(variant)
+            if not any(t["year"] == y["id"] and t.get("leader") for t in p["terms"]):
+                p["terms"].append({"year": y["id"], "office": role_title(l, y),
+                                   "note": l.get("note"),
+                                   "src": (l.get("sources") or [None])[0],
+                                   "senate": False, "leader": True})
     for p in people.values():
         p["terms"].sort(key=lambda t: (t["year"], t["office"]))
     return people
