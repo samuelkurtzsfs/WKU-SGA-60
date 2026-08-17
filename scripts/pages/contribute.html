@@ -1,0 +1,101 @@
+<div class="cwrap">
+<header class="chead">
+<p class="lab">For people who served</p>
+<h1>Add to the record</h1>
+<p class="lede">This archive was assembled from what the university and the
+<cite>Herald</cite> happened to write down. The people who were actually in the room
+know a great deal that never reached print. If you held an office in student government,
+you can be given the keys to your own year.</p>
+</header>
+
+<div id="err" class="note warn hide"></div>
+<div id="ok" class="note good hide"></div>
+
+<div class="card" id="signin">
+<h3>Sign in</h3>
+<p class="meta">No password. Put in your email and a sign-in link comes back to you.</p>
+<label for="em">Email address</label>
+<input type="email" id="em" autocomplete="email" placeholder="you@example.com">
+<div class="btns">
+<button id="go">Send me a sign-in link</button>
+<span class="saving hide" id="busy">Sending…</span>
+</div>
+<p class="hint">If you have not been approved yet, this form asks for access instead and
+the editor is told. Either way you get the same answer, so nobody can use it to find out
+who has an account.</p>
+</div>
+
+<div class="card dim" id="ask">
+<h3>Not approved yet? Tell the editor who you are</h3>
+<p class="meta">Fill these in as well and the request arrives with enough for the editor
+to recognise you. All three are optional.</p>
+<label for="nm">Your name, including the name you served under if it has changed</label>
+<input type="text" id="nm" placeholder="Jane Doe, who served as Jane Smith">
+<label for="sv">What you held, and when</label>
+<input type="text" id="sv" placeholder="President, 1994-95">
+<label for="nt">Anything that helps place you</label>
+<textarea id="nt" placeholder="The vice president that year was ..., or: my portrait is on the 1994-95 page."></textarea>
+</div>
+
+<div class="note">
+<b>What you will be able to do.</b> An approved contributor can edit the year they served:
+correct a date, fix a name, add something the archive missed, and write a first-hand piece
+about their term. Every change is saved in your name and the editor can undo any of it. The
+one thing the editor keeps for himself is removing a person from a year, because that needs
+a source rather than a memory.
+</div>
+
+<div class="note">
+<b>The archive's one rule.</b> Everything in the dated record carries a source, so a new
+entry needs a link to something published: a <cite>Herald</cite> article, minutes, a
+university page. Your own recollection is worth more than a footnote, and it has its own
+place on the site under <i>in their own words</i>, where it runs under your name and is not
+asked to prove itself.
+</div>
+</div>
+
+<script>
+(function () {
+  var err = document.getElementById('err'), ok = document.getElementById('ok');
+  var busy = document.getElementById('busy'), go = document.getElementById('go');
+
+  var q = new URLSearchParams(location.search);
+  if (q.get('err') === 'expired') show(err, 'That sign-in link had expired. They last half an hour. Ask for a fresh one.');
+  if (q.get('err') === 'notapproved') show(err, 'That address is not approved to edit. Ask for access below and the editor will see it.');
+
+  function show(el, msg) { el.textContent = msg; el.classList.remove('hide'); }
+  function hide(el) { el.classList.add('hide'); }
+
+  go.addEventListener('click', function () {
+    var email = document.getElementById('em').value.trim();
+    if (!email || email.indexOf('@') < 0) { show(err, 'Put in an email address first.'); return; }
+    hide(err); hide(ok);
+    go.disabled = true; busy.classList.remove('hide');
+    fetch('/api/auth/request', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: email,
+        name: document.getElementById('nm').value.trim(),
+        served: document.getElementById('sv').value.trim(),
+        note: document.getElementById('nt').value.trim()
+      })
+    }).then(function (r) { return r.json().then(function (j) { return { s: r.status, j: j }; }); })
+      .then(function (res) {
+        go.disabled = false; busy.classList.add('hide');
+        if (res.s >= 400) { show(err, res.j.error || 'That did not work.'); return; }
+        document.getElementById('signin').classList.add('hide');
+        document.getElementById('ask').classList.add('hide');
+        show(ok, res.j.state === 'sent'
+          ? 'Check your email. The sign-in link is good for thirty minutes and works once.'
+          : 'Your request has gone to the editor. You will get an email when it is approved.');
+      }).catch(function () {
+        go.disabled = false; busy.classList.add('hide');
+        show(err, 'Could not reach the server. Try again in a moment.');
+      });
+  });
+
+  document.getElementById('em').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') go.click();
+  });
+})();
+</script>

@@ -1,0 +1,207 @@
+<div class="cwrap">
+<header class="chead">
+<p class="lab">Editor only</p>
+<h1>The editor's desk</h1>
+<p class="lede">Who is waiting for access, who already has it, and every change a
+contributor has made, with a way to undo any of them.</p>
+</header>
+
+<div class="who" id="who"><span>Checking who you are…</span></div>
+<div id="err" class="note warn hide"></div>
+<div id="ok" class="note good hide"></div>
+
+<div id="gate" class="card hide">
+<h3>Not the editor</h3>
+<p class="meta">This page is for the archive's editor. If you are a contributor, your
+year is on the <a href="edit.html">edit page</a>.</p>
+</div>
+
+<div id="app" class="hide">
+
+<h2 style="margin:34px 0 4px;font-size:1.3rem">Waiting on you</h2>
+<p class="hint" style="margin-bottom:16px">Approving someone emails them a sign-in link
+and lets them edit only the years you list here.</p>
+<div id="queue"><p class="hint">Loading…</p></div>
+
+<h2 style="margin:40px 0 4px;font-size:1.3rem">Who has the keys</h2>
+<div id="roster"><p class="hint">Loading…</p></div>
+
+<h2 style="margin:40px 0 4px;font-size:1.3rem">What contributors have changed</h2>
+<p class="hint" style="margin-bottom:16px">Undoing a change puts the files back the way
+they were and records that as its own commit, so nothing is ever actually lost.</p>
+<div id="history"><p class="hint">Loading…</p></div>
+
+</div>
+</div>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var err = $('err'), ok = $('ok');
+  function show(el, m) { el.textContent = m; el.classList.remove('hide'); el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  function clear() { err.classList.add('hide'); ok.classList.add('hide'); }
+  function api(p, o) {
+    return fetch(p, o).then(function (r) {
+      return r.json().catch(function () { return {}; })
+        .then(function (j) { if (r.status >= 400) { throw j; } return j; });
+    });
+  }
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) { e.className = cls; }
+    if (text != null) { e.textContent = text; }
+    return e;
+  }
+
+  api('/api/me').then(function (m) {
+    if (!m.admin) { throw { error: 'not admin' }; }
+    $('who').innerHTML = '';
+    $('who').appendChild(el('span', null, 'Signed in as ' + m.name));
+    var sp = el('span', 'sp');
+    var a = el('a', null, 'Back to editing'); a.href = 'edit.html'; a.style.marginRight = '16px';
+    var b = el('a', null, 'Sign out'); b.href = '/api/auth/logout';
+    sp.appendChild(a); sp.appendChild(b);
+    $('who').appendChild(sp);
+    $('app').classList.remove('hide');
+    load();
+  }).catch(function () {
+    $('who').classList.add('hide');
+    $('gate').classList.remove('hide');
+  });
+
+  function load() {
+    api('/api/admin/queue').then(function (d) {
+      drawQueue(d.requests || []);
+      drawRoster(d.contributors || []);
+    }).catch(function (e) { show(err, e.error || 'Could not load the queue.'); });
+    api('/api/admin/history').then(function (d) {
+      drawHistory(d.commits || []);
+    }).catch(function (e) { show(err, e.error || 'Could not load the history.'); });
+  }
+
+  function drawQueue(rows) {
+    var box = $('queue'); box.innerHTML = '';
+    if (!rows.length) { box.appendChild(el('p', 'hint', 'Nobody is waiting.')); return; }
+    rows.forEach(function (r) {
+      var c = el('div', 'card');
+      c.appendChild(el('h3', null, r.name || r.email));
+      c.appendChild(el('p', 'meta', r.email + (r.served ? ' — says they were ' + r.served : '')
+        + ' — asked ' + r.asked));
+      if (r.note) { c.appendChild(el('p', null, r.note)); }
+
+      var l1 = el('label', null, 'Name to record'); c.appendChild(l1);
+      var nm = document.createElement('input'); nm.type = 'text'; nm.value = r.name || '';
+      c.appendChild(nm);
+      var l2 = el('label', null, 'Their title'); c.appendChild(l2);
+      var rl = document.createElement('input'); rl.type = 'text'; rl.value = r.served || '';
+      c.appendChild(rl);
+      var l3 = el('label', null, 'Years they may edit, separated by commas');
+      c.appendChild(l3);
+      var yr = document.createElement('input'); yr.type = 'text';
+      yr.placeholder = '1994-95, 1995-96';
+      c.appendChild(yr);
+      c.appendChild(el('p', 'hint', 'Leave this empty and they can sign in but edit nothing '
+        + 'until you fill it in. Put * to give them every year.'));
+
+      var btns = el('div', 'btns');
+      var yes = el('button', null, 'Approve');
+      var no = el('button', 'danger', 'Turn down');
+      var busy = el('span', 'saving hide', 'Working…');
+      yes.addEventListener('click', function () {
+        decide(r.email, 'approve', {
+          name: nm.value.trim(), role: rl.value.trim(),
+          years: yr.value.split(',').map(function (s) { return s.trim(); }).filter(Boolean)
+        }, yes, no, busy);
+      });
+      no.addEventListener('click', function () {
+        if (!confirm('Turn down ' + r.email + '?')) { return; }
+        decide(r.email, 'deny', {}, yes, no, busy);
+      });
+      btns.appendChild(yes); btns.appendChild(no); btns.appendChild(busy);
+      c.appendChild(btns);
+      box.appendChild(c);
+    });
+  }
+
+  function decide(email, decision, extra, yes, no, busy) {
+    clear(); yes.disabled = no.disabled = true; busy.classList.remove('hide');
+    var body = { email: email, decision: decision };
+    Object.keys(extra).forEach(function (k) { body[k] = extra[k]; });
+    api('/api/admin/decide', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    }).then(function () {
+      show(ok, decision === 'approve'
+        ? 'Approved, and they have been emailed a sign-in link.'
+        : 'Turned down.');
+      load();
+    }).catch(function (e) {
+      yes.disabled = no.disabled = false; busy.classList.add('hide');
+      show(err, e.error || 'That did not work.');
+    });
+  }
+
+  function drawRoster(rows) {
+    var box = $('roster'); box.innerHTML = '';
+    var t = el('table', 'hist');
+    var hr = document.createElement('tr');
+    ['Name', 'Title', 'Can edit', 'Email'].forEach(function (x) {
+      hr.appendChild(el('th', null, x));
+    });
+    t.appendChild(hr);
+    rows.forEach(function (c) {
+      var tr = document.createElement('tr');
+      tr.appendChild(el('td', null, c.name + (c.admin ? ' (editor)' : '')));
+      tr.appendChild(el('td', null, c.role || '—'));
+      tr.appendChild(el('td', null, (c.years || []).join(', ') || 'nothing yet'));
+      tr.appendChild(el('td', null, c.email));
+      t.appendChild(tr);
+    });
+    box.appendChild(t);
+    box.appendChild(el('p', 'hint', 'To change what someone can edit, or to take their '
+      + 'access away, edit data/contributors.json in the repository.'));
+  }
+
+  function drawHistory(rows) {
+    var box = $('history'); box.innerHTML = '';
+    if (!rows.length) {
+      box.appendChild(el('p', 'hint', 'No contributor has changed anything yet.'));
+      return;
+    }
+    var t = el('table', 'hist');
+    var hr = document.createElement('tr');
+    ['When', 'Who', 'What', '', ''].forEach(function (x) { hr.appendChild(el('th', null, x)); });
+    t.appendChild(hr);
+    rows.forEach(function (c) {
+      var tr = document.createElement('tr');
+      tr.appendChild(el('td', null, (c.when || '').slice(0, 10)));
+      tr.appendChild(el('td', null, (c.by || '').replace(/\s*<.*>$/, '')));
+      tr.appendChild(el('td', null, c.summary));
+      var td1 = document.createElement('td');
+      var link = el('a', null, c.sha.slice(0, 7));
+      link.href = 'https://github.com/samuelkurtzsfs/WKU-SGA-60/commit/' + c.sha;
+      link.rel = 'noopener';
+      td1.appendChild(link); tr.appendChild(td1);
+      var td2 = document.createElement('td');
+      var b = el('button', 'danger small', 'Undo');
+      b.addEventListener('click', function () {
+        if (!confirm('Put everything this change touched back the way it was?')) { return; }
+        clear(); b.disabled = true; b.textContent = 'Undoing…';
+        api('/api/admin/revert', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sha: c.sha })
+        }).then(function (r) {
+          show(ok, 'Undone: ' + r.reverted.join(', ') + '. The site rebuilds in about a minute.');
+          load();
+        }).catch(function (e) {
+          b.disabled = false; b.textContent = 'Undo';
+          show(err, e.error || 'Could not undo that.');
+        });
+      });
+      td2.appendChild(b); tr.appendChild(td2);
+      t.appendChild(tr);
+    });
+    box.appendChild(t);
+  }
+})();
+</script>

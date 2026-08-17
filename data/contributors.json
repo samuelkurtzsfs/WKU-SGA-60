@@ -1,0 +1,14 @@
+{
+ "_note": "Who may sign in and edit. The editor adds people here through the admin page, which writes this file as a commit. `years` lists the academic year ids a person may edit; `*` means every year. Only an admin can approve people or undo a change.",
+ "contributors": [
+  {
+   "email": "kurtztoddsam2@gmail.com",
+   "name": "Sam Kurtz",
+   "role": "President, 2023-24 and 2024-25",
+   "years": ["*"],
+   "admin": true,
+   "status": "approved",
+   "added": "2026-08-17"
+  }
+ ]
+}

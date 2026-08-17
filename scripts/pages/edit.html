@@ -1,0 +1,332 @@
+<div class="cwrap">
+<header class="chead">
+<p class="lab">Contributor</p>
+<h1>Your year</h1>
+</header>
+
+<div class="who" id="who"><span>Checking who you are…</span></div>
+
+<div id="err" class="note warn hide"></div>
+<div id="ok" class="note good hide"></div>
+
+<div id="gate" class="card hide">
+<h3>You are not signed in</h3>
+<p class="meta">Sign-in links expire after half an hour. Ask for a fresh one.</p>
+<p><a href="contribute.html">Go to the sign-in page</a></p>
+</div>
+
+<div id="app" class="hide">
+
+<div class="tabs" role="tablist">
+<button id="tab-rec" role="tab" aria-selected="true">The record</button>
+<button id="tab-say" role="tab" aria-selected="false">In their own words</button>
+</div>
+
+<!-- ------------------------------------------------------ the record -->
+<section id="pane-rec">
+<div class="row">
+<div>
+<label for="ysel">Academic year</label>
+<select id="ysel"></select>
+</div>
+<div>
+<label>&nbsp;</label>
+<button class="ghost" id="load">Open this year</button>
+</div>
+</div>
+
+<div id="editor" class="hide">
+
+<div class="note">Changes go live on the public site about a minute after you save.
+Everything is recorded under your name and the editor can undo any of it.</div>
+
+<h2 style="margin:30px 0 6px;font-size:1.3rem">The people</h2>
+<p class="hint" style="margin-bottom:14px">You can correct a note and write a profile.
+Adding or removing a person needs a source, so that stays with the editor.</p>
+<div id="leaders"></div>
+
+<h2 style="margin:34px 0 6px;font-size:1.3rem">What happened</h2>
+<p class="hint" style="margin-bottom:14px">Every entry needs a date, a title, a couple of
+sentences and a link to something published that shows it happened. An entry without a
+source will be refused when you save.</p>
+<div id="events"></div>
+<button class="ghost small" id="addev">Add something that happened</button>
+
+<div class="card" style="margin-top:30px">
+<label for="msg">What did you change, in a line?</label>
+<input type="text" id="msg" placeholder="Fixed the election date and added the parking resolution.">
+<div class="btns">
+<button id="save">Save to the archive</button>
+<button class="ghost" id="reload">Throw away my changes</button>
+<span class="saving hide" id="busy1">Saving…</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- --------------------------------------------- in their own words -->
+<section id="pane-say" class="hide">
+<div class="note">This is yours. It runs under your name and your title, on your year's
+page and on the <i>in their own words</i> page. It is recollection, the site says so, and
+it is not asked to carry footnotes. Where your memory and the archive disagree, both stay
+up, because that disagreement is worth reading.</div>
+
+<label for="ptitle">Title</label>
+<input type="text" id="ptitle" placeholder="What the minutes do not say">
+
+<div class="row3">
+<div>
+<label for="pyear">The year it belongs to</label>
+<select id="pyear"></select>
+</div>
+<div>
+<label for="pslug">Web address (leave blank and one is made for you)</label>
+<input type="text" id="pslug" placeholder="1994-95-what-the-minutes-do-not-say">
+</div>
+</div>
+
+<label for="pbody">The piece</label>
+<textarea id="pbody" style="min-height:340px" placeholder="Write it in paragraphs, with a blank line between them.
+
+There is no length limit and no house style. Say what it was actually like."></textarea>
+
+<div class="btns">
+<button id="publish">Publish it</button>
+<span class="saving hide" id="busy2">Publishing…</span>
+</div>
+</section>
+
+</div>
+</div>
+
+<script>
+(function () {
+  var me = null, year = null, allYears = [];
+  var $ = function (id) { return document.getElementById(id); };
+  var err = $('err'), ok = $('ok');
+
+  function show(el, msg, list) {
+    el.innerHTML = '';
+    el.appendChild(document.createTextNode(msg));
+    if (list && list.length) {
+      var ul = document.createElement('ul');
+      list.forEach(function (p) {
+        var li = document.createElement('li'); li.textContent = p; ul.appendChild(li);
+      });
+      el.appendChild(ul);
+    }
+    el.classList.remove('hide');
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  function clear() { err.classList.add('hide'); ok.classList.add('hide'); }
+
+  function api(path, opts) {
+    return fetch(path, opts).then(function (r) {
+      return r.json().catch(function () { return {}; })
+        .then(function (j) { if (r.status >= 400) { throw j; } return j; });
+    });
+  }
+
+  // ---------------------------------------------------------- who am I
+  api('/api/me').then(function (m) {
+    me = m;
+    $('who').innerHTML = '';
+    var a = document.createElement('span');
+    a.innerHTML = 'Signed in as <b></b>';
+    a.querySelector('b').textContent = m.name + (m.role ? ', ' + m.role : '');
+    var b = document.createElement('span');
+    b.textContent = m.years.indexOf('*') >= 0
+      ? 'You can edit every year.'
+      : 'You can edit ' + (m.years.join(', ') || 'nothing yet');
+    var c = document.createElement('span'); c.className = 'sp';
+    var link = document.createElement('a'); link.href = '/api/auth/logout'; link.textContent = 'Sign out';
+    c.appendChild(link);
+    if (m.admin) {
+      var ad = document.createElement('a');
+      ad.href = 'admin.html'; ad.textContent = 'The editor’s desk';
+      ad.style.marginRight = '16px';
+      c.insertBefore(ad, link);
+    }
+    $('who').appendChild(a); $('who').appendChild(b); $('who').appendChild(c);
+    return fetch('years.json').then(function (r) { return r.json(); });
+  }).then(function (doc) {
+    allYears = doc.years.map(function (y) { return y.id; });
+    var mine = me.years.indexOf('*') >= 0 ? allYears
+      : allYears.filter(function (id) { return me.years.indexOf(id) >= 0; });
+    if (!mine.length) {
+      show(err, 'You are approved, but no year has been assigned to you yet. Ask the editor.');
+    }
+    [$('ysel'), $('pyear')].forEach(function (sel) {
+      mine.forEach(function (id) {
+        var o = document.createElement('option'); o.value = id; o.textContent = id;
+        sel.appendChild(o);
+      });
+    });
+    $('app').classList.remove('hide');
+    if (mine.length === 1) { $('load').click(); }
+  }).catch(function () {
+    $('who').classList.add('hide');
+    $('gate').classList.remove('hide');
+  });
+
+  // ------------------------------------------------------------- tabs
+  function tab(which) {
+    $('tab-rec').setAttribute('aria-selected', which === 'rec');
+    $('tab-say').setAttribute('aria-selected', which === 'say');
+    $('pane-rec').classList.toggle('hide', which !== 'rec');
+    $('pane-say').classList.toggle('hide', which !== 'say');
+  }
+  $('tab-rec').addEventListener('click', function () { tab('rec'); });
+  $('tab-say').addEventListener('click', function () { tab('say'); });
+
+  // -------------------------------------------------------- load year
+  $('load').addEventListener('click', function () {
+    clear();
+    var id = $('ysel').value;
+    if (!id) { return; }
+    api('/api/year?id=' + encodeURIComponent(id)).then(function (r) {
+      year = r.year;
+      draw();
+      $('editor').classList.remove('hide');
+    }).catch(function (e) { show(err, e.error || 'Could not open that year.'); });
+  });
+  $('reload').addEventListener('click', function () { $('load').click(); });
+
+  function field(parent, labelText, value, hint, tag, attrs) {
+    var l = document.createElement('label'); l.textContent = labelText;
+    var i = document.createElement(tag || 'input');
+    if (tag !== 'textarea') { i.type = (attrs && attrs.type) || 'text'; }
+    if (attrs && attrs.placeholder) { i.placeholder = attrs.placeholder; }
+    i.value = value == null ? '' : value;
+    l.setAttribute('for', ''); parent.appendChild(l); parent.appendChild(i);
+    if (hint) {
+      var p = document.createElement('p'); p.className = 'hint'; p.textContent = hint;
+      parent.appendChild(p);
+    }
+    return i;
+  }
+
+  function draw() {
+    // ---- the people
+    var box = $('leaders'); box.innerHTML = '';
+    (year.leaders || []).forEach(function (l, i) {
+      var card = document.createElement('div'); card.className = 'card';
+      var hd = document.createElement('h3');
+      hd.textContent = l.name + (l.role ? ' — ' + l.role : '');
+      card.appendChild(hd);
+      var note = field(card, 'The one-line note beside their name', l.note || '', null, 'textarea');
+      note.style.minHeight = '60px';
+      note.addEventListener('input', function () { l.note = note.value; });
+      var prof = field(card, 'Their profile, in paragraphs with a blank line between',
+        (l.profile || []).join('\n\n'),
+        'This is the account of their whole term. Plain past tense. Leave it empty if you would rather not.',
+        'textarea');
+      prof.style.minHeight = '170px';
+      prof.addEventListener('input', function () {
+        l.profile = prof.value.split(/\n\s*\n/).map(function (s) { return s.trim(); })
+          .filter(Boolean);
+        if (!l.profile.length) { delete l.profile; }
+      });
+      box.appendChild(card);
+    });
+
+    // ---- what happened
+    var ev = $('events'); ev.innerHTML = '';
+    (year.events || []).sort(function (a, b) {
+      return String(a.date).localeCompare(String(b.date));
+    }).forEach(function (e, i) { ev.appendChild(eventCard(e, i)); });
+  }
+
+  function eventCard(e, i) {
+    var c = document.createElement('div'); c.className = 'ev' + (e.__new ? ' new' : '');
+    var top = document.createElement('div'); top.className = 'top';
+    var d = document.createElement('span'); d.className = 'd'; d.textContent = e.date || 'no date';
+    var t = document.createElement('span'); t.className = 't'; t.textContent = e.title || 'Untitled';
+    var del = document.createElement('button');
+    del.className = 'danger small'; del.textContent = 'Remove';
+    del.addEventListener('click', function () {
+      if (!confirm('Take "' + (e.title || 'this entry') + '" out of the year?')) { return; }
+      year.events.splice(year.events.indexOf(e), 1);
+      draw();
+    });
+    var open = document.createElement('button');
+    open.className = 'ghost small'; open.textContent = 'Edit';
+    top.appendChild(d); top.appendChild(t); top.appendChild(open); top.appendChild(del);
+    c.appendChild(top);
+
+    var body = document.createElement('div');
+    body.className = e.__new ? '' : 'hide';
+    open.addEventListener('click', function () { body.classList.toggle('hide'); });
+
+    var dt = field(body, 'Date', e.date || '', 'Use 01 for the day if you only know the month.',
+      'input', { type: 'date' });
+    dt.addEventListener('input', function () { e.date = dt.value; d.textContent = dt.value; });
+    var ti = field(body, 'Title', e.title || '', null, 'input', { placeholder: 'Short and factual' });
+    ti.addEventListener('input', function () { e.title = ti.value; t.textContent = ti.value; });
+    var bo = field(body, 'What happened', e.body || '',
+      'Two or three sentences. What happened and why it mattered.', 'textarea');
+    bo.addEventListener('input', function () { e.body = bo.value; });
+
+    e.src = e.src || {};
+    var sl = field(body, 'The source, in words', e.src.label || '', null, 'input',
+      { placeholder: 'Herald 51:39, 25 February 1972' });
+    sl.addEventListener('input', function () { e.src.label = sl.value; });
+    var su = field(body, 'Link to it', e.src.url || '',
+      'Must start with http. No source, no entry: this is the rule the whole archive rests on.',
+      'input', { type: 'url', placeholder: 'https://digitalcommons.wku.edu/...' });
+    su.addEventListener('input', function () { e.src.url = su.value; });
+
+    c.appendChild(body);
+    return c;
+  }
+
+  $('addev').addEventListener('click', function () {
+    year.events = year.events || [];
+    var e = { date: '', title: '', body: '', src: { label: '', url: '' }, __new: true };
+    year.events.push(e);
+    $('events').appendChild(eventCard(e, year.events.length - 1));
+  });
+
+  // ------------------------------------------------------------- save
+  $('save').addEventListener('click', function () {
+    clear();
+    var clean = JSON.parse(JSON.stringify(year));
+    (clean.events || []).forEach(function (e) { delete e.__new; });
+    $('save').disabled = true; $('busy1').classList.remove('hide');
+    api('/api/year', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: clean.id, year: clean, message: $('msg').value.trim() })
+    }).then(function (r) {
+      $('save').disabled = false; $('busy1').classList.add('hide');
+      show(ok, 'Saved. It will be on the public site in about a minute. Commit ' +
+        String(r.commit).slice(0, 7) + '.');
+      $('msg').value = '';
+    }).catch(function (e) {
+      $('save').disabled = false; $('busy1').classList.add('hide');
+      show(err, e.error || 'That did not save.', e.problems);
+    });
+  });
+
+  // ---------------------------------------------------------- publish
+  $('publish').addEventListener('click', function () {
+    clear();
+    var paras = $('pbody').value.split(/\n\s*\n/).map(function (s) { return s.trim(); })
+      .filter(Boolean);
+    $('publish').disabled = true; $('busy2').classList.remove('hide');
+    api('/api/post', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        title: $('ptitle').value.trim(), year: $('pyear').value,
+        slug: $('pslug').value.trim(), body: paras
+      })
+    }).then(function (r) {
+      $('publish').disabled = false; $('busy2').classList.add('hide');
+      show(ok, 'Published. It will appear on the site in about a minute, on your year and '
+        + 'on the in their own words page.');
+    }).catch(function (e) {
+      $('publish').disabled = false; $('busy2').classList.add('hide');
+      show(err, e.error || 'That did not publish.', e.problems);
+    });
+  });
+})();
+</script>

@@ -29,6 +29,8 @@ DOCS = ROOT / "data" / "documents"
 PHOTOS = ROOT / "data" / "photos"
 LEG = ROOT / "data" / "legislation"
 LEGMETA = ROOT / "data" / "legislation.json"
+POSTS = ROOT / "data" / "posts"
+PAGES = Path(__file__).resolve().parent / "pages"
 SITE = ROOT / "site"
 YDIR = SITE / "y"
 HDIR = SITE / "history"
@@ -430,7 +432,19 @@ BOARD_CSS = """
 /* ---- Big Red ---- */
  line-height:17px;text-align:center;cursor:pointer;padding:0;font-family:var(--ui)}
  white-space:nowrap;opacity:0;transition:opacity .2s;pointer-events:none;line-height:1.4}
+
+/* ---- in their own words: first-hand pieces by the people who served ---- */
+.voice{border-left:3px solid var(--red);padding:2px 0 2px 18px;margin:0 0 30px;
+ max-width:var(--measure)}
+.voice h3{font-size:1.16rem;margin:0 0 3px}
+.voice .by{font-size:.86rem;color:var(--ink3);margin:0 0 12px}
+.voice p{margin:0 0 .85em}
+.voice .go{font-size:.9rem}
+.recall{max-width:var(--measure);font-size:.9rem;color:var(--ink3);
+ border:1px solid var(--line);border-radius:5px;padding:11px 14px;margin:0 0 22px}
+.contribline{max-width:var(--measure);font-size:.86rem;color:var(--ink3);margin:22px 0 0}
 """
+
 
 # ---------------------------------------------------------------- searches
 ORG_TERMS = ['"student government association"', '"associated student government"',
@@ -464,6 +478,7 @@ def name_searches(name):
 
 # ---------------------------------------------------------------- shell
 NAV_ITEMS = [("index.html", "The board"), ("story.html", "The story"),
+             ("voices.html", "In their own words"),
              ("patterns.html", "Patterns"), ("events.html", "What SGA put on"),
              ("irregular.html", "Irregular terms"),
              ("branches.html", "How it was built"),
@@ -498,8 +513,9 @@ entry names the source it came from.</p></div>
 <p>The names here start with the plaque in the SGA Chambers, and the plaque is known to be
 wrong in places. Where the archive disagrees with it, this site follows the archive and
 records the change on the <a href="{up}corrections.html">corrections page</a>. If you
-served, or you know that a year here is wrong, the project wants to hear from you through
-the Student Government Association office.</p></div>
+served, or you know that a year here is wrong, the project wants to hear from you: people
+who held an office can be given the keys to their own year on the
+<a href="{up}contribute.html">contribute page</a>.</p></div>
 <div><h2>What it rests on</h2>
 <p>Everything here comes from what is publicly available online: the digitised
 <cite>Herald</cite> and SGA's own papers on TopSCHOLAR, the <cite>Talisman</cite> yearbooks,
@@ -962,7 +978,7 @@ def year_sources(y):
     return [(labels[k], urls[k], counts[k]) for k in order]
 
 
-def render_year(y, prev, nxt, leg, repeats):
+def render_year(y, prev, nxt, leg, repeats, posts=()):
     yid = y["id"]
     pres = [l["name"] for l in y["leaders"] if l["role"] == "president"]
     regs = [l["name"] for l in y["leaders"] if l["role"] == "regent"]
@@ -1091,9 +1107,11 @@ def render_year(y, prev, nxt, leg, repeats):
 {puton}
 {chron}
 {render_gallery(y)}
+{render_voices_year(posts, yid)}
 {render_docs(y)}
 {render_leg_year(leg)}
 {bib}
+{contributions_note(y)}
 <section class="citebox">
  <p class="lab">Preferred citation</p>
  <p class="citestr" id="cite">{citation}<span id="citeurl">y/{h(yid)}.html</span></p>
@@ -6934,6 +6952,127 @@ def apply_photo_overlay(ys):
                 {"file": p["file"], "caption": p.get("caption", ""), "src": p.get("src")})
 
 
+# ------------------------------------------------- in their own words
+# Pieces written by the people who served, through the contributor editor.
+# They are recollection, not research, and the site says so on every one of
+# them. They are not held to the "no source, no entry" rule that governs the
+# dated record, because for a person's own term the person is the source.
+
+RECALL = ("Written from memory by the person who served, not assembled from the "
+          "archive. It is not sourced and it is not fact-checked against the record. "
+          "Where a recollection and the archive disagree, both stay up.")
+
+
+def load_posts():
+    out = []
+    if not POSTS.is_dir():
+        return out
+    for f in sorted(POSTS.glob("*.json")):
+        try:
+            p = json.loads(f.read_text())
+        except (json.JSONDecodeError, OSError):
+            print(f"!! could not read {f.name}, skipped")
+            continue
+        if p.get("title") and p.get("body"):
+            p.setdefault("slug", f.stem)
+            out.append(p)
+    out.sort(key=lambda p: (p.get("year", ""), p.get("date", "")))
+    return out
+
+
+def voice_block(p, up, heading=True):
+    who = h(p.get("author", "Anonymous"))
+    if p.get("author_role"):
+        who += f', {h(p["author_role"])}'
+    body = "".join(f"<p>{h(str(x))}</p>" for x in p["body"])
+    head = f'<h3>{h(p["title"])}</h3>' if heading else ""
+    yr = ""
+    if p.get("year"):
+        yr = f' &middot; <a href="{up}y/{h(p["year"])}.html">{h(p["year"])}</a>'
+    return (f'<article class="voice" id="{h(p["slug"])}">{head}'
+            f'<p class="by">{who}{yr} &middot; written {h(p.get("date", ""))}</p>'
+            f'{body}</article>')
+
+
+def render_voices_year(posts, yid):
+    """The section that hangs off a year page."""
+    mine = [p for p in posts if p.get("year") == yid]
+    if not mine:
+        return ""
+    word = "piece" if len(mine) == 1 else "pieces"
+    return (f'<h2 class="sec">In their own words<span class="n">{len(mine)}</span></h2>'
+            f'<p class="secnote">{len(mine)} {word} written by people who were there. '
+            f'{RECALL}</p>'
+            + "".join(voice_block(p, "../") for p in mine))
+
+
+def contributions_note(y):
+    """Say plainly who has had a hand in a year, and when."""
+    rows = y.get("contributions") or []
+    if not rows:
+        return ""
+    seen, people = set(), []
+    for c in rows:
+        key = (c.get("by"), c.get("role"))
+        if c.get("by") and key not in seen:
+            seen.add(key)
+            people.append(c["by"] + (f' ({c["role"]})' if c.get("role") else ""))
+    last = max((c.get("on", "") for c in rows), default="")
+    return (f'<p class="contribline">This year has been edited by the people who served '
+            f'in it: {h(", ".join(people))}. Last change {h(last)}. Every edit is kept '
+            f'in the project\'s history and can be undone.</p>')
+
+
+VOICES_CSS = """
+.vhead{padding:52px 0 26px;border-bottom:1px solid var(--line)}
+.vhead h1{font-size:clamp(2rem,5vw,2.9rem);margin:10px 0 0}
+.vhead .lede{font-size:1.14rem;color:var(--ink2);max-width:var(--measure);margin:18px 0 0}
+.vlist{padding:34px 0 80px;max-width:var(--measure)}
+.vgrp{margin:0 0 40px}
+.vgrp > h2{font-size:1.05rem;padding-bottom:7px;border-bottom:1px solid var(--line2);
+ margin:0 0 20px}
+"""
+
+
+def render_voices(posts, ys):
+    known = {y["id"] for y in ys}
+    if posts:
+        groups = []
+        for yid in sorted({p.get("year") or "" for p in posts}, reverse=True):
+            inks = [p for p in posts if (p.get("year") or "") == yid]
+            label = (yid if yid in known else "Not tied to one year") or "Not tied to one year"
+            groups.append(f'<section class="vgrp"><h2>{h(label)}</h2>'
+                          + "".join(voice_block(p, "") for p in inks) + '</section>')
+        listing = "".join(groups)
+    else:
+        listing = ('<div class="recall">Nothing has been written here yet. The people who '
+                   'served are being invited to write, one year at a time.</div>')
+
+    body = f"""
+<div class="wrap"><header class="vhead">
+ <p class="lab">First-hand</p>
+ <h1>In their own words</h1>
+ <p class="lede">The rest of this site is built from what somebody wrote down at the time,
+ and most of what happened was never written down at all. This page is the other kind of
+ record: the people who held the office, saying what it was actually like.</p>
+ <p class="lede" style="font-size:1rem;color:var(--ink3)">{RECALL} If you served and want
+ to add to this, the <a href="contribute.html">contribute page</a> explains how.</p>
+</header>
+<div class="vlist">{listing}</div></div>"""
+    return shell("In their own words - SGA 60",
+                 "First-hand accounts written by the people who held office in WKU "
+                 "student government.", body, VOICES_CSS, 0, "voices.html")
+
+
+def render_contrib_page(name, title, desc):
+    """One of the three contributor pages, wrapped in the site's own shell."""
+    frag = PAGES / f"{name}.html"
+    if not frag.is_file():
+        return None
+    css = (PAGES / "contribute.css").read_text() if (PAGES / "contribute.css").is_file() else ""
+    return shell(title, desc, frag.read_text(), css, 0, f"{name}.html")
+
+
 def main():
     raw = json.loads(DATA.read_text())
     ys = raw["years"]
@@ -6963,12 +7102,13 @@ def main():
     YDIR.mkdir(parents=True, exist_ok=True)
     HDIR.mkdir(parents=True, exist_ok=True)
 
+    posts = load_posts()
     (SITE / "index.html").write_text(repair_anchors(render_index(ys, len(leg), n_herald)))
     for i, y in enumerate(ys):
         (YDIR / f'{y["id"]}.html').write_text(repair_anchors(
             render_year(y, ys[i - 1] if i else None,
                         ys[i + 1] if i < len(ys) - 1 else None,
-                        by_session.get(y["id"], ()), repeats)))
+                        by_session.get(y["id"], ()), repeats, posts)))
     hist = render_history(ys, herald)
     for path, page in hist.items():
         (SITE / path).write_text(repair_anchors(page))
@@ -7003,6 +7143,22 @@ def main():
             f.unlink()
     (SITE / "legislation.html").write_text(render_legislation(leg))
     (SITE / "corrections.html").write_text(repair_anchors(render_corrections(ys)))
+    (SITE / "voices.html").write_text(repair_anchors(render_voices(posts, ys)))
+
+    # the contributor pages: sign in, edit your year, and the editor's desk
+    for name, title, desc in (
+            ("contribute", "Add to the record - SGA 60",
+             "People who held office in WKU student government can be given the keys "
+             "to their own year."),
+            ("edit", "Your year - SGA 60",
+             "Edit the year you served in."),
+            ("admin", "The editor's desk - SGA 60",
+             "Approve contributors and review what they have changed.")):
+        page = render_contrib_page(name, title, desc)
+        if page:
+            (SITE / f"{name}.html").write_text(page)
+        else:
+            print(f"!! scripts/pages/{name}.html is missing, that page was not built")
 
     n_port = sum(1 for y in ys for l in y["leaders"] if l.get("photo"))
     n_gal = sum(len(y.get("photos") or []) for y in ys)
