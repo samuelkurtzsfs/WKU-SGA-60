@@ -80,6 +80,20 @@ def main():
     check("adding a person is allowed",
           probs(lambda y: y["leaders"].append({"name": "New Person", "role": "regent"})) == [])
 
+    print("the research drop box can only reach research branches")
+    def refuses(name):
+        try:
+            A.safe_branch(name)
+            return False
+        except A.Res:
+            return True
+    check("a research branch is allowed", A.safe_branch("research-profiles") == "research-profiles")
+    check("main is refused", refuses("main"))
+    check("a sneaky main is refused", refuses("research-x/../main"))
+    check("an empty branch is refused", refuses(""))
+    check("someone else's branch is refused", refuses("feature-x"))
+    check("a ref path is refused", refuses("refs/heads/main"))
+
     print("the commit it writes")
     msg = A.commit_message({"name": "Jane Doe", "email": "j@x.test",
                             "role": "President, 1994-95"},

@@ -552,7 +552,106 @@ def r_admin_revert(handler, body):
     return {"ok": True, "reverted": undone}
 
 
+# ------------------------------------------------- the research drop box
+# The cloud research routines cannot reach GitHub: the platform refuses them
+# with "GitHub access is not enabled for this session," so a run researches,
+# verifies, builds, and then dies with its container. This is the way back in.
+# A routine posts its finished files here with a shared token and the site
+# commits them under its own credentials.
+#
+# It can only ever write to a research-* branch. Nothing here can touch main,
+# and nothing here can merge. The editor routine still decides what publishes.
+
+def need_research_token(handler):
+    want = os.environ.get("RESEARCH_TOKEN", "")
+    got = handler.headers.get("Authorization", "")
+    if not want:
+        raise Res(503, {"error": "The research drop box is not configured."})
+    if not got.startswith("Bearer ") or not hmac.compare_digest(got[7:], want):
+        raise Res(401, {"error": "Bad research token."})
+
+
+def safe_branch(name):
+    if not re.fullmatch(r"research-[a-z0-9][a-z0-9._-]{0,60}", str(name or "")):
+        raise Res(400, {"error": "Branch must match research-* and nothing else. "
+                                 "This endpoint cannot write to main."})
+    return name
+
+
+def ensure_branch(branch):
+    st, _ = gh("GET", f"/repos/{REPO}/git/ref/heads/{urllib.parse.quote(branch)}")
+    if st == 200:
+        return
+    st, main_ref = gh("GET", f"/repos/{REPO}/git/ref/heads/{BRANCH}")
+    if st != 200:
+        raise Res(502, {"error": "Could not read main to branch from."})
+    gh("POST", f"/repos/{REPO}/git/refs",
+       {"ref": f"refs/heads/{branch}", "sha": main_ref["object"]["sha"]})
+
+
+def r_research_file(handler, body):
+    """Commit one file onto a research branch. Content is base64."""
+    need_research_token(handler)
+    branch = safe_branch(body.get("branch"))
+    path = str(body.get("path", ""))
+    if not path or path.startswith("/") or ".." in path:
+        raise Res(400, {"error": "Bad path."})
+    if not (path.startswith("data/") or path.startswith(".research/")):
+        raise Res(400, {"error": "Only data/ and .research/ can be written here. "
+                                 "site/ is generated at deploy."})
+    try:
+        raw = base64.b64decode(str(body.get("content_b64", "")), validate=True)
+    except Exception:
+        raise Res(400, {"error": "content_b64 is not valid base64."})
+    if path.endswith(".json"):
+        try:
+            json.loads(raw.decode("utf-8"))
+        except Exception as e:
+            raise Res(400, {"error": f"That is not valid JSON: {str(e)[:120]}"})
+
+    ensure_branch(branch)
+    st, meta = gh("GET", f"/repos/{REPO}/contents/{urllib.parse.quote(path)}"
+                         f"?ref={urllib.parse.quote(branch)}")
+    sha = meta.get("sha") if st == 200 and isinstance(meta, dict) else None
+    payload = {"message": str(body.get("message") or f"Research: {path}")[:400],
+               "branch": branch,
+               "content": base64.b64encode(raw).decode()}
+    if sha:
+        payload["sha"] = sha
+    st, resp = gh("PUT", f"/repos/{REPO}/contents/{urllib.parse.quote(path)}", payload)
+    if st not in (200, 201):
+        raise Res(502, {"error": "GitHub refused the write.",
+                        "detail": str((resp or {}).get("message", ""))[:300]})
+    return {"ok": True, "branch": branch, "path": path, "bytes": len(raw),
+            "commit": ((resp or {}).get("commit") or {}).get("sha", "")}
+
+
+def r_research_pr(handler, body):
+    """Open the branch's pull request, or comment on the one already open."""
+    need_research_token(handler)
+    branch = safe_branch(body.get("branch"))
+    title = str(body.get("title") or f"Research: {branch}")[:200]
+    note = str(body.get("body") or "")[:60000]
+
+    st, existing = gh("GET", f"/repos/{REPO}/pulls?state=open&head="
+                             f"{REPO.split('/')[0]}:{urllib.parse.quote(branch)}")
+    if st == 200 and isinstance(existing, list) and existing:
+        num = existing[0]["number"]
+        if note:
+            gh("POST", f"/repos/{REPO}/issues/{num}/comments", {"body": note})
+        return {"ok": True, "pr": num, "state": "commented"}
+
+    st, pr = gh("POST", f"/repos/{REPO}/pulls",
+                {"title": title, "head": branch, "base": BRANCH, "body": note})
+    if st not in (200, 201):
+        raise Res(502, {"error": "Could not open the pull request.",
+                        "detail": str((pr or {}).get("message", ""))[:300]})
+    return {"ok": True, "pr": pr.get("number"), "state": "opened"}
+
+
 ROUTES = {
+    ("POST", "/api/research/file"): lambda h, b, q: r_research_file(h, b),
+    ("POST", "/api/research/pr"): lambda h, b, q: r_research_pr(h, b),
     ("POST", "/api/auth/request"): lambda h, b, q: r_auth_request(h, b),
     ("GET", "/api/auth/callback"): lambda h, b, q: r_auth_callback(h, q),
     ("GET", "/api/auth/logout"): lambda h, b, q: r_auth_logout(h),
