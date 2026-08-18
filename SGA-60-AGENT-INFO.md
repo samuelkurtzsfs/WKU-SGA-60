@@ -329,8 +329,53 @@ That last line is the argument for never skipping the checker.
    the same search and was deliberately left out of the archive: it says
    nothing about her SGA service, and this project does not record a living
    person's post-office career absent a source connecting it to that service.
-7. **~20 citations** rest on homepage or tag-index captures rather than article
-   permalinks.
+7. ~~**~20 citations rest on homepage or tag-index captures.**~~ **Done, 18
+   August 2026.** All 16 found (a systematic scan of every `src`, leader,
+   officer and document citation in `data/years.json` for a bare Wayback
+   homepage, a `/tag/` index, or a bare `digitalcommons.wku.edu/dlsc_ua_records/`
+   collection root) were checked one at a time, then the 8 proposed upgrades
+   were sent to a separate adversarial verifier before anything was committed.
+   `web.archive.org` is not rate-limited in this environment, it is a hard
+   **"Blocked by egress policy"** on both `https` and `http`, so none of those
+   captures could be read directly; the `archive.org/wayback/available` API
+   confirms the snapshots still exist, and `archive.org` (no `web.` prefix) and
+   `digitalcommons.wku.edu` landing pages remain open.
+   **8 citations got a real digitalcommons.wku.edu/dlsc_ua_records permalink**
+   in place of a bare Wayback homepage or collection root, found by matching
+   the event's own text against that issue's indexed headline list in
+   `data/herald-index-full.json`: Sandra Norfleet's citation, which had decayed
+   to a bare collection root, now points at `dlsc_ua_records/2464`, the exact
+   issue this file's own settled-facts section already names; and seven 2005-06
+   /2009-10 events/leaders moved from a dateless Wayback front page to the
+   specific issue whose headline names the story (e.g. "Rob Watkins elected SGA
+   president" → `dlsc_ua_records/3692`, headlined "See Rob Run, Win . . .
+   Barely"). The verifier caught real overclaiming in three of those eight and
+   they were trimmed rather than published as found: a "10 pieces of
+   legislation" count and an itemised list of bills that only the headline
+   "Approves Less Legislation This Semester" could not support (the count is
+   now dropped, keeping only the confirmed decrease and the confirmed
+   election of Jeanne Johnson as speaker, whose full name the headline gives
+   directly — the entry no longer hedges her as "a senator named Johnson");
+   a $2,000/two-bills/unanimous claim for a 40th-anniversary party story that
+   only the headline "Plans Anniversary Party" could confirm (the figures are
+   cut); and a Rally for Higher Education preview wrongly written up as
+   reporting that Gov. Beshear did address the rally, an advance-notice error
+   this file's own §6.1 warns about (cut back to what the preview actually
+   said). **6 citations could not be upgraded** — a Wayback front-page or
+   `/tag/sga/` capture with no better source found locally or on the live
+   `wkuherald.com` WordPress API — and were left in place with the citation
+   itself marked as a front-page or tag-index capture rather than the specific
+   article, so a reader can see the citation is weaker than it looks without
+   the caveat intruding on the entry's prose: the 2006-07 events for the I-A resolution
+   and Johnson's regent-election win, the 2006-07 Jeanne Johnson leader record,
+   the 2009-10 Judicial Council removal and two-senators-resign events, and
+   Chief Justice Stuart Kenderes's senate-officer record. **2 looked
+   suspicious but checked out fine and were left untouched**: the
+   `wkuherald.com/36017/uncategorized/sga/` URL used for the 2014-15 election
+   challenge and Jay Todd Richey's 2015-16 leader record turned out to be a
+   real, specific post — fetching it directly shows an `og:type` of "article"
+   and a description matching the claim word for word, just filed under a
+   generic "uncategorized" WordPress category rather than a descriptive slug.
 8. **Pre-2011 legislation** on TopSCHOLAR (~444 docs) never harvested.
 
 ---
