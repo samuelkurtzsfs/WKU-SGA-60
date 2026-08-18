@@ -201,3 +201,103 @@ before; all six are separate events and none come from this work.
   legislation.
 - The research routines still branch from the orphaned 4 August snapshots. Until
   they cut from `origin/main`, their work will keep arriving unmergeable.
+
+---
+
+# 18 August 2026, evening — editorial pass
+
+Three research pull requests were open. All three are merged, none of them exactly
+as they arrived.
+
+## What was reviewed
+
+**#12, the cabinet accounts (merged).** Twenty executive officers from 1971-72
+through 1976-77 given a full account of their term, plus a genuine rendering fix:
+`profile` was reaching the data and never reaching a reader on officer pages,
+so batch one's work had been sitting invisible. Fourteen claims were opened
+against their sources — the 1972-1977 Talisman full texts and the Herald index —
+and thirteen held, several word for word: Reginald Glass as the first Black vice
+president, Boteler as McGovern's campus co-ordinator and an alternate delegate,
+Christy Vogt's whole path from Angela Merici High School to the presidency,
+the January 1976 book exchange down to the 25 cents a book.
+
+Four things were corrected before it went out. Rick Kelley's 1976-77 account had
+cut his own words down to "sold out" and then set them against the yearbook's
+report that the Chicago concert was not a sellout. What he said was that the show
+sold out of *advance* tickets and grossed over $50,000, which the yearbook does
+not contradict. That is the worst kind of error this project can make: it invents
+a disagreement and puts a man on the wrong side of it. His 1975-76 account called
+the Ronstadt concert the year's most successful show financially, a ranking the
+Talisman never makes. Tom Blair's said the record does not preserve what his
+charges against Steve Henry concerned, when the archive already records them.
+And Stan McDivitt's entry still cited the Herald issue of 7 February 1975 for a
+post that issue does not mention him holding.
+
+**#13, the senate rolls (merged after rewriting).** The archive has never
+recorded a single rank-and-file Congress member. It now records 104, across
+1970-71 to 1975-76, each with its own source. The research is sound and in one
+place better than sound: the reading of the 1973 constitutional revision, which
+put class presidents and vice presidents on the roll of Congress from 1972-73 but
+not before, is correct and correctly argued, and it is why eleven 1971-72 class
+officers were rightly left out. The 1976 attendance roll is the find of the pass —
+the ASG's own printed Congress roster, effective 6 April 1976, with a
+meetings-missed column and a line recording Mitchell Deep's resignation.
+
+It could not be published as written. Forty of the 104 notes were verification
+memos rather than history, arguing about vote counts and seat assignments that
+were correctly never published, in the voice of a checker: a source "confirms in
+full," a figure is "Herald-only and unconfirmed," something "could not be read
+this session." A reader would have met a rebuttal of claims they cannot see. The
+notes also reproduced about 1,170 words of Talisman prose verbatim, one Lambda Chi
+Alpha sentence printed three times over because three men were named in it,
+against a standing rule of one quote under fifteen words per source. Forty-seven
+notes and three seat lines were rewritten as plain history. Nothing sourced was
+lost, and every real limit survived in ordinary words.
+
+**#14, the photographs (merged in part).** Nick Todd and Reagan Gilley have
+portraits for the first time, and Katie Dawson's and Jeanne Johnson's existing
+portraits now cover their acting and mid-year terms, so no leader is left without
+a face. Three further headshots cut from the same 2004 election guide are held
+back. No caption was quoted for any of them, and Sarah Cecil's picture comes from
+an article covering two women, Alicia Bachicha and Sarah Cecil, so which face
+carries which name rests entirely on having read the page right. The Herald PDFs
+would not open from here to check. Quoting the caption beside each photograph
+restores all three; the files were removed so nothing half-verified sits waiting
+to be picked up.
+
+## What this pass suggests about the routines
+
+Both #12's real errors and #13's presentation problem come from the same place:
+the checking step producing text that then gets published. A quoted claim is
+evidence of what someone said, not of what happened, and a verifier's verdict
+belongs in `.research/`, not in a `note` a reader will see. If a claim did not
+survive, drop the claim rather than publishing an argument against it.
+
+## Left open deliberately
+
+The name fragmentation the senate rolls introduce: Michael and Mike Inman,
+Christy Kay Vogt and Christy Vogt, Carl Stolzfus and Stoltzfus, Frank Mendaris
+and Medaris almost certainly each denote one person, and `name-aliases.json`
+exists for it. No aliases were added, because an alias asserts two names are one
+human. **Thomas A. Blair needs care:** the 1975 senior directory has him a senior
+in 1974-75, which sits badly with the Tom Blair elected administrative vice
+president for 1976-77, and the 1976 roll carries both a Tom and a Becky Blair.
+
+Also still open: Katie Dawson's portrait is sourced to a commercial newspaper
+rather than a university archive, and should be replaced when a WKU-held image
+turns up. And #12's `build.py` change steps outside the rule that `years.json` is
+the only file edited; it was kept because it fixed a real rendering gap, but the
+rule is worth restating to the routines.
+
+## Where the record stands
+
+61 years, 1,878 dated events, 60 people who have been president, 104 Congress
+members, 34 documents, 390 legislation files. `build.py`, `check_data.py` and
+`check_contrib.py` all exit clean. `check_duplicates.py` reports the same six
+pairs as before; all six are separate events — three months between the
+designated-driver items, a plan and an event for the Pride Week coffee house,
+same-day bills in 1991-92 — and none come from this work.
+
+One note the previous report can be marked resolved on: the research routines are
+no longer branching from the orphaned 4 August snapshots. All three of these
+branched from current `main` and merged normally.
