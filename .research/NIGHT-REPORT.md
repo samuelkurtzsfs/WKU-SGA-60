@@ -577,7 +577,13 @@ Two bugs in `harvest_herald_index.py`, both now fixed:
    "done" and changed nothing. A new `--refresh` flag reparses what is already
    held.
 
-The full index has been re-harvested with the fix.
+The full index has been re-harvested with the fix, and the scale of what had
+been lost is worth stating plainly: the same 11,850 items now hold **141,079
+article lines where they held 17,601**. Eight times the searchable record, from
+the same archive, with nothing newly fetched - it had all been harvested and
+then thrown away at the parse. The 14 April 1994 issue now carries 35 headlines
+instead of one, the Sivley story among them. No line is capped any more; the
+longest runs to 2,866 characters.
 
 This is not a small correction. CLAUDE.md called that file "the complete article
 index" and instructs every routine to grep it first, which together manufacture
