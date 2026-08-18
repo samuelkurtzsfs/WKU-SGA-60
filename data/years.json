@@ -31752,15 +31752,6 @@
        }
       },
       {
-       "name": "Kahlil Garmon",
-       "seat": "Senator-at-large",
-       "note": "Named a \"Former Senator-at-large\" in Bill 1-22-S, January 2022, indicating he had already left the seat by then.",
-       "src": {
-        "label": "SGA Bill 1-22-S, 2021-22 session",
-        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/1_22_s.pdf"
-       }
-      },
-      {
        "name": "Kat Howard",
        "seat": "Ogden College of Science & Engineering Senator",
        "src": {
@@ -31774,15 +31765,6 @@
        "src": {
         "label": "SGA Bill 4-22-S, 2021-22 session",
         "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/4_22_s.pdf"
-       }
-      },
-      {
-       "name": "Roderick Maul",
-       "seat": "Senator",
-       "note": "Named a \"Former Senator\" in Bill 18-22-S, March 2022; the source gives no specific seat and indicates he had left it by then.",
-       "src": {
-        "label": "SGA Bill 18-22-S, 2021-22 session",
-        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/18_22_s.pdf"
        }
       },
       {
@@ -31852,7 +31834,8 @@
         "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_1_22_s.pdf"
        }
       }
-     ]
+     ],
+     "note": "Two bills of this session name people as former senators without saying when they held the seat: Kahlil Garmon, \"Former Senator-at-large\" in Bill 1-22-S of January 2022, and Roderick Maul, \"Former Senator\" in Bill 18-22-S of March 2022. Neither is listed below, because the year in which each served is not established."
     }
    }
   },
@@ -32917,19 +32900,10 @@
       {
        "name": "Maksim Zaepfel",
        "seat": "Senator At-large",
-       "note": "A later bill (50-23-S) spells this senator's name \"Zaephel\" in an otherwise identical role; the correct spelling could not be settled from the available bills.",
+       "note": "Bill 16-22-F spells the name \"Zaepfel\" and Bill 50-23-S \"Zaephel\", in the same seat and the same session; which is correct could not be settled from the bills.",
        "src": {
         "label": "SGA Bill 16-22-F, 2022-23 session",
         "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_16_22_f.pdf"
-       }
-      },
-      {
-       "name": "Maksim Zaephel",
-       "seat": "Senator At-large",
-       "note": "An earlier bill (16-22-F) spells this senator's name \"Zaepfel\" in an otherwise identical role; the correct spelling could not be settled from the available bills.",
-       "src": {
-        "label": "SGA Bill 50-23-S, 2022-23 session",
-        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_50_23_s.pdf"
        }
       }
      ]
