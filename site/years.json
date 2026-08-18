@@ -8345,9 +8345,31 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5627",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6633&context=dlsc_ua_records"
       }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Mark Wilson",
+      "note": "A Shelbyville student, elected 22 April 1980 over Michael Allen Baker, a Cincinnati senior, 821-342; the Herald's results list printed the office as \"administrative president\", while the 1981 Talisman calls him administrative vice president. He led the opposition to M.A. Baker's resolution to abolish dormitory room inspections, saying \"Public safety comes at the expense of the individual's absolute rights.\" ASG defeated the resolution 16-13 and a second attempt 24-9.",
+      "src": {
+       "label": "1981 Talisman, Associated Student Government, pp. 282-283",
+       "url": "https://archive.org/details/talisman1981west"
+      }
      }
     ],
-    "note": "Mark Wilson and Greg Zoeller were elected to other top ASG offices in the same April 1980 election; the Herald index does not specify which."
+    "note": "Greg Zoeller was elected to a third top ASG office in the same April 1980 election as Fuller and Wilson; the Herald report names him among the winners but does not say which office, and no later source read so far confirms it.",
+    "senate": {
+     "officers": [
+      {
+       "office": "Judicial Council Member",
+       "name": "Paul J. Deom",
+       "note": "Wrote to the Herald in February 1982, identified in the article index as a former member of the Judicial Council, airing grievances after being replaced.",
+       "src": {
+        "label": "Herald 57:37, 4 Feb 1982",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2443"
+       }
+      }
+     ]
+    }
    }
   },
   {

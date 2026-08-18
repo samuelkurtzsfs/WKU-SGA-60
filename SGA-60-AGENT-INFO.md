@@ -268,10 +268,39 @@ That last line is the argument for never skipping the checker.
    one — one of those two also turned out to duplicate another entry
    word-for-word, which is now removed. `.research/branches-moments.json` is
    now empty.
-4. **Three years still have no cabinet:** 1979-80, 2001-02, 2003-04.
-   `.research/officers-unchecked.json` has 92 candidates covering exactly those.
-5. **Four people have no portrait:** Nick Todd, Katie Dawson, Jeanne Johnson,
-   Reagan Gilley.
+4. ~~**Three years still have no cabinet.**~~ **Attempted, 18 August 2026 — the
+   three years are still empty.** All 92 candidates in `.research/officers-unchecked.json`
+   were checked one at a time against their cited source (paced, 3+ seconds
+   apart on `digitalcommons.wku.edu`). Only 3 survived, and none of them are
+   for 1979-80, 2001-02 or 2003-04 — every candidate for those three years was
+   sourced to either a `digitalcommons.wku.edu/sga/Meetings/Minutes/NNN`
+   landing page (which in this environment shows only a generic one-sentence
+   agenda-topic list — "budget, appointments, blood drive" — never an
+   individual's name, because the PDF behind it is blocked) or to
+   `web.archive.org`, which is flatly unreachable from this session (curl
+   returns HTTP 403, WebFetch errors outright). Two 1980-81 candidates were
+   confirmed instead and merged: **Mark Wilson as administrative vice
+   president**, fully confirmed including two vote counts and a direct quote
+   against archive.org's OCR text of the 1981 Talisman, and **Paul J. Deom as
+   a Judicial Council member**, trimmed to what his own February 1982 Herald
+   letter actually supports. A third, Greg Zoeller, was found genuinely
+   elected to "one of the top three ASG offices" in April 1980 by the cited
+   Herald headline, but the headline never states which office, so — per this
+   file's own standard that a specific claim needs a source that actually
+   carries it — he was held back rather than filed under the guessed title of
+   "activities vice president." The full audit of all 92, including every
+   rejection reason, is in `.research/officers-checked.json`.
+   `.research/officers-unchecked.json` is now empty. **The three years remain
+   genuinely without a recorded cabinet** — not for lack of trying, but
+   because nothing in this candidate batch survives contact with a source this
+   session can actually read. A future run with working `viewcontent.cgi` or
+   `web.archive.org` access could recheck the 21 items marked
+   "source unreachable" in the audit file; the other 68 were checked against
+   a source that loaded fine and simply didn't say what was claimed.
+5. ~~**Four people have no portrait.**~~ **Done, 18 August 2026** (a separate
+   photographs pass, recorded in `.research/NIGHT-REPORT.md`) — Nick Todd,
+   Katie Dawson, Jeanne Johnson and Reagan Gilley all have portraits in
+   `data/photos.json` now.
 6. **Two names unconfirmed:** Reed Morgan (1968), and whether Amanda Coates and
    the plaque's Amanda Lich are one person. On Reed Morgan: the C1 branch check
    (item 2, above) found that Kelly Thompson's 1 April 1966 approval letter
