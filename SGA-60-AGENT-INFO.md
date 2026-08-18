@@ -301,15 +301,34 @@ That last line is the argument for never skipping the checker.
    photographs pass, recorded in `.research/NIGHT-REPORT.md`) — Nick Todd,
    Katie Dawson, Jeanne Johnson and Reagan Gilley all have portraits in
    `data/photos.json` now.
-6. **Two names unconfirmed:** Reed Morgan (1968), and whether Amanda Coates and
-   the plaque's Amanda Lich are one person. On Reed Morgan: the C1 branch check
-   (item 2, above) found that Kelly Thompson's 1 April 1966 approval letter
-   (`digitalcommons.wku.edu/dlsc_ua_records/527`) is addressed to "committee
-   chair Reed Morgan and vice chair John Lovett" — direct documentary support,
-   independent of the sources already behind this project's settled reading in
-   section 7, that Morgan's plaque credit honours the constitution committee's
-   chairmanship rather than the presidency. This does not by itself resolve
-   Amanda Coates/Lich, which still needs its own pass.
+6. ~~**Two names unconfirmed.**~~ **Both settled, 18 August 2026.** Reed Morgan
+   (1968): the C1 branch check (item 2, above) found that Kelly Thompson's 1
+   April 1966 approval letter (`digitalcommons.wku.edu/dlsc_ua_records/527`) is
+   addressed to "committee chair Reed Morgan and vice chair John Lovett" —
+   direct documentary support, independent of the sources already behind this
+   project's settled reading in section 7, that Morgan's plaque credit honours
+   the constitution committee's chairmanship rather than the presidency.
+   Amanda Coates/Lich: two sittings of the Kentucky Council on Postsecondary
+   Education carry it. The minutes of 13 November 2000
+   (`cpe.ky.gov/aboutus/records/cpe_meetings/minutes-2000-11-13.pdf`) introduce
+   the incoming holder of the council's statewide student seat as Amanda
+   Coates, "a graduate of Western Kentucky University" — which is what ties
+   the council's student member to this university at all. The minutes of 30
+   July 2001 (`.../minutes-2001-07-30.pdf`), recording Governor Patton's
+   appointment of her successor, name the outgoing member "Amanda Coates
+   Lich". The first carries Coates of Western into the seat, the second
+   carries Lich out of it, and between them they tie the plaque's surname to
+   the Coates named in every source from her actual SGA year. The 30 July
+   minutes alone would not have done it: they never mention Western. The 1999-00 leader entry's
+   note, sources and profile are updated accordingly; two degraded duplicate
+   citations (a bare collection-root URL and a wildcard web.archive.org
+   search URL, both standing in for specific pages already cited properly
+   elsewhere in the same list) were also dropped from that entry, an instance
+   of the item 7 problem below caught along the way. A WKU staff-directory
+   trace of "Amanda Coates Lich" as a current university employee turned up in
+   the same search and was deliberately left out of the archive: it says
+   nothing about her SGA service, and this project does not record a living
+   person's post-office career absent a source connecting it to that service.
 7. **~20 citations** rest on homepage or tag-index captures rather than article
    permalinks.
 8. **Pre-2011 legislation** on TopSCHOLAR (~444 docs) never harvested.
