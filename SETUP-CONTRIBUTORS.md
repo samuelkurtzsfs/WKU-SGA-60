@@ -26,15 +26,31 @@ tools. So each run finishes its work and then dies with its container. Twelve
 hours of research has already gone this way, including ten finished and
 fact-checked officer profiles for the early 1970s.
 
-**The fix.** Connect GitHub to your Claude account so cloud sessions are
-allowed to reach it.
+**The fix, and it is one command.** In a Claude Code terminal session, type:
 
-1. Go to <https://claude.ai/settings/connectors> and look for GitHub. If it is
-   there, connect it and give it access to `samuelkurtzsfs/WKU-SGA-60`.
-2. If it is not there, install the app directly from
-   <https://github.com/apps/claude> and grant it that one repository.
-3. Then come back and re-run one routine from
-   <https://claude.ai/code/routines> to confirm a branch appears.
+```
+/web-setup
+```
+
+That takes the GitHub token your terminal is already signed in with, which is
+`samuelkurtzsfs` with the `repo` scope, and syncs it to your Claude account.
+Cloud sessions then reach GitHub with the same access you have.
+
+There is a second way, authorizing the Claude GitHub App at
+<https://github.com/apps/claude>. Either one works on its own; you do not need
+both.
+
+Two things that are easy to get wrong here:
+
+- **Installing the App on the repository is not what grants session access.**
+  It only turns on pull request webhooks. If the App is already installed and
+  the routines still fail, installing it again changes nothing. Run
+  `/web-setup`.
+- The GitHub option inside a Claude chat, for adding repository files to a
+  conversation, is a different feature and does not affect cloud sessions.
+
+Afterwards, re-run one routine from <https://claude.ai/code/routines> and check
+that a `research-*` branch appears on GitHub. That is the proof it worked.
 
 **If that does not work**, the site now has a way around it, described in Part
 3 below. Either path fixes the problem. The GitHub connection is the cleaner
