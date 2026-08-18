@@ -1,0 +1,1740 @@
+[
+ {
+  "year": "1970-71",
+  "name": "Peggy Hundley",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed at t1971.txt lines 7038-7051: caption reads 'Front Row: Brett Butler, treasurer; Carol Gray, secretary; John Lyne, president; Peggy Hundley. Second Row: Joe Gerard; Glen Sweet; Doug Alexander, vice president,' directly under text stating the Executive Council is the four executive officers plus three members elected from Congress -- Hundley is one of the three.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 67",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Joe Gerard",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Same caption (t1971.txt lines 7048-7051) names 'Joe Gerard' in the second row alongside Sweet and Alexander, matching the claim exactly.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 67",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Glen Sweet",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Same caption (t1971.txt lines 7048-7051) names 'Glen Sweet' in the second row, matching the claim exactly.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 67",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Tony Cochran",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "t1973.txt lines 11098-11230 fully support the 'representative at large' role, the Lyne/Alexander context placing the term in 1970-71, the Sigma Nu membership, and the father's identity, but contain no mention of an October 1970 primary or a 186-vote count -- that detail rests entirely on an uninspected Herald citation, so it is trimmed pending verification.",
+  "src": {
+   "label": "1973 Talisman, Profile, pp. 233-234",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Sally Ann Webb",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed twice: the profile (t1971.txt lines 2637-2669, page 95) says 'she has served on the Associated Students Congress,' and the senior directory (lines 8825-8827, Home Economics section) reads verbatim 'Associated Students Congress; Panhellenic; Ilva Scott; Dorm Council; Alpha Xi Delta' (OCR renders Ilva as '|va').",
+  "src": {
+   "label": "1971 Talisman, senior directory and profile, pp. 95, 132",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Pamela Adele King",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed verbatim at t1971.txt lines 8763-8769: 'PAMELA ADELE KING, Vero Beach, Fla. Home Economics. Academic Council; Associated Students Congress; Kappa Delta; Phi Upsilon Omicron; Crescent Club of Lambda Chi Alpha; Honors Program.'",
+  "src": {
+   "label": "1971 Talisman, senior directory (Home Economics), p. 132",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Martha Townley Lamason",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed verbatim at t1971.txt lines 11143-11146: 'MARTHA TOWNLEY LAMASON, Lexington. Home Economics. Chi Omega; Congress of Asso. Students; Jr. Class Rep.-at-large; lva Scott.'",
+  "src": {
+   "label": "1971 Talisman, senior directory, p. 154",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Ben Allen Burns, Jr.",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed verbatim at t1971.txt lines 12692-12695: 'BEN ALLEN BURNS, JR., Owensboro. Agriculture. IFC, pres.; Cheerleader; Alpha Gamma Rho; A.S. Congress; Cherry Country Life Club.' A distinct 'Harry A. Burns, Jr.' also appears in the directory, so surname alone was not relied on.",
+  "src": {
+   "label": "1971 Talisman, senior directory (Ogden College)",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Patricia B. McEwen",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed verbatim at t1971.txt lines 13706-13707: 'PATRICIA B. McEWEN, Clarksville, Ind. English, Psychology. Alpha Delta Pi; Panhellenic; A.S. Congress.'",
+  "src": {
+   "label": "1971 Talisman, senior directory",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Sam DeShazer",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Confirmed at t1971.txt lines 7088-7123: descriptive text calls it a 'seven student members' committee, and the caption reads 'Front Row: Sam DeShazer, Jeanne Jackson, Michael E. Freville, vice-chairman; Linda Jones, secretary. Second Row: Brad Coffman, Mark Barber, Pat Riley, David Eyler, chairman.'",
+  "src": {
+   "label": "1971 Talisman, Associated Students, pp. 68-69",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Jeanne Jackson",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Named in the same caption (t1971.txt line 7118-7121); the volume separately states at lines 7210-7211: 'The duties of Herald advertising manager were taken on for the second year by Jeanne Jackson.'",
+  "src": {
+   "label": "1971 Talisman, Associated Students, pp. 68-69",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Brad Coffman",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption (t1971.txt line 7122) reads 'Second Row: Brad Coffman, Mark Barber, Pat Riley, David Eyler, chairman' -- position matches the claim.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, pp. 68-69",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Mark Barber",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption (t1971.txt line 7122) confirms 'Mark Barber' in the second row, matching the claim.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, pp. 68-69",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Pat Riley",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption (t1971.txt line 7123) names 'Pat Riley'; the senior directory (lines 9723-9726) independently reads 'JAMES PATRICK RILEY, Bardstown. Business Administration. Kappa Sigma, pres; Junior Class V-P; Asso. Students Judicial Congress; Chemistry Club' -- consistent with the same person, appropriately hedged as 'appears to be' in the note rather than asserted outright.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, pp. 68-69, and senior directory",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Phil Myers",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption confirmed at t1971.txt lines 7102-7112. The original note's aside that 'the Herald reports that they did [sit in Congress] in 1972-73' carries no citation of its own and could not be checked against any source made available for this review, so it is dropped; in its place, the volume's own senior-class-officer photograph (lines 8648-8654, 'Phil Myers, pres.') is added as a verifiable, in-volume fact.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 68",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Rita Highbaugh",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption (t1971.txt lines 7109-7110) reads 'Front Row: Phil Myers, Rita Highbaugh, Cathy Ashabraner, Alice Thomason, Gary Whittington,' matching front-row placement.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 68",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Cathy Ashabraner",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption (t1971.txt line 7109-7110) reads 'Cathy Ashabraner' in the front row; the volume's Class of '71 officer caption (line 8652) independently reads 'Kathy Ashabraner, treas.' -- confirming the spelling-variance claim exactly as stated.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 68",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Alice Thomason",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption (t1971.txt lines 7109-7110) confirms 'Alice Thomason' in the front row.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 68",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Gary Whittington",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption (t1971.txt lines 7109-7110) confirms 'Gary Whittington' in the front row.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 68",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Ken Bowman",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption confirmed at t1971.txt line 7111 ('Second Row: Ken Bowman, Rick McClain, Earl...'). The added claim that he 'was elected senior class president for 1971-72 the following spring' is not supported: at lines 14022-14027 the same volume's officer caption ('Ken Bowman, pres.') immediately precedes the 'Juniors' class roster, indicating he was Junior class president for 1970-71, not senior class president-elect for 1971-72 -- that forward-looking claim is unsourced here and is dropped.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 68",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Rick McClain",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption (t1971.txt line 7111) confirms 'Rick McClain' in the second row.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 68",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Earl Bush",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption (t1971.txt line 7112) confirms 'Earl Bush' in the second row; senior directory (lines 12697-12700) independently reads 'EARL BUSH, Augusta. Engineering Technology. Alpha Phi Omega; A.S., Rules and Elections.' -- an exact match.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 68, and senior directory",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Ed McGee",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Caption (t1971.txt line 7112) confirms 'Ed McGee' in the second row.",
+  "src": {
+   "label": "1971 Talisman, Associated Students, p. 68",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Ken Bowman",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "p.304 confirms Ken Bowman as senior class president, but the cited source does not support the note's added claim (sourced instead to the 1973 Talisman, not part of this review) that class officers were voting Congress members; the 1972 volume's own text about the class system reads the opposite way.",
+  "src": {
+   "label": "1972 Talisman, Classes (Seniors), p. 304",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Jeff Ball",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Exact match found on p.304 (page marker \"304 Seniors\" immediately follows the officer paragraph); no unverifiable claims in the note.",
+  "src": {
+   "label": "1972 Talisman, Classes (Seniors), p. 304",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Andy Meneghini",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "p.304 confirms the name and title exactly, but the note's claim about Congress-seat status rests on an uncited 1971 Talisman, not on the source given here.",
+  "src": {
+   "label": "1972 Talisman, Classes (Seniors), p. 304",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Ed Jordon",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Name, seat, and the \"no separate power\" quote are all confirmed verbatim on p.352; the identity claim linking him to the 1972-73 ASG president is not supported by this source and should not be asserted without a citation of its own.",
+  "src": {
+   "label": "1972 Talisman, Classes (Juniors), p. 352",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Terry Miller",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "p.352 confirms Terry Miller as junior class vice president; the forward-looking 1972-73 claim is sourced to a different, uncited volume.",
+  "src": {
+   "label": "1972 Talisman, Classes (Juniors), p. 352",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Steve Wilson",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Exact match found on p.352, page confirmed by the surrounding \"351\" / \"[3]52 Juniors\" page markers; no unverifiable claims in the note.",
+  "src": {
+   "label": "1972 Talisman, Classes (Juniors), p. 352",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Mike Fiorella",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "p.368 confirms Mike Fiorella as sophomore class president for 1971-72; the multi-year biographical claims come from other, uncited Talisman volumes.",
+  "src": {
+   "label": "1972 Talisman, Classes (Sophomores), p. 368",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Donna Porter",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "p.368 confirms the name and role; the 1970 primary claim is unsourced within the cited material.",
+  "src": {
+   "label": "1972 Talisman, Classes (Sophomores), p. 368",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Hugh Campbell",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "p.390 fully confirms Hugh Campbell as freshman class president, elected at the first class meeting; the Herald headline quoted in the note is outside the source material actually reviewed here.",
+  "src": {
+   "label": "1972 Talisman, Classes (Freshmen), p. 390",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Kathy Long",
+  "verdict": "accept",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Both parts of the note -- vice president and cheerleader -- are confirmed in the same paragraph on p.390.",
+  "src": {
+   "label": "1972 Talisman, Classes (Freshmen), p. 390",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Louis Berman",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "p.390 confirms Louis Berman as freshman representative at large; the following-year claim is unsourced within the cited material.",
+  "src": {
+   "label": "1972 Talisman, Classes (Freshmen), p. 390",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Robert Deboe",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "The Herald PDF (dlsc_ua_records/4871) was unreachable this session, but the 1973 Talisman independently and specifically confirms 'Robert Deboe was elected to the Associated Student Government this year' on the Alpha Phi Alpha fraternity page (found by surname grep, not cited in the entry's own note) -- trimmed to that general claim; the committee-specific detail is unconfirmed.",
+  "src": {
+   "label": "1973 Talisman, Organizations (Alpha Phi Alpha), p. 270",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Albert Stith",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Primary source (Herald PDF) unreachable this session. Albert L. Stith appears only in his senior-portrait listing in the 1973 Talisman (p. 413 per the index); no mention of ASG, Congress, or any committee was found anywhere in the Talisman text to independently corroborate this claim, so it is neither confirmed nor disproven -- open for a future run with Herald access.",
+  "src": {
+   "label": "Herald 52:3, 1 Sep 1972, 'New appointments win ASG approval'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4871"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Amy Beverly",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Primary source (Herald PDF) unreachable this session. No 'Amy Beverly' appears anywhere in the 1973 Talisman -- every 'Beverly' hit is either a first name for someone else or an unrelated surname -- so there is no independent corroboration to check instead; not established this run, not disproven either.",
+  "src": {
+   "label": "Herald 52:3, 1 Sep 1972, 'New appointments win ASG approval'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4871"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Don Morrison",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Primary source (Herald PDF) unreachable this session. No 'Don Morrison' appears in the 1973 Talisman; the closest name is an unrelated 'Donnie Royce Morrison' with no ASG tie and no confirmed link to 'Don.' No independent corroboration to check instead -- left open, not disproven.",
+  "src": {
+   "label": "Herald 52:3, 1 Sep 1972, 'New appointments win ASG approval'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4871"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Evie Shrewsbury",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Herald PDF (4871) unreachable this session. The note's claimed Talisman corroboration checks out for the 1975 photo caption (grad-student ASG participant, paired with Hank Miles, matching the note almost verbatim) but that documents a later year, not 1972-73; trimmed to what is actually shown, dropping the specific 1972-73 committee assignment.",
+  "src": {
+   "label": "1975 Talisman, Associated Student Government section",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Fred Price",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Herald PDF (4871) unreachable this session, but both parts of the note's own Talisman citation check out fully: junior class presidency (p. 397, with Gail Emberton) and Rules and Elections Committee headship alongside R.G. Meade are both stated directly in the 1973 Talisman. Verdict is 'trim' rather than 'accept' because the primary cited source (Herald) itself remains unverified and the Talisman actually shows a stronger role (co-head, not member).",
+  "src": {
+   "label": "1973 Talisman, Classes (Juniors), p. 397, and Student Government section",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Michael Inman",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Herald PDF (4871) unreachable this session, but the note's cited Talisman corroboration (sophomore VP under Berman) checks out exactly. Trimmed to drop the specific Rules and Elections Committee appointment, which only the blocked Herald source claims.",
+  "src": {
+   "label": "1973 Talisman, Classes (Sophomores), p. 416",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Juanita Morrow",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Herald PDF (4877) unreachable this session, but the note's cited Talisman corroboration checks out: she is named as a grad-college Student Government representative. Trimmed to drop the vote count and the 'representative-at-large' framing, which are Herald-only claims.",
+  "src": {
+   "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Joe Cheak",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Source (archive.org Talisman, not the blocked Herald) read directly. Fully supports the claim: senior class VP, ASG Congress representation, and Environmental Committee headship all confirmed in the text.",
+  "src": {
+   "label": "1973 Talisman, Classes (Seniors); Student Government section",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Terry Miller",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Source read directly and fully supports the claim as written.",
+  "src": {
+   "label": "1973 Talisman, Classes (Seniors)",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Louis Berman",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Source read directly and fully supports the claim; additionally corroborated from an independent page (SAE fraternity section) naming him ASG Sergeant-at-Arms, matching the archive's separate existing record.",
+  "src": {
+   "label": "1973 Talisman, Classes (Sophomores), p. 416",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Gail Emberton",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Source read directly (archive.org Talisman, not the blocked Herald). Both cited passages checked out verbatim, including the exact '1972-1973 junior class vice-president... participant in the ASG' wording the note claimed.",
+  "src": {
+   "label": "1973 Talisman, Classes (Juniors), p. 397; 1974 Talisman, Who's Who",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Steve Henry",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Herald PDF (4877) unreachable this session, but the note's own claimed Talisman corroboration checks out precisely, including the Henry/Harvey spelling discrepancy between the Classes section and the SAE fraternity page. Trimmed to drop the specific vote count, which is Herald-only.",
+  "src": {
+   "label": "1973 Talisman, Classes (Freshmen)",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Laurie Flaim",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Herald PDF (4877) unreachable this session. Found independent Talisman corroboration by surname grep (not cited in the entry's own note) confirming her as freshman VP; trimmed to drop the Herald-only vote count. Note also flags a portrait-caption spelling variant ('Laurel') worth tracking.",
+  "src": {
+   "label": "1973 Talisman, Classes (Freshmen)",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Kim Weaver",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Primary source (Herald PDF) unreachable this session. The only Kim Weaver found in the 1973 Talisman is 'Kim W. Weaver, Government' who was president of the College Republicans -- an unrelated organization. Nothing in the Talisman ties him to the Academic Council, the spending-limits motion, or a prior disqualified presidential bid, so the note's cited 'general framework' passage does not actually name him. No independent corroboration to check instead.",
+  "src": {
+   "label": "Herald 52:8, 22 Sep 1972; Herald 52:3, 1 Sep 1972",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4877"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "John Burden",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Herald PDF (4877) unreachable this session, but the note's cited Talisman corroboration checks out verbatim. Trimmed to drop the specific vote count, which is Herald-only.",
+  "src": {
+   "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Steve Schulman",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Herald PDF (4877) unreachable this session. The note's cited Talisman corroboration confirms his name and general Academic Council role but describes him as a 'member,' not specifically an 'alternate' -- trimmed to drop both the alternate-status framing and the vote count, both Herald-only claims.",
+  "src": {
+   "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Pat Long",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Primary source (Herald PDF) unreachable this session. The 1973 Talisman does independently confirm a Pat Long active in ASG-adjacent work, but as co-head (with Gary Whitfield) of the Legal Rights Committee -- a different role from the claimed Potter College Academic Council seat. The note's own justification cites the archive's existing record circularly rather than independent evidence, so the specific Academic Council election is unconfirmed, not disproven.",
+  "src": {
+   "label": "Herald 52:8, 22 Sep 1972, 'Students seated on council'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4877"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Mike McDonald",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Primary source (Herald PDF) unreachable this session. No mention of any McDonald tied to ASG or the Academic Council was found anywhere in the 1973 Talisman (a 'Michael S. McDonald, Mass Comm.' appears in the portrait section but with no student-government connection). No independent corroboration to check instead.",
+  "src": {
+   "label": "Herald 52:8, 22 Sep 1972, 'Students seated on council'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4877"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "David Brown",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Herald PDF (4877) unreachable this session, but the note's cited Talisman corroboration checks out almost verbatim: 'David Brown, representative to the Academic Council' appears directly on the SAE page. Trimmed to drop the specific alternate/College of Commerce framing and the vote count, which are Herald-only claims.",
+  "src": {
+   "label": "1973 Talisman, Greeks (Sigma Alpha Epsilon)",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Gary Harlow",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Primary source (Herald PDF) unreachable this session. Several Harlows appear in the 1973 Talisman (a National Science Foundation project director, a club vice-president), but none are tied to ASG or the Academic Council. No independent corroboration to check instead.",
+  "src": {
+   "label": "Herald 52:8, 22 Sep 1972, 'Students seated on council'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4877"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Bobby Sandefer",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Primary source (Herald PDF) unreachable this session. No 'Sandefer' of any spelling appears anywhere in the 1973 Talisman -- not in the text, portraits, or index. No independent corroboration to check instead; not established this run.",
+  "src": {
+   "label": "Herald 52:8, 22 Sep 1972, 'Students seated on council'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4877"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Linda Childress",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Primary source (Herald PDF) unreachable this session. 'Linda J. Childress, Dietetics' appears only in her senior-portrait listing in the 1973 Talisman; no mention of ASG or the Academic Council was found anywhere. No independent corroboration to check instead.",
+  "src": {
+   "label": "Herald 52:8, 22 Sep 1972, 'Students seated on council'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4877"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Hank Miles",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Herald PDF (4877) unreachable this session. The note's claimed Talisman corroboration checks out for the 1975 photo caption but that documents a later year, not 1972-73; trimmed to what is actually shown, dropping the specific 1972-73 seat and vote count.",
+  "src": {
+   "label": "1975 Talisman, Associated Student Government section",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Carl Stolzfus",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Herald PDF (4877) unreachable this session, but this run found independent, direct 1973 Talisman confirmation of the exact seat (Academic Council, College of Education) for the correct academic year -- stronger than what the note itself claimed (it only cited a 1974 Talisman spelling variant). Verdict is 'trim' rather than 'accept' per the blocked-source rule, since the primary cited source (Herald) and its specific vote count remain unverified; the role itself is now well-supported.",
+  "src": {
+   "label": "1973 Talisman, Greeks (Sigma Phi Epsilon), p. 309",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Larry Daniel",
+  "verdict": "trim",
+  "disposition": "not merged: fact verified but role does not establish Congress/Senate membership (class office pre-1972-revision, or Judicial/Rules-and-Elections Committee membership, which is a separate body from Congress)",
+  "reason": "Herald PDF (4877) unreachable this session. Found independent Talisman corroboration by surname grep (not cited in the entry's own note) confirming general ASG participation; trimmed to drop the specific Ogden College seat and vote count, which are Herald-only claims.",
+  "src": {
+   "label": "1973 Talisman, Greeks (Alpha Gamma Rho)",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Ronda Talley",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Source read directly and fully supports the claim as written, essentially verbatim.",
+  "src": {
+   "label": "1973 Talisman, Greeks (Kappa Delta)",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Janice Berkshire",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Source read directly and fully supports the claim as written, verbatim.",
+  "src": {
+   "label": "1973 Talisman, Greeks (Kappa Delta)",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Mark Harvey",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Source read directly and fully supports the claim as written, verbatim.",
+  "src": {
+   "label": "1973 Talisman, Greeks (Sigma Nu)",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "Carl Stoltzfus",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both passages found verbatim in the OCR text (Who's Who entry beginning 'Activity is the key word...' and the Sig Ep chapter page 'Active in campus affairs, Carl Stoltzfus is senior class president... chairman of Rules and Election Committee of the ASG... a member of the University Academic Complaint Committee') and they match the claim point for point.",
+  "src": {
+   "label": "1974 Talisman, Who's Who no. 16 and Greeks (Sigma Phi Epsilon)",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "Hamp Moore",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Text reads 'Heading the senior class were President Carl Stoltzfus and Vice-president Hamp Moore' and separately 'Hamp Moore, elected vice-president of the Southeast Regional Inter-Fraternity Conference,' both in the seniors section; caption also pairs the two names.",
+  "src": {
+   "label": "1974 Talisman, Classes (Seniors)",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "Michael Inman",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "The Juniors section confirms 'Coordinating these activities were President Michael Inman and Vice-president Deborah Locke,' but the claimed quote about running for class office because it was 'the easiest way of getting a seat on the student government' does not appear anywhere in this 1974 Talisman text (only an unrelated 'Mike Inman, parliamentarian' of the College Republicans appears), so that sentence is dropped as unsupported by the cited source.",
+  "src": {
+   "label": "1974 Talisman, Classes (Juniors), p. 386",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "Deborah Locke",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both the Juniors section ('Vice-president Deborah Locke' / caption 'Deborah Locke, vice-president') and the Kappa Delta chapter page ('Debbie Locke, as vice-president of the junior class') confirm this exactly.",
+  "src": {
+   "label": "1974 Talisman, Classes (Juniors), p. 386",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "Steve Henry",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Text reads 'Active class members included seven sophomores who are members of the ASG congress. Serving as president of the sophomore class was Steve Henry with Jeff Wampler as vice-president,' and the caption reads 'Jeff Wampler, vice-president, and Steve Henry, president, check notes before an ASG meeting.'",
+  "src": {
+   "label": "1974 Talisman, Classes (Sophomores)",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "Jeff Wampler",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Same passage as Steve Henry's entry confirms 'Jeff Wampler as vice-president' and the caption names him alongside Henry before an ASG meeting.",
+  "src": {
+   "label": "1974 Talisman, Classes (Sophomores)",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "John Donofrio, Jr.",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Text on the Freshmen page (headed '410 Freshmen / Donofrio and Vogt lead freshman class') reads 'Coordinating class projects for the year are President John Donofrio, Jr. and Vice-president Christy Kay Vogt,' with a matching photo caption.",
+  "src": {
+   "label": "1974 Talisman, Classes (Freshmen), p. 410",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "Christy Kay Vogt",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Text and caption on p. 410 confirm 'Vice-president Christy Kay Vogt' / 'Christy Vogt, vice-president' opposite Donofrio; the 1974-75 material is explicitly attributed elsewhere in the note rather than to this source, so it is not an overclaim against the cited page.",
+  "src": {
+   "label": "1974 Talisman, Classes (Freshmen), p. 410",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "Debbie Filburn",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Found verbatim: 'Members who have distinguished themselves on campus include: Debbie Locke, as vice-president of the junior class; Debbie Filburn, serving as representative-at-large on the ASG Congress...'; the index lists 'Filburn, Debra Ann' and 'Filburn, Donna Marie' as separate entries, and both 'Debbie Filburn' and 'Donna Filburn' appear as distinct names in the same KD group-photo caption.",
+  "src": {
+   "label": "1974 Talisman, Greeks (Kappa Delta)",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "Melody Edwards",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Entry numbered '25.' reads 'Agriculture major Melody Edwards asserted... A member of the agriculture club and representative in the Associated Student Government and Academic Council,' matching the claim exactly.",
+  "src": {
+   "label": "1974 Talisman, Who's Who, no. 25",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1973-74",
+  "name": "Reginald Glass",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Text reads 'Some friction was generated in the ASG Congress when Reginald Glass, the ASG representative from the Graduate College, resigned in protest... had asked for better representation for minority groups in the student government and in the Academic Council. He said the lack of blacks and foreign students in these groups was harmful both to the minorities and the University as a whole' \u2014 matches the claim closely; page number could not be independently confirmed from the OCR (no page marker visible at this passage) but the section and content are unambiguous.",
+  "src": {
+   "label": "1974 Talisman, Associated Student Government",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Suzanne Held",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Herald 3537 PDF unreachable this session; no mention of Held found anywhere in t1975.txt (searched 'Held') so there is no independent Talisman corroboration to substitute -- not disproven, just unconfirmable this run.",
+  "src": {
+   "label": "Herald 53:52, 12 Apr 1974, 'Election results'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3537"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Paul Calico",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed verbatim at t1975.txt line ~23097 ('Paul Calico was a representative-at-large to the student government'); the Herald vote count is unreachable so it is dropped and the source is switched to the Talisman line actually read.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Sigma Nu)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "David Payne",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "The entry's own note cited only the blocked Herald with no Talisman corroboration flagged, but independent search found t1975.txt line ~21910 confirming David Payne served on ASG in 1974-75; that supports the person and general membership only, not the specific seat, vote count, or the treasurer/charges narrative, which remain unverified this session.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Alpha Kappa Psi)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Julee Herdt",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Herald 3537 unreachable; Julee Herdt appears twice in t1975.txt only as a Chi Omega sorority-roster name and as an SVB volunteer-recruitment caption (lines ~20141, ~26164), neither mentioning ASG, so there is no independent corroboration of the claimed seat.",
+  "src": {
+   "label": "Herald 53:52, 12 Apr 1974, 'Election results'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3537"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Pam Keown",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Herald 3537 unreachable; Pam Keown appears once in t1975.txt only in a plain Chi Omega member roster (line ~20128) with no ASG mention, so there is no independent corroboration.",
+  "src": {
+   "label": "Herald 53:52, 12 Apr 1974, 'Election results'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3537"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "David Tidwell",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Herald 3537 unreachable; 'Tidwell' produces zero hits anywhere in t1975.txt, so there is no independent corroboration.",
+  "src": {
+   "label": "Herald 53:52, 12 Apr 1974, 'Election results'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3537"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Donna Filburn",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Flagging the Donna/Debbie ambiguity explicitly: the entry's own note cites the 1974 Talisman for a DIFFERENT person, 'Debbie Filburn,' as representative-at-large in 1973-74 -- and I independently confirmed that too (t1974.txt line ~16059: 'Debbie Filburn, serving as representative-at-large on the ASG Congress', 1973-74), while the SAME 1974 Talisman shows Donna Filburn only as a Kappa Delta pledge that year with no ASG role (lines ~16078, ~16158). The 1975 Talisman then independently places Donna (not Debbie) in ASG for 1974-75 as Panhellenic president. These read as two distinct sisters with sequential, non-overlapping ASG service -- they must not be merged into one person.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Kappa Delta); Associated Student Government section",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Gail Getchell",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed at t1975.txt lines ~6236-6255, which independently verifies both the representative-at-large and College of Applied Arts and Health seats and the Panhellenic presidency, but does not date the Panhellenic term to the prior year as the note claims, and gives no vote figures.",
+  "src": {
+   "label": "1975 Talisman, Who's Who",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Larry Hooks",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed verbatim at t1975.txt line ~23098, in the same Sigma Nu passage as the Calico confirmation; only the vote total is unverified.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Sigma Nu)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Deborah DeJarnette",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed at t1975.txt line ~20029 ('Debbie Dejarnette... were representatives for the Associated Student Government'); the Talisman names her as an ASG rep generally but not specifically as the Ogden College seat-holder, so that particular is downgraded to unverified.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Alpha Xi Delta)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Debbie Coleman",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Herald 3537 unreachable; t1975.txt has no 'Debbie Coleman' -- only Janice Coleman, Michael Coleman, Brian Coleman and Donna Coleman appear -- so there is no independent corroboration.",
+  "src": {
+   "label": "Herald 53:52, 12 Apr 1974, 'Election results'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3537"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Thomas A. Blair",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "The entry's own note cited only the blocked Herald with no Talisman corroboration flagged, but independent search found t1975.txt lines ~22374 and ~22440-22444 naming 'Tom Blair' as an ASG member alongside Rodney Berry and Frank Medaris, with the full name matching the senior directory at line ~31765; the specific College of Education seat and vote count remain unconfirmed.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Lambda Chi Alpha)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Sheri Sharp",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Herald 3537 unreachable; t1975.txt has no 'Sheri Sharp' -- only Mary Pat Sharp and Judy Sharp appear, neither in an ASG context -- so there is no independent corroboration.",
+  "src": {
+   "label": "Herald 53:52, 12 Apr 1974, 'Election results'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3537"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Dallas Charton",
+  "verdict": "reject",
+  "disposition": "not merged: unconfirmed this session (Herald source blocked, no independent corroboration found), not disproven",
+  "reason": "Herald 3537 unreachable; Dallas Charton appears in t1975.txt only on Sigma Delta Chi and College Republicans membership rosters (lines ~25682, ~26158), with no ASG mention anywhere, so the claimed seat is not independently corroborated.",
+  "src": {
+   "label": "Herald 53:52, 12 Apr 1974, 'Election results'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3537"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Rodney Berry",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Fully confirmed at t1975.txt lines ~8652-8660 (SVB narrative) and ~22440-22444 (Lambda Chi Alpha page); only the vote count is unverified this session.",
+  "src": {
+   "label": "1975 Talisman, Associated Student Government section; Greeks (Lambda Chi Alpha)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Frank Mendaris",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "The entry's own note cited only the blocked Herald with no Talisman corroboration flagged, but independent search found t1975.txt line ~22444 and directory line ~29795 confirming the person (spelled 'Medaris' there, a variant worth flagging against the entry's 'Mendaris') as an ASG member; the Business and Public Affairs seat and vote total remain unconfirmed.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Lambda Chi Alpha)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Mike Inman",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed nearly verbatim at t1975.txt lines ~27191-27219; only the vote count is unverified this session. Note for the record (not affecting this entry): a different 'Michael Inman' appears as sophomore class VP in 1972-73 in another batch -- this entry's own 1974-75 senior-class-president claim is independently verified here regardless of that other-year identity question.",
+  "src": {
+   "label": "1975 Talisman, Classes (Seniors), p. 344",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Pam Stewart",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed at t1975.txt line ~27191 and t1974.txt line ~25145 ('Pam Stewart was secretary for Associated Stu[dent Government]'); both parts of the note check out independently, only the vote total is unverified.",
+  "src": {
+   "label": "1975 Talisman, Classes (Seniors), p. 344; 1974 Talisman, Organizations",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Jeff Wampler",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed nearly verbatim at t1975.txt lines ~31730-31740; only the vote count is unverified this session.",
+  "src": {
+   "label": "1975 Talisman, Classes (Juniors), p. 384",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Karen McNally",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed nearly verbatim at t1975.txt lines ~31738-31745; only the vote totals are unverified this session.",
+  "src": {
+   "label": "1975 Talisman, Classes (Juniors), p. 384",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "John Draheim",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed verbatim at t1975.txt lines ~33195-33200; only the vote totals are unverified this session.",
+  "src": {
+   "label": "1975 Talisman, Classes (Sophomores), p. 394",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Jo Ann Ballance",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed nearly verbatim at t1975.txt lines ~33289-33308; only the vote count is unverified this session.",
+  "src": {
+   "label": "1975 Talisman, Classes (Sophomores), p. 394",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Jay Keffer",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed at t1975.txt lines ~35086-35124; a search for 'Jack Harris' turns up only an unrelated name in the senior directory (line ~35961), no election contest, so that sentence is unsupported by the cited source and removed.",
+  "src": {
+   "label": "1975 Talisman, Classes (Freshmen), p. 406",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Tom Hayes",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Every substantive claim matches the source closely and completely at t1975.txt lines ~35095-35124 (dorm campaign, November vending-machine-change bill, suggestion to restrict voting rights to president and VP); no unsupported detail found.",
+  "src": {
+   "label": "1975 Talisman, Classes (Freshmen), p. 406",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Steve Henry",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed verbatim at t1975.txt line ~22925; a search for '797' and '767' and the Consolo presidential race turns up nothing, so that additional claim is unsupported by any source read this session and removed.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Sigma Alpha Epsilon)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Evie Shrewsbury",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed at t1975.txt lines ~8838-8843; the 1972-73 committee claim requires a source not available this session (only t1974 and t1975 Talismans were provided) and is dropped.",
+  "src": {
+   "label": "1975 Talisman, Associated Student Government section",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Hank Miles",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed at t1975.txt line ~8842; the 1972-73 Academic Council claim requires a source not available this session and is dropped.",
+  "src": {
+   "label": "1975 Talisman, Associated Student Government section",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Mary Pat Swift",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed at t1975.txt line ~20029; the entry's own note already flags the conflict between the Talisman's stated membership and the April 1974 returns, which is the correct approach -- I confirm the Talisman half only, the Herald half remains unread this session.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Alpha Xi Delta)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Debbie Johnson",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed at t1975.txt line ~20030; but t1975.txt line ~20056 lists 'D. J. Johnson' and 'Debbie DeJarnette' as separate members on the same page's photo caption, meaning D.J. Johnson and Debbie Johnson may be two different sorority sisters, not the same person the entry's note assumes -- flagging this as an additional identity risk beyond the vote-count gap already noted.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Alpha Xi Delta)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Jennifer Rapp",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Fully confirmed at t1975.txt line ~20030 ('...nifer Rapp and Debbie Johnson were representatives for the Associated Student Government'); this entry cites only the Talisman (not the blocked Herald) and the claim matches exactly.",
+  "src": {
+   "label": "1975 Talisman, Greeks (Alpha Xi Delta)",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Greg Goatley",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Fully confirmed at t1975.txt lines ~5424-5429: 'chairman of College Republicans, vice-chairman of the Kentucky College Republican Federation, campus coordinator for Marlow Cook's senatorial campaign and a member of the Associated Student Government'; this entry cites only the Talisman (not the blocked Herald) and the claim matches exactly.",
+  "src": {
+   "label": "1975 Talisman, Who's Who",
+   "url": "https://archive.org/details/talisman1975west"
+  }
+ },
+ {
+  "year": "1972-73",
+  "name": "Merlin Gagle",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Surfaced during adversarial verification of Juanita Morrow's entry, in the same directly-quoted 1973 Talisman sentence; not part of the original 105.",
+  "src": {
+   "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+   "url": "https://archive.org/details/talisman1973west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Joyce Adkins",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Connie Allspaw",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Becky Blair",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Tom Blair",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Elaine Boeckman",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Wendell Bratcher",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Paul Calico",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Patty Campbell",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Sherry Casebier",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Jeff Cashdollar",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Sally Chenault",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Jane Anne Coverdale",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Becky Cress",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Mitchell Deep",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Beth Elliott",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "John Evans",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "James Grove",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Tom Hayes",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Steve Henry",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Susan Hurley",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Susan Jaggers",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Rickie Johnson",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "James Keffer",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Rick Kelley",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Tim Leigh",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Marc Levy",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Debbie Marcum",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Stan McDivitt",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Jane Miles",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Huston Monarch",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Cathy Murphy",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Paul Nation",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Paul Palmer",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Jenny Parker",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "David Payne",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Roger Phelps",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Sherrelyn Presson",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Cindy Reinert",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Jamie Shirley",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Brent Shockley",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Bruce Smith",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Mike Smither",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Cathy Snellen",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Bob Somers",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Sheri Spruell",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Paul Stamp",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Howard Sypher",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Kathi Tabor",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Scott Taylor",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Christy Vogt",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Nancy Wilk",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ },
+ {
+  "year": "1975-76",
+  "name": "Pat Williams",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members (or already on file under another role for that year)",
+  "reason": "Named on the ASG's own printed Attendance Roll, 1976 Talisman pp.62-63, independently cross-checked against the yearbook's back index.",
+  "src": {
+   "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+   "url": "https://archive.org/details/talisman1976west"
+  }
+ }
+]
