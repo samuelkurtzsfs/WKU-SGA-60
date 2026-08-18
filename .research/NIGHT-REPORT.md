@@ -301,3 +301,118 @@ same-day bills in 1991-92 — and none come from this work.
 One note the previous report can be marked resolved on: the research routines are
 no longer branching from the orphaned 4 August snapshots. All three of these
 branched from current `main` and merged normally.
+
+---
+
+# 18 August 2026, second editorial pass
+
+Four research pull requests open at the start: #15 photographs, #16 profiles,
+#17 the senate rolls, #18 the branch-history backlog. The three stale branches
+of 4 August that the last pass flagged are gone. Three merged; one is held open
+with corrections pushed. All four branches had cut from current `main`, so the
+orphan-history problem stayed resolved.
+
+## Merged
+
+**#15, three 2004 headshots.** Jessica Martin, Sarah Cecil and Christina
+Kayrouz, off the *Decision 2004* election guide of 16 March. I re-derived the
+identifications rather than accepting them: the page's text-block coordinates
+put Alicia Bachicha's article and Sarah Cecil's photograph on opposite sides of
+the page, which settles the swap risk the previous reviewer raised, and
+rendering the page confirmed each photograph under its own headline. Martin was
+the exception. There is no photograph under her headline; her portrait sits in
+the shaded candidate-profile box between her article and Nick Todd's, and that
+box is hers beyond doubt — public relations and sociology, the vice presidency
+of administration, PRSSA, the Northeast Hall residency, none of which fit Todd.
+The identification was right and the description of it was wrong.
+
+All three captions were rewritten. They had reproduced whole Herald sentences,
+seventeen and eighteen words, three quotations from one source, which is over
+the archive's limit and not a fair use of a student newspaper. The
+reviewer-facing note about comparing two faces came out of Cecil's caption; that
+evidence belongs in the pull request, not on the page.
+
+**#16, eighteen cabinet profiles, 1977-79 and 1985-87.** A second batch arrived
+on the branch mid-review and was checked with the rest. Every quotation sampled
+was exact against the 1978, 1979, 1986 and 1987 Talisman: the "light moment"
+caption naming Moore, Bass, May and Murphy; Shockley's "It's tedious and
+requires a lot of work"; "Be Kind to Tricia Day"; Young's "force some heads-up
+competition"; Carwell's three tests for a promoter, 500 miles, 75 concerts,
+$2 million; Elder's "We take students' wants and translate them into action and
+results"; Rodriguez's retreat, 45 of a possible 75, and "a great way to finish"
+after Kern Alexander's breakfast; Barbara Rush taking notes at Nick Kafoglis's
+lecture. Bass's crowd of 3,300 comes from the Herald's report after the
+concert, not from the notice before it.
+
+Cut: Cathy Murphy's profile claimed she had won a freshman office in September
+1975. The headline is real, correctly dated and correctly quoted, but the
+identification is an assumption, and the 1978 Talisman lists two Cathy Murphys —
+a senior from Owensboro reading government and public relations, and a second
+from Louisville. A 1975 freshman would not be a senior in the 1978 book. The
+headline now stands with the identification declared open. Also removed from
+David Bass's `note` the detail that students entered the free April 1978 concert
+on a Western ID: the run's own verifier had cut it from his profile as
+unsupported, but it was still in the note and still on the site. A rejected
+claim that survives in a neighbouring field is published just the same.
+
+**#18, the branch-history backlog.** 138 dated moments across sixty years,
+clearing `.research/branches-moments.json`. The best-disciplined branch this
+project has produced. Eleven claims sampled and all eleven held: eight Herald
+index items matched on headline, byline, issue and date, and three modern
+documents — the Judicial Council minutes of 3 December 2021, the bill sheet for
+13-22-S, and Resolution 3-15-S — read in full and matched to the word. Nothing
+cut. The entries built on index-only issues say so in their own text instead of
+inventing detail, the living-people handling names no senator the minutes name
+for absences, and the Michel/Mitchell Stephens conflict is stated both ways with
+both sources and declared unresolved. All seven duplicate pairs read and judged
+separate.
+
+## Held open
+
+**#17, the senate rolls.** Corrections pushed, merge refused. The research is
+sound and the membership rule — a floor motion or a roll call establishes
+membership, a committee report does not — is the right one, applied
+consistently. The dating survived the trap that could have wrecked it: the item
+pages record `22-2-1977` day-first, and the run read them correctly. But the
+names were taken off the OCR text layer of scanned typescript, and rendering
+three of those pages as images found three errors:
+
+- Bill No. 12 passed **31/0/1**, not 31-9-1; the wrong tally appeared three
+  times. The 34/0/1 in the same paragraph was recorded correctly, which is the
+  tell: a zero read as a nine.
+- The 22 February 1977 minutes name **George Carlson**, not Georgiana. The note
+  called the given name illegible and reconstructed it from the 1977-78 treasury
+  candidate. On the page it is not illegible. Substituting a woman's name for
+  the man's name in the source, to match someone already on file, is the error
+  this archive least can afford.
+- The roll of 11 November 1980 records **Maura Fleenor**, not Laura.
+
+Probably a fourth: the International Students chairman is **Sharif** in those
+minutes against **Shariff** in the record, from a different meeting, so it wants
+checking rather than assuming.
+
+Three errors in roughly ten names sampled, out of thirty-three, all from the
+same cause. The next run must re-verify every name by rendering the page region
+and looking at it. The embedded text is good for finding the page and useless
+for deciding a spelling.
+
+## New finding: the complete index is not complete
+
+`data/herald-index-full.json` is truncated. 3,898 of its 11,850 entries carry an
+opening `<li>` with no closing `</ul>`: their article lists stop partway. The
+1991 Kevin Colon headline is real and on the live landing page, and invisible
+locally for this reason. Every routine is told to grep this file first, so a
+third of it silently under-reporting is a live hazard — a miss in the local
+index is not evidence of absence. It wants a re-harvest.
+
+Also noticed: `site/photos/` on `main` carried the Martin, Cecil and Kayrouz
+files from before #14 held them back, orphaned with no entry in `photos.json`.
+#15 makes them legitimate. Stale build output surviving a data-side revert is
+worth watching for.
+
+## Where the record stands
+
+61 years, 2,015 dated events, 60 people who have been president, 34 documents,
+390 legislation files. `build.py`, `check_data.py` and `check_contrib.py` all
+exit clean. `check_duplicates.py` reports seven pairs, all separate events, none
+introduced by this work.
