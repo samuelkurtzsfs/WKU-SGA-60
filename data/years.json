@@ -2175,6 +2175,85 @@
         "url": "https://archive.org/details/talisman1971west"
        }
       }
+     ],
+     "members": [
+      {
+       "name": "Tony Cochran",
+       "seat": "representative at large",
+       "note": "A 1973 Talisman profile records Cochran as a representative-at-large who roomed with Doug Alexander, his fraternity big brother and vice president of student government, and says he learned from Alexander and from president John Lyne. That pairing matches the 1971 Talisman's independent record of the 1970-71 executive, Lyne as president and Alexander as vice president, which is why the term is placed here. The same profile records him as a Sigma Nu chapter president and national Man of the Year, and as the son of the late Robert G. Cochran, dean of public affairs and public relations. A Herald report of an October 1970 primary would date the election precisely; the archive has not read it.",
+       "src": {
+        "label": "1973 Talisman, Profile, pp. 233-234",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Joe Gerard",
+       "seat": "member elected from Congress to the Executive Council",
+       "note": "Named in the same Executive Council caption as one of the three members elected from Congress.",
+       "src": {
+        "label": "1971 Talisman, Associated Students, p. 67",
+        "url": "https://archive.org/details/talisman1971west"
+       }
+      },
+      {
+       "name": "Peggy Hundley",
+       "seat": "member elected from Congress to the Executive Council",
+       "note": "The volume describes the Executive Council as the four executive officers plus three members elected from Congress; Hundley is one of the three named in the photograph caption.",
+       "src": {
+        "label": "1971 Talisman, Associated Students, p. 67",
+        "url": "https://archive.org/details/talisman1971west"
+       }
+      },
+      {
+       "name": "Ben Allen Burns, Jr.",
+       "note": "The 1971 Talisman's senior directory lists him in the Associated Students Congress alongside the Interfraternity Council presidency, cheerleading, Alpha Gamma Rho and the Cherry Country Life Club. He was a senior in 1970-71; the directory does not date the Congress term.",
+       "src": {
+        "label": "1971 Talisman, senior directory (Ogden College)",
+        "url": "https://archive.org/details/talisman1971west"
+       }
+      },
+      {
+       "name": "Pamela Adele King",
+       "note": "The 1971 Talisman's senior directory lists her in the Associated Students Congress and on the Academic Council, alongside Kappa Delta, Phi Upsilon Omicron, the Crescent Club of Lambda Chi Alpha and the honors programme. She was a senior in 1970-71; the directory does not date the Congress term.",
+       "src": {
+        "label": "1971 Talisman, senior directory (Home Economics), p. 132",
+        "url": "https://archive.org/details/talisman1971west"
+       }
+      },
+      {
+       "name": "Martha Townley Lamason",
+       "seat": "junior class representative-at-large",
+       "note": "The 1971 Talisman's senior directory lists her in the Congress of Associated Students and as junior class representative-at-large. That pairing is the clearest evidence in the volume that a class representative-at-large sat in the Congress. She was a senior in 1970-71, so the junior-class term falls in 1969-70 and the Congress service itself is undated.",
+       "src": {
+        "label": "1971 Talisman, senior directory, p. 154",
+        "url": "https://archive.org/details/talisman1971west"
+       }
+      },
+      {
+       "name": "Patricia B. McEwen",
+       "note": "The 1971 Talisman's senior directory lists her in the Associated Students Congress, with Alpha Delta Pi and Panhellenic. She was a senior in 1970-71; the directory does not date the Congress term.",
+       "src": {
+        "label": "1971 Talisman, senior directory",
+        "url": "https://archive.org/details/talisman1971west"
+       }
+      },
+      {
+       "name": "Glen Sweet",
+       "seat": "member elected from Congress to the Executive Council",
+       "note": "Named in the same Executive Council caption as one of the three members elected from Congress.",
+       "src": {
+        "label": "1971 Talisman, Associated Students, p. 67",
+        "url": "https://archive.org/details/talisman1971west"
+       }
+      },
+      {
+       "name": "Sally Ann Webb",
+       "note": "The 1971 Talisman's senior directory lists her in the Associated Students Congress, with Panhellenic, Ilva Scott, dorm council and Alpha Xi Delta, and a profile in the same volume says she had served on the Congress. She was a senior in 1970-71 and a past president of the Panhellenic Council; the directory covers her whole career at Western and does not date the Congress term.",
+       "src": {
+        "label": "1971 Talisman, senior directory and profile, pp. 95, 132",
+        "url": "https://archive.org/details/talisman1971west"
+       }
+      }
      ]
     }
    },
@@ -2669,7 +2748,12 @@
      {
       "office": "Vice President",
       "name": "Reginald Glass",
-      "note": "Glass was vice president of Associated Students in 1971-72 and the yearbook calls him the first black vice president of the body and the first black student to hold any high student leadership position at Western. As vice president he assisted the president, sat on the Academic Council as one of two voting student members, and chaired the activities committee. He was a member of Alpha Phi Alpha, which received its national charter on 31 October 1971, and was named outstanding Black Greek. The 1974 Talisman records a later chapter: as ASG representative from the Graduate College he resigned in protest, having asked for better minority representation in student government and on the Academic Council.",
+      "note": "Glass was vice president of Associated Students in 1971-72 and the yearbook calls him the first black vice president of the body and the first black student to hold any high student leadership position at Western. As vice president he assisted the president, sat on the Academic Council as one of two voting student members, and chaired the activities committee; a caption of him signing a speaker contract appears beside the yearbook's note that Dr. Benjamin Spock was A.S.'s first sponsored speaker, though the volume does not explicitly say the two are the same contract. He was a member of Alpha Phi Alpha, which received its national charter on 31 October 1971, and the Herald reported that November that he was named the campus's outstanding Black Greek. By October 1973 he was ASG's representative from the Graduate College and the Herald reported him asking for better minority representation in student government; he resigned that post in protest on 4 December 1973, the Herald reported, and the 1974 Talisman gives his reason as the harm he said the lack of Black and foreign students on ASG and the Academic Council did to the minorities and the University alike.",
+      "profile": [
+       "Reginald Glass was elected vice president of the Associated Students for 1971-72 under president Linda Jones, becoming, the 1972 Talisman says, the first Black vice president of the body and the first Black student to hold a top student leadership post at Western. As vice president he sat on the Academic Council as one of its two voting student members and chaired the activities committee; a yearbook caption shows him signing a speaker contract, placed beside the note that Dr. Benjamin Spock was A.S.'s first sponsored speaker, though the volume does not state outright that this was Spock's own contract.",
+       "Glass was also active in Black campus life outside ASG: he belonged to Alpha Phi Alpha fraternity, chartered nationally at Western on 31 October 1971, and the Herald reported him named the campus's outstanding Black Greek that November.",
+       "He remained involved in student government after his year as vice president ended. By the fall of 1973 he sat in the ASG Congress as the representative from the Graduate College, and the Herald reported him pressing for better representation of minority students in student government and on the Academic Council. On 4 December 1973 the Herald reported that he had resigned that seat in protest; the 1974 Talisman records his reasoning as the harm he said the absence of Black and foreign students from ASG and the Academic Council did to the minorities and to the University."
+      ],
       "src": {
        "label": "1972 Talisman, Associated Students",
        "url": "https://archive.org/details/talisman1972west"
@@ -2679,6 +2763,9 @@
       "office": "Treasurer",
       "name": "Joe Glasser",
       "note": "Glasser was treasurer of Associated Students in 1971-72. A Jack Glasser is separately listed as junior class treasurer in the same volume; the yearbook treats them as two names and this archive should not merge them.",
+      "profile": [
+       "Joe Glasser served as treasurer of the Associated Students for 1971-72, one of the four officers under president Linda Jones. The 1972 Talisman lists him alongside vice president Reginald Glass and secretary Nancy Pape in the officer photograph for that year. The same volume separately lists a Jack Glasser as junior class treasurer; the archive treats them as two people rather than merging the names."
+      ],
       "src": {
        "label": "1972 Talisman, Associated Students",
        "url": "https://archive.org/details/talisman1972west"
@@ -2688,6 +2775,9 @@
       "office": "Secretary",
       "name": "Nancy Pape",
       "note": "Pape was secretary of Associated Students in 1971-72 under Linda Jones. The volume notes the four A.S. officers attended conferences and meetings at national level during the year.",
+      "profile": [
+       "Nancy Pape served as secretary of the Associated Students for 1971-72 under president Linda Jones, one of four officers the 1972 Talisman says represented Western at conferences and meetings at the national level that year."
+      ],
       "src": {
        "label": "1972 Talisman, Associated Students",
        "url": "https://archive.org/details/talisman1972west"
@@ -3232,7 +3322,11 @@
      {
       "office": "Administrative Vice President",
       "name": "Charles Boteler",
-      "note": "Boteler was administrative vice president in 1972-73, the first year the office existed in that form. The volume explains that the revised constitution split the vice presidency in two, one for administrative duties and one for activities, and that Boteler and Mike Fiorella held them respectively.",
+      "note": "Boteler was administrative vice president in 1972-73, the first year the office existed in that form. The volume explains that the revised constitution split the vice presidency in two, one for administrative duties and one for activities, and that Boteler and Mike Fiorella held them respectively. Away from ASG that same year, the 1973 Talisman records Boteler co-leading the campus 'McGovern for President' campaign with Pat Long, serving as an alternate delegate pledged to George McGovern at the Democratic National Convention, and helping lead a McGovern-Shriver teach-in on the Vietnam War with faculty members Jim Wayne Miller and Nick Kafoglis.",
+      "profile": [
+       "Charles Boteler was elected administrative vice president of the newly renamed Associated Student Government for 1972-73, the first year the vice presidency was split in two under a revised constitution; Boteler held the administrative half while Mike Fiorella, later that year's student regent, held the activities half.",
+       "Boteler was also prominent in campus electoral politics that year. The 1973 Talisman records him co-leading, with Pat Long, the student effort behind George McGovern's 1972 presidential campaign at Western, running a voter-registration drive and organizing for the Warren County Democratic caucus. He served as an alternate delegate pledged to McGovern at the Democratic National Convention, and helped lead a McGovern-Shriver teach-in on the Vietnam War alongside faculty members Jim Wayne Miller and Nick Kafoglis."
+      ],
       "src": {
        "label": "1973 Talisman, Associated Students",
        "url": "https://archive.org/details/talisman1973west"
@@ -3241,9 +3335,13 @@
      {
       "office": "Treasurer",
       "name": "Pat Newton",
-      "note": "Newton was ASG treasurer in 1972-73. The same paragraph sets out the remade Congress: ten representatives at large, two from each academic college, the president and vice president of each class, and the ten Academic Council members and alternates.",
+      "note": "Newton was ASG treasurer in 1972-73. The same paragraph sets out the remade Congress: ten representatives at large, two from each academic college, the president and vice president of each class, and the ten Academic Council members and alternates. The same volume's Who's Who feature profiles Newton separately as an accounting and economics major who was a member of the business games team and of Who's Who Among Student Leaders of America, and who served as both president and treasurer of Alpha Delta Pi sorority.",
+      "profile": [
+       "Pat Newton served as treasurer of the Associated Student Government for 1972-73, under the constitution that remade the Congress to include ten representatives at large and two from each academic college alongside the class officers and Academic Council delegation.",
+       "The 1973 Talisman's Who's Who feature profiles Newton separately from her ASG role: an accounting and economics major, she was a member of the business games team and was named to Who's Who Among Student Leaders of America. She also served as both treasurer and president of Alpha Delta Pi sorority."
+      ],
       "src": {
-       "label": "1973 Talisman, Associated Students",
+       "label": "1973 Talisman, Associated Students, and Who's Who, p. 227",
        "url": "https://archive.org/details/talisman1973west"
       }
      },
@@ -3251,6 +3349,9 @@
       "office": "Secretary",
       "name": "Debby Clark",
       "note": "Clark was ASG secretary in 1972-73, the year the body took the name Associated Student Government in place of the Office of Associated Students.",
+      "profile": [
+       "Debby Clark served as secretary of the Associated Student Government for 1972-73, the year the body adopted that name in place of the earlier Office of Associated Students, under president Ed Jordan alongside vice presidents Charles Boteler and Mike Fiorella and treasurer Pat Newton."
+      ],
       "src": {
        "label": "1973 Talisman, Associated Students",
        "url": "https://archive.org/details/talisman1973west"
@@ -3319,6 +3420,152 @@
        "note": "The 1973 Talisman says the Legal Rights Committee was headed by Pat Long and Gary Whitfield, and that it dealt with community legal problems involving students, worked to set up a bail-bond fund for arrested students, and pressed the university over the expulsion of students charged but not convicted of drug violations, the refusal to show X-rated films in the student centre and the appeal of the 'Fly' censorship case. The volume uses the word 'headed'; it does not give either man the title of chairman.",
        "src": {
         "label": "1973 Talisman, Associated Students, pp. 74-75",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Janice Berkshire",
+       "seat": "representative of the College of Applied Arts to the ASG Congress",
+       "note": "The 1973 Talisman's Kappa Delta chapter page records Berkshire as representing the College of Applied Arts in the ASG Congress.",
+       "src": {
+        "label": "1973 Talisman, Greeks (Kappa Delta)",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "David Brown",
+       "seat": "representative to the Academic Council",
+       "note": "The 1973 Talisman's Sigma Alpha Epsilon chapter page names Brown the chapter's representative to the Academic Council. The same volume's account of the revised constitution puts the Academic Council members and alternates on the roll of Congress, which is the basis for recording him here. The volume does not say whether he sat as a full member or an alternate, or for which college.",
+       "src": {
+        "label": "1973 Talisman, Greeks (Sigma Alpha Epsilon)",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "John Burden",
+       "seat": "Academic Council representative, Graduate College",
+       "note": "The 1973 Talisman's section on graduate representation names Burden and Steve Schulman as members of the Academic Council for the graduate college. The same volume puts the Academic Council members and alternates on the roll of Congress, which is the basis for recording him here; it does not distinguish full members from alternates.",
+       "src": {
+        "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Robert Deboe",
+       "seat": "member, Associated Student Government",
+       "note": "The 1973 Talisman's Alpha Phi Alpha chapter page records that Deboe was elected to the Associated Student Government during the year the volume covers.",
+       "src": {
+        "label": "1973 Talisman, Organizations (Alpha Phi Alpha), p. 270",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Gail Emberton",
+       "seat": "junior class vice president",
+       "note": "The 1973 Talisman records the junior class electing Fred Price president and Emberton vice president for the year; under the revised constitution both seats carried a place on the roll of Congress. Her Who's Who entry in the 1974 Talisman names her Chi Omega's personnel chairman and a President's Scholar, and records her taking part in ASG.",
+       "src": {
+        "label": "1973 Talisman, Classes (Juniors), p. 397; 1974 Talisman, Who's Who",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Laurie Flaim",
+       "seat": "freshman class vice president",
+       "note": "The 1973 Talisman names Flaim vice president of the freshman class, with Steve Henry as president, the only two class officers that year. Under the revised constitution the same volume describes, the president and vice president of each class sat on the roll of Congress. Her freshman portrait in that volume prints the name Laurel A. Flaim, a spelling variant not otherwise noted. A Herald report would give the vote; the archive has not read it.",
+       "src": {
+        "label": "1973 Talisman, Classes (Freshmen)",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Merlin Gagle",
+       "seat": "ASG representative from the Graduate College",
+       "note": "The 1973 Talisman's section on graduate representation names Gagle and Juanita Morrow as student government representatives from the graduate college. He was found while checking Morrow's seat and was not on the list this pass began from; the sentence that carries her name carries his.",
+       "src": {
+        "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Mark Harvey",
+       "seat": "representative at large to the ASG Congress",
+       "note": "The 1973 Talisman's Sigma Nu chapter page records Harvey as a representative-at-large to the Associated Student Government Congress.",
+       "src": {
+        "label": "1973 Talisman, Greeks (Sigma Nu)",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Steve Henry",
+       "seat": "freshman class president",
+       "note": "The 1973 Talisman's Classes section records the freshman class electing Henry president, with Laurie Flaim as vice president, the only two class officers that year; under the revised constitution both seats carried a place on the roll of Congress. The Sigma Alpha Epsilon chapter page in the same volume calls the freshman class president Pledge Steve Harvey; the Classes section spelling is followed here. A Herald report would give the vote; the archive has not read it.",
+       "src": {
+        "label": "1973 Talisman, Classes (Freshmen)",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Michael Inman",
+       "seat": "sophomore class vice president",
+       "note": "The 1973 Talisman records the sophomore class electing Louis Berman president and Inman vice president the previous spring. The same volume's account of the constitution puts class presidents and vice presidents in the Congress with a vote, which is the basis for recording him here. A Herald report of the meeting of 31 August 1972 would show what committee work he was given; the archive has not read it.",
+       "src": {
+        "label": "1973 Talisman, Classes (Sophomores), p. 416",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Terry Miller",
+       "seat": "senior class president",
+       "note": "The 1973 Talisman records Miller as senior class president with Joe Cheak as vice president, and says the two took their responsibility to be representing the class in the Associated Students Congress, class activity being nil for the rest of the year. A caption in the same volume says the two represented the senior class in the Congress.",
+       "src": {
+        "label": "1973 Talisman, Classes (Seniors)",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Juanita Morrow",
+       "seat": "ASG representative from the Graduate College",
+       "note": "The 1973 Talisman's section on graduate representation names Morrow and Merlin Gagle as student government representatives from the graduate college. The volume does not say which kind of seat she held; a Herald report of the vote of 19 September 1972 would settle it and has not been read.",
+       "src": {
+        "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Fred Price",
+       "seat": "junior class president; co-head, Rules and Elections Committee",
+       "note": "The 1973 Talisman records Price as junior class president, with Gail Emberton as vice president, and names him and R. G. Meade as heads of the Rules and Elections Committee. Under the revised constitution the class presidency carried a place on the roll of Congress. A Herald report of the meeting of 31 August 1972 would show how the committee was constituted; the archive has not read it.",
+       "src": {
+        "label": "1973 Talisman, Classes (Juniors), p. 397, and Student Government section",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Steve Schulman",
+       "seat": "Academic Council representative, Graduate College",
+       "note": "The 1973 Talisman's section on graduate representation names Schulman and John Burden as members of the Academic Council for the graduate college. The same volume puts the Academic Council members and alternates on the roll of Congress, which is the basis for recording him here; it does not distinguish full members from alternates.",
+       "src": {
+        "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Carl Stolzfus",
+       "seat": "Academic Council representative, College of Education",
+       "note": "The 1973 Talisman's Sigma Phi Epsilon chapter page records him as a member of Associated Students Government, the student member of the Academic Council from the College of Education, and a member of the college's curriculum committee and the university academic complaint committee. The chapter page spells the surname Stoltzfus. A Herald report would give the vote he polled on 19 September 1972; the archive has not read it.",
+       "src": {
+        "label": "1973 Talisman, Greeks (Sigma Phi Epsilon), p. 309",
+        "url": "https://archive.org/details/talisman1973west"
+       }
+      },
+      {
+       "name": "Ronda Talley",
+       "seat": "representative to the ASG Congress",
+       "note": "The 1973 Talisman's Kappa Delta chapter page records that Talley was voted a representative to the Associated Student Government Congress, and names her Lambda Chi Alpha's outstanding Crescent Girl for 1972 and a Who's Who selection in the 1972 edition. A profile in the same volume calls her the student representative from the College of Education to the Associated Students.",
+       "src": {
+        "label": "1973 Talisman, Greeks (Kappa Delta)",
         "url": "https://archive.org/details/talisman1973west"
        }
       }
@@ -3724,7 +3971,11 @@
      {
       "office": "Administrative Vice President",
       "name": "Glenn Jackson",
-      "note": "Jackson was administrative vice president in 1973-74 and the yearbook's spokesman for the reorganization bill that abolished ASG's committee system and folded all programs into two areas, student affairs and academic affairs. He said the old system was too rigid and that ideas often fitted no committee, leaving some with nothing to do and others with too much. He also co-ordinated the free university, and cited lack of interest and difficulty finding teachers as its main problem.",
+      "note": "Jackson was administrative vice president in 1973-74 and the yearbook's spokesman for the reorganization bill that abolished ASG's committee system and folded all programs into two areas, student affairs and academic affairs. He said the old system was too rigid and that ideas often fitted no committee, leaving some with nothing to do and others with too much. He also co-ordinated the free university, and cited lack of interest and difficulty finding teachers as its main problem. The Herald reported the same reorganization push in its own coverage that October and January, when Jackson introduced an interaction proposal and then a bill to reorganize ASG.",
+      "profile": [
+       "Glenn Jackson was elected administrative vice president of the Associated Student Government for 1973-74, serving under president Steve Yater alongside activities vice president Tom LaCivita, treasurer Lee Goodpaster and secretary Pam Stewart.",
+       "Jackson was the executive branch's public spokesman for a reorganization of ASG's committee system, which the Herald reported him introducing in the Congress that October and again as formal legislation in January 1974. The 1974 Talisman quotes him saying the old, more numerous committee structure was too rigid, that ideas often fitted no existing committee, and that the result left some committees with nothing to do and others overloaded; the reorganization folded ASG's programs into two broader areas, student affairs and academic affairs. Jackson also coordinated ASG's free university program that year, begun the previous spring, and said afterward that a lack of student interest and difficulty finding people to teach the non-credit courses were its main problems."
+      ],
       "src": {
        "label": "1974 Talisman, Associated Student Government, p. 56",
        "url": "https://archive.org/details/talisman1974west"
@@ -3733,9 +3984,13 @@
      {
       "office": "Treasurer",
       "name": "Lee Goodpaster",
-      "note": "Goodpaster was ASG treasurer in 1973-74 and appears in the same officer list and meeting caption. The yearbook mentions her separately in its elections and homecoming coverage.",
+      "note": "Goodpaster was ASG treasurer in 1973-74 and appears in the same officer list and meeting caption. The yearbook mentions her separately in its elections and homecoming coverage. The same volume's Who's Who feature profiles her as an accounting major who was a member of Alpha Xi Delta sorority and an Alpha Tau Omega Little Sister; the 1975 Talisman further records that she received Alpha Xi Delta's Frances C. Bloker Pledge Trainer Award at the sorority's national convention in Chicago.",
+      "profile": [
+       "Lee Goodpaster served as treasurer of the Associated Student Government for 1973-74 under president Steve Yater, one of the five-member executive branch shown in the year's officer photograph and meeting caption alongside Yater, Tom LaCivita, Glenn Jackson and Pam Stewart.",
+       "The 1974 Talisman's Who's Who feature profiles Goodpaster separately: an accounting major, she was a member of Alpha Xi Delta sorority and an Alpha Tau Omega Little Sister. The following year's Talisman records that she received Alpha Xi Delta's Frances C. Bloker Pledge Trainer Award at the sorority's national convention in Chicago."
+      ],
       "src": {
-       "label": "1974 Talisman, Associated Student Government, p. 56",
+       "label": "1974 Talisman, Associated Student Government, p. 56, and Who's Who, p. 95",
        "url": "https://archive.org/details/talisman1974west"
       }
      },
@@ -3743,6 +3998,9 @@
       "office": "Secretary",
       "name": "Pam Stewart",
       "note": "Stewart was ASG secretary in 1973-74. She appears in the section's officer list and in a caption of officers conducting a meeting with Yater, LaCivita, Jackson and Goodpaster.",
+      "profile": [
+       "Pam Stewart served as secretary of the Associated Student Government for 1973-74 under president Steve Yater. The 1974 Talisman lists her in the year's executive officer roll and pictures her in a meeting caption alongside Yater, activities vice president Tom LaCivita, administrative vice president Glenn Jackson and treasurer Lee Goodpaster."
+      ],
       "src": {
        "label": "1974 Talisman, Associated Student Government, p. 56",
        "url": "https://archive.org/details/talisman1974west"
@@ -3751,7 +4009,11 @@
      {
       "office": "Activities Vice President",
       "name": "Thomas LaCivita",
-      "note": "LaCivita was activities vice president in 1973-74 and again in 1974-75, making him one of the few officers to serve two consecutive years in this decade. The 1974 volume says he was elected in one of the closest races and carries a Herald reviewer's criticism of the concert programme; the 1975 volume has President Jeff Consolo crediting him with a more diversified entertainment series on a $42,000 budget.",
+      "note": "LaCivita was activities vice president in 1973-74 and again in 1974-75, making him one of the few officers to serve two consecutive years in this decade. The 1974 volume says he was elected in one of the most controversial elections in the school's history and carries a Herald reviewer's criticism of the concert programme; the 1975 volume has President Jeff Consolo crediting him with a more diversified entertainment series on a $42,000 budget. The 1974 Talisman traces the friction behind that review to a dispute between LaCivita and Ron Beck, assistant dean of student affairs: LaCivita said Beck put too little creativity into the entertainment program and did not keep up with the music scene, while Beck said cost, student appeal and any encouragement of drug use were what shaped which acts were booked, adding that he would not book a group he had not heard of; the two reconciled enough during the year to run a program that turned a profit after a slow start.",
+      "profile": [
+       "Thomas LaCivita was elected activities vice president of the Associated Student Government for 1973-74 in what the 1974 Talisman calls one of the most controversial elections in the school's history, serving under president Steve Yater alongside administrative vice president Glenn Jackson, treasurer Lee Goodpaster and secretary Pam Stewart. He was re-elected to the post for 1974-75, one of the few ASG officers of the decade to serve two consecutive years; that second term is recorded under his 1974-75 entry.",
+       "Early in his first year LaCivita clashed publicly with Ron Beck, the assistant dean of student affairs who administered concert bookings through ASG. LaCivita charged that Beck put too little creativity into the entertainment program, did not weigh LaCivita's opinions, and did not keep up with the music scene; he also argued that concerts should be advertised beyond Bowling Green to draw more ticket revenue. Beck, who at first declined to respond to the specific charges, said cost, student appeal and any tendency of an act to encourage drug use were what determined which acts were booked, telling the Herald's reviewer, 'If I haven't heard of a group, they won't go on this campus.' The dispute eased as the year went on, and the two ran an entertainment program that turned a profit after a rocky start."
+      ],
       "src": {
        "label": "1974 Talisman, Associated Student Government, p. 56",
        "url": "https://archive.org/details/talisman1974west"
@@ -3766,6 +4028,107 @@
        "note": "The 1974 Talisman names Deboe, in its Alpha Phi Alpha page, as a member of the Judicial Council and as elected to Who's Who. A Robert Deboe had been approved to the Rules and Elections Committee at Congress's first meeting of 31 August 1972, reported in the Herald of 1 September 1972; the volumes do not say the two are the same man.",
        "src": {
         "label": "1974 Talisman, Greeks, p. 254",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Melody Edwards",
+       "seat": "representative in the Associated Student Government and on the Academic Council",
+       "note": "Her Who's Who entry in the 1974 Talisman names her an agriculture club member and a representative in the Associated Student Government and on the Academic Council. The entry does not date the term; it is placed here because it appears in the 1974 volume.",
+       "src": {
+        "label": "1974 Talisman, Who's Who, no. 25",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      },
+      {
+       "name": "Debbie Filburn",
+       "seat": "representative-at-large on the ASG Congress",
+       "note": "The Kappa Delta chapter page names members who distinguished themselves on campus, including 'Debbie Filburn, serving as representative-at-large on the ASG Congress' — a direct, dated statement of the seat, not merely a general mention. The volume's index separately lists a distinct person, Donna Marie Filburn, confirming the two should not be merged.",
+       "src": {
+        "label": "1974 Talisman, Greeks (Kappa Delta)",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      },
+      {
+       "name": "Reginald Glass",
+       "seat": "ASG representative from the Graduate College",
+       "note": "Resigned from Congress in protest in the section covering 1973-74, having asked for better representation for minority groups in student government and the Academic Council; the text says he argued the lack of black and foreign students in those bodies was harmful to both minorities and the University. His prior 1971-72 Associated Students vice-presidency is not sourced to this citation.",
+       "src": {
+        "label": "1974 Talisman, Associated Student Government",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      },
+      {
+       "name": "Steve Henry",
+       "seat": "sophomore class president",
+       "note": "The Sophomores section says active class members included seven sophomores who were members of the ASG congress, and names Steve Henry as class president in text and in a photo caption of Henry and Jeff Wampler checking notes before an ASG meeting.",
+       "src": {
+        "label": "1974 Talisman, Classes (Sophomores)",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      },
+      {
+       "name": "Michael Inman",
+       "seat": "junior class president",
+       "note": "Named as junior class president, coordinating class activities (including a Homecoming float and spring dance) with vice-president Deborah Locke.",
+       "src": {
+        "label": "1974 Talisman, Classes (Juniors), p. 386",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      },
+      {
+       "name": "John Donofrio, Jr.",
+       "seat": "freshman class president",
+       "note": "Named as coordinating freshman class projects with vice-president Christy Kay Vogt, under the heading 'Donofrio and Vogt lead freshman class.'",
+       "src": {
+        "label": "1974 Talisman, Classes (Freshmen), p. 410",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      },
+      {
+       "name": "Deborah Locke",
+       "seat": "junior class vice president",
+       "note": "Named in the junior class pages and caption as vice-president; the Kappa Delta chapter page separately lists 'Debbie Locke, as vice-president of the junior class' among members who distinguished themselves on campus.",
+       "src": {
+        "label": "1974 Talisman, Classes (Juniors), p. 386",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      },
+      {
+       "name": "Hamp Moore",
+       "seat": "senior class vice president",
+       "note": "Named with Carl Stoltzfus in the senior class pages and photograph caption as senior class vice-president; the same section notes he was elected vice-president of the Southeast Regional Inter-Fraternity Conference that year.",
+       "src": {
+        "label": "1974 Talisman, Classes (Seniors)",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      },
+      {
+       "name": "Carl Stoltzfus",
+       "seat": "senior class president",
+       "note": "His Who's Who entry (no. 16) says he was president of the senior class, a member of the Associated Student Government, a participant in the Academic Council, a member of the Pi Sigma Alpha Government fraternity and Greek editor of the yearbook. The Sigma Phi Epsilon chapter page separately says he was senior class president, chairman of the Rules and Election Committee of the ASG, Talisman Greek editor, and a member of the University Academic Complaint Committee and of Who's Who.",
+       "src": {
+        "label": "1974 Talisman, Who's Who no. 16 and Greeks (Sigma Phi Epsilon)",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      },
+      {
+       "name": "Christy Kay Vogt",
+       "seat": "freshman class vice president",
+       "note": "Named as freshman class vice-president alongside President John Donofrio, Jr. The claim about her 1974-75 representative-at-large seat and January 1975 resignation is not sourced to this citation and is flagged as recorded under that later year, not this one.",
+       "src": {
+        "label": "1974 Talisman, Classes (Freshmen), p. 410",
+        "url": "https://archive.org/details/talisman1974west"
+       }
+      },
+      {
+       "name": "Jeff Wampler",
+       "seat": "sophomore class vice president",
+       "note": "Named with Steve Henry in the sophomore class pages and in the caption of the two checking notes before an ASG meeting.",
+       "src": {
+        "label": "1974 Talisman, Classes (Sophomores)",
         "url": "https://archive.org/details/talisman1974west"
        }
       }
@@ -4168,7 +4531,10 @@
       "src": {
        "label": "1975 Talisman, Associated Student Government",
        "url": "https://archive.org/details/talisman1975west"
-      }
+      },
+      "profile": [
+       "Paul Nation was administrative vice president of the Associated Student Government for 1974-75 under President Jeff Consolo. The 1975 Talisman's Greek pages record him in the post, and at the close of the year Consolo, crediting each of his officers by name, named Nation first and said all four officers had done a good job."
+      ]
      },
      {
       "office": "Treasurer",
@@ -4177,7 +4543,10 @@
       "src": {
        "label": "1975 Talisman, Associated Student Government",
        "url": "https://archive.org/details/talisman1975west"
-      }
+      },
+      "profile": [
+       "Ricky Johnson was treasurer of the Associated Student Government for 1974-75. A photograph caption in the 1975 Talisman shows him with activities vice president Tom LaCivita discussing the signing of the rock band War and the Charlie Daniels Band for a Western concert. A Rickie Johnson appears on the ASG Congress attendance roll the 1976 Talisman printed, so he may have stayed active in Congress after his term as treasurer ended, though the spelling differs between the two volumes and the identification is not certain."
+      ]
      },
      {
       "office": "Secretary",
@@ -4186,12 +4555,19 @@
       "src": {
        "label": "1975 Talisman, Associated Student Government",
        "url": "https://archive.org/details/talisman1975west"
-      }
+      },
+      "profile": [
+       "Cindy Kirkpatrick was secretary of the Associated Student Government for 1974-75. The 1975 Talisman photographs her checking meeting notes as President Jeff Consolo conferred with Panhellenic Council president Donna Filburn. The 1974 Talisman, covering the year before her term as secretary, already shows her in conversation with activities vice president Tom LaCivita and Vice President for Academic Affairs Dr. John Minton, suggesting she was involved with ASG before she took office."
+      ]
      },
      {
       "office": "Activities Vice President",
       "name": "Thomas LaCivita",
-      "note": "LaCivita held the activities vice presidency for a second consecutive year in 1974-75; the archive records his 1973-74 term only. He ran unopposed for re-election. He chaired the ASG Activities Committee, worked to a $42,000 entertainment budget of which $27,000 went to two free concerts, and after protests over the poorly attended Doc Severinsen Homecoming concert absorbed the newly formed Student Action Committee into his committee, saying the added personnel would give him more people to back him up. Bookings were settled between him and Ron Beck, assistant dean of student affairs.",
+      "note": "LaCivita held the activities vice presidency for a second consecutive year in 1974-75; the archive records his 1973-74 term separately, where his profile is written. He ran unopposed for re-election. He chaired the ASG Activities Committee, worked to a $42,000 entertainment budget of which $27,000 went to two free concerts, and after protests over the poorly attended Doc Severinsen Homecoming concert absorbed the newly formed Student Action Committee into his committee, saying the added personnel would give him more people to back him up. Bookings were settled between him and Ron Beck, assistant dean of student affairs, with whom LaCivita had publicly clashed over concert booking the previous year.",
+      "profile": [
+       "Thomas LaCivita, elected unopposed to a second consecutive term as activities vice president of the Associated Student Government for 1974-75, chaired the ASG Activities Committee on a roughly $42,000 entertainment budget, of which $27,000 went toward two free concerts. His full account, including the 1973-74 dispute with assistant dean of student affairs Ron Beck over concert booking, is recorded under his first term the year before.",
+       "After students picketed the poorly received Doc Severinsen Homecoming concert on 11 October 1974, a newly formed Student Action Committee pressed to give LaCivita more say in negotiating with prospective acts; he absorbed the committee into his own rather than cede ground, though Kentucky law kept the activities vice president's role advisory, since a student could not control university funds outright. When a booked Al Stewart mini-concert fell through after Stewart's United States tour was cancelled under immigration law, LaCivita booked the New York hard rock group Kiss to replace him. President Jeff Consolo credited LaCivita afterward with running a more diversified entertainment series that year."
+      ],
       "src": {
        "label": "1975 Talisman, Associated Student Government",
        "url": "https://archive.org/details/talisman1975west"
@@ -4200,11 +4576,14 @@
      {
       "office": "Student Affairs Chairperson",
       "name": "Stan McDivitt",
-      "note": "President Jeff Consolo appointed McDivitt student affairs chairperson at the Congress meeting of 4 February 1975. The post had fallen vacant when Christy Vogt resigned from Congress on 28 January. The reorganisation of that year had divided ASG's work into two areas, student affairs and academic affairs, as the Herald reported on 6 December 1974.",
+      "note": "McDivitt was elected to the Associated Student Government Congress, the 1975 Talisman's Sigma Alpha Epsilon chapter pages record, alongside fraternity brother Steve Henry, who went on to be ASG president in 1975-76. This entry lists him as ASG's student affairs chairperson for 1974-75; the archive has not found a source confirming when or how he came into that post. The Herald issue of 7 February 1975 previously cited for it (digitalcommons.wku.edu/dlsc_ua_records/5048) does not name him in its index, and the earlier account of an appointment at the Congress meeting of 4 February 1975 has been withdrawn as unsourced.",
       "src": {
-       "label": "Herald 50:35, 7 Feb 1975, 'ASG congress hears treasurer's budget explanation'",
-       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5048"
-      }
+       "label": "1975 Talisman, Sigma Alpha Epsilon",
+       "url": "https://archive.org/details/talisman1975west"
+      },
+      "profile": [
+       "Stan McDivitt was elected to the Associated Student Government Congress, the 1975 Talisman's Sigma Alpha Epsilon chapter pages record, alongside fraternity brother Steve Henry, who went on to be ASG president in 1975-76."
+      ]
      }
     ],
     "senate": {
@@ -4243,6 +4622,220 @@
        "src": {
         "label": "Herald 50:35, 7 Feb 1975, 'ASG congress hears treasurer's budget explanation'",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5048"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Jo Ann Ballance",
+       "seat": "sophomore class vice president",
+       "note": "The 1975 Talisman records Ballance as a sophomore class officer who held a seat on the student government, and quotes her arguing that an office amounting to building a float was not worth having and that two people could not represent a whole class. She favoured a student government made up only of representatives from the individual colleges.",
+       "src": {
+        "label": "1975 Talisman, Classes (Sophomores), p. 394",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Rodney Berry",
+       "seat": "representative for the College of Business and Public Affairs",
+       "note": "The 1975 Talisman records Berry founding the Student Volunteer Bureau, which weakened for want of funds and administrators, and then approaching ASG president Jeff Consolo about folding it into ASG; the merger passed at the last meeting of the autumn semester by better than 80 per cent. A Lambda Chi Alpha chapter page in the same volume records him as having set up the bureau and served on student government.",
+       "src": {
+        "label": "1975 Talisman, Associated Student Government section; Greeks (Lambda Chi Alpha)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Thomas A. Blair",
+       "seat": "member, Associated Student Government",
+       "note": "A Lambda Chi Alpha chapter page in the 1975 Talisman records Blair as serving on student government alongside Rodney Berry and Frank Medaris, and the senior directory gives his home as Bellbrook, Ohio. The volume confirms ASG membership but does not say which seat he held.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Lambda Chi Alpha)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Paul Calico",
+       "seat": "representative-at-large",
+       "note": "A Sigma Nu chapter page in the 1975 Talisman records Calico as a representative-at-large to the student government.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Sigma Nu)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Deborah DeJarnette",
+       "seat": "member, Associated Student Government",
+       "note": "An Alpha Xi Delta chapter page in the 1975 Talisman names DeJarnette, Mary Pat Swift, Jennifer Rapp and Debbie Johnson as representatives for the Associated Student Government. The page confirms ASG membership but does not say which seat she held.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Alpha Xi Delta)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "John Draheim",
+       "seat": "sophomore class president",
+       "note": "The 1975 Talisman pictures Draheim and Jo Ann Ballance, the sophomore class officers, comparing notes at an ASG meeting, under a caption saying that holding seats in the student government, rather than leading the class, was the main function of class officers.",
+       "src": {
+        "label": "1975 Talisman, Classes (Sophomores), p. 394",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Donna Filburn",
+       "seat": "representative-at-large",
+       "note": "A Kappa Delta chapter page in the 1975 Talisman records the sisters Donna and Debbie Filburn as both serving in the Associated Student Government, and Donna as Panhellenic president. A separate caption in the same volume names her Panhellenic Council president, conferring with ASG president Jeff Consolo.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Kappa Delta); Associated Student Government section",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Gail Getchell",
+       "seat": "representative for the College of Applied Arts and Health",
+       "note": "Her Who's Who entry in the 1975 Talisman records the Lexington senior as a representative-at-large and a representative for the College of Applied Arts and Health in ASG, and as having served a term as president of the Panhellenic Council. The entry does not date the Panhellenic term.",
+       "src": {
+        "label": "1975 Talisman, Who's Who",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Greg Goatley",
+       "note": "His Who's Who entry in the 1975 Talisman names him a member of the Associated Student Government, along with chairman of the College Republicans, vice-chairman of the Kentucky College Republican Federation and campus coordinator for Marlow Cook's Senate campaign. He was a senior in 1974-75 and does not appear in the April 1974 returns; the entry summarises his career and does not date the term.",
+       "src": {
+        "label": "1975 Talisman, Who's Who",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Tom Hayes",
+       "seat": "freshman class vice president",
+       "note": "Ran on making the dorms more like home. The first of his reforms, passed by ASG in November 1974, provided a method by which residents could obtain change for vending machines, which resident assistants had not been allowed to give out. He suggested increasing the number of class officers while restricting voting rights to the president and vice-president.",
+       "src": {
+        "label": "1975 Talisman, Classes (Freshmen), p. 406",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Steve Henry",
+       "seat": "elected member of the Associated Student Government",
+       "note": "A Sigma Alpha Epsilon chapter page in the 1975 Talisman records Henry and Stan McDivitt as elected members of the Associated Student Government. He was elected ASG president the following spring and served in 1975-76.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Sigma Alpha Epsilon)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Larry Hooks",
+       "seat": "representative for Ogden College",
+       "note": "A Sigma Nu chapter page in the 1975 Talisman records Hooks as a representative for Ogden College.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Sigma Nu)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Mike Inman",
+       "seat": "senior class president",
+       "note": "The 1975 Talisman records Inman as senior class president with Pam Stewart as vice president, the only two to turn up at the class meeting called to organise Homecoming, and quotes him saying he ran for class office because it was the easiest way to get a seat in the student government. He proposed a bill to abolish class offices and create congress representatives for each class instead; ASG president Jeff Consolo opposed it.",
+       "src": {
+        "label": "1975 Talisman, Classes (Seniors), p. 344",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Debbie Johnson",
+       "note": "An Alpha Xi Delta chapter page in the 1975 Talisman names Johnson among the sorority's representatives for the Associated Student Government. The same page separately lists a D. J. Johnson among the members, so the two names should not be treated as one person without a source that links them.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Alpha Xi Delta)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Jay Keffer",
+       "seat": "freshman class president",
+       "note": "The 1975 Talisman records Keffer and Tom Hayes as holding the only two freshman seats in the student government, and says both held that including class officers in the student government was essential.",
+       "src": {
+        "label": "1975 Talisman, Classes (Freshmen), p. 406",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Karen McNally",
+       "seat": "junior class vice president",
+       "note": "The 1975 Talisman records McNally as junior class vice president and quotes her saying students took no interest in class activities and that nobody came when class meetings were called. She argued that ASG needed more representatives-at-large.",
+       "src": {
+        "label": "1975 Talisman, Classes (Juniors), p. 384",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Frank Mendaris",
+       "seat": "member, Associated Student Government",
+       "note": "A Lambda Chi Alpha chapter page in the 1975 Talisman records him serving on student government with Rodney Berry and Tom Blair, spelling the surname Medaris, which matches the senior directory's Frank C. Medaris, Jr. The page confirms ASG membership but does not say which seat he held.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Lambda Chi Alpha)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Hank Miles",
+       "seat": "graduate college representative",
+       "note": "The 1975 Talisman pictures Miles with Evie Shrewsbury, both graduate students, considering a programme issue at an ASG meeting, under a passage on college representatives conferring at meetings.",
+       "src": {
+        "label": "1975 Talisman, Associated Student Government section",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "David Payne",
+       "seat": "representative-at-large",
+       "note": "An Alpha Kappa Psi chapter page in the 1975 Talisman records Payne, Andrew Carter and Don Colombero as serving on the Associated Student Government. The page does not say which seat he held. He was elected ASG treasurer the following spring and served in 1975-76 and again in 1976-77.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Alpha Kappa Psi)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Jennifer Rapp",
+       "note": "An Alpha Xi Delta chapter page in the 1975 Talisman names Rapp among the sorority's representatives for the Associated Student Government. She does not appear in the April 1974 returns, so any seat was filled later in the year; no second source has been found.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Alpha Xi Delta)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Evie Shrewsbury",
+       "seat": "graduate college representative",
+       "note": "The 1975 Talisman pictures Shrewsbury with Hank Miles, both graduate students, considering a programme issue at an ASG meeting, under a passage on college representatives conferring at meetings.",
+       "src": {
+        "label": "1975 Talisman, Associated Student Government section",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Pam Stewart",
+       "seat": "senior class vice president",
+       "note": "The 1975 Talisman records Stewart as senior class vice president alongside president Mike Inman, the only two to turn up at the class meeting called to organise Homecoming. The 1974 Talisman separately records her as secretary of the Associated Student Government the year before.",
+       "src": {
+        "label": "1975 Talisman, Classes (Seniors), p. 344; 1974 Talisman, Organizations",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Mary Pat Swift",
+       "note": "An Alpha Xi Delta chapter page in the 1975 Talisman names Swift among the sorority's representatives for the Associated Student Government. The page does not say which seat she held.",
+       "src": {
+        "label": "1975 Talisman, Greeks (Alpha Xi Delta)",
+        "url": "https://archive.org/details/talisman1975west"
+       }
+      },
+      {
+       "name": "Jeff Wampler",
+       "seat": "junior class president",
+       "note": "The 1975 Talisman records Wampler as junior class president with Karen McNally as vice president, says their main function was to attend meetings of the Associated Student Government, and reports both saying there was really no need for class officers.",
+       "src": {
+        "label": "1975 Talisman, Classes (Juniors), p. 384",
+        "url": "https://archive.org/details/talisman1975west"
        }
       }
      ]
@@ -4707,16 +5300,24 @@
       "src": {
        "label": "1976 Talisman, ASG",
        "url": "https://archive.org/details/talisman1976west"
-      }
+      },
+      "profile": [
+       "Before she became administrative vice president of the Associated Student Government for 1975-76, Christy Vogt had already spent two years working her way up through ASG. A Talisman profile of Vogt recorded that she came to Western from Angela Merici High School in Louisville, where she had served four years on student council and been both its vice president and president; as a Western freshman she ran for and won freshman vice president, then as a sophomore was elected an ASG representative-at-large before President Jeff Consolo appointed her student affairs chairman. She ran for administrative vice president with about a week left before the spring 1975 election and won.",
+       "In office, Vogt ran the book exchange ASG co-sponsored with Veterans on Campus from 12 to 26 January 1976, reporting that the two groups had covered their expenses by 21 January on sales of more than 600 books at a margin of 25 cents a book. She said the year's executive officers were closer than in any administration she had witnessed, crediting President Steve Henry for not minding which officer brought him ideas directly. She told the Talisman there was a 90 percent chance she would run for the ASG presidency in 1976-77; she did, and won. Her term as president is recorded separately, under 1976-77."
+      ]
      },
      {
       "office": "Treasurer",
       "name": "David Payne",
-      "note": "Payne was ASG treasurer in 1975-76. Congress member Marc Levy brought charges against him for spending before budget approval had been given, and Levy appeared twice before the Judicial Council. Payne argued the constitution provided for such spending and the council ruled in his favour. Note for the editor: years.json carries a David Payne under 1982-83 as an unresolved name. These may or may not be the same person and this archive should not merge them without a source that links them.",
+      "note": "Payne was ASG treasurer in 1975-76. Congress member Marc Levy brought charges against him for spending before budget approval had been given, and Levy appeared twice before the Judicial Council. Payne argued the constitution provided for such spending and the council ruled in his favour. Note for the editor: years.json separately carries a David Payne who succeeded Marcel Bush as ASG president in January 1982, filed under 1981-82 (not 1982-83) with year_confidence \"corrected\" - Board of Regents minutes of 30 January 1982 already confirm that identification, so he is not simply an unresolved name. Whether the 1981-82 president is the same person as this 1970s ASG treasurer is not established by any source found so far, and this archive should not merge them without one that links them.",
       "src": {
        "label": "1976 Talisman, ASG",
        "url": "https://archive.org/details/talisman1976west"
-      }
+      },
+      "profile": [
+       "David Payne was treasurer of the Associated Student Government for 1975-76, a job he described to the 1976 Talisman as \"simple record keeping\": reviewing the past year's records, planning a budget, getting it approved, vouching for payments, advising the ASG president on finances and preparing an expenditure report each semester. Congress member Marc Levy brought charges against him that year for spending before budget approval had been given, and appeared twice before the Judicial Council to press the case; Payne argued the ASG constitution provided for such spending, and the council ruled in his favour.",
+       "Note for the editor: years.json separately carries a David Payne who succeeded Marcel Bush as ASG president in January 1982, filed under 1981-82 (not 1982-83) with year_confidence \"corrected\" - Board of Regents minutes of 30 January 1982 already confirm that identification, so he is not simply an unresolved name. This Payne was re-elected treasurer for a second term in 1976-77, recorded there. Whether the 1981-82 president is the same person as this 1970s ASG treasurer is not established by any source found so far, and this archive should not merge them without one that links them."
+      ]
      },
      {
       "office": "Secretary",
@@ -4725,7 +5326,10 @@
       "src": {
        "label": "1976 Talisman, ASG",
        "url": "https://archive.org/details/talisman1976west"
-      }
+      },
+      "profile": [
+       "Nancy Wilk was secretary of the Associated Student Government for 1975-76 and kept the attendance roll the 1976 Talisman printed in full, effective 6 April 1976. She explained the rule to the yearbook: a member received a warning after four absences and was automatically removed from Congress after two more. The printed roll named roughly fifty Congress members and marked Mitchell Deep as resigned."
+      ]
      },
      {
       "office": "Activities Vice President",
@@ -4734,7 +5338,10 @@
       "src": {
        "label": "1976 Talisman, ASG",
        "url": "https://archive.org/details/talisman1976west"
-      }
+      },
+      "profile": [
+       "Rick Kelley was activities vice president of the Associated Student Government for 1975-76, the first of two consecutive terms in the office. In October he introduced a bill creating a student activities committee; members were chosen in December from open applications, and the committee ran three subcommittees covering concerts, lectures, and special events and publicity, meant to bring more student input into the entertainment program after controversy over past concert bookings. The 1976 Talisman credits the Homecoming concert by Linda Ronstadt, on 1 November 1975, with a $4,300 profit for ASG, calling it a tremendous financial success that kept ASG in the black; an earlier concert that September by Kenny Loggins and Jim Messina, by contrast, lost about $7,000 to poor attendance. His surname is printed both Kelley and Kelly in the same volume; the spelling is not settled."
+      ]
      }
     ],
     "senate": {
@@ -4773,6 +5380,404 @@
        "src": {
         "label": "Student Insight, supplement to the Herald, 27 Apr 1976",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5151/"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Joyce Adkins",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Connie Allspaw",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Becky Blair",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Tom Blair",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Elaine Boeckman",
+       "seat": "representative",
+       "note": "Named as an Associated Student Government representative in the same Chi Omega sentence as Susan Hurley. She also appears on the ASG Attendance Roll, and separately as a campaign worker for presidential candidate Steve Henry.",
+       "src": {
+        "label": "1976 Talisman, Greeks (Chi Omega), p. 268",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Wendell Bratcher",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Paul Calico",
+       "seat": "member",
+       "note": "Sigma Nu chapter page states he was 'also active in ASG,' in the same sentence as Paul Nation. He also appears on the ASG Attendance Roll. The parenthetical claim that Calico was representative-at-large in 1974-75 is a cross-reference to a different year's already-recorded source and is not addressed or contradicted by this 1976 volume; it is left as-is since it makes no claim against this source.",
+       "src": {
+        "label": "1976 Talisman, Greeks (Sigma Nu), p. 290-291",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Patty Campbell",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Sherry Casebier",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Jeff Cashdollar",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Sally Chenault",
+       "seat": "representative",
+       "note": "Named as an Associated Student Government representative in the same Kappa Delta sentence as Jenny Parker. She also appears on the ASG Attendance Roll.",
+       "src": {
+        "label": "1976 Talisman, Greeks (Kappa Delta), p. 270-272",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Becky Cress",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Mitchell Deep",
+       "seat": "member, Associated Student Government (resigned)",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences. The roll marks his line \"Mitchell Deep-resigned\"; no date or reason for the resignation is given in this source. The yearbook's back index gives his full name as William Mitchell Deep.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Beth Elliott",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "John Evans",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "James Grove",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Tom Hayes",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Susan Jaggers",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Rickie Johnson",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "James Keffer",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Tim Leigh",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Marc Levy",
+       "seat": "member",
+       "note": "Who's Who profile states he was active in the Academic Council, Associated Student Government (ASG) and Forensics Union, and made student government his major concern at Western. He also appears on the ASG Attendance Roll, and a separate ASG-related item describes him bringing spending-violation charges against ASG treasurer David Payne before the Judicial Council (council ruled for Payne).",
+       "src": {
+        "label": "1976 Talisman, Who's Who, p. 63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Debbie Marcum",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Stan McDivitt",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Jane Miles",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Huston Monarch",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Cathy Murphy",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Paul Nation",
+       "seat": "senior class president; ASG member",
+       "note": "Sigma Nu chapter page states he was senior class president and was on the Associated Student Government (ASG). He also appears on the ASG Attendance Roll, confirming Congress membership independent of the class-office link.",
+       "src": {
+        "label": "1976 Talisman, Greeks (Sigma Nu), p. 290-291",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Paul Palmer",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Jenny Parker",
+       "seat": "representative",
+       "note": "Named as an Associated Student Government representative on the Kappa Delta chapter page. She also appears on the ASG Attendance Roll.",
+       "src": {
+        "label": "1976 Talisman, Greeks (Kappa Delta), p. 270-272",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Roger Phelps",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Sherrelyn Presson",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Cindy Reinert",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Jamie Shirley",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Brent Shockley",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Bruce Smith",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Mike Smither",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Cathy Snellen",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Bob Somers",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Sheri Spruell",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Paul Stamp",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Howard Sypher",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Kathi Tabor",
+       "seat": "ASG Congress member (attendance roll); junior class president",
+       "note": "Named on the ASG's own printed attendance roll, effective 6 April 1976, among the Congress members subject to the absence rule set out by secretary Nancy Wilk. The Chi Omega chapter page in the same volume records her as junior class president but does not itself tie her to ASG; the roll is what establishes the seat.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 63",
+        "url": "https://archive.org/details/talisman1976west"
+       }
+      },
+      {
+       "name": "Pat Williams",
+       "seat": "member, Associated Student Government",
+       "note": "Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+       "src": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
        }
       }
      ]
@@ -5148,16 +6153,25 @@
       "src": {
        "label": "Herald 51:53, 9 Apr 1976",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5139/"
-      }
+      },
+      "profile": [
+       "Tom Blair was elected administrative vice president of the Associated Student Government on 6 and 7 April 1976, beating John David Evans by 570 votes to 552 in one of the closest races that spring; the 1977 Talisman lists him among the year's officers as already having ASG experience. About a year earlier, the Herald's 1 April 1975 issue had reported that Blair wanted a president's council formed, with no indication in the sources checked that he then held ASG office himself.",
+       "At the 6 April 1976 Congress meeting, before a vote on the impeachment of congressman Gerard Faulk, Blair moved to drop the proceedings without a vote on removal, then withdrew the motion at the urging of several other congressmen. The Herald's 13 April 1976 issue separately reported that Blair withdrew charges he had brought against President Steve Henry; the archive records those charges, one of the two cases behind Faulk's impeachment, as an allegation that Henry had obstructed an advisory intramurals committee.",
+       "Blair ran for the ASG presidency himself the following April and lost to Bob Moore, 562 votes to 536."
+      ]
      },
      {
       "office": "Treasurer",
       "name": "David Payne",
-      "note": "The 1977 Talisman records Payne and Rick Kelley as the two officers beginning second terms in 1976-77. In the ASG supplement published the previous April he had written that the treasurer's job combined record keeping, advising Congress of ASG's financial position, and planning the coming year's budget with the other executive officers. Note for the editor: years.json carries a David Payne under 1982-83 as an unresolved name; this archive should not merge them without a source that links them.",
+      "note": "The 1977 Talisman records Payne and Rick Kelley as the two officers beginning second terms in 1976-77. Note for the editor: years.json separately carries a David Payne who succeeded Marcel Bush as ASG president in January 1982, filed under 1981-82 (not 1982-83) with year_confidence \"corrected\" - Board of Regents minutes of 30 January 1982 already confirm that identification, so he is not simply an unresolved name. Whether the 1981-82 president is the same person as this 1970s ASG treasurer is not established by any source found so far, and this archive should not merge them without one that links them.",
       "src": {
        "label": "1977 Talisman, ASG, pp. 50-51",
        "url": "https://archive.org/details/talisman1977west"
-      }
+      },
+      "profile": [
+       "David Payne returned as treasurer of the Associated Student Government for 1976-77, one of two officers, along with activities vice president Rick Kelley, beginning a second consecutive term that year, the 1977 Talisman recorded.",
+       "Note for the editor: years.json separately carries a David Payne who succeeded Marcel Bush as ASG president in January 1982, filed under 1981-82 (not 1982-83) with year_confidence \"corrected\" - Board of Regents minutes of 30 January 1982 already confirm that identification, so he is not simply an unresolved name. Whether the 1981-82 president is the same person as this 1970s ASG treasurer is not established by any source found so far, and this archive should not merge them without one that links them."
+      ]
      },
      {
       "office": "Secretary",
@@ -5166,7 +6180,10 @@
       "src": {
        "label": "Herald 51:53, 9 Apr 1976",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5139/"
-      }
+      },
+      "profile": [
+       "Pam Keown was elected secretary of the Associated Student Government on 6 and 7 April 1976, beating Sally Chenault by 731 votes to 501. The 1977 Talisman lists her among the year's officers who came into the term with prior ASG experience, though the archive has not established what that earlier role was."
+      ]
      },
      {
       "office": "Activities Vice President",
@@ -5175,7 +6192,11 @@
       "src": {
        "label": "1977 Talisman, ASG, pp. 50-51",
        "url": "https://archive.org/details/talisman1977west"
-      }
+      },
+      "profile": [
+       "Rick Kelley was re-elected activities vice president of the Associated Student Government on 6 and 7 April 1976, beating Robert Tackett 705 votes to 496 for a second term running Western's concert program. He presided over the 6 April 1976 Congress meeting in President Steve Henry's absence.",
+       "A 1977 Talisman feature on his two years in the office, published as his term ended, described how Kelley worked with the concert selection committee and assistant dean of student affairs Ron Beck to book acts. When an agent representing Chicago called offering the band for a $25,000 show, Kelley discussed it with Beck, found a private promoter willing to cover the cost, then took the arrangement to the concert committee for approval; the show, a first for Western with a privately promoted act, set an advance-ticket sales record; Kelley said the show sold out of advance tickets and grossed over $50,000, while the Talisman's own concert report noted that the concert itself was not a sellout despite the record advance sales. The Seals and Crofts homecoming concert that same year drew about 5,200 people but lost roughly $3,800, which assistant dean of student affairs Ron Beck attributed to a Saturday date competing with other homecoming events. Kelley told the yearbook that Beck bore the brunt of student criticism over concert choices, and that students who complained about a show rarely wrote in when one succeeded. His surname is printed both Kelley and Kelly across these volumes; the spelling is not settled."
+      ]
      }
     ],
     "senate": {
