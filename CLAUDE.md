@@ -40,7 +40,14 @@ following **spring**. If they differ, someone is missing. Mark an acting officeh
 - The student regent was a **separately elected office** from April 1968. That is why plaque years
   carry two names. William Menser was the first, April 1968. The seat was non-voting until at least 1972.
 - Confirmed regents rather than presidents: Michael Fiorella 1972-73, Gregory McKinney 1974-75
-  (first African American student regent), Sandra Norfleet 1982-83.
+  (first African American student regent), Sandra Norfleet **1981-82**.
+- **Sandra Norfleet is 1981-82, not 1982-83.** The plaque reads 1982 and this file said
+  1982-83 until 18 August 2026. The *Herald* puts the whole term inside 1981-82: no majority
+  in the vote of 9 February 1982, Norfleet won the runoff on 16 February, and 15 April 1982
+  carried "Student Regent's 2-Month Term Nears End" (Herald 57:55,
+  digitalcommons.wku.edu/dlsc_ua_records/2464). Who held the seat earlier that year, before
+  what the paper called the first campus-wide election for it, is not established. Do not
+  file her forward again.
 - By ~2001 the offices merged. After that, a second name in a year is a mid-year succession.
 - Still open: Reed Morgan 1968-69, John Lyne vs Larry Zielke 1970-71, David Payne 1982-83.
 
