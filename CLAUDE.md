@@ -52,10 +52,20 @@ following **spring**. If they differ, someone is missing. Mark an acting officeh
 - Still open: Reed Morgan 1968-69, John Lyne vs Larry Zielke 1970-71, David Payne 1982-83.
 
 ## Search locally before you crawl
-`data/herald-index-full.json` is the **complete** article index of the digitised collection:
-11,850 items and 17,601 index lines, 1875 to 2026, with no keyword filter. Grep it first. It
-answers most "was X president that spring" questions in a second and costs TopSCHOLAR nothing.
+`data/herald-index-full.json` covers the whole digitised collection with no keyword filter:
+11,850 items and 17,601 index lines, 1875 to 2026. Grep it first. It answers most "was X
+president that spring" questions in a second and costs TopSCHOLAR nothing.
 Rebuild with `python3 scripts/harvest_herald_index.py --all` (about 35 minutes, paced).
+
+**But it is not complete, and a miss in it proves nothing.** Every stored line is cut at 300
+characters; 5,892 of the 17,601 lines (a third) sit exactly at that cap, truncated mid-headline.
+A *Herald* issue page lists thirty or more articles in one abstract, so what survives locally is
+usually the first two or three. Checked on 18 August 2026: the 14 April 1994 issue
+(`dlsc_ua_records/7878`) keeps one headline locally out of the thirty-seven the landing page
+actually carries — and the one that matters, the SGA election story, is among the thirty-six cut.
+So: a **hit** in this file is good evidence. A **miss** is not evidence of absence, and must never
+be the grounds for cutting a claim or writing "no source found". Open the issue's landing page
+before you conclude anything negative.
 
 `data/herald-index.json` is the filtered subset the site renders and is **not** a research tool:
 it keeps only issues whose index mentions student government, so anyone named in a headline that
