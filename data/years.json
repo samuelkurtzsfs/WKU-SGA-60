@@ -6222,9 +6222,9 @@
      ],
      "members": [
       {
-       "name": "Georgiana Carlson",
-       "seat": "Rules and Elections Committee (per 1977 Talisman)",
-       "note": "Nominated, though not elected, as a State Student Government Convention delegate (22 Feb 1977 minutes). Caution: the scanned minutes render the given name illegibly ('Tteorge'/'Teorme' Carlson at two OCR passes); the identification rests on a Georgiana Carlson already recorded in years.json under 1977-78 as the losing candidate for ASG treasurer, 437 votes to Gary Reed's 554 (Herald 52:53, 15 Apr 1977), and on the 1977 Talisman naming a Georgiana Carlson among those organizing the Rules and Elections committee. Congress membership itself is not confirmed by the minutes.",
+       "name": "George Carlson",
+       "seat": "State Student Government Convention nominee",
+       "note": "Nominated, though not elected, as a State Student Government Convention delegate (22 Feb 1977 minutes), which name the nominee George Carlson. A Georgiana Carlson is recorded in years.json under 1977-78 as the losing candidate for ASG treasurer, 437 votes to Gary Reed's 554 (Herald 52:53, 15 Apr 1977), and the 1977 Talisman names a Georgiana Carlson organizing the Rules and Elections committee; whether the minutes' George Carlson is that person, or another, is not established. Congress membership itself is not confirmed by the minutes.",
        "src": {
         "label": "ASG Minutes, 22 Feb 1977",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/23"
@@ -6242,7 +6242,7 @@
       {
        "name": "John Evans",
        "seat": "Congress member; Student Affairs Committee",
-       "note": "Reported the year's progress of the Student Affairs Committee to Congress and moved to waive the rules and vote immediately on Bill No. 12, seconded by Tim Leigh; the bill passed 31-9-1 (19 Apr 1977 minutes). The 1977 Talisman separately records a John Evans elected to the student affairs committee before the 1976 summer recess. Not established as the same John David Evans who lost the 1976 Activities Vice President race to Tom Blair, per a separate years.json record - no source found linking the two.",
+       "note": "Reported the year's progress of the Student Affairs Committee to Congress and moved to waive the rules and vote immediately on Bill No. 12, seconded by Tim Leigh; the bill passed 31-0-1 (19 Apr 1977 minutes). The 1977 Talisman separately records a John Evans elected to the student affairs committee before the 1976 summer recess. Not established as the same John David Evans who lost the 1976 Activities Vice President race to Tom Blair, per a separate years.json record - no source found linking the two.",
        "src": {
         "label": "ASG Minutes, 19 Apr 1977",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/17"
@@ -6251,7 +6251,7 @@
       {
        "name": "Kevin Kinnie",
        "seat": "Congress member",
-       "note": "Nominated and elected one of two delegates to the State Student Government Convention (22 Feb 1977 minutes); seconded Lynn Moss's motion to bring Bill No. 12 to the floor, which passed 31-9-1 (19 Apr 1977 minutes).",
+       "note": "Nominated and elected one of two delegates to the State Student Government Convention (22 Feb 1977 minutes); seconded Lynn Moss's motion to bring Bill No. 12 to the floor, which passed 31-0-1 (19 Apr 1977 minutes).",
        "src": {
         "label": "ASG Minutes, 22 Feb 1977",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/23"
@@ -6278,7 +6278,7 @@
       {
        "name": "Lynn Moss",
        "seat": "Congress member",
-       "note": "Moved to bring Bill No. 12 to the floor, seconded by Kevin Kinnie; the bill passed 31-9-1 (19 Apr 1977 minutes).",
+       "note": "Moved to bring Bill No. 12 to the floor, seconded by Kevin Kinnie; the bill passed 31-0-1 (19 Apr 1977 minutes).",
        "src": {
         "label": "ASG Minutes, 19 Apr 1977",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/17"
@@ -8154,7 +8154,7 @@
        }
       },
       {
-       "name": "Laura Fleenor",
+       "name": "Maura Fleenor",
        "seat": "Congress member",
        "note": "Named among the Congress members absent at roll call, 11 Nov 1980 (scanned 'Laurea Fleenor'), and again among the Congress members recorded absent, 17 Feb 1981 (scanned 'Maura Fleenar').",
        "src": {
