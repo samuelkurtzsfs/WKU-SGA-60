@@ -124,3 +124,80 @@ different dates, or same-day bills, which stay apart.
   import - so the summary is deliberately plain. Worth expanding.
 - The research routines are still starting from the orphaned branches. Until they
   branch from `origin/main`, every run will produce work that cannot be landed.
+
+---
+
+# 18 August 2026, evening — editor pass
+
+## What I reviewed
+One open pull request, #11, "Research: the backlog". The three stale branches from
+4 August — #6 photographs, #7 the 1980s, #8 the 2020s — were closed by the morning
+pass and needed nothing further. No other pull request was open.
+
+## Merged
+**#11, after corrections.** It adds the last three unverified branch histories: the
+Senate 2010-11 to 2016-17, the judiciary of the 1970s, and the governing
+constitutions 1966 to 1991. The fifteen accounts already published are untouched —
+the file's six thousand changed lines are reformatting, not revision — and
+`data/years.json` is not edited at all.
+
+I spot-checked thirty-five claims against their sources rather than against the run
+report. Twenty-four Herald and archive citations matched the complete local index
+exactly on date, volume, issue number, headline and byline. Six 2016-17 bills read
+from the PDFs on wku.edu matched on every reading date and vote count. Four SGA
+legislation landing pages matched on every date. Nothing I could check contradicted
+its citation, which is a better result than this project usually gets.
+
+## What I cut
+One fault, of a single kind. A few entries stated detail from inside a PDF as
+flatly as the facts that were confirmed, when the checking passes could only reach
+landing pages. The block applies the right standard in three places and then fails
+to apply it four entries away. I rescued rather than deleted: every fact and every
+citation survives, correctly attributed.
+
+- The 26 March 1976 Herald entry attributed a three-fourths removal threshold and a
+  thirty-minute limit on discussion to a headline saying only that the Faulk
+  impeachment hearings had opened. A headline carries neither. Rewritten to what it
+  proves; Steve Henry's offices re-attributed to the 1976 Talisman, which does
+  carry them.
+- Two entries drawn from the Herald of 7 September 1978. I fetched that record in
+  full: it yields an article list and nothing more. Both now say so, as does the
+  sentence in the judiciary summary that carried the same detail to the reader.
+- The Financial Advisory Council entry keeps the bill's dates, which its TopSCHOLAR
+  record gives, and marks the composition and the 26-to-4 vote as resting on the
+  bill's unread text.
+
+No trap in the checklist was tripped. Advance notices are worded to what a notice
+proves; chairmen are kept distinct from members; nobody is matched by surname; no
+April election is filed into the wrong year; the Thompson letter supports the
+settled reading of Reed Morgan instead of reopening it; and both conduct matters in
+the judiciary account state their outcomes.
+
+## Two notes for the next run
+**pypdf now works.** The morning report recorded that no PDF text extractor
+functions here, pypdf failing on its crypto import. The cause is a broken `cffi`
+backend, and `pip install --upgrade cffi` fixes it. I read six wku.edu bill PDFs
+this way. The 8 November 2022 minutes, mirrored but unread, can now be read, and so
+can the legislation archive.
+
+**The blocked sources are genuinely blocked.** `viewcontent.cgi` returns the AWS WAF
+challenge — HTTP 202, zero bytes — while landing pages return 200. This is not the
+burst-rate 403 that patience cures. Landing pages, `archive.org` and `wku.edu` are
+all open; plan around the PDFs rather than against them.
+
+## Where the record stands
+61 years, 1,878 dated events, 60 people who have been president, 34 documents, 390
+legislation files, and now all 18 branch accounts published, so the "what is missing
+here" note has correctly disappeared from that page. `build.py`, `check_data.py` and
+`check_contrib.py` all clean. `check_duplicates.py` reports the same six pairs as
+before; all six are separate events and none come from this work.
+
+## Still open
+- Four leaders have no portrait: Nick Todd and Katie Dawson (2004-05), Jeanne
+  Johnson (2006-07), Reagan Gilley (2008-09).
+- The 235 unmerged branch-research moments in `.research/branches-moments.json`.
+- The senate rolls, the three years without a cabinet, the Amanda Coates/Lich
+  identity question, roughly 20 weak citations, and the pre-2011 TopSCHOLAR
+  legislation.
+- The research routines still branch from the orphaned 4 August snapshots. Until
+  they cut from `origin/main`, their work will keep arriving unmergeable.
