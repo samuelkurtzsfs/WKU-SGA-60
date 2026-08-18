@@ -8008,8 +8008,8 @@
      },
      {
       "office": "Secretary",
-      "name": "Marsha Sanner",
-      "note": "Signs the minutes of every ASG meeting read this year as secretary, and separately chaired the Rules and Elections committee, the other of the two committee chairmanships Congress approved by name at the year's first meeting.",
+      "name": "Marsha L. Sanner",
+      "note": "Signs the minutes of every ASG meeting read this year as secretary, with the signature line reading 'Marsha L. Sanner, ASG Secretary' on 2 Sept 1980; also chaired the Rules and Elections committee, the other of the two committee chairmanships Congress approved by name at the year's first meeting.",
       "src": {
        "label": "ASG Minutes, 7 Oct 1980",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
@@ -8127,6 +8127,15 @@
        }
       },
       {
+       "name": "Jim Brumfield",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981; confirmed against a rendered image of the scan.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
        "name": "Shawn Bryant",
        "seat": "Congress member; chairs Housing Committee",
        "note": "Moved a floor motion, seconded and passed (7 Oct 1980 minutes); reported for the Housing Committee through 29 Jan 1981; nominated for the Dero Downing Award, 31 Mar 1981.",
@@ -8136,9 +8145,18 @@
        }
       },
       {
-       "name": "Sheen Compton",
+       "name": "Charles Bussell",
+       "seat": "Congress member; Representative-at-Large",
+       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 11 Nov 1980; named among the Congress members recorded absent, 17 Feb 1981. Confirmed 'Bussell' against a rendered image of both scans, not the OCR text layer, which had misread it as Russell.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Sheren Compton",
        "seat": "Congress member",
-       "note": "Moved that the meeting be adjourned, seconded and passed, 11 Nov 1980.",
+       "note": "Moved that the meeting be adjourned, seconded and passed, 11 Nov 1980; confirmed 'Sheren' against a rendered image of the scan, not the OCR text layer, which had misread it as Sheen.",
        "src": {
         "label": "ASG Minutes, 11 Nov 1980",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
@@ -8199,9 +8217,9 @@
        }
       },
       {
-       "name": "Glenn Humphreys",
+       "name": "Glenn Humphrey",
        "seat": "Congress member",
-       "note": "Named among the Congress members recorded absent, 17 Feb 1981 (name reconstructed from a garbled scan).",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981; confirmed 'Humphrey', no final s, against a rendered image of the scan.",
        "src": {
         "label": "ASG Minutes, 17 Feb 1981",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
@@ -8217,9 +8235,9 @@
        }
       },
       {
-       "name": "Carey Jones",
+       "name": "Carry Jones",
        "seat": "Congress member",
-       "note": "Named among the Congress members recorded absent, 17 Feb 1981.",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981; read as 'Carry' against a rendered image of the scan, not the OCR text layer, which had misread it as Carey.",
        "src": {
         "label": "ASG Minutes, 17 Feb 1981",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
@@ -8268,15 +8286,6 @@
        "src": {
         "label": "ASG Minutes, 7 Oct 1980",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
-       }
-      },
-      {
-       "name": "Charles Russell",
-       "seat": "Congress member; Representative-at-Large",
-       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 11 Nov 1980; named among the Congress members recorded absent, 17 Feb 1981 (surname reconstructed from a garbled scan both times, but consistent).",
-       "src": {
-        "label": "ASG Minutes, 11 Nov 1980",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
        }
       },
       {
