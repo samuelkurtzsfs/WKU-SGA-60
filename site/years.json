@@ -7156,6 +7156,26 @@
         "url": "https://archive.org/details/talisman1978west"
        }
       }
+     ],
+     "members": [
+      {
+       "name": "Brad Ford",
+       "seat": "Congress representative",
+       "note": "Also captioned, with Gene Saunders, as an ASG committee chairman; the committee itself is not named in the source, so no separate committee record is entered.",
+       "src": {
+        "label": "1978 Talisman, pp. 33-34",
+        "url": "https://archive.org/details/talisman1978west"
+       }
+      },
+      {
+       "name": "Kevin Kinne",
+       "seat": "Congress representative",
+       "note": "Indexed in the yearbook as Kevin Robert Kinne, p. 34.",
+       "src": {
+        "label": "1978 Talisman, p. 34",
+        "url": "https://archive.org/details/talisman1978west"
+       }
+      }
      ]
     }
    }
@@ -8002,7 +8022,31 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "senate": {
+     "committees": [
+      {
+       "name": "Student Opinion Poll Committee",
+       "chair": "Kevin Kinne",
+       "note": "Chaired ASG's student opinion poll committee under President Jamie Hargrove; also quoted criticizing apathy in congress and expecting Hargrove's new congress appointments to improve it. The text never calls him a representative or seated congress member this year, only a committee chairman.",
+       "src": {
+        "label": "1980 Talisman, p. 274",
+        "url": "https://archive.org/details/talisman1980west"
+       }
+      },
+      {
+       "name": "Rules and Elections Committee",
+       "chair": "Tim Irons",
+       "note": "Chaired ASG's rules and elections committee and was quoted on low voter awareness and turnout in that spring's ASG elections. The text does not state he held a congress seat.",
+       "src": {
+        "label": "1980 Talisman, p. 274",
+        "url": "https://archive.org/details/talisman1980west"
+       }
+      }
+     ]
+    }
+   }
   },
   {
    "id": "1980-81",
