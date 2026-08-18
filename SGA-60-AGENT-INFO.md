@@ -237,8 +237,37 @@ That last line is the argument for never skipping the checker.
    finding that Kelly Thompson's 1 April 1966 letter names Reed Morgan as the
    constitution committee's chairman is folded into item 6 below.
    `.research/branches-unverified.json` is now empty.
-3. **235 dated moments** from the branch research, unmerged, in
-   `.research/branches-moments.json`.
+3. ~~**235 dated moments** from the branch research, unmerged.~~ **Done, 18
+   August 2026.** All 235 were deduped (many were the same event written up
+   twice by different research passes — the December 1970 constitution vote
+   alone had three versions), checked against their cited sources by a
+   researcher, then re-checked by a second, adversarial pass before
+   publication, in eight batches by era. **138 survived and are now events in
+   `data/years.json`; 97 were cut**, mostly because their only source was
+   `web.archive.org` or `digitalcommons.wku.edu/cgi/viewcontent.cgi`, both
+   hard-blocked in this environment on this run — those remain candidates for
+   a future run with different source access, not disproven claims. A
+   recurring pattern worth remembering: TopSCHOLAR/digitalcommons landing
+   pages usually show only a headline, byline and one-line abstract, never
+   full article text, so most surviving "trim" verdicts kept the bare
+   confirmed headline and cut specific vote tallies, quotes and named detail
+   the landing page couldn't support. **SGA's own minutes and legislation
+   pages on `digitalcommons.wku.edu` and `.doc`/`.pdf` files on `wku.edu/sga`
+   store their date fields as DD-MM-YYYY, not MM-DD-YYYY** — a naive
+   MM-DD-YYYY read of a field like "1-3-1983" would misdate a real event by
+   two months; confirm the convention against a same-collection page with an
+   unambiguous day (>12) before trusting a date field. Along the way, checking
+   turned up and fixed three unrelated existing-entry errors: an unsourced
+   vote tally on the 1999 Morrison/Matheis vice-president-of-finance re-run
+   was cut and a second citation added; a naming conflict between a Herald
+   report and SGA's own 2009 minutes on two resigning senators (Michel/Mitchell
+   Stephens, Emmett/Emmitt) is now stated both ways rather than picked
+   silently; and two 2022/2023 entries that stated a Bowling Green Pride
+   sponsorship and a committee merger as settled fact were corrected after
+   SGA's legislation table showed the Executive Cabinet never passed either
+   one — one of those two also turned out to duplicate another entry
+   word-for-word, which is now removed. `.research/branches-moments.json` is
+   now empty.
 4. **Three years still have no cabinet:** 1979-80, 2001-02, 2003-04.
    `.research/officers-unchecked.json` has 92 candidates covering exactly those.
 5. **Four people have no portrait:** Nick Todd, Katie Dawson, Jeanne Johnson,
