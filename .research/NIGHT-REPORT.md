@@ -504,3 +504,117 @@ by this work.
 
 Stale PRs #6, #7, #8 (photos / 1980s / 2020s, open since 4 August) were already
 closed on 18 August at 04:57, before this run — no action needed.
+
+---
+
+# Night report - 18 August 2026, fourth editorial pass
+
+Two research pull requests open, both merged. The lasting result of the pass is
+not either of them: it is that the tool all four routines are told to search
+first has been quietly lying to them, and is now fixed.
+
+## #23 - the backlog - MERGED, with the finding strengthened
+
+The claim was that Amanda Coates, president 1999-2000, is the plaque's "Amanda
+Lich". I downloaded the cited Council on Postsecondary Education minutes of 30
+July 2001 and they say it exactly: the oath went to Christopher J. Pace,
+appointed "to replace Amanda Coates Lich." The two Herald citations behind her
+entry (`dlsc_ua_records/8117` and `8053`) both check out headline for headline.
+The three citations the branch dropped were genuine duplicates of entries already
+held on better permalinks, so that cleanup stands.
+
+But the 2001 minutes never mention Western. On their own they prove a person
+named Amanda Coates Lich sat in Kentucky's statewide student seat - not that she
+is our president. So I went back through the council's own record for the sitting
+where she arrived, and the minutes of **13 November 2000** introduce the incoming
+student member as Amanda Coates, "a graduate of Western Kentucky University",
+sworn in that morning by a district judge. That is the half the identification
+was missing. Both sittings are now cited: the first carries Coates of Western
+into the seat, the second carries the surname Lich out of it. The profile's old
+line calling the 2001 minutes "the only public record found" is gone, being no
+longer true.
+
+Also folded in: two accounts of Joe Rains taking office on 21 April 1992, written
+up twice from the same Herald issue under different titles, combined into one
+entry keeping every sourced fact from both. `check_duplicates.py` never saw it
+because the two titles share almost no words.
+
+## #24 - person profiles - MERGED as is, nothing cut
+
+Eleven early-1990s executive officers. The review shortcut worth recording: all
+23 paragraphs restate facts already published in each officer's `note` on main,
+so only three claims were actually new. Holcomb's "roughly 1,200 students voting"
+is carried by the 16 April 1992 issue, which runs the turnout as its own story
+alongside the result. Sivley's two new claims are carried by the 14 and 21 April
+1994 issues. Both of the routine's own trims were right.
+
+## The thing that matters more than either PR
+
+I nearly cut Sivley's paragraph. `herald-index-full.json` lists exactly one
+article for the 14 April 1994 issue, and nothing about Sivley, an election or a
+procedure, in that issue or any 1994 issue. So the claim looked invented.
+
+The live landing page for that issue carries **thirty-seven** articles, including
+"Scott Sivley Didn't Follow Student Government Association, University Procedures"
+and "Student Government Association Tallies Votes From Primary Election." The
+research was right and the index was wrong.
+
+Yesterday's pass noticed this and described it as article lists that "stop
+partway". It is sharper than that, and it has a cause. Every line in the file is
+cut at exactly 300 characters - the longest of all 17,601 lines is 300, and 5,892
+of them (33.5%) sit on that cap, sliced mid-word. A Herald issue's abstract is a
+single `<ul>` of thirty or more `<li>` headlines arriving as **one** line, so what
+survived locally was the first two or three headlines of each issue and nothing
+else.
+
+Two bugs in `harvest_herald_index.py`, both now fixed:
+
+1. The `--all` path truncated every line at 300 characters. It now splits the
+   list into one headline per line and keeps them whole, with tags and HTML
+   entities resolved so a plain grep matches a name.
+2. Worse, the resume logic skipped any URL already on disk, so a bad parse
+   already written could never be repaired by rerunning - every rerun printed
+   "done" and changed nothing. A new `--refresh` flag reparses what is already
+   held.
+
+The full index has been re-harvested with the fix.
+
+This is not a small correction. CLAUDE.md called that file "the complete article
+index" and instructs every routine to grep it first, which together manufacture
+false negatives: a routine greps, finds nothing, and cuts a true claim or writes
+"no source found". That very likely happened already - section 8 of the handoff
+records 97 dated moments cut in one pass and 68 officer candidates rejected
+because the source "didn't say what was claimed". Those deserve a re-check
+against the repaired index rather than standing as disproven.
+
+CLAUDE.md is corrected accordingly: the file is no longer described as complete,
+the truncation is documented with this issue as the worked example, and the rule
+is now explicit - **a hit is good evidence, a miss is not evidence of absence**,
+and no claim may be cut on a local miss without opening the landing page first.
+
+## Also worth knowing
+
+The SGA minutes landing pages that #24's profiles cite (`/sga/Meetings/Minutes/`
+402, 414, 451, 500) return only a one-line agenda list and never an individual's
+name. The PDFs behind them still answer `viewcontent.cgi` with HTTP 202 bot-check
+HTML rather than a file, so the granular figures in those profiles cannot be
+re-verified from source in this environment; they rest on the earlier pass that
+had the PDFs. The `cpe.ky.gov` PDFs, by contrast, download cleanly.
+
+## Stale branches
+
+PRs #6, #7 and #8 were already closed on 18 August at 04:57, before this run. The
+six 4-August `research-*` branches still on origin remain orphan snapshots with no
+merge base against main, holding about 800 events each against main's 2,015. They
+are superseded, not salvageable by merge, and are left closed.
+
+## Where the record stands after this pass
+
+61 years, 2,015 dated events, 60 people who have been president, 73 leader
+records with a profile each, 438 executive officer records of which 65 carry a
+profile, 614 senate officers, 136 senate members, 58 years with a cabinet, 25
+documents, 390 legislation files, 73 leader portraits and 17 year photographs.
+`build.py`, `check_data.py` and `check_contrib.py` all exit clean on main, and
+main's committed `site/` matches a fresh build. `check_duplicates.py` reports
+seven pairs; all seven are genuinely separate events - staged actions weeks apart,
+or same-day bills - and none were introduced by this work.
