@@ -6219,6 +6219,80 @@
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5370/"
        }
       }
+     ],
+     "members": [
+      {
+       "name": "Georgiana Carlson",
+       "seat": "Rules and Elections Committee (per 1977 Talisman)",
+       "note": "Nominated, though not elected, as a State Student Government Convention delegate (22 Feb 1977 minutes). Caution: the scanned minutes render the given name illegibly ('Tteorge'/'Teorme' Carlson at two OCR passes); the identification rests on a Georgiana Carlson already recorded in years.json under 1977-78 as the losing candidate for ASG treasurer, 437 votes to Gary Reed's 554 (Herald 52:53, 15 Apr 1977), and on the 1977 Talisman naming a Georgiana Carlson among those organizing the Rules and Elections committee. Congress membership itself is not confirmed by the minutes.",
+       "src": {
+        "label": "ASG Minutes, 22 Feb 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/23"
+       }
+      },
+      {
+       "name": "Bill Cortus",
+       "seat": "Housing Committee",
+       "note": "Gave a Housing Committee report to Congress and was elected one of two delegates to the State Student Government Convention at the same 22 February 1977 meeting; Congress membership itself is not conclusively established by the minutes. Already recorded in years.json under 1977-78 as the losing candidate for Activities Vice President, 510 votes to Brent Shockley's 532 (Herald 52:53, 15 Apr 1977) - the same person, a year earlier.",
+       "src": {
+        "label": "ASG Minutes, 22 Feb 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/23"
+       }
+      },
+      {
+       "name": "John Evans",
+       "seat": "Congress member; Student Affairs Committee",
+       "note": "Reported the year's progress of the Student Affairs Committee to Congress and moved to waive the rules and vote immediately on Bill No. 12, seconded by Tim Leigh; the bill passed 31-9-1 (19 Apr 1977 minutes). The 1977 Talisman separately records a John Evans elected to the student affairs committee before the 1976 summer recess. Not established as the same John David Evans who lost the 1976 Activities Vice President race to Tom Blair, per a separate years.json record - no source found linking the two.",
+       "src": {
+        "label": "ASG Minutes, 19 Apr 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/17"
+       }
+      },
+      {
+       "name": "Kevin Kinnie",
+       "seat": "Congress member",
+       "note": "Nominated and elected one of two delegates to the State Student Government Convention (22 Feb 1977 minutes); seconded Lynn Moss's motion to bring Bill No. 12 to the floor, which passed 31-9-1 (19 Apr 1977 minutes).",
+       "src": {
+        "label": "ASG Minutes, 22 Feb 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/23"
+       }
+      },
+      {
+       "name": "Tim Leigh",
+       "seat": "Congress member; Academic Affairs Committee",
+       "note": "Brought Resolution No. 24 to the floor, seconded by Gene Saunders, which passed 34-0-1, and seconded John Evans's motion to waive the rules and vote immediately on Bill No. 12 (19 Apr 1977 minutes). Also reported for the Academic Affairs Committee (22 Feb and 19 Apr 1977 minutes). The 1977 Talisman separately records him taking responsibility for the academic affairs committee.",
+       "src": {
+        "label": "ASG Minutes, 19 Apr 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/17"
+       }
+      },
+      {
+       "name": "Bob Moore",
+       "seat": "Congress member; Rules and Elections Committee",
+       "note": "Submitted and read the 1977 campaign regulations, which passed with no opposition (22 Feb 1977 minutes); also nominated, though not elected, as a delegate to the State Student Government Convention at the same meeting. The 1977 Talisman separately names him organizing the Rules and Elections committee. He won the ASG presidency the following April, 562 votes to Tom Blair's 536, and is already recorded in years.json as 1977-78 president Robert Moore (see name-aliases.json, Bob Moore = Robert Moore).",
+       "src": {
+        "label": "ASG Minutes, 22 Feb 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/23"
+       }
+      },
+      {
+       "name": "Lynn Moss",
+       "seat": "Congress member",
+       "note": "Moved to bring Bill No. 12 to the floor, seconded by Kevin Kinnie; the bill passed 31-9-1 (19 Apr 1977 minutes).",
+       "src": {
+        "label": "ASG Minutes, 19 Apr 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/17"
+       }
+      },
+      {
+       "name": "Gene Saunders",
+       "seat": "Congress member",
+       "note": "Presented the guidelines for SGAK (Student Government Association of Kentucky) committee members, which passed with no opposition, and seconded Tim Leigh's Resolution No. 24, which passed 34-0-1 (19 Apr 1977 minutes). Already recorded in years.json under 1977-78 as chairman of the ASG Rules and Elections Committee - the same person, a year earlier as a Congress member.",
+       "src": {
+        "label": "ASG Minutes, 19 Apr 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/17"
+       }
+      }
      ]
     }
    }
