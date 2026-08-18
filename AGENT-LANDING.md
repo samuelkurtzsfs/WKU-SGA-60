@@ -21,14 +21,44 @@ across five routines. Assume it may still be happening and plan for it.
 
 ## Route one: push, the normal way
 
+`gh` is **not installed** in these containers, so do not start with
+`gh auth setup-git` and do not waste minutes downloading the binary. Git is
+already credentialed. Test it without changing anything:
+
 ```bash
-gh auth setup-git
-git push -u origin <your-branch>
-gh pr create --title "..." --body "..."   # or comment on the open PR
+git push --dry-run origin HEAD:refs/heads/access-probe
 ```
 
-If that works you are done. Confirm the branch is actually on origin with
-`git ls-remote --heads origin` before you believe it.
+A line reading `* [new branch] HEAD -> access-probe` means you have write
+access. Then push for real:
+
+```bash
+git push -u origin <your-branch>
+```
+
+For pull requests, use the GitHub MCP tools rather than `gh`. Load them with
+`ToolSearch` for `mcp__github__list_pull_requests`,
+`mcp__github__pull_request_read`, `mcp__github__add_issue_comment`,
+`mcp__github__create_pull_request` and `mcp__github__merge_pull_request`.
+
+Confirm the branch really is on origin with `git ls-remote --heads origin`
+before you believe it.
+
+## Beware: main is an orphan history
+
+`main` and the older `research-*` branches from 4 August have **different root
+commits and no merge base**. Those branches are snapshots of a superseded
+repository, not forks of main. Merging one deletes `herald-index-full.json`,
+`legislation-authors.json`, `name-aliases.json`, the contributor layer and the
+validators.
+
+Never merge a branch into main without checking `git merge-base origin/main
+<branch>` first. If there is no merge base, compare file contents
+(`git diff origin/main <branch> -- ':!site'`), take only what main genuinely
+lacks, and apply it as a fresh commit on a branch cut from current main.
+
+Branches you create yourself from current `origin/main` are ordinary branches
+and merge normally. This warning is about the 4 August ones.
 
 ## Route two: the site's research drop box
 
