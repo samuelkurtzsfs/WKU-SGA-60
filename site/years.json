@@ -17574,6 +17574,15 @@
       "label": "TopSCHOLAR - Bill 02-25-S, Diversity Rocks",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/310"
      }
+    },
+    {
+     "date": "2002-04-23",
+     "title": "Election violations confirmed after the spring 2002 election",
+     "body": "Twelve days after Jamie Sears won the presidency, the Herald of 23 April 2002 ran an article by Molly O'Connor headlined \"Election Violations Confirmed – Student Government Association.\" The digitised collection holds this issue only as an index of headlines and bylines, so which candidate, which rule, and what the Judicial Council did about it are not established in any source found this pass.",
+     "src": {
+      "label": "College Heights Herald 77:54, 23 Apr 2002, index (TopSCHOLAR)",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9178"
+     }
     }
    ],
    "status": "researched"
@@ -18254,6 +18263,15 @@
      "src": {
       "label": "Herald, 15 Apr 2004",
       "url": "https://wkuherald.com/55330/news/questions-cloud-speaker-vote/"
+     }
+    },
+    {
+     "date": "2004-02-12",
+     "title": "Congress approved the new constitution on the fifth attempt",
+     "body": "The Herald reported, in its issue of 12 February 2004, that the Student Government Association had approved a new constitution on the fifth attempt, in an article bylined Ashlee Clark.",
+     "src": {
+      "label": "College Heights Herald 78:37 [Vol. 79], 12 Feb 2004, index (TopSCHOLAR)",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9374"
      }
     }
    ],
@@ -20901,10 +20919,14 @@
     {
      "date": "2009-10-20",
      "title": "Three senators resign over publications committee appointment",
-     "body": "Senators Michel Stephens, Emmett Stephens and Daniel Shaw resigned at the Oct. 20 meeting. Michel Stephens cited President Kevin Smiley's nomination of Greg Capillo to the Student Publications Committee, which helps choose the Herald's editor-in-chief, saying the pick was not based on merit or experience. Smiley called the accusations of favoritism and corruption unfounded and said the seats would stay vacant until he appointed replacements for senate approval.",
+     "body": "Senators Michel Stephens, Emmett Stephens and Daniel Shaw resigned at the Oct. 20 meeting. Michel Stephens cited President Kevin Smiley's nomination of Greg Capillo to the Student Publications Committee, which helps choose the Herald's editor-in-chief, saying the pick was not based on merit or experience. Smiley called the accusations of favoritism and corruption unfounded and said the seats would stay vacant until he appointed replacements for senate approval. SGA's own minutes of the same meeting name the resigning senators \"Mitchell Stephens\" and, for the third, only \"Emmitt\" with no surname recorded; this Herald account and the contemporaneous minutes disagree on the spelling and are given here as printed, unresolved.",
      "src": {
       "label": "Herald, 20 Oct 2009",
       "url": "https://web.archive.org/web/20091024020637/http://www.wkuherald.com/2009/10/20/senators-resign-at-sga-meeting/"
+     },
+     "src2": {
+      "label": "SGA senate minutes, 20 Oct 2009",
+      "url": "https://www.wku.edu/sga/uploads/minutes/october20.doc"
      }
     },
     {
@@ -21094,6 +21116,51 @@
      "src": {
       "label": "WKU SGA website, blog, November 2009 (Wayback)",
       "url": "https://web.archive.org/web/20091123151952/http://www.wku.edu/sga/index.php?mact=News,m5c5e6,default,1&m5c5e6pagelimit=4&m5c5e6detailpage=sga-blog&m5c5e6pagenumber=2&m5c5e6returnid=60&page=60"
+     }
+    },
+    {
+     "date": "2009-09-08",
+     "title": "Senate approved a $109,040.66 operating budget",
+     "body": "At the second meeting of the eighth senate, with 19 of 23 senators present, the senate approved the 2009-10 operating budget of $109,040.66, capping organizational aid at $40,000 and Provide-A-Ride and non-emergency medical transport at $15,000, and leaving $20,000 for the senate to spend as it saw fit. The same meeting confirmed the president's cabinet, including his brother Eric Smiley as chief of staff on a vote with two abstentions; student Skylar Jordan then told the senate from the floor, speaking only as a student and not a member of the body, that he questioned the Senate's integrity for approving that appointment.",
+     "src": {
+      "label": "SGA senate minutes, 8 Sep 2009 (WKU SGA)",
+      "url": "https://www.wku.edu/sga/uploads/minutes/september08.doc"
+     }
+    },
+    {
+     "date": "2009-10-27",
+     "title": "Skylar Jordan resigned, a week after three other senators",
+     "body": "Senator Skylar Jordan resigned at the senate's meeting of 27 October 2009, held with 19 of 30 senators present, a week after Mitchell Stephens, Emmitt and Daniel Shaw had resigned at the meeting of 20 October. The Judicial Council reported it had made four decisions that night: one on office hours, two concerning senators' resignations, and one on attendance.",
+     "src": {
+      "label": "SGA senate minutes, 27 Oct 2009 (WKU SGA)",
+      "url": "https://www.wku.edu/sga/uploads/minutes/october27.doc"
+     }
+    },
+    {
+     "date": "2010-04-13",
+     "title": "Senate elected next year's speaker as the Judicial Council certified the spring election",
+     "body": "The senate elected Austin Wingate speaker of the Student Senate at its meeting of 13 April 2010. The Judicial Council reported at the same meeting that it had met and approved the spring election results, and that it was bringing three senators up for judicial review.",
+     "src": {
+      "label": "SGA senate minutes, 13 Apr 2010 (WKU SGA)",
+      "url": "https://www.wku.edu/sga/uploads/minutes/april13.doc"
+     }
+    },
+    {
+     "date": "2009-10-20",
+     "title": "Judicial Council still working out office hours and attendance rules",
+     "body": "At the eighth meeting of the eighth senate, held with 24 of 32 senators present, the Judicial Council reported it had met the previous week, had questions about office hours with an official decision planned the following week, and said it was still working out how to handle attendance.",
+     "src": {
+      "label": "SGA senate minutes, 20 Oct 2009 (wku.edu)",
+      "url": "https://www.wku.edu/sga/uploads/minutes/october20.doc"
+     }
+    },
+    {
+     "date": "2010-03-02",
+     "title": "Senate suspended its bylaws to seat an associate justice",
+     "body": "At the senate's meeting of 2 March 2010, held with 21 of 30 senators present, the senate unanimously approved four presidential appointments as student senators — Kat Johns, Lucy George, Christopher Jankowski and Paul Shively — then suspended its bylaws to move Artilla Scisney from appointments to approvals, and voted unanimously to approve her as associate justice.",
+     "src": {
+      "label": "SGA senate minutes, 2 Mar 2010 (WKU SGA)",
+      "url": "https://www.wku.edu/sga/uploads/minutes/march2.doc"
      }
     }
    ],
