@@ -6642,6 +6642,80 @@
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5370/"
        }
       }
+     ],
+     "members": [
+      {
+       "name": "George Carlson",
+       "seat": "State Student Government Convention nominee",
+       "note": "Nominated, though not elected, as a State Student Government Convention delegate (22 Feb 1977 minutes), which name the nominee George Carlson. A Georgiana Carlson is recorded in years.json under 1977-78 as the losing candidate for ASG treasurer, 437 votes to Gary Reed's 554 (Herald 52:53, 15 Apr 1977), and the 1977 Talisman names a Georgiana Carlson organizing the Rules and Elections committee; whether the minutes' George Carlson is that person, or another, is not established. Congress membership itself is not confirmed by the minutes.",
+       "src": {
+        "label": "ASG Minutes, 22 Feb 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/23"
+       }
+      },
+      {
+       "name": "Bill Cortus",
+       "seat": "Housing Committee",
+       "note": "Gave a Housing Committee report to Congress and was elected one of two delegates to the State Student Government Convention at the same 22 February 1977 meeting; Congress membership itself is not conclusively established by the minutes. Already recorded in years.json under 1977-78 as the losing candidate for Activities Vice President, 510 votes to Brent Shockley's 532 (Herald 52:53, 15 Apr 1977) - the same person, a year earlier.",
+       "src": {
+        "label": "ASG Minutes, 22 Feb 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/23"
+       }
+      },
+      {
+       "name": "John Evans",
+       "seat": "Congress member; Student Affairs Committee",
+       "note": "Reported the year's progress of the Student Affairs Committee to Congress and moved to waive the rules and vote immediately on Bill No. 12, seconded by Tim Leigh; the bill passed 31-0-1 (19 Apr 1977 minutes). The 1977 Talisman separately records a John Evans elected to the student affairs committee before the 1976 summer recess. Not established as the same John David Evans who lost the 1976 Activities Vice President race to Tom Blair, per a separate years.json record - no source found linking the two.",
+       "src": {
+        "label": "ASG Minutes, 19 Apr 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/17"
+       }
+      },
+      {
+       "name": "Kevin Kinnie",
+       "seat": "Congress member",
+       "note": "Nominated and elected one of two delegates to the State Student Government Convention (22 Feb 1977 minutes); seconded Lynn Moss's motion to bring Bill No. 12 to the floor, which passed 31-0-1 (19 Apr 1977 minutes).",
+       "src": {
+        "label": "ASG Minutes, 22 Feb 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/23"
+       }
+      },
+      {
+       "name": "Tim Leigh",
+       "seat": "Congress member; Academic Affairs Committee",
+       "note": "Brought Resolution No. 24 to the floor, seconded by Gene Saunders, which passed 34-0-1, and seconded John Evans's motion to waive the rules and vote immediately on Bill No. 12 (19 Apr 1977 minutes). Also reported for the Academic Affairs Committee (22 Feb and 19 Apr 1977 minutes). The 1977 Talisman separately records him taking responsibility for the academic affairs committee.",
+       "src": {
+        "label": "ASG Minutes, 19 Apr 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/17"
+       }
+      },
+      {
+       "name": "Bob Moore",
+       "seat": "Congress member; Rules and Elections Committee",
+       "note": "Submitted and read the 1977 campaign regulations, which passed with no opposition (22 Feb 1977 minutes); also nominated, though not elected, as a delegate to the State Student Government Convention at the same meeting. The 1977 Talisman separately names him organizing the Rules and Elections committee. He won the ASG presidency the following April, 562 votes to Tom Blair's 536, and is already recorded in years.json as 1977-78 president Robert Moore (see name-aliases.json, Bob Moore = Robert Moore).",
+       "src": {
+        "label": "ASG Minutes, 22 Feb 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/23"
+       }
+      },
+      {
+       "name": "Lynn Moss",
+       "seat": "Congress member",
+       "note": "Moved to bring Bill No. 12 to the floor, seconded by Kevin Kinnie; the bill passed 31-0-1 (19 Apr 1977 minutes).",
+       "src": {
+        "label": "ASG Minutes, 19 Apr 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/17"
+       }
+      },
+      {
+       "name": "Gene Saunders",
+       "seat": "Congress member",
+       "note": "Presented the guidelines for SGAK (Student Government Association of Kentucky) committee members, which passed with no opposition, and seconded Tim Leigh's Resolution No. 24, which passed 34-0-1 (19 Apr 1977 minutes). Already recorded in years.json under 1977-78 as chairman of the ASG Rules and Elections Committee - the same person, a year earlier as a Congress member.",
+       "src": {
+        "label": "ASG Minutes, 19 Apr 1977",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/17"
+       }
+      }
      ]
     }
    }
@@ -7079,6 +7153,26 @@
        "note": "Photographed in debate with representative Brad Ford during the long ASG argument over ratifying the Student Rights Alliance petition on dormitory rules, which Congress eventually voted to support. One member argued during the debate that recognising the alliance would be a potential threat to the ASG housing committee.",
        "src": {
         "label": "1978 Talisman, ASG, p. 33",
+        "url": "https://archive.org/details/talisman1978west"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Brad Ford",
+       "seat": "Congress representative",
+       "note": "Also captioned, with Gene Saunders, as an ASG committee chairman; the committee itself is not named in the source, so no separate committee record is entered.",
+       "src": {
+        "label": "1978 Talisman, pp. 33-34",
+        "url": "https://archive.org/details/talisman1978west"
+       }
+      },
+      {
+       "name": "Kevin Kinne",
+       "seat": "Congress representative",
+       "note": "Indexed in the yearbook as Kevin Robert Kinne, p. 34.",
+       "src": {
+        "label": "1978 Talisman, p. 34",
         "url": "https://archive.org/details/talisman1978west"
        }
       }
@@ -7928,7 +8022,31 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "senate": {
+     "committees": [
+      {
+       "name": "Student Opinion Poll Committee",
+       "chair": "Kevin Kinne",
+       "note": "Chaired ASG's student opinion poll committee under President Jamie Hargrove; also quoted criticizing apathy in congress and expecting Hargrove's new congress appointments to improve it. The text never calls him a representative or seated congress member this year, only a committee chairman.",
+       "src": {
+        "label": "1980 Talisman, p. 274",
+        "url": "https://archive.org/details/talisman1980west"
+       }
+      },
+      {
+       "name": "Rules and Elections Committee",
+       "chair": "Tim Irons",
+       "note": "Chaired ASG's rules and elections committee and was quoted on low voter awareness and turnout in that spring's ASG elections. The text does not state he held a congress seat.",
+       "src": {
+        "label": "1980 Talisman, p. 274",
+        "url": "https://archive.org/details/talisman1980west"
+       }
+      }
+     ]
+    }
+   }
   },
   {
    "id": "1980-81",
@@ -8380,9 +8498,318 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5627",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6633&context=dlsc_ua_records"
       }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Mark Wilson",
+      "note": "Named 'Administrative Vice-President Mark Wilson' giving officer reports at every ASG meeting read from 7 October 1980 through 17 February 1981; also chaired the Legislative Research committee, one of two committee chairmanships the Congress approved by name at the year's first meeting.",
+      "src": {
+       "label": "ASG Minutes, 7 Oct 1980",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+      }
+     },
+     {
+      "office": "Activities Vice President",
+      "name": "Greg Zoeller",
+      "note": "Named 'Activities Vice-President Greg Zoeller' giving officer reports at every ASG meeting read from 2 September 1980 through 31 March 1981.",
+      "src": {
+       "label": "ASG Minutes, 2 Sep 1980",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
+      }
+     },
+     {
+      "office": "Treasurer",
+      "name": "Mark Chesnut",
+      "note": "Named 'Treasurer Mark Chesnut' reporting ASG's account balances, 11 November 1980. Also named among the Congress members recorded absent on 17 February 1981, suggesting the treasurer sat in Congress ex officio.",
+      "src": {
+       "label": "ASG Minutes, 11 Nov 1980",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+      }
+     },
+     {
+      "office": "Secretary",
+      "name": "Marsha L. Sanner",
+      "note": "Signs the minutes of every ASG meeting read this year as secretary, with the signature line reading 'Marsha L. Sanner, ASG Secretary' on 2 Sept 1980; also chaired the Rules and Elections committee, the other of the two committee chairmanships Congress approved by name at the year's first meeting.",
+      "src": {
+       "label": "ASG Minutes, 7 Oct 1980",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+      }
      }
     ],
-    "note": "Mark Wilson and Greg Zoeller were elected to other top ASG offices in the same April 1980 election; the Herald index does not specify which."
+    "senate": {
+     "officers": [
+      {
+       "office": "Parliamentarian",
+       "name": "Jeff Morris",
+       "note": "Appointed by President Fuller with the consent of Congress, 7 October 1980; moved floor motions the same meeting and reported on the Big Red costume under Old Business, 11 November 1980. Succeeded by Kevin Strader by 20 January 1981.",
+       "src": {
+        "label": "ASG Minutes, 7 Oct 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+       }
+      },
+      {
+       "office": "Parliamentarian",
+       "name": "Kevin Strader",
+       "note": "Appointed by President Fuller with the consent of Congress, 20 January 1981, succeeding Jeff Morris; moved to dispense with the reading of the minutes the same meeting, and moved adjournment on 17 February and 31 March 1981.",
+       "src": {
+        "label": "ASG Minutes, 20 Jan 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/272"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Legislative Research",
+       "chair": "Mark Wilson",
+       "note": "One of two committee chairmanships Congress approved by name at the year's first meeting, 2 September 1980; a distinct chairmanship from his Administrative Vice President office."
+      },
+      {
+       "name": "Rules and Elections",
+       "chair": "Marsha Sanner",
+       "note": "The other of two committee chairmanships Congress approved by name, 2 September 1980; Sanner was also ASG Secretary."
+      },
+      {
+       "name": "Academic Affairs",
+       "chair": "Kevin Kinne",
+       "note": "Named chairman 2 September 1980, active through 31 March 1981."
+      },
+      {
+       "name": "Student Opinion Poll",
+       "chair": "Kevin Kinne",
+       "note": "Same chairman as Academic Affairs."
+      },
+      {
+       "name": "Housing",
+       "chair": "Shawn Bryant",
+       "note": "Vacant at the year's first meeting, 2 September 1980; Bryant reporting for it by 7 October 1980."
+      },
+      {
+       "name": "International Students",
+       "chair": "Osama Sharif",
+       "note": "Chaired continuously from 2 September 1980 through 17 February 1981, organizing International Week; spelled Sharif and Shariff across different minutes, Sharif in the 1981 Talisman."
+      },
+      {
+       "name": "Minority Affairs",
+       "chair": "Alan Jackson",
+       "note": "Named chairman 2 September 1980; not mentioned again in the minutes read."
+      },
+      {
+       "name": "Minority Affairs",
+       "chair": "Perry Hines",
+       "note": "Reporting for the committee by 11 November 1980 and after, succeeding Alan Jackson."
+      },
+      {
+       "name": "Complaint and Suggestion",
+       "chair": "Debbie Thomas",
+       "note": "Named chairwoman 2 September 1980; not mentioned again in the minutes read."
+      },
+      {
+       "name": "Complaint and Suggestion",
+       "chair": "Margaret Ragan",
+       "note": "Reporting for the committee by 7 October 1980 and after, succeeding Debbie Thomas."
+      }
+     ],
+     "members": [
+      {
+       "name": "Mike Alvey",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "M. A. Baker",
+       "seat": "Congress member; Representative-at-Large",
+       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 17 Feb 1981. The 1981 Talisman independently names M. A. Baker, a senior from Cincinnati, Ohio and former chairman of the ASG housing committee, as the author of the resolution to abolish dormitory room inspections. Separately served as a Judicial Council alternate from 7 Oct 1980, a distinct, non-Congress body not counted as evidence of Congress membership by itself.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Greg Berryman",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980, and again among the Congress members recorded absent, 17 Feb 1981.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Jim Brumfield",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981; confirmed against a rendered image of the scan.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Shawn Bryant",
+       "seat": "Congress member; chairs Housing Committee",
+       "note": "Moved a floor motion, seconded and passed (7 Oct 1980 minutes); reported for the Housing Committee through 20 Jan 1981; nominated for the Dero Downing Award, 31 Mar 1981.",
+       "src": {
+        "label": "ASG Minutes, 7 Oct 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+       }
+      },
+      {
+       "name": "Charles Bussell",
+       "seat": "Congress member; Representative-at-Large",
+       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 11 Nov 1980; named among the Congress members recorded absent, 17 Feb 1981. Confirmed 'Bussell' against a rendered image of both scans, not the OCR text layer, which had misread it as Russell.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Sheren Compton",
+       "seat": "Congress member",
+       "note": "Moved that the meeting be adjourned, seconded and passed, 11 Nov 1980; confirmed 'Sheren' against a rendered image of the scan, not the OCR text layer, which had misread it as Sheen.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Patti Davis",
+       "seat": "Congress member; On-Campus Representative",
+       "note": "Appointed On-Campus Representative by President Fuller with the consent of Congress, 7 Oct 1980, filling one of the vacancies announced at the year's first meeting.",
+       "src": {
+        "label": "ASG Minutes, 7 Oct 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+       }
+      },
+      {
+       "name": "Maura Fleenor",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980 (scanned 'Laurea Fleenor'), and again among the Congress members recorded absent, 17 Feb 1981 (scanned 'Maura Fleenar').",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Kevin Grace",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980, and again among the Congress members recorded absent, 17 Feb 1981.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Perry Hines",
+       "seat": "Congress member; Representative-at-Large; chairs Minority Affairs Committee",
+       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 11 Nov 1980; chairs the Minority Affairs committee from November. Also stood in the Freshman Class President election of 5 Nov 1980 and lost to Jon Holland; the vote figures were read off the scan two ways that contradict each other, so no tally is given here.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Craig Hoffer",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Jon Holland",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981. Separately elected Freshman Class President on 5 Nov 1980, defeating Perry Hines; the vote figures were read off the scan two ways that contradict each other, so no tally is given here. The given name is rendered both Jon and John across the minutes read.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Glenn Humphrey",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981; confirmed 'Humphrey', no final s, against a rendered image of the scan.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Carry Jones",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981; read as 'Carry' against a rendered image of the scan, not the OCR text layer, which had misread it as Carey.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Debbie Kay",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Kevin Kinne",
+       "seat": "Congress member; chairs Academic Affairs and Student Opinion Poll committees",
+       "note": "Moved that the secretary send Congress's official congratulations to Coach Feix and the football team for the 1980 OVC championship, seconded and passed (11 Nov 1980 minutes). Chairs both the Academic Affairs and Student Opinion Poll committees throughout the year.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Jim Payne",
+       "seat": "Congress member; Off-Campus Representative",
+       "note": "Appointed Off-Campus Representative by President Fuller with the consent of Congress, 11 Nov 1980; named among the Congress members recorded absent, 17 Feb 1981.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Margaret Ragan",
+       "seat": "Congress member; chairs Complaint and Suggestion Committee",
+       "note": "Chairs the Complaint and Suggestion committee from 7 Oct 1980; appointed student member to the University Academic Complaint Committee by President Fuller with the consent of Congress, 17 Feb 1981; nominated for Outstanding Congress Member, 31 Mar 1981. Name spelled Ragan, Ragen, Raden and Racan across different scans, all the same committee chair. A Margaret Ragan is separately recorded in years.json as the elected 1982-83 ASG president; nothing in either year's sourced record connects the two directly, so no identity is asserted here.",
+       "src": {
+        "label": "ASG Minutes, 7 Oct 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+       }
+      },
+      {
+       "name": "Lonnie Sears",
+       "seat": "Congress member; On-Campus Representative",
+       "note": "Appointed On-Campus Representative by President Fuller with the consent of Congress, 7 Oct 1980, filling one of the vacancies announced at the year's first meeting.",
+       "src": {
+        "label": "ASG Minutes, 7 Oct 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+       }
+      },
+      {
+       "name": "Osama Sharif",
+       "seat": "Congress member; chairs International Students Committee",
+       "note": "Chairs the International Students committee continuously from 2 Sept 1980 through 17 Feb 1981, organizing International Week; nominated for Outstanding Congress Member, 31 Mar 1981. The minutes spell the surname both Sharif and Shariff; the 1981 Talisman prints Sharif, and names him a junior from Jerusalem, Palestine, and international students committee chairman.",
+       "src": {
+        "label": "ASG Minutes, 2 Sep 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
+       }
+      },
+      {
+       "name": "Debbie Watson",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      }
+     ]
+    }
    }
   },
   {
