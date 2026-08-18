@@ -1,762 +1,816 @@
 {
- "leaders": [
-  {
-   "year": "1966-67",
-   "name": "Jim Haynes",
-   "file": "1966-67-jim-haynes.jpg",
-   "src": {
-    "label": "1967 Talisman pt. 1, p. 136",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/382"
-   }
-  },
-  {
-   "year": "1967-68",
-   "name": "William Menser",
-   "file": "1967-68-william-menser.jpg",
-   "src": {
-    "label": "1968 Talisman, p. 153",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384"
-   }
-  },
-  {
-   "year": "2015-16",
-   "name": "Jay Todd Richey",
-   "file": "2015-16-jay-todd-richey.jpg",
-   "src": {
-    "label": "Herald, Mar 2017",
-    "url": "https://wkuherald.com/29658/news/graduating-sga-president-reflects-on-two-terms/"
-   }
-  },
-  {
-   "year": "2022-23",
-   "name": "Cole Bornefeld",
-   "file": "2022-23-cole-bornefeld.jpg",
-   "src": {
-    "label": "Herald, Oct 2022",
-    "url": "https://wkuherald.com/69113/news/the-making-of-an-sga-president/"
-   }
-  },
-  {
-   "year": "2019-20",
-   "name": "Will Harris",
-   "file": "2019-20-will-harris.jpg",
-   "src": {
-    "label": "Herald, Feb 2020",
-    "url": "https://wkuherald.com/17087/news/sga-plans-trip-to-rally-for-higher-education-in-march/"
-   }
-  },
-  {
-   "year": "2017-18",
-   "name": "Andi Dahmer",
-   "file": "2017-18-andi-dahmer.jpg",
-   "src": {
-    "label": "Herald, Apr 2019",
-    "url": "https://wkuherald.com/20416/news/wku-to-release-records-to-former-sga-president/"
-   }
-  },
-  {
-   "year": "2025-26",
-   "name": "Rush Robinson",
-   "file": "2025-26-rush-robinson-solo.jpg",
-   "src": {
-    "label": "WKU News, 2025",
-    "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13040"
-   }
-  },
-  {
-   "year": "2018-19",
-   "name": "Stephen Mayer",
-   "file": "2018-19-stephen-mayer.jpg",
-   "src": {
-    "label": "Herald, Apr 2019",
-    "url": "https://wkuherald.com/20349/news/sga-allocates-17000-to-fund-scholarships/"
-   }
-  },
-  {
-   "year": "2021-22",
-   "name": "Matthew Wininger",
-   "file": "2021-22-matthew-wininger.jpg",
-   "src": {
-    "label": "WKU News, Apr 2021",
-    "url": "https://www.wku.edu/news/articles/index.php?articleid=9622&view=article"
-   }
-  },
-  {
-   "year": "2023-24",
-   "name": "Sam Kurtz",
-   "file": "2023-24-sam-kurtz.jpg",
-   "src": {
-    "label": "Herald, Aug 2024",
-    "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
-   }
-  },
-  {
-   "year": "2026-27",
-   "name": "Caden Lucas",
-   "file": "2026-27-caden-lucas-solo.jpg",
-   "src": {
-    "label": "WKU News, 2026",
-    "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13098"
-   }
-  },
-  {
-   "year": "2020-21",
-   "name": "J. Garrett Edmonds",
-   "file": "2020-21-garrett-edmonds.jpg",
-   "src": {
-    "label": "Herald, Oct 2018",
-    "url": "https://wkuherald.com/23183/news/sga-vice-president-moves-forward-after-election-controversy/"
-   }
-  },
-  {
-   "year": "2011-12",
-   "name": "Billy Stephens",
-   "file": "2011-12-billy-stephens.jpg",
-   "src": {
-    "label": "Herald, 15 Apr 2011",
-    "url": "https://wkuherald.com/51759/news/stephens-already-an-experienced-leader/"
-   }
-  },
-  {
-   "year": "2010-11",
-   "name": "Colton Jessie",
-   "file": "2010-11-colton-jessie.jpg",
-   "src": {
-    "label": "Herald, Apr 2011",
-    "url": "https://wkuherald.com/52039/news/jessie-reflects-on-year-as-sga-president/"
-   }
-  },
-  {
-   "year": "2009-10",
-   "name": "Kevin Smiley",
-   "file": "2009-10-kevin-smiley.jpg",
-   "src": {
-    "label": "Daily News, Nov 2008",
-    "url": "https://bgdailynews.com/2008/11/13/2-students-on-gov-s-higher-ed-committee/"
-   }
-  },
-  {
-   "year": "2012-13",
-   "name": "Cory Dodds",
-   "file": "2012-13-cory-dodds.jpg",
-   "src": {
-    "label": "Herald, Mar 2012",
-    "url": "https://wkuherald.com/48077/news/dodds-elected-sga-president/"
-   }
-  },
-  {
-   "year": "2008-09",
-   "name": "Johnathon Boles",
-   "file": "2008-09-johnathon-boles.jpg",
-   "src": {
-    "label": "BG Daily News, Nov 2008",
-    "url": "https://bgdailynews.com/2008/11/13/2-students-on-gov-s-higher-ed-committee/"
-   }
-  },
-  {
-   "year": "2013-14",
-   "name": "Keyanna Boka",
-   "file": "2013-14-keyanna-boka.jpg",
-   "src": {
-    "label": "Herald, Apr 2013",
-    "url": "https://wkuherald.com/44046/news/boka-reinstated-as-sga-president-elect/"
-   }
-  },
-  {
-   "year": "2014-15",
-   "name": "Nicki Taylor",
-   "file": "2014-15-nicki-taylor.jpg",
-   "src": {
-    "label": "Herald, Mar 2015",
-    "url": "https://wkuherald.com/36634/life/sga-president-juggles-school-government-marriage/"
-   }
-  },
-  {
-   "year": "2005-06",
-   "name": "Katie Dawson",
-   "file": "2005-06-katie-dawson.jpg",
-   "src": {
-    "label": "Daily News, 31 Mar 2006",
-    "url": "https://bgdailynews.com/2006/03/31/a-show-of-voices/"
-   }
-  },
-  {
-   "year": "2016-17",
-   "name": "Jay Todd Richey",
-   "file": "2015-16-jay-todd-richey.jpg",
-   "src": {
-    "label": "Herald, Mar 2017",
-    "url": "https://wkuherald.com/29658/news/graduating-sga-president-reflects-on-two-terms/"
-   }
-  },
-  {
-   "year": "2024-25",
-   "name": "Sam Kurtz",
-   "file": "2023-24-sam-kurtz.jpg",
-   "src": {
-    "label": "Herald, Aug 2024",
-    "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
-   }
-  },
-  {
-   "year": "1970-71",
-   "name": "John Lyne",
-   "file": "1970-71-john-lyne.jpg",
-   "src": {
-    "label": "1971 Talisman (WKU), \"John Lyne: Associated Students' president\" profile spread",
-    "url": "https://archive.org/details/talisman1971west/page/n88/mode/1up"
-   }
-  },
-  {
-   "year": "1971-72",
-   "name": "Linda Jones",
-   "file": "1971-72-linda-jones.jpg",
-   "src": {
-    "label": "1972 Talisman, p. 200",
-    "url": "https://archive.org/details/talisman1972west/page/n204/mode/1up"
-   }
-  },
-  {
-   "year": "1972-73",
-   "name": "Michael Fiorella",
-   "file": "1972-73-michael-fiorella.jpg",
-   "src": {
-    "label": "1973 Talisman, \"ASG Veep 'looks beneath the surface'\" profile, p. 236",
-    "url": "https://archive.org/details/talisman1973west/page/n241/mode/1up"
-   }
-  },
-  {
-   "year": "1974-75",
-   "name": "Gregory McKinney",
-   "file": "1974-75-gregory-mckinney.jpg",
-   "src": {
-    "label": "1975 Talisman, \"McKinney Profile\", p. 105, sworn in as first Black student regent by Board of Regents secretary Georgia Bates",
-    "url": "https://archive.org/details/talisman1975west/page/n108/mode/1up"
-   }
-  },
-  {
-   "year": "1974-75",
-   "name": "Jeffrey Consolo",
-   "file": "1974-75-jeffrey-consolo.jpg",
-   "src": {
-    "label": "1975 Talisman, Who's Who, p. 89",
-    "url": "https://archive.org/details/talisman1975west/page/n92/mode/1up"
-   }
-  },
-  {
-   "year": "1968-69",
-   "name": "Bill Straeffer",
-   "file": "1968-69-bill-straeffer.jpg",
-   "src": {
-    "label": "1969 Talisman pt. 1, p. 95",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
-   }
-  },
-  {
-   "year": "1975-76",
-   "name": "Steve Henry",
-   "file": "1975-76-steve-henry.jpg",
-   "src": {
-    "label": "1976 Talisman, Who's Who, p. 85",
-    "url": "https://archive.org/details/talisman1976west/page/n88/mode/1up"
-   }
-  },
-  {
-   "year": "1978-79",
-   "name": "Steven Thornton",
-   "file": "1978-79-steven-thornton.jpg",
-   "src": {
-    "label": "1979 Talisman, p. 288",
-    "url": "https://archive.org/details/talisman1979west/page/n289/mode/1up"
-   }
-  },
-  {
-   "year": "1979-80",
-   "name": "James Hargrove",
-   "file": "1979-80-james-hargrove.jpg",
-   "src": {
-    "label": "1980 Talisman, p. 275",
-    "url": "https://archive.org/details/talisman1980west/page/n278/mode/1up"
-   }
-  },
-  {
-   "year": "1977-78",
-   "name": "Robert Moore",
-   "file": "1977-78-robert-moore.jpg",
-   "src": {
-    "label": "Herald, 1 Apr 1977, p. 2",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5374/"
-   }
-  },
-  {
-   "year": "1982-83",
-   "name": "Margaret Ragan",
-   "file": "1982-83-margaret-ragan.jpg",
-   "src": {
-    "label": "Herald 58:2, 26 Aug 1982, p. 2",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/572"
-   }
-  },
-  {
-   "year": "1989-90",
-   "name": "Amos Gott",
-   "file": "1989-90-amos-gott.jpg",
-   "src": {
-    "label": "College Heights Herald, Vol. 64 No. 49, 13 Apr 1989, p. 1",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7572"
-   }
-  },
-  {
-   "year": "1973-74",
-   "name": "Steven Yater",
-   "file": "1973-74-steven-yater.jpg",
-   "src": {
-    "label": "1974 Talisman, p. 183, sworn in as student regent by Board of Regents secretary Georgia Bates",
-    "url": "https://archive.org/details/talisman1974west/page/n186/mode/1up"
-   }
-  },
-  {
-   "year": "1980-81",
-   "name": "Steven Fuller",
-   "file": "1980-81-steven-fuller.jpg",
-   "src": {
-    "label": "Herald 55:51, 10 Apr 1980, p. 5",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5631"
-   }
-  },
-  {
-   "year": "1993-94",
-   "name": "Donald Smith",
-   "file": "1993-94-donald-smith.jpg",
-   "src": {
-    "label": "Herald 69:7, 16 Sept 1993, p. 8",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7687"
-   }
-  },
-  {
-   "year": "1994-95",
-   "name": "Robert Evans",
-   "file": "1994-95-robert-evans.jpg",
-   "src": {
-    "label": "Herald 69:52, 21 Apr 1994, p. 1",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7879/"
-   }
-  },
-  {
-   "year": "1985-86",
-   "name": "Mitchell McKinney",
-   "file": "1985-86-mitchell-mckinney.jpg",
-   "src": {
-    "label": "Herald 61:1, 27 Aug 1985, p. 14B",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6117"
-   }
-  },
-  {
-   "year": "1996-97",
-   "name": "Kristen Miller",
-   "file": "1996-97-kristen-miller.jpg",
-   "src": {
-    "label": "Herald 72:46, 27 Mar 1997, p. 15",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3020/"
-   }
-  },
-  {
-   "year": "1986-87",
-   "name": "Timothy Todd",
-   "file": "1986-87-timothy-todd.jpg",
-   "src": {
-    "label": "1987 Talisman, p. 331",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/411"
-   }
-  },
-  {
-   "year": "1990-91",
-   "name": "Michael Colvin",
-   "file": "1990-91-michael-colvin.jpg",
-   "src": {
-    "label": "1991 Talisman, p. 271",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/415"
-   }
-  },
-  {
-   "year": "1992-93",
-   "name": "Joe Rains",
-   "file": "1992-93-joe-rains.jpg",
-   "src": {
-    "label": "Herald 67:53, 16 Apr 1992, p. 1",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7705/"
-   }
-  },
-  {
-   "year": "1997-98",
-   "name": "Keith Coffman",
-   "file": "1997-98-keith-coffman.jpg",
-   "src": {
-    "label": "Herald 73:54, 5 May 1998, p. 12",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8028"
-   }
-  },
-  {
-   "year": "1995-96",
-   "name": "Tara (Higdon) Howard",
-   "file": "1995-96-tara-howard.jpg",
-   "src": {
-    "label": "Herald 70:54, 20 Apr 1995",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7934"
-   }
-  },
-  {
-   "year": "1998-99",
-   "name": "Stephanie Cosby",
-   "file": "1998-99-stephanie-cosby.jpg",
-   "src": {
-    "label": "Herald 73:52, 28 Apr 1998, p. 9",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7981"
-   }
-  },
-  {
-   "year": "1988-89",
-   "name": "Scott Whitehouse",
-   "file": "1988-89-scott-whitehouse.jpg",
-   "src": {
-    "label": "1989 Talisman, p. 198",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413"
-   }
-  },
-  {
-   "year": "1991-92",
-   "name": "Heather E. Falmlen",
-   "file": "1991-92-heather-falmlen.jpg",
-   "src": {
-    "label": "Herald, Apr 2, 1991",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7756/"
-   }
-  },
-  {
-   "year": "2000-01",
-   "name": "Cassie Martin",
-   "file": "2000-01-cassie-martin.jpg",
-   "src": {
-    "label": "Herald 75:53, 18 Apr 2000, p. 1",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8115"
-   }
-  },
-  {
-   "year": "1999-00",
-   "name": "Amanda Coates",
-   "file": "1999-00-amanda-lich.jpg",
-   "src": {
-    "label": "Herald 75:55, 25 Apr 2000, p. 6",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8117/"
-   }
-  },
-  {
-   "year": "2003-04",
-   "name": "John Bradley",
-   "file": "2003-04-john-bradley.jpg",
-   "src": {
-    "label": "Herald 79:55, 27 Apr 2004, p. 1",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9385"
-   }
-  },
-  {
-   "year": "2002-03",
-   "name": "Jamie Sears",
-   "file": "2002-03-jamie-sears.jpg",
-   "src": {
-    "label": "Herald 77:50, 9 Apr 2002, p. 3",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9174"
-   }
-  },
-  {
-   "year": "2001-02",
-   "name": "Leslie Bedo",
-   "file": "2001-02-leslie-bedo.jpg",
-   "src": {
-    "label": "Herald 76:49, 5 Apr 2001, p. 11",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9088"
-   }
-  },
-  {
-   "year": "2004-05",
-   "name": "Patti Johnson",
-   "file": "2004-05-patti-johnson.jpg",
-   "src": {
-    "label": "Herald 80:5, 9 Sept 2004, p. 1",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9403"
-   }
-  },
-  {
-   "year": "1981-82",
-   "name": "Marcel Bush",
-   "file": "1981-82-marcell-bush.jpg",
-   "src": {
-    "label": "Herald, 27 Aug 1981",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2404"
-   }
-  },
-  {
-   "year": "2006-07",
-   "name": "Robert Watkins",
-   "file": "2006-07-robert-watkins.jpg",
-   "src": {
-    "label": "WKU Board of Regents page, Sept 2006 (Wayback)",
-    "url": "http://web.archive.org/web/20060910115217/http://www.wku.edu/regents.html"
-   }
-  },
-  {
-   "year": "1969-70",
-   "name": "Larry Zielke",
-   "file": "1969-70-larry-zielke.jpg",
-   "src": {
-    "label": "1970 Talisman pt. 1, p. 31",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/387"
-   }
-  },
-  {
-   "year": "1981-82",
-   "name": "Sandra Norfleet",
-   "file": "1982-83-sandra-norfleet.jpg",
-   "src": {
-    "label": "Herald 57:37, 4 Feb 1982, p. 3",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2443"
-   }
-  },
-  {
-   "year": "1983-84",
-   "name": "Jack Smith",
-   "file": "1983-84-jack-smith.jpg",
-   "src": {
-    "label": "1984 Talisman, p. 118 (senior portrait)",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/408"
-   }
-  },
-  {
-   "year": "2007-08",
-   "name": "Jeanne Johnson",
-   "file": "2007-08-jeanne-johnson.jpg",
-   "src": {
-    "label": "WKU Royalty: Homecoming Queen (TopSCHOLAR), Nov 2007",
-    "url": "https://digitalcommons.wku.edu/home_queen/112/"
-   }
-  },
-  {
-   "year": "1972-73",
-   "name": "Edward Jordan, Jr.",
-   "file": "1972-73-edward-jordan.jpg",
-   "src": {
-    "label": "1973 Talisman, p. 75, \"Upper—Ed Jordan, ASG president, sought to stimulate student interest through a more organized governing group\"",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/393"
-   }
-  },
-  {
-   "year": "1976-77",
-   "name": "Christy Vogt",
-   "file": "1976-77-christy-vogt.jpg",
-   "src": {
-    "label": "1977 Talisman, p. 128, \"Informal discussion precedes and follows Board of Regents meetings. Student Regent Christy Vogt talked to Regent Bill Kuegel at the October meeting.\"",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/399"
-   }
-  },
-  {
-   "year": "1968-69",
-   "name": "Reed Morgan",
-   "file": "1968-69-reed-morgan.jpg",
-   "src": {
-    "label": "College Heights Herald 45:20, 7 Apr 1966, p. 3",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4689"
-   }
-  },
-  {
-   "year": "1984-85",
-   "name": "Jack Smith",
-   "file": "1984-85-jack-smith.jpg",
-   "src": {
-    "label": "1985 Talisman, p. 313 (senior portraits)",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/409"
-   }
-  },
-  {
-   "year": "2008-09",
-   "name": "Kayla Shelton",
-   "file": "2008-09-kayla-shelton.jpg",
-   "src": {
-    "label": "Herald, Apr 2009",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6748"
-   }
-  },
-  {
-   "year": "1968-69",
-   "name": "Paul Gerard, III",
-   "file": "1968-69-paul-gerard.jpg",
-   "src": {
-    "label": "1969 Talisman pt. 1, p. 52",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
-   }
-  },
-  {
-   "year": "1981-82",
-   "name": "David Payne",
-   "file": "1981-82-david-payne.jpg",
-   "src": {
-    "label": "Herald 57:31, 14 Jan 1982, p. 2",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2436"
-   }
-  },
-  {
-   "year": "1987-88",
-   "name": "Timothy Todd",
-   "file": "1987-88-timothy-todd.jpg",
-   "src": {
-    "label": "1988 Talisman, p. 158",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/412"
-   }
-  },
-  {
-   "year": "1969-70",
-   "name": "Paul Gerard, III",
-   "file": "1968-69-paul-gerard.jpg",
-   "src": {
-    "label": "1969 Talisman pt. 1, p. 52",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
-   }
-  },
-  {
-   "year": "2004-05",
-   "name": "Nick Todd",
-   "file": "2004-05-nick-todd.jpg",
-   "src": {
-    "label": "Herald, \"Election Guide 2004\" (Decision 2004 special edition), 16 Mar 2004, p. 2B, presidential candidate profile",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"
-   }
-  },
-  {
-   "year": "2008-09",
-   "name": "Reagan Gilley",
-   "file": "2008-09-reagan-gilley.jpg",
-   "src": {
-    "label": "Herald 84:35, 26 Feb 2009, p. 1, \"Pineville senior Reagan Gilley celebrates winning the Student Government Association student regent election after midnight on Thursday morning.\"",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6718"
-   }
-  },
-  {
-   "year": "2004-05",
-   "name": "Katie Dawson",
-   "file": "2005-06-katie-dawson.jpg",
-   "src": {
-    "label": "Daily News, 31 Mar 2006",
-    "url": "https://bgdailynews.com/2006/03/31/a-show-of-voices/"
-   }
-  },
-  {
-   "year": "2006-07",
-   "name": "Jeanne Johnson",
-   "file": "2007-08-jeanne-johnson.jpg",
-   "src": {
-    "label": "WKU Royalty: Homecoming Queen (TopSCHOLAR), Nov 2007",
-    "url": "https://digitalcommons.wku.edu/home_queen/112/"
-   }
-  }
- ],
- "years": [
-  {
-   "year": "1966-67",
-   "file": "1966-67-associated-students.jpg",
-   "caption": "The Associated Students executive council and members, photographed in the conference room, 1966-67 academic year.",
-   "src": {
-    "label": "1967 Talisman pt. 1, p. 136",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/382"
-   }
-  },
-  {
-   "year": "1967-68",
-   "file": "1967-68-associated-students.jpg",
-   "caption": "The Associated Students council photographed on the steps outside campus, 1967-68 academic year, the group's second year of existence.",
-   "src": {
-    "label": "1968 Talisman, p. 153",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384"
-   }
-  },
-  {
-   "year": "2025-26",
-   "file": "2025-26-rush-robinson.jpg",
-   "caption": "The executive ticket elected in the 13-15 April 2025 election, photographed on campus. Robinson's ticket won on a turnout of 966.",
-   "src": {
-    "label": "WKU News - Robinson elected",
-    "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12496"
-   }
-  },
-  {
-   "year": "2026-27",
-   "file": "2026-27-caden-lucas.jpg",
-   "caption": "The new executive council photographed in the SGA chambers after the 15 April 2026 election. Photo: Jacob Sebastian, WKU.",
-   "src": {
-    "label": "WKU News - Lucas elected",
-    "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13041"
-   }
-  },
-  {
-   "year": "1970-71",
-   "file": "1970-71-executive-council.jpg",
-   "caption": "The Associated Students executive council, 1970-71: Brett Butler (treasurer), Carol Gray (secretary), John Lyne (president), Peggy Hundley, Joe Gerard, Glen Sweet, and Doug Alexander (vice president).",
-   "src": {
-    "label": "1971 Talisman, p. 67",
-    "url": "https://archive.org/details/talisman1971west/page/n227/mode/1up"
-   }
-  },
-  {
-   "year": "1971-72",
-   "file": "1971-72-executive-officers.jpg",
-   "caption": "The Associated Students executive officers play pool in the Downing University Center games room, 1971-72: Reginald Glass (vice president), Nancy Pape (secretary), Linda Jones (president), and Joe Glasser (treasurer).",
-   "src": {
-    "label": "1972 Talisman, p. 272",
-    "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
-   }
-  },
-  {
-   "year": "1968-69",
-   "file": "1968-69-associated-students-executive.jpg",
-   "caption": "The Associated Students executive committee, 1968-69: Bill Straeffer (president) with Paul Gerard (student representative to the Board of Regents) and other officers and members, photographed against a curtained backdrop.",
-   "src": {
-    "label": "1969 Talisman pt. 1, p. 95",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
-   }
-  },
-  {
-   "year": "2014-15",
-   "file": "2014-15-nicki-seay.jpg",
-   "caption": "The 2014-15 president photographed in August 2014, when the Herald was still reporting her as Nicki Seay. The Chambers wall carries her twice, as Janet \"Nicki\" Seay for 2014 and Nicki Taylor for 2014-15; the Herald shows one continuous term and a change of surname, and this archive counts one president.",
-   "src": {
-    "label": "Herald, Aug 2014",
-    "url": "https://wkuherald.com/39702/news/students-attend-special-dsu-celebration/"
-   }
-  },
-  {
-   "year": "2004-05",
-   "file": "2004-05-jessica-martin.jpg",
-   "caption": "Jessica Martin, then vice president of administration, ran for SGA president against Nick Todd in the March 2004 election. The photograph is the one printed in the shaded candidate-profile box beside her article, which gives her major as public relations and sociology and lists her campus involvement, beginning with the vice presidency of administration and naming her earlier work as a resident assistant at Northeast Hall. She lost the election and served as chief of staff under Patti Johnson for 2004-05.",
-   "src": {
-    "label": "Herald, \"Election Guide 2004\" (Decision 2004 special edition), 16 Mar 2004, p. 2B",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"
-   }
-  },
-  {
-   "year": "2004-05",
-   "file": "2004-05-sarah-cecil.jpg",
-   "caption": "Sarah Cecil, a Louisville junior, ran for a senate seat in the March 2004 election and served as co-chair of the Public Relations Committee in 2004-05. The photograph sits under her own headline at the head of her own column, and the paragraph beside it opens by naming her as a Louisville junior; Alicia Bachicha, written up in the same article, has a separate headline and a separate photograph in the opposite column.",
-   "src": {
-    "label": "Herald, \"Election Guide 2004\" (Decision 2004 special edition), 16 Mar 2004, p. 2B",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"
-   }
-  },
-  {
-   "year": "2004-05",
-   "file": "2004-05-christina-kayrouz.jpg",
-   "caption": "Christina Kayrouz, a Louisville sophomore, ran for a senate seat in the March 2004 election and served as co-chair of the Student Affairs Committee in 2004-05. The photograph sits directly under her own headline, and the paragraph beside it names her as a Louisville sophomore describing the academic affairs committee's opposition to plus/minus grading, which she said she meant to continue.",
-   "src": {
-    "label": "Herald, \"Election Guide 2004\" (Decision 2004 special edition), 16 Mar 2004, p. 2B",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"
-   }
-  }
- ]
+  "leaders": [
+    {
+      "year": "1966-67",
+      "name": "Jim Haynes",
+      "file": "1966-67-jim-haynes.jpg",
+      "src": {
+        "label": "1967 Talisman pt. 1, p. 136",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/382"
+      }
+    },
+    {
+      "year": "1967-68",
+      "name": "William Menser",
+      "file": "1967-68-william-menser.jpg",
+      "src": {
+        "label": "1968 Talisman, p. 153",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384"
+      }
+    },
+    {
+      "year": "2015-16",
+      "name": "Jay Todd Richey",
+      "file": "2015-16-jay-todd-richey.jpg",
+      "src": {
+        "label": "Herald, Mar 2017",
+        "url": "https://wkuherald.com/29658/news/graduating-sga-president-reflects-on-two-terms/"
+      }
+    },
+    {
+      "year": "2022-23",
+      "name": "Cole Bornefeld",
+      "file": "2022-23-cole-bornefeld.jpg",
+      "src": {
+        "label": "Herald, Oct 2022",
+        "url": "https://wkuherald.com/69113/news/the-making-of-an-sga-president/"
+      }
+    },
+    {
+      "year": "2019-20",
+      "name": "Will Harris",
+      "file": "2019-20-will-harris.jpg",
+      "src": {
+        "label": "Herald, Feb 2020",
+        "url": "https://wkuherald.com/17087/news/sga-plans-trip-to-rally-for-higher-education-in-march/"
+      }
+    },
+    {
+      "year": "2017-18",
+      "name": "Andi Dahmer",
+      "file": "2017-18-andi-dahmer.jpg",
+      "src": {
+        "label": "Herald, Apr 2019",
+        "url": "https://wkuherald.com/20416/news/wku-to-release-records-to-former-sga-president/"
+      }
+    },
+    {
+      "year": "2025-26",
+      "name": "Rush Robinson",
+      "file": "2025-26-rush-robinson-solo.jpg",
+      "src": {
+        "label": "WKU News, 2025",
+        "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13040"
+      }
+    },
+    {
+      "year": "2018-19",
+      "name": "Stephen Mayer",
+      "file": "2018-19-stephen-mayer.jpg",
+      "src": {
+        "label": "Herald, Apr 2019",
+        "url": "https://wkuherald.com/20349/news/sga-allocates-17000-to-fund-scholarships/"
+      }
+    },
+    {
+      "year": "2021-22",
+      "name": "Matthew Wininger",
+      "file": "2021-22-matthew-wininger.jpg",
+      "src": {
+        "label": "WKU News, Apr 2021",
+        "url": "https://www.wku.edu/news/articles/index.php?articleid=9622&view=article"
+      }
+    },
+    {
+      "year": "2023-24",
+      "name": "Sam Kurtz",
+      "file": "2023-24-sam-kurtz.jpg",
+      "src": {
+        "label": "Herald, Aug 2024",
+        "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
+      }
+    },
+    {
+      "year": "2026-27",
+      "name": "Caden Lucas",
+      "file": "2026-27-caden-lucas-solo.jpg",
+      "src": {
+        "label": "WKU News, 2026",
+        "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13098"
+      }
+    },
+    {
+      "year": "2020-21",
+      "name": "J. Garrett Edmonds",
+      "file": "2020-21-garrett-edmonds.jpg",
+      "src": {
+        "label": "Herald, Oct 2018",
+        "url": "https://wkuherald.com/23183/news/sga-vice-president-moves-forward-after-election-controversy/"
+      }
+    },
+    {
+      "year": "2011-12",
+      "name": "Billy Stephens",
+      "file": "2011-12-billy-stephens.jpg",
+      "src": {
+        "label": "Herald, 15 Apr 2011",
+        "url": "https://wkuherald.com/51759/news/stephens-already-an-experienced-leader/"
+      }
+    },
+    {
+      "year": "2010-11",
+      "name": "Colton Jessie",
+      "file": "2010-11-colton-jessie.jpg",
+      "src": {
+        "label": "Herald, Apr 2011",
+        "url": "https://wkuherald.com/52039/news/jessie-reflects-on-year-as-sga-president/"
+      }
+    },
+    {
+      "year": "2009-10",
+      "name": "Kevin Smiley",
+      "file": "2009-10-kevin-smiley.jpg",
+      "src": {
+        "label": "Daily News, Nov 2008",
+        "url": "https://bgdailynews.com/2008/11/13/2-students-on-gov-s-higher-ed-committee/"
+      }
+    },
+    {
+      "year": "2012-13",
+      "name": "Cory Dodds",
+      "file": "2012-13-cory-dodds.jpg",
+      "src": {
+        "label": "Herald, Mar 2012",
+        "url": "https://wkuherald.com/48077/news/dodds-elected-sga-president/"
+      }
+    },
+    {
+      "year": "2008-09",
+      "name": "Johnathon Boles",
+      "file": "2008-09-johnathon-boles.jpg",
+      "src": {
+        "label": "BG Daily News, Nov 2008",
+        "url": "https://bgdailynews.com/2008/11/13/2-students-on-gov-s-higher-ed-committee/"
+      }
+    },
+    {
+      "year": "2013-14",
+      "name": "Keyanna Boka",
+      "file": "2013-14-keyanna-boka.jpg",
+      "src": {
+        "label": "Herald, Apr 2013",
+        "url": "https://wkuherald.com/44046/news/boka-reinstated-as-sga-president-elect/"
+      }
+    },
+    {
+      "year": "2014-15",
+      "name": "Nicki Taylor",
+      "file": "2014-15-nicki-taylor.jpg",
+      "src": {
+        "label": "Herald, Mar 2015",
+        "url": "https://wkuherald.com/36634/life/sga-president-juggles-school-government-marriage/"
+      }
+    },
+    {
+      "year": "2005-06",
+      "name": "Katie Dawson",
+      "file": "2005-06-katie-dawson.jpg",
+      "src": {
+        "label": "Daily News, 31 Mar 2006",
+        "url": "https://bgdailynews.com/2006/03/31/a-show-of-voices/"
+      }
+    },
+    {
+      "year": "2016-17",
+      "name": "Jay Todd Richey",
+      "file": "2015-16-jay-todd-richey.jpg",
+      "src": {
+        "label": "Herald, Mar 2017",
+        "url": "https://wkuherald.com/29658/news/graduating-sga-president-reflects-on-two-terms/"
+      }
+    },
+    {
+      "year": "2024-25",
+      "name": "Sam Kurtz",
+      "file": "2023-24-sam-kurtz.jpg",
+      "src": {
+        "label": "Herald, Aug 2024",
+        "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
+      }
+    },
+    {
+      "year": "1970-71",
+      "name": "John Lyne",
+      "file": "1970-71-john-lyne.jpg",
+      "src": {
+        "label": "1971 Talisman (WKU), \"John Lyne: Associated Students' president\" profile spread",
+        "url": "https://archive.org/details/talisman1971west/page/n88/mode/1up"
+      }
+    },
+    {
+      "year": "1971-72",
+      "name": "Linda Jones",
+      "file": "1971-72-linda-jones.jpg",
+      "src": {
+        "label": "1972 Talisman, p. 200",
+        "url": "https://archive.org/details/talisman1972west/page/n204/mode/1up"
+      }
+    },
+    {
+      "year": "1972-73",
+      "name": "Michael Fiorella",
+      "file": "1972-73-michael-fiorella.jpg",
+      "src": {
+        "label": "1973 Talisman, \"ASG Veep 'looks beneath the surface'\" profile, p. 236",
+        "url": "https://archive.org/details/talisman1973west/page/n241/mode/1up"
+      }
+    },
+    {
+      "year": "1974-75",
+      "name": "Gregory McKinney",
+      "file": "1974-75-gregory-mckinney.jpg",
+      "src": {
+        "label": "1975 Talisman, \"McKinney Profile\", p. 105, sworn in as first Black student regent by Board of Regents secretary Georgia Bates",
+        "url": "https://archive.org/details/talisman1975west/page/n108/mode/1up"
+      }
+    },
+    {
+      "year": "1974-75",
+      "name": "Jeffrey Consolo",
+      "file": "1974-75-jeffrey-consolo.jpg",
+      "src": {
+        "label": "1975 Talisman, Who's Who, p. 89",
+        "url": "https://archive.org/details/talisman1975west/page/n92/mode/1up"
+      }
+    },
+    {
+      "year": "1968-69",
+      "name": "Bill Straeffer",
+      "file": "1968-69-bill-straeffer.jpg",
+      "src": {
+        "label": "1969 Talisman pt. 1, p. 95",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
+      }
+    },
+    {
+      "year": "1975-76",
+      "name": "Steve Henry",
+      "file": "1975-76-steve-henry.jpg",
+      "src": {
+        "label": "1976 Talisman, Who's Who, p. 85",
+        "url": "https://archive.org/details/talisman1976west/page/n88/mode/1up"
+      }
+    },
+    {
+      "year": "1978-79",
+      "name": "Steven Thornton",
+      "file": "1978-79-steven-thornton.jpg",
+      "src": {
+        "label": "1979 Talisman, p. 288",
+        "url": "https://archive.org/details/talisman1979west/page/n289/mode/1up"
+      }
+    },
+    {
+      "year": "1979-80",
+      "name": "James Hargrove",
+      "file": "1979-80-james-hargrove.jpg",
+      "src": {
+        "label": "1980 Talisman, p. 275",
+        "url": "https://archive.org/details/talisman1980west/page/n278/mode/1up"
+      }
+    },
+    {
+      "year": "1977-78",
+      "name": "Robert Moore",
+      "file": "1977-78-robert-moore.jpg",
+      "src": {
+        "label": "Herald, 1 Apr 1977, p. 2",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5374/"
+      }
+    },
+    {
+      "year": "1982-83",
+      "name": "Margaret Ragan",
+      "file": "1982-83-margaret-ragan.jpg",
+      "src": {
+        "label": "Herald 58:2, 26 Aug 1982, p. 2",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/572"
+      }
+    },
+    {
+      "year": "1989-90",
+      "name": "Amos Gott",
+      "file": "1989-90-amos-gott.jpg",
+      "src": {
+        "label": "College Heights Herald, Vol. 64 No. 49, 13 Apr 1989, p. 1",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7572"
+      }
+    },
+    {
+      "year": "1973-74",
+      "name": "Steven Yater",
+      "file": "1973-74-steven-yater.jpg",
+      "src": {
+        "label": "1974 Talisman, p. 183, sworn in as student regent by Board of Regents secretary Georgia Bates",
+        "url": "https://archive.org/details/talisman1974west/page/n186/mode/1up"
+      }
+    },
+    {
+      "year": "1980-81",
+      "name": "Steven Fuller",
+      "file": "1980-81-steven-fuller.jpg",
+      "src": {
+        "label": "Herald 55:51, 10 Apr 1980, p. 5",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5631"
+      }
+    },
+    {
+      "year": "1993-94",
+      "name": "Donald Smith",
+      "file": "1993-94-donald-smith.jpg",
+      "src": {
+        "label": "Herald 69:7, 16 Sept 1993, p. 8",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7687"
+      }
+    },
+    {
+      "year": "1994-95",
+      "name": "Robert Evans",
+      "file": "1994-95-robert-evans.jpg",
+      "src": {
+        "label": "Herald 69:52, 21 Apr 1994, p. 1",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7879/"
+      }
+    },
+    {
+      "year": "1985-86",
+      "name": "Mitchell McKinney",
+      "file": "1985-86-mitchell-mckinney.jpg",
+      "src": {
+        "label": "Herald 61:1, 27 Aug 1985, p. 14B",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6117"
+      }
+    },
+    {
+      "year": "1996-97",
+      "name": "Kristen Miller",
+      "file": "1996-97-kristen-miller.jpg",
+      "src": {
+        "label": "Herald 72:46, 27 Mar 1997, p. 15",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3020/"
+      }
+    },
+    {
+      "year": "1986-87",
+      "name": "Timothy Todd",
+      "file": "1986-87-timothy-todd.jpg",
+      "src": {
+        "label": "1987 Talisman, p. 331",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/411"
+      }
+    },
+    {
+      "year": "1990-91",
+      "name": "Michael Colvin",
+      "file": "1990-91-michael-colvin.jpg",
+      "src": {
+        "label": "1991 Talisman, p. 271",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/415"
+      }
+    },
+    {
+      "year": "1992-93",
+      "name": "Joe Rains",
+      "file": "1992-93-joe-rains.jpg",
+      "src": {
+        "label": "Herald 67:53, 16 Apr 1992, p. 1",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7705/"
+      }
+    },
+    {
+      "year": "1997-98",
+      "name": "Keith Coffman",
+      "file": "1997-98-keith-coffman.jpg",
+      "src": {
+        "label": "Herald 73:54, 5 May 1998, p. 12",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8028"
+      }
+    },
+    {
+      "year": "1995-96",
+      "name": "Tara (Higdon) Howard",
+      "file": "1995-96-tara-howard.jpg",
+      "src": {
+        "label": "Herald 70:54, 20 Apr 1995",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7934"
+      }
+    },
+    {
+      "year": "1998-99",
+      "name": "Stephanie Cosby",
+      "file": "1998-99-stephanie-cosby.jpg",
+      "src": {
+        "label": "Herald 73:52, 28 Apr 1998, p. 9",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7981"
+      }
+    },
+    {
+      "year": "1988-89",
+      "name": "Scott Whitehouse",
+      "file": "1988-89-scott-whitehouse.jpg",
+      "src": {
+        "label": "1989 Talisman, p. 198",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413"
+      }
+    },
+    {
+      "year": "1991-92",
+      "name": "Heather E. Falmlen",
+      "file": "1991-92-heather-falmlen.jpg",
+      "src": {
+        "label": "Herald, Apr 2, 1991",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7756/"
+      }
+    },
+    {
+      "year": "2000-01",
+      "name": "Cassie Martin",
+      "file": "2000-01-cassie-martin.jpg",
+      "src": {
+        "label": "Herald 75:53, 18 Apr 2000, p. 1",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8115"
+      }
+    },
+    {
+      "year": "1999-00",
+      "name": "Amanda Coates",
+      "file": "1999-00-amanda-lich.jpg",
+      "src": {
+        "label": "Herald 75:55, 25 Apr 2000, p. 6",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8117/"
+      }
+    },
+    {
+      "year": "2003-04",
+      "name": "John Bradley",
+      "file": "2003-04-john-bradley.jpg",
+      "src": {
+        "label": "Herald 79:55, 27 Apr 2004, p. 1",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9385"
+      }
+    },
+    {
+      "year": "2002-03",
+      "name": "Jamie Sears",
+      "file": "2002-03-jamie-sears.jpg",
+      "src": {
+        "label": "Herald 77:50, 9 Apr 2002, p. 3",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9174"
+      }
+    },
+    {
+      "year": "2001-02",
+      "name": "Leslie Bedo",
+      "file": "2001-02-leslie-bedo.jpg",
+      "src": {
+        "label": "Herald 76:49, 5 Apr 2001, p. 11",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9088"
+      }
+    },
+    {
+      "year": "2004-05",
+      "name": "Patti Johnson",
+      "file": "2004-05-patti-johnson.jpg",
+      "src": {
+        "label": "Herald 80:5, 9 Sept 2004, p. 1",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9403"
+      }
+    },
+    {
+      "year": "1981-82",
+      "name": "Marcel Bush",
+      "file": "1981-82-marcell-bush.jpg",
+      "src": {
+        "label": "Herald, 27 Aug 1981",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2404"
+      }
+    },
+    {
+      "year": "2006-07",
+      "name": "Robert Watkins",
+      "file": "2006-07-robert-watkins.jpg",
+      "src": {
+        "label": "WKU Board of Regents page, Sept 2006 (Wayback)",
+        "url": "http://web.archive.org/web/20060910115217/http://www.wku.edu/regents.html"
+      }
+    },
+    {
+      "year": "1969-70",
+      "name": "Larry Zielke",
+      "file": "1969-70-larry-zielke.jpg",
+      "src": {
+        "label": "1970 Talisman pt. 1, p. 31",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/387"
+      }
+    },
+    {
+      "year": "1981-82",
+      "name": "Sandra Norfleet",
+      "file": "1982-83-sandra-norfleet.jpg",
+      "src": {
+        "label": "Herald 57:37, 4 Feb 1982, p. 3",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2443"
+      }
+    },
+    {
+      "year": "1983-84",
+      "name": "Jack Smith",
+      "file": "1983-84-jack-smith.jpg",
+      "src": {
+        "label": "1984 Talisman, p. 118 (senior portrait)",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/408"
+      }
+    },
+    {
+      "year": "2007-08",
+      "name": "Jeanne Johnson",
+      "file": "2007-08-jeanne-johnson.jpg",
+      "src": {
+        "label": "WKU Royalty: Homecoming Queen (TopSCHOLAR), Nov 2007",
+        "url": "https://digitalcommons.wku.edu/home_queen/112/"
+      }
+    },
+    {
+      "year": "1972-73",
+      "name": "Edward Jordan, Jr.",
+      "file": "1972-73-edward-jordan.jpg",
+      "src": {
+        "label": "1973 Talisman, p. 75, \"Upper—Ed Jordan, ASG president, sought to stimulate student interest through a more organized governing group\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/393"
+      }
+    },
+    {
+      "year": "1976-77",
+      "name": "Christy Vogt",
+      "file": "1976-77-christy-vogt.jpg",
+      "src": {
+        "label": "1977 Talisman, p. 128, \"Informal discussion precedes and follows Board of Regents meetings. Student Regent Christy Vogt talked to Regent Bill Kuegel at the October meeting.\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/399"
+      }
+    },
+    {
+      "year": "1968-69",
+      "name": "Reed Morgan",
+      "file": "1968-69-reed-morgan.jpg",
+      "src": {
+        "label": "College Heights Herald 45:20, 7 Apr 1966, p. 3",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4689"
+      }
+    },
+    {
+      "year": "1984-85",
+      "name": "Jack Smith",
+      "file": "1984-85-jack-smith.jpg",
+      "src": {
+        "label": "1985 Talisman, p. 313 (senior portraits)",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/409"
+      }
+    },
+    {
+      "year": "2008-09",
+      "name": "Kayla Shelton",
+      "file": "2008-09-kayla-shelton.jpg",
+      "src": {
+        "label": "Herald, Apr 2009",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6748"
+      }
+    },
+    {
+      "year": "1968-69",
+      "name": "Paul Gerard, III",
+      "file": "1968-69-paul-gerard.jpg",
+      "src": {
+        "label": "1969 Talisman pt. 1, p. 52",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
+      }
+    },
+    {
+      "year": "1981-82",
+      "name": "David Payne",
+      "file": "1981-82-david-payne.jpg",
+      "src": {
+        "label": "Herald 57:31, 14 Jan 1982, p. 2",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2436"
+      }
+    },
+    {
+      "year": "1987-88",
+      "name": "Timothy Todd",
+      "file": "1987-88-timothy-todd.jpg",
+      "src": {
+        "label": "1988 Talisman, p. 158",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/412"
+      }
+    },
+    {
+      "year": "1969-70",
+      "name": "Paul Gerard, III",
+      "file": "1968-69-paul-gerard.jpg",
+      "src": {
+        "label": "1969 Talisman pt. 1, p. 52",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
+      }
+    },
+    {
+      "year": "2004-05",
+      "name": "Nick Todd",
+      "file": "2004-05-nick-todd.jpg",
+      "src": {
+        "label": "Herald, \"Election Guide 2004\" (Decision 2004 special edition), 16 Mar 2004, p. 2B, presidential candidate profile",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"
+      }
+    },
+    {
+      "year": "2008-09",
+      "name": "Reagan Gilley",
+      "file": "2008-09-reagan-gilley.jpg",
+      "src": {
+        "label": "Herald 84:35, 26 Feb 2009, p. 1, \"Pineville senior Reagan Gilley celebrates winning the Student Government Association student regent election after midnight on Thursday morning.\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6718"
+      }
+    },
+    {
+      "year": "2004-05",
+      "name": "Katie Dawson",
+      "file": "2005-06-katie-dawson.jpg",
+      "src": {
+        "label": "Daily News, 31 Mar 2006",
+        "url": "https://bgdailynews.com/2006/03/31/a-show-of-voices/"
+      }
+    },
+    {
+      "year": "2006-07",
+      "name": "Jeanne Johnson",
+      "file": "2007-08-jeanne-johnson.jpg",
+      "src": {
+        "label": "WKU Royalty: Homecoming Queen (TopSCHOLAR), Nov 2007",
+        "url": "https://digitalcommons.wku.edu/home_queen/112/"
+      }
+    }
+  ],
+  "years": [
+    {
+      "year": "1966-67",
+      "file": "1966-67-associated-students.jpg",
+      "caption": "The Associated Students executive council and members, photographed in the conference room, 1966-67 academic year.",
+      "src": {
+        "label": "1967 Talisman pt. 1, p. 136",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/382"
+      }
+    },
+    {
+      "year": "1967-68",
+      "file": "1967-68-associated-students.jpg",
+      "caption": "The Associated Students council photographed on the steps outside campus, 1967-68 academic year, the group's second year of existence.",
+      "src": {
+        "label": "1968 Talisman, p. 153",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384"
+      }
+    },
+    {
+      "year": "2025-26",
+      "file": "2025-26-rush-robinson.jpg",
+      "caption": "The executive ticket elected in the 13-15 April 2025 election, photographed on campus. Robinson's ticket won on a turnout of 966.",
+      "src": {
+        "label": "WKU News - Robinson elected",
+        "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12496"
+      }
+    },
+    {
+      "year": "2026-27",
+      "file": "2026-27-caden-lucas.jpg",
+      "caption": "The new executive council photographed in the SGA chambers after the 15 April 2026 election. Photo: Jacob Sebastian, WKU.",
+      "src": {
+        "label": "WKU News - Lucas elected",
+        "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13041"
+      }
+    },
+    {
+      "year": "1970-71",
+      "file": "1970-71-executive-council.jpg",
+      "caption": "The Associated Students executive council, 1970-71: Brett Butler (treasurer), Carol Gray (secretary), John Lyne (president), Peggy Hundley, Joe Gerard, Glen Sweet, and Doug Alexander (vice president).",
+      "src": {
+        "label": "1971 Talisman, p. 67",
+        "url": "https://archive.org/details/talisman1971west/page/n227/mode/1up"
+      }
+    },
+    {
+      "year": "1971-72",
+      "file": "1971-72-executive-officers.jpg",
+      "caption": "The Associated Students executive officers play pool in the Downing University Center games room, 1971-72: Reginald Glass (vice president), Nancy Pape (secretary), Linda Jones (president), and Joe Glasser (treasurer).",
+      "src": {
+        "label": "1972 Talisman, p. 272",
+        "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+      }
+    },
+    {
+      "year": "1968-69",
+      "file": "1968-69-associated-students-executive.jpg",
+      "caption": "The Associated Students executive committee, 1968-69: Bill Straeffer (president) with Paul Gerard (student representative to the Board of Regents) and other officers and members, photographed against a curtained backdrop.",
+      "src": {
+        "label": "1969 Talisman pt. 1, p. 95",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
+      }
+    },
+    {
+      "year": "2014-15",
+      "file": "2014-15-nicki-seay.jpg",
+      "caption": "The 2014-15 president photographed in August 2014, when the Herald was still reporting her as Nicki Seay. The Chambers wall carries her twice, as Janet \"Nicki\" Seay for 2014 and Nicki Taylor for 2014-15; the Herald shows one continuous term and a change of surname, and this archive counts one president.",
+      "src": {
+        "label": "Herald, Aug 2014",
+        "url": "https://wkuherald.com/39702/news/students-attend-special-dsu-celebration/"
+      }
+    },
+    {
+      "year": "2004-05",
+      "file": "2004-05-jessica-martin.jpg",
+      "caption": "Jessica Martin, then vice president of administration, ran for SGA president against Nick Todd in the March 2004 election. The photograph is the one printed in the shaded candidate-profile box beside her article, which gives her major as public relations and sociology and lists her campus involvement, beginning with the vice presidency of administration and naming her earlier work as a resident assistant at Northeast Hall. She lost the election and served as chief of staff under Patti Johnson for 2004-05.",
+      "src": {
+        "label": "Herald, \"Election Guide 2004\" (Decision 2004 special edition), 16 Mar 2004, p. 2B",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"
+      }
+    },
+    {
+      "year": "2004-05",
+      "file": "2004-05-sarah-cecil.jpg",
+      "caption": "Sarah Cecil, a Louisville junior, ran for a senate seat in the March 2004 election and served as co-chair of the Public Relations Committee in 2004-05. The photograph sits under her own headline at the head of her own column, and the paragraph beside it opens by naming her as a Louisville junior; Alicia Bachicha, written up in the same article, has a separate headline and a separate photograph in the opposite column.",
+      "src": {
+        "label": "Herald, \"Election Guide 2004\" (Decision 2004 special edition), 16 Mar 2004, p. 2B",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"
+      }
+    },
+    {
+      "year": "2004-05",
+      "file": "2004-05-christina-kayrouz.jpg",
+      "caption": "Christina Kayrouz, a Louisville sophomore, ran for a senate seat in the March 2004 election and served as co-chair of the Student Affairs Committee in 2004-05. The photograph sits directly under her own headline, and the paragraph beside it names her as a Louisville sophomore describing the academic affairs committee's opposition to plus/minus grading, which she said she meant to continue.",
+      "src": {
+        "label": "Herald, \"Election Guide 2004\" (Decision 2004 special edition), 16 Mar 2004, p. 2B",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"
+      }
+    },
+    {
+      "year": "1971-72",
+      "file": "1971-72-reginald-glass.jpg",
+      "caption": "Reginald Glass, Associated Students vice president, interviewed outside the Downing University Center. His name tag reads REGINALD GLASS.",
+      "src": {
+        "label": "1972 Talisman, p. 201, \"A.S. entertainment has been geared to please all: Glass\" profile",
+        "url": "https://archive.org/details/talisman1972west/page/n204/mode/1up"
+      }
+    },
+    {
+      "year": "1971-72",
+      "file": "1971-72-nancy-pape.jpg",
+      "caption": "Nancy Pape, Associated Students secretary, cropped from the executive officers' pool-room photograph, second from left, matching the caption's naming order alongside Reginald Glass at far left.",
+      "src": {
+        "label": "1972 Talisman, p. 272",
+        "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+      }
+    },
+    {
+      "year": "1972-73",
+      "file": "1972-73-pat-newton.jpg",
+      "caption": "Pat Newton, Associated Student Government treasurer, in the yearbook's Who's Who feature, captioned with her printed name.",
+      "src": {
+        "label": "1973 Talisman, Who's Who, p. 227",
+        "url": "https://archive.org/details/talisman1973west/page/n232/mode/1up"
+      }
+    },
+    {
+      "year": "1972-73",
+      "file": "1972-73-charles-boteler.jpg",
+      "caption": "Charles Boteler, Associated Student Government administrative vice president, front row left, with the political science honor society Pi Sigma Alpha, named first in the caption's Row 1 list.",
+      "src": {
+        "label": "1973 Talisman, p. 342",
+        "url": "https://archive.org/details/talisman1973west/page/n347/mode/1up"
+      }
+    },
+    {
+      "year": "1974-75",
+      "file": "1974-75-cindy-kirkpatrick.jpg",
+      "caption": "Cindy Kirkpatrick, Associated Student Government secretary, applying finishing touches to a stage prop for \"Look Homeward, Angel.\"",
+      "src": {
+        "label": "1974 Talisman, p. 397",
+        "url": "https://archive.org/details/talisman1974west/page/n400/mode/1up"
+      }
+    },
+    {
+      "year": "1974-75",
+      "file": "1974-75-thomas-lacivita.jpg",
+      "caption": "Tom LaCivita, Associated Student Government activities vice president, discussing the signing of War and the Charlie Daniels Band with treasurer Ricky Johnson (out of frame at left in the original photograph, captioned \"Tom LaCivita (right)\").",
+      "src": {
+        "label": "1975 Talisman, p. 109",
+        "url": "https://archive.org/details/talisman1975west/page/n112/mode/1up"
+      }
+    }
+  ]
 }
