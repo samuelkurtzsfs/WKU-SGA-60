@@ -27366,7 +27366,90 @@
        }
       }
      ],
-     "note": "This was the 15th Senate. Chief Justice of the Judicial Council was Cody Cox; Associate Chief Justice was Annalicia Carlson."
+     "note": "This was the 15th Senate. Chief Justice of the Judicial Council was Cody Cox; Associate Chief Justice was Annalicia Carlson.",
+     "members": [
+      {
+       "name": "Chase Coffey",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 14-16-F, 2016-17 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill-14-16-f.pdf"
+       }
+      },
+      {
+       "name": "James Hill",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 22-16-F, 2016-17 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill-22-16-f.pdf"
+       }
+      },
+      {
+       "name": "Conner Hounshell",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 22-16-F, 2016-17 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill-22-16-f.pdf"
+       }
+      },
+      {
+       "name": "Zach Jones",
+       "seat": "Senior Senator",
+       "note": "Also chaired the Campus Improvements committee.",
+       "src": {
+        "label": "SGA Bill 4-17-S, 2016-17 session",
+        "url": "https://www.wku.edu/sga/accountability/bill_4-17-s.pdf"
+       }
+      },
+      {
+       "name": "Anna Rose McAvoy",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 22-16-F, 2016-17 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill-22-16-f.pdf"
+       }
+      },
+      {
+       "name": "Dillon McCormick",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 22-16-F, 2016-17 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill-22-16-f.pdf"
+       }
+      },
+      {
+       "name": "Lily Nellans",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 20-17-S, 2016-17 session",
+        "url": "https://www.wku.edu/sga/accountability/bill_20-17-s.pdf"
+       }
+      },
+      {
+       "name": "Shantel Pettway",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 18-17-S, 2016-17 session",
+        "url": "https://www.wku.edu/sga/accountability/bill_18-17-s.pdf"
+       }
+      },
+      {
+       "name": "Abdullah Raza",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 22-16-F, 2016-17 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill-22-16-f.pdf"
+       }
+      },
+      {
+       "name": "Ryan Richardson",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 28-17-S, 2016-17 session",
+        "url": "https://www.wku.edu/sga/accountability/bill_28-17-s.pdf"
+       }
+      }
+     ]
     }
    }
   },
@@ -28567,7 +28650,154 @@
        "chair": "Ian Hamilton"
       }
      ],
-     "note": "This was the 16th Senate. Under the constitution as amended spring 2017, the Senate was composed of 36 seats: 3 each for senior, junior, sophomore and freshman classes, 2 graduate, 1 ESL international student, 1 Gatton Academy, 6 academic-college, and 14 at-large."
+     "note": "This was the 16th Senate. Under the constitution as amended spring 2017, the Senate was composed of 36 seats: 3 each for senior, junior, sophomore and freshman classes, 2 graduate, 1 ESL international student, 1 Gatton Academy, 6 academic-college, and 14 at-large.",
+     "members": [
+      {
+       "name": "Matthew Barr",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 18-18-S, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-18-18-s.pdf"
+       }
+      },
+      {
+       "name": "Zach DeBord",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 11-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-11-17-f.pdf"
+       }
+      },
+      {
+       "name": "Annabelle Ford",
+       "seat": "Gordon Ford College of Business Senator",
+       "src": {
+        "label": "SGA Resolution 1-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/resolution-1-17-f.pdf"
+       }
+      },
+      {
+       "name": "Will Harris",
+       "seat": "Freshman Senator",
+       "src": {
+        "label": "SGA Bill 12-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-12-17-f.pdf"
+       }
+      },
+      {
+       "name": "Logan Hornback",
+       "seat": "Senator-at-Large",
+       "src": {
+        "label": "SGA Bill 15-18-S, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-15-18-s.pdf"
+       }
+      },
+      {
+       "name": "Trevor Huffman",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 11-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-11-17-f.pdf"
+       }
+      },
+      {
+       "name": "Alea Luckett",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 11-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-11-17-f.pdf"
+       }
+      },
+      {
+       "name": "Deekshita Madas",
+       "seat": "Senator-at-Large",
+       "src": {
+        "label": "SGA Bill 16-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-16-17-f.pdf"
+       }
+      },
+      {
+       "name": "Anna McAvoy",
+       "seat": "Senator-at-Large",
+       "src": {
+        "label": "SGA Bill 32-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/bill-32-17-f.pdf"
+       }
+      },
+      {
+       "name": "Dillon McCormick",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 11-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-11-17-f.pdf"
+       }
+      },
+      {
+       "name": "Dallas McKinney",
+       "seat": "Senator-at-Large",
+       "src": {
+        "label": "SGA Bill 10-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-10-17-f.pdf"
+       }
+      },
+      {
+       "name": "Kenan Mujkanovic",
+       "seat": "Senator-at-Large",
+       "src": {
+        "label": "SGA Bill 32-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-11-17-f.pdf"
+       }
+      },
+      {
+       "name": "Lauren Pederson",
+       "seat": "Ogden College Senator",
+       "note": "Also credited as an SGA SAVES member under the spelling \"Lauren Pedersen\" in Resolution 9-17-F, 2017-18.",
+       "src": {
+        "label": "SGA Bill 17-18-S, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-17-18-s.pdf"
+       }
+      },
+      {
+       "name": "Savannah Reynolds",
+       "seat": "Sophomore Senator",
+       "src": {
+        "label": "SGA Bill 32-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/bill-32-17-f.pdf"
+       }
+      },
+      {
+       "name": "Alex Sergent",
+       "seat": "Senator at Large",
+       "src": {
+        "label": "SGA Resolution 1-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/resolution-1-17-f.pdf"
+       }
+      },
+      {
+       "name": "Olivia Simpson",
+       "seat": "Gatton Academy Senator",
+       "src": {
+        "label": "SGA Bill 17-18-S, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-17-18-s.pdf"
+       }
+      },
+      {
+       "name": "Cassidy Townsend",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 9-18-S, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/bill-9-18-s.pdf"
+       }
+      },
+      {
+       "name": "Morgan Wysong",
+       "seat": "Senator at Large",
+       "src": {
+        "label": "SGA Resolution 10-17-F, 2017-18 session",
+        "url": "https://www.wku.edu/sga/accountability/resolution-10-17-f.pdf"
+       }
+      }
+     ]
     }
    },
    "documents": [
@@ -29260,7 +29490,25 @@
        }
       }
      ],
-     "note": "This was the 17th Senate, called to order each week by Speaker Asha McWilliams. Randall P. Bogard served as SGA's faculty advisor. Minutes for this term were posted by WKU as Word documents rather than PDFs."
+     "note": "This was the 17th Senate, called to order each week by Speaker Asha McWilliams. Randall P. Bogard served as SGA's faculty advisor. Minutes for this term were posted by WKU as Word documents rather than PDFs.",
+     "members": [
+      {
+       "name": "Conner Hounshell",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 1-18-F, 2018-19 session",
+        "url": "https://www.wku.edu/sga/accountability/bill_1-18-f.pdf"
+       }
+      },
+      {
+       "name": "Kara Lowry",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Bill 1-18-F, 2018-19 session",
+        "url": "https://www.wku.edu/sga/accountability/bill_1-18-f.pdf"
+       }
+      }
+     ]
     }
    }
   },
@@ -31482,7 +31730,150 @@
         "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_7_21_f.pdf"
        }
       }
-     ]
+     ],
+     "members": [
+      {
+       "name": "Jesse Banales",
+       "seat": "Gordon Ford College of Business Senator",
+       "src": {
+        "label": "SGA Bill 3-21-F, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/3_21_f.pdf"
+       }
+      },
+      {
+       "name": "Garrett Baum",
+       "seat": "Junior Senator",
+       "src": {
+        "label": "SGA Bill 12-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/12_22_s.pdf"
+       }
+      },
+      {
+       "name": "Rhyan Blazek",
+       "seat": "Non-Traditional Senator",
+       "src": {
+        "label": "SGA Resolution 6-21-F, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_6_21_f.pdf"
+       }
+      },
+      {
+       "name": "Emily Bunning",
+       "seat": "Senior Senator",
+       "src": {
+        "label": "SGA Bill 13-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/13_22_s.pdf"
+       }
+      },
+      {
+       "name": "Abi Canter",
+       "seat": "Senator-at-large",
+       "src": {
+        "label": "SGA Bill 15-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/15_22_s.pdf"
+       }
+      },
+      {
+       "name": "Nia Queen Douglas",
+       "seat": "ISEC Senator",
+       "note": "Later referred to as \"Nia Douglas, Former Senator\" in Bill 18-22-S, March 2022.",
+       "src": {
+        "label": "SGA Resolution 7-21-F, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_7_21_f.pdf"
+       }
+      },
+      {
+       "name": "Addison Falkner",
+       "seat": "Freshman Senator",
+       "src": {
+        "label": "SGA Bill 9-21-F, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/2_22_s.pdf"
+       }
+      },
+      {
+       "name": "Kat Howard",
+       "seat": "Ogden College of Science & Engineering Senator",
+       "src": {
+        "label": "SGA Bill 14-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/14_22_s.pdf"
+       }
+      },
+      {
+       "name": "Sam Kurtz",
+       "seat": "Freshman Senator",
+       "src": {
+        "label": "SGA Bill 4-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/4_22_s.pdf"
+       }
+      },
+      {
+       "name": "Addison McCoun",
+       "seat": "Potter College of Arts & Letters Senator",
+       "note": "Also chaired the Legislative Operations Committee.",
+       "src": {
+        "label": "SGA Bill 9-21-F, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/9_21_f.pdf"
+       }
+      },
+      {
+       "name": "Meghan Pierce",
+       "seat": "Senior Senator",
+       "src": {
+        "label": "SGA Resolution 7-21-F, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_7_21_f.pdf"
+       }
+      },
+      {
+       "name": "Calleigh Powell",
+       "seat": "Senator",
+       "note": "Also chaired the Outreach & Student Experience Committee.",
+       "src": {
+        "label": "SGA Bill 36-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/36_22_s.pdf"
+       }
+      },
+      {
+       "name": "Garrison Reed",
+       "seat": "Senator At Large",
+       "src": {
+        "label": "SGA Bill 14-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/14_22_s.pdf"
+       }
+      },
+      {
+       "name": "Shelby Robertson",
+       "seat": "Senator",
+       "note": "Also chaired the Student Enrollment and Experience Committee.",
+       "src": {
+        "label": "SGA Bill 9-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/9_22_s.pdf"
+       }
+      },
+      {
+       "name": "Preston Romanov",
+       "seat": "Senator At Large",
+       "src": {
+        "label": "SGA Bill 14-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/14_22_s.pdf"
+       }
+      },
+      {
+       "name": "Ari Srivastava",
+       "seat": "Gatton Senator",
+       "src": {
+        "label": "SGA Resolution 6-21-F, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_6_21_f.pdf"
+       }
+      },
+      {
+       "name": "Jenna Wells",
+       "seat": "Freshman Senator",
+       "src": {
+        "label": "SGA Resolution 1-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_1_22_s.pdf"
+       }
+      }
+     ],
+     "note": "Two bills of this session name people as former senators without saying when they held the seat: Kahlil Garmon, \"Former Senator-at-large\" in Bill 1-22-S of January 2022, and Roderick Maul, \"Former Senator\" in Bill 18-22-S of March 2022. Neither is listed below, because the year in which each served is not established."
     }
    }
   },
@@ -32419,6 +32810,138 @@
        "src": {
         "label": "SGA legislation: Resolution to Support selling personal safety items at WKU",
         "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/resolution_1_22_f.pdf"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Jakob Briggs",
+       "seat": "Sophomore Senator",
+       "src": {
+        "label": "SGA Bill 41-23-S, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_41_23_s.pdf"
+       }
+      },
+      {
+       "name": "Adan Canizalez",
+       "seat": "Senator at Large",
+       "src": {
+        "label": "SGA Bill 27-23-S, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_27_23_s.pdf"
+       }
+      },
+      {
+       "name": "Caleb Collins",
+       "seat": "Senator At-Large",
+       "src": {
+        "label": "SGA Bill 13-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_13_22_f.pdf"
+       }
+      },
+      {
+       "name": "Megan Farmer",
+       "seat": "Senator At-Large",
+       "src": {
+        "label": "SGA Bill 26-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_26_22_f.pdf"
+       }
+      },
+      {
+       "name": "Annalise Finch",
+       "seat": "College of Education and Behavioral Sciences Senator",
+       "src": {
+        "label": "SGA Bill 28-23-S, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_28_23_s.pdf"
+       }
+      },
+      {
+       "name": "Salvador Leon Golib",
+       "seat": "International Senator",
+       "src": {
+        "label": "SGA Bill 17-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_17_22_f.pdf"
+       }
+      },
+      {
+       "name": "Tramaine Hawkins",
+       "seat": "ISEC Senator",
+       "src": {
+        "label": "SGA Bill 8-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_8_22_f.pdf"
+       }
+      },
+      {
+       "name": "Cade Holcombe",
+       "seat": "Senator at Large",
+       "src": {
+        "label": "SGA Bill 41-23-S, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_41_23_s.pdf"
+       }
+      },
+      {
+       "name": "Neel Patel",
+       "seat": "Gatton Academy Senator",
+       "src": {
+        "label": "SGA Bill 15-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_15_22_f.pdf"
+       }
+      },
+      {
+       "name": "Griffin Plumb",
+       "seat": "Senator At-Large",
+       "src": {
+        "label": "SGA Bill 14-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_14_22_f.pdf"
+       }
+      },
+      {
+       "name": "Rush Robinson",
+       "seat": "Senator",
+       "note": "Listed as \"Member of Organizational Aid\" alongside the Senator title.",
+       "src": {
+        "label": "SGA Bill 22-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_22_22_f.pdf"
+       }
+      },
+      {
+       "name": "Tate Sine",
+       "seat": "Senator at Large",
+       "src": {
+        "label": "SGA Bill 28-23-S, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_28_23_s.pdf"
+       }
+      },
+      {
+       "name": "Ethan Taylor",
+       "seat": "Sophomore Senator",
+       "src": {
+        "label": "SGA Bill 17-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_17_22_f.pdf"
+       }
+      },
+      {
+       "name": "Danny Vuleta",
+       "seat": "First Generation Senator",
+       "src": {
+        "label": "SGA Bill 27-23-S, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_27_23_s.pdf"
+       }
+      },
+      {
+       "name": "Jenna Wells",
+       "seat": "Gordon Ford College of Business Senator",
+       "src": {
+        "label": "SGA Bill 5-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_17_22_f.pdf"
+       }
+      },
+      {
+       "name": "Maksim Zaepfel",
+       "seat": "Senator At-large",
+       "note": "Bill 16-22-F spells the name \"Zaepfel\" and Bill 50-23-S \"Zaephel\", in the same seat and the same session; which is correct could not be settled from the bills.",
+       "src": {
+        "label": "SGA Bill 16-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_16_22_f.pdf"
        }
       }
      ]
@@ -33425,7 +33948,153 @@
        "chair": "Callison Padgett"
       }
      ],
-     "note": "The 2023-2024 Judicial Council was Ashley Ranger, Anna Kate Hardin, Ellen Henderson, Morgan Gammons and Garrison Reed, nominated by Kurtz from a 'record number' of applicants (Herald, 30 Aug 2023). Justin Goins, chief justice of the outgoing Judicial Council, read the April 2023 election results. Isaac King is confirmed as chief justice by 6 Feb 2024, explaining the Executive Cabinet's censure complaint against León (Herald, 6 Feb 2024), and was still chief justice at the April 2024 town hall; exactly when he succeeded Goins between Aug 2023 and Feb 2024 is not established in available sourcing."
+     "note": "The 2023-2024 Judicial Council was Ashley Ranger, Anna Kate Hardin, Ellen Henderson, Morgan Gammons and Garrison Reed, nominated by Kurtz from a 'record number' of applicants (Herald, 30 Aug 2023). Justin Goins, chief justice of the outgoing Judicial Council, read the April 2023 election results. Isaac King is confirmed as chief justice by 6 Feb 2024, explaining the Executive Cabinet's censure complaint against León (Herald, 6 Feb 2024), and was still chief justice at the April 2024 town hall; exactly when he succeeded Goins between Aug 2023 and Feb 2024 is not established in available sourcing.",
+     "members": [
+      {
+       "name": "Geoffrey Aberle",
+       "seat": "Transfer/Non-traditional Senator",
+       "src": {
+        "label": "SGA Resolution 1-23-F, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/res_1_23_f.pdf"
+       }
+      },
+      {
+       "name": "Kaison Barton",
+       "seat": "Senior Senator",
+       "src": {
+        "label": "SGA Bill 4-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_4_24_s.pdf"
+       }
+      },
+      {
+       "name": "Samantha Bodemann",
+       "seat": "Senior Senator",
+       "src": {
+        "label": "SGA Bill 19-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_19_24_s.pdf"
+       }
+      },
+      {
+       "name": "Ryan Dilts",
+       "seat": "Senator At Large",
+       "src": {
+        "label": "SGA Bill 15-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_15_24_s.pdf"
+       }
+      },
+      {
+       "name": "Kayla Distler",
+       "seat": "CEBS Senator",
+       "src": {
+        "label": "SGA Bill 33-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_33_23_s.pdf"
+       }
+      },
+      {
+       "name": "Hannah Evans",
+       "seat": "Sophomore Senator",
+       "src": {
+        "label": "SGA Bill 19-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_19_24_s.pdf"
+       }
+      },
+      {
+       "name": "Megan Farmer",
+       "seat": "Senator At Large",
+       "src": {
+        "label": "SGA Bill 8-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_8_24_s.pdf"
+       }
+      },
+      {
+       "name": "Connor Ferguson",
+       "seat": "Gordon Ford College of Business Senator",
+       "src": {
+        "label": "SGA Bill 11-23-F, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_11_23_f.pdf"
+       }
+      },
+      {
+       "name": "Elizabeth Gannon",
+       "seat": "Graduate Senator",
+       "src": {
+        "label": "SGA Bill 15-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_15_24_s.pdf"
+       }
+      },
+      {
+       "name": "Gabriel Jerdon",
+       "seat": "Sophomore Senator",
+       "src": {
+        "label": "SGA Bill 34-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_34_24_s.pdf"
+       }
+      },
+      {
+       "name": "Savanna Kurtz",
+       "seat": "Freshman Senator",
+       "src": {
+        "label": "SGA Bill 10-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_10_24_s.pdf"
+       }
+      },
+      {
+       "name": "Jaden Marshall",
+       "seat": "Senator At Large",
+       "src": {
+        "label": "SGA Bill 4-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_4_24_s.pdf"
+       }
+      },
+      {
+       "name": "Thomas Pabin",
+       "seat": "Senator At Large",
+       "src": {
+        "label": "SGA Bill 18-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_18_24_s.pdf"
+       }
+      },
+      {
+       "name": "Callison Padgett",
+       "seat": "Sophomore Senator",
+       "src": {
+        "label": "SGA Resolution 1-23-F, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/res_1_23_f.pdf"
+       }
+      },
+      {
+       "name": "Madison Payne",
+       "seat": "Ogden College of Science & Engineering Senator",
+       "src": {
+        "label": "SGA Bill 15-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_15_24_s.pdf"
+       }
+      },
+      {
+       "name": "Chloe Ralston",
+       "seat": "Freshman Senator",
+       "src": {
+        "label": "SGA Bill 10-24-S, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_10_24_s.pdf"
+       }
+      },
+      {
+       "name": "Guan Zhou Sim",
+       "seat": "International Student Senator",
+       "src": {
+        "label": "SGA Bill 4-23-F, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_4_23_f.pdf"
+       }
+      },
+      {
+       "name": "Ethan Taylor",
+       "seat": "Junior Senator",
+       "src": {
+        "label": "SGA Bill 11-23-F, 2023-24 session",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_11_23_f.pdf"
+       }
+      }
+     ]
     }
    },
    "status": "researched"
@@ -35366,7 +36035,177 @@
        }
       }
      ],
-     "note": "13 senators-at-large were elected alongside class, transfer/non-traditional, first-generation and college-specific seats in the April 2025 general election; three seniors elected as senior senators were Sophia Bryant, Maggie Yelton and Malachi Humble."
+     "note": "13 senators-at-large were elected alongside class, transfer/non-traditional, first-generation and college-specific seats in the April 2025 general election; three seniors elected as senior senators were Sophia Bryant, Maggie Yelton and Malachi Humble.",
+     "members": [
+      {
+       "name": "Andrew Adegoju",
+       "seat": "Graduate Senator",
+       "src": {
+        "label": "SGA Resolution 2-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_resolution/resolution_2_26_s.pdf"
+       }
+      },
+      {
+       "name": "Eli Carter",
+       "seat": "Junior Senator",
+       "src": {
+        "label": "SGA Resolution 2-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_resolution/resolution_2_26_s.pdf"
+       }
+      },
+      {
+       "name": "William Derryberry",
+       "seat": "Sophomore Senator",
+       "src": {
+        "label": "SGA Resolution 4-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_resolution/resolution_4_25_f.pdf"
+       }
+      },
+      {
+       "name": "Grace Ekrikpo",
+       "seat": "International Student Senator",
+       "src": {
+        "label": "SGA Bill 3-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_3_26_s.pdf"
+       }
+      },
+      {
+       "name": "Miles Harvey",
+       "seat": "Senator At-Large",
+       "src": {
+        "label": "SGA Bill 11-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_11_25_f.pdf"
+       }
+      },
+      {
+       "name": "Ben Lee",
+       "seat": "Gatton Senator",
+       "src": {
+        "label": "SGA Bill 19-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_19_25_f.pdf"
+       }
+      },
+      {
+       "name": "Ciin Lun",
+       "seat": "Mahurin Honors College Senator",
+       "src": {
+        "label": "SGA Bill 16-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_16_25_f.pdf"
+       }
+      },
+      {
+       "name": "Jaden Marshall",
+       "seat": "ISEC Senator",
+       "src": {
+        "label": "SGA Bill 17-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_17_25_f.pdf"
+       }
+      },
+      {
+       "name": "Zoe Martin",
+       "seat": "Senator At-Large",
+       "src": {
+        "label": "SGA Bill 11-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_11_25_f.pdf"
+       }
+      },
+      {
+       "name": "Julianna Mitchell",
+       "seat": "Senator At-Large",
+       "src": {
+        "label": "SGA Bill 19-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_19_26_s.pdf"
+       }
+      },
+      {
+       "name": "Vanessa Ocampo",
+       "seat": "Senior Senator",
+       "src": {
+        "label": "SGA Bill 1-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_1_26_s.pdf"
+       }
+      },
+      {
+       "name": "Maggie Phelps",
+       "seat": "PCAL Senator",
+       "src": {
+        "label": "SGA Bill 23-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_23_25_f.pdf"
+       }
+      },
+      {
+       "name": "Molly Ricke",
+       "seat": "Sophomore Senator",
+       "src": {
+        "label": "SGA Bill 19-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_19_26_s.pdf"
+       }
+      },
+      {
+       "name": "Nolan Rongey",
+       "seat": "Senator At-Large",
+       "src": {
+        "label": "SGA Bill 16-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_16_25_f.pdf"
+       }
+      },
+      {
+       "name": "Jackson Smith",
+       "seat": "Freshman Senator",
+       "src": {
+        "label": "SGA Bill 19-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_19_25_f.pdf"
+       }
+      },
+      {
+       "name": "Carter Smith",
+       "seat": "Freshman Senator",
+       "src": {
+        "label": "SGA Bill 24-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_24_26_s.pdf"
+       }
+      },
+      {
+       "name": "Jacob Thomas",
+       "seat": "Senior Senator",
+       "src": {
+        "label": "SGA Bill 14-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_14_26_s.pdf"
+       }
+      },
+      {
+       "name": "Evan Tuck",
+       "seat": "Senator-at-Large",
+       "src": {
+        "label": "SGA Resolution 2-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_resolution/resolution_2_26_s.pdf"
+       }
+      },
+      {
+       "name": "Miles VanRude",
+       "seat": "Senator at Large",
+       "src": {
+        "label": "SGA Bill 1-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_1_26_s.pdf"
+       }
+      },
+      {
+       "name": "Bradley Wagoner",
+       "seat": "CHHS Senator",
+       "src": {
+        "label": "SGA Bill 22-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_22_25_f.pdf"
+       }
+      },
+      {
+       "name": "Caroline Yates",
+       "seat": "CEBS Senator",
+       "src": {
+        "label": "SGA Bill 17-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_17_25_f.pdf"
+       }
+      }
+     ]
     }
    },
    "status": "researched"
