@@ -644,7 +644,7 @@ error that killed the "39 missing presidents" batch. Where a senator also chaire
 a committee the seat was recorded and the chair went in the note, which is the
 right way round.
 
-Two cuts. **Kahlil Garmon and Roderick Maul** came off the 1921-22 roll — the
+Two cuts. **Kahlil Garmon and Roderick Maul** came off the 2021-22 roll — the
 only evidence for either is a bill of the 2021-22 session calling them a *former*
 senator, in January and March 2022. A sweep of all 390 mirrored PDFs found
 nothing else for either name. "Former senator in January 2022" establishes that a
