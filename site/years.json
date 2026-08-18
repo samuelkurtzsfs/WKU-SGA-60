@@ -8541,7 +8541,7 @@
       {
        "office": "Parliamentarian",
        "name": "Jeff Morris",
-       "note": "Appointed by President Fuller with the consent of Congress, 7 October 1980; moved floor motions the same meeting and reported on the Big Red costume under Old Business, 11 November 1980. Succeeded by Kevin Strader by 29 January 1981.",
+       "note": "Appointed by President Fuller with the consent of Congress, 7 October 1980; moved floor motions the same meeting and reported on the Big Red costume under Old Business, 11 November 1980. Succeeded by Kevin Strader by 20 January 1981.",
        "src": {
         "label": "ASG Minutes, 7 Oct 1980",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
@@ -8550,9 +8550,9 @@
       {
        "office": "Parliamentarian",
        "name": "Kevin Strader",
-       "note": "Appointed by President Fuller with the consent of Congress, 29 January 1981, succeeding Jeff Morris; moved to dispense with the reading of the minutes the same meeting, and moved adjournment on 17 February and 31 March 1981.",
+       "note": "Appointed by President Fuller with the consent of Congress, 20 January 1981, succeeding Jeff Morris; moved to dispense with the reading of the minutes the same meeting, and moved adjournment on 17 February and 31 March 1981.",
        "src": {
-        "label": "ASG Minutes, 29 Jan 1981",
+        "label": "ASG Minutes, 20 Jan 1981",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/272"
        }
       }
@@ -8585,8 +8585,8 @@
       },
       {
        "name": "International Students",
-       "chair": "Osama Shariff",
-       "note": "Chaired continuously from 2 September 1980 through 17 February 1981, organizing International Week; spelled Shariff and Sharif across different minutes."
+       "chair": "Osama Sharif",
+       "note": "Chaired continuously from 2 September 1980 through 17 February 1981, organizing International Week; spelled Sharif and Shariff across different minutes, Sharif in the 1981 Talisman."
       },
       {
        "name": "Minority Affairs",
@@ -8622,7 +8622,7 @@
       {
        "name": "M. A. Baker",
        "seat": "Congress member; Representative-at-Large",
-       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 17 Feb 1981 (name reconstructed from a garbled scan). Separately served as a Judicial Council alternate from 7 Oct 1980, a distinct, non-Congress body not counted as evidence of Congress membership by itself.",
+       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 17 Feb 1981. The 1981 Talisman independently names M. A. Baker, a senior from Cincinnati, Ohio and former chairman of the ASG housing committee, as the author of the resolution to abolish dormitory room inspections. Separately served as a Judicial Council alternate from 7 Oct 1980, a distinct, non-Congress body not counted as evidence of Congress membership by itself.",
        "src": {
         "label": "ASG Minutes, 17 Feb 1981",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
@@ -8632,15 +8632,6 @@
        "name": "Greg Berryman",
        "seat": "Congress member",
        "note": "Named among the Congress members absent at roll call, 11 Nov 1980, and again among the Congress members recorded absent, 17 Feb 1981.",
-       "src": {
-        "label": "ASG Minutes, 11 Nov 1980",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
-       }
-      },
-      {
-       "name": "Bruce Berton",
-       "seat": "Congress member; On-Campus Representative",
-       "note": "Appointed On-Campus Representative by President Fuller with the consent of Congress, 11 Nov 1980. Surname is clear in the scan; the given name 'Bruce' is a reconstruction of a badly garbled scan ('Brune') and should be checked against the original if the scan quality allows.",
        "src": {
         "label": "ASG Minutes, 11 Nov 1980",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
@@ -8658,7 +8649,7 @@
       {
        "name": "Shawn Bryant",
        "seat": "Congress member; chairs Housing Committee",
-       "note": "Moved a floor motion, seconded and passed (7 Oct 1980 minutes); reported for the Housing Committee through 29 Jan 1981; nominated for the Dero Downing Award, 31 Mar 1981.",
+       "note": "Moved a floor motion, seconded and passed (7 Oct 1980 minutes); reported for the Housing Committee through 20 Jan 1981; nominated for the Dero Downing Award, 31 Mar 1981.",
        "src": {
         "label": "ASG Minutes, 7 Oct 1980",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
@@ -8712,7 +8703,7 @@
       {
        "name": "Perry Hines",
        "seat": "Congress member; Representative-at-Large; chairs Minority Affairs Committee",
-       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 11 Nov 1980; chairs the Minority Affairs committee from November. Ran for Freshman Class President and lost, 243 votes to John Holland's 114, 5 Nov 1980.",
+       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 11 Nov 1980; chairs the Minority Affairs committee from November. Also stood in the Freshman Class President election of 5 Nov 1980 and lost to Jon Holland; the vote figures were read off the scan two ways that contradict each other, so no tally is given here.",
        "src": {
         "label": "ASG Minutes, 11 Nov 1980",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
@@ -8730,7 +8721,7 @@
       {
        "name": "Jon Holland",
        "seat": "Congress member",
-       "note": "Named among the Congress members recorded absent, 17 Feb 1981 - independent of, though probably related to, his election as Freshman Class President, 243 votes to Perry Hines's 114, 5 Nov 1980.",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981. Separately elected Freshman Class President on 5 Nov 1980, defeating Perry Hines; the vote figures were read off the scan two ways that contradict each other, so no tally is given here. The given name is rendered both Jon and John across the minutes read.",
        "src": {
         "label": "ASG Minutes, 17 Feb 1981",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
@@ -8743,15 +8734,6 @@
        "src": {
         "label": "ASG Minutes, 17 Feb 1981",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
-       }
-      },
-      {
-       "name": "Alan Jackson",
-       "seat": "Minority Affairs Committee (named chairman)",
-       "note": "Named chairman of the Minority Affairs committee at the year's first meeting, 2 Sept 1980; does not appear again in the minutes read. Congress membership is documented as of that appointment; not corroborated further.",
-       "src": {
-        "label": "ASG Minutes, 2 Sep 1980",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
        }
       },
       {
@@ -8782,15 +8764,6 @@
        }
       },
       {
-       "name": "Jim McCord",
-       "seat": "Congress member",
-       "note": "Named among the Congress members recorded absent, 17 Feb 1981 (name reconstructed from a garbled scan).",
-       "src": {
-        "label": "ASG Minutes, 17 Feb 1981",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
-       }
-      },
-      {
        "name": "Jim Payne",
        "seat": "Congress member; Off-Campus Representative",
        "note": "Appointed Off-Campus Representative by President Fuller with the consent of Congress, 11 Nov 1980; named among the Congress members recorded absent, 17 Feb 1981.",
@@ -8818,18 +8791,9 @@
        }
       },
       {
-       "name": "Osama Shariff",
+       "name": "Osama Sharif",
        "seat": "Congress member; chairs International Students Committee",
-       "note": "Chairs the International Students committee continuously from 2 Sept 1980 through 17 Feb 1981, organizing International Week; spelled Shariff and Sharif across different minutes. Nominated for Outstanding Congress Member, 31 Mar 1981.",
-       "src": {
-        "label": "ASG Minutes, 2 Sep 1980",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
-       }
-      },
-      {
-       "name": "Debbie Thomas",
-       "seat": "Complaint and Suggestion Committee (named chairwoman)",
-       "note": "Named chairwoman of the Complaint and Suggestion committee at the year's first meeting, 2 Sept 1980; does not appear again in the minutes read (Margaret Ragan is reporting for the same committee by the next meeting). Congress membership is documented as of that appointment; not corroborated further.",
+       "note": "Chairs the International Students committee continuously from 2 Sept 1980 through 17 Feb 1981, organizing International Week; nominated for Outstanding Congress Member, 31 Mar 1981. The minutes spell the surname both Sharif and Shariff; the 1981 Talisman prints Sharif, and names him a junior from Jerusalem, Palestine, and international students committee chairman.",
        "src": {
         "label": "ASG Minutes, 2 Sep 1980",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
