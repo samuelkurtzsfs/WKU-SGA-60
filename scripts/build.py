@@ -6543,7 +6543,7 @@ def officer_index(ys):
                     p["spellings"].add(variant)
             p["terms"].append({"year": y["id"], "office": o["office"],
                                "note": o.get("note"), "src": o.get("src"),
-                               "senate": is_sen})
+                               "profile": o.get("profile"), "senate": is_sen})
     # Presidents and student regents get a page too. Without this a president who
     # never held a cabinet post has no profile at all, and their record stays
     # scattered across year pages with nothing gathering it.
@@ -6695,11 +6695,17 @@ def render_officer(person, ys, leg=()):
         cite = ""
         if t.get("src"):
             cite = f'<p class="srcline">{src_link(t["src"], "")}</p>'
-        note = f'<p>{h(t["note"])}</p>' if t.get("note") else ""
+        # profile is the fuller successor to note; showing both would repeat the
+        # same facts twice, so profile wins when both are present.
+        prof = ""
+        if t.get("profile"):
+            paras = t["profile"] if isinstance(t["profile"], list) else [t["profile"]]
+            prof = f'<div class="profile">{"".join(f"<p>{h(p)}</p>" for p in paras)}</div>'
+        note = f'<p>{h(t["note"])}</p>' if (t.get("note") and not t.get("profile")) else ""
         rows.append(
             f'<div class="termline"><div class="yr">'
             f'<a href="../y/{h(t["year"])}.html">{h(t["year"])}</a></div>'
-            f'<div><b>{h(t["office"])}</b>{note}{cite}</div></div>')
+            f'<div><b>{h(t["office"])}</b>{note}{prof}{cite}</div></div>')
 
     ment = officer_mentions(person, ys)
     # Entries that are about this person come first: named in the headline, then
