@@ -624,3 +624,115 @@ documents, 390 legislation files, 73 leader portraits and 17 year photographs.
 main's committed `site/` matches a fresh build. `check_duplicates.py` reports
 seven pairs; all seven are genuinely separate events - staged actions weeks apart,
 or same-day bills - and none were introduced by this work.
+
+---
+
+# Editor pass, 18 August 2026, evening
+
+Four research pull requests were open. All four were verified and all four are
+merged. Every merge published to the live site.
+
+## What was reviewed, and what was cut
+
+**#26, the senate rolls.** 105 rank-and-file senators for seven years that had
+none, taken from the seats printed beside the names in SGA's own bills. Because
+every cited bill is already mirrored in `data/legislation/`, this was checkable
+in full rather than by sample: all 105 names appear verbatim in the PDF cited
+for them, and all 105 carry the word Senator immediately beside the name in the
+AUTHORS or CONTACTS block. Not one was inferred from authorship, which is the
+error that killed the "39 missing presidents" batch. Where a senator also chaired
+a committee the seat was recorded and the chair went in the note, which is the
+right way round.
+
+Two cuts. **Kahlil Garmon and Roderick Maul** came off the 1921-22 roll — the
+only evidence for either is a bill of the 2021-22 session calling them a *former*
+senator, in January and March 2022. A sweep of all 390 mirrored PDFs found
+nothing else for either name. "Former senator in January 2022" establishes that a
+person served, not when, and it could as easily mean 2020-21. Both are now named
+in the Senate note for 2021-22 with the bills and the reason neither is on the
+roll. **Maksim Zaepfel and Maksim Zaephel** were merged into one entry: the two
+spellings had been kept as two senators rather than guess between them, which was
+the right instinct and the wrong result, since one person then appeared twice in
+one year's roll. One entry now, under the earlier bill's spelling, recording that
+the session's own bills disagree and do not settle it. 103 senators merged.
+
+**#27, ten founding-era profiles**, 1966-67 to 1970-71. The 3 May 1968 election
+memo is mirrored locally, so the vote counts were checkable directly: Becky
+Cooper 1,551 to Mary Miller's 1,122, Tonii Rizzo 1,896 to John Combs's 803, and
+turnout of 2,894, about 34 per cent, are all printed in it. Ron Beck did sign it
+as vice president. Every Herald claim matched its index line, including the two
+8 May 1969 items on the outgoing administration, both in that issue.
+
+Three trims. **Terry Gilpin's vote count** had been reconstructed by reading down
+a column: the memo does print 1,516 and 1,206 for the vice-presidential race, but
+in a numeric column set apart from the names, and nothing in it says which is
+whose. The profile now says what the memo shows, and that Gilpin took the office.
+**A sentence in David Porter's profile** was cut whole — it rested on a headline
+the profile itself said had never been read, and placed it earlier in the term
+than the issue it came from. **Doug Alexander's election date** and its sequence
+with the presidential race were cut: no cited source gives a polling day, and
+Lyne's unopposed win was reported a fortnight before, not a week.
+
+**#28, six Talisman photographs** for years that had none. Each caption was
+checked against the yearbook's own words, pulled from the volume's OCR layer on
+archive.org. The 1980-81 group portrait was the one I expected to fail, because
+the crop carries bleed-in text about Palestine and Zacharias that reads like a
+different article; it is not — the 1981 volume runs the student-opinion-poll
+story straight into the group photo's name key, and both officers our caption
+names are in its back row. For Nancy Wilk I fetched page 87 itself rather than
+trust OCR, because a portrait crop carries no caption of its own and that spread
+labels six portraits: the bottom-left portrait is captioned Nancy Wilk and is
+pixel-for-pixel the committed crop.
+
+Two caption corrections. **"in Downing University Center"** came out of the
+1978-79 caption — the yearbook gives a date and a president and no room at all.
+And the 1976-77 caption had 379 as the turnout of "the fall 1976 ASG election";
+the yearbook is narrower, those 379 votes decided the freshman class president
+and vice president, and for an organisation whose turnout figures are part of its
+history that is the wrong impression to leave.
+
+**#29, sixteen citations resting on homepage captures.** All eight new permalinks
+verified against the cited issue's full headline list: right date, right volume
+and issue, headline present, eight for eight. The date correction from 3 to 2
+March 2006 is right. All three of the verifier's own trims were correct, and one
+was the advance-notice trap by name — Gov. Beshear's address to the 2010 Rally
+for Higher Education had been written up as something that happened, out of a
+preview published a week before it.
+
+Two prose fixes, neither a sourcing problem. Four events had picked up a
+parenthetical mid-narrative explaining that the citation was a Wayback front page
+rather than the article. The transparency is right and every word of its
+substance is kept, but it belongs on the source label, where the reader is
+already looking at the link — the same pattern this pass had already used for the
+leader records. And the 40th-anniversary entry was describing its own drafting,
+telling readers what "an earlier draft of this entry" had claimed; it now says
+what the surviving headline shows and what it does not.
+
+## Left open for the owner to decide
+
+The photograph routine reached a real wall and stopped at it correctly. There is
+**no rendering path for an officer portrait at all**: `apply_photo_overlay()`
+only matches a `photos.json` leaders entry to a name in a year's `leaders` array,
+and `check_photos()` refuses an entry for anyone outside it, so a vice president
+or a speaker cannot carry a portrait however well captioned. Two good candidates
+(Cindy Kirkpatrick and Thomas LaCivita, 1974-75) are filed under the `years`
+schema as a workaround. Fixing it means either giving officer records their own
+identity for the overlay to match, or a second overlay list keyed another way.
+That is a schema decision, not a per-run workaround, and it is left here rather
+than settled inside a photograph run.
+
+## Stale branches
+
+Nothing to do. PRs #6, #7 and #8 were already closed on 18 August at 04:57,
+before this run. The six 4-August `research-*` branches remain orphan snapshots
+with no merge base against main and are left as they are.
+
+## Where the record stands after this pass
+
+61 years, 2,015 dated events, 60 people who have been president, 73 leader
+records each with a profile, 438 executive officer records of which 76 carry a
+profile, 614 senate officers, **238 senate members** (up from 136), 390
+legislation files, 73 leader portraits and 23 year photographs. `build.py`,
+`check_data.py` and `check_contrib.py` all exit clean on main.
+`check_duplicates.py` reports the same seven pairs it reported before this
+evening; all seven are genuinely separate events, and none came from this work.
