@@ -215,9 +215,28 @@ That last line is the argument for never skipping the checker.
    from a run whose checkers died. **Do not merge as-is** — the researcher's own
    notes disown several. Re-run verification, then `merge_senators.py`. Thousands
    of members are still unrecorded; the minutes are the roll.
-2. **Three branch histories unverified:** L9 (2010s Senate), J1 (1970s judiciary),
-   C1 (constitutions 1966–91), in `.research/branches-unverified.json`. Written,
-   never checked. 15 of 18 are published.
+2. ~~**Three branch histories unverified.**~~ **Done, 18 Aug 2026.** L9 (2010s
+   Senate), J1 (1970s judiciary) and C1 (constitutions 1966–91) were checked —
+   each against its cited sources by an independent checker, then against a
+   *second*, adversarial re-checker, since the first-pass agents hit an
+   environment limit worth recording: `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+   PDF downloads and `web.archive.org` are both hard-blocked from this session
+   (confirmed by two agents working alone, not a burst-traffic 403 — a future
+   run should expect the same and plan to work from digitalcommons *landing
+   pages* — title, date, one-line abstract, or a Herald issue's table of
+   contents — plus `archive.org`, which is open and unrestricted, rather than
+   count on reaching PDF or Wayback text). All three needed correction: wrong
+   constitution section numbers in L9 (traced and fixed against the redline in
+   `data/legislation/2012-13/r5-13-s.pdf`), a miscited Herald issue and an
+   unconfirmable vote tally in J1 (softened), and in C1 a wrong "correction" the
+   first pass itself introduced (reverted), a citation covering two different
+   Herald issues (split), and several claims that turned out to rest only on a
+   citation's title, never on text anyone could actually read (trimmed or
+   flagged rather than published as confirmed). All three are now in
+   `.research/branches-checked.json` and on `branches.html`; the incidental
+   finding that Kelly Thompson's 1 April 1966 letter names Reed Morgan as the
+   constitution committee's chairman is folded into item 6 below.
+   `.research/branches-unverified.json` is now empty.
 3. **235 dated moments** from the branch research, unmerged, in
    `.research/branches-moments.json`.
 4. **Three years still have no cabinet:** 1979-80, 2001-02, 2003-04.
@@ -225,7 +244,14 @@ That last line is the argument for never skipping the checker.
 5. **Four people have no portrait:** Nick Todd, Katie Dawson, Jeanne Johnson,
    Reagan Gilley.
 6. **Two names unconfirmed:** Reed Morgan (1968), and whether Amanda Coates and
-   the plaque's Amanda Lich are one person.
+   the plaque's Amanda Lich are one person. On Reed Morgan: the C1 branch check
+   (item 2, above) found that Kelly Thompson's 1 April 1966 approval letter
+   (`digitalcommons.wku.edu/dlsc_ua_records/527`) is addressed to "committee
+   chair Reed Morgan and vice chair John Lovett" — direct documentary support,
+   independent of the sources already behind this project's settled reading in
+   section 7, that Morgan's plaque credit honours the constitution committee's
+   chairmanship rather than the presidency. This does not by itself resolve
+   Amanda Coates/Lich, which still needs its own pass.
 7. **~20 citations** rest on homepage or tag-index captures rather than article
    permalinks.
 8. **Pre-2011 legislation** on TopSCHOLAR (~444 docs) never harvested.

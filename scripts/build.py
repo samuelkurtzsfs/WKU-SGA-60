@@ -6417,17 +6417,18 @@ def render_branches(ys):
 <div class="wrap"><div class="body">
 {"".join(secs)}
 
-<div class="gapnote">
+{f'''<div class="gapnote">
  <h3>What is missing here, and why</h3>
- <p>{held} further accounts have been written and are not on this page. Every one of the
- {len(blocks)} published here was read back against its sources by a second reader, and every
- one came back needing correction before it could be published. The {held} held back were
- written the same way but their checks did not run, and an unchecked account of this kind is
- not worth reading. They cover the founding Congress of 1966 to 1970, the late eighties, the
- 2010s Senate, four periods of the judiciary and the constitutions themselves.</p>
- <p>They will appear when they have been checked. Nothing is being hidden: the work exists in
- the project's research files, it simply has not earned a place on the site yet.</p>
-</div>
+ <p>{held} further account{"s" if held != 1 else ""} {"have" if held != 1 else "has"} been written
+ and {"are" if held != 1 else "is"} not on this page. Every one of the {len(blocks)} published
+ here was read back against its sources by a second reader, and every one came back needing
+ correction before it could be published. The {held} held back {"were" if held != 1 else "was"}
+ written the same way but {"their checks" if held != 1 else "its check"} did not run, and an
+ unchecked account of this kind is not worth reading.</p>
+ <p>{"They" if held != 1 else "It"} will appear when {"they have" if held != 1 else "it has"} been
+ checked. Nothing is being hidden: the work exists in the project's research files, it simply has
+ not earned a place on the site yet.</p>
+</div>''' if held else ''}
 
 <div class="prose" style="margin-top:34px">
 <p>The people who filled these offices are recorded year by year on the
