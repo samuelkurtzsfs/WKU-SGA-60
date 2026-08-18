@@ -18065,7 +18065,7 @@
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "The plaque reads \"Amanda Lich\". No contemporaneous source uses that surname. The Herald has Amanda Coates winning the presidency in a recount on 15 April 1999, covers her as president through the autumn, and ran her year-end reflection as president on 25 April 2000; Resolution 00-2-S is authored by Amanda J. Coates. This site follows the sources and names her Coates. The two names are taken to be one person because the office and the year match exactly, which is the same pattern as Janet \"Nicki\" Seay and Nicki Taylor in 2014-15; no source found states the connection outright.",
+     "note": "The plaque reads \"Amanda Lich\". No source from her SGA year uses that surname; the Herald has her winning the presidency in a recount on 15 April 1999, covers her as president through the autumn, and ran her year-end reflection on 25 April 2000, all as Amanda Coates. The two names are now confirmed as one person: the Kentucky Council on Postsecondary Education's own minutes of 30 July 2001, recording Governor Patton's appointment of a successor to the council's statewide student seat, name the outgoing member \"Amanda Coates Lich.\" This site does not otherwise report what became of her after her SGA service, in keeping with its rule against publishing a living person's post-office life absent a source tying it directly to that service or a notable public career.",
      "sources": [
       {
        "label": "WKU SGA, Presidents 1966-Present (archived 2001)",
@@ -18092,16 +18092,8 @@
        "url": "https://digitalcommons.wku.edu/context/sga/article/2214/viewcontent/sga_bill_99_10_f.pdf"
       },
       {
-       "label": "Herald, 25 Apr 2000 - Amanda Coates Reflects on Year as President",
-       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
-      },
-      {
-       "label": "WKU SGA site, Resolution 00-2-S (archived 2000)",
-       "url": "https://web.archive.org/web/*/wku.edu/Dept/Org/Student/SGA/*"
-      },
-      {
-       "label": "WKU SGA, Former SGA Presidents roster, archived 24 Sep 2001",
-       "url": "http://web.archive.org/web/20010924113823/http://www.wku.edu/Dept/Org/Student/SGA/formersgapres.htm"
+       "label": "Kentucky Council on Postsecondary Education, minutes of 30 July 2001",
+       "url": "http://cpe.ky.gov/aboutus/records/cpe_meetings/minutes-2001-07-30.pdf"
       }
      ],
      "profile": [
@@ -18111,7 +18103,8 @@
       "At the end of her term the SGA website opened with the words \"What SGA has done for you,\" showcasing three things: the faculty evaluations project, the fight over the Vice President of Student Affairs position and the Provide-A-Ride service. It is as close to a self-written record of her administration's priorities as survives.",
       "As her term closed, the Herald ran an exit interview, \"Amanda Coates Reflects on Year as President,\" in its April 25, 2000 issue. The election to succeed her, held in late March 2000, was contested between Cassie Martin and Duan Wright; Martin won, and by the following issue the Herald was asking the incoming president to \"stand up on tough issues\" while confirming that the faculty evaluations Coates had championed would be conducted and published starting that fall.",
       "The Herald introduced the incoming 1999-2000 president on April 22, 1999 under the headline 'New Student Government Association Leader Workaholic.' The paper's index records the new leader's name as Amanda Coates, and she took office in the aftermath of a spring election that SGA's Judicial Council had overturned two days earlier.",
-      "Her congress spent the fall of 1999 building institutions: it created an Information Technology Director and website guidelines, established a senior awards banquet and hall of distinguished seniors, launched the toll-free Topline activity line, and publicly opposed an administrative move in Student Affairs while asking that Vice President Jerry Wilder be retained."
+      "Her congress spent the fall of 1999 building institutions: it created an Information Technology Director and website guidelines, established a senior awards banquet and hall of distinguished seniors, launched the toll-free Topline activity line, and publicly opposed an administrative move in Student Affairs while asking that Vice President Jerry Wilder be retained.",
+      "Her public service continued past her SGA year at the state level: Kentucky's Council on Postsecondary Education has a statewide student member, and the council's minutes of 30 July 2001 record Governor Paul Patton appointing Christopher J. Pace to replace the outgoing student member, named there as \"Amanda Coates Lich.\" That is the only public record found connecting the Coates who led WKU's SGA in 1999-2000 to the surname the SGA Chambers plaque uses for the same year."
      ],
      "also_regent": true
     }
