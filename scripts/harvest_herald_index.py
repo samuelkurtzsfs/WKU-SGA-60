@@ -18,13 +18,24 @@ spot for research: a president named in a headline that does not contain "SGA",
 "ASG" or "student government" cannot be found in it, and several of this
 archive's hardest questions turned on exactly that. Harvest the full index when
 you need to search the Herald rather than render it.
+
+    python3 scripts/harvest_herald_index.py --all --refresh
+
+reparses items already on disk instead of skipping them. Needed after any change
+to how a record is read: without it the resume logic preserves an old parse
+forever, which is how the full index sat truncated at 300 characters a line
+through several reruns that all printed "done".
 """
-import json, re, sys, time, urllib.request
+import html, json, re, sys, time, urllib.request
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
 KEEP_ALL = "--all" in sys.argv
+# Known URLs are skipped on a rerun, which makes the file resumable but also
+# makes it unrepairable: a parsing bug already written to disk survives every
+# rerun forever. --refresh reparses items already held instead of skipping them.
+REFRESH = "--refresh" in sys.argv
 OUT = ROOT / "data" / ("herald-index-full.json" if KEEP_ALL else "herald-index.json")
 BASE = "https://digitalcommons.wku.edu/do/oai/"
 NS = {"oai": "http://www.openarchives.org/OAI/2.0/",
@@ -33,6 +44,15 @@ KW = re.compile(r"\b(sga|asg|associated student|student government|"
                 r"student body president|student regent)\b", re.I)
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+
+
+def clean(text):
+    """One article headline, tags and entities gone, whitespace collapsed.
+
+    Entities matter: a name stored as &#8217; or &amp; will not match a plain
+    grep, which is the one thing this file exists to serve.
+    """
+    return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", text)).split())
 
 
 def fetch(url):
@@ -65,7 +85,7 @@ def main():
             pdf = next((el.text.strip() for el in rec.iter()
                         if el.tag.endswith("fulltext-url") and el.text), "")
             pdf = pdf.replace("&amp;", "&").replace("&unstamped=1", "")
-            if not item_url or item_url in entries:
+            if not item_url or (item_url in entries and not REFRESH):
                 continue
             title = next((el.text for el in rec.iter() if el.tag.endswith("title") and el.text), "")
             desc = " \n ".join(el.text for el in rec.iter()
@@ -83,8 +103,22 @@ def main():
             if not KEEP_ALL and not (KW.search(title) or KW.search(desc)):
                 continue
             lines = [ln.strip() for ln in re.split(r"[\n\r]+|(?<=[.?!])\s{2,}", desc)]
+            # A Herald issue's abstract is a single <ul> holding thirty or more
+            # <li> headlines, so it arrives as ONE line. Cutting that line at
+            # 300 characters kept the first two or three headlines and threw
+            # the rest away: a third of the full index was truncated mid-word,
+            # and a grep that missed a real story read as proof it never ran.
+            # Split the list items out so every headline is its own line, and
+            # keep them whole.
             if KEEP_ALL:
-                hits = [ln[:300] for ln in lines if ln]
+                hits = []
+                for ln in lines:
+                    items = re.findall(r"<li>(.*?)</li>", ln, re.S)
+                    if items:
+                        hits.extend(clean(it) for it in items)
+                    else:
+                        hits.append(clean(ln))
+                hits = [ln for ln in hits if ln]
             else:
                 hits = [ln[:300] for ln in lines if ln and KW.search(ln)]
                 if not hits and KW.search(title):
