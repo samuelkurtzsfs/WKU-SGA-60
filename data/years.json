@@ -7978,9 +7978,345 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5627",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6633&context=dlsc_ua_records"
       }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Mark Wilson",
+      "note": "Named 'Administrative Vice-President Mark Wilson' giving officer reports at every ASG meeting read from 7 October 1980 through 17 February 1981; also chaired the Legislative Research committee, one of two committee chairmanships the Congress approved by name at the year's first meeting.",
+      "src": {
+       "label": "ASG Minutes, 7 Oct 1980",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+      }
+     },
+     {
+      "office": "Activities Vice President",
+      "name": "Greg Zoeller",
+      "note": "Named 'Activities Vice-President Greg Zoeller' giving officer reports at every ASG meeting read from 2 September 1980 through 31 March 1981.",
+      "src": {
+       "label": "ASG Minutes, 2 Sep 1980",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
+      }
+     },
+     {
+      "office": "Treasurer",
+      "name": "Mark Chesnut",
+      "note": "Named 'Treasurer Mark Chesnut' reporting ASG's account balances, 11 November 1980. Also named among the Congress members recorded absent on 17 February 1981, suggesting the treasurer sat in Congress ex officio.",
+      "src": {
+       "label": "ASG Minutes, 11 Nov 1980",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+      }
+     },
+     {
+      "office": "Secretary",
+      "name": "Marsha Sanner",
+      "note": "Signs the minutes of every ASG meeting read this year as secretary, and separately chaired the Rules and Elections committee, the other of the two committee chairmanships Congress approved by name at the year's first meeting.",
+      "src": {
+       "label": "ASG Minutes, 7 Oct 1980",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+      }
      }
     ],
-    "note": "Mark Wilson and Greg Zoeller were elected to other top ASG offices in the same April 1980 election; the Herald index does not specify which."
+    "senate": {
+     "officers": [
+      {
+       "office": "Parliamentarian",
+       "name": "Jeff Morris",
+       "note": "Appointed by President Fuller with the consent of Congress, 7 October 1980; moved floor motions the same meeting and reported on the Big Red costume under Old Business, 11 November 1980. Succeeded by Kevin Strader by 29 January 1981.",
+       "src": {
+        "label": "ASG Minutes, 7 Oct 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+       }
+      },
+      {
+       "office": "Parliamentarian",
+       "name": "Kevin Strader",
+       "note": "Appointed by President Fuller with the consent of Congress, 29 January 1981, succeeding Jeff Morris; moved to dispense with the reading of the minutes the same meeting, and moved adjournment on 17 February and 31 March 1981.",
+       "src": {
+        "label": "ASG Minutes, 29 Jan 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/272"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Legislative Research",
+       "chair": "Mark Wilson",
+       "note": "One of two committee chairmanships Congress approved by name at the year's first meeting, 2 September 1980; a distinct chairmanship from his Administrative Vice President office."
+      },
+      {
+       "name": "Rules and Elections",
+       "chair": "Marsha Sanner",
+       "note": "The other of two committee chairmanships Congress approved by name, 2 September 1980; Sanner was also ASG Secretary."
+      },
+      {
+       "name": "Academic Affairs",
+       "chair": "Kevin Kinne",
+       "note": "Named chairman 2 September 1980, active through 31 March 1981."
+      },
+      {
+       "name": "Student Opinion Poll",
+       "chair": "Kevin Kinne",
+       "note": "Same chairman as Academic Affairs."
+      },
+      {
+       "name": "Housing",
+       "chair": "Shawn Bryant",
+       "note": "Vacant at the year's first meeting, 2 September 1980; Bryant reporting for it by 7 October 1980."
+      },
+      {
+       "name": "International Students",
+       "chair": "Osama Shariff",
+       "note": "Chaired continuously from 2 September 1980 through 17 February 1981, organizing International Week; spelled Shariff and Sharif across different minutes."
+      },
+      {
+       "name": "Minority Affairs",
+       "chair": "Alan Jackson",
+       "note": "Named chairman 2 September 1980; not mentioned again in the minutes read."
+      },
+      {
+       "name": "Minority Affairs",
+       "chair": "Perry Hines",
+       "note": "Reporting for the committee by 11 November 1980 and after, succeeding Alan Jackson."
+      },
+      {
+       "name": "Complaint and Suggestion",
+       "chair": "Debbie Thomas",
+       "note": "Named chairwoman 2 September 1980; not mentioned again in the minutes read."
+      },
+      {
+       "name": "Complaint and Suggestion",
+       "chair": "Margaret Ragan",
+       "note": "Reporting for the committee by 7 October 1980 and after, succeeding Debbie Thomas."
+      }
+     ],
+     "members": [
+      {
+       "name": "Mike Alvey",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "M. A. Baker",
+       "seat": "Congress member; Representative-at-Large",
+       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 17 Feb 1981 (name reconstructed from a garbled scan). Separately served as a Judicial Council alternate from 7 Oct 1980, a distinct, non-Congress body not counted as evidence of Congress membership by itself.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Greg Berryman",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980, and again among the Congress members recorded absent, 17 Feb 1981.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Bruce Berton",
+       "seat": "Congress member; On-Campus Representative",
+       "note": "Appointed On-Campus Representative by President Fuller with the consent of Congress, 11 Nov 1980. Surname is clear in the scan; the given name 'Bruce' is a reconstruction of a badly garbled scan ('Brune') and should be checked against the original if the scan quality allows.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Shawn Bryant",
+       "seat": "Congress member; chairs Housing Committee",
+       "note": "Moved a floor motion, seconded and passed (7 Oct 1980 minutes); reported for the Housing Committee through 29 Jan 1981; nominated for the Dero Downing Award, 31 Mar 1981.",
+       "src": {
+        "label": "ASG Minutes, 7 Oct 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+       }
+      },
+      {
+       "name": "Sheen Compton",
+       "seat": "Congress member",
+       "note": "Moved that the meeting be adjourned, seconded and passed, 11 Nov 1980.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Patti Davis",
+       "seat": "Congress member; On-Campus Representative",
+       "note": "Appointed On-Campus Representative by President Fuller with the consent of Congress, 7 Oct 1980, filling one of the vacancies announced at the year's first meeting.",
+       "src": {
+        "label": "ASG Minutes, 7 Oct 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+       }
+      },
+      {
+       "name": "Laura Fleenor",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980 (scanned 'Laurea Fleenor'), and again among the Congress members recorded absent, 17 Feb 1981 (scanned 'Maura Fleenar').",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Kevin Grace",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980, and again among the Congress members recorded absent, 17 Feb 1981.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Perry Hines",
+       "seat": "Congress member; Representative-at-Large; chairs Minority Affairs Committee",
+       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 11 Nov 1980; chairs the Minority Affairs committee from November. Ran for Freshman Class President and lost, 243 votes to John Holland's 114, 5 Nov 1980.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Craig Hoffer",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Jon Holland",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981 - independent of, though probably related to, his election as Freshman Class President, 243 votes to Perry Hines's 114, 5 Nov 1980.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Glenn Humphreys",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981 (name reconstructed from a garbled scan).",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Alan Jackson",
+       "seat": "Minority Affairs Committee (named chairman)",
+       "note": "Named chairman of the Minority Affairs committee at the year's first meeting, 2 Sept 1980; does not appear again in the minutes read. Congress membership is documented as of that appointment; not corroborated further.",
+       "src": {
+        "label": "ASG Minutes, 2 Sep 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
+       }
+      },
+      {
+       "name": "Carey Jones",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Debbie Kay",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981.",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Kevin Kinne",
+       "seat": "Congress member; chairs Academic Affairs and Student Opinion Poll committees",
+       "note": "Moved that the secretary send Congress's official congratulations to Coach Feix and the football team for the 1980 OVC championship, seconded and passed (11 Nov 1980 minutes). Chairs both the Academic Affairs and Student Opinion Poll committees throughout the year.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Jim McCord",
+       "seat": "Congress member",
+       "note": "Named among the Congress members recorded absent, 17 Feb 1981 (name reconstructed from a garbled scan).",
+       "src": {
+        "label": "ASG Minutes, 17 Feb 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/288"
+       }
+      },
+      {
+       "name": "Jim Payne",
+       "seat": "Congress member; Off-Campus Representative",
+       "note": "Appointed Off-Campus Representative by President Fuller with the consent of Congress, 11 Nov 1980; named among the Congress members recorded absent, 17 Feb 1981.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Margaret Ragan",
+       "seat": "Congress member; chairs Complaint and Suggestion Committee",
+       "note": "Chairs the Complaint and Suggestion committee from 7 Oct 1980; appointed student member to the University Academic Complaint Committee by President Fuller with the consent of Congress, 17 Feb 1981; nominated for Outstanding Congress Member, 31 Mar 1981. Name spelled Ragan, Ragen, Raden and Racan across different scans, all the same committee chair. A Margaret Ragan is separately recorded in years.json as the elected 1982-83 ASG president; nothing in either year's sourced record connects the two directly, so no identity is asserted here.",
+       "src": {
+        "label": "ASG Minutes, 7 Oct 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+       }
+      },
+      {
+       "name": "Charles Russell",
+       "seat": "Congress member; Representative-at-Large",
+       "note": "Appointed Representative-at-Large by President Fuller with the consent of Congress, 11 Nov 1980; named among the Congress members recorded absent, 17 Feb 1981 (surname reconstructed from a garbled scan both times, but consistent).",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      },
+      {
+       "name": "Lonnie Sears",
+       "seat": "Congress member; On-Campus Representative",
+       "note": "Appointed On-Campus Representative by President Fuller with the consent of Congress, 7 Oct 1980, filling one of the vacancies announced at the year's first meeting.",
+       "src": {
+        "label": "ASG Minutes, 7 Oct 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+       }
+      },
+      {
+       "name": "Osama Shariff",
+       "seat": "Congress member; chairs International Students Committee",
+       "note": "Chairs the International Students committee continuously from 2 Sept 1980 through 17 Feb 1981, organizing International Week; spelled Shariff and Sharif across different minutes. Nominated for Outstanding Congress Member, 31 Mar 1981.",
+       "src": {
+        "label": "ASG Minutes, 2 Sep 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
+       }
+      },
+      {
+       "name": "Debbie Thomas",
+       "seat": "Complaint and Suggestion Committee (named chairwoman)",
+       "note": "Named chairwoman of the Complaint and Suggestion committee at the year's first meeting, 2 Sept 1980; does not appear again in the minutes read (Margaret Ragan is reporting for the same committee by the next meeting). Congress membership is documented as of that appointment; not corroborated further.",
+       "src": {
+        "label": "ASG Minutes, 2 Sep 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
+       }
+      },
+      {
+       "name": "Debbie Watson",
+       "seat": "Congress member",
+       "note": "Named among the Congress members absent at roll call, 11 Nov 1980.",
+       "src": {
+        "label": "ASG Minutes, 11 Nov 1980",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/253"
+       }
+      }
+     ]
+    }
    }
   },
   {
