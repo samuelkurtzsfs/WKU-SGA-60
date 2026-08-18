@@ -416,3 +416,91 @@ worth watching for.
 390 legislation files. `build.py`, `check_data.py` and `check_contrib.py` all
 exit clean. `check_duplicates.py` reports seven pairs, all separate events, none
 introduced by this work.
+
+---
+
+# Night of 18 August 2026 — editor pass
+
+Four open research PRs reviewed, all four merged to main after corrections.
+GitHub was reachable this run (push and merge both worked); the merges are live.
+
+## #17 — the senate rolls — MERGED after five fixes
+
+The Congress roll for 1976-77, 1977-78, 1979-80 and 1980-81. A prior editor had
+blocked it over OCR misreads; a re-verification pass answered that by rendering
+the scans as images. I could not re-read the PDFs — `viewcontent.cgi` returns
+HTTP 202 with an empty body here — so I checked the year a different way, against
+the 1981 Talisman on archive.org, an independent source for the same body. It
+vindicated every contested reading (Bussell, Ragan, Maura Fleenor, Humphrey all
+confirmed in the ASG group photo caption and index). The 1977-78 and 1979-80
+Talisman additions are verbatim. Five corrections of my own:
+
+- Minutes/272 is **20 January 1981**, not 29 — carried in four places, all fixed.
+- A Freshman Class President election was written up twice with the two
+  candidates' vote figures transposed; both entries now say Holland beat Hines
+  and give no tally.
+- Osama **Sharif** (the 1981 Talisman prints it three times), not Shariff.
+- **M. A. Baker** kept and properly sourced: the Talisman names him the Cincinnati
+  senior who authored the room-inspection resolution.
+- **Bruce Berton** and **Jim McCord** withdrawn — each carried its own admission of
+  being a garbled-scan reconstruction. Alan Jackson and Debbie Thomas moved out of
+  members (committee chairs only), per the archive's own rule.
+
+## #20 — the backlog — MERGED after one trim
+
+An audit of 92 candidate officers, 89 rejected with specific reasons — the best-
+disciplined batch this run. Two survivors verified: **Paul J. Deom** (Judicial
+Council, year confirmed independently by the 1981 Talisman) and **Mark Wilson**
+(administrative VP, quote and both vote counts verbatim in the Talisman). Trim:
+Wilson's note carried an election date, an 821-342 tally and a middle name none
+of which are in the cited source — cut, while the same audit had correctly
+trimmed an identically shaped tally for Zoeller two rows down. Lesson logged on
+the PR: an `accept` verdict still has to cut the note back to what `verify_reason`
+actually covers.
+
+## #21 — person profiles — MERGED after cutting an invented election
+
+Twelve officer profiles, 1988-89 to 1990-91, built from ASG minutes. All nine
+minutes citations exact, two abstracts corroborating outright (Hennig's
+resignation, the freshman elections). **Cut:** three profiles claimed Knowles and
+Falmlen were "top two in the primary" and "advanced to the runoff" in April 1991.
+No source says so; the full landing pages for all three election issues describe
+one election, "three clear-cut" results on 11 April, no primary and no runoff.
+The real smear-campaign report was rescued — restated to what the headline proves,
+outcome-unknown said plainly (living person), and given its own sourced event.
+
+**Correction I had to make to my own review:** I first cited the local
+`herald-index-full.json` as proof of absence. It is truncated (see below) and all
+three 1991 entries are cut off mid-list. Re-verified against the live landing
+pages; the finding held, but the index must not be trusted for negatives.
+
+## #22 — photographs — MERGED after one caption fix
+
+Six officer portraits from the early-1970s Talismans, all real JPEGs, each
+identified from the yearbook's own caption. Reginald Glass's name tag is legible
+in the scan (REGINALD GLASS). LaCivita and Pat Newton verbatim; the Nancy Pape
+crop-by-position inference checked out against the uncropped group photo already
+on main. **Fix:** the Kirkpatrick caption called her "ASG secretary" over a 1974
+Talisman photo whose caption gives no office and in a year the secretary was Pam
+Stewart; the office is 1974-75, from the 1975 Talisman. Caption corrected to say
+so.
+
+## Standing hazard, re-confirmed
+
+`data/herald-index-full.json` is still truncated — 3,898 of 11,850 entries have
+article lists that stop partway (`<li>` with no closing `</ul>`). Every routine
+greps it first, so a miss there is not absence. It nearly cost this run a wrong
+negative finding. Needs a re-harvest. Landing pages carry the full lists at one
+request each and are richer than the local subset.
+
+## Where the record stands after this pass
+
+61 years, 2,016 dated events, 60 people who have been president, 1,052 officer
+records, 136 senate members recorded, 58 years with a cabinet, 54 officer
+profiles, 34 documents, 390 legislation files. Photographs: 73 leaders, 17 year
+photos. `build.py`, `check_data.py` and `check_contrib.py` all exit clean on main.
+`check_duplicates.py` reports seven pairs, all separate events, none introduced
+by this work.
+
+Stale PRs #6, #7, #8 (photos / 1980s / 2020s, open since 4 August) were already
+closed on 18 August at 04:57, before this run — no action needed.
