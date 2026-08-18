@@ -335,11 +335,11 @@ That last line is the argument for never skipping the checker.
    homepage, a `/tag/` index, or a bare `digitalcommons.wku.edu/dlsc_ua_records/`
    collection root) were checked one at a time, then the 8 proposed upgrades
    were sent to a separate adversarial verifier before anything was committed.
-   Confirmed by web.archive.org's own `archive.org/wayback/available` API to
-   still exist as snapshots, `web.archive.org` itself is not a rate limit but
-   a hard **"Blocked by egress policy"** in this environment — both `https`
-   and `http` — so none of those pages could be read directly; `archive.org`
-   (no `web.` prefix) and `digitalcommons.wku.edu` landing pages remain open.
+   `web.archive.org` is not rate-limited in this environment, it is a hard
+   **"Blocked by egress policy"** on both `https` and `http`, so none of those
+   captures could be read directly; the `archive.org/wayback/available` API
+   confirms the snapshots still exist, and `archive.org` (no `web.` prefix) and
+   `digitalcommons.wku.edu` landing pages remain open.
    **8 citations got a real digitalcommons.wku.edu/dlsc_ua_records permalink**
    in place of a bare Wayback homepage or collection root, found by matching
    the event's own text against that issue's indexed headline list in
@@ -363,10 +363,10 @@ That last line is the argument for never skipping the checker.
    this file's own §6.1 warns about (cut back to what the preview actually
    said). **6 citations could not be upgraded** — a Wayback front-page or
    `/tag/sga/` capture with no better source found locally or on the live
-   `wkuherald.com` WordPress API — and were left in place but given a plain
-   sentence in the body or note saying the citation is to a front-page or
-   tag-index capture, not the specific article, so a reader knows the
-   citation is weaker than it looks: the 2006-07 events for the I-A resolution
+   `wkuherald.com` WordPress API — and were left in place with the citation
+   itself marked as a front-page or tag-index capture rather than the specific
+   article, so a reader can see the citation is weaker than it looks without
+   the caveat intruding on the entry's prose: the 2006-07 events for the I-A resolution
    and Johnson's regent-election win, the 2006-07 Jeanne Johnson leader record,
    the 2009-10 Judicial Council removal and two-senators-resign events, and
    Chief Justice Stuart Kenderes's senate-officer record. **2 looked
