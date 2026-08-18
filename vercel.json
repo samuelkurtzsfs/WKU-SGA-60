@@ -5,6 +5,11 @@
   "installCommand": "",
   "cleanUrls": false,
   "trailingSlash": false,
+  "functions": {
+    "api/index.py": {
+      "excludeFiles": "{data,site,scripts,.research,.github,.git}/**"
+    }
+  },
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index" }
   ],
