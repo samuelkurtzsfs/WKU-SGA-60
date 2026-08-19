@@ -821,10 +821,16 @@ def render_gallery(y):
             f'<div class="gallery">{"".join(figs)}</div>')
 
 
+# An officer entry may carry several citations. Anything past the first is
+# numbered; keeping the list in one place stops a later slot being added to
+# the data and then rendering nowhere.
+SRC_KEYS = ("src", "src2", "src3", "src4", "src5")
+
+
 def render_office(o):
     """One officer on a year page. The name links to their own page, where every
     office they held and everything the record says about them is gathered."""
-    cites = [src_link(o[k]) for k in ("src", "src2", "src3") if o.get(k)]
+    cites = [src_link(o[k]) for k in SRC_KEYS if o.get(k)]
     src = f'<span class="credit">{" ".join(cites)}</span>' if cites else ""
     nm = h(o.get("name", ""))
     if o.get("name"):
@@ -968,10 +974,10 @@ def year_sources(y):
         add(d.get("src"))
     org = y.get("organization") or {}
     for o in org.get("executive", []):
-        for k in ("src", "src2", "src3"):
+        for k in SRC_KEYS:
             add(o.get(k))
     for o in (org.get("senate") or {}).get("officers", []):
-        for k in ("src", "src2", "src3"):
+        for k in SRC_KEYS:
             add(o.get(k))
     for p in y.get("photos") or []:
         add(p.get("src"))
@@ -6544,10 +6550,10 @@ def officer_index(ys):
             for variant, target in ALIASES.items():
                 if target == key:
                     p["spellings"].add(variant)
-            p["terms"].append({"year": y["id"], "office": o["office"],
-                               "note": o.get("note"), "src": o.get("src"),
-                               "src2": o.get("src2"), "src3": o.get("src3"),
-                               "profile": o.get("profile"), "senate": is_sen})
+            term = {"year": y["id"], "office": o["office"], "note": o.get("note"),
+                    "profile": o.get("profile"), "senate": is_sen}
+            term.update({k: o.get(k) for k in SRC_KEYS})
+            p["terms"].append(term)
     # Presidents and student regents get a page too. Without this a president who
     # never held a cabinet post has no profile at all, and their record stays
     # scattered across year pages with nothing gathering it.
@@ -6697,7 +6703,7 @@ def render_officer(person, ys, leg=()):
     rows = []
     for t in terms:
         cite = ""
-        links = [src_link(t[k], "") for k in ("src", "src2", "src3") if t.get(k)]
+        links = [src_link(t[k], "") for k in SRC_KEYS if t.get(k)]
         if links:
             cite = f'<p class="srcline">{" ".join(links)}</p>'
         # profile is the fuller successor to note; showing both would repeat the
