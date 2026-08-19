@@ -17727,7 +17727,7 @@
      }
     ],
     "senate": {
-     "note": "Minutes from 25 Aug 1992 through 13 Apr 1993 survive, recording a congress occupied with state budget cuts, tuition increases and a Frankfort rally, but no full officer list, committee structure, or seat count survives beyond the president.",
+     "note": "Minutes from 25 Aug 1992 through 13 Apr 1993 survive, recording a congress occupied with state budget cuts, tuition increases and a Frankfort rally. Several committee chairs changed hands during the year (see committees below); no total Congress seat count is stated anywhere in the surviving minutes.",
      "officers": [
       {
        "office": "Chair, Legislative Research Committee",
@@ -17790,6 +17790,607 @@
        "src": {
         "label": "SGA Minutes, 9 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
+       }
+      },
+      {
+       "office": "City Council Representative",
+       "name": "Donnie Miller",
+       "note": "Succeeded Trent Lyda in the role, giving the Congress's City Council report from 16 Feb 1993.",
+       "src": {
+        "label": "SGA Minutes, 16 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/430"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Huma Ahsan",
+       "note": "Elected to an open Congress seat 1 Sept 1992; on absence rolls into spring 1993.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Matt Anderson",
+       "src": {
+        "label": "SGA Minutes, 8 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/410"
+       }
+      },
+      {
+       "name": "Michael Bessette",
+       "seat": "Non-Traditional Representative",
+       "src": {
+        "label": "SGA Minutes, 16 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/430"
+       }
+      },
+      {
+       "name": "Laura Jo Bland",
+       "note": "Given as \"Laura Jo Bland\" and \"LauraJo Bland\" in different minutes.",
+       "src": {
+        "label": "SGA Minutes, 20 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
+       }
+      },
+      {
+       "name": "Bert Blevins",
+       "seat": "Representative at Large",
+       "note": "Filled the seat by acclamation, 20 Oct 1992.",
+       "src": {
+        "label": "SGA Minutes, 20 Oct 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/420"
+       }
+      },
+      {
+       "name": "Darron Brawner",
+       "seat": "Freshman Representative",
+       "src": {
+        "label": "SGA Minutes, 29 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
+       }
+      },
+      {
+       "name": "Emily Brown",
+       "note": "Named Congress Member of the Month alongside Scott Sivley, 2 Mar 1993; also on the Congress absence roll, 13 Apr 1993. The minutes never state a specific seat.",
+       "src": {
+        "label": "SGA Minutes, 2 Mar 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/428"
+       }
+      },
+      {
+       "name": "Jeff Carlisle",
+       "seat": "Representative at Large",
+       "src": {
+        "label": "SGA Minutes, 26 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
+       }
+      },
+      {
+       "name": "Margaret Carter",
+       "seat": "Freshman Representative",
+       "src": {
+        "label": "SGA Minutes, 29 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
+       }
+      },
+      {
+       "name": "Nicole Creasy",
+       "note": "Spelled \"Nicole Creasy\" and \"Nicole Creasey\" in different minutes; treated as one person.",
+       "src": {
+        "label": "SGA Minutes, 15 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/408"
+       }
+      },
+      {
+       "name": "Laurie Davis",
+       "note": "On absence rolls from Sept 1992; removed from Congress by the Judicial Council for absences, reported 16 Feb 1993.",
+       "src": {
+        "label": "SGA Minutes, 8 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/410"
+       }
+      },
+      {
+       "name": "Dawn Dillard",
+       "note": "Elected to an open Congress seat 1 Sept 1992; on absence rolls through the fall; later approved as Grievance Committee chairperson, 26 Jan 1993.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Jeff Duncan",
+       "src": {
+        "label": "SGA Minutes, 15 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/408"
+       }
+      },
+      {
+       "name": "Derrek Duncan",
+       "src": {
+        "label": "SGA Minutes, 6 Oct 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/422"
+       }
+      },
+      {
+       "name": "Cindy Dutton",
+       "seat": "Panhellenic Representative",
+       "note": "Introduced herself as the new Panhellenic Representative, 1 Sept 1992.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Greg Edmonds",
+       "seat": "Freshman Class Vice President",
+       "src": {
+        "label": "SGA Minutes, 29 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
+       }
+      },
+      {
+       "name": "Jason Embry",
+       "seat": "Senior Class President",
+       "note": "Filled the seat, vacated by Ryan James, by acclamation, 20 Oct 1992.",
+       "src": {
+        "label": "SGA Minutes, 20 Oct 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/420"
+       }
+      },
+      {
+       "name": "Ray Ezell",
+       "src": {
+        "label": "SGA Minutes, 20 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
+       }
+      },
+      {
+       "name": "Elizabeth Fauver",
+       "seat": "Representative at Large",
+       "src": {
+        "label": "SGA Minutes, 9 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
+       }
+      },
+      {
+       "name": "Rebecca Flynn",
+       "note": "On absence rolls from Nov 1992; resigned by 2 Feb 1993.",
+       "src": {
+        "label": "SGA Minutes, 17 Nov 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/417"
+       }
+      },
+      {
+       "name": "Christie Foster",
+       "note": "On the Congress absence roll at the earliest surviving meetings (25 Aug–8 Sept 1992); not found in later minutes.",
+       "src": {
+        "label": "SGA Minutes, 25 Aug 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/414"
+       }
+      },
+      {
+       "name": "Eric Griggs",
+       "src": {
+        "label": "SGA Minutes, 20 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
+       }
+      },
+      {
+       "name": "Gene Hadden",
+       "seat": "Non-Traditional Representative",
+       "note": "Elected 1 Sept 1992; resigned his seat, reported 26 Jan 1993.",
+       "src": {
+        "label": "SGA Minutes, 26 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
+       }
+      },
+      {
+       "name": "Cynthia Hayes",
+       "src": {
+        "label": "SGA Minutes, 15 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/408"
+       }
+      },
+      {
+       "name": "Cory Hollon",
+       "note": "Moved and amended resolutions in Sept 1992; resigned his Congress seat, reported 29 Sept 1992.",
+       "src": {
+        "label": "SGA Minutes, 29 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
+       }
+      },
+      {
+       "name": "Jill Howard",
+       "seat": "Freshman Representative",
+       "src": {
+        "label": "SGA Minutes, 29 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
+       }
+      },
+      {
+       "name": "Jennifer Jaggers",
+       "note": "On absence rolls from Sept 1992; resigned by 2 Feb 1993.",
+       "src": {
+        "label": "SGA Minutes, 29 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
+       }
+      },
+      {
+       "name": "Ryan James",
+       "seat": "Senior Class President",
+       "note": "Resigned from SGA, reported 13 Oct 1992; Jason Embry later filled the seat by acclamation.",
+       "src": {
+        "label": "SGA Minutes, 13 Oct 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/421"
+       }
+      },
+      {
+       "name": "Susanne Jeffiers",
+       "seat": "Education Representative",
+       "src": {
+        "label": "SGA Minutes, 2 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/432"
+       }
+      },
+      {
+       "name": "Nicki Jerome",
+       "note": "On the Congress absence roll at the earliest surviving meetings (25 Aug–8 Sept 1992); not found in later minutes.",
+       "src": {
+        "label": "SGA Minutes, 25 Aug 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/414"
+       }
+      },
+      {
+       "name": "Kyle Key",
+       "seat": "Freshman Class President",
+       "src": {
+        "label": "SGA Minutes, 29 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
+       }
+      },
+      {
+       "name": "Julie Kwok",
+       "note": "On the Congress absence roll at the earliest surviving meetings (25 Aug–8 Sept 1992); not found in later minutes.",
+       "src": {
+        "label": "SGA Minutes, 25 Aug 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/414"
+       }
+      },
+      {
+       "name": "Thomas Lally",
+       "seat": "Junior Representative",
+       "note": "Also given as \"Tom Lally\".",
+       "src": {
+        "label": "SGA Minutes, 9 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
+       }
+      },
+      {
+       "name": "Jim Lee",
+       "src": {
+        "label": "SGA Minutes, 26 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
+       }
+      },
+      {
+       "name": "Kim Mann",
+       "seat": "Representative at Large",
+       "src": {
+        "label": "SGA Minutes, 23 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/429"
+       }
+      },
+      {
+       "name": "Ginger Markham",
+       "note": "Elected to an open Congress seat 1 Sept 1992; removed from Congress by the Judicial Council for absences, reported 16 Feb 1993.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Ashley Means",
+       "note": "Known from a single absence-roll appearance.",
+       "src": {
+        "label": "SGA Minutes, 13 Oct 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/421"
+       }
+      },
+      {
+       "name": "Paula Miller",
+       "note": "On the Congress absence roll, 25 Aug 1992; not found in later minutes.",
+       "src": {
+        "label": "SGA Minutes, 25 Aug 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/414"
+       }
+      },
+      {
+       "name": "Donnie Miller",
+       "note": "Elected to an open Congress seat 1 Sept 1992; on absence rolls into 1993; from 16 Feb 1993 gave the Congress's City Council report (a role Trent Lyda held earlier in the year).",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Kevin Moore",
+       "seat": "Business College Representative, Academic Council",
+       "note": "Congress voted 1 Sept 1992 for Moore to represent the Business school on Academic Council; resigned by 2 Feb 1993.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Eddie Myers",
+       "seat": "Sophomore Vice-President",
+       "note": "Approved to this seat 2 Feb 1993; also appears on Congress absence rolls from Dec 1992, indicating earlier membership under a seat not established in the source.",
+       "src": {
+        "label": "SGA Minutes, 2 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/432"
+       }
+      },
+      {
+       "name": "Laura Nunn",
+       "seat": "Junior Representative",
+       "src": {
+        "label": "SGA Minutes, 26 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
+       }
+      },
+      {
+       "name": "Von Parrish",
+       "note": "Elected to an open Congress seat 1 Sept 1992; moved the motion seating Bert Blevins as Representative at Large, 20 Oct 1992.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Shawn Pinkston",
+       "seat": "Representative at Large",
+       "src": {
+        "label": "SGA Minutes, 16 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/430"
+       }
+      },
+      {
+       "name": "Jennifer Raffaelli",
+       "seat": "Freshman Representative",
+       "note": "Named as an elected Freshman Representative 29 Sept 1992; not found elsewhere in the surviving minutes.",
+       "src": {
+        "label": "SGA Minutes, 29 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
+       }
+      },
+      {
+       "name": "Jill Reading",
+       "seat": "Freshman Representative",
+       "note": "Accepted by acclamation, 9 Mar 1993.",
+       "src": {
+        "label": "SGA Minutes, 9 Mar 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/427"
+       }
+      },
+      {
+       "name": "Christopher Roberts",
+       "note": "Elected to an open Congress seat 1 Sept 1992 as \"Christopher Roberts\"; later absence rolls give \"Chris Roberts\" — treated as the same person.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Cinnamon Roberts",
+       "note": "On absence rolls from Oct 1992; approved as Campus Improvements committee chairperson, 26 Jan 1993.",
+       "src": {
+        "label": "SGA Minutes, 6 Oct 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/422"
+       }
+      },
+      {
+       "name": "Lisa Rosa",
+       "seat": "Junior Representative",
+       "src": {
+        "label": "SGA Minutes, 9 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
+       }
+      },
+      {
+       "name": "Kibby Rose",
+       "note": "Elected to an open Congress seat 1 Sept 1992; moved the motion approving the Judicial Council slate, 1 Dec 1992.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Alex Rose",
+       "seat": "Representative at Large",
+       "note": "Accepted by acclamation, 9 Mar 1993.",
+       "src": {
+        "label": "SGA Minutes, 9 Mar 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/427"
+       }
+      },
+      {
+       "name": "Molly Schreiner",
+       "src": {
+        "label": "SGA Minutes, 23 Mar 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/426"
+       }
+      },
+      {
+       "name": "David Serafini",
+       "seat": "Junior Representative",
+       "src": {
+        "label": "SGA Minutes, 26 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
+       }
+      },
+      {
+       "name": "Sam Sharbutt",
+       "note": "Elected to an open Congress seat 1 Sept 1992; named Congress Member of the Month, 13 Oct 1992.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Jason Sikes",
+       "note": "Known from a single absence-roll appearance.",
+       "src": {
+        "label": "SGA Minutes, 6 Apr 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/424"
+       }
+      },
+      {
+       "name": "Audrea Simpson",
+       "note": "Spelling \"Audrea\" as given consistently in the minutes; possibly \"Andrea\".",
+       "src": {
+        "label": "SGA Minutes, 12 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/435"
+       }
+      },
+      {
+       "name": "Scott Sivley",
+       "note": "Moved and seconded motions in Congress from Sept 1992; also served as Student Affairs committee chairperson (from 1 Sept 1992) and later Public Relations committee chairperson (from 19 Jan 1993) — flagged for the editor in case these chair terms are tracked separately.",
+       "src": {
+        "label": "SGA Minutes, 8 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/410"
+       }
+      },
+      {
+       "name": "Paul Smith",
+       "note": "Elected to an open Congress seat 1 Sept 1992; moved resolutions in Congress that fall.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       }
+      },
+      {
+       "name": "Crystal Smith",
+       "note": "Also given as \"Chrystal Smith\"; approved as Student Affairs committee chairperson 19 Jan 1993, then resigned from Congress by 2 Feb 1993.",
+       "src": {
+        "label": "SGA Minutes, 20 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
+       }
+      },
+      {
+       "name": "Jenny Stelmach",
+       "seat": "Senior Representative",
+       "src": {
+        "label": "SGA Minutes, 26 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
+       }
+      },
+      {
+       "name": "Tim Sturm",
+       "seat": "Sophomore Representative",
+       "src": {
+        "label": "SGA Minutes, 9 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
+       }
+      },
+      {
+       "name": "Joe Tinsley",
+       "note": "On the Congress absence roll 16 Feb 1993; also served as Academic Affairs committee chairperson from 8 Sept 1992 — flagged for the editor in case this chair term is tracked separately.",
+       "src": {
+        "label": "SGA Minutes, 16 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/430"
+       }
+      },
+      {
+       "name": "Robert Wagner",
+       "note": "Also referred to as \"Bobby Wagner\"; nominated 1 Sept 1992 to the University Disciplinary Committee.",
+       "src": {
+        "label": "SGA Minutes, 20 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
+       }
+      },
+      {
+       "name": "Kendra Welch",
+       "seat": "Sophomore Representative",
+       "src": {
+        "label": "SGA Minutes, 2 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/432"
+       }
+      },
+      {
+       "name": "LauraLee Wilson",
+       "note": "Given as \"Laura Lee Wilson\" and \"LauraLee Wilson\" in different minutes; treated as one person.",
+       "src": {
+        "label": "SGA Minutes, 15 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/408"
+       }
+      },
+      {
+       "name": "William Zorn",
+       "seat": "Freshman Representative",
+       "src": {
+        "label": "SGA Minutes, 29 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Vote America (ad hoc)",
+       "chair": "Susan Mitchell",
+       "note": "Named among the year's ad hoc committees at the first meeting of the year.",
+       "src": {
+        "label": "SGA Minutes, 25 Aug 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/414"
+       }
+      },
+      {
+       "name": "Constitutional Revision (ad hoc)",
+       "note": "Listed with chair \"TBA\" at the first meeting of the year; no chairperson is ever named for it in the surviving minutes.",
+       "src": {
+        "label": "SGA Minutes, 25 Aug 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/414"
+       }
+      },
+      {
+       "name": "Grievance Committee",
+       "chair": "Dawn Dillard",
+       "note": "New committee approved 26 Jan 1993, alongside new chairs for Student Affairs and Campus Improvements.",
+       "src": {
+        "label": "SGA Minutes, 26 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
+       }
+      },
+      {
+       "name": "Academic Affairs",
+       "chair": "Joe Tinsley",
+       "note": "Approved chairman 8 Sept 1992, superseding David Smith, who had been named to the role 25 Aug 1992 but never chaired a meeting in it.",
+       "src": {
+        "label": "SGA Minutes, 8 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/410"
+       }
+      },
+      {
+       "name": "Student Affairs",
+       "chair": "Eric McWilliams",
+       "note": "Chaired by Andrea Cailles at the start of the year, then Scott Sivley from 1 Sept 1992, Chrystal Smith from 19 Jan 1993 and Eric McWilliams from 26 Jan 1993.",
+       "src": {
+        "label": "SGA Minutes, 1 Sept 1992",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       },
+       "src2": {
+        "label": "SGA Minutes, 26 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
+       }
+      },
+      {
+       "name": "Public Relations",
+       "chair": "Scott Sivley",
+       "note": "Vacant as of 12 Jan 1993 after Mark Miller's tenure; Sivley was approved as the new chair 19 Jan 1993.",
+       "src": {
+        "label": "SGA Minutes, 19 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/434"
        }
       }
      ]
