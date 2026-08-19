@@ -7716,30 +7716,12 @@
        }
       },
       {
-       "name": "Alan Reid",
-       "seat": "unclear",
-       "note": "Moved to adjourn the 24 April 1979 meeting, the only mention found. Congress membership itself is not conclusively established by the minutes.",
-       "src": {
-        "label": "ASG Minutes, 24 Apr 1979",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37"
-       }
-      },
-      {
        "name": "Dave Roberts",
        "seat": "Rules and Elections Committee",
        "note": "Appointed to the Rules and Elections Committee at the 29 August 1978 meeting; read the Freshman Class primary results at the 19 September 1978 meeting. Congress membership itself is not conclusively established by the minutes.",
        "src": {
         "label": "ASG Minutes, 29 Aug 1978",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
-       }
-      },
-      {
-       "name": "Jon Rue",
-       "seat": "unclear",
-       "note": "Moved to adjourn the 5 September 1978 meeting, the only mention found. Congress membership itself is not conclusively established by the minutes.",
-       "src": {
-        "label": "ASG Minutes, 5 Sep 1978",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/31"
        }
       },
       {
@@ -8728,15 +8710,6 @@
       }
      },
      {
-      "office": "Activities Vice President",
-      "name": "Greg Zoeller",
-      "note": "Named 'Activities Vice-President Greg Zoeller' giving officer reports at every ASG meeting read from 2 September 1980 through 31 March 1981.",
-      "src": {
-       "label": "ASG Minutes, 2 Sep 1980",
-       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
-      }
-     },
-     {
       "office": "Treasurer",
       "name": "Mark Chesnut",
       "note": "Named 'Treasurer Mark Chesnut' reporting ASG's account balances, 11 November 1980. Also named among the Congress members recorded absent on 17 February 1981, suggesting the treasurer sat in Congress ex officio.",
@@ -8752,6 +8725,15 @@
       "src": {
        "label": "ASG Minutes, 7 Oct 1980",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
+      }
+     },
+     {
+      "office": "Activities Vice President",
+      "name": "Greg Zoeller",
+      "note": "Named 'Activities Vice-President Greg Zoeller' giving officer reports at every ASG meeting read from 2 September 1980 through 31 March 1981.",
+      "src": {
+       "label": "ASG Minutes, 2 Sep 1980",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/260"
       }
      }
     ],
@@ -9609,15 +9591,6 @@
        }
       },
       {
-       "name": "Bridget Wyatt",
-       "seat": "Congress member",
-       "note": "Named in the roll-call absence list of 20 October 1981, where the minutes spell the surname Wyatt.",
-       "src": {
-        "label": "ASG Minutes, 20 Oct 1981",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/265"
-       }
-      },
-      {
        "name": "Jeff Link",
        "seat": "Congress member",
        "note": "Named in the roll-call absence list of 13 October 1981.",
@@ -9687,6 +9660,15 @@
        "src": {
         "label": "ASG Minutes, 7 Dec 1981",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/295"
+       }
+      },
+      {
+       "name": "Bridget Wyatt",
+       "seat": "Congress member",
+       "note": "Named in the roll-call absence list of 20 October 1981, where the minutes spell the surname Wyatt.",
+       "src": {
+        "label": "ASG Minutes, 20 Oct 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/265"
        }
       }
      ]
@@ -10117,6 +10099,33 @@
       }
      },
      {
+      "office": "Administrative Vice President",
+      "name": "Jack Smith",
+      "note": "Sworn in at the 29 April 1982 meeting, where he also went over how to write a resolution for the incoming Congress. The same minutes name him chairperson of both the Student Affairs Committee and the Legislative Research Committee.",
+      "src": {
+       "label": "ASG Minutes, 29 Apr 1982",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+      }
+     },
+     {
+      "office": "Treasurer",
+      "name": "Kelly Cook",
+      "note": "Sworn in at the 29 April 1982 meeting, where as Treasurer he moved two amendments to the by-laws on Congress absences, both adopted. The same minutes name him chairperson of the Finance Committee.",
+      "src": {
+       "label": "ASG Minutes, 29 Apr 1982",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+      }
+     },
+     {
+      "office": "Secretary",
+      "name": "Susan Albert",
+      "note": "Sworn in at the 29 April 1982 meeting, where as Secretary she went over the chart for handling motions. The same minutes name her chairperson of the Rules and Elections Committee.",
+      "src": {
+       "label": "ASG Minutes, 29 Apr 1982",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+      }
+     },
+     {
       "office": "Student Regent",
       "name": "Sandra Norfleet",
       "note": "Separately elected office; her term ran only from mid-February to roughly mid-April 1982, a two-month stopgap before the 1982-83 cycle.",
@@ -10141,9 +10150,54 @@
        }
       },
       {
+       "name": "Doug Ball",
+       "seat": "Representative-at-Large (resigned)",
+       "note": "Appointed a representative-at-large and confirmed by Congress at the 29 April 1982 meeting, the same meeting at which he resigned the seat. He had chaired the Student-Faculty Relations Committee as a member of the 1981-82 Congress.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
+       "name": "Gil Cowles",
+       "seat": "Ogden College Alternate",
+       "note": "Appointed Ogden College alternate representative and confirmed by Congress at the 29 April 1982 meeting. The minutes name no Ogden College representative separately at this meeting.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
+       "name": "Todd Cunningham",
+       "seat": "On-Campus Representative",
+       "note": "Appointed an on-campus representative and confirmed by Congress at the 29 April 1982 meeting.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
+       "name": "Barry Deweese",
+       "seat": "Business College Alternate",
+       "note": "Named at the 29 April 1982 meeting under the combined heading 'Business College Representative and Alternate', paired with Susan Beth Tinsley; the minutes do not say which of the two held which seat, and the order in the list is the only basis for reading Deweese as the alternate.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
        "name": "Miriam Eberhardt",
        "seat": "Representative-at-Large",
        "note": "Appointed a representative-at-large and confirmed by Congress at the 29 April 1982 meeting.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
+       "name": "Tim Eckardt",
+       "seat": "College of Education Alternate",
+       "note": "Appointed under the combined heading 'College of Education Representative and Alternate' with Brad Grot at the 29 April 1982 meeting; the minutes do not say which of the two held which seat, and the order in the list is the only basis for reading Eckardt as the alternate.",
        "src": {
         "label": "ASG Minutes, 29 Apr 1982",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
@@ -10162,6 +10216,42 @@
        "name": "Jorge Garcia",
        "seat": "On-Campus Representative",
        "note": "Appointed an on-campus representative and confirmed by Congress at the 29 April 1982 meeting, which seated the incoming 1982-83 Congress under President Margaret Ragan. He also chaired the KISL committee that year.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
+       "name": "Claire Groemling",
+       "seat": "Chairperson, Student-Faculty Relations Committee",
+       "note": "Named chairperson of the Student-Faculty Relations Committee at the 29 April 1982 meeting. This is the only mention found; Congress membership itself is not conclusively established by the minutes.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
+       "name": "Brad Grot",
+       "seat": "College of Education Representative",
+       "note": "Appointed under the combined heading 'College of Education Representative and Alternate' with Tim Eckardt at the 29 April 1982 meeting; the minutes do not say which of the two held which seat, and the order in the list is the only basis for reading Grot as the representative.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
+       "name": "Theresa Hanks",
+       "seat": "On-Campus Representative",
+       "note": "Appointed an on-campus representative and confirmed by Congress at the 29 April 1982 meeting.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
+       "name": "Melanie Harding",
+       "seat": "Chairperson, Academic Affairs Committee",
+       "note": "Named chairperson of the Academic Affairs Committee at the 29 April 1982 meeting. This is the only mention found; Congress membership itself is not conclusively established by the minutes.",
        "src": {
         "label": "ASG Minutes, 29 Apr 1982",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
@@ -10195,6 +10285,24 @@
        }
       },
       {
+       "name": "Laura Robb",
+       "seat": "Representative-at-Large",
+       "note": "Appointed a representative-at-large and confirmed by Congress at the 29 April 1982 meeting.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
+       "name": "Glen Sargent",
+       "seat": "Representative-at-Large",
+       "note": "Appointed a representative-at-large and confirmed by Congress at the 29 April 1982 meeting.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
        "name": "Lonnie Sears",
        "seat": "Vice-chairperson, Student Affairs Committee; alternate parliamentarian",
        "note": "Named vice-chairperson of the newly consolidated Student Affairs Committee and alternate parliamentarian at the 29 April 1982 meeting. He had chaired the Student Opinion Poll Committee the previous year.",
@@ -10204,9 +10312,38 @@
        }
       },
       {
+       "name": "Kelly Smith",
+       "seat": "On-Campus Representative",
+       "note": "Appointed an on-campus representative and confirmed by Congress at the 29 April 1982 meeting, which seated the incoming 1982-83 Congress.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
        "name": "Susan Beth Tinsley",
        "seat": "Business College Representative",
        "note": "Named at the 29 April 1982 meeting under the combined heading for the Business College representative and alternate, paired with Barry Deweese; the minutes do not say which of the two held which seat, and the order of the list is the only basis for reading Tinsley as the representative.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      }
+     ],
+     "officers": [
+      {
+       "office": "Parliamentarian",
+       "name": "Brian Shaw",
+       "note": "Appointed parliamentarian at the 29 April 1982 meeting, with Lonnie Sears as alternate.",
+       "src": {
+        "label": "ASG Minutes, 29 Apr 1982",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
+       }
+      },
+      {
+       "office": "Sergeant-At-Arms",
+       "name": "Robert Cook",
+       "note": "Appointed Sergeant-At-Arms at the 29 April 1982 meeting, the same meeting that had confirmed him a Representative-at-Large.",
        "src": {
         "label": "ASG Minutes, 29 Apr 1982",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
