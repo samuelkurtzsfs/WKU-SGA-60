@@ -1443,7 +1443,74 @@
       }
      }
     ],
-    "note": "Officer slate and vote counts from the Associated Students' own internal results memo to President Kelly Thompson, 3 May 1968."
+    "note": "Officer slate and vote counts from the Associated Students' own internal results memo to President Kelly Thompson, 3 May 1968.",
+    "senate": {
+     "members": [
+      {
+       "name": "Doug Alexander",
+       "seat": "Congress member",
+       "note": "One of three members the minutes record as elected by Congress to the Constitutional Revision Committee, 13 February 1969.",
+       "src": {
+        "label": "SGA Meeting Minutes, 13 February 1969",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
+       }
+      },
+      {
+       "name": "Nonnie Campbell",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 13 February 1969 Congress meeting.",
+       "src": {
+        "label": "SGA Meeting Minutes, 13 February 1969",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
+       }
+      },
+      {
+       "name": "Bob Conley",
+       "seat": "Congress member",
+       "note": "Seconded the Constitutional Revision Committee resolution, Congress minutes of 13 Feb 1969. Name OCR-garbled (\"B~b C~nley\"); read here as Bob Conley but the spelling is unverified against any second source.",
+       "src": {
+        "label": "SGA Meeting Minutes, 13 February 1969",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
+       }
+      },
+      {
+       "name": "Mike Durham",
+       "seat": "Congress member",
+       "note": "Elected by Congress to the three-member Constitutional Revision Committee, 13 Feb 1969 minutes. Name OCR-garbled (\"Hike Durham\"); read here as Mike Durham but the spelling is unverified against any second source.",
+       "src": {
+        "label": "SGA Meeting Minutes, 13 February 1969",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
+       }
+      },
+      {
+       "name": "Steve Garrett",
+       "seat": "Congress member",
+       "note": "Seconded the resolution on publishing Congress minutes, then moved the resolution creating the Constitutional Revision Committee, at the 13 February 1969 meeting.",
+       "src": {
+        "label": "SGA Meeting Minutes, 13 February 1969",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
+       }
+      },
+      {
+       "name": "Kent Gildersleeve",
+       "seat": "Congress member",
+       "note": "Moved the resolution requiring publication of Congress minutes at the 13 February 1969 meeting; one of three members the minutes record as elected by Congress to the Constitutional Revision Committee.",
+       "src": {
+        "label": "SGA Meeting Minutes, 13 February 1969",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
+       }
+      },
+      {
+       "name": "Johnny Graham",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 13 February 1969 Congress meeting.",
+       "src": {
+        "label": "SGA Meeting Minutes, 13 February 1969",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
+       }
+      }
+     ]
+    }
    },
    "documents": [
     {
@@ -1457,6 +1524,18 @@
       "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=1543&context=dlsc_ua_records"
+     }
+    },
+    {
+     "file": "1968-69-minutes-1969-02-13.pdf",
+     "title": "Congress of Associated Students, meeting minutes, 13 February 1969",
+     "summary": "The Congress met with President Bill Straeffer presiding; roll called two members absent, Congress voted to publish its own minutes going forward, and elected three members to a new Constitutional Revision Committee.",
+     "extract": "Elected three members to a new Constitutional Revision Committee.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "SGA Meeting Minutes, 13 February 1969",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
      }
     }
    ],
@@ -10754,10 +10833,172 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2356",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3358&context=dlsc_ua_records"
       }
+     },
+     {
+      "office": "Administrative Vice President",
+      "name": "Tony Whalen",
+      "src": {
+       "label": "ASG Meeting Minutes, 30 August 1983",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+      }
+     },
+     {
+      "office": "Public Affairs Vice President",
+      "name": "Happy Chandler",
+      "note": "The 4 October minutes give the same office as \"Public Relations Vice President,\" a naming inconsistency in the record itself, not a different person.",
+      "src": {
+       "label": "ASG Meeting Minutes, 30 August 1983",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+      }
+     },
+     {
+      "office": "Secretary",
+      "name": "Teresa Anthony",
+      "src": {
+       "label": "ASG Meeting Minutes, 30 August 1983",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+      }
+     },
+     {
+      "office": "Treasurer",
+      "name": "Kelly S. Smith",
+      "src": {
+       "label": "ASG Meeting Minutes, 30 August 1983",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+      }
      }
     ],
-    "note": "Bob Shults, Laura McClellan, Traci Turner, Kim Binkley and Allan Kujala all appear as candidates for ASG's top offices in the April 1983 election coverage; the Herald index does not specify which offices they sought or who won them."
-   }
+    "note": "Bob Shults, Laura McClellan, Traci Turner, Kim Binkley and Allan Kujala all appear as candidates for ASG's top offices in the April 1983 election coverage; the Herald index does not specify which offices they sought or who won them.",
+    "senate": {
+     "members": [
+      {
+       "name": "Ronnie Bryant",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 30 August 1983 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Pat Frencke",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 30 August 1983 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Brad Grot",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 30 August 1983 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Sandy Hill",
+       "seat": "Congress member",
+       "note": "Moved that Congress suspend the rules at the 30 August 1983 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Connie Hoffman",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 4 October 1983 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 4 October 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/476"
+       }
+      },
+      {
+       "name": "Frank Miller",
+       "seat": "Congress member",
+       "note": "Named absent at roll call in both surviving fall 1983 meetings, 30 August and 4 October. A common name; no other identifying detail is in either record.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Stanley Reagan",
+       "seat": "Congress member",
+       "note": "Moved to accept thirteen committee-position appointments at the 30 August 1983 meeting; his own Congress membership rests on this one floor motion, with no roll-call or direct-appointment record found.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Jeff Sharp",
+       "seat": "Congress member",
+       "note": "Named absent at roll call in both surviving fall 1983 meetings, 30 August and 4 October.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Todd Wallace",
+       "seat": "Congress member",
+       "note": "Moved to accept Jennifer Yeker's appointment to Congress, and separately moved to accept Resolution 83-1-F, at the 30 August 1983 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Chris Watkins",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 30 August 1983 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Jennifer Yeker",
+       "seat": "Congress member",
+       "note": "Appointed to a Congress seat at the 30 August 1983 meeting; the motion to accept her appointment passed without discussion.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      }
+     ]
+    }
+   },
+   "documents": [
+    {
+     "file": "1983-84-asg-minutes-1983-08-30.pdf",
+     "title": "ASG meeting minutes, 30 August 1983",
+     "summary": "The first fall meeting of the year: roll call, officer and committee reports, and Congress's vote to appoint Jennifer Yeker to a Congress seat.",
+     "extract": "Jennifer Yeker was appointed to Congress... Motion passed.",
+     "sga_pages": "1-3",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 30 August 1983",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+     }
+    },
+    {
+     "file": "1983-84-asg-minutes-1983-10-04.pdf",
+     "title": "ASG meeting minutes, 4 October 1983",
+     "summary": "A regular fall meeting: officer and committee reports, and the first reading of a bill on notifying vehicle owners before towing.",
+     "extract": "Unexcused absences include: Connie Hoffman, Frank Miller, Jeff Sharp, and Kelly S. Smith.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 4 October 1983",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/476"
+     }
+    }
+   ]
   },
   {
    "id": "1984-85",
@@ -11158,9 +11399,136 @@
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/440/"
        }
       }
+     ],
+     "members": [
+      {
+       "name": "Alexander Baird",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 4 September 1984 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 4 September 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/482"
+       }
+      },
+      {
+       "name": "William Beranek",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 4 September 1984 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 4 September 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/482"
+       }
+      },
+      {
+       "name": "Nancy Caudill",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 4 September 1984 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 4 September 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/482"
+       }
+      },
+      {
+       "name": "Betsy Davis",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 30 October 1984 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 October 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/437"
+       }
+      },
+      {
+       "name": "Amy Deputy",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 4 September 1984 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 4 September 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/482"
+       }
+      },
+      {
+       "name": "Quinton Fawbush",
+       "seat": "Congress member",
+       "note": "Named absent at roll call at both the 4 September and 30 October 1984 ASG meetings.",
+       "src": {
+        "label": "ASG Meeting Minutes, 4 September 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/482"
+       }
+      },
+      {
+       "name": "Brad Guthrie",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 30 October 1984 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 October 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/437"
+       }
+      },
+      {
+       "name": "Dorothy Metzmeier",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 4 September 1984 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 4 September 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/482"
+       }
+      },
+      {
+       "name": "Jon Norris",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 4 September 1984 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 4 September 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/482"
+       }
+      },
+      {
+       "name": "Barbara Rowland",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 30 October 1984 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 October 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/437"
+       }
+      },
+      {
+       "name": "Tara Wassom",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 4 September 1984 ASG meeting; she was elected secretary of Associated Student Government the following year, 1985-86.",
+       "src": {
+        "label": "ASG Meeting Minutes, 4 September 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/482"
+       }
+      }
      ]
     }
-   }
+   },
+   "documents": [
+    {
+     "file": "1984-85-asg-minutes-1984-09-04.pdf",
+     "title": "ASG meeting minutes, 4 September 1984",
+     "summary": "The first fall meeting of the year: roll call, officer reports on the Weekend in the Woods retreat, and the first reading of Bill 84-1-F.",
+     "extract": "Unexcused absences included: Jon Norris, Quinton Fawbush, Dorothy Metzmeier, Amy Deputy, Alexander Baird, William Beranek, Nancy Caudill, and Tara Wassom.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 4 September 1984",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/482"
+     }
+    },
+    {
+     "file": "1984-85-asg-minutes-1984-10-30.pdf",
+     "title": "ASG meeting minutes, 30 October 1984",
+     "summary": "Roll call, officer and committee reports, passage of Resolution 84-14-F by a vote of 17-4-1, and Mitchell McKinney chosen Congress member of the month.",
+     "extract": "Resolution 84-14-F passed with a vote of 17-4-1.",
+     "sga_pages": "1-3",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 30 October 1984",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/437"
+     }
+    }
+   ]
   },
   {
    "id": "1985-86",
@@ -11704,9 +12072,106 @@
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39/"
        }
       }
+     ],
+     "members": [
+      {
+       "name": "Doreen Krausnitzer",
+       "seat": "Congress member",
+       "note": "Named absent at the 15 April 1986 roll call. The scanned minutes render the name \"Dorren Ktausnitzer\"; \"Doreen Krausnitzer\" is an unverified reading of a garbled OCR, not a confirmed spelling.",
+       "src": {
+        "label": "ASG Meeting Minutes, 15 April 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39"
+       }
+      },
+      {
+       "name": "Jon LeTendre",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 15 April 1986 ASG meeting. A \"John LeTendre\" is separately recorded absent from the 2 September 1986 meeting that opened the following year; whether this is the same person is not established here.",
+       "src": {
+        "label": "ASG Meeting Minutes, 15 April 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39"
+       }
+      },
+      {
+       "name": "Mark Lovell",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 15 April 1986 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 15 April 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39"
+       }
+      },
+      {
+       "name": "Terry Malone",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 15 April 1986 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 15 April 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39"
+       }
+      },
+      {
+       "name": "Chris Millay",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 15 April 1986 ASG meeting, the year before he was elected Parliamentarian.",
+       "src": {
+        "label": "ASG Meeting Minutes, 15 April 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39"
+       }
+      },
+      {
+       "name": "Terri Rice",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 15 April 1986 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 15 April 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39"
+       }
+      },
+      {
+       "name": "Doug Robertson",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 15 April 1986 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 15 April 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39"
+       }
+      },
+      {
+       "name": "Tammy Rowland",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 15 April 1986 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 15 April 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39"
+       }
+      },
+      {
+       "name": "Bill Schilling",
+       "seat": "Congress member",
+       "note": "Moved the motion to adjourn the 15 April 1986 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 15 April 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39"
+       }
+      }
      ]
     }
-   }
+   },
+   "documents": [
+    {
+     "file": "1985-86-asg-minutes-1986-04-15.pdf",
+     "title": "ASG meeting minutes, 15 April 1986",
+     "summary": "The last surviving meeting of the year: roll call, officer and committee reports, and passage of a slate of resolutions including a commendation of Dr. John D. Minton.",
+     "extract": "Congratulated new Congress members, and wished them a successful year.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 15 April 1986",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39"
+     }
+    }
+   ]
   },
   {
    "id": "1986-87",
@@ -12223,9 +12688,61 @@
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/38/"
        }
       }
+     ],
+     "members": [
+      {
+       "name": "Julie Deboy",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 2 September 1986 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 2 September 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/38"
+       }
+      },
+      {
+       "name": "John LeTendre",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 2 September 1986 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 2 September 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/38"
+       }
+      },
+      {
+       "name": "Chuck Newton",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 2 September 1986 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 2 September 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/38"
+       }
+      },
+      {
+       "name": "Cynthia Shemwell",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 2 September 1986 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 2 September 1986",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/38"
+       }
+      }
      ]
     }
-   }
+   },
+   "documents": [
+    {
+     "file": "1986-87-asg-minutes-1986-09-02.pdf",
+     "title": "ASG meeting minutes, 2 September 1986",
+     "summary": "The first fall meeting of the year: roll call, approval of the committee chairs and vice-chairs, and the floor elections of a Parliamentarian and a Sergeant-At-Arms.",
+     "extract": "Dwight Austin was elected Sergeant-At-Arms.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 2 September 1986",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/38"
+     }
+    }
+   ]
   },
   {
    "id": "1987-88",
@@ -12680,9 +13197,70 @@
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/63/"
        }
       }
+     ],
+     "members": [
+      {
+       "name": "Scott Ezell",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 22 September 1987 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 22 September 1987",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64"
+       }
+      },
+      {
+       "name": "Kristina Hayden",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 22 September 1987 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 22 September 1987",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64"
+       }
+      },
+      {
+       "name": "Nick Hicks",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 22 September 1987 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 22 September 1987",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64"
+       }
+      },
+      {
+       "name": "Kenny Perry",
+       "seat": "Ogden College Representative",
+       "note": "Sworn in as the Ogden College Representative at the 22 September 1987 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 22 September 1987",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64"
+       }
+      },
+      {
+       "name": "Debra Wredman",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 22 September 1987 ASG meeting. A Debra Wredman is separately recorded as Student Rights Vice-Chair for 1986-87 in this archive; whether it is the same person is not established here.",
+       "src": {
+        "label": "ASG Meeting Minutes, 22 September 1987",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64"
+       }
+      }
      ]
     }
-   }
+   },
+   "documents": [
+    {
+     "file": "1987-88-asg-minutes-1987-09-22.pdf",
+     "title": "ASG meeting minutes, 22 September 1987",
+     "summary": "The first fall meeting of the year: roll call, officer and committee reports, the swearing-in of Kenny Perry as Ogden College Representative, and passage of a resolution on the tuition increase.",
+     "extract": "Kenny Perry was sworn in as the Ogden College Representative.",
+     "sga_pages": "1-3",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 22 September 1987",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64"
+     }
+    }
+   ]
   },
   {
    "id": "1988-89",
