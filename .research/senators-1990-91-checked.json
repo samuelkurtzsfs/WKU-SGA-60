@@ -1,0 +1,629 @@
+[
+ {
+  "year": "1990-91",
+  "name": "Curtis Finley",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed exactly as claimed.",
+  "src": {
+   "label": "ASG Minutes, 28 Aug 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/378"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Vicki Vowell",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both dates verified directly.",
+  "src": {
+   "label": "ASG Minutes, 28 Aug 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/378"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Traceyealeen Garrett",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All three citations verified verbatim.",
+  "src": {
+   "label": "ASG Minutes, 28 Aug 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/378"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Hagan Rose",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All three roll appearances confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 28 Aug 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/378"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Amanda Button",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed both dates.",
+  "src": {
+   "label": "ASG Minutes, 4 Sept 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/377"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Paige Pride",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "27 Oct roll shows Page and Townsend as separate people in one list, undercutting a merger with the later 'Wendy Page' mentions.",
+  "src": {
+   "label": "ASG Minutes, 4 Sept 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/377"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Mills Brockman",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All four dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 2 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/371"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Andy Gowins",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All roll dates and the Vanderbilt fragment confirmed.",
+  "src": {
+   "label": "ASG Minutes, 2 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/371"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Brian Shaw",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All three dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 2 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/371"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Julie Hannah",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All four citations confirmed verbatim.",
+  "src": {
+   "label": "ASG Minutes, 2 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/371"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Kristin Fryrear",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed on the roll.",
+  "src": {
+   "label": "ASG Minutes, 9 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/370"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Tom Wortham",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All three dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 16 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/369"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Wil Gramm",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "'Gramm' and 'resigned...Congress' are legible in the OCR; the given name is not.",
+  "src": {
+   "label": "ASG Minutes, 23 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/368"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Dwight Adkins",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All three dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 23 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/368"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Angie Berry",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both roll fragments stop short of a clean 'Berry'.",
+  "src": {
+   "label": "ASG Minutes, 27 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/367"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Aubrey Harris",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both OCR spellings verified; treated as one person under an uncertain given name.",
+  "src": {
+   "label": "ASG Minutes, 27 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/367"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Wendy Townsend",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed exact spelling and list position, distinct from Page in the same sentence.",
+  "src": {
+   "label": "ASG Minutes, 27 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/367"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Kelly Elliott",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 6 Nov 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/364"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Eric Elliott",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed as a single, clean mention.",
+  "src": {
+   "label": "ASG Minutes, 12 Mar 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/388"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Martha Ferreira",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both instances confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 15 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/396"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Tracy Maxwell",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 6 Nov 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/364"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Angie Sell",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed as a single, clean mention distinct in spelling from Berry.",
+  "src": {
+   "label": "ASG Minutes, 6 Nov 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/364"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Dan Townsend",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Exact quote confirmed; distinct from Wendy Townsend.",
+  "src": {
+   "label": "ASG Minutes, 4 Dec 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/362"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Nita Doshi",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Exact quote confirmed.",
+  "src": {
+   "label": "ASG Minutes, 4 Dec 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/362"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Dan Knowles",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All citations confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 4 Dec 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/362"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Stacy Kitchens",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Swearing-in quote confirmed verbatim.",
+  "src": {
+   "label": "ASG Minutes, 13 Nov 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/363"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Wallace Brown",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Swearing-in quote and both later roll dates confirmed.",
+  "src": {
+   "label": "ASG Minutes, 13 Nov 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/363"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Deven Delano",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Swearing-in confirmed; exact title fragment cannot be reliably tied to it.",
+  "src": {
+   "label": "ASG Minutes, 13 Nov 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/363"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Donald Smith",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Title and bill announcement both confirmed verbatim; not evidence of a Congress representative seat.",
+  "src": {
+   "label": "ASG Minutes, 13 Nov 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/363"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Kathleen Young",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Exact quote confirmed.",
+  "src": {
+   "label": "ASG Minutes, 22 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/395"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Juli Carter",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Same confirmed floor motion as Kathleen Young.",
+  "src": {
+   "label": "ASG Minutes, 22 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/395"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Allyson Adams",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Raw OCR does not read cleanly as 'Adams.'",
+  "src": {
+   "label": "ASG Minutes, 22 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/395"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Mary Sue Bunce",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All three citations confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 29 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/394"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Derrick Holt",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed directly on the roll.",
+  "src": {
+   "label": "ASG Minutes, 29 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/394"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Joe Rains",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Quote confirmed verbatim, including the explicit on/off Congress distinction.",
+  "src": {
+   "label": "ASG Minutes, 29 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/394"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Mark Miller",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "The Feb Congress-member-of-the-month announcement recurs in near-identical wording under 'Mark Miller' (5 Mar 1991) and 'Mark Hiller' (2 Apr 1991), strong evidence of one person, not two.",
+  "src": {
+   "label": "ASG Minutes, 29 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/394"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "John Seiber",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed in the same quote as Joe Rains and Mark Miller.",
+  "src": {
+   "label": "ASG Minutes, 29 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/394"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Mistianna Holcomb",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Quote confirmed verbatim.",
+  "src": {
+   "label": "ASG Minutes, 29 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/394"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Nancy Rascoe",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Swearing-in quote confirmed verbatim.",
+  "src": {
+   "label": "ASG Minutes, 5 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/393"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Deanna Hills",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Quote confirmed verbatim.",
+  "src": {
+   "label": "ASG Minutes, 5 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/393"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Gretchen Ploch",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 5 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/393"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Eric McWilliams",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All three citations confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 5 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/393"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Melissa Baggarly",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All three dates confirmed with the noted spelling variants.",
+  "src": {
+   "label": "ASG Minutes, 5 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/393"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Patrick McBrian",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All four citations confirmed verbatim.",
+  "src": {
+   "label": "ASG Minutes, 5 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/393"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Jenifer May",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 12 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/392"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Maryann O'Daniello",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Two different OCR renderings of the same surname in two independent documents.",
+  "src": {
+   "label": "ASG Minutes, 12 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/392"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Richard Parish",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both quotes confirmed verbatim.",
+  "src": {
+   "label": "ASG Minutes, 19 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/391"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Laura Ford",
+  "verdict": "trim",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed five roll dates directly; a claimed 5 Mar 1991 appearance was not supported by that day's roll and is dropped.",
+  "src": {
+   "label": "ASG Minutes, 19 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/391"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Brad Rawls",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 26 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/390"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Jeffrey Sanders",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "All four citations confirmed with noted spelling variants.",
+  "src": {
+   "label": "ASG Minutes, 26 Feb 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/390"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Julie Wedge",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Confirmed directly on the roll.",
+  "src": {
+   "label": "ASG Minutes, 5 Mar 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/389"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Kenny Mays",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Exact quote confirmed verbatim.",
+  "src": {
+   "label": "ASG Minutes, 12 Mar 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/388"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Jeff Moore",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 2 Apr 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/452"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Brent Weaver",
+  "verdict": "accept",
+  "disposition": "merged into organization.senate.members",
+  "reason": "Both dates confirmed directly.",
+  "src": {
+   "label": "ASG Minutes, 2 Apr 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/452"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Paul Smith",
+  "verdict": "reject",
+  "disposition": "not merged",
+  "reason": "Only evidence found is his committee-chair appointment (Student Affairs co-chairman), 27 Oct 1990. No absence-roll appearance or floor-motion seating as a rank-and-file Congress member anywhere in the 25 files -- the project's classic chair-misread-as-member trap.",
+  "src": {
+   "label": "ASG Minutes, 27 Oct 1990",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/367"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Sharon Dennis",
+  "verdict": "reject",
+  "disposition": "not merged",
+  "reason": "Only evidence found is 'accepted... to the Judicial Council' (15 Jan 1991) -- an appointment to the same officer-category the project already tracks separately (Eddie Smith/Paul Sagun/Julie Fleming/Jeff Welch), not a Congress representative seat. No absence-roll or floor-motion seating found.",
+  "src": {
+   "label": "ASG Minutes, 15 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/396"
+  }
+ },
+ {
+  "year": "1990-91",
+  "name": "Mark Hiller",
+  "verdict": "reject",
+  "disposition": "not merged",
+  "reason": "Same person as the already-accepted Mark Miller: the identical 'elected Feb. Congress member of the month' announcement appears under 'Mark Miller' (5 Mar 1991) and 'Mark Hiller' (2 Apr 1991) -- one person read two ways by OCR. Not merged as a separate entry; folded into Mark Miller's record instead.",
+  "src": {
+   "label": "ASG Minutes, 22 Jan 1991",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/395"
+  }
+ }
+]
