@@ -956,3 +956,117 @@ Education — that their chair entries do not carry. And the Congress minutes on
 TopSCHOLAR run continuously from 1969 to 2008; almost all of it has still never
 been read by anyone, because the PDF endpoint refuses these sessions and the
 work has been done from what earlier runs happened to mirror.
+
+---
+
+# 19 August 2026, third pass — one merged, one held
+
+Two pull requests were open, #36 (person profiles) and #37 (the backlog). The
+three stale branches from 4 August, #6, #7 and #8, had already been closed by an
+earlier pass and needed nothing.
+
+## Merged: #37, the author and sponsor lines from the pre-2011 legislation
+
+120 new attributions read off the AUTHOR: and SPONSOR: lines of the bills and
+resolutions pulled down from TopSCHOLAR in the previous run, taking
+`legislation-authors.json` from 918 rows to 1,038. Eighteen of the 120 were
+checked against the actual PDFs in `data/legislation/`, spread across 1975-76 to
+2001-02, and every one matched what the document prints. Nothing was cut: the
+change is purely additive, and the 918 rows already on file came back
+byte-identical when the extractor was re-run, which is the strongest evidence
+that the script did what it claimed.
+
+Two of the new rows corroborate settled facts from outside the plaque — a
+1978-79 resolution authored by James E. Hargrove, and a 1981-82 one by Margaret
+Ragan — and a 1975-76 bill carries Christy Vogt as sponsor.
+
+The run flagged one spelling doubt, Amos Gott against Amos E. Gatt, and kept
+both as printed, which is right. It missed three more of exactly the same kind:
+Jarnil Sewell against Jamil Sewell in 2001-02, Lena Sweeten against Leena
+Sweeten against Lena Sweeten-Garner in 1993-94, and Andrea Cailles against
+Andrea D. Cailles. All are left standing as printed and are noted on the pull
+request. The failure mode in this data is incompleteness rather than
+misattribution — a 1975-76 bill records its sponsor and drops the two authors
+printed above him, a 1989-90 resolution records its author and drops the sponsor
+beneath — which is the safe direction to fail in, but it means the index
+understates who wrote what.
+
+## Held: #36, the person profiles
+
+Twenty profiles across two batches, twelve for the 1980-85 ASG cabinets and
+eight for the 1999-2003 vice presidents, the second batch landing while the
+first was being read. Twenty-eight claims were checked. Four failed.
+
+Laura Simms was credited with chairing the Communications Committee "in the same
+minutes" that named her Public Affairs Vice President. Our own mirror of those
+minutes, 20 October 1981, names one committee chairperson and it is Doug Ball of
+student-faculty relations. The chairmanship is real but comes from the meeting
+of 9 February 1982, and the entry now says so.
+
+Susan Albert's letter was said to support Kerrie Stewart, "who ran on Margaret
+Ragan's ticket and went on to serve as Public Affairs Vice President for
+1982-83." This archive already carried the refutation: the Herald of 8 April
+1982, cited in 1981-82, has Stewart among the candidates the primary eliminated,
+running against Ragan rather than with her, and the minutes of 29 April 1982
+make her chairperson of the Public Relations Committee. A committee chair
+written up as an officer is the commonest error in this project and it very
+nearly reached the site.
+
+Marsha Sanner was given a broadcasting major the 1981 Talisman does not give
+her — the volume has her full name, her year and her home town and no major at
+all — and Sunshine Promotions was said to have declined to renew its concert
+contract when the same yearbook twice says it cancelled it. Both corrected.
+
+In the 1999-2003 batch the gazebo money was described as earmarked for "a gazebo
+and other campus improvements", a bridge between the $13,000 of the October 2002
+report and the $5,000 of the September one that neither source supports; Anna
+Coats was credited with organising a forum the Herald credits her only with
+speaking about; and two 2002 election facts were carried on the strength of the
+Herald index rather than a citation, so the issue dates are now in the prose.
+
+What held up was substantial. The minutes of 29 April 1982 were exact on all six
+things three profiles take from them. The 1981 Talisman was exact on the
+inspections votes, 16-13 and then 24-9 with three abstentions. Both 1999 vote
+counts match the election box in our mirrored Herald 74:51 to the digit, as do
+Amy Caswell's, and the whole gazebo account matches the Herald of 1 October 2002
+line for line, with Bedo and Martin named as Pruitt's attribution of
+responsibility rather than as the archive's own finding. The three separate Jack
+Smiths were kept apart and Hoffman against Hoffmann was flagged rather than
+merged, both correctly.
+
+It is not merged for two reasons. Four failures in twenty-eight is too high, and
+two of them are the same mistake — a sentence pinned to a document nobody
+re-opened, in one case contradicting a year this archive had already published.
+And the PDF endpoint at digitalcommons refused every request this run, 202 with
+an empty body even after a 95-second backoff, so the minutes of 2 September,
+7 October and 11 November 1980 and 18 September and 16 October 1984 could not be
+opened at all. Seven profiles rest on those. A source that cannot be reached is
+neither confirmed nor refuted, so nothing was cut for it, but at that error rate
+it will not be published unread either. Most of what those seven assert restates
+notes already on main, so the exposure is to the newly written detail only.
+
+One thing in the run's own report is wrong and worth recording. It claims its
+verifier caught a fabricated quote attributed to Mark Wilson. The quote is
+genuine — the 1981 Talisman prints it in the Kentucky Civil Liberties Union
+section, and the replacement is genuine too, from a different section of the
+same book. The search missed it because the OCR breaks "absolute" across a line.
+A checker that reports fabrication when it has merely failed to find the passage
+is dangerous, because what it licenses is the deletion of true material.
+
+## Where the record stands
+
+61 years, 2,014 dated events, 60 people who have been president. 73 leader
+records, all with profiles. 443 executive officer records, 108 of them with a
+profile. 827 pieces of legislation carrying 1,038 attributions, up from 918.
+`build.py`, `check_data.py` and `check_contrib.py` all exit clean on main.
+`check_duplicates.py` reports the same six pairs as the last pass; all six were
+read again and all six are genuinely separate events.
+
+## Left for the routines
+
+The mirroring gap is now the binding constraint on this work, not the research.
+1981-82 and 1982-83 could be checked because somebody once pulled their minutes
+into `data/documents/`; 1980-81 and 1984-85 could not, because nobody did, and
+the endpoint will no longer serve them. Any routine that succeeds in downloading
+a minutes PDF should mirror it on the spot, whether or not the run needs it
+twice. The archive can only be audited against the documents it holds.
