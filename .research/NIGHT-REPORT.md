@@ -1070,3 +1070,110 @@ into `data/documents/`; 1980-81 and 1984-85 could not, because nobody did, and
 the endpoint will no longer serve them. Any routine that succeeds in downloading
 a minutes PDF should mirror it on the spot, whether or not the run needs it
 twice. The archive can only be audited against the documents it holds.
+
+---
+
+# 19 August 2026, morning — editor pass
+
+Three open pull requests. All three merged. Nothing was left standing that a
+source would not carry, and for the first time on this project nothing had to be
+cut for being wrong.
+
+## What I reviewed
+
+**#36, person profiles.** Two batches: the twelve 1980-85 cabinet officers an
+earlier editor pass held open, and ten 2004-06 executive officers that landed
+afterwards and nobody had looked at. I checked twenty-one claims, weighted toward
+the newer batch.
+
+**#39, the senate rolls.** Forty-seven Congress members and six officers for
+1968-69 and 1983 to 1988. This one mirrors the minutes it works from, so I read
+all eight scanned documents rather than sampling.
+
+**#40, photographs.** Eight images from the Talisman, 1971 to 1987, and three
+existing captions filled out.
+
+## What held up
+
+Everything, near enough. The March 2004 Herald election coverage is exact on all
+of it: Todd 772 to Martin's 424, Petkova over Collins 692 to 481, Abby Lovan with
+the most senate votes at 555, and every hometown, class year and platform in the
+five senate-candidate write-ups. Petkova's quote about the administrators is
+verbatim. The Pruitt gazebo account matches the article of 1 October 2002 line for
+line. Copeland's 2004 letter prints him as a 2003 graduate from Bardstown, which
+settles the hometown an earlier pass had doubted.
+
+The senate rolls are the cleanest work reviewed on this project. Every roll call
+matched: the two absences of 13 February 1969, the six of 30 August 1983, the four
+of 4 October 1983, the eight of 4 September 1984, and so on through 1987. Two of
+those documents have no text layer at all and had to be read as images; they
+matched too. Mike Talbert, amended to a committee at the same August 1983 meeting,
+is correctly not filed as a Congress member, and the three students who lost the
+1986 Sergeant-at-Arms nomination are correctly absent.
+
+Every photograph caption matches its Talisman volume word for word, and the three
+crops that could plausibly have been the wrong photograph on a crowded page are
+the right ones — checked against the page images, not the text.
+
+## What I corrected
+
+**The 2004-06 profiles cited none of the reporting they rest on.** Every fact
+above came out of three Herald articles that appeared nowhere in the record. The
+research was sound and the reading was accurate; it was simply unverifiable the
+moment the run ended, and it cost an hour to reconstruct. All are now attached,
+along with the two citations the earlier editor pass had asked for on Pruitt and
+Copeland.
+
+**Those citations would not have shown up even so.** Officer records could carry a
+second source, and the last batch added several, but `render_office` and the
+person-page rows printed only the first and `year_sources` counted only the first.
+Every `src2` on an officer was dead data. They all print now. That is a change to
+`build.py` rather than to `data/`, so it is flagged on the pull request for Sam to
+reverse if he would rather it stayed as it was.
+
+**One photograph was labelled the executive photograph and is not.** The 1987
+Talisman prints two Associated Student Government groups on one page and names
+both without giving anyone an office; four of that year's five executive officers
+are in the group that was *not* so labelled. A reader following the caption would
+have looked for Tim Todd in the wrong picture. Both years' captions now say which
+group is which.
+
+Two lines trimmed to what the source carries: Petkova's paragraph quoted the same
+interview twice, and Martin's debate remarks said the programmes she would freeze
+were unfunded where the Herald says unimplemented.
+
+## The objection that held #36 open since yesterday
+
+The earlier pass would not publish seven 1980-85 profiles resting on minutes
+TopSCHOLAR would not serve. It still will not serve them — `viewcontent.cgi`
+returned an empty 202 to me as well. But I diffed each of those profiles against
+the note that was on main before the branch touched it, and the routine's answer
+was right: they restate already-published content, and the one genuinely new claim
+resting on an unread document had already been cut. The same is true of Amanda
+Allen's website and iPod mailing list and Kara Ratliff's jump tables in the newer
+batch. Discharged.
+
+## Where the record stands
+
+61 years, 2,014 dated events, 60 people who have been president. 73 leader records
+and 73 portraits. 447 executive officer records, 138 of them with a profile, 616
+senate officers and 379 rank-and-file members — the members up by 47 tonight from
+a standing start of nothing before 1989. 47 primary documents on the site, eight
+of them added tonight, and 34 photographs of years alongside the portraits. 827
+legislation files carrying 1,038 attributions. `build.py`, `check_data.py` and
+`check_contrib.py` all exit clean; `check_duplicates.py` reports the same six
+pairs as yesterday, and all six remain genuinely separate events.
+
+## Left for the routines
+
+Yesterday's note said the mirroring gap was the binding constraint. #39 is the
+answer to it and should be the template: it downloaded its minutes, put them in
+`data/documents/`, and so could be audited in full instead of taken on trust. The
+years that could not be checked yesterday are still the years nobody mirrored.
+
+Three gaps found while reading, none of them defects. **Sean Peck** seconded the
+motion to adjourn on 15 April 1986 and is not recorded, though Bob Conley's second
+in 1969 is. The 13 February 1969 minutes read **John Cabelli** where this archive
+has John Cobelli, a spelling to record rather than resolve. And the 1981 Talisman
+prints **Jeffrey Morris** where the record has Jeff Morris, which wants an alias
+entry rather than an implicit match.
