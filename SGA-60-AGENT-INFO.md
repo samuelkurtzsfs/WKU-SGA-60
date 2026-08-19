@@ -376,7 +376,33 @@ That last line is the argument for never skipping the checker.
    real, specific post — fetching it directly shows an `og:type` of "article"
    and a description matching the claim word for word, just filed under a
    generic "uncategorized" WordPress category rather than a descriptive slug.
-8. **Pre-2011 legislation** on TopSCHOLAR (~444 docs) never harvested.
+8. ~~**Pre-2011 legislation on TopSCHOLAR.**~~ **Done, 19 August 2026.** All 437
+   documents the two listing pages (`sga/Legislation/Bills/`, 194 rows, and
+   `sga/Legislation/Resolutions/`, 250 rows — 444 total, 7 of which an earlier
+   harvest already held under a slightly different source_url) actually
+   pulled down, zero failures. The harvester's PDF fetch had never worked in
+   this environment before now: `cgi/viewcontent.cgi` returns an empty HTTP
+   202 to a bare request, which reads exactly like the hard block on
+   `viewcontent.cgi` recorded in item 2 above — but it turns out that's a
+   session check, not a wall. Landing on the item page first (which sets a
+   cookie) and then requesting the PDF with that cookie and a `Referer`
+   pointing back at the item page gets a real `200` and the actual file,
+   confirmed by hand with curl before touching the script. `harvest_
+   topscholar_legislation.py` now carries a shared cookie jar and sends the
+   item page as `Referer` on the PDF request; its pacing (one request at a
+   time, 3s apart, 90s backoff on 403) is untouched. A second, smaller bug
+   fixed along the way: the dedup check compared source_url by exact string,
+   so the 7 already-harvested documents whose stored URL carries a trailing
+   slash the listing page's URL never has would have been re-fetched and
+   filed a second time under a different filename; the comparison now
+   normalizes both sides. Coverage runs 1975-76 to 2008-09, 250 resolutions
+   and 194 bills, 166 MB of new PDFs. Spot-checked: extracted title metadata
+   against the PDF's own text layer for three documents across the span (a
+   1981-82 resolution, a 1993 constitution-amendment bill, a 2001 funds bill)
+   all matched. `python3 scripts/check_data.py` and `scripts/build.py` both
+   pass clean on the result. Not yet done, and a natural next step: none of
+   these 437 have been run through `extract_authors.py` for the
+   AUTHOR/SPONSOR lines the way the original 390 were.
 
 ---
 
