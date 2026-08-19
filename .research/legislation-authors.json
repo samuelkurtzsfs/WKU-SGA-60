@@ -1,11 +1,1299 @@
 [
  {
+  "file": "1975-76/dc_bill_1.pdf",
+  "session": "1975-76",
+  "type": "bill",
+  "title": "Bill 3 - Guidelines for Use of Unspecified Funds",
+  "role": "author",
+  "name": "John Evans David Payne"
+ },
+ {
+  "file": "1975-76/dc_bill_1.pdf",
+  "session": "1975-76",
+  "type": "bill",
+  "title": "Bill 3 - Guidelines for Use of Unspecified Funds",
+  "role": "sponsor",
+  "name": "Christy Vogt"
+ },
+ {
+  "file": "1975-76/dc_resolution_1.pdf",
+  "session": "1975-76",
+  "type": "resolution",
+  "title": "Resolution 1 - Dorm Visitation",
+  "role": "author",
+  "name": "Tom Blair In"
+ },
+ {
+  "file": "1975-76/dc_resolution_1.pdf",
+  "session": "1975-76",
+  "type": "resolution",
+  "title": "Resolution 1 - Dorm Visitation",
+  "role": "author",
+  "name": "Abstain Jeff Cashdollar"
+ },
+ {
+  "file": "1976-77/dc_bill_10.pdf",
+  "session": "1976-77",
+  "type": "bill",
+  "title": "Bill 8 - Complaint Committee",
+  "role": "author",
+  "name": "Stephens Kirt Grubbs"
+ },
+ {
+  "file": "1976-77/dc_bill_12.pdf",
+  "session": "1976-77",
+  "type": "bill",
+  "title": "Bill 6 - ASG Evaluation",
+  "role": "sponsor",
+  "name": "Gene Saunders Christy Vogt"
+ },
+ {
+  "file": "1976-77/dc_bill_13.pdf",
+  "session": "1976-77",
+  "type": "bill",
+  "title": "Bill 5 - Amendment to Bill #3",
+  "role": "author",
+  "name": "Jeff Cashdollar"
+ },
+ {
+  "file": "1976-77/dc_bill_2.pdf",
+  "session": "1976-77",
+  "type": "bill",
+  "title": "Bill 2 - Constitutional Revision Committee",
+  "role": "author",
+  "name": "Tim Leigh John Evans Tom Blair"
+ },
+ {
+  "file": "1976-77/dc_bill_3.pdf",
+  "session": "1976-77",
+  "type": "bill",
+  "title": "Bill 4 - Boycott Endorsement",
+  "role": "author",
+  "name": "Bill Cortus"
+ },
+ {
+  "file": "1976-77/dc_bill_4.pdf",
+  "session": "1976-77",
+  "type": "bill",
+  "title": "Bill 1 - Club Representation",
+  "role": "author",
+  "name": "Gene Saunders"
+ },
+ {
+  "file": "1976-77/dc_bill_8.pdf",
+  "session": "1976-77",
+  "type": "bill",
+  "title": "Bill 10 - Volunteer Bureau Incorporation",
+  "role": "author",
+  "name": "Peggy Yuda"
+ },
+ {
+  "file": "1976-77/dc_resolution_11.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 3 - Solar Energy",
+  "role": "author",
+  "name": "John D. Evans"
+ },
+ {
+  "file": "1976-77/dc_resolution_12.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 12 - Change in Dorms",
+  "role": "author",
+  "name": "Brad Ford"
+ },
+ {
+  "file": "1976-77/dc_resolution_12.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 12 - Change in Dorms",
+  "role": "sponsor",
+  "name": "Christy Vogt"
+ },
+ {
+  "file": "1976-77/dc_resolution_14.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 14 - Night Clerk Permits",
+  "role": "author",
+  "name": "Gene Saunders"
+ },
+ {
+  "file": "1976-77/dc_resolution_17.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 17 - Ice Machines",
+  "role": "author",
+  "name": "Brad Ford"
+ },
+ {
+  "file": "1976-77/dc_resolution_19.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 25 - Hub Pizzeria Beer License",
+  "role": "author",
+  "name": "Bill Cortus"
+ },
+ {
+  "file": "1976-77/dc_resolution_2.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 2 - Abrogation of Mandatory Housing",
+  "role": "author",
+  "name": "Tim Leigh John Evans Tom Blair"
+ },
+ {
+  "file": "1976-77/dc_resolution_20.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 24 - [December Graduation]",
+  "role": "author",
+  "name": "John D. Evans"
+ },
+ {
+  "file": "1976-77/dc_resolution_20.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 24 - [December Graduation]",
+  "role": "sponsor",
+  "name": "Tim Leigh Gene Saunders"
+ },
+ {
+  "file": "1976-77/dc_resolution_23.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 21 - Discrimination",
+  "role": "sponsor",
+  "name": "Jeff Cashdollar Christy Vogt"
+ },
+ {
+  "file": "1976-77/dc_resolution_25.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 19 - Check Cashing",
+  "role": "author",
+  "name": "Brad Ford"
+ },
+ {
+  "file": "1976-77/dc_resolution_4.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 10 - Merchant Relations",
+  "role": "author",
+  "name": "Bill Cortus"
+ },
+ {
+  "file": "1976-77/dc_resolution_7.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 7 - Library Bookdrop",
+  "role": "author",
+  "name": "Gene Saunders"
+ },
+ {
+  "file": "1976-77/dc_resolution_8.pdf",
+  "session": "1976-77",
+  "type": "resolution",
+  "title": "Resolution 6 - November 1 - Election Day",
+  "role": "author",
+  "name": "Bob Bouhl"
+ },
+ {
+  "file": "1977-78/dc_bill_16.pdf",
+  "session": "1977-78",
+  "type": "bill",
+  "title": "Bill - Dental Legislation",
+  "role": "sponsor",
+  "name": "Terri Craig Gene Saunders"
+ },
+ {
+  "file": "1977-78/dc_resolution_292.pdf",
+  "session": "1977-78",
+  "type": "resolution",
+  "title": "Resolution 78-18 - Lifestyle Referendum for April 17 Election",
+  "role": "sponsor",
+  "name": "The Hous"
+ },
+ {
+  "file": "1978-79/dc_bill_237.pdf",
+  "session": "1978-79",
+  "type": "bill",
+  "title": "Bill #78-14 - Establishment of Minority Affairs Committee",
+  "role": "author",
+  "name": "Victor Jackson"
+ },
+ {
+  "file": "1978-79/dc_resolution_26.pdf",
+  "session": "1978-79",
+  "type": "resolution",
+  "title": "Resolution 78-4 - SGA Vacancies",
+  "role": "sponsor",
+  "name": "Steve O. Thornton"
+ },
+ {
+  "file": "1978-79/dc_resolution_282.pdf",
+  "session": "1978-79",
+  "type": "resolution",
+  "title": "Resolution 78-6 - Joint ASG-Faculty Senate Faculty Evaluation Committee",
+  "role": "author",
+  "name": "Ratliff Bryant Victor Jackson"
+ },
+ {
+  "file": "1978-79/dc_resolution_283.pdf",
+  "session": "1978-79",
+  "type": "resolution",
+  "title": "Resolution 78-7 - Minority Representation on Presidential Screening Committee",
+  "role": "author",
+  "name": "Kent Lee Victor Jackson"
+ },
+ {
+  "file": "1978-79/dc_resolution_283.pdf",
+  "session": "1978-79",
+  "type": "resolution",
+  "title": "Resolution 78-7 - Minority Representation on Presidential Screening Committee",
+  "role": "author",
+  "name": "Kent Lee Victor Jackson"
+ },
+ {
+  "file": "1978-79/dc_resolution_319.pdf",
+  "session": "1978-79",
+  "type": "resolution",
+  "title": "Resolution 79-1 - Increased Library Hours",
+  "role": "author",
+  "name": "James E. Hargrove"
+ },
+ {
+  "file": "1978-79/dc_resolution_320.pdf",
+  "session": "1978-79",
+  "type": "resolution",
+  "title": "Resolution 79-5 - Phased Laundry Facilities Construction",
+  "role": "author",
+  "name": "Shawn Bryant Steve Fuller Marla Jo Kingrey"
+ },
+ {
+  "file": "1978-79/dc_resolution_320.pdf",
+  "session": "1978-79",
+  "type": "resolution",
+  "title": "Resolution 79-5 - Phased Laundry Facilities Construction",
+  "role": "author",
+  "name": "Ann Klarer Kent Lee Debbie Thomas"
+ },
+ {
+  "file": "1979-80/dc_resolution_258.pdf",
+  "session": "1979-80",
+  "type": "resolution",
+  "title": "Resolution 79-22 - Candidate Expenditures",
+  "role": "author",
+  "name": "Kevin Kinne"
+ },
+ {
+  "file": "1979-80/dc_resolution_258.pdf",
+  "session": "1979-80",
+  "type": "resolution",
+  "title": "Resolution 79-22 - Candidate Expenditures",
+  "role": "sponsor",
+  "name": "Jamie Hargrove"
+ },
+ {
+  "file": "1979-80/dc_resolution_259.pdf",
+  "session": "1979-80",
+  "type": "resolution",
+  "title": "Resolution 80-1 - Permission for Room Inspection",
+  "role": "sponsor",
+  "name": "Kevin Kinne"
+ },
+ {
+  "file": "1979-80/dc_resolution_321.pdf",
+  "session": "1979-80",
+  "type": "resolution",
+  "title": "Resolution 79-7 - Diddle Dorm Proposal",
+  "role": "author",
+  "name": "Steve Fuller"
+ },
+ {
+  "file": "1979-80/dc_resolution_328.pdf",
+  "session": "1979-80",
+  "type": "resolution",
+  "title": "Resolution 79-14 - Housing Improvements Research",
+  "role": "author",
+  "name": "James E. Hargrove Shawn R. Bryant"
+ },
+ {
+  "file": "1979-80/dc_resolution_329.pdf",
+  "session": "1979-80",
+  "type": "resolution",
+  "title": "Resolution 79-15 - Book Sale Resolution",
+  "role": "author",
+  "name": "Steve Fuller Lonnie Sears"
+ },
+ {
+  "file": "1979-80/dc_resolution_330.pdf",
+  "session": "1979-80",
+  "type": "resolution",
+  "title": "Resolution 79-16 - Ultra Extension Support",
+  "role": "author",
+  "name": "Shawn Bryant"
+ },
+ {
+  "file": "1979-80/dc_resolution_330.pdf",
+  "session": "1979-80",
+  "type": "resolution",
+  "title": "Resolution 79-16 - Ultra Extension Support",
+  "role": "sponsor",
+  "name": "Shawn Ratliff Bryant James Earl Hargrove Deanna Hopper"
+ },
+ {
+  "file": "1980-81/dc_resolution_260.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-4 - Cockroaches",
+  "role": "sponsor",
+  "name": "Baker Kevin Kinne"
+ },
+ {
+  "file": "1980-81/dc_resolution_261.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-5 - Open House Visitor Lists",
+  "role": "sponsor",
+  "name": "Baker Kevin Kinne"
+ },
+ {
+  "file": "1980-81/dc_resolution_263.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-7 - Budget Cutback",
+  "role": "sponsor",
+  "name": "Paul Turner Carter Becky Woods"
+ },
+ {
+  "file": "1980-81/dc_resolution_264.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-9 - Officer Availability Reports",
+  "role": "author",
+  "name": "Kevin Kinne Spons"
+ },
+ {
+  "file": "1980-81/dc_resolution_265.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-10 - IHC-ASG Resolution",
+  "role": "author",
+  "name": "Kevin Strader Steve Fuller Paul Carter"
+ },
+ {
+  "file": "1980-81/dc_resolution_265.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-10 - IHC-ASG Resolution",
+  "role": "sponsor",
+  "name": "Laura Simms"
+ },
+ {
+  "file": "1980-81/dc_resolution_266.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-11 - Coed Security",
+  "role": "author",
+  "name": "Marcel Bush"
+ },
+ {
+  "file": "1980-81/dc_resolution_266.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-11 - Coed Security",
+  "role": "sponsor",
+  "name": "Wilson October"
+ },
+ {
+  "file": "1980-81/dc_resolution_267.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-12 - Inspection Policy",
+  "role": "author",
+  "name": "Lonnie Sears"
+ },
+ {
+  "file": "1980-81/dc_resolution_267.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-12 - Inspection Policy",
+  "role": "sponsor",
+  "name": "Kevin Kinne"
+ },
+ {
+  "file": "1980-81/dc_resolution_269.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-16 - Visitor Discrimination",
+  "role": "sponsor",
+  "name": "Kevin Kinne"
+ },
+ {
+  "file": "1980-81/dc_resolution_270.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-18 - Advanced Registration",
+  "role": "sponsor",
+  "name": "Kevin Kinne"
+ },
+ {
+  "file": "1980-81/dc_resolution_333.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 80-17 - Dorm Inspection Rules",
+  "role": "author",
+  "name": "Marcel Bush"
+ },
+ {
+  "file": "1980-81/dc_resolution_335.pdf",
+  "session": "1980-81",
+  "type": "resolution",
+  "title": "Resolution 81-1 - Budget Cuts",
+  "role": "author",
+  "name": "Bush Spo"
+ },
+ {
+  "file": "1981-82/dc_resolution_236.pdf",
+  "session": "1981-82",
+  "type": "resolution",
+  "title": "Resolution 81-12 - Grace Week",
+  "role": "author",
+  "name": "Oouglas Ball"
+ },
+ {
+  "file": "1981-82/dc_resolution_253.pdf",
+  "session": "1981-82",
+  "type": "resolution",
+  "title": "Resolution 81-5 - Parking Privileges",
+  "role": "author",
+  "name": "Cristy Sisk"
+ },
+ {
+  "file": "1981-82/dc_resolution_253.pdf",
+  "session": "1981-82",
+  "type": "resolution",
+  "title": "Resolution 81-5 - Parking Privileges",
+  "role": "sponsor",
+  "name": "Chandy Chri"
+ },
+ {
+  "file": "1981-82/dc_resolution_254.pdf",
+  "session": "1981-82",
+  "type": "resolution",
+  "title": "Resolution 81-6 - Privacy",
+  "role": "author",
+  "name": "Lonnie Sears"
+ },
+ {
+  "file": "1981-82/dc_resolution_255.pdf",
+  "session": "1981-82",
+  "type": "resolution",
+  "title": "Resolution 81-7 - Drainage System",
+  "role": "author",
+  "name": "Perry Hines Jack Smith"
+ },
+ {
+  "file": "1981-82/dc_resolution_255.pdf",
+  "session": "1981-82",
+  "type": "resolution",
+  "title": "Resolution 81-7 - Drainage System",
+  "role": "sponsor",
+  "name": "Lonnie Sea"
+ },
+ {
+  "file": "1981-82/dc_resolution_257.pdf",
+  "session": "1981-82",
+  "type": "resolution",
+  "title": "Resolution 81-10 - Disbursement of State Funds",
+  "role": "author",
+  "name": "Margaret Ragan"
+ },
+ {
+  "file": "1981-82/dc_resolution_280.pdf",
+  "session": "1981-82",
+  "type": "resolution",
+  "title": "Resolution 81-8 Student Ticket Price Cut",
+  "role": "author",
+  "name": "Doug Ball Lonnie Sears Greg Jennings"
+ },
+ {
+  "file": "1982-83/dc_resolution_239.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-4-F - Coeducational Housing",
+  "role": "author",
+  "name": "Smith Edmund Jordan"
+ },
+ {
+  "file": "1982-83/dc_resolution_239.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-4-F - Coeducational Housing",
+  "role": "author",
+  "name": "Borden Enma"
+ },
+ {
+  "file": "1982-83/dc_resolution_239.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-4-F - Coeducational Housing",
+  "role": "author",
+  "name": "Exoa Satb Exp Sat Exp Sat Exp Sat"
+ },
+ {
+  "file": "1982-83/dc_resolution_239.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-4-F - Coeducational Housing",
+  "role": "author",
+  "name": "Close Friends"
+ },
+ {
+  "file": "1982-83/dc_resolution_239.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-4-F - Coeducational Housing",
+  "role": "author",
+  "name": "Very Much"
+ },
+ {
+  "file": "1982-83/dc_resolution_239.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-4-F - Coeducational Housing",
+  "role": "sponsor",
+  "name": "Coeducational Hous"
+ },
+ {
+  "file": "1982-83/dc_resolution_239.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-4-F - Coeducational Housing",
+  "role": "sponsor",
+  "name": "Would Coed"
+ },
+ {
+  "file": "1982-83/dc_resolution_242.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-9-S - Review of Bookstore",
+  "role": "author",
+  "name": "Jack D. Smith Tony"
+ },
+ {
+  "file": "1982-83/dc_resolution_242.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-9-S - Review of Bookstore",
+  "role": "author",
+  "name": "Connie Hoffmann Traci Turner"
+ },
+ {
+  "file": "1982-83/dc_resolution_243.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-8-S - Termination of Student Ticket Sales",
+  "role": "author",
+  "name": "Margaret K. Ragan"
+ },
+ {
+  "file": "1982-83/dc_resolution_243.pdf",
+  "session": "1982-83",
+  "type": "resolution",
+  "title": "Resolution 82-8-S - Termination of Student Ticket Sales",
+  "role": "sponsor",
+  "name": "Jack D. Smith"
+ },
+ {
+  "file": "1985-86/dc_bill_17.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-17-F - Week-Long Thanksgiving Break",
+  "role": "author",
+  "name": "Greg Elder Tom Neth Chrls Watkins"
+ },
+ {
+  "file": "1985-86/dc_bill_17.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-17-F - Week-Long Thanksgiving Break",
+  "role": "sponsor",
+  "name": "Ed Kenney Sean Peck Tony Vlck"
+ },
+ {
+  "file": "1985-86/dc_bill_19.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-13-F - Upgrading of Lighting on Campus",
+  "role": "author",
+  "name": "Bill Schilling"
+ },
+ {
+  "file": "1985-86/dc_bill_22.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-10-F - Changing of Intersection",
+  "role": "author",
+  "name": "Mimi Gainer Daniel Rodriguez"
+ },
+ {
+  "file": "1985-86/dc_bill_22.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-10-F - Changing of Intersection",
+  "role": "sponsor",
+  "name": "Greg Robertson"
+ },
+ {
+  "file": "1985-86/dc_bill_25.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-7-F - Removal of Obstructing Shrub",
+  "role": "author",
+  "name": "Jennifer Borsch Mimi Gainer Stacey"
+ },
+ {
+  "file": "1985-86/dc_bill_25.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-7-F - Removal of Obstructing Shrub",
+  "role": "author",
+  "name": "Bryan Greg Robertso"
+ },
+ {
+  "file": "1985-86/dc_bill_25.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-7-F - Removal of Obstructing Shrub",
+  "role": "sponsor",
+  "name": "Loree Zimmer"
+ },
+ {
+  "file": "1985-86/dc_bill_26.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-6-F - Deadline Change for Free Drop/Adds",
+  "role": "author",
+  "name": "Daniel Rodriguez Greg Robertson Lori Dohrn"
+ },
+ {
+  "file": "1985-86/dc_bill_26.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-6-F - Deadline Change for Free Drop/Adds",
+  "role": "sponsor",
+  "name": "Loree Zimmerman"
+ },
+ {
+  "file": "1985-86/dc_bill_27.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 1985-5-F - Reduction of Grade Point Average for Congress",
+  "role": "author",
+  "name": "Murphy Brock Greg Elder Ed Kenney Chris"
+ },
+ {
+  "file": "1985-86/dc_bill_27.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 1985-5-F - Reduction of Grade Point Average for Congress",
+  "role": "author",
+  "name": "Tim Todd Daniel Rodriguez"
+ },
+ {
+  "file": "1985-86/dc_bill_27.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 1985-5-F - Reduction of Grade Point Average for Congress",
+  "role": "sponsor",
+  "name": "Cindy Richards"
+ },
+ {
+  "file": "1985-86/dc_bill_29.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 85-3-F - Alternative Snow Schedule",
+  "role": "author",
+  "name": "Greg Elder Cindy Richards"
+ },
+ {
+  "file": "1985-86/dc_bill_40.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-7-S Improvement of Ditch",
+  "role": "author",
+  "name": "Bill Schilling"
+ },
+ {
+  "file": "1985-86/dc_bill_41.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-6-S - Placing Markers on Posts",
+  "role": "author",
+  "name": "Bill Sch"
+ },
+ {
+  "file": "1985-86/dc_bill_41.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-6-S - Placing Markers on Posts",
+  "role": "author",
+  "name": "Kent Groemling"
+ },
+ {
+  "file": "1985-86/dc_bill_41.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-6-S - Placing Markers on Posts",
+  "role": "sponsor",
+  "name": "Bill Schilling Tim Todd"
+ },
+ {
+  "file": "1985-86/dc_bill_43.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-4-S - Recognition of Martin Luther King, Jr.",
+  "role": "author",
+  "name": "Bill Schi"
+ },
+ {
+  "file": "1985-86/dc_bill_46.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-1-8 - Recognition of Special Holiday",
+  "role": "author",
+  "name": "William B. Schilling"
+ },
+ {
+  "file": "1985-86/dc_bill_46.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-1-8 - Recognition of Special Holiday",
+  "role": "sponsor",
+  "name": "Tara Wassom Donna Holloway Greg Elder William B. Schilling Terry Malone Loree Zimmerwan Caroline Mi"
+ },
+ {
+  "file": "1985-86/dc_bill_46.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-1-8 - Recognition of Special Holiday",
+  "role": "sponsor",
+  "name": "Murphy Brock Naheed Shafi Kim"
+ },
+ {
+  "file": "1985-86/dc_bill_46.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-1-8 - Recognition of Special Holiday",
+  "role": "sponsor",
+  "name": "Roland Spencer Terri Rice Kent Groeml"
+ },
+ {
+  "file": "1985-86/dc_bill_46.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-1-8 - Recognition of Special Holiday",
+  "role": "sponsor",
+  "name": "Renee Romans"
+ },
+ {
+  "file": "1985-86/dc_bill_49.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-29-S - Establishment of KISL as a Standing ASG Committee",
+  "role": "sponsor",
+  "name": "Lori Scott Te"
+ },
+ {
+  "file": "1985-86/dc_bill_49.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-29-S - Establishment of KISL as a Standing ASG Committee",
+  "role": "sponsor",
+  "name": "Malone Caro"
+ },
+ {
+  "file": "1985-86/dc_bill_49.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-29-S - Establishment of KISL as a Standing ASG Committee",
+  "role": "sponsor",
+  "name": "Miller Bi"
+ },
+ {
+  "file": "1985-86/dc_bill_49.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-29-S - Establishment of KISL as a Standing ASG Committee",
+  "role": "sponsor",
+  "name": "Tim Tcrld Roland Spencer Loree"
+ },
+ {
+  "file": "1985-86/dc_bill_49.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-29-S - Establishment of KISL as a Standing ASG Committee",
+  "role": "sponsor",
+  "name": "Donna Pack Sean Peck Daniel Rodriguez"
+ },
+ {
+  "file": "1985-86/dc_bill_54.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-24-S - Purchasing of Box Springs for Pearce-Ford Tower",
+  "role": "sponsor",
+  "name": "Tim Todd Ed Kenney Chris"
+ },
+ {
+  "file": "1985-86/dc_bill_54.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-24-S - Purchasing of Box Springs for Pearce-Ford Tower",
+  "role": "sponsor",
+  "name": "Greg Elder Daniel Rodri"
+ },
+ {
+  "file": "1985-86/dc_bill_54.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-24-S - Purchasing of Box Springs for Pearce-Ford Tower",
+  "role": "sponsor",
+  "name": "Roland Spencer Holger Velas"
+ },
+ {
+  "file": "1985-86/dc_bill_54.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-24-S - Purchasing of Box Springs for Pearce-Ford Tower",
+  "role": "sponsor",
+  "name": "Kim Summers Loree Scott Mark Lovell"
+ },
+ {
+  "file": "1985-86/dc_bill_58.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-20-S - Academic Affairs Committee Requirement",
+  "role": "author",
+  "name": "Henry Meadows Donna Pack Greg Robertson Ron Saunders"
+ },
+ {
+  "file": "1985-86/dc_bill_58.pdf",
+  "session": "1985-86",
+  "type": "bill",
+  "title": "Bill 86-20-S - Academic Affairs Committee Requirement",
+  "role": "sponsor",
+  "name": "Naheed Shafi Sean Peck Bill Schi"
+ },
+ {
+  "file": "1985-86/dc_resolution_140.pdf",
+  "session": "1985-86",
+  "type": "resolution",
+  "title": "Resolution 86-23-S - Placing of Chain on Windows",
+  "role": "author",
+  "name": "Bill Schilllng"
+ },
+ {
+  "file": "1985-86/dc_resolution_140.pdf",
+  "session": "1985-86",
+  "type": "resolution",
+  "title": "Resolution 86-23-S - Placing of Chain on Windows",
+  "role": "sponsor",
+  "name": "Tim Todd Lori Scott Loree Zimmerman Daniel Rodriguez Holger"
+ },
+ {
+  "file": "1985-86/dc_resolution_140.pdf",
+  "session": "1985-86",
+  "type": "resolution",
+  "title": "Resolution 86-23-S - Placing of Chain on Windows",
+  "role": "sponsor",
+  "name": "Ed Kenney Roland Spencer Kim Summers"
+ },
+ {
+  "file": "1985-86/dc_resolution_28.pdf",
+  "session": "1985-86",
+  "type": "resolution",
+  "title": "Resolution 85-16-F - Fall Mid-Semester Break",
+  "role": "author",
+  "name": "Henry Meadows Daniel Rodr"
+ },
+ {
+  "file": "1985-86/dc_resolution_28.pdf",
+  "session": "1985-86",
+  "type": "resolution",
+  "title": "Resolution 85-16-F - Fall Mid-Semester Break",
+  "role": "author",
+  "name": "Stephanie Sims"
+ },
+ {
+  "file": "1985-86/dc_resolution_29.pdf",
+  "session": "1985-86",
+  "type": "resolution",
+  "title": "Resolution 85-14-F - Student ID Card and SuperCard Merger",
+  "role": "author",
+  "name": "Bill Schilling"
+ },
+ {
+  "file": "1986-87/dc_bill_64.pdf",
+  "session": "1986-87",
+  "type": "bill",
+  "title": "Bill 86-1-F - College Representative Elections",
+  "role": "sponsor",
+  "name": "Debra Broz Carol Norcia Bill Fogle Lori Scott Debra Wredman Ho"
+ },
+ {
+  "file": "1986-87/dc_bill_64.pdf",
+  "session": "1986-87",
+  "type": "bill",
+  "title": "Bill 86-1-F - College Representative Elections",
+  "role": "sponsor",
+  "name": "Velastegui Barbara Rush"
+ },
+ {
+  "file": "1986-87/dc_resolution_33.pdf",
+  "session": "1986-87",
+  "type": "resolution",
+  "title": "Resolution 86-6-F - Additional Support for Inter-Hall Council",
+  "role": "author",
+  "name": "Schilling Representative-A"
+ },
+ {
+  "file": "1986-87/dc_resolution_39.pdf",
+  "session": "1986-87",
+  "type": "resolution",
+  "title": "Resolution 86-14-F - Removal of &quot;W&quot;",
+  "role": "author",
+  "name": "Schilling Representative"
+ },
+ {
+  "file": "1987-88/dc_resolution_42.pdf",
+  "session": "1987-88",
+  "type": "resolution",
+  "title": "Resolution 88-9-S - Ticket Sales Office",
+  "role": "sponsor",
+  "name": "Burge Hollie Hale Terri Ilakefield"
+ },
+ {
+  "file": "1988-89/dc_resolution_138.pdf",
+  "session": "1988-89",
+  "type": "resolution",
+  "title": "Resolution 89-2-S - Student Athletic Promotions Committee",
+  "role": "author",
+  "name": "Shannon Ragland"
+ },
+ {
+  "file": "1988-89/dc_resolution_139.pdf",
+  "session": "1988-89",
+  "type": "resolution",
+  "title": "Resolution 89-1-S - Study Day Before Finals",
+  "role": "author",
+  "name": "Van Hodge"
+ },
+ {
+  "file": "1988-89/dc_resolution_139.pdf",
+  "session": "1988-89",
+  "type": "resolution",
+  "title": "Resolution 89-1-S - Study Day Before Finals",
+  "role": "author",
+  "name": "Robin Kinma"
+ },
+ {
+  "file": "1988-89/dc_resolution_45.pdf",
+  "session": "1988-89",
+  "type": "resolution",
+  "title": "Resolution 89-8-S - Conversion of Non-airconditioned Residence Hall to Coed Housing",
+  "role": "author",
+  "name": "Shannon Rag"
+ },
+ {
+  "file": "1988-89/dc_resolution_45.pdf",
+  "session": "1988-89",
+  "type": "resolution",
+  "title": "Resolution 89-8-S - Conversion of Non-airconditioned Residence Hall to Coed Housing",
+  "role": "sponsor",
+  "name": "Daniel Duffy Rob Evans"
+ },
+ {
+  "file": "1988-89/dc_resolution_45.pdf",
+  "session": "1988-89",
+  "type": "resolution",
+  "title": "Resolution 89-8-S - Conversion of Non-airconditioned Residence Hall to Coed Housing",
+  "role": "sponsor",
+  "name": "Second Read"
+ },
+ {
+  "file": "1988-89/dc_resolution_46.pdf",
+  "session": "1988-89",
+  "type": "resolution",
+  "title": "Resolution 89-7-S - Reschedule Spring Break",
+  "role": "author",
+  "name": "Eric Elliott"
+ },
+ {
+  "file": "1988-89/dc_resolution_49.pdf",
+  "session": "1988-89",
+  "type": "resolution",
+  "title": "Resolution 89-4-S - Extend Theater Hours",
+  "role": "author",
+  "name": "Van Hodge Victo"
+ },
+ {
+  "file": "1988-89/dc_resolution_49.pdf",
+  "session": "1988-89",
+  "type": "resolution",
+  "title": "Resolution 89-4-S - Extend Theater Hours",
+  "role": "author",
+  "name": "Arms Public Re"
+ },
+ {
+  "file": "1989-90/dc_resolution_136.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 89-7-F - Establish Kentucky Public Interest Research Group",
+  "role": "author",
+  "name": "Rod Barnes Adminlst"
+ },
+ {
+  "file": "1989-90/dc_resolution_144.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 90-12-S - Men's Restrooms",
+  "role": "sponsor",
+  "name": "The Downing Univer"
+ },
+ {
+  "file": "1989-90/dc_resolution_153.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 90-5-S - New Parking Permit",
+  "role": "sponsor",
+  "name": "Joe Ra"
+ },
+ {
+  "file": "1989-90/dc_resolution_153.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 90-5-S - New Parking Permit",
+  "role": "sponsor",
+  "name": "Jason Stevens Janie Price Heathe"
+ },
+ {
+  "file": "1989-90/dc_resolution_153.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 90-5-S - New Parking Permit",
+  "role": "sponsor",
+  "name": "Kristin Fryrear Ro"
+ },
+ {
+  "file": "1989-90/dc_resolution_209.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 89-4-F - Extend Library Hours",
+  "role": "author",
+  "name": "Amos Gott"
+ },
+ {
+  "file": "1989-90/dc_resolution_210.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 89-3-F - Class on Sexually Transmitted Diseases",
+  "role": "author",
+  "name": "India Wilson Greg Willoughby Joe Rains Daniel Duffy Chris Summerville"
+ },
+ {
+  "file": "1989-90/dc_resolution_210.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 89-3-F - Class on Sexually Transmitted Diseases",
+  "role": "sponsor",
+  "name": "Michael Colvin Authors"
+ },
+ {
+  "file": "1989-90/dc_resolution_210.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 89-3-F - Class on Sexually Transmitted Diseases",
+  "role": "sponsor",
+  "name": "India Wilson Greg Willoughby Joe Rains Daniel Duffy Chris Summerville"
+ },
+ {
+  "file": "1989-90/dc_resolution_214.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 90-18-S - Preston Health &amp; Activities Center Construction Fees",
+  "role": "sponsor",
+  "name": "Presidents Doard"
+ },
+ {
+  "file": "1989-90/dc_resolution_216.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 90-13-S - 24 Hour Visitation",
+  "role": "author",
+  "name": "Colvin Adminis"
+ },
+ {
+  "file": "1989-90/dc_resolution_218.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 90-8-S - WWHR New Rock 92",
+  "role": "author",
+  "name": "Kristin Fryrear"
+ },
+ {
+  "file": "1989-90/dc_resolution_221.pdf",
+  "session": "1989-90",
+  "type": "resolution",
+  "title": "Resolution 90-1-S - Freshman Orientation",
+  "role": "author",
+  "name": "Amos E. Gatt"
+ },
+ {
   "file": "1991-92/bill_92-01-s.pdf",
   "session": "1991-92",
   "type": "bill",
   "title": "Development of Advisory Committee for Student Regent",
   "role": "author",
   "name": "Greg Butler Mistianna Holcomb Melany Jones Melissa Maggard"
+ },
+ {
+  "file": "1991-92/dc_bill_146.pdf",
+  "session": "1991-92",
+  "type": "bill",
+  "title": "Bill #92-13-S - Installation of Emergency Speaker Phone System",
+  "role": "author",
+  "name": "Laura Jo Bland Mark Miller James Lindsey Elizabeth Fauver"
+ },
+ {
+  "file": "1991-92/dc_bill_149.pdf",
+  "session": "1991-92",
+  "type": "bill",
+  "title": "Bill #92-10-S - Constitutional Amendment to Rename ASG to SGA",
+  "role": "author",
+  "name": "Joe Rains"
+ },
+ {
+  "file": "1991-92/dc_bill_151.pdf",
+  "session": "1991-92",
+  "type": "bill",
+  "title": "Bill #92-09-S - Establish ASG Health Insurance Ad-Hoc Committee",
+  "role": "author",
+  "name": "Andrea D. Cailles"
+ },
+ {
+  "file": "1991-92/dc_bill_154.pdf",
+  "session": "1991-92",
+  "type": "bill",
+  "title": "Bill #92-06-S - Establishment of Permanent Voter Registration Program",
+  "role": "sponsor",
+  "name": "Trent Lyda"
+ },
+ {
+  "file": "1991-92/dc_bill_155.pdf",
+  "session": "1991-92",
+  "type": "bill",
+  "title": "Bill #92-05-S - Recycling Drop-Off Center",
+  "role": "sponsor",
+  "name": "Robert Schneider"
+ },
+ {
+  "file": "1991-92/dc_bill_155.pdf",
+  "session": "1991-92",
+  "type": "bill",
+  "title": "Bill #92-05-S - Recycling Drop-Off Center",
+  "role": "sponsor",
+  "name": "Tom Springer M. Elizabeth"
+ },
+ {
+  "file": "1991-92/dc_bill_157.pdf",
+  "session": "1991-92",
+  "type": "bill",
+  "title": "Bill #92-03-S - Establishment of a Coach for a Game Program",
+  "role": "author",
+  "name": "Mistianna Holcomb"
+ },
+ {
+  "file": "1991-92/dc_resolution_191.pdf",
+  "session": "1991-92",
+  "type": "resolution",
+  "title": "Resolution 92-4-S - Limit Freshman Parking On Campus",
+  "role": "author",
+  "name": "Lorie Davis Syed Ahsan"
+ },
+ {
+  "file": "1991-92/dc_resolution_193.pdf",
+  "session": "1991-92",
+  "type": "resolution",
+  "title": "Resolution 92-3-S - Disposable Toilet Seat Covers",
+  "role": "author",
+  "name": "Pat Monohan Scott Sivley Eric"
+ },
+ {
+  "file": "1991-92/dc_resolution_197.pdf",
+  "session": "1991-92",
+  "type": "resolution",
+  "title": "Resolution 92-1-S - Repeat Classes",
+  "role": "author",
+  "name": "Greg Butler Scott Sivley Dev"
+ },
+ {
+  "file": "1991-92/dc_resolution_204.pdf",
+  "session": "1991-92",
+  "type": "resolution",
+  "title": "Resolution 93-2-S - Study Day Preceding Exam Week",
+  "role": "author",
+  "name": "Matt Anderson"
+ },
+ {
+  "file": "1991-92/dc_resolution_204.pdf",
+  "session": "1991-92",
+  "type": "resolution",
+  "title": "Resolution 93-2-S - Study Day Preceding Exam Week",
+  "role": "author",
+  "name": "Huma Ahsan"
+ },
+ {
+  "file": "1991-92/dc_resolution_204.pdf",
+  "session": "1991-92",
+  "type": "resolution",
+  "title": "Resolution 93-2-S - Study Day Preceding Exam Week",
+  "role": "author",
+  "name": "Trent Lyda"
+ },
+ {
+  "file": "1991-92/dc_resolution_204.pdf",
+  "session": "1991-92",
+  "type": "resolution",
+  "title": "Resolution 93-2-S - Study Day Preceding Exam Week",
+  "role": "author",
+  "name": "Eddie Myers"
+ },
+ {
+  "file": "1991-92/dc_resolution_204.pdf",
+  "session": "1991-92",
+  "type": "resolution",
+  "title": "Resolution 93-2-S - Study Day Preceding Exam Week",
+  "role": "author",
+  "name": "Molly Schreiner"
+ },
+ {
+  "file": "1991-92/dc_resolution_204.pdf",
+  "session": "1991-92",
+  "type": "resolution",
+  "title": "Resolution 93-2-S - Study Day Preceding Exam Week",
+  "role": "author",
+  "name": "Pamela Wells"
+ },
+ {
+  "file": "1991-92/dc_resolution_204.pdf",
+  "session": "1991-92",
+  "type": "resolution",
+  "title": "Resolution 93-2-S - Study Day Preceding Exam Week",
+  "role": "sponsor",
+  "name": "Tht Spirit"
  },
  {
   "file": "1991-92/resolution_91-6-f.pdf",
@@ -24,12 +1312,916 @@
   "name": "Mistianna Holcomb Joe Iracane"
  },
  {
+  "file": "1992-93/dc_bill_147.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #92-13-F - Appointment of Alternate for the Four College Representatives",
+  "role": "author",
+  "name": "Joe D. Tinsley"
+ },
+ {
+  "file": "1992-93/dc_bill_150.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #92-10-F - Community Affairs Spokesperson",
+  "role": "author",
+  "name": "Huma Ahsan"
+ },
+ {
+  "file": "1992-93/dc_bill_150.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #92-10-F - Community Affairs Spokesperson",
+  "role": "sponsor",
+  "name": "The Spirit"
+ },
+ {
+  "file": "1992-93/dc_bill_152.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #92-09-F - Contractual Agreement for Adopt-a-Spot Program",
+  "role": "author",
+  "name": "Kevin Moore"
+ },
+ {
+  "file": "1992-93/dc_bill_156.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #92-05-F - Establishing Forums Between Campus Residents &amp; SGA",
+  "role": "sponsor",
+  "name": "The Spirit"
+ },
+ {
+  "file": "1992-93/dc_bill_159.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #93-7-S - Providing Professor Evaluations for Students",
+  "role": "author",
+  "name": "Alex Rose"
+ },
+ {
+  "file": "1992-93/dc_bill_159.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #93-7-S - Providing Professor Evaluations for Students",
+  "role": "author",
+  "name": "Sam Sharbutt"
+ },
+ {
+  "file": "1992-93/dc_bill_159.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #93-7-S - Providing Professor Evaluations for Students",
+  "role": "sponsor",
+  "name": "Tk Spirit Makts"
+ },
+ {
+  "file": "1992-93/dc_bill_160.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #93-6-S - Student Tax Poll in Upcoming Election",
+  "role": "author",
+  "name": "Jennifer Raffaelli"
+ },
+ {
+  "file": "1992-93/dc_bill_160.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #93-6-S - Student Tax Poll in Upcoming Election",
+  "role": "author",
+  "name": "Chris Roberts"
+ },
+ {
+  "file": "1992-93/dc_bill_162.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #93-04-S - Organizational Aid Recipients",
+  "role": "author",
+  "name": "Jeremy Sublet"
+ },
+ {
+  "file": "1992-93/dc_bill_165.pdf",
+  "session": "1992-93",
+  "type": "bill",
+  "title": "Bill #93-1-S - Student Phone in Preston Center",
+  "role": "author",
+  "name": "Ashley Rose Joe Rains"
+ },
+ {
+  "file": "1992-93/dc_resolution_185.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 93-1-S - Copy Machine in Garrett Hall",
+  "role": "author",
+  "name": "Donald Smith"
+ },
+ {
+  "file": "1992-93/dc_resolution_188.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 92-8-F - Recognition of Lady Toppers",
+  "role": "author",
+  "name": "Gene Hadden"
+ },
+ {
+  "file": "1992-93/dc_resolution_194.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 92-3-F - Physical Plant Time Keeper",
+  "role": "author",
+  "name": "Bert Blevins Todd Geon Scott Sivley Pat Monahan Jeff Moore"
+ },
+ {
+  "file": "1992-93/dc_resolution_194.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 92-3-F - Physical Plant Time Keeper",
+  "role": "sponsor",
+  "name": "The Spirit Malts"
+ },
+ {
+  "file": "1992-93/dc_resolution_196.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 92-2-F - Reconciling Registration with Course Catalog",
+  "role": "author",
+  "name": "Sam Sharbutt"
+ },
+ {
+  "file": "1992-93/dc_resolution_198.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 93-8-S - Resurfacing of Smith Stadium Track",
+  "role": "author",
+  "name": "Margaret Carter"
+ },
+ {
+  "file": "1992-93/dc_resolution_198.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 93-8-S - Resurfacing of Smith Stadium Track",
+  "role": "sponsor",
+  "name": "Tht Spirit"
+ },
+ {
+  "file": "1992-93/dc_resolution_199.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 93-7-S - Ash Trays for Smokers",
+  "role": "sponsor",
+  "name": "Eddie Myers"
+ },
+ {
+  "file": "1992-93/dc_resolution_203.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 93-3-S - Advocate Program for Handicapped Students",
+  "role": "author",
+  "name": "Derrek Duncan"
+ },
+ {
+  "file": "1992-93/dc_resolution_203.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 93-3-S - Advocate Program for Handicapped Students",
+  "role": "author",
+  "name": "Kendra Welch"
+ },
+ {
+  "file": "1992-93/dc_resolution_203.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 93-3-S - Advocate Program for Handicapped Students",
+  "role": "author",
+  "name": "Emily Brown"
+ },
+ {
+  "file": "1992-93/dc_resolution_203.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 93-3-S - Advocate Program for Handicapped Students",
+  "role": "author",
+  "name": "Jennifer Raffaelli"
+ },
+ {
+  "file": "1992-93/dc_resolution_224.pdf",
+  "session": "1992-93",
+  "type": "resolution",
+  "title": "Resolution 92-6-F - Designation of Program Accreditation",
+  "role": "author",
+  "name": "Cindy Hayes Kibby Rose Joe Tinsley"
+ },
+ {
+  "file": "1993-94/dc_bill_187.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 93-2-F - Organizational Aid Recipients",
+  "role": "author",
+  "name": "Jason Scott Embry"
+ },
+ {
+  "file": "1993-94/dc_bill_187.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 93-2-F - Organizational Aid Recipients",
+  "role": "author",
+  "name": "Tara Higdon"
+ },
+ {
+  "file": "1993-94/dc_bill_187.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 93-2-F - Organizational Aid Recipients",
+  "role": "author",
+  "name": "William Zorn"
+ },
+ {
+  "file": "1993-94/dc_bill_187.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 93-2-F - Organizational Aid Recipients",
+  "role": "sponsor",
+  "name": "The Spirit Mokes"
+ },
+ {
+  "file": "1993-94/dc_bill_188.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 93-3-F - Library Copy Center Telephone",
+  "role": "author",
+  "name": "Julie Davis"
+ },
+ {
+  "file": "1993-94/dc_bill_188.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 93-3-F - Library Copy Center Telephone",
+  "role": "sponsor",
+  "name": "The Spirit Makrs Ih"
+ },
+ {
+  "file": "1993-94/dc_bill_190.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 93-5-F - Book Exchanger",
+  "role": "author",
+  "name": "Jill Reading Eddie Myers"
+ },
+ {
+  "file": "1993-94/dc_bill_194.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 93-11-F - Child Care Grants",
+  "role": "sponsor",
+  "name": "Child Care"
+ },
+ {
+  "file": "1993-94/dc_bill_194.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 93-11-F - Child Care Grants",
+  "role": "sponsor",
+  "name": "Child Care"
+ },
+ {
+  "file": "1993-94/dc_bill_195.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 93-12-F - Memorial Trees",
+  "role": "sponsor",
+  "name": "Donald Smit"
+ },
+ {
+  "file": "1993-94/dc_bill_196.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 94-1-S - Implementation of Peer Advising",
+  "role": "author",
+  "name": "Jennifer Raffaelli"
+ },
+ {
+  "file": "1993-94/dc_bill_197.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 94-2-S - Organizational Aid Recipients",
+  "role": "sponsor",
+  "name": "Jason Scott Embry Lena Swenten-Garner"
+ },
+ {
+  "file": "1993-94/dc_bill_197.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 94-2-S - Organizational Aid Recipients",
+  "role": "sponsor",
+  "name": "Brandon Rucker Rob Evans Tara Higdon William Zorn"
+ },
+ {
+  "file": "1993-94/dc_bill_198.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 94-3-S - Renewal of Student Health Insurance",
+  "role": "sponsor",
+  "name": "Spirit Maiers"
+ },
+ {
+  "file": "1993-94/dc_bill_200.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill 94-7-S - East Hall Shuttle Stop Shelter",
+  "role": "author",
+  "name": "Jason Scott Embry Donald Smith Scott Sivley Andrea Wilson Bert Blevins"
+ },
+ {
+  "file": "1993-94/dc_bill_238.pdf",
+  "session": "1993-94",
+  "type": "bill",
+  "title": "Bill #94-06-S - Publishing an Athletic Calendar",
+  "role": "author",
+  "name": "Eddie Myers"
+ },
+ {
+  "file": "1993-94/dc_resolution_228.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 94-6-S - Campus Telephones in Downing University Center",
+  "role": "author",
+  "name": "David Serafini William Zorn John Taylor Shawn Pinkston"
+ },
+ {
+  "file": "1993-94/dc_resolution_228.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 94-6-S - Campus Telephones in Downing University Center",
+  "role": "sponsor",
+  "name": "Tht Spirit Mom"
+ },
+ {
+  "file": "1993-94/dc_resolution_244.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-1-F - Trash Cans at Shuttle Stops",
+  "role": "author",
+  "name": "Leena Sweeten"
+ },
+ {
+  "file": "1993-94/dc_resolution_244.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-1-F - Trash Cans at Shuttle Stops",
+  "role": "author",
+  "name": "Garner David Serafini William Zorn"
+ },
+ {
+  "file": "1993-94/dc_resolution_244.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-1-F - Trash Cans at Shuttle Stops",
+  "role": "sponsor",
+  "name": "The Spirit Matts"
+ },
+ {
+  "file": "1993-94/dc_resolution_245.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-3-F - Cigarette Sand Barrels",
+  "role": "author",
+  "name": "Jill Reading Jennifer Raffaelli Bonnie Newton"
+ },
+ {
+  "file": "1993-94/dc_resolution_245.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-3-F - Cigarette Sand Barrels",
+  "role": "sponsor",
+  "name": "The Spirit"
+ },
+ {
+  "file": "1993-94/dc_resolution_248.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 94-2-S - Attendance Policy",
+  "role": "author",
+  "name": "Rob Evans Scott Sivley"
+ },
+ {
+  "file": "1993-94/dc_resolution_314.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-10-F - Policy Changed for Keys",
+  "role": "author",
+  "name": "Amee Ramsey Tracie Lane"
+ },
+ {
+  "file": "1993-94/dc_resolution_316.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 94-1-S - Publishing Teacher Evaluations",
+  "role": "author",
+  "name": "Jennifer Raffaelli"
+ },
+ {
+  "file": "1993-94/dc_resolution_317.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 94-4-S - $3 Big Red Card Fee",
+  "role": "author",
+  "name": "Brandon Rucker"
+ },
+ {
+  "file": "1993-94/dc_resolution_318.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 94-5-S - Funding for Social Work Faculty Member",
+  "role": "author",
+  "name": "Heather Meenach Rob Evans"
+ },
+ {
+  "file": "1993-94/dc_resolution_378.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-6-F - Syllabus Availability",
+  "role": "author",
+  "name": "Julie Davis"
+ },
+ {
+  "file": "1993-94/dc_resolution_378.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-6-F - Syllabus Availability",
+  "role": "author",
+  "name": "Lena Sweeten-Garner"
+ },
+ {
+  "file": "1993-94/dc_resolution_378.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-6-F - Syllabus Availability",
+  "role": "author",
+  "name": "William Zorn"
+ },
+ {
+  "file": "1993-94/dc_resolution_378.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-6-F - Syllabus Availability",
+  "role": "author",
+  "name": "Bonnie Newton"
+ },
+ {
+  "file": "1993-94/dc_resolution_379.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-5-F - Retaking Courses",
+  "role": "author",
+  "name": "Andrea Cailles"
+ },
+ {
+  "file": "1993-94/dc_resolution_379.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-5-F - Retaking Courses",
+  "role": "author",
+  "name": "Julie Davis"
+ },
+ {
+  "file": "1993-94/dc_resolution_379.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-5-F - Retaking Courses",
+  "role": "author",
+  "name": "Lena Sweeten"
+ },
+ {
+  "file": "1993-94/dc_resolution_379.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-5-F - Retaking Courses",
+  "role": "author",
+  "name": "William Zorn"
+ },
+ {
+  "file": "1993-94/dc_resolution_379.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-5-F - Retaking Courses",
+  "role": "sponsor",
+  "name": "The Spirit"
+ },
+ {
+  "file": "1993-94/dc_resolution_380.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-4-F - Improvement of Campus Shrubbery",
+  "role": "author",
+  "name": "Julie Davis Lena Garner William Zorn"
+ },
+ {
+  "file": "1993-94/dc_resolution_382.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-14-F - Lights on Campus",
+  "role": "author",
+  "name": "Tracie Lane Amme Ramsey Erin Bays Erin Schepman"
+ },
+ {
+  "file": "1993-94/dc_resolution_387.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-7-F - Installation of Phones in Parking Structure",
+  "role": "author",
+  "name": "Erin Bays"
+ },
+ {
+  "file": "1993-94/dc_resolution_387.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-7-F - Installation of Phones in Parking Structure",
+  "role": "author",
+  "name": "Erin Schepman"
+ },
+ {
+  "file": "1993-94/dc_resolution_389.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-18-F - Holiday Housing",
+  "role": "author",
+  "name": "Angelo Rodriguez"
+ },
+ {
+  "file": "1993-94/dc_resolution_392.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-15-F - Phone in Cherry Hall",
+  "role": "author",
+  "name": "David Serafini William Zorn"
+ },
+ {
+  "file": "1993-94/dc_resolution_392.pdf",
+  "session": "1993-94",
+  "type": "resolution",
+  "title": "Resolution 93-15-F - Phone in Cherry Hall",
+  "role": "sponsor",
+  "name": "The Spirit"
+ },
+ {
+  "file": "1994-95/dc_bill_75.pdf",
+  "session": "1994-95",
+  "type": "bill",
+  "title": "Bill 94-4-F - Physical Contact",
+  "role": "author",
+  "name": "Timothy W. Huddleston"
+ },
+ {
+  "file": "1994-95/dc_bill_76.pdf",
+  "session": "1994-95",
+  "type": "bill",
+  "title": "Bill 94-10-F - Big Red Days",
+  "role": "author",
+  "name": "Jason Young"
+ },
+ {
+  "file": "1994-95/dc_bill_79.pdf",
+  "session": "1994-95",
+  "type": "bill",
+  "title": "Bill 95-2-S - Organizational Aid Recipients",
+  "role": "author",
+  "name": "Brandon T. Rucker Tara Higdon Lena Sweeten"
+ },
+ {
+  "file": "1994-95/dc_resolution_55.pdf",
+  "session": "1994-95",
+  "type": "resolution",
+  "title": "Resolution 94-1-1 - Painting the Informational Sign",
+  "role": "author",
+  "name": "Brandon Rucker"
+ },
+ {
+  "file": "1994-95/dc_resolution_65.pdf",
+  "session": "1994-95",
+  "type": "resolution",
+  "title": "Resolution 94-18-F - Non-Circulating Textbook Library",
+  "role": "author",
+  "name": "Jason Young"
+ },
+ {
+  "file": "1994-95/dc_resolution_70.pdf",
+  "session": "1994-95",
+  "type": "resolution",
+  "title": "Resolution 95-5-S - Notification Policy",
+  "role": "author",
+  "name": "Tara Higdon"
+ },
+ {
+  "file": "1994-95/dc_resolution_75.pdf",
+  "session": "1994-95",
+  "type": "resolution",
+  "title": "Resolution 95-6-S - Sibling's Day",
+  "role": "author",
+  "name": "Carlene Lodmell Darlene Lodmell"
+ },
+ {
+  "file": "1995-96/dc_bill_81.pdf",
+  "session": "1995-96",
+  "type": "bill",
+  "title": "Bill 95-1-F - Organizational Aid Recipients on COA",
+  "role": "author",
+  "name": "Shawna Whartenby"
+ },
+ {
+  "file": "1995-96/dc_bill_83.pdf",
+  "session": "1995-96",
+  "type": "bill",
+  "title": "Bill 96-2-S - Constitutional Amendments",
+  "role": "author",
+  "name": "Carlene Lodmell Stephanie Cosby Ryan Faught Leigh Ann Sears"
+ },
+ {
+  "file": "1995-96/dc_bill_83.pdf",
+  "session": "1995-96",
+  "type": "bill",
+  "title": "Bill 96-2-S - Constitutional Amendments",
+  "role": "sponsor",
+  "name": "Trv Spirit"
+ },
+ {
+  "file": "1995-96/dc_resolution_73.pdf",
+  "session": "1995-96",
+  "type": "resolution",
+  "title": "Resolution 95-1-F - Replacing the Track",
+  "role": "author",
+  "name": "Carlene Lodmell Darlene Lodmell Steve Roadcap"
+ },
+ {
+  "file": "1995-96/dc_resolution_77.pdf",
+  "session": "1995-96",
+  "type": "resolution",
+  "title": "Resolution 95-10-F - Big Red Scanners in Library &amp; Public Safety Department",
+  "role": "author",
+  "name": "Margarel Carter Cindy Chiapella Sara Haswell Niki Haynes Heather Rogers Ann Wailing Shawna Whartenby"
+ },
+ {
+  "file": "1995-96/dc_resolution_78.pdf",
+  "session": "1995-96",
+  "type": "resolution",
+  "title": "Resolution 95-9-F - Establish an Academic Service Fee",
+  "role": "author",
+  "name": "Eva Farrar David Apple"
+ },
+ {
+  "file": "1995-96/dc_resolution_78.pdf",
+  "session": "1995-96",
+  "type": "resolution",
+  "title": "Resolution 95-9-F - Establish an Academic Service Fee",
+  "role": "author",
+  "name": "Gott Sandy"
+ },
+ {
+  "file": "1995-96/dc_resolution_78.pdf",
+  "session": "1995-96",
+  "type": "resolution",
+  "title": "Resolution 95-9-F - Establish an Academic Service Fee",
+  "role": "author",
+  "name": "Jamie Williamson"
+ },
+ {
+  "file": "1995-96/dc_resolution_79.pdf",
+  "session": "1995-96",
+  "type": "resolution",
+  "title": "Resolution 95-8-F - Install Surveillance Cameras",
+  "role": "author",
+  "name": "Lance Blincoe Stephanie Cosby Dan Raymer Margaret Carter Darlene Lodmell"
+ },
+ {
+  "file": "1995-96/dc_resolution_81.pdf",
+  "session": "1995-96",
+  "type": "resolution",
+  "title": "Resolution 95-3-F - Pave Creason Lot",
+  "role": "author",
+  "name": "Steve Roadcap Melani Fischer Michael"
+ },
+ {
+  "file": "1995-96/dc_resolution_81.pdf",
+  "session": "1995-96",
+  "type": "resolution",
+  "title": "Resolution 95-3-F - Pave Creason Lot",
+  "role": "author",
+  "name": "Lance Blincoe Dan Raymer Amy Renigen Leigh Ann Sears Sara Haswell Joel Banashak"
+ },
+ {
+  "file": "1997-98/dc_bill_87.pdf",
+  "session": "1997-98",
+  "type": "bill",
+  "title": "Bill 97-2-F - Organizational Aid Recipients",
+  "role": "author",
+  "name": "Chad Lewis Ann Guillory Tara Logsdon Christoph Miller Heather Rogers Leigh Ann Sears"
+ },
+ {
+  "file": "1997-98/dc_bill_90.pdf",
+  "session": "1997-98",
+  "type": "bill",
+  "title": "Bill 98-1-S - Child Care Grant Recipients",
+  "role": "sponsor",
+  "name": "Child Care Grants"
+ },
+ {
+  "file": "1997-98/dc_resolution_108.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 98-15-S - 24 Hour Residence Hall Visitation Policy",
+  "role": "sponsor",
+  "name": "Hour Visitation Policy"
+ },
+ {
+  "file": "1997-98/dc_resolution_108.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 98-15-S - 24 Hour Residence Hall Visitation Policy",
+  "role": "sponsor",
+  "name": "Residence Halls"
+ },
+ {
+  "file": "1997-98/dc_resolution_108.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 98-15-S - 24 Hour Residence Hall Visitation Policy",
+  "role": "sponsor",
+  "name": "Hour Visitation Policy"
+ },
+ {
+  "file": "1997-98/dc_resolution_85.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 97-7-F - Support for the Passing of URLTA",
+  "role": "sponsor",
+  "name": "Uniform Residential Landlord"
+ },
+ {
+  "file": "1997-98/dc_resolution_85.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 97-7-F - Support for the Passing of URLTA",
+  "role": "sponsor",
+  "name": "Tenant Act"
+ },
+ {
+  "file": "1997-98/dc_resolution_86.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 97-2-F - Placing Crosswalk on Dogwood Drive",
+  "role": "author",
+  "name": "Medina Tipton Jeremy Thomas Amanda Kirby"
+ },
+ {
+  "file": "1997-98/dc_resolution_86.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 97-2-F - Placing Crosswalk on Dogwood Drive",
+  "role": "author",
+  "name": "Eddie Schwab Lindsey Sullivan Julie Gray Shavonna Smith Derek R. Durbin Sonya Robertson Darla Johnson Amy France Laura Hancock"
+ },
+ {
+  "file": "1997-98/dc_resolution_87.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 97-1-F - Student Seating at Athletic Events",
+  "role": "sponsor",
+  "name": "Smith Stadium"
+ },
+ {
+  "file": "1997-98/dc_resolution_87.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 97-1-F - Student Seating at Athletic Events",
+  "role": "sponsor",
+  "name": "Diddle Arena"
+ },
+ {
+  "file": "1997-98/dc_resolution_87.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 97-1-F - Student Seating at Athletic Events",
+  "role": "sponsor",
+  "name": "Smith Stadium"
+ },
+ {
+  "file": "1997-98/dc_resolution_93.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 98-1-S - Reallocating Fees as SGA / Programming Fee",
+  "role": "author",
+  "name": "Keith Coffman Leigh Ann Sears Jamie Fite Chad Lewis Heather Rogers"
+ },
+ {
+  "file": "1997-98/dc_resolution_93.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 98-1-S - Reallocating Fees as SGA / Programming Fee",
+  "role": "author",
+  "name": "Tlte Spirit Mdrs"
+ },
+ {
+  "file": "1997-98/dc_resolution_98.pdf",
+  "session": "1997-98",
+  "type": "resolution",
+  "title": "Resolution 97-16-F - Replacing Sidewalk in Front of Thompson Central Wing",
+  "role": "sponsor",
+  "name": "Thompson Central Wing"
+ },
+ {
   "file": "1998-99/bill_98-10-f.pdf",
   "session": "1998-99",
   "type": "bill",
   "title": "Bill 98-10-F, aid to the Kappa Alpha fraternity after its house fire",
   "role": "sponsor",
   "name": "The Kappa Alpha Order's"
+ },
+ {
+  "file": "1998-99/dc_bill_170.pdf",
+  "session": "1998-99",
+  "type": "bill",
+  "title": "Bill 99-5-S - SGA Open Forum",
+  "role": "sponsor",
+  "name": "Hearing Impaired Only"
+ },
+ {
+  "file": "1998-99/dc_bill_177.pdf",
+  "session": "1998-99",
+  "type": "bill",
+  "title": "Bill 99-20-S - Extending Library Hours During Finals Week",
+  "role": "sponsor",
+  "name": "Helm Cravens"
+ },
+ {
+  "file": "1998-99/dc_bill_185.pdf",
+  "session": "1998-99",
+  "type": "bill",
+  "title": "Bill 98-10-F - Allocation of Funds to Kappa Alpha Order",
+  "role": "sponsor",
+  "name": "The Kappa Alpha Order's"
+ },
+ {
+  "file": "1998-99/dc_bill_220.pdf",
+  "session": "1998-99",
+  "type": "bill",
+  "title": "Bill #99-4-S - Excellence in Teaching Award Implementation",
+  "role": "sponsor",
+  "name": "Teaching Award"
+ },
+ {
+  "file": "1998-99/dc_bill_321.pdf",
+  "session": "1998-99",
+  "type": "bill",
+  "title": "Bill 98-2-F - Murray State University Fire Relief Fund",
+  "role": "sponsor",
+  "name": "Relief Fund"
+ },
+ {
+  "file": "1998-99/dc_resolution_233.pdf",
+  "session": "1998-99",
+  "type": "resolution",
+  "title": "Resolution 98-6-F - Copy Machine in Grise Hall",
+  "role": "sponsor",
+  "name": "Grise Ha"
+ },
+ {
+  "file": "1998-99/dc_resolution_299.pdf",
+  "session": "1998-99",
+  "type": "resolution",
+  "title": "Resolution 99-1-S - Placing Emergency Telephones in South Campus Parking Lots",
+  "role": "sponsor",
+  "name": "Nashville Road"
+ },
+ {
+  "file": "1998-99/dc_resolution_300.pdf",
+  "session": "1998-99",
+  "type": "resolution",
+  "title": "Resolution 99-2-S - Legislation to be Filed at Helm Library",
+  "role": "sponsor",
+  "name": "Helm Library"
+ },
+ {
+  "file": "1998-99/dc_resolution_395.pdf",
+  "session": "1998-99",
+  "type": "resolution",
+  "title": "Resolution 98-1-F - Crosswalk on Normal Drive",
+  "role": "sponsor",
+  "name": "Diddle Park"
+ },
+ {
+  "file": "1998-99/dc_resolution_395.pdf",
+  "session": "1998-99",
+  "type": "resolution",
+  "title": "Resolution 98-1-F - Crosswalk on Normal Drive",
+  "role": "sponsor",
+  "name": "Environmental Science"
+ },
+ {
+  "file": "1998-99/dc_resolution_395.pdf",
+  "session": "1998-99",
+  "type": "resolution",
+  "title": "Resolution 98-1-F - Crosswalk on Normal Drive",
+  "role": "sponsor",
+  "name": "Technology Building"
  },
  {
   "file": "1999-00/bill_99-10-f.pdf",
@@ -40,12 +2232,1100 @@
   "name": "Amendment Article"
  },
  {
+  "file": "1999-00/dc_bill_208.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-13-F - Treasurer for Hillraisers",
+  "role": "author",
+  "name": "Amy Caswell Tim Hatton"
+ },
+ {
+  "file": "1999-00/dc_bill_208.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-13-F - Treasurer for Hillraisers",
+  "role": "sponsor",
+  "name": "Master Inte"
+ },
+ {
+  "file": "1999-00/dc_bill_216.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99- -F - Web Page Outline",
+  "role": "sponsor",
+  "name": "Amendment Article"
+ },
+ {
+  "file": "1999-00/dc_bill_219.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-4-F - Display Case for Community College",
+  "role": "author",
+  "name": "Cassie Martin Amanda Coates"
+ },
+ {
+  "file": "1999-00/dc_bill_221.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-5-F - Senior Award Banquet",
+  "role": "author",
+  "name": "Amanda Coates Nathan Hopper Richard Lagani Josh Mike Jamil Sewell Aaron Spencer Amy Harrington"
+ },
+ {
+  "file": "1999-00/dc_bill_221.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-5-F - Senior Award Banquet",
+  "role": "sponsor",
+  "name": "Employment Opportuniti"
+ },
+ {
+  "file": "1999-00/dc_bill_221.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-5-F - Senior Award Banquet",
+  "role": "sponsor",
+  "name": "The Spirit"
+ },
+ {
+  "file": "1999-00/dc_bill_221.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-5-F - Senior Award Banquet",
+  "role": "sponsor",
+  "name": "Master Intern"
+ },
+ {
+  "file": "1999-00/dc_bill_222.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-6-F - Senior Awards Banquet Ad-hoc Committee",
+  "role": "author",
+  "name": "Amanda Coates Nathan Hopper Richard Lagani Josh Mike Jamil Sewell Aaron Spencer Amy Harrington"
+ },
+ {
+  "file": "1999-00/dc_bill_222.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-6-F - Senior Awards Banquet Ad-hoc Committee",
+  "role": "sponsor",
+  "name": "Equal Ed"
+ },
+ {
+  "file": "1999-00/dc_bill_227.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-11-F - Committee Attendance Expectations",
+  "role": "sponsor",
+  "name": "Amclldmcnt Article"
+ },
+ {
+  "file": "1999-00/dc_bill_228.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-12-F - Donating the SGA Recycling Trailer",
+  "role": "sponsor",
+  "name": "Recycling Trai"
+ },
+ {
+  "file": "1999-00/dc_bill_228.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill #99-12-F - Donating the SGA Recycling Trailer",
+  "role": "sponsor",
+  "name": "Facilities Management"
+ },
+ {
+  "file": "1999-00/dc_bill_272.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill 00-10-S Funding for Hattie L. Preston Intramural Complex Storage Facility",
+  "role": "author",
+  "name": "Amanda Coates"
+ },
+ {
+  "file": "1999-00/dc_bill_272.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill 00-10-S Funding for Hattie L. Preston Intramural Complex Storage Facility",
+  "role": "author",
+  "name": "Cassie Martin"
+ },
+ {
+  "file": "1999-00/dc_bill_272.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill 00-10-S Funding for Hattie L. Preston Intramural Complex Storage Facility",
+  "role": "author",
+  "name": "Ryan Morrison"
+ },
+ {
+  "file": "1999-00/dc_bill_272.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill 00-10-S Funding for Hattie L. Preston Intramural Complex Storage Facility",
+  "role": "author",
+  "name": "Matt Bastin"
+ },
+ {
+  "file": "1999-00/dc_bill_272.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill 00-10-S Funding for Hattie L. Preston Intramural Complex Storage Facility",
+  "role": "author",
+  "name": "Brandon Griffey"
+ },
+ {
+  "file": "1999-00/dc_bill_281.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill 00-2-S SGA Mission Statement",
+  "role": "author",
+  "name": "The Western Kent"
+ },
+ {
+  "file": "1999-00/dc_bill_281.pdf",
+  "session": "1999-00",
+  "type": "bill",
+  "title": "Bill 00-2-S SGA Mission Statement",
+  "role": "sponsor",
+  "name": "The Wes"
+ },
+ {
+  "file": "1999-00/dc_resolution_298.pdf",
+  "session": "1999-00",
+  "type": "resolution",
+  "title": "Resolution 99- -F - Endorsement of Schedule Change Proposal",
+  "role": "author",
+  "name": "Jennifer Englert Tim Hatton"
+ },
+ {
+  "file": "1999-00/dc_resolution_298.pdf",
+  "session": "1999-00",
+  "type": "resolution",
+  "title": "Resolution 99- -F - Endorsement of Schedule Change Proposal",
+  "role": "author",
+  "name": "Adam Howard Melissa Willard"
+ },
+ {
   "file": "1999-00/resolution_99-1-f.pdf",
   "session": "1999-00",
   "type": "resolution",
   "title": "Retaining Dr. Wilder as Vice President of Student Affairs",
   "role": "sponsor",
   "name": "Jerry Wilder"
+ },
+ {
+  "file": "2000-01/dc_bill_250.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 01-11-S Amendment to Bylaws",
+  "role": "sponsor",
+  "name": "Eqool Edu"
+ },
+ {
+  "file": "2000-01/dc_bill_250.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 01-11-S Amendment to Bylaws",
+  "role": "sponsor",
+  "name": "Hearing Impo"
+ },
+ {
+  "file": "2000-01/dc_bill_252.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 01-17-S Finals Week Gift",
+  "role": "sponsor",
+  "name": "Western Kentuck"
+ },
+ {
+  "file": "2000-01/dc_bill_252.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 01-17-S Finals Week Gift",
+  "role": "sponsor",
+  "name": "Red Way"
+ },
+ {
+  "file": "2000-01/dc_bill_278.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 00-5-F Student Representatives for University Senate",
+  "role": "author",
+  "name": "Jamil Sewell Aaron Spencer Ross Pruitt Kevin Martin Corey Alderdice Brandon Copeland Shara Hammers Craig Davis"
+ },
+ {
+  "file": "2000-01/dc_bill_278.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 00-5-F Student Representatives for University Senate",
+  "role": "sponsor",
+  "name": "Equol Eduralion"
+ },
+ {
+  "file": "2000-01/dc_bill_278.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 00-5-F Student Representatives for University Senate",
+  "role": "sponsor",
+  "name": "Master Into"
+ },
+ {
+  "file": "2000-01/dc_bill_283.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 00-1-F Funding for Hattie L. Preston Complex Storage Facility",
+  "role": "author",
+  "name": "Recreation Sports Department"
+ },
+ {
+  "file": "2000-01/dc_bill_286.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 01-2-S Bulletin Board Purchase",
+  "role": "author",
+  "name": "Skidmore Bridget"
+ },
+ {
+  "file": "2000-01/dc_bill_286.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 01-2-S Bulletin Board Purchase",
+  "role": "author",
+  "name": "Vilfert Swcey Tnylor"
+ },
+ {
+  "file": "2000-01/dc_bill_313.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 01-20-S State of Western",
+  "role": "sponsor",
+  "name": "Holly Skidmore Bridget Wilfert Brandon Copeland Robin Fulkerson Stacey Taylor Natalie Taylor"
+ },
+ {
+  "file": "2000-01/dc_bill_314.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 01-19-S Outdoor Furniture",
+  "role": "author",
+  "name": "Jennifer Klingenberg Brandon Copeland Bridget Wilfert Andrea Lovell Doug Ault Natasha Smith"
+ },
+ {
+  "file": "2000-01/dc_bill_314.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 01-19-S Outdoor Furniture",
+  "role": "author",
+  "name": "Equal Educltion"
+ },
+ {
+  "file": "2000-01/dc_bill_314.pdf",
+  "session": "2000-01",
+  "type": "bill",
+  "title": "Bill 01-19-S Outdoor Furniture",
+  "role": "author",
+  "name": "Hearing Impolred Only"
+ },
+ {
+  "file": "2000-01/dc_resolution_354.pdf",
+  "session": "2000-01",
+  "type": "resolution",
+  "title": "Resolution 01-2-S - Save Big Red",
+  "role": "sponsor",
+  "name": "Equol Educarion"
+ },
+ {
+  "file": "2000-01/dc_resolution_358.pdf",
+  "session": "2000-01",
+  "type": "resolution",
+  "title": "Resolution 01-5-S - Matching Fund Fee Reallocation",
+  "role": "author",
+  "name": "Cassie Martin"
+ },
+ {
+  "file": "2000-01/dc_resolution_358.pdf",
+  "session": "2000-01",
+  "type": "resolution",
+  "title": "Resolution 01-5-S - Matching Fund Fee Reallocation",
+  "role": "sponsor",
+  "name": "Executive Comminee"
+ },
+ {
+  "file": "2000-01/dc_resolution_358.pdf",
+  "session": "2000-01",
+  "type": "resolution",
+  "title": "Resolution 01-5-S - Matching Fund Fee Reallocation",
+  "role": "sponsor",
+  "name": "Cassie Martin"
+ },
+ {
+  "file": "2000-01/dc_resolution_360.pdf",
+  "session": "2000-01",
+  "type": "resolution",
+  "title": "Resolution 01-6-S - Copy Machines",
+  "role": "author",
+  "name": "Residence Life"
+ },
+ {
+  "file": "2000-01/dc_resolution_368.pdf",
+  "session": "2000-01",
+  "type": "resolution",
+  "title": "Resolution 00-3-F - Stone Stairway",
+  "role": "sponsor",
+  "name": "Kentucky Univel"
+ },
+ {
+  "file": "2000-01/dc_resolution_369.pdf",
+  "session": "2000-01",
+  "type": "resolution",
+  "title": "Resolution 00-4-F - University Boulevard Crosswalk",
+  "role": "sponsor",
+  "name": "Kentucky Department"
+ },
+ {
+  "file": "2000-01/dc_resolution_405.pdf",
+  "session": "2000-01",
+  "type": "resolution",
+  "title": "Resolution 01-10-S - Conservation of Green Space",
+  "role": "sponsor",
+  "name": "Equal Ed"
+ },
+ {
+  "file": "2000-01/dc_resolution_405.pdf",
+  "session": "2000-01",
+  "type": "resolution",
+  "title": "Resolution 01-10-S - Conservation of Green Space",
+  "role": "sponsor",
+  "name": "Hearing Imp"
+ },
+ {
+  "file": "2001-02/dc_bill_240.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill #02-15-S - Supremacy Clause",
+  "role": "sponsor",
+  "name": "This Constitution"
+ },
+ {
+  "file": "2001-02/dc_bill_243.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-18-S - Outdoor Furniture",
+  "role": "author",
+  "name": "John Bradley Rick Upchurch Braden Wilson Emily Butler"
+ },
+ {
+  "file": "2001-02/dc_bill_243.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-18-S - Outdoor Furniture",
+  "role": "sponsor",
+  "name": "Greg Fear"
+ },
+ {
+  "file": "2001-02/dc_bill_243.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-18-S - Outdoor Furniture",
+  "role": "sponsor",
+  "name": "Facilities Management Eq"
+ },
+ {
+  "file": "2001-02/dc_bill_244.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill #02-19-S - Student Health &amp; Fitness Lab",
+  "role": "author",
+  "name": "Mark Rawlings"
+ },
+ {
+  "file": "2001-02/dc_bill_244.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill #02-19-S - Student Health &amp; Fitness Lab",
+  "role": "sponsor",
+  "name": "Todd Misener"
+ },
+ {
+  "file": "2001-02/dc_bill_244.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill #02-19-S - Student Health &amp; Fitness Lab",
+  "role": "sponsor",
+  "name": "Fitness Lab"
+ },
+ {
+  "file": "2001-02/dc_bill_246.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-24-S - Bowling Green Community College Campus Improvements",
+  "role": "author",
+  "name": "Charlie Walker"
+ },
+ {
+  "file": "2001-02/dc_bill_246.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-24-S - Bowling Green Community College Campus Improvements",
+  "role": "sponsor",
+  "name": "The Spin't"
+ },
+ {
+  "file": "2001-02/dc_bill_246.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-24-S - Bowling Green Community College Campus Improvements",
+  "role": "sponsor",
+  "name": "Master Inlem"
+ },
+ {
+  "file": "2001-02/dc_bill_254.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 01-1-F Campus Spirit Award",
+  "role": "author",
+  "name": "Leslie Bedo"
+ },
+ {
+  "file": "2001-02/dc_bill_258.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 01-6-F Golden Letters",
+  "role": "author",
+  "name": "John Bradley Adam Leach Rick Upchurch Jesse Osborne Glen Gittings Braden Wilson Robbie Lipscomb"
+ },
+ {
+  "file": "2001-02/dc_bill_261.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 01-10-F Buy a Book Program",
+  "role": "author",
+  "name": "Leslie Bedo"
+ },
+ {
+  "file": "2001-02/dc_bill_262.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 01-9-F Color Printer",
+  "role": "author",
+  "name": "Anna Coats Diana Carag Jessica Martin"
+ },
+ {
+  "file": "2001-02/dc_bill_262.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 01-9-F Color Printer",
+  "role": "sponsor",
+  "name": "Office Depot"
+ },
+ {
+  "file": "2001-02/dc_bill_262.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 01-9-F Color Printer",
+  "role": "sponsor",
+  "name": "Staples Equ"
+ },
+ {
+  "file": "2001-02/dc_bill_262.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 01-9-F Color Printer",
+  "role": "sponsor",
+  "name": "Il'td Only"
+ },
+ {
+  "file": "2001-02/dc_bill_262.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 01-9-F Color Printer",
+  "role": "sponsor",
+  "name": "Master In"
+ },
+ {
+  "file": "2001-02/dc_bill_264.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-4-S SGA's Unity",
+  "role": "author",
+  "name": "Ross Pruitt"
+ },
+ {
+  "file": "2001-02/dc_bill_270.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-23-S Faculty Appreciation Event",
+  "role": "author",
+  "name": "Michelle Woods"
+ },
+ {
+  "file": "2001-02/dc_bill_270.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-23-S Faculty Appreciation Event",
+  "role": "author",
+  "name": "Brown Kawanna Alderson Brandon Copeland Dana Lockhart Troy Ransdell"
+ },
+ {
+  "file": "2001-02/dc_bill_294.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-06-S WWHR-FM Aid",
+  "role": "author",
+  "name": "Dan Gaddie Ryan Dearbone Emily Schmitt Sam Stinson"
+ },
+ {
+  "file": "2001-02/dc_bill_294.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-06-S WWHR-FM Aid",
+  "role": "author",
+  "name": "Brandon Copeland"
+ },
+ {
+  "file": "2001-02/dc_bill_294.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-06-S WWHR-FM Aid",
+  "role": "author",
+  "name": "Dana Lockhart Troy Ransdell"
+ },
+ {
+  "file": "2001-02/dc_bill_294.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-06-S WWHR-FM Aid",
+  "role": "sponsor",
+  "name": "Marjorie Yambor"
+ },
+ {
+  "file": "2001-02/dc_bill_308.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-07-S Election Codes",
+  "role": "author",
+  "name": "Jarnil Sewell"
+ },
+ {
+  "file": "2001-02/dc_bill_308.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-07-S Election Codes",
+  "role": "author",
+  "name": "Authoriry Proposed"
+ },
+ {
+  "file": "2001-02/dc_bill_308.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-07-S Election Codes",
+  "role": "author",
+  "name": "Election Codes"
+ },
+ {
+  "file": "2001-02/dc_bill_310.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-25-S Diversity Rocks",
+  "role": "sponsor",
+  "name": "Diversity Rocks"
+ },
+ {
+  "file": "2001-02/dc_bill_310.pdf",
+  "session": "2001-02",
+  "type": "bill",
+  "title": "Bill 02-25-S Diversity Rocks",
+  "role": "sponsor",
+  "name": "The Diversity Rocks"
+ },
+ {
+  "file": "2001-02/dc_resolution_346.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 02-1-S - Supremacy Clause",
+  "role": "sponsor",
+  "name": "Brandon Copeland Dana Lockhart Jessica Martin Matthew Pava"
+ },
+ {
+  "file": "2001-02/dc_resolution_346.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 02-1-S - Supremacy Clause",
+  "role": "sponsor",
+  "name": "Constitutional Review"
+ },
+ {
+  "file": "2001-02/dc_resolution_347.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 02-2-S - Inquiry of Freshman Seminar",
+  "role": "sponsor",
+  "name": "Luther Hughes"
+ },
+ {
+  "file": "2001-02/dc_resolution_357.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 01-5-F - Revision of Freshman Seminar",
+  "role": "sponsor",
+  "name": "Troy Ransdell Michelle Woods"
+ },
+ {
+  "file": "2001-02/dc_resolution_359.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 01-06-F - Telephone",
+  "role": "sponsor",
+  "name": "Brandoll Copeland Dana Lockhart"
+ },
+ {
+  "file": "2001-02/dc_resolution_372.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 01-1-F Online Course Syllabi",
+  "role": "author",
+  "name": "Leslie Bedo"
+ },
+ {
+  "file": "2001-02/dc_resolution_373.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 01-10-F Appreciation of Governor Patton",
+  "role": "sponsor",
+  "name": "The Governor"
+ },
+ {
+  "file": "2001-02/dc_resolution_373.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 01-10-F Appreciation of Governor Patton",
+  "role": "sponsor",
+  "name": "Geography Departments"
+ },
+ {
+  "file": "2001-02/dc_resolution_374.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 01-4-F Campus Wide Fundraiser",
+  "role": "author",
+  "name": "Elisha Lawrence"
+ },
+ {
+  "file": "2001-02/dc_resolution_374.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 01-4-F Campus Wide Fundraiser",
+  "role": "sponsor",
+  "name": "Gene Tiee"
+ },
+ {
+  "file": "2001-02/dc_resolution_374.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 01-4-F Campus Wide Fundraiser",
+  "role": "sponsor",
+  "name": "Od Only"
+ },
+ {
+  "file": "2001-02/dc_resolution_381.pdf",
+  "session": "2001-02",
+  "type": "resolution",
+  "title": "Resolution 01-3-F - Campus Unity",
+  "role": "author",
+  "name": "Jamil Sewell"
+ },
+ {
+  "file": "2002-03/dc_bill_230.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill #03-01-S - Passport to Wellness",
+  "role": "sponsor",
+  "name": "Equal Educ"
+ },
+ {
+  "file": "2002-03/dc_bill_234.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill #03-05-S - WWHR FM Student Referendum",
+  "role": "sponsor",
+  "name": "Dan Gaddie Dr"
+ },
+ {
+  "file": "2002-03/dc_bill_234.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill #03-05-S - WWHR FM Student Referendum",
+  "role": "sponsor",
+  "name": "Gene Tice"
+ },
+ {
+  "file": "2002-03/dc_bill_234.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill #03-05-S - WWHR FM Student Referendum",
+  "role": "sponsor",
+  "name": "Gary Ransdell"
+ },
+ {
+  "file": "2002-03/dc_bill_241.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill #02-16-F - Suggestion Boxes",
+  "role": "sponsor",
+  "name": "Brittany Fausey Sami Jo Kirk Graham Rutherford Amber Skees Eddie Arnold Diana Carag Andrea Graham"
+ },
+ {
+  "file": "2002-03/dc_bill_296.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-05-F Recycling Program",
+  "role": "author",
+  "name": "Southern Recycling"
+ },
+ {
+  "file": "2002-03/dc_bill_296.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-05-F Recycling Program",
+  "role": "sponsor",
+  "name": "Laura Franzini Bradley Bader Joseph Riley"
+ },
+ {
+  "file": "2002-03/dc_bill_298.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-03-F Comment Cards",
+  "role": "author",
+  "name": "Western Kentuck"
+ },
+ {
+  "file": "2002-03/dc_bill_298.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-03-F Comment Cards",
+  "role": "author",
+  "name": "Western Ke"
+ },
+ {
+  "file": "2002-03/dc_bill_298.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-03-F Comment Cards",
+  "role": "sponsor",
+  "name": "Brittany Fausey Eddie Arnold Amber Skees Laura Popham Rachel Pomeroy Jodie Holder Graham Rutherford Sami Jo Kirk Abby Lovan Evelina Petkova"
+ },
+ {
+  "file": "2002-03/dc_bill_299.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-02-F SGA Archivist",
+  "role": "sponsor",
+  "name": "Jim Berger"
+ },
+ {
+  "file": "2002-03/dc_bill_302.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-14-F Special Organizational Aid",
+  "role": "author",
+  "name": "Brandon Copeland Robert Watkins Annie Cole Kyle Gott Dana Lockhart Patti"
+ },
+ {
+  "file": "2002-03/dc_bill_302.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-14-F Special Organizational Aid",
+  "role": "author",
+  "name": "Tim Howard Eddie Schwab Matthew Pava Scott Wolfe"
+ },
+ {
+  "file": "2002-03/dc_bill_302.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-14-F Special Organizational Aid",
+  "role": "sponsor",
+  "name": "Ross Pruitt"
+ },
+ {
+  "file": "2002-03/dc_bill_303.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-13-F Installation of DUC Benches",
+  "role": "author",
+  "name": "Armor Coat"
+ },
+ {
+  "file": "2002-03/dc_bill_303.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-13-F Installation of DUC Benches",
+  "role": "sponsor",
+  "name": "Laura Franzi"
+ },
+ {
+  "file": "2002-03/dc_bill_303.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-13-F Installation of DUC Benches",
+  "role": "sponsor",
+  "name": "Bradley Bader Joseph Riley"
+ },
+ {
+  "file": "2002-03/dc_bill_303.pdf",
+  "session": "2002-03",
+  "type": "bill",
+  "title": "Bill 02-13-F Installation of DUC Benches",
+  "role": "sponsor",
+  "name": "Facilities Management"
+ },
+ {
+  "file": "2002-03/dc_resolution_342.pdf",
+  "session": "2002-03",
+  "type": "resolution",
+  "title": "Resolution 03-08-S - Forthright Parking Fee Fund Distribution",
+  "role": "author",
+  "name": "Parking Permit"
+ },
+ {
+  "file": "2002-03/dc_resolution_343.pdf",
+  "session": "2002-03",
+  "type": "resolution",
+  "title": "Resoluton 03-09-S - Parking Structure Expansion",
+  "role": "author",
+  "name": "Scott Jaggers Brandon Copeland Lauren Hoard Ashley Huddleston Jill Woodall"
+ },
+ {
+  "file": "2002-03/dc_resolution_343.pdf",
+  "session": "2002-03",
+  "type": "resolution",
+  "title": "Resoluton 03-09-S - Parking Structure Expansion",
+  "role": "sponsor",
+  "name": "Equal Educ"
+ },
+ {
+  "file": "2002-03/dc_resolution_343.pdf",
+  "session": "2002-03",
+  "type": "resolution",
+  "title": "Resoluton 03-09-S - Parking Structure Expansion",
+  "role": "sponsor",
+  "name": "Jason Johnson Debbie Brown Brittany Huddleston Annie Henning"
+ },
+ {
+  "file": "2002-03/dc_resolution_343.pdf",
+  "session": "2002-03",
+  "type": "resolution",
+  "title": "Resoluton 03-09-S - Parking Structure Expansion",
+  "role": "sponsor",
+  "name": "Iuda Melky Jamie Sears Appendix"
+ },
+ {
+  "file": "2002-03/dc_resolution_348.pdf",
+  "session": "2002-03",
+  "type": "resolution",
+  "title": "Resolution 02-03-F - Summer Residual Aid Checks",
+  "role": "sponsor",
+  "name": "Jennifer Jones"
+ },
+ {
+  "file": "2002-03/dc_resolution_349.pdf",
+  "session": "2002-03",
+  "type": "resolution",
+  "title": "Resolution 02-04-F - Support of Election Day",
+  "role": "author",
+  "name": "Equal Ed"
+ },
+ {
+  "file": "2002-03/dc_resolution_351.pdf",
+  "session": "2002-03",
+  "type": "resolution",
+  "title": "Resolution 02-07-F - Hilltopper Athletic Foundation Parking Policy",
+  "role": "sponsor",
+  "name": "Jessica Martin Bob Bell Dana Lockhart Troy Ransdell Laura Popham Diana Carag"
+ },
+ {
+  "file": "2003-04/dc_bill_203.pdf",
+  "session": "2003-04",
+  "type": "bill",
+  "title": "Bill #03-04-F - Organizational Aid",
+  "role": "sponsor",
+  "name": "Men's Rugby Club"
+ },
+ {
+  "file": "2003-04/dc_bill_203.pdf",
+  "session": "2003-04",
+  "type": "bill",
+  "title": "Bill #03-04-F - Organizational Aid",
+  "role": "sponsor",
+  "name": "Mock Trial"
+ },
+ {
+  "file": "2003-04/dc_bill_203.pdf",
+  "session": "2003-04",
+  "type": "bill",
+  "title": "Bill #03-04-F - Organizational Aid",
+  "role": "sponsor",
+  "name": "Model United Nations"
+ },
+ {
+  "file": "2003-04/dc_bill_203.pdf",
+  "session": "2003-04",
+  "type": "bill",
+  "title": "Bill #03-04-F - Organizational Aid",
+  "role": "sponsor",
+  "name": "Home Build"
+ },
+ {
+  "file": "2003-04/dc_bill_205.pdf",
+  "session": "2003-04",
+  "type": "bill",
+  "title": "Bill #03-07-F - Promotional Items",
+  "role": "sponsor",
+  "name": "Signature Signs"
+ },
+ {
+  "file": "2003-04/dc_bill_207.pdf",
+  "session": "2003-04",
+  "type": "bill",
+  "title": "Bill #04-07-S - Buy-A-Book Program Promotion",
+  "role": "sponsor",
+  "name": "Book Program"
+ },
+ {
+  "file": "2003-04/dc_resolution_336.pdf",
+  "session": "2003-04",
+  "type": "resolution",
+  "title": "Resolution 03-03-F - Notification of Dining Services or Facilities Hour Changes",
+  "role": "author",
+  "name": "Dining Services"
+ },
+ {
+  "file": "2004-05/dc_resolution_345.pdf",
+  "session": "2004-05",
+  "type": "resolution",
+  "title": "Resolution 6-04-F - Plus / Minus Grading Compromise",
+  "role": "sponsor",
+  "name": "Morgan Bentley Phelps Brittany Fausey"
+ },
+ {
+  "file": "2006-07/dc_bill_103.pdf",
+  "session": "2006-07",
+  "type": "bill",
+  "title": "Bill 06-03-F - Entry of an Up Till Dawn Team",
+  "role": "sponsor",
+  "name": "Up Till Dawn"
+ },
+ {
+  "file": "2006-07/dc_bill_116.pdf",
+  "session": "2006-07",
+  "type": "bill",
+  "title": "Bill 05-07-S - Establishing Student Government Association Dollies for Dorms Program",
+  "role": "sponsor",
+  "name": "Dorms Program"
+ },
+ {
+  "file": "2006-07/dc_bill_117.pdf",
+  "session": "2006-07",
+  "type": "bill",
+  "title": "Bill 12-07-S - Scantron and Blue Book Funds",
+  "role": "sponsor",
+  "name": "Blue Books"
+ },
+ {
+  "file": "2006-07/dc_bill_118.pdf",
+  "session": "2006-07",
+  "type": "bill",
+  "title": "Bill 11-07-S - Library Extended Hours",
+  "role": "sponsor",
+  "name": "Margie Helm Library"
+ },
+ {
+  "file": "2006-07/dc_bill_99.pdf",
+  "session": "2006-07",
+  "type": "bill",
+  "title": "Bill 08-06-F - Dialogue Day Funding",
+  "role": "sponsor",
+  "name": "Dialogue Day"
+ },
+ {
+  "file": "2006-07/dc_bill_99.pdf",
+  "session": "2006-07",
+  "type": "bill",
+  "title": "Bill 08-06-F - Dialogue Day Funding",
+  "role": "sponsor",
+  "name": "Dialogue Day"
+ },
+ {
+  "file": "2006-07/dc_resolution_121.pdf",
+  "session": "2006-07",
+  "type": "resolution",
+  "title": "Resolution 09-06-F - Vending Machine Prices",
+  "role": "sponsor",
+  "name": "Vending Services"
+ },
+ {
+  "file": "2006-07/dc_resolution_121.pdf",
+  "session": "2006-07",
+  "type": "resolution",
+  "title": "Resolution 09-06-F - Vending Machine Prices",
+  "role": "sponsor",
+  "name": "Canteen Services"
+ },
+ {
+  "file": "2006-07/dc_resolution_123.pdf",
+  "session": "2006-07",
+  "type": "resolution",
+  "title": "Resolution 07-06-F - Signage at College Heights Blvd. &amp; College Street",
+  "role": "sponsor",
+  "name": "Incoming Traffic Does Not Have Right"
+ },
+ {
+  "file": "2006-07/dc_resolution_125.pdf",
+  "session": "2006-07",
+  "type": "resolution",
+  "title": "Resolution 05-06-F - Makeover of Website",
+  "role": "sponsor",
+  "name": "Kendrick Bryan"
+ },
+ {
+  "file": "2006-07/dc_resolution_306.pdf",
+  "session": "2006-07",
+  "type": "resolution",
+  "title": "Resolution - 2007-S - Tiered Parking Plan for Residents",
+  "role": "sponsor",
+  "name": "The Tiered Parking Plan"
+ },
+ {
+  "file": "2007-08/dc_bill_307.pdf",
+  "session": "2007-08",
+  "type": "bill",
+  "title": "Bill 02-08-S Election Codes",
+  "role": "author",
+  "name": "Brian Fisher Lisa Kappler Lamiaya Page"
+ },
+ {
+  "file": "2007-08/dc_bill_307.pdf",
+  "session": "2007-08",
+  "type": "bill",
+  "title": "Bill 02-08-S Election Codes",
+  "role": "sponsor",
+  "name": "Brian Fisher"
+ },
+ {
+  "file": "2007-08/dc_bill_307.pdf",
+  "session": "2007-08",
+  "type": "bill",
+  "title": "Bill 02-08-S Election Codes",
+  "role": "sponsor",
+  "name": "Fall Election Codes"
+ },
+ {
+  "file": "2008-09/dc_resolution_401.pdf",
+  "session": "2008-09",
+  "type": "resolution",
+  "title": "Resolution 01-08-F - Support of Emergency Communications",
+  "role": "sponsor",
+  "name": "Crisis Management System"
  },
  {
   "file": "2015-16/presidentialqualificationsresolution.pdf",

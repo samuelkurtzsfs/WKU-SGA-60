@@ -400,9 +400,58 @@ That last line is the argument for never skipping the checker.
    against the PDF's own text layer for three documents across the span (a
    1981-82 resolution, a 1993 constitution-amendment bill, a 2001 funds bill)
    all matched. `python3 scripts/check_data.py` and `scripts/build.py` both
-   pass clean on the result. Not yet done, and a natural next step: none of
-   these 437 have been run through `extract_authors.py` for the
-   AUTHOR/SPONSOR lines the way the original 390 were.
+   pass clean on the result.
+9. ~~**The 437 new legislation PDFs had never been run through
+   `extract_authors.py`.**~~ **Done, 19 August 2026.** Re-running the
+   unmodified script against the full 827-document set reproduced the
+   existing 918 curated attributions exactly (zero drift) and surfaced 410
+   new raw candidates from the 437 pre-2011 documents. Most of that raw
+   yield was noise from two extraction weaknesses specific to these older,
+   worse-OCR'd forms: (1) an empty AUTHOR/SPONSOR field bleeds into the
+   resolution's own "For the [University/Student Government Association]
+   to ..." purpose text, misreading the bill's subject as a person's name
+   (e.g. "Hour Visitation Policy", "Diddle Arena", "Model United Nations");
+   and (2) a filled SPONSOR field bleeds past the real name into a
+   following CONTACT field, which on documents this old always names WKU
+   staff or faculty, never the actual sponsor (e.g. "Todd Misener, Student
+   Health and Fitness Lab", "Dr. Gary Ransdell" — WKU's president at the
+   time, plainly not an SGA sponsor). **`extract_authors.py` itself was
+   deliberately left unmodified**: the same "bleed past CONTACT" behavior
+   is *correct* on 2016-and-later bills, where "CONTACTS:" is followed by
+   the actual student sponsor's name and `@topper.wku.edu` address, so a
+   shared fix would have silently deleted real attributions from the
+   modern era (confirmed by testing a stricter STOP list, which reproduced
+   only 795 of the 918 known-good rows before being reverted). Instead the
+   410 raw candidates were curated by hand against the original script's
+   unmodified output: every 4-or-more-word match was dropped outright
+   (119 rows — almost all late-1970s/1980s co-sponsor lists printed with
+   no comma between names, which cannot be split into individuals without
+   guessing a boundary — these are the most promising to revisit if a
+   future pass writes a smarter name-boundary parser, rather than the rows
+   cut below). The remaining 291 were first re-read with a local,
+   not-shared fix for the same CONTACT/purpose-text bleed-through (187
+   candidates left), then checked one at a time against the actual PDF
+   text. **120 survived** as clean, unambiguous individual names with a
+   real AUTHOR:/SPONSOR: line directly behind them; 171 were cut as OCR
+   garble, truncated fragments, bill-subject text, CONTACT-field
+   bleed-through, or an unresolvable position inside an undelimited list
+   of several names. Two incidental corroborations of settled facts
+   turned up in the
+   surviving 120: a 1978-79 resolution authored by "James E. Hargrove"
+   (`1978-79/dc_resolution_319.pdf`) and a 1981-82 resolution authored by
+   "Margaret Ragan" (`1981-82/dc_resolution_257.pdf`), both consistent
+   with this file's existing settled entries on those two people. One
+   spelling doubt, flagged not resolved per this project's own rule: the
+   1989-90 session prints the same person's name two ways on two
+   different resolutions — "Amos Gott" (`dc_resolution_209.pdf`, matching
+   the leader already on file) and "Amos E. Gatt" (`dc_resolution_221.pdf`,
+   most likely the same person misread by OCR) — both are kept as printed
+   rather than silently merged. `data/legislation-authors.json` now holds
+   1,038 attributions (918 + 120); `.research/legislation-authors.json`
+   holds the full unreviewed 1,328-row extraction for any future pass
+   that wants to revisit the 171 cut rows with fresh eyes or a smarter
+   parser for the undelimited co-sponsor lists. `check_data.py` and
+   `scripts/build.py` both pass clean on the result.
 
 ---
 
