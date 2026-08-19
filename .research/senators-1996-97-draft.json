@@ -1,0 +1,863 @@
+[
+ {
+  "year": "1996-97",
+  "name": "David Apple",
+  "seat": "At-Large representative",
+  "note": "Also chaired the Academic Affairs committee all year. Elected to an At-Large seat 8 Oct 1996 alongside Leigh Bakken.",
+  "src": {
+   "label": "SGA Meeting Minutes, 8 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/555",
+   "file": "1996-97-minutes-1996-10-08.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Andrew Atherton",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Leigh Bakken",
+  "seat": "At-Large representative",
+  "note": "A repeat visitor (recorded 'Leigh A. Bakken') before her 8 Oct 1996 election to an At-Large seat alongside David Apple. Distinct from Luke Bakken, below, who votes on the opposite side of a 29 Oct 1996 roll-call vote the same evening Leigh Bakken also votes, confirming they are two different people.",
+  "src": {
+   "label": "SGA Meeting Minutes, 8 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/555",
+   "file": "1996-97-minutes-1996-10-08.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Luke Bakken",
+  "seat": "attended and voted, per the roll-call vote of 29 Oct 1996",
+  "note": "Distinct from Leigh Bakken, above -- the two vote on opposite sides of the same 29 Oct 1996 roll-call vote.",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Stephen Barnett",
+  "seat": "attended and voted, per roll call (recorded absent on 29 Oct 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Matt Bastin",
+  "seat": "attended and voted, per the record of 29 Oct 1996 (seconded a motion as a member)",
+  "note": "Distinct from David Bastin, below: 'Matt Bastin' and 'David Bastin' each recur under their own first name across multiple separate documents rather than appearing as a one-off OCR slip, so they are kept as two people per this project's rule against merging by surname alone. The name-aliases.json entry for 'Matthew D. Bastin' -> 'Matthew Bastin' may or may not be this same person or year; flagging for the editor to check, not asserting a connection.",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "David Bastin",
+  "seat": "attended and voted, per the roll-call vote of 3 Dec 1996",
+  "note": "See the note on Matt Bastin above -- kept as a separate person under this project's rule against merging by surname alone, though the two names never appear in the same roll-call list so it cannot be fully ruled out that one is a mis-transcription of the other.",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Dec 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/560",
+   "file": "1996-97-minutes-1996-12-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Nicole Beldon",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Garrett Blincoe",
+  "seat": "attended and voted, per roll call (recorded absent on 17 Sep 1996)",
+  "note": "OCR renders the given name 'Garret' in some documents. Distinct from Lance Blincoe: both are named in the same absentee sentence on 21 Oct 1996, so they are two different people, not one name split by OCR.",
+  "src": {
+   "label": "SGA Meeting Minutes, 17 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/549",
+   "file": "1996-97-minutes-1996-09-17.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Lance Blincoe",
+  "seat": "Junior Off-Campus representative",
+  "note": "See the note on Garrett Blincoe above -- the two are named separately in the same sentence and kept as distinct people.",
+  "src": {
+   "label": "SGA Meeting Minutes, 1 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/556",
+   "file": "1996-97-minutes-1996-10-01.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Ryan Boyer",
+  "seat": "attended and voted, per roll call (recorded absent on 15 Oct 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 15 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/554",
+   "file": "1996-97-minutes-1996-10-15.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Brice Boyer",
+  "seat": "attended and voted, per roll call (recorded absent on 15 Oct 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 15 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/554",
+   "file": "1996-97-minutes-1996-10-15.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Amy Braden",
+  "seat": "attended and voted, per the roll-call vote of 29 Oct 1996",
+  "note": "Nominated and accepted as Vice Chair of the Student Affairs committee 21 Oct 1996; independently confirmed as a voting Congress member on the 29 Oct 1996 roll-call vote (one document that same year explicitly notes some committees also admit non-Congress volunteers, so the committee role alone was not treated as sufficient).",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Susan Brown",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Kellie Brown",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "David Burns",
+  "seat": "attended and voted, per roll call (recorded absent on 3 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/551",
+   "file": "1996-97-minutes-1996-09-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Kip Carr",
+  "seat": "attended and voted, per repeated Congress Member of the Month nomination/award (see note)",
+  "note": "Chaired the Technology committee (new this year) and the By-Laws sub-committee. Repeatedly nominated for, and on 19 Nov 1996 won, the 'Congress Member of the Month' award (a title distinct from the separate 'Committee Member of the Month' award given to non-Congress committee volunteers) -- the strongest available evidence he sat as a member rather than only as committee chair, since several documents note some committees explicitly admitted non-Congress volunteers.",
+  "src": {
+   "label": "SGA Meeting Minutes, 19 Nov 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/563",
+   "file": "1996-97-minutes-1996-11-19.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Holly Cecil",
+  "seat": "attended and voted, per roll call (recorded absent on 21 Oct 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 21 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/553",
+   "file": "1996-97-minutes-1996-10-21.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Keith Coffman",
+  "seat": "Junior Off-Campus representative",
+  "note": "Elected Junior Off-Campus representative 3 Sep 1996; appointed Sergeant of Arms 10 Sep 1996.",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/551",
+   "file": "1996-97-minutes-1996-09-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Jason Cole",
+  "seat": "attended and voted, per the roll-call vote of 29 Oct 1996",
+  "note": "Nominated and accepted as Vice Chair of the Student Affairs committee 21 Oct 1996; independently confirmed as a voting Congress member on the 29 Oct 1996 roll-call vote, for the same reason noted on Amy Braden above.",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Stephanie Cosby",
+  "seat": "attended and voted, per roll call (recorded absent on 29 Oct 1996)",
+  "note": "Chaired the Student Affairs committee all year.",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Sara Cox",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Theresa Criss",
+  "seat": "At-Large representative",
+  "note": "OCR also renders 'Teresa Criss'.",
+  "src": {
+   "label": "SGA Meeting Minutes, 11 Feb 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/557",
+   "file": "1996-97-minutes-1997-02-11.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Michael Croley",
+  "seat": "attended and voted, per roll call (recorded absent on 8 Oct 1996)",
+  "note": "OCR renders the given name 'Micheal' in most documents.",
+  "src": {
+   "label": "SGA Meeting Minutes, 8 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/555",
+   "file": "1996-97-minutes-1996-10-08.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Josh Detre",
+  "seat": "Parliamentarian",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Chris Elwood",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Ryan Faught",
+  "seat": "attended and voted, per roll call (recorded absent on 11 Mar 1997)",
+  "note": "Chaired the Legislative Research committee in the fall, then became Coordinator of Committees from around 21 Jan 1997.",
+  "src": {
+   "label": "SGA Meeting Minutes, 11 Mar 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/567",
+   "file": "1996-97-minutes-1997-03-11.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Jamie Fite",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "note": "Elected the 1997-98 Secretary on 22 Apr 1997 (that office belongs to the following academic year, so is not recorded here).",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Amy France",
+  "seat": "attended and voted, per roll call",
+  "note": "One of six names filling four announced open positions (At-Large, Junior Off-Campus, Freshman Council, Rodes-Harlin) by unanimous consent 21 Jan 1997; the source does not make clear which of the six went to which seat.",
+  "src": {
+   "label": "SGA Meeting Minutes, 21 Jan 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559",
+   "file": "1996-97-minutes-1997-01-21.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Kirk Freeman",
+  "seat": "Sophomore Off-Campus representative",
+  "note": "Elected Sophomore Off-Campus representative 3 Sep 1996 alongside Kevin West. OCR renders the surname 'FHeeman' in the original.",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/551",
+   "file": "1996-97-minutes-1996-09-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Andy Gailor",
+  "seat": "Junior Off-Campus representative",
+  "note": "Represented SGA on the Bowling Green City Commission; became Legislative Research committee Vice Chair then Chair from around 21 Jan 1997.",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/551",
+   "file": "1996-97-minutes-1996-09-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Aaron Galloway",
+  "seat": "Sophomore Off-Campus representative",
+  "note": "OCR renders the surname 'Gallowy' in one document.",
+  "src": {
+   "label": "SGA Meeting Minutes, 1 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/556",
+   "file": "1996-97-minutes-1996-10-01.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Julie Gott",
+  "seat": "attended and voted, per roll call (recorded absent on 1 Oct 1996)",
+  "note": "Business College representative on Academic Council. OCR renders the surname 'Gott' in most documents and 'Gatt' in several others within the same run.",
+  "src": {
+   "label": "SGA Meeting Minutes, 1 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/556",
+   "file": "1996-97-minutes-1996-10-01.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Steven Graham",
+  "seat": "attended and voted, per the roll-call vote of 3 Dec 1996",
+  "note": "Received a Public Relations award for his Technology committee work before this vote; the roll-call vote itself is the membership evidence used here.",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Dec 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/560",
+   "file": "1996-97-minutes-1996-12-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Anne Guillory",
+  "seat": "attended and voted, per roll call",
+  "note": "See the note on Amy France above for the seat ambiguity. OCR sometimes renders 'Ann Guillory'.",
+  "src": {
+   "label": "SGA Meeting Minutes, 21 Jan 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559",
+   "file": "1996-97-minutes-1997-01-21.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Tracy Guthrie",
+  "seat": "Sophomore Off-Campus representative",
+  "src": {
+   "label": "SGA Meeting Minutes, 4 Feb 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/613",
+   "file": "1996-97-minutes-1997-02-04.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Laura Hancock",
+  "seat": "attended and voted, per roll call (recorded absent on 3 Sep 1996)",
+  "note": "Absent from the earliest surviving roll call (3 Sep 1996) and continuously through the year; formally accepted for an At-Large seat 4 Mar 1997, apparently a seat change rather than a new member.",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/551",
+   "file": "1996-97-minutes-1996-09-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Drew Harrell",
+  "seat": "attended and voted, per roll call (recorded absent on 29 Oct 1996)",
+  "note": "Appointed to the By-Laws sub-committee 15 Oct 1996; independently confirmed on the roll-call absentee list 29 Oct 1996.",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Sara Haswell",
+  "seat": "Junior Off-Campus representative",
+  "note": "Extremely active throughout the year, repeatedly moving and seconding motions.",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/551",
+   "file": "1996-97-minutes-1996-09-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Jeremy Hayden",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Carter Hendricks",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Rachel Hendricks",
+  "seat": "Freshman Council representative",
+  "note": "OCR also renders 'Rachael Hendricks' / 'Rachael Hendrick'.",
+  "src": {
+   "label": "SGA Meeting Minutes, 4 Feb 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/613",
+   "file": "1996-97-minutes-1997-02-04.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Pam Howell",
+  "seat": "Rodes-Harlin Hall representative",
+  "note": "OCR sometimes renders 'Pamela Howell'.",
+  "src": {
+   "label": "SGA Meeting Minutes, 24 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/548",
+   "file": "1996-97-minutes-1996-09-24.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Rebekah Johnson",
+  "seat": "attended and voted, per roll call (recorded absent on 23 Nov 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 23 Nov 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/561",
+   "file": "1996-97-minutes-1996-11-23.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Jean-Marie Lawson",
+  "seat": "attended and voted, per roll call (recorded absent on 21 Oct 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 21 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/553",
+   "file": "1996-97-minutes-1996-10-21.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Chad Lewis",
+  "seat": "Sergeant of Arms",
+  "note": "Elected the 1997-98 Treasurer on 22 Apr 1997 (that office belongs to the following academic year, so is not recorded here).",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Tara Logsdon",
+  "seat": "At-Large representative",
+  "src": {
+   "label": "SGA Meeting Minutes, 11 Feb 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/557",
+   "file": "1996-97-minutes-1997-02-11.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Rick Malek",
+  "seat": "attended and voted, per the record of 27 Aug 1996 (seconded a motion as a member)",
+  "note": "Frequently moved and seconded motions and requested roll-call votes throughout the year; later chaired the Constitutional sub-committee from around 18 Feb 1997.",
+  "src": {
+   "label": "SGA Meeting Minutes, 27 Aug 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/562",
+   "file": "1996-97-minutes-1996-08-27.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Robert Martin",
+  "seat": "attended and voted, per roll call",
+  "note": "See the note on Amy France above for the seat ambiguity.",
+  "src": {
+   "label": "SGA Meeting Minutes, 21 Jan 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559",
+   "file": "1996-97-minutes-1997-01-21.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Joe Mathis",
+  "seat": "attended and voted, per the roll-call vote of 29 Oct 1996",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Travis Mayo",
+  "seat": "attended and voted, per the roll-call vote of 29 Oct 1996",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Randall McGraw",
+  "seat": "attended and voted, per roll call",
+  "note": "See the note on Amy France above for the seat ambiguity.",
+  "src": {
+   "label": "SGA Meeting Minutes, 21 Jan 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559",
+   "file": "1996-97-minutes-1997-01-21.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Devon Moore",
+  "seat": "attended and voted, per roll call (recorded absent on 17 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 17 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/549",
+   "file": "1996-97-minutes-1996-09-17.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Doug Mory",
+  "seat": "Rodes-Harlin Hall representative",
+  "note": "OCR sometimes renders 'Doug Mary'.",
+  "src": {
+   "label": "SGA Meeting Minutes, 24 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/548",
+   "file": "1996-97-minutes-1996-09-24.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Jeff Oliver",
+  "seat": "Junior Off-Campus representative",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/551",
+   "file": "1996-97-minutes-1996-09-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Robert Oslakovic",
+  "seat": "Sophomore Off-Campus representative",
+  "note": "OCR also renders 'Robert Oslakovie'.",
+  "src": {
+   "label": "SGA Meeting Minutes, 11 Feb 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/557",
+   "file": "1996-97-minutes-1997-02-11.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Atul Patel",
+  "seat": "attended and voted, per roll call (recorded absent on 29 Oct 1996)",
+  "note": "OCR renders the name 'Awl Patel' / 'Alul Patel' in places.",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "April Pierce",
+  "seat": "McCormack Hall representative",
+  "note": "A repeat visitor at earlier meetings before her 8 Oct 1996 election to the McCormack Hall seat.",
+  "src": {
+   "label": "SGA Meeting Minutes, 8 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/555",
+   "file": "1996-97-minutes-1996-10-08.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Jeffrey Porter",
+  "seat": "attended and voted, per roll call",
+  "note": "See the note on Amy France above for the seat ambiguity.",
+  "src": {
+   "label": "SGA Meeting Minutes, 21 Jan 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559",
+   "file": "1996-97-minutes-1997-01-21.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Stacey Quartermous",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Gina Raffaelli",
+  "seat": "attended and voted, per the record of 27 Aug 1996 (moved a motion as a member)",
+  "src": {
+   "label": "SGA Meeting Minutes, 27 Aug 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/562",
+   "file": "1996-97-minutes-1996-08-27.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Kerri Richardson",
+  "seat": "attended and voted, per roll call (recorded absent on 15 Oct 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 15 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/554",
+   "file": "1996-97-minutes-1996-10-15.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Julie Robinson",
+  "seat": "attended and voted, per roll call (recorded absent on 8 Oct 1996)",
+  "note": "Distinct from Julie Gott, above -- both absences are recorded independently and never overlap in a way that suggests one person.",
+  "src": {
+   "label": "SGA Meeting Minutes, 8 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/555",
+   "file": "1996-97-minutes-1996-10-08.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Heather Rogers",
+  "seat": "attended and voted, per the record of 27 Aug 1996 (moved a motion as a member)",
+  "note": "Chaired the Public Relations committee all year; moved to approve new applicants and uncontested open positions, 27 Aug 1996.",
+  "src": {
+   "label": "SGA Meeting Minutes, 27 Aug 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/562",
+   "file": "1996-97-minutes-1996-08-27.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Carlton Rumienier",
+  "seat": "Junior Off-Campus representative",
+  "note": "OCR also renders 'Carleton Rumienier'.",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Dec 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/560",
+   "file": "1996-97-minutes-1996-12-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Erin Schepman",
+  "seat": "attended and voted, per the record of 27 Aug 1996 (moved a motion as a member)",
+  "note": "Elected Coordinator of Committees the same meeting (27 Aug 1996) she is recorded moving a motion as a member; later nominated for and confirmed as Judicial Council Foreman, 28 Jan 1997 (a judiciary post).",
+  "src": {
+   "label": "SGA Meeting Minutes, 27 Aug 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/562",
+   "file": "1996-97-minutes-1996-08-27.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Leigh Ann Sears",
+  "seat": "attended and voted, per roll call (recorded absent on 29 Oct 1996)",
+  "note": "Chaired the Campus Improvements committee all year. OCR of the minutes frequently renders the surname 'Scars'.",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Scott Self",
+  "seat": "Senior Off-Campus representative",
+  "note": "Introduced by the President as a candidate for the seat and approved by unanimous Congress vote, 13 Nov 1996.",
+  "src": {
+   "label": "SGA Meeting Minutes, 13 Nov 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/841",
+   "file": "1996-97-minutes-1996-11-13.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Kyle Shrewsbury",
+  "seat": "North Hall representative",
+  "note": "A repeat candidate/visitor at earlier meetings before his 11 Feb 1997 election to the North Hall seat.",
+  "src": {
+   "label": "SGA Meeting Minutes, 11 Feb 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/557",
+   "file": "1996-97-minutes-1997-02-11.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Andy Spears",
+  "seat": "attended and voted, per roll call (recorded absent on 29 Oct 1996)",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "B.J. Stith",
+  "seat": "Barnes-Campbell Hall representative",
+  "note": "A single absentee list (23 Nov 1996) renders the name 'R.J. Stith' rather than 'B.J. Stith' -- almost certainly the same badly-OCR'd document misreading 'B' as 'R', since 'B.J. Stith' is the consistent spelling everywhere else across the year (including a 29 Oct 1996 roll-call vote), and no second 'R.J. Stith' ever recurs.",
+  "src": {
+   "label": "SGA Meeting Minutes, 21 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/553",
+   "file": "1996-97-minutes-1996-10-21.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Curtis Street",
+  "seat": "PFT representative",
+  "note": "A repeat visitor (OCR also renders the surname 'Strout'/'Streut') before his 8 Oct 1996 election to the PFT seat.",
+  "src": {
+   "label": "SGA Meeting Minutes, 8 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/555",
+   "file": "1996-97-minutes-1996-10-08.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Brad Sweatt",
+  "seat": "attended and voted, per the roll-call vote of 29 Oct 1996",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Callie Varner",
+  "seat": "Sophomore Off-Campus representative",
+  "note": "Later became Legislative Research committee Vice Chair from around 18 Feb 1997.",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Shawn Wallace",
+  "seat": "attended and voted, per roll call (recorded absent on 10 Sep 1996)",
+  "note": "Distinct from Kara/Kani Wallace (below), who appears only from late October 1996 -- the two never co-occur, but this project's rule against merging by surname alone is followed and both are kept as separate people.",
+  "src": {
+   "label": "SGA Meeting Minutes, 10 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/550",
+   "file": "1996-97-minutes-1996-09-10.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Kara Wallace",
+  "seat": "attended and voted, per the record of 29 Oct 1996 (seconded a motion as a member)",
+  "note": "OCR renders the given name 'Kani' once, in the same document (29 Oct 1996) where 'Kara Wallace' is also used, so treated as one person with an inconsistent OCR read rather than two.",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Kevin West",
+  "seat": "Sophomore Off-Campus representative",
+  "src": {
+   "label": "SGA Meeting Minutes, 3 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/551",
+   "file": "1996-97-minutes-1996-09-03.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Henry White",
+  "seat": "attended and voted, per roll call (recorded absent on 17 Sep 1996)",
+  "note": "Received the Committee Member of the Month award 8 Oct 1996; independently confirmed on the roll call as absent 17 Sep 1996. Nominated for Judicial Council Foreman 11 Feb 1997 (a judiciary post, not recorded as Congress membership here).",
+  "src": {
+   "label": "SGA Meeting Minutes, 17 Sep 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/549",
+   "file": "1996-97-minutes-1996-09-17.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Kristin Willis",
+  "seat": "attended and voted, per roll call (recorded absent on 29 Oct 1996)",
+  "note": "Also appointed to the By-Laws sub-committee 15 Oct 1996.",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Amy Wilson",
+  "seat": "Senior Off-Campus representative",
+  "src": {
+   "label": "SGA Meeting Minutes, 25 Feb 1997",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/569",
+   "file": "1996-97-minutes-1997-02-25.pdf"
+  }
+ },
+ {
+  "year": "1996-97",
+  "name": "Jason Wong",
+  "seat": "Sophomore Off-Campus representative",
+  "src": {
+   "label": "SGA Meeting Minutes, 29 Oct 1996",
+   "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552",
+   "file": "1996-97-minutes-1996-10-29.pdf"
+  }
+ }
+]
