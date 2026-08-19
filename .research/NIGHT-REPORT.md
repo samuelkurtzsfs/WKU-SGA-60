@@ -736,3 +736,104 @@ legislation files, 73 leader portraits and 23 year photographs. `build.py`,
 `check_data.py` and `check_contrib.py` all exit clean on main.
 `check_duplicates.py` reports the same seven pairs it reported before this
 evening; all seven are genuinely separate events, and none came from this work.
+
+---
+
+# 19 August 2026 — editor's pass, small hours
+
+Two pull requests open, both cut from current main with a proper merge base.
+One merged, one refused.
+
+## Merged: #30, profiles for the 1994-99 cabinets
+
+Twenty-three officers of the mid- and late-1990s executive cabinets gained
+profiles. Almost every sentence restates an officer note already on file, which
+is the right way to build one, so the check was mostly a matter of confirming
+that the profile says what the note says and that the note's source says both.
+
+Two entries confirmed themselves outright when the cited record was opened:
+TopSCHOLAR catalogues `Documents/Reports/14` as a letter to interim president
+Barbara Burch "from Jamie Fite, SGA secretary" about seating in Diddle Arena and
+Smith Stadium, and the minutes of 19 January 1999 as covering the introduction
+of vice president Cassie Martin. Eight more held up at the level of the
+meeting's own topic list — the budget and the swearing-in on 27 August 1996,
+provide-a-ride and the blood drive on 18 November 1997, the retreat goals and
+the new website in the autumn of 1998. Three Herald letters cited in the
+profiles — Shawna Whartenby's on the constitutional amendments, Richard Malek's
+"puppet" charge, and Tracie Webb's defence of Horace Johnson — were all found in
+the unfiltered index at the issues claimed.
+
+The run also corrected a fact that had been wrong on the site: Ryan Morrison's
+1998-99 note said he won the presidency a fortnight after 13 April 1999. The
+archive's own 1999-00 record says the 26 April re-run was for vice president of
+finance. The routine found its own error while researching something else and
+fixed it, which is how that should go.
+
+Five cuts before merging. Two treasurer's figures for 1994-95 came out because
+the meeting's landing page carries only a topic list and the PDF sits behind
+TopSCHOLAR's bot gate; they are flagged on the pull request for restoration
+rather than dismissed. A Herald letter came out of Steve Roadcap's profile
+because the issue it is in is cited nowhere in that year, leaving a reader no
+way to check it. Carlene Lodmell's profile had a citation caveat written into
+the published text, hedging a passage the year's own note states plainly, so the
+hedge went and the sourced version went in. Horace Johnson's profile carried
+three quoted fragments from a single Herald issue, all three already printed
+verbatim in that year's events; it now records the one letter that names him.
+
+And a duplicate that was nobody's fault in this pull request: 1995-96 had
+carried the Herald's attack on the skywalk twice, as "The Herald pushes back"
+and "The skywalk drew fire within a week," same date, same source, since before
+this run. `check_duplicates.py` never saw them because the titles share no
+words. Folded into one entry keeping every sourced fact from both.
+
+## Refused: #31, the senate rolls
+
+The rosters in this branch were read off the OCR text layer of the mirrored
+minutes. Nobody opened the page images. Rendered at 200 dpi the scans are
+legible, and three pages produced seven wrong names or seats.
+
+The 29 April 1982 appointments page gives Sammy Abell, not Sandy; Jorge Garcia
+as an on-campus representative, not a Jorge Perez whose surname the branch calls
+degraded; Dave Hoffman as the off-campus representative, in a roster the branch
+says he does not appear in; Melody Murphy as graduate representative, not Ogden
+College; and Susan Beth Tinsley, whose forename the branch says is not legible,
+paired with Barry Deweese. The absence list of 20 October 1981 reads Bridget
+Wyatt, not Hyatt. The housing report of 29 August 1978 is Shaun Bryant, not
+Shawn.
+
+What makes this worse than a run of typos is the hedging. Three of the errors
+arrived wrapped in a note telling the reader the scan is illegible at exactly
+the point where it is not. A wrong fact wearing a disclaimer still reads as a
+fact, and the disclaimer is what stops anyone checking it.
+
+Two entries were people assembled out of parts — John Holland, forename from one
+meeting and surname from another, and Tony Whalen, the same in reverse, with the
+note admitting as much. Both removed.
+
+Left open, and left for the routine rather than settled here, is the shape of
+the thing: some twenty entries sit under `senate.members` above a note saying
+membership is not established, two of them on the strength of having moved
+adjournment once. People named in a roll-call absence list are members and those
+entries are sound. The rest need a home that does not assert what the record
+cannot show.
+
+Seven corrections and both removals are pushed to `research-senate`, along with
+three document extracts trimmed back under the quote limit and a restored
+trailing newline on `years.json`. The twelve mirrored PDFs are genuine files,
+165 KB to 547 KB, all beginning `%PDF-`. The validators pass on that branch and
+always did, which is the point: they cannot tell you a name is wrong.
+
+The 1978-79 minutes in that branch are cleanly typed and their entries check out
+against the page — Buzz Smith on the Complaint Committee, Terri Craig on SGAK,
+Dave Roberts on Rules and Elections, Rita Young's appointment to Congress. That
+year could be split out and merged on its own.
+
+## Where the record stands after this pass
+
+61 years, 2,014 dated events, 60 people who have been president, 73 leader
+records all with profiles, 438 executive officer records of which 98 now carry a
+profile, 614 senate officers, 238 senate members, 390 legislation files.
+`build.py`, `check_data.py` and `check_contrib.py` all exit clean on main.
+`check_duplicates.py` reports seven pairs, the same seven as yesterday, all
+genuinely separate events — the eighth, in 1995-96, was folded away tonight and
+the checker had never been able to see it.
