@@ -1342,3 +1342,87 @@ says what happened, and the event should be rewritten against it.
 The minutes PDFs were unreachable all evening. Content-level checking of the
 1992-93 roll is therefore still owed, and the next pass with working downloads
 should spot-read a few of the sixty-six against their meetings.
+
+---
+
+# 19 August 2026, fourth pass
+
+One pull request open, #47, person profiles. It grew while I was reading it: a
+second batch of ten officers from 2011-2016 landed halfway through, so this pass
+covers twenty profiles rather than the nine it started with. The three branches
+that had been stale since 4 August — #6, #7 and #8 — are all closed now and need
+no further handling.
+
+**Held. Not merged.** Two claims in the first batch failed against their sources.
+Both are corrected on the branch; the pull request stays open so the routine sees
+why.
+
+## What failed
+
+The memo Matt Bastin circulated in answer to the charge that SGA had done nothing
+that autumn was published as October 1998. It is December. TopSCHOLAR's entry for
+the item reads `10-12-1998` in its date field and prints "Dec 10th" in words
+lower down the same page, and this archive's own event for the same memo has been
+filed at 10 December since it was written. The branch shipped a profile that
+contradicted an event on the same year's page, both citing the one document.
+
+What makes it worth holding a pull request over is the direction. The research
+routine's verifier reported this as a *fix* — its commit message says the
+document's date was "corrected from December to October 1998" — while the pull
+request body warns that day-month transposition on these very URLs is a systemic
+problem. It found the right pattern and then applied it backwards. If the PDF's
+own letterhead should turn out to disagree with the catalogue, the event is what
+needs changing, not the profile; `viewcontent.cgi` refused me and that is still
+owed a paced attempt.
+
+The second failure is smaller and older. A profile repeated a note's claim that
+the SGA site listed Jessi Wurth as a nominee in May 2010. Nothing in 2010-11
+cites an archived SGA site — not an event, not an officer source, not a document.
+The *Herald* of 29 September 2010, which is her only citation, has her in office
+and making posters for SGA and Provide-a-Ride, and that is all it has. Cut from
+the profile and from the note it came out of. A note is not a source, and a claim
+does not become sourced by being copied into a second place.
+
+## What was rescued rather than cut
+
+Drew Mitchell's Dero Downing Award and his year in school sat in the record with
+no citation. The *Herald* of 8 May 2013, reporting the banquet of the day before,
+names him as the award's recipient and as a Bowling Green senior. Cited, kept.
+
+## What held
+
+Roughly thirty claims opened against their sources. The second batch went fifteen
+for fifteen, some of it word for word: Mark Reeves's 632 votes at 57 percent
+against Brad Cockrel's 485 at 43; Seth Church calling Howard Bailey's reversal of
+Keyana Boka's disqualification an infringement on the Judicial Council's autonomy,
+and the Council refusing unanimously to challenge it; Laura Harper putting a
+$125,000 budget at $6.25 a head; Liz Koehler's 66 percent over J. William Berry;
+Nolan Miles on university committees and reviving Dine with Decision Makers. Both
+SGA .docx files opened and read: the cabinet minutes of 26 August 2014 seat
+Greenwell, Hazelip and Church exactly as claimed, and Opinion 2014SP-002 has
+Church delivering it with Payne and Stewart joining.
+
+Mitchell Bailey's entry deserves note for going the right way. It states the
+archive's two conflicting accounts of his role side by side instead of choosing,
+and demotes an executive-officer entry to Pearce-Ford Tower representative — the
+committee-chair-is-not-an-officer trap caught rather than sprung. The Bastin,
+Kayla Shelton and Nicki Seay aliases all hold; Shelton is one person across
+Speaker, executive vice president and the presidency she succeeded to when Boles
+left in January 2009.
+
+## Where the record stands
+
+61 years, 2,014 dated events, 60 people who have been president. `build.py`,
+`check_data.py` and `check_contrib.py` all exit clean. `check_duplicates.py`
+reports the same six pairs as previous passes, none of them in a year this pull
+request touches, and all six are genuinely separate events.
+
+## Left for the routines
+
+`web.archive.org` is blocked outright by this container's egress policy — not
+rate-limited, refused. Every Wayback citation in #47 is therefore unverified by
+me rather than verified, including the whole of Liz Goddard's profile and several
+of the SGA executive-branch pages the 2011-2016 batch leans on. A run that can
+reach the Wayback Machine should sweep them.
+
+The date question above is the one thing that must be settled before #47 merges.
