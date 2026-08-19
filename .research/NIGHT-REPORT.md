@@ -1177,3 +1177,56 @@ in 1969 is. The 13 February 1969 minutes read **John Cabelli** where this archiv
 has John Cobelli, a spelling to record rather than resolve. And the 1981 Talisman
 prints **Jeffrey Morris** where the record has Jeff Morris, which wants an alias
 entry rather than an implicit match.
+
+# 19 August 2026, forenoon — editor pass
+
+Two research pull requests open, both cut from current main, both merged.
+
+## What I reviewed
+
+**#41, ten officer profiles for 1983-84 through 1987-88.** Verified fourteen
+claims across all ten profiles against the full Herald index, headline by
+headline. Every one held. Bill Fogle's four headlines are real — the race
+"Started to Help Tim Todd, Not to Win," the "Ends Bid for Presidency," the
+"Fogle Explains SGA Actions" note sitting beside "Schilling Under Eye of
+Watchdog Committee," and his own "Student Apathy Criticized" from January 1986.
+Bill Schilling's profile, the richest and the most sensitive, checks out end to
+end: the bill-writer feature, the three 1986 letters, the Interhall defeat by
+Delwin Cheek, the impeachment timeline (each date a separately sourced event in
+the year), the arrest of "William Byron Shilling" on 17 March 1988, and — the
+part the living-person rule turns on — the outcome, "Charge Against William
+Schilling Dismissed," on 31 March. The Kim Summers identification with the 1986
+"Kimberly Summers" letters is correctly recorded as likely, not certain. Nothing
+cut.
+
+**#42, the senate rolls for 1988-89 through 1991-92.** 184 seated members
+recovered from the ASG minutes, 92 minutes PDFs mirrored. I checked the source
+URLs resolve to the right meetings — `/78` is 29 August 1989, `/77` reads
+"5-9-1989," which is 5 September in the site's day-month order (confirmed against
+`/363`, "13-11-1990"), and the 13 November page's own blurb says "swearing in new
+members," matching the Kitchens note. The `.research` disposition files carry a
+verdict for every candidate and their counts match the PR's table exactly. Every
+rejected name is absent from the roll, each for the right reason: Paul Smith and
+Sharon Dennis rested on a committee-chair or Judicial Council appointment, not a
+seat; Theresa Edmondson on an award nomination alone; "Mark Hiller" was "Mark
+Miller" read twice by OCR, aliased rather than duplicated. Twenty-two of the 184
+kept entries carry an explicit caveat instead of an over-claim, and the separate
+Glasgow-campus student body is fully excluded. Nothing cut. I merged current main
+into the branch first, rebuilt, and pushed before merging, so the tested tree is
+the tree that landed.
+
+## Where the record stands
+
+61 years, 2,014 dated events, 60 people who have been president. The senate roll
+is now 563 members after tonight's 184 from a base that held nothing before 1989.
+146 primary documents on the site after the 92 minutes PDFs came in.
+`build.py`, `check_data.py` and `check_contrib.py` all exit clean;
+`check_duplicates.py` reports the same six pairs as before, all genuinely
+separate events.
+
+## Left for the routines
+
+The senate pass should keep to #42's discipline: mirror the minutes, keep the
+disposition file, and put every uncertainty in the seat label so a bare
+unconfirmed name can never render on its own. 1992-93 has full minutes coverage
+and no members yet; 1995-96 onward waits behind it. No open pull requests remain.
