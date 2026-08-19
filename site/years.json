@@ -17791,6 +17791,15 @@
         "label": "SGA Minutes, 9 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
        }
+      },
+      {
+       "office": "City Council Representative",
+       "name": "Donnie Miller",
+       "note": "Succeeded Trent Lyda in the role, giving the Congress's City Council report from 16 Feb 1993.",
+       "src": {
+        "label": "SGA Minutes, 16 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/430"
+       }
       }
      ],
      "members": [
@@ -17821,7 +17830,7 @@
        "name": "Laura Jo Bland",
        "note": "Given as \"Laura Jo Bland\" and \"LauraJo Bland\" in different minutes.",
        "src": {
-        "label": "SGA Minutes, 22 Sept 1992",
+        "label": "SGA Minutes, 20 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
        }
       },
@@ -17933,7 +17942,7 @@
       {
        "name": "Ray Ezell",
        "src": {
-        "label": "SGA Minutes, 22 Sept 1992",
+        "label": "SGA Minutes, 20 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
        }
       },
@@ -17964,7 +17973,7 @@
       {
        "name": "Eric Griggs",
        "src": {
-        "label": "SGA Minutes, 22 Sept 1992",
+        "label": "SGA Minutes, 20 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
        }
       },
@@ -18265,7 +18274,7 @@
        "name": "Crystal Smith",
        "note": "Also given as \"Chrystal Smith\"; approved as Student Affairs committee chairperson 19 Jan 1993, then resigned from Congress by 2 Feb 1993.",
        "src": {
-        "label": "SGA Minutes, 22 Sept 1992",
+        "label": "SGA Minutes, 20 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
        }
       },
@@ -18297,7 +18306,7 @@
        "name": "Robert Wagner",
        "note": "Also referred to as \"Bobby Wagner\"; nominated 1 Sept 1992 to the University Disciplinary Committee.",
        "src": {
-        "label": "SGA Minutes, 22 Sept 1992",
+        "label": "SGA Minutes, 20 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
        }
       },
@@ -18364,11 +18373,15 @@
       },
       {
        "name": "Student Affairs",
-       "chair": "Scott Sivley",
-       "note": "Replaced Andrea Cailles as chair 1 Sept 1992; the chair changed again to Chrystal Smith (19 Jan 1993) and then Eric McWilliams (26 Jan 1993) within the same year.",
+       "chair": "Eric McWilliams",
+       "note": "Chaired by Andrea Cailles at the start of the year, then Scott Sivley from 1 Sept 1992, Chrystal Smith from 19 Jan 1993 and Eric McWilliams from 26 Jan 1993.",
        "src": {
         "label": "SGA Minutes, 1 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/412"
+       },
+       "src2": {
+        "label": "SGA Minutes, 26 Jan 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
        }
       },
       {
@@ -18378,15 +18391,6 @@
        "src": {
         "label": "SGA Minutes, 19 Jan 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/434"
-       }
-      },
-      {
-       "name": "City Council Representative",
-       "chair": "Donnie Miller",
-       "note": "Miller began giving the Congress's City Council report from 16 Feb 1993, a role held earlier in the year by Trent Lyda.",
-       "src": {
-        "label": "SGA Minutes, 16 Feb 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/430"
        }
       }
      ]
