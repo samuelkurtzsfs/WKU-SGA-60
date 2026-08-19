@@ -13,7 +13,7 @@ January-July to (year-1)-year.
 
 Idempotent: entries whose source_url is already in legislation.json are skipped.
 """
-import json, re, sys, time, urllib.request
+import json, re, sys, time, http.cookiejar, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -35,17 +35,36 @@ ROW = re.compile(
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 
+# A shared cookie jar across every request in the run. The viewcontent.cgi PDF
+# endpoint returns an empty HTTP 202 to a bare request with no session cookie
+# and no Referer - it wants to see the same visit a browser would make: land
+# on the item page first (which sets a session cookie), then request the PDF
+# with that cookie and a Referer pointing back at the item page. Without both,
+# every PDF fetch silently "succeeds" with a zero-byte body.
+_cj = http.cookiejar.CookieJar()
+_opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(_cj))
 
-def fetch(url, binary=False):
+
+def fetch(url, binary=False, referer=None):
     """One request at a time, 3s apart, with 90s backoff on a 403.
 
     TopSCHOLAR's bot protection triggers on burst volume, not identity - a
     parallel crawl gets every request refused, a slow polite one sails through.
     """
+    headers = {"User-Agent": UA}
+    if binary:
+        headers.update({
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "same-origin",
+            "Upgrade-Insecure-Requests": "1",
+        })
+        if referer:
+            headers["Referer"] = referer
     for attempt in range(4):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
-            data = urllib.request.urlopen(req, timeout=60).read()
+            req = urllib.request.Request(url, headers=headers)
+            data = _opener.open(req, timeout=60).read()
             time.sleep(3)
             return data if binary else data.decode("utf-8", "replace")
         except urllib.error.HTTPError as e:
@@ -75,9 +94,9 @@ def harvest_item(job):
         t = re.search(r'citation_title" content="([^"]+)"', page)
         title = (t.group(1) if t else list_title).strip()
         if not dest.exists():
-            blob = fetch(pdf_url, binary=True)
+            blob = fetch(pdf_url, binary=True, referer=url)
             if not blob.startswith(b"%PDF"):
-                return None, f"{url}: not a PDF"
+                return None, f"{url}: not a PDF ({len(blob)} bytes)"
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(blob)
         return {"session": session, "type": kind, "title": title, "date": iso,
@@ -88,7 +107,11 @@ def harvest_item(job):
 
 def main():
     meta = json.loads(META.read_text()) if META.exists() else {"entries": []}
-    known = {e["source_url"] for e in meta["entries"]}
+    # Seven entries from an earlier harvest already carry a digitalcommons
+    # Legislation/Bills|Resolutions source_url, some with a trailing slash
+    # this listing's URLs never have - normalize both sides so those don't
+    # get re-fetched as duplicates under a different filename.
+    known = {e["source_url"].rstrip("/") for e in meta["entries"]}
 
     jobs, seen = [], set()
     for kind, listing in LISTINGS:
