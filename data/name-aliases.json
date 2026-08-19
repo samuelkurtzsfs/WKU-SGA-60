@@ -2,7 +2,8 @@
  "note": "One person, spelled more than one way across the sources. The data keeps each source's own spelling; this maps them to a single person for the officer profiles. Adding a pair here asserts they are the same human, so check before adding one. Short forms used in the entry text are mapped here too, so an article calling him Jamie Hargrove reaches the page of James Hargrove. A short form is only added when the surname matches a recorded person AND the years overlap: Ron Beck of 1971-74 is an assistant dean, not the Ronald Beck who sat in the 1966-67 Congress, and is deliberately not mapped.",
  "aliases": {
   "Amanda B. Allen": "Amanda Allen",
-  "Matthew D. Bastin": "Matthew Bastin",
+  "Matthew Bastin": "Matt Bastin",
+  "Matthew D. Bastin": "Matt Bastin",
   "J. Garrett Edmonds": "Garrett Edmonds",
   "Heather Falmlen": "Heather E. Falmlen",
   "R. Reagan Gilley": "Reagan Gilley",
@@ -29,6 +30,8 @@
   "Steve Thornton": "Steven Thornton",
   "Steve Yater": "Steven Yater",
   "Trib Singh": "Tribhuwan Singh",
-  "Ricky Jordan": "Skylar Jordan"
+  "Ricky Jordan": "Skylar Jordan",
+  "Kayla W. Shelton": "Kayla Shelton",
+  "Nicki Seay": "Nicki Taylor"
  }
 }
