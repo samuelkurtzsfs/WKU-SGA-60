@@ -1426,3 +1426,105 @@ of the SGA executive-branch pages the 2011-2016 batch leans on. A run that can
 reach the Wayback Machine should sweep them.
 
 The date question above is the one thing that must be settled before #47 merges.
+
+---
+
+# 19 August 2026, fifth pass — three merged, nothing held
+
+Three research pull requests were open at the start of this pass and all three
+are now on main. Nothing was blocked. Sixty-odd claims were opened at their
+sources; four failed and were cut or trimmed, and the rest of what needed work
+was rescuable — true material that nothing in the archive actually cited.
+
+## #47, the person profiles
+
+The two conditions the previous pass left open were met on the branch: the
+Bastin memo now reads December 1998, matching the event beside it, and the
+uncited "Jessica Wurth (Nominee)" line is gone. A third batch had landed in the
+meantime, eleven officers of the mid-2010s senate and cabinet.
+
+Twenty claims sampled from that batch, eighteen exact. Costa over Patel and
+Treece for the speakership with the Army line; the four who went to Frankfort in
+February 2012 against a 6.4 percent cut; McDowell's Gatton resolution postponed
+rather than passed, which is the verifier's own catch and it is correct; Spirit
+Masters pulled "out of respect for the organization"; Line's appointment and the
+MyCampusToo "centerpiece"; the Talisman index, which really does carry "The
+President's Keeper - James Line."
+
+Cut: a chartered bus cancelled for lack of signups, in the 2012 rally entry. The
+Herald report it cites says nothing about a bus. It was the only sentence in the
+entry that explained why the delegation was small, and an explanation is a claim.
+
+Rescued: three sets of facts that were true and uncited. Costa on impartiality,
+his reason for standing down and his verdict on Paige Settles are all in the
+Herald of 23 April 2013; Treece as a Smiths Grove freshman is in the Herald of
+20 April 2012; McDowell's line about a 2.0 being good enough is in the Herald of
+9 February 2016. None of the three papers was cited anywhere in the archive. All
+three now sit beside the entries they support. Reading a source during research
+is not citing it.
+
+## #49, the senate rolls
+
+The strongest of the three. 1995-96 and 1996-97 recovered from SGA's own
+minutes: 117 members, 746 now on the roll across 33 years.
+
+All 47 mirrored PDFs open as real files and every one carries its own filename's
+date on its face, checked mechanically. The roll-call premise holds — the
+minutes name absentees against a roster they do not print, and the president
+herself appears on one such list, so being marked absent is evidence of a seat.
+The 1996-97 minutes keep a separate visitors line, which is why the rejection of
+Kip Carr is right: he is a visitor on every list of the year, including the
+meetings where Congress thanked him for gathering SGA's history.
+
+Three fixes before it could go live. Thirty members carried a seat line reading
+"attended and voted, per roll call (recorded absent on 10 Sep 1996)" — the two
+halves contradict each other, and the minutes support only the second. They now
+read as the 1995-96 members already did, with the absence in the note. Steven
+Graham was congratulated for perfect attendance on 3 December 1996, not given a
+public relations award for committee work. And four notes published their own
+drafting: a withdrawn claim, a correction of an earlier draft, a question put to
+the editor naming a file in this repository. A reader is owed the finding, not
+the workings.
+
+The 47 PDFs were also unreachable — mirrored, but referenced by no document
+entry, no citation and no rendering path, since the member list does not show
+sources at all. Twenty-one events in those two years already cited the same
+minutes and now link the file, so a reader can open the page a claim rests on.
+The other 26 want proper document entries with a title and summary each, which
+is research rather than editing, and is left for the next run.
+
+## #50, the photographs
+
+Two, and the provenance is as good as this project gets: both files are
+byte-identical to the Herald's own, checksums compared against the og:image the
+source pages point at, and both captions are the paper's own words. Subjects
+identified from the captions, no guessed faces.
+
+One correction. The 2012-13 caption spelled her Keyanna; its own source and
+every other 2012-13 record spell her Keyana, so the page would have shown both
+forms side by side. Changed to follow the caption it paraphrases. This settles
+nothing about Keyanna against Keyana — the leader record, the portrait entry
+that must match it and the two notes recording the doubt are untouched.
+
+The restraint elsewhere in that run was right. Several candidate photographs had
+an image but no caption naming anyone, and were left out. Thirty years with no
+photograph is an honest number.
+
+## Where the record stands
+
+61 years, 2,025 dated events, 60 people who have been president, 746 senate
+members across 33 years, 193 documents mirrored. `build.py`, `check_data.py` and
+`check_contrib.py` all exit clean. `check_duplicates.py` reports the same six
+pairs as every pass before it, all genuinely separate events.
+
+## Left for the routines
+
+`web.archive.org` remains blocked by this container's egress policy, so every
+Wayback citation merged tonight is unverified by me rather than verified.
+
+The officer-portrait gap is unchanged and is a schema decision, not a research
+one: `apply_photo_overlay()` matches a photograph only against a year's leaders,
+so a vice president or a senate officer has no path to a portrait however well
+the caption identifies them.
+
+Twenty-six sets of 1996-97 minutes are mirrored and still unreferenced.
