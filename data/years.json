@@ -9547,6 +9547,16 @@
        "label": "ASG Minutes, 20 Oct 1981",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/265"
       }
+     },
+     {
+      "office": "Student Regent",
+      "name": "Sandra Norfleet",
+      "note": "Separately elected office. The Herald puts the whole term inside 1981-82: no majority in the vote of 9 February 1982, a runoff won on 16 February, and the issue of 15 April 1982 reporting the two-month term nearing its end. This archive filed her under 1982-83 until August 2026.",
+      "src": {
+       "label": "Herald 57:41, 18 Feb 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2447",
+       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3450&context=dlsc_ua_records"
+      }
      }
     ],
     "senate": {
@@ -10183,16 +10193,6 @@
       "src": {
        "label": "ASG Minutes, 29 Apr 1982",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
-      }
-     },
-     {
-      "office": "Student Regent",
-      "name": "Sandra Norfleet",
-      "note": "Separately elected office; her term ran only from mid-February to roughly mid-April 1982, a two-month stopgap before the 1982-83 cycle.",
-      "src": {
-       "label": "Herald 57:41, 18 Feb 1982",
-       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2447",
-       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3450&context=dlsc_ua_records"
       }
      }
     ],
@@ -18746,8 +18746,8 @@
     },
     {
      "date": "1998-11-05",
-     "title": "Pride Week coffee house in Niteclass",
-     "body": "SGA co-sponsored a coffee house with the African-American Players on Thursday 5 November 1998 at 9.30 p.m. in Niteclass, to mark Pride Week. Bill 98-5-F described it as a place for students to share their creative talents and as the academic component of the week.",
+     "title": "Bill 98-5-F sets the Pride Week coffee house for 5 November",
+     "body": "Bill 98-5-F funded a coffee house co-sponsored with the African-American Players, scheduling it for Thursday 5 November 1998 at 9.30 p.m. in Niteclass. The bill described it as a place for students to share their creative talents and as the academic component of Pride Week. The bill is the plan for the evening; no report of how it went has been found.",
      "kind": "program",
      "src": {
       "label": "TopSCHOLAR - Bill 98-5-F, Coffee House for Pride Week",

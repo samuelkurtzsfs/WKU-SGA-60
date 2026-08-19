@@ -837,3 +837,122 @@ profile, 614 senate officers, 238 senate members, 390 legislation files.
 `check_duplicates.py` reports seven pairs, the same seven as yesterday, all
 genuinely separate events — the eighth, in 1995-96, was folded away tonight and
 the checker had never been able to see it.
+
+---
+
+## 19 August 2026, second pass — four branches merged
+
+Four research pull requests were open and all four are now on main: the Congress
+rolls (#31), the pre-2011 legislation harvest (#33), three officer photographs
+(#34) and ten officer profiles (#35). The three stale branches from 4 August that
+the standing brief still names — #6, #7 and #8 — were already closed and needed
+nothing.
+
+### The senate rolls, #31
+
+This is the branch that was refused last night over seven names read off an OCR
+text layer instead of the page. The routine went back to the images, and the
+seven corrections and both removals hold: the appointments page of 29 April 1982
+reads Sammy Abell, Jorge Garcia, Dave Hoffman as off-campus representative,
+Melody Murphy as graduate representative, Susan Beth Tinsley paired with Barry
+Deweese. It then found twelve more names further down the same page and the
+year's first three executive officers, and all of them are on the page. Page two
+gives Brian Shaw as parliamentarian, Robert Cook as sergeant-at-arms, Claire
+Groemling and Melanie Harding in the chairs, and Doug Ball resigning the seat he
+had just been given.
+
+The 1993-94 roll was checked name by name against both sets of minutes. The
+absence lists of 12 October 1993 and 29 March 1994 carry twenty names between
+them; every one is either in the branch or already in the record as an officer,
+and nothing is in the branch that is not on those lists. Terra Swanson's
+election, the McCarty and Haycraft vacancy fills and Rob Evans's Congress Member
+of the Month all read as written. The Fall 1994 membership list pairs to the
+seat column exactly, including the two names the routine correctly held back as
+duplicates of chairs already recorded.
+
+Three things were wrong or missing and are fixed on the branch. Erin Schepman's
+note said she was elected secretary the following year; she was elected on 18
+April 1995 and served in 1995-96, which is two years on, not one. The absence
+list of 20 October 1981 has four names and only three were taken from it, so
+Greg Jennings is added. The same page names Public Affairs Vice-President Laura
+Simms and Secretary Alesia Canafax, both of whom the branch's own notes already
+lean on without recording them; both are now in the 1981-82 executive.
+
+On the structural argument left open last night: the routine dropped the two
+thinnest entries and left the rest, and the labelling is now honest. No entry
+claims a Congress seat in the field a reader sees while its note denies one —
+the committee people are filed under the committee they reported for, and the
+two whose membership is not established say so in the seat itself. That is what
+was asked for.
+
+### The legislation, #33
+
+Four hundred and thirty-seven bills and resolutions from 1975-76 to 2008-09.
+Every file is present, every one begins `%PDF`, none is a bot-check page saved
+under a PDF name, and no source URL or filename is duplicated. Ten were opened
+at random across five decades and the number, title and date inside each
+document match what the index claims for it. Three item pages were checked
+against TopSCHOLAR itself: the titles are exact and the dates match once the
+archive's day-month-year display is read correctly, which the harvester does.
+The session mapping is right, including the June 1976 and January 1979 items
+that fall in the awkward part of the rule.
+
+### The photographs, #34
+
+The two 2026-27 portraits are crops from one Herald group photograph. The
+caption names the three men left to right — Barker, Lucas, Derryberry — and the
+crops match that order against the original, which I fetched and compared. The
+Nolan Miles caption claimed the portrait was taken for his 2016 letter to
+students; the page shows only that it was published with it, so the caption is
+trimmed to that, and to the two years in office the letter itself claims.
+
+### The profiles, #35
+
+Ten officers between 1966 and 1973, and every fact traces to a source already in
+the year. Bucky Lanning's byline is in the index for the Herald of 27 October
+1966, the issue the year already cites. The 1968 election memo is signed Ron
+Beck, Vice-President, dated 3 May and addressed to Dr Thompson, exactly as the
+Cobelli and Heathcoat profiles say. John Lyne ran unopposed, which the year
+records from the Herald of 13 March 1970. The 1973 Talisman carries the Fiorella
+paragraph almost word for word: two vice presidents under the new constitution,
+Boteler and Fiorella holding them, five concerts, the greatest number of
+nationally known groups yet to appear at Western, and the $1.50 fee he wanted
+raised.
+
+### Two things wrong on main itself
+
+Neither came from tonight's branches, and both were published.
+
+Sandra Norfleet was still listed as the 1982-83 student regent in that year's
+executive block, under a note saying her term ran from mid-February to mid-April
+1982. Her leader record has been correctly in 1981-82 since yesterday; the
+officer entry had not followed it. This is the one thing the editorial rules
+name outright and say not to do again, so it is moved, with the Herald's account
+of the runoff written into the note.
+
+The Pride Week coffee house of 5 November 1998 was written as an evening that
+happened. Its only source is Bill 98-5-F, which funded and scheduled it. It is
+rewritten to what the bill proves, and says plainly that no report of the night
+has been found. That also resolves the duplicate pair the checker had been
+flagging against the 20 October funding vote.
+
+### Where the record stands
+
+61 years, 2,014 dated events, 60 people who have been president. 73 leader
+records, all with profiles. 443 executive officer records, 108 of them with a
+profile. 616 senate officers and 332 senate members. 827 pieces of legislation,
+up from 390. 99 photographs. `build.py`, `check_data.py` and `check_contrib.py`
+all exit clean on main. `check_duplicates.py` is down to six pairs, all of them
+genuinely separate events: two bill-then-outcome pairs, a lawsuit and its
+endorsement, a policy stand and the vote that followed, and the three bills of
+1 September 1991, which were three bills.
+
+### Left for the routines
+
+The 1981-82 executive is still thin: Dave Payne's vice-presidency before he
+succeeded Bush is in the minutes and not in the record. The 1994-95 membership
+list gives Stephanie McCarty and Bonnie Newton seats — Potter College and
+Education — that their chair entries do not carry. And the Congress minutes on
+TopSCHOLAR run continuously from 1969 to 2008; almost all of it has still never
+been read by anyone, because the PDF endpoint refuses these sessions and the
+work has been done from what earlier runs happened to mirror.
