@@ -303,6 +303,10 @@
       "office": "Campus Wide Representative At Large (Member of Executive Council)",
       "name": "Forrest (Bucky) Lanning",
       "note": "A senior from Bowling Green whose at-large seat carried Executive Council membership; the 1967 Talisman caption also lists him as a member of the Executive Committee.",
+      "profile": [
+       "Forrest (Bucky) Lanning, a senior from Bowling Green, won one of the at-large Campus Wide Representative seats in the first Congress of Associated Students, elected in May 1966. The founding roster marks the seat as carrying membership on the Executive Council, and the 1967 Talisman's caption for the Associated Students group photograph again lists him with the Executive Committee.",
+       "That October, the Herald printed a piece under his byline defending the Student Activities Committee, the only other trace this archive holds of his year in the government."
+      ],
       "src": {
        "label": "UA3/3/1 Congress of Associated Students, roster of the first Congress elected May 1966",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/1824"
@@ -312,6 +316,9 @@
       "office": "I. F. C. Representative (Member of Executive Council)",
       "name": "Marshall Peace",
       "note": "A senior from Hopkinsville; the roster marks this Interfraternity Council seat as carrying Executive Council membership.",
+      "profile": [
+       "Marshall Peace, a senior from Hopkinsville, held the Interfraternity Council seat in the first Congress of Associated Students, elected in May 1966. The founding roster marks the seat as carrying membership on the Executive Council. No other record of his year in the government survives in this archive."
+      ],
       "src": {
        "label": "UA3/3/1 Congress of Associated Students, roster of the first Congress elected May 1966",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/1824"
@@ -321,6 +328,9 @@
       "office": "Senior Class Representative At Large (Member of Executive Council)",
       "name": "David Arvin",
       "note": "The roster marks his seat as carrying membership of the Executive Council, so he sat in the executive as well as in Congress.",
+      "profile": [
+       "David Arvin held one of the Senior Class Representative At Large seats in the first Congress of Associated Students, elected in May 1966. The founding roster marks the seat as carrying membership on the Executive Council, so he sat in the executive as well as in Congress. No other record of his year in the government survives in this archive."
+      ],
       "src": {
        "label": "UA3/3/1 Congress of Associated Students, roster of the first Congress elected May 1966",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/1824"
@@ -1402,6 +1412,9 @@
      {
       "office": "Congressman at large",
       "name": "John Cobelli",
+      "profile": [
+       "John Cobelli won a Congressman at Large seat in the Associated Students election held 2 May 1968, per Vice President Ron Beck's results memo to President Kelly Thompson dated the following day. No further record of his term survives in this archive."
+      ],
       "src": {
        "label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543",
@@ -1411,6 +1424,9 @@
      {
       "office": "Congressman at large",
       "name": "Janie Heathcoat",
+      "profile": [
+       "Janie Heathcoat won a Congressman at Large seat in the Associated Students election held 2 May 1968, per Vice President Ron Beck's results memo to President Kelly Thompson dated the following day. No further record of her term survives in this archive."
+      ],
       "src": {
        "label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543",
@@ -1854,6 +1870,9 @@
       "office": "Treasurer",
       "name": "John Barra",
       "note": "Elected with 1,728 votes to Ray Newton's 1,638. He appears again by name on the 1970 Talisman's Associated Students Officers spread.",
+      "profile": [
+       "John Barra was elected treasurer of the Associated Students in the spring 1969 election, with 1,728 votes to Ray Newton's 1,638. He appears again by name on the 1970 Talisman's Associated Students Officers spread, the only other trace of his term in this archive."
+      ],
       "src": {
        "label": "UA3/3/1 Associated Student Government Election, spring 1969 result sheet",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/566"
@@ -1863,6 +1882,9 @@
       "office": "Secretary",
       "name": "Georgenna Sleamaker",
       "note": "Elected with 1,872 votes to June Shartzer's 1,564. The result sheet, the Herald index for 15 May 1969 and the 1970 Talisman all spell the first name Georganna.",
+      "profile": [
+       "Georgenna Sleamaker was elected secretary of the Associated Students in the spring 1969 election, with 1,872 votes to June Shartzer's 1,564. The election result sheet, the Herald's index for 15 May 1969 and the 1970 Talisman all spell her first name Georganna; this archive's leader record uses Georgenna instead, and the archive has not been able to establish why."
+      ],
       "src": {
        "label": "UA3/3/1 Associated Student Government Election, spring 1969 result sheet",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/566"
@@ -2358,6 +2380,9 @@
       "office": "Treasurer",
       "name": "Brett Butler",
       "note": "Butler was treasurer of Associated Students in 1970-71. He appears only in the Executive Council photograph caption; the yearbook's signed essay by Lyne does not discuss individual officers.",
+      "profile": [
+       "Brett Butler was treasurer of Associated Students in 1970-71, under president John Lyne, who ran unopposed. The only record of him in this archive is the Executive Council photograph caption in the 1971 Talisman; the yearbook's signed essay on the year by Lyne does not discuss individual officers, so no further detail of Butler's term survives here."
+      ],
       "src": {
        "label": "1971 Talisman, Associated Students, p. 67",
        "url": "https://archive.org/details/talisman1971west"
@@ -2367,6 +2392,9 @@
       "office": "Secretary",
       "name": "Carol Gray",
       "note": "Gray was secretary of Associated Students in 1970-71. As with Butler, the only appearance is the Executive Council photograph caption.",
+      "profile": [
+       "Carol Gray was secretary of Associated Students in 1970-71, under president John Lyne, who ran unopposed. As with treasurer Brett Butler, the only record of her in this archive is the Executive Council photograph caption in the 1971 Talisman; Lyne's signed essay on the year does not discuss individual officers, so no further detail of Gray's term survives here."
+      ],
       "src": {
        "label": "1971 Talisman, Associated Students, p. 67",
        "url": "https://archive.org/details/talisman1971west"
@@ -3714,6 +3742,11 @@
       "office": "Activities Vice President",
       "name": "Michael Fiorella",
       "note": "The archive records Fiorella only as student regent; the sources say he held both offices. The 1973 Talisman states that under the new constitution two vice presidents were elected, one for administrative duties and one for activities, and that Charles Boteler and Mike Fiorella held them respectively; the Herald of 1 September 1972 calls him vice president for activities (https://digitalcommons.wku.edu/dlsc_ua_records/4871) and the 1974 Talisman says he was elected ASG activities vice-president in his junior year and was also student regent. He headed the Activities Committee, which booked Chicago, Jethro Tull and the Beach Boys, and he proposed raising the student activity fee to $5 a semester from the $1.50 then charged, the quoted words being his verdict on the existing funding. A caption in the same volume says he was chosen as the voting student member of the Board of Regents because ASG president Ed Jordan was disqualified for being an out-of-state student, while the volume's Board of Regents page says he was elected student representative by the student body; both statements come from the 1973 Talisman. Sources print him as Mike Fiorella.",
+      "profile": [
+       "This archive's leader record names Michael Fiorella only as the 1972-73 student regent, but the sources say he held both offices at once. The 1973 Talisman states that the newly revised ASG constitution created two vice presidents, one for administrative duties and one for activities, and that Charles Boteler and Mike Fiorella held them respectively; the Herald of 1 September 1972 likewise calls him vice president for activities, and the 1974 Talisman says he was elected ASG activities vice-president in his junior year and was also student regent.",
+       "As activities vice president he headed the Activities Committee, which the 1973 Talisman credits with the greatest number of nationally known groups yet booked at Western, naming Chicago, Jethro Tull and the Beach Boys among five concerts that year. The same volume records him arguing for a higher student activity fee than the $1.50 a semester then charged.",
+       "Fiorella went on to the voting student seat on the Board of Regents that year; the 1973 Talisman's own account of how he came to hold it is not fully consistent, crediting his selection in one place to Ed Jordan's disqualification as an out-of-state student and in another to election by the student body. He was sworn in on 26 September 1972."
+      ],
       "src": {
        "label": "1973 Talisman, Associated Students, pp. 74-75, and Profile, p. 237",
        "url": "https://archive.org/details/talisman1973west"
