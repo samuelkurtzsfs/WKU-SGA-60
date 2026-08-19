@@ -9496,6 +9496,24 @@
        "label": "WKU Board of Regents minutes, 30 Jan 1982",
        "url": "https://digitalcommons.wku.edu/bor/1982/mtgs/1"
       }
+     },
+     {
+      "office": "Public Affairs Vice President",
+      "name": "Laura Simms",
+      "note": "Named Public Affairs Vice-President in the minutes of 20 October 1981, reporting on the phone-a-thon and the week's campus events. The same year's minutes name her chairperson of the Communications Committee.",
+      "src": {
+       "label": "ASG Minutes, 20 Oct 1981",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/265"
+      }
+     },
+     {
+      "office": "Secretary",
+      "name": "Alesia Canafax",
+      "note": "Named Secretary in the minutes of 20 October 1981, announcing an opening for off-campus representatives and asking chairpersons for their committee rolls. Susan Albert filled in for her at the meeting of 9 February 1982.",
+      "src": {
+       "label": "ASG Minutes, 20 Oct 1981",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/265"
+      }
      }
     ],
     "senate": {
@@ -9583,6 +9601,15 @@
       },
       {
        "name": "Sherry Howell",
+       "seat": "Congress member",
+       "note": "Named in the roll-call absence list of 20 October 1981.",
+       "src": {
+        "label": "ASG Minutes, 20 Oct 1981",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/265"
+       }
+      },
+      {
+       "name": "Greg Jennings",
        "seat": "Congress member",
        "note": "Named in the roll-call absence list of 20 October 1981.",
        "src": {
@@ -15864,7 +15891,7 @@
       },
       {
        "name": "Erin Schepman",
-       "note": "Recorded absent at Congress roll call, 29 March 1994, the year before she was elected SGA secretary.",
+       "note": "Recorded absent at Congress roll call, 29 March 1994. She was elected SGA secretary on 18 April 1995 and served in 1995-96.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
