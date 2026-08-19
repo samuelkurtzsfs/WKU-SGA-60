@@ -1230,3 +1230,115 @@ The senate pass should keep to #42's discipline: mirror the minutes, keep the
 disposition file, and put every uncertainty in the seat label so a bare
 unconfirmed name can never render on its own. 1992-93 has full minutes coverage
 and no members yet; 1995-96 onward waits behind it. No open pull requests remain.
+
+# 19 August 2026, evening — editor pass
+
+## What I reviewed
+
+Three open research pull requests, all merged after correction. #6, #7 and #8,
+the three that had been open since 4 August, were already closed by an earlier
+pass; nothing was left to rescue or to shut.
+
+**#43, person profiles.** Eighteen executive and Senate officers across 2004-13.
+I opened thirteen cited sources and read them. The numbers held everywhere they
+could be checked: Kendrick Bryan's 18.62 per cent against Jimmie Lee's 77.63 and
+Glenn Fonda's 3.75; Cain Alvey's 419 votes to Keyana Boka's 626 and Austin
+Wingate's 300; Devon Hilderbrandt's £34,000-odd of organisational aid across
+about fifty groups at $500 apiece; Ann-Blair Thornton's 31 rival contestants at
+Lexington. The run comment worried that this batch might be resting on misdated
+SGA minutes. It is not: all six minutes items it leans on check out against
+`.research/minutes-index.json` — item 721 is 6 February 2007, 740 is 4 September
+2007, 684 is 31 January 2006, 208 is 6 September 2005, 235 is 4 April 2006, 717
+is 28 November 2006.
+
+**#44, photographs.** Eight year photographs for 2016-17 through 2024-25. All
+eight are genuine image files, and every subject was checked against the
+photographer's own caption fetched from the Herald's media records rather than
+against the article text.
+
+**#45, the 1992-93 Congress roll.** Sixty-six members, the year's committees and
+its chair successions. The minutes PDFs would not come down — `viewcontent.cgi`
+answers 202 with an empty body from here, for every article, so it is the
+download path and not these items. Instead of sampling I resolved all eighty
+citations on the year against the local minutes index and TopSCHOLAR's own item
+records. Seventy-three matched exactly.
+
+## What I corrected
+
+Bryan was recorded as running for the Kentucky House in November 2012. The story
+cited is dated 24 May 2012 and reports a result already in; no source
+says November. Redated. His University Experience section was written as teaching
+done in his final year, out of two stories that both look forward — "will teach",
+"will come back to WKU as an instructor in the fall" — and out of an autumn that
+falls after the term ended. Trimmed to a hiring reported in advance.
+
+Aaron Pawley was recorded as resigning his Senate seat to study abroad in
+England. That was Eileen Forsythe's reason, at the same meeting of 27 January
+2010; this archive's own event for that night gives Pawley's as a
+difficult course load. Corrected in the new profile and in the older note, which
+carried the same swap.
+
+Katie Stillwell was given a resignation effective 16 March 2012, which no source
+supports — she announced it at the meeting of 20 March — and a June wedding and
+law school applications that appear in neither cited story. Both cut. Charlie
+Harris carried two quotations from a single article where the rule allows one.
+Seth Norman's profile had been pasted onto both his directorship and his
+committee chairmanship.
+
+Peyton Hess was captioned as a senator. She was SGA's Glasgow regional
+ambassador, and the Herald has her bringing Bill 38-23-S to the meeting in
+Bowling Green over Zoom — Glasgow is where the trivia night was to be held, not
+where she was sitting. The election-night caption from April 2022 listed Cole
+Bornefeld, Sam Kurtz and Garrison Reed against president, vice president and
+administrative vice president in an order that gave Kurtz and Reed each other's
+offices; Reed was executive vice president and Kurtz administrative vice
+president, as this archive's own officer record and the Herald's other captions
+from that night both have it. Two masked-meeting and red-jacket captions were
+trimmed to what their sources say.
+
+Five 1992-93 members cited minutes item 406 under a label reading 22 September
+1992; TopSCHOLAR records that item as 20 September, and the labels now match the
+item they point at. Student Affairs showed Scott Sivley as chair while its own
+note recorded the chair changing twice more that year, which also had him
+chairing two committees at once; it now runs the succession the minutes give.
+The City Council representative had been filed as a committee of one when the
+officer list already held Trent Lyda in the role.
+
+## What I rescued rather than cut
+
+Cain Alvey's charging-station amendment had no citation anywhere in the archive,
+and the event already on file for those stations names neither him nor the veto.
+Rather than delete a true claim I found the report — the Herald of 30 October
+2013 — which confirms all of it, and cited it. Keyana Boka's account of Bryan
+was in the same position, its source sitting on his 2009-10 entry instead of the
+term the profile is on.
+
+One build change came out of this. Officer entries were read for `src`, `src2`
+and `src3` only, so a fourth citation would have sat in the data and rendered
+nowhere. The slots are now read from one list. #44 found the same shape of fault
+on the photograph side and was right to hold ~970 officer portraits back rather
+than add data the site would never show; extending the build to officer profile
+pages is the next thing worth doing there.
+
+## Where the record stands
+
+61 years, 2,014 dated events, 60 people who have been president. The senate roll
+is 629 members across 31 years after 1992-93 came in. 29 years now carry a
+photograph and 73 leaders carry a portrait. `build.py`, `check_data.py` and
+`check_contrib.py` all exit clean; `check_duplicates.py` reports the same six
+pairs, and I judge all six genuinely separate events — the three bills of
+1 September 1991 are the case the rules explicitly keep apart.
+
+## Left for the routines
+
+Two things are written down rather than fixed. Minutes item 406 is dated 20
+September 1992 by TopSCHOLAR, a Sunday, when every other meeting that year falls
+on a Tuesday or a Thursday; the metadata may itself be wrong, and whoever next
+has the PDF open should settle it. And the 2013-14 event for the library
+charging stations says the purchase was agreed, on the strength of a first-read
+report — "should all go according to plan". The 30 October story is the one that
+says what happened, and the event should be rewritten against it.
+
+The minutes PDFs were unreachable all evening. Content-level checking of the
+1992-93 roll is therefore still owed, and the next pass with working downloads
+should spot-read a few of the sixty-six against their meetings.
