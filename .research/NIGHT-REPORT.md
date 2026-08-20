@@ -2076,3 +2076,84 @@ written profile, up 11. 279 document files held, up 11. 1,649 pages built, 1,565
 them person pages. `build.py`, `check_data.py` and `check_contrib.py` all clean on the
 merged head; `check_duplicates.py` reports the same six long-judged pairs, untouched by
 either merge, since neither added an event.
+
+# 20 August 2026, late — editor pass, four merged, one silent-drop caught
+
+Four pull requests open, all cut from current main. Everything landed.
+
+## #67, the backlog — merged after fixing the date slip
+
+The 2003-04 cabinet, taken from four sets of minutes pulled from TopSCHOLAR. The
+previous editor's pass held it on a dating question — one PDF the researcher had
+labelled "10 September 2003" over item 522, when item 522 is the 16 September
+meeting and 10 September was a Wednesday. The four PDFs are already committed to
+`data/documents/`, so I extracted them with `pdftotext` and settled it against the
+primary text: item 522's `bepress_citation_date` metadata on TopSCHOLAR reads
+`2003-09-16` with a 5:04-5:33 PM sitting, and the mirrored PDF's "adjourned at
+5:33pm" line matches the metadata exactly. The "10" in the OCR is a misread of "16"
+(the "6" scans as "0"). Every years.json citation in the diff already read "16 Sep
+2003" and item 522 correctly; the only slip was in the SGA-60-AGENT-INFO.md summary
+prose. I corrected it (b8f4018), which also fixed "five full SGA minutes PDFs" to
+"four", which is what the branch actually mirrors.
+
+All four PDFs read end-to-end: the executive header on every meeting names Johnson,
+Todd, Lovan, Martin, Pava; 2 Sep 2003 swore in Ransdell as Chief Justice with three
+justices and four committee heads; 16 Sep 2003 approved Yancey and Stevenson
+unanimously; 2 Dec 2003 gives the year's five committee chair lines; 13 April 2004
+carries Watkins's speaker vote as "won by one vote... sealed ballot", which the
+Herald article already in the record fills out as 9-8. The Herald piece checks out.
+The verifier's own trims — six officer notes narrowed to what the meetings actually
+show, two second-name committee mentions kept without a role — are sound.
+
+## #68, photographs — merged as is
+
+Two Herald photographs for years that had none: Kaylee Egerer applauding the DUC
+resolution in February 2011, new senators sworn in on 29 October 2013. Both files
+were the *original* wp-content images the Herald served (md5-matched to the source,
+byte-for-byte), and both captions paraphrase what the Herald printed alongside the
+photograph faithfully. Nothing to cut.
+
+## #69, cabinet profiles — merged as is
+
+Eleven profiles across 2018-19 through 2020-21: Anderson, Moore, Kelley, Brosky,
+Mujkanovic, Norvell, Evans, Keller, Barr, Okert, Moorehead. Every claim I sampled
+resolves to an event already on the year page — Mujkanovic's 32 percent in April
+2018, the 305/930/212 split in April 2017, Kelley's 24-3-4 confirmation, Norvell's
+398 scholarship applications, Keller's 28-0 and 29-1 confirmation votes, Barr's
+$2,000 first-generation scholarship 31-1. The verifier's three trims (Moore's role
+in the first Unite for Fairness night only, Mujkanovic corrected from third to
+second in 2017, Mujkanovic's authored-legislation list pruned of the Glasgow bill
+the record attributes to Edmonds) are all sound and already applied.
+
+## #70, the 2006-07 senate roll — merged after one add
+
+Eight senator records added. Every draft name verifies against the 5 September
+2006, 28 November 2006 and 5 December 2006 minutes already mirrored on main. But
+the swearing-in list in the 5 Sep minutes carries **eight** names, not seven, and
+the draft had **Tori Theiss** silently dropped. Her name is in every copy of the
+evidence quote the researcher's own verifier kept in `senators-2006-07-verdict.json`,
+and by the 5 December meeting she is chairing Campus Improvements. I added her
+(`262d851`), sourced to both the 5 Sep swearing-in list and the 5 Dec chair line.
+That brings the roll to nine and matches what the minutes actually say.
+
+The failure mode is trap Class 7 from CLAUDE.md — a pass that reports success while
+producing less than its own evidence contained. Worth adding a schema-level check:
+for a swearing-in list, count the names in the evidence quote and refuse a draft
+with fewer. Flagged in the merge comment for the routine.
+
+## Still open
+
+- Nick Todd's records still merge by exact name on the person page. Not addressed
+  tonight; the note from earlier passes carries forward.
+- The three over-length quotes on main from earlier passes (Donald Smith 1993-94,
+  Cole McDowell and James Line 2014-15) still pending.
+- Silent-drop guard in the senate-roll verifier, per above.
+
+## Where the archive stands
+
+61 academic years. 2,025 dated and sourced entries. 991 senate member records
+(up 9 tonight) and 1,094 executive and senate officer records (up 13, from the
+2003-04 cabinet). 355 records carry a written profile, up 11. 283 document files
+held. `build.py`, `check_data.py` and `check_contrib.py` all clean on the merged
+head; `check_duplicates.py` reports the same six long-judged pairs, untouched by
+any of tonight's merges.
