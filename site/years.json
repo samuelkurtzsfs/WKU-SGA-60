@@ -27865,11 +27865,511 @@
      }
     ],
     "senate": {
-     "officers": [],
-     "committees": [],
-     "note": "No senate officer or committee roster for 2002-03 could be confirmed. TopSCHOLAR holds weekly meeting-minutes abstracts for this year (Aug 2002-Apr 2003, e.g. digitalcommons.wku.TopSCHOLAR's full-text PDFs for this year sit behind an automated-access check and have not been read. The ad hoc financial review committee formed in the gazebo-funds dispute is the only committee identified by name in confirmed sources."
+     "officers": [
+      {
+       "office": "Coordinator of Committees",
+       "name": "Michelle Woods",
+       "src": {
+        "label": "SGA Meeting Minutes, 27 Aug 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
+       }
+      },
+      {
+       "office": "Parliamentarian",
+       "name": "Dwight Campbell",
+       "note": "Vacated the position by mid-September 2002; Brooke Smith was appointed and approved as parliamentarian on 24 September.",
+       "src": {
+        "label": "SGA Meeting Minutes, 27 Aug 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
+       }
+      },
+      {
+       "office": "Parliamentarian",
+       "name": "Brooke Smith",
+       "note": "Appointed and approved unanimously, 24 September 2002. Congress noted that year that the parliamentarian, historian and sergeant-at-arms could not simultaneously hold a Congress seat.",
+       "src": {
+        "label": "SGA Meeting Minutes, 24 Sep 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/217"
+       }
+      },
+      {
+       "office": "Historian",
+       "name": "Eddie Schwab",
+       "src": {
+        "label": "SGA Meeting Minutes, 27 Aug 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
+       }
+      },
+      {
+       "office": "Information Technology Director",
+       "name": "Sam Stinson",
+       "src": {
+        "label": "SGA Meeting Minutes, 27 Aug 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Academic Affairs",
+       "chair": "Jessica Martin",
+       "src": {
+        "label": "SGA Meeting Minutes, 27 Aug 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
+       }
+      },
+      {
+       "name": "Campus Improvements",
+       "chair": "Nick Todd",
+       "note": "Also approved as chair of the ad hoc Financial Review committee formed in that autumn's dispute over SGA's gazebo funds.",
+       "src": {
+        "label": "SGA Meeting Minutes, 24 Sep 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/217"
+       }
+      },
+      {
+       "name": "Legislative Research",
+       "chair": "Scott Wolfe",
+       "note": "Resigned effective 18 March 2003; Congress approved Robert Watkins to succeed him the same night.",
+       "src": {
+        "label": "SGA Meeting Minutes, 27 Aug 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
+       },
+       "src2": {
+        "label": "SGA Meeting Minutes, 18 Mar 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/514"
+       }
+      },
+      {
+       "name": "Public Relations",
+       "chair": "Patti Johnson",
+       "src": {
+        "label": "SGA Meeting Minutes, 27 Aug 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
+       }
+      },
+      {
+       "name": "Senior Recognition",
+       "chair": "Kristin Hartley",
+       "src": {
+        "label": "SGA Meeting Minutes, 27 Aug 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
+       }
+      },
+      {
+       "name": "Student Affairs",
+       "chair": "Charlie Walker",
+       "note": "Charlie Walker stepped down during the year; Congress approved Katie Dawson and Tim Howard as co-chairs on 29 January 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 27 Aug 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
+       },
+       "src2": {
+        "label": "SGA Meeting Minutes, 29 Jan 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/214"
+       }
+      }
+     ],
+     "note": "Twenty-three of the year's weekly Congress meeting minutes (27 Aug 2002-15 Apr 2003) were read directly from TopSCHOLAR for this pass, naming 29 rank-and-file members sworn in over the year and the committee chairs and administrative officers above. Congressional membership fluctuated throughout the year as seats were vacated and refilled: officer reports put the total at 64 on 10 Sep 2002, 71 on 24 Sep 2002, 66 on 8 Oct 2002, and as low as 55 on 5 Feb 2003, so no single figure is recorded as the year's size. The ad hoc Financial Review committee, formed that autumn in the dispute over SGA's gazebo funds, and the ad hoc Special Organizational Aid and Internal Affairs committees are not included above as they were not among the year's standing committees. Some names in the minutes' scans are hard to read; where a name looks OCR-uncertain the individual member record says so.",
+     "members": [
+      {
+       "name": "Stacey Adkisson",
+       "seat": "Congress member",
+       "note": "One of three new Congress members sworn in, 17 September 2002.",
+       "src": {
+        "label": "SGA Meeting Minutes, 17 Sep 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/218"
+       }
+      },
+      {
+       "name": "Michael Baller",
+       "seat": "At-large representative",
+       "note": "Sworn in as at-large Congress member, 11 February 2003. Spelling as printed in the minutes; unverified against a second source.",
+       "src": {
+        "label": "SGA Meeting Minutes, 11 Feb 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/213"
+       }
+      },
+      {
+       "name": "LoriLee Beckman",
+       "seat": "Congress member",
+       "note": "One of three new Congress members sworn in, 8 October 2002.",
+       "src": {
+        "label": "SGA Meeting Minutes, 8 Oct 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/657"
+       }
+      },
+      {
+       "name": "Bob Bell",
+       "seat": "Congress member",
+       "note": "One of two new Congress members sworn in, 24 September 2002. Went on to speak in floor debate and was named among the Congress member of the semester nominees that fall.",
+       "src": {
+        "label": "SGA Meeting Minutes, 24 Sep 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/217"
+       }
+      },
+      {
+       "name": "Amy Bell",
+       "seat": "At-large representative",
+       "note": "One of six sworn in as at-large Congress members, 29 January 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 29 Jan 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/214"
+       }
+      },
+      {
+       "name": "Ashley Bishop",
+       "seat": "At-large representative",
+       "note": "One of six sworn in as at-large Congress members, 29 January 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 29 Jan 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/214"
+       }
+      },
+      {
+       "name": "Scott Broadbent",
+       "seat": "At-large representative",
+       "note": "One of six sworn in as at-large Congress members, 29 January 2003. Named Congress member of the month for March 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 29 Jan 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/214"
+       }
+      },
+      {
+       "name": "LaTonnsya Burney",
+       "seat": "Congress member",
+       "note": "One of two new Congress members sworn in, 24 September 2002. Spelling as printed in the minutes; unverified against a second source.",
+       "src": {
+        "label": "SGA Meeting Minutes, 24 Sep 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/217"
+       }
+      },
+      {
+       "name": "Emily St Clair",
+       "seat": "At-large representative",
+       "note": "Sworn in as at-large Congress member, 18 February 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 18 Feb 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/212"
+       }
+      },
+      {
+       "name": "Grant Clark",
+       "seat": "At-large representative",
+       "note": "One of six sworn in as at-large Congress members, 29 January 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 29 Jan 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/214"
+       }
+      },
+      {
+       "name": "Keanan Noel Cortney",
+       "seat": "At-large representative",
+       "note": "Sworn in as Congress member, 1 October 2002. Name as printed in the minutes.",
+       "src": {
+        "label": "SGA Meeting Minutes, 1 Oct 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/659"
+       }
+      },
+      {
+       "name": "Heather Francis",
+       "seat": "At-large representative",
+       "note": "One of four sworn in as at-large Congress members, 4 March 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 4 Mar 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/210"
+       }
+      },
+      {
+       "name": "Kristiana Garvey",
+       "seat": "At-large representative",
+       "note": "One of four sworn in as at-large Congress members, 4 March 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 4 Mar 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/210"
+       }
+      },
+      {
+       "name": "Sara Hanley",
+       "seat": "Congress member",
+       "note": "One of three new Congress members sworn in, 8 October 2002.",
+       "src": {
+        "label": "SGA Meeting Minutes, 8 Oct 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/657"
+       }
+      },
+      {
+       "name": "Lindsay Hughes",
+       "seat": "At-large representative",
+       "note": "One of six sworn in as at-large Congress members, 29 January 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 29 Jan 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/214"
+       }
+      },
+      {
+       "name": "Kelly Johnson",
+       "seat": "Southwest Hall representative",
+       "note": "Sworn in as Congress member, 1 October 2002.",
+       "src": {
+        "label": "SGA Meeting Minutes, 1 Oct 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/659"
+       }
+      },
+      {
+       "name": "Timothy Hill Jr.",
+       "seat": "At-large representative",
+       "note": "One of six sworn in as at-large Congress members, 29 January 2003. Spoke from the floor later that spring on a military-families support group.",
+       "src": {
+        "label": "SGA Meeting Minutes, 29 Jan 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/214"
+       }
+      },
+      {
+       "name": "Matthew Latimer",
+       "seat": "Congress member",
+       "note": "One of three new Congress members sworn in, 17 September 2002.",
+       "src": {
+        "label": "SGA Meeting Minutes, 17 Sep 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/218"
+       }
+      },
+      {
+       "name": "John Law",
+       "seat": "At-large representative",
+       "note": "Sworn in as Congress member, 1 October 2002. Active in floor debate through the year and later gave a report to Congress from the University Technology Acceptance Committee.",
+       "src": {
+        "label": "SGA Meeting Minutes, 1 Oct 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/659"
+       }
+      },
+      {
+       "name": "Gretchen Light",
+       "seat": "At-large representative",
+       "note": "Sworn in as at-large Congress member, 11 February 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 11 Feb 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/213"
+       }
+      },
+      {
+       "name": "Kent Lucas",
+       "seat": "At-large representative",
+       "note": "Sworn in as at-large Congress member, 5 February 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 5 Feb 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/518"
+       }
+      },
+      {
+       "name": "Robert Reynolds",
+       "seat": "At-large representative",
+       "note": "One of four sworn in as at-large Congress members, 4 March 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 4 Mar 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/210"
+       }
+      },
+      {
+       "name": "Morgan Rink",
+       "seat": "Congress member",
+       "note": "One of three new Congress members sworn in, 17 September 2002.",
+       "src": {
+        "label": "SGA Meeting Minutes, 17 Sep 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/218"
+       }
+      },
+      {
+       "name": "Stefanie Seifers",
+       "seat": "At-large representative",
+       "note": "One of three sworn in as at-large Congress members, 18 March 2003. Name as printed in a poor-quality scan; unverified against a second source.",
+       "src": {
+        "label": "SGA Meeting Minutes, 18 Mar 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/514"
+       }
+      },
+      {
+       "name": "Whitney Simpson",
+       "seat": "At-large representative",
+       "note": "Sworn in as at-large Congress member, 18 February 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 18 Feb 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/212"
+       }
+      },
+      {
+       "name": "Aaron Smither",
+       "seat": "Congress member",
+       "note": "One of three new Congress members sworn in, 8 October 2002.",
+       "src": {
+        "label": "SGA Meeting Minutes, 8 Oct 2002",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/657"
+       }
+      },
+      {
+       "name": "Amanda Snyder",
+       "seat": "At-large representative",
+       "note": "Sworn in as at-large Congress member, 5 February 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 5 Feb 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/518"
+       }
+      },
+      {
+       "name": "Phallida White",
+       "seat": "At-large representative",
+       "note": "One of three sworn in as at-large Congress members, 18 March 2003. Name as printed in a poor-quality scan; unverified against a second source and possibly an OCR misreading.",
+       "src": {
+        "label": "SGA Meeting Minutes, 18 Mar 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/514"
+       }
+      },
+      {
+       "name": "Cameron Yancey",
+       "seat": "At-large representative",
+       "note": "One of four sworn in as at-large Congress members, 4 March 2003.",
+       "src": {
+        "label": "SGA Meeting Minutes, 4 Mar 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/210"
+       }
+      }
+     ]
     }
-   }
+   },
+   "documents": [
+    {
+     "file": "2002-03-minutes-2002-08-27.pdf",
+     "title": "SGA Meeting Minutes, 27 August 2002",
+     "summary": "The year's first Congress meeting: President Jamie Sears reviewed roles for new members, 18 Congress members were sworn in, and the President made the year's committee-chair, coordinator, historian, IT director and parliamentarian appointments.",
+     "extract": "18 Congress members were sworn in.",
+     "sga_pages": "2-3",
+     "page": 2,
+     "src": {
+      "label": "SGA Meeting Minutes, 27 Aug 2002",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
+     }
+    },
+    {
+     "file": "2002-03-minutes-2002-09-17.pdf",
+     "title": "SGA Meeting Minutes, 17 September 2002",
+     "summary": "The fourth Congress meeting of the year, in which three new Congress members were sworn in and Brandon Copeland appointed Nick Todd as chair of the ad hoc Financial Review committee and Brooke Smith as parliamentarian.",
+     "extract": "3 new Congress members were sworn in today.",
+     "sga_pages": "2-3",
+     "page": 2,
+     "src": {
+      "label": "SGA Meeting Minutes, 17 Sep 2002",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/218"
+     }
+    },
+    {
+     "file": "2002-03-minutes-2002-09-24.pdf",
+     "title": "SGA Meeting Minutes, 24 September 2002",
+     "summary": "Records two new Congress members sworn in and Congress's total membership standing at 71, with Zacharias Hall's growth entitling it to a second representative.",
+     "extract": "2 new Congress members were sworn in today.",
+     "sga_pages": "2",
+     "page": 2,
+     "src": {
+      "label": "SGA Meeting Minutes, 24 Sep 2002",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/217"
+     }
+    },
+    {
+     "file": "2002-03-minutes-2002-10-01.pdf",
+     "title": "SGA Meeting Minutes, 1 October 2002",
+     "summary": "Records three new Congress members sworn in, including two at-large representatives and one Southwest Hall representative, plus a Judicial Council attendance hearing that dismissed several members from the roll.",
+     "extract": "3 people sworn in as Congress Members.",
+     "sga_pages": "2",
+     "page": 2,
+     "src": {
+      "label": "SGA Meeting Minutes, 1 Oct 2002",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/659"
+     }
+    },
+    {
+     "file": "2002-03-minutes-2002-10-08.pdf",
+     "title": "SGA Meeting Minutes, 8 October 2002",
+     "summary": "Records three new Congress members sworn in and the total Congress membership at 66, alongside a Sergeant-at-Arms appointment and a Judicial Council appointment.",
+     "extract": "3 new Congress members were sworn in today.",
+     "sga_pages": "3",
+     "page": 3,
+     "src": {
+      "label": "SGA Meeting Minutes, 8 Oct 2002",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/657"
+     }
+    },
+    {
+     "file": "2002-03-minutes-2003-01-29.pdf",
+     "title": "SGA Meeting Minutes, 29 January 2003",
+     "summary": "The spring semester's second meeting, in which six people were sworn in as at-large Congress members and Katie Dawson and Tim Howard were approved as co-chairs of the Student Affairs committee.",
+     "extract": "6 people were sworn in as At-Large congress-members.",
+     "sga_pages": "3",
+     "page": 3,
+     "src": {
+      "label": "SGA Meeting Minutes, 29 Jan 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/214"
+     }
+    },
+    {
+     "file": "2002-03-minutes-2003-02-05.pdf",
+     "title": "SGA Meeting Minutes, 5 February 2003",
+     "summary": "Records two people sworn in as at-large Congress members, with total Congress membership at 55, and a contested debate and vote on the President's nominees to the newly created Enrollment Task Force.",
+     "extract": "2 people were sworn in as at-large congress members.",
+     "sga_pages": "2",
+     "page": 2,
+     "src": {
+      "label": "SGA Meeting Minutes, 5 Feb 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/518"
+     }
+    },
+    {
+     "file": "2002-03-minutes-2003-02-11.pdf",
+     "title": "SGA Meeting Minutes, 11 February 2003",
+     "summary": "Records two people sworn in as at-large Congress members and the Congress and Committee members of the month for January.",
+     "extract": "2 people were sworn in as At-Large congress-members.",
+     "sga_pages": "3",
+     "page": 3,
+     "src": {
+      "label": "SGA Meeting Minutes, 11 Feb 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/213"
+     }
+    },
+    {
+     "file": "2002-03-minutes-2003-02-18.pdf",
+     "title": "SGA Meeting Minutes, 18 February 2003",
+     "summary": "Records two people sworn in as at-large Congress members, debate over the Enrollment Task Force nominees, and a visitor from the Campus Green party questioning Congress on its position on the Iraq war.",
+     "extract": "2 people were sworn in as At-Large congress-members.",
+     "sga_pages": "3",
+     "page": 3,
+     "src": {
+      "label": "SGA Meeting Minutes, 18 Feb 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/212"
+     }
+    },
+    {
+     "file": "2002-03-minutes-2003-03-04.pdf",
+     "title": "SGA Meeting Minutes, 4 March 2003",
+     "summary": "Records four new at-large Congress members sworn in along with a new Judicial Council associate justice, and passage of the WWHR-FM student referendum resolution.",
+     "extract": "The following people were approved and sworn in.",
+     "sga_pages": "2",
+     "page": 2,
+     "src": {
+      "label": "SGA Meeting Minutes, 4 Mar 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/210"
+     }
+    },
+    {
+     "file": "2002-03-minutes-2003-03-18.pdf",
+     "title": "SGA Meeting Minutes, 18 March 2003",
+     "summary": "Records three new at-large Congress members sworn in, Scott Wolfe's resignation as Legislative Research chair and Robert Watkins's appointment to succeed him, and Judicial Council's recommendation of a fall referendum on the amended constitution.",
+     "extract": "The following people have approval and sworn in for the following positions.",
+     "sga_pages": "2-3",
+     "page": 2,
+     "src": {
+      "label": "SGA Meeting Minutes, 18 Mar 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/514"
+     }
+    }
+   ]
   },
   {
    "id": "2003-04",
