@@ -823,8 +823,10 @@ def render_gallery(y):
 
 # An officer entry may carry several citations. Anything past the first is
 # numbered; keeping the list in one place stops a later slot being added to
-# the data and then rendering nowhere.
-SRC_KEYS = ("src", "src2", "src3", "src4", "src5")
+# the data and then rendering nowhere. The well-documented officers run past
+# five - Bill Schilling's 1987-88 record cites fourteen issues - so the range
+# is deliberately wider than any record currently needs.
+SRC_KEYS = ("src",) + tuple(f"src{i}" for i in range(2, 21))
 
 
 def render_office(o):
