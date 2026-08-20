@@ -1767,3 +1767,81 @@ two should probably swap places. Accurate as it stands, which is why it merged.
 61 years, 2,025 dated events, 60 people who have been president, 80 more names on
 the 1998-99 Congress roll, 73 leader portraits and 45 year photographs, 246
 documents mirrored, 827 legislation files. All three validators clean.
+
+# 20 August 2026, morning — #54 merged, the queue empty
+
+One pull request open at the start of the pass and none at the end. #54, the
+person profiles, had already been through an editorial pass at half past three,
+which pushed corrections and left it open for another look. Two more commits
+landed on it afterwards, so the work of this pass was the part nobody had read:
+eight mid-1970s officers and eleven members of the 1988-89 Congress.
+
+## What was checked
+
+About twenty-five claims opened against their sources. `viewcontent.cgi` is still
+answering the WAF challenge rather than the document, so the checking was done
+where the archive is not gated: the Talisman full texts on archive.org, which are
+plain text and unmetered, and the unfiltered local index.
+
+All eight of the new 1970s profiles hold, several of them word for word. The 1971
+Talisman's own sentence about the Judicial Committee — seven members, interpreting
+the constitution, hearing election appeals, ruling on traffic violations, taking
+conduct questions from the Dean of Student Affairs — is reproduced in Eyler's
+profile almost exactly. Deboe's "Mr. Omega Delta" really is printed on Zeta Phi
+Beta's page and not his own fraternity's, which is what the verifier had already
+corrected. The Payne fund-misuse headline Levy's profile quotes is in the index at
+21 November 1975 under the record it cites.
+
+Coverdale and Hurley are worth recording because they were nearly cut in error.
+Both profiles claim a sorority page independently confirms ASG service, and the
+group photograph captions carry nothing of the kind. The claims are in the chapter
+write-ups a few columns away, and both are exact: Kappa Delta names Coverdale an
+ASG representative among its outstanding members and says she was elected to
+Who's Who; Chi Omega names Hurley and Elaine Boeckman as representatives. Looking
+in the obvious place and finding nothing was not the same as the claim being
+wrong, and one more search was the difference between keeping two true paragraphs
+and deleting them.
+
+The 1988-89 batch's four Herald claims are all exact, and the three records cited
+carry exactly the dates their labels give.
+
+## What was cut
+
+Four over-claims, all trimmed rather than deleted. Levy's profile promoted the
+meeting of 1 October 1974 to the first of the year, which the Talisman does not
+say and the archive's own record contradicts — Consolo had named eight members to
+Congress the week before. Jackson's put Anita Orr's remark in the Herald when it
+is printed in the yearbook the profile cites, asserted that the regents passed
+over the student election's result when the source says only who they appointed,
+and had ASG approving the faculty evaluation committee rather than the
+questionnaire.
+
+Two further claims were true but uncited, which for a profile is the same fault.
+Groemling's defeat by Gott cited the primary and not the result; the 13 April 1989
+report is now cited beside it, and it does call the margin an edge. Ragland's
+four-candidate field now cites the issue that names all four.
+
+## The pronoun
+
+One commit describes itself as correcting a pronoun error and flips Shannon
+Ragland from she to he without saying what the correction rests on. There is a
+basis — a 30 March 1989 headline puts Ragland in Sigma Alpha Epsilon alongside
+Amos Gott — so it stands. But a pronoun attached to a real person is a claim like
+any other, and a run that changes one should say what it is standing on. Where a
+source gives nothing, they is the answer, not a guess.
+
+## Left for the editor
+
+`o/david-payne.html` shows the ASG treasurer of 1974-77 and the president of
+1981-82 as one man, four term rows under one name and no hedge. Five years apart
+and nothing in the record joins them. It is pre-existing and it was not grounds to
+hold this merge, but it is live, and it is precisely what the rule against merging
+people by name is for.
+
+## Where the record stands
+
+61 years, 2,025 dated events, 60 people who have been president, 246 documents
+mirrored, 827 legislation files. `build.py` clean, `check_data.py` and
+`check_contrib.py` both zero. `check_duplicates.py` reports the same six pairs it
+has reported all week; all six were read and all six are genuinely distinct, and
+this batch added no events at all.
