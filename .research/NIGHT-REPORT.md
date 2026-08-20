@@ -116,6 +116,45 @@ record page to confirm. Record URLs also 301 unless requested with a trailing sl
 `check_duplicates.py` reports six pairs; all six are genuinely separate events -
 different dates, or same-day bills, which stay apart.
 
+## #67, the backlog — reviewed, not merged
+
+Opened while the other two were being read: the 2003-04 cabinet, taken from four sets
+of minutes pulled from TopSCHOLAR. Held back on one dating problem.
+
+The PR reads its second source as 10 September 2003, item 522. Item 522 is the
+**16 September** meeting, and there was no meeting on 10 September — that was a
+Wednesday, and the 2003-04 series is a clean run of consecutive Tuesdays with the item
+numbers descending in lockstep, 525 = 26 Aug through 520 = 30 Sep, with no gap to hold
+an extra sitting. I tested the minutes index rather than trusting it: reading the
+meeting date printed inside each of the eleven 2002-03 PDFs mirrored by #66, seven
+match the index exactly and none contradicts it.
+
+It matters because two named people are recorded as approved by unanimous Congress vote
+on a day Congress did not meet — Cameron Yancey as Sergeant at Arms and Mason Stevenson
+as Parliamentarian — and the date also carries into Nick Todd's budget note and all five
+executive notes.
+
+**I did not correct it.** Either the researcher read item 522 and mislabelled the date,
+making it 16 September, or read the 9 September meeting and mislabelled the item, making
+it 9 September at item 523. Both are ordinary slips and the evidence points both ways.
+Choosing one would be a guess wearing a correction's clothes. It has to be settled
+against the document that was actually read.
+
+`viewcontent.cgi` was walled again from here — 403, then 202 with an empty body on
+90-second retries, for both candidate items — so I could not settle it myself. Which is
+the second point put to the routine: this run had five PDFs in hand and mirrored none of
+them, leaving every claim resting on documents nobody else can open. #66 mirrored eleven
+and that is exactly why all 29 of its members could be checked individually rather than
+sampled.
+
+The research itself reads as careful and the verifier's trims are sound. The cabinet
+cross-corroborates the 2002-03 roll merged tonight — Johnson, Todd, Martin, Wolfe,
+Dawson, Yancey, Light, Broadbent and Ransdell all move through offices in a coherent
+sequence across the two branches, and nothing collides with the settled facts. The
+Watkins speaker vote matches the Herald event already in the record and adds the sealed
+ballot from the primary minutes; that survives the dating problem, since 13 April is a
+different item and correctly dated. Main is merged into the branch so it stays current.
+
 ## Still open
 - Four leaders have no portrait: Nick Todd and Katie Dawson (2004-05), Jeanne
   Johnson (2006-07), Reagan Gilley (2008-09).
@@ -2025,8 +2064,9 @@ Flagged for the routine instead.
 - The 10 September 2002 membership count is the one figure in the new senate note
   nobody can check; that meeting is not mirrored.
 - Nick Todd's two records still merge on the person page by exact name, as last pass
-  noted. Tonight's 2002-03 roll adds a third Todd record, so the decision is more
-  pressing, not less.
+  noted. Tonight's 2002-03 roll adds a third Todd record, and #67 would add a fourth,
+  so the decision is more pressing, not less.
+- #67 stays open on the September dating question above. It is a short fix at source.
 
 ## Where the archive stands
 
