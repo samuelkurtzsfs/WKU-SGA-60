@@ -2157,3 +2157,81 @@ with fewer. Flagged in the merge comment for the routine.
 held. `build.py`, `check_data.py` and `check_contrib.py` all clean on the merged
 head; `check_duplicates.py` reports the same six long-judged pairs, untouched by
 any of tonight's merges.
+
+# 20 August 2026, later — editor pass, both open PRs merged
+
+Two research pull requests open, both cut from current main. Both landed.
+
+## #71, person profiles — merged after live-fetch verification
+
+Ten executive-cabinet officers now carry a written profile: Craighead, Breunig,
+Raybourne and Courtenay under Wininger's 2021-22 cabinet; Reed and Willett under
+Bornefeld in 2022-23; Finch, León and Kelley under Kurtz's first year; and Donté
+Reed as EVP under Kurtz's second. Every profile is one paragraph in the officer's
+work and one in what the record shows about the person, and every fact traces to
+a Herald article or SGA minutes cited on the record.
+
+Spot-verified seven of the twenty new paragraphs live against the wkuherald.com
+WordPress API, and every one held. In detail: `/74786` confirms the León censure
+as unanimous by the Judicial Council on Wednesday 7 February 2024, three named
+allegations, no further disciplinary action — the profile paragraph tracks it and
+the León / León Golib identity is correctly stated only as "the names appear to
+point to the same person, though the record does not confirm it." `/65821`
+confirms the 40 / 49 / 11 split for Courtenay / Bornefeld / Feck, announced just
+after midnight on 20 April 2022, and Sam Kurtz and Garrison Reed on the winning
+ticket. `/68255` confirms EVP Reed's CPE appointment. `/70276` confirms Chief of
+Staff Willett's 660 percent figure and the 28-23-S dental-clinic bill passing at
+the 17th meeting of the 22nd Senate. `/62662` puts Craighead's Nia Queen Douglas
+nomination at the Tuesday 30 November 2021 meeting, which is the date the branch
+had corrected it to. `/74527` confirms EVP Finch's Marshall / Ralston appointments.
+`/77384` confirms Donté Reed and Ethan Taylor walking through the $100,000 budget
+in the 27 August 2024 editorial-board piece and the "100% of it" quote.
+
+The Kelley "stepped down, per Kurtz on 23 January 2024" line, which is the one
+biographical fact not covered by the profile's own citations, traces to the year's
+own 2024-01-24 event citing Herald `/74403`, which is on the record already. No
+new sourced claim rests on nothing.
+
+Traps clean: no advance-notice-as-report, no committee-chair-as-officer, no
+surname-only match, no April result misfiled forward, no living-person overreach.
+The León entry says only what the article reported; the Finch = Annie Finch and
+León = León Golib identity notes are both hedged where the record does not close
+the loop. Nothing contradicts §7 settled facts.
+
+Two pre-existing hygiene items came into view but neither is this PR's fault and
+neither is fixed here. First, the 2024-01-24 events "Midyear resignations
+reshuffle the executive cabinet" and "Chief of staff and enrollment director
+resign, Reed elevated" are the same meeting written twice from the same Herald
+piece (`/74403`); a future dedupe pass should merge them. Second, Kelley is spelled
+"Lyndsey Kelley" on her own profile and "Lindsey Kelly" in the two January event
+bodies — `name-aliases.json` has no Kelley entry and none was added, per the
+project rule of flagging spelling not fixing it.
+
+## #72, weak-citation sweep — merged as a handoff note only
+
+Thirteen lines added to `SGA-60-AGENT-INFO.md` §8.4 recording that eight of the
+roughly twenty weak Herald-homepage captures were upgraded to verified
+`dlsc_ua_records/` issue permalinks on an earlier pass, each re-confirmed live
+against the issue's own headline index. Three residual front-page captures stay
+honestly labelled "not the specific article" — two of them, the 2006-11-02 I-A
+resolution and the 2007-02-01 Jeanne Johnson student-regent election, are
+unconfirmable from this environment and want a run that can open `viewcontent.cgi`
+PDFs or reach `web.archive.org`. No `data/` change on this PR; the eight citation
+fixes were already on the branch.
+
+## Still open
+
+- The Kelley spelling split above.
+- The 2024-01-24 duplicate-resignation event pair above.
+- The two unconfirmable weak-citation residuals: `/dlsc_ua_records` for the
+  2006-11-02 I-A resolution and the 2007-02-01 Johnson election.
+- Everything on `SGA-60-AGENT-INFO.md` §8, none of which cleared tonight.
+
+## Where the archive stands
+
+61 academic years. 2,025 dated and sourced entries. 991 senate member records
+and 1,094 executive and senate officer records. 365 records carry a written
+profile, up 10 tonight from the ten new profiles on #71. 283 document files held.
+`build.py`, `check_data.py` and `check_contrib.py` all clean on the merged head;
+`check_duplicates.py` reports the same six long-judged pairs, untouched by either
+of tonight's merges.
