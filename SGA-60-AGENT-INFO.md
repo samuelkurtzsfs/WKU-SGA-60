@@ -74,7 +74,8 @@ year and 2026-27 is the one now running.
 | `check_duplicates.py` | Reports events in one year that look like the same event written twice. Reports only; you judge. Same-day bills are genuinely separate events. |
 | `harvest_herald_index.py` | OAI-PMH sweep of the digitised collection. `--all` keeps **everything** into `data/herald-index-full.json`; without it, only student-government lines into `data/herald-index.json`. |
 | `extract_authors.py` | Reads AUTHOR/SPONSOR lines off the 827 legislation PDFs with PyMuPDF. Deliberately unmodified: its "read past CONTACT" behaviour is wrong on pre-2011 forms and right on 2016-and-later ones, so the pre-2011 yield is curated by hand instead. |
-| `harvest_topscholar_legislation.py` | Pulls SGA legislation off TopSCHOLAR. Carries a shared cookie jar and sends the item page as `Referer`, which is what makes `viewcontent.cgi` answer at all. |
+| `harvest_topscholar_legislation.py` | Pulls SGA legislation off TopSCHOLAR. Carries a shared cookie jar and sends the item page as `Referer`, which is what makes `viewcontent.cgi` answer at all. **Its listing regex only matches `class="dtstart"` exactly and silently skips rows printed as `class="dtstart visually-hidden"` — see §8.3 item 9. Use `harvest_missing_legislation.py` (or fix this one) rather than trusting a clean run of this script alone.** |
+| `harvest_missing_legislation.py` | Companion to the script above: parses the same listings by `<tr class="vevent">` block instead of the date span, so it catches both `dtstart` forms. Diffs against `data/legislation.json` by `source_url` and fetches only what is missing. Same pacing. |
 | `merge_programs.py` | Merges programmes and plain events into years. Enforces the dating law. |
 | `merge_officers.py` | Merges cabinet and senate officers into `organization`. |
 | `merge_senators.py` | Merges rank-and-file members into `organization.senate.members`. |
@@ -403,6 +404,38 @@ git rev-list --left-right --count origin/main...origin/<branch>
    against the same bill failing, a suit planned against a suit endorsed. Nobody
    needs to fix them. They are listed here so the next run does not spend an hour
    re-deciding it.
+9. ~~Pre-2011 legislation on TopSCHOLAR, never harvested.~~ **Done, 20 August
+   (later pass).** `harvest_topscholar_legislation.py`'s listing parser only
+   matched rows whose date carried `class="dtstart"` exactly; a large share of
+   the Bills and Resolutions listings print `class="dtstart visually-hidden"`
+   instead, so 284 dated documents (128 bills, 156 resolutions, spanning
+   1976-77 through 2007-08) were silently skipped by every previous run —
+   another instance of trap 7 in §6, a harvester that reported success while
+   quietly leaving work undone. `viewcontent.cgi` was open (plain requests,
+   no special headers) around 20:30 UTC on 20 August. A companion script,
+   `scripts/harvest_missing_legislation.py`, parses each listing by its
+   `<tr class="vevent">` block instead of the date span, which catches both
+   forms, diffs against `data/legislation.json` by `source_url`, and fetches
+   only what was missing, at the same one-request-3-seconds-apart pacing.
+   All 284 fetched clean on the first pass, 0 failures, every file verified to
+   start `%PDF`. `data/legislation.json` now holds 1,111 entries (827 → 1,111),
+   223 MB of PDFs on disk. `build.py`, `check_data.py` and
+   `check_duplicates.py` all pass clean against the enlarged set; the six
+   duplicate pairs in item 8 above are unchanged, nothing new was flagged.
+   What is left: the original `harvest_topscholar_legislation.py` still has
+   the narrow regex and should eventually be fixed or replaced outright by
+   the companion script, but nothing further needs harvesting — the listing
+   pages (644 Bills rows, 812 Resolutions rows including now-stale/duplicate
+   entries at different item IDs) were re-parsed by block and everything with
+   a real date and a PDF link is now in the archive.
+
+   One correction from the editorial pass: TopSCHOLAR dates some items to a
+   year with no month, which reached `session_from_date` as 1 January and filed
+   twenty-three fall documents into the previous academic year — among them
+   three bills the archive already carried as September 1991 events on
+   1991-92. They were refiled off the `-F` in their own numbers. A year-only
+   listing date is not enough to place a document; read the semester letter
+   out of the title first.
 
 ### 8.4 Build-side work, which is not research
 
