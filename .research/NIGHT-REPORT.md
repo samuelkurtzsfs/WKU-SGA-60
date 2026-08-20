@@ -1845,3 +1845,100 @@ mirrored, 827 legislation files. `build.py` clean, `check_data.py` and
 `check_contrib.py` both zero. `check_duplicates.py` reports the same six pairs it
 has reported all week; all six were read and all six are genuinely distinct, and
 this batch added no events at all.
+
+---
+
+# Editor's report - 20 August 2026, afternoon pass
+
+Three open pull requests reviewed, all three merged after corrections. Nothing was
+left open. The stale 4 August branches named in the standing brief - #6 photographs,
+#7 the 1980s, #8 the 2020s - were all closed on 18 August and needed nothing.
+
+## What was reviewed, and how
+
+The three PRs cited SGA's own meeting minutes almost throughout, and most of those
+PDFs are already mirrored into `data/documents/` with a usable OCR text layer. So
+verification this pass was done against the primary documents themselves rather than
+against landing pages: no crawl, no rate limit, and a much better check than reading
+an abstract. Fifty-odd claims were read directly. The method is worth repeating.
+
+**#61, the 2000-01 and 2001-02 Congress rolls.** Eighteen claims checked against the
+mirrored minutes; all eighteen held. Three things were corrected before merge. Amy
+Caswell's profile had acquired a closing paragraph about Mark Rawlings - it would have
+rendered as her biography, directly after a sentence saying no source named her
+successor, which the new paragraph then contradicted. The succession now sits in her
+own sentence and the stale clause is gone. Holly Skidmore was recorded as succeeding
+Bridget Wilfert; the dates run the other way, Skidmore taking the Public Relations
+chair on 16 January 2001 and the committee asking Congress to approve Wilfert as its
+vice chair a fortnight later, so Skidmore succeeded nobody. And two notes quoted the
+minutes verbatim at eighteen words apiece, over the archive's limit; both are now
+paraphrased.
+
+**#62, twelve mid-1990s officer profiles.** Eight of the twelve cite mirrored minutes
+and were checked line by line; every one held, including the small human details -
+Kip Carr really did sign the 13 November 1996 minutes as Acting Secretary the week
+before winning Congress Member of the Month. Four were tightened. Tara Higdon's
+profile asserted she succeeded Evans and then said no source stated the connection,
+and reasoned from a pattern in other plaque surnames to close the gap; the hedge was
+unnecessary, since the Herald named her the 1995-96 president on 11 April 1995 and
+SGA's 2001 roster records Tara D. Higdon of Slaughters as the 29th, matching the
+"Slaughters junior" on her 1994-95 record. "The longest debate of the autumn" is a
+superlative across a semester that one meeting's minutes cannot establish; the minutes
+say 97-10-F was discussed heavily, with voices on both sides, and that is what it now
+says. The February 1996 halftime game lost the word "basketball", which the minutes
+never supply. And Constitutional Review was a committee, not a subcommittee, and spent
+the year revising the constitution rather than drafting it.
+
+**#63, the 1996-97 minutes.** The strongest of the three. Before reading claims, every
+one of the twenty-nine PDFs had its printed headline date checked against its filename
+and title - a wrong pairing would have mis-cited all of them at once - and all
+twenty-nine match. Twenty claims were then read against the sources and all twenty
+held, down to the roll-call tallies: 22-17, 22-0-5, 21-16, 17-6-3, 13-12-3. Every
+extract sits inside the quote cap, the longest at fourteen words.
+
+## What was cut
+
+One citation, in #63. The Executive Council summary for 4 February 1997 called the
+Coming Home game basketball, on the authority of the Congress minutes of 11 February.
+Those minutes give the date, the hour, the red towels and a free parking space contest,
+and name no sport at all - nor does any other document that week. A citation pointing
+at a source that does not say the thing is worse than no citation, because it looks
+checked.
+
+The rest of that entry was rewritten rather than deleted. The document does say
+"January 15th, was decided upon for Coming Home", three weeks after that date had
+passed, and the research note had read this as an OCR slip for February. The record
+says something more interesting: Congress was told 4 February on 28 January, then 15
+February on 11 February. The game was rescheduled twice, so there was no contradiction
+to resolve. The summary now reports all three dates and lets the reader see it.
+
+## Standing notes
+
+The `viewcontent.cgi` window is narrower than §8.2 of the handoff suggested. It
+answered a plain request at about 09:00 UTC; by 13:00 it was back to HTTP 202 with an
+empty body, and stayed there through a 90-second backoff and a second attempt. That is
+now recorded in the handoff. Two 1994-95 sources - minutes items 103 and 113, behind
+four profiles in #62 - could not be mirrored because of it. Those four profiles
+paraphrase notes already published on main, so nothing new went out unchecked, but the
+two files are worth grabbing the next time the wall comes down.
+
+One thing noticed and deliberately not acted on: Nick Todd appears in the 2001-02 roll
+as a Congress award winner and is separately on record as president in 2003-04. The
+entry claims nothing about identity, but the build joins person pages on exact name, so
+the two records will merge on the site. That is site-wide behaviour rather than anything
+this branch introduced, and it deserves a deliberate decision rather than a quiet one.
+
+Also worth chasing: Kip Carr's written "History of Western's SGA, 1966-1996", which the
+minutes of 15 October and 23 November 1996 both describe as finished and sitting in the
+SGA office. A thirty-year history compiled by a participant, in 1996, is exactly the
+kind of source this project is built to use.
+
+## Where the archive stands
+
+61 academic years. 2,025 dated and sourced entries. 953 senate member records and 1,077
+executive and senate officer records. 333 records carrying a written profile. 268
+document files held, 98 of them now referenced from a year page - a jump of 29 this
+pass, all of them 1996-97. 1,621 pages built. `build.py`, `check_data.py` and
+`check_contrib.py` all clean on the merged head; `check_duplicates.py` reports the same
+six pairs it has reported for days, three of them introduce-then-resolve sequences and
+three same-day 1991 bills, all genuinely distinct and all left alone.
