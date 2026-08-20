@@ -333,8 +333,11 @@ git rev-list --left-right --count origin/main...origin/<branch>
    while `web.archive.org` was still refused outright (connection timeout). The
    WAF challenge on `viewcontent.cgi` is intermittent, not permanent — see §8.1.
    The 21 "source unreachable" candidates that cited a digitalcommons PDF are
-   worth rechecking now; the ones that cited Wayback still are not. Note that
-   `research-senate` (PR #61, unmerged as of this writing) has separately given
+   worth rechecking now; the ones that cited Wayback still are not. **Re-tested
+   again at ~13:00 and ~13:05 UTC the same day: HTTP 202 with an empty body,
+   the WAF challenge again.** So the window opens and shuts within hours. Take
+   what you can when it is open and do not build a run around it being open.
+   Note that `research-senate` (PR #61, merged 20 August) has separately given
    2001-02 its first recorded cabinet from that year's minutes — check it before
    redoing that year.
 2. ~~Twenty-six sets of 1996-97 minutes are mirrored into `data/documents/` and
