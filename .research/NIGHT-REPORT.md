@@ -1637,3 +1637,94 @@ belongs to a run that can set the evidence out rather than to a merge.
 Kenderes stands on a Wayback capture of a tag-index page that nobody in this
 session can open. His profile says so in as many words, which is the right way to
 publish a claim this thin.
+
+# 20 August 2026, night
+
+Two open research branches tonight, both cut cleanly from current main. The three
+stale branches from 4 August are gone: #6, #7 and #8 are no longer open, so
+nothing needed rescuing from an orphan history this pass.
+
+## Merged
+
+**#55, photographs.** One photograph, and a good one: Billy Stephens congratulated
+by Diego Leal Ambriz in Downing University Center just after midnight, minutes
+after beating him 597 to 469 for the SGA presidency in April 2011. The Herald's
+own caption names both men and the count, so the identification comes from the
+source rather than from a guess at a face, and the file is a real JPEG. An April
+2011 result belongs to 2011-12, which is where it went and where Stephens already
+sits as president.
+
+Cut before merging: the caption had been carried over from the Herald almost word
+for word, about thirty-seven words of it, presented as our own prose. That is well
+past what this site takes from the paper, and it is the reuse rule rather than the
+accuracy rule that it broke. Rewritten in the archive's voice, which is how every
+other caption in `photos.json` reads. No fact lost.
+
+## Not merged
+
+**#54, person profiles.** Twenty-two profiles, most of them good, held back over
+two failures and pushed back to the branch corrected.
+
+Two profiles — Hollie Hale's and Victor Click's — said this archive could not
+confirm the result of the spring 1987 presidential race. It can, and it already
+did: the unfiltered index carries "Tim Todd Beats Greg Elder in Election Re-Run"
+from 16 April 1987, and 1986-87 has carried the event, citing Herald 62:54, for
+some time. Writing "no source confirms" over the top of a source we already
+publish is the exact failure the handbook warns about, and it is worse than a
+missing fact because it tells a reader the archive looked and found nothing.
+
+The other failure is subtler. The Herald of 10 December 1987 printed four letters
+on the Bill Schilling watchdog-committee affair, and the surviving index line for
+that issue runs the titles and the writers together, title first, unlike every
+other line in the file. The profiles read it as author-first and shifted all four
+attributions by one, giving Hale a letter indexed beside Sellers and Hargrave one
+indexed beside Hodge. The run's own verifier moved a fifth attribution in the same
+wrong direction and reported it as a correction. Both profiles now set out the
+four titles and the four names and say which belongs to which is not established.
+
+What was left alone matters as much. A good deal of this batch asserts detail from
+Herald article bodies that no one can re-open tonight, and the temptation was to
+cut it. All of it is already in the `note` fields on main, verbatim, with the same
+citations — these profiles restate what the site already publishes rather than
+adding claims, so cutting them would have removed nothing live and lost good
+writing. Three new biographical details are not in the notes and could not be
+checked: Faulk's major and home town, Jackson's, and Tinsley's home town. Flagged
+on the PR to be confirmed or dropped, not cut on suspicion.
+
+Also right, and worth recording: the branch removed Christian Ryan and Robbin
+Taylor from the 2015-16 cabinet. Both are WKU staff who appeared in a legislation
+sign-off block as contacts and had been read as officers. That is the commonest
+error in this project, caught properly.
+
+## The download block is real
+
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` now answers every request with HTTP
+202, an empty body and `x-amzn-waf-action: challenge`. I tried it twice, once
+after the documented ninety-second backoff, on two different documents. The
+photographs run reported the same thing independently.
+
+Landing pages on the same host are unaffected and still return 200, and their
+article indexes are readable, so citation labels and headlines can still be
+verified — that is how six citations were checked tonight. It is only the PDFs
+that are gone: Talisman pages, Herald page images, minutes, legislation. Runs that
+depend on reading article text should expect to be blocked until this lifts, and
+should say so rather than writing around it.
+
+## Left for the routines
+
+`apply_photo_overlay()` in `build.py` matches `photos.json`'s leaders overlay only
+against a year's top-level `leaders` array, and `render_officers()` renders no
+photo field at all. Portraits for cabinet and Senate officers would therefore sit
+in the data and never appear on the site. The photographs run found this, declined
+to do work that could not render, and flagged it instead, which was the right
+call. It is build-side work and still open.
+
+The two Eaton pages and the Wayback block noted in the previous pass are unchanged.
+
+## Where the record stands
+
+61 years, 2,025 dated events, 60 people who have been president, 73 leader
+portraits and 45 year photographs, 225 documents mirrored, 827 legislation files.
+`build.py`, `check_data.py` and `check_contrib.py` all exit clean.
+`check_duplicates.py` reports the same six pairs as every pass before it, all
+genuinely separate events.
