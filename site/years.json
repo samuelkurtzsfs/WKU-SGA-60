@@ -26052,8 +26052,14 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8711"
       },
       "profile": [
-       "Amy Caswell won the 2000 race for vice president of finance, defeating Billy Lyons 706 votes to 461; the Herald had previewed her beforehand under the headline \"Amy Caswell: Race Won't Get Messy.\" She did not finish the term: the Herald reported her resignation from SGA on 7 December 2000. No source found states her reason or names a successor."
-      ]
+       "Amy Caswell won the 2000 race for vice president of finance, defeating Billy Lyons 706 votes to 461; the Herald had previewed her beforehand under the headline \"Amy Caswell: Race Won't Get Messy.\" She did not finish the term: the Herald reported her resignation from SGA on 7 December 2000. No source found states her reason or names a successor.",
+       "Mark Rawlings was sworn in as Vice President of Finance on 16 Jan 2001, after being interviewed for the vacancy along with three other candidates and appointed by President Martin."
+      ],
+      "src3": {
+       "label": "SGA Meeting Minutes, January 16, 2001",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586",
+       "file": "2000-01-minutes-2001-01-16.pdf"
+      }
      },
      {
       "office": "Vice President of Administration",
@@ -26086,13 +26092,298 @@
       "profile": [
        "Leslie McClard ran unopposed for vice president of public relations in the 2000 elections; an April 2000 Herald headline framed her candidacy around growing SGA's membership."
       ]
+     },
+     {
+      "office": "Vice President of Finance",
+      "name": "Mark Rawlings",
+      "note": "Interviewed along with three other candidates for the vacancy at Vice President of Finance; appointed by President Martin and sworn in after Congress approved the appointment, 16 Jan 2001.",
+      "src": {
+       "label": "SGA Meeting Minutes, January 16, 2001",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586",
+       "file": "2000-01-minutes-2001-01-16.pdf"
+      }
      }
     ],
     "senate": {
-     "note": "Called Congress this year; met weekly on Tuesdays in Downing University Center room 305."
+     "note": "Called Congress this year; met weekly on Tuesdays in Downing University Center room 305.",
+     "members": [
+      {
+       "name": "Anna Coats",
+       "seat": "At-Large member; sworn in 30 Jan 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, January 30, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/585"
+       }
+      },
+      {
+       "name": "Robin Fulkerson",
+       "seat": "Member of Congress; sworn in 16 Jan 2001",
+       "note": "Recorded taking the minutes as 'member of Congress' at the 20 Feb 2001 meeting.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 16, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586"
+       },
+       "src2": {
+        "label": "SGA Meeting Minutes, February 20, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/576",
+        "file": "2000-01-minutes-2001-02-20.pdf"
+       }
+      },
+      {
+       "name": "Krista Harris",
+       "seat": "At-Large member; sworn in 6 Feb 2001",
+       "note": "President Martin also appointed her a University Senate representative the same night.",
+       "src": {
+        "label": "SGA Meeting Minutes, February 6, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/583"
+       }
+      },
+      {
+       "name": "Margaret Haydon",
+       "seat": "At-Large member; sworn in 6 Feb 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, February 6, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/583"
+       }
+      },
+      {
+       "name": "Dana Lockhart",
+       "seat": "At-Large member; sworn in 30 Jan 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, January 30, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/585"
+       }
+      },
+      {
+       "name": "David Logan",
+       "seat": "Member of Congress; sworn in 16 Jan 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, January 16, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586"
+       }
+      },
+      {
+       "name": "Andrea Lovell",
+       "seat": "Congress member (membership suggested only by a single award nomination, not independently confirmed)",
+       "note": "Named Outstanding Congress Member nominee once, 10 Apr 2001. Appointed a University Senate representative 6 Feb 2001, a different body from SGA's own Congress.",
+       "src": {
+        "label": "SGA Meeting Minutes, February 6, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/583"
+       }
+      },
+      {
+       "name": "Billy Lyons",
+       "seat": "Congress member (floor motion)",
+       "note": "Moved, from the floor, to create an ad hoc Online Elections committee, 30 Jan 2001; the motion was seconded and approved.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 30, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/585"
+       }
+      },
+      {
+       "name": "Stephen Martin",
+       "seat": "At-Large Congress member; sworn in 6 Mar 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, March 6, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/582"
+       }
+      },
+      {
+       "name": "Matthew Pava",
+       "seat": "At-Large member; sworn in 10 Apr 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, April 10, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/589"
+       }
+      },
+      {
+       "name": "Troy Ransdell",
+       "seat": "At-Large member; sworn in 13 Feb 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, February 13, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/577"
+       }
+      },
+      {
+       "name": "Michael Richardson",
+       "seat": "At-Large member; sworn in 30 Jan 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, January 30, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/585"
+       }
+      },
+      {
+       "name": "Jamie Sears",
+       "seat": "Congress member (membership shown by committee-meeting assignment and award nominations, not a swearing-in record among the minutes checked)",
+       "note": "Assigned to attend a Parking and Transportation Committee meeting, 30 Jan 2001; named Outstanding Congress Member nominee twice (27 Feb, 10 Apr 2001).",
+       "src": {
+        "label": "SGA Meeting Minutes, January 30, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/585"
+       }
+      },
+      {
+       "name": "Jamil Sewell",
+       "seat": "Congress award nominee (membership not independently confirmed among the minutes checked)",
+       "note": "Named Outstanding Congress Member nominee twice, 27 Feb and 10 Apr 2001.",
+       "src": {
+        "label": "SGA Meeting Minutes, February 27, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/584"
+       }
+      },
+      {
+       "name": "Holly Skidmore",
+       "seat": "Congress member; appointed Public Relations Committee chairperson 16 Jan 2001",
+       "note": "Named Outstanding Congress Member of the Month nominee twice (27 Feb, 10 Apr 2001); selected as that month's winner on 6 Mar 2001, with the certificate presented 13 Mar 2001.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 16, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586"
+       }
+      },
+      {
+       "name": "Natalie Taylor",
+       "seat": "Member of Congress; sworn in 16 Jan 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, January 16, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586"
+       }
+      },
+      {
+       "name": "Stacey Taylor",
+       "seat": "Member of Congress; sworn in 16 Jan 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, January 16, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586"
+       }
+      },
+      {
+       "name": "Terry Woodall",
+       "seat": "At-Large member; sworn in 13 Mar 2001",
+       "src": {
+        "label": "SGA Meeting Minutes, March 13, 2001",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/591"
+       }
+      }
+     ],
+     "committees": [
+      {
+       "name": "Public Relations",
+       "chair": "Holly Skidmore",
+       "note": "Appointed chairperson by Congress, 16 Jan 2001, succeeding Bridget Wilfert as vice chair the committee had asked Congress to approve weeks earlier."
+      }
+     ]
     }
    },
-   "status": "researched"
+   "status": "researched",
+   "documents": [
+    {
+     "file": "2000-01-minutes-2001-01-16.pdf",
+     "title": "SGA Meeting Minutes, 16 January 2001",
+     "summary": "Records Mark Rawlings's appointment and swearing-in as Vice President of Finance, Holly Skidmore's appointment as Public Relations chairperson, and four new Congress members sworn in.",
+     "extract": "Mark Rawlings was sworn in as Vice President of Finance.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Meeting Minutes, 16 January 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586"
+     }
+    },
+    {
+     "file": "2000-01-minutes-2001-01-30.pdf",
+     "title": "SGA Meeting Minutes, 30 January 2001",
+     "summary": "Records three new At-Large Congress members sworn in, a Justice sworn in, and the dissolution of the Special Events committee.",
+     "extract": "Anna Coats, Michael Richardson and Dana Lockhart were sworn in as At-Large members.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Meeting Minutes, 30 January 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/585"
+     }
+    },
+    {
+     "file": "2000-01-minutes-2001-02-06.pdf",
+     "title": "SGA Meeting Minutes, 6 February 2001",
+     "summary": "Records two new At-Large Congress members sworn in and three Congress members appointed as SGA's representatives to WKU's University Senate.",
+     "extract": "Krista Harris and Margaret Haydon were sworn in to Congress.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Meeting Minutes, 6 February 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/583"
+     }
+    },
+    {
+     "file": "2000-01-minutes-2001-02-13.pdf",
+     "title": "SGA Meeting Minutes, 13 February 2001",
+     "summary": "Records Troy Ransdell's swearing-in as an At-Large Congress member.",
+     "extract": "Troy Ransdell was sworn in as an At-Large member.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Meeting Minutes, 13 February 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/577"
+     }
+    },
+    {
+     "file": "2000-01-minutes-2001-02-20.pdf",
+     "title": "SGA Meeting Minutes, 20 February 2001",
+     "summary": "Names Robin Fulkerson as the Congress member who took that night's minutes, corroborating her membership.",
+     "extract": "Minutes were taken by Robin Fulkerson, member of Congress.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Meeting Minutes, 20 February 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/576"
+     }
+    },
+    {
+     "file": "2000-01-minutes-2001-02-27.pdf",
+     "title": "SGA Meeting Minutes, 27 February 2001",
+     "summary": "Records that year's Congress and Committee Member of the Month nominations.",
+     "extract": "Congress Member of the Month nominations were accepted: Holly Skidmore, Jamie Sears, Jamil Sewell.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Meeting Minutes, 27 February 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/584"
+     }
+    },
+    {
+     "file": "2000-01-minutes-2001-03-06.pdf",
+     "title": "SGA Meeting Minutes, 6 March 2001",
+     "summary": "Records Stephen Martin's swearing-in as an At-Large Congress member.",
+     "extract": "Stephen Martin was sworn in as an At-Large Congress member.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Meeting Minutes, 6 March 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/582"
+     }
+    },
+    {
+     "file": "2000-01-minutes-2001-03-13.pdf",
+     "title": "SGA Meeting Minutes, 13 March 2001",
+     "summary": "Records Terry Woodall's swearing-in as an At-Large Congress member.",
+     "extract": "Terry Woodall was sworn in to office as an At-Large member.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Meeting Minutes, 13 March 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/591"
+     }
+    },
+    {
+     "file": "2000-01-minutes-2001-04-10.pdf",
+     "title": "SGA Meeting Minutes, 10 April 2001",
+     "summary": "Records Matthew Pava's swearing-in and that spring's SGA award nominations.",
+     "extract": "Matthew Pava was sworn in as an At-Large member.",
+     "sga_pages": "1",
+     "page": 1,
+     "src": {
+      "label": "SGA Meeting Minutes, 10 April 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/589"
+     }
+    }
+   ]
   },
   {
    "id": "2001-02",
