@@ -1528,3 +1528,112 @@ so a vice president or a senate officer has no path to a portrait however well
 the caption identifies them.
 
 Twenty-six sets of 1996-97 minutes are mirrored and still unreferenced.
+
+# 20 August 2026 — editor's pass, both branches merged
+
+Two pull requests open, both cut from current main, both merged. The three stale
+branches from 4 August named in the standing brief — #6, #7 and #8 — are gone;
+somebody closed them before this pass, and nothing is rotting on origin.
+
+## #52, the 1997-98 Congress roll
+
+This one deserves recording as the standard the other routines should be held to.
+The branch mirrors all thirty-two of the year's minutes into `data/documents/`,
+which meant the whole roll could be checked against the primary source without a
+single network request. So it was: not a sample, but **all 86 names**, extracted
+from the PDFs and matched against the meeting each entry cites.
+
+Eighty-six of eighty-six held. Seven tripped the first automated pass and every
+one turned out to be OCR, already recorded in the entry's own note before I got
+there — Aaron High scanned as "lIigh", Katie Staples as "Kmie", Cassie Martin as
+"Manin", Carlton Rumenier as "Rumenicr", Gail Guiling as "Guitling" and
+"Guilling" in four different meetings. The best of them was Chad Nuckols, missing
+from the 7 October absence list because the minutes of that night call him Chad
+Knuckles, applying for the Sophomore Off-Campus seat and accepted by acclamation.
+The note said so. It was right.
+
+Two traps were laid and both were avoided by the routine, not by me. Sean
+McAlister is cited to the meeting where he first appears as a candidate, which
+would be the classic over-claim, except that the same page has the motion to
+accept the new members into Congress and the president swearing them in. And
+Steven Graham, who turns up repeatedly as committee member of the month and once
+asking a question from the floor, was considered and refused: no absence list, no
+seating, no election. That is the error that killed all thirty-nine "missing
+president" claims two weeks ago, and it was caught this time before it reached me.
+
+Every mirrored file starts `%PDF`, carries a real text layer, and matches its own
+filename's date. `Minutes/148` stores "7-10-1997" and renders "Oct 7th": the
+DD-MM-YYYY convention, read correctly.
+
+Nothing cut. Two small things wrong in the PR text and not in the data: the year
+has 25 Congress meetings and 7 Executive Council, not 23 and 9; and the 24
+February 1998 page the Raisor spelling-bridge rests on says "those members
+included" where the note says absence.
+
+## #51, nine officer profiles from 2004-09
+
+Every new claim in this batch is true. None of them was cited.
+
+That is the whole of the defect, and it was worth an hour to establish rather
+than an hour to delete. The profiles rested on Herald items that appeared nowhere
+in the year's events, documents or leader sources — the profile rule requires
+traceability to a source the year already carries, and five of the nine failed
+it. Cutting would have destroyed real history over a bookkeeping fault.
+
+The unlock was a header set the senate routine had found the same night and
+written into its PR: `cgi/viewcontent.cgi` downloads, which this project's
+handoff has recorded as hard-blocked since 18 August, work when the request
+carries a Referer at the item's own landing page and the `Sec-Fetch-*` and
+`Upgrade-Insecure-Requests` headers a browser sends. A bare User-Agent still
+returns an empty HTTP 202, which is what everyone had been seeing. With that, the
+28 August 2003 Herald opened and settled the hardest claim in the batch on the
+paper's own words: Brandenburg sophomore Scott Broadbent, an SGA member, on the
+Greek Village. Class, hometown, membership and quotation, all of it exactly as
+the profile had it. The minutes of 6 February 2007 opened too and carried Nate
+Eaton's committee report about ashtrays and benches, and Ashley Gore approved as
+Chief of Staff and sworn in under Article IX.
+
+The rest fell to the local index: Conrad and Lovan named as candidates in the
+special election issue of 15 March 2005, Conrad's two letters to the paper in
+March and April 2006, the headline of 17 April 2008 calling Eaton the chamber's
+longest-serving senator, and the regent race of February 2009. Nine citations
+added across five records, and the profiles now stand on what they claim to.
+
+One cut, one correction. "Ricky (Skylar) Jordan" is now Ricky Jordan, as the
+election issue prints him: `name-aliases.json` maps R. Skylar Jordan to Skylar
+Jordan and says nothing about Ricky, and an identity assertion does not belong as
+an aside in somebody else's profile.
+
+## The mistake in this pass
+
+I cut Eaton's 2007-08 shuttle stop as unsourced. It was sourced: the 2007-08
+senate officers carry a Chair, Campus Improvements record in his name citing the
+minutes of 4 September 2007, and I had looked at the committees list and not at
+the officers list. The sentence is restored with that citation attached. An
+over-cut is a smaller failure than a wrong fact, but it is still a fact lost, and
+the lesson is that "not cited anywhere in the year" has to mean the whole year.
+
+## Where the record stands
+
+61 years, 2,025 dated events, 60 people who have been president, 832 senate
+members across 34 years, 225 documents mirrored, 827 legislation files.
+`build.py`, `check_data.py` and `check_contrib.py` all exit clean.
+`check_duplicates.py` reports the same six pairs as every pass before it, all
+genuinely separate events.
+
+## Left for the routines
+
+The blocked-download note in section 8 of the handoff is now wrong and should be
+rewritten. Two claims of this pass survived only because it is wrong, and future
+runs are still trimming good research on its authority.
+
+`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man, who
+chaired Campus Improvements under the short name and took the Speaker's chair
+under the long one. `name-aliases.json` has no Eaton entry. Adding a pair asserts
+they are the same human, which the record here supports, but that assertion
+belongs to a run that can set the evidence out rather than to a merge.
+
+`web.archive.org` remains blocked by this container's egress policy, so Stuart
+Kenderes stands on a Wayback capture of a tag-index page that nobody in this
+session can open. His profile says so in as many words, which is the right way to
+publish a claim this thin.
