@@ -22796,66 +22796,39 @@
      ],
      "members": [
       {
-       "name": "Aaron High",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 7 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
-       }
-      },
-      {
-       "name": "Amanda Cole",
-       "seat": "Freshman Council",
-       "note": "Elected to Freshman Council in the 3 Feb 1998 election results.",
-       "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
-       }
-      },
-      {
-       "name": "Amanda Kirby",
-       "seat": "McLean Hall representative",
-       "note": "Elected McLean Hall representative in the 3 Feb 1998 election results.",
-       "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
-       }
-      },
-      {
-       "name": "Amber Lee Mason",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 9 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
-       }
-      },
-      {
-       "name": "Amy Duncan",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 9 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
-       }
-      },
-      {
-       "name": "Amy Mothersbaugh",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 17 Feb 1998, against a roster the minutes do not print in full.",
+       "name": "Mike Armstrong",
+       "seat": "At-Large representative",
+       "note": "Seated as an At-Large representative by floor motion on 17 Feb 1998.",
        "src": {
         "label": "SGA Meeting Minutes, 17 Feb 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/168/"
        }
       },
       {
-       "name": "Amy Risley",
+       "name": "Jimmy Ausbrooks",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
        "note": "Recorded absent from the Congress meeting of 23 Sep 1997, against a roster the minutes do not print in full.",
        "src": {
         "label": "SGA Meeting Minutes, 23 Sep 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
+       }
+      },
+      {
+       "name": "Jeff Baynham",
+       "seat": "Freshman Council",
+       "note": "Elected to Freshman Council on 3 Feb 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+       }
+      },
+      {
+       "name": "Tara Beard",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 21 Oct 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 21 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
        }
       },
       {
@@ -22868,16 +22841,79 @@
        }
       },
       {
-       "name": "Billy Lyons",
-       "seat": "Pearce Ford Tower representative",
-       "note": "Seated as Pearce Ford Tower representative by floor motion on 24 Feb 1998.",
+       "name": "Lance Blincoe",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 30 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 30 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/149/"
+       }
+      },
+      {
+       "name": "Matt Bogard",
+       "seat": "Keen Hall representative",
+       "note": "Seated as Keen Hall representative by floor motion on 24 Feb 1998.",
        "src": {
         "label": "SGA Meeting Minutes, 24 Feb 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/167/"
        }
       },
       {
-       "name": "Brad Sweatt",
+       "name": "Martha Bonds",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 9 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
+       }
+      },
+      {
+       "name": "Jason Brown",
+       "seat": "West Hall representative",
+       "note": "Seated as West Hall representative by floor motion on 10 Feb 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, 10 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/169/"
+       }
+      },
+      {
+       "name": "William Brown",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 3 Feb 1998, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+       }
+      },
+      {
+       "name": "Dwight Campbell",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 24 Mar 1998, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 24 Mar 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/175/"
+       }
+      },
+      {
+       "name": "Jodi Clinard-Pulley",
+       "seat": "New Sorority representative",
+       "note": "Elected New Sorority representative on 3 Feb 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+       }
+      },
+      {
+       "name": "Amanda Cole",
+       "seat": "Freshman Council",
+       "note": "Elected to Freshman Council in the 3 Feb 1998 election results.",
+       "src": {
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+       }
+      },
+      {
+       "name": "Teresa Criss",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
        "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
        "src": {
@@ -22886,75 +22922,30 @@
        }
       },
       {
-       "name": "Brandon McCloud",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
+       "name": "John Crowe",
+       "seat": "Gilbert Hall representative, later Business College representative",
+       "note": "Elected Gilbert Hall representative in the 3 Feb 1998 election results; moved by floor vote to Business College representative on 7 Apr 1998.",
        "src": {
-        "label": "SGA Meeting Minutes, 16 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
        }
       },
       {
-       "name": "Bryan Raisor",
+       "name": "Michael Day",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "OCR also renders the given name 'Brian' in spring 1998 appearances (31 Mar, 21 Apr 1998); a 24 Feb 1998 absence bridges the two spellings with no gap in the attendance record.",
+       "note": "Recorded absent from the Congress meeting of 27 Jan 1998, against a roster the minutes do not print in full.",
        "src": {
-        "label": "SGA Meeting Minutes, 21 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
+        "label": "SGA Meeting Minutes, 27 Jan 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/171/"
        }
       },
       {
-       "name": "Carla Givens",
-       "seat": "Rodes Hall representative",
-       "note": "Won the Rodes Hall seat by floor vote over Melissa Lee on 30 Sep 1997.",
-       "src": {
-        "label": "SGA Meeting Minutes, 30 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/149/"
-       }
-      },
-      {
-       "name": "Carlton Rumenier",
+       "name": "Kathryn Deutsch",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "OCR also renders the surname 'Rumenicr' (9 Sep 1997).",
+       "note": "OCR renders the surname 'Kathcryn Dl..!u\\sch' (23 Sep 1997) and 'Katheryn Deutsch' (11 Nov 1997) in other appearances; the name is standardized here.",
        "src": {
         "label": "SGA Meeting Minutes, 9 Sep 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
-       }
-      },
-      {
-       "name": "Cassie Martin",
-       "seat": "Freshman Council",
-       "note": "Elected to Freshman Council on 3 Feb 1998 (OCR renders the surname 'Manin').",
-       "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
-       }
-      },
-      {
-       "name": "Chad Nuckols",
-       "seat": "Sophomore Off-Campus representative",
-       "note": "Seated as Sophomore Off-Campus representative by floor motion on 7 Oct 1997 (recorded there as 'Chad Knuckles').",
-       "src": {
-        "label": "SGA Meeting Minutes, 7 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
-       }
-      },
-      {
-       "name": "Chris Williams",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 14 Oct 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 14 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/146/"
-       }
-      },
-      {
-       "name": "Christen Gibbs",
-       "seat": "Bemis Lawrence Hall representative",
-       "note": "Elected Bemis Lawrence Hall representative in the 3 Feb 1998 election results.",
-       "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
        }
       },
       {
@@ -22967,16 +22958,7 @@
        }
       },
       {
-       "name": "Creighton Matthews",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 23 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 23 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
-       }
-      },
-      {
-       "name": "Darla Johnson",
+       "name": "Amy Duncan",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
        "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
        "src": {
@@ -22985,16 +22967,115 @@
        }
       },
       {
-       "name": "David Lodmell",
+       "name": "Derek Durbin",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Distinct from Judicial Council member Darlene Lodmell, who appears separately, and only as a guest, at the 21 Apr 1998 meeting.",
+       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
        "src": {
-        "label": "SGA Meeting Minutes, 4 Nov 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/155/"
+        "label": "SGA Meeting Minutes, 16 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
        }
       },
       {
-       "name": "Derek Durbin",
+       "name": "Sally Eilerman",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 9 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
+       }
+      },
+      {
+       "name": "Gabriel Fancher",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 17 Feb 1998, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 17 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/168/"
+       }
+      },
+      {
+       "name": "Ryan Faught",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 16 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
+       }
+      },
+      {
+       "name": "Christen Gibbs",
+       "seat": "Bemis Lawrence Hall representative",
+       "note": "Elected Bemis Lawrence Hall representative in the 3 Feb 1998 election results.",
+       "src": {
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+       }
+      },
+      {
+       "name": "Carla Givens",
+       "seat": "Rodes Hall representative",
+       "note": "Won the Rodes Hall seat by floor vote over Melissa Lee on 30 Sep 1997.",
+       "src": {
+        "label": "SGA Meeting Minutes, 30 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/149/"
+       }
+      },
+      {
+       "name": "Julie Goodwin",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 9 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
+       }
+      },
+      {
+       "name": "Julie Beth Gray",
+       "seat": "Central Hall representative",
+       "note": "Elected Central Hall representative on 3 Feb 1998, distinct from the earlier fall-1997 Julie Gray, above.",
+       "src": {
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+       }
+      },
+      {
+       "name": "Julie Gray",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Distinct from Julie Beth Gray, below: the 3 Feb 1998 election minutes name a Julie Gray newly elected to the Central Hall seat that day, months after this Julie Gray's first fall-1997 absence, which rules out one person under two spellings.",
+       "src": {
+        "label": "SGA Meeting Minutes, 7 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
+       }
+      },
+      {
+       "name": "Gail Guiling",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "OCR also renders the surname 'Guitling' (23 Sep 1997) and 'Guilling' (7 Oct, 14 Oct, 28 Oct 1997).",
+       "src": {
+        "label": "SGA Meeting Minutes, 23 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
+       }
+      },
+      {
+       "name": "Laura Hancock",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 21 Oct 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 21 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
+       }
+      },
+      {
+       "name": "Heather Hardesty",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 21 Oct 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 21 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
+       }
+      },
+      {
+       "name": "Michael Hardin",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
        "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
        "src": {
@@ -23012,90 +23093,36 @@
        }
       },
       {
-       "name": "Dwight Campbell",
+       "name": "Jason Henin",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 24 Mar 1998, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 24 Mar 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/175/"
-       }
-      },
-      {
-       "name": "Eric Wilson",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 16 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
-       }
-      },
-      {
-       "name": "Gabriel Fancher",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 17 Feb 1998, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 17 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/168/"
-       }
-      },
-      {
-       "name": "Gail Guiling",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "OCR also renders the surname 'Guitling' (23 Sep 1997) and 'Guilling' (7 Oct, 14 Oct, 28 Oct 1997).",
-       "src": {
-        "label": "SGA Meeting Minutes, 23 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
-       }
-      },
-      {
-       "name": "Heather Hardesty",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 21 Oct 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 21 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
-       }
-      },
-      {
-       "name": "Heather Holman",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 30 Sep 1997, against a roster the minutes do not print in full.",
+       "note": "An unusual surname read distinctly in the OCR text, not a misreading of the separately-recorded Jason Heflin.",
        "src": {
         "label": "SGA Meeting Minutes, 30 Sep 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/149/"
        }
       },
       {
-       "name": "J Thomas",
+       "name": "Aaron High",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Given as the initial 'J' throughout the year's minutes, never a full first name; also served as Vice-Chair of the Academic Affairs Committee.",
+       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
        "src": {
         "label": "SGA Meeting Minutes, 7 Oct 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
        }
       },
       {
-       "name": "Jarrod Magan",
+       "name": "Mandy Holbert",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
+       "note": "Recorded absent from the Congress meeting of 27 Jan 1998, against a roster the minutes do not print in full.",
        "src": {
-        "label": "SGA Meeting Minutes, 16 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
+        "label": "SGA Meeting Minutes, 27 Jan 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/171/"
        }
       },
       {
-       "name": "Jason Brown",
-       "seat": "West Hall representative",
-       "note": "Seated as West Hall representative by floor motion on 10 Feb 1998.",
-       "src": {
-        "label": "SGA Meeting Minutes, 10 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/169/"
-       }
-      },
-      {
-       "name": "Jason Henin",
+       "name": "Heather Holman",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "An unusual surname read distinctly in the OCR text, not a misreading of the separately-recorded Jason Heflin.",
+       "note": "Recorded absent from the Congress meeting of 30 Sep 1997, against a roster the minutes do not print in full.",
        "src": {
         "label": "SGA Meeting Minutes, 30 Sep 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/149/"
@@ -23111,69 +23138,6 @@
        }
       },
       {
-       "name": "Jason Nemes",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 7 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
-       }
-      },
-      {
-       "name": "Jason Reeves",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 7 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
-       }
-      },
-      {
-       "name": "Jay Sharkey",
-       "seat": "Sophomore Off-Campus representative",
-       "note": "Elected Sophomore Off-Campus representative, alongside John Tebault, on 3 Feb 1998.",
-       "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
-       }
-      },
-      {
-       "name": "Jeff Baynham",
-       "seat": "Freshman Council",
-       "note": "Elected to Freshman Council on 3 Feb 1998.",
-       "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
-       }
-      },
-      {
-       "name": "Jeff Swaim",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 7 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
-       }
-      },
-      {
-       "name": "Jimmy Ausbrooks",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 23 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 23 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
-       }
-      },
-      {
-       "name": "Jodi Clinard-Pulley",
-       "seat": "New Sorority representative",
-       "note": "Elected New Sorority representative on 3 Feb 1998.",
-       "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
-       }
-      },
-      {
        "name": "Jody Jaggers",
        "seat": "Rodes Harlin Hall representative",
        "note": "Elected Rodes Harlin Hall representative in the 3 Feb 1998 election results.",
@@ -23183,7 +23147,169 @@
        }
       },
       {
+       "name": "Darla Johnson",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 9 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
+       }
+      },
+      {
+       "name": "William Jones",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 21 Oct 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 21 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
+       }
+      },
+      {
+       "name": "Keys",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Surname confirmed across seven absence-list appearances (23 Sep, 30 Sep, 21 Oct, 28 Oct, 4 Nov, 11 Nov, 18 Nov 1997), but OCR renders the given name inconsistently as Corlena, Corletta, Corlella and Carletta, with no spelling clearly dominant. The given name is left unstated rather than guessed.",
+       "src": {
+        "label": "SGA Meeting Minutes, 23 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
+       }
+      },
+      {
+       "name": "Amanda Kirby",
+       "seat": "McLean Hall representative",
+       "note": "Elected McLean Hall representative in the 3 Feb 1998 election results.",
+       "src": {
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+       }
+      },
+      {
+       "name": "Tim Leavell",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 23 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 23 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
+       }
+      },
+      {
+       "name": "Melissa Lee",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 10 Mar 1998, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 10 Mar 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/176/"
+       }
+      },
+      {
+       "name": "Sarah Leonard",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 21 Oct 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 21 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
+       }
+      },
+      {
+       "name": "Robert Lightning",
+       "seat": "Hugh Poland Hall representative",
+       "note": "Elected Hugh Poland Hall representative over Brad Hales on 9 Sep 1997.",
+       "src": {
+        "label": "SGA Meeting Minutes, 9 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
+       }
+      },
+      {
+       "name": "David Lodmell",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Distinct from Judicial Council member Darlene Lodmell, who appears separately, and only as a guest, at the 21 Apr 1998 meeting.",
+       "src": {
+        "label": "SGA Meeting Minutes, 4 Nov 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/155/"
+       }
+      },
+      {
+       "name": "Tara Logsdon",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 7 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
+       }
+      },
+      {
+       "name": "Billy Lyons",
+       "seat": "Pearce Ford Tower representative",
+       "note": "Seated as Pearce Ford Tower representative by floor motion on 24 Feb 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, 24 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/167/"
+       }
+      },
+      {
+       "name": "Jarrod Magan",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 16 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
+       }
+      },
+      {
+       "name": "Cassie Martin",
+       "seat": "Freshman Council",
+       "note": "Elected to Freshman Council on 3 Feb 1998 (OCR renders the surname 'Manin').",
+       "src": {
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+       }
+      },
+      {
+       "name": "Amber Lee Mason",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 9 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
+       }
+      },
+      {
        "name": "Joe Matheis",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 16 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
+       }
+      },
+      {
+       "name": "Creighton Matthews",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 23 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 23 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
+       }
+      },
+      {
+       "name": "Lissa Maxwell",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 23 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 23 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
+       }
+      },
+      {
+       "name": "Sean McAlister",
+       "seat": "Pearce Ford Tower representative",
+       "note": "Seated as Pearce Ford Tower representative by floor motion on 17 Feb 1998 (recorded there as 'Sean McAllister'). OCR also renders his name 'Shawn McCalister' on 24 Mar 1998, the same person under a variant spelling.",
+       "src": {
+        "label": "SGA Meeting Minutes, 17 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/168/"
+       }
+      },
+      {
+       "name": "Brandon McCloud",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
        "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
        "src": {
@@ -23201,93 +23327,21 @@
        }
       },
       {
-       "name": "John Crowe",
-       "seat": "Gilbert Hall representative, later Business College representative",
-       "note": "Elected Gilbert Hall representative in the 3 Feb 1998 election results; moved by floor vote to Business College representative on 7 Apr 1998.",
-       "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
-       }
-      },
-      {
-       "name": "John Tebault",
-       "seat": "Sophomore Off-Campus representative",
-       "note": "Elected Sophomore Off-Campus representative, alongside Jay Sharkey, on 3 Feb 1998. OCR misreads the surname 'Tebauh' in the 21 Apr 1998 absence list; the correct spelling is confirmed twice more, as a bill author on 7 Apr and 14 Apr 1998.",
-       "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
-       }
-      },
-      {
-       "name": "Julie Beth Gray",
-       "seat": "Central Hall representative",
-       "note": "Elected Central Hall representative on 3 Feb 1998, distinct from the earlier fall-1997 Julie Gray, above.",
-       "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
-       }
-      },
-      {
-       "name": "Julie Goodwin",
+       "name": "Ryan Morrison",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 9 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
-       }
-      },
-      {
-       "name": "Julie Gray",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Distinct from Julie Beth Gray, below: the 3 Feb 1998 election minutes name a Julie Gray newly elected to the Central Hall seat that day, months after this Julie Gray's first fall-1997 absence, which rules out one person under two spellings.",
-       "src": {
-        "label": "SGA Meeting Minutes, 7 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
-       }
-      },
-      {
-       "name": "Kathryn Deutsch",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "OCR renders the surname 'Kathcryn Dl..!u\\sch' (23 Sep 1997) and 'Katheryn Deutsch' (11 Nov 1997) in other appearances; the name is standardized here.",
-       "src": {
-        "label": "SGA Meeting Minutes, 9 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
-       }
-      },
-      {
-       "name": "Katie Staples",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "OCR also renders the given name 'Kmie' (11 Nov 1997).",
-       "src": {
-        "label": "SGA Meeting Minutes, 11 Nov 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/164/"
-       }
-      },
-      {
-       "name": "Kevin West",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 16 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
-       }
-      },
-      {
-       "name": "Keys",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Surname confirmed across seven absence-list appearances (23 Sep, 30 Sep, 21 Oct, 28 Oct, 4 Nov, 11 Nov, 18 Nov 1997), but OCR renders the given name inconsistently as Corlena, Corletta, Corlella and Carletta, with no spelling clearly dominant. The given name is left unstated rather than guessed.",
+       "note": "Recorded absent from the Congress meeting of 23 Sep 1997, against a roster the minutes do not print in full.",
        "src": {
         "label": "SGA Meeting Minutes, 23 Sep 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
        }
       },
       {
-       "name": "Lance Blincoe",
+       "name": "Amy Mothersbaugh",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 30 Sep 1997, against a roster the minutes do not print in full.",
+       "note": "Recorded absent from the Congress meeting of 17 Feb 1998, against a roster the minutes do not print in full.",
        "src": {
-        "label": "SGA Meeting Minutes, 30 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/149/"
+        "label": "SGA Meeting Minutes, 17 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/168/"
        }
       },
       {
@@ -23300,111 +23354,39 @@
        }
       },
       {
-       "name": "Laura Hancock",
+       "name": "Jason Nemes",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 21 Oct 1997, against a roster the minutes do not print in full.",
+       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 7 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
+       }
+      },
+      {
+       "name": "Chad Nuckols",
+       "seat": "Sophomore Off-Campus representative",
+       "note": "Seated as Sophomore Off-Campus representative by floor motion on 7 Oct 1997 (recorded there as 'Chad Knuckles').",
+       "src": {
+        "label": "SGA Meeting Minutes, 7 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
+       }
+      },
+      {
+       "name": "Bryan Raisor",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "OCR also renders the given name 'Brian' in spring 1998 appearances (31 Mar, 21 Apr 1998); a 24 Feb 1998 absence bridges the two spellings with no gap in the attendance record.",
        "src": {
         "label": "SGA Meeting Minutes, 21 Oct 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
        }
       },
       {
-       "name": "Lindsey Sullivan",
+       "name": "Jason Reeves",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 10 Mar 1998, against a roster the minutes do not print in full.",
+       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
        "src": {
-        "label": "SGA Meeting Minutes, 10 Mar 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/176/"
-       }
-      },
-      {
-       "name": "Lissa Maxwell",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 23 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 23 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
-       }
-      },
-      {
-       "name": "Mandy Holbert",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 27 Jan 1998, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 27 Jan 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/171/"
-       }
-      },
-      {
-       "name": "Martha Bonds",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 9 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
-       }
-      },
-      {
-       "name": "Mary Ruth Thomas",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Possibly the same 'Mary Thomas' who won a Freshman Council seat over Ray Fowler on 9 Sep 1997, but the surname alone is not enough to be certain; recorded here only for her confirmed 31 Mar 1998 appearance.",
-       "src": {
-        "label": "SGA Meeting Minutes, 31 Mar 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/174/"
-       }
-      },
-      {
-       "name": "Matt Bogard",
-       "seat": "Keen Hall representative",
-       "note": "Seated as Keen Hall representative by floor motion on 24 Feb 1998.",
-       "src": {
-        "label": "SGA Meeting Minutes, 24 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/167/"
-       }
-      },
-      {
-       "name": "Medina Tipton",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 2 Dec 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 2 Dec 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/162/"
-       }
-      },
-      {
-       "name": "Melissa Lee",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 10 Mar 1998, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 10 Mar 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/176/"
-       }
-      },
-      {
-       "name": "Michael Day",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 27 Jan 1998, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 27 Jan 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/171/"
-       }
-      },
-      {
-       "name": "Michael Hardin",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 16 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
-       }
-      },
-      {
-       "name": "Mike Armstrong",
-       "seat": "At-Large representative",
-       "note": "Seated as an At-Large representative by floor motion on 17 Feb 1998.",
-       "src": {
-        "label": "SGA Meeting Minutes, 17 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/168/"
+        "label": "SGA Meeting Minutes, 7 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
        }
       },
       {
@@ -23417,66 +23399,12 @@
        }
       },
       {
-       "name": "Robert Lightning",
-       "seat": "Hugh Poland Hall representative",
-       "note": "Elected Hugh Poland Hall representative over Brad Hales on 9 Sep 1997.",
-       "src": {
-        "label": "SGA Meeting Minutes, 9 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
-       }
-      },
-      {
-       "name": "Ryan Faught",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 16 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
-       }
-      },
-      {
-       "name": "Ryan Morrison",
+       "name": "Amy Risley",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
        "note": "Recorded absent from the Congress meeting of 23 Sep 1997, against a roster the minutes do not print in full.",
        "src": {
         "label": "SGA Meeting Minutes, 23 Sep 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
-       }
-      },
-      {
-       "name": "Sally Eilerman",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 9 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 9 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
-       }
-      },
-      {
-       "name": "Sarah Leonard",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 21 Oct 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 21 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
-       }
-      },
-      {
-       "name": "Sean McAlister",
-       "seat": "Pearce Ford Tower representative",
-       "note": "Seated as Pearce Ford Tower representative by floor motion on 17 Feb 1998 (recorded there as 'Sean McAllister'). OCR also renders his name 'Shawn McCalister' on 24 Mar 1998, the same person under a variant spelling.",
-       "src": {
-        "label": "SGA Meeting Minutes, 17 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/168/"
-       }
-      },
-      {
-       "name": "Shavonna Smith",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 11 Nov 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 11 Nov 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/164/"
        }
       },
       {
@@ -23489,48 +23417,12 @@
        }
       },
       {
-       "name": "Tara Beard",
+       "name": "Carlton Rumenier",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 21 Oct 1997, against a roster the minutes do not print in full.",
+       "note": "OCR also renders the surname 'Rumenicr' (9 Sep 1997).",
        "src": {
-        "label": "SGA Meeting Minutes, 21 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
-       }
-      },
-      {
-       "name": "Tara Logsdon",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 7 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
-       }
-      },
-      {
-       "name": "Teresa Criss",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 7 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
-       }
-      },
-      {
-       "name": "Tiffany Wilson",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 16 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
-       }
-      },
-      {
-       "name": "Tim Leavell",
-       "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 23 Sep 1997, against a roster the minutes do not print in full.",
-       "src": {
-        "label": "SGA Meeting Minutes, 23 Sep 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/150/"
+        "label": "SGA Meeting Minutes, 9 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
        }
       },
       {
@@ -23543,6 +23435,96 @@
        }
       },
       {
+       "name": "Jay Sharkey",
+       "seat": "Sophomore Off-Campus representative",
+       "note": "Elected Sophomore Off-Campus representative, alongside John Tebault, on 3 Feb 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+       }
+      },
+      {
+       "name": "Shavonna Smith",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 11 Nov 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 11 Nov 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/164/"
+       }
+      },
+      {
+       "name": "Katie Staples",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "OCR also renders the given name 'Kmie' (11 Nov 1997).",
+       "src": {
+        "label": "SGA Meeting Minutes, 11 Nov 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/164/"
+       }
+      },
+      {
+       "name": "Lindsey Sullivan",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 10 Mar 1998, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 10 Mar 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/176/"
+       }
+      },
+      {
+       "name": "Jeff Swaim",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 7 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
+       }
+      },
+      {
+       "name": "Brad Sweatt",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 7 Oct 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 7 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
+       }
+      },
+      {
+       "name": "John Tebault",
+       "seat": "Sophomore Off-Campus representative",
+       "note": "Elected Sophomore Off-Campus representative, alongside Jay Sharkey, on 3 Feb 1998. OCR misreads the surname 'Tebauh' in the 21 Apr 1998 absence list; the correct spelling is confirmed twice more, as a bill author on 7 Apr and 14 Apr 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, 3 Feb 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+       }
+      },
+      {
+       "name": "J Thomas",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Given as the initial 'J' throughout the year's minutes, never a full first name; also served as Vice-Chair of the Academic Affairs Committee.",
+       "src": {
+        "label": "SGA Meeting Minutes, 7 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/148/"
+       }
+      },
+      {
+       "name": "Mary Ruth Thomas",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Possibly the same 'Mary Thomas' who won a Freshman Council seat over Ray Fowler on 9 Sep 1997, but the surname alone is not enough to be certain; recorded here only for her confirmed 31 Mar 1998 appearance.",
+       "src": {
+        "label": "SGA Meeting Minutes, 31 Mar 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/174/"
+       }
+      },
+      {
+       "name": "Medina Tipton",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 2 Dec 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 2 Dec 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/162/"
+       }
+      },
+      {
        "name": "Will Warren",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
        "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
@@ -23552,21 +23534,39 @@
        }
       },
       {
-       "name": "William Brown",
+       "name": "Kevin West",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 3 Feb 1998, against a roster the minutes do not print in full.",
+       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
        "src": {
-        "label": "SGA Meeting Minutes, 3 Feb 1998",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/170/"
+        "label": "SGA Meeting Minutes, 16 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
        }
       },
       {
-       "name": "William Jones",
+       "name": "Chris Williams",
        "seat": "Congress member, per the year's absence lists (seat not stated)",
-       "note": "Recorded absent from the Congress meeting of 21 Oct 1997, against a roster the minutes do not print in full.",
+       "note": "Recorded absent from the Congress meeting of 14 Oct 1997, against a roster the minutes do not print in full.",
        "src": {
-        "label": "SGA Meeting Minutes, 21 Oct 1997",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/159/"
+        "label": "SGA Meeting Minutes, 14 Oct 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/146/"
+       }
+      },
+      {
+       "name": "Eric Wilson",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 16 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
+       }
+      },
+      {
+       "name": "Tiffany Wilson",
+       "seat": "Congress member, per the year's absence lists (seat not stated)",
+       "note": "Recorded absent from the Congress meeting of 16 Sep 1997, against a roster the minutes do not print in full.",
+       "src": {
+        "label": "SGA Meeting Minutes, 16 Sep 1997",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/151/"
        }
       }
      ]
@@ -24313,6 +24313,720 @@
        "src": {
         "label": "SGA Executive Council Minutes, 18-19 Jul 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/335"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Jaqueline Ayers",
+       "seat": "Sworn in as an At-Large member, 22 Sept 1998",
+       "note": "Also spelled 'Jacqueline Ayers'; recorded absent nearly every meeting Nov 1998-Feb 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 22, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/352"
+       }
+      },
+      {
+       "name": "Arcentra Beasly",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 22 Sept 1998)",
+       "note": "Also spelled 'Arkena Beasely' (8 Sept 1998) and 'Arcentra Beasley' (23 March 1999); absent nearly every meeting all year.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 22, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/352"
+       }
+      },
+      {
+       "name": "Tyler Bronger",
+       "seat": "Floor member; sworn in 26 Jan 1999",
+       "note": "Spoke in favor of Bill 99-5-S, 23 Feb 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 26, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/203"
+       }
+      },
+      {
+       "name": "Bill Brown",
+       "seat": "Floor member; spoke against the Kappa Alpha Order funding bill, 1 Dec 1998",
+       "src": {
+        "label": "SGA Meeting Minutes, December 1, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/187"
+       }
+      },
+      {
+       "name": "Natalie Bryant",
+       "seat": "Secretary of the Student Affairs committee",
+       "note": "Selected pending congressional approval, 29 Sept 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Amy Buchanon",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 1 Dec 1998)",
+       "note": "Also recorded absent 9 March 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, December 1, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/187"
+       }
+      },
+      {
+       "name": "Sara Burkhart",
+       "seat": "Floor member; sworn in 19 Jan 1999",
+       "note": "Spoke in favor of Bill 99-5-S, 23 Feb 1999; spoke against amended Bill 99-13-S, 6 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 19, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/205"
+       }
+      },
+      {
+       "name": "Rachel Carl",
+       "seat": "Sworn in as an At-Large member, 29 Sept 1998",
+       "note": "Recorded absent at roll call repeatedly through February 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Amy Caswell",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call as 'Amy Cassell,' 29 Sept 1998)",
+       "note": "Named with Leslie Bedo for wearing Hillraiser T-shirts, 2 Feb 1999; nominated for the Charles A. Keown and Kerri Faye Stewart awards, 13 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 8, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/355"
+       }
+      },
+      {
+       "name": "Jason Chilton",
+       "seat": "Floor member; author of Resolution 98-15-F, spoke in favor and offered a friendly amendment, 17 Nov 1998",
+       "src": {
+        "label": "SGA Meeting Minutes, November 17, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/189"
+       }
+      },
+      {
+       "name": "Nena Chilton",
+       "seat": "Sworn in as an At-Large member, 22 Sept 1998",
+       "note": "Only appearance in the corpus is this swearing-in.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 22, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/352"
+       }
+      },
+      {
+       "name": "Amanda Coates",
+       "seat": "Ogden College representative",
+       "note": "Called 'Mandy Coates'/'Mandy Coats' in weekly council reports, 'Amanda Coates' in special-order and award text; held the seat all year, gave a special-order speech on InfoRed (2 Mar 1999), and ran for President in spring 1999 on a 'Coates/Martin' ticket per the 6 April primary results.",
+       "src": {
+        "label": "SGA Meeting Minutes, March 2, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/195"
+       }
+      },
+      {
+       "name": "Jennifer Conine",
+       "seat": "Sworn in as an At-Large member, 22 Sept 1998",
+       "note": "Received a Public Relations award, 2 Feb 1999; won Congress member of the month for February 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 22, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/352"
+       }
+      },
+      {
+       "name": "Laura Cornelius",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 8 Dec 1998)",
+       "src": {
+        "label": "SGA Meeting Minutes, December 8, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/186"
+       }
+      },
+      {
+       "name": "Bryan Daniel",
+       "seat": "Sworn in as an At-Large member, 22 Sept 1998 ('Brian Daniel' at that meeting)",
+       "note": "Recorded absent at roll call repeatedly through October and November 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 22, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/352"
+       }
+      },
+      {
+       "name": "Conrad Davies",
+       "seat": "Sworn in as a new At-Large member, 23 March 1999",
+       "note": "Only appearance in the corpus is this swearing-in.",
+       "src": {
+        "label": "SGA Meeting Minutes, March 23, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/193"
+       }
+      },
+      {
+       "name": "Brent Ditto",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 29 Sept 1998)",
+       "note": "Sworn in as an At-Large member, 22 Sept 1998; recorded absent many more times through the year.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 22, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/352"
+       }
+      },
+      {
+       "name": "Brianne Dockins",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 29 Sept 1998)",
+       "note": "Also spelled 'Brianna Dockins' (8 Sept 1998); recorded absent repeatedly through November 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Sarah Duckworth",
+       "seat": "Sworn in as an At-Large member, 22 Sept 1998",
+       "note": "Recorded absent at roll call repeatedly through January 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 22, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/352"
+       }
+      },
+      {
+       "name": "Jennifer Englert",
+       "seat": "Rank-and-file Congress member; sworn in 26 Jan 1999 (seat not specified in the minutes)",
+       "note": "Thanked for attending the orientation meeting, 16 Feb 1999; nominated for Committee member of the month, Feb 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 26, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/203"
+       }
+      },
+      {
+       "name": "Holly Foster",
+       "seat": "Rank-and-file Congress member; sworn in 8 Sept 1998 (seat not specified in the minutes)",
+       "note": "Recorded absent at roll call, 2 March 1999; nominated for the Kerri Faye Stewart award, 13 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 8, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/355"
+       }
+      },
+      {
+       "name": "Scott Foster",
+       "seat": "Sworn in as an At-Large member, 29 Sept 1998",
+       "note": "Recorded absent at roll call, 20 Oct 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Adrienne Frey",
+       "seat": "Freshman representative",
+       "note": "Sworn in 15 Sept 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 15, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/353"
+       }
+      },
+      {
+       "name": "Christen Gibbs",
+       "seat": "Education College representative",
+       "note": "Sworn in 3 Nov 1998, held seat through at least 13 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, November 3, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/178"
+       }
+      },
+      {
+       "name": "Tim Gilbert",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 29 Sept 1998)",
+       "note": "Voted Committee member of the month for November 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Jill Goh",
+       "seat": "Rank-and-file Congress member; sworn in 26 Jan 1999 (seat not specified in the minutes)",
+       "note": "Recorded absent at roll call, 9 March and 6 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 26, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/203"
+       }
+      },
+      {
+       "name": "Julie Beth Gray",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 3 Nov 1998)",
+       "src": {
+        "label": "SGA Meeting Minutes, November 3, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/178"
+       }
+      },
+      {
+       "name": "Thomas Grinter",
+       "seat": "Floor member; author and frequent speaker on legislation",
+       "note": "September Congress/Committee member of the month; author of resolutions on advisor training and an advisor council; nominated Outstanding Congress Member, 13 Apr 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, October 13, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/359"
+       }
+      },
+      {
+       "name": "Heidi Grogg",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 29 Sept 1998)",
+       "note": "Thanked for completing the SGA bulletin board, 10 Feb 1999; nominated for Congress member of the month, Feb 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Joshua Hampton",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 29 Sept 1998)",
+       "note": "Recorded absent at nearly every fall 1998 meeting.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Michael Hand",
+       "seat": "Gilbert Hall representative",
+       "note": "Sworn in 10 Feb 1999 by Chief Justice Ryan Morrison.",
+       "src": {
+        "label": "SGA Meeting Minutes, February 10, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/200"
+       }
+      },
+      {
+       "name": "Jennifer Hegna",
+       "seat": "Rank-and-file Congress member; sworn in 19 Jan 1999 (seat not specified in the minutes)",
+       "note": "Recorded absent at roll call, 23 March 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 19, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/205"
+       }
+      },
+      {
+       "name": "Autumn Holloway",
+       "seat": "Rank-and-file Congress member; sworn in 26 Jan 1999 (seat not specified in the minutes)",
+       "note": "Recorded absent at roll call repeatedly through March 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 26, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/203"
+       }
+      },
+      {
+       "name": "Jeremy Holman",
+       "seat": "Sworn in as an At-Large member, 22 Sept 1998",
+       "note": "Also spelled 'Jeremey Holman'/'Jenney Holman'; absent repeatedly through Feb 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 22, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/352"
+       }
+      },
+      {
+       "name": "Nathan Hopper",
+       "seat": "Sworn in as an At-Large member, 3 Nov 1998",
+       "note": "Appointed to the Email Rules and Regulations Committee, 2 Feb 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, November 3, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/178"
+       }
+      },
+      {
+       "name": "Adam Howard",
+       "seat": "Secretary of the Academic Affairs committee; extremely active floor member",
+       "note": "Confirmed as Secretary reporting for Academic Affairs 10 Feb 1999; author or floor speaker on many bills nearly every meeting Sept 1998-April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, February 10, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/200"
+       }
+      },
+      {
+       "name": "Carrie Huber",
+       "seat": "Rank-and-file Congress member; sworn in 19 Jan 1999 (seat not specified in the minutes)",
+       "note": "Only appearance in the corpus is this swearing-in.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 19, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/205"
+       }
+      },
+      {
+       "name": "Jody Jaggers",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 13 Oct 1998)",
+       "note": "Recorded absent repeatedly through Feb 1999; later appointed to fill a Judicial Council vacancy, 23 Feb 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, October 13, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/359"
+       }
+      },
+      {
+       "name": "Kamaria Johnson-El",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 2 March 1999)",
+       "note": "Also recorded absent 6 and 13 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, March 2, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/195"
+       }
+      },
+      {
+       "name": "William Jones",
+       "seat": "Floor member; moved to accept Resolution 98-4-F as amended, 13 Oct 1998",
+       "note": "Also moved to adjourn repeatedly through the fall; sworn in 15 Sept 1998 as Barnes Campbell Hall representative.",
+       "src": {
+        "label": "SGA Meeting Minutes, October 13, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/359"
+       }
+      },
+      {
+       "name": "Joy Jones",
+       "seat": "Floor member; sworn in 2 Feb 1999",
+       "note": "Asked a question on Bill 99-5-S, 23 Feb 1999; moved to adjourn, 9 March 1999; also on the spring 'Jones/Yeckering' Executive Vice President ticket.",
+       "src": {
+        "label": "SGA Meeting Minutes, February 2, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/202"
+       }
+      },
+      {
+       "name": "Amanda Kirby",
+       "seat": "Floor member; sworn in as Vice-Chair of Student Affairs, 29 Sept 1998",
+       "note": "Very active: authored and moved on several resolutions; won Congress member of the month, Oct 1998; top finisher in the spring VP of Administration race.",
+       "src": {
+        "label": "SGA Meeting Minutes, October 20, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/182"
+       }
+      },
+      {
+       "name": "Sarah Kreicher",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 22 Sept 1998)",
+       "note": "Also spelled 'Sarah Kreidler' (13 Oct 1998); nominated for Committee member of the month at the 29 Sept 1998 meeting.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 22, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/352"
+       }
+      },
+      {
+       "name": "David Laing",
+       "seat": "Rank-and-file Congress member; sworn in 19 Jan 1999 (seat not specified in the minutes)",
+       "note": "Recorded absent at roll call repeatedly through April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 19, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/205"
+       }
+      },
+      {
+       "name": "Robert Lightning",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 8 Sept 1998)",
+       "note": "Won the naming contest for the SGA pig mascot, 'Boss Hog,' 20 Oct 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 8, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/355"
+       }
+      },
+      {
+       "name": "David Lodmell",
+       "seat": "Floor member; spoke against Bill 98-4-F, 13 Oct 1998",
+       "note": "Repeatedly moved and seconded legislation through the spring; nominated for Committee member of the month at the 1 Dec 1998 meeting.",
+       "src": {
+        "label": "SGA Meeting Minutes, October 13, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/359"
+       }
+      },
+      {
+       "name": "Billy Lyons",
+       "seat": "Vice-Chair of the Public Relations committee",
+       "note": "Approved 15 Sept 1998; gave PR's report repeatedly in Amanda Cole's absence; spoke on the floor for/against several resolutions.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 15, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/353"
+       }
+      },
+      {
+       "name": "Rick Malek",
+       "seat": "Graduate College representative from 2 Feb 1999; also an active floor member from the start of the year",
+       "note": "Sworn in as a new member 8 Sept 1998; active on the floor through the fall; sworn as Graduate College Rep. 2 Feb 1999; gave a special-order address 16 Feb 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, February 2, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/202"
+       }
+      },
+      {
+       "name": "James Mason",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 29 Sept 1998)",
+       "note": "Recorded absent at nearly every fall 1998 meeting.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Joe Matheis",
+       "seat": "Vice-Chair of the Legislative Research committee; chaired an LRC bylaws subcommittee",
+       "note": "Approved LRC Vice-Chair 15 Sept 1998; appointed bylaws-subcommittee chair 20 Oct 1998; gave a special-order speech 6 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 15, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/353"
+       }
+      },
+      {
+       "name": "Kyle Matthews",
+       "seat": "Vice-Chair of the Academic Affairs committee; gave several floor reports and made repeated motions",
+       "note": "Approved Vice-Chair 15 Sept 1998; gave AA's report multiple times; appointed to the Student Health Service committee 6 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 15, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/353"
+       }
+      },
+      {
+       "name": "Leslie McClard",
+       "seat": "Rank-and-file Congress member; sworn in 19 Jan 1999 (seat not specified in the minutes)",
+       "note": "Only appearance in the corpus is this swearing-in.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 19, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/205"
+       }
+      },
+      {
+       "name": "Katie McConathy",
+       "seat": "Rank-and-file Congress member; sworn in 26 Jan 1999 (seat not specified in the minutes)",
+       "note": "Only appearance in the corpus is this swearing-in.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 26, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/203"
+       }
+      },
+      {
+       "name": "Missy McKinnis",
+       "seat": "Rank-and-file Congress member; sworn in 8 Sept 1998 (seat not specified in the minutes)",
+       "note": "Recorded absent at roll call repeatedly through spring 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 8, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/355"
+       }
+      },
+      {
+       "name": "Courtney McNulty",
+       "seat": "Rank-and-file Congress member; served on the Organizational Aide committee, 15 Sept 1998",
+       "note": "Recorded absent at roll call multiple times; nominated for Committee member of the month, Dec 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 15, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/353"
+       }
+      },
+      {
+       "name": "Julie Mitchell",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 29 Sept 1998)",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Joe Morel",
+       "seat": "Vice-Chair of the Campus Improvements committee",
+       "note": "Elected Vice-Chair 2 Feb 1999; moved to adjourn repeatedly in spring 1999; raised questions on the floor.",
+       "src": {
+        "label": "SGA Meeting Minutes, February 2, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/202"
+       }
+      },
+      {
+       "name": "Amy Mothersbaugh",
+       "seat": "Floor member; spoke in favor of Resolution 98-1-F, 10 Nov 1998",
+       "note": "Repeatedly recorded absent through spring.",
+       "src": {
+        "label": "SGA Meeting Minutes, November 10, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/190"
+       }
+      },
+      {
+       "name": "Jason Nemes",
+       "seat": "Potter College representative (from 15 Sept 1998)",
+       "note": "Sworn in as Potter College representative at the 15 Sept 1998 meeting, succeeding Justin Clark, who held the seat as of the 1 and 8 September meetings. Held the seat through at least 13 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Todd Osterloh",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 8 Sept 1998)",
+       "src": {
+        "label": "SGA Meeting Minutes, September 8, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/355"
+       }
+      },
+      {
+       "name": "Mark Page",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 15 Sept 1998)",
+       "note": "Also absent 8 Sept 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 15, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/353"
+       }
+      },
+      {
+       "name": "Elizabeth Pemberton",
+       "seat": "Rank-and-file Congress member; nominated for Congress member of the month, 20 Oct 1998",
+       "note": "Recorded absent at roll call repeatedly, Nov 1998-April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, October 27, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/180"
+       }
+      },
+      {
+       "name": "Julie Phillips",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 26 Jan 1999)",
+       "note": "Also recorded absent 9 and 23 March 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 26, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/203"
+       }
+      },
+      {
+       "name": "Julia Raymer",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 17 Nov 1998)",
+       "note": "Recorded absent at nearly every meeting from Nov 1998 through March 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, November 17, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/189"
+       }
+      },
+      {
+       "name": "Tom Revo",
+       "seat": "Rank-and-file Congress member; sworn in 26 Jan 1999 (seat not specified in the minutes)",
+       "note": "Spoke against Ryan Morrison's appointment as VP of Finance, 16 Feb 1999; recorded absent 2 March and 13 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, January 26, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/203"
+       }
+      },
+      {
+       "name": "Kerri Richardson",
+       "seat": "Floor member; spoke against Bill 99-8-S, 6 April 1999",
+       "note": "Sworn in 19 Jan 1999 as 'Kerrie Richardson'; nominated for the Mary Angela Norcia award, 13 April 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, April 6, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/192"
+       }
+      },
+      {
+       "name": "Charles Rogers",
+       "seat": "Sworn in as an At-Large member, 1 Dec 1998",
+       "note": "Recorded absent at roll call repeatedly through February 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, December 1, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/187"
+       }
+      },
+      {
+       "name": "Lisa Ruble",
+       "seat": "Rank-and-file Congress member; sworn in 8 Sept 1998 (seat not specified in the minutes)",
+       "note": "Recorded absent at roll call repeatedly through January 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 8, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/355"
+       }
+      },
+      {
+       "name": "Tommy Schandling",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 29 Sept 1998)",
+       "src": {
+        "label": "SGA Meeting Minutes, September 29, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/350"
+       }
+      },
+      {
+       "name": "Eddie Schwab",
+       "seat": "Floor member; made repeated motions and seconds across the year",
+       "note": "Nominated Outstanding Congress Member, 13 Apr 1999; also credited with a Public Relations award for sitting in the dunking booth, 8 Sept 1998. Spelled 'Edmond Schwab' once, 1 Sept 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 15, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/353"
+       }
+      },
+      {
+       "name": "Kathleen Speicher",
+       "seat": "Rank-and-file Congress member; sworn in 8 Sept 1998 (seat not specified in the minutes)",
+       "note": "Recorded absent at roll call repeatedly through February 1999.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 8, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/355"
+       }
+      },
+      {
+       "name": "Phillip Stanley",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 15 Sept 1998)",
+       "note": "Also spelled 'Philip Stanley' (10 Nov 1998).",
+       "src": {
+        "label": "SGA Meeting Minutes, September 15, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/353"
+       }
+      },
+      {
+       "name": "Lindsey Sullivan",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 15 Sept 1998)",
+       "note": "OCR renders the name 'Lindsey Sufi ivan,' read as a ligature misread of Sullivan.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 15, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/353"
+       }
+      },
+      {
+       "name": "John Tebault",
+       "seat": "Rank-and-file Congress member; sworn in 8 Sept 1998 (seat not specified in the minutes)",
+       "note": "Recorded absent at roll call repeatedly through November 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, September 8, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/355"
+       }
+      },
+      {
+       "name": "Michael Thompson",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 8 Sept 1998)",
+       "src": {
+        "label": "SGA Meeting Minutes, September 8, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/355"
+       }
+      },
+      {
+       "name": "Jennifer Walstrom",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 15 Sept 1998)",
+       "note": "Also spelled 'Jennifer Waldstrom' (8 Sept 1998).",
+       "src": {
+        "label": "SGA Meeting Minutes, September 15, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/353"
+       }
+      },
+      {
+       "name": "Mike Wiatr",
+       "seat": "Floor member; spoke in favor of the Normal Drive crosswalk resolution, 10 Nov 1998",
+       "note": "Also author of Bill 99-19-S (Volleyball Tournament sponsorship, 6 Apr 1999); spelled 'Mike Wiatt' (23 Feb 1999) and 'Mike Witar' (2 March 1999).",
+       "src": {
+        "label": "SGA Meeting Minutes, November 10, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/190"
+       }
+      },
+      {
+       "name": "David Wilkins",
+       "seat": "Floor member; explicitly identified as 'Congress member David Wilkins' who addressed Congress, 9 March 1999",
+       "note": "Raised questions and spoke against several resolutions through the year, including the crosswalk debate 10 Nov 1998; sworn in 8 Sept 1998.",
+       "src": {
+        "label": "SGA Meeting Minutes, March 9, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/194"
+       }
+      },
+      {
+       "name": "Duan Wright",
+       "seat": "Floor member; spoke in favor of Resolution 98-1-F, 10 Nov 1998",
+       "note": "Also spelled 'Dunn Wright' at the 10 Feb 1999 roll call.",
+       "src": {
+        "label": "SGA Meeting Minutes, November 10, 1998",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/190"
+       }
+      },
+      {
+       "name": "Kara Yeckering",
+       "seat": "Rank-and-file Congress member (recorded absent at roll call, 23 March 1999)",
+       "note": "Ran for Executive Vice President in spring 1999 on a 'Jones/Yeckering' ticket per the 6 April primary results.",
+       "src": {
+        "label": "SGA Meeting Minutes, March 23, 1999",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/193"
        }
       }
      ]
