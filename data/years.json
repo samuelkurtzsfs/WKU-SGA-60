@@ -28864,7 +28864,200 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "Executive Vice President",
+      "name": "Patti Johnson",
+      "note": "Confirmed as Executive Vice President, chairing Congress, at all four meetings checked (2 Sep, 16 Sep, 2 Dec 2003, 13 Apr 2004).",
+      "src": {
+       "label": "SGA minutes, 2 Sep 2003",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+      }
+     },
+     {
+      "office": "Vice President of Finance",
+      "name": "Nick Todd",
+      "note": "Confirmed at all four meetings checked in 2003-04; reported on the budget on 2 and 16 September 2003.",
+      "src": {
+       "label": "SGA minutes, 2 Sep 2003",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+      }
+     },
+     {
+      "office": "Information Technology Designate",
+      "name": "Matthew Pava",
+      "note": "Confirmed at all four meetings checked in 2003-04.",
+      "src": {
+       "label": "SGA minutes, 2 Sep 2003",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+      }
+     },
+     {
+      "office": "Vice President of Administration",
+      "name": "Jessica Martin",
+      "note": "Confirmed at all four meetings checked in 2003-04, signing the minutes each time.",
+      "src": {
+       "label": "SGA minutes, 2 Sep 2003",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+      }
+     },
+     {
+      "office": "Vice President of Public Relations",
+      "name": "Abby Lovan",
+      "note": "Confirmed at all four meetings checked in 2003-04. Withdrew her name from the Speaker of the Senate race on 13 April 2004.",
+      "src": {
+       "label": "SGA minutes, 2 Sep 2003",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Sergeant At Arms",
+       "name": "Cameron Yancey",
+       "note": "Approved by unanimous Congress vote as Sergeant at Arms on 16 September 2003, after being announced for swearing-in that night.",
+       "src": {
+        "label": "SGA minutes, 16 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/522"
+       }
+      },
+      {
+       "office": "Parliamentarian",
+       "name": "Mason Stevenson",
+       "note": "Approved by unanimous Congress vote as Parliamentarian on 16 September 2003, after being announced for swearing-in that night.",
+       "src": {
+        "label": "SGA minutes, 16 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/522"
+       }
+      },
+      {
+       "office": "Coordinator of Committees",
+       "name": "Scott Wolfe",
+       "note": "Confirmed in office by 2 December 2003.",
+       "src": {
+        "label": "SGA minutes, 2 Dec 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"
+       }
+      },
+      {
+       "office": "Chief Justice, Judicial Council",
+       "name": "Troy Ransdell",
+       "note": "Approved and sworn in as Chief Justice of the Judicial Council on 2 September 2003.",
+       "src": {
+        "label": "SGA minutes, 2 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+       }
+      },
+      {
+       "office": "Justice, Judicial Council",
+       "name": "Josh Collins",
+       "note": "Sworn in as a Justice of the Judicial Council on 2 September 2003.",
+       "src": {
+        "label": "SGA minutes, 2 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+       }
+      },
+      {
+       "office": "Justice, Judicial Council",
+       "name": "Gretchen Light",
+       "note": "Sworn in as a Justice of the Judicial Council on 2 September 2003.",
+       "src": {
+        "label": "SGA minutes, 2 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+       }
+      },
+      {
+       "office": "Justice, Judicial Council",
+       "name": "Scott Broadbent",
+       "note": "Sworn in as a Justice of the Judicial Council on 2 September 2003.",
+       "src": {
+        "label": "SGA minutes, 2 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+       }
+      },
+      {
+       "office": "Speaker of the Senate",
+       "name": "Robert Watkins",
+       "note": "Elected the first speaker of the senate on 13 April 2004 in a sealed ballot, 9 votes to 8 over Brittany Fausey, after Abby Lovan withdrew from the race. Previously chaired the Legislative Research committee, where he wrote and defended the new three-branch constitution (Bill 03-10-F). See the 15 April 2004 Herald report on the disputed vote count elsewhere in this year's record.",
+       "src": {
+        "label": "SGA minutes, 13 Apr 2004",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/543"
+       }
+      }
+     ],
+     "committees": [
+      {"name": "Academic Affairs", "chair": "Natalie Croney",
+       "note": "Named alone in the committee's report by 2 December 2003; sworn in as a committee head on 2 September 2003.",
+       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
+      {"name": "Campus Improvements", "chair": "Shawn Peavie",
+       "note": "Sworn in as a committee head on 2 September 2003; defended the committee's re-graveling-the-SkyPAC-lot and Adopt-A-Tree legislation that fall.",
+       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
+      {"name": "Legislative Research", "chair": "Robert Watkins",
+       "note": "Wrote and defended the new three-branch constitution and bylaws (Bill 03-10-F) as the committee's chair in fall 2003, before his election as speaker of the senate the following April.",
+       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
+      {"name": "Public Relations", "chair": "Brittany Fausey",
+       "note": "Sworn in as a committee head on 2 September 2003. Evelina Petkova is named alongside her in the committee's 2 December 2003 report; her specific role is not stated in the minutes.",
+       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
+      {"name": "Student Affairs", "chair": "Katie Dawson",
+       "note": "Sworn in as a committee head on 2 September 2003; defended the committee's private-information-security, hooded-sweatshirt and broadband-expansion-fee legislation that year. Tim Howard is named alongside her in the committee's 2 December 2003 report; his specific role is not stated in the minutes.",
+       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}}
+     ],
+     "note": "Congress had 15 seats filled of an unstated total on 2 September 2003, 43 members by 2 December 2003, and 30 members by 13 April 2004; the roster grew over the fall as vacancies were filled."
+    }
+   },
+   "documents": [
+    {
+     "file": "2003-04-minutes-2003-09-02.pdf",
+     "title": "SGA Meeting Minutes, 2 September 2003",
+     "summary": "The year's second Congress meeting: WKU president Gary Ransdell briefed Congress on capital projects, Troy Ransdell was sworn in as Chief Justice along with three of four Judicial Council justices, and four committee heads and 17 new Congress members were sworn in.",
+     "extract": "Troy Ransdell was approved and sworn in as Chief Justice.",
+     "sga_pages": "1-3",
+     "page": 2,
+     "src": {
+      "label": "SGA minutes, 2 Sep 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+     }
+    },
+    {
+     "file": "2003-04-minutes-2003-09-16.pdf",
+     "title": "SGA Meeting Minutes, 16 September 2003",
+     "summary": "Congress heard Dr. Richard Kirchmeyer on identity theft and the student directory, and swore in Cameron Yancey as Sergeant at Arms and Mason Stevenson as Parliamentarian by unanimous vote.",
+     "extract": "Motion and second to approve Cameron Yancey as Sergeant at Arms and Mason Stevenson as Parliamentarian.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "SGA minutes, 16 Sep 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/522"
+     }
+    },
+    {
+     "file": "2003-04-minutes-2003-12-02.pdf",
+     "title": "SGA Meeting Minutes, 2 December 2003",
+     "summary": "The fourteenth meeting of the year, naming the fall's committee chairs and recording debate on the new constitution (Bill 03-10-F) and four other pieces of legislation, including the SkyPAC parking lot, the Adopt-A-Tree program, private information security and hooded sweatshirts.",
+     "extract": "Robert Watkins defended the legislation saying that the old constitution has too many problems.",
+     "sga_pages": "1-4",
+     "page": 1,
+     "src": {
+      "label": "SGA minutes, 2 Dec 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"
+     }
+    },
+    {
+     "file": "2003-04-minutes-2004-04-13.pdf",
+     "title": "SGA Meeting Minutes, 13 April 2004",
+     "summary": "Records the disputed election of Robert Watkins as the first Speaker of the Senate over Brittany Fausey after Abby Lovan withdrew, and passage of the Broadband Expansion Fee resolution.",
+     "extract": "Robert Watkins won by one vote. The vote was performed as a sealed ballot.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "SGA minutes, 13 Apr 2004",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/543"
+     }
+    }
+   ]
   },
   {
    "id": "2004-05",
