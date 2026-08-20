@@ -1,0 +1,112 @@
+[
+ {"name":"John Law","verdict":"accept",
+  "reason":"534: 'John Law receives the award for attending the most Congress meetings'; also moved plus/minus amendment (533) and moved to table (547)."},
+
+ {"name":"Robert Watkins","verdict":"accept",
+  "reason":"533: 'a motion by Robert Watkins to suspend with the Bylaws' — a floor motion independent of his LRC chairmanship."},
+
+ {"name":"Katie Dawson","verdict":"accept",
+  "reason":"547: 'Katie Dawson moved to suspend with the bylaws' to seat Lockhart; also won $50 attendance (542). Committee-head class but has floor motion."},
+
+ {"name":"Katie Petit","verdict":"accept",
+  "reason":"534: 'Katie Penit made a motion to amend the word' in the chamber-sign bill; motion seconded and approved."},
+
+ {"name":"Cameron Yancey","verdict":"accept",
+  "reason":"524: minutes motion 'seconded by Cameron Yancey' before he became Sergeant at Arms; also questioned in floor debate (541, 546)."},
+
+ {"name":"Brittany Fausey","verdict":"accept",
+  "reason":"524: 'a motion to approve the minutes by Brittany Fausey' — a floor motion; also nominated Congress Member of the Month (547)."},
+
+ {"name":"Tim Howard","verdict":"accept",
+  "reason":"533: 'Tim Howard seconded the motion' to suspend the bylaws; a seconded floor motion, not merely his committee role."},
+
+ {"name":"Shawn Peavie","verdict":"accept",
+  "reason":"542: 'Shawn Peavie moved to suspend with the bylaws' on the crosswalks resolution — a floor motion despite his committee-head class."},
+
+ {"name":"Evelina Petkova","verdict":"accept",
+  "reason":"532: 'Congress member of September - Evelina Petkova' — she won the Congress-member honor outright."},
+
+ {"name":"Matthew Pava","verdict":"accept",
+  "reason":"528: 'Congress Member of October - Matthew Pava' (won); also debated the sweatshirt resolution (541)."},
+
+ {"name":"Anna Bisig","verdict":"accept",
+  "reason":"547: 'Nominees for Congress Member of the Month...: Brittany Fausey, Anna Bisig'; also nominated Outstanding Congress Member (544). Congress-specific, no committee/officer role."},
+
+ {"name":"Hollan Holm","verdict":"accept",
+  "reason":"Approved VC of Academic Affairs and to University Senate (534); debated Greek Village (525), directory (522), constitution (541)."},
+
+ {"name":"Scott Wolfe","verdict":"accept",
+  "reason":"533: 'Scott Wolfe said that everyone in his classes and most of his professors hate it' — floor debate on plus/minus grading."},
+
+ {"name":"Willie Cravens","verdict":"accept",
+  "reason":"533: 'Willie Cravens said that the majority of the student body was not at the meeting'; repeated floor debate (530, 539)."},
+
+ {"name":"Robert Reynolds","verdict":"accept",
+  "reason":"533: 'Robert Reynolds asked how seriously the objection...would be taken'; also 541 constitution debate. Distinct from Katie Reynolds."},
+
+ {"name":"Natalina Elliot","verdict":"accept",
+  "reason":"533: 'Natalina Elliot said that there was a bench outside of the shelter' — substantive floor debate on SGA legislation."},
+
+ {"name":"Michael Kaelin","verdict":"accept",
+  "reason":"539: 'Michael Kaelin asked what kind of line would be used' during the broadband/TAC floor discussion among members. Single but genuine floor act."},
+
+ {"name":"Michael Holcomb","verdict":"accept",
+  "reason":"541: 'Michael Holcomb suggested that we compromise by giving some to Congress members' — floor debate on the sweatshirt resolution."},
+
+ {"name":"Mary Johns","verdict":"accept",
+  "reason":"521: 'Mary Johns: Whom does this really affect?'; repeated floor questions on SGA business (533, 528, 546)."},
+
+ {"name":"Lori Frey","verdict":"accept",
+  "reason":"521: 'Lori Frey as vice chair of LRC' approved by Congress; also asked 'Who has the final say?' A committee sub-officer, not a head."},
+
+ {"name":"Katie Jeter","verdict":"accept",
+  "reason":"521: 'Approved Katie Jeter as vice chair of the PR committee' — a committee sub-office held by a Congress member, not the separate head class."},
+
+ {"name":"Katie Reynolds","verdict":"accept",
+  "reason":"522: 'Katie Reynolds is the new Secretary' of Student Affairs — committee sub-officer, a Congress member. Distinct from Robert Reynolds."},
+
+ {"name":"Jessica Sutton","verdict":"accept",
+  "reason":"522: 'Jessica Sutton is the new secretary' of PR — committee sub-officer, a Congress member. Distinct from VP Jessica Martin."},
+
+ {"name":"Melissa Constant","verdict":"accept",
+  "reason":"546: 'Melissa Constant said she agreed with Law' in the January-term floor debate — genuine floor participation."},
+
+ {"name":"Natalie Croney","verdict":"reject",
+  "reason":"524 swore her in 'as committee heads' (separate class). All floor work is chairing Academic Affairs; only Congress-member nominations, never won, no floor motion."},
+
+ {"name":"Sarah Cecil","verdict":"reject",
+  "reason":"Perfect-attendance award (533) does not say Congress; 535 'won surprises at the end of the meeting' does not say Congress; other marker is a Committee-Member nomination. No floor act."},
+
+ {"name":"Kim Walker","verdict":"reject",
+  "reason":"Only 533 'Gave perfect attendance awards to: Kim Walker' — the line never says Congress attendance, and no other act names her."},
+
+ {"name":"Brad Mundy","verdict":"reject",
+  "reason":"Only the 533 perfect-attendance list ('Kim Walker, Brad Mundy'); the line does not specify Congress, and nothing else names him."},
+
+ {"name":"Staci Miller","verdict":"reject",
+  "reason":"Only the 533 perfect-attendance list ('Staci Miller'); line does not specify Congress attendance, no other appearance."},
+
+ {"name":"Jason Brown","verdict":"reject",
+  "reason":"Only the 533 perfect-attendance list ('Jason Brown, Brittany Hughes'); line does not say Congress, no other act."},
+
+ {"name":"Brittany Hughes","verdict":"reject",
+  "reason":"Only the 533 perfect-attendance list ('Brittany Hughes'); line does not say Congress attendance, no other appearance. Distinct from Brittany Fausey."},
+
+ {"name":"Christina Kayrouz","verdict":"reject",
+  "reason":"Only committee-level recognitions: 'Committee Member of the Month...Christina Kayrouz' (547) and Outstanding Committee Member (544). No Congress act; draft itself flags this."},
+
+ {"name":"Cheryl Norris","verdict":"reject",
+  "reason":"528 'Committee Member of October - Cheryl Norris' and 535 'PR committee's attendance motivator' — all committee-level; helping a mailing is not a seat."},
+
+ {"name":"Alicia Bachicha","verdict":"reject",
+  "reason":"535 'won surprises at the end of the meeting' does not say Congress; remaining markers are Committee-Member nominations (546, 544). No floor act."},
+
+ {"name":"LaTonnsya Burney","verdict":"reject",
+  "reason":"Sole mention is 547 'Thanks to...LaTonnsya Burney...for helping with the mailing during Congress' — volunteering at a mailing, not a seat."},
+
+ {"name":"Ashley Ladegast","verdict":"reject",
+  "reason":"Sole mention is 544 'Kerry Faye Stewart Memorial Award: Katie Dawson, Ashley Ladegast'; award not shown Congress-restricted, no other line names her."},
+
+ {"name":"Pat Jordan","verdict":"reject",
+  "reason":"Sole mention is 525 'Pat Jordan: It is my understanding that tuition would only go up' in an open Greek Village floor talk that also drew staff; never appears again, unidentified as a member."}
+]
