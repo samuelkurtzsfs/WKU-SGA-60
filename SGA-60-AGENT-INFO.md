@@ -320,26 +320,39 @@ git rev-list --left-right --count origin/main...origin/<branch>
 
 ### 8.3 Research still owed, highest value first
 
-1. **The three years with no cabinet at all: 1979-80, 2001-02, 2003-04.** Every
-   one of the 92 candidates for them was checked in August and none survived,
-   because each was sourced either to an SGA minutes landing page (which shows
-   only a generic agenda list, never a name, since the PDF behind it is blocked)
-   or to `web.archive.org`. Twenty-one of those are marked "source unreachable"
-   in `.research/officers-checked.json` and are worth rechecking the day either
-   host opens. The other 68 were checked against a source that loaded fine and
-   simply did not say what was claimed; those are disproven, not pending.
-   **Re-tested 20 August ~09:00 UTC: `digitalcommons.wku.edu/cgi/viewcontent.cgi`
-   answered HTTP 200 on a plain request** (no special headers needed this time),
-   while `web.archive.org` was still refused outright (connection timeout). The
-   WAF challenge on `viewcontent.cgi` is intermittent, not permanent — see §8.1.
-   The 21 "source unreachable" candidates that cited a digitalcommons PDF are
-   worth rechecking now; the ones that cited Wayback still are not. **Re-tested
-   again at ~13:00 and ~13:05 UTC the same day: HTTP 202 with an empty body,
-   the WAF challenge again.** So the window opens and shuts within hours. Take
-   what you can when it is open and do not build a run around it being open.
-   Note that `research-senate` (PR #61, merged 20 August) has separately given
-   2001-02 its first recorded cabinet from that year's minutes — check it before
-   redoing that year.
+1. ~~The three years with no cabinet at all: 1979-80, 2001-02, 2003-04.~~
+   **2003-04 done, 2001-02 already done by `research-senate`, 1979-80 still
+   genuinely open — see below.** `viewcontent.cgi` opened again around 12:30
+   UTC on 20 August (plain requests, no special headers needed) and stayed open
+   long enough to pull four full SGA minutes PDFs straight from TopSCHOLAR:
+   2 Sep 2003, 16 Sep 2003, 2 Dec 2003, 13 Apr 2004 (all `sga/Meetings/Minutes/`
+   items 524, 522, 541, 543), reusing the recipe in §8.1 (this time no special
+   headers were even needed). Against that primary text, an adversarial
+   verifier trimmed six of thirteen officer claims for overclaiming ("held the
+   office throughout the year" narrowed to "confirmed at the meetings actually
+   checked"; "sworn in" narrowed to "approved by unanimous vote" where the
+   swearing-in itself wasn't shown) and cut two of five committee co-chair
+   claims down to one confirmed name apiece (Evelina Petkova and Tim Howard are
+   each named once, alongside an already-confirmed chair, with no stated role —
+   recorded as such rather than as "co-chair"). What survived and is now on
+   `data/years.json`: a nine-seat executive and Judicial Council roster
+   (Executive VP Patti Johnson, VP Finance Nick Todd, VP Public Relations Abby
+   Lovan, VP Administration Jessica Martin, IT Designate Matthew Pava, Sergeant
+   at Arms Cameron Yancey, Parliamentarian Mason Stevenson, Coordinator of
+   Committees Scott Wolfe, Chief Justice Troy Ransdell and Justices Josh
+   Collins/Gretchen Light/Scott Broadbent), the first Speaker of the Senate
+   Robert Watkins (elected 13 April 2004, 9-8 over Brittany Fausey — this also
+   corroborates, from the primary minutes, an event already in the record
+   sourced only to the Herald), and five senate committee chairs. 1979-80 is
+   not the same kind of gap: the digitized minutes collection has no meeting
+   from inside that term at all (only the 29 April and 6 May 1980 transition
+   meetings, which swear in *1980-81's* officers), and the only Herald coverage
+   the local index or the TopSCHOLAR landing pages surface is the presidential
+   race itself — no AVP, Secretary or Treasurer is named anywhere reachable
+   from here. The four previously-rejected 1979-80 candidates (Fuller, Bates,
+   Thompson, Craig) stay rejected; nothing found this run changes that. Leave
+   1979-80 for a run that can search full-text Herald PDFs or a yearbook, not
+   another pass over the same index.
 2. ~~Twenty-six sets of 1996-97 minutes are mirrored into `data/documents/` and
    referenced by nothing~~ **Done, 20 August.** All 29 files (27 Congress
    meetings, 2 Executive Council) now carry a title, a summary, a sourced
