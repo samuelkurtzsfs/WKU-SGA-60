@@ -1942,3 +1942,97 @@ pass, all of them 1996-97. 1,621 pages built. `build.py`, `check_data.py` and
 `check_contrib.py` all clean on the merged head; `check_duplicates.py` reports the same
 six pairs it has reported for days, three of them introduce-then-resolve sequences and
 three same-day 1991 bills, all genuinely distinct and all left alone.
+
+---
+
+# 20 August 2026, evening pass
+
+Two pull requests open, both from routines that had pushed within the hour. Both
+merged, both with corrections first. The three stale August branches — #6, #7 and
+#8 — are already closed and needed nothing.
+
+## #65, person profiles — merged
+
+Twenty-odd officer profiles, and the branch moved three times while I read it: ten
+pre-2001 officers, then ten more around the 2005-2014 executive, then a duplicate
+removal. All three batches reviewed.
+
+Every Herald citation was resolved against the full index and checked on date,
+volume and headline. Eight of eight matched exactly on the first batch, bylines
+included, and the 2005-2008 batch matched exactly too. The mirrored minutes confirm
+Michael Colvin line by line, Mark Rawlings's January 2001 appointment word for word,
+and Joe Rains's $794.98 budget summary to the cent. **No invented facts anywhere in
+the diff.** What needed work was citation and precision.
+
+Cut or rewritten:
+
+- **Mark Rawlings.** The profile had him defeating Holly Skidmore, sourced to a piece
+  headlined "Square Off" printed before the vote. Skidmore appears exactly once in the
+  whole 11,850-entry index — that preview — and the April 2001 issue indexes are
+  untruncated, so the Herald genuinely never reported the result. He plainly held the
+  office; the record now says so and stops there.
+- **The spring 2008 slates, wrong in three places.** Harden, Smiley and Gilley share
+  an op-ed byline against Boles, whose slate included Shelton and Skylar Johnson, and
+  it was a candidate from Boles's side who complained about the Red Towel Party that
+  April. Gilley had been filed as running on Boles's ticket and Shelton as running on a
+  Red Towel Party ticket with Boles. Neither holds. Both won and served together
+  having run against each other's slates. The same error was already live on main in
+  Shelton's plaque note and is corrected there too.
+- **Two breaches of the quote rule** — Keyana Boka quoting one report twice, Billy
+  Stephens at sixteen words — paraphrased down.
+- Several profiles anchored to one meeting while drawing on a year of minutes. Gott's
+  hotline is in the October 1988 minutes, not the two cited; Kristen Miller's dress
+  code was voted down on 5 September 1995 and her flag designs reached Meredith through
+  Hensley on 5 March 1996. Each now cites the meeting that carries it.
+
+The serious one: **Bill Schilling's 1987-88 record was about to publish an arrest with
+no reachable source.** The record cites fourteen issues, but `SRC_KEYS` in `build.py`
+only rendered five, so the arrest and its dismissal rendered nowhere — and four of the
+stories the account leans on hardest, the lost seat and the impeachment opened and
+dropped, had no citation slot in the data at all. Every claim in that profile is true;
+I checked all twelve against the index and the headlines match exactly, and it properly
+pairs the arrest with the dismissal. But a named living person's arrest needed to be
+checkable. Sources added, `SRC_KEYS` widened to `src20`, all fourteen now render.
+
+## #66, the senate rolls — merged
+
+The 2002-03 Congress roll: 29 members, six committee chairs, five administrative
+officers, two mid-year successions, eleven meetings mirrored.
+
+Because the minutes travel with the claims this was fully checkable, so I checked all
+29 rather than sampling. **29 of 29 confirmed** against an explicit swearing-in line.
+Seven failed a first pass and all seven were OCR damage — the 1 October list renders as
+"Kell y Johnso ll — SW Hall rep". All five officers and all six chairs confirmed; both
+successions near verbatim; three of four membership counts confirmed word for word.
+All eleven PDFs begin `%PDF`, and all eleven item numbers resolve to the date claimed.
+Chairs are correctly filed as chairs and not as officers, which is the trap that killed
+the missing-presidents sweep. No surname-only matches; Bob Bell here and Robert Bell on
+the 2014-15 Judicial Council are twelve years apart and correctly kept apart.
+
+Two hedges added: the minutes never say Charlie Walker stepped down, only that new
+co-chairs were appointed; and Scott Broadbent's forename is genuinely illegible in the
+scan, so it now carries the same spelling hedge the other four poor-scan names got.
+
+Four members carry a colour detail cited to their swearing-in meeting rather than the
+meeting that records it. I did **not** cut them — they will be in the twelve meetings
+read but not mirrored, and a miss in what is held locally is never grounds for cutting.
+Flagged for the routine instead.
+
+## Still open
+
+- Three over-length quotes remain on main, all pre-existing and outside tonight's
+  diffs: Donald Smith 1993-94, Cole McDowell and James Line 2014-15. Worth a pass.
+- The 10 September 2002 membership count is the one figure in the new senate note
+  nobody can check; that meeting is not mirrored.
+- Nick Todd's two records still merge on the person page by exact name, as last pass
+  noted. Tonight's 2002-03 roll adds a third Todd record, so the decision is more
+  pressing, not less.
+
+## Where the archive stands
+
+61 academic years. 2,025 dated and sourced entries. 982 senate member records and
+1,081 executive and senate officer records — up 29 and 11 tonight. 344 records carry a
+written profile, up 11. 279 document files held, up 11. 1,649 pages built, 1,565 of
+them person pages. `build.py`, `check_data.py` and `check_contrib.py` all clean on the
+merged head; `check_duplicates.py` reports the same six long-judged pairs, untouched by
+either merge, since neither added an event.
