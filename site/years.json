@@ -13348,21 +13348,19 @@
        "label": "ASG minutes, 17 November 1987 and 1 March 1988",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/62/"
       },
-      "sources": [
-       {
-        "label": "ASG minutes, 17 November 1987 and 1 March 1988",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/62/"
-       },
-       {
-        "label": "Herald 62:53, 14 Apr 1987",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5912",
-        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6937&context=dlsc_ua_records"
-       }
-      ],
       "profile": [
        "Danielle Williamson served as Secretary of the Associated Student Government in 1987-88, under President Timothy Todd. The Herald's coverage of the spring 1987 campaign that put that year's officers in place, in its issue of 14 April, carried a letter backing her under the headline \"Danielle Williamson Best\" — the same issue in which Kim Summers wrote in support of Todd's re-election as president.",
        "As Secretary, Williamson signed Congress's minutes through the year, including those recording the opening of impeachment proceedings against Administrative Vice President Bill Schilling in November 1987. Week after week she read out the same short list of vacancies the body could not fill: the senior class vice-presidency, two off-campus representative seats, and the Business and Potter college alternate seats."
-      ]
+      ],
+      "src2": {
+       "label": "ASG minutes, 17 November 1987 and 1 March 1988",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/62/"
+      },
+      "src3": {
+       "label": "Herald 62:53, 14 Apr 1987",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5912",
+       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6937&context=dlsc_ua_records"
+      }
      },
      {
       "office": "Administrative Vice-President",
@@ -13372,52 +13370,66 @@
        "label": "ASG minutes, 22 September and 17 November 1987, 1 March 1988",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64/"
       },
-      "sources": [
-       {
-        "label": "ASG minutes, 22 September and 17 November 1987, 1 March 1988",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64/"
-       },
-       {
-        "label": "Herald 62:29, 11 Dec 1986",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5825"
-       },
-       {
-        "label": "Herald 61:48, 20 Mar 1986",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6806"
-       },
-       {
-        "label": "Herald 61:51, 1 Apr 1986",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6821"
-       },
-       {
-        "label": "Herald 61:58, 24 Apr 1986",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6814"
-       },
-       {
-        "label": "Herald 62:53, 14 Apr 1987",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5912",
-        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6937&context=dlsc_ua_records"
-       },
-       {
-        "label": "Herald 62:55, 21 Apr 1987",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5876"
-       },
-       {
-        "label": "Herald 63:46, 17 Mar 1988, \"Associated Student Government Officer Arrested\"",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7491"
-       },
-       {
-        "label": "Herald 63:50, 31 Mar 1988",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7487",
-        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=8497&context=dlsc_ua_records"
-       }
-      ],
       "profile": [
        "Before he joined the cabinet, Bill Schilling was already the most prolific bill-writer in Congress: a Herald feature by Lisa Jessie on 11 December 1986 named him the one Associated Student Government member who wrote most of Congress's bills, the same season he chaired the Legislative Research Committee. He wrote to the Herald under his own name that year too — a column headlined \"Associated Student Government Has New Ideas\" in March 1986, a letter backing Tim Todd's first run for the presidency the following month, and a separate letter, \"College Heights Herald Abuses Rights.\"",
        "Schilling ran for the Interhall Council presidency in the spring 1987 elections; the Herald covered his signage under the headline \"Candidate Using Big Red on Signs,\" and on 21 April 1987 reported that Delwin Cheek had defeated him for that council's presidency. He was then named Administrative Vice President of the Associated Student Government for 1987-88 under re-elected President Todd, and in that office reported to Congress on the Bowling Green City Traffic Commission and on a rise of more than 20 percent in campus crime, and handed down to Congress an official Judicial Council record to be implemented at the next election.",
        "His term turned contentious that fall. The Herald reported on 27 October 1987 that he had lost his Congress seat after the Residence Hall Association refused him a leave of absence — the report did not say which seat — and three weeks later, on 19 November, Congress opened an impeachment process against him. The proceeding did not go the distance: the Herald reported on 3 December that the impeachment request had been dropped, and the following week's issue described Schilling placed under the eye of a new watchdog committee, alongside a page of reader letters divided between defending the outcome and, in one case from Van C. Hodge Jr., insisting the issue was not closed.",
        "Schilling asked Congress for a leave of absence on 25 February 1988, and at the meeting of 1 March told the body he had been cleared by the university, that he would run for the ASG presidency, and that he would take leave from his office until after the election. A Herald item two and a half weeks later, on 17 March, reported the arrest of an Associated Student Government officer under the name William Byron Shilling; the surviving index preserves no charge. The Herald of 31 March 1988, the same issue that reported Shannon Ragland and Scott Whitehouse winning the presidential primary, carried the outcome: \"Charge Against William Schilling Dismissed.\" He was not among the two candidates who survived that primary."
-      ]
+      ],
+      "src2": {
+       "label": "ASG minutes, 22 September and 17 November 1987, 1 March 1988",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64/"
+      },
+      "src3": {
+       "label": "Herald 62:29, 11 Dec 1986",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5825"
+      },
+      "src4": {
+       "label": "Herald 61:48, 20 Mar 1986",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6806"
+      },
+      "src5": {
+       "label": "Herald 61:51, 1 Apr 1986",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6821"
+      },
+      "src6": {
+       "label": "Herald 61:58, 24 Apr 1986",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6814"
+      },
+      "src7": {
+       "label": "Herald 62:53, 14 Apr 1987",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5912",
+       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6937&context=dlsc_ua_records"
+      },
+      "src8": {
+       "label": "Herald 62:55, 21 Apr 1987",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5876"
+      },
+      "src9": {
+       "label": "Herald 63:46, 17 Mar 1988, \"Associated Student Government Officer Arrested\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7491"
+      },
+      "src10": {
+       "label": "Herald 63:50, 31 Mar 1988",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7487",
+       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=8497&context=dlsc_ua_records"
+      },
+      "src11": {
+       "label": "Herald 63:16, 27 Oct 1987, \"Bill Schilling Out After Residence Hall Association Denies Leave\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6877"
+      },
+      "src12": {
+       "label": "Herald 63:23, 19 Nov 1987, on the opening of the impeachment process",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7315"
+      },
+      "src13": {
+       "label": "Herald 63:26, 3 Dec 1987, \"Student Government Association Drops Request for Impeachment\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7312"
+      },
+      "src14": {
+       "label": "Herald 63:28, 10 Dec 1987, on the watchdog committee and the reader letters",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7310"
+      }
      },
      {
       "office": "Public Relations Vice-President",
@@ -13427,29 +13439,27 @@
        "label": "ASG minutes, 22 September 1987 and 15 March 1988",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64/"
       },
-      "sources": [
-       {
-        "label": "ASG minutes, 22 September 1987 and 15 March 1988",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64/"
-       },
-       {
-        "label": "Herald 61:56, 17 Apr 1986",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6816"
-       },
-       {
-        "label": "Herald 61:57, 22 Apr 1986",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6815"
-       },
-       {
-        "label": "Herald 62:53, 14 Apr 1987",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5912",
-        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6937&context=dlsc_ua_records"
-       }
-      ],
       "profile": [
        "A Kimberly Summers wrote twice to the Herald's letters pages in April 1986, over a year before Kim Summers's confirmed 1987-88 term in the ASG cabinet: \"Appreciates Help – Associated Student Government\" ran on 17 April, and \"Commends Job Well Done – Associated Student Government\" followed five days later. The identification rests on the matching name and the ASG subject matter, not on a source that states the two are the same; it is recorded here as likely, not certain. In April 1987 Kim Summers wrote in support of Tim Todd's re-election as president, in the same issue that carried Danielle Williamson's endorsement and coverage of Bill Schilling's Interhall Council campaign.",
        "Summers served as Public Relations Vice-President of the Associated Student Government in 1987-88, under President Todd, after serving as vice-chair of the Faculty Relations Committee the year before. She ran that September's Weekend in the Woods retreat, introduced table tents and a newsletter as new publicity tools, and in March 1988 handed out the year's committee certificates."
-      ]
+      ],
+      "src2": {
+       "label": "ASG minutes, 22 September 1987 and 15 March 1988",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64/"
+      },
+      "src3": {
+       "label": "Herald 61:56, 17 Apr 1986",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6816"
+      },
+      "src4": {
+       "label": "Herald 61:57, 22 Apr 1986",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6815"
+      },
+      "src5": {
+       "label": "Herald 62:53, 14 Apr 1987",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5912",
+       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6937&context=dlsc_ua_records"
+      }
      }
     ],
     "senate": {
@@ -13997,6 +14007,18 @@
       "src": {
        "label": "ASG minutes, 27 September 1988 and 31 January 1989",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/55/"
+      },
+      "profile": [
+       "Amos Gott served as public relations vice president of the Associated Student Government for 1988-89. He announced the Vote America registration drive for Downing University Center on 4, 5 and 6 October 1988, and an ASG hotline running every Wednesday afternoon from 1 to 4, which he told Congress on 25 October would open the next day. He also wrote pieces for the Herald that year explaining the organization to students, including \"Understand Associated Student Government\" that November. He ran for the ASG presidency the following spring and won, taking office for 1989-90."
+      ],
+      "src3": {
+       "label": "ASG minutes, 25 October 1988",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/95",
+       "file": "1988-89-asg-minutes-1988-10-25.pdf"
+      },
+      "src2": {
+       "label": "Herald, 10 Nov 1988, \"Understand Associated Student Government\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5975"
       }
      },
      {
@@ -14995,7 +15017,10 @@
       "src": {
        "label": "ASG Minutes, 29 Aug 1989",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/78"
-      }
+      },
+      "profile": [
+       "Michael Colvin served as administrative vice president of the Associated Student Government for 1989-90, under president Amos Gott. At the first Congress meeting of the year, 29 August 1989, he walked members through the congressional notebook and how to write a resolution, set out the attendance policy, and raised a resolution for a stop light at the corner of Regents Avenue and Normal Drive. He was elected president for 1990-91, succeeding Gott."
+      ]
      },
      {
       "office": "Public Relations Vice-President",
@@ -15799,7 +15824,10 @@
       "src": {
        "label": "Herald 66:33, 17 Jan 1991, \"Two Associated Student Government Officers Step Down\"",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7730"
-      }
+      },
+      "profile": [
+       "After his term as ASG president ended in 1990, Amos Gott returned to Congress as chairman of the Judicial Council. He resigned in January 1991, when a new part-time university staff job made him ineligible for office under the ASG constitution. The Herald reported his departure, alongside that of public relations vice president Van Hodge, on 17 January 1991 under the headline \"Two Associated Student Government Officers Step Down.\""
+      ]
      },
      {
       "office": "Public Relations Vice President",
@@ -16908,6 +16936,17 @@
       "src": {
        "label": "ASG Minutes, 3 Sep 1991, 17 Sep 1991 and 21 Jan 1992",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/495"
+      },
+      "profile": [
+       "Joe Rains served as treasurer of the Associated Student Government for 1991-92, under president Heather Falmlen. He presented the 1991-92 budget for acceptance at the first Congress meeting on 3 September 1991, reported a running budget summary of $794.98 a fortnight later, and ran the organizational aid process that year, setting a 14 February 1992 application deadline with interviews set for 17 to 28 February. He was elected president for 1992-93, running against Mistianna Holcomb in the April 1992 vote; the same election carried a referendum on renaming the Associated Student Government the Student Government Association, and the organization went by the new name from that year."
+      ],
+      "src2": {
+       "label": "Herald, 16 Apr 1992, \"Joe Rains Wins Big in Associated Student Government Election\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7705"
+      },
+      "src3": {
+       "label": "Herald 67:51, 9 Apr 1992, on the Holcomb-Rains race and the name-change referendum",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7707"
       }
      },
      {
@@ -20730,22 +20769,31 @@
       ]
      },
      {
-      "office": "Officer (title not specified in the archive)",
-      "name": "Kristen Miller",
-      "note": "Succeeded Higdon as president in 1996-97; Higdon publicly endorsed her in the spring 1996 election.",
-      "src": {
-       "label": "Herald 71:38, 13 Feb 1996",
-       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2959",
-       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3968&context=dlsc_ua_records"
-      }
-     },
-     {
       "office": "Public Relations Director",
       "name": "Kristen Miller",
       "note": "A correction: the archive currently records her for this year as an officer whose title is unknown. She was elected Director of Public Relations on 18 April 1995. She introduced seating place cards for the chamber, proposed a Congress dress code that the body then voted down, and took the Western flag designs to Fred Hensley to pass on to President Meredith. Some minutes spell the forename Kristin.",
       "src": {
        "label": "SGA Meeting Minutes, 29 Aug 1995",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/131"
+      },
+      "profile": [
+       "Kristen Miller served as director of public relations for the Student Government Association in 1995-96. She explained the new place cards for the Congress chamber at the first meeting of the year on 29 August 1995 and proposed a dress code for Congress members, which the body discussed and voted down the following week. Through the winter she pushed the Western flag campaign her committee had launched that October, and on 5 March 1996 reported that Fred Hensley had taken SGA's flag designs to President Thomas Meredith. She ran for the SGA presidency that spring, with outgoing president Tara Higdon endorsing her in the Herald on 16 April, won, and took office for 1996-97. Some minutes and one Herald headline spell the forename Kristin; the spelling here follows the archive's other records and is not settled."
+      ],
+      "src2": {
+       "label": "Herald 71:59, 11 Apr 1996, \"Kristen Miller Focuses on Experience in Student Government Association\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2990"
+      },
+      "src3": {
+       "label": "SGA minutes, 5 September 1995, on the dress-code vote",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/130"
+      },
+      "src4": {
+       "label": "SGA minutes, 5 March 1996, on the Western flag designs",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/154"
+      },
+      "src5": {
+       "label": "Herald 71:53, 16 Apr 1996, Tara Higdon, \"Vote for Kristin Miller\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2989"
       }
      }
     ],
@@ -26425,6 +26473,13 @@
       "src": {
        "label": "WKU news release, 14 Apr 2000 (archived)",
        "url": "http://web.archive.org/web/20000902095228/http://www.wku.edu/news/releases/april/sga.html"
+      },
+      "profile": [
+       "Leslie Bedo served as vice president of the Student Government Association for 2000-01, elected on the ticket with president Cassie Martin. She went on to run for SGA president herself the following spring alongside vice-presidential candidate Jamie Sears; the Herald reported on 5 April 2001 that the two were preparing to move into the executive offices, and she took office as president for 2001-02."
+      ],
+      "src2": {
+       "label": "Herald, 5 Apr 2001, \"Leslie Bedo & Jamie Sears Prepare for Executive Offices\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9088"
       }
      },
      {
@@ -26456,7 +26511,10 @@
        "label": "SGA Meeting Minutes, January 16, 2001",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586",
        "file": "2000-01-minutes-2001-01-16.pdf"
-      }
+      },
+      "profile": [
+       "Mark Rawlings was appointed vice president of finance of the Student Government Association in January 2001, one of four candidates interviewed for the vacancy. President Cassie Martin appointed him and Congress confirmed and swore him in on 16 January 2001. He moved to vice president of public relations the following year, elected to that post that April."
+      ]
      },
      {
       "office": "Vice President of Administration",
@@ -27369,6 +27427,13 @@
       "src": {
        "label": "SGA Meeting Minutes, August 28, 2001",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/587"
+      },
+      "profile": [
+       "Jamie Sears served as executive vice president of the Student Government Association for 2001-02, alongside president Leslie Bedo; the Herald reported the pair preparing to move into the executive offices on 5 April 2001. She was named in the officer-report roll call of every Congress meeting checked across the year, from 28 August 2001 through 9 April 2002. She was elected SGA president the following spring and took office for 2002-03."
+      ],
+      "src2": {
+       "label": "Herald, 5 Apr 2001, \"Leslie Bedo & Jamie Sears Prepare for Executive Offices\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9088"
       }
      },
      {
@@ -27377,6 +27442,13 @@
       "src": {
        "label": "SGA Meeting Minutes, August 28, 2001",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/587"
+      },
+      "profile": [
+       "Aaron Spencer served as vice president of finance of the Student Government Association for 2001-02. The Herald reported him and fellow incoming vice president Jamil Sewell preparing for their new executive offices on 10 April 2001, and he was named in the officer roll call at the 28 August 2001 Congress meeting that opened the year."
+      ],
+      "src2": {
+       "label": "Herald, 10 Apr 2001, \"New Student Government Association Vice Presidents Prepare for Next Semester\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9089"
       }
      },
      {
@@ -27385,6 +27457,13 @@
       "src": {
        "label": "SGA Meeting Minutes, August 28, 2001",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/587"
+      },
+      "profile": [
+       "Jamil Sewell served as vice president of administration of the Student Government Association for 2001-02. The Herald reported him and fellow incoming vice president Aaron Spencer preparing for their new executive offices on 10 April 2001, and he was named in the officer roll call at the 28 August 2001 Congress meeting that opened the year."
+      ],
+      "src2": {
+       "label": "Herald, 10 Apr 2001, \"New Student Government Association Vice Presidents Prepare for Next Semester\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9089"
       }
      },
      {
@@ -27394,6 +27473,13 @@
       "src": {
        "label": "SGA Meeting Minutes, August 28, 2001",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/587"
+      },
+      "profile": [
+       "Mark Rawlings was vice president of public relations of the Student Government Association for 2001-02. He stood for the post against Holly Skidmore in the April 2001 election; the Herald previewed the contest on 3 April, and the minutes of 28 August 2001 record him giving the office's report at the first Congress meeting of the year. No report of the result itself has been found, so how the vote went is not established here. He had spent the previous year as vice president of finance, appointed to that post in January 2001 after Congress confirmed him."
+      ],
+      "src2": {
+       "label": "Herald, 3 Apr 2001, \"Mark Rawlings, Holly Skidmore Square Off for Student Government Association Public Relations Position\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9087"
       }
      }
     ]
@@ -27811,6 +27897,13 @@
       "src": {
        "label": "Herald, 4 Mar 2003",
        "url": "https://wkuherald.com/57037/news/students-to-vote-on-proposal-calling-for-a-student-fee-for-funding-campus-radio-station/"
+      },
+      "profile": [
+       "John Bradley served as executive vice president of the Student Government Association for 2002-03, under president Jamie Sears. He championed the WWHR campus-radio student fee referendum that Congress put before students, which the Herald covered on 4 March 2003. He ran unopposed for SGA president that spring, the Herald reported on 20 March 2003, and took office for 2003-04."
+      ],
+      "src2": {
+       "label": "Herald, 20 Mar 2003, \"John Bradley Only Candidate for President\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9223"
       }
      },
      {
@@ -29814,6 +29907,22 @@
       "src": {
        "label": "SGA Senate minutes, 5 Sep 2006, TopSCHOLAR",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+      },
+      "profile": [
+       "Jeanne Johnson was one of the candidates the Herald introduced in its 15 March 2005 special election edition ahead of that spring's SGA vote. By December 2005 she had risen to speaker of the senate, elected by her fellow senators at the meeting of 8 December that year, and in April 2006 she and Amanda Allen ran against each other in that spring's election, under a Herald headline arguing \"Experience Helps Jeanne Johnson.\"",
+       "She took office as executive vice president for 2006-07 and gave the office's report at the season-opening senate meeting on 5 September 2006. Her seat was vacant by the 5 December 2006 meeting because she had moved up to the presidency after Rob Watkins's resignation; the fuller account of that succession is in her presidential profile for 2006-07."
+      ],
+      "src2": {
+       "label": "Herald 80:47, 15 Mar 2005 (special SGA election edition)",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8961"
+      },
+      "src3": {
+       "label": "Herald 81:24, 8 Dec 2005 - Johnson elected speaker of the senate",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3668"
+      },
+      "src4": {
+       "label": "Herald, 6 Apr 2006 - \"Experience Helps Jeanne Johnson\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3694"
       }
      },
      {
@@ -29876,7 +29985,10 @@
       "src": {
        "label": "SGA Senate minutes, 28 Nov 2006, TopSCHOLAR",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/717"
-      }
+      },
+      "profile": [
+       "Johnson was already SGA's sitting executive vice president when she presided over the senate as president pro tempore at the 28 November 2006 meeting, the session at which Rob Watkins's resignation was read into the record. She was sworn in as president the following week, at the Winter Banquet on 5 December 2006."
+      ]
      }
     ],
     "senate": {
@@ -30311,6 +30423,21 @@
       "src": {
        "label": "Herald, 1 Nov 2007 (Wayback)",
        "url": "https://web.archive.org/web/20071106035708/http://www.wkuherald.com/home/news/2007/11/01/News/Athletics.Director.Consults.Sga.On.Increasing.Football.Attendance-3071116.shtml"
+      },
+      "profile": [
+       "Johnathon Boles served as executive vice president for 2007-08. He sat on a faculty advisory committee for athletics and helped arrange a November 2007 consultation with athletics director Wood Selig on increasing football attendance. In March 2008 he ran to succeed Jeanne Johnson as president, facing Tedde Harden in a Herald-hosted candidate forum on 25 March, and published campaign op-eds on 27 March and 3 April arguing that a diverse student body needed \"one voice\" through SGA and asking students to use their vote as \"an instrument for your voice.\" He won that election and served as president for 2008-09, detailed in his own presidential profile."
+      ],
+      "src2": {
+       "label": "Herald, 25 Mar 2008 - candidates square off",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6706"
+      },
+      "src3": {
+       "label": "Herald, 27 Mar 2008 - \"A Diverse Study Body Needs One Voice Through Student Government Association\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6705"
+      },
+      "src4": {
+       "label": "Herald, 3 Apr 2008 - \"An Instrument for Your Voice\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6681"
       }
      },
      {
@@ -30349,6 +30476,17 @@
       "src": {
        "label": "SGA Senate minutes, 4 Sep 2007, TopSCHOLAR",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/740"
+      },
+      "profile": [
+       "Reagan Gilley was director of academic and student affairs for 2007-08. He authored Resolution 07-07-S, which named SGA's study abroad scholarship, passed at the year's first senate meeting on 4 September 2007, and that year he also worked toward opening the university library for 24-hour hours and on the study abroad and film scholarships. In the spring 2008 campaign he ran for administrative vice president against Skylar Johnson, and co-wrote a 27 March Herald op-ed with presidential candidate Theodore Harden and executive vice-presidential candidate Kevin Smiley arguing that student representation needed a change. Harden was running against Johnathon Boles, so the three op-ed signatories stood as a slate opposed to Boles; the same issue carried a report on a Red Towel Party seeking to energize SGA, and in April a complaint was filed against that party, but the surviving index does not state which candidates belonged to it. Gilley won his race and served as administrative vice president for 2008-09."
+      ],
+      "src2": {
+       "label": "Herald, 27 Mar 2008 - \"Student Representation Requires Student Voice (and a Change)\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6705"
+      },
+      "src3": {
+       "label": "Herald, 8 Apr 2008 - \"Skylar Jordan Files Complaint Against Red Towel Party\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6703"
       }
      },
      {
@@ -30580,7 +30718,7 @@
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Plaque plate reads \"2009\" and had been filed under 2009-10, overlapping Kevin Smiley there; moved to 2008-09. Shelton was executive vice president on Johnathon Boles's Red Towel Party ticket and became president - but not student regent - when Boles resigned on 30 Jan 2009, finishing out his 2008-09 term. Kevin Smiley won the next regular election on 16 April 2009 for the 2009-10 term, so Shelton's presidency did not extend into 2009-10. Confirmed: the Herald of April 2009 describes her as the sitting Student Government Association president, having taken office after Johnathon Boles resigned, and previously senator, student affairs chair, speaker of the senate and executive vice president. She did not take the seat on the Board of Regents with the presidency: that seat had been vacated by Boles's resignation and was filled separately by Reagan Gilley in a special election in February 2009.",
+     "note": "Plaque plate reads \"2009\" and had been filed under 2009-10, overlapping Kevin Smiley there; moved to 2008-09. Shelton was executive vice president, elected in spring 2008 alongside Johnathon Boles, and became president - but not student regent - when Boles resigned on 30 Jan 2009, finishing out his 2008-09 term. Kevin Smiley won the next regular election on 16 April 2009 for the 2009-10 term, so Shelton's presidency did not extend into 2009-10. Confirmed: the Herald of April 2009 describes her as the sitting Student Government Association president, having taken office after Johnathon Boles resigned, and previously senator, student affairs chair, speaker of the senate and executive vice president. She did not take the seat on the Board of Regents with the presidency: that seat had been vacated by Boles's resignation and was filled separately by Reagan Gilley in a special election in February 2009.",
      "sources": [
       {
        "label": "Herald, 12 Feb 2009",
@@ -30854,6 +30992,17 @@
       "src": {
        "label": "SGA Senate minutes, 26 Aug 2008, TopSCHOLAR",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/798"
+      },
+      "profile": [
+       "Kayla Shelton ran for executive vice president alongside presidential candidate Johnathon Boles in the spring 2008 election, running against Kevin Smiley, and took office for 2008-09. She reported to the senate's first meeting of the year, on 26 August 2008, on the fall retreat she was organizing, and represented SGA that year on the Academic Quality Committee and the parking ticket appeals board. When Boles resigned the presidency in January 2009, Shelton succeeded him as president for the balance of the term - the fuller account is in her presidential profile for 2008-09 - and in April 2009 she was a candidate in the election for a full term as president, which Kevin Smiley won."
+      ],
+      "src2": {
+       "label": "Herald, 27 Mar 2008 - Red Towel Party executive vice president candidate",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6705"
+      },
+      "src3": {
+       "label": "Herald, 14 Apr 2009 - presidential candidates, Kayla Shelton and Kevin Smiley",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6748"
       }
      },
      {
@@ -30863,7 +31012,10 @@
       "src": {
        "label": "SGA Senate minutes, 26 Aug 2008, TopSCHOLAR",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/798"
-      }
+      },
+      "profile": [
+       "Reagan Gilley served as administrative vice president for 2008-09, alongside Executive Vice President Kayla Shelton, though the two had run in the spring on opposing slates. He presented the year's budget to the senate line by line at its first meeting, 26 August 2008 - $8,000 for two student workers, $9,050 for executive stipends, $1,000 for travel and $5,000 for senate programming - and told senators the budget was now in their hands. He represented SGA that year on the Budget Council, Faculty Welfare and the University Calendar Committee. When President Johnathon Boles resigned in January 2009, Gilley won the special election for the vacant student regent seat that February; his time on the Board of Regents is recorded in his separate regent profile for 2008-09."
+      ]
      },
      {
       "office": "Chief of Staff",
@@ -31899,7 +32051,10 @@
       "src": {
        "label": "Herald, 25 Mar 2011",
        "url": "https://wkuherald.com/52572/news/sga-executive-candidates-explain-platforms/"
-      }
+      },
+      "profile": [
+       "Billy Stephens joined SGA in the spring of 2009 and worked on organizational aid before being appointed director of academic and student affairs in the fall of 2010. He ran for SGA president in the spring 2011 election while holding the post, one of the candidates who presented platforms at a public debate in Downing University Center on 23 March 2011. His central proposal was a pre-finals \"Dead Day\" with classes canceled, which he called unfair to students left short of study time, noting other schools already did it. He also pledged to fix SGA's Provide-a-Ride service, which he said had been less dependable that year, by negotiating a better contract for a fixed route or more buses, and to improve SGA's public relations to raise awareness of the organization. He won the presidency the following month, detailed in his profile for 2011-12."
+      ]
      },
      {
       "office": "Director of Information Technology",
@@ -31908,7 +32063,10 @@
       "src": {
        "label": "Herald, 15 Feb 2011",
        "url": "https://wkuherald.com/52711/news/sga-lays-groundwork-for-off-campus-housing-site/"
-      }
+      },
+      "profile": [
+       "Cory Dodds, then a sophomore, was SGA's director of information technology in 2010-11. In February 2011 the Herald reported he would build and maintain an off-campus housing listings website in-house using open-source software, after Executive Vice President Kendrick Bryan said SGA lacked a \"one-stop shop\" for such listings. An earlier attempt to build the site through an outside vendor, considering options including a company called Off Campus Partners, had stalled over cost and fit for the Bowling Green market, Dodds said. He aimed to have the site functional by the end of April 2011 and said he planned to maintain it himself until he graduated. He went on to be elected SGA president for 2012-13, detailed in his own presidential profile."
+      ]
      },
      {
       "office": "Director of Public Relations",
@@ -33035,6 +33193,13 @@
       "src": {
        "label": "Herald, 30 Mar 2012",
        "url": "https://wkuherald.com/48077/news/dodds-elected-sga-president/"
+      },
+      "profile": [
+       "Keyana Boka, a Bowling Green sophomore, was elected executive vice president uncontested alongside presidential candidate Cory Dodds in the March 2012 SGA election. She was sworn into office at SGA's end-of-year banquet on 8 May 2012, succeeding executive vice president Kendrick Bryan. She said she had big shoes to fill after Bryan's two years in the office. She went on to be elected SGA president for 2013-14, where her name appeared in that year's coverage spelled \"Keyanna\"; the spelling is unverified between the two forms."
+      ],
+      "src2": {
+       "label": "Herald, 9 May 2012 - \"New SGA officers sworn in at banquet\"",
+       "url": "https://wkuherald.com/47109/news/new-sga-officers-sworn-in-at-banquet/"
       }
      },
      {
@@ -33644,6 +33809,21 @@
       "src": {
        "label": "Herald, 4 Apr 2013",
        "url": "https://wkuherald.com/43933/news/boka-seay-and-reeves-elected-as-sgas-executive-officers-for-the-upcoming-year/"
+      },
+      "profile": [
+       "Nicki Seay was appointed SGA's parliamentarian in February 2012 and later served as legislative research chair in 2012-13 before she was elected administrative vice president for 2013-14, alongside presidential candidate Keyana Boka and executive vice president Mark Reeves, in the April 2013 election. By the time she ran unopposed for president in April 2014, the Herald reported she had been on SGA for three years and wanted to use Adobe Connect to broadcast SGA meetings to students who could not attend in person. Asked at an executive candidates' debate on 2 April 2014 whether she could balance the presidency with a double major, she said she planned to take 12 hours with no Friday classes that fall. She won the presidency in that election; the year opened under \"Nicki Seay\" before her name changed partway through to \"Nicki Taylor,\" and the fuller account is in her presidential profile for 2014-15."
+      ],
+      "src2": {
+       "label": "Herald, 28 Feb 2012 - \"Student Government Association Appoints Parliamentarian\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6599"
+      },
+      "src3": {
+       "label": "Herald, 3 Apr 2014 - \"SGA executive candidates debate, present\"",
+       "url": "https://wkuherald.com/40006/news/sga-executive-candidates-debate-present/"
+      },
+      "src4": {
+       "label": "Herald, 9 Apr 2014 - \"SGA campaigns are slowly ending\"",
+       "url": "https://wkuherald.com/40403/news/sga-campaigns-are-slowly-ending/"
       }
      },
      {
