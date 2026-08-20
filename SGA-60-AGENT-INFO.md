@@ -328,10 +328,21 @@ git rev-list --left-right --count origin/main...origin/<branch>
    in `.research/officers-checked.json` and are worth rechecking the day either
    host opens. The other 68 were checked against a source that loaded fine and
    simply did not say what was claimed; those are disproven, not pending.
-2. **Twenty-six sets of 1996-97 minutes are mirrored into `data/documents/` and
-   referenced by nothing** — no document entry, no citation, no rendering path.
-   The files are already local, so this needs no network at all: read each one and
-   write it a title and a summary. It is the cheapest real work on this list.
+   **Re-tested 20 August ~09:00 UTC: `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+   answered HTTP 200 on a plain request** (no special headers needed this time),
+   while `web.archive.org` was still refused outright (connection timeout). The
+   WAF challenge on `viewcontent.cgi` is intermittent, not permanent — see §8.1.
+   The 21 "source unreachable" candidates that cited a digitalcommons PDF are
+   worth rechecking now; the ones that cited Wayback still are not. Note that
+   `research-senate` (PR #61, unmerged as of this writing) has separately given
+   2001-02 its first recorded cabinet from that year's minutes — check it before
+   redoing that year.
+2. ~~Twenty-six sets of 1996-97 minutes are mirrored into `data/documents/` and
+   referenced by nothing~~ **Done, 20 August.** All 29 files (27 Congress
+   meetings, 2 Executive Council) now carry a title, a summary, a sourced
+   extract and a TopSCHOLAR link, verified against the PDF text by a separate
+   adversarial pass (22 accepted as drafted, 7 trimmed for overclaiming, 0
+   rejected). Landed on `research-backlog`.
 3. **The rest of the senate rolls.** 912 member records across 35 years is a good
    start on a 61-year record and no more than that. SGA's own minutes are the
    roll, roughly 830 items covering 1969–2008 on TopSCHOLAR, and the method that
