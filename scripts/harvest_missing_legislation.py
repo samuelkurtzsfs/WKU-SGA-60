@@ -62,6 +62,14 @@ def fetch(url, binary=False, referer=None):
 
 
 def session_from_date(iso):
+    """Academic year containing a dated item.
+
+    Beware: TopSCHOLAR gives some items a year and no month, which arrives here
+    as YYYY-01-01 and files a fall document into the *previous* academic year.
+    Twenty-three items came through that way on the first run and had to be
+    refiled by hand off the -F in their own numbers. If the listing date is
+    year-only, read the semester letter out of the title before trusting this.
+    """
     y, m = int(iso[:4]), int(iso[5:7])
     start = y if m >= 8 else y - 1
     return f"{start}-{str(start + 1)[2:]}"

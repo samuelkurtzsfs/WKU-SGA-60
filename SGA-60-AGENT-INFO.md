@@ -429,6 +429,14 @@ git rev-list --left-right --count origin/main...origin/<branch>
    entries at different item IDs) were re-parsed by block and everything with
    a real date and a PDF link is now in the archive.
 
+   One correction from the editorial pass: TopSCHOLAR dates some items to a
+   year with no month, which reached `session_from_date` as 1 January and filed
+   twenty-three fall documents into the previous academic year — among them
+   three bills the archive already carried as September 1991 events on
+   1991-92. They were refiled off the `-F` in their own numbers. A year-only
+   listing date is not enough to place a document; read the semester letter
+   out of the title first.
+
 ### 8.4 Build-side work, which is not research
 
 - **`apply_photo_overlay()` in `build.py` matches `photos.json`'s leaders overlay
