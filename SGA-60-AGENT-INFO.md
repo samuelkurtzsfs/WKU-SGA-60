@@ -366,6 +366,29 @@ git rev-list --left-right --count origin/main...origin/<branch>
    worked is in `scripts/merge_senators.py` and in the 20 August night report:
    mirror the year's minutes locally first, then check every name against the
    primary text with no network requests at all.
+
+   *Checked 20 August (later pass), no names added:* the full Meetings/Minutes
+   listing was pulled live (843 items, 1969-02-13 to 2008-12-08) and mapped to
+   academic year. Six of the eighteen years with no `organization.senate.members`
+   have **zero** minutes items on TopSCHOLAR, not just an unworked query:
+   1966-67, 1967-68 (before the collection starts), 1969-70, 1971-72 (inside the
+   range but genuinely absent, unlike the years either side), and 1999-00, 2004-05
+   (the collection thins after 1998-99 and stops in Dec 2008; these two interior
+   years have nothing between years that do). 1979-80 stays as already recorded
+   above — re-confirmed, nothing new. Talisman substitutes only where
+   `archive.org` holds the year: 1971-72's yearbook was read in full and adds
+   nothing rank-and-file, only the four officers already on record, plus two
+   names sharing an index page reference with no caption identifying a role
+   (not added — a bare index cross-reference is not a source for a role). The
+   other three pre-1971 years have no Talisman on `archive.org` at all. Herald
+   covers 1999-00 and 2004-05 heavily but was not found to print a post-election
+   roster the way minutes do — a name-by-name build from individual bill/story
+   mentions is possible in principle but wants its own careful, verified pass,
+   not a byproduct of this one. Full reasoning and what was actually searched:
+   `.research/senate-rolls-gap-years-2026-08-20.md`. **A future run should not
+   re-search these six years for minutes** — go straight to a Herald sweep for
+   1999-00/2004-05, or leave the four pre-1971 years as a genuine, permanent gap
+   in what TopSCHOLAR has digitised.
 4. **Every Wayback citation in the archive is unverified**, not verified — by
    anybody, at any point in this push, because the host has been refused the whole
    time. Liz Goddard's profile rests entirely on Wayback, as does Stuart
