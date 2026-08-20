@@ -28989,21 +28989,51 @@
       }
      ],
      "committees": [
-      {"name": "Academic Affairs", "chair": "Natalie Croney",
+      {
+       "name": "Academic Affairs",
+       "chair": "Natalie Croney",
        "note": "Named alone in the committee's report by 2 December 2003; sworn in as a committee head on 2 September 2003.",
-       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
-      {"name": "Campus Improvements", "chair": "Shawn Peavie",
+       "src": {
+        "label": "SGA minutes, 2 Dec 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"
+       }
+      },
+      {
+       "name": "Campus Improvements",
+       "chair": "Shawn Peavie",
        "note": "Sworn in as a committee head on 2 September 2003; defended the committee's re-graveling-the-SkyPAC-lot and Adopt-A-Tree legislation that fall.",
-       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
-      {"name": "Legislative Research", "chair": "Robert Watkins",
+       "src": {
+        "label": "SGA minutes, 2 Dec 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"
+       }
+      },
+      {
+       "name": "Legislative Research",
+       "chair": "Robert Watkins",
        "note": "Wrote and defended the new three-branch constitution and bylaws (Bill 03-10-F) as the committee's chair in fall 2003, before his election as speaker of the senate the following April.",
-       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
-      {"name": "Public Relations", "chair": "Brittany Fausey",
+       "src": {
+        "label": "SGA minutes, 2 Dec 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"
+       }
+      },
+      {
+       "name": "Public Relations",
+       "chair": "Brittany Fausey",
        "note": "Sworn in as a committee head on 2 September 2003. Evelina Petkova is named alongside her in the committee's 2 December 2003 report; her specific role is not stated in the minutes.",
-       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
-      {"name": "Student Affairs", "chair": "Katie Dawson",
+       "src": {
+        "label": "SGA minutes, 2 Dec 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"
+       }
+      },
+      {
+       "name": "Student Affairs",
+       "chair": "Katie Dawson",
        "note": "Sworn in as a committee head on 2 September 2003; defended the committee's private-information-security, hooded-sweatshirt and broadband-expansion-fee legislation that year. Tim Howard is named alongside her in the committee's 2 December 2003 report; his specific role is not stated in the minutes.",
-       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}}
+       "src": {
+        "label": "SGA minutes, 2 Dec 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"
+       }
+      }
      ],
      "note": "Congress had 15 seats filled of an unstated total on 2 September 2003, 43 members by 2 December 2003, and 30 members by 13 April 2004; the roster grew over the fall as vacancies were filled."
     }
@@ -41110,6 +41140,18 @@
       "src": {
        "label": "Wayback capture, wku.edu/sga cabinet, 21 Jan 2022",
        "url": "https://web.archive.org/web/20220121032513/https://www.wku.edu/sga/executive/index.php"
+      },
+      "profile": [
+       "Me'Lon Craighead served as executive vice president of SGA for 2021-22, under President Matthew Wininger. At the meeting of 30 November 2021 she nominated Senator Nia Queen Douglas as an alternate restaurant-group committee representative, a nomination the Senate approved by unanimous consent.",
+       "In February 2022 the Senate approved the creation of an iWKU app task force that Craighead had petitioned for, with Craighead to appoint its chair the following week. She was also the named contact officer on Bill 18-22-S, which funded the Diversity and Inclusion scholarship for the Mahurin Honors College membership fee."
+      ],
+      "src2": {
+       "label": "Herald, 1 Dec 2021 - SGA discusses critical race theory legislation",
+       "url": "https://wkuherald.com/62662/news/sga-discusses-critical-race-theory-legislation/"
+      },
+      "src3": {
+       "label": "Herald, 16 Feb 2022 - SGA passes course syllabi clause",
+       "url": "https://wkuherald.com/63926/news/sga-passes-course-syllabi-clause-discusses-new-crosswalks-great-gatsby-formal/"
       }
      },
      {
@@ -41119,6 +41161,14 @@
       "src": {
        "label": "Wayback capture, wku.edu/sga cabinet, 21 Jan 2022",
        "url": "https://web.archive.org/web/20220121032513/https://www.wku.edu/sga/executive/index.php"
+      },
+      "profile": [
+       "Reed Breunig was administrative vice president of SGA for 2021-22. At the second meeting of the 21st Senate on 31 August 2021 he announced that the SGA budget would come up for a confirmation vote the following week.",
+       "Holding the budget, he authored the year's organizational aid bills himself, Bill 2-22-S for $5,350 and Bill 10-22-S for $4,950, and reported the budget as updated at the last meeting of the 21st Senate on 19 April 2022."
+      ],
+      "src2": {
+       "label": "Herald, 1 Sep 2021 - SGA confirms new senators, election codes",
+       "url": "https://wkuherald.com/60500/news/sga-confirms-new-senators-election-codes-during-first-meeting/"
       }
      },
      {
@@ -41128,6 +41178,14 @@
       "src": {
        "label": "WKU SGA, Senate minutes, 31 Aug 2021",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/senate_minutes_8_31_21.docx"
+      },
+      "profile": [
+       "Parker Raybourne was chief of staff of SGA for 2021-22. President Matthew Wininger appointed him at the second meeting of the 21st Senate on 31 August 2021, and the Senate confirmed him by unanimous consent, Chief Justice Holden Schroeder swearing him in with the rest of the cabinet nominees.",
+       "He co-authored Bill 7-21-F, funding SGA polo shirts, with Speaker Tess Welch, and wrote Resolution 6-22-S asking for an SGA clause in course syllabi."
+      ],
+      "src2": {
+       "label": "Herald, 1 Sep 2021 - SGA confirms new senators, election codes",
+       "url": "https://wkuherald.com/60500/news/sga-confirms-new-senators-election-codes-during-first-meeting/"
       }
      },
      {
@@ -41227,6 +41285,18 @@
       "src": {
        "label": "Wayback capture, wku.edu/sga cabinet, 21 Jan 2022",
        "url": "https://web.archive.org/web/20220121032513/https://www.wku.edu/sga/executive/index.php"
+      },
+      "profile": [
+       "Alexis Courtenay was director of public relations for 2021-22, confirmed and sworn in with the rest of the cabinet at the second meeting of the 21st Senate. She co-authored Resolution 2-22-S supporting the Swipe-Out Hunger initiative and was a named contact on the Mental Health Awareness Week funding bill; her surname is spelled \"Courteney\" on Bill 14-22-S and \"Courtenay\" elsewhere.",
+       "In spring 2022 she ran for student body president. In the election announced just after midnight on 20 April 2022 she placed second with 40 percent of the vote, behind Cole Bornefeld's winning ticket at 49 percent and ahead of Olivia Feck at 11 percent."
+      ],
+      "src2": {
+       "label": "Herald, 1 Sep 2021 - SGA confirms new senators, election codes",
+       "url": "https://wkuherald.com/60500/news/sga-confirms-new-senators-election-codes-during-first-meeting/"
+      },
+      "src3": {
+       "label": "Herald, 20 Apr 2022 - SGA election results, Cole Bornefeld wins presidency",
+       "url": "https://wkuherald.com/65821/news/gallery-sga-results-announced-cole-bornefeld-wins-presidency/"
       }
      },
      {
@@ -42154,6 +42224,18 @@
       "src": {
        "label": "Wayback capture, wku.edu/sga cabinet, 4 Feb 2023",
        "url": "https://web.archive.org/web/20230204125153/https://www.wku.edu/sga/executive/index.php"
+      },
+      "profile": [
+       "Garrison Reed was executive vice president of SGA for 2022-23, elected on Cole Bornefeld's ticket in the spring 2022 election alongside administrative vice president Sam Kurtz. He co-authored Bill 6-22-F amending the constitution and Bill 18-22-F funding the Gordon Ford and WKU career-fair scholarships.",
+       "In September 2022 SGA announced that Reed had been appointed the student representative on Kentucky's Council on Postsecondary Education, a term set to end 30 June 2023."
+      ],
+      "src2": {
+       "label": "Herald, 20 Apr 2022 - SGA election results, Cole Bornefeld wins presidency",
+       "url": "https://wkuherald.com/65821/news/gallery-sga-results-announced-cole-bornefeld-wins-presidency/"
+      },
+      "src3": {
+       "label": "Herald, 21 Sep 2022 - SGA fall election results, VP Reed appointed to CPE",
+       "url": "https://wkuherald.com/68255/news/sga-fall-election-results-announced-vp-reed-appointed-to-council-on-postsecondary-education/"
       }
      },
      {
@@ -42181,6 +42263,14 @@
       "src": {
        "label": "Wayback capture, wku.edu/sga cabinet, 4 Feb 2023",
        "url": "https://web.archive.org/web/20230204125153/https://www.wku.edu/sga/executive/index.php"
+      },
+      "profile": [
+       "Lauren Willett was chief of staff of SGA for 2022-23. She authored Bills 25-22-F, 27-23-S and 28-23-S, funding textbook, dental-hygiene, ID Center and Preston Center voucher programs, and reported a 660 percent rise in the use of dental vouchers.",
+       "Bill 28-23-S, passed at a Senate meeting on 31 January 2023, funded free teeth cleanings at the WKU Dental Health Clinic; Willett said it would help both the students needing the cleaning and the dental students completing their coursework."
+      ],
+      "src2": {
+       "label": "Herald, 1 Feb 2023 - SGA passes bills to fund dental clinic, student accessibility",
+       "url": "https://wkuherald.com/70276/news/news-campus-government/student-senate-passes-bill-to-fund-dental-clinic-id-and-preston-center/"
       }
      },
      {
@@ -43385,6 +43475,18 @@
       "src": {
        "label": "Herald - 2023 election results",
        "url": "https://wkuherald.com/71533/news/sga-announces-election-results/"
+      },
+      "profile": [
+       "Annalise Finch was executive vice president of SGA for 2023-24, elected on Sam Kurtz's ticket in the spring 2023 election, which ran unopposed, alongside administrative vice president Salvador Leon.",
+       "In January 2024 she appointed two campus-committee heads, Jaden Marshall to the Graduate Advisory Council committee and Chloe Ralston to the Colonnade General Education committee, both approved by the Senate. She was elected a senior senator in the spring 2024 election, listed as Annie Finch."
+      ],
+      "src2": {
+       "label": "Herald, 31 Jan 2024 - SGA swears in committee heads",
+       "url": "https://wkuherald.com/74527/news/sga-swears-in-committee-heads-discusses-scholarship-opportunities/"
+      },
+      "src3": {
+       "label": "Herald, 17 Apr 2024 - SGA announces spring election results",
+       "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
       }
      },
      {
@@ -43394,6 +43496,18 @@
       "src": {
        "label": "Herald, 9 Feb 2024",
        "url": "https://wkuherald.com/74786/news/sga-administrative-vice-president-salvador-leon-censured-no-further-disciplinary-action/"
+      },
+      "profile": [
+       "Salvador Leon was administrative vice president of SGA for 2023-24, elected on Sam Kurtz's unopposed ticket in spring 2023. A \"Salvador Leon Golib\" had been elected international student senator in the fall 2022 election; the names appear to point to the same person, though the record does not confirm it.",
+       "In February 2024 the executive cabinet filed a formal report to the Judicial Council seeking his censure, alleging that he had spent from the executive project and legislative discretionary budgets before Bill 22-23-S funding a Neurodiversity Acceptance Week had passed the Senate, that he had a promotional graphic posted before the bill passed, and that the premature spending forced the Senate's hand. The Judicial Council held a hearing on 7 February 2024 and unanimously voted to censure him, with no further disciplinary action."
+      ],
+      "src2": {
+       "label": "Herald, 21 Sep 2022 - SGA fall election results, VP Reed appointed to CPE",
+       "url": "https://wkuherald.com/68255/news/sga-fall-election-results-announced-vp-reed-appointed-to-council-on-postsecondary-education/"
+      },
+      "src3": {
+       "label": "Herald, 6 Feb 2024 - SGA announces censure hearing against AVP Salvador Leon",
+       "url": "https://wkuherald.com/74704/news/sga-announces-censure-hearing-against-administrative-vice-president-salvador-leon/"
       }
      },
      {
@@ -43403,6 +43517,14 @@
       "src": {
        "label": "WKU SGA, Senate minutes, 29 Aug 2023",
        "url": "https://www.wku.edu/sga/2023_2024_legislative/minutes/minutes_8_29_23.docx"
+      },
+      "profile": [
+       "Lyndsey Kelley was elected an at-large senator in the spring 2023 election and served as chief of staff of SGA for 2023-24. She was in the post from the second meeting of the 23rd Senate on 29 August 2023, when she said she wanted to get to know the new senators.",
+       "She ran the ID and Preston Center voucher program and organized the SGA Christmas party held on 28 November 2023. President Sam Kurtz told the Senate on 23 January 2024 that she had stepped down."
+      ],
+      "src2": {
+       "label": "Herald, 19 Apr 2023 - SGA announces election results",
+       "url": "https://wkuherald.com/71533/news/sga-announces-election-results/"
       }
      },
      {
@@ -44458,6 +44580,14 @@
       "src": {
        "label": "Herald, 17 Apr 2024",
        "url": "https://wkuherald.com/76441/news/sga-announces-spring-election-results/"
+      },
+      "profile": [
+       "Donte Reed was executive vice president of SGA for 2024-25, elected on Sam Kurtz's ticket in the spring 2024 election announced just after midnight on 17 April 2024, alongside administrative vice president Ethan Taylor.",
+       "In August 2024 he sat down with the Herald editorial board with the rest of the cabinet, saying SGA tried to use its roughly $100,000 budget in full to help as many students as possible."
+      ],
+      "src2": {
+       "label": "Herald, 27 Aug 2024 - SGA leaders share thoughts with Herald Editorial Board",
+       "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
       }
      },
      {
