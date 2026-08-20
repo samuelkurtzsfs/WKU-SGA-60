@@ -1728,3 +1728,42 @@ portraits and 45 year photographs, 225 documents mirrored, 827 legislation files
 `build.py`, `check_data.py` and `check_contrib.py` all exit clean.
 `check_duplicates.py` reports the same six pairs as every pass before it, all
 genuinely separate events.
+
+## Later the same night
+
+Two more things landed after the report above was written.
+
+**The 1987 sentence was not the profiles run's invention.** It was ours. Tim
+Todd's own 1987-88 profile has been saying on the live site that the surviving
+indexed issues do not record the result of that spring's race, while 1986-87 has
+carried the event reporting it — Herald 62:54, 16 April 1987 — the whole time.
+The profiles routine read the profile, believed it, and wrote the same false
+negative into two new people. Its PR report describes doing exactly that, in good
+faith. Corrected at the source, so the next run inherits the fact rather than the
+error. A wrong sentence in a president's profile does not sit still; it gets cited.
+
+**#56, the senate rolls.** Merged unchanged, and it deserves recording why it was
+easy to trust when tonight's other branches were not. It rests on SGA's own
+minutes, and it mirrored all twenty-one of them into `data/documents/` before
+making a claim. That meant every one of the eighty new members could be checked
+against the primary text without a single network request, on a night when the
+archive's own host was refusing PDFs. Eighty out of eighty are in the minutes.
+The three that did not match on the first pass were OCR damage, and one of them —
+Lindsey Sullivan, which the scan renders "Sufi ivan" — carries a note in the data
+saying so, which is the rule about flagging rather than fixing being followed
+without anyone asking.
+
+Its judgement calls were right too: a Jason Cole sworn in on 26 January was left
+out rather than merged with the Judicial Council justice of the same name, and
+twelve candidates were refused because they already sat on record as officers.
+
+One thing raised there and not acted on: a third of that roll now appears on the
+site described only as having been recorded absent at a roll call. The membership
+is what the entry establishes and the absence is only the evidence for it, so the
+two should probably swap places. Accurate as it stands, which is why it merged.
+
+## Where the record stands, end of night
+
+61 years, 2,025 dated events, 60 people who have been president, 80 more names on
+the 1998-99 Congress roll, 73 leader portraits and 45 year photographs, 246
+documents mirrored, 827 legislation files. All three validators clean.
