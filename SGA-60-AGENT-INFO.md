@@ -324,8 +324,8 @@ git rev-list --left-right --count origin/main...origin/<branch>
    **2003-04 done, 2001-02 already done by `research-senate`, 1979-80 still
    genuinely open — see below.** `viewcontent.cgi` opened again around 12:30
    UTC on 20 August (plain requests, no special headers needed) and stayed open
-   long enough to pull five full SGA minutes PDFs straight from TopSCHOLAR:
-   2 Sep 2003, 10 Sep 2003, 2 Dec 2003, 13 Apr 2004 (all `sga/Meetings/Minutes/`
+   long enough to pull four full SGA minutes PDFs straight from TopSCHOLAR:
+   2 Sep 2003, 16 Sep 2003, 2 Dec 2003, 13 Apr 2004 (all `sga/Meetings/Minutes/`
    items 524, 522, 541, 543), reusing the recipe in §8.1 (this time no special
    headers were even needed). Against that primary text, an adversarial
    verifier trimmed six of thirteen officer claims for overclaiming ("held the
