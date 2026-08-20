@@ -4,7 +4,7 @@ Everything a new Claude Code session needs to pick this project up cold. Read
 `CLAUDE.md` first for the editorial rules; this file is about the machinery, the
 research method, and what is left to do.
 
-Last updated 6 August 2026.
+Last updated 20 August 2026, at the close of the 48-hour research push.
 
 ---
 
@@ -21,21 +21,42 @@ the 60th anniversary. Static site, pure Python, no dependencies at build time.
 
 ### Where the numbers stand
 
-| | |
-|---|---|
-| academic years | 61 (1966-67 → 2026-27) |
-| dated, sourced entries | 1,877 |
-| programmes (things SGA put on) | 633 |
-| people who were president | 60 |
-| people who held the student regent seat | 57 |
-| people recorded in any office | 787 |
-| officer/leader records | 1,045 + 73 |
-| years with a cabinet recorded | 58 of 61 |
-| person profile pages | 787 |
-| total pages built | 867 |
-| legislation PDFs held | 390 |
-| authorship attributions from those PDFs | 918 |
-| complete Herald article index | 11,850 items / 17,601 lines |
+Measured on `main` at commit `117647c`, 20 August 2026, after
+`python3 scripts/build.py`. The right-hand column is where the 48-hour push
+started, on 17 August, so the two can be read against each other.
+
+| | now | 17 Aug |
+|---|---|---|
+| academic years | 61 (1966-67 → 2026-27) | 61 |
+| dated, sourced entries | 2,025 | 1,877 |
+| programmes (things SGA put on) | 633 | 633 |
+| people who were president | 60 | 60 |
+| people who held the student regent seat | 57 | 57 |
+| people recorded in any office | 1,503 | 806 |
+| leader records | 73 | 73 |
+| cabinet and senate **officer** records | 1,064 | 1,045 (6 Aug figure) |
+| senate **member** records | 912, across 35 years | 0 |
+| years with a cabinet recorded | 58 of 61 | 58 |
+| people whose record carries a written profile | 261 (279 records) | 73 |
+| photographs held | 113 files | 61 |
+| — of which leader portraits / year photographs | 73 / 45 entries | — |
+| years with a leader portrait | 61 of 61 | not recorded |
+| years with a year photograph | 32 of 61 | — |
+| documents mirrored and referenced | 246 | 34 |
+| legislation PDFs held | 827 | 390 |
+| authorship attributions from those PDFs | 1,038 | 918 |
+| total pages built | 1,587 | 867 |
+| complete Herald article index | 11,850 items / 17,601 lines | same |
+
+Two of those rows need reading carefully. **People recorded in any office**
+counts the person pages the build actually writes (`site/o/`); the raw name
+strings in `data/years.json` number 1,547, and the gap is `name-aliases.json`
+folding spellings together. The count nearly doubled in the push because the
+senate rolls arrived, and a rank-and-file senator recorded once from a roll call
+is a much thinner record than a profiled officer — do not read 1,503 as 1,503
+biographies. **Written profiles** counts any record carrying a `profile` array,
+leader or officer; every president and every student regent has one, and the
+other 195 are cabinet and senate officers.
 
 **Sam Kurtz is the 58th president** and the 55th student regent. Caden Lucas is
 the 60th and 57th. Sixty years of student government span 61 academic years
@@ -48,11 +69,12 @@ year and 2026-27 is the one now running.
 
 | script | what it does |
 |---|---|
-| `build.py` | The only presentation file. Generates all 867 pages. Runs `check_data.py` at the end and shouts if the record broke its own rules. |
+| `build.py` | The only presentation file. Generates all 1,587 pages. Runs `check_data.py` at the end and shouts if the record broke its own rules. |
 | `check_data.py` | Validates `data/years.json` against the archive's own rules. **Exit 1 on any problem, so it can gate a deploy.** Checks dates, sources, duplicate titles, roles, file integrity by magic bytes, photo overlay attachment, status consistency. |
 | `check_duplicates.py` | Reports events in one year that look like the same event written twice. Reports only; you judge. Same-day bills are genuinely separate events. |
 | `harvest_herald_index.py` | OAI-PMH sweep of the digitised collection. `--all` keeps **everything** into `data/herald-index-full.json`; without it, only student-government lines into `data/herald-index.json`. |
-| `extract_authors.py` | Reads AUTHOR/SPONSOR lines off the 390 legislation PDFs with PyMuPDF. |
+| `extract_authors.py` | Reads AUTHOR/SPONSOR lines off the 827 legislation PDFs with PyMuPDF. Deliberately unmodified: its "read past CONTACT" behaviour is wrong on pre-2011 forms and right on 2016-and-later ones, so the pre-2011 yield is curated by hand instead. |
+| `harvest_topscholar_legislation.py` | Pulls SGA legislation off TopSCHOLAR. Carries a shared cookie jar and sends the item page as `Referer`, which is what makes `viewcontent.cgi` answer at all. |
 | `merge_programs.py` | Merges programmes and plain events into years. Enforces the dating law. |
 | `merge_officers.py` | Merges cabinet and senate officers into `organization`. |
 | `merge_senators.py` | Merges rank-and-file members into `organization.senate.members`. |
@@ -114,8 +136,8 @@ Side files: `data/photos.json` (overlay, keyed by name+year),
 | **Digitised Herald** `digitalcommons.wku.edu/dlsc_ua_records/` | Item pages list every headline in an issue. Thins out after 2004. |
 | **Talisman yearbooks** `archive.org/download/talisman<YEAR>west/talisman<YEAR>west_djvu.txt` | Plain text, **not rate limited, use heavily.** archive.org holds 1971–1981, 1986, 1987. It does **not** hold 1967–1970 or 1982–1985. |
 | **wkuherald.com** | Full text from ~2003. WordPress API: `/wp-json/wp/v2/posts?search=SGA&per_page=100`. |
-| **Wayback** over `wku.edu/Dept/Org/Student/SGA` | Officer pages ~1997–2010. `formersgapres.htm` is SGA's own numbered presidents roster (archived 24 Sep 2001). |
-| **Local legislation** `data/legislation/` | 390 PDFs, 373 print an AUTHOR line. Free. |
+| **Wayback** over `wku.edu/Dept/Org/Student/SGA` | Officer pages ~1997–2010. `formersgapres.htm` is SGA's own numbered presidents roster (archived 24 Sep 2001). **`web.archive.org` is blocked outright from the cloud containers — see §8.1.** |
+| **Local legislation** `data/legislation/` | 827 PDFs, 1,038 curated authorship attributions. Free, and needs no network. |
 
 ### Access gotchas that cost real time
 
@@ -209,249 +231,175 @@ That last line is the argument for never skipping the checker.
 
 ---
 
-## 8. Outstanding work, highest value first
+## 8. Outstanding work
 
-1. **The senate rolls.** `.research/senators-unverified.json` holds 105 names
-   from a run whose checkers died. **Do not merge as-is** — the researcher's own
-   notes disown several. Re-run verification, then `merge_senators.py`. Thousands
-   of members are still unrecorded; the minutes are the roll.
-2. ~~**Three branch histories unverified.**~~ **Done, 18 Aug 2026.** L9 (2010s
-   Senate), J1 (1970s judiciary) and C1 (constitutions 1966–91) were checked —
-   each against its cited sources by an independent checker, then against a
-   *second*, adversarial re-checker, since the first-pass agents hit an
-   environment limit worth recording: `digitalcommons.wku.edu/cgi/viewcontent.cgi`
-   PDF downloads and `web.archive.org` are both hard-blocked from this session
-   (confirmed by two agents working alone, not a burst-traffic 403 — a future
-   run should expect the same and plan to work from digitalcommons *landing
-   pages* — title, date, one-line abstract, or a Herald issue's table of
-   contents — plus `archive.org`, which is open and unrestricted, rather than
-   count on reaching PDF or Wayback text). All three needed correction: wrong
-   constitution section numbers in L9 (traced and fixed against the redline in
-   `data/legislation/2012-13/r5-13-s.pdf`), a miscited Herald issue and an
-   unconfirmable vote tally in J1 (softened), and in C1 a wrong "correction" the
-   first pass itself introduced (reverted), a citation covering two different
-   Herald issues (split), and several claims that turned out to rest only on a
-   citation's title, never on text anyone could actually read (trimmed or
-   flagged rather than published as confirmed). All three are now in
-   `.research/branches-checked.json` and on `branches.html`; the incidental
-   finding that Kelly Thompson's 1 April 1966 letter names Reed Morgan as the
-   constitution committee's chairman is folded into item 6 below.
-   `.research/branches-unverified.json` is now empty.
-3. ~~**235 dated moments** from the branch research, unmerged.~~ **Done, 18
-   August 2026.** All 235 were deduped (many were the same event written up
-   twice by different research passes — the December 1970 constitution vote
-   alone had three versions), checked against their cited sources by a
-   researcher, then re-checked by a second, adversarial pass before
-   publication, in eight batches by era. **138 survived and are now events in
-   `data/years.json`; 97 were cut**, mostly because their only source was
-   `web.archive.org` or `digitalcommons.wku.edu/cgi/viewcontent.cgi`, both
-   hard-blocked in this environment on this run — those remain candidates for
-   a future run with different source access, not disproven claims. A
-   recurring pattern worth remembering: TopSCHOLAR/digitalcommons landing
-   pages usually show only a headline, byline and one-line abstract, never
-   full article text, so most surviving "trim" verdicts kept the bare
-   confirmed headline and cut specific vote tallies, quotes and named detail
-   the landing page couldn't support. **SGA's own minutes and legislation
-   pages on `digitalcommons.wku.edu` and `.doc`/`.pdf` files on `wku.edu/sga`
-   store their date fields as DD-MM-YYYY, not MM-DD-YYYY** — a naive
-   MM-DD-YYYY read of a field like "1-3-1983" would misdate a real event by
-   two months; confirm the convention against a same-collection page with an
-   unambiguous day (>12) before trusting a date field. Along the way, checking
-   turned up and fixed three unrelated existing-entry errors: an unsourced
-   vote tally on the 1999 Morrison/Matheis vice-president-of-finance re-run
-   was cut and a second citation added; a naming conflict between a Herald
-   report and SGA's own 2009 minutes on two resigning senators (Michel/Mitchell
-   Stephens, Emmett/Emmitt) is now stated both ways rather than picked
-   silently; and two 2022/2023 entries that stated a Bowling Green Pride
-   sponsorship and a committee merger as settled fact were corrected after
-   SGA's legislation table showed the Executive Cabinet never passed either
-   one — one of those two also turned out to duplicate another entry
-   word-for-word, which is now removed. `.research/branches-moments.json` is
-   now empty.
-4. ~~**Three years still have no cabinet.**~~ **Attempted, 18 August 2026 — the
-   three years are still empty.** All 92 candidates in `.research/officers-unchecked.json`
-   were checked one at a time against their cited source (paced, 3+ seconds
-   apart on `digitalcommons.wku.edu`). Only 3 survived, and none of them are
-   for 1979-80, 2001-02 or 2003-04 — every candidate for those three years was
-   sourced to either a `digitalcommons.wku.edu/sga/Meetings/Minutes/NNN`
-   landing page (which in this environment shows only a generic one-sentence
-   agenda-topic list — "budget, appointments, blood drive" — never an
-   individual's name, because the PDF behind it is blocked) or to
-   `web.archive.org`, which is flatly unreachable from this session (curl
-   returns HTTP 403, WebFetch errors outright). Two 1980-81 candidates were
-   confirmed instead and merged: **Mark Wilson as administrative vice
-   president**, fully confirmed including two vote counts and a direct quote
-   against archive.org's OCR text of the 1981 Talisman, and **Paul J. Deom as
-   a Judicial Council member**, trimmed to what his own February 1982 Herald
-   letter actually supports. A third, Greg Zoeller, was found genuinely
-   elected to "one of the top three ASG offices" in April 1980 by the cited
-   Herald headline, but the headline never states which office, so — per this
-   file's own standard that a specific claim needs a source that actually
-   carries it — he was held back rather than filed under the guessed title of
-   "activities vice president." The full audit of all 92, including every
-   rejection reason, is in `.research/officers-checked.json`.
-   `.research/officers-unchecked.json` is now empty. **The three years remain
-   genuinely without a recorded cabinet** — not for lack of trying, but
-   because nothing in this candidate batch survives contact with a source this
-   session can actually read. A future run with working `viewcontent.cgi` or
-   `web.archive.org` access could recheck the 21 items marked
-   "source unreachable" in the audit file; the other 68 were checked against
-   a source that loaded fine and simply didn't say what was claimed.
-5. ~~**Four people have no portrait.**~~ **Done, 18 August 2026** (a separate
-   photographs pass, recorded in `.research/NIGHT-REPORT.md`) — Nick Todd,
-   Katie Dawson, Jeanne Johnson and Reagan Gilley all have portraits in
-   `data/photos.json` now.
-6. ~~**Two names unconfirmed.**~~ **Both settled, 18 August 2026.** Reed Morgan
-   (1968): the C1 branch check (item 2, above) found that Kelly Thompson's 1
-   April 1966 approval letter (`digitalcommons.wku.edu/dlsc_ua_records/527`) is
-   addressed to "committee chair Reed Morgan and vice chair John Lovett" —
-   direct documentary support, independent of the sources already behind this
-   project's settled reading in section 7, that Morgan's plaque credit honours
-   the constitution committee's chairmanship rather than the presidency.
-   Amanda Coates/Lich: two sittings of the Kentucky Council on Postsecondary
-   Education carry it. The minutes of 13 November 2000
-   (`cpe.ky.gov/aboutus/records/cpe_meetings/minutes-2000-11-13.pdf`) introduce
-   the incoming holder of the council's statewide student seat as Amanda
-   Coates, "a graduate of Western Kentucky University" — which is what ties
-   the council's student member to this university at all. The minutes of 30
-   July 2001 (`.../minutes-2001-07-30.pdf`), recording Governor Patton's
-   appointment of her successor, name the outgoing member "Amanda Coates
-   Lich". The first carries Coates of Western into the seat, the second
-   carries Lich out of it, and between them they tie the plaque's surname to
-   the Coates named in every source from her actual SGA year. The 30 July
-   minutes alone would not have done it: they never mention Western. The 1999-00 leader entry's
-   note, sources and profile are updated accordingly; two degraded duplicate
-   citations (a bare collection-root URL and a wildcard web.archive.org
-   search URL, both standing in for specific pages already cited properly
-   elsewhere in the same list) were also dropped from that entry, an instance
-   of the item 7 problem below caught along the way. A WKU staff-directory
-   trace of "Amanda Coates Lich" as a current university employee turned up in
-   the same search and was deliberately left out of the archive: it says
-   nothing about her SGA service, and this project does not record a living
-   person's post-office career absent a source connecting it to that service.
-7. ~~**~20 citations rest on homepage or tag-index captures.**~~ **Done, 18
-   August 2026.** All 16 found (a systematic scan of every `src`, leader,
-   officer and document citation in `data/years.json` for a bare Wayback
-   homepage, a `/tag/` index, or a bare `digitalcommons.wku.edu/dlsc_ua_records/`
-   collection root) were checked one at a time, then the 8 proposed upgrades
-   were sent to a separate adversarial verifier before anything was committed.
-   `web.archive.org` is not rate-limited in this environment, it is a hard
-   **"Blocked by egress policy"** on both `https` and `http`, so none of those
-   captures could be read directly; the `archive.org/wayback/available` API
-   confirms the snapshots still exist, and `archive.org` (no `web.` prefix) and
-   `digitalcommons.wku.edu` landing pages remain open.
-   **8 citations got a real digitalcommons.wku.edu/dlsc_ua_records permalink**
-   in place of a bare Wayback homepage or collection root, found by matching
-   the event's own text against that issue's indexed headline list in
-   `data/herald-index-full.json`: Sandra Norfleet's citation, which had decayed
-   to a bare collection root, now points at `dlsc_ua_records/2464`, the exact
-   issue this file's own settled-facts section already names; and seven 2005-06
-   /2009-10 events/leaders moved from a dateless Wayback front page to the
-   specific issue whose headline names the story (e.g. "Rob Watkins elected SGA
-   president" → `dlsc_ua_records/3692`, headlined "See Rob Run, Win . . .
-   Barely"). The verifier caught real overclaiming in three of those eight and
-   they were trimmed rather than published as found: a "10 pieces of
-   legislation" count and an itemised list of bills that only the headline
-   "Approves Less Legislation This Semester" could not support (the count is
-   now dropped, keeping only the confirmed decrease and the confirmed
-   election of Jeanne Johnson as speaker, whose full name the headline gives
-   directly — the entry no longer hedges her as "a senator named Johnson");
-   a $2,000/two-bills/unanimous claim for a 40th-anniversary party story that
-   only the headline "Plans Anniversary Party" could confirm (the figures are
-   cut); and a Rally for Higher Education preview wrongly written up as
-   reporting that Gov. Beshear did address the rally, an advance-notice error
-   this file's own §6.1 warns about (cut back to what the preview actually
-   said). **6 citations could not be upgraded** — a Wayback front-page or
-   `/tag/sga/` capture with no better source found locally or on the live
-   `wkuherald.com` WordPress API — and were left in place with the citation
-   itself marked as a front-page or tag-index capture rather than the specific
-   article, so a reader can see the citation is weaker than it looks without
-   the caveat intruding on the entry's prose: the 2006-07 events for the I-A resolution
-   and Johnson's regent-election win, the 2006-07 Jeanne Johnson leader record,
-   the 2009-10 Judicial Council removal and two-senators-resign events, and
-   Chief Justice Stuart Kenderes's senate-officer record. **2 looked
-   suspicious but checked out fine and were left untouched**: the
-   `wkuherald.com/36017/uncategorized/sga/` URL used for the 2014-15 election
-   challenge and Jay Todd Richey's 2015-16 leader record turned out to be a
-   real, specific post — fetching it directly shows an `og:type` of "article"
-   and a description matching the claim word for word, just filed under a
-   generic "uncategorized" WordPress category rather than a descriptive slug.
-8. ~~**Pre-2011 legislation on TopSCHOLAR.**~~ **Done, 19 August 2026.** All 437
-   documents the two listing pages (`sga/Legislation/Bills/`, 194 rows, and
-   `sga/Legislation/Resolutions/`, 250 rows — 444 total, 7 of which an earlier
-   harvest already held under a slightly different source_url) actually
-   pulled down, zero failures. The harvester's PDF fetch had never worked in
-   this environment before now: `cgi/viewcontent.cgi` returns an empty HTTP
-   202 to a bare request, which reads exactly like the hard block on
-   `viewcontent.cgi` recorded in item 2 above — but it turns out that's a
-   session check, not a wall. Landing on the item page first (which sets a
-   cookie) and then requesting the PDF with that cookie and a `Referer`
-   pointing back at the item page gets a real `200` and the actual file,
-   confirmed by hand with curl before touching the script. `harvest_
-   topscholar_legislation.py` now carries a shared cookie jar and sends the
-   item page as `Referer` on the PDF request; its pacing (one request at a
-   time, 3s apart, 90s backoff on 403) is untouched. A second, smaller bug
-   fixed along the way: the dedup check compared source_url by exact string,
-   so the 7 already-harvested documents whose stored URL carries a trailing
-   slash the listing page's URL never has would have been re-fetched and
-   filed a second time under a different filename; the comparison now
-   normalizes both sides. Coverage runs 1975-76 to 2008-09, 250 resolutions
-   and 194 bills, 166 MB of new PDFs. Spot-checked: extracted title metadata
-   against the PDF's own text layer for three documents across the span (a
-   1981-82 resolution, a 1993 constitution-amendment bill, a 2001 funds bill)
-   all matched. `python3 scripts/check_data.py` and `scripts/build.py` both
-   pass clean on the result.
-9. ~~**The 437 new legislation PDFs had never been run through
-   `extract_authors.py`.**~~ **Done, 19 August 2026.** Re-running the
-   unmodified script against the full 827-document set reproduced the
-   existing 918 curated attributions exactly (zero drift) and surfaced 410
-   new raw candidates from the 437 pre-2011 documents. Most of that raw
-   yield was noise from two extraction weaknesses specific to these older,
-   worse-OCR'd forms: (1) an empty AUTHOR/SPONSOR field bleeds into the
-   resolution's own "For the [University/Student Government Association]
-   to ..." purpose text, misreading the bill's subject as a person's name
-   (e.g. "Hour Visitation Policy", "Diddle Arena", "Model United Nations");
-   and (2) a filled SPONSOR field bleeds past the real name into a
-   following CONTACT field, which on documents this old always names WKU
-   staff or faculty, never the actual sponsor (e.g. "Todd Misener, Student
-   Health and Fitness Lab", "Dr. Gary Ransdell" — WKU's president at the
-   time, plainly not an SGA sponsor). **`extract_authors.py` itself was
-   deliberately left unmodified**: the same "bleed past CONTACT" behavior
-   is *correct* on 2016-and-later bills, where "CONTACTS:" is followed by
-   the actual student sponsor's name and `@topper.wku.edu` address, so a
-   shared fix would have silently deleted real attributions from the
-   modern era (confirmed by testing a stricter STOP list, which reproduced
-   only 795 of the 918 known-good rows before being reverted). Instead the
-   410 raw candidates were curated by hand against the original script's
-   unmodified output: every 4-or-more-word match was dropped outright
-   (119 rows — almost all late-1970s/1980s co-sponsor lists printed with
-   no comma between names, which cannot be split into individuals without
-   guessing a boundary — these are the most promising to revisit if a
-   future pass writes a smarter name-boundary parser, rather than the rows
-   cut below). The remaining 291 were first re-read with a local,
-   not-shared fix for the same CONTACT/purpose-text bleed-through (187
-   candidates left), then checked one at a time against the actual PDF
-   text. **120 survived** as clean, unambiguous individual names with a
-   real AUTHOR:/SPONSOR: line directly behind them; 171 were cut as OCR
-   garble, truncated fragments, bill-subject text, CONTACT-field
-   bleed-through, or an unresolvable position inside an undelimited list
-   of several names. Two incidental corroborations of settled facts
-   turned up in the
-   surviving 120: a 1978-79 resolution authored by "James E. Hargrove"
-   (`1978-79/dc_resolution_319.pdf`) and a 1981-82 resolution authored by
-   "Margaret Ragan" (`1981-82/dc_resolution_257.pdf`), both consistent
-   with this file's existing settled entries on those two people. One
-   spelling doubt, flagged not resolved per this project's own rule: the
-   1989-90 session prints the same person's name two ways on two
-   different resolutions — "Amos Gott" (`dc_resolution_209.pdf`, matching
-   the leader already on file) and "Amos E. Gatt" (`dc_resolution_221.pdf`,
-   most likely the same person misread by OCR) — both are kept as printed
-   rather than silently merged. `data/legislation-authors.json` now holds
-   1,038 attributions (918 + 120); `.research/legislation-authors.json`
-   holds the full unreviewed 1,328-row extraction for any future pass
-   that wants to revisit the 171 cut rows with fresh eyes or a smarter
-   parser for the undelimited co-sponsor lists. `check_data.py` and
-   `scripts/build.py` both pass clean on the result.
+Written 20 August 2026, at the close of the 48-hour push, with the five research
+routines meant to be switched off. Nothing is running on a schedule any more, so
+nothing on this list will clear itself. Read it as a to-do list for a person.
+
+Everything struck through in earlier versions of this section has been moved into
+`.research/NIGHT-REPORT.md`, where the editor passes record what was done and why.
+What follows is only what is **not** done.
+
+### 8.0 A warning that comes before any merging
+
+**`main` is an orphan history relative to the `research-*` branches of 4 August.**
+They have different root commits and **no merge base**. Git will happily report one
+of them as "57 behind main" and offer to merge it; doing so does not add anything,
+it restores the 4 August snapshot over the current record. It deletes
+`data/herald-index-full.json`, `data/legislation-authors.json`,
+`data/name-aliases.json`, the whole contributor layer and all three validator
+scripts, and cuts `data/years.json` back to roughly 830 events.
+
+Before merging **any** branch into `main`:
+
+```bash
+git merge-base origin/main <branch>     # empty output = orphan, do not merge
+```
+
+If there is no merge base, do not merge. Diff by content instead
+(`git diff origin/main <branch> -- ':!site'`), take only what `main` genuinely
+lacks, and apply it as a fresh commit on a branch cut from current `origin/main`.
+Branches cut from current `main` are ordinary branches and merge normally; this
+warning is about the 4 August ones only.
+
+### 8.1 What this environment can and cannot reach
+
+Re-tested by hand at 05:07 UTC on 20 August 2026, one request each. This is the
+single biggest constraint on the research and the reason several items below are
+still open. Earlier versions of this section stated the block differently on
+different days and good research was trimmed on the strength of a stale note, so
+the test commands are given here to be re-run rather than believed.
+
+| host | state | note |
+|---|---|---|
+| `digitalcommons.wku.edu` **landing pages** | **open**, 200 | titles, dates, one-line abstracts and a Herald issue's headline index. This is how most citation labels get verified. |
+| `digitalcommons.wku.edu/cgi/viewcontent.cgi` | **blocked**, HTTP 202, empty body, `x-amzn-waf-action: challenge` | every PDF: Herald page images, Talisman pages, minutes, legislation. |
+| `web.archive.org` | **blocked outright** by egress policy — connection refused, not a 403 | every Wayback citation in the archive is unverifiable from here. |
+| `archive.org` (no `web.` prefix) | **open** | Talisman full texts, 1971–1981, 1986, 1987. Not rate limited. Use heavily. |
+| `wkuherald.com` | **open**, 200 | WordPress API works with a full browser User-Agent. ~2003 onward. |
+
+On `viewcontent.cgi`: on 19 August a run got real PDFs out of it by landing on the
+item page first and then requesting the file with that cookie, a `Referer` back at
+the item page, and the `Sec-Fetch-*` / `Upgrade-Insecure-Requests` headers a
+browser sends. That is how the 437 pre-2011 legislation PDFs were pulled down. The
+same recipe, headers and all, returns the WAF challenge again today. So it is a
+challenge that sometimes lifts, not a permanent wall and not a burst-rate 403 that
+patience cures. Try it; if it challenges, work from landing pages and say so in
+the write-up rather than writing around it.
+
+The rule this environment keeps proving: **a source you could not open is not a
+source that says nothing.** Do not cut a claim because you were blocked. Flag it.
+
+### 8.2 Branches, and what is still unmerged
+
+```bash
+git ls-remote --heads origin
+git rev-list --left-right --count origin/main...origin/<branch>
+```
+
+- **`research-profiles` — unmerged, and it holds real work.** Pull request **#54,
+  still open.** Ten commits ahead of `main`, a clean merge base at `117647c`, a
+  fast-forward if it is taken. It carries about thirty officer profiles: twelve
+  from the 1970s Senate and committees, ten from the 1988-89 Congress, and eight
+  more from the mid-1970s Congress that landed at 04:24 on 20 August.
+  The editor held it on 20 August over two failures — two profiles wrote "no
+  source in this archive confirms" over the 1987 Todd–Elder result the archive
+  already publishes, and four December 1987 letter attributions were shifted by
+  one against a title-first index line. **Both were corrected on the branch, and
+  the three unverified biographical details the editor also flagged were then
+  checked against the Talisman texts** (Tinsley and Jackson confirmed, Faulk's
+  home town dropped as contradicted). So the editor's stated conditions are met.
+  **What has had no editor pass at all is the final eight-profile batch**, which
+  arrived after the review. Someone should read those eight before this merges.
+- **`research-2020s` — unmerged, and it must stay that way.** This is a 4 August
+  orphan (see 8.0). No merge base with `main`. 57 commits that are not on `main`
+  and cannot be merged onto it. Leave it, or close it, but do not merge it.
+- `research-backlog`, `research-photos`, `research-senate` — fully merged into
+  `main`, nothing outstanding on any of them.
+
+### 8.3 Research still owed, highest value first
+
+1. **The three years with no cabinet at all: 1979-80, 2001-02, 2003-04.** Every
+   one of the 92 candidates for them was checked in August and none survived,
+   because each was sourced either to an SGA minutes landing page (which shows
+   only a generic agenda list, never a name, since the PDF behind it is blocked)
+   or to `web.archive.org`. Twenty-one of those are marked "source unreachable"
+   in `.research/officers-checked.json` and are worth rechecking the day either
+   host opens. The other 68 were checked against a source that loaded fine and
+   simply did not say what was claimed; those are disproven, not pending.
+2. **Twenty-six sets of 1996-97 minutes are mirrored into `data/documents/` and
+   referenced by nothing** — no document entry, no citation, no rendering path.
+   The files are already local, so this needs no network at all: read each one and
+   write it a title and a summary. It is the cheapest real work on this list.
+3. **The rest of the senate rolls.** 912 member records across 35 years is a good
+   start on a 61-year record and no more than that. SGA's own minutes are the
+   roll, roughly 830 items covering 1969–2008 on TopSCHOLAR, and the method that
+   worked is in `scripts/merge_senators.py` and in the 20 August night report:
+   mirror the year's minutes locally first, then check every name against the
+   primary text with no network requests at all.
+4. **Every Wayback citation in the archive is unverified**, not verified — by
+   anybody, at any point in this push, because the host has been refused the whole
+   time. Liz Goddard's profile rests entirely on Wayback, as does Stuart
+   Kenderes's, and several of the 2011–2016 executive-branch records. A run from a
+   network that can reach `web.archive.org` should sweep them all.
+5. **Content-check the 1992-93 roll.** Sixty-six names were merged on a night when
+   the minutes PDFs were unreachable, so they were never read against the meetings
+   they cite. Also: TopSCHOLAR dates minutes item 406 to Sunday 20 September 1992,
+   when every other meeting that year is a Tuesday or a Thursday. The metadata may
+   itself be wrong. Whoever next has that PDF open should settle it.
+6. **The 2013-14 charging-stations entry is written from a first-read report** —
+   "should all go according to plan" — and states the purchase as agreed. The 30
+   October story is the one that says what actually happened. Rewrite it against
+   that.
+7. **The 119 undelimited co-sponsor lists** dropped from the legislation
+   authorship extraction. Late-1970s and 1980s forms print several names with no
+   comma between them, and they cannot be split into individuals without guessing
+   a boundary. They are in `.research/legislation-authors.json`, the full
+   unreviewed 1,328-row extraction, and they want a smarter name-boundary parser
+   rather than another pass of the same one.
+8. **Six duplicate pairs that `check_duplicates.py` has reported on every pass.**
+   All six have been judged genuinely separate — same-day bills, a bill introduced
+   against the same bill failing, a suit planned against a suit endorsed. Nobody
+   needs to fix them. They are listed here so the next run does not spend an hour
+   re-deciding it.
+
+### 8.4 Build-side work, which is not research
+
+- **`apply_photo_overlay()` in `build.py` matches `photos.json`'s leaders overlay
+  only against a year's top-level `leaders` array, and `render_officers()` renders
+  no photo field at all.** A portrait of a vice president or a senate officer can
+  therefore sit correctly in the data and never appear anywhere on the site. The
+  photographs routine found this, correctly declined to do research it could not
+  render, and flagged it. Until it is fixed, officer portraits are not worth
+  hunting. This is the highest-value item in this section.
+- **Twenty-nine of the 61 years still have no year photograph** — every year has a
+  leader portrait, so the gap is entirely in photographs of the organisation at
+  work. That is a research job, but it is gated on nothing except the Talisman and
+  the archives.
+
+### 8.5 Data hygiene
+
+- **`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man**,
+  who chaired Campus Improvements under the short name and took the Speaker's
+  chair under the long one. `name-aliases.json` has no Eaton entry. Adding one
+  asserts they are the same person, which the record here supports, but that
+  assertion should be made by a run that sets the evidence out, not slipped into a
+  merge.
+- **The 2016–2027 officer names include a batch of garbled scrapes** — titles glued
+  onto names, "Senator Andi Dahmer", "Public Health Kate Hart". They inflate the
+  person count and they are not safe to profile under. They want a deliberate
+  cleaning pass against a real roster, not a guess.
+- **`Chris Grau` (Office Secretary, 1968-69)** carries a note in the data reading
+  "SPELLING UNVERIFIED, do not publish without a second look", possibly
+  "Christina L. Graue" per the minutes signature. Still unverified.
+- **`Amos Gott` / `Amos E. Gatt`** — the 1989-90 session prints the same person's
+  name two ways on two resolutions. Both are kept as printed rather than merged.
+  Flagged, not fixed, per the project rule.
+- **A third of the senate roll now reads on the site as "recorded absent at a roll
+  call."** The membership is what the entry establishes; the absence is only the
+  evidence for it. The two should probably swap places. Accurate as it stands,
+  which is why it merged, but it reads oddly.
 
 ---
 
