@@ -28864,7 +28864,200 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "organization": {
+    "executive": [
+     {
+      "office": "Executive Vice President",
+      "name": "Patti Johnson",
+      "note": "Confirmed as Executive Vice President, chairing Congress, at all four meetings checked (2 Sep, 16 Sep, 2 Dec 2003, 13 Apr 2004).",
+      "src": {
+       "label": "SGA minutes, 2 Sep 2003",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+      }
+     },
+     {
+      "office": "Vice President of Finance",
+      "name": "Nick Todd",
+      "note": "Confirmed at all four meetings checked in 2003-04; reported on the budget on 2 and 16 September 2003.",
+      "src": {
+       "label": "SGA minutes, 2 Sep 2003",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+      }
+     },
+     {
+      "office": "Information Technology Designate",
+      "name": "Matthew Pava",
+      "note": "Confirmed at all four meetings checked in 2003-04.",
+      "src": {
+       "label": "SGA minutes, 2 Sep 2003",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+      }
+     },
+     {
+      "office": "Vice President of Administration",
+      "name": "Jessica Martin",
+      "note": "Confirmed at all four meetings checked in 2003-04, signing the minutes each time.",
+      "src": {
+       "label": "SGA minutes, 2 Sep 2003",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+      }
+     },
+     {
+      "office": "Vice President of Public Relations",
+      "name": "Abby Lovan",
+      "note": "Confirmed at all four meetings checked in 2003-04. Withdrew her name from the Speaker of the Senate race on 13 April 2004.",
+      "src": {
+       "label": "SGA minutes, 2 Sep 2003",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+      }
+     }
+    ],
+    "senate": {
+     "officers": [
+      {
+       "office": "Sergeant At Arms",
+       "name": "Cameron Yancey",
+       "note": "Approved by unanimous Congress vote as Sergeant at Arms on 16 September 2003, after being announced for swearing-in that night.",
+       "src": {
+        "label": "SGA minutes, 16 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/522"
+       }
+      },
+      {
+       "office": "Parliamentarian",
+       "name": "Mason Stevenson",
+       "note": "Approved by unanimous Congress vote as Parliamentarian on 16 September 2003, after being announced for swearing-in that night.",
+       "src": {
+        "label": "SGA minutes, 16 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/522"
+       }
+      },
+      {
+       "office": "Coordinator of Committees",
+       "name": "Scott Wolfe",
+       "note": "Confirmed in office by 2 December 2003.",
+       "src": {
+        "label": "SGA minutes, 2 Dec 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"
+       }
+      },
+      {
+       "office": "Chief Justice, Judicial Council",
+       "name": "Troy Ransdell",
+       "note": "Approved and sworn in as Chief Justice of the Judicial Council on 2 September 2003.",
+       "src": {
+        "label": "SGA minutes, 2 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+       }
+      },
+      {
+       "office": "Justice, Judicial Council",
+       "name": "Josh Collins",
+       "note": "Sworn in as a Justice of the Judicial Council on 2 September 2003.",
+       "src": {
+        "label": "SGA minutes, 2 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+       }
+      },
+      {
+       "office": "Justice, Judicial Council",
+       "name": "Gretchen Light",
+       "note": "Sworn in as a Justice of the Judicial Council on 2 September 2003.",
+       "src": {
+        "label": "SGA minutes, 2 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+       }
+      },
+      {
+       "office": "Justice, Judicial Council",
+       "name": "Scott Broadbent",
+       "note": "Sworn in as a Justice of the Judicial Council on 2 September 2003.",
+       "src": {
+        "label": "SGA minutes, 2 Sep 2003",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+       }
+      },
+      {
+       "office": "Speaker of the Senate",
+       "name": "Robert Watkins",
+       "note": "Elected the first speaker of the senate on 13 April 2004 in a sealed ballot, 9 votes to 8 over Brittany Fausey, after Abby Lovan withdrew from the race. Previously chaired the Legislative Research committee, where he wrote and defended the new three-branch constitution (Bill 03-10-F). See the 15 April 2004 Herald report on the disputed vote count elsewhere in this year's record.",
+       "src": {
+        "label": "SGA minutes, 13 Apr 2004",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/543"
+       }
+      }
+     ],
+     "committees": [
+      {"name": "Academic Affairs", "chair": "Natalie Croney",
+       "note": "Named alone in the committee's report by 2 December 2003; sworn in as a committee head on 2 September 2003.",
+       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
+      {"name": "Campus Improvements", "chair": "Shawn Peavie",
+       "note": "Sworn in as a committee head on 2 September 2003; defended the committee's re-graveling-the-SkyPAC-lot and Adopt-A-Tree legislation that fall.",
+       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
+      {"name": "Legislative Research", "chair": "Robert Watkins",
+       "note": "Wrote and defended the new three-branch constitution and bylaws (Bill 03-10-F) as the committee's chair in fall 2003, before his election as speaker of the senate the following April.",
+       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
+      {"name": "Public Relations", "chair": "Brittany Fausey",
+       "note": "Sworn in as a committee head on 2 September 2003. Evelina Petkova is named alongside her in the committee's 2 December 2003 report; her specific role is not stated in the minutes.",
+       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}},
+      {"name": "Student Affairs", "chair": "Katie Dawson",
+       "note": "Sworn in as a committee head on 2 September 2003; defended the committee's private-information-security, hooded-sweatshirt and broadband-expansion-fee legislation that year. Tim Howard is named alongside her in the committee's 2 December 2003 report; his specific role is not stated in the minutes.",
+       "src": {"label": "SGA minutes, 2 Dec 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"}}
+     ],
+     "note": "Congress had 15 seats filled of an unstated total on 2 September 2003, 43 members by 2 December 2003, and 30 members by 13 April 2004; the roster grew over the fall as vacancies were filled."
+    }
+   },
+   "documents": [
+    {
+     "file": "2003-04-minutes-2003-09-02.pdf",
+     "title": "SGA Meeting Minutes, 2 September 2003",
+     "summary": "The year's second Congress meeting: WKU president Gary Ransdell briefed Congress on capital projects, Troy Ransdell was sworn in as Chief Justice along with three of four Judicial Council justices, and four committee heads and 17 new Congress members were sworn in.",
+     "extract": "Troy Ransdell was approved and sworn in as Chief Justice.",
+     "sga_pages": "1-3",
+     "page": 2,
+     "src": {
+      "label": "SGA minutes, 2 Sep 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"
+     }
+    },
+    {
+     "file": "2003-04-minutes-2003-09-16.pdf",
+     "title": "SGA Meeting Minutes, 16 September 2003",
+     "summary": "Congress heard Dr. Richard Kirchmeyer on identity theft and the student directory, and swore in Cameron Yancey as Sergeant at Arms and Mason Stevenson as Parliamentarian by unanimous vote.",
+     "extract": "Motion and second to approve Cameron Yancey as Sergeant at Arms and Mason Stevenson as Parliamentarian.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "SGA minutes, 16 Sep 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/522"
+     }
+    },
+    {
+     "file": "2003-04-minutes-2003-12-02.pdf",
+     "title": "SGA Meeting Minutes, 2 December 2003",
+     "summary": "The fourteenth meeting of the year, naming the fall's committee chairs and recording debate on the new constitution (Bill 03-10-F) and four other pieces of legislation, including the SkyPAC parking lot, the Adopt-A-Tree program, private information security and hooded sweatshirts.",
+     "extract": "Robert Watkins defended the legislation saying that the old constitution has too many problems.",
+     "sga_pages": "1-4",
+     "page": 1,
+     "src": {
+      "label": "SGA minutes, 2 Dec 2003",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/541"
+     }
+    },
+    {
+     "file": "2003-04-minutes-2004-04-13.pdf",
+     "title": "SGA Meeting Minutes, 13 April 2004",
+     "summary": "Records the disputed election of Robert Watkins as the first Speaker of the Senate over Brittany Fausey after Abby Lovan withdrew, and passage of the Broadband Expansion Fee resolution.",
+     "extract": "Robert Watkins won by one vote. The vote was performed as a sealed ballot.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "SGA minutes, 13 Apr 2004",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/543"
+     }
+    }
+   ]
   },
   {
    "id": "2004-05",
@@ -38922,7 +39115,10 @@
       "src": {
        "label": "SGA Senate minutes, 4 Sep 2018",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
-      }
+      },
+      "profile": [
+       "Harper Anderson was elected administrative vice president in April 2018 on the MEA ticket, with presidential candidate Stephen Mayer and executive vice president Garrett Edmonds, and served through 2018-19. The ticket had been disqualified two days before the results over a Pepe the Frog image in a campaign chalk drawing, a ruling the Judicial Council reduced to a suspension before the count was announced; Mayer won the presidency with 35 percent of the 2,378 votes cast. The archive's record of Anderson's year in office is limited to the roster and the election coverage."
+      ]
      },
      {
       "office": "Chief of Staff",
@@ -38956,7 +39152,11 @@
       "src": {
        "label": "SGA Senate minutes, 4 Sep 2018",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
-      }
+      },
+      "profile": [
+       "Noah Moore was SGA's director of public relations in 2018-19. As a senator the year before he had co-authored a resolution, passed 28-2 in April 2018, asking Housing and Residence Life to make the sexual-orientation and gender-identity question optional on housing applications, and had spoken against a colleague who cited scripture in voting down funding for LGBTQ graduation stoles.",
+       "In April 2019 SGA and the Queer Student Union held the second Unite for Fairness night in Downing Student Union, where students wrote letters to Bowling Green city commissioners supporting a fairness ordinance. Moore, who had helped run the first event the previous semester, said a handwritten letter would reach a commissioner more than an email or a phone call."
+      ]
      }
     ],
     "senate": {
@@ -39526,7 +39726,11 @@
       "src": {
        "label": "SGA Senate minutes, 10 Sep 2019",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-10-sep.docx"
-      }
+      },
+      "profile": [
+       "Kenan Mujkanovic ran for student body president twice before winning executive office. In April 2017 the Judicial Council granted him a constitutional exemption to run despite less than a semester's service, and he finished second behind Andi Dahmer with 305 of the 1,579 votes cast, ahead of Lily Nellans's 212. In April 2018 his campaign was suspended for an election-code violation and he finished third, taking 32 percent of the vote in the three-way race Stephen Mayer won.",
+       "In April 2019 he ran a third time, now for administrative vice president on the WGK ticket with Will Harris and Garrett Edmonds, and won, defeating Symone Whalin. As administrative vice president in 2019-20 he prepared and presented the year's budget, dropping the athletic-marketing sponsorship and reallocating the money, then joined the executive team in pulling the bill after the Senate amended it. He authored the year's organizational-aid bills and Bill 5-19-F, which continued a study-away scholarship partnership running since 2011 with $1,500 for 2019-20."
+      ]
      },
      {
       "office": "Chief of Staff",
@@ -39535,7 +39739,11 @@
       "src": {
        "label": "SGA Senate minutes, 3 Sep 2019",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-3-sep.docx"
-      }
+      },
+      "profile": [
+       "Aubrey Kelley served two years in the SGA executive branch, as director of academic and student affairs in 2018-19 and as chief of staff in 2019-20. She reached the first post in September 2018 only on the third attempt: the Senate confirmed her 24-3-4 after the initial nominee withdrew and a second nominee failed confirmation 6-9-1. As director she presented Bill 29-19-S in April 2019, which funded 53 SGA scholarships in a single bill — 27 summer-term awards, 18 study-abroad awards and eight first-generation awards.",
+       "Confirmed chief of staff 16-1 at the first meeting of 2019-20, she sat on the university academic committee reviewing course fees and told the Senate that fees predating 2010 had to be resubmitted. The 2018-19 minutes spell her surname both ways — Kelly at her nomination and Kelley afterward — and the SGA website and the 2019-20 minutes give Kelley."
+      ]
      },
      {
       "office": "CASA Chair",
@@ -39571,7 +39779,10 @@
       "src": {
        "label": "SGA Senate minutes, 3 Sep 2019",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-3-sep.docx"
-      }
+      },
+      "profile": [
+       "Paul Brosky was SGA's director of information technology across three administrations, in 2018-19, 2019-20 and 2020-21. The post kept the Senate's voting records, attendance and legislation; confirmed 14-2 for a second year in September 2019, he rebuilt the rest of the SGA website once the autumn elections were over. In September 2020, with meetings moved online by COVID-19, he told the Senate the election codes would be sent to students electronically."
+      ]
      },
      {
       "office": "Director of Public Relations",
@@ -40271,7 +40482,11 @@
       "src": {
        "label": "WKU SGA, Senate minutes, 20 Oct 2020",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes10_20_20.pdf"
-      }
+      },
+      "profile": [
+       "Abbey Norvell served on the SGA executive branch for two years. Confirmed director of academic and student affairs in September 2019 — a former at-large senator who had sat on the Organizational Aid and Public Relations committees — she built the scholarship grading rubric and in November 2019 reported a record 398 scholarship applications.",
+       "In 2020-21 she was elected on the Edmonds-Norvell ticket, which defeated MJ Mayo at a virtual election party in September 2020 after her running-mate slot opened when Nathan Terrell left the ticket. The Herald's election story called her administrative vice president and no decision had then been made on a separate executive vice president post; from October 2020 through March 2021 the Senate minutes headed her reports \"Executive Vice President Abbey Norvell\", with Isaac Keller confirmed administrative vice president that October. She sent out the Faculty Senate application form, tracked which senators sat on university committees, and appointed members to the Faculty Senate."
+      ]
      },
      {
       "office": "Administrative Vice President",
@@ -40280,7 +40495,11 @@
       "src": {
        "label": "Herald, 21 Oct 2020",
        "url": "https://wkuherald.com/13430/news/sga-votes-on-administrative-vice-president-at-this-weeks-meeting/"
-      }
+      },
+      "profile": [
+       "Isaac Keller came to the administrative vice presidency from the Judicial Council, where he had served two years and, as its longest-serving member, was confirmed chief justice 28-0 in April 2019. As chief justice in 2019-20 he ruled that a Senate majority is measured against those present rather than the full membership, told senators a resolution seeking to defund Alpha Xi Delta would be only symbolic because SGA cannot direct the university to defund an organization, and convened a cross-branch rewrite of the constitution.",
+       "In 2020-21 President Garrett Edmonds nominated him administrative vice president, saying he wanted a deputy willing to challenge him, and the Senate confirmed Keller 29-1 in October 2020. The Herald first called the post executive vice president and ran a correction to administrative vice president — the same title given to Abbey Norvell in the election coverage — so the sources do not fully resolve the two vice-presidential titles for the year. He authored organizational-aid bills, among them one in February 2021 funding four student organizations and, in March 2021, what the Herald called the largest organizational aid bill SGA had passed."
+      ]
      },
      {
       "office": "Administrative Vice President",
@@ -40298,7 +40517,11 @@
       "src": {
        "label": "WKU SGA, Senate minutes, 19 Jan 2021",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/1_19_21_minutes.pdf"
-      }
+      },
+      "profile": [
+       "Matt Barr chaired the Campus Improvements committee in 2018-19, where he authored the bill creating a recurring $2,000 scholarship for first-generation students, passed 31-1 in October 2018. In February 2020, as Campus Improvements chair, he defended a contested slate of senator nominees, saying committees exist to develop ideas together.",
+       "He served as chief of staff in 2020-21, first on an interim basis under the outgoing cabinet in September 2020 and then confirmed that October. He ran the \"Go With the Flow\" programme, which put free menstrual-product dispensers across campus, reported the three hammock sites finished and new SGA signage and office computers installed over the winter break, and continued the programme into the spring semester."
+      ]
      },
      {
       "office": "Director of Academic and Student Affairs",
@@ -40307,7 +40530,10 @@
       "src": {
        "label": "WKU SGA, Senate minutes, 2 Mar 2021",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/3_2_21_minutes.pdf"
-      }
+      },
+      "profile": [
+       "Kody Okert was director of academic and student affairs in 2020-21. He was one of three senators Executive Vice President Abbey Norvell appointed to the Faculty Senate in October 2020. He ran the Earn-A-Computer programme, through which two computers were given out that spring, and reported the year's scholarship numbers to the Senate: fewer than 20 applications for the five SGA scholarships then open in late February 2021, and 88 applications by early March, when he pushed the deadline back a day."
+      ]
      },
      {
       "office": "Director of Information Technology",
@@ -40325,7 +40551,10 @@
       "src": {
        "label": "WKU SGA, Senate minutes, 19 Jan 2021",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/1_19_21_minutes.pdf"
-      }
+      },
+      "profile": [
+       "Jamison Moorehead was nominated director of information technology in January 2021, when SGA's spring semester opened over Zoom, and was confirmed. He handled absence excuses that winter, reminding senators that an absence without an excuse form went to the Judicial Council, and for a time in January 2021 held the Senate secretaryship and the IT directorship together before Brenna Mathews returned as secretary in February. He was confirmed director of IT again for 2021-22."
+      ]
      },
      {
       "office": "Director of Public Relations",
@@ -40334,7 +40563,11 @@
       "src": {
        "label": "WKU SGA, Senate minutes, 2 Mar 2021",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/3_2_21_minutes.pdf"
-      }
+      },
+      "profile": [
+       "Ashlynn Evans was SGA's director of public relations in 2019-20 and 2020-21. Confirmed 12-5 in September 2019 after chairing the Public Relations committee the previous semester, she said she had arranged the handover with the outgoing director, Noah Moore, and proposed keeping the Senator of the Week programme and adding a Student of the Month.",
+       "In 2020-21 she proposed buttons carrying the updated SGA logo, held the year's first tabling event in November 2020 and planned an LGBTQIA+ UNITE event; SGA brochures and nametags arrived in March 2021."
+      ]
      }
     ],
     "senate": {
