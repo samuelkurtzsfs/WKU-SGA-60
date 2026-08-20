@@ -2235,3 +2235,108 @@ profile, up 10 tonight from the ten new profiles on #71. 283 document files held
 `build.py`, `check_data.py` and `check_contrib.py` all clean on the merged head;
 `check_duplicates.py` reports the same six long-judged pairs, untouched by either
 of tonight's merges.
+
+---
+
+# Night report - 20 August 2026
+
+Written by the editor. Four research branches reviewed, all four merged, nine
+corrections applied before anything reached the site.
+
+## What was reviewed
+
+#73 person profiles, #74 the senate rolls, #75 photographs, #76 the backlog.
+Every one was cut from current main, so the orphan-history warning in
+AGENT-LANDING did not apply to any of them; the three stale August branches the
+brief named are no longer open. Between them the four PRs carried twenty officer
+profiles, 107 rank-and-file senators, six Talisman photographs and 284 pieces of
+pre-2011 legislation.
+
+## What I verified
+
+Twenty-three claims from #73 were opened against their cited Herald articles,
+Judicial Council minutes and TopSCHOLAR index pages. Twenty-two held exactly,
+down to vote totals - Wingate third on 300 behind Alvey's 419, Bisig losing to
+Dawson 778 to 373, Collins to Petkova 692 to 481, Leon censured 6-0 - and to
+quoted words.
+
+For #74 the four locally mirrored 2003-04 minutes gave eight names read straight
+off the page, including one the OCR prints as "Jessica Sullon". More useful than
+any sample, all 107 landed members were compared against the branch's own merge
+inputs and verifier verdicts: every one matched on name, seat and source, no
+rejected name landed, and all sixteen accepted names that did not land are
+accounted for as officers already recorded that year or as the two surname-only
+senators deliberately held back.
+
+For #76 both TopSCHOLAR listings were re-counted: 128 bill rows and 156
+resolution rows carry the hidden date markup, which is exactly the 284 recovered.
+Fourteen of the new PDFs were opened and read; all are genuine legislation forms
+whose reading dates match their entries.
+
+## What was cut or corrected
+
+Thirty-two officer citations were being published invisibly. `build.py` reads an
+officer's sources only from `src` through `src20`; the twelve Speaker profiles
+kept theirs in a `sources` array that renders nowhere, so they went live as long
+accounts carrying one visible link. Converted, and the same fault was found
+already on main under Bill Fogle's 1986-87 record.
+
+Sam Stinson's profile claimed he stood in the spring 2002 election. Neither cited
+index line says so; the candidacy was read off the fact that his headline sits
+next to a candidate profile in the same issue. Trimmed to what the headlines
+prove. Two outcomes resting on pre-election notices - Wright losing to Cassie
+Martin, Dawson elected in 2005 - were given the reports that actually carry them.
+
+Every source link in #75 was wrong. Each id carried a spurious leading digit, so
+the 1970 Talisman citation opened a 1982 baseball media guide and the 1985, 1989,
+1990, 1992 and 1993 citations all opened issues of a personnel newsletter. The
+intended records were right; all six repointed after walking the Talisman run and
+confirming each volume by title and date. Three captions in the same branch
+claimed more than their page: which candidate stood on the left at the 1990
+debate, five people in a front row the crop cuts off, and an Associated Students
+election where the yearbook says campus election day.
+
+Twenty-three fall bills and resolutions in #76 were filed a year early, because
+TopSCHOLAR stores year-only items as 1 January and the session is taken from the
+date. The archive already carried three of them as September 1991 events on
+1991-92, citing the same records, so the branch was contradicting the site. All
+refiled, with a warning added to the harvester.
+
+Two roll figures were fixed in #74: 2003-04 carried a flat size of 48 that
+appears nowhere in the year's own note, and 2005-06 showed 32 beside a note
+saying 25 were elected. The first is gone, the second reconciled.
+
+## Still open
+
+- Eight name-variant splits introduced by #74 - Wesley and Wes Calhoun, Benjamin
+  and Ben Lineweaver, three forms of Cherieth Lineweaver, Nathan and Nathan J.
+  Eaton, Evelina and Evelina V. Petkova, Ann Blair and Ann-Blair Thornton,
+  Brittany-Ann and Brittany Ann Wick, Austin Bernard and Austin Wingate. None is
+  a false claim and none is surname matching, but each person now has two pages
+  holding half a record. An alias asserts identity, so I have not guessed at
+  them. The archive holds dozens more from earlier passes and wants one
+  deliberate pass over `name-aliases.json`, which currently holds two entries.
+- Hollan Hohn or Holm, correctly flagged in the data rather than fixed. For
+  whoever settles it: `herald-index-full.json` prints "Holm, Hollan" 85 times and
+  "Hohn" not once, and #74's own verdicts file uses Holm throughout.
+- Holly Skidmore's November 2001 nomination note - a claim already on main whose
+  only citation is the 4 September 2001 minutes. It needs a real source or it
+  should go.
+- Two legislation entries where the listing month and the number's own semester
+  letter disagree: Resolution 82-7-S and Bill 00-3-S. Left alone rather than
+  guessed at.
+- The Kelley spelling split and the 2024-01-24 duplicate resignation pair from
+  the previous report, neither cleared tonight.
+
+## Where the archive stands
+
+61 academic years, 2,025 dated and sourced entries, 60 people recorded as
+president. 1,098 senate member records, up 107 tonight, and 1,094 executive and
+senate officer records. 385 written profiles, up 20. 73 leader portraits and 53
+year photographs, up six. 113 documents attached to years, 283 document files
+held, and 1,111 legislation files, up 284.
+
+`build.py`, `check_data.py` and `check_contrib.py` are all clean on the merged
+head. `check_duplicates.py` reports the same six long-judged pairs, untouched:
+three same-day 1991 bills, a bill introduced and failing nine days later, and two
+stories a month apart.
