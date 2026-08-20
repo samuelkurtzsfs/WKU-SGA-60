@@ -1,0 +1,182 @@
+[
+ {
+  "name": "Me'Lon Craighead",
+  "year": "2021-22",
+  "paragraphs": [
+   {
+    "index": 0,
+    "verdict": "trim",
+    "reason": "Office (EVP under President Wininger), the Nia Queen Douglas alternate restaurant-group nomination, and its passage by unanimous consent are all confirmed by the Herald piece dated 1 Dec 2021. But that article reports the meeting was held 'Tuesday Nov. 30' - the nomination happened 30 November 2021, not 'In December 2021.' The month is wrong.",
+    "rewrite": "Me'Lon Craighead served as executive vice president of SGA for 2021-22, under President Matthew Wininger. At the meeting of 30 November 2021 she nominated Senator Nia Queen Douglas as an alternate restaurant-group committee representative, a nomination the Senate approved by unanimous consent."
+   },
+   {
+    "index": 1,
+    "verdict": "accept",
+    "reason": "The Herald of 16 Feb 2022 (meeting 15 Feb) confirms 'SGA approved the creation of a task force for the iWKU app, petitioned by Me'lon Craighead, executive vice president. Craighead will appoint a chairman next week' - so February 2022, the task force, her petition, and the next-week chair appointment are all supported. The Bill 18-22-S contact-officer / Diversity and Inclusion Mahurin Honors membership-fee scholarship detail is a bare legislation-backed claim consistent with the note; acceptable.",
+    "rewrite": null
+   }
+  ]
+ },
+ {
+  "name": "Reed Breunig",
+  "year": "2021-22",
+  "paragraphs": [
+   {
+    "index": 0,
+    "verdict": "accept",
+    "reason": "Herald 1 Sep 2021 confirms Breunig as AVP at 'the second meeting of the 21st Senate' announcing 'the SGA budget would be up for a confirmation vote at next week's meeting.' The 31 Aug 2021 date (a Tuesday) matches the minutes/note; the article's stray 'Aug. 13' is an internal typo, not a contradiction.",
+    "rewrite": null
+   },
+   {
+    "index": 1,
+    "verdict": "accept",
+    "reason": "The bill numbers/amounts (Bill 2-22-S $5,350; Bill 10-22-S $4,950) and the 19 April 2022 last-meeting budget update are bare legislation/minutes-backed claims matching the note; nothing overreaches beyond what those records support. 'Holding the budget' is light framing but not a false factual claim.",
+    "rewrite": null
+   }
+  ]
+ },
+ {
+  "name": "Parker Raybourne",
+  "year": "2021-22",
+  "paragraphs": [
+   {
+    "index": 0,
+    "verdict": "accept",
+    "reason": "Herald 1 Sep 2021 confirms Raybourne confirmed as chief of staff at the second meeting of the 21st Senate, passing 'with unanimous consent' and 'promptly sworn in by Schroeder' (Chief Justice Holden Schroeder). Wininger's appointment and the 31 Aug 2021 date are minutes-backed per the note and consistent.",
+    "rewrite": null
+   },
+   {
+    "index": 1,
+    "verdict": "accept",
+    "reason": "Resolution 6-22-S 'to support the addition of an SGA related clause to Course Syllabi' is confirmed by Herald 16 Feb 2022; authorship of it and of Bill 7-21-F (SGA polos, co-authored with Speaker Welch) are legislation-backed per the note. Welch is independently confirmed as Speaker of the Senate in Herald reporting, so the title is not overstated.",
+    "rewrite": null
+   }
+  ]
+ },
+ {
+  "name": "Alexis Courtenay",
+  "year": "2021-22",
+  "paragraphs": [
+   {
+    "index": 0,
+    "verdict": "accept",
+    "reason": "Herald 1 Sep 2021 confirms 'Alexis Courtenay as public relations director' confirmed and 'promptly sworn in by Schroeder' at the second meeting of the 21st Senate. Resolution 2-22-S (Swipe-Out Hunger), the Mental Health Awareness Week contact, and the Courteney/Courtenay spelling split are bare legislation-backed claims matching the note.",
+    "rewrite": null
+   },
+   {
+    "index": 1,
+    "verdict": "accept",
+    "reason": "Herald 20 Apr 2022 confirms exactly: Bornefeld announced winner 'just after midnight on April 20, collecting 49% of the vote. Alexis Courtenay placed second with 40% of the vote and Olivia Feck came in third, taking home 11%.' All figures and the placing match.",
+    "rewrite": null
+   }
+  ]
+ },
+ {
+  "name": "Garrison Reed",
+  "year": "2022-23",
+  "paragraphs": [
+   {
+    "index": 0,
+    "verdict": "accept",
+    "reason": "Herald 20 Apr 2022 confirms 'Sam Kurtz and Garrison Reed, also part of Bornefeld's ticket, were elected as Administrative Vice President and Executive Vice President, respectively.' Bills 6-22-F and 18-22-F are legislation-backed per the note.",
+    "rewrite": null
+   },
+   {
+    "index": 1,
+    "verdict": "trim",
+    "reason": "First sentence is fully supported: Herald 21 Sep 2022 states Reed 'has been appointed to serve as student representative for Kentucky's Council on Postsecondary Education' and 'Reed's current term will end June 30, 2023.' The second sentence - the March 2023 near-quote about not moving legislation up the agenda because senators need two weeks to read a bill - has no source among the three citations (Wayback cabinet, Herald 20 Apr 2022, Herald 21 Sep 2022) and no March 2023 article is provided. A paraphrased floor statement with no citation cannot stand; cut it or attach the minutes/Herald source it came from.",
+    "rewrite": "In September 2022 SGA announced that Reed had been appointed the student representative on Kentucky's Council on Postsecondary Education, a term set to end 30 June 2023."
+   }
+  ]
+ },
+ {
+  "name": "Lauren Willett",
+  "year": "2022-23",
+  "paragraphs": [
+   {
+    "index": 0,
+    "verdict": "accept",
+    "reason": "Herald 1 Feb 2023 confirms 'Chief of Staff Lauren Willett' and that Willett, 'listed as an author of the bill, said they saw a 660% increase in use in the fall semester' (dental vouchers). Bill 28-23-S authorship is confirmed; Bills 25-22-F and 27-23-S authorship and the textbook/dental/ID/Preston voucher scope are legislation-backed per the note and consistent with the article's description of 27-23-S.",
+    "rewrite": null
+   },
+   {
+    "index": 1,
+    "verdict": "accept",
+    "reason": "Herald 1 Feb 2023 confirms the Senate passed Bill 28-23-S aiding 'the WKU Dental Health Clinic for free teeth cleanings for students, rather than being paid for by dental students,' and that Willett said it would help both the students needing the cleaning and the dental students. The 31 Jan 2023 meeting date (a Tuesday, one day before the article) is consistent.",
+    "rewrite": null
+   }
+  ]
+ },
+ {
+  "name": "Annalise Finch",
+  "year": "2023-24",
+  "paragraphs": [
+   {
+    "index": 0,
+    "verdict": "accept",
+    "reason": "Herald 19 Apr 2023 confirms exactly: 'running with Kurtz on the executive ticket, Salvador Leon was named administrative vice president and Annalise Finch was elected as executive vice president. The ticket ran unopposed.'",
+    "rewrite": null
+   },
+   {
+    "index": 1,
+    "verdict": "accept",
+    "reason": "Herald 31 Jan 2024 confirms 'Executive Vice President Annalise Finch appointed two new Campus Committee heads. Jaden Marshall as the Graduate Advisory Council Committee and Chloe Ralston as the Colonnade General Education Committee,' both approved. The Annie=Annalise identity for the senior-senator listing (Herald 17 Apr 2024) is not a mere surname match: the censure fulltext (Feb 2024) refers to the sitting EVP as 'Executive Vice President Annie Finch,' while the Jan 2024 article calls the same office-holder 'Annalise Finch' - the same office, same term, corroborating the identity.",
+    "rewrite": null
+   }
+  ]
+ },
+ {
+  "name": "Salvador León",
+  "year": "2023-24",
+  "paragraphs": [
+   {
+    "index": 0,
+    "verdict": "trim",
+    "reason": "The AVP office for 2023-24 on Kurtz's unopposed spring-2023 ticket is confirmed by Herald 19 Apr 2023. But the identity assertion that AVP 'Salvador Leon' is the same person 'recorded in the fall 2022 election as international student senator Salvador Leon Golib' is an inference the sources do not establish: Herald 21 Sep 2022 names the fall-2022 international student senator 'Salvador Leon Golib,' and no cited source ties that person to the AVP beyond the shared first name and first surname. The overlap is suggestive (Leon Golib -> Leon is a normal two-surname drop) but should be presented as apparent, not stated as fact.",
+    "rewrite": "Salvador Leon was administrative vice president of SGA for 2023-24, elected on Sam Kurtz's unopposed ticket in spring 2023. A 'Salvador Leon Golib' had been elected international student senator in the fall 2022 election; the names appear to point to the same person, though the record does not confirm it."
+   },
+   {
+    "index": 1,
+    "verdict": "accept",
+    "reason": "Fully supported. Herald 6 Feb 2024 confirms the Executive Cabinet filed a formal report to the Judicial Council over premature spending before Bill 22-23-S (Neurodiversity Acceptance Week) passed, over having the promotional graphic posted first, and over forcing the Senate's hand. Herald 9 Feb 2024 confirms the hearing was 7 Feb 2024 and 'The judicial council voted 6-0 to censure Leon, recommending no further disciplinary action.' Every element checks out, including the executive project and legislative discretionary budgets detail.",
+    "rewrite": null
+   }
+  ]
+ },
+ {
+  "name": "Lyndsey Kelley",
+  "year": "2023-24",
+  "paragraphs": [
+   {
+    "index": 0,
+    "verdict": "accept",
+    "reason": "Herald 19 Apr 2023 confirms 'Lyndsey Kelley' among the fourteen At-Large senators elected for fall 2023. Chief-of-staff service and the 29 Aug 2023 second-meeting detail (with her wanting to get to know the new senators) are minutes-backed per the note; a bare 'in post from this meeting' claim is minutes-supportable and acceptable.",
+    "rewrite": null
+   },
+   {
+    "index": 1,
+    "verdict": "accept",
+    "reason": "The ID/Preston voucher program, the 28 Nov 2023 Christmas party (a Tuesday), and Kurtz's 23 Jan 2024 report that she had stepped down are all minutes-backed per the note. The 'stepped down' outcome is exactly the kind of statement Senate minutes record verbatim on a dated meeting, and it is attributed to Kurtz on a specific date rather than editorialized; plausible-unverifiable but acceptable. Nothing in the provided Herald fulltext contradicts it.",
+    "rewrite": null
+   }
+  ]
+ },
+ {
+  "name": "Donté Reed",
+  "year": "2024-25",
+  "paragraphs": [
+   {
+    "index": 0,
+    "verdict": "accept",
+    "reason": "Herald 17 Apr 2024 confirms results announced 'at midnight Wednesday, April 17' and lists 'Administrative Vice President Ethan Taylor, Executive Vice President Donte Reed, Student Body President Sam Kurtz.' Office, running mates, and date all match.",
+    "rewrite": null
+   },
+   {
+    "index": 1,
+    "verdict": "accept",
+    "reason": "Herald 27 Aug 2024 confirms Donte Reed sat down with the Herald Editorial Board alongside the rest of the cabinet, that the budget was about $100,000, and quotes Reed: 'With this budget, we try to use 100% of it to the best of our ability to help as many students as we can.' The paraphrase matches.",
+    "rewrite": null
+   }
+  ]
+ }
+]
