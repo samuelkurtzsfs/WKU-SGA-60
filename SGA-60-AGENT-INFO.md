@@ -370,6 +370,19 @@ git rev-list --left-right --count origin/main...origin/<branch>
    time. Liz Goddard's profile rests entirely on Wayback, as does Stuart
    Kenderes's, and several of the 2011–2016 executive-branch records. A run from a
    network that can reach `web.archive.org` should sweep them all.
+   *Weak-citation sweep, 20 Aug (later pass):* the ~20 homepage/tag-index captures
+   are now handled. Eight were upgraded to verified `dlsc_ua_records/` issue
+   permalinks (both collection-root stubs — Norfleet /2464, Coates /8117 — and six
+   2005-06 Herald events: /3668, /3687, /3683, /3692, and two on /3690), each
+   confirmed live against the issue's own headline index. Three residual
+   front-page captures stay honestly labelled "not the specific article" and were
+   re-checked this pass as **unconfirmable from here**: the 2006-11-02 I-A-football
+   resolution has no College Heights Herald issue within eight days in
+   `herald-index-full.json`, and the 2007-02-01 Jeanne Johnson student-regent
+   election falls in a stretch (dlsc_ua_records 6659/6660/6661, late Jan–early Feb
+   2007) whose landing pages carry no article-level index to confirm the story.
+   A run that can open `viewcontent.cgi` PDFs or reach `web.archive.org` should
+   finish those two; do not re-run the landing-page approach, it has been tried.
 5. **Content-check the 1992-93 roll.** Sixty-six names were merged on a night when
    the minutes PDFs were unreachable, so they were never read against the meetings
    they cite. Also: TopSCHOLAR dates minutes item 406 to Sunday 20 September 1992,
