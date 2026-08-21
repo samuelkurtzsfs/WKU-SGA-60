@@ -6210,9 +6210,21 @@
        "office": "Co-chair, ASG Housing Committee",
        "name": "Scott Taylor",
        "note": "Taylor co-chaired the housing committee with Susan Hurley on the laundry resolution. He is separately listed in the same supplement's Congress roster as a representative-at-large.",
+       "profile": [
+        "Taylor, a member of the Pi Kappa Alpha fraternity, served in 1975-76 as an Associated Student Government representative-at-large and co-chaired the housing committee with Susan Hurley on the laundry resolution. The 1976 Talisman independently describes him as a Pike \"representative to the Associated Student Government.\"",
+        "Congress's own attendance roster for the year lists him among the members tracked for meetings missed."
+       ],
        "src": {
         "label": "Student Insight, supplement to the Herald, 27 Apr 1976",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5151/"
+       },
+       "src2": {
+        "label": "1976 Talisman, Greeks (Pi Kappa Alpha)",
+        "url": "https://archive.org/details/talisman1976west"
+       },
+       "src3": {
+        "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
+        "url": "https://archive.org/details/talisman1976west"
        }
       }
      ],
@@ -9221,6 +9233,10 @@
        "office": "Parliamentarian",
        "name": "Jeff Morris",
        "note": "Appointed by President Fuller with the consent of Congress, 7 October 1980; moved floor motions the same meeting and reported on the Big Red costume under Old Business, 11 November 1980. Succeeded by Kevin Strader by 20 January 1981.",
+       "profile": [
+        "Morris was appointed parliamentarian of the Associated Student Government by President Steve Fuller, with Congress's consent, at the meeting of 7 October 1980. He moved floor motions that same evening, and on 11 November 1980 he reported to Congress on the Big Red mascot costume under old business.",
+        "Kevin Strader had succeeded him as parliamentarian by the Congress meeting of 20 January 1981; the record does not say why the post changed hands."
+       ],
        "src": {
         "label": "ASG Minutes, 7 Oct 1980",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/255"
@@ -9230,18 +9246,47 @@
        "office": "Parliamentarian",
        "name": "Kevin Strader",
        "note": "Appointed by President Fuller with the consent of Congress, 20 January 1981, succeeding Jeff Morris; moved to dispense with the reading of the minutes the same meeting, and moved adjournment on 17 February and 31 March 1981.",
+       "profile": [
+        "Strader was appointed parliamentarian of the Associated Student Government by President Steve Fuller, with Congress's consent, on 20 January 1981, succeeding Jeff Morris. He moved to dispense with the reading of the minutes at that meeting, and moved adjournment on 17 February and 31 March 1981.",
+        "The 1981 Talisman also profiles a Kevin Strader as president of the Interhall Council, the residence-hall student government, describing its purpose as making \"residence halls a better place to live\" and crediting the council with sponsoring that year's Parents' Day and Hall Olympics. The yearbook pictures a Kevin Strader in both the Associated Student Government and the Interhall Council group photographs, and its name index carries one person who could be either, entered as Strader, John Kevin. That is circumstantial, and the archive does not confirm that the parliamentarian and the council president were the same man."
+       ],
        "src": {
         "label": "ASG Minutes, 20 Jan 1981",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/272"
+       },
+       "src2": {
+        "label": "1981 Talisman, Interhall Council",
+        "url": "https://archive.org/details/talisman1981west"
        }
       },
       {
        "office": "Judicial Council Member",
        "name": "Paul J. Deom",
        "note": "Wrote to the Herald in February 1982, identified in the article index as a former member of the Judicial Council, airing grievances after being replaced. The 1981 Talisman independently names Paul Deom, a junior from Boonville, Indiana, as an Associated Student Government member this year, and as the student who took the dormitory room inspection question to the Kentucky Civil Liberties Union after ASG defeated the resolution against the inspections.",
+       "profile": [
+        "Deom, a junior from Boonville, Indiana, was an Associated Student Government member and Judicial Council representative in 1980-81 when he broke with ASG over the university's dormitory room-inspection policy. After Congress defeated a resolution against the inspections 16-13, he contacted the Kentucky Civil Liberties Union and asked it to investigate, and, working with campus KCLU chapter president Michael Taylor, joined the effort to build a broader Bowling Green chapter of the group drawing in non-student residents.",
+        "ASG did not follow him. After the KCLU took up the matter, Congress defeated a second resolution against the inspections and re-endorsed the university's policy; the 1981 Talisman's own account of the vote is inconsistent, giving the tally as both 24-9, with three abstentions, and separately as 29-4. Administrative vice president Mark Wilson argued in the debate that fire-safety checks should not be equated with search and seizure, and that if the resolution passed, dorm residents' rights would be waived.",
+        "By February 1982 Deom was no longer on the Judicial Council. The Herald's 4 February 1982 issue carried a letter from him, headlined \"Former Judicial Council Member Irked,\" and two further letters followed in reply: M. A. Baker's \"Paul Deom Honorable\" on 9 February and Winston Stevenson's \"Paul Deom Defended\" on 18 February. The archive does not yet hold the text of any of the three, so what exactly was in dispute is not established beyond what the headlines record."
+       ],
        "src": {
         "label": "Herald 57:37, 4 Feb 1982",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2443"
+       },
+       "src2": {
+        "label": "1981 Talisman, Kentucky Civil Liberties Union, p. 266",
+        "url": "https://archive.org/details/talisman1981west"
+       },
+       "src3": {
+        "label": "1981 Talisman, \"A year of resolutions\", pp. 282-83",
+        "url": "https://archive.org/details/talisman1981west"
+       },
+       "src4": {
+        "label": "Herald 57:38, 9 Feb 1982, \"Paul Deom Honorable\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2444"
+       },
+       "src5": {
+        "label": "Herald 57:41, 18 Feb 1982, \"Paul Deom Defended\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2447"
        }
       }
      ],
@@ -15382,6 +15427,9 @@
        "office": "Parliamentarian",
        "name": "Daryl Pepper",
        "note": "Accepted by motion and sworn in at the first meeting of the year, 29 August 1989.",
+       "profile": [
+        "Pepper was accepted by motion and sworn in as parliamentarian of the Associated Student Government at Congress's first meeting of the year, 29 August 1989, a meeting that also covered Judicial Board candidates, the inclusion of Glasgow campus representatives and freshman elections. The archive does not yet record anything further about his time in the post."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Aug 1989",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/78"
@@ -15391,6 +15439,10 @@
        "office": "Chairman of the Legislative Research Committee",
        "name": "Daniel Duffy",
        "note": "Approved as chairman by motion on 29 August 1989. His committee handled Resolution 89-01-F and looked at putting a course on sexually transmitted diseases and AIDS before the university.",
+       "profile": [
+        "Duffy had been a rank-and-file Congress member the year before, named the contact for the Student Rights committee on 15 November 1988 and Congress Person of the Week twice, on 28 November 1988 and 31 January 1989. In the Herald of 9 February 1989 he wrote a letter headlined \"Faulty Proposal,\" criticizing a proposed change to general education requirements, and he was nominated for a Congress award in two categories on 21 March 1989.",
+        "Congress approved him as chairman of the Legislative Research Committee on 29 August 1989. His committee handled Resolution 89-01-F and looked into bringing a course on sexually transmitted diseases and AIDS before the university. By 5 December 1989 Duffy had resigned from ASG; he recommended Greg Willoughby and Joe Rains as the committee's chairman and vice-chairman, and Congress formally accepted them that meeting."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Aug 1989 and 10 Oct 1989",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/78"
@@ -15400,6 +15452,10 @@
        "office": "Chairman of Student Affairs",
        "name": "Bill Engle",
        "note": "Approved as one of two chairmen of Student Affairs on 29 August 1989, alongside Brian Sewell.",
+       "profile": [
+        "Engle joined Congress in 1988-89, accepted by floor motion as Business College alternate on 22 November 1988 and then as Business College representative on 28 November 1988; he reported for the Business College Academic Council on 17 January 1989. On 31 January 1989 Congress accepted him by floor motion as co-chair of the Student Affairs committee alongside Brian Sewell, and he was nominated for a Congress award on 21 March 1989.",
+        "He and Sewell continued as co-chairmen of Student Affairs into 1989-90, approved in that role at Congress's first meeting of the year, 29 August 1989."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Aug 1989",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/78"
@@ -15409,6 +15465,10 @@
        "office": "Chairman of Student Affairs",
        "name": "Brian Sewell",
        "note": "Approved as one of two chairmen of Student Affairs on 29 August 1989, alongside Bill Engle.",
+       "profile": [
+        "Sewell was named a Congress Person of the Week on 18 October 1988 and moved to an off-campus representative seat on 24 January 1989. On 31 January 1989 Congress accepted him by floor motion as co-chair of the Student Affairs committee alongside Bill Engle. In the Herald of 4 April 1989 he wrote a letter headlined \"Loyalty, Leadership,\" backing Amos Gott's campaign for Associated Student Government president.",
+        "He and Engle continued as co-chairmen of Student Affairs into 1989-90, approved in that role at Congress's first meeting of the year, 29 August 1989."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Aug 1989",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/78"
