@@ -329,8 +329,10 @@ git ls-remote --heads origin
 git rev-list --left-right --count origin/main...origin/<branch>
 ```
 
-**As of the 21 August overnight pass, no pull request is open.** All four branches
-that were open that night — `research-backlog` (#80), `research-photos` (#81),
+**As of the 21 August overnight pass, no pull request was open; PR #109 (`research-backlog`)
+is now open again, from the scheduled run later that day** (the Eaton alias fix and the
+1979-80/1992-93 access notes above). All four branches that were open the previous night —
+`research-backlog` (#80), `research-photos` (#81),
 `research-profiles` (#82) and `research-senate` (#83) — were reviewed and merged,
 each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
 21 August.
