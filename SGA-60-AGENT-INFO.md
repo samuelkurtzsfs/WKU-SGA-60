@@ -504,25 +504,32 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
      fact-by-fact re-read of those against the sentences they support has
      still not been done — lower priority than the roster pages, since an
      article permalink is a stronger kind of source to begin with, but still
-     open for a future pass. `viewcontent.cgi` was not reachable this run
-     either (see the 1992-93 item below).
-5. **Content-check the 1992-93 roll — still open, one sub-finding confirmed 21
-   August.** Sixty-six names were merged on a night when the minutes PDFs were
-   unreachable, so they were never read against the meetings they cite; that is
-   still true, `viewcontent.cgi` gave the same empty-body 202 WAF challenge on
-   article 1918 (item 406's PDF) on repeated tries this run, both directly and
-   through an independent adversarial check. What is now confirmed rather than
-   suspected: TopSCHOLAR's own landing-page metadata for item 406 gives a start
-   date of 20 September 1992, and that date really is a Sunday (checked by direct
-   calculation, not assumed); the three neighbouring dated meetings that autumn —
-   items 410, 408 and 405, 8, 15 and 29 September — are all confirmed Tuesdays, so
-   22 September is the more likely true date for item 406, though this is an
-   inference from the weekday pattern, not a reading of the document itself. Noted
-   on `organization.senate.note` for 1992-93 in `data/years.json`, with the five
-   names sourced to item 406 (Bland, Ezell, Griggs, Smith, Wagner) explicitly
-   flagged as still unread against primary text. Whoever next gets that PDF open —
-   or any of the other 19 minutes items behind the other 61 names — should settle
-   it properly.
+     open for a future pass. `viewcontent.cgi` refused the research run but
+     opened later the same day for the editor's pass (see the 1992-93 item
+     below).
+5. **Content-check the 1992-93 roll — item 406 settled 21 August, the other 19
+   items still open.** Sixty-six names were merged on a night when the minutes
+   PDFs were unreachable, so they were never read against the meetings they
+   cite. That is still true of 61 of them.
+
+   Item 406 is now done, and the dating anomaly is resolved rather than
+   inferred. `viewcontent.cgi` refused the research run but was open during the
+   editor's pass the same day, and article 1918 came down on the first request.
+   **The document is headed 22 September 1992** — a Tuesday, like the other
+   dated meetings that autumn (items 410, 408 and 405, on 8, 15 and 29
+   September). TopSCHOLAR's catalogue date of 20 September is a Sunday and is
+   simply wrong; the archive follows the minutes. The meeting was called to
+   order at 5.05 p.m. by President Joe Rains, and all five names this archive
+   takes from item 406 — Bland, Ezell, Griggs, Smith and Wagner — are in its
+   roll call, each recorded absent that night. That confirms them as members,
+   which is what the entries claim.
+
+   Two things worth carrying forward. `viewcontent.cgi` is intermittent by the
+   hour, not by the day: a 202 challenge is worth retrying in a later session
+   before it goes in the handoff as blocked. And the remaining 61 names sit
+   behind 19 other minutes items in the same series, all of which can be pulled
+   the same way (land on the item page, then request the article with a
+   `Referer` back to it) whenever the window is open.
 6. ~~The 2013-14 charging-stations entry is written from a first-read report.~~
    **Done, 21 August.** The story was more complicated than either the 24 October
    advance notice or the 30 October follow-up alone: the Senate amended and passed
