@@ -946,10 +946,21 @@
       {
        "office": "Sophomore Class President",
        "name": "Frank Genzianelli",
-       "note": "Stood for president of Associated Students in the spring 1969 election and lost to Larry Zielke.",
+       "note": "Stood for president of Associated Students in the spring 1969 election and lost to Larry Zielke. The identification with the 1969 presidential candidate of the same name rests on the surname (rare in this archive) and a clean class-year progression (sophomore in 1967-68, running for the office as an upperclassman two years later), not on an independent corroborating detail such as photo or major.",
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       },
+       "profile": [
+        "Frank Genzianelli served as sophomore class president in Associated Students for 1967-68. A candidate of the same name came through the presidential primary alongside Larry Zielke, the Herald of 20 March 1969 reporting that both had scored in it, and the paper's Associated Students election special edition of 25 March 1969 set the two against each other for the presidency. Zielke took the office for 1969-70."
+       ],
+       "src2": {
+        "label": "Herald 48:22, 20 Mar 1969",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2103"
+       },
+       "src3": {
+        "label": "Herald 48:23, 25 Mar 1969",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2104"
        }
       },
       {
@@ -18174,6 +18185,18 @@
        "src": {
         "label": "SGA Minutes, 25 Aug 1992 and 9 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
+       },
+       "profile": [
+        "Eric McWilliams was named chair of the Senate's Campus Improvements Committee on 25 August 1992, in the first Congress meeting of Joe Rains's administration. By February 1993 he had moved to chair Student Affairs instead, whose resolution proposing a study day before exam week passed unanimously on 9 February. He was one of two authors of Resolution 91-6-F, which opposed Joe Iracane's re-election as chairman of the Board of Regents.",
+        "McWilliams ran for the Student Government Association presidency himself that spring, one of two juniors in the 1993 race against fellow committee chair Donald Smith. Smith won the 22 April 1993 election, which the Herald reported under the headline \"Donald Smith Rolls to Victory.\""
+       ],
+       "src2": {
+        "label": "Herald 68:46, 30 Mar 1993",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7829"
+       },
+       "src3": {
+        "label": "Herald 68:54, 22 Apr 1993",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7837"
        }
       },
       {
@@ -18183,6 +18206,17 @@
        "src": {
         "label": "SGA Minutes, 25 Aug 1992; ASG Resolution 91-6-F",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/414"
+       },
+       "profile": [
+        "Mark Miller was named chair of the Senate's Public Relations Committee on 25 August 1992, at the start of Joe Rains's administration, and co-authored Resolution 91-6-F with Eric McWilliams, opposing Joe Iracane's re-election as chairman of the Board of Regents. An opinion piece in the Herald's 14 April 1992 special election issue, printed alongside endorsements for presidential candidates Joe Rains, Melony Jones and Mistianna Holcomb, argued that Miller's campus involvement made him a leader; it did not name which office he sought. Rains won that spring's presidency. Two years later the Herald printed an opinion piece by Donald Smith and a Mark Miller urging the Class of 1994 to give back to Western; the shared name and Smith's own service in the same Congress make it likely, but not certain, that this is the same Miller."
+       ],
+       "src2": {
+        "label": "Herald 67:52, 14 Apr 1992",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7706"
+       },
+       "src3": {
+        "label": "Herald 69:48 [49], 7 Apr 1994",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7876"
        }
       },
       {
@@ -19310,7 +19344,10 @@
        "src": {
         "label": "SGA Minutes, 31 Aug 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
-       }
+       },
+       "profile": [
+        "Deanna Mills was approved to the Associated Student Government's five-member Judicial Council at Congress's first meeting of 1993-94, on 31 August 1993. The archive has found no further record of her Judicial Council service."
+       ]
       },
       {
        "office": "Judicial Council Member",
@@ -19346,7 +19383,10 @@
        "src": {
         "label": "SGA Minutes, 31 Aug 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
-       }
+       },
+       "profile": [
+        "Kenny May was appointed parliamentarian at the same 31 August 1993 meeting that seated the Judicial Council and approved that year's committee heads."
+       ]
       },
       {
        "office": "Chairperson, Academic Affairs",
@@ -20083,7 +20123,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 30 Aug 1994",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/103"
-       }
+       },
+       "profile": [
+        "May returned the following year as foreman of the Judicial Council, approved at Congress's first meeting of 1994-95 on 30 August 1994."
+       ]
       },
       {
        "office": "Judicial Council Member",
@@ -20187,6 +20230,18 @@
        "src": {
         "label": "SGA Meeting Minutes, 30 Aug 1994",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/103"
+       },
+       "profile": [
+        "Jason Young was named chair of the Senate's Public Relations Committee at Congress's first meeting of 1994-95, on 30 August 1994.",
+        "The following spring, Young ran for the Student Government Association presidency. The Herald of 6 April 1995 covered him together with Jason Hays under the heading \"Jason Young, Jason Hays Back New Level\"; what office Hays sought, and whether the two ran as a ticket, the archive has not established. Young lost to Tara Higdon, the paper's issue of 18 April 1995 carrying the two candidates' closing statements on the day of the vote."
+       ],
+       "src2": {
+        "label": "Herald 70:50, 6 Apr 1995",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7931"
+       },
+       "src3": {
+        "label": "Herald 70:53, 18 Apr 1995",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8003"
        }
       },
       {
@@ -22064,7 +22119,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 19 Nov 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/563"
-       }
+       },
+       "profile": [
+        "Josh Detre served as parliamentarian in 1996-97 and received one of the Senate's Public Relations awards at the 19 November 1996 meeting."
+       ]
       },
       {
        "office": "Sergeant of Arms",
@@ -23520,6 +23578,13 @@
        "src": {
         "label": "SGA Meeting Minutes, 9 Sep 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152"
+       },
+       "profile": [
+        "Detre continued as parliamentarian in 1997-98, moving at the 9 September 1997 meeting that all candidates running unopposed be accepted by acclamation. He ran for the presidency himself in spring 1998, and the Herald profiled him on election day under the headline \"Josh Detre Doesn't Fit Traditional Mold.\" Stephanie Cosby won the election."
+       ],
+       "src2": {
+        "label": "Herald 73:52, 28 Apr 1998",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7981"
        }
       },
       {
@@ -25094,6 +25159,13 @@
        "src": {
         "label": "SGA Meeting Minutes, 17 Nov 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/189"
+       },
+       "profile": [
+        "Laura Hancock ran for Student Government Association vice president in spring 1998, in a race the Herald covered on 16 April under the headline \"Race for Student Government Association Vice Presidency Heats Up.\" Her opponent, Chad Lewis, won the office. Congress appointed Hancock chair of the Senate's Campus Improvements Committee at the July 1998 executive retreat instead; her committee worked on campus lighting, ashtrays, a Habitat for Humanity project and adding copy machines on campus. She was nominated in April 1999 for both the Dero Downing and Mary Angela Norcia awards."
+       ],
+       "src2": {
+        "label": "Herald 73:50, 16 Apr 1998",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7980"
        }
       },
       {
@@ -25112,6 +25184,13 @@
        "src": {
         "label": "SGA Executive Council Minutes, 18-19 Jul 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/335"
+       },
+       "profile": [
+        "Amy France ran for Student Government Association public relations director in the spring 1998 election, one of three candidates the Herald named on 9 April in a story headlined \"Race for Public Relations Post Heating Up,\" alongside Christoph Miller and Brad Sweatt. Sweatt won the office. Congress appointed France chair of the Senate's Public Relations Committee at the July 1998 executive retreat instead, but by the first Congress meeting that September the committee was already reporting under a successor, Amanda Cole."
+       ],
+       "src2": {
+        "label": "Herald 73:48, 9 Apr 1998",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7978"
        }
       },
       {
@@ -25138,7 +25217,10 @@
        "src": {
         "label": "SGA Executive Council Minutes, 18-19 Jul 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/335"
-       }
+       },
+       "profile": [
+        "After losing the presidency, Detre stayed active in the Senate, co-chairing the Hillraisers Committee in 1998-99 under president Stephanie Cosby."
+       ]
       }
      ],
      "members": [
@@ -38719,6 +38801,23 @@
        "label": "SGA Senate minutes, 13 Sep 2016",
        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      },
+      "profile": [
+       "Hart had chaired SGA's Academic Affairs committee before running as Jay Todd Richey's running mate for executive vice president in the April 2016 election. Richey was re-elected president with 1,497 of 2,341 votes cast, and Hart was elected executive vice president over senator Zach Jones the same night.",
+       "The Senate's 13 September 2016 minutes show Hart's office coordinating correspondence between senators and their assigned university-committee contacts and running that year's homecoming queen nomination, which put forward Hannah Neeper alongside Hart's own name and Andi Dahmer's.",
+       "She co-authored, with President Richey, Bill 1-17-S, a constitutional amendment reforming how WKU's regional campuses at Elizabethtown-Fort Knox, Glasgow and Owensboro were represented in SGA, replacing the old \"Regional Affiliates\" structure with elected \"Regional Ambassadors\"; the Senate passed it 30-0 in February 2017. She separately authored Bill 27-17-S, making the SGA SAVES committee, which addressed mental health and sexual assault awareness, a permanent standing committee under the Constitution; it passed 27-0-1 that April."
+      ],
+      "src2": {
+       "label": "Herald, 21 Apr 2016",
+       "url": "https://wkuherald.com/32654/news/richey-wins-high-turnout-sga-election/"
+      },
+      "src3": {
+       "label": "SGA legislation: Bill to Amend the Constitution of the WKU Student Government Association (1-17-S)",
+       "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill_1-17-s.pdf"
+      },
+      "src4": {
+       "label": "SGA legislation: A Bill to Amend the Constitution of the Student Government Association of Western Kentucky University (27-17-S)",
+       "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill_27-17-s.pdf"
       }
      },
      {
@@ -38737,6 +38836,23 @@
        "label": "SGA Senate minutes, 13 Sep 2016",
        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      },
+      "profile": [
+       "Neeper chaired SGA's MyCampusToo committee in 2015-16, closing that year by announcing the committee's World Festival at the Senate's final spring meeting. She then ran as administrative vice president on Jay Todd Richey's ticket and was elected in April 2016, telling the Herald afterward, \"I feel wonderful.\"",
+       "As administrative vice president that year, bills before the Senate repeatedly name her chair of the Organizational Aid committee, sponsoring or authoring appropriations to student organizations including the WKU Horticulture Club, the Indian Student Association, Women in Science and Engineering, Young Life, Sigma Tau Delta, Kappa Sigma and the Nonprofit Student Association, among others.",
+       "In April 2017 she and Chief of Staff James Line proposed a Senate resolution supporting future faculty pay raises, after the Faculty Senate had unanimously approved a concurrent resolution of its own. The SGA resolution passed. Neeper said it was meant to show that students and not only faculty wanted the raises, arguing that classroom morale \"affects [students] as much as it affects [faculty].\""
+      ],
+      "src2": {
+       "label": "Herald, 27 Apr 2016",
+       "url": "https://wkuherald.com/32227/news/sga-holds-last-meeting-of-the-year-passses-all-remaining-legislation/"
+      },
+      "src3": {
+       "label": "Herald, 21 Apr 2016",
+       "url": "https://wkuherald.com/32654/news/richey-wins-high-turnout-sga-election/"
+      },
+      "src4": {
+       "label": "Herald, 12 Apr 2017",
+       "url": "https://wkuherald.com/29267/news/sga-supports-prioritizing-future-faculty-raises/"
       }
      },
      {
@@ -38854,6 +38970,19 @@
        "label": "SGA Senate minutes, 13 Sep 2016",
        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      },
+      "profile": [
+       "Knight served as SGA's Director of Academic and Student Affairs in 2016-17. The Senate's 13 September 2016 minutes record him reporting 13 applications already in for the Earn-a-Computer program, and a week later he told the Senate he planned to work with WKU Athletics on a partnership to raise student attendance at games.",
+       "That November he was a lead co-author, with senators Chase Coffey, Jody Dahmer, Francisco Serrano and Andi Dahmer, of Bill 14-16-F, which created the Jonesville Memorial Scholarship: $750 for incoming Black students who graduated from the Warren County or Bowling Green school systems, named for the historically Black Jonesville neighborhood WKU's 1963 campus expansion displaced. It passed 27-4-1.",
+       "He also authored or sponsored several of the year's other scholarship bills, including funding for study-abroad awards and SGA's general scholarship recipients, and the following spring sponsored a constitutional amendment updating the duties of the Academic Affairs and Student Affairs committees."
+      ],
+      "src2": {
+       "label": "SGA Senate minutes, 20 Sep 2016 (Herald report)",
+       "url": "https://wkuherald.com/31220/news/sga-university-senate-appoints-new-members/"
+      },
+      "src3": {
+       "label": "SGA legislation: Funding for the Jonesville Scholarship (14-16-F)",
+       "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill-14-16-f.pdf"
       }
      },
      {
@@ -38863,6 +38992,14 @@
        "label": "SGA Senate minutes, 13 Sep 2016",
        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      },
+      "profile": [
+       "Bose served as SGA's Director of Information Technology in 2016-17; the Senate's 13 September 2016 minutes record his report as simply that the SGA website was being updated regularly.",
+       "That spring the Herald named him the newly elected chair of the Indian Student Association, ahead of its April 2017 Holi festival on the Honors College lawn."
+      ],
+      "src2": {
+       "label": "Herald, 3 Apr 2017",
+       "url": "https://wkuherald.com/29046/news/indian-student-group-to-host-traditional-celebration/"
       }
      },
      {
@@ -38872,6 +39009,23 @@
        "label": "SGA Senate minutes, 13 Sep 2016",
        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_13_16.pdf",
        "file": "2016-17-senate-minutes-smm-9-13-16.pdf"
+      },
+      "profile": [
+       "Burke served as SGA's Director of Public Relations in 2016-17, reporting to the Senate that September on tabling and voting-booth outreach in Centennial Mall during senate elections.",
+       "In November 2016 he was the public face of SGA's new SafeWalk initiative, a phone line students could call to get a walking companion on campus at night. He told the Herald the idea came directly from students who \"didn't feel safe on campus\" but did not want to call police over something that was not an emergency.",
+       "That February he authored Bill 6-17-S, allocating $100 in SGA funds toward \"Love Has No Borders,\" a Feb. 10, 2017 event co-sponsored with the International Diplomats supporting WKU's international students after a federal executive order restricted travel from seven countries; the bill noted 22 WKU students came from the affected countries."
+      ],
+      "src2": {
+       "label": "Herald, 14 Sep 2016",
+       "url": "https://wkuherald.com/31433/news/news-campus-government/sga-appoints-three-chairs-discusses-two-bills/"
+      },
+      "src3": {
+       "label": "Herald, 16 Nov 2016",
+       "url": "https://wkuherald.com/30659/news/sga-implements-new-campus-safety-initiative/"
+      },
+      "src4": {
+       "label": "SGA legislation: Funding for the SGA and International Diplomats Event “Love Has No Borders” (6-17-S)",
+       "url": "https://www.wku.edu/sga/accountability/bill-6-17-s.pdf"
       }
      },
      {
@@ -39980,6 +40134,27 @@
       "src": {
        "label": "SGA Senate minutes, 12 Sep 2017",
        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      },
+      "profile": [
+       "Molyneaux chaired SGA's Sustainability committee in 2016-17 before running for re-election as executive vice president in April 2018 on a ticket with presidential candidate Conner Hounshell and Administrative Vice President Kara Lowry. Days before the vote, the Judicial Council disqualified, then suspended, the rival Mayer-Edmonds-Anderson ticket over a Pepe the Frog meme in its campaign chalking; Stephen Mayer's ticket was reinstated to run and won, with Hounshell's ticket placing second. Molyneaux, Lowry and Hounshell were all elected senators instead.",
+       "In February 2018 she joined President Andi Dahmer, Lowry and Hounshell in writing Resolution 3-18-S opposing the scale of a renegotiated Aramark dining-fee increase, which would have raised a per-semester fee on students without meal plans from $75 toward $350 over ten years; the Senate passed it unanimously.",
+       "At the Senate's final meeting of the year, Molyneaux spoke about what she called an \"awful\" year for the executive board, describing sexism and misogyny within the Senate and backing Dahmer's account, reported the same week, of harassment she said she had faced as president. Molyneaux cited the threatening note left on Dahmer's car and the derogatory names used in the SGA offices, and told senators who had taken part in it to think about what they had done."
+      ],
+      "src2": {
+       "label": "Herald, 18 Apr 2018",
+       "url": "https://wkuherald.com/24339/news/sga-election-results-announced-formerly-disqualified-mea-ticket-elected-2/"
+      },
+      "src3": {
+       "label": "Herald, 28 Feb 2018",
+       "url": "https://wkuherald.com/25946/news/sga-passes-resolution-supporting-aramark-renegotiations/"
+      },
+      "src4": {
+       "label": "Herald, 25 Apr 2018",
+       "url": "https://wkuherald.com/24584/news/sga-executives-share-final-words-to-senate/"
+      },
+      "src5": {
+       "label": "Herald, 24 Apr 2018",
+       "url": "https://wkuherald.com/24696/news/sga-president-details-harassment-experience/"
       }
      },
      {
@@ -39988,6 +40163,23 @@
       "src": {
        "label": "SGA Senate minutes, 12 Sep 2017",
        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      },
+      "profile": [
+       "Lowry served as SGA's administrative vice president in 2017-18 and ran for re-election that April on the Hounshell-Molyneaux-Lowry ticket, which placed second behind the Mayer-Edmonds-Anderson ticket after a Judicial Council fight over a campaign meme; Lowry was elected a senator instead.",
+       "She went with President Andi Dahmer to the Title IX office in early 2018 as a witness supporting Dahmer's harassment complaint, and in February co-authored Resolution 3-18-S with Dahmer, Molyneaux and Chief of Staff Conner Hounshell opposing the scale of a renegotiated Aramark dining-fee increase.",
+       "She authored the Senate's original \"Go With the Flow\" bill funding feminine hygiene products in campus restrooms; a Herald report on the program's 2020 renewal, after she had left office, still credited her by name as the bill's original author."
+      ],
+      "src2": {
+       "label": "Herald, 24 Apr 2018",
+       "url": "https://wkuherald.com/24696/news/sga-president-details-harassment-experience/"
+      },
+      "src3": {
+       "label": "Herald, 28 Feb 2018",
+       "url": "https://wkuherald.com/25946/news/sga-passes-resolution-supporting-aramark-renegotiations/"
+      },
+      "src4": {
+       "label": "Herald, 12 Feb 2020",
+       "url": "https://wkuherald.com/16573/news/sga-bill-creates-additional-funding-for-feminine-hygiene-products-in-campus-restrooms/"
       }
      },
      {
@@ -40014,6 +40206,23 @@
       "src": {
        "label": "SGA legislation: Amend the Constitution of the Student Government Association of Western Kentucky University 1-17-F Conner Hounshell Student Affairs",
        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-1-17-f.pdf"
+      },
+      "profile": [
+       "Hounshell served as SGA's Chief of Staff in 2017-18 and ran for president that April on a ticket with Executive Vice President Savannah Molyneaux and Administrative Vice President Kara Lowry, both seeking re-election. Days before the vote the Judicial Council disqualified, then suspended, the rival Mayer-Edmonds-Anderson ticket over a Pepe the Frog meme in its campaign chalking. Hounshell's ticket won 33 percent of the presidential vote to Mayer's 35 percent; all three were elected senators instead.",
+       "In February 2018 he co-authored Resolution 3-18-S with President Andi Dahmer, Molyneaux and Lowry, opposing the scale of a renegotiated Aramark dining-fee increase on students without meal plans.",
+       "He had recommended Garrett Edmonds, whom he met when Edmonds joined SGA in fall 2017, for the chair of the Campus Improvements committee, but by the following fall told the Herald his opinion of Edmonds had completely changed after the chalking controversy. The Herald's account of that criticism, and Edmonds's own answer to it, are in the article cited here; the archive does not restate one side of it in the other man's record."
+      ],
+      "src2": {
+       "label": "Herald, 18 Apr 2018",
+       "url": "https://wkuherald.com/24339/news/sga-election-results-announced-formerly-disqualified-mea-ticket-elected-2/"
+      },
+      "src3": {
+       "label": "Herald, 28 Feb 2018",
+       "url": "https://wkuherald.com/25946/news/sga-passes-resolution-supporting-aramark-renegotiations/"
+      },
+      "src4": {
+       "label": "Herald, 22 Oct 2018",
+       "url": "https://wkuherald.com/23183/news/sga-vice-president-moves-forward-after-election-controversy/"
       }
      },
      {
@@ -40112,6 +40321,24 @@
       "src": {
        "label": "SGA Senate minutes, 12 Sep 2017",
        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      },
+      "profile": [
+       "Houston served as SGA's Director of Academic and Student Affairs for two years running through 2017-18, after having chaired student affairs the year before. The Senate's minutes that September show her office already at work on scholarship deadlines and study-abroad funding.",
+       "In April 2018 she was one of the executive board members who spoke publicly about President Andi Dahmer's harassment experience, telling the Herald that derogatory language from senators was \"only directed toward the female executive board members\" in the SGA office.",
+       "At the Senate's final meeting that April she told senators SGA had \"never allowed\" a toxic environment to take hold during her two previous years in the office, and said she was disheartened by what had unfolded that year and hoped SGA's culture would change."
+      ],
+      "src2": {
+       "label": "SGA Senate minutes, 12 Sep 2017",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf",
+       "file": "2017-18-senate-minutes-09-12-17.pdf"
+      },
+      "src3": {
+       "label": "Herald, 24 Apr 2018",
+       "url": "https://wkuherald.com/24696/news/sga-president-details-harassment-experience/"
+      },
+      "src4": {
+       "label": "Herald, 25 Apr 2018",
+       "url": "https://wkuherald.com/24584/news/sga-executives-share-final-words-to-senate/"
       }
      },
      {
@@ -40129,6 +40356,24 @@
       "src": {
        "label": "SGA Senate minutes, 12 Sep 2017",
        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      },
+      "profile": [
+       "Peter served as SGA's Director of Information Technology in 2017-18, filing no report at the Senate's 12 September and 24 October meetings that fall.",
+       "In March 2018 she led Bill 14-18-S with Administrative Vice President Kara Lowry and Chief of Staff Conner Hounshell, allocating $450 in Senate funds, matched by the executive board, toward the Indian Student Association's Holi Festival on South Lawn that month.",
+       "At the Senate's final meeting that April, amid the year's disputes over sexism in the chamber, Peter told senators that \"everyone on this campus is special and deserves respect\" and that the Senate should never judge anyone based on gender."
+      ],
+      "src2": {
+       "label": "SGA Senate minutes, 12 Sep 2017",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf",
+       "file": "2017-18-senate-minutes-09-12-17.pdf"
+      },
+      "src3": {
+       "label": "SGA legislation: Funding for the WKU Indian Student Association Holi Festival (14-18-S)",
+       "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-14-18-s.pdf"
+      },
+      "src4": {
+       "label": "Herald, 25 Apr 2018",
+       "url": "https://wkuherald.com/24584/news/sga-executives-share-final-words-to-senate/"
       }
      },
      {
@@ -40137,6 +40382,32 @@
       "src": {
        "label": "SGA Senate minutes, 12 Sep 2017",
        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
+      },
+      "profile": [
+       "Wyer chaired SGA's Academic Affairs committee in 2016-17 before serving as Director of Public Relations in 2017-18. Senate minutes that fall show her taking photos and video for SGA's social media and coordinating tabling at basketball games.",
+       "At the Senate's final meeting in April 2018 Wyer used her officer report to answer claims circulating that SGA was taking money from Greek organisations, telling senators those organisations were funded by their own members and that SGA had no power over their money. She then spoke about the importance of intervening when a bystander sees something wrong, and disclosed something of her own experience that year; the archive leaves what she said in the Herald's account rather than repeating it here.",
+       "She stayed in SGA after her term as an officer ended, taking the SGA SAVES chair in the spring of 2019 after the seat had stood vacant since January."
+      ],
+      "src2": {
+       "label": "Herald, 14 Sep 2016",
+       "url": "https://wkuherald.com/31433/news/news-campus-government/sga-appoints-three-chairs-discusses-two-bills/"
+      },
+      "src3": {
+       "label": "SGA Senate minutes, 12 Sep 2017",
+       "url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf",
+       "file": "2017-18-senate-minutes-09-12-17.pdf"
+      },
+      "src4": {
+       "label": "Herald, 25 Apr 2018",
+       "url": "https://wkuherald.com/24584/news/sga-executives-share-final-words-to-senate/"
+      },
+      "src5": {
+       "label": "Herald, 18 Apr 2018",
+       "url": "https://wkuherald.com/24339/news/sga-election-results-announced-formerly-disqualified-mea-ticket-elected-2/"
+      },
+      "src6": {
+       "label": "SGA Senate minutes, 16 Apr 2019",
+       "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-16-apr.docx"
       }
      },
      {
@@ -40299,7 +40570,7 @@
        "office": "Speaker of the Senate",
        "name": "Ryan Richardson",
        "profile": [
-        "Ryan Richardson was Speaker of the Senate in 2017-18, under President Andi Dahmer. He presided over the Senate's contentious March 2018 debate on funding Lavender Graduation stoles for LGBTQ students, in which Senator Dallas McKinney explained his opposing vote by reading Bible verses and other senators spoke against deciding university business from scripture.",
+        "Ryan Richardson was Speaker of the Senate in 2017-18, under President Andi Dahmer. He presided over the Senate's contentious spring 2018 business on funding Lavender Graduation stoles for LGBTQ students: the bill passed 28-5 on 20 March with Senator Dallas McKinney speaking against it without giving a reason, and at the following meeting on 27 March McKinney returned to explain that vote, citing his reading of the Bible, after which other senators spoke against deciding university business from scripture.",
         "Earlier that month, on 6 March 2018, the Judicial Council met online and dismissed Senator Annabelle Ford from the Senate for failing to notify the Judicial Council, President Dahmer or Speaker Richardson of the reasons for her unexcused absences."
        ],
        "src": {
