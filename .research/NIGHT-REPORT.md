@@ -3216,3 +3216,82 @@ than the bare item page. Adversarial verifier: ACCEPT, no changes.
 
 `build.py`, `check_data.py` pass clean; `check_duplicates.py` reports the same
 six long-judged pairs and nothing new.
+
+# 21 August 2026, editor's pass — two branches reviewed, both merged, one date corrected
+
+Two pull requests were open, both cut from current main. The three stale 4 August
+branches named in the standing brief (#6 photographs, #7 the 1980s, #8 the 2020s)
+are gone from the open list and needed no decision.
+
+## Research: person profiles (#104) — merged as it stood
+
+Eleven 1993-95 committee officers and Judicial Council members gained profiles.
+Every one of the eight pieces of legislation cited was checked by opening the PDF
+in `data/legislation/` and reading its own AUTHOR and SPONSOR lines. All eight held
+exactly: Ahsan sole author of Bill 92-10-F; the six named co-authors of Resolution
+93-2-S; the five of 93-3-S including Eric McWilliams; Myers with Molly Schreiner on
+93-7-S; the five of 93-6-F including Cailles and Newton; Rucker on 94-04-S; Rucker
+with President Robert Evans on 94-1-1; Myers on Bill 94-06-S. Dates, sponsoring
+committees and the two unanimous-passage stamps all matched. Nothing cut.
+
+**A warning worth more than the merge.** The first pass of this review checked those
+claims against `data/legislation-authors.json` and four appeared to fail — McWilliams
+missing from 93-3-S, Cailles missing from 93-6-F, Myers filed as sponsor rather than
+author on 93-7-S, and 93-2-S absent altogether. The derived index was wrong in every
+case and the PDFs were right. That file drops authors and mislabels roles; it is a
+finding aid, not evidence. Trusting it would have deleted four correct facts. This is
+trap 7 running backwards — the derived artefact reporting less than the primary — and
+the rule that follows is: go to the PDF before cutting or adding a name.
+
+The Duncan handling in that branch is the standard to copy. Derrek Duncan of 1993-94
+and Derek Duncan of 1994-95 are kept as two people, the resemblance is stated, and the
+merge is explicitly declined in the profile itself. `name-aliases.json` rightly carries
+no Duncan pair.
+
+## Research: the backlog (#105) — merged after one correction
+
+The thirty-two Talisman citations are sound and were confirmed independently rather
+than taken on trust. archive.org's search-inside API puts three separate 1985-86
+senators (Velastegui, Wredman, Groemling) on leaf 198 of `talisman1986west` and three
+separate 1986-87 senators (Castleberry, Norcia, Smoot) on leaf 120 of `talisman1987west`,
+which is exactly what the new `/page/nNNN/mode/1up` anchors claim. The leaf captions
+were then read back against the recorded rosters: of the twenty-one names the OCR
+caption covers, all twenty-one sit in the row the file says they sit in. No mismatches.
+(The branch's own night-report entry lists the corroborating names under the wrong
+volumes — Velastegui and Groemling are 1986, not 1987. The prose is scrambled; the data
+is right.)
+
+The Judicial Council edit carried a real error and it was corrected before merging.
+Kappler's roster row was given a resignation date of 17 February 2009 — the day the
+print Herald carried the story — and had Bewley approved as her successor "two days
+later." The archive already held the contemporaneous report: the Herald of 12 February
+2009, mirrored on the Wayback Machine and cited by this year's own events, records that
+she resigned that Thursday night in a letter to President Kayla Shelton and student
+activities director Charley Pride. The Senate approved Bewley a week later, on the 19th.
+Her own 2007-08 profile and two event entries had said so all along, so the branch was
+introducing a contradiction against sourced material already in the file.
+
+The failure is the ordinary one: a TopSCHOLAR index date read as an event date. The
+back file is a print paper indexed by issue, and an issue date is when the story ran,
+never when the thing happened. The added profile paragraph was dropped as well — it
+retold a story her 2007-08 term already tells, and the alias layer folds both rows onto
+one person page, so it would have appeared twice in two versions.
+
+Keeping Kappler's office as "Clerk, Judicial Council" is right and was left alone: the
+14 October 2008 minutes say Clerk, the Herald says Chief Justice by February, and the
+hedge belongs in the note rather than in the office field. Bewley's "(successor)" follows
+the convention the file already uses for Morgan Gammons succeeding Ellen Henderson in
+2024-25.
+
+## Counts after both merges
+
+61 years, 2029 events, 60 people have been president. `build.py`, `check_data.py` and
+`check_contrib.py` all clean. `check_duplicates.py` reports the same six long-judged
+pairs and nothing new; neither branch added an event, so neither added a pair.
+
+## Still open
+
+The Herald article PDFs on TopSCHOLAR were unreachable for the whole of this pass —
+403, then an empty 202 behind the bot check, after the prescribed 90-second wait. The
+landing pages and abstracts answered fine. Anything needing an article body rather than
+a headline will have to wait for a run that gets through.
