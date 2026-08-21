@@ -30171,7 +30171,7 @@
       {
        "office": "Chair, Academic Affairs Committee",
        "name": "Josh Collins",
-       "note": "The senator who had drafted the spring 2004 impeachment articles against Nick Todd chaired Academic Affairs that year; he was still in the Senate in 2005-06 as Legislative Research chair.",
+       "note": "The senator who had drafted the spring 2004 impeachment articles against Nick Todd chaired Academic Affairs that year; he was still in the Senate in 2005-06 as Legislative Research chair. The Herald's photo caption for the 16 September 2004 fall senate election named him, a Jackson senior, as having won a seat on the student senate that fall.",
        "src": {
         "label": "WKU SGA legislative branch page, standing committees 2004-2005, archived 8 Feb 2005",
         "url": "https://web.archive.org/web/20050208023729/http://www.wku.edu/Dept/Org/Student/SGA/legislative.html"
@@ -30250,6 +30250,26 @@
        "src": {
         "label": "WKU SGA legislative branch page, standing committees 2004-2005, archived 8 Feb 2005",
         "url": "https://web.archive.org/web/20050208023729/http://www.wku.edu/Dept/Org/Student/SGA/legislative.html"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Paul Blevins",
+       "seat": "Senator",
+       "note": "A Campbellsville sophomore quoted in the Herald's report on the fall 2004 senate election saying he was \"excited about being elected to office\" — the article does not use the word \"senate\" in his quote, but he is quoted in the direct run of reactions from newly elected senators, and no other office was up for election that fall.",
+       "src": {
+        "label": "Herald 80:7, 16 Sep 2004 - Johnson, 23 senators win SGA elections",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9401"
+       }
+      },
+      {
+       "name": "Elizabeth White",
+       "seat": "Senator",
+       "note": "A Nashville sophomore who, per the Herald's report on the 15 September 2004 fall senate election, \"received the most senate votes with 359.\"",
+       "src": {
+        "label": "Herald 80:7, 16 Sep 2004 - Johnson, 23 senators win SGA elections",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9401"
        }
       }
      ]
