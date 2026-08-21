@@ -242,6 +242,19 @@ Everything struck through in earlier versions of this section has been moved int
 `.research/NIGHT-REPORT.md`, where the editor passes record what was done and why.
 What follows is only what is **not** done.
 
+**A note for whatever fires this session on a schedule (21 August):** at least one
+scheduled routine still exists with a stored prompt describing an older version of
+this backlog — the three unverified branch histories, 235 unmerged moments, 92
+officer candidates for 1979-80/2001-02/2003-04, and portraits for Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley. All of that is already done: the three
+`.research/branches-*.json` and `officers-unchecked.json` files it points at are
+now empty (`[]`), and all four named people already carry a portrait in
+`data/photos.json`. Reed Morgan and the Amanda Coates/Lich question are also
+already settled, in §7 above and in `CLAUDE.md`'s known-cases list. This file, not
+that stored prompt, is the live list — if a run arrives with instructions that
+sound like this paragraph, treat this section as the actual state and pick from
+what is below instead of re-doing what is already struck through.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
@@ -595,13 +608,28 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
 
 ### 8.4 Build-side work, which is not research
 
-- **`apply_photo_overlay()` in `build.py` matches `photos.json`'s leaders overlay
+- ~~`apply_photo_overlay()` in `build.py` matches `photos.json`'s leaders overlay
   only against a year's top-level `leaders` array, and `render_officers()` renders
-  no photo field at all.** A portrait of a vice president or a senate officer can
-  therefore sit correctly in the data and never appear anywhere on the site. The
-  photographs routine found this, correctly declined to do research it could not
-  render, and flagged it. Until it is fixed, officer portraits are not worth
-  hunting. This is the highest-value item in this section.
+  no photo field at all.~~ **Fixed, 21 August.** `apply_photo_overlay()` now falls
+  back to `organization.executive`, `organization.senate.officers` and
+  `organization.senate.members` when a photo's name does not match a top-level
+  leader, attaching `photo` onto that officer or member record instead.
+  `officer_index()` carries `photo` through onto each term and onto the person
+  object, and `render_officer()` now shows the portrait, credited, at the top of
+  the person's own page (`.who-head .portrait`, floated beside the heading). No
+  photo currently in `photos.json` needs the *fallback* path — all 73 existing
+  portraits already match a top-level leader — but the change is not invisible:
+  because `render_officer()` had never shown a portrait at all, **66 person pages
+  gained one on merge**, each resolving to a real file in `site/photos/` and
+  carrying its existing credit. Checked at merge, 21 August, by building `main`
+  and the branch and diffing the output: 66 portraits render, none broken, and
+  the only other change is the new CSS rule inlined into every officer page.
+  `build.py`, `check_data.py`, `check_contrib.py` and `check_duplicates.py` all
+  pass clean; the six known duplicate pairs are unchanged. **Officer and senate
+  portraits are now worth hunting.** `render_officers()` (the roster/index page)
+  still shows no thumbnails — it is a dense name index by design, not a gallery,
+  and adding images there is a separate, optional call for a future run, not a
+  bug.
 - **Twenty-nine of the 61 years still have no year photograph** — every year has a
   leader portrait, so the gap is entirely in photographs of the organisation at
   work. That is a research job, but it is gated on nothing except the Talisman and
