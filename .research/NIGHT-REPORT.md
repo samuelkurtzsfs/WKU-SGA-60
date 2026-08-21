@@ -2717,3 +2717,148 @@ twenty-three. 1,111 legislation files and 285 document files, unchanged.
 `build.py`, `check_data.py` and `check_contrib.py` are clean on the merged head.
 `check_duplicates.py` reports the same six long-judged pairs; the three
 charging-station entries were correctly not among them, being three meetings.
+
+---
+
+# 21 August 2026, late — editor pass, four pull requests merged
+
+## What I reviewed
+
+All four open pull requests, oldest first: #89 the senate rolls, #90 photographs,
+#91 person profiles, #92 the backlog. All four were cut from current `main` and had
+real merge bases, so none of them was one of the 4 August orphans §8.0 warns about.
+I merged `main` into each before judging it; the only conflict anywhere was in
+generated `site/`, resolved by rebuilding.
+
+All four merged, each after a correction.
+
+## `viewcontent.cgi` was open, so nothing was judged from a landing page
+
+The single most useful fact about this pass: TopSCHOLAR's file endpoint answered
+every request I made, on the first try, needing nothing more than a landing-page
+visit first and a `Referer` pointing back at it. Three of the four routines had
+reported it challenging them earlier the same day, and one wrote that into the
+handoff as a blocked state.
+
+It is not a blocked state. It is an intermittent one, and it varies by the hour
+rather than by the day. That meant this pass could read the actual Herald pages
+and the actual minutes behind the claims instead of inferring from index lines —
+which is how three of the four corrections below were found. §8.1 has warned since
+20 August that good research gets trimmed on the strength of a stale access note;
+this is the same hazard aimed at the handoff instead of at the data.
+
+## What I verified
+
+Not samples. Every primary source cited in all four diffs.
+
+- **#89, 2015-16.** All ten cited minutes, fetched from wku.edu and read. The 2
+  February 2016 roll call on Resolution 1-16-S names 31 voters; 24 of them are in
+  the diff as members and the remaining 7 are committee chairs and the Secretary,
+  left in `officers` and not double-counted. The arithmetic closes exactly. The
+  four members who did not vote that night are each confirmed by their appointment
+  meeting.
+- **#89, 2004-05.** Herald 80:7 of 16 September 2004, read in full. Elizabeth
+  White's 359 votes and Josh Collins's photo caption are both exact.
+- **#90.** The photograph, looked at rather than assumed: it carries the Herald's
+  own headline and every face is labelled by name and office in print. Citation
+  confirmed as Herald 74:51.
+- **#91.** All four cited minutes PDFs, read in full. Eleven of the twelve profiles
+  hold up word for word, including Lindsey Lilly's six questioners, which I counted
+  in the minutes because it is the kind of precise claim that is either right or
+  invented. It was right.
+- **#92.** The weekday arithmetic recalculated, then the underlying document
+  opened, which settled it outright.
+
+## What I corrected
+
+**#90 was the serious one.** The caption on the newly added 1999 election
+photograph named Joe Matheis among "the five students elected to SGA's top
+offices" for 1999-00. He was not. This archive's own record for that year says the
+Judicial Council voided the vice-president-of-finance race on 20 April 1999 over
+election code violations, five days after the result the photograph shows, and
+Ryan Morrison won the re-run and served. The year page names Morrison in the
+officer table. The caption would have published a page contradicting itself, and
+credited a named student with an office he never held while dropping the fact that
+his win was overturned. The photograph is genuine and worth having: it is the
+result *as it stood on 15 April*, so the caption now says that and carries the
+outcome. Rescued rather than cut.
+
+The general lesson for the photographs routine: read the year's existing
+`organization.executive` before writing a caption that names officeholders. A
+caption that disagrees with the year page is either a discovery or an error, and
+it is worth knowing which before it publishes.
+
+**#91.** The Tori Theiss profile had Jeanne Johnson moving to the Speaker's chair
+at the meeting of 31 January 2006. The minutes for that night show Johnson already
+in the chair and giving the Speaker's report, referring back to how business was
+done "last semester" under her predecessor. What the documents do support is that
+Johnson chaired Campus Improvements from September and Theiss took the committee
+from her in January. Rewritten to that.
+
+**#89.** The Paul Blevins note argued his senate seat from there being no other
+office up for election that autumn. The same article refutes it: Patti Johnson won
+the presidency the same night with 1,291 votes. The conclusion survives for a
+different reason — Johnson was unopposed, so the senate seats were the only
+contested places to win — and the note now says so. A true finding resting on a
+false premise is still a defect. The Josh Collins note dated the election to the
+day the Herald printed the photograph rather than the night before, when it was
+held; the two 2004-05 notes now agree with each other.
+
+**#92** was not a correction so much as finishing the job. The branch inferred
+that minutes item 406 belonged to 22 September 1992 rather than the catalogued
+Sunday, and flagged the five names taken from it as unread. The document opened:
+it is headed 22 September 1992, President Joe Rains called it to order at 5.05
+p.m., and all five names are in its roll call, each recorded absent. Absence
+presupposes membership, so the entries are confirmed. The catalogue date is simply
+wrong and the archive now says so rather than hedging.
+
+Also restored the trailing newline that #91 had dropped from `years.json`, and
+paraphrased one of two direct quotes #89 had taken from a single Herald article,
+the house limit being one per source.
+
+## What the routines got right, and should keep doing
+
+- #89 kept committee chairs out of the members list. That is trap 2, the error that
+  killed all 39 "missing president" claims, and it was handled without prompting.
+- #89 flagged "Bryan Andersen"/"Anderson" and "Mary Hart"/"Kate Hart" rather than
+  resolving them. Both spellings really are in the documents — the 2 February
+  minutes carry Mary and Kate in the same file — and leaving that open is right.
+- #90 declined a group photograph whose subjects nothing identified, and stopped at
+  flagging the 2003-04 officer headshots rather than inventing a `photos.json`
+  schema and matching build logic unreviewed. Both correct.
+- #91 overruled its own verifier on Tim Howard, because the "Howard" seconding
+  motions in the plus/minus debate is Dean Howard Bailey. A verifier caught being
+  wrong, with a reason, is worth more than a verifier deferred to.
+- #91 refused to merge Hunter Sprowles and Jonathan Sprowles. They are separate
+  people in the 2006-07 minutes.
+- #92 checked Wayback citations at the name level rather than the URL level. "The
+  page loads" and "the page says what we claim" are different tests.
+
+## Still open
+
+- Everything carried from the earlier reports today, including the garbled
+  2016-2027 officer names, the Eaton alias, `Connor`/`Conner Hounshell`, and
+  `apply_photo_overlay()` at §8.4.
+- **The remaining 61 of the 66 names in the 1992-93 roll**, behind 19 other minutes
+  items in the same series. They can be pulled exactly the way item 406 was,
+  whenever the window is open. This is now the cheapest large win on the list.
+- **Roughly 90 Wayback article permalinks** still unread against the sentences they
+  support, as #92 records.
+- **The 2003-04 officer headshots** found by #90 in Wayback captures, with nine
+  names in `alt` attributes that all cross-check against the year's roster. They
+  need a decision about where officer portraits live before anyone can use them.
+- The 15 March 2005 Herald election edition, `dlsc_ua_records/8961`, does not
+  surface in `herald-index-full.json` under a candidate search. I found it only by
+  opening the landing page. A further reminder that a miss in that file proves
+  nothing.
+
+## Where the archive stands
+
+61 academic years, 2,027 dated and sourced entries, 60 people recorded as
+president. 1,089 executive and senate officer records, up one. 459 written
+profiles, up twelve. 56 year photographs, up one, and 73 leader portraits
+unchanged. 1,111 legislation files and 286 document files.
+
+`build.py`, `check_data.py` and `check_contrib.py` are all clean on the merged
+head of `main`. `check_duplicates.py` reports the same six long-judged pairs and
+nothing new; each remains genuinely two events.
