@@ -272,13 +272,28 @@ still open. Earlier versions of this section stated the block differently on
 different days and good research was trimmed on the strength of a stale note, so
 the test commands are given here to be re-run rather than believed.
 
+**Update, 21 August 2026:** the "blocked outright" line on `web.archive.org` below
+was true only for plain `http://`. A run this day found `curl -v` on port 80
+returns `403`, `x-block-reason: hostname_blocked`, body `Blocked by egress policy`
+— the sandbox's own egress proxy, not archive.org — while the identical request on
+`https://` succeeded. A batch fetch of all 107 unique `web.archive.org` URLs cited
+in `data/years.json` over `https://` got real pages back for 82 on the first pass;
+the rest were a transient "Internet Archive: Temporarily Offline" 503 that cleared
+on retry (a handful of specific captures, e.g. the `formersgapres.htm` and
+`wkuherald.com/tag/sga/` snapshots, needed two or three retries a few seconds
+apart before succeeding — genuinely flaky on archive.org's side, not this
+environment's). **Every stored citation using `http://web.archive.org` was
+switched to `https://` in this run** (90 occurrences; content and captures are
+identical, `https` just isn't egress-blocked here). Re-test with `https://`, not
+`http://`, before trusting a "blocked" verdict on this host again.
+
 | host | state | note |
 |---|---|---|
 | `digitalcommons.wku.edu` **landing pages** | **open**, 200 | titles, dates, one-line abstracts and a Herald issue's headline index. This is how most citation labels get verified. |
-| `digitalcommons.wku.edu/cgi/viewcontent.cgi` | **blocked**, HTTP 202, empty body, `x-amzn-waf-action: challenge` | every PDF: Herald page images, Talisman pages, minutes, legislation. |
-| `web.archive.org` | **blocked outright** by egress policy — connection refused, not a 403 | every Wayback citation in the archive is unverifiable from here. |
+| `digitalcommons.wku.edu/cgi/viewcontent.cgi` | **blocked**, HTTP 202, empty body, `x-amzn-waf-action: challenge` | every PDF: Herald page images, Talisman pages, minutes, legislation. Confirmed still challenging on 21 August: 5 retries over 7.5 minutes on two different SGA-minutes items, all 202. |
+| `web.archive.org` | **open on `https://`**; plain `http://` is egress-blocked by this sandbox, not by archive.org (see note above) | every Wayback citation in the archive is now checkable from here over https. Individual captures can 503 transiently — retry a few times before concluding a specific snapshot is gone. |
 | `archive.org` (no `web.` prefix) | **open** | Talisman full texts, 1971–1981, 1986, 1987. Not rate limited. Use heavily. |
-| `wkuherald.com` | **open**, 200 | WordPress API works with a full browser User-Agent. ~2003 onward. |
+| `wkuherald.com` | **open**, 200, but its live WordPress search (`/wp-json/wp/v2/posts?search=`) returns nothing for anything before roughly 2011 — the old College Publisher-era site (2003–2010) was never migrated into it, so pre-2011 stories only survive via Wayback, not the live site. |
 
 On `viewcontent.cgi`: on 19 August a run got real PDFs out of it by landing on the
 item page first and then requesting the file with that cookie, a `Referer` back at
@@ -366,24 +381,61 @@ git rev-list --left-right --count origin/main...origin/<branch>
    worked is in `scripts/merge_senators.py` and in the 20 August night report:
    mirror the year's minutes locally first, then check every name against the
    primary text with no network requests at all.
-4. **Every Wayback citation in the archive is unverified**, not verified — by
-   anybody, at any point in this push, because the host has been refused the whole
-   time. Liz Goddard's profile rests entirely on Wayback, as does Stuart
-   Kenderes's, and several of the 2011–2016 executive-branch records. A run from a
-   network that can reach `web.archive.org` should sweep them all.
-   *Weak-citation sweep, 20 Aug (later pass):* the ~20 homepage/tag-index captures
-   are now handled. Eight were upgraded to verified `dlsc_ua_records/` issue
-   permalinks (both collection-root stubs — Norfleet /2464, Coates /8117 — and six
-   2005-06 Herald events: /3668, /3687, /3683, /3692, and two on /3690), each
-   confirmed live against the issue's own headline index. Three residual
-   front-page captures stay honestly labelled "not the specific article" and were
-   re-checked this pass as **unconfirmable from here**: the 2006-11-02 I-A-football
-   resolution has no College Heights Herald issue within eight days in
-   `herald-index-full.json`, and the 2007-02-01 Jeanne Johnson student-regent
-   election falls in a stretch (dlsc_ua_records 6659/6660/6661, late Jan–early Feb
-   2007) whose landing pages carry no article-level index to confirm the story.
-   A run that can open `viewcontent.cgi` PDFs or reach `web.archive.org` should
-   finish those two; do not re-run the landing-page approach, it has been tried.
+4. ~~Every Wayback citation in the archive is unverified.~~ **`web.archive.org` is
+   reachable from here now (over `https://` — see §8.1), so this run finished the
+   two residual citations flagged on 20 August and re-verified the tag-index
+   captures along the way:**
+   - **The 2006-11-02 I-A-football resolution.** The primary document,
+     `data/legislation/2006-07/dc_resolution_124.pdf` (Resolution 06-06-F,
+     already on file), shows a first reading dated 31 October 2006 with
+     Second Reading / Pass / Fail all left blank — it does **not** show the
+     resolution passing, still less passing unanimously, which is what the
+     event previously claimed on the strength of an unreachable front-page
+     capture. The event was rewritten to say only what the resolution
+     document shows, re-dated to 31 October (the date on the document, not
+     the guessed 2 November), and re-sourced to the resolution itself rather
+     than the Wayback page. The Nov 5 2006 front-page capture that would
+     likely settle whether it passed loaded as a transient 503
+     ("Temporarily Offline") on every attempt this run — a future run should
+     retry it (a handful of attempts a few minutes apart, per §8.1) or open
+     the 7 Nov 2006 SGA minutes (TopSCHOLAR `sga/Meetings/Minutes/709`,
+     article id 2479) once `viewcontent.cgi` next opens, since the second
+     reading would ordinarily fall at the next meeting after the 31 October
+     introduction.
+   - **The 2007-02-01 Jeanne Johnson student-regent election.** The Wayback
+     capture of the 3 Feb 2007 Herald front page (already cited) turned out
+     to embed the actual lead story's headline, subhead and lede in full —
+     "Johnson wins regent election" / "SGA president took 41 percent" /
+     the exact 688-vote, 41-percent lede — even though the article's own
+     URL (`.../News/Johnson.Wins.Regent.Election-2690601.shtml`) was never
+     independently archived (checked by CDX; zero captures). The citation
+     label now quotes that headline and confirms the vote count rather than
+     calling the source unconfirmable. The companion claim in the same
+     entry — SGA's "first full senate attendance since fall 2004" — is not
+     on the front page and was **not** reconfirmed; the entry now says so
+     plainly rather than implying the upgraded citation covers it.
+   - **Bonus, same method:** the two remaining tag-index captures flagged as
+     weak (Stuart Kenderes's Chief Justice record, 10 Nov 2009; the 27 Jan
+     2010 senator-resignations entry) turned out, once actually opened, to
+     preserve the **full original blog post** under `wkuherald.com/tag/sga/`
+     — this was a pre-2011 "notebook"-style full-text post, not a teaser —
+     confirming every fact already written against it. Labels upgraded from
+     "not the specific article" to name the specific headline and note what
+     the capture actually contains.
+   - **Mechanical fix:** all 90 occurrences of `http://web.archive.org` in
+     `data/years.json` were switched to `https://` (same captures, same
+     content — see §8.1).
+   - **Not done this run, and worth a future pass:** the broader claim that
+     Liz Goddard's profile and "several 2011–2016 executive-branch records"
+     rest on Wayback was not re-verified fact-by-fact. All 107 unique
+     `web.archive.org` URLs in the archive were fetched once each and 82
+     loaded real pages immediately (Goddard's among them — hers is already a
+     specific article permalink, not a homepage/tag capture, and loads
+     fine); nobody has yet re-read each one against the sentence it
+     supports the way this run did for the two flagged citations. That
+     content-level check, not just reachability, is what should happen
+     next, plus a real attempt at `viewcontent.cgi` for the two open items
+     above.
 5. **Content-check the 1992-93 roll.** Sixty-six names were merged on a night when
    the minutes PDFs were unreachable, so they were never read against the meetings
    they cite. Also: TopSCHOLAR dates minutes item 406 to Sunday 20 September 1992,
