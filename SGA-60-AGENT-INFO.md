@@ -281,7 +281,9 @@ in `data/years.json` over `https://` got real pages back for 82 on the first pas
 the rest were a transient "Internet Archive: Temporarily Offline" 503 that cleared
 on retry (a handful of specific captures, e.g. the `formersgapres.htm` and
 `wkuherald.com/tag/sga/` snapshots, needed two or three retries a few seconds
-apart before succeeding — genuinely flaky on archive.org's side, not this
+apart before succeeding; the editor's check the same night got four straight 503s
+on `formersgapres.htm` and gave up on it, so budget more retries than two or three
+and treat a run of them as normal — genuinely flaky on archive.org's side, not this
 environment's). **Every stored citation using `http://web.archive.org` was
 switched to `https://` in this run** (90 occurrences; content and captures are
 identical, `https` just isn't egress-blocked here). Re-test with `https://`, not
@@ -314,25 +316,21 @@ git ls-remote --heads origin
 git rev-list --left-right --count origin/main...origin/<branch>
 ```
 
-- **`research-profiles` — unmerged, and it holds real work.** Pull request **#54,
-  still open.** Ten commits ahead of `main`, a clean merge base at `117647c`, a
-  fast-forward if it is taken. It carries about thirty officer profiles: twelve
-  from the 1970s Senate and committees, ten from the 1988-89 Congress, and eight
-  more from the mid-1970s Congress that landed at 04:24 on 20 August.
-  The editor held it on 20 August over two failures — two profiles wrote "no
-  source in this archive confirms" over the 1987 Todd–Elder result the archive
-  already publishes, and four December 1987 letter attributions were shifted by
-  one against a title-first index line. **Both were corrected on the branch, and
-  the three unverified biographical details the editor also flagged were then
-  checked against the Talisman texts** (Tinsley and Jackson confirmed, Faulk's
-  home town dropped as contradicted). So the editor's stated conditions are met.
-  **What has had no editor pass at all is the final eight-profile batch**, which
-  arrived after the review. Someone should read those eight before this merges.
+**As of the 21 August overnight pass, no pull request is open.** All four branches
+that were open that night — `research-backlog` (#80), `research-photos` (#81),
+`research-profiles` (#82) and `research-senate` (#83) — were reviewed and merged,
+each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
+21 August.
+
+- `research-backlog`, `research-photos`, `research-profiles`, `research-senate` —
+  fully merged into `main`, nothing outstanding on any of them. All four cut
+  cleanly from current `main`, so none was an orphan.
 - **`research-2020s` — unmerged, and it must stay that way.** This is a 4 August
   orphan (see 8.0). No merge base with `main`. 57 commits that are not on `main`
   and cannot be merged onto it. Leave it, or close it, but do not merge it.
-- `research-backlog`, `research-photos`, `research-senate` — fully merged into
-  `main`, nothing outstanding on any of them.
+- The other 4 August `research-*` branches (`research-1966-79`, `research-1980s`,
+  `research-1990s`, `research-2000s`, `research-2010s`) are orphans of the same
+  vintage. Check `git merge-base` before touching any of them.
 
 ### 8.3 Research still owed, highest value first
 
@@ -375,12 +373,43 @@ git rev-list --left-right --count origin/main...origin/<branch>
    extract and a TopSCHOLAR link, verified against the PDF text by a separate
    adversarial pass (22 accepted as drafted, 7 trimmed for overclaiming, 0
    rejected). Landed on `research-backlog`.
-3. **The rest of the senate rolls.** 912 member records across 35 years is a good
+3. **The rest of the senate rolls.** 1,184 member records across 52 years is a good
    start on a 61-year record and no more than that. SGA's own minutes are the
    roll, roughly 830 items covering 1969–2008 on TopSCHOLAR, and the method that
    worked is in `scripts/merge_senators.py` and in the 20 August night report:
    mirror the year's minutes locally first, then check every name against the
    primary text with no network requests at all.
+
+   **The TopSCHOLAR collection stopping in December 2008 is not the end of the
+   evidence (found 21 August).** SGA's own website still serves its Senate minutes
+   past that cutoff, and no pass before 21 August had looked there:
+
+   | path | covers | formats |
+   |---|---|---|
+   | `wku.edu/sga/uploads/minutes/` | 2009-10 through 2014-15 (subfoldered `/2010/`, `/2011/`, `/2012/`, `/2014/`) | `.doc`, `.docx` |
+   | `wku.edu/sga/2018-2019-legislative/minutes.php` and `/minutes/`, `/fa20/` | 2020-21 | `.pdf` |
+   | `wku.edu/sga/2024_2025_legislative/senate_minutes/` | 2024-25 | `.docx` |
+
+   The host is open and needs no special headers, only a browser User-Agent.
+   `antiword` and `catdoc` are **not** installed by default but
+   `apt-get install -y antiword catdoc` works; `.docx` is a zip of
+   `word/document.xml`; PyMuPDF handles the PDFs.
+
+   These minutes are far richer than a roll: they carry swearing-ins, roll-call
+   votes, absence lists by full name, and in the 2024-25 files the full text of
+   each bill with its authors and their seats. Three cautions learned the hard way
+   on the 21 August pass. **Blanket votes come in pairs** — a Student Senate
+   confirmation and an Organizational Aid Board confirmation can sit a few lines
+   apart, and reading the wrong one puts seven non-senators on the roll.
+   **Absence lines vary**: some print full names, some only surnames, and the
+   surname-only ones are useless here. **Roll headings can be missing entirely** —
+   `uploads/minutes/2014/sga_minutes.docx` has a generic name and no date in its
+   text, so its date has to be inferred from who presides and what is described as
+   upcoming.
+
+   What is still unswept: 2011-12 and 2012-13 hold one and two member records
+   against 33 for 2014-15, so those years were mined for particular names rather
+   than read through. 2015-16 is not hosted the way the others are.
 
    *Checked 20 August (later pass), no names added:* the full Meetings/Minutes
    listing was pulled live (843 item links, 830 of them dated, 1969-02-13 to

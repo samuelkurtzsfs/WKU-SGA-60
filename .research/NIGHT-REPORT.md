@@ -2455,3 +2455,144 @@ files, unchanged.
 head. `check_duplicates.py` reports the same six long-judged pairs, none of them in
 either diff and none touched: three same-day 1991 bills, a bill introduced and
 failing nine days later, and two stories a month apart.
+
+---
+
+# 21 August 2026, overnight — editor pass
+
+Four research branches open, all four merged. Every one needed a correction first,
+none needed a cut.
+
+## What I reviewed
+
+`research-backlog` (#80), `research-photos` (#81), `research-profiles` (#82) and
+`research-senate` (#83), oldest first. All four had a clean merge base at
+`b2226ed`, so the orphan-history warning at §8.0 did not apply to any of them.
+
+I spot-verified forty-odd claims across the four diffs by opening the cited source
+myself rather than reading the run's account of it. Two of those checks changed my
+mind mid-review and are worth recording, because in both cases the branch was right
+and my first reading was wrong.
+
+## Two things that reachability notes had wrong
+
+**`web.archive.org` is open from these containers, over `https://`.** §8.1 has said
+"blocked outright" since 20 August, and it is not. Plain `http://` returns
+`403 hostname_blocked` from the sandbox's own egress proxy; `https://` returns 200.
+I reproduced both. Individual captures 503 transiently and some need several
+attempts — the `formersgapres.htm` snapshot refused four in a row for me, where the
+new note in §8.1 records it clearing after two or three, so that line reads a little
+more reliably than the host behaves. But the host is reachable, and every Wayback
+citation in the archive is now checkable. `research-backlog` found this and
+converted all 90 stored `http://web.archive.org` citations to `https://`.
+
+**SGA's own website still hosts its Senate minutes.** The digitised TopSCHOLAR
+collection stops in December 2008, and every previous pass treated that as the end
+of the evidence for rank-and-file senators. It is not: `wku.edu/sga/uploads/minutes/`
+and the later legislative paths serve real minutes from 2009 onward, as `.doc`,
+`.docx` and `.pdf`. I fetched a dozen of them to check names. This is a new source,
+not a new reading of an old one, and §8.3 item 3 should be rewritten around it.
+
+## Merged
+
+**#80, the backlog.** The 2006 Division I-A football entry claimed the senate
+"unanimously passed" a resolution, on a Wayback front page nobody had been able to
+load. The resolution itself was already on disk. Read positionally, its First
+Reading field is filled with 31 October 1986 and its Second Reading, Pass and Fail
+fields are empty — so the document shows an introduction and no recorded vote. The
+entry now says that, is re-dated to the document's own date, and cites the document.
+That is the right direction of travel: a claim nobody could check, replaced by a
+narrower claim anyone can. The 2007 Jeanne Johnson entry moved the other way, the
+front-page capture having turned out to preserve the story's headline, subhead and
+lede in full.
+
+**#81, photographs.** One photograph, of Jeanne Johnson and Gary Ransdell at the
+2007 Homecoming crowning — the archive's own description opens "SGA president Jeanne
+Johnson," so the identification rests on WKU's caption and not on a match by name.
+The committed file is byte-identical to the one TopSCHOLAR serves.
+
+**#82, ten officer profiles** from the 1985-86 and 1986-87 Congress, built on the
+two mirrored ASG minutes and both Talisman texts. The strongest of the four. Its
+hedging does real work: same-name identifications are marked probable where they are
+probable, and where the minutes decline to name the Student Affairs chairman who
+thanked Holger Velastegui, the profile declines too. It also adds `Tim Todd` →
+`Timothy Todd` to `name-aliases.json`, which is an assertion that two records are one
+man and so had to be argued rather than slipped in. It is argued, and it holds from
+three directions — the minutes name him Student Rights Chairman in April 1986 and
+President in September, the archive already carries the Herald reporting him winning
+that April election, and the 1987 Talisman prints "TIMOTHY TODD, Dawson Springs" in
+its senior directory while its own photo captions print "Tim Todd."
+
+**#83, the senate rolls**, on the strength of the source described above: 86 more
+member records across nine years that had none. The judgement in it is better than
+it needed to be. The 28 September 2010 minutes carry two blanket votes a few lines
+apart, one to the Organizational Aid Board and one to the Student Senate, and
+keeping them apart is what justified seven cuts. Two people recorded "present, but
+not on roster" in February 2014 were left out. Bill authorship was used to establish
+a seat only where the document prints the seat beside the name — "Kaison Barton,
+Senator at Large", "Mark Clark, Senator" — which is a stated office, not the
+inference the rules forbid.
+
+## What I corrected
+
+Nothing was deleted. All five corrections were rescues.
+
+- **#80.** The Johnson entry said the unconfirmed full-senate claim sat "inside the
+  paper rather than on the captured front page." The front page does carry that
+  headline; what it carries none of is the story's text, and so not the detail that
+  the attendance was the first since fall 2004. The caveat had put the gap in the
+  wrong place.
+- **#81.** The caption had Johnson "crowned" Homecoming Queen at halftime. The
+  archive says elected during halftime. Crowning at halftime is what one would
+  assume, which is exactly why it should not be written.
+- **#82.** The 15 April 1986 minutes say only that "AC" would meet on 24 April. The
+  year's existing note expanded that to the Academic Council and the new profile to
+  Academic Affairs; both sat on the same page saying different things and the source
+  supports neither. The abbreviation now stays unexpanded, with the ambiguity
+  stated. The Velastegui note also had him encouraging freshmen to *stand* in the
+  autumn elections where the minutes say participate — a different claim, and one
+  his own "Freshmen, Vote Today" column that October argues against.
+- **#83.** Poorvie Patel's 2010-11 note said she was "continuing from her 2009-10
+  seat." The minutes cited for it show her approved by blanket vote and sworn in as
+  one of three appointments, in a meeting that states new senators cannot vote until
+  sworn. She did hold a 2009-10 seat — the 2 March 2010 absence line names her as a
+  senator — but that is two seats, not one continuous one. Five 2024-25 senators
+  were also cited to "SGA legislation" at URLs pointing at Senate minutes; the bills
+  sit inside those minutes, so the citations now name the minutes.
+
+Four of the five are the same fault in different clothes: a sentence that says
+slightly more than the document it cites, in a direction that feels safe. That is
+what the research routines should be told to watch for next.
+
+## Still open
+
+- **1979-80, 1999-00, 2004-05 and the four pre-1971 years** remain without senate
+  rolls, unchanged, and should not be re-searched for minutes.
+- **2011-12 and 2012-13 are thin at one and two members** against 33 for 2014-15.
+  The 27 September 2011 minutes show a Senator Patel moving to accept John Hughes
+  who is not recorded for that year. Those years were mined for particular names,
+  not swept, and the newly-found source has more in it than this pass took.
+- **2015-16** has no minutes on SGA's site the way 2009-14 and 2020+ do.
+- **`2014/sga_minutes.docx` carries no date in its text** and a generic filename.
+  The 4 February 2014 attribution is a sound inference — Keyana Boka presides, a
+  "Feb. 5" event is upcoming, and that date was a Tuesday — but it is an inference.
+- **Content-checking the other 105 Wayback citations.** #80 established that all 107
+  are reachable and re-read four of them against the sentences they support. The
+  other 105 have been shown to load, which is not the same as having been checked.
+- Everything carried forward from the 20 August report still stands, including the
+  1992-93 roll, the Eaton alias, the garbled 2016-2027 officer names, and the
+  `apply_photo_overlay()` limitation at §8.4 that keeps officer portraits off the
+  site.
+
+## Where the archive stands
+
+61 academic years, 2,025 dated and sourced entries, 60 people recorded as president.
+1,088 executive and senate officer records, down six — four 2019-20 senators moved
+out of the officer list where they did not belong and two duplicate lines dropped —
+and 1,184 senate member records, up 86, across 52 years. 424 written profiles, up
+ten. 115 documents attached to years and 286 document files held; 1,111 legislation
+files, unchanged. 122 photograph files, up one. 1,709 person pages.
+
+`build.py`, `check_data.py` and `check_contrib.py` are all clean on the merged head.
+`check_duplicates.py` reports the same six long-judged pairs, none of them in any of
+tonight's diffs and none touched.
