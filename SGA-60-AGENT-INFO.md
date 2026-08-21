@@ -480,22 +480,56 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    - **Mechanical fix:** all 90 occurrences of `http://web.archive.org` in
      `data/years.json` were switched to `https://` (same captures, same
      content — see §8.1).
-   - **Not done this run, and worth a future pass:** the broader claim that
-     Liz Goddard's profile and "several 2011–2016 executive-branch records"
-     rest on Wayback was not re-verified fact-by-fact. All 107 unique
-     `web.archive.org` URLs in the archive were fetched once each and 82
-     loaded real pages immediately (Goddard's among them — hers is already a
-     specific article permalink, not a homepage/tag capture, and loads
-     fine); nobody has yet re-read each one against the sentence it
-     supports the way this run did for the two flagged citations. That
-     content-level check, not just reachability, is what should happen
-     next, plus a real attempt at `viewcontent.cgi` for the two open items
-     above.
-5. **Content-check the 1992-93 roll.** Sixty-six names were merged on a night when
-   the minutes PDFs were unreachable, so they were never read against the meetings
-   they cite. Also: TopSCHOLAR dates minutes item 406 to Sunday 20 September 1992,
-   when every other meeting that year is a Tuesday or a Thursday. The metadata may
-   itself be wrong. Whoever next has that PDF open should settle it.
+   - **Content-level check of the 2011–2016 executive-branch/legislative/
+     judicial roster captures — done, 21 August.** All 17 `web.archive.org`
+     captures of SGA's own site (`/executive/`, `/legislative/`, `/judicial/`
+     and successor paths) cited in `organization.executive` or
+     `organization.senate.officers` for 2012-13, 2013-14, 2014-15, 2015-16,
+     2016-17, 2018-19, 2021-22, 2022-23 and 2025-26 were re-fetched and every
+     name each entry claims from them was checked against the captured
+     page's own text, not just its reachability. All 17 confirmed clean:
+     every officer name is on the page it is cited to, including the two
+     records that looked like they might be off at first pass — Director of
+     Public Relations "KJ Hall" (2014-15) is confirmed to carry the
+     `Katherine.Hall023@topper.wku.edu` address the entry already describes,
+     and Director of Enrollment and Student Experience "Tribhuwan Singh"
+     (2021-22) is confirmed to be captioned "Trib Singh" on the page with
+     `tribhuwan.singh229@topper.wku.edu` beside it, exactly as the entry's
+     existing note already says. The Liz Goddard citation (2007-08) was also
+     re-checked directly against the archived article text and confirmed
+     word for word ("said Liz Goddard, SGA public relations director...").
+     Nothing needed correcting. What remains unchecked: roughly 90 of the
+     107 unique `web.archive.org` URLs in the archive are specific Herald
+     article permalinks rather than homepage/roster captures, and a
+     fact-by-fact re-read of those against the sentences they support has
+     still not been done — lower priority than the roster pages, since an
+     article permalink is a stronger kind of source to begin with, but still
+     open for a future pass. `viewcontent.cgi` refused the research run but
+     opened later the same day for the editor's pass (see the 1992-93 item
+     below).
+5. **Content-check the 1992-93 roll — item 406 settled 21 August, the other 19
+   items still open.** Sixty-six names were merged on a night when the minutes
+   PDFs were unreachable, so they were never read against the meetings they
+   cite. That is still true of 61 of them.
+
+   Item 406 is now done, and the dating anomaly is resolved rather than
+   inferred. `viewcontent.cgi` refused the research run but was open during the
+   editor's pass the same day, and article 1918 came down on the first request.
+   **The document is headed 22 September 1992** — a Tuesday, like the other
+   dated meetings that autumn (items 410, 408 and 405, on 8, 15 and 29
+   September). TopSCHOLAR's catalogue date of 20 September is a Sunday and is
+   simply wrong; the archive follows the minutes. The meeting was called to
+   order at 5.05 p.m. by President Joe Rains, and all five names this archive
+   takes from item 406 — Bland, Ezell, Griggs, Smith and Wagner — are in its
+   roll call, each recorded absent that night. That confirms them as members,
+   which is what the entries claim.
+
+   Two things worth carrying forward. `viewcontent.cgi` is intermittent by the
+   hour, not by the day: a 202 challenge is worth retrying in a later session
+   before it goes in the handoff as blocked. And the remaining 61 names sit
+   behind 19 other minutes items in the same series, all of which can be pulled
+   the same way (land on the item page, then request the article with a
+   `Referer` back to it) whenever the window is open.
 6. ~~The 2013-14 charging-stations entry is written from a first-read report.~~
    **Done, 21 August.** The story was more complicated than either the 24 October
    advance notice or the 30 October follow-up alone: the Senate amended and passed
