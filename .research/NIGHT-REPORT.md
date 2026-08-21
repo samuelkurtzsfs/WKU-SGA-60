@@ -3046,3 +3046,127 @@ remains genuinely two events.
 Nothing to add to yesterday's note about Vercel: this pass merged four times and I
 did not check whether any of it deployed, since the daily cap and the SSO-protected
 aliases both still stand and neither is something a run from here can resolve.
+
+---
+
+## 21 August, third pass — three branches merged, three corrections
+
+Three research branches were open, all cut cleanly from the current `main` and all
+merging without conflict. The three stale 4 August branches named in the standing
+brief — the photographs, 1980s and 2020s rolling pull requests — are no longer open,
+so nothing had to be rescued from the orphaned history this time.
+
+### Person profiles, 2007-2010 — merged
+
+Eleven Senate officers from 2007-08 to 2009-10 gained a profile, and 2008-09 gained
+two events: the Senate's approval of Corey Bewley as chief justice, and Brittany
+Wick's *Herald* column urging students into SGA. Ten claims checked. The two new
+citations were opened at TopSCHOLAR and both hold: Vol. 84 No. 33 of 19 February
+2009 carries "Student Government Association Approves New Chief Justice — Corey
+Bewley", and Vol. 84 No. 41 of 31 March 2009 carries Wick's column under her own
+byline.
+
+Everything else in the eleven profiles restates officer records and citations
+already published, which is what a profile is supposed to do. Lisa Kappler's is the
+substantial one and every sentence of it — the council's 2-1 vote of 10 February,
+her dissent and her "gray area" argument, the resignation letter of 12 February to
+Kayla Shelton and Charley Pride — sits inside the two *Herald* events already in
+2008-09. Daniel Shaw's is the careful one: it records both his October 2009
+resignation and SGA's own minutes naming a Daniel Shaw as parliamentarian the
+following February, and declines to say they are the same tenure, because nothing
+searched establishes it. It also keeps the *Herald*/minutes spelling split on the
+other two resigning senators unresolved rather than picking a winner.
+
+**Corrected:** the approval of Bewley was written as having happened *on* 19
+February. The *Herald* of that date proves the paper reported it, not that the
+Senate acted that day — the Senate met Tuesdays and the paper printed Thursdays,
+exactly the gap the 12 February entry already shows, where the paper of the 12th
+reports a vote taken on the 10th. Both profiles now say it was reported in the
+*Herald* of 19 February. The event keeps its date, which follows the convention of
+dating to the source.
+
+### Photographs — merged
+
+Six ASG officers of 1971-75 — Reginald Glass, Nancy Pape, Pat Newton, Charles
+Boteler, Cindy Kirkpatrick and Thomas LaCivita — now carry a portrait on their own
+page. No new images: these are the six identified *Talisman* photographs added on
+18 August as year photographs, reusing the same files and the same sources, finally
+promoted now that the build can attach a portrait to a cabinet officer.
+
+`viewcontent.cgi` is still answering the WAF challenge, so the identifications were
+checked against the *Talisman* full texts on archive.org instead, and all six hold.
+Glass and Newton and Kirkpatrick and LaCivita are each named outright in their own
+caption. The two positional identifications are sound and say so on their face:
+Pape is second of four named in order, anchored at the left end by Glass, whose
+face is independently fixed by his own profile portrait; Boteler is named first in
+the caption's Row 1. Kirkpatrick's cross-year link does not rest on the name alone
+— the same 1974 yearbook photographs her with Tom LaCivita talking to Dr John
+Minton, which ties her to ASG in her own right.
+
+The branch also widened `check_data.py`'s photo validator. That is outside the
+"years.json is the only file you edit" rule, so it was tested rather than taken on
+trust: main's validator run against this data produces six failures reading
+"who is not in the archive" for six people plainly in the archive as officers. The
+build has matched cabinet and Senate officers for a while; only the validator had
+not caught up. The edit mirrors the build's matching order exactly.
+
+**Corrected:** the LaCivita source label quoted the caption at eighteen words, over
+the fifteen-word cap, and was the second quotation drawn from that one caption.
+Trimmed to four words and paraphrase.
+
+### The senate rolls — merged
+
+Thirty-two people join the 1985-86 and 1986-87 rolls, thirteen and nineteen, from
+two *Talisman* group photographs per year captioned "Associated Student
+Government". Both captions were pulled from archive.org and read directly rather
+than taken from the branch's own evidence files. All 32 names are in them, and all
+32 row placements in the notes are correct — front, second or back, first
+photograph or second, every one. Twenty-eight caption names were correctly held
+back as already on record, including the three a careless pass would have
+duplicated under a variant: William Schilling against Bill Schilling, Chris Leneave
+against Chris LeNeave, and Tim Todd against Timothy Todd, who is that year's
+president. Adrian Smoot is separately called "a freshman representative" elsewhere
+in the same yearbook, which corroborates the reading.
+
+**Corrected:** all 32 were seated as "Congress member". A photograph captioned
+"Associated Student Government" proves membership of ASG; it does not prove a
+Congress seat, and in these two years the difference is real, because the existing
+"Congress member" entries rest on roll calls and absence lists in ASG's own
+minutes, which do prove it. All 32 now carry "member, Associated Student
+Government", the label forty other *Talisman*-derived names in this archive already
+use.
+
+Roland Spencer forced the point. The five people beside him in that front row are
+precisely the year's recorded executive, and he is the sixth; the caption gives him
+no office, the index puts him on that page and nowhere else, and no other source
+names one. His note read "alongside President Mitchell McKinney and the rest of the
+executive", which invites the reader to infer an office the seat field then denies.
+It now says what the caption shows and states plainly that what he held is not
+established.
+
+### Still open
+
+- The `src` URLs on the 32 new senate entries point at the *Talisman* item on
+  archive.org with the page number only in the label. The photograph work uses
+  `/page/nNNN/mode/1up`, which lands a reader on the page itself. The leaf offsets
+  were not guessed.
+- Neither Lisa Kappler nor Corey Bewley has a "Chief Justice, Judicial Council"
+  entry in the 2008-09 `organization` block, though the *Herald* establishes both
+  held the office. The profiles say so; the roster does not.
+- `digitalcommons.wku.edu/cgi/viewcontent.cgi` returned HTTP 202 with an empty body
+  on every attempt tonight, so SGA's own minutes could not be reopened. Landing
+  pages on the same host answered normally throughout, and archive.org served every
+  *Talisman* text asked of it once requests went to the item's own node rather than
+  through `archive.org/download`.
+
+### Where the archive stands
+
+61 academic years, 2,029 dated and sourced entries, 60 people recorded as
+president. 1,098 executive and senate officer records and 1,254 senate member
+records, up thirty-two tonight. 497 written profiles, up eleven. 79 portraits and
+55 year photographs. 1,111 legislation files and 285 document files.
+
+`build.py`, `check_data.py` and `check_contrib.py` are clean on the merged head of
+`main`, and a fresh build reproduces the committed `site/` exactly.
+`check_duplicates.py` reports the same six long-judged pairs and nothing new; none
+of them is touched by tonight's work, and each remains genuinely two events.
