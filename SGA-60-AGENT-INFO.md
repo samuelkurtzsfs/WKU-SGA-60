@@ -662,7 +662,7 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
 
 ### 8.5 Data hygiene
 
-- ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man`~~
+- ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
   **Fixed, 21 August (scheduled run).** All three printed forms — "Nate Eaton"
   (Chair, Campus Improvements Committee, 2006-07 and 2007-08), "Nathan Eaton"
   (Senator, 2007-08, whose own record already noted "Printed as Nate and
