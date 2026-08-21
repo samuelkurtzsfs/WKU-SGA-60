@@ -6460,6 +6460,8 @@ OFFICERS_CSS = """
 .who-head{padding:44px 0 22px;border-bottom:1px solid var(--line)}
 .who-head h1{font-size:2rem;letter-spacing:-.03em;margin:6px 0 0}
 .who-head .roles{margin:12px 0 0;color:var(--ink2);max-width:var(--measure)}
+.who-head .portrait{float:right;margin:0 0 16px 24px}
+@media(max-width:640px){.who-head .portrait{float:none;margin:0 0 16px}}
 .termline{display:grid;grid-template-columns:7rem 1fr;gap:0 22px;padding:14px 0;
  border-top:1px solid var(--line2)}
 @media(max-width:640px){.termline{grid-template-columns:1fr;gap:3px}}
@@ -6553,7 +6555,7 @@ def officer_index(ys):
                 if target == key:
                     p["spellings"].add(variant)
             term = {"year": y["id"], "office": o["office"], "note": o.get("note"),
-                    "profile": o.get("profile"), "senate": is_sen}
+                    "profile": o.get("profile"), "senate": is_sen, "photo": o.get("photo")}
             term.update({k: o.get(k) for k in SRC_KEYS})
             p["terms"].append(term)
     # Presidents and student regents get a page too. Without this a president who
@@ -6573,9 +6575,11 @@ def officer_index(ys):
                 p["terms"].append({"year": y["id"], "office": role_title(l, y),
                                    "note": l.get("note"),
                                    "src": (l.get("sources") or [None])[0],
-                                   "senate": False, "leader": True})
+                                   "senate": False, "leader": True,
+                                   "photo": l.get("photo")})
     for p in people.values():
         p["terms"].sort(key=lambda t: (t["year"], t["office"]))
+        p["photo"] = next((t["photo"] for t in p["terms"] if t.get("photo")), None)
     return people
 
 
@@ -6830,8 +6834,17 @@ def render_officer(person, ys, leg=()):
         lead = ('<p class="roles">Also served as president or student regent; that record is '
                 'on the year pages linked below.</p>')
 
+    photo_block = ""
+    if person.get("photo"):
+        ph = person["photo"]
+        credit = f'<span class="credit">{src_link(ph["src"])}</span>' if ph.get("src") else ""
+        photo_block = (f'<figure class="portrait">'
+                       f'<img src="../photos/{h(ph["file"])}" alt="Portrait of {h(person["name"])}."'
+                       f' loading="lazy"><figcaption>{credit}</figcaption></figure>')
+
     body = f"""
 <header class="wrap"><div class="who-head">
+ {photo_block}
  <p class="kicker">{h(span)}</p>
  <h1>{h(person["name"])}</h1>
  <p class="roles">{h(", ".join(offices))}.</p>
@@ -6954,7 +6967,12 @@ def render_officers(ys, people):
 
 def apply_photo_overlay(ys):
     """Merge data/photos.json onto the years. Photographs live in their own file so
-    the photograph agent and the decade agents never edit the same file."""
+    the photograph agent and the decade agents never edit the same file.
+
+    A name in the overlay's `leaders` list is matched against the year's top-level
+    `leaders` first (presidents and student regents); if none matches, it is tried
+    against the year's cabinet and senate officers and members, so a portrait of a
+    vice president or a senate officer attaches too, not only a president's."""
     overlay_path = ROOT / "data" / "photos.json"
     if not overlay_path.exists():
         return
@@ -6962,9 +6980,26 @@ def apply_photo_overlay(ys):
     by_id = {y["id"]: y for y in ys}
     for p in overlay.get("leaders", []):
         y = by_id.get(p["year"])
-        for l in (y["leaders"] if y else []):
+        if not y:
+            continue
+        photo = {"file": p["file"], "src": p.get("src")}
+        matched = False
+        for l in y["leaders"]:
             if l["name"] == p["name"]:
-                l["photo"] = {"file": p["file"], "src": p.get("src")}
+                l["photo"] = photo
+                matched = True
+        if matched:
+            continue
+        org = y.get("organization") or {}
+        for o in (org.get("executive") or []):
+            if o.get("name") == p["name"]:
+                o["photo"] = photo
+        for o in ((org.get("senate") or {}).get("officers") or []):
+            if o.get("name") == p["name"]:
+                o["photo"] = photo
+        for m in ((org.get("senate") or {}).get("members") or []):
+            if m.get("name") == p["name"]:
+                m["photo"] = photo
     for p in overlay.get("years", []):
         y = by_id.get(p["year"])
         if y:
