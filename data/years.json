@@ -44290,6 +44290,15 @@
      }
     },
     {
+     "date": "2022-04-20",
+     "title": "Senate elects its 2022-23 class and college seats",
+     "body": "The same April ballot filled the incoming Senate's class, college and at-large seats. Olivia Feck, Matthew Gadd and James Cecil won the senior class seats; Mallory Hardesty, Aniya Johnson and Preston Romanov the junior class seats; and Ethan Taylor, Reed Hensley and Jakob Briggs the sophomore class seats. Ten students were elected senators-at-large, including Antonina Clementi and Ethan Huffaker, and Elizabeth DeLozier won the College of Health and Human Services seat, one of five college seats decided that day.",
+     "src": {
+      "label": "Herald, 20 Apr 2022",
+      "url": "https://wkuherald.com/65821/news/gallery-sga-results-announced-cole-bornefeld-wins-presidency/"
+     }
+    },
+    {
      "date": "2021-09-01",
      "title": "SGA opened the fall term with confirmations and new election codes",
      "body": "SGA held its first meeting of the fall semester, the second meeting of the 21st Senate, with President Matthew Wininger welcoming new and returning senators. All senators present were confirmed by unanimous consent and sworn in by Chief Justice Holden Schroeder, along with executive appointments Jamison Moorehead as IT director, Alexis Courtenay as public relations director and Parker Raybourne as chief of staff. New election codes for the next semester also passed with unanimous consent.",
@@ -44346,7 +44355,7 @@
     {
      "date": "2022-04-14",
      "title": "Judiciary Council cleared Bornefeld's campaign over student-all email",
-     "body": "After several SGA members complained that presidential candidate Cole Bornefeld's student-wide email about the Swipe Out Hunger initiative violated the election code's ban on self-promotion, the Judiciary Council held a roughly hour-long Zoom hearing on April 13 and voted in favor of his campaign. Speaker Tess Welch argued the signed email constituted self-promotion, while a statement from President Wininger, read by Chief Justice Holden Schroeder, said nothing in the code required executive approval for a student-all email. Senators said the initiative saw a record number of donations after the email went out.",
+     "body": "After several SGA members complained that presidential candidate Cole Bornefeld's student-wide email about the Swipe Out Hunger initiative violated the election code's ban on self-promotion (section 3.5), the Judiciary Council held a roughly hour-long Zoom hearing on April 13 and voted in favor of his campaign. Speaker Tess Welch argued the signed email constituted self-promotion, and Administrative Vice President Reed Breunig said the email was not cleared by any member of SGA. A statement from President Wininger, read by Chief Justice Holden Schroeder, said nothing in the code required executive cabinet or PR approval for a student-all email. Senators said the initiative saw a record number of donations after the email went out.",
      "src": {
       "label": "Herald, 14 Apr 2022",
       "url": "https://wkuherald.com/65678/news/sga-presidential-candidate-questioned-over-student-all-email/"
@@ -44355,7 +44364,7 @@
     {
      "date": "2022-04-20",
      "title": "End-of-year allocations funded scholarships, organizational aid and planetarium donation",
-     "body": "Hours before the 2022 election results were announced, the senate passed a slate of funding bills: $8,000 in organizational aid at $500 per applicant, and $15,500 across five scholarship programs including summer class, study abroad, ISEC book and Scholar Level scholarships, plus $500 to Black Student Alliance scholarships for the first time. The senate also approved $325 for the Hardin Planetarium, $500 for a student worker appreciation event, $300 for the CEC Run/Walk for Autism and $570.02 for an e-waste recycling bin on main campus.",
+     "body": "Hours before the 2022 election results were announced, the senate passed a slate of funding bills: Bill 45-22-S split $15,500 across five scholarship programs unanimously, including summer class, study abroad, ISEC book and Scholar Level scholarships, plus $500 to Black Student Alliance scholarships for the first time; and Bill 42-22-S granted $500 to each organization that applied for fall organizational aid, totaling $8,000. The senate also cut a requested $1,000 Hardin Planetarium donation to $325, a $500 autism walk request to $300, and approved $500 for a student worker appreciation event and $570.02 for an e-waste recycling bin on main campus.",
      "src": {
       "label": "Herald, 20 Apr 2022",
       "url": "https://wkuherald.com/65850/news/sga-votes-to-allocate-funds-towards-scholarships-hardin-planetarium-donation/"
@@ -44476,24 +44485,6 @@
      "src": {
       "label": "Herald, 23 Mar 2022",
       "url": "https://wkuherald.com/65003/news/sga-allocates-funds-for-egg-hunt-honors-college-membership-fees/"
-     }
-    },
-    {
-     "date": "2022-04-14",
-     "title": "Judicial Council clears presidential candidate over a student-wide email",
-     "body": "The Judiciary Council voted in favor of Cole Bornefeld's campaign after SGA members complained his student-wide email about the swipe out hunger initiative violated election code section 3.5 barring self-promotional mail. Speaker Tess Welch argued the signature made it self-promotion, and Administrative Vice President Reed Breunig said the email was not cleared by any member of SGA. Chief Justice Holden Schroeder read a statement from President Matthew Wininger saying no rule required executive cabinet or PR approval for such emails.",
-     "src": {
-      "label": "Herald, 14 Apr 2022",
-      "url": "https://wkuherald.com/65678/news/sga-presidential-candidate-questioned-over-student-all-email/"
-     }
-    },
-    {
-     "date": "2022-04-20",
-     "title": "Senate allocates $15,500 in scholarships and $8,000 in organizational aid",
-     "body": "Bill 45-22-S passed unanimously, splitting $15,500 across summer class, study abroad, ISEC book and scholar level scholarships, including a first-ever $500 for Black Student Alliance scholarships. Bill 42-22-S granted $500 to each organization that applied for fall organizational aid, totaling $8,000. The senate cut a requested $1,000 Hardin Planetarium donation to $325 and a $500 autism walk request to $300, and approved $570.02 for an e-waste recycling bin.",
-     "src": {
-      "label": "Herald, 20 Apr 2022",
-      "url": "https://wkuherald.com/65850/news/sga-votes-to-allocate-funds-towards-scholarships-hardin-planetarium-donation/"
      }
     },
     {
@@ -44923,6 +44914,10 @@
        "office": "Secretary of the Senate",
        "name": "Elizabeth DeLozier",
        "note": "Appointed on Speaker Welch's motion by unanimous consent on 31 August 2021. She co-authored Bill 4-22-S amending the constitution and Resolution 6-21-F, which asked that students be included in mandatory Title IX training.",
+       "profile": [
+        "DeLozier was already a sitting senator when Speaker Tess Welch moved to appoint her Senate secretary at the 31 August 2021 meeting; she spoke to her qualifications and was confirmed by unanimous consent. She went on to co-author Bill 4-22-S amending the constitution and Resolution 6-21-F, which asked that students be included in mandatory Title IX training.",
+        "In the April 2022 election she won the College of Health and Human Services senate seat for 2022-23, and that September the new Senate installed her as chair of the Legislative Operations Committee, the body that reviews bills and resolutions before they reach the floor."
+       ],
        "src": {
         "label": "WKU SGA, Senate minutes, 31 Aug 2021",
         "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/senate_minutes_8_31_21.docx"
@@ -44940,6 +44935,10 @@
       {
        "office": "Associate Chief Justice",
        "name": "Turner Reynolds",
+       "profile": [
+        "Reynolds, a communications and media double major, was one of four judiciary nominees Student Body President Will Harris brought before the Senate on 24 September 2019. A Panhellenic delegate for Alpha Omicron Pi, she told senators she had also served on the Honors Committee Board and Hall Council and could judge fairly regardless of Greek affiliation. She was confirmed 10-2-0, the only one of that night's four nominees not to pass unanimously.",
+        "By the 2021-22 year she had risen to associate chief justice under Chief Justice Holden Schroeder."
+       ],
        "src": {
         "label": "Wayback capture, wku.edu/sga Judicial Council, 21 Jan 2022",
         "url": "https://web.archive.org/web/20220121014313/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php"
@@ -44948,6 +44947,9 @@
       {
        "office": "Associate Justice",
        "name": "Alexis Mayne",
+       "profile": [
+        "President Garrett Edmonds nominated Mayne, then serving as a TOP Guide and a residence hall coordinator, to the Judicial Council at the Senate's 10 November 2020 meeting; she told senators she understood the position's duties, and the nomination passed. She continued as an associate justice into the 2021-22 year under Chief Justice Holden Schroeder."
+       ],
        "src": {
         "label": "Wayback capture, wku.edu/sga Judicial Council, 21 Jan 2022",
         "url": "https://web.archive.org/web/20220121014313/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php"
@@ -44957,6 +44959,10 @@
        "office": "Associate Justice",
        "name": "Jason Herlick",
        "note": "Co-authored Bill 17-22-S adopting the Judicial Council's General Procedural Rules.",
+       "profile": [
+        "Herlick, a freshman with a background in the Kentucky Youth Assembly and the Kentucky United Nations Assembly, was one of four judiciary nominees Student Body President Will Harris brought before the Senate on 24 September 2019. He told senators he would form his own opinion on a case before weighing his fellow justices' views, and confirmed under questioning that he had read SGA's constitution and rules; the Senate confirmed him unanimously.",
+        "He continued on the council into the 2021-22 year as an associate justice under Chief Justice Holden Schroeder, and co-authored Bill 17-22-S adopting the council's General Procedural Rules."
+       ],
        "src": {
         "label": "Wayback capture, wku.edu/sga Judicial Council, 21 Jan 2022",
         "url": "https://web.archive.org/web/20220121014313/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php"
@@ -44974,6 +44980,9 @@
       {
        "office": "Associate Justice",
        "name": "Nicole Massarone",
+       "profile": [
+        "Massarone, a legal studies major who planned to become a lawyer, was nominated to the Judicial Council at the Senate's 14 September 2021 meeting and confirmed unanimously alongside fellow nominee Abbey Norvell. She told the Herald she hoped the position would give her an unbiased voice and experience reviewing cases ahead of her legal career, and pledged to hear judiciary matters students brought to the council while staying impartial."
+       ],
        "src": {
         "label": "Wayback capture, wku.edu/sga Judicial Council, 21 Jan 2022",
         "url": "https://web.archive.org/web/20220121014313/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php"
@@ -45999,6 +46008,9 @@
        "office": "Secretary of the Senate",
        "name": "Antonina Clementi",
        "note": "Secretary from at least October 2022 to January 2023, thanking the officers who sent in written reports even though the governing documents did not require them. She had co-authored Bill 16-22-S the previous spring as a member of the Legislative Operations Committee.",
+       "profile": [
+        "Clementi was elected a senator-at-large in the April 2022 election and, as a member of the Legislative Operations Committee, co-authored Bill 16-22-S amending the SGA constitution that spring. She served as secretary of the Senate from at least October 2022 into the new year, thanking officers for written reports the governing documents did not actually require; by the Senate's 7 March 2023 meeting she had given way to Ethan Huffaker, whom Speaker Julie Mishchuk nominated and the Senate confirmed as her successor."
+       ],
        "src": {
         "label": "WKU SGA, Senate minutes, 4 Oct 2022",
         "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes/minutes_10_4_22.docx"
@@ -46008,6 +46020,10 @@
        "office": "Secretary of the Senate",
        "name": "Ethan Huffaker",
        "note": "Nominated by Speaker Mishchuk and approved by the Senate on 21 March 2023. He wrote a run of constitutional and bylaw amendments that year - Bills 14-22-F, 15-22-F, 39-23-S, 47-23-S and 50-23-S - of which 39-23-S failed 19-15 for want of a two-thirds majority.",
+       "profile": [
+        "Huffaker was elected a senator-at-large in the April 2022 election. That fall he co-authored Bill 14-22-F, which the Senate passed 30-0 to align the bylaws with the constitution on which committee reviews legislation before a bill's first reading. He was a frequent critic of Senate spending: in February 2023 he cast the lone \"nay\" vote against funding a poetry night, citing budget concerns.",
+        "Speaker Julie Mishchuk nominated Huffaker for secretary of the Senate at the Senate's 7 March 2023 meeting, succeeding Antonina Clementi; he told senators he was excited for the role and was confirmed after three speeches in his favor. He went on to write a run of constitutional and bylaw amendments that year - Bills 15-22-F, 39-23-S, 47-23-S and 50-23-S among them - of which 39-23-S, on filling vacant senate seats, failed 19-15 for want of a two-thirds majority."
+       ],
        "src": {
         "label": "WKU SGA, Senate minutes, 21 Mar 2023",
         "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes/minutes_3_21_23.docx"
@@ -46026,6 +46042,11 @@
        "office": "Chief Justice",
        "name": "Holden Schroeder",
        "note": "Continued as chief justice into a second year. He chaired the Judicial Council on 16 September 2022, walking the new justices through the procedural rules he had written, and reported the September election dates to the Senate on 30 August 2022. He was gone by January.",
+       "profile": [
+        "Schroeder was one of four judiciary nominees Student Body President Will Harris brought before the Senate on 24 September 2019, along with Jason Herlick, Derek Collins and Turner Reynolds. He had been chief justice of Kentucky Boys State as a high school junior and was a prosecution attorney on WKU's mock trial B-team; the Senate confirmed him to the Judicial Council unanimously.",
+        "By the start of the 2021-22 year he had become chief justice, swearing in senators and executive appointees at the Senate's first fall meeting on 31 August 2021 and bringing that semester's updated election codes to the floor. In April 2022 he read a statement from President Matthew Wininger during a Judicial Council hearing that cleared presidential candidate Cole Bornefeld of a self-promotion complaint over a student-wide email about the Swipe Out Hunger initiative. He wrote the council's General Procedural Rules and was lead author of Bill 17-22-S adopting them.",
+        "He continued as chief justice into the 2022-23 year, walking new justices Isaac King and Garrett Baum through those rules at the council's 16 September 2022 meeting and swearing in that year's new senators and cabinet appointees on 30 August 2022. He had left the council by late January 2023, when the Senate filled his vacated judicial seat and elected Justin Goins to succeed him as chief justice."
+       ],
        "src": {
         "label": "WKU SGA, Judicial Council minutes, 16 Sep 2022",
         "url": "https://www.wku.edu/sga/2022-2023-judicial/jc_minutes_9_16.docx"
@@ -46043,6 +46064,11 @@
        "office": "Chief Justice",
        "name": "Justin Goins",
        "note": "Elected chief justice on 17 January 2023, in a vote Parliamentarian Pierce moved up the agenda; President Bornefeld swore him in and he then swore in the new senators. He reported that the council still needed an associate chief justice, and read the April 2023 election results.",
+       "profile": [
+        "Goins served as an associate justice on the Judicial Council in 2021-22, co-authoring Bill 17-22-S adopting the council's General Procedural Rules, then moved up to associate chief justice under Chief Justice Holden Schroeder at the start of 2022-23.",
+        "After Schroeder left the council, the Senate elected Goins chief justice on 17 January 2023, in a vote Parliamentarian Meghan Pierce moved up the agenda; President Cole Bornefeld swore him in and he then swore in that meeting's new senators. He went on to nominate Isaac King as his associate chief justice.",
+        "On 17 February 2023 Goins presided over a Judicial Council hearing on Speaker of the Senate Julie Mishchuk's censure complaint against President Bornefeld, who had liked several Instagram posts Mishchuk said were transphobic; the Queer Student Union removed SGA from its list of safe spaces over the posts before the council heard both sides and voted unanimously against censure. Goins announced the decision, saying the justices \"could not find any basis for discrimination in the current WKU constitution.\""
+       ],
        "src": {
         "label": "WKU SGA, Senate minutes, 17 Jan 2023",
         "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes/minutes_1_17_23.docx"
@@ -46061,6 +46087,9 @@
        "office": "Associate Justice",
        "name": "Garrett Baum",
        "note": "Appointed to the Judicial Council on 30 August 2022; the minutes note he had helped write the constitution. His forename is given as \"Garret\" in that record and \"Garrett\" in the 2021-22 legislation.",
+       "profile": [
+        "Baum, then a junior senator who had helped write the SGA constitution, co-authored Bill 9-21-F in the fall of 2021, which created a new \"Guest and Student Speakers\" order of business so visitors no longer had to sit through most of a meeting before addressing the Senate. The Senate appointed him to the Judicial Council on 30 August 2022, alongside fellow nominee Isaac King."
+       ],
        "src": {
         "label": "WKU SGA, Senate minutes, 30 Aug 2022",
         "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes_8_30_22.docx"
@@ -46601,7 +46630,7 @@
     {
      "date": "2024-01-24",
      "title": "Midyear resignations reshuffle the executive cabinet",
-     "body": "President Sam Kurtz announced the resignations of Chief of Staff Lindsey Kelly and of Donte Reed as director of enrollment and student experience. The senate approved Kurtz's nominations of Reed as the new chief of staff and Sarah Vincent as director of enrollment and student activities. Kurtz also filled vacant transfer/non-traditional, sophomore and graduate senate seats with Sawyer Edmonds, Gabe Jerdon and Elizabeth Gannon.",
+     "body": "President Sam Kurtz announced the resignations of Chief of Staff Lindsey Kelly and of Donte Reed as director of enrollment and student experience at the first meeting of the spring semester. The senate approved Kurtz's nominations of Reed as the new chief of staff and Sarah Vincent as director of enrollment and student experience. Kurtz also filled vacant transfer/non-traditional, sophomore and graduate senate seats with Sawyer Edmonds, Gabe Jerdon and Elizabeth Gannon.",
      "src": {
       "label": "Herald, 24 Jan 2024",
       "url": "https://wkuherald.com/74403/news/sga-swears-in-new-members-opens-spring-scholarships/"
@@ -46610,7 +46639,7 @@
     {
      "date": "2024-02-09",
      "title": "Judicial council censures Salvador León",
-     "body": "The SGA judicial council voted 6-0 to censure Administrative Vice President Salvador León after a Feb. 7 hearing on allegations that he spent funds, including a $425.25 Preston Center deposit for Neurodiversity Acceptance Week, before the senate passed the funding bill. León argued text messages showed President Sam Kurtz had accepted the spending, while Kurtz said he asked León multiple times not to spend before the bill passed. The council recommended no further disciplinary action beyond the censure.",
+     "body": "At a Feb. 7 hearing, Speaker of the Senate Sydney Denney presented three allegations against Administrative Vice President Salvador León, including a $425.25 Preston Center deposit paid Feb. 1 from the executive project and legislative discretionary budgets before Bill 22-23-S reached the Senate on Feb. 6. León countered with text messages in which Kurtz replied \"sweet\" and \"bet sounds good\" to his spending plans, and said he was only paying a fee and doing his job. The judicial council voted 6-0 to censure him, recommended no further disciplinary action, and called the episode a learning experience.",
      "src": {
       "label": "Herald, 9 Feb 2024",
       "url": "https://wkuherald.com/74786/news/sga-administrative-vice-president-salvador-leon-censured-no-further-disciplinary-action/"
@@ -46655,7 +46684,7 @@
     {
      "date": "2024-02-06",
      "title": "Cabinet requests censure hearing against León",
-     "body": "Kurtz told the senate the Executive Cabinet had filed a formal report seeking a Judicial Council censure hearing against Administrative Vice President Salvador León. Chief Justice Isaac King said the cabinet's complaint was that León spent project funds before President Kurtz or EVP Finch consented, that he had done so after Kurtz conditioned permission on Bill 22-23-F first passing, and that he pushed PR Director Preston Romanov to promote Neurodiversity Week on SGA social media before the funding bill passed, effectively forcing the Senate's hand. The Executive Cabinet, excluding León, asked for a censure; the hearing was set for Feb. 7.",
+     "body": "Kurtz told the senate the Executive Cabinet had filed a formal report seeking a Judicial Council censure hearing against Administrative Vice President Salvador León. Chief Justice Isaac King said the cabinet's complaint was that León spent project funds before President Kurtz or EVP Finch consented, that he had done so after Kurtz conditioned permission on Bill 22-23-S first passing, and that he pushed PR Director Preston Romanov to promote Neurodiversity Week on SGA social media before the funding bill passed, effectively forcing the Senate's hand. León said the matter was not personal and that he would explain more at the hearing. The Executive Cabinet, excluding León, asked for a censure; the hearing was set for Feb. 7.",
      "src": {
       "label": "Herald, 6 Feb 2024",
       "url": "https://wkuherald.com/74704/news/sga-announces-censure-hearing-against-administrative-vice-president-salvador-leon/"
@@ -46731,33 +46760,6 @@
      "src": {
       "label": "Herald, 29 Nov 2023",
       "url": "https://wkuherald.com/74058/news/sga-holds-final-meeting-of-semester/"
-     }
-    },
-    {
-     "date": "2024-01-24",
-     "title": "Chief of staff and enrollment director resign, Reed elevated",
-     "body": "Kurtz announced the resignations of Chief of Staff Lindsey Kelly and Director of Enrollment and Student Experience Donte Reed at the first meeting of the spring semester. Kurtz then nominated Reed as chief of staff and Sarah Vincent to the vacated enrollment post, and both were approved. Sawyer Edmonds, Gabe Jerdon and Elizabeth Gannon were appointed to vacant transfer, sophomore and graduate senate seats.",
-     "src": {
-      "label": "Herald, 24 Jan 2024",
-      "url": "https://wkuherald.com/74403/news/sga-swears-in-new-members-opens-spring-scholarships/"
-     }
-    },
-    {
-     "date": "2024-02-06",
-     "title": "Executive cabinet files censure complaint against vice president Leon",
-     "body": "Kurtz told the Senate the executive cabinet had filed a formal report to the Judicial Council seeking a censure hearing against Administrative Vice President Salvador Leon. Chief Justice Isaac King said Leon spent project budget funds without the approval of Kurtz or Executive Vice President Annalise Finch, had SGA's public relations director promote Neurodiversity Week before its bill passed, and thereby forced the Senate's hand on Bill 22-23-S. Leon responded that the matter was not personal and said he would explain more at the hearing.",
-     "src": {
-      "label": "Herald, 6 Feb 2024",
-      "url": "https://wkuherald.com/74704/news/sga-announces-censure-hearing-against-administrative-vice-president-salvador-leon/"
-     }
-    },
-    {
-     "date": "2024-02-09",
-     "title": "Judicial Council censures Leon 6-0 with no further discipline",
-     "body": "At a Feb. 7 hearing, Speaker of the Senate Sydney Denney presented three allegations, including a $425.25 Preston Center deposit paid on Feb. 1 from the executive project and legislative discretionary budgets before Bill 22-23-S reached the Senate on Feb. 6. Leon countered with text messages in which Kurtz replied \"sweet\" and \"bet sounds good\" to his spending plans, and said he was paying a fee and doing his job. The council voted 6-0 to censure him, recommended no further action and called the episode a learning experience.",
-     "src": {
-      "label": "Herald, 9 Feb 2024",
-      "url": "https://wkuherald.com/74786/news/sga-administrative-vice-president-salvador-leon-censured-no-further-disciplinary-action/"
      }
     },
     {
@@ -47278,6 +47280,11 @@
        "office": "Chief Justice",
        "name": "Isaac King",
        "note": "Named on the document as chief justice.",
+       "profile": [
+        "King was appointed to the Judicial Council on 30 August 2022 by unanimous voice vote, one of two new justices seated that night alongside Garrett Baum. Chief Justice Justin Goins had nominated him associate chief justice by late January 2023.",
+        "King became chief justice for 2023-24. That November he authored Bill 12-23-F, which raised the chief justice's required weekly office hours from one to five, arguing the position needed to be easier to reach for constitutional questions. In February 2024, after the Executive Cabinet accused Administrative Vice President Salvador León of spending project funds without authorization and of pressuring the public relations director to promote an event before its funding bill had passed, King explained the complaints to the Senate and announced a censure hearing for 7 February; the council censured León 6-0 two days later with no further discipline.",
+        "King's term ended on 23 April 2024, when he swore in the new 24th Senate's officers, including his successor as chief justice, Associate Chief Justice Ellen Henderson."
+       ],
        "src": {
         "label": "SGA legislation: Bill to Amend the Constitution of the Student Government Association of Western Kentucky University",
         "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_12_23_f.pdf"
@@ -48241,6 +48248,10 @@
        "office": "Chief Justice",
        "name": "Ellen Henderson",
        "note": "Appointed from Associate Chief Justice at the 24th Senate's first meeting, 23 April 2024; still Chief Justice as of the 27 August 2024 meeting.",
+       "profile": [
+        "Chief Justice Isaac King nominated Henderson associate chief justice at the Senate's 5 September 2023 meeting; she told senators she was honored by the nomination and excited to be more involved in SGA, and was confirmed by unanimous voice vote. She co-signed the Judicial Council's fourteen-bill constitutional revision in the spring of 2024.",
+        "At the 24th Senate's first meeting on 23 April 2024, the outgoing King swore Henderson in as chief justice, alongside newly elected Speaker Sarah Vincent and Chief of Staff Anne-Marie Wright. She continued in the role into the fall, swearing in the winners of the October 2024 senate election at the 1 October meeting, where the Senate also passed a bill requiring school safety training for WKU professors. On 19 November 2024, ahead of her graduation, Henderson swore in Associate Chief Justice Morgan Gammons as her successor."
+       ],
        "src": {
         "label": "Herald, 24 Apr 2024",
         "url": "https://wkuherald.com/76579/news/sga-holds-first-meeting-of-24th-senate/"
