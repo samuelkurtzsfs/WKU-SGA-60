@@ -3170,3 +3170,190 @@ records, up thirty-two tonight. 497 written profiles, up eleven. 79 portraits an
 `main`, and a fresh build reproduces the committed `site/` exactly.
 `check_duplicates.py` reports the same six long-judged pairs and nothing new; none
 of them is touched by tonight's work, and each remains genuinely two events.
+
+# 21 August 2026, scheduled research run — two loose ends closed
+
+The stored prompt this run fired with described an older backlog (the three
+branch histories, 235 moments, 92 officer candidates, four portraits, Reed
+Morgan, Amanda Coates/Lich) — all of it already finished per SGA-60-AGENT-INFO.md
+§8's own note. Worked the two small items the last "Still open" note above
+actually flagged as outstanding, on `research-backlog`, PR to follow.
+
+## Kappler and Bewley, 2008-09 Judicial Council
+Herald headlines confirmed both facts the previous pass's profiles already
+carried but the structured roster didn't reflect: Kappler resigned what the
+Herald of 17 Feb 2009 called Chief Justice; Bewley was approved to succeed her,
+Herald 19 Feb 2009. Both headlines checked against the live TopSCHOLAR landing
+pages and independently against `data/herald-index-full.json` — real, exact.
+
+First draft flatly retitled both roster rows "Chief Justice, Judicial Council."
+An adversarial verifier caught that this overclaims: the file's own 2009-10
+roster treats Clerk and Chief Justice as distinct offices, and nothing cited
+shows Kappler was ever promoted from Clerk before the Herald's language at her
+resignation — SGA's own 14 Oct 2008 minutes call her Clerk, full stop. Kappler's
+office reverted to "Clerk, Judicial Council"; the Herald's "Chief Justice"
+language stays in her note, profile and citation, hedged rather than asserted
+as her formal title. Bewley's elevation is better supported (a dated Senate
+action already in the year's events), so his row keeps Chief Justice but is
+now marked "(successor)," matching how the file already marks Ellen Henderson
+succeeding to Morgan Gammons in 2024-25 — the file's own convention for a
+mid-term office change, which the first draft didn't follow.
+
+## Thirty-two Talisman senate citations
+1985-86 (13 members) and 1986-87 (19 members) cited the 1986 and 1987 Talisman
+by item page only, leaving the printed page number in the label with no link
+to the actual leaf. archive.org's full-text search-inside API
+(`https://{server}/fulltext/inside.php`, server/path from `/metadata/<item>`)
+returned the leaf number for a name-level match against each yearbook's own
+index: leaf 198 = printed p.194 in `talisman1986west` (matched Jennifer Borsch,
+Lori Dohrn, Dana Cunningham against the book's own index and the leaf's OCR
+caption), leaf 120 = printed p.114 in `talisman1987west` (matched Holger
+Velastegui, Laura Tracy, Kent Groemling, Jerry Castleberry the same way). Both
+offsets differ (leaf = printed+4 for 1986, printed+6 for 1987) because of each
+book's own front matter — normal, and the name-level match rules out an
+off-by-one. All 32 `src.url` fields now open on `/page/nNNN/mode/1up` rather
+than the bare item page. Adversarial verifier: ACCEPT, no changes.
+
+`build.py`, `check_data.py` pass clean; `check_duplicates.py` reports the same
+six long-judged pairs and nothing new.
+
+# 21 August 2026, editor's pass — two branches reviewed, both merged, one date corrected
+
+Two pull requests were open, both cut from current main. The three stale 4 August
+branches named in the standing brief (#6 photographs, #7 the 1980s, #8 the 2020s)
+are gone from the open list and needed no decision.
+
+## Research: person profiles (#104) — merged as it stood
+
+Eleven 1993-95 committee officers and Judicial Council members gained profiles.
+Every one of the eight pieces of legislation cited was checked by opening the PDF
+in `data/legislation/` and reading its own AUTHOR and SPONSOR lines. All eight held
+exactly: Ahsan sole author of Bill 92-10-F; the six named co-authors of Resolution
+93-2-S; the five of 93-3-S including Eric McWilliams; Myers with Molly Schreiner on
+93-7-S; the five of 93-6-F including Cailles and Newton; Rucker on 94-04-S; Rucker
+with President Robert Evans on 94-1-1; Myers on Bill 94-06-S. Dates, sponsoring
+committees and the two unanimous-passage stamps all matched. Nothing cut.
+
+**A warning worth more than the merge.** The first pass of this review checked those
+claims against `data/legislation-authors.json` and four appeared to fail — McWilliams
+missing from 93-3-S, Cailles missing from 93-6-F, Myers filed as sponsor rather than
+author on 93-7-S, and 93-2-S absent altogether. The derived index was wrong in every
+case and the PDFs were right. That file drops authors and mislabels roles; it is a
+finding aid, not evidence. Trusting it would have deleted four correct facts. This is
+trap 7 running backwards — the derived artefact reporting less than the primary — and
+the rule that follows is: go to the PDF before cutting or adding a name.
+
+The Duncan handling in that branch is the standard to copy. Derrek Duncan of 1993-94
+and Derek Duncan of 1994-95 are kept as two people, the resemblance is stated, and the
+merge is explicitly declined in the profile itself. `name-aliases.json` rightly carries
+no Duncan pair.
+
+## Research: the backlog (#105) — merged after one correction
+
+The thirty-two Talisman citations are sound and were confirmed independently rather
+than taken on trust. archive.org's search-inside API puts three separate 1985-86
+senators (Velastegui, Wredman, Groemling) on leaf 198 of `talisman1986west` and three
+separate 1986-87 senators (Castleberry, Norcia, Smoot) on leaf 120 of `talisman1987west`,
+which is exactly what the new `/page/nNNN/mode/1up` anchors claim. The leaf captions
+were then read back against the recorded rosters: of the twenty-one names the OCR
+caption covers, all twenty-one sit in the row the file says they sit in. No mismatches.
+(The branch's own night-report entry lists the corroborating names under the wrong
+volumes — Velastegui and Groemling are 1986, not 1987. The prose is scrambled; the data
+is right.)
+
+The Judicial Council edit carried a real error and it was corrected before merging.
+Kappler's roster row was given a resignation date of 17 February 2009 — the day the
+print Herald carried the story — and had Bewley approved as her successor "two days
+later." The archive already held the contemporaneous report: the Herald of 12 February
+2009, mirrored on the Wayback Machine and cited by this year's own events, records that
+she resigned that Thursday night in a letter to President Kayla Shelton and student
+activities director Charley Pride. The Senate approved Bewley a week later, on the 19th.
+Her own 2007-08 profile and two event entries had said so all along, so the branch was
+introducing a contradiction against sourced material already in the file.
+
+The failure is the ordinary one: a TopSCHOLAR index date read as an event date. The
+back file is a print paper indexed by issue, and an issue date is when the story ran,
+never when the thing happened. The added profile paragraph was dropped as well — it
+retold a story her 2007-08 term already tells, and the alias layer folds both rows onto
+one person page, so it would have appeared twice in two versions.
+
+Keeping Kappler's office as "Clerk, Judicial Council" is right and was left alone: the
+14 October 2008 minutes say Clerk, the Herald says Chief Justice by February, and the
+hedge belongs in the note rather than in the office field. Bewley's "(successor)" follows
+the convention the file already uses for Morgan Gammons succeeding Ellen Henderson in
+2024-25.
+
+## Counts after both merges
+
+61 years, 2029 events, 60 people have been president. `build.py`, `check_data.py` and
+`check_contrib.py` all clean. `check_duplicates.py` reports the same six long-judged
+pairs and nothing new; neither branch added an event, so neither added a pair.
+
+## Still open
+
+The Herald article PDFs on TopSCHOLAR were unreachable for the whole of this pass —
+403, then an empty 202 behind the bot check, after the prescribed 90-second wait. The
+landing pages and abstracts answered fine. Anything needing an article body rather than
+a headline will have to wait for a run that gets through.
+
+## Addendum — a commit that landed mid-review, and a duplicate problem worth a run of its own
+
+**A commit arrived on `research-profiles` between the review and the merge.** `ca4b3d9`,
+nine cabinet profiles for 2021-2026 — Singh, Johnson, Romanov, Taylor, Wright, Jenkins,
+Jerdon, Yelton and Savanna Kurtz — was pushed after the branch was read and went to main
+with the PR head. Its own commit message says an adversarial pass was still checking it,
+so it published as a draft. It was reviewed after the fact rather than before, which is
+the wrong order; a branch should be re-read at its head immediately before the merge
+button, not at the sha the listing returned.
+
+Reviewed now, it largely holds. Every figure that can be checked traces to an event
+already in that year's record with its own source: Taylor's $100,000 budget approved
+unanimously on 27 August 2024; Wright's Borrow-a-Calculator report of 3 September 2024;
+the 88% vote renaming the DEI Committee; Jerdon's $4,573.73, his 78 applicant
+organizations, the Herald's later correction to $580, and the $71.17 left in the
+discretionary fund; Jenkins's 56 bills, the most since 2018-19; Yelton's Swipe It Forward.
+Singh's confirmation on 15 September 2021 matches the minutes.
+
+One defect was corrected. Preston Romanov's profile carried the Executive Cabinet's
+February 2024 censure complaint against Administrative Vice President Salvador León —
+which alleged León pushed Romanov to promote Neurodiversity Week before its funding bill
+passed — and stopped there, leaving an allegation against a named living person hanging
+with no result. The outcome is in this same year's events: the Judicial Council heard it
+on 7 February 2024 and censured León 6-0, recommending no further action. That has been
+added, along with a line making clear Romanov was not himself the subject of the
+complaint. The rule is that an allegation without its resolution is not publishable when
+the resolution exists.
+
+One tension is flagged rather than fixed: Singh's roster office reads Director of
+Enrollment and Student Experience, from a January 2022 capture of the cabinet page, while
+the Senate minutes confirm him as director of academic and student affairs. Both are
+sourced. Which he actually held, or whether the post was renamed under him, is not
+established here.
+
+**The duplicate checker cannot see the duplicates.** Tracing those claims turned up
+seventeen pairs of events that are one event written up twice — same date, same source
+URL, bodies overlapping by half or more — none of which `check_duplicates.py` reports.
+It compares words in titles, so two passes that titled the same meeting differently slip
+straight through. The clearest:
+
+- 2011-12, 9 Nov: "Senate defeats DUC name change resolution 19-8" / "Senate votes down
+  renaming Downing University Center 19-8"
+- 2021-22, 14 Apr: "Judiciary Council cleared Bornefeld's campaign over student-all email"
+  / "Judicial Council clears presidential candidate over a student-wide email"
+- 2023-24, 6 Feb: "Cabinet requests censure hearing against León" / "Executive cabinet
+  files censure complaint against vice president Leon"
+- 2020-21, 21 Oct: the two write-ups of Keller's 29-1 confirmation as AVP
+- 2019-20, 12 Feb: the two write-ups of the Go With the Flow funding increase
+- 2024-25, 5 Feb: the two write-ups of the DEI constitutional review
+
+The León pair is the instructive one: the spelling differs between them, León and Leon,
+which drops the title overlap far enough that nothing flags it. CLAUDE.md predicts this
+failure exactly — "matching whole titles never catches it" — and the tool meant to catch
+it does the thing the warning says will not work.
+
+These are all pre-existing on main and none came from tonight's two branches, so nothing
+was merged on their account. They are not fixed here on purpose: combining two entries
+without losing a sourced fact from either means reading both sources properly, seventeen
+times over, and that is a run's work rather than a tired addendum to someone else's. The
+next pass should take it, and `check_duplicates.py` should grow a body-similarity mode
+that compares events sharing a date and a source, which is what surfaced these.
