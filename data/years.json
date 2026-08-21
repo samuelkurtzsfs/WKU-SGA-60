@@ -41492,28 +41492,12 @@
         "label": "SGA Senate minutes, 14 Apr 2020",
         "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_4_14_20.docx"
        }
-      },
+      }
+     ],
+     "members": [
       {
-       "office": "Senator At Large",
-       "name": "Jillian Kenney",
-       "note": "Named on the document as senator at large.",
-       "src": {
-        "label": "SGA legislation: Funding for Greeks Go Green",
-        "url": "https://www.wku.edu/sga/legislative/2019_2020_legislation/1_19_f.pdf"
-       }
-      },
-      {
-       "office": "Senator",
-       "name": "Conner Hounshell",
-       "note": "Named on the document as senator.",
-       "src": {
-        "label": "SGA legislation: Funding for the Bowling Green Pride Festival",
-        "url": "https://www.wku.edu/sga/legislative/2019_2020_legislation/2_19_f.pdf"
-       }
-      },
-      {
-       "office": "Senator",
        "name": "Mark Clark",
+       "seat": "Senator",
        "note": "Named on the document as senator.",
        "src": {
         "label": "SGA legislation: Funding for the Bowling Green Pride Festival",
@@ -41521,8 +41505,17 @@
        }
       },
       {
-       "office": "Senator At Large",
+       "name": "Conner Hounshell",
+       "seat": "Senator",
+       "note": "Named on the document as senator.",
+       "src": {
+        "label": "SGA legislation: Funding for the Bowling Green Pride Festival",
+        "url": "https://www.wku.edu/sga/legislative/2019_2020_legislation/2_19_f.pdf"
+       }
+      },
+      {
        "name": "Jesse Ricketts",
+       "seat": "Senator At Large",
        "note": "Named on the document as senator at large.",
        "src": {
         "label": "SGA legislation: A Bill to Establish an Honor Society Membership Reimbursement Fund",
@@ -41530,8 +41523,8 @@
        }
       },
       {
-       "office": "Senator",
        "name": "Shelby Robertson",
+       "seat": "Senator",
        "note": "Named on the document as senator.",
        "src": {
         "label": "SGA legislation: Funding for the Addressing Educational Disparities Scholarship",
@@ -41539,9 +41532,9 @@
        }
       },
       {
-       "office": "Senator",
-       "name": "Symone Whalin",
-       "note": "Named on the document as senator.",
+       "name": "Anthony Survance",
+       "seat": "Senator",
+       "note": "Named as author, alongside Symone Whalin, on the resolution seeking disciplinary action against the Epsilon Kappa chapter of Alpha Xi Delta; also recorded questioning a Judicial Council nominee's membership in WKU College Republicans at the confirmation meeting of 25 February 2020.",
        "src": {
         "label": "SGA legislation: Resolution to Support the disciplinary action, up to their suspension in WKU Greek Affairs, against the Epsilon Kappa chapter of Alpha Xi Delta",
         "url": "https://www.wku.edu/sga/legislative/2019_2020_legislation/res_1_19_f.pdf"
