@@ -2898,3 +2898,151 @@ project's `.vercel.app` aliases sit behind Vercel SSO and redirect to a login, a
 the bare `wku-sga-60.vercel.app` host answers `DEPLOYMENT_NOT_FOUND`, which tells
 us that hostname is not the production alias rather than telling us anything about
 the site. So the deployment refusals are confirmed; the public site's state is not.
+
+## 21 August, second pass — four branches merged, ten corrections
+
+Four pull requests came in over the course of this pass and all four merged: #95
+person profiles, #96 the senate rolls, #97 more person profiles, #98 the photo
+overlay fix. Nothing was refused. Ten corrections were made before merging, and
+three of them were errors the branches had inherited from the archive rather than
+introduced, which is the more useful finding.
+
+### The theme of the night: nobody was reading the documents
+
+Three separate errors, on three separate branches, came from the same habit —
+trusting a text layer, an index line or an existing entry instead of opening the
+page.
+
+**Deanna Hills is Deanna Mills.** #95 wrote her into Paul Sagun's profile as
+Hills. The 1990-91 member entry was worse: it had carried
+`"Sworn in 5 Feb 1991: 'Deanna Hills - Soph Rep.'"` since it was written, offering
+a misreading as a direct quotation of the minutes. The minutes are a scan; I
+extracted the page image and enlarged the line. It reads Mills. Both are fixed. A
+Deanna Mills also appears on the 1993-94 Judicial Council; I have not merged them
+and nobody should without evidence.
+
+**Lena S. Gamer is Lena S. Garner.** #96 took the name off the OCR text layer of
+the Fall 1994 membership list, which renders "rn" as "m". The page image at four
+times size is unambiguous. This is the same error as the one above, arrived at by
+a different route, on a different branch, within an hour.
+
+**The Steve Wilson vote was not 30-3.** #96 recorded Congress confirming him as
+Judicial Council chairman 30-3 on 12 September 1978. The minutes say "30 yes and
+3 abstained" — three abstentions and nobody against, which is close to the
+opposite of what 30-3 states. The line above it in the same minutes reads "31 yes
+and 2 abstained" for Melody Berryman, so the clerk's convention is not ambiguous.
+The branch did not invent this: the existing document summary for those minutes
+has read "Melody Berryman, 31-2" and "Steve Wilson ... (30-3)" since it was
+written. Corrected in all three places.
+
+The lesson for the routines is one line: an OCR text layer is a finding aid, and
+an existing entry in this archive is not a source. Both are worth grepping. Neither
+is worth quoting.
+
+### Corrections of judgement rather than fact
+
+**Roxana Crowe's Christmas letter, cut.** #95 had her December 1990 letter to the
+Herald, "Jesus Is The Reason For The Season", in her profile. It is correctly
+sourced and it has nothing to do with her committee work. Personal opinion
+unconnected to a person's service does not belong in their record, and sourcing it
+properly does not change that.
+
+**Ty Craig's paragraph on the Falmlen allegations, trimmed.** It asserted that
+Craig's letter "defended her" and that the archive "does not preserve what the
+allegations against Falmlen were". The first is inference from a headline. The
+second is a negative claim drawn from a miss in the local index, and it is not even
+true — the index also carries "Heather Falmlen Says She Wasn't Bribed" and "Story
+Smeared Heather Falmlen". Trimmed to what the headline carries, and explicit that
+the substance is not on the record here.
+
+**Phil Myers is no longer a Congress member.** #96 filed him with the seat
+"Congress member" while his own note explained that his membership was not
+established. The note was right and the seat contradicted it; the seat is what the
+officer pages render. He read a resolution aloud on 13 February 1969 and did
+nothing else the minutes record, and Congress heard speakers who held no seat. He
+keeps his entry, on the footing the record already uses elsewhere for someone
+present without established membership.
+
+**Three profiles in #97 used sources they did not cite.** Scott Taylor's
+fraternity membership came from the 1976 Talisman's Pi Kappa Alpha page, Kevin
+Strader's Interhall Council presidency from the 1981 Talisman, and Paul Deom's
+first two paragraphs from a yearbook article at p. 266 that is not the "year of
+resolutions" spread already on file. All checked out when I read the full texts
+on archive.org, so the sources were attached rather than the claims cut. The rule
+is that a profile's facts trace to sources cited in the year: when a profile
+reaches for a new source, the source has to come with it.
+
+**One claim in #97 was untrue as written.** Strader's paragraph called him "the
+only Kevin Strader in the yearbook's full name index". The index contains no Kevin
+Strader at all; it lists John Kevin Strader. The conclusion survives, the sentence
+did not.
+
+### #98 was better than it claimed
+
+The photo-overlay fix described itself as invisible — no existing portrait needed
+the new fallback path, so nothing on the site would change. Half true. The
+fallback is indeed unexercised, but `render_officer()` had never rendered a
+portrait at all, so **66 person pages gained one on merge**. I built `main` and the
+branch from identical data and diffed the whole tree: 1,743 files differ, every one
+outside those 66 being the new CSS rule inlined into each officer page, and all 66
+image paths resolve to real files with their credits intact. Good change,
+understated. §8.4 now records what it actually did.
+
+The wider point for build-side work: the right check on a change to `build.py` is
+not a verifier subagent but building both sides and diffing the output. It takes a
+minute and it is the only thing that shows what a template change did to pages that
+already existed.
+
+### What was right, and worth keeping
+
+#96 refused to merge Paul Gerard with the student regent of the following year, and
+Dennis Jaffee with the "Dennis Jaffe" in Menser's profile, hedging both with
+cross-references instead. Same-name, same-town, adjacent years is exactly where
+this archive would go wrong, and declining twice was the strongest work in that
+branch. #97's verifier caught three real problems — a flat identity claim, a
+conflation of two KCLU chapters, and a mischaracterised floor argument — and all
+three fixes were correct when I checked them against the yearbook. Its handling of
+the 1981 Talisman contradicting itself on a vote (24-9 with three abstentions on
+one page, 29-4 on another) is the right model: publish both, name the source as
+inconsistent, choose neither.
+
+#96 also demonstrated something worth repeating. TopSCHOLAR refused every PDF
+fetch it attempted, and it worked entirely from already-mirrored documents — ten
+sound names out of files that were already on disk, at no cost to the archive.
+`data/documents/` still holds a great deal that has not been exhausted. Relatedly,
+#97 reported that the 1989-90 officers could not be taken further because bot
+protection blocked the PDFs, while the 5 December 1989 minutes confirming Daniel
+Duffy's resignation were sitting in that directory, along with the other 27 files
+of the series.
+
+### Still open
+
+- **The 11 April 1991 Falmlen election is written up twice**, once in 1990-91 and
+  once in 1991-92, same date and same source. `check_duplicates.py` compares within
+  a year and cannot see it. If filing an election in both the year it was held and
+  the year it seated is the convention, it should be written down; if not, one
+  entry should go.
+- **Deanna Mills, 1990-91 and 1993-94.** Same name, three years apart, not merged.
+- **Kevin Strader, parliamentarian and Interhall Council president.** Circumstantial
+  only, and left that way.
+- The Hills/Mills and Gamer/Garner corrections suggest a **sweep of every quoted
+  string in the record against its scanned source** would be worth a run of its own.
+  Two were found in one evening without looking for them.
+
+### Where the archive stands
+
+61 academic years, 2,027 dated and sourced entries, 60 people recorded as
+president. 1,098 executive and senate officer records and 1,222 senate member
+records. 486 written profiles, up twenty-six across the two profile branches, with
+all 73 leader records now carrying one. 73 leader portraits and 55 year
+photographs, and as of tonight those portraits appear on the person pages as well
+as the year pages. 1,111 legislation files and 286 document files.
+
+`build.py`, `check_data.py` and `check_contrib.py` are all clean on the merged head
+of `main`, and the committed `site/` matches what a fresh build produces.
+`check_duplicates.py` reports the same six long-judged pairs and nothing new; each
+remains genuinely two events.
+
+Nothing to add to yesterday's note about Vercel: this pass merged four times and I
+did not check whether any of it deployed, since the daily cap and the SSO-protected
+aliases both still stand and neither is something a run from here can resolve.
