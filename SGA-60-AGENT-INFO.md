@@ -368,13 +368,16 @@ git rev-list --left-right --count origin/main...origin/<branch>
    primary text with no network requests at all.
 
    *Checked 20 August (later pass), no names added:* the full Meetings/Minutes
-   listing was pulled live (843 items, 1969-02-13 to 2008-12-08) and mapped to
+   listing was pulled live (843 item links, 830 of them dated, 1969-02-13 to
+   2008-12-02) and mapped to
    academic year. Six of the eighteen years with no `organization.senate.members`
    have **zero** minutes items on TopSCHOLAR, not just an unworked query:
    1966-67, 1967-68 (before the collection starts), 1969-70, 1971-72 (inside the
-   range but genuinely absent, unlike the years either side), and 1999-00, 2004-05
-   (the collection thins after 1998-99 and stops in Dec 2008; these two interior
-   years have nothing between years that do). 1979-80 stays as already recorded
+   date range, but the collection holds exactly one dated item — 13 Feb 1969 —
+   between 1968 and 1975-76, so every year from 1969-70 to 1974-75 is equally
+   bare), and 1999-00, 2004-05 (genuinely interior gaps: 1998-99 has 43 items
+   and 2000-01 has 13; 2003-04 has 26 and 2005-06 has 48; the collection itself
+   stops in Dec 2008). 1979-80 stays as already recorded
    above — re-confirmed, nothing new. Talisman substitutes only where
    `archive.org` holds the year: 1971-72's yearbook was read in full and adds
    nothing rank-and-file, only the four officers already on record, plus two

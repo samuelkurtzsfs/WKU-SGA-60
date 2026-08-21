@@ -8,7 +8,7 @@ same sourcing bar as a positive one.
 ## The minutes collection does not reach six of these years
 
 `digitalcommons.wku.edu/sga/Meetings/Minutes/` was pulled live and in full (one
-request, no pagination needed — 843 items, item 1 through item ~843, from
+request, no pagination needed — 843 item links, of which 830 carry a date, from
 1969-02-13 to 2008-12-02). Mapped to academic year, six gap years have **zero**
 minutes items on TopSCHOLAR, confirmed against the complete listing rather than
 `.research/minutes-index.json` (which independently agrees — it has 0 entries for
@@ -16,11 +16,16 @@ the same six years):
 
 - **1966-67, 1967-68** — before the collection starts. The earliest digitised
   minutes item is 13 February 1969, mid-way through 1968-69.
-- **1969-70, 1971-72** — inside the collection's date range but genuinely absent;
-  the surrounding years (1970-71, 1972-73) are covered.
-- **1999-00, 2004-05** — the collection thins out after 1998-99 and stops
-  altogether in December 2008; these two interior years have no minutes at all
-  between the years on either side that do.
+- **1969-70, 1971-72** — inside the collection's date range, but so is almost
+  nothing else from those years. The whole of the late sixties and early
+  seventies is one dated item: 13 February 1969. Nothing else is dated before
+  1975-76, so 1968-69 (1 item), 1969-70, 1970-71, 1971-72, 1972-73, 1973-74 and
+  1974-75 (0 each) are all effectively unrepresented, not two absences inside a
+  covered run. The thirteen undated item links cannot be assigned to a year
+  either way.
+- **1999-00, 2004-05** — genuinely interior gaps. Both sit between years the
+  collection does cover (1998-99 has 43 items and 2000-01 has 13; 2003-04 has 26
+  and 2005-06 has 48), and the collection itself stops in December 2008.
 
 `1979-80` was already investigated (see `SGA-60-AGENT-INFO.md` §8.3 item 1): the
 only two items dated inside that term (250, 261) turn out to swear in *1980-81's*
