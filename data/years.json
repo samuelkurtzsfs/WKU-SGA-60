@@ -552,7 +552,15 @@
        "profile": [
         "Patricia Lanning, a senior from Bowling Green, held one of the two Panhellenic Representative seats in the first Congress of Associated Students, elected in May 1966.",
         "She was also president of the campus Panhellenic Council that year. The Herald profiled her on 3 November 1966 under the headline \"Panhellenic President Doubles as Housewife,\" and had printed a piece under her byline the previous week, headlined \"Sorority Girls Chided,\" about the Sigma Chi Derby."
-       ]
+       ],
+       "src2": {
+        "label": "Herald 46:6, 3 Nov 1966 - \"Panhellenic President Doubles as Housewife\" (article index)",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4698"
+       },
+       "src3": {
+        "label": "Herald 46:5, 27 Oct 1966 - \"Sorority Girls Chided\" under Lanning's byline (article index)",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4703"
+       }
       }
      ]
     }
@@ -1073,7 +1081,7 @@
     {
      "file": "1967-68-officers-roster.pdf",
      "title": "Associated Student Government Officers and Congressmen, 1967-68",
-     "summary": "The second-year roster of Associated Students officers and Congress representatives, with each member's residence, and a separate listing of the seven-member Executive Committee and three standing committees.",
+     "summary": "The second-year roster of Associated Students officers and Congress representatives, with a separate listing of the seven-member Executive Committee and the Student Activities and Rules and Elections committees.",
      "extract": "Lists the 1967-68 officers and congressmen, then the Executive Committee, Student Activities, and Rules and Elections committees by name and hometown.",
      "sga_pages": "1-2",
      "page": 1,
@@ -29158,7 +29166,7 @@
        },
        "profile": [
         "Gretchen Light was sworn in as a justice of SGA's judicial council on 2 September 2003.",
-        "During her first year on the council, it ruled in April 2004 that a two-week impeachment process against president-elect Nick Todd's outgoing vice presidency of finance could not be completed before he left that office, and separately disqualified three senators from voting in the disputed 9-8 election of the body's first speaker of the senate. The archive does not record how individual justices, including Light, voted in either matter."
+        "During her first year on the council, it ruled in April 2004 that a two-week impeachment process against president-elect Nick Todd's outgoing vice presidency of finance could not be completed before he left that office, and barred three members present from voting in the disputed 9-8 election of the body's first speaker of the senate. The archive does not record how individual justices, including Light, voted in either matter."
        ]
       },
       {
@@ -30018,7 +30026,7 @@
         "url": "https://web.archive.org/web/20050208023729/http://www.wku.edu/Dept/Org/Student/SGA/legislative.html"
        },
        "profile": [
-        "Blake Napper co-chaired SGA's Campus Improvements Committee alongside chair Anna Bisig in 2004-05, per the senate's own legislative branch page, archived 8 February 2005. That committee's budget funded a recycling centre in Downing University Center and eight new benches near the dorms, approved by the senate on 8 February 2005, and paid for the T-shirts behind Campus Cleanup Day that April. The archive does not record what Napper personally did on the committee beyond his listing as co-chair."
+        "Blake Napper co-chaired SGA's Campus Improvements Committee alongside chair Anna Bisig in 2004-05, per the senate's own legislative branch page, archived 8 February 2005. On 8 February 2005 the senate passed legislation for a recycling centre in Downing University Center and eight new benches near the dorms, the bins costing about $2,000 from that committee's budget, and on 1 March it voted $1,000 from the same budget for the T-shirts worn at Campus Cleanup Day that April. The archive does not record what Napper personally did on the committee beyond his listing as co-chair."
        ]
       },
       {
@@ -32187,8 +32195,16 @@
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/740"
        },
        "profile": [
-        "Cacy A. Schooler was appointed secretary of the senate at the first meeting of the sixth senate, 4 September 2007, and signed its minutes through the fall. Speaker Kayla W. Shelton announced her resignation from the post at the 4 December 2007 meeting."
-       ]
+        "Cacy A. Schooler was appointed secretary of the senate at the first meeting of the sixth senate, 4 September 2007, and signed its minutes through the fall. Speaker Kayla W. Shelton told the senate on 27 November 2007 that Schooler had turned in her resignation; at the meeting of 4 December, Schooler's last, Shelton named Jacob Miers as her replacement."
+       ],
+       "src2": {
+        "label": "SGA Senate minutes, 27 Nov 2007, TopSCHOLAR",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/773"
+       },
+       "src3": {
+        "label": "SGA Senate minutes, 4 Dec 2007, TopSCHOLAR",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/771"
+       }
       },
       {
        "office": "Secretary of the Senate",
