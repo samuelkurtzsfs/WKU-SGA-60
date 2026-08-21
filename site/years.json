@@ -918,6 +918,14 @@
        }
       },
       {
+       "office": "Senior Class Vice-President",
+       "name": "John Estill",
+       "src": {
+        "label": "UA3/3/1 Associated Student Government Officers 1967-68",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       }
+      },
+      {
        "office": "Senior Class Representative",
        "name": "Margaret Brockman",
        "src": {
@@ -938,6 +946,14 @@
        "office": "Junior Class Vice-President",
        "name": "Johnny Graham",
        "note": "Recorded absent from the roll at the Congress meeting of 13 February 1969.",
+       "src": {
+        "label": "UA3/3/1 Associated Student Government Officers 1967-68",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       }
+      },
+      {
+       "office": "Junior Class Representative",
+       "name": "Malcolm Arvin",
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
@@ -1085,6 +1101,58 @@
         "Robert Patterson held the Representative of Men's Residence Halls seat in the 1967-68 Associated Student Government, a seat he had also held in 1966-67 as a junior from Farmington, Michigan. No other record of his time in office survives in this archive."
        ]
       }
+     ],
+     "members": [
+      {
+       "name": "John Adams",
+       "seat": "Rules and Elections Committee",
+       "src": {
+        "label": "UA3/3/1 Associated Student Government Officers 1967-68",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       }
+      },
+      {
+       "name": "Carol Bass",
+       "seat": "Student Activities Committee",
+       "src": {
+        "label": "UA3/3/1 Associated Student Government Officers 1967-68",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       }
+      },
+      {
+       "name": "Paul Gerard",
+       "seat": "Rules and Elections Committee",
+       "note": "A Paul Gerard of Bowling Green is separately recorded as Associated Students student regent from 1968-69; this roster does not carry a \"III\" or otherwise confirm the two are the same person, so they are kept as separate entries. The hometown and the timing, a year before his rise in 1968 campus politics, are circumstantially consistent.",
+       "src": {
+        "label": "UA3/3/1 Associated Student Government Officers 1967-68",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       }
+      },
+      {
+       "name": "Dennis Jaffee",
+       "seat": "Student Activities Committee",
+       "note": "William Menser's own profile cites a Herald contributor \"Dennis Jaffe\" (one e) writing in December 1967 in praise of ASG; the spelling differs and no source confirms they are the same person, so the two are kept apart here.",
+       "src": {
+        "label": "UA3/3/1 Associated Student Government Officers 1967-68",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       }
+      },
+      {
+       "name": "Thelma Lee",
+       "seat": "Student Activities Committee",
+       "src": {
+        "label": "UA3/3/1 Associated Student Government Officers 1967-68",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       }
+      },
+      {
+       "name": "Sandra Tonjes",
+       "seat": "Rules and Elections Committee",
+       "src": {
+        "label": "UA3/3/1 Associated Student Government Officers 1967-68",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       }
+      }
      ]
     }
    },
@@ -1222,7 +1290,7 @@
       }
      ],
      "profile": [
-      "Paul Gerard first appeared in the Herald's campus politics coverage in April 1968, when the paper reported him battling Mike Collins for a senior class post in that week's election.",
+      "Paul Gerard first appeared in the Herald's campus politics coverage in April 1968, when the paper reported him battling Mike Collins for a senior class post in that week's election. A Paul Gerard of Bowling Green appears on the 1967-68 Associated Students committee roster, appointed to the Rules and Elections Committee that fall; nothing on that roster confirms the two are the same person, but the hometown and the timing, a year before this campaign, are circumstantially consistent.",
       "By February 1969 Gerard held the student seat on the Board of Regents, and Herald writer Bruce Tucker profiled him as the student regent. He followed William Menser, who in April 1968 had become the first student to sit with the board."
      ]
     }
@@ -1632,6 +1700,15 @@
        "name": "Johnny Graham",
        "seat": "Congress member",
        "note": "Named absent at the roll call of the 13 February 1969 Congress meeting.",
+       "src": {
+        "label": "SGA Meeting Minutes, 13 February 1969",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
+       }
+      },
+      {
+       "name": "Phil Myers",
+       "seat": "Read a resolution to Congress (membership not established)",
+       "note": "Read the text of the minutes-publication resolution aloud at the 13 February 1969 meeting. Unlike the other people recorded from this meeting, his role was limited to reading the resolution's text; the minutes do not show him moving, seconding, voting or answering the roll, and Congress heard non-members speak, so nothing here establishes that he held a seat.",
        "src": {
         "label": "SGA Meeting Minutes, 13 February 1969",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
@@ -7995,6 +8072,64 @@
         "label": "1979 Talisman, ASG, pp. 288-289",
         "url": "https://archive.org/details/talisman1979west"
        }
+      },
+      {
+       "office": "Judicial Council Chairman",
+       "name": "Bob Moore",
+       "note": "Nominated and accepted as Judicial Council chairman at ASG's first meeting of the year, 29 August 1978. This is Robert \"Bob\" Moore, ASG president 1977-78. The Herald reported 7 September 1978 that the former president was ruled ineligible for an Associated Student Government job; by the 12 September 1978 meeting Thornton announced an opening for Judicial Council chairman and Congress confirmed Steve Wilson in the position, 30 in favour with 3 abstaining. Neither source explicitly ties the two events, but the dates align and no other ASG post for Moore is recorded that year.",
+       "src": {
+        "label": "ASG Minutes, 29 Aug 1978",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
+       }
+      },
+      {
+       "office": "Judicial Council Member",
+       "name": "Debbie Anderson",
+       "src": {
+        "label": "ASG Minutes, 29 Aug 1978",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
+       }
+      },
+      {
+       "office": "Judicial Council Member",
+       "name": "Sally Brenzel",
+       "src": {
+        "label": "ASG Minutes, 29 Aug 1978",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
+       }
+      },
+      {
+       "office": "Judicial Council Member",
+       "name": "Eddie Fisher",
+       "src": {
+        "label": "ASG Minutes, 29 Aug 1978",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
+       }
+      },
+      {
+       "office": "Judicial Council Member",
+       "name": "Sandy Alford",
+       "src": {
+        "label": "ASG Minutes, 29 Aug 1978",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
+       }
+      },
+      {
+       "office": "Judicial Council Alternate",
+       "name": "Melinda Manis",
+       "src": {
+        "label": "ASG Minutes, 29 Aug 1978",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
+       }
+      },
+      {
+       "office": "Judicial Council Chairman",
+       "name": "Steve Wilson",
+       "note": "Confirmed as Judicial Council chairman at the 12 September 1978 meeting, on a vote of 30 in favour with 3 abstaining, after Thornton announced the position open; succeeded Bob Moore, whose brief service in the post is separately recorded.",
+       "src": {
+        "label": "ASG Minutes, 12 Sep 1978",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/30"
+       }
       }
      ],
      "members": [
@@ -8128,7 +8263,7 @@
     {
      "file": "1978-79-asg-minutes-1978-09-12.pdf",
      "title": "ASG minutes, 12 September 1978",
-     "summary": "Congress filled the vacant Senior Class President seat (Melody Berryman, 31-2) and confirmed Steve Wilson as Judicial Council chairman (30-3). President Thornton reported meeting with the university administration on choosing a new university president.",
+     "summary": "Congress filled the vacant Senior Class President seat, Melody Berryman taking it 31 in favour with 2 abstaining, and confirmed Steve Wilson as Judicial Council chairman, 30 in favour with 3 abstaining. President Thornton reported meeting with the university administration on choosing a new university president.",
      "extract": "Thornton made a motion to nominate Melody Berryman to the position.",
      "sga_pages": "1-3",
      "page": 1,
@@ -16094,7 +16229,7 @@
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/378"
        },
        "profile": [
-        "Paul Sagun was one of five people Congress accepted to the Judicial Council on 28 August 1990, alongside Amos Gott, Eddie Smith, Julie Fleming and Jeff Welch. The minutes of 5 February 1991 record him swearing in a slate of newly elected representatives, including Nancy Rascoe, Karl Miller, Deanna Hills, Gretchen Ploch and Eric McWilliams.",
+        "Paul Sagun was one of five people Congress accepted to the Judicial Council on 28 August 1990, alongside Amos Gott, Eddie Smith, Julie Fleming and Jeff Welch. The minutes of 5 February 1991 record him swearing in a slate of new officers: Karl Miller as public relations vice president, with Nancy Rascoe, Deanna Mills, Gretchen Ploch and Eric McWilliams taking representative seats. That page of the minutes gives his surname as Sagan; the August roster and the Herald both give Sagun.",
         "That spring, in the Herald's letters column of 11 April 1991, Sagun wrote in under the headline \"No Offense Intended\" about the Associated Student Government, in the same issue that reported Heather Falmlen's contested election win and a rival group's call to boycott the vote. The archive does not preserve the letter's text."
        ],
        "src2": {
@@ -16138,13 +16273,8 @@
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/378"
        },
        "profile": [
-        "Roxana Crowe was approved as one of two Student Affairs committee chairmen on 28 August 1990, alongside Ty Craig, at the same meeting that recorded her among a handful of members absent that night. That December, she wrote to the Herald's letters column under the headline \"Jesus Is The Reason For The Season,\" published 6 December 1990. The archive holds no further record of her committee work."
-       ],
-       "src2": {
-        "label": "Herald 66:29, 6 Dec 1990, \"Jesus Is The Reason For The Season\"",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8368",
-        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=9361&context=dlsc_ua_records"
-       }
+        "Roxana Crowe was approved as one of two Student Affairs committee chairmen on 28 August 1990, alongside Ty Craig, at the same meeting that recorded her among a handful of members absent that night. The archive holds no further record of her committee work."
+       ]
       },
       {
        "office": "Committee Chairman, Student Affairs",
@@ -16156,7 +16286,7 @@
        },
        "profile": [
         "Ty Craig was approved as one of two Student Affairs committee chairmen on 28 August 1990, alongside Roxana Crowe.",
-        "The following fall, on 29 October 1991, Craig wrote to the Herald's letters column under the headline \"Heather Falmlen Allegations Disgrace to Associated Student Government.\" The same issue carried a piece by Richard Weigel headlined \"Story Smeared Heather Falmlen\" and the Associated Student Government's own resolution opposing Joe Iracane's re-election as Board of Regents chair. The archive does not preserve what the allegations against Falmlen were, only that Craig's letter defended her and called them a disgrace to the organization; it also does not establish whether Craig still held Senate office by that point."
+        "The following fall, on 29 October 1991, Craig wrote to the Herald's letters column under a headline calling allegations against president Heather Falmlen a disgrace to the Associated Student Government. The same issue carried a letter from Richard Weigel on the same subject, and reported the organization's opposition to Joe Iracane as chair of the Board of Regents. Only the headline index survives locally, so what Craig's letter argued is not on the record here, and neither is what the allegations were; nor does the archive establish whether Craig still held Senate office by that point."
        ],
        "src2": {
         "label": "Herald 67:18, 29 Oct 1991, \"Heather Falmlen Allegations Disgrace to Associated Student Government\"",
@@ -16434,9 +16564,9 @@
        }
       },
       {
-       "name": "Deanna Hills",
+       "name": "Deanna Mills",
        "seat": "Sophomore Representative",
-       "note": "Sworn in 5 Feb 1991: 'Deanna Hills - Soph Rep.'",
+       "note": "Sworn in as a sophomore representative at the meeting of 5 February 1991. The record read 'Hills' here until 21 August 2026; the minutes themselves give Mills.",
        "src": {
         "label": "ASG Minutes, 5 Feb 1991",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/393",
@@ -20323,6 +20453,14 @@
       {
        "name": "Phillip J. Eleson",
        "seat": "Jr. Off Campus Rep.",
+       "src": {
+        "label": "SGA Records: Membership List Fall 1994",
+        "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/13/"
+       }
+      },
+      {
+       "name": "Lena S. Garner",
+       "seat": "Senior Off-Campus Representative",
        "src": {
         "label": "SGA Records: Membership List Fall 1994",
         "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/13/"
