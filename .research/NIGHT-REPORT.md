@@ -3295,3 +3295,65 @@ The Herald article PDFs on TopSCHOLAR were unreachable for the whole of this pas
 403, then an empty 202 behind the bot check, after the prescribed 90-second wait. The
 landing pages and abstracts answered fine. Anything needing an article body rather than
 a headline will have to wait for a run that gets through.
+
+## Addendum — a commit that landed mid-review, and a duplicate problem worth a run of its own
+
+**A commit arrived on `research-profiles` between the review and the merge.** `ca4b3d9`,
+nine cabinet profiles for 2021-2026 — Singh, Johnson, Romanov, Taylor, Wright, Jenkins,
+Jerdon, Yelton and Savanna Kurtz — was pushed after the branch was read and went to main
+with the PR head. Its own commit message says an adversarial pass was still checking it,
+so it published as a draft. It was reviewed after the fact rather than before, which is
+the wrong order; a branch should be re-read at its head immediately before the merge
+button, not at the sha the listing returned.
+
+Reviewed now, it largely holds. Every figure that can be checked traces to an event
+already in that year's record with its own source: Taylor's $100,000 budget approved
+unanimously on 27 August 2024; Wright's Borrow-a-Calculator report of 3 September 2024;
+the 88% vote renaming the DEI Committee; Jerdon's $4,573.73, his 78 applicant
+organizations, the Herald's later correction to $580, and the $71.17 left in the
+discretionary fund; Jenkins's 56 bills, the most since 2018-19; Yelton's Swipe It Forward.
+Singh's confirmation on 15 September 2021 matches the minutes.
+
+One defect was corrected. Preston Romanov's profile carried the Executive Cabinet's
+February 2024 censure complaint against Administrative Vice President Salvador León —
+which alleged León pushed Romanov to promote Neurodiversity Week before its funding bill
+passed — and stopped there, leaving an allegation against a named living person hanging
+with no result. The outcome is in this same year's events: the Judicial Council heard it
+on 7 February 2024 and censured León 6-0, recommending no further action. That has been
+added, along with a line making clear Romanov was not himself the subject of the
+complaint. The rule is that an allegation without its resolution is not publishable when
+the resolution exists.
+
+One tension is flagged rather than fixed: Singh's roster office reads Director of
+Enrollment and Student Experience, from a January 2022 capture of the cabinet page, while
+the Senate minutes confirm him as director of academic and student affairs. Both are
+sourced. Which he actually held, or whether the post was renamed under him, is not
+established here.
+
+**The duplicate checker cannot see the duplicates.** Tracing those claims turned up
+seventeen pairs of events that are one event written up twice — same date, same source
+URL, bodies overlapping by half or more — none of which `check_duplicates.py` reports.
+It compares words in titles, so two passes that titled the same meeting differently slip
+straight through. The clearest:
+
+- 2011-12, 9 Nov: "Senate defeats DUC name change resolution 19-8" / "Senate votes down
+  renaming Downing University Center 19-8"
+- 2021-22, 14 Apr: "Judiciary Council cleared Bornefeld's campaign over student-all email"
+  / "Judicial Council clears presidential candidate over a student-wide email"
+- 2023-24, 6 Feb: "Cabinet requests censure hearing against León" / "Executive cabinet
+  files censure complaint against vice president Leon"
+- 2020-21, 21 Oct: the two write-ups of Keller's 29-1 confirmation as AVP
+- 2019-20, 12 Feb: the two write-ups of the Go With the Flow funding increase
+- 2024-25, 5 Feb: the two write-ups of the DEI constitutional review
+
+The León pair is the instructive one: the spelling differs between them, León and Leon,
+which drops the title overlap far enough that nothing flags it. CLAUDE.md predicts this
+failure exactly — "matching whole titles never catches it" — and the tool meant to catch
+it does the thing the warning says will not work.
+
+These are all pre-existing on main and none came from tonight's two branches, so nothing
+was merged on their account. They are not fixed here on purpose: combining two entries
+without losing a sourced fact from either means reading both sources properly, seventeen
+times over, and that is a run's work rather than a tired addendum to someone else's. The
+next pass should take it, and `check_duplicates.py` should grow a body-similarity mode
+that compares events sharing a date and a source, which is what surfaced these.
