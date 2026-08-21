@@ -184,6 +184,18 @@ def check_photos(ys):
     overlay = json.loads(path.read_text())
     live = {(l["name"], y["id"]) for y in ys for l in y["leaders"]}
     names = {l["name"] for y in ys for l in y["leaders"]}
+    for y in ys:
+        org = y.get("organization") or {}
+        for o in (org.get("executive") or []):
+            live.add((o.get("name"), y["id"]))
+            names.add(o.get("name"))
+        senate = org.get("senate") or {}
+        for o in (senate.get("officers") or []):
+            live.add((o.get("name"), y["id"]))
+            names.add(o.get("name"))
+        for m in (senate.get("members") or []):
+            live.add((m.get("name"), y["id"]))
+            names.add(m.get("name"))
     photos = ROOT / "data" / "photos"
     for e in overlay.get("leaders", []):
         who, when = e.get("name"), e.get("year")
