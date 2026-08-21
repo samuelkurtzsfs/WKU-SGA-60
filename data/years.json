@@ -1707,8 +1707,8 @@
       },
       {
        "name": "Phil Myers",
-       "seat": "Congress member",
-       "note": "Read the text of the minutes-publication resolution aloud at the 13 February 1969 meeting. Unlike the other members recorded from this meeting, his role was limited to reading the resolution's text; the minutes do not show him moving, seconding or voting, so his Congress membership rests on thinner evidence than theirs.",
+       "seat": "Read a resolution to Congress (membership not established)",
+       "note": "Read the text of the minutes-publication resolution aloud at the 13 February 1969 meeting. Unlike the other people recorded from this meeting, his role was limited to reading the resolution's text; the minutes do not show him moving, seconding, voting or answering the roll, and Congress heard non-members speak, so nothing here establishes that he held a seat.",
        "src": {
         "label": "SGA Meeting Minutes, 13 February 1969",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
@@ -8076,7 +8076,7 @@
       {
        "office": "Judicial Council Chairman",
        "name": "Bob Moore",
-       "note": "Nominated and accepted as Judicial Council chairman at ASG's first meeting of the year, 29 August 1978. This is Robert \"Bob\" Moore, ASG president 1977-78. The Herald reported 7 September 1978 that the former president was ruled ineligible for an Associated Student Government job; by the 12 September 1978 meeting Thornton announced an opening for Judicial Council chairman and Congress confirmed Steve Wilson in the position, 30-3. Neither source explicitly ties the two events, but the dates align and no other ASG post for Moore is recorded that year.",
+       "note": "Nominated and accepted as Judicial Council chairman at ASG's first meeting of the year, 29 August 1978. This is Robert \"Bob\" Moore, ASG president 1977-78. The Herald reported 7 September 1978 that the former president was ruled ineligible for an Associated Student Government job; by the 12 September 1978 meeting Thornton announced an opening for Judicial Council chairman and Congress confirmed Steve Wilson in the position, 30 in favour with 3 abstaining. Neither source explicitly ties the two events, but the dates align and no other ASG post for Moore is recorded that year.",
        "src": {
         "label": "ASG Minutes, 29 Aug 1978",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
@@ -8125,7 +8125,7 @@
       {
        "office": "Judicial Council Chairman",
        "name": "Steve Wilson",
-       "note": "Confirmed as Judicial Council chairman at the 12 September 1978 meeting, 30-3, after Thornton announced the position open; succeeded Bob Moore, whose brief service in the post is separately recorded.",
+       "note": "Confirmed as Judicial Council chairman at the 12 September 1978 meeting, on a vote of 30 in favour with 3 abstaining, after Thornton announced the position open; succeeded Bob Moore, whose brief service in the post is separately recorded.",
        "src": {
         "label": "ASG Minutes, 12 Sep 1978",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/30"
@@ -20407,7 +20407,7 @@
        }
       },
       {
-       "name": "Lena S. Gamer",
+       "name": "Lena S. Garner",
        "seat": "Senior Off-Campus Representative",
        "src": {
         "label": "SGA Records: Membership List Fall 1994",
