@@ -380,6 +380,23 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    Thompson, Craig) stay rejected; nothing found this run changes that. Leave
    1979-80 for a run that can search full-text Herald PDFs or a yearbook, not
    another pass over the same index.
+
+   **Yearbook checked, 21 August (scheduled run) — still no AVP, Secretary or
+   Treasurer.** `viewcontent.cgi` gave the WAF challenge (HTTP 202,
+   `x-amzn-waf-action: challenge`) on every attempt this run, checked at the
+   start and again after a gap, so no minutes or Herald PDFs were reachable.
+   `archive.org/download/talisman1979west` and `talisman1980west` (both in
+   archive.org's held range, not rate-limited) were read in full instead. Both
+   had already been mined by an earlier pass: every ASG-related passage found —
+   Kevin Kinne chairing the student opinion poll committee, Tim Irons chairing
+   rules and elections, Hargrove's White House meeting with President Carter,
+   the "sworn in as student regent" line about Steve Fuller (which is 1980-81
+   material, already correctly recorded there, not a second president for
+   1979-80) — is already on `data/years.json`, sourced to the same yearbook
+   pages. No new executive officer name turned up. This gap stays genuinely
+   open pending `viewcontent.cgi` access to the fall 1979/spring 1980 Herald
+   full text; do not re-run the Talisman search again without new pages to
+   check.
 2. ~~Twenty-six sets of 1996-97 minutes are mirrored into `data/documents/` and
    referenced by nothing~~ **Done, 20 August.** All 29 files (27 Congress
    meetings, 2 Executive Council) now carry a title, a summary, a sourced
@@ -543,6 +560,12 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    behind 19 other minutes items in the same series, all of which can be pulled
    the same way (land on the item page, then request the article with a
    `Referer` back to it) whenever the window is open.
+
+   **Checked again, 21 August (scheduled run) — still challenging.** Two
+   attempts on item 412 (article 1912), a few minutes apart, both came back
+   HTTP 202 with `x-amzn-waf-action: challenge`. This run worked on 1979-80
+   instead (item 1 above) rather than burn more attempts against a closed
+   window.
 6. ~~The 2013-14 charging-stations entry is written from a first-read report.~~
    **Done, 21 August.** The story was more complicated than either the 24 October
    advance notice or the 30 October follow-up alone: the Senate amended and passed
@@ -637,12 +660,19 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
 
 ### 8.5 Data hygiene
 
-- **`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man**,
-  who chaired Campus Improvements under the short name and took the Speaker's
-  chair under the long one. `name-aliases.json` has no Eaton entry. Adding one
-  asserts they are the same person, which the record here supports, but that
-  assertion should be made by a run that sets the evidence out, not slipped into a
-  merge.
+- ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man`~~
+  **Fixed, 21 August (scheduled run).** All three printed forms — "Nate Eaton"
+  (Chair, Campus Improvements Committee, 2006-07 and 2007-08), "Nathan Eaton"
+  (Senator, 2007-08, whose own record already noted "Printed as Nate and
+  Nathan Eaton") and "Nathan J. Eaton" (Speaker of the Senate, 2008-09) — were
+  already the same person by the record's own text; only `name-aliases.json`
+  had no entry folding them together. Added `"Nate Eaton": "Nathan J. Eaton"`
+  and `"Nathan Eaton": "Nathan J. Eaton"`, following the existing convention of
+  mapping short/printed forms onto the fullest recorded name (as with "Jamie
+  Hargrove" → "James Hargrove"). `build.py` now writes one page,
+  `o/nathan-j-eaton.html`, for all three terms; `check_data.py` and
+  `check_duplicates.py` both pass clean, the six known duplicate pairs
+  unchanged.
 - **The 2016–2027 officer names include a batch of garbled scrapes** — titles glued
   onto names, "Senator Andi Dahmer", "Public Health Kate Hart". They inflate the
   person count and they are not safe to profile under. They want a deliberate
