@@ -2596,3 +2596,124 @@ files, unchanged. 122 photograph files, up one. 1,709 person pages.
 `build.py`, `check_data.py` and `check_contrib.py` are all clean on the merged head.
 `check_duplicates.py` reports the same six long-judged pairs, none of them in any of
 tonight's diffs and none touched.
+
+---
+
+# 21 August 2026, later — editor pass, three pull requests merged
+
+## What I reviewed
+
+Three: #85 person profiles, #86 the backlog, and #87, which the profiles routine
+opened mid-review to correct its own work. Roughly forty claims opened at source —
+`herald-index-full.json` for the pre-1999 citations, full article text from
+wkuherald.com for the 2016-18 ones, and the bill PDFs already in
+`data/legislation/2016-17/` for the vote counts and author blocks.
+
+The three stale 4 August branches named in the standing instructions no longer have
+open pull requests. `research-1980s` and `research-2020s` still sit 53 and 57 commits
+ahead of main with no merge base worth trusting; they are the orphan snapshots
+`AGENT-LANDING.md` warns about and should be harvested file by file, never merged.
+
+## The two commits on #85 were not of the same quality
+
+`ff096a4`/`1edc8ce`, nine officers from 1967 to 1998, had been through the
+adversarial pass and held up. Four cosmetic trims: a headline quoted as though it
+were a sentence, "called it a rout" for a headline that says *Rolls to Victory*, a
+slogan read out of *Jason Young, Jason Hays Back New Level* where "Back" is the
+verb, and a hedge added to a Mark Miller identification that a Donnie Miller in the
+same Congress makes worth hedging.
+
+`2f72b2c`, thirteen officers from 2016-18, had not been through it, and eight of the
+thirteen carried a defect. Six concerned living people.
+
+## What I cut
+
+- **The worst of it.** A profile stated that the 1997-98 public relations director
+  was sexually assaulted during her freshman year. The Herald does not say that: the
+  freshman-year incident she described is one she escaped, and the words the profile
+  attached to it are explicitly about that year. A wrong year on a named living
+  woman's assault is the single worst thing that could have reached the site.
+- The same profile credited her with a criticism of the SGA adviser that the article
+  attributes to Andi Dahmer, from an article not among its sources.
+- The same profile again: running for re-election on the 2018 ticket and being
+  elected a senator that autumn appears in none of its five sources, and the three
+  names on that ticket are recorded elsewhere in this archive without hers. Replaced
+  with the SGA SAVES chair in spring 2019, which the minutes do carry.
+- A detail about the president being unable to keep food down, in neither cited
+  article.
+- "Senators gathered outside her office to intimidate her", attributed to the
+  executive vice president. The Herald reported the gathering from its own
+  interviews and never called it intimidation.
+- A paragraph of one officer's criticism of another, quoted at length in the first
+  man's own record with the second man's answer from the same article left out.
+  Accurate to the source and still not publishable that way.
+- An officer's age.
+- A date: Bible verses read at the meeting of 27 March, filed at the vote of
+  20 March, where this archive's own entry correctly records that the senator gave
+  no reasoning.
+- An officer credited as co-proposer of the faculty-raise resolution on the strength
+  of appearing in a nearby paragraph about a video, and the Faculty Senate's
+  unanimity transferred to SGA's vote.
+
+## What #86 got right
+
+The 2013-14 charging stations, the last item on the backlog and the cleanest work of
+the night. The archive had recorded a $1,598 purchase as settled on a first-read
+story that says "should all go according to plan". What actually happened: passed
+with an amendment moving a station from the Helm 2 periodicals room to the Commons
+at Cravens, vetoed by the Executive Council after the same meeting adjourned, back
+on the floor a fortnight later and tabled when the wrong draft was presented. No
+story reports it ever passing. Rescued as a proposal rather than deleted, and a real
+error corrected along the way: SGA funded Glasgow and Helm 2, so the three
+library-funded stations are the Educational Resources Center, Helm 100 and
+Owensboro.
+
+I moved both new events off the day the Herald printed them and onto the nights the
+Senate sat, 29 October and 12 November, which is what the branch's own handoff note
+already said. Dating Herald-sourced events to publication is common across this
+archive and is a convention worth settling deliberately rather than in passing.
+
+## #87, the routine correcting itself
+
+Three overclaims caught by the routine a few hours after they landed, all confirmed
+against the author blocks in the bill PDFs: Bill 27-17-S was co-authored with
+Hizareth Linares rather than authored alone, Josh Knight is third on a flat list of
+five authors on Bill 14-16-F and not the lead, and Emily Houston chaired Student
+Affairs in 2016-17 rather than serving two years as director. Merged unchanged.
+
+## What the routines need to do differently
+
+1. **No profile batch ships without the adversarial pass.** One commit had it and
+   needed four cosmetic trims; the next did not and needed nine substantive ones.
+2. **The wkuherald era is not a headline archive.** Every error above came from
+   reading part of a long article. A TopSCHOLAR index line can be read whole; a
+   98-paragraph investigation cannot be skimmed.
+3. **On living people the test is not "did the Herald print it" but "does this
+   person's record need it".** Usually it does not.
+4. §8.5 says the 2016-2027 officer names are not safe to profile yet, and #85's own
+   description repeated it before the next commit profiled them anyway. Either
+   change the caution and say why, or honour it.
+5. The author block is on the bill. Read it there, not in the reporting about it.
+
+## Still open
+
+- Everything carried from the earlier reports today, including the garbled
+  2016-2027 officer names, the Eaton alias, and `apply_photo_overlay()` at §8.4.
+- **`Connor` / `Conner Hounshell`** across the 2017-18 executive records. The Herald
+  gives Conner throughout. Flagged, not fixed.
+- **The 105 unchecked Wayback citations** stand where #80 left them.
+- **The 2013-10-24 first-reading entry** is still dated to publication; by the
+  paper's own account that meeting was Tuesday 22 October. Left alone as part of the
+  wider dating question above.
+- **Bill 6-17-S authorship** was not confirmed from the PDF, only the amounts and
+  the event. The rest of that profile checked out exactly.
+
+## Where the archive stands
+
+61 academic years, 2,027 dated and sourced entries, 60 people recorded as president.
+1,088 executive and senate officer records, unchanged. 447 written profiles, up
+twenty-three. 1,111 legislation files and 285 document files, unchanged.
+
+`build.py`, `check_data.py` and `check_contrib.py` are clean on the merged head.
+`check_duplicates.py` reports the same six long-judged pairs; the three
+charging-station entries were correctly not among them, being three meetings.
