@@ -2340,3 +2340,118 @@ held, and 1,111 legislation files, up 284.
 head. `check_duplicates.py` reports the same six long-judged pairs, untouched:
 three same-day 1991 bills, a bill introduced and failing nine days later, and two
 stories a month apart.
+
+# 21 August 2026 — editor pass, both open PRs merged
+
+Two pull requests were open, both from last night, both merged after corrections.
+The three stale August branches named in the standing instructions — #6
+photographs, #7 the 1980s, #8 the 2020s — are already closed and need no further
+handling.
+
+## #77, twenty-six officer profiles
+
+Sixteen founding officers of the 1966-67 Congress and the 1967-68 Associated
+Student Government, and ten from the judicial council and senate of 2003 to 2008.
+The branch moved twice during the review; the second push is included here.
+
+Every one of the sixteen founding profiles was checked line by line against the
+two rosters the branch mirrored into `data/documents/`, pairing each name with its
+office by position in the roster's two columns. All sixteen hold — class year,
+hometown and seat alike. Two details are worth recording because they are the kind
+of thing that usually goes wrong and did not: Chapman's Interfraternity Council
+seat is correctly distinguished from Marshall Peace's separate I.F.C. seat, which
+is the one carrying Executive Council membership; and the roster really does list
+only one Junior Class Representative At Large, so the earlier trim of "one of" from
+Vivian Denton's entry was right.
+
+Six of the ten later profiles were checked against the meeting minutes themselves.
+Wolfe as Coordinator of Committees on 2 December 2003, Light sworn in on 2
+September 2003, Vandiver presented on 5 September 2006 as a senior political
+science major and president of Sigma Nu, and Schooler, Fisher and Wong all
+appointed at the first meeting of the sixth Senate on 4 September 2007. Hennessey,
+Inman and Woodall are on the archived judicial branch page for 2004-05, which came
+back up long enough to read. Lanning's and Evans's Herald items are in the
+unfiltered index at the issues claimed.
+
+Four corrections went in before the merge.
+
+Gretchen Light's account said the judicial council disqualified three senators from
+the 2004 speaker vote. The Herald says three members present were barred from
+voting, and it now says that.
+
+Blake Napper's account credited his committee's budget with both the recycling
+centre and the eight benches passed on 8 February 2005. The Herald attributes only
+the roughly $2,000 of bins to that budget; the benches are simply in the same
+legislation. The $1,000 for the Campus Cleanup T-shirts is now dated to the 1 March
+vote that carried it rather than left floating at "that April."
+
+Cacy Schooler's resignation was announced by Speaker Kayla Shelton on 27 November
+2007, not 4 December. The 27 November minutes carry it plainly; 4 December was
+Schooler's last meeting, where Shelton named Jacob Miers to succeed her. Both sets
+of minutes are now cited on the entry, since neither was cited anywhere in 2007-08.
+
+Patricia Lanning's second paragraph rested on two Herald items, one of which — the
+3 November 1966 issue — was cited nowhere in 1966-67. Both are now on the entry.
+
+One further change, not a correction: the 1967-68 roster prints students' home
+addresses and telephone numbers. The mirrored file stays, because WKU publishes it
+openly and the profiles rightly excluded that material, but the document summary no
+longer points readers at that part of it.
+
+## #78, the senate rolls gap
+
+A negative result — no names added — recording which years cannot yield a senate
+roll. The reasoning is sound and worth keeping, but its central claim about the
+shape of the gap was wrong in the direction that would have sent the next run
+looking in the wrong place. The note said 1969-70 and 1971-72 were absences inside
+a covered run, with 1970-71 and 1972-73 either side of them holding minutes. They
+do not. Pulling the same live listing and mapping it: the collection holds exactly
+one dated item between 1968 and 1975-76, 13 February 1969. Every year from 1969-70
+to 1974-75 is zero. There is no covered run to be absent from.
+
+Two smaller things went with it. The collection does not thin after 1998-99 —
+2001-02 through 2007-08 carry roughly fifty items each — so 1999-00 and 2004-05 are
+restated as the genuine interior gaps they are, with the counts on either side. And
+the last dated item is 2 December 2008, not the 8th; the listing is 843 item links,
+830 of which carry a date, and the thirteen undated ones cannot be assigned to a
+year either way.
+
+Everything else in the note stands, including the decision not to promote two bare
+index cross-references in the 1972 Talisman into seats, and the judgement that a
+name-by-name Herald build for 1999-00 and 2004-05 wants its own verified pass.
+
+## Cut, and why
+
+Nothing was deleted. All four corrections were rescues: an over-claimed sentence
+trimmed back to what its source proves, or a missing citation supplied. Three of
+the four were the same fault — a profile stating a fact the cited source nearly
+supports but does not quite — and that is what the research routine was told to
+watch for next time.
+
+## Still open
+
+- Blake Napper's co-chairmanship is the one sampled claim that could not be
+  verified. It rests on the archived legislative branch page, and the Internet
+  Archive was intermittently down all run; the judicial page came back, the
+  legislative one never did. It did not block the merge — the officer entry and its
+  source are already published and the profile adds nothing about his office beyond
+  them — but it wants a second look on a day the host is up. This is the standing
+  condition at §8 item 4 of the handoff, not a new problem.
+- Everything carried forward from the 20 August report is still carried forward:
+  the eight name-variant splits and the wider `name-aliases.json` pass, Hollan Holm
+  or Hohn, Holly Skidmore's November 2001 nomination note, Resolution 82-7-S and
+  Bill 00-3-S, and the Kelley split.
+
+## Where the archive stands
+
+61 academic years, 2,025 dated and sourced entries, 60 people recorded as
+president. 1,094 executive and senate officer records and 1,098 senate member
+records, both unchanged tonight. 425 written profiles, up 29 — twenty-six people,
+three of whom (Evans, Klein, Patterson) are profiled in both founding years. 115
+documents attached to years, up two, and 286 document files held. 1,111 legislation
+files, unchanged.
+
+`build.py`, `check_data.py` and `check_contrib.py` are all clean on the merged
+head. `check_duplicates.py` reports the same six long-judged pairs, none of them in
+either diff and none touched: three same-day 1991 bills, a bill introduced and
+failing nine days later, and two stories a month apart.
