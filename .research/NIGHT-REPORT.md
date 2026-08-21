@@ -3170,3 +3170,49 @@ records, up thirty-two tonight. 497 written profiles, up eleven. 79 portraits an
 `main`, and a fresh build reproduces the committed `site/` exactly.
 `check_duplicates.py` reports the same six long-judged pairs and nothing new; none
 of them is touched by tonight's work, and each remains genuinely two events.
+
+# 21 August 2026, scheduled research run — two loose ends closed
+
+The stored prompt this run fired with described an older backlog (the three
+branch histories, 235 moments, 92 officer candidates, four portraits, Reed
+Morgan, Amanda Coates/Lich) — all of it already finished per SGA-60-AGENT-INFO.md
+§8's own note. Worked the two small items the last "Still open" note above
+actually flagged as outstanding, on `research-backlog`, PR to follow.
+
+## Kappler and Bewley, 2008-09 Judicial Council
+Herald headlines confirmed both facts the previous pass's profiles already
+carried but the structured roster didn't reflect: Kappler resigned what the
+Herald of 17 Feb 2009 called Chief Justice; Bewley was approved to succeed her,
+Herald 19 Feb 2009. Both headlines checked against the live TopSCHOLAR landing
+pages and independently against `data/herald-index-full.json` — real, exact.
+
+First draft flatly retitled both roster rows "Chief Justice, Judicial Council."
+An adversarial verifier caught that this overclaims: the file's own 2009-10
+roster treats Clerk and Chief Justice as distinct offices, and nothing cited
+shows Kappler was ever promoted from Clerk before the Herald's language at her
+resignation — SGA's own 14 Oct 2008 minutes call her Clerk, full stop. Kappler's
+office reverted to "Clerk, Judicial Council"; the Herald's "Chief Justice"
+language stays in her note, profile and citation, hedged rather than asserted
+as her formal title. Bewley's elevation is better supported (a dated Senate
+action already in the year's events), so his row keeps Chief Justice but is
+now marked "(successor)," matching how the file already marks Ellen Henderson
+succeeding to Morgan Gammons in 2024-25 — the file's own convention for a
+mid-term office change, which the first draft didn't follow.
+
+## Thirty-two Talisman senate citations
+1985-86 (13 members) and 1986-87 (19 members) cited the 1986 and 1987 Talisman
+by item page only, leaving the printed page number in the label with no link
+to the actual leaf. archive.org's full-text search-inside API
+(`https://{server}/fulltext/inside.php`, server/path from `/metadata/<item>`)
+returned the leaf number for a name-level match against each yearbook's own
+index: leaf 198 = printed p.194 in `talisman1986west` (matched Jennifer Borsch,
+Lori Dohrn, Dana Cunningham against the book's own index and the leaf's OCR
+caption), leaf 120 = printed p.114 in `talisman1987west` (matched Holger
+Velastegui, Laura Tracy, Kent Groemling, Jerry Castleberry the same way). Both
+offsets differ (leaf = printed+4 for 1986, printed+6 for 1987) because of each
+book's own front matter — normal, and the name-level match rules out an
+off-by-one. All 32 `src.url` fields now open on `/page/nNNN/mode/1up` rather
+than the bare item page. Adversarial verifier: ACCEPT, no changes.
+
+`build.py`, `check_data.py` pass clean; `check_duplicates.py` reports the same
+six long-judged pairs and nothing new.
