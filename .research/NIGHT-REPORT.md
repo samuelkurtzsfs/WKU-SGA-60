@@ -2862,3 +2862,39 @@ unchanged. 1,111 legislation files and 286 document files.
 `build.py`, `check_data.py` and `check_contrib.py` are all clean on the merged
 head of `main`. `check_duplicates.py` reports the same six long-judged pairs and
 nothing new; each remains genuinely two events.
+
+## Addendum: the merges did not deploy
+
+Recorded after the fact, because the next run will otherwise find a site that does
+not match `main` and will not know why.
+
+All five merges above landed on `main` cleanly. None of them reached the public
+site. Vercel refused the deployments with its free-tier daily cap:
+
+> Resource is limited - try again in 24 hours (more than 100, code:
+> "api-deployments-free-per-day").
+
+The preview build for `research-backlog` was still `Ready` at 08:39 UTC, and the
+refusals came at 09:36 and 09:38, so the hundredth deployment of the day was spent
+somewhere inside this pass's merge sequence.
+
+Three things follow.
+
+- **Nothing wrong was published.** Every correction in this pass was made before
+  its branch was merged, so no bad fact reached `main`, let alone the site. What is
+  stranded is the good work, the Matheis caption fix among it.
+- **A refused deployment does not retry itself.** The cap clears twenty-four hours
+  after it was hit. After that, either a manual redeploy or the next push to `main`
+  publishes the backlog in one go. A run that merges anything tomorrow will carry
+  all of this with it.
+- **This will happen again.** Four research routines plus editor passes, each push
+  triggering a preview build, is roughly what a hundred deployments a day looks
+  like. It is a capacity question rather than a fault: either previews get limited
+  to something narrower than every push, or the plan changes. Worth a decision
+  rather than a rediscovery each time.
+
+I could not check the live site's current state from this environment: the
+project's `.vercel.app` aliases sit behind Vercel SSO and redirect to a login, and
+the bare `wku-sga-60.vercel.app` host answers `DEPLOYMENT_NOT_FOUND`, which tells
+us that hostname is not the production alias rather than telling us anything about
+the site. So the deployment refusals are confirmed; the public site's state is not.
