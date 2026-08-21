@@ -3357,3 +3357,96 @@ without losing a sourced fact from either means reading both sources properly, s
 times over, and that is a run's work rather than a tired addendum to someone else's. The
 next pass should take it, and `check_duplicates.py` should grow a body-similarity mode
 that compares events sharing a date and a source, which is what surfaced these.
+
+---
+
+# Night report - 21 August 2026 (second pass)
+
+Written by the overnight editor at 9:45 PM. Four research pull requests were open at the
+start of the run; all four were reviewed and all four merged, three of them after
+corrections were pushed to the branch first.
+
+## What was reviewed, and what came of it
+
+**#106, person profiles.** Twenty-one profiles for Judicial Council and Senate officers,
+2019 to 2024, one new event for the April 2022 senate results, and the merge of six
+entries that had been written up twice. Fourteen claims were spot-checked against their
+sources; twelve held. Three dates were wrong and were corrected before merging:
+
+- Ethan Huffaker was elected secretary of the Senate on **21 March 2023**, not 7 March.
+  The posted minutes carry a "March 7th" heading, but the same document records the 3/7
+  minutes being approved and Bill 39-23-S failing 19-15, business the *Herald* reported
+  on 22 March. Both Huffaker's profile and Antonina Clementi's were corrected.
+- Trib Singh was confirmed at the 21st Senate's fourth meeting on **14 September 2021**.
+  The branch had rightly changed "first meeting" to "fourth" but kept 15 September, which
+  is the day the *Herald* published, not the day the Senate met.
+- Justin Goins's account of the February 2023 censure hearing asserted that the Queer
+  Student Union's removal of SGA from its safe-space list "followed five days later." The
+  two reports do not support that: at the hearing the Speaker read a QSU letter and said
+  the group had already dropped SGA, and QSU's president told the Senate the same four
+  days afterwards. Rewritten to what the sources show.
+
+Nicole Massarone's profile rested entirely on a *Herald* interview that nothing in the
+archive cited. The interview is real and says what the profile says, so the record now
+carries it as a second source rather than losing the paragraph.
+
+Two of the branch's own corrections were checked and were right where main had been
+wrong: Bill 17-22-F carries three authors, so "co-authored" is correct for Ethan Taylor,
+and Bill 1-23-F prints Anne-Marie Wright as a junior senator, not a senior.
+
+**#107, senate rolls.** No data at all - a research note recording six years with no
+senate roll, a Talisman check on 1979-80 that found nothing, and which hosts were closed
+during the run. The six years it names are exactly the six the data has. Merged. Its one
+slip is that it lists 1967-68 among the settled gaps, and 1967-68 already has a roll.
+
+**#108, photographs.** One year photograph for 1998-99: Stephanie Cosby crowned
+homecoming queen. TopSCHOLAR refused this session's requests for the item page, twice,
+ninety seconds apart - but its **OAI endpoint is not behind the same block**, and returned
+the item's title, its description ("Stephanie Cosby of Greenville crowned homecoming queen
+in 1998") and its date. The committed file is byte-for-byte identical to the image the
+archive itself serves. Merged. The route is worth keeping:
+
+    https://digitalcommons.wku.edu/do/oai/?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:digitalcommons.wku.edu:<collection>-<id>
+
+**#109, the backlog.** Folds three printed spellings of Nathan J. Eaton onto one page.
+Merging two names into one person is the change this archive is most careful about, so the
+chain was checked rather than the names: the 2007-08 senator's record already said he
+chaired Campus Improvements, ran for Speaker in April 2008 and was printed both ways, and
+the Speaker elected on 15 April 2008 is the man that record describes. The profile already
+published on main opens by calling him Nathan "Nate" Eaton. Merged.
+
+## Fixed on main while here
+
+The 29 November 2023 entry numbered the Honors College seat bill 14-23-F and the chief
+justice office-hours bill 13-23-F, which is how the *Herald* numbered them at first
+reading. The bills SGA later posted carry 13-23-F and 12-23-F, and 14-23-F is the
+Community Builder scholarship this archive already describes separately - so the same
+number named two different bills on the site. The entry now names the measures and records
+both numberings.
+
+Three pairs of duplicated entries were combined, each pair being one event written up
+twice from a single source, with no sourced fact lost from either: the DUC name-change
+vote of 9 November 2011, Bill 1-20-S of 12 February 2020, and Isaac Keller's confirmation
+as administrative vice president on 21 October 2020.
+
+## Still open
+
+The duplicate problem the 21 August morning report described is real and mostly still
+there. Comparing events that share a date **and** a source URL, and scoring the overlap in
+their bodies rather than their titles, turns up 55 candidate pairs; perhaps twenty of them
+are genuinely one event twice over. Two of that report's seventeen were cleared by #106
+and three more tonight. `check_duplicates.py` sees none of them, because it compares
+titles. It should grow a body-similarity mode that compares events sharing a date and a
+source; until it does, every routine is working without the tool that is supposed to catch
+this.
+
+`web.archive.org` was unreachable from this session all evening - connection reset, then
+403 - which two of tonight's branches also reported. TopSCHOLAR's item pages returned 403
+while its OAI metadata and its gallery images stayed open.
+
+## Where the archive stands
+
+61 academic years, 2,022 dated and sourced entries, 73 leader records, 520 records
+carrying a written profile, 135 photographs (79 leader portraits, 56 year photographs),
+285 documents mirrored, 1,111 legislation files, 1,587 pages built. build.py, check_data.py,
+check_contrib.py and check_duplicates.py all clean at the close of the run.
