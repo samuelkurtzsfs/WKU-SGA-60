@@ -617,12 +617,15 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   `officer_index()` carries `photo` through onto each term and onto the person
   object, and `render_officer()` now shows the portrait, credited, at the top of
   the person's own page (`.who-head .portrait`, floated beside the heading). No
-  photo currently in `photos.json` needed this path — all 73 existing leader
-  portraits already matched a top-level leader, which is why the site never
-  visibly broke — so this is a pure enabler, verified with a synthetic
-  officer-photo entry (not committed) that confirmed the attach-and-render path
-  end to end. `build.py`, `check_data.py` and `check_duplicates.py` all pass
-  clean; the six known duplicate pairs are unchanged. **Officer and senate
+  photo currently in `photos.json` needs the *fallback* path — all 73 existing
+  portraits already match a top-level leader — but the change is not invisible:
+  because `render_officer()` had never shown a portrait at all, **66 person pages
+  gained one on merge**, each resolving to a real file in `site/photos/` and
+  carrying its existing credit. Checked at merge, 21 August, by building `main`
+  and the branch and diffing the output: 66 portraits render, none broken, and
+  the only other change is the new CSS rule inlined into every officer page.
+  `build.py`, `check_data.py`, `check_contrib.py` and `check_duplicates.py` all
+  pass clean; the six known duplicate pairs are unchanged. **Officer and senate
   portraits are now worth hunting.** `render_officers()` (the roster/index page)
   still shows no thumbnails — it is a dense name index by design, not a gallery,
   and adding images there is a separate, optional call for a future run, not a
