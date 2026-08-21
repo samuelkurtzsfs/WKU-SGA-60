@@ -496,10 +496,25 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    they cite. Also: TopSCHOLAR dates minutes item 406 to Sunday 20 September 1992,
    when every other meeting that year is a Tuesday or a Thursday. The metadata may
    itself be wrong. Whoever next has that PDF open should settle it.
-6. **The 2013-14 charging-stations entry is written from a first-read report** —
-   "should all go according to plan" — and states the purchase as agreed. The 30
-   October story is the one that says what actually happened. Rewrite it against
-   that.
+6. ~~The 2013-14 charging-stations entry is written from a first-read report.~~
+   **Done, 21 August.** The story was more complicated than either the 24 October
+   advance notice or the 30 October follow-up alone: the Senate amended and passed
+   the $1,598 bill on 29 October (moving one of SGA's two funded stations from
+   Helm 2 to the Commons at Cravens), the Executive Council vetoed it the same
+   night for changing a location without consulting WKU Libraries, and a revised
+   bill came back to the Senate on 12 November but was tabled again when an
+   outdated draft was presented by mistake. No later story reports a final
+   passage. The original entry is now written as a proposal rather than a
+   settled purchase, and also had a real factual error corrected along the way:
+   it paired the wrong three stations as library-funded (the source shows SGA
+   funding Glasgow and Helm 2, so the library-funded three are the Educational
+   Resources Center, Helm 100 and Owensboro, not Helm 2). Two new events cover
+   the veto and the second tabling, both sourced to wkuherald.com. Verified
+   against the full text of all three articles by an adversarial pass that
+   caught the funding-pairing error and a misattributed 14-day bylaw window
+   (that window is the Executive Council's time to act on passed legislation,
+   not the Senate's time to override — the source states no deadline on the
+   override itself).
 7. **The 119 undelimited co-sponsor lists** dropped from the legislation
    authorship extraction. Late-1970s and 1980s forms print several names with no
    comma between them, and they cannot be split into individuals without guessing
