@@ -8719,6 +8719,11 @@
       "label": "ASG Minutes, 24 Apr 1979",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
       "file": "1978-79-asg-minutes-1979-04-24.pdf"
+     },
+     "src2": {
+      "label": "Herald 54:57, 26 Apr 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3463",
+      "file": "1979-80-herald-54-57-officers-sworn-in.pdf"
      }
     }
    ],
@@ -8750,12 +8755,17 @@
      {
       "office": "Administrative Vice President",
       "name": "Steve Fuller",
-      "note": "A Bowling Green junior, elected 17 April 1979, defeating Tom Jecker, a Louisville senior, 973-574. At the 24 April swearing-in he urged Congress members to think about which committees they wanted to serve on. Elected ASG president himself the following year, in April 1980.",
+      "note": "A Bowling Green junior, elected 17 April 1979, defeating Tom Jecker, a Louisville senior, 973-574. At the 24 April swearing-in he urged Congress members to think about which committees they wanted to serve on.",
       "src": {
        "label": "Herald 54:56, 19 Apr 1979",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records",
        "file": "1979-80-herald-54-56-election-results.pdf"
+      },
+      "src2": {
+       "label": "ASG Minutes, 24 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
+       "file": "1978-79-asg-minutes-1979-04-24.pdf"
       }
      },
      {
@@ -8767,6 +8777,11 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records",
        "file": "1979-80-herald-54-56-election-results.pdf"
+      },
+      "src2": {
+       "label": "ASG Minutes, 24 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
+       "file": "1978-79-asg-minutes-1979-04-24.pdf"
       }
      },
      {
@@ -8778,6 +8793,11 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records",
        "file": "1979-80-herald-54-56-election-results.pdf"
+      },
+      "src2": {
+       "label": "ASG Minutes, 24 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
+       "file": "1978-79-asg-minutes-1979-04-24.pdf"
       }
      },
      {
@@ -8789,6 +8809,11 @@
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records",
        "file": "1979-80-herald-54-56-election-results.pdf"
+      },
+      "src2": {
+       "label": "ASG Minutes, 24 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
+       "file": "1978-79-asg-minutes-1979-04-24.pdf"
       }
      }
     ]
