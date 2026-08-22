@@ -350,55 +350,40 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
 ### 8.3 Research still owed, highest value first
 
 1. ~~The three years with no cabinet at all: 1979-80, 2001-02, 2003-04.~~
-   **2003-04 done, 2001-02 already done by `research-senate`, 1979-80 still
-   genuinely open — see below.** `viewcontent.cgi` opened again around 12:30
-   UTC on 20 August (plain requests, no special headers needed) and stayed open
-   long enough to pull four full SGA minutes PDFs straight from TopSCHOLAR:
-   2 Sep 2003, 16 Sep 2003, 2 Dec 2003, 13 Apr 2004 (all `sga/Meetings/Minutes/`
-   items 524, 522, 541, 543), reusing the recipe in §8.1 (this time no special
-   headers were even needed). Against that primary text, an adversarial
-   verifier trimmed six of thirteen officer claims for overclaiming ("held the
-   office throughout the year" narrowed to "confirmed at the meetings actually
-   checked"; "sworn in" narrowed to "approved by unanimous vote" where the
-   swearing-in itself wasn't shown) and cut two of five committee co-chair
-   claims down to one confirmed name apiece (Evelina Petkova and Tim Howard are
-   each named once, alongside an already-confirmed chair, with no stated role —
-   recorded as such rather than as "co-chair"). What survived and is now on
-   `data/years.json`: a nine-seat executive and Judicial Council roster
-   (Executive VP Patti Johnson, VP Finance Nick Todd, VP Public Relations Abby
-   Lovan, VP Administration Jessica Martin, IT Designate Matthew Pava, Sergeant
-   at Arms Cameron Yancey, Parliamentarian Mason Stevenson, Coordinator of
-   Committees Scott Wolfe, Chief Justice Troy Ransdell and Justices Josh
-   Collins/Gretchen Light/Scott Broadbent), the first Speaker of the Senate
-   Robert Watkins (elected 13 April 2004, 9-8 over Brittany Fausey — this also
-   corroborates, from the primary minutes, an event already in the record
-   sourced only to the Herald), and five senate committee chairs. 1979-80 is
-   not the same kind of gap: the digitized minutes collection has no meeting
-   from inside that term at all (only the 29 April and 6 May 1980 transition
-   meetings, which swear in *1980-81's* officers), and the only Herald coverage
-   the local index or the TopSCHOLAR landing pages surface is the presidential
-   race itself — no AVP, Secretary or Treasurer is named anywhere reachable
-   from here. The four previously-rejected 1979-80 candidates (Fuller, Bates,
-   Thompson, Craig) stay rejected; nothing found this run changes that. Leave
-   1979-80 for a run that can search full-text Herald PDFs or a yearbook, not
-   another pass over the same index.
-
-   **Yearbook checked, 21 August (scheduled run) — still no AVP, Secretary or
-   Treasurer.** `viewcontent.cgi` gave the WAF challenge (HTTP 202,
-   `x-amzn-waf-action: challenge`) on every attempt this run, checked at the
-   start and again after a gap, so no minutes or Herald PDFs were reachable.
-   `archive.org/download/talisman1979west` and `talisman1980west` (both in
-   archive.org's held range, not rate-limited) were read in full instead. Both
-   had already been mined by an earlier pass: every ASG-related passage found —
-   Kevin Kinne chairing the student opinion poll committee, Tim Irons chairing
-   rules and elections, Hargrove's White House meeting with President Carter,
-   the "sworn in as student regent" line about Steve Fuller (which is 1980-81
-   material, already correctly recorded there, not a second president for
-   1979-80) — is already on `data/years.json`, sourced to the same yearbook
-   pages. No new executive officer name turned up. This gap stays genuinely
-   open pending `viewcontent.cgi` access to the fall 1979/spring 1980 Herald
-   full text; do not re-run the Talisman search again without new pages to
-   check.
+   **All three done, 22 August (scheduled run) — 1979-80 was the last.**
+   2003-04 and 2001-02 were already done, as below. For 1979-80,
+   `viewcontent.cgi` was open (plain requests, no special headers) around
+   00:25–00:40 UTC on 22 August, and the earlier "no AVP, Secretary or
+   Treasurer is named anywhere reachable" conclusion turned out to be wrong —
+   not because the officers weren't covered, but because the coverage isn't in
+   the issue's own abstract on its TopSCHOLAR landing page, only in the PDF
+   itself, which no prior pass had actually opened for this specific issue.
+   Herald 54:56 (19 Apr 1979)'s front page, in a third column the abstract
+   doesn't index at all, reports Jamie Hargrove's win (1,087-535 over David
+   Young, 1,725 votes) *and* the three other executive races: Steve Fuller
+   administrative vice president (973-574 over Tom Jecker), Dean Bates
+   activities vice president (785-761 over Ben Bratcher, the closest of the
+   four), Betty Thompson secretary (1,052-517 over Lynn Driver) and Terri
+   Craig treasurer (937-623 over Darell Pierce, continued on p.7). Herald
+   54:57 (26 Apr 1979) then names all five by office as they were sworn in at
+   the 24 April meeting, and SGA's own minutes of that same meeting — already
+   mirrored locally as `1978-79-asg-minutes-1979-04-24.pdf` — independently
+   corroborate all four by what they did that night (Fuller on committees,
+   Bates on the Center Board, Craig on the budget, and Thompson's own
+   signature as secretary). This is exactly the four names an earlier pass
+   (`.research/officers-checked.json`) had found and then rejected, because
+   the verifier at the time could only see the same incomplete abstract and
+   couldn't confirm them — a case of CLAUDE.md's own warning about the local
+   index, not a wrong finding. A separate adversarial verifier this run
+   independently re-read all three documents at high resolution and confirmed
+   every name, race and number; it also caught an unrelated pre-existing
+   "70 candidates signing up for offices" clause on the neighbouring
+   1978-79 event that traced to no source in either issue, which was cut.
+   Landed on `research-backlog`: `organization.executive` for 1979-80, a new
+   24 April swearing-in event, Hargrove's profile rewritten around the primary
+   record, two Herald issues mirrored into `data/documents/`, and two pairs of
+   near-duplicate spring-1979 entries in 1978-79 merged. Nothing further is
+   owed here; the 1979-80 cabinet is as complete as the surviving record allows.
 2. ~~Twenty-six sets of 1996-97 minutes are mirrored into `data/documents/` and
    referenced by nothing~~ **Done, 20 August.** All 29 files (27 Congress
    meetings, 2 Executive Council) now carry a title, a summary, a sourced
