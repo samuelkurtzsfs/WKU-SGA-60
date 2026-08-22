@@ -28,7 +28,7 @@ intermittent by the hour rather than reliably down for a whole day:
 | `digitalcommons.wku.edu/cgi/viewcontent.cgi` | **HTTP 202, WAF challenge**, both attempts — an SGA minutes item (article 1912) that would have been read first this run |
 | `web.archive.org` | **connection reset on every attempt**, `https://` included, both times — same failure mode as 21 August, not the "open on https" state from 20 August |
 | `digitalcommons.wku.edu` landing pages | open, 200, as always |
-| `wku.edu/sga/uploads/minutes/2011/` and `/2015/` (directory listing) | **404** this run, not the 403 the 21 August note recorded. Different failure, same result: no listing, so no filenames for the thin 2011-12/2012-13 years or for 2015-16 without guessing, which the 21 August note already judged not worth the request volume. |
+| `wku.edu/sga/uploads/minutes/2011/` and `/2015/` (directory listing) | `/2015/` **404**; `/2011/` still **403**, as the 21 August note recorded — re-checked by the editor on merge, so the two paths fail differently rather than both having changed. Same result either way: no listing, so no filenames for the thin 2011-12/2012-13 years or for 2015-16 without guessing, which the 21 August note already judged not worth the request volume. |
 | `wku.edu/sga/` and its current `legislative_archive_2.php` | open, but only link to the current (2025-26) legislative session's bills — no path to a pre-2016 minutes archive was findable from the live site's own navigation. |
 
 So today's access is the same practical dead end as 21 August, reached by a
@@ -44,10 +44,16 @@ busy issue can — spot-checked the fullest single day found (18 April 2000,
 issue 8115, 32 stored lines) against the live TopSCHOLAR landing page, which
 is reachable even with `viewcontent.cgi` closed. The two matched exactly,
 line for line — this issue was not truncated locally. That is one data
-point, not a guarantee for the other 77 SGA-related issues in the 1999-00
-window, but it means the 78 hits already surfaced from the local index for
+point, not a guarantee for the rest of the SGA-related issues in the 1999-00
+window, but it means the hits already surfaced from the local index for
 1999-00 are a reasonable starting list for whoever next has `viewcontent.cgi`
 access, not a possibly-incomplete one.
+
+The count of those hits depends entirely on the keyword set, so state the
+filter next time rather than the bare number. Across both calendar years
+1999 and 2000 the full index holds 246 items, 112 of them Herald issues;
+matching on student government / SGA / ASG gives 65 issues, and adding
+senate and congress gives 75.
 
 Read in full, those 78 hits are almost entirely spring 1999 election
 coverage (candidates for president, administrative vice president and
