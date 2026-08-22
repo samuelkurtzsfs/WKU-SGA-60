@@ -3530,3 +3530,124 @@ carrying a written profile, 135 photographs (79 leader portraits, 56 year photog
 285 documents mirrored, 1,111 legislation files, 1,853 pages built. build.py,
 check_data.py, check_contrib.py and check_duplicates.py all clean at the close of the run.
 No pull requests left open.
+
+# 22 August, the small hours
+
+Four research pull requests open, all cut from current main, all reviewed. Three merged,
+one merged with most of it cut. Nothing was left open.
+
+## The 1979-80 cabinet, at last
+
+`research-backlog` closed the last of the three years with no executive recorded. The
+four names — Steve Fuller, Dean Bates, Betty Thompson, Terri Craig — are the same four an
+earlier pass found and rejected in good faith, because the TopSCHOLAR abstract for Herald
+54:56 does not index the article that names them. The abstract is not the issue. Opening
+the PDF settles it in one column: Hargrove beat David Young 1,087-535 on a turnout of
+1,725 against 1,097 the year before, and the other four races are reported beside it, down
+to the 785-761 that made Bates's the closest of the four. Herald 54:57 names all five again
+by office as they were sworn in on 24 April, and SGA's own minutes of that meeting
+corroborate every one of them by what they did that night — Fuller on committees, Bates on
+the Center Board, Craig moving to waive the rules, and Betty Thompson's signature at the
+foot of the last page. Around twenty claims checked against the three documents; all held.
+
+This is the clearest vindication yet of the warning in CLAUDE.md that a miss in the local
+index proves nothing. It cost this project a year of believing a gap was permanent.
+
+Two things were cut before merging. Steve Fuller's note ended by saying he was elected
+president himself in April 1980, cited to a newspaper printed in April 1979. True, and
+already on the record under 1980-81, but not something its own citation can carry. And the
+four officer notes each mixed Herald facts with minutes facts under a single source; both
+are now cited, so a reader following either link finds the claim it supports.
+
+## Where the Talisman actually lives
+
+`photo-research` corrected a source path that CLAUDE.md itself still gets wrong. There is
+no `digitalcommons.wku.edu/talisman/` collection; it returns a genuine 404. The yearbooks
+sit under `dlsc_ua_yearbooks`, mixed into the same records series as the Herald. Fourteen
+items were identified by reading the publication date off each item's own page rather than
+inferring it from the order, which is why the winter 1995 book files to 1995-96 and the
+spring 1995 book to 1994-95 — a mapping that would have come out wrong any other way. The
+eighteen years still without a photograph were re-counted against `photos.json` and the
+list matches exactly. Every leader still has a portrait.
+
+`viewcontent.cgi` was challenged all through that run, and challenged again for me at
+merge. `research-backlog` had pulled full Herald PDFs through the same endpoint a few
+hours earlier. It lifts and re-closes by the hour, and no run should treat one day's
+failure as the state of the world.
+
+## Ten profiles that said nothing
+
+The 21 August entry let five profiles stand that restated their own headings, on the
+grounds that they were true. That was too generous, and the practice has now produced
+twelve more. Ten were cut.
+
+Malcolm Arvin's read, in full, that Arvin served as Junior Class Representative for
+1967-68. The page already prints that as the heading and prints the roster citation
+underneath, so the profile added a sentence and a second copy of the same citation. Worse,
+a profile displaces a `note`, so Petrie, Streible and Graham each lost a shorter and better
+line to a longer one saying the same thing. Streible's page is back to the sentence that
+tells you something: she also sat on the seven-member Executive Committee.
+
+Two claims failed outright. Earl Edmonds was said to have delivered "Greetings from the
+Student Body" at the dedication of nine buildings on 14 October 1967. The programme's own
+index attributes that to Raymond Cravens and puts Edmonds's name on the line above it, the
+introduction. The running order makes the inference tempting and it may well be right, but
+it was published as a fact and the record does not say it. And a listing of Class of 1968
+senior officers was attributed to the 1968 Talisman, naming Karen Williams and Jack Lewis,
+neither of whom appears anywhere in an index of 11,850 items; the yearbook page itself
+cannot currently be opened. Both cut, the second only until someone can read the page.
+
+What survived is real and now properly cited: Edmonds's election, which the index carries
+as a Herald report of 6 April 1967, and Randi Jensen's own piece in the Herald that
+November, which the index gives under her byline in that issue's letters column. The ten
+cut names came off `profiles-done.txt` so a later run picks them up instead of skipping
+them as finished.
+
+Sitting unused in the same dedication programme: William Menser, that year's ASG
+president, gave the commemoratory statement for the Kelly Thompson Complex for Science.
+That is a 1967-68 entry nobody has written.
+
+## A run that found nothing
+
+`research-senate` added no names and explained why. The 1999-00 Herald coverage is spring
+election reporting — who ran for president, for administrative vice president, for
+treasurer — and candidacy for an executive office is not a seat in Congress. Declining to
+convert those names into senators is the same discipline that killed all 39 "missing
+president" claims, and it is the harder call. Its access table had the 2011 minutes
+directory returning 404; it still returns 403, as it did on 21 August, so the two paths
+fail differently and nothing changed there. Its count of Herald hits could not be
+reproduced and is now stated with the filter that produces it.
+
+## Still open
+
+The duplicate problem is unchanged from 21 August and still real. `check_duplicates.py`
+compares titles and cannot see entries that share a date and a source but were written up
+in different words. The six pairs it reports are all correctly distinct and will be
+reported again tomorrow.
+
+Something it also cannot see: the meeting of 24 April 1979 is now written up twice, once
+in 1978-79 for the resolutions the outgoing Congress passed and once in 1979-80 for the
+officers it swore in. That split is deliberate and, I think, right — the legislation
+belongs to the year that passed it and the swearing-in to the year that began — but it is
+the shape of thing a body-similarity check would flag, and whoever builds that check should
+decide what to do with it rather than be surprised by it.
+
+Election events are filed inconsistently. Hargrove's April 1979 win sits in 1978-79, while
+Fuller's April 1980 win sits in both 1979-80 and 1980-81. The leaders are all filed
+forward correctly, which is what matters, but the events are not filed to one rule.
+
+Flagged by `research-profiles` and not touched: the 2016-17 and 2017-18 executive records
+carry garbled office and name fields from PDF extraction, along with officers of campus
+clubs pulled in from a resolution's whereas-clauses. Nobody should profile those until
+they are cleaned. The "Chris Grau" spelling flag in 1968-69 is still unresolved.
+
+Vercel refused every preview build tonight, having spent its hundred free deployments for
+the day. Nothing to do with any of this work, and it clears on its own.
+
+## Where the archive stands
+
+61 academic years, 2,021 dated and sourced entries, 73 leader records, 555 records carrying
+a written profile, 135 photographs (79 leader portraits, 56 year photographs), 287
+documents mirrored, 1,111 legislation files, 1,855 pages built. build.py, check_data.py,
+check_contrib.py and check_duplicates.py all clean at the close of the run. No pull
+requests left open.
