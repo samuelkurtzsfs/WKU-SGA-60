@@ -10936,6 +10936,27 @@
       "src": {
        "label": "1983 Talisman, \"Parallel perspectives,\" p. 232",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/407"
+      },
+      "profile": [
+       "Kerrie Stewart stood in the Associated Student Government elections of spring 1982, a contest run twice after the first general election was voided. This archive's record of the presidential primary places her in the field that Margaret Ragan and Glenn Sargent came through, and her supporters filled the Herald's letters pages from 25 March to 20 April, the last of them, by Melody Murphy, backing Ragan and Stewart together. What office she was seeking by the repeated election of 20 April is not established here.",
+       "She was sworn in as Public Affairs Vice President for the following year on 27 April 1982, and at the Congress meeting of 29 April was named chairperson of the Public Relations Committee. A LaCenter junior, she described ASG as a liaison between students and the administration, and said its Congress proposed bills in weekly meetings which the administration then voted on once Congress had passed them. The 1983 Talisman's Associated Student Government portrait names her in the vice-presidential role. She also appears in a Phi Mu sorority composite in the WKU Archives' student organizations photograph collection.",
+       "The Herald marked her death the following year. The index of the issue of 23 August 1983 carries \"Saying Goodbye to Kerrie Stewart is Especially Hard\" as an obituary, and a remembrance by Jon Norris, \"Kerrie Stewart Remembered,\" followed on 8 September 1983. Neither article was opened for this record, so nothing is said here of the circumstances."
+      ],
+      "src2": {
+       "label": "Herald 57:57 letters, 20 Apr 1982",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2465"
+      },
+      "src3": {
+       "label": "Herald, 23 Aug 1983 (index: obituary)",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5841"
+      },
+      "src4": {
+       "label": "Herald, 8 Sep 1983, \"Kerrie Stewart Remembered\"",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5837"
+      },
+      "src5": {
+       "label": "Phi Mu Sorority composite, WKU Archives student organizations",
+       "url": "https://digitalcommons.wku.edu/stu_org/365"
       }
      }
     ],
@@ -32886,7 +32907,7 @@
        ]
       }
      ],
-     "size": 31,
+     "size": 35,
      "committees": [
       {
        "name": "Academic Affairs",
@@ -32919,8 +32940,16 @@
        "note": "Unfilled at the 5 Sep. 2006 opening meeting; Shelton chaired it by the 28 Nov. and 5 Dec. 2006 meetings."
       }
      ],
-     "note": "Jeanne Johnson served as a fill-in leader after Watkins' resignation and was elected president in her own right for 2007-08 at the May 2007 banquet. Senate size, officers and committee chairs per the 28 Nov. 2006 meeting minutes; 22 of 31 senators were present that night. The senate opened the year on 5 Sep. 2006 with 18 seats and 8 senators present, swearing in eight more that night; it had grown to 31 seats, 22 present, by 28 Nov. 2006. Jeanne Johnson served as executive vice president from the 5 Sep. 2006 opening meeting until Watkins's resignation, then as a fill-in leader before her own election in 2007-08.",
+     "note": "Jeanne Johnson served as a fill-in leader after Watkins' resignation and was elected president in her own right for 2007-08 at the May 2007 banquet. Senate size, officers and committee chairs per the 28 Nov. 2006 meeting minutes; 22 of 31 senators were present that night. The senate opened the year on 5 Sep. 2006 with 18 seats and 8 senators present, swearing in eight more that night; it had grown to 31 seats, 22 present, by 28 Nov. 2006. Jeanne Johnson served as executive vice president from the 5 Sep. 2006 opening meeting until Watkins's resignation, then as a fill-in leader before her own election in 2007-08. Growth continued into the spring: the minutes of 30 Jan. 2007 record the chamber reaching \"a full senate\" after eleven more were sworn in, though the roll call that night, taken before the oath, still counted 22 seats; from 6 Feb. 2007 the dated roll calls count the chamber as 35 \u2014 27 of 35 present on 6 Feb., 24 of 35 on 27 Feb. \u2014 the figure this record now uses.",
      "members": [
+      {
+       "name": "Christina Allen",
+       "note": "Approved by the Senate and sworn in by Justice Brian Fischer at the seventh meeting, 17 October 2006. The 24 October minutes list her again among that night's new senators, apparently repeating the earlier business rather than a second swearing.",
+       "src": {
+        "label": "SGA Minutes, 17 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/701"
+       }
+      },
       {
        "name": "Chris Anderson",
        "seat": "Senator",
@@ -32928,6 +32957,22 @@
        "src": {
         "label": "SGA Meeting Minutes, 5 Sep 2006",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+       }
+      },
+      {
+       "name": "Rob Anderson",
+       "note": "One of eighteen sworn in to the Student Senate at the fifth meeting of the fifth SGA, 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Keri N. Anderson",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
        }
       },
       {
@@ -32940,12 +32985,164 @@
        }
       },
       {
+       "name": "Wes Calhoun",
+       "note": "Appointed to the Student Senate and sworn in under the Oath of Office on 6 February 2007.",
+       "src": {
+        "label": "SGA Minutes, 6 February 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/721"
+       }
+      },
+      {
+       "name": "Sarah Collins",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Toni Corella",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Christian Cullip",
+       "note": "Sworn in to the Student Senate 3 October 2006, printed \"Christian Cullip\". The 12 September minutes, three weeks earlier, name a \"Christian Cullig\" as Public Relations Chair nominee, marked not present; whether this is the same person, and how that predates his Senate oath, is not established here. Flagging the spelling discrepancy.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Natalie Denney",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
        "name": "Diane DeRosa-Reynolds",
        "seat": "Senator",
        "note": "Sworn in to the Senate on 5 September 2006; moved the previous question during the 28 November legislative session.",
        "src": {
         "label": "SGA Meeting Minutes, 5 Sep 2006",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+       }
+      },
+      {
+       "name": "William Doolin",
+       "note": "Appointed to the Student Senate and sworn in under the Oath of Office on 27 February 2007.",
+       "src": {
+        "label": "SGA Minutes, 27 February 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/726"
+       }
+      },
+      {
+       "name": "Nathan Eaton",
+       "note": "Sworn in to the Student Senate 3 October 2006, printed \"Nathan Eaton\". The site's existing name-aliases file already maps this spelling, together with \"Nate Eaton\", to \"Nathan J. Eaton\" — the same person recorded as Campus Improvements Committee chair for 2006-07.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Joshua Fries",
+       "note": "Sworn in to the Student Senate 3 October 2006, printed \"Joshua Fries\". This may be the same person as \"Josh Fries\", already recorded as Public Relations Committee chair for 2006-07 from 30 January 2007; the minutes reviewed here do not state this explicitly.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Reagan Gilley",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006, printed \"Reagan Gilley\". Also recorded later as an executive officer for 2007-08 and 2008-09.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Megan Gorski",
+       "note": "Sworn in to the Student Senate 24 October 2006. The 17 October minutes nominating her garble the name as \"Amanda-Megan Gorksi\"; flagging the discrepancy.",
+       "src": {
+        "label": "SGA Minutes, 24 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/713"
+       }
+      },
+      {
+       "name": "Lhousseinene Guerwane",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007. No independent source was found in this pass to cross-check the spelling.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Theodore Harden",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Elizabeth Hennessey",
+       "note": "Sworn in to the Student Senate 24 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 24 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/713"
+       }
+      },
+      {
+       "name": "Leah Holliday",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Lucas Humble",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006; later Academic Affairs Committee head.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "John Michael Sigler II",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Glenn Fedor Jr.",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Tim Hill Jr.",
+       "note": "Sworn in to the Student Senate 3 October 2006, printed \"Tim Hill Jr.\" in the minutes. The same name chaired the Legislative Research Committee: the 12 September minutes record the Senate approving \"Tim Hill, Jr.\" as its chair, and he gave that committee\u2019s report on 3 October, the night of his recorded Senate oath. The minutes print both \"Tim Hill\" and \"Tim Hill Jr.\" for the role and do not explain how the chairmanship preceded the oath. Flagging the sequencing rather than asserting an explanation.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Gary Steven Taylor Jr.",
+       "note": "Sworn in to the Student Senate 3 October 2006. The 24 October minutes list him again among that night's swearing-in, apparently a clerical repetition rather than a second appointment.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
        }
       },
       {
@@ -32967,12 +33164,60 @@
        }
       },
       {
+       "name": "Sarah Ashley Lawrence",
+       "note": "Sworn in to the Student Senate at the second meeting of the fifth SGA, 12 September 2006.",
+       "src": {
+        "label": "SGA Minutes, 12 September 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/697"
+       }
+      },
+      {
+       "name": "Lindsay Lunderga",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007, printed \"Lindsay Lunderga\" in these minutes; a later document (SGA Minutes, 17 April 2007) spells the same senator's name \"Lindsay Lundergan\". Flagging the discrepancy.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Jamie Mann",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007, printed \"Jamie Mann\" in these minutes. Later documents (SGA Minutes, 6 February and 17 April 2007) consistently spell the name \"Jami Mann\". Flagging the discrepancy.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Blake McAlister",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Joseph Millhouse",
+       "note": "Approved for the Student Senate 30 January 2007 but not sworn in that night because he was absent; sworn in under the Oath of Office on 6 February 2007.",
+       "src": {
+        "label": "SGA Minutes, 6 February 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/721"
+       }
+      },
+      {
        "name": "Suzie Moghaddam",
        "seat": "Senator",
        "note": "Sworn in to the Senate at the first meeting, 5 September 2006.",
        "src": {
         "label": "SGA Meeting Minutes, 5 Sep 2006",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+       }
+      },
+      {
+       "name": "Bradley Morgan",
+       "note": "Sworn in to the Student Senate 24 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 24 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/713"
        }
       },
       {
@@ -32985,6 +33230,47 @@
        }
       },
       {
+       "name": "Danielle Pyle",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Melissa Rickman",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Cacy Schooler",
+       "seat": "Secretary of the Senate from 30 January 2007",
+       "note": "Sworn in to the Student Senate 24 October 2006; elected Secretary of the Senate on 30 January 2007, succeeding Cherieth Lineweaver.",
+       "src": {
+        "label": "SGA Minutes, 24 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/713"
+       }
+      },
+      {
+       "name": "Meggan Selzer",
+       "note": "Sworn in to the Student Senate at the eighth meeting, 24 October 2006. The 17 October minutes nominating her spell the name \"Meggan Seltzer\"; flagging the discrepancy.",
+       "src": {
+        "label": "SGA Minutes, 24 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/713"
+       }
+      },
+      {
+       "name": "Kayla Shelton",
+       "note": "Sworn in to the Student Senate 3 October 2006 under the minutes' own \"Senate Swearing In\" heading — but she had already been approved Student Affairs Committee chair on 12 September and reported again as chair that same 3 October night, before her recorded oath. The record does not explain the sequencing; an earlier, untranscribed swearing-in is possible but unconfirmed.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
        "name": "Tori Theiss",
        "seat": "Senator; chair of the Campus Improvements committee by December 2006",
        "note": "Sworn in to the Senate on 5 September 2006; reported for Campus Improvements as its committee chair at the 5 December 2006 meeting.",
@@ -32994,12 +33280,44 @@
        }
       },
       {
+       "name": "Dajana Vasilijevic-Klingler",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007. No independent source was found in this pass to cross-check the spelling.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Earlene Racquel Whitaker",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006, printed \"Earlene Racquel Whitaker\"; later minutes call her \"Earlene Whitaker\".",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Sarah White",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
        "name": "Christa Wilcox",
        "seat": "Senator",
        "note": "Sworn in to the Senate on 5 September 2006; offered friendly amendments to legislation on 28 November.",
        "src": {
         "label": "SGA Meeting Minutes, 5 Sep 2006",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+       }
+      },
+      {
+       "name": "Amr Yassein",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007. No independent source was found in this pass to cross-check the spelling.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
        }
       }
      ]
@@ -39008,6 +39326,18 @@
        "src": {
         "label": "SGA Legislative Branch page, archived 13 Oct 2014 (last modified 25 Sep 2014)",
         "url": "https://web.archive.org/web/20141013231744/http://wku.edu/sga/legislative/"
+       },
+       "profile": [
+        "Kasey Glasgow chaired the Student Affairs Committee through 2014-15, and was already in post by 26 August 2014, when the Executive Cabinet held a committee-chair orientation meeting under President Nicki Seay. She was one of the Thirteenth Senate's five standing committee chairs, alongside Josh Knight at Academic Affairs, James Line at Public Relations, Paige Settles at Legislative Research and Tyler Scaff at Campus Improvements.",
+        "At the Senate's 30 September 2014 meeting she described her committee's work: awarding the SGA's winter and summer scholarships and serving, in her words, as \"a catch-all for all business that does not fall under other committees.\""
+       ],
+       "src2": {
+        "label": "SGA Executive Cabinet minutes, 26 Aug 2014",
+        "url": "https://www.wku.edu/sga/uploads/executive/minutes/2014/8-26.docx"
+       },
+       "src3": {
+        "label": "SGA Senate minutes, 30 Sep 2014",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2014/sep30.docx"
        }
       },
       {
@@ -39025,6 +39355,27 @@
        "src": {
         "label": "SGA Executive Cabinet minutes, 26 Aug 2014",
         "url": "https://www.wku.edu/sga/uploads/executive/minutes/2014/8-26.docx"
+       },
+       "profile": [
+        "Tyler Scaff was appointed Campus Improvements Committee Chair and sworn in by Chief Justice Seth Church at the Senate's 1 April 2014 meeting, near the end of the Twelfth Senate; he was reappointed to the post when the Thirteenth Senate organized that August, and was present as chair at the Executive Cabinet's 26 August 2014 orientation meeting.",
+        "Through the autumn of 2014 his committee worked on a garden plot in the community garden and met Parking and Transportation Services about commuter parking. In October it discussed a break party for the campus custodians and the possible installation of sand volleyball courts. In the spring he organised a Campus Safety Walk, set for the evening of 22 April 2015 at Centennial Mall, in his final weeks as chair.",
+        "At the Senate's 5 May 2015 meeting, in his last report as chair, he thanked his committee for being proactive and said he would graduate that semester."
+       ],
+       "src2": {
+        "label": "SGA Senate minutes, 30 Sep 2014",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2014/sep30.docx"
+       },
+       "src3": {
+        "label": "SGA Senate minutes, 14 Oct 2014",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2014/10-14.docx"
+       },
+       "src4": {
+        "label": "SGA Senate minutes, 31 Mar 2015",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2014/3-31.docx"
+       },
+       "src5": {
+        "label": "SGA Senate minutes, 5 May 2015",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2014/5-5.docx"
        }
       },
       {
@@ -39942,7 +40293,12 @@
        "src": {
         "label": "SGA Senate minutes, 1 Sep 2015",
         "url": "https://www.wku.edu/sga/legislative/senatefirstmeetingfifteen.docx"
-       }
+       },
+       "profile": [
+        "Emily Pride was sworn in as a WKU SGA senator in fall 2014, one of thirteen new senators seated at the Senate's 30 September meeting.",
+        "President Jay Todd Richey appointed her head of the Public Relations Committee when the Fourteenth Senate organized on 1 September 2015. She told the Senate her role was to \"advertise the SGA to the student body,\" working under Director of Public Relations Sawyer Coffey, and later urged senators to follow SGA's social media accounts.",
+        "By the Senate's 10 November 2015 meeting, Madison Keller had succeeded her as Public Relations Committee chair."
+       ]
       },
       {
        "office": "Student Affairs Committee Head",
@@ -39950,7 +40306,11 @@
        "src": {
         "label": "SGA Senate minutes, 1 Sep 2015",
         "url": "https://www.wku.edu/sga/legislative/senatefirstmeetingfifteen.docx"
-       }
+       },
+       "profile": [
+        "President Jay Todd Richey appointed Temple Ricke chair of the Student Affairs Committee when the Fourteenth Senate organised on 1 September 2015; the Senate approved the appointment, with the rest of Richey's slate, by unanimous consent.",
+        "She described her committee's mission as offering \"opportunities outside of the classroom to extend learning experiences and provide leadership opportunities,\" and its recurring work that fall was awarding and grading the SGA's Winter Term scholarships."
+       ]
       },
       {
        "office": "Cultural and Diversity Affairs Committee Head",
@@ -39968,7 +40328,12 @@
        "src": {
         "label": "SGA Senate minutes, 29 Sep 2015",
         "url": "https://www.wku.edu/sga/legislative/ninetwentyninefifteenmin.docx"
-       }
+       },
+       "profile": [
+        "President Jay Todd Richey appointed Chelsea Faught chair of the Sustainability Committee at the Senate's 29 September 2015 meeting, an appointment approved unanimously; she reported that 14 people had attended the committee's first meeting the week before.",
+        "Her committee ran a Thanksgiving food drive with the WKU Food Pantry that November, organised a green tour of the campus and the Earth Day festival, and worked toward a resolution on recycling in the food courts.",
+        "That resolution, Resolution 3-16-S, supporting recycling efforts in the Downing Student Union, Garrett Conference Center and Tower food courts, passed without debate at the Senate's last meeting of the year on 27 April 2016. \"There are no recycling bins in these food courts,\" she told the Herald. The following November, after she had left the committee, the Senate passed Bill 16-16-F making Sustainability a permanent standing committee under the SGA constitution, citing \"the past three semesters\" of the committee's work; Faught, by then no longer an officer, was one of its co-authors."
+       ]
       },
       {
        "office": "Chief Justice",
@@ -40004,7 +40369,11 @@
        "src": {
         "label": "SGA Senate minutes, 10 Nov 2015",
         "url": "https://www.wku.edu/sga/legislative/eleventenfifteen.docx"
-       }
+       },
+       "profile": [
+        "Madison Keller was one of several senators nominated as an SGA Homecoming representative in fall 2014, and was still a WKU SGA senator through the spring 2015 session of the Thirteenth Senate, including on the 5 May 2015 vote over Resolution 11-15-S, a bylaws amendment that failed to reach the supermajority required to pass.",
+        "President Jay Todd Richey appointed her chair of the Public Relations Committee at the Senate's 10 November 2015 meeting, succeeding Emily Pride; the appointment was approved by unanimous consent."
+       ]
       }
      ],
      "note": "At the 1 Dec 2015 executive cabinet meeting, Miles and Koehler disagreed with then-Chief Justice Kelsey Luttrell's call for a separate Judicial Council adviser; Luttrell resigned two days later.",
@@ -42633,7 +43002,11 @@
        "src": {
         "label": "SGA Bill 20-17-F",
         "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-20-17-f.pdf"
-       }
+       },
+       "profile": [
+        "Corey Newsome served as Vice President of the Committee for Diversity and Inclusion in 2017-18, under chair Divya Gangavelli. In October 2017 the two co-authored Bill 20-17-F, allocating $200 from the Senate's discretionary fund for \"Hidden Hacks of the Hill,\" an event held 14 November 2017 meant to connect minority students with campus resources including Student Support Services, Safe Spaces, the Counseling and Testing Center, the WKU Food Pantry and the Office of Student Conduct; the bill passed its second reading on 31 October 2017.",
+        "The vice-presidential title is the one Bill 20-17-F itself gives him rather than the chair's; the archive's separate note that he later held the chair rests on other evidence."
+       ]
       },
       {
        "office": "Senator At Large",
@@ -43595,7 +43968,11 @@
        "src": {
         "label": "SGA Senate minutes, 4 Sep 2018",
         "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
-       }
+       },
+       "profile": [
+        "Andrew Merritt was elected one of eleven at-large senators in WKU SGA's spring 2018 election, among the winners the Herald named on 18 April 2018.",
+        "The new Seventeenth Senate confirmed him as Secretary of the Senate by a 14-2 vote at its first meeting on 4 September 2018; introducing himself, he said he \"likes organization.\" In the role he circulated the Senate's constitution and bylaws to new members and coordinated senators' weekly office hours."
+       ]
       },
       {
        "office": "Chief Justice",
@@ -43637,7 +44014,10 @@
        "src": {
         "label": "SGA Judicial Council page, archived 20 Jul 2019 (last modified 17 Apr 2019)",
         "url": "https://web.archive.org/web/20190720073043/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php"
-       }
+       },
+       "profile": [
+        "Lane Hedrick, recorded on SGA's own site as \"Katherine (Lane) Hedrick,\" served as an Associate Justice on the Judicial Council in 2016-17. SGA's judicial page listed her as Acting Chief Justice after its 17 April 2019 revision."
+       ]
       },
       {
        "office": "Associate Justice",
@@ -43669,7 +44049,10 @@
        "src": {
         "label": "SGA Judicial Council page, archived 20 Jul 2019 (last modified 17 Apr 2019)",
         "url": "https://web.archive.org/web/20190720073043/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php"
-       }
+       },
+       "profile": [
+        "Caroline Simpson served as an Associate Justice on the SGA Judicial Council in 2016-17 and again in 2018-19; SGA's own site recorded her as \"Lane (Caroline) Simpson\" in the earlier year and as \"Caroline Simpson\" in the later one."
+       ]
       },
       {
        "office": "Associate Justice",

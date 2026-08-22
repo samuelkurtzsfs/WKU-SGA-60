@@ -4094,3 +4094,121 @@ entries, 1,318 senate members (up 17), 144 photographs, 1,103 authorship attribu
 the legislation itself (up 65), 287 documents mirrored, 1,111 legislation files, 1,716 pages
 built. build.py, check_data.py, check_contrib.py and check_duplicates.py all clean on main at
 the close of the run. No pull requests left open.
+
+# 22 August 2026, later evening
+
+Two research pull requests were open, both cut from the current main with nothing stale behind
+them. Both merged. The three branches from 4 August that this run's brief named as rotting —
+#6, #7 and #8 — were already closed before it started.
+
+## Person profiles (#134)
+
+The pull request described twelve records; the branch had grown since it was written and
+carried twenty-two. Ten committee officers of the 1990s Senate and Brooke Mitchell of the
+2022-23 Mental Health and Wellbeing Committee had landed in an earlier commit the body never
+mentioned. All twenty-two were reviewed.
+
+Three sources were opened directly. Bill 46-23-S, which sits on wku.edu and not behind the
+archive's bot protection, confirmed its seven authors, Olivia Feck as committee chair, the
+$550 from the Legislative Discretionary Fund, the week of 23 to 28 April 2023 and every event
+in it. It also showed something the entry had not: the bill records a first reading on 11
+April and a second on 18 April, and its pass, fail and other boxes are all blank. The profile
+had it "read to the Senate and passed unanimously" on that document alone. The unanimous vote
+is real — the Herald of 13 April 2023 reports it, and that article was already cited in this
+year's events — so the paragraph now says which source carries which fact and the Herald is
+cited beside the bill. The 1971 Talisman, readable in full text on archive.org, confirmed the
+Judicial Committee caption word for word: Freville vice-chairman, Linda Jones secretary, Eyler
+chairman. That entry's refusal to merge Linda Jones with the 1971-72 president of the same
+name is the rule working as intended. And the minutes of 13 April 2004, already mirrored in
+this archive, settled the date correction: the meeting opened that day with 20 of 30 members
+present, Abby Lovan withdrew, and Robert Watkins won by one vote. The archive had been dating
+that election to 15 April, which is when the Herald's report ran.
+
+One claim was cut outright. Watkins's profile ended with the disputed speaker vote being
+"upheld later that month." Nothing in the record says so; all the archive has is Fausey
+declining to challenge it. Abby Lovan's withdrawal, which the minutes do record, took its
+place.
+
+Three more were repairs rather than cuts, and they share a cause worth naming. `build.py`
+hides an officer's note once that officer has a profile, on the reasoning that showing both
+repeats the same facts. So a profile that is thinner than the note beneath it does not sit
+alongside it — it deletes it from the page. David Apple's profile dropped that the April 1998
+primary he read out was for Public Relations Director and sent Sweatt and France to the general
+election. Andy Gailor's dropped that Resolution 97-17-F was voted down for insufficient
+research. Both were folded back in, in both years each man appears. Tim Todd's "the only
+remark of his recorded in that year's minutes" was scoped to the single set of 1985-86 minutes
+this archive actually holds, which is all that claim can rest on.
+
+Everything else traced. Trent Lyda's succession, Apple on internet hours, the Sweatt and France
+vote totals, Gailor as City Commission representative, Steve Wilson confirmed 30 to 3, the 7
+September 1978 ineligibility ruling, Eliana Martinez taking the clerkship by 28 May 2010,
+VanWinkle working with Liz Goddard, the 30 October 2003 suspension of the by-laws, Eaton's
+shuttle stop, Kenderes, Carol Gray as 1970-71 secretary — each fact in the new prose lands on
+an entry already sourced in this archive.
+
+## The backlog (#135)
+
+Merged with nothing cut. Both image files are real JPEGs and both were looked at: a group
+portrait of about thirty people in an auditorium for 1982-83, and a young man in a suit in a
+large leather office chair for 1990-91. Neither crop carries its caption, which for the group
+photograph is the right choice — the site names nobody in it, so no face in it can be
+misidentified.
+
+The Jeff Goff event looks wrong before it looks right, and the reason is worth recording. This
+archive already says President for a Day was established by Bill 91-9-F in September 1991,
+which is ten months after the swap this entry describes. It holds up. The 1991 Talisman covers
+the 1990-91 year, and Michael Colvin, named in the entry as walking Goff into the office, was
+president in 1990-91 — 1991-92 was Heather Falmlen. A fundraiser run once in November 1990 and
+formalised by bill the following autumn is a coherent sequence. The Talisman item's own
+landing-page index, which is readable even when the PDFs are not, lists "Student Takes Office –
+Jeff Goff" and "President Takes Notes – Thomas Meredith" as a two-part feature, which is the
+swap.
+
+Kerrie Stewart needed no leap either: the 1981-82 Congress roll already recorded her sworn in
+as Public Affairs Vice President for the following year on 27 April 1982, so the Talisman is a
+second source and the April-to-following-year placement is the standing rule applied correctly.
+The "Margaret Regan" spelling was added as a flag on the existing note, leaving the Board-seat
+correction untouched.
+
+## What could not be checked, and why it did not stop the merge
+
+`viewcontent.cgi` was challenged for this entire run. Twelve minutes items, four rounds spread
+over half an hour with ninety-second backoffs between them, cookies carried from each item page
+and the referer sent back to it, tried against both the `sga` and `dlsc_ua_records` collections:
+every request came back HTTP 202 with a Cloudflare challenge page and no bytes. A headless
+browser could not reach the host at all. The run that produced #135 found the same endpoint
+wide open to a bare curl a couple of hours earlier, which is one more confirmation of the note
+in section 8.4 that this lifts and re-closes by the hour rather than staying shut.
+
+Two consequences. The ten 1990s committee profiles could not be re-read at source; they were
+allowed through because they restate notes already published and sourced on main rather than
+asserting anything new, but they are re-wording, not fresh verification. And the "Margaret
+Regan" caption spelling is the one claim merged this run with no second source behind it. It
+stayed in because it is explicitly a flag rather than a correction, because nothing contradicts
+it, and because this archive's own rule is that a miss under a closed door is not evidence of
+absence. The next run that finds the endpoint open should read that caption and settle it.
+
+## Still open
+
+The 1995-96 entry that glosses Bill 91-9-F as having established President for a Day now sits
+on the public site beside a swap that ran in November 1990. Both are sourced and neither is
+wrong, but a reader meeting them together sees a contradiction; the earlier entry wants a
+clause saying the bill formalised something ASG had already run once. Everything carried
+forward from the previous report stands: the thirty-five unresolved author lists, the six
+pre-2011 attributions the PDFs plainly carry, the duplicate 1976-77 pair, the Alford and
+Brenzel portraits resting on a unique surname, and the twenty-three "no record survives"
+assertions. The thirteen years still without a year photograph are now the whole of that gap
+the Talisman landing page can reach — #135 exhausted its worklist, and the next pass needs a
+live TopSCHOLAR search or Wayback captures instead.
+
+Research commits still arrive under a tool's name in the git author field. Squash-merging keeps
+it out of main's history, which is what both merges did, and is worth keeping to.
+
+## Where the archive stands
+
+61 academic years, 2,020 dated and sourced entries (up one), 73 leader records, 638 records
+carrying a written profile (up 25), 1,070 officer entries, 1,318 senate members, 146
+photographs (up two), 288 documents mirrored, 1,111 legislation files, 1,716 pages built.
+build.py, check_data.py, check_contrib.py and check_duplicates.py all clean on main at the
+close of the run; check_duplicates.py's six pairs are the known pre-existing ones and are
+genuinely separate events. No pull requests left open.
