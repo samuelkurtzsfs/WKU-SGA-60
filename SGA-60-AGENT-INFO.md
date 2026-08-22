@@ -655,12 +655,62 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   still shows no thumbnails — it is a dense name index by design, not a gallery,
   and adding images there is a separate, optional call for a future run, not a
   bug.
-- **Twenty-nine of the 61 years still have no year photograph** — every year has a
-  leader portrait, so the gap is entirely in photographs of the organisation at
-  work. That is a research job, but it is gated on nothing except the Talisman and
-  the archives.
+- **Eighteen of the 61 years still have no year photograph, down from twenty-nine**
+  (re-measured 22 August, scheduled run): 1981-82, 1982-83, 1983-84, 1987-88,
+  1990-91, 1993-94, 1994-95, 1995-96, 1996-97, 1997-98, 2000-01, 2001-02, 2002-03,
+  2003-04, 2005-06, 2006-07, 2008-09, 2009-10. Every year still has a leader
+  portrait (checked the same run: 0 of 61 leader records are without one, so
+  presidents Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley, named in an
+  older stored task prompt as missing, are confirmed still covered), so the whole
+  remaining photo gap is in photographs of the organisation at work.
 
-### 8.5 Data hygiene
+  **The stored prompt's own source list is wrong: there is no `digitalcommons.wku.edu/talisman/`
+  collection** — that path 404s, a real "page not found" from the server, not a
+  block. The Talisman yearbooks are catalogued under
+  `digitalcommons.wku.edu/dlsc_ua_yearbooks/` (the collection landing page, itself
+  reachable) as individual `dlsc_ua_records/NNNN` items, mixed in with the Herald
+  and everything else in that records series. That landing page is not paginated
+  and does not list every year — it is a curated subset, and there is a real gap
+  between 1979/1981-and-earlier and 2003, then another gap between 2003 and 2013.
+  Confirmed by publication date on each item's own page (`grep`-able as `<p>` under
+  the `Publication Date` heading) rather than guessed from title order:
+
+  | academic year | item | title | pub. date | article no. (for `viewcontent.cgi?article=`) |
+  |---|---|---|---|---|
+  | 1981-82 | `dlsc_ua_records/405` | An Uphill Battle | 6-1-1982 | 1405 |
+  | 1982-83 | `dlsc_ua_records/406` + `/407` | A Season of Hope, pts. 1–2 | 6-1-1983 | 1406, 1407 |
+  | 1983-84 | `dlsc_ua_records/408` | The Touch of Red | 6-1-1984 | 1408 |
+  | 1987-88 | `dlsc_ua_records/412` | In a Different Light | 6-1-1988 | 1412 |
+  | 1990-91 | `dlsc_ua_records/415` | The Western World | 6-1-1991 | 1415 |
+  | 1993-94 | `dlsc_ua_records/418` | Against All Odds | 6-1-1994 | 1418 |
+  | 1994-95 | `dlsc_ua_records/420` + `/421` | Xposure: Rites of Passage (spring); Canvas Flesh (summer) | 1-1-1995, 6-1-1995 | 1420, 1421 |
+  | 1995-96 | `dlsc_ua_records/419`, `/422`, `/423`, `/424` | Xposure: Prejudice: Beyond Black & White (winter); Fall 1995; Spring 1996; Summer 1996 | 12-1-1995, 9-1-1995, 1-1-1996, 6-1-1996 | 1419, 1422, 1423, 1424 |
+  | 2002-03 | `dlsc_ua_records/594` | About Face | 6-1-2003 | 1594 |
+
+  The article number for `viewcontent.cgi?article=` is not the same as the item
+  number in the `/dlsc_ua_records/NNNN/` URL — on every item checked this run it
+  was the item number plus 1000, but confirm each one from the item's own page
+  rather than assume the offset holds everywhere. No candidate found this run for
+  1996-97, 1997-98, 2000-01, 2001-02, 2003-04, 2005-06, 2006-07, 2008-09 or
+  2009-10 — the yearbooks landing page simply has no entry in that range; try a
+  live TopSCHOLAR search or `wku.edu` Wayback captures for those, not another pass
+  over this same landing page. `archive.org`'s Talisman holdings do not help
+  either: it holds 1972–1981 and 1986–1987 (by publication year, i.e. the academic
+  years up through 1980-81 and 1985-86/1986-87), none of which land inside the
+  current 18-year gap.
+
+  **`viewcontent.cgi` was WAF-challenged on every attempt this run** — 5 tries
+  across roughly 20 minutes, spread out with real work in between (not a
+  sleep-loop), landing on the item page first, carrying its cookie, sending
+  `Referer` back to the item page plus the full `Sec-Fetch-*` /
+  `Upgrade-Insecure-Requests` header set, and using the article number read
+  straight off the page rather than guessed. Every attempt came back HTTP 202
+  with `x-amzn-waf-action: challenge`, 0 bytes. Per the 20–21 August notes above,
+  this is a challenge that lifts and re-closes by the hour, not a fixed block —
+  worth a fresh attempt next run before assuming it is still closed. The table
+  above is the ready-made worklist for whenever it opens: land on each item page,
+  pull the PDF with the article number listed, find the SGA section, and match a
+  name to a caption before using any face from it.
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
   **Fixed, 21 August (scheduled run).** All three printed forms — "Nate Eaton"
