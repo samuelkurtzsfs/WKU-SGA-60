@@ -19122,6 +19122,15 @@
        }
       },
       {
+       "name": "Andrea Cailles",
+       "seat": "Representative at Large",
+       "note": "Replaced by Scott Sivley as Student Affairs committee chairperson, reported 1 Sept 1992; seated as Representative at Large 9 Feb 1993.",
+       "src": {
+        "label": "SGA Minutes, 9 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
+       }
+      },
+      {
        "name": "Jeff Carlisle",
        "seat": "Representative at Large",
        "src": {
@@ -19594,15 +19603,6 @@
        "src": {
         "label": "SGA Minutes, 29 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
-       }
-      },
-      {
-       "name": "Andrea Cailles",
-       "seat": "Representative at Large",
-       "note": "Replaced by Scott Sivley as Student Affairs committee chairperson, reported 1 Sept 1992; seated as Representative at Large 9 Feb 1993.",
-       "src": {
-        "label": "SGA Minutes, 9 Feb 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
        }
       }
      ],
@@ -35856,6 +35856,42 @@
        }
       },
       {
+       "name": "Nathan Bishop",
+       "seat": "Senator",
+       "note": "The 7 December 2010 minutes record 'Senator Bishop' objecting to the DUC Renovation Resolution's cost figures; his full name appears earlier in the same corpus as author of Resolution 3-10-F on syllabus transparency (16 November 2010 minutes).",
+       "src": {
+        "label": "SGA Senate minutes, 7 Dec 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/december7.docx"
+       }
+      },
+      {
+       "name": "Keyana Boka",
+       "seat": "Senator",
+       "note": "The 16 November 2010 minutes name her 'Keyana Boka' as the Academic Quality Committee appointee and separately record 'Senator Boka' speaking in floor debate on the syllabus-transparency resolution that same night; the spelling of her first name (Keyana vs. Keyanna) is unverified.",
+       "src": {
+        "label": "SGA Senate minutes, 16 Nov 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/11-16.docx"
+       }
+      },
+      {
+       "name": "Rachel Calhoun",
+       "seat": "Senator",
+       "note": "The 7 December 2010 minutes record 'Senator Calhoun' speaking in debate on Bill 22-10-F; her full name appears elsewhere in the 2010-11 corpus, including the 31 August 2010 and 30 November 2010 minutes, while the 5 October 2010 minutes separately thank 'Senator Calhoun' for her work preparing the fall retreat.",
+       "src": {
+        "label": "SGA Senate minutes, 7 Dec 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/december7.docx"
+       }
+      },
+      {
+       "name": "Brittany Crowley",
+       "seat": "Senator",
+       "note": "Sworn in as a senator by President Jessie on 8 February 2011, alongside Chad Winston and David Spalding.",
+       "src": {
+        "label": "SGA Senate minutes, 8 Feb 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/february8.doc"
+       }
+      },
+      {
        "name": "Nur Azlisya Ismail",
        "seat": "Senator",
        "note": "Confirmed to the Student Senate by blanket vote on 28 September 2010; recorded absent on 9 November 2010.",
@@ -35865,12 +35901,39 @@
        }
       },
       {
+       "name": "Kat Johns",
+       "seat": "Senator",
+       "note": "The 14 September 2010 minutes name her 'Kat Johns' when nominated for Sergeant-at-Arms, a nomination the Senate tabled because she was absent that night, and refer to her that same evening as 'Senator Johns' in explaining the delay; she is recorded speaking in floor debate as 'Senator Johns' at numerous other 2010-11 meetings, including 7 September, 28 September, 12 October, 19 October, 26 October, 9 November, 16 November and 7 December 2010.",
+       "src": {
+        "label": "SGA Senate minutes, 14 Sep 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/sept14.doc"
+       }
+      },
+      {
        "name": "Kate Masterson",
        "seat": "Senator",
        "note": "Reported to the Senate on 9 November 2010 that she had reduced five parking-ticket appeals to warnings.",
        "src": {
         "label": "SGA Senate minutes, 9 Nov 2010",
         "url": "https://www.wku.edu/sga/uploads/minutes/2010/11-9.docx"
+       }
+      },
+      {
+       "name": "Cody Murphy",
+       "seat": "Senator",
+       "note": "Appointed 'Senator at large' and approved by acclamation in the 16 November 2010 minutes.",
+       "src": {
+        "label": "SGA Senate minutes, 16 Nov 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/11-16.docx"
+       }
+      },
+      {
+       "name": "Josh Newman",
+       "seat": "Senator",
+       "note": "The 25 January 2011 minutes record 'Josh Newman' speaking on the DUC renovation project during open discussion; 'Newman' is listed among the Absent Senators in the 26 October 2010 minutes.",
+       "src": {
+        "label": "SGA Senate minutes, 25 Jan 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/january25.doc"
        }
       },
       {
@@ -35889,6 +35952,60 @@
        "src": {
         "label": "SGA Senate minutes, 28 Sep 2010",
         "url": "https://www.wku.edu/sga/uploads/minutes/2010/sept28.doc"
+       }
+      },
+      {
+       "name": "Lauren Riggs",
+       "seat": "Senator",
+       "note": "The Judicial Council report in the 26 October 2010 minutes stated that Lauren Riggs officially resigned the previous week; 'Riggs' had appeared on the Absent Senators list at every meeting from 7 September through 12 October 2010, but was not listed absent (or otherwise mentioned) on 19 October 2010, the week before her resignation was reported.",
+       "src": {
+        "label": "SGA Senate minutes, 26 Oct 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/10-26.docx"
+       }
+      },
+      {
+       "name": "Daniel Shaw",
+       "seat": "Senator",
+       "note": "The 7 December 2010 minutes record 'Senator Shaw' motioning to table the DUC Renovation Resolution (04-10-F) indefinitely; his full name appears elsewhere in the same minutes corpus (e.g. the 21 September 2010 minutes name him 'Daniel Shaw'), and by 8 February 2011 he was recorded as Public Relations Committee 'Chair Elect.'",
+       "src": {
+        "label": "SGA Senate minutes, 7 Dec 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/december7.docx"
+       }
+      },
+      {
+       "name": "Paul Shively",
+       "seat": "Senator",
+       "note": "The 7 December 2010 minutes record 'Senator Shively' asking a technical question during debate on the DUC Renovation Resolution; his full name appears in the same minutes corpus reporting for the Senate Executive Committee (5 October and 9 November 2010 minutes).",
+       "src": {
+        "label": "SGA Senate minutes, 7 Dec 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/december7.docx"
+       }
+      },
+      {
+       "name": "David Spalding",
+       "seat": "Senator",
+       "note": "Sworn in as a senator by President Jessie on 8 February 2011, alongside Brittany Crowley and Chad Winston.",
+       "src": {
+        "label": "SGA Senate minutes, 8 Feb 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/february8.doc"
+       }
+      },
+      {
+       "name": "Travis Taylor",
+       "seat": "Senator",
+       "note": "The 7 December 2010 minutes have him deliver the Academic Affairs Committee report as 'Travis Taylor' and, at the same meeting, record 'Senator Taylor' motioning to bring Bills 20-10-F and 21-10-F to the floor and delivering their author's speeches; the author's speech for Bill 23-10-F later that night is credited to 'Travis Taylor' by full name rather than to 'Senator Taylor.'",
+       "src": {
+        "label": "SGA Senate minutes, 7 Dec 2010",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/december7.docx"
+       }
+      },
+      {
+       "name": "Chad Winston",
+       "seat": "Senator",
+       "note": "Sworn in as a senator by President Jessie on 8 February 2011, alongside Brittany Crowley and David Spalding.",
+       "src": {
+        "label": "SGA Senate minutes, 8 Feb 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2010/february8.doc"
        }
       }
      ]
@@ -36517,12 +36634,174 @@
      ],
      "members": [
       {
+       "name": "Kevin Adams",
+       "seat": "Senator",
+       "note": "Named in full by Judicial Council member Chris Jankowski as one of two senators removed from the senate for failing to attend an absence-review hearing, reported to the Senate on 1 November 2011 (\"we reviewed thirteen senators and ended up removing Kevin Preston and Kevin Adams\"). Corroborates the dismissal already noted on Chief Justice Spalding's entry. Reappointed as a senator at large on 28 February 2012 and remained active in debate through the spring.",
+       "src": {
+        "label": "SGA Senate minutes, 1 Nov 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2011/11-1-11.doc"
+       }
+      },
+      {
+       "name": "Cain Alvey",
+       "seat": "Senator",
+       "note": "Accepted as a senator alongside Andreu Edge on a motion passed 15 November 2011 and sworn in the same night by Chief Justice Spalding. Went on to serve as administrative vice president in 2012-13 (already recorded separately for that year).",
+       "src": {
+        "label": "SGA Senate minutes, 15 Nov 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2011/11-15-11.doc"
+       }
+      },
+      {
+       "name": "Mallory Chaney",
+       "seat": "Senator",
+       "note": "Introduced herself as the incoming 2012-13 Campus Improvements committee chair on 28 August 2012, saying \"Last year I was a senator.\" The minutes record a \"Senator Chaney\" offering a friendly amendment on 14 February 2012, consistent with this self-description.",
+       "src": {
+        "label": "SGA Senate minutes, 28 Aug 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/8-28-12.doc"
+       }
+      },
+      {
+       "name": "Hannalore Clause",
+       "seat": "Senator",
+       "note": "Accepted as a senator on a motion by Senator Cottrell on 18 October 2011, filling the Gatton Academy Senator-at-Large seat, and sworn in the same night by Chief Justice Spalding. The document itself spells the name both \"Hannalore Clause\" and \"Hannahlore Clause\"; spelling unverified.",
+       "src": {
+        "label": "SGA Senate minutes, 18 Oct 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2011/10-18-11.docx"
+       }
+      },
+      {
+       "name": "Tori Conyers",
+       "seat": "Senator",
+       "note": "Approved as a senator at large in a blanket vote on 28 February 2012, alongside JD Shadburne, Hayley Wilkins, Catherine Havel, Richard Crumbie and Kevin Adams. No further record of her in the corpus.",
+       "src": {
+        "label": "SGA Senate minutes, 28 Feb 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/2-28-12.doc"
+       }
+      },
+      {
+       "name": "Christopher Costa",
+       "seat": "Senator",
+       "note": "Active as a senator throughout 2011-12, frequently speaking in floor debate and moving procedural motions. The Senate elected him speaker for 2012-13 at the meeting of 17 April 2012, where President Stephens congratulated \"Chris Costa\" by name, tying this document's \"Senator Costa\" to the full name Christopher Costa already recorded as 2012-13 speaker.",
+       "src": {
+        "label": "SGA Senate minutes, 17 Apr 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/4-17-12.doc"
+       }
+      },
+      {
+       "name": "Richard Crumbie",
+       "seat": "Senator",
+       "note": "Approved as a senator at large in a blanket vote on 28 February 2012, alongside JD Shadburne, Hayley Wilkins, Catherine Havel, Tori Conyers and Kevin Adams. Spoke in favor of the gender-neutral housing resolution on 1 May 2012, saying the senate should vote for what students need. Continued as a senator into 2012-13 (recorded separately for that year).",
+       "src": {
+        "label": "SGA Senate minutes, 28 Feb 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/2-28-12.doc"
+       }
+      },
+      {
+       "name": "Andreu Edge",
+       "seat": "Senator",
+       "note": "Accepted as a senator alongside Cain Alvey on a motion passed 15 November 2011 and sworn in the same night by Chief Justice Spalding. Continued speaking in floor debate that spring, including questioning funding for the Invisible Children \"Cover the Night\" bill on 17 April 2012.",
+       "src": {
+        "label": "SGA Senate minutes, 15 Nov 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2011/11-15-11.doc"
+       }
+      },
+      {
+       "name": "Hannah Garland",
+       "seat": "Senator",
+       "note": "Active as \"Senator Garland\" through spring 2012, including offering a friendly amendment on 21 February 2012. Full name confirmed via Hannah Garland, who introduced herself that August as the incoming 2012-13 Academic Affairs committee chair; no other Garland appears in the corpus.",
+       "src": {
+        "label": "SGA Senate minutes, 21 Feb 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/2-21-12.doc"
+       }
+      },
+      {
+       "name": "Catherine Havel",
+       "seat": "Senator",
+       "note": "Approved as a senator at large in a blanket vote on 28 February 2012, alongside JD Shadburne, Hayley Wilkins, Richard Crumbie, Tori Conyers and Kevin Adams. Continued as an active senator into May, questioning the gender-neutral housing resolution on 1 May 2012.",
+       "src": {
+        "label": "SGA Senate minutes, 28 Feb 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/2-28-12.doc"
+       }
+      },
+      {
        "name": "John Hughes",
        "seat": "Senator",
        "note": "Accepted as a senator on a motion by Senator Patel on 27 September 2011 and sworn in the same night by Chief Justice Spalding.",
        "src": {
         "label": "SGA Senate minutes, 27 Sep 2011",
         "url": "https://www.wku.edu/sga/uploads/minutes/2011/9-27-11.docx"
+       }
+      },
+      {
+       "name": "Mac Mullins",
+       "seat": "Senator",
+       "note": "Named as \"Mac Mullins\" in Secretary Calhoun's announcement urging students to support him, Cory Dodds and Billy Stephens at a game; the same 14 February 2012 meeting's minutes record \"Senator Mullins\" moving to adjourn, tying the two together. Active as a senator through spring 2012 before chairing the Public Relations committee in 2012-13 (already recorded separately for that year).",
+       "src": {
+        "label": "SGA Senate minutes, 14 Feb 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/2-14-12.doc"
+       }
+      },
+      {
+       "name": "Josh Newman",
+       "seat": "Senator",
+       "note": "President Stephens said \"Josh Newman is on the committee\" during debate on Bill 7-11-F on 25 October 2011, and Senator Newman spoke immediately afterward in the same exchange, tying the full name to the senator title.",
+       "src": {
+        "label": "SGA Senate minutes, 25 Oct 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2011/10-25-11.docx"
+       }
+      },
+      {
+       "name": "Kevin Preston",
+       "seat": "Senator",
+       "note": "Named in full by Judicial Council member Chris Jankowski as one of two senators removed from the senate for failing to attend an absence-review hearing, reported to the Senate on 1 November 2011 (\"we reviewed thirteen senators and ended up removing Kevin Preston and Kevin Adams\"). Corroborates the dismissal already noted on Chief Justice Spalding's entry. A \"Senator Preston\" gave an officer announcement on 6 September 2011, before the dismissal. No further record of him in the corpus after 1 November 2011; later mentions of \"Preston\" in the corpus refer to the Preston Center building, not this person.",
+       "src": {
+        "label": "SGA Senate minutes, 1 Nov 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2011/11-1-11.doc"
+       }
+      },
+      {
+       "name": "Josh Rodriguez",
+       "seat": "Senator",
+       "note": "Named by Speaker Egerer in her officer report on 1 November 2011 (\"Josh Rodriguez got his braces off\"). A \"Senator Rodriguez\" is recorded speaking repeatedly in floor debate the following week, including the DUC name-change debate on 8 November 2011; no other Rodriguez appears in the corpus, and the two mentions are a week apart.",
+       "src": {
+        "label": "SGA Senate minutes, 1 Nov 2011",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2011/11-1-11.doc"
+       }
+      },
+      {
+       "name": "JD Shadburne",
+       "seat": "Senator",
+       "note": "Approved as a senator at large in a blanket vote on 28 February 2012, alongside Hayley Wilkins, Catherine Havel, Richard Crumbie, Tori Conyers and Kevin Adams. Continued moving Senate business as \"Senator Shadburne\" through the spring, including Bill 20-12-S on 24 April 2012.",
+       "src": {
+        "label": "SGA Senate minutes, 28 Feb 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/2-28-12.doc"
+       }
+      },
+      {
+       "name": "Daniel Shaw",
+       "seat": "Senator",
+       "note": "Named as the author of the Campus Improvements committee's legislation in Keyana Boka's committee report on 14 February 2012 (\"written by Daniel Shaw\"). A \"Senator Shaw\" is one of the most frequent speakers in floor debate throughout 2011-12, moving amendments and questioning bills at nearly every meeting.",
+       "src": {
+        "label": "SGA Senate minutes, 14 Feb 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/2-14-12.doc"
+       }
+      },
+      {
+       "name": "Eric Smiley",
+       "seat": "Senator",
+       "note": "Introduced himself to the senate on 27 March 2012 as the nominee for chief of staff, saying he had been chief of staff in 2009-10 \"and then served as a senator the next year.\" A \"Senator Smiley\" is recorded moving and debating senate business through the fall of 2011 (e.g., moved to adjourn on 4 October 2011, questioned a bill on 15 November 2011), and no other Smiley appears in the corpus. Became chief of staff for the rest of 2011-12 succeeding Katie Stillwell (already recorded).",
+       "src": {
+        "label": "SGA Senate minutes, 27 Mar 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/3-27-12.doc"
+       }
+      },
+      {
+       "name": "Hayley Wilkins",
+       "seat": "Senator",
+       "note": "Approved as a senator at large in a blanket vote on 28 February 2012, alongside JD Shadburne, Catherine Havel, Richard Crumbie, Tori Conyers and Kevin Adams. Introduced herself on 28 August 2012 as the incoming 2012-13 Public Relations committee chair, saying \"I was a senator last semester.\" Mac Mullins had taken over as Public Relations chair by February 2013, so she held the post for only part of 2012-13.",
+       "src": {
+        "label": "SGA Senate minutes, 28 Feb 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/2-28-12.doc"
        }
       }
      ]
@@ -37134,6 +37413,15 @@
      ],
      "note": "Constitutional amendments passed 26 Feb 2013 replaced class-year senate seats with college-based representation and added guaranteed seats for the Glasgow and Owensboro regional campuses.",
      "members": [
+      {
+       "name": "Richard Crumbie",
+       "seat": "Senator",
+       "note": "A \"Senator Crumbie\" moved to approve the meeting's minutes on 18 September 2012; only the surname appears in 2012-13 documents. The full name rests on continuity with 2011-12, where \"Richard Crumbie\" was named in full as a senator at large approved 28 February 2012, continuing in the same kind of seat at the very start of the next academic year.",
+       "src": {
+        "label": "SGA Senate minutes, 18 Sep 2012",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2012/9-18-12.docx"
+       }
+      },
       {
        "name": "Poorvie Patel",
        "seat": "Senator",
