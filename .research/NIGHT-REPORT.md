@@ -3450,3 +3450,83 @@ while its OAI metadata and its gallery images stayed open.
 carrying a written profile, 135 photographs (79 leader portraits, 56 year photographs),
 285 documents mirrored, 1,111 legislation files, 1,587 pages built. build.py, check_data.py,
 check_contrib.py and check_duplicates.py all clean at the close of the run.
+
+---
+
+# 22 August 2026, small hours
+
+Two research pull requests open, both cut from the current head of main, both merged.
+The three branches that had been open since 4 August — #6 photographs, #7 the 1980s,
+#8 the 2020s — are gone, closed before this pass began. Nothing is stale.
+
+## Merged
+
+**#111, the senate rolls.** Eight senators added to 2019-20's roll — Bradon Burks,
+Destinee Daugherty, Krystin Hardin, MJ Mayo, Dawson McCoun, Kyle Phillips, Parker
+Raybourne and Elias Thompson. There were only eight new claims, so rather than sample
+them I opened every source. SGA's own minutes of 22 and 29 October 2019, 4 February,
+25 February and 3 March 2020 carry all of them by name and by title, and the Herald of
+26 February 2020 carries the confirmation vote. Raybourne was seated 24-3-1 after
+senators questioned his legislative record and his party membership, and the Speaker
+ruled the partisan questioning out of order; the entry says so, and says he was seated.
+Kat Howard and Jamison Moorehead were confirmed the same night as committee chairs and
+were correctly left among the officers rather than promoted to senators, which is the
+error that has killed more claims on this project than any other.
+
+**#112, person profiles.** Twenty-one officers who until now carried an office and a
+citation and nothing else now carry an account of what they did: the Judicial Council
+seated in August 1978, the parliamentarian and sergeant-at-arms of April 1982, the
+committee chairs under Stephanie Cosby in 1998-99 and under Leslie Bedo in 2001-02, and
+the parliamentarian approved in September 2002.
+
+`cgi/viewcontent.cgi` is still answering with a 202 challenge, so the minutes PDFs behind
+these citations could not be opened from this session, by me or by the routine. The
+landing pages could. So the test that fitted this branch was not whether the PDF says it,
+but whether the profile says more than the note it was written from — which matters here
+more than it looks, because `build.py` prints the profile *instead of* the note on a
+person page. A profile that drops a fact deletes it from the site. All twenty-one were
+diffed against the note, office and citation already on main. Twenty carried everything
+across and invented nothing.
+
+## Cut
+
+**The argument from silence in Steve Wilson's account.** The profile explained his
+succession to the Judicial Council chairmanship by writing that "the dates align and no
+other ASG post for Moore is recorded that year." The succession is not new and was left
+alone; the reasoning was cut. This archive's own rule is that a gap in the record is not
+evidence of absence and can never be the grounds for a claim, and a reader of a profile
+cannot tell an inference from a finding. The account now gives the vote of 30 to 3,
+Thornton's announcement of the vacancy, the Herald's report of 14 September 1978, and the
+succession, and says plainly that no source connects Moore's departure to the opening.
+
+**A spelling settled that should not have been.** The Herald of 26 February 2020 spells
+the new senator Daugherty. The Senate's own minutes of the meeting the night before spell
+her Daughtery. The entry had quietly followed the newspaper. Both spellings are now in
+the record and neither is chosen.
+
+## Still open
+
+The duplicate problem described on 21 August is untouched and still real.
+`check_duplicates.py` compares titles, so it cannot see the roughly twenty genuine
+duplicates that share a date and a source URL but were written up in different words. It
+needs a body-similarity mode. Until it has one every routine is working without the tool
+meant to catch this, and the six pairs it does report — an introduction and its later
+vote, or three separate bills filed on 1 September 1991 — are all correctly distinct and
+will be reported again every night.
+
+Five of the twenty-one new profiles, the 1978-79 Judicial Council members, are the same
+sentence with the name changed and say nothing their own heading does not. They are true,
+so they stand, but a profile that restates its heading is not worth a run.
+
+`Me'Lon Craighead` was confirmed a senator on the same night as the eight in #111 and was
+already on the roll. `Joe Murrell` and the `Joe Morel` who moved the adjournment in
+January and April 1999 are still unreconciled, as is `Krystin Hardin` against the
+`Senator Hard` of the 3 March 2020 minutes. None of these should be guessed at.
+
+## Where the archive stands
+
+61 academic years, 2,022 dated and sourced entries, 73 leader records, 553 records
+carrying a written profile, 135 photographs (79 leader portraits, 56 year photographs),
+285 documents mirrored, 1,111 legislation files, 1,853 pages built. build.py,
+check_data.py, check_contrib.py and check_duplicates.py all clean at the close of the run.
+No pull requests left open.
