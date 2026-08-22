@@ -3651,3 +3651,126 @@ a written profile, 135 photographs (79 leader portraits, 56 year photographs), 2
 documents mirrored, 1,111 legislation files, 1,855 pages built. build.py, check_data.py,
 check_contrib.py and check_duplicates.py all clean at the close of the run. No pull
 requests left open.
+
+---
+
+# 22 August, the morning pass
+
+Two pull requests open, both from the small hours of the same morning, both merged after
+cuts. GitHub was reachable this run.
+
+## Research: person profiles (#119)
+
+Ten officers of the late 1970s through the mid 1990s, and then, in a commit pushed after
+the run wrote its own report, the thirteen remaining 1967-68 congressmen and class
+officers.
+
+I opened seventeen claims against the sources they cite rather than the researcher's
+paraphrase, and every one of them held. Dean Bates's byline on "Coffee House a Success",
+Terri Craig's election to the SGAK Executive Council alongside Steve Thornton, the opinion
+pieces by Erica Card, Elizabeth Fauver, Trent Lyda and David Serafini, and all three
+February 1994 Herald items on Angelo Rodriguez trading places with Thomas Meredith. The
+1967-68 roster is mirrored in `data/documents/`, so all thirteen seats were checked against
+the primary text, down to Keith Petrie on the Student Activities Committee and Susan
+Streible on the Executive Committee. Johnny Graham's absence from the roll of 13 February
+1969 is in the mirrored minutes, in as many words.
+
+The batch handled the advance-notice trap correctly, which is worth saying: the Herald ran
+Tonya Root's preview of the Meredith swap on 17 February and her reports of it on the 22nd
+and 24th, and the profile distinguishes them.
+
+Four things came out before it went to main.
+
+Betty Thompson's second paragraph. I read the 1980 Talisman on archive.org and it says
+exactly what the profile said it says — a Betty Thompson of Bowling Green, Chi Omega,
+crowned Homecoming Queen by Zacharias, a twirler at halftime. Nothing ties her to the ASG
+secretary. The paragraph ended by admitting as much, and that admission is the argument for
+cutting it, not for keeping it with a caveat: ninety words of a stranger's private life,
+none of it about the office, published under an officer's name.
+
+The claim that no other record of the officer survives in this archive, from all thirteen
+1967-68 profiles. The archive cannot show that. `herald-index-full.json` cuts every line at
+300 characters and a third of its lines are truncated mid-headline, so a miss in it proves
+nothing — and the risk is live here rather than theoretical, because a Mike McDaniel carries
+a Herald byline in the very issue of 29 April 1968 that this batch cites for Graham.
+
+Johnny Graham's inference that the Graham on the April 1968 senior ballot was the sitting
+junior class vice president. The Herald says a Johnny Graham was on that ballot and no more.
+I cited the 13 February 1969 minutes on the entry that asserts the roll call, which was
+traceable in the file but not cited where a reader would look.
+
+And a date. Dean Bates's profile put the Regents' handover of campus entertainment to the
+University Center Board in "the previous spring". It was 31 March 1979, three weeks before
+the swearing-in the same sentence describes. Corrected against settled fact 7, with the
+Talisman senior listing his profile leans on now cited.
+
+Two more of these negative assertions, on Rebecca Hack and Andrea Cailles, were phrased
+differently enough to survive my first sweep and reached main before I caught them. They
+came out on the next branch, along with Janie Heathcoat's, which was already there.
+
+## Research: the backlog (#120)
+
+The run took the last open item in section 8.3: sixty-one names in the 1992-93 Congress roll
+that had been merged on a night when the minutes PDFs were unreachable and were never read
+against the meetings they cite. All eighteen documents came down and all sixty-one held.
+Andrea Cailles joins the roll as its sixty-seventh member, a gap the officer record had been
+pointing at all along.
+
+The branch was well behind main. I merged main in first; only the generated `site/` files
+conflicted and rebuilding resolved them. `data/years.json` merged cleanly, and the two
+pull requests turned out to fit together rather than fight: #119 narrowed the Cailles
+officer note to the August chairmanship it cites, and #120 put the February seating where
+it belongs, in the membership.
+
+One trim. The Cailles member note carried the absence roll of 6 April 1993 under a citation
+pointing at the minutes of 9 February. I do not doubt the fact — the run read the document,
+and the April minutes are cited elsewhere in the same year — but a reader following that
+link cannot check that date, and it is the same fault #119's own verifier trimmed out of
+David Serafini's entry hours earlier.
+
+`viewcontent.cgi` was serving the bot-check page by the time I reached it, so the 1992-93
+primary text was not re-readable on this pass. Landing-page abstracts, the mirrored
+documents already in the repository and the surrounding record are what I could check.
+
+## Found while checking
+
+`build.py` drops `profile` and `src2`..`src20` from Senate member entries. `officer_index()`
+rebuilds each member as a bare name, office, note and src before it reaches the person page.
+Eleven member profiles and five sets of extra citations are sitting in `years.json` right
+now, written by earlier runs and never published. That is section 6 trap 7 exactly — output
+that reports success and produces nothing.
+
+I did not fix it tonight. Surfacing eleven unreviewed paragraphs onto the live site is a
+publishing decision rather than a build fix, and it should go through a review pass on its
+own. Recorded in section 8.3 with the working rule in the meantime: a member entry gets one
+source, and its note stays inside what that one source shows.
+
+Twenty-three "no record survives" assertions from earlier runs are still on the live site,
+outside tonight's diffs. Each needs judging on whether a real search stands behind it, so a
+blanket strip is the wrong instrument and I have not attempted one. It deserves a pass of
+its own.
+
+Both research branches carry their commits under a tool's name in the git author field.
+Squashing on merge keeps that out of main's history, which is where it matters, but it is
+visible on the branches.
+
+Worth having and left for the routine rather than researched from this chair: the 1980
+Talisman describes Dean Bates as chairman of the University Center Board's lecture and
+contemporary music committee and quotes him on the Spyro Gyra concert that lost $3,500 in
+November 1979. That sits directly on top of his ASG activities portfolio.
+
+## Still open
+
+The duplicate pairs are the same six as yesterday and the day before. All correctly
+distinct: a bill introduced and the same bill failing, a lawsuit planned and then endorsed,
+a position taken and then legislated, three bills filed on one day. They will be reported
+again tomorrow. Everything under "Still open" in the 22 August small-hours entry stands
+unchanged.
+
+## Where the archive stands
+
+61 academic years, 2,021 dated and sourced entries, 73 leader records, 578 records carrying
+a written profile, 135 photographs (79 leader portraits, 56 year photographs), 288 documents
+mirrored, 1,111 legislation files, 1,855 pages built. build.py, check_data.py,
+check_contrib.py and check_duplicates.py all clean at the close of the run. No pull requests
+left open.
