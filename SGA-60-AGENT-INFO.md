@@ -733,12 +733,17 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    split on `2022-23/sga_bill_1_22_f.pdf` (Cole Bornefeld, Garrison Reed, Sam
    Kurtz, Lauren Willett, Preston Romanov, Donte' Reed, Aniya Johnson) and a
    3-way split on `2016-17/resolution_10-17-s.pdf`. One case was refused
-   rather than resolved on principle: `2023-24/bill_13_24_s.pdf`'s garbled
-   sponsor row traces to nothing but a bare email address,
-   `Mildred.hagood@wku.edu`, with no adjoining name text anywhere in the
-   document — reconstructing "Mildred Hagood" from the login alone would be
-   invention, not confirmation, so that row was deleted with nothing added
-   back.
+   rather than resolved: `2023-24/bill_13_24_s.pdf`'s garbled sponsor row
+   ended in the stray word "Mildred", picked up from the contact's email
+   address `Mildred.hagood@wku.edu`. Reconstructing "Mildred Hagood" from a
+   login would have been invention, so the row was deleted with nothing added
+   back — correctly, because the contact's printed name, "Millie Glessner,
+   WKU Dental Hygiene Clinic Office Manager", sits on the line above the
+   address and was already recorded. (Checked on review, 22 August: the same
+   holds for every one of the nine rows deleted outright in this pass. Each
+   was a garbled duplicate standing beside a correct row that already named
+   the person — Millie Glessner, Elizabeth Madariaga, Grace Herrmann, Claire
+   Kaelin, Gerita Cook. No attribution was lost by deleting them.)
 
    A separate adversarial verifier subagent then independently re-opened all
    37 source PDFs itself, fresh, without reading the first pass's reasoning,
