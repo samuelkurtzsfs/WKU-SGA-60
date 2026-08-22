@@ -1704,8 +1704,12 @@
       "name": "Chris Grau",
       "note": "SPELLING UNVERIFIED, do not publish without a second look. The 1969 Talisman's Associated Students spread carries the line Chris Grau, Office Secretary beside the officers, and the Congress minutes of 13 February 1969 are signed off by a hand the scan renders as Christina L. Graue. This is a clerical post held alongside, not instead of, the elected secretary Becky Cooper.",
       "src": {
-       "label": "UA12/2/2 1969 Talisman pt. 1, Associated Students section; and SGA Meeting Minutes, 13 February 1969",
+       "label": "UA12/2/2 1969 Talisman pt. 1, Associated Students section",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
+      },
+      "src2": {
+       "label": "SGA Meeting Minutes, 13 Feb 1969",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
       }
      }
     ],
@@ -18032,7 +18036,10 @@
        "src": {
         "label": "ASG Minutes, 17 Sep 1991",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/384"
-       }
+       },
+       "profile": [
+        "Ade was elected secretary of the Campus Improvement Committee at the Associated Student Government's meeting of 17 September 1991."
+       ]
       }
      ],
      "members": [
@@ -19026,7 +19033,10 @@
        "src": {
         "label": "SGA Minutes, 25 Aug 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/414"
-       }
+       },
+       "profile": [
+        "Smith was named chair of the Academic Affairs committee at the SGA meeting of 25 August 1992."
+       ]
       },
       {
        "office": "Chair, Ad Hoc Student Health Insurance Committee",
@@ -19061,7 +19071,10 @@
        "src": {
         "label": "SGA Minutes, 16 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/430"
-       }
+       },
+       "profile": [
+        "Miller succeeded Trent Lyda as SGA's City Council representative, giving the Congress's City Council report at the meeting of 16 February 1993."
+       ]
       }
      ],
      "members": [
@@ -21072,7 +21085,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 30 Aug 1994",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/103"
-       }
+       },
+       "profile": [
+        "Hancock is recorded as a member of the Judicial Council as of the SGA meeting of 30 August 1994."
+       ]
       },
       {
        "office": "Parliamentarian",
@@ -21997,7 +22013,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 29 Aug 1995",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/131"
-       }
+       },
+       "profile": [
+        "Swanson was announced as chair of the Academic Affairs Committee for the year at the SGA meeting of 29 August 1995. By the committee's report to Congress on 14 November 1995, David Apple was chairing it instead; the record does not show when or why the chairmanship changed hands."
+       ]
       },
       {
        "office": "Chairperson, Academic Affairs Committee",
@@ -22075,7 +22094,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 14 Nov 1995",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/140"
-       }
+       },
+       "profile": [
+        "Hadnot chaired the Cultural Diversity Committee, new that autumn, and reported to Congress on 14 November 1995 that it was drafting legislation for Black History Month."
+       ]
       },
       {
        "office": "Chairperson, Cultural Diversity Committee",
@@ -22084,7 +22106,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 5 Mar 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/154"
-       }
+       },
+       "profile": [
+        "Carter was chairing the Cultural Diversity Committee by 5 March 1996, when she reported to Congress that she was working on a forum about conflict between black women and white women."
+       ]
       }
      ],
      "members": [
@@ -23079,7 +23104,11 @@
        "src": {
         "label": "SGA Meeting Minutes, 27 Aug 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/562"
-       }
+       },
+       "profile": [
+        "Apple chaired the Academic Affairs Committee across two years running. By November 1995 he was reporting for the committee, which by then had passed from Terra Swanson's initial August appointment to him; on 14 November 1995 he reported legislation on internet hours. He continued as Academic Affairs chair into the following year, named again to the post at the SGA meeting of 27 August 1996.",
+        "In 1997-98 Apple sat on the Judicial Council instead. At the SGA meeting of 21 April 1998 he announced from the floor the results of that spring's primary election, reporting vote totals of Brad Sweatt 140, Amy France 95 and Christoph Miller 72."
+       ]
       },
       {
        "office": "Chairperson, Student Affairs Committee",
@@ -23109,7 +23138,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 21 Jan 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559"
-       }
+       },
+       "profile": [
+        "Congress accepted Gailor as chair of the Legislative Research Committee on 21 January 1997; he also served as SGA's City Commission representative that year. He continued as Legislative Research chair into 1997-98, and on 18 November 1997 reported that the committee had reviewed eleven pieces of legislation that session, voting down Resolution 97-17-F and untabling Resolution 97-10-F."
+       ]
       },
       {
        "office": "Chairperson, Campus Improvements Committee",
@@ -24491,7 +24523,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 21 Apr 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/184"
-       }
+       },
+       "profile": [
+        "Boyer is recorded as a guest of Congress alongside the other Judicial Council members at the meeting of 21 April 1998."
+       ]
       },
       {
        "office": "Judicial Council Member",
@@ -24500,7 +24535,11 @@
        "src": {
         "label": "SGA Meeting Minutes, 21 Apr 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/184"
-       }
+       },
+       "profile": [
+        "Apple chaired the Academic Affairs Committee across two years running. By November 1995 he was reporting for the committee, which by then had passed from Terra Swanson's initial August appointment to him; on 14 November 1995 he reported legislation on internet hours. He continued as Academic Affairs chair into the following year, named again to the post at the SGA meeting of 27 August 1996.",
+        "In 1997-98 Apple sat on the Judicial Council instead. At the SGA meeting of 21 April 1998 he announced from the floor the results of that spring's primary election, reporting vote totals of Brad Sweatt 140, Amy France 95 and Christoph Miller 72."
+       ]
       },
       {
        "office": "Judicial Council Member",
@@ -24555,7 +24594,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 18 Nov 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/163"
-       }
+       },
+       "profile": [
+        "Congress accepted Gailor as chair of the Legislative Research Committee on 21 January 1997; he also served as SGA's City Commission representative that year. He continued as Legislative Research chair into 1997-98, and on 18 November 1997 reported that the committee had reviewed eleven pieces of legislation that session, voting down Resolution 97-17-F and untabling Resolution 97-10-F."
+       ]
       },
       {
        "office": "Chairperson, Legislative Research Committee",
@@ -46872,7 +46914,10 @@
       "src": {
        "label": "SGA legislation: Funding for the Mental Health Awareness Week in April 2023",
        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_46_23_s.pdf"
-      }
+      },
+      "profile": [
+       "Brooke Mitchell was one of seven listed authors of Bill 46-23-S, credited as a Mental Health and Wellbeing Committee Member alongside committee chair Olivia Feck and five senators. Read to the Senate and passed unanimously at its 11 April 2023 meeting, the bill allocated $550 from the Legislative Discretionary Fund to a week of Mental Health Awareness Week programming, 23-28 April 2023: an Out of the Darkness suicide-awareness walk, tabling events, a guest-speaker talk with Dr. Jay Gabbard, and a group yoga session at the Preston Center."
+      ]
      },
      {
       "office": "Secretary of the",
