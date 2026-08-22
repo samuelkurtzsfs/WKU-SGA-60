@@ -32886,7 +32886,7 @@
        ]
       }
      ],
-     "size": 31,
+     "size": 35,
      "committees": [
       {
        "name": "Academic Affairs",
@@ -32919,8 +32919,16 @@
        "note": "Unfilled at the 5 Sep. 2006 opening meeting; Shelton chaired it by the 28 Nov. and 5 Dec. 2006 meetings."
       }
      ],
-     "note": "Jeanne Johnson served as a fill-in leader after Watkins' resignation and was elected president in her own right for 2007-08 at the May 2007 banquet. Senate size, officers and committee chairs per the 28 Nov. 2006 meeting minutes; 22 of 31 senators were present that night. The senate opened the year on 5 Sep. 2006 with 18 seats and 8 senators present, swearing in eight more that night; it had grown to 31 seats, 22 present, by 28 Nov. 2006. Jeanne Johnson served as executive vice president from the 5 Sep. 2006 opening meeting until Watkins's resignation, then as a fill-in leader before her own election in 2007-08.",
+     "note": "Jeanne Johnson served as a fill-in leader after Watkins' resignation and was elected president in her own right for 2007-08 at the May 2007 banquet. Senate size, officers and committee chairs per the 28 Nov. 2006 meeting minutes; 22 of 31 senators were present that night. The senate opened the year on 5 Sep. 2006 with 18 seats and 8 senators present, swearing in eight more that night; it had grown to 31 seats, 22 present, by 28 Nov. 2006. Jeanne Johnson served as executive vice president from the 5 Sep. 2006 opening meeting until Watkins's resignation, then as a fill-in leader before her own election in 2007-08. Growth continued into the spring: the minutes of 30 Jan. 2007 record the chamber reaching \"a full senate\" after eleven more were sworn in, and every dated roll call from 30 Jan. through at least 17 Apr. 2007 counts the chamber as 35 seats, the figure this record now uses.",
      "members": [
+      {
+       "name": "Christina Allen",
+       "note": "Approved by the Senate and sworn in by Justice Brian Fischer at the seventh meeting, 17 October 2006. The 24 October minutes list her again among that night's new senators, apparently repeating the earlier business rather than a second swearing.",
+       "src": {
+        "label": "SGA Minutes, 17 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/701"
+       }
+      },
       {
        "name": "Chris Anderson",
        "seat": "Senator",
@@ -32928,6 +32936,22 @@
        "src": {
         "label": "SGA Meeting Minutes, 5 Sep 2006",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+       }
+      },
+      {
+       "name": "Rob Anderson",
+       "note": "One of eighteen sworn in to the Student Senate at the fifth meeting of the fifth SGA, 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Keri N. Anderson",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
        }
       },
       {
@@ -32940,12 +32964,164 @@
        }
       },
       {
+       "name": "Wes Calhoun",
+       "note": "Appointed to the Student Senate and sworn in under the Oath of Office on 6 February 2007.",
+       "src": {
+        "label": "SGA Minutes, 6 February 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/721"
+       }
+      },
+      {
+       "name": "Sarah Collins",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Toni Corella",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Christian Cullip",
+       "note": "Sworn in to the Student Senate 3 October 2006, printed \"Christian Cullip\". The 12 September minutes, three weeks earlier, name a \"Christian Cullig\" as Public Relations Chair nominee, marked not present; whether this is the same person, and how that predates his Senate oath, is not established here. Flagging the spelling discrepancy.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Natalie Denney",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
        "name": "Diane DeRosa-Reynolds",
        "seat": "Senator",
        "note": "Sworn in to the Senate on 5 September 2006; moved the previous question during the 28 November legislative session.",
        "src": {
         "label": "SGA Meeting Minutes, 5 Sep 2006",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+       }
+      },
+      {
+       "name": "William Doolin",
+       "note": "Appointed to the Student Senate and sworn in under the Oath of Office on 27 February 2007.",
+       "src": {
+        "label": "SGA Minutes, 27 February 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/726"
+       }
+      },
+      {
+       "name": "Nathan Eaton",
+       "note": "Sworn in to the Student Senate 3 October 2006, printed \"Nathan Eaton\". The site's existing name-aliases file already maps this spelling, together with \"Nate Eaton\", to \"Nathan J. Eaton\" — the same person recorded as Campus Improvements Committee chair for 2006-07.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Joshua Fries",
+       "note": "Sworn in to the Student Senate 3 October 2006, printed \"Joshua Fries\". This may be the same person as \"Josh Fries\", already recorded as Public Relations Committee chair for 2006-07 from 30 January 2007; the minutes reviewed here do not state this explicitly.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Reagan Gilley",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006, printed \"Reagan Gilley\". Also recorded later as an executive officer for 2007-08 and 2008-09.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Megan Gorski",
+       "note": "Sworn in to the Student Senate 24 October 2006. The 17 October minutes nominating her garble the name as \"Amanda-Megan Gorksi\"; flagging the discrepancy.",
+       "src": {
+        "label": "SGA Minutes, 24 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/713"
+       }
+      },
+      {
+       "name": "Lhousseinene Guerwane",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007. No independent source was found in this pass to cross-check the spelling.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Theodore Harden",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Elizabeth Hennessey",
+       "note": "Sworn in to the Student Senate 24 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 24 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/713"
+       }
+      },
+      {
+       "name": "Leah Holliday",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Lucas Humble",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006; later Academic Affairs Committee head.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "John Michael Sigler II",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Glenn Fedor Jr.",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Tim Hill Jr.",
+       "note": "Sworn in to the Student Senate 3 October 2006, printed \"Tim Hill Jr.\" in the minutes. A \"Tim Hill\" chaired the Legislative Research Committee from the first meeting (5 September 2006) and resigned that chairmanship by 10 October; whether he and this \"Tim Hill Jr.\" are the same person referred to inconsistently, or two different people, is not established by the documents reviewed here. Flagging rather than asserting either way.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Gary Steven Taylor Jr.",
+       "note": "Sworn in to the Student Senate 3 October 2006. The 24 October minutes list him again among that night's swearing-in, apparently a clerical repetition rather than a second appointment.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
        }
       },
       {
@@ -32967,12 +33143,60 @@
        }
       },
       {
+       "name": "Sarah Ashley Lawrence",
+       "note": "Sworn in to the Student Senate at the second meeting of the fifth SGA, 12 September 2006.",
+       "src": {
+        "label": "SGA Minutes, 12 September 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/697"
+       }
+      },
+      {
+       "name": "Lindsay Lunderga",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007, printed \"Lindsay Lunderga\" in these minutes; a later document (SGA Minutes, 17 April 2007) spells the same senator's name \"Lindsay Lundergan\". Flagging the discrepancy.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Jamie Mann",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007, printed \"Jamie Mann\" in these minutes. Later documents (SGA Minutes, 6 February and 17 April 2007) consistently spell the name \"Jami Mann\". Flagging the discrepancy.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Blake McAlister",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Joseph Millhouse",
+       "note": "Approved for the Student Senate 30 January 2007 but not sworn in that night because he was absent; sworn in under the Oath of Office on 6 February 2007.",
+       "src": {
+        "label": "SGA Minutes, 6 February 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/721"
+       }
+      },
+      {
        "name": "Suzie Moghaddam",
        "seat": "Senator",
        "note": "Sworn in to the Senate at the first meeting, 5 September 2006.",
        "src": {
         "label": "SGA Meeting Minutes, 5 Sep 2006",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+       }
+      },
+      {
+       "name": "Bradley Morgan",
+       "note": "Sworn in to the Student Senate 24 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 24 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/713"
        }
       },
       {
@@ -32985,6 +33209,47 @@
        }
       },
       {
+       "name": "Danielle Pyle",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Melissa Rickman",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Cacy Schooler",
+       "seat": "Secretary of the Senate from 30 January 2007",
+       "note": "Sworn in to the Student Senate 24 October 2006; elected Secretary of the Senate on 30 January 2007, succeeding Cherieth Lineweaver.",
+       "src": {
+        "label": "SGA Minutes, 24 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/713"
+       }
+      },
+      {
+       "name": "Meggan Selzer",
+       "note": "Sworn in to the Student Senate at the eighth meeting, 24 October 2006. The 17 October minutes nominating her spell the name \"Meggan Seltzer\"; flagging the discrepancy.",
+       "src": {
+        "label": "SGA Minutes, 24 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/713"
+       }
+      },
+      {
+       "name": "Kayla Shelton",
+       "note": "Sworn in to the Student Senate 3 October 2006 under the minutes' own \"Senate Swearing In\" heading — but she had already been approved Student Affairs Committee chair on 12 September and reported again as chair that same 3 October night, before her recorded oath. The record does not explain the sequencing; an earlier, untranscribed swearing-in is possible but unconfirmed.",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
        "name": "Tori Theiss",
        "seat": "Senator; chair of the Campus Improvements committee by December 2006",
        "note": "Sworn in to the Senate on 5 September 2006; reported for Campus Improvements as its committee chair at the 5 December 2006 meeting.",
@@ -32994,12 +33259,44 @@
        }
       },
       {
+       "name": "Dajana Vasilijevic-Klingler",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007. No independent source was found in this pass to cross-check the spelling.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
+       "name": "Earlene Racquel Whitaker",
+       "note": "One of eighteen sworn in to the Student Senate 3 October 2006, printed \"Earlene Racquel Whitaker\"; later minutes call her \"Earlene Whitaker\".",
+       "src": {
+        "label": "SGA Minutes, 3 October 2006",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/705"
+       }
+      },
+      {
+       "name": "Sarah White",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
+       }
+      },
+      {
        "name": "Christa Wilcox",
        "seat": "Senator",
        "note": "Sworn in to the Senate on 5 September 2006; offered friendly amendments to legislation on 28 November.",
        "src": {
         "label": "SGA Meeting Minutes, 5 Sep 2006",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
+       }
+      },
+      {
+       "name": "Amr Yassein",
+       "note": "One of eleven senators sworn in under the Oath of Office on 30 January 2007. No independent source was found in this pass to cross-check the spelling.",
+       "src": {
+        "label": "SGA Minutes, 30 January 2007",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/840"
        }
       }
      ]
