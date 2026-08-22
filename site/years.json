@@ -898,7 +898,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "Mike McDaniel held one of the two Campus Representative At Large seats in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives. No other record of his time in office survives in this archive."
+       ]
       },
       {
        "office": "Campus Representative At Large",
@@ -907,7 +910,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "Keith Petrie held the other Campus Representative At Large seat in the 1967-68 Associated Student Government and was also one of the four members of the Student Activities Committee, per the same roster. No other record of his time in office survives in this archive."
+       ]
       },
       {
        "office": "Senior Class President",
@@ -930,7 +936,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "John Estill served as Senior Class Vice-President in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives. No other record of his time in office survives in this archive."
+       ]
       },
       {
        "office": "Senior Class Representative",
@@ -938,7 +947,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "Margaret Brockman held the Senior Class Representative seat in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives. No other record of her time in office survives in this archive."
+       ]
       },
       {
        "office": "Junior Class President",
@@ -956,6 +968,14 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       },
+       "profile": [
+        "Johnny Graham served as Junior Class Vice-President in the 1967-68 Associated Student Government. The Herald of 29 April 1968 reported the field for the senior class election narrowing to Graham and Mike Perry for the top senior office, consistent with a rising senior continuing on from a junior-class vice presidency the year before.",
+        "He was recorded absent from the roll at the Congress meeting of 13 February 1969."
+       ],
+       "src2": {
+        "label": "Herald 47:28, 29 Apr 1968, \"Field Narrows to Johnny Graham, Mike Perry for Top Senior Office\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9012"
        }
       },
       {
@@ -964,7 +984,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "Malcolm Arvin held the Junior Class Representative seat in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives. No other record of his time in office survives in this archive."
+       ]
       },
       {
        "office": "Sophomore Class President",
@@ -992,7 +1015,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "Paul Gaines served as Sophomore Class Vice-President in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives. No other record of his time in office survives in this archive."
+       ]
       },
       {
        "office": "Sophomore Class Representative",
@@ -1000,7 +1026,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "Harold Northam held the Sophomore Class Representative seat in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives. No other record of his time in office survives in this archive."
+       ]
       },
       {
        "office": "Interfraternity Council Rept.",
@@ -1017,7 +1046,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "Bob Fox held the Interfraternity Council seat in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives. No other record of his time in office survives in this archive."
+       ]
       },
       {
        "office": "Panhellenic Council Rept.",
@@ -1026,6 +1058,17 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
+       },
+       "profile": [
+        "Carmen Willoughby served as secretary of the first Associated Student Congress in 1966-67, then returned for 1967-68 in a Panhellenic Council seat. That September the Herald reported she had been selected to head the Talisman staff, and in December it named her a Top Scholar."
+       ],
+       "src2": {
+        "label": "Herald 47:1, 14 Sep 1967, \"Miss Carmen Willoughby Selected to Head Talisman Staff\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4724"
+       },
+       "src3": {
+        "label": "Herald 47:15, 14 Dec 1967, \"Miss Carmen Willoughby Named Top Scholar\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4731"
        }
       },
       {
@@ -1057,7 +1100,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "Steve Reeves held the Departmental Clubs seat in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives. No other record of his time in office survives in this archive."
+       ]
       },
       {
        "office": "Professional And Honorary Groups Representative",
@@ -1066,7 +1112,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "Susan Streible represented Professional and Honorary Groups in the 1967-68 Associated Student Government and was also one of the seven members of the Executive Committee, per the same roster. No other record of her time in office survives in this archive."
+       ]
       },
       {
        "office": "Women's Residence Halls Rept.",
@@ -1089,7 +1138,10 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "profile": [
+        "Bonnie Spinnogatti held one of the two Women's Residence Halls seats in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives. No other record of her time in office survives in this archive."
+       ]
       },
       {
        "office": "Men's Residence Halls Rept.",
