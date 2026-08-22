@@ -8078,6 +8078,9 @@
       {
        "office": "Judicial Council Member",
        "name": "Debbie Anderson",
+       "profile": [
+        "Debbie Anderson was named a member of Associated Student Government's Judicial Council at Congress's first meeting of the 1978-79 year, 29 August 1978. The archive has not turned up further coverage of her time on the council."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Aug 1978",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
@@ -8086,6 +8089,9 @@
       {
        "office": "Judicial Council Member",
        "name": "Sally Brenzel",
+       "profile": [
+        "Sally Brenzel was named a member of Associated Student Government's Judicial Council at Congress's first meeting of the 1978-79 year, 29 August 1978. The archive has not turned up further coverage of her time on the council."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Aug 1978",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
@@ -8094,6 +8100,9 @@
       {
        "office": "Judicial Council Member",
        "name": "Eddie Fisher",
+       "profile": [
+        "Eddie Fisher was named a member of Associated Student Government's Judicial Council at Congress's first meeting of the 1978-79 year, 29 August 1978. The archive has not turned up further coverage of his time on the council."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Aug 1978",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
@@ -8102,6 +8111,9 @@
       {
        "office": "Judicial Council Member",
        "name": "Sandy Alford",
+       "profile": [
+        "Sandy Alford was named a member of Associated Student Government's Judicial Council at Congress's first meeting of the 1978-79 year, 29 August 1978. The archive has not turned up further coverage of their time on the council."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Aug 1978",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
@@ -8110,6 +8122,9 @@
       {
        "office": "Judicial Council Alternate",
        "name": "Melinda Manis",
+       "profile": [
+        "Melinda Manis was named an alternate member of Associated Student Government's Judicial Council at Congress's first meeting of the 1978-79 year, 29 August 1978. The archive has not turned up further coverage of her time in the post."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Aug 1978",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
@@ -8119,9 +8134,16 @@
        "office": "Judicial Council Chairman",
        "name": "Steve Wilson",
        "note": "Confirmed as Judicial Council chairman at the 12 September 1978 meeting, on a vote of 30 in favour with 3 abstaining, after Thornton announced the position open; succeeded Bob Moore, whose brief service in the post is separately recorded.",
+       "profile": [
+        "Steve Wilson was confirmed as chairman of Associated Student Government's Judicial Council at the 12 September 1978 Congress meeting, on a vote of 30 in favour with 3 abstaining, after president Steven Thornton announced the position open. The Herald's 14 September 1978 issue reported the appointment under the headline \"Judicial Council Chairman Picked.\" He took the post from Bob Moore, the former ASG president whose brief hold of the chairmanship that same fall is separately recorded; no source connects Moore's departure to the opening Thornton announced. The archive has not turned up further coverage of Wilson's time in the post."
+       ],
        "src": {
         "label": "ASG Minutes, 12 Sep 1978",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/30"
+       },
+       "src2": {
+        "label": "Herald 54:7, 14 Sep 1978",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3402"
        }
       }
      ],
@@ -10976,6 +10998,9 @@
        "office": "Parliamentarian",
        "name": "Brian Shaw",
        "note": "Appointed parliamentarian at the 29 April 1982 meeting, with Lonnie Sears as alternate.",
+       "profile": [
+        "Brian Shaw was appointed parliamentarian of the incoming Associated Student Government Congress at the 29 April 1982 meeting that seated the 1982-83 Congress, with Lonnie Sears named alternate parliamentarian at the same meeting. The archive has not turned up further coverage of his time in the post."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Apr 1982",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
@@ -10985,6 +11010,9 @@
        "office": "Sergeant-At-Arms",
        "name": "Robert Cook",
        "note": "Appointed Sergeant-At-Arms at the 29 April 1982 meeting, the same meeting that had confirmed him a Representative-at-Large.",
+       "profile": [
+        "Robert Cook was confirmed a Representative-at-Large and then appointed Sergeant-At-Arms, both at the 29 April 1982 Congress meeting that seated the incoming 1982-83 Congress. The archive has not turned up further coverage of his time in the post."
+       ],
        "src": {
         "label": "ASG Minutes, 29 Apr 1982",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
@@ -11923,6 +11951,9 @@
        "office": "Sergeant-at-Arms",
        "name": "Pat Franke",
        "note": "Appointed Sergeant-at-Arms at the same meeting as the Parliamentarian, on 18 September 1984.",
+       "profile": [
+        "Pat Franke was appointed Sergeant-at-Arms of the Associated Student Government Senate on 18 September 1984, the same meeting that named Mitchell McKinney parliamentarian. The archive has not turned up further coverage of their time in the post."
+       ],
        "src": {
         "label": "ASG minutes, 18 September 1984",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/440/"
@@ -25772,7 +25803,10 @@
        "src": {
         "label": "SGA Executive Council Minutes, 18-19 Jul 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/335"
-       }
+       },
+       "profile": [
+        "Drew Harrell was appointed to SGA's Judicial Council at the executive retreat of July 1998."
+       ]
       },
       {
        "office": "Justice, Judicial Council",
@@ -25806,7 +25840,10 @@
        "src": {
         "label": "SGA Executive Council Minutes, 18-19 Jul 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/335"
-       }
+       },
+       "profile": [
+        "Jeff Baynham was appointed parliamentarian at SGA's executive retreat in July 1998. He designed the organization's new web page, for which the vice president of public relations thanked him at Congress's first meeting of the year."
+       ]
       },
       {
        "office": "Parliamentarian",
@@ -25824,7 +25861,10 @@
        "src": {
         "label": "SGA Executive Council Minutes, 18-19 Jul 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/335"
-       }
+       },
+       "profile": [
+        "Joe Murrell was appointed sergeant of arms at SGA's executive retreat in July 1998. The Congress minutes of January and April 1999 record a \"Joe Morel\" moving to adjourn the meeting; the spelling is not reconciled with his in the record."
+       ]
       },
       {
        "office": "Pearce-Ford Tower Representative, Congress",
@@ -25845,7 +25885,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 17 Nov 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/189"
-       }
+       },
+       "profile": [
+        "Larry Murphy chaired SGA's Academic Affairs Committee in 1998-99. He co-authored Bill 98-10-F, which would have allocated $250 to the Kappa Alpha Order fraternity after its house burned on 17 November 1998; the bill failed on its second reading on 1 December. He also reported to Congress that a proposed teacher block-scheduling resolution had been shelved because Dr Barbara Burch had already put the change in place."
+       ]
       },
       {
        "office": "Chairperson, Legislative Research Committee",
@@ -25863,7 +25906,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 13 Apr 1999",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/191"
-       }
+       },
+       "profile": [
+        "Tim Hatton chaired SGA's Student Affairs Committee in 1998-99. He ran the spring 1999 camp fair, worked on a weekend student survey and a proposed SGA scholarship, and authored Bill 99-20-S to extend library hours during finals week; Congress postponed the bill on 13 April 1999 over the cost of paying student workers overtime."
+       ]
       },
       {
        "office": "Chairperson, Campus Improvements Committee",
@@ -25888,7 +25934,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 19 Jan 1999",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/205"
-       }
+       },
+       "profile": [
+        "Matt Bogard introduced himself to Congress as the new chair of the Campus Improvements Committee at the meeting of 19 January 1999."
+       ]
       },
       {
        "office": "Chairperson, Public Relations Committee",
@@ -25922,7 +25971,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 17 Nov 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/189"
-       }
+       },
+       "profile": [
+        "Sally Eilerman co-chaired SGA's Hillraisers committee in 1998-99, running it through the basketball season and arranging a meeting with Coach Felton in November 1998. Congress nominated her that April for both the outstanding Congress member award and the Charles A. Keown award."
+       ]
       },
       {
        "office": "Co-Chair, Hillraisers Committee",
@@ -28128,7 +28180,10 @@
        "src": {
         "label": "SGA Meeting Minutes, September 4, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/595"
-       }
+       },
+       "profile": [
+        "Shara Hammers chaired SGA's Legislative Research Committee in 2001-02. The vice president of finance also appointed her to the Organizational Aid Selection Committee on 25 September 2001."
+       ]
       },
       {
        "office": "Chairperson, Student Affairs Committee",
@@ -28183,7 +28238,10 @@
        "src": {
         "label": "SGA Meeting Minutes, September 4, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/595"
-       }
+       },
+       "profile": [
+        "Michelle Woods chaired SGA's Academic Affairs Committee in 2001-02, and Congress nominated her for its year-end \"Congress\" award on 9 April 2002."
+       ]
       },
       {
        "office": "Sergeant-at-Arms",
@@ -28192,7 +28250,10 @@
        "src": {
         "label": "SGA Meeting Minutes, September 4, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/595"
-       }
+       },
+       "profile": [
+        "Adam Leach was appointed sergeant-at-arms by the executive vice president at Congress's meeting of 4 September 2001, and Congress approved the appointment the same night."
+       ]
       },
       {
        "office": "Parliamentarian",
@@ -28225,7 +28286,10 @@
        "src": {
         "label": "SGA Meeting Minutes, September 4, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/595"
-       }
+       },
+       "profile": [
+        "Andrea Lovell was named coordinator of committees at the head of the president's committee-head appointments on 4 September 2001, a slate Congress moved, seconded and approved as a block."
+       ]
       }
      ],
      "members": [
@@ -28981,7 +29045,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 27 Aug 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
-       }
+       },
+       "profile": [
+        "Michelle Woods served as SGA's coordinator of committees in 2002-03."
+       ]
       },
       {
        "office": "Parliamentarian",
@@ -28999,7 +29066,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 24 Sep 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/217"
-       }
+       },
+       "profile": [
+        "Brooke Smith was appointed parliamentarian and approved unanimously by Congress on 24 September 2002. Congress noted that the parliamentarian, historian and sergeant-at-arms could not simultaneously hold a Congress seat."
+       ]
       },
       {
        "office": "Historian",
@@ -43529,6 +43599,15 @@
      ],
      "members": [
       {
+       "name": "Bradon Burks",
+       "seat": "Senator",
+       "note": "Called \"Sen. Bradon Burks\" in the Herald and \"Senator Burks\" making floor motions in the 22 and 29 October 2019 Senate minutes.",
+       "src": {
+        "label": "Herald, 26 Feb 2020 - SGA confirms 5 senators, 4 voted in unanimously",
+        "url": "https://wkuherald.com/16659/news/sga-confirms-5-senators-4-voted-in-unanimously/"
+       }
+      },
+      {
        "name": "Mark Clark",
        "seat": "Senator",
        "note": "Named on the document as senator.",
@@ -43547,12 +43626,65 @@
        }
       },
       {
+       "name": "Destinee Daugherty",
+       "seat": "Senator",
+       "note": "Confirmed as a senator 25 February 2020. The Herald spells the name Daugherty; the Senate minutes of the same meeting spell it Daughtery. The variant is unresolved.",
+       "src": {
+        "label": "Herald, 26 Feb 2020 - SGA confirms 5 senators, 4 voted in unanimously",
+        "url": "https://wkuherald.com/16659/news/sga-confirms-5-senators-4-voted-in-unanimously/"
+       }
+      },
+      {
+       "name": "Krystin Hardin",
+       "seat": "Senator",
+       "note": "Confirmed as a senator 25 February 2020. Printed as \"Senator Hard\" in the 3 March 2020 minutes, a probable truncation or misspelling; unverified.",
+       "src": {
+        "label": "SGA Senate minutes, 25 Feb 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/sp20/minutes_2_25_20.pdf"
+       }
+      },
+      {
        "name": "Conner Hounshell",
        "seat": "Senator",
        "note": "Named on the document as senator.",
        "src": {
         "label": "SGA legislation: Funding for the Bowling Green Pride Festival",
         "url": "https://www.wku.edu/sga/legislative/2019_2020_legislation/2_19_f.pdf"
+       }
+      },
+      {
+       "name": "MJ Mayo",
+       "seat": "Senator",
+       "note": "Printed as \"MJ Mayo\" in the minutes; no fuller given name found.",
+       "src": {
+        "label": "SGA Senate minutes, 4 Feb 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/sp20/minutes_2_4_20.pdf"
+       }
+      },
+      {
+       "name": "Dawson McCoun",
+       "seat": "Senator",
+       "note": "Named in full alongside Senator MJ Mayo working on food insecurity, 22 and 29 October 2019. Whether this is the same Dawson McCoun who chaired the Legislative Research Committee in 2020-21 is not established by these documents.",
+       "src": {
+        "label": "SGA Senate minutes, 22 Oct 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_10_22_19.docx"
+       }
+      },
+      {
+       "name": "Kyle Phillips",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Senate minutes, 29 Oct 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_10_29_19.docx"
+       }
+      },
+      {
+       "name": "Parker Raybourne",
+       "seat": "Senator",
+       "note": "Confirmed 24-3-1 on 25 February 2020 after senators questioned his legislative record and his membership in WKU College Republicans.",
+       "src": {
+        "label": "SGA Senate minutes, 25 Feb 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/sp20/minutes_2_25_20.pdf"
        }
       },
       {
@@ -43580,6 +43712,15 @@
        "src": {
         "label": "SGA legislation: Resolution to Support the disciplinary action, up to their suspension in WKU Greek Affairs, against the Epsilon Kappa chapter of Alpha Xi Delta",
         "url": "https://www.wku.edu/sga/legislative/2019_2020_legislation/res_1_19_f.pdf"
+       }
+      },
+      {
+       "name": "Elias Thompson",
+       "seat": "Senator",
+       "note": "Confirmed as a senator 25 February 2020.",
+       "src": {
+        "label": "Herald, 26 Feb 2020 - SGA confirms 5 senators, 4 voted in unanimously",
+        "url": "https://wkuherald.com/16659/news/sga-confirms-5-senators-4-voted-in-unanimously/"
        }
       }
      ]
