@@ -1704,9 +1704,16 @@
       "name": "Chris Grau",
       "note": "SPELLING UNVERIFIED, do not publish without a second look. The 1969 Talisman's Associated Students spread carries the line Chris Grau, Office Secretary beside the officers, and the Congress minutes of 13 February 1969 are signed off by a hand the scan renders as Christina L. Graue. This is a clerical post held alongside, not instead of, the elected secretary Becky Cooper.",
       "src": {
-       "label": "UA12/2/2 1969 Talisman pt. 1, Associated Students section; and SGA Meeting Minutes, 13 February 1969",
+       "label": "UA12/2/2 1969 Talisman pt. 1, Associated Students section",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
-      }
+      },
+      "src2": {
+       "label": "SGA Meeting Minutes, 13 Feb 1969",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
+      },
+      "profile": [
+       "Chris Grau is named as “Office Secretary” beside the elected officers in the 1969 Talisman's Associated Students spread, a clerical post held alongside, not instead of, the elected secretary Becky Cooper. The Congress minutes of 13 February 1969 carry a signature the scan renders as Christina L. Graue, a spelling this archive has not been able to verify against another source, so the name is recorded here as the Talisman prints it and flagged rather than silently corrected."
+      ]
      }
     ],
     "note": "Officer slate and vote counts from the Associated Students' own internal results memo to President Kelly Thompson, 3 May 1968.",
@@ -2790,7 +2797,10 @@
        "src": {
         "label": "1971 Talisman, Associated Students, pp. 68-69",
         "url": "https://archive.org/details/talisman1971west"
-       }
+       },
+       "profile": [
+        "Linda Jones is listed as secretary of the Judicial Committee in the 1971 Talisman's Associated Students section, serving under committee chairman David Eyler and vice-chairman Michael E. Freville, in the same year that Carol Gray held the separately elected office of ASG secretary. A different Linda Jones was elected Associated Students president in April 1971, but the archive holds no source connecting the two, and this record does not merge them."
+       ]
       }
      ],
      "members": [
@@ -8143,7 +8153,11 @@
        "src": {
         "label": "ASG Minutes, 29 Aug 1978",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/32"
-       }
+       },
+       "profile": [
+        "Bob Moore, who had just finished a one-year term as Associated Student Government president, was nominated and accepted as Judicial Council chairman at ASG's first meeting of the year, 29 August 1978.",
+        "The Herald reported on 7 September 1978 that the former president had been ruled ineligible for an Associated Student Government job. By the 12 September meeting, an opening for Judicial Council chairman had appeared and Congress confirmed Steve Wilson in the position, 30 votes in favour with 3 abstaining. Neither source explicitly ties the ineligibility ruling to the chairmanship, but the dates align and no other ASG post for Moore is recorded that year, so his tenure as chairman appears to have run under two weeks."
+       ]
       },
       {
        "office": "Judicial Council Member",
@@ -12770,7 +12784,10 @@
        "src": {
         "label": "ASG minutes, 15 April 1986",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/39/"
-       }
+       },
+       "profile": [
+        "Tim Todd chaired the Student Rights Committee in 1985-86, the year before Associated Student Government elected him president. The one set of that year's minutes the archive holds, from the closing meeting of 15 April 1986, records a single remark of his: he wished the body a good summer."
+       ]
       },
       {
        "office": "Chairman, KISL Committee",
@@ -18032,7 +18049,10 @@
        "src": {
         "label": "ASG Minutes, 17 Sep 1991",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/384"
-       }
+       },
+       "profile": [
+        "Ade was elected secretary of the Campus Improvement Committee at the Associated Student Government's meeting of 17 September 1991."
+       ]
       }
      ],
      "members": [
@@ -18964,7 +18984,10 @@
        "src": {
         "label": "SGA Minutes, 25 Aug 1992 and 9 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/414"
-       }
+       },
+       "profile": [
+        "The Executive Council slate approved on 25 August 1992 named Donald Smith chair of the Legislative Research Committee, a post he still held that February, ahead of the spring election in which he won the SGA presidency for 1993-94."
+       ]
       },
       {
        "office": "Chair, Campus Improvements",
@@ -19026,7 +19049,10 @@
        "src": {
         "label": "SGA Minutes, 25 Aug 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/414"
-       }
+       },
+       "profile": [
+        "Smith was named chair of the Academic Affairs committee at the SGA meeting of 25 August 1992."
+       ]
       },
       {
        "office": "Chair, Ad Hoc Student Health Insurance Committee",
@@ -19061,7 +19087,10 @@
        "src": {
         "label": "SGA Minutes, 16 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/430"
-       }
+       },
+       "profile": [
+        "Miller succeeded Trent Lyda as SGA's City Council representative, giving the Congress's City Council report at the meeting of 16 February 1993."
+       ]
       }
      ],
      "members": [
@@ -21072,7 +21101,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 30 Aug 1994",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/103"
-       }
+       },
+       "profile": [
+        "Hancock is recorded as a member of the Judicial Council as of the SGA meeting of 30 August 1994."
+       ]
       },
       {
        "office": "Parliamentarian",
@@ -21997,7 +22029,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 29 Aug 1995",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/131"
-       }
+       },
+       "profile": [
+        "Swanson was announced as chair of the Academic Affairs Committee for the year at the SGA meeting of 29 August 1995. By the committee's report to Congress on 14 November 1995, David Apple was chairing it instead; the record does not show when or why the chairmanship changed hands."
+       ]
       },
       {
        "office": "Chairperson, Academic Affairs Committee",
@@ -22075,7 +22110,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 14 Nov 1995",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/140"
-       }
+       },
+       "profile": [
+        "Hadnot chaired the Cultural Diversity Committee, new that autumn, and reported to Congress on 14 November 1995 that it was drafting legislation for Black History Month."
+       ]
       },
       {
        "office": "Chairperson, Cultural Diversity Committee",
@@ -22084,7 +22122,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 5 Mar 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/154"
-       }
+       },
+       "profile": [
+        "Carter was chairing the Cultural Diversity Committee by 5 March 1996, when she reported to Congress that she was working on a forum about conflict between black women and white women."
+       ]
       }
      ],
      "members": [
@@ -23079,7 +23120,11 @@
        "src": {
         "label": "SGA Meeting Minutes, 27 Aug 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/562"
-       }
+       },
+       "profile": [
+        "Apple chaired the Academic Affairs Committee across two years running. By November 1995 he was reporting for the committee, which by then had passed from Terra Swanson's initial August appointment to him; on 14 November 1995 he reported legislation on internet hours. He continued as Academic Affairs chair into the following year, named again to the post at the SGA meeting of 27 August 1996.",
+        "In 1997-98 Apple sat on the Judicial Council instead. At the SGA meeting of 21 April 1998 he announced from the floor the results of that spring's primary election for Public Relations Director, reporting vote totals of Brad Sweatt 140, Amy France 95 and Christoph Miller 72, which sent Sweatt and France to the general election."
+       ]
       },
       {
        "office": "Chairperson, Student Affairs Committee",
@@ -23109,7 +23154,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 21 Jan 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559"
-       }
+       },
+       "profile": [
+        "Congress accepted Gailor as chair of the Legislative Research Committee on 21 January 1997; he also served as SGA's City Commission representative that year. He continued as Legislative Research chair into 1997-98, and on 18 November 1997 reported that the committee had reviewed eleven pieces of legislation that session, voting down Resolution 97-17-F for insufficient research and untabling Resolution 97-10-F."
+       ]
       },
       {
        "office": "Chairperson, Campus Improvements Committee",
@@ -24491,7 +24539,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 21 Apr 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/184"
-       }
+       },
+       "profile": [
+        "Boyer is recorded as a guest of Congress alongside the other Judicial Council members at the meeting of 21 April 1998."
+       ]
       },
       {
        "office": "Judicial Council Member",
@@ -24500,7 +24551,11 @@
        "src": {
         "label": "SGA Meeting Minutes, 21 Apr 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/184"
-       }
+       },
+       "profile": [
+        "Apple chaired the Academic Affairs Committee across two years running. By November 1995 he was reporting for the committee, which by then had passed from Terra Swanson's initial August appointment to him; on 14 November 1995 he reported legislation on internet hours. He continued as Academic Affairs chair into the following year, named again to the post at the SGA meeting of 27 August 1996.",
+        "In 1997-98 Apple sat on the Judicial Council instead. At the SGA meeting of 21 April 1998 he announced from the floor the results of that spring's primary election for Public Relations Director, reporting vote totals of Brad Sweatt 140, Amy France 95 and Christoph Miller 72, which sent Sweatt and France to the general election."
+       ]
       },
       {
        "office": "Judicial Council Member",
@@ -24555,7 +24610,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 18 Nov 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/163"
-       }
+       },
+       "profile": [
+        "Congress accepted Gailor as chair of the Legislative Research Committee on 21 January 1997; he also served as SGA's City Commission representative that year. He continued as Legislative Research chair into 1997-98, and on 18 November 1997 reported that the committee had reviewed eleven pieces of legislation that session, voting down Resolution 97-17-F for insufficient research and untabling Resolution 97-10-F."
+       ]
       },
       {
        "office": "Chairperson, Legislative Research Committee",
@@ -29273,7 +29331,10 @@
        "src": {
         "label": "SGA Meeting Minutes, 27 Aug 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/645"
-       }
+       },
+       "profile": [
+        "SGA's meeting minutes of 27 August 2002 name Eddie Schwab as the organization's historian. The archive has found no further record of his term in the post."
+       ]
       },
       {
        "office": "Information Technology Director",
@@ -30139,10 +30200,15 @@
      }
     },
     {
-     "date": "2004-04-15",
+     "date": "2004-04-13",
      "title": "Robert Watkins elected first speaker of the senate on a disputed 9-8 vote",
-     "body": "Congress elected Bowling Green sophomore Robert Watkins, who wrote the new constitution, as the first speaker of the senate by 9 votes to 8 over Brittany Fausey, with 17 of 20 members present voting. The result was immediately questioned because the new constitution was unclear on whether two-thirds of eligible voters or of total membership was required, and three members present were barred from voting under a judicial council ruling. Martin warned of a \"semester of frustration\" if the dispute was not settled at the year's final meeting. Fausey declined to challenge the result.",
+     "body": "Congress elected Bowling Green sophomore Robert Watkins, who wrote the new constitution, as the first speaker of the senate by 9 votes to 8 over Brittany Fausey, with 17 of 20 members present voting. The result was immediately questioned because the new constitution was unclear on whether two-thirds of eligible voters or of total membership was required, and three members present were barred from voting under a judicial council ruling. Martin warned of a \"semester of frustration\" if the dispute was not settled at the year's final meeting. Fausey declined to challenge the result. SGA's own minutes date the vote to the 13 April meeting; the Herald's report ran two days later.",
      "src": {
+      "label": "SGA minutes, 13 Apr 2004",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/543",
+      "file": "2003-04-minutes-2004-04-13.pdf"
+     },
+     "src2": {
       "label": "Herald, 15 Apr 2004",
       "url": "https://wkuherald.com/55330/news/questions-cloud-speaker-vote/"
      }
@@ -30346,7 +30412,12 @@
        "src": {
         "label": "SGA minutes, 13 Apr 2004",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/543"
-       }
+       },
+       "profile": [
+        "Robert Watkins, a Bowling Green sophomore, was serving on Congress in October 2003 when he authored a resolution recommending students vote in the 4 November election, moving to suspend the by-laws so it could pass without the usual delay; it passed unanimously.",
+        "The following spring Watkins wrote the new three-branch constitution as chair of the Legislative Research Committee, and Congress elected him the senate's first speaker on 13 April 2004, defeating Brittany Fausey 9 votes to 8 with 17 of 20 members present. The result was disputed immediately because the new constitution did not make clear whether two-thirds of eligible voters or of the full membership was required, and three members present had been barred from voting by a judicial council ruling; one member warned of a “semester of frustration” if the dispute went unresolved. Abby Lovan had withdrawn from the race before the ballot, and Fausey declined to challenge the result.",
+        "Watkins went on to win the SGA presidency in April 2006 and served until his resignation that November; his full term is recorded under his leader entry for 2006-07."
+       ]
       }
      ],
      "committees": [
@@ -32600,7 +32671,10 @@
       "src": {
        "label": "College Heights Herald 81:42, 13 Apr 2006",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3692/"
-      }
+      },
+      "profile": [
+       "Robert Watkins served as SGA president for 2006-07 after winning the 13 April 2006 election over Kara Ratliff. He resigned as president and student regent on 28 November 2006. The full account of his election, administration and resignation is recorded under his leader entry for this year."
+      ]
      },
      {
       "office": "Executive Vice President",
@@ -33521,7 +33595,10 @@
        "src": {
         "label": "SGA Senate minutes, 4 Sep 2007, TopSCHOLAR",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/740"
-       }
+       },
+       "profile": [
+        "Nate Eaton returned as chair of the Campus Improvements Committee for a second year in 2007-08, having taken over the post in February 2007. His stated priority at the first meeting of the year was finishing a shuttle stop the committee had begun the year before. He was elected Speaker of the Senate the following spring; that chapter of his SGA career is recorded under 2008-09."
+       ]
       },
       {
        "office": "Chair, Public Relations Committee",
@@ -33530,7 +33607,10 @@
        "src": {
         "label": "SGA Senate minutes, 4 Sep 2007, TopSCHOLAR",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/740"
-       }
+       },
+       "profile": [
+        "Jessica VanWinkle was confirmed as chair of the Public Relations Committee on 4 September 2007, working alongside PR director Liz Goddard. That December, the administrative vice president praised her committee's bulletin board work to the Senate."
+       ]
       }
      ],
      "size": 36,
@@ -35152,7 +35232,10 @@
        "src": {
         "label": "WKU SGA site, judicial branch, 23 Nov 2009 (archived)",
         "url": "https://web.archive.org/web/20091123151325/http://www.wku.edu/sga/index.php?page=judicial"
-       }
+       },
+       "profile": [
+        "Colton Jessie served as clerk of the Judicial Council under Chief Justice Stuart Kenderes in 2009-10, before winning the SGA presidency for 2010-11. By 28 May 2010 the clerkship had passed to Eliana Martinez."
+       ]
       },
       {
        "office": "Justice, Judicial Council",
@@ -35667,7 +35750,10 @@
       "src": {
        "label": "Herald, 19 Apr 2011",
        "url": "https://wkuherald.com/52039/news/jessie-reflects-on-year-as-sga-president/"
-      }
+      },
+      "profile": [
+       "Colton Jessie served as SGA president for 2010-11, the year after he was clerk of the Judicial Council. His full term — the Kentucky Leadership Academy retreat, the DUC renovation talks, and the increases to scholarship and study-abroad funding — is recorded under his leader entry for this year."
+      ]
      },
      {
       "office": "Executive Vice President",
@@ -46872,6 +46958,13 @@
       "src": {
        "label": "SGA legislation: Funding for the Mental Health Awareness Week in April 2023",
        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_46_23_s.pdf"
+      },
+      "profile": [
+       "Brooke Mitchell was one of seven listed authors of Bill 46-23-S, credited as a Mental Health and Wellbeing Committee Member alongside committee chair Olivia Feck and five senators. The bill drew $550 from the Legislative Discretionary Fund for Mental Health Awareness Week, 23-28 April 2023: an Out of the Darkness suicide-awareness walk, four days of tabling events, a guest-speaker talk with Dr. Jay Gabbard, and a group yoga class at the Preston Center. The Herald reported that the senate funded the week unanimously at its meeting of 11 April 2023; the copy of the bill on file records a first reading that day and a second on 18 April, with its pass and fail boxes left blank."
+      ],
+      "src2": {
+       "label": "Herald, 13 Apr 2023",
+       "url": "https://wkuherald.com/71476/news/wku-sga-discusses-mental-health-awareness-week-combining-of-committees/"
       }
      },
      {
