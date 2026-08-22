@@ -751,10 +751,47 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   `o/nathan-j-eaton.html`, for all three terms; `check_data.py` and
   `check_duplicates.py` both pass clean, the six known duplicate pairs
   unchanged.
-- **The 2016–2027 officer names include a batch of garbled scrapes** — titles glued
-  onto names, "Senator Andi Dahmer", "Public Health Kate Hart". They inflate the
-  person count and they are not safe to profile under. They want a deliberate
-  cleaning pass against a real roster, not a guess.
+- ~~The 2016–2027 officer names include a batch of garbled scrapes~~ **Done, 22
+  August (scheduled run).** All 294 `organization.executive`/`organization.senate.officers`
+  entries carrying the note "Named on the document as..." (2016-17 through 2025-26)
+  trace to a legislation PDF cited in their own `src.url`. Every one of those 196
+  PDFs was re-fetched from wku.edu (open, no special headers needed) and its
+  AUTHORS:/SPONSOR:/CONTACTS: block re-extracted with PyMuPDF, giving a ground-truth
+  "Name, Office" pairing independent of the original scrape. 158 entries had a
+  genuinely garbled `name` (a stray word glued on from an adjacent author's office,
+  or from an off-by-one split of a multi-author line) and were corrected to the
+  clean name the PDF actually prints; 27 of those also had a visibly truncated
+  `office` ("Chief of", "Senator-", bare "Senator") completed from the same
+  evidence. 103 were already correct as printed (mostly multi-author lines on one
+  paragraph line, e.g. "Andi Dahmer, SGA Senator, Jody Dahmer, SGA Senator, Helen
+  Vickrey, MyCampusToo Committee Chair", that a naive comma-splitter had failed to
+  separate, not data errors). 33 entries were removed outright: 28 named a real
+  person who was never an SGA officer — WKU faculty or staff (a department chair,
+  the Provost, three college/office directors, a Vice President for Student
+  Affairs, an Assistant Vice President, a Dean, two program directors), an officer
+  of a different registered student organization (Residence Hall Association,
+  International Diplomats, CISO, ISA, Student Veterans Alliance, Young Democrats,
+  Recyclops, Kentucky Veterans Brigade), or a guest co-author of one bill (No Lost
+  Generation WKU's director) — each named only in a bill's CONTACTS or AUTHORS
+  line, never holding SGA office; the other 5 were not people at all, just a
+  committee name ("Organizational Aid", four instances across four years, where
+  the source lists several members and the entry can't be pinned to one) or a
+  fragment of the bill's own subject text ("Executive Producer", "Food Pantry")
+  misparsed as a name. A general-purpose subagent independently re-checked every
+  proposed correction and removal against the same PDF evidence in four parallel
+  passes before anything was applied; it caught one real bug (a colon-separated
+  "Senator at Large: Mark Clark" AUTHORS line had produced a garbage match that
+  would have overwritten an already-correct name — reverted to leave it alone) and
+  pushed the office-completion count from a handful of manual cases to the full 27
+  by flagging every truncated office my first pass had left untouched. One
+  genuine spelling conflict surfaced and was flagged rather than resolved, per the
+  project rule: "Lauren Willet" (Bill 25-22-F) vs "Lauren Willett" (Bill 6-22-F),
+  each entry now correctly matching its own cited document. `build.py`,
+  `check_data.py` and `check_duplicates.py` all pass clean; the six known
+  duplicate pairs are unchanged. What's left: this pass covered only the 294
+  entries an earlier run had flagged with an auto-scrape note; a handful of other
+  2016-2027 entries may carry the same class of error without that note and
+  weren't in scope here.
 - **`Chris Grau` (Office Secretary, 1968-69)** carries a note in the data reading
   "SPELLING UNVERIFIED, do not publish without a second look", possibly
   "Christina L. Graue" per the minutes signature. Still unverified.
