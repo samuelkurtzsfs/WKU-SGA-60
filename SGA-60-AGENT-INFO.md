@@ -663,28 +663,48 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    underlying PDF text always had each name on its own physical line (confirmed
    by re-opening the PDF and extracting with line structure intact, which is a
    fact about the document's layout, not a guess about where names split). Two
-   methods were used, both without guessing a boundary: (1) segmenting the
-   glued string against a dictionary of names already known for that exact
-   session — from comma-delimited rows in the same file and from
-   `organization`/`leaders` in `years.json` — and accepting a split only when
-   it partitions every token with no ambiguity; (2) re-opening the cited PDF
-   directly, locating the AUTHOR/SPONSOR block by its own label, and splitting
-   on the block's real line breaks, accepted only when rejoining the lines
-   reproduces the original glued string exactly (a strict round-trip check, not
-   a similarity heuristic). 10 of the ~30 resolved were confirmed by opening the
-   source PDF directly and reading the printed line breaks; the rest by the
-   round-trip check, which is exact by construction. One further finding:
-   `1989-90/dc_resolution_210.pdf` carried the same 5-name author list a second
-   time mislabeled as `sponsor` — a genuine mis-extraction, not an undelimited
-   list — and that duplicate row was dropped rather than split.
-   `data/legislation-authors.json` (the file `build.py` reads) went from 1,038
-   to 1,107 rows: 9 previously-published glued rows were split in place, and 21
-   rows of real authorship that a curation pass had apparently excluded for
-   looking malformed were added back, correctly split. `.research/legislation-authors.json`
-   (the full unreviewed pool) went from 1,328 to 1,456 the same way.
-   `build.py`, `check_data.py` and `check_duplicates.py` all pass clean
-   afterward; the six known duplicate pairs are unchanged. **What's left:** 37
-   of the original ~42 still-undelimited rows in the live file (106 in the full
+   methods were used to find the split, neither of which guesses a boundary:
+   (1) segmenting the glued string against a dictionary of names already known
+   for that exact session — from comma-delimited rows in the same file and
+   from `organization`/`leaders` in `years.json` — and accepting a split only
+   when it partitions every token with no ambiguity; (2) re-opening the cited
+   PDF directly, locating the AUTHOR/SPONSOR block by its own label, and
+   splitting on the block's real line breaks, accepted only when rejoining the
+   lines reproduces the original glued string exactly.
+
+   **A dedicated adversarial subagent then re-opened a random sample of the
+   applied splits against their PDFs, independently of either method above,
+   and caught something method (1) cannot see: it only checks that a string
+   partitions cleanly into known names, never that the *role* that string was
+   filed under is the right one.** One row it flagged, `2017-18/bill-38-17-f.pdf`
+   sponsor, had "William Hurst Kara Lowry" filed as the bill's sponsor; the PDF
+   actually shows `SPONSOR: Public Relations Committee` with Hurst and Lowry
+   printed further down under a separate `CONTACTS:` heading. Re-running
+   method (2)'s exact PDF-block check against all 25 method-(1) splits (not
+   just the sampled ones) turned up one more of the same kind,
+   `2016-17/bill_21-17-s.pdf` sponsor ("Zach Jones Jay Todd Richey", really
+   `SPONSOR: Campus Improvements Committee` with Jones and Richey under
+   `CONTACTS:`), and confirmed the other 23 were fine — the rest of that
+   check's "mismatches" were just the block-boundary regex picking up trailing
+   OCR noise (bullet glyphs, a garbled motto line) after an otherwise-correct
+   split, not further wrong content. **Both bad rows were already live on the
+   published site before this run touched anything** — a pre-existing
+   extraction bug this pass caught as a side effect, not one it introduced —
+   and both were removed outright rather than re-filed under `contact`, since
+   tracking contacts as a role is outside this item's scope. One further
+   finding, also removed: `1989-90/dc_resolution_210.pdf` carried its 5-name
+   author list a second time mislabeled as `sponsor` — a genuine mis-extraction,
+   not an undelimited list.
+
+   Net result: `data/legislation-authors.json` (the file `build.py` reads)
+   went from 1,038 to 1,103 rows — 14 old rows removed (9 glued strings
+   replaced by their split names, plus the 2 mis-role rows and the 1
+   mislabeled duplicate, all 3 dropped outright) and 79 correctly split names
+   added in their place. `.research/legislation-authors.json` (the full
+   unreviewed pool) went from 1,328 to 1,452 the same way. `build.py`,
+   `check_data.py` and `check_duplicates.py` all pass clean afterward; the six
+   known duplicate pairs are unchanged. **What's left:** roughly 35 of the
+   original ~42 still-undelimited rows in the live file (about 104 in the full
    research pool) did not resolve by either method — some are genuinely
    ambiguous multi-name lists with no independent corroboration for a session,
    and some turned out on inspection to be a different bug entirely (the
