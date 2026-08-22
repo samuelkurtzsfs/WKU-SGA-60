@@ -305,8 +305,8 @@ identical, `https` just isn't egress-blocked here). Re-test with `https://`, not
 | host | state | note |
 |---|---|---|
 | `digitalcommons.wku.edu` **landing pages** | **open**, 200 | titles, dates, one-line abstracts and a Herald issue's headline index. This is how most citation labels get verified. |
-| `digitalcommons.wku.edu/cgi/viewcontent.cgi` | **blocked**, HTTP 202, empty body, `x-amzn-waf-action: challenge` | every PDF: Herald page images, Talisman pages, minutes, legislation. Confirmed still challenging on 21 August: 5 retries over 7.5 minutes on two different SGA-minutes items, all 202. |
-| `web.archive.org` | **open on `https://`**; plain `http://` is egress-blocked by this sandbox, not by archive.org (see note above) | every Wayback citation in the archive is now checkable from here over https. Individual captures can 503 transiently — retry a few times before concluding a specific snapshot is gone. |
+| `digitalcommons.wku.edu/cgi/viewcontent.cgi` | **blocked**, HTTP 202, empty body, `x-amzn-waf-action: challenge` | every PDF: Herald page images, Talisman pages, minutes, legislation. Confirmed still challenging on 21 August: 5 retries over 7.5 minutes on two different SGA-minutes items, all 202. **Open again midday 22 August (a later scheduled run):** three Talisman PDFs (68–195 MB each) fetched clean with a plain `curl`, no special headers, no cookie dance. Confirms the earlier finding — this challenge lifts and re-closes by the hour, keep trying rather than treating one 202 as final. |
+| `web.archive.org` | **Blocked again, midday 22 August (a later scheduled run) — contradicts the 21 August "open on https" note above.** Every attempt, from the main session and from six independent subagents, reset at the TLS handshake before any HTTP response (`curl: (35) Recv failure: Connection reset by peer`); one subagent that tried a direct (non-proxied) connection got an explicit `403 x-block-reason: hostname_blocked`. `archive.org` (no `web.` prefix) and every other host tested worked fine through the same proxy at the same time, so this is specific to the `web.archive.org` hostname, not a general outage. Re-test before believing either verdict — this has now flipped at least twice in 48 hours. | The ~90-URL fact-check of article-permalink Wayback citations planned for this pass (see §8.3 item 4) could not be run at all as a result — 84 unique URLs, six parallel verifier agents, zero fetched. Nothing in `years.json` was touched because of this; an unreachable source is not evidence against a claim. |
 | `archive.org` (no `web.` prefix) | **open** | Talisman full texts, 1971–1981, 1986, 1987. Not rate limited. Use heavily. |
 | `wkuherald.com` | **open**, 200, but its live WordPress search (`/wp-json/wp/v2/posts?search=`) returns nothing for anything before roughly 2011 — the old College Publisher-era site (2003–2010) was never migrated into it, so pre-2011 stories only survive via Wayback, not the live site. |
 
@@ -553,7 +553,21 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
      fact-by-fact re-read of those against the sentences they support has
      still not been done — lower priority than the roster pages, since an
      article permalink is a stronger kind of source to begin with, but still
-     open for a future pass. `viewcontent.cgi` refused the research run but
+     open for a future pass. **Attempted and blocked, 22 August (a later
+     scheduled run):** all 84 unique article-permalink URLs were split into
+     six batches and handed to six parallel verifier agents with the
+     specific claim each one is cited to support. All six came back
+     unable to fetch a single one — `web.archive.org` was hostname-blocked
+     at the egress-proxy level all afternoon (see §8.1's updated table),
+     unlike 21 August when the same host was open over `https`. No claim
+     was touched; per the project's own rule an unreachable source proves
+     nothing either way. This is genuinely first in line for whichever
+     future run catches the host open again — the batches, the per-URL
+     claim text, and the classification of homepage/roster vs. article
+     permalink are straightforward to rebuild from `data/years.json` (grep
+     every `src`/`src2`.. object for `web.archive.org`) if useful, but
+     nothing was saved to disk since the run reused the pattern rather than
+     writing a reusable script. `viewcontent.cgi` refused the research run but
      opened later the same day for the editor's pass (see the 1992-93 item
      below).
 5. ~~Content-check the 1992-93 roll.~~ **Done, 22 August (scheduled run).**
@@ -643,12 +657,44 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    (that window is the Executive Council's time to act on passed legislation,
    not the Senate's time to override — the source states no deadline on the
    override itself).
-7. **The 119 undelimited co-sponsor lists** dropped from the legislation
-   authorship extraction. Late-1970s and 1980s forms print several names with no
-   comma between them, and they cannot be split into individuals without guessing
-   a boundary. They are in `.research/legislation-authors.json`, the full
-   unreviewed 1,328-row extraction, and they want a smarter name-boundary parser
-   rather than another pass of the same one.
+7. ~~The 119 undelimited co-sponsor lists~~ **Partly done, 22 August (scheduled
+   run).** These names were never actually ambiguous: `extract_authors.py` reads
+   the AUTHOR/SPONSOR block as one string and loses the line breaks, but the
+   underlying PDF text always had each name on its own physical line (confirmed
+   by re-opening the PDF and extracting with line structure intact, which is a
+   fact about the document's layout, not a guess about where names split). Two
+   methods were used, both without guessing a boundary: (1) segmenting the
+   glued string against a dictionary of names already known for that exact
+   session — from comma-delimited rows in the same file and from
+   `organization`/`leaders` in `years.json` — and accepting a split only when
+   it partitions every token with no ambiguity; (2) re-opening the cited PDF
+   directly, locating the AUTHOR/SPONSOR block by its own label, and splitting
+   on the block's real line breaks, accepted only when rejoining the lines
+   reproduces the original glued string exactly (a strict round-trip check, not
+   a similarity heuristic). 10 of the ~30 resolved were confirmed by opening the
+   source PDF directly and reading the printed line breaks; the rest by the
+   round-trip check, which is exact by construction. One further finding:
+   `1989-90/dc_resolution_210.pdf` carried the same 5-name author list a second
+   time mislabeled as `sponsor` — a genuine mis-extraction, not an undelimited
+   list — and that duplicate row was dropped rather than split.
+   `data/legislation-authors.json` (the file `build.py` reads) went from 1,038
+   to 1,107 rows: 9 previously-published glued rows were split in place, and 21
+   rows of real authorship that a curation pass had apparently excluded for
+   looking malformed were added back, correctly split. `.research/legislation-authors.json`
+   (the full unreviewed pool) went from 1,328 to 1,456 the same way.
+   `build.py`, `check_data.py` and `check_duplicates.py` all pass clean
+   afterward; the six known duplicate pairs are unchanged. **What's left:** 37
+   of the original ~42 still-undelimited rows in the live file (106 in the full
+   research pool) did not resolve by either method — some are genuinely
+   ambiguous multi-name lists with no independent corroboration for a session,
+   and some turned out on inspection to be a different bug entirely (the
+   extractor grabbing the wrong block — a committee name captured as
+   `sponsor` instead of the people in `CONTACTS`, or body text describing a
+   named third party bleeding into what should be a one-name field, as with
+   `1991-92/resolution_91-6-f.pdf`, whose "sponsor" field is not a list at
+   all). Those need individual review against their PDFs, not another
+   automated pass — the two methods above have likely captured everything a
+   parser safely can.
 8. **Six duplicate pairs that `check_duplicates.py` has reported on every pass.**
    All six have been judged genuinely separate — same-day bills, a bill introduced
    against the same bill failing, a suit planned against a suit endorsed. Nobody
