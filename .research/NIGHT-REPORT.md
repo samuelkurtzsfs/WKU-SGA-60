@@ -4212,3 +4212,153 @@ photographs (up two), 288 documents mirrored, 1,111 legislation files, 1,716 pag
 build.py, check_data.py, check_contrib.py and check_duplicates.py all clean on main at the
 close of the run; check_duplicates.py's six pairs are the known pre-existing ones and are
 genuinely separate events. No pull requests left open.
+
+---
+
+# Editor's report - 22 August 2026, late evening
+
+Four research pull requests were open. All four are merged. Nothing was left open, and
+nothing was closed unmerged.
+
+## What was reviewed, and what it cost
+
+**#137, the senate rolls.** Thirty-seven rank-and-file senators of the fifth SGA, 2006-07,
+recovered from ten sets of SGA minutes, seven of them newly mirrored. I read the primary
+documents rather than the report: seven carry an OCR text layer, and the minutes of 17
+October 2006 are a pure image scan with no text at all, so those pages were rendered and
+read. Every claim in the sample held. The eighteen sworn in on 3 October are eighteen. The
+eleven sworn in on 30 January are eleven. Christina Allen was sworn by Justice Brian
+Fischer on 17 October, exactly as recorded. The text layer reads "Christian Cutlip"; the
+page reads Cullip, and so does the 6 February meeting, so the entry is right and the
+transcript is wrong.
+
+The discipline about who was *not* added is what carried this one. Kevin Barnes was
+approved on 30 January, marked not present, and never shown sworn: left off. Jeremy Glass
+took the oath the same night as William Doolin on 27 February, but as Director of
+Technology, an executive post, and is not on the roll. Joshua Fries was left as a flagged
+possibility because `name-aliases.json` does not carry him, while Nathan Eaton was linked
+because it does. That is the distinction being drawn correctly in both directions.
+
+Two notes were trimmed. The senate note claimed every roll call from 30 January counted 35
+seats; that night's roll counted 22, because it was taken before the oath, and the chamber
+first counts 35 on 6 February. The Tim Hill note called the identity of the Legislative
+Research chair unestablished, when the 12 September minutes in the same set name "Tim Hill,
+Jr." as chair, and it asserted a resignation by 10 October that no cited source supports.
+
+**#138, photographs.** Five 1970s officers given faces from the Talisman. This is the
+category where an error cannot be taken back, so each portrait was checked down to the
+individual cell of the grid: the yearbook's name index to find the page, the page image to
+count names against portraits. All five are right. Two things made the identifications
+strong rather than merely plausible - the 1973 volume's own account of student government
+names Gary Whitfield as head of Legal Rights and R.G. Meade as head of Rules and Elections,
+the 1977 volume has "secretary Pam Keown" and the 1978 volume "housing chairman John
+Grizzell", so four of the five are tied to their office inside the same book as the
+portrait; and the sequence of names around each cell tracks the sequence of faces.
+
+Every one of the six source links was wrong, one leaf too high, so a reader following a
+citation landed on the page after the portrait. Fixed. The offset is not constant between
+volumes, 5 for 1973 and 3 for the later three, so it cannot be computed once and reused.
+Worth noting that the index is not always right either: Vogt's index line says 404, which
+is the S-T page; her portrait is on 405 with the U-W names, which is what the label said.
+
+**#139, person profiles.** Eleven officers given a profile. Several claims matched their
+minutes word for word - Merritt's 14-2 confirmation and "likes organization", the eleven
+at-large senators the Herald named in April 2018, the thirteen sworn in on 30 September
+2014, Glasgow's "catch-all", Faught's fourteen at the first meeting, Scaff thanking his
+committee for being proactive on the day he said he would graduate, and Resolution 11-15-S
+failing for want of a supermajority. This was careful work.
+
+One paragraph contradicted the archive. Kerrie Stewart was said to have run for Public
+Affairs Vice President on Margaret Ragan's ticket. This record already says twice that she
+stood for the presidency and did not survive the primary: in the event of 8 April 1982 and
+in Susan Albert's profile. She lost the primary and was sworn in as Public Affairs Vice
+President on 27 April. Her paragraph now says so, and the letters, the obituary and the
+remembrance are cited rather than asserted.
+
+Three smaller cuts. Tyler Scaff's committee was said to have explored a parking-availability
+feature for the iWKU app; all three October 2014 minutes were opened, and what his committee
+discussed was a break party for the custodians and sand volleyball courts. The app named
+that month was another member's and had nothing to do with parking. That is the one thing
+in the night's four branches I would call invented, and it went out of the record. Kasey
+Glasgow was said to have been named chair at a first Senate meeting on 3 September 2014; no
+such document exists or is cited, the Senate met Tuesdays, and she was already chair at the
+cabinet's orientation meeting of 26 August. Temple Ricke was said to have been sworn in on
+1 September 2015; the word does not appear in those minutes, which record approval by
+unanimous consent.
+
+One thing every future profile run needs to know: **adding a `profile` hides that officer's
+`note` on the site.** `render_officer` shows one or the other, never both. Six of these
+eleven had notes and four held facts the profile did not - Stewart's swearing-in date and
+her own account of what ASG did, Faught's green tour and Earth Day festival, Newsome's
+caveat that the vice-presidential title is the bill's rather than the chair's, Hedrick's
+17 April 2019 page revision. Publishing as drafted would have quietly deleted all of it.
+Each is now folded into its profile.
+
+**#140, the backlog.** Thirty-seven garbled author and sponsor strings resolved against
+their source PDFs. The branch was four merges behind, so main was merged in first; the
+conflict was only the Kerrie Stewart profile added an hour earlier, and the photographs the
+branch carried had already landed by another route.
+
+The best catch of the night is here. The old sponsor row on Resolution 91-6-F read
+"Mistianna Holcomb Joe Iracane". The resolution asks that Joe Iracane *not* be re-elected
+chairman of the Board of Regents and recites the federal investigation against him. He is
+its subject, not its sponsor, and publishing him as a sponsor of the resolution attacking
+him would have been a bad thing to say about a named man. The document gives Mark Miller
+and Eric McWilliams as authors and Holcomb alone as sponsor, and that is now what the file
+says.
+
+I went hardest at the nine rows deleted outright, since a deletion that discards a
+recoverable name is invisible afterwards. All nine source PDFs do print a name. All nine
+of those people were already recorded on that bill: the deleted rows were garbled
+duplicates standing beside a correct row. Nothing was lost.
+
+I corrected the handoff note on the one refusal. It said bill 13-24-S traced to a bare email
+with no name anywhere in the document; "Millie Glessner, WKU Dental Hygiene Clinic Office
+Manager" sits on the line above the address. The refusal to reconstruct "Mildred Hagood"
+from a login was still right, and for a better reason than the one given, but a note telling
+the next run that a document is nameless is how a real name gets dropped later.
+
+## A mistake of mine, for the owner to decide on
+
+I merged all four pull requests with merge commits. The previous report says squash-merging
+is worth keeping to, precisely because the research commits carry a tool's name in the git
+author field, and squashing keeps that out of main. Merge commits do not. Main's history
+now carries eight commits authored under that name.
+
+Nothing of it reaches the public site, and the same commits were already in the repository
+on the research branches. But it is against the archive's own rule, and it is my error. I
+have not rewritten main to fix it: main auto-deploys, a history rewrite is not reversible,
+and it is not a call to make unilaterally at night. The next editor should squash-merge, and
+the owner can decide whether the eight commits are worth rewriting for.
+
+## Still open
+
+Carried forward and unchanged: the thirty-five unresolved author lists, the six pre-2011
+attributions the PDFs plainly carry, the duplicate 1976-77 pair, the Alford and Brenzel
+portraits resting on a unique surname, the twenty-three "no record survives" assertions, and
+the 1995-96 gloss on Bill 91-9-F that wants a clause acknowledging ASG had already run a
+President for a Day in November 1990.
+
+New from tonight:
+
+- The seven 2006-07 minutes mirrored by #137 are **attached to nothing**. That year has no
+  `documents` array, and `src.file` renders only on events, not on senate members, so 6.4 MB
+  now sits in the repository and on the site with no link reaching it. The minutes of 3
+  October and 30 January are the two best single documents for that year and deserve real
+  entries. Mirroring a file and attaching it are two steps.
+- The legislation completeness gap #140 surfaced and correctly declined to half-fix: long
+  `CONTACTS:` lists truncated to two names on the 2017-18 diversity resolutions, missing
+  authors on 14-22-S, 36-22-S and 16-24-S, which names four authors and records one, and
+  Omar Salinas Chacon absent from the file entirely. That is an extractor problem, not a
+  row-by-row one.
+- Thirteen years still have no year photograph, and that gap is now beyond what the Talisman
+  landing page can reach.
+
+## Where the archive stands
+
+61 academic years, 2,020 dated and sourced entries, 73 leader records, 649 records carrying
+a written profile (up 11), 1,070 officer entries, 1,355 senate members (up 37), 152
+photographs (up five), 294 documents mirrored (up seven), 1,111 legislation files, 1,104
+legislation author rows, 1,746 pages built. build.py, check_data.py, check_contrib.py and
+check_duplicates.py all clean on main at the close of the run; the six duplicate pairs are
+the known pre-existing ones and are genuinely separate events. No pull requests left open.
