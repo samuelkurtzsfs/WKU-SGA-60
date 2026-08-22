@@ -670,7 +670,7 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   | 1993-94 | `dlsc_ua_records/418` | Against All Odds | 6-1-1994 | 1418 |
   | 1994-95 | `dlsc_ua_records/420` + `/421` | Xposure: Rites of Passage (spring); Canvas Flesh (summer) | 1-1-1995, 6-1-1995 | 1420, 1421 |
   | 1995-96 | `dlsc_ua_records/419`, `/422`, `/423`, `/424` | Xposure: Prejudice: Beyond Black & White (winter); Fall 1995; Spring 1996; Summer 1996 | 12-1-1995, 9-1-1995, 1-1-1996, 6-1-1996 | 1419, 1422, 1423, 1424 |
-  | 2002-03 | `dlsc_ua_records/594` | About Face | 6-1-2003 | 1594 |
+  | 2002-03 | `dlsc_ua_records/594` | About Face | 2003 (year only on the item page) | 1594 |
 
   The article number for `viewcontent.cgi?article=` is not the same as the item
   number in the `/dlsc_ua_records/NNNN/` URL — on every item checked this run it
@@ -696,6 +696,8 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   above is the ready-made worklist for whenever it opens: land on each item page,
   pull the PDF with the article number listed, find the SGA section, and match a
   name to a caption before using any face from it.
+
+### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
   **Fixed, 21 August (scheduled run).** All three printed forms — "Nate Eaton"
