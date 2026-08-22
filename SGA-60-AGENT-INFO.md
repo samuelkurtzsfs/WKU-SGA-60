@@ -715,6 +715,73 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    all). Those need individual review against their PDFs, not another
    automated pass — the two methods above have likely captured everything a
    parser safely can.
+
+   **Done, 22 August (a later scheduled run).** All 37 remaining `>=4`-word
+   undelimited rows in `data/legislation-authors.json` were opened against
+   their source PDFs individually with PyMuPDF, one at a time, exactly as the
+   note above called for. The dominant pattern: a bill's real `SPONSOR:`
+   field is a committee name (not a person), and the extractor had instead
+   glued together fragments of the people actually listed under `CONTACTS:` —
+   usually a trailing piece of one contact's job title stitched onto the next
+   contact's name (e.g. "History Professor Lucas Knight" is the tail of
+   Patricia Minter's "WKU History Professor" plus Lucas Knight's own name).
+   19 rows were pure fragments with no real second name at all (budget-line
+   text, a document title, a title with no name attached) and were deleted
+   outright. 18 were trimmed to the one real name they actually contained, or
+   split into their true multi-name `AUTHOR:` list where the PDF genuinely
+   listed several people without page-break separation — including a 7-way
+   split on `2022-23/sga_bill_1_22_f.pdf` (Cole Bornefeld, Garrison Reed, Sam
+   Kurtz, Lauren Willett, Preston Romanov, Donte' Reed, Aniya Johnson) and a
+   3-way split on `2016-17/resolution_10-17-s.pdf`. One case was refused
+   rather than resolved on principle: `2023-24/bill_13_24_s.pdf`'s garbled
+   sponsor row traces to nothing but a bare email address,
+   `Mildred.hagood@wku.edu`, with no adjoining name text anywhere in the
+   document — reconstructing "Mildred Hagood" from the login alone would be
+   invention, not confirmation, so that row was deleted with nothing added
+   back.
+
+   A separate adversarial verifier subagent then independently re-opened all
+   37 source PDFs itself, fresh, without reading the first pass's reasoning,
+   and checked every kept name, dropped fragment, and split boundary against
+   the raw text. 34 of 37 were exactly right. Three needed a small follow-up
+   add (the flagged garbled text itself was correctly resolved in all three;
+   something adjacent in the same row set was wrong or missing): the verifier
+   caught that `1998-99/bill_98-10-f.pdf` is a two-column-layout PDF whose
+   field labels (`AUTHORS:`, `SPONSOR:`) extract in a different stream
+   position than their values, so the first pass's line-window search past
+   the labels found nothing and wrongly concluded the fields were blank — the
+   real text, `AUTHORS: Larry Murphy / Matthew D. Bastin / Cindy Chiappetta`,
+   sits later in the extracted text and was recovered and added as three
+   author rows once the verifier pointed at it directly; `2016-17/bill_19-17-s.pdf`
+   was missing "Andi Dahmer" from its own `AUTHORS:` line even after the
+   budget-text fragments were correctly cleared out, added; and
+   `2017-18/resolution-6-17-f.pdf` was missing "Beth Gafford" as a sponsor —
+   she exists in the data only under a different year's bill, not this one,
+   added here too. All three follow-ups were independently confirmed against
+   the raw PDF text before being applied.
+
+   Net result: `data/legislation-authors.json` went from 1,103 to 1,104 rows
+   (46 garbled/fragment rows removed, 47 clean rows added — most of the churn
+   was 1-for-1 trims and n-for-1 splits, not a net change in headcount).
+   `build.py`, `check_data.py` and `check_duplicates.py` all pass clean; the
+   six known duplicate pairs are unchanged. **What's left:** this pass fixed
+   only the flagged garbled rows and their immediate follow-ups — it did not
+   attempt a full completeness sweep. The verifier surfaced, but this run did
+   not fix, a broader and separate gap: several `AUTHORS:`/`CONTACTS:` blocks
+   in this corpus are only partially captured even outside the 37 flagged
+   rows — long CONTACTS lists on `2017-18/bill-21-17-f.pdf` and
+   `2017-18/resolution-2-17-f.pdf` (14-19 people each, mostly non-SGA guest
+   signatories on a diversity resolution) capture only 2 of each list, and
+   `2021-22/14_22_s.pdf`, `2021-22/36_22_s.pdf` and `2023-24/bill_16_24_s.pdf`
+   are each missing several named authors or contacts outright. Omar Salinas
+   Chacon, repeatedly named across several of these bills, does not appear
+   anywhere in the file. This looks like the original extraction script
+   simply stopping partway through long multi-name lists — a real,
+   independent completeness gap, worth a dedicated future pass, not a
+   continuation of this one. `.research/legislation-authors.json` (the full
+   unreviewed pool) still carries the same still-glued rows this pass fixed
+   in the live file — it was not touched, since it is a working cache and
+   not what `build.py` reads.
 8. **Six duplicate pairs that `check_duplicates.py` has reported on every pass.**
    All six have been judged genuinely separate — same-day bills, a bill introduced
    against the same bill failing, a suit planned against a suit endorsed. Nobody
