@@ -3774,3 +3774,135 @@ a written profile, 135 photographs (79 leader portraits, 56 year photographs), 2
 mirrored, 1,111 legislation files, 1,855 pages built. build.py, check_data.py,
 check_contrib.py and check_duplicates.py all clean at the close of the run. No pull requests
 left open.
+
+---
+
+# Night report - 22 August 2026, mid-morning
+
+Written by the editor. Four research pull requests were open; all four are merged and
+nothing is left open.
+
+## What came in and what happened to it
+
+**#122, the senate rolls.** Thirty-two rank-and-file senators for 2010-11, 2011-12 and
+2012-13, drawn from SGA's own minutes on wku.edu. I downloaded the cited minutes files
+and read the passages rather than the drafter's notes, sixteen names across both years.
+The strong ones are very strong: Kat Johns tabled for Sergeant-at-Arms because "Senator
+Johns" was absent that night; Lauren Riggs's resignation reported to the floor; Crowley,
+Spalding and Winston sworn in by President Jessie in one sentence; the 28 February 2012
+blanket vote naming all six senators-at-large in the order the six notes give them.
+Where a bare surname had to be tied to a full name, I checked the corpus myself and
+found exactly one first name attaching to each: Rachel Calhoun, Paul Shively, Josh
+Newman, Daniel Shaw. Merged with one cut.
+
+**Cut: Josh Rodriguez, 2011-12.** The only place the full name appears is the Speaker's
+report of 1 November 2011 joking that he had got his braces off. That places him nowhere
+near the Senate, and the link to the "Senator Rodriguez" of the following week is the
+surname alone. It is also the wrong thing to publish about a living person: a remark
+about someone's teeth, lifted out of a meeting fifteen years ago onto a permanent public
+site, has nothing to do with their SGA service. The branch's own handoff note says a bare
+surname is not enough to add someone, which is the rule that decided it.
+
+**#123, three Talisman photographs.** 1981-82 and 1987-88 verified themselves - both
+crops include the printed yearbook caption, and both match photos.json word for word,
+twenty-nine names in the right rows for 1981-82, including "Marcel" Bush in the settled
+spelling. The decision not to crop the 1987-88 group into portraits was right; the
+printed rows do not map onto the faces and nobody could assign those names from the
+caption.
+
+**Trimmed: the 1983-84 beer-poll caption.** That crop stops at the photograph, so the
+identification of "Stanley Reagan, a Tompkinsville sophomore" rested on a transcription I
+could not check - viewcontent.cgi answered the 1984 volume with a WAF challenge on four
+attempts ninety seconds apart. The photograph proves the rest on its own: the banner, the
+polling table, students queueing to vote in a poll ASG ran. The caption now says that and
+no more. The name is preserved in the PR comment for whoever can next open p. 376. This
+is not doubt about the transcription - the other two matched to the punctuation - but
+naming a private individual is the one claim that should not rest on a caption the editor
+never saw.
+
+**#124, eleven officer profiles.** The facts are sound. I fetched four of the cited Herald
+articles and every clause held, including the ones that read like they might be
+misattributed: the intent-to-resign line is Spalding's and is filed under Spalding, and
+Jankowski's rally quote is real. I also checked the facts that come from outside each
+profile's own src, and all of them trace to a source already cited in that year.
+
+**Rewrote eight of the eleven.** The batch broke the quotation rule comprehensively and
+nobody had checked it: four quotes ran past fifteen words (Jankowski 22, Butler 20,
+Calhoun 17, Whipple 17) and six profiles quoted one article two, three or four times over.
+The Calhoun and Whipple paragraphs were carrying three and four consecutive lifted
+sentences. No fact was dropped - each now keeps one quotation under the limit, with the
+rest in reported speech. Veronica Butler's account of her own difficulty knowing when to
+seek help is reported rather than quoted at twenty words; she said it about her own
+committee's work so it belongs, but reported speech carries it at less cost to a current
+student.
+
+**#125, the officer roster cleaned against the legislation.** The best branch of the four
+and the one I checked hardest, because it removes thirty-three named people. It survives.
+The parser bug is real and I reproduced it: bill 9-16-F's contacts run "Dr. Saundra
+Ardrey, chair of the WKU Department of Political Science / Jacob Holt, president of the
+WKU Residence Hall Association", and the archive had been carrying "Political Science
+Jacob Holt". Same mechanism gave "Public Health Kate Hart" and "Senate Sam Kurtz".
+
+I sampled 26 changed documents from 2016-17 to 2025-26, re-downloaded every PDF and
+extracted it independently: 43 of 43 corrected names appear verbatim in their own cited
+document. The removals I pulled mechanically and got exactly the 33 claimed - faculty,
+deans, the Provost, staff directors and officers of other student organisations, every one
+named only in a bill's CONTACTS line, plus five fragments that were never people
+("Organizational Aid" four times, "Executive Producer", "Food Pantry"). Listing a
+department chair or the Provost as an SGA officer was an error of fact about real people;
+removing them is a correction. The pass sorted on whether the office is an SGA office
+rather than which block of the PDF the name sat in, which is why Kate Hart and Maggie
+Yelton were kept from the same CONTACTS lines. Merged as is, no cuts.
+
+## Flagged, not fixed
+
+Keyanna Boka (leader, 2013-14) and Keyana Boka (senator 2010-11, committee chair 2011-12,
+executive vice president 2012-13, and the executive entry for her own presidential year)
+are plainly one person, but the spellings are not joined in name-aliases.json, so her four
+records do not reach her page. This predates tonight - main already carried both spellings
+inside a single year - and the rule says this pair is unverified and is to be flagged
+rather than corrected. It wants a source that settles the spelling, not an editor's guess.
+
+Lauren Willet / Lauren Willett came in the same way from #125 and is handled correctly
+there: each entry matches its own cited bill.
+
+## For the routines
+
+The photograph run should crop to include the printed caption whenever there is one. It
+cost nothing on two of tonight's three and made them unfalsifiable at review - twenty-nine
+names confirmed without a single network request. The one photo cropped tight to the image
+is the one that lost a fact.
+
+The profiles run needs the quotation limit added to its verifier. The adversarial pass is
+working well on truth - it caught a misattributed line, two invented officiants and an
+over-generalised quote - but it only asks whether claims are true, and all eight
+over-quoted profiles were true. Counting quotes and their length is mechanical and needs
+no source fetch.
+
+The senate run should keep disclosing its inferences the way this batch did; that
+transparency is what made the branch checkable. One rule to hold harder: a full name that
+appears only in an aside about someone's personal life is not evidence of membership,
+however unique the surname.
+
+#125's own note names the next piece of work: the pass covered the 294 entries carrying
+the "Named on the document as..." marker, and entries from the same harvest without that
+marker have not been checked. The same bug will be in them.
+
+Commits on the research branches still arrive under a tool's name in the git author field.
+It stays out of main's own commit messages, but the author field is permanent history and
+the routines should be given a plain committer identity.
+
+## Still open
+
+The same six duplicate pairs, unchanged and still correctly distinct: a bill introduced and
+the same bill failing, a lawsuit planned and then endorsed, a position taken and then
+legislated, three bills filed on one day. The twenty-three "no record survives" assertions
+from earlier runs are untouched and still deserve a pass of their own.
+
+## Where the archive stands
+
+61 academic years, 2,021 dated and sourced entries, 73 leader records, 589 records carrying
+a written profile, 1,069 officer entries (down 33), 1,294 senate members (up 31), 138
+photographs (79 leader portraits, 59 year photographs), 288 documents mirrored, 1,111
+legislation files, 1,707 pages built. build.py, check_data.py, check_contrib.py and
+check_duplicates.py all clean on main at the close of the run. No pull requests left open.
