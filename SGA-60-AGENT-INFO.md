@@ -424,9 +424,41 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    text, so its date has to be inferred from who presides and what is described as
    upcoming.
 
-   What is still unswept: 2011-12 and 2012-13 hold one and two member records
-   against 33 for 2014-15, so those years were mined for particular names rather
-   than read through. 2015-16 is not hosted the way the others are.
+   **The `uploads/minutes/<year>/` directory listing now 403s (checked 22 August,
+   later pass) — but the files inside it are still directly fetchable by name.**
+   The block is on listing, not on the files. The live page
+   `wku.edu/sga/legislative/minutes.php` links every individual minutes file back
+   to 2009-10 with a plain `<a href>`, no WAF challenge on that page at all, so
+   scraping its href list with a browser-UA `curl` gives every filename without
+   ever needing the directory index. A second page,
+   `wku.edu/sga/2018-2019-legislative/minutes.php`, does the same for 2018-19
+   through 2021-22 (bare filenames for 2018-19, `minutes_M_D_YY.docx` for 2019-20,
+   `.pdf`/`fa20/` for 2020-21, `senate_minutes_M_D_YY.docx` for 2021-22) — found
+   late in the 22 August pass and **not yet downloaded or read**.
+
+   This era's minutes (2009-10 through at least 2013-14) are meeting-by-meeting
+   prose, not a formal roll-call sheet — no present/absent list of names by
+   default. Membership evidence is explicit swearing-in/acceptance/resignation
+   language, a blanket "senators at large" appointment vote naming several people
+   in one motion, or a full name pinned down elsewhere in the same run of
+   documents and tied to a bare "Senator [surname]" floor mention — a bare
+   surname on its own is not enough to add someone; do not guess a first name.
+
+   **2010-11, 2011-12 and 2012-13 done, 22 August (later pass):** these three,
+   the thinnest years on file (5, 1 and 2 members respectively), were swept using
+   the `legislative/minutes.php` trick above — 2010-11 to 18 members, 2011-12 to
+   19, 2012-13 to 3, all adversarially verified against the actual downloaded
+   text (of 33 drafted names, 1 rejected as a surname-only match to an unrelated
+   later year, 5 trimmed for overclaiming). Landed on `research-senate`
+   (PR #122). A number of recurring surnames in these years' minutes never
+   turned up a confirmable full first name in this corpus and were deliberately
+   left out: Cottrell, Asbery, Johnson, Wilcox, Booth/Boothe, Harris, Rhodes,
+   Nowland, Karmiller, Powell, Davis, Benton, Sheridan, Preston, Ambriz, Wood,
+   George, Wright, Heston. **What is still unswept:** 2013-14 (10 members, more
+   files available under the same trick), and the whole 2018-19–2021-22 span
+   via the second `legislative/minutes.php`-style page above — 2018-19 (2
+   members) and 2020-21 (7 members) are the thinnest of that group. 2015-16 is
+   not hosted the way the others are.
 
    *Checked 20 August (later pass), no names added:* the full Meetings/Minutes
    listing was pulled live (843 item links, 830 of them dated, 1969-02-13 to
