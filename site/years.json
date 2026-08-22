@@ -1691,7 +1691,7 @@
       "office": "Congressman at large",
       "name": "Janie Heathcoat",
       "profile": [
-       "Janie Heathcoat won a Congressman at Large seat in the Associated Students election held 2 May 1968, per Vice President Ron Beck's results memo to President Kelly Thompson dated the following day. No further record of her term survives in this archive."
+       "Janie Heathcoat won a Congressman at Large seat in the Associated Students election held 2 May 1968, per Vice President Ron Beck's results memo to President Kelly Thompson dated the following day."
       ],
       "src": {
        "label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968",
@@ -14365,7 +14365,7 @@
        "name": "Rebecca Hack",
        "note": "Accepted by Congress as chairman of Rules and Elections on 6 October 1987, while the committee was still running that autumn's freshman elections. The minutes of 22 September 1987 record the name as Becky Haaek and those of 6 October as Rebecca Hack; the spelling is unresolved.",
        "profile": [
-        "Rebecca Hack was accepted by Congress as chairman of the Rules and Elections Committee on 6 October 1987, while the committee was still running that autumn's freshman elections. ASG's own minutes are not consistent on her name: the 22 September 1987 minutes record a Becky Haaek and those of 6 October a Rebecca Hack, and no other source in the archive resolves which spelling is right. No further record of her term survives here."
+        "Rebecca Hack was accepted by Congress as chairman of the Rules and Elections Committee on 6 October 1987, while the committee was still running that autumn's freshman elections. ASG's own minutes are not consistent on her name: the 22 September 1987 minutes record a Becky Haaek and those of 6 October a Rebecca Hack, and no other source in the archive resolves which spelling is right."
        ],
        "src": {
         "label": "ASG minutes, 6 October 1987",
@@ -19012,7 +19012,7 @@
        "name": "Andrea Cailles",
        "note": "Named Student Affairs chair on 25 August 1992.",
        "profile": [
-        "Andrea Cailles was named chair of Student Affairs at Congress's meeting of 25 August 1992. No further record of her committee's work survives in this archive."
+        "Andrea Cailles was named chair of Student Affairs at Congress's meeting of 25 August 1992."
        ],
        "src": {
         "label": "SGA Minutes, 25 Aug 1992",
@@ -19594,6 +19594,15 @@
        "src": {
         "label": "SGA Minutes, 29 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
+       }
+      },
+      {
+       "name": "Andrea Cailles",
+       "seat": "Representative at Large",
+       "note": "Replaced by Scott Sivley as Student Affairs committee chairperson, reported 1 Sept 1992; seated as Representative at Large 9 Feb 1993.",
+       "src": {
+        "label": "SGA Minutes, 9 Feb 1993",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
        }
       }
      ],

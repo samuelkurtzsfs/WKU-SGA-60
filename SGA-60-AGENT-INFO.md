@@ -524,10 +524,49 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
      open for a future pass. `viewcontent.cgi` refused the research run but
      opened later the same day for the editor's pass (see the 1992-93 item
      below).
-5. **Content-check the 1992-93 roll — item 406 settled 21 August, the other 19
-   items still open.** Sixty-six names were merged on a night when the minutes
-   PDFs were unreachable, so they were never read against the meetings they
-   cite. That is still true of 61 of them.
+5. ~~Content-check the 1992-93 roll.~~ **Done, 22 August (scheduled run).**
+   `viewcontent.cgi` was open on plain requests around 04:20–04:30 UTC. All 18
+   remaining minutes items (405 was already checked; item 406 was settled 21
+   August) came down clean on the first attempt at the standard 3-second
+   pacing, text-extracted with PyMuPDF, and every one of the 61 names still
+   unread was checked directly against its cited document rather than the
+   researcher's paraphrase. All 61 confirmed: names, seats, resignation and
+   absence notes all matched the primary text exactly, including several
+   fine-grained details (Gene Hadden's Non-Traditional Rep seat and later
+   resignation, Ryan James's Senior — not Freshman — Class Presidency and
+   resignation, Eddie Myers's Sophomore Vice-Presidency, the four Congress
+   members seated 2 Feb 1993 and the resignations of Crystal Smith, Rebecca
+   Flynn, Jennifer Jaggers and Kevin Moore reported the same night). Nothing
+   in the 66-name roll needed correcting.
+
+   One genuine gap turned up in the process, not a correction: **Andrea
+   Cailles** — named as Student Affairs committee chair on 25 Aug 1992 and
+   already recorded as such under `organization.senate.officers`, replaced by
+   Scott Sivley on 1 Sept 1992, then seated as a plain Representative at
+   Large on 9 Feb 1993 (SGA Minutes, `sga/Meetings/Minutes/431`) and on the
+   absence roll 6 Apr 1993 — was missing from `organization.senate.members`
+   even though the officer record's own note already flagged her Feb 1993
+   re-seating. Added as the 67th member, following the existing precedent of
+   Donnie Miller, who is likewise recorded in both lists. A separate
+   adversarial verifier fetched and re-read all three source documents,
+   confirmed the finding, and caught one overclaim in the drafted note ("by
+   acclamation" was not in the source text for this vote) before it was cut.
+   Landed on `research-backlog`; `build.py`, `check_data.py` and
+   `check_duplicates.py` all pass clean, the six known duplicate pairs
+   unchanged.
+
+   Sixty-six names were merged on a night when the minutes PDFs were
+   unreachable, so they were never read against the meetings they cite. That
+   was still true of 61 of them going into this run.
+
+   **Editor's trim on merge, 22 August:** the 6 Apr 1993 absence came out of
+   the Cailles note. One `src` on a member entry has to carry every fact in
+   that note, and the entry cites the 9 Feb 1993 minutes. Do not put it back
+   under that citation. Note also that `build.py` drops `profile` and
+   `src2`..`src20` when it builds a member's page, so eleven member profiles
+   and five sets of extra citations already in `years.json` are written and
+   never published. Until that is fixed, a member entry gets one source and
+   its note must stay inside what that one source shows.
 
    Item 406 is now done, and the dating anomaly is resolved rather than
    inferred. `viewcontent.cgi` refused the research run but was open during the
