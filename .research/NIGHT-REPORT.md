@@ -3906,3 +3906,82 @@ a written profile, 1,069 officer entries (down 33), 1,294 senate members (up 31)
 photographs (79 leader portraits, 59 year photographs), 288 documents mirrored, 1,111
 legislation files, 1,707 pages built. build.py, check_data.py, check_contrib.py and
 check_duplicates.py all clean on main at the close of the run. No pull requests left open.
+
+---
+
+# 22 August 2026, midday: two research branches merged
+
+Two pull requests were open and both are now on main. Nothing was left standing overnight.
+
+## #126, person profiles: merged after eleven corrections
+
+Sixteen profiles arrived across three pushes while the review was running, which is worth
+recording as a working condition rather than a complaint: the branch moved under the review
+twice, and each new push had to be fetched, read and merged before anything could land. The
+routine's own adversarial re-read, pushed third, caught four of the same faults this review
+had already found independently — the Narcan implementation, two over-long quotations and an
+unsourced vacancy. That agreement is the best evidence yet that the verifier is doing real work.
+
+The single pattern worth naming: **three chair entries cited a document that named someone
+else in the post.** Helen Vickrey's source was the senate minutes of 13 September 2016, which
+name Michael Shelton as MyCampusToo chair; Hizareth Linares's was the Herald of 12 October
+2016, which names Francisco Serrano as SAVES's first chair; Mark Clark's was Resolution
+7-17-F, which calls him a senator. In each case the note beneath still read "Named on the
+document as ...". The office was true in all three cases and the legislation proves it, so
+each entry now leads with the document that does name them in the post and keeps the earlier
+one below. This came from replacing a scraped source label with a better document without
+re-reading the better document. It will recur wherever that cleanup runs.
+
+The rest, in descending order of seriousness. An advance notice read as a report: the Herald
+of 15 February 2023 has Housing and Residence Life asking to delay the Narcan supply to 1
+August, and the profile had them implementing it then. A lawsuit reversed: Resolution 10-17-F
+says WKU sued the Herald, and Morgan Wysong's profile had the paper suing the university. A
+living person's words over-attributed: Mark Clark called the senate's remarks discriminatory,
+while "dehumanizing" was Brigid Stakelum's word, and the profile gave both to Clark. A date
+wrong by a week: Meghan Pierce spoke for Adan Canizalez's confirmation on 24 January 2023, not
+17 January — and cut with it went a parliamentarian sentence and an account of the senate
+suspending its own bylaws for a chief justice election, neither of which appears in any source
+this archive cites. Matthew Johnson's chair "standing empty into November 2019" had no source
+and is gone; the minutes of 14 April 2020 are used instead for what they do record, a Zoom
+meeting of thirty senators with Johnson reporting as committee head while campus was shut.
+Smaller: the joint statement on the 2016 racism complaint came the day after the resignations,
+not the same day; Bill 20-17-S followed Kentucky Senate Bill 17 as the bill describes it, not
+"political or religious belief"; Ashley Cox is listed in the September 2017 minutes rather
+than reporting to the meeting; and Brian Anderson's note read "Named on the document as chair
+of."
+
+Around twenty claims were opened at source. Everything not listed above held: vote counts,
+dollar figures, authorship and election percentages were right every time they were checked.
+
+## #127, the senate rolls: merged as it stood
+
+Seven senators sworn in on 25 September 2012, taking that year's roll from three recorded
+members to ten. All seven names and their groupings are in the Herald's report of the meeting
+word for word, and no one named appears in a competing role, so the bill-author trap does not
+bite. The four forward-looking notes each trace to an entry already sourced elsewhere in the
+file, and the note on Paige Settles correctly declines to call her speaker in 2014-15, when
+she chaired Legislative Research. The Shey/Shea Wyatt divergence between the minutes and the
+Herald is flagged rather than resolved, which is right.
+
+## A duplicate the checker cannot see
+
+Two entries described the same meeting of 13 February 2018 from the same Herald report, in
+different words. `check_duplicates.py` never flagged them because the titles share almost no
+words. They are now one entry carrying both versions' facts. The six pairs the checker does
+report were read again and are all genuinely distinct.
+
+## Still open
+
+The 294 "Named on the document as..." entries were cleaned in an earlier pass, but entries
+from the same harvest without that marker are still unchecked, and the mis-sourcing above is
+the kind of thing that will be sitting in them. The twenty-three "no record survives"
+assertions still deserve a pass of their own. Research commits continue to arrive under a
+tool's name in the git author field.
+
+## Where the archive stands
+
+61 academic years, 2,020 dated and sourced entries (one fewer than yesterday: two were one
+event), 73 leader records, 594 records carrying a written profile (up 5), 1,069 officer
+entries, 1,301 senate members (up 7), 138 photographs, 288 documents mirrored, 1,111
+legislation files, 1,705 pages built. build.py, check_data.py, check_contrib.py and
+check_duplicates.py all clean on main at the close of the run. No pull requests left open.
