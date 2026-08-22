@@ -3985,3 +3985,112 @@ event), 73 leader records, 594 records carrying a written profile (up 5), 1,069 
 entries, 1,301 senate members (up 7), 138 photographs, 288 documents mirrored, 1,111
 legislation files, 1,705 pages built. build.py, check_data.py, check_contrib.py and
 check_duplicates.py all clean on main at the close of the run. No pull requests left open.
+
+# 22 August 2026, evening
+
+Four research pull requests open, all opened today, all merged. The three stale branches from
+4 August named in the standing brief — #6 photographs, #7 the 1980s, #8 the 2020s — are gone;
+nothing of theirs was left open to rescue or close.
+
+## What was checked, and how
+
+Where a claim could be checked against the thing itself rather than against a description of
+it, it was. The legislation PR was checkable that way in full, so all thirty of its changes
+were opened in the PDFs rather than eight of them sampled. The photograph PR was checked twice
+over: once for whether the person is the right person, and again for whether the square cut out
+of the portrait grid is the right square, which is a separate question and the one that fails
+silently. The senate PR was read against eleven of SGA's own minutes files. The profiles PR
+was read against twelve Herald articles, every sentence of all nine profiles.
+
+## The two that would have done damage
+
+**Two living people were named as the subjects of a racism investigation.** Cody Cox's new
+profile had the October 2016 inquiry collapsing "when senator Braxton Powell and justice John
+McKinney resigned." The Herald report it cites says three times over that SGA never released
+the names of the accused, that neither man connected his resignation to the complaint, and
+that the two gave scheduling conflicts and personal reasons for going. The paper set the
+resignations and the dropped investigation side by side and declined to join them. The profile
+joined them. It now says what the paper said. The archive's own 2016-17 event on this incident
+already had it right — it names the two as having resigned and states plainly that neither
+acknowledged a link — and that entry is the standard to follow.
+
+**Gene Saunders wrote Bill 6 of 1976-77; the extraction filed him as its sponsor.** That form
+sets author and sponsor in two columns, labels stacked on the left and names on the right, so
+the flattened text reads Author / Sponsor / Gene Saunders / Christy Vogt in sequence and the
+split took both names off the second label. On the page Saunders sits level with Author. The
+run's own verifier had caught two errors of the same family, both cases of a name sitting
+below a later heading. It could not catch this one, because a check that reads a block in
+sequence cannot see a two-column form at all.
+
+## Smaller corrections
+
+Erika Puhakka's profile had President Mayer disputing where the Judicial Council had ranked
+her against Wood Brown. No cited source records that exchange; what the Herald reports is that
+the council preferred her and that Annalicia Carlson said so before the vote. Cut back to
+that. Annalicia Carlson's account of the Pepe the Frog ruling reversed the order of what
+Garrett Edmonds did and what he was told. Josh Zaczek was credited with striking "removal from
+campus" from the Alpha Xi Delta resolution as well as adding "suspension from Greek affairs";
+only the second was his amendment. A month-later resignation from the Judicial Council was
+linked to the racism complaint by the word "also," which its source does not support.
+
+Two senators' votes on Resolution 4-15-S were filed under the meetings at which the two were
+appointed, which do not carry the vote. The claims are true — the roll call is in the
+sixteenth meeting of the Thirteenth Senate, 24 February 2015, and the resolution carried 15-6
+— so the roll call is now cited beside them. This is the hardest kind of error to see, because
+only the pointer is wrong: a reader who checks the source finds nothing and concludes the
+archive invented it.
+
+## What the checks could not settle, and what settled it
+
+Betty Thompson's portrait was very nearly cut. It is a Homecoming coronation, nothing in the
+1980 Talisman connects her to student government, and that volume's index carries two separate
+entries under her name. What saved it was the 1979 volume: the Miss Western report names
+"Betty Thompson, a Bowling Green junior," which is the Herald's own description of the woman
+elected secretary in April 1979, and the 1979 index lists exactly one of her. Two independent
+sources converging on a name, a town and a class standing is enough.
+
+Victor Jackson needed no such argument. The 1979 index reads "Jackson, Victor Michael 288-9,
+295, 360" — one entry spanning both the ASG coverage already cited on his record and the
+senior portrait page. The yearbook itself says the man in the meeting photograph and the man
+in the portrait are one person. That is the strongest form of identification available in this
+archive, and the method that produced it — reading the printed name index in the full text on
+archive.org — should be standard on every photograph run from here.
+
+Nolan and Noland Miles stay two records. The minutes show Student Affairs passing to Barrett
+Greenwell on 11 February 2014, the same night Nolan Miles took Public Relations, and Noland
+Miles had led Student Affairs since October: one committee changing hands as the other was
+taken up. That is consistent with one person moving between committees and it is not proof, so
+both records stand, but the evidence is now written into both notes instead of a bare
+statement that the question is open.
+
+## Found on main while checking
+
+The meeting of 31 March 2021 was written up twice from the same report, in different words.
+`check_duplicates.py` never saw it because the titles share almost no words — the same blind
+spot that hid the 13 February 2018 pair. They are now one entry keeping every fact from both.
+The Herald's spelling "Lauren Willet" is mapped to Lauren Willett, an identification the
+profiles run had already relied on without recording, which would have let a later run rebuild
+the duplicate person.
+
+## Still open
+
+Three-quarters of the undelimited author lists — about thirty-five live rows — remain
+unresolved and want individual review rather than another automated pass. Any pass that
+returns to them must read the AUTHOR block by coordinates, not by line order. Six pre-2011
+attributions the PDFs plainly carry are still missing from the record: Bill Schilling as
+author as well as sponsor of Bill 41 of 1985-86, Shannon Ragland as author of Resolution 45 of
+1988-89, Michael Colvin as a sponsor of Resolution 210 of 1989-90. Two files in the 1976-77
+folder, `dc_bill_2.pdf` and `dc_resolution_2.pdf`, are the same document filed twice. Sandy
+Alford's and Sally Brenzel's portraits rest on a name unique in the yearbook index and nothing
+more, and should be rechecked first if an ASG group photograph for 1978-79 ever surfaces.
+The twenty-three "no record survives" assertions still deserve a pass of their own, and
+research commits still arrive under a tool's name in the git author field.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced entries (one fewer than yesterday: two were one
+event), 73 leader records, 613 records carrying a written profile (up 19), 1,069 officer
+entries, 1,318 senate members (up 17), 144 photographs, 1,103 authorship attributions read off
+the legislation itself (up 65), 287 documents mirrored, 1,111 legislation files, 1,716 pages
+built. build.py, check_data.py, check_contrib.py and check_duplicates.py all clean on main at
+the close of the run. No pull requests left open.
