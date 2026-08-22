@@ -43525,6 +43525,15 @@
      ],
      "members": [
       {
+       "name": "Bradon Burks",
+       "seat": "Senator",
+       "note": "Called \"Sen. Bradon Burks\" in the Herald and \"Senator Burks\" making floor motions in the 22 and 29 October 2019 Senate minutes.",
+       "src": {
+        "label": "Herald, 26 Feb 2020 - SGA confirms 5 senators, 4 voted in unanimously",
+        "url": "https://wkuherald.com/16659/news/sga-confirms-5-senators-4-voted-in-unanimously/"
+       }
+      },
+      {
        "name": "Mark Clark",
        "seat": "Senator",
        "note": "Named on the document as senator.",
@@ -43543,12 +43552,65 @@
        }
       },
       {
+       "name": "Destinee Daugherty",
+       "seat": "Senator",
+       "note": "Confirmed as a senator 25 February 2020. The Herald spells the name Daugherty; the Senate minutes of the same meeting spell it Daughtery. The variant is unresolved.",
+       "src": {
+        "label": "Herald, 26 Feb 2020 - SGA confirms 5 senators, 4 voted in unanimously",
+        "url": "https://wkuherald.com/16659/news/sga-confirms-5-senators-4-voted-in-unanimously/"
+       }
+      },
+      {
+       "name": "Krystin Hardin",
+       "seat": "Senator",
+       "note": "Confirmed as a senator 25 February 2020. Printed as \"Senator Hard\" in the 3 March 2020 minutes, a probable truncation or misspelling; unverified.",
+       "src": {
+        "label": "SGA Senate minutes, 25 Feb 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/sp20/minutes_2_25_20.pdf"
+       }
+      },
+      {
        "name": "Conner Hounshell",
        "seat": "Senator",
        "note": "Named on the document as senator.",
        "src": {
         "label": "SGA legislation: Funding for the Bowling Green Pride Festival",
         "url": "https://www.wku.edu/sga/legislative/2019_2020_legislation/2_19_f.pdf"
+       }
+      },
+      {
+       "name": "MJ Mayo",
+       "seat": "Senator",
+       "note": "Printed as \"MJ Mayo\" in the minutes; no fuller given name found.",
+       "src": {
+        "label": "SGA Senate minutes, 4 Feb 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/sp20/minutes_2_4_20.pdf"
+       }
+      },
+      {
+       "name": "Dawson McCoun",
+       "seat": "Senator",
+       "note": "Named in full alongside Senator MJ Mayo working on food insecurity, 22 and 29 October 2019. Whether this is the same Dawson McCoun who chaired the Legislative Research Committee in 2020-21 is not established by these documents.",
+       "src": {
+        "label": "SGA Senate minutes, 22 Oct 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_10_22_19.docx"
+       }
+      },
+      {
+       "name": "Kyle Phillips",
+       "seat": "Senator",
+       "src": {
+        "label": "SGA Senate minutes, 29 Oct 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_10_29_19.docx"
+       }
+      },
+      {
+       "name": "Parker Raybourne",
+       "seat": "Senator",
+       "note": "Confirmed 24-3-1 on 25 February 2020 after senators questioned his legislative record and his membership in WKU College Republicans.",
+       "src": {
+        "label": "SGA Senate minutes, 25 Feb 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/sp20/minutes_2_25_20.pdf"
        }
       },
       {
@@ -43576,6 +43638,15 @@
        "src": {
         "label": "SGA legislation: Resolution to Support the disciplinary action, up to their suspension in WKU Greek Affairs, against the Epsilon Kappa chapter of Alpha Xi Delta",
         "url": "https://www.wku.edu/sga/legislative/2019_2020_legislation/res_1_19_f.pdf"
+       }
+      },
+      {
+       "name": "Elias Thompson",
+       "seat": "Senator",
+       "note": "Confirmed as a senator 25 February 2020.",
+       "src": {
+        "label": "Herald, 26 Feb 2020 - SGA confirms 5 senators, 4 voted in unanimously",
+        "url": "https://wkuherald.com/16659/news/sga-confirms-5-senators-4-voted-in-unanimously/"
        }
       }
      ]

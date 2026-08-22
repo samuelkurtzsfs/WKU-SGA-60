@@ -80,7 +80,11 @@ whole run. This is consistent with 20-21 August's own notes describing
   story, and run the adversarial verifier before merging. This has now been
   flagged as the plan on two separate runs (20 and 21 August) without being
   attempted — it may be worth a run that does only this and nothing else.
-- **1966-67, 1967-68, 1969-70, 1971-72, 1979-80** should be treated as a
-  settled, permanent gap in what TopSCHOLAR and `archive.org` hold, not
-  re-checked again absent a genuinely new source (a physical archive box, a
-  yearbook host other than `archive.org`, etc.).
+- **1966-67, 1969-70, 1971-72, 1979-80** should be treated as a settled,
+  permanent gap in what TopSCHOLAR and `archive.org` hold, not re-checked
+  again absent a genuinely new source (a physical archive box, a yearbook
+  host other than `archive.org`, etc.). **Correction, flagged by the 21
+  August editor's pass:** an earlier draft of this list also named 1967-68,
+  which was wrong — 1967-68 already has a senate roll in `data/years.json`
+  and was never one of the empty years. The five years above are the actual
+  gap.
