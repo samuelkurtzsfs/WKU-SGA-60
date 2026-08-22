@@ -1,6 +1,60 @@
 {
  "leaders": [
   {
+   "year": "1978-79",
+   "name": "Victor Jackson",
+   "file": "1978-79-victor-jackson-portrait.jpg",
+   "src": {
+    "label": "1979 Talisman, p. 360, senior class portrait, \"VICTOR JACKSON, acounting [sic], Clarksville, Tenn.\"",
+    "url": "https://archive.org/details/talisman1979west/page/n361/mode/1up"
+   }
+  },
+  {
+   "year": "1978-79",
+   "name": "Sandy Alford",
+   "file": "1978-79-sandy-alford.jpg",
+   "src": {
+    "label": "1979 Talisman, p. 380, junior class portrait, \"SANDY ALFORD, Bowling Green\"",
+    "url": "https://archive.org/details/talisman1979west/page/n381/mode/1up"
+   }
+  },
+  {
+   "year": "1978-79",
+   "name": "Sally Brenzel",
+   "file": "1978-79-sally-brenzel.jpg",
+   "src": {
+    "label": "1979 Talisman, p. 380, junior class portrait, \"SALLY L. BRENZEL, Jeffersontown\"",
+    "url": "https://archive.org/details/talisman1979west/page/n381/mode/1up"
+   }
+  },
+  {
+   "year": "1979-80",
+   "name": "Betty Thompson",
+   "file": "1979-80-betty-thompson.jpg",
+   "src": {
+    "label": "1980 Talisman, p. 155, \"PRESIDENT Donald Zacharias crowns a laughing Betty Thompson Homecoming Queen\"",
+    "url": "https://archive.org/details/talisman1980west/page/n158/mode/1up"
+   }
+  },
+  {
+   "year": "1979-80",
+   "name": "Dean Bates",
+   "file": "1979-80-dean-bates.jpg",
+   "src": {
+    "label": "1980 Talisman, p. 339, senior class portrait, \"DEAN BATES, envir. engin. tech., Fairport, N.Y.\"",
+    "url": "https://archive.org/details/talisman1980west/page/n342/mode/1up"
+   }
+  },
+  {
+   "year": "1979-80",
+   "name": "Terri Craig",
+   "file": "1979-80-terri-craig.jpg",
+   "src": {
+    "label": "1980 Talisman, p. 345, senior class portrait, \"TERESA L. CRAIG, admin. service and geo., St. Joseph, Ill.\"",
+    "url": "https://archive.org/details/talisman1980west/page/n348/mode/1up"
+   }
+  },
+  {
    "year": "1971-72",
    "name": "Reginald Glass",
    "file": "1971-72-reginald-glass.jpg",
