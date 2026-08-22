@@ -38224,7 +38224,7 @@
       {
        "name": "Nolan Miles",
        "seat": "Chair, Public Relations Committee, appointed 11 February 2014",
-       "note": "Named Chair of the Public Relations Committee at the 11 February 2014 meeting. Spelling kept distinct from Noland Miles, appointed Student Affairs chair the previous fall; not established as the same person.",
+       "note": "Named Chair of the Public Relations Committee at the 11 February 2014 meeting, the same night Barrett Greenwell was appointed to head Student Affairs, the committee Noland Miles had led since October. A Nolan Miles was Executive Vice President under Nicki Taylor in 2014-15. Kept distinct from Noland Miles: the reshuffle is consistent with one person moving committees, but no source states it.",
        "src": {
         "label": "SGA Senate minutes, 11 Feb 2014",
         "url": "https://www.wku.edu/sga/uploads/minutes/2014/minutes_2-11.docx"
@@ -38233,7 +38233,7 @@
       {
        "name": "Noland Miles",
        "seat": "Chair, Student Affairs Committee, appointed 8 October 2013",
-       "note": "Sworn in as a presidential appointment to head the Student Affairs Committee at the 8 October 2013 meeting; continued giving the committee's reports into November. Spelling kept distinct from Nolan Miles, appointed Public Relations chair the following spring; not established as the same person.",
+       "note": "Sworn in as a presidential appointment to head the Student Affairs Committee at the 8 October 2013 meeting, which spells the name Noland twice, and continued giving the committee's reports into November. Kept distinct from Nolan Miles, appointed Public Relations chair on 11 February 2014, the same night Barrett Greenwell was appointed to head Student Affairs. That the one committee changed hands as the other was taken up is consistent with a single person moving between committees, but no source says so, and the archive does not merge two people on a spelling.",
        "src": {
         "label": "SGA Senate minutes, 8 Oct 2013",
         "url": "https://www.wku.edu/sga/uploads/minutes/2013/minutes10-8.docx"
@@ -39036,10 +39036,14 @@
       {
        "name": "Brian Chism",
        "seat": "Chair, Student Affairs Committee",
-       "note": "Nominated by President Nicki Taylor and approved by the Senate as Chair of the Student Affairs Committee; voted in favor of Resolution 4-15-S. Date is not stated outright in the minutes' own text, only implied by filename (mid-February 2015).",
+       "note": "Nominated by President Nicki Taylor and approved by the Senate as Chair of the Student Affairs Committee at the fifteenth meeting of the Thirteenth Senate. He voted for Resolution 4-15-S in the roll call of 24 February 2015, which carried 15-6. Neither meeting is dated outright in the minutes' own text; the dates follow the filenames and the meeting numbering (mid-February 2015).",
        "src": {
         "label": "SGA Senate minutes, Thirteenth Senate, spring 2015",
         "url": "https://www.wku.edu/sga/uploads/minutes/2014/2-10.docx"
+       },
+       "src2": {
+        "label": "SGA Senate minutes, Thirteenth Senate, sixteenth meeting (24 February 2015)",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2014/2-241.docx"
        }
       },
       {
@@ -39234,10 +39238,14 @@
       {
        "name": "Elicia Tillis",
        "seat": "Senator; Chair, Cultural and Diversity Affairs Committee",
-       "note": "Appointed a senator by President Nicki Taylor, then nominated and approved as Chair of the Cultural and Diversity Affairs Committee at the following meeting; voted against Resolution 4-15-S. Dates are not stated outright in the minutes' own text, only implied by filename (early-to-mid February 2015).",
+       "note": "Appointed a senator by President Nicki Taylor, then nominated and approved as Chair of the Cultural and Diversity Affairs Committee at the following meeting. She was one of six senators recorded against Resolution 4-15-S in the roll call of 24 February 2015, which carried 15-6. The dates are not stated outright in the minutes' own text, only implied by the filenames and the meeting numbering (early-to-mid February 2015).",
        "src": {
         "label": "SGA Senate minutes, Thirteenth Senate, spring 2015",
         "url": "https://www.wku.edu/sga/uploads/minutes/2014/2-3.docx"
+       },
+       "src2": {
+        "label": "SGA Senate minutes, Thirteenth Senate, sixteenth meeting (24 February 2015)",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2014/2-241.docx"
        }
       },
       {
