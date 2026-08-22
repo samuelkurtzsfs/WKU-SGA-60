@@ -7778,26 +7778,6 @@
      }
     },
     {
-     "date": "1979-03-27",
-     "title": "Thornton and Craig win seats on Kentucky's student government council",
-     "body": "The Herald reported two Western students, ASG president Steven Thornton and Terri Craig, elected to the executive council of the Student Government Association of Kentucky, a state-level student body - the kind of state seat ASG had pressed for in January.",
-     "src": {
-      "label": "Herald 54:48, 27 Mar 1979",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3448",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4454&context=dlsc_ua_records"
-     }
-    },
-    {
-     "date": "1979-04-17",
-     "title": "Voting held for Thornton's successor; United Black Students backs Hargrove",
-     "body": "Students voted in the Associated Student Government presidential election, with the Herald running candidate endorsements the same day, including United Black Students' backing of Jamie Hargrove.",
-     "src": {
-      "label": "Herald 54:55, 17 Apr 1979",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3455",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4460&context=dlsc_ua_records"
-     }
-    },
-    {
      "date": "1979-04-26",
      "title": "ASG approves resolutions on housing and parking policy",
      "body": "In one of the outgoing Thornton administration's final acts, the Associated Student Government approved resolutions addressing campus housing and parking policy.",
@@ -7858,33 +7838,14 @@
      }
     },
     {
-     "date": "1979-03-27",
-     "title": "Thornton and Craig elected to SGAK executive council",
-     "body": "Two Western students, Steve Thornton and Terri Craig, were elected to the Student Government Association of Kentucky executive council. The Herald also editorialized that ASG should make its teacher evaluation public.",
-     "src": {
-      "label": "Herald 54:48, 27 Mar 1979",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3448",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4454&context=dlsc_ua_records"
-     }
-    },
-    {
-     "date": "1979-04-17",
-     "title": "Election day: candidates lean on experience",
-     "body": "Students voted in the ASG general election, with the presidential candidates relying on their experience, the Herald reported. United Black Students backed Jamie Hargrove, and outgoing president Steve Thornton and former president Bob Moore published endorsements.",
-     "src": {
-      "label": "Herald 54:55, 17 Apr 1979",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3455",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4460&context=dlsc_ua_records"
-     }
-    },
-    {
      "date": "1979-04-19",
      "title": "Jamie Hargrove easily wins the presidency",
-     "body": "The Herald reported that Jamie Hargrove easily won the Associated Student Government president race. The result closed an election season that had begun with 70 candidates signing up for offices.",
+     "body": "The Herald reported that Jamie Hargrove easily won the Associated Student Government presidency, defeating David Young 1,087-535 on a turnout of 1,725 votes, up from 1,097 in the 1978 election. In the other executive races reported the same day, Steve Fuller defeated Tom Jecker 973-574 for administrative vice president, Dean Bates defeated Ben Bratcher 785-761 for activities vice president - the closest of the four races - Betty Thompson defeated Lynn Driver 1,052-517 for secretary, and Terri Craig defeated Darell Pierce 937-623 for treasurer.",
      "src": {
       "label": "Herald 54:56, 19 Apr 1979",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records"
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records",
+      "file": "1979-80-herald-54-56-election-results.pdf"
      }
     },
     {
@@ -8050,6 +8011,26 @@
      "src": {
       "label": "Herald 54:39, 8 Feb 1979",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3444"
+     }
+    },
+    {
+     "date": "1979-03-27",
+     "title": "Thornton and Craig win seats on Kentucky's student government council",
+     "body": "The Herald reported two Western students, ASG president Steven Thornton and Terri Craig, elected to the executive council of the Student Government Association of Kentucky, a state-level student body - the kind of state seat ASG had pressed for in January. The same issue editorialized that ASG should make its teacher evaluations public.",
+     "src": {
+      "label": "Herald 54:48, 27 Mar 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3448",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4454&context=dlsc_ua_records"
+     }
+    },
+    {
+     "date": "1979-04-17",
+     "title": "Voting held for Thornton's successor; candidates lean on experience",
+     "body": "Students voted in the ASG general election to choose Thornton's successor, with the Herald reporting the presidential candidates relying on their experience. The Herald ran candidate endorsements the same day, including United Black Students' backing of Jamie Hargrove, and pieces from outgoing president Steve Thornton and former president Bob Moore.",
+     "src": {
+      "label": "Herald 54:55, 17 Apr 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3455",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4460&context=dlsc_ua_records"
      }
     }
    ],
@@ -8393,11 +8374,22 @@
       {
        "label": "WKU SGA, Former SGA Presidents roster, archived 24 Sep 2001",
        "url": "https://web.archive.org/web/20010924113823/http://www.wku.edu/Dept/Org/Student/SGA/formersgapres.htm"
+      },
+      {
+       "label": "Herald 54:56, 19 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454",
+       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records",
+       "file": "1979-80-herald-54-56-election-results.pdf"
+      },
+      {
+       "label": "ASG Minutes, 24 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
+       "file": "1978-79-asg-minutes-1979-04-24.pdf"
       }
      ],
      "profile": [
-      "By August 30, 1979, at the start of the school year, the Herald profiled the Associated Student Government head - spelled 'Jamie Hargrove' in the byline - under the headline that he believed students were interested. The archive does not yet hold the spring 1979 election coverage that put him in office; see the events below for the primary that preceded it.",
-      "The archive does not yet show what Hargrove's administration passed or fought over during 1979-80 beyond the record's general sweep of the year. Further Herald issues from the fall and spring semester have not yet been checked."
+      "Hargrove, a Milton junior, won the ASG presidency in the 17 April 1979 general election, defeating David Young 1,087-535 on a turnout of 1,725 votes. The same day's balloting elected the rest of his executive slate: Steve Fuller administrative vice president, Dean Bates activities vice president, Betty Thompson secretary and Terri Craig treasurer. All five were sworn in at the outgoing Congress's 24 April meeting, where Congress waived its rules so that Hargrove's first act as president, a resolution asking that Helm-Cravens Library stay open longer, could pass unanimously the same night. By August 30, 1979, at the start of the school year, the Herald profiled him - spelled 'Jamie Hargrove' in the byline - under the headline that he believed students were interested.",
+      "Beyond the executive roster now on record, the archive does not yet show in detail what Hargrove's administration passed or fought over during 1979-80, beyond the record's general sweep of the year. Further Herald issues from the fall and spring semester have not yet been checked."
      ],
      "also_regent": true
     }
@@ -8755,6 +8747,21 @@
       "label": "SGA Resolution 80-1, Permission for Room Inspection",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/259"
      }
+    },
+    {
+     "date": "1979-04-24",
+     "title": "New ASG officers sworn in; Hargrove's first resolution passed",
+     "body": "At its 24 April 1979 meeting, ASG's outgoing 1978-79 Congress passed four housing and parking resolutions and then swore in the newly elected 1979-80 officers: president Jamie Hargrove, administrative vice president Steve Fuller, activities vice president Dean Bates, secretary Betty Thompson and treasurer Terri Craig. Congress then voted to waive its rules and passed unanimously the new administration's first resolution, written by Hargrove, asking that Helm-Cravens Library stay open longer.",
+     "src": {
+      "label": "ASG Minutes, 24 Apr 1979",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
+      "file": "1978-79-asg-minutes-1979-04-24.pdf"
+     },
+     "src2": {
+      "label": "Herald 54:57, 26 Apr 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3463",
+      "file": "1979-80-herald-54-57-officers-sworn-in.pdf"
+     }
     }
    ],
    "status": "researched",
@@ -8780,8 +8787,100 @@
        }
       }
      ]
+    },
+    "executive": [
+     {
+      "office": "Administrative Vice President",
+      "name": "Steve Fuller",
+      "note": "A Bowling Green junior, elected 17 April 1979, defeating Tom Jecker, a Louisville senior, 973-574. At the 24 April swearing-in he urged Congress members to think about which committees they wanted to serve on.",
+      "src": {
+       "label": "Herald 54:56, 19 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454",
+       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records",
+       "file": "1979-80-herald-54-56-election-results.pdf"
+      },
+      "src2": {
+       "label": "ASG Minutes, 24 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
+       "file": "1978-79-asg-minutes-1979-04-24.pdf"
+      }
+     },
+     {
+      "office": "Activities Vice President",
+      "name": "Dean Bates",
+      "note": "A Fairport, N.Y., junior, elected 17 April 1979, defeating Ben Bratcher, a Louisville senior, 785-761 - the closest of the four executive-office races. At the 24 April swearing-in he announced that applications were open for the University Center Board.",
+      "src": {
+       "label": "Herald 54:56, 19 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454",
+       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records",
+       "file": "1979-80-herald-54-56-election-results.pdf"
+      },
+      "src2": {
+       "label": "ASG Minutes, 24 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
+       "file": "1978-79-asg-minutes-1979-04-24.pdf"
+      }
+     },
+     {
+      "office": "Secretary",
+      "name": "Betty Thompson",
+      "note": "A Bowling Green junior, elected 17 April 1979, defeating Lynn Driver, a Goodlettsville, Tenn., sophomore, 1,052-517. She signed the minutes of the 24 April 1979 swearing-in meeting as secretary.",
+      "src": {
+       "label": "Herald 54:56, 19 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454",
+       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records",
+       "file": "1979-80-herald-54-56-election-results.pdf"
+      },
+      "src2": {
+       "label": "ASG Minutes, 24 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
+       "file": "1978-79-asg-minutes-1979-04-24.pdf"
+      }
+     },
+     {
+      "office": "Treasurer",
+      "name": "Terri Craig",
+      "note": "A St. Joseph, Ill., junior, elected 17 April 1979, defeating Darell Pierce, a Louisville junior, 937-623. At the 24 April swearing-in she moved to waive ASG's rules so Hargrove's first resolution could be voted on immediately, and told Congress she would be drafting the new budget.",
+      "src": {
+       "label": "Herald 54:56, 19 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454",
+       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4461&context=dlsc_ua_records",
+       "file": "1979-80-herald-54-56-election-results.pdf"
+      },
+      "src2": {
+       "label": "ASG Minutes, 24 Apr 1979",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37",
+       "file": "1978-79-asg-minutes-1979-04-24.pdf"
+      }
+     }
+    ]
+   },
+   "documents": [
+    {
+     "file": "1979-80-herald-54-56-election-results.pdf",
+     "title": "Herald 54:56, 19 April 1979",
+     "summary": "Front-page report of the 17 April 1979 ASG general election: Jamie Hargrove's 1,087-535 win over David Young for president, and the AVP, activities VP, secretary and treasurer races, continued on page 6.",
+     "extract": "Steve Fuller, ... defeated Tom Jecker ... for administrative vice president, 973-574.",
+     "sga_pages": "1, 6",
+     "page": 2,
+     "src": {
+      "label": "Herald 54:56, 19 Apr 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3454"
+     }
+    },
+    {
+     "file": "1979-80-herald-54-57-officers-sworn-in.pdf",
+     "title": "Herald 54:57, 26 April 1979",
+     "summary": "Report of the 24 April 1979 ASG meeting: the outgoing Congress's four housing and parking resolutions, and the swearing-in of Hargrove's 1979-80 executive officers.",
+     "extract": "The officers for the 1979 ASG congress were sworn in.",
+     "sga_pages": "7",
+     "page": 8,
+     "src": {
+      "label": "Herald 54:57, 26 Apr 1979",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3463"
+     }
     }
-   }
+   ]
   },
   {
    "id": "1980-81",

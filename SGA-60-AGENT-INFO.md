@@ -350,55 +350,40 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
 ### 8.3 Research still owed, highest value first
 
 1. ~~The three years with no cabinet at all: 1979-80, 2001-02, 2003-04.~~
-   **2003-04 done, 2001-02 already done by `research-senate`, 1979-80 still
-   genuinely open — see below.** `viewcontent.cgi` opened again around 12:30
-   UTC on 20 August (plain requests, no special headers needed) and stayed open
-   long enough to pull four full SGA minutes PDFs straight from TopSCHOLAR:
-   2 Sep 2003, 16 Sep 2003, 2 Dec 2003, 13 Apr 2004 (all `sga/Meetings/Minutes/`
-   items 524, 522, 541, 543), reusing the recipe in §8.1 (this time no special
-   headers were even needed). Against that primary text, an adversarial
-   verifier trimmed six of thirteen officer claims for overclaiming ("held the
-   office throughout the year" narrowed to "confirmed at the meetings actually
-   checked"; "sworn in" narrowed to "approved by unanimous vote" where the
-   swearing-in itself wasn't shown) and cut two of five committee co-chair
-   claims down to one confirmed name apiece (Evelina Petkova and Tim Howard are
-   each named once, alongside an already-confirmed chair, with no stated role —
-   recorded as such rather than as "co-chair"). What survived and is now on
-   `data/years.json`: a nine-seat executive and Judicial Council roster
-   (Executive VP Patti Johnson, VP Finance Nick Todd, VP Public Relations Abby
-   Lovan, VP Administration Jessica Martin, IT Designate Matthew Pava, Sergeant
-   at Arms Cameron Yancey, Parliamentarian Mason Stevenson, Coordinator of
-   Committees Scott Wolfe, Chief Justice Troy Ransdell and Justices Josh
-   Collins/Gretchen Light/Scott Broadbent), the first Speaker of the Senate
-   Robert Watkins (elected 13 April 2004, 9-8 over Brittany Fausey — this also
-   corroborates, from the primary minutes, an event already in the record
-   sourced only to the Herald), and five senate committee chairs. 1979-80 is
-   not the same kind of gap: the digitized minutes collection has no meeting
-   from inside that term at all (only the 29 April and 6 May 1980 transition
-   meetings, which swear in *1980-81's* officers), and the only Herald coverage
-   the local index or the TopSCHOLAR landing pages surface is the presidential
-   race itself — no AVP, Secretary or Treasurer is named anywhere reachable
-   from here. The four previously-rejected 1979-80 candidates (Fuller, Bates,
-   Thompson, Craig) stay rejected; nothing found this run changes that. Leave
-   1979-80 for a run that can search full-text Herald PDFs or a yearbook, not
-   another pass over the same index.
-
-   **Yearbook checked, 21 August (scheduled run) — still no AVP, Secretary or
-   Treasurer.** `viewcontent.cgi` gave the WAF challenge (HTTP 202,
-   `x-amzn-waf-action: challenge`) on every attempt this run, checked at the
-   start and again after a gap, so no minutes or Herald PDFs were reachable.
-   `archive.org/download/talisman1979west` and `talisman1980west` (both in
-   archive.org's held range, not rate-limited) were read in full instead. Both
-   had already been mined by an earlier pass: every ASG-related passage found —
-   Kevin Kinne chairing the student opinion poll committee, Tim Irons chairing
-   rules and elections, Hargrove's White House meeting with President Carter,
-   the "sworn in as student regent" line about Steve Fuller (which is 1980-81
-   material, already correctly recorded there, not a second president for
-   1979-80) — is already on `data/years.json`, sourced to the same yearbook
-   pages. No new executive officer name turned up. This gap stays genuinely
-   open pending `viewcontent.cgi` access to the fall 1979/spring 1980 Herald
-   full text; do not re-run the Talisman search again without new pages to
-   check.
+   **All three done, 22 August (scheduled run) — 1979-80 was the last.**
+   2003-04 and 2001-02 were already done, as below. For 1979-80,
+   `viewcontent.cgi` was open (plain requests, no special headers) around
+   00:25–00:40 UTC on 22 August, and the earlier "no AVP, Secretary or
+   Treasurer is named anywhere reachable" conclusion turned out to be wrong —
+   not because the officers weren't covered, but because the coverage isn't in
+   the issue's own abstract on its TopSCHOLAR landing page, only in the PDF
+   itself, which no prior pass had actually opened for this specific issue.
+   Herald 54:56 (19 Apr 1979)'s front page, in a third column the abstract
+   doesn't index at all, reports Jamie Hargrove's win (1,087-535 over David
+   Young, 1,725 votes) *and* the three other executive races: Steve Fuller
+   administrative vice president (973-574 over Tom Jecker), Dean Bates
+   activities vice president (785-761 over Ben Bratcher, the closest of the
+   four), Betty Thompson secretary (1,052-517 over Lynn Driver) and Terri
+   Craig treasurer (937-623 over Darell Pierce, continued on p.7). Herald
+   54:57 (26 Apr 1979) then names all five by office as they were sworn in at
+   the 24 April meeting, and SGA's own minutes of that same meeting — already
+   mirrored locally as `1978-79-asg-minutes-1979-04-24.pdf` — independently
+   corroborate all four by what they did that night (Fuller on committees,
+   Bates on the Center Board, Craig on the budget, and Thompson's own
+   signature as secretary). This is exactly the four names an earlier pass
+   (`.research/officers-checked.json`) had found and then rejected, because
+   the verifier at the time could only see the same incomplete abstract and
+   couldn't confirm them — a case of CLAUDE.md's own warning about the local
+   index, not a wrong finding. A separate adversarial verifier this run
+   independently re-read all three documents at high resolution and confirmed
+   every name, race and number; it also caught an unrelated pre-existing
+   "70 candidates signing up for offices" clause on the neighbouring
+   1978-79 event that traced to no source in either issue, which was cut.
+   Landed on `research-backlog`: `organization.executive` for 1979-80, a new
+   24 April swearing-in event, Hargrove's profile rewritten around the primary
+   record, two Herald issues mirrored into `data/documents/`, and two pairs of
+   near-duplicate spring-1979 entries in 1978-79 merged. Nothing further is
+   owed here; the 1979-80 cabinet is as complete as the surviving record allows.
 2. ~~Twenty-six sets of 1996-97 minutes are mirrored into `data/documents/` and
    referenced by nothing~~ **Done, 20 August.** All 29 files (27 Congress
    meetings, 2 Executive Council) now carry a title, a summary, a sourced
@@ -655,10 +640,62 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   still shows no thumbnails — it is a dense name index by design, not a gallery,
   and adding images there is a separate, optional call for a future run, not a
   bug.
-- **Twenty-nine of the 61 years still have no year photograph** — every year has a
-  leader portrait, so the gap is entirely in photographs of the organisation at
-  work. That is a research job, but it is gated on nothing except the Talisman and
-  the archives.
+- **Eighteen of the 61 years still have no year photograph, down from twenty-nine**
+  (re-measured 22 August, scheduled run): 1981-82, 1982-83, 1983-84, 1987-88,
+  1990-91, 1993-94, 1994-95, 1995-96, 1996-97, 1997-98, 2000-01, 2001-02, 2002-03,
+  2003-04, 2005-06, 2006-07, 2008-09, 2009-10. Every year still has a leader
+  portrait (checked the same run: 0 of 61 leader records are without one, so
+  presidents Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley, named in an
+  older stored task prompt as missing, are confirmed still covered), so the whole
+  remaining photo gap is in photographs of the organisation at work.
+
+  **The stored prompt's own source list is wrong: there is no `digitalcommons.wku.edu/talisman/`
+  collection** — that path 404s, a real "page not found" from the server, not a
+  block. The Talisman yearbooks are catalogued under
+  `digitalcommons.wku.edu/dlsc_ua_yearbooks/` (the collection landing page, itself
+  reachable) as individual `dlsc_ua_records/NNNN` items, mixed in with the Herald
+  and everything else in that records series. That landing page is not paginated
+  and does not list every year — it is a curated subset, and there is a real gap
+  between 1979/1981-and-earlier and 2003, then another gap between 2003 and 2013.
+  Confirmed by publication date on each item's own page (`grep`-able as `<p>` under
+  the `Publication Date` heading) rather than guessed from title order:
+
+  | academic year | item | title | pub. date | article no. (for `viewcontent.cgi?article=`) |
+  |---|---|---|---|---|
+  | 1981-82 | `dlsc_ua_records/405` | An Uphill Battle | 6-1-1982 | 1405 |
+  | 1982-83 | `dlsc_ua_records/406` + `/407` | A Season of Hope, pts. 1–2 | 6-1-1983 | 1406, 1407 |
+  | 1983-84 | `dlsc_ua_records/408` | The Touch of Red | 6-1-1984 | 1408 |
+  | 1987-88 | `dlsc_ua_records/412` | In a Different Light | 6-1-1988 | 1412 |
+  | 1990-91 | `dlsc_ua_records/415` | The Western World | 6-1-1991 | 1415 |
+  | 1993-94 | `dlsc_ua_records/418` | Against All Odds | 6-1-1994 | 1418 |
+  | 1994-95 | `dlsc_ua_records/420` + `/421` | Xposure: Rites of Passage (spring); Canvas Flesh (summer) | 1-1-1995, 6-1-1995 | 1420, 1421 |
+  | 1995-96 | `dlsc_ua_records/419`, `/422`, `/423`, `/424` | Xposure: Prejudice: Beyond Black & White (winter); Fall 1995; Spring 1996; Summer 1996 | 12-1-1995, 9-1-1995, 1-1-1996, 6-1-1996 | 1419, 1422, 1423, 1424 |
+  | 2002-03 | `dlsc_ua_records/594` | About Face | 2003 (year only on the item page) | 1594 |
+
+  The article number for `viewcontent.cgi?article=` is not the same as the item
+  number in the `/dlsc_ua_records/NNNN/` URL — on every item checked this run it
+  was the item number plus 1000, but confirm each one from the item's own page
+  rather than assume the offset holds everywhere. No candidate found this run for
+  1996-97, 1997-98, 2000-01, 2001-02, 2003-04, 2005-06, 2006-07, 2008-09 or
+  2009-10 — the yearbooks landing page simply has no entry in that range; try a
+  live TopSCHOLAR search or `wku.edu` Wayback captures for those, not another pass
+  over this same landing page. `archive.org`'s Talisman holdings do not help
+  either: it holds 1972–1981 and 1986–1987 (by publication year, i.e. the academic
+  years up through 1980-81 and 1985-86/1986-87), none of which land inside the
+  current 18-year gap.
+
+  **`viewcontent.cgi` was WAF-challenged on every attempt this run** — 5 tries
+  across roughly 20 minutes, spread out with real work in between (not a
+  sleep-loop), landing on the item page first, carrying its cookie, sending
+  `Referer` back to the item page plus the full `Sec-Fetch-*` /
+  `Upgrade-Insecure-Requests` header set, and using the article number read
+  straight off the page rather than guessed. Every attempt came back HTTP 202
+  with `x-amzn-waf-action: challenge`, 0 bytes. Per the 20–21 August notes above,
+  this is a challenge that lifts and re-closes by the hour, not a fixed block —
+  worth a fresh attempt next run before assuming it is still closed. The table
+  above is the ready-made worklist for whenever it opens: land on each item page,
+  pull the PDF with the article number listed, find the SGA section, and match a
+  name to a caption before using any face from it.
 
 ### 8.5 Data hygiene
 
