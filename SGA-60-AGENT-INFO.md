@@ -559,6 +559,15 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    unreachable, so they were never read against the meetings they cite. That
    was still true of 61 of them going into this run.
 
+   **Editor's trim on merge, 22 August:** the 6 Apr 1993 absence came out of
+   the Cailles note. One `src` on a member entry has to carry every fact in
+   that note, and the entry cites the 9 Feb 1993 minutes. Do not put it back
+   under that citation. Note also that `build.py` drops `profile` and
+   `src2`..`src20` when it builds a member's page, so eleven member profiles
+   and five sets of extra citations already in `years.json` are written and
+   never published. Until that is fixed, a member entry gets one source and
+   its note must stay inside what that one source shows.
+
    Item 406 is now done, and the dating anomaly is resolved rather than
    inferred. `viewcontent.cgi` refused the research run but was open during the
    editor's pass the same day, and article 1918 came down on the first request.
