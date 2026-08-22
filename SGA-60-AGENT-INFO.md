@@ -777,14 +777,37 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   still shows no thumbnails — it is a dense name index by design, not a gallery,
   and adding images there is a separate, optional call for a future run, not a
   bug.
-- **Eighteen of the 61 years still have no year photograph, down from twenty-nine**
-  (re-measured 22 August, scheduled run): 1981-82, 1982-83, 1983-84, 1987-88,
-  1990-91, 1993-94, 1994-95, 1995-96, 1996-97, 1997-98, 2000-01, 2001-02, 2002-03,
-  2003-04, 2005-06, 2006-07, 2008-09, 2009-10. Every year still has a leader
-  portrait (checked the same run: 0 of 61 leader records are without one, so
-  presidents Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley, named in an
-  older stored task prompt as missing, are confirmed still covered), so the whole
-  remaining photo gap is in photographs of the organisation at work.
+- **Thirteen of the 61 years still have no year photograph, down from eighteen**
+  (worked 22 August, scheduled run, off the ready-made worklist below — see PR
+  #135): 1993-94, 1994-95, 1995-96, 1996-97, 1997-98, 2000-01, 2001-02, 2002-03,
+  2003-04, 2005-06, 2006-07, 2008-09, 2009-10. 1981-82, 1983-84 and 1987-88 were
+  already done before this run (three Talisman photographs already on `main`).
+  This run added two more, both adversarially verified against the rendered
+  PDF pages before landing: **1982-83** — a full Associated Student Government
+  group portrait from the 1983 Talisman's organizations section, p. 232
+  (`dlsc_ua_records/407`), which also named Kerrie Stewart as Public Affairs
+  Vice President, a gap the archive's own 1981-82 Congress roll had anticipated
+  but never filled in on the 1982-83 executive list — added there too. The same
+  caption spells the president's name "Margaret Regan" against every other
+  source's "Ragan"; flagged on her record, not corrected. **1990-91** — the 1991
+  Talisman's "Double takes" feature, p. 22-23 (`dlsc_ua_records/415`), reporting
+  a genuine ASG-run fundraiser (a dollar-a-ticket raffle that sent Nashville
+  sophomore Jeff Goff into WKU President Thomas Meredith's office for a day, 15
+  November 1990) that was not in the archive at all; added as a new event
+  alongside the photograph. **1993-94 and 2002-03 checked and ruled out**: both
+  items' full TopSCHOLAR abstracts were read before committing to the 254MB and
+  70MB downloads, and neither lists any student-government content — both are
+  portrait/Greek/sports yearbooks with no organizations section. **1994-95 and
+  1995-96 also ruled out**: these four items are "Xposure" themed mini-yearbooks,
+  not standard Talismans — checked all four full abstracts (spring/summer 1995,
+  winter/fall/spring/summer 1995-96); every one is a magazine-style set of
+  feature stories (religion, art, tattoos, campus life) with no organizational
+  content. None of these four are worth downloading for this purpose. Every year
+  still has a leader portrait (checked 22 August: 0 of 61 leader records are
+  without one, so presidents Nick Todd, Katie Dawson, Jeanne Johnson and Reagan
+  Gilley, named in an older stored task prompt as missing, are confirmed still
+  covered), so the whole remaining photo gap is in photographs of the
+  organisation at work.
 
   **The stored prompt's own source list is wrong: there is no `digitalcommons.wku.edu/talisman/`
   collection** — that path 404s, a real "page not found" from the server, not a
@@ -797,42 +820,43 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   Confirmed by publication date on each item's own page (`grep`-able as `<p>` under
   the `Publication Date` heading) rather than guessed from title order:
 
-  | academic year | item | title | pub. date | article no. (for `viewcontent.cgi?article=`) |
-  |---|---|---|---|---|
-  | 1981-82 | `dlsc_ua_records/405` | An Uphill Battle | 6-1-1982 | 1405 |
-  | 1982-83 | `dlsc_ua_records/406` + `/407` | A Season of Hope, pts. 1–2 | 6-1-1983 | 1406, 1407 |
-  | 1983-84 | `dlsc_ua_records/408` | The Touch of Red | 6-1-1984 | 1408 |
-  | 1987-88 | `dlsc_ua_records/412` | In a Different Light | 6-1-1988 | 1412 |
-  | 1990-91 | `dlsc_ua_records/415` | The Western World | 6-1-1991 | 1415 |
-  | 1993-94 | `dlsc_ua_records/418` | Against All Odds | 6-1-1994 | 1418 |
-  | 1994-95 | `dlsc_ua_records/420` + `/421` | Xposure: Rites of Passage (spring); Canvas Flesh (summer) | 1-1-1995, 6-1-1995 | 1420, 1421 |
-  | 1995-96 | `dlsc_ua_records/419`, `/422`, `/423`, `/424` | Xposure: Prejudice: Beyond Black & White (winter); Fall 1995; Spring 1996; Summer 1996 | 12-1-1995, 9-1-1995, 1-1-1996, 6-1-1996 | 1419, 1422, 1423, 1424 |
-  | 2002-03 | `dlsc_ua_records/594` | About Face | 2003 (year only on the item page) | 1594 |
+  | academic year | item | title | pub. date | article no. (for `viewcontent.cgi?article=`) | status |
+  |---|---|---|---|---|---|
+  | 1981-82 | `dlsc_ua_records/405` | An Uphill Battle | 6-1-1982 | 1405 | done, already on `main` |
+  | 1982-83 | `dlsc_ua_records/406` + `/407` | A Season of Hope, pts. 1–2 | 6-1-1983 | 1406, 1407 | **done, PR #135** — group photo + text is at `/407`, p. 232; `/406` (pp. 1-193) not needed |
+  | 1983-84 | `dlsc_ua_records/408` | The Touch of Red | 6-1-1984 | 1408 | done, already on `main` |
+  | 1987-88 | `dlsc_ua_records/412` | In a Different Light | 6-1-1988 | 1412 | done, already on `main` |
+  | 1990-91 | `dlsc_ua_records/415` | The Western World | 6-1-1991 | 1415 | **done, PR #135** — p. 22-23 |
+  | 1993-94 | `dlsc_ua_records/418` | Against All Odds | 6-1-1994 | 1418 | **ruled out, 22 August** — full abstract read, no SGA/organizations content (portraits, Greek, student life, sports only) |
+  | 1994-95 | `dlsc_ua_records/420` + `/421` | Xposure: Rites of Passage (spring); Canvas Flesh (summer) | 1-1-1995, 6-1-1995 | 1420, 1421 | **ruled out, 22 August** — Xposure is a themed feature magazine, not an organizations yearbook; full abstracts read, no SGA content |
+  | 1995-96 | `dlsc_ua_records/419`, `/422`, `/423`, `/424` | Xposure: Prejudice: Beyond Black & White (winter); Fall 1995; Spring 1996; Summer 1996 | 12-1-1995, 9-1-1995, 1-1-1996, 6-1-1996 | 1419, 1422, 1423, 1424 | **ruled out, 22 August** — same as above, all four abstracts read |
+  | 2002-03 | `dlsc_ua_records/594` | About Face | 2003 (year only on the item page) | 1594 | **ruled out, 22 August** — full abstract read, no SGA/organizations content |
 
   The article number for `viewcontent.cgi?article=` is not the same as the item
   number in the `/dlsc_ua_records/NNNN/` URL — on every item checked this run it
   was the item number plus 1000, but confirm each one from the item's own page
-  rather than assume the offset holds everywhere. No candidate found this run for
+  rather than assume the offset holds everywhere. No candidate found for
   1996-97, 1997-98, 2000-01, 2001-02, 2003-04, 2005-06, 2006-07, 2008-09 or
   2009-10 — the yearbooks landing page simply has no entry in that range; try a
   live TopSCHOLAR search or `wku.edu` Wayback captures for those, not another pass
   over this same landing page. `archive.org`'s Talisman holdings do not help
   either: it holds 1972–1981 and 1986–1987 (by publication year, i.e. the academic
   years up through 1980-81 and 1985-86/1986-87), none of which land inside the
-  current 18-year gap.
+  current 13-year gap. **The whole table above is now exhausted** — every
+  candidate the yearbooks landing page offers has either landed or been checked
+  and ruled out. The next pass on this needs a different source entirely: a live
+  TopSCHOLAR search, `wku.edu` Wayback captures, or Herald coverage for the nine
+  years listed above with no candidate at all.
 
-  **`viewcontent.cgi` was WAF-challenged on every attempt this run** — 5 tries
-  across roughly 20 minutes, spread out with real work in between (not a
-  sleep-loop), landing on the item page first, carrying its cookie, sending
-  `Referer` back to the item page plus the full `Sec-Fetch-*` /
-  `Upgrade-Insecure-Requests` header set, and using the article number read
-  straight off the page rather than guessed. Every attempt came back HTTP 202
-  with `x-amzn-waf-action: challenge`, 0 bytes. Per the 20–21 August notes above,
-  this is a challenge that lifts and re-closes by the hour, not a fixed block —
-  worth a fresh attempt next run before assuming it is still closed. The table
-  above is the ready-made worklist for whenever it opens: land on each item page,
-  pull the PDF with the article number listed, find the SGA section, and match a
-  name to a caption before using any face from it.
+  **`viewcontent.cgi` was open on plain requests for a later run the same day**
+  (22 August, the run that produced PR #135) — no special headers needed, six
+  large PDFs (17MB-254MB) fetched clean with a bare `curl`. Confirms the
+  20-21 August notes: this is a challenge that lifts and re-closes by the hour,
+  not a fixed block, so keep trying rather than treating one 202 as final. The
+  table above is fully worked now, so there is no remaining worklist item this
+  particular access window unlocks — the next thing worth trying it against is
+  whatever a live TopSCHOLAR search turns up for the nine years with no Talisman
+  landing-page candidate at all.
 
 ### 8.5 Data hygiene
 
