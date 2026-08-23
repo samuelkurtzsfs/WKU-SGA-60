@@ -1,41 +1,317 @@
 [
-  {"year": "1971-72", "name": "Dianne Hurley", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Lalita Allen", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Carolyn Ragland", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Kathy Robertson", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Clair Parrish", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Patty Wohlheiter", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Diane Chapman", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Patty Skaggs", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Candy Mason", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Cheryl Mack", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Brenda Armuth", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "June Tyler", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Cindy Coslett", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Chris Moore", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Janice Lancaster", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Julie Bush", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Nancy Manar", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Kathy Newton", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Bobbie Taylor", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Mary Coleman", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Nancy Burdett", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Robbie Coatney", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Susan Phillips", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Dave Luckey", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Steve Turner", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Marshall Galloway", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Terry Miller", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Paul Jennings", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "George Kendrick", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Robert Scales", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Jack Glasser", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Danny Creasy", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Phil Berry", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Reed Morgan", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Ed Givens", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Bill Livingston", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Marshall Florence", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "Gayle Sharp", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}},
-  {"year": "1971-72", "name": "John Tuttle", "src": {"label": "1972 Talisman, p. 272", "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"}}
+ {
+  "year": "1971-72",
+  "name": "Dianne Hurley",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Lalita Allen",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Carolyn Ragland",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Kathy Robertson",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Clair Parrish",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Patty Wohlheiter",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Diane Chapman",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Patty Skaggs",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Candy Mason",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Cheryl Mack",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Brenda Armuth",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "June Tyler",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Cindy Coslett",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Chris Moore",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Janice Lancaster",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Julie Bush",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Nancy Manar",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Kathy Newton",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Bobbie Taylor",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Mary Coleman",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Nancy Burdett",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  },
+  "note": "The yearbook's own name index spells the surname 'Burdette.'"
+ },
+ {
+  "year": "1971-72",
+  "name": "Robbie Coatney",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Susan Phillips",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Dave Luckey",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Steve Turner",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Marshall Galloway",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Terry Miller",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Paul Jennings",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "George Kendrick",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Robert Scales",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Jack Glasser",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Danny Creasy",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Phil Berry",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Reed Morgan",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  },
+  "note": "A different Reed Morgan from the 1968-69 plaque name of the same, who had already graduated as a senior in spring 1966; this one is a contemporary Alpha Phi Alpha fraternity brother alongside fellow Congress member George Kendrick."
+ },
+ {
+  "year": "1971-72",
+  "name": "Ed Givens",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Bill Livingston",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "Marshall Florence",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  },
+  "note": "The yearbook's own name index spells the first name 'Marshal' (one L)."
+ },
+ {
+  "year": "1971-72",
+  "name": "Gayle Sharp",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ },
+ {
+  "year": "1971-72",
+  "name": "John Tuttle",
+  "src": {
+   "label": "1972 Talisman, pp. 272-273",
+   "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+  }
+ }
 ]
