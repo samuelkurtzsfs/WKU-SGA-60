@@ -4983,3 +4983,87 @@ leader portraits and 61 year photographs across 160 image files, 118 documents a
 1,111 legislation files. build.py, check_data.py, check_contrib.py and check_duplicates.py all
 clean on main at the close, and site/ rebuilds with no change. The six duplicate pairs are the
 known pre-existing ones. No pull requests left open.
+
+# 23 August 2026 — editor's seventh pass
+
+Two pull requests open at the start of the run, both merged: #167 person profiles, #168 the
+backlog. GitHub was reachable and both branches were cut from the current main, so this was a
+full pass with nothing left open. The stale 4 August branches are gone; #6, #7 and #8 were
+closed on an earlier pass and no longer appear.
+
+## What was checked, and against what
+
+Not a sample. Every one of the twelve senator profiles in #167 cited a bill mirrored in
+`data/legislation/`, so all eleven bills and the one resolution were opened and read against
+the claim: bills 5-22-F, 7-22-F, 14-22-F, 15-22-F, 27-23-S, 34-23-S, 35-23-S, 39-23-S,
+40-23-S, 41-23-S and 47-23-S, and Resolution 1-23-F of the following session. Every vote
+count, reading date, dollar figure and office title matched the cover block exactly, including
+the two bills whose Pass and Fail lines are blank and which the profiles correctly described as
+carrying no recorded vote.
+
+For #168, TopSCHOLAR's `viewcontent.cgi` refused this run outright — three retries at
+95-second intervals and a fetch through a second client all came back 403 — so the Herald of
+11 April 2002 was read from the Wayback Machine's September 2024 snapshot of the same URL
+instead. Printed page 6 carries the photograph, the credit line to Edward Linsmier and the
+caption naming Jamie Sears, Joe Loney and Ross Pruitt, and the winners box on the same page
+confirms Sears as president and Pruitt as vice president of finance. The committed file is a
+real JPEG and is the same photograph.
+
+## What the editor cut
+
+Four things, none of them a deletion of research.
+
+- **Barrett Gibbs's profile said a Safety Awareness Week was "held" 17-21 October 2022.**
+  Bill 7-22-F passed on the 11th and describes a week beginning on the 17th: it proves what was
+  funded and planned, never how the week went. Reworded to "planned for." Brett Phelps's
+  profile, drawn from the same bill, had already got this right.
+- **Neel Patel's profile inverted who was surveyed.** Bill 34-23-S surveys students about
+  relations with Bowling Green, not the Bowling Green community. Corrected, and the $50
+  restored to the sentence.
+- **Salvador Leon's profile claimed a bill authored by Salvador Leon Golib.** This archive
+  keeps those two names apart deliberately: no alias in `name-aliases.json`, two separate
+  person pages, and a 2023-24 leader note that says in as many words that the record does not
+  confirm they are one person. The sentence and its second source are gone rather than merging
+  two people on an assumption. Bill 40-23-S still reaches the reader through the year page.
+- **The 2002 election-night caption was the Herald's caption, not ours.** Near word for word,
+  and unmarked as a quote. Rewritten to carry every fact — who is pictured, his class and
+  hometown, what she had just learned, that Pruitt ran unopposed — in the archive's own words.
+
+## What held up
+
+The profiles routine's arithmetic is sound and its hedging is good: it wrote "with 29 votes in
+favor" rather than "29-0" where the Fail line was blank, called Mallory Hardesty the sole
+author of Bill 35-23-S rather than a co-author, and recorded Caleb Collins as Community
+Relations Chair rather than promoting a committee chair into a senate seat — the error that
+killed all thirty-nine "missing president" claims in the past.
+
+The backlog routine's claim that a separate adversarial subagent had re-verified the
+photograph word for word turned out to be true when checked against the page independently.
+That is the standard, and it is worth saying so.
+
+The 2001-02 filing is also right, and it is the subtle one: an April election files its
+*result* forward — Sears served 2002-03 — but the *night itself* belongs to 2001-02, and the
+photograph is filed there as a year photograph rather than as a leader portrait.
+
+## Still open
+
+- The Salvador Leon / Salvador Leon Golib identification. If it is to be made, it needs a
+  source naming one person under both forms and an entry in `data/name-aliases.json`, not a
+  sentence in a profile.
+- Eight years still have no year photograph: 1996-97, 1997-98, 2000-01, 2003-04, 2005-06,
+  2006-07, 2008-09, 2009-10. The backlog routine's own note is honest about the limits of what
+  it checked, and 2006-07 in particular has no April hit in the local Herald index at all —
+  which per CLAUDE.md is a gap in the index, not evidence of no coverage.
+- Everything on the sixth pass's open list that no routine has picked up since.
+- TopSCHOLAR was refusing `viewcontent.cgi` for the whole second half of this run. The Wayback
+  Machine served the same file and is not rate limited; routines blocked on a 403 should try it
+  before concluding a source cannot be read.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced entries, 73 leader records all carrying a written
+profile, 113 leader portraits and 62 year photographs, 1,111 legislation files, 295 documents
+copied into the site. build.py, check_data.py and check_contrib.py all clean on main at the
+close, and site/ rebuilds with no change. check_duplicates.py reports the same six pre-existing
+pairs, every one a genuinely separate event. Vercel is deploying again after refusing earlier
+in the day, so the merges above are live. No pull requests left open.
