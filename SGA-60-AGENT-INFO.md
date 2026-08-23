@@ -856,10 +856,39 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    `build.py`, `check_data.py` and `check_duplicates.py` all pass clean;
    the six known duplicate pairs are unchanged.
 
-   **What's left:** `2012-13`'s legislation PDFs (10 files) have no usable
-   text layer at all (scanned images, 0–33 characters of extracted text) —
-   out of reach for this method without OCR, and not attempted here. The
-   long-CONTACTS-list completeness gap the last pass flagged (several
+   **The 2012-13 OCR gap is now done, 23 August (scheduled run).** All 11
+   files in `data/legislation/2012-13/` are scanned images with a genuinely
+   empty text layer (confirmed again: 0 characters via PyMuPDF on every
+   one). Rendered each page to a 300 dpi PNG with PyMuPDF and read it with
+   `tesseract` (neither installed by default in this container; both went
+   in with `apt-get install -y tesseract-ocr` and `pip install pymupdf
+   pillow`, which is worth remembering rather than re-discovering next
+   time this comes up). Two of the eleven pages (`b10-13-s.pdf`,
+   `b16-13-s.pdf`) came out as ligature soup at 0/90/180 degrees and only
+   read cleanly rotated -90/270. All ten bills and resolutions in the
+   batch print a plain `AUTHORS:`/`SPONSOR:` field exactly like the
+   post-2015 template already described elsewhere in this section, so the
+   same extraction rule applied: only the labeled author/sponsor field,
+   never a name off the `CONTACTS:` list underneath it. The eleventh file,
+   `ea1-12.pdf`, is not a bill or resolution but an "executive action" with
+   no AUTHOR/SPONSOR/CONTACTS field at all, signed "Cory Dodds, President,
+   Student Government Association" — checked against the rest of the
+   corpus (1,111 entries in `legislation.json`, 1,123 rows in
+   `legislation-authors.json` before this pass) and confirmed to be the
+   *only* executive action in the whole archive, with zero prior rows
+   crediting one to a signature alone; adding one here would have been a
+   new precedent, not a continuation of practice, so it was left out.
+   A separate adversarial verifier subagent independently re-rendered and
+   re-OCR'd all 11 files from scratch (never shown the first pass's
+   output) and confirmed every one of the 10 author/sponsor pairings
+   letter-for-letter, plus the decision to leave `ea1-12.pdf` alone.
+   Landed 21 rows (10 authors, 11 sponsors — `r03-12-f.pdf` names two
+   sponsoring committees) on `research-backlog`;
+   `data/legislation-authors.json` now holds 1,144 rows. `build.py`,
+   `check_data.py` and `check_duplicates.py` all pass clean; the six known
+   duplicate pairs are unchanged.
+
+   **What's left:** the long-CONTACTS-list completeness gap the last pass flagged (several
    bills' `CONTACTS:` blocks running to 14–19 people, of which only a
    couple were ever captured) is now moot for the *authors* file, since
    contacts were never meant to be in it — but if a future pass wants a
