@@ -51448,23 +51448,14 @@
       "profile": [
        "President Rush Robinson appointed Maggie Yelton chief of staff at the 25th Senate's first meeting on 23 April 2025, alongside senator-at-large Amelia Tucker; former Speaker Sarah Vincent swore in the new Senate.",
        "Yelton told the Herald's editorial board on 11 September 2025 that a new Swipe It Forward programme, sponsored by the WKU Restaurant Group, would let students donate up to three meal swipes a semester from their meal plans, redeemable at the Fresh Food Company by students who requested them through a food-assistance form; President Robinson said he expected it to appear on the iWKU app within a couple of weeks. At the Senate's 17 February 2026 meeting, which passed a bill funding CPR-certification vouchers, Yelton reported seven dental, one ID and thirteen transcript vouchers still available in the voucher program."
-      ]
-     },
-     {
-      "office": "Chief of Staff",
-      "name": "Maggie Yelton",
-      "src": {
+      ],
+      "src2": {
        "label": "SGA legislation: Funding for the SGA Pink Walk",
        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_9_25_f.pdf"
-      }
-     },
-     {
-      "office": "Chair of the Action &",
-      "name": "Jade Ismail",
-      "note": "Named on the document as chair of the action &.",
-      "src": {
-       "label": "SGA legislation: Funding for the STEMPOWERMENT and SGA Uno Tournament Fundraiser",
-       "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_3_26_s.pdf"
+      },
+      "src3": {
+       "label": "SGA legislation: Funding for the Borrow-a-Calculator Program",
+       "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_6_25_f.pdf"
       }
      },
      {
@@ -51485,6 +51476,10 @@
       "src3": {
        "label": "Herald, 15 Apr 2026 - Lucas wins SGA presidential election",
        "url": "https://wkuherald.com/92808/news/lucas-wins-sga-presidential-election/"
+      },
+      "src4": {
+       "label": "SGA legislation: Funding for the STEMPOWERMENT and SGA Uno Tournament Fundraiser",
+       "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_3_26_s.pdf"
       }
      },
      {
@@ -51498,14 +51493,6 @@
       "src": {
        "label": "Herald, 15 Sep 2025",
        "url": "https://wkuherald.com/86549/news/sga-announces-opportunity-for-students-to-leave-a-lasting-legacy-on-campus/"
-      }
-     },
-     {
-      "office": "Chief of Staff",
-      "name": "Maggie Yelton",
-      "src": {
-       "label": "SGA legislation: Funding for the Borrow-a-Calculator Program",
-       "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_6_25_f.pdf"
       }
      }
     ],
