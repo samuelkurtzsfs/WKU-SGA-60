@@ -4799,3 +4799,106 @@ has not been swept for.
 rows across 1,111 legislation files. build.py, check_data.py, check_contrib.py and
 check_duplicates.py all clean on main at the close. The six duplicate pairs are the known
 pre-existing ones and every one of them is genuinely two events. No pull requests left open.
+
+# 23 August 2026 — editor's fifth pass
+
+One pull request open at the start of the run, #160, person profiles. The three stale
+branches named in the standing brief — #6 photographs, #7 the 1980s, #8 the 2020s — are
+already closed and no longer need dealing with. GitHub was reachable this run: `gh` is not
+installed in these containers, but git push works and the GitHub tools answer, so this was a
+full pass and not a review-only one.
+
+## #160, person profiles: merged after six corrections
+
+Twenty-three profiles in the end, not the twelve the pull request opened with. The routine
+pushed a second commit while the review was in progress — eleven more profiles covering the
+1969 class officers and the Judicial Council justices of 2008 to 2012 — so both commits went
+through the same check.
+
+The verification went well past a sample. Sixteen bills and resolutions in the 2025-26
+legislation folder were opened and read, along with the executive board minutes of 12 August
+2025, the Judicial Council minutes of 26 January 2026, the Herald's report of the chief
+justice election of 12 November 2025, and the November 2009, May 2010 and October 2012
+snapshots of the SGA judicial page. The 1969 election result sheet had to be read as rendered
+images: its OCR text layer silently drops the junior class vote counts altogether, so anyone
+checking that document by text extraction alone would have found nothing to check against.
+
+Most of it held. Every dollar figure, date, purpose and co-authorship in the eight senator
+profiles matched the bills. The 1969 figures are exact to the sheet — Pritchett 493 to King's
+449, Stagg 475 to Ray's 458, Lamason 546 to Reuling's 408, Todd leading the at-large race on
+1,719 with Durham second on 1,514. The archived judicial rosters name every justice claimed.
+
+Six things were wrong or overstated.
+
+Amelia Tucker's profile said she was credited as an author on six pieces of legislation. She
+is named in the AUTHORS block of fifteen of the session's filed bills and resolutions, each
+one spelling her Amelia Tucker or Amelia R. Tucker, so this is not a surname collision. The
+count is now fifteen, and the six described are framed as a selection. The same sentence said
+the Amelia R. form appears twice; it appears six times. I briefly replaced the comparison the
+routine's own verifier had cut with a different one and then took it out again: fifteen by one
+counting method and thirteen by another, against twelve for the next most active author, is
+too close to publish as a superlative.
+
+Mike Durham's profile stated that he had served that February on the Constitutional Revision
+Committee. The 1968-69 entry for that member carries a note saying the name is OCR-garbled —
+the minutes read "Hike Durham" — and unverified against any second source. Asserting the two
+are one person is the merge-by-name this project forbids, and the profile now reports what
+the minutes record and says the identification is not established.
+
+Five 1969 profiles called the election a Congress election. The year's own note says the
+result sheet is headed *Associated Student Government Election* and never uses the word
+Congress; they now use the document's wording.
+
+Both 2025-26 chief justice profiles left the handover vaguer than this archive already knows
+it: Graham's ended at "by 26 January 2026 the minutes record Stirling as chief justice," when
+the year's own sourced events date the election to 12 November 2025, 3-1 over Xavier Spiess,
+and the swearing-in to 18 November. Both now carry the dates, checked against the Herald
+report itself. Graham's profile also had the executive board convening "for its first meeting
+of the year" on 12 August, which nothing in those minutes says; cut.
+
+Resolution 2-26-S was described as adopting bylaws drafted by the Bylaws Review Committee.
+The resolution says reviewed and revised. Trimmed. And Tyreesha Morris turns out to be spelled
+three ways across her own legislation, not two — Tyreesha four times, Tyresha once and Tyreeha
+once — so the third spelling is now in `name-aliases.json` and her profile says so.
+
+## What could not be checked
+
+Lamiaya Page's appointment to the Judicial Council on 29 January 2008. TopSCHOLAR answered the
+minutes download with HTTP 202 and an empty body on three attempts, including after the
+90-second backoff and with a session cookie carried from the landing page. That landing page
+does confirm the meeting date and that committee vacancies were on the agenda, and the leader
+entry and its citation were already on main, so the profile adds no claim beyond what was
+published — it was not a reason to hold the merge. It is worth another attempt on a run when
+the archive is answering.
+
+This is the bot protection behaving exactly as the handoff describes, and it is worth noting
+that it now refuses a `viewcontent.cgi` download while serving the landing page beside it
+without complaint.
+
+## Still open
+
+- The Kentucky Senate Bill 17 signing date of 20 March 2017, in two profiles and no cited
+  source. Untouched again; four passes have now walked past it.
+- The two harvester typos in `legislation.json`, "Academic Compeition Club" and "Adopt
+  Admendments".
+- CLAUDE.md still lists "John Lyne vs Larry Zielke 1970-71" as an open question. It is not
+  open any more. The archive corrected Zielke to 1969-70 and Lyne to 1970-71 some passes ago,
+  and the 1969 result sheet read this run corroborates it from a source neither correction
+  cited: Zielke beat Frank Genzianelli 1,882 to 1,626 in the spring 1969 election, which by
+  this project's own filing rule seats him in 1969-70, and John Lyne lost the vice-presidency
+  on the same sheet to David Porter, 1,751 to 1,725. That line in CLAUDE.md can be retired,
+  and the result sheet is worth citing on both leader records.
+- The photograph run's citations still point at bare `wp-content` image files with no article
+  URL beside them.
+- Kaden Blankenship's profile stops at his appointment, though the year already records him
+  resigning from the council on 2 April 2026 to stand on a presidential ticket, and that
+  ticket's censure. Left for the routine rather than written by the editor.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced entries, 73 leader records, 1,082 executive and
+senate officer entries, 1,388 senate members, 725 people carrying a written profile, 110
+leader portraits and 61 year photographs across 157 image files, 118 documents attached, 1,111
+legislation files with 1,144 authorship rows. build.py, check_data.py, check_contrib.py and
+check_duplicates.py all clean on main at the close. The six duplicate pairs are the known
+pre-existing ones. No pull requests left open.
