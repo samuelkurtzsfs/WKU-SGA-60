@@ -44370,6 +44370,24 @@
      "note": "This was the 17th Senate, called to order each week by Speaker Asha McWilliams. Randall P. Bogard served as SGA's faculty advisor. Minutes for this term were posted by WKU as Word documents rather than PDFs.",
      "members": [
       {
+       "name": "Megan Haupt",
+       "seat": "Senator",
+       "note": "Sworn in Oct. 2, 2018 alongside Ashlyn Jones. No further mention found elsewhere in the corpus.",
+       "src": {
+        "label": "SGA Senate minutes, October 2, 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_2_oct.docx"
+       }
+      },
+      {
+       "name": "Logan Hornback",
+       "seat": "Senator",
+       "note": "Nominated by President Mayer to fill a vacant Senate seat, confirmed 18-14-2 and sworn in at the same meeting, 16 Oct. 2018, after a motion out of the bylaws so she could join the debate. She is not named in the minutes of the previous meeting, 2 Oct. 2018.",
+       "src": {
+        "label": "SGA Senate minutes, October 16, 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-16-oct.docx"
+       }
+      },
+      {
        "name": "Conner Hounshell",
        "seat": "Senator",
        "src": {
@@ -44378,11 +44396,155 @@
        }
       },
       {
+       "name": "Troy Davis II",
+       "seat": "Senator",
+       "note": "Confirmed 21-0 and sworn in Feb. 5, 2019; active on the floor making procedural motions by late March 2019.",
+       "src": {
+        "label": "SGA Senate minutes, February 5, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-5-feb.docx"
+       }
+      },
+      {
+       "name": "Camry Joiner",
+       "seat": "Senator at Large",
+       "note": "Appointed to a Senator-at-Large seat; confirmed 30-0 and sworn in the same meeting, Feb. 26, 2019.",
+       "src": {
+        "label": "SGA Senate minutes, February 26, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_26_feb.docx"
+       }
+      },
+      {
+       "name": "Ashlyn Jones",
+       "seat": "Senator",
+       "note": "Sworn in Oct. 2, 2018 alongside Megan Haupt; nominated with fellow senators Kara Lowry and Conner Hounshell and confirmed 27-4-1 to the three student seats on Faculty Senate, Apr. 2, 2019; spoke during floor debate on a Senate appointment in December.",
+       "src": {
+        "label": "SGA Senate minutes, October 2, 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_2_oct.docx"
+       }
+      },
+      {
+       "name": "Mark Webster Jr.",
+       "seat": "Senator",
+       "note": "One of a slate of new senators nominated by President Mayer (via EVP Edmonds); introduced himself and was confirmed 21-0, then sworn in with the rest of the slate, Feb. 5, 2019.",
+       "src": {
+        "label": "SGA Senate minutes, February 5, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-5-feb.docx"
+       }
+      },
+      {
+       "name": "Jillian Kenney",
+       "seat": "Senator",
+       "note": "Confirmed 21-0 and sworn in Feb. 5, 2019; described as secretary of the Sustainability committee. A 'Jillian' (no surname) was praised by the Legislative Research Chair for a well-researched bill, Apr. 16, 2019 -- plausibly her, but the minutes give only a first name there, so this is not asserted as certain.",
+       "src": {
+        "label": "SGA Senate minutes, February 5, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-5-feb.docx"
+       }
+      },
+      {
+       "name": "Lucas Knight",
+       "seat": "Senator",
+       "note": "Confirmed 21-0 and sworn in Feb. 5, 2019, a returning member after time away from SGA. Delivered the Academic and Student Affairs Committee report as its vice chair in the absence of Chair Amanda Harder (Mar. 26), gave a University Committee report on faculty awards (Apr. 4), and made floor motions Apr. 23.",
+       "src": {
+        "label": "SGA Senate minutes, February 5, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-5-feb.docx"
+       }
+      },
+      {
        "name": "Kara Lowry",
        "seat": "Senator",
        "src": {
         "label": "SGA Bill 1-18-F, 2018-19 session",
         "url": "https://www.wku.edu/sga/accountability/bill_1-18-f.pdf"
+       }
+      },
+      {
+       "name": "Damon Mansfield",
+       "seat": "Senator",
+       "note": "Confirmed 21-0 and sworn in Feb. 5, 2019, after introducing himself only as a prospective applicant at the Jan. 29 meeting.",
+       "src": {
+        "label": "SGA Senate minutes, February 5, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-5-feb.docx"
+       }
+      },
+      {
+       "name": "Brenna Matthews",
+       "seat": "Senator at Large",
+       "note": "Appointed to a Senator-at-Large seat; confirmed 30-0 and sworn in the same meeting, Feb. 26, 2019.",
+       "src": {
+        "label": "SGA Senate minutes, February 26, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_26_feb.docx"
+       }
+      },
+      {
+       "name": "John May",
+       "seat": "Senator",
+       "note": "Delivered the Legislative Research Committee report while the chair seat was vacant, Feb. 19, 2019, and made two floor amendments during the Election Codes debate, Mar. 26, 2019.",
+       "src": {
+        "label": "SGA Senate minutes, March 26, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_26_mar.docx"
+       }
+      },
+      {
+       "name": "Anna McAvoy",
+       "seat": "Senator",
+       "note": "The minutes of her Sept. 11, 2018 nomination speech, for the vacant Director of Academic and Student Affairs post, which she did not win, record that she had been a senator for the past two years. Continued making floor motions and amendments through the fall (Nov. 13 amendment, Dec. 4 motion to cancel a meeting).",
+       "src": {
+        "label": "SGA Senate minutes, September 11, 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_11_sep.docx"
+       }
+      },
+      {
+       "name": "Miles Moskwa",
+       "seat": "Senator",
+       "note": "Made one formal floor motion during a contested bill debate, Nov. 13, 2018; also chosen (with EVP Garrett Edmonds) to join the President for a Walk-A-Mile campus event in April, which by itself would not indicate Senate membership.",
+       "src": {
+        "label": "SGA Senate minutes, November 13, 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-13-nov.docx"
+       }
+      },
+      {
+       "name": "Kenan Mujkanovic",
+       "seat": "Senator",
+       "note": "Active on the Senate floor from early in the term: asked a question during the Wood Brown associate-justice confirmation debate at the second meeting of the year (Sept. 11, 2018) and again at the third (Sept. 18, 2018), and made two floor amendments during the Election Codes debate, Mar. 26, 2019. No explicit swearing-in or roll-call confirmation was found for him anywhere in the corpus.",
+       "src": {
+        "label": "SGA Senate minutes, March 26, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_26_mar.docx"
+       }
+      },
+      {
+       "name": "Emily Pride",
+       "seat": "Senator",
+       "note": "Appointed by President Mayer to fill a vacant Senate seat; confirmed 17-9-2 and sworn in the same meeting, Dec. 4, 2018, after contested floor debate. Also appears as 'Emily Anne Pride' in later minutes (Jan. 29 Graduate Council report; Apr. 23 response to her own Senate censure).",
+       "src": {
+        "label": "SGA Senate minutes, December 4, 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_4_dec.docx"
+       }
+      },
+      {
+       "name": "Parker Raybourne",
+       "seat": "Senator",
+       "note": "Confirmed 13-6-2 and sworn in with the rest of the slate, Feb. 5, 2019.",
+       "src": {
+        "label": "SGA Senate minutes, February 5, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-5-feb.docx"
+       }
+      },
+      {
+       "name": "Hunter Smith",
+       "seat": "Senator",
+       "note": "Introduced Sept. 18, 2018 as a guest, president of the Secular Student Alliance. Sitting as a senator by the next meeting, Sept. 25, 2018, where he moved his first floor amendment; a second followed Oct. 2, 2018. The minutes of 25 Sept. record the President welcoming the new senators but no oath, and no swearing-in for him appears anywhere in the corpus.",
+       "src": {
+        "label": "SGA Senate minutes, September 25, 2018",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-25-sep.docx"
+       }
+      },
+      {
+       "name": "Symone Whalin",
+       "seat": "Senator",
+       "note": "Active on the floor and as a University Committee representative (Academic Calendar Committee) throughout the year; delivered committee reports on behalf of the Diversity and Inclusion chair in April; voted as SGA's nominee to attend a Women's March event, March 26, 2019.",
+       "src": {
+        "label": "SGA Senate minutes, March 26, 2019",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes_26_mar.docx"
        }
       }
      ]
@@ -45803,6 +45965,15 @@
      "note": "Cabinet also included Matt Barr, Ashlynn Evans, Kody Okert and Paul Brosky; Roderick Maul and Tess Welch were elected committee chairs in October 2020 (SGA Executive Cabinet minutes, 13 Oct 2020,.wku.edu/sga/executive/execs_minutes/sga_execminutes_10_13_20.pdf). Roderick Maul and Tess Welch were also elected general committee chairs in October 2020; Me'Lon Craighead chaired the Ad Hoc/Outreach committee. Speaker Shelby Robertson announced full committee rosters by Zoom breakout room at the 20 Oct 2020 meeting.",
      "members": [
       {
+       "name": "Eric Barry",
+       "seat": "Senator (Campus Improvements Committee Chair)",
+       "note": "Chaired the Campus Improvements Committee from at least Oct. 27, 2020 through Mar. 2, 2021 (the last surviving minutes in this corpus). The minutes spell the surname 'Berry' (Oct.-Jan.) and 'Barry' (Feb.-Mar.); unsettled which is correct.",
+       "src": {
+        "label": "SGA Senate minutes, 2 Feb 2021",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/2_2_21_minutes.pdf"
+       }
+      },
+      {
        "name": "Garrett Baum",
        "seat": "Senator",
        "note": "Asked about the Naming and Symbols Task Force on 9 February 2021.",
@@ -45818,6 +45989,24 @@
        "src": {
         "label": "SGA Senate minutes, 9 Feb 2021",
         "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/2_9_21_minutes.pdf"
+       }
+      },
+      {
+       "name": "Me'Lon Craighead",
+       "seat": "Senator (Outreach/Ad Hoc Committee Chair)",
+       "note": "Already a Senator by Sept. 15, 2020 (the last transitional meeting of the outgoing 2019-20 Senate before that fall's election). Formed and chaired the Ad Hoc Outreach committee by November 2020 at the latest, and authored Bill 6-21-S and Bill 12-21-S.",
+       "src": {
+        "label": "SGA Senate minutes, 15 Sep 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/fa20/minutes_9_15_20.pdf"
+       }
+      },
+      {
+       "name": "Destinee Daughtery",
+       "seat": "Senator (Public Relations Committee Chair)",
+       "note": "Chaired the Public Relations Committee from at least Oct. 27, 2020 through Mar. 2, 2021 (the last surviving minutes in this corpus), and was an active Senator on the floor throughout. The minutes spell the surname both 'Daughtery' and 'Daugherty'; unsettled which is correct.",
+       "src": {
+        "label": "SGA Senate minutes, 1 Dec 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/12_1_20_minutes.pdf"
        }
       },
       {
@@ -45839,12 +46028,48 @@
        }
       },
       {
+       "name": "Kat Howard",
+       "seat": "Senator (SAVES Committee Chair)",
+       "note": "Chaired the SAVES Committee across the 2020-21 year (already the chair in the transitional Sept. 15, 2020 meeting of the outgoing 2019-20 Senate, and continuing through Mar. 2, 2021).",
+       "src": {
+        "label": "SGA Senate minutes, 9 Feb 2021",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/2_9_21_minutes.pdf"
+       }
+      },
+      {
+       "name": "Natalie Kelley",
+       "seat": "Senator",
+       "note": "Nominated to the Organizational Aid Board, 27 Oct 2020 (confirmed unanimously along with six others); authored Bill 8-21-S, funding the March 2021 scholarship-grading event, passed 23 Feb 2021.",
+       "src": {
+        "label": "SGA Senate minutes, 23 Feb 2021",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/2_23_21_minutes.pdf"
+       }
+      },
+      {
        "name": "Roderick Maul",
        "seat": "Senator-at-Large",
        "note": "Nominated by President Garrett Edmonds and confirmed unanimously as a Senator-at-Large on 20 October 2020.",
        "src": {
         "label": "SGA Senate minutes, 20 Oct 2020",
         "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes10_20_20.pdf"
+       }
+      },
+      {
+       "name": "Dawson McCoun",
+       "seat": "Senator (Legislative Research Committee Chair)",
+       "note": "Chaired the Legislative Research Committee from at least Oct. 27, 2020 through the last surviving minutes in this corpus (Mar. 2, 2021), and was an active voting/debating Senator throughout (e.g. moving and seconding motions and speaking for and against bills on 2 Feb, 9 Feb, 23 Feb and 2 Mar 2021). His resignation and Addison McCoun's election to succeed him as LRC chair on 18 Mar 2021 are already recorded elsewhere in the archive (organization.senate.committees for this year) but fall after the last minutes available for this review and are not independently confirmed here.",
+       "src": {
+        "label": "SGA Senate minutes, 10 Nov 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/11_10_20_minutes.pdf"
+       }
+      },
+      {
+       "name": "Addison McCoun",
+       "seat": "Senator-at-Large",
+       "note": "Nominated by President Edmonds and confirmed as a Senator-at-Large, 10 Nov 2020. Her later election to chair the Legislative Research Committee, succeeding Dawson McCoun, is already recorded elsewhere in the archive (organization.senate.committees for this year) but is not independently confirmed by any minutes in this corpus, which ends 2 Mar 2021.",
+       "src": {
+        "label": "SGA Senate minutes, 10 Nov 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/11_10_20_minutes.pdf"
        }
       },
       {
@@ -45863,6 +46088,33 @@
        "src": {
         "label": "SGA Senate minutes, 9 Feb 2021",
         "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/2_9_21_minutes.pdf"
+       }
+      },
+      {
+       "name": "Avery Wells",
+       "seat": "Senator",
+       "note": "Nominated to the Organizational Aid Board, 27 Oct 2020 (confirmed unanimously along with six others); ran the SGA Diversity and Inclusion committee's Instagram account and was recognized for work on the February 2021 Black History Month event.",
+       "src": {
+        "label": "SGA Senate minutes, 23 Feb 2021",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/2_23_21_minutes.pdf"
+       }
+      },
+      {
+       "name": "Matthew Winiger",
+       "seat": "Senator (Sustainability Committee Chair)",
+       "note": "Chaired the Sustainability Committee from at least Oct. 27, 2020 through Mar. 2, 2021, and co-authored Resolution 2-21-S and Bill 7-21-S. The minutes spell the surname both 'Winiger' and 'Wininger'; unsettled which is correct.",
+       "src": {
+        "label": "SGA Senate minutes, 23 Feb 2021",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/2_23_21_minutes.pdf"
+       }
+      },
+      {
+       "name": "Fatin Yaro",
+       "seat": "Senator (Diversity and Inclusion Committee Chair)",
+       "note": "Chaired the Diversity and Inclusion Committee from at least Oct. 27, 2020 through Mar. 2, 2021 and authored Bill 5-21-S. The minutes' committee-head headers spell the given name 'Fatim'; floor-debate prose uses 'Fatin.'",
+       "src": {
+        "label": "SGA Senate minutes, 23 Feb 2021",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/2_23_21_minutes.pdf"
        }
       }
      ]
