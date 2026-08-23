@@ -27782,7 +27782,37 @@
      }
     ],
     "senate": {
-     "note": "Judicial council chief justice John Crowe presided over the election disputes; council member Drew Harvill called the 1999 race the most contentious he had seen. Archive does not preserve a full senate officer or committee list for this year."
+     "note": "Judicial council chief justice John Crowe presided over the election disputes; council member Drew Harvill called the 1999 race the most contentious he had seen. Archive does not preserve a full senate officer or committee list for this year.",
+     "officers": [
+      {
+       "office": "Chairperson, Legislative Research Committee",
+       "name": "Dwight Campbell",
+       "note": "Told the Herald in September 1999 that the previous year's election codes were too vague, and in March 2000 said only 48 of Congress's 106 seats were filled. In an April 2000 interview on declining membership he said he had come into SGA Congress in the spring of 1998, when he recalled the chambers being 'pretty full.'",
+       "src": {
+        "label": "Herald 75:7, 16 Sep 1999, \"Western projects steal thunder from SGA's largest priorities\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8058"
+       },
+       "src2": {
+        "label": "Herald 75:44, 7 Mar 2000, \"SGA congress seats up for cut\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8106"
+       },
+       "src3": {
+        "label": "Herald 75:54, 20 Apr 2000, \"SGA membership still declining\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8116"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Mark Rawlings",
+       "seat": "Congress member",
+       "note": "A Louisville freshman named as an SGA Congress member in a January 2000 Herald report on falling meeting attendance. He was appointed vice president of finance the following year and elected vice president of public relations for 2001-02.",
+       "src": {
+        "label": "Herald 75:32, 25 Jan 2000, \"SGA enrollment numbers down\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8093"
+       }
+      }
+     ]
     }
    },
    "documents": [
