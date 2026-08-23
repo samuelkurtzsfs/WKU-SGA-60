@@ -42772,6 +42772,32 @@
      "note": "This was the 15th Senate. Chief Justice of the Judicial Council was Cody Cox; Associate Chief Justice was Annalicia Carlson.",
      "members": [
       {
+       "name": "Blake Bowden",
+       "seat": "Senator At-Large",
+       "note": "Sworn in with eight others in one batch, 31 Jan 2017.",
+       "src": {
+        "label": "SGA Senate minutes, 31 Jan 2017",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_1_31_17.pdf"
+       }
+      },
+      {
+       "name": "Desherra Bronston",
+       "seat": "Senator at Large",
+       "src": {
+        "label": "SGA Senate minutes, 11 Oct 2016",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_10_11_16.pdf"
+       }
+      },
+      {
+       "name": "Flavio Chavarri",
+       "seat": "Senator At-Large",
+       "note": "Sworn in with eight others in one batch, 31 Jan 2017.",
+       "src": {
+        "label": "SGA Senate minutes, 31 Jan 2017",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_1_31_17.pdf"
+       }
+      },
+      {
        "name": "Chase Coffey",
        "seat": "Senator",
        "src": {
@@ -42805,6 +42831,15 @@
        }
       },
       {
+       "name": "Lucas Knight",
+       "seat": "Senator At-Large",
+       "note": "Selected to fill a seat left vacant when only ten of eleven at-large seats were filled in the spring 2016 elections. Also recorded as a senator in 2014-15 and 2015-16.",
+       "src": {
+        "label": "Herald, 21 Sep 2016 - SGA, University Senate appoint new members",
+        "url": "https://wkuherald.com/31220/news/sga-university-senate-appoints-new-members/"
+       }
+      },
+      {
        "name": "Anna Rose McAvoy",
        "seat": "Senator",
        "src": {
@@ -42818,6 +42853,15 @@
        "src": {
         "label": "SGA Bill 22-16-F, 2016-17 session",
         "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill-22-16-f.pdf"
+       }
+      },
+      {
+       "name": "Kenan Mujkanovic",
+       "seat": "Senator At-Large",
+       "note": "Sworn in with eight others in one batch, 31 Jan 2017. Also spelled \"Mujcanovic\" in the Senate's own 21 Feb 2017 minutes; not resolved, only flagged.",
+       "src": {
+        "label": "SGA Senate minutes, 31 Jan 2017",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_1_31_17.pdf"
        }
       },
       {
@@ -42850,6 +42894,41 @@
        "src": {
         "label": "SGA Bill 28-17-S, 2016-17 session",
         "url": "https://www.wku.edu/sga/accountability/bill_28-17-s.pdf"
+       }
+      },
+      {
+       "name": "Sara Saeed",
+       "seat": "Senator at Large",
+       "src": {
+        "label": "SGA Senate minutes, 7 Feb 2017",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_2_7_17.pdf"
+       }
+      },
+      {
+       "name": "Fransisco Serrano",
+       "seat": "Senator",
+       "note": "Sworn in 27 Sep 2016. Spelled \"Francisco\" elsewhere in this year's own minutes and in the archive's existing profile text; not resolved, only flagged.",
+       "src": {
+        "label": "SGA Senate minutes, 27 Sep 2016",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_9_27_16.pdf"
+       }
+      },
+      {
+       "name": "Olga Shoyat",
+       "seat": "Senator at Large",
+       "note": "Appointed by Executive Vice President Kate Hart to fill Chase Coffey's seat after his resignation.",
+       "src": {
+        "label": "SGA Senate minutes, 21 Feb 2017",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_2_21_17.pdf"
+       }
+      },
+      {
+       "name": "Asha Wasuge",
+       "seat": "Senator At-Large",
+       "note": "Sworn in with eight others in one batch, 31 Jan 2017.",
+       "src": {
+        "label": "SGA Senate minutes, 31 Jan 2017",
+        "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_1_31_17.pdf"
        }
       }
      ]
