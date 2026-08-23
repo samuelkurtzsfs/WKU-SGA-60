@@ -44,6 +44,31 @@ For pull requests, use the GitHub MCP tools rather than `gh`. Load them with
 Confirm the branch really is on origin with `git ls-remote --heads origin`
 before you believe it.
 
+## Set the commit author on every commit, merges included
+
+These containers ship a default git identity of `Claude <noreply@anthropic.com>`.
+Committing without overriding it writes a tool's name into the permanent history
+of a university archive that is published under its authors' names, which is the
+one thing CLAUDE.md's "no tool attribution" rule exists to prevent. As of
+23 August 2026, 105 commits on `main` carry it. Nobody has decided yet whether
+to rewrite that history; do not add to it.
+
+Pass the identity explicitly on **every** commit:
+
+```bash
+git -c user.name="SGA 60" -c user.email="kurtztoddsam2@gmail.com" commit -m "..."
+```
+
+The easy one to miss is a merge. `git merge` commits too, and `git merge --no-edit
+origin/main` with no `-c` flags is how most of the existing 105 got there:
+
+```bash
+git -c user.name="SGA 60" -c user.email="kurtztoddsam2@gmail.com" merge --no-edit origin/main
+```
+
+Check yourself before you push: `git log origin/main..HEAD --format='%h %an %s'`.
+Every line should read `SGA 60`.
+
 ## Beware: main is an orphan history
 
 `main` and the older `research-*` branches from 4 August have **different root
