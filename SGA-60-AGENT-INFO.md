@@ -570,6 +570,39 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
      writing a reusable script. `viewcontent.cgi` refused the research run but
      opened later the same day for the editor's pass (see the 1992-93 item
      below).
+
+   **The 84 article-permalink captures are now done, 23 August (scheduled run).**
+   `web.archive.org` was reachable this run. Fetched all 83-86 article-permalink
+   citations (depending on exactly how the roster/tag pages are excluded from the
+   count) and split the resulting 147 claim-citations across eight independent
+   readers, each shown only a claim and its cited page's own extracted text, no
+   visibility into each other's findings. 103 accepted cleanly; 44 didn't, and of
+   those, 30 were real overclaims (mostly a bare legislation-title index or a
+   Judicial Council roster page made to say more than it shows — a bill "passed"
+   when the page only shows it filed, an advance notice made to read like a
+   report, a roster page cited for bill authorship or a later-year office it
+   never mentions) and were trimmed to what the page actually supports. Two
+   claims turned out to carry no working citation once checked against their
+   real source rather than assumed from the entry's other citations: Mason
+   Stevenson's "We've Got Problems" letter to the March 2006 SGA meeting now
+   cites the Herald issue that carried it (found locally in
+   `herald-index-full.json`, `dlsc_ua_records/3687`); Scott Broadbent's claim
+   about an April 2006 organizational-aid meeting had no source anywhere in his
+   entry and none in the local Herald index either, so it was cut rather than
+   left standing on nothing. Amanda Allen's Keown Award citation pointed at an
+   unrelated October 2006 budget story; fixed to the WKU News release already
+   used elsewhere in the archive for the same banquet. Five 2007-08 Herald
+   citations had only preserved `wkuherald.com`'s old CMS redirect chain, not
+   the article itself — followed each through to the real archived page
+   (`media.www.wkuherald.com`), confirmed the facts against the actual text,
+   and swapped in the working URL. Three flagged mismatches (Dwight Campbell,
+   Josh Collins, Skylar Jordan) were false alarms of the check's own method —
+   each entry cites several sources for different sentences and the check
+   paired one page against the whole combined text — confirmed correct by hand
+   against every source actually cited and left untouched. Landed on
+   `research-backlog` (PR #162); `build.py`, `check_data.py` and
+   `check_duplicates.py` all pass clean, the six known duplicate pairs
+   unchanged. Item 4 is now fully closed — nothing further owed here.
 5. ~~Content-check the 1992-93 roll.~~ **Done, 22 August (scheduled run).**
    `viewcontent.cgi` was open on plain requests around 04:20–04:30 UTC. All 18
    remaining minutes items (405 was already checked; item 406 was settled 21
