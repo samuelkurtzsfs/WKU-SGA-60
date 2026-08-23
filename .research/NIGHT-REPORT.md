@@ -4578,3 +4578,110 @@ lower than this morning because #147 correctly combined two pairs of duplicated 
 events, losing no sourced fact from either. build.py, check_data.py, check_contrib.py and
 check_duplicates.py all clean on main at the close of the run. The six duplicate pairs are
 the known pre-existing ones. No pull requests left open.
+
+# Editor's report — 23 August 2026, third pass
+
+Two pull requests open at the start of the run, both cut from the current head of main,
+both merged. The three pull requests from 4 August that earlier reports had down as stale —
+#6 photographs, #7 the 1980s, #8 the 2020s — were already closed on 18 August. Nothing
+was left rotting for me to deal with.
+
+GitHub was reachable this run. `gh` is not installed in these containers, as AGENT-LANDING.md
+says; git is credentialed and the GitHub tools work, so the branches pushed and the merges
+landed normally.
+
+## #151, the 1969-70 class officers: merged after three cuts
+
+Twelve class officers profiled off the Office of Associated Students' own spring 1969
+election result sheet. I checked the arithmetic on all twelve rather than a sample, and I
+did it on the page image, not the text layer — which turned out to matter, because the
+extracted text throws the Junior class figures away from their names and they read as
+missing. Every count is right: Gerard 739 unopposed, Robinson 447–360, Bohannon 404–396,
+Bradshaw 451–326, Showalter 531–292, Myers 493–455, Riley 467–455, Hunter 786–561,
+Joe Gerard 863–477, Jennings 762–566, Galloway 684–645, Civils 695–673. The three Herald
+headlines behind Paul Civils's freshman year are in the unfiltered local index verbatim.
+Every claim taken from the 1971 Talisman is in the yearbook's full text: Joe Gerard on the
+Executive Council, Phil Myers on Rules and Elections and president of the Class of 1971,
+Pat Riley on the Judicial Committee, Galloway's Sigma Nu and Interfraternity Council offices.
+
+Three things came out.
+
+A paragraph on Jeanette Bohannon rested on a single 1968 headline about a Student National
+Education Association selection, and said in its own last sentence that what she was selected
+for could not be established. A paragraph whose content is that a headline exists is padding,
+and it hung a non-SGA activity on a living person's record. Cut, with its now-orphaned source.
+
+A sentence on Marshall Galloway recorded him and Claudia Houston as Athenian Ball King and
+Queen at Greek Week. Accurately sourced — it is in the Talisman — but a Greek social honour
+unconnected to his term as class treasurer, and it put the name of a second private person
+with no SGA role at all onto the site. Cut.
+
+Pat Riley was placed "among the seven members of the Judicial Committee." The yearbook's
+text does say seven; its own caption underneath names eight. Trimmed to "among the members."
+
+And a correction that was not a cut. Four of the profiles cited the 1971 Talisman **Part I**
+for the Associated Students spread, the Interfraternity Council and the Class of 1971 pages.
+All of those are in **pt. 2**; Part I is student life, features and athletics. A reader
+following the citation would not have found the claim being made. Repointed to
+`dlsc_ua_records/390`, with Galloway keeping Part I for the Greek Week feature that carries
+his major, hometown and IFC presidency and gaining pt. 2 for the chapter roster.
+
+## #152, the 2012-13 legislation: merged as is, nothing cut
+
+Twenty-one author and sponsor rows recovered by OCR from eleven scanned bills and resolutions
+whose text layer is genuinely empty — I confirmed the emptiness independently before accepting
+that OCR was necessary. Then I rendered all eleven and read the author blocks by eye. Every
+row is exact, down to the lowercase "aid" in "Organizational aid Board" that a tidier pass
+would have silently corrected.
+
+This batch was laid with the trap that matters most in the legislation corpus. Every one of
+these documents carries a `CONTACTS:` block under the sponsor, and on these particular files
+the contacts are the people it would be worst to miscredit: Cory Dodds, the sitting SGA
+president, appears as a contact on a resolution Hannah Garland wrote, and **Gary Ransdell and
+Howard Bailey** — the university president and the vice president for Student Affairs — are
+contacts on a student's athletic-fee resolution. Promoting a contact would have put the
+university president's name on SGA legislation on the public site. Not one was promoted.
+
+The eleventh file was left out and should have been. `ea1-12.pdf` is an executive action
+establishing a special long-term goals committee, with no author, sponsor or contacts field
+anywhere on it, closing over Cory Dodds's signature as president. Crediting an author from a
+signature block would have invented a rule the other 1,123 rows do not follow.
+
+## A mistake of mine
+
+In the note I attached to #151 I gave Frank Genzianelli 1,621 votes in the 1969 presidential
+race. The sheet prints 1,626. I read that one figure off the text layer instead of the page
+image, where the last digit renders as an "i" — the exact failure this report warned about
+last night, committed by the editor who had just spent an hour catching it in other people's
+work. Corrected on the pull request. It touched nothing in the archive.
+
+## What the lead is worth
+
+The 1969 sheet has Larry Zielke taking the presidency 1,882 to 1,626 and John Lyne **losing**
+the vice-presidency to David Porter, 1,751 to 1,725; the 1971 Talisman then has Lyne as
+Associated Student Government president. That bears directly on the Lyne/Zielke question
+CLAUDE.md still lists as open, and it points the same way from two independent directions.
+Left for whoever takes that item; not settled here.
+
+Separately, SGA's own 2012-13 legislation spells it **Keyana Boka**, in the contacts blocks
+of three documents. CLAUDE.md still carries `Keyanna`/`Keyana` as unverified. Three
+contemporaneous SGA documents are not proof, but they are better evidence than anything the
+flag currently rests on, and they are already in the repository.
+
+## Still open
+
+- The Kentucky Senate Bill 17 signing date of 20 March 2017, flagged in the previous report
+  as appearing in two profiles and no cited source. Untouched this run; still wants running
+  down or dropping from both.
+- Two title typos in `legislation.json` — "Academic Compeition Club" and "Adopt Admendments"
+  — are the harvester's, not the OCR pass's. The documents themselves read "Competition" and
+  "Amendments". A cleanup pass, not a correction to anything published as a fact.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced entries, 73 leader records, 1,085 officer entries,
+1,383 senate members, 158 photographs, 295 documents mirrored, 1,144 legislation authorship
+rows across 1,111 legislation files. Twelve profiles added this run, three paragraphs or
+sentences cut from them. build.py, check_data.py, check_contrib.py and check_duplicates.py
+all clean on main at the close. The six duplicate pairs are the known pre-existing ones and
+every one of them is genuinely two events. No pull requests left open.
