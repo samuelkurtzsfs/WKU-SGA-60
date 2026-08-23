@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Patti Johnson",
+    "years": ["2003-04"],
+    "office": "Executive Vice President",
+    "profile": [
+      "Patti Johnson campaigned for SGA's finance-adjacent executive vice presidency in March 2003 on a platform that included support for one-stop billing, and won a contested election alongside Jessica Martin, who took the vice presidency of administration the same cycle. Johnson had already been active in SGA for several years before running, including committee work in public relations and athletics.",
+      "As executive vice president for 2003-04 she chaired Congress, the confirmed role at each of the four 2003-04 meetings checked on the record (2 September, 16 September and 2 December 2003, and 13 April 2004).",
+      "When Nick Todd, the officer elected president for 2004-05, resigned that July amid an investigation into missing SGA Dining Dollars funds, Johnson was the only student to come forward for the September 2004 special election, ran unopposed, and was sworn in as president on 23 September 2004 -- a full second term of SGA leadership, already documented at length in this archive's 2004-05 year record and not repeated here."
+    ],
+    "sources": [
+      {"label": "SGA minutes, 2 Sep 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"},
+      {"label": "Herald 78:46, 18 Mar 2003, \"Patti Johnson Supports One-Stop Billing\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9223"},
+      {"label": "Herald 78:49, 8 Apr 2003, \"Patti Johnson, Jessica Martin Win Contested SGA Election Races\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9221"},
+      {"label": "Herald, 2 Sep 2004, \"SGA preparing for September elections\"", "url": "https://wkuherald.com/55159/news/sga-preparing-for-september-elections/"}
+    ],
+    "could_not_confirm": "No source found gives a vote count or the name of an opponent for the April 2003 executive vice presidency itself; the Herald headline calls the races 'contested' generally without breaking out her specific margin. Her full 2004-05 presidency is already profiled in data/years.json under that year and is only summarized here, not re-researched."
+  },
+  {
+    "name": "Nick Todd",
+    "years": ["2003-04"],
+    "office": "Vice President of Finance",
+    "profile": [
+      "Nick Todd ran for SGA's finance office in the March 2003 election and was confirmed as vice president of finance at each of the four 2003-04 meetings checked on the record, reporting on the budget at the 2 and 16 September 2003 meetings. As finance vice president he had signing authority, along with outgoing president John Bradley and adviser Charley Pride, over the SGA Aramark Dining Dollars account, which opened the 2003-04 year with $5,000.",
+      "In March 2004 Todd ran for president against a fellow 2003-04 cabinet officer, vice president of administration Jessica Martin, and won with 772 of 1,232 votes cast. Days before the new officers were due to be sworn in, SGA's judicial council found $611 missing from the Dining Dollars account he had overseen as finance vice president; a senator drafted impeachment articles against the finance vice presidency he was about to leave, but the council ruled the two-week process could not finish before he left the post regardless. Todd publicly denied wrongdoing in the Herald's 22 April 2004 issue and was sworn in as president on 27 April 2004 with the investigation still unresolved.",
+      "Todd's subsequent 2004-05 presidency -- his resignation that July, the internal audit, and the September special election that followed -- is already documented in full in this archive's 2004-05 year record and is not repeated here."
+    ],
+    "sources": [
+      {"label": "SGA minutes, 2 Sep 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"},
+      {"label": "Herald 78:46, 18 Mar 2003, \"Nick Todd Running for SGA Finance Office\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9224"},
+      {"label": "Herald, 20 Apr 2004, \"SGA President-Elect Under Investigation\" (Wayback)", "url": "https://web.archive.org/web/20210730065202/https://wkuherald.com/55298/news/sga-president-elect-under-investigation/"},
+      {"label": "Herald 79:54, 22 Apr 2004, \"Nick Todd: I Feel I Have Nothing Wrong\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9386"},
+      {"label": "Herald 79:56, 29 Apr 2004, \"Nick Todd Takes Office Amid Controversy\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9384"},
+      {"label": "Herald 78:44, 18 Mar 2004, \"Todd Elected SGA President\"", "url": "https://wkuherald.com/55554/news/todd-elected-sga-president/"}
+    ],
+    "could_not_confirm": "No source found describes specific budget decisions or committee actions by Todd as finance vice president beyond his September 2003 budget reports and his oversight of the Dining Dollars account that later became central to the controversy; the PDFs of the 2003-04 SGA minutes themselves were unreachable (WAF-blocked) so any further detail in them is unverified."
+  },
+  {
+    "name": "Jessica Martin",
+    "years": ["2003-04"],
+    "office": "Vice President of Administration",
+    "profile": [
+      "Jessica Martin ran for SGA's administration office in March 2003, campaigning on raising student awareness, and won the contested April 2003 election alongside Patti Johnson. She was confirmed as vice president of administration at each of the four 2003-04 meetings checked on the record, signing the minutes every time. This archive's 2004-05 record, drawing on SGA's own 2004-05 executive officer profiles, records her as having chaired the Academic Affairs committee and served as vice-chair of Constitutional Review earlier in her SGA career, though the sources do not pin those specific roles to the 2003-04 year itself.",
+      "In March 2004 Martin ran for president against fellow 2003-04 cabinet officer Nick Todd, the vice president of finance, arguing at a candidates' debate that unimplemented university programs could be frozen and savings spent while still available. She lost, 772 votes to 424.",
+      "After Todd's resignation that July and Katie Dawson's interim presidency, Martin remained active enough in SGA that fall to report application numbers for the vacant presidency and open senate seats at the September 2004 organizing meeting; when Patti Johnson won the special election, Martin became chief of staff under her, a role already documented in this archive's 2004-05 year record."
+    ],
+    "sources": [
+      {"label": "SGA minutes, 2 Sep 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"},
+      {"label": "Herald 78:46, 18 Mar 2003, \"Jessica Martin Hopes to Increase Awareness\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9224"},
+      {"label": "Herald 78:49, 8 Apr 2003, \"Patti Johnson, Jessica Martin Win Contested SGA Election Races\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9221"},
+      {"label": "Herald 78:44, 18 Mar 2004, \"Todd Elected SGA President\"", "url": "https://wkuherald.com/55554/news/todd-elected-sga-president/"},
+      {"label": "WKU SGA executive officer profiles, 2004-2005, archived 8 Feb 2005", "url": "https://web.archive.org/web/20050208013553/http://www.wku.edu/Dept/Org/Student/SGA/e_profiles.html"}
+    ],
+    "could_not_confirm": "No source found gives Martin's specific vote total in the April 2003 administration-office race, only that it was a contested win. Her later 2004-05 chief-of-staff service is already profiled in data/years.json and is only summarized here."
+  },
+  {
+    "name": "Abby Lovan",
+    "years": ["2003-04"],
+    "office": "Vice President of Public Relations",
+    "profile": [
+      "Abby Lovan ran for SGA's public relations office in March 2003 and was confirmed as vice president of public relations at each of the four 2003-04 meetings checked on the record. This archive's 2004-05 record, citing SGA's own 2004-05 executive officer profiles, describes her as having been in SGA since her first semester at Western, working up through vice chair and then chair of the public relations committee, and chairing an ad hoc internal review committee -- though the sources do not specifically date those steps to the 2003-04 year rather than to earlier in her SGA career.",
+      "In March 2004 Lovan ran for one of the newly created senate's elected seats to continue her public relations work and received more votes than any other senate candidate on the ballot, 555. On 13 April 2004 she withdrew her name from the race for Speaker of the Senate, a post that instead went to Robert Watkins. She continued into 2004-05 as Director of Public Relations, the title her office took under the new constitution -- already documented in this archive's 2004-05 year record."
+    ],
+    "sources": [
+      {"label": "SGA minutes, 2 Sep 2003", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/524"},
+      {"label": "Herald 78:46, 18 Mar 2003, \"Abby Lovan Seeking Public Relations Office\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9224"},
+      {"label": "Herald 78:43, 16 Mar 2004, \"Senate Candidates\"", "url": "https://wkuherald.com/55562/news/senate-candidates/"},
+      {"label": "WKU SGA executive officer profiles, 2004-2005, archived 8 Feb 2005", "url": "https://web.archive.org/web/20050208013553/http://www.wku.edu/Dept/Org/Student/SGA/e_profiles.html"}
+    ],
+    "could_not_confirm": "No source found gives her vote total or an opponent for the March 2003 public-relations office race itself, only the later, better-documented 2004 senate race. Her 13 April 2004 withdrawal from the Speaker race comes from the anchor note already in years.json; no additional source explaining why she withdrew was found."
+  },
+  {
+    "name": "Melissa Paris",
+    "years": ["2005-06"],
+    "office": "Administrative Vice President",
+    "profile": [
+      "This person already carries a full, sourced profile in data/years.json under 2005-06, Administrative Vice President -- her 2004 election to the new senate as a Barnes-Campbell Hall council member, her unopposed March 2005 win alongside Mason Stevenson, and her work distributing the SGA budget, running Organizational Aid, and sitting on the WKU Budget Council. This entry does not duplicate that text; nothing further beyond it was found in the Herald index or the wkuherald.com/TopSCHOLAR searches run for this draft."
+    ],
+    "sources": [
+      {"label": "SGA Senate minutes, 6 Sep 2005, TopSCHOLAR (existing anchor)", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/208"},
+      {"label": "Herald via Wayback, 17 Mar 2005, \"Dawson Elected SGA President\"", "url": "https://web.archive.org/web/20050325134604/http://www.wkuherald.com/news/2005/03/17/News/Dawson.Elected.Sga.President-898005.shtml"},
+      {"label": "Herald 78:43, 16 Mar 2004, \"Senate Candidates Melissa Paris, Katharine Pettit\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"}
+    ],
+    "could_not_confirm": "A March 2005 TopSCHOLAR election special section (dlsc_ua_records/8961) pairs a byline with 'Melissa Paris' but its landing page shows no visible headline text, so no new fact was drawn from it. No source beyond the existing years.json profile was found for what she did specifically as administrative vice president day to day."
+  },
+  {
+    "name": "Amanda Allen (Amanda B. Allen)",
+    "years": ["2005-06", "2006-07"],
+    "office": "Director of Information Technology (2005-06); Administrative Vice President then Executive Vice President (2006-07)",
+    "profile": [
+      "This is one person across both years, per data/name-aliases.json ('Amanda B. Allen' -> 'Amanda Allen') and per the profile already written into data/years.json itself: confirmed Director of Information Technology at SGA's first meeting of 2005-06 (6 September 2005), where she rebuilt the SGA website, photographed every senator for it, and sent SGA's first mass email from the iPod-giveaway registration list; elected administrative vice president for 2006-07; then moved up to executive vice president when Jeanne Johnson, the sitting executive vice president, succeeded to the presidency after Robert Watkins's resignation in November 2006. By the 6 February 2007 meeting she was reporting to the Senate as executive vice president, telling members the Listen Up Legislators calling campaign had passed sixty callers on its first day. She received SGA's Charles A. Keown Award at the May 2007 banquet.",
+      "A March/April 2006 Herald piece -- 'Amanda Allen Thinks She Can Fulfill Duties' -- appears to be a candidate profile for her run for the 2006-07 administrative vice presidency, consistent with the existing timeline, though this draft could not access its body text to confirm details beyond the headline."
+    ],
+    "sources": [
+      {"label": "SGA Senate minutes, 6 Sep 2005, TopSCHOLAR (existing anchor)", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/208"},
+      {"label": "SGA Senate minutes, 6 Feb 2007, TopSCHOLAR (existing anchor for EVP move)", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/721"},
+      {"label": "Herald 81:40/44, 6 Apr 2006, \"Amanda Allen Thinks She Can Fulfill Duties\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3694"}
+    ],
+    "could_not_confirm": "The 6 April 2006 Herald headline's body text was not reachable (PDF WAF-blocked, and the landing page carries no abstract for it), so it adds the fact of a spring-2006 candidacy but nothing about her platform or an opponent. Her full 2005-06/2006-07 record is already written into data/years.json and is only summarized here, not re-researched from scratch."
+  },
+  {
+    "name": "Cherieth L. Lineweaver (Cherieth Lea Lineweaver)",
+    "years": ["2006-07"],
+    "office": "Administrative Vice President",
+    "profile": [
+      "This person already carries a full, sourced profile in data/years.json, split across the 2006-07 and 2007-08 entries: she served as secretary of the senate for 2006-07 before moving to administrative vice president in the cabinet reshuffle that followed President Rob Watkins's resignation in November 2006; by SGA's 6 February 2007 meeting she was working in the office with Parking and Transportation Services. She continued as administrative vice president into 2007-08 under Jeanne Johnson's own elected term, telling the Senate at its 4 September 2007 meeting that SGA had about $110,000 for the year, including $2,000 for Campus Improvements to build new shuttle shacks, and that every executive money request had to be turned into a purchase order through her office.",
+      "This draft found no Herald coverage of her by name -- a search of the local Herald index for 'Lineweaver' across 2005-2008 returned nothing, and a general web search turned up no additional Herald or wku.edu record either. That is consistent with the CLAUDE.md caution that a miss in the local index is not evidence of absence, but no further primary source was located to add to the existing years.json profile."
+    ],
+    "sources": [
+      {"label": "SGA Senate minutes, 6 Feb 2007, TopSCHOLAR (existing anchor)", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/721"},
+      {"label": "SGA Senate minutes, 4 Sep 2007, TopSCHOLAR (existing source in years.json)", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/740"}
+    ],
+    "could_not_confirm": "No Herald article or additional primary source naming Lineweaver was found beyond what is already cited in data/years.json. Nothing new to add from this pass."
+  },
+  {
+    "name": "Skylar Jordan (also given as R. Skylar Jordan; 'Ricky Jordan' in some SGA records)",
+    "years": ["2005-06", "2006-07"],
+    "office": "Justice, Judicial Council then Director of Academic and Student Affairs (2005-06); Director of Academic and Student Affairs (2006-07)",
+    "profile": [
+      "'Ricky Jordan' and 'Skylar Jordan' are the same person: data/name-aliases.json maps both 'Ricky Jordan' and 'R. Skylar Jordan' to 'Skylar Jordan', and the same person's own byline appears in the Herald as 'Skylar Jordan' as early as September 2005, while SGA records of the same period call him 'Ricky Jordan'. He was profiled as a candidate in the Herald's 15 March 2005 SGA-elections special section, then served as Justice of the Judicial Council for 2005-06 (per the year's confirmed organization record) and wrote a Herald opinion piece, 'The Tearing Down of Snell Hall Is Tragic,' that September.",
+      "He was appointed mid-year to Director of Academic and Student Affairs, succeeding Katie Pettit in that post; Senator Willie Cravens questioned the appointment at the 7 March 2006 Senate meeting, and Jordan was confirmed reporting to the Senate in the role by the 4 April 2006 meeting used as this project's anchor. He continued as Director of Academic and Student Affairs into 2006-07.",
+      "He remained in SGA's cabinet at least two years further, as Chief of Staff for 2007-08 and again for 2008-09, per the organization records already in data/years.json for those years -- continuity this draft flags but does not re-research, since it falls outside 2005-06/2006-07. During his time as Chief of Staff, the Herald reported on 8 April 2008 that he filed a complaint with SGA's judicial council against something called the 'Red Towel Party'; a follow-up Herald report on 22 April 2008 says the council decided to take no action on the complaint. Neither article's body text was reachable to establish what the Red Towel Party was or the substance of the complaint beyond the headlines. He returned to SGA as a guest speaker addressing the Student Senate on 22 February 2010, per that meeting's minutes -- by then an alumnus of the cabinet."
+    ],
+    "sources": [
+      {"label": "SGA Senate minutes, 4 Apr 2006, TopSCHOLAR (existing anchor)", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/235"},
+      {"label": "data/name-aliases.json (repo file: 'Ricky Jordan' / 'R. Skylar Jordan' -> 'Skylar Jordan')", "url": ""},
+      {"label": "Herald 81:x, 22 Sep 2005, \"The Tearing Down of Snell Hall Is Tragic\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3599"},
+      {"label": "Herald 80:?, 15 Mar 2005, SGA Elections special section (TopSCHOLAR index, byline pairing only)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8961"},
+      {"label": ".research/senate-rolls-2003-2009/merge-2005-06.json (repo research file, Willie Cravens entry, 7 Mar 2006 floor questioning)", "url": ""},
+      {"label": "Herald 83:45, 8 Apr 2008, \"Skylar Jordan Files Complaint Against Red Towel Party\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6703"},
+      {"label": "Herald 83:49, 22 Apr 2008, \"Council Decides to Take No Action on Complaint\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6702"},
+      {"label": "SGA Senate minutes, 22 Feb 2010 (.doc, downloaded)", "url": "https://www.wku.edu/sga/uploads/minutes/february22.doc"}
+    ],
+    "could_not_confirm": "The exact office Jordan ran for in the March 2005 elections special section is not stated on the reachable landing page -- only that he was profiled alongside that year's slate. The Red Towel Party complaint's substance (what the party was, what the complaint alleged) could not be confirmed; both relevant PDFs returned WAF challenges (HTTP 202) rather than content, so this draft reports only that the complaint was filed and that the council took no action, without characterizing the underlying dispute."
+  },
+  {
+    "name": "Charlie Harris",
+    "years": ["2007-08", "2008-09"],
+    "office": "Director of Information Technology",
+    "profile": [
+      "Charlie Harris was confirmed Director of Information Technology at SGA's 29 January 2008 meeting, the anchor for this year, and per that meeting's minutes stayed in the post into the following year while building a new SGA website and a blog. He also appears in the 2008-09 organization record already in data/years.json, still Director of Information Technology (given there as 'Charlie Harris'). He appears again later, as Chief of Staff for 2010-11 under President Colton Jessie, per that year's organization record already in data/years.json -- a gap year (2009-10) in which someone else, Sarah Howell, held the IT directorship, so his own activity that year, if any, was not established.",
+      "This draft found no Herald coverage of him by name: searches of the local Herald index and general web searches for both 'Charlie Harris' and 'Charles Harris' in connection with WKU SGA or information technology returned nothing."
+    ],
+    "sources": [
+      {"label": "SGA Senate minutes, 29 Jan 2008, TopSCHOLAR (existing anchor)", "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/779"}
+    ],
+    "could_not_confirm": "No Herald article, SGA minutes excerpt beyond the anchor, or wku.edu archived page naming Charlie Harris was found. The 29 January 2008 minutes PDF itself was unreachable (WAF-blocked, HTTP 202), so the 'building a new website and blog' detail rests entirely on the anchor summary already accepted into the archive, not on anything newly verified here. What he did, if anything, during the 2009-10 gap year is unconfirmed."
+  },
+  {
+    "name": "Kendrick Bryan",
+    "years": ["2009-10", "2010-11", "2011-12"],
+    "office": "Executive Vice President",
+    "profile": [
+      "Kendrick Bryan was already writing Herald guest columns as an SGA member before he became an officer -- on music downloads (April 2008) and a smoke-free-campus policy (February 2009) -- and continued writing columns about SGA and student involvement in his own voice through the whole span of his eventual three consecutive years as executive vice president: 2009-10 (this project's original anchor, both the SGA site's archived executive-branch page and Herald election coverage), 2010-11, and 2011-12.",
+      "In the March 2010 election for the 2010-11 term he ran against Currie Martin for executive vice president, and the Herald's editorial board endorsed him alongside presidential candidate Colton Jessie (both won). During 2010-11 he was quoted defending the Greek community's roughly 40 percent share of SGA's fifty members as a strength rather than a problem (Herald, 11 Feb 2011) and championed a bill donating 30 Praxis Series teacher-certification test-prep books, bought for $495 through a partnership with the WKU Store, to the new Educational Resources Center in Gary Ransdell Hall (Herald, 15 Feb 2011). SGA's Secretary of the Senate recorded him giving a routine executive report at the 22 February 2010 meeting -- rallying attendance for a fair-housing rally, pushing for wifi in graduate housing, and meeting with Academic Affairs on scholar development.",
+      "He ran for a third term in the March 2011 election for 2011-12 and won it uncontested after opponent Katie Stillwell withdrew (Herald, 12 Apr 2011). That fall the Herald reported he had personally created a test-prep website (Herald, 6 Sep 2011, headline only -- body unreachable), and he was credited alongside President Billy Stephens with originating the idea of lending Educational Resource Center iPads loaded with study material to students free of charge (Herald, 30 Sep 2011). He did not seek a fourth term in March 2012; the Herald quoted him that month, as outgoing executive vice president, describing how Keyana Boka -- who had worked closely with him on campus-improvements projects -- had approached him about running to succeed him, and he supported her candidacy (Herald, 23 Mar 2012). Boka went on to win the office unopposed for 2012-13."
+    ],
+    "sources": [
+      {"label": "WKU SGA site, executive branch, 23 Nov 2009 (archived) (existing anchor)", "url": "https://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"},
+      {"label": "Herald 85:39, 23 Mar 2010, \"Candidates for SGA Executive Vice President - Kendrick Bryan, Currie Martin\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6757"},
+      {"label": "Herald 85:41, 30 Mar 2010, \"Colton Jessie, Kendrick Bryan Right Choices for SGA Offices\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6755"},
+      {"label": "SGA Senate minutes, 22 Feb 2010 (.doc, downloaded)", "url": "https://www.wku.edu/sga/uploads/minutes/february22.doc"},
+      {"label": "Herald, 11 Feb 2011, \"Greeks comprise more than 40 percent of student government\"", "url": "https://wkuherald.com/52960/news/greeks-comprise-more-than-40-percent-of-student-government/"},
+      {"label": "Herald, 15 Feb 2011, \"SGA donating test prep books to ERC\"", "url": "https://wkuherald.com/52745/news/sga-donating-test-prep-books-to-erc/"},
+      {"label": "Herald, 12 Apr 2011, \"Uncontested elections don't concern SGA\"", "url": "https://wkuherald.com/51873/news/uncontested-elections-dont-concern-sga/"},
+      {"label": "Herald 87:3, 6 Sep 2011, \"SGA Member Creates Test Prep Website – Kendrick Bryan\" (TopSCHOLAR index, headline only)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6324"},
+      {"label": "Herald, 30 Sep 2011, \"SGA renting out iPads for free through WKU's ERC\"", "url": "https://wkuherald.com/50524/news/sga-renting-out-ipads-for-free-through-wkus-erc/"},
+      {"label": "Herald, 23 Mar 2012, \"Vice presidential candidates run unopposed\" (existing anchor)", "url": "https://wkuherald.com/48112/news/vice-presidential-candidates-run-unopposed/"}
+    ],
+    "could_not_confirm": "How Bryan first won the executive vice presidency for 2009-10 (contested or unopposed, vote count, opponent) was not established -- the March/April 2009 Herald election coverage found names Kevin Smiley's presidential win by headline but no headline specifically names an executive-vice-presidential race that spring, and this draft did not access the underlying PDFs (WAF-blocked) to check further. The content of his personally created test-prep website (Herald, 6 Sep 2011) could not be confirmed beyond the headline; the article's body was unreachable. Whether years.json's existing organization records for 2010-11 and 2011-12 (which already list him as executive vice president both years) were independently sourced beyond this draft's own findings was not checked."
+  },
+  {
+    "name": "Ann-Blair Thornton",
+    "years": ["2009-10"],
+    "office": "Secretary of the Senate (recorded in years.json's executive list as \"Secretary\"; SGA's own site of the time filed her under the legislative/Senate branch)",
+    "profile": [
+      "This person already carries a profile in data/years.json, filed under the Senate officers of 2009-10: she served as a senator and as Secretary of the Senate, and went on, as a WKU senior double-majoring in English and economics, to be crowned Miss Kentucky in Lexington in July 2011, beating 31 other contestants (Herald, 21 Jul 2011). That existing profile also flags that the archive currently double-files her -- once in the executive list as 'Secretary' and once correctly in the Senate list as 'Secretary of the Senate' -- and recommends she be moved to the Senate only.",
+      "This draft adds direct, primary-source confirmation of her role: the actual 22 February 2010 Senate minutes document, downloaded from wku.edu/sga, carries the Microsoft Word metadata 'Author: Ann-Blair Thornton' and 'Last Saved By: Ann-Blair Thornton,' and the document itself closes 'Ann-Blair Thornton, Secretary of the Senate / Student Government Association / Western Kentucky University' beneath the record of that meeting's business (which that night included routine executive reports from President Kevin Smiley, Executive Vice President Kendrick Bryan, Administrative VP Justin Thurman, and Speaker Wade Pierce, and several bills). A follow-up Herald piece, 'Miss Kentucky Prepares for Next Step' (Herald, 16 Sep 2011), continues the story already cited in years.json but was not opened for further detail in this pass."
+    ],
+    "sources": [
+      {"label": "SGA senate minutes, 22 Feb 2010 (.doc, downloaded) (existing anchor)", "url": "https://www.wku.edu/sga/uploads/minutes/february22.doc"},
+      {"label": "WKU SGA site, legislative branch, 23 Nov 2009 (archived) (existing source in years.json)", "url": "https://web.archive.org/web/20091123152007/http://www.wku.edu/sga/index.php?page=legislative"},
+      {"label": "WKUHerald.com, \"WKU student named Miss Kentucky,\" 21 Jul 2011 (existing source in years.json)", "url": "https://wkuherald.com/51422/news/wku-student-named-miss-kentucky/"},
+      {"label": "Herald 87:6, 16 Sep 2011, \"Miss Kentucky Prepares for Next Step\" (TopSCHOLAR index)", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6320"}
+    ],
+    "could_not_confirm": "Nothing new about her SGA duties beyond the existing profile and the primary-source minutes signature was found; this draft did not open the 16 September 2011 Herald piece's body text."
+  }
+]
