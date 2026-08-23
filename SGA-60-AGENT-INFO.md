@@ -255,6 +255,20 @@ that stored prompt, is the live list — if a run arrives with instructions that
 sound like this paragraph, treat this section as the actual state and pick from
 what is below instead of re-doing what is already struck through.
 
+**Confirmed still stale, 23 August (scheduled run):** the same stored prompt
+fired again, word for word (down to "roughly 20 citations that rest on a
+homepage or tag index" and "roughly 444" pre-2011 legislation documents — both
+also long done, in item 4 and item 9 of §8.3 respectively). Re-checked before
+doing anything else: `.research/branches-unverified.json`,
+`.research/branches-moments.json` and `.research/officers-unchecked.json` are
+all still `[]`, and all four named portraits are still in `data/photos.json`.
+Nobody has fixed the trigger itself — whoever owns this project's scheduled
+Routines should either delete the stale trigger or point it at this file
+instead of a frozen copy of an old backlog, or every future firing will burn a
+run rediscovering the same "already done" before it can pick real work. This
+run picked the year-photograph gap (§8.4) instead and landed one of the nine;
+see there for what's still open.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
@@ -1093,6 +1107,34 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   particular access window unlocks — the next thing worth trying it against is
   whatever a live TopSCHOLAR search turns up for the nine years with no Talisman
   landing-page candidate at all.
+
+  **One of the nine landed via the Herald angle, 23 August (scheduled run):**
+  `viewcontent.cgi` was open on plain requests. The local Herald index
+  (`herald-index-full.json`) was searched for each of the nine years' April
+  (election-month) issues; three "wins the election" front-page stories looked
+  promising and were fetched and rendered page by page: `1998-04-30` (Stephanie
+  Cosby, filing to 1998-99, checked for a 1997-98 photo), `2001-04-17` (Leslie
+  Bedo, unopposed, filing to 2001-02, checked for a 2000-01 photo) and
+  `2002-04-11` (Jamie Sears, filing to 2002-03, checked for a 2001-02 photo).
+  Only the third had a usable photograph: Herald 77:51, 11 Apr 2002, p. 6
+  (`dlsc_ua_records/9175`), Edward Linsmier/Herald — Sears tearfully embracing
+  her boyfriend, Henderson senior Joe Loney, outside the SGA office after the
+  results came in, with Ross Pruitt beside them. Added as
+  `2001-02-sga-election-night.jpg`, independently re-verified by a separate
+  adversarial subagent that re-downloaded the same PDF, re-rendered the same
+  page, and confirmed the photo, its caption and its credit line match
+  word-for-word. The 1998 and 2001 issues' front pages and continuation pages
+  were both read in full and carry no photograph of Cosby or Bedo — checked,
+  not just missed. **Eight years still open: 1996-97, 1997-98, 2000-01,
+  2003-04, 2005-06, 2006-07, 2008-09, 2009-10.** 2006-07 in particular has no
+  April hit at all in the local Herald index for "SGA"/"Student Government" —
+  a genuine gap in the index per CLAUDE.md's own warning, not evidence there
+  was no coverage; a future pass should open that month's issues directly
+  rather than trust the local index's silence. The other seven years' April
+  issues were not exhaustively checked page-by-page this run — only the
+  election-result headline and, where a "wins" story existed, its front page
+  and jump page — so a fuller read of each issue (not just the front page) is
+  still worth doing before calling any of the eight truly exhausted.
 
 ### 8.5 Data hygiene
 
