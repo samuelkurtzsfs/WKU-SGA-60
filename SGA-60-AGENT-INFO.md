@@ -1136,6 +1136,57 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   and jump page — so a fuller read of each issue (not just the front page) is
   still worth doing before calling any of the eight truly exhausted.
 
+  **Candidate leads found, 23 August (a later scheduled run), not yet
+  verified — `viewcontent.cgi` was closed the whole session (three separate
+  articles, spread over several minutes with a 90+ second backoff between
+  attempts, all came back HTTP 202 challenge), so none of these PDFs were
+  actually opened.** Re-confirmed independently first that the Talisman
+  route really is exhausted: re-fetched `dlsc_ua_yearbooks/` fresh and the
+  landing page still has no item at all for 1997-2002 or 2004-2011 (jumps
+  straight from item 424, pub. 1996, to item 594, pub. 2003, to item 5160,
+  pub. 2014) — matches the existing table exactly, nothing new there. The
+  leads below come from the local Herald index instead, on the same logic
+  as the 2001-02 Sears photo already on file (an April election-week story
+  falls inside the academic year it elects the *next* year's officers for):
+  - **2000-01** — Walsh, Erica. "Student Government Association Election
+    Produces Low Voter Turnout," Herald 76:52, 17 Apr 2001
+    (`dlsc_ua_records/8919`, `viewcontent.cgi?article=9903`).
+  - **2003-04** — Clark, Ashlee. "Student Government Association
+    President-Elect Under Investigation," Herald 79:53, 20 Apr 2004
+    (`dlsc_ua_records/9387`, `viewcontent.cgi?article=10372`), continued the
+    following issue (79:54, 22 Apr) as "Nick Todd: I Feel I Have Nothing
+    Wrong." This is the Todd investigation, not a celebratory election
+    photo — worth a look but temper expectations of a usable portrait-style
+    image; check both issues before ruling it out.
+  - **2005-06** — Richardson, Kelly. "See Rob Run, Win . . . Barely –
+    Robert Watkins, Student Government Association," Herald 81:42
+    [labeled 46], 13 Apr 2006 (`dlsc_ua_records/3692`,
+    `viewcontent.cgi?article=4695`).
+  - **2008-09** — Barczak, Mary. "All Smiles, Kevin Smiley Wins Student
+    Government Association Election," Herald 84:46, 16 Apr 2009
+    (`dlsc_ua_records/6747`, `viewcontent.cgi?article=7740`). The headline
+    itself suggests a photograph exists; strongest lead of the four.
+
+  **2006-07 checked further, still nothing.** The local index carries no
+  headlines at all for several of the April 2007 Herald issues (`dlsc_ua_records/6694`
+  through `6697`, Vol. 82 Nos. 45-48) — their landing pages list no articles
+  whatsoever, not even the usual two or three, which is a harder version of
+  CLAUDE.md's truncation warning: a genuinely empty local abstract, not
+  merely a short one. Nothing else in March-May 2007 mentions SGA/ASG by
+  keyword either. This is consistent with Watkins having resigned in
+  November 2006 and Jeanne Johnson succeeding him — there may not have been
+  the usual competitive April campaign that spring to generate a "wins"
+  headline in the first place. Still open; needs the actual PDFs read, not
+  another index search.
+
+  **1996-97 and 1997-98 not worked this pass** — no obvious "wins the
+  election" headline surfaced in the local index for either April, but
+  dozens of issues that spring have only the generic "Just a Second /
+  Campus Line" placeholder abstract with no real headline list, so a miss
+  here proves nothing (same CLAUDE.md warning). Would need either a live
+  TopSCHOLAR search for the specific April issues or a page-by-page PDF
+  read once `viewcontent.cgi` opens.
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
