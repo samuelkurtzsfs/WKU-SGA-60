@@ -4362,3 +4362,138 @@ photographs (up five), 294 documents mirrored (up seven), 1,111 legislation file
 legislation author rows, 1,746 pages built. build.py, check_data.py, check_contrib.py and
 check_duplicates.py all clean on main at the close of the run; the six duplicate pairs are
 the known pre-existing ones and are genuinely separate events. No pull requests left open.
+
+# Editor's report - 23 August 2026, small hours
+
+Two research branches open, both cut from current main, both merged. No stale branches
+left: #6, #7 and #8 were closed before this run began and nothing is open now.
+
+## What was reviewed
+
+Roughly sixty claims opened at source, across the two branches. Not the research pass's
+paraphrase of a document - the document. Twelve Senate minutes files downloaded from
+wku.edu, six pieces of legislation, ten Herald stories, and the 1971 and 1973 Talisman
+full texts from archive.org. Nothing on digitalcommons was needed, so the pacing rule
+never came into it.
+
+## #142, person profiles: merged after nine corrections
+
+Two batches: ten senators and Senate secretaries from 2016-19 and 2023-26, and then,
+pushed to the branch while this review was running, twelve early-1970s Congress members
+drawn from the Talisman.
+
+The substance held everywhere I checked. The Jonesville debate of 29 November 2016 is
+reported exactly as the Herald has it, down to which senator argued for which version and
+the bill passing in its original form. Bill 26-17-S carries "FAIL; 7-22-1" on its own face.
+Bill 13-17-S was tabled on 7 March and passed 19-11-1 on 21 March, and $175 plus $50 is the
+$225 the profile claims. The 23 January 2024 minutes record Livi Ray's nomination, a voice
+vote, "Unanimous Yes", and her predecessor resigning the secretaryship on being nominated
+elsewhere. The 1971 Talisman's Executive Council caption on page 67 gives Hundley, Gerard
+and Sweet as the three members elected from Congress, and the body text describes the
+council's job in the words the profiles use.
+
+One thing was avoided that this project has fallen into before: Bill 32-17-F names Ian
+Hamilton as its author and Jordan Tackett only under CONTACTS, and the profile says
+"listed as a contact". That is the distinction that killed all thirty-nine of the old
+missing-president claims, and it was got right.
+
+What I changed:
+
+- Karlee Powell's election quotation ran to nineteen words, over the fifteen-word limit,
+  and a second phrase in quotation marks was the Herald's summary of what she said rather
+  than her words. Rewritten to a single five-word quotation.
+- William Hurst's first paragraph opened with the April 2017 election and then described
+  two bills he carried in March and April of that year, before it. Bill 26-17-S already
+  calls him a senator at large, so he was sitting in 2016-17. The paragraph now runs in
+  order and reads the April result as a return.
+- Three quotations from one Herald article in Alex Sergent's account, two from one article
+  in Jordan Tackett's, reduced to one each with every fact kept.
+- Resolution 8-17-F calls the Major Redz a registered student organization. The profile
+  called them a dance team. Trimmed to the source.
+- Four of the Talisman directory profiles - Burns, King, McEwen, Lamason - said the
+  Congress seat was held in the senior year and then, two sentences on, said the directory
+  does not date it. A senior directory lists a whole college career. All four now read as
+  the Sally Ann Webb entry already did, and leave the year to the record's own placing.
+  This is the one that mattered: a directory listing is precisely how a person ends up
+  filed in the wrong year.
+
+## #143, the senate rolls: merged after four corrections
+
+2018-19 goes from two recorded members to twenty, 2020-21 from seven to seventeen, all out
+of SGA's own minutes. The 5 February 2019 slate is in the document exactly as recorded,
+confirmation by confirmation. Every one of the six new 2020-21 committee chairs is
+separately titled "Senator" somewhere in the corpus, so the seat rests on evidence and not
+on the chairmanship - again, the trap avoided. Dawson and Addison McCoun really are two
+people: the minutes have one praising the other in the third person, two lines before the
+other is confirmed.
+
+Four notes did not survive:
+
+- Logan Hornback was not nominated on 2 October 2018. She is not named anywhere in those
+  minutes. Nomination, confirmation at 18-14-2, and oath all happen at one meeting on
+  16 October.
+- Lucas Knight was not vice chair of Campus Improvements. On 26 March 2019 he gave the
+  Academic and Student Affairs report standing in for Chair Amanda Harder; Campus
+  Improvements reported separately three lines below under Matt Barr.
+- Hunter Smith's swearing-in is not in the record at all. The note had him "Sworn in with
+  'all the new senators'" on 25 September 2018; that phrase is not in the document and the
+  minutes carry no oath that night, only the President welcoming them. His seat now rests
+  on the floor amendments he actually moved, with the gap stated. This is the one that
+  would have put a ceremony that never happened on the live site.
+- Anna McAvoy was quoted saying she had "been a Senator for the past two years". The
+  minutes read "She was a Senator for the past two years" - the secretary's summary, not
+  her speech.
+
+Three of those four are the same failure: a detail belonging to a neighbouring meeting, or
+to the drafting pass's own phrasing, attributed to the cited file. The verifier re-read the
+cited source and passed them anyway, which suggests it was asking whether the claim was
+plausible against the source rather than stated in it. For every date, vote count and
+quoted phrase, the verifier should have to point at the line.
+
+## The attribution problem is larger than last night's report said
+
+The late-evening report of 22 August recorded eight commits on main authored under the
+tool's name and left the decision to the owner. The true figure is 108. The research
+routines commit under that name and always have; merging their branches carries it onto
+main. I added five more tonight, one of them my own merge commit, before setting a local
+identity - I should have squash-merged, as that report recommended, and did not.
+
+Nothing of it reaches the public site: site/ and data/ are clean of it, and check_contrib
+tests for it. But 108 commits is past the point where it can be called an oversight, and
+rewriting a history that auto-deploys is not a decision to take at night on my own. Two
+routes for the owner: leave it, on the grounds that it is invisible to readers; or rewrite,
+once, with the routines stopped. What the next editor can do without asking is squash-merge
+every research branch from here, which stops the count rising.
+
+## Still open
+
+Carried forward unchanged: the thirty-five unresolved author lists, the six pre-2011
+attributions, the duplicate 1976-77 pair, the Alford and Brenzel portraits resting on a
+unique surname, the twenty-three "no record survives" assertions, the 1995-96 gloss on
+Bill 91-9-F, the seven 2006-07 minutes mirrored by #137 and attached to nothing, the
+legislation extractor's truncated CONTACTS lists, and the thirteen years with no
+photograph.
+
+New tonight:
+
+- Troy Davis II (2018-19) and Troy Davis (2020-21) sit as two records. A freshman in spring
+  2019 would be a junior in 2020-21, so they may be one person, but a matching surname and
+  a plausible gap is not evidence and name-aliases.json rightly has nothing. It wants a
+  minutes line, not a guess.
+- Two files linked from the 2018-19 minutes page, minutes-3-sep and minutes_24_sep, are not
+  2018-19 minutes: their text is dated September 2019 and names 2019-20 officers. #143
+  found this and correctly declined to use them. Anyone sweeping that directory will hit it.
+- The 1971 Talisman bears on the open Lyne-versus-Zielke question for 1970-71. It captions
+  John Lyne as president on page 67 and carries a year-in-review essay signed "John Lyne,
+  president, Associated Students". That is evidence, not a settlement, and it is now cited
+  in four records in that year.
+
+## Where the archive stands
+
+61 academic years, 2,020 dated and sourced entries, 73 leader records, 671 records carrying
+a written profile (up 22), 1,070 officer entries, 1,383 senate members (up 28), 152
+photographs, 294 documents mirrored, 1,111 legislation files, 1,761 pages built. build.py,
+check_data.py, check_contrib.py and check_duplicates.py all clean on main at the close of
+the run. The six duplicate pairs are the known pre-existing ones: two are separate bills
+moved on the same day, which stay separate by rule, and the other four are an introduction
+and its later vote, or an announcement and its later execution. No pull requests left open.
