@@ -1,6 +1,60 @@
 {
  "leaders": [
   {
+   "year": "1980-81",
+   "name": "Mark Wilson",
+   "file": "1980-81-mark-wilson.jpg",
+   "src": {
+    "label": "1981 Talisman, p. 283, captioned \"ADMINISTRATIVE VICE PRESIDENT Mark Wilson, a Shelbyville junior, answers a question about the state-wide council of student governments in an ASG meeting.\"",
+    "url": "https://archive.org/details/talisman1981west/page/n286/mode/1up"
+   }
+  },
+  {
+   "year": "1986-87",
+   "name": "Barbara Rush",
+   "file": "1986-87-barbara-rush-portrait.jpg",
+   "src": {
+    "label": "1987 Talisman, p. 103, captioned \"During a lecture, ASG treasurer Barbara Rush, a senior from Louisville, takes notes.\"",
+    "url": "https://archive.org/details/talisman1987west/page/n106/mode/1up"
+   }
+  },
+  {
+   "year": "1977-78",
+   "name": "Cathy Murphy",
+   "file": "1977-78-cathy-murphy.jpg",
+   "src": {
+    "label": "1978 Talisman, p. 370, senior class portrait, \"CATHY MURPHY, Government and Public Relations, Owensboro\"",
+    "url": "https://archive.org/details/talisman1978west/page/n374/mode/1up"
+   }
+  },
+  {
+   "year": "1986-87",
+   "name": "John Schocke",
+   "file": "1986-87-john-schocke.jpg",
+   "src": {
+    "label": "1987 Talisman, p. 114, Associated Student Government group photograph captioned \"...BACK ROW: Daniel Rodriguez, John Schocke, Tim Todd, Greg Robertson\"",
+    "url": "https://archive.org/details/talisman1987west/page/n117/mode/1up"
+   }
+  },
+  {
+   "year": "1986-87",
+   "name": "Daniel Rodriguez",
+   "file": "1986-87-daniel-rodriguez.jpg",
+   "src": {
+    "label": "1987 Talisman, p. 114, Associated Student Government group photograph captioned \"...BACK ROW: Daniel Rodriguez, John Schocke, Tim Todd, Greg Robertson\"",
+    "url": "https://archive.org/details/talisman1987west/page/n117/mode/1up"
+   }
+  },
+  {
+   "year": "1975-76",
+   "name": "Nancy Wilk",
+   "file": "1975-76-nancy-wilk.jpg",
+   "src": {
+    "label": "1976 Talisman, p. 87 (portrait); ASG office confirmed by a pull-quote captioned \"Nancy Wilk, ASG Secretary\" on p. 63 of the same volume",
+    "url": "https://archive.org/details/talisman1976west/page/n90/mode/1up"
+   }
+  },
+  {
    "year": "1978-79",
    "name": "Victor Jackson",
    "file": "1978-79-victor-jackson-portrait.jpg",
