@@ -4685,3 +4685,117 @@ rows across 1,111 legislation files. Twelve profiles added this run, three parag
 sentences cut from them. build.py, check_data.py, check_contrib.py and check_duplicates.py
 all clean on main at the close. The six duplicate pairs are the known pre-existing ones and
 every one of them is genuinely two events. No pull requests left open.
+
+# 23 August 2026 — editor's fourth pass
+
+Four research pull requests open, all cut fresh from current main, all four merged. One
+further pull request opened and merged by the editor for a defect found along the way.
+
+## What was reviewed and merged
+
+**#154, the senate rolls.** Five senators added to 2012-13. Fewer than eight new claims, so
+every one was checked rather than a sample, in the full text of its cited article. All five
+held. The run's discipline is worth recording: the same sentence that gave it Taylor Gwinn
+and Brad Cockrel also names Seth Church and Kara Raley, and it correctly filed those two as
+Judicial Council rather than sweeping them into the Senate; Jackie Stewart, approved in the
+same breath as Roy Ratliff, was correctly left out as an associate justice. Mulcins/Mullins
+was flagged, not silently resolved, and not added to the aliases file.
+
+Three notes were trimmed. Laura Harper's senator title came from a Herald item printed on 17
+October 2012 announcing a picnic to be held on the 22nd — an advance notice, and the note had
+her attending it on the 17th. Her seat was never in doubt; the attendance was. Mac Mullins is
+the mirror case: the 23 October piece is the actual report, so attendance is proven, but 23
+October is the publication date and the note dated the picnic to it. Roy Ratliff's
+appointment was approved on 16 April 2013 in the future tense — the Herald says he "will
+become a senator-at-large" — at the meeting already choosing the next speaker, so the note
+now carries that ambiguity instead of asserting a settled 2012-13 seat.
+
+**#155, twelve officer portraits** for 2025-26 and 2026-27. Checked harder than a sample,
+because a misidentified face is the one error this archive cannot take back. Every URL is
+live and returns a real JPEG; four committed files match the original upload byte for byte
+and the rest are crops. Every caption was checked against the Herald's own media record
+rather than an article page, and all eleven matched verbatim. Every crop takes the correct
+person, checked by eye against the original: Barker from the left and Derryberry from the
+right of the three-man election photograph, Pace from the centre of three, and Hadley Whipple
+— the one to watch, because that caption names two people without saying who stands where —
+correctly taken as the seated student rather than the staff advisor leaning in to help her.
+Every name matches years.json exactly, and the one image serving two years is right: Preston
+Jenkins really did hold the same office in 2024-25.
+
+Two labels were trimmed. The Butler portrait opened with "(FILE PHOTO)", which is not in the
+Herald's caption and is contradicted by the image having been uploaded the day of the
+swearing-in it shows. The Yelton label asserted the photograph was "dated 25 Feb 2025"; that
+is the Herald's upload date, while the Herald's own caption says 24 March 2025. The two
+disagree, that is the paper's inconsistency and not ours to resolve by choosing one, and the
+label now says so.
+
+**#156, ten profiles** of judicial council and committee officers, 2016–2022. Given how much
+of this concerns living people and a racial-conduct dispute, nothing was sampled: every
+factual claim was checked against all ten cited Herald articles, both Senate minutes files
+and the legislation index. Everything held, including two claims that looked unsourced until
+the second document was opened. Turner Reynolds's "confirmed 10-2" appears nowhere in the
+newspaper, which reports three unanimous confirmations and no count for her; it is in the 24
+September 2019 minutes, as "confirmed Ms. Turner 10-2-0", and those minutes also confirm the
+other three were unanimous. Symone Whalin's "passed 29-1" is in its article written out as "a
+29-to-1 vote with one abstention". Both `name-aliases.json` additions are sound: the minutes
+spell "Derrick Collins" and "Holden Schroder" where the Herald spells "Derek Collins" and
+"Holden Schroeder", for the same four nominees at the same meeting.
+
+Brigid Stakelum's position is reported fairly, and that matters more than the arithmetic. Her
+two quotes are accurate and come from different articles, so the one-quote-per-source rule
+holds; and the line saying she still believed those responsible should be punished is not a
+softening but the source's own sentence — she believed it necessary to punish those involved
+with the video, but not members who had nothing to do with the slur. Reporting her opposition
+without it would have misrepresented her.
+
+One correction, in two places. Both the Whalin and Stakelum profiles described the video as
+"a chapter member sang a racial slur". Both cited articles say members, plural. On a matter
+like this the number of people involved is exactly what to take from the source rather than
+compress, and both now follow the reporting.
+
+**#157, scrape debris cleared from 103 legislation titles.** The cleanest branch reviewed on
+this project. A sampled check would have been close to worthless here — one bad pattern can
+corrupt dozens of rows and a sample of eight will miss it — so all 103 were checked two ways.
+Ninety-seven of the new titles are exact substrings of the old scraped strings: debris
+removed, not a character invented. The six that add text were each opened: five gained the
+words "A Bill to", which the PDFs confirm at the head of their titles and the old scrape had
+dropped, and `resolution_3-17-s` restored "Redz", confirmed in the document's own purpose
+clause and corroborated by `bill-31-17-f` naming MajorRedz elsewhere in the same file.
+Independent text extraction found 87 of the 103 verbatim in their own PDFs; the other 16 are
+titles set in subset fonts that would not decode, not mismatches. The file has 1,111 entries
+before and after, none added or removed, and not one non-title field changed.
+
+## What the editor fixed
+
+**#158.** Found while reviewing the photographs and unrelated to them: the 2025-26 executive
+roster carried nine entries for six officers, with Maggie Yelton appearing three times and
+Jade Ismail twice, once under the office title "Chair of the Action &" — cut off mid-word,
+with a note repeating the fragment. This was live on the site. The cause is not a research
+error but the legislation harvester recording an officer once per bill that names them, so
+every individual entry was correctly sourced. Fixed by consolidation rather than deletion:
+each officer appears once and carries every source that named them, including one bill that
+Ismail's profile already discussed and that now cites properly. No source URL was dropped.
+The same pattern will recur for any officer named on more than one bill, in any session, and
+has not been swept for.
+
+## Still open
+
+- The Kentucky Senate Bill 17 signing date of 20 March 2017, in two profiles and no cited
+  source. Untouched again this run; still wants running down or dropping from both.
+- Two harvester typos in `legislation.json`, "Academic Compeition Club" and "Adopt
+  Admendments". The 103-title pass did not reach them: it only covered titles carrying a bill
+  number and vote or committee pattern, and said so plainly.
+- Other sessions almost certainly carry both the differently-shaped title debris that pass
+  did not look for and the duplicate-officer pattern behind #158.
+- The photograph run's citations point at bare `wp-content` image files, so a reader who
+  clicks one gets a JPEG with no caption and no way to check the identification. Carrying the
+  article URL alongside the file URL would make these portraits checkable by a reader rather
+  than only by an editor with the media API.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced entries, 73 leader records, 1,082 officer entries,
+1,388 senate members, 171 photographs, 118 documents attached, 1,144 legislation authorship
+rows across 1,111 legislation files. build.py, check_data.py, check_contrib.py and
+check_duplicates.py all clean on main at the close. The six duplicate pairs are the known
+pre-existing ones and every one of them is genuinely two events. No pull requests left open.
