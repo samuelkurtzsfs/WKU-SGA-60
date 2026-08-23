@@ -2811,7 +2811,10 @@
        "src": {
         "label": "1973 Talisman, Profile, pp. 233-234",
         "url": "https://archive.org/details/talisman1973west"
-       }
+       },
+       "profile": [
+        "Cochran served as a representative at large in the 1970-71 Associated Students Congress, rooming at the time with his fraternity big brother Doug Alexander, the sitting vice president, and crediting what he learned from Alexander and from president John Lyne; he said that the next year he worked with Linda Jones and Joe Glasser. A 1973 Talisman profile, occasioned by his selection as Sigma Nu's national Man of the Year, said he had also been president of the fraternity's chapter and, the profile said, its scholar for three years; it named him commander of WKU's ROTC program the year before, where he produced a training film about the program that the Army paid to have copied and shown around the country. He was the son of Robert G. Cochran, the university's dean of public affairs and public relations, who had died by the time the profile ran."
+       ]
       },
       {
        "name": "Joe Gerard",
@@ -2820,7 +2823,10 @@
        "src": {
         "label": "1971 Talisman, Associated Students, p. 67",
         "url": "https://archive.org/details/talisman1971west"
-       }
+       },
+       "profile": [
+        "Gerard was one of three Congress members elected to the Executive Council for 1970-71, serving alongside Peggy Hundley and Glen Sweet under president John Lyne and vice president Doug Alexander. The council's role, as the Talisman described it, was to weigh policy and proposals before they reached the full Congress."
+       ]
       },
       {
        "name": "Peggy Hundley",
@@ -2829,7 +2835,10 @@
        "src": {
         "label": "1971 Talisman, Associated Students, p. 67",
         "url": "https://archive.org/details/talisman1971west"
-       }
+       },
+       "profile": [
+        "Hundley was one of three Congress members elected to the Executive Council for 1970-71, serving alongside Joe Gerard and Glen Sweet under president John Lyne and vice president Doug Alexander. The council's role, as the Talisman described it, was to weigh policy and proposals before they reached the full Congress."
+       ]
       },
       {
        "name": "Ben Allen Burns, Jr.",
@@ -2837,24 +2846,33 @@
        "src": {
         "label": "1971 Talisman, senior directory (Ogden College)",
         "url": "https://archive.org/details/talisman1971west"
-       }
+       },
+       "profile": [
+        "Burns sat in the Associated Students Congress during his senior year, 1970-71, according to the Talisman's senior directory, which also lists him as president of the Interfraternity Council and a member of the cheerleading squad, Alpha Gamma Rho and the Cherry Country Life Club. The directory does not date his Congress term more precisely."
+       ]
       },
       {
        "name": "Pamela Adele King",
        "note": "The 1971 Talisman's senior directory lists her in the Associated Students Congress and on the Academic Council, alongside Kappa Delta, Phi Upsilon Omicron, the Crescent Club of Lambda Chi Alpha and the honors programme. She was a senior in 1970-71; the directory does not date the Congress term.",
        "src": {
-        "label": "1971 Talisman, senior directory (Home Economics), p. 132",
+        "label": "1971 Talisman, senior directory (Home Economics), p. 133",
         "url": "https://archive.org/details/talisman1971west"
-       }
+       },
+       "profile": [
+        "King sat in the Associated Students Congress and on the Academic Council during her senior year, 1970-71, according to the Talisman's senior directory, which also lists her in Kappa Delta, Phi Upsilon Omicron, the Crescent Club of Lambda Chi Alpha and the honors programme. The directory does not date her Congress term more precisely."
+       ]
       },
       {
        "name": "Martha Townley Lamason",
        "seat": "junior class representative-at-large",
-       "note": "The 1971 Talisman's senior directory lists her in the Congress of Associated Students and as junior class representative-at-large. That pairing is the clearest evidence in the volume that a class representative-at-large sat in the Congress. She was a senior in 1970-71, so the junior-class term falls in 1969-70 and the Congress service itself is undated.",
+       "note": "The 1971 Talisman's senior directory lists her in the Congress of Associated Students and as junior class representative-at-large, side by side but undated and not stated to be the same office. She was a senior in 1970-71, so the junior-class title would ordinarily date to 1969-70; the Congress service itself is undated.",
        "src": {
         "label": "1971 Talisman, senior directory, p. 154",
         "url": "https://archive.org/details/talisman1971west"
-       }
+       },
+       "profile": [
+        "Lamason sat in the Congress of Associated Students during her senior year, 1970-71, according to the Talisman's senior directory, which also records her as junior-class representative at large, a title that would ordinarily have been held the year before, in 1969-70. The directory does not date either role more precisely, and it does not say whether the class-representative title and the Congress seat were the same office."
+       ]
       },
       {
        "name": "Patricia B. McEwen",
@@ -2862,7 +2880,10 @@
        "src": {
         "label": "1971 Talisman, senior directory",
         "url": "https://archive.org/details/talisman1971west"
-       }
+       },
+       "profile": [
+        "McEwen sat in the Associated Students Congress during her senior year, 1970-71, according to the Talisman's senior directory, which also lists her in Alpha Delta Pi and Panhellenic. The directory does not date her Congress term more precisely."
+       ]
       },
       {
        "name": "Glen Sweet",
@@ -2871,7 +2892,10 @@
        "src": {
         "label": "1971 Talisman, Associated Students, p. 67",
         "url": "https://archive.org/details/talisman1971west"
-       }
+       },
+       "profile": [
+        "Sweet was one of three Congress members elected to the Executive Council for 1970-71, serving alongside Joe Gerard and Peggy Hundley under president John Lyne and vice president Doug Alexander. The council's role, as the Talisman described it, was to weigh policy and proposals before they reached the full Congress."
+       ]
       },
       {
        "name": "Sally Ann Webb",
@@ -2879,7 +2903,10 @@
        "src": {
         "label": "1971 Talisman, senior directory and profile, pp. 95, 132",
         "url": "https://archive.org/details/talisman1971west"
-       }
+       },
+       "profile": [
+        "Webb sat in the Associated Students Congress at some point during her time at Western, according to the Talisman's senior directory and a companion profile covering her senior year, 1970-71. The profile centers on her tenure as past president of the Panhellenic Council - \"I'm gung-ho Greeks,\" she told the Talisman, pushing back on the idea that sorority members had to fit a stereotype - and does not separately date her Congress service."
+       ]
       }
      ]
     }
@@ -4211,7 +4238,10 @@
        "src": {
         "label": "1973 Talisman, Greeks (Kappa Delta)",
         "url": "https://archive.org/details/talisman1973west"
-       }
+       },
+       "profile": [
+        "Berkshire represented the College of Applied Arts in the Associated Student Government Congress during 1972-73, according to the Talisman's page on her sorority, Kappa Delta."
+       ]
       },
       {
        "name": "David Brown",
@@ -4220,16 +4250,22 @@
        "src": {
         "label": "1973 Talisman, Greeks (Sigma Alpha Epsilon)",
         "url": "https://archive.org/details/talisman1973west"
-       }
+       },
+       "profile": [
+        "Brown served as his fraternity's representative to the Academic Council in 1972-73, according to the Talisman's page on Sigma Alpha Epsilon. The same volume's account of the revised constitution placed Academic Council members and alternates on the roll of Congress, though it does not say whether Brown sat as a full member or an alternate."
+       ]
       },
       {
        "name": "John Burden",
        "seat": "Academic Council representative, Graduate College",
        "note": "The 1973 Talisman's section on graduate representation names Burden and Steve Schulman as members of the Academic Council for the graduate college. The same volume puts the Academic Council members and alternates on the roll of Congress, which is the basis for recording him here; it does not distinguish full members from alternates.",
        "src": {
-        "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+        "label": "1973 Talisman, Grad students have ASG representation, pp. 465-466",
         "url": "https://archive.org/details/talisman1973west"
-       }
+       },
+       "profile": [
+        "Burden and fellow graduate student Steve Schulman represented the graduate college on the Academic Council in 1972-73, according to the Talisman's section on graduate-student representation. The same volume's account of the revised constitution placed Academic Council members and alternates on the roll of Congress, though it does not say whether Burden sat as a full member or an alternate."
+       ]
       },
       {
        "name": "Robert Deboe",
@@ -4263,7 +4299,7 @@
        "seat": "ASG representative from the Graduate College",
        "note": "The 1973 Talisman's section on graduate representation names Gagle and Juanita Morrow as student government representatives from the graduate college. He was found while checking Morrow's seat and was not on the list this pass began from; the sentence that carries her name carries his.",
        "src": {
-        "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+        "label": "1973 Talisman, Grad students have ASG representation, pp. 465-466",
         "url": "https://archive.org/details/talisman1973west"
        }
       },
@@ -4308,7 +4344,7 @@
        "seat": "ASG representative from the Graduate College",
        "note": "The 1973 Talisman's section on graduate representation names Morrow and Merlin Gagle as student government representatives from the graduate college. The volume does not say which kind of seat she held; a Herald report of the vote of 19 September 1972 would settle it and has not been read.",
        "src": {
-        "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+        "label": "1973 Talisman, Grad students have ASG representation, pp. 465-466",
         "url": "https://archive.org/details/talisman1973west"
        }
       },
@@ -4326,7 +4362,7 @@
        "seat": "Academic Council representative, Graduate College",
        "note": "The 1973 Talisman's section on graduate representation names Schulman and John Burden as members of the Academic Council for the graduate college. The same volume puts the Academic Council members and alternates on the roll of Congress, which is the basis for recording him here; it does not distinguish full members from alternates.",
        "src": {
-        "label": "1973 Talisman, Grad students have ASG representation, p. 339",
+        "label": "1973 Talisman, Grad students have ASG representation, pp. 465-466",
         "url": "https://archive.org/details/talisman1973west"
        }
       },
