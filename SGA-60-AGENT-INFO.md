@@ -893,13 +893,31 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    couple were ever captured) is now moot for the *authors* file, since
    contacts were never meant to be in it — but if a future pass wants a
    `contact` role added to the schema, those long lists are still sitting
-   unread. Separately, and outside this item's scope: `data/legislation.json`'s
+   unread. ~~Separately, and outside this item's scope: `data/legislation.json`'s
    own `title` field carries clearly glued-on scrape debris for a number of
-   2016-17/2017-18 entries (e.g. a title ending in "...B24-17-S Conner
-   Hounshell, Kara Lowry, Andi Dahmer, Savannah Molyneaux, Emily Houston,
-   Student Affairs Committee MyCampusToo Committee Sustainability Committee
-   Yes") — a different file, a different scrape, and a different pass's
-   job, but worth flagging for whoever next touches it.
+   2016-17/2017-18 entries~~ **Done, 23 August (a later scheduled run).** All
+   103 affected `title` fields (65 flagged by a trailing Yes/No vote outcome,
+   38 more with the same debris but no trailing vote marker) were rebuilt from
+   scratch by reading each entry's own locally-mirrored PDF directly: the true
+   title is the text between the document's own "Bill N-NN-S" / "Resolution
+   N-NN-S" header and its "PURPOSE:" line, not a guess about where the scraped
+   string should be cut. Handled the same way as the rest of this section's
+   PDF work: a handful of PDFs use a colon rather than a period after the bill
+   number, and a handful print stray margin line-numbers that interleave with
+   the header text, both accounted for rather than left as noise. Two
+   independent adversarial verifier subagents then re-opened all 103 PDFs
+   themselves, split into two batches, each checking every proposed title
+   against the document's own header text with no visibility into the first
+   pass's code or reasoning. Both came back 0 mismatches (51 ok / 52 ok),
+   including explicit checks of the colon-header and stray-line-number edge
+   cases, and one case where the correction restored a word ("Redz") that an
+   even earlier bad scrape had dropped from `resolution_3-17-s.pdf`'s title.
+   `build.py`, `check_data.py` and `check_duplicates.py` all pass clean
+   afterward; the six known duplicate pairs are unchanged. What's left: this
+   pass only covered the 2016-17/2017-18 entries that carried a bill/resolution
+   number and vote/committee/date pattern inside the title string itself — it
+   did not attempt a full sweep of every session's `title` field for other,
+   differently-shaped scrape artifacts.
 8. **Six duplicate pairs that `check_duplicates.py` has reported on every pass.**
    All six have been judged genuinely separate — same-day bills, a bill introduced
    against the same bill failing, a suit planned against a suit endorsed. Nobody
