@@ -4902,3 +4902,84 @@ leader portraits and 61 year photographs across 157 image files, 118 documents a
 legislation files with 1,144 authorship rows. build.py, check_data.py, check_contrib.py and
 check_duplicates.py all clean on main at the close. The six duplicate pairs are the known
 pre-existing ones. No pull requests left open.
+
+# 23 August 2026 — editor's sixth pass
+
+Four pull requests open at the start of the run and all four merged: #162 the backlog, #163
+the senate rolls, #164 photographs, #165 person profiles. GitHub was reachable, so this was a
+full pass. Every branch was cut from the current main and merged cleanly; none of the stale
+4 August branches remain.
+
+## What was checked, and against what
+
+Twenty-odd claims opened at their own sources rather than sampled from the reports. The 1997
+legislation index on the Wayback Machine, the SGA congress notice of August 2000, the Judicial
+Council rosters of September 2013, April 2015 and January 2022, the Daily News report of the
+2017 reparations resolution, the WKU News release of the May 2007 banquet, the Herald of
+18 October 2007 through its repaired link, the Herald reports of 13 February, 26 September and
+3 December 2013, the Senate minutes of 3 September 2013 and of spring 2014, the Herald of
+1 December 2021 and 23 September 2021, four bill and resolution PDFs from 2021-22, and the
+1974 Talisman at pages 94, 96 and 311.
+
+## What the editor fixed
+
+- **#163.** Megan Skaggs' seat note dated the transcript voucher bill 26 September 2013, which
+  is the Herald's publication date; the bill passed at the Tuesday meeting of 24 September.
+  Rewritten.
+- **#163.** Mark Rawlings' note stated flatly that the Congress member of January 2000 became
+  vice president of finance the following year and vice president of public relations for
+  2001-02. No source establishes that. The routine's own research note conceded as much.
+  Rewritten to record the later Rawlings as a separate appearance in the archive and to say
+  plainly that nothing joins them.
+- **#165.** Jacob Skillman's profile called the Swipe Out Hunger resolution a fall 2021
+  document. Resolution 2-22-S has its first reading on 8 February 2022. Rewritten.
+- **#165.** Caleb Collins was said to have been elected a senator-at-large for 2021-22. The
+  bill documents show him holding the seat, not winning it. Softened to "served as", matching
+  the fix the routine had already applied to his 2022-23 line.
+- **#164.** The Goodpaster portrait cited the 1974 Talisman at page 95. The page prints 96.
+- **#162.** The branch had dropped the trailing newline on `data/years.json`. Restored.
+
+## What held up
+
+The backlog run's thirty trims were the right call and the pages bear them out: the 1997
+legislation index really is nothing but numbers, titles and dates, and the August 2000 congress
+page really is an advance notice. The 2017 reparations entry, which grew rather than shrank,
+matches the Daily News word for word on the 19-10 vote with one senator declining. The two
+Talisman portraits carry their own printed numbers, 24 and 18, in the crop. The 2014-15
+Judicial Council page does list six justices while its own boilerplate says five, exactly as
+the profiles routine's verifier reported.
+
+The best thing in the run was a trap not sprung. The Herald of 23 September 2021 introduces
+both Jacob and Zach Skillman — brothers, both juniors in business economics, both Gordon Ford
+ambassadors, both in the same book club. Resolution 2-22-S names them separately, one as
+senator-at-large and one as sustainability chair, and the profile follows the full name. A
+surname match there would have merged two people into one.
+
+## Still open
+
+- The 2 March 2006 Stevenson claim. The event, his note and his profile all say he read a
+  letter, and quote a word from it. The only citation is a TopSCHOLAR issue index, which
+  carries the headline and nothing else. The backlog run improved this — before it there was
+  no 2006 citation at all — but the page itself still needs reading before the wording stands.
+- Facts trimmed for citing the wrong page that are probably true elsewhere in this archive:
+  Isaac Keller as chief justice the following year, Abbey Norvell as executive vice president
+  in 2020-21, Herlick and Goins on Bill 17-22-S. They should come back under the citation that
+  actually carries them.
+- The five 2014-15 justice profiles are one sentence with the names permuted. Honest, but a
+  roster page cannot make a profile.
+- Billy Lyons and the rest of the 1999-00 Herald year, per the senate routine's own note.
+- Everything on the previous pass's open list that no routine has picked up: the Kentucky
+  Senate Bill 17 signing date with no source, the two harvester typos in `legislation.json`,
+  the CLAUDE.md line calling Lyne and Zielke an open question when it no longer is, and Kaden
+  Blankenship's profile stopping short of his resignation.
+- **Vercel is refusing deployments**, having passed a hundred in a day on the free plan. The
+  merges above are on main but the live site will not rebuild until the limit resets.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced entries, 73 leader records, 1,083 executive and
+senate officer entries, 1,395 senate members, 738 people carrying a written profile, 113
+leader portraits and 61 year photographs across 160 image files, 118 documents attached and
+1,111 legislation files. build.py, check_data.py, check_contrib.py and check_duplicates.py all
+clean on main at the close, and site/ rebuilds with no change. The six duplicate pairs are the
+known pre-existing ones. No pull requests left open.
