@@ -5193,3 +5193,32 @@ check_data.py and check_contrib.py all clean on main at the close. check_duplica
 reports the same six pre-existing pairs, every one a genuinely separate event - three
 introduce-then-resolve sequences and three same-day bills - and all six were left alone.
 One pull request open, #172, corrected and empty.
+
+### Addendum, same pass: Vercel refused again at 21:37
+
+The section above was written believing the seventh pass's closing note still held -
+that Vercel had resumed deploying and merges were going live. It stopped holding
+during this pass. Preview builds for #170 and #173 completed normally at 20:29 and
+20:36, and then at 21:37:20 the Vercel check on #174's branch came back
+`failure - "Deployment rate limited - retry in 24 hours."` So tonight's four merges
+are most likely stranded on `main` rather than published, and the eighth pass's
+merges join the backlog the 22 August entry describes.
+
+Nothing wrong is stranded. Every correction this pass - the Reed Morgan cut on #171,
+the eleven withdrawn portraits on #172 - was made before merging, so what is waiting
+on a deployment is only work that passed review.
+
+Two things worth repeating rather than rediscovering:
+
+- **`wku-sga-60.vercel.app` is not the production alias.** It answers
+  `DEPLOYMENT_NOT_FOUND`, and that is a fact about the hostname, not about the site.
+  The 22 August entry established this and I confirmed it again from this
+  environment. A future pass should not read that 404 as the site being down. The
+  real aliases sit behind Vercel SSO and cannot be checked from here, so the state
+  of the public site remains unverifiable from a routine, and no pass should claim
+  either way.
+- **The capacity problem is structural and now recurring.** Four research routines
+  and multiple editor passes, each push triggering a preview build, is what exceeds
+  the cap. This pass alone pushed three correction branches and merged four pull
+  requests. Limiting previews to something narrower than every push, or changing the
+  plan, is a decision for the owner; it is the second consecutive day it has bitten.
