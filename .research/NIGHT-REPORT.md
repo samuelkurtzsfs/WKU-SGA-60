@@ -4497,3 +4497,84 @@ check_data.py, check_contrib.py and check_duplicates.py all clean on main at the
 the run. The six duplicate pairs are the known pre-existing ones: two are separate bills
 moved on the same day, which stay separate by rule, and the other four are an introduction
 and its later vote, or an announcement and its later execution. No pull requests left open.
+
+---
+
+## 23 August 2026 — the editor's second pass of the day
+
+Four research pull requests were open at the start of the run and all four are merged.
+Every one needed correcting first. Nothing was rejected, and nothing was cut for being
+unsourced: the whole night's editing consisted of putting back material the research had
+dropped, and fixing two numbers.
+
+**#145, the legislation authorship rebuild.** The largest diff of the four and the most
+clearly right. The old file had been filing WKU staff, faculty advisers and other
+organisations' officers as sponsors of SGA bills, because the extractor read a fixed
+200-character window past a SPONSOR field naming a committee and straight into the CONTACTS
+names below it. Ten changed files opened at random against their PDFs all matched exactly,
+and all nine surviving sponsor rows are genuine people printed in a SPONSOR field. But the
+report's claim that no file lost its authors did not hold: run the other way round, four
+documents had lost people they name. Bill 27-18-S had lost all six of its authors, printed
+title-first with no comma; 9-20-S had lost Mary Jane Mayo behind an AUTHOR(S) label;
+29-23-S had lost Adan Canizalez to a stray comma inside his own name; 1-23-F had lost Donte
+Reed to quotation marks round his nickname. Nine names restored off the PDFs. The file
+stands at 1,123 rows. The extractor itself was never changed, so the next run of
+extract_authors.py will regenerate every error this pass removed — that fix belongs in the
+script and is still outstanding.
+
+**#146, six portraits from the Talisman.** All six identifications hold. The two cropped out
+of a group photograph were the ones worth doubting, so the page scan was pulled and looked
+at: the back row of the right-hand ASG photograph on p. 114 of the 1987 volume is four
+people, and Rodriguez and Schocke sit in positions one and two exactly as the caption orders
+them, with Tim Todd formally dressed in position three. Rodriguez's office is confirmed
+separately in the same book. Cathy Murphy was the risk. The 1978 Talisman contains two Cathy
+Murphys, and a senior portrait caption cannot tell you which one you are holding. The
+volume's index settles it — Mary Catherine Murphy is indexed at pp. 34, 276, 370 and 427,
+p. 370 being the portrait and p. 34 being the ASG page that names her vice president, while
+Cathy Renee Murphy of Louisville appears only at p. 401. The portrait is right; the citation
+now carries that reasoning instead of resting on the caption alone.
+
+**#147, nine officer profiles of 2016-18.** The cleanest of the four; nothing cut. Every
+figure checked against the Herald held to the digit — the 1,579 votes of the April 2017
+election and its 930/305/212 split, the 17-9-1 on Bill 20-17-S, the 32-1 on Bill 17-18-F,
+Cody Cox announcing Amarah Reed's departure and McAndrews succeeding her, the national
+coverage of the reparations resolution and Ransdell's refusal of it. Where the December 2018
+Herald and the October 2018 Herald disagree about the date of Logan Hornback's nomination,
+the profile follows the contemporaneous report and is right to. The John McKinney paragraph,
+the one entry here that could injure a living person, reports only what its source reports,
+names no accuser, and ends by saying the record shows no confirmation, denial or resolution
+— which is what the rule requires. It declines even to draw an inference the Herald itself
+leaves open. One flag carried forward: the claim that Kentucky Senate Bill 17 was signed on
+20 March 2017 appears in two profiles now and in no cited source. It arrived before this PR;
+it wants running down or dropping from both.
+
+**#148, the 1969-70 class-officer seats.** Eleven entries recovered from the spring 1969
+result sheet, and all eleven are correct on the scan, including the OCR digit the verifier
+had already caught and fixed. The report was wrong about what the sheet omits. It states
+that the Junior class President, Vice President, Secretary and Treasurer races carry no vote
+totals. They carry all four, each with the same hand-drawn winner's mark as the races that
+were kept: Phil Myers 493 to Jim Dowd's 455, Pat Riley 467 to Russ Richardson's 455, Sue
+Pritchett 493 to Pam King's 449, Lowry Stagg 475 to Phil Ray's 458. The sheet is typed in two
+columns and plain-text extraction throws the Junior figures away from their names, so they
+read as missing; on the page they are perfectly plain. Four seats and four people added. The
+document extract, the one line of that PR a reader sees quoted, gave Frank Genzianelli 1,621
+votes where the sheet prints 1,626 — the text layer renders that digit as an "i". Corrected.
+The 1969-70 roll now stands at seventeen seats. The note recording that the Congress-seat
+link is an inference from the 1966-67 roster and not stated on the 1969 document is exactly
+right and was left as written.
+
+**The lesson of the night, twice over.** Two of the four PRs lost real, sourced material to
+a text layer rather than to a judgement — once in a two-column typed sheet, once in a
+two-column PDF form. Both times the researcher concluded something was absent when it was
+legible on the page. A miss in an extraction is not a miss in the document. Render it and
+look at it before writing down that it is not there.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced entries, 73 leader records, 657 records carrying a
+written profile, 1,085 officer entries, 1,383 senate members, 158 photographs, 295 documents
+mirrored, 1,123 legislation authorship rows, 1,111 legislation files. The entry count is two
+lower than this morning because #147 correctly combined two pairs of duplicated 2018-19
+events, losing no sourced fact from either. build.py, check_data.py, check_contrib.py and
+check_duplicates.py all clean on main at the close of the run. The six duplicate pairs are
+the known pre-existing ones. No pull requests left open.
