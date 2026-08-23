@@ -787,6 +787,90 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    unreviewed pool) still carries the same still-glued rows this pass fixed
    in the live file — it was not touched, since it is a working cache and
    not what `build.py` reads.
+
+   **The broader completeness gap flagged above is now done, 23 August
+   (scheduled run).** The root cause was `extract_authors.py` itself, not
+   the individual PDFs: for the 2015-16-through-2025-26 template it reads
+   `AUTHOR(S)?`/`SPONSOR(S)?` as a literal label followed by a **fixed
+   200-character window**, and its stop-list (`STOP`) never includes the
+   word "CONTACTS". Two consequences followed on every such document: an
+   AUTHOR list longer than about three names got truncated mid-list, and —
+   far more common — a SPONSOR field that (correctly) names a *committee*,
+   not a person, let the 200-character window run straight past it into
+   the CONTACTS names that follow, filing WKU staff, advisors and other
+   organizations' officers as if they had "sponsored" an SGA bill.
+   `extract_authors.py` itself is left exactly as it was — its own note
+   says it is deliberately unmodified, and the pre-2011 form is a separate,
+   hand-curated case not touched here. A new extraction pass, run only
+   against 2015-16 through 2025-26, reads each `AUTHOR:`/`SPONSOR:`/
+   `CONTACTS:` field only up to the *next* such label on the document
+   (never a fixed window), and reconstructs each name from its physical
+   line rather than a flattened blob, recovering every form this corpus
+   actually uses: "Name, Title" and "Name, Title; Name, Title"
+   (comma/semicolon-delimited, one or several people), "Title: Name" and
+   bare "Title Name" (the office printed first), "Name (Title)", "Name –
+   Title" / "Name - Title", "NameA and NameB" sharing one line, a trailing
+   "Jr./Sr./II/III" suffix, and names carrying an accented letter
+   ("Salvador León Golib") or an internal capital ("Dallas J. McKinney",
+   "Dawson McCoun") that the original word-matching pattern could not
+   complete.
+
+   Net result: 178 pre-2015-16 rows carried over untouched; the 926
+   post-2015-16 rows were entirely replaced by 931 freshly extracted ones
+   (roughly half the old rows were CONTACTS-bleed or truncation garbage
+   and were dropped; a comparable number of genuine names came back that
+   the old extraction had never captured or had cut off), plus 5 rows
+   added by hand for two forms no general rule should guess at: one bill
+   (`2019-20/3_20_s.pdf`) prints four authors run together on a single
+   dense line with role-abbreviation separators and no punctuation at all
+   ("EVP J. Garrett Edmonds Student Body President Will Harris AVP Kenan
+   Mujkanovic CI Chair Matt Barr"), and one (`2022-23/bill_8_22_f.pdf`)
+   simply omits the comma the rest of the corpus prints between a name and
+   its title ("Megan Pierce-Potter College of Arts & Letters Senator") —
+   both read and added by hand after direct confirmation against the PDF
+   text. `data/legislation-authors.json` now holds 1,114 rows.
+   Sponsor-role rows for this span fell from 421 to 9 — nearly every
+   `SPONSOR:`/`SPONSORS:` field on this corpus names a committee, not a
+   person, which is itself the clearest evidence the old rows were wrong.
+
+   Verified two ways before landing. Mechanically and exhaustively: every
+   file that had at least one author before this pass still has at least
+   one after it, and the full output was scanned for residual garbage
+   (single-word entries, digits, anything not starting with a capital
+   letter) with none found. Adversarially and independently: two separate
+   general-purpose subagents, neither shown the extraction code or the
+   reasoning above, each opened a random sample of the resulting PDFs
+   directly (35 files, then 30 more) and checked every recorded row
+   against the document's own text. The first pass found 2 real
+   omissions — both genuine authors dropped because their PDF used a form
+   the rebuild had not yet handled (a non-ASCII letter in "León", and a
+   bare "Title Name" line with no colon) — fixed in the extractor itself
+   and the whole corpus rebuilt again; a bug this fix briefly
+   introduced (the accented-letter change over-broadened the pattern to
+   also match ordinary lowercase prose, producing sentence-fragment
+   "sponsor" rows like "such as budgeting" on two files where a runaway
+   CONTACTS block ran into a neighbouring document's purpose text inside
+   the same multi-bill PDF) was caught before landing by the mechanical
+   garbage scan, not by the second subagent. The second, independent
+   30-file sample then came back with every file exactly correct.
+   `build.py`, `check_data.py` and `check_duplicates.py` all pass clean;
+   the six known duplicate pairs are unchanged.
+
+   **What's left:** `2012-13`'s legislation PDFs (10 files) have no usable
+   text layer at all (scanned images, 0–33 characters of extracted text) —
+   out of reach for this method without OCR, and not attempted here. The
+   long-CONTACTS-list completeness gap the last pass flagged (several
+   bills' `CONTACTS:` blocks running to 14–19 people, of which only a
+   couple were ever captured) is now moot for the *authors* file, since
+   contacts were never meant to be in it — but if a future pass wants a
+   `contact` role added to the schema, those long lists are still sitting
+   unread. Separately, and outside this item's scope: `data/legislation.json`'s
+   own `title` field carries clearly glued-on scrape debris for a number of
+   2016-17/2017-18 entries (e.g. a title ending in "...B24-17-S Conner
+   Hounshell, Kara Lowry, Andi Dahmer, Savannah Molyneaux, Emily Houston,
+   Student Affairs Committee MyCampusToo Committee Sustainability Committee
+   Yes") — a different file, a different scrape, and a different pass's
+   job, but worth flagging for whoever next touches it.
 8. **Six duplicate pairs that `check_duplicates.py` has reported on every pass.**
    All six have been judged genuinely separate — same-day bills, a bill introduced
    against the same bill failing, a suit planned against a suit endorsed. Nobody
