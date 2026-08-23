@@ -27782,7 +27782,37 @@
      }
     ],
     "senate": {
-     "note": "Judicial council chief justice John Crowe presided over the election disputes; council member Drew Harvill called the 1999 race the most contentious he had seen. Archive does not preserve a full senate officer or committee list for this year."
+     "note": "Judicial council chief justice John Crowe presided over the election disputes; council member Drew Harvill called the 1999 race the most contentious he had seen. Archive does not preserve a full senate officer or committee list for this year.",
+     "officers": [
+      {
+       "office": "Chairperson, Legislative Research Committee",
+       "name": "Dwight Campbell",
+       "note": "Told the Herald in September 1999 that the previous year's election codes were too vague, and in March 2000 said only 48 of Congress's 106 seats were filled. In an April 2000 interview on declining membership he said he had come into SGA Congress in the spring of 1998, when he recalled the chambers being 'pretty full.'",
+       "src": {
+        "label": "Herald 75:7, 16 Sep 1999, \"Western projects steal thunder from SGA's largest priorities\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8058"
+       },
+       "src2": {
+        "label": "Herald 75:44, 7 Mar 2000, \"SGA congress seats up for cut\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8106"
+       },
+       "src3": {
+        "label": "Herald 75:54, 20 Apr 2000, \"SGA membership still declining\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8116"
+       }
+      }
+     ],
+     "members": [
+      {
+       "name": "Mark Rawlings",
+       "seat": "Congress member",
+       "note": "A Louisville freshman named as an SGA Congress member in a January 2000 Herald report on falling meeting attendance. A Mark Rawlings appears later in this archive as vice president of finance from January 2001 and vice president of public relations for 2001-02; no source establishes that the two are the same student.",
+       "src": {
+        "label": "Herald 75:32, 25 Jan 2000, \"SGA enrollment numbers down\"",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8093"
+       }
+      }
+     ]
     }
    },
    "documents": [
@@ -38149,6 +38179,15 @@
      "note": "Constitutional amendments passed 26 Feb 2013 replaced class-year senate seats with college-based representation and added guaranteed seats for the Glasgow and Owensboro regional campuses.",
      "members": [
       {
+       "name": "Brad Cockrel",
+       "seat": "Senator",
+       "note": "Appointed to the senate, along with Taylor Gwinn, at the 12 February 2013 meeting. He ran for SGA executive vice president that spring and became 2013-14 Chief of Staff, both recorded elsewhere in this year's record.",
+       "src": {
+        "label": "wkuherald.com, \"SGA approves bill for Study Away scholarships\", 13 Feb 2013",
+        "url": "https://wkuherald.com/44680/news/sga-approves-bill-for-study-away-scholarships/"
+       }
+      },
+      {
        "name": "Richard Crumbie",
        "seat": "Senator",
        "note": "A \"Senator Crumbie\" moved to approve the meeting's minutes on 18 September 2012; only the surname appears in 2012-13 documents. The full name rests on continuity with 2011-12, where \"Richard Crumbie\" was named in full as a senator at large approved 28 February 2012, continuing in the same kind of seat at the very start of the next academic year.",
@@ -38176,6 +38215,28 @@
        }
       },
       {
+       "name": "Taylor Gwinn",
+       "seat": "Senator",
+       "note": "Appointed to the senate, along with Brad Cockrel, at the 12 February 2013 meeting.",
+       "src": {
+        "label": "wkuherald.com, \"SGA approves bill for Study Away scholarships\", 13 Feb 2013",
+        "url": "https://wkuherald.com/44680/news/sga-approves-bill-for-study-away-scholarships/"
+       }
+      },
+      {
+       "name": "Laura Harper",
+       "seat": "Senator at Large",
+       "note": "A Louisville sophomore. Called \"Student senator Laura Harper\" in the Herald's 17 October 2012 notice of a coming picnic with WKU President Gary Ransdell, and again, six months later, as \"an SGA senator-at-large\" reacting to the resolution of the Boka reinstatement dispute.",
+       "src": {
+        "label": "wkuherald.com, \"SGA Drama 'Settled': What does Bailey's ruling mean for the future of SGA?\", 12 Apr 2013",
+        "url": "https://wkuherald.com/44025/news/sga-drama-settled-what-does-baileys-ruling-mean-for-the-future-of-sga/"
+       },
+       "src2": {
+        "label": "wkuherald.com, \"Picnic with the president a SGA tradition\", 17 Oct 2012",
+        "url": "https://wkuherald.com/45858/news/picnic-with-the-president-a-sga-tradition/"
+       }
+      },
+      {
        "name": "Katie Martin",
        "seat": "Senator, Graduate Students",
        "note": "Sworn in as a graduate senator on 25 September 2012.",
@@ -38194,12 +38255,30 @@
        }
       },
       {
+       "name": "Mac Mullins",
+       "seat": "Senator",
+       "note": "Called \"Student senator Mac Mulcins\" in the Herald's report, published 23 October 2012, of the picnic SGA members held with WKU President Gary Ransdell; the same person appears elsewhere in this year's record spelled \"Mac Mullins\" as Public Relations Committee chair. Spelling flagged, not resolved, per project rule.",
+       "src": {
+        "label": "wkuherald.com, \"Student government mingle with WKU administration at picnic\", 23 Oct 2012",
+        "url": "https://wkuherald.com/45869/news/student-government-mingle-with-wku-administration-at-picnic/"
+       }
+      },
+      {
        "name": "Poorvie Patel",
        "seat": "Senator",
        "note": "Moved approval of the meeting's minutes as \"Senator Patel poorvie\" on 23 October 2012, having also held Senate seats in 2009-10 and 2010-11.",
        "src": {
         "label": "SGA Senate minutes, 23 Oct 2012",
         "url": "https://www.wku.edu/sga/uploads/minutes/2012/10-23-12.docx"
+       }
+      },
+      {
+       "name": "Roy Ratliff",
+       "seat": "Senator at Large",
+       "note": "A presidential appointment approved by the senate on 16 April 2013, the same meeting that elected Paige Settles the next speaker. The Herald wrote that he \"will become a senator-at-large\"; that future tense leaves it unsettled whether he sat in the closing weeks of 2012-13 or from 2013-14, and no later source names him.",
+       "src": {
+        "label": "wkuherald.com, \"SGA elects a new speaker of the senate\", 17 Apr 2013",
+        "url": "https://wkuherald.com/44058/news/sga-elects-a-new-speaker-of-the-senate/"
        }
       },
       {
@@ -38236,55 +38315,6 @@
        "src": {
         "label": "SGA Senate minutes, 25 Sep 2012",
         "url": "https://www.wku.edu/sga/uploads/minutes/2012/9-25-2012.docx"
-       }
-      },
-      {
-       "name": "Laura Harper",
-       "seat": "Senator at Large",
-       "note": "A Louisville sophomore. Called \"Student senator Laura Harper\" in the Herald's 17 October 2012 notice of a coming picnic with WKU President Gary Ransdell, and again, six months later, as \"an SGA senator-at-large\" reacting to the resolution of the Boka reinstatement dispute.",
-       "src": {
-        "label": "wkuherald.com, \"SGA Drama 'Settled': What does Bailey's ruling mean for the future of SGA?\", 12 Apr 2013",
-        "url": "https://wkuherald.com/44025/news/sga-drama-settled-what-does-baileys-ruling-mean-for-the-future-of-sga/"
-       },
-       "src2": {
-        "label": "wkuherald.com, \"Picnic with the president a SGA tradition\", 17 Oct 2012",
-        "url": "https://wkuherald.com/45858/news/picnic-with-the-president-a-sga-tradition/"
-       }
-      },
-      {
-       "name": "Mac Mullins",
-       "seat": "Senator",
-       "note": "Called \"Student senator Mac Mulcins\" in the Herald's report, published 23 October 2012, of the picnic SGA members held with WKU President Gary Ransdell; the same person appears elsewhere in this year's record spelled \"Mac Mullins\" as Public Relations Committee chair. Spelling flagged, not resolved, per project rule.",
-       "src": {
-        "label": "wkuherald.com, \"Student government mingle with WKU administration at picnic\", 23 Oct 2012",
-        "url": "https://wkuherald.com/45869/news/student-government-mingle-with-wku-administration-at-picnic/"
-       }
-      },
-      {
-       "name": "Taylor Gwinn",
-       "seat": "Senator",
-       "note": "Appointed to the senate, along with Brad Cockrel, at the 12 February 2013 meeting.",
-       "src": {
-        "label": "wkuherald.com, \"SGA approves bill for Study Away scholarships\", 13 Feb 2013",
-        "url": "https://wkuherald.com/44680/news/sga-approves-bill-for-study-away-scholarships/"
-       }
-      },
-      {
-       "name": "Brad Cockrel",
-       "seat": "Senator",
-       "note": "Appointed to the senate, along with Taylor Gwinn, at the 12 February 2013 meeting. He ran for SGA executive vice president that spring and became 2013-14 Chief of Staff, both recorded elsewhere in this year's record.",
-       "src": {
-        "label": "wkuherald.com, \"SGA approves bill for Study Away scholarships\", 13 Feb 2013",
-        "url": "https://wkuherald.com/44680/news/sga-approves-bill-for-study-away-scholarships/"
-       }
-      },
-      {
-       "name": "Roy Ratliff",
-       "seat": "Senator at Large",
-       "note": "A presidential appointment approved by the senate on 16 April 2013, the same meeting that elected Paige Settles the next speaker. The Herald wrote that he \"will become a senator-at-large\"; that future tense leaves it unsettled whether he sat in the closing weeks of 2012-13 or from 2013-14, and no later source names him.",
-       "src": {
-        "label": "wkuherald.com, \"SGA elects a new speaker of the senate\", 17 Apr 2013",
-        "url": "https://wkuherald.com/44058/news/sga-elects-a-new-speaker-of-the-senate/"
        }
       }
      ]
@@ -38919,12 +38949,29 @@
        }
       },
       {
+       "name": "Mallory Chaney",
+       "seat": "Chair, Campus Improvements Committee (early fall 2013)",
+       "src": {
+        "label": "SGA Senate minutes, 3 Sept 2013",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2013/minutes913.docx"
+       }
+      },
+      {
        "name": "Jacob Clute",
        "seat": "Senator",
        "note": "Recorded absent from the 4 February 2014 meeting.",
        "src": {
         "label": "SGA Senate minutes, 4 Feb 2014",
         "url": "https://www.wku.edu/sga/uploads/minutes/2014/sga_minutes.docx"
+       }
+      },
+      {
+       "name": "Chris Costa",
+       "seat": "Senator",
+       "note": "Moved at the Senate's 19 November 2013 meeting to revoke SGA's support for a $9 Talisman student fee approved in a 2005 ballot; the Judicial Council ruled the motion unconstitutional.",
+       "src": {
+        "label": "Herald, 3 Dec 2013",
+        "url": "https://wkuherald.com/42004/news/talisman-sga-discuss-financial-options/"
        }
       },
       {
@@ -38970,6 +39017,14 @@
        "src": {
         "label": "SGA Senate minutes, 4 Feb 2014",
         "url": "https://www.wku.edu/sga/uploads/minutes/2014/sga_minutes.docx"
+       }
+      },
+      {
+       "name": "Ashlee Manley",
+       "seat": "Chair, Legislative Research Committee (fall 2013)",
+       "src": {
+        "label": "SGA Senate minutes, 3 Sept 2013",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2013/minutes913.docx"
        }
       },
       {
@@ -39027,6 +39082,15 @@
        }
       },
       {
+       "name": "Ashley Presnell",
+       "seat": "Senator",
+       "note": "Recorded absent at the Senate's roll call, spring 2014.",
+       "src": {
+        "label": "SGA Senate minutes, 4 Feb 2014",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2014/sga_minutes.docx"
+       }
+      },
+      {
        "name": "Jay Todd Richey",
        "seat": "Chair, Legislative Research Committee, appointed 11 February 2014",
        "note": "Appointed Chair of the Legislative Research Committee 11 February 2014. On 15 April 2014 the outgoing 12th Senate elected him to serve as Speaker of the incoming 13th Senate for 2014-15.",
@@ -39054,12 +39118,29 @@
        }
       },
       {
+       "name": "Megan Skaggs",
+       "seat": "Chair, Academic Affairs Committee",
+       "note": "Wrote the bill allotting $300 to the Transcript Voucher Program fund, passed at the Senate meeting of 24 September 2013 and reported by the Herald two days later.",
+       "src": {
+        "label": "Herald, 26 Sep 2013",
+        "url": "https://wkuherald.com/43000/news/transcript-voucher-bill-passes-in-sga-senate/"
+       }
+      },
+      {
        "name": "Meredith Smith",
        "seat": "Senator",
        "note": "Appointed a senator by the President, reported to the Senate on 18 February 2014.",
        "src": {
         "label": "SGA Senate minutes, 18 Feb 2014",
         "url": "https://www.wku.edu/sga/uploads/minutes/2014/2-18minutes.docx"
+       }
+      },
+      {
+       "name": "Mallory Treece",
+       "seat": "Chair, Public Relations Committee (fall 2013)",
+       "src": {
+        "label": "SGA Senate minutes, 3 Sept 2013",
+        "url": "https://www.wku.edu/sga/uploads/minutes/2013/minutes913.docx"
        }
       },
       {
