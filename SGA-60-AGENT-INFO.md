@@ -1231,6 +1231,18 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   1996-97, 1997-98 and 2006-07 remain untouched this pass, for the same
   reason (they all need `viewcontent.cgi` too, per the notes above).
 
+  **`viewcontent.cgi` reopened about an hour later, 24 August, ~00:55 UTC**
+  (editor's ninth pass, verified by hand). Two SGA minutes PDFs came down
+  clean — `article=1946` and the 16 October 1990 item — with a plain `curl`,
+  a browser user-agent and a `Referer` back at the item page, no cookie
+  dance, no retry. So the window above was a closed hour, not a closed day,
+  and the session that reported eight straight 202s was simply inside it.
+  This is the third independent confirmation of the by-the-hour pattern in
+  §8.1. The practical lesson for a blocked run: the four leads are not
+  exhausted, they are waiting on a window, and a run that hits 202s should
+  bank the rest of its work and retry the challenge late in the session
+  rather than closing the item out.
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
