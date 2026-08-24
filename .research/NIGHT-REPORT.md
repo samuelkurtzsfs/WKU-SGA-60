@@ -5067,3 +5067,158 @@ copied into the site. build.py, check_data.py and check_contrib.py all clean on 
 close, and site/ rebuilds with no change. check_duplicates.py reports the same six pre-existing
 pairs, every one a genuinely separate event. Vercel is deploying again after refusing earlier
 in the day, so the merges above are live. No pull requests left open.
+
+---
+
+# Night report - 23 August 2026, eighth pass
+
+Four research pull requests were open. Three merged, one sent back. Everything below
+was checked against the sources named, not against the routines' own reports of them.
+
+## What merged
+
+**#170, twenty-one senator profiles (2023-24 and 2025-26).** The strongest research PR
+this project has produced, and nothing was cut from it. Fourteen authorship claims were
+checked name by name against `legislation-authors.json`, which is extracted from the
+bills themselves, and every co-author list matched exactly - including the claim that
+Connor Ferguson's three Community Relations bills were joined by Savanna Kurtz on two of
+them, which is right: she is on 11-23-F and 11-24-S but not 14-23-F. All twelve 2025-26
+bills and resolutions cited for Rettig, Vietze and Marshall matched the mirrored PDFs.
+
+The sensitive material was opened directly rather than taken on trust. The Judicial
+Council hearing minutes of 13 April 2026 confirm the violation was brought by the Council
+itself rather than on a complaint, under section 3.11, unanimous 4-0, censure without
+removal from the ballot. The minutes of 15 April confirm the anonymous complaint, sections
+3.13 and 3.13.1, the video the chief justice and associate chief justice obtained
+themselves, a 5-0 finding, no responsibility under 3.6.8, and the remedy: the campaign
+team censured and disbanded, the ticket deliberately not censured a second time. The
+profile's account of both hearings is exact. The Herald of 19 October 2023 confirms the
+Verdict Award question outright - the award "was given to Madison Payne, Ogden College
+senator, in August" - so Payne's inaugural award and Solorzano's September award as the
+second are both correct.
+
+The living-people handling is the part worth recording. Outcomes are stated in both
+censure cases rather than allegations left hanging, the anonymous complainant stays
+anonymous, and the third-party brand ambassador named in the 13 April minutes is left out
+of the published text, which is the right call for someone peripheral and not a public
+figure. Geoffrey Aberle's profile flags a numbering conflict between the WKU archive
+(Resolution 1-23-F) and the Herald's report of the same measure (6-23-F) and declines to
+pick a winner. That is how a discrepancy should be handled.
+
+**#171, the 1971-72 Congress roll and the 1979-80 seat restructuring - merged after one
+cut.** The 1972 Talisman caption on pp. 272-273 was read directly: it names thirty-nine
+people across two group photographs and all thirty-nine were in the diff, with nothing
+invented. The 1979-80 claim is verbatim in the 1980 Talisman p. 274 - eight on-campus,
+eight off-campus and eight general-representative seats replacing twenty-four
+representatives at-large - and "Kevin Kinne, student opinion poll committee chairman"
+is there word for word, as is Tim Irons as rules and elections chairman. Recording both
+as committee chairmen with an explicit note that the text never seats them in Congress
+is the trap the handoff warns about, avoided.
+
+The cut was the thirty-ninth name. The caption reads Reed Morgan, and the archive already
+carries a Reed Morgan at 1968-69 as the unresolved plaque entry. `build.py` keys person
+pages on the canonical name alone, so adding the member merged the two: the built page
+read "1968-69 to 1971-72 - Reed Morgan - Service 2 years in office" at the top of the very
+page that argues at length the plaque name belongs to a student who graduated in spring
+1966 and appears nowhere in 1968. The routine had seen the danger and written a note
+saying they were different people, but a note in the data cannot stop the build from
+merging them, and nobody looked at the page. The name is held back and the fact kept in
+the year's senate note instead, with the corroborating detail that the 1972 Talisman puts
+a Reed Morgan among the Alpha Phi Alpha brothers at that fraternity's charter presentation
+on 31 October 1971, alongside fellow Congress members George Kendrick and Ed Givens. The
+other thirty-eight were checked for the same collision: only Marshall Galloway (1969-70)
+and Terry Miller (1972-73) touch existing records, both adjacent years and plainly the
+same person continuing.
+
+**#173, four candidate leads for the year-photograph gap.** Documentation only; the
+handoff file is not read by the build. All five checkable claims verified against
+`herald-index-full.json` - four Herald citations exact down to the Vol. 81 No. 42 [46]
+mislabel, which was carried through rather than quietly normalised, and the negative
+claim about April 2007 confirmed: records 6694 through 6697 each carry one index line,
+the generic boilerplate, no headlines at all. The run states plainly that `viewcontent.cgi`
+was closed all session and that none of the PDFs were opened, and it lets no conclusion
+drift past that. A run that finds nothing, says so, and leaves four exact citations for
+the next one is worth more than a run that reaches.
+
+## What did not merge
+
+**#172, the photograph run.** Every one of its eleven portraits had to come out, and after
+removing them the branch's data was byte-identical to main. The whole contribution was
+duplicate or defective.
+
+The two files presented as new crops are the same file - md5 `eb7a436b...` for both - and
+neither is a crop: it is the full uncropped 890x565 ASG group photograph, roughly
+twenty-seven people, saved twice under two individuals' names. The crop step returned its
+own input and the run reported success on it. That photograph is also already in the
+repository as the 1980-81 year photograph, so the two files were a third copy.
+
+The deeper problem is that `build.py` renders a leader photo inside `figure class="portrait"`
+with alt text reading "Portrait of {name}". The built pages therefore carried thirteen faces
+labelled "Portrait of Cindy Richards" and twenty-seven labelled "Portrait of Greg Zoeller",
+the identical image also labelled as Marsha Sanner. The caption proves these people are
+somewhere in the frame, not which one they are, and the alt text asserts otherwise to a
+screen reader. On main every one of the 113 leader photos is a real portrait, and the seven
+shared files are always one person across two of their own years; this would have been the
+first departure.
+
+And the identifications were not new. The existing 1985-86 year-photo caption on main already
+names all thirteen officers with their offices, and the 1980-81 caption already names Sanner
+and Zoeller. The session re-transcribed captions that were already in `data/photos.json`.
+The corrections are pushed and the PR left open on a clean base for the next photograph run.
+
+## Still open
+
+- **Two people who share a name cannot both be recorded.** There is no `person_id`; the
+  build keys on the canonical name, so any exact duplicate silently merges two humans.
+  `name-aliases.json` solves the opposite problem and its own note records the same hazard
+  in reverse for Ron Beck. This is a build change, not something to work around one name at
+  a time, and Reed Morgan is the second time it has surfaced.
+- **The year-photograph gap is twelve years, not the nine the photograph routine is working
+  from:** 1993-94, 1994-95, 1995-96, 1996-97, 1997-98, 2000-01, 2002-03, 2003-04, 2005-06,
+  2006-07, 2008-09, 2009-10. The routine's list is missing the mid-nineties and 2002-03.
+- The Salvador Leon / Salvador Leon Golib identification, unchanged from the seventh pass.
+- A profile citing more than twenty sources would silently lose the rest: `SRC_KEYS` in
+  `build.py` covers `src2` through `src20`. Jaden Marshall's is at ten. Not urgent, but it
+  will bite eventually.
+- The three branches from 4 August (#6, #7, #8) were closed on 18 August and need no
+  further attention.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced entries, 73 leader records, 771 written profile
+records across 716 distinct people, 1,433 senate members across 57 years, 113 leader
+portraits and 62 year photographs from 161 image files, 295 documents mirrored, 1,111
+legislation files, 1,810 pages built of which 1,726 are person pages. build.py,
+check_data.py and check_contrib.py all clean on main at the close. check_duplicates.py
+reports the same six pre-existing pairs, every one a genuinely separate event - three
+introduce-then-resolve sequences and three same-day bills - and all six were left alone.
+One pull request open, #172, corrected and empty.
+
+### Addendum, same pass: Vercel refused again at 21:37
+
+The section above was written believing the seventh pass's closing note still held -
+that Vercel had resumed deploying and merges were going live. It stopped holding
+during this pass. Preview builds for #170 and #173 completed normally at 20:29 and
+20:36, and then at 21:37:20 the Vercel check on #174's branch came back
+`failure - "Deployment rate limited - retry in 24 hours."` So tonight's four merges
+are most likely stranded on `main` rather than published, and the eighth pass's
+merges join the backlog the 22 August entry describes.
+
+Nothing wrong is stranded. Every correction this pass - the Reed Morgan cut on #171,
+the eleven withdrawn portraits on #172 - was made before merging, so what is waiting
+on a deployment is only work that passed review.
+
+Two things worth repeating rather than rediscovering:
+
+- **`wku-sga-60.vercel.app` is not the production alias.** It answers
+  `DEPLOYMENT_NOT_FOUND`, and that is a fact about the hostname, not about the site.
+  The 22 August entry established this and I confirmed it again from this
+  environment. A future pass should not read that 404 as the site being down. The
+  real aliases sit behind Vercel SSO and cannot be checked from here, so the state
+  of the public site remains unverifiable from a routine, and no pass should claim
+  either way.
+- **The capacity problem is structural and now recurring.** Four research routines
+  and multiple editor passes, each push triggering a preview build, is what exceeds
+  the cap. This pass alone pushed three correction branches and merged four pull
+  requests. Limiting previews to something narrower than every push, or changing the
+  plan, is a decision for the owner; it is the second consecutive day it has bitten.
