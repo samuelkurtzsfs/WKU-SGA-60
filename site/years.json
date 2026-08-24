@@ -51719,6 +51719,24 @@
      "note": "34 senators were elected in the April 2024 general election from a field of over 60 candidates; five more were seated after the fall 2024 special election, plus later appointments including Emaun Riley (ISEC) and Caden Lucas (Mahurin Honors College, the seat's first occupant). The 2024-25 Judicial Council, approved 27 August 2024, was Aziz Umarov, Madison Payne, Neill Kane and Sam Dorris.",
      "members": [
       {
+       "name": "Cayden Bailey",
+       "seat": "Freshman Senator",
+       "note": "Named as an author, with the seat title, on Resolution 1-25-S, 18 February 2025. Otherwise appears only as the bare surname \"Senator Bailey\" in absence lists and debate from 22 October 2024 onward.",
+       "src": {
+        "label": "SGA Senate minutes, 18 Feb 2025",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_2_18_25.docx"
+       }
+      },
+      {
+       "name": "Jakob Barker",
+       "seat": "Freshman Senator",
+       "note": "Named as an author, with the seat title, on Bill 12-24-F, 29 October 2024, and again on Resolution 1-25-S, 18 February 2025. Named Senator of the Month at the 18 February 2025 meeting.",
+       "src": {
+        "label": "SGA Senate minutes, 29 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_29_24.docx"
+       }
+      },
+      {
        "name": "Kaison Barton",
        "seat": "Senator at Large",
        "note": "Named as author on Bill 1-25-F, February 2025.",
@@ -51737,6 +51755,15 @@
        }
       },
       {
+       "name": "Sophia Bryant",
+       "seat": "PCAL Senator",
+       "note": "Already recorded as chair of the Student Mental Health and Wellbeing Committee; named as an author, with the seat title, on Bill 5-24-F, 15 October 2024, which confirms she held a Senate seat rather than only chairing a committee.",
+       "src": {
+        "label": "SGA Senate minutes, 15 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_15_24.docx"
+       }
+      },
+      {
        "name": "Eli Carter",
        "seat": "Senator at Large",
        "note": "Named as author on Bill 14-24-F, 29 October 2024.",
@@ -51746,12 +51773,100 @@
        }
       },
       {
+       "name": "Ryan Dilts",
+       "seat": "Junior Senator",
+       "note": "Already recorded as chair of the Outreach and Public Relations Committee; named as an author on Bill 7-24-F, 15 October 2024, then with the seat title \"Junior Senator\" on Bill 3-25-F, 11 February 2025.",
+       "src": {
+        "label": "SGA Senate minutes, 11 Feb 2025",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_2_11_25.docx"
+       }
+      },
+      {
+       "name": "Hannah Evans",
+       "seat": "Senator At-Large",
+       "note": "Already recorded as chair of the Legislative Operations Committee; named as an author, with the seat title, on Bill 13-24-F, 29 October 2024, and addressed directly as \"Senator Evans\" through the fall in motions and debate. Speaker Vincent reported her resignation at the 28 January 2025 meeting.",
+       "src": {
+        "label": "SGA Senate minutes, 29 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_29_24.docx"
+       }
+      },
+      {
+       "name": "Megan Farmer",
+       "seat": "Senior Senator",
+       "note": "Already recorded as chair of the Diversity, Equity and Inclusion Committee; named as an author, with the seat title \"Senior Senator,\" on Bill 6-24-F, Bill 7-24-F, Bill 8-24-F and Resolution 5-24-F beginning 15 October 2024.",
+       "src": {
+        "label": "SGA Senate minutes, 15 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_15_24.docx"
+       }
+      },
+      {
+       "name": "Annalise Finch",
+       "seat": "Senior Senator",
+       "note": "Almost certainly the person recorded elsewhere as committee chair \"Annie Finch\" (Community Relations Committee): the bill she is named on concerns the same Veterans Day 5K event that committee reports describe \"Annie Finch\" running that same month, and no other Finch appears in the corpus. Named as an author, with the seat title \"Senior Senator,\" on Bill 13-24-F, 29 October 2024. Speaker Vincent reported her resignation at the 28 January 2025 meeting. Flagged as a full-name/nickname variant (Annalise vs. Annie), not resolved here.",
+       "src": {
+        "label": "SGA Senate minutes, 29 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_29_24.docx"
+       }
+      },
+      {
+       "name": "Myricle Gholston",
+       "note": "Removed from her Senate seat by the Judicial Council on 6 November 2024, alongside Malick Ibrahim and Karisha Petty, after accumulating at least six unexcused absences and a second censure.",
+       "src": {
+        "label": "Herald, 6 Nov 2024",
+        "url": "https://wkuherald.com/80158/news/3-sga-senators-censured-removed-from-senate/"
+       }
+      },
+      {
+       "name": "Malick Ibrahim",
+       "note": "Recorded as a member of the Organizational Aid Board from 15 October 2024, in the contacts block of Bill 9-24-F, alongside several senators. He is addressed as Senator Ibrahim from the first meeting in the 2024-25 minutes, on 10 September 2024, and appears in the absence lists of 24 September and 1, 15, 22 and 29 October 2024, after which he drops out of them. The Herald reported that the Judicial Council voted 7-0 on 6 November 2024 to remove him, Myricle Gholston and Karisha Petty from their seats for excessive unexcused absences, naming him in full. He had been elected a freshman senator in the fall 2023 special election for the 23rd Senate and appears to have continued into the 24th. No bill carries an author line giving his 2024-25 seat, so the seat is left unset.",
+       "src": {
+        "label": "SGA Senate minutes, 15 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_15_24.docx"
+       }
+      },
+      {
+       "name": "Jade Ismail",
+       "seat": "Sophomore Senator",
+       "note": "Named as an author, with the seat title, on Bill 15-24-F and Resolution 5-22-S, 12 November 2024, and repeatedly afterward (Bill 2-25-F, Bill 10-25-S). Presented the Potter Children's Home Initiative fundraising bills through the fall under the shorter form \"Senator Ismail.\"",
+       "src": {
+        "label": "SGA Senate minutes, 12 Nov 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_11_12_24.docx"
+       }
+      },
+      {
        "name": "Gabriel Jerdon",
        "seat": "Senator at Large",
        "note": "Named as author on Bill 11-24-F, 29 October 2024.",
        "src": {
         "label": "SGA Senate minutes, 29 Oct 2024",
         "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_29_24.docx"
+       }
+      },
+      {
+       "name": "John King",
+       "seat": "CEBS Senator",
+       "note": "Named as an author, with the seat title, on Bill 14-24-F, 29 October 2024, and again on Bill 17-25-S, 25 March 2025. Served as vice chair of the Student Mental Health and Wellbeing Committee and was named the Judicial Council's \"Chief Justice Verdict Award\" winner for the fall semester on 19 November 2024.",
+       "src": {
+        "label": "SGA Senate minutes, 29 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_29_24.docx"
+       }
+      },
+      {
+       "name": "Savanna Kurtz",
+       "seat": "Sophomore Senator",
+       "note": "Already recorded as chair of the Enrollment and Student Experience Committee; named as an author, with the seat title \"Sophomore Senator,\" on Bill 13-24-F, 29 October 2024, and again on later bills through March 2025. One bill, 7-24-F on 15 October 2024, spells her name \"Savannah Kurtz\" with a double h; every other citation in the corpus spells it \"Savanna\" - flagged as a spelling doubt, not corrected.",
+       "src": {
+        "label": "SGA Senate minutes, 29 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_29_24.docx"
+       }
+      },
+      {
+       "name": "Caden Lucas",
+       "seat": "Mahurin Honors College Senator",
+       "note": "Nominated for Senate parliamentarian as \"Senator Caden Lucas\" and confirmed by unanimous voice vote, 22 October 2024; named as an author, with the seat title, on Bill 12-24-F, 29 October 2024. He went on to chair the Legislative Operations Committee from 28 January 2025 and is separately documented in the record as the 2024-25 inaugural Mahurin Honors College senator.",
+       "src": {
+        "label": "SGA Senate minutes, 22 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_22_24.docx"
        }
       },
       {
@@ -51782,6 +51897,32 @@
        }
       },
       {
+       "name": "Hermes Olmos",
+       "seat": "International Senator",
+       "note": "Named as an author, with the seat title, on Bill 3-25-F, 11 February 2025. Otherwise appears only as the bare surname \"Senator Olmos\" in absence lists from 29 October 2024 onward.",
+       "src": {
+        "label": "SGA Senate minutes, 11 Feb 2025",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_2_11_25.docx"
+       }
+      },
+      {
+       "name": "Thomas Pabin",
+       "seat": "Senator At-Large",
+       "note": "Named as an author, with the seat title, on Bill 13-24-F, 29 October 2024. Otherwise appears only as the bare surname \"Senator Pabin\" in absence lists.",
+       "src": {
+        "label": "SGA Senate minutes, 29 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_29_24.docx"
+       }
+      },
+      {
+       "name": "Karisha Petty",
+       "note": "Removed from her Senate seat by the Judicial Council on 6 November 2024, alongside Malick Ibrahim and Myricle Gholston, after accumulating at least six unexcused absences and a second censure. She later told the Herald her absences were due to medical issues.",
+       "src": {
+        "label": "Herald, 6 Nov 2024",
+        "url": "https://wkuherald.com/80158/news/3-sga-senators-censured-removed-from-senate/"
+       }
+      },
+      {
        "name": "Jax Price",
        "seat": "Senator at Large",
        "note": "Named as author on Bill 3-25-F, February 2025.",
@@ -51809,12 +51950,74 @@
        }
       },
       {
+       "name": "Sydney Rettig",
+       "seat": "Non-traditional Senator",
+       "note": "Nominated for the non-traditional seat - described as a transfer student who was on the speech and debate team at her previous school - and confirmed by unanimous voice vote and sworn in, 15 October 2024. Later meetings' debate transcriptions spell her surname \"Redig\" or \"Reddig\" (22 Oct, 12 Nov, 19 Nov, 28 Jan) - flagged as a spelling doubt, not a different person, since the seat and context are consistent. Speaker Vincent reported her resignation at the 28 January 2025 meeting.",
+       "src": {
+        "label": "SGA Senate minutes, 15 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_15_24.docx"
+       }
+      },
+      {
        "name": "Molly Ricke",
        "seat": "Senator at Large",
        "note": "Appointed by President Sam Kurtz and confirmed by unanimous voice vote on 28 January 2025.",
        "src": {
         "label": "SGA Senate minutes, 28 Jan 2025",
         "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_1_28_25.docx"
+       }
+      },
+      {
+       "name": "Emaun Riley",
+       "seat": "ISEC Senator",
+       "note": "Nominated by President Kurtz, confirmed by unanimous voice vote and sworn in, 22 October 2024; named as an author, with the seat title, on Bill 3-25-F, 11 February 2025.",
+       "src": {
+        "label": "SGA Senate minutes, 22 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_22_24.docx"
+       }
+      },
+      {
+       "name": "Guan Zhou Sim",
+       "seat": "Senator At-Large",
+       "note": "Named as an author, with the seat title, on Bill 18-24-F, 19 November 2024. Also served as a member of the Organizational Aid Board from mid-October 2024, alongside several confirmed senators.",
+       "src": {
+        "label": "SGA Senate minutes, 19 Nov 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_11_19_24.docx"
+       }
+      },
+      {
+       "name": "Bradley Wagoner",
+       "seat": "First Generation Senator",
+       "note": "Named as an author, with the seat title, on Bill 18-24-F, 19 November 2024, and again on Bill 17-25-S, 25 March 2025. Also served as the Senate's liaison to the Strategic Plan Implementation Committee all year. The 10 September 2024 absence list spells his surname \"Wagner\"; every other week's list spells it \"Wagoner,\" matching the spelling on the bills. Both spellings are recorded as found rather than merged, though the weight of evidence favours one person, spelled Wagoner.",
+       "src": {
+        "label": "SGA Senate minutes, 19 Nov 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_11_19_24.docx"
+       }
+      },
+      {
+       "name": "Caroline Yates",
+       "note": "Confirmed by unanimous voice vote to the Graduate Advisory Council on 17 September 2024 -- a university-committee appointment, which is not on its own proof of a Senate seat. But she is addressed as Senator Yates and answers questions in floor debate on 1 October 2024 (Resolution 4-24-F) and 15 October 2024 (Bill 5-24-F), appears in the Senate's own roll-call absence list on 19 November 2024, and is addressed again by a guest speaker on 11 February 2025. No other Yates appears in the 2024-25 minutes. By 19 November 2024 the Graduate Advisory Council report records no Graduate Senator, where Caroline Yates had been listed weeks before, which suggests her seat's own title may have been Graduate Senator and that she had left it by then -- an inference, not proof, so the seat is left unset. The Herald reported her authoring a bill as Senator Caroline Yates on 11 November 2025, which confirms she held a Senate seat as a continuing member in a later year.",
+       "src": {
+        "label": "SGA Senate minutes, 17 Sep 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_9_17_24.docx"
+       }
+      },
+      {
+       "name": "Maggie Yelton",
+       "seat": "Junior Senator",
+       "note": "Named as an author, with the seat title, on Bill 13-24-F, 29 October 2024, and again on Bill 9-25-S and Bill 15-25-S in 2025. The minutes spell her surname \"Yelton\" in bill text but \"Yealton\" in several meetings' prose (absences and officer reports) - flagged as a spelling doubt, not corrected.",
+       "src": {
+        "label": "SGA Senate minutes, 29 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_29_24.docx"
+       }
+      },
+      {
+       "name": "Van Zing",
+       "seat": "Gordon Ford College of Business Senator",
+       "note": "Named as an author, with the seat title, on Resolution 5-24-F, 15 October 2024, and again on Bill 4-25-S and Resolution 4-25-S in 2025. Served as vice chair of the Diversity, Equity and Inclusion Committee, giving that committee's report in Senator Farmer's absence on 29 October 2024.",
+       "src": {
+        "label": "SGA Senate minutes, 15 Oct 2024",
+        "url": "https://www.wku.edu/sga/2024_2025_legislative/senate_minutes/senate_minutes_10_15_24.docx"
        }
       }
      ]

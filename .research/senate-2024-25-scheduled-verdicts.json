@@ -1,0 +1,87 @@
+[
+ {"name": "Sophia Bryant",
+  "verdict": "accept",
+  "reason": "Bill 5-24-F's AUTHORS block, printed in full at the bottom of senate_minutes_10_15_24.txt (first reading 10/1, second reading/pass 10/15), reads exactly 'Sophia Bryant, PCAL Senator' alongside 'Jenna Wells, Senior Senator.' The committee-chair evidence the draft also cites is separately confirmed every week. Solid, standard-pattern evidence."},
+
+ {"name": "Hannah Evans",
+  "verdict": "accept",
+  "reason": "Bill 13-24-F's AUTHORS block in senate_minutes_10_29_24.txt reads exactly 'Hannah Evans, Senator At-Large.' 'Senator Evans' is addressed directly in debate repeatedly from 9/24/24 onward. The Speaker's report in senate_minutes_1_28_25.txt reads verbatim 'Senator Finch, Senator Reddig and Senator Evans all resigned' -- confirms the resignation claim exactly."},
+
+ {"name": "Megan Farmer",
+  "verdict": "accept",
+  "reason": "Confirmed as 'Megan Farmer, Senior Senator' in the AUTHORS blocks of Bill 6-24-F, Bill 7-24-F, Bill 8-24-F and Resolution 5-24-F, all in senate_minutes_10_15_24.txt / senate_minutes_10_22_24.txt, exactly as drafted."},
+
+ {"name": "Ryan Dilts",
+  "verdict": "accept",
+  "reason": "Bill 7-24-F (10/15/24) lists him as plain 'Ryan Dilts, Senator' with no class-year qualifier, exactly as the draft describes (it did not overclaim a seat from that bill). Bill 3-25-F's AUTHORS block in senate_minutes_2_11_25.txt then reads 'Ryan Dilts, Junior Senator,' confirming the seat title cited."},
+
+ {"name": "Savanna Kurtz",
+  "verdict": "accept",
+  "reason": "Bill 13-24-F (10/29/24) reads 'Savanna Kurtz, Sophomore Senator.' The 'Savannah Kurtz' double-h variant is confirmed in Bill 7-24-F's AUTHORS block in senate_minutes_10_15_24.txt, also 'Sophomore Senator' -- same seat, same person, correctly flagged as a spelling doubt rather than resolved."},
+
+ {"name": "Annalise Finch",
+  "verdict": "accept",
+  "reason": "Bill 13-24-F (10/29/24) reads 'Annalise Finch, Senior Senator.' The Annie/Annalise identity is independently supported: 'Community Relations Committee Chair, Annie Finch' is already recorded in years.json's own 2024-25 organization data pulling from the same Herald source used for the committee-chair list, and a later Herald article already in years.json has 'Annalise Finch' as 2025-26 executive vice president -- confirming one continuing person, not two. Resignation on 28 Jan 2025 confirmed verbatim in the minutes."},
+
+ {"name": "Caden Lucas",
+  "verdict": "accept",
+  "reason": "senate_minutes_10_22_24.txt: 'Nomination for parliamentarian: Senator Caden Lucas' under the Legislative Operations report, followed by unanimous voice vote, then 'Swearing In... Parlimentarian' the same meeting. Bill 12-24-F (10/29/24) reads 'Caden Lucas, Mahurin Honors College Senator.' years.json's existing 2024-25 organization note independently already says 'Caden Lucas (Mahurin Honors College, the seat's first occupant)' -- fully corroborated from a source the draft researcher never touched."},
+
+ {"name": "Van Zing",
+  "verdict": "accept",
+  "reason": "Resolution 5-24-F (10/15/24, passed 10/22/24) reads 'Van Zing, Gordon Ford College of Business Senator.' years.json already carries a Herald-sourced event for this exact resolution reading 'authored by Senator Van Zing' -- independent confirmation already in the record. The vice-chair DEI report on 10/29/24 in Farmer's absence is also confirmed verbatim."},
+
+ {"name": "Jade Ismail",
+  "verdict": "accept",
+  "reason": "The bill in senate_minutes_11_12_24.txt is headed 'Bill 15-24-F' in the meeting agenda but its own printed text at the bottom of the same document reads 'Bill 15-22-S' -- a numbering inconsistency in the source document itself, not a researcher error, since 'Bill 15-24-F' is the label that actually appears in the agenda. Both that bill and 'Resolution 5-22-S' carry the AUTHORS line 'Jade Ismail Sophomore Senator,' confirming the seat exactly as drafted."},
+
+ {"name": "Jakob Barker",
+  "verdict": "accept",
+  "reason": "Bill 12-24-F (10/29/24) reads 'Jakob Barker, Freshman Senator.' Resolution 1-25-S (first reading 2/18/25) repeats 'Jakob Barker, Freshman Senator.' Senator of the Month announcement on 2/18/25 ('Congrats Sentor Barker!') is a bare surname but the only Barker in the whole corpus, so unambiguous."},
+
+ {"name": "Maggie Yelton",
+  "verdict": "accept",
+  "reason": "Bill 13-24-F (10/29/24), Bill 9-25-S (3/25/25) and Bill 15-25-S (3/25/25) all read 'Maggie Yelton, Junior Senator' in their AUTHORS blocks -- three separate confirmations, all matching the draft's citations exactly. The 'Yealton' prose variant is confirmed repeatedly (VP shoutout 2/4/25, motions and bill presentation 2/25/25)."},
+
+ {"name": "Thomas Pabin",
+  "verdict": "accept",
+  "reason": "Bill 13-24-F (10/29/24) reads 'Thomas Pabin, Senator At-Large,' confirmed exactly. Minor correction to the note's framing: he is not confined to absence lists -- he also asks a question in floor debate on 2/18/25 ('Senator Pabin: Where will you get cornhole board?'). Does not change the verdict."},
+
+ {"name": "John King",
+  "verdict": "accept",
+  "reason": "Bill 14-24-F (10/29/24) reads 'John King, CEBS Senator.' A bill also labeled 'Bill 17-25-S' in senate_minutes_3_25_25.txt (the 2025 Mental Health Week bill -- a second, different bill sharing that number with Wagoner's Power Up for Finals bill in the same document, a source-side duplicate-numbering quirk, not a citation error) again lists 'John King, CEBS Senator.' The Chief Justice Verdict Award on 19 Nov 2024 is confirmed verbatim in senate_minutes_11_19_24.txt."},
+
+ {"name": "Guan Zhou Sim",
+  "verdict": "accept",
+  "reason": "Bill 18-24-F (19 Nov 2024) reads 'Guan Zhou Sim, Senator At-Large,' confirmed exactly. Organizational Aid Board membership from mid-October 2024 also confirmed in the Bill 9-24-F contacts block. Worth noting for context: years.json's 2023-24 record has the same person as 'Sim Guan Zhou, international senator' -- name order and seat both differ year to year, ordinary variation across academic years, not a collision with a different person."},
+
+ {"name": "Bradley Wagoner",
+  "verdict": "accept",
+  "reason": "Bill 18-24-F (19 Nov 2024) and Bill 17-25-S (25 Mar 2025, the Power Up for Finals bill) both read 'Bradley Wagoner, First Generation Senator.' The single 'Wagner' outlier is confirmed exactly where the draft says it is: senate_minutes_9_10_24.txt has 'Happy Birthday Senator Wagner!' in VP Reed's report while the same document's committee-report section, a few lines later, reads 'Strategic Plan Implementation Committee: Bradley Wagoner.' Every other mention across the whole corpus spells it Wagoner. The draft's resolution (one person, Wagoner) is correct."},
+
+ {"name": "Sydney Rettig",
+  "verdict": "accept",
+  "reason": "senate_minutes_10_15_24.txt: nomination for the non-traditional seat as a transfer student and former speech-and-debate competitor, confirmed by unanimous voice vote and sworn in the same meeting ('Senate at Large and Non-traditonal Senator'). 'Senator Redig' appears in debate on 10/22/24 and 11/19/24, and 'Senator Reddig' in the 28 Jan 2025 resignation report -- all confirmed. Minor note: I could not find a 'Redig'/'Rettig' occurrence in the 11/12/24 file specifically, so that one date in the draft's spelling-variant list appears to be an error, but it does not affect the underlying nomination/swearing-in evidence, which is solid on its own."},
+
+ {"name": "Emaun Riley",
+  "verdict": "accept",
+  "reason": "senate_minutes_10_22_24.txt: nominated by President Kurtz for ISEC Senator, confirmed by unanimous voice vote, sworn in the same meeting. Bill 3-25-F (11 Feb 2025) reads 'Emaun Riley, ISEC Senator.' years.json already carries an independent Herald-sourced event for 22 Oct 2024 reading 'Kurtz appointed freshman Emaun Riley as ISEC senator' -- fully corroborated by a source outside the minutes."},
+
+ {"name": "Hermes Olmos",
+  "verdict": "accept",
+  "reason": "Bill 3-25-F (11 Feb 2025) reads 'Hermes Olmos, International Senator,' confirmed exactly. Bare-surname absence-list appearances from 10/29/24 onward also confirmed (10/29, 3/4, 4/15)."},
+
+ {"name": "Cayden Bailey",
+  "verdict": "accept",
+  "reason": "Resolution 1-25-S (first reading 2/18/25) reads 'Cayden Bailey, Freshman Senator,' confirmed exactly, reprinted identically in the 2/25/25 file. Floor-debate and absence-list appearances from 10/22/24 onward also confirmed."},
+
+ {"name": "Caroline Yates",
+  "verdict": "trim",
+  "corrected_note": "Confirmed by unanimous voice vote to the Graduate Advisory Council on 17 September 2024 -- a university-committee appointment, not on its own proof of a Senate seat. But 'Senator Yates' is addressed directly and answers questions in floor debate on 1 October 2024 (Resolution 4-24-F) and 15 October 2024 (Bill 5-24-F), appears in the Senate's own roll-call absence list on 19 November 2024, and is addressed a fourth time by a guest speaker on 11 February 2025. No other Yates appears anywhere in the corpus. Internal comparison strengthens this: Kiersten Washington, a non-senator resolution author in these same minutes, is never once called 'Senator Washington' despite authoring two resolutions -- 'Senator' in this corpus tracks real Senate membership, not a loose courtesy title. By 19 November 2024 the Graduate Advisory Council report reads 'No Graduate Senator,' where 'Caroline Yates' had been listed weeks before, suggesting her seat's own title may have been 'Graduate Senator' and that she had left it by then -- inference, not proof, so the seat is left unset. Strongest evidence found outside these 17 files: an already-published Herald article, already cited in years.json under 2025-26, reports 'Senator Caroline Yates' authoring a Go With the Flow bill on 11 November 2025 -- independent confirmation that she held a Senate seat as a continuing member in a later year, which corroborates that the 2024-25 'Senator Yates' references reflect a genuine seat rather than a loose or mistaken usage. No bill-authorship line naming her seat was found in the 2024-25 corpus itself, so this remains real evidence but weaker than the other 19 entries.",
+  "reason": "The draft's own weak-evidence framing was accurate and appropriately hedged; I am not downgrading to reject. I trimmed/expanded the note because (a) I found a fourth independent 'Senator Yates' address (2/11/25) the draft missed, (b) the internal-pattern comparison against non-senator Kiersten Washington is a stronger argument for the researcher's conclusion than anything in the original note, and (c) an already-published, already-cited Herald source from a later year independently confirms 'Senator Caroline Yates' as a continuing member, which the draft researcher did not have access to since they worked only from the 17 minutes files."},
+
+ {"name": "Malick Ibrahim",
+  "verdict": "trim",
+  "corrected_note": "Listed by full name as 'Malick Ibrahim, Member' of the Organizational Aid Board from 15 October 2024 (Bill 9-24-F contacts block), alongside several confirmed senators. 'Senator Ibrahim' is used from the very first meeting in the corpus (9/10/24: 'Senator Ibrahim made a motion to adjourn') and in absence lists through 29 October 2024 (9/24, 10/1, 10/15, 10/22, 10/29). He does not appear as a bare surname in any absence list after that -- an independent, already-published Herald article, already cited in years.json's 2024-25 events, reports that the Judicial Council voted 7-0 on 6 November 2024 to remove 'Senators Malick Ibrahim, Myricle Gholston and Karisha Petty' from their seats for excessive unexcused absences. That article names him 'Senator Malick Ibrahim' directly and in full, which is stronger, independent confirmation of Senate membership than anything found in the 17 minutes files, and it also explains why he disappears from later minutes. He was originally elected a freshman senator in the fall 2023 special election for the 23rd Senate (per a separate Herald article already in years.json's 2023-24 events, 'electing Savanna Kurtz, Malick Ibrahim and Chloe Ralston as freshman senators') and evidently continued into the 24th Senate before his November 2024 removal. No bill-authorship line naming a 2024-25 seat title was found, so seat is left unset.",
+  "reason": "The draft's claim that 'Senator Ibrahim' appears in nearly every absence list from 24 September 2024 through 4 March 2025 does not hold up -- I read all 17 files and found no 'Ibrahim' in any absence list after 29 October 2024 (checked 11/12, 11/19, 1/28, 2/4, 2/11, 2/18, 2/25, 3/4, 3/25, 4/15 specifically), which is consistent with the Judicial Council removing him on 6 November 2024, a fact recorded in an already-published Herald article the draft researcher missed because it lived in years.json rather than the 17 minutes files. That Herald article is much stronger evidence than anything the draft cited (it names him 'Senator Malick Ibrahim' directly), so I am upgrading the evidentiary basis even as I correct the inaccurate date range in the note. Verdict is trim, not reject: he plainly held a Senate seat, but the note needs the removal fact and the date correction."}
+]
