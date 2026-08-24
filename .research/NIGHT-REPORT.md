@@ -5719,3 +5719,98 @@ sequences and the three same-day bills of 1 September 1991), all correctly separ
 Nothing open. The `viewcontent.cgi` challenge, the `officer_index` limitation, the stale
 "SGA 60 - backlog" trigger, and the two unresolved spellings (Annalise/Annie Finch,
 Gabi/Gabby Pace) stand unchanged from the last pass.
+
+---
+
+# 24 August 2026 — editor's pass, one documentation pull request merged
+
+One pull request open at the start of this pass, #195 "Research: the backlog", from the
+four-hourly backlog routine. The three branches the standing editor prompt still names as
+stale — #6 photographs, #7 the 1980s, #8 the 2020s — were all closed on 18 August and needed
+nothing. That instruction is now out of date and can be dropped from the prompt.
+
+## #195 — the backlog routine's run note
+
+A documentation-only diff: 44 lines appended to section 8 of `SGA-60-AGENT-INFO.md`, no change
+to `data/`. Nothing in it reaches a reader as a claim about a person or a year, so the traps
+checklist had no purchase on it — no events, no dates, no officers, no surname matching, no
+election filed into the wrong academic year, nothing touching the settled facts of section 7.
+
+Every checkable assertion in it was re-verified here rather than taken on trust, and all of
+them held:
+
+- The three research queues, `branches-unverified.json`, `branches-moments.json` and
+  `officers-unchecked.json`, all parse as empty lists.
+- Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley each carry a portrait in
+  `data/photos.json`.
+- `data/legislation.json` holds 1,111 entries against 1,111 PDFs on disk, with no entry whose
+  file is missing.
+- `git merge-base` puts the branch as an ordinary descendant of current `main`, not one of the
+  4 August orphans, so the merge could not silently delete the contributor layer or the
+  validators.
+- The new lead is exactly what the note says it is. `dlsc_ua_fin_aid/620` answers 200, titled
+  "UA1C4/10 Student Government Association Photos", credited to WKU Archives, abstract "Images
+  of Student Government Association members and activities at Western Kentucky University",
+  with its PDF behind `viewcontent.cgi?article=1619&context=dlsc_ua_fin_aid` — the article
+  number recorded in the note.
+
+The block on TopSCHOLAR is real and still on, and this pass sharpened what is known about its
+shape. Landing pages answer 200 normally; `viewcontent.cgi` returned **HTTP 202 with zero
+bytes** on retry. A future run must not read a 200 on a landing page as evidence that the PDF
+route is open. `web.archive.org` still resets at the TLS handshake.
+
+Merged with an explicit commit message rather than the default. The pull request body carried a
+tool-attribution footer, and GitHub would otherwise have written it into the permanent history
+of an archive published under its authors' names. The commit on the branch was correctly
+authored as SGA 60 with a clean message.
+
+## The six duplicate pairs, judged
+
+All six are false positives from title-word overlap, and all six stay as they are:
+
+- **1997-98**, the November 1997 designated-driver bill against the February 1998 Herald report
+  that the cards would go out the next day — three months and two sources apart.
+- **1991-92**, the student regent advisory committee introduced 28 January against the same
+  committee's bill failing on 6 February — introduction and defeat, the second already
+  cross-referencing the first.
+- **1971-72**, the Civil Liberties Union planning court action in February against Associated
+  Students formally endorsing the suit in March.
+- **2003-04**, September's discussion of plus/minus grading against October's unanimous vote
+  against it.
+- **1991-92**, twice over, three separate bills of 1 September 1991: the "President for a Day"
+  fundraiser, the chambers renovation and the slogan change. Same-day legislative business is
+  several events, as the rule says.
+
+## What I cut
+
+One real defect, found while judging those pairs and fixed on the branch. The 1997-98 entry
+dated 4 November carried two unrelated bills in one body, and filed the second on the first
+one's date: Bill 97-3-F on designated driver cards, and Bill 97-4-F on typewriters for the
+library, which the same body dated to 18 November. The typewriter bill now stands as its own
+entry on 18 November, where it belongs on the timeline, and both entries say plainly that the
+legislative archive gives the subject and the date and no more. No sourced fact was lost and
+nothing new was claimed — the split only puts what was already in the record onto the right
+day. The archived index behind both entries could not be reopened to go further;
+`web.archive.org` was closed all session.
+
+## Still open
+
+The blocking problem for the backlog routine is not research, it is the trigger. Confirmed
+directly this pass: `trig_01LjXLD8nYoNr8M2RehpHZMu`, "SGA 60 - backlog", cron `23 0-23/4 * * *`,
+enabled, created through the HTTP API on 17 August and not edited since. That is roughly forty
+firings on a work list its own runs keep proving empty, and no agent can change it —
+`update_trigger` refuses anything created that way. It needs the account holder to edit or
+delete it. Until then the routine will spend a run every four hours rediscovering the same
+answer.
+
+The one genuinely open research item remains the year-photograph gap of section 8.4, and it
+needs an open `viewcontent.cgi` window. Finding aid 620 should be the first thing opened when
+one appears: it is a dedicated SGA photographs finding aid, not another Herald or Talisman
+search, and it has never been read.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 121 portraits, 62 year photographs, 297
+mirrored documents, 1,111 pieces of legislation. 60 people have been president. On `main` at
+close, `build.py` completes cleanly, `check_data.py` and `check_contrib.py` both exit 0, and
+`check_duplicates.py` reports the same six pairs, all judged above and all correctly separate.
