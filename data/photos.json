@@ -1,6 +1,42 @@
 {
  "leaders": [
   {
+   "year": "1974-75",
+   "name": "Marc Levy",
+   "file": "1974-75-marc-levy.jpg",
+   "src": {
+    "label": "1975 Talisman, p. 389, junior class portrait, \"MARC LEVY, Miami, Fla.\" The same volume's Associated Student Government feature (p. 109) names Marc Levy as a congress member, quoting his letter to the Herald criticising attendance at the 1 October 1974 congress meeting.",
+    "url": "https://archive.org/details/talisman1975west/page/n393/mode/1up"
+   }
+  },
+  {
+   "year": "1974-75",
+   "name": "Beverly Davenport",
+   "file": "1974-75-beverly-davenport.jpg",
+   "src": {
+    "label": "1975 Talisman, p. 386, junior class portrait, \"BEVERLY DAVENPORT, Bowling Green\" (fourth row, eighth photo). The same volume's Alpha Delta Pi feature records that \"Beverly Davenport served as representative-at-large on the ASG congress.\"",
+    "url": "https://archive.org/details/talisman1975west/page/n390/mode/1up"
+   }
+  },
+  {
+   "year": "1975-76",
+   "name": "Jane Anne Coverdale",
+   "file": "1975-76-jane-anne-coverdale.jpg",
+   "src": {
+    "label": "1976 Talisman, p. 85, Who's Who feature, captioned portrait \"Jane Anne Coverdale\" (top centre). The same volume's Kappa Delta feature names her, with Jenny Parker and Sally Chenault, as one of the sorority's Associated Student Government representatives, and records that she was elected to Who's Who.",
+    "url": "https://archive.org/details/talisman1976west/page/n89/mode/1up"
+   }
+  },
+  {
+   "year": "1972-73",
+   "name": "Joe Cheak",
+   "file": "1972-73-joe-cheak.jpg",
+   "src": {
+    "label": "1973 Talisman, p. 354, captioned \"Below—Joe Cheak, left, and Terry Miller, right, represented the senior class in the Associated Student congress.\" Cheak is the figure at left. The same volume (p. 81) names him chairman of the ASG Environmental Committee.",
+    "url": "https://archive.org/details/talisman1973west/page/n360/mode/1up"
+   }
+  },
+  {
    "year": "1980-81",
    "name": "Mark Wilson",
    "file": "1980-81-mark-wilson.jpg",
@@ -1015,6 +1051,42 @@
    "src": {
     "label": "1974 Talisman, Organizations, p. 311, captioned \"Members of Pi Sigma Alpha are: ... Back row-Billy Johnson; Glenn Jackson; Mike Fiorella; Hank Miles\" (Jackson second from left in the back row)",
     "url": "https://archive.org/details/talisman1974west/page/n314/mode/1up"
+   }
+  },
+  {
+   "year": "1980-81",
+   "name": "Kevin Strader",
+   "file": "1980-81-kevin-strader.jpg",
+   "src": {
+    "label": "1981 Talisman, p. 342, senior class portrait, \"J. KEVIN STRADER, ind. tech., Carbondale, Ill.\" (fifth row, fourth photo). The same volume's Associated Student Government group photograph (p. 282) lists Kevin Strader in the second row, confirming ASG membership.",
+    "url": "https://archive.org/details/talisman1981west/page/n346/mode/1up"
+   }
+  },
+  {
+   "year": "1985-86",
+   "name": "Greg Elder",
+   "file": "1985-86-greg-elder.jpg",
+   "src": {
+    "label": "1986 Talisman, p. 327, junior class portrait, \"GREG ELDER, Glasgow\" (second row, third photo). The same volume's Associated Student Government feature (p. 198) names \"Greg Elder, a Glasgow junior\" in the ASG front-row group photograph and quotes him as administrative vice president.",
+    "url": "https://archive.org/details/talisman1986west/page/n331/mode/1up"
+   }
+  },
+  {
+   "year": "1985-86",
+   "name": "Cindy Richards",
+   "file": "1985-86-cindy-richards.jpg",
+   "src": {
+    "label": "1986 Talisman, p. 314, senior class portrait, \"CINDY RICHARDS, accounting, Cloverport.\" The same volume's Associated Student Government group photograph (p. 198) names Cindy Richards in the front row; p. 75 identifies her as a Cloverport senior.",
+    "url": "https://archive.org/details/talisman1986west/page/n318/mode/1up"
+   }
+  },
+  {
+   "year": "1986-87",
+   "name": "Holger Velastegui",
+   "file": "1986-87-holger-velastegui.jpg",
+   "src": {
+    "label": "1987 Talisman, p. 331, junior class portrait, \"HOLGER VELASTEGUI, Bowling Green\" (second row, fifth photo). The same volume's Associated Student Government group photograph (p. 114) lists Holger Velastegui first in the front row.",
+    "url": "https://archive.org/details/talisman1987west/page/n343/mode/1up"
    }
   }
  ],
