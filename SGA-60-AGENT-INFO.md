@@ -1243,6 +1243,73 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   bank the rest of its work and retry the challenge late in the session
   rather than closing the item out.
 
+  **The photograph agent's 24 August run (a later scheduled run, ~02:00 UTC):**
+  re-checked before doing anything else — all four named presidents (Nick
+  Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) still carry portraits in
+  `data/photos.json`, and 0 of 60 presidents / 57 regents lack one; nothing
+  was missing to redo. `viewcontent.cgi` was tried nine more times across the
+  session (the four candidate leads, twice each, spaced ~90+ seconds, plus
+  the 2006-07 issue's own article number 7685) and every attempt came back
+  202 — this run's whole session fell inside a closed window, the opposite
+  luck of the ~00:55 UTC one just above.
+
+  **A real new fact, not just another 202: the Talisman itself has a
+  publication gap, not only a digitization one.** WKU's own Timeline
+  (`digitalcommons.wku.edu/wku_timeline/376`) records: "August — *Talisman*
+  halts publication due to lack of interest," dated 1996, and a second
+  search confirms it did not resume until 2003. That means 1996-97 through
+  2002-03 have no Talisman to find *at all* — not a TopSCHOLAR cataloguing
+  gap like 2004-2013, but years the yearbook itself skipped. This explains,
+  with a citable source, why the yearbooks landing page has nothing for
+  1996-97, 1997-98, 2000-01 and 2001-02, and why the 2002-03 volume that
+  does exist (*About Face*, the first one back) turned out to have no
+  organizations section when read in full on 22 August: it was the
+  restart issue, not yet back to a normal yearbook. **1996-97 and 1997-98
+  are accordingly a genuine dead end for the Talisman route — a future run
+  should not spend time searching the yearbooks landing page or TopSCHOLAR
+  search for either year again; only a Herald PDF read (once `viewcontent.cgi`
+  opens) or another archive entirely can still produce a photograph for them.**
+
+  **2006-07 checked by a different method this run: Wayback CDX, not the
+  local Herald index.** A CDX sweep of `media.www.wkuherald.com` (the
+  pre-2011 host) for April-May 2007 returned 29 crawled URLs, none of them
+  SGA-related — confirms the local index's "genuinely empty abstract"
+  finding from 23 August by an independent route. A wider sweep,
+  October 2006-August 2007, domain-wide, turned up exactly one SGA hit
+  outside that window: "Rob-Watkins.Elected.Sga.President," dated
+  2006-05-09 (so about the April 2006 election, i.e. the year *before* the
+  one in question, filed forward per the usual rule — this is a 2005-06/
+  2006-07 boundary story, not new). It could not be read: every capture of
+  it in Wayback is the old collegepublisher.com mirror's redirect stub, not
+  the article, the same dead-capture pattern the 24 August run already hit
+  on the Watkins/Smiley articles above. **The Wayback route for 2006-07 is
+  now exhausted too; only `viewcontent.cgi` opening can move it forward.**
+
+  **One candidate group photo found and rejected, for the record so it
+  is not re-found and re-tried.** wkuherald.com's own WordPress search
+  turned up "Richey reelected SGA President; Hart wins EVP" (20 April
+  2016), whose slideshow photo is captioned "Student President Jay Todd
+  Richey, left hugs Administrative Vice President Hannah Neeper, and
+  Executive Vice President Kate Hart hugs Colton Hushell..." (Michael
+  Noble Jr./Herald) — both women are named in the caption, both are on the
+  no-portrait officer list, but the photo itself hugs them face-in, away
+  from the camera; neither face is actually visible in the frame. Per
+  CLAUDE.md's own rule against a photo whose subject cannot be confirmed
+  by sight as well as caption, this was not added as a portrait for either
+  woman. 2016-17 does not need a year photograph (already has one), so
+  there was no fallback use for it either.
+
+  **Net for this run: no new photograph landed, nothing pushed to
+  `data/photos.json` or `data/photos/`.** `viewcontent.cgi` stayed closed
+  for the whole session on every one of the eight open years
+  (1996-97, 1997-98, 2000-01, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10).
+  What changed is the search space: 1996-97 and 1997-98 are now explained
+  and closed off from the Talisman side specifically, and 2006-07 is closed
+  off from the Wayback side specifically. The four candidate leads
+  (2000-01/2003-04/2005-06/2008-09) and a page-by-page PDF read of 2006-07's
+  own April issues remain the only open work, and all of it needs
+  `viewcontent.cgi` to actually open.
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
