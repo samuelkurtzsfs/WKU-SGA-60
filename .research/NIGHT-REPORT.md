@@ -5636,3 +5636,86 @@ both exit 0, and the committed `site/` reproduces byte for byte from `data/`.
 `check_duplicates.py` reports the same six pre-existing pairs — three introduce-then-resolve
 sequences and the three same-day bills of 1 September 1991 — read again and left alone as
 genuinely separate business.
+
+# 24 August 2026 — editor's pass, three research pull requests merged
+
+The three open research PRs — #190 (senate rolls, 1983-84), #192 (backlog, article-number
+harvest), and #193 (photographs, eight officer portraits) — all merged this pass, with small
+corrections on the way in.
+
+## #190 — 1983-84 Congress members
+
+The two mirrored minutes (6 September 1983 and 28 February 1984) are the whole point of the
+diff: cited claims can be verified against the file the citation names, not a re-crawl. The
+28 February PDF carries a real OCR text layer and reads cleanly; the 6 September PDF is a
+typewriter scan with none, which I rendered and read directly. All sixteen checked claims held
+— John Holland as Public Relations Vice President, Todd Duncan's committee appointment, the six
+unexcused absences of 28 February, the ad-hoc research committee of 6 September, and every
+committee assignment on that meeting's second page. The Kuhn→Kiehn and Waninger-middle-name
+corrections applied on the prior pass are right.
+
+One trim: the Johnny Ragan note argued that a 600 dpi re-read of the surname "favors *Ranan*
+over *Ragan*." The typewriter that produced these minutes loses the descender of every **g** —
+the same page prints *Large* as "Larae" and *College* as "Colleoe" — so the letter shapes
+cannot distinguish the two readings, and the archive already records this surname variously
+as Ragan, Ragen, Raden and Racan across scans of the era. Rewritten to record the name as
+read and to state the doubt with the evidence for it, rather than asserting a favoured
+alternative. Pushed as `9830fd2`. Merged as `6524a15`.
+
+## #192 — closed-window backlog run
+
+Documentation-only diff, one paragraph appended to `SGA-60-AGENT-INFO.md`, with no data
+touched. The value of it is a list of eleven Herald article numbers a future run can fetch
+directly when `viewcontent.cgi` opens. All eleven check out against `data/herald-index-full.json`
+at no cost to TopSCHOLAR: every claimed article number, issue date and headline keyword matches
+the local index entry for the record it is filed under, with no transcription drift. The
+`.research` state (`branches-unverified.json`, `branches-moments.json`, `officers-unchecked.json`
+all `[]`), the four "priority-1" portraits, and the counts quoted (61 years, 2,018 events, 60
+presidents) also all match my own tree. The "SGA 60 - backlog" trigger claim is accurate; it is
+still on `23 0-23/4 * * *`, created via `http_api`, and the run correctly left it alone. Merged
+as `25d7899`.
+
+One thing flagged in the merge comment for whoever opens those PDFs: every lead is an April
+article, and the file entries are correctly indexed by publication year — but that means each
+name attached to a lead is almost always the *following* year's president. "1996-97 — Keith
+Coffman" is Coffman's election to 1997-98; "1997-98 — Stephanie Cosby" is her election to
+1998-99; "2009-10 — Colton Jessie" is his election to 2010-11. A portrait belongs to the year
+its subject served, not the year printed beside it in that list. Trap 5 with the pin pulled.
+
+## #193 — eight officer portraits from the Talisman
+
+Eight cropped portraits: Marc Levy and Beverly Davenport (1974-75), Jane Anne Coverdale
+(1975-76), Joe Cheak (1972-73), Kevin Strader (1980-81), Greg Elder and Cindy Richards
+(1985-86), and Holger Velastegui (1986-87). All eight match. I fetched each Talisman page from
+archive.org, isolated the printed row and position from the name column, and compared the
+cropped face to the file in the diff — pixel matches all round. The eight subjects were also
+already in the record for the years claimed, on independent sources; the portraits attach to
+existing entries, they do not create people.
+
+Two citations were wrong on details though and had to be corrected on the branch before merge.
+
+Velastegui's ASG group photograph was cited as page 120. Page 120 carries the College
+Republicans and Alpha Epsilon Delta. The Associated Student Government feature is on **page
+114**, where Velastegui appears first in the front row of the second group photograph. Citation
+fixed.
+
+Coverdale's ASG service was pinned to a quotation about "Working with student government."
+That quotation is not hers. This year's Who's Who feature runs quotes as pull-quotes that open
+the next subject's entry, and this quote belongs to **Steve Henry** — the year's ASG president
+and student regent — whose entry begins with it and continues onto the following page.
+Coverdale's ASG service holds on the Kappa Delta feature, which unambiguously names her, Jenny
+Parker and Sally Chenault as the sorority's Associated Student Government representatives, and
+that is what the label now cites. Her portrait identification is not in doubt — the caption
+"Jane Anne Coverdale" sits directly above it. Pushed as `184cf72`. Merged as `f792302`.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced events, 121 portraits, 62 year photographs, 297
+mirrored documents, 1,111 pieces of legislation. 60 people have been president. On `main` at
+close, `build.py` completes cleanly, `check_data.py` and `check_contrib.py` both exit 0,
+`check_duplicates.py` reports the same six pre-existing pairs (three introduce-then-resolve
+sequences and the three same-day bills of 1 September 1991), all correctly separate business.
+
+Nothing open. The `viewcontent.cgi` challenge, the `officer_index` limitation, the stale
+"SGA 60 - backlog" trigger, and the two unresolved spellings (Annalise/Annie Finch,
+Gabi/Gabby Pace) stand unchanged from the last pass.
