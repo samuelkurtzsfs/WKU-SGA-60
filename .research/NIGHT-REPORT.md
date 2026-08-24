@@ -5321,3 +5321,60 @@ close. `check_duplicates.py` reports the same six pre-existing pairs — three
 introduce-then-resolve sequences weeks apart and three same-day 1 September 1991 bills. I
 read all six and left every one alone; same-day legislative business is genuinely several
 events. One pull request open, #172, corrected and empty.
+
+## 24 August 2026 — the editor's tenth pass
+
+Full mode; push and merge both worked from the first probe. Three research pull requests
+open, all cut fresh from current main, all merged.
+
+**#172, photographs (rolling), merged as is.** Documentation only — the diff touched
+`SGA-60-AGENT-INFO.md` and nothing else, so the merge published nothing. The one
+externally checkable claim held: WKU's own Timeline for 1996 (`wku_timeline/376`) records
+the Talisman halting publication in August 1996 for lack of interest, which is a genuine
+publication gap, not a digitisation one, and closes off 1996-97 and 1997-98 from the
+yearbook route. A run that establishes where not to look next earned its time.
+
+**#180, twelve 1989-90 senator profiles, merged after one correction.** I read the mirrored
+minutes PDFs directly rather than the citations, all twelve, since it cost nothing. Every
+claim held — Leffert's twice-failed swearing-in, Fryrear entered as "Kristin fauser,"
+Gion's OCR-damaged seat honestly left unspecified, the Eric/Kelly Elliot pair tracked
+apart with the profile saying outright that this supports but does not prove two people.
+Cut one claim in two places: that Steve Mason succeeded Dwight Adkins as Junior Class
+Vice-President on 5 September 1989. The minutes do not say so — Adkins had been accepted
+into the same title on 29 August, stayed in ASG until he resigned on 5 December, and the
+5 September secretary's report lists Junior Class *President* vacant, not the vice-
+presidency. That note was already on main, so a pre-existing error the new profile
+inherited, now fixed in both. Also softened "Todd Gion succeeded Hagan Rose as Sergeant at
+Arms" to what the minutes record, which is that Gion was accepted into the post.
+
+**#181, twenty-three names on the 2024-25 senate roll, merged after three notes were
+rewritten.** I pulled the minutes down and read the AUTHORS blocks: every seat title
+claimed is printed verbatim beside the author's name on the bills. The committee-chair trap
+was handled correctly in both directions — Dilts filed from a bill that names his class
+seat, not from one that reads only "Senator"; Finch and Bryant not taken as members off
+lines that give only their committee-chair titles. The three November 2024 removals
+(Ibrahim, Gholston, Petty) check against the Herald's own report, including Petty's account
+of medical reasons, which the paper's editor's note records she supplied. No factual cut.
+What I cut was research process publishing to the person pages at `/o/`: Wagoner's note
+citing "the task's own instruction," Ibrahim's citing "years.json's 2024-25 events" and
+"the 17 minutes files," and — the one that mattered — Yates's note arguing for her seat by
+holding up Kiersten Washington, a named living student, as a control case on Yates's own
+page. All three rewritten to the facts and their hedges; Washington still appears where she
+belongs, as the subject of Resolution 2-25-S.
+
+**For the next run.** Two things carried over, both structural, neither a blocker. First,
+member profiles on `senate.members` render nowhere in the HTML — only the `note` reaches
+`/o/` — so #180's twelve profiles are currently visible only in `site/years.json`. The
+23 August report already raised this; it is now costing good work its readers. Second,
+`Annalise Finch` (member) and `Annie Finch` (Community Relations chair) are the same person
+across the same year and the build gives them two pages; the Veterans Day 5K bill is good
+evidence they are one. Wants deciding alongside the Eaton case in §8.5.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced events, 60 presidents, 73 leader records,
+1,465 senate members across the years with a roll. `build.py`, `check_data.py` and
+`check_contrib.py` all clean on main at the close. `check_duplicates.py` reports the same
+six pre-existing pairs — three introduce-then-resolve sequences and three same-day
+1 September 1991 bills — read and left alone, as same-day legislative business is genuinely
+several events. No pull request left open.
