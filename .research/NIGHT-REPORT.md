@@ -5528,3 +5528,111 @@ named officers, 773 accounts of a term in office, 113 portraits and 62 year phot
 pre-existing pairs — three introduce-then-resolve sequences and three same-day bills of
 1 September 1991 — read again and left alone as genuinely separate business. No pull request
 left open.
+
+---
+
+# 24 August 2026 — editor's pass, one merged and one held
+
+Two research pull requests were open at the start of this pass, both opened this morning:
+#189 from `research-profiles` and #190 from `research-senate`. The three branches from
+4 August that earlier passes worried about — #6 photographs, #7 the 1980s, #8 the 2020s —
+were all closed on 18 August and needed nothing.
+
+## What merged
+
+**#189, `research-profiles`.** One substantive line: an alias joining "Tara Higdon" to
+"Tara (Higdon) Howard" in `data/name-aliases.json`. Her 1994-95 vice presidency and 1995-96
+presidency had been sitting on a separate, profile-less person page from her real record,
+because the plaque prints her maiden name in parentheses and the executive listings do not.
+
+This is not a new claim about anyone. Both records already on main placed the same person in
+the same office in the same year, and the leader note already stated the connection. The
+sequence behind it is confirmed in contemporaneous headlines — "Rob Evans & Tara Higdon Ready
+to Lead Students" in April 1994, "Tara Higdon Moves Up; Voting Down" in April 1995, then "Tara
+Higdon Sees New Beginning" — found in `herald-index-full.json` and checked against the Herald
+70:51 landing page. The rendered change is a link retarget on three year pages; displayed
+names are untouched. Nothing cut.
+
+The run also reported a real limitation rather than working around it: `officer_index()` in
+`build.py` drops `profile`, `photo` and the numbered `src` fields when it builds a rank-and-file
+senate member, so a profile written on one of the 1,396 un-profiled members would never reach a
+reader. It correctly left that alone as a `scripts/` change outside its scope. It is the same
+blocker the last two passes recorded and it has still not moved.
+
+## What did not merge, and why
+
+**#190, `research-senate`.** Fourteen new Congress members and one new officer for 1983-84,
+read out of two ASG minutes that had never been mined. The research looks careful and its
+adversarial pass caught five real errors before it reached me. I held it anyway, on one ground:
+**I could not read either source document.**
+
+Neither of the two cited minutes had been mirrored into `data/documents/`, so checking them
+meant fetching them, and TopSCHOLAR would not serve them. The landing pages opened at 200. The
+download endpoint returned 403 with the bot-check page saved under a `.pdf` name — trap 7,
+caught only because the magic bytes were checked — and then 202 with an empty body on four
+further attempts across about nine minutes, at the pacing CLAUDE.md sets. A second fetch path
+returned 403. So the spot-check sample came to zero claims verified out of sixteen. That is not
+a finding against the research; it is the merge test asking for something this run could not
+produce.
+
+What could be established without the documents did hold up. Tony Whalen was Administrative
+Vice President in 1983-84, so Todd Duncan's appointment by him is coherent. John Holland is
+already recorded as Public Relations Vice-President for 1984-85 under the same president, and
+the `/441` landing abstract independently confirms that meeting discussed grading systems,
+which is what the new officer note claims he reported on. Gil Cowles and Jon Norris both check
+out as prior and later records. Six of the fourteen rest on being named among unexcused
+absences, which is sound evidence of membership. Recording a committee in the `seat` field is
+an established convention here, not the committee-chair trap: 91 existing member records do it.
+And the run's refusal to merge Alvan Kujala with Allan Kujala absent a source was exactly right.
+
+## What I cut
+
+Three corrections, pushed to the branch as `58470c2`.
+
+The 6 September 1983 ad-hoc research committee was published with one man under two surnames in
+the same year. The verifier corrected Kujata to Kujala on his own entry, whose note calls that
+reading confirmed on a clean crop, but left the old spelling standing in the cross-references
+inside Sandy Hill's and Randy Kimmel's notes. A name in prose is as published as a name in a
+field. Both now read Kujala.
+
+The Representative at Large approved that night carried an uncertain surname, which was honestly
+flagged — and then argued past. The note conceded the tight crop "reads more like Ranan than
+Ragan," and settled on Ragan because "a Margaret Ragan appears elsewhere in this year's 1982
+election coverage." She does not. Margaret Ragan was the 1982-83 president, elected in April
+1982, and her term ended before this Congress sat; 1983-84's election coverage is April 1983.
+Reaching for an unrelated person's surname to settle a reading the scan contradicts is trap 4
+run backwards, and it is how an invented spelling gets into a record. The name is left as
+recorded, since this pass could not read the page either, and the note now states the doubt
+plainly and rules out the false connection.
+
+Gil Cowles's 1982-83 and 1983-84 records are matched on the name alone. That was stated flatly
+as "the same person" where the identical case for Jon Norris is hedged; it now carries the same
+hedge.
+
+## Still open
+
+#190 stays open. It should merge on its next look, and the fix is small: mirror the two PDFs
+into `data/documents/` as `1983-84-asg-minutes-1983-09-06.pdf` and
+`1983-84-asg-minutes-1984-02-28.pdf`, verify the `%PDF` header, and attach them to the year.
+Three readings also want settling from those scans — the disputed surname, whether the given
+name really is Alvan, and Kim Robertson on a clean crop.
+
+The TopSCHOLAR challenge is no longer an incident. It blocked the 1979-80 work, then #187, then
+#186's re-reading on 24 August, and now #190. Any research that cites a document it did not
+mirror is a claim no later pass can check, and the archive is accumulating them. Mirroring the
+PDF at the moment of citation is the whole remedy and it is already the rule; it needs to be
+treated as the load-bearing step it is rather than housekeeping.
+
+The `officer_index` member-profile limitation, the stale "SGA 60 - backlog" trigger, the
+`Annalise Finch` / `Annie Finch` case and the "Gabi Pace" / "Gabby Pace" spelling all stand
+unchanged from the last pass.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced events, 1,468 senate members, 1,111 pieces of
+legislation, 295 mirrored documents, 113 portraits and 62 year photographs. 60 people have been
+president. On `main` at the close, `build.py` runs clean, `check_data.py` and `check_contrib.py`
+both exit 0, and the committed `site/` reproduces byte for byte from `data/`.
+`check_duplicates.py` reports the same six pre-existing pairs — three introduce-then-resolve
+sequences and the three same-day bills of 1 September 1991 — read again and left alone as
+genuinely separate business.
