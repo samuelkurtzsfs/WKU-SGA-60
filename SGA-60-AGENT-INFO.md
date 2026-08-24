@@ -284,6 +284,20 @@ landed. See §8.4 for the detail. No push to main; the fast-forward on
 branch isn't stale for the next run, but that carries no new content of its
 own.
 
+**A later 24 August run, same stale prompt again.** Same re-check, same
+result: everything the stored prompt names is still done (§7, `CLAUDE.md`,
+the three `.research/branches-*.json`/`officers-unchecked.json` files, all
+four portraits). `viewcontent.cgi` was still refusing plain requests at the
+top of this run (tested directly against the 2000-01 photo lead, HTTP 202),
+so this run left the year-photograph hunt alone rather than add an eleventh
+attempt on the same closed window, and instead picked up the one loose
+thread left in item 7 of §8.3: two contradictory notes sitting in the same
+paragraph, one saying the CONTACTS-completeness question was moot and one
+still naming five specific files and Omar Salinas Chacon as an open gap.
+Re-opened all five named PDFs directly and settled it for good — see §8.3
+item 7 for the detail. Nothing in `data/` changed; this closes a stale note,
+not a data gap. Landed on `research-backlog`.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
@@ -955,7 +969,41 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    couple were ever captured) is now moot for the *authors* file, since
    contacts were never meant to be in it — but if a future pass wants a
    `contact` role added to the schema, those long lists are still sitting
-   unread. ~~Separately, and outside this item's scope: `data/legislation.json`'s
+   unread.
+
+   **The five specific files this section originally flagged by name are now
+   confirmed clean, 24 August (scheduled run).** The 22 August note that named
+   `2017-18/bill-21-17-f.pdf`, `2017-18/resolution-2-17-f.pdf`,
+   `2021-22/14_22_s.pdf`, `2021-22/36_22_s.pdf` and `2023-24/bill_16_24_s.pdf`
+   as "each missing several named authors or contacts outright," and singled
+   out Omar Salinas Chacon as "repeatedly named across several of these bills"
+   yet absent from the file, read as an open completeness bug rather than the
+   moot CONTACTS point already made two sentences above it — worth settling
+   properly rather than leaving two contradictory notes in the same item. All
+   five PDFs were re-opened directly with PyMuPDF and every `AUTHOR:`/
+   `AUTHORS:`/`SPONSOR:`/`SPONSORS:` field read in full. Every person name
+   under those fields in all five documents is already in
+   `data/legislation-authors.json`, exactly, with no truncation: bill-21-17-f
+   (Francisco Serrano, Andi Dahmer), resolution-2-17-f (Francisco Serrano),
+   14_22_s (Alex Cissell, Garrison Reed, Olivia Feck, Emily Bunning, Preston
+   Romanov, Kat Howard), 36_22_s (Dawson McCoun, Calleigh Powell), and
+   bill_16_24_s (Alex Cissell, Andrea Diaz, Savanna Stinnett, Sophia Byrant,
+   Maiah Cisco). Every `SPONSOR`/`SPONSORS` field in all five names a
+   committee, not a person, so no sponsor row is expected on any of them, per
+   the convention already established elsewhere in this item. Omar Salinas
+   Chacon appears in exactly two of the five (bill-21-17-f, resolution-2-17-f)
+   and only ever under `CONTACTS:`, captioned "EKU SGA Inspector General" —
+   never as an author or a sponsor of anything — so his absence from the file
+   is correct, not a gap. A separate adversarial verifier subagent
+   independently re-opened all five PDFs from scratch and confirmed every
+   name and every non-match, including the Chacon question. No file changed;
+   `data/legislation-authors.json` still holds 1,144 rows. This closes out
+   the specific five-file claim in this item for good — a future pass only
+   has real work here if it decides to add a `contact` role to the schema and
+   go after the long CONTACTS lists on that basis, which is a different,
+   larger undertaking than what this note originally described.
+
+   ~~Separately, and outside this item's scope: `data/legislation.json`'s
    own `title` field carries clearly glued-on scrape debris for a number of
    2016-17/2017-18 entries~~ **Done, 23 August (a later scheduled run).** All
    103 affected `title` fields (65 flagged by a trailing Yes/No vote outcome,
