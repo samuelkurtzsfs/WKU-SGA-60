@@ -54181,7 +54181,36 @@
        ]
       }
      ],
-     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026 and Herald, 5 Apr 2026, the latter quoting her 2 Apr 2026 weekly report to the 25th Senate) in Herald reporting; the official 25th Senate minutes of 14 Apr 2026 (in 2025-26's documents) twice give 'Sophie Stirling'. That is now three Herald mentions and the official minutes agreeing on 'Stirling' against one 'Sterling', which favors that spelling but does not fully settle it, since the 28 Apr Herald report post-dates all of them and could reflect a correction rather than an error. No committee chairs had been reported as of this update - the 26th Senate's first fall meeting had not yet occurred."
+     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026 and Herald, 5 Apr 2026, the latter quoting her 2 Apr 2026 weekly report to the 25th Senate) in Herald reporting; the official 25th Senate minutes of 14 Apr 2026 (in 2025-26's documents) twice give 'Sophie Stirling'. That is now three Herald mentions and the official minutes agreeing on 'Stirling' against one 'Sterling', which favors that spelling but does not fully settle it, since the 28 Apr Herald report post-dates all of them and could reflect a correction rather than an error. No committee chairs had been reported as of this update - the 26th Senate's first fall meeting had not yet occurred.",
+     "members": [
+      {
+       "name": "Jaden Marshall",
+       "seat": "Senator at Large",
+       "note": "Sworn in as a new at-large senator at the 26th Senate's first meeting, 28 April 2026, then ran for Speaker of the Senate the same night.",
+       "src": {
+        "label": "Herald, 28 Apr 2026 - SGA holds first meeting of 26th Senate, swears in new senators, senate speaker",
+        "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"
+       }
+      },
+      {
+       "name": "Molly Ricky",
+       "seat": "Senator",
+       "note": "A sitting senator who ran for Speaker of the Senate at the 26th Senate's first meeting, 28 April 2026.",
+       "src": {
+        "label": "Herald, 28 Apr 2026 - SGA holds first meeting of 26th Senate, swears in new senators, senate speaker",
+        "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"
+       }
+      },
+      {
+       "name": "Amelia Tucker",
+       "seat": "Senator",
+       "note": "A sitting senator who ran for Speaker of the Senate at the 26th Senate's first meeting, 28 April 2026; tied 9-9 with Veronica Butler in the first vote before losing the re-vote.",
+       "src": {
+        "label": "Herald, 28 Apr 2026 - SGA holds first meeting of 26th Senate, swears in new senators, senate speaker",
+        "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"
+       }
+      }
+     ]
     }
    },
    "status": "researched"
