@@ -441,6 +441,37 @@ search, and has never been checked. Nothing in `data/` changed this run.
 `build.py` and `check_data.py` re-run clean against the unmodified tree.
 Landed this note only, on `research-backlog`.
 
+**A 24 August run (senate-rolls trigger), same stale prompt again — this one
+found real, narrow new ground.** Re-checked first, same result as every run
+since 21 August: `.research/senators-unverified.json` is `[]`, 58 of 61 years
+already carry `organization.senate.members`, and the three without it
+(1966-67, 1969-70, 1979-80) are documented permanent gaps. PR #190 from
+earlier the same day was already merged. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+was closed the entire session (HTTP 202 at both the start and end of the
+run); tried two already-thin years against open sources instead (1973-74 and
+1977-78 against their Talisman yearbooks on archive.org) and found both
+already thoroughly mined — nothing in either yearbook's ASG coverage wasn't
+already in the record.
+
+`wku.edu/sga`'s own minutes pages are open and cost nothing to crawl. Working
+from the actual 2019-20 and 2020-21 PDF minutes rather than assumption
+turned up a real pattern: several committee chairs already recorded as
+*officers* are separately called "Senator [Name]" in the primary text during
+floor business, meaning they held a Senate seat in addition to chairing
+their committee — the same dual-role pattern already recorded for other
+2020-21 committee chairs. Drafted five such dual-records (Matt Barr, Symone
+Whalin, Josh Zaczek, Brigid Stakelum for 2019-20; Tess Welch for 2020-21), a
+separate adversarial verifier re-fetched all six cited PDFs and confirmed
+all five as real and distinct — zero rejected, but all five needed the
+`seat` label trimmed to the archive's established parenthetical
+committee-role format, and two notes were reworded for overstating what the
+floor debate showed. Landed on `research-senate` (PR #197): 2019-20 went
+from 14 to 18 members, 2020-21 from 17 to 18. `build.py` and `check_data.py`
+pass clean; `check_duplicates.py` flags the same six pre-existing pairs.
+`viewcontent.cgi` staying closed remains the ceiling on this project's
+senate-roll work — most of what's left (pre-2009 SGA minutes on TopSCHOLAR,
+the two flagged 1976-77 Herald leads from the prior run) sits behind it.
+
 **A 24 August run (backlog trigger, ~20:24 UTC), same stale prompt yet
 again.** Re-checked before anything else, same result as every run since
 21 August: `.research/branches-unverified.json`, `.research/branches-moments.json`
@@ -480,6 +511,20 @@ unmodified tree. Landed this note only, on `research-backlog`. The eight
 open years (1996-97, 1997-98, 2000-01, 2003-04, 2005-06, 2006-07, 2008-09,
 2009-10) and their leads are exactly as the 24 August ~02:00 UTC entry
 above left them — nothing to add or remove from that list.
+
+**Editor's correction, 24 August ~21:30 UTC: the window reopened.** Reviewing
+the note above, `viewcontent.cgi?article=7642&context=dlsc_ua_records` — the
+first of the seven leads it reports as challenged — was requested once more
+and returned `HTTP 200`, `content-type: application/pdf`, 48,412,099 bytes,
+beginning `%PDF-1.7`. A real file, not a challenge page. Two things follow
+from that. The window is not shut for the season: it opens and closes within
+the hour, so a run that gets seven refusals should treat that as the state of
+one session and not conclude the material is out of reach. And the leads in
+§8.4 are live again as of this timestamp — the 2009-10 lead above all, and
+the SGA-photographs finding aid at `article=1619&context=dlsc_ua_fin_aid`,
+which has still never been opened and is the one lead here that has never
+been checked at all. The next backlog run should start there, before
+re-surveying anything.
 
 ### 8.0 A warning that comes before any merging
 
