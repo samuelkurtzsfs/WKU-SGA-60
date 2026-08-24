@@ -441,6 +441,46 @@ search, and has never been checked. Nothing in `data/` changed this run.
 `build.py` and `check_data.py` re-run clean against the unmodified tree.
 Landed this note only, on `research-backlog`.
 
+**A 24 August run (backlog trigger, ~20:24 UTC), same stale prompt yet
+again.** Re-checked before anything else, same result as every run since
+21 August: `.research/branches-unverified.json`, `.research/branches-moments.json`
+and `.research/officers-unchecked.json` are all still `[]`; Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json`, confirmed by reading each entry directly out of
+`data/photos.json` rather than trusting the last note. Reed Morgan and
+Amanda Coates/Lich are unchanged in §7 and `CLAUDE.md`. `research-backlog`
+was a plain fast-forward of `origin/main` (merge-base present, not a 4
+August orphan) with no conflicts.
+
+Picked up the year-photograph gap (§8.4) again, the one live item this
+routine has been converging on. `viewcontent.cgi` was tested seven times
+across the session, spaced 90-95 seconds apart, against seven different
+leads spanning the whole open list — 7642 (2009-10), 7740 (2008-09), 10372
+(2003-04), 9903 (2000-01), 4039 (1996-97), 4695 (2005-06), and the WKU
+Archives finding aid itself (1619, `context=dlsc_ua_fin_aid`) — and every
+single one came back the same `HTTP 202`, `x-amzn-waf-action: challenge`,
+empty body. The finding-aid landing page (`dlsc_ua_fin_aid/620`) was also
+re-fetched directly on the open landing-page route: it carries nothing
+beyond the one-line abstract already quoted above, no embedded thumbnail
+or folder list, so there is no shortcut around the PDF for that lead
+either. Checked whether a different host could stand in this time, since
+seven straight 202s in one session is worse luck than most prior runs:
+`web.archive.org` reset at the TLS handshake again (`curl: (35) Recv
+failure: Connection reset by peer`, matching the "blocked again" state in
+§8.1, not the 21 August "open on https" one), `archive.org` (no `www.`
+prefix), `bgdailynews.com`, `wkuherald.com` and `digitalcommons.wku.edu`
+landing pages were all open. A live-search test against `bgdailynews.com`
+(the host that supplied Katie Dawson's 2005-06 portrait) returned an empty
+body on a plain `curl` against its `/search/` path — its results appear to
+render client-side, so it is not usable as a research channel without a
+browser, and was not pursued further this run rather than spend the
+session guessing at an unfamiliar site's markup. Nothing in `data/`
+changed. `build.py` and `check_data.py` re-run clean against the
+unmodified tree. Landed this note only, on `research-backlog`. The eight
+open years (1996-97, 1997-98, 2000-01, 2003-04, 2005-06, 2006-07, 2008-09,
+2009-10) and their leads are exactly as the 24 August ~02:00 UTC entry
+above left them — nothing to add or remove from that list.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
