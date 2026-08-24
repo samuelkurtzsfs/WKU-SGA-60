@@ -269,6 +269,21 @@ run rediscovering the same "already done" before it can pick real work. This
 run picked the year-photograph gap (§8.4) instead and landed one of the nine;
 see there for what's still open.
 
+**Confirmed still stale, 24 August (scheduled run):** the same stored prompt
+fired again, unchanged. Re-checked again before doing anything else, same
+result: the three `.research/branches-*.json` and `officers-unchecked.json`
+files are all still `[]`, all four named portraits are still in
+`data/photos.json`, Reed Morgan and Amanda Coates/Lich are unchanged in §7
+and `CLAUDE.md`, and both citation-repair items (4 and 9 of §8.3) are still
+marked done from 20-23 August. The trigger is still unfixed. This run picked
+up the year-photograph gap where 23 August left off — the four candidate
+leads for 1996-97/1997-98/2000-01/2003-04/2005-06/2006-07/2008-09/2009-10 —
+and found `viewcontent.cgi` closed for the entire session; nothing new
+landed. See §8.4 for the detail. No push to main; the fast-forward on
+`research-backlog` (17 commits it was missing from `main`) was pushed so the
+branch isn't stale for the next run, but that carries no new content of its
+own.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
@@ -1186,6 +1201,47 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   here proves nothing (same CLAUDE.md warning). Would need either a live
   TopSCHOLAR search for the specific April issues or a page-by-page PDF
   read once `viewcontent.cgi` opens.
+
+  **All four candidate leads attempted, 24 August (scheduled run) — still
+  blocked, nothing landed.** `viewcontent.cgi` was closed the entire
+  session: 8 attempts across all four articles (9903/2000-01, 10372/2003-04,
+  4695/2005-06, 7740/2008-09), each tried twice with a 90-second backoff
+  between attempts and roughly 13 minutes end to end, every one HTTP 202
+  challenge. Before giving up on the session, tried the same
+  Wayback/old-CMS route that recovered the 2007-08 citations in item 4
+  above, since `media.www.wkuherald.com` (the pre-2011 College Publisher
+  CMS `wkuherald.com` ran on) is a separate host from `digitalcommons` and
+  was reachable. It does not help here: CDX search shows the Wayback
+  crawler's coverage of that domain effectively starts in 2007 — a
+  domain-wide query for April 2004 (the Todd-investigation lead) returned
+  zero captures of any kind, ruling out 2003-04 entirely on this route, not
+  just the specific article. For 2008-09, the Smiley "wins the election"
+  article itself was never crawled at all; its companion piece from the
+  same issue ("I Won't Give Up," 16 Apr 2009) was crawled but only as a
+  dead 404 four days after publication, i.e. after the CMS had already
+  broken the page — no usable capture. For 2005-06, a keyword search for
+  "watkins" across the whole domain turned up only two January 2007
+  captures of the article's URL, both already 404/302 by the time Wayback
+  reached them, nine months after the April 2006 publication date — same
+  dead-end pattern. Did not re-check 2000-01 this way since it predates the
+  CMS itself. **All four leads are now exhausted for this access window; a
+  future run needs either `viewcontent.cgi` open (try again, it lifts and
+  re-closes by the hour per §8.1) or a completely different source** —
+  nothing further to try against Wayback for these specific articles.
+  1996-97, 1997-98 and 2006-07 remain untouched this pass, for the same
+  reason (they all need `viewcontent.cgi` too, per the notes above).
+
+  **`viewcontent.cgi` reopened about an hour later, 24 August, ~00:55 UTC**
+  (editor's ninth pass, verified by hand). Two SGA minutes PDFs came down
+  clean — `article=1946` and the 16 October 1990 item — with a plain `curl`,
+  a browser user-agent and a `Referer` back at the item page, no cookie
+  dance, no retry. So the window above was a closed hour, not a closed day,
+  and the session that reported eight straight 202s was simply inside it.
+  This is the third independent confirmation of the by-the-hour pattern in
+  §8.1. The practical lesson for a blocked run: the four leads are not
+  exhausted, they are waiting on a window, and a run that hits 202s should
+  bank the rest of its work and retry the challenge late in the session
+  rather than closing the item out.
 
 ### 8.5 Data hygiene
 

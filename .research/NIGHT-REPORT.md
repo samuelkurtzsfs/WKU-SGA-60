@@ -5222,3 +5222,102 @@ Two things worth repeating rather than rediscovering:
   the cap. This pass alone pushed three correction branches and merged four pull
   requests. Limiting previews to something narrower than every push, or changing the
   plan, is a decision for the owner; it is the second consecutive day it has bitten.
+
+---
+
+## 24 August 2026 — the editor's ninth pass
+
+Three pull requests open at the start, all worked tonight. Two merged, one left open at
+zero. The three stale branches the standing prompt still names — #6, #7 and #8, the
+1980s, the 2020s and the photographs — have not existed as open pull requests for some
+time; the open set was #172, #176 and #177, all opened within the previous day.
+
+**#177, the senate rolls: merged.** Ten senators added to the 2016-17 roll. I re-fetched
+all five cited minutes PDFs from `wku.edu` and both cited Herald articles and read the
+swearing-in passages myself rather than trusting the run's transcription. All ten names
+held. The batch of nine sworn in on 31 January 2017 is real and correctly split from the
+five already on record; Sara Saeed's seat is named in the swearing-in line rather than the
+appointment line and the entry has it right; Lucas Knight's appointment to the seat left
+short by the spring 2016 at-large election is in the Herald outright, with Speaker Nathan
+Cherry quoted on the eleven-versus-ten count.
+
+One citation was wrong and was fixed rather than cut. Olga Shoyat's note said she was
+appointed to fill Chase Coffey's seat after his resignation, citing the 21 February 2017
+minutes. **Coffey is not mentioned anywhere in those minutes** — no resignation, no
+banquet resolution, no veto. The claim is true; it comes from the Herald's report of that
+meeting, which the archive already cites elsewhere for Coffey's resignation. The note now
+says which source carries which half, with the Herald added as `src2`.
+
+The traps were handled well by the run itself, which is worth recording. Committee chairs
+were deliberately kept off the roll — Amy Wyer, Michael Shelton and Alex Sergent were
+sworn only as chairs and were left out. **Lucas Knight and Josh Knight were correctly kept
+apart**, Josh being Director of Academic and Student Affairs in the same article; matching
+on the surname would have merged them. Both spelling splits, Mujkanovic/Mujcanovic and
+Fransisco/Francisco, are flagged and unresolved, which is the rule. I confirmed the
+Mujcanovic variant myself.
+
+**#176, the profiles: merged, after one cut.** Twenty-five profiles — twenty-one recent
+senators, and four earlier officers that landed in a second commit while I was reviewing
+and were merged in. I opened sources for roughly twenty-five discrete claims across
+twenty-four of the people. All held but one.
+
+Chloe Ralston's profile opened "a freshman nursing major". **None of the four sources cited
+for her gives her course of study**, and "nursing" appears nowhere else in the file. Cut.
+Everything else in her profile stands. Evan Tuck's "that same spring election cycle" read
+as the wrong year against a paragraph opening in spring 2025; the spring 2026 results
+confirm him a junior senator, so the sentence now names the ballot.
+
+Three claims survived that I could not confirm, and cutting them would have been wrong:
+Steve Fuller's 973–574 margin over Tom Jecker, where the cited issue is demonstrably the
+right one but the mirrored scan's OCR is unusable; Abi Canter's "signature service", where
+my text extraction of that PDF verifiably drops text and everything else in her profile is
+verbatim from the two bills; and two second-meeting claims for McKinney and Falmlen. **An
+unreadable source is not a source that says nothing**, and this pass had that proved on it
+twice — the TopSCHOLAR challenge lifted mid-review and let me read the 18 September 1984
+and 16 October 1990 minutes directly. Both confirmed: "Mitch McKinney was appointed
+Parliamentarian", spelling and all, and Falmlen's recycling report almost phrase for
+phrase, "solidly under way" by the end of November.
+
+**#172, the photographs: not merged, nothing to merge, left open.** The diff against main
+is still empty after the previous pass withdrew eleven portraits. This is the rolling photo
+PR sitting at zero, not a branch to close. I merged current main into it so the next photo
+run cuts from the record as it now stands rather than from eleven commits back.
+
+**Two things for whoever picks this up.**
+
+The `src` labels on the McKinney and Falmlen officer records each name two meetings but
+carry one URL, so a reader following the link lands on half the citation. **This is
+pre-existing on main, not from tonight**, but two meetings want two sources.
+
+More substantial: four people — Ralston, Ferguson, Gannon and Dilts — now carry two
+profiles for the same 2023-24 term, one on their `senate.officers` entry and one on
+`senate.members`. Nothing on main did this before. It is not visible duplication today,
+and the reason is itself the finding: **`members` profiles render nowhere in the HTML**,
+only in `site/years.json`. Ferguson's three committee bills and Dilts's Bill 7-23-F reach
+no reader. That is a build-side gap rather than a research one, and it is why tonight's
+work is worth having even where it restates what was already in the file. Decide which
+array is a profile's home before the next profiles pass fills both again.
+
+One error of my own, recorded rather than hidden: the merge commit message for #177 reads
+"spring 1916" where it should read "spring 2016". It is a typo in a commit message on
+`main`, not in anything the site publishes, and correcting it would mean rewriting `main`,
+which is not worth it.
+
+**Vercel.** The deployment refusal that closed the eighth pass appears to have lifted. The
+`build` and `Vercel Preview Comments` checks on #177 both completed successfully at
+00:47 UTC, where yesterday's returned `Deployment rate limited - retry in 24 hours`. The
+24-hour window had simply elapsed. As the 22 and 23 August entries establish, the state of
+the public site still cannot be verified from a routine — `wku-sga-60.vercel.app` is not
+the production alias and the real ones sit behind SSO — so this pass claims only that the
+checks passed, not that the site is live.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced entries, 73 leader records, 1,442 senate members
+across the years with a roll, 796 written profiles across 1,823 named people, 113 leader
+portraits and 62 year photographs, 295 documents mirrored, 1,111 legislation files, 1,731
+person pages. `build.py`, `check_data.py` and `check_contrib.py` all clean on main at the
+close. `check_duplicates.py` reports the same six pre-existing pairs — three
+introduce-then-resolve sequences weeks apart and three same-day 1 September 1991 bills. I
+read all six and left every one alone; same-day legislative business is genuinely several
+events. One pull request open, #172, corrected and empty.
