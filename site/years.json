@@ -12321,13 +12321,22 @@
      {
       "office": "Public Affairs Vice President",
       "name": "Happy Chandler",
-      "note": "The 4 October minutes give the same office as \"Public Relations Vice President,\" a naming inconsistency in the record itself, not a different person.",
+      "note": "The 4 October minutes give the same office as \"Public Relations Vice President,\" a naming inconsistency in the record itself, not a different person. By the 28 February 1984 meeting John Holland held the Public Relations Vice President office; the record does not establish exactly when the change happened.",
       "profile": [
        "Happy Chandler served as Public Affairs Vice President of the Associated Student Government in 1983-84, under President Jack Smith, as recorded in the roll and officer reports of Congress's 30 August 1983 meeting. The minutes of the 4 October 1983 meeting record the same office as \"Public Relations Vice President,\" a naming inconsistency in ASG's own record-keeping that year rather than a change of officer. No further published record of his time in the office has been found."
       ],
       "src": {
        "label": "ASG Meeting Minutes, 30 August 1983",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+      }
+     },
+     {
+      "office": "Public Relations Vice President",
+      "name": "John Holland",
+      "note": "Held the office by the 28 February 1984 meeting, succeeding Happy Chandler at a date not established by the surviving minutes. At that meeting he reported that a proposed definitive grading system had been defeated and encouraged ASG members to contact their state representatives and senators about higher education funding. He had appeared earlier that year as \"Jon Holland,\" named to an ad-hoc research committee at the 6 September 1983 meeting; the given name is rendered both Jon and John in the minutes. He continued in the Public Relations Vice President office into 1984-85, already recorded in years.json under that year.",
+      "src": {
+       "label": "ASG Meeting Minutes, 28 February 1984",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
       }
      }
     ],
@@ -12364,7 +12373,7 @@
       {
        "name": "Sandy Hill",
        "seat": "Congress member",
-       "note": "Moved that Congress suspend the rules at the 30 August 1983 meeting.",
+       "note": "Moved that Congress suspend the rules at the 30 August 1983 meeting. Also named to an ad-hoc research committee with Allan Kujala, Randy Kimmel and Jon Holland at the 6 September 1983 meeting.",
        "src": {
         "label": "ASG Meeting Minutes, 30 August 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
@@ -12373,7 +12382,7 @@
       {
        "name": "Connie Hoffman",
        "seat": "Congress member",
-       "note": "Named absent at the roll call of the 4 October 1983 ASG meeting.",
+       "note": "Named absent at the roll call of the 4 October 1983 ASG meeting. Also approved as a Representative at Large at the 6 September 1983 meeting.",
        "src": {
         "label": "ASG Meeting Minutes, 4 October 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/476"
@@ -12432,6 +12441,132 @@
         "label": "ASG Meeting Minutes, 30 August 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
        }
+      },
+      {
+       "name": "Johnny Ragan",
+       "seat": "Representative at Large",
+       "note": "Approved as a Representative at Large at the 6 September 1983 meeting, on a motion made, seconded and passed without recorded discussion. The given name Johnny is clear on the scan; the surname is not, and is recorded here as read. The typewriter on this document loses the descender of every g - the same page prints Large as \"Larae\" and College as \"Colleoe\" - so a reading of \"Ranan\" cannot be told apart from \"Ragan\" on the letter shapes alone. Congress minutes of this era spell the surname Ragan, Ragen, Raden and Racan across different scans. It should not be connected to Margaret Ragan, the 1982-83 president, whose term ended before this Congress sat.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Kevin Jackson",
+       "seat": "Rules and Elections Committee",
+       "note": "Assigned to the Rules and Elections Committee at the 6 September 1983 meeting, on a motion made, seconded and passed.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Kim Robertson",
+       "seat": "Student Affairs Committee",
+       "note": "Assigned to the Student Affairs Committee at the 6 September 1983 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Stephen Kiehn",
+       "seat": "Student Affairs Committee",
+       "note": "Assigned to the Student Affairs Committee at the 6 September 1983 meeting, alongside Kim Robertson.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Randy Kimmel",
+       "seat": "Congress member; ad-hoc research committee",
+       "note": "Named to an ad-hoc research committee with Allan Kujala, Sandy Hill and Jon Holland at the 6 September 1983 meeting, on a motion made, seconded and passed with no discussion.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Allan Kujala",
+       "seat": "Congress member; ad-hoc research committee",
+       "note": "Named to an ad-hoc research committee with Randy Kimmel, Sandy Hill and Jon Holland at the 6 September 1983 meeting. A 600dpi re-read of the scan resolves both names clearly: Allan Kujala, matching in full the \"Allan Kujala\" already flagged in this year's organization.note as an unresolved April 1983 candidate for one of ASG's top offices. A full name match in the same academic year makes it very likely the same person, though no source states this directly, so the two records are not formally merged.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Shiela Marie Waninger",
+       "seat": "Alternate, College of Education",
+       "note": "Appointed alternate representative for the College of Education at the 6 September 1983 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Gil Cowles",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting. Already recorded in years.json under 1982-83 as Ogden College alternate representative, confirmed 29 April 1982 - likely the same person continuing in Congress the following year, though no source links the two records.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Richard Helms",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Kathy Holly",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "James Moorman",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Paul Wellander",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Jon Norris",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting. Already recorded in years.json under 1984-85, absent at the 4 September 1984 roll call - likely the same person continuing in Congress the following year, though the record does not otherwise identify him further.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Todd Duncan",
+       "seat": "P.R. Committee",
+       "note": "Appointed to the Public Relations Committee by Administrative Vice President Tony Whalen at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
       }
      ]
     }
@@ -12459,6 +12594,30 @@
      "src": {
       "label": "ASG Meeting Minutes, 4 October 1983",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/476"
+     }
+    },
+    {
+     "file": "1983-84-asg-minutes-1983-09-06.pdf",
+     "title": "ASG meeting minutes, 6 September 1983",
+     "summary": "The second fall meeting: officer and committee reports, then new business appointing several members to Congress seats and committees, including an ad-hoc research committee.",
+     "extract": "Johnny Ragan and Connie Hoffman were approved as Representatives at Large.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 6 September 1983",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+     }
+    },
+    {
+     "file": "1983-84-asg-minutes-1984-02-28.pdf",
+     "title": "ASG meeting minutes, 28 February 1984",
+     "summary": "A winter meeting: roll call of unexcused absences, officer reports including a defeated grading-system proposal, committee reports on 55 candidates filing for that spring's ASG election, and a committee appointment.",
+     "extract": "Unexcused absences included: Gil Cowles, Richard Helms, Kathy Holly, James Moorman, Paul Wellander...",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 28 February 1984",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
      }
     }
    ]
@@ -22804,7 +22963,11 @@
       "src": {
        "label": "SGA Meeting Minutes, 29 Aug 1995",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/131"
-      }
+      },
+      "profile": [
+       "Erin Schepman was elected secretary of Congress on 18 April 1995. In that post she set out the attendance rule under which three unexcused absences from a Congress meeting sent a member before the Judicial Council, and she wrote to every campus organization about the Points of Light programme.",
+       "Congress approved her, on a motion from David Apple, as Coordinator of Committees at the first meeting of 1996-97, on 27 August 1996, moving up after her year as secretary."
+      ]
      },
      {
       "office": "Coordinator of Committees",
@@ -22883,7 +23046,11 @@
        "src": {
         "label": "SGA Meeting Minutes, 14 Nov 1995",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/140"
-       }
+       },
+       "profile": [
+        "David Apple chaired the Academic Affairs Committee for two consecutive years, 1995-96 and 1996-97. In November 1995 he reported the committee had legislation up for first reading and was working on a measure about available internet hours for students.",
+        "By 1997-98 he sat on the Judicial Council. At the 21 April 1998 Congress meeting he announced the results of that spring's primary election from the floor: Brad Sweatt with 140 votes and Amy France with 95 advanced to the general election for Public Relations Director, ahead of Christoph Miller's 72."
+       ]
       },
       {
        "office": "Chairperson, Student Affairs Committee",
@@ -22892,7 +23059,11 @@
        "src": {
         "label": "SGA Meeting Minutes, 14 Nov 1995",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/140"
-       }
+       },
+       "profile": [
+        "Darlene Lodmell and her sister Carlene were accepted onto Congress together as sophomore off-campus representatives in August 1995. Darlene chaired the Student Affairs Committee that year, planning a Career Services forum for January 1996, and Congress voted her Committee Member of the Month on 14 November 1995.",
+        "She served as secretary of Congress in 1996-97, signing that year's minutes and introducing a bulletin she called the Seconds, circulating important dates and the highlights of the previous meeting; she also set herself the goal of tracking legislation after Congress passed it. By 21 April 1998 she was serving on the Judicial Council."
+       ]
       },
       {
        "office": "Chairperson, Legislative Research Committee",
@@ -22901,7 +23072,11 @@
        "src": {
         "label": "SGA Meeting Minutes, 5 Mar 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/154"
-       }
+       },
+       "profile": [
+        "Carlene Lodmell and her sister Darlene were accepted onto Congress together as sophomore off-campus representatives in August 1995. Carlene chaired the Legislative Research Committee that year, taking it through a review of the SGA constitution in the spring of 1996. The resulting amendments went to Congress as Bill 96-2-S and passed second reading on 5 March 1996, except for a proposed 2.5 GPA requirement for Congress members, which failed. Those amendments went before the student body that April; Shawna Whartenby, another Congress officer, urged a yes vote on them in a College Heights Herald piece printed 16 April 1996.",
+        "Lodmell was elected vice president for 1996-97, calling every Congress meeting of the year to order, running the residence hall elections and serving as the student member of the OAR board. She stood for president in the spring 1997 election and lost to Keith Coffman, who thanked her from the floor of Congress for running a good campaign."
+       ]
       },
       {
        "office": "Chairperson, Campus Improvements Committee",
@@ -22910,7 +23085,12 @@
        "src": {
         "label": "SGA Meeting Minutes, 5 Mar 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/154"
-       }
+       },
+       "profile": [
+        "Steve Roadcap chaired the Campus Improvements Committee in 1995-96, working on campus lighting through the autumn and writing legislation in March 1996 about removing pay phones from campus.",
+        "He was elected treasurer for 1996-97 and drew up that year's budget, cutting administrative costs while increasing organizational aid, the Glasgow campus budget, program funding and campus improvements; Congress rejected a motion to table the budget and approved it on 27 August 1996.",
+        "President Keith Coffman swore him in as Judicial Foreman on 9 September 1997, and Roadcap in turn swore in the new members of Congress, telling them the Judicial Council would be more involved than in previous years."
+       ]
       },
       {
        "office": "Chairperson, Public Relations Committee",
@@ -22931,7 +23111,11 @@
        "src": {
         "label": "SGA Meeting Minutes, 5 Mar 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/154"
-       }
+       },
+       "profile": [
+        "Shawna Whartenby co-chaired the Public Relations Committee in 1995-96. She gathered more than 175 signatures on a petition for a bandstand on the south lawn of the Downing University Center, and Congress voted her Member of the Month for February 1996. That April she wrote in the College Heights Herald urging students to vote yes on the SGA constitutional amendments then on the ballot, a package the Legislative Research Committee under Carlene Lodmell had brought to Congress as Bill 96-2-S that March.",
+        "As Public Relations Director in 1996-97 she set the year's theme, recorded in the minutes as \"SGA - Changing the Course of History At WKU!\", ran publicity for the Provide-A-Ride service, and organized an AIDS Day banner with Student Health Services in December 1996."
+       ]
       },
       {
        "office": "Chairperson, Programming Committee",
@@ -23897,7 +24081,11 @@
       "src": {
        "label": "SGA Meeting Minutes, 21 Jan 1997",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/559"
-      }
+      },
+      "profile": [
+       "Ryan Faught chaired the Legislative Research Committee in the autumn of 1996. Giving his last remarks as chair on 21 January 1997, he told the bylaws committee that legislation could not be reviewed without its author present.",
+       "Congress accepted him as Coordinator of Committees the same day, 21 January 1997, moving him across from the Legislative Research chair."
+      ]
      },
      {
       "office": "Public Relations Director",
@@ -23954,7 +24142,12 @@
        "src": {
         "label": "SGA Meeting Minutes, 19 Nov 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/563"
-       }
+       },
+       "profile": [
+        "Chad Lewis was elected to Congress as a freshman council member in the fall of 1995. He served as Sergeant of Arms in 1996-97, and Congress named him, alongside the parliamentarian, a Public Relations award winner on 19 November 1996.",
+        "As treasurer in 1997-98 he presented a budget of $41,756 for approval in September 1997 and reported that November that expenditures to date stood at $11,150.68 against a balance of $30,605.32. In April 1998 the Herald covered his campaign for vice president as a contested race against Laura Hancock, under the headline \"Race for Student Government Association Vice Presidency Heats Up.\" He was elected executive vice president for 1998-99.",
+        "As executive vice president he called Congress to order through the year in place of the president, and set goals of a spring turnout of 1,400 voters, every Congress seat filled, and a doubling of Provide-A-Ride use. By January 1999 he reported more than 100 people had used the ride service in the last week of the fall semester."
+       ]
       },
       {
        "office": "Chairperson, Academic Affairs Committee",
@@ -24008,7 +24201,11 @@
        "src": {
         "label": "SGA Meeting Minutes, 22 Apr 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/578"
-       }
+       },
+       "profile": [
+        "Leigh Ann Sears chaired the Campus Improvements Committee in 1996-97, running the Designated Driver card scheme and the spring campus clean-up, and working with treasurer Steve Roadcap on a gazebo project. She was elected vice president for the following year.",
+        "As vice president in 1997-98 she presided over Congress all year, ran the Weekend in the Woods retreat, and reported Provide-A-Ride ridership week by week, telling Congress on 18 November 1997 that 52 people had ridden the service the previous Thursday night. In April 1998 she announced that year's presidential debate and the dates of the general election."
+       ]
       },
       {
        "office": "Chairperson, Public Relations Committee",
@@ -24016,7 +24213,11 @@
        "src": {
         "label": "SGA Meeting Minutes, 27 Aug 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/562"
-       }
+       },
+       "profile": [
+        "Heather Rogers chaired the Public Relations Committee in 1996-97, and became Director of Public Relations the following year. In that post she revived SGA's old newsletter, The Gavel, set up a monthly SGA and University Center Board calendar in the College Heights Herald, and organized a blood drive in West Hall Cellar in December 1997; she asked every committee to file three goals for the spring.",
+        "She was named to the Judicial Council at the executive retreat in July 1998, moving into that role after her year running public relations."
+       ]
       },
       {
        "office": "Chairperson, Technology Committee",
@@ -25323,6 +25524,10 @@
       "src": {
        "label": "SGA Meeting Minutes, 9 Sep 1997",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152"
+      },
+      "src2": {
+       "label": "Herald 73:50, 16 Apr 1998",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7980"
       }
      },
      {
@@ -54122,7 +54327,36 @@
        ]
       }
      ],
-     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026 and Herald, 5 Apr 2026, the latter quoting her 2 Apr 2026 weekly report to the 25th Senate) in Herald reporting; the official 25th Senate minutes of 14 Apr 2026 (in 2025-26's documents) twice give 'Sophie Stirling'. That is now three Herald mentions and the official minutes agreeing on 'Stirling' against one 'Sterling', which favors that spelling but does not fully settle it, since the 28 Apr Herald report post-dates all of them and could reflect a correction rather than an error. No committee chairs had been reported as of this update - the 26th Senate's first fall meeting had not yet occurred."
+     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026 and Herald, 5 Apr 2026, the latter quoting her 2 Apr 2026 weekly report to the 25th Senate) in Herald reporting; the official 25th Senate minutes of 14 Apr 2026 (in 2025-26's documents) twice give 'Sophie Stirling'. That is now three Herald mentions and the official minutes agreeing on 'Stirling' against one 'Sterling', which favors that spelling but does not fully settle it, since the 28 Apr Herald report post-dates all of them and could reflect a correction rather than an error. No committee chairs had been reported as of this update - the 26th Senate's first fall meeting had not yet occurred.",
+     "members": [
+      {
+       "name": "Jaden Marshall",
+       "seat": "Senator at Large",
+       "note": "Sworn in as a new at-large senator at the 26th Senate's first meeting, 28 April 2026, then ran for Speaker of the Senate the same night.",
+       "src": {
+        "label": "Herald, 28 Apr 2026 - SGA holds first meeting of 26th Senate, swears in new senators, senate speaker",
+        "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"
+       }
+      },
+      {
+       "name": "Molly Ricky",
+       "seat": "Senator",
+       "note": "A sitting senator who ran for Speaker of the Senate at the 26th Senate's first meeting, 28 April 2026.",
+       "src": {
+        "label": "Herald, 28 Apr 2026 - SGA holds first meeting of 26th Senate, swears in new senators, senate speaker",
+        "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"
+       }
+      },
+      {
+       "name": "Amelia Tucker",
+       "seat": "Senator",
+       "note": "A sitting senator who ran for Speaker of the Senate at the 26th Senate's first meeting, 28 April 2026; tied 9-9 with Veronica Butler in the first vote before losing the re-vote.",
+       "src": {
+        "label": "Herald, 28 Apr 2026 - SGA holds first meeting of 26th Senate, swears in new senators, senate speaker",
+        "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"
+       }
+      }
+     ]
     }
    },
    "status": "researched"
