@@ -1,0 +1,19 @@
+{
+ "batch": "1976-79 Congress members",
+ "date": "2026-08-24",
+ "verifier_notes": "digitalcommons.wku.edu blocked all PDF content (403 on viewcontent.cgi, retried once after 90s, 403 again); landing pages loaded but expose only a generic topic list, never names or votes. Minutes-sourced claims were judged by internal consistency against the pre-existing note field and cross-references elsewhere in years.json. Talisman 1976/1977/1978 full texts were fetched freely from archive.org and checked directly.",
+ "verdicts": [
+  {"name": "George Carlson", "verdict": "trim", "reasoning": "Profile had softened the note's definite claim ('nominated, though not elected') into 'do not record whether he won the seat' - a downgrade, not a faithful hedge, since the two convention-delegate seats that meeting elected are independently recorded elsewhere as going to Cortus and Kinnie. Restored the definite claim with the cross-reference made explicit."},
+  {"name": "Bill Cortus", "verdict": "accept", "reasoning": "Matches the note exactly; Congress-membership hedge preserved; correctly avoids re-litigating the already-sourced 532-510 election."},
+  {"name": "John Evans", "verdict": "accept", "reasoning": "1976 Talisman attendance roll and 1977 Talisman student-affairs-committee election both confirmed directly against archive.org full text. Identity hedge with John David Evans correctly neutral."},
+  {"name": "Kevin Kinnie", "verdict": "accept", "reasoning": "1978 Talisman index and photo caption confirmed. 1980 OVC football title under coach Feix corroborated by web search. Three-year identity merge (Kinnie/Kinne) rests on a rare-surname match across continuous Congress years, vetted as an alias in data/name-aliases.json before the profile was written."},
+  {"name": "Tim Leigh", "verdict": "accept", "reasoning": "1976 attendance roll and 1977 Talisman academic-affairs-committee credit both confirmed directly against archive.org full text."},
+  {"name": "Lynn Moss", "verdict": "accept", "reasoning": "Single-sentence profile matches the note exactly."},
+  {"name": "Brad Ford", "verdict": "accept", "reasoning": "1978 Talisman caption directly confirmed word for word; correctly hedges that the committee itself is unnamed."},
+  {"name": "Melody Berryman", "verdict": "accept", "reasoning": "Matches note exactly and corroborated by the year's own document extract; Steven Thornton confirmed as 1978-79 president."},
+  {"name": "Shaun Bryant", "verdict": "accept", "reasoning": "Matches note exactly; Congress-membership hedge preserved."},
+  {"name": "Dave Roberts", "verdict": "accept", "reasoning": "Matches note verbatim; hedge preserved."},
+  {"name": "David Vance", "verdict": "accept", "reasoning": "Correctly avoids the 'advance notice is not a report' trap - states only that the newsletter was announced as forthcoming, never that it appeared."},
+  {"name": "Eddie Yates", "verdict": "accept", "reasoning": "Matches note verbatim across all three meeting dates; hedge preserved."}
+ ]
+}

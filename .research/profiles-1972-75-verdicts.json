@@ -1,0 +1,341 @@
+{
+ "verdicts": [
+  {
+   "year": "1972-73",
+   "person": "Michael Inman",
+   "paragraph_index": 0,
+   "verdict": "trim",
+   "reason": "Two problems. (1) 'of Harrodsburg' is not in the cited source (1973 Talisman p. 416); it comes from the 1974 Talisman Pershing Rifles caption ('a junior ROTC student from Harrodsburg') and the 1975 senior directory ('MICHAEL THOMS INMAN, Government / Harrodsburg'), neither of which is cited here. (2) The second sentence tracks the yearbook's own wording almost clause for clause ('Sophomores had the second largest class on the hill; however, they were not active in many class projects. The class had as their one major project sponsoring Elaine Leftwich as Homecoming queen candidate.'). That is close copying of a source the site links to, which the quote rule forbids. The underlying facts are all confirmed at talisman1973 p. 416.",
+   "rewrite": "Michael Inman entered the Associated Students Congress by the class-officer route. The 1973 Talisman records the sophomore class electing Louis Berman president and Inman vice-president the previous spring, and the same volume's account of the revised constitution places class presidents and vice-presidents on the roll of Congress with a vote. The yearbook's account of the class year is thin: a large class that took part in few class projects and put its effort into a single Homecoming queen candidate, Elaine Leftwich. Later volumes give his home as Harrodsburg."
+  },
+  {
+   "year": "1972-73",
+   "person": "Terry Miller",
+   "paragraph_index": 0,
+   "verdict": "trim",
+   "reason": "'reached the Associated Students Congress through two consecutive class offices' asserts that his 1971-72 junior vice-presidency was itself a Congress seat. The 1972 Talisman (p. 352) does not say that; it says only that the class structure was 'delegated no seperate power, leaving the officers to aim their attentions at A.S. congress', and it lists five class officers, not two. The seat-carrying rule the archive relies on elsewhere is the REVISED constitution described in the 1973 volume, which is the following year. Everything else in the paragraph is confirmed: Steve Wilson, Terry Miller (vice president), Mary Bess Manby, Jack Glasser and Ed Jordon are the five 1971-72 junior officers, and years.json has Edward Jordan, Jr. as Associated Students president in 1972-73.",
+   "rewrite": "Terry Miller held class office in two consecutive years. The 1972 Talisman lists him as junior class vice-president for 1971-72, one of five class officers headed by president Ed Jordan, who became Associated Students president the following year; that volume says the class structure carried no separate power of its own and left its officers to direct their attention at the A.S. Congress. For 1972-73 Miller was elected senior class president, with Joe Cheak as vice-president."
+  },
+  {
+   "year": "1972-73",
+   "person": "Terry Miller",
+   "paragraph_index": 1,
+   "verdict": "accept",
+   "reason": "Confirmed word for word against talisman1973 Seniors: the number of class officers was reduced to two that year; Miller and Cheak 'felt their responsibility stressed representation of the class in A.S. congress and class activity was nil the remainder of the year'; the only class project was sponsoring Lee Davis as Homecoming queen candidate; and a caption says the two 'represented the senior class in the Associated Student congress'. Paraphrase is close but stays on the right side of the line.",
+   "rewrite": null
+  },
+  {
+   "year": "1972-73",
+   "person": "Fred Price",
+   "paragraph_index": 0,
+   "verdict": "accept",
+   "reason": "Every clause confirmed at talisman1973 p. 397: Price president and Emberton vice-president; 'Under the revised A.S. constitution, only the two top officers were retained. Previously the class president and vice-president were allowed to vote in A.S. congress'; Debby Clark as queen candidate and the float judged winner of the Red Towel Award.",
+   "rewrite": null
+  },
+  {
+   "year": "1972-73",
+   "person": "Fred Price",
+   "paragraph_index": 1,
+   "verdict": "accept",
+   "reason": "Confirmed. The 1973 Talisman ASG section: 'Campus elections are handled by the Rules and Elections Committee, headed by R.G. Meade and Fred Price. They set forth rules and campaign guidelines and hear all election disputes,' and adds that special attention came to the committee in the fall over the election and re-election of Homecoming Queen. The Herald landing page for 4 Nov 1972 (Vol. 52, No. 20, dc_4902) carries both 'Voting Discrepancy Causes Special Election' and 'Fred Price Says Committee Will Investigate Election'. The paragraph is careful to say the item is headlined rather than to report what the article said, which is the correct discipline for a headline-only source. Only one Fred Price is indexed in the 1973 volume (Price, Fred Franklin, 260, 397, 410), so the committee co-head and the class president are the same man.",
+   "rewrite": null
+  },
+  {
+   "year": "1972-73",
+   "person": "Fred Price",
+   "paragraph_index": 2,
+   "verdict": "trim",
+   "reason": "The election half is sound: the 6 April 1973 landing page (Vol. 52, No. 48, dc_5012) carries 'Administrative Vice President Hopefuls Outline Campaign Platforms - Glenn Jackson, Fred Price', which names both men and the office, and years.json has Glenn Jackson as administrative vice president for 1973-74. The fraternity sentence is true but uncited: neither src2 (Herald 52:20) nor src3 (Herald 52:48) covers it. It rests on the 1973 Talisman Pi Kappa Phi colony photograph (p. 260) and the 1974 Talisman page headed 'Pi Kappa Phi chapter receives its national charter', which names Price among the members. Cite them or drop the sentence.",
+   "rewrite": "Price stood for Associated Student Government administrative vice president in the spring of 1973. The Herald of 6 April 1973 printed the platforms of the two hopefuls for the office, Glenn Jackson and Fred Price. Jackson took the post for 1973-74. The 1973 Talisman pictures Price in the Pi Kappa Phi colony, and the 1974 volume records the chapter receiving its national charter with Price still a member."
+  },
+  {
+   "year": "1972-73",
+   "person": "Gail Emberton",
+   "paragraph_index": 0,
+   "verdict": "accept",
+   "reason": "All four claims confirmed at talisman1973 p. 397, including the dinner ('Plans for the year included a wine and steak dinner for active class members'). Nothing over-claimed.",
+   "rewrite": null
+  },
+  {
+   "year": "1972-73",
+   "person": "Gail Emberton",
+   "paragraph_index": 1,
+   "verdict": "accept",
+   "reason": "Confirmed at the 1974 Talisman Who's Who, entry 1, on the page marked 88: 'Gail was personnel chairman of Chi Omega, 1972-1973 junior class vice-president, first runner-up in the ‘Miss Three Alarm” contest, and President's Scholar.' Independently corroborated by the Chi Omega chapter page ('Ginger Fry was named Miss Three Alarm and Gail Emberton was selected first runner-up'). This is the trap the drafter was warned about with Ronda Talley and it has been handled correctly here — the Three Alarm placing really is hers.",
+   "rewrite": null
+  },
+  {
+   "year": "1972-73",
+   "person": "Gail Emberton",
+   "paragraph_index": 2,
+   "verdict": "trim",
+   "reason": "The byline run is real — herald-index-full.json carries eleven Gail Emberton bylines between 26 Jan 1973 and 5 Mar 1974, including 'Dorm Occupancy is on the Rise', 'Housing Committee Awaits Surveys', 'Housing Committee Completes Survey' and 'Housing Committee Proposes Policy Revisions' — and the disclaimer is honest. But the citation is wrong: dlsc_ua_records/5013 is Vol. 52, No. 55 of 1 May 1973, not 52:56. And the paragraph is three sentences of hedged non-attribution in a three-paragraph profile, which gives an unproved identity more weight than the archive's own facts about her. Cut it to one sentence and fix the volume number.",
+   "rewrite": "A Gail Emberton bylined Herald housing and academic-affairs reporting through the same year, from dormitory occupancy in January 1973 to the Housing Committee's proposed policy revisions on 1 May. The archive has not confirmed from any source that the reporter and the class vice-president are the same person, and records the byline without asserting it."
+  },
+  {
+   "year": "1972-73",
+   "person": "Ronda Talley",
+   "paragraph_index": 0,
+   "verdict": "accept",
+   "reason": "Confirmed twice over. The 1973 Talisman Kappa Delta page: 'Who's Who in American Colleges and Universities tapped two KD's to appear in the 1972 edition: Ronda Talley and Debbie Jones Benns. Ronda was also voted as a representative to the Associated Student Government Congress.' Her Who's Who entry on the page marked 230 ends 'She is the student representative from the College of Education to the Associated Students.'",
+   "rewrite": null
+  },
+  {
+   "year": "1972-73",
+   "person": "Ronda Talley",
+   "paragraph_index": 1,
+   "verdict": "trim",
+   "reason": "Kappa Delta, SNEA, the Crescent Club and the 1972 Outstanding Crescent Girl title are all confirmed, and 'Rhonda Talley' does appear in the 1973 Talisman staff list of student contributors. The last sentence is the problem: the source reads 'They need a skilled teacher to guide them and let them learn by personal discovery,' and the draft reproduces that clause almost intact without marking it as a quotation. It is also the least relevant fact in a profile about a Congress seat. Drop it.",
+   "rewrite": "The same yearbook recorded her other campus work: membership of Kappa Delta, the Student National Education Association and Lambda Chi Alpha's Crescent Club, which named her its 1972 Outstanding Crescent Girl. She was also one of the student contributors listed on the 1973 Talisman staff page."
+  },
+  {
+   "year": "1972-73",
+   "person": "Ronda Talley",
+   "paragraph_index": 2,
+   "verdict": "accept",
+   "reason": "Verified in all five places. Ronda: Kappa Delta page, Who's Who entry, and name index ('Talley, Ronda Carol, 230, 284, 289, 390'). Rhonda: Crescent Club caption ('20-Rhonda Talley') and Talisman staff contributor list. Flagging rather than settling is exactly what the hard rules require.",
+   "rewrite": null
+  },
+  {
+   "year": "1972-73",
+   "person": "Carl Stolzfus",
+   "paragraph_index": 0,
+   "verdict": "trim",
+   "reason": "The ASG facts are confirmed verbatim at the 1973 Talisman Sigma Phi Epsilon page (p. 309), including the National Leadership Methods Convention with Mike Brandenberg. But 'an elementary education major from Cochranville, Pennsylvania' is not in the 1973 volume the sentence attributes it to; it comes from the 1974 Talisman College of Education section ('Carl Stoltzfus from Cochranville, Pa.') and the 1974 Who's Who entry ('The elementary education major'). Attribute it or drop it.",
+   "rewrite": "The 1973 Talisman recorded Carl Stoltzfus as a member of the Associated Students Government, the student member of the Academic Council from the College of Education, and a member of both the College of Education Curriculum Committee and the University Academic Complaint Committee. He and fellow Sigma Phi Epsilon member Mike Brandenberg represented their fraternity at the National Leadership Methods Convention. The 1974 volume gives his home as Cochranville, Pennsylvania, and his major as elementary education."
+  },
+  {
+   "year": "1972-73",
+   "person": "Carl Stolzfus",
+   "paragraph_index": 1,
+   "verdict": "trim",
+   "reason": "Over-claimed. The only evidence is a letter headline, 'Stolzfus, Carl. Thanks Supporters', in the index of the 13 April 1973 issue (Vol. 52, No. 50, dc_5010). A thank-you letter is not a statement that he was a candidate, and the article body is unavailable this session. Against it: the 6 April primary issue names the field for every executive office — Fiorella, Yater and LaCivita for president, Morrison for activities vice president, Jackson and Price for administrative vice president — and Stolzfus is not among them. What the archive can actually say is that a letter under his name ran in the issue carrying the returns; the natural reading, that he had been a candidate for something, may point at the senior class presidency he held the following year, but the archive cannot show it. State the headline, not the conclusion.",
+   "rewrite": "The Herald of 13 April 1973, the issue that carried the Associated Student Government election returns and a report on the installation of officers at the Congress party, printed a letter under his name headlined as thanking his supporters. The archive has not read the letter and cannot say whether he had stood, or for what office."
+  },
+  {
+   "year": "1972-73",
+   "person": "Carl Stolzfus",
+   "paragraph_index": 2,
+   "verdict": "accept",
+   "reason": "Confirmed at the 1974 Talisman: 'Heading the senior class were President Carl Stoltzfus and Vice-president Hamp Moore. They supervised the various class activities which included class participation in Homecoming 1973' and the 'Gone with the Wind' float; and the Sigma Phi Epsilon page (p. 294) lists him as senior class president, SNEA public relations chairman, chairman of the Rules and Election Committee of the ASG, Talisman Greek editor and a member of Who's Who. Only nit: the yearbook says he held the office, not that he was 'elected' to it.",
+   "rewrite": null
+  },
+  {
+   "year": "1972-73",
+   "person": "Carl Stolzfus",
+   "paragraph_index": 3,
+   "verdict": "trim",
+   "reason": "The facts are right but 'the source that gives Stolzfus' is left vague, and it matters. Every Talisman appearance across two volumes spells Stoltzfus — the 1973 Sigma Phi Epsilon page, the 1973 name index ('Stoltzfus, Carl Leroy, 309, 413'), the 1973 staff contributor list, the 1974 Who's Who, the 1974 senior class pages, the 1974 index. The single 'Stolzfus' is the Herald's index line for his own 13 April 1973 letter. Say so, so a reader can weigh it.",
+   "rewrite": "The archive holds his surname in two spellings. Every appearance in the 1973 and 1974 Talisman — the fraternity pages, the Who's Who entry, the senior class pages and both name indexes — gives Stoltzfus, as does the Herald's index of his own 4 December 1973 letter. The single Stolzfus is the Herald's index of his letter of 13 April 1973, which is the spelling the 1972-73 Congress record was built on. The difference is flagged, not resolved."
+  },
+  {
+   "year": "1972-73",
+   "person": "Melody Edwards",
+   "paragraph_index": 0,
+   "verdict": "trim",
+   "reason": "The substance is confirmed at the 1974 Talisman Who's Who, entry 25: 'A member of the agriculture club and representative in the Associated Student Government and Academic Council, Melody feels getting involved is a great outlet as long as it is moderate.' But 'Asked about involvement' invents an interview frame the yearbook does not describe — the Who's Who entries are written up, not transcribed Q-and-A. See also the year-placement problem flagged separately: nothing here supports a 1972-73 term.",
+   "rewrite": "Melody Edwards, an agriculture major, was recorded by the 1974 Talisman as a representative in the Associated Student Government and on the Academic Council, and was named to Who's Who. The same entry has her holding that involvement was worth having so long as it stayed moderate."
+  },
+  {
+   "year": "1972-73",
+   "person": "Melody Edwards",
+   "paragraph_index": 1,
+   "verdict": "trim",
+   "reason": "Agriculture Club and the Great Pumpkin are confirmed at the 1973 Talisman ('a Great Pumpkin—conjured up by Melody Edwards'), and the Ag Ed Club roster in the 1974 volume names her. The closing sentence reproduces her quoted words almost intact — source: 'It is a field that is changing rapidly and needs people of both sexes who are willing to keep up with that change.' Loosen it or mark a short quotation.",
+   "rewrite": "Her other recorded campus work was in her field: she belonged to the Agriculture Club, whose Halloween carnival in 1972 the yearbook credited her with supplying its Great Pumpkin, and to the Agricultural Education Club. Her Who's Who entry argued that agriculture was changing fast and had room for men and women alike."
+  },
+  {
+   "year": "1973-74",
+   "person": "Michael Inman",
+   "paragraph_index": 0,
+   "verdict": "trim",
+   "reason": "The class facts are exact (1974 Talisman p. 386: 'Fiddler on the Roof' float, spring dance, 'Coordinating these activities were President Michael Inman and Vice-president Deborah Locke'). The ROTC caption is slightly overstated: it reads 'Helping to relieve traffic congestion and be of help to visiting families is Michael Inman, a junior ROTC student from Harrodsburg' — the yearbook does not say he was directing traffic.",
+   "rewrite": "Michael Inman moved up from sophomore class vice-president to junior class president for 1973-74, with Deborah Locke as vice-president. The 1974 Talisman recorded the pair coordinating the class's activities, which included a Fiddler on the Roof float in the Homecoming parade and a spring dance. He was also a junior ROTC student, photographed by the yearbook helping to ease traffic and assist visiting families as students converged on campus at the start of the year."
+  },
+  {
+   "year": "1973-74",
+   "person": "Michael Inman",
+   "paragraph_index": 1,
+   "verdict": "trim",
+   "reason": "This is the weakest paragraph in the draft and most of it has to go. (1) 'he was a public participant in the contest for the student seat on the Board of Regents' rests entirely on a letter headline, 'Inman, Michael. Inman Announces'. The headline does not say what he announced. He wrote to the Herald routinely — herald-index-full also has 'Inman, Michael. Favors Marlow Cook' on 1 Nov 1974 — so a letter under his name in an election issue proves a letter, not a candidacy. The arithmetic that would make it tidy (five filed; Moore, Miles, McKinney and Stevens are named in coverage, so Inman is the fifth) is the archive guessing, and the fifth filer is simply unknown. (2) 'the same issue carried an endorsement letter for another candidate, Hamp Moore' smuggles the conclusion in through the word 'another'. (3) 'The 25 April vote produced no winner outright' invents both a date and a result: no source here says when the vote was held or that it was inconclusive. (4) 'run-off' appears in no headline; the 26 April headline is 'Greg McKinney, Sid Stevens Vie for Regent Post', which could as easily be a preview as a run-off report. (5) 'which McKinney won' is supportable, but from years.json and the WKU Timeline record of his swearing-in on 19 June 1974, not from this issue.",
+   "rewrite": "In April 1974 the Herald ran the contest for the student seat on the Board of Regents over four issues. The issue of 19 April, whose lead reported that five students had filed for the seat, printed a letter under his name headlined \"Inman Announces\". The archive has not been able to read the letter and cannot say what he announced or whether he was one of the five."
+  },
+  {
+   "year": "1973-74",
+   "person": "Deborah Locke",
+   "paragraph_index": 0,
+   "verdict": "trim",
+   "reason": "The class-office half is confirmed at the 1974 Talisman p. 386 and on the Kappa Delta page ('Debbie Locke, as vice-president of the junior class'). The married-name sentence should go. It rests on an unverifiable inference from a single index line — the 1975 index reads 'Brooks, Deborah J. Locke 347' and the senior directory 'DEBORAH LOCKE BROOKS, Elem. Ed., Louisville' — with nothing linking that person to Deborah Jane Locke beyond a shared forename and initial, in a volume whose index carries several other Lockes (Debbie Ann Webb, Billie June, Phillip Marshall). The entry also cites no source at all for the claim. And unlike Christy Vogt or Nicki Seay, this is a one-term class officer with no later service, so a married name serves no counting purpose here — it is only a private fact about a private person.",
+   "rewrite": "Deborah Locke was elected junior class vice-president for 1973-74, serving with president Michael Inman; the 1974 Talisman recorded the two coordinating the class's Homecoming float and a planned spring dance, and named her among the Kappa Delta members who had distinguished themselves on campus."
+  },
+  {
+   "year": "1973-74",
+   "person": "Hamp Moore",
+   "paragraph_index": 0,
+   "verdict": "accept",
+   "reason": "All confirmed in the 1974 Talisman. Senior class: 'Heading the senior class were President Carl Stoltzfus and Vice-president Hamp Moore. They supervised the various class activities...' plus the 'Gone with the Wind' float; the honours passage names 'Hamp Moore, elected vice-president of the Southeast Regional Inter-Fraternity Conference'; he is on the Sigma Alpha Epsilon roster; and the scroll caption reads 'Coach Jim Feix is shown signing the scroll ... Looking on are Danny Burchfield, President Downing and Hamp Moore.' The draft correctly says he appears at the signing rather than that he signed.",
+   "rewrite": null
+  },
+  {
+   "year": "1973-74",
+   "person": "Hamp Moore",
+   "paragraph_index": 1,
+   "verdict": "trim",
+   "reason": "Better founded than the Inman version but still over-stated. In favour: two letters headlined 'Endorses Hamp Moore' (Merrick, 19 April; Getchell, 23 April) run in issues whose news stories are 'Five File for Student Seat on Board of Regents' and 'Candidates for Student Regent Seat List Qualifications', alongside parallel endorsements of Hank Miles and, on 26 April, of Greg McKinney — all four of whom the coverage otherwise ties to the regent race. That is strong circumstantial evidence, but it is still inference from headlines and should be stated as such. Two errors of fact besides: 'both issues covering the race' is wrong — there are at least four (16, 19, 23 and 26 April), and the 16 April issue carries 'Regent Post Election Set Next Week'; and 'He did not reach the run-off' invents a run-off no headline mentions.",
+   "rewrite": "He appears to have been a candidate in the April 1974 election for the student seat on the Board of Regents. The Herald printed letters endorsing him in two of the four issues that covered the race — from Bruce Merrick on 19 April, the issue whose lead reported that five students had filed, and from Gail Getchell on 23 April, the issue in which the candidates listed their qualifications — alongside parallel endorsements of Hank Miles. No source the archive has read names the field outright, and the seat went to Greg McKinney, whom the Herald of 26 April reported vying for the post with Sid Stevens."
+  },
+  {
+   "year": "1973-74",
+   "person": "Debbie Filburn",
+   "paragraph_index": 0,
+   "verdict": "accept",
+   "reason": "The 1974 Talisman Kappa Delta page states the seat directly: 'Debbie Filburn, serving as representative-at-large on the ASG Congress'. 'Debbie Filburn' is also in the 1973 Talisman staff contributor list. Only two Filburns are indexed in the 1973 volume (Debra Ann and Donna Marie), so the contributor is almost certainly her; the staff page is not indexed under either name, but the same is true of every contributor listed there, so the omission is a property of the index, not evidence against.",
+   "rewrite": null
+  },
+  {
+   "year": "1973-74",
+   "person": "Debbie Filburn",
+   "paragraph_index": 1,
+   "verdict": "accept",
+   "reason": "Confirmed at the 1975 Talisman Kappa Delta page (p. 252, matching both index entries): 'Two members of the sorority, sisters Donna and Debbie Filburn, were in the Associated Student Government. Donna was also Panhellenic President.' The separate index entries (Filburn, Debra Ann 252,280; Filburn, Donna Marie 108,252,290) confirm two people, and years.json already holds Donna under 1974-75. This is the one place in the draft where the split-versus-merge question is handled exactly right.",
+   "rewrite": null
+  },
+  {
+   "year": "1973-74",
+   "person": "John Donofrio, Jr.",
+   "paragraph_index": 0,
+   "verdict": "accept",
+   "reason": "Confirmed at the 1974 Talisman p. 410, headed 'Donofrio and Vogt lead freshman class' — the Camelot float, Marcia Heckman as queen candidate, the spring concert-dance, and the caption placing the two in the Helm library. The TopSCHOLAR landing page for that volume independently lists 'John Donofrio & Christy Vogt Lead Freshman Class – Class of 1977'. The quoted heading is six words, well inside the limit.",
+   "rewrite": null
+  },
+  {
+   "year": "1973-74",
+   "person": "John Donofrio, Jr.",
+   "paragraph_index": 1,
+   "verdict": "accept",
+   "reason": "Checked against years.json, which has Christy Vogt as administrative vice president in 1975-76 and president in 1976-77, both name_verified. The forward reference is correctly dated — spring elections seat the winner the following academic year — and correctly attaches to the person, not to the surname alone.",
+   "rewrite": null
+  },
+  {
+   "year": "1973-74",
+   "person": "Jeff Wampler",
+   "paragraph_index": 0,
+   "verdict": "trim",
+   "reason": "The class material is confirmed at the 1974 Talisman Sophomores: 'Active class members included seven sophomores who are members of the ASG congress. Serving as president of the sophomore class was Steve Henry with Jeff Wampler as vice-president', the caption of the two checking notes before an ASG meeting, and the executive committee's tentative free spring dance. But 'a pre-med major from Jeffersontown' is taken from the 1976 Talisman, two volumes later and not cited anywhere in this entry.",
+   "rewrite": "Jeff Wampler was elected sophomore class vice-president for 1973-74, serving under president Steve Henry. The 1974 Talisman recorded that seven sophomores sat in the Associated Student Government Congress that year, and photographed the two class officers checking notes before an Associated Student Government meeting; the class's executive committee had tentatively planned a free dance for the spring. The 1976 volume gives him as a pre-med major from Jeffersontown."
+  },
+  {
+   "year": "1973-74",
+   "person": "Jeff Wampler",
+   "paragraph_index": 1,
+   "verdict": "reject",
+   "reason": "Wrong year and over-read. The letter is in the issue of 18 October 1974, which falls in 1974-75, not 1973-74 — by then Wampler was junior class president, and the archive's own record of that issue (dlsc_ua_records/5034) is labelled Vol. 50, No. 15. Worse, the only evidence is the headline 'Wampler, Jeff. Appreciates Float Workers'. It does not say the float was Sigma Alpha Epsilon's, and the same issue carries 'Homecoming Floats Burned', 'Delta Tau Delta. An Apology' and a thank-you from the Homecoming queen, so several floats were in play that week. His SAE membership is separately confirmed by the 1974 roster and can stay in paragraph 0; the letter claim should be deleted, and may be re-filed under 1974-75 only as a letter thanking float workers, with no fraternity attached.",
+   "rewrite": null
+  },
+  {
+   "year": "1974-75",
+   "person": "Mike Inman",
+   "paragraph_index": 0,
+   "verdict": "accept",
+   "reason": "Confirmed at the 1975 Talisman Seniors: 'Only two persons attended the class meeting to organize these activities—class President Mike Inman and Vice-president Pam Stewart'; 'Inman and Stewart tried to give leadership to a class of 1,865'; and the caption on their using class funds to rent the Harrodsburg Heritage mobile history unit for Homecoming instead of building a float. The three consecutive Congress years are each independently sourced — 1972-73 by the revised constitution, 1973-74 by the 1974 volume's own index heading 'Juniors Hold Major Offices in Associated Student Government', 1974-75 by the class officers' stated function.",
+   "rewrite": null
+  },
+  {
+   "year": "1974-75",
+   "person": "Mike Inman",
+   "paragraph_index": 1,
+   "verdict": "trim",
+   "reason": "The facts are right, the handling of the words is not. Two of the yearbook's direct quotations are reproduced almost intact in indirect speech from a single source: 'I ran for class officer because it is the easiest way of getting a seat on the student government' and 'At the present, I suppose the class officers carry a little more prestige (in the government) than representatives-at-large, but there should be no distinction among members.' The rule allows one quotation under fifteen words per source; this is two near-quotations dressed as paraphrase. Also 'replace them with congress representatives elected from each class' adds 'elected' — the source says only 'create congress representatives from each class'.",
+   "rewrite": "The yearbook printed his own account of why he sought class office: he said it was the easiest route to a seat in the student government. He held the office itself to be of little consequence, since seniors had little class unity by then, and proposed a bill to abolish class officers and create congress representatives for each class instead. Student government president Jeff Consolo opposed the bill. Inman allowed that class officers carried slightly more standing than representatives-at-large, but argued there should be no distinction among members."
+  },
+  {
+   "year": "1974-75",
+   "person": "Mike Inman",
+   "paragraph_index": 2,
+   "verdict": "trim",
+   "reason": "Every fact checks out, in two different places in the 1975 volume. The Scabbard and Blade passage: 'Outstanding members of the group are Michael Inman and Ronnie Compton, elected to Who's Who. Inman was also second runner-up in competition for the national Mayer-Raebum Scholarship Award' (the OCR reads Raebum; the draft silently corrects it to Raeburn, which is probably right but is a silent correction of a source under a rule that says flag spelling doubts). He is on the Scabbard and Blade roster. The Who's Who section gives the accomplishment list and the ODK presidency. The problem is the last clause, which renders the quotation 'The most important part of my college education did not come from the classroom. It came from the experience I gained through my participation in campus activities' almost word for word. Note also that the source's list includes 'winner of various military science awards', which the draft drops.",
+   "rewrite": "He was elected to Who's Who and was president of the Omicron Delta Kappa National Leadership Society. He was a member of the Scabbard and Blade military honour corps, and the same page records him as second runner-up for a national scholarship award the yearbook prints as Mayer-Raebum. Asked to name his chief accomplishment from a list that included the presidencies of his junior and senior classes, the vice-presidency of his sophomore class and a series of military science awards, he chose his involvement in ROTC, and said his campus activities had taught him more than his classes."
+  },
+  {
+   "year": "1974-75",
+   "person": "Jeff Wampler",
+   "paragraph_index": 0,
+   "verdict": "accept",
+   "reason": "Confirmed at the 1975 Talisman Juniors, p. 384: 'Representing these slightly harried juniors were class officers, President Jeff Wampler and Vice-president Karen McNally. Their main function as officers was to attend meetings of the Associated Student Government (ASG).' The move up from the sophomore vice-presidency is confirmed by the 1974 volume.",
+   "rewrite": null
+  },
+  {
+   "year": "1974-75",
+   "person": "Jeff Wampler",
+   "paragraph_index": 1,
+   "verdict": "trim",
+   "reason": "Supported but too close to the page. The source reads: 'Even though they worked hard to get elected and were glad when they won, both Karen and Jeff said there is really no need for class officers. According to Karen, “The students have no interest in class activities. We call class meetings, and no one comes.” Karen said she did not really have a solution for the situation, but added that more representatives-at-large are needed in ASG.' The draft reproduces the whole of McNally's quotation in indirect speech. It also adds 'instead' — the yearbook says she had no solution, and then added the point about representatives-at-large.",
+   "rewrite": "The same account recorded both officers saying there was really no need for class officers, even though they had worked hard to get elected. McNally said students took no interest in class activities and that nobody turned up when meetings were called; she offered no remedy beyond adding more representatives-at-large to the Associated Student Government. The judgement matched that of the senior class president the same year, Mike Inman, who put a bill to abolish class officers altogether."
+  },
+  {
+   "year": "1974-75",
+   "person": "Jeff Wampler",
+   "paragraph_index": 2,
+   "verdict": "trim",
+   "reason": "Three problems. (1) Both facts come from the 1976 Talisman, which covers 1975-76, his senior year, not the 1974-75 term this profile is about — the paragraph should say so rather than let a reader take them for 1974-75. (2) 'Asked by that yearbook what Western needed' invents an interview; the passage is a written-up graduating-senior opinion feature. (3) The wording tracks the source: 'both the students and the administration must learn to bend towards the middle, according to Jeff Wampler' and '“Until this communication is accomplished, I feel the students will remain apathetic toward student elections, concerts and in…”' — which the draft reproduces nearly intact and also silently completes, since the sentence is cut off in the text available here. The Who's Who fact is solid: 'Four fraternity brothers were elected to Who's Who including Jeff Wampler, Danny Burchfield, Steve Henry and Phil Rusher.'",
+   "rewrite": "The 1976 Talisman, covering his senior year, named him one of four Sigma Alpha Epsilon members elected to Who's Who, and printed his view that students and the administration both had to move toward each other before student apathy about elections and concerts would lift."
+  }
+ ],
+ "seat_and_src_problems": [
+  {
+   "year": "1972-73",
+   "person": "Melody Edwards",
+   "problem": "Wrong academic year, and the draft's own citation does not reach the seat. The only source for her Associated Student Government and Academic Council seat is the 1974 Talisman Who's Who entry no. 25, which does not date the term; years.json already files her under 1973-74 with a note saying exactly that ('The entry does not date the term; it is placed here because it appears in the 1974 volume'). src2 here is '1973 Talisman, Organizations (Agriculture Club)', which shows only Agriculture Club membership — the 1973 index has her on one page (345) and it is not an ASG page. Moving her to 1972-73 on this evidence duplicates her in the record and post-dates nothing. Leave her at 1973-74 unless a contemporaneous source puts her in Congress in 1972-73."
+  },
+  {
+   "year": "1972-73",
+   "person": "Gail Emberton",
+   "problem": "src3 label wrong. 'Herald 52:56, 1 May 1973' at dlsc_ua_records/5013 — herald-index-full.json gives that record as 'UA12/2/1 College Heights Herald, Vol. 52, No. 55', 1 May 1973. Should read Herald 52:55. (The landing page is not among the local dc_*.html files, so this could not be checked against bepress_citation_title directly; the archive's own index is the basis.)"
+  },
+  {
+   "year": "1972-73",
+   "person": "Fred Price",
+   "problem": "The Pi Kappa Phi sentence in paragraph 2 is covered by neither src2 (Herald 52:20) nor src3 (Herald 52:48). It needs the 1973 Talisman (Organizations, Pi Kappa Phi colony, p. 260) and the 1974 Talisman (Greeks, 'Pi Kappa Phi chapter receives its national charter', p. 279)."
+  },
+  {
+   "year": "1972-73",
+   "person": "Carl Stolzfus",
+   "problem": "Two things. (a) The draft seat is just 'Congress member', which throws away the sourced detail years.json already holds: 'Academic Council representative, College of Education', taken from the 1973 Sigma Phi Epsilon page that also puts him on the College of Education Curriculum Committee and the University Academic Complaint Committee. Do not downgrade a sourced seat. (b) The archive currently carries this one man under two headwords in adjacent years — 'Carl Stolzfus' in 1972-73 and 'Carl Stoltzfus' in 1973-74 — which is the standing risk of one person being read as two. The 1972-73 spelling rests solely on a Herald index line; every yearbook appearance gives Stoltzfus. Worth a decision at editor level, with the variant printed beside it."
+  },
+  {
+   "year": "1972-73",
+   "person": "Michael Inman",
+   "problem": "'of Harrodsburg' in paragraph 0 is not in src2 (1973 Talisman p. 416). It is confirmed, but at the 1974 Talisman Pershing Rifles caption and the 1975 senior directory ('MICHAEL THOMS INMAN, Government / Harrodsburg'). Add the citation."
+  },
+  {
+   "year": "1973-74",
+   "person": "Deborah Locke",
+   "problem": "The entry carries no src2 or src3 at all, yet paragraph 0 makes a claim ('The 1975 Talisman's name index lists her as Deborah J. Locke Brooks') that is not covered by the year's existing citation (1974 Talisman, Classes (Juniors), p. 386). No source, no claim."
+  },
+  {
+   "year": "1973-74",
+   "person": "Michael Inman",
+   "problem": "src3 'Herald 53:56, 26 Apr 1974' is correct as a label (bepress_citation_title: Vol. 53, No. 56; publication date 4-26-1974), but nothing in that issue's index supports the run-off narrative the paragraph draws from it. If the regent material survives at all, the 16 April issue (Vol. 53, No. 53, dlsc_ua_records/3546, 'Regent Post Election Set Next Week') should be cited too, since the draft's claim about how many issues covered the race depends on it."
+  },
+  {
+   "year": "1973-74",
+   "person": "Jeff Wampler",
+   "problem": "src2 'Herald, 18 Oct 1974' at dlsc_ua_records/5034 is under-labelled and mis-filed. The landing page's bepress_citation_title is 'UA12/2/1 College Heights Herald, Vol. 50, No. 15' with publication date 10-18-1974, so house style is 'Herald 50:15, 18 Oct 1974' — years.json already uses that volume convention for 1974-75 (e.g. 'Herald 50:1, 27 Aug 1974'). And the issue belongs to 1974-75, not to the 1973-74 entry it is attached to."
+  },
+  {
+   "year": "1974-75",
+   "person": "Mike Inman",
+   "problem": "src2 page number unconfirmed and probably wrong: '1975 Talisman, Who's Who, p. 88'. The 1975 name index reads 'Inman, Michael Thomas 95,303,314-315,344,361' — no 88. On the index, 95 is the Who's Who / graduating-senior feature, 314-315 the Scabbard and Blade and Organizations pages, 344 the senior class pages, 361 the senior directory. Paragraph 2 also draws on the Scabbard and Blade page, which is a different page from the Who's Who entry and is not cited."
+  },
+  {
+   "year": "1974-75",
+   "person": "Jeff Wampler",
+   "problem": "src2 page number unconfirmed and probably wrong: '1976 Talisman, Greeks (Sigma Alpha Epsilon), p. 288'. The 1976 name index reads 'Wampler, Jeffrey Lee 88, 322' — 322, not 288, is the fraternity page. src3 ('1976 Talisman, Student opinion, p. 88') does match the index. Note also that both 1976 citations document 1975-76, not the 1974-75 term the entry is filed under; the paragraph should say which year each fact belongs to."
+  }
+ ],
+ "summary": {
+  "accept": 15,
+  "trim": 19,
+  "reject": 1
+ }
+}
