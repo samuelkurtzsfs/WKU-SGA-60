@@ -5378,3 +5378,66 @@ evidence they are one. Wants deciding alongside the Eaton case in §8.5.
 six pre-existing pairs — three introduce-then-resolve sequences and three same-day
 1 September 1991 bills — read and left alone, as same-day legislative business is genuinely
 several events. No pull request left open.
+
+# 24 August 2026 — editor's pass, two pull requests merged
+
+GitHub was reachable this run, so this was a full pass, not review-only. Two research
+pull requests were open, both cut cleanly from current `main` (a real merge base at
+`af11520`, not the 4 August orphans). Both merged; neither needed a cut. Everything below
+was checked against the sources named, not against the routines' own reports.
+
+## What merged
+
+**#183 (`research-backlog`), a documentation note, merged.** `data/` was byte-identical to
+`main`, so the merge published nothing to the site. It closes the last contradiction in
+§8.3 item 7, where one sentence called the legislation-authors CONTACTS question moot while
+the next still named five PDFs and Omar Salinas Chacon as an open gap. I confirmed the claim
+independently against `data/legislation-authors.json` (1,144 rows): every author and sponsor
+those five documents name — Serrano, Dahmer, Cissell, Reed, Feck, Bunning, Romanov, Howard,
+McCoun, Powell, Diaz, Stinnett, Byrant, Cisco — is already recorded, and Chacon appears only
+under CONTACTS, never as an author or sponsor, so his absence is correct. No cut.
+
+**#184 (`research-profiles`), fifteen member profiles across 1972-73, 1973-74 and 1974-75,
+merged with no cut.** Thirteen people who sat in the Associated Students Congress by way of
+class office or a college seat. I spot-checked twelve-plus distinct claims across six primary
+sources and every one held. From the Talisman full texts on archive.org: Mike Inman's
+1974-75 senior class presidency with Pam Stewart, the bill to abolish class officers that
+Jeff Consolo opposed, and the class of 1,865 for which only its two officers turned up, all
+verbatim; Jeff Wampler and Karen McNally's 1974-75 "no need for class officers"; the 1972-73
+Rules and Elections Committee under R.G. Meade and Fred Price; the 1973-74 "Donofrio and Vogt
+lead freshman class" and the Stoltzfus/Moore senior class Gone with the Wind float. From the
+Herald landing-page indexes: "Five File for Student Seat on Board of Regents," "Merrick
+Endorses Hamp Moore" and "Inman Announces" in 53:54 (19 Apr 1974); the Jackson/Price AVP
+platforms in 52:48 (6 Apr 1973); and "Voting Discrepancy Causes Special Election" with "Fred
+Price Says Committee Will Investigate Election" in 52:20 (4 Nov 1972).
+
+The traps checklist came back clean. The advance-notice items — the regent-race endorsement
+letters, the AVP platforms — are held to exactly what they prove, and the profiles say
+outright where the PDF could not be read (viewcontent.cgi was on its WAF challenge for the
+run, so all Herald evidence here is headline-index only). No committee chair was promoted to
+officer. No surname-only match: Karen McNally stays distinct from John and Rosemary McNally,
+the Filburn sisters and the two Wamplers are kept apart. The duplicate-person risks are
+flagged and left unmerged — Mike/Michael Inman, Christy Kay Vogt, Stoltzfus/Stolzfus,
+Ronda/Rhonda Talley. The April 1974 regent race sits in the 1973-74 profiles with the seat
+going to Greg McKinney, who serves 1974-75, consistent with the settled facts. Deborah
+Locke's married name had already been cut in draft.
+
+## What I did not do
+
+The profiles-don't-publish limitation the run flagged is real and confirmed:
+`scripts/build.py:6542` rebuilds each rank-and-file senate member into a fresh dict of
+`name`/`office`/`note`/`src` before the person page is written, dropping `profile` and
+`src2`+. So #184's fifteen profiles — and the roughly eleven member profiles already on
+`main` — are banked in the record but reach no reader until that is fixed. I left it: it is a
+presentation change touching every person page, and on an autonomous run that is the owner's
+call, not a cut I should make unilaterally. Raised for Sam on both the PR and here. The
+`Annalise Finch` / `Annie Finch` one-person-two-pages case from the 23 August pass is still
+open in §8.5; nothing this run touched it.
+
+## Where the archive stands
+
+61 academic years, 2,018 dated and sourced events, 60 presidents. `build.py`, `check_data.py`
+(exit 0) and `check_contrib.py` (exit 0) all clean on `main` at the close. `check_duplicates.py`
+reports the same six pre-existing pairs — three introduce-then-resolve sequences and three
+same-day 1 September 1991 bills — read and left alone as genuine separate legislative business.
+No pull request left open.
