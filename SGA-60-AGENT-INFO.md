@@ -397,6 +397,50 @@ re-run against the unmodified tree as a baseline (61 years, 2018 events, 60
 presidents, clean) before touching anything, and nothing needed redoing
 after. Landed this note only, on `research-backlog`.
 
+**A 24 August run (backlog trigger, 16:30 UTC), same stale prompt yet
+again.** Re-checked before anything else, same result as every run since
+21 August: `.research/branches-unverified.json`, `.research/branches-moments.json`
+and `.research/officers-unchecked.json` are all still `[]`; Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json`; the ~20 weak citations and the pre-2011 legislation
+harvest (1,111 entries, 1,111 PDFs on disk, confirmed by direct count this
+run) are both still done, per items 4 and 9 of §8.3. Reed Morgan and Amanda
+Coates/Lich are unchanged in §7 and `CLAUDE.md`. `git merge-base` confirmed
+`research-backlog` is an ordinary descendant of current `main` (not one of
+the 4 August orphans), so the merge in this run was a normal fast-forward
+merge with no content loss.
+
+Checked the "SGA 60 - backlog" trigger itself directly
+(`trig_01LjXLD8nYoNr8M2RehpHZMu`): still enabled, still firing every four
+hours (`23 0-23/4 * * *`) off a stored prompt unchanged since it was created
+via `http_api` on 17 August. That is now a full week of four-hourly runs
+rediscovering the same "already done" state before any of them can do real
+work — this run included.
+
+Picked up the year-photograph gap (§8.4) again, the one item in the live
+backlog that is not owned by another routine. Both routes this item depends
+on were closed for the whole session, tested directly rather than assumed:
+`viewcontent.cgi` returned HTTP 202 on all eight attempts across every
+open year's lead (7740/2008-09, 9903/2000-01, 10372/2003-04, 4695/2005-06,
+retried once each after a pause), and `web.archive.org` reset at the TLS
+handshake on every attempt (`curl: (35) Recv failure: Connection reset by
+peer`), matching the "blocked again" state in §8.1 rather than the
+21 August "open on https" one. **One new, unexplored lead worth recording:**
+a WKU Archives finding aid, `dlsc_ua_fin_aid/620`, titled "UA1C4/10 Student
+Government Association Photos" (WKU Archives, 2019), abstract "Images of
+Student Government Association members and activities at Western Kentucky
+University" — found via a web search this run, not previously named
+anywhere in this file. Its landing page carries no folder list or date
+range, only the abstract; the actual finding-aid PDF that would show what
+years and events the physical photo collection covers sits behind
+`viewcontent.cgi?article=1619&context=dlsc_ua_fin_aid`, which was also
+closed this run. A future run with an open `viewcontent.cgi` window should
+open this PDF before returning to the same four Herald-article leads —
+it is a dedicated SGA-photos finding aid, not a generic Herald or Talisman
+search, and has never been checked. Nothing in `data/` changed this run.
+`build.py` and `check_data.py` re-run clean against the unmodified tree.
+Landed this note only, on `research-backlog`.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
