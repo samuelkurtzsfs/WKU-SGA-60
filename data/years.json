@@ -42916,10 +42916,14 @@
       {
        "name": "Olga Shoyat",
        "seat": "Senator at Large",
-       "note": "Appointed by Executive Vice President Kate Hart to fill Chase Coffey's seat after his resignation.",
+       "note": "Appointed by Executive Vice President Kate Hart and sworn in as a senator at large, 21 February 2017. The minutes record the appointment but do not say which seat; the Herald's report of the same meeting says she was appointed in place of Chase Coffey, who resigned that night.",
        "src": {
         "label": "SGA Senate minutes, 21 Feb 2017",
         "url": "https://www.wku.edu/sga/legislative/leg_minutes_2016_17/smm_2_21_17.pdf"
+       },
+       "src2": {
+        "label": "Herald, 22 Feb 2017",
+        "url": "https://wkuherald.com/29743/news/sga-offers-new-scholarships-for-marginalized-groups/"
        }
       },
       {
