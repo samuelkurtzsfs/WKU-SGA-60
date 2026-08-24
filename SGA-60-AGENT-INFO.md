@@ -331,8 +331,8 @@ digits. 71 titles matched at least one pattern; every one was read by hand
 against what it actually says, not just the regex hit. All 71 turned out to
 be ordinary, correct titles whose numbers are part of the real subject —
 event years and dollar amounts ("Organizational Aid Funding Fall 2023",
-"Fall Organizational Aid Funding for $4,950"), a Wikipedia-safe committee
-year ("ASG Legislation 1976-1977"), or a bill/resolution number that is
+"Fall Organizational Aid Funding for $4,950"), a collection's own span of
+years ("ASG Legislation 1976-1977"), or a bill/resolution number that is
 part of the document's own printed heading rather than scrape debris
 ("Resolution 81-13 - Electrical Failure"). None needed a PDF re-check,
 since none resembled the glued-together, mid-sentence-cut artifacts the
