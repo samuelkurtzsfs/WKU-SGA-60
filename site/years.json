@@ -12373,7 +12373,7 @@
       {
        "name": "Sandy Hill",
        "seat": "Congress member",
-       "note": "Moved that Congress suspend the rules at the 30 August 1983 meeting. Also named to an ad-hoc research committee with Alvan Kujala, Randy Kimmel and Jon Holland at the 6 September 1983 meeting.",
+       "note": "Moved that Congress suspend the rules at the 30 August 1983 meeting. Also named to an ad-hoc research committee with Allan Kujala, Randy Kimmel and Jon Holland at the 6 September 1983 meeting.",
        "src": {
         "label": "ASG Meeting Minutes, 30 August 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
@@ -12445,7 +12445,7 @@
       {
        "name": "Johnny Ragan",
        "seat": "Representative at Large",
-       "note": "Approved as a Representative at Large at the 6 September 1983 meeting, on a motion made, seconded and passed without recorded discussion. The given name Johnny is clear on the scan; the surname is not. A tight crop reads more like \"Ranan\" than \"Ragan,\" and the reading is not settled - it is recorded here as Ragan pending someone reading the original page. It should not be connected to Margaret Ragan, the 1982-83 president, whose term ended before this Congress sat.",
+       "note": "Approved as a Representative at Large at the 6 September 1983 meeting, on a motion made, seconded and passed without recorded discussion. The given name Johnny is clear on the scan; the surname is not. A 600dpi re-read reads the third and fifth letters as identical shapes with no descender, which favors \"Ranan\" over \"Ragan\" - but the print quality is poor enough that this is not certain either. It should not be connected to Margaret Ragan, the 1982-83 president, whose term ended before this Congress sat.",
        "src": {
         "label": "ASG Meeting Minutes, 6 September 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
@@ -12481,16 +12481,16 @@
       {
        "name": "Randy Kimmel",
        "seat": "Congress member; ad-hoc research committee",
-       "note": "Named to an ad-hoc research committee with Alvan Kujala, Sandy Hill and Jon Holland at the 6 September 1983 meeting, on a motion made, seconded and passed with no discussion.",
+       "note": "Named to an ad-hoc research committee with Allan Kujala, Sandy Hill and Jon Holland at the 6 September 1983 meeting, on a motion made, seconded and passed with no discussion.",
        "src": {
         "label": "ASG Meeting Minutes, 6 September 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
        }
       },
       {
-       "name": "Alvan Kujala",
+       "name": "Allan Kujala",
        "seat": "Congress member; ad-hoc research committee",
-       "note": "Named to an ad-hoc research committee with Randy Kimmel, Sandy Hill and Jon Holland at the 6 September 1983 meeting. The surname is confirmed as Kujala on a clean crop of the scan; the given name is less certain and may not be exactly Alvan. This surname matches \"Allan Kujala,\" already flagged in this year's organization.note as an unresolved April 1983 candidate for one of ASG's top offices - the surnames now match exactly, though the given names differ enough (Alvan vs. Allan) that the two should not be merged as the same person without a source that says so.",
+       "note": "Named to an ad-hoc research committee with Randy Kimmel, Sandy Hill and Jon Holland at the 6 September 1983 meeting. A 600dpi re-read of the scan resolves both names clearly: Allan Kujala, matching in full the \"Allan Kujala\" already flagged in this year's organization.note as an unresolved April 1983 candidate for one of ASG's top offices. A full name match in the same academic year makes it very likely the same person, though no source states this directly, so the two records are not formally merged.",
        "src": {
         "label": "ASG Meeting Minutes, 6 September 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
@@ -12594,6 +12594,30 @@
      "src": {
       "label": "ASG Meeting Minutes, 4 October 1983",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/476"
+     }
+    },
+    {
+     "file": "1983-84-asg-minutes-1983-09-06.pdf",
+     "title": "ASG meeting minutes, 6 September 1983",
+     "summary": "The second fall meeting: officer and committee reports, then new business appointing several members to Congress seats and committees, including an ad-hoc research committee.",
+     "extract": "Johnny Ragan and Connie Hoffman were approved as Representatives at Large.",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 6 September 1983",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+     }
+    },
+    {
+     "file": "1983-84-asg-minutes-1984-02-28.pdf",
+     "title": "ASG meeting minutes, 28 February 1984",
+     "summary": "A winter meeting: roll call of unexcused absences, officer reports including a defeated grading-system proposal, committee reports on 55 candidates filing for that spring's ASG election, and a committee appointment.",
+     "extract": "Unexcused absences included: Gil Cowles, Richard Helms, Kathy Holly, James Moorman, Paul Wellander...",
+     "sga_pages": "1-2",
+     "page": 1,
+     "src": {
+      "label": "ASG Meeting Minutes, 28 February 1984",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
      }
     }
    ]
