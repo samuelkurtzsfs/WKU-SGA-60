@@ -5441,3 +5441,90 @@ open in §8.5; nothing this run touched it.
 reports the same six pre-existing pairs — three introduce-then-resolve sequences and three
 same-day 1 September 1991 bills — read and left alone as genuine separate legislative business.
 No pull request left open.
+
+# 24 August 2026 — editor's pass, three pull requests merged
+
+Three research pull requests were open at the start of this pass and all three are now on
+`main`. The three branches that had been open since 4 August — #6 photographs, #7 the 1980s,
+#8 the 2020s — are gone; nothing stale is left to rescue or close.
+
+## What merged
+
+**#185, the senate rolls.** Three sitting senators of the 26th Senate added to 2026-27: Jaden
+Marshall as a senator at large, Molly Ricky and Amelia Tucker as senators. I opened the cited
+Herald report of the meeting of 28 April 2026 and read it end to end. All three names are in
+it, in the roles claimed. The article swears Marshall in as a new senator at-large; it lists
+all three among the current senators who spoke in the race for speaker; and it records the
+9-9 tie between Tucker and Butler and the re-vote that Butler won, exactly as the note about
+Tucker describes. The year is right: the meeting fell in April 2026 but the body serves
+2026-27, which is where the entries sit. Veronica Butler is correctly not repeated among the
+members, being already carried as Speaker. Nothing cut.
+
+**#186, ten officer profiles, 1995-99.** Accounts of their time in office for Erin Schepman,
+David Apple, Darlene and Carlene Lodmell, Steve Roadcap, Shawna Whartenby, Ryan Faught, Chad
+Lewis, Leigh Ann Sears and Heather Rogers. I sampled twelve claims across the ten and traced
+each to the sourced note it derives from, then opened the external citations. All twelve
+held, including the four with hard numbers in them: Apple's primary tally of Sweatt 140,
+France 95 and Miller 72; Lewis's budget of $41,756 and his $11,150.68 spent against
+$30,605.32; Whartenby's 175 signatures; Sears's 52 riders on a Thursday night in November
+1997. Herald 73:50 was opened directly and does carry Allyson Whitt's story on the
+Lewis-Hancock vice-presidential race, so the new second citation on Lewis's record is sound.
+
+The advance-notice trap was the one worth watching here, and the branch passed it. The Herald
+piece on the Lewis-Hancock race is coverage of a contest still running, and the profile
+claims only that the Herald covered it as a contested race. That Lewis won rests on other
+records, not on the pre-election story.
+
+I cut one thing. Roadcap, Darlene Lodmell and Heather Rogers each carried the same career
+account on two of their year records, and because the person page prints one block per term,
+a reader would have met the identical paragraphs twice on one page. I removed the second copy
+in each case, leaving the account on the earlier record and letting the later record keep its
+own note, which says something specific about that year that the shared account does not. No
+sourced fact was lost — that is why this was trimmed rather than deleted. The profile count
+lands at exactly the ten the report claimed. Two older pairs of this kind, Andy Gailor and
+David Apple, predate the branch and are still there for a later pass.
+
+**#187, the backlog.** Documentation only, no data. I re-ran its factual claims rather than
+taking them on trust: 1,111 legislation entries across 43 sessions, confirmed; my own
+independent sweep for title-scrape debris surfaced only benign titles of exactly the kind it
+describes, so its finding that nothing outside the already-corrected entries is broken holds;
+the three `.research` files are still empty lists; all four named portraits are still in
+`data/photos.json`. Both titles it cites as examples exist verbatim. Fixed one sentence that
+described "a Wikipedia-safe committee year", which means nothing — it is a collection's own
+span of years.
+
+## What could not be checked, and is not being dressed up
+
+TopSCHOLAR's `viewcontent.cgi` was on its WAF challenge for the whole run: HTTP 202 with an
+empty body, unchanged after a 90-second backoff. So the SGA minutes PDFs behind #186's
+profiles could not be re-read from source. Landing pages open and their years match their
+labels, and every claim traces cleanly to this archive's own previously sourced notes, which
+is the standard CLAUDE.md sets for profiles. It is still a weaker check than reading the
+minutes afresh, and it should be recorded as such rather than as a clean verification. The
+same challenge is what stopped #187 and the 1979-80 work before it.
+
+## Still open
+
+The limitation raised in the last pass has not moved: `officer_index` in `build.py` rebuilds
+each rank-and-file senate member into a fresh dict before the person page is written, so a
+`profile` on a member reaches no reader. Officer and executive profiles, including all ten
+merged this pass, are unaffected and do publish. The three members seated by #185 carry notes
+rather than profiles, so they publish too — checked on the built pages. The fix is still a
+presentation change touching every person page and still the owner's call.
+
+The stale "SGA 60 - backlog" trigger cannot be repointed from inside a session; that is now
+established twice over and needs the account holder rather than another run. The
+`Annalise Finch` / `Annie Finch` case remains open. The 2026-27 record spells the chief of
+staff "Gabi Pace" where the Herald has "Gabby Pace" — noted, not touched, since it predates
+these branches.
+
+## Where the archive stands
+
+61 academic years, all of them researched. 2,018 dated and sourced events, 118 documents,
+1,111 pieces of legislation across 43 sessions, 1,468 senate members across 58 years, 737
+named officers, 773 accounts of a term in office, 113 portraits and 62 year photographs.
+60 people have been president. `build.py`, `check_data.py` (exit 0) and `check_contrib.py`
+(exit 0) all clean on `main` at the close. `check_duplicates.py` reports the same six
+pre-existing pairs — three introduce-then-resolve sequences and three same-day bills of
+1 September 1991 — read again and left alone as genuinely separate business. No pull request
+left open.
