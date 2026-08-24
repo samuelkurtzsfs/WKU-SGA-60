@@ -441,6 +441,37 @@ search, and has never been checked. Nothing in `data/` changed this run.
 `build.py` and `check_data.py` re-run clean against the unmodified tree.
 Landed this note only, on `research-backlog`.
 
+**A 24 August run (senate-rolls trigger), same stale prompt again — this one
+found real, narrow new ground.** Re-checked first, same result as every run
+since 21 August: `.research/senators-unverified.json` is `[]`, 58 of 61 years
+already carry `organization.senate.members`, and the three without it
+(1966-67, 1969-70, 1979-80) are documented permanent gaps. PR #190 from
+earlier the same day was already merged. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+was closed the entire session (HTTP 202 at both the start and end of the
+run); tried two already-thin years against open sources instead (1973-74 and
+1977-78 against their Talisman yearbooks on archive.org) and found both
+already thoroughly mined — nothing in either yearbook's ASG coverage wasn't
+already in the record.
+
+`wku.edu/sga`'s own minutes pages are open and cost nothing to crawl. Working
+from the actual 2019-20 and 2020-21 PDF minutes rather than assumption
+turned up a real pattern: several committee chairs already recorded as
+*officers* are separately called "Senator [Name]" in the primary text during
+floor business, meaning they held a Senate seat in addition to chairing
+their committee — the same dual-role pattern already recorded for other
+2020-21 committee chairs. Drafted five such dual-records (Matt Barr, Symone
+Whalin, Josh Zaczek, Brigid Stakelum for 2019-20; Tess Welch for 2020-21), a
+separate adversarial verifier re-fetched all six cited PDFs and confirmed
+all five as real and distinct — zero rejected, but all five needed the
+`seat` label trimmed to the archive's established parenthetical
+committee-role format, and two notes were reworded for overstating what the
+floor debate showed. Landed on `research-senate` (PR #197): 2019-20 went
+from 14 to 18 members, 2020-21 from 17 to 18. `build.py` and `check_data.py`
+pass clean; `check_duplicates.py` flags the same six pre-existing pairs.
+`viewcontent.cgi` staying closed remains the ceiling on this project's
+senate-roll work — most of what's left (pre-2009 SGA minutes on TopSCHOLAR,
+the two flagged 1976-77 Herald leads from the prior run) sits behind it.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
