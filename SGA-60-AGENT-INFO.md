@@ -298,6 +298,50 @@ Re-opened all five named PDFs directly and settled it for good — see §8.3
 item 7 for the detail. Nothing in `data/` changed; this closes a stale note,
 not a data gap. Landed on `research-backlog`.
 
+**A still-later 24 August run: the trigger itself, and why it stayed broken.**
+Every run since 21 August has said someone should fix or delete the stale
+"SGA 60 - backlog" trigger; this run actually tried, using the scheduling
+tools available in this session. It failed on a hard permission wall, not
+neglect: `update_trigger` refused with "this routine was created via
+http_api, not by an agent — agents can only update routines they created."
+The trigger was made outside any agent session (presumably from the
+dashboard or a direct API call by the project's owner), so no future
+scheduled run — however capable — can repoint or edit its stored prompt
+from inside the container; the account holder has to do it themselves,
+either from wherever they manage Routines or by asking a session with the
+right origin to recreate it. Re-verified the underlying facts one more
+time before writing this: `.research/branches-unverified.json`,
+`.research/branches-moments.json` and `.research/officers-unchecked.json`
+are still `[]`, and Nick Todd, Katie Dawson, Jeanne Johnson and Reagan
+Gilley all still carry a portrait in `data/photos.json` — so the trigger's
+own instructions remain as stale as every prior run found them.
+
+With that settled, this run picked a real, bounded item instead of
+re-confirming staleness a sixth time: the loose end named at the close of
+item 7 in §8.3 — "this pass only covered the 2016-17/2017-18 entries...
+it did not attempt a full sweep of every session's `title` field for other,
+differently-shaped scrape artifacts." Extended the sweep to the entire
+`data/legislation.json` corpus, all 43 sessions and 1,111 entries, using
+several pattern searches for the same class of debris already fixed
+elsewhere in this file (a bill/resolution number or a vote/reading marker
+glued onto the end of a title, the signature the 2016-17/2017-18 fix was
+built around): a trailing Yes/No/Pass/Fail/reading-stage marker, a trailing
+vote-tally shape (`\d+-\d+-\d+`), and a trailing run of three or more
+digits. 71 titles matched at least one pattern; every one was read by hand
+against what it actually says, not just the regex hit. All 71 turned out to
+be ordinary, correct titles whose numbers are part of the real subject —
+event years and dollar amounts ("Organizational Aid Funding Fall 2023",
+"Fall Organizational Aid Funding for $4,950"), a Wikipedia-safe committee
+year ("ASG Legislation 1976-1977"), or a bill/resolution number that is
+part of the document's own printed heading rather than scrape debris
+("Resolution 81-13 - Electrical Failure"). None needed a PDF re-check,
+since none resembled the glued-together, mid-sentence-cut artifacts the
+2016-17/2017-18 fix corrected — those looked like scrape wreckage on
+sight; these read as plain English. Nothing in `data/` changed. This
+closes the item for good: the earlier fix already caught every real
+instance of this bug, and no session outside 2016-17/2017-18 carries it.
+Landed on `research-backlog`.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
@@ -1025,9 +1069,15 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
    `build.py`, `check_data.py` and `check_duplicates.py` all pass clean
    afterward; the six known duplicate pairs are unchanged. What's left: this
    pass only covered the 2016-17/2017-18 entries that carried a bill/resolution
-   number and vote/committee/date pattern inside the title string itself — it
-   did not attempt a full sweep of every session's `title` field for other,
-   differently-shaped scrape artifacts.
+   number and vote/committee/date pattern inside the title string itself.
+
+   **The rest of the corpus checked and ruled out, 24 August (scheduled run).**
+   All 43 sessions and 1,111 entries in `data/legislation.json` were pattern-matched
+   for the same debris shape (a trailing vote/reading marker or a glued-on
+   number sequence); 71 titles matched, all read by hand, all confirmed to be
+   ordinary correct titles (event years, dollar amounts, a document's own real
+   bill number) rather than scrape wreckage. Nothing changed. Item 7 is fully
+   closed — see the run note below §8.2 for the detail.
 8. **Six duplicate pairs that `check_duplicates.py` has reported on every pass.**
    All six have been judged genuinely separate — same-day bills, a bill introduced
    against the same bill failing, a suit planned against a suit endorsed. Nobody
