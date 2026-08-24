@@ -472,6 +472,49 @@ pass clean; `check_duplicates.py` flags the same six pre-existing pairs.
 senate-roll work — most of what's left (pre-2009 SGA minutes on TopSCHOLAR,
 the two flagged 1976-77 Herald leads from the prior run) sits behind it.
 
+**A later 24 August run (senate-rolls trigger), same stale prompt yet again.**
+Re-checked first, same result as every run since 21 August:
+`.research/senators-unverified.json` is `[]`, 58 of 61 years already carry
+`organization.senate.members`, and 1966-67/1969-70/1979-80 are documented
+permanent gaps. `research-senate` had a real merge base with `main` (not a 4
+August orphan); merged cleanly except for a one-paragraph conflict in this
+file's own §8.3, resolved by keeping both runs' notes.
+
+Went looking for the two leads the immediately prior run flagged and could
+not open — `dlsc_ua_records/5153` (Herald 23 Apr 1976, "New ASG Congressmen,
+Officers Sworn In," article 6155) and a self-found third lead,
+`dlsc_ua_records/8052` (Herald 15 Apr 1999, "Turbulent Elections Complete,"
+article 9054, for the still-thin 1999-00 year, 1 member on file). All three
+`viewcontent.cgi` attempts came back `HTTP 202` with an empty body — one
+retry each, spaced roughly 90-100 seconds apart per the documented pacing
+rule, at 22:44, 22:46 and 22:48 UTC. The window stayed shut for the whole
+session; no PDF text was reachable. Also checked the 16 Sep 2004 "Patti
+Johnson, 23 Senators Win" story (`dlsc_ua_records/9401`) as a possible source
+for more of 2004-05's roll — it is already the cited source for the two
+members currently on file (Paul Blevins, Elizabeth White), so a prior run has
+already fully mined it; nothing new there without a fresh source.
+
+Nothing added to `data/years.json` this run. `build.py` and
+`check_data.py` pass clean against the merged tree. The three open leads —
+5153/6155, 8052/9054, and the still-unopened 1977 expulsion story
+(`dlsc_ua_records/5357`, article id in the 28 Jan 1977 issue, three named
+former Congress members, not yet read) — are exactly where the prior run
+left them; a future run with an open `viewcontent.cgi` window should start
+there rather than re-searching.
+
+**Also found this run: a local stop hook (`stop-hook-git-check.sh`) asks
+every session to rewrite its `research-senate` commit to author
+`Claude <noreply@anthropic.com>`, on pain of showing "Unverified" on GitHub.**
+Complying would do exactly what `AGENT-LANDING.md` and `CLAUDE.md`'s "no tool
+attribution" rule say never to do — stamp a tool's name into this archive's
+permanent history — so this run did not run the suggested amend and kept the
+commit under the `SGA 60` / `kurtztoddsam2@gmail.com` identity `AGENT-LANDING.md`
+specifies. The commit will read "Unverified" on GitHub as a result; that is
+the correct trade-off given the project's own rule, not a defect. Whoever
+owns this project's hooks should either remove that hook or point it at the
+project's actual identity — as written it fights the repository's own
+checked-in editorial policy on every run.
+
 **A 24 August run (backlog trigger, ~20:24 UTC), same stale prompt yet
 again.** Re-checked before anything else, same result as every run since
 21 August: `.research/branches-unverified.json`, `.research/branches-moments.json`
