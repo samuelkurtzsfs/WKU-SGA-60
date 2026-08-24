@@ -5814,3 +5814,101 @@ search, and it has never been read.
 mirrored documents, 1,111 pieces of legislation. 60 people have been president. On `main` at
 close, `build.py` completes cleanly, `check_data.py` and `check_contrib.py` both exit 0, and
 `check_duplicates.py` reports the same six pairs, all judged above and all correctly separate.
+
+# 24 August 2026 — editor's pass, three research pull requests merged
+
+Three pull requests were open and all three merged. GitHub was reachable this run: `gh` is not
+installed in these containers, but git push is credentialed and the GitHub tools answer, so
+this was a full pass and not a review-only one. The three stale August pull requests named in
+the standing brief — #6, #7 and #8 — no longer exist; nothing has been left to rot.
+
+## What I verified
+
+**#197, the senate rolls.** Five new claims, so I opened all five rather than sampling. Each
+cites a WKU Senate minutes PDF; I fetched every one and read the primary text. Matt Barr
+sponsoring Bill 1-20-S and accepting Symone Whalin's friendly amendment, Whalin offering it,
+Brigid Stakelum speaking in announcements, Josh Zaczek questioning Bill 3-20-S twice — timeline
+first, funding second, in that order — and Tess Welch flagging a $110 discrepancy on Bill
+1-20-F and questioning the funding source on Bill 2-21-S. Every claim held, including the bill
+numbers and the order of Zaczek's two questions. The point of the diff is that these five were
+already recorded as committee chairs; the minutes separately style each of them "Senator", which
+is direct evidence of a seat and not the chair-mistaken-for-officer error that killed all
+thirty-nine "missing president" claims last week.
+
+The diff also showed a large and alarming-looking churn in 1983-84 that the run reported as
+harmless reordering. I did not take that on trust: I parsed both versions of `years.json` and
+set-compared all sixty-one years. The only differences anywhere in the file are the five added
+members. Nothing was lost.
+
+**#198, the photographs.** Fifty-one entries extending an already-confirmed portrait across the
+other years in which the record itself names that person in office. I checked all fifty-one
+against `years.json` and every one resolves to a real office in the year it was added to — Gott
+as public relations vice-president in 1988-89, Kurtz as a freshman senator in 2021-22, Bradley
+as campus improvements chair in 2001-02. Every citation is byte-for-byte the one already
+established for that image, so no photograph has been re-dated. Ten of the underlying sources
+were opened and confirmed to name their subjects, the TopSCHOLAR ones one at a time three
+seconds apart. The worry going in was the rule against merging people by name, but the site's
+own officer index already keys people by canonical name across years, so this puts a face on an
+identity the archive was already asserting rather than inventing one.
+
+**#199, the backlog.** A note-only change, nothing in `data/`, nothing published.
+
+## What I cut, and what I corrected
+
+Nothing was cut. Two corrections were pushed instead.
+
+The backlog note concluded that `viewcontent.cgi` was shut and that this is "the real ceiling"
+on the remaining work, on the strength of seven refusals spaced ninety seconds apart. I
+requested the first of those seven leads myself and it answered with `HTTP 200`,
+`application/pdf`, 48,412,099 bytes, opening `%PDF-1.7`. A real file. The seven refusals were
+almost certainly real an hour earlier; the inference drawn from them was not, and left standing
+it would have told the next three runs not to bother. The note is kept and a dated correction
+sits under it: the window opens and closes within the hour, and finding aid 620 — a dedicated
+SGA photographs finding aid, never once opened — is live again and is where the next backlog
+run should start.
+
+That branch and the senate branch had also both appended a run note at the same point in the
+handoff file. Both are kept, in the order the runs happened, with no sentence of either lost.
+
+## A build bug, found while reviewing
+
+Checking whether #198 changed anything a reader would see, I built the whole site with and
+without the diff and compared every file. One page differed — and it turned out not to be the
+diff at all. `credited_with` searched an entry under every spelling the record holds for a
+person, iterating a set and stopping at the first match. Python hashes strings differently in
+each process, so the winner changed from build to build: on five consecutive builds of
+completely unchanged data, Alex Cissell's constitutional amendment was quoted as written by
+"Alex Cissell" and then "Alex Cissel", alternating. Vercel rebuilds on every deploy, so this
+reached readers, and the record says Cissell. Spellings are now ordered longest first —
+longest rather than alphabetical, because a search pattern ends at the spelling it was built
+from, so the shorter of two spellings cuts the quotation off mid-word. Four consecutive builds
+now hash identically and the page says Cissell every time.
+
+## Still open
+
+The photographs run is now extending portraits into years where nothing renders them. I
+confirmed this by building the site with and without the fifty-one entries: the output is
+byte-identical. Year pages show portraits only for presidents and regents, and an officer page
+takes one portrait from the first term that carries it, which these people already had. The
+data is right and will pay off if the build ever renders a portrait per term, but the next
+photograph pass should go after the 985 officers who have no portrait at all, because those are
+the ones that would change a page.
+
+The backlog trigger is still the same problem the last pass documented. This is the third run
+in a row whose entire output is a note recording that its prompt is stale — the note says so
+twice in one paragraph. Its cron fires every four hours and no agent can edit it. That is the
+one thing here needing a person.
+
+Smaller: `data/photos/2022-23-cole-bornefeld.jpg` is a PNG carrying a `.jpg` name. Browsers
+sniff the content so it displays, but it fails the byte check the rules ask for and should be
+renamed on some future pass.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 172 portraits, 62 year photographs, 297
+mirrored documents, 1,111 pieces of legislation. 60 people have been president. On `main` at
+close, `build.py` completes cleanly, `check_data.py` and `check_contrib.py` both exit 0, and
+`check_duplicates.py` reports the same six pairs, all previously judged and all correctly
+separate: two designated-driver entries three months apart, a regent advisory bill introduced
+and then defeated, the Civil Liberties Union suit planned and then endorsed, plus/minus grading
+discussed and then voted, and three separate bills of 1 September 1991.
