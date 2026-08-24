@@ -12321,13 +12321,22 @@
      {
       "office": "Public Affairs Vice President",
       "name": "Happy Chandler",
-      "note": "The 4 October minutes give the same office as \"Public Relations Vice President,\" a naming inconsistency in the record itself, not a different person.",
+      "note": "The 4 October minutes give the same office as \"Public Relations Vice President,\" a naming inconsistency in the record itself, not a different person. By the 28 February 1984 meeting John Holland held the Public Relations Vice President office; the record does not establish exactly when the change happened.",
       "profile": [
        "Happy Chandler served as Public Affairs Vice President of the Associated Student Government in 1983-84, under President Jack Smith, as recorded in the roll and officer reports of Congress's 30 August 1983 meeting. The minutes of the 4 October 1983 meeting record the same office as \"Public Relations Vice President,\" a naming inconsistency in ASG's own record-keeping that year rather than a change of officer. No further published record of his time in the office has been found."
       ],
       "src": {
        "label": "ASG Meeting Minutes, 30 August 1983",
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+      }
+     },
+     {
+      "office": "Public Relations Vice President",
+      "name": "John Holland",
+      "note": "Held the office by the 28 February 1984 meeting, succeeding Happy Chandler at a date not established by the surviving minutes. At that meeting he reported that a proposed definitive grading system had been defeated and encouraged ASG members to contact their state representatives and senators about higher education funding. He had appeared earlier that year as \"Jon Holland,\" named to an ad-hoc research committee at the 6 September 1983 meeting; the given name is rendered both Jon and John in the minutes. He continued in the Public Relations Vice President office into 1984-85, already recorded in years.json under that year.",
+      "src": {
+       "label": "ASG Meeting Minutes, 28 February 1984",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
       }
      }
     ],
@@ -12364,7 +12373,7 @@
       {
        "name": "Sandy Hill",
        "seat": "Congress member",
-       "note": "Moved that Congress suspend the rules at the 30 August 1983 meeting.",
+       "note": "Moved that Congress suspend the rules at the 30 August 1983 meeting. Also named to an ad-hoc research committee with Alvan Kujata, Randy Kimmel and Jon Holland at the 6 September 1983 meeting.",
        "src": {
         "label": "ASG Meeting Minutes, 30 August 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
@@ -12373,7 +12382,7 @@
       {
        "name": "Connie Hoffman",
        "seat": "Congress member",
-       "note": "Named absent at the roll call of the 4 October 1983 ASG meeting.",
+       "note": "Named absent at the roll call of the 4 October 1983 ASG meeting. Also approved as a Representative at Large at the 6 September 1983 meeting.",
        "src": {
         "label": "ASG Meeting Minutes, 4 October 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/476"
@@ -12431,6 +12440,132 @@
        "src": {
         "label": "ASG Meeting Minutes, 30 August 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Johnny Ragan",
+       "seat": "Representative at Large",
+       "note": "Approved as a Representative at Large at the 6 September 1983 meeting, on a motion made, seconded and passed without recorded discussion.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Kevin Jackson",
+       "seat": "Rules and Elections Committee",
+       "note": "Assigned to the Rules and Elections Committee at the 6 September 1983 meeting, on a motion made, seconded and passed.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Kim Robertson",
+       "seat": "Student Affairs Committee",
+       "note": "Assigned to the Student Affairs Committee at the 6 September 1983 meeting. The scan renders the surname indistinctly (\"Rabertsan\"); Robertson is the most likely reading but is not certain.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Stephen Kuhn",
+       "seat": "Student Affairs Committee",
+       "note": "Assigned to the Student Affairs Committee at the 6 September 1983 meeting, alongside Kim Robertson. The scan renders the surname very indistinctly (\"Kichn\"); the reading Kuhn is a guess and should be checked against the source image before publishing with confidence.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Randy Kimmel",
+       "seat": "Congress member; ad-hoc research committee",
+       "note": "Named to an ad-hoc research committee with Alvan Kujata, Sandy Hill and Jon Holland at the 6 September 1983 meeting, on a motion made, seconded and passed with no discussion.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Alvan Kujata",
+       "seat": "Congress member; ad-hoc research committee",
+       "note": "Named to an ad-hoc research committee with Randy Kimmel, Sandy Hill and Jon Holland at the 6 September 1983 meeting. The scan renders the name indistinctly and this reading is uncertain. Possibly the same person as \"Allan Kujala,\" already flagged in this year's organization.note as an unresolved April 1983 candidate for one of ASG's top offices; the two spellings likely reflect the same OCR-uncertain name read from two different scans, but this is not established.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Shiela Waninger",
+       "seat": "Alternate, College of Education",
+       "note": "Appointed alternate representative for the College of Education at the 6 September 1983 meeting. The scan renders the full name indistinctly (\"Shiela Harbe Waninger\"); the given and middle names here are uncertain and should be checked against the source image.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Gil Cowles",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting. Already recorded in years.json under 1982-83 as Ogden College alternate representative, confirmed 29 April 1982 - the same person continuing in Congress the following year.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Richard Helms",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Kathy Holly",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "James Moorman",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Paul Wellander",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Jon Norris",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting. Already recorded in years.json under 1984-85, absent at the 4 September 1984 roll call - likely the same person continuing in Congress the following year, though the record does not otherwise identify him further.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Todd Duncan",
+       "seat": "P.R. Committee",
+       "note": "Appointed to the Public Relations Committee by Administrative Vice President Tony Whalen at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
        }
       }
      ]
