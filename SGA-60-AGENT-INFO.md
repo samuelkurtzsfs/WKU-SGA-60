@@ -342,6 +342,61 @@ closes the item for good: the earlier fix already caught every real
 instance of this bug, and no session outside 2016-17/2017-18 carries it.
 Landed on `research-backlog`.
 
+**A later 24 August run (backlog trigger), same stale prompt yet again.**
+Re-checked before anything else, same result as every run since 21 August:
+`.research/branches-unverified.json`, `.research/branches-moments.json` and
+`.research/officers-unchecked.json` are all still `[]`; Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json`; Reed Morgan and Amanda Coates/Lich are unchanged in §7
+and `CLAUDE.md`. The "SGA 60 - backlog" trigger (`trig_01LjXLD8nYoNr8M2RehpHZMu`,
+firing every 4 hours) is still enabled and still carries the old prompt.
+This run did not attempt `update_trigger` again — the tool's own guidance is
+not to rewrite a Routine's prompt or schedule on the strength of a document
+rather than a direct, live request from the account holder, and the prior
+failed attempt (permission wall: "created via http_api, not by an agent")
+stands as the answer until the owner acts on it themselves.
+
+Picked up the year-photograph gap (§8.4) again. `viewcontent.cgi` was closed
+for the entire session: 5 attempts against the strongest lead
+(2009-10/article 7642), spaced 100 seconds apart over about 9 minutes, all
+HTTP 202. Nothing was added to `data/photos.json`, but the search space
+narrowed without needing the PDFs at all — every remaining open year now has
+a landing-page-confirmed `viewcontent.cgi` article number on file, so the
+next run with an open window can go straight to fetching, with no rediscovery
+step:
+- **1996-97** — article 4039, "Keith Coffman Takes Charge – Student
+  Government Association," Herald 72:54, 24 Apr 1997
+  (`dlsc_ua_records/3012`). New lead; not in this file before.
+- **1997-98** — article 8979, "Stephanie Cosby Rolls to Huge Victory –
+  Student Government Association," Herald 73:53, 30 Apr 1998
+  (`dlsc_ua_records/7982`). New lead; not in this file before.
+- **2000-01** — article 9903, Walsh, "Student Government Association
+  Election Produces Low Voter Turnout," Herald 76:52, 17 Apr 2001
+  (`dlsc_ua_records/8919`). Carried over from 23-24 August.
+- **2003-04** — article 10372, Clark, "Student Government Association
+  President-Elect Under Investigation," Herald 79:53, 20 Apr 2004
+  (`dlsc_ua_records/9387`), continued 79:54. Carried over.
+- **2005-06** — article 4695, Richardson, "See Rob Run, Win . . . Barely,"
+  Herald 81:42, 13 Apr 2006 (`dlsc_ua_records/3692`). Carried over.
+- **2006-07** — no headline lead (the local index's abstracts for this
+  April are genuinely empty, confirmed twice by independent methods on
+  23-24 August), but the four candidate issues now have confirmed article
+  numbers so a future run can open them directly without re-deriving them
+  from the landing pages: `dlsc_ua_records/6694` → article 7685,
+  `/6695` → 7684, `/6696` → 7683, `/6697` → 7682.
+- **2008-09** — article 7740, Barczak, "All Smiles, Kevin Smiley Wins
+  Student Government Association Election," Herald 84:46, 16 Apr 2009
+  (`dlsc_ua_records/6747`). Carried over; still the strongest single lead
+  (headline itself implies a photo).
+- **2009-10** — article 7642, Alleyne, "10 Questions with Student
+  Government Association President-elect Colton Jessie," Herald 85:48,
+  23 Apr 2010 (`dlsc_ua_records/6630`). New lead; not in this file before.
+
+Nothing in `data/` changed this run. `build.py` and `check_data.py` were
+re-run against the unmodified tree as a baseline (61 years, 2018 events, 60
+presidents, clean) before touching anything, and nothing needed redoing
+after. Landed this note only, on `research-backlog`.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
