@@ -2143,9 +2143,8 @@ corrected prompt (pointing it at this file's live §8 instead of the frozen
 update routines they created."* One new detail the error message surfaced
 this time, worth recording since it changes what a future run could
 consider: *"A routine's own session may still disable itself
-(enabled=false only)."* This session (`session_01FvYmjB3b8piP5fMYhy8XkV`,
-created fresh by this exact firing, `origin: scheduled_trigger`) is
-plausibly the trigger's "own session" for the purposes of that carve-out —
+(enabled=false only)."* A session created fresh by one of the trigger's own
+firings is plausibly its "own session" for the purposes of that carve-out —
 but disabling the only thing keeping this project's automated research
 moving is a call for the account holder, not something a run should decide
 on its own initiative, so this run did not use it. Recording the option
