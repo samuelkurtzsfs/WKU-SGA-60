@@ -702,6 +702,40 @@ single most promising open lead for 2004-05 once it opens.
 Nothing added to `data/` this run. `build.py` and `check_data.py` re-run
 clean against the merged tree. Landed this note only, on `research-senate`.
 
+**A later 25 August run (senate-rolls trigger, ~06:45 UTC), the stored
+prompt still describing zero senate members.** Re-checked first, same
+result as every run since 21 August: `.research/senators-unverified.json`
+is `[]`, and the roll stands unchanged at 1,487 member records across 58 of
+61 years. Retested the one open lead named by the run six hours earlier —
+`viewcontent.cgi` for article 9401 ("Patti Johnson, 23 Senators Win Student
+Government Association Elections," 2004-05's best remaining source) —
+worth recording precisely what was tried: the number that run used,
+`article=9401`, is actually the TopSCHOLAR *item* id
+(`dlsc_ua_records/9401`), not the PDF's own `article=` parameter; the
+landing page's own citation meta tag gives the real value,
+`article=10386`. Fetched both directly (30 seconds apart, browser
+navigation headers, correct `Referer`) — same Cloudflare "Attention
+Required" challenge page on both, so the distinction turned out not to
+matter this run, but a future one that retries this lead should use
+`article=10386`, not `9401`, since only the first is the PDF's real
+identifier. The landing page itself (`dlsc_ua_records/9401`, no `cgi/`
+in the path) loads fine over plain HTTPS with no special headers and no
+block at all — only `viewcontent.cgi` is behind Cloudflare — but its
+abstract does not carry the senator names, only the headline already on
+file.
+
+Checked `wkuherald.com` as the other possible route to 2004-05, since its
+full text is supposed to start around 2003. Coverage in the exact
+September–October 2004 window is thin: 11 posts total across six weeks
+(`per_page=100`, `after=2004-09-01`, `before=2004-10-15`), and only the
+one SGA post already known (`SGA preparing for September elections`) —
+no post from the days after the 14–15 September election that would carry
+a results story or the 23 winners' names. Whatever ran this scrape did
+not capture that week's issue. Not a promising route without the PDF.
+
+Nothing added to `data/` this run either. `build.py` and `check_data.py`
+re-run clean. Landed this note only, on `research-senate`.
+
 **A 25 August run (backlog trigger, ~04:20 UTC), same stale prompt yet
 again — re-checked first, same result as every run since 21 August.**
 `.research/branches-unverified.json`, `.research/branches-moments.json` and
