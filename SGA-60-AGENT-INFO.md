@@ -702,6 +702,55 @@ single most promising open lead for 2004-05 once it opens.
 Nothing added to `data/` this run. `build.py` and `check_data.py` re-run
 clean against the merged tree. Landed this note only, on `research-senate`.
 
+**A 25 August run (backlog trigger, ~04:20 UTC), same stale prompt yet
+again — re-checked first, same result as every run since 21 August.**
+`.research/branches-unverified.json`, `.research/branches-moments.json` and
+`.research/officers-unchecked.json` are all still `[]`; Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json`; Reed Morgan and Amanda Coates/Lich are unchanged in §7
+and `CLAUDE.md`; the ~20 weak citations and the pre-2011 legislation harvest
+are both still done, per items 4 and 9 of §8.3. `research-backlog` had a real
+merge base with `main` (not a 4 August orphan); fast-forwarded cleanly, no
+conflicts.
+
+This run also checked the trigger itself directly, via the scheduling tools
+available in-session rather than by inference: **"SGA 60 - backlog"**
+(`trig_01LjXLD8nYoNr8M2RehpHZMu`) was created via `http_api` on 17 August
+2026 at 03:54 UTC, last updated 17 August at 16:42 UTC (the one edit is
+almost eight days old), still `enabled: true`, still firing on
+`23 0-23/4 * * *` (every four hours), and its stored prompt is
+character-for-character the one every run since 21 August has already found
+stale. That is roughly 45 four-hourly firings since creation, the large
+majority of them spent re-confirming the same "already done" state before
+any could pick up real work — consistent with, and now independently
+confirmed rather than just inferred from, the 24 August entries above
+documenting the failed `update_trigger` attempt (permission wall: "this
+routine was created via http_api, not by an agent"). No new attempt to edit
+it was made this run, for the same reason those entries give.
+
+Picked up the year-photograph gap (§8.4) again, the one item this trigger's
+runs have been converging on for a week. `viewcontent.cgi` was tested five
+times this session, spaced several minutes apart with other work in between
+(git/data checks, not idle retries), against every open year's strongest
+lead plus the one never-opened finding aid: 9903 (2000-01), 7740 (2008-09),
+10372 (2003-04), 4695 (2005-06), and 1619 (`context=dlsc_ua_fin_aid`, the
+UA1C4/10 SGA-photographs finding aid flagged 24 August as never checked).
+All five came back the identical Cloudflare "Attention Required" challenge —
+`HTTP 403`, a 5,485-byte JS challenge page — matching the 25 August ~00:30
+UTC report exactly, not the AWS WAF 202 shape most earlier entries in this
+section describe. The window stayed shut for the whole session; no PDF text
+was reachable, so the finding aid remains the one lead here that has never
+actually been opened. Confirmed directly (not assumed from the log) that all
+eight years are still missing a year photograph: 1996-97, 1997-98, 2000-01,
+2003-04, 2005-06, 2006-07, 2008-09, 2009-10.
+
+Nothing in `data/` changed this run. `build.py`, `check_data.py` and
+`check_duplicates.py` re-run clean against the merged tree. Landed this note
+only, on `research-backlog`. The eight open years and their leads are
+exactly where the 25 August ~00:30 UTC entry left them; what this run adds
+is a direct, tool-confirmed account of how long and how the trigger has been
+stale, for whoever next has the ability to fix it.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
