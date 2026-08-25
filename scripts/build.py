@@ -6556,7 +6556,8 @@ def officer_index(ys):
         for m in ((org.get("senate") or {}).get("members") or []):
             rows.append(({"name": m.get("name"),
                           "office": m.get("seat") or "Senator",
-                          "note": m.get("note"), "src": m.get("src")}, True))
+                          "note": m.get("note"), "src": m.get("src"),
+                          "photo": m.get("photo")}, True))
         for o, is_sen in rows:
             if not o.get("name") or not o.get("office"):
                 continue
