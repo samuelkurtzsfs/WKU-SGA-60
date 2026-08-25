@@ -646,6 +646,62 @@ session, and that a browser will not get around it from here. The trigger
 issue from the 24 August entries above is unchanged and was not re-attempted
 this run, for the same reason given there.
 
+**A 25 August run (senate-rolls trigger), same stale prompt yet again.**
+Re-checked before anything else, same result as every run since 21 August:
+`.research/senators-unverified.json` is `[]` (the 105-name reconciliation the
+stored prompt still describes as pending was finished days ago), and the
+senate roll now stands at 1,487 member records across 58 of 61 years — up
+from the 912/35 figure in §1's table, which is itself now stale and should be
+refreshed on a future pass. The three zero-member years (1966-67, 1969-70,
+1979-80) remain documented permanent gaps; the only other thin years are
+1977-78 (2), 1999-00 (1), 2004-05 (2) and the current, still-running 2026-27
+(3) — all already correctly explained in item 3 of §8.3 below as needing
+either a Herald PDF that `viewcontent.cgi` will not currently serve, or
+simply more of the year left to happen.
+
+This run found one genuinely new, previously-undocumented open route and
+fully exhausted it: `www.wku.edu/sga/legislative/minutes.php` links seven
+Fall 2014-Spring 2016 Senate minutes files by bare filename
+(`10-7.docx`, `febninthsenateminute.docx`, `eleventhreefifteensenatemin.docx`,
+`eleventenfifteen.docx`, `elevenseventeenfifteen.docx`,
+`marchfirstsixteen.docx`, `aprilfivesixteenminutes.docx`) with no
+directory-listing block at all — the same "read the href list off the live
+page" trick recorded for other spans in item 3, just never actually applied
+to these seven before now. All seven downloaded clean (`.docx` is a zip of
+`word/document.xml`, no `antiword`/`catdoc` needed) and read in full. Every
+name in them — officers, committee chairs, and the two plain appointees,
+Kara Lowry and Kaycee Gibson, appointed to the senate 9 February by
+President Richey — is already on file in `organization.executive`,
+`organization.senate.officers` or `organization.senate.members` for 2014-15
+or 2015-16. One thing worth confirming rather than redoing: `febninthsenateminute.docx`
+itself prints "February 9, 2015," but the existing Lowry/Gibson entries date
+it 9 February **2016**, and that correction holds up — the file calls itself
+the sixteenth meeting of the Fourteenth Senate, while the three November
+2015 files in the same batch are the tenth, eleventh and twelfth meetings of
+the same numbered Senate, so a sixteenth meeting has to fall after them, not
+nine months before. The document's own printed year is the typo, not the
+archive. No committee chair in any of the seven is separately called
+"Senator [Name]" during floor business, so none of them produced the
+dual-officer-and-member record the 24 August run found for 2019-20/2020-21 —
+checked for that pattern specifically and it is not here. **This source is
+now fully mined; a future run should not re-fetch these seven files.**
+
+`viewcontent.cgi` was tested three times this session against
+`article=9401&context=dlsc_ua_records` (the "Johnson, 23 Senators Win"
+story that is 2004-05's best remaining lead, already the cited source for
+its two on-file members but naming 21 more the landing page's abstract
+does not carry) — at the start of the session, 90 seconds later, and again
+after roughly ten minutes of unrelated work. All three came back `HTTP 403`
+with a Cloudflare "Attention Required" challenge page, not the `HTTP 202`
+/ `x-amzn-waf-action: challenge` empty body every prior run has reported.
+Worth flagging as a possible infrastructure change rather than assuming it
+is the same block: a future run should note which shape it gets. The window
+stayed shut for the whole session either way; article 9401 remains the
+single most promising open lead for 2004-05 once it opens.
+
+Nothing added to `data/` this run. `build.py` and `check_data.py` re-run
+clean against the merged tree. Landed this note only, on `research-senate`.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
