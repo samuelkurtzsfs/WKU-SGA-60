@@ -6185,3 +6185,128 @@ merge should look like. On `main` at close, `build.py` completes cleanly over 61
 year pages and 7 decade pages, `check_data.py` and `check_contrib.py` both exit 0,
 and `check_duplicates.py` reports the same six pairs, all of them correctly
 separate.
+
+# 25 August 2026 — editor's pass, three pull requests merged, two faces taken off the site
+
+Three open at the start: #209 "Research: the senate rolls" on `research-senate`, #210 "Research:
+photographs (rolling)" on `research-photos`, #211 "Research: the backlog" on `research-backlog`.
+All three merged. One entry was cut from #210 before it merged, and the cut led to a second,
+worse error already live on `main`, which is off the site as of this pass (#212).
+
+The three stale pull requests the standing instruction still names — #6, #7 and #8 from 4 August
+— have been closed for weeks. All three branches this pass had a real merge base with current
+`main` and were level with it, so none of the orphan-history precautions applied.
+
+## What I cut, and what it led to
+
+**#210 offered two portraits. Kent Groemling's holds. Paul Nation's does not.**
+
+The Nation entry quoted a real caption from p. 109 of the 1975 *Talisman* — the one about a desk
+cluttered with a typewriter and a telephone — and attached it to a close portrait of a moustached
+man against a brick wall. Reading the page itself, that caption sits under the photograph of the
+cluttered desk at the foot of the same column, which shows a desk, books and a leg propped across
+them and no face at all. The brick-wall portrait carries no caption. Entry and image removed
+before merging.
+
+Removing it exposed the real problem. **The withdrawn crop was the same photograph already
+published on the site as Thomas LaCivita**, so merging #210 as it stood would have put one face
+under two names. That is how it was caught, and checking the LaCivita entry against the same page
+showed it does not hold either. p. 109 carries exactly two captions. One names Paul Nation and
+belongs to the desk photograph. The other names LaCivita — "Tom LaCivita (right) ... discusses
+the signing of 'War' and 'Charlie Daniels' Band' with Treasurer Ricky Johnson" — and sits
+directly under the overhead photograph of the stairway, where two figures stand conferring over
+papers at the foot of the steps. Both captions are spoken for. Neither describes the portrait.
+The "(right)" is decisive on its own: it needs two people in frame and the portrait has one.
+
+The entry made when the photograph was added on 18 August had already noticed the discrepancy and
+disposed of it by recording Ricky Johnson as "out of frame at left in the original photograph."
+Nothing on the page supports that; it was written to make the caption fit. When the photograph was
+later promoted from a year photograph to an officer portrait, the reasoning was carried forward
+rather than re-read, and a pass after that recorded LaCivita among officers "each named outright
+in their own caption." Three entries pointing at that file are gone — the 1974-75 and 1973-74
+leader portraits and the 1974-75 year photograph — along with the image and its `site/` copy.
+He is not Jeffrey Consolo either: the Who's Who portrait on p. 89 of the same volume is a
+clean-shaven, curly-haired man. The face is simply unidentified.
+
+**Thomas LaCivita stays on the record** as activities vice-president for both years, sourced as
+before, with his officer page intact. Only the face came off. Marc Levy's portrait, the other
+1974-75 entry citing p. 109, is untouched: it comes from his junior class portrait on p. 389, and
+p. 109 is cited only to corroborate that he sat in congress, which it does.
+
+## What I verified
+
+Every new claim across the three diffs, not a sample — there were fewer than eight of them.
+
+**Kent Groemling, 1986-87, kept.** p. 114 of the 1987 *Talisman* carries two Associated Student
+Government group photographs. The quoted caption is verbatim from the second, the row counts match
+the photograph exactly at four, five and four, and re-cropping the front row's third position from
+the source page reproduces the submitted file. Groemling was already on the 1986-87 senate roll as
+a committee chairman and the volume's index files Kent Frederick Groemling on p. 114. Worth
+recording that **Lynn Ann Groemling appears in the other photograph on the same page**: two
+Groemlings in one year's SGA is precisely the setup for a wrong face, and the crop came from the
+right photograph.
+
+**The 1969 signature, #211.** Rendered p. 2 of the mirrored minutes of 13 February 1969 at high
+resolution and read the signature block rather than taking the branch's word for it. The typed
+line reads "Christing L. Graue" — a `g` with a plain descender, not an `a` — under a cursive
+signature whose ending is consistent with "Christina". The branch is right, and its conclusion is
+correctly bounded: it does not use this to settle "Grau" against "Graue", only to establish that
+the minutes cannot be the tiebreaker, since their own transcription of the name is unreliable.
+The `SPELLING UNVERIFIED` flag stays on. One thing to leave for whoever revisits this: **the PDF's
+own embedded text layer extracts the word as "ChristinA"**, having silently normalised the typo
+away, so anyone re-checking with `pdftotext` alone will get the wrong answer and conclude the
+branch erred. Read the pixels.
+
+**The article-number correction, #209.** Fetched `dlsc_ua_records/9401` directly: HTTP 200 over
+plain HTTPS with no challenge, and the page's own `citation_pdf_url` gives
+`viewcontent.cgi?article=10386`, not `9401`. The correction is right and saves a future run from
+retrying a lead with the wrong identifier. Confirmed too that the abstract carries only the
+headline and none of the 23 senators' names, so the PDF really is the only route to them.
+
+## The traps checklist
+
+Nothing unfixed. No advance notice written up as a report — the 2004-05 item #209 chased is an
+election *results* story and stays a legitimate lead. No committee chair promoted to officer:
+#211's Chris Grau is expressly recorded as Office Secretary, a clerical post held alongside the
+elected secretary Becky Cooper. No surname matching, no changed-surname duplicate, no April result
+filed into the wrong academic year, nothing touching the settled facts, nothing about a living
+person beyond what a cited source carries. No contributor commits in any of the three diffs.
+
+## For the photograph routine
+
+Two rules earned this pass. **A caption on the same page is not a caption on your photograph.**
+Match it to the photograph it physically abuts *and* to what that photograph shows — this caption
+described a desk, and there was a photograph of a desk. And **when a caption says "(right)" or
+"(left)" but your crop holds one person, the caption is telling you that you have the wrong
+photograph.** Treat that as disqualifying. Do not write around it, which is how a face stayed
+wrong on the site for a week and survived being promoted and re-checked twice.
+
+## Still open
+
+Everything carried over carries over again. The four research routines are still firing prompts
+written on 17 August against task lists finished by the 21st, and the editor prompt driving this
+pass still asks for #6, #7 and #8. No routine can rewrite its own prompt; this needs a person, and
+it remains the highest-value ten minutes anyone could spend here.
+
+Sarah Vincent still has no portrait on 2022-23. Herald leads 5153 for 1976-77, 8052 for 1999-00
+and 5357, the January 1977 expulsion story, are all still unread.
+`data/photos/2022-23-cole-bornefeld.jpg` is still a PNG under a `.jpg` name. The eight open
+year-photograph years all still wait on `viewcontent.cgi`, which answered the Cloudflare challenge
+again today. And the photographs pass would still do more good among the officers with no portrait
+at all than among years that render none — with the caveat this pass adds, that the next portrait
+it lands should be read off its own caption and nothing else.
+
+One new item: **the brick-wall portrait on p. 109 of the 1975 Talisman is a good photograph of an
+unidentified ASG figure.** If another source ever names him, it is worth having.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president, 297 mirrored
+documents, 1,111 pieces of legislation, 176 portrait entries and 61 year photographs — one
+portrait fewer and one year photograph fewer than this morning, both of them the same withdrawn
+face, against one portrait gained for Kent Groemling. On `main` at close, `build.py` completes
+cleanly over 61 year pages and 7 decade pages, `check_data.py` and `check_contrib.py` both exit 0,
+and `check_duplicates.py` reports the same six pairs, all read again this pass and all correctly
+separate: two designated-driver entries three months apart, a regent advisory bill introduced and
+then defeated, the Civil Liberties Union suit planned and then endorsed, plus/minus grading
+discussed and then voted, and three distinct bills of 1 September 1991.
