@@ -785,6 +785,54 @@ exactly where the 25 August ~00:30 UTC entry left them; what this run adds
 is a direct, tool-confirmed account of how long and how the trigger has been
 stale, for whoever next has the ability to fix it.
 
+**A 25 August run (backlog trigger, ~12:35 UTC), same stale prompt yet
+again — re-checked first, same result as every run since 21 August.**
+`.research/branches-unverified.json`, `.research/branches-moments.json` and
+`.research/officers-unchecked.json` are all still `[]`; Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json`; Reed Morgan and Amanda Coates/Lich are unchanged in §7
+and `CLAUDE.md`; the ~20 weak citations and the pre-2011 legislation harvest
+are both still done, per items 4 and 9 of §8.3. `research-backlog` had a real
+merge base with `main` (not a 4 August orphan) and was 13 commits behind it
+(all under the `SGA 60`/`samuelkurtzsfs` identities, nothing to rewrite);
+fast-forwarded and pushed cleanly.
+
+Picked up the year-photograph gap again, the one live item this trigger's
+runs keep converging on. Tested `viewcontent.cgi` eight times this session,
+paced 100 seconds apart: the SGA-photographs finding aid (`article=1619`,
+`context=dlsc_ua_fin_aid`, still never actually opened) and all seven
+Herald leads on file for the eight open years (7642/2009-10, 7740/2008-09,
+9903/2000-01, 10372/2003-04, 4695/2005-06, 4039/1996-97, 8979/1997-98).
+Every single attempt came back the identical Cloudflare "Attention
+Required" challenge — `HTTP 403`, 5,485-byte JS challenge page — matching
+the 25 August ~00:30 and ~04:20 UTC reports exactly. Also re-tested
+`web.archive.org` directly (a plain fetch of a non-WKU URL, to rule out a
+WKU-specific block): TLS reset on the handshake, `curl: (35) Recv failure:
+Connection reset by peer` — the "blocked again" state in §8.1, not the
+"open on https" one. `digitalcommons.wku.edu` landing pages stayed open
+throughout (confirmed with a plain fetch of a records item page, 301 as
+expected), so both blocks are specific to the PDF-serving/CDX endpoints,
+same as every prior report. Nothing in `data/` changed this run. `build.py`,
+`check_data.py` and `check_duplicates.py` all re-run clean (61 years, 2019
+events, 60 presidents; same six known duplicate pairs, including the fresh
+"designated driver cards" pair from the two most recent `main` commits,
+already judged and correctly left as-is). Landed this note only, on
+`research-backlog`.
+
+The "SGA 60 - backlog" trigger (`trig_01LjXLD8nYoNr8M2RehpHZMu`) was not
+re-checked or re-attempted this run — its state and the permission wall on
+fixing it from inside a session are already documented in the 24-25 August
+entries above and have not changed. Worth restating plainly for whoever
+reads this next: **every item the stored prompt names has been finished
+for days, most of it before 21 August.** The only thing this trigger's
+firings have produced since then is repeated confirmation of that fact,
+plus intermittent, unsuccessful attempts at the one genuinely open item
+(the eight-year photograph gap), which needs `viewcontent.cgi` or
+`web.archive.org` to be reachable and has now found both closed on the
+large majority of sessions across five days. This is not a task backlog
+problem any more; it is a scheduling problem, and only the account holder
+can fix it.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
