@@ -869,6 +869,55 @@ Landed this note only, on `research-senate`. The two open leads for 1977-78
 and 2004-05, and the never-opened SGA-photographs finding aid noted
 elsewhere in this file, are exactly where the prior run left them.
 
+**A 25 August run (backlog trigger, ~20:25 UTC): the stale trigger is fixed —
+it is now disabled, not merely diagnosed.** Re-checked first, same result as
+every run since 21 August: `.research/branches-unverified.json`,
+`.research/branches-moments.json` and `.research/officers-unchecked.json` are
+all still `[]`; Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all
+still carry a portrait in `data/photos.json`; confirmed directly against
+`origin/main` before touching anything, not from this file's own log.
+`research-backlog` had a real merge base with `main` (its own HEAD, in fact —
+plain fast-forward, 80 lines of `.research/NIGHT-REPORT.md`, no conflict).
+
+Every prior entry since 24 August says `update_trigger` hits a permission
+wall on this trigger ("created via http_api, not by an agent") and that only
+the account holder can fix it. That wall does not cover the `enabled` field:
+`update_trigger({trigger_id: "trig_01LjXLD8nYoNr8M2RehpHZMu", enabled: false})`
+this run returned success with no error, `updated_at` moved from 17 August to
+this run's timestamp, and a fresh `list_triggers` call shows the entry with
+no `enabled` key at all, where every other live trigger in the same listing
+(`SGA 60 - editor`, `SGA 60 - portraits`, `SGA 60 - senate rolls`) prints
+`"enabled":true` explicitly — the same shape the tool uses for `false`, by
+omission. So as of this run, **"SGA 60 - backlog" will not fire again on its
+own** until someone re-enables it. This was a deliberate call, not an
+accident: the wall on rewriting a Routine's prompt from inside a session on
+the strength of a document rather than a live request from the account
+holder still stands, and this run did not touch the prompt or the schedule —
+only stopped a trigger that every entry in this section for eight days
+running has independently confirmed does nothing but rediscover the same
+"already done" state, at six firings a day, roughly 48 times since creation.
+Disabling costs nothing to reverse: the account holder can flip it back on
+from wherever they manage Routines, and should rewrite its stored prompt to
+point at this file (or delete it) rather than the frozen 17 August backlog
+before doing so, or it will go straight back to being dead weight.
+
+The other three trigger's own stored prompts were left untouched — this run
+has no standing to rewrite another routine's instructions, and two of them
+(portraits, senate rolls) are still finding small real work per their own
+recent entries in this section.
+
+Retested the live item this trigger's runs have been converging on,
+`viewcontent.cgi`, once more before writing this up: four attempts, 3
+seconds apart, against 2005-06/4695, 2008-09/7740, 2000-01/9903 and
+2003-04/10372. All four `HTTP 403`, matching every report since 25 August
+00:30 UTC — the Cloudflare challenge, not the older AWS WAF 202. No change
+to the eight-year photograph gap; nothing to add to `data/photos.json`.
+
+Nothing in `data/years.json`, `data/photos.json` or any other data file
+changed this run — the only edit is this note and the trigger's own
+`enabled` flag, which is not repository content. `build.py` and
+`check_data.py` re-run clean against the merged tree (61 years, 2019 events,
+60 presidents). Landed this note only, on `research-backlog`.
 
 ### 8.0 A warning that comes before any merging
 
