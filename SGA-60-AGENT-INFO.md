@@ -576,6 +576,76 @@ which has still never been opened and is the one lead here that has never
 been checked at all. The next backlog run should start there, before
 re-surveying anything.
 
+**A 25 August run (backlog trigger, ~00:30 UTC), same stale prompt yet
+again — re-checked first, same result as every run since 21 August.**
+`.research/branches-unverified.json`, `.research/branches-moments.json` and
+`.research/officers-unchecked.json` are all still `[]`; Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json`; Reed Morgan and Amanda Coates/Lich are unchanged in §7
+and `CLAUDE.md`; the ~20 weak citations and the pre-2011 legislation harvest
+are both still done, per items 4 and 9 of §8.3. `research-backlog` had a real
+merge base with `main` (not a 4 August orphan); merged cleanly except for one
+paragraph in this file's own running log, resolved by keeping both runs'
+notes, same as every prior conflict here.
+
+Picked up the year-photograph gap (§8.4) again, and found something worth
+recording precisely because it changes what a future run should try, not
+because it opens the block. **`viewcontent.cgi` is now answering with a
+Cloudflare "Attention Required" challenge (HTTP 403, a 5,485-byte JS
+challenge page, title "Attention Required! | Cloudflare"), not the AWS WAF
+202 challenge every earlier note in this file describes.** Tested three
+times, spaced several seconds to a few minutes apart, against three
+different leads (9903/2000-01, 7740/2008-09, 1619/the SGA-photographs
+finding aid) — all three identical 403s, byte-for-byte the same challenge
+page. Landing pages stayed open at 200 throughout, so this is specific to
+`viewcontent.cgi`, same as always, just a different protection product
+answering it today.
+
+Because a JS challenge page cannot be solved by a bare `curl`, this run
+tried a real browser instead of another `curl` retry — `playwright` was not
+installed but the underlying Chromium binary this environment ships
+(`/opt/pw-browsers/chromium-1194/chrome-linux/chrome`) was, so `pip install
+playwright` and launching that exact binary was tried, both plain and with
+the browser's proxy explicitly pointed at this session's egress proxy
+(`http://127.0.0.1:34163`, the address `/root/.ccr/README.md` documents).
+**Every navigation attempt failed at the TCP/TLS level with
+`net::ERR_CONNECTION_RESET` — including a plain request to `example.com`,
+not just to WKU's domains.** That rules out a WKU-specific or
+Cloudflare-specific block: this sandbox's Chromium cannot reach any outside
+HTTPS host at all, proxied or not, which is a property of this container,
+not of digitalcommons.wku.edu. **A future run should not spend time on a
+headless-browser workaround for this challenge** — it is not a viable route
+from inside this environment regardless of which anti-bot product WKU's
+CDN answers with that day; `curl` retries spaced across the session, at
+different hours, remain the only thing that has ever actually worked here.
+
+One small correction to the standing Talisman table while in the area: the
+`dlsc_ua_yearbooks/` landing page now lists a **2012 Talisman, Vol. 83**
+between the 2003 restart issue and 2013's — a real item, not previously
+named in this file, which said the page jumped straight from item 594
+(pub. 2003) to item 5160 (pub. 2014). It does not cover any of the eight
+still-open years (1996-97, 1997-98, 2000-01, 2003-04, 2005-06, 2006-07,
+2008-09, 2009-10), since 2012 falls outside that span, so nothing to add to
+`data/` from it — recorded only so the next run does not re-describe the
+page's contents as a clean two-item gap when it is not.
+
+Also checked, on the theory that a live search might reach something the
+saved leads and the local index cannot: `wkuherald.com`'s own WordPress
+search (`/wp-json/wp/v2/posts?search=`) for "Rob Watkins," "Kevin Smiley,"
+"Colton Jessie" and "Nick Todd" — every hit that came back dated from 2012
+or later, confirming again (per §8.1's existing note) that the pre-2011
+College Publisher-era content genuinely is not in the live site's search
+index, not merely under-indexed for these particular names.
+
+Nothing in `data/` changed this run — no new photograph, no correction to
+an existing one. `build.py` and `check_data.py` pass clean against the
+merged tree (61 years, 2019 events, 60 presidents). The eight open years and
+their leads are exactly where the 24 August ~02:00 UTC entry left them;
+what changed is only the diagnosis of why `viewcontent.cgi` refused this
+session, and that a browser will not get around it from here. The trigger
+issue from the 24 August entries above is unchanged and was not re-attempted
+this run, for the same reason given there.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
