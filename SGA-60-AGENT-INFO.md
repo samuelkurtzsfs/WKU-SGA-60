@@ -785,6 +785,42 @@ exactly where the 25 August ~00:30 UTC entry left them; what this run adds
 is a direct, tool-confirmed account of how long and how the trigger has been
 stale, for whoever next has the ability to fix it.
 
+**A later 25 August run (senate-rolls trigger), stored prompt unchanged.**
+Re-checked first, same result as every run since 21 August:
+`.research/senators-unverified.json` is `[]`, so step 1 was skipped per the
+prompt's own instruction. The roll stands unchanged at 1,487 member records
+across 58 of 61 years; the three zero-member years (1966-67, 1969-70,
+1979-80) still carry the same documented-permanent-gap notes in
+`organization.senate.note`, and the four thin years (1977-78: 2, 1999-00: 1,
+2004-05: 2, 2026-27: 3, the last one simply this year still in progress) are
+unchanged from the last count.
+
+Tested `viewcontent.cgi` directly, twice, 40 seconds apart with other work in
+between: `article=10386` (2004-05's best remaining lead, "Patti Johnson, 23
+Senators Win") and `article=5357` (the still-unopened 1977 expulsion story).
+Both came back `HTTP 403`, a byte-identical 5,485-byte Cloudflare "Attention
+Required" challenge page — the same shape the last several runs in this
+section report, not the older AWS WAF 202. The window was shut for both
+tries; no PDF text was reachable, so neither lead moved.
+
+Also checked two open, non-`digitalcommons` routes on the chance either had
+changed since the last pass. `wku.edu/sga/executive/index.php` still titles
+itself "2025-2026 Executive Branch" — the university has not yet published a
+2026-27 roster, so there is nothing there to add to this year's 3-member
+roll beyond what the already-cited legislation gives. `wku.edu/sga/legislative/`
+and its linked `legislative_archive_2.php`/`minutes.php` pages were pulled
+fresh and diffed against what is already on file for 2010-11 through 2018-19
+(the era those pages cover): every year in that span already carries 15-27
+members, matching or exceeding the counts the 22 August pass recorded, so
+this source is confirmed fully mined and a future run should not re-pull it
+on the strength of this section alone.
+
+Nothing added to `data/` this run. `build.py` and `check_data.py` re-run
+clean against the unmodified tree (61 years, 1,487 senate member records).
+Landed this note only, on `research-senate`. The two open leads for 1977-78
+and 2004-05, and the never-opened SGA-photographs finding aid noted
+elsewhere in this file, are exactly where the prior run left them.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**
