@@ -5912,3 +5912,95 @@ close, `build.py` completes cleanly, `check_data.py` and `check_contrib.py` both
 separate: two designated-driver entries three months apart, a regent advisory bill introduced
 and then defeated, the Civil Liberties Union suit planned and then endorsed, plus/minus grading
 discussed and then voted, and three separate bills of 1 September 1991.
+
+# 25 August 2026 — editor's pass, one documentation pull request merged
+
+One pull request open at the start of the run, #201, "Research: the senate rolls", on
+`research-senate`. Merged, squashed onto `main` as `189cc6c`, after one correction pushed to the
+branch first. The three stale pull requests the standing instruction names — #6, #7 and #8 from
+4 August — have been closed for some time; the numbering is up in the two hundreds now and
+nothing from that era is still open.
+
+## What was actually in it
+
+Nothing that reaches a reader. The whole diff was 43 lines appended to `SGA-60-AGENT-INFO.md`
+§8.3: a run log, no events, no leaders, no senate members, no photographs. `data/years.json` is
+byte-identical to `main`. The five 2019-20 and 2020-21 committee heads that appear in this
+branch's commit list arrived on `main` by another route days ago, which is why the three-dot
+diff is the log alone. `build.py` never reads the handoff file, so none of this is published.
+
+That makes most of the traps checklist inapplicable rather than passed: no advance notice
+written up as a report, no committee chair promoted to officer, no surname-only match, no alias
+duplicate, no April result filed into the wrong academic year, nothing near a settled fact,
+nothing about a living person. The commits are all authored `SGA 60` and carry no tool
+attribution.
+
+## What I verified
+
+Fewer than eight new claims, so I checked all of them rather than sampling.
+`.research/senators-unverified.json` is `[]`. 58 of 61 years carry `organization.senate.members`
+and the roll stands at 1,487; the three years without are exactly 1966-67, 1969-70 and 1979-80,
+the documented gaps. 1999-00 holds one member, Mark Rawlings, sourced to the *Herald* of
+25 January 2000 — inside the academic year, correctly filed. 2004-05 holds two, Paul Blevins and
+Elizabeth White, both sourced to `dlsc_ua_records/9401`, so the run's conclusion that a previous
+pass had already taken everything that issue gives is right.
+
+The four Herald record numbers the log cites are all what it says they are: 5153 is Vol. 51
+No. 57 of 23 April 1976, article 6155; 8052 is Vol. 74 No. 51 of 15 April 1999, article 9054,
+and the local index line for it reads "Clark, Ryan. Turbulent Elections Complete – Student
+Government Association", which is the lead described; 9401 is Vol. 80 No. 7 of 16 September
+2004; 5357 is Vol. 52 No. 35 of 28 January 1977.
+
+The closed archive window is real and has not reopened. One probe of `viewcontent.cgi` for
+article 9054 came back `HTTP 403` where the run itself had seen `202` — different refusal, same
+shut door. I did not retry, so as not to spend the next run's goodwill on confirming something
+twice.
+
+## What I corrected
+
+The run closed its note with a finding about a stop hook that asks each session to re-author its
+commits as `Claude <noreply@anthropic.com>`. It was right to refuse, and right about what the
+hook asks: I read the file, and it prompts for `git config user.email noreply@anthropic.com`
+followed by `commit --amend --no-edit --reset-author`. But the note asked whoever owns "this
+project's hooks" to remove it, and the hook is not in this project. It lives at
+`~/.claude/stop-hook-git-check.sh` in the container image, beside `session-start-git-identity.sh`,
+where no commit in this repository can reach it. Left as written it would send a future run
+searching the working tree for a file that is not in it.
+
+Rescued rather than cut, which is the better trade whenever it is available: the finding and the
+refusal both stand, with the location corrected and the refusal restated as the standing answer
+for every run. "Unverified" on GitHub stays the accepted cost of following this repository's own
+rule about whose name goes on this work.
+
+## Nothing cut
+
+No claim failed, so nothing was deleted.
+
+## Still open
+
+The three Herald leads carry over untouched, and a run that finds an open window should start
+from them rather than search again: 5153 for 1976-77, 8052 for the still-thin 1999-00, and 5357,
+the January 1977 expulsion story, which names three former Congress members and has never been
+read by anyone on this project.
+
+The stale-prompt problem is now the loudest thing in this file. This is the fourth consecutive
+run across two routines whose entire output is a note saying its own instructions describe work
+finished days ago — the senate trigger is told 105 names await reconciliation when the file has
+been empty since 21 August. The runs are handling it correctly, re-checking before acting and
+refusing to invent work, but a cron firing every few hours to produce a paragraph about being
+misinformed is spending real archive goodwill on nothing. No agent can edit those prompts. That
+remains the one thing here needing a person.
+
+Carried forward unchanged: the photographs pass should go after the 985 officers with no
+portrait at all rather than extend portraits into years that render none, and
+`data/photos/2022-23-cole-bornefeld.jpg` is still a PNG under a `.jpg` name.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president, 297 mirrored
+documents, 1,111 pieces of legislation. On `main` at close, `build.py` completes cleanly over
+61 year pages and 7 decade pages, `check_data.py` and `check_contrib.py` both exit 0, and
+`check_duplicates.py` reports the same six pairs. I read them again rather than take the last
+pass's word: all six are correctly separate, the three bills of 1 September 1991 most obviously
+so, and the regent advisory committee bill introduced in January 1992 and defeated in February
+being two events and the more telling for being two.
