@@ -785,6 +785,54 @@ exactly where the 25 August ~00:30 UTC entry left them; what this run adds
 is a direct, tool-confirmed account of how long and how the trigger has been
 stale, for whoever next has the ability to fix it.
 
+**A 25 August run (backlog trigger, ~12:35 UTC), same stale prompt yet
+again — re-checked first, same result as every run since 21 August.**
+`.research/branches-unverified.json`, `.research/branches-moments.json` and
+`.research/officers-unchecked.json` are all still `[]`; Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json`; Reed Morgan and Amanda Coates/Lich are unchanged in §7
+and `CLAUDE.md`; the ~20 weak citations and the pre-2011 legislation harvest
+are both still done, per items 4 and 9 of §8.3. `research-backlog` had a real
+merge base with `main` (not a 4 August orphan) and was 13 commits behind it
+(all under the `SGA 60`/`samuelkurtzsfs` identities, nothing to rewrite);
+fast-forwarded and pushed cleanly.
+
+Picked up the year-photograph gap again, the one live item this trigger's
+runs keep converging on. Tested `viewcontent.cgi` eight times this session,
+paced 100 seconds apart: the SGA-photographs finding aid (`article=1619`,
+`context=dlsc_ua_fin_aid`, still never actually opened) and all seven
+Herald leads on file for the eight open years (7642/2009-10, 7740/2008-09,
+9903/2000-01, 10372/2003-04, 4695/2005-06, 4039/1996-97, 8979/1997-98).
+Every single attempt came back the identical Cloudflare "Attention
+Required" challenge — `HTTP 403`, 5,485-byte JS challenge page — matching
+the 25 August ~00:30 and ~04:20 UTC reports exactly. Also re-tested
+`web.archive.org` directly (a plain fetch of a non-WKU URL, to rule out a
+WKU-specific block): TLS reset on the handshake, `curl: (35) Recv failure:
+Connection reset by peer` — the "blocked again" state in §8.1, not the
+"open on https" one. `digitalcommons.wku.edu` landing pages stayed open
+throughout (confirmed with a plain fetch of a records item page, 301 as
+expected), so both blocks are specific to the PDF-serving/CDX endpoints,
+same as every prior report. Nothing in `data/` changed this run. `build.py`,
+`check_data.py` and `check_duplicates.py` all re-run clean (61 years, 2019
+events, 60 presidents; same six known duplicate pairs, including the fresh
+"designated driver cards" pair from the two most recent `main` commits,
+already judged and correctly left as-is). Landed this note only, on
+`research-backlog`.
+
+The "SGA 60 - backlog" trigger (`trig_01LjXLD8nYoNr8M2RehpHZMu`) was not
+re-checked or re-attempted this run — its state and the permission wall on
+fixing it from inside a session are already documented in the 24-25 August
+entries above and have not changed. Worth restating plainly for whoever
+reads this next: **every item the stored prompt names has been finished
+for days, most of it before 21 August.** The only thing this trigger's
+firings have produced since then is repeated confirmation of that fact,
+plus intermittent, unsuccessful attempts at the one genuinely open item
+(the eight-year photograph gap), which needs `viewcontent.cgi` or
+`web.archive.org` to be reachable and has now found both closed on the
+large majority of sessions across five days. This is not a task backlog
+problem any more; it is a scheduling problem, and only the account holder
+can fix it.
+
 **A later 25 August run (senate-rolls trigger), stored prompt unchanged.**
 Re-checked first, same result as every run since 21 August:
 `.research/senators-unverified.json` is `[]`, so step 1 was skipped per the
@@ -820,6 +868,7 @@ clean against the unmodified tree (61 years, 1,487 senate member records).
 Landed this note only, on `research-senate`. The two open leads for 1977-78
 and 2004-05, and the never-opened SGA-photographs finding aid noted
 elsewhere in this file, are exactly where the prior run left them.
+
 
 ### 8.0 A warning that comes before any merging
 
@@ -1886,6 +1935,67 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   (2000-01/2003-04/2005-06/2008-09) and a page-by-page PDF read of 2006-07's
   own April issues remain the only open work, and all of it needs
   `viewcontent.cgi` to actually open.
+
+  **The photograph agent's 25 August run: pivoted off the year-photograph
+  gap onto officer/senate portraits, and found four.** Re-checked first, as
+  every run does: all 60 presidents and 57 regents (including the four
+  named in the stored task prompt) still have a portrait — that population
+  is fully closed and does not need re-checking again by a future run
+  unless a new president is added to the record. `viewcontent.cgi` was
+  tried twice more, ~10 minutes apart, for the 1996-97 lead (article 4039)
+  and came back 403 both times (the landing page for the same item loaded
+  fine at 200, so this is specifically a PDF-fetch block, not a wider
+  outage) — still closed, no new attempt worth logging beyond confirming
+  the pattern holds.
+
+  The real gap turned out to be **cabinet and senate officer portraits**:
+  322 executive and 589 senate-officer (year, name) pairs with no photo,
+  essentially untouched by the year-photograph hunts above. wkuherald.com's
+  WP-JSON search (`/wp-json/wp/v2/posts?search=...`, not rate-limited like
+  digitalcommons) found two usable group photos from 2024-25, both with
+  captions naming each person by seat or position — the same identification
+  standard as everything else in `photos.json`:
+  - A Herald Editorial Board sit-down (77384, 27 Aug 2024) captioned
+    "Student Body President Sam Kurtz, middle, ... Student Body Vice
+    President Donte Reed, left, and Chief Financial Officer Ethan Taylor."
+    Kurtz already had a portrait; added **Donté Reed** (Executive Vice
+    President) and **Ethan Taylor** (Chief Financial Officer), both for
+    2024-25, cropped from the group shot with Pillow (`pip3 install
+    pillow` — not preinstalled, but installs cleanly and fast).
+  - A five-senator swearing-in (78720, 1 Oct 2024) captioned "From left:
+    Ciin Lun, Lola Norman, Cayden Bailey, Jakob Barker and Hermes Olmos."
+    Bailey and Barker already had portraits. Added **Ciin Lun** (senator
+    2024-25, Mahurin Honors College senator/officer 2025-26 — one photos.json
+    entry per year, same file) and **Hermes Olmos** (senator, 2024-25).
+    **Lola Norman does not appear anywhere in 2024-25's `organization`
+    data** — not a missing photo, a missing roster entry; nothing for a
+    photos.json record to attach to. Flagging for whichever routine
+    maintains senate rolls rather than adding a dangling photo entry.
+
+  **A real build-side bug, not just a research gap: `officer_index()` in
+  `scripts/build.py` silently dropped every rank-and-file senate member's
+  photo.** It rebuilds a fresh dict per member (to give members a synthetic
+  `office` from their seat) and the dict literal never included a `photo`
+  key, so even though `apply_photo_overlay()` correctly attaches `photo`
+  onto the member's record in `organization.senate.members`, the person-page
+  builder never saw it — the portrait was in the data but silently never
+  rendered. Caught by checking Hermes Olmos's own page after adding his
+  entry and finding no image. Fixed with a one-line addition to that dict
+  literal; rebuilding afterward showed exactly two more people affected
+  besides the two just added — Will Harris (2017-18) and Sam Kurtz
+  (2021-22) — and both already had a portrait via their president terms,
+  so nothing changed for them, only for future member-only photos. A future
+  run hunting senate-member (not officer) portraits specifically can now
+  trust that a correctly-attached photo will actually render.
+
+  Landed on `research-photos`, PR #216 (successor to #6, which closed
+  18 August without merging and was not reopenable). The eight-year
+  photograph gap is untouched from where the 24 August run left it — see
+  above for the leads — and the ~900 remaining officer/senate-officer
+  (year, name) pairs without a portrait are open ground for the next run:
+  the wkuherald.com WP-JSON search-by-name approach used here scales to
+  any named officer from ~2011 onward and does not hit the digitalcommons
+  pacing wall at all.
 
 ### 8.5 Data hygiene
 
