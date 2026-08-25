@@ -6510,6 +6510,20 @@ def canonical(name):
     return ALIASES.get((name or "").strip(), (name or "").strip())
 
 
+def all_spellings(person):
+    """Every way this person's name is written, in a fixed order.
+
+    The order matters. Several of the searches below stop at the first pattern
+    that matches and quote what it caught, so iterating the set directly let
+    Python's per-run string hashing decide which spelling won: the same data
+    built twice quoted Alex Cissell's amendment as "Cissell" and then as
+    "Cissel". The site is rebuilt on every deploy, so that reached readers.
+
+    Longest first, because a pattern ends at the spelling it was built from: the
+    shorter of two spellings of one surname cuts the quotation off mid-word."""
+    return sorted(person["spellings"] | {person["name"]}, key=lambda s: (-len(s), s))
+
+
 def name_pattern(name):
     """First name and surname, tolerating a middle name or initial between them,
     and accents and apostrophes on either. Deliberately strict: matching a bare
@@ -6585,7 +6599,7 @@ def officer_index(ys):
 
 def officer_mentions(person, ys):
     """Entries elsewhere in the archive that name this person."""
-    pats = [q for q in (name_pattern(s) for s in person["spellings"] | {person["name"]}) if q]
+    pats = [q for q in (name_pattern(s) for s in all_spellings(person)) if q]
     if not pats:
         return []
     out = []
@@ -6675,7 +6689,7 @@ def credited_with(person, entries):
     returns things like "the government it created" and puts a concert on a
     person's page, so it is not used."""
     pats = []
-    for spelling in person["spellings"] | {person["name"]}:
+    for spelling in all_spellings(person):
         parts = [x for x in unicodedata.normalize("NFKD", spelling)
                  .encode("ascii", "ignore").decode().split()
                  if x not in ("Jr.", "Jr", "II", "III", "IV")]
@@ -6728,7 +6742,7 @@ def render_officer(person, ys, leg=()):
     # Entries that are about this person come first: named in the headline, then
     # named early in the body. No claim is made about importance beyond that,
     # because the record does not carry one that can be read mechanically.
-    pats = [q for q in (name_pattern(x) for x in person["spellings"] | {person["name"]}) if q]
+    pats = [q for q in (name_pattern(x) for x in all_spellings(person)) if q]
 
     def prominence(pair):
         _, e = pair
