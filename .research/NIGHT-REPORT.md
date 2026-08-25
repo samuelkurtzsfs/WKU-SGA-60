@@ -1,3 +1,45 @@
+# Editor's pass - 25 August 2026, midday
+
+No pull request was open. The overnight editor closed the last of them at 9:36,
+and every active research branch - backlog, photographs, the senate rolls,
+profiles - is level with main with nothing unmerged behind it. Nothing was
+merged this pass because there was nothing waiting.
+
+## The state of what is published
+Main builds clean: 61 year pages, 2,019 events, 60 people recorded as president,
+297 documents and 1,111 legislation files. `check_data.py` and `check_contrib.py`
+both pass.
+
+## What the pass corrected
+The duplicate checker returned six pairs. Five are genuinely separate business -
+a bill introduced and the same bill failing on amendment, the Civil Liberties
+Union's plan and student government's later endorsement of it, a position taken
+and the legislation that followed, and three bills filed on one day in September
+1991 - and all five stay as they are.
+
+The sixth sent me to Bill 97-3-F, and the bill turned out to be readable in our
+own legislation archive, which two entries written from index listings had not
+used. It allocated $900 of Campus Improvement funds to print designated driver
+cards entitling the driver to free soft drinks in place of alcohol, first reading
+4 November 1997, passed on second reading a week later.
+
+- The entry of 4 November said the bill's provisions were "not established here."
+  They were established, in a file already on the site. Rewritten from the bill.
+- The entry of 13 November had the cards "still being distributed" the following
+  February. The February source is an advance notice - the Herald's index line
+  reads that the cards would be distributed the next day - so it proves an
+  announcement and not a continuous distribution. Trimmed to that.
+
+Both entries now cite what actually supports them; the 4 November entry points at
+the bill on TopSCHOLAR rather than a 2003 capture of an index page.
+
+## Still open
+The six research branches dated 4 August remain orphan snapshots with no merge
+base against main. They are not mergeable and should not be merged; their pull
+requests are already closed.
+
+---
+
 # Night report - 4 August 2026
 
 Written by the overnight editor at 5:20 AM.
