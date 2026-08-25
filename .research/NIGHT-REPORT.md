@@ -6111,3 +6111,77 @@ completes cleanly over 61 year pages and 7 decade pages, `check_data.py` and `ch
 both exit 0, and `check_duplicates.py` reports the same six pairs. I checked them against main
 before judging rather than against the branch: all six are already there, none came from
 tonight's work, and all six are correctly separate events.
+
+# 25 August 2026 — editor's pass, one documentation pull request merged
+
+One pull request was open at the start of this pass, and it is merged. The three
+stale branches this pass was told to rescue or close — #6 photographs, #7 the 1980s,
+#8 the 2020s — were closed on 18 August, a week ago. There was nothing left to do
+with them.
+
+## What was reviewed
+
+**#207, "Research: the backlog"** — merged. A note-only landing: one Markdown file,
+49 added lines, nothing in `data/` and nothing that reaches a reader. It records
+that the backlog routine spent another run confirming work that finished days ago,
+and that the archive's remaining photograph leads are still behind a closed door.
+
+I checked its claims against the sources rather than against its own account of
+them. The three research queues are empty lists. Nick Todd, Katie Dawson, Jeanne
+Johnson and Reagan Gilley each carry a portrait. Reed Morgan and Amanda Coates /
+Amanda Lich are untouched in the rules. All eight years it names as lacking a
+photograph — 1996-97, 1997-98, 2000-01, 2003-04, 2005-06, 2006-07, 2008-09,
+2009-10 — are genuinely still without one.
+
+The two claims worth going outside the repository for both held. The scheduling
+record gives the backlog routine's creation as 17 August at 03:54 UTC, its last
+edit as the same day at 16:42, and its schedule as every four hours — exactly as
+reported, to the minute. And one request to the archive returned HTTP 403 behind a
+5,485-byte challenge page, the same status and the same byte count the report
+described. The window really is shut.
+
+## What was cut
+
+Nothing. There was no historical claim in the diff to test against a trap: no
+advance notice mistaken for a report, no committee chair promoted to officer, no
+surname match, no April result filed into the wrong year, nothing touching the
+settled facts, nothing about a living person beyond four portraits already on the
+board. The commit is authored in the archive's own name and carries no tool
+attribution.
+
+The six duplicate pairs the checker reports are unchanged and were read again
+before merging: a 1992 bill introduced and the same bill failing nine days later,
+a lawsuit planned in February and endorsed in March, three separate bills taken on
+the same day in September 1991, and designated driver cards announced in November
+and distributed the following February. All six are separate events and stay as
+they are.
+
+## Still open
+
+The stale-prompt problem is now in its sixth consecutive run, and this pass adds
+its own name to the list. Three research routines — backlog every four hours,
+portraits every six, senate rolls every four — are still firing prompts written on
+17 August against task lists that were finished by the 21st. The backlog routine
+alone has fired roughly forty-five times. They are behaving correctly; there is
+simply nothing left in their instructions to do, so each run reads the files,
+finds the work done, and writes a paragraph saying so. The editor prompt driving
+this pass is stale in the same way: it still asks for three pull requests that
+were closed on 18 August. No routine can rewrite its own prompt, so this needs a
+person, and it is the single highest-value thing anyone could spend ten minutes on.
+
+Everything carried over from last night carries over again, untouched: Sarah
+Vincent has no portrait on 2022-23; Herald leads 5153 for 1976-77, 8052 for
+1999-00 and 5357, the January 1977 expulsion story, are all still unread;
+`data/photos/2022-23-cole-bornefeld.jpg` is still a PNG under a `.jpg` name; and
+the photographs pass would still do more good among the 985 officers with no
+portrait at all than among years that render none.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president,
+297 mirrored documents, 1,111 pieces of legislation, 177 leader portraits and 62
+year photographs. Unchanged from this morning, which is what a documentation-only
+merge should look like. On `main` at close, `build.py` completes cleanly over 61
+year pages and 7 decade pages, `check_data.py` and `check_contrib.py` both exit 0,
+and `check_duplicates.py` reports the same six pairs, all of them correctly
+separate.
