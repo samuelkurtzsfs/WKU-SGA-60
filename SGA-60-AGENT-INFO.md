@@ -1997,6 +1997,106 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   any named officer from ~2011 onward and does not hit the digitalcommons
   pacing wall at all.
 
+  **The photograph agent's 25 August run (a later scheduled run): re-verified
+  the closed population, found several strong leads, confirmed all of them
+  fail the identification bar, and located a genuinely new source lane for
+  the next run.** Re-checked first, as every run does: all 60 presidents and
+  57 regents (the four named in the stored task prompt included) still carry
+  a portrait — nothing to redo there. `viewcontent.cgi` was tried twice this
+  session, 90 seconds apart, against two different articles (the 2000-01
+  Herald lead, article 9903, and the newly-found 2018 Talisman *Grit*, article
+  9671) — both came back a plain HTTP 403, not even the usual 202 challenge
+  page. Consistent with the by-the-hour pattern documented above: this
+  session's window was closed throughout.
+
+  **A real new lead for a future run: the yearbooks landing page does carry
+  2013-2019, contrary to how the existing table in this section reads.** That
+  table only worked the 1979-2003 gap; a fresh fetch of
+  `dlsc_ua_yearbooks/` found seven more Talisman volumes with confirmed
+  `viewcontent.cgi` article numbers, all inside the ~900-pair officer/senate
+  gap and none downloaded yet:
+
+  | year | title | item | article | size |
+  |---|---|---|---|---|
+  | 2012-13 | Form | `dlsc_ua_records/8681` (approx.) | 9683 | 897.6 MB |
+  | 2013-14 | Reckoning, Part I | — | 6164 | 341.2 MB |
+  | 2013-14 | Reckoning, Part II | `dlsc_ua_records/5160` | 6167 | 495.2 MB |
+  | 2014-15 | Resurgence | — | 9665 | 558.5 MB |
+  | 2015-16 | Identity | — | 9666 | 94.4 MB |
+  | 2015-16 | Life More Life | `dlsc_ua_records/8678` | 9667 | 720.6 MB |
+  | 2016-17 | Power | — | 9669 | 149.8 MB |
+  | 2016-17 | Well Being | `dlsc_ua_records/8686` | 9670 | 93.0 MB |
+  | 2017-18 | Grit | `dlsc_ua_records/8684` | 9671 | 23.2 MB |
+  | 2018-19 | Balance | — | 9672 | 17.7 MB |
+  | 2018-19 | Paradise | `dlsc_ua_records/8682`/`8683` | 9673 | 49.0 MB |
+
+  (Academic year in the left column is the title's own cover year minus one,
+  matching how every other Talisman in this file is filed — e.g. "2018
+  Talisman: Grit" is the 2017-18 yearbook. Confirm each one's own Publication
+  Date field before filing, per this section's standing rule.) *Grit* and
+  *Balance*/*Paradise* are small enough (17-49 MB) to fetch the moment the
+  gate opens, and land squarely inside the densest part of the officer gap —
+  Kendrick Bryan, Boka/Boka, Reeves, Seay, Church, Miles, Koehler, Hart,
+  Neeper, Line, Molyneaux, Lowry, Hounshell, Anderson, Kelly, Brosky, Moore,
+  McWilliams, Merritt, McAndrews and the rest of the 2012-2019 cabinets and
+  senates all fall inside these eleven volumes. Not attempted further this
+  session because the gate stayed shut; a future run should try these article
+  numbers before defaulting back to name-by-name wkuherald.com search.
+
+  **Several wkuherald.com leads found and rejected on sight, logged so they
+  are not re-found and re-tried:**
+  - Salvador León (Administrative Vice President, 2023-24) — a censure-hearing
+    photo (`wkuherald.com/74786`, captioned "...Administrative Vice President
+    Salvador León during a censure hearing...") shows him only from behind and
+    the side, ear and hairline only, no visible face. Rejected: caption
+    identifies him, but sight does not confirm him, and CLAUDE.md requires
+    both.
+  - Garrison Reed (Executive Vice President, 2022-23) — an election-night
+    photo (`wkuherald.com/68255`, captioned "President Cole Bornefeld
+    congratulates Garrison Reed on winning his position for vice president")
+    shows three young men in a knot of people, with no left-to-right or
+    positional cue in the caption for which two are named. Compared against
+    Bornefeld's existing portrait (`data/photos/2022-23-cole-bornefeld.jpg`)
+    and none of the three visible faces is a clear match. Rejected as
+    unconfirmable.
+  - Kenan Mujkanovic (Administrative Vice President, 2019-20) — a caption on
+    a companion image (`wkuherald.com/20294`) explicitly reads "Left to right,
+    Kenan Mujkanovic, Will Harris and Garrett Edmonds celebrate winning...",
+    which looked like the strongest lead of the session, but the photograph
+    itself (`.../2019/04/66d965f60b3725f7acdb0e5dcb918bb4-1.jpg`) is a packed
+    election-night crowd shot with 20+ people, no three of whom are set apart
+    from the rest. Cross-checked against Will Harris's own existing portrait
+    (bearded, distinctive) and no face in the crowd matches. Rejected: a
+    caption naming three people in a crowd of twenty is not the same as
+    confirming which twenty.
+  - Sarah Vincent (Speaker of the Senate, 2024-25) — the only clean, solo,
+    named photo found for her (`wkuherald.com/80796`) is from her being
+    crowned 2024 Homecoming Queen, not from any SGA capacity. Excluded on
+    CLAUDE.md's own privacy scope rule: portraits belong to the office held,
+    not to the person's other campus life.
+
+  **Confirmed already covered, so a future run does not need to re-search
+  these:** Garrett Edmonds, Cole Bornefeld, Sophie Stirling (Chief Justice,
+  succeeded Blake Graham mid-2025-26 — already photographed under a *later*
+  2026 image, `2026/04/040226_sga_JS11.jpg`, not the November swearing-in one
+  found this run), Rush Robinson, Savanna Kurtz, Gabriel Jerdon, Maggie
+  Yelton, Jade Ismail and Preston Jenkins (the full 2025-26 executive cabinet
+  already has portraits). Keyanna Boka's photo is filed under that spelling;
+  the organization data's own "Keyana Boka" (2012-13/2013-14 executive) is the
+  same unverified spelling doubt CLAUDE.md already flags, not a second,
+  unphotographed person.
+
+  **Net for this run: no new file added to `data/photos.json` or
+  `data/photos/`.** Every lead that reached the identification bar in past
+  runs was already claimed; every new lead found this run failed it on sight
+  rather than on caption. Nothing in `data/` changed. `build.py` and
+  `check_data.py` were run clean against the unmodified tree (61 years, 2019
+  events, 60 presidents) before and after this session's checks. The
+  yearbooks table above is the one concrete addition: a future run with
+  `viewcontent.cgi` open should start there, smallest files first (*Grit*,
+  *Balance*, *Paradise*), rather than repeat this session's wkuherald.com
+  crowd-photo dead ends.
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
