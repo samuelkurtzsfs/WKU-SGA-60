@@ -5814,3 +5814,193 @@ search, and it has never been read.
 mirrored documents, 1,111 pieces of legislation. 60 people have been president. On `main` at
 close, `build.py` completes cleanly, `check_data.py` and `check_contrib.py` both exit 0, and
 `check_duplicates.py` reports the same six pairs, all judged above and all correctly separate.
+
+# 24 August 2026 — editor's pass, three research pull requests merged
+
+Three pull requests were open and all three merged. GitHub was reachable this run: `gh` is not
+installed in these containers, but git push is credentialed and the GitHub tools answer, so
+this was a full pass and not a review-only one. The three stale August pull requests named in
+the standing brief — #6, #7 and #8 — no longer exist; nothing has been left to rot.
+
+## What I verified
+
+**#197, the senate rolls.** Five new claims, so I opened all five rather than sampling. Each
+cites a WKU Senate minutes PDF; I fetched every one and read the primary text. Matt Barr
+sponsoring Bill 1-20-S and accepting Symone Whalin's friendly amendment, Whalin offering it,
+Brigid Stakelum speaking in announcements, Josh Zaczek questioning Bill 3-20-S twice — timeline
+first, funding second, in that order — and Tess Welch flagging a $110 discrepancy on Bill
+1-20-F and questioning the funding source on Bill 2-21-S. Every claim held, including the bill
+numbers and the order of Zaczek's two questions. The point of the diff is that these five were
+already recorded as committee chairs; the minutes separately style each of them "Senator", which
+is direct evidence of a seat and not the chair-mistaken-for-officer error that killed all
+thirty-nine "missing president" claims last week.
+
+The diff also showed a large and alarming-looking churn in 1983-84 that the run reported as
+harmless reordering. I did not take that on trust: I parsed both versions of `years.json` and
+set-compared all sixty-one years. The only differences anywhere in the file are the five added
+members. Nothing was lost.
+
+**#198, the photographs.** Fifty-one entries extending an already-confirmed portrait across the
+other years in which the record itself names that person in office. I checked all fifty-one
+against `years.json` and every one resolves to a real office in the year it was added to — Gott
+as public relations vice-president in 1988-89, Kurtz as a freshman senator in 2021-22, Bradley
+as campus improvements chair in 2001-02. Every citation is byte-for-byte the one already
+established for that image, so no photograph has been re-dated. Ten of the underlying sources
+were opened and confirmed to name their subjects, the TopSCHOLAR ones one at a time three
+seconds apart. The worry going in was the rule against merging people by name, but the site's
+own officer index already keys people by canonical name across years, so this puts a face on an
+identity the archive was already asserting rather than inventing one.
+
+**#199, the backlog.** A note-only change, nothing in `data/`, nothing published.
+
+## What I cut, and what I corrected
+
+Nothing was cut. Two corrections were pushed instead.
+
+The backlog note concluded that `viewcontent.cgi` was shut and that this is "the real ceiling"
+on the remaining work, on the strength of seven refusals spaced ninety seconds apart. I
+requested the first of those seven leads myself and it answered with `HTTP 200`,
+`application/pdf`, 48,412,099 bytes, opening `%PDF-1.7`. A real file. The seven refusals were
+almost certainly real an hour earlier; the inference drawn from them was not, and left standing
+it would have told the next three runs not to bother. The note is kept and a dated correction
+sits under it: the window opens and closes within the hour, and finding aid 620 — a dedicated
+SGA photographs finding aid, never once opened — is live again and is where the next backlog
+run should start.
+
+That branch and the senate branch had also both appended a run note at the same point in the
+handoff file. Both are kept, in the order the runs happened, with no sentence of either lost.
+
+## A build bug, found while reviewing
+
+Checking whether #198 changed anything a reader would see, I built the whole site with and
+without the diff and compared every file. One page differed — and it turned out not to be the
+diff at all. `credited_with` searched an entry under every spelling the record holds for a
+person, iterating a set and stopping at the first match. Python hashes strings differently in
+each process, so the winner changed from build to build: on five consecutive builds of
+completely unchanged data, Alex Cissell's constitutional amendment was quoted as written by
+"Alex Cissell" and then "Alex Cissel", alternating. Vercel rebuilds on every deploy, so this
+reached readers, and the record says Cissell. Spellings are now ordered longest first —
+longest rather than alphabetical, because a search pattern ends at the spelling it was built
+from, so the shorter of two spellings cuts the quotation off mid-word. Four consecutive builds
+now hash identically and the page says Cissell every time.
+
+## Still open
+
+The photographs run is now extending portraits into years where nothing renders them. I
+confirmed this by building the site with and without the fifty-one entries: the output is
+byte-identical. Year pages show portraits only for presidents and regents, and an officer page
+takes one portrait from the first term that carries it, which these people already had. The
+data is right and will pay off if the build ever renders a portrait per term, but the next
+photograph pass should go after the 985 officers who have no portrait at all, because those are
+the ones that would change a page.
+
+The backlog trigger is still the same problem the last pass documented. This is the third run
+in a row whose entire output is a note recording that its prompt is stale — the note says so
+twice in one paragraph. Its cron fires every four hours and no agent can edit it. That is the
+one thing here needing a person.
+
+Smaller: `data/photos/2022-23-cole-bornefeld.jpg` is a PNG carrying a `.jpg` name. Browsers
+sniff the content so it displays, but it fails the byte check the rules ask for and should be
+renamed on some future pass.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 172 portraits, 62 year photographs, 297
+mirrored documents, 1,111 pieces of legislation. 60 people have been president. On `main` at
+close, `build.py` completes cleanly, `check_data.py` and `check_contrib.py` both exit 0, and
+`check_duplicates.py` reports the same six pairs, all previously judged and all correctly
+separate: two designated-driver entries three months apart, a regent advisory bill introduced
+and then defeated, the Civil Liberties Union suit planned and then endorsed, plus/minus grading
+discussed and then voted, and three separate bills of 1 September 1991.
+
+# 25 August 2026 — editor's pass, one documentation pull request merged
+
+One pull request open at the start of the run, #201, "Research: the senate rolls", on
+`research-senate`. Merged, squashed onto `main` as `189cc6c`, after one correction pushed to the
+branch first. The three stale pull requests the standing instruction names — #6, #7 and #8 from
+4 August — have been closed for some time; the numbering is up in the two hundreds now and
+nothing from that era is still open.
+
+## What was actually in it
+
+Nothing that reaches a reader. The whole diff was 43 lines appended to `SGA-60-AGENT-INFO.md`
+§8.3: a run log, no events, no leaders, no senate members, no photographs. `data/years.json` is
+byte-identical to `main`. The five 2019-20 and 2020-21 committee heads that appear in this
+branch's commit list arrived on `main` by another route days ago, which is why the three-dot
+diff is the log alone. `build.py` never reads the handoff file, so none of this is published.
+
+That makes most of the traps checklist inapplicable rather than passed: no advance notice
+written up as a report, no committee chair promoted to officer, no surname-only match, no alias
+duplicate, no April result filed into the wrong academic year, nothing near a settled fact,
+nothing about a living person. The commits are all authored `SGA 60` and carry no tool
+attribution.
+
+## What I verified
+
+Fewer than eight new claims, so I checked all of them rather than sampling.
+`.research/senators-unverified.json` is `[]`. 58 of 61 years carry `organization.senate.members`
+and the roll stands at 1,487; the three years without are exactly 1966-67, 1969-70 and 1979-80,
+the documented gaps. 1999-00 holds one member, Mark Rawlings, sourced to the *Herald* of
+25 January 2000 — inside the academic year, correctly filed. 2004-05 holds two, Paul Blevins and
+Elizabeth White, both sourced to `dlsc_ua_records/9401`, so the run's conclusion that a previous
+pass had already taken everything that issue gives is right.
+
+The four Herald record numbers the log cites are all what it says they are: 5153 is Vol. 51
+No. 57 of 23 April 1976, article 6155; 8052 is Vol. 74 No. 51 of 15 April 1999, article 9054,
+and the local index line for it reads "Clark, Ryan. Turbulent Elections Complete – Student
+Government Association", which is the lead described; 9401 is Vol. 80 No. 7 of 16 September
+2004; 5357 is Vol. 52 No. 35 of 28 January 1977.
+
+The closed archive window is real and has not reopened. One probe of `viewcontent.cgi` for
+article 9054 came back `HTTP 403` where the run itself had seen `202` — different refusal, same
+shut door. I did not retry, so as not to spend the next run's goodwill on confirming something
+twice.
+
+## What I corrected
+
+The run closed its note with a finding about a stop hook that asks each session to re-author its
+commits as `Claude <noreply@anthropic.com>`. It was right to refuse, and right about what the
+hook asks: I read the file, and it prompts for `git config user.email noreply@anthropic.com`
+followed by `commit --amend --no-edit --reset-author`. But the note asked whoever owns "this
+project's hooks" to remove it, and the hook is not in this project. It lives at
+`~/.claude/stop-hook-git-check.sh` in the container image, beside `session-start-git-identity.sh`,
+where no commit in this repository can reach it. Left as written it would send a future run
+searching the working tree for a file that is not in it.
+
+Rescued rather than cut, which is the better trade whenever it is available: the finding and the
+refusal both stand, with the location corrected and the refusal restated as the standing answer
+for every run. "Unverified" on GitHub stays the accepted cost of following this repository's own
+rule about whose name goes on this work.
+
+## Nothing cut
+
+No claim failed, so nothing was deleted.
+
+## Still open
+
+The three Herald leads carry over untouched, and a run that finds an open window should start
+from them rather than search again: 5153 for 1976-77, 8052 for the still-thin 1999-00, and 5357,
+the January 1977 expulsion story, which names three former Congress members and has never been
+read by anyone on this project.
+
+The stale-prompt problem is now the loudest thing in this file. This is the fourth consecutive
+run across two routines whose entire output is a note saying its own instructions describe work
+finished days ago — the senate trigger is told 105 names await reconciliation when the file has
+been empty since 21 August. The runs are handling it correctly, re-checking before acting and
+refusing to invent work, but a cron firing every few hours to produce a paragraph about being
+misinformed is spending real archive goodwill on nothing. No agent can edit those prompts. That
+remains the one thing here needing a person.
+
+Carried forward unchanged: the photographs pass should go after the 985 officers with no
+portrait at all rather than extend portraits into years that render none, and
+`data/photos/2022-23-cole-bornefeld.jpg` is still a PNG under a `.jpg` name.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president, 297 mirrored
+documents, 1,111 pieces of legislation. On `main` at close, `build.py` completes cleanly over
+61 year pages and 7 decade pages, `check_data.py` and `check_contrib.py` both exit 0, and
+`check_duplicates.py` reports the same six pairs. I read them again rather than take the last
+pass's word: all six are correctly separate, the three bills of 1 September 1991 most obviously
+so, and the regent advisory committee bill introduced in January 1992 and defeated in February
+being two events and the more telling for being two.

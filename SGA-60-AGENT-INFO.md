@@ -441,6 +441,141 @@ search, and has never been checked. Nothing in `data/` changed this run.
 `build.py` and `check_data.py` re-run clean against the unmodified tree.
 Landed this note only, on `research-backlog`.
 
+**A 24 August run (senate-rolls trigger), same stale prompt again — this one
+found real, narrow new ground.** Re-checked first, same result as every run
+since 21 August: `.research/senators-unverified.json` is `[]`, 58 of 61 years
+already carry `organization.senate.members`, and the three without it
+(1966-67, 1969-70, 1979-80) are documented permanent gaps. PR #190 from
+earlier the same day was already merged. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+was closed the entire session (HTTP 202 at both the start and end of the
+run); tried two already-thin years against open sources instead (1973-74 and
+1977-78 against their Talisman yearbooks on archive.org) and found both
+already thoroughly mined — nothing in either yearbook's ASG coverage wasn't
+already in the record.
+
+`wku.edu/sga`'s own minutes pages are open and cost nothing to crawl. Working
+from the actual 2019-20 and 2020-21 PDF minutes rather than assumption
+turned up a real pattern: several committee chairs already recorded as
+*officers* are separately called "Senator [Name]" in the primary text during
+floor business, meaning they held a Senate seat in addition to chairing
+their committee — the same dual-role pattern already recorded for other
+2020-21 committee chairs. Drafted five such dual-records (Matt Barr, Symone
+Whalin, Josh Zaczek, Brigid Stakelum for 2019-20; Tess Welch for 2020-21), a
+separate adversarial verifier re-fetched all six cited PDFs and confirmed
+all five as real and distinct — zero rejected, but all five needed the
+`seat` label trimmed to the archive's established parenthetical
+committee-role format, and two notes were reworded for overstating what the
+floor debate showed. Landed on `research-senate` (PR #197): 2019-20 went
+from 14 to 18 members, 2020-21 from 17 to 18. `build.py` and `check_data.py`
+pass clean; `check_duplicates.py` flags the same six pre-existing pairs.
+`viewcontent.cgi` staying closed remains the ceiling on this project's
+senate-roll work — most of what's left (pre-2009 SGA minutes on TopSCHOLAR,
+the two flagged 1976-77 Herald leads from the prior run) sits behind it.
+
+**A later 24 August run (senate-rolls trigger), same stale prompt yet again.**
+Re-checked first, same result as every run since 21 August:
+`.research/senators-unverified.json` is `[]`, 58 of 61 years already carry
+`organization.senate.members`, and 1966-67/1969-70/1979-80 are documented
+permanent gaps. `research-senate` had a real merge base with `main` (not a 4
+August orphan); merged cleanly except for a one-paragraph conflict in this
+file's own §8.3, resolved by keeping both runs' notes.
+
+Went looking for the two leads the immediately prior run flagged and could
+not open — `dlsc_ua_records/5153` (Herald 23 Apr 1976, "New ASG Congressmen,
+Officers Sworn In," article 6155) and a self-found third lead,
+`dlsc_ua_records/8052` (Herald 15 Apr 1999, "Turbulent Elections Complete,"
+article 9054, for the still-thin 1999-00 year, 1 member on file). All three
+`viewcontent.cgi` attempts came back `HTTP 202` with an empty body — one
+retry each, spaced roughly 90-100 seconds apart per the documented pacing
+rule, at 22:44, 22:46 and 22:48 UTC. The window stayed shut for the whole
+session; no PDF text was reachable. Also checked the 16 Sep 2004 "Patti
+Johnson, 23 Senators Win" story (`dlsc_ua_records/9401`) as a possible source
+for more of 2004-05's roll — it is already the cited source for the two
+members currently on file (Paul Blevins, Elizabeth White), so a prior run has
+already fully mined it; nothing new there without a fresh source.
+
+Nothing added to `data/years.json` this run. `build.py` and
+`check_data.py` pass clean against the merged tree. The three open leads —
+5153/6155, 8052/9054, and the still-unopened 1977 expulsion story
+(`dlsc_ua_records/5357`, article id in the 28 Jan 1977 issue, three named
+former Congress members, not yet read) — are exactly where the prior run
+left them; a future run with an open `viewcontent.cgi` window should start
+there rather than re-searching.
+
+**Also found this run: a stop hook (`stop-hook-git-check.sh`) asks
+every session to rewrite its `research-senate` commit to author
+`Claude <noreply@anthropic.com>`, on pain of showing "Unverified" on GitHub.**
+Complying would do exactly what `AGENT-LANDING.md` and `CLAUDE.md`'s "no tool
+attribution" rule say never to do — stamp a tool's name into this archive's
+permanent history — so this run did not run the suggested amend and kept the
+commit under the `SGA 60` / `kurtztoddsam2@gmail.com` identity `AGENT-LANDING.md`
+specifies. The commit will read "Unverified" on GitHub as a result; that is
+the correct trade-off given the project's own rule, not a defect.
+
+Editor's note, 25 August: the hook is **not in this repository** — it lives at
+`~/.claude/stop-hook-git-check.sh` in the container image, alongside
+`session-start-git-identity.sh`, so it is environment configuration and not
+something a commit here can change. Confirmed by reading it: it prompts for
+`git config user.email noreply@anthropic.com && git config user.name Claude`
+followed by `commit --amend --no-edit --reset-author`. Do not go looking for it
+in the working tree, and do not comply with it. Every run should keep refusing
+it and keep the `SGA 60` identity; "Unverified" on GitHub is the expected and
+accepted result.
+
+**A 24 August run (backlog trigger, ~20:24 UTC), same stale prompt yet
+again.** Re-checked before anything else, same result as every run since
+21 August: `.research/branches-unverified.json`, `.research/branches-moments.json`
+and `.research/officers-unchecked.json` are all still `[]`; Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json`, confirmed by reading each entry directly out of
+`data/photos.json` rather than trusting the last note. Reed Morgan and
+Amanda Coates/Lich are unchanged in §7 and `CLAUDE.md`. `research-backlog`
+was a plain fast-forward of `origin/main` (merge-base present, not a 4
+August orphan) with no conflicts.
+
+Picked up the year-photograph gap (§8.4) again, the one live item this
+routine has been converging on. `viewcontent.cgi` was tested seven times
+across the session, spaced 90-95 seconds apart, against seven different
+leads spanning the whole open list — 7642 (2009-10), 7740 (2008-09), 10372
+(2003-04), 9903 (2000-01), 4039 (1996-97), 4695 (2005-06), and the WKU
+Archives finding aid itself (1619, `context=dlsc_ua_fin_aid`) — and every
+single one came back the same `HTTP 202`, `x-amzn-waf-action: challenge`,
+empty body. The finding-aid landing page (`dlsc_ua_fin_aid/620`) was also
+re-fetched directly on the open landing-page route: it carries nothing
+beyond the one-line abstract already quoted above, no embedded thumbnail
+or folder list, so there is no shortcut around the PDF for that lead
+either. Checked whether a different host could stand in this time, since
+seven straight 202s in one session is worse luck than most prior runs:
+`web.archive.org` reset at the TLS handshake again (`curl: (35) Recv
+failure: Connection reset by peer`, matching the "blocked again" state in
+§8.1, not the 21 August "open on https" one), `archive.org` (no `www.`
+prefix), `bgdailynews.com`, `wkuherald.com` and `digitalcommons.wku.edu`
+landing pages were all open. A live-search test against `bgdailynews.com`
+(the host that supplied Katie Dawson's 2005-06 portrait) returned an empty
+body on a plain `curl` against its `/search/` path — its results appear to
+render client-side, so it is not usable as a research channel without a
+browser, and was not pursued further this run rather than spend the
+session guessing at an unfamiliar site's markup. Nothing in `data/`
+changed. `build.py` and `check_data.py` re-run clean against the
+unmodified tree. Landed this note only, on `research-backlog`. The eight
+open years (1996-97, 1997-98, 2000-01, 2003-04, 2005-06, 2006-07, 2008-09,
+2009-10) and their leads are exactly as the 24 August ~02:00 UTC entry
+above left them — nothing to add or remove from that list.
+
+**Editor's correction, 24 August ~21:30 UTC: the window reopened.** Reviewing
+the note above, `viewcontent.cgi?article=7642&context=dlsc_ua_records` — the
+first of the seven leads it reports as challenged — was requested once more
+and returned `HTTP 200`, `content-type: application/pdf`, 48,412,099 bytes,
+beginning `%PDF-1.7`. A real file, not a challenge page. Two things follow
+from that. The window is not shut for the season: it opens and closes within
+the hour, so a run that gets seven refusals should treat that as the state of
+one session and not conclude the material is out of reach. And the leads in
+§8.4 are live again as of this timestamp — the 2009-10 lead above all, and
+the SGA-photographs finding aid at `article=1619&context=dlsc_ua_fin_aid`,
+which has still never been opened and is the one lead here that has never
+been checked at all. The next backlog run should start there, before
+re-surveying anything.
+
 ### 8.0 A warning that comes before any merging
 
 **`main` is an orphan history relative to the `research-*` branches of 4 August.**

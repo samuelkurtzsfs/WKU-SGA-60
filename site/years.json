@@ -12353,6 +12353,24 @@
        }
       },
       {
+       "name": "Gil Cowles",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting. Already recorded in years.json under 1982-83 as Ogden College alternate representative, confirmed 29 April 1982 - likely the same person continuing in Congress the following year, though no source links the two records.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Todd Duncan",
+       "seat": "P.R. Committee",
+       "note": "Appointed to the Public Relations Committee by Administrative Vice President Tony Whalen at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
        "name": "Pat Frencke",
        "seat": "Congress member",
        "note": "Named absent at the roll call of the 30 August 1983 ASG meeting.",
@@ -12368,6 +12386,15 @@
        "src": {
         "label": "ASG Meeting Minutes, 30 August 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Richard Helms",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
        }
       },
       {
@@ -12389,81 +12416,18 @@
        }
       },
       {
-       "name": "Frank Miller",
+       "name": "Kathy Holly",
        "seat": "Congress member",
-       "note": "Named absent at roll call in both surviving fall 1983 meetings, 30 August and 4 October. A common name; no other identifying detail is in either record.",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
        "src": {
-        "label": "ASG Meeting Minutes, 30 August 1983",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
-       }
-      },
-      {
-       "name": "Stanley Reagan",
-       "seat": "Congress member",
-       "note": "Moved to accept thirteen committee-position appointments at the 30 August 1983 meeting; his own Congress membership rests on this one floor motion, with no roll-call or direct-appointment record found.",
-       "src": {
-        "label": "ASG Meeting Minutes, 30 August 1983",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
-       }
-      },
-      {
-       "name": "Jeff Sharp",
-       "seat": "Congress member",
-       "note": "Named absent at roll call in both surviving fall 1983 meetings, 30 August and 4 October.",
-       "src": {
-        "label": "ASG Meeting Minutes, 30 August 1983",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
-       }
-      },
-      {
-       "name": "Todd Wallace",
-       "seat": "Congress member",
-       "note": "Moved to accept Jennifer Yeker's appointment to Congress, and separately moved to accept Resolution 83-1-F, at the 30 August 1983 meeting.",
-       "src": {
-        "label": "ASG Meeting Minutes, 30 August 1983",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
-       }
-      },
-      {
-       "name": "Chris Watkins",
-       "seat": "Congress member",
-       "note": "Named absent at the roll call of the 30 August 1983 ASG meeting.",
-       "src": {
-        "label": "ASG Meeting Minutes, 30 August 1983",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
-       }
-      },
-      {
-       "name": "Jennifer Yeker",
-       "seat": "Congress member",
-       "note": "Appointed to a Congress seat at the 30 August 1983 meeting; the motion to accept her appointment passed without discussion.",
-       "src": {
-        "label": "ASG Meeting Minutes, 30 August 1983",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
-       }
-      },
-      {
-       "name": "Johnny Ragan",
-       "seat": "Representative at Large",
-       "note": "Approved as a Representative at Large at the 6 September 1983 meeting, on a motion made, seconded and passed without recorded discussion. The given name Johnny is clear on the scan; the surname is not, and is recorded here as read. The typewriter on this document loses the descender of every g - the same page prints Large as \"Larae\" and College as \"Colleoe\" - so a reading of \"Ranan\" cannot be told apart from \"Ragan\" on the letter shapes alone. Congress minutes of this era spell the surname Ragan, Ragen, Raden and Racan across different scans. It should not be connected to Margaret Ragan, the 1982-83 president, whose term ended before this Congress sat.",
-       "src": {
-        "label": "ASG Meeting Minutes, 6 September 1983",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+        "label": "ASG Meeting Minutes, 28 February 1984",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
        }
       },
       {
        "name": "Kevin Jackson",
        "seat": "Rules and Elections Committee",
        "note": "Assigned to the Rules and Elections Committee at the 6 September 1983 meeting, on a motion made, seconded and passed.",
-       "src": {
-        "label": "ASG Meeting Minutes, 6 September 1983",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
-       }
-      },
-      {
-       "name": "Kim Robertson",
-       "seat": "Student Affairs Committee",
-       "note": "Assigned to the Student Affairs Committee at the 6 September 1983 meeting.",
        "src": {
         "label": "ASG Meeting Minutes, 6 September 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
@@ -12497,52 +12461,16 @@
        }
       },
       {
-       "name": "Shiela Marie Waninger",
-       "seat": "Alternate, College of Education",
-       "note": "Appointed alternate representative for the College of Education at the 6 September 1983 meeting.",
-       "src": {
-        "label": "ASG Meeting Minutes, 6 September 1983",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
-       }
-      },
-      {
-       "name": "Gil Cowles",
+       "name": "Frank Miller",
        "seat": "Congress member",
-       "note": "Named among the unexcused absences at the 28 February 1984 meeting. Already recorded in years.json under 1982-83 as Ogden College alternate representative, confirmed 29 April 1982 - likely the same person continuing in Congress the following year, though no source links the two records.",
+       "note": "Named absent at roll call in both surviving fall 1983 meetings, 30 August and 4 October. A common name; no other identifying detail is in either record.",
        "src": {
-        "label": "ASG Meeting Minutes, 28 February 1984",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
-       }
-      },
-      {
-       "name": "Richard Helms",
-       "seat": "Congress member",
-       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
-       "src": {
-        "label": "ASG Meeting Minutes, 28 February 1984",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
-       }
-      },
-      {
-       "name": "Kathy Holly",
-       "seat": "Congress member",
-       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
-       "src": {
-        "label": "ASG Meeting Minutes, 28 February 1984",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
        }
       },
       {
        "name": "James Moorman",
-       "seat": "Congress member",
-       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
-       "src": {
-        "label": "ASG Meeting Minutes, 28 February 1984",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
-       }
-      },
-      {
-       "name": "Paul Wellander",
        "seat": "Congress member",
        "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
        "src": {
@@ -12560,12 +12488,84 @@
        }
       },
       {
-       "name": "Todd Duncan",
-       "seat": "P.R. Committee",
-       "note": "Appointed to the Public Relations Committee by Administrative Vice President Tony Whalen at the 28 February 1984 meeting.",
+       "name": "Johnny Ragan",
+       "seat": "Representative at Large",
+       "note": "Approved as a Representative at Large at the 6 September 1983 meeting, on a motion made, seconded and passed without recorded discussion. The given name Johnny is clear on the scan; the surname is not, and is recorded here as read. The typewriter on this document loses the descender of every g - the same page prints Large as \"Larae\" and College as \"Colleoe\" - so a reading of \"Ranan\" cannot be told apart from \"Ragan\" on the letter shapes alone. Congress minutes of this era spell the surname Ragan, Ragen, Raden and Racan across different scans. It should not be connected to Margaret Ragan, the 1982-83 president, whose term ended before this Congress sat.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Stanley Reagan",
+       "seat": "Congress member",
+       "note": "Moved to accept thirteen committee-position appointments at the 30 August 1983 meeting; his own Congress membership rests on this one floor motion, with no roll-call or direct-appointment record found.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Kim Robertson",
+       "seat": "Student Affairs Committee",
+       "note": "Assigned to the Student Affairs Committee at the 6 September 1983 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Jeff Sharp",
+       "seat": "Congress member",
+       "note": "Named absent at roll call in both surviving fall 1983 meetings, 30 August and 4 October.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Todd Wallace",
+       "seat": "Congress member",
+       "note": "Moved to accept Jennifer Yeker's appointment to Congress, and separately moved to accept Resolution 83-1-F, at the 30 August 1983 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Shiela Marie Waninger",
+       "seat": "Alternate, College of Education",
+       "note": "Appointed alternate representative for the College of Education at the 6 September 1983 meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 6 September 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/480"
+       }
+      },
+      {
+       "name": "Chris Watkins",
+       "seat": "Congress member",
+       "note": "Named absent at the roll call of the 30 August 1983 ASG meeting.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
+       }
+      },
+      {
+       "name": "Paul Wellander",
+       "seat": "Congress member",
+       "note": "Named among the unexcused absences at the 28 February 1984 meeting.",
        "src": {
         "label": "ASG Meeting Minutes, 28 February 1984",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/441"
+       }
+      },
+      {
+       "name": "Jennifer Yeker",
+       "seat": "Congress member",
+       "note": "Appointed to a Congress seat at the 30 August 1983 meeting; the motion to accept her appointment passed without discussion.",
+       "src": {
+        "label": "ASG Meeting Minutes, 30 August 1983",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
        }
       }
      ]
@@ -46666,6 +46666,15 @@
      ],
      "members": [
       {
+       "name": "Matt Barr",
+       "seat": "Senator (Campus Improvements Committee Head)",
+       "note": "Already recorded as Campus Improvements Committee Head; the 11 February 2020 Senate minutes separately call him \"Senator Matt Barr\" as he spoke in favor of Bill 1-20-S as its sponsor and accepted a friendly amendment offered by Senator Symone Whalin, confirming he held a Senate seat in addition to chairing the committee.",
+       "src": {
+        "label": "SGA Senate minutes, 11 Feb 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/sp20/minutes_2_11_20.pdf"
+       }
+      },
+      {
        "name": "Bradon Burks",
        "seat": "Senator",
        "note": "Called \"Sen. Bradon Burks\" in the Herald and \"Senator Burks\" making floor motions in the 22 and 29 October 2019 Senate minutes.",
@@ -46773,6 +46782,15 @@
        }
       },
       {
+       "name": "Brigid Stakelum",
+       "seat": "Senator (Public Relations Committee Head)",
+       "note": "Already recorded as Public Relations Committee Head; the 18 February 2020 Senate minutes separately call her \"Senator Stakelum\" during announcements, confirming she held a Senate seat in addition to chairing the committee.",
+       "src": {
+        "label": "SGA Senate minutes, 18 Feb 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/sp20/minutes_2_18_20.pdf"
+       }
+      },
+      {
        "name": "Anthony Survance",
        "seat": "Senator",
        "note": "Named as author, alongside Symone Whalin, on the resolution seeking disciplinary action against the Epsilon Kappa chapter of Alpha Xi Delta; also recorded questioning a Judicial Council nominee's membership in WKU College Republicans at the confirmation meeting of 25 February 2020.",
@@ -46788,6 +46806,24 @@
        "src": {
         "label": "Herald, 26 Feb 2020 - SGA confirms 5 senators, 4 voted in unanimously",
         "url": "https://wkuherald.com/16659/news/sga-confirms-5-senators-4-voted-in-unanimously/"
+       }
+      },
+      {
+       "name": "Symone Whalin",
+       "seat": "Senator (Diversity and Inclusion Committee Head)",
+       "note": "Already recorded as Diversity and Inclusion Committee Head; the 11 February 2020 Senate minutes separately call her \"Senator Symone Whalin\" as she offered a friendly amendment to Bill 1-20-S, confirming she held a Senate seat in addition to chairing the committee.",
+       "src": {
+        "label": "SGA Senate minutes, 11 Feb 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/sp20/minutes_2_11_20.pdf"
+       }
+      },
+      {
+       "name": "Josh Zaczek",
+       "seat": "Senator (Legislative Research Committee Chair)",
+       "note": "Already recorded as Legislative Research Committee Chair; the 3 March 2020 Senate minutes separately call him \"Senator Zaczek\" twice during floor debate on Bill 3-20-S — first asking about the project's timeline, then about its funding source — confirming he held a Senate seat in addition to chairing the committee.",
+       "src": {
+        "label": "SGA Senate minutes, 3 Mar 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/sp20/minutes_3_3_20.pdf"
        }
       }
      ]
@@ -47556,6 +47592,19 @@
        "src": {
         "label": "SGA Senate minutes, 9 Feb 2021",
         "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/2_9_21_minutes.pdf"
+       }
+      },
+      {
+       "name": "Tess Welch",
+       "seat": "Senator (Academic and Student Affairs Committee Chair)",
+       "note": "Already recorded as Academic and Student Affairs Committee Chair; the 27 October 2020 Senate minutes call her \"Senator Welch\" as she flagged a $110 cost discrepancy in the SGA rebranding bill (Bill 1-20-F), and the 26 January 2021 minutes call her \"Senator Tess Welch\"/\"Senator Welch\" as she questioned the funding source and proposed a friendly amendment on Bill 2-21-S (funding for the CHHS Diversity, Equity and Inclusion student group), confirming she held a Senate seat in addition to chairing the committee.",
+       "src": {
+        "label": "SGA Senate minutes, 27 Oct 2020",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/10_27_20_minutes.pdf"
+       },
+       "src2": {
+        "label": "SGA Senate minutes, 26 Jan 2021",
+        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/1_26_21_minutes.pdf"
        }
       },
       {
