@@ -702,6 +702,40 @@ single most promising open lead for 2004-05 once it opens.
 Nothing added to `data/` this run. `build.py` and `check_data.py` re-run
 clean against the merged tree. Landed this note only, on `research-senate`.
 
+**A later 25 August run (senate-rolls trigger, ~06:45 UTC), the stored
+prompt still describing zero senate members.** Re-checked first, same
+result as every run since 21 August: `.research/senators-unverified.json`
+is `[]`, and the roll stands unchanged at 1,487 member records across 58 of
+61 years. Retested the one open lead named by the run six hours earlier —
+`viewcontent.cgi` for article 9401 ("Patti Johnson, 23 Senators Win Student
+Government Association Elections," 2004-05's best remaining source) —
+worth recording precisely what was tried: the number that run used,
+`article=9401`, is actually the TopSCHOLAR *item* id
+(`dlsc_ua_records/9401`), not the PDF's own `article=` parameter; the
+landing page's own citation meta tag gives the real value,
+`article=10386`. Fetched both directly (30 seconds apart, browser
+navigation headers, correct `Referer`) — same Cloudflare "Attention
+Required" challenge page on both, so the distinction turned out not to
+matter this run, but a future one that retries this lead should use
+`article=10386`, not `9401`, since only the first is the PDF's real
+identifier. The landing page itself (`dlsc_ua_records/9401`, no `cgi/`
+in the path) loads fine over plain HTTPS with no special headers and no
+block at all — only `viewcontent.cgi` is behind Cloudflare — but its
+abstract does not carry the senator names, only the headline already on
+file.
+
+Checked `wkuherald.com` as the other possible route to 2004-05, since its
+full text is supposed to start around 2003. Coverage in the exact
+September–October 2004 window is thin: 11 posts total across six weeks
+(`per_page=100`, `after=2004-09-01`, `before=2004-10-15`), and only the
+one SGA post already known (`SGA preparing for September elections`) —
+no post from the days after the 14–15 September election that would carry
+a results story or the 23 winners' names. Whatever ran this scrape did
+not capture that week's issue. Not a promising route without the PDF.
+
+Nothing added to `data/` this run either. `build.py` and `check_data.py`
+re-run clean. Landed this note only, on `research-senate`.
+
 **A 25 August run (backlog trigger, ~04:20 UTC), same stale prompt yet
 again — re-checked first, same result as every run since 21 August.**
 `.research/branches-unverified.json`, `.research/branches-moments.json` and
@@ -1875,7 +1909,9 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   weren't in scope here.
 - **`Chris Grau` (Office Secretary, 1968-69)** carries a note in the data reading
   "SPELLING UNVERIFIED, do not publish without a second look", possibly
-  "Christina L. Graue" per the minutes signature. Still unverified.
+  "Christina L. Graue" per the minutes signature. Still unverified — but see
+  the 25 August note below: the minutes' own typed transcription of the name
+  turns out to contain a typo, so it isn't a clean tiebreaker either.
 - **`Amos Gott` / `Amos E. Gatt`** — the 1989-90 session prints the same person's
   name two ways on two resolutions. Both are kept as printed rather than merged.
   Flagged, not fixed, per the project rule.
@@ -1883,6 +1919,55 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   call."** The membership is what the entry establishes; the absence is only the
   evidence for it. The two should probably swap places. Accurate as it stands,
   which is why it merged, but it reads oddly.
+
+**A 25 August run (backlog trigger), same stale prompt yet again — re-checked
+first, same result as every run since 21 August.** `.research/branches-unverified.json`,
+`.research/branches-moments.json` and `.research/officers-unchecked.json` are all
+still `[]`; Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all still
+carry a portrait in `data/photos.json`; Reed Morgan and Amanda Coates/Lich are
+unchanged in §7 and `CLAUDE.md`; the ~20 weak citations and the pre-2011
+legislation harvest are both still done. `research-backlog` had a real merge
+base with `main` (fast-forwarded cleanly, 3 commits, no conflicts).
+
+`viewcontent.cgi` was tested once against the strongest open year-photograph
+lead (article 7740, 2008-09) and came back the same Cloudflare "Attention
+Required" `HTTP 403` challenge every run since 25 August ~00:30 UTC has
+reported — not re-tested further, since the last several runs already
+established this is a by-the-hour window and a single confirmation was enough
+to know today's state without burning the session on repeat retries.
+
+Instead of re-confirming staleness a further time, this run took the one
+item in §8.5 that doesn't depend on `viewcontent.cgi` opening: **Chris Grau /
+Christina L. Graue (Office Secretary, 1968-69)**. The Congress minutes of 13
+February 1969 are already mirrored locally
+(`data/documents/1968-69-minutes-1969-02-13.pdf`), so this needed no network
+access at all — rendered the page at high resolution and read the signature
+block directly, then had a separate adversarial subagent redo the same
+rendering and reading independently, blind to my conclusion. Both readings
+agree: the minutes' own **typed** name line reads "Christing L. Graue," not
+"Christina" — a typographical slip, with a small mark under the "g" that may
+be a proofreading correction — while the **cursive signature** above it is
+visually more consistent with "Christina" (a closed "a" loop, not a "g"
+descender). This doesn't resolve the original question (Talisman's "Chris
+Grau" vs. the minutes' "Graue") — it can't, since it's the same document
+already cited — but it does establish that the minutes' own transcription of
+the name is internally inconsistent, so it should not be treated as a clean
+tiebreaker against the Talisman's spelling. Added to the note and profile in
+`data/years.json`, still flagged as unverified per the project's "flag, don't
+fix" rule for spelling doubts, plus linked the entry's `src2` to the
+already-mirrored PDF. `build.py`, `check_data.py` and `check_duplicates.py`
+all pass clean (61 years, 2019 events, 60 presidents; the same six duplicate
+pairs, unchanged). Landed on `research-backlog`.
+
+**What's left in §8.5 after this:** `Amos Gott`/`Amos E. Gatt` stays flagged,
+not fixed, correctly. The senate-roll "recorded absent" wording is a
+build/copy question, not a data one, and is not this routine's to decide
+unilaterally. The rest of the live backlog is exactly where every run since
+21 August left it: the eight open year-photograph years
+(1996-97, 1997-98, 2000-01, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10) all
+still need `viewcontent.cgi` to open; the stale "SGA 60 - backlog" trigger
+(`trig_01LjXLD8nYoNr8M2RehpHZMu`) is still unfixable by an agent session (see
+the 24 August entries above) and still needs the account owner's attention.
 
 ---
 
