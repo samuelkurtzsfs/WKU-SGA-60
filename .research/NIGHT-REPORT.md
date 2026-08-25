@@ -6495,3 +6495,83 @@ designated-driver entries three months apart and the Herald's report between the
 the regent advisory bill introduced and then defeated, the Civil Liberties Union
 suit planned and then endorsed, plus/minus grading discussed and then voted, and
 three distinct bills of 1 September 1991.
+
+---
+
+# 25 August 2026 — editor's pass, one documentation pull request merged
+
+## What I reviewed
+
+One pull request was open: **#219, "Research: the backlog"**, on `research-backlog`.
+The stale trio this prompt still asks after — #6, #7 and #8 — were closed on
+18 August and have been closed for a week; there was nothing to rescue or bury.
+
+#219 was 52 lines appended to `SGA-60-AGENT-INFO.md` §8 and nothing else. No
+`data/` change, no new event, no new leader, no new citation. There were no
+historical claims in it to sample, so instead of a spot-check I put every
+assertion the note makes about the state of the repository back against the
+repository. All of them held: the three `.research` queues are empty lists;
+Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all carry a portrait
+in `data/photos.json`; Reed Morgan and Amanda Coates/Lich are unchanged in §7
+and `CLAUDE.md`; and the build counts the note quotes are the counts the build
+produces. `git merge-base` put the branch's base at `main`'s own head, so this
+was an ordinary branch and not one of the 4 August orphans.
+
+## What I cut
+
+One thing, and it was the only reason this pull request did not merge as it
+stood. The note recorded a **live session identifier** in the middle of an
+otherwise useful observation about the routine self-disable carve-out. The rule
+against tool attribution covers session links in repository text, and this was
+the only such identifier anywhere in the repository outside `site/`, which never
+received it. Cut in 633e7b4, pushed to the branch before the merge. The
+substance stayed: that a routine's own session may set `enabled=false` even
+though it cannot edit its stored prompt, and that using it is the account
+holder's call and not a run's.
+
+Rescue over deletion is the standing instruction and it applied cleanly here —
+the observation is worth having in the handoff, the identifier was not.
+
+## The traps checklist
+
+Nothing to catch. No advance-notice sourcing, no committee chair promoted to
+officer, no surname matching, no changed surname, no April election filed into
+the wrong academic year, nothing touching the settled facts, no living-person
+detail, no contributor edit in the diff.
+
+## What I did not cut
+
+The six duplicate pairs, read again and all six genuinely separate. The closest,
+1997-98 "Designated driver cards" at 0.6, is Bill 97-3-F funding the cards on
+4 November 1997 set against the *Herald*'s 17 February 1998 report that
+distribution was starting — four months and two sources apart. That second entry
+is worth holding up as the model: its source is a contents listing, and it says
+so outright rather than writing a result out of a headline. The rest are the
+regent advisory bill introduced and then defeated, the Civil Liberties Union
+suit planned and then endorsed, plus/minus grading opposed and then voted, and
+three distinct bills of 1 September 1991.
+
+## Still open
+
+The standing item, still for a person and not a routine. The trigger driving
+this backlog routine has now fired every four hours since 17 August against a
+prompt stale since the 21st, and a session cannot rewrite it. The editor prompt
+that produced this pass still asks after three pull requests closed a week ago.
+Two of the last several pull requests on this project exist only to report that
+there was nothing to do. That is a scheduling problem, and it is still the most
+valuable ten minutes anyone could spend on this archive.
+
+Otherwise everything carried over carries over. Sarah Vincent has no portrait on
+2022-23. Herald leads 5153, 8052 and 5357 are unread. The eight open
+year-photograph years still wait on `viewcontent.cgi`, and
+`data/photos/2022-23-cole-bornefeld.jpg` is still a PNG under a `.jpg` name.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president,
+297 mirrored documents, 1,111 pieces of legislation, 181 portrait entries and 61
+year photographs — unchanged from this morning, as a documentation-only merge
+should leave them. On `main` at close, `build.py` completes cleanly over 61 year
+pages and 7 decade pages, `check_data.py` and `check_contrib.py` both exit 0, and
+`check_duplicates.py` reports the same six pairs, all read and all correctly
+separate.
