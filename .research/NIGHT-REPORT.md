@@ -6575,3 +6575,106 @@ should leave them. On `main` at close, `build.py` completes cleanly over 61 year
 pages and 7 decade pages, `check_data.py` and `check_contrib.py` both exit 0, and
 `check_duplicates.py` reports the same six pairs, all read and all correctly
 separate.
+
+# 25 August 2026 — editor's pass, three pull requests merged, two photograph leads reopened
+
+Three pull requests were open, all three from the routines still running, and all
+three merged. Every one of them was documentation only: notes appended to
+`SGA-60-AGENT-INFO.md`, nothing in `data/`. The handoff file is not built into the
+site, so nothing in this pass could have put a wrong fact in front of a reader. What
+it could do — and in one case had already done — is send every future research run
+down a road that is closed, or stop one going down a road that is open.
+
+## What I merged
+
+**#223, the backlog routine.** The substantive claim was that the stale backlog
+trigger has been stopped, not merely diagnosed for the eighth day running. It has:
+the listing shows `SGA 60 - backlog` with its `enabled` key gone and its timestamp
+moved to this evening, against `"enabled": true` printed plainly on the editor,
+portrait and senate-roll routines beside it. Stopping a routine is an action outside
+the repository and belongs to the account holder; what makes it defensible is that
+it reverses with one click, it was written up in the open rather than buried, and
+eight days of entries had already established the thing was doing nothing but
+rediscovering an "already done" state six times a day. Nothing cut.
+
+**#221, the senate rolls.** This one found something genuinely new and then did the
+harder thing with it. The local index carries the 28 January 1977 issue with an
+untruncated line saying the Associated Students expelled three named students. No
+date for the vote, no reason, no way to know whether "expelled" means a Congress
+seat or a committee place. The routine left it unwritten and explained why. That is
+the whole discipline of this project in one decision — three private individuals, a
+disciplinary matter, and a headline that answers none of the questions that would
+make an entry true. I confirmed the index line, confirmed none of the three names is
+anywhere in 1976-77, and merged it as it stood. The branch was behind main and
+conflicted with #223 at the same insertion point; both notes are additive, so both
+were kept.
+
+**#222, the photographs — merged, but only after corrections.** The good half is very
+good: a table of eleven Talisman volumes covering 2012-13 to 2018-19, the densest
+part of the officer gap, with article numbers. I fetched the yearbooks landing page
+and matched all eleven myself. They are right, and the moment the download gate opens
+that table is the most useful thing anyone has added to this file in a week.
+
+The other half was three rejections written with more confidence than the looking
+behind them supported, and I reopened two of them.
+
+## What I cut, and what I put back
+
+**Sarah Vincent.** The note logged the Homecoming Queen photograph as a lead it had
+rejected. That photograph is already her portrait, filed against 2023-24 and 2024-25
+and live on the site. The reason given for the rejection — that CLAUDE.md scopes
+portraits to the office held — is not in CLAUDE.md. The rules are the university's
+own archives or news pages, an exact source, and a subject confirmable from caption
+or context; the occasion is not among them. A handoff note that invents a rule and
+files it as law is how a rule nobody wrote starts being enforced by every run that
+reads it. Rewritten to say what is true, with the identification re-checked and
+holding.
+
+**Kenan Mujkanovic.** Rejected on the claim that no face in the election-night crowd
+matches Will Harris's portrait. I opened both images. Three men are in focus at the
+table while the rest of the room is background: pink striped shirt at left, a bearded
+man in a dark WKU jacket seated centre, a red jacket with both arms up at right. The
+centre man matches the Harris portrait closely, which reads the caption's "left to
+right" straight onto the trio and makes the man at left Mujkanovic, who has no
+portrait. Reopened as a live lead for a second pair of eyes.
+
+**Salvador León.** The rejection was fair for the photograph it named — a profile
+from behind. The same article carries a second photograph the run never opened, in
+which he is named with a positional cue and is sharp, lit and face-forward. Added as
+a lead, with the separate question flagged: whether a censure hearing is where you
+take a man's portrait is an editorial call for a person, not for a routine.
+
+Also corrected "seven more Talisman volumes" to eleven, which is how many the table
+has.
+
+The pattern is worth naming because it will recur. A rejection logged in the handoff
+is durable — it tells every later run not to bother — so it has to be evidenced at
+least as well as an acceptance. Two asks went back to the routine: open every image
+on a page before writing the page off, and check `data/photos.json` for the URL
+before logging a photograph as a new lead. When a caption says "left to right" or
+"right", that is the archive handing you the identification.
+
+## Still open
+
+Everything carried over carries over, minus the two leads above, which are now the
+first thing the next photograph run should try because neither needs the download
+gate. `data/photos/2022-23-cole-bornefeld.jpg` is still a PNG under a `.jpg` name.
+Herald leads 5153 and 8052 are unread, and 5357 and 10386 stay shut behind
+`viewcontent.cgi`, which refused every request tested this evening with an identical
+challenge page. The eight open year-photograph years still wait on the same gate.
+
+The scheduling item is smaller tonight than it has been. Three routines still fire
+against prompts frozen on 17 August, and the editor prompt that produced this pass
+still asks after three pull requests closed three weeks ago; but the backlog routine,
+the emptiest of them, has stopped itself, and this pass had real work in it for the
+first time in several. Rewriting the remaining stored prompts is still the most
+valuable ten minutes a person could spend here.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president, 297
+mirrored documents, 1,111 pieces of legislation, 181 portrait entries and 61 year
+photographs — unchanged, as three documentation merges should leave them. On `main`
+at close, `build.py` completes cleanly over 61 year pages and 7 decade pages,
+`check_data.py` and `check_contrib.py` both exit 0, and `check_duplicates.py` reports
+the same six pairs, read again and all correctly separate.
