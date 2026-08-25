@@ -869,6 +869,63 @@ Landed this note only, on `research-senate`. The two open leads for 1977-78
 and 2004-05, and the never-opened SGA-photographs finding aid noted
 elsewhere in this file, are exactly where the prior run left them.
 
+**A 25 August run (senate-rolls trigger), stored prompt still describing
+zero senate members.** Re-checked first, same result as every run since 21
+August: `.research/senators-unverified.json` is `[]`, so the reconciliation
+step in the stored prompt was already done and skipped. The roll stands
+unchanged at 1,487 member records across 58 of 61 years; `research-senate`
+was already 0 commits behind `main` (a fast-forward merge landed by an
+editor pass earlier the same day), so nothing to bring forward.
+
+Tested `viewcontent.cgi` directly against the two strongest open leads —
+`article=5357` (the still-unopened 1977 expulsion story) and `article=10386`
+(2004-05's "Patti Johnson, 23 Senators Win") — both came back `HTTP 403`,
+the same Cloudflare "Attention Required" shape every run since 25 August
+~00:30 UTC has logged; a second pass after the documented 90-second backoff
+was not run this time (single confirmation was enough to match five days of
+identical reports, and burning more attempts against a window every recent
+run has found shut was not a good use of this one). `web.archive.org`
+continued to fail at the TLS handshake on a plain, non-WKU fetch, the
+"blocked again" state.
+
+One genuinely new thing this run did: re-read the local
+`data/herald-index-full.json` entry for the 28 Jan 1977 issue
+(`dlsc_ua_records/5357`) in full rather than just confirming the article
+number is on file. The issue's own index line — "Associated Student
+Government Expels 3 – Alice Pannier, Paul Stamp, Mary Smith" — is not
+truncated (well under the 300-character cap) and names three people, none
+of whom are currently in 1976-77's `organization.senate.members` or
+`events`. This was deliberately **not** added. It is a headline with no
+article body behind it: no date for the actual expulsion vote, no stated
+reason, and no way to confirm whether "expelled" here means removed from a
+Congress seat, from a committee, or something else entirely — exactly the
+"read the article, not the headline" trap this file's §6 already warns
+about, sharpened further by `CLAUDE.md`'s living-people rule, since this is
+a disciplinary action naming three private individuals and a bare headline
+is not a "cited source reported" outcome in the sense that rule means. The
+lead itself was already tracked (it is the same article 5357 named in the
+24 August entries above); this run adds only the confirmation that the
+local index carries the full headline text and that it is not, on its own,
+enough to write an entry from.
+
+Also confirmed 1979-80 needs no further Talisman work: its `organization`
+already carries a full executive slate and a senate note explaining why no
+seat roster survives (the year's own constitutional amendment restructured
+Congress mid-year and the 1980 Talisman's account, already cited at p. 274,
+is the only source found describing the change, not naming who held the new
+seats) — this is the existing, already-researched state, not a new finding,
+checked here only to rule out re-work.
+
+Nothing in `data/` changed this run. `build.py`, `check_data.py` and
+`check_duplicates.py` all re-run clean against the unmodified tree (61
+years, 2019 events, 60 presidents, 1,487 senate member records across 58
+years; the same six known duplicate pairs, unchanged). Landed this note
+only, on `research-senate`. The open leads — 5357, 10386/9401, and the
+2004-05/1999-00/1977-78 thin years generally — are exactly where every run
+since 24 August has left them, and still need `viewcontent.cgi` or
+`web.archive.org` to open, not a new search angle; the local index has now
+been read as closely as it can be without the article text behind it.
+
 
 ### 8.0 A warning that comes before any merging
 
