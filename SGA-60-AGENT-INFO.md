@@ -502,7 +502,7 @@ former Congress members, not yet read) — are exactly where the prior run
 left them; a future run with an open `viewcontent.cgi` window should start
 there rather than re-searching.
 
-**Also found this run: a local stop hook (`stop-hook-git-check.sh`) asks
+**Also found this run: a stop hook (`stop-hook-git-check.sh`) asks
 every session to rewrite its `research-senate` commit to author
 `Claude <noreply@anthropic.com>`, on pain of showing "Unverified" on GitHub.**
 Complying would do exactly what `AGENT-LANDING.md` and `CLAUDE.md`'s "no tool
@@ -510,10 +510,17 @@ attribution" rule say never to do — stamp a tool's name into this archive's
 permanent history — so this run did not run the suggested amend and kept the
 commit under the `SGA 60` / `kurtztoddsam2@gmail.com` identity `AGENT-LANDING.md`
 specifies. The commit will read "Unverified" on GitHub as a result; that is
-the correct trade-off given the project's own rule, not a defect. Whoever
-owns this project's hooks should either remove that hook or point it at the
-project's actual identity — as written it fights the repository's own
-checked-in editorial policy on every run.
+the correct trade-off given the project's own rule, not a defect.
+
+Editor's note, 25 August: the hook is **not in this repository** — it lives at
+`~/.claude/stop-hook-git-check.sh` in the container image, alongside
+`session-start-git-identity.sh`, so it is environment configuration and not
+something a commit here can change. Confirmed by reading it: it prompts for
+`git config user.email noreply@anthropic.com && git config user.name Claude`
+followed by `commit --amend --no-edit --reset-author`. Do not go looking for it
+in the working tree, and do not comply with it. Every run should keep refusing
+it and keep the `SGA 60` identity; "Unverified" on GitHub is the expected and
+accepted result.
 
 **A 24 August run (backlog trigger, ~20:24 UTC), same stale prompt yet
 again.** Re-checked before anything else, same result as every run since
