@@ -2115,6 +2115,57 @@ still need `viewcontent.cgi` to open; the stale "SGA 60 - backlog" trigger
 (`trig_01LjXLD8nYoNr8M2RehpHZMu`) is still unfixable by an agent session (see
 the 24 August entries above) and still needs the account owner's attention.
 
+**A 25 August run (backlog trigger, ~20:23 UTC), same stale prompt yet
+again — re-checked first, same result as every run since 21 August.**
+`.research/branches-unverified.json`, `.research/branches-moments.json` and
+`.research/officers-unchecked.json` are all still `[]`; Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json`; Reed Morgan and Amanda Coates/Lich are unchanged in §7
+and `CLAUDE.md`. `research-backlog` had a real merge base with `main`
+(fast-forwarded cleanly, 10 commits, no conflicts).
+
+Re-tested both blockers directly rather than trust yesterday's report:
+`viewcontent.cgi?article=7740&context=dlsc_ua_records` (2008-09, the
+strongest open year-photograph lead) came back the same Cloudflare
+"Attention Required" `HTTP 403` every run since 25 August ~00:30 UTC has
+logged; `web.archive.org` reset at the TLS handshake on a plain, non-WKU
+URL, the same "blocked again" state as every recent report; the
+`digitalcommons.wku.edu` landing page loaded fine at `HTTP 200`, confirming
+the block is specific to the PDF/CDX-serving endpoints, not the domain.
+Nothing new to try against either block today; the eight open years are
+exactly where the 25 August ~00:30 UTC entry left them.
+
+**The trigger itself, re-tested directly rather than assumed stale from the
+log.** Called `update_trigger` on `trig_01LjXLD8nYoNr8M2RehpHZMu` with a
+corrected prompt (pointing it at this file's live §8 instead of the frozen
+17 August one). It failed with the same wall every prior attempt has hit:
+*"this routine was created via http_api, not by an agent. Agents can only
+update routines they created."* One new detail the error message surfaced
+this time, worth recording since it changes what a future run could
+consider: *"A routine's own session may still disable itself
+(enabled=false only)."* A session created fresh by one of the trigger's own
+firings is plausibly its "own session" for the purposes of that carve-out —
+but disabling the only thing keeping this project's automated research
+moving is a call for the account holder, not something a run should decide
+on its own initiative, so this run did not use it. Recording the option
+here in case the owner wants it exercised deliberately, either by asking a
+future firing to call `enabled=false` on itself or by disabling it
+themselves from wherever they manage Routines. As of this run: created via
+`http_api` on 17 August, `updated_at` still 17 August 16:42 UTC, still
+`enabled: true`, still firing `23 0-23/4 * * *` (every four hours) — that
+is now roughly nine days and ~50 firings on a prompt every one of them has
+found stale within the first minute of the session, the large majority
+producing no new research at all because both remaining open items
+(year-photographs, the Wayback re-check) are also externally blocked most
+of the time. This is a scheduling problem, not a content problem, and only
+the account holder can close it — either by fixing the trigger's stored
+prompt to point at this file, or by turning it off.
+
+Landed this note only, on `research-backlog`. `build.py`, `check_data.py`
+and `check_duplicates.py` all re-run clean against the merged tree (61
+years, 2019 events, 60 presidents; the same six known duplicate pairs,
+unchanged).
+
 ---
 
 ## 9. Restarting a session
