@@ -1851,6 +1851,67 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   own April issues remain the only open work, and all of it needs
   `viewcontent.cgi` to actually open.
 
+  **The photograph agent's 25 August run: pivoted off the year-photograph
+  gap onto officer/senate portraits, and found four.** Re-checked first, as
+  every run does: all 60 presidents and 57 regents (including the four
+  named in the stored task prompt) still have a portrait — that population
+  is fully closed and does not need re-checking again by a future run
+  unless a new president is added to the record. `viewcontent.cgi` was
+  tried twice more, ~10 minutes apart, for the 1996-97 lead (article 4039)
+  and came back 403 both times (the landing page for the same item loaded
+  fine at 200, so this is specifically a PDF-fetch block, not a wider
+  outage) — still closed, no new attempt worth logging beyond confirming
+  the pattern holds.
+
+  The real gap turned out to be **cabinet and senate officer portraits**:
+  322 executive and 589 senate-officer (year, name) pairs with no photo,
+  essentially untouched by the year-photograph hunts above. wkuherald.com's
+  WP-JSON search (`/wp-json/wp/v2/posts?search=...`, not rate-limited like
+  digitalcommons) found two usable group photos from 2024-25, both with
+  captions naming each person by seat or position — the same identification
+  standard as everything else in `photos.json`:
+  - A Herald Editorial Board sit-down (77384, 27 Aug 2024) captioned
+    "Student Body President Sam Kurtz, middle, ... Student Body Vice
+    President Donte Reed, left, and Chief Financial Officer Ethan Taylor."
+    Kurtz already had a portrait; added **Donté Reed** (Executive Vice
+    President) and **Ethan Taylor** (Chief Financial Officer), both for
+    2024-25, cropped from the group shot with Pillow (`pip3 install
+    pillow` — not preinstalled, but installs cleanly and fast).
+  - A five-senator swearing-in (78720, 1 Oct 2024) captioned "From left:
+    Ciin Lun, Lola Norman, Cayden Bailey, Jakob Barker and Hermes Olmos."
+    Bailey and Barker already had portraits. Added **Ciin Lun** (senator
+    2024-25, Mahurin Honors College senator/officer 2025-26 — one photos.json
+    entry per year, same file) and **Hermes Olmos** (senator, 2024-25).
+    **Lola Norman does not appear anywhere in 2024-25's `organization`
+    data** — not a missing photo, a missing roster entry; nothing for a
+    photos.json record to attach to. Flagging for whichever routine
+    maintains senate rolls rather than adding a dangling photo entry.
+
+  **A real build-side bug, not just a research gap: `officer_index()` in
+  `scripts/build.py` silently dropped every rank-and-file senate member's
+  photo.** It rebuilds a fresh dict per member (to give members a synthetic
+  `office` from their seat) and the dict literal never included a `photo`
+  key, so even though `apply_photo_overlay()` correctly attaches `photo`
+  onto the member's record in `organization.senate.members`, the person-page
+  builder never saw it — the portrait was in the data but silently never
+  rendered. Caught by checking Hermes Olmos's own page after adding his
+  entry and finding no image. Fixed with a one-line addition to that dict
+  literal; rebuilding afterward showed exactly two more people affected
+  besides the two just added — Will Harris (2017-18) and Sam Kurtz
+  (2021-22) — and both already had a portrait via their president terms,
+  so nothing changed for them, only for future member-only photos. A future
+  run hunting senate-member (not officer) portraits specifically can now
+  trust that a correctly-attached photo will actually render.
+
+  Landed on `research-photos`, PR #216 (successor to #6, which closed
+  18 August without merging and was not reopenable). The eight-year
+  photograph gap is untouched from where the 24 August run left it — see
+  above for the leads — and the ~900 remaining officer/senate-officer
+  (year, name) pairs without a portrait are open ground for the next run:
+  the wkuherald.com WP-JSON search-by-name approach used here scales to
+  any named officer from ~2011 onward and does not hit the digitalcommons
+  pacing wall at all.
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
