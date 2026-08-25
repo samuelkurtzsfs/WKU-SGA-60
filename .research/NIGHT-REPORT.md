@@ -6004,3 +6004,110 @@ documents, 1,111 pieces of legislation. On `main` at close, `build.py` completes
 pass's word: all six are correctly separate, the three bills of 1 September 1991 most obviously
 so, and the regent advisory committee bill introduced in January 1992 and defeated in February
 being two events and the more telling for being two.
+
+# 25 August 2026 — editor's pass, three pull requests merged, one photograph rescued
+
+Three research pull requests open, all from the small hours of this morning: #203 the backlog
+run, #204 the rolling photographs pass, #205 the senate rolls. All three merged. Two were
+documentation and cost the archive nothing either way. The third put two faces on the site and
+came within one build rule of damaging a page it was not touching.
+
+The stale pull request numbers in the editor's own instructions — #6, #7 and #8, said to have
+been open since 4 August — no longer exist. Numbering is in the 200s. Whoever next edits that
+prompt should strike that paragraph; it sends the editor looking for three branches that were
+resolved weeks ago.
+
+## What I verified
+
+Twelve claims checked at their sources rather than taken from the reports.
+
+Sarah Vincent's portrait is the Herald's photograph of the 2024 Homecoming Queen award. The
+danger in it was obvious: a Homecoming Queen sharing a name with a speaker of the senate is
+exactly the coincidence this project is supposed to distrust. It is not a coincidence. The
+article's own text records her as SGA speaker of the senate, in the same paragraph as the
+crowning. The quoted caption is verbatim, the image is that article's feature photograph, and
+the file is a real JPEG — magic bytes FFD8, proper terminator, 254,141 bytes.
+
+Garrett Edmonds's portrait was extended to the three years he served before the presidency. The
+October 2018 Herald piece behind it is a profile of him as executive vice president, its
+photograph captioned with that office. The same article carries him back further still: he
+spent his freshman year chairing Campus Improvements, and Hounshell met him when he joined SGA
+in Fall 2017. So the chain is documented in the source, not inferred from a shared surname, and
+`name-aliases.json` already binds J. Garrett Edmonds to Garrett Edmonds.
+
+The senate run's dating argument I reproduced end to end, because it defends a date already in
+the archive. The February file prints 2015 and calls itself the sixteenth meeting of the
+Fourteenth Senate; the three November 2015 files are the tenth, eleventh and twelfth of the same
+Senate. A sixteenth meeting cannot fall nine months before the tenth. The document's printed
+year is the typo and the archive's 9 February 2016 stands. The minutes also name Kara Lowry and
+Kaycee Gibson appointed by President Richey, as reported.
+
+Both runs reported that `viewcontent.cgi` has started answering with a Cloudflare challenge
+rather than the AWS WAF one every earlier note describes. It has. The page came back 403 at
+5,485 bytes, titled "Attention Required! | Cloudflare" — the same byte count both runs recorded,
+reached independently. Landing pages stayed at 200. The 2012 Talisman, Vol. 83 is really on the
+yearbook listing between the 2013 and 2003 items, so the standing table was wrong and is now right.
+
+## What I cut
+
+Two citations on the photographs branch, pushed to it as 39c11ce before merging.
+
+The Edmonds entries carried their identity argument inside the citation label — "same person as
+2020-21 president J. Garrett Edmonds". That reads as harmless until you look at how the site is
+built: `build.py` keeps the longest label it finds for any given URL. The parenthetical would
+therefore have displaced the clean citation on Garrett Edmonds's own presidential page,
+publishing an internal working note as the visible source line on a president's profile. Trimmed
+all three to the citation the picture actually came from, and confirmed the note is absent from
+the built site. Reasoning of that kind belongs in a pull request, not in a link a reader follows
+to find a photograph.
+
+The Vincent citation pointed at the bare image file rather than the article, and said nothing
+about who in the picture she is. That second problem is the serious one: the photograph is a
+two-person frame, a woman at left with the corsage and a man at right, both prominent. A reader
+had no way to tell which was Vincent, and the link led to a raw JPEG carrying neither caption nor
+any evidence of the SGA connection. The citation now names the article, places her in the frame,
+and records the line that identifies her — the convention already set by the LaCivita entry,
+which notes "(right)" and who stands out of shot. The old label also quoted the caption whole,
+over the fifteen-word limit and twice over.
+
+Neither entry was deleted. Both were true; both were cited badly. Trimming a real finding back to
+what its source proves keeps a face on the site that deleting would have lost.
+
+## A conflict, resolved by keeping both
+
+#203 and #205 both appended to the same region of the running log in the handoff file. Resolved
+in favour of both, backlog first, as that file's own convention has it. The merged diff against
+main came to exactly 56 lines — the senate note added, nothing lost from the backlog note.
+
+## Still open
+
+Sarah Vincent also served 2022-23 as a senate officer and has no portrait on that year. The
+carry stopped a year short and the next photographs run should finish it.
+
+A judgement call worth someone else's eye: her portrait is a Homecoming crowning, not SGA
+service, and the frame includes a bystander the archive does not name. I kept it — the event was
+public, the university covered it, the article ties her to SGA in the same breath, and the
+archive wants faces. If the owner would rather a president's or an officer's portrait not be a
+Homecoming photograph, the entry pulls out cleanly.
+
+The three Herald leads carry over untouched again: 5153 for 1976-77, 8052 for 1999-00, and 5357,
+the January 1977 expulsion story, still unread by anyone here. So does the note that the
+photographs pass would do better among the 985 officers with no portrait at all than extending
+portraits into years that render none — though tonight's Edmonds carry is a fair use of the
+smaller job. `data/photos/2022-23-cole-bornefeld.jpg` is still a PNG under a `.jpg` name.
+
+The stale-prompt problem is now in its fifth consecutive run and remains the one thing here
+needing a person. Both of tonight's documentation pull requests exist because two routines were
+told to do work finished on 21 August, re-checked, found it done, and wrote a paragraph saying
+so. They are behaving correctly. They are also the only thing those runs produced. No agent can
+edit those prompts.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president, 297 mirrored
+documents, 1,111 pieces of legislation. Two more portraits on the board than this morning, and
+Garrett Edmonds's face now appears on all four years he served. On `main` at close, `build.py`
+completes cleanly over 61 year pages and 7 decade pages, `check_data.py` and `check_contrib.py`
+both exit 0, and `check_duplicates.py` reports the same six pairs. I checked them against main
+before judging rather than against the branch: all six are already there, none came from
+tonight's work, and all six are correctly separate events.
