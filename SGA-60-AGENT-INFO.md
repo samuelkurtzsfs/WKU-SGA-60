@@ -1875,7 +1875,9 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   weren't in scope here.
 - **`Chris Grau` (Office Secretary, 1968-69)** carries a note in the data reading
   "SPELLING UNVERIFIED, do not publish without a second look", possibly
-  "Christina L. Graue" per the minutes signature. Still unverified.
+  "Christina L. Graue" per the minutes signature. Still unverified — but see
+  the 25 August note below: the minutes' own typed transcription of the name
+  turns out to contain a typo, so it isn't a clean tiebreaker either.
 - **`Amos Gott` / `Amos E. Gatt`** — the 1989-90 session prints the same person's
   name two ways on two resolutions. Both are kept as printed rather than merged.
   Flagged, not fixed, per the project rule.
@@ -1883,6 +1885,55 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   call."** The membership is what the entry establishes; the absence is only the
   evidence for it. The two should probably swap places. Accurate as it stands,
   which is why it merged, but it reads oddly.
+
+**A 25 August run (backlog trigger), same stale prompt yet again — re-checked
+first, same result as every run since 21 August.** `.research/branches-unverified.json`,
+`.research/branches-moments.json` and `.research/officers-unchecked.json` are all
+still `[]`; Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all still
+carry a portrait in `data/photos.json`; Reed Morgan and Amanda Coates/Lich are
+unchanged in §7 and `CLAUDE.md`; the ~20 weak citations and the pre-2011
+legislation harvest are both still done. `research-backlog` had a real merge
+base with `main` (fast-forwarded cleanly, 3 commits, no conflicts).
+
+`viewcontent.cgi` was tested once against the strongest open year-photograph
+lead (article 7740, 2008-09) and came back the same Cloudflare "Attention
+Required" `HTTP 403` challenge every run since 25 August ~00:30 UTC has
+reported — not re-tested further, since the last several runs already
+established this is a by-the-hour window and a single confirmation was enough
+to know today's state without burning the session on repeat retries.
+
+Instead of re-confirming staleness a further time, this run took the one
+item in §8.5 that doesn't depend on `viewcontent.cgi` opening: **Chris Grau /
+Christina L. Graue (Office Secretary, 1968-69)**. The Congress minutes of 13
+February 1969 are already mirrored locally
+(`data/documents/1968-69-minutes-1969-02-13.pdf`), so this needed no network
+access at all — rendered the page at high resolution and read the signature
+block directly, then had a separate adversarial subagent redo the same
+rendering and reading independently, blind to my conclusion. Both readings
+agree: the minutes' own **typed** name line reads "Christing L. Graue," not
+"Christina" — a typographical slip, with a small mark under the "g" that may
+be a proofreading correction — while the **cursive signature** above it is
+visually more consistent with "Christina" (a closed "a" loop, not a "g"
+descender). This doesn't resolve the original question (Talisman's "Chris
+Grau" vs. the minutes' "Graue") — it can't, since it's the same document
+already cited — but it does establish that the minutes' own transcription of
+the name is internally inconsistent, so it should not be treated as a clean
+tiebreaker against the Talisman's spelling. Added to the note and profile in
+`data/years.json`, still flagged as unverified per the project's "flag, don't
+fix" rule for spelling doubts, plus linked the entry's `src2` to the
+already-mirrored PDF. `build.py`, `check_data.py` and `check_duplicates.py`
+all pass clean (61 years, 2019 events, 60 presidents; the same six duplicate
+pairs, unchanged). Landed on `research-backlog`.
+
+**What's left in §8.5 after this:** `Amos Gott`/`Amos E. Gatt` stays flagged,
+not fixed, correctly. The senate-roll "recorded absent" wording is a
+build/copy question, not a data one, and is not this routine's to decide
+unilaterally. The rest of the live backlog is exactly where every run since
+21 August left it: the eight open year-photograph years
+(1996-97, 1997-98, 2000-01, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10) all
+still need `viewcontent.cgi` to open; the stale "SGA 60 - backlog" trigger
+(`trig_01LjXLD8nYoNr8M2RehpHZMu`) is still unfixable by an agent session (see
+the 24 August entries above) and still needs the account owner's attention.
 
 ---
 
