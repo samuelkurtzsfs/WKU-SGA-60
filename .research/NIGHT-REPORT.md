@@ -6352,3 +6352,226 @@ and `check_duplicates.py` reports the same six pairs, all read again this pass a
 separate: two designated-driver entries three months apart, a regent advisory bill introduced and
 then defeated, the Civil Liberties Union suit planned and then endorsed, plus/minus grading
 discussed and then voted, and three distinct bills of 1 September 1991.
+
+---
+
+# 25 August 2026 — editor's pass, three pull requests merged, a photographer credit corrected
+
+Three pull requests were open at the start: #215 the backlog, #216 photographs,
+#217 the senate rolls. All three came off current `main` with a real merge base,
+so none of them was one of the 4 August orphan branches. All three are merged.
+The queue is empty. The #6, #7 and #8 the editor prompt still asks about have not
+existed for a week; #6 closed on 18 August and #216 is its successor.
+
+## What I verified
+
+**#216, photographs.** The one pull request of the three carrying data. Four
+portraits, five `photos.json` entries, four new JPEGs, and a one-line change to
+`build.py`. I opened both cited Herald pages myself rather than reading the
+research report's account of them.
+
+The five-senator swearing-in caption on wkuherald.com/78720 is verbatim what the
+entry quotes: Ciin Lun, Lola Norman, Cayden Bailey, Jakob Barker, Hermes Olmos,
+in that order from the left. I pulled the original frame, `2024/10/JS10098.jpg`,
+and compared it against the two crops. Five people stand with raised hands; Lun
+is unambiguously leftmost and Olmos unambiguously rightmost, and the crops are
+those two. The article body gives Olmos as International Senator and Lun as one
+of three Freshman Senators, which is what `years.json` already had.
+
+The editorial-board caption on wkuherald.com/77384 is likewise verbatim. Its
+identification rests on elimination — the caption fixes Kurtz as middle and Reed
+as left, leaving Taylor — so the question is whether the frame is closed. It is:
+the original shows exactly three seated subjects facing the camera, with the
+Herald's own people turned away in the foreground. Had there been a fourth face
+in that row the elimination would have failed and both crops would have had to
+go. It held.
+
+All four files are real JPEGs. Every one of the five entries attaches to a person
+genuinely in that year's `organization` record, name for name. Lola Norman is
+genuinely absent from 2024-25's roster, so declining to add a dangling entry for
+her was right; it is a missing roster line, not a missing photograph.
+
+The `officer_index()` bug is real. The function rebuilds a fresh dict for each
+rank-and-file senate member and never copied `photo` into it, so a portrait
+attached to a member rather than an officer sat in the data and never rendered.
+Rebuilding after the fix touches exactly the records the report claimed: besides
+the newly added four, only Will Harris (2017-18) and Sam Kurtz (2021-22), both of
+whom already carried a portrait through their president terms.
+
+**#215 and #217** carry no data at all, only run notes in `SGA-60-AGENT-INFO.md`,
+which is not published to the site. Every state claim in them I measured against
+the tree instead of taking on trust, and all of it is exact: the three research
+queues and the senator queue are all empty, the four named presidents all carry
+portraits, the roll is 1,487 member records across 58 of 61 years, the zero-member
+years are 1966-67, 1969-70 and 1979-80, and the thin years are 1977-78 at two,
+1999-00 at one, 2004-05 at two and 2026-27 at three. All correct to the number.
+
+I also re-tested both external claims. `wku.edu/sga/executive` does still head
+itself "2025-2026 Executive Branch", so there is no 2026-27 roster to mine yet.
+And `viewcontent.cgi?article=10386` returned HTTP 403 with a 5,485-byte Cloudflare
+challenge from my own request — the same byte count #217 reported. The block is
+real and still on. Recording the size of a block rather than just "it failed" is
+good practice and worth keeping; it is what lets the next run tell one failure
+mode from another.
+
+## What I corrected
+
+Three of the five `photos.json` entries credited the swearing-in photograph to
+"photographer Jonah Savage." That name appears nowhere on the Herald's page. The
+credit line reads **Jacob Sebastian**, the file is named `JS10098.jpg`, and a
+year-photograph entry already in `photos.json` credits Sebastian for an April 2026
+frame. Corrected in all three before merging.
+
+This is the same failure the last pass wrote a rule about, in a new place. There
+the caption was read off the wrong photograph; here the credit was reconstructed
+instead of read. The identifications in this pull request were careful and the
+crops were right — and then a name nobody had seen was written beside them. The
+rule generalises: **every name that goes into a citation is read off the page, or
+it does not go in.** Photographer, office, seat, spelling. A citation is a claim
+like any other.
+
+## What I did not cut
+
+The `src.label` fields on the new entries reproduce the Herald's captions verbatim
+at 27 and 40 words, against CLAUDE.md's "quote under 15 words, once per source."
+Dozens of entries already on `main` do the same — it is the settled convention of
+this file, and the caption is the identification evidence. Trimming only the four
+newest would make `photos.json` inconsistent without making it more accurate. It
+is a question about the whole file and it belongs to the owner, not to a merge
+decision. Flagging it here rather than acting on it.
+
+## A conflict, resolved by keeping both
+
+#215 and #217 both inserted their run note at the same point in §8, so #217
+conflicted once #215 was in. Neither supersedes the other; they are two different
+runs on the same day. I kept both, in the order they happened — backlog first,
+senate second — and nothing was dropped from either side.
+
+## The traps checklist
+
+Nothing unfixed. No advance notice written up as a report; #216's sources are both
+reports of meetings that had happened. No committee chair promoted to officer —
+Reed and Taylor are named in the caption by the offices they held, and Lun and
+Olmos attach to seats already recorded. No surname matching: every entry was
+matched on the full name against `years.json`, and `Donté Reed` is the canonical
+spelling `name-aliases.json` already maps `Donte Reed` onto, so no duplicate person
+was created. No April result filed into the wrong year. Nothing touching the settled
+facts. Nothing about a living person beyond what the cited caption carries — these
+are portraits of current and recent students, published by the university's own
+newspaper, identified by that newspaper's own caption, and nothing personal beyond
+their SGA service went into the record with them. No contributor commits in any of
+the three diffs.
+
+## Still open
+
+`data/photos/2022-23-cole-bornefeld.jpg` is still a PNG under a `.jpg` name.
+Sarah Vincent still has no portrait on 2022-23. Herald leads 5153 for 1976-77,
+8052 for 1999-00 and 5357, the January 1977 expulsion story, are all still unread,
+and the eight open year-photograph years still wait on `viewcontent.cgi`, which
+answered the Cloudflare challenge again today for me as well as for two of the
+routines.
+
+The largest open ground remains officer portraits: on my count 289 executive and
+524 senate-officer year-name pairs have no photograph. #216 makes a useful point
+about how to reach them — wkuherald.com's WP-JSON search takes a name directly and
+does not touch the digitalcommons pacing wall at all — and it now works properly
+for senate members too, which it did not before this merge.
+
+And the standing item, for a person rather than a routine: the four research
+routines are still firing prompts written on 17 August against task lists finished
+by the 21st, and the editor prompt driving this pass still asks after #6, #7 and #8.
+Two of today's three pull requests exist only to report that there was nothing to do.
+No routine can rewrite its own prompt.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president,
+297 mirrored documents, 1,111 pieces of legislation, 181 portrait entries and 61
+year photographs — four portraits more than this morning. On `main` at close,
+`build.py` completes cleanly over 61 year pages and 7 decade pages, `check_data.py`
+and `check_contrib.py` both exit 0, and `check_duplicates.py` reports the same six
+pairs as yesterday, all read again and all correctly separate: the two
+designated-driver entries three months apart and the Herald's report between them,
+the regent advisory bill introduced and then defeated, the Civil Liberties Union
+suit planned and then endorsed, plus/minus grading discussed and then voted, and
+three distinct bills of 1 September 1991.
+
+---
+
+# 25 August 2026 — editor's pass, one documentation pull request merged
+
+## What I reviewed
+
+One pull request was open: **#219, "Research: the backlog"**, on `research-backlog`.
+The stale trio this prompt still asks after — #6, #7 and #8 — were closed on
+18 August and have been closed for a week; there was nothing to rescue or bury.
+
+#219 was 52 lines appended to `SGA-60-AGENT-INFO.md` §8 and nothing else. No
+`data/` change, no new event, no new leader, no new citation. There were no
+historical claims in it to sample, so instead of a spot-check I put every
+assertion the note makes about the state of the repository back against the
+repository. All of them held: the three `.research` queues are empty lists;
+Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all carry a portrait
+in `data/photos.json`; Reed Morgan and Amanda Coates/Lich are unchanged in §7
+and `CLAUDE.md`; and the build counts the note quotes are the counts the build
+produces. `git merge-base` put the branch's base at `main`'s own head, so this
+was an ordinary branch and not one of the 4 August orphans.
+
+## What I cut
+
+One thing, and it was the only reason this pull request did not merge as it
+stood. The note recorded a **live session identifier** in the middle of an
+otherwise useful observation about the routine self-disable carve-out. The rule
+against tool attribution covers session links in repository text, and this was
+the only such identifier anywhere in the repository outside `site/`, which never
+received it. Cut in 633e7b4, pushed to the branch before the merge. The
+substance stayed: that a routine's own session may set `enabled=false` even
+though it cannot edit its stored prompt, and that using it is the account
+holder's call and not a run's.
+
+Rescue over deletion is the standing instruction and it applied cleanly here —
+the observation is worth having in the handoff, the identifier was not.
+
+## The traps checklist
+
+Nothing to catch. No advance-notice sourcing, no committee chair promoted to
+officer, no surname matching, no changed surname, no April election filed into
+the wrong academic year, nothing touching the settled facts, no living-person
+detail, no contributor edit in the diff.
+
+## What I did not cut
+
+The six duplicate pairs, read again and all six genuinely separate. The closest,
+1997-98 "Designated driver cards" at 0.6, is Bill 97-3-F funding the cards on
+4 November 1997 set against the *Herald*'s 17 February 1998 report that
+distribution was starting — four months and two sources apart. That second entry
+is worth holding up as the model: its source is a contents listing, and it says
+so outright rather than writing a result out of a headline. The rest are the
+regent advisory bill introduced and then defeated, the Civil Liberties Union
+suit planned and then endorsed, plus/minus grading opposed and then voted, and
+three distinct bills of 1 September 1991.
+
+## Still open
+
+The standing item, still for a person and not a routine. The trigger driving
+this backlog routine has now fired every four hours since 17 August against a
+prompt stale since the 21st, and a session cannot rewrite it. The editor prompt
+that produced this pass still asks after three pull requests closed a week ago.
+Two of the last several pull requests on this project exist only to report that
+there was nothing to do. That is a scheduling problem, and it is still the most
+valuable ten minutes anyone could spend on this archive.
+
+Otherwise everything carried over carries over. Sarah Vincent has no portrait on
+2022-23. Herald leads 5153, 8052 and 5357 are unread. The eight open
+year-photograph years still wait on `viewcontent.cgi`, and
+`data/photos/2022-23-cole-bornefeld.jpg` is still a PNG under a `.jpg` name.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president,
+297 mirrored documents, 1,111 pieces of legislation, 181 portrait entries and 61
+year photographs — unchanged from this morning, as a documentation-only merge
+should leave them. On `main` at close, `build.py` completes cleanly over 61 year
+pages and 7 decade pages, `check_data.py` and `check_contrib.py` both exit 0, and
+`check_duplicates.py` reports the same six pairs, all read and all correctly
+separate.
