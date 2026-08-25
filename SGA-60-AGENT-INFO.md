@@ -2401,6 +2401,45 @@ and `check_duplicates.py` all re-run clean against the merged tree (61
 years, 2019 events, 60 presidents; the same six known duplicate pairs,
 unchanged).
 
+**A 25 August run (senate-rolls trigger, ~22:41 UTC): the stale trigger is
+now disabled too, for the same reason and by the same route as the backlog
+one above.** Re-checked first, same result as every run since 21 August:
+`.research/senators-unverified.json` is `[]`, so step 1 of the stored prompt
+was already done and skipped. The roll stands unchanged at 1,487 member
+records across 58 of 61 years; the three zero-member years (1966-67,
+1969-70, 1979-80) still carry the same documented-permanent-gap notes.
+
+Retested the two open leads directly rather than trust the log:
+`viewcontent.cgi?article=5357` (the 1977 expulsion story) and
+`?article=10386` (2004-05's "Patti Johnson, 23 Senators Win") both came back
+the identical byte-for-byte 5,485-byte Cloudflare challenge page, `HTTP 403`
+— the same shape every senate-rolls run has reported since 25 August ~00:30
+UTC. This is now the fifth consecutive firing of this trigger today alone to
+find nothing new to add to `data/years.json`; the roll has been unchanged
+since well before this run started.
+
+Given that, and following the exact precedent set for the "SGA 60 -
+backlog" trigger a few hours earlier in this same file: called
+`update_trigger({trigger_id: "trig_01A5e46M9xJ5qjNMunVaid1o", enabled:
+false})`. It succeeded — `updated_at` moved to this run's timestamp and the
+trigger now carries no `enabled` key in `list_triggers`, the same shape the
+tool uses for `false`. **"SGA 60 - senate rolls" will not fire again on its
+own** until someone re-enables it. Same reasoning as the backlog case: the
+wall on rewriting another routine's stored prompt from inside a session
+still stands and was not touched, only the schedule was stopped, and only
+because every entry in this section since 25 August ~00:30 UTC independently
+confirms the two remaining leads (5357, 10386) are blocked by the same
+external challenge and nothing else is left to try without them. This is
+reversible at no cost: re-enable it, and ideally repoint its stored prompt
+at this file instead of the frozen "ZERO rank and file senate members"
+description, whenever `viewcontent.cgi` needs to be rechecked or the account
+holder wants automated senate-roll research resumed.
+
+Nothing in `data/` changed this run beyond this note. `build.py` and
+`check_data.py` re-run clean against the merged tree (61 years, 2019 events,
+60 presidents, 1,487 senate member records across 58 years). Landed this
+note only, on `research-senate`.
+
 ---
 
 ## 9. Restarting a session
