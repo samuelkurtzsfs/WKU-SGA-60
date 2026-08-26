@@ -7334,3 +7334,100 @@ gap behind the Cloudflare download gate, are both unchanged.
 president, 185 portraits, 61 year photographs, 297 mirrored documents and 1,111
 pieces of legislation. `build.py` completes cleanly over 61 year pages and 7
 decade pages; `check_data.py` and `check_contrib.py` both exit 0.
+
+---
+
+# 26 August 2026 — editor's pass, two Chief Justice portraits merged after a date correction
+
+One pull request was open, #236 from the photograph routine, and it is merged.
+Nothing else was waiting: the backlog, profiles and senate branches are all
+level with main.
+
+## What was in it
+
+Six entries in `data/photos.json` and two image files. No events, no officers,
+no year assignments — which narrows what could go wrong, and means the whole
+diff could be checked rather than sampled. All six were.
+
+Isaac Keller, cropped from a Herald photograph of the 9 April 2019 meeting, is
+now the portrait on his 2018-19, 2019-20 and 2020-21 pages. Holden Schroeder,
+cropped from the April 2022 election-night gallery, covers 2019-20, 2021-22 and
+2022-23.
+
+## What was checked, and how
+
+wkuherald.com refuses an ordinary fetch, so both captions were read through the
+same WP-JSON media endpoint the routine used. Both say what the credits claim
+they say. Keller's caption names him alone as the man being sworn in as chief
+justice; Schroeder's names him alone as the chief justice addressing the chamber
+before announcing results, and the second frame the routine cited as
+corroboration does exist and does show the same face.
+
+The crops were then traced back to the full-size originals rather than taken on
+trust. This mattered more than it sounds: the Keller post carries two images and
+only one of them is captioned. The crop came from the captioned one. In the full
+frame he is the standing, waving figure and the only other well-lit person is
+applauding, so there is no ambiguity about which man was being sworn in.
+Schroeder is the only standing figure in his frame, with the spring election
+slide behind him.
+
+All six names were checked against `years.json` before the portraits were
+allowed to attach to those years, and all six are there. The 2019-20 entry
+deliberately spells him "Holden Schroder" because that is what the roster for
+that year spells him; the two spellings were already one person in
+`name-aliases.json` long before this run, so nothing new was merged on the
+strength of a name.
+
+The surname trap was checked directly, because it had somewhere to go: there is
+a separate Madison Keller in the archive. Her page carries no photograph. Isaac's
+portrait did not leak onto it.
+
+## What was corrected
+
+The Schroeder credit read "College Heights Herald, 19 April 2022". The gallery
+published on the 20th and its own captions place the moment just after midnight
+on the 20th; the 19th is the meeting — the 21st Senate's last — not the Herald
+item. A reader following the citation would have gone looking on the wrong day.
+Rather than cut a sound entry over it, the credit now carries both dates and says
+which is which. That is the only change the editor made.
+
+## Traps, checked
+
+No events were added, so no advance notice could be written up as a report. No
+officers and no year assignments were added, so nothing filed an April result
+into the wrong academic year and no committee chair was promoted. No settled fact
+was touched. Nothing about either man goes past what his caption reported — both
+credits describe a public meeting and nothing else. No contributor commit was in
+this diff, and every commit on the branch is authored "SGA 60" with no tool
+attribution.
+
+Both files begin `FF D8` and are real JPEGs, and the `site/photos/` copies are
+byte-identical to the ones in `data/photos/`.
+
+The six duplicate pairs are the same six as every recent pass, all pre-existing
+on main, and all still separate events — a bill introduced and the same bill
+failing a week later are two things.
+
+## Still open
+
+The three branches from 4 August — the 1980s, the 2020s and the photograph
+branch that went with them — have no pull requests any more. They still have no
+merge base with main and are still snapshots of a superseded repository, so they
+were left alone rather than merged; that judgement has not changed.
+
+Everything listed as open in the evening pass is still open: the 151 raw
+"SGA legislation: ..." citation labels, the sixteen people filed under both the
+executive and the senate, the five wkuherald.com credits citing a bare image
+file, and the year-photograph gap sitting behind the Cloudflare download gate.
+
+Garrison Reed is worth one more photograph pass. The routine set him aside
+because his face is hidden behind his own arm in the frame it found, which was
+the right call, but a second caption in the same gallery names him with a
+positional cue and may give a cleaner shot.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 297 mirrored documents and 1,111 pieces of legislation. `build.py`
+completes cleanly over 61 year pages and 7 decade pages; `check_data.py` and
+`check_contrib.py` both exit 0.
