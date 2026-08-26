@@ -2367,11 +2367,18 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   turned up no images at all in the matching articles.
 
   Incidental finding for whoever next edits `data/years.json`, not acted
-  on here: the "SGA Judicial Council elects new chief justice" article
-  used above (wkuherald.com/88753, 13 Nov 2025) reports Associate Justice
-  Sophie Stirling elected to replace Blake Graham as chief justice,
-  sworn in 18 Nov 2025 — a mid-year succession the 2025-26 organization
-  block does not yet show.
+  on here: "SGA Judicial Council elects new chief justice"
+  (wkuherald.com/88753, 13 Nov 2025) reports the Judicial Council voting
+  on the night of Wednesday 12 November 2025 to elect Associate Justice
+  Sophie Stirling chief justice. **The article is written before the
+  handover and proves only the election**: it says Stirling was to be
+  sworn in at the next SGA meeting on Tuesday 18 November, when Blake
+  Graham would step down. That is a plan, not a report, and 18 November
+  must not be written into the record as the date she took office until
+  a source from after the meeting says it happened. The 2025-26
+  organization block already carries Stirling as chief justice, noted as
+  holding it by 26 January 2026; what this article adds is the election
+  date and the identity of her predecessor, not a missing officer.
 
   No photo files or `data/photos.json` entries changed this run.
   `build.py` and `check_data.py` both pass clean (61 years, 2019 events,
