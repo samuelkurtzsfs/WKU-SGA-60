@@ -2302,15 +2302,20 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   in April 2026) now has a portrait — `data/photos/2026-27-jaden-marshall.jpg`,
   filed against 2025-26 and 2026-27. Source: the Herald's election-night
   gallery "VISUALS: Lucas comes out on top at high-emotion election party"
-  (wkuherald.com/92840, Jacob Sebastian), a solo shot captioned "Student
-  Government Association Presidential candidate Jaden Marshall waits to
-  hear senator election results during the SGA spring election in the
-  senate chambers on Wednesday, April 15, 2026" — Marshall is the only
-  person in frame, no positional inference needed. An earlier two-person
-  candidate from the same evening's committee-chair swearing-in article
-  (Marshall being nominated by Lucas, identifiable only by elimination
-  against Lucas's known portrait) was set aside once this cleaner solo shot
-  turned up.
+  (wkuherald.com/92840, Jacob Sebastian; attachment 92827) captioned
+  "Student Government Association Presidential candidate Jaden Marshall
+  waits to hear senator election results during the SGA spring election in
+  the senate chambers on Wednesday, April 15, 2026". Checked against the
+  original on 26 August: the frame is not a solo shot — seated onlookers
+  sit at the right — but the caption names one person only, and he is the
+  standing suited figure the caption describes, so the identification rests
+  on the caption alone rather than on elimination between two named faces.
+  Four further photographs in the same gallery name Marshall and show the
+  same man in the same navy suit and striped tie, which corroborates it.
+  The file is cropped to him. An earlier two-person candidate from the same
+  evening's committee-chair swearing-in article (Marshall being nominated by
+  Lucas, identifiable only by elimination against Lucas's known portrait)
+  was set aside once this cleaner shot turned up.
 
   wkuherald.com name searches for eight other missing officers in the same
   recent years (Blake Graham, Karlee Powell, Amelia Tucker, Molly Ricke,
