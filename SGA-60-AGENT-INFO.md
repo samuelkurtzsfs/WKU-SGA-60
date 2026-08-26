@@ -2232,6 +2232,50 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   the file sizes in the last column were not re-checked and are guidance for
   ordering, not facts.
 
+  **A 26 August run: both reopened leads landed.** Re-checked first, as
+  every run does: all 60 presidents and 57 regents still have a portrait,
+  nothing to redo there. Took the two leads named just above, in the order
+  given.
+
+  **Salvador León** cleared the bar cleanly, exactly as the 25 August editor
+  pass judged: `censure_hearing_01.jpg` on `wkuherald.com/74786`, captioned
+  "SGA Administrative Vice President Salvador León, right, shakes hands with
+  Student Body President Sam Kurtz after León was censured during a hearing
+  in the Downing Student Union on Wednesday, Feb. 7" — only two men in
+  frame, an explicit position, and León's face sharp and forward. Cropped
+  and added as `data/photos/2023-24-salvador-leon.jpg`.
+
+  **Kenan Mujkanovic** was the harder call, and this run made it rather than
+  reopening it a third time. The election-night crowd photo on
+  `wkuherald.com/20294` has no per-person box, only "Left to right, Kenan
+  Mujkanovic, Will Harris and Garrett Edmonds celebrate winning..." over a
+  packed room of 20+ people. One trio sits together in sharp middle-ground
+  focus while the rest of the room is soft background, and the center man of
+  that trio — full dark beard, same hairline, same heavier build — matches
+  `data/photos/2019-20-will-harris.jpg` closely enough to treat as confirmed.
+  With the center identity anchored, the caption's own "left to right" order
+  puts Mujkanovic immediately to his left. That is an inference from
+  position plus an independent face match, not a caption naming Mujkanovic
+  directly — recorded plainly in case a future pass wants to re-examine it.
+  Added as `data/photos/2019-20-kenan-mujkanovic.jpg`.
+
+  Both files confirmed real JPEGs (`FF D8 FF E0`) before committing.
+  `viewcontent.cgi` was tried once more against article 7740 (2008-09) and
+  came back the same Cloudflare 403 every run has hit since 25 August
+  ~00:30 UTC — not re-tried further, since a single confirmation was enough
+  to know today's state without burning the session. The eight-year
+  photograph gap is unchanged. wkuherald.com WP-JSON searches for seven
+  other no-portrait officers (Preston Romanov, Ethan Huffaker, Lauren
+  Willett, Anne-Marie Wright, Aniya Johnson, Meghan Pierce, Shelby
+  Robertson) turned up nothing usable — mostly plain-text meeting coverage,
+  and the one "gallery"-type article that might have had individual shots
+  loads its captions client-side, invisible to a plain fetch. None of the
+  seven are closed off, just not resolved this run.
+
+  `build.py` and `check_data.py` both pass clean (61 years, 2019 events, 60
+  presidents). Landed on `research-photos`, PR #227 (the prior rolling PR,
+  #216, was closed with nothing open to continue from).
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
