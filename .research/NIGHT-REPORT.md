@@ -6922,3 +6922,194 @@ on main, judged again and again correctly separate.
 
 Of the four research routines, portraits is still the only one firing. That remains the
 owner's call.
+
+# 26 August 2026 — editor's pass, one portrait merged, a credit trimmed
+
+One pull request was open: #230, the photograph routine's rolling branch, a single
+new portrait. It is merged. Nothing else is waiting — the other four research
+routines are level with main, and the three stale August branches the standing
+brief still names as open (#6, #7, #8) were closed a week ago.
+
+## What was merged
+
+**Jaden Marshall's portrait.** The Herald's photographer Jacob Sebastian shot the
+15 April 2026 election night in the Senate chambers, and the gallery published at
+23:01 that evening carries a photograph its caption names as Marshall, the
+presidential candidate, waiting to hear the senator results. Cropped to him and
+filed against 2025-26 and 2026-27, the two years his Senate record covers at that
+date. He lost the presidency to Caden Lucas the same night and was seated as an
+at-large senator thirteen days later.
+
+Every claim in the diff was checked against the source, there being fewer than the
+eight a larger diff would call for. The article exists under the title given. The
+caption matches word for word. The committed file is a crop of the original, which
+was pulled and compared against it: the same man, the navy suit, the red and white
+striped tie, the lapel pin, the hand on the rail. Marshall sits in both Senate
+rosters under exactly that spelling, so the overlay attaches where it should, and
+there is no second spelling in `name-aliases.json` to collide with. The claim that
+no president or regent lacks a portrait holds — all 73 leader slots in `years.json`
+have an entry in `photos.json`.
+
+## What was cut
+
+**Thirty-five words of the Herald's caption, reproduced verbatim as the published
+credit, twice.** This is not a new fault. The 26 August report named it across
+thirty-five of the existing credits and cut Salvador León's back to a citation. Two
+more had just been added in the same form. Both were rewritten to León's shape:
+the paper, the date, what the caption identifies, the photographer, and the link.
+The caption stays in the pull request, which is where the rule asks for it as
+evidence.
+
+**A false precedent in the method log.** The run recorded the photograph as a solo
+shot needing no inference. It is not a solo shot; seated onlookers sit at the right
+of the original frame. The identification holds, but on different ground, and the
+log now says which: the caption names one person, he is the standing suited figure
+it describes, and four further photographs in the same gallery name Marshall and
+show the same man. A later run reading that entry as authority for "no inference
+needed" would have been reading something that was not true.
+
+Neither was a reason to lose the portrait. The published data was right in both
+cases; the prose about it overstated.
+
+## Traps, checked against the diff
+
+Not an advance notice — the gallery went up after the count, on the night. No
+committee chair recorded as an officer, no bill author as a member, nothing matched
+by surname alone, no changed surname, no election filed into the wrong academic
+year, nothing touching the settled facts. Nothing about a living person beyond what
+the Herald published about his candidacy. No contributor edit in the diff. Commit
+authorship clean throughout, no tool attribution anywhere.
+
+The six duplicate pairs `check_duplicates.py` returns on main were read again and
+are separate again: a card scheme announced in November and distributed in
+February, a regent advisory bill introduced and the same bill failing nine days
+later, a lawsuit planned and then endorsed, an opposition stated and then passed as
+legislation, and three bills on one September day, which the rule keeps apart.
+
+## Still open
+
+The over-quotation backlog is now the older 63 credits carrying more than fifteen
+words. Two were fixed here and one on the 26th, which is not a rate that finishes
+it. It wants a run of its own rather than another year's research.
+
+Five wkuherald.com credits still cite a bare image file instead of the article
+carrying the caption, so a reader cannot check those identifications at the link
+given: `SAV0302`, `02_25_25_SAG_ER_0576`, `JSAV7861-1`, `040226_sga_JS22`,
+`SAV4629`. The new credit cites the article, which is the right pattern.
+
+The eight-year year-photograph gap — 1996-97, 1997-98, 2000-01, 2003-04, 2005-06,
+2006-07, 2008-09, 2009-10 — is unchanged. The Talisman lead behind it has answered
+Cloudflare's block on every run since 25 August.
+
+Of the five research routines, photographs is still the only one firing. That
+remains the owner's call.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as president,
+185 portraits, 61 year photographs, 297 mirrored documents and 1,111 pieces of
+legislation. On main at close, `build.py` completes cleanly over 61 year pages and
+7 decade pages; `check_data.py` and `check_contrib.py` both exit 0.
+
+---
+
+# 26 August 2026 — editor's pass, the over-quotation backlog cleared
+
+No pull request was open, and none of the five research branches has anything
+unmerged behind it. The photograph routine's branch sits three commits from main
+but the content of all three is already on main, merged this morning as #230 and
+#231; the only difference left is the night report itself. The three stale August
+branches the standing brief still names as open — #6, #7 and #8 — were closed a
+week ago. There was nothing waiting to review.
+
+So this pass took the backlog the last three reports have been naming and not
+finishing: credits that reproduce a source's caption word for word, against the
+rule that holds quotation under fifteen words and to once per source.
+
+## What the backlog actually was
+
+The standing figure was 63 credits carrying more than fifteen words. That figure
+counts two different things, and only one of them is a breach. Measuring the
+quoted span rather than the whole label:
+
+- **33 credits reproduced a verbatim caption over fifteen words.** These are the
+  breach. They came from 21 distinct captions, nine of which were reproduced two,
+  three or four times over — the Herald's caption for the newly appointed 2026-27
+  executive appeared four times — so the "once per source" half of the rule was
+  being broken as well as the length.
+- **31 further labels run past fifteen words without quoting anything.** They are
+  our own descriptive citation, and several are the identification evidence for a
+  cropped group shot. The rule governs quotation, not citation length. They were
+  left alone.
+
+## What was cut
+
+All 33 were rewritten into the shape the 26 August pass settled on for Salvador
+León and Jaden Marshall: the paper or volume, the date, what the caption
+identifies, the photographer, and the crop. No caption text survives in any of
+them. Nothing else in the file was touched — the diff is 33 label lines and
+nothing more.
+
+Every substantive fact was carried across, and the identification evidence
+especially: Mujkanovic's crop still records that the figures either side of him
+match the verified portraits of his running mates, which is what fixes the
+caption's order at both ends; Savanna Kurtz's still records that the Herald
+spells the name Savana and the archive does not; Maggie Yelton's still records
+that the paper's caption and its own filing date disagree by a month; Joe Cheak's
+still carries the second Talisman page that names him a committee chairman.
+
+Two smaller things went with the captions. Preston Jenkins's credit carried the
+Herald's aside about him testing the microphone, which identifies nobody. Hadley
+Whipple's carried a garbled phrase from the original caption. Neither was
+evidence and neither is missed.
+
+**One event, not a credit, breached the same rule.** The 13 February 2019 entry
+on the study abroad scholarship bill quoted its author for nineteen words and
+then quoted the Speaker as well — over length, and twice from one source. The
+author's rationale is now paraphrased and the Speaker's seven words stand as the
+single quotation. Rescued rather than cut: no sourced fact left the entry.
+
+A full re-audit of both `photos.json` and `years.json`, pairing quotation marks
+in order rather than matching greedily, returns zero spans over fifteen words.
+The greedy first pass had flagged four more events; all four were false, our own
+prose caught between two short quotes in the same sentence.
+
+## Traps, checked
+
+No new claim was added anywhere in this pass, so there was nothing to spot-check
+against a source: the pass removes reproduced text and adds no fact that was not
+already in the label it replaces. Nothing was matched by surname, no committee
+chair became an officer, no election moved year, nothing touches the settled
+facts, and nothing about a living person goes past what the cited caption
+reported — the pass moves in the other direction throughout.
+
+Two things were checked on main while passing and both hold. Jaden Marshall's new
+portrait is filed against 2025-26 and 2026-27 although he was never president; he
+is a sourced senator in both rosters, so the overlay attaches it to a senate
+member and no year page shows him as its leader. Reagan Gilley's portrait cites a
+February 2009 election but is filed at 2008-09, which looks like an April result
+filed backwards and is not: it was a special election to fill the seat Johnathon
+Boles vacated on resigning, so the winner served out that same year.
+
+The six duplicate pairs are the same six, read again and separate again.
+
+## Still open
+
+Five wkuherald.com credits still cite a bare image file rather than the article
+carrying the caption, so a reader cannot check those identifications at the link
+given: `SAV0302`, `02_25_25_SAG_ER_0576`, `JSAV7861-1`, `040226_sga_JS22`,
+`SAV4629`. Four of the five are among the credits rewritten here, so the prose is
+now right and only the link is wrong. This is the next backlog worth a run.
+
+The eight-year year-photograph gap — 1996-97, 1997-98, 2000-01, 2003-04, 2005-06,
+2006-07, 2008-09, 2009-10 — is unchanged, and the Talisman lead behind it has
+answered Cloudflare's block on every run since 25 August.
+
+Of the five research routines, photographs is still the only one firing.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 185 portraits, 61 year photographs, 297 mirrored documents and 1,111
+pieces of legislation. `build.py` completes cleanly over 61 year pages and 7
+decade pages; `check_data.py` and `check_contrib.py` both exit 0.
