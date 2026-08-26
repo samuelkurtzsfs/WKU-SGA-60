@@ -7216,3 +7216,121 @@ Of the five research routines, photographs is still the only one firing.
 president, 185 portraits, 61 year photographs, 297 mirrored documents and 1,111
 pieces of legislation. `build.py` completes cleanly over 61 year pages and 7
 decade pages; `check_data.py` and `check_contrib.py` both exit 0.
+
+# 26 August 2026 — editor's pass, evening: the rosters counted people twice
+
+No pull request was open. The photographs routine's last run was merged at 15:25
+and its branch carries nothing main does not already have; every other research
+branch is level. So this pass went looking at what is already published, starting
+from the one defect the morning report left open: Emily Reinneck appearing twice
+in the 2025-26 senate.
+
+She was not one case. She was one of eighty-six.
+
+## What was wrong
+
+Two faults, both of them the residue of the sweep that read officers out of the
+signature blocks of bill PDFs. The sweep filed one roster line per document, so a
+chief of staff who signed seven bills became seven officers.
+
+The first fault is within a block: fifty-five posts were held by one person who carried
+between two and seven lines for it in the same year's executive or senate roster,
+because each document labelled the post slightly differently — "Senator" on one
+bill and "Senator At Large" on the next, "Chief of Staff" on five and "Chief of"
+on a sixth where the label was cut off mid-phrase. Conner Hounshell had seven
+lines for 2017-18. Andi Dahmer had five for her presidency. Seventy-two lines in
+all were one person, one post, counted again.
+
+The second fault is across blocks: fourteen more people were filed under both
+"executive" and "senate" for the same single post, so a committee chair rendered
+twice on the year page and twice on their own officer page.
+
+## What was done
+
+Eighty-six duplicate lines were collapsed into the post each of them described.
+Every merge was decided by hand and every citation was carried across: a check
+against `origin/main` confirms nothing was lost — no person, no source URL, no
+profile. The merged line keeps the fuller office label, so "Chief of" and
+"Director of Academic and" are gone from the site, and the scraper's stub notes
+("Named on the document as senator") went with the labels they described.
+
+Three of these were corrections somebody had already written and never applied.
+Matt Bastin's 1998-99 entry said in its own note that the archive recorded him
+only as Vice President when he signed the minutes all year as Vice President of
+Administration — and both versions were live, side by side. Melissa Paris's
+2005-06 entry said the same about her portfolio. Ann-Blair Thornton's 2009-10
+entry said outright that she should be moved from the executive to the senate.
+All three now say one thing, with the correction recorded in the note rather
+than left as an instruction to a future editor.
+
+## What was checked before cutting
+
+Several of these entries cited a document whose own label named somebody else,
+which reads at first like an unsourced claim. It is not. Three of the PDFs were
+pulled and read: Bill 13-17-S names "William Hurst, Senator" in its authors,
+Resolution 7-17-S names "James Line, Chief of Staff", and Bill 7-17-S names
+"Emily Houston, Student Affairs Chair" among its contacts. The attributions are
+sound. What is corrupt is the citation *labels*, which fused adjacent names into
+people who never existed — a "William Wysong" out of William Hurst and Morgan
+Wysong, a "Hannah Line" out of Hannah Neeper and James Line. No such phantom ever
+reached a roster; they exist only inside citation text. Nothing was cut on this
+basis, and it would have been wrong to cut it.
+
+## What was left alone
+
+Eight people still hold two lines in one year, and each of them earned it: Anne
+Guillory chairing two committees in 1997-98, Jeanne Johnson as Speaker and as
+Campus Improvements chair in 2005-06 and again as executive vice president and
+president pro tempore in 2006-07, Amanda Allen moving up from administrative to
+executive vice president, Brenna Mathews from parliamentarian to secretary,
+Justin Goins from associate chief justice to chief justice, Hannah Neeper holding
+the administrative vice presidency alongside the Organizational Aid chair, and
+Donté Reed as director of enrollment until January 2024 and chief of staff after.
+
+Seth Norman nearly went with the merges. His 2005-06 entries read as one post
+under two names — Director of Public Relations and Chair of the Public Relations
+Committee — until the notes were read: he chaired the committee that autumn and
+moved up to the directorship at the end of January 2006. Two posts, in sequence.
+He stays as two lines.
+
+## Traps, checked
+
+Nothing was matched by surname: every merge was keyed on the full name through
+`name-aliases.json`, and the eleven spellings that disappear from the rosters
+(Matthew Bastin, Connor Hounshell, Alex Cissel, Alexis Courteney, Ari Srivastava,
+Zach Skillman, Lauren Willet, Maksim Zaephel, Donte Reed, Amelia R. Tucker,
+Tyresha Morris) are all registered there already as the same people. Lauren
+Willett's two spellings are recorded in her note rather than left implicit. No
+committee chair was promoted to an officer — the reverse, if anything, since a
+chair and the senate seat under it are now one line and the note says so for the
+specific seats, Potter College and PCAL. No election moved year, no settled fact
+was touched, and nothing about a living person goes past what its source says.
+No contributor commit was in this diff.
+
+The six duplicate event pairs are the same six as every recent pass and are
+separate again.
+
+## Still open
+
+The citation labels are still raw scrape output: 151 roster citations carry a
+long "SGA legislation: ..." blob instead of a bill number and title, and some of
+those blobs contain the fused non-names described above. They are visible on the
+site. Rewriting them to "SGA Bill 13-17-S, Funding for a Portable Whiteboard" is
+mechanical work against the PDFs and is the best-defined job left.
+
+Sixteen people are still filed under both the executive and the senate for what
+may be one post — Bill Parsons, Ryan Faught, Amanda Cole, Mitchell Bailey, Ryan
+Morrison, Skylar Jordan, Cherieth Lineweaver, Brian Anderson, Ian Hamilton, Kara
+Lowry in 2017-18, Mark Clark, Jamison Moorehead, Zachary Skillman, Meghan Pierce
+and Sarah Vincent among them. Most look like genuine pairs of offices, which is
+why none of them was touched; each wants its sources read the way Norman's were.
+
+The five wkuherald.com credits citing a bare image file, and the year-photograph
+gap behind the Cloudflare download gate, are both unchanged.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 185 portraits, 61 year photographs, 297 mirrored documents and 1,111
+pieces of legislation. `build.py` completes cleanly over 61 year pages and 7
+decade pages; `check_data.py` and `check_contrib.py` both exit 0.
