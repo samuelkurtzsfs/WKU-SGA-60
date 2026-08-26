@@ -2286,6 +2286,51 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   presidents). Landed on `research-photos`, PR #227 (the prior rolling PR,
   #216, was closed with nothing open to continue from).
 
+  **The photograph agent's 26 August run (a later scheduled run): one more
+  officer portrait, and a cleaner source for one already-recorded name.**
+  Re-checked first, as every run does: all 60 presidents and 57 regents
+  still carry a portrait. `viewcontent.cgi?article=9671` (the smallest of
+  the eleven newly catalogued Talisman leads from the 25 August run, *Grit*,
+  2017-18 — the item the note above marked as worth trying "the moment the
+  gate opens") came back the same Cloudflare `HTTP 403` every run has
+  reported since 25 August; the eight-year year-photograph gap is
+  unchanged.
+
+  Pivoted to the ~862-pair officer/senate-officer portrait gap using
+  wkuherald.com's WP-JSON name search. **Jaden Marshall** (senator,
+  2023-24 through 2026-27; SGA presidential candidate against Caden Lucas
+  in April 2026) now has a portrait — `data/photos/2026-27-jaden-marshall.jpg`,
+  filed against 2025-26 and 2026-27. Source: the Herald's election-night
+  gallery "VISUALS: Lucas comes out on top at high-emotion election party"
+  (wkuherald.com/92840, Jacob Sebastian; attachment 92827) captioned
+  "Student Government Association Presidential candidate Jaden Marshall
+  waits to hear senator election results during the SGA spring election in
+  the senate chambers on Wednesday, April 15, 2026". Checked against the
+  original on 26 August: the frame is not a solo shot — seated onlookers
+  sit at the right — but the caption names one person only, and he is the
+  standing suited figure the caption describes, so the identification rests
+  on the caption alone rather than on elimination between two named faces.
+  Four further photographs in the same gallery name Marshall and show the
+  same man in the same navy suit and striped tie, which corroborates it.
+  The file is cropped to him. An earlier two-person candidate from the same
+  evening's committee-chair swearing-in article (Marshall being nominated by
+  Lucas, identifiable only by elimination against Lucas's known portrait)
+  was set aside once this cleaner shot turned up.
+
+  wkuherald.com name searches for eight other missing officers in the same
+  recent years (Blake Graham, Karlee Powell, Amelia Tucker, Molly Ricke,
+  Tyreesha Morris, Ethan Vietze, Kaden Blankenship, Will Derryberry) found
+  nothing usable — mostly text-only meeting coverage, one group photo
+  (Maggie Phelps pictured with two other unnamed judicial council members,
+  no positional cue) rejected as unconfirmable, and several already covered
+  (Rush Robinson, Gabriel Jerdon, Sam Kurtz, Veronica Butler, Jakob Barker).
+  None of the eight are closed off, just not resolved this run.
+
+  `build.py` and `check_data.py` both pass clean (61 years, 2019 events, 60
+  presidents); `check_duplicates.py` reports the same six known pairs,
+  unchanged. Landed on `research-photos`, PR #230 (the prior rolling PR,
+  #227, merged earlier the same day).
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
