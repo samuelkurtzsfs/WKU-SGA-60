@@ -2331,6 +2331,60 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   unchanged. Landed on `research-photos`, PR #230 (the prior rolling PR,
   #227, merged earlier the same day).
 
+  **A later scheduled run the same day: nothing new landed.** Re-checked
+  first, as every run does: Nick Todd, Katie Dawson, Jeanne Johnson and
+  Reagan Gilley — the four presidents named as priority one for this
+  run — already had portraits from an earlier pass, and the full sweep
+  confirms all 60 presidents and 57 regents still carry one.
+
+  Tried the digitalcommons.wku.edu PDF gate again, from three angles
+  (default headers, the documented `Sec-Fetch-*`/`Upgrade-Insecure-Requests`
+  set, and a cookie jar carrying a landing-page referer): `cgi/viewcontent.cgi`
+  returned Cloudflare `HTTP 403` every time, including after the documented
+  90-second backoff. Landing pages on the same domain load fine over the
+  same connection — this reads as the download endpoint specifically under
+  load from concurrent SGA 60 crawlers, matching CLAUDE.md's warning that
+  other routines may be sharing this egress. Did not hammer further. This
+  blocks all twelve Talisman/Herald-only year-photograph gaps
+  (1993-94 through 2009-10) and most of the pre-2010 officer gap for
+  another run.
+
+  Pivoted to wkuherald.com name searches against the ~861-entry officer/
+  senate-officer gap, plus the 2003-04 election issue (already known to
+  exist behind the same blocked gate). One lead did not clear the bar:
+  **Emily Reinneck** (Campus Improvements and Sustainability Committee
+  chair, 2025-26) is named alone in a swearing-in caption
+  ("SGA announces PFT air conditioning to be fixed," wkuherald.com/85782,
+  19 Aug 2025 — "Soon-to-be Campus Improvements and Sustainability
+  Committee Chair Emily Reinneck is sworn in..."), but the photograph
+  itself shows a row of six senators with hands raised and no positional
+  cue, so which face is hers cannot be confirmed. Set aside rather than
+  guessed; worth another look if a cleaner solo shot of her turns up.
+  Other 2025-26 gaps checked and still unresolved: Blake Graham, Hannah
+  Hash, Kaden Blankenship, Karlee Powell — text-only coverage or group
+  shots with no positional cue, nothing new since the run above. 2023-24
+  gaps checked (Annalise Finch, Isaac King, Sydney Denney, Livi Ray)
+  turned up no images at all in the matching articles.
+
+  Incidental finding for whoever next edits `data/years.json`, not acted
+  on here: "SGA Judicial Council elects new chief justice"
+  (wkuherald.com/88753, 13 Nov 2025) reports the Judicial Council voting
+  on the night of Wednesday 12 November 2025 to elect Associate Justice
+  Sophie Stirling chief justice. **The article is written before the
+  handover and proves only the election**: it says Stirling was to be
+  sworn in at the next SGA meeting on Tuesday 18 November, when Blake
+  Graham would step down. That is a plan, not a report, and 18 November
+  must not be written into the record as the date she took office until
+  a source from after the meeting says it happened. The 2025-26
+  organization block already carries Stirling as chief justice, noted as
+  holding it by 26 January 2026; what this article adds is the election
+  date and the identity of her predecessor, not a missing officer.
+
+  No photo files or `data/photos.json` entries changed this run.
+  `build.py` and `check_data.py` both pass clean (61 years, 2019 events,
+  60 presidents), unchanged from the run above. Pushed the merge of
+  `origin/main` to keep `research-photos` current; nothing else to land.
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
