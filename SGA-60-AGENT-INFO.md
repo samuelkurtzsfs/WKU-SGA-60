@@ -2385,6 +2385,52 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   60 presidents), unchanged from the run above. Pushed the merge of
   `origin/main` to keep `research-photos` current; nothing else to land.
 
+  **A 26 August run (photograph agent): two Chief Justice portraits.**
+  Re-checked first, as every run does: all four presidents named as this
+  run's priority one (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan
+  Gilley) already carried a portrait, and the full sweep confirms all 60
+  presidents and 57 regents still do. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+  was closed the whole session (Cloudflare `HTTP 403`, one direct test
+  against article 7642), and `archive.org`'s Talisman holdings were
+  re-confirmed by a proper item search (not just an HTTP 200 on the
+  `/metadata/` endpoint, which returns `200` with an empty body for a
+  nonexistent identifier and gave a false "yes" on a first pass) to be
+  exactly the 19 years CLAUDE.md already documents — nothing between
+  1988 and 2013, so none of the twelve missing-year-photograph years
+  (1993-94 through 2009-10) has a text route around the closed PDF gate.
+
+  Pivoted to wkuherald.com's WP-JSON media endpoint (`/wp-json/wp/v2/media?parent=<post id>`),
+  which surfaces each image actually attached to a post together with its
+  caption — a more direct route than reading rendered HTML, and one this
+  file hadn't described before. Ran it against eighteen 2018-2025
+  executive/Senate-officer names still missing a portrait (after
+  excluding names earlier runs already searched and set aside) and found
+  two solo-captioned photographs: **Isaac Keller**, sworn in as Chief
+  Justice on 9 April 2019, the one figure in focus and waving while
+  everyone else in the shot is an out-of-focus applauding senator; and
+  **Holden Schroeder**, addressing the chamber before announcing the
+  April 2022 election results, the only named and only standing figure
+  in his frame, corroborated by a second frame from the same set showing
+  the same face in profile. Both cropped to the named subject and
+  verified as real JPEGs (`FF D8` magic bytes) before committing.
+
+  One near-miss deliberately not used: the same election-night gallery
+  also captions "Garrison Reed (left)" congratulating Sam Kurtz, giving a
+  positional cue, but Reed's face is mostly hidden behind his own raised
+  arm in that exact frame — not usable as a portrait even though the
+  identification itself is sound; worth a future run finding a cleaner
+  shot of him rather than re-deriving this one. Also set aside: a
+  2024-09-24 Herald photo captions "Student Body Vice President Donté
+  Reed, Chief of Staff Anne-Marie Wright and Sophomore Senator Savanna
+  Kurtz" with no positional cue; Reed and Kurtz already have confirmed
+  portraits, and matching Wright to the remaining face by visual
+  elimination alone wasn't confident enough to use — flagging it here so
+  a future run does not have to rediscover the lead, only judge it.
+
+  `build.py` and `check_data.py` both pass clean (61 years, 2019 events,
+  60 presidents). Landed on `research-photos`, PR #236 (the prior rolling
+  PR was already merged, so this run opened a fresh one).
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
