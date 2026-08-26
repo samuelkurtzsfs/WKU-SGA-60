@@ -2259,6 +2259,16 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   directly — recorded plainly in case a future pass wants to re-examine it.
   Added as `data/photos/2019-20-kenan-mujkanovic.jpg`.
 
+  The editor's pass of 26 August re-examined it and closed the question
+  rather than leaving it open a fourth time. The trio is anchored at *both*
+  ends, not one: the seated centre figure in the green Nike quarter-zip
+  matches Harris's verified portrait, and the standing figure in the red
+  and grey jacket to his right matches the verified
+  `data/photos/2020-21-garrett-edmonds.jpg`. Two of the three named are
+  independently confirmed against portraits already in the archive, so the
+  caption's stated left-to-right order fixes the third by position alone.
+  The label in `photos.json` now records both anchors.
+
   Both files confirmed real JPEGs (`FF D8 FF E0`) before committing.
   `viewcontent.cgi` was tried once more against article 7740 (2008-09) and
   came back the same Cloudflare 403 every run has hit since 25 August

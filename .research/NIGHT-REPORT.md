@@ -6740,3 +6740,83 @@ senate member records across 58 years, 297 mirrored documents, 1,111 pieces of
 legislation, 181 portraits and 61 year photographs. Unchanged, as a documentation merge
 should leave them. On `main` at close, `build.py` completes cleanly over 61 year pages and
 7 decade pages, and `check_data.py` and `check_contrib.py` both exit 0.
+
+# 26 August 2026 — the two reopened portrait leads, verified and merged
+
+## What came in
+
+One open pull request, #227 on `research-photos`, two commits ahead of `main` and nothing
+behind it. Four files of substance: two portrait JPEGs, their entries in `photos.json`,
+and the run's note in `SGA-60-AGENT-INFO.md`. `years.json` is byte-identical to `main`, so
+no event, person or year moved in this diff. The other four `research-*` branches carry
+nothing `main` does not already have.
+
+## What was verified
+
+Two claims, which is all of them, so both were opened rather than sampled.
+
+**Salvador León**, Administrative Vice President 2023-24. The caption on
+`wkuherald.com/74786` reads word for word as the branch quotes it, naming León as the man
+on the right shaking hands with Sam Kurtz after the censure, photographer Dominic Di
+Palermo. The original frame holds two men and no one else in focus; the committed crop is
+the right-hand one, and the other is a good match for the verified
+`2023-24-sam-kurtz.jpg`. The identification is sound in both directions.
+
+**Kenan Mujkanovic**, Administrative Vice President 2019-20. The branch landed this one
+while flagging it as a judgment call resting on a single face match, and invited a later
+pass to re-examine it. That pass happened here, and the evidence is stronger than the
+branch claimed. The caption on `wkuherald.com/20294` gives the order — Mujkanovic, Harris,
+Edmonds, left to right — and independently states that Mujkanovic was elected
+administrative vice president, which corroborates the office as well as the face. In the
+full frame the trio is anchored at *both* ends: the seated centre figure matches the
+verified `2019-20-will-harris.jpg` on beard, hairline and build, and the standing figure
+to his right matches the verified `2020-21-garrett-edmonds.jpg`. With two of three named
+people confirmed against portraits already in the archive, the caption's own order fixes
+the third by position. That is no longer an inference from one match, and the label now
+says so.
+
+Both files are real JPEGs, `FF D8 FF E0`. Both names match the executive rosters in
+`years.json` exactly. The April 2019 election photograph is filed to 2019-20 — the term
+year, not the election year — which is the rule for spring elections, applied correctly.
+
+## What was cut
+
+Nothing. Nothing in the diff overstated its source. Neither photograph came from an
+advance notice, no committee chair was promoted to officer, no one was matched by surname,
+no changed surname created a second person, and nothing touches the settled facts.
+
+The one entry that needed a living-person check was León's, because the caption a reader
+will see on his portrait states that he was censured. It holds: the censure is already a
+sourced event in 2023-24, and that entry states the outcome — the council voted 6-0, and
+recommended no further disciplinary action. Reported outcome and all, as the rule requires.
+
+## What was strengthened
+
+The Mujkanovic label was rewritten to record both anchors instead of one, and the run's
+note in `SGA-60-AGENT-INFO.md` was extended to close the question it had left open rather
+than leave it to be reopened a fourth time.
+
+## Still open
+
+`check_duplicates.py` reports the same six pairs and exits 1, as it does on `main`: this
+diff added no events and `years.json` is untouched, so none of them are its doing. They
+were judged again and are the same three same-day 1991-92 bills and three
+introduction-and-outcome pairs, all correctly separate.
+
+The eight-year photograph gap — 1996-97, 1997-98, 2000-01, 2003-04, 2005-06, 2006-07,
+2008-09, 2009-10 — is unchanged. `viewcontent.cgi` article 7740 is still behind the
+Cloudflare challenge that has stood since 25 August. Seven officers without portraits
+(Preston Romanov, Ethan Huffaker, Lauren Willett, Anne-Marie Wright, Aniya Johnson, Meghan
+Pierce, Shelby Robertson) turned up nothing with an individual caption; none are closed
+off. `data/photos/2022-23-cole-bornefeld.jpg` is still a PNG under a `.jpg` name.
+
+Of the four research routines, portraits is still the only one firing. That remains the
+owner's call, and it is still waiting on him.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president, 297
+mirrored documents and 1,111 pieces of legislation. 183 portraits after this merge, and
+every one of the 73 leader entries in `years.json` now carries a face. On `main` at close,
+`build.py` completes cleanly over 61 year pages and 7 decade pages, and `check_data.py`
+and `check_contrib.py` both exit 0.
