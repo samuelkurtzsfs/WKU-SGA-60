@@ -6820,3 +6820,105 @@ mirrored documents and 1,111 pieces of legislation. 183 portraits after this mer
 every one of the 73 leader entries in `years.json` now carries a face. On `main` at close,
 `build.py` completes cleanly over 61 year pages and 7 decade pages, and `check_data.py`
 and `check_contrib.py` both exit 0.
+
+---
+
+# 26 August 2026 — editor's pass, the senate rosters rebuilt
+
+No research pull request was open. Every research branch — backlog, photographs, profiles,
+the senate rolls — is level with main with nothing unmerged behind it, and #227 closed at
+03:29. The three stale pull requests the standing brief still names, #6, #7 and #8, have
+been closed for weeks. So there was nothing to gate, and the pass went to what is already
+published instead.
+
+## What was wrong on the live site
+
+The senate roster for nine years had been built one entry per piece of legislation a person
+sponsored, and never merged. The same senator was listed on a year page up to five times.
+2025-26 was the worst of them: sixty roster entries for thirty-five people, Veronica Butler
+appearing five times, Amelia Tucker four.
+
+Worse, where a PDF broke an office title across a line, the fragment was published as the
+office. The 2025-26 page carried rows reading "Senator-at-", under a note that read "Named
+on the document as senator-at-." Seven such rows stood across 1997-98's successors —
+2017-18, 2021-22, 2022-23 and 2025-26.
+
+Neither validator catches this. `check_data.py` does not compare roster entries to each
+other, and `check_duplicates.py` compares event titles only.
+
+## What was done
+
+Entries sharing a name and an office were merged. Nothing was lost in doing it: `build.py`
+already expects one officer to carry many citations — the comment at `SRC_KEYS` cites Bill
+Schilling's fourteen — so the merged entry keeps every source it inherited. 655 entries
+became 604. All 1,024 citations survive, checked against `origin/main` rather than assumed:
+no citation lost, no name dropped, no profile or substantive note lost, and nothing outside
+`senate.officers` touched.
+
+The seven cut-short titles were resolved against the fuller title the same person carries
+elsewhere in that year — Ian Hamilton, Sydney Denney, Veronica Butler and Amelia R. Tucker
+each had one — and set to plain Senator for the three where nothing settles it: Amanda
+Harder, Maiah Cisco, Sarah Vincent. No title was invented. Twenty-six notes that only
+restated the office, and published the fragment while doing it, were dropped; every
+substantive note was kept.
+
+Salvador León's portrait credit quoted the Herald caption at thirty-two words and carried
+"after León was censured during a hearing" into the caption under his portrait on his own
+officer page, without the outcome. It was cut back to what identifies him, keeping the
+article link and the photographer. The censure stays where it belongs, in the 2023-24
+events, with the 6-0 vote and the recommendation of no further disciplinary action.
+
+## Left for a person
+
+Senators recorded once as Senator and once as Senator At Large in the same year — Butler,
+Emily Reinneck, Gabi Pace, William Hurst, Mark Clark, Caleb Collins, Olivia Feck, Sophia
+Bryant, Joel Hornback. A plain "Senator" citation may genuinely not specify the seat, and
+merging them is not a call to make unattended.
+
+Amelia Tucker and Amelia R. Tucker still render as two rows on the 2025-26 roster.
+`name-aliases.json` already maps them to one person, and its own note says the data keeps
+each source's spelling deliberately, so the year page was left as the design intends.
+Whether the roster should show the canonical name is worth deciding.
+
+Four same-office-different-wording pairs remain: Nathan Cherry, Jody Dahmer, Holden
+Schroeder, Jenna Wells.
+
+## What the photographs need
+
+Checking the two portraits that landed in #227 after the last editor report turned up two
+systemic faults in `data/photos.json`, neither introduced by that merge.
+
+Thirty-five of 183 leader credits reproduce Herald and Talisman captions verbatim at fifteen
+to forty-eight words. The rule is under fifteen, once per source. Twenty-three distinct
+captions are involved. CLAUDE.md asks for the caption as evidence *in the pull request
+report*; the published label should be a citation, not a reproduction of a student
+newspaper's text.
+
+Nineteen credits cite a bare image file on wkuherald.com rather than the article carrying
+the caption. Those URLs answer 403, so a reader cannot check the identification at the link
+we give them. All nineteen are 2024-25 or later — the living, currently serving students,
+the people with the most reason to care that the record is checkable.
+
+The captions themselves are sound. The articles were pulled and the stored text matches them
+word for word, so this is mis-citation and over-quotation, not invention. Article URLs were
+recovered for six of the eleven images and are listed in #228. Five are still unresolved:
+`SAV0302` (Savanna Kurtz), `02_25_25_SAG_ER_0576` (Maggie Yelton), `JSAV7861-1` (Preston
+Jenkins), `040226_sga_JS22` (Gabi Pace), `SAV4629` (Cayden Bailey).
+
+## Traps, checked against what is published
+
+April elections still file forward correctly: Jakob Barker and Will Derryberry sit as
+senators in 2025-26 and as executives in 2026-27 off the April 2026 result, which is right.
+Nothing touched contradicts the settled facts. Jade Ismail's censure case carries its
+outcome — dismissed 7-0 — as the rule on living people requires.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as president, 183
+portraits, 297 mirrored documents and 1,111 pieces of legislation. On main at close,
+`build.py` completes cleanly over 61 year pages and 7 decade pages, and `check_data.py` and
+`check_contrib.py` both exit 0. `check_duplicates.py` returns the same six pairs it returns
+on main, judged again and again correctly separate.
+
+Of the four research routines, portraits is still the only one firing. That remains the
+owner's call.
