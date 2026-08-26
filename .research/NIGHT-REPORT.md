@@ -7113,3 +7113,224 @@ Of the five research routines, photographs is still the only one firing.
 president, 185 portraits, 61 year photographs, 297 mirrored documents and 1,111
 pieces of legislation. `build.py` completes cleanly over 61 year pages and 7
 decade pages; `check_data.py` and `check_contrib.py` both exit 0.
+
+# 26 August 2026 — editor's pass, one photograph pull request merged after a trim
+
+One pull request was open, #233 on `research-photos`, and the three stale ones
+the standing brief still names — #6, #7 and #8 from 4 August — have been closed
+since 18 August. That instruction has outlived the problem it was written for
+and can go.
+
+## What was reviewed
+
+#233 is a log-only branch. It touches `SGA-60-AGENT-INFO.md` §8.4 and nothing
+else: no photograph files, `data/photos.json` untouched, `data/years.json`
+untouched. Its own report says as much and the diff bears it out, so nothing
+factual on the branch was going to reach the site.
+
+That does not make it unreviewable. §8 is what the next agent reads before it
+edits anything, so a wrong sentence there becomes a wrong fact one run later.
+The review went to the log's own claims, and eleven of them were checkable.
+
+## What held
+
+All eleven, on their own evidence rather than the report's word.
+
+The portrait sweep is right: 60 presidents and 57 regent-seat holders, none
+without a portrait. The regent figure needs `build.py`'s own `held_both()` rule
+to reproduce — a plain `role == "regent"` filter returns 39, because in most
+years the president holds the seat too, and an editor checking the lazy way
+would have called a correct report wrong. Nick Todd, Katie Dawson, Jeanne
+Johnson and Reagan Gilley, the four named as this run's priority, all had
+portraits already.
+
+The Cloudflare block reproduces exactly as described: `cgi/viewcontent.cgi`
+returns 403 while a landing page on the same host over the same connection
+returns 200. The download endpoint is gated, not the domain. Refusing to hammer
+it was the right call.
+
+Both *Herald* citations are sound. `wkuherald.com/85782` is "SGA announces PFT
+air conditioning to be fixed," 19 August 2025, and the Reinneck caption is
+quoted accurately. `wkuherald.com/88753` is "SGA Judicial Council elects new
+chief justice," 13 November 2025. The eight officers named as portrait gaps are
+all genuinely in an `organization` block with no portrait against any of them.
+
+The decision not to use the Reinneck photograph deserves recording as the
+standard, not just as a null result. She is named alone in the caption, which is
+ordinarily enough, but the frame is six senators with their hands up and no
+positional cue. Naming the person and identifying the face are two different
+things. It was set aside rather than guessed, which is what should happen every
+time.
+
+## What was cut
+
+The incidental finding, parked for whoever next edits `years.json`, said Sophie
+Stirling was "sworn in 18 Nov 2025." The article is dated the 13th and the
+handover had not happened yet: it reports the Judicial Council's vote on the
+night of 12 November and says she *was to be* sworn in at the next meeting on
+the 18th, when Blake Graham *would* step down. Future tense throughout. Trap
+one, in the place it does the most damage — a to-do note, where a date sits
+waiting to be copied into the record by someone who will not re-open the source.
+Rewritten to the election of 12 November, with the caveat stated plainly so the
+18th cannot be lifted out later without a source from after the meeting.
+
+The same paragraph said the 2025-26 organization block "does not yet show" the
+succession. It does. Stirling is already there as chief justice, noted as
+holding it by 26 January 2026. What the article actually adds is the election
+date and the predecessor's name, not a missing officer, and it now says so —
+otherwise the next run spends its time hunting a gap that was never there.
+
+Both corrections went onto the branch as 7cf2de3 before the merge, and the
+report comment on #233 records what was verified and what was trimmed.
+
+## Traps, checked
+
+The advance notice above was the one that fired. Nothing was matched by surname,
+no committee chair was promoted to officer, no April result moved year, no
+settled fact was touched, and nothing about a living person goes past what the
+cited article reported. No contributor commit was in the diff.
+
+The six duplicate pairs are the same six as every recent pass, read again and
+separate again: two designated-driver stories five months apart, a bill and its
+failure, a lawsuit planned and then endorsed, a position taken and then voted,
+and three bills filed the same day in September 1991.
+
+## Still open
+
+Emily Reinneck appears twice in the 2025-26 senate officers, once as "Senator
+At-Large" and once as "Senator". It is pre-existing on `main`, not from this
+branch, and it wants a look from whoever next opens that year.
+
+The five wkuherald.com credits citing a bare image file rather than the article
+carrying the caption are unchanged and remain the best backlog for a run. So is
+the year-photograph gap, which stays shut for as long as the download gate does.
+
+A post-meeting source for 18 November 2025 would settle the Stirling handover
+and let the succession be dated properly.
+
+Of the five research routines, photographs is still the only one firing.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 185 portraits, 61 year photographs, 297 mirrored documents and 1,111
+pieces of legislation. `build.py` completes cleanly over 61 year pages and 7
+decade pages; `check_data.py` and `check_contrib.py` both exit 0.
+
+# 26 August 2026 — editor's pass, evening: the rosters counted people twice
+
+No pull request was open. The photographs routine's last run was merged at 15:25
+and its branch carries nothing main does not already have; every other research
+branch is level. So this pass went looking at what is already published, starting
+from the one defect the morning report left open: Emily Reinneck appearing twice
+in the 2025-26 senate.
+
+She was not one case. She was one of eighty-six.
+
+## What was wrong
+
+Two faults, both of them the residue of the sweep that read officers out of the
+signature blocks of bill PDFs. The sweep filed one roster line per document, so a
+chief of staff who signed seven bills became seven officers.
+
+The first fault is within a block: fifty-five posts were held by one person who carried
+between two and seven lines for it in the same year's executive or senate roster,
+because each document labelled the post slightly differently — "Senator" on one
+bill and "Senator At Large" on the next, "Chief of Staff" on five and "Chief of"
+on a sixth where the label was cut off mid-phrase. Conner Hounshell had seven
+lines for 2017-18. Andi Dahmer had five for her presidency. Seventy-two lines in
+all were one person, one post, counted again.
+
+The second fault is across blocks: fourteen more people were filed under both
+"executive" and "senate" for the same single post, so a committee chair rendered
+twice on the year page and twice on their own officer page.
+
+## What was done
+
+Eighty-six duplicate lines were collapsed into the post each of them described.
+Every merge was decided by hand and every citation was carried across: a check
+against `origin/main` confirms nothing was lost — no person, no source URL, no
+profile. The merged line keeps the fuller office label, so "Chief of" and
+"Director of Academic and" are gone from the site, and the scraper's stub notes
+("Named on the document as senator") went with the labels they described.
+
+Three of these were corrections somebody had already written and never applied.
+Matt Bastin's 1998-99 entry said in its own note that the archive recorded him
+only as Vice President when he signed the minutes all year as Vice President of
+Administration — and both versions were live, side by side. Melissa Paris's
+2005-06 entry said the same about her portfolio. Ann-Blair Thornton's 2009-10
+entry said outright that she should be moved from the executive to the senate.
+All three now say one thing, with the correction recorded in the note rather
+than left as an instruction to a future editor.
+
+## What was checked before cutting
+
+Several of these entries cited a document whose own label named somebody else,
+which reads at first like an unsourced claim. It is not. Three of the PDFs were
+pulled and read: Bill 13-17-S names "William Hurst, Senator" in its authors,
+Resolution 7-17-S names "James Line, Chief of Staff", and Bill 7-17-S names
+"Emily Houston, Student Affairs Chair" among its contacts. The attributions are
+sound. What is corrupt is the citation *labels*, which fused adjacent names into
+people who never existed — a "William Wysong" out of William Hurst and Morgan
+Wysong, a "Hannah Line" out of Hannah Neeper and James Line. No such phantom ever
+reached a roster; they exist only inside citation text. Nothing was cut on this
+basis, and it would have been wrong to cut it.
+
+## What was left alone
+
+Eight people still hold two lines in one year, and each of them earned it: Anne
+Guillory chairing two committees in 1997-98, Jeanne Johnson as Speaker and as
+Campus Improvements chair in 2005-06 and again as executive vice president and
+president pro tempore in 2006-07, Amanda Allen moving up from administrative to
+executive vice president, Brenna Mathews from parliamentarian to secretary,
+Justin Goins from associate chief justice to chief justice, Hannah Neeper holding
+the administrative vice presidency alongside the Organizational Aid chair, and
+Donté Reed as director of enrollment until January 2024 and chief of staff after.
+
+Seth Norman nearly went with the merges. His 2005-06 entries read as one post
+under two names — Director of Public Relations and Chair of the Public Relations
+Committee — until the notes were read: he chaired the committee that autumn and
+moved up to the directorship at the end of January 2006. Two posts, in sequence.
+He stays as two lines.
+
+## Traps, checked
+
+Nothing was matched by surname: every merge was keyed on the full name through
+`name-aliases.json`, and the eleven spellings that disappear from the rosters
+(Matthew Bastin, Connor Hounshell, Alex Cissel, Alexis Courteney, Ari Srivastava,
+Zach Skillman, Lauren Willet, Maksim Zaephel, Donte Reed, Amelia R. Tucker,
+Tyresha Morris) are all registered there already as the same people. Lauren
+Willett's two spellings are recorded in her note rather than left implicit. No
+committee chair was promoted to an officer — the reverse, if anything, since a
+chair and the senate seat under it are now one line and the note says so for the
+specific seats, Potter College and PCAL. No election moved year, no settled fact
+was touched, and nothing about a living person goes past what its source says.
+No contributor commit was in this diff.
+
+The six duplicate event pairs are the same six as every recent pass and are
+separate again.
+
+## Still open
+
+The citation labels are still raw scrape output: 151 roster citations carry a
+long "SGA legislation: ..." blob instead of a bill number and title, and some of
+those blobs contain the fused non-names described above. They are visible on the
+site. Rewriting them to "SGA Bill 13-17-S, Funding for a Portable Whiteboard" is
+mechanical work against the PDFs and is the best-defined job left.
+
+Sixteen people are still filed under both the executive and the senate for what
+may be one post — Bill Parsons, Ryan Faught, Amanda Cole, Mitchell Bailey, Ryan
+Morrison, Skylar Jordan, Cherieth Lineweaver, Brian Anderson, Ian Hamilton, Kara
+Lowry in 2017-18, Mark Clark, Jamison Moorehead, Zachary Skillman, Meghan Pierce
+and Sarah Vincent among them. Most look like genuine pairs of offices, which is
+why none of them was touched; each wants its sources read the way Norman's were.
+
+The five wkuherald.com credits citing a bare image file, and the year-photograph
+gap behind the Cloudflare download gate, are both unchanged.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 185 portraits, 61 year photographs, 297 mirrored documents and 1,111
+pieces of legislation. `build.py` completes cleanly over 61 year pages and 7
+decade pages; `check_data.py` and `check_contrib.py` both exit 0.
