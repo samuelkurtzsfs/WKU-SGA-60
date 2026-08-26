@@ -6678,3 +6678,65 @@ photographs — unchanged, as three documentation merges should leave them. On `
 at close, `build.py` completes cleanly over 61 year pages and 7 decade pages,
 `check_data.py` and `check_contrib.py` both exit 0, and `check_duplicates.py` reports
 the same six pairs, read again and all correctly separate.
+
+---
+
+# 26 August 2026, early hours
+
+## What came in
+
+One open pull request, #225 from `research-senate`, and nothing else. The other four
+research branches — `research-backlog`, `research-photos`, `research-profiles` and
+`research-editor-0823-seventh` — all sit at zero commits ahead of `main`, so there was
+genuinely nothing else waiting. The three pull requests this pass was sent to rescue,
+#6, #7 and #8, were closed on 18 August; that instruction has been overtaken and can
+come out of the editor's prompt.
+
+## What was merged
+
+#225, whole and uncut. It is a documentation change and only that: 39 lines appended to
+`SGA-60-AGENT-INFO.md`, not one byte of `data/`. Nothing in it asserts anything about the
+history of the association, so the traps checklist had nothing to catch. What a note like
+this can still get wrong is the state of the archive it describes, so that is what was
+checked, claim by claim. `.research/senators-unverified.json` is empty, as it says. The
+counts it quotes — 61 years, 2,019 events, 60 presidents, 1,487 senate member records
+across 58 years, the three empty ones being 1966-67, 1969-70 and 1979-80 — were counted
+again out of `years.json` and every figure matched. Its account of the two shut leads was
+tested rather than taken on trust: `viewcontent.cgi` articles 5357 and 10386 were fetched
+three seconds apart and each came back 403 behind an identical 5,485-byte challenge page,
+the same size the note reports. The commit is authored `SGA 60`, carries no attribution
+trailer, and the file it touches is not rendered into `site/`.
+
+## What was cut
+
+Nothing. There was nothing in the diff that overstated its source, because there was no
+source-backed claim in the diff at all.
+
+## Still open
+
+The six duplicate pairs report again and were read again: the three 1991-92 items are
+three separate bills moved on one day, and the other three pairs are each an introduction
+and its outcome weeks later. All correctly separate. The scheduling item, which has been
+shrinking in these reports, has instead turned over. Of the routines that research this
+archive, only **portraits** still fires. **Backlog**, **senate rolls** and **person
+profiles** have each now stopped their own schedule, the last two within the past day.
+Every one of those decisions is defensible where it was made — a routine that has found
+nothing on five consecutive passes and whose only remaining leads are behind a bot wall is
+right to stop burning runs — and each was disclosed in the note that carried it rather
+than done quietly. But no single routine could see the shape of the three together, and
+the shape is that research here has all but halted. That is the owner's call to make, not
+the routines', and it has been put to him. Re-enabling costs nothing; the prompts behind
+them should be repointed at this file's current state first, since they still describe an
+archive with no senate members in it.
+
+The photograph leads carry over unchanged. `data/photos/2022-23-cole-bornefeld.jpg` is
+still a PNG under a `.jpg` name, Herald leads 5153 and 8052 are still unread, and 5357 and
+10386 stay shut.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people have been president, 1,487
+senate member records across 58 years, 297 mirrored documents, 1,111 pieces of
+legislation, 181 portraits and 61 year photographs. Unchanged, as a documentation merge
+should leave them. On `main` at close, `build.py` completes cleanly over 61 year pages and
+7 decade pages, and `check_data.py` and `check_contrib.py` both exit 0.
