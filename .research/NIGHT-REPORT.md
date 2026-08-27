@@ -1,3 +1,95 @@
+# Editor's pass - 27 August 2026, small hours
+
+No pull request was open. The three that the standing brief still names as stale -
+#6 photographs, #7 the 1980s, #8 the 2020s - were all closed on 18 August, and the
+brief has not caught up; there is nothing there to rescue or to close. Every active
+research branch - photographs, profiles, the senate rolls, the backlog - is level
+with main with nothing unmerged behind it. The six `research-1966-79`-style branches
+from 4 August remain orphan snapshots with no merge base, exactly as AGENT-LANDING.md
+warns, and were left alone.
+
+With nothing waiting to be gated, the pass went at what had already reached the live
+site in the previous day's merges, which is where an unreviewed error would now be
+sitting in public.
+
+## The state of what is published
+Main builds clean: 61 year pages, 2,019 events, 60 people recorded as president,
+297 documents and 1,111 legislation files. `check_data.py` and `check_contrib.py`
+both pass. Across all 2,441 roster rows in the record, every one carries a source
+and none is left with a title truncated by a PDF line break - the 26 August roster
+work holds.
+
+## What the pass corrected
+
+**Isaac Keller's portrait credit claimed more than the caption says.** The credit
+read that the caption showed him "waving to the chamber while other senators
+applaud." The Herald's caption says only: Isaac Keller gets sworn in as Chief
+Justice during a Student Government Association meeting in Downing Student Union
+on 9 April 2019. There is no wave and no applause in it, and the photograph itself
+shows his right hand raised taking the oath, not waving. The identification is
+sound and stays - the article names him confirmed chief justice in a 28-0 vote -
+but the credit is trimmed to what the caption proves, and now carries both dates:
+the meeting on 9 April, the report published 10 April. This is the same fault the
+26 August pass corrected elsewhere under "cite the caption, do not reprint it";
+it had been reintroduced in the credit written that evening.
+
+**Hannah Neeper was listed twice in the same executive roster.** 2016-17 carried
+her as "Chair of Organizational Aid Committee" and again as "Chair of
+Organizational Aid" - one committee, two rows, differing by a single word, which
+is why the 26 August merge of entries sharing a name and an office passed over
+them. Merged into one row; all three sources from the thinner entry carried
+across, so she now cites nine.
+
+## What was verified and stands
+Holden Schroeder's portrait was checked to its source and holds. The gallery's
+captions are not in the page's HTML - they load separately, and the article text
+never says "chief justice" - so the credit was confirmed against the Herald's own
+media record for the post, where the frame is captioned: SGA Chief Justice Holden
+Schroeder addresses the members of SGA before announcing the election results,
+just after midnight on 20 April 2022. That matches the credit word for word,
+including the corrected date. The double spelling is deliberate and correct:
+Schroder for 2019-20, following the Judicial Council roster as printed, Schroeder
+thereafter, and both match years.json exactly.
+
+The duplicate checker returned the same six pairs as the previous passes and all
+six stay. The designated-driver trio in particular is three distinct events - the
+bill on 4 November 1997, the Herald's report nine days later, and the February
+notice of distribution - and each is already scoped to what its own source proves,
+with the two written from index listings saying so plainly.
+
+The 26 August note on Sophie Stirling's election is a research routine catching the
+advance-notice trap on itself, correctly: the Herald of 13 November 2025 reports the
+Judicial Council's vote but is written before the handover, so 18 November stays out
+of the record as the date she took office until a source from after the meeting says
+it happened. Left as it stands.
+
+## Still open, for whoever takes the next pass
+**Committee chairs are recorded as executive officers, and seven people are
+double-listed because of it.** In 2016-17 and 2017-18 the same person appears once
+under `organization.executive` and again under `organization.senate.officers` for
+the same role: Hannah Neeper (Organizational Aid), Helen Vickrey and Andi Dahmer
+(MyCampusToo), Hizareth Linares (SGA SAVES), Emily Houston (Student Affairs), Kara
+Lowry (Secretary of the Senate) in 2016-17, and Ashley Cox (CASA) in 2017-18. Three
+of those pairs use different title strings for the one role - "MyCampusToo Chair"
+against "MyCampusToo Committee Chair", "Student Affairs Chair" against "Student
+Affairs Committee Chair" - so a name-and-office match will not find them. The next
+roster pass should de-duplicate **across** the two lists, not only within each.
+
+This was not fixed here because it is not only a duplicate: it asks whether a
+committee chair belongs in the executive cabinet at all, and these two years answer
+it both ways at once. That is a structural decision for the editor, not one to take
+unsupervised, and every row involved is sourced, so nothing is unsupported - only
+repeated.
+
+**Hannah Neeper's note says she held the administrative vice presidency, but
+2016-17 has no Administrative Vice President row.** Either the office is missing
+from the roster or the note overstates it; one source would settle which.
+
+**Some harvested legislation labels carry the bill's sponsor line as part of the
+title**, e.g. Neeper's src8 ending "B10-17-S Hannah Neeper Organizational Aid Yes",
+and the same pattern in Kara Lowry's and Hizareth Linares's citations. Cosmetic,
+but it is published text.
+
 # Editor's pass - 25 August 2026, midday
 
 No pull request was open. The overnight editor closed the last of them at 9:36,
