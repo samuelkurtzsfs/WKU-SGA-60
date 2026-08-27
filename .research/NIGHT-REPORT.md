@@ -1,3 +1,104 @@
+# Editor's pass - 27 August 2026, late: the Garrison Reed lead closed
+
+One pull request was open, #244 from the photograph routine, and it answered the
+question the previous pass left at the bottom of its own "still open" list. That
+entry had said Garrison Reed was worth one more look, because the frame the earlier
+run found hides his face behind his own raised arm, and because a second caption in
+the same gallery names him with a positional cue. The routine went back and found
+exactly that. The lead is closed and the portrait is on the site.
+
+## What was verified, and how
+
+The diff was one photograph, one entry in `data/photos.json` and a handoff note.
+Small enough that everything in it could be checked rather than sampled, so it was.
+
+The captions were pulled from `wkuherald.com` at first hand rather than taken from
+the run report. The election-night gallery of 20 April 2022 holds nine frames.
+Frame 009's caption reads as the credit quotes it, naming Cole Bornefeld
+congratulating Garrison Reed on winning the vice presidency. Frame 008's names Reed
+at left congratulating Sam Kurtz.
+
+The identification needed more than that, because frame 009 shows two men shaking
+hands and an unnamed third in the background, and a crop has to choose. Three
+independent things settle it. The man at left in frame 009 - straight dark hair,
+navy blazer, no checked shirt - is the same man as the Bornefeld portrait already
+on file, so the cropped man is not Bornefeld and the caption names only two. Frame
+008 places Reed at left in a red and white checked shirt with his face partly behind
+his arm, and it is the same shirt and the same face as the crop. Frames 001 and 010
+name Bornefeld, Reed and Kurtz together as president, vice president and
+administrative vice president, in that order, which also identifies the blue-suited
+man in the background of 009 as Kurtz. That is identification by positional caption,
+which is what this archive asks for, and not by surname.
+
+The photograph begins `FF D8 FF E0`, is a real JPEG, and the `site/photos/` copy is
+byte-identical to the one in `data/photos/`.
+
+## What the editor cut
+
+One thing, and it was trimmed rather than deleted. The credit line carried a second
+quoted caption from the same gallery, which is one more quotation than a single
+source is allowed, and an aside explaining that an earlier pass had set the
+photograph aside because of the raised arm. That aside is workflow, and it was
+rendering publicly at the top of `o/garrison-reed.html`.
+
+The frame 008 evidence is what fixes which man is Reed, so cutting it outright would
+have removed the reader's means of checking the crop. It is paraphrased instead and
+kept, and the credit now says plainly that frame 008 is what settles the question.
+The workflow aside is gone. No sourced fact was lost and the credit is back to one
+quotation.
+
+## Traps, checked
+
+The gallery reports results announced just after midnight; it is not an advance
+notice, and nothing in the entry claims anything the captions do not. No committee
+chair was recorded as an officer. Nobody was matched by surname alone.
+`data/name-aliases.json` keeps Garrison Reed and Donte Reed apart, correctly, and
+there is no duplicate person and no duplicate year-and-name pair in `photos.json`.
+The April 2022 result is filed forward to 2022-23, which is the rule: SGA elects in
+April and the winner serves the following year. No settled fact was touched. Nothing
+about a living person goes past what his caption reported. No contributor commit was
+in the diff, and every commit is authored "SGA 60" with no tool attribution.
+
+The six duplicate pairs are the same six as every recent pass. They were read rather
+than waved through, and all six are genuinely separate: three bills on one day in
+September 1991, which the rule keeps separate; a bill introduced in January 1992 and
+the same bill failing after amendment a week later; SGA taking a position against
+plus-minus grading in September 2003 and passing the legislation three weeks later;
+the Kentucky Civil Liberties Union filing in February 1972 and Associated Students
+endorsing it a month after; and the designated driver cards funded in November 1997
+against the Herald's February 1998 notice that they were about to be distributed.
+That last pair is worth recording as a good example rather than a problem - the
+February entry is an advance notice, it says so, and it claims nothing about how the
+distribution went. This diff added no events, so none of the six are its doing.
+
+## One inconsistency, left alone
+
+The run states the remaining officer pairs without a portrait as about 779 in the
+pull request and about 778 in the handoff note. A recount of executive and senate
+officers gives 760. The difference is in what each count includes rather than an
+error in the data, and it sits in a handoff document that is not published to the
+site, so it was left. Two figures produced by one run should still agree.
+
+## Still open
+
+Everything the previous passes listed is still open, minus Reed: the 151 raw
+"SGA legislation: ..." citation labels, the sixteen people filed under both the
+executive and the senate, the five wkuherald.com credits citing a bare image file,
+and the twelve-year year-photograph gap sitting behind the Cloudflare download gate
+on `viewcontent.cgi`, which has refused every run since 25 August.
+
+The three branches from 4 August have no pull requests any more. They still have no
+merge base with main and are still snapshots of a superseded repository, so they
+were left alone rather than merged. That judgement has not changed.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as president,
+297 mirrored documents and 1,111 pieces of legislation. Every president and every
+student regent carries a portrait; a recount this pass found none missing.
+`build.py` completes cleanly over 61 year pages and 7 decade pages, and
+`check_data.py` and `check_contrib.py` both exit 0.
+
 # Editor's pass - 27 August 2026, night: committee chairs sitting in the executive
 
 No pull request was open. Every research branch that shares a history with main is
