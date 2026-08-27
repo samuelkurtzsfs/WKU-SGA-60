@@ -1,3 +1,127 @@
+# Editor's pass - 27 August 2026, after the overnight pass: two faces off a page that had to be found twice
+
+One pull request was open, #247 from the photograph routine, and it was merged.
+It added two portraits and nothing else: David Eyler, chairman of the 1970-71
+Judicial Committee, and Michael E. Freville, its vice-chairman, both cropped out
+of the same group photograph in the 1971 Talisman.
+
+Two new claims is fewer than the eight a spot check calls for, so both were
+checked rather than sampled.
+
+## The page is not where the page number says it is
+
+The credit cited p. 68 of the 1971 Talisman, and the volume's own index agrees:
+DeShazer, Eyler and Freville are all filed at 68. But printed page 68 in the
+scan is a photo essay about rain. The Talisman numbers its sections separately,
+and the committee page sits on leaf n227, which `talisman1971west_djvu.xml`
+settles exactly. Anyone rechecking this should go by the leaf, not the folio, and
+the source links now point there so nobody has to find it a third time.
+
+## Two committees share the page, and the crops came from the right one
+
+This was the risk worth ruling out before anything else. Leaf n227 carries two
+group photographs: the Judicial Committee at the top, four seated and four
+standing, and Rules and Elections below it, five and four. A crop lifted from the
+wrong one would have put a stranger's face on an officer's page, which is the
+failure this archive treats as worse than having no face at all.
+
+The crops came from the top photograph. Both positions were then checked against
+the caption rather than taken on the routine's word, and the row order turns out
+to be firmer than the pull request claimed:
+
+- The front row runs man, woman, man, woman against DeShazer, Jackson, Freville,
+  Jones. Freville is the seated man in the white shirt and dark patterned tie,
+  third from left, with Barber's striped shirt directly behind him.
+- The second row is four men against Coffman, Barber, Riley, Eyler. Eyler is
+  rightmost, in a jacket, standing against the window grid of the building.
+
+Both positions were cropped out of the page scan independently and compared to
+the committed files. They match. Both files begin `FF D8` and are real JPEGs.
+
+## What was cut
+
+Both credits reproduced the Talisman's caption whole - twenty-eight words inside
+quotation marks, once in each entry. The limit is fifteen words, once per source,
+and this is a public site reusing a university archive; the rule is not decorative.
+
+Neither portrait was lost to it. The house pattern for a long credit is to
+paraphrase, which is what the Reed and Mujkanovic credits already do, and both
+now do the same while keeping every piece of the identification evidence. The
+source links were repointed from the volume's front door to the page itself, the
+same defect the overnight pass fixed for nineteen other credits.
+
+## Traps, checked
+
+No events were added, so no advance notice could be written up as a report. No
+year assignments were added, so nothing filed an April result into the wrong
+academic year. No settled fact was touched. Neither man is matched by surname:
+both are full names, and the Talisman's senior listing gives Michael Earle
+Freville against the archive's Michael E. Freville. Neither appears in
+`data/name-aliases.json`, so no changed surname has quietly made a second person.
+Nothing about either man goes past what his caption reported. No contributor
+commit was in the diff, and every commit on the branch is authored "SGA 60" with
+no tool attribution.
+
+The portraits attach to the officer entries rather than to the year's leader, so
+the site renders Eyler as "Chairman, Judicial Committee" and does not present
+either man as anything he was not.
+
+The six duplicate pairs are the same six as every recent pass, all pre-existing
+on main, and all still separate events.
+
+## One thing found and left alone
+
+The 1970-71 Judicial Committee's three officers are filed under
+`organization.senate.officers`. The Talisman describes the Judicial Committee as
+a body of the Associated Students that interprets the constitution and hears
+election appeals - a committee, on that description, rather than an office of the
+Senate. That is close to what the night pass corrected for 2016-17 and 2022-23.
+
+It predates this pull request, the portraits attach correctly either way, and
+restructuring a decade's data inside a photograph review is not this pass's work.
+It is left for whoever next works the 1970s. Worth recording alongside it: the
+Talisman's own text says the committee had seven student members, and its caption
+then names eight.
+
+## The three stale branches are not stale any more
+
+The standing brief still lists #6, #7 and #8 - the photograph branch, the 1980s
+and the 2020s - as open since 4 August and needing a decision. All three were
+closed on 18 August. The branches survive them and still have no merge base with
+main, so the judgement recorded then stands: they are snapshots of a superseded
+repository, and merging one would delete the contributor layer and the validators.
+Nothing was done to them.
+
+## Still open
+
+Everything the overnight pass listed is still open: the 151 raw
+"SGA legislation: ..." citation labels, the sixteen people filed under both the
+executive and the senate, and the twelve-year year-photograph gap from 1993-94 to
+2009-10.
+
+The gate behind that gap has got worse. `digitalcommons.wku.edu`'s
+`viewcontent.cgi` is refusing every download with a hard 403, and has been since
+25 August - the routine tested a fresh article, one that had worked before, and a
+90-second backoff, and got nothing. Roughly 770 cabinet and Senate officer
+portraits sit behind it. The Talisman years archive.org holds - 1971 to 1981,
+1986 and 1987 - are the only ones reachable, which is where these two came from,
+and archive.org does not hold the volumes covering the year-photograph gap.
+
+Three names from the 1970-71 Executive Council photograph on the facing page -
+Brett Butler, Carol Gray, Doug Alexander - were correctly left unidentified. The
+caption lists four in the front row and three in the second, but the pose is not a
+grid and one of the two women named in the front row stands visually behind. No
+crop met the bar. That was the right call and it should stay that way unless
+someone can read the photograph itself rather than the caption's row order.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 297 mirrored documents and 1,111 pieces of legislation. 201 portraits
+now carry a credit, every one of them sourced, and 61 year photographs alongside
+them. `build.py` completes cleanly over 61 year pages and 7 decade
+pages; `check_data.py` and `check_contrib.py` both exit 0.
+
 # Editor's pass - 27 August 2026, overnight: nineteen citations that led to a bare photograph
 
 No pull request was open. The photograph routine's branch still carries the three
