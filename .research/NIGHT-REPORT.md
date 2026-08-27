@@ -1,3 +1,91 @@
+# Editor's pass - 27 August 2026, morning: two officer portraits, both verified
+
+One pull request was open, #239 on `research-photos`, and it was merged. It added
+eighteen lines to `data/photos.json` and one image file: a portrait of Alexis
+Courtenay for 2021-22, and the reuse of an existing portrait for Steven
+Donte' Reed's 2023-24 year. Two new claims, so both were checked rather than sampled.
+
+## What was checked, and how
+
+The Courtenay portrait cites a College Heights Herald election-night gallery from
+20 April 2022. The rendered gallery page carries no captions; they sit behind the
+lightbox. The eight photo IDs are in the page's `data-photo-ids` attribute, and each
+caption comes back from `wkuherald.com/wp-json/wp/v2/media/<id>`. Frame
+`041922_sgaelections_hendricks_006`, media 65827, is captioned with Bornefeld and
+Courtenay embracing after the presidential result was announced. The original was
+downloaded and set beside the committed crop: they are the same frame, and the crop
+keeps the one identifiable face in it. The other person in the picture has his back
+to the camera, so there is no left-and-right question to get wrong.
+
+The Reed entry attaches the portrait already on file for 2024-25 to his 2023-24 year.
+Its source, the Herald's 27 August 2024 report on the editorial board's meeting with
+the executive cabinet, names him in the caption with a positional cue, and the article
+text names the same five officers. Reusing one portrait across a person's years is
+long-standing practice here: forty-nine files are already shared that way, including
+Sarah Vincent's across the same two years.
+
+Both files begin `FF D8`. Every one of the 193 leader photograph entries names a
+person that year's record actually contains; none is orphaned.
+
+## What was corrected
+
+Two citation labels, both for precision rather than accuracy.
+
+The Courtenay label cited the gallery post but not which of its eight photographs it
+came from. A gallery frame is the equivalent of a page number, so the frame name is
+now in the label and a reader can reach the exact caption.
+
+The Reed label had dropped the caption's positional cue, which is the only thing that
+tells three seated men apart, and did not say that the photograph post-dates the year
+it is filed under. Both are now stated, along with the fact that the two spellings of
+his name are already paired in `data/name-aliases.json`.
+
+## Traps, checked
+
+Two men named Reed sit a year apart in this record - Garrison Reed, executive vice
+president in 2022-23, and Steven Donte' Reed - which is precisely the surname trap.
+The research routine had added a Garrison Reed portrait from the same gallery, found
+that an earlier pass had already set that frame aside because his face is behind his
+own arm, and pulled it back out before opening the pull request. That was the right
+call and it holds on re-inspection.
+
+The photograph filed under 2021-22 is from an April 2022 election, which invites the
+file-forward rule. It does not apply: the rule governs terms, and Courtenay held the
+public relations directorship in 2021-22. She lost the election the photograph
+records. The year is right.
+
+Nothing here touches a settled fact. Nothing goes beyond what the cited caption
+reported. No contributor commit was in the diff, and no commit carried tool
+attribution.
+
+## What was left alone
+
+`check_duplicates.py` reports the same six pairs it has reported for days, none of
+them in this diff. All six are still separate events: a bill introduced and the same
+bill failing a week later are two things, and same-day legislative business stays
+several entries.
+
+## Still open
+
+Garrison Reed still has no portrait. Frame `041922_sgaelections_hendricks_009`, media
+65829, from the same gallery shows two men shaking hands with clear, unobstructed
+faces and is captioned as Bornefeld congratulating Reed - but the caption carries no
+left-or-right cue, so it cannot identify which face is which on its own. The next
+photograph pass would need an independent anchor, and Bornefeld's existing portrait
+is one. Worth a look; not worth a guess.
+
+Everything the previous passes listed is still open: the 151 raw "SGA legislation: ..."
+citation labels, the sixteen people filed under both the executive and the senate,
+the five wkuherald.com credits citing a bare image file, and the year-photograph gap
+behind the Cloudflare download gate.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as president,
+297 mirrored documents and 1,111 pieces of legislation. `build.py` completes cleanly
+over 61 year pages and 7 decade pages; `check_data.py` and `check_contrib.py` both
+exit 0.
+
 # Editor's pass - 27 August 2026, small hours
 
 No pull request was open. The three that the standing brief still names as stale -
