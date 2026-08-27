@@ -1,3 +1,110 @@
+# Editor's pass - 27 August 2026, afternoon: citations that named people who never existed
+
+No pull request was open. All four research routines are level with `main`, and the
+three branches from 4 August remain orphan histories with no merge base, so the review
+went at what is already published — starting from the backlog the last four reports
+have named and not finished: the roster citations carrying a raw "SGA legislation: ..."
+blob instead of a bill number and title.
+
+## What the backlog actually was
+
+The standing figure was 151 citations. Both halves of that number were wrong, in
+opposite directions. The labels live under `src`, `src2` and so on up to `src10`; a
+sweep that reads only `src` finds 124. The true count is **276**, across the executive
+block, the senate officers and the senate members.
+
+Of those, 81 carry a scraped table row, not a title. The rest simply lack the bill
+number. The same corruption has a **second home nobody had found**:
+`data/legislation-authors.json`, where 211 rows carried the same run-on string in their
+`title` field. That file renders the per-officer pages under `site/o/`, so the bad text
+was on the site twice over, from two different files.
+
+## Six people who do not exist, and one who does
+
+The scrape ran past the title into the authors, committee and vote columns of SGA's
+own legislation listing. Where two authors sat side by side, it fused them. Read
+against the AUTHOR lines of the bills themselves:
+
+- Bill 13-17-S credited "William Wysong". The bill names William Hurst, Senator, and
+  Morgan Wysong, Public Relations Committee Chair.
+- Resolution 7-17-S credited "Hannah Line" — Hannah Neeper and James Line.
+- Resolution 5-17-S credited "Savannah Lowry" — Savannah Molyneaux and Kara Lowry.
+- Bill 19-17-S credited "Andi Edmunds" — Andi Dahmer and Luke Edmunds.
+- Bill 8-17-S credited "Andi Jody Dahmer" — Andi Dahmer and Jody Dahmer.
+- Bill 28-17-S credited "Emily Mayer" — Emily Houston and Stephen Mayer.
+
+The seventh is the one that mattered most. Resolution 6-17-S credited **"Andrea
+Anderson"**, which fuses Andrea Ambam, Senator, and Brian Anderson, Senator. Andrea
+Anderson is a real and separate person in this archive: WKU's general counsel, named in
+the 2018-19 suit against the university and again before the Senate over the Pride
+Center in 2025-26. The corrupt citation put a named, living university officer's name
+on a student reparations resolution she had nothing to do with. Her four genuine
+entries are untouched.
+
+## What was checked before anything was cut
+
+Two roster people looked like fusions of the same kind and are not. **Jody Dahmer** and
+**Luke Edmunds**, both 2016-17 senators, are named in their own right on the AUTHOR
+lines of Bills 8-17-S, 12-17-S and 19-17-S. They stay. PR #235's finding that no
+phantom reached a roster holds, and it now rests on the documents rather than on
+inference: none of the seven fused names is a person anywhere in `years.json`.
+
+## What changed
+
+All 276 roster citations now read as the document prints itself — `SGA legislation:
+Bill 13-17-S, Funding for a Portable Whiteboard for SGA` — with the designation and
+title read from the mirrored PDF, and the scraped tail gone. The 211 corrupted titles
+in the author index are rewritten the same way. Nothing was deleted: every citation
+keeps the URL that carries its evidence, and in that index no name, file or role
+changed, only the title.
+
+Three further errors surfaced on the way:
+
+- **Bill 9-23-F was published as amending the Constitution. It amends the Bylaws.**
+- **Bill 16-24-S** carried a second document's title fused onto its own.
+- **Four citations pointed at URLs that 404.** `.../legislative/2019_20_legislation/`
+  should be `2019_2020_legislation`, and one 2016-17 bill sat under a directory that
+  does not hold it. Checked one URL per path prefix; the other nine prefixes resolve.
+
+## Traps, checked
+
+The older convention, where a title opens with its own designation — `Bill #92-09-S -
+Establish ASG Health Insurance Ad-Hoc Committee` — reads to a naive pattern exactly
+like the corruption. A first pass would have rewritten thirteen of them. Detection was
+changed to require the designation to sit *after* the title text, which separates 25
+legacy documents from 103 corrupt ones with no overlap, and the run was redone. No
+legacy title was altered. Every URL in the roster citations belongs to 2016-17 or
+later, so no legacy document is reachable from that edit at all.
+
+No new claim is added, so there is no advance notice to mistake for a report and no
+election to file into the wrong year. Nothing was matched by surname; the fusions were
+resolved by reading each bill's AUTHOR line, which prints the office beside the name.
+No committee chair was promoted to officer. No settled fact was touched. The one living
+person affected has less said about her than before, not more.
+
+Ten of the rewritten citations were then sampled at random and checked back against the
+text of the document each cites; all ten matched on both designation and title.
+
+## Still open
+
+- `2016-17/bill_8-17-s.pdf` prints **"Resolution 8-17-S"** in its header while its title
+  begins "Bill to Help Fund" and SGA filed it as a bill. The citation follows the
+  document. SGA's own inconsistency, recorded here rather than smoothed over.
+- The sixteen people filed under both the executive and the senate for what may be one
+  post, from the 26 August report, are untouched.
+- The five wkuherald.com credits citing a bare image file rather than the article.
+- The year-photograph gap behind the Cloudflare download gate.
+- Sophie Stirling's succession to chief justice on 18 November 2025, flagged in #233 and
+  still not written into `years.json`.
+- The split spelling of Steven Donte' Reed and Donté Reed, flagged in #239.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as president, 297
+mirrored documents and 1,111 pieces of legislation. `build.py` completes cleanly over 61
+year pages and 7 decade pages; `check_data.py` and `check_contrib.py` both exit 0;
+`check_duplicates.py` reports the same six pairs, read again and separate again.
+
 # Editor's pass - 27 August 2026, morning: two officer portraits, both verified
 
 One pull request was open, #239 on `research-photos`, and it was merged. It added
