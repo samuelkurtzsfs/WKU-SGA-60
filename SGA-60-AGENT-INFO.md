@@ -2431,6 +2431,41 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   60 presidents). Landed on `research-photos`, PR #236 (the prior rolling
   PR was already merged, so this run opened a fresh one).
 
+  **A 27 August run (photograph agent): the Garrison Reed lead closed.**
+  Re-checked first, as every run does: all 60 presidents and 57 regents still
+  carry a portrait, `research-photos` had a real merge base with `main` and
+  fast-forwarded cleanly. `viewcontent.cgi` was tried once (article 9671,
+  *Grit*) and came back the same Cloudflare `HTTP 403` every run has hit
+  since 25 August ~00:30 UTC — not retried further.
+
+  Took up the one open lead named at the close of the 26 August entry above:
+  Garrison Reed, set aside because the one captioned frame naming him
+  ("Garrison Reed (left) congratulates Sam Kurtz") shows his face partly
+  behind his own raised arm. The same 20 April 2022 gallery
+  (`wkuherald.com/65821`) has a second frame, 009, captioned "President Cole
+  Bornefeld congratulates Garrison Reed on winning his position for vice
+  president" — Reed faces the camera directly, unobstructed, wearing the
+  same checked shirt as frame 008, which is the link between the two
+  captioned frames (a third, unnamed man in the background of frame 009 was
+  left alone). Cropped to Reed and filed under **2022-23**, the year his
+  April 2022 win put him into office — not 2021-22, when the photo was
+  taken. Verified `FF D8 FF E0` before committing.
+
+  wkuherald.com's WP-JSON search (`posts` and `media` endpoints) was then run
+  against a dozen more 2018-2023 executive/senate officers still missing a
+  portrait: Josh Zaczek, Ashlynn Evans, Abbey Norvell, Tess Welch, Me'Lon
+  Craighead, Reed Breunig, Zachary Skillman, Elizabeth DeLozier, Justin
+  Goins, Paul Brosky, Jacob McAndrews, Erika Puhakka, Andrew Merritt, Turner
+  Reynolds. All turned up only text-only meeting coverage or group photos
+  with no positional caption tying a specific face to a specific name — none
+  closed off, just not resolved this run. The ~778 remaining
+  (year, officer-name) pairs without a portrait are otherwise unchanged.
+
+  `build.py` and `check_data.py` both pass clean (61 years, 2019 events, 60
+  presidents); `check_duplicates.py` reports the same six known pairs,
+  unchanged. Landed on `research-photos`, PR #244 (the prior rolling PR,
+  #236, was already merged).
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
