@@ -1,3 +1,112 @@
+# Editor's pass - 27 August 2026, night: committee chairs sitting in the executive
+
+No pull request was open. Every research branch that shares a history with main is
+fully merged, and the four branches from 4 August still have no merge base, so they
+were left alone again. With nothing queued at the gate, the pass went to a defect
+already on the live site.
+
+## The 2016-17 executive was missing its Administrative Vice President
+
+The executive roster for 2016-17 listed fifteen people. Six of them were committee
+chairs, and one of those six had displaced a real executive office: Hannah Neeper
+appeared only as Chair of the Organizational Aid Committee, so the year published no
+Administrative Vice President at all. Her own note had said all along that she held
+the chairmanship "alongside her office as Administrative Vice President"; nothing had
+acted on it.
+
+SGA's own minutes of 13 September 2016 settle it, and the file was already mirrored in
+`data/documents/`, so nothing had to be fetched. The minutes run the executive reports
+first - President Jay Todd Richey, Administrative Vice President Hannah Neeper, Chief
+of Staff James Line, Director of Public Relations Murphy Burke - and then a separate
+block of committee reports: Academic Affairs, Legislative Research, MyCampusToo,
+Sustainability. That is SGA drawing the line itself, and the data had blurred it.
+Neeper is now Administrative Vice President, sourced to those minutes, with the
+Organizational Aid chairmanship kept in the note and in the senate block where it was
+already recorded against Bill 10-16-F.
+
+## Five people were being published twice
+
+Kara Lowry, Emily Houston, Hizareth Linares, Helen Vickrey and Andi Dahmer each stood
+in both the executive and the senate under the same title. Vickrey's and Linares'
+profiles were byte-identical in both places, so the site was printing the same
+paragraphs about the same woman twice on the same page. The executive copies are gone.
+The senate copies, which carry the better sources - Bill 18-16-F, Bill 17-17-S, Bill
+24-17-S - are what remain. Lowry's case needed no judgement: Secretary of the Senate
+is a senate office by its own name, and the minutes list her under the senate's
+officer reports.
+
+Nothing was deleted that existed only in the executive. Brian Anderson, Morgan Wysong
+and Savannah Molyneaux were moved rather than cut, because their executive entries
+carried profiles and sources the senate side did not have. Anderson had been in the
+senate twice over, once richly as Legislative Research chair and once thinly as
+"Senator"; those are now one entry, and Resolution 6-17-S survives on it as a second
+source.
+
+## A committee member is not an executive officer
+
+Two entries in 2022-23 claimed more than any structure allows. Brooke Mitchell was
+filed in the executive as "Mental Health and Wellbeing Committee Member", on the
+strength of being one of seven listed authors of Bill 46-23-S - a bill's author read
+as a committee member, and a committee member then read as a member of the executive.
+Reed Hensley was filed there as "Member of Organizational Aid Board", though his own
+profile says he was elected a sophomore class senator. Both moved to the senate with
+their profiles and sources intact. Neither was cut: what the sources prove about them
+is all still on the page, under a heading that does not overstate it.
+
+Olivia Feck was left where she is. She is a committee chair in the same executive
+block, and from about 2021 the cabinet may genuinely have included chairs; without
+minutes for that year in hand, moving her would be a guess. A committee *member* in
+the executive is wrong under any reading, which is why those two moved and she did not.
+
+## Checked before anything was touched
+
+Every name, every source URL and every profile was counted in the file before and
+after. No name left the record, no source URL left the record, and no person lost a
+profile: the count fell by two only because Vickrey's and Linares' duplicate copies
+went, and the surviving copy of each is the full one, character for character.
+
+The build renders `senate.members` as a bare count of names, so relocating anyone into
+it would have silently dropped their profile from the site. Everything moved this pass
+went into `senate.officers`, which the officers page indexes.
+
+## Traps, checked
+
+No events were added or altered, so no advance notice could be written up as a report
+and nothing moved an April result into the wrong academic year. No settled fact was
+touched. Nothing was matched on a surname: the one name that could collide, Reed, was
+read off the profiles rather than the name. No contributor commit was in this diff.
+Nothing here goes past what its cited source reports, and nothing added a personal
+detail unconnected to SGA service.
+
+The six duplicate pairs are the same six as recent passes. All six are still genuinely
+separate events, and two were re-read in full this pass rather than inherited: the
+1997-98 designated driver cards are a bill passing in November and a Herald notice of
+distribution in February, and the 2003-04 plus/minus grading pair is a September debate
+and an October vote. The February 1998 entry is drawn from a contents listing and says
+so, claiming only that distribution was announced - the advance-notice rule handled
+correctly by whoever wrote it.
+
+## Still open
+
+The wider pattern is not fixed. Committee chairs sit in the executive block in at least
+1974-75, 1990-91, 2013-14, 2017-18, 2021-22, 2022-23, 2023-24 and 2025-26. Each needs
+that year's minutes to know whether the chairs were cabinet members in that era, which
+is a research job rather than an editing one, and it is the most useful thing the
+routines could take up next. "Coordinator of Committees" in the late 1990s is not part
+of it: that is a real cabinet office, not a chairmanship.
+
+Everything the evening pass listed is still open: the raw "SGA legislation: ..."
+citation labels, now 276 of them rather than the 151 last counted, the five
+wkuherald.com credits citing a bare image file, and the year-photograph gap behind the
+Cloudflare download gate. Garrison Reed is still worth one more photograph pass.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as president,
+297 mirrored documents and 1,111 pieces of legislation - all unchanged, as an
+organisation-structure pass should leave them. `build.py` completes cleanly over 61
+year pages and 7 decade pages; `check_data.py` and `check_contrib.py` both exit 0.
+
 # Editor's pass - 27 August 2026, evening: eight portraits the yearbook does not identify
 
 One pull request was open, #241 from the photograph routine: twelve cabinet officer
