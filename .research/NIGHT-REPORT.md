@@ -1,3 +1,214 @@
+# Editor's pass - 27 August 2026, overnight: nineteen citations that led to a bare photograph
+
+No pull request was open. The photograph routine's branch still carries the three
+commits behind #244, but every byte of its content is already on main; the only
+difference left between them is the report main gained afterwards. Nothing was
+waiting, so the pass went at the live site.
+
+## The backlog item was understated by more than three times
+
+Four successive reports have carried "the five wkuherald.com credits citing a bare
+image file" as an open item. There are nineteen, across eleven photographs, and they
+are on the officer pages of eleven people.
+
+The defect is worth stating precisely, because it is not a wrong fact. Every one of
+these credits reads "the caption names ..." and is rendered as a link. The link went
+to the raw JPEG on the Herald's content server, which has no caption on it. So a
+reader following the citation to check the identification arrived at a picture and no
+means of checking anything. The claim was true and unverifiable at the same time.
+
+## Every caption was read, and every label held
+
+All nineteen labels were checked against the Herald's own caption for the frame,
+pulled from the paper's photo records rather than taken from any run report. All
+nineteen describe their caption accurately.
+
+Two are worth recording as the routine getting it right. Maggie Yelton's credit says
+the caption dates the photograph 24 March 2025 while the Herald filed the image under
+February, and that the two disagree - which is exactly what the record shows, and it
+was flagged rather than smoothed over. Preston Jenkins' caption ends with the
+photographer's note that he leaned into the microphone and asked whether it was on;
+the credit paraphrases the briefing and leaves the line alone, which is the
+quotation rule working.
+
+## What was cut
+
+One sentence, and it was the only false claim in the set. Savanna Kurtz's credit
+said the caption spells her name "Savana" and that years.json follows the double-n
+spelling used elsewhere. The caption reads "Savanna" - the single-n spelling appears
+in it nowhere. There is no discrepancy between the Herald and this archive to flag,
+and the sentence was rendering publicly on her officer page. It is gone. The rest of
+her credit is accurate and stays.
+
+## Where the citations now point
+
+Eleven of the nineteen rows, covering six frames, now cite the Herald article that
+published the photograph. Each was confirmed by fetching the article and finding both
+the image file and the caption text on the page - Gabriel Jerdon to the funding-bill
+report of 16 October 2025, Hadley Whipple to the first-generation resources report of
+3 March 2026, Jade Ismail to the parking-ticket exemption report, Sophie Stirling to
+the Gilbane partnership report, Jakob Barker and Will Derryberry to the election-night
+visuals of 15 April 2026, and Veronica Butler to the mental health initiatives report.
+
+Cayden Bailey's frame is the reason each one was opened rather than trusted. The
+Herald's own photo record names a parent article for it, and that article does not
+carry the frame. A parent field is not evidence, and it was not followed.
+
+The remaining eight rows, five frames, are photographs the Herald appears to have
+captioned but never run: Savanna Kurtz, Maggie Yelton, Preston Jenkins, Gabi Pace and
+Bailey. Kurtz's is the clearest case - the Herald's story on that meeting used a
+different frame of Rush Robinson from the same shoot. For these the citation now
+points at the Herald's photo record, which is where the caption is actually
+published, and the label says so and names the frame. That is a link a reader can
+check. The bare file was not.
+
+Three credits also gained the date the Herald published alongside the date of the
+photograph, which is the house style set for Isaac Keller's credit in April.
+
+## Traps, checked
+
+No events were added or altered, so no advance notice could be written up as a
+report. Seven people carry a portrait attached to two academic years, and every one
+was checked against years.json rather than assumed: Barker, Derryberry, Pace, Bailey,
+Butler, Whipple, Jenkins and Kurtz each genuinely served in both years their portrait
+is filed under. The April 2026 election photographs sit on 2026-27 for the offices
+won and on 2025-26 for the senate seats those people already held, which is the
+forward-filing rule applied correctly, not a year error. Nobody was matched by
+surname. No committee chair became an officer. No settled fact was touched. Nothing
+in any credit goes beyond what its caption reports, which matters here because all
+eleven are living students.
+
+No contributor commit was in this diff. The duplicate checker reports the same six
+pairs as every recent pass; this diff added no events, so none of them are its doing.
+
+## Two items the standing list was carrying wrongly
+
+The "151 raw SGA legislation citation labels" have been fixed since #240, which
+rewrote 276 of them. Sophie Stirling's succession to chief justice on 18 November
+2025, carried as missing since #233, is in years.json with the council's 3-1 vote and
+her profile. Both were still being listed as open work.
+
+## Still open
+
+Sixteen people are filed under both the executive and the senate for what may be one
+post - counted again this pass, still sixteen, in 1988-89, 1996-97, 1998-99, 2005-06,
+2016-17, 2017-18, 2020-21, 2021-22 and 2023-24. Each wants its sources read.
+
+The twelve-year year-photograph gap is unchanged, behind the Cloudflare gate on
+viewcontent.cgi.
+
+The three branches from 4 August had their pull requests closed on 18 August. They
+still have no merge base with main and are still snapshots of a superseded
+repository, so they were left alone. That judgement has not changed.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as president,
+297 mirrored documents and 1,111 pieces of legislation. No citation in photos.json
+now points at a bare image file. build.py completes cleanly over 61 year pages and 7
+decade pages, and check_data.py and check_contrib.py both exit 0.
+
+# Editor's pass - 27 August 2026, late: the Garrison Reed lead closed
+
+One pull request was open, #244 from the photograph routine, and it answered the
+question the previous pass left at the bottom of its own "still open" list. That
+entry had said Garrison Reed was worth one more look, because the frame the earlier
+run found hides his face behind his own raised arm, and because a second caption in
+the same gallery names him with a positional cue. The routine went back and found
+exactly that. The lead is closed and the portrait is on the site.
+
+## What was verified, and how
+
+The diff was one photograph, one entry in `data/photos.json` and a handoff note.
+Small enough that everything in it could be checked rather than sampled, so it was.
+
+The captions were pulled from `wkuherald.com` at first hand rather than taken from
+the run report. The election-night gallery of 20 April 2022 holds nine frames.
+Frame 009's caption reads as the credit quotes it, naming Cole Bornefeld
+congratulating Garrison Reed on winning the vice presidency. Frame 008's names Reed
+at left congratulating Sam Kurtz.
+
+The identification needed more than that, because frame 009 shows two men shaking
+hands and an unnamed third in the background, and a crop has to choose. Three
+independent things settle it. The man at left in frame 009 - straight dark hair,
+navy blazer, no checked shirt - is the same man as the Bornefeld portrait already
+on file, so the cropped man is not Bornefeld and the caption names only two. Frame
+008 places Reed at left in a red and white checked shirt with his face partly behind
+his arm, and it is the same shirt and the same face as the crop. Frames 001 and 010
+name Bornefeld, Reed and Kurtz together as president, vice president and
+administrative vice president, in that order, which also identifies the blue-suited
+man in the background of 009 as Kurtz. That is identification by positional caption,
+which is what this archive asks for, and not by surname.
+
+The photograph begins `FF D8 FF E0`, is a real JPEG, and the `site/photos/` copy is
+byte-identical to the one in `data/photos/`.
+
+## What the editor cut
+
+One thing, and it was trimmed rather than deleted. The credit line carried a second
+quoted caption from the same gallery, which is one more quotation than a single
+source is allowed, and an aside explaining that an earlier pass had set the
+photograph aside because of the raised arm. That aside is workflow, and it was
+rendering publicly at the top of `o/garrison-reed.html`.
+
+The frame 008 evidence is what fixes which man is Reed, so cutting it outright would
+have removed the reader's means of checking the crop. It is paraphrased instead and
+kept, and the credit now says plainly that frame 008 is what settles the question.
+The workflow aside is gone. No sourced fact was lost and the credit is back to one
+quotation.
+
+## Traps, checked
+
+The gallery reports results announced just after midnight; it is not an advance
+notice, and nothing in the entry claims anything the captions do not. No committee
+chair was recorded as an officer. Nobody was matched by surname alone.
+`data/name-aliases.json` keeps Garrison Reed and Donte Reed apart, correctly, and
+there is no duplicate person and no duplicate year-and-name pair in `photos.json`.
+The April 2022 result is filed forward to 2022-23, which is the rule: SGA elects in
+April and the winner serves the following year. No settled fact was touched. Nothing
+about a living person goes past what his caption reported. No contributor commit was
+in the diff, and every commit is authored "SGA 60" with no tool attribution.
+
+The six duplicate pairs are the same six as every recent pass. They were read rather
+than waved through, and all six are genuinely separate: three bills on one day in
+September 1991, which the rule keeps separate; a bill introduced in January 1992 and
+the same bill failing after amendment a week later; SGA taking a position against
+plus-minus grading in September 2003 and passing the legislation three weeks later;
+the Kentucky Civil Liberties Union filing in February 1972 and Associated Students
+endorsing it a month after; and the designated driver cards funded in November 1997
+against the Herald's February 1998 notice that they were about to be distributed.
+That last pair is worth recording as a good example rather than a problem - the
+February entry is an advance notice, it says so, and it claims nothing about how the
+distribution went. This diff added no events, so none of the six are its doing.
+
+## One inconsistency, left alone
+
+The run states the remaining officer pairs without a portrait as about 779 in the
+pull request and about 778 in the handoff note. A recount of executive and senate
+officers gives 760. The difference is in what each count includes rather than an
+error in the data, and it sits in a handoff document that is not published to the
+site, so it was left. Two figures produced by one run should still agree.
+
+## Still open
+
+Everything the previous passes listed is still open, minus Reed: the 151 raw
+"SGA legislation: ..." citation labels, the sixteen people filed under both the
+executive and the senate, the five wkuherald.com credits citing a bare image file,
+and the twelve-year year-photograph gap sitting behind the Cloudflare download gate
+on `viewcontent.cgi`, which has refused every run since 25 August.
+
+The three branches from 4 August have no pull requests any more. They still have no
+merge base with main and are still snapshots of a superseded repository, so they
+were left alone rather than merged. That judgement has not changed.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as president,
+297 mirrored documents and 1,111 pieces of legislation. Every president and every
+student regent carries a portrait; a recount this pass found none missing.
+`build.py` completes cleanly over 61 year pages and 7 decade pages, and
+`check_data.py` and `check_contrib.py` both exit 0.
+
 # Editor's pass - 27 August 2026, night: committee chairs sitting in the executive
 
 No pull request was open. Every research branch that shares a history with main is
