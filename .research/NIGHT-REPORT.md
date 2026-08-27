@@ -1,3 +1,141 @@
+# Editor's pass - 27 August 2026, evening: eight portraits the yearbook does not identify
+
+One pull request was open, #241 from the photograph routine: twelve cabinet officer
+portraits for 1971-72 through 1977-78, pulled from Talisman volumes on archive.org.
+Four were merged. Eight were cut. The two reasons they were cut are the two the
+photograph routine keeps running into, so both are written out here in full.
+
+## What was verified
+
+The Talisman full texts on archive.org are not rate limited, so every cited caption
+was read in the volume itself rather than taken from the pull request. All eleven
+quoted captions are verbatim. Where the identification turned on what the printed
+photograph actually shows, the page image was fetched and read.
+
+The 1975 page settled the one that mattered most. The caption puts Tom LaCivita "at
+right" discussing concert bookings with treasurer Ricky Johnson, while the routine's
+credit claimed Johnson was not in the frame at all - which, if the crop had taken the
+wrong figure, would have published Johnson's face under LaCivita's name. Leaf 112 of
+the 1975 volume shows one man fully in frame at the right and nothing of the second
+man but a hand at the lower left edge. The crop is LaCivita. The page footer also
+confirms the citation exactly: 109, Associated Student Government.
+
+Rick Kelley's portrait needed no argument at all. The desk nameplate in the photograph
+reads RICK KELLEY, the posters behind him are Associated Student Government concert
+bills, and the Who's Who text beside the portrait names him activities vice-president
+for ASG. The same volume's ASG section has him "beginning second terms in office",
+which is what makes filing his portrait under both 1975-76 and 1976-77 correct.
+
+Tom Blair was carried by the volume's own index - `Blair, Thomas Alan 50, 277, 340` -
+where page 50 is the ASG section naming Tom Blair administrative vice president and
+page 340 is the Who's Who portrait. The index, not the name, is the identification.
+
+## Five group photographs presented as one person's portrait
+
+Reginald Glass, Nancy Pape and Joe Glasser for 1971-72; Pam Stewart and Thomas
+LaCivita for 1973-74. Both captions name everyone present without saying which figure
+is which, and the routine filed the uncropped group shot under each name in turn.
+
+The site renders a `leaders` entry as a portrait figure with alt text reading
+"Portrait of Nancy Pape." So a four-person photograph filed under three names tells a
+reader three times over that it is looking at a particular person, and points at three
+different faces. A credit line explaining that the caption does not map names to
+figures does not undo that.
+
+Worse, the archive already held both photographs. `1971-72-executive-officers.jpg` and
+`1973-74-officers-meeting.jpg` have been on main for some time, filed as year
+photographs with every officer named in the caption - which is the correct home for a
+group shot. The routine re-downloaded both under new filenames, 888 KB of duplicate
+binary. Glass and Pape also already had individual portraits: Glass from his p. 201
+solo profile with his name tag legible in the frame, Pape cropped from the very same
+pool-room photograph by counting along the caption's naming order. The new entries
+would have set both aside in favour of the unidentified group shot.
+
+## Three portraits resting on a name and nothing else
+
+Gerard Faulk, filed under two years, and Gary Reed. Both came from senior class
+portrait grids, and in neither volume does anything connect the man in the grid to
+student government.
+
+Faulk's case is the instructive one, because it looked corroborated and was not. The
+grid gives "GERARD FAULK, JR., Elem. Ed., Bowling Green", and years.json describes the
+Judicial Council chairman as an elementary education major, so the two appear to
+agree. They are the same statement. That claim's `src2` is this grid entry: the
+archive learned his major from the photograph the major was then used to authenticate.
+Strip the circle away and there is a name and nothing else. The word *judicial* does
+not appear anywhere in the 1977 Talisman, and the index puts Faulk on p. 319, the SNEA
+group, and p. 350, the grid.
+
+Gary Reed is the same shape and thinner. The 1978 index reads `Reed, Gary W. 288, 372`;
+372 is the grid and 288 turns out to be the Accounting Club roster, where he appears as
+"G. Reed" - a surname-initial match nested inside a full-name match. The archive knows
+nothing else about him beyond winning the treasurer election 554 to 437.
+
+The four grid portraits already on main - Strader, Elder, Richards, Velastegui - each
+pair the class portrait with the same volume's ASG group photograph or feature. That
+second link is the standard. These two had none.
+
+Brent Shockley rests on a name too and was kept, because the difference is real: his
+caption identifies the man in the photograph directly, and the corroboration is
+independent rather than circular. The Herald has him a senior studying government from
+Scottsville; the Talisman has him a senior interning at the Legislative Research
+Commission.
+
+## Trimmed rather than cut
+
+The four surviving credits quoted 34, 20, 20 and 15 words of Talisman text. The rule is
+under fifteen words, once per source, and main holds that line - 192 of its 193 photo
+credits sit under it. All four were rewritten as paraphrase with one short quote each,
+losing no fact that does identifying work.
+
+LaCivita's credit was corrected to say Johnson's face falls outside the frame rather
+than that he is absent from it, which is both true and the reason the crop is LaCivita.
+Shockley's page was cited as 121; the index gives 116-7 and the page markers in the
+text agree, so it now reads pp. 116-117.
+
+## Traps, checked
+
+No events were added, so no advance notice could be written up as a report and no April
+result could be filed into the wrong academic year. No committee chair was promoted to
+officer - Faulk is recorded as Judicial Council chairman under the senate, where he
+belongs, and that was not disturbed. No changed surname created a duplicate person. No
+settled fact was touched. Nothing about any of these men goes past what his caption
+reported. No contributor commit was in this diff, and every commit on the branch is
+authored "SGA 60" with no tool attribution.
+
+The four surviving files begin `FF D8` and are real JPEGs, and the deleted files are
+gone from both `data/photos/` and `site/photos/` with no reference left anywhere in the
+built site.
+
+The six duplicate pairs are the same six as every recent pass. This diff adds no
+events, so none came from here, and all six are still separate events.
+
+## Still open
+
+Faulk's profile in years.json states as fact that he was an elementary education major,
+sourced to the grid entry whose portrait has now been cut. With the photograph gone the
+claim stands on a name match alone. Flagged rather than fixed, since years.json was
+outside this diff, and left for a run that can go at the Herald text directly.
+
+The three branches from 4 August - the 1980s, the 2020s and the photograph branch that
+went with them - still have no pull requests and still have no merge base with main.
+Left alone, as before.
+
+Everything the afternoon pass listed is still open: the 151 raw "SGA legislation: ..."
+citation labels, the sixteen people filed under both the executive and the senate, the
+five wkuherald.com credits citing a bare image file, and the twelve years from 1993-94
+to 2009-10 with no photographs at all, which sit behind the `viewcontent.cgi` Cloudflare
+gate that refused the routine every attempt this session.
+
+Garrison Reed is still worth one more photograph pass, for the reason the morning report
+gave.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as president, 297
+mirrored documents and 1,111 pieces of legislation. `build.py` completes cleanly over 61
+year pages and 7 decade pages; `check_data.py` and `check_contrib.py` both exit 0.
+
 # Editor's pass - 27 August 2026, afternoon: citations that named people who never existed
 
 No pull request was open. All four research routines are level with `main`, and the
