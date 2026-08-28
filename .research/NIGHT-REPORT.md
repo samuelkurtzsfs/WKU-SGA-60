@@ -8409,3 +8409,97 @@ positional cue and may give a cleaner shot.
 president, 297 mirrored documents and 1,111 pieces of legislation. `build.py`
 completes cleanly over 61 year pages and 7 decade pages; `check_data.py` and
 `check_contrib.py` both exit 0.
+
+# 28 August 2026 — editor's pass, three portraits merged after a caption trim
+
+One pull request was open, #250, the rolling photograph branch. It added three
+officer portraits and nothing else: Zach Jones and James Line, both 2016-17, and
+Morgan Gammons, 2024-25. Three new claims is fewer than the eight a spot check
+would sample, so all three were verified rather than sampled.
+
+## What was checked
+
+Both cited Herald articles were opened and both captions matched the entries
+word for word. `wkuherald.com/28868` carries the 5 April 2017 report, bylined
+Jamie Williams, of the 3 April meeting that lowered the SGA grade-point
+requirement from 2.5 to 2.0. `wkuherald.com/83591` carries the 4 April 2025
+report of the DEI committee vote, and its body calls Gammons chief justice in a
+post-meeting interview independently of the caption, which is a second thread on
+the same identification.
+
+The part worth doing properly was the crops. A caption reading "(left)" and
+"(right)" identifies nobody if the crop is taken from the wrong side of the
+frame, and that error would be invisible in a diff. Both original photographs
+were pulled and looked at. The 2017 frame holds two men and only two, in the
+chambers with the constitution lettered on the wall behind them: the man at left
+in a light blue shirt with his hand to his chin, the man at right at the podium
+in a white SGA-monogrammed shirt. The committed files take Jones from the left
+and Line from the right, which is the way round the caption puts them. The 2025
+frame is a solo shot of Gammons at the podium with nobody else in it. All three
+files begin `FF D8 FF E0`.
+
+All three names match `data/years.json` exactly, and none of the three offices
+was inflated to suit a photograph. Jones is recorded as senior senator and
+campus improvements chair, which is what he was; a photograph of a committee
+chair did not turn him into an officer.
+
+## What was cut
+
+The three credit lines reproduced the newspaper's captions whole — nineteen
+words for the 2017 caption, twenty-four for the 2025 one, and the 2017 caption
+printed twice, once under each man. These are not private notes. `site/o/` is
+gitignored but rebuilt on every deploy, and the strings were confirmed rendering
+as visible text into the Jones, Line and Gammons officer pages. The rule is a
+quote under fifteen words, once per source, and the three longest quoted strings
+in the whole of `photos.json` were these three.
+
+They were trimmed, not deleted. Each credit now quotes only the words that carry
+the identification and paraphrases the rest, and the photographs, subjects,
+years and source URLs are untouched. The full captions stay in the pull request
+where they serve as evidence, which is what they are for.
+
+This is the third pass running that has had to make the same cut: Garrison Reed
+in a3be81c, the two Judicial Committee portraits in 5d766b9, these three now.
+The routine is told again, on the pull request, to write the credit paraphrased
+from the start and keep the full caption in its report.
+
+## What was clear
+
+Both articles report meetings that had already happened, so neither is an
+advance notice. No one was matched by surname. Nothing files into the wrong
+academic year: Gammons photographed in April 2025 is a sitting officer of
+2024-25, not an April election result belonging to the year after. Nothing goes
+near the settled facts, and nothing about a living person exceeds what the
+source printed — the clothing noted in each credit is crop provenance, and it is
+the thing that makes the identification checkable by the next reader.
+
+The routine was right to flag Salvador Leon and Salvador León and right not to
+touch them. They may well be one man across two years, but that has to be
+established rather than assumed, and it belongs in `name-aliases.json`. Still
+open.
+
+## Still open
+
+Everything carried over from the evening pass remains: the 151 raw "SGA
+legislation: ..." citation labels, the sixteen people filed under both the
+executive and the senate, the credits citing a bare image file, and the
+year-photograph gap from 1996-97 to 2009-10 sitting behind the Cloudflare
+download gate on `viewcontent.cgi`, which the routine tested once more this run
+and found unchanged.
+
+One small thing noticed and left alone: the 1972-73 Ed Jordan credit quotes at
+exactly fifteen words, which is the boundary rather than under it. It is
+pre-existing on main and outside this diff, and it is noted here rather than
+changed in a pass reviewing something else.
+
+The three branches from 4 August still have no pull requests and still have no
+merge base with main. That judgement has not changed either.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 297 mirrored documents and 1,111 pieces of legislation. `build.py`
+completes cleanly over 61 year pages and 7 decade pages; `check_data.py` and
+`check_contrib.py` both exit 0; `check_duplicates.py` reports the same six pairs
+as every recent pass, none of them in a year this diff touched, and all six
+still genuinely separate events.
