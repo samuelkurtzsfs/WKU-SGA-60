@@ -8503,3 +8503,75 @@ completes cleanly over 61 year pages and 7 decade pages; `check_data.py` and
 `check_contrib.py` both exit 0; `check_duplicates.py` reports the same six pairs
 as every recent pass, none of them in a year this diff touched, and all six
 still genuinely separate events.
+
+# 28 August 2026 — the editor's pass, nothing open to review
+
+## What there was to review
+
+Nothing. There are no open pull requests on the repository. The three branches
+the standing brief still names as stale and open — #6 "Research: photographs
+(rolling)", #7 "Research: the 1980s" and #8 "Research: the 2020s" — were all
+closed on 18 August, ten days ago, and none of them was merged. The brief has
+not caught up with that; this entry is the note that it should.
+
+Every research branch that shares a history with `main` is level with it.
+`research-photos`, `research-backlog`, `research-senate` and
+`research-editor-0826-late` are all nought commits ahead, which means the work
+the routines pushed has already landed. `research-photos` carries a commit from
+today and that commit is on `main`, so the routines are running and landing
+normally; there is no stall behind the empty queue.
+
+The seven branches from 4 August — `research-1966-79`, `research-1980s`,
+`research-1990s`, `research-2000s`, `research-2010s`, `research-2020s`,
+`research-profiles`, together with `photo-research-2026-08-22` and
+`research-editor-0823-seventh` — still have no merge base with `main`. That
+judgement is unchanged from every previous pass and was not revisited.
+
+## The rewrite of main
+
+`main` was force-pushed since the last pass: the tip this clone had, af11520 of
+24 August, is not an ancestor of the current bc8e909. This was the commit-author
+cleanup that AGENT-LANDING.md had been describing as undecided. It is done. The
+history is now 140 commits authored entirely by `SGA 60` and `samuelkurtzsfs`;
+no commit on `main` carries a tool's name, a `Co-Authored-By` trailer or a
+session link.
+
+Because a force-push is the one operation that can silently destroy research,
+it was checked rather than assumed. The old tip's `years.json` was extracted and
+compared against the current one field by field: 61 academic years on both
+sides, no year present in the old file and absent from the new, no leader
+present in the old and absent from the new, and of 2,018 dated events on the old
+tip every one survives on the new, which carries 2,019. Nothing was lost. The
+rewrite took the tool's name out of the history and left the history alone.
+
+AGENT-LANDING.md was corrected to say so. It had been telling every routine that
+105 commits still carried the attribution and that nobody had decided what to do
+about it, which would have sent the next reader looking for a problem that has
+been fixed.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 297 mirrored documents and 1,111 pieces of legislation. `build.py`
+completes cleanly over 61 year pages and 7 decade pages; `check_data.py` and
+`check_contrib.py` both exit 0. The working tree is clean after a build, so
+what is deployed matches what is in `data/`.
+
+`check_duplicates.py` reports the same six pairs it has reported for several
+passes, and all six were read again rather than taken on trust. The three bills
+of 1 September 1991 are three bills. The 1991-92 regent advisory committee is an
+introduction on 28 January and a defeat on 6 February. The 1971-72 Civil
+Liberties Union pair is the union's plan in February and Associated Students'
+endorsement in March. The 2003-04 plus/minus pair is a position taken in
+September and legislation passed in October. The 1997-98 designated driver cards
+are announced three months apart. None of the six is one event written twice.
+
+## Still open
+
+Everything carried over from the previous pass stands untouched, none of it
+being in a diff this pass had to judge: the 151 raw "SGA legislation: ..."
+citation labels, the sixteen people filed under both the executive and the
+senate, the credits citing a bare image file, the year-photograph gap from
+1996-97 to 2009-10 behind the Cloudflare gate on `viewcontent.cgi`, the
+Salvador Leon and Salvador León question awaiting `name-aliases.json`, and the
+1972-73 Ed Jordan credit sitting at exactly fifteen words.
