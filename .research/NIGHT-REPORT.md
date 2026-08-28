@@ -77,6 +77,24 @@ pairs it has been reporting, none of them in this diff, and each of them a
 genuinely separate event - a bill introduced and the same bill failing weeks
 later, three different bills on 1 September 1991.
 
+## The production alias, found at last: `sga60.vercel.app`
+
+Two earlier entries in this file record that the live site could not be
+verified from a routine, because `wku-sga-60.vercel.app` answers
+`DEPLOYMENT_NOT_FOUND`. It is not the production alias and never was. The
+production alias is **`sga60.vercel.app`**, which answers 200 and serves the
+board under the title "SGA 60 - Student Government at Western Kentucky
+University". `SETUP-CONTRIBUTORS.md` still gives the dead host as its example
+for `SITE_URL`; that line was left alone, because it may be describing a
+configured value rather than suggesting one, and it is the owner's to change.
+
+This pass was therefore checked all the way through to what the public can
+actually see, which is what "every merge is publishing" is supposed to mean.
+Both corrections are live: `/o/nathan-terrell.html` carries the outcome and no
+longer carries the old credit, `/o/kara-lowry.html` carries the new wording,
+and `/photos/2017-18-kara-lowry.jpg` is served at 240 by 660 - the remade crop,
+not the three-face one.
+
 One correction to record against this pass itself: the comment posted on #254
 went out with a generated-by line appended to it. The repository's rule against
 tool attribution covers comments as plainly as commit messages, and the line
