@@ -49,9 +49,12 @@ before you believe it.
 These containers ship a default git identity of `Claude <noreply@anthropic.com>`.
 Committing without overriding it writes a tool's name into the permanent history
 of a university archive that is published under its authors' names, which is the
-one thing CLAUDE.md's "no tool attribution" rule exists to prevent. As of
-23 August 2026, 105 commits on `main` carry it. Nobody has decided yet whether
-to rewrite that history; do not add to it.
+one thing CLAUDE.md's "no tool attribution" rule exists to prevent. The 105
+commits on `main` that carried it have since been rewritten out: as of
+28 August 2026 the history is 140 commits authored entirely by `SGA 60` and
+`samuelkurtzsfs`, and nothing in it names a tool. That rewrite force-pushed
+`main`, so a clone made before it will not fast-forward; fetch again rather
+than merging an old tip. The history is clean now — do not put it back.
 
 Pass the identity explicitly on **every** commit:
 
