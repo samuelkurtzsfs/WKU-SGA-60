@@ -2822,6 +2822,50 @@ Nothing in `data/` changed this run beyond this note. `build.py` and
 60 presidents, 1,487 senate member records across 58 years). Landed this
 note only, on `research-senate`.
 
+**A 28 August run (photograph agent, ~13:52 UTC), a few hours after PR #254
+merged.** Re-checked first, as every run does: all four presidents named as
+this run's priority one (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan
+Gilley) already carried a portrait — PR #254 confirmed the same thing that
+same morning — and the full sweep confirms all 72 president/regent leader
+records still do, with zero gaps against every `leaders` entry in
+`data/years.json`. Also confirmed the year-photograph count has moved to 49
+of 61 years (up from the 32 recorded in §1's stale table), leaving twelve
+years still without one: 1993-94, 1994-95, 1995-96, 1996-97, 1997-98,
+2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10.
+
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` was tested once (article 7642,
+the strongest 2009-10 lead) and came back the same 5,485-byte Cloudflare
+"Attention Required" challenge, `HTTP 403`, every run has logged since 25
+August ~00:30 UTC. Landing pages on the same domain loaded fine (`HTTP 301`
+on a plain records item page), so the block is still specific to the
+PDF-serving endpoint. Not retried further — the pattern of five, seven and
+eight retries in earlier entries this section never once found a crack, so
+one confirming test was enough to establish the gate is still shut, not
+worth the pacing budget for more.
+
+Took up the three names PR #254 flagged as "not searched cleanly (parenthetical
+nicknames need stripping first)": John "Jack" McKinney, Katherine "Lane"
+Hedrick, Lane "Caroline" Simpson. Stripped the nicknames and searched
+wkuherald.com's WP-JSON search for "Jack McKinney," "Lane Hedrick" and
+"Caroline Simpson." None produced a portrait: the McKinney hits (a Ransdell
+convocation transcript, a fraternity-rush feature, a 2003 basketball story)
+have no connection to him at all — a name-fragment collision, not a
+photograph lead. The strongest Hedrick hit ("SGA supports military students
+through legislation," wkuherald.com/29383, 22 Mar 2017) does name her —
+"Lane Hedrick was selected to be the next associate chief justice" — but
+carries no image (`featured_media: 0`). The "Simpson" hits are two different
+people: Cole Simpson, an unrelated senate candidate profiled in the Spring
+2024 election guide (no photo), and Libby Simpson, a Herald reporter's
+byline, not the officer. This closes out the one loose thread PR #254 left
+behind; a future run should not re-run these three exact searches, since the
+underlying wkuherald.com content has not changed.
+
+No photo files or `data/photos.json` entries changed this run. `build.py`,
+`check_data.py` and `check_duplicates.py` all re-run clean against the
+unmodified tree (61 years, 2019 events, 60 presidents; the same six known
+duplicate pairs). Landed this note only, on a fresh `research-photos` cut
+from current `main` (the branch's prior tip, PR #254, was already merged).
+
 ---
 
 ## 9. Restarting a session
