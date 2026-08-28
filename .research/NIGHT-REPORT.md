@@ -1,3 +1,112 @@
+# Editor's pass - 28 August 2026: nothing to merge, so the last day's portraits were audited instead
+
+No pull request was open. The three the standing brief still names as stale -
+#6 photographs, #7 the 1980s, #8 the 2020s - were closed on 18 August; the
+numbering has since reached 248. The brief should stop pointing at them.
+
+One branch, `research-photos`, sat seven commits ahead of main. It carries no
+data changes at all: its research reached main earlier by another route, and the
+only thing merging it would have done is delete 124 lines from this file. It was
+left alone. Every other `research-*` branch is one of the 4 August snapshots with
+no merge base with main, and `git merge-base` still confirms it.
+
+With no diff to review, the pass went to what actually reached the live site in
+the last day: eight portraits, merged across #241, #244, #246 and #247. Portraits
+are the material this archive treats as most dangerous, because a misidentified
+face is worse than no face. Fourteen claims were opened against their sources.
+All fourteen held. Nothing was cut.
+
+## The Talisman credits, checked against the volumes themselves
+
+The 1971, 1975, 1977 and 1978 full texts were pulled from archive.org, which is
+not rate limited and carries the captions as text.
+
+- **Eyler and Freville, 1970-71.** The Judicial Committee caption is confirmed
+  word for word: front row DeShazer, Jackson, Freville vice-chairman, Jones
+  secretary; second row Coffman, Barber, Riley, Eyler chairman. The index files
+  both men at 68. Both are recorded under `senate.officers`, not in the
+  executive - the confusion #243 fixed has not come back.
+- **LaCivita, 1974-75.** The caption is confirmed: LaCivita at right, activities
+  vice-president, with treasurer Ricky Johnson, discussing the signing of two
+  acts. The credit paraphrases rather than reprints, correctly.
+- **Blair, 1976-77.** The index puts Thomas Alan Blair at 340, exactly where the
+  credit says. Bellbrook Ohio, the psychology and business majors and the remark
+  about student representation on university committees are all on the page. The
+  1977 Talisman separately names him administrative vice-president.
+- **Kelley, 1975-76 and 1976-77.** "Richard Hobson Kelley" is real - the index
+  files him at 344-345, and the credit's p. 345 is inside that spread. The
+  nameplate reading RICK KELLEY is plainly visible along the bottom of the
+  photograph, among ASG concert bills for Chicago, the Spinners, James Taylor
+  and Seals and Crofts. The two-year claim does not rest on the portrait: the
+  volume calls him activities vice-president for two years and describes him and
+  treasurer David Payne as beginning second terms.
+
+## Shockley: the right credit, reached by the wrong caption first
+
+This one is worth writing down because the next pass could repeat it. The 1978
+intern feature carries two photographs. The capitol shot is captioned for two
+people, Shockley and Betsy Ashcraft, and read against that caption the credit's
+claim to name Shockley alone looks like an over-claim worth cutting.
+
+It is not the photograph used. The committed file is an interior shot of a man
+reading a document, and its caption begins PAPERWORK AND GOPHER work and names
+Brent Shockley alone, describing the bill drafts he prepared for the Legislative
+Research Commission. The credit is accurate as written, and pp. 116-117 is right:
+the feature sits between the page marked 116 and the one marked 118. The lesson
+is that a feature with two photographs needs the caption belonging to the crop,
+not the first caption that mentions the name.
+
+## Two credits that could not be finished, and were not cut for it
+
+The Courtenay and Reed portraits cite frame-level captions in a 2022 Herald
+election gallery. Cloudflare refuses the gallery to everything available here -
+the REST API, a plain fetch and a headless render all end at a challenge page -
+so frames 006, 008 and 009 could not be read. The frames exist, and the article's
+own text independently confirms the substance: Garrison Reed was elected
+executive vice president on Bornefeld's ticket, and Alexis Courtenay placed
+second in the presidential race with 40 per cent.
+
+So the identifications stand on evidence that was checked; only the quoted
+caption wording is unconfirmed. That is a gap in this pass, not a fault in the
+credits, and a miss behind a bot wall is never grounds for cutting a claim.
+
+## A trap in TopSCHOLAR's own metadata
+
+Volume numbers there cannot be trusted to date an issue. The archive stamps
+"Vol. 51" on both the issue of 29 February 1972 and the issue of 9 April 1976,
+four years apart. Our records date all three issues checked by their publication
+date and every one is right, so nothing needed correcting - but a routine that
+infers an academic year from a volume number will file work four years wrong.
+Date first, volume second.
+
+## Traps, and the duplicate pairs
+
+No advance notice was written up as a result. The February 1998 designated driver
+entry is a notice of a distribution due the next day, and it says so and claims
+nothing about how it went. No committee chair sits in an executive slot. Nobody
+is matched by surname alone, which matters in 2022-23, where a Garrison Reed, a
+Steven Donte' Reed and a Reed Hensley share a page and the credit disambiguates
+by a second frame. No settled fact moved: Norfleet is still 1981-82. No
+contributor commits landed in the window.
+
+`check_duplicates.py` returned six pairs and all six are genuine. Three are the
+same-day September 1991 bills the rules explicitly protect. The others are a bill
+and the vote that killed it, a union planning a suit and the students endorsing
+it a month later, and a concern raised in September against legislation passed in
+October. The January 1992 advisory-committee entry checks out too: it says the
+bill was introduced two days before the Herald reported it, and the Herald report
+is there on 30 January.
+
+## State of the record
+
+`build.py`, `check_data.py` and `check_contrib.py` all complete clean: 61 years,
+2019 events, 60 people have been president, 297 documents and 1111 legislation
+files. The rebuild produced nothing but a changed date stamp, so the data and the
+published site are in step.
+
+Nothing merged, because there was nothing to merge. Nothing cut, because
+everything checked held.
+
 # Editor's pass - 27 August 2026, after the overnight pass: two faces off a page that had to be found twice
 
 One pull request was open, #247 from the photograph routine, and it was merged.
