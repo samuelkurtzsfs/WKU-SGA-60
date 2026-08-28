@@ -58,7 +58,20 @@ following **spring**. If they differ, someone is missing. Mark an acting officeh
   holding. The caption naming LaCivita "(right)" with treasurer Ricky Johnson therefore
   describes this photograph, and Johnson is the figure cropped out of the printed frame. The
   withdrawal read the caption onto the stairway picture above it and was wrong.
-- Still open: Reed Morgan 1968-69, John Lyne vs Larry Zielke 1970-71, David Payne 1982-83.
+- **Reed Morgan was not a student body president, and did not hold the regent seat.** Settled
+  28 August 2026, and settled on positive evidence rather than on his absence from the record.
+  Both offices in 1968-69 are occupied by other people, each confirmed contemporaneously:
+  Straeffer won the presidency on 2 May 1968 by 1,732 to 1,098 (Beck's results memo of 3 May,
+  reported in the *Herald* of 9 May), and Gerard held the regent seat (Bruce Tucker's profile
+  of him as student regent, *Herald* 48:19, 27 Feb 1969). There is no vacancy for a third
+  officeholder. He had also already graduated: the *Herald* of 7 April 1966 calls him a
+  senior, "Senior Triples as Greek Editor, Debater, Government Chairman", so the
+  returning-graduate-student theory is moot. His plate honours his chairmanship of the
+  committee that wrote the constitution, which Kelly Thompson's approval letter of 1 April
+  1966 addresses to him by name. Why it reads 1968 and not 1966 is still not established, and
+  is not worth guessing at. Do not reopen the presidency question without a source that puts
+  him in an office.
+- Still open: John Lyne vs Larry Zielke 1970-71, David Payne 1982-83.
 
 ## Search locally before you crawl
 `data/herald-index-full.json` covers the whole digitised collection with no keyword filter:

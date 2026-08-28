@@ -10,3 +10,6 @@ site/docs/
 # generated officer pages - one per person, rebuilt on every deploy and
 # potentially thousands of files once the chamber rolls land
 site/o/
+
+# the roster workbook is generated from data/years.json
+SGA-60-roster.xlsx
