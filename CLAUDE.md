@@ -49,6 +49,15 @@ following **spring**. If they differ, someone is missing. Mark an acting officeh
   what the paper called the first campus-wide election for it, is not established. Do not
   file her forward again.
 - By ~2001 the offices merged. After that, a second name in a year is a mid-year succession.
+- **The 1974-75 Tom LaCivita portrait is correctly identified. Do not withdraw it again.**
+  The brick-wall photograph in the left column of p. 109 of the 1975 *Talisman* was cut on
+  25 August 2026 as uncaptioned and restored on 27 August, so the reasoning for cutting it is
+  still in the history where a later pass can act on it. Checked against the page image itself
+  on 28 August (archive.org/details/talisman1975west, scan leaf n112): the frame carries a
+  second person at its left edge, a hand and forearm on the document the visible man is
+  holding. The caption naming LaCivita "(right)" with treasurer Ricky Johnson therefore
+  describes this photograph, and Johnson is the figure cropped out of the printed frame. The
+  withdrawal read the caption onto the stairway picture above it and was wrong.
 - Still open: Reed Morgan 1968-69, John Lyne vs Larry Zielke 1970-71, David Payne 1982-83.
 
 ## Search locally before you crawl
