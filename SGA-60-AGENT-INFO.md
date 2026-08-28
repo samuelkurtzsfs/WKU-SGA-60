@@ -2466,6 +2466,77 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   unchanged. Landed on `research-photos`, PR #244 (the prior rolling PR,
   #236, was already merged).
 
+  **A 28 August run (photograph agent): three more officer portraits, gap
+  narrowed with a computed list instead of hand-scanning the log.** Re-checked
+  first, as every run does: all four presidents named as this run's priority
+  one (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) already carried
+  a portrait, and the full sweep confirms all 60 presidents and 57 regents
+  still do — nothing to redo there.
+  `digitalcommons.wku.edu/cgi/viewcontent.cgi` was tested once, against the
+  standing 2008-09 lead (article 7740), and came back the identical
+  5,485-byte Cloudflare challenge every run has logged since 25 August
+  ~00:30 UTC; not retried further.
+
+  Rather than re-read this file's growing list of already-tried names by
+  eye, this run computed the actual gap directly from the data: every
+  `organization.executive`/`organization.senate.officers` (year, name) pair
+  in `data/years.json` with no matching entry in `data/photos.json`, run
+  through `name-aliases.json` first so an aliased spelling doesn't look like
+  a fresh gap. That found 595 unique officer names without a portrait
+  (947 (year, name, office) pairs total). Filtered to named officer titles
+  from 2016-17 onward (excluding plain "Senator"/"Senator At-Large"/class-year
+  seats, which are lower priority under this run's own instructions, and
+  excluding every name this file's log already records as tried), the
+  wkuherald.com WP-JSON name search turned up two usable photographs:
+
+  - **Zach Jones** (Senior Senator, Campus Improvements Chair, 2016-17) and
+    **James Line** (Chief of Staff, 2016-17) — one photograph, "SGA approves
+    legislation to lower GPA requirement, announces executive candidates"
+    (wkuherald.com/28868, 5 April 2017), captioned "Zach Jones (left) and
+    James Line (right) propose bill 21-17-S during the SGA meeting on
+    Tuesday, April 3, 2017." Only two men in frame, both named with an
+    explicit left/right cue, both faces sharp and forward at the podium.
+    Cropped to each and filed separately.
+  - **Morgan Gammons** (Chief Justice, 2024-25) — "SGA votes to rename and
+    reformat DEI committee" (wkuherald.com/83591, 4 April 2025), captioned
+    "Student Government Association Chief Justice Morgan Gammons reads off
+    election codes to the senate during the weekly SGA meeting on Thursday,
+    April 3, 2025." A solo shot at the SGA podium, no other named or
+    unnamed figure in frame. Note for whoever pulls the next batch: a
+    second, independent photo of Gammons exists (wkuherald.com/81839,
+    captioned "Chief Justice Morgan Gammons swears in new senators... Feb.
+    4, 2025") — not needed since the first already cleared the bar, but
+    worth knowing it's there rather than re-finding it.
+
+  A near-duplicate spelling surfaced and was **not** touched: 2022-23's
+  senate officers carry "Salvador Leon" (no accent, International Senator)
+  as a separate name from "Salvador León" (with accent, Administrative Vice
+  President, 2023-24, portrait already on file). These read as the same
+  person serving consecutive years, but `name-aliases.json` has no entry
+  folding them together, so the officer-index page currently treats them as
+  two people and the 2022-23 term shows no portrait. This is a data-hygiene
+  question for `data/years.json`/`data/name-aliases.json`, not a missing
+  photograph, and outside this routine's own file (`data/photos.json`
+  only) — flagging it here rather than fixing it, per CLAUDE.md's "do not
+  merge people by name" caution and the project's own file-separation rule.
+
+  A dozen more searched names from the recomputed gap (Emily Houston, Smita
+  Peter, Mark Clark, Ashley Cox, Megan Armstrong, Annalicia Carlson, Yasmine
+  Sadrinia, Caroline Simpson, Jillian Kenney, Hope Wells, Matthew Johnson,
+  Symone Whalin, Devan Richardson, Corey Newsome) turned up only text-only
+  meeting coverage, nothing with a usable photograph. None closed off, just
+  not resolved this run. The gap is now roughly 590 unique names; a future
+  run can regenerate the same list with a short script against
+  `data/years.json` + `data/photos.json` + `name-aliases.json` rather than
+  re-deriving it from this log by hand — faster and less error-prone than
+  either approach used before it.
+
+  All three files verified as real JPEGs (`FF D8 FF E0`) before committing.
+  `build.py`, `check_data.py` and `check_duplicates.py` all pass clean (61
+  years, 2019 events, 60 presidents; the same six known duplicate pairs,
+  unchanged). Landed on `research-photos`, PR #249 (the prior rolling PR,
+  #244, was already merged).
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
