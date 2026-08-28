@@ -2537,6 +2537,83 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   unchanged). Landed on `research-photos`, PR #250 (the prior rolling PR,
   #244, was already merged).
 
+  **A 28 August run (photograph agent): six more officer portraits, one of
+  them a single photo that named four people at once.** Re-checked first, as
+  every run does: all four presidents named as this run's priority one (Nick
+  Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) already carried a
+  portrait, and the full sweep confirms all 72 president/regent leader
+  records still do — nothing to redo there.
+  `digitalcommons.wku.edu/cgi/viewcontent.cgi` was tested once (article 8672)
+  and came back the same 5,485-byte Cloudflare challenge every run has
+  logged since 25 August ~00:30 UTC; the domain's landing pages still load
+  fine at `HTTP 200` over the same connection, confirming the block is still
+  specific to the PDF-serving endpoint. Not retried further.
+
+  Computed the officer/senate-officer portrait gap directly from the data
+  again (762 (year, name, office) pairs, 592 unique names), cross-referenced
+  every name already logged in this file as searched-and-rejected, and ran
+  wkuherald.com's WP-JSON `posts` search against the 44 names that had never
+  been tried before. Six cleared the identification bar:
+
+  - **Amy Wyer** (SGA SAVES Chair, 2018-19) — "SGA approves new nominees"
+    (wkuherald.com/21467, 6 Feb 2019), captioned "SGA Senator Amy Wyer being
+    sworn in as SAVES Committee Chair, succeeding Brigid Stakelum." She is
+    the only person named and the only one standing with a hand raised; a
+    second, unnamed woman sits beside her.
+  - **Nathan Terrell** (Speaker of the Senate, 2019-20) — a solo studio
+    headshot captioned "Photo of Nathan Terrell from the WKU website,"
+    run with the Herald's report on his withdrawal from the EVP race
+    (wkuherald.com/14071, 23 Sep 2020). The photo itself is uncontroversial —
+    a plain official-style portrait — even though the article it illustrates
+    is not; the record already carries him as Speaker of the Senate under
+    2019-20 from an independent SGA-minutes source.
+  - **Savannah Molyneaux, Kara Lowry and Conner Hounshell** (Executive Vice
+    President, Administrative Vice President and Chief of Staff, 2017-18) —
+    all three from one photo, "Next student body president elected to
+    office" (wkuherald.com/28871, 19 Apr 2017), captioned "(From left to
+    right) Louisville sophomore Savannah Molyneaux, Louisville sophomore Andi
+    Dahmer, La Grange sophomore Kara Lowry and Buckner freshman Conner
+    Hounshell gather for a hug after hearing the election results." All four
+    faces are distinct in the frame despite the hug; the fourth, Andi Dahmer
+    (the incoming president), already had a portrait, so only the other
+    three were added. Lowry's crop keeps a small sliver of Dahmer's hair and
+    closed eye at the bottom-left corner — unavoidable given how tightly the
+    four heads overlap — but Lowry's own face is the unambiguous, dominant
+    subject of the crop and the caption's left-to-right order leaves no
+    doubt which of the four she is.
+  - **Molly Ricke** (Sophomore Senator, 2025-26) — "SGA passes bill to fund
+    Fashion Merchandising Department, swears in new senators"
+    (wkuherald.com/81625, 28 Jan 2025), captioned "Molly Ricke is sworn into
+    as a Senator-at-Large and as committee heads..." She is the only person
+    named and the standing, hand-raised figure at the swearing-in, same
+    pattern as Amy Wyer above.
+
+  A dozen more names from the same 44 (Abhishek Bose, Alexis Mayne, Antonina
+  Clementi, Asha McWilliams, Ashlyn Jones, Aubrey Kelley, Aubrey Kelly,
+  Brenna Mathews, Brian Anderson, Brooke Mitchell, Cassidy Townsend, Cody
+  Cox, Derek Collins, Derrick Collins, Ellen Henderson, Garrett Baum, Harper
+  Anderson, Hayden Skinner-Fine, Hizareth Linares, Ian Hamilton, Jamison
+  Moorehead, Jason Herlick, Jenna Wells, Josh Knight, Julie Mishchuk, Kody
+  Okert, Lyndsey Kelley, Morgan Wysong, Murphy Burke, Nathan Cherry, Nicole
+  Massarone, Noah Moore, Parker Raybourne, Reed Hensley, Ryan Richardson)
+  turned up only text-only meeting coverage, or a photo with several people
+  and no positional or per-face cue tying a name to a face — Jamison
+  Moorehead's lead in particular (wkuherald.com/16660) shows a crowd of five
+  with no caption cue at all for which is him or the SAVES chair named beside
+  him. None closed off, just not resolved this run. Three names
+  (John "Jack" McKinney, Katherine "Lane" Hedrick, Lane "Caroline" Simpson)
+  were not searched cleanly this run — their parenthetical nicknames in the
+  data need stripping before a WP-JSON query will match anything, and this
+  run ran out of time to redo them individually; worth a future run's first
+  few minutes.
+
+  All six new files verified as real images (five JPEG `FF D8 FF E0`, one
+  PNG `89 50 4E 47`) before committing. `build.py`, `check_data.py` and
+  `check_duplicates.py` all pass clean (61 years, 2019 events, 60
+  presidents; the same six known duplicate pairs, unchanged); confirmed by
+  hand that all six new portraits render on their own `site/o/` page.
+  Landed on `research-photos`.
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~
