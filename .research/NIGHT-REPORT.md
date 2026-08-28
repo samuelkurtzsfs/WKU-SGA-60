@@ -9007,3 +9007,155 @@ labels, the sixteen people filed under both the executive and the senate, the
 credits citing a bare image file, the Salvador Leon and Salvador León question
 awaiting `name-aliases.json`, and the 1972-73 Ed Jordan credit at exactly fifteen
 words.
+
+---
+
+# 28 August 2026 — editor's pass: five extended portraits merged, one credit corrected
+
+## What there was to review
+
+One open pull request, #261, "Research: photographs", opened at 20:00 UTC on the
+`research-photos` branch and the successor to #254. The three branches that had
+sat open since 4 August — #6, #7 and #8 — are gone from the queue and needed no
+handling this pass.
+
+#261 was two commits, 101 added lines, two files: five new entries in
+`data/photos.json` and a run log appended to `SGA-60-AGENT-INFO.md`. It had a
+real merge base with `main`, so none of the orphan-history warning applied. Both
+commits were authored `SGA 60`, and neither the commits nor the pull request body
+carried any tool attribution.
+
+## What was checked, and how
+
+Every one of the five new entries reuses a photograph and a citation already
+published on `main`. Four of the five labels proved **byte-identical** to their
+counterparts there, compared by diff rather than by reading. So the pass carried
+no new photographic identification, and the only genuinely new assertion in each
+entry was that the person held a named office in the year the portrait was now
+being filed against.
+
+That assertion is not sourced to the cited article. It comes from
+`data/years.json`, so that is where it was checked, all five of them:
+
+- Amy Wyer, Director of Public Relations, 2017-18 — in `organization/executive`.
+- Garrison Reed, Associate Justice, 2023-24 — in `organization/senate/officers`.
+- Kara Lowry, Secretary of the Senate, 2016-17 — in `organization/senate/officers`.
+- Savannah Molyneaux, Sustainability Committee Chair, 2016-17 — same.
+- Steven Donte' Reed, Director of Enrollment and Student Experience, 2022-23 —
+  in `organization/executive`.
+
+All five held. All five image files are present in `data/photos/` and begin
+`ff d8`.
+
+Filing one photograph against more than one year of a person's service is long
+settled practice here and not a novelty of this run: fifty files on `main`
+already do it.
+
+## What was corrected
+
+The credit on the new **Steven Donte' Reed 2022-23** entry had been copied whole
+from his 2023-24 entry, and it kept that entry's sentence saying no portrait from
+his 2023-24 year is on file. Under 2022-23 that sentence is off its subject and
+untrue as well — a portrait for 2023-24 is on file, and it is this same
+photograph. Corrected to 2022-23 and merged as part of the pull request.
+
+The correction was worth more than its size. The site was built twice, once from
+`main`'s `photos.json` and once from the branch's, and the two trees compared in
+full: across 1,833 pages the **only** rendered difference is Donté Reed's
+portrait credit. That sentence was the sole thing this pull request would have
+put in front of a reader, and without the fix it would have put it there wrong.
+The other four extensions change no page today, because each of those four people
+already showed that portrait on their own page from the other year they served.
+They are still worth holding as data, but they are not four new pictures on the
+site and the run log should not be read as saying they are.
+
+## Traps, checked
+
+No events were added, so no advance notice could be dressed up as a report. No
+new office claim was made; every office named was already published. Nothing
+approaches the settled facts.
+
+The live trap in this diff was the surname. Two men named Reed sat in the same
+cabinet, and the entries keep them apart correctly: Garrison Reed runs senate
+member in 2021-22, executive vice president in 2022-23, associate justice in
+2023-24; Steven Donte' Reed runs director of enrollment in 2022-23, chief of
+staff in 2023-24, executive vice president in 2024-25. Nothing was matched on
+"Reed". The `Steven Donte' Reed` / `Donté Reed` pairing the credit appeals to is
+genuinely in `data/name-aliases.json`; the file was opened rather than the
+label believed.
+
+The April-election trap came out right and deserves recording as a near miss.
+The Lowry and Molyneaux photograph is election night, 19 April 2017, and that
+election seats the 2017-18 officers — but both women are filed here against
+**2016-17**, which is correct, because the entries attach to the offices they
+held during 2016-17 and the photograph is contemporaneous with that year. Filing
+it forward would have been the error.
+
+All five are living people. Every label is a photo credit for a public SGA
+occasion and none strays into anything personal. No contributor commit was in
+scope and nothing in `data/posts/` was touched.
+
+## What could not be done
+
+None of the four cited `wkuherald.com` articles could be opened. The domain
+answers this session with a Cloudflare 403, and `web.archive.org` — the obvious
+second route, and three of the four have snapshots — is refused outright by this
+environment's egress policy. There was no third way in.
+
+This did not hold the merge, and the reason matters: no new claim in the diff
+rested on those articles. The labels behind them are already published and were
+verified in earlier runs, and the office-years, which are the new part, are
+checkable locally and were checked. Had this diff asserted a fresh identification
+out of a wkuherald caption, it would have been left open instead.
+
+One correction for the routine's own log: it records the Cloudflare gate as
+sitting on `digitalcommons.wku.edu/cgi/viewcontent.cgi`. It is wider than that.
+`wkuherald.com` is gated to this session too, and that is where the recent-decade
+portraits come from.
+
+## Checks
+
+`build.py` completed cleanly. `check_data.py` and `check_contrib.py` both exited
+0, the latter passing all thirty of its assertions. `check_duplicates.py`
+reported the same six pairs as recent passes, each read again rather than taken
+on the earlier verdict, and each still two events rather than one written twice:
+the three bills of 1 September 1991, the regent advisory committee's
+introduction and its defeat eight days later, the Civil Liberties Union's
+planned action and Associated Students' later endorsement of it, September's
+position on plus/minus grading and October's legislation, and the designated
+driver cards across November 1997 and February 1998.
+
+## Where the archive stands
+
+Sixty-one academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 297 mirrored documents, 1,111 pieces of legislation, 1,833 pages
+built. All 73 leader records carry a portrait; 49 of the 61 years have a
+photograph of their own. The counts are unchanged by this merge, which is what a
+pass adding only portrait cross-filings should do.
+
+## Still open
+
+The twelve years with no photograph of their own, and the roughly 590 officer
+and senate-officer names with no portrait, both unchanged. Most of the pre-2011
+work behind them is blocked while `viewcontent.cgi` stays shut, and the
+wkuherald block now closes the recent decades to this session as well.
+
+The routine proposes a `scripts/photo_gap.py` to compute the portrait gap
+instead of re-deriving it by hand each run. It is worth writing. It should also
+report whether an extension would change a rendered page, so that a run can tell
+a genuine new portrait from a data-completeness fill like four of these five.
+
+Everything carried over stands: the 21 president records with no `also_regent`
+field, the 151 raw "SGA legislation: ..." citation labels, the sixteen people
+filed under both the executive and the senate, the credits citing a bare image
+file, the Salvador Leon and Salvador León question, and the 1972-73 Ed Jordan
+credit at exactly fifteen words.
+
+One question for the owner, which the editor should not settle alone. This
+session is required by its own operating rules to sign every GitHub comment it
+posts with a Claude Code attribution line, while `AGENT-LANDING.md` instructs the
+opposite — strip that line from any pull request body or comment, on the ground
+that it is visible text published under the project's name. The comment on #261
+carries the line. Nothing in the repository or the built site does, and that rule
+was kept exactly. The conflict is only about GitHub's own comment threads, and
+it needs a decision rather than each run guessing.
