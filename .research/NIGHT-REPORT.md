@@ -1,3 +1,98 @@
+# Editor's pass - 28 August 2026, night: a withdrawn portrait checked against the page and left standing
+
+Nothing was open to review. `research-photos`, `research-senate` and
+`research-backlog` are all level with main, and the three the standing brief
+still calls stale - #6, #7, #8 - have been closed since 18 August. That is the
+third pass to record it; the brief is still pointing at them and still should
+not be.
+
+With no queue, the pass went at what is already published.
+
+## The Thomas LaCivita portrait, and why it kept moving
+
+The archive's own history contains a straight contradiction about one face. On
+25 August a pass withdrew the 1974-75 LaCivita portrait, reasoning that the
+concert-booking caption on p. 109 of the 1975 *Talisman* describes two people
+conferring and so belongs to the stairway photograph above it, leaving the
+brick-wall close-up in the left column uncaptioned and the man in it
+unidentified. On 27 August a later pass added the same photograph back under a
+new filename and kept it, reading the caption onto the portrait and explaining
+that treasurer Ricky Johnson simply fell outside the printed frame. Each pass
+argued from the caption text alone, and the caption text alone does not settle
+it, which is why the face has now been published, cut and published again.
+
+It was settled by fetching the page. The scan of leaf n112 at
+`archive.org/details/talisman1975west` shows the left-column photograph in full
+rather than the head-and-shoulders crop the archive publishes, and the full
+frame carries a second person at its left edge: a hand and forearm resting on
+the document the visible man is holding, with a shoulder just inside the
+border. So the photograph does contain two people, the fully visible one stands
+at the right of the frame, and the caption naming LaCivita "(right)" with
+Johnson describes this picture and no other. The identification holds and the
+current entry's wording is accurate.
+
+The portrait was left exactly as it is. What changed is `CLAUDE.md`, which now
+carries the finding in its settled list with the leaf number, because the
+withdrawal's reasoning is still sitting in the history reading like a sound
+argument, and the next pass to find it would have cut the face a third time.
+
+## The six portraits merged earlier today
+
+Re-checked independently of the pass that merged them, and they hold. The
+election-night crops were the ones worth the time, because three of them come
+out of a single group photograph and are identified by nothing but the
+caption's left-to-right order. The original was downloaded and read: four
+people, blonde at the left, a second woman with straight light hair, a third
+with dark curly hair, a fair-haired young man at the right, matching Molyneaux,
+Dahmer, Lowry and Hounshell in the order the caption gives them. The three
+published crops are three different people and each sits where the caption puts
+them. Wyer, Ricke and Terrell were confirmed word for word against their
+articles.
+
+The filings were checked against the trap that has done the most damage here. A
+committee chair is not an officer, and Amy Wyer is not filed as one: the SAVES
+chairmanship she is photographed being sworn into sits under the 2018-19 senate
+officers, while her 2017-18 public relations directorship, a genuine executive
+post, is recorded separately. Molyneaux and Hounshell are executive officers of
+2017-18 off an April 2017 election, which is the right way round.
+
+## What was checked on main
+
+`build.py` completes cleanly and leaves the working tree unchanged, so what is
+deployed matches `data/`. `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs, all read again and all still
+six real events rather than three written twice.
+
+Two checks were run that no script performs. Every file the data references was
+looked for on disk - 210 leader photographs, 297 documents, 1,111 pieces of
+legislation and every event `src` file - and nothing dangles. Every quoted span
+in `photos.json` and `years.json` was measured against the fifteen-word rule,
+across credits, event bodies, profiles, notes and document extracts, and
+nothing exceeds it. The over-quotation backlog earlier passes worked through is
+genuinely clear.
+
+## Where the archive stands
+
+61 academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 297 mirrored documents and 1,111 pieces of legislation, over 61 year
+pages and 7 decade pages.
+
+## Still open
+
+Everything carried over stands, none of it in a diff this pass had to judge:
+the 151 raw "SGA legislation: ..." citation labels, the sixteen people filed
+under both the executive and the senate, the year-photograph gap from 1996-97
+to 2009-10 behind the Cloudflare gate on `viewcontent.cgi`, the Salvador Leon
+and Salvador León question awaiting `name-aliases.json`, and the 1972-73 Ed
+Jordan credit sitting at exactly fifteen words.
+
+Two new ones. Molly Ricke is photographed being sworn in as a senator-at-large
+in January 2025, which falls in 2024-25, but the archive records her only in
+2025-26; the portrait is filed where she is recorded, and the earlier seat is a
+lead nobody has followed. And `NIGHT-REPORT.md` is now ordered both ways - most
+entries newest-first from the top, a run of them appended oldest-last at the
+bottom - which will mislead anyone reading it for the current state.
+
 # Editor's pass - 28 August 2026, later: six portraits merged, one of them recropped first
 
 One pull request was open, #254, `research-photos`, and it merged. The three the
