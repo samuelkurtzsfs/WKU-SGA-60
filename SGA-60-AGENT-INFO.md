@@ -2909,6 +2909,62 @@ Nothing in `data/` was touched by this pass, so nothing reached the public site.
 `check_duplicates.py` reported the same six pairs it has reported for several
 passes, each of them read again and none of them one event written twice.
 
+**A 28 August run (photograph agent, ~20:00 UTC): five officer portraits
+extended across a second year of service, eight previously-untried names
+closed out with nothing found.** Re-checked first, as every run does: all
+four presidents named as this run's priority one (Nick Todd, Katie Dawson,
+Jeanne Johnson, Reagan Gilley) already carried a portrait, and the full
+sweep confirms all 72 president/regent leader records still do.
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` was tested once (article 7740,
+the standing 2008-09 year-photograph lead) and came back the same
+5,485-byte Cloudflare challenge every run has logged since 25 August
+~00:30 UTC; not retried further.
+
+Rather than hand-scan this section's growing log, computed the officer/
+senate-officer portrait gap directly from `data/years.json` +
+`data/photos.json` + `data/name-aliases.json`: 766 (year, name, office)
+pairs, 599 unique names. Cross-checking that list against `photos.json`
+itself (not just against a year) turned up five people who already had a
+verified portrait for one year they held office, and held a *different*
+office in another year with no photo attached — a free extension, no new
+research needed, matching the convention already used for Nick Todd,
+Katie Dawson, Jeanne Johnson, Reagan Gilley and Ciin Lun. Added: **Amy
+Wyer** (2018-19 portrait, extended to 2017-18, Director of Public
+Relations), **Garrison Reed** (2022-23 portrait, extended to 2023-24,
+Associate Justice), **Kara Lowry** (2017-18 portrait, extended to 2016-17,
+Secretary of the Senate), **Savannah Molyneaux** (2017-18 portrait,
+extended to 2016-17, Sustainability Committee Chair) and **Steven Donte'
+Reed** (2023-24 portrait, extended to 2022-23, Director of Enrollment and
+Student Experience). A future gap-computation script should check
+`photos.json` by name as well as by (year, name) to catch this class of
+free win before spending search budget on it again — this run found these
+five only by building the check itself; **worth turning into a proper
+`scripts/photo_gap.py`** rather than re-deriving it by hand or by log-reading
+each time.
+
+Filtered the remaining gap to named officer titles (excluding plain
+Senator/Senator At-Large/class-year seats) from 2016-17 onward — 97 unique
+names — and cross-referenced every one against this file's own log of
+names already searched. Eight had never been tried: **Alex Cissell,
+Amarah Reed, Brigid Stakelum, Helen Vickrey, Kat Howard, Matt Barr, Olivia
+Feck, Tribhuwan Singh.** wkuherald.com's WP-JSON search found nothing
+usable for any of them: Amarah Reed and Helen Vickrey's SGA articles carry
+no image; Brigid Stakelum's eleven hits include one unnamed group photo
+and nothing individually captioned; Kat Howard and Matt Barr collide
+heavily with unrelated WKU athletes/writers of the same name; Olivia
+Feck's one candidate image is an uncaptioned wide cabinet shot; Tribhuwan
+Singh returns zero results under that name at all. None are closed off as
+dead ends, just not resolved this run — recording them here so a future
+run does not re-search the same eight from scratch.
+
+All five files verified as real JPEGs (magic bytes already checked when
+each was first added under its other year). `build.py`, `check_data.py`
+and `check_duplicates.py` all pass clean (61 years, 2019 events, 60
+presidents; the same six known duplicate pairs, unchanged). Landed on
+`research-photos`, PR #261 (the prior rolling PR, #254, was already
+merged). The twelve-year year-photograph gap and the remaining ~590 unique
+officer/senate-officer names without a portrait are otherwise unchanged.
+
 ## 9. Restarting a session
 
 ```bash
