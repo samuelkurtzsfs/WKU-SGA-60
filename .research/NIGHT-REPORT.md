@@ -8890,3 +8890,120 @@ executive and the senate, the credits citing a bare image file, the year
 photograph gap behind the Cloudflare gate, the Salvador Leon and Salvador León
 question awaiting `name-aliases.json`, and the 1972-73 Ed Jordan credit sitting
 at exactly fifteen words.
+
+# 28 August 2026 — editor's pass, late: an empty queue, and §1's table re-measured
+
+## What there was to review
+
+Nothing. `gh` is not installed in these containers, but git is credentialed and
+`git push --dry-run` opened a new branch cleanly, so this was a full-mode pass
+with the ability to merge and simply nothing to merge. No pull request is open.
+The three the standing brief still names as stale since 4 August — #6
+photographs, #7 the 1980s, #8 the 2020s — have been closed since 18 August. That
+is now the fourth pass to record it, and the brief is still pointing at them.
+
+The `research-*` branches were checked rather than assumed. Four of them —
+`research-photos`, `research-senate`, `research-backlog` and
+`research-editor-0826-late` — are level with `main` with nothing ahead. Three
+carry commits ahead of it: `photo-research-2026-08-22` at 610,
+`research-profiles` at 215 and `research-editor-0823-seventh` at 133. None is
+lost work. Their `data/` diffs against `main` are net deletions — every one of
+them would remove portraits `main` already publishes, among them the whole
+2025-26 and 2026-27 sets — because they are snapshots taken before the material
+landed, not forks carrying anything new. They were left alone, as were the six
+4 August beat branches.
+
+One thing about merge base is worth recording for the next pass, because it
+changes how the branch table reads. The `main` rewrite described in
+`AGENT-LANDING.md` force-updated the branch again during this run's fetch, so
+`git merge-base` now returns nothing for almost every branch, not only the
+4 August orphans. Merge base can no longer be used to tell a superseded snapshot
+from an ordinary branch. Compare `data/` contents instead; that is what was done
+here.
+
+## What the pass did instead
+
+Took the single item the previous pass left explicitly open: §1 of
+`SGA-60-AGENT-INFO.md`, whose count table was still measured at commit `117647c`
+on 20 August. Two runs had by then flagged it as stale in §8 without correcting
+it, which is the failure the last report named — saying a table is stale is not
+the same as fixing it, and the next routine reads §1 before §8.
+
+It was re-measured whole rather than patched at the two rows that had been
+reported wrong, because fourteen of the twenty rows had moved. Every figure was
+computed from `data/` on the current tip, using the repository's own logic where
+the definition was not obvious: programmes through `build.py`'s `is_program`,
+presidents through the same `role == "president"` test `check_data.py` uses. An
+early count of the presidents came out at 61 and was wrong — it had swept in the
+one record whose role is `unresolved`, Reed Morgan of 1968-69 — and the figure
+was only trusted once it reproduced `check_data.py`'s own 60.
+
+The year-photograph row read 32 of 61 and is 49. The photograph-entry row read
+45 and is 61. Also corrected: entries 2,025 to 2,019, people in any office 1,503
+to 1,749, officer records 1,064 to 947, senate members 912 across 35 years to
+1,487 across 58, cabinets 58 of 61 to 61 of 61, photograph files 113 to 196,
+documents 246 to 297 mirrored with 120 referenced, legislation 827 to 1,111,
+authorship attributions 1,038 to 1,144, pages built 1,587 to 1,833. Presidents,
+programmes, leader records and the Herald index were already right and were left
+untouched.
+
+## The one row that turned into a finding
+
+The student regent row said 57 and there was no way to reproduce it. Measured
+against the data it resolves to 39: five records whose `role` is `regent`, plus
+34 presidents whose `also_regent` is `true`.
+
+The 39 was not published as the count, because it is not one. Twenty-one
+president records carry no `also_regent` field at all, so for those years the
+seat is unstated rather than empty, and 22 of the 61 years show nobody holding
+it. `check_data.py` passes on all of them, so the validator is not going to
+surface this. The row now reads as a floor and says so, and both §1 and §8 name
+the 21 unstated records as the open question. A future run that reads 39 as an
+answer will conclude the regent seat is done when a third of it has never been
+recorded either way.
+
+## Traps, checked
+
+Nothing in `data/` was touched, so nothing this pass did could reach the public
+site. No event was added, so no advance notice could be written up as a report.
+No person was added, moved or renamed: no surname-alone match, no changed
+surname split in two, no April result filed into the wrong academic year.
+Nothing goes near the settled facts. No living person is named in anything
+written this pass beyond Reed Morgan's existing unresolved record, which was
+read and not altered. No contributor commit was in scope.
+
+`build.py` completed cleanly. `check_data.py` and `check_contrib.py` both exited
+0. `check_duplicates.py` reported the same six pairs as the last several passes.
+All six were read again rather than taken on the previous verdict. The three
+bills of 1 September 1991 are three bills. The 1991-92 regent advisory committee
+pair is an introduction and a defeat eight days apart. The 1971-72 pair is the
+Civil Liberties Union planning an action and Associated Students later endorsing
+it. The 2003-04 pair is a position taken in September and legislation passed in
+October. The designated driver cards are three separate entries — the bill of
+4 November 1997, the Herald's report of 13 November and the distribution
+announced on 17 February 1998 — and each is hedged to what its source actually
+proves, two of them noting that the archive holds only a contents listing. None
+is one event written twice.
+
+## Where the archive stands
+
+Sixty-one academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 297 mirrored documents, 1,111 pieces of legislation, 1,833 pages
+built. All 73 leader records carry a portrait. Forty-nine of the 61 years have a
+photograph of their own.
+
+## Still open
+
+The 21 president records with no `also_regent` field, described above. This is
+new and it is the largest unmeasured gap the pass found.
+
+The twelve years still without a photograph: 1993-94 through 1997-98, then
+2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09 and 2009-10. The Cloudflare
+block on `viewcontent.cgi` was not retested this pass — three separate runs have
+now confirmed it shut since 25 August and a fourth confirmation buys nothing.
+
+Everything carried over stands: the 151 raw "SGA legislation: ..." citation
+labels, the sixteen people filed under both the executive and the senate, the
+credits citing a bare image file, the Salvador Leon and Salvador León question
+awaiting `name-aliases.json`, and the 1972-73 Ed Jordan credit at exactly fifteen
+words.
