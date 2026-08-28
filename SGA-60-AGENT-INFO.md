@@ -2534,7 +2534,7 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   All three files verified as real JPEGs (`FF D8 FF E0`) before committing.
   `build.py`, `check_data.py` and `check_duplicates.py` all pass clean (61
   years, 2019 events, 60 presidents; the same six known duplicate pairs,
-  unchanged). Landed on `research-photos`, PR #249 (the prior rolling PR,
+  unchanged). Landed on `research-photos`, PR #250 (the prior rolling PR,
   #244, was already merged).
 
 ### 8.5 Data hygiene
