@@ -1,3 +1,90 @@
+# Editor's pass - 28 August 2026, later: six portraits merged, one of them recropped first
+
+One pull request was open, #254, `research-photos`, and it merged. The three the
+standing brief still calls stale - #6, #7, #8 - remain closed, as the previous
+pass recorded; the brief is still pointing at them and still should not be.
+
+Six officer portraits, all off wkuherald.com, all into `photos.json` only, with
+`years.json` untouched. Amy Wyer 2018-19, Nathan Terrell 2019-20, Savannah
+Molyneaux, Kara Lowry and Conner Hounshell 2017-18, Molly Ricke 2025-26. Six
+claims is fewer than the eight a sample is meant to cover, so all six were
+opened rather than a sample of them, and every caption was confirmed word for
+word against the live article.
+
+## The Lowry crop was not a portrait of Lowry
+
+The run reported that its crop of the 2017-18 election-night group photograph
+kept "a small sliver of Dahmer's hair/eye at one corner." That description was
+wrong, and the way it was found is worth keeping.
+
+The four officers in that photograph are hugging, heads touching, and the whole
+identification rests on the caption's left-to-right order. Rather than take the
+order on trust, the Herald's full-size original was downloaded and each of the
+three committed crops located inside it by pixel match. Molyneaux sits at x
+0-450, leftmost, exactly as claimed. Hounshell sits at x 1048-1499, rightmost,
+also as claimed. Lowry's crop ran x 796-1156: roughly 100 pixels of Andi Dahmer
+at one edge and 156 of Hounshell at the other, leaving Lowry about the middle
+200. Three faces under one name.
+
+Nothing was misidentified - the order held everywhere it was checked - but a
+reader looking at that file could not have told which of the three faces was
+Kara Lowry, and the rule about a misidentified face being worse than no face is
+there for exactly that. The crop was remade from the full-size original at 240
+by 660: Dahmer is out of frame, Lowry is the front-facing dominant subject, and
+the credit now says plainly that Hounshell stays partly visible in profile
+beside her. Rescued rather than deleted, because the identification was sound
+and only the framing was not.
+
+## A photo credit that stated an allegation and not its outcome
+
+The Terrell credit carried the headline of the Herald's September 2020 report -
+a candidate dropping out of a race over a video of him using a racial slur - and
+stopped there. It sat under a living person's portrait on the 2019-20 page,
+where nothing else in the year explains it. The episode is in fact recorded
+properly, and in full, as a sourced event on 2020-21 under 23 September; the
+credit was reproducing the accusation and leaving the reader on the wrong page
+to find how it ended.
+
+The report also led with a resignation, which the credit had softened into a
+withdrawal from a race. The credit now records what the article actually
+concluded: he denied being the person in the video, then confirmed it,
+apologised in a statement, resigned the speakership and left the executive
+vice-presidential race. The portrait itself is a clean solo headshot off the WKU
+website and was never in doubt.
+
+## What held
+
+The other four credits needed no work. The election caption confirms Dahmer
+president, Molyneaux executive vice president and Lowry administrative vice
+president, and says nothing about Hounshell holding any office - he is simply in
+the photograph, and the entry claimed nothing more, which is the trap about a
+bill's author not being a member wearing a different coat. Spring elections file
+forward correctly: an April 2017 result sitting in 2017-18. Nobody was matched by
+surname. `name-aliases.json` carries Connor to Conner Hounshell and the canonical
+spelling was used, so no second person was invented. No advance notices - all four
+articles report things that had already happened. Nothing touches the settled
+facts and no contributor commit was in the diff.
+
+One thing was noted and not acted on, because it belongs to a decade routine and
+not to a photographs branch: Ricke's portrait documents a January 2025 swearing-in
+as a Senator-at-Large, but is filed to 2025-26, because 2024-25 carries no record
+of her at all. The gap is in `years.json`. Terrell's filing to 2019-20 is right -
+it is his only officer record, and its note already runs into the autumn of 2020.
+
+`build.py`, `check_data.py` and `check_contrib.py` all clean: 61 years, 2019
+events, 60 people have been president. `check_duplicates.py` reports the same six
+pairs it has been reporting, none of them in this diff, and each of them a
+genuinely separate event - a bill introduced and the same bill failing weeks
+later, three different bills on 1 September 1991.
+
+One correction to record against this pass itself: the comment posted on #254
+went out with a generated-by line appended to it. The repository's rule against
+tool attribution covers comments as plainly as commit messages, and the line
+should not have been there. It could not be edited off afterwards - the direct
+API is refused in this environment and the tools available do not edit a comment
+once posted. Nothing that reached `main` carries it: the merge commit and all
+four commits under it were checked, and the history is clean.
+
 # Editor's pass - 28 August 2026: nothing to merge, so the last day's portraits were audited instead
 
 No pull request was open. The three the standing brief still names as stale -
