@@ -21,42 +21,50 @@ the 60th anniversary. Static site, pure Python, no dependencies at build time.
 
 ### Where the numbers stand
 
-Measured on `main` at commit `117647c`, 20 August 2026, after
+Measured on `main` at commit `7374364`, 28 August 2026, after
 `python3 scripts/build.py`. The right-hand column is where the 48-hour push
 started, on 17 August, so the two can be read against each other.
 
 | | now | 17 Aug |
 |---|---|---|
 | academic years | 61 (1966-67 → 2026-27) | 61 |
-| dated, sourced entries | 2,025 | 1,877 |
+| dated, sourced entries | 2,019 | 1,877 |
 | programmes (things SGA put on) | 633 | 633 |
 | people who were president | 60 | 60 |
-| people who held the student regent seat | 57 | 57 |
-| people recorded in any office | 1,503 | 806 |
+| people who held the student regent seat | 39 recorded (a floor, not a count — see below) | 57 |
+| people recorded in any office | 1,749 | 806 |
 | leader records | 73 | 73 |
-| cabinet and senate **officer** records | 1,064 | 1,045 (6 Aug figure) |
-| senate **member** records | 912, across 35 years | 0 |
-| years with a cabinet recorded | 58 of 61 | 58 |
-| people whose record carries a written profile | 261 (279 records) | 73 |
-| photographs held | 113 files | 61 |
-| — of which leader portraits / year photographs | 73 / 45 entries | — |
+| cabinet and senate **officer** records | 947 (369 executive, 578 senate) | 1,045 (6 Aug figure) |
+| senate **member** records | 1,487, across 58 years | 0 |
+| years with a cabinet recorded | 61 of 61 | 58 |
+| people whose record carries a written profile | 773 (846 records) | 73 |
+| photograph files held | 196 | 61 |
+| — photo entries: leader portraits / year photographs | 210 / 61 | — |
 | years with a leader portrait | 61 of 61 | not recorded |
-| years with a year photograph | 32 of 61 | — |
-| documents mirrored and referenced | 246 | 34 |
-| legislation PDFs held | 827 | 390 |
-| authorship attributions from those PDFs | 1,038 | 918 |
-| total pages built | 1,587 | 867 |
+| years with a year photograph | 49 of 61 | — |
+| documents mirrored / referenced from a year | 297 / 120 | 34 |
+| legislation PDFs held | 1,111 | 390 |
+| authorship attributions from those PDFs | 1,144 | 918 |
+| total pages built | 1,833 | 867 |
 | complete Herald article index | 11,850 items / 17,601 lines | same |
 
-Two of those rows need reading carefully. **People recorded in any office**
+Three of those rows need reading carefully. **People recorded in any office**
 counts the person pages the build actually writes (`site/o/`); the raw name
-strings in `data/years.json` number 1,547, and the gap is `name-aliases.json`
-folding spellings together. The count nearly doubled in the push because the
-senate rolls arrived, and a rank-and-file senator recorded once from a roll call
-is a much thinner record than a profiled officer — do not read 1,503 as 1,503
-biographies. **Written profiles** counts any record carrying a `profile` array,
-leader or officer; every president and every student regent has one, and the
-other 195 are cabinet and senate officers.
+strings in `data/years.json` number 1,786, and the gap is `name-aliases.json`
+folding spellings together. The count more than doubled since 17 August because
+the senate rolls arrived, and a rank-and-file senator recorded once from a roll
+call is a much thinner record than a profiled officer — do not read 1,749 as
+1,749 biographies. **Written profiles** counts any record carrying a `profile`
+array, leader or officer; every president and every student regent has one, and
+the rest are cabinet and senate officers.
+
+**The student regent row is a floor and not a count.** It is 39 people: the five
+records whose `role` is `regent`, plus the 34 presidents whose `also_regent` is
+`true`. But 21 president records carry no `also_regent` field at all, so the seat
+for their years is unstated rather than empty, and 22 of the 61 years have nobody
+in the seat on the data as it stands. The 57 in the right-hand column was not
+measured this way and the two are not comparable. Whoever next works the regent
+seat should treat those 21 as the open question, not the 39 as the answer.
 
 **Sam Kurtz is the 58th president** and the 55th student regent. Caden Lucas is
 the 60th and 57th. Sixty years of student government span 61 academic years
@@ -2867,6 +2875,39 @@ duplicate pairs). Landed this note only, on a fresh `research-photos` cut
 from current `main` (the branch's prior tip, PR #254, was already merged).
 
 ---
+
+**An editor's pass of 28 August 2026, late: §1's table re-measured.** The queue
+was empty — no open pull requests, and every `research-*` branch either level
+with `main` or one of the superseded 4 August snapshots — so the pass took the
+one item the previous editor's pass had recorded as outstanding: §1's count
+table, which was still measured at commit `117647c` on 20 August and which two
+separate runs had by then flagged as stale without correcting.
+
+Every row was re-measured against `main` at `7374364` rather than patched from
+the two figures that had been reported wrong, because fourteen of the twenty
+rows had moved, not two. The year-photograph row read 32 of 61 and is 49 of 61;
+the photograph-entry row read 45 and is 61. Also corrected: entries 2,025 →
+2,019, people in any office 1,503 → 1,749, officer records 1,064 → 947, senate
+members 912 across 35 years → 1,487 across 58, cabinets 58 of 61 → 61 of 61,
+photograph files 113 → 196, documents 246 → 297 mirrored and 120 referenced,
+legislation 827 → 1,111, authorship attributions 1,038 → 1,144, and pages built
+1,587 → 1,833. Presidents (60), programmes (633), leader records (73) and the
+Herald index were already right and were left alone.
+
+Two rows needed more than a number. **The student regent row is now marked as a
+floor rather than a count.** It resolves to 39 people — five records whose
+`role` is `regent` plus 34 presidents flagged `also_regent` — but 21 president
+records carry no `also_regent` field at all, so their years are unstated rather
+than empty, and 22 of the 61 years show nobody in the seat. The old figure of 57
+was not measured this way and is not comparable to it. Those 21 unstated records
+are a real open question and are the thing to work, not the 39. The written
+profiles row was also re-cut to distinct people (773) with the record count (846)
+beside it, matching the form the row already used.
+
+Nothing in `data/` was touched by this pass, so nothing reached the public site.
+`build.py`, `check_data.py` and `check_contrib.py` all came back clean and
+`check_duplicates.py` reported the same six pairs it has reported for several
+passes, each of them read again and none of them one event written twice.
 
 ## 9. Restarting a session
 
