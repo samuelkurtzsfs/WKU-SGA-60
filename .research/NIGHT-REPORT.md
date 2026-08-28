@@ -8775,3 +8775,118 @@ senate, the credits citing a bare image file, the year-photograph gap from
 1996-97 to 2009-10 behind the Cloudflare gate on `viewcontent.cgi`, the
 Salvador Leon and Salvador León question awaiting `name-aliases.json`, and the
 1972-73 Ed Jordan credit sitting at exactly fifteen words.
+
+---
+
+# 28 August 2026 — editor's pass, a photograph run's note merged after every claim in it was opened
+
+## What there was to review
+
+One open pull request, #258, "Research: photographs", on a `research-photos`
+branch cut from the current tip of `main`. The three pull requests that had sat
+open since 4 August — #6 photographs, #7 the 1980s, #8 the 2020s — are all
+closed, #8 on 18 August, so nothing stale was left to rescue or to shut.
+
+The diff was forty-four lines added to §8 of `SGA-60-AGENT-INFO.md` and nothing
+else. No `data/` file moved, which means nothing in this branch could reach the
+public site. That is the reason to read it carefully rather than the reason to
+wave it through: a note in the handoff is what the next routine acts on, and a
+wrong figure in it sends the next run hunting for something that is not missing,
+or worse, stops it hunting for something that is.
+
+## What was checked
+
+Fourteen claims, every one of them opened against its source rather than taken
+from the report.
+
+The counts came back exact. Sixty-one academic years, 2,019 events, sixty people
+recorded as president. All seventy-two president and regent leader records carry
+a portrait, with no gap anywhere in `leaders`. The tree holds seventy-three
+leader records in total — sixty-six presidents, six regents and one still
+unresolved — so the note's "seventy-two president/regent" is a precise figure
+and not a miscount, and the unresolved record has a portrait as well. Year
+photographs stand at forty-nine of sixty-one, and the twelve years named as
+still missing one match, in order and without exception, the twelve the data
+gives up: 1993-94 through 1997-98, then 2000-01, 2002-03, 2003-04, 2005-06,
+2006-07, 2008-09 and 2009-10.
+
+The three names carried over from the previous photograph run were the part
+worth the most attention, because each was a surname search and surname searches
+are where this archive has historically gone wrong. Lane Hedrick verifies on
+every particular: wkuherald.com article 29383, "SGA supports military students
+through legislation", 22 March 2017, `featured_media: 0`, and the sentence
+quoted in the note is verbatim in the body at ten words, inside the limit. The
+Jack McKinney hits are the fraternity-rush feature, the Ransdell convocation
+transcript and a basketball story, none of them connected to any officer. The
+two Simpson hits are two other people entirely: Cole Simpson, a freshman
+mechanical engineering student standing for the senate in the April 2024
+election guide, and Libby Simpson, a news reporter's byline. Neither is the
+officer the run was looking for, and the run said so instead of banking the
+match.
+
+The Cloudflare gate was tested once, at the pace the rules require. Article 7642
+on `viewcontent.cgi` returned HTTP 403 at exactly 5,485 bytes, the challenge
+page, while ordinary landing pages on the same host still resolve. The block
+remains specific to the PDF endpoint, unchanged since 25 August.
+
+## What was cut
+
+Nothing. This is the first pass in some time where the honest answer is that
+there was nothing to remove.
+
+## Traps, checked
+
+No events were added, so no advance notice could be written up as a report. No
+person was added, moved or renamed, so no surname-alone match, no changed
+surname split into two people, and no April result filed into the wrong academic
+year. Nothing in the diff touches the settled facts. The three living people it
+names appear only in their public capacity as SGA officers or Herald staff,
+exactly as their sources have them, with no personal detail attached. No
+contributor commit was in the diff.
+
+The Simpson finding deserves recording as the opposite of a trap sprung. The run
+had two surname matches in hand and rejected both on identification. That is the
+habit the thirty-nine false missing presidents were the argument for.
+
+`build.py` completed cleanly, `check_data.py` and `check_contrib.py` both exited
+0, and `check_duplicates.py` reported the same six pairs it has reported for
+several passes — the three bills of 1 September 1991, the 1991-92 regent
+advisory committee's introduction and defeat, the 1971-72 Civil Liberties Union
+plan and endorsement, the 2003-04 plus/minus position and legislation, and the
+designated driver cards three months apart. All six were read again on the
+previous pass and none is one event written twice. Nothing new joined them.
+
+The branch had a real merge base at the current tip of `main`, so none of the
+4 August orphan-history hazard applied. The commit is authored as `SGA 60`, and
+neither the message, the diff nor the pull request body carries any tool's name.
+It was merged, and the review was left on the pull request.
+
+## Where the archive stands
+
+Sixty-one academic years, 2,019 dated and sourced events, sixty people recorded
+as president, 297 mirrored documents and 1,111 pieces of legislation. Every
+president and regent has a portrait. Forty-nine of the sixty-one years have a
+photograph of their own.
+
+## Still open
+
+The one thing this pass turned up that the pull request did not fix: §1 of
+`SGA-60-AGENT-INFO.md` still summarises year photographs as "32 of 61" and
+forty-five entries. The true figures are forty-nine and, by count, sixty-one.
+The merged note says the table is stale, which is accurate and was verified, but
+saying so is not the same as correcting it, and the next routine to read §1
+before §8 will believe the wrong number. The table should be refreshed.
+
+The six `research-*` branches from 4 August — the 1966-79, 1980s, 1990s, 2000s,
+2010s and 2020s beats, and `research-profiles` — still show fifty to two hundred
+and fifteen commits ahead of `main` with no merge base at all. They are the
+superseded-repository snapshots, not lost work, and they have no open pull
+requests. They were left alone deliberately. Merging one would delete
+`herald-index-full.json`, the aliases, the contributor layer and the validators.
+
+Everything carried over from the previous pass stands: the 151 raw "SGA
+legislation: ..." citation labels, the sixteen people filed under both the
+executive and the senate, the credits citing a bare image file, the year
+photograph gap behind the Cloudflare gate, the Salvador Leon and Salvador León
+question awaiting `name-aliases.json`, and the 1972-73 Ed Jordan credit sitting
+at exactly fifteen words.
