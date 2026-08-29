@@ -1,3 +1,137 @@
+# 29 August 2026 — editor's pass, midday: an empty queue, and the nine new portraits taken back to the volumes
+
+Nothing was open to review. The photographs run's #267 and the night report #268
+both merged this morning, and no routine has opened anything since. For the third
+consecutive pass there was nothing to merge, so this one went to the material that
+merged most recently and read it against its sources instead.
+
+## Nothing is stranded on a branch
+
+Checked before concluding the queue was really empty, because a routine that
+pushes without opening a pull request looks exactly like a quiet night.
+`research-photos` and `research-senate` are fully contained in `main`; the file
+differences they appear to carry are `main`'s own later work seen from behind.
+`research-profiles` and `research-editor-0823-seventh` have no merge base at all
+and are the superseded snapshots AGENT-LANDING.md warns about.
+
+`research-backlog` needs recording, because it looks like 299 commits of lost
+work and is not. Its commits are pre-rewrite duplicates of history already on
+`main`, carrying both the `SGA 60` and `samuelkurtzsfs` copies of the same
+changes. One of them is "Withdraw the Thomas LaCivita portrait: the face is not
+identified" — the withdrawal that was examined against the page image on
+28 August and reversed. Merging that branch would quietly undo a settled fact.
+It should not be merged, and a later pass that sees the commit count should read
+this paragraph before acting on it.
+
+## The nine portraits, checked against the volumes' own text
+
+All nine merged this morning as crops from named group photographs, which is the
+identification most likely to go wrong: the credit places a face by counting
+along a printed caption. Every one of the claims below was opened on
+archive.org rather than taken from the credit.
+
+The 1986 Talisman's p. 194 caption is verbatim what the seven 1985-86 credits
+quote, in both rows — front row Mitchell McKinney, Cindy Richards, Greg Elder,
+Tara Wassom, Loree Zimmerman, Roland Spencer; back row Edward Kenney, Lori Scott,
+Kent Groemling, Mark Lovell, Sean Peck, Donna Pack, Tim Todd. The second
+Associated Student Government photograph's caption matches the Caroline Miller
+credit in the same way. The volume's index enters Gregory Allen Elder at 194-195
+and 327 and Cindy Lee Richards at 194-195 and 314, exactly as the two credits
+claim, and the class portraits they were cropped from read "GREG ELDER, Glasgow"
+and "CINDY RICHARDS, accounting, Cloverport".
+
+Brett Butler's credit quotes the 1971 volume's "Brett Butler; Harned;
+Accounting", which is right, and the same volume corroborates the office
+independently in an officers caption naming him treasurer beside John Lyne as
+president and Doug Alexander as vice president — which is what this archive
+already records for 1970-71, from that page.
+
+Pam Stewart was the one worth the most care, because the credit joins an officer
+to a senior portrait across two volumes and a second Pamela Stewart exists. It
+holds. The 1974 index enters Pamela Gail Stewart at p. 56, the 1975 index enters
+her at p. 377, that volume separately lists a Pamela Anne Stewart whom the credit
+explicitly declines to merge, and the 1974 text names "Pam Stewart, secretary" in
+the executive branch. The identification rests on the indexes rather than on a
+shared name, which is what the credit says it rests on.
+
+## Published events opened against their issues
+
+Digitised Herald landing pages answered this session, so nine event claims were
+read against the issue indexes they cite. All held. The 29 February 1972 issue
+carries Linda Jones's "Associated Students Corrects Herald", David Gray's piece
+on the Kentucky Civil Liberties Union planning court action, Carter Pence on the
+executive branch of the constitution, and "Benjamin Mays Speaks Tonight". The
+28 March 1972 issue carries Nancy Pape's "Vote Yes", Roger Miller on Associated
+Students endorsing the lawsuit, and the mini-concert item. Nikita Stewart's
+"Altered Bill Fails in Associated Student Government" is in the 6 February 1992
+issue, and Melissa Felkins's designated driver cards item in the 17 February 1998
+issue.
+
+Three of those nine are advance notices, and all three are already written down
+to what a notice proves: the mini-concert appears only as something the issue
+advertised, the designated driver cards only as due to be distributed the
+following day, and the Benjamin Mays entry says in its own body that the
+yearbook's caption and its running text disagree about whether he spoke. Nothing
+in the sample claimed a crowd, a review or a result out of a booking.
+
+## The photograph layer as a whole
+
+233 leader portraits and 61 year photographs. Every file is present on disk,
+every one begins with real image bytes, every one carries a source URL, and every
+name in a leader entry matches a person the year actually records. The two Lori
+Scott entries share one file across 1985-86 and 1986-87 by design, and the
+1986-87 credit says on its face that it is an extension of a photograph taken in
+the earlier year; the archive has her as KISL Committee chairman in the first
+year and administrative vice-president in the second, both from the minutes.
+
+Committee chairs in both years are filed under the senate's officers and not the
+executive, which is the error #243 corrected elsewhere. It has not come back.
+
+## Checks
+
+`build.py` completed cleanly: 61 year pages, 7 decade pages, 297 documents,
+1,111 legislation files. `check_data.py` exited 0 on 61 years, 2,019 events and
+60 people recorded as president. `check_contrib.py` exited 0 on every assertion.
+`check_duplicates.py` reported the same six pairs as recent passes; each was read
+again and each is still two events rather than one written twice.
+
+## What is reachable
+
+Measured rather than assumed, since the last entry asked a later run to test it.
+Herald issue landing pages on digitalcommons answer 200, and that is the route
+that lets a negative conclusion be checked properly. `viewcontent.cgi` is still
+403, so the page images and the pre-2011 portrait work behind them stay shut.
+`wkuherald.com` article pages are still 403. `archive.org` and `www.wku.edu`
+both answer 200; the Talisman full texts used throughout this pass came from
+archive.org.
+
+## One thing for the owner, not for a routine
+
+CLAUDE.md still lists "John Lyne vs Larry Zielke 1970-71" among the questions
+that are open. The data no longer treats it as open: Lyne is recorded verified
+and confirmed, with five sources and a note explaining that the plaque's pairing
+is wrong because Zielke's term was 1969-70. The 1971 Talisman caption read for
+Butler above names Lyne president too. The law file and the record disagree, and
+editing the law file is not a routine's call, so it is left as it stands and
+flagged here.
+
+## Nothing merged, nothing cut
+
+No pull request was open, so nothing was merged. Nothing in what was audited
+needed cutting or trimming. The archive stands where it stood: 61 academic years,
+2,019 dated and sourced events, 60 people recorded as president, 297 mirrored
+documents, 1,111 pieces of legislation.
+
+## Still open
+
+Everything carried over stands, untouched by this pass: the twelve years with no
+photograph of their own, the roughly 590 officer and senate-officer names with no
+portrait, the 21 president records with no `also_regent` field, the 151 raw
+"SGA legislation: ..." citation labels, the sixteen people filed under both the
+executive and the senate, the credits citing a bare image file, the Salvador Leon
+and Salvador León question, and the 1972-73 Ed Jordan credit at exactly fifteen
+words. `scripts/photo_gap.py` is still unwritten and still wanted.
+
 # 29 August 2026 — editor's pass, later: nine portraits merged, and the page-number slip caught for the third night running
 
 One pull request was open, #267, "Research: photographs — nine more officer
