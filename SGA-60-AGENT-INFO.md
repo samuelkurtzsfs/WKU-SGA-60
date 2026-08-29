@@ -3062,6 +3062,88 @@ make the ones among them who graduated in an archive.org-held year go
 faster than the caption-by-caption search this run and its predecessors
 used.
 
+**A 29 August run (photograph agent), nine more portraits: two solo
+captions and a seven-person yield from one Talisman page.** Re-checked
+first, as every run does: all four presidents named as this run's
+priority one (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley)
+already carried a portrait, and all 72 president/regent leader records
+still do. `research-photos` had a real merge base with `main` (a clean
+fast-forward, 1 commit, no conflicts) — the branch's prior tip, PR #264,
+was already merged.
+
+Found two more solo-captioned identifications the same way as the prior
+run's six: **Brett Butler** (1970-71 treasurer), 1971 Talisman "Who's Who
+Among Students in American Colleges and Universities" p. 36, captioned
+"Brett Butler; Harned; Accounting"; and **Pam Stewart** (1973-74
+secretary), 1975 Talisman Seniors p. 378, alphabetical grid captioned
+"PAM STEWART, Home Ec. Ed., Cecilia." Confirmed the archive.org
+fulltext-search-to-scan-leaf offset used since 28-29 August is consistently
+leaf = (reported page) − 1, checked against three independent hits across
+two different volumes this run before relying on it.
+
+The real find was the 1986 Talisman's "Associated Student Government"
+section, p. 194 — two formal, posed group photographs (theater seats, not
+an outdoor candid shot), each captioned with an explicit FRONT ROW / BACK
+ROW roster in left-to-right reading order. Counted the visible faces
+against the caption's roll before trusting any position (6 front + 7 back
+in the first photo, matching exactly; 6 front + 6 back in the second),
+then cropped and read each face individually rather than trusting the
+count alone. Landed six from the first photo — **Tara Wassom** (secretary),
+**Loree Zimmerman** (public relations vice-president), **Lori Scott**
+(KISL Committee chairman), **Sean Peck** (Rules and Elections Committee
+chairman), **Donna Pack** (Academic Affairs Committee chairman), **Tim
+Todd** (Student Rights Committee chairman) — and one from the second,
+**Caroline Miller** (Legislative Research Committee chairman). Scott's
+portrait is also extended to her 1986-87 term as administrative
+vice-president, the same free-extension convention used for Nick Todd,
+Katie Dawson, Jeanne Johnson, Reagan Gilley, Ciin Lun, Amy Wyer, Garrison
+Reed and Kara Lowry.
+
+Two things looked at and deliberately not used, so a future run does not
+redo the search. The 1970-71 ASG Executive Council photo (1971 Talisman
+p. 67) captions "Front Row: Brett Butler, treasurer; Carol Gray,
+secretary; John Lyne, president; Peggy Hundley. Second Row: Joe Gerard;
+Glen Sweet; Doug Alexander, vice president" — but it is an informal
+outdoor photo on a rock formation, and the visible foreground/background
+split does not cleanly match a 4-and-3 row count the way the 1986 theater
+photos did. Left alone; **Carol Gray (1970-71 secretary) is still without
+a portrait**, and this is a case where the row caption alone was not
+enough — a different kind of caution than an unlabeled composite, worth
+distinguishing in the log. A 1978 Talisman p. 34 candid pair ("ASG
+COMMITTEE CHAIRMEN Brad Ford and Gene Saunders talk with representative
+Kevin Kinne" and "A LIGHT MOMENT IN AN ASG MEETING brings laughter from
+president Bob Moore and smiles from activities vice president David Bass,
+secretary Sharon May and vice president Cathy Murphy") names four more
+1977-78/1978-79 officers, but both are candid shots with no row or
+position order — left alone for the same reason.
+
+One lead chased and abandoned for a different reason: a 1987 Talisman
+search for "Chris LeNeave" and "William Schilling" (1986-87 senate
+officers) returned a page hit whose caption matched neither of the two
+leaves the standard offset pointed at — the University Center Board and
+Spirit Masters photos on the nearby pages carried different rosters
+entirely. Rather than guess at a second offset for that volume the way
+the Berman citation on 29 August had to be corrected for the 1973 volume,
+this run left it unresolved. A future run should re-derive the leaf
+number directly (open the volume's own page index, or step through
+adjacent leaves one at a time) rather than assume the −1 offset holds
+across every volume's front matter.
+
+All nine new files verified as real JPEGs by magic bytes before
+committing. Every name checked against `data/years.json`'s
+`organization.executive`/`organization.senate.officers` for an exact
+string match before writing the `photos.json` entry. `build.py`,
+`check_data.py` and `check_duplicates.py` all pass clean (61 years, 2019
+events, 60 presidents; the same six known duplicate pairs, unchanged, all
+previously judged not duplicates). Landed on `research-photos`, PR #267
+(the prior rolling PR, #264, was already merged). The twelve-year
+year-photograph gap is untouched this run; `viewcontent.cgi` was not
+retested this session, since the archive.org route needed no help from
+it and stayed productive on its own. The officer/senate-officer portrait
+gap is now nine names smaller, at roughly 575 unique names; Carol Gray,
+Gene Saunders, David Bass and Sharon May are confirmed-searched dead ends
+for now (see above) rather than unattempted.
+
 ## 9. Restarting a session
 
 ```bash
