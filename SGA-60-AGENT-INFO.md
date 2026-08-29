@@ -3075,11 +3075,35 @@ Found two more solo-captioned identifications the same way as the prior
 run's six: **Brett Butler** (1970-71 treasurer), 1971 Talisman "Who's Who
 Among Students in American Colleges and Universities" p. 36, captioned
 "Brett Butler; Harned; Accounting"; and **Pam Stewart** (1973-74
-secretary), 1975 Talisman Seniors p. 378, alphabetical grid captioned
+secretary), 1975 Talisman Seniors p. 377, alphabetical grid captioned
 "PAM STEWART, Home Ec. Ed., Cecilia." Confirmed the archive.org
 fulltext-search-to-scan-leaf offset used since 28-29 August is consistently
 leaf = (reported page) − 1, checked against three independent hits across
 two different volumes this run before relying on it.
+
+**Editor's correction, 29 August.** The Stewart citation was filed as
+p. 378 and is p. 377, caught on review: the 1975 index enters both
+Pamela Gail Stewart and Barry Lynn Stice at 377, and Stice follows
+Stewart in the grid. The identification itself held on a stronger footing
+than the run claimed — the officer and the senior are the same person on
+the two volumes' indexes, which enter Pamela Gail Stewart at the 1974
+ASG page (p. 56) and at 1975 p. 377, and not merely on a shared first and
+last name; the 1975 volume carries a second Pamela Stewart, Pamela Anne.
+A clause naming her senior class **vice president** was cut: the volume
+names her among the senior class officers with Mike Inman and never
+assigns her an office. The offset rule above is the trap that produced
+the error, and it is not reliable at page level — prefer the volume's own
+printed folio or index entry, as the check that caught this one did.
+
+The same review corrected two citations already on main, from the
+28 August portrait run: the Greg Elder and Cindy Richards credits both
+placed the 1986 ASG group photograph on p. 198. It is on p. 194 — the
+printed folio 194 falls immediately after the two roster captions, and
+the volume's index enters Gregory Allen Elder and Cindy Lee Richards
+alike at 194-195. Page 198 is an index page, not a content page, which
+is very likely where the number came from. Elder's quote as
+administrative vice president is on p. 195. An unverified "p. 75" in the
+Richards credit was replaced with the index reference that is checkable.
 
 The real find was the 1986 Talisman's "Associated Student Government"
 section, p. 194 — two formal, posed group photographs (theater seats, not
