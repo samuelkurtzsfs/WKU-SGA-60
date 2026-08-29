@@ -2965,6 +2965,89 @@ presidents; the same six known duplicate pairs, unchanged). Landed on
 merged). The twelve-year year-photograph gap and the remaining ~590 unique
 officer/senate-officer names without a portrait are otherwise unchanged.
 
+**A 29 August run (photograph agent): six more officer portraits, and a
+faster method for the ones like them.** Re-checked first, as every run
+does: all four presidents named as this run's priority one (Nick Todd,
+Katie Dawson, Jeanne Johnson, Reagan Gilley) already carried a portrait,
+and all 72 president/regent leader records still do.
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` was tested directly (article
+7740, the standing 2008-09 year-photograph lead) and came back the same
+5,485-byte Cloudflare challenge every run has logged since 25 August.
+
+Rather than keep working from digitalcommons, this run went at the
+officer/senate-officer portrait gap (~590 unique names as of the 28 August
+count) through archive.org alone, which is not rate-limited. Two things
+made this faster than prior single-name searches: archive.org's
+`fulltext/inside.php?item_id=talisman<year>west&doc=...&q="phrase"`
+endpoint full-text-searches one Talisman and returns a `page` value per
+hit; fetching the BookReader leaf at `page − 1` via
+`BookReaderImages.php?...&page=n<N>` reliably lands on the right scan
+(confirmed against a dozen fetches this run — the offset was exact every
+time). And the alphabetical senior/junior class portrait sections that
+run through every Talisman — a name list on the left, a portrait grid on
+the right, one entry per photograph in reading order — turn any officer's
+name that appears there into a near-certain identification, without
+needing a caption that mentions their office at all.
+
+Landed six portraits this way, all in years archive.org actually holds
+(1970-71 through 1980-81; it does not have 1981-82 or 1987-88, confirmed
+again this run — both `talisman1982west` and `talisman1988west` return a
+200 on `/metadata/` but carry no `_djvu.txt` and no pages, i.e. dark
+items): **Joe Glasser** (1971-72 treasurer, pool-table officer photograph,
+1972 Talisman p. 272), **Louis Berman** (1972-73 sergeant-at-arms, via his
+separately-covered term as sophomore class president, "Berman led sophs
+during a quiet year," 1973 Talisman p. 421), **Gerard Faulk** (Judicial
+Council chairman both 1975-76 and 1976-77, senior portrait, 1977 Talisman
+p. 350 — this closes an `src2` lead his 1975-76 record had carried
+unfulfilled since an earlier pass), **Gary Reed** (1977-78 treasurer,
+senior portrait, 1978 Talisman p. 372), **Tricia Cook** (1977-78 interim
+secretary, junior-class portrait, 1978 Talisman p. 383) and **Steve
+Fuller** (administrative vice president 1979-80, president 1980-81, one
+senior portrait attached to both years, 1981 Talisman p. 325).
+
+Three more names were run down and found not usable, worth recording so a
+future run does not repeat the search: **Debby Clark** (1972-73
+secretary) — the only "Debbie Clark" in the 1973 Talisman is a sorority
+member in an unrelated 40-person group photo, no confirmable link to the
+ASG secretary. **Don Carter** (1972-73 Judicial Council chairman) —
+appears in a captioned 4-person "Peanut Gallery" trivia-contest photo, but
+it is a candid action shot, not a posed lineup, and the caption's name
+order does not reliably map onto photo position; skipped rather than
+guess which figure is him. **Paul Nation** (1974-75 administrative vice
+president) — has a solo captioned photo in the 1975 Talisman ("With his
+desk cluttered by a typewriter... Paul Nation finds when the telephone
+rings, the only place for business is in his lap"), but the photograph
+itself shows only his feet up on a desk with books, no face at all;
+strong caption, unusable image. A caution for whoever picks this up next:
+always open the actual page image before trusting a caption match, even a
+solo one — the LaCivita/Johnson case in `CLAUDE.md` and this Paul Nation
+case are two different ways a confident-looking caption still is not a
+usable portrait.
+
+Also found and deliberately not used: **an ASSOCIATED STUDENT GOVERNMENT
+group portrait for 1980-81** (1981 Talisman p. 282, a 28-person, four-row
+composite naming Marsha Sanner, Jeffrey Morris, Greg Zoeller and others
+among the sitters) that could in principle cover several more names on
+the missing list at once. The rows overlap enough in a scan this size
+that a face plausibly in the back row's stated position is hard to
+distinguish with confidence from its neighbors, and one test crop for the
+front row's fourth-named sitter did not clear the bar this archive holds
+itself to. Left alone rather than risk a wrong face; a future run with
+more time to work the row geometry carefully, or a cleaner scan, may be
+able to use it.
+
+All six new files verified as real JPEGs by magic bytes before
+committing. `build.py`, `check_data.py` and `check_duplicates.py` all
+pass clean (61 years, 2019 events, 60 presidents; the same six known
+duplicate pairs, unchanged, all previously judged not duplicates). Landed
+on `research-photos`, PR #264 (the prior rolling PR, #261, was already
+merged). The twelve-year year-photograph gap is untouched this run; the
+officer/senate-officer portrait gap is now six names smaller, at roughly
+584 unique names, and the alphabetical-portrait-grid method above should
+make the ones among them who graduated in an archive.org-held year go
+faster than the caption-by-caption search this run and its predecessors
+used.
+
 ## 9. Restarting a session
 
 ```bash
