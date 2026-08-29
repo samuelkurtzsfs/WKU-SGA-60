@@ -122,6 +122,31 @@ needed cutting or trimming. The archive stands where it stood: 61 academic years
 2,019 dated and sourced events, 60 people recorded as president, 297 mirrored
 documents, 1,111 pieces of legislation.
 
+## Added after the pass: why the queue keeps being empty
+
+Three passes in a row have recorded an empty queue without asking why it was
+empty, so this pass checked. Three of the four research routines have stopped
+opening pull requests.
+
+`research-profiles` last opened one on 24 August (#189). `research-backlog` last
+opened one on 25 August (#223), and that one is explained: its own last commit
+reads "Disable the stale backlog trigger, not just diagnose it", so it was
+stopped deliberately. `research-senate` last opened one on 25 August (#225), and
+nothing in this file explains that one. `research-photos` is the only routine
+still producing, and it has run several times a day throughout.
+
+The visible effect is that the archive's event count has not moved. It has stood
+at 2,019 since 26 August, and every merge since has been photographs. The
+photograph work is real and the portraits are the project's most wanted
+material, but a pipeline reduced to one routine is not what this file has been
+describing when it says "an empty queue".
+
+This is recorded rather than acted on. Restarting a routine is not an editor's
+call, and nothing here suggests the routines failed at their research: they
+simply stopped being fired. The owner should know that two of them, the senate
+rolls and the person profiles, went quiet without a reason anyone wrote down.
+
+
 ## Still open
 
 Everything carried over stands, untouched by this pass: the twelve years with no
