@@ -9159,3 +9159,149 @@ that it is visible text published under the project's name. The comment on #261
 carries the line. Nothing in the repository or the built site does, and that rule
 was kept exactly. The conflict is only about GitHub's own comment threads, and
 it needs a decision rather than each run guessing.
+
+# 29 August 2026 — editor's pass: an empty queue, ten published claims opened against their sources
+
+## What there was to review
+
+Nothing. There are no open pull requests. Every research branch is either level
+with main — `research-photos`, `research-senate`, `research-backlog` — or a
+superseded snapshot: the six decade branches of 4 August still have no merge
+base with main and stand at more than 300,000 deletions against it, which is
+what `AGENT-LANDING.md` describes and not work to rescue. `research-profiles`,
+the one recent branch without a merge base, was compared field by field rather
+than by its commit graph: 61 years, 73 leaders and 299 profile paragraphs on
+both sides, and main carries one event more. It holds nothing main lacks.
+
+The standing brief still names #6, #7 and #8 as stale and open. They have been
+closed since 18 August. This is the fourth pass to record it.
+
+## What was checked, and how
+
+With no queue, the pass went at what is already published, and at the part of it
+the previous pass could not reach. That run merged five portrait cross-filings
+while unable to open any of the four `wkuherald.com` articles behind them, and
+said so. The articles are still shut: the domain root answers 200 to this
+session but every article path returns a Cloudflare 403, so the position is
+unchanged and the note in the previous entry stands.
+
+What could be reached was checked instead. Every office behind those five
+cross-filings was read out of `data/years.json` and two were taken back to the
+primary document:
+
+- Amy Wyer, Director of Public Relations in 2017-18. The Senate minutes of
+  12 September 2017 carry the line "Director of Public Relations – Amy Wyer"
+  under the officer reports. The same minutes list a separate Public Relations
+  committee under William Hurst, which the record has correctly not merged with
+  the executive directorship.
+- Garrison Reed, Associate Justice in 2023-24. Bill 20-24-S is signed by Isaac
+  King as Chief Justice, Ellen Henderson as Associate Chief Justice and Garrison
+  Reed as Associate Justice.
+
+Both cross-filings therefore rest on offices that exist in a primary source.
+
+Ten published claims were then drawn at random from the 1,289 events whose
+citations sit on reachable domains, and every one was opened:
+
+- Herald 74:51, 15 Apr 1999 — "Turbulent Elections Complete", by Ryan Clark. Confirmed.
+- Herald 63:33, 21 Jan 1988 — Klausnitzer on Greg Robertson quitting the senior class presidency. Confirmed, byline included.
+- Herald 63:45, 3 Mar 1988 — Klausnitzer on the chiefs rarely keeping office hours, with the editorial on the same point in the same issue. Both confirmed.
+- Herald 57:39, 11 Feb 1982 — Francke and Lyly on ASG and the University Center Board wanting more money and planning budget requests. Confirmed.
+- Herald 49:41, 17 Apr 1970 — the Associated Students dance, and Cinema '70 showing "The Promoter". Confirmed.
+- Herald 47:14, 8 Dec 1967 — the Kentucky Intercollegiate Press Association supporting student representation. Confirmed.
+- Resolution 80-7, 18 September 1980 — described by the archive as concerning the inequity of residence hall budget cuts. Confirmed, date included.
+- Bill 01-4-S — a bill to schedule a clean-up day on 23 April 2001. Confirmed.
+- Bill 4-18-S — $50 from Senate discretionary to promote the 2018 Spring Movie Series for the Sustainability Committee. Confirmed.
+- Bill 17-22-S — the Judicial Council having had no formal written guidelines before the General Procedural Rules. Confirmed.
+
+Ten of ten held. Nothing was cut and nothing needed trimming.
+
+## Traps, checked
+
+The advance-notice trap was the one worth watching in this sample, and the
+archive came out ahead of it twice. The 1970 dance is indexed as "Associated
+Students Dance Slated from 8-12 Tonight" — an announcement — and the entry says
+the Herald announced it, with no crowd, no review and no takings. Bill 01-4-S
+scheduled a clean-up for a date seven weeks off, and the entry says the bill set
+it rather than that it happened. Both are written to what the source proves.
+
+The April-election trap came out right as well. The 1999 entry puts Griffey and
+Bastin's wins in 1998-99, where the election happened, and describes them as
+completing the 1999-2000 executive slate.
+
+No committee chair was found recorded as an executive officer in the material
+checked; the Wyer minutes are the case where that confusion was available and
+was not made. Nothing was matched on a surname alone. Nothing touched the
+settled facts except to support one: the index of Herald 57:39 carries the
+runoff story for the regent seat in February 1982, which is consistent with
+Sandra Norfleet sitting in 1981-82 and not 1982-83. No contributor commit was in
+scope and nothing in `data/posts/` was touched. All the living people named here
+appear only in the offices they held and the votes they cast.
+
+## A false positive, recorded so the next pass does not act on it
+
+Seventy-seven leader portrait credits carry a photograph date that falls outside
+the academic year they are filed under, and seventy-three of those do not say
+so. This looked at first like a defect the last merge had introduced, because
+the two Steven Donte' Reed credits it created do carry that disclosure while the
+Amy Wyer and Garrison Reed ones do not.
+
+It is not a defect. Cross-filing a portrait into the other years a person served
+is long-standing practice here, and it reaches back to 1968-69; the disclosed
+ones are the exception rather than the rule. Many of the seventy-three are
+election-night photographs of an officer taken in April, which by the nature of
+this archive always falls in the year before the term they were elected to. There
+is nothing to correct, and rewriting seventy-three credits on the editor's own
+initiative would have been a large unilateral change to live pages in the name of
+a consistency the project never adopted. Left alone.
+
+## Checks
+
+`build.py` completed cleanly: 61 year pages, 7 decade pages, 297 documents and
+1,111 legislation files. `check_data.py` exited 0 on 61 years, 2,019 events and
+60 people recorded as president. `check_contrib.py` exited 0 on all of its
+assertions. `check_duplicates.py` reported the same six pairs as recent passes.
+Each was read again rather than taken on the earlier verdict, and each is still
+two events rather than one written twice: the three bills of 1 September 1991,
+the regent advisory committee's introduction and its defeat, the Civil Liberties
+Union's planned action and Associated Students' later endorsement, September's
+position on plus/minus grading and October's legislation, and the designated
+driver cards across November 1997 and February 1998.
+
+## Where the archive stands
+
+Sixty-one academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 297 mirrored documents, 1,111 pieces of legislation. Unchanged by this
+pass, which merged nothing because there was nothing to merge.
+
+## What could not be done
+
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` is still 403 to this session, so
+the Herald page images stay shut and the pre-2011 portrait work behind them stays
+blocked. `wkuherald.com` article pages are 403 as well. Two things are open to
+this session that the previous entry recorded as closed, and a later run should
+test rather than assume: `archive.org` answers 200, and `www.wku.edu` serves SGA
+minutes and legislation PDFs without difficulty — both of the primary documents
+checked above came from it. The Talisman full texts on archive.org are therefore
+reachable again.
+
+## Still open
+
+Everything carried over stands, none of it touched by this pass: the twelve years
+with no photograph of their own, the roughly 590 officer and senate-officer names
+with no portrait, the 21 president records with no `also_regent` field, the 151
+raw "SGA legislation: ..." citation labels, the sixteen people filed under both
+the executive and the senate, the credits citing a bare image file, the Salvador
+Leon and Salvador León question, and the 1972-73 Ed Jordan credit at exactly
+fifteen words.
+
+The `scripts/photo_gap.py` the photograph routine proposed last night is still
+worth writing, and this pass adds a second use for it: it should be able to tell
+a genuine new portrait from a cross-filing of one already on file, which is the
+distinction that made the seventy-three credits above look like a fault.
+
+The question the previous entry put to the owner is still open and still should
+not be settled by a routine: whether a GitHub comment thread counts as visible
+text published under the project's name. Practice so far has kept the repository
+and the built site completely clean of tool attribution, which is what CLAUDE.md
+actually governs, and that is the reading this pass followed too.
