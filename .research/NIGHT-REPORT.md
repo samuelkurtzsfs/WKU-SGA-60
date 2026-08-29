@@ -1,3 +1,115 @@
+# 29 August 2026 — editor's pass, later: nine portraits merged, and the page-number slip caught for the third night running
+
+One pull request was open, #267, "Research: photographs — nine more officer
+portraits," pushed this morning to `research-photos`. It is merged. Nine
+portraits are on the site that were not there this morning: Brett Butler,
+Pam Stewart, Tara Wassom, Loree Zimmerman, Lori Scott, Sean Peck, Donna Pack,
+Tim Todd and Caroline Miller. Two corrections went onto the branch first, and
+a third fixed something that was already live.
+
+The branch had a real merge base with main and was not behind it, so none of
+the orphan-history caution in AGENT-LANDING.md applied.
+
+## What was checked, and how
+
+Ten claims, which was the whole diff rather than a sample. Nothing was taken
+from the run's own report; every identification was opened against the volume.
+
+The seven portraits out of the 1986 Talisman rest on two group photographs
+whose captions print a front-row and back-row roster in reading order. Both
+rosters are verbatim in the volume's text, and every position the run claimed
+matches. That is not on its own enough — a roster only identifies a face if
+the count of faces matches the count of names — so the group photographs
+already on main were counted: six in front and seven behind in the first,
+six and six in the second, exactly the rosters. Each crop was then checked
+against its place in the group photograph, and the sequence of men and women
+against the roster: M,F,M,F,F,M across the front row, M,F,M,M,M,F,M across the
+back, F,F,F,F,M,M in the second photograph. A crop shifted by one place would
+have broken that pattern somewhere, and none does.
+
+Brett Butler needed none of this. His crop carries the printed caption inside
+the frame, and the Who's Who heading, the caption and the printed folio 36 sit
+together on the page, with the index entering him at 36.
+
+Every name, year and office also matches `years.json` exactly. No committee
+chairman has been lifted into an executive office anywhere in the diff, which
+is the error that killed all thirty-nine of the old missing-president claims;
+Scott, Peck, Pack, Todd and Miller are recorded as chairmen, which is what the
+senate officer list already said. `Tim Todd` was already mapped to
+`Timothy Todd` in `name-aliases.json`, and the 1987 senior portrait on file is
+consistent with the new crop, so no second person has been invented.
+
+## Pam Stewart, who needed the most work and was the best find
+
+Her page was wrong: filed at p. 378 of the 1975 Talisman, and she is on 377.
+The volume's index enters Pamela Gail Stewart and Barry Lynn Stice alike at
+377, and Stice follows Stewart in the grid.
+
+The identification underneath it is sound, but it was resting on the wrong
+thing. The 1975 volume names **two** Pamela Stewarts, Pamela Anne and Pamela
+Gail, so a first and last name does not settle which of them was the ASG
+secretary. It happens that the volumes' own indexes do: the 1974 index enters
+Pamela Gail Stewart at p. 56, its Associated Student Government page, and the
+1975 index enters her at p. 377. The credit was rewritten to stand on that,
+and to record that the second Stewart exists and has not been merged into her.
+The face is right too — row three of the grid runs Stephenson, Stevenson,
+Stewart, Stice, Stiegemeier, a man, man, woman, man, woman sequence that the
+page image matches, and the third position is the committed crop.
+
+One clause was cut. The credit said the volume names her senior class vice
+president. It does not. It names "senior officers Mike Inman and Pam Stewart"
+and never gives her an office; the phrase appears nowhere in the volume.
+
+## Two citations that were already on the live site
+
+The Greg Elder and Cindy Richards credits, merged on 28 August, both put the
+1986 ASG group photograph on p. 198. It is on p. 194: the printed folio 194
+falls immediately after the two roster captions, and the index enters Gregory
+Allen Elder and Cindy Lee Richards alike at 194-195. Page 198 is an index
+page — the line `Martin, Brian Oneil 194-195, 198` is what sits there — which
+is where the number almost certainly came from. Elder's quote as
+administrative vice president is on p. 195. Both are corrected. An unverified
+"p. 75" in the Richards credit was replaced with the index reference, which a
+reader can check.
+
+## The thing worth saying plainly
+
+This is three nights in a row that a page number has been wrong, and each time
+in the same way: a number read off the scanning apparatus or off an index line
+rather than off the page. Last night's entry is headed "a page number that was
+really a leaf number." The run that produced tonight's work wrote down a rule
+for itself — leaf equals reported page minus one, checked across two volumes —
+and that rule is what produced the Stewart error. It is a fine way to find a
+page and a bad way to cite one. The volumes print their own folios and carry
+their own indexes, and consulting one costs a single grep. That is what caught
+all three of these, and it belongs in the method rather than in the night
+report every morning. It is now written into section 8 of the handoff.
+
+Nothing else was open. Pull requests #6, #7 and #8, which the standing brief
+still describes as stale since 4 August, were closed unmerged on 18 August;
+this is the third pass to confirm it, and the brief has not caught up with a
+repository now at #267.
+
+## One thing I could not clean up
+
+The attribution line that AGENT-LANDING.md warns about was appended to both
+things opened this pass. It was stripped from the body of #268. It could not
+be stripped from the review comment on #267: the platform's direct GitHub API
+is refused in this session, and the tool surface that does work has no method
+for editing a comment once posted. Nothing reached the archive itself — no
+commit message, no data file and no generated page carries it, which is what
+the rule is really protecting — but the comment on #267 still ends with it,
+and removing it is a ten-second job for anyone with a browser.
+
+## Counts
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0: 61 years,
+2019 events, 60 people have been president. `check_duplicates.py` reports the
+same six pairs it has reported for days, all correctly separate — three bills
+of 1 September 1991, and three pairs that are an introduction and then a vote.
+This diff added no events, so it could not have made a duplicate. All nine
+image files verified as real JPEGs.
+
 # 29 August 2026 — editor's pass, morning: an empty queue, and last night's six portraits re-checked from the volumes' own text
 
 Nothing was open to review. `list_pull_requests` returned an empty set, and the
