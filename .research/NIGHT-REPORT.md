@@ -1,3 +1,131 @@
+# 29 August 2026 — editor's pass, morning: an empty queue, and last night's six portraits re-checked from the volumes' own text
+
+Nothing was open to review. `list_pull_requests` returned an empty set, and the
+three pull requests the standing brief still names as stale — #6 photographs,
+#7 the 1980s, #8 the 2020s — were all closed unmerged on 18 August, eleven days
+ago. The brief has not caught up with the repository, which is now at #265.
+Nothing was merged this pass because there was nothing to merge, and nothing was
+cut because nothing failed.
+
+## The branches, checked rather than assumed
+
+Every branch on origin beginning `research-` or `photo-` was measured against
+main rather than read from the pull request list, in case a routine had pushed
+work and then failed to open a pull request for it. None had. The four active
+branches — `research-photos`, `research-senate`, `research-backlog` and
+`research-editor-0826-late` — are all nought commits ahead of main, which is to
+say fully merged.
+
+The seven that report themselves ahead are the orphan-history snapshots, and
+they are ahead of nothing. `git merge-base` returns no common ancestor for any
+of them against main: `research-1966-79`, `research-1980s`, `research-1990s`,
+`research-2000s`, `research-2010s`, `research-2020s`, all last touched on
+4 August, together with `photo-research-2026-08-22`,
+`research-editor-0823-seventh` and `research-profiles`. AGENT-LANDING.md is
+explicit that these are snapshots of a superseded repository rather than forks
+of this one, and that merging one deletes the contributor layer and the
+validators along with `herald-index-full.json`. They were left where they are.
+The commit counts they carry are not pending work.
+
+## Last night's portraits, checked a second way
+
+The 03:36 pass merged six portraits and opened all eight of their credits
+against the Talisman page images. This pass checked the same material by a
+different route, the volumes' own OCR text and printed indexes on archive.org,
+so that the identifications rest on two independent readings rather than one.
+Twelve claims were opened. All twelve held.
+
+The two captions are verbatim as the credits quote them. The 1972 volume reads
+"Above—Reginald Glass, vice president; Nancy Pape, secretary; Linda Jones,
+president; Joe Glasser, treasurer." The 1973 volume carries the heading "Berman
+led sophs during a quiet year" and a caption placing vice-president Mike Inman
+at the left, which is what leaves Berman as the figure at the right.
+
+The Berman page correction is right, and the volume settles it twice over. The
+folio immediately above the sophomore page reads 415, and the index files
+Berman at 301, 416 and 418. The 421 the credit used to carry was the scan leaf,
+as last night's correction said.
+
+The reasoning the Glasser credit gives for trusting the caption's order also
+holds: the 1972 volume states in its own words that Reginald Glass is the first
+black vice president of Associated Students, which is what fixes him at the
+left of the frame.
+
+The four class-portrait rows check out on position. The 1977 index reads
+"Faulk, Gerard Jr. 319, 350" and the p. 350 block runs Fatheddin, Faulk,
+Ferguson, Ferralasco, in that order, with Faulk second. The 1978 index reads
+"Reed, Gary W. 288, 372" and the block runs Reece, Reed, Reeves. The 1981 index
+reads "Fuller, Steven Joe 128, 131, 282, 325", and Fuller is the last portrait
+on his page, which its running foot confirms by reading Ford-Fuller.
+
+Cook is the strongest of the four and the one worth recording in full, because
+the yearbook ties the officer to the face without any help from us. The index
+reads "Cook, Patricia Ann 35, 383". Page 383 is the portrait. Page 35 is the
+Herald editorial's inner-office joke declaring a day in honour of Tricia Cook,
+interim ASG secretary — the volume's own words, and the same person under the
+index's own hand. Her block is nine names, Cole, Collins, Colter, Connor,
+Conover, Cook, Cooper, Cooper, Cope, and she is the sixth of them, exactly as
+the credit says.
+
+One loose end, not a defect. The Faulk index carries a page 319 the credit does
+not account for, and the volume has an SNEA group photograph listing a G. Faulk
+in its front row, which would suit an elementary education major. It does not
+put him in an ASG office, so the credit's own caution — that the tie between
+this senior and the Judicial Council chairman rests on the name — stands
+unaltered.
+
+## Checks
+
+`build.py` completed cleanly: 61 year pages, 7 decade pages, 297 documents and
+1,111 legislation files. `check_data.py` exited 0 on 61 years, 2,019 events and
+60 people recorded as president. `check_contrib.py` exited 0 on every assertion.
+`check_duplicates.py` reported the same six pairs as recent passes. They were
+read again rather than taken on the earlier verdict, and each is still two
+events rather than one written twice: the three bills of 1 September 1991, the
+regent advisory committee's introduction in January 1992 and its defeat after
+amendment in February, the Civil Liberties Union's planned action in February
+1972 and Associated Students' endorsement of the suit in March, SGA's position
+against plus/minus grading in September 2003 and its legislation in October, and
+the designated driver cards funded by bill in November 1997 and reported for
+distribution in February 1998.
+
+That last pair is worth a line, because the February entry is an advance notice
+and is written as one. It says the cards would be distributed the following day
+and that the archive holds only a contents listing, and it claims nothing about
+how the distribution went. That is the rule applied correctly rather than
+tripped over.
+
+## Where the archive stands
+
+Sixty-one academic years, 2,019 dated and sourced events, 60 people recorded as
+president, 297 mirrored documents, 1,111 pieces of legislation. Unchanged by this
+pass.
+
+## What could not be done
+
+`archive.org` answered 200 throughout and served all five Talisman full texts
+without difficulty, which is how this pass did its checking. The
+`digitalcommons.wku.edu` restrictions recorded by earlier entries were not
+retested, because nothing this pass needed lay behind them.
+
+## Still open
+
+Everything carried over stands, untouched by this pass: the twelve years with no
+photograph of their own, the roughly 590 officer and senate-officer names with no
+portrait, the 21 president records with no `also_regent` field, the 151 raw
+"SGA legislation: ..." citation labels, the sixteen people filed under both the
+executive and the senate, the credits citing a bare image file, the Salvador Leon
+and Salvador León question, and the 1972-73 Ed Jordan credit at exactly fifteen
+words. `scripts/photo_gap.py` is still unwritten.
+
+One thing this pass would add for the owner rather than settle itself: the
+standing brief that drives these runs still describes a queue from 4 August and
+sends each pass looking for three pull requests that have been closed for five
+weeks. It costs a few minutes a run and it points the editor at the orphan
+branches, which are the one thing on this remote that must never be merged.
+
+---
+
 # Editor's pass - 29 August 2026: six portraits merged, and a page number that was really a leaf number
 
 One pull request was open, #264 from the photograph routine, and it was merged
