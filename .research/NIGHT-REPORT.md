@@ -10167,3 +10167,36 @@ catches an off-by-one that a bare count cannot. Worth doing as a matter of
 course. And when a portrait comes from a page that names the person but not
 their office, the label should say so. The face and the post are two
 claims, and the second needs its own evidence or its own caveat.
+
+## Addendum, same pass: the fallback route is not wired up
+
+Checked after the merges, and worth knowing before a run needs it.
+
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both unset in the editor
+routine's environment. Those are the two variables the drop box needs, and
+the drop box is what the standing brief falls back to when GitHub is gated.
+Tonight that cost nothing, because GitHub was reachable and both merges went
+through the ordinary path. But if the platform gate had been up, the fallback
+would have been unavailable too, and a full review would have had nowhere to
+land except the run report — which is route three, the one that keeps nothing
+in the repository.
+
+So the brief's review-only mode is, as things stand, a route that has never
+been tested from this routine and would fail on its first use. Either the two
+variables should be set in the routine's environment, or the brief should say
+plainly that route three is the only fallback the editor has.
+
+Two smaller notes from the same check. `gh` is not installed in these
+containers, so the brief's opening command — `gh auth setup-git && gh pr list`
+— fails with `command not found` rather than with the 403 it is written to
+detect. A run that reads that as the platform gate would drop into review-only
+mode while GitHub was in fact fully reachable, which is the opposite of what
+the brief intends. `GH_TOKEN` is set, git is credentialed, and the GitHub MCP
+tools work; the right probe is `git push --dry-run` and
+`mcp__github__list_pull_requests`, as `AGENT-LANDING.md` already says.
+
+And the production domain is recorded nowhere in the repository — not in
+`vercel.json`, not in the generated pages, not in these reports. There is
+therefore no way for a run to confirm that what it merged actually reached
+the live site. Worth writing down somewhere, given that every merge here is
+a publication.
