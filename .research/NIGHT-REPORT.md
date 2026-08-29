@@ -9951,3 +9951,96 @@ the fault that got through every existing check tonight.
 verification ran on archive.org, which answered every request without
 rate-limiting, including two full-resolution scan leaves and two complete volume
 texts.
+
+# 29 August 2026 — editor's pass, evening: an empty queue, and thirty-five events that were written up twice
+
+No pull request was open. The photograph routine's #271 was merged this
+afternoon and nothing has come in since; #6, #7 and #8, the three stale
+requests the standing brief still names, have been closed since 18 August and
+needed nothing. Of the twelve `research-*` branches on origin, only
+`research-photos` is current with main and it carries no unmerged data. The
+rest are either the 4 August orphan snapshots with no merge base, or branches
+whose last commit records the routine behind them being disabled. Nothing is
+stranded.
+
+With no queue, this pass went at the published archive instead, and found a
+fault in it that no check in the repository can see.
+
+## Thirty-five events were in the record twice
+
+`check_duplicates.py` compares titles. Two research passes writing the same
+Herald article up in different words produce two entries whose titles share
+almost no vocabulary, so the checker has never reported any of them, and it
+still prints the same six pairs it always has — all six genuinely separate
+business, and left alone.
+
+Comparing bodies rather than titles found 99 candidate pairs. What separates a
+real double write-up from two events at one meeting turned out to be the
+citation: for the wkuherald.com years one URL is one article, so two entries on
+the same date citing the same article are one event told twice. That test
+returned 47 groups. Reading all 47 in full, 35 were the same event written
+twice and 12 were not.
+
+The 12 that were not have been left exactly as they were. They are the case
+CLAUDE.md protects: several distinct items reported in one article. Three
+separate spending bills from one meeting stay three entries; so do the red
+jacket handover and the outgoing officers' final reports on 28 April 2026, the
+Judicial Council's Talisman ruling and the Talisman's own funding meeting in
+December 2013, and the two inventories in Kendrick Bryan's 2010 commentary.
+
+The 35 were merged rather than deleted. Each pair shared one source, so no
+citation was lost, and each merged entry carries every sourced fact from both
+originals — the merge usually makes the entry better than either half, because
+the two passes had noticed different details. The 2 February 2023 Narcan pair
+is typical: one entry had the five-of-seven committee support, the other had
+Lana Kunkel saying there had been no overdose in a WKU residence hall. Both are
+in the record now, in one place. The count falls from 2,019 events to 1,984.
+
+Where a merged pair carried two quotations from one article, one was kept and
+the other paraphrased, which is what the quote rule requires and what neither
+original had been doing.
+
+## What was verified
+
+Nine of the merged entries were opened at source — a third of them, rather
+than the eight the brief asks for, because this pass was rewriting published
+text rather than reviewing someone else's. Every claim held: the $872 and the
+$71 car-rental charge in the 2004 audit, Survance's word for the special
+projects fund and the $3,000 and $35,000 the senate kept in 2019, the 29-1
+vote and Lowry's compromise on the Confederate marker, the $750 and the Center
+for Citizenship and Social Justice's $100 behind the Jonesville scholarship,
+Luttrell's reasons for standing down, Gammons on the DEI provisions, the 13-11
+smoking vote and Church's fifth draft, Bill 1.22s and the drained pantry, and
+the Dining Dollars allegation against Todd.
+
+Two things were corrected off the back of that reading. The Confederate marker
+entry said the amendment was made during the meeting; the Herald puts it before
+the resolution was presented, and the entry now says so. And the 14 April 2026
+meeting had its doubled fuel-cost fact removed from the entry about the year's
+56 bills, leaving it with the parking report where it belongs — and carrying
+with it the unresolved Ginny Griffin / Jenny Griffith name, which the other
+entry had been flagging and this one had been stating flat.
+
+`wkuherald.com` refuses the fetch tool with a 403 and answers a plain request
+with a browser user agent. Worth knowing: it is the source for everything after
+about 2003 and a run that concludes it is unreachable would be wrong.
+
+## Still open
+
+Everything carried over from the previous entries stands, none of it touched
+here: the twelve years with no photograph, the roughly 573 officer and
+senate-officer names with no portrait, the 21 president records with no
+`also_regent` field, the 151 raw "SGA legislation: ..." citation labels, the
+sixteen people filed under both the executive and the senate, the credits
+citing a bare image file, the Salvador Leon and Salvador León question, and the
+1972-73 Ed Jordan credit at exactly fifteen words. The two Talisman leads the
+last pass reopened — Melinda Manis on p. 364 of the 1979 volume and David
+Carwell on p. 73 of the same — are still unworked.
+
+New, and worth a routine of its own: `check_duplicates.py` should compare
+bodies as well as titles, and should treat two entries sharing one per-article
+citation on one date as a duplicate until a human says otherwise. Every one of
+the 35 merged tonight would have been caught the day it landed. The pre-2003
+years, where a citation is a whole Herald issue rather than one article, need
+the body comparison instead and were not swept for this beyond confirming the
+six known pairs.
