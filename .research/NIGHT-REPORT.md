@@ -1,3 +1,147 @@
+# Editor's pass - 29 August 2026: six portraits merged, and a page number that was really a leaf number
+
+One pull request was open, #264 from the photograph routine, and it was merged
+after two corrections were pushed to the branch first. It added six portraits
+and nothing else: Joe Glasser, treasurer in 1971-72; Louis Berman,
+sergeant-at-arms in 1972-73; Gerard Faulk, who chaired the Judicial Council in
+both 1975-76 and 1976-77; Gary Reed, treasurer in 1977-78; Tricia Cook, interim
+secretary the same year; and Steve Fuller, administrative vice president in
+1979-80 and president in 1980-81, one portrait carrying both of his years.
+
+Eight entries for six faces is fewer than the eight new claims a spot check
+calls for, so all of them were checked rather than sampled, and all five cited
+Talisman pages were opened as page images rather than taken on the credits'
+word.
+
+## A page number that was really a leaf number
+
+The Berman credit cited p. 421 of the 1973 Talisman. The page is 416. The
+folios on either side of it run 415 and 417, and the volume's own index files
+Berman at 301, 416 and 418. What the credit had recorded was the scan leaf,
+n421, which is what the source link correctly points at.
+
+The routine had reasoned its way there honestly and written the reasoning into
+the handoff: it fetched a dozen leaves, found the offset exact every time, and
+recorded the rule. The rule holds for four of the five volumes it used - leaf
+n275 of 1972 is page 272, n353 of 1977 is 350, n375 and n386 of 1978 are 372
+and 383, n328 of 1981 is 325, all a gap of three - and breaks on the fifth,
+where 1973's longer front matter makes the gap five. An offset confirmed a
+dozen times inside one volume says nothing about the next one.
+
+This is the second night in a row that the leaf and the folio have caused
+trouble, and it is worth noting they failed in opposite directions. On 27
+August the 1971 volume's index and folio both said page 68 and both were
+useless, because that volume numbers its sections separately, and only the leaf
+found the committee photograph. Last night the folio was right and the leaf was
+what got written down. The lesson that survives both is not "prefer the leaf" or
+"prefer the folio" but read the number off the page image, check it against the
+index, and where the two disagree say which one the credit means. A note to
+that effect now sits in the handoff beside the method it corrects.
+
+## The identifications themselves, and how far each one actually reaches
+
+Four of the six came out of the alphabetical class-portrait sections, a name
+list beside a grid of faces in the same order. It is a good method and the
+archive already rests Jack Smith, Dean Bates, Terri Craig and Kevin Strader on
+it. But it identifies a face in a yearbook, which is not the same as
+identifying an officer, and the six divide sharply on that second step.
+
+The yearbook settles it outright in two cases, and neither credit had said so.
+The 1978 index reads "Cook, Patricia Ann 35, 383", and page 35 is the ASG page
+that names Cook the interim secretary, so the volume itself ties the officer to
+the portrait on 383. The 1981 index reads "Fuller, Steven Joe 128, 131, 282,
+325", carrying one man across the regents pages, the ASG group photograph and
+the senior portrait. Both credits now carry that evidence, because it is the
+part that makes them certain and it was the part missing.
+
+For Faulk and Reed it does not. The 1977 volume never names ASG's Judicial
+Council chairman and the 1978 volume never names its treasurer, so both rest on
+a distinctive name appearing exactly once in the volume's index, plus, for
+Reed, an accounting major that suits a treasurer. That is thin, and it is
+thinner than the credits made it sound. They were kept, because the method is
+already the archive's and the row positions are firm, but both credits now say
+plainly what the identification rests on and what it does not. A reader who
+wants to weigh a name-only match should be able to see that is what they have.
+
+Glasser and Berman came from captioned photographs and needed no such
+reservation. The Glasser caption's left-to-right order is confirmed by
+something outside itself: Glass stands at the left, and the same volume calls
+him the body's first black vice president. The Berman caption places Inman at
+the left, which leaves Berman as the figure at the right.
+
+## A credit that claimed a cleaner crop than the crop is
+
+The Glasser credit said the frame was cropped to him alone. It is not: the
+other players at the tables behind are plainly in it, and the man himself is
+bent over a shot with his face half turned away. It is the only photograph the
+volume gives of him and it is genuinely him, so it stays, but the credit now
+describes the picture a reader will actually see. An archive that overstates
+its crops is training its readers not to trust its captions.
+
+## What held
+
+Everything else. No events were added, so the advance-notice trap and the
+April-election trap did not arise. No committee chair was promoted into an
+officer's chair. Nothing was matched on a surname alone. The Steve Fuller and
+Steven Fuller entries are not a duplicated person: `name-aliases.json` already
+maps the one to the other. Nothing touched the settled facts. Nothing in the
+diff came from a contributor. All six files are real JPEGs and all six now
+render on their officers' pages.
+
+Two things worth carrying forward, neither of them faults. The 1981 index gives
+Fuller as **Steven Joe**, which is the first positive support for the plaque's
+"Steven" over the Herald's "Steve"; his leader note still flags that spelling
+as unverified and this looks like enough to close it, but changing a leader
+record is not a photograph pass's work and was left alone. And on his own page
+the new Talisman portrait has displaced the 1980 Herald halftone, which is a
+real gain in legibility; the year page's leader card still carries the Herald
+one.
+
+The Berman credit was also rewritten to paraphrase its caption rather than
+quote it. The quotation ran to exactly fifteen words, and the rule is under
+fifteen - the same fault the standing list still records against the 1972-73 Ed
+Jordan credit.
+
+## State of the record
+
+61 years, 2019 events, 60 people have been president. 297 documents and 1111
+legislation files. 223 portrait credits across 147 distinct image files, and
+all 73 leader records carry a portrait. `build.py`, `check_data.py` and
+`check_contrib.py` all clean. `check_duplicates.py` reports the same six pairs
+as ever; all six were read again and all six are genuinely separate events - an
+announcement and a distribution four months apart, a bill introduced and the
+same bill failing, and three bills passed on one day in September 1991, which
+the rules deliberately keep apart.
+
+The three pull requests this routine's standing instructions describe as stale
+and open since 4 August - #6 photographs, #7 the 1980s, #8 the 2020s - have
+been closed since 18 August. There was nothing to rescue or close. The
+instruction should be updated so a future pass does not go looking for them.
+
+## Still open
+
+Everything carried over stands, none of it touched by this pass: the twelve
+years with no photograph of their own, the officer and senate-officer names
+with no portrait, now roughly 584, the 21 president records with no
+`also_regent` field, the 151 raw "SGA legislation: ..." citation labels, the
+sixteen people filed under both the executive and the senate, the credits
+citing a bare image file, the Salvador Leon and Salvador León question, and the
+1972-73 Ed Jordan credit at exactly fifteen words.
+
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` was not exercised by this pass,
+which had no need of it; the routine reports it still returning the same
+Cloudflare challenge it has since 25 August. `archive.org` answered every
+request made of it tonight, including five full volume texts and five page
+images, and remains the way in.
+
+Two leads noticed while reading the volumes, recorded here rather than acted
+on. The 1978 Talisman mentions a Reed Morgan awards banquet, which is context
+for the settled question of what his plate honours, though it puts him in no
+office and does not reopen anything. And the April 1980 presidential election
+is written up both in 1979-80, where it happened, and in 1980-81, the term it
+produced. That is defensible and it predates this diff, but the two accounts
+should be read side by side by whoever next works either year.
+
 # Editor's pass - 28 August 2026, night: a withdrawn portrait checked against the page and left standing
 
 Nothing was open to review. `research-photos`, `research-senate` and
