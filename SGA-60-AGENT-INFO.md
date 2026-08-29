@@ -3193,9 +3193,25 @@ page numbers printed there directly, then fetch the corresponding scan
 leaf with `BookReaderImages.php`. **The leaf-to-printed-page offset is
 not constant even within one volume** — it was leaf = page + 4 around
 p. 71-73 of the 1979 Talisman (a glossy, separately-numbered fashion
-insert) and leaf = page + 2 around p. 289-346 of the same book — so each
-target page was fetched and its own printed folio read off the image
-before trusting it, never assumed from a nearby citation.
+insert) and leaf = page + 1 around p. 289-346 of the same book.
+
+**Both citation URLs this run shipped were one leaf out, and the editor
+fixed them on 29 August before merging.** The photographs themselves were
+correctly identified and the printed page numbers in the labels were
+right; it was the `archive.org/details/.../page/nNNN` links that were
+wrong, and a reader following either would have landed on the next page
+and found no such photograph. The Panhellenic photograph on p. 295 of the
+1976 Talisman is leaf **n298**, not n299 — n299 is p. 296, a page of
+cartoons — and the senior grid on p. 344 of the 1979 Talisman is leaf
+**n345**, not n346, n346 being p. 345. The lesson is narrower than "read
+the folio": the folio was read for the crop and not for the link, so the
+two were checked separately and only one was verified. **Fetch the leaf
+the URL you are about to commit actually points at, and read its printed
+folio off that image.** The true offsets were +3 in the 1976 volume
+(p. 295 = n298) and +1 in the 1979 one (p. 344 = n345); the links shipped
+assumed +4 and +2. Two volumes, two different offsets, neither of them
+the one carried over from a nearby citation — which is the whole reason
+the rule above exists.
 
 Landed two portraits this way. **Susan Hurley** (1975-76 co-chair, ASG
 Housing Committee) — 1976 Talisman p. 295, the Panhellenic Conference
@@ -3222,6 +3238,21 @@ so left alone rather than guess. **Melinda Manis**'s citation (p. 325)
 is a 60-plus-person Chi Omega composite, too crowded to place one face
 with confidence, the same caution recorded for the Associated Student
 Government 1980-81 group photo on 29 August above.
+
+**Two of those are not dead ends, and the reason is the same in both
+cases: the run stopped at the first page the index gave.** The 1979
+index reads "Manis, Melinda Susan 325, 364" and "Carwell, David Hargis
+73, 289", and only 325 and 289 were opened. Page 364 of that volume
+carries a clean alphabetical senior portrait, "MELINDA MANIS, elem. ed.,
+Marietta, Ga.," between Beverly J. Mainland and Alecia E. Marcum — the
+same senior-grid route that produced the Anderson portrait, and Manis is
+a 1978-79 Judicial Council alternate. Carwell's p. 73 was never looked
+at at all, and he is the year's activities vice president, a
+better-documented figure than either portrait landed this run. **A
+future photograph run should take both, and should read every page an
+index entry lists before writing a name off.** The 1976 volume makes the
+same point from the other side: Hurley's three citations were what
+confirmed her identity, not just her photograph.
 
 All new files verified as real JPEGs by magic bytes before committing.
 Both names checked against `data/years.json` for an exact string match.
