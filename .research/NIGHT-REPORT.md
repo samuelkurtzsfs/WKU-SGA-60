@@ -9848,3 +9848,106 @@ not be settled by a routine: whether a GitHub comment thread counts as visible
 text published under the project's name. Practice so far has kept the repository
 and the built site completely clean of tool attribution, which is what CLAUDE.md
 actually governs, and that is the reading this pass followed too.
+
+# 29 August 2026 — editor's pass: two portraits merged, both citations one leaf out
+
+One pull request open, #271 from the photograph routine, adding portraits of
+Susan Hurley (1975-76, ASG housing committee co-chair) and Debbie Anderson
+(1978-79, Judicial Council member) to `data/photos.json`. Merged, after two
+corrections pushed to the branch first. The three stale pull requests the
+standing brief still names — #6, #7 and #8 from 4 August — are no longer open
+and needed nothing this pass.
+
+The branch had a real merge base with main and was current with it, so none of
+the orphan-history precautions applied.
+
+## What was verified
+
+Two claims in the diff, so both rather than a sample, each opened at source and
+checked against the page image rather than the caption text alone.
+
+Hurley's caption is verbatim correct. The photograph on p. 295 of the 1976
+Talisman carries fifteen women in groups of four, six and five, matching the
+caption's three rows; the back row is five in the caption's order, and the
+committed crop is the third figure, confirmed by cropping the same face out of
+the full-resolution leaf and comparing the two side by side.
+
+Anderson's caption is verbatim correct and p. 344 is four rows of five as the
+entry claims. Row four runs woman, man, woman, woman, man against Alspaugh,
+Althaus, Cheryl Anderson, Debbie Anderson and John E. Anderson III, so the
+reading order is confirmed by the portraits themselves and not assumed; the crop
+is position four. Worth recording that p. 345 of the same volume is seven rows
+of five — the grid is per-page and cannot be carried from one page to the next.
+
+Build, `check_data.py` and `check_contrib.py` all exit 0. 61 years, 2019 events,
+60 people have been president, matching the routine's own report.
+`check_duplicates.py` prints the same six pairs as before, all of them genuinely
+separate business — an announcement against a distribution, a bill introduced
+against the same bill failing, three separate bills on 1 September 1991 — and
+this diff adds no events to disturb them. All 73 leader records carry a
+portrait.
+
+## What was corrected
+
+Both archive.org links pointed one leaf past the photograph. The printed page
+numbers in the labels were right, so the error was invisible to every check the
+routine ran, but a reader following either citation would have found the wrong
+page and no such photograph. Page 295 of the 1976 Talisman is leaf n298, not
+n299, which is a page of cartoons; page 344 of the 1979 volume is leaf n345, not
+n346. The true offsets are +3 and +1 against links that assumed +4 and +2, the
+latter being the figure the routine's own handoff note records for that page
+range.
+
+The note claimed each target page had been fetched and its printed folio read
+off the image "before trusting it, never assumed from a nearby citation." That
+is not what happened and the passage has been rewritten. The folio was read for
+the crop and not for the link, so the two were checked separately and only one
+was verified — a narrower and more useful lesson than the one the note drew.
+
+The Anderson label overclaimed. Nothing ties the pictured senior to ASG but her
+name: the 1979 volume has no student government section at all, so there was
+nothing to corroborate against. The senior-portrait-grid route is sound and well
+precedented here — Faulk, Reed, Fuller, Smith and Stewart all rest on it — and
+house style is to say so on the entry, as the Faulk label already does. The
+label now says it. Kept rather than cut; the disclosure is what makes it
+publishable.
+
+Hurley's label was strengthened in the other direction, because the evidence is
+better than it claimed. The 1976 index enters Susan Louise Hurley at pp. 63, 268
+and 295: p. 63 is ASG's own attendance roll and p. 268 the Chi Omega page whose
+text names her an ASG representative that year. That portrait rests on three
+citations tying one woman to ASG, not on a shared name.
+
+## Two dead ends that are not dead
+
+Both recorded in the handoff note as exhausted, both abandoned for the same
+reason: the run stopped at the first page its index entry gave.
+
+The 1979 index reads "Manis, Melinda Susan 325, 364" and only 325 was opened, a
+sixty-person sorority composite fairly judged too crowded. Page 364 carries a
+clean alphabetical senior portrait, "MELINDA MANIS, elem. ed., Marietta, Ga.,"
+between Beverly J. Mainland and Alecia E. Marcum — the same route that produced
+the Anderson portrait, and Manis is a 1978-79 Judicial Council alternate. The
+index reads "Carwell, David Hargis 73, 289" and p. 73 was never looked at at
+all; Carwell is the year's activities vice president and better documented than
+either portrait landed this run. Both leads are now in the handoff note.
+
+## Still open
+
+Everything carried over stands, none of it touched by this pass, less the two
+portraits added: the twelve years with no photograph of their own, the officer
+and senate-officer portrait gap the routine now puts at roughly 573 names, the
+21 president records with no `also_regent` field, the 151 raw "SGA legislation:
+..." citation labels, the sixteen people filed under both the executive and the
+senate, the credits citing a bare image file, the Salvador Leon and Salvador
+León question, and the 1972-73 Ed Jordan credit at exactly fifteen words.
+
+`scripts/photo_gap.py` is still unwritten and still worth writing. This pass
+suggests a third job for it beyond the two already recorded: it could check that
+a citation's leaf number and its printed page number agree, which is precisely
+the fault that got through every existing check tonight.
+
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` was not tested this pass; all
+verification ran on archive.org, which answered every request without
+rate-limiting, including two full-resolution scan leaves and two complete volume
+texts.
