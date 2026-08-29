@@ -10044,3 +10044,126 @@ the 35 merged tonight would have been caught the day it landed. The pre-2003
 years, where a citation is a whole Herald issue rather than one article, need
 the body comparison instead and were not swept for this beyond confirming the
 six known pairs.
+
+---
+
+# 29 August 2026 — editor's pass, night: four officer portraits, and one identification that was carrying two claims
+
+One pull request was open, #275 from the photographs routine: four portrait
+crops and their `photos.json` entries, no events and no change to
+`years.json`. It merged. The three stale pull requests the standing brief
+still names — #6, #7 and #8, the 1980s, the 2020s and the rolling
+photographs branch from 4 August — were closed on 18 August and are not
+waiting on anyone. The brief should stop naming them.
+
+## What was verified
+
+Four claims, so all four were opened rather than sampled. Both page images
+were downloaded from archive.org and each published crop was located on its
+page, so the position is established rather than eyeballed.
+
+The 1981 Talisman, p. 282 group photograph carries the caption as the
+routine quoted it. Its figures align with the caption's rows exactly — 6
+against 6 in the front row, 7 against 7 in the second, 8 against 8 in the
+third, 7 against 7 in the back, 28 both ways. Two checks beyond the count:
+the front row's six names are all women's and all six figures read as women,
+the first in a Phi Mu sweater; and the third row's one woman's name,
+Margaret Ragan, falls at position 7, where the row's one figure without
+masculine features stands. The caption's order therefore describes this
+photograph, and counting along it is sound.
+
+Each crop was then matched against the page by normalised cross-correlation.
+Sanner scored 0.997 at the front row's fourth position, Zoeller 0.965 at the
+third row's sixth, Morris 0.949 at the third row's fifth — every one where
+its entry says it is.
+
+The 1979 Talisman, p. 364 block reads MELINDA MANIS, ALECIA E. MARCUM,
+DENISE MARR, JAMES R. MARSHALL, MARILYN MARSHALL against five portraits.
+The names run woman, woman, woman, man, woman and so do the faces, the man
+fourth in both, which fixes the block's order without relying on the count.
+The published crop is the leftmost portrait.
+
+All four names in `photos.json` match `years.json` exactly, so each portrait
+attaches to the officer it names.
+
+## What was corrected
+
+The Manis entry was carrying two claims and had evidence for one. The face
+is Melinda Manis — the caption says so and the row order confirms it. That
+the 1979 senior of that name is the Judicial Council alternate of 1978-79
+is an inference from the name, and the label stated it as though it were
+read off the page. The 1979 volume has no student government section, so
+no page puts her portrait and her post together.
+
+The label now says what the identification rests on, which is what the
+Debbie Anderson entry a few lines above it in the same file already does
+for the same situation. Two things found while checking were added, because
+they strengthen the inference without settling it: the volume's index
+carries one Melinda Susan Manis, at pp. 325 and 364, and p. 325 is the Chi
+Omega group photograph rather than anything to do with ASG. The only other
+Manis indexed is a Susan Renee Manis, a different first name, so there is
+no second Melinda to confuse her with.
+
+The portrait was rescued, not cut. What went was the overreach.
+
+## Traps, checked
+
+No events in the diff, so nothing could rest on an advance notice. No role
+was changed, so no committee chair was promoted to officer. Nobody was
+matched by surname: all four come from full names in captions. Nothing
+collides in `name-aliases.json` — its only Morris is Tyreesha Morris, a
+different person, and Kevin Kinne, who stands in this caption's third row,
+is already aliased there to Kevin Kinnie, which is some small evidence the
+caption names people the record already knows. No election moved year,
+nothing touched the settled facts, no contributor commits were in the diff,
+and nothing about a living person went past a captioned face.
+
+## Recorded, not acted on
+
+The three new labels quote the caption's row roster at 18 words, past the
+15-word quote rule read literally. This file has done that throughout: the
+Susan Hurley entry on main quotes 37 words, and a dozen others fall between
+10 and 22. A roster of names is the evidence for an identification rather
+than reproduced prose, and the new entries are not outliers. Rewriting the
+house practice on the back of one pull request would have been the wrong
+way to settle it. It is a question for the project, not a fault in this
+work.
+
+## Checks
+
+`build.py` clean, and reproducible — rebuilding on the branch produced no
+diff, so the committed `site/` matched the data it came from.
+`check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py` reported its
+usual six pairs and all six were read: every one is two events rather than
+one. The 1997-98 designated driver pair is the clearest — Bill 97-3-F
+passing in November and the Herald's distribution notice in February, three
+months and two sources apart. None of the six was in this diff.
+
+## Where the archive stands
+
+61 years, 1,984 events, 60 people have been president.
+
+## Still open
+
+Everything from the previous entries stands. Two items move: the Melinda
+Manis lead on p. 364 of the 1979 volume is closed with a portrait, and the
+David Carwell lead on p. 73 is closed without one — the routine read both
+of the pages the index cites and found only text mentions of him as ASG
+activities vice president, no photograph, and said so rather than reaching
+for a face. That is the right outcome to record for a lead that fails.
+
+Still untouched: the twelve years with no photograph, the roughly 569
+officer and senate-officer names with no portrait, the 21 president records
+with no `also_regent` field, the 151 raw "SGA legislation: ..." citation
+labels, the sixteen people filed under both the executive and the senate,
+the credits citing a bare image file, the Salvador Leon and Salvador León
+question, and the 1972-73 Ed Jordan credit at exactly fifteen words. The
+previous entry's proposal that `check_duplicates.py` compare bodies as well
+as titles has not been built.
+
+New for the photographs routine, from this pass: the row-order method it
+used is good, and the sex-pattern cross-check makes it better, because it
+catches an off-by-one that a bare count cannot. Worth doing as a matter of
+course. And when a portrait comes from a page that names the person but not
+their office, the label should say so. The face and the post are two
+claims, and the second needs its own evidence or its own caveat.
