@@ -2989,6 +2989,20 @@ the right, one entry per photograph in reading order — turn any officer's
 name that appears there into a near-certain identification, without
 needing a caption that mentions their office at all.
 
+**Editor's correction, 29 August.** The scan leaf is not the printed page,
+and the gap between them is not a constant. Checked against the folio
+printed on each page: leaf n275 of the 1972 volume is page 272, n353 of
+1977 is 350, n375 of 1978 is 372, n386 of 1978 is 383 and n328 of 1981 is
+325 — a gap of three — but n421 of the 1973 volume is page **416**, a gap
+of five, because that volume's front matter is longer. This run cited
+Berman as p. 421, which is the leaf number, and the citation has been
+corrected. Read the folio off the page image, or off the volume's own
+index, before writing a page number into a label; do not carry an offset
+from one volume to another. The volume index is worth opening anyway: it
+is a complete name index, so it both settles the printed page and, where
+it lists one person under several pages, ties an officer named in the
+text to their portrait.
+
 Landed six portraits this way, all in years archive.org actually holds
 (1970-71 through 1980-81; it does not have 1981-82 or 1987-88, confirmed
 again this run — both `talisman1982west` and `talisman1988west` return a
@@ -2996,7 +3010,7 @@ again this run — both `talisman1982west` and `talisman1988west` return a
 items): **Joe Glasser** (1971-72 treasurer, pool-table officer photograph,
 1972 Talisman p. 272), **Louis Berman** (1972-73 sergeant-at-arms, via his
 separately-covered term as sophomore class president, "Berman led sophs
-during a quiet year," 1973 Talisman p. 421), **Gerard Faulk** (Judicial
+during a quiet year," 1973 Talisman p. 416), **Gerard Faulk** (Judicial
 Council chairman both 1975-76 and 1976-77, senior portrait, 1977 Talisman
 p. 350 — this closes an `src2` lead his 1975-76 record had carried
 unfulfilled since an earlier pass), **Gary Reed** (1977-78 treasurer,
