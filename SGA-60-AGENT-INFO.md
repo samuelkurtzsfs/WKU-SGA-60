@@ -3168,6 +3168,106 @@ gap is now nine names smaller, at roughly 575 unique names; Carol Gray,
 Gene Saunders, David Bass and Sharon May are confirmed-searched dead ends
 for now (see above) rather than unattempted.
 
+**A 29 August run (photograph agent, later): two more portraits, and the
+archive.org search-inside index confirmed patchy rather than reliable.**
+Re-checked first, as every run does: all four presidents named as this
+run's priority one (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan
+Gilley) already carried a portrait, and all 60 president/regent leader
+records still do. `research-photos` had a real merge base with `main` (a
+clean fast-forward, 5 commits, no conflicts) — the branch's prior tip, PR
+#267, was already merged.
+
+The archive.org fulltext search-inside endpoint
+(`fulltext/inside.php?item_id=...`), which the two 29 August runs above
+used for a dozen-plus successful lookups, answered "No hOCR or Abbyy file
+present" for every volume tried this run except the 1976 Talisman —
+1973, 1975, 1977, 1978, 1979, 1981 and 1987 were all unavailable by that
+route, tested directly rather than assumed. **This is not a fixed
+property of those volumes** — 1987 partially worked for a different pair
+of names on 29 August earlier the same day — so a future run should
+retry rather than skip a volume on one "No hOCR" response. Where
+search-inside was down, this run fell back to each volume's own printed
+name index, present as plain text in the `_djvu.txt` export (not rate
+limited): grep the index for `Surname, First Middle` and read off the
+page numbers printed there directly, then fetch the corresponding scan
+leaf with `BookReaderImages.php`. **The leaf-to-printed-page offset is
+not constant even within one volume** — it was leaf = page + 4 around
+p. 71-73 of the 1979 Talisman (a glossy, separately-numbered fashion
+insert) and leaf = page + 1 around p. 289-346 of the same book.
+
+**Both citation URLs this run shipped were one leaf out, and the editor
+fixed them on 29 August before merging.** The photographs themselves were
+correctly identified and the printed page numbers in the labels were
+right; it was the `archive.org/details/.../page/nNNN` links that were
+wrong, and a reader following either would have landed on the next page
+and found no such photograph. The Panhellenic photograph on p. 295 of the
+1976 Talisman is leaf **n298**, not n299 — n299 is p. 296, a page of
+cartoons — and the senior grid on p. 344 of the 1979 Talisman is leaf
+**n345**, not n346, n346 being p. 345. The lesson is narrower than "read
+the folio": the folio was read for the crop and not for the link, so the
+two were checked separately and only one was verified. **Fetch the leaf
+the URL you are about to commit actually points at, and read its printed
+folio off that image.** The true offsets were +3 in the 1976 volume
+(p. 295 = n298) and +1 in the 1979 one (p. 344 = n345); the links shipped
+assumed +4 and +2. Two volumes, two different offsets, neither of them
+the one carried over from a nearby citation — which is the whole reason
+the rule above exists.
+
+Landed two portraits this way. **Susan Hurley** (1975-76 co-chair, ASG
+Housing Committee) — 1976 Talisman p. 295, the Panhellenic Conference
+photograph, "(Front row) Barb Osborn, Charlotte Gilliam, Jan Guy, Tricia
+Faith. (Second row) Nancy Crumb, Donna Filburn, Becky Bauer, Brenda
+Stafford, Charlotte Hiler, Sherry Casbier. (Back row) Mary Reeder, Chanda
+Davis, Susan Hurley, Debbie Rowe and Marilyn York" — an outdoor photo,
+not a studio composite, but the back row is a distinctly separated
+standing group of exactly five, matching the five names one for one;
+Hurley is third. **Debbie Anderson** (1978-79 Judicial Council member) —
+1979 Talisman p. 344, the alphabetical senior portraits, "DEBBIE
+ANDERSON, public relations, Bowling Green," fourth of five in her row.
+
+Three names chased into this same 1979 volume and abandoned, worth
+recording so a future run does not redo the search: **David Carwell**
+and **David Young** are both quoted in the entertainment-committee story
+on p. 289 (the page the index pointed to for each) but neither appears
+in that page's one photograph, which shows three unnamed students at a
+desk. **Robert Earl Moore** and **Steve Wilson**'s index citations
+(p. 296, among others) land on a Young Democrats and a Pre-Law Club
+photo captioned only with bare initials — "B. Moore," "S. Wilson" — too
+weak on their own to confirm against an officer named in full elsewhere,
+so left alone rather than guess. **Melinda Manis**'s citation (p. 325)
+is a 60-plus-person Chi Omega composite, too crowded to place one face
+with confidence, the same caution recorded for the Associated Student
+Government 1980-81 group photo on 29 August above.
+
+**Two of those are not dead ends, and the reason is the same in both
+cases: the run stopped at the first page the index gave.** The 1979
+index reads "Manis, Melinda Susan 325, 364" and "Carwell, David Hargis
+73, 289", and only 325 and 289 were opened. Page 364 of that volume
+carries a clean alphabetical senior portrait, "MELINDA MANIS, elem. ed.,
+Marietta, Ga.," between Beverly J. Mainland and Alecia E. Marcum — the
+same senior-grid route that produced the Anderson portrait, and Manis is
+a 1978-79 Judicial Council alternate. Carwell's p. 73 was never looked
+at at all, and he is the year's activities vice president, a
+better-documented figure than either portrait landed this run. **A
+future photograph run should take both, and should read every page an
+index entry lists before writing a name off.** The 1976 volume makes the
+same point from the other side: Hurley's three citations were what
+confirmed her identity, not just her photograph.
+
+All new files verified as real JPEGs by magic bytes before committing.
+Both names checked against `data/years.json` for an exact string match.
+`build.py`, `check_data.py` and `check_duplicates.py` all pass clean (61
+years, 2019 events, 60 presidents; the same six known duplicate pairs,
+unchanged). Landed on `research-photos`; the prior rolling PR (#267) was
+already merged, so this run opened a fresh one, PR #271 — its body
+picked up the usual Vercel-bot "Generated by Claude Code" session-link
+line on creation, stripped via `update_pull_request` per
+`AGENT-LANDING.md`. The officer/senate-officer portrait gap is now
+roughly 573 unique names. `subscribe_pr_activity` reported the Claude
+GitHub App still isn't installed on this repository, so PR #271 will not
+wake a future session on its own — the same platform gap recorded
+throughout this file; check the PR directly rather than waiting on it.
+
 ## 9. Restarting a session
 
 ```bash
