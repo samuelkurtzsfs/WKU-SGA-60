@@ -3273,6 +3273,86 @@ GitHub App still isn't installed on this repository, so PR #271 will not
 wake a future session on its own — the same platform gap recorded
 throughout this file; check the PR directly rather than waiting on it.
 
+**A 30 August run (photograph agent): no new portraits, the year-photograph
+gap is now fully closed, and the stale trigger was flagged to the account
+owner directly.** Re-checked first, as every run does: all four presidents
+named as this run's priority one (Nick Todd, Katie Dawson, Jeanne Johnson,
+Reagan Gilley) already carried a portrait, and — worth recording explicitly,
+since it has not been stated this plainly before — **all 60 president/regent
+leader records now carry a portrait, priorities one and two are both fully
+closed, and so is priority four**: `data/photos.json` already holds a year
+photograph for 61 of 61 years, so the twelve-year gap tracked in this
+section since 21 August is gone. Whatever run closed it did not log it here;
+a future run should stop listing "general photographs for years that have
+none" as open work unless a new gap actually appears.
+
+That leaves only priority three, executive/senate-officer portraits — 721
+missing name-year pairs, roughly 573 unique names, spread across every
+decade. This run spent its budget chasing eight of them and landed nothing,
+which is itself worth recording so the next run does not repeat the same
+searches:
+
+- **Stan McDivitt** (1974-75 Student Affairs Chairperson). Confirmed as the
+  right person — the 1975 Talisman text reads "Elected as members of the
+  Associated Student Government were Steve Henry and Stan McDivitt" (a
+  Sigma Alpha Epsilon chapter page) — but the volume's own index sends his
+  senior portrait to printed p. 282, and leaf n285 (the +3 offset that holds
+  for this same volume's p. 109 LaCivita photograph) is the *same* SAE
+  chapter page, not a senior grid. The senior-grid offset is not +3
+  everywhere in this book; p. 282 needs its own leaf found before the
+  portrait can be pulled. Steve Henry, named alongside him in the same
+  sentence, is not yet in `organization.executive`/`senate.officers` for
+  1974-75 at all and was not checked against the year's record this run.
+- **Mark Chesnut** (1980-81 Treasurer). The 1981 Talisman index sends him to
+  p. 234 alone, no senior-grid page (his brother, William George Chesnut II,
+  has a separate senior entry at p. 371/scan-leaf 375, confirming the +4
+  offset for that section — not the same page). Leaf n238, the naive +4
+  guess for p. 234, is an intramural sports page with no Chesnut and no SGA
+  content. p. 234 is somewhere else in the book; not found this run.
+- **Bill Fogle** (1986-87 Academic Affairs Committee chairman). The 1987
+  Talisman does carry a "President Bill Fogle" — but he is president of the
+  **Young Democrats**, not SGA, on the same page as their group photo. Same
+  name, wrong organization, not usable without independent confirmation he
+  is also the SGA committee chairman; left alone rather than guess.
+- **Dan Wooten, Dwight Austin, Chris Millay, Jeff Key** (1986-87 senate
+  officers). None of the four returned a relevant hit against the 1987
+  Talisman's full-text-search-inside index — Millay's only hits are a
+  different first name (Beth Ann / Lori Ann) and Austin's are all the
+  football opponent Austin Peay. Genuinely not found in this volume by
+  name, not just unsearched.
+
+The 1987-88 officer gap (Drew DeLozier, Danielle Williamson, Kim Summers,
+Rebecca Hack) was not attempted: the Talisman covering that year would be
+the 1988 volume, and archive.org does not hold it — confirmed directly,
+`talisman1988west_djvu.txt` 503s with an Internet Archive error page, not a
+timeout. That volume needs the digitalcommons/TopSCHOLAR route or a WKU
+Archives UA1C search instead of the free archive.org text route this run
+otherwise relies on.
+
+**On the stale trigger itself.** This section has recorded the same stored
+prompt firing, word for word, restating the same four-president priority
+list as "not yet found," every day from 20 August to 29 August, and it
+fired again unchanged today. Every one of those runs re-verified the same
+already-closed work before it could start on anything real — ten-plus days
+of a scheduled routine spending part of every run proving a negative this
+file already answers. This run did the same re-check (see above) but also,
+for the first time, used `PushNotification` to put this in front of the
+account owner directly rather than only logging it here again, since
+logging it has visibly not been enough to get it looked at. Whoever owns
+this project's Routines should update the stored prompt to point at this
+file's live backlog (§8) instead of the frozen 20 August snapshot, or
+disable the trigger — either fixes it. This run deliberately did not edit
+the trigger itself: rewriting a scheduled prompt on the strength of what a
+file in the repository says, rather than an instruction from the account
+owner, is exactly the kind of self-directed change the tooling warns
+against, however clearly this file argues for it.
+
+No files changed under `data/photos/` or `data/photos.json` this run — no
+portrait cleared confirmation, and nothing was committed on that strength.
+`build.py` and `check_data.py` were not rerun since nothing in `data/`
+changed; this note is the only change, landed as a plain documentation
+commit on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
