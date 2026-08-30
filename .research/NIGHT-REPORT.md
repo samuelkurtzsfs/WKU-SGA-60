@@ -1,3 +1,167 @@
+# 30 August 2026 — editor's pass, morning: an empty queue, and the orphan branches checked event by event
+
+Nothing was open. No pull request on the repository was in an open state, so
+nothing was merged, nothing was cut, and nothing was pushed to a research
+branch. `main` stands where last night's pass left it, at 9626c3a.
+
+The state of the published archive was confirmed before anything else.
+`build.py` completed cleanly and, rebuilt on a clean checkout, produced no
+diff against the committed `site/` — so what is on the live site is what the
+data says. `check_data.py` exits 0. `check_contrib.py` exits 0, all of its
+contributor-layer and drop-box cases passing. `check_duplicates.py` reports
+the same six pairs it has reported for days; all six were read again and all
+six are two events rather than one, on the same reasoning recorded on
+29 August. None is new.
+
+**61 years, 1,984 events, 60 people have been president.**
+
+## The orphan branches hold nothing, and this pass proves it a harder way
+
+Previous passes settled that the `research-*` branches with no merge base
+against `main` are superseded snapshots, on the grounds that merging one would
+delete more than it added. That is true and it still is. But it is a
+file-level argument, and a file that is a net deletion can still contain a
+paragraph nothing else has. The question those passes answered was "is this
+branch mergeable", and the question the brief actually asks is "is any
+research stranded here". Those are not the same question.
+
+So this pass compared them event by event instead: every event on every
+orphan branch, keyed on its year, its date and its title, against every event
+on `main`.
+
+The three recent orphans — `research-backlog`, `research-senate` and
+`research-profiles` — differ from `main` by 58 events each, and all 58 are
+title-only variants sitting at a year and date `main` already occupies. They
+are pre-deduplication copy, from before the 29 August merge of thirty-five
+doubled events. There is nothing in them.
+
+The six 4 August snapshots each showed around 125 events not on `main` by
+title. All but a handful are events `main` has since re-filed into the correct
+academic year, and the re-filing is the reason they no longer match: the
+branches still carry Sandra Norfleet under 1982-83, which the 18 August
+correction settled as 1981-82, and still carry Doug Alexander's March 1970
+vice-presidential win under 1970-71 rather than 1969-70. Merging any of them
+would walk settled facts backwards.
+
+That left seven events, on seven dates, with nothing on `main` at the same
+date at all. Each was chased down individually, and every one of the seven is
+already published under a different date:
+
+- The disputed 9-8 speaker of the senate vote is on `main` at 2004-04-13.
+- Hannah Garland's tabled plus-minus resolution is at 2013-02-19.
+- The predatory-loan resolution stalling 17-16 is at 2021-11-18.
+- The committee chairs and the provost on the Quality Enhancement Plan are at
+  2022-09-07.
+- The ISEC meeting is at 2021-11-10, written up as the job-fair scholarship
+  bill.
+- Mason Stevenson's letter is at 2006-03-02, under the same title.
+- The I-A football resolution is at 2006-10-31, with the referendum behind it
+  at 2006-10-25.
+
+In every case `main`'s version is the better one. The branches dated these
+events to the day the *Herald* printed them; `main` dates them to the day the
+meeting happened, which is a day or two earlier and is the date that belongs
+in a history of the organisation. The clearest case is the speaker vote:
+the branch cites the *Herald* of 15 April 2004, and `main` cites SGA's own
+minutes of 13 April, mirrors the PDF, and says in the entry itself that the
+report ran two days after the vote.
+
+The conclusion the earlier passes reached was right. It is now right on
+evidence that would have caught a counter-example, which the file-level
+comparison would not have. Nothing is stranded. Recorded so that a future
+pass does not have to walk this again — and so that a future pass does not
+read a large branch-ahead count, or a list of unmatched titles, as research
+worth rescuing. Both are artefacts.
+
+## Six published claims opened against their sources
+
+With no queue to review, the sample was taken from what is already on the
+site, on the principle that a claim on the live site is worth as much
+checking as a claim proposed for it. Six entries were read against the
+articles behind them, fetched in full rather than from the local index.
+
+All six hold. Two are worth naming because they show the archive catching
+something:
+
+- The 2022-23 committee chairs entry says six chairs were installed. The
+  draft of the same event on the 4 August branch said five, and the article
+  names six. The published version is the correct one.
+- The 2012-13 plus-minus entry calls Hannah Garland the Academic Affairs
+  committee chair and reports Cory Dodds on putting the question to a spring
+  ballot. Neither claim is in the *Herald* report of 21 February, which is
+  the obvious source and calls her only the resolution's author. Both are in
+  the follow-up of 26 February, which is the article the entry actually
+  cites. The entry is sourced correctly and the citation is the right one of
+  the two.
+
+The second of those is the trap the brief names — a bill's author recorded as
+an officeholder — and the archive does not fall into it. The title is real and
+it is cited to the article that carries it.
+
+One small imprecision, not worth a correction on its own but recorded: that
+same entry places the tabling "at the Tuesday meeting", and the 26 February
+article it cites says only "its last meeting". The Tuesday is established by
+the 21 February article, which the entry does not cite. The date on the entry,
+2013-02-19, is correct — 19 February 2013 was a Tuesday — but the source for
+it is a second article that is not named.
+
+## The research pipeline is down to one routine, and has been for six days
+
+Recorded on 28 August and not since acted on, so it is restated here with the
+current figures rather than left to age in the middle of the file.
+
+`research-photos` is healthy and has run several times a day; every merge for
+the last three days has come from it. The other three have not committed since
+25 August. Two have documented reasons: `research-backlog`'s last commit
+disabled its own trigger deliberately, and `research-senate`'s records a fifth
+consecutive empty pass, which is a routine reporting that its leads are
+exhausted rather than a routine failing. `research-profiles` stopped on
+24 August with nothing in the record explaining why.
+
+The effect is visible in the count. The archive's event total has not risen
+since 26 August. It has only fallen, from 2,019 to 1,984, and that fall is the
+thirty-five duplicates merged on 29 August, which is the record getting more
+accurate rather than smaller. No new history has been added in four days. The
+portraits are real work and they are the project's most wanted material, but
+photographs are all that is arriving.
+
+Whether to re-scope or restart a routine is the owner's call, not the editor's.
+It is flagged rather than acted on.
+
+## Tooling notes
+
+`web.archive.org` is refused by this environment's egress policy. Two entries
+on the orphan branches cite Wayback captures and could not have been checked
+against them had they needed checking; both turned out to be published already
+from better sources on TopSCHOLAR, so nothing was lost this pass. A future run
+that needs the Wayback Machine should know it cannot reach it from here.
+
+`wkuherald.com` refuses the fetch tool with a 403 but serves ordinary requests
+normally. Every *Herald* article in this pass was read that way. The 403 is not
+the site being down and is not a reason to write "no source found".
+
+`gh` is still not installed, as the 29 August addendum records. The brief's
+opening command fails with `command not found` rather than the 403 it is
+written to detect, which would drop a run into review-only mode while GitHub
+was fully reachable. It was reachable this pass: `git push --dry-run` and the
+GitHub tools both worked.
+
+## Still open
+
+Everything from the previous entries stands, and none of it moved tonight: the
+twelve years with no photograph, the roughly 569 officer and senate-officer
+names with no portrait, the 21 president records with no `also_regent` field,
+the 151 raw "SGA legislation: ..." citation labels, the sixteen people filed
+under both the executive and the senate, the credits citing a bare image file,
+the Salvador Leon and Salvador León question, and the 1972-73 Ed Jordan credit
+at exactly fifteen words. `scripts/photo_gap.py` is still unwritten, and the
+proposal that `check_duplicates.py` compare bodies as well as titles has still
+not been built.
+
+The standing brief still sends each pass after pull requests #6, #7 and #8,
+closed unmerged on 18 August, and still describes four running routines when
+one is running.
+
 # 30 August 2026 — editor's pass: a portrait kept, a portrait withdrawn
 
 One pull request open, #280, the photographs routine's rolling branch. It
