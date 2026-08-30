@@ -1,3 +1,121 @@
+# 30 August 2026 — editor's pass: an empty queue, and two concert citations that pointed at the announcement
+
+Nothing was open to review. The last research merge was the photographs run's
+#275, late on 29 August, and its night report #276 and the addendum #277 both
+merged behind it. No routine has opened anything since, so this pass went to
+the published record and audited a class of claim rather than a branch.
+
+## Nothing is stranded on a branch
+
+Checked first, because a routine that pushes without opening a pull request
+looks exactly like a quiet night. `research-photos` and `research-editor-0826-late`
+are fully contained in `main`. The other eleven `research-*` and `photo-*`
+branches all report commits ahead of main, but that is an artefact of the
+28 August history rewrite, which severed their merge bases. Compared by file
+content instead, every one of them is *behind*: merging any would delete
+photographs and years.json content that main already carries. They hold nothing
+to rescue. The three branches the standing brief names as stale — the 4 August
+snapshots behind the old #6, #7 and #8 — are among them, and their pull
+requests are long since closed.
+
+## What was audited
+
+The advance-notice trap, systematically, across all 1,984 published events.
+An announcement printed before an event proves what was booked, never how the
+night went, so the test was mechanical: parse the date out of every citation
+label, compare it with the event's own date, and read every entry whose source
+went to press before the thing it describes happened.
+
+Forty-four events are dated after the issue they cite. Forty-two of them handle
+it correctly and needed nothing: they say plainly that the Herald *announced*
+the event, attribute the outcome to the following week's issue or to the
+Talisman, and several state outright that the report predates the thing
+described. The routines have been disciplined about this.
+
+## What was corrected
+
+Two entries carried the outcome but cited only the announcement.
+
+**1975-76, Natalie Cole in Van Meter, 10 December 1975.** The body gives an
+estimated crowd of 325 and four songs; the citation was the Herald of 9 December,
+printed the day before, which announced the concert and could not have carried
+either fact. The facts themselves are sound — the 1976 Talisman puts Cole in
+Van Meter on 10 December before an estimated crowd of 325 and names "Killing Me
+Softly With His Song", "Honky Tonk Women", "You Are the Sunshine of My Life"
+and the chart hit "This Will Be". Read against the volume's own full text, not
+an index. Rescued rather than cut: the citation now leads with the Talisman and
+names the Herald announcement after it.
+
+**1976-77, Jimmy Buffett and the Coral Reefer Band, 27 April 1977.** The same
+fault, with a wider gap. The body has three encores after a ninety-minute set,
+a small crowd and a concert that lost money; the citation was the Herald of
+25 March, thirty-three days early, announcing that the concert was set. The
+1977 Talisman carries all of it — the lost money, the small cult that brought
+him back for three encores after his 90 minute set, the April 27 date, and the
+album titles. Citation corrected the same way.
+
+Both now follow the convention already used elsewhere in the record, at
+1974-75 for Pure Prairie League and 1973-74 for the Muskie lecture: the source
+that carries the substance first, the announcement named after it. Neither
+entry's text changed, because neither entry was wrong. The link under it was.
+
+## Traps, checked
+
+Committee chairs recorded as officers, surname-only matches, changed surnames
+against `data/name-aliases.json`, April results filed into the wrong academic
+year, anything touching the settled facts in section 7: none of these arise in
+a citation change that alters no name, no year and no claim. No contributor
+edits were in scope this pass.
+
+## Recorded, not acted on
+
+Forty-one published events credit the Talisman somewhere in the body while
+citing something else. Most are sound — the Herald carries the fact and the
+Talisman corroborates it — and the two above were the cases where the
+substance lived only in the yearbook. The list is worth a slower pass than
+this one, but it is not urgent and nothing in it is a false claim.
+
+The 1976 and 1977 Talisman full texts on archive.org read as plain text in a
+single request and are not rate limited. For checking a concert's crowd, its
+takings or its date they are faster and better evidence than the Herald index,
+and this pass cost TopSCHOLAR nothing at all.
+
+## Checks
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0. `check_duplicates.py`
+printed six pairs and all six are genuinely separate events, judged and left
+alone: the 1997-98 designated driver cards are the bill's first reading and the
+Herald's notice of distribution three months later; the 1991-92 advisory
+committee pair is a bill introduced and the same bill failing after amendment
+nine days on; the 1971-72 pair is the Civil Liberties Union planning action and
+Associated Students endorsing it a month later; the 2003-04 pair is SGA voicing
+concern in September and passing legislation in October; and the three 1991-92
+bills sharing 1 September are three different bills, which is exactly the case
+the rule says to leave standing.
+
+## Where the archive stands
+
+61 years, 1,984 events, 60 people have been president, 297 documents, 1,111
+legislation files.
+
+## Still open
+
+Everything from the previous entries stands, less nothing — this pass closed no
+open item and opened none. The forty-one Talisman-credited citations above are
+new to the list. Still untouched: the twelve years with no photograph, the
+roughly 569 officer and senate-officer names with no portrait, the 21 president
+records with no `also_regent` field, the 151 raw "SGA legislation: ..." citation
+labels, the sixteen people filed under both the executive and the senate, the
+credits citing a bare image file, the Salvador Leon and Salvador León question,
+and the 1972-73 Ed Jordan credit at exactly fifteen words. The proposal that
+`check_duplicates.py` compare bodies as well as titles has still not been built.
+
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` were again unset this pass, so the
+review-only fallback route remains untested. It cost nothing: GitHub was
+reachable by `git push --dry-run` and the GitHub tools, and this work merged the
+ordinary way. `gh` is still not installed, so the brief's opening probe still
+fails with `command not found` rather than the 403 it is written to detect.
+
 # 29 August 2026 — editor's pass, midday: an empty queue, and the nine new portraits taken back to the volumes
 
 Nothing was open to review. The photographs run's #267 and the night report #268
