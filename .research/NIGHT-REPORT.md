@@ -10942,3 +10942,106 @@ so the brief's opening probe still fails with `command not found` rather
 than the 403 it is written to detect. Git push and the GitHub tools both
 work, which is the route `AGENT-LANDING.md` prescribes and the one this pass
 used.
+
+# 30 August 2026 — editor's pass, evening: one portrait merged, its citation pointing at the facing page
+
+One pull request open, #285, the rolling photograph hunt. It carried a single
+published claim, so it was checked whole rather than sampled. Merged after one
+correction.
+
+## What was merged
+
+A portrait of **Paul Nation**, administrative vice-president of Associated
+Student Government in 1974-75, from the 1975 *Talisman*.
+
+The identification is the strongest kind this archive gets. The photograph
+carries its own evidence: a desk nameplate reading PAUL NATION sits in the
+frame, beside the typewriter and the papers. The caption on the spread names
+him and gives his office. President Jeff Consolo's own list of the officers he
+served with names Paul Nation administrative vice-president, and a later page
+of the same volume says he served in that office. The volume's index reads
+"Nation, Paul Marshall 109, 284, 390". The office already stood in
+`years.json` from an earlier pass, so nothing new was claimed about him — only
+a face added to a man already on the record.
+
+## What was corrected
+
+**The citation opened the wrong page, for the third pass running.**
+
+The label read page 108. The URL read leaf `n112`. Both page images were
+fetched and read. Leaf `n111` is printed page 108, headed "ASG....Let's take
+roll", and the desk photograph sits at the foot of its right-hand column: that
+is the frame this crop came from. Leaf `n112` is printed page 109. A reader
+following the link would have arrived at a page that does not contain the
+photograph. Repointed to `n111`.
+
+The page number in the label was right and the link was wrong, which is the
+same shape as the fourteen found this midday and the two found on 29 August.
+The midday entry set out how to avoid it — open the leaf and read the printed
+page number off the scan. That instruction has not reached the routine. It is
+written into a night report the routine does not read. Somewhere it will be
+read is `CLAUDE.md`, and a later pass should consider putting it there, in the
+pictures section, rather than leaving it in the history for a third time.
+
+**The label also read the photograph and its caption as one thing.** They are
+on different pages. The photograph is on 108; the caption block describing it
+is on 109, printed under a different picture entirely — a pair of feet propped
+on a desk. The label said the photograph was "individually captioned", which
+reads as though the caption sits beneath it, and on this spread that is exactly
+the misreading that produced the LaCivita withdrawal on 25 August. The label
+now says where each sits. Checking it also confirmed the settled LaCivita fact
+independently: page 109 does carry the brick-wall photograph and the caption
+naming him "(right)" with treasurer Ricky Johnson.
+
+**The quotation ran over the limit.** The label reproduced the caption in full,
+about forty words. The rule is under fifteen, once per source. Cut to ten, with
+the rest kept as paraphrase, losing no fact.
+
+Also restored the trailing newline the run had dropped from `photos.json`.
+
+## Traps, checked
+
+No advance notice was relied on; nothing here is an event claim. No committee
+chair was promoted to officer — Nation's office is confirmed by the president's
+own roster and matches what `years.json` already held. Nobody was matched by
+surname alone: the full name appears in the caption, in the index and on the
+nameplate. No alias collision; `name-aliases.json` holds nothing under Nation.
+No election result moved year. Nothing about a living person beyond the office
+he held and the photograph. No contributor edit in the diff. No tool
+attribution in either commit.
+
+The run's negative findings — McDivitt, Pulman, Saunders, the 1977-78 quartet,
+Young and Carwell, Chesnut — publish nothing and were left alone. Declining to
+use a group photograph that pins no face to a name is the right call and should
+keep being made.
+
+## Checks
+
+`build.py` clean at 61 years and 297 documents. `check_data.py` exit 0 at 61
+years, 1,984 events and 60 people who have been president. `check_contrib.py`
+exit 0, every case passing. `check_duplicates.py` reports the same six pairs as
+the last five passes, none of them from this diff. All six were read again and
+all six are genuinely separate events: a bill funding the designated driver
+cards and their distribution three months later; a bill introduced and the same
+bill defeated after amendment; a lawsuit planned in February and endorsed in
+March; concern voiced in September and legislation passed in October; and three
+distinct bills filed on the same day in September 1991. Nothing merged.
+
+## Still open
+
+PRs #6, #7 and #8, which the standing brief still describes as stale and open,
+were closed on 18 August. The brief has been wrong about them for a fortnight
+and should be updated.
+
+The twelve-year year-photograph gap, 1993-94 through 2009-10, is untouched
+again: the photograph routine reported `digitalcommons.wku.edu` returning
+Cloudflare's block page for its whole session, before and after the full
+backoff. That is now the third consecutive run blocked there.
+
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` remain unset in this routine's
+environment, so the drop box is unavailable. `gh` is still not installed, so
+the brief's opening probe fails with `command not found` rather than the 403 it
+is written to detect; a reader following the brief literally would conclude the
+gate was down and drop to review-only for nothing. Git push and the GitHub
+tools both work, which is the route `AGENT-LANDING.md` prescribes and the one
+this pass used.
