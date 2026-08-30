@@ -11229,3 +11229,104 @@ since `CLAUDE.md` is the editorial law and not the editor's to rewrite unasked.
 
 `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset in this routine's environment,
 so the drop box is unavailable. It was not needed.
+
+# 30 August 2026 — editor's pass, late: a closed gap that was not closed
+
+One pull request open, #289 from `research-photos`, a documentation-only run
+adding eighty lines to `SGA-60-AGENT-INFO.md`. Nothing under `data/`. That file
+is not referenced by `build.py`, so nothing in it reaches the public site; the
+exposure here was to the research routines that read it, and one paragraph in it
+would have cost them real work.
+
+## What was verified
+
+Twelve claims checked, which is more than the eight the pass calls for, because
+the note is almost entirely a record of dead ends and a dead end is only useful
+if it is accurately described. Eleven held.
+
+Stan McDivitt is the 1974-75 Student Affairs Chairperson in the record. The 1975
+*Talisman* quote is verbatim — line 22924 of `talisman1975west_djvu.txt` carries
+it exactly as the note gives it — and the volume's index does send him to p. 282.
+Steve Henry, named in the same sentence, is genuinely absent from 1974-75
+`organization`, as the note says; that is a lead for a later run. The 1981 index
+gives "Chesnut, Mark Cameron 234", one page and no senior grid. Wooten, Austin,
+Millay and Key are all 1986-87 senate officers and DeLozier, Williamson, Summers
+and Hack all 1987-88, every title matching. `talisman1988west_djvu.txt` returns
+503 with an Internet Archive error page, not a timeout, exactly as reported.
+
+The best thing in the run was a refusal. The 1987 *Talisman* does carry a
+"President Bill Fogle", four lines above a sentence about the Young Democrats.
+Same name, wrong organization. The routine found the photograph, saw what it
+actually was and left it, which is trap 4 caught before it landed rather than
+after.
+
+## What was corrected
+
+The note declared priority four closed: a year photograph for 61 of 61 years,
+the twelve-year gap gone, and future runs told to stop listing year photographs
+as open work.
+
+The `years` list in `photos.json` holds 61 entries covering 49 distinct years.
+Nine years hold more than one photograph — 2026-27, 1971-72 and 2004-05 hold
+three each, and 1970-71, 1972-73, 1977-78, 1978-79, 1985-86 and 1986-87 hold
+two. Twelve years still have none: 1993-94 through 1997-98, 2000-01, 2002-03,
+2003-04, 2005-06, 2006-07, 2008-09, 2009-10. A row count had been matched
+against a year count.
+
+It is the same twelve-year gap the previous entry in this file records as
+untouched again, which is how a wrong count gets caught: the archive had already
+written down the true answer.
+
+Rewritten rather than cut. Everything around it is sound, and the note now says
+plainly that priority four is open, that it is a mid-1990s and 2000s gap, and
+that coverage is counted in distinct years and never in rows. Two smaller
+figures went with it — the officer-portrait backlog is 714 name-year pairs over
+568 unique names, not 721 over 573, and portrait coverage of leader records is
+73 records over 66 unique names, which the note had run together with the 60
+presidents `check_data.py` counts.
+
+## Traps, checked
+
+No new claim about any person, living or otherwise, and nothing near a settled
+fact. No advance notice was written up as a report; the one advance notice in
+range was already handled correctly, see below. No surname match, no changed
+surname, no election in the wrong academic year, no committee chair promoted to
+officer — the note's whole subject is committee chairs and it names every one of
+them as what they are. No contributor edit in scope.
+
+## Checks
+
+`build.py` clean: 61 year pages, 297 documents, 1111 legislation files.
+`check_data.py` exit 0, 61 years, 1980 events, 60 presidents. `check_contrib.py`
+exit 0. `check_duplicates.py` reports six pairs, all pre-existing on main and all
+genuinely distinct: three bills introduced on 1 September 1991, and three
+introduction-and-outcome pairs weeks apart. The 1997-98 pair was read in full — a
+November 1997 bill funding designated driver cards, and a February 1998 *Herald*
+notice that distribution began the next day. Separately sourced, and the February
+entry states on its face that the archive holds only a contents listing, which is
+the advance-notice rule applied correctly rather than a duplicate.
+
+## Still open
+
+The twelve-year year-photograph gap, 1993-94 through 2009-10, is open and now
+correctly recorded as open in the handoff file. Officer portraits stand at 714
+missing pairs over 568 names.
+
+The pipeline is still one routine. `research-photos` has produced every merge for
+five days; `research-backlog`, `research-senate` and `research-profiles` have not
+committed since 24-25 August, and their branches now sit behind main — a merge of
+any of them would delete photographs main already holds. No new history has been
+added to the archive in six days. That remains the owner's call.
+
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset in this routine's environment,
+so the drop box is unavailable. Push access was working, so it was not needed.
+
+One thing this pass could not fix. The attribution line `AGENT-LANDING.md`
+warns about was appended to both the pull request body and the review comment
+on #289 after they were posted. It was stripped from the pull request body,
+which is what that file specifically calls out. It could not be stripped from
+the comment: editing an existing comment needs the REST API directly, and raw
+`api.github.com` returns the platform gate's 403 in this environment even
+though the GitHub tools and `git push` both work. The comment on #289
+therefore still carries one. Anyone with a browser can delete that line in
+about ten seconds; nothing else in this pass carries it, and no commit does.
