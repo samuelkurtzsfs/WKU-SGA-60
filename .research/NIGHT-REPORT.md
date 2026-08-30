@@ -10790,3 +10790,27 @@ remains untested and unavailable; `gh` is still not installed, so the
 brief's opening probe still fails with `command not found` rather than the
 403 it is written to detect. Both were reported on 29 August and neither has
 changed.
+
+## Addendum: the attribution rule and the harness disagree about comments
+
+Recorded because it is the editor's call to make and the owner may want to
+make it differently.
+
+`AGENT-LANDING.md` says a pull request body or comment is visible text
+published under the project's name, and that any line naming the tooling
+should be stripped from it. The editor routine's own harness requires the
+opposite: an attribution footer on every comment it posts, so that a reader
+can tell the review was machine-written before acting on it.
+
+Tonight's review comment on #283 carries the footer. The reasoning: the
+repository and the generated site are what CLAUDE.md's rule protects, and
+they are clean — the commit is authored `SGA 60`, no trailer, no session
+link, nothing in `data/` or `site/` names a tool. A pull request comment is
+working machinery rather than the published archive, and a human being asked
+to trust a review that withdrew a portrait is better served knowing what
+wrote it.
+
+That is a judgement, not a settled fact. If the owner wants the footer gone
+from comments too, the rule to change is the harness's, not this file's, and
+it should be said plainly in the standing brief so every routine reads it
+the same way.
