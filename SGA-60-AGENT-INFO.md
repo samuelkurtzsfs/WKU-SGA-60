@@ -16,6 +16,11 @@ the 60th anniversary. Static site, pure Python, no dependencies at build time.
 - **Repo:** `samuelkurtzsfs/WKU-SGA-60`, branch `main`. Local: `/Users/samkurtz/Downloads/sga60`.
 - **Deploy:** Vercel, git-connected, builds on push with `python3 scripts/build.py`.
   Do **not** drag-and-drop: the built site exceeds Hobby's 100MB upload limit.
+- **Live site: https://sga60.vercel.app** — anything merged to `main` is published
+  there within a minute or two. Note it is *not* `wku-sga-60.vercel.app`, the name
+  the Vercel project and the pull request preview URLs suggest; that returns 404.
+  Confirmed 30 August 2026. Every merge here is a publication, so it is worth
+  fetching a page off this domain afterwards to check the change actually landed.
 - **Edit `data/`, never `site/`.** `site/` is generated. Run `python3 scripts/build.py`
   after every change.
 

@@ -1,3 +1,151 @@
+# 30 August 2026 — editor's pass: a portrait kept, a portrait withdrawn
+
+One pull request open, #280, the photographs routine's rolling branch. It
+carried two new officer portraits. Two claims is fewer than the eight a spot
+check calls for, so both were opened against their sources rather than sampled.
+One held and is now on the site. One did not and was cut before the merge.
+
+**Julie Mishchuk, Speaker of the Senate 2022-23, stands.** The Herald article
+of 17 February 2023 was fetched and the photograph traced back to its own file
+on the Herald's server, so the committed portrait is that frame and not a
+lookalike of it. The caption names the person, the office and the occasion, and
+one person is in the frame. The name matches `years.json` exactly and
+`name-aliases.json` holds nothing that would make this a second record for
+someone already on file.
+
+Its note needed one correction, and the correction improves the record rather
+than weakening it. The note said the article's caption spells the surname
+"Mischuck"/"Mischuk" and implied the archive's "Mishchuk" rested on Senate
+minutes alone. Counted in the fetched page: "Mishchuk" 28 times, "Mischuck"
+twice, "Mischuk" never. The two photograph captions are the only places the
+Herald departs from our spelling; the article's own text agrees with us
+throughout. That is better evidence than the note claimed to have, and the note
+now says so.
+
+**Annalise Finch, Executive Vice President 2023-24, was withdrawn**, and the
+image file removed from `data/photos/` and `site/photos/`.
+
+The note claimed the WKU News article "names exactly three people sworn in at
+the podium pictured." It does not. The article reports that the executive
+council was sworn in and then names roughly fifteen more people elected
+alongside the ticket, seven of them women — Bodemann, Wright, Vincent, Evans,
+Distler, Payne, Duggins. So "the only woman named and the only woman pictured"
+is not true of the source, and the elimination the identification rested on
+does not close.
+
+Underneath that, the photograph carries no caption at all: `alt=""`, no
+figcaption, no credit, nobody named anywhere near it. A captioned alternative
+was looked for before cutting — the Herald's own coverage of the same election,
+19 April 2023, confirms the three ran as one unopposed ticket but carries no
+photograph, and nothing else from that week names her beside a face.
+
+There is a real circumstantial case, and it is worth writing down so the next
+run does not mistake this for a thin lead. The left-hand figure is a good match
+for the Salvador León portrait already in the archive, which does have a naming
+caption; the article's subject is the executive council; the three ran together.
+But that is an inference about who stands next to whom, not a source naming a
+face, and the rule here is a hard bar rather than a confidence threshold: never
+use a photo whose subject cannot be confirmed from caption or context, because a
+misidentified face is worse than no face. She is also a living person, and this
+would have published her name under an uncaptioned photograph on the strength of
+a claim the source contradicts.
+
+Provenance was not the problem, and recording that saves the next run a check:
+the committed file is byte-identical to the article's own og:image at
+`img_news/social_cover_images/11290.jpg`. Right file, right place, no caption.
+What would land it is a captioned Herald or WKU News photograph, a Talisman
+page, or a WKU gallery item naming her beside the image. The elimination
+argument will not, however it is worded.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six pairs already standing on `main` —
+the 1997-98 designated-driver items, the 1991-92 regent-advisory-committee bill
+and its failure, the 1971-72 KCLU pair, the 2003-04 plus/minus pair and the
+three same-day 1991-09-01 bills. Read and judged again this pass: all genuinely
+separate events, none touched by this diff. The Vercel preview went green on the
+corrected head before the merge.
+
+61 years, 1,984 events, 60 people have been president.
+
+The traps checklist found nothing else. No events were added, so no advance
+notice could be written up as a report and no April result could be filed into
+the wrong academic year. No committee chair recorded as an officer, no bill
+author recorded as a member, no surname-only match, no changed-surname
+duplicate, nothing touching the settled facts.
+
+## The standing brief is out of date in two places
+
+Worth correcting where the next editor run will read it, because both cost time
+tonight.
+
+The brief names three pull requests — #6 photographs, #7 the 1980s, #8 the
+2020s — as open since 4 August and asks for them to be merged forward or closed.
+All three were closed unmerged on **18 August**, twelve days ago. Checked
+directly rather than inferred from the open list. There is nothing stale to
+rescue; the photographs routine has since opened #280 against the same branch
+name, which is what this pass reviewed.
+
+The brief's opening probe is still `gh auth setup-git && gh pr list`, and `gh`
+is still not installed in these containers, so it fails with `command not found`
+rather than the 403 the brief is written to detect. A run that reads that as the
+platform gate drops into review-only mode while GitHub is fully reachable — the
+opposite of what the brief intends. The previous pass recorded this on 30 August
+and it has not been changed. The working probe is `git push --dry-run` plus the
+GitHub tools, as `AGENT-LANDING.md` says. Tonight both worked first try.
+
+## The production domain is sga60.vercel.app, and tonight's merge is live on it
+
+The previous pass recorded that the production domain appears nowhere in the
+repository, so no run could confirm that what it merged actually reached the
+public site. Found and verified tonight, so it need not be rediscovered:
+**https://sga60.vercel.app**. `wku-sga-60.vercel.app`, the name the Vercel
+project and the preview URLs suggest, returns 404; `sga60.vercel.app` serves
+the archive, title and all.
+
+Checked the merge against it directly rather than trusting the deploy. The
+Mishchuk portrait is live at `/photos/2022-23-julie-mishchuk.jpg`. The withdrawn
+Finch portrait returns **404** there, and her officer page renders with no
+portrait reference in it. So the cut published as intended, and did not merely
+leave the file orphaned in the tree.
+
+Worth writing into `SGA-60-AGENT-INFO.md` §1 alongside the deploy notes, where a
+run will find it before it needs it. Every merge here is a publication, and
+until tonight there was no way to check the publication happened.
+
+## The other research-* branches are still orphans, and none is a review target
+
+Checked while the queue was empty, because the brief asks the editor to rescue
+stale research branches and it is worth knowing there is none to rescue.
+`research-senate`, `research-backlog`, `research-profiles`, `research-2020s`,
+`research-1980s` and `research-editor-0823-seventh` all return `NONE` from
+`git merge-base` against `main`. They are the superseded snapshots
+`AGENT-LANDING.md` warns about, not forks of the current history, and the
+content diff shows it plainly — `research-2020s` differs from `main` by some
+303,000 deletions, which is main's own material the branch never had. Merging
+any of them would delete the archive rather than add to it.
+
+None of them has an open pull request, so none was in tonight's queue, and none
+was touched. Recorded only so a future run does not read a large branch-ahead
+count as stranded research. `research-photos`, the one branch the routines are
+actually feeding, cuts from current `main` and merged normally.
+
+## The verification record went in the body, not a comment
+
+The previous pass left this open — a comment cannot be stripped of its
+attribution line, a body can, and it asked whether the verification summary
+should move to the body and these reports. Taking that decision this pass, since
+the alternative is knowingly publishing under the project's name a line the
+project's own rules forbid. The full verification record for #280 is in the
+pull request body, which was rewritten and is clean, and repeated here. No
+comment was posted.
+
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset in this routine's
+environment, so review-only mode still has no drop box to land in and route
+three, the run report, remains the only fallback. Unchanged from the previous
+pass, and still worth either setting or writing plainly into the brief.
+
 # 30 August 2026 — addendum: the attribution line can be stripped from a pull request body but not from a comment
 
 Recorded after the merge, because it is a rule this repository states plainly
