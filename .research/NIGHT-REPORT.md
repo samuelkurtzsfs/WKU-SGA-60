@@ -11320,3 +11320,13 @@ added to the archive in six days. That remains the owner's call.
 
 `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset in this routine's environment,
 so the drop box is unavailable. Push access was working, so it was not needed.
+
+One thing this pass could not fix. The attribution line `AGENT-LANDING.md`
+warns about was appended to both the pull request body and the review comment
+on #289 after they were posted. It was stripped from the pull request body,
+which is what that file specifically calls out. It could not be stripped from
+the comment: editing an existing comment needs the REST API directly, and raw
+`api.github.com` returns the platform gate's 403 in this environment even
+though the GitHub tools and `git push` both work. The comment on #289
+therefore still carries one. Anyone with a browser can delete that line in
+about ten seconds; nothing else in this pass carries it, and no commit does.
