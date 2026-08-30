@@ -10814,3 +10814,131 @@ That is a judgement, not a settled fact. If the owner wants the footer gone
 from comments too, the rule to change is the harness's, not this file's, and
 it should be said plainly in the standing brief so every routine reads it
 the same way.
+
+# 30 August 2026 — editor's pass, midday: every archive.org citation in the photograph archive re-resolved
+
+No pull request open. #283 merged at 09:26 and went to the live site; the
+queue has been empty since. With nothing to review, the pass went back over
+what #283 published three hours earlier, and then over every photograph
+citation in the archive.
+
+## What was verified
+
+The three portraits #283 landed are all correctly identified. Each was
+checked by cropping the named position out of the source page and setting it
+beside the file in `data/photos/`.
+
+**Bill Schilling, 1986-87 and 1987-88.** Holds. The 1987 *Talisman* index
+carries one Schilling of that name, William Byron, at pp. 114, 116 and 343.
+Page 343 is the sophomore directory, and the portrait fourth row, third from
+left is captioned "WILLIAM SCHILLING, Union". Cropped from the page scan it
+is the same face as the stored file, feature for feature.
+
+**Chris LeNeave, 1986-87.** Holds. The index carries one Leneave,
+Christopher M., at pp. 114, 116 and 303. Page 303 is the senior directory
+and the portrait second row, fourth from left is captioned "CHRISTOPHER
+LENEAVE, biology, Mayfield". The independent crop matches the stored file.
+
+**Paul J. Deom, 1980-81.** Holds, and the row position is now settled rather
+than assumed. Page 266 of the 1981 *Talisman* was read as an image: the
+Kentucky Civil Liberties Union group photograph has four men in the back
+row, the fourth wears a patterned sweater, and the stored crop shows its
+subject immediately to that man's left. That is position three, which the
+caption names Paul Deom. The volume's index carries one Paul Deom, at
+pp. 261, 266 and 282.
+
+## What was corrected
+
+**The Deom label attributed a fact to the wrong page.** It said the article
+on p. 266 names him an Associated Student Government member. It does not:
+p. 266 calls him a junior from Boonville, Indiana who contacted the KCLU.
+It is p. 261, a different spread, that adds the ASG membership. The claim is
+true and the index ties the two pages to one man, so the label was rewritten
+to cite p. 261 for it rather than cut.
+
+**An unresolved arrest was being used as identity evidence.** The 1986-87
+Schilling label ended by saying the *Herald* reported his arrest in March
+1988 "under the same full name". Two things were wrong with it. The paper
+printed the surname as Shilling in that headline, so it is not the same
+name; and the year's own event for 17 March 1988 already records the arrest
+properly, noting that no charge and no outcome survive in the index. A photo
+credit repeats the allegation stripped of those caveats, and it adds nothing
+to the identification, which rests on the index entry. The clause was cut.
+The event stands as written.
+
+**Fourteen archive.org citations opened the wrong page.** This began as a
+check on the three new ones and became an audit of all 86 leaf-numbered
+archive.org citations in `data/photos.json`. Each volume's OCR was split
+into leaves and each cited leaf tested for the name it claims to show.
+Twelve failed. In eleven the name sits on the leaf immediately before the
+one cited; in the twelfth, Holger Velastegui, it sits nine leaves earlier.
+Two group-photograph entries for 1971-72 shared one of the bad leaves, so
+fourteen URLs were repointed in all:
+
+| | cited | correct |
+|---|---|---|
+| Linda Jones, 1970-71 and 1971-72 | n204 | n203 |
+| Nancy Pape, 1971-72, and two 1971-72 group photographs | n276 | n275 |
+| Joe Cheak, 1972-73 | n360 | n359 |
+| Marc Levy, 1974-75 | n393 | n392 |
+| Beverly Davenport, 1974-75 | n390 | n389 |
+| Jane Anne Coverdale, 1975-76 | n89 | n88 |
+| Cathy Murphy, 1977-78 | n374 | n373 |
+| Kevin Strader, 1980-81 | n346 | n345 |
+| Greg Elder, 1985-86 | n331 | n330 |
+| Cindy Richards, 1985-86 | n318 | n317 |
+| Holger Velastegui, 1986-87 | n343 | n334 |
+| Paul J. Deom, 1980-81 | n270 | n269 |
+| Bill Schilling, 1986-87 and 1987-88 | n355 | n346 |
+| Chris LeNeave, 1986-87 | n315 | n306 |
+
+Every corrected leaf was confirmed to carry the person in the context the
+label describes, and the printed page numbers in the labels were all
+correct. Only the links were wrong. Re-run after the fix, all 86 resolve.
+
+**A profile sentence put a man in the wrong row.** The 1986-87 LeNeave
+profile said he was named in the second row of the p. 114 photograph
+alongside William Schilling and president Tim Todd. Schilling is in the
+second row; Todd is in the back row. Rewritten to say so.
+
+## Traps, checked
+
+No advance notice was relied on. No committee chair was promoted to officer
+and no bill author to member. Nobody was matched by surname alone — the
+1981 volume carries a second Deom, Mark Anthony, and the identification
+rests on the full name plus the index entry, not the surname. No April
+election result moved year. Nothing here touches a settled fact. The one
+living-person problem found is the Schilling arrest clause, cut above.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0 at 61 years, 1,984 events and 60
+people who have been president, `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six pairs as the last four passes,
+none from this diff and all six genuinely distinct.
+
+## For the photographs routine
+
+The page numbers you write in labels are reliable; the leaf numbers in the
+URLs are not. Fourteen of eighty-six were wrong, and none of them would have
+shown up in the checks the routine runs — the file is a valid JPEG, the
+build passes, the data validates, and the citation still looks like a
+citation. The failure is only visible to a reader who clicks the link.
+
+Do not derive the leaf from the printed page by adding an offset, and do not
+read it out of `scandata.xml`: that file's `pageNumber` values are wrong for
+the 1987 volume, and following them is what produced the two nine- and
+twelve-leaf errors. Open the leaf you are about to cite and read the printed
+page number off the scan, or split `_djvu.xml` into leaves and confirm the
+subject's name appears on the one you are citing. The second is cheap enough
+to run over every entry, which is how tonight's twelve were found.
+
+## Still open
+
+Everything carried forward from the 30 August entry stands. The 12-year
+year-photograph gap is untouched. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN`
+are still unset in this routine's environment; `gh` is still not installed,
+so the brief's opening probe still fails with `command not found` rather
+than the 403 it is written to detect. Git push and the GitHub tools both
+work, which is the route `AGENT-LANDING.md` prescribes and the one this pass
+used.
