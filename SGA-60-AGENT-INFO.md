@@ -3273,22 +3273,32 @@ GitHub App still isn't installed on this repository, so PR #271 will not
 wake a future session on its own — the same platform gap recorded
 throughout this file; check the PR directly rather than waiting on it.
 
-**A 30 August run (photograph agent): no new portraits, the year-photograph
-gap is now fully closed, and the stale trigger was flagged to the account
-owner directly.** Re-checked first, as every run does: all four presidents
-named as this run's priority one (Nick Todd, Katie Dawson, Jeanne Johnson,
-Reagan Gilley) already carried a portrait, and — worth recording explicitly,
-since it has not been stated this plainly before — **all 60 president/regent
-leader records now carry a portrait, priorities one and two are both fully
-closed, and so is priority four**: `data/photos.json` already holds a year
-photograph for 61 of 61 years, so the twelve-year gap tracked in this
-section since 21 August is gone. Whatever run closed it did not log it here;
-a future run should stop listing "general photographs for years that have
-none" as open work unless a new gap actually appears.
+**A 30 August run (photograph agent): no new portraits, and the stale trigger
+was flagged to the account owner directly.** Re-checked first, as every run
+does: all four presidents named as this run's priority one (Nick Todd, Katie
+Dawson, Jeanne Johnson, Reagan Gilley) already carried a portrait, and —
+worth recording explicitly, since it has not been stated this plainly before
+— **every leader record in `years.json` now carries a portrait**: 73 leader
+records across 61 years, 66 unique names, none of them missing a photograph.
+Priorities one and two are closed.
 
-That leaves only priority three, executive/senate-officer portraits — 721
-missing name-year pairs, roughly 573 unique names, spread across every
-decade. This run spent its budget chasing eight of them and landed nothing,
+**Priority four is not closed, and an earlier draft of this note wrongly said
+it was.** That draft read the 61 entries in `data/photos.json`'s `years`
+list against the 61 academic years in `years.json` and concluded there was
+one apiece. There is not: those 61 entries cover only **49 distinct years**,
+because nine years hold more than one photograph (2026-27, 1971-72 and
+2004-05 hold three each; 1970-71, 1972-73, 1977-78, 1978-79, 1985-86 and
+1986-87 hold two). **Twelve years still have no year photograph at all** —
+1993-94, 1994-95, 1995-96, 1996-97, 1997-98, 2000-01, 2002-03, 2003-04,
+2005-06, 2006-07, 2008-09 and 2009-10 — which is exactly the twelve-year gap
+this section has tracked since 21 August, unchanged. It is a mid-1990s and
+2000s gap, and it is still open work. Any run counting coverage must count
+distinct years, not rows.
+
+Priority three, executive/senate-officer portraits, is also open — **714
+missing name-year pairs, 568 unique names** (an earlier draft said 721 and
+roughly 573), spread across every decade. This run spent its budget chasing
+eight of them and landed nothing,
 which is itself worth recording so the next run does not repeat the same
 searches:
 
