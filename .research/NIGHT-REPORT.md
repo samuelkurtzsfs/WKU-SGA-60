@@ -10966,7 +10966,7 @@ a face added to a man already on the record.
 
 ## What was corrected
 
-**The citation opened the wrong page, for the third pass running.**
+**The citation opened the wrong page, for the fifth pass running.**
 
 The label read page 108. The URL read leaf `n112`. Both page images were
 fetched and read. Leaf `n111` is printed page 108, headed "ASG....Let's take
@@ -10975,13 +10975,27 @@ is the frame this crop came from. Leaf `n112` is printed page 109. A reader
 following the link would have arrived at a page that does not contain the
 photograph. Repointed to `n111`.
 
-The page number in the label was right and the link was wrong, which is the
-same shape as the fourteen found this midday and the two found on 29 August.
-The midday entry set out how to avoid it — open the leaf and read the printed
-page number off the scan. That instruction has not reached the routine. It is
-written into a night report the routine does not read. Somewhere it will be
-read is `CLAUDE.md`, and a later pass should consider putting it there, in the
-pictures section, rather than leaving it in the history for a third time.
+The page number in the label was right and the link was wrong. This entry first
+called that the third pass running to find it; checked against the build history
+on main, it is the fifth. The run of them is: the Berman citation on 29 August
+at 03:36, which recorded the scan leaf as the page; Stewart, Elder and Richards
+later that morning, a page number read off the scan instead of the page; Hurley
+and Anderson that afternoon, both one leaf out; the fourteen repointed at midday
+on 30 August; and this one tonight. Five passes, nineteen citations.
+
+Each of those passes wrote down how to avoid it — open the leaf and read the
+printed page number off the scan. The instruction has never reached the routine,
+because it has only ever been written into a night report the routine does not
+read. Five repetitions is enough to stop treating that as something a later pass
+should consider. It belongs in `CLAUDE.md`, in the pictures section, next to the
+rule about verifying the JPEG magic bytes, which is the check the routine does
+perform and does pass. Left here for the owner to approve, since `CLAUDE.md` is
+the editorial law and not the editor's to rewrite unasked.
+
+The defect is invisible to every check the project runs: the file is a valid
+JPEG, the build passes, `check_data.py` validates, and the citation still reads
+like a citation. Only a reader who clicks the link finds it. That is why it has
+survived five passes.
 
 **The label also read the photograph and its caption as one thing.** They are
 on different pages. The photograph is on 108; the caption block describing it
