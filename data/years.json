@@ -6492,16 +6492,6 @@
    ],
    "events": [
     {
-     "date": "1975-09-19",
-     "title": "Big concert, big loss",
-     "body": "An ASG concert drew 4,300 people but lost $7,000, the Herald reported, opening a money argument that ran through the fall.",
-     "src": {
-      "label": "Herald 51:7, 19 Sep 1975",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5081/",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6092&context=dlsc_ua_records"
-     }
-    },
-    {
      "date": "1975-10-03",
      "title": "ASG suggests a campus bank",
      "body": "ASG suggested creating a campus bank for students, one of the new administration's early service proposals.",
@@ -6646,12 +6636,17 @@
     {
      "date": "1975-09-17",
      "title": "Loggins and Messina open the season and lose $7,000",
-     "body": "Kenny Loggins and Jim Messina played the first major concert of the year in Diddle Arena on Wednesday 17 September 1975, with the Amazing Rhythm Aces also on the bill. The crowd of 4,300 was too small and ASG lost about $7,000; activities vice president Rick Kelley blamed a lack of student body support.",
+     "body": "Kenny Loggins and Jim Messina played the first major concert of the year in Diddle Arena on Wednesday 17 September 1975, with the Amazing Rhythm Aces also on the bill. The crowd of 4,300 was too small and ASG lost about $7,000; activities vice president Rick Kelley blamed a lack of student body support. The Herald carried the loss two days later, and the argument over concert money it opened ran through the fall.",
      "kind": "concert",
      "money": "lost about $7,000; attendance 4,300",
      "src": {
       "label": "1976 Talisman, Concerts",
       "url": "https://archive.org/details/talisman1976west"
+     },
+     "src2": {
+      "label": "Herald 51:7, 19 Sep 1975",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5081/",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6092&context=dlsc_ua_records"
      }
     },
     {
@@ -6682,16 +6677,6 @@
      "kind": "speaker",
      "src": {
       "label": "1976 Talisman, Lectures",
-      "url": "https://archive.org/details/talisman1976west"
-     }
-    },
-    {
-     "date": "1975-12-02",
-     "title": "ASG creates a student activities committee for concerts, lectures and publicity",
-     "body": "To settle the dispute over booking, ASG adopted a Student Activities Committee, put into operation on 2 December 1975 and chaired by Rick Kelley. From 63 applicants, 17 members were chosen across three subcommittees, seven for concerts, five for lectures and five for publicity, each with alternates.",
-     "kind": "other",
-     "src": {
-      "label": "1976 Talisman, Concerts and Lectures",
       "url": "https://archive.org/details/talisman1976west"
      }
     },
@@ -6818,16 +6803,16 @@
      "date": "1976-01-01",
      "kind": "other",
      "title": "ASG sets up a Student Activities Committee to choose the acts",
-     "body": "After a semester of argument over who should decide what came to campus, ASG adopted a Student Activities Committee to bring more student opinion into the booking and publicising of concerts and lecturers. Seventeen members were chosen from 63 applicants and divided into concert, lecture and publicity sub-committees, with alternates for each. The dispute behind it had begun when an assistant dean of student affairs argued that any programme the university presented ought to have educational value; students wrote to the Herald against him.",
+     "body": "After a semester of argument over who should decide what came to campus, ASG adopted a Student Activities Committee to bring more student opinion into the booking and publicising of concerts and lecturers. Seventeen members were chosen from 63 applicants and divided into three sub-committees: seven for concerts with three alternates, and five each for lectures and publicity with two alternates apiece. Activities vice-president Rick Kelley said the committee was formed to widen student say over booking and publicity. The dispute behind it lingered from the ASG meeting of 2 December 1975 and sharpened when assistant dean of student affairs Ron Beck argued that any programme the university presented ought to have educational value; students wrote to the Herald against him. The yearbook gives no date for the committee's adoption, only that it was in place in time to help bring the free Spinners and Wet Willie concert of 30 January 1976.",
      "src": {
-      "label": "1976 Talisman, Concerts and student activities",
+      "label": "1976 Talisman, Concerts, Lectures and student activities",
       "url": "https://archive.org/details/talisman1976west"
      }
     },
     {
      "date": "1975-11-01",
      "title": "Linda Ronstadt's Homecoming concert nets ASG $4,300",
-     "body": "Linda Ronstadt played the Homecoming concert in Diddle Arena on Saturday 1 November 1975, opening with \"Colorado\", with Goose Creek Symphony before her and Andrew Gold as her backup group. The 1976 Talisman put the crowd at about 6,500 and the profit to ASG at $4,300, and reported that activities vice-president Rick Kelley and ASG president Steve Henry rated it among the most successful concerts in years - successful enough, the yearbook said, to guarantee a free Spinners and Wet Willie concert for students on 30 January.",
+     "body": "Linda Ronstadt played the Homecoming concert in Diddle Arena on Saturday 1 November 1975, opening with \"Colorado\", with Goose Creek Symphony before her and Andrew Gold as her backup group. The 1976 Talisman put the crowd at about 6,500 and the profit to ASG at $4,300, and reported that activities vice-president Rick Kelley and ASG president Steve Henry rated it among the most successful concerts in years - successful enough, the yearbook said, to guarantee a free Spinners and Wet Willie concert for students on 30 January. The yearbook is not consistent on the crowd: its concerts section gives 6,500 and its Homecoming section 6,300.",
      "kind": "concert",
      "money": "netted $4,300 for ASG; attendance about 6,500, though the same yearbook's opening section gives 6,300",
      "src": {
@@ -50720,15 +50705,6 @@
      }
     },
     {
-     "date": "2024-08-28",
-     "title": "Senate passed $100,000 budget at first meeting",
-     "body": "At its first meeting of the year on Aug. 27, the SGA Senate passed a $100,000 budget for 2024-25, including $20,000 for organizational aid, $23,500 for scholarships and $10,705 in legislative discretionary funding. Executive leaders told the Herald editorial board they intended to spend the full allocation, and President Sam Kurtz credited WKU President Caboni with keeping the budget level for several years.",
-     "src": {
-      "label": "Herald, 28 Aug 2024",
-      "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
-     }
-    },
-    {
      "date": "2024-10-02",
      "title": "Fall election winners sworn in, school safety bill passed",
      "body": "Five senators elected in the fall election, three freshman senators plus an international and a Gatton Academy senator, were sworn in at the Oct. 1 meeting. The Senate passed three bills, including Bill 4-24-F to make school safety training mandatory for WKU professors and require posted emergency exits in classrooms, and two bills backing a Spooktober fundraiser for the Potter Children's Home Initiative.",
@@ -50821,7 +50797,7 @@
     {
      "date": "2024-08-27",
      "title": "24th Senate approves $100,000 budget and seats first Honors senator",
-     "body": "The Senate unanimously approved Chief Financial Officer Ethan Taylor's $100,000 budget, which raised legislative discretionary and office worker spending and cut public relations spending. Five senators were appointed, including Caden Lucas as the first Mahurin Honors College senator, along with a four-member Judicial Council. Caboni gave the university report and closed on meal plans, saying orange chicken had become a meal swipe.",
+     "body": "The Senate unanimously approved Chief Financial Officer Ethan Taylor's $100,000 budget, which raised legislative discretionary and office worker spending and cut public relations spending. Five senators were appointed, including Caden Lucas as the first Mahurin Honors College senator. Caboni gave the university report and closed on meal plans, saying orange chicken had become a meal swipe.",
      "src": {
       "label": "Herald, 27 Aug 2024",
       "url": "https://wkuherald.com/77380/news/news-campus-government/wku-student-government-association-holds-first-meeting-of-new-academic-year/"
@@ -50830,7 +50806,7 @@
     {
      "date": "2024-08-27",
      "title": "Executives break down the SGA budget for the Herald editorial board",
-     "body": "Taylor told the Herald Editorial Board the 2024-25 budget included $20,000 for organizational aid, $23,500 for scholarships and $10,705 in legislative discretionary funding. Kurtz said the total had stayed at $100,000 for several years and credited Caboni with keeping it untouched. Chief Justice Ellen Henderson said the Senate would vote on election codes at its Sept. 3 meeting and stressed the Judicial Council's independence from the Senate and cabinet.",
+     "body": "Taylor told the Herald Editorial Board the 2024-25 budget included $20,000 for organizational aid, $23,500 for scholarships and $10,705 in legislative discretionary funding. Kurtz said the total had stayed at $100,000 for several years and credited Caboni with keeping it untouched. Taylor and Vice President Donte Reed both said they meant to spend the whole allocation. Chief Justice Ellen Henderson said the Senate would vote on election codes at its Sept. 3 meeting and stressed the Judicial Council's independence from the Senate and cabinet.",
      "src": {
       "label": "Herald, 27 Aug 2024",
       "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
@@ -51731,7 +51707,7 @@
     {
      "date": "2026-04-07",
      "title": "Weekly meeting funded a senior cookout, transfer cords and spikeball nets",
-     "body": "SGA allocated $602.58 through three bills and a resolution: a senior sunset cookout, 240 transfer-student graduation cords, borrowable spikeball nets, and DSU signage improvements. CFO Gabriel Jerdon said the legislative discretionary fund would have $71.17 left if the following week's final bills all passed as written.",
+     "body": "SGA allocated $602.58 through three bills and one resolution at its weekly meeting: $287.67 for a senior sunset cookout, $239.94 for 240 transfer-student graduation cords and $74.97 for borrowable spikeball nets. The resolution, on signage and navigation in Downing Student Union, drew nothing from the fund. Chief Financial Officer Gabriel Jerdon said $71.17 would remain in the legislative discretionary fund if every bill on the next week's docket passed as written. Speaker Hadley Whipple told senators to stay respectful because they might have to be choosy about what passed.",
      "src": {
       "label": "Herald, 8 Apr 2026",
       "url": "https://wkuherald.com/92550/news/sga-spends-second-to-last-meeting-deliberating-on-final-bills/"
@@ -51898,15 +51874,6 @@
      "src": {
       "label": "Herald, 5 Apr 2026",
       "url": "https://wkuherald.com/92425/news/sga-announces-gilbane-partnership-approval-passes-legislation-for-student-resource-funding/"
-     }
-    },
-    {
-     "date": "2026-04-08",
-     "title": "Discretionary fund nears zero with one meeting left",
-     "body": "The Senate allocated $602.58 across three bills and one resolution, funding a senior sunset cookout, 240 transfer student graduation cords and borrowable spikeball nets. Chief Financial Officer Gabriel Jerdon said that if every bill on the next week's docket passed as written, $71.17 would remain in the legislative discretionary fund. Speaker Hadley Whipple told senators to stay respectful because they might have to be choosy about what passed.",
-     "src": {
-      "label": "Herald, 8 Apr 2026",
-      "url": "https://wkuherald.com/92550/news/sga-spends-second-to-last-meeting-deliberating-on-final-bills/"
      }
     },
     {

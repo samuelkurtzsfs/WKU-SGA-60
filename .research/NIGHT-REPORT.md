@@ -11059,3 +11059,173 @@ is written to detect; a reader following the brief literally would conclude the
 gate was down and drop to review-only for nothing. Git push and the GitHub
 tools both work, which is the route `AGENT-LANDING.md` prescribes and the one
 this pass used.
+
+# 30 August 2026 — editor's pass, night: no queue, and four events that were in the record twice
+
+No pull request was open. The three the standing brief still calls stale — #6, #7
+and #8 — have been closed since 18 August, and the numbering has since run to
+#287, the last of them merged at 15:29 today. With nothing proposed for the site,
+this pass was spent on what is already on it.
+
+## The queue, and why it was empty
+
+`git fetch` and the GitHub tools both work from this environment; `gh` is not
+installed, so the brief's opening probe fails with `command not found` rather
+than the 403 it is written to detect. A reader following the brief literally
+would drop to review-only for nothing. The route in `AGENT-LANDING.md` — plain
+`git push` plus the GitHub MCP tools — is the one that works and the one this
+pass used.
+
+Every research branch was measured against `main`. `research-photos` is level
+with it. The branches showing large ahead-counts are the orphans the 30 August
+morning pass walked event by event; nothing has been added to them since, and
+its conclusion stands.
+
+## Four events that were in the record twice
+
+`check_duplicates.py` compares titles, and none of these four pairs had titles
+close enough to trip it. They were found by fingerprinting each event on the
+distinctive figures in its text — money to the cent, crowd sizes, counts over a
+hundred — and pairing events inside a year that share two or more. Six pairs
+came back; three were coincidence at a distance of months, and the rest were
+real. All four have been merged so that no sourced fact from either side is
+lost, and each was read against its source first.
+
+**The Loggins and Messina concert, 17 September 1975.** Carried once from the
+1976 *Talisman* at the date of the concert and once from the *Herald* at the
+date of the report, two days later. The *Herald* issue's own index confirms it
+is one event: "Associated Student Government Concert Draws 4,300 Loses $7,000",
+alongside "Band Overpowers Duo – Loggins & Messina". Kept at the concert date,
+which is this archive's practice, with the *Herald* added as `src2` so its
+issue and mirrored PDF survive.
+
+**The Student Activities Committee, 1975-76.** Two entries, both from the same
+yearbook. Merging them turned up two claims the source does not carry, and both
+are now cut:
+
+- The entry said the committee was "put into operation on 2 December 1975". The
+  *Talisman* says the opposite — that lingerings of the 2 December ASG meeting
+  were still noticeable during the spring semester, and that ASG "finally
+  adopted" the committee to remedy the dispute afterwards. 2 December is the
+  date of the argument, not of the committee. The merged entry says the
+  yearbook gives no adoption date, and fixes what is known: it was in place in
+  time to help bring the free Spinners and Wet Willie concert of 30 January.
+- The entry made Rick Kelley the committee's chair. The yearbook only has
+  Kelley saying what the committee was formed to do. He was ASG activities
+  vice-president, which the same volume states plainly and which the record
+  already had right elsewhere. This is trap two in the handoff — a person
+  quoted about a body written up as its officer — and it had reached the
+  published site.
+
+The merged entry gains what the second copy held and the first did not: the
+dispute's origin, assistant dean of student affairs Ron Beck's argument that a
+university programme ought to have educational value, and the letters students
+sent the *Herald* against him. It also now carries the sub-committee split the
+yearbook actually prints — seven for concerts with three alternates, five each
+for lectures and publicity with two apiece — in place of "each with alternates".
+
+**The 7 April 2026 meeting.** Two entries three days apart, citing the *same
+Herald article*, one dated to the meeting and one to publication. Merged at the
+meeting date, and made more precise from the article than either copy had been:
+the $602.58 splits $287.67, $239.94 and $74.97, and the Downing Student Union
+signage resolution drew nothing from the fund. Speaker Hadley Whipple's warning
+that the senate might have to be choosy is kept from the second copy.
+
+**The first meeting of the 24th Senate, 27 August 2024.** Three entries
+overlapped here. One, "Senate passed $100,000 budget at first meeting", was
+dated 28 August while its own first clause said the meeting was on the 27th,
+and it cited the editorial-board article while describing the senate meeting.
+Every fact in it already stood in the other two. It is cut, and the one thing
+only it carried — that the executives meant to spend the whole allocation, which
+the article supports twice over — is folded into the editorial-board entry. The
+budget entry's passing mention of a four-member Judicial Council is also cut,
+because the entry beside it names all four appointees.
+
+## A volume-numbering trap that is not an error
+
+Citations carrying a *Herald* volume and issue were checked for internal
+consistency: 936 of them, mapped volume by volume. Volumes 45 to 73 run one to
+an academic year, except 50 to 53, which each carry two ranges four years apart
+— volume 51 appears as both 1971-72 and 1975-76.
+
+That looks exactly like four years of mislabelled citations, and it is not.
+TopSCHOLAR's own catalogue labels record 4819 "College Heights Herald, Vol. 51,
+No. 7" and dates it 1971, and labels record 5081 "Vol. 51, No. 7" and dates it
+1975. Both pages were opened. The collision is in the archive being cited, not
+in the citing. Every one of these citations is faithful to its source and none
+should be touched.
+
+Recorded because the pattern is conspicuous, a whole afternoon could be spent
+"correcting" it, and the correction would be wrong. The practical consequence
+for anyone citing this era: a volume and issue alone does not identify an issue
+between volumes 50 and 53. The record URL does.
+
+## Citations, opened
+
+A hundred citations were sampled across the domains the archive cites and
+fetched one at a time: 45 TopSCHOLAR, 25 wkuherald.com, 18 wku.edu, 8
+archive.org, 5 bgdailynews.com. Ninety-six returned 200.
+
+The four that did not are all the same shape — direct PDF links of the form
+`/context/<collection>/article/<id>/viewcontent/<file>.pdf` — and all four
+returned Cloudflare's challenge page. Landing pages never did, including
+requests made immediately after a refusal, so this is not the burst-volume
+throttle the brief warns about: it is that host refusing automated fetches of
+the PDF itself while serving the record page normally. Forty-two citations in
+the data use that shape. They are not broken for a reader in a browser and
+nothing was changed, but a routine that fetches them will see a 403 that has
+nothing to do with pacing, and waiting ninety seconds will not clear it.
+
+This is worth putting beside the three consecutive photograph runs that reported
+`digitalcommons.wku.edu` blocked for a whole session. TopSCHOLAR was reachable
+throughout tonight's pass, landing page after landing page.
+
+## Checks
+
+`build.py` clean at 61 years, 297 documents and 1,111 legislation files.
+`check_data.py` exit 0 at 61 years, **1,980 events** and 60 people who have been
+president — four fewer events than last night, which is the four merges and no
+loss of fact. `check_contrib.py` exit 0. `check_duplicates.py` reports the same
+six pairs as the last six passes, none from tonight's edits and all six read
+again and genuinely separate. Re-running the numeric fingerprint over the merged
+file returns nothing at any distance under a week.
+
+## Traps, checked
+
+No advance notice was leaned on. Three entries were flagged by a search for
+outcome language sitting on a notice-shaped source, and all three cleared: the
+Jules Bergman lecture of 23 September 1975 reports its crowd from the 1976
+*Talisman*, a retrospective volume, and the yearbook's wording — poor weather
+hindered the crowd for the first guest of the lecture series, ASG a co-sponsor —
+supports the entry as written. One committee chair was demoted to what the
+source actually says, above. Nobody is matched by surname alone. No April
+election result moved year. Nothing touches a settled fact, and the LaCivita and
+Norfleet findings were left alone. Nothing about a living person goes past what
+its source reported. No contributor edit was in scope tonight.
+
+One thing was checked and deliberately not changed. The Ronstadt entry credits
+the 1976 *Talisman* with a crowd of about 6,500; the same yearbook gives 6,300
+in its Homecoming section and 6,500 in its concerts section, which is the
+section the entry cites. The entry is faithful to what it cites, so the figure
+stands, and the entry now says the yearbook contradicts itself — so that the next
+pass to notice does not "fix" a correctly sourced number.
+
+## Still open
+
+The research pipeline is still one routine. `research-photos` has produced every
+merge for four days; `research-backlog`, `research-senate` and
+`research-profiles` have not committed since 24-25 August. No new history has
+been added to the archive in five days. Whether to re-scope or restart them is
+the owner's call and is flagged, not acted on.
+
+The twelve-year year-photograph gap, 1993-94 through 2009-10, is untouched again.
+
+The wrong-leaf citation problem in `photos.json` is now six passes old. Five
+passes wrote the remedy into a night report the photograph routine does not
+read, and this pass found no new instance only because it did not sweep the
+photographs again. It belongs in `CLAUDE.md`, in the pictures section, beside the
+rule about verifying JPEG magic bytes. That remains for the owner to approve,
+since `CLAUDE.md` is the editorial law and not the editor's to rewrite unasked.
+
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset in this routine's environment,
+so the drop box is unavailable. It was not needed.
