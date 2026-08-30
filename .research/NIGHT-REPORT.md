@@ -10668,3 +10668,125 @@ And the production domain is recorded nowhere in the repository — not in
 therefore no way for a run to confirm that what it merged actually reached
 the live site. Worth writing down somewhere, given that every merge here is
 a publication.
+
+# 30 August 2026 — editor's pass: one portrait cut for a name that belonged to another man
+
+One pull request open, #283 from the photographs routine, four officer
+portraits in it and five entries, since Bill Schilling is attached to two
+years. Fewer than eight new claims, so all of them were checked rather than
+a sample. The three stale pull requests the standing brief still names — #6,
+#7 and #8 — are gone; nothing from 4 August is open any more.
+
+## What was verified
+
+All four image files are real JPEGs and all four are genuine class-portrait
+or group-photograph crops, checked by opening them, not by trusting the
+magic bytes alone.
+
+**Paul J. Deom, 1980-81.** Holds. The 1981 *Talisman* index carries one Paul
+Deom, referred to p. 266, which is the Kentucky Civil Liberties Union
+photograph. The caption names the back row in order and Deom is third of
+four, as the entry says. The article on the same spread calls him "a junior
+from Boonville, Ind., and Associated Student Government member," which is
+the tie between the face and the office, and it matches the profile already
+in the archive.
+
+**Bill Schilling, 1986-87 and 1987-88.** Holds, and on better evidence than
+the entry claimed. The 1987 *Talisman* index carries a single Schilling of
+that forename — William Byron — and refers him both to p. 343, the class
+portrait, and to p. 114, where the Associated Student Government group
+photograph's second row is captioned with his name. William Byron is also
+the name the *Herald* printed in March 1988, already cited in his profile.
+He appears again in the Inter-hall Council photograph beside Delwin Cheek,
+who the archive records as having beaten him for that council's presidency.
+The label has been rewritten to carry the index evidence.
+
+**Chris LeNeave, 1986-87.** Holds, and it settles a question the archive had
+left open. His profile said a Christopher LeNeave in the senior directory
+"may be the same person, though nothing in the sources reviewed for this
+profile directly ties the ASG chairman ... to that directory entry." The
+index closes it: one Leneave in the book, Christopher M., referred to p. 303
+for the portrait and to pp. 114 and 116 for the two government photographs,
+in the first of which he is named in the second row beside Schilling and
+president Tim Todd. The portrait would have been published beside a caveat
+denying it, so the caveat has been rewritten to state the tie and to record
+that an earlier pass had the two as possibly distinct.
+
+## What was cut
+
+**Steve Wilson, 1978-79.** Withdrawn, image deleted. The entry cited the
+1979 *Talisman* p. 379, "STEVE WILSON, agriculture, Tompkinsville," and
+added "indexed as Steve Alan Wilson, p. 34." The caption transcription is
+right; everything built on it is wrong.
+
+The 1979 index reads "Wilson, Steve Alan 296, 318, 320, 336." There is no
+p. 34. Page 379 belongs to a different index entry two lines below it:
+"Wilson, Stevie Joe 379." So the portrait is of Stevie Joe Wilson, not of
+the Steve Alan Wilson the label named. The book separately lists a Stephen
+Alan Wilson, so there are at least three of them.
+
+Neither man is tied to student government. The index gives Associated
+Student Government pages 53, 73, 82, 119, 262 and 288-9, and not one of
+Steve Alan Wilson's four pages is among them; p. 296, the one that can be
+placed, is a club group photograph. The only Steve Wilson the 1979 volume
+describes in any detail coordinated Spring Sing for the SAEs and sang in
+their barbershop quartet. Nothing in the yearbook connects any of them to
+the Judicial Council chairmanship that Congress confirmed on 12 September
+1978, which is the entire basis on which the face was being published.
+
+This is trap 4, matching on a name, on one of the commonest surnames there
+is. A misidentified face is worse than no face, and this one would have put
+a stranger on a chairman's page.
+
+## Traps, checked
+
+No events were added by this pull request, so the advance-notice trap and
+the April-election filing rule had nothing to bite on. No committee chair
+was promoted to an officer; the three surviving subjects are recorded at
+the posts the archive already had for them. No surname-alone match survives.
+No changed surname, and nothing here touches `name-aliases.json`. Nothing
+contradicts the settled facts. No contributor commits in the diff. On living
+people: these are class portraits of named officers from the university's
+own open yearbooks, which is what the archive has done for the other
+portraits, and none of the labels reaches past the yearbook into anything
+personal.
+
+## Checks
+
+`build.py` clean — 61 years, 297 documents, 1,111 legislation files.
+`check_data.py` exit 0, 61 years, 1,984 events, 60 people have been
+president. `check_contrib.py` exit 0. `check_duplicates.py` reports the same
+six pairs as before, none of them from this diff and all six genuinely
+distinct: a card scheme and its distribution three months later, a bill
+introduced and the same bill failing, a lawsuit planned and then endorsed, a
+position taken and then legislated, and three separate bills of 1 September
+1991, which the rule keeps apart.
+
+Merged after the cut. The photographs routine's own reported checks — build
+and `check_data.py` passing, JPEG magic bytes — all passed on the branch as
+it stood, which is the point worth taking from this pass: every automated
+check the routine ran was green while a misidentified portrait sat in the
+diff. Nothing but reading the index would have caught it.
+
+## For the photographs routine
+
+The method that worked on three of the four is the one to keep: go to the
+yearbook's own index, confirm the person is indexed once under that name,
+and confirm the index refers them both to the portrait page and to a page
+where their organisation is named. That is what makes a face a person.
+
+Where it failed, the index was cited without being read. The label asserted
+a page number, 34, that appears nowhere in the entry, while the entry's real
+page list would have shown at a glance that the portrait page belonged to
+somebody else. If a label names an index entry, the entry should be quoted
+in the pull request report the way the captions already are.
+
+## Still open
+
+Everything carried forward from the 29 August entry stands. The 12-year
+year-photograph gap is untouched. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN`
+are still unset in this routine's environment, so the review-only fallback
+remains untested and unavailable; `gh` is still not installed, so the
+brief's opening probe still fails with `command not found` rather than the
+403 it is written to detect. Both were reported on 29 August and neither has
+changed.
