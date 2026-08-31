@@ -6554,10 +6554,13 @@ def officer_index(ys):
         rows += [(o, True) for o in ((org.get("senate") or {}).get("officers") or [])]
         # the rank and file get a page too; their office is the seat they held
         for m in ((org.get("senate") or {}).get("members") or []):
-            rows.append(({"name": m.get("name"),
-                          "office": m.get("seat") or "Senator",
-                          "note": m.get("note"), "src": m.get("src"),
-                          "photo": m.get("photo")}, True))
+            # Carry the whole record across, not a hand-picked few fields: a
+            # member's profile and their second and later citations were being
+            # dropped here, so a page could show one source for a note that
+            # rested on five.
+            member = dict(m)
+            member["office"] = m.get("seat") or "Senator"
+            rows.append((member, True))
         for o, is_sen in rows:
             if not o.get("name") or not o.get("office"):
                 continue
@@ -7253,6 +7256,19 @@ def main():
     print(f'built the board, {len(ys)} year pages, the timeline and {len(DECADES)} decade '
           f'pages, the legislation archive, corrections and about '
           f'+ {ndocs} documents + {len(leg)} legislation files -> {SITE}')
+
+    # The roster: everyone the record names, in one downloadable list. Derived
+    # wholly from years.json, so it is rebuilt here rather than kept by hand.
+    # A failure here must not cost the site its pages.
+    roster = Path(__file__).with_name("build_roster.py")
+    if roster.exists():
+        r = subprocess.run([sys.executable, str(roster)],
+                           capture_output=True, text=True)
+        if r.returncode:
+            print("!! the roster did not build:")
+            print(r.stdout.strip() or r.stderr.strip())
+        else:
+            print(r.stdout.rstrip())
 
     # Say so loudly if the record broke its own rules. The build still runs, so
     # a page is never held hostage to a bad citation, but it does not get to

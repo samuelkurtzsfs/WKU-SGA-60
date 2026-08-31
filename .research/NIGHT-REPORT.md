@@ -11453,3 +11453,390 @@ routine, and it is still a ten-second fix in a browser.
 
 `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset in this routine's environment,
 so the drop box was unavailable. Push access worked, so it was not needed.
+
+# 31 August 2026 — editor's pass, late: one photograph note, merged after its method was corrected
+
+One pull request open, #292, "Research: photographs", opened at 02:06 this
+morning on `research-photos`. Merged as 16de7c3 after two corrections pushed to
+the branch. The three stale pull requests from 4 August that the standing brief
+names — #6, #7 and #8 — are no longer open and needed no handling.
+
+The diff was documentation only: 92 lines added to `SGA-60-AGENT-INFO.md` and
+nothing under `data/`. No claim in it reaches the public site. The branch's merge
+base was main's own tip, so none of the orphan-history precautions applied.
+
+## What was verified
+
+Eight claims spot-checked against their sources. Five held exactly.
+
+The three counts the note reports are right on recount: 73 leader records across
+61 years with a portrait each and none missing; the year-photograph gap still
+twelve years and the same twelve, 1993-94 through 1997-98, 2000-01, 2002-03,
+2003-04, 2005-06, 2006-07, 2008-09 and 2009-10; and the build figures of 61
+years, 1980 events and 60 presidents.
+
+The two external negatives that matter both hold. archive.org's
+`identifier:talisman*west` returns exactly 19 items and exactly the years the
+note lists — 1943, 1946, 1947, 1963-65, 1971-81, 1986-87 — so there is genuinely
+no Talisman volume there for any gap year, and nothing at all from 1988 onward.
+The digitalcommons article viewer refused article 7740 with HTTP 403 and a
+Cloudflare interstitial naming bepress, exactly as described. That is the
+clearest identification of that block this file has yet carried, and it is
+correct.
+
+## What was corrected
+
+Three claims failed, all of them method detail in the wkuherald.com bullet, and
+all three were corrected on the branch rather than cut, because the finding they
+support survives them.
+
+The note said date parameters on the Herald's WP-JSON search trip a Cloudflare
+challenge. They do not: a query bounded to 2008-2009 returns HTTP 200 and an
+empty array. The emptiness is the content hole showing through the filter, which
+is a different and more useful fact than a block. It placed the 2005-2010 window
+at pages 58 to 60; the result set is 1,347 posts over 135 pages at ten to a page,
+where page 58 is 2016 and the 2004/2010 boundary is page 117, and at a hundred to
+a page those numbers do not exist at all. And it gave the boundary as 29 October
+2010 running straight to 2 September 2004 with nothing between; the dates run
+back to 31 August 2010, then one item of 22 October 2009, then 2 September 2004.
+
+What the bullet concludes — that this route is closed — is right, and both
+findings under it were re-confirmed directly: every pre-2011 post carries no
+featured image, checked on pages 117 and 133 to 135 covering August 2002 to
+September 2004 and September 2010, and the hole in the indexed years is real
+rather than a paging artifact. The specifics still had to be fixed. This file is
+what steers the next photograph run, and as filed it would have sent one away
+from a filter that works and toward pages holding 2016.
+
+One cut: a Talisman caption quoted at 23 words, over the 15-word limit.
+Paraphrased, with all four names kept.
+
+## Traps, checked
+
+Clean, and on two counts better than clean. No advance notice read as a report,
+there being no events. No committee chair promoted to officer — the note reads
+Brad Ford and Gene Saunders as the chairmen their caption calls them and adds
+nothing. No surname-alone matching: it refuses a bare-initials "R. Tinsley"
+roster line outright, on the standard already applied to Moore and Wilson.
+Nothing touches the settled facts, nothing about a living person goes beyond
+their SGA service, and no contributor commit was in the diff. The run considered
+four 1977-78 officer portraits and declined all four, three because the captions
+name several people without saying which face is which. Declining them was
+right, and the reasoning was right.
+
+## Checks
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0, before and
+after the corrections. `check_duplicates.py` reports the same six pairs as the
+last several passes, all pre-existing on main and none introduced here. Read
+again and left alone: the 1992 advisory-committee bill introduced on 28 January
+and failing on 6 February, the designated driver cards funded in November 1997
+and distributed in February 1998, the plus/minus grading concern of 25 September
+2003 and the legislation of 16 October, and three same-day bills of 1 September
+1991. Every one is genuinely two or more events.
+
+The generated site was rebuilt and the result discarded: with no data change the
+only diff was the build date across 84 files, which is noise in a documentation
+commit.
+
+## Still open
+
+The same Talisman caption is quoted over-length a second time at
+`SGA-60-AGENT-INFO.md:3141`, already on main from an earlier pass. Left there
+deliberately so #292 stayed documentation-only; it wants a separate one-line
+pass.
+
+The finding aid at `dlsc_ua_fin_aid/620`, "UA1C4/10 Student Government
+Association Photos", is still the one live lead for the year-photograph gap and
+still behind the bepress block. Now that the block is identified as Cloudflare
+bot mitigation rather than rate limiting, waiting and retrying is not a strategy;
+that lead needs a different route or a human with a browser.
+
+The attribution line on the #289 comment is still there, and the comment posted
+on #292 carries one too, for the same reason: the routine cannot suppress it and
+cannot edit it back out, `api.github.com` still being refused here. Both remain
+ten-second fixes in a browser.
+
+The pipeline picture is unchanged from this morning's pass. One routine produced
+one documentation commit in the last twenty-four hours and no new history has
+been added to the archive in seven days. Re-scoping or restarting the research
+routines is still the owner's call.
+
+# 31 August 2026 — the roster, and three decades of empty records filled
+
+The owner asked for a full list of everyone who ever served in SGA: name, office,
+year, what they did, and their name now if it could be found. Most of that list
+turned out to exist already, scattered across `years.json` and never gathered.
+It is now gathered, and three research runs went at the holes in it.
+
+## The roster
+
+`scripts/build_roster.py`, called by `build.py`, writes `site/roster.csv` (a row
+per term of office), `site/roster-people.csv` (a row per person) and
+`site/roster.json`. Nothing in it is research: it reads `years.json` and resolves
+spellings through the alias file, so James P. Haynes and Jim Haynes are one
+person and every row rests on a citation the archive already held. Because it is
+generated it cannot drift from the record it summarises.
+
+At the start of the night that was 2,611 terms held by 1,765 people, 87 per cent
+of them carrying an account of what the person did. At the end it is **2,661
+terms held by 1,798 people, 93 per cent with an account.**
+
+## What was merged
+
+**#297, the 2020s.** All 94 empty records filled, the worst decade in the
+archive, mostly from the bills and resolutions each senator wrote. I checked
+every authorship claim rather than a sample: 191 citations against
+`legislation-authors.json`, resolved through the alias file, none mis-attributed.
+Three alias pairs added, each documented inside the project's own sources, each
+verified here against the roster: Annie and Annalise Finch, Will and William
+Derryberry, Julianna Mitchel and Mitchell. The Finch case is the one the
+24 August report parked as wanting a decision; it is decided now, on evidence.
+
+**#298, the 1970s and 1980s.** Forty-nine people added to the thinnest years in
+the record. The best of it is page 68 of the 1971 *Talisman*, which prints the
+whole membership of the Judicial and the Rules and Elections committees. I
+pulled the volume from archive.org and read both captions: all fourteen names
+match, both committees are assigned to the right people, and the three Judicial
+officers sit as officers with their captioned titles while the six members sit as
+members. That assignment was the easy thing to get wrong, because the OCR runs
+the Judicial description above the Rules and Elections heading. Going to the page
+image instead of trusting that ordering was right, and produced the right answer.
+Fiorella's sophomore class presidency is confirmed in the 1972 volume and filed
+to 1971-72, the year he served, without disturbing the settled fact of his regent
+term the year after.
+
+**#299, a build fix, and the cause of a complaint two reports old.** The officer
+pages were built from a hand-picked few fields of each senate member's record,
+which dropped every citation after the first and the member's profile entirely.
+Fred Price's page showed one source for a note resting on five. Sixty-seven
+citations across forty members were invisible, the earliest from 1972-73, and no
+rank-and-file profile had ever reached the site. This is the "member profiles
+render nowhere in the HTML" that the 23 and 31 August reports both raised. It was
+one line.
+
+## What was not merged, and why
+
+**#296, the 2010s.** Seventy records filled, and the research under it is good —
+the two Mallory records say "a senator of the same name" rather than asserting
+identity, and four records were left empty rather than padded. But the spot check
+found a wrong number: the Lavender Graduation stoles bill is recorded as passing
+28-5, and the *Herald* of 4 April 2018 says 26-5. Two smaller faults beside it:
+the fairness ordinance vote was dated 30 November 2017, which is the date of the
+report and not of the vote, and Mark Clark was credited with writing alone what
+the *Herald* says he wrote with Lily Nellans and Francisco Serrano.
+
+Underneath those sat the reason it is still open. Six notes cited vote counts to
+the legislation PDFs. Those are scanned forms whose "Pass: Fail: Other:" boxes
+are blank in the text layer, with no form fields and no annotations — I checked
+the raw files. The cited source cannot carry the fact. The numbers themselves
+were real: Nellans's 17-9-1 and Pettway's 28-0-1 both check out exactly in the
+*Herald* of 29 March 2017, which means the reporter was read and something else
+was cited. I added the reports where I could find them, stripped the tallies
+where I could not, and sent the branch back to re-verify every remaining number
+against a source that carries it. Ten claims of fifty-nine were sampled and one
+was wrong; that rate does not justify publishing the other forty-nine on trust.
+
+The rule the next run needs is short: cite the source that carries the fact, not
+the source the fact is about. A bill's PDF proves its title, author, amount and
+reading dates. It does not prove how the Senate voted.
+
+## On recording people's present names
+
+The owner asked for it and it was scoped down deliberately, so this is on the
+record. Thirty-six people in the archive appear under more than one name, all of
+them spelling variants and short forms documented inside the project's own
+sources. Finding the current names of the other 1,760 would mean searching
+marriage records and people-search sites for private citizens whose public act
+was holding a student office at twenty. No run did that, and none should. Every
+agent was told so explicitly, and all three reported the same result: no genuine
+name change found. For this population that is the expected outcome, not a
+failure. The route that does work is the contributor layer, where someone who
+served claims their own entry and signs it.
+
+## Still open
+
+- `legislation-authors.json` credits all eleven authors of the 2021-22 meeting
+  packet to both `res_3_22_s.pdf` and `res_5_22_s.pdf`. I confirmed the duplicate
+  attribution directly — identical eleven-name sets on two files — but the packet
+  is an image-only scan with no text layer, so I could not confirm which two
+  names are the real authors and did not edit the index on another run's reading
+  alone. It wants a pass that can read the page images.
+- Meghan Pierce holds a 2023-24 committee record and an executive record for what
+  is arguably one post. One of several such pairs; a structural decision.
+- #296 is open and awaiting its second pass.
+- Two vote tallies on main, Aubrey Kelly's 6-9-1 and Erika Puhakka's 17-11-2,
+  rest on sources that may not carry them. They pre-date tonight and were left
+  alone, but they are the same failure mode and want the same check.
+
+# 31 August 2026 — a correction to the entry above, and the 2010s closed
+
+The entry above says #296 is open and that six notes cited vote counts to
+legislation whose forms cannot carry them. The first is no longer true and the
+second was only half true. Both are corrected here rather than edited above, so
+the reasoning stays where a later pass can see it.
+
+**The forms are blank in 2017-18 and not in 2016-17.** I tested `bill-13-18-s`
+and `resolution-7-17-f`, found "Pass: Fail: Other:" empty in the text layer with
+no form fields and no annotations, and generalised that across the decade. The
+2016-17 forms type the tally straight onto the Pass line, where it sits in the
+page text:
+
+```
+bill_28-17-s.pdf      Pass: YES ; 28-0-0
+bill_18-17-s.pdf      Pass: YES ; 27-2-0
+bill_14-16-f.pdf      Pass: YES 27-4-1
+bill_20-17-s.pdf      Pass: YES ; 17-9-1
+resolution_3-17-s.pdf Pass: YES ; 28-0-1
+bill-13-18-s.pdf      Pass:  Fail:  Other:
+```
+
+So Richardson's 28-0-0, Hounshell's two, Coffey's 27-4-1 and Pettway's 27-2-0
+were correctly cited from the start, and stripping them was the editor's error.
+The research run checked the second year instead of accepting the
+generalisation, and restored them. That is the right way round: a run should
+test a claim about its own sources rather than take one on authority.
+
+**The stoles vote is 28-5, which was the original figure.** The editor corrected
+it to 26-5 on the *Herald*'s recap of 4 April 2018. The paper printed 28-5 the
+morning after the vote on 21 March and again on 28 March. Two contemporaneous
+reports against one later recap, and this file's own rule settles it: a
+contemporaneous source beats a later one. The note carries 28-5 and records the
+26-5 discrepancy so it is not quietly reversed again.
+
+**What did stand from the review**: the fairness ordinance dated to the meeting
+of 28 November rather than the report of the 30th, and Mark Clark credited with
+co-authorship alongside Lily Nellans and Francisco Serrano rather than sole
+authorship. And past the editor's sample of ten the run found four more of its
+own — Hurst ties Kara Lowry at fourteen pieces rather than leading the year, and
+Huffman's campus safety walk bill has six authors, not four. Both checked here.
+
+**#296 merged.** Every tally in the decade was then swept, not sampled: 42 vote
+counts, 8 matched directly in a cited legislation PDF, 34 backed by a cited
+*Herald* report, minutes or news article, none resting on nothing.
+
+**Aubrey Kelly's citation is closed too**, which was the last open item in the
+entry above. Her note told the story of two failed nominations while citing only
+the meeting that recorded neither. All three meetings are now cited: 4 September
+tabled Ashley Cox's confirmation 8-7, 11 September records that she had resigned
+and that Anna McAvoy's confirmation failed 6-9-1, and 25 September carries
+Kelly's own 24-3-4. The minutes say Cox resigned rather than withdrew, and the
+note now follows them. Erika Puhakka's 17-11-2, checked at the same time, was
+correctly cited already.
+
+## Where the archive stands at the close
+
+61 academic years, 2,661 recorded terms of office held by 1,798 people, **2,547
+of those terms (95%) carrying an account of what the person did**, against 87%
+when the night began. 36 people recorded under more than one name. `build.py`,
+`check_data.py` and `check_contrib.py` all clean on main; `check_duplicates.py`
+reports the same six pre-existing pairs. No pull request left open.
+
+## Still open
+
+- `legislation-authors.json` credits all eleven authors of the 2021-22 meeting
+  packet to both `res_3_22_s.pdf` and `res_5_22_s.pdf`. The duplicate is
+  confirmed; which two names are the real authors is not, because the packet is
+  an image-only scan. It wants a pass that can read page images.
+- Meghan Pierce's duplicated committee and executive records for 2023-24, one of
+  several such pairs. A structural decision, not a factual one.
+- The lesson worth keeping from tonight: the editor generalised a property of one
+  year's paperwork across a decade from a single sample. That is the same species
+  of error as citing a source that does not carry the fact, and it cost four
+  correct figures. Check the second year.
+
+# 31 August 2026 — the crosswalk authors, read off the page at last
+
+An empty queue. No pull request was open at 06:20, and the four research
+branches merged earlier tonight had already been through an editor's pass. So
+this run went at the item the last entry left open, and closed it.
+
+## The 2021-22 crosswalk resolutions: nine people credited with work they did not do
+
+`legislation-authors.json` credited the same eleven people as authors of both
+`res_3_22_s.pdf` and `res_5_22_s.pdf`. The last entry recorded the duplicate as
+confirmed but the true authors as unknowable, "because the packet is an
+image-only scan", and asked for a pass that could read page images.
+
+**It is not an image-only scan.** Both files are the fifteen-page agenda packet
+of the Twentieth Meeting of the Twenty-First Senate, 15 February 2022, and
+`pdftotext` reads all 18,781 characters of it. The two files are the same packet
+saved twice under different names. What defeated the earlier pass was a missing
+tool, not a missing text layer: this container had no poppler until it was
+installed tonight.
+
+The packet carries nine separate pieces of legislation, each with its own
+AUTHORS block. The eleven names are exactly the union of those nine blocks. The
+harvester pooled every author in the packet into whichever single resolution the
+file was named for.
+
+Read off the page, both resolutions have the same two authors:
+
+- **Resolution 3-22-S** (crosswalk below the Van Meter greenspace) — Caleb
+  Collins, Senator At Large; Zachary Skillman, Committee Head for Campus
+  Improvements and Sustainability.
+- **Resolution 5-22-S** (crosswalk in front of 1566 Normal St) — the same two.
+
+So the identical author lists were not the error. Crediting nine further people
+was. Eighteen records cut: Addison McCoun, Alex Cissell, Arivumani Srivastava,
+Emily Bunning, Garrett Baum, James Cecil, Parker Raybourne, Sam Kurtz and Tess
+Welch, from each of the two resolutions. Each of them wrote something else in
+that packet; none of them wrote these. The credits were live on their officer
+pages until tonight.
+
+The year's own account of the meeting is untouched and was never wrong: the
+2021-22 entry for 16 February names the resolutions and no authors, and is
+sourced to the *Herald*.
+
+## The rest of the corpus, checked rather than sampled
+
+Having the tool, the same test went across all 488 indexed legislation files
+rather than a sample. Every name recorded as an author or sponsor was looked for
+in its own document's text.
+
+- **Only those two files are pooled packets.** A scan for documents carrying more
+  than one AUTHORS block found five others; three (`dc_resolution_373`,
+  `dc_resolution_343`, `dc_resolution_122`) are genuine packets but are not
+  indexed at all, so nothing is falsely attributed, and two (`bill-16-16-f`,
+  `bill_17-16-f`) simply print the word twice above a single block.
+- **One further error, corrected.** `1999-00/bill_99-10-f.pdf` had a single
+  record, sponsor "Amendment Article" — not a person and not a committee, but the
+  heading of the amendment text printed below the real line. The page reads
+  "Sponsor: Legislative Research Committee", and the record now says so.
+- **Fifteen files flagged a name absent from their text; thirteen are not errors.**
+  Ten of those are 2012-13 documents that are image-only scans yielding one to
+  thirty-four characters, so a text miss there proves nothing either way and is no
+  ground for cutting a name. The apparent committee-names — Organizational Aid,
+  Campus Improvements, Legislative Research, Student Affairs — are all recorded in
+  the `sponsor` role, where committees belong, and none of them becomes a person:
+  no roster row, no officer page.
+
+`build.py`, `check_data.py` and `check_contrib.py` all clean.
+`check_duplicates.py` reports the same six pre-existing pairs, all of them
+genuinely separate events — a bill introduced and the same bill failing, a
+lawsuit planned and then endorsed, three distinct bills of 1 September 1991.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,661 recorded terms of office held by 1,798
+people, 2,547 of those terms (95%) carrying an account of what the person did,
+36 people recorded under more than one name. 60 people have been president.
+
+## Still open
+
+- **431 of the 488 indexed legislation files have a readable AUTHORS block and no
+  author recorded.** This is the largest single gap in the record and it is
+  ordinary transcription, not detective work: the names are sitting in the text
+  layer. `1999-00/bill_99-10-f.pdf` is the pattern — seven authors printed on the
+  page, none of them indexed. Worth a research routine of its own.
+- Seven of those authors were left unindexed tonight rather than added, because
+  the 1999-00 scan renders them "Jami l Sewell" and "Sham Hammers". The second is
+  probably the Shara Hammers who appears in the 2001-02 packet, but a name is not
+  a thing to guess at, and this file's rule is to flag spelling doubts rather than
+  fix them.
+- Meghan Pierce's duplicated committee and executive records for 2023-24, one of
+  several such pairs. A structural decision, not a factual one. Carried forward.
+- The lesson worth keeping: the earlier pass concluded a source was unreadable
+  when what was missing was the reader. "No text layer" is a claim about a
+  document that is worth testing before it is written down, because it closes an
+  question that was still open.

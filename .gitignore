@@ -13,3 +13,7 @@ site/o/
 
 # the roster workbook is generated from data/years.json
 SGA-60-roster.xlsx
+
+# scratch copies of the repository, one per research agent working in
+# parallel, created and removed by the tooling that runs them
+.claude/worktrees/
