@@ -1231,6 +1231,22 @@
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
        }
+      },
+      {
+       "name": "Daniel Leeper",
+       "src": {
+        "label": "Named in the full text of \"Congress Valorem\", the Associated Students newsletter, Vol. 1, No. 1, March 1968 (WKU SGA Documents/Newsletter series on TopSCHOLAR), described by the repository as including \"details regarding",
+        "url": "https://digitalcommons.wku.edu/sga/Documents/nl/24"
+       },
+       "seat": "Named in Associated Students newsletter"
+      },
+      {
+       "name": "Joseph Glowacki",
+       "src": {
+        "label": "Named in the full text of \"Congress Valorem\", the Associated Students newsletter, Vol. 1, No. 1, March 1968 (WKU SGA Documents/Newsletter series on TopSCHOLAR), described by the repository as including \"details regarding",
+        "url": "https://digitalcommons.wku.edu/sga/Documents/nl/24"
+       },
+       "seat": "Named in Associated Students newsletter"
       }
      ]
     }
@@ -1800,6 +1816,14 @@
         "label": "SGA Meeting Minutes, 13 February 1969",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/1"
        }
+      },
+      {
+       "name": "David Ward",
+       "src": {
+        "label": "Elected Sophomore Class Congressman in the May 2, 1968 Associated Students election. The results memo from Ron Beck, Vice-President, Associated Students, to Dr. Thompson dated May 3, 1968 lists under \"Sophomore Class ...",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543"
+       },
+       "seat": "Congressman, Sophomore Class"
       }
      ]
     }
@@ -2531,7 +2555,17 @@
        ]
       }
      ],
-     "note": "Class officers (President, Vice President, Secretary, Treasurer and Representative for each class) were themselves seats in the Associated Student Congress under the pre-1972 constitution, per the seat titles used in the 1966-67 first-Congress roster. The 1969 election result sheet used for the officers above is itself headed \"Associated Student Government Election\" and never uses the words Congress or Senate; the Congress-seat link is drawn from the 1966-67 roster, not stated on this document. No Freshman Class results appear on the sheet, consistent with freshman class elections being held separately each fall after new students arrived."
+     "note": "Class officers (President, Vice President, Secretary, Treasurer and Representative for each class) were themselves seats in the Associated Student Congress under the pre-1972 constitution, per the seat titles used in the 1966-67 first-Congress roster. The 1969 election result sheet used for the officers above is itself headed \"Associated Student Government Election\" and never uses the words Congress or Senate; the Congress-seat link is drawn from the 1966-67 roster, not stated on this document. No Freshman Class results appear on the sheet, consistent with freshman class elections being held separately each fall after new students arrived.",
+     "members": [
+      {
+       "name": "Michael Durham",
+       "src": {
+        "label": "May 1969 ASG election results, Representative at Large: Mike Durham 1516, second of four candidates, checked as a winner.",
+        "url": "http://digitalcommons.wku.edu/dlsc_ua_records/566"
+       },
+       "seat": "Representative at Large"
+      }
+     ]
     }
    },
    "documents": [
@@ -4587,6 +4621,24 @@
         "label": "1972 Talisman, senior class pages",
         "url": "https://archive.org/details/talisman1972west"
        }
+      },
+      {
+       "name": "Candace Revelette",
+       "src": {
+        "label": "The 1972 Talisman's Associated Students spread, headed 'A.S. makes great strides in implementing new programs', prints the officer photograph (Linda Jones president, Reginald Glass vice president, Nancy Pape secretary, J",
+        "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+       },
+       "seat": "Associated Students",
+       "note": "ALIAS FOR THE ARCHIVE: Candy Mason / Candace Carla Mason = Candace Mason Revelette. The archive already holds her as 'Candy Mason' in the 1971-72 senate roster; this confirms the married name. The 1971 Talisman index reads 'Mason, Candace Carla' and the 1973 index reads 'Revelette, Candace Mason', which is what links the two. Pages 272-273."
+      },
+      {
+       "name": "Julie Ransdell",
+       "src": {
+        "label": "The 1972 Talisman's Associated Students spread names 'Julie Bush' in Row 2 of the membership photograph printed directly beneath the officer photograph of president Linda Jones, vice president Reginald Glass, secretary N",
+        "url": "https://archive.org/details/talisman1972west/page/n276/mode/1up"
+       },
+       "seat": "Associated Students",
+       "note": "ALIAS FOR THE ARCHIVE: Julie Bush / Julie Ann Bush = Julie B. Ransdell. The link is the Talisman index itself: the 1971 and 1972 volumes list her as 'Bush, Julie Ann' and the 1974 and 1975 volumes list her as 'Ransdell, Julie Ann Bush'. The archive already holds 'Julie Bush' in the 1971-72 senate roster but not under the married name. The B in her export name is Bush. 1971-72 was her freshman year"
       }
      ],
      "note": "The two Associated Students Congress group photographs in the 1972 Talisman, pp. 272-273, name thirty-nine members between them. Thirty-eight are recorded here. The thirty-ninth, printed in the caption as Reed Morgan, is held back deliberately: the archive already carries a Reed Morgan at 1968-69, the unresolved plaque name, and the site builds one person page per name, so recording this one would silently merge the two into a single person shown as serving from 1968-69 to 1971-72. The 1972 Talisman puts a Reed Morgan among the Alpha Phi Alpha brothers at that fraternity's charter presentation on 31 October 1971, alongside fellow Congress members George Kendrick and Ed Givens, so a student of that name was certainly active in 1971-72. Whether he is the same man as the plaque's Reed Morgan is not established, and the archive will not assert a career it has not verified."
@@ -5550,6 +5602,15 @@
        },
        "seat": "member of the Associated Students and its academic council",
        "note": "The 1973 Talisman's Who's Who feature profiles her as a senior history and economics major from Cincinnati and records her membership of the Associated Students and its academic council. The feature names no office, so the seat records the yearbook's own wording. The 1971 Talisman carries her as Susan Gayle Stuebing of Cincinnati."
+      },
+      {
+       "name": "Susan Anderson",
+       "src": {
+        "label": "The 1973 Talisman's Who's Who feature (p. 223) profiles her as Sue Stuebing and says: \"This senior history and economics major from Cincinnati has been a member of the Associated Students and its academic council, the Ta",
+        "url": "https://archive.org/details/talisman1973west"
+       },
+       "seat": "member of the Associated Students and its academic council",
+       "note": "FOUND UNDER HER MAIDEN NAME, STUEBING - please add the alias Susan Stuebing = Susan Stuebing Anderson to the archive's alias list. She is \"SUSAN GAYLE STUEBING, Cincinnati, Ohio\" in the 1971 Talisman and \"SUSAN G. The source names no office or seat, only membership, so the office field carries the yearbook's exact wording rather than a title. The \"academic council\" reference is the university Acad"
       }
      ]
     }
@@ -8054,6 +8115,15 @@
         "label": "1976 Talisman, ASG Attendance Roll, p. 62-63",
         "url": "https://archive.org/details/talisman1976west"
        }
+      },
+      {
+       "name": "Constance Selin",
+       "src": {
+        "label": "The 1976 Talisman prints the 'ASG Attendance Roll: Effective as of April 6, 1976' in full, with 'Connie Allspaw' second on the list of names and meetings missed, introduced by ASG secretary Nancy Wilk explaining that 'Af",
+        "url": "https://archive.org/details/talisman1976west"
+       },
+       "seat": "Congress member",
+       "note": "ALIAS FOR THE ARCHIVE: Connie Allspaw / Constance Ann Allspaw = Constance Allspaw Selin. The archive already holds 'Connie Allspaw' in the 1975-76 senate roster but not under the married name. The Talisman indexes list her as 'Allspaw, Constance Ann' from 1974 to 1977, and a David Selin appears in the 1973-1976 indexes. The printed title is 'Congress member' from Nancy Wilk's quote heading the rol"
       }
      ]
     }
@@ -8655,6 +8725,14 @@
         "url": "https://archive.org/details/talisman1977west"
        },
        "note": "The caption shows committee work under president Christy Vogt but names no seat and does not call her chair, so the office field is left empty; the archive's chairman of Rules and Elections that year was Mike Pearson. Identity is firm: \"GEORGIANA L. The org chart in particular should give her exact printed title. Every attempt to download digitalcommons PDFs during my run returned a Cloudflare\"'…"
+      },
+      {
+       "name": "Elizabeth Sheppard",
+       "src": {
+        "label": "Named as an author, co-author or sponsor on Associated Student Government legislation of 1976-77 (Bills 2-13 and Resolutions 3-25), held in the SGA Legislation collection on WKU TopSCHOLAR. Authoring or sponsoring a bill",
+        "url": "https://digitalcommons.wku.edu/sga/Legislation"
+       },
+       "seat": "Congress member"
       }
      ]
     }
@@ -12776,6 +12854,62 @@
         "label": "ASG Minutes, 29 Apr 1982",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/306"
        }
+      },
+      {
+       "name": "Cynthia Strine",
+       "src": {
+        "label": "Located through the WKU TopSCHOLAR full-text search on the exact phrase \"Cindy Strine\", which returns the Associated Student Government meeting minutes of 29 March 1983 (Meetings/Minutes/347). The scanned PDFs return 403",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/347"
+       },
+       "seat": "Congress member"
+      },
+      {
+       "name": "Gregory Fields",
+       "src": {
+        "label": "Located through the WKU TopSCHOLAR full-text search on the exact phrase \"Greg Fields\", which returns three Associated Student Government meeting minutes of the 1982-83 year - 28 September 1982 (Minutes/322), 16 November ",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/322"
+       },
+       "seat": "Congress member"
+      },
+      {
+       "name": "Jeffrey Woosley",
+       "src": {
+        "label": "Located through the WKU TopSCHOLAR full-text search on the exact phrase \"Jeff Woosley\", which returns the Associated Student Government meeting minutes of 7 December 1982 (Meetings/Minutes/314). The scanned PDFs return 4",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/314"
+       },
+       "seat": "Congress member"
+      },
+      {
+       "name": "Michael Roberson",
+       "src": {
+        "label": "Located through the WKU TopSCHOLAR full-text search on the exact phrase \"Mike Roberson\", which returns the Associated Student Government meeting minutes of 1 March 1983 (Meetings/Minutes/349) and 12 April 1983 (Meetings/",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/349"
+       },
+       "seat": "Congress member"
+      },
+      {
+       "name": "Susan Mizanin",
+       "src": {
+        "label": "Located through the WKU TopSCHOLAR full-text search on the exact phrase \"Sue Mizanin\", which returns the Associated Student Government meeting minutes of 21 September 1982 (Meetings/Minutes/302). The scanned PDFs return ",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/302"
+       },
+       "seat": "Congress member"
+      },
+      {
+       "name": "William Borden",
+       "src": {
+        "label": "Located through the WKU TopSCHOLAR full-text search on the exact phrase \"Bill Borden\", which returns six separate Associated Student Government meeting minutes running through the whole 1982-83 year - 28 September 1982 (",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/322"
+       },
+       "seat": "Congress member"
+      },
+      {
+       "name": "William Veneman",
+       "src": {
+        "label": "Located through the WKU TopSCHOLAR full-text search on the exact phrase \"Bill Veneman\", which returns the Associated Student Government meeting minutes of 1 February 1983 (Meetings/Minutes/341) and 12 April 1983 (Meeting",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/341"
+       },
+       "seat": "Congress member"
       }
      ],
      "officers": [
@@ -13436,6 +13570,14 @@
         "label": "ASG Meeting Minutes, 30 August 1983",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/499"
        }
+      },
+      {
+       "name": "Vincent Lewis",
+       "src": {
+        "label": "Located through the WKU TopSCHOLAR full-text search on the exact phrase \"Vince Lewis\", which returns the Associated Student Government meeting minutes of 31 January 1984 (Meetings/Minutes/443). The scanned PDFs return 40",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/443"
+       },
+       "seat": "Congress member"
       }
      ]
     }
@@ -14049,6 +14191,22 @@
         "label": "Herald 60:30, 17 Jan 1985, \"Associated Student Government Member Criticizes Book Exchange Story\"",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5728"
        }
+      },
+      {
+       "name": "Gregory Mallory",
+       "src": {
+        "label": "Located through the WKU TopSCHOLAR full-text search on the exact phrase \"Greg Mallory\", which returns the Associated Student Government meeting minutes of 26 February 1985 (Meetings/Minutes/456) and 2 April 1985 (Meeting",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/456"
+       },
+       "seat": "Congress member"
+      },
+      {
+       "name": "Sheila Waninger",
+       "src": {
+        "label": "Named in the full text of the Associated Student Government newsletter \"Hill Talk\", Vol. 2, No. 1, October 1984 (SGA Documents/Newsletter 38 on WKU TopSCHOLAR), found by full-text search on the exact phrase \"Sheila Wanin",
+        "url": "https://digitalcommons.wku.edu/sga/Documents/nl/38"
+       },
+       "seat": "Named in Associated Student Government newsletter"
       }
      ],
      "note": "The minutes of 30 October 1984 show Congress taking reports from eight standing committees: Student Rights, Finance, Academic Affairs, Legislative Research, Public Relations, Rules and Elections, Student Affairs and Student/Faculty Relations, alongside organisational reports from Interhall Council, the president's committee, the book exchange, the qualification committee, the University Center Board, United Black Students and International Students. The Student Affairs report that night was given by a member the minutes name only as Mitchell, who thanked his committee; the archive does not assert which Mitchell that was."
@@ -15498,6 +15656,15 @@
        },
        "office": "V. Chair - Public Relations",
        "note": "The office is the committee vice-chairmanship, not the chair, and the wording is the minutes' own. She is recorded here under the name the minutes print. A later pass identified her with the surname Malik, on the rarity of her given name and a degree year inferred from the 1986 Talisman calling her a Bowling Green freshman; that identification is not proven and the name is left as the source gives it."
+      },
+      {
+       "name": "Naheed Malik",
+       "src": {
+        "label": "The ASG minutes of 2 September 1986 record the committee appointments approved on the president's recommendation, among them 'Public Relations -- Chair - Daniel Rodriguez / V. Chair - Naheed Shafi'; the same minutes note",
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/38"
+       },
+       "office": "V. Chair - Public Relations",
+       "note": "The title is the committee VICE-chairmanship, not the chair; it is filed under the committee bucket but the office field is the minutes' own wording. MARRIED-NAME IDENTIFICATION, PROBABLE NOT PROVEN: she served as Naheed Shafi. Supporting points: Naheed is a rare given name; the 1986 Talisman calls her 'a Bowling Green freshman' in 1985-86, which points to a 1989 degree and matches this record exa"
       }
      ],
      "members": [
@@ -20604,6 +20771,14 @@
         "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/171/"
        },
        "note": "She appears in the 1991-92 record as an author of SGA legislation rather than on any membership roll: Resolution 91-9-F on the keeping of exams and grades for appeals, Bill 91-03-F on the ASG chambers, and Bill 92-01-S. The surviving documents spell her given name Melony, Melany and Melanie. WKU Student Publications gives her married name as Melony Jones Shemberger and records her as a 1993 graduate, which is what links the legislation to her."
+      },
+      {
+       "name": "Melissa Maggard",
+       "src": {
+        "label": "Bill 92-01-S, Development of Advisory Committee for Student Regent, introduced 28 January 1992, carries the line \"AUTHOR: Greg Butler / Mistianna Holcomb / Melany Jones / Melissa Maggard  SPONSOR: Public Relations\".",
+        "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/158/"
+       },
+       "note": "Placed in ASG in 1991-92 by authorship of one bill and nothing else. Her three co-authors were all ASG members that year, one of them the Public Relations Vice-President. Her degree year 1993 and the colleague's coded span 1991-1992 both agree with this date."
       }
      ]
     }
@@ -23990,6 +24165,15 @@
        "label": "Herald 71:53, 16 Apr 1996, Tara Higdon, \"Vote for Kristin Miller\"",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2989"
       }
+     },
+     {
+      "name": "Jeffrey Adelson-Yan",
+      "src": {
+       "label": "The SGA minutes for the whole of 1995-96 record him as Vice-President: he called the regular meeting to order on 29 August 1995 and at nearly every meeting thereafter, and gave the Vice-President's officer report through",
+       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/131"
+      },
+      "office": "Vice-President",
+      "note": "NAME VARIANT - THIS IS THE KEY POINT. He is recorded in SGA sources without the 'Adelson' element: 'Jeffery L. Yan', 'Jeffery Yan', 'Jeff Yan', and in the Herald 'Jeffrey Yan'. THREE OFFICES ACROSS THREE YEARS, all sourced: (1) 1994-95, 'Soph. He also designed the winning entry in SGA's Western flag contest, chosen by Congress 14 November 1995; Sophomore in autumn 1994 fits the 1998 degree year ex"
      }
     ],
     "senate": {
