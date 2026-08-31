@@ -11840,3 +11840,85 @@ people, 2,547 of those terms (95%) carrying an account of what the person did,
   when what was missing was the reader. "No text layer" is a claim about a
   document that is worth testing before it is written down, because it closes an
   question that was still open.
+
+# 31 August 2026 — the Pat Long portrait, merged, and an offset that would have misfiled the next one
+
+One pull request open, #304 from the photograph routine, carrying a single new
+data claim: a portrait for **Pat Long**, 1972-73 Senate parliamentarian. One
+claim is few enough to check all of it rather than sample it, so that is what
+was done, against the 1973 *Talisman* full text and the volume's own scan
+metadata.
+
+## What was merged
+
+Everything in the diff, after two corrections. The portrait is sound:
+
+- The senior-grid caption reads `PATRICK D. LONG, Speech` / `Franklin, Ohio`,
+  under the page footer `Seniors 375`. Page confirmed off the page itself.
+- The index gives `Long, Patrick David, 347, 375`. Fourteen Longs in that index
+  and he is the only Patrick, so the claim to be the only one is right.
+- Page 347 carries the Young Democrats' club officer caption naming him
+  president, under the footer `Clubs 347`.
+- The Associated Student Government feature reads that the Legal Rights
+  Committee was headed by Pat Long and Gary Whitfield, and the index puts that
+  feature at pages 74 and 75. The routine kept the volume's word "headed" and
+  did not promote either man to chairman, which is the right instinct.
+
+The identification turned out stronger than the routine claimed for it. This
+archive already holds the *Herald* of 1 September 1972 reporting the vote that
+made him parliamentarian, describing a senior speech major from Franklin, Ohio.
+Class standing, major and home town all three match the caption. That is a
+three-point identification, not a name match, and the citation now says so
+rather than leaving a reader to go and find it.
+
+## What was corrected rather than cut
+
+Both in `SGA-60-AGENT-INFO.md`, neither of them on the public site:
+
+- The note said the index was cross-cited from Long's name to the ASG feature
+  on p. 74. It is not. His name is cited to 347 and 375; p. 74 is indexed under
+  the feature, not under him. `photos.json` had this right and the note
+  overstated it. An index that ran the name straight to the ASG page would be
+  better evidence than what is actually there, so the distinction is worth
+  keeping exact.
+- The note said Don Carter had no senior-grid entry at all. He has one, at
+  page 368. Left standing, that sentence would have stopped a later run ever
+  looking at the page. Declining him was still correct, for the harder reason:
+  twenty-plus Carters in the index, nothing on p. 368 mentioning ASG, and no
+  *Herald* description of the man to match a major and a home town against.
+
+## The offset worth remembering
+
+The citation URL looked off by one and is not. `scandata.xml` puts printed
+p. 375 at `leafNum` 381 while the entry cites `n380`; the convention is
+`n = leafNum - 1`, and all eight 1973 *Talisman* citations already in
+`photos.json` carry the same −1. Worth recording because the note recommending
+`scandata.xml` as the cure for offset guessing did not mention the offset it
+introduces, so a run following that advice literally would cite the page before
+the one it meant. The note now carries the conversion.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,661 recorded terms of office held by 1,798
+people, 2,547 of those terms (95%) carrying an account of what the person did,
+36 people recorded under more than one name. 60 people have been president.
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pre-existing pairs, all judged
+genuinely separate; this pull request added no events and moved none of them.
+
+## Still open
+
+- Priority three for the photograph routine, roughly 700 executive and senate
+  officer name-year pairs with no portrait. Every one of the 73 leader records
+  across all 61 years now has one, so this is where the remaining work is.
+- The twelve-year gap in year photographs (1993-94 to 1997-98, 2000-01, 2002-03,
+  2003-04, 2005-06, 2006-07, 2008-09, 2009-10). Three routes are recorded closed;
+  the one untried lead is the WKU Archives finding aid for UA1C4/10, still behind
+  a Cloudflare block as of today.
+- Four entries in `photos.json` name people who are not in that year's leaders,
+  executive or senate officers: Jaden Marshall (2026-27, 2025-26), Ciin Lun
+  (2024-25) and Hermes Olmos (2024-25). All predate this pull request and none
+  was introduced by it, so they were left alone tonight, but they want checking
+  against the roster rather than carried forward indefinitely.
+- The 431 legislation files with a readable AUTHORS block and no author recorded,
+  carried forward from the entry above. Still the largest single gap.
