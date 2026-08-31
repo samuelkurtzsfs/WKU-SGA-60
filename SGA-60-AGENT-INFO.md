@@ -3401,18 +3401,26 @@ inconclusive attempt:
   with, and now more specific than, every prior run's 202/403 reports.
 - **wkuherald.com cannot supply what this gap needs either, for two
   separate reasons.** Its WP-JSON API (`/wp-json/wp/v2/posts`) is reachable
-  without the digitalcommons block — but adding `after`/`before` date
-  params to a search query trips a *different* Cloudflare challenge (403,
-  same interstitial family), so it only works unfiltered, newest-first, by
-  page number. Paging back by hand to find the 2005-2010 window (`page=58`
-  through `page=60` of the `search=SGA` result set) turned up two problems:
-  every post in that range carries `featured_media: 0` — the pre-2011
-  import into this WordPress site carries no images at all, confirmed
-  across pages 58-60 and the 2003 sample checked first — and the "SGA"
-  search results jump straight from 29 October 2010 back to 2 September
-  2004 with nothing in between, a genuine content gap in what this site's
-  search index holds for that keyword, not a pagination artifact. Both
-  problems are fatal for this route independent of the Cloudflare issue.
+  without the digitalcommons block. *(Editor's correction, 31 August: the
+  research note as filed said `after`/`before` date params trip a
+  Cloudflare challenge and gave the 2005-2010 window as pages 58-60. Both
+  were re-tested on review and neither holds. The date params work —
+  `search=SGA&after=2008-01-01&before=2009-06-01` returns HTTP 200 and an
+  empty array, which is the content gap below showing through the filter,
+  not a block. And the paging is much deeper than stated: the result set is
+  1,347 posts over 135 pages at `per_page=10`, where page 58 is 2016 and
+  the 2004/2010 boundary sits at page 117; at `per_page=100` pages 58-60 do
+  not exist. The two findings below were re-confirmed directly and stand.)*
+  The route still fails, for two reasons that survive the correction: every
+  pre-2011 post carries `featured_media: 0` — the import into this
+  WordPress site brought no images with it, confirmed on review across
+  pages 117 and 133-135, covering August 2002 to September 2004 and
+  September 2010 — and the "SGA" result set has a genuine content hole
+  across the years this gap needs. On page 117 the dates run back to
+  31 August 2010, then jump to a single 22 October 2009 item and straight
+  on to 2 September 2004. That is a real absence in what the site's search
+  index holds for this keyword, not a pagination artifact. Both problems
+  are fatal for this route independent of any Cloudflare issue.
 
   Net: all three routes this file has tracked for the year-photo gap are
   now confirmed closed, on the evidence, not on repeated timeouts. The one
@@ -3432,10 +3440,11 @@ search-inside index (`https://{server}/fulltext/inside.php?item_id=...
 match directly — no leaf-offset guessing needed, since
 `archive.org/download/{id}/page/n{leaf}` then serves that leaf as a
 ready-made JPEG) puts Bass and May on p. 34, in the caption already used
-for the `1977-78-asg-meeting.jpg` year photograph: "brings laughter from
-president Bob Moore and smiles from activities vice president David Bass,
-secretary Sharon May and vice president Cathy Murphy." That caption names
-four people; the photograph clearly shows three. A prior run already
+for the `1977-78-asg-meeting.jpg` year photograph — a light moment in an
+ASG meeting, the caption naming president Bob Moore, activities vice
+president David Bass, secretary Sharon May and vice president Cathy
+Murphy. That caption names four people; the photograph clearly shows
+three. A prior run already
 pulled Bob Moore and Cathy Murphy as individual portraits from this same
 image and correctly stopped there — this run reached the identical
 conclusion independently: Bass and May are not distinguishably matched to
