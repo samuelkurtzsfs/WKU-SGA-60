@@ -3475,15 +3475,33 @@ straight to research instead.
 
 Landed one new portrait on priority three: **Pat Long**, 1972-73 Senate
 parliamentarian, from his 1973 Talisman senior-class portrait, p. 375
-("PATRICK D. LONG, Speech, Franklin, Ohio") — the only Patrick Long in the
-volume's index, cross-cited to p. 347 (Young Democrats president) and to the
-ASG feature on p. 74 (co-head of the Legal Rights Committee with Gary
-Whitfield, already on file). An exact leaf-to-printed-page mapping came from
+("PATRICK D. LONG, Speech, Franklin, Ohio") — the only Patrick Long among the
+fourteen Longs in the volume's index, which cites his name to two pages,
+347 and 375. Page 347 is the Young Democrats' club officer caption naming him
+president; the ASG feature naming him co-head of the Legal Rights Committee
+with Gary Whitfield (already on file) is a separate find, indexed under
+"Associated Student Government, 74, 75" rather than under his name — checked
+31 August, and worth stating precisely, because an index that cross-cited the
+name straight to the ASG page would be stronger evidence than what is actually
+there. What does carry the identification is the *Herald* of 1 Sep 1972
+("New appointments win ASG approval", `dlsc_ua_records/4871`), already cited in
+years.json, which describes the newly elected parliamentarian as a senior
+speech major from Franklin, Ohio: class standing, major and home town all three
+match the senior-grid caption, so this is not a bare name match.
+An exact leaf-to-printed-page mapping came from
 each Talisman's own `_scandata.xml` file on archive.org (`<page leafNum=".."
 ><pageNumber>..</pageNumber>`), which several recent entries in this section
 had been reconstructing by trial and offset guessing — reading it directly
 removes that whole class of error for any future run pulling a senior-grid
 portrait.
+
+**Mind the one-leaf offset when you use it.** `scandata.xml`'s `leafNum` is
+**not** the `n` in an archive.org `/page/nNNN/` URL: `n = leafNum - 1`. In the
+1973 volume, printed p. 375 is `leafNum` 381 and is reached at `n380`. Verified
+31 August against all eight 1973 Talisman citations in `photos.json`, which
+give the same −1 on every one. Writing the raw `leafNum` into a URL cites the
+page before the one you meant, which is the error this note exists to prevent,
+so convert before you cite and open the link once to confirm.
 
 Five more names from the same span were chased and closed as dead ends,
 recorded here so nobody repeats the search: **Debby Clark** (1972-73
@@ -3491,9 +3509,14 @@ Secretary) has two same-named candidates in the 1973 volume — Deborah Janca
 Clark in an ADPi composite (p. 263) and Deborah Kelly Clark in a Chi Omega
 composite (p. 277), both with numbered photo keys, neither page mentioning
 ASG — no way to tell them apart, so neither was used. **Don Carter**
-(Judicial Council chair) has no senior-grid entry at all; his only other hit
-is a "Peanut Gallery" game-show caption with no ASG context, too weak on a
-name match alone. **Vern Pulman** (1974-75) and **Mike Pearson** (1976-77)
+(Judicial Council chair) does have a senior-grid entry, "Carter, Donald James,
+368" — an earlier draft of this note said he had none, which was wrong and
+would have stopped a future run looking at the page. The reason he was still
+not used is the harder one: the index carries more than twenty Carters, several
+of them plausible, nothing on p. 368 mentions ASG, and his only other hit is a
+"Peanut Gallery" game-show caption with no ASG context. On a name match alone
+that is too weak, and unlike Long there is no *Herald* description of the man
+to match a major and a home town against. **Vern Pulman** (1974-75) and **Mike Pearson** (1976-77)
 do not appear anywhere in their years' Talisman indexes. **Scott Taylor**
 (1975-76) is confirmed by running text as a Pi Kappa Alpha member and ASG
 representative, but his only photograph is a forty-plus-person fraternity
