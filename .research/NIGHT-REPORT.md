@@ -12056,3 +12056,99 @@ people, 2,547 of those terms (95%) carrying an account of what the person did,
   2003-04, 2005-06, 2006-07, 2008-09, 2009-10). The one untried lead is the WKU
   Archives finding aid for UA1C4/10, behind a Cloudflare block.
 - John Lyne vs Larry Zielke 1970-71, and David Payne 1982-83, both unchanged.
+
+# 31 August 2026 — editor's pass, afternoon: one portrait extension merged, its credit cut back to what the source proves
+
+One pull request was open: #307, "Research: photographs", from the photograph
+routine, two commits on `research-photos`, 81 lines added across two files.
+The three stale pull requests this pass has carried in its brief since 4 August
+— #6, #7 and #8 — are no longer open on the repository and needed no handling.
+
+## What the diff actually contained
+
+One data claim, and one long narrative entry in the handoff file. The data
+claim was a single new `photos.json` leaders entry: the portrait of Robert
+"Bob" Moore, ASG president 1977-78, extended to a second term as Judicial
+Council chairman in 1978-79, pointing at the image file already in the
+repository rather than a new one. Being a single claim, all of it was checked
+rather than sampled.
+
+## What was corrected rather than cut
+
+The entry's credit described the photograph as a portrait of Moore "on his
+election as ASG president for 1977-78". It is not. The Herald of 1 April 1977
+that the credit cites is the issue that opened the race, not the one that
+closed it: its index carries "Four Candidates Seek Associated Student
+Government Presidency", a candidate profile of Moore by Pat Hohman, and
+"Voting Set for Tuesday in Primary". The result ran a fortnight later, on
+15 April 1977, under Hohman's byline again — the 26-vote margin. This
+archive's own record for 1976-77 already carried both events and already said
+so. The photograph is a candidate portrait taken during a campaign, and a
+credit that reads it as an election portrait is the advance-notice trap in its
+photographic form: an event that had not happened yet, written up as though it
+had.
+
+The credit was cut back to what the source proves and the identity behind the
+second term written into it from the documents that carry it, rather than left
+resting on the name alone. Nothing was deleted; the entry itself is sound.
+
+## What held up
+
+The identity chain was checked to the primary document, not to a later list.
+The ASG minutes of 29 August 1978, mirrored in this repository, record the
+Judicial Council nominees as "chairman, Bob Moore," with Debbie Anderson,
+Sally Brenzel, Eddie Fisher and Sandy Alford, all accepted, and Melinda Manis
+nominated alternate — matching the 1978-79 organization record line for line.
+The Herald of 7 September 1978 then carried Catherine Hancock's "Bob Moore
+Ineligible for Associated Student Government Job", which is the same man, named
+in full and described as the former president. This is not a surname match.
+`name-aliases.json` already maps "Bob Moore" to "Robert Moore", so the second
+entry created no second person page.
+
+The routine's own report was checked too, and was accurate: all 73 leader
+records across the 61 years do carry a portrait, no image file was written or
+altered this run, and the Melinda Manis entry it says it nearly duplicated is
+indeed already in the file from 29 August.
+
+## One thing the routine should know
+
+The extension is inert as `build.py` stands. Rebuilt with the entry present,
+the site is byte-identical to the site built without it. Year pages draw
+portraits only from a year's top-level `leaders`, so a senate officer's
+photograph never reaches the year page, and a person page takes the first term
+that carries one — which for Moore was already his presidency. The entry is
+accurate and it will render the day officer portraits are added to the
+year-page template, but it is not a visible gain today. A run hunting for
+coverage should spend itself on top-level leaders and year galleries. This is
+recorded in the handoff file beside the entry.
+
+## Merged
+
+`build.py` completed cleanly, `check_data.py` and `check_contrib.py` both exit
+0, and `check_duplicates.py` reports the same six pairs it has reported for
+days. All six were read again: three months separate the two designated-driver
+card entries, an introduction and a defeat separate the two student-regent
+advisory committee entries, a plan and an endorsement separate the two Civil
+Liberties Union entries, a position and a vote separate the two plus/minus
+grading entries, and the three 1 September 1991 pairs are three different bills
+introduced on one day. None is a duplicate. The correction was pushed to
+`research-photos` and #307 merged.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,661 recorded terms of office held by 1,798
+people, 2,547 of those terms (95%) carrying an account of what the person did,
+36 people recorded under more than one name. 60 people have been president.
+297 documents and 1,111 legislation files.
+
+## Still open
+
+- The 431 legislation files with a readable AUTHORS block and no author
+  recorded. Unchanged, and still the largest single gap.
+- Priority three for the photograph routine, roughly 550-700 executive and
+  senate officer name-year pairs with no portrait — and, per the note above,
+  worth less than its size suggests until the year-page template renders them.
+- The twelve-year gap in year photographs (1993-94 to 1997-98, 2000-01,
+  2002-03, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10). The one untried lead
+  remains the WKU Archives finding aid for UA1C4/10, behind a Cloudflare block.
+- John Lyne vs Larry Zielke 1970-71, and David Payne 1982-83, both unchanged.
