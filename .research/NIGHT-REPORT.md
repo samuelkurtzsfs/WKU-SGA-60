@@ -11922,3 +11922,137 @@ genuinely separate; this pull request added no events and moved none of them.
   against the roster rather than carried forward indefinitely.
 - The 431 legislation files with a readable AUTHORS block and no author recorded,
   carried forward from the entry above. Still the largest single gap.
+
+---
+
+# 31 August 2026 — an empty queue, one reversed position corrected, and every authorship claim in the archive checked
+
+No pull request was open. The three stale ones named in the editor's standing
+brief — #6, #7 and #8 of 4 August — have long since been closed; the repository
+is at #305 and the last merge landed at 09:28 this morning. Nothing was waiting,
+and nothing merged since the previous pass, so there was no queue to work.
+
+## Nothing is stranded
+
+Ten branches still show commits ahead of `main`. Every one of them was squash
+merged, and the content of each is on `main` under a commit of its own —
+`research-roster-2010s` as "What seventy officers of the 2010s actually did",
+`fix-member-sources` as "Show senators their whole citation, and their
+profiles", and so on down the list. The commit-count arithmetic is an artefact
+of squashing, not work left behind. The 4 August orphan branches remain
+orphans with no merge base, as they were.
+
+## The state of what is published
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs it has reported for days, all
+previously judged genuinely separate events; this pass added no events and
+moved none.
+
+## The photographs flagged last night are sound, and the flag was wrong
+
+The previous entry left open that four entries in `photos.json` named people who
+were not in their year's leaders, executive or senate officers, and wanted them
+checked against the roster. There are five such entries, and all five are
+correctly filed. The check that raised them looked at leaders, executive and
+senate officers only; `build.py` also matches a portrait against the year's
+senate **members**, and Jaden Marshall, Ciin Lun and Hermes Olmos are all
+recorded senate members in the years their portraits carry. Nothing is orphaned.
+
+The identifications themselves were then checked against the captions rather
+than taken on trust, because these are photographs of living students:
+
+- The *Herald* of 1 October 2024 captions its photograph "From left: Ciin Lun,
+  Lola Norman, Cayden Bailey, Jakob Barker and Hermes Olmos". The archive crops
+  Lun from the left edge and Olmos from the right. Both correct.
+- The *Herald* of 15 April 2026 captions Jaden Marshall as the presidential
+  candidate waiting to hear senator election results. Correct, and consistent
+  with the 2026-27 record, which has Caden Lucas winning that election with
+  Jakob Barker and Will Derryberry.
+
+This item is closed. It should not be raised a third time.
+
+## One correction, and it mattered
+
+**Olivia Simpson, 2017-18.** Her note read that she "spoke against voting on the
+Lavender Recognition Ceremony funding on scriptural grounds". Every fact behind
+it was sourced and the sentence was still wrong, because the natural reading of
+it reverses her position: it reads as though she opposed funding an LGBTQ
+ceremony for religious reasons. She did the opposite. The *Herald* of 28 March
+2018, already cited on her own entry, has her condemning the practice of
+deciding WKU's interests from the Bible, saying there is nothing in it against
+loving everyone, and telling the senate that what benefits the student body is
+safety. The note now says that plainly. A living person had a public page
+attributing to her the position she stood up in a senate meeting to argue
+against, and no validator would ever have caught it.
+
+The rest of the episode is recorded accurately. Dallas McKinney's entry states
+what he said and gives the outcome, the unanimous censure of 10 April 2018, as
+the rule on living people requires. Kenan Mujkanovic's and Mark Clark's entries
+are sound, and Clark's even records that the *Herald* printed the vote as 28-5
+twice and 26-5 once. The nine other notes in the decade that state a position
+against something were read as well; none of them reverses anyone.
+
+## Every authorship claim in the archive, cross-checked
+
+The failure that cost this project nine wrongly credited people yesterday was
+misread authorship, so rather than sample it, the whole corpus was tested: every
+claim in every officer note that names a person as author of a numbered bill or
+resolution, checked against the AUTHORS block extracted from that document.
+
+196 claims were checkable against a mirrored PDF. **None of them is wrong.**
+A further 136 name legislation with no local file and could not be tested.
+
+Six looked wrong and are not, and the reason is worth writing down because the
+next automated pass will flag exactly the same six and may try to "fix" them.
+SGA numbered three of its spring 2025 bills with an **-F** suffix. The minutes of
+11 February 2025 list them in the agenda as 1-25-S, 2-25-S and 3-25-S and then
+attach the bill texts headed 1-25-F, 2-25-F and 3-25-F. So two entirely
+different bills carry the designation **Bill 3-25-F**: the March Madness and
+Heather Strode Scholarship bill of February 2025, authored by Ryan Dilts, Jax
+Price, Hermes Olmos and Emaun Riley, and the Big Red Rise bill of autumn 2025,
+authored by Ciin Lun, Emily Reinneck, Malachi Humble, Nolan Rongey and Simon
+Petruska. Both are in the archive, each credited to its own authors, and both
+are right. The same collision affects Bill 1-25-F (Kaison Barton, February 2025)
+and Bill 2-25-F (Jade Ismail, February 2025). Match legislation on session as
+well as designation, or this will be "corrected" into an error.
+
+## What was spot-verified in this morning's merges
+
+The 2010s roster, merged at 04:38, was sampled at eight terms and every checked
+claim held against its source:
+
+- Bill 14-16-F prints "Pass: YES 27-4-1" and a second reading of 29 November
+  2016, exactly as Chase Coffey's note has it, and lists him among its authors.
+- Bill 20-17-S prints "Pass: YES; 17-9-1", a second reading of 28 March 2017,
+  and five authors including Lily Nellans. Her note dates it eight days after
+  Kentucky's Senate Bill 17 became law; the bill's own text gives that date as
+  20 March 2017, and the arithmetic is right.
+- William Hurst's note claims fourteen pieces of legislation in 2017-18, "a
+  total matched that year only by administrative vice president Kara Lowry".
+  The author index gives Hurst 14, Lowry 14, and Conner Hounshell next at 11.
+- Hounshell, Morgan Wysong and Olivia Simpson are each named in the AUTHORS
+  block of the legislation their notes credit them with.
+
+The notes are also careful where care is due: two of them decline to merge a
+senator with an earlier senator of the same name, saying only that a person of
+that name had held the seat before.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,661 recorded terms of office held by 1,798
+people, 2,547 of those terms (95%) carrying an account of what the person did,
+36 people recorded under more than one name. 60 people have been president.
+
+## Still open
+
+- The 431 legislation files with a readable AUTHORS block and no author
+  recorded. Still the largest single gap, and now the clearest one: the 136
+  authorship claims that could not be checked tonight are unverifiable for
+  exactly this reason.
+- Priority three for the photograph routine, roughly 700 executive and senate
+  officer name-year pairs with no portrait.
+- The twelve-year gap in year photographs (1993-94 to 1997-98, 2000-01, 2002-03,
+  2003-04, 2005-06, 2006-07, 2008-09, 2009-10). The one untried lead is the WKU
+  Archives finding aid for UA1C4/10, behind a Cloudflare block.
+- John Lyne vs Larry Zielke 1970-71, and David Payne 1982-83, both unchanged.
