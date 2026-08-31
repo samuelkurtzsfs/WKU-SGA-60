@@ -11453,3 +11453,111 @@ routine, and it is still a ten-second fix in a browser.
 
 `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset in this routine's environment,
 so the drop box was unavailable. Push access worked, so it was not needed.
+
+# 31 August 2026 — editor's pass, late: one photograph note, merged after its method was corrected
+
+One pull request open, #292, "Research: photographs", opened at 02:06 this
+morning on `research-photos`. Merged as 16de7c3 after two corrections pushed to
+the branch. The three stale pull requests from 4 August that the standing brief
+names — #6, #7 and #8 — are no longer open and needed no handling.
+
+The diff was documentation only: 92 lines added to `SGA-60-AGENT-INFO.md` and
+nothing under `data/`. No claim in it reaches the public site. The branch's merge
+base was main's own tip, so none of the orphan-history precautions applied.
+
+## What was verified
+
+Eight claims spot-checked against their sources. Five held exactly.
+
+The three counts the note reports are right on recount: 73 leader records across
+61 years with a portrait each and none missing; the year-photograph gap still
+twelve years and the same twelve, 1993-94 through 1997-98, 2000-01, 2002-03,
+2003-04, 2005-06, 2006-07, 2008-09 and 2009-10; and the build figures of 61
+years, 1980 events and 60 presidents.
+
+The two external negatives that matter both hold. archive.org's
+`identifier:talisman*west` returns exactly 19 items and exactly the years the
+note lists — 1943, 1946, 1947, 1963-65, 1971-81, 1986-87 — so there is genuinely
+no Talisman volume there for any gap year, and nothing at all from 1988 onward.
+The digitalcommons article viewer refused article 7740 with HTTP 403 and a
+Cloudflare interstitial naming bepress, exactly as described. That is the
+clearest identification of that block this file has yet carried, and it is
+correct.
+
+## What was corrected
+
+Three claims failed, all of them method detail in the wkuherald.com bullet, and
+all three were corrected on the branch rather than cut, because the finding they
+support survives them.
+
+The note said date parameters on the Herald's WP-JSON search trip a Cloudflare
+challenge. They do not: a query bounded to 2008-2009 returns HTTP 200 and an
+empty array. The emptiness is the content hole showing through the filter, which
+is a different and more useful fact than a block. It placed the 2005-2010 window
+at pages 58 to 60; the result set is 1,347 posts over 135 pages at ten to a page,
+where page 58 is 2016 and the 2004/2010 boundary is page 117, and at a hundred to
+a page those numbers do not exist at all. And it gave the boundary as 29 October
+2010 running straight to 2 September 2004 with nothing between; the dates run
+back to 31 August 2010, then one item of 22 October 2009, then 2 September 2004.
+
+What the bullet concludes — that this route is closed — is right, and both
+findings under it were re-confirmed directly: every pre-2011 post carries no
+featured image, checked on pages 117 and 133 to 135 covering August 2002 to
+September 2004 and September 2010, and the hole in the indexed years is real
+rather than a paging artifact. The specifics still had to be fixed. This file is
+what steers the next photograph run, and as filed it would have sent one away
+from a filter that works and toward pages holding 2016.
+
+One cut: a Talisman caption quoted at 23 words, over the 15-word limit.
+Paraphrased, with all four names kept.
+
+## Traps, checked
+
+Clean, and on two counts better than clean. No advance notice read as a report,
+there being no events. No committee chair promoted to officer — the note reads
+Brad Ford and Gene Saunders as the chairmen their caption calls them and adds
+nothing. No surname-alone matching: it refuses a bare-initials "R. Tinsley"
+roster line outright, on the standard already applied to Moore and Wilson.
+Nothing touches the settled facts, nothing about a living person goes beyond
+their SGA service, and no contributor commit was in the diff. The run considered
+four 1977-78 officer portraits and declined all four, three because the captions
+name several people without saying which face is which. Declining them was
+right, and the reasoning was right.
+
+## Checks
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0, before and
+after the corrections. `check_duplicates.py` reports the same six pairs as the
+last several passes, all pre-existing on main and none introduced here. Read
+again and left alone: the 1992 advisory-committee bill introduced on 28 January
+and failing on 6 February, the designated driver cards funded in November 1997
+and distributed in February 1998, the plus/minus grading concern of 25 September
+2003 and the legislation of 16 October, and three same-day bills of 1 September
+1991. Every one is genuinely two or more events.
+
+The generated site was rebuilt and the result discarded: with no data change the
+only diff was the build date across 84 files, which is noise in a documentation
+commit.
+
+## Still open
+
+The same Talisman caption is quoted over-length a second time at
+`SGA-60-AGENT-INFO.md:3141`, already on main from an earlier pass. Left there
+deliberately so #292 stayed documentation-only; it wants a separate one-line
+pass.
+
+The finding aid at `dlsc_ua_fin_aid/620`, "UA1C4/10 Student Government
+Association Photos", is still the one live lead for the year-photograph gap and
+still behind the bepress block. Now that the block is identified as Cloudflare
+bot mitigation rather than rate limiting, waiting and retrying is not a strategy;
+that lead needs a different route or a human with a browser.
+
+The attribution line on the #289 comment is still there, and the comment posted
+on #292 carries one too, for the same reason: the routine cannot suppress it and
+cannot edit it back out, `api.github.com` still being refused here. Both remain
+ten-second fixes in a browser.
+
+The pipeline picture is unchanged from this morning's pass. One routine produced
+one documentation commit in the last twenty-four hours and no new history has
+been added to the archive in seven days. Re-scoping or restarting the research
+routines is still the owner's call.
