@@ -11668,3 +11668,79 @@ served claims their own entry and signs it.
 - Two vote tallies on main, Aubrey Kelly's 6-9-1 and Erika Puhakka's 17-11-2,
   rest on sources that may not carry them. They pre-date tonight and were left
   alone, but they are the same failure mode and want the same check.
+
+# 31 August 2026 — a correction to the entry above, and the 2010s closed
+
+The entry above says #296 is open and that six notes cited vote counts to
+legislation whose forms cannot carry them. The first is no longer true and the
+second was only half true. Both are corrected here rather than edited above, so
+the reasoning stays where a later pass can see it.
+
+**The forms are blank in 2017-18 and not in 2016-17.** I tested `bill-13-18-s`
+and `resolution-7-17-f`, found "Pass: Fail: Other:" empty in the text layer with
+no form fields and no annotations, and generalised that across the decade. The
+2016-17 forms type the tally straight onto the Pass line, where it sits in the
+page text:
+
+```
+bill_28-17-s.pdf      Pass: YES ; 28-0-0
+bill_18-17-s.pdf      Pass: YES ; 27-2-0
+bill_14-16-f.pdf      Pass: YES 27-4-1
+bill_20-17-s.pdf      Pass: YES ; 17-9-1
+resolution_3-17-s.pdf Pass: YES ; 28-0-1
+bill-13-18-s.pdf      Pass:  Fail:  Other:
+```
+
+So Richardson's 28-0-0, Hounshell's two, Coffey's 27-4-1 and Pettway's 27-2-0
+were correctly cited from the start, and stripping them was the editor's error.
+The research run checked the second year instead of accepting the
+generalisation, and restored them. That is the right way round: a run should
+test a claim about its own sources rather than take one on authority.
+
+**The stoles vote is 28-5, which was the original figure.** The editor corrected
+it to 26-5 on the *Herald*'s recap of 4 April 2018. The paper printed 28-5 the
+morning after the vote on 21 March and again on 28 March. Two contemporaneous
+reports against one later recap, and this file's own rule settles it: a
+contemporaneous source beats a later one. The note carries 28-5 and records the
+26-5 discrepancy so it is not quietly reversed again.
+
+**What did stand from the review**: the fairness ordinance dated to the meeting
+of 28 November rather than the report of the 30th, and Mark Clark credited with
+co-authorship alongside Lily Nellans and Francisco Serrano rather than sole
+authorship. And past the editor's sample of ten the run found four more of its
+own — Hurst ties Kara Lowry at fourteen pieces rather than leading the year, and
+Huffman's campus safety walk bill has six authors, not four. Both checked here.
+
+**#296 merged.** Every tally in the decade was then swept, not sampled: 42 vote
+counts, 8 matched directly in a cited legislation PDF, 34 backed by a cited
+*Herald* report, minutes or news article, none resting on nothing.
+
+**Aubrey Kelly's citation is closed too**, which was the last open item in the
+entry above. Her note told the story of two failed nominations while citing only
+the meeting that recorded neither. All three meetings are now cited: 4 September
+tabled Ashley Cox's confirmation 8-7, 11 September records that she had resigned
+and that Anna McAvoy's confirmation failed 6-9-1, and 25 September carries
+Kelly's own 24-3-4. The minutes say Cox resigned rather than withdrew, and the
+note now follows them. Erika Puhakka's 17-11-2, checked at the same time, was
+correctly cited already.
+
+## Where the archive stands at the close
+
+61 academic years, 2,661 recorded terms of office held by 1,798 people, **2,547
+of those terms (95%) carrying an account of what the person did**, against 87%
+when the night began. 36 people recorded under more than one name. `build.py`,
+`check_data.py` and `check_contrib.py` all clean on main; `check_duplicates.py`
+reports the same six pre-existing pairs. No pull request left open.
+
+## Still open
+
+- `legislation-authors.json` credits all eleven authors of the 2021-22 meeting
+  packet to both `res_3_22_s.pdf` and `res_5_22_s.pdf`. The duplicate is
+  confirmed; which two names are the real authors is not, because the packet is
+  an image-only scan. It wants a pass that can read page images.
+- Meghan Pierce's duplicated committee and executive records for 2023-24, one of
+  several such pairs. A structural decision, not a factual one.
+- The lesson worth keeping from tonight: the editor generalised a property of one
+  year's paperwork across a decade from a single sample. That is the same species
+  of error as citing a source that does not carry the fact, and it cost four
+  correct figures. Check the second year.
