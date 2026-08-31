@@ -153,6 +153,21 @@ a.ext::after{content:"\\00A0\\2197";color:var(--ink3);font-size:.82em;text-decor
 .nav .brand{font-family:var(--display);font-weight:800;letter-spacing:.05em;color:#fff;font-size:1rem}
 .nav .brand b{color:var(--red);font-weight:800}
 .nav ul{display:flex;gap:20px;margin:0;padding:0;list-style:none;flex-wrap:wrap}
+.nav .wrap{flex-wrap:nowrap;align-items:center}
+.nav ul{flex:1 1 auto;min-width:0}
+.navsearch{display:flex;align-items:center;gap:0;margin-left:auto;flex:0 0 auto}
+.navsearch input{font:inherit;font-size:.82rem;width:8.5rem;padding:5px 9px;
+ color:#fff;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);
+ border-right:0;border-radius:4px 0 0 4px}
+.navsearch input::placeholder{color:rgba(255,255,255,.55)}
+.navsearch input:focus{outline:none;background:rgba(255,255,255,.18);
+ border-color:rgba(255,255,255,.5)}
+.navsearch button{display:flex;align-items:center;justify-content:center;
+ padding:5px 9px;cursor:pointer;color:#fff;background:rgba(255,255,255,.10);
+ border:1px solid rgba(255,255,255,.22);border-radius:0 4px 4px 0}
+.navsearch button:hover{background:var(--red);border-color:var(--red)}
+@media(max-width:640px){.navsearch{margin-left:0;order:3;width:100%;margin-top:8px}
+ .navsearch input{width:100%}}
 
 /* ---- page head ---- */
 .head{padding:56px 0 26px;border-bottom:1px solid var(--line)}
@@ -498,10 +513,23 @@ RIGHTS = ("Text on this site is the work of the project. Photographs, documents 
 def nav(up, current):
     links = "".join(
         f'<li><a href="{up}{href}"' + (' aria-current="page"' if href == current else "")
-        + f'>{h(label)}</a></li>' for href, label in NAV_ITEMS)
+        + f'>{h(label)}</a></li>'
+        for href, label in NAV_ITEMS if href != "search.html")
+    # the search control sits at the end of the masthead, where a reader
+    # looks for it, rather than buried among the section links
+    box = (f'<form class="navsearch" role="search" action="{up}search.html" '
+           f'method="get">'
+           f'<label class="skip" for="navq">Search the archive</label>'
+           f'<input id="navq" name="q" type="search" placeholder="Search" '
+           f'autocomplete="off">'
+           f'<button type="submit" aria-label="Search">'
+           f'<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">'
+           f'<circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" '
+           f'stroke-width="2"/><path d="M11 11l4 4" stroke="currentColor" '
+           f'stroke-width="2" stroke-linecap="round"/></svg></button></form>')
     return (f'<nav class="nav" aria-label="Sections"><div class="wrap">'
             f'<a class="brand" href="{up}index.html">SGA <b>60</b></a>'
-            f'<ul>{links}</ul></div></nav>')
+            f'<ul>{links}</ul>{box}</div></nav>')
 
 
 def footer(up):
