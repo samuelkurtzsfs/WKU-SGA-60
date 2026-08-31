@@ -3537,6 +3537,78 @@ on this repository, so PR #304 won't wake a future session on its own — the
 same platform gap recorded throughout this file; check the PR directly
 rather than waiting on it.
 
+**A 31 August run (photograph agent, scheduled trigger): one portrait
+extended to a second term, and the leads this file left open were checked
+and mostly closed out.** Re-checked first, as every run does: Nick Todd,
+Katie Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait,
+and all 73 leader records across 61 years still have one — unchanged.
+PR #304 had already been merged since the last entry above, so this run's
+work opens a fresh PR, #307.
+
+Before researching anything, this run recomputed the priority-three gap
+directly from `years.json` + `photos.json` rather than trusting this
+file's running total, and found two things the file's prose had not
+caught up to: Melinda Manis's portrait (the lead the 29 August entries
+above describe finding but not yet landing) had in fact already been
+landed, in commit `11ab05e` on 29 August, along with David Carwell's
+lead being closed as a dead end the same way. A first draft of this run
+nearly re-added Melinda Manis as a duplicate `photos.json` entry with a
+freshly-recropped image before `git status` caught it as a modification
+to an already-tracked file rather than a new one — the fix was to revert
+the image and drop the duplicate entry rather than ship two records for
+one person. **Worth stating plainly for whoever reads this file next:
+grep `data/photos.json` for a name before trusting this file's narrative
+that a lead is still open — the prose here has fallen behind the data at
+least once now.**
+
+With that corrected, this run found one genuine addition, not from the
+open-leads list but from the raw gap: **Bob Moore**, 1978-79 Judicial
+Council chairman, carries no portrait under that name, but the
+organization record for that office already states in its own note that
+he is Robert "Bob" Moore, ASG president 1977-78 — who already has a
+portrait, from a Herald photograph run on his election, 1 Apr 1977 p. 2.
+Added a second `photos.json` entry, year 1978-79, name "Bob Moore",
+pointing at the same file, so the existing portrait now attaches to both
+terms — the same pattern as the Anna Grace Fox/Sidney Wyer/Garrison
+Reed/Kara Lowry/Savannah Molyneaux extensions recorded on 28 August.
+
+Checked the remaining open names from the 1978-79 and 1986-87 officer
+lists for new leads. All came back negative, checked directly rather
+than assumed: **Steve Shipp, Alice Wicks and Eddie Fisher** (1978-79)
+each have an index entry in the 1979 Talisman with no page number at
+all, meaning the volume lists them as enrolled students but never
+photographs them anywhere. **Chris Millay, Dwight Austin, Dan Wooten and
+Jeff Key** (1986-87) do not appear in the 1987 Talisman's name index
+under those names at all. **Bill Fogle** does appear, as president of
+the Young Democrats in a small captioned group photo on p. 119 — but
+nothing on that page or its surrounding text ties him to ASG, and the
+1987 volume's index carries a second, distinct Fogle (William Sidney
+Fogle) elsewhere, so a bare name match to a different organization's
+photo was not enough to use it. The same page's Young Democrats photo
+also names a "Kimberly Summers," a plausible but unconfirmed match for
+the 1987-88 Public Relations Vice President of the same name — left
+alone for the same reason, and moot in any case since archive.org holds
+no 1988 Talisman to photograph her actual term.
+
+All file operations verified: no new image file was written this run
+(the Bob Moore entry reuses `1977-78-robert-moore.jpg` unchanged), and
+the accidental Melinda Manis re-crop was reverted with `git checkout`
+before committing, confirmed byte-identical to `HEAD` afterward. `build.py`,
+`check_data.py` and `check_duplicates.py` all pass clean (61 years, 1980
+events, 60 presidents; the same six known duplicate pairs, unchanged).
+Landed on `research-photos`; PR #304 having already merged, this run opened
+PR #307 — its body again picked up the Vercel-bot session-link line on
+creation, stripped via `update_pull_request`. `subscribe_pr_activity`
+succeeded this run with no "Claude GitHub App isn't installed" error,
+unlike several entries earlier in this file — worth a future run noting
+whether that platform gap has actually closed, or whether it was
+inconsistent state on GitHub's side.
+
+The stale six-hourly "SGA 60 - portraits" trigger is unchanged and was not
+re-flagged, per the standing rule in this file: it was already put to the
+account owner via `PushNotification` on 30 August and nothing about the
+condition has changed since.
+
 ## 9. Restarting a session
 
 ```bash
