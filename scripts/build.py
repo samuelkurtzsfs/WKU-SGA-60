@@ -7254,6 +7254,19 @@ def main():
           f'pages, the legislation archive, corrections and about '
           f'+ {ndocs} documents + {len(leg)} legislation files -> {SITE}')
 
+    # The roster: everyone the record names, in one downloadable list. Derived
+    # wholly from years.json, so it is rebuilt here rather than kept by hand.
+    # A failure here must not cost the site its pages.
+    roster = Path(__file__).with_name("build_roster.py")
+    if roster.exists():
+        r = subprocess.run([sys.executable, str(roster)],
+                           capture_output=True, text=True)
+        if r.returncode:
+            print("!! the roster did not build:")
+            print(r.stdout.strip() or r.stderr.strip())
+        else:
+            print(r.stdout.rstrip())
+
     # Say so loudly if the record broke its own rules. The build still runs, so
     # a page is never held hostage to a bad citation, but it does not get to
     # finish quietly either.
