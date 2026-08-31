@@ -6554,10 +6554,13 @@ def officer_index(ys):
         rows += [(o, True) for o in ((org.get("senate") or {}).get("officers") or [])]
         # the rank and file get a page too; their office is the seat they held
         for m in ((org.get("senate") or {}).get("members") or []):
-            rows.append(({"name": m.get("name"),
-                          "office": m.get("seat") or "Senator",
-                          "note": m.get("note"), "src": m.get("src"),
-                          "photo": m.get("photo")}, True))
+            # Carry the whole record across, not a hand-picked few fields: a
+            # member's profile and their second and later citations were being
+            # dropped here, so a page could show one source for a note that
+            # rested on five.
+            member = dict(m)
+            member["office"] = m.get("seat") or "Senator"
+            rows.append((member, True))
         for o, is_sen in rows:
             if not o.get("name") or not o.get("office"):
                 continue
