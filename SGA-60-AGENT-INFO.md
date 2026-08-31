@@ -3363,6 +3363,107 @@ portrait cleared confirmation, and nothing was committed on that strength.
 changed; this note is the only change, landed as a plain documentation
 commit on `research-photos`.
 
+**A 31 August run (photograph agent): the year-photo gap's three routes are
+now all confirmed closed, and priorities one and two remain closed.**
+Re-checked first, as every run does: all four presidents named in the
+trigger's stored priority list (Nick Todd, Katie Dawson, Jeanne Johnson,
+Reagan Gilley) still carry a portrait, and every one of the 73 leader
+records across 61 years still has one — unchanged since 20/30 August. The
+"SGA 60 - portraits" trigger (`trig_01YPsfcHzQEhQH6n1RPVRje1`, firing every
+six hours since 17 August) is still enabled and still carries the original
+stale prompt; the 30 August run already used `PushNotification` to put this
+in front of the account owner, so this run did not repeat that — nothing
+has changed about the condition since then that would justify a second
+alert.
+
+This run spent its budget on priority four (the twelve-year year-photo
+gap: 1993-94 through 1997-98, 2000-01, 2002-03, 2003-04, 2005-06, 2006-07,
+2008-09, 2009-10 — unchanged, confirmed again by recount) and can now
+close out all three of its routes with direct evidence rather than another
+inconclusive attempt:
+
+- **archive.org holds no Talisman volume for any of the twelve gap years,
+  full stop.** `advancedsearch.php?q=identifier:talisman*west` returns
+  exactly 19 items total: 1943, 1946, 1947, 1963-65, 1971-81, 1986-87.
+  Nothing from 1988 onward exists under this identifier pattern at all —
+  not "not yet fetched," not rate-limited, genuinely absent from the
+  collection. This closes the archive.org route for the whole gap, not
+  just the years this file had already tested one at a time.
+- **`digitalcommons.wku.edu/cgi/viewcontent.cgi` is still blocked, and the
+  block is now identified precisely.** Tested directly against article
+  7740 (the strongest 2008-09 lead) with a full cookie jar, a same-session
+  `Referer`, and the three navigation headers CLAUDE.md specifies: HTTP 403
+  serving a Cloudflare "Attention Required" interstitial that names
+  `bepress.com` as the blocked host. Confirmed a second way with `WebFetch`
+  (a different fetch path entirely) against the same URL: also 403. This is
+  Cloudflare bot-mitigation in front of bepress's own infrastructure, not
+  something a plain user-agent or header change gets past — consistent
+  with, and now more specific than, every prior run's 202/403 reports.
+- **wkuherald.com cannot supply what this gap needs either, for two
+  separate reasons.** Its WP-JSON API (`/wp-json/wp/v2/posts`) is reachable
+  without the digitalcommons block. *(Editor's correction, 31 August: the
+  research note as filed said `after`/`before` date params trip a
+  Cloudflare challenge and gave the 2005-2010 window as pages 58-60. Both
+  were re-tested on review and neither holds. The date params work —
+  `search=SGA&after=2008-01-01&before=2009-06-01` returns HTTP 200 and an
+  empty array, which is the content gap below showing through the filter,
+  not a block. And the paging is much deeper than stated: the result set is
+  1,347 posts over 135 pages at `per_page=10`, where page 58 is 2016 and
+  the 2004/2010 boundary sits at page 117; at `per_page=100` pages 58-60 do
+  not exist. The two findings below were re-confirmed directly and stand.)*
+  The route still fails, for two reasons that survive the correction: every
+  pre-2011 post carries `featured_media: 0` — the import into this
+  WordPress site brought no images with it, confirmed on review across
+  pages 117 and 133-135, covering August 2002 to September 2004 and
+  September 2010 — and the "SGA" result set has a genuine content hole
+  across the years this gap needs. On page 117 the dates run back to
+  31 August 2010, then jump to a single 22 October 2009 item and straight
+  on to 2 September 2004. That is a real absence in what the site's search
+  index holds for this keyword, not a pagination artifact. Both problems
+  are fatal for this route independent of any Cloudflare issue.
+
+  Net: all three routes this file has tracked for the year-photo gap are
+  now confirmed closed, on the evidence, not on repeated timeouts. The one
+  lead still worth trying next time it opens is the one the 24 August run
+  found and never got to open: the WKU Archives finding aid PDF at
+  `viewcontent.cgi?article=1619&context=dlsc_ua_fin_aid` (`dlsc_ua_fin_aid/620`,
+  "UA1C4/10 Student Government Association Photos") — it sits behind the
+  same Cloudflare block confirmed above, so it wasn't reachable this run
+  either, but it's a dedicated SGA-photos finding aid and still
+  unexamined.
+
+Priority three (executive/senate-officer portraits) got a smaller, more
+useful check: the four still-open 1977-78 names (Bob Tinsley, David Bass,
+Gene Saunders, Sharon May). The 1978 Talisman's `fulltext/inside.php`
+search-inside index (`https://{server}/fulltext/inside.php?item_id=...
+&doc=...&path=...&q=...`, which returns the exact leaf number of a text
+match directly — no leaf-offset guessing needed, since
+`archive.org/download/{id}/page/n{leaf}` then serves that leaf as a
+ready-made JPEG) puts Bass and May on p. 34, in the caption already used
+for the `1977-78-asg-meeting.jpg` year photograph — a light moment in an
+ASG meeting, the caption naming president Bob Moore, activities vice
+president David Bass, secretary Sharon May and vice president Cathy
+Murphy. That caption names four people; the photograph clearly shows
+three. A prior run already
+pulled Bob Moore and Cathy Murphy as individual portraits from this same
+image and correctly stopped there — this run reached the identical
+conclusion independently: Bass and May are not distinguishably matched to
+a specific face in the frame, so no portrait for either. Gene Saunders
+turned up on the facing photo on the same page ("ASG COMMITTEE CHAIRMEN
+Brad Ford and Gene Saunders talk with representative Kevin Kinne"), again
+naming two people with no "(left)"/"(right)" marker to say which visible
+face is which — left alone for the same reason. Bob Tinsley's only hit in
+the whole volume is a bare-initials roster line, "R. Tinsley," in an
+unrelated club's group photo — too weak on its own, the same standard
+already applied to Robert Earl Moore and Steve Wilson in the 1979 volume.
+All four remain open.
+
+No files changed under `data/photos/` or `data/photos.json` this run —
+nothing cleared confirmation. `build.py` and `check_data.py` were rerun
+against the unmodified tree as a baseline (61 years, 1980 events, 60
+presidents, clean) before this note was written. Landed as a plain
+documentation commit on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
