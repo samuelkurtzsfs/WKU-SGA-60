@@ -11744,3 +11744,99 @@ reports the same six pre-existing pairs. No pull request left open.
   year's paperwork across a decade from a single sample. That is the same species
   of error as citing a source that does not carry the fact, and it cost four
   correct figures. Check the second year.
+
+# 31 August 2026 — the crosswalk authors, read off the page at last
+
+An empty queue. No pull request was open at 06:20, and the four research
+branches merged earlier tonight had already been through an editor's pass. So
+this run went at the item the last entry left open, and closed it.
+
+## The 2021-22 crosswalk resolutions: nine people credited with work they did not do
+
+`legislation-authors.json` credited the same eleven people as authors of both
+`res_3_22_s.pdf` and `res_5_22_s.pdf`. The last entry recorded the duplicate as
+confirmed but the true authors as unknowable, "because the packet is an
+image-only scan", and asked for a pass that could read page images.
+
+**It is not an image-only scan.** Both files are the fifteen-page agenda packet
+of the Twentieth Meeting of the Twenty-First Senate, 15 February 2022, and
+`pdftotext` reads all 18,781 characters of it. The two files are the same packet
+saved twice under different names. What defeated the earlier pass was a missing
+tool, not a missing text layer: this container had no poppler until it was
+installed tonight.
+
+The packet carries nine separate pieces of legislation, each with its own
+AUTHORS block. The eleven names are exactly the union of those nine blocks. The
+harvester pooled every author in the packet into whichever single resolution the
+file was named for.
+
+Read off the page, both resolutions have the same two authors:
+
+- **Resolution 3-22-S** (crosswalk below the Van Meter greenspace) — Caleb
+  Collins, Senator At Large; Zachary Skillman, Committee Head for Campus
+  Improvements and Sustainability.
+- **Resolution 5-22-S** (crosswalk in front of 1566 Normal St) — the same two.
+
+So the identical author lists were not the error. Crediting nine further people
+was. Eighteen records cut: Addison McCoun, Alex Cissell, Arivumani Srivastava,
+Emily Bunning, Garrett Baum, James Cecil, Parker Raybourne, Sam Kurtz and Tess
+Welch, from each of the two resolutions. Each of them wrote something else in
+that packet; none of them wrote these. The credits were live on their officer
+pages until tonight.
+
+The year's own account of the meeting is untouched and was never wrong: the
+2021-22 entry for 16 February names the resolutions and no authors, and is
+sourced to the *Herald*.
+
+## The rest of the corpus, checked rather than sampled
+
+Having the tool, the same test went across all 488 indexed legislation files
+rather than a sample. Every name recorded as an author or sponsor was looked for
+in its own document's text.
+
+- **Only those two files are pooled packets.** A scan for documents carrying more
+  than one AUTHORS block found five others; three (`dc_resolution_373`,
+  `dc_resolution_343`, `dc_resolution_122`) are genuine packets but are not
+  indexed at all, so nothing is falsely attributed, and two (`bill-16-16-f`,
+  `bill_17-16-f`) simply print the word twice above a single block.
+- **One further error, corrected.** `1999-00/bill_99-10-f.pdf` had a single
+  record, sponsor "Amendment Article" — not a person and not a committee, but the
+  heading of the amendment text printed below the real line. The page reads
+  "Sponsor: Legislative Research Committee", and the record now says so.
+- **Fifteen files flagged a name absent from their text; thirteen are not errors.**
+  Ten of those are 2012-13 documents that are image-only scans yielding one to
+  thirty-four characters, so a text miss there proves nothing either way and is no
+  ground for cutting a name. The apparent committee-names — Organizational Aid,
+  Campus Improvements, Legislative Research, Student Affairs — are all recorded in
+  the `sponsor` role, where committees belong, and none of them becomes a person:
+  no roster row, no officer page.
+
+`build.py`, `check_data.py` and `check_contrib.py` all clean.
+`check_duplicates.py` reports the same six pre-existing pairs, all of them
+genuinely separate events — a bill introduced and the same bill failing, a
+lawsuit planned and then endorsed, three distinct bills of 1 September 1991.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,661 recorded terms of office held by 1,798
+people, 2,547 of those terms (95%) carrying an account of what the person did,
+36 people recorded under more than one name. 60 people have been president.
+
+## Still open
+
+- **431 of the 488 indexed legislation files have a readable AUTHORS block and no
+  author recorded.** This is the largest single gap in the record and it is
+  ordinary transcription, not detective work: the names are sitting in the text
+  layer. `1999-00/bill_99-10-f.pdf` is the pattern — seven authors printed on the
+  page, none of them indexed. Worth a research routine of its own.
+- Seven of those authors were left unindexed tonight rather than added, because
+  the 1999-00 scan renders them "Jami l Sewell" and "Sham Hammers". The second is
+  probably the Shara Hammers who appears in the 2001-02 packet, but a name is not
+  a thing to guess at, and this file's rule is to flag spelling doubts rather than
+  fix them.
+- Meghan Pierce's duplicated committee and executive records for 2023-24, one of
+  several such pairs. A structural decision, not a factual one. Carried forward.
+- The lesson worth keeping: the earlier pass concluded a source was unreadable
+  when what was missing was the reader. "No text layer" is a claim about a
+  document that is worth testing before it is written down, because it closes an
+  question that was still open.
