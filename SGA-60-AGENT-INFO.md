@@ -3566,7 +3566,28 @@ open-leads list but from the raw gap: **Bob Moore**, 1978-79 Judicial
 Council chairman, carries no portrait under that name, but the
 organization record for that office already states in its own note that
 he is Robert "Bob" Moore, ASG president 1977-78 — who already has a
-portrait, from a Herald photograph run on his election, 1 Apr 1977 p. 2.
+portrait, from a Herald photograph, 1 Apr 1977 p. 2. (Editor's correction,
+31 August: that photograph ran with the paper's *candidate* profile of him,
+two weeks before the vote — the issue's index carries "Bob Moore Candidate"
+alongside "Voting Set for Tuesday in Primary," and the result ran 15 Apr
+1977. The overlay entry as first written described it as a portrait taken
+on his election, which the source does not support; the label has been cut
+back to what it proves. An election that has not happened yet is the
+advance-notice trap in its photograph form.)
+
+**Second editor's note on the same entry, for whoever extends a portrait
+to a senate-officer term next: as `build.py` stands, that extension is
+inert.** Rebuilding with the Bob Moore entry present produces a site
+byte-identical to the one built without it. Year pages draw portraits
+only from a year's top-level `leaders` (build.py:792), so a senate
+officer's photo never appears on the year page; and a person page takes
+the first term that carries one (build.py:6600), which for Moore was
+already his 1977-78 presidency. The entry is accurate, sourced and
+harmless, and it will render the day officer portraits are added to the
+year-page template — but it is not a visible gain today, and a run
+looking for visible coverage should spend its time on the top-level
+`leaders` and year galleries instead. `name-aliases.json` already maps
+"Bob Moore" to "Robert Moore", so no second person page was created.
 Added a second `photos.json` entry, year 1978-79, name "Bob Moore",
 pointing at the same file, so the existing portrait now attaches to both
 terms — the same pattern as the Anna Grace Fox/Sidney Wyer/Garrison
