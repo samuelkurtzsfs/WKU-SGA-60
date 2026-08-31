@@ -11561,3 +11561,110 @@ The pipeline picture is unchanged from this morning's pass. One routine produced
 one documentation commit in the last twenty-four hours and no new history has
 been added to the archive in seven days. Re-scoping or restarting the research
 routines is still the owner's call.
+
+# 31 August 2026 — the roster, and three decades of empty records filled
+
+The owner asked for a full list of everyone who ever served in SGA: name, office,
+year, what they did, and their name now if it could be found. Most of that list
+turned out to exist already, scattered across `years.json` and never gathered.
+It is now gathered, and three research runs went at the holes in it.
+
+## The roster
+
+`scripts/build_roster.py`, called by `build.py`, writes `site/roster.csv` (a row
+per term of office), `site/roster-people.csv` (a row per person) and
+`site/roster.json`. Nothing in it is research: it reads `years.json` and resolves
+spellings through the alias file, so James P. Haynes and Jim Haynes are one
+person and every row rests on a citation the archive already held. Because it is
+generated it cannot drift from the record it summarises.
+
+At the start of the night that was 2,611 terms held by 1,765 people, 87 per cent
+of them carrying an account of what the person did. At the end it is **2,661
+terms held by 1,798 people, 93 per cent with an account.**
+
+## What was merged
+
+**#297, the 2020s.** All 94 empty records filled, the worst decade in the
+archive, mostly from the bills and resolutions each senator wrote. I checked
+every authorship claim rather than a sample: 191 citations against
+`legislation-authors.json`, resolved through the alias file, none mis-attributed.
+Three alias pairs added, each documented inside the project's own sources, each
+verified here against the roster: Annie and Annalise Finch, Will and William
+Derryberry, Julianna Mitchel and Mitchell. The Finch case is the one the
+24 August report parked as wanting a decision; it is decided now, on evidence.
+
+**#298, the 1970s and 1980s.** Forty-nine people added to the thinnest years in
+the record. The best of it is page 68 of the 1971 *Talisman*, which prints the
+whole membership of the Judicial and the Rules and Elections committees. I
+pulled the volume from archive.org and read both captions: all fourteen names
+match, both committees are assigned to the right people, and the three Judicial
+officers sit as officers with their captioned titles while the six members sit as
+members. That assignment was the easy thing to get wrong, because the OCR runs
+the Judicial description above the Rules and Elections heading. Going to the page
+image instead of trusting that ordering was right, and produced the right answer.
+Fiorella's sophomore class presidency is confirmed in the 1972 volume and filed
+to 1971-72, the year he served, without disturbing the settled fact of his regent
+term the year after.
+
+**#299, a build fix, and the cause of a complaint two reports old.** The officer
+pages were built from a hand-picked few fields of each senate member's record,
+which dropped every citation after the first and the member's profile entirely.
+Fred Price's page showed one source for a note resting on five. Sixty-seven
+citations across forty members were invisible, the earliest from 1972-73, and no
+rank-and-file profile had ever reached the site. This is the "member profiles
+render nowhere in the HTML" that the 23 and 31 August reports both raised. It was
+one line.
+
+## What was not merged, and why
+
+**#296, the 2010s.** Seventy records filled, and the research under it is good —
+the two Mallory records say "a senator of the same name" rather than asserting
+identity, and four records were left empty rather than padded. But the spot check
+found a wrong number: the Lavender Graduation stoles bill is recorded as passing
+28-5, and the *Herald* of 4 April 2018 says 26-5. Two smaller faults beside it:
+the fairness ordinance vote was dated 30 November 2017, which is the date of the
+report and not of the vote, and Mark Clark was credited with writing alone what
+the *Herald* says he wrote with Lily Nellans and Francisco Serrano.
+
+Underneath those sat the reason it is still open. Six notes cited vote counts to
+the legislation PDFs. Those are scanned forms whose "Pass: Fail: Other:" boxes
+are blank in the text layer, with no form fields and no annotations — I checked
+the raw files. The cited source cannot carry the fact. The numbers themselves
+were real: Nellans's 17-9-1 and Pettway's 28-0-1 both check out exactly in the
+*Herald* of 29 March 2017, which means the reporter was read and something else
+was cited. I added the reports where I could find them, stripped the tallies
+where I could not, and sent the branch back to re-verify every remaining number
+against a source that carries it. Ten claims of fifty-nine were sampled and one
+was wrong; that rate does not justify publishing the other forty-nine on trust.
+
+The rule the next run needs is short: cite the source that carries the fact, not
+the source the fact is about. A bill's PDF proves its title, author, amount and
+reading dates. It does not prove how the Senate voted.
+
+## On recording people's present names
+
+The owner asked for it and it was scoped down deliberately, so this is on the
+record. Thirty-six people in the archive appear under more than one name, all of
+them spelling variants and short forms documented inside the project's own
+sources. Finding the current names of the other 1,760 would mean searching
+marriage records and people-search sites for private citizens whose public act
+was holding a student office at twenty. No run did that, and none should. Every
+agent was told so explicitly, and all three reported the same result: no genuine
+name change found. For this population that is the expected outcome, not a
+failure. The route that does work is the contributor layer, where someone who
+served claims their own entry and signs it.
+
+## Still open
+
+- `legislation-authors.json` credits all eleven authors of the 2021-22 meeting
+  packet to both `res_3_22_s.pdf` and `res_5_22_s.pdf`. I confirmed the duplicate
+  attribution directly — identical eleven-name sets on two files — but the packet
+  is an image-only scan with no text layer, so I could not confirm which two
+  names are the real authors and did not edit the index on another run's reading
+  alone. It wants a pass that can read the page images.
+- Meghan Pierce holds a 2023-24 committee record and an executive record for what
+  is arguably one post. One of several such pairs; a structural decision.
+- #296 is open and awaiting its second pass.
+- Two vote tallies on main, Aubrey Kelly's 6-9-1 and Erika Puhakka's 17-11-2,
+  rest on sources that may not carry them. They pre-date tonight and were left
+  alone, but they are the same failure mode and want the same check.
