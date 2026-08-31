@@ -17,3 +17,7 @@ SGA-60-roster.xlsx
 # scratch copies of the repository, one per research agent working in
 # parallel, created and removed by the tooling that runs them
 .claude/worktrees/
+
+# Photo-hunt worklists are derived from years.json and photos.json each run.
+# The findings files are kept: they carry the caption that identifies a face.
+data/photo-finds/_worklist-*.json
