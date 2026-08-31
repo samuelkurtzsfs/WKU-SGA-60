@@ -11330,3 +11330,126 @@ the comment: editing an existing comment needs the REST API directly, and raw
 though the GitHub tools and `git push` both work. The comment on #289
 therefore still carries one. Anyone with a browser can delete that line in
 about ten seconds; nothing else in this pass carries it, and no commit does.
+
+# 31 August 2026 — editor's pass: an empty queue, and the last day's merges audited
+
+No pull request was open. The repository is at #290 and the three stale requests
+this routine is told to expect, #6, #7 and #8, were resolved weeks ago. Push and
+read access both worked, so nothing was gated; there was simply nothing waiting.
+
+With no queue, the pass audited what had already been published. Everything
+merged on 30 August went to the live site on the judgement of the editor who
+merged it and has had no second reading since. That is the material most worth
+checking, so it was checked.
+
+## What was verified
+
+Nine claims across the four portraits added on 30 August. Eight held against the
+source. One could not be reached.
+
+Paul Nation, 1974-75, is confirmed twice over in the 1975 *Talisman*. The caption
+block describes the cluttered desk and the telephone call and then names him
+administrative vice-president of Associated Student Government, in the words the
+citation gives. Jeff Consolo's own list of his officers, printed in the same
+feature, names Nation administrative vice-president. The same list names Tom
+LaCivita activities vice-president and Ricky Johnson treasurer, which is
+independent corroboration of the settled LaCivita portrait and was not disturbed.
+
+Bill Schilling and Chris LeNeave, 1986-87, are confirmed exactly as their
+citations describe them. The 1987 index carries one Schilling of that name,
+William Byron, and sends him to pp. 114 and 343; the class portrait on p. 343
+reads "WILLIAM SCHILLING, Union". The index carries one Leneave, Christopher M.,
+and sends him to pp. 114, 116 and 303; the class portrait on p. 303 reads
+"CHRISTOPHER LENEAVE, biology, Mayfield". The Associated Student Government
+group photograph on p. 114 names both men in its second row, and the second
+government photograph on p. 116 names LeNeave in its back row. Every element of
+both citations, down to the row, is on the page.
+
+Julie Mishchuk, 2022-23, could not be verified this pass. `wkuherald.com`
+refuses automated requests with a 403, the article has no Wayback snapshot, and
+the Wayback index is blocked by this environment's egress policy. That is an
+access failure and not a contradiction, so the entry stands: a source that
+cannot be reached is not a source that says otherwise. It is recorded here so a
+later pass with a working route can close it, and because a citation for a
+living person's portrait that no automated check can reach is worth knowing
+about.
+
+The fourteen leaf citations repointed on 30 August were checked as far as the
+plain text allows. The 1975 volume's offset is independently fixed at three by
+two facts already in the archive: the settled LaCivita page is leaf n112 for
+printed p. 109, and Nation's citation is leaf n111 for p. 108. The two 1975
+entries in that commit, Marc Levy at p. 389 and Beverly Davenport at p. 386, now
+point at leaves n392 and n389, which is exactly what that offset predicts, and
+their old leaves were one out against it. The correction moved them into
+agreement with the volume rather than away from it. This is corroboration from
+the offset, not confirmation from the page image; the class-portrait section of
+the 1975 scan carries no printed page numbers in its text layer, and the
+archive.org search-inside API is blocked here.
+
+## Traps, checked
+
+Schilling and LeNeave were the one place this diff could have tripped trap two.
+Both were committee chairmen in 1986-87 and both are recorded as exactly that,
+"Chairman, Legislative Research Committee" and "Chairman, Student Rights
+Committee", with the appointment date. Neither was promoted to an office he did
+not hold. Schilling's separate 1987-88 administrative vice-presidency is
+recorded in its own year, and his 1986-87 portrait is reused there under a
+citation that says on its face that the photograph predates the term. That is
+the honest way to reuse a portrait and it was left alone.
+
+No surname match, no changed surname, no election filed into the wrong academic
+year, no advance notice written up as a report, no contributor edit in scope.
+Nothing in the last day's work touches a settled fact except to confirm one.
+
+## The duplicate pairs, judged again
+
+`check_duplicates.py` reports the same six pairs. They were read rather than
+inherited, and all six are genuinely distinct. Three are an introduction and its
+outcome, weeks apart and separately sourced: a January 1992 bill for a student
+regent advisory committee and its failure after amendment in February; the
+Kentucky Civil Liberties Union planning court action in February 1972 and
+Associated Students endorsing the suit in March; SGA members objecting to
+plus/minus grading in September 2003 and passing legislation against it in
+October. One is a November 1997 bill funding designated driver cards and a
+February 1998 notice that distribution had begun. The remaining two are the
+same-day trio of 1 September 1991 — Bills 91-09-F, 91-03-F and 91-11-F, three
+bills with three source documents, which the rule keeps as three entries.
+Nothing was merged.
+
+## Checks
+
+`build.py` clean: 61 year pages, 297 documents, 1111 legislation files.
+`check_data.py` exit 0, 61 years, 1980 events, 60 presidents. `check_contrib.py`
+exit 0, every case passing. `check_duplicates.py` reports six pairs, all judged
+above and all kept. The only difference the build produced against the committed
+`site/` was the date stamp, 146 lines across 84 files reading 30 August for 31;
+it was discarded rather than committed, since the deploy regenerates it.
+
+A sweep for tool attribution found none in `data/` or `site/`, none in any
+commit message, and no author on the last two hundred commits other than
+`SGA 60` and `samuelkurtzsfs`. The only matches in the repository are the
+governance files that state the rule and the validator that tests for it.
+
+## Still open
+
+Nothing was merged this pass because nothing was proposed. That is now the
+significant fact about this project rather than an incidental one. The last
+commit to any research branch was `research-photos` at 21:22 on 30 August, and
+that is already on main. `research-backlog` and `research-senate` have not
+committed since 25 August, `research-profiles` since 24 August. The six decade
+branches have not moved since 4 August and remain orphans with no merge base.
+No new history has been added to the archive in seven days, and on the evidence
+of this pass the pipeline is one routine and a queue that is usually empty. The
+editor can keep the site honest but cannot make it grow; re-scoping or
+restarting the research routines remains the owner's call.
+
+The twelve-year year-photograph gap, 1993-94 through 1997-98, 2000-01, 2002-03,
+2003-04, 2005-06, 2006-07, 2008-09 and 2009-10, is untouched again. Officer
+portraits stand at 714 missing pairs over 568 names.
+
+The attribution line on the #289 comment is still there. Raw `api.github.com`
+still returns 403 in this environment, so it still cannot be edited from a
+routine, and it is still a ten-second fix in a browser.
+
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset in this routine's environment,
+so the drop box was unavailable. Push access worked, so it was not needed.
