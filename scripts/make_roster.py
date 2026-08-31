@@ -1,20 +1,23 @@
 #!/usr/bin/env python3
-"""Build the SGA people roster as an Excel workbook.
+"""Turn the roster into an Excel workbook.
 
-    python3 scripts/make_roster.py [-o SGA-60-roster.xlsx]
+    python3 scripts/build_roster.py     # first, writes site/roster*.csv
+    python3 scripts/make_roster.py      # then, writes SGA-60-roster.xlsx
 
-Reads data/years.json and writes one row per person per office per year,
-plus an index of distinct people, a quarantine sheet for records the archive
-cannot vouch for, and a coverage sheet saying plainly what is not in here.
+Reads site/roster.csv and site/roster-people.csv, which build_roster.py
+compiles out of data/years.json, and adds the two things a spreadsheet needs
+that a CSV does not: names split into first and last so the list can be sorted
+and mail-merged, and formatting.
 
-Nothing is invented. Every row carries the source the archive holds for it,
-and any row whose name had to be repaired is flagged and reproduced with its
-original text so it can be checked against the source.
+It deliberately derives nothing of its own. Everything here comes from the
+roster the build already produces, so the workbook cannot drift from the site.
+Run build_roster.py first, or this will use whatever it last wrote.
 """
 
 import argparse
-import json
+import csv
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -23,72 +26,23 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / "data" / "years.json"
-ALIASES = ROOT / "data" / "name-aliases.json"
-
-# Words that name an office, not a person. When one of these opens a name it
-# means the office title bled into the name field during an earlier harvest.
-OFFICE_WORDS = {
-    "senator", "senators", "at-large", "at", "large", "chair", "chairperson",
-    "chairman", "chairwoman", "speaker", "president", "vice", "justice",
-    "secretary", "treasurer", "director", "staff", "committee", "college",
-    "academy", "class", "senate", "student", "public", "engineering",
-    "business", "well-being", "generation", "freedom", "fairness", "history",
-    "alz", "affairs", "republicans", "democrats", "professor", "representative",
-    "chief", "associate", "administrative", "executive", "international",
-    "sophomore", "junior", "senior", "freshman", "graduate", "law", "relations",
-    "gatton", "honors", "mahurin", "ogden", "cebs", "pcal", "gordon", "ford",
-    "education", "behavioral", "sciences", "sciences,", "arts", "letters",
-}
-
-# Titles that are people-descriptions rather than SGA offices. A row whose
-# name begins with one of these is probably not an officer at all.
-NOT_AN_OFFICER = {"professor", "republicans", "democrats"}
+ROSTER = ROOT / "site" / "roster.csv"
+PEOPLE = ROOT / "site" / "roster-people.csv"
 
 SUFFIXES = {"jr", "jr.", "sr", "sr.", "ii", "iii", "iv", "v"}
 PARTICLES = {"van", "von", "de", "del", "della", "di", "da", "la", "le",
              "mac", "mc", "st", "st.", "o'"}
 
-# An office string that stops mid-phrase was cut off by the same harvest.
-TRUNCATED_OFFICE = re.compile(r"\b(of|at|and|for|the|to|in|on|At-|Senator-at)$",
-                              re.IGNORECASE)
-
 NICK_QUOTED = re.compile(r'"([^"]+)"|“([^”]+)”')
 NICK_PAREN = re.compile(r"\(([^)]+)\)")
 
 
-ORDER = {"President": 0, "Student Regent": 1, "Unresolved": 2,
-         "Executive officer": 3, "Senate officer": 4, "Senator": 5}
-
-
-def load_aliases():
-    if not ALIASES.is_file():
-        return {}
-    try:
-        return json.loads(ALIASES.read_text()).get("aliases", {})
-    except (json.JSONDecodeError, OSError):
-        return {}
-
-
-def strip_office_prefix(name):
-    """Remove office words that bled onto the front of a name.
-
-    Returns (cleaned, removed, is_suspect). Only strips when at least two
-    plausible name tokens survive, so a real name is never eaten.
-    """
-    tokens = name.split()
-    i = 0
-    while i < len(tokens) and tokens[i].strip(",.").lower() in OFFICE_WORDS:
-        i += 1
-    if i == 0 or len(tokens) - i < 2:
-        return name, "", False
-    removed = " ".join(tokens[:i])
-    suspect = tokens[0].strip(",.").lower() in NOT_AN_OFFICER
-    return " ".join(tokens[i:]), removed, suspect
-
-
 def split_name(name):
-    """Split a recorded name into first / middle / last / suffix / nickname."""
+    """Split a recorded name into first / middle / last / suffix / known-as.
+
+    Keeps the name people actually went by: Forrest (Bucky) Lanning and
+    Edward "Eddie" Myers both keep Bucky and Eddie rather than losing them.
+    """
     nickname = ""
     m = NICK_QUOTED.search(name)
     if m:
@@ -116,192 +70,25 @@ def split_name(name):
     while cut > 1 and tokens[cut - 1].lower().strip(".") in PARTICLES:
         cut -= 1
 
-    first = tokens[0]
-    last = " ".join(tokens[cut:])
-    middle = " ".join(tokens[1:cut])
-    return first, middle, last, suffix, nickname
+    return tokens[0], " ".join(tokens[1:cut]), " ".join(tokens[cut:]), \
+        suffix, nickname
 
 
-def src_of(obj):
-    s = obj.get("src") or {}
-    if isinstance(s, dict):
-        return s.get("label", ""), s.get("url", "")
-    return "", ""
-
-
-def collect(years, aliases):
-    """Every person-office-year the archive records. Returns (rows, quarantine)."""
-    rows, bad = [], []
-
-    for y in years:
-        yid = y["id"]
-        start = y.get("start", "")
-
-        for l in y.get("leaders", []):
-            role = l.get("role", "")
-            if role == "president":
-                office = "Student Body President"
-                category = "President"
-            elif role == "regent":
-                office = "Student Regent"
-                category = "Student Regent"
-            else:
-                office = "Not established"
-                category = "Unresolved"
-            if l.get("acting"):
-                office = "Acting " + office
-            also = bool(l.get("also_regent"))
-            if also:
-                office += " and Student Regent"
-            labels = [s.get("label", "") for s in (l.get("sources") or [])]
-            urls = [s.get("url", "") for s in (l.get("sources") or [])]
-            rows.append({
-                "year": yid, "start": start, "category": category,
-                "office": office, "name": l["name"],
-                "note": l.get("note", ""),
-                "src": "; ".join(x for x in labels if x),
-                "url": next((u for u in urls if u), ""),
-                "verified": "yes" if l.get("name_verified") else "no",
-                "confidence": l.get("year_confidence", ""),
-                "plaque": l.get("plaque_term", ""),
-                "profile": "yes" if l.get("profile") else "no",
-                "regent": "yes" if (also or role == "regent") else "",
-                "flag": "", "original": "",
-            })
-
-        org = y.get("organization") or {}
-        senate = org.get("senate") or {}
-        for lst, category in ((org.get("executive") or [], "Executive officer"),
-                              (senate.get("officers") or [], "Senate officer"),
-                              (senate.get("members") or [], "Senator")):
-            for e in lst:
-                raw = e.get("name", "")
-                # senators carry `seat` (their constituency or committee)
-                # where executive and Senate officers carry `office`
-                office = (e.get("office") or e.get("seat") or "").strip()
-                if category == "Senator" and office:
-                    office = f"Senator, {office}"
-                elif category == "Senator":
-                    office = "Senator"
-                clean, removed, not_officer = strip_office_prefix(raw)
-                label, url = src_of(e)
-                flags = []
-                if removed:
-                    flags.append(f'office text "{removed}" removed from the name')
-                if TRUNCATED_OFFICE.search(office):
-                    flags.append("office title is cut off mid-phrase")
-                if not_officer:
-                    flags.append("may not be an SGA officer at all")
-                row = {
-                    "year": yid, "start": start, "category": category,
-                    "office": office, "name": clean,
-                    "note": e.get("note", ""),
-                    "src": label, "url": url,
-                    "verified": "", "confidence": "", "plaque": "",
-                    "profile": "yes" if e.get("profile") else "",
-                    "regent": "",
-                    "flag": "; ".join(flags),
-                    "original": raw if removed else "",
-                }
-                (bad if flags else rows).append(row)
-
-    # Second pass. The harvest also glued non-office words onto names, so
-    # "Redz Coach Andi Dahmer" is Andi Dahmer with two words of prose in
-    # front. Only trust this where the tail exactly matches a name the same
-    # year already records cleanly, which makes it a match rather than a guess.
-    clean_by_year = defaultdict(set)
-    for r in rows + bad:
-        if len(r["name"].split()) == 2:
-            clean_by_year[r["year"]].add(r["name"])
-    for r in rows + bad:
-        tokens = r["name"].split()
-        if len(tokens) < 3:
-            continue
-        tail = " ".join(tokens[-2:])
-        if tail in clean_by_year[r["year"]]:
-            r["original"] = r["original"] or r["name"]
-            note = f'"{" ".join(tokens[:-2])}" removed from the name'
-            r["flag"] = "; ".join(x for x in (r.get("flag"), note) if x)
-            r["name"] = tail
-
-    for r in rows + bad:
-        first, middle, last, suffix, nick = split_name(r["name"])
-        r.update(first=first, middle=middle, last=last, suffix=suffix, nick=nick)
-        canon = aliases.get(r["name"], r["name"])
-        r["person"] = aliases.get(canon, canon)
-
-    rows, bad = dedupe(rows), dedupe(bad)
-
-    # A quarantined row whose person, year and office already sit on the main
-    # sheet is the same fact recorded worse. Drop it rather than have one
-    # person appear twice in the workbook under two spellings.
-    good = {(r["year"], norm_person(r), norm_office(r["office"])) for r in rows}
-    keep = []
-    for r in bad:
-        if (r["year"], norm_person(r), norm_office(r["office"])) in good:
-            for g in rows:
-                if (g["year"], norm_person(g), norm_office(g["office"])) == \
-                        (r["year"], norm_person(r), norm_office(r["office"])):
-                    g["merged"] += 1 + r["merged"]
-                    break
-            continue
-        keep.append(r)
-    return rows, keep
-
-
-# "SGA President", "WKU Student Body President" and "President" are one office.
-STRIP_OFFICE = re.compile(
-    r"\b(sga|wku|western|associated students|student body|the|of|for)\b",
-    re.IGNORECASE)
-
-
-def norm_office(office):
-    o = STRIP_OFFICE.sub(" ", office or "")
-    return re.sub(r"[^a-z0-9]+", " ", o.lower()).strip()
-
-
-def norm_person(r):
-    """Match on surname plus first initial, so Jim and James Haynes are one."""
-    first = (r["first"] or "").lower()
-    return (r["last"].lower(), first[:1])
-
-
-def dedupe(rows):
-    """Collapse the same person holding the same office in the same year.
-
-    The 2016-2026 harvest recorded some people several times over, each with a
-    different fragment of office text stuck to the front of the name. Andi
-    Dahmer is in 2017-18 four times. Keep the fullest record of each and count
-    what was folded in, rather than shipping one person as four.
-    """
-    best = {}
-    order = []
-    for r in rows:
-        key = (r["year"], norm_person(r), norm_office(r["office"]))
-        if key not in best:
-            best[key] = r
-            r["merged"] = 0
-            order.append(key)
-            continue
-        kept = best[key]
-        kept["merged"] += 1
-        # A leader record is richer than an officer record of the same office:
-        # it carries the verification, the plaque reading and the profile.
-        score = lambda x: (ORDER.get(x["category"], 9) <= 2,
-                           len(x.get("note") or ""), len(x.get("src") or ""),
-                           -len(x["name"]))
-        if score(r) > score(kept):
-            r["merged"] = kept["merged"]
-            best[key] = r
-    return [best[k] for k in order]
-
+# Plain English for the roster's own vocabulary. "Senate officer" and "Senate"
+# are different things there: the first is the Speaker, the clerks and the
+# class and constituency representatives, the second the rank and file.
+BODY = {"Leader": "President or student regent",
+        "Executive": "Executive officer",
+        "Senate officer": "Senate officer",
+        "Senate": "Senator",
+        "Committee": "Committee chair",
+        "Judicial": "Judicial branch"}
 
 HEAD = PatternFill("solid", fgColor="0B0B0C")
 HEADF = Font(color="FFFFFF", bold=True, size=10)
-WARN = PatternFill("solid", fgColor="FDECEC")
 
 
-def sheet(wb, title, headers, data, widths, freeze="A2", fill=None):
+def sheet(wb, title, headers, data, widths, freeze="A2"):
     ws = wb.create_sheet(title)
     ws.append(headers)
     for c in range(1, len(headers) + 1):
@@ -310,10 +97,6 @@ def sheet(wb, title, headers, data, widths, freeze="A2", fill=None):
         cell.alignment = Alignment(vertical="center", wrap_text=True)
     for row in data:
         ws.append(row)
-    if fill:
-        for r in range(2, ws.max_row + 1):
-            for c in range(1, len(headers) + 1):
-                ws.cell(row=r, column=c).fill = fill
     for i, w in enumerate(widths, start=1):
         ws.column_dimensions[get_column_letter(i)].width = w
     ws.freeze_panes = freeze
@@ -323,149 +106,166 @@ def sheet(wb, title, headers, data, widths, freeze="A2", fill=None):
     return ws
 
 
+def read(path):
+    if not path.is_file():
+        sys.exit(f"{path} is missing. Run python3 scripts/build_roster.py first.")
+    with path.open(newline="") as f:
+        return list(csv.DictReader(f))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("-o", "--out", default=str(ROOT / "SGA-60-roster.xlsx"))
     args = ap.parse_args()
 
-    doc = json.loads(DATA.read_text())
-    years = doc["years"]
-    aliases = load_aliases()
-    rows, bad = collect(years, aliases)
-
-    key = lambda r: (str(r["start"]), ORDER.get(r["category"], 9),
-                     r["last"].lower(), r["first"].lower())
-    rows.sort(key=key)
-    bad.sort(key=key)
+    terms = read(ROSTER)
+    people = read(PEOPLE)
 
     wb = Workbook()
     wb.remove(wb.active)
 
-    cols = ["Last name", "First name", "Middle", "Suffix", "Known as",
-            "Full name as recorded", "Academic year", "Year began", "Category",
-            "Office held", "Held the regent seat", "Name verified",
-            "Year confidence", "Plaque reads", "Has a profile",
-            "What the archive says", "Source", "Source link"]
-    widths = [18, 15, 12, 7, 12, 26, 13, 11, 17, 34, 15, 12, 14, 12, 12, 60,
-              34, 46]
+    # ---- every term served
+    rows = []
+    for t in terms:
+        first, middle, last, suffix, nick = split_name(t["person"])
+        recorded = t.get("name_as_recorded", "")
+        rows.append([
+            last, first, middle, suffix, nick, t["person"],
+            recorded if recorded != t["person"] else "",
+            t["year"], (t["year"] or "")[:4],
+            BODY.get(t.get("body", ""), t.get("body", "")),
+            t.get("office", ""),
+            "yes" if t.get("acting") else "",
+            "yes" if t.get("also_regent") else "",
+            t.get("name_verified", ""), t.get("plaque_term", ""),
+            t.get("what_they_did", ""),
+            t.get("source", ""), t.get("source_url", ""),
+        ])
+    rows.sort(key=lambda r: (str(r[8]), r[0].lower(), r[1].lower()))
 
-    def to_row(r):
-        return [r["last"], r["first"], r["middle"], r["suffix"], r["nick"],
-                r["name"], r["year"], r["start"], r["category"], r["office"],
-                r["regent"], r["verified"], r["confidence"], r["plaque"],
-                r["profile"], r["note"], r["src"], r["url"]]
+    sheet(wb, "Every term served",
+          ["Last name", "First name", "Middle", "Suffix", "Known as",
+           "Full name", "Recorded in the source as", "Academic year",
+           "Year began", "Branch", "Office held", "Acting",
+           "Also held the regent seat", "Name verified", "Plaque reads",
+           "What the archive says they did", "Source", "Source link"],
+          rows,
+          [18, 15, 12, 7, 12, 24, 24, 13, 11, 24, 34, 8, 15, 12, 12, 70, 34, 46])
 
-    sheet(wb, "Every office held", cols, [to_row(r) for r in rows], widths)
+    # ---- one row per person
+    def tidy_offices(text):
+        """The leader record and the executive record of a presidency are two
+        rows in the archive and both reach the roster, so the office list can
+        read "president (2023-24); President (2023-24)". Same office, same
+        year, one mention."""
+        seen, out = set(), []
+        for part in (text or "").split(";"):
+            part = part.strip()
+            if not part:
+                continue
+            key = part.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append(part[0].upper() + part[1:] if part else part)
+        return "; ".join(out)
 
-    # one row per person, however many offices they held
-    people = defaultdict(list)
-    for r in rows:
-        people[r["person"]].append(r)
-    idx = []
-    for person, rs in people.items():
-        rs.sort(key=lambda r: str(r["start"]))
-        best = min(rs, key=lambda r: ORDER.get(r["category"], 9))
-        yrs = sorted({r["year"] for r in rs})
-        offices = []
-        for r in rs:
-            o = f'{r["office"]} ({r["year"]})'
-            if o not in offices:
-                offices.append(o)
-        idx.append([best["last"], best["first"], best["nick"], person,
-                    len(yrs), yrs[0], yrs[-1], "; ".join(yrs),
-                    best["category"], "; ".join(offices)])
-    idx.sort(key=lambda r: (r[0].lower(), r[1].lower()))
-    sheet(wb, "People", ["Last name", "First name", "Known as",
-                         "Name used by the archive", "Years served",
-                         "First year", "Last year", "Every year",
-                         "Highest office", "Every office held"],
-          idx, [18, 15, 12, 26, 12, 11, 11, 34, 17, 72])
+    prows = []
+    for p in people:
+        first, middle, last, suffix, nick = split_name(p["person"])
+        prows.append([
+            last, first, middle, suffix, nick, p["person"],
+            p.get("also_recorded_as", ""),
+            p.get("first_year", ""), p.get("last_year", ""),
+            int(p["years_served"]) if str(p.get("years_served", "")).isdigit()
+            else p.get("years_served", ""),
+            p.get("years", ""),
+            (lambda o: o[0].upper() + o[1:] if o else o)(
+                p.get("most_senior_office", "")),
+            tidy_offices(p.get("all_offices", "")),
+            p.get("what_they_did", ""),
+            p.get("sources", ""),
+        ])
+    prows.sort(key=lambda r: (r[0].lower(), r[1].lower()))
 
-    badcols = cols[:10] + ["Original text in the file", "What is wrong with it",
-                           "Source", "Source link"]
-    sheet(wb, "Needs checking",
-          badcols,
-          [[r["last"], r["first"], r["middle"], r["suffix"], r["nick"],
-            r["name"], r["year"], r["start"], r["category"], r["office"],
-            r["original"], r["flag"], r["src"], r["url"]] for r in bad],
-          widths[:10] + [30, 46, 34, 46], fill=WARN)
+    sheet(wb, "People",
+          ["Last name", "First name", "Middle", "Suffix", "Known as",
+           "Full name", "Also recorded as", "First year", "Last year",
+           "Years served", "Every year", "Most senior office",
+           "Every office held", "What the archive says they did", "Sources"],
+          prows,
+          [18, 15, 12, 7, 12, 24, 26, 11, 11, 12, 30, 30, 60, 70, 40])
 
-    n_pres = len({r["person"] for r in rows if r["category"] == "President"})
-    n_reg = len({r["person"] for r in rows if r["regent"] == "yes"})
-    n_exec = sum(1 for r in rows if r["category"] == "Executive officer")
-    n_so = sum(1 for r in rows if r["category"] == "Senate officer")
-    n_sen = sum(1 for r in rows if r["category"] == "Senator")
-    yrs_sen = sorted({r["year"] for r in rows if r["category"] == "Senator"})
-    missing_sen = [y["id"] for y in years if y["id"] not in yrs_sen]
-    per_year = defaultdict(int)
-    for r in rows:
-        if r["category"] == "Senator":
-            per_year[r["year"]] += 1
-    thin = sorted(per_year.items(), key=lambda kv: kv[1])[:5]
+    # ---- what is in here, and how complete it is
+    by_body = defaultdict(int)
+    for t in terms:
+        by_body[BODY.get(t.get("body", ""), t.get("body", ""))] += 1
+    sen_years = defaultdict(int)
+    for t in terms:
+        if t.get("body") == "Senate":
+            sen_years[t["year"]] += 1
+    all_years = sorted({t["year"] for t in terms})
+    no_senators = [y for y in all_years if y not in sen_years]
+    thin = sorted(sen_years.items(), key=lambda kv: kv[1])[:5]
+    with_narrative = sum(1 for t in terms if (t.get("what_they_did") or "").strip())
 
     notes = [
         ["What this is",
-         "Every person the SGA 60 archive records as holding an office in "
-         "student government, 1966-67 to 2026-27. One row per person per "
-         "office per year, so somebody who served three years appears three "
-         "times. The People sheet has one row each instead."],
+         "Everyone the SGA 60 archive records as holding an office in student "
+         "government at Western Kentucky University, 1966-67 to 2026-27. The "
+         "first sheet has one row per person per office per year, so somebody "
+         "who served three years appears three times. The People sheet has "
+         "one row each instead."],
         ["Where it comes from",
-         "data/years.json in the SGA 60 archive. Regenerate this file with "
-         "python3 scripts/make_roster.py after any research lands."],
+         "site/roster.csv and site/roster-people.csv, which the site build "
+         "compiles out of data/years.json. To refresh this workbook after new "
+         "research lands: python3 scripts/build_roster.py, then python3 "
+         "scripts/make_roster.py."],
         ["", ""],
-        ["Distinct people who were student body president", n_pres],
-        ["Distinct people who held the student regent seat", n_reg],
-        ["Executive officer rows (one per person per year)", n_exec],
-        ["Senate officer rows (Speaker, clerks, committee chairs)", n_so],
-        ["Rank and file senator rows", n_sen],
-        ["Distinct people in this workbook", len(people)],
-        ["Rows in total on the main sheet", len(rows)],
-        ["Rows on the Needs checking sheet", len(bad)],
+        ["Terms recorded", len(terms)],
+        ["Distinct people", len(people)],
+        ["Academic years covered", len(all_years)],
+        ["Terms with an account of what the person did", with_narrative],
         ["", ""],
-        ["How complete the Senate roll is",
-         (f"Senators are recorded for {len(yrs_sen)} of {len(years)} academic "
-          f"years. The years with none at all are "
-          f"{', '.join(missing_sen) if missing_sen else 'none'}. Even a year "
-          "that has senators is very unlikely to have all of them: the roll "
-          "was rebuilt from whichever minutes and rosters survive, and a "
-          "meeting nobody minuted leaves no trace. Treat a year's count as a "
-          "floor, not a total. The thinnest years here are "
-          + ", ".join(f"{y} ({n})" for y, n in thin) + "."
-          if yrs_sen else
-          "No rank and file senator is recorded. Every name here held an "
-          "executive office, a Senate office such as Speaker, or the "
-          "presidency.")],
+    ]
+    for k in sorted(by_body, key=lambda k: -by_body[k]):
+        notes.append([f"Terms recorded, {k.lower()}", by_body[k]])
+    notes += [
         ["", ""],
-        ["Why some rows are quarantined",
-         "The Needs checking sheet holds rows whose name or office was "
-         "damaged before it reached the archive: an office title glued to the "
-         "front of a name, an office cut off mid-phrase, or an entry that "
-         "looks like it is not an SGA officer at all. They are kept out of "
-         "the main sheet so nothing misleading is circulated, and kept in the "
-         "workbook so the work is not lost. Each shows its original text."],
+        ["How complete this is",
+         f"Senators are recorded for {len(sen_years)} of {len(all_years)} "
+         f"years. The years with none at all are "
+         f"{', '.join(no_senators) if no_senators else 'none'}. Even a year "
+         "with senators is unlikely to have all of them: the roll was rebuilt "
+         "from whichever minutes and rosters survive, and a meeting nobody "
+         "minuted leaves no trace. Treat every year's count as a floor rather "
+         "than a total. The thinnest are "
+         + ", ".join(f"{y} ({n})" for y, n in thin) + "."],
         ["Names",
-         "Where the archive holds several spellings for one person, the "
-         "People sheet uses the settled one from data/name-aliases.json. The "
-         "Every office held sheet keeps each source's own spelling, which is "
-         "why a name there may differ."],
+         "Full name is the spelling the archive settled on. Where a source "
+         "spelled it differently, that spelling is kept beside it, so Christy "
+         "Vogt and Christy Mollozzi stay visibly the same person. First and "
+         "last name are split from the full name for sorting; a name someone "
+         "actually went by, like Bucky or Eddie, is kept in its own column."],
         ["Empty cells",
          "An empty cell means the archive holds nothing for that field. It "
          "does not mean the thing is untrue. A thin record is a thin record, "
          "not a quiet year."],
     ]
-    ws = sheet(wb, "Read me first", ["", ""], notes, [46, 104], freeze="A1")
+
+    ws = sheet(wb, "Read me first", ["", ""], notes, [48, 104], freeze="A1")
     for r in range(1, ws.max_row + 1):
         ws.cell(row=r, column=1).font = Font(bold=True, size=10)
         ws.cell(row=r, column=2).alignment = Alignment(wrap_text=True,
                                                        vertical="top")
-    wb.move_sheet("Read me first", offset=-4)
+    wb.move_sheet("Read me first", offset=-2)
 
     wb.save(args.out)
     print(f"wrote {args.out}")
-    print(f"  {len(rows)} office-year rows, {len(people)} distinct people")
-    print(f"  {n_pres} presidents, {n_reg} regents, {n_exec} executive, "
-          f"{n_so} senate officers, {n_sen} senators")
-    print(f"  {len(bad)} rows quarantined for checking")
+    print(f"  {len(terms)} terms, {len(people)} people, "
+          f"{len(all_years)} academic years")
+    for k in sorted(by_body, key=lambda k: -by_body[k]):
+        print(f"  {by_body[k]:5d}  {k}")
 
 
 if __name__ == "__main__":
