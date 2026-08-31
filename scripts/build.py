@@ -477,7 +477,8 @@ def name_searches(name):
 
 
 # ---------------------------------------------------------------- shell
-NAV_ITEMS = [("index.html", "The board"), ("story.html", "The story"),
+NAV_ITEMS = [("index.html", "The board"), ("search.html", "Search"),
+             ("story.html", "The story"),
              ("voices.html", "In their own words"),
              ("patterns.html", "Patterns"), ("events.html", "What SGA put on"),
              ("irregular.html", "Irregular terms"),
@@ -7137,6 +7138,183 @@ def render_voices(posts, ys):
                  "student government.", body, VOICES_CSS, 0, "voices.html")
 
 
+SEARCH_CSS = """
+.shead{padding:52px 0 22px;border-bottom:1px solid var(--line)}
+.shead h1{font-size:clamp(2rem,5vw,2.9rem);margin:10px 0 0}
+.shead .lede{font-size:1.1rem;color:var(--ink2);max-width:var(--measure);margin:16px 0 0}
+.sbox{margin:26px 0 0;max-width:44rem}
+#q{width:100%;font:inherit;font-size:1.25rem;padding:14px 16px;border:2px solid var(--line);
+ border-radius:6px;background:var(--paper);color:var(--ink)}
+#q:focus{outline:none;border-color:var(--red)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.filters button{font:inherit;font-size:.86rem;padding:6px 14px;border-radius:999px;cursor:pointer;
+ border:1px solid var(--line);background:transparent;color:var(--ink2)}
+.filters button[aria-pressed=true]{background:var(--black);color:#fff;border-color:var(--black)}
+.count{color:var(--ink3);font-size:.9rem;margin:20px 0 0}
+.results{margin:10px 0 90px;max-width:52rem}
+.res{display:block;padding:13px 0;border-bottom:1px solid var(--line2);text-decoration:none;color:inherit}
+.res:hover{background:var(--paper2)}
+.res .kind{font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink3)}
+.res .t{font-weight:600;color:var(--ink);margin:2px 0 0;font-size:1.02rem}
+.res .s{color:var(--ink2);font-size:.9rem;margin:2px 0 0}
+.res mark{background:#FFF1A8;color:inherit;padding:0 1px}
+.empty2{color:var(--ink3);padding:26px 0}
+"""
+
+
+def render_search(n_people, n_years, n_entries, n_leg):
+    body = f"""
+<div class="wrap"><header class="shead">
+ <p class="lab">Everything at once</p>
+ <h1>Search the archive</h1>
+ <p class="lede">Every person, every academic year, every dated entry and every
+ piece of legislation the record holds. Start typing and it narrows as you go.</p>
+ <div class="sbox">
+  <label class="lab" for="q">Search</label>
+  <input id="q" type="search" autocomplete="off" autofocus
+         placeholder="a name, a year, a committee, an event">
+  <div class="filters" id="filters">
+   <button data-k="" aria-pressed="true">Everything</button>
+   <button data-k="person" aria-pressed="false">People ({n_people})</button>
+   <button data-k="year" aria-pressed="false">Years ({n_years})</button>
+   <button data-k="entry" aria-pressed="false">Entries ({n_entries})</button>
+   <button data-k="legislation" aria-pressed="false">Legislation ({n_leg})</button>
+  </div>
+ </div>
+ <p class="count" id="count">Loading the index&hellip;</p>
+</header>
+<div class="results" id="results"></div></div>
+
+<script>
+(function () {{
+  var IDX = [], kind = "", ready = false;
+  var q = document.getElementById("q"), out = document.getElementById("results"),
+      count = document.getElementById("count");
+
+  function fold(s) {{
+    return (s || "").toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }}
+
+  fetch("search-index.json").then(function (r) {{ return r.json(); }})
+    .then(function (d) {{
+      IDX = d; ready = true;
+      count.textContent = d.length.toLocaleString() +
+        " things to search. Type to begin.";
+      if (q.value) run();
+    }})
+    .catch(function () {{
+      count.textContent = "The index could not be loaded.";
+    }});
+
+  function mark(text, terms) {{
+    var el = document.createElement("span");
+    var low = fold(text), used = [];
+    terms.forEach(function (t) {{
+      var i = low.indexOf(t);
+      if (i >= 0) used.push([i, i + t.length]);
+    }});
+    if (!used.length) {{ el.textContent = text; return el; }}
+    used.sort(function (a, b) {{ return a[0] - b[0]; }});
+    var pos = 0;
+    used.forEach(function (r) {{
+      if (r[0] < pos) return;
+      el.appendChild(document.createTextNode(text.slice(pos, r[0])));
+      var m = document.createElement("mark");
+      m.textContent = text.slice(r[0], r[1]);
+      el.appendChild(m);
+      pos = r[1];
+    }});
+    el.appendChild(document.createTextNode(text.slice(pos)));
+    return el;
+  }}
+
+  var KIND = {{person: "Person", year: "Academic year",
+               entry: "Entry", legislation: "Legislation"}};
+
+  function run() {{
+    if (!ready) return;
+    var raw = q.value.trim();
+    out.textContent = "";
+    if (raw.length < 2) {{
+      count.textContent = IDX.length.toLocaleString() +
+        " things to search. Type to begin.";
+      return;
+    }}
+    var terms = fold(raw).split(/\s+/).filter(Boolean);
+    var hits = [];
+    for (var i = 0; i < IDX.length; i++) {{
+      var r = IDX[i];
+      if (kind && r.k !== kind) continue;
+      var ok = true;
+      for (var j = 0; j < terms.length; j++) {{
+        if (r.x.indexOf(terms[j]) < 0) {{ ok = false; break; }}
+      }}
+      if (!ok) continue;
+      // A person outranks anything written about them, and a title whose
+      // first or last word begins with what was typed outranks a mention
+      // buried in a sentence. Searching a surname should find the human.
+      var ft = fold(r.t), words = ft.split(/\s+/);
+      var starts = words.some(function (w) {{ return w.indexOf(terms[0]) === 0; }});
+      var score = (r.k === "person" ? 0 : r.k === "year" ? 4 : 8)
+                + (ft === terms.join(" ") ? -20 : 0)
+                + (starts ? 0 : 2);
+      hits.push([score, r]);
+      if (hits.length > 4000) break;
+    }}
+    hits.sort(function (a, b) {{ return a[0] - b[0]; }});
+    count.textContent = hits.length
+      ? hits.length.toLocaleString() + (hits.length === 1 ? " result" : " results")
+        + (hits.length > 300 ? ", showing the first 300" : "")
+      : "Nothing matches that.";
+    var frag = document.createDocumentFragment();
+    hits.slice(0, 300).forEach(function (h) {{
+      var r = h[1];
+      var a = document.createElement("a");
+      a.className = "res"; a.href = r.u;
+      var k = document.createElement("p");
+      k.className = "kind"; k.textContent = KIND[r.k] || r.k;
+      var t = document.createElement("p");
+      t.className = "t"; t.appendChild(mark(r.t, terms));
+      var s = document.createElement("p");
+      s.className = "s"; s.textContent = r.s || "";
+      a.appendChild(k); a.appendChild(t); if (r.s) a.appendChild(s);
+      frag.appendChild(a);
+    }});
+    if (!hits.length) {{
+      var e = document.createElement("p");
+      e.className = "empty2";
+      e.textContent = "Try a surname, an academic year like 1974-75, or a "
+        + "committee name. A thin year is a thin record, not a quiet one.";
+      frag.appendChild(e);
+    }}
+    out.appendChild(frag);
+  }}
+
+  var timer;
+  q.addEventListener("input", function () {{
+    clearTimeout(timer); timer = setTimeout(run, 110);
+  }});
+
+  document.getElementById("filters").addEventListener("click", function (e) {{
+    var b = e.target.closest("button"); if (!b) return;
+    kind = b.getAttribute("data-k");
+    Array.prototype.forEach.call(this.querySelectorAll("button"), function (x) {{
+      x.setAttribute("aria-pressed", x === b ? "true" : "false");
+    }});
+    run();
+  }});
+
+  // arriving from elsewhere with ?q=
+  var pre = new URLSearchParams(location.search).get("q");
+  if (pre) {{ q.value = pre; }}
+}})();
+</script>"""
+    return shell("Search - SGA 60",
+                 "Search every person, year, entry and piece of legislation in "
+                 "the SGA 60 archive.", body, SEARCH_CSS, 0, "search.html")
+
+
 def render_contrib_page(name, title, desc):
     """One of the three contributor pages, wrapped in the site's own shell."""
     frag = PAGES / f"{name}.html"
@@ -7217,6 +7395,28 @@ def main():
     (SITE / "legislation.html").write_text(render_legislation(leg))
     (SITE / "corrections.html").write_text(repair_anchors(render_corrections(ys)))
     (SITE / "voices.html").write_text(repair_anchors(render_voices(posts, ys)))
+
+    # the search index, and the page that reads it
+    try:
+        import csv as _csv
+        import build_search
+        people_rows = []
+        rp = SITE / "roster-people.csv"
+        if rp.is_file():
+            with rp.open(newline="") as f:
+                people_rows = list(_csv.DictReader(f))
+        idx = build_search.build(ys, people_rows, leg, None)
+        (SITE / "search-index.json").write_text(
+            json.dumps(idx, separators=(",", ":"), ensure_ascii=False))
+        counts = {k: sum(1 for r in idx if r["k"] == k)
+                  for k in ("person", "year", "entry", "legislation")}
+        (SITE / "search.html").write_text(repair_anchors(render_search(
+            counts["person"], counts["year"], counts["entry"],
+            counts["legislation"])))
+        print(f'search index: {len(idx)} records '
+              f'({(SITE / "search-index.json").stat().st_size // 1024} KB)')
+    except Exception as e:
+        print(f"!! the search index was not built: {e}")
 
     # the contributor pages: sign in, edit your year, and the editor's desk
     for name, title, desc in (

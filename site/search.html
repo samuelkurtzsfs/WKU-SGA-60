@@ -2,11 +2,11 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0B0B0C">
-<meta name="description" content="Scope, arrangement, sources and conditions of use for SGA 60, a year-by-year record of student government at Western Kentucky University.">
+<meta name="description" content="Search every person, year, entry and piece of legislation in the SGA 60 archive.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="About and method · SGA 60">
-<meta property="og:description" content="Scope, arrangement, sources and conditions of use for SGA 60, a year-by-year record of student government at Western Kentucky University.">
-<title>About and method · SGA 60</title>
+<meta property="og:title" content="Search - SGA 60">
+<meta property="og:description" content="Search every person, year, entry and piece of legislation in the SGA 60 archive.">
+<title>Search - SGA 60</title>
 <style>
 :root{
  --red:#B01E24; --red-dark:#8A171C; --black:#0B0B0C;
@@ -255,203 +255,178 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
  h2.sec{break-after:avoid}
  .ev,.doc,.leader{break-inside:avoid}
 }
+
+.shead{padding:52px 0 22px;border-bottom:1px solid var(--line)}
+.shead h1{font-size:clamp(2rem,5vw,2.9rem);margin:10px 0 0}
+.shead .lede{font-size:1.1rem;color:var(--ink2);max-width:var(--measure);margin:16px 0 0}
+.sbox{margin:26px 0 0;max-width:44rem}
+#q{width:100%;font:inherit;font-size:1.25rem;padding:14px 16px;border:2px solid var(--line);
+ border-radius:6px;background:var(--paper);color:var(--ink)}
+#q:focus{outline:none;border-color:var(--red)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.filters button{font:inherit;font-size:.86rem;padding:6px 14px;border-radius:999px;cursor:pointer;
+ border:1px solid var(--line);background:transparent;color:var(--ink2)}
+.filters button[aria-pressed=true]{background:var(--black);color:#fff;border-color:var(--black)}
+.count{color:var(--ink3);font-size:.9rem;margin:20px 0 0}
+.results{margin:10px 0 90px;max-width:52rem}
+.res{display:block;padding:13px 0;border-bottom:1px solid var(--line2);text-decoration:none;color:inherit}
+.res:hover{background:var(--paper2)}
+.res .kind{font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink3)}
+.res .t{font-weight:600;color:var(--ink);margin:2px 0 0;font-size:1.02rem}
+.res .s{color:var(--ink2);font-size:.9rem;margin:2px 0 0}
+.res mark{background:#FFF1A8;color:inherit;padding:0 1px}
+.empty2{color:var(--ink3);padding:26px 0}
 </style></head><body>
 <a class="skip" href="#main">Skip to the record</a>
-<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="index.html">SGA <b>60</b></a><ul><li><a href="index.html">The board</a></li><li><a href="search.html">Search</a></li><li><a href="story.html">The story</a></li><li><a href="voices.html">In their own words</a></li><li><a href="patterns.html">Patterns</a></li><li><a href="events.html">What SGA put on</a></li><li><a href="irregular.html">Irregular terms</a></li><li><a href="branches.html">How it was built</a></li><li><a href="officers.html">The officers</a></li><li><a href="history.html">Timeline</a></li><li><a href="legislation.html">Legislation</a></li><li><a href="corrections.html">Corrections</a></li><li><a href="sources.html">Sources</a></li><li><a href="about.html" aria-current="page">About and method</a></li></ul></div></nav>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="index.html">SGA <b>60</b></a><ul><li><a href="index.html">The board</a></li><li><a href="search.html" aria-current="page">Search</a></li><li><a href="story.html">The story</a></li><li><a href="voices.html">In their own words</a></li><li><a href="patterns.html">Patterns</a></li><li><a href="events.html">What SGA put on</a></li><li><a href="irregular.html">Irregular terms</a></li><li><a href="branches.html">How it was built</a></li><li><a href="officers.html">The officers</a></li><li><a href="history.html">Timeline</a></li><li><a href="legislation.html">Legislation</a></li><li><a href="corrections.html">Corrections</a></li><li><a href="sources.html">Sources</a></li><li><a href="about.html">About and method</a></li></ul></div></nav>
 <main id="main">
 
-<header class="head"><div class="wrap">
- <p class="kicker">Scope, method and conditions</p>
- <h1>About this archive</h1>
- <p class="lede">SGA 60 is a record of the Student Government Association at Western Kentucky
- University, from the ratification of the Associated Students constitution in April 1966 to
- the present.</p>
-</div></header>
-<div class="wrap"><div class="body">
+<div class="wrap"><header class="shead">
+ <p class="lab">Everything at once</p>
+ <h1>Search the archive</h1>
+ <p class="lede">Every person, every academic year, every dated entry and every
+ piece of legislation the record holds. Start typing and it narrows as you go.</p>
+ <div class="sbox">
+  <label class="lab" for="q">Search</label>
+  <input id="q" type="search" autocomplete="off" autofocus
+         placeholder="a name, a year, a committee, an event">
+  <div class="filters" id="filters">
+   <button data-k="" aria-pressed="true">Everything</button>
+   <button data-k="person" aria-pressed="false">People (1827)</button>
+   <button data-k="year" aria-pressed="false">Years (61)</button>
+   <button data-k="entry" aria-pressed="false">Entries (1980)</button>
+   <button data-k="legislation" aria-pressed="false">Legislation (1111)</button>
+  </div>
+ </div>
+ <p class="count" id="count">Loading the index&hellip;</p>
+</header>
+<div class="results" id="results"></div></div>
 
-<h2 class="sec">The two offices</h2>
-<div class="prose">
-<p>The Kentucky legislature added a student to every state university's governing board in
-1968. At Western the seat and the presidency of the student body have usually been held by
-the same person, but they are two offices, and the record turns on the difference.</p>
-<p>As the statute stood in 1972, the student regent <em>was</em> the student body president
-by right &mdash; unless that president failed a test. KRS 164.320(8) then read that if the
-president "is not a full-time student who maintains permanent residency in the Commonwealth
-of Kentucky, a special election shall be held to select a full-time student who does maintain
-permanent residency in this Commonwealth as the student member."
-(<a class="ext" href="https://files.eric.ed.gov/fulltext/ED067026.pdf" rel="noopener">Kentucky
-Revised Statutes Pertaining to Higher Education, June 1972, p. 12</a>)</p>
-<p>That residency bar is why the offices came apart in the archive's early years. Bill
-Straeffer, elected president in 1968, was an out-of-state student, so the Congress of
-Associated Students elected Paul Gerard to the Board seat instead. The <cite>Herald</cite>
-explained the same mechanism again in September 1972: "The student regent normally is the
-president of the student governing body, if he is a Kentucky resident."</p>
-<p>The requirement did not merely lapse; it was reversed. By the 1997 amendment the statute
-said the student member "may be an out-of-state resident if applicable," and that permission
-stayed on the books for at least sixteen years. The 2016 and 2017 rewrite dropped residency
-language altogether. Today
-(<a class="ext" href="https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=57974" rel="noopener">KRS
-164.321(1)(j)</a>) the student member must be the elected student body president and a
-full-time student, and nothing more; the residency conditions that remain in that section
-apply only to the governor's appointees.</p>
-<p>So a single name on the plaque after 1968 means one person holding both offices. More than one
-name can mean either of two different things, and the difference matters. In six years the
-offices were genuinely split, with someone other than the president on the Board: 1968-69 and
-1969-70 (Paul Gerard), 1972-73 (Michael Fiorella), 1974-75 (Gregory McKinney), 1981-82
-(Sandra Norfleet), and 2008-09, when Johnathon Boles resigned the presidency in January 2009,
-Kayla Shelton succeeded him without taking the Board seat, and Reagan Gilley won it in a
-special election the following month.</p>
+<script>
+(function () {
+  var IDX = [], kind = "", ready = false;
+  var q = document.getElementById("q"), out = document.getElementById("results"),
+      count = document.getElementById("count");
 
-<p>In the other years the presidency simply changed hands partway through, and the plaque
-records the change poorly or not at all. Four presidents have left office early: Marcel Bush
-in January 1982, Nick Todd in July 2004, Rob Watkins in November 2006 and Johnathon Boles in
-January 2009. Each was followed by someone who finished the year, and this archive counts
-those people as presidents, because they held the office, however briefly. The wall does not.
-Nick Todd, elected in March 2004 and resigned by July, has no plate at all; Katie
-Dawson, who filled the office through that summer, has one only for the year she was later
-elected to; and Jeanne Johnson, who took over in December 2006, is plated only for the full
-term she won afterwards. No president in this record has ever been removed by impeachment,
-though the attempt has been made more than once.</p>
-</div>
+  function fold(s) {
+    return (s || "").toLowerCase()
+      .normalize("NFD").replace(/[̀-ͯ]/g, "");
+  }
 
-<h2 class="sec">Scope and content</h2>
-<div class="prose">
-<p>The archive holds one page for each of the 61 academic years from 1966-67 to
-2026-27, 1980 dated entries, and 66 people who have been president or student
-regent, with their terms as far as the record supports them. Those 66 are 60 who
-were president, 5 who held the seat on the Board of Regents and never the presidency,
-and one name the archive cannot yet place in either office. They are counted once each, however
-many years they served, which is why the figure is smaller than the 73 terms on record. Sixty years of student government come to
-61 academic years, which looks like an error and is not: the constitution was ratified
-in April 1966, so 1966-67 is the first year and 2025-26 the sixtieth, the
-anniversary year. The 61st, 2026-27, is the one running now, and it is the
-one in which the sixtieth anniversary is being marked: sixty calendar years from the spring of
-1966 fall in the spring of 2026, at the end of the sixtieth academic year, and the occasion is
-being kept the following autumn. So the archive covers sixty years of student government across
-sixty-one academic years, and is published in the sixty-first. 60 people have been student body
-president, holding 66 terms between them, and 57 people have held the student
-seat on the Board of Regents since it was created in April 1968; each of them is given their
-number in the line on their year page. The two counts differ because for most of the last
-sixty years one person held both offices, and because of 1982-83, the one year since the seat
-was created where the archive has no name for it at all: Margaret Ragan wrote in February 1983
-that the presidency and the seat were separate posts, and who held the other one has not yet
-been found. Entries cover the organization, not only its presidents: elections and turnout,
-budgets, appointments, committee work, resolutions that passed and resolutions that failed,
-and the fights with the administration and the <cite>Herald</cite>. Campus events that shaped
-a year are included where they bear on student government and are marked as such.</p>
-<p>631 of those entries record something student government put on for the campus
-rather than something it debated: the concerts it booked, the lecturers it paid, the films it
-screened, the festivals and annual traditions it ran, and the standing services it kept going.
-Those entries carry a kind, which is what lets the same record appear on
-<a href="events.html">its own page</a> grouped by what sort of thing it was, in a summary on
-each president's year page, and as a filter on the timeline, without being stored more than
-once.</p>
-<p>Alongside the entries the site holds 73 portraits, 61 year photographs,
-120 archival documents mirrored as files, 1111 pieces of legislation, and
-2318 further lines from the <cite>Herald</cite> index that have been recorded but not
-yet worked into the record.</p>
-</div>
+  fetch("search-index.json").then(function (r) { return r.json(); })
+    .then(function (d) {
+      IDX = d; ready = true;
+      count.textContent = d.length.toLocaleString() +
+        " things to search. Type to begin.";
+      if (q.value) run();
+    })
+    .catch(function () {
+      count.textContent = "The index could not be loaded.";
+    });
 
-<h2 class="sec">Arrangement</h2>
-<div class="prose">
-<p>The spine is the academic year, not the person. The plaque is person-keyed and several people report their year on it is wrong. Years are the stable spine; people are attached to years and can be moved.</p>
-<p>Within a year, entries run in date order. A date is shown only as precisely as its source
-gives it: a day where the source gives a day, a month where it gives a month, a year where it
-gives only a year.</p>
-</div>
+  function mark(text, terms) {
+    var el = document.createElement("span");
+    var low = fold(text), used = [];
+    terms.forEach(function (t) {
+      var i = low.indexOf(t);
+      if (i >= 0) used.push([i, i + t.length]);
+    });
+    if (!used.length) { el.textContent = text; return el; }
+    used.sort(function (a, b) { return a[0] - b[0]; });
+    var pos = 0;
+    used.forEach(function (r) {
+      if (r[0] < pos) return;
+      el.appendChild(document.createTextNode(text.slice(pos, r[0])));
+      var m = document.createElement("mark");
+      m.textContent = text.slice(r[0], r[1]);
+      el.appendChild(m);
+      pos = r[1];
+    });
+    el.appendChild(document.createTextNode(text.slice(pos)));
+    return el;
+  }
 
-<h2 class="sec">Who counts as a president</h2>
-<div class="prose">
-<p>Anyone who held the office, for any length of time, by any route. Elected in April and served
-the year; won a special election; succeeded to it as vice president when the president resigned;
-or filled it in an acting capacity. Duration is not a qualification. Someone who held the office
-for a week held it, and is counted and named here with everyone else.</p>
-<p>This is not how the office has usually been recorded. The plaque in the Chambers gives one name
-to each year, and so does every later list, including the history page on the university's own
-site. A list written afterwards cannot show a year in which the presidency changed hands, so the
-people who finished those years quietly drop out of the count. Each of them is on this site,
-whether or not any plate carries their name, and they are gathered on the
-<a href="irregular.html">irregular terms page</a>.</p>
-<p>A person is counted once, at the first time they held the office, however many terms they serve
-afterwards. Two plates are not two presidents when the surname changed in between, which has
-happened at least four times here.</p>
-</div>
+  var KIND = {person: "Person", year: "Academic year",
+               entry: "Entry", legislation: "Legislation"};
 
-<h2 class="sec">The plaque, and why it is not trusted</h2>
-<div class="prose">
-<p>The names come first from the plaque in the SGA Chambers. People who served have reported
-that their year on it is wrong. Every plate is therefore treated as a claim to verify rather
-than a fact to copy, and no name is moved silently. Where a term has been moved, the plaque's
-reading is kept and printed beside the corrected one on the year page and on the
-<a href="corrections.html">corrections page</a>.</p>
-</div>
+  function run() {
+    if (!ready) return;
+    var raw = q.value.trim();
+    out.textContent = "";
+    if (raw.length < 2) {
+      count.textContent = IDX.length.toLocaleString() +
+        " things to search. Type to begin.";
+      return;
+    }
+    var terms = fold(raw).split(/\s+/).filter(Boolean);
+    var hits = [];
+    for (var i = 0; i < IDX.length; i++) {
+      var r = IDX[i];
+      if (kind && r.k !== kind) continue;
+      var ok = true;
+      for (var j = 0; j < terms.length; j++) {
+        if (r.x.indexOf(terms[j]) < 0) { ok = false; break; }
+      }
+      if (!ok) continue;
+      // A person outranks anything written about them, and a title whose
+      // first or last word begins with what was typed outranks a mention
+      // buried in a sentence. Searching a surname should find the human.
+      var ft = fold(r.t), words = ft.split(/\s+/);
+      var starts = words.some(function (w) { return w.indexOf(terms[0]) === 0; });
+      var score = (r.k === "person" ? 0 : r.k === "year" ? 4 : 8)
+                + (ft === terms.join(" ") ? -20 : 0)
+                + (starts ? 0 : 2);
+      hits.push([score, r]);
+      if (hits.length > 4000) break;
+    }
+    hits.sort(function (a, b) { return a[0] - b[0]; });
+    count.textContent = hits.length
+      ? hits.length.toLocaleString() + (hits.length === 1 ? " result" : " results")
+        + (hits.length > 300 ? ", showing the first 300" : "")
+      : "Nothing matches that.";
+    var frag = document.createDocumentFragment();
+    hits.slice(0, 300).forEach(function (h) {
+      var r = h[1];
+      var a = document.createElement("a");
+      a.className = "res"; a.href = r.u;
+      var k = document.createElement("p");
+      k.className = "kind"; k.textContent = KIND[r.k] || r.k;
+      var t = document.createElement("p");
+      t.className = "t"; t.appendChild(mark(r.t, terms));
+      var s = document.createElement("p");
+      s.className = "s"; s.textContent = r.s || "";
+      a.appendChild(k); a.appendChild(t); if (r.s) a.appendChild(s);
+      frag.appendChild(a);
+    });
+    if (!hits.length) {
+      var e = document.createElement("p");
+      e.className = "empty2";
+      e.textContent = "Try a surname, an academic year like 1974-75, or a "
+        + "committee name. A thin year is a thin record, not a quiet one.";
+      frag.appendChild(e);
+    }
+    out.appendChild(frag);
+  }
 
-<h2 class="sec">What is settled</h2>
-<div class="prose">
-<p>The student regent seat was created by state legislation reported in committee in February 1968 and filled in April 1968 by William Menser. It carried no vote at first: students were campaigning for voting power in February 1970 and the Herald was still reporting &#x27;Student Regent May Get Vote&#x27; in February 1972. The vote arrived in 1972-73. The 1973 Talisman&#x27;s Board of Regents page, headed &#x27;Student and teacher given Regent vote&#x27;, records voting privileges extended to the faculty and student regents in the same year new Kentucky legislation added two regents at every state university, when Mike Fiorella held the student seat. Because the seat was separately elected, several plaque years carry two names: one president and one regent. In most years, though, the elected president held it too, and the Talismans of 1972, 1974 and 1976 say so outright of Linda Jones, Steve Yater and Steve Henry.</p>
-<p>Michael Fiorella in 1972-73, Gregory McKinney in 1974-75 and Sandra Norfleet in 1982-83
-are confirmed as regents rather than presidents. By about 2001 the two offices had merged;
-after that, a second name in a year means a mid-year succession.</p>
-</div>
+  var timer;
+  q.addEventListener("input", function () {
+    clearTimeout(timer); timer = setTimeout(run, 110);
+  });
 
-<h2 class="sec">Sources</h2>
-<div class="prose">
-<p>The record rests on the <cite>College Heights Herald</cite>, digitised issue by issue on
-TopSCHOLAR and then full text at <a class="ext" href="https://wkuherald.com/" rel="noopener">wkuherald.com</a>; on SGA's
-own constitutions, minutes and legislation; on the university's administrative record; on
-the <cite>Talisman</cite> yearbooks for portraits; and on the Wayback Machine for the pages
-the university has taken down.</p>
-<p>What each of those collections holds, the period it covers, how complete it is, how to
-search it and where it fails is set out in full on the
-<a href="sources.html">sources page</a>, together with the volume-to-year map for
-<cite>Herald</cite> citations and the rules this project works by.</p>
-<p>Every one of them is a public source available online, and that is the boundary of this
-archive. Nothing here comes from a filing cabinet, a private paper, or anyone's memory. To
-be on this site a thing had to happen and then be written down somewhere that has since
-been scanned and published. Most of what student government has done in sixty years does
-not clear that bar. The organisation has met most weeks since 1966; the record holds a few
-thousand entries. What is missing is not the quiet part of the history, it is simply the
-part that was never digitised, and a year that looks thin here is a thin record rather than
-an uneventful year. Anyone who served, or was there, knows things this site cannot, and the
-project would rather be told than go on guessing.</p>
-</div>
+  document.getElementById("filters").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    kind = b.getAttribute("data-k");
+    Array.prototype.forEach.call(this.querySelectorAll("button"), function (x) {
+      x.setAttribute("aria-pressed", x === b ? "true" : "false");
+    });
+    run();
+  });
 
-<h2 class="sec">How an entry gets on the site</h2>
-<div class="prose">
-<p>No source, no entry. Every dated line here carries the issue, page or record it came from,
-and links to it. Quotation from the <cite>Herald</cite> and the <cite>Talisman</cite> is held
-under fifteen words, once per source; everything else is paraphrase, because this is a public
-site reusing a university archive and a student newspaper.</p>
-<p>Accuracy beats completeness. A thin year is left thin. Where a year holds nothing, the
-page says what was searched rather than apologising, so the next person can pick up the work.
-The thickest year at present is 2025-26, with 53 entries; that is
-a measure of what has been found, not of what happened.</p>
-<p>Two people can share a name, so names are not merged across years without evidence.
-Doubtful spellings are flagged, not fixed.</p>
-</div>
-
-<h2 class="sec">Living people</h2>
-<div class="prose">
-<p>Some entries touch resignations, investigations and conduct cases. Only what a cited source
-reported is repeated here. Accusers who were not named publicly are not named. Where a source
-covers an allegation and never its resolution, the entry says so.</p>
-</div>
-
-<h2 class="sec">Conditions of use</h2>
-<div class="prose"><p>Text on this site is the work of the project. Photographs, documents and legislation are reproduced from Western Kentucky University's own open archives and from the <cite>College Heights Herald</cite> and the <cite>Talisman</cite>; each item names the collection, issue and page it came from and links to the original.</p>
-<p>The underlying record is published as data: <a href="years.json">years.json</a> holds every
-year, leader, entry and citation on the site.</p></div>
-
-<section class="citebox">
- <p class="lab">Preferred citation for the archive</p>
- <p class="citestr"><cite>SGA 60: Student Government at Western Kentucky University,
- 1966&#8211;2026</cite>, revised 31 August 2026, <span id="citeurl">about.html</span></p>
- <p class="revised">Individual year pages carry their own citation. Cite the year page, not
- this one, when you are citing a fact from a particular year.</p>
-</section>
-</div></div>
-<script>var u=document.getElementById('citeurl');
-if(u)u.textContent=location.href.split('/').slice(0,-1).join('/')+'/';</script>
+  // arriving from elsewhere with ?q=
+  var pre = new URLSearchParams(location.search).get("q");
+  if (pre) { q.value = pre; }
+})();
+</script>
 </main>
 <footer class="foot"><div class="wrap"><div class="cols">
 <div><h2>What this is</h2>
