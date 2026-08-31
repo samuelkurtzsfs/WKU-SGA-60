@@ -411,10 +411,6 @@ BOARD_CSS = """
 .numkey{display:flex;flex-wrap:wrap;gap:8px 28px;margin:20px 0 12px;padding:12px 14px;
  background:var(--paper2);font-size:.87rem;color:var(--ink2)}
 .numkey .sw{display:flex;align-items:baseline;gap:8px}
-.numkey .num{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums;
- font-weight:600}
-.numkey .num.pres{color:var(--red)}
-.numkey .num.reg{color:var(--ink)}
 .numkey .kred{color:var(--red)}
 .legend .kred{color:var(--red)}
 .legend{margin:18px 0 0;font-size:.85rem;color:var(--ink3);max-width:44rem}
@@ -1389,9 +1385,9 @@ def render_index(ys, n_leg, n_herald):
   <p class="readout" id="readout" role="status"></p>
  </div>
 
- <p class="numkey"><span class="sw"><b class="num pres">58</b> the number in
+ <p class="numkey"><span class="sw">The number in
  <b class="kred">red</b> is which President of student government they are</span>
- <span class="sw"><b class="num reg">55</b> the number in <b>black</b> is which Student
+ <span class="sw">The number in <b>black</b> is which Student
  Regent they are</span></p>
 
  <div class="board" id="board">__GROUPS__</div>
