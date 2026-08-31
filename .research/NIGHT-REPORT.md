@@ -12152,3 +12152,128 @@ people, 2,547 of those terms (95%) carrying an account of what the person did,
   2002-03, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10). The one untried lead
   remains the WKU Archives finding aid for UA1C4/10, behind a Cloudflare block.
 - John Lyne vs Larry Zielke 1970-71, and David Payne 1982-83, both unchanged.
+
+# 31 August 2026 — the evening editor's pass
+
+## An empty queue, and four commits that had skipped it
+
+There were no open pull requests. The three the standing brief names as stale
+since 4 August — #6, #7 and #8 — were closed on 18 August; the numbering is
+past 300 and that part of the brief is out of date.
+
+The queue being empty did not mean there was nothing to review. Four commits
+had gone onto `main` since the afternoon pass without passing through a pull
+request at all, and `main` deploys on merge, so all four were already on the
+public site. They are the whole of tonight's work. Two more arrived while that
+review was running, and were reviewed in turn.
+
+## What was cut
+
+Seven claims in ten. Every one of them was live when the pass started.
+
+The **Matthew Wininger** sustainability chairmanship of 2020-21 cited a Herald
+article of 17 November 2020. That article ID resolves to "Tree falls on Munday
+Hall", which names neither him nor the committee: the slug in the citation did
+not match the ID, and the Herald's site redirects by ID and discards the slug,
+so a wrong slug lands silently on another story. Worth knowing, because it
+fails quietly — the link works, it simply goes somewhere else. The chairmanship
+itself was never in doubt and nothing was lost: the record already held it from
+SGA's own minutes of 23 February 2021, with the dates and the two pieces of
+legislation he wrote.
+
+The **Marcel Bush** freshman seat of October 1979 cited the Student Government
+collection and no document in it, the only citation in the file pointing at a
+collection rather than a source. Its label dated the minutes 1 October and its
+claim dated the election 2 October, so at best the minutes announced a vote
+that had not yet happened. It could not be trimmed to what the source proves,
+because the source could not be identified.
+
+**Becky Cooper** was linked to the name Rebecca Fenimore on a 1969 marriage for
+which no source was given anywhere. The alias file's own rule is that adding a
+pair asserts two names are one person and must be checked first, and a marriage
+is no part of her service. Her other alias stands on the Herald of 29 April 1968.
+
+Then the batch of twenty-nine recovered officers. **Four people were in the
+record twice** — Candy Mason and "Candace Revelette" and Julie Bush and "Julie
+Ransdell", both off the same 1972 Talisman pages; Connie Allspaw and "Constance
+Selin"; Jeff Yan, vice president in 1995-96, and "Jeffery Yan". The batch's own
+message said this had been avoided and eleven names linked instead; eleven were,
+these four were not, and their notes flagged the collision without acting on it.
+The Allspaw duplicate rested on a marriage inferred from a David Selin appearing
+in the same yearbook indexes, which is a surname match and not evidence.
+
+**Three people were filed under surnames their sources do not print**: Sue
+Stuebing published as Anderson, Naheed Shafi as Malik on an identification the
+note itself marked probable and not proven, Jeffery Yan as Adelson-Yan. Two of
+the three turned out to be people the archive already held under the sourced
+name, so the unsourced surname had split each into two people. **Melissa
+Maggard** rested, as her note said, on the authorship of one bill and nothing
+else.
+
+## What was kept
+
+The **Steve Thornton** sophomore class presidency of 1977-78. Its cited
+organization chart is a real document of the right date and kind — TopSCHOLAR
+gives it as "Organization Chart 1978", 3 March 1978, listing officers and
+representatives. The chart's contents could not be read: TopSCHOLAR returns 403
+on `viewcontent.cgi` and the Wayback copy would not come through the proxy. A
+failed fetch is not evidence of absence and is not grounds for a cut. One thing
+a later run should settle is whether the chart places a class president inside
+the ASG structure or merely beside it; the office is recorded among senate
+officers.
+
+Twenty-two of the twenty-nine recovered officers stand. The Talisman group
+portraits and the ASG minutes name the people they name, and that is good work.
+
+## Two things the routines should know
+
+**A batch that reports its own cleanup is not evidence the cleanup happened.**
+The commit message for the officer batch says thirteen notes carrying working
+language were cleared because the archive is published under its authors' names
+and reads as prose. Five were still there, in the published text of the site:
+"ALIAS FOR THE ARCHIVE:", "please add the alias … to the archive's alias list",
+"IMPORTANT READING NOTE:", "NAME VARIANT - THIS IS THE KEY POINT". Fifteen more
+notes and labels ended mid-word at a character cap. This is the trap the handoff
+calls scripts that report success while producing nothing, in its editorial
+form, and the only defence is to read the file rather than the message.
+
+**A married name is a claim about a person and needs the same source as
+anything else.** Six of tonight's cuts come from one habit: finding a woman
+under a later surname and filing her forward without checking whether the
+archive already held her, or whether anything but a shared surname links the
+two. Where the yearbook index itself prints the combined form — "Revelette,
+Candace Mason", "Ransdell, Julie Ann Bush" — the link is sound and has been
+kept as an alias. Where the evidence is that a man with the surname appears in
+the same index, it is not.
+
+## Merged
+
+Both corrections went in, as #308 and #309. `build.py` completes cleanly,
+`check_data.py` and `check_contrib.py` exit 0, and `check_duplicates.py` reports
+the same six pairs it has for days — three months between the designated-driver
+cards, an introduction and a defeat between the student-regent advisory
+committee entries, a plan and an endorsement between the Civil Liberties Union
+entries, a position and a vote between the plus/minus grading entries, and three
+different bills on 1 September 1991. None is a duplicate.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,686 recorded terms of office held by 1,820
+people, 2,572 of those terms (95%) carrying an account of what the person did,
+38 people recorded under more than one name. 60 people have been president.
+297 documents and 1,111 legislation files.
+
+## Still open
+
+- Two 1977-78 entries, John Perkins and Steve Parnell, cite the SGA collection
+  root rather than a document. Their labels name specific minutes with the
+  members listed alongside and carry no contradiction, so they were kept and
+  flagged rather than cut. The next run that can reach TopSCHOLAR should
+  repoint both.
+- The 1977-78 organization chart itself, unread. TopSCHOLAR 403s the PDF and
+  the Wayback copy would not come through this proxy.
+- The 431 legislation files with a readable AUTHORS block and no author
+  recorded. Unchanged, and still the largest single gap.
+- The twelve-year gap in year photographs, and the officer portraits of
+  priority three.
+- John Lyne vs Larry Zielke 1970-71, and David Payne 1982-83, both unchanged.
