@@ -65,32 +65,48 @@ def fold(s):
     return "".join(c for c in s if not unicodedata.combining(c)).lower()
 
 
-def harvest():
+def harvest(first=2008, last=2027):
+    """Every captioned photograph in the library, walked year by year.
+
+    Searching by subject was the original approach and it was badly wrong. The
+    terms matched about eleven hundred photographs; the library holds forty-three
+    thousand. Researchers were told a zero in the index meant the Herald had no
+    picture of their person, and for most of them the index had simply never
+    looked. A caption saying "Bowling Green junior Jane Smith" contains none of
+    the words a subject search would use.
+
+    So nothing is filtered on the way in except the presence of a caption. The
+    walk is year by year because the endpoint will not page arbitrarily deep.
+    """
     seen = {}
-    for term in TERMS:
-        page, pages = 1, 1
+    for year in range(first, last + 1):
+        page, pages, got = 1, 1, 0
         while page <= pages:
             q = urllib.parse.urlencode({
-                "search": term, "order": "asc", "orderby": "date",
+                "after": f"{year}-01-01T00:00:00",
+                "before": f"{year}-12-31T23:59:59",
+                "order": "asc", "orderby": "date",
                 "per_page": 100, "page": page,
-                "_fields": "id,date,source_url,caption,alt_text"})
+                "_fields": "id,date,source_url,caption"})
             rows, hdr = get(f"{API}?{q}")
             if rows is None:
-                print(f"  {term}: page {page} failed, moving on")
+                print(f"  {year}: page {page} failed, moving on")
                 break
             if page == 1:
                 pages = int(hdr.get("X-WP-TotalPages", 1) or 1)
-                print(f"  {term}: {hdr.get('X-WP-Total', '?')} items, "
-                      f"{pages} pages")
             for m in rows:
                 cap = clean(m.get("caption", {}).get("rendered"))
                 if not cap:
                     continue
+                got += 1
                 seen[m["id"]] = {"id": m["id"], "date": m["date"][:10],
                                  "url": m["source_url"], "caption": cap,
                                  "x": fold(cap)}
             page += 1
-            time.sleep(1)
+            time.sleep(float(__import__("os").environ.get("PACE", "0.4")))
+        if got:
+            print(f"  {year}: {got} captioned of "
+                  f"{hdr.get('X-WP-Total', '?') if hdr else '?'}")
     return sorted(seen.values(), key=lambda r: r["date"])
 
 
@@ -107,9 +123,21 @@ def main():
             print(f"   {r['caption'][:200]}\n")
         return
 
-    print("harvesting, oldest first")
-    rows = harvest()
+    import os
+    first = int(os.environ.get("FROM_YEAR", 2008))
+    last = int(os.environ.get("TO_YEAR", 2027))
+    print(f"harvesting {first} to {last}, oldest first")
+    rows = harvest(first, last)
+    # Merge, never replace. Cloudflare cuts the walk off partway through, and
+    # a partial run that overwrote the file once cost every year it had not
+    # reached yet.
+    have = {r["id"]: r for r in (json.loads(OUT.read_text())
+                                 if OUT.is_file() else [])}
+    before = len(have)
+    have.update({r["id"]: r for r in rows})
+    rows = sorted(have.values(), key=lambda r: r["date"])
     OUT.write_text(json.dumps(rows, indent=1, ensure_ascii=False) + "\n")
+    print(f"{before} already indexed, {len(rows)} now")
     years = sorted({r["date"][:4] for r in rows})
     print(f"\nwrote {OUT}: {len(rows)} captioned photographs, "
           f"{years[0]} to {years[-1]}")

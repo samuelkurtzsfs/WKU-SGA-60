@@ -181,6 +181,16 @@ def main():
         if old:
             if old["file"] == rec["file"] and old["src"] == entry["src"]:
                 continue
+            # An editor working after the researcher writes the identifying
+            # reasoning into the citation: which row of the group photograph,
+            # how the count was done. The finding still holds the short label
+            # it was filed with, so re-merging the same finding would truncate
+            # all that back off. If the label on file already contains the
+            # finding's own, it has been enriched, and it stays.
+            if (old["file"] == rec["file"]
+                    and old["src"].get("url") == entry["src"]["url"]
+                    and label in old["src"].get("label", "")):
+                continue
             improved.append((key, old["file"], rec["file"],
                              rec.get("why", "")))
         else:
