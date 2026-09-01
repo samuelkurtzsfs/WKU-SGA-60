@@ -64,11 +64,12 @@ def people_by_year(doc):
 def load_finds():
     rows = []
     for f in sorted(FINDS.glob("*.json")):
-        # _worklist files are the job, not the result. -notes files are the
-        # sourced facts that fell out of the hunt, a different shape entirely,
-        # and reading them here reported thirty-four researcher errors that
-        # were nothing of the kind.
-        if f.name.startswith("_worklist") or f.name.endswith("-notes.json"):
+        # Only the findings files are findings. A leading underscore marks the
+        # drop box's own bookkeeping, the worklists and the record of archive
+        # gaps; -notes files hold sourced facts that fell out of the hunt.
+        # Both are shaped differently, and reading them as portraits once
+        # reported thirty-four researcher errors that were nothing of the kind.
+        if f.name.startswith("_") or f.name.endswith("-notes.json"):
             continue
         try:
             got = json.loads(f.read_text())
