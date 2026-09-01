@@ -214,13 +214,30 @@
   "width": 307,
   "height": 518,
   "quality": "a small black and white newspaper mugshot, about 300 pixels across at 400 dpi",
-  "id_confidence": "inferred - editor should confirm before publishing",
+  "id_confidence": "inferred, but strongly - editor should confirm before publishing",
   "why": "the only photograph of him in the archive, and a straight head-and-shoulders frame",
   "caption_quote": "ECLOV",
-  "identification": "Labelled ECLOV under the picture in a graduating-seniors feature: 'Lexington senior Drew Eclov was just accepted into graduate school at the American University in Washington, D.C.' NOT independently tied to SGA - the link is the rare surname, the given name Drew for Andrew, and an enrolment window that covers his 2008-09 term.",
+  "identification": "Labelled ECLOV under the picture and numbered 3 on the page's map, matching the entry beside it: 'Lexington senior Drew Eclov was just accepted into graduate school at the American University in Washington, D.C.' The Herald of 3 April 2008 prints Drew Eclov in its list of students elected to the SGA senate, so an SGA member of that name was on campus in the right years; with a surname this rare the byline mugshot and the officer are almost certainly one person, but no single source says both things at once.",
   "src": {
    "label": "College Heights Herald 86:27, 10 December 2010, p. 7",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6262"
+  }
+ },
+ {
+  "year": "2012-13",
+  "name": "Drew Mitchell",
+  "file": "2012-13-drew-mitchell.jpg",
+  "replaces": null,
+  "width": 330,
+  "height": 520,
+  "quality": "a small black and white newspaper mugshot, about 330 pixels across at 400 dpi",
+  "id_confidence": "inferred - editor should confirm before publishing",
+  "why": "the only photograph of him in the archive, a straight smiling head-and-shoulders frame",
+  "caption_quote": "MITCHELL",
+  "identification": "Labelled MITCHELL under the picture and numbered 3 on the page's map, matching the entry beside it: 'Drew Mitchell, a sophomore from Bowling Green, went to Gulf Shores, Ala.' NOT independently tied to SGA - the link is the name and an enrolment window (sophomore in Oct 2010, so a senior in 2012-13) that covers his term as director of public relations.",
+  "src": {
+   "label": "College Heights Herald 86:12, 12 October 2010, p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6250"
   }
  }
 ]
