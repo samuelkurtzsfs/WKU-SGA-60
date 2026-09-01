@@ -325,5 +325,11 @@
   "reason": "The track and field frames carried in _herald-leads.json are not usable and should not be published: nothing in them mentions student government. They are superseded. Herald 18 Feb 2025 carries 'Senator Kaison barton speaks on bill 1-25-f during the Student Government Association's weekly meeting', a single-subject frame at the Senate lectern, and that is the one to use; it is published as 2024-25-kaison-barton.jpg.",
   "url": "https://wkuherald.com/wp-content/uploads/2021/02/30fe384fa9f007a62eebb1d41af30cd8.jpg",
   "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Shantel Pettway",
+  "year": "2016-17",
+  "file": "College Heights Herald, 3 May 2017, 'Shades of Melanin' portrait feature",
+  "reason": "It is her, it is a good studio portrait, and it is not her SGA photograph. She sat for it for a feature about skin tone, and the caption carries her own words about self love and her faith. Lifting that into the archive as a student government headshot puts a picture she gave for one purpose to another, on a page about her committee work. Same reasoning as the Cody Cox withdrawal. The researcher who found it flagged it rather than publishing it quietly, which was right."
  }
 ]
