@@ -12646,3 +12646,127 @@ REST path that would has the platform gate on it. The comment is
 `#issuecomment-5488430131`, and deleting or editing it is a moment's work from
 the web interface. Nothing in the merge itself carries the line — the commits,
 `data/` and the built site are all clean, and were checked.
+
+# 1 September 2026, third pass — a face withdrawn, a page number corrected
+
+## What was open
+
+One pull request, #317, "Research: photographs", opened this afternoon on
+`research-photos`. The three branches that had sat open since 4 August — #6,
+#7 and #8 — are gone, so the queue is genuinely down to what the routines
+filed today. The branch was behind main and was brought up to date before it
+was read; the merge was clean and touched nothing in the diff.
+
+## What the diff actually contained
+
+Ten added lines and one photograph: a crop identified as David Bass,
+activities vice president 1977-78, taken from the ASG meeting photograph on
+p. 34 of the 1978 *Talisman*. Nothing else. No events, no leaders, no
+documents.
+
+## What was checked
+
+The caption was pulled from the volume's own full text and read against the
+page image itself, and it is quoted accurately in the report: a light moment
+in an ASG meeting bringing laughter from president Bob Moore and smiles from
+activities vice president David Bass, secretary Sharon May and vice president
+Cathy Murphy, photographed by Lewis Gardner. So far so good.
+
+What the caption does not do is say where anyone is standing. There is no
+"from left" and no "(right)". The printed frame carries three visible faces
+and a fourth figure cropped away at the lower left edge.
+
+Two of the four can be placed. Moore is the one laughing, and the caption
+separates him from the others grammatically. Murphy matches the senior
+portrait at p. 370 already on file. The seated figure in sunglasses is
+therefore either Bass or May, and the volume settles nothing: its index
+carries Bass, David Eugene at p. 34 and nowhere else, and May, Sharon Gay at
+p. 34 and nowhere else. Neither has a portrait in the book to compare a face
+against.
+
+The run had excluded May by way of her 1977 sophomore portrait. That portrait
+was itself fixed by counting position in a row of nine names, and it comes
+from the previous year's volume. Excluding a face on the strength of a face
+established by positional inference is inference resting on inference, and a
+caption with no positional cue will not carry it.
+
+This is where the LaCivita photograph differs, and why that one is settled and
+this one is not. That caption says "(right)". This one says nothing at all.
+
+## What was cut
+
+The David Bass portrait, and both copies of the image file. Bass keeps his
+term of office, which is sourced separately to the April 1977 election and was
+not touched. He does not keep a face.
+
+## What was corrected rather than cut
+
+Both entries citing "1978 *Talisman*, p. 34" pointed at the wrong leaf. The
+withdrawn Bass entry cited leaf n39, which is printed p. 35. The existing
+`1977-78-asg-meeting.jpg` year photograph cited leaf n37, which is printed
+p. 33. Page 34 is leaf n38, checked against the page image. The surviving
+entry now points there, and its label records the leaf so the next reader does
+not have to work it out again. That error was live on the site.
+
+A missing newline at the end of `data/photos.json` was restored.
+
+## The duplicate report
+
+Six pairs, every one of them already on main and none introduced here. Four
+are an event and its later outcome — designated driver cards announced and
+then distributed, the student regent advisory committee bill introduced and
+then defeated, the Civil Liberties Union action planned and then endorsed, a
+position taken on plus/minus grading and then voted. The other two are three
+separate bills filed on 1 September 1991. Nothing to combine.
+
+## What held up, and is worth keeping
+
+The run's negative findings were left standing. Ruling out Debby Clark and Don
+Carter on inspection of the 1973 ASG spread, and Mark Chesnut on the 1981
+index, is the right use of a session and saves the next one the trip. The
+route around the Cloudflare block is a real find: `iiif.archive.org` serves
+full-resolution page scans by leaf number for any *Talisman* on archive.org
+and is neither rate limited nor challenged. It is what made this review
+possible, and it is how the page image was read.
+
+## One thing the routine should know
+
+A group caption with no positional cue can only identify a face when every
+other person named in it is independently pinned. Here three of the four would
+have had to be pinned to get the fourth, and only two were.
+
+The fastest test is the volume's own index. A name indexed to the group page
+and to no other page has no portrait in that book, which is both the answer to
+"can I confirm this face" and the answer to "is there a better picture
+elsewhere in this volume". It costs one grep of the `_djvu.txt`.
+
+## Merged
+
+#317, after the withdrawal. `build.py` completes cleanly, `check_data.py` and
+`check_contrib.py` both exit 0.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,821
+people, 2,630 of those terms (97%) carrying an account of what the person did,
+39 people recorded under more than one name. 60 people have been president.
+297 documents and 1,111 legislation files.
+
+## Still open
+
+The twelve-year gap in year photographs, 1993-94 through 2009-10, did not
+move, and the reason is unchanged: `digitalcommons.wku.edu` returned the
+bot-check page on every attempt this run as well, and WKU's digitised
+*Talisman* run on archive.org stops at 1987. That is now three consecutive
+runs against the same wall. The archive.org IIIF route does not help here
+because the volumes are not there to serve.
+
+Otherwise unchanged: the unread 1977-78 organization chart, the 431
+legislation files with a readable authors block and no author recorded, and
+John Lyne vs Larry Zielke 1970-71 and David Payne 1982-83.
+
+The item left for a human by the second pass is still outstanding — the
+trailing tool-attribution line on the review comment at
+`#issuecomment-5488430131`, which needs deleting or editing from the web
+interface. The comment posted on #317 this pass carries no such line, and
+neither do any of the commits.
