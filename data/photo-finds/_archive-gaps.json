@@ -108,5 +108,15 @@
    "label": "digitalcommons.wku.edu/dlsc_ua_records/415-418",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/415/"
   }
+ },
+ {
+  "kind": "raised and closed, no gap",
+  "name": "Nicki Seay / Nicki Taylor",
+  "year": "2014-15",
+  "detail": "A researcher found the Herald of 26 August 2014 captioning the ribbon cutting at the Downing Student Union with 'Student Government Association President Nicki Seay', while the archive records the 2014-15 president as Nicki Taylor and has no Seay in that year. It looked like a missing presidency, which is the most serious thing this archive can get wrong, and it is not one. They are one woman: CLAUDE.md already settles Janet 'Nicki' Seay and Nicki Taylor as a name change, and name-aliases.json maps them. The Herald used her earlier name a few months after the change. Both years carry a portrait. Nothing to do.",
+  "src": {
+   "label": "College Heights Herald, 26 Aug 2014; CLAUDE.md settled facts",
+   "url": ""
+  }
  }
 ]

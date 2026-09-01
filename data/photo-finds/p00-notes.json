@@ -112,5 +112,29 @@
  },
  {
   "note": "SOURCE WORTH MINING, the Spirit Masters scrapbooks in the WKU Archives student organisation collection. UA12/2/16 for 2004-2005 is digitalcommons.wku.edu/stu_org/327 and for 2001-2002 is stu_org/323; there is a 2006-2007 Spirit Masters item at stu_org/529. Pages 4 and 5 of the 2004-05 scrapbook photograph the group's display board, which pastes every member's studio headshot beside a handwritten name, year, major and home town. That is an identification the archive's rules accept, and the portraits are colour studio work rather than newsprint halftones. The scrapbooks carry no text layer, so they have to be looked at rather than searched. This is where the Brittany Fausey portrait came from, and it is the strongest portrait source found anywhere in the 2000-2010 block."
+ },
+ {
+  "name": "Matthew Pava",
+  "year": "2003-04",
+  "fact": "Pava wrote to the Herald during the March 2004 campaign urging students to vote for Jessica Martin for president. That August he signed a second letter with Dana Lockhart and Brandon Copeland, headed by the paper as former SGA officers speaking up and saying they felt misled by Nick Todd, who had won that election.",
+  "src": {
+   "label": "College Heights Herald, 16 March 2004 and 31 August 2004",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9405"
+  }
+ },
+ {
+  "note": "LEAD ALREADY TAKEN, Nathan J. Eaton: the Spirit Masters scrapbook for 2007-2008, digitalcommons.wku.edu/stu_org/328, carries a colour studio portrait of him on PDF page 28 with a printed card reading Nathan Eaton, Fairdale KY, Junior, Marketing major, First Year Spirit Master. He already has a portrait in data/photos, so nothing was cut. If the existing frame is a poor one this is a good replacement, and the same pages hold thirty other 2007-08 Spirit Masters."
+ },
+ {
+  "note": "WRITTEN OFF AFTER SEARCH. Twenty-six of the thirty-three on this worklist were not placed. What was checked for all of them: data/herald-photos.json at its current 21,304 captions, which is dense from 2010 to 2024 and returned nothing but namesakes; data/herald-index-full.json across the whole digitised Herald; and the untruncated article lists on the landing pages of every Herald issue printed in February, March and April from 2001 to 2012, harvested for this run, which is where the truncation in the local index usually hides a name. Note for a later pass: those landing pages carry the full article list in the meta description only up to 2006. From 2007 the description is boilerplate and the article list has to be read out of the page body instead, so that route was only good for the first half of this block."
+ },
+ {
+  "note": "WRITTEN OFF, the 2000-01 and 2001-02 cohorts. Sixteen of these people were sworn in as at-large members of Congress at meetings between January and March, which is the appointment round rather than an election, so they never appear in the Herald's spring candidate pages. None of David Logan, Margaret Haydon, Michael Richardson, Stephen Martin, Amy Joyce, Amy Lee, Annie Henning, Craig Johnson, Dustin Brumett, Dustin Hayes, James Dunn, Kyle Gott, LaJohna Brown or Mason Shields is named anywhere in the digitised Herald, in either the headline index or the full article lists for 2001 to 2006. The 2003 Talisman, the only volume digitised between 1994 and 2012, was downloaded and its whole text searched for all thirty-three names: one hit, a campus police officer called Karen Thurman."
+ },
+ {
+  "note": "WRITTEN OFF, the 2004-05 and 2006-08 appointees. Amelia Bice, Mark Henry, Jeremy Glass, Liz Goddard and Samantha Hughey held appointed staff offices - office associate, information technology director, public relations director - and appointed officers are not written up in election coverage, which is where this era's photographs are. None is named in the Herald index, in the 2001 to 2006 full article lists, or in the Spirit Masters boards for 2004-05 and 2007-08, which were both read name by name."
+ },
+ {
+  "note": "WRITTEN OFF, 2008-09 and 2009-10. Monique Gooch, Aaron Pawley, Kyle Wright and Sarah Howell were all confirmed absent again in this run, on top of the 2006-2010 researcher's work: the 2008 election special (dlsc_ua_records/6705) and the 2009 issues 6711 and 6712 were downloaded and searched, and none of the four appears. Austin Wingate's identity was settled and his SGA record recovered, but the only photographs of him that exist are in frames with no positional marker."
  }
 ]
