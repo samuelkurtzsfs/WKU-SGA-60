@@ -64,7 +64,11 @@ def people_by_year(doc):
 def load_finds():
     rows = []
     for f in sorted(FINDS.glob("*.json")):
-        if f.name.startswith("_worklist"):
+        # _worklist files are the job, not the result. -notes files are the
+        # sourced facts that fell out of the hunt, a different shape entirely,
+        # and reading them here reported thirty-four researcher errors that
+        # were nothing of the kind.
+        if f.name.startswith("_worklist") or f.name.endswith("-notes.json"):
             continue
         try:
             got = json.loads(f.read_text())
