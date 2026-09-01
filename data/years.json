@@ -1053,7 +1053,8 @@
        },
        "profile": [
         "Harold Northam held the Sophomore Class Representative seat in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives."
-       ]
+       ],
+       "note": "He was still in the Associated Students in 1968-69, a year after the sophomore class representative term the archive records. The group caption on p. 95 of the 1969 Talisman names him third in the back row, between Phil Myers and Steve Stephens."
       },
       {
        "office": "Interfraternity Council Rept.",
@@ -1127,7 +1128,8 @@
        },
        "profile": [
         "Steve Reeves held the Departmental Clubs seat in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives."
-       ]
+       ],
+       "note": "The back index of the 1968 Talisman enters him as Reeves, Steve W., 291, and the junior grid on that page gives his home town as Bowling Green. He is the only Steve or Stephen Reeves in the volume, which separates him from Dennis Reeves, who sat in the Associated Students the year before."
       },
       {
        "office": "Professional And Honorary Groups Representative",
@@ -1824,6 +1826,33 @@
        },
        "seat": "Congressman, Sophomore Class",
        "note": "Won the Sophomore Class Congressman seat in the election of 2 May 1968 with 637 votes to John Hutton's 468."
+      },
+      {
+       "name": "Harold Northam",
+       "seat": "Member, Associated Students",
+       "note": "Named third in the back row of the Associated Students group photograph, between Phil Myers and Steve Stephens. He had held the sophomore class representative seat the year before.",
+       "src": {
+        "label": "1969 Talisman, p. 95",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+       }
+      },
+      {
+       "name": "Paul Civils",
+       "seat": "Member, Associated Students",
+       "note": "Named first in the second row of the Associated Students group photograph, a year before the sophomore representative-at-large seat the archive records him in.",
+       "src": {
+        "label": "1969 Talisman, p. 95",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+       }
+      },
+      {
+       "name": "Steve Todd",
+       "seat": "Judicial Council",
+       "note": "Sat on the Associated Students Judicial Council with Mark Skillern, Carolyn Cash, Lonnie Jackson, Russell Vertner and Brent Hall, a year before the representative-at-large seat the archive records him in.",
+       "src": {
+        "label": "1969 Talisman, p. 98",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+       }
       }
      ]
     }
