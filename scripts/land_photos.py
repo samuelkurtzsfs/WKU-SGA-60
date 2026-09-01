@@ -16,7 +16,11 @@ nothing than publish a face it cannot stand behind.
 import argparse
 import subprocess
 import sys
+import time
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from clear_photo_stage import live
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -61,6 +65,24 @@ def main():
     run(["git", "push", "-q", "origin", "main"])
     after = run(["git", "rev-parse", "HEAD"]).stdout.strip()
     print(f"\npushed {before[:8]} -> {after[:8]}")
+
+    # A push is not a deploy. Vercel takes a minute or two to build, and the
+    # cleanup only deletes what it can fetch back off the live site, so going
+    # straight there would find nothing published and clear nothing, every
+    # time. Wait for one of the new portraits to actually appear.
+    newest = sorted(f for f in staged if f.startswith("data/photos/"))
+    if newest:
+        name = Path(newest[-1]).name
+        print(f"\nwaiting for the deploy: {name}")
+        for attempt in range(20):
+            ok, why = live(name)
+            if ok:
+                print(f"  live after about {attempt * 20}s")
+                break
+            time.sleep(20)
+        else:
+            print(f"  still not live after ~7 minutes ({why}). Nothing will "
+                  f"be deleted; the next run will pick it up.")
 
     # only now is it safe to throw the working files away
     run([py, "scripts/clear_photo_stage.py", "--delete"], check=False)

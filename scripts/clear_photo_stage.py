@@ -1,80 +1,131 @@
 #!/usr/bin/env python3
-"""Clear the photo-hunt staging folder of anything already published.
+"""Delete the working files once the photograph is live on the site.
 
-    python3 scripts/clear_photo_stage.py            # show what would go
-    python3 scripts/clear_photo_stage.py --delete   # delete it
+    python3 scripts/clear_photo_stage.py             # what is safe to delete
+    python3 scripts/clear_photo_stage.py --delete    # delete it
+    python3 scripts/clear_photo_stage.py --delete --pages   # sweep page scans too
+    python3 scripts/clear_photo_stage.py --delete --all     # the hunt is over
 
-The hunt downloads full yearbook pages at three thousand pixels a side and
-throws most of them away. They pile up on the Desktop, which is where the owner
-wants them while the work is going on, and nowhere at all once it is finished.
+The hunt pulls down yearbook pages at three thousand pixels a side and throws
+most of them away. The owner wants them off the machine, and wants that to
+happen once the photograph is actually published, not merely committed.
 
-A staged file is safe to delete when the portrait cut from it is in
-data/photos.json AND committed. Not merely present on disk: a portrait that
-has not been committed could still be lost, and then the page it came from
-would be the only copy left. Anything the archive has no record of is kept and
-listed, because that is either work still in progress or a mistake worth
-seeing.
+So the test here is the real one: fetch the file from sga60.vercel.app and
+check it is byte for byte the file on disk. A commit that never deployed, a
+build that dropped the image, a push that raced another push, all of them fail
+that test and all of them would pass a test that only asked git. Nothing is
+deleted on the strength of an intention.
+
+What each kind of staged file is, and when it is spent:
+
+  a crop, <year>-<slug>.jpg   the portrait itself, or a candidate for it.
+                              Spent once that portrait is verified live.
+  a page, <year>-n<leaf>.jpg  a whole yearbook page, working material that
+                              several people may still be cut from. Re-fetchable
+                              at any time with talisman.py, so --pages sweeps
+                              them once the researchers have finished.
+  anything in _rejected/      confirmed to be the wrong person. Never going to
+                              be published, so it goes with --delete.
 """
 
 import argparse
+import hashlib
 import json
-import subprocess
+import re
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 STAGE = Path.home() / "Desktop" / "SGA60 photo hunt"
 PHOTOS = ROOT / "data" / "photos"
 OVERLAY = ROOT / "data" / "photos.json"
+SITE = "https://sga60.vercel.app/photos/"
+UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
+
+PAGE = re.compile(r"^\d{4}-n\d+\.jpg$", re.I)
 
 
-def committed():
-    """Portrait files git has, so losing the staged original costs nothing."""
-    out = subprocess.run(["git", "ls-files", "data/photos"], cwd=ROOT,
-                         capture_output=True, text=True)
-    return {Path(p).name for p in out.stdout.split() if p}
+def sha(b):
+    return hashlib.sha256(b).hexdigest()
+
+
+def live(name):
+    """Is this exact file being served by the site right now?"""
+    req = urllib.request.Request(SITE + name, headers={"User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=45) as r:
+            if r.status != 200:
+                return False, f"HTTP {r.status}"
+            body = r.read()
+    except urllib.error.HTTPError as e:
+        return False, f"HTTP {e.code}"
+    except (urllib.error.URLError, TimeoutError) as e:
+        return False, f"unreachable ({e})"
+    if body[:2] != b"\xff\xd8" and body[:4] != b"\x89PNG":
+        return False, "served something that is not an image"
+    local = PHOTOS / name
+    if not local.is_file():
+        return False, "not in data/photos any more"
+    if sha(body) != sha(local.read_bytes()):
+        return False, "live copy differs from the local one"
+    return True, "live"
+
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--delete", action="store_true")
+    ap.add_argument("--pages", action="store_true",
+                    help="also sweep whole-page scans, which are re-fetchable")
     ap.add_argument("--all", action="store_true",
-                    help="the hunt is over: clear the folder entirely")
+                    help="the hunt is finished: clear the folder entirely")
     args = ap.parse_args()
 
     if not STAGE.is_dir():
         print(f"{STAGE} does not exist, nothing staged")
         return
-
     files = [p for p in STAGE.rglob("*")
              if p.is_file() and p.name not in ("README.txt", ".DS_Store")]
     if not files:
         print("staging folder is already empty")
         return
-    size = sum(p.stat().st_size for p in files)
-    print(f"{len(files)} files staged, {size / 1e6:.0f} MB")
+    print(f"{len(files)} files staged, "
+          f"{sum(p.stat().st_size for p in files) / 1e6:.0f} MB")
 
     if args.all:
-        doomed = files
-        print("\n--all: clearing everything, the hunt is finished")
+        doomed, kept = files, []
+        print("\n--all: the hunt is over, clearing everything")
     else:
-        published = {p["file"] for p in json.loads(OVERLAY.read_text())
-                     .get("leaders", [])}
-        safe = published & committed()
-        print(f"{len(published)} portraits in the archive, "
-              f"{len(safe)} of them committed")
-        # a staged page is spent once every portrait naming it is committed,
-        # and a staged file that IS a portrait goes once its copy is committed
-        doomed = [p for p in files if p.name in safe]
-        keep = [p for p in files if p not in doomed]
-        print(f"\n{len(doomed)} staged files are published and committed")
-        print(f"{len(keep)} are not, and are kept:")
-        for p in sorted(keep)[:25]:
-            print(f"   {p.relative_to(STAGE)}")
-        if len(keep) > 25:
-            print(f"   ... and {len(keep) - 25} more")
+        published = {p["file"] for p in
+                     json.loads(OVERLAY.read_text()).get("leaders", [])}
+        verified, failed = set(), {}
+        for name in sorted(published):
+            if not any(p.name == name for p in files):
+                continue          # nothing staged for it, no need to ask
+            ok, why = live(name)
+            (verified.add(name) if ok else failed.setdefault(name, why))
+        print(f"\n{len(verified)} portraits verified live on the site")
+        for name, why in sorted(failed.items()):
+            print(f"  NOT deleting {name}: {why}")
+
+        doomed = [p for p in files if p.name in verified]
+        doomed += [p for p in files if p.parent.name == "_rejected"]
+        if args.pages:
+            doomed += [p for p in files if PAGE.match(p.name)
+                       and p.parent.name == "_talisman-pages"]
+        doomed = sorted(set(doomed))
+        kept = [p for p in files if p not in set(doomed)]
+        pages = sum(1 for p in kept if PAGE.match(p.name))
+        print(f"\n{len(doomed)} spent, {len(kept)} kept")
+        if pages and not args.pages:
+            print(f"  {pages} of those kept are yearbook pages. They are "
+                  f"working material and re-fetchable;\n  sweep them with "
+                  f"--pages once the researchers have finished.")
 
     if not doomed:
-        print("\nnothing to delete yet")
+        print("\nnothing safe to delete yet")
         return
     freed = sum(p.stat().st_size for p in doomed)
     if not args.delete:
