@@ -12,5 +12,19 @@
   "year": "2022-23",
   "note": "Herald 21 April 2022, the WKU Forensics team championship photograph. Its caption does list every person by row and left-to-right position, and Clementi is named first in the front row, so this is one of the rare group frames that does identify people. It still cannot be used: the file the Herald published is download.png at 640x428 for about twenty-six people, so a single face is roughly a dozen pixels across and no larger version exists. The better-looking alternative, Herald 25 January 2023 ('Speaker of the Senate Julie Mishchuk (right) and Secretary of the Senate Antonina Clementi (left) pack up'), is also unusable: in that frame the left-hand figure is turned away with her head above the top edge, and the archive's existing portrait of Julie Mishchuk matches the right-hand woman, confirming Clementi is the one whose face is not in the picture.",
   "url": "https://wkuherald.com/wp-content/uploads/2022/04/download.png"
+ },
+ {
+  "kind": "rejected",
+  "name": "Blake Graham",
+  "year": "2025-26",
+  "note": "Two Herald frames name Blake Graham and neither shows his face. In the 23 September 2025 swearing-in the caption reads 'International Senator Grace Ekrikpo is sworn in by Chief Justice Blake Graham' but only one person is in the frame, the senator taking the oath, and that photograph has been used for Ekrikpo instead. In the 11 November 2025 frame, 'Chief Justice Blake Graham gives his final report as chief justice', the camera is behind him and he is the out-of-focus back of a head in the right foreground. The 11 November frame that introduces the two associate justices places Stirling and Hash by position but does not place Graham, so the third figure in it cannot be assumed to be him.",
+  "url": "https://wkuherald.com/wp-content/uploads/2025/11/_SAV2352.jpg"
+ },
+ {
+  "kind": "rejected",
+  "name": "Emily Reinneck",
+  "year": "2025-26",
+  "note": "Herald 19 August 2025, 'Soon to be Campus Improvements and Sustainability Committee Chair Emily Reinneck is sworn in'. The caption names one person but the photograph is a mass swearing-in: three people on the right of the frame have their right hands raised taking the oath and a further row of people stands along the left wall. Nothing in the caption says which of them is Reinneck, so the frame identifies nobody. No other Herald photograph in the index names her.",
+  "url": "https://wkuherald.com/wp-content/uploads/2025/08/_SAV6997.jpg"
  }
 ]

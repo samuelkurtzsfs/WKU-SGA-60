@@ -226,6 +226,21 @@
  },
  {
   "year": "2024-25",
+  "name": "Ryan Dilts",
+  "file": "2024-25-ryan-dilts.jpg",
+  "replaces": null,
+  "width": 300,
+  "height": 320,
+  "quality": "good",
+  "why": "The caption names one person and gives him his Senate office, and the frame identifies him independently: he is holding his own desk placard above his head to be recognised by the chair, and the placard reads RYAN DILTS. He is the only person in the plane of focus.",
+  "caption_quote": "Senator Ryan Dilts asks a question during the Student Government Association's meeting",
+  "src": {
+   "label": "College Heights Herald, 25 February 2025, SGA meeting; cropped to the senator holding up his own nameplate",
+   "url": "https://wkuherald.com/wp-content/uploads/2025/02/02_25_25_SAG_ER_0581.jpg"
+  }
+ },
+ {
+  "year": "2024-25",
   "name": "Sophia Bryant",
   "file": "2024-25-sophia-bryant.jpg",
   "replaces": null,
@@ -256,6 +271,36 @@
  },
  {
   "year": "2025-26",
+  "name": "Ben Lee",
+  "file": "2025-26-ben-lee.jpg",
+  "replaces": null,
+  "width": 650,
+  "height": 720,
+  "quality": "good",
+  "why": "The caption names Lee as the winner of the Gatton Senator election celebrating the result, and he is the sole in-focus, centrally framed subject, clapping. The same face is the only figure in focus in a second Herald frame of 17 February 2026 captioned 'Gatton Academy Senator Ben Lee reacts to ISEC Senator Jaden Marshall's weekly animal joke'; the archive already holds a portrait of Jaden Marshall and he is a different man, so that frame cannot be of Marshall either. Two independent frames therefore point to this face.",
+  "caption_quote": "Winner of the Gatton Senator election Ben Lee (right) celebrates the announcement of his election during the Fall SGA Election Party",
+  "src": {
+   "label": "College Heights Herald, 19 September 2025, Fall SGA Election Party in the Senate Chambers; cropped to the in-focus celebrating subject",
+   "url": "https://wkuherald.com/wp-content/uploads/2025/09/SAV8827.jpg"
+  }
+ },
+ {
+  "year": "2025-26",
+  "name": "Bradley Wagoner",
+  "file": "2025-26-bradley-wagoner.jpg",
+  "replaces": null,
+  "width": 1500,
+  "height": 1328,
+  "quality": "good",
+  "why": "Single-subject frame. The caption names one person and gives him his committee office; his is the only face in the picture.",
+  "caption_quote": "Community Relations Bradley Wagoner listens to Dr. Martha Sales give her opening remarks during the SGA meeting",
+  "src": {
+   "label": "College Heights Herald, 26 August 2025, SGA meeting in the Senate Chambers of the Downing Student Union; single-subject frame cropped to the head and shoulders",
+   "url": "https://wkuherald.com/wp-content/uploads/2025/08/8-26-25_ajp_sga_07.jpg"
+  }
+ },
+ {
+  "year": "2025-26",
   "name": "Eli Carter",
   "file": "2025-26-eli-carter.jpg",
   "replaces": null,
@@ -267,6 +312,21 @@
   "src": {
    "label": "College Heights Herald, 17 February 2026, SGA weekly meeting in the Senate Chambers; cropped to the only figure resting his head",
    "url": "https://wkuherald.com/wp-content/uploads/2026/02/021726_sgacov_KH100.jpg"
+  }
+ },
+ {
+  "year": "2025-26",
+  "name": "Grace Ekrikpo",
+  "file": "2025-26-grace-ekrikpo.jpg",
+  "replaces": null,
+  "width": 270,
+  "height": 400,
+  "quality": "medium",
+  "why": "The caption names two people and separates them by what each is doing: Ekrikpo is sworn in, Graham does the swearing. Only one person is in the frame, and she has her right hand raised taking the oath, so she is Ekrikpo. Graham is not in the picture.",
+  "caption_quote": "International Senator Grace Ekrikpo is sworn in by Chief Justice Blake Graham during the weekly SGA meeting",
+  "src": {
+   "label": "College Heights Herald, 23 September 2025, swearing-in at the SGA weekly meeting in the Senate Chambers; cropped to the only figure in the frame, hand raised",
+   "url": "https://wkuherald.com/wp-content/uploads/2025/09/SAV9099.jpg"
   }
  },
  {
@@ -327,6 +387,21 @@
   "src": {
    "label": "College Heights Herald, 23 September 2025, SGA weekly meeting in the Senate Chambers; single-subject frame cropped to the head and shoulders",
    "url": "https://wkuherald.com/wp-content/uploads/2025/09/SAV8929.jpg"
+  }
+ },
+ {
+  "year": "2025-26",
+  "name": "Landon Terry",
+  "file": "2025-26-landon-terry.jpg",
+  "replaces": null,
+  "width": 440,
+  "height": 720,
+  "quality": "good",
+  "why": "Single-subject frame. The caption names one person, gives him his Senate office and describes him presenting a bill; he stands alone at the Senate lectern in an SGA polo shirt and his is the only face in the picture.",
+  "caption_quote": "Freshman Senator Landon Terry presented a bill allocating funding for new ping pong paddles in Zacharias Hall",
+  "src": {
+   "label": "College Heights Herald, 24 February 2026, SGA weekly meeting in the DSU Senate Chambers; single-subject frame cropped to the head and shoulders",
+   "url": "https://wkuherald.com/wp-content/uploads/2026/02/022426_SGA_VS_12.jpg"
   }
  },
  {
