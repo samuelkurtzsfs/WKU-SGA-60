@@ -82,10 +82,10 @@
   "width": 140,
   "height": 183,
   "quality": "low",
-  "why": "1993 Talisman senior class portrait grid, p. 42, indexed \"Pride, Paige 42, 156, 188, 192, 203\". The grid is four portraits across with each row's four names printed in order in the column to the left; row three reads Connie Priddy, S. Paige Pride, Laura Kay Proctor, Tammy A. Rajewich, and this is the second cell of that row. This also settles the doubt recorded in _do-not-use.json about the 1991 Talisman cell for Susan P. Pride of Tell City, Ind.: the 1993 volume prints the same woman, same hometown, as S. Paige Pride, so the S. is Susan and Paige is the name she went by. She is the only Pride in either volume.",
+  "why": "Not the rejected frame. This is a different volume, a different page and a different photograph from the 1991 Talisman p. 119 cell recorded in _do-not-use.json, and it needs no inference from a middle initial. It is the 1993 Talisman senior class portrait grid, p. 42. The 1993 index carries exactly one Pride in the volume, \"Pride, Paige 42, 156, 188, 192, 203\", and that single entry ties the portrait page to four pages where she is captioned by name: p. 203 reads \"Paige Pride, a senior from Tell City, Ind., tries to wash off Brian Lomax\" at the Student Alumni Association's Oozeball tournament, and pp. 156, 188 and 192 name Paige Pride in organization group photographs. The grid is four portraits across with each row's four names printed in order in the column to the left; row three reads Connie Priddy, S. Paige Pride, Laura Kay Proctor, Tammy A. Rajewich, and this is the second cell of that row. The grid cell prints her as S. Paige Pride of Tell City, Ind., and the p. 203 caption prints her as Paige Pride, a senior from Tell City, Ind., so the two are the same woman on the volume's own evidence. As a by-product this also settles the 1991 doubt, since the earlier cell reads Susan P. Pride of the same hometown, but nothing here depends on that.",
   "caption_quote": "S. Paige Pride, Biochemistry, Tell City, Ind.",
   "src": {
-   "label": "1993 Talisman, p. 42, senior class portraits; indexed \"Pride, Paige 42, 156, 188, 192, 203\"",
+   "label": "1993 Talisman, p. 42, senior class portraits; identified by name at p. 203 and indexed \"Pride, Paige 42, 156, 188, 192, 203\"",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
   }
  },
@@ -116,21 +116,6 @@
   "caption_quote": "Jason Charles Hays Fr., Bowling Green",
   "src": {
    "label": "1994 Talisman, p. 35, Poland Hall portraits; indexed \"Hays, Jason Charles, 35\"",
-   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
-  }
- },
- {
-  "year": "1993-94",
-  "name": "Pat Monohan",
-  "file": "1993-94-pat-monohan.jpg",
-  "replaces": null,
-  "width": 121,
-  "height": 151,
-  "quality": "low",
-  "why": "1994 Talisman Greek portrait grid, p. 66, Delta Tau Delta, indexed \"Monohan, Patrick, 66\", the only Patrick Monohan in the volume. The grid is five portraits across with each row's five names, class years and hometowns printed in order in the column to the left; the fifth row reads Patrick Monohan Sr., Jeff Moore Fr., Mark Moss Sr., Jon Phelps Fr., Gabriel S. Rawls Fr., and this is the first cell of that row. The surname is spelled Monohan here exactly as the SGA records spell the 1993-94 Judicial Council member. He is a senior in 1993-94, so he would have been a sophomore in 1991-92 and a junior in 1992-93, the years the archive records a Patrick Manahan spelled Monahan; that is a flag for the editor, not a merge, and this portrait is filed only against the Monohan spelling.",
-  "caption_quote": "Patrick Monohan Sr., Crestview Hills",
-  "src": {
-   "label": "1994 Talisman, p. 66, Delta Tau Delta portraits; indexed \"Monohan, Patrick, 66\"",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
   }
  },
@@ -176,6 +161,96 @@
   "caption_quote": "Left: Caked with mud, Gerst smiles in victory after his fraternity, Delta Tau Delta",
   "src": {
    "label": "1994 Talisman, p. 73, Greek Week; indexed \"Gerst, Jason, 73\"; photograph by Teak Phillips",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
+  }
+ },
+ {
+  "year": "1991-92",
+  "name": "Kevin Colon",
+  "file": "1991-92-kevin-colon.jpg",
+  "replaces": null,
+  "width": 127,
+  "height": 160,
+  "quality": "low",
+  "why": "1992 Talisman underclassmen class portrait grid, p. 120, indexed \"Colon, Kevin 120, 180, 218\" (the volume prints the surname with an accent, Colon). Page 180 is the Associated Student Government group photograph, where the second row reads John M. Sowder, Gretchen S. Ploch, Andrea D. Cailles, Andrea C. Wilson, Kevin Colon, so the same index entry ties the portrait page to his ASG service. The grid is five portraits across with each row's five names, class years and hometowns printed in order in the column to the left; row one reads David Collett (Fr.), Lori N. Collins (Jr.), Kevin Colon (Fr.), Pamela Conder (Fr.), James F. Conner (Soph.), and this is the third cell of that row. The row runs man, woman, man, woman, man exactly as the names do.",
+  "caption_quote": "Kevin Colon (Fr.), Elizabethtown",
+  "src": {
+   "label": "1992 Talisman, p. 120, underclassmen portraits; indexed \"Colon, Kevin 120, 180, 218\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416/"
+  }
+ },
+ {
+  "year": "1993-94",
+  "name": "Kenny May",
+  "file": "1993-94-kenny-may.jpg",
+  "replaces": null,
+  "width": 118,
+  "height": 158,
+  "quality": "low",
+  "why": "1992 Talisman underclassmen class portrait grid, p. 132, indexed \"May, Kenneth S. 132, 164\", the only male May in the volume. Page 164 is the Phi Beta Lambda group photograph, whose second row is printed \"Kenny S. May, Darryl Payne, Davon Pinkston, Deanna M. Perry\", so the same index entry carries both the formal name and the Kenny the archive uses, with the middle initial S in both. The grid is five portraits across with each row's five names, class years and hometowns printed in order in the column to the left; row one reads Jennifer Mascaro (Fr.), Janeda Mathews (Fr.), Jennifer May (Soph.), Kenny May (Soph.), Rebecca McCoin (Fr.), and this is the fourth cell of that row. He is the only man in the row and the only man's name in it. A sophomore in 1991-92 is a senior in 1993-94, the year he was Parliamentarian. The identification rests on his being the only Kenny May in the volume rather than on an SGA cross-reference; the 1993 Talisman's only mention of him, \"May, Kenny 62, 200\", is the Sigma Alpha Epsilon group photograph and its page 62 reference does not lead to a portrait.",
+  "caption_quote": "Kenny May (Soph.), Elizabethtown",
+  "src": {
+   "label": "1992 Talisman, p. 132, underclassmen portraits; indexed \"May, Kenneth S. 132, 164\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416/"
+  }
+ },
+ {
+  "year": "1992-93",
+  "name": "Laura Jo Bland",
+  "file": "1992-93-laura-jo-bland.jpg",
+  "replaces": null,
+  "width": 641,
+  "height": 569,
+  "quality": "medium",
+  "why": "1992 Talisman, p. 163, a single-subject photograph, indexed \"Bland, Laura Jo 162\", the only Laura Jo Bland in the volume. The caption sits at the foot of the facing text column on p. 162, which is the page the index gives, with a printed arrow pointing across to the photograph. One person is in the frame, and the caption names one person and describes exactly what the frame shows, a student working a sample question with a pencil over an open booklet. She is a Campbellsville sophomore in 1991-92, which makes her a junior in 1992-93, the year the SGA minutes record her as a Senator.",
+  "caption_quote": "Campbellsville sophomore Laura Jo Bland attempts a sample question during a RONKIN group seminar",
+  "src": {
+   "label": "1992 Talisman, pp. 162-163, Pre-Law Club LSAT seminar; indexed \"Bland, Laura Jo 162\"; photograph by Jana Thompson",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416/"
+  }
+ },
+ {
+  "year": "1991-92",
+  "name": "Patrick Monohan",
+  "file": "1993-94-pat-monohan.jpg",
+  "replaces": null,
+  "width": 121,
+  "height": 151,
+  "quality": "low",
+  "why": "1994 Talisman Greek portrait grid, p. 66, Delta Tau Delta, indexed \"Monohan, Patrick, 66\", the only Patrick Monohan in the volume. The grid is five portraits across with each row's five names, class years and hometowns printed in order in the column to the left; the fifth row reads Patrick Monohan Sr., Jeff Moore Fr., Mark Moss Sr., Jon Phelps Fr., Gabriel S. Rawls Fr., and this is the first cell of that row. He is a senior in 1993-94, so a sophomore in 1991-92 and a junior in 1992-93, which matches all three years the archive records for him. The Talisman spells him Monohan in every volume: the 1992 index reads \"Monohan, Patrick 181\", the Spirit Masters photograph that year, and the 1993 index reads \"Monohan, Patrick 202\", the Spirit Masters photograph again. Filed against each of his three years because data/name-aliases.json now maps Patrick Monahan and Pat Monohan onto the one man, Patrick Monohan.",
+  "caption_quote": "Patrick Monohan Sr., Crestview Hills",
+  "src": {
+   "label": "1994 Talisman, p. 66, Delta Tau Delta portraits; indexed \"Monohan, Patrick, 66\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
+  }
+ },
+ {
+  "year": "1992-93",
+  "name": "Patrick Monohan",
+  "file": "1993-94-pat-monohan.jpg",
+  "replaces": null,
+  "width": 121,
+  "height": 151,
+  "quality": "low",
+  "why": "1994 Talisman Greek portrait grid, p. 66, Delta Tau Delta, indexed \"Monohan, Patrick, 66\", the only Patrick Monohan in the volume. The grid is five portraits across with each row's five names, class years and hometowns printed in order in the column to the left; the fifth row reads Patrick Monohan Sr., Jeff Moore Fr., Mark Moss Sr., Jon Phelps Fr., Gabriel S. Rawls Fr., and this is the first cell of that row. He is a senior in 1993-94, so a sophomore in 1991-92 and a junior in 1992-93, which matches all three years the archive records for him. The Talisman spells him Monohan in every volume: the 1992 index reads \"Monohan, Patrick 181\", the Spirit Masters photograph that year, and the 1993 index reads \"Monohan, Patrick 202\", the Spirit Masters photograph again. Filed against each of his three years because data/name-aliases.json now maps Patrick Monahan and Pat Monohan onto the one man, Patrick Monohan.",
+  "caption_quote": "Patrick Monohan Sr., Crestview Hills",
+  "src": {
+   "label": "1994 Talisman, p. 66, Delta Tau Delta portraits; indexed \"Monohan, Patrick, 66\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
+  }
+ },
+ {
+  "year": "1993-94",
+  "name": "Pat Monohan",
+  "file": "1993-94-pat-monohan.jpg",
+  "replaces": null,
+  "width": 121,
+  "height": 151,
+  "quality": "low",
+  "why": "1994 Talisman Greek portrait grid, p. 66, Delta Tau Delta, indexed \"Monohan, Patrick, 66\", the only Patrick Monohan in the volume. The grid is five portraits across with each row's five names, class years and hometowns printed in order in the column to the left; the fifth row reads Patrick Monohan Sr., Jeff Moore Fr., Mark Moss Sr., Jon Phelps Fr., Gabriel S. Rawls Fr., and this is the first cell of that row. He is a senior in 1993-94, so a sophomore in 1991-92 and a junior in 1992-93, which matches all three years the archive records for him. The Talisman spells him Monohan in every volume: the 1992 index reads \"Monohan, Patrick 181\", the Spirit Masters photograph that year, and the 1993 index reads \"Monohan, Patrick 202\", the Spirit Masters photograph again. Filed against each of his three years because data/name-aliases.json now maps Patrick Monahan and Pat Monohan onto the one man, Patrick Monohan.",
+  "caption_quote": "Patrick Monohan Sr., Crestview Hills",
+  "src": {
+   "label": "1994 Talisman, p. 66, Delta Tau Delta portraits; indexed \"Monohan, Patrick, 66\"",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
   }
  }

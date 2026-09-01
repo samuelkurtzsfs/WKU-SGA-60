@@ -16,7 +16,7 @@
   "year": "1990-91",
   "file": "1991 Talisman, p. 119, underclassmen portraits (McF-Poy), the cell printed 'Susan P. Pride, Tell City, Ind.'",
   "reason": "The 1991 index carries exactly one Pride in the whole volume and the timing is right, but the printed name is Susan P. Pride and nothing in the archive gives Paige Pride a first name of Susan. A middle-initial match is not an identification. Do not cut this face until a source gives her full name; the ASG minutes only ever call her Paige, and once Page.",
-  "resolved": "Settled 1 September 2026. The 1993 Talisman senior grid, p. 42, prints her as \"S. Paige Pride, Biochemistry, Tell City, Ind.\" and indexes her as \"Pride, Paige 42, 156, 188, 192, 203\". Same hometown as the 1991 cell, and the S. is the Susan of that cell, so Susan P. Pride and Paige Pride are one woman. The 1993 portrait carries her own name in its caption and was cut from that page instead; the 1991 cell no longer needs to be inferred and remains unused."
+  "resolved": "Settled 1 September 2026, and settled without using the 1991 cell. The 1993 Talisman carries exactly one Pride, indexed \"Pride, Paige 42, 156, 188, 192, 203\". Page 203 captions a photograph \"Paige Pride, a senior from Tell City, Ind., tries to wash off Brian Lomax\", and the senior class portrait grid on p. 42 that the same index entry points at prints \"S. Paige Pride, Biochemistry, Tell City, Ind.\" The portrait published for her is that 1993 p. 42 cell, not the 1991 p. 119 cell described above, which remains unused. The 1991 cell's Susan P. Pride of Tell City, Ind. is now evidently the same woman, but no claim rests on it."
  },
  {
   "name": "Todd Wallace",
@@ -41,5 +41,71 @@
   "year": "1995-96",
   "file": "any Herald 1995-1999 photograph or mention captioned Horace Johnson",
   "reason": "Every Horace Johnson in the Herald across these years is the WKU campus police chief, not a student. Herald 71:48, 28 March 1996 p. 6 has \"Chief Horace Johnson said the bike patrol has been a tremendous success\"; Herald 71:51, 9 April 1996 p. 2 has \"Police Chief Horace Johnson\" swearing in new officers; and the paper covered his resignation as chief on 4 March 1999. The archive lists an SGA officer of this name in 1995-96 with no title. Do not attach the chief to the student without a source that puts a Horace Johnson in a student seat."
+ },
+ {
+  "name": "Antonina Clementi",
+  "year": "2022-23",
+  "file": "https://wkuherald.com/wp-content/uploads/2023/01/SGASessionTwo_22.jpg",
+  "reason": "The caption positions her correctly - 'Speaker of the Senate Julie Mishchuk (right) and Secretary of the Senate Antonina Clementi (left) pack up' - and the right-hand figure matches the archive's existing portrait of Mishchuk, so the identification is sound. The problem is the frame: the left-hand figure is cut off above the shoulders and no part of her face is in the picture. It is the most tempting caption in the block and it contains no face."
+ },
+ {
+  "name": "Antonina Clementi",
+  "year": "2021-22",
+  "file": "https://wkuherald.com/wp-content/uploads/2022/04/download.png",
+  "reason": "The WKU forensics team award photograph of April 2022, carried in _herald-leads.json. Its caption is fully positioned and puts Clementi first in the front row left to right, so it would identify her. But the file the Herald published is 640x428 for twenty-six people, every one of them masked, and a head is about twenty-four pixels across. There is no face to cut and upscaling is forbidden."
+ },
+ {
+  "name": "Annalise Finch",
+  "year": "2023-24",
+  "file": "https://wkuherald.com/wp-content/uploads/2024/01/ER12048.jpg",
+  "reason": "Her only Herald photograph and the caption names her alone: 'Elementary education major and Executive Vice President of SGA, Annalise Finch, takes a selfie with her class pet'. She is photographed from behind and to one side with her arm raised to the phone; the frame shows the back of her head and hair and no face at all. Checked at full resolution before rejecting."
+ },
+ {
+  "name": "Harper Anderson",
+  "year": "2018-19",
+  "file": "https://wkuherald.com/wp-content/uploads/2018/09/6a32adf19a30fadd29c4418d6c682e0a.jpg",
+  "reason": "'WKU Student Body President elect Stephen Mayer hugs his administrative vice president Harper Anderson after hearing that their ticket won the SGA election.' Two named people and the archive already holds a portrait of Mayer, so which figure is Anderson is not in doubt. She has her face buried in his shoulder with her back to the camera and nothing of her face shows. The duplicate upload of 2019-03-27 is the same file."
+ },
+ {
+  "name": "Hannah Neeper",
+  "year": "2016-17",
+  "file": "https://wkuherald.com/wp-content/uploads/2016/04/7acb7747154cad4e475308f8bf1d9288.jpg",
+  "reason": "'Student President Jay Todd Richey, left hugs Administrative Vice President Hannah Neeper, and Executive Vice President Kate Hart hugs Colton Hushell after the SGA results announcement.' Four named people in two hugging pairs and the positions do resolve, but Neeper is the woman with her back to the camera in the left pair and her face is not in the frame. Flagged in 2011-2015-notes.json as a lead needing a crop; it cannot be cropped. The 2016-04-21 upload is the same file."
+ },
+ {
+  "name": "Murphy Burke",
+  "year": "2016-17",
+  "file": "https://wkuherald.com/wp-content/uploads/2016/04/832757b7c6f1bceff1047b9c64c097b0.jpg",
+  "reason": "The presidential search committee student forum of 27 April 2016. The caption names Higdon, Richey and Burch left, middle and right at the table and describes them answering 'sophomore, Murphy Burke's question'. Burke is the questioner standing with her back to the camera in the foreground; the three faces in the picture are the panel, not her."
+ },
+ {
+  "name": "Cain Alvey",
+  "year": "2012-13",
+  "file": "https://wkuherald.com/wp-content/uploads/2012/03/c2c44efe98edd2239bc31cee48c13c0f-1.jpg",
+  "reason": "The SGA election results frame of 30 March 2012. Its caption names Cory Dodds, Cain Alvey and Keyana Boka and gives no positions for any of them, and at least six people are in the picture. 2011-2015-notes.json lists it as a lead that 'needs a crop', and it cannot honestly be cropped: nothing in the caption or the article says where Alvey is standing. The archive already publishes the whole uncropped frame as its photograph of Cory Dodds."
+ },
+ {
+  "name": "Mark Clark",
+  "year": "2017-18",
+  "file": "https://wkuherald.com/wp-content/uploads/2018/02/7f3c1736182c67bb68f5ca55389f3e36.jpg",
+  "reason": "'Junior Mark Clark and freshman Kat Tyler work in the new Pride Center relocated in Downing Student Union room 2084.' Two people, two names, no positions, and nothing visual separates a junior from a freshman. Both have short dark hair, both are laughing with a hand raised to the face, and at this size neither can be told apart by sex. This is the David Bass problem again. The 2018-04-13 upload is the same file. Separately, a later researcher should weigh whether a photograph made inside the Pride Center is the right portrait for someone whose service is the point, given that a portrait was already withdrawn from this archive for that reason."
+ },
+ {
+  "name": "Noah Moore",
+  "year": "2018-19",
+  "file": "https://wkuherald.com/wp-content/uploads/2018/02/3a24da74bc091f493a48dadc637123b4.jpg",
+  "reason": "Captioned 'Tour guide Noah Moore' and it is a clean studio portrait, which is why it keeps being re-found; it is now in _herald-leads.json as well. It is the wrong Noah Moore. WKU has two in these years and the tour guide is Noah Moore of Fort Thomas, a public relations, Spanish and Arabic major, class of 2021, Sigma Phi Epsilon, whose WKU write-up lists five campus offices and does not include SGA. The SGA Noah Moore was elected a junior senator in April 2018. The Sigma Phi Epsilon group frame of 2018-04-09 is the same wrong man. Reasoning first recorded in modern-b-notes.json."
+ },
+ {
+  "name": "Rachel Keightley",
+  "year": "2015-16",
+  "file": "https://www.wku.edu/english/alumni-profiles/keightley-dudgeon-2019.pdf, the portrait on page 1",
+  "reason": "A different person. The WKU English department's alumni profile is of Keightley Dudgeon, class of 2019, and Keightley is her given name; the profile never mentions student government. WKU's own autumn 2015 dean's and president's list for the Bowling Green area prints the SGA member as Rachel A. Keightley, with an Andrew B. Keightley at the same postcode. A first name against a surname is not a match. This is the first thing a search for Keightley on wku.edu returns, so it will be found again."
+ },
+ {
+  "name": "Anne Guillory",
+  "year": "1996-97",
+  "file": "Herald 71:59, 2 May 1996, p. 2, the photograph above the caption naming her at the regents meeting",
+  "reason": "The caption names her alone and the identification is sound, but the frame is unusable as a portrait. She is lit from behind with her hand over her mouth and the whole head reads as a black silhouette: 85 per cent of the pixels across the face fall below tone 40 in the scan, and a level stretch recovers nothing but the outline of the fingers. A second person sits fully blacked out at the left edge. There is no face in it to publish."
  }
 ]
