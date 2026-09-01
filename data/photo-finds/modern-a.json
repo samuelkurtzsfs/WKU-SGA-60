@@ -1,1 +1,97 @@
-[]
+[
+ {
+  "year": "2013-14",
+  "name": "Mark Reeves",
+  "file": "2013-14-mark-reeves.jpg",
+  "replaces": null,
+  "width": 180,
+  "height": 260,
+  "quality": "low resolution: the Herald ran it as a 180x260 column mugshot; no larger file exists on the site",
+  "why": "the only photograph of him on wkuherald.com, and it is a straight smiling portrait rather than a group frame",
+  "caption_quote": "Louisville graduate student Mark Reeves",
+  "identification": "Mugshot attached to his signed commentary of 25 Feb 2014 on WKU budget and athletic spending. The Herald's SGA reports of 5 and 6 Feb 2014 name Executive Vice President Mark Reeves speaking on the same state budget cuts in the same weeks, so the byline portrait and the SGA officer are the same person.",
+  "src": {
+   "label": "College Heights Herald, 25 Feb 2014, 'COMMENTARY: University response to athletic spending disheartening'",
+   "url": "https://wkuherald.com/41428/opinion/commentary-university-response-to-athletic-spending-disheartening/"
+  }
+ },
+ {
+  "year": "2014-15",
+  "name": "Seth Church",
+  "file": "2014-15-seth-church.jpg",
+  "replaces": null,
+  "width": 440,
+  "height": 550,
+  "why": "a straight cap-and-gown graduation portrait, single subject, facing camera; the best frame of him the Herald holds",
+  "caption_quote": "Seth Church at the 2015 Lavender Graduation ceremony.",
+  "identification": "Sole subject of the frame and named in the caption. The Herald called him 'Glasgow sophomore Seth Church, chief justice' on 9 Apr 2013, so a 2015 graduation fits; the 2023 alumni feature the picture ran with describes his upbringing 'in rural Kentucky on a farm'.",
+  "src": {
+   "label": "College Heights Herald, 15 Nov 2023, 'LGBTQ+ WKU Alumni share stories from the Hill' (archival photograph, 2015 Lavender Graduation)",
+   "url": "https://wkuherald.com/73883/news/lgbtq-wku-alumni-share-stories-from-the-hill/"
+  }
+ },
+ {
+  "year": "2015-16",
+  "name": "Michael Shelton",
+  "file": "2015-16-michael-shelton.jpg",
+  "replaces": null,
+  "width": 600,
+  "height": 750,
+  "quality": "a working photograph, not a portrait: he is reading and his hand rests on his cheek, though the face is unobstructed and sharp",
+  "why": "the only photograph of him on wkuherald.com and it is a clean single-subject frame taken in his first SGA year",
+  "caption_quote": "Owensboro sophomore Michael Shelton reads inside the $100 Solution House, where he lives.",
+  "identification": "Only person in the frame and named in the caption. The same paper reports 'Michael Shelton, Owensboro sophomore and resident at the $100 Solution House' on 3 May 2016 and 'Michael Shelton, co-chairman of MyCampusToo' on 4 Feb 2016, tying the hometown and residence in the caption to the SGA officer.",
+  "src": {
+   "label": "College Heights Herald, 14 Oct 2015, '$100 Solution House'",
+   "url": "https://wkuherald.com/wp-content/uploads/2015/10/e75154cfb050387b206bc5f270de1868.jpg"
+  }
+ },
+ {
+  "year": "2015-16",
+  "name": "Cody Cox",
+  "file": "2015-16-cody-cox.jpg",
+  "replaces": null,
+  "width": 720,
+  "height": 900,
+  "id_confidence": "inferred - editor should confirm before publishing",
+  "why": "a lit studio portrait, single subject, by far the best-quality frame of anyone in this block",
+  "caption_quote": "Winchester freshman Cody Cox came out of the closet when he was a junior in high school.",
+  "identification": "Sole subject of a studio portrait, named in the caption. NOT independently tied to SGA: the Herald never gives the SGA chief justice a hometown or class year. The link is name plus timeline - a freshman in Feb 2014 is a junior in 2015-16 (associate justice) and a senior in 2016-17 (chief justice), which is exactly the span recorded for him. Reject if a second Cody Cox at WKU can be shown.",
+  "src": {
+   "label": "College Heights Herald, 6 Feb 2014, 'Coming out at WKU' diversity feature",
+   "url": "https://wkuherald.com/wp-content/uploads/2014/02/664ecd69214be8c0bdca83860a9ad6f5.jpg"
+  }
+ },
+ {
+  "year": "2016-17",
+  "name": "Emily Houston",
+  "file": "2016-17-emily-houston.jpg",
+  "replaces": null,
+  "width": 340,
+  "height": 425,
+  "quality": "cropped from a wide banquet frame; her head is about 150 pixels tall in the original and she is in three-quarter profile",
+  "why": "the only photograph of her the Herald positions by name, taken in the year she chaired Student Affairs",
+  "caption_quote": "Winchester, Ky. sophomore Emily Houston (right) eat their meal during the Hunger Banquet",
+  "identification": "Caption names three people left, middle and right round one table and they line up: the woman at the right of the frame is Houston. Hometown and class year match the SGA record - she was voted a senator in Sept 2015 and made student affairs chair in Sept 2016.",
+  "src": {
+   "label": "College Heights Herald, 1 Dec 2016, Hunger Banquet hosted by Housing and Residence Life",
+   "url": "https://wkuherald.com/wp-content/uploads/2016/12/cde8fac1113fb31e1c5b69034ac14313.jpg"
+  }
+ },
+ {
+  "year": "2012-13",
+  "name": "Travis Taylor",
+  "file": "2012-13-travis-taylor.jpg",
+  "replaces": null,
+  "width": 142,
+  "height": 196,
+  "quality": "very low resolution: his head is about 90 pixels tall in the source frame, so the crop is small and soft",
+  "why": "the only frame in which he faces the camera; the 2011 feature photograph of him is a wide environmental shot with his face turned away and in shadow",
+  "caption_quote": "Nicki, 22, and Travis, 26, Taylor met at SGA in 2012 and married two years later",
+  "identification": "Two people in the frame, one man and one woman, and the caption names one of each; the man is Travis. The Herald elsewhere calls him 'Beaver Dam senior Travis Taylor' (15 Mar 2011) and 'a Beaver Dam graduate student' (4 Jul 2013), the same Travis Taylor it names as SGA academic affairs chair in Feb 2011 and chief of staff in 2012-13.",
+  "src": {
+   "label": "College Heights Herald, 26 Mar 2015, feature on Nicki and Travis Taylor, photographed in the SGA senate chambers",
+   "url": "https://wkuherald.com/wp-content/uploads/2015/03/1120ed8f54d05c57d7e2ff91da8e39a5.jpg"
+  }
+ }
+]
