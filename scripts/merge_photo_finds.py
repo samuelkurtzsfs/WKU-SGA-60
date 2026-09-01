@@ -29,6 +29,14 @@ OVERLAY = ROOT / "data" / "photos.json"
 
 MAGIC = {b"\xff\xd8": "jpeg", b"\x89P": "png"}
 
+# Said plainly, for a reader rather than a researcher.
+QUALITY = {
+    "soft": "the only surviving frame of them, and it is not a sharp one",
+    "small": "the only surviving frame of them, and it is a small one",
+    "group crop": "cropped from a group photograph, the only one of them known",
+    "group": "cropped from a group photograph, the only one of them known",
+}
+
 
 def fold(s):
     """For telling a near miss from a real one when a name does not match."""
@@ -119,8 +127,17 @@ def main():
             refused.append((origin, rec.get("name", "?"), why))
             continue
         key = (rec["year"], rec["name"])
+        # A researcher who had to settle marks the finding "soft", "small" or
+        # "group crop". The owner would rather have the face than an empty
+        # frame, but a reader looking at a poor photograph should be told it
+        # is the only one there is, not left wondering. So it goes in the
+        # citation the site already prints, and nowhere new.
+        label = rec["src"]["label"]
+        q = str(rec.get("quality") or "").strip()
+        if q and q.lower() not in label.lower():
+            label = f"{label} ({QUALITY.get(q.lower(), q)})"
         entry = {"year": rec["year"], "name": rec["name"], "file": rec["file"],
-                 "src": {"label": rec["src"]["label"], "url": rec["src"]["url"]}}
+                 "src": {"label": label, "url": rec["src"]["url"]}}
         old = have.get(key)
         if old:
             if old["file"] == rec["file"] and old["src"] == entry["src"]:
