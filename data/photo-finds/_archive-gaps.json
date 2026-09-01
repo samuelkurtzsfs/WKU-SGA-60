@@ -58,5 +58,25 @@
    "label": "SGA Senate minutes 6 Feb 2007; WKU News 2 May 2007",
    "url": ""
   }
+ },
+ {
+  "kind": "defective scan",
+  "name": "1989 Talisman, printed pages 352-353",
+  "year": "1988-89",
+  "detail": "One leaf is missing from the TopSCHOLAR scan of the 1989 Talisman. PDF leaf 178 ends on printed page 351 and leaf 179 opens on printed page 354, so the index runs A to Crawford and then jumps to Foe. The whole D and E section of the index, and the first half of F, is simply not in the file. That is why Bill Engle cannot be looked up in the volume that covers his first year. Every leaf after 178 is therefore one printed spread further on than the arithmetic suggests: pages are 2*leaf-6 up to leaf 178 and 2*leaf-4 after it.",
+  "src": {
+   "label": "1989 Talisman, UA12/2/2 'Image in the Making'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413"
+  }
+ },
+ {
+  "kind": "scan resolution ceiling",
+  "name": "TopSCHOLAR Talismans 1982-1991",
+  "year": "",
+  "detail": "Every volume of this run is scanned at about 96 dpi, roughly 816 by 1123 pixels per printed page, except the 1983 volume which is 1892 by 2386 and has no OCR text layer at all. At that ceiling a class portrait cell comes out between 70 and 160 pixels wide, which is small but real, while a face in a club or Associated Student Government group photograph comes out at 40 to 60 pixels, which is not usable for anything. Plan on the class portrait grids and treat the group photographs as name lists, not as picture sources. Volume record numbers run 405 for 1982, 406 and 407 for the two parts of 1983, then 408 to 415 for 1984 through 1991. Leaf to printed page: 1982 page = leaf-3; 1983 part 2 page = leaf+193; 1984 and 1991 page = 2*leaf-6; 1985 page = 2*leaf-4; 1988 and 1990 page = leaf-3; 1989 see the entry above.",
+  "src": {
+   "label": "digitalcommons.wku.edu/dlsc_ua_records/405-415",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413"
+  }
  }
 ]

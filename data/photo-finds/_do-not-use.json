@@ -10,5 +10,23 @@
   "year": "2012-13",
   "file": "Herald 12 Oct 2010, p.6, mugshot captioned MITCHELL",
   "reason": "The caption gives a surname and nothing else. Mitchell is far too common to pin a face on, and no other evidence ties this frame to the Drew Mitchell who served."
+ },
+ {
+  "name": "Paige Pride",
+  "year": "1990-91",
+  "file": "1991 Talisman, p. 119, underclassmen portraits (McF-Poy), the cell printed 'Susan P. Pride, Tell City, Ind.'",
+  "reason": "The 1991 index carries exactly one Pride in the whole volume and the timing is right, but the printed name is Susan P. Pride and nothing in the archive gives Paige Pride a first name of Susan. A middle-initial match is not an identification. Do not cut this face until a source gives her full name; the ASG minutes only ever call her Paige, and once Page."
+ },
+ {
+  "name": "Todd Wallace",
+  "year": "1983-84",
+  "file": "1984 Talisman, p. 150, the class portrait indexed as 'Wallace, Michael Todd 150'",
+  "reason": "A different person. The 1985 Talisman indexes the Todd Wallace who served in Congress as Todd David Wallace, pages 79, 80, 224 and 273, and page 79 quotes him as a Cadiz senior. Michael Todd Wallace is a second student. The 1984 entry looks like the obvious match and is not."
+ },
+ {
+  "name": "Kelly S. Smith",
+  "year": "1983-84",
+  "file": "1984 Talisman, p. 147, the class portrait indexed as 'Smith, Kelly Annette 147, 268'",
+  "reason": "The only Kelly Smith in the 1984 index, and page 268 is an organization page rather than the Associated Student Government spread on 238, so nothing ties her to ASG. The archive's treasurer is Kelly S. Smith and this index entry gives Annette as the middle name. Smith is far too common to place a face on a mismatched initial."
  }
 ]
