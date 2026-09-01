@@ -76,6 +76,21 @@
  },
  {
   "year": "2018-19",
+  "name": "Amanda Harder",
+  "file": "2018-19-amanda-harder.jpg",
+  "replaces": null,
+  "width": 220,
+  "height": 300,
+  "quality": "medium",
+  "why": "Two women stand before the Senate and the caption places both of them, Harder at left and Mary Fyfe at right. The left-hand figure is Harder.",
+  "caption_quote": "Amanda Harder, left, and Mary Fyfe, right, speak about a resolution they authored",
+  "src": {
+   "label": "College Heights Herald, 24 April 2019, debate on the resolution adding a student fee to support the College Heights Herald; cropped to the left-hand figure",
+   "url": "https://wkuherald.com/wp-content/uploads/2019/04/3e826db9abff4155cc3689c6f1b07961.jpg"
+  }
+ },
+ {
+  "year": "2018-19",
   "name": "Jacob McAndrews",
   "file": "2018-19-jacob-mcandrews.jpg",
   "replaces": null,
@@ -87,6 +102,21 @@
   "src": {
    "label": "College Heights Herald, 30 January 2018, emergency Judicial Council meeting; cropped to McAndrews, the speaking figure the caption names",
    "url": "https://wkuherald.com/wp-content/uploads/2018/01/1a683687a68fd77bfb57ce8d6a9fefe9.jpg"
+  }
+ },
+ {
+  "year": "2018-19",
+  "name": "Symone Whalin",
+  "file": "2018-19-symone-whalin.jpg",
+  "replaces": null,
+  "width": 190,
+  "height": 270,
+  "quality": "medium",
+  "why": "The caption names one person and describes her addressing SGA as an author of Resolution 1-19-S. She is the only person standing, at the Senate lectern; the only other figures are two out-of-focus heads at the bottom edge.",
+  "caption_quote": "Symone Whalin, one of the authors of Resolution 1-19-S, expresses to SGA during a meeting on Feb. 26, 2019 why the historical marker ... should be relocated",
+  "src": {
+   "label": "College Heights Herald, 27 February 2019, SGA meeting; cropped to the only standing figure, at the lectern",
+   "url": "https://wkuherald.com/wp-content/uploads/2018/03/ff3590c86a518a0590959d98f25a7537.jpg"
   }
  },
  {
@@ -120,6 +150,36 @@
   }
  },
  {
+  "year": "2023-24",
+  "name": "Isaac King",
+  "file": "2023-24-isaac-king.jpg",
+  "replaces": null,
+  "width": 290,
+  "height": 320,
+  "quality": "medium",
+  "why": "Two people in the frame and the caption separates them by what each is doing: Soloranzo receives the award, King gives it. The woman is holding the certificate, which is legible in the frame and reads CHIEF JUSTICE'S VERDICT AWARD with her name written on it, so she is the recipient and the man in the red SGA polo beside her is King. He was Chief Justice in 2023-24, which is the office the award is named for.",
+  "caption_quote": "Karley Soloranzo receives Chief Justice's Verdict Award from Isaac King",
+  "src": {
+   "label": "College Heights Herald, 19 October 2023, presentation of the September Chief Justice's Verdict Award; cropped to the man presenting it",
+   "url": "https://wkuherald.com/wp-content/uploads/2023/10/sga-10-18-photo.jpg"
+  }
+ },
+ {
+  "year": "2024-25",
+  "name": "Caroline Yates",
+  "file": "2024-25-caroline-yates.jpg",
+  "replaces": null,
+  "width": 210,
+  "height": 280,
+  "quality": "medium",
+  "why": "The caption names one person and describes her being sworn in. She is the only person standing in the frame and the only one with her right hand raised to take the oath; everyone else is seated at the Senate desks. Preferred over the 11 March 2025 frame, where she is at the far end of the room and much smaller.",
+  "caption_quote": "Caroline Yates is sworn in to the SGA Graduate Advisory Council in the SGA Chambers",
+  "src": {
+   "label": "College Heights Herald, 17 September 2024, swearing-in at the SGA Chambers; cropped to the only standing figure, hand raised",
+   "url": "https://wkuherald.com/wp-content/uploads/2024/09/09_17_24_SGA_017.jpg"
+  }
+ },
+ {
   "year": "2024-25",
   "name": "Chloe Ralston",
   "file": "2024-25-chloe-ralston.jpg",
@@ -136,6 +196,21 @@
  },
  {
   "year": "2024-25",
+  "name": "Jenna Wells",
+  "file": "2024-25-jenna-wells.jpg",
+  "replaces": null,
+  "width": 240,
+  "height": 340,
+  "quality": "medium",
+  "why": "The caption places both women, Wells at left and Savanna Kurtz at right, and gives each her SGA office. The archive already holds a portrait of Savanna Kurtz, and it is the right-hand woman here and not the left, which confirms the caption's order independently. Note for later researchers: the desk placards visible in this frame do not line up with the people sitting behind them, so do not read the identification off the placards.",
+  "caption_quote": "Community Relations Officer Jenna Wells (left) and Enrollment and Student Experience Officer Savanna Kurtz (right) applaud after a report",
+  "src": {
+   "label": "College Heights Herald, 15 April 2025, SGA meeting in the Senate Chambers; cropped to the left-hand figure the caption names",
+   "url": "https://wkuherald.com/wp-content/uploads/2025/04/savage_j_sga_4.15.25_013.jpg"
+  }
+ },
+ {
+  "year": "2024-25",
   "name": "Megan Farmer",
   "file": "2024-25-megan-farmer.jpg",
   "replaces": null,
@@ -147,6 +222,36 @@
   "src": {
    "label": "College Heights Herald, 4 November 2024, SGA's Topper Chef cooking class; single-subject frame cropped to the head and shoulders",
    "url": "https://wkuherald.com/wp-content/uploads/2024/11/11_04_topperchef_AL_0001.jpg"
+  }
+ },
+ {
+  "year": "2024-25",
+  "name": "Sophia Bryant",
+  "file": "2024-25-sophia-bryant.jpg",
+  "replaces": null,
+  "width": 360,
+  "height": 630,
+  "quality": "good",
+  "why": "Single-subject frame. The caption names one person and gives her SGA executive office, and hers is the only face in the picture.",
+  "caption_quote": "Student Mental Health and Wellbeing Officer Sophia Bryant jokes about her set as \"DJ Soffoe\" at SGA-Pollooza during her report",
+  "src": {
+   "label": "College Heights Herald, 15 April 2025, SGA meeting in the Senate Chambers; single-subject frame cropped to the head and shoulders",
+   "url": "https://wkuherald.com/wp-content/uploads/2025/04/savage_j_sga_4.15.25_016.jpg"
+  }
+ },
+ {
+  "year": "2025-26",
+  "name": "Andrew Adegoju",
+  "file": "2025-26-andrew-adegoju.jpg",
+  "replaces": null,
+  "width": 200,
+  "height": 230,
+  "quality": "medium",
+  "why": "The caption names one person and describes him giving his committee report. Five people are around the Senate table; of them one is turned away from the camera, one is in profile facing out of frame, one is looking down at the desk and one is looking down at a laptop. Only one is facing forward mid-sentence with a hand raised making a point, and he is the person the caption describes.",
+  "caption_quote": "Graduate Senator Andrew Adegoju gives his committee report during the weekly SGA meeting",
+  "src": {
+   "label": "College Heights Herald, 2 December 2025, SGA weekly meeting in the Senate Chambers; cropped to the only figure speaking",
+   "url": "https://wkuherald.com/wp-content/uploads/2025/12/SAV4831.jpg"
   }
  },
  {
@@ -222,6 +327,21 @@
   "src": {
    "label": "College Heights Herald, 23 September 2025, SGA weekly meeting in the Senate Chambers; single-subject frame cropped to the head and shoulders",
    "url": "https://wkuherald.com/wp-content/uploads/2025/09/SAV8929.jpg"
+  }
+ },
+ {
+  "year": "2025-26",
+  "name": "Malachi Humble",
+  "file": "2025-26-malachi-humble.jpg",
+  "replaces": null,
+  "width": 1120,
+  "height": 1100,
+  "quality": "good",
+  "why": "Single-subject frame. The caption names one person, gives him his Senate office and describes him questioning another senator; his is the only face in the picture. Preferred over the three-person frame of 11 November 2025, which names Humble, Jackson Smith and Ciin Lun without saying who is where and therefore identifies nobody.",
+  "caption_quote": "Senior Senator Malachi Humble questioned Senator Sydney Rettig on her proposal for funding period baskets on campus",
+  "src": {
+   "label": "College Heights Herald, 24 February 2026, SGA weekly meeting in the DSU Senate Chambers; single-subject frame cropped to the head and shoulders",
+   "url": "https://wkuherald.com/wp-content/uploads/2026/02/022426_SGA_VS_9.jpg"
   }
  },
  {

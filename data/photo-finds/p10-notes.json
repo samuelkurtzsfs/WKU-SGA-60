@@ -79,5 +79,68 @@
  },
  {
   "note": "SGA'S OWN CABINET PAGES CARRY NO PORTRAITS BEFORE 2025-26. wku.edu/sga/executive/index.php is the current page and does embed headshots, at /sga/2025_2026_executive/headshots_website/. The surviving older page, /sga/executive/index_old.php, is the 2016-17 cabinet and gives names, offices and topper.wku.edu addresses only, with no images. Every plausible older path was probed and all returned 404: 2018-2019-executive, 2019-2020-executive, 2021_2022_executive, 2022_2023_executive, 2023_2024_executive, 2024_2025_executive, index_old2.php. The headshot directory convention does not appear to predate the current cabinet."
+ },
+ {
+  "note": "TWO SOURCES THAT PAID OFF HERE AND ARE WORTH THE NEXT RESEARCHER'S TIME. First, WKU departments publish student award and profile pages with a studio portrait and a first-person paragraph that often names the student's SGA office outright: wku.edu/sociology-criminology/awards/<surname>.php and wku.edu/political-science/<firstlast>profile.php are two live examples, and the political science department indexes its set at /political-science/alumniprofiles.php and /political-science/currentstudentprofiles.php. Harper Anderson was placed from one of these. Second, WKU Forensics keeps a team history at wku.edu/forensics/history/archive-2010-19.php and archive-2020-29.php whose photographs carry fully positioned name lists in the image title attribute, and the 'click to enlarge' href gives a 1200-pixel file rather than the 200-pixel thumbnail. Antonina Clementi was placed from one of those. The 2010-19 page has rosters but no positioned lists; the 2020-29 page has both."
+ },
+ {
+  "name": "Antonina Clementi",
+  "year": "2021-22",
+  "fact": "She was one of eight WKU Lincoln-Douglas debate students photographed in 2022, and stayed with the forensics team long after her SGA service: WKU records her on the 2021-22, 2022-23 and 2023-24 team photographs, and by 2025 she was a senior from Lafayette, Louisiana, winning the Harlan Hamm Award for leadership, taking first in extemporaneous speaking at the Kentucky state championships and being named to the 2025 Lincoln-Douglas All-American team.",
+  "src": {
+   "label": "WKU Forensics team history archive 2020-29",
+   "url": "https://www.wku.edu/forensics/history/archive-2020-29.php"
+  }
+ },
+ {
+  "name": "Harper Anderson",
+  "year": "2018-19",
+  "fact": "She was a senior from Morehead reading political science and criminology with a legal studies minor, class of 2021. Besides the administrative vice presidency she was a Spirit Master, Academic Excellence Chair of Kappa Delta, president of the Pi Alpha Delta pre-law society and a member of Pi Sigma Alpha, Order of Omega and Rho Lambda, and she interned for the Kentucky Legislative Research Commission in Frankfort in spring 2020. WKU named her Outstanding Major in Criminology.",
+  "src": {
+   "label": "WKU Department of Sociology and Criminology, 'Harper Anderson, Outstanding Criminology Major'",
+   "url": "https://www.wku.edu/sociology-criminology/awards/anderson.php"
+  }
+ },
+ {
+  "name": "Murphy Burke",
+  "year": "2016-17",
+  "fact": "She sat on the WKU Forensics team for four seasons, 2014-15 through 2017-18, a junior and then senior from Des Moines, Iowa. The team gave her the Patrick H. Vincent award in 2015-16, a Service award jointly with Asha Wasuge in 2016-17, and a Limited Prep award jointly with Lily Nellans in 2017-18. WKU's forensics history pages for those years carry team photographs but, unlike the 2020s pages, name nobody in them, so none of them identifies her.",
+  "src": {
+   "label": "WKU Forensics team history archive 2010-19",
+   "url": "https://www.wku.edu/forensics/history/archive-2010-19.php"
+  }
+ },
+ {
+  "name": "Hannah Neeper",
+  "year": "2016-17",
+  "fact": "Hannah E. Neeper was from Morehead, on WKU's dean's list in spring 2015 and autumn 2016, and presented a research project called 'Gender Perceptions in Taiwan' at the university's 46th Student Research Conference on 2 April 2016. She also sat on the University Senate in 2017 as an SGA representative.",
+  "src": {
+   "label": "WKU 46th Annual Student Research Conference programme, 2 April 2016",
+   "url": "https://www.wku.edu/studentresearch/2016_src_conference_program_final.pdf"
+  }
+ },
+ {
+  "name": "Tyler Scaff",
+  "year": "2014-15",
+  "fact": "He was a student worker at WKU's Hardin Planetarium and, with Dr Gelderman and Kistler, demonstrated its new digital projection system at a reception on 10 April 2013 attended by President Gary Ransdell. He is from La Grange, took a BS at WKU and was accepted to medical school at both Louisville and Kentucky. The article's two photographs are of the projector and the dome, not of him.",
+  "src": {
+   "label": "WKU Ogden College news, 'WKU's Hardin Planetarium adds digital projection system'",
+   "url": "https://www.wku.edu/ogden/news/index.php?view=article&articleid=2146"
+  }
+ },
+ {
+  "name": "Mallory Treece",
+  "year": "2013-14",
+  "fact": "A 2015 political science graduate, she was an alternate for a Fulbright English Teaching Assistantship to Germany and competed for WKU at the American Model United Nations conference in Chicago.",
+  "src": {
+   "label": "WKU Office of Scholar Development, nationally competitive scholarship winners 2011-2021",
+   "url": "https://www.wku.edu/osd/documents/2011-2021_scholarship-sucesses.pdf"
+  }
+ },
+ {
+  "note": "THE HERALD CAPTION LIBRARY IS NOW EXHAUSTED FOR THIS BLOCK, AND THE INDEX WAS TOPPED UP TO PROVE IT. data/herald-photos.json was thin for 2016, 2023 and 2024 (123, 49 and 197 captioned) even after the coordinator's 2016-2022 harvest. Those three years were re-harvested with scripts/chrome/herald_json.js and merged in: 950, 1026 and 2121 respectively, taking the file from 17,576 rows to 21,304. Every one of the 44 names was then re-run against the complete file. It produced exactly one caption nobody had listed before, the WKU forensics award group of April 2022 naming Antonina Clementi, and no new name at all. Thirty-five of the forty-four are named in no Herald photograph caption in any year."
+ },
+ {
+  "note": "ROUTES TRIED AND SPENT ON THIS BLOCK, so they are not tried again: the posts endpoint on a quoted full name for all 44, which found articles for 37 of them; every photograph attached to those 310 posts by the media 'post' field, 116 of which carry captions and only five of which name one of my people, all already known; the article pages themselves read in a real browser for inline photographs and SNO photo captions, which for this block carry only the lead art and the reporters' byline mugshots; caption searches on the office titles these 44 held, matched to the academic year they held them, which returned only other people's photographs; the Phi Mu composites for 2010 to 2018, the only Greek composites digitised for this era, which contain none of them; and the Spirit Masters booklets."
  }
 ]
