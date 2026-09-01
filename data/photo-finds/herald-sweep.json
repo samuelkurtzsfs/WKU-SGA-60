@@ -1,0 +1,73 @@
+[
+ {
+  "year": "2023-24",
+  "name": "Aniya Johnson",
+  "file": "2023-24-aniya-johnson.jpg",
+  "replaces": null,
+  "why": "A posed Herald portrait of her alone holding the SGA banner, sharp and full-face; nothing better exists.",
+  "caption_quote": "Aniya Johnson poses for a portrait outside the WKU Student Government Association chambers",
+  "src": {
+   "label": "College Heights Herald, 18 Oct 2023",
+   "url": "https://wkuherald.com/wp-content/uploads/2023/10/AniyaJohnson3-e1697672022474.jpg"
+  },
+  "width": 418,
+  "height": 533
+ },
+ {
+  "year": "2023-24",
+  "name": "Preston Romanov",
+  "file": "2023-24-preston-romanov.jpg",
+  "replaces": null,
+  "why": "Sole figure at the chamber podium in an SGA polo, sharp and full-face; the only Herald frame naming him.",
+  "caption_quote": "Director of Public Relations Preston Romanov tells the SGA senators about their official Instagram account",
+  "src": {
+   "label": "College Heights Herald, 30 Aug 2023",
+   "url": "https://wkuherald.com/wp-content/uploads/2023/08/0829_SGA_pj001.jpg"
+  },
+  "width": 540,
+  "height": 675
+ },
+ {
+  "year": "2022-23",
+  "name": "Olivia Feck",
+  "file": "2022-23-olivia-feck.jpg",
+  "replaces": null,
+  "quality": "small",
+  "why": "Cropped from the senate bench; the caption names only Feck and she is the one figure in focus and mid-speech, everyone else in profile or blurred.",
+  "caption_quote": "Senior Senator Olivia Feck speaks during ... Student Government Association's second session",
+  "src": {
+   "label": "College Heights Herald, 25 Jan 2023",
+   "url": "https://wkuherald.com/wp-content/uploads/2023/01/SGASessionTwo_19.jpg"
+  },
+  "width": 212,
+  "height": 274
+ },
+ {
+  "year": "2021-22",
+  "name": "Alex Cissell",
+  "file": "2021-22-alex-cissell.jpg",
+  "replaces": null,
+  "why": "Caption places Cissell at left of a two-person frame, so the left figure is her; the only Herald photograph naming her.",
+  "caption_quote": "WKU senior public relations student Alex Cissell (left) and SGA Senator at Large Sophia Bryant (right)",
+  "src": {
+   "label": "College Heights Herald, 13 Mar 2024",
+   "url": "https://wkuherald.com/wp-content/uploads/2024/03/6Y9A0080.jpg"
+  },
+  "width": 380,
+  "height": 475
+ },
+ {
+  "year": "2021-22",
+  "name": "Abbey Norvell",
+  "file": "2021-22-abbey-norvell.jpg",
+  "replaces": null,
+  "why": "The crowned figure is the only person the caption names; the four SGA town-hall frames name three people without positions and identify nobody. Identity rests on the Herald and the archive both carrying one Abbey Norvell at WKU across 2019-2022, not on a caption stating her SGA office.",
+  "caption_quote": "2021 WKU homecoming queen Abbey Norvell celebrates with teammates after being crowed homecoming queen",
+  "src": {
+   "label": "College Heights Herald, 30 Oct 2021",
+   "url": "https://wkuherald.com/wp-content/uploads/2021/10/B3_6044.jpg"
+  },
+  "width": 360,
+  "height": 450
+ }
+]

@@ -64,38 +64,6 @@
  },
  {
   "year": "1991-92",
-  "name": "Eric Griggs",
-  "file": "1991-92-eric-griggs.jpg",
-  "replaces": null,
-  "width": 44,
-  "height": 54,
-  "quality": "group crop",
-  "why": "Only 44 by 54 pixels, cut from a twelve-person group photograph in a low resolution scan, and that is the whole problem with it. Recorded because it is the only face of him found anywhere and the identification is firm. Front-facing and in focus for what it is.",
-  "caption_quote": "Third Row: Melissa A. Maggard, Eric D. Griggs, Jennifer J. Jaggers",
-  "src": {
-   "label": "1992 Talisman, p. 180, Associated Student Government",
-   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416"
-  },
-  "how_identified": "Twelve faces, and the caption lists twelve names in rows of five, four and three. The five lowest faces are the first row, and its stated order runs male, male, female, female, male, matching them, with Huma Ahsan fourth. The remaining seven split into a rear group of three and a middle group of four. Griggs is the middle name of the three-name third row, and the middle face of the rear three is the only man among them, which is this one."
- },
- {
-  "year": "1991-92",
-  "name": "Jennifer Jaggers",
-  "file": "1991-92-jennifer-jaggers.jpg",
-  "replaces": null,
-  "width": 44,
-  "height": 54,
-  "quality": "group crop",
-  "why": "Only 44 by 54 pixels, cut from a twelve-person group photograph in a low resolution scan. Kept because it is the only face of her found and she is clearly lit and smiling at the camera in it.",
-  "caption_quote": "Third Row: Melissa A. Maggard, Eric D. Griggs, Jennifer J. Jaggers",
-  "src": {
-   "label": "1992 Talisman, p. 180, Associated Student Government",
-   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416"
-  },
-  "how_identified": "Same page and same photograph as Eric Griggs. Twelve faces against a caption of twelve names in rows of five, four and three. Jaggers is the last of the three names in the third row, and the rightmost of the three rearmost faces, a woman, which the caption's order requires."
- },
- {
-  "year": "1991-92",
   "name": "Tom Springer",
   "file": "1991-92-tom-springer.jpg",
   "replaces": null,
@@ -245,5 +213,124 @@
   },
   "how_identified": "Fifteen names in the margin in three blocks of five against fifteen portraits in three rows of five, each block set beside its own row. Embry is the fifth and last name of the first block (James E. Cliatt III, Christopher Crockett, Rich Depew, Robert Duke, Jason Scott Embry), so row one, column five.",
   "identification_basis": "Confirmed, not inferred from the name alone. The 1993 Talisman index enters one Jason Embry and cites him to p. 34 and p. 204, and p. 204 is that volume's Student Government Association group photograph, whose caption lists Jason Embry in its second row."
+ },
+ {
+  "year": "1992-93",
+  "name": "Eric Griggs",
+  "file": "1992-93-eric-griggs.jpg",
+  "replaces": "1991-92-eric-griggs.jpg",
+  "width": 137,
+  "height": 176,
+  "quality": "small",
+  "why": "A formal senior portrait in suit and tie, front-facing, sharp and evenly lit. Replaces the 44 by 54 pixel group crop cut earlier tonight from the 1992 volume, which this beats on every count. Still only 137 by 176 because of the scan resolution.",
+  "caption_quote": "Eric D. Griggs, Management, Princeton",
+  "src": {
+   "label": "1993 Talisman, p. 33, senior portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
+  },
+  "how_identified": "Senior grid, right-hand page: four columns by five rows, twenty portraits, with the margin names in five blocks of four, one block per row and three lines to a person. Griggs is the third name of the fifth block (Mary Lynn Greer, Stacy Greer, Eric D. Griggs, Lisa Beth Gritton), so row five, column three, and he is the only man among those four faces, which the caption's order requires.",
+  "identification_basis": "Confirmed, not inferred from the name alone. The caption gives the full name with middle initial, Eric D. Griggs, and the 1992 Talisman index enters the same Eric D. Griggs at pp. 97, 180 and 197, p. 180 being that volume's Associated Student Government group photograph, whose caption lists him in the third row. A separate Gary Griggs is indexed apart from him."
+ },
+ {
+  "year": "1992-93",
+  "name": "Jennifer Jaggers",
+  "file": "1992-93-jennifer-jaggers.jpg",
+  "replaces": "1991-92-jennifer-jaggers.jpg",
+  "width": 122,
+  "height": 172,
+  "quality": "small",
+  "why": "A formal senior portrait, front-facing, sharp, well lit and smiling at the camera. Replaces the 44 by 54 pixel group crop cut earlier tonight from the 1992 volume. Still small at 122 by 172 because of the scan resolution.",
+  "caption_quote": "Jennifer Jaggers, Business Education, Princeton",
+  "src": {
+   "label": "1993 Talisman, p. 37, senior portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
+  },
+  "how_identified": "Senior grid, right-hand page: four columns by five rows with the margin names in blocks of four, one block per row and three lines to a person. Jaggers is the first name of the first block (Jennifer Jaggers, Richard Jodlowski, Dana Michele Johnson, and a fourth the OCR could not read), so row one, column one. Her hair and face match the woman in the same position in the 1992 volume's ASG group photograph.",
+  "identification_basis": "Confirmed, not inferred from the name alone. The 1992 Talisman index enters one Jennifer J. Jaggers, at p. 180, that volume's Associated Student Government group photograph, whose caption lists her last in the third row. A separate Reagan M. Jaggers is indexed apart from her."
+ },
+ {
+  "year": "1992-93",
+  "name": "Gene Hadden",
+  "file": "1992-93-gene-hadden.jpg",
+  "replaces": null,
+  "width": 136,
+  "height": 180,
+  "quality": "small",
+  "why": "A formal senior portrait, front-facing, sharp and evenly lit. Small at 136 by 180 because of the scan resolution. The only other frame of him is the Students Over the Traditional Age group photograph in the same volume, where the faces are about eighteen pixels.",
+  "caption_quote": "Gene Hadden, Religious Studies, Elkton",
+  "src": {
+   "label": "1993 Talisman, p. 34, senior portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
+  },
+  "how_identified": "Senior grid, left-hand page: four columns by five rows with the margin names in blocks of four, one block per row and three lines to a person. Hadden is the second name of the second block (Ryan Haas, Gene Hadden, Kimberly R. Hadley, Jeffrey S. Hall), so row two, column two. The block's four names match the four faces and their sexes read male, male, female, male in that order.",
+  "identification_basis": "Confirmed, not inferred from the name alone. The 1993 Talisman index enters one Gene Hadden and cites him both to this portrait page and to the Organizations section, where the Students Over the Traditional Age group photograph names him in its third row. That is the non-traditional students' body, and the seat he held in SGA was Non-Traditional Representative. The face is that of a markedly older student, which fits."
+ },
+ {
+  "year": "1992-93",
+  "name": "Cynthia Hayes",
+  "file": "1992-93-cynthia-hayes.jpg",
+  "replaces": null,
+  "width": 137,
+  "height": 180,
+  "quality": "small",
+  "why": "A formal senior portrait, front-facing, sharp, well lit and smiling at the camera. Small at 137 by 180 because of the scan resolution. The only other frame of her is the SGA group photograph in the same volume, where the faces are about eighteen pixels.",
+  "caption_quote": "Cynthia J. Hayes, Journalism & Government, House Springs, Mo.",
+  "src": {
+   "label": "1993 Talisman, p. 34, senior portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
+  },
+  "how_identified": "Senior grid, left-hand page: four columns by five rows with the margin names in blocks of four, one block per row and three lines to a person. Hayes is the first name of the fourth block (Cynthia J. Hayes, Michelle Hensley, Nikki Herdel, Patrenia Higgins), so row four, column one. All four are women, so the sexes do not discriminate here; the count and the block order do.",
+  "identification_basis": "Name and year, with one step of inference. The same volume's Student Government Association group photograph, p. 204, lists Cindy Hayes last in its first row, and Cindy is the ordinary short form of Cynthia. This volume covers 1992-93, the year the archive records Cynthia Hayes as a senator. The index OCR for this volume is too poor to confirm that both pages sit under one index entry, so the link between the portrait and the SGA photograph rests on the name."
+ },
+ {
+  "year": "1992-93",
+  "name": "Ashley Rose",
+  "file": "1992-93-ashley-rose.jpg",
+  "replaces": null,
+  "width": 129,
+  "height": 178,
+  "quality": "small",
+  "why": "A formal senior portrait, front-facing, sharp and evenly lit. Small at 129 by 178 because of the scan resolution. No other photograph of her was found; she is not in either volume's SGA group photograph.",
+  "caption_quote": "Ashley Rose, Broadcasting & Child Dev., Nashville, Tenn.",
+  "src": {
+   "label": "1993 Talisman, p. 43, senior portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
+  },
+  "how_identified": "Senior grid, right-hand page: four columns by five rows with the margin names in blocks of four, one block per row and three lines to a person. Rose is the first name of the second block (Ashley Rose, Debra Rousey, Phyllis A. Ryan, William Brian Sauer), so row two, column one. The block's four names match the four faces and their sexes read female, female, female, male in that order, Sauer being the only man in the row.",
+  "identification_basis": "Name and year. The 1992 Talisman index enters her as Rose, S. Ashley at p. 212, and the Herald's report of the April 1992 election lists Ashley Rose among the winners as secretary, the office the archive records for her in 1992-93. Neither source sits on the same page as this portrait, so the link between the two is the name."
+ },
+ {
+  "year": "1991-92",
+  "name": "Eric Griggs",
+  "file": "1992-93-eric-griggs.jpg",
+  "replaces": "1991-92-eric-griggs.jpg",
+  "width": 137,
+  "height": 176,
+  "quality": "small",
+  "why": "A formal senior portrait in suit and tie, front-facing, sharp and evenly lit. Filed to both of their Senate years; the small group crop previously used for 1991-92 has been withdrawn.",
+  "caption_quote": "Eric D. Griggs, Management, Princeton",
+  "src": {
+   "label": "1993 Talisman, p. 33, senior portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
+  },
+  "how_identified": "Senior grid, right-hand page: four columns by five rows, twenty portraits, with the margin names in five blocks of four, one block per row and three lines to a person. Griggs is the third name of the fifth block (Mary Lynn Greer, Stacy Greer, Eric D. Griggs, Lisa Beth Gritton), so row five, column three, and he is the only man among those four faces, which the caption's order requires.",
+  "identification_basis": "Confirmed, not inferred from the name alone. The caption gives the full name with middle initial, Eric D. Griggs, and the 1992 Talisman index enters the same Eric D. Griggs at pp. 97, 180 and 197, p. 180 being that volume's Associated Student Government group photograph, whose caption lists him in the third row. A separate Gary Griggs is indexed apart from him."
+ },
+ {
+  "year": "1991-92",
+  "name": "Jennifer Jaggers",
+  "file": "1992-93-jennifer-jaggers.jpg",
+  "replaces": "1991-92-jennifer-jaggers.jpg",
+  "width": 122,
+  "height": 172,
+  "quality": "small",
+  "why": "A formal senior portrait, front-facing, sharp, well lit and smiling at the camera. Filed to both of their Senate years; the small group crop previously used for 1991-92 has been withdrawn.",
+  "caption_quote": "Jennifer Jaggers, Business Education, Princeton",
+  "src": {
+   "label": "1993 Talisman, p. 37, senior portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
+  },
+  "how_identified": "Senior grid, right-hand page: four columns by five rows with the margin names in blocks of four, one block per row and three lines to a person. Jaggers is the first name of the first block (Jennifer Jaggers, Richard Jodlowski, Dana Michele Johnson, and a fourth the OCR could not read), so row one, column one. Her hair and face match the woman in the same position in the 1992 volume's ASG group photograph.",
+  "identification_basis": "Confirmed, not inferred from the name alone. The 1992 Talisman index enters one Jennifer J. Jaggers, at p. 180, that volume's Associated Student Government group photograph, whose caption lists her last in the third row. A separate Reagan M. Jaggers is indexed apart from her."
  }
 ]

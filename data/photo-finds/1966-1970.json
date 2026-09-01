@@ -398,21 +398,6 @@
  },
  {
   "year": "1966-67",
-  "name": "Carmen Willoughby",
-  "file": "1966-67-carmen-willoughby.jpg",
-  "replaces": null,
-  "width": 74,
-  "height": 108,
-  "why": "Cropped from the six-person Associated Students officers photograph, the only close photograph of her in the volume; she appears otherwise only in the twenty-six person group on the same page, where faces are about thirty pixels across. Very small but front on and clearly readable; not upscaled.",
-  "quality": "group crop",
-  "caption_quote": "First Row: Jim Fox—Vice President, Jim Haynes—President, Carmen Willoughby—Secretary",
-  "src": {
-   "label": "1967 Talisman pt. 1, p. 136, Associated Students officers; six people, three standing for the three names in Second Row and three seated for the three in First Row. She is the only woman named and the only woman in the photograph, and is third and last in the seated row, so she is the woman seated at the right. The reading is corroborated by Bucky Lanning, named second in the standing row, who is fair-haired here and fair-haired again in the Student Activities photograph on the facing page",
-   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/382/"
-  }
- },
- {
-  "year": "1966-67",
   "name": "Marshall Peace",
   "file": "1966-67-marshall-peace.jpg",
   "replaces": null,
@@ -453,6 +438,81 @@
   "caption_quote": "Margaret Brockman, Special Education, Hopkinsville",
   "src": {
    "label": "1968 Talisman, p. 251, senior portraits; the page prints eight rows of four faces against eight blocks of four names, and her block reads Vincent William Bristow, Danny G. Britt, Virginia Sue Broach, Margaret Brockman, so she is the fourth face in the sixth row. The row checks out as man, man, woman, woman, matching the four names. She is named in the Associated Students group caption on p. 153 of the same volume",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384/"
+  }
+ },
+ {
+  "year": "1966-67",
+  "name": "Catlette Evans",
+  "file": "1966-67-catlette-evans.jpg",
+  "replaces": null,
+  "width": 97,
+  "height": 124,
+  "why": "His senior class portrait, taken the year after he served. A clean studio head-and-shoulders, and far better than the twenty-six person Associated Students group in the 1967 volume, the only other place he appears, where the two standing rows cannot be told apart. Small because the class grid runs four to a row; not upscaled.",
+  "quality": "small",
+  "caption_quote": "Catlette Thompson Evans, History, Speech, Tompkinsville",
+  "src": {
+   "label": "1968 Talisman, p. 256, senior portraits; eight rows of four faces against eight blocks of four names, and his block reads Wilberdean Evans, Morris L. Evans, Catlette Thompson Evans, Robby W. Evans, so he is the third face in the first row. The row checks out as woman, man, man, man. The grid mapping on this page was verified independently at row six, column three, which the list gives as Claudia L. Fowler and which matches the officer portrait of Fowler on p. 153",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384/"
+  }
+ },
+ {
+  "year": "1967-68",
+  "name": "Earl Edmonds",
+  "file": "1967-68-earl-edmonds.jpg",
+  "replaces": null,
+  "width": 99,
+  "height": 126,
+  "why": "His senior class portrait, a clean studio head-and-shoulders. The only alternative is the twenty-person Associated Students group on p. 153, where faces are about thirty pixels across. Small because the class grid runs four to a row on a low-resolution scan; not upscaled.",
+  "quality": "small",
+  "caption_quote": "Earl Edmonds, English, Physical Education, Bowling Green",
+  "src": {
+   "label": "1968 Talisman, p. 255, senior portraits; eight rows of four faces against eight blocks of four names, and his block reads Dianne Batchelor Edmonds, Earl Edmonds, Jim Edmonds, Alma Carolyn Edwards, so he is the second face in the sixth row. The row checks out as woman, man, man, woman, matching the four names. He is named in the Associated Students group caption on p. 153 of the same volume",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384/"
+  }
+ },
+ {
+  "year": "1966-67",
+  "name": "Carmen Willoughby",
+  "file": "1966-67-carmen-willoughby.jpg",
+  "replaces": null,
+  "width": 74,
+  "height": 108,
+  "why": "Cropped from the six-person Associated Students officers photograph, the only close photograph of her in the volume; she appears otherwise only in the twenty-six person group on the same page, where faces are about thirty pixels across. Very small but front on and clearly readable; not upscaled.",
+  "quality": "group crop",
+  "caption_quote": "First Row: Jim Fox—Vice President, Jim Haynes—President, Carmen Willoughby—Secretary",
+  "src": {
+   "label": "1967 Talisman pt. 1, p. 136, Associated Students officers; six people, three standing for the three names in Second Row and three seated for the three in First Row. She is the only woman named and the only woman in the photograph, and is third and last in the seated row, so she is the woman seated at the right. The reading is corroborated by Bucky Lanning, named second in the standing row, who is fair-haired here and fair-haired again in the Student Activities photograph on the facing page",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/382/"
+  }
+ },
+ {
+  "year": "1967-68",
+  "name": "Johnny Graham",
+  "file": "1967-68-johnny-graham.jpg",
+  "replaces": null,
+  "width": 147,
+  "height": 162,
+  "why": "Cropped from the five-person Junior Class Officers photograph, where he stands second from the left. His eyes are cast down, which is not ideal, but the alternative is his junior class portrait on the facing page, where the grid runs eight to a row and each face is only about sixty pixels across. Chosen for size; not upscaled.",
+  "quality": "group crop",
+  "caption_quote": "Nonnie Campbell, Secretary; Johnny Graham, Vice-President; Terry Gilpin, President",
+  "src": {
+   "label": "1968 Talisman, p. 276, Junior Class Officers; the caption names five and adds Not Pictured for the adviser, and five people appear. Their sexes run woman, man, man, woman, man from the left, matching Nonnie Campbell, Johnny Graham, Terry Gilpin, Pat Dean, Malcolm Arvin, so he is the standing man second from the left. The reading is fixed independently: the third figure is fair-haired and is plainly the same man as the captioned Terry Gilpin portrait in the 1969 volume",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384/"
+  }
+ },
+ {
+  "year": "1967-68",
+  "name": "Malcolm Arvin",
+  "file": "1967-68-malcolm-arvin.jpg",
+  "replaces": null,
+  "width": 128,
+  "height": 164,
+  "why": "Cropped from the five-person Junior Class Officers photograph, where he sits at the right. He is turned three-quarters away, which is not ideal, but his junior class portrait on the facing page sits in a grid eight to a row where each face is only about sixty pixels across. Chosen for size; not upscaled.",
+  "quality": "group crop",
+  "caption_quote": "Pat Dean, Treasurer; Malcolm Arvin, Representative at Large",
+  "src": {
+   "label": "1968 Talisman, p. 276, Junior Class Officers; the caption names five and adds Not Pictured for the adviser, and five people appear. Their sexes run woman, man, man, woman, man from the left, matching Nonnie Campbell, Johnny Graham, Terry Gilpin, Pat Dean, Malcolm Arvin, so he is the man seated at the right. The reading is fixed independently: the third figure is fair-haired and is plainly the same man as the captioned Terry Gilpin portrait in the 1969 volume. His junior class entry on p. 277 reads Malcolm T. Arvin, Pembroke",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384/"
   }
  }
