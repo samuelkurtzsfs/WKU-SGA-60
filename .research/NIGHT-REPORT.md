@@ -1,3 +1,151 @@
+# 1 September 2026 — editor's pass, small hours: seven withdrawn people put back on the site, and taken down again
+
+No pull request was open. The queue has been empty since #310 closed at 18:43
+on 31 August, so this pass audited what reached `main` after that instead, which
+turned out to be the more useful question.
+
+## A research batch reinstated what the previous pass had cut
+
+Thirteen minutes after the evening editor removed seven people in `6ab56d4`, the
+commit `d6c597c` put all seven back: Candace Revelette, Julie Ransdell, Susan
+Anderson, Constance Selin, Naheed Malik, Melissa Maggard and Jeffrey Adelson-Yan.
+Not similar entries — the same entries, with the same notes, including the
+working language the evening report had spent two paragraphs on: `ALIAS FOR THE
+ARCHIVE`, `please add the alias … to the archive's alias list`, `NAME VARIANT -
+THIS IS THE KEY POINT`, and one note that stopped mid-word at a character cap.
+Main auto-deploys, so all of it was live for about ten hours.
+
+Each of the seven duplicated a person the archive already holds under the name
+the sources actually print: Candy Mason, Julie Bush, Susan Stuebing, Connie
+Allspaw, Naheed Shafi, Jeff Yan. The grounds for cutting them were not
+re-litigated tonight and did not need to be — each entry's own note conceded the
+inference, one of them in the words "married-name identification, probable not
+proven". They are withdrawn again. The aliases mapping the later names to the
+sourced ones stay in `name-aliases.json`, so a reader who searches for Candace
+Revelette still lands on Candy Mason's page, and Jeffery Yan's page now carries
+all three of his years in one place.
+
+The same batch added fifteen more that had never been reviewed. They are cut too.
+
+**Nine members of the 1982-85 congresses** — Cynthia Strine, Gregory Fields,
+Jeffrey Woosley, Michael Roberson, Susan Mizanin, William Borden, William
+Veneman, Vincent Lewis, Gregory Mallory. Every label told the same story: the
+name was located through a TopSCHOLAR full-text search, and then, in the label
+itself, that the scanned PDFs return 403. The minutes were never read. What a
+search hit establishes is that a string appears somewhere in a document; it does
+not establish that the person was a member, and "Congress member" was an
+inference in all nine. Each was also filed under a formal given name the source
+does not print — Cindy became Cynthia, Bill became William, Sue became Susan.
+The landing pages for Minutes/347 and Minutes/322 were opened tonight: both give
+a subject description and no names at all. The PDFs were retried after the
+ninety-second backoff and returned 403 again, so the research was right about
+what it could not reach and wrong to publish anyway.
+
+**Daniel Leeper and Joseph Glowacki (1967-68), Sheila Waninger (1984-85)** rested
+on a name appearing in an SGA newsletter, with the seat recorded, literally, as
+"Named in Associated Students newsletter". That is not a seat. The `nl/24`
+landing page describes *Congress Valorem* as covering SGA structure and
+procedures and names nobody; `nl/38` is the same. Both PDFs 403.
+
+**Elizabeth Sheppard (1976-77)** was placed in Congress by the authorship of
+legislation, which is the trap the handoff calls the commonest of all, and the
+citation pointed at the SGA Legislation collection root rather than at a
+document.
+
+**Michael Durham (1969-70)** was a second entry for Mike Durham, in his own year,
+in his own seat, off the same election sheet.
+
+**John Lovett (1966-67)** was recorded as a senate officer because he was vice
+chair of the committee that drafted the constitution. The archive refuses to
+read an office into Reed Morgan's chairmanship of that same committee, which is
+the settled position on the plaque's most-argued name, and it cannot read one
+into his deputy's. Nothing is lost: Kelly Thompson's letter naming both men is
+already an event in 1966-67, and the Herald's coverage of Lovett in the May 1966
+race is already in the record.
+
+## Three entries kept and repaired instead
+
+**Dave Ward, 1968-69.** Verified from the mirrored Beck memo, which is in
+`data/documents/`: sophomore class congressman, 637 votes to John Hutton's 468.
+The entry was filed as "David Ward" and its label broke off mid-quote. Renamed
+to the form the memo prints and re-cited properly.
+
+**Caden Lucas, 2024-25.** The batch replaced a working citation to the Senate
+minutes of 22 October 2024 with a Herald URL carrying post id 78871, which
+redirects to a photograph attached to a story about a Second World War
+reenactment. The article is post 77380, and it does carry the claim: five
+senators approved unanimously on 27 August 2024, the first Mahurin Honors
+College senator among them. Repointed. The clause saying he wrote the Honors
+College funding bill that autumn was dropped, because the article does not
+carry it and the 2024-25 session is not in `legislation-authors.json`.
+
+**Georgiana Carlson, 1976-77.** Not from this batch — an older entry that has
+been sitting on the live site with a note spliced from two fragments, ending
+mid-word, and telling the reader that every attempt to download digitalcommons
+PDFs during the run returned a Cloudflare page. The 1977 *Talisman* full text on
+archive.org is readable and not rate limited, so it was read: the caption names
+her setting up a rules and elections committee with Christy Vogt, Bob Moore and
+Don Augenstein, and gives her no title. Rewritten from that.
+
+## Verified and left alone
+
+Catlette Evans, added to 1966-67 the same afternoon, holds on both halves of its
+note. The 1966 roster prints "Catlette (Tom) Evans, Jr., Junior — Tompkinsville"
+against Representative of General College Clubs, and the 1967-68 officers roster
+carries Tom Evans of Tompkinsville in the same seat and on the Executive
+Committee. Both documents are mirrored in `data/documents/` and were read here.
+
+Twelve sources were opened in all: two Herald articles, the Kelly Thompson
+letter, the Beck memo, the 1969 election sheet, the 1966 and 1967-68 rosters, two
+newsletter records, two sets of minutes, the legislation collection root, and the
+1977 *Talisman*.
+
+## The search index was a build behind
+
+Rebuilding on a clean checkout after the merge produced a diff, which it should
+not. `build.py` writes the search index from a roster it regenerates later in the
+same run, so the index lags one build. The consequence was not cosmetic: the
+committed `search-index.json` still carried person records for people who had
+been cut, pointing at pages that no longer existed. The catch-up build is in this
+commit. A later pass should look at the ordering inside `build.py`, because every
+deploy has been shipping a people count and a person list one build stale.
+
+## Merged
+
+#311. `build.py` completes cleanly, `check_data.py` and `check_contrib.py` exit
+0, and `check_duplicates.py` reports the same six pairs it has for days — three
+months between the designated-driver cards, an introduction and a defeat between
+the student-regent advisory committee entries, a plan and an endorsement between
+the Civil Liberties Union entries, a position and a vote on plus/minus grading,
+and three different bills on 1 September 1991. None is a duplicate.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,688 recorded terms of office held by 1,822
+people, 2,574 of those terms (95%) carrying an account of what the person did,
+38 people recorded under more than one name. 60 people have been president.
+297 documents and 1,111 legislation files.
+
+## Still open
+
+- **The leads behind tonight's nine cuts are worth having, properly.** Whoever
+  can read scanned SGA minutes should try: Cindy Strine (Minutes/347, 29 Mar
+  1983), Greg Fields and Bill Borden (Minutes/322, 28 Sep 1982), Jeff Woosley
+  (Minutes/314, 7 Dec 1982), Mike Roberson (Minutes/349, 1 Mar 1983), Sue
+  Mizanin (Minutes/302, 21 Sep 1982), Bill Veneman (Minutes/341, 1 Feb 1983),
+  Vince Lewis (Minutes/443, 31 Jan 1984), Greg Mallory (Minutes/456, 26 Feb
+  1985). The names are in those documents; what is missing is the capacity.
+- Ten labels elsewhere in `years.json` still end mid-quote at a character cap,
+  in 1972-73, 1976-77, 1979-80, 1980-81, 1981-82, 1986-87 and 1991-92. They are
+  readable and sourced, so they were flagged rather than rewritten blind.
+- The 431 legislation files with a readable AUTHORS block and no author
+  recorded. Unchanged, and still the largest single gap.
+- Two 1977-78 entries, John Perkins and Steve Parnell, still cite the SGA
+  collection root rather than a document.
+- John Lyne vs Larry Zielke 1970-71, and David Payne 1982-83, both unchanged.
+  The 1969 election sheet read tonight shows both men on it — Zielke and Lyne,
+  president and vice president — which is where that question starts.
+
 # 30 August 2026 — editor's pass, morning: an empty queue, and the orphan branches checked event by event
 
 Nothing was open. No pull request on the repository was in an open state, so
