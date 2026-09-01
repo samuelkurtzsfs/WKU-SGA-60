@@ -77,7 +77,8 @@ following **spring**. If they differ, someone is missing. Mark an acting officeh
   Legislative Research, and in 1996-97 Carlene was Vice President while Darlene was Secretary
   (SGA minutes of 14 Nov 1995, 5 Mar 1996, 27 Aug 1996 and 22 Apr 1997). Confirmed independently
   against the university's own records, 1 September 2026. Never merge them, and never let a
-  portrait of one attach to the other.
+  portrait of one attach to the other. **They are twin sisters**, which is what the *Herald*
+  of 25 April 1996 (71:56) says outright, and it is why every similarity check flags them.
 - Still open: John Lyne vs Larry Zielke 1970-71, David Payne 1982-83.
 
 ## Search locally before you crawl
