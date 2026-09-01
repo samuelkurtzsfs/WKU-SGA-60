@@ -144,9 +144,13 @@ def main():
         return
     for p in doomed:
         p.unlink()
-    for d in sorted(STAGE.rglob("*"), reverse=True):
-        if d.is_dir() and not any(d.iterdir()):
-            d.rmdir()
+    # Only tidy the directories away when the hunt is over. Emptying a
+    # researcher's folder mid-run also removed the folder, and the next thing
+    # they wrote into it failed; one reported losing their staging twice.
+    if args.all:
+        for d in sorted(STAGE.rglob("*"), reverse=True):
+            if d.is_dir() and not any(d.iterdir()):
+                d.rmdir()
     print(f"\ndeleted {len(doomed)} files, freed {freed / 1e6:.0f} MB")
 
 
