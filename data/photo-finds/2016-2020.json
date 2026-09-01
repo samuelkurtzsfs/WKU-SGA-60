@@ -1,0 +1,31 @@
+[
+ {
+  "year": "2019-20",
+  "name": "Jamison Moorehead",
+  "file": "2019-20-jamison-moorehead.jpg",
+  "replaces": null,
+  "width": 560,
+  "height": 845,
+  "why": "Quarantined crop confirmed against its source frame: he is smiling straight at the camera, well lit, and it is the only published photograph of him the Herald holds.",
+  "caption_quote": "Jamison Moorehead, a freshman at WKU, was elected to be the SGA Sustainability Committee Chair",
+  "src": {
+   "label": "College Heights Herald, 26 Feb 2020, photograph run with \"SGA confirms 5 senators, 4 voted in unanimously\". The frame shows two men shaking hands; the caption names only Moorehead. The bearded figure in the red windbreaker on the right is 2019-20 president Will Harris, the same man as the archive's own confirmed Harris portrait (2019-20-will-harris.jpg), and the article names Harris as president, so the younger left-hand figure being congratulated is Moorehead. The quarantined crop is taken from this frame: a sliver of Harris's red sleeve survives at its right edge.",
+   "url": "https://wkuherald.com/16659/news/sga-confirms-5-senators-4-voted-in-unanimously/"
+  }
+ },
+ {
+  "year": "2021-22",
+  "name": "Me'Lon Craighead",
+  "file": "2021-22-me-lon-craighead.jpg",
+  "replaces": null,
+  "width": 570,
+  "height": 800,
+  "quality": "masked",
+  "why": "Quarantined crop confirmed against its source frame. She is masked and in three-quarter profile, so most of the face is covered, but it is the only photograph the Herald has that names her, and the frame is otherwise sharp and well lit.",
+  "caption_quote": "Here, Executive Vice President Me'Lon Craighead addresses the assembly",
+  "src": {
+   "label": "College Heights Herald, 18 Jan 2022, one of four photographs run with \"SGA holds first meeting of 2022, passes bill to replenish office of sustainability pantry\". The caption names one person, Craighead, as addressing the assembly, and she is the only figure standing and speaking at the podium; the other figure in the frame is a seated listener shot from behind. The other three frames in the set carry generic captions naming nobody.",
+   "url": "https://wkuherald.com/63188/news/sga-holds-first-meeting-of-2022-passes-bill-to-replenish-office-of-sustainability-pantry/"
+  }
+ }
+]
