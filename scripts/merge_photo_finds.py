@@ -102,11 +102,42 @@ def check(rec, known):
     if year not in known:
         return f"{year} is not a year in the archive"
     if name not in known[year]:
+        if resolve(name, year, known):
+            return None
         near = [n for n in known[year] if fold(n) == fold(name)]
         if near:
             return f"name is spelled {near[0]!r} in {year}, not {name!r}"
         return f"nobody called {name!r} is recorded in {year}"
     return None
+
+
+def resolve(name, year, known):
+    """The archive's own spelling of this person, or None if it cannot tell.
+
+    A researcher writes Carmen Willoughby; the archive files her as Carmen Ann
+    Willoughby in the year she was secretary. Refusing that helps nobody, and
+    correcting it by hand does not stick, because the researcher rewrites the
+    findings file after every person and puts their spelling back.
+
+    So it is resolved here, and only when there is no room to be wrong: the
+    given name and the surname must both match, and exactly one person in that
+    year may match. Two Deborah Clarks in one year resolve to nothing, which is
+    the right answer.
+    """
+    if name in known.get(year, ()):
+        return name
+    # fold() drops spaces along with the punctuation, so the words have to be
+    # separated before it runs or every name collapses to a single token
+    words = lambda s: [fold(w) for w in str(s).split() if fold(w)]
+    a = words(name)
+    if len(a) < 2:
+        return None
+    hits = []
+    for other in known.get(year, ()):
+        b = words(other)
+        if len(b) >= 2 and a[0] == b[0] and a[-1] == b[-1]:
+            hits.append(other)
+    return hits[0] if len(hits) == 1 else None
 
 
 def main():
@@ -130,7 +161,10 @@ def main():
         if why:
             refused.append((origin, rec.get("name", "?"), why))
             continue
-        key = (rec["year"], rec["name"])
+        # write it under the name the archive knows, or the
+        # build attaches the face to nobody
+        recorded = resolve(rec["name"], rec["year"], known) or rec["name"]
+        key = (rec["year"], recorded)
         # A researcher who had to settle marks the finding "soft", "small" or
         # "group crop". The owner would rather have the face than an empty
         # frame, but a reader looking at a poor photograph should be told it
@@ -140,7 +174,7 @@ def main():
         q = str(rec.get("quality") or "").strip()
         if q and q.lower() not in label.lower():
             label = f"{label} ({QUALITY.get(q.lower(), q)})"
-        entry = {"year": rec["year"], "name": rec["name"], "file": rec["file"],
+        entry = {"year": rec["year"], "name": recorded, "file": rec["file"],
                  "src": {"label": label, "url": rec["src"]["url"]}}
         old = have.get(key)
         if old:
