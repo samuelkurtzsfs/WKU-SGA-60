@@ -44,6 +44,12 @@ INTERNAL = re.compile(
     re.I)
 
 
+def start(year):
+    """The calendar year an academic year begins in."""
+    m = re.match(r"^(\d{4})", str(year or ""))
+    return int(m.group(1)) if m else 0
+
+
 def publishable(fact):
     """Is this an account of a life, or a message to the next researcher?"""
     return not INTERNAL.search(fact)
@@ -96,7 +102,7 @@ def main():
 
     doc = json.loads(YEARS.read_text())
     recs = records(doc)
-    written, refused, already = [], [], 0
+    written, refused, moved, already = [], [], [], 0
 
     for origin, r in rows:
         name, year = r.get("name"), r.get("year")
@@ -114,11 +120,24 @@ def main():
             continue
         hit = recs.get((year, name))
         if not hit:
-            near = [n for (yy, n) in recs if yy == year and fold(n) == fold(name)]
-            refused.append((origin, name,
-                            f"spelled {near[0]!r} in {year}" if near
-                            else f"nobody called {name!r} is recorded in {year}"))
-            continue
+            # A researcher dates the note to the year of the thing they read,
+            # which is often the year next door to the one the archive files
+            # the person under: an April election belongs to the term it
+            # decided. The note carries its own dates and citation, so putting
+            # it on the person's nearest recorded year loses nothing.
+            mine = sorted(y for (y, n) in recs if n == name)
+            if mine:
+                year = min(mine, key=lambda y: abs(start(y) - start(year)))
+                hit = recs[(year, name)]
+                moved.append((name, r["year"], year))
+            else:
+                near = [n for (yy, n) in recs
+                        if yy == year and fold(n) == fold(name)]
+                refused.append((origin, name,
+                                f"spelled {near[0]!r} in {year}" if near
+                                else f"nobody called {name!r} is recorded in "
+                                     f"{year}"))
+                continue
         for e in hit:
             if (e.get("note") or "").strip():
                 already += 1
@@ -135,6 +154,11 @@ def main():
         print(f"        {fact[:110]}")
     if len(written) > 20:
         print(f"  ... and {len(written) - 20} more")
+    if moved:
+        print(f"\n{len(moved)} were dated to a year the archive does not "
+              f"record them in, and moved to their nearest:")
+        for name, was, now in sorted(moved):
+            print(f"  {name}: {was} -> {now}")
     if already:
         print(f"\n{already} already had a note; left as they were")
     if refused:
