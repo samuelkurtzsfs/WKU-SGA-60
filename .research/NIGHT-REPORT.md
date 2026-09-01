@@ -1,3 +1,134 @@
+# 1 September 2026 — editor's pass, midday: what a bare image file proves, which is nothing
+
+No pull request was open again. #313 was merged at 03:23 and nothing has been
+opened since, so this pass did what the small-hours pass did and audited what
+reached `main` on its own instead.
+
+## 197 portraits went live without an editor reading one of them
+
+Between 23:35 and 06:35 the portrait hunt pushed 197 faces straight to `main`
+in eight commits. That is by design — `scripts/land_photos.py`, written by the
+owner on 31 August, merges the findings, builds, runs `check_data.py` and
+pushes. Neither the build nor `check_data.py` can judge an identification. They
+check that a file is a real image, that the name matches `years.json` and that
+the JSON parses. Whether the person in the frame is the person named is not a
+question either of them asks, and until this pass nobody had asked it.
+
+## Twenty-one citations that pointed at the photograph instead of the evidence
+
+Twenty-one of the 197 cited a bare `wkuherald.com/wp-content/uploads/...` JPEG
+and nothing else. A reader following one of those landed on the same picture
+they were already looking at. Several of the frames hold three, four or a dozen
+people, and one four-panel frame has two different officers cut out of it, so
+the citation was not merely thin — it was incapable of supporting the claim.
+
+The identifications themselves held up. The Herald's own media API returns the
+caption and the parent article for any upload, and all twenty-one captions named
+their subject. So this was a rescue rather than a cull. Each of the twenty now
+cites the article the photograph ran with, paraphrases what the caption says,
+and where the frame holds more than one person, gives the position the caption
+assigns. Five were checked against the pictures rather than the captions alone:
+the four Greek chapter presidents of 11 February 2011, whose panel order is
+fixed independently by the Sigma Chi, Alpha Tau Omega and Pi Kappa Alpha letters
+the three men wear; Abbey Norvell, who is the figure in the crown among a dozen;
+and Emily Houston, the third of three at a table, as the caption's
+left-middle-right has it. All five crops were correct.
+
+Two dates were wrong and are corrected: the Nolan Miles frame is from the SGA
+meeting of 23 September 2014, not 25 September, and the Ashlynn Evans frame is
+18 February 2020, not 19 February. Both had been dated from the file's upload
+rather than the caption.
+
+## One portrait withdrawn
+
+Cody Cox, 2015-16. It is him — the Herald's attachment record names him. But the
+photograph was made for a February 2014 feature about gay students at WKU, when
+he was a freshman, and it has nothing to do with his service in student
+government. The citation as published carried the name of that feature onto his
+officer page. Citing a source faithfully is not a reason to publish a personal
+disclosure on a page about someone's SGA work. He stays in the record as an
+officer, without a face.
+
+Seth Church, 2014-15, was held up to the same rule and kept. His photograph
+carries a caption naming him, and the 2023 article it ran with is an
+on-the-record interview in which he discusses his own SGA work. A named and
+willing subject talking about the Hill is not the same thing.
+
+## Thirteen Talisman citations that gave a page and no reasoning
+
+Most of the batch reasons its identifications out at length — grids counted face
+by face, rows matched against name blocks, readings corroborated against a second
+portrait in the same volume. Thirteen entries broke that pattern and gave a
+volume and a page and nothing more. Every one of the thirteen pages was checked
+against the volume index on archive.org and every one is right, so nothing was
+cut. Each now records the index entry that fixes the page and says plainly that
+which face in the grid is theirs is not established. Four of the thirteen have a
+second person of the same surname indexed on the same page — Gray, Alexander,
+Daniel, Bratcher — and each of those now says so.
+
+Paul Calico nearly came off on a bad reading of my own: the index line looked
+like pp. 63 and 86 until the hyphen in 86-87 turned out to be swallowing the
+rest, which really reads 63, 86-87, 313, 339. The cited page was right all along.
+
+## Three withdrawn portraits were still being served
+
+`1991-92-eric-griggs.jpg`, `1991-92-jennifer-jaggers.jpg` and now Cody Cox were
+sitting in `site/photos/` and fetchable from the live site although nothing on
+it linked them. The first two were renamed to their correct year in an earlier
+run and the old copies were never cleared. Deleted.
+
+## Merged
+
+#315, this pass's own work, after `origin/main` was merged into it — the portrait
+hunt pushed four more faces while the review was running. `build.py` completes
+cleanly and `check_data.py` and `check_contrib.py` both exit 0. The duplicate
+report gives the same six pairs as the last several passes and the judgement is
+unchanged: three separate bills on 1 September 1991, an introduction and a
+defeat, a plan and an endorsement, a stated position and a vote, and three
+months between the two designated-driver entries. None is a duplicate.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,688 recorded terms of office held by 1,822
+people, 2,574 of those terms (95%) carrying an account of what the person did,
+38 people recorded under more than one name. 60 people have been president.
+297 documents, 1,111 legislation files, 447 portraits.
+
+## Still open
+
+Everything the small-hours pass left open is unchanged, and three things are
+added.
+
+**Keyana Boka is on the site twice, with two faces.** `years.json` carries her
+as a leader under the plaque's `Keyanna Boka` and in the same year's executive
+list as `Keyana Boka`, and `photos.json` now has a separate portrait against
+each. To a visitor that reads as two women. The rules say to flag this spelling
+and not fix it, so it is flagged: the Herald's caption of 31 October 2013 spells
+it Keyana, which is the first contemporaneous evidence either way that this
+record has held, and the editor may want to act on it.
+
+**`data/photos/1995-96-jeffery-yan.jpg` has no entry in `photos.json`.** It
+arrived in the 06:35 push and is copied into the built site with nothing naming
+it or sourcing it. It is almost certainly the Jeff Yan whose duplicate under
+Jeffrey Adelson-Yan the small-hours pass cut, and its metadata may simply be in
+the next push, so it was left rather than deleted. If it is still orphaned
+tomorrow it should come off.
+
+**Three of the four faces pushed at 12:36 carry the same defect this pass just
+cleared** — Carlene Lodmell, Leigh Ann Sears and Drew Mitchell each cite a
+TopSCHOLAR Herald issue landing page with no caption evidence recorded, and the
+Drew Mitchell frame is from October 2010 for a 2012-13 term. They are not wrong,
+they are unverifiable as cited, and they arrived too late in the run to work on.
+
+## For the photograph routine
+
+`land_photos.py` puts nothing between the hunt and the live site that reads a
+citation. Two checks would have caught almost all of the above at merge time:
+refuse a portrait whose citation is a bare `wp-content/uploads` URL, since the
+Herald's media API will hand over the caption and the parent article for any
+upload; and hold a Talisman page citation to the same grid reasoning that most
+of the batch already carries.
+
 # 1 September 2026 — editor's pass, small hours: seven withdrawn people put back on the site, and taken down again
 
 No pull request was open. The queue has been empty since #310 closed at 18:43
