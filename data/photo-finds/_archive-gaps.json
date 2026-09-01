@@ -18,5 +18,25 @@
    "label": "data/years.json, 2015-16 senate officers",
    "url": ""
   }
+ },
+ {
+  "kind": "duplicate person",
+  "name": "Nolan Miles / Noland Miles",
+  "year": "2013-14",
+  "detail": "Entered twice in the same year under two spellings, as Chair of Public Relations and Chair of Student Affairs. One man: he is Executive Vice President in 1914-15 and 1915-16 as Nolan. His portrait attaches to the Nolan spelling, so the Noland entry reads as a person with no face and inflates the missing count.",
+  "src": {
+   "label": "data/years.json, 2013-14 senate",
+   "url": ""
+  }
+ },
+ {
+  "kind": "source exhausted",
+  "name": "Spirit Masters booklets 2011-2018",
+  "year": "",
+  "detail": "Called the best untapped portrait source by an earlier researcher. All seven were pulled and searched against the whole missing list. Seventeen name matches, and twelve were different people entirely: Steve Todd served 1969-70 and Scott Taylor 1975-76, neither can be in a 2014 booklet. Of the three whose service plausibly overlapped, not one bio mentions student government. The source is spent; do not mine it again.",
+  "src": {
+   "label": "digitalcommons.wku.edu/dlsc_ua_records/8496-8502",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8502/"
+  }
  }
 ]
