@@ -118,5 +118,25 @@
    "label": "College Heights Herald, 26 Aug 2014; CLAUDE.md settled facts",
    "url": ""
   }
+ },
+ {
+  "kind": "duplicate person, flagged not merged",
+  "name": "Elizabeth White / Lizzy White",
+  "year": "2004-05, 2005-06",
+  "detail": "Almost certainly one person entered twice. The 2005 election special calls her a Nashville sophomore in her second semester in SGA, which puts her first semester in autumn 2004. The researcher filed the same mugshot under both rows deliberately so the duplication stays visible, and flagged it rather than merging.",
+  "src": {
+   "label": "College Heights Herald, 2005 SGA election special, dlsc_ua_records/8961",
+   "url": ""
+  }
+ },
+ {
+  "kind": "identity settled",
+  "name": "Austin Wingate",
+  "year": "2008-09",
+  "detail": "An earlier researcher left open whether the 2012 presidential candidate was the 2008-09 senator. He is: the story of 20 March 2012 says he served three years in SGA, two as senator and one as speaker, before standing down for a year, which places his first year at 2008-09. No usable photograph of him exists; the 2012 story is text only and every other frame is a group with no positions given.",
+  "src": {
+   "label": "College Heights Herald, 20 Mar 2012",
+   "url": ""
+  }
  }
 ]

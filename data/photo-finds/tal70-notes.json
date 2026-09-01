@@ -79,5 +79,23 @@
    "label": "1972 Talisman, p. 273",
    "url": "https://archive.org/details/talisman1972west"
   }
+ },
+ {
+  "name": "Donna Porter",
+  "year": "1971-72",
+  "fact": "No usable frame in the 1972 volume. She never sat for a class portrait: the back index gives her p. 368 alone, and no Donna Porter is printed in any of the class grids. Page 368 is the sophomore class officers photograph, four figures around a tree, and the caption names two women, Donna Porter and Cathi Stillwell, without saying which is which. Both are fair-haired, both are photographed at about a hundred and fifty pixels across, and the portrait the archive holds of Stillwell does not separate them at that size. The caption's only positional word, '(seated)', fixes Sam Day and by elimination Mike Fiorella, and that is as far as it goes. Do not cut either woman without a source that says who is where.",
+  "src": {
+   "label": "1972 Talisman, p. 368",
+   "url": "https://archive.org/details/talisman1972west"
+  }
+ },
+ {
+  "name": "Danny Creasy",
+  "year": "1971-72",
+  "fact": "No usable frame in the 1972 volume. The back index gives him pp. 225 and 273 and no class portrait page, and no Creasy is printed in any of the class grids. Page 225 is the Alpha Gamma Rho membership photograph, whose caption puts him seventh of the nine names in its first row, but the twenty-one brothers stand on steps at four different heights in a single jumbled crowd, the four-name second row includes the chapter sweetheart standing high in the middle, and no horizontal band in the picture answers to any of the three caption rows. Page 273 is the Associated Students men's photograph, whose standing ranks are rejected for the same reason and are recorded in _do-not-use.json.",
+  "src": {
+   "label": "1972 Talisman, pp. 225 and 273",
+   "url": "https://archive.org/details/talisman1972west"
+  }
  }
 ]
