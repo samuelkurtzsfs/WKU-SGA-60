@@ -44,7 +44,17 @@ SITE = "https://sga60.vercel.app/photos/"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
 
+# Working material: a scanned leaf, or a whole volume pulled down in one go.
+# Researchers on the rate-limited years fetch the entire yearbook rather than
+# spend a paced request per page, which is the right call and also what fills
+# the disk: one volume runs to a hundred megabytes. Both kinds are re-fetchable
+# and neither is ever published, so they are swept together.
 PAGE = re.compile(r"^\d{4}-n\d+\.jpg$", re.I)
+VOLUME = re.compile(r"\.(pdf|zip|djvu|txt)$", re.I)
+
+
+def working_material(p):
+    return bool(PAGE.match(p.name) or VOLUME.search(p.name))
 
 
 def sha(b):
@@ -113,16 +123,17 @@ def main():
         doomed = [p for p in files if p.name in verified]
         doomed += [p for p in files if p.parent.name == "_rejected"]
         if args.pages:
-            doomed += [p for p in files if PAGE.match(p.name)
-                       and p.parent.name == "_talisman-pages"]
+            doomed += [p for p in files if working_material(p)]
         doomed = sorted(set(doomed))
         kept = [p for p in files if p not in set(doomed)]
-        pages = sum(1 for p in kept if PAGE.match(p.name))
+        work = [p for p in kept if working_material(p)]
         print(f"\n{len(doomed)} spent, {len(kept)} kept")
-        if pages and not args.pages:
-            print(f"  {pages} of those kept are yearbook pages. They are "
-                  f"working material and re-fetchable;\n  sweep them with "
-                  f"--pages once the researchers have finished.")
+        if work and not args.pages:
+            mb = sum(p.stat().st_size for p in work) / 1e6
+            print(f"  {len(work)} of those kept are yearbook pages and whole "
+                  f"volumes, {mb:.0f} MB.\n  They are working material several "
+                  f"people may still be cut from, and re-fetchable;\n  sweep "
+                  f"them with --pages once the researchers have finished.")
 
     if not doomed:
         print("\nnothing safe to delete yet")
