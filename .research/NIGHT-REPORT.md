@@ -12425,3 +12425,82 @@ people, 2,572 of those terms (95%) carrying an account of what the person did,
 - The twelve-year gap in year photographs, and the officer portraits of
   priority three.
 - John Lyne vs Larry Zielke 1970-71, and David Payne 1982-83, both unchanged.
+
+---
+
+# 1 September 2026, second pass
+
+## What was open
+
+One pull request, #313, "Research: photographs", cut from the current tip of
+main and adding a single portrait. The three branches that had been open since
+4 August — #6, #7 and #8 — are gone, so nothing stale was left to rescue or
+close this run.
+
+## What was checked
+
+The diff adds one leader portrait: Anne-Marie Wright, chief of staff, 2024-25.
+That is the whole of it, so all of it was verified rather than a sample.
+
+The source is the *Herald* of 24 September 2024 on the Pink Walk bill. Its
+caption was read back off the live page and names Student Body Vice President
+Donté Reed, Chief of Staff Anne-Marie Wright and Sophomore Senator Savanna
+Kurtz, photographer Gabriel Milby. The photograph carries three people; Reed
+stands at the podium on the left, and the identification of the centre figure
+holds three separate ways: the caption's order runs across the frame, the
+centre figure wears a WKU Student Government Association polo, and the two
+figures either side match portraits already on file for Reed and for Savanna
+Kurtz, which leaves the centre as Wright by elimination. The file is a real
+JPEG, it duplicates no image already in `data/photos`, and her name matches
+the entry in `data/years.json` exactly, where her chief of staff term is
+separately sourced.
+
+Against the traps: no event text changed, so there was no advance notice to
+mistake for a report and no April result to file forward. Wright is recorded
+in the executive, not promoted out of a committee chair. Nobody was matched by
+surname. `data/name-aliases.json` holds no Wright, so no changed surname has
+split her in two. The commit is authored by SGA 60, carries no trailer and
+names no tooling, and the pull request body carries no session link.
+
+## What was cut
+
+Nothing was deleted. One label was trimmed. It had read that the caption named
+the three "left to right", which the caption does not say — the ordering is our
+own reading of the photograph. The label now reports what the caption states,
+then separately records where the three stand in the frame and that Wright is
+the centre figure in the polo. The identification is unchanged; only the claim
+about what the source says is narrower.
+
+## The duplicate report
+
+The same six pairs as before, and the judgement is unchanged: three months
+between the two designated-driver entries, an introduction and a defeat for the
+student regent advisory committee, a plan and then an endorsement of the Civil
+Liberties Union action, a stated position and then a vote on plus/minus
+grading, and three separate bills on 1 September 1991. None is a duplicate, and
+none of them lies in this diff.
+
+## Merged
+
+#313, after the trim. `build.py` completes cleanly and `check_data.py` and
+`check_contrib.py` both exit 0.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,688 recorded terms of office held by 1,822
+people, 2,574 of those terms (95%) carrying an account of what the person did,
+38 people recorded under more than one name. 60 people have been president.
+297 documents and 1,111 legislation files.
+
+## Still open
+
+Everything listed under the first pass of 1 September is unchanged: the two
+1977-78 entries citing the collection root, the unread 1977-78 organization
+chart, the 431 legislation files with a readable authors block and no author
+recorded, the twelve-year gap in year photographs, and John Lyne vs Larry
+Zielke 1970-71 and David Payne 1982-83.
+
+The photograph run reported `digitalcommons.wku.edu` returning the bot-check
+page on every attempt across its session, spaced to the pacing rule. That is
+the same wall the last two runs hit, and it is why the twelve-year gap in year
+photographs did not move.
