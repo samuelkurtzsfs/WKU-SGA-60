@@ -1,0 +1,22 @@
+[
+ {
+  "kind": "missing term",
+  "name": "Kaylee Egerer",
+  "year": "2010-11",
+  "detail": "The Herald of 22 Feb 2011 captions her Campus Improvements Chair, a term the archive does not record. It has her in 2008-09 and 2011-12 only, so her portrait had to be filed to the latter.",
+  "src": {
+   "label": "College Heights Herald, 22 Feb 2011",
+   "url": "https://wkuherald.com/"
+  }
+ },
+ {
+  "kind": "duplicate person",
+  "name": "Paige Settles",
+  "year": "2015-16",
+  "detail": "Recorded twice in the same year, as Page Settles and Paige Settles, both Speaker of the Senate. One person, two spellings. Her own progression, freshman senator in 2012-13, confirms the Herald was right to call her a senior in September 2015 and wrong to call her a junior the following March.",
+  "src": {
+   "label": "data/years.json, 2015-16 senate officers",
+   "url": ""
+  }
+ }
+]
