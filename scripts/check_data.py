@@ -196,6 +196,14 @@ def check_photos(ys):
         for m in (senate.get("members") or []):
             live.add((m.get("name"), y["id"]))
             names.add(m.get("name"))
+        # A committee record names the committee; the person is in `chair`.
+        # They hold an office and the roster gives them a page, so a portrait
+        # of them is legitimate and must not be reported as attaching to
+        # nobody.
+        for c in (senate.get("committees") or []):
+            if c.get("chair"):
+                live.add((c["chair"], y["id"]))
+                names.add(c["chair"])
     photos = ROOT / "data" / "photos"
     for e in overlay.get("leaders", []):
         who, when = e.get("name"), e.get("year")

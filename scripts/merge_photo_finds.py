@@ -29,12 +29,14 @@ OVERLAY = ROOT / "data" / "photos.json"
 
 MAGIC = {b"\xff\xd8": "jpeg", b"\x89P": "png"}
 
-# Said plainly, for a reader rather than a researcher.
+# Short. A citation is not the place for an apology about the picture, and a
+# sentence explaining that this is the only surviving frame reads like padding.
 QUALITY = {
-    "soft": "the only surviving frame of them, and it is not a sharp one",
-    "small": "the only surviving frame of them, and it is a small one",
-    "group crop": "cropped from a group photograph, the only one of them known",
-    "group": "cropped from a group photograph, the only one of them known",
+    "soft": "only picture found",
+    "small": "only picture found",
+    "masked": "only picture found",
+    "group crop": "cropped from a group photo",
+    "group": "cropped from a group photo",
 }
 
 
@@ -58,6 +60,13 @@ def people_by_year(doc):
             for e in lst:
                 if e.get("name"):
                     out[y["id"]].add(e["name"])
+        # A committee record names the committee; its chair is a separate
+        # field. The site draws chairs into the roster and shows their faces,
+        # so a portrait of somebody whose only office that year was a
+        # chairmanship has to be allowed to attach.
+        for c in (sen.get("committees") or []):
+            if c.get("chair"):
+                out[y["id"]].add(c["chair"])
     return out
 
 

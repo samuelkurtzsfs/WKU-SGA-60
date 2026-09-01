@@ -7043,6 +7043,14 @@ def apply_photo_overlay(ys):
         for m in ((org.get("senate") or {}).get("members") or []):
             if m.get("name") == p["name"]:
                 m["photo"] = photo
+        # A committee record names the committee, and the person is in its
+        # `chair` field. The roster counts them as officeholders and gives
+        # them a page, so a portrait of somebody whose only office that year
+        # was a chairmanship has to reach them here too, or it attaches to
+        # nobody and the page it was found for stays blank.
+        for c in ((org.get("senate") or {}).get("committees") or []):
+            if c.get("chair") == p["name"]:
+                c["chair_photo"] = photo
     for p in overlay.get("years", []):
         y = by_id.get(p["year"])
         if y:
