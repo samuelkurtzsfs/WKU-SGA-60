@@ -72,6 +72,14 @@ def records(doc):
             for e in lst:
                 if e.get("name"):
                     out.setdefault((y["id"], e["name"]), []).append(e)
+        # A committee record names the committee, and its chair sits in a
+        # separate field. The roster reads those as people; this did not, so a
+        # person whose only office was a chairmanship could not be given an
+        # account of what they did, which is exactly the sort of person who
+        # most needs one.
+        for c in (sen.get("committees") or []):
+            if c.get("chair"):
+                out.setdefault((y["id"], c["chair"]), []).append(c)
     return out
 
 

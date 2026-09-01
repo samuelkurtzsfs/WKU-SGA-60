@@ -107,5 +107,223 @@
   "year": "1996-97",
   "file": "Herald 71:59, 2 May 1996, p. 2, the photograph above the caption naming her at the regents meeting",
   "reason": "The caption names her alone and the identification is sound, but the frame is unusable as a portrait. She is lit from behind with her hand over her mouth and the whole head reads as a black silhouette: 85 per cent of the pixels across the face fall below tone 40 in the scan, and a level stretch recovers nothing but the outline of the fingers. A second person sits fully blacked out at the left edge. There is no face in it to publish."
+ },
+ {
+  "name": "Ryan Faught",
+  "year": "1996-97",
+  "file": "Herald 73:7, 16 September 1997, p. 3, the new Spirit Masters photograph in front of Cherry Hall",
+  "reason": "Five men are named in the caption and five are visible, but the caption gives no positions and says outright that they stand in a circle, so the printed order carries no left-to-right guarantee. The one usable test fails: Josh Detre is fourth in the name list, and the only face in the frame that resembles his verified 1998 portrait is the third figure from the left. Four of the five faces are in near darkness at a midnight exposure in any case. Ryan Faught cannot be picked out of it, and neither can anyone else."
+ },
+ {
+  "name": "Jeff Oliver",
+  "year": "1996-97",
+  "file": "Herald 73:9, 23 September 1997, p. 1, the march in support of Valerie Haskins",
+  "reason": "The caption reads left to right and names three marchers, ending with Bowling Green senior Jeff Oliver, so on its face it places him at the right. It does not survive the frame. Two capped figures walk almost shoulder to shoulder at the right edge, one behind the other, and more people walk behind the banner, so the caption cannot say which body is the third named person. The 7 November 1996 Young Democrats frame is the one to use for him: there the caption anchors him with the single word left against three clear foreground subjects."
+ },
+ {
+  "name": "Michael Thompson",
+  "year": "1998-99",
+  "file": "Herald 74:36, 11 February 1999, p. 1, the Diddle Arena crowd photograph",
+  "reason": "The caption names three students reacting to a referee's call in section 108, ending with Stamping Ground freshman Mike Thompson, but gives no positions for any of them, so it identifies nobody. It is also not established that the Herald's Mike Thompson is the Michael Thompson the archive records at roll call on 8 September 1998; Thompson is far too common a name to bridge on a first name alone."
+ },
+ {
+  "name": "Katie Martin",
+  "year": "2012-13",
+  "file": "Herald 9 Apr 2013, Keyana Boka hugging Katie Martin after the reinstatement",
+  "reason": "Two women embracing, no positions. It resolves the wrong way: the face that shows is Boka's, and the archive already publishes a crop of this very frame as 2013-14-keyanna-boka.jpg. Martin is the blonde with her back to the camera and none of her face is in the picture.",
+  "url": "https://wkuherald.com/wp-content/uploads/2013/04/40152fd9f9164ab8aa9e24f0af247b70-1.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Kaycee Gibson",
+  "year": "2015-16",
+  "file": "Herald 6 Mar 2017, volunteers at the International Center of Kentucky",
+  "reason": "The caption positions her 'far right', but the right of the frame holds two women, one in focus at about x 1230-1330 and a second half hidden at x 1420-1490. Which one 'far right' means cannot be settled, and the date is a year after her term.",
+  "url": "https://wkuherald.com/wp-content/uploads/2017/03/bc4ae34d4d8dc56e876d16354d5ff25c.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Geoffrey Aberle",
+  "year": "2023-24",
+  "file": "Herald 30 Aug 2023, 'Geoffrey Aberle is sworn in as a senator'",
+  "reason": "Two men shaking hands after the oath, one with his back to the camera, and the caption names only Aberle without saying who is where. The visible man wears an SGA polo and a lanyard and could as easily be the officer administering it; he matches none of the archive's 2023-24 portraits, so the officer cannot be eliminated.",
+  "url": "https://wkuherald.com/wp-content/uploads/2023/08/0829_SGA_pj002.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "John Winstead",
+  "year": "2015-16",
+  "file": "Herald, thirteen uploads Sept 2015 - Sept 2016, each captioned 'John Winstead mug'",
+  "reason": "The columnist's mug for the Herald opinion column Synthesis. The column it first ran with mentions SGA president Jay Todd Richey but says nothing about the columnist holding office, and none of the thirteen captions does either. Only the name links it to the archive's 2015-16 senator.",
+  "url": "https://wkuherald.com/wp-content/uploads/2015/09/cf4ffdd7a9e6f0c27aad58cb908525dc-1.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Julia Bright",
+  "year": "2007-08",
+  "file": "Herald 14 Sept 2010, Constitution Week voter registration drive",
+  "reason": "Caption and article both identify her only as president of the College Republicans and quote her in that capacity. Three years after the archive's term, and nothing ties the frame to student government.",
+  "url": "https://wkuherald.com/wp-content/uploads/2010/09/19c92b6eceb724e038511341f25a6241.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Joey Coe",
+  "year": "2008-09",
+  "file": "Herald 10 Dec 2010, 'M is for Musician: Senior writing album for Honors thesis'",
+  "reason": "Clean single-subject frame, which is why it is tempting, but neither caption nor article mentions student government; the piece is about his music. Two years after the terms the archive lists him in.",
+  "url": "https://wkuherald.com/wp-content/uploads/2010/12/d22539a015e05122a57a6d1e7e3419b9.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Chad Winston",
+  "year": "2010-11",
+  "file": "Herald 3 Feb 2012, 'O is for Ordained: students use their voice for Christ'",
+  "reason": "Single subject and quoted at length, but the article is about students who became ordained ministers and neither it nor the caption mentions student government. A year after his term.",
+  "url": "https://wkuherald.com/wp-content/uploads/2012/02/ffd0ab8824a8206c5e8c6f5bdcc5e33b.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Chris Jankowski",
+  "year": "2010-11",
+  "file": "Herald 7 Dec 2010, resident assistants making signs in Pearce-Ford Tower",
+  "reason": "The caption names three people, Laqisha Walton, Chris Jankowski and Matt Brockman, and gives no positions. Walton is the one woman, but nothing separates the two men.",
+  "url": "https://wkuherald.com/wp-content/uploads/2010/12/9c2cdddaec25a2d7acf47bba70e46fd7.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Courtney Hamilton",
+  "year": "2014-15",
+  "file": "Herald 9 Oct 2014, Kentucky Street Apartments residents",
+  "reason": "The caption names two women, Hamilton and Emily Woodruff, with no positions, and only one person is visible anywhere in the frame. There is no way to tell which of the two is shown. Uploaded three times with the same caption.",
+  "url": "https://wkuherald.com/wp-content/uploads/2014/10/ce27d3d790fb7ec4c444b538f2444214.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Taylor Ruby",
+  "year": "2012-13",
+  "file": "Herald 15 Apr 2014, the Fiji house clean-up",
+  "reason": "Three men named, no positions, three young men in the frame, nothing to separate them.",
+  "url": "https://wkuherald.com/wp-content/uploads/2014/04/e9b603cf7fff19ebb422d97f60ea691a.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "William Berry",
+  "year": "2014-15",
+  "file": "Herald 2 Dec 2014, the self-defence class",
+  "reason": "Two men named, no positions, and both are mid-hold on the mat with their faces turned into each other's shoulders. No usable face even if the caption placed them.",
+  "url": "https://wkuherald.com/wp-content/uploads/2014/12/e51a6a6363415cb8069ea0f6f8ee6d64.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Elias Thompson",
+  "year": "2019-20",
+  "file": "Herald 1 Oct 2019, canvassing for the Beshear campaign",
+  "reason": "Two people named with no positions, and the photograph is made from behind: the one clear figure is walking away across a lawn and no face is visible.",
+  "url": "https://wkuherald.com/wp-content/uploads/2019/10/531cdd2578abd1b7426eba4363cad003.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "MJ Mayo",
+  "year": "2019-20",
+  "file": "Herald 25 Sept 2020, the SGA town hall debate",
+  "reason": "Three people named, Garrett Edmonds, MJ Mayo and Abbey Norvell, no positions, and the two people in the frame are both in COVID masks covering nose and mouth. Uploaded three times in 2020 with different frames, none of them positioned.",
+  "url": "https://wkuherald.com/wp-content/uploads/2020/09/1392f15a99bf3e1a2f37d7f3ac441fb5.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Emily Reinneck",
+  "year": "2025-26",
+  "file": "Herald 19 Aug 2025, 'Emily Reinneck is sworn in'",
+  "reason": "A mass swearing-in: three people on the right of the frame have their right hands raised and a further row stands along the left wall. The caption names one person and does not say which. No other captioned frame of her in the index.",
+  "url": "https://wkuherald.com/wp-content/uploads/2025/08/JSAV9938.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Blake Graham",
+  "year": "2025-26",
+  "file": "Herald 23 Sept and 11 Nov 2025",
+  "reason": "Both frames that name him are of somebody else or of his back. In the swearing-in the only person in the picture is Grace Ekrikpo taking the oath, and that frame has been used for her. In 'gives his final report' the camera is behind him. The 11 Nov frame introducing the two associate justices places Stirling and Hash but not Graham.",
+  "url": "https://wkuherald.com/wp-content/uploads/2025/09/SAV9099.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Jackson Smith",
+  "year": "2025-26",
+  "file": "Herald 11 Nov 2025, the Campus Improvements and Sustainability committee at the lectern",
+  "reason": "Three people named, Malachi Humble, Jackson Smith and Ciin Lun, and no positions. Ciin Lun's existing portrait does match the woman at the right, but that still leaves two men, and comparing the man in the white cap with the 24 Feb 2026 single-subject frame of Humble is not decisive. No other captioned frame of Smith.",
+  "url": "https://wkuherald.com/wp-content/uploads/2025/11/SAV2513.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Kayla Distler",
+  "year": "2023-24",
+  "file": "Herald 13 Apr 2022, the McLean Hall petition",
+  "reason": "Not a photograph of a person at all: a screenshot of the Change.org petition page. The only image of anyone on it is a twenty-pixel avatar beside her name.",
+  "url": "https://wkuherald.com/wp-content/uploads/2022/04/Screen-Shot-2022-04-13-at-2.10.08-PM.png",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Beth McGrew",
+  "year": "2014-15",
+  "file": "Herald 8 June 2015, the Earth Day Garden Party",
+  "reason": "The caption names one person and the SGA sponsorship is a real tie, but six or seven people are at the garden bed with no positions given. Two women are standing; the one with an outstretched arm wears a Project Grow shirt, which fits the event's other sponsor as well as it fits McGrew.",
+  "url": "https://wkuherald.com/wp-content/uploads/2015/06/abc113c48bbee4bbc3e8cfdba556a5fa.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Maggie Phelps",
+  "year": "2025-26",
+  "file": "Herald 28 Apr 2026, new Judicial Council members before the speaker vote",
+  "reason": "An outright SGA caption but no positions, and three young women are crowded together, one with her back to the camera. Her only other frame is the Herald's own news-staff mug of 1 Sept 2023, which ties her to the newspaper rather than to SGA.",
+  "url": "https://wkuherald.com/wp-content/uploads/2026/04/042826_sga_KH06.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Blake Bowden",
+  "year": "2016-17",
+  "file": "Herald 27 Nov 2017, photo gallery 'The evolution of black hair'",
+  "reason": "A good single-subject frame, which is the trap. Neither caption nor gallery mentions student government; the caption gives only name, age and home town, and the frame is from the year after his term.",
+  "url": "https://wkuherald.com/wp-content/uploads/2017/11/c3423494456f51a2f0ee6dbcfc433e60.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Troy Davis",
+  "year": "2020-21",
+  "file": "Herald 6 Mar 2018, republished from 30 Apr 2013, Delta Tau Delta winning Tug",
+  "reason": "Two people named, no positions, half a dozen men cheering. And the archive's Troy Davis is a 2020-21 senator while this caption calls its subject a Louisville senior in 2013, so it is very probably a different man.",
+  "url": "https://wkuherald.com/wp-content/uploads/2018/03/21efcca1036380db9f6e02bc3a1a7b2b.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "John May",
+  "year": "2018-19",
+  "file": "Herald 22 Mar 2021, captioned 'John Mayer's new album is complete'",
+  "reason": "A plain false positive thrown up by matching a first and last name: the item is about the musician John Mayer. The only other index match is a 2023 concert caption about a singer named John Sutphin.",
+  "url": "https://wkuherald.com/wp-content/uploads/2021/03/8a80bee4abbc5b190316e3cca658270e.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Avery Wells",
+  "year": "2020-21",
+  "file": "Herald 2 Feb 2022 and 17 Nov 2024",
+  "reason": "The 2022 frame is a WKU cheerleader at a basketball game and the 2024 frames are Phi Beta Sigma at the Homecoming Step Show. None mentions student government and all are after the 2020-21 term.",
+  "url": "https://wkuherald.com/wp-content/uploads/2022/02/M9A5591.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Brian Anderson",
+  "year": "2016-17",
+  "file": "Herald 10 Feb 2015, and a second frame of 2 Nov 2016",
+  "reason": "Rejected. The leads frame is a high school senior from LaRue County signing with WKU forensics and says nothing about student government. Recorded so it is not re-found as new: there is a second frame, Herald 2 Nov 2016, 'Donald Trump surrogate Brian Anderson, sophomore from Hodgenville, watches Hillary Clinton surrogate Lily Nellans ... answer questions'. Hodgenville is the LaRue County seat, so the two are consistent with one man who was a WKU sophomore in the year the archive makes him Legislative Research chair. It is still name plus timing, the 2016 frame names two people and positions neither, and Brian Anderson is a common name.",
+  "url": "https://wkuherald.com/wp-content/uploads/2015/02/a7be4e6f4ec8bb639654501fa1f924a9.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+ },
+ {
+  "name": "Kaison Barton",
+  "year": "2023-24",
+  "file": "Herald 10 Feb 2021, 'Freshman thrower Kaison Barton', and 30 Jan 2022 track frames",
+  "reason": "The track and field frames carried in _herald-leads.json are not usable and should not be published: nothing in them mentions student government. They are superseded. Herald 18 Feb 2025 carries 'Senator Kaison barton speaks on bill 1-25-f during the Student Government Association's weekly meeting', a single-subject frame at the Senate lectern, and that is the one to use; it is published as 2024-25-kaison-barton.jpg.",
+  "url": "https://wkuherald.com/wp-content/uploads/2021/02/30fe384fa9f007a62eebb1d41af30cd8.jpg",
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
  }
 ]
