@@ -1,0 +1,146 @@
+[
+ {
+  "note": "SCOPE OF THE SEARCH, so nobody repeats it. All 44 names in _worklist-p10.json were run three ways: (1) full name against data/herald-photos.json, (2) full name as a quoted phrase against wkuherald.com's media endpoint with order=asc, which searches caption, title and description across the whole library and is not subject to the hundred-item page cap, (3) full name as a quoted phrase against the posts endpoint. Only nine of the forty-four are named in any Herald photograph caption at all: Annalise Finch, Antonina Clementi, Cain Alvey, Cody Cox, Hannah Neeper, Harper Anderson, Mark Clark, Murphy Burke and Noah Moore. The other thirty-five return nothing from the caption route, and the media endpoint agreed with the local index on every one of them, so for this block the committed index is not the thin thing it is for other blocks."
+ },
+ {
+  "note": "SPIRIT MASTERS IS EMPTY FOR THIS BLOCK. All seven booklets, dlsc_ua_records/8496 to 8502 covering 2011-12 through 2017-18, were already downloaded to the staging folder by an earlier researcher and their text was searched for every one of the 44 names, full name and surname. Not one of them appears. Every apparent surname hit was Cherry Hall, the Hill, Judy Garland, Edmund Burke or a different student. Do not spend another run on Spirit Masters for anyone who first served between 2010 and 2024."
+ },
+ {
+  "name": "Cain Alvey",
+  "year": "2012-13",
+  "fact": "He was elected administrative vice president unopposed in March 2012 as a freshman, having been a senator; he said he wanted a leadership role in a decision-making body and that he had been interested in organizational aid since joining. Devon Hilderbrandt, the sitting administrative vice president, said Alvey was a very suitable choice to replace him. Alvey was also a resident assistant in McCormack Hall.",
+  "src": {
+   "label": "College Heights Herald 87:30, 23 March 2012, p. 3, 'Vice presidential candidates run unopposed'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6581"
+  }
+ },
+ {
+  "name": "Cain Alvey",
+  "year": "2012-13",
+  "fact": "He ran for student body president in the spring 2013 election against Keyana Boka and Fort Knox senior Austin Wingate, standing as the sitting administrative vice president. His platform was a design-a-course programme, an expanded Safe Ride service, more summer term scholarships and more test-preparation programmes, and he was then working with Parking and Transportation Services to add a third Safe Ride bus so that no student waited more than 45 minutes.",
+  "src": {
+   "label": "College Heights Herald 88:42, 29 March 2013, pp. 1 and 3, 'Presidential candidates debate issues'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6542"
+  }
+ },
+ {
+  "name": "Megan Skaggs",
+  "year": "2015-16",
+  "fact": "A Brownsville native who read English and international affairs, she interned for six weeks at the Casa Shalom Orphanage in Guatemala between her sophomore and junior years, wrote an honours thesis on Central American non-profits providing education to children, and in the autumn of 2016 ran a fundraising campaign called Paces for Pages to buy Spanish-language books for the orphanage. She left in January 2017 to be a Fulbright English Teaching Assistant in Guatemala.",
+  "src": {
+   "label": "College Heights Herald 92:20, 1 November 2016, pp. B1-B2, 'Alum raises funds for Guatemalan orphanage'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9604"
+  }
+ },
+ {
+  "name": "Braxton Powell",
+  "year": "2015-16",
+  "fact": "He ran for student body president in the spring 2016 election; the Herald of 14 April 2016 carried a signed opinion piece by Allan Moreno endorsing him. A caution for a later researcher rather than a fact about him: the Herald index for 18 October 2016 carries an item headed 'Student Government Association Members Resign After Allegations of Racism' naming Powell and John McKinney. That issue was not opened for this hunt and no photograph from it was considered, because a frame attached to a conduct matter is a last resort under the archive's rules for living people. Anyone who does open it should read the outcome as well as the allegation before writing anything.",
+  "src": {
+   "label": "College Heights Herald 91:21, 14 April 2016, p. 5",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6463"
+  }
+ },
+ {
+  "name": "Rachel Keightley",
+  "year": "2015-16",
+  "fact": "Her name in the university's own records is Rachel A. Keightley: she is on WKU's Bowling Green area dean's and president's list for autumn 2015, alongside an Andrew B. Keightley at the same postcode. This matters because a search for Keightley on wku.edu leads straight to the English department's alumni profile of 'Keightley Dudgeon', class of 2019, which is a different person with Keightley as a given name. See _do-not-use.json.",
+  "src": {
+   "label": "WKU Media Relations, autumn 2015 dean's and president's list, Bowling Green area",
+   "url": "https://www.wku.edu/mediarelations/documents/2015/stu_dean_pres_bg_area_lst_fall_2015.pdf"
+  }
+ },
+ {
+  "name": "Barrett Greenwell",
+  "year": "2015-16",
+  "fact": "He read political science and wrote a Mahurin Honors College thesis, 'Do Ask, Do Tell: The Exclusion of Gay Men from Universal Male Conscription in the Republic of Turkey', researched over four months in Turkey interviewing lawyers, activists and men who had been through the exemption process. He presented it at the Pi Sigma Alpha research conference in Washington in the spring of 2016. WKU's write-up of that carries no photograph.",
+  "src": {
+   "label": "WKU News, 'Barrett Greenwell presented at the Pi Sigma Alpha Research Conference', 5 April 2016",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=4079"
+  }
+ },
+ {
+  "name": "Lauren Willett",
+  "year": "2022-23",
+  "fact": "She was one of thirty-one candidates for WKU's 2022 Homecoming queen, sponsored by the Student Government Association itself. She was from Owensboro, read hospitality management and dietetics with a minor in military service, and was commissioned as an army officer on graduating with the class of 2023, assigned to Fort Leonard Wood. WKU's candidate announcement carries a single photograph of the previous year's queen and no portraits of the candidates.",
+  "src": {
+   "label": "WKU News, '31 WKU students candidates for 2022 Homecoming queen', 19 October 2022",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=10824"
+  }
+ },
+ {
+  "name": "Kody Okert",
+  "year": "2020-21",
+  "fact": "He was a candidate for WKU's 2020 Coming Home King, from Hendersonville, Tennessee, son of Danny and Faye Okert, reading corporate and organizational communication and sponsored by Kappa Sigma. WKU's candidate announcements for both 2020 and 2021 name every candidate but carry only one photograph, of the previous year's winner, so they are not a portrait source.",
+  "src": {
+   "label": "WKU News, '20 WKU students candidates for 2020 Coming Home King', 29 January 2020",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=8444"
+  }
+ },
+ {
+  "note": "SGA'S OWN CABINET PAGES CARRY NO PORTRAITS BEFORE 2025-26. wku.edu/sga/executive/index.php is the current page and does embed headshots, at /sga/2025_2026_executive/headshots_website/. The surviving older page, /sga/executive/index_old.php, is the 2016-17 cabinet and gives names, offices and topper.wku.edu addresses only, with no images. Every plausible older path was probed and all returned 404: 2018-2019-executive, 2019-2020-executive, 2021_2022_executive, 2022_2023_executive, 2023_2024_executive, 2024_2025_executive, index_old2.php. The headshot directory convention does not appear to predate the current cabinet."
+ },
+ {
+  "note": "TWO SOURCES THAT PAID OFF HERE AND ARE WORTH THE NEXT RESEARCHER'S TIME. First, WKU departments publish student award and profile pages with a studio portrait and a first-person paragraph that often names the student's SGA office outright: wku.edu/sociology-criminology/awards/<surname>.php and wku.edu/political-science/<firstlast>profile.php are two live examples, and the political science department indexes its set at /political-science/alumniprofiles.php and /political-science/currentstudentprofiles.php. Harper Anderson was placed from one of these. Second, WKU Forensics keeps a team history at wku.edu/forensics/history/archive-2010-19.php and archive-2020-29.php whose photographs carry fully positioned name lists in the image title attribute, and the 'click to enlarge' href gives a 1200-pixel file rather than the 200-pixel thumbnail. Antonina Clementi was placed from one of those. The 2010-19 page has rosters but no positioned lists; the 2020-29 page has both."
+ },
+ {
+  "name": "Antonina Clementi",
+  "year": "2021-22",
+  "fact": "She was one of eight WKU Lincoln-Douglas debate students photographed in 2022, and stayed with the forensics team long after her SGA service: WKU records her on the 2021-22, 2022-23 and 2023-24 team photographs, and by 2025 she was a senior from Lafayette, Louisiana, winning the Harlan Hamm Award for leadership, taking first in extemporaneous speaking at the Kentucky state championships and being named to the 2025 Lincoln-Douglas All-American team.",
+  "src": {
+   "label": "WKU Forensics team history archive 2020-29",
+   "url": "https://www.wku.edu/forensics/history/archive-2020-29.php"
+  }
+ },
+ {
+  "name": "Harper Anderson",
+  "year": "2018-19",
+  "fact": "She was a senior from Morehead reading political science and criminology with a legal studies minor, class of 2021. Besides the administrative vice presidency she was a Spirit Master, Academic Excellence Chair of Kappa Delta, president of the Pi Alpha Delta pre-law society and a member of Pi Sigma Alpha, Order of Omega and Rho Lambda, and she interned for the Kentucky Legislative Research Commission in Frankfort in spring 2020. WKU named her Outstanding Major in Criminology.",
+  "src": {
+   "label": "WKU Department of Sociology and Criminology, 'Harper Anderson, Outstanding Criminology Major'",
+   "url": "https://www.wku.edu/sociology-criminology/awards/anderson.php"
+  }
+ },
+ {
+  "name": "Murphy Burke",
+  "year": "2016-17",
+  "fact": "She sat on the WKU Forensics team for four seasons, 2014-15 through 2017-18, a junior and then senior from Des Moines, Iowa. The team gave her the Patrick H. Vincent award in 2015-16, a Service award jointly with Asha Wasuge in 2016-17, and a Limited Prep award jointly with Lily Nellans in 2017-18. WKU's forensics history pages for those years carry team photographs but, unlike the 2020s pages, name nobody in them, so none of them identifies her.",
+  "src": {
+   "label": "WKU Forensics team history archive 2010-19",
+   "url": "https://www.wku.edu/forensics/history/archive-2010-19.php"
+  }
+ },
+ {
+  "name": "Hannah Neeper",
+  "year": "2016-17",
+  "fact": "Hannah E. Neeper was from Morehead, on WKU's dean's list in spring 2015 and autumn 2016, and presented a research project called 'Gender Perceptions in Taiwan' at the university's 46th Student Research Conference on 2 April 2016. She also sat on the University Senate in 2017 as an SGA representative.",
+  "src": {
+   "label": "WKU 46th Annual Student Research Conference programme, 2 April 2016",
+   "url": "https://www.wku.edu/studentresearch/2016_src_conference_program_final.pdf"
+  }
+ },
+ {
+  "name": "Tyler Scaff",
+  "year": "2014-15",
+  "fact": "He was a student worker at WKU's Hardin Planetarium and, with Dr Gelderman and Kistler, demonstrated its new digital projection system at a reception on 10 April 2013 attended by President Gary Ransdell. He is from La Grange, took a BS at WKU and was accepted to medical school at both Louisville and Kentucky. The article's two photographs are of the projector and the dome, not of him.",
+  "src": {
+   "label": "WKU Ogden College news, 'WKU's Hardin Planetarium adds digital projection system'",
+   "url": "https://www.wku.edu/ogden/news/index.php?view=article&articleid=2146"
+  }
+ },
+ {
+  "name": "Mallory Treece",
+  "year": "2013-14",
+  "fact": "A 2015 political science graduate, she was an alternate for a Fulbright English Teaching Assistantship to Germany and competed for WKU at the American Model United Nations conference in Chicago.",
+  "src": {
+   "label": "WKU Office of Scholar Development, nationally competitive scholarship winners 2011-2021",
+   "url": "https://www.wku.edu/osd/documents/2011-2021_scholarship-sucesses.pdf"
+  }
+ },
+ {
+  "note": "THE HERALD CAPTION LIBRARY IS NOW EXHAUSTED FOR THIS BLOCK, AND THE INDEX WAS TOPPED UP TO PROVE IT. data/herald-photos.json was thin for 2016, 2023 and 2024 (123, 49 and 197 captioned) even after the coordinator's 2016-2022 harvest. Those three years were re-harvested with scripts/chrome/herald_json.js and merged in: 950, 1026 and 2121 respectively, taking the file from 17,576 rows to 21,304. Every one of the 44 names was then re-run against the complete file. It produced exactly one caption nobody had listed before, the WKU forensics award group of April 2022 naming Antonina Clementi, and no new name at all. Thirty-five of the forty-four are named in no Herald photograph caption in any year."
+ },
+ {
+  "note": "ROUTES TRIED AND SPENT ON THIS BLOCK, so they are not tried again: the posts endpoint on a quoted full name for all 44, which found articles for 37 of them; every photograph attached to those 310 posts by the media 'post' field, 116 of which carry captions and only five of which name one of my people, all already known; the article pages themselves read in a real browser for inline photographs and SNO photo captions, which for this block carry only the lead art and the reporters' byline mugshots; caption searches on the office titles these 44 held, matched to the academic year they held them, which returned only other people's photographs; the Phi Mu composites for 2010 to 2018, the only Greek composites digitised for this era, which contain none of them; and the Spirit Masters booklets."
+ }
+]

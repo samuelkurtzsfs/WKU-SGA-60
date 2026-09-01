@@ -18,5 +18,95 @@
    "label": "data/years.json, 2015-16 senate officers",
    "url": ""
   }
+ },
+ {
+  "kind": "duplicate person",
+  "name": "Nolan Miles / Noland Miles",
+  "year": "2013-14",
+  "detail": "Entered twice in the same year under two spellings, as Chair of Public Relations and Chair of Student Affairs. One man: he is Executive Vice President in 1914-15 and 1915-16 as Nolan. His portrait attaches to the Nolan spelling, so the Noland entry reads as a person with no face and inflates the missing count.",
+  "src": {
+   "label": "data/years.json, 2013-14 senate",
+   "url": ""
+  }
+ },
+ {
+  "kind": "source exhausted",
+  "name": "Spirit Masters booklets 2011-2018",
+  "year": "",
+  "detail": "Called the best untapped portrait source by an earlier researcher. All seven were pulled and searched against the whole missing list. Seventeen name matches, and twelve were different people entirely: Steve Todd served 1969-70 and Scott Taylor 1975-76, neither can be in a 2014 booklet. Of the three whose service plausibly overlapped, not one bio mentions student government. The source is spent; do not mine it again.",
+  "src": {
+   "label": "digitalcommons.wku.edu/dlsc_ua_records/8496-8502",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8502/"
+  }
+ },
+ {
+  "kind": "SETTLED: two people, never merge",
+  "name": "Carlene and Darlene Lodmell",
+  "year": "1995-96, 1996-97",
+  "detail": "Two people, not one, despite differing by a single letter. They held office side by side: in 1995-96 Darlene chaired Student Affairs while Carlene chaired Legislative Research, and in 1996-97 Carlene was Vice President while Darlene was Secretary. A name-similarity sweep flags them every time; they must not be merged and neither may wear the other's face. Confirmed independently against the university's own records on 1 September 2026. This is settled and is now recorded in CLAUDE.md.",
+  "src": {
+   "label": "SGA Meeting Minutes, 14 Nov 1995, 5 Mar 1996, 27 Aug 1996 and 22 Apr 1997",
+   "url": ""
+  }
+ },
+ {
+  "kind": "uncertain, left alone",
+  "name": "Amanda Allen / Amanda B. Allen",
+  "year": "2006-07",
+  "detail": "Recorded as Executive Vice President and as Administrative Vice President in the same year, from two different sources. Probably one person whose title one source got wrong, but the two offices are genuinely distinct and nothing settles it, so no portrait was shared between the records.",
+  "src": {
+   "label": "SGA Senate minutes 6 Feb 2007; WKU News 2 May 2007",
+   "url": ""
+  }
+ },
+ {
+  "kind": "defective scan",
+  "name": "1989 Talisman, printed pages 352-353",
+  "year": "1988-89",
+  "detail": "One leaf is missing from the TopSCHOLAR scan of the 1989 Talisman. PDF leaf 178 ends on printed page 351 and leaf 179 opens on printed page 354, so the index runs A to Crawford and then jumps to Foe. The whole D and E section of the index, and the first half of F, is simply not in the file. That is why Bill Engle cannot be looked up in the volume that covers his first year. Every leaf after 178 is therefore one printed spread further on than the arithmetic suggests: pages are 2*leaf-6 up to leaf 178 and 2*leaf-4 after it.",
+  "src": {
+   "label": "1989 Talisman, UA12/2/2 'Image in the Making'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413"
+  }
+ },
+ {
+  "kind": "scan resolution ceiling",
+  "name": "TopSCHOLAR Talismans 1982-1991",
+  "year": "",
+  "detail": "Every volume of this run is scanned at about 96 dpi, roughly 816 by 1123 pixels per printed page, except the 1983 volume which is 1892 by 2386 and has no OCR text layer at all. At that ceiling a class portrait cell comes out between 70 and 160 pixels wide, which is small but real, while a face in a club or Associated Student Government group photograph comes out at 40 to 60 pixels, which is not usable for anything. Plan on the class portrait grids and treat the group photographs as name lists, not as picture sources. Volume record numbers run 405 for 1982, 406 and 407 for the two parts of 1983, then 408 to 415 for 1984 through 1991. Leaf to printed page: 1982 page = leaf-3; 1983 part 2 page = leaf+193; 1984 and 1991 page = 2*leaf-6; 1985 page = 2*leaf-4; 1988 and 1990 page = leaf-3; 1989 see the entry above.",
+  "src": {
+   "label": "digitalcommons.wku.edu/dlsc_ua_records/405-415",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413"
+  }
+ },
+ {
+  "kind": "SETTLED: name collision resolved",
+  "name": "Debby Clark",
+  "year": "1972-73",
+  "detail": "Two Deborah Clarks sit in the same block of the 1974 Talisman senior grid, and three researchers left her open rather than guess. The disambiguator is Chi Omega, not hometown. The Herald of 6 November 1973 calls the legislative intern an Associated Student Government and Chi Omega member; the 1974 index puts Chi Omega on p. 259 and indexes only Deborah Kelly Clark there, Janca appearing on 248, 311 and 350. The grid prints them as DEBORAH J. CLARK, Elem. Ed., Campbellsville and DEBORAH K. CLARK, Admin. Services, Bowling Green. Hers is the second face in the third row. Do not reopen without a source that puts a different Clark in the office.",
+  "src": {
+   "label": "College Heights Herald 53:20, 6 Nov 1973, p. 2; 1974 Talisman pp. 259, 283, 350",
+   "url": ""
+  }
+ },
+ {
+  "kind": "written off: no class portrait exists",
+  "name": "Thirty-one members who first served 1990-91 to 1994-95",
+  "year": "1990-91 to 1994-95",
+  "detail": "Checked name by name against the back index of every Talisman that covers these years, 1991 (record 415), 1992 (416), 1993 (417) and 1994 (418). There is no 1995 volume: record 419 and its neighbours are the Xposure magazines, which carry no portrait grids, so the 1994 Talisman is the last book with grids and the 1994-95 intake has to be caught in it a year younger. NAMED IN AN INDEX BUT ONLY ON ORGANIZATION OR STORY PAGES, so they never sat for a portrait: Karl Miller, \"Miller, Karl 162, 165\" in 1991, the Public Relations Students Society of America spread; Alan Thomason, \"Thomason, Alan N. 222\" in 1991 and \"180, 226\" in 1992, Sigma Phi Epsilon and the ASG group photograph; Ginger Markham, \"Markham, Ginger 152, 202\" in 1993, Alpha Delta Pi and Spirit Masters, and \"229\" in 1992; Susan Mitchell, \"Mitchell, Susan 170, 204\" in 1993, 204 being the ASG group photograph; Heather Renee Meenach, \"Meenach, Heather 144, 188, 202\" in 1993 and \"218\" in 1992. ABSENT FROM EVERY INDEX, checked at the exact alphabetical position in each volume: Melony Shemberger, Jeff Carlisle, Darron Brawner, Jeff Duncan, Jenny Stelmach, Jill Howard, Jim Lee, Kendra Welch, Kim Mann, Laura Nunn, Molly Schreiner, Shawn Pinkston, Susanne Jeffiers, Tim Sturm, Michelle Kustes, Amanda K. Thurmond, Charles J. Young, Ernie Chen, James E. Parvin, Jill C. Reading, John W. Taylor, Julie A. Martin McCay, Lena S. Garner, Rod P. Sherrill, Sharman R. Mooney, Troy A. Nunn. Several have a near neighbour that will tempt a later pass and is a different person: Brawner Stacey and Brawner R. Thomas, Carlisle Justin, Schreiner Jeff, Welch Loretta, Bland LaRoshia, Markham John, Pinkston Cleon L. and Pinkston Davon, Kustes Carlotta, Colon Carol, Richardson Meredith, Rachel and Randy, Martin without a Julie. The 1991 index OCR is the worst of the four and has to be read from the page image; the 1994 volume has no text layer at all and its whole index, pp. 276-285, was read as images.",
+  "src": {
+   "label": "1991-1994 Talisman back indexes, UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
+  }
+ },
+ {
+  "kind": "leaf to printed page, per volume",
+  "name": "Talismans 1991-1994 on TopSCHOLAR",
+  "year": "",
+  "detail": "Checked against printed folios, not assumed, because the arithmetic differs per volume and the note left for 1982-1991 does not hold for these scans. Every leaf after the TopSCHOLAR cover sheet is a two-page spread. 1991 (record 415): left page = 2*leaf - 8, verified at leaf 184 = p. 360. 1992 (416): left page = 2*leaf - 8, verified at leaf 64 = pp. 120-121. 1993 (417): left page = 2*leaf - 2, verified at leaf 15 = pp. 28-29 and leaf 25 = pp. 48-49. 1994 (418): left page = 2*leaf - 6, verified at leaf 141 = p. 276. Native scan width is 1760 px per spread for 1991 and 1992, 1728 for 1993, and 816 px per single page for 1994, so a class portrait cell comes out 90 to 160 px and a face in a club group photograph 35 to 50 px. The 1994 file has no OCR text layer of any kind, only the cover sheet.",
+  "src": {
+   "label": "digitalcommons.wku.edu/dlsc_ua_records/415-418",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/415/"
+  }
  }
 ]

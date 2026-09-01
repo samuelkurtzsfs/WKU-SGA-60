@@ -47,22 +47,6 @@
   }
  },
  {
-  "year": "2015-16",
-  "name": "Cody Cox",
-  "file": "2015-16-cody-cox.jpg",
-  "replaces": null,
-  "width": 720,
-  "height": 900,
-  "id_confidence": "inferred - editor should confirm before publishing",
-  "why": "a lit studio portrait, single subject, by far the best-quality frame of anyone in this block",
-  "caption_quote": "Winchester freshman Cody Cox came out of the closet when he was a junior in high school.",
-  "identification": "Sole subject of a studio portrait, named in the caption. NOT independently tied to SGA: the Herald never gives the SGA chief justice a hometown or class year. The link is name plus timeline - a freshman in Feb 2014 is a junior in 2015-16 (associate justice) and a senior in 2016-17 (chief justice), which is exactly the span recorded for him. Reject if a second Cody Cox at WKU can be shown.",
-  "src": {
-   "label": "College Heights Herald, 6 Feb 2014, 'Coming out at WKU' diversity feature",
-   "url": "https://wkuherald.com/wp-content/uploads/2014/02/664ecd69214be8c0bdca83860a9ad6f5.jpg"
-  }
- },
- {
   "year": "2016-17",
   "name": "Emily Houston",
   "file": "2016-17-emily-houston.jpg",
@@ -221,23 +205,6 @@
   "src": {
    "label": "College Heights Herald 86:27, 10 December 2010, p. 7",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6262"
-  }
- },
- {
-  "year": "2012-13",
-  "name": "Drew Mitchell",
-  "file": "2012-13-drew-mitchell.jpg",
-  "replaces": null,
-  "width": 330,
-  "height": 520,
-  "quality": "a small black and white newspaper mugshot, about 330 pixels across at 400 dpi",
-  "id_confidence": "inferred - editor should confirm before publishing",
-  "why": "the only photograph of him in the archive, a straight smiling head-and-shoulders frame",
-  "caption_quote": "MITCHELL",
-  "identification": "Labelled MITCHELL under the picture and numbered 3 on the page's map, matching the entry beside it: 'Drew Mitchell, a sophomore from Bowling Green, went to Gulf Shores, Ala.' NOT independently tied to SGA - the link is the name and an enrolment window (sophomore in Oct 2010, so a senior in 2012-13) that covers his term as director of public relations.",
-  "src": {
-   "label": "College Heights Herald 86:12, 12 October 2010, p. 6",
-   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6250"
   }
  }
 ]

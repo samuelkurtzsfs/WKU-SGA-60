@@ -1053,7 +1053,8 @@
        },
        "profile": [
         "Harold Northam held the Sophomore Class Representative seat in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives."
-       ]
+       ],
+       "note": "He was still in the Associated Students in 1968-69, a year after the sophomore class representative term the archive records. The group caption on p. 95 of the 1969 Talisman names him third in the back row, between Phil Myers and Steve Stephens."
       },
       {
        "office": "Interfraternity Council Rept.",
@@ -1127,7 +1128,8 @@
        },
        "profile": [
         "Steve Reeves held the Departmental Clubs seat in the 1967-68 Associated Student Government, per the officers' roster preserved in the WKU Archives."
-       ]
+       ],
+       "note": "The back index of the 1968 Talisman enters him as Reeves, Steve W., 291, and the junior grid on that page gives his home town as Bowling Green. He is the only Steve or Stephen Reeves in the volume, which separates him from Dennis Reeves, who sat in the Associated Students the year before."
       },
       {
        "office": "Professional And Honorary Groups Representative",
@@ -1177,7 +1179,8 @@
        },
        "profile": [
         "Michael Klein held the Representative of Men's Residence Halls seat in the 1967-68 Associated Student Government, a seat he had also held in 1966-67 as Michael R. Klein, then a sophomore from Calvert City."
-       ]
+       ],
+       "note": "The senior class list in the 1969 Talisman prints his given name as Michale, not Michael, with the major Business Administration and home town Westfield, New Jersey. The Associated Students group caption in the 1968 Talisman prints Michael Klein. Flagged, not resolved."
       },
       {
        "office": "Men's Residence Halls Rept.",
@@ -1199,7 +1202,8 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "note": "He came to Associated Students from Fern Creek and sat on the Rules and Elections Committee in 1967-68, one of three members named on the officers roster the president's office filed that year, which noted two more places were still to be appointed. The Herald had reported his election as freshman class president in October 1966, a result settled only after four recounts, and in April 1968 it reported that he had been elected chairman at the Southern Universities Student Government Association conference."
       },
       {
        "name": "Carol Bass",
@@ -1207,7 +1211,8 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "note": "She was already in the Associated Students in 1966-67, a year earlier than the archive records her. The group caption on p. 136 of the 1967 Talisman lists Carol Bass in the second row. The archive currently has her first serving in 1967-68."
       },
       {
        "name": "Paul Gerard",
@@ -1233,7 +1238,8 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "note": "She sat on the Student Activities Committee of Associated Students in 1967-68 with Dennis Jaffee, Carol Bass and campus representative at large Keith Petrie, on the officers roster filed with the president's office. The roster gives her home as Vine Grove, Kentucky. The same document shows the association's judicial and financial committees had not yet been formed when it was drawn up."
       },
       {
        "name": "Sandra Tonjes",
@@ -1241,7 +1247,8 @@
        "src": {
         "label": "UA3/3/1 Associated Student Government Officers 1967-68",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/508"
-       }
+       },
+       "note": "She sat on the Rules and Elections Committee of Associated Students in 1967-68 with John Adams and Paul Gerard, on the officers roster filed with the president's office, which recorded that two further places on that committee were still to be appointed at the start of the next year. The roster gives her home as Bowling Green, Ohio."
       }
      ]
     }
@@ -1681,7 +1688,8 @@
        "label": "UA3/3/1 Memo Re: Results of Election, 3 May 1968",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/543",
        "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=1543&context=dlsc_ua_records"
-      }
+      },
+      "note": "The 1969 Talisman spells him two ways on facing pages. The officers caption on p. 96 reads Toni Rizzo, Treasurer; the Executive Committee caption on p. 97 reads Tonii Rizzo, and the nameplate on his desk in the p. 96 photograph reads TONII. Flagged, not resolved."
      },
      {
       "office": "Secretary",
@@ -1821,6 +1829,33 @@
        },
        "seat": "Congressman, Sophomore Class",
        "note": "Won the Sophomore Class Congressman seat in the election of 2 May 1968 with 637 votes to John Hutton's 468."
+      },
+      {
+       "name": "Harold Northam",
+       "seat": "Member, Associated Students",
+       "note": "Named third in the back row of the Associated Students group photograph, between Phil Myers and Steve Stephens. He had held the sophomore class representative seat the year before.",
+       "src": {
+        "label": "1969 Talisman, p. 95",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+       }
+      },
+      {
+       "name": "Paul Civils",
+       "seat": "Member, Associated Students",
+       "note": "Named first in the second row of the Associated Students group photograph, a year before the sophomore representative-at-large seat the archive records him in.",
+       "src": {
+        "label": "1969 Talisman, p. 95",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+       }
+      },
+      {
+       "name": "Steve Todd",
+       "seat": "Judicial Council",
+       "note": "Sat on the Associated Students Judicial Council with Mark Skillern, Carolyn Cash, Lonnie Jackson, Russell Vertner and Brent Hall, a year before the representative-at-large seat the archive records him in.",
+       "src": {
+        "label": "1969 Talisman, p. 98",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+       }
       }
      ]
     }
@@ -20370,7 +20405,7 @@
        }
       },
       {
-       "name": "Patrick Monahan",
+       "name": "Patrick Monohan",
        "seat": "Congress member (seat not specified in minutes)",
        "note": "On the absence roll 12 Nov 1991 and 24 Mar 1992.",
        "src": {
@@ -20953,7 +20988,7 @@
      },
      {
       "office": "Public Relations Vice President",
-      "name": "Patrick Monahan",
+      "name": "Patrick Monohan",
       "note": "Distributed the 16,000 student discount cards, announced that the state SGA conference would be held at Western over the weekend of 31 October 1992, and reported the kick-off of Project Western. He told Congress every committee needed to produce one piece of legislation a week. The minutes spell the surname both Monahan and Monohan.",
       "profile": [
        "Patrick Monahan served as SGA Public Relations Vice President for 1992-93; the minutes spell his surname both Monahan and Monohan. He distributed 16,000 student discount cards and announced that the state SGA conference would be held at Western the weekend of 31 October 1992.",
@@ -21131,7 +21166,8 @@
        "src": {
         "label": "SGA Minutes, 29 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
-       }
+       },
+       "note": "He was elected a freshman representative in the SGA freshman elections of autumn 1992, reported to Congress by Administrative Vice President Susan Mitchell on 29 September 1992 along with freshman president Kyle Key, vice president Greg Edmonds and fellow representatives Jill Howard, Margaret Carter, Jennifer Raffaelli and William Zorn. The roll records him absent on 27 October 1992 and at five meetings between 26 January and 23 February 1993."
       },
       {
        "name": "Emily Brown",
@@ -21156,7 +21192,8 @@
        "src": {
         "label": "SGA Minutes, 26 Jan 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
-       }
+       },
+       "note": "Joe Tinsley moved his approval as Representative at Large on 26 January 1993, in the same slate as Jenny Stelmach, Laura Nunn and David Serafini; the motion passed. On 30 March 1993 he was one of two members named as moving that the reading of the minutes be suspended, a motion that failed, so the minutes were read out and approved. He was recorded absent on 23 March, 6 April and 13 April 1993."
       },
       {
        "name": "Margaret Carter",
@@ -21195,7 +21232,8 @@
        "src": {
         "label": "SGA Minutes, 15 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/408"
-       }
+       },
+       "note": "He was a member of SGA Congress from the start of the 1992-93 year. The record of him is the attendance roll, which names him absent from thirteen meetings between 15 September 1992 and 9 February 1993, beginning with the meeting where president Joe Rains reported his presentation to Regent Earl Fischer on what it was like to be a student at Western. He was not among the members who resigned in the round of absence letters the secretary reported on 2 February 1993."
       },
       {
        "name": "Derrek Duncan",
@@ -21235,7 +21273,8 @@
        "src": {
         "label": "SGA Minutes, 20 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/406"
-       }
+       },
+       "note": "He sat in SGA Congress through the autumn of 1992 under president Joe Rains, and the attendance roll records him absent only twice, on 22 September and 20 October 1992. In the second week of that semester the Herald printed a piece by him arguing the university should say residence hall rather than dorm, in the issue of 27 August 1992."
       },
       {
        "name": "Elizabeth Fauver",
@@ -21298,7 +21337,8 @@
        "src": {
         "label": "SGA Minutes, 29 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
-       }
+       },
+       "note": "She was elected a freshman representative in the SGA freshman elections of autumn 1992. Administrative Vice President Susan Mitchell reported the results to Congress on 29 September 1992, naming Kyle Key as freshman president, Greg Edmonds as vice president, and Howard with Margaret Carter, Jennifer Raffaelli, Darron Brawner and William Zorn as representatives. The roll records her absent on 20 October and 1 December 1992 and on 2 and 9 February, 9 March and 13 April 1993."
       },
       {
        "name": "Jennifer Jaggers",
@@ -21323,7 +21363,8 @@
        "src": {
         "label": "SGA Minutes, 2 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/432"
-       }
+       },
+       "note": "Congress approved her as Education Representative on 2 February 1993, with Kendra Welch as Sophomore Representative and Eddie Myers as sophomore vice president. The same meeting passed the fax machine bill after motions to table and to amend it both failed, passed the Garrett copy machine resolution unanimously on second reading, and gave a first reading to Resolution 93-2-S on a study day preceding exam week. She was recorded absent on 9 March 1993."
       },
       {
        "name": "Nicki Jerome",
@@ -21339,7 +21380,8 @@
        "src": {
         "label": "SGA Minutes, 29 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
-       }
+       },
+       "note": "He won the freshman class presidency in the SGA freshman elections of autumn 1992. Administrative Vice President Susan Mitchell read the results to Congress on 29 September 1992: Key as president, Greg Edmonds as vice president, and Jill Howard, Margaret Carter, Jennifer Raffaelli, Darron Brawner and William Zorn as freshman representatives. He was recorded absent on 17 November 1992 and on 12 and 19 January, 9 February and 2 March 1993."
       },
       {
        "name": "Julie Kwok",
@@ -21363,7 +21405,8 @@
        "src": {
         "label": "SGA Minutes, 26 Jan 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
-       }
+       },
+       "note": "He was a member of SGA Congress in the spring semester of 1993. What the record holds of him is the attendance roll, which names him absent at every regular meeting from 26 January to 13 April 1993, eleven in all. Congress enforced attendance that year through the Judicial Council: on 9 February 1993 the secretary told committee chairs to send members with absences before Emily Morgan and the Council."
       },
       {
        "name": "Kim Mann",
@@ -21371,7 +21414,8 @@
        "src": {
         "label": "SGA Minutes, 23 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/429"
-       }
+       },
+       "note": "Congress approved her as Representative at Large on 23 February 1993, at the meeting that passed Bill 93-4-S on organisational aid recipients on second reading, voted to make Head Start the association's philanthropy, and gave a first reading to Resolution 93-3-S on an advocate programme for handicapped students. The roll records her absent at every meeting from 23 March to 13 April 1993."
       },
       {
        "name": "Ginger Markham",
@@ -21429,7 +21473,8 @@
        "src": {
         "label": "SGA Minutes, 26 Jan 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
-       }
+       },
+       "note": "Joe Tinsley moved her approval as Junior Representative on 26 January 1993, in the same slate as Jenny Stelmach, Jeff Carlisle and David Serafini; the motion passed. The same meeting approved three new committee chairs and gave first readings to Bill 93-1-S for a student phone in the Preston Center, Bill 93-2-S for a fax machine in the SGA office and Resolution 93-1-S for a copy machine in Garrett. She was recorded absent on 13 April 1993."
       },
       {
        "name": "Von Parrish",
@@ -21445,7 +21490,8 @@
        "src": {
         "label": "SGA Minutes, 16 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/430"
-       }
+       },
+       "note": "Congress approved him as Representative at Large on 16 February 1993, together with Michael Bessette as non-traditional representative, at the meeting that passed Bill 93-3-S establishing a recognised SGA philanthropy unanimously on second reading and gave a first reading to Bill 93-4-S on organisational aid recipients. He was recorded absent at five of the last six meetings of the term. The Herald covered him as an SGA candidate on 12 April 1994 under a headline saying he would not raise fees."
       },
       {
        "name": "Jennifer Raffaelli",
@@ -21487,7 +21533,8 @@
        "src": {
         "label": "SGA Minutes, 9 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
-       }
+       },
+       "note": "Congress approved her as Junior Representative on 9 February 1993, in a group of five with Tim Sturm, Thomas Lally, Elizabeth Fauver and Andrea Cailles. The same meeting amended and unanimously passed the resolution for a study day before exam week and gave a first reading to the bill establishing an SGA philanthropy. She was recorded absent on 9 March and 6 April 1993."
       },
       {
        "name": "Kibby Rose",
@@ -21511,7 +21558,8 @@
        "src": {
         "label": "SGA Minutes, 23 Mar 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/426"
-       }
+       },
+       "note": "She was a member of SGA Congress in the spring of 1993. The surviving record of her is the attendance roll, which names her absent on 16 February 1993, the night Congress passed the bill establishing a recognised SGA philanthropy and gave a first reading to the bill on organisational aid recipients, and again on 23 March 1993. Congress was enforcing attendance that term: the secretary reported on 2 February that letters to members with excessive absences had produced four resignations."
       },
       {
        "name": "David Serafini",
@@ -21575,7 +21623,8 @@
        "src": {
         "label": "SGA Minutes, 26 Jan 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/433"
-       }
+       },
+       "note": "Joe Tinsley moved her approval as Senior Representative on 26 January 1993, in the same slate as Laura Nunn, Jeff Carlisle and David Serafini, at the meeting that gave first readings to a bill for a student phone in the Preston Center, a bill for a fax machine in the SGA office and a resolution for a copy machine in Garrett. On 23 February 1993 she gave the Grievance Committee report in place of chairperson Dawn Dillard, telling Congress that billboards had been put up for students to write their grievances on."
       },
       {
        "name": "Tim Sturm",
@@ -21583,7 +21632,8 @@
        "src": {
         "label": "SGA Minutes, 9 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/431"
-       }
+       },
+       "note": "Congress approved him as Sophomore Representative on 9 February 1993, in a group of five with Lisa Rosa, Thomas Lally, Elizabeth Fauver and Andrea Cailles. The same meeting amended and then unanimously passed Resolution 93-2-S on a study day before exam week, and gave a first reading to Bill 93-3-S establishing a recognised SGA philanthropy. He was recorded absent on 30 March and 13 April 1993."
       },
       {
        "name": "Joe Tinsley",
@@ -21607,7 +21657,8 @@
        "src": {
         "label": "SGA Minutes, 2 Feb 1993",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/432"
-       }
+       },
+       "note": "Congress approved her as Sophomore Representative on 2 February 1993, alongside Susanne Jeffiers as Education Representative and Eddie Myers as sophomore vice president. That meeting also passed the bill for a fax machine in the SGA office and, unanimously, the resolution for a copy machine in Garrett. The roll records her absent at most meetings after that, including 2, 9 and 23 March, 30 March, 6 April and 13 April 1993."
       },
       {
        "name": "LauraLee Wilson",
@@ -21623,7 +21674,8 @@
        "src": {
         "label": "SGA Minutes, 29 Sept 1992",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/405"
-       }
+       },
+       "note": "He was elected a freshman representative in the SGA freshman elections of autumn 1992, reported to Congress on 29 September 1992 with freshman president Kyle Key, vice president Greg Edmonds and representatives Jill Howard, Margaret Carter, Jennifer Raffaelli and Darron Brawner. During the same year the Herald printed a piece by him criticising university president Thomas Meredith, headed as another big blunder, in the issue of 18 February 1993."
       }
      ],
      "committees": [
@@ -23240,7 +23292,8 @@
        "src": {
         "label": "SGA Records: Membership List Fall 1994",
         "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/13/"
-       }
+       },
+       "note": "He was a member of Delta Tau Delta, and the 1994 Talisman photographed him caked in mud after the Delt tug team beat Alpha Gamma Rho in the Greek Week tug competition."
       },
       {
        "name": "Jason C. Hays",
@@ -23248,7 +23301,8 @@
        "src": {
         "label": "SGA Records: Membership List Fall 1994",
         "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/13/"
-       }
+       },
+       "note": "He was a sophomore off-campus representative on the SGA membership list for the autumn of 1994, and at the first meeting of the year, 30 August 1994, chairperson Bonnie Newton named him vice chairperson of the Student Affairs committee for the semester. That committee set up an SGA e-mail account to take student complaints and suggestions, ran a voter registration drive in Downing University Center on 20 September, and wrote Bill 94-1-F on homecoming and coming home candidates. The Herald of 6 April 1995 carried a student government story headed that Jason Young and Jason Hays backed New Level"
       },
       {
        "name": "Evon A. Rajeivick Jr.",
@@ -23273,7 +23327,8 @@
        "src": {
         "label": "SGA Records: Membership List Fall 1994",
         "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/13/"
-       }
+       },
+       "note": "She was a Spirit Master in 1992-93, named second in the front row of that group's photograph, two years before the Fall 1994 membership list records her as a senior off-campus representative. The 1993 index gives her pages 144, 188 and 202, all feature or organization pages, and no class portrait."
       },
       {
        "name": "Sharman R. Mooney",
@@ -25490,7 +25545,8 @@
        "src": {
         "label": "SGA Meeting Minutes, 4 Feb 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/613"
-       }
+       },
+       "note": "She attended the meeting of 4 February 1997 as a visitor and was seated the same night, when Congress filled the vacant Freshman Council and Sophomore Off-Campus positions by unanimous consent with Rachel Hendricks and Guthrie. On 18 February 1997 she voted in favour of tabling Bill 97-1-S, the by-laws revision, so the administration could review it; the motion to table carried 21 to 16."
       },
       {
        "name": "Laura Hancock",
@@ -25605,7 +25661,8 @@
        "src": {
         "label": "SGA Meeting Minutes, 29 Oct 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552"
-       }
+       },
+       "note": "He was one of ten members who voted on 29 October 1996 to reconsider Jason Cole as Vice Chair for Student Affairs, a motion defeated 19 to 10. On 3 December 1996 Public Relations Director Shawna Whartenby gave him a special award for serving on the Residence Hall Task Force, and he voted that night for the housing refunds resolution, which passed 22 to 17. He voted against tabling the by-laws revision on 18 February 1997 and for the residence hall privatization study on 22 April 1997."
       },
       {
        "name": "Travis Mayo",
@@ -25613,7 +25670,8 @@
        "src": {
         "label": "SGA Meeting Minutes, 29 Oct 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552"
-       }
+       },
+       "note": "On 29 October 1996 he was among the ten members who voted to reconsider Jason Cole as Vice Chair for Student Affairs, a motion defeated 19 to 10. On 3 December 1996 he voted for the housing refunds resolution, which passed 22 to 17 on a roll-call vote. He was recorded absent on 24 September, 8 October and 23 November 1996 and on 28 January and 4 February 1997."
       },
       {
        "name": "Randall McGraw",
@@ -25648,7 +25706,8 @@
        "src": {
         "label": "SGA Meeting Minutes, 3 Sep 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/551"
-       }
+       },
+       "note": "He ran for student government vice president in the spring 1996 election as Andy Spears' running mate. The Herald's candidate round-up of 28 March 1996 calls him \"Bowling Green junior Jeff Oliver, Spears' running mate\". Spears lost the presidency to Kristen Miller."
       },
       {
        "name": "Robert Oslakovic",
@@ -25701,7 +25760,8 @@
        "src": {
         "label": "SGA Meeting Minutes, 27 Aug 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/562"
-       }
+       },
+       "note": "At the first Congress meeting of the year, on 27 August 1996, she moved that the Student Government Association adopt the budget Treasurer Steve Roadcap had just presented, after an earlier motion by Rick Malek to table the vote was defeated; David Apple seconded her motion and the budget was accepted. She was recorded absent from the meetings of 1 October and 8 October 1996."
       },
       {
        "name": "Kerri Richardson",
@@ -25842,7 +25902,8 @@
        "src": {
         "label": "SGA Meeting Minutes, 25 Feb 1997",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/569"
-       }
+       },
+       "note": "She applied for the vacant Senior Off-Campus representative seat and spoke to Congress on 25 February 1997 about why she wanted to join; Stephanie Cosby moved to seat her by acclamation, Heather Rogers seconded, and the motion passed. She was recorded absent from the meetings of 1, 8, 15 and 22 April 1997."
       },
       {
        "name": "Jason Wong",
@@ -25850,7 +25911,8 @@
        "src": {
         "label": "SGA Meeting Minutes, 29 Oct 1996",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/552"
-       }
+       },
+       "note": "Congress filled the two open Sophomore Off-Campus seats by unanimous consent on 29 October 1996, seating him alongside Callie Varner. The roll thereafter records him absent from most meetings of the rest of the term, including 13 and 23 November and 3 December 1996 and 21 and 28 January, 4, 11 and 18 February and 4 and 11 March 1997."
       }
      ]
     }
@@ -28317,7 +28379,8 @@
        "src": {
         "label": "SGA Meeting Minutes, December 1, 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/187"
-       }
+       },
+       "note": "On 1 December 1998 he spoke against Bill 98-10-F, which would have allocated funds to the Kappa Alpha Order fraternity, in a long floor fight that also drew Rick Malek, Jason Nemes, Dwight Campbell and Mitchell Bailey; after a failed amendment to raise the sum from 250 dollars, the bill was defeated 20 to 22. He was recorded absent on 3 November 1998, 10 February 1999 and 23 March 1999."
       },
       {
        "name": "Natalie Bryant",
@@ -28370,7 +28433,8 @@
        "src": {
         "label": "SGA Meeting Minutes, November 17, 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/189"
-       }
+       },
+       "note": "He wrote Resolution 98-15-F, which asked that the SGA advisor checklist be printed in the fall and spring schedule bulletins. On 17 November 1998 he spoke for it on second reading and offered a friendly amendment correcting a word in the first whereas clause; Leslie Bedo moved to accept it as amended and Congress approved it. He and Bedo also authored Bill 98-11-F, on orientation for new members, and both spoke for it when it passed on second reading on 8 December 1998. He was recorded absent on 10 February 1999."
       },
       {
        "name": "Nena Chilton",
@@ -29956,7 +30020,8 @@
        "src": {
         "label": "SGA Meeting Minutes, February 6, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/583"
-       }
+       },
+       "note": "On 6 February 2001 Congress moved and approved accepting her and Krista Harris as At-Large members, and both were sworn in that evening. The same meeting passed Bill 00-1-S, the SGA Teaser Award, on second reading and gave Bill 00-2-S, a bulletin board purchase, its first reading."
       },
       {
        "name": "Dana Lockhart",
@@ -29964,7 +30029,8 @@
        "src": {
         "label": "SGA Meeting Minutes, January 30, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/585"
-       }
+       },
+       "note": "Congress moved and approved her admission as an At-Large member on 30 January 2001, and she was sworn in that evening alongside Anna Coats and Michael Richardson, at the meeting that dissolved the Special Events Committee and created an ad hoc committee on online elections. She stayed with SGA for three more years: on 9 April 2002 she was nominated for both the Committee and the Stewart awards, on 27 August 2002 she was sworn in to the Judicial Council, and through 2002-03 she delivered the Judicial Council and University Senate reports to Congress, including the ruling on the secretary report"
       },
       {
        "name": "David Logan",
@@ -29972,7 +30038,8 @@
        "src": {
         "label": "SGA Meeting Minutes, January 16, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586"
-       }
+       },
+       "note": "Congress approved him and he was sworn in as a member on 16 January 2001, together with Natalie Taylor, Stacey Taylor and Robin Fulkerson. The same meeting postponed Resolution 00-5-F to 23 January, passed Resolution 00-6-F, and swore in Mark Rawlings as Vice President of Finance."
       },
       {
        "name": "Andrea Lovell",
@@ -29998,7 +30065,8 @@
        "src": {
         "label": "SGA Meeting Minutes, March 6, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/582"
-       }
+       },
+       "note": "He was sworn in as an At-Large Congress member on 6 March 2001, at the meeting that approved Resolution 01-4-S and the election codes and gave first readings to Bill 01-7-S on the Spring Bash, Bill 01-8-S on a faculty appreciation day and Resolution 01-5-S on matching fund fee reallocation."
       },
       {
        "name": "Matthew Pava",
@@ -30022,7 +30090,8 @@
        "src": {
         "label": "SGA Meeting Minutes, January 30, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/585"
-       }
+       },
+       "note": "Congress voted to accept him as an At-Large member on 30 January 2001, and he was sworn in that evening with Anna Coats and Dana Lockhart; Joe Morel was sworn in as a Justice at the same meeting. The minutes of 10 April 2001 carry a Mike Richardson in the list under the Keown Award heading."
       },
       {
        "name": "Jamie Sears",
@@ -30057,7 +30126,8 @@
        "src": {
         "label": "SGA Meeting Minutes, January 16, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586"
-       }
+       },
+       "note": "Congress approved her and she was sworn in as a member on 16 January 2001, in the same group as Stacey Taylor, Robin Fulkerson and David Logan. That meeting also confirmed Mark Rawlings as Vice President of Finance and Holly Skidmore as Public Relations Committee chair."
       },
       {
        "name": "Stacey Taylor",
@@ -30065,7 +30135,8 @@
        "src": {
         "label": "SGA Meeting Minutes, January 16, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/586"
-       }
+       },
+       "note": "Congress approved her and she was sworn in as a member on 16 January 2001, in the same group as Natalie Taylor, Robin Fulkerson and David Logan. That meeting also confirmed Mark Rawlings as Vice President of Finance and Holly Skidmore as Public Relations Committee chair."
       },
       {
        "name": "Terry Woodall",
@@ -30624,7 +30695,8 @@
        "src": {
         "label": "SGA Meeting Minutes, September 18, 2001",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/593"
-       }
+       },
+       "note": "Congress approved her as Vice-Chair of the Academic Affairs committee on 18 September 2001, alongside Patti Johnson for Public Relations and Ross Pruitt for Legislative Research, at the meeting that debated and approved the 2001-02 SGA budget. On 9 April 2002 she was one of ten members nominated for the Committee award."
       },
       {
        "name": "Dustin Brumett",
@@ -30632,7 +30704,8 @@
        "src": {
         "label": "SGA Meeting Minutes, March 5, 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/633"
-       }
+       },
+       "note": "He was sworn in as an At-Large member of Congress on 5 March 2002, in a group of five with Brandon Copeland, Sam Stinson, Mason Shields and Blain Fentress. That meeting saw Bill 02-1-S, the constitutional amendment, fail for want of a two-thirds majority and then be tabled for reconsideration, while the banner, chambers sign and outdoor furniture bills passed."
       },
       {
        "name": "Brandon Copeland",
@@ -30649,7 +30722,8 @@
        "src": {
         "label": "SGA Meeting Minutes, February 12, 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/637"
-       }
+       },
+       "note": "He was sworn in as an At-Large member of Congress on 12 February 2002, in a group of four with Amy Lee, Charlie Walker and Kyle Gott. The same meeting gave first readings to Resolution 02-2-S on the freshman seminar, Bill 02-4-S on SGA unity and Bill 02-5-S, a bylaws amendment."
       },
       {
        "name": "Blain Fentess",
@@ -30666,7 +30740,8 @@
        "src": {
         "label": "SGA Meeting Minutes, February 12, 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/637"
-       }
+       },
+       "note": "He was sworn in as an At-Large member of Congress on 12 February 2002, with Amy Lee, Charlie Walker and James Dunn. He was still active the next year: on 5 February 2003 he spoke in opposition during the debate on the president's nominees, and on 18 March 2003 he was one of three members who argued that the Apollo Night showcase request should go through the organisational aid process instead."
       },
       {
        "name": "Dustin Hayes",
@@ -30674,7 +30749,8 @@
        "src": {
         "label": "SGA Meeting Minutes, February 26, 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/634"
-       }
+       },
+       "note": "He was sworn in as an At-Large member of Congress on 26 February 2002 together with Craig Johnson, at the meeting that passed Bill 02-12-S on a campus clean-up and adopted the 2002 election codes."
       },
       {
        "name": "Annie Henning",
@@ -30682,7 +30758,8 @@
        "src": {
         "label": "SGA Meeting Minutes, February 5, 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/638"
-       }
+       },
+       "note": "She was sworn in as an At-Large member of Congress on 5 February 2002 together with Eddie Schwab. She was still in Congress the following year: the minutes of 5 February 2003 list her among the affirmative speakers in the debate on the president's nominees, a vote Congress ended up tabling for two weeks."
       },
       {
        "name": "Patti Johnson",
@@ -30699,7 +30776,8 @@
        "src": {
         "label": "SGA Meeting Minutes, February 26, 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/634"
-       }
+       },
+       "note": "He was sworn in as an At-Large member of Congress on 26 February 2002 together with Dustin Hayes, at the meeting that passed Bill 02-12-S on a campus clean-up and adopted the 2002 election codes."
       },
       {
        "name": "Amy Joyce",
@@ -30707,7 +30785,8 @@
        "src": {
         "label": "SGA Meeting Minutes, January 29, 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/639"
-       }
+       },
+       "note": "She was sworn in as an At-Large member of Congress on 29 January 2002, at the meeting that gave first readings to Bill 02-1-S, a constitutional amendment, and Bill 02-2-S on the Sun Belt tournament trip, and confirmed Dwight Campbell as parliamentarian."
       },
       {
        "name": "Amy Lee",
@@ -30715,7 +30794,8 @@
        "src": {
         "label": "SGA Meeting Minutes, February 12, 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/637"
-       }
+       },
+       "note": "She was sworn in as an At-Large member of Congress on 12 February 2002, in a group of four with Charlie Walker, Kyle Gott and James Dunn. The same meeting gave first readings to Resolution 02-2-S on the freshman seminar, Bill 02-4-S on SGA unity and Bill 02-5-S, a bylaws amendment."
       },
       {
        "name": "Billy Lyons",
@@ -30758,7 +30838,8 @@
        "src": {
         "label": "SGA Meeting Minutes, March 5, 2002",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/633"
-       }
+       },
+       "note": "He was sworn in as an At-Large member of Congress on 5 March 2002, in a group of five with Brandon Copeland, Sam Stinson, Blain Fentress and Dustin Brumett. That meeting saw Bill 02-1-S, the constitutional amendment, fail for want of a two-thirds majority and then be tabled for reconsideration, while the banner, chambers sign and outdoor furniture bills passed."
       },
       {
        "name": "Samlong Singhara",
@@ -37411,7 +37492,8 @@
       "src2": {
        "label": "Herald, 23 Mar 2012, \"Vice presidential candidates run unopposed\"",
        "url": "https://wkuherald.com/48112/news/vice-presidential-candidates-run-unopposed/"
-      }
+      },
+      "note": "Bryan was a candidate for Executive Vice President in the March 2010 election, facing Currie Martin, and a Herald editorial of 30 March 2010 endorsed Jessie and Bryan for the two offices."
      },
      {
       "office": "Administrative Vice President",
@@ -37431,7 +37513,8 @@
       "src3": {
        "label": "College Heights Herald 84:41, 23 Mar 2010 - presidential candidate coverage",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6757"
-      }
+      },
+      "note": "Thurman was a candidate for the SGA presidency in the March 2010 election, facing Colton Jessie, who won it."
      },
      {
       "office": "Chief of Staff",
@@ -37500,7 +37583,8 @@
        "src2": {
         "label": "College Heights Herald 84:41, 30 Apr 2009, \"Student Government Association Elects New Speaker\"",
         "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6744"
-       }
+       },
+       "note": "Pierce was elected Speaker of the Senate at the end of April 2009, at the start of the year in which he held that office."
       },
       {
        "office": "Chief Justice",
@@ -39022,7 +39106,8 @@
        "src4": {
         "label": "Herald, 9 May 2012 - New SGA officers sworn in at banquet",
         "url": "https://wkuherald.com/47109/news/new-sga-officers-sworn-in-at-banquet/"
-       }
+       },
+       "note": "Egerer was a WKU Spirit Master in the class of 2011-2012 and, in a Herald photograph of September 2011, is named with fellow Spirit Masters Alvin Farmer, Daniel Williams, Alex Kimura and Sarah Lowe."
       },
       {
        "office": "Secretary of the Student Senate",
@@ -40693,7 +40778,8 @@
        "src": {
         "label": "SGA Senate minutes, 3 Sept 2013",
         "url": "https://www.wku.edu/sga/uploads/minutes/2013/minutes913.docx"
-       }
+       },
+       "note": "She was president of the Delta Tau chapter of Phi Mu at WKU in 2013-14, the same year she chaired SGA's Legislative Research Committee; the office is printed under her portrait on the chapter composite."
       },
       {
        "name": "Cole McDowell",
@@ -41299,7 +41385,8 @@
       "src": {
        "label": "Herald, 28 Aug 2014",
        "url": "https://wkuherald.com/39569/news/sga-prepares-for-new-year/"
-      }
+      },
+      "note": "As Executive Vice President he addressed the Student Government Association meeting of 23 September 2014, the first held in the newly built SGA senate chambers in the Downing Student Union. Before that year SGA had met in Cravens Library."
      },
      {
       "office": "Administrative Vice President",
@@ -41526,7 +41613,8 @@
        "src5": {
         "label": "SGA Senate minutes, 5 May 2015",
         "url": "https://www.wku.edu/sga/uploads/minutes/2014/5-5.docx"
-       }
+       },
+       "note": "He was a student worker at WKU's Hardin Planetarium and, with Dr Gelderman and Kistler, demonstrated its new digital projection system at a reception on 10 April 2013 attended by President Gary Ransdell. He is from La Grange, took a BS at WKU and was accepted to medical school at both Louisville and Kentucky. The article's two photographs are of the projector and the dome, not of him."
       },
       {
        "office": "Public Relations Committee Chair",
@@ -43547,7 +43635,8 @@
       "src2": {
        "label": "Herald, 3 Apr 2017",
        "url": "https://wkuherald.com/29046/news/indian-student-group-to-host-traditional-celebration/"
-      }
+      },
+      "note": "SGA's own executive cabinet page for 2016-17 is still live on wku.edu and lists the whole cabinet: Jay Todd Richey president, Kate Hart executive vice president, Hannah Neeper administrative vice president, James Line chief of staff, Josh Knight director of academic and student affairs, Abhishek Bose director of information technology, Murphy Burke director of public relations."
      },
      {
       "office": "Director of Public Relations",
@@ -43573,7 +43662,8 @@
       "src4": {
        "label": "SGA legislation: Bill 6-17-S, Funding for the Student Government Association and International Diplomats Event “Love Has No Borders”",
        "url": "https://www.wku.edu/sga/accountability/bill-6-17-s.pdf"
-      }
+      },
+      "note": "Burke, then a sophomore, put a question to the WKU presidential search committee at its student forum in Downing Student Union on 27 April 2016, answered by Frederick Higdon, Jay Todd Richey and Barbara Burch."
      }
     ],
     "senate": {
@@ -46534,7 +46624,8 @@
       "src": {
        "label": "SGA Senate minutes, 4 Sep 2018",
        "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/minutes-4-sep.docx"
-      }
+      },
+      "note": "She was a senior from Morehead reading political science and criminology with a legal studies minor, class of 2021. Besides the administrative vice presidency she was a Spirit Master, Academic Excellence Chair of Kappa Delta, president of the Pi Alpha Delta pre-law society and a member of Pi Sigma Alpha, Order of Omega and Rho Lambda, and she interned for the Kentucky Legislative Research Commission in Frankfort in spring 2020. WKU named her Outstanding Major in Criminology."
      },
      {
       "office": "Chief of Staff",
@@ -48487,7 +48578,8 @@
        "src3": {
         "label": "Herald, 28 Oct 2020 - SGA votes on first bill of the semester",
         "url": "https://wkuherald.com/13366/news/sga-votes-on-first-bill-of-the-semester/"
-       }
+       },
+       "note": "She was elected speaker of the senate at SGA's first official meeting of 2020-21, on 6 October 2020, beating Brenna Matthews after both candidates gave speeches; the senate voted by Google Form because the meeting ran in person and on Zoom at once. In October 2021, as a committee head, she was working on a proposal to fund a scholarship for rural students."
       },
       {
        "office": "Secretary of the Senate",
@@ -49235,7 +49327,8 @@
       "src5": {
        "label": "SGA legislation: Bill 41-22-S, Funding for an Earth Day Tie-Dye Tabling Event",
        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/41_22_s.pdf"
-      }
+      },
+      "note": "He and his identical twin brother Jacob came to WKU together from Katy, Texas, both reading Business Economics with a Computer Information Systems minor, and both sat as senators-at-large. Their father took a WKU degree in 1994. WKU's feature on the pair carries the only photograph of them, and it is uncaptioned, so it cannot be used to tell one twin from the other."
      },
      {
       "office": "Student Mental Health and Wellbeing Committee Chair",
@@ -49260,7 +49353,8 @@
       "src4": {
        "label": "SGA legislation: Bill 5-21-F, Requiring the Title IX training for all collegiate members of Student Government Association",
        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/5_21_f.pdf"
-      }
+      },
+      "note": "Cissell was still authoring SGA legislation two sessions after her committee chairmanship: she wrote the 2023-24 Hope Harbor X Denim Day funding bill and presented it to the senate on 12 March 2024 with Senator at Large Sophia Bryant, by then a senior public relations student. The Herald photograph of that presentation shows a woman; the archive's 2021-22 profile paragraph refers to Cissell as \"he\", which appears to be an unsourced inference and should be checked."
      },
      {
       "office": "Student Enrollment and Experience Committee Chair",

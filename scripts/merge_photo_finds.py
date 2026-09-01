@@ -156,6 +156,27 @@ def main():
     overlay = json.loads(OVERLAY.read_text())
     have = {(p["year"], p["name"]): p for p in overlay.get("leaders", [])}
 
+    # Two researchers working neighbouring decades can both find a portrait of
+    # the same person, from different photographs, and both be right. Whichever
+    # was read last used to win, so the file flipped back and forth on every
+    # run. Settle it once, on the rule the owner gave: the bigger frame.
+    def pixels(rec):
+        w, h = rec.get("width") or 0, rec.get("height") or 0
+        if w and h:
+            return int(w) * int(h)
+        p = PHOTOS / str(rec.get("file") or "")
+        return p.stat().st_size if p.is_file() else 0
+
+    best = {}
+    for origin, rec in finds:
+        k = (rec.get("year"), rec.get("name"))
+        if k not in best or pixels(rec) > pixels(best[k][1]):
+            best[k] = (origin, rec)
+    if len(best) < len(finds):
+        print(f"{len(finds) - len(best)} findings were duplicates; kept the "
+              f"largest frame of each")
+    finds = list(best.values())
+
     added, improved, refused = [], [], []
     for origin, rec in finds:
         why = check(rec, known)
@@ -180,6 +201,16 @@ def main():
         old = have.get(key)
         if old:
             if old["file"] == rec["file"] and old["src"] == entry["src"]:
+                continue
+            # An editor working after the researcher writes the identifying
+            # reasoning into the citation: which row of the group photograph,
+            # how the count was done. The finding still holds the short label
+            # it was filed with, so re-merging the same finding would truncate
+            # all that back off. If the label on file already contains the
+            # finding's own, it has been enriched, and it stays.
+            if (old["file"] == rec["file"]
+                    and old["src"].get("url") == entry["src"]["url"]
+                    and label in old["src"].get("label", "")):
                 continue
             improved.append((key, old["file"], rec["file"],
                              rec.get("why", "")))

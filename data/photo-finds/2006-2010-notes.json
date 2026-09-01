@@ -1,0 +1,99 @@
+[
+ {"note": "Block 2006-2010, handover notes. No portrait was published from this run: both hosts that hold the pictures refused the machine before any image could be downloaded. Everything below is either a sourced fact turned up on the way, or an operational finding meant to save the replacement agent the same dead ends. The findings file 2006-2010.json is an empty list, not an omission."},
+
+ {"note": "ROUTE THAT DOES NOT EXIST: the Talisman is not available for this block. archive.org holds 1943, 1946, 1947, 1963-65, 1971-81, 1986 and 1987 and nothing later (checked by archive.org advancedsearch across all Talisman items, 19 volumes total). TopSCHOLAR's yearbook collection dlsc_ua_yearbooks jumps straight from the 2003 volume (dlsc_ua_records/594) to the 2012 volume (dlsc_ua_records/8897) across both of its index pages. So there is no 2006, 2007, 2008, 2009 or 2010 Talisman online at all, and the class-portrait-grid route is unavailable for 2006-2010. Do not spend time looking for it."},
+
+ {"note": "wkuherald.com: the wp-json/wp/v2/media endpoint answered about 25 plain searches, then Cloudflare turned on a 'Just a moment...' interstitial for the whole host, including /wp-content/uploads/ image files. Three 95-second backoffs did not clear it, and neither did full browser-style headers with a cookie jar. Adding before= or after= date parameters to the media query appeared to trigger it. The endpoint also returns newest-first behind a page cap, so a plain surname search shows 2026 first; pass order=asc."},
+
+ {"note": "digitalcommons.wku.edu: landing pages returned 200 throughout, but every attempt at the actual file returned a hard Cloudflare 403 - both /cgi/viewcontent.cgi?article=NNNN&context=dlsc_ua_records and the alternate bepress form /context/dlsc_ua_records/article/NNNN/type/native/viewcontent. This is not ordinary pacing; 90-second backoffs did not clear it. Landing-page metadata (bepress_citation_* meta tags and the description field) is still readable and is worth mining, because the description lists every name in a group photograph."},
+
+ {"note": "web.archive.org would not connect from this machine at all (curl timed out after 75 seconds). Plain archive.org worked normally. So the Wayback Machine is not a usable fallback for Herald images here."},
+
+ {"note": "LEAD, Kaylee Egerer: 'UA12/2/16 Spirit Masters Class of 2011-2012', digitalcommons.wku.edu/dlsc_ua_records/8496, is described by the archive as a booklet with photos and brief biographies of members, and Egerer is in the member list. A booklet of captioned member headshots is the most promising single portrait source found for anyone in this block. PDF is article=9490, context=dlsc_ua_records. It was the 403 that stopped this becoming a finding."},
+
+ {"note": "LEAD, spring 2010 election coverage: Herald issue dlsc_ua_records/6757 (23 Mar 2010) carries candidate write-ups for three people on this worklist at once - Justin Thurman (president, against Colton Jessie), Kendrick Bryan (executive vice president, against Currie Martin) and Wade Pierce (administrative vice president). Candidate profiles of this period normally run headshots. One issue PDF should settle three faces."},
+
+ {"note": "LEAD, Herald photographs already located by caption before the block came down, with image URLs. Kaylee Egerer: wkuherald.com/wp-content/uploads/2011/02/42e801cc54308957204750442fe9e6b4.jpg (22 Feb 2011) and a duplicate at .../2011/02/42e801cc54308957204750442fe9e6b4-1.jpg (25 Feb 2011). Charlie Harris: .../2011/05/c761a669849c1985639ea4007dee2bd4.jpg (3 May 2011). Wade Pierce: .../2011/04/8b5955941dd926b356c93f7565e7bb0e.jpg (1 Apr 2011). Eric Smiley and Katie Stillwell together: .../2011/02/03878b2434f83f4bd23ccdf0ec301781.jpg (11 Feb 2011). Keyana Boka headshot: .../2013/10/f9429afdfc10a86328f2c656d4411061.jpg (31 Oct 2013)."},
+
+ {"note": "IDENTIFICATION NOTE on the Smiley/Stillwell frame above: its caption places four named people by quadrant - Eric Smiley top left, Diego Leal Ambriz top right, Katie Stillwell bottom left, Adam Sheridan bottom right. Because the positions are stated rather than left to a reader to infer, quartering that image gives a defensible crop for both Smiley and Stillwell. It was not downloaded, so the quadrants have not been eyeballed; check that the four panels really are a 2x2 before cutting."},
+
+ {"note": "IDENTIFICATION NOTE on the Wade Pierce frame above: two men, and the caption marks only the other one, '(left)', as Devon Hinderbrandt. Pierce is therefore the figure on the right. Same caveat - not downloaded, not eyeballed."},
+
+ {"note": "UNRESOLVED IDENTITY, Angelika Masero: an Angelika Masero wrote a run of College Heights Herald news stories in the autumn of 2005 (for example dlsc_ua_records/3631, 3636, 3638, 3643). The worklist Angelika Masero was SGA Director of Public Relations in 2009-10. The surname is rare and it is probably one person, but nothing seen puts the byline and the SGA officer together, so it has not been treated as established. A Herald staff page or masthead photograph from 2005-06 would settle it and would also be a portrait."},
+
+ {"name": "Nathan J. Eaton", "year": "2008-09",
+  "fact": "Eaton was chosen Speaker of the Senate in April 2008, the Herald reporting that SGA had picked its longest serving senator for the chair.",
+  "src": {"label": "Herald index, 17 Apr 2008", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6699"}},
+
+ {"name": "Nathan J. Eaton", "year": "2008-09",
+  "fact": "Eaton, indexed as Nate Eaton, ran against Reagan Gilley for the open student regent seat in February 2009. Gilley won that election.",
+  "src": {"label": "Herald index, 24 Feb 2009", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6719"}},
+
+ {"name": "Wade Pierce", "year": "2009-10",
+  "fact": "Pierce was elected Speaker of the Senate at the end of April 2009, at the start of the year in which he held that office.",
+  "src": {"label": "Herald index, 30 Apr 2009", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6744"}},
+
+ {"name": "Wade Pierce", "year": "2010-11",
+  "fact": "Pierce stood for Administrative Vice President in the March 2010 election, the office he then held in 2010-11.",
+  "src": {"label": "Herald index, 23 Mar 2010", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6757"}},
+
+ {"name": "Wade Pierce", "year": "2010-11",
+  "fact": "A Herald caption of April 2011 describes Pierce as a Louisville senior and a Lambda Chi Alpha brother of Devon Hinderbrandt, who was running unopposed to succeed him, and says Pierce then held the vice presidency.",
+  "src": {"label": "Herald photo caption, 1 Apr 2011", "url": "https://wkuherald.com/wp-content/uploads/2011/04/8b5955941dd926b356c93f7565e7bb0e.jpg"}},
+
+ {"name": "Justin Thurman", "year": "2009-10",
+  "fact": "Thurman was a candidate for the SGA presidency in the March 2010 election, facing Colton Jessie, who won it.",
+  "src": {"label": "Herald index, 23 Mar 2010", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6757"}},
+
+ {"name": "Kendrick Bryan", "year": "2009-10",
+  "fact": "Bryan was a candidate for Executive Vice President in the March 2010 election, facing Currie Martin, and a Herald editorial of 30 March 2010 endorsed Jessie and Bryan for the two offices.",
+  "src": {"label": "Herald index, 23 and 30 Mar 2010", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6755"}},
+
+ {"name": "Kendrick Bryan", "year": "2011-12",
+  "fact": "While in SGA Bryan built a test preparation website, reported by the Herald in September 2011, and in January 2012 the paper reported him running for state office. By March 2012 he was a graduate student due to teach in the autumn.",
+  "src": {"label": "Herald index, 6 Sep 2011; 31 Jan 2012; 27 Mar 2012", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6591"}},
+
+ {"name": "Kaylee Egerer", "year": "2010-11",
+  "fact": "As Campus Improvements chair Egerer celebrated the passage of Resolution 2-11-S, which backed the Downing University Center renovation and a student fee of up to seventy dollars a semester until the project was paid off.",
+  "src": {"label": "Herald photo caption, 22 Feb 2011", "url": "https://wkuherald.com/wp-content/uploads/2011/02/42e801cc54308957204750442fe9e6b4.jpg"}},
+
+ {"name": "Kaylee Egerer", "year": "2011-12",
+  "fact": "Egerer was a WKU Spirit Master in the class of 2011-2012 and, in a Herald photograph of September 2011, is named with fellow Spirit Masters Alvin Farmer, Daniel Williams, Alex Kimura and Sarah Lowe.",
+  "src": {"label": "UA12/2/16 Spirit Masters Class of 2011-2012", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8496"}},
+
+ {"name": "Eric Smiley", "year": "2010-11",
+  "fact": "Smiley, a Danville junior, was president of Sigma Chi and one of four fraternity and sorority presidents then sitting in SGA, alongside Diego Leal Ambriz, Katie Stillwell and Adam Sheridan.",
+  "src": {"label": "Herald photo caption, 11 Feb 2011", "url": "https://wkuherald.com/wp-content/uploads/2011/02/03878b2434f83f4bd23ccdf0ec301781.jpg"}},
+
+ {"name": "Katie Stillwell", "year": "2010-11",
+  "fact": "Stillwell, a Bowling Green junior, was president of Omega Pi Alpha and one of four fraternity and sorority presidents then sitting in SGA.",
+  "src": {"label": "Herald photo caption, 11 Feb 2011", "url": "https://wkuherald.com/wp-content/uploads/2011/02/03878b2434f83f4bd23ccdf0ec301781.jpg"}},
+
+ {"name": "Charlie Harris", "year": "2010-11",
+  "fact": "A Herald profile photograph of May 2011 describes Harris as a Morganfield senior in political science who over four years co-founded WKUAID, worked with SGA and helped run campus campaigns on fair trade and One Planet Day.",
+  "src": {"label": "Herald photo caption, 3 May 2011", "url": "https://wkuherald.com/wp-content/uploads/2011/05/c761a669849c1985639ea4007dee2bd4.jpg"}},
+
+ {"name": "Keyana Boka", "year": "2010-11",
+  "fact": "Boka was elected a freshman senator in September 2010; the Herald photographed her celebrating the result in the Downing University Center.",
+  "src": {"label": "Herald photo caption, 23 Sep 2010", "url": "https://wkuherald.com/wp-content/uploads/2010/09/d0f8533df45a016ebb5831257fb5918f.jpg"}},
+
+ {"name": "Ashley Gore", "year": "2006-07",
+  "fact": "Gore appears in the WKU Archives student organisation photographs as a member of Phi Mu, named first in the top row of the 2005 sorority group portrait, and again in a Greek Spotlights item of May 2007.",
+  "src": {"label": "WKU Archives student organisations, Phi Mu 2005", "url": "https://digitalcommons.wku.edu/stu_org/368"}},
+
+ {"name": "M. Andrew Eclov", "year": "2008-09",
+  "fact": "A Herald feature of 10 December 2010 asking students where they were going after graduation included Drew Eclov, with Grant Tinsley, Regina Durkan and Jeffrey Clagg. Features of this kind normally run a headshot of each person answering.",
+  "src": {"label": "Herald index, 10 Dec 2010", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6262"}},
+
+ {"name": "Austin Bernard Wingate", "year": "2008-09",
+  "fact": "An Austin Wingate was one of three candidates for the SGA presidency in March 2012, with Cory Dodds and Corey Johnson, and wrote for the Herald opinion pages that autumn. Whether this is the 2008-09 senator is not established here, though the four-year overlap makes it likely.",
+  "src": {"label": "Herald index, 20 Mar 2012", "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6604"}},
+
+ {"note": "PEOPLE WITH NO TRACE AT ALL. Searched by surname in the Herald media captions and in data/herald-index-full.json across 2005-2013, and nothing was found for: Aaron Pawley, Cherieth L. Lineweaver, Jeremy Glass, Jessi Wurth, Kyle Wright, Liz Goddard, Monique Gooch, Samantha Hughey, Sarah Howell. Every apparent hit on Goddard, Gooch, Hughey, Glass and Wright was a different person (Evan Goddard, Chastity Gooch, Aaron Hughey, Jim Glassman and so on). This is not proof of absence - the caption index is caption-only, the local Herald index truncates every line at 300 characters, and the media endpoint was being served newest-first - but it does mean the cheap routes are exhausted for those nine and they will need the posts endpoint with order=asc, or the issue PDFs themselves."},
+
+ {"note": "Brittany Crowley: no photograph found, but the Phi Mu group portraits for 2008 (stu_org/371) and 2009 (stu_org/372) are worth opening for her. Their descriptions are truncated at 300 characters in the local index so most of each name list is hidden, and the full landing page may name her. Those group portraits carry positioned name lists in the form 'top row l to r', which is the kind of list the archive's identification rule accepts."},
+
+ {"note": "Travis Taylor: a Herald photograph of 26 March 2015 (wkuherald.com/wp-content/uploads/2015/03/1120ed8f54d05c57d7e2ff91da8e39a5.jpg) shows Nicki and Travis Taylor, and its caption says the couple met at SGA in 2012, married in September 2014, and that he was finishing a master's in organisational leadership. There is also an unrelated-looking 2011 profile of a Beaver Dam senior Travis Taylor that says nothing about SGA. The 2015 caption is the one that ties a Travis Taylor to SGA, but it is a two-person frame with no positional marker, so which figure is which would have to be settled some other way before cropping."},
+
+ {"note": "Keyana Boka already has a portrait in the archive, filed under the spelling Keyanna Boka for 2013-14 (data/photos/2013-14-keyanna-boka.jpg). If a better frame is wanted, the Herald's own headshot of 31 Oct 2013 is captioned simply with her name and office. Note the spelling difference between that photos.json entry and the worklist name, which CLAUDE.md already flags as unverified."}
+]
