@@ -13,5 +13,50 @@
    "label": "WKU Office of Admissions, Admissions Ambassadors page (wku.edu), headshot labelled Reed Breunig (file matthew_breunig132.jpg). Cross-checked against the WKU News photograph of the 2022 Coming Home King crowning, captioned \"Reed Breunig (center)\" (wku.edu/news article 10275): same face. Breunig is an uncommon surname and both pages are WKU records of the same student in the same period.",
    "url": "https://www.wku.edu/admissions/student_staff/"
   }
+ },
+ {
+  "year": "2019-20",
+  "name": "Aubrey Kelley",
+  "file": "2019-20-aubrey-kelley.jpg",
+  "replaces": null,
+  "width": 284,
+  "height": 360,
+  "why": "A posed WKU portrait of her alone, smiling and full-face, cropped from the landscape frame WKU ran; the only real portrait of her on a WKU site.",
+  "caption_quote": "Mahurin Honors College Student Aubrey Kelley has been accepted into Columbia Law School.",
+  "quality": "Source frame is 500x360; the crop is 284x360, not upscaled.",
+  "src": {
+   "label": "WKU Mahurin Honors College news, \"Mahurin Honors College student Aubrey Kelley accepted into Columbia Law School\" (article 10212). The same face appears on WKU's Political Science student profile card printed with her name, which records that she served as Chief of Staff in the Student Government Association (wku.edu/political-science/aubreykelleystudent.php).",
+   "url": "https://www.wku.edu/honors/news/index.php?view=article&articleid=10212"
+  }
+ },
+ {
+  "year": "2021-22",
+  "name": "Meghan Pierce",
+  "file": "2021-22-meghan-pierce.jpg",
+  "replaces": null,
+  "width": 453,
+  "height": 681,
+  "why": "The single photograph in WKU Modern Languages' two-page student profile of her, a sharp posed portrait of her alone; the Herald holds no photograph of her.",
+  "caption_quote": "Meghan Pierce, International Affairs and Arabic, Class of 2024",
+  "quality": "453x681 as embedded in the WKU PDF; extracted, not upscaled or re-cropped.",
+  "src": {
+   "label": "WKU Department of Modern Languages student profile, \"Meghan Pierce, International Affairs and Arabic, Class of 2024\", written spring 2022. The profile runs two pages and carries exactly one photograph of a person. Identification is by name plus fit: the profile's Pierce is a Bowling Green Gatton Academy graduate in her second year in spring 2022 and class of 2024, which matches the SGA member's run of 2021-22 to 2023-24, and explains her sitting as Senior Senator in 2021-22, Gatton graduates entering WKU with junior standing.",
+   "url": "https://www.wku.edu/modernlanguages/student_profiles/pierce-morgan-2024-finalfinal.pdf"
+  }
+ },
+ {
+  "year": "2021-22",
+  "name": "Parker Raybourne",
+  "file": "2021-22-parker-raybourne.jpg",
+  "replaces": null,
+  "width": 500,
+  "height": 402,
+  "why": "A studio headshot, sharp and full-face, run by WKU with its announcement of his Fulbright; the Fulbright strip along the foot has been cropped away.",
+  "caption_quote": "Parker Raybourne '22 Awarded Fulbright US Student Grant",
+  "quality": "Source frame 500x500 including a Fulbright banner; the portrait crop is 500x402, not upscaled.",
+  "src": {
+   "label": "WKU News, \"Parker Raybourne '22 Awarded Fulbright US Student Grant\" (article 11288). The article is about him alone and carries one photograph, and its text records that he held the offices of Senator and Chief of Staff in the Student Government Association.",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=11288"
+  }
  }
 ]

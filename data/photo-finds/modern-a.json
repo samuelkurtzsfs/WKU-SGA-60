@@ -93,5 +93,134 @@
    "label": "College Heights Herald, 26 Mar 2015, feature on Nicki and Travis Taylor, photographed in the SGA senate chambers",
    "url": "https://wkuherald.com/wp-content/uploads/2015/03/1120ed8f54d05c57d7e2ff91da8e39a5.jpg"
   }
+ },
+ {
+  "year": "2006-07",
+  "name": "Ashley Gore",
+  "file": "2006-07-ashley-gore.jpg",
+  "replaces": null,
+  "width": 190,
+  "height": 242,
+  "quality": "cut from a chapter composite scanned at 3034 pixels wide, so the face is only about 120 pixels across",
+  "id_confidence": "inferred - editor should confirm before publishing",
+  "why": "a studio portrait taken for the 2006-07 Phi Mu composite, the year she was SGA chief of staff",
+  "caption_quote": "ASHLEY GORE (printed under the portrait on the composite)",
+  "identification": "Her name is printed on the composite directly beneath the oval, so no counting of rows is involved. NOT independently tied to SGA: the link is name plus enrolment window - she is on the Phi Mu composites for 2004, 2005, 2006 and 2007, which brackets her SGA service in 2006-07 and 2007-08.",
+  "src": {
+   "label": "WKU Archives UA1C11/105/30, Phi Mu Composite 2006-2007",
+   "url": "https://digitalcommons.wku.edu/stu_org/370"
+  }
+ },
+ {
+  "year": "2013-14",
+  "name": "Ashlee Manley",
+  "file": "2013-14-ashlee-manley.jpg",
+  "replaces": null,
+  "width": 1010,
+  "height": 1606,
+  "why": "a professional studio portrait whose facing bio names her SGA offices outright, so the identification needs no inference",
+  "caption_quote": "Ashlee Manley, Spirit Master",
+  "identification": "Named above the portrait on a two-portrait spread; hers is the right-hand photograph, Alyson Manley's the left, matching the booklet's [photo][text] | [text][photo] layout. The bio settles it: 'She has also been a Senator and Legislative Research Chair for the Student Government Association', and 'President of Phi Mu Sorority', which matches the office printed under her face on the 2013-14 Phi Mu composite.",
+  "src": {
+   "label": "WKU Archives UA12/2/16, Spirit Masters Class of 2014-2015, p. 13",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8499"
+  },
+  "also_seen": "WKU Archives UA1C11/105/37, Phi Mu Composite 2013-2014, https://digitalcommons.wku.edu/stu_org/377"
+ },
+ {
+  "year": "2012-13",
+  "name": "Christopher Costa",
+  "file": "2012-13-christopher-costa.jpg",
+  "replaces": null,
+  "width": 510,
+  "height": 770,
+  "quality": "black and white, cut from a newspaper page scan, so it carries halftone grain",
+  "why": "a proper head-and-shoulders mugshot run beside the story announcing his election as speaker",
+  "caption_quote": "CHRISTOPHER COSTA",
+  "identification": "The mugshot is captioned with his name and sits in the column of the story 'Costa elected as SGA speaker of the senate', which calls him 'Bowling Green sophomore Christopher Costa, currently an SGA senator'.",
+  "src": {
+   "label": "College Heights Herald 87, 20 April 2012, p. 7",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6552"
+  }
+ },
+ {
+  "year": "2009-10",
+  "name": "Kendrick Bryan",
+  "file": "2009-10-kendrick-bryan.jpg",
+  "replaces": null,
+  "width": 720,
+  "height": 974,
+  "quality": "black and white, cut from a newspaper page scan",
+  "why": "a proper studio mugshot run with the paper's candidate profile, and the only portrait of him in the archive",
+  "caption_quote": "KENDRICK BRYAN",
+  "identification": "The mugshot is captioned with his name and heads the panel 'Candidates for SGA executive vice president', whose standfirst reads 'Elizabethtown graduate student Kendrick Bryan is running for executive vice president. Bryan is the current [director of] Academic and Student Affairs.'",
+  "src": {
+   "label": "College Heights Herald 85:39, 23 March 2010, p. 5",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6757"
+  }
+ },
+ {
+  "year": "2011-12",
+  "name": "Devon Hilderbrandt",
+  "file": "2011-12-devon-hilderbrandt.jpg",
+  "replaces": null,
+  "width": 360,
+  "height": 450,
+  "quality": "cropped from a wide two-person frame, so the face is about 150 pixels across",
+  "why": "the only photograph of him in the archive, taken the week he stood unopposed for the office he then held",
+  "caption_quote": "Bardstown sophomore Devon Hinderbrandt (left) is running unopposed for Administrative Vice President",
+  "identification": "Two people in the frame and the caption places him at the left; the man at the right is named as Wade Pierce, the sitting vice president. The Herald spells the surname Hinderbrandt, which is why a search on Hilderbrandt finds nothing.",
+  "src": {
+   "label": "College Heights Herald, 1 April 2011, 'SGA executive passes post to fraternity brother'",
+   "url": "https://wkuherald.com/51747/news/sga-executive-passes-post-to-fraternity-brother/"
+  }
+ },
+ {
+  "year": "2014-15",
+  "name": "KJ Hall",
+  "file": "2014-15-kj-hall.jpg",
+  "replaces": null,
+  "width": 960,
+  "height": 1613,
+  "why": "a professional studio portrait from the Spirit Masters booklet for exactly the year she was SGA's director of public relations",
+  "caption_quote": "Katherine “KJ” Hall, Spirit Master",
+  "identification": "Named directly above the portrait, and the facing bio settles it beyond doubt: 'Serving as the Director of Public Relations for the WKU Student Government Association, KJ...'. It also gives her as a sophomore from Elizabethtown reading public relations and Chinese.",
+  "src": {
+   "label": "WKU Archives UA12/2/16, Spirit Masters Class of 2014-2015, p. 11",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8499"
+  }
+ },
+ {
+  "year": "2008-09",
+  "name": "Nathan J. Eaton",
+  "file": "2008-09-nathan-j-eaton.jpg",
+  "replaces": null,
+  "width": 436,
+  "height": 592,
+  "quality": "a small front-page mugshot, about 440 pixels across at 400 dpi off the page scan",
+  "why": "a colour head-and-shoulders mugshot, the only photograph of him in the archive",
+  "caption_quote": "Eaton",
+  "identification": "Labelled 'Eaton' under the picture, in the left column of the front-page story 'Eaton, Gilley run for open regent seat', which names the candidates as 'Fairdale senior Nate Eaton and Pineville senior Reagan Gilley'. The Q&A inside names him as SGA speaker of the senate.",
+  "src": {
+   "label": "College Heights Herald 84:34, 24 February 2009, front page",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6719"
+  }
+ },
+ {
+  "year": "2008-09",
+  "name": "M. Andrew Eclov",
+  "file": "2008-09-m-andrew-eclov.jpg",
+  "replaces": null,
+  "width": 307,
+  "height": 518,
+  "quality": "a small black and white newspaper mugshot, about 300 pixels across at 400 dpi",
+  "id_confidence": "inferred - editor should confirm before publishing",
+  "why": "the only photograph of him in the archive, and a straight head-and-shoulders frame",
+  "caption_quote": "ECLOV",
+  "identification": "Labelled ECLOV under the picture in a graduating-seniors feature: 'Lexington senior Drew Eclov was just accepted into graduate school at the American University in Washington, D.C.' NOT independently tied to SGA - the link is the rare surname, the given name Drew for Andrew, and an enrolment window that covers his 2008-09 term.",
+  "src": {
+   "label": "College Heights Herald 86:27, 10 December 2010, p. 7",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6262"
+  }
  }
 ]
