@@ -129,5 +129,35 @@
    "label": "1987 Talisman, p. 359, freshman class portraits (row 6, fourth of six). The row's six portraits match its six printed names in order, ANDREA SMITH to RHONDA SNYDER, and the pattern of the faces, one woman then three men then two women, matches the pattern of the names exactly. The volume's index carries one student of the name, \"Smith, Eddie Dee 359\", among some fifty Smiths; that this freshman is the Congress member of 1988-89 rests on the given name being unique in the volume, not on a caption tying him to student government.",
    "url": "https://archive.org/details/talisman1987west/page/n362/mode/1up"
   }
+ },
+ {
+  "year": "1988-89",
+  "name": "Dana Baith",
+  "file": "1986-87-dana-baith.jpg",
+  "replaces": null,
+  "width": 152,
+  "height": 170,
+  "why": "Very small and soft, cut from a seventeen-man fraternity group photograph printed a quarter page wide, with a neighbour's shoulder at the left edge. Taken with it because it is the only photograph of the name in either volume the archive can reach freely, and he has no class portrait in the 1987 index.",
+  "caption_quote": "SECOND ROW: Steven Tays, Shane McPherson, Rick Thurby, Dana Baith, Bill Downs",
+  "quality": "small, group crop",
+  "src": {
+   "label": "1987 Talisman, p. 182, right-hand Alpha Gamma Rho group photograph, fourth of five in the second row. The photograph holds five, five and seven faces in its three tiers, matching the printed 5-5-7 name list exactly. The volume's index carries one student of the surname, \"Baith, Dana Len 182\", so the fraternity member and the 1988-89 Rules and Elections chairman are matched on a rare name rather than on any caption tying him to student government.",
+   "url": "https://archive.org/details/talisman1987west/page/n185/mode/1up"
+  }
+ },
+ {
+  "year": "1988-89",
+  "name": "Kelly Neill",
+  "file": "1985-86-kelly-neill.jpg",
+  "replaces": null,
+  "width": 132,
+  "height": 150,
+  "why": "The weakest find in this block and offered as better than nothing. The face is tiny, cut from a sixteen-woman sorority photograph printed a third of a page wide, and the link to the Congress member of 1988-89 is her name and nothing else. She is in neither the 1986 nor the 1987 class portrait grids and has no other appearance in either volume.",
+  "caption_quote": "BACK ROW: Wendy Combs, Kelly Neill, Amy Gardner, Diane Himes",
+  "quality": "very small, group crop, person-match on name alone",
+  "src": {
+   "label": "1986 Talisman, p. 277, third Kappa Delta group photograph, second of four in the back row. The photograph holds six, six and four faces, matching the printed 6-6-4 name list exactly. The volume's index carries one student of the name, \"Neill, Kelly D. 277\", and nothing in either volume ties her to student government.",
+   "url": "https://archive.org/details/talisman1986west/page/n280/mode/1up"
+  }
  }
 ]

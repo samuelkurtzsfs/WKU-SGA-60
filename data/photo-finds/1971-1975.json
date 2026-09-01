@@ -9,7 +9,7 @@
   "why": "Her studio senior portrait, the only posed frame of her in the volume; the alternative is a candid from a dormitory feature.",
   "caption_quote": "CYNTHIA S. REINERT, Mathematics, Pewee Valley",
   "src": {
-   "label": "1976 Talisman, p. 364",
+   "label": "1976 Talisman, p. 364, senior portraits",
    "url": "https://archive.org/details/talisman1976west"
   },
   "note": "Fifth and last name in the right-hand list for the bottom row of five portraits on p. 364, and fifth portrait in that row. The list runs in printed order and the row matches it by sex (Donna Read f, Ray Read m, Charles Redmon m, Ralph Reid m, Cynthia Reinert f). Tied to the SGA roster by the 1976 index, Reinert, Cynthia Sue 24-25, 63, 364, page 63 being the ASG attendance roll that lists Cindy Reinert."
@@ -21,13 +21,14 @@
   "replaces": null,
   "width": 224,
   "height": 270,
-  "why": "Her studio junior portrait; the only other frames of her in the volume are group photographs where the face is smaller.",
+  "why": "Her studio junior portrait; the only other frames of her in the volume are group photographs where the face is smaller. The junior grid prints small, so the crop is 224 pixels wide.",
   "caption_quote": "SHERRY L. CASEBIER, Louisville",
   "src": {
-   "label": "1976 Talisman, p. 377",
+   "label": "1976 Talisman, p. 377, junior portraits",
    "url": "https://archive.org/details/talisman1976west"
   },
-  "note": "Junior grid, nine portraits to a row and nine names to a name block. Casebier is the ninth and last name of the second block, so the rightmost portrait of the second row; the row matches the list by sex throughout (Cardwell f, Carnall m, Carpenter f, Carrico f, Carson m, G. Carter m, M. Carter m, Casada f, Casebier f). The index carries two Sherry Casebiers, and only Sherry Lee is given page 63, the ASG attendance roll that lists Sherry Casebier."
+  "note": "Junior grid, nine portraits to a row and nine names to a name block. Casebier is the ninth and last name of the second block, so the rightmost portrait of the second row; the row matches the list by sex throughout (Cardwell f, Carnall m, Carpenter f, Carrico f, Carson m, G. Carter m, M. Carter m, Casada f, Casebier f). The index carries two Sherry Casebiers, and only Sherry Lee is given page 63, the ASG attendance roll that lists Sherry Casebier.",
+  "quality": "small"
  },
  {
   "year": "1975-76",
@@ -39,7 +40,7 @@
   "why": "His studio senior portrait, sharper and better lit than the Talisman staff working shot on p. 318.",
   "caption_quote": "WENDELL L. BRATCHER, Elem. Ed., Louisville",
   "src": {
-   "label": "1976 Talisman, p. 338",
+   "label": "1976 Talisman, p. 338, senior portraits",
    "url": "https://archive.org/details/talisman1976west"
   },
   "note": "Fourth of the five names in the last block on p. 338, so the fourth portrait in the bottom row of five. The row matches the list by sex (Brady m, Branham f, P. Bratcher m, W. Bratcher m, Bray f). Paul J. Bratcher, a different man, is the portrait immediately to his left. The index entry Bratcher, Wendell Lee 63, 260, 318, 338 ties this portrait to page 63, the ASG attendance roll listing Wendell Bratcher."
@@ -232,5 +233,145 @@
   },
   "quality": "small",
   "note": "Freshman grid, six portraits to a row and six names to a block. Coleman is the fourth name of the first block, so the fourth portrait of the top row, and the row matches the list by sex (Cole m, L. Coleman f, M. R. Coleman f, M. L. Coleman f, Coley m, Collard f). Three Colemans sit on this page; the index entry Coleman, Mary Louise, 226, 227, 273, 397 is the only one carrying p. 273, the group caption that names Mary Coleman, so Mary L. is the right one of the three."
+ },
+ {
+  "year": "1971-72",
+  "name": "Candy Mason",
+  "file": "1971-72-candy-mason.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 340,
+  "why": "The only photograph of her in the 1971, 1972, 1973 or 1974 volumes. She sat for no class portrait, so this is a crop from the Panhellenic Council group on p. 273.",
+  "caption_quote": "Row 1 ... Patty Skaggs, Candy Mason, Cheryl Mack",
+  "src": {
+   "label": "1972 Talisman, p. 273",
+   "url": "https://archive.org/details/talisman1972west"
+  },
+  "quality": "group crop",
+  "note": "The caption gives the group in two named rows, Row 1 of ten and Row 2 of thirteen, and the photograph has exactly ten seated in front and thirteen standing behind, so Row 1 is the front. Mason is the ninth of the ten front names, so the ninth face from the left in the front group. The left-to-right order was checked against three faces already cut from this block: Cindy Coslett is Row 2 name three and the third standing face is her long-haired blonde senior portrait; Mary Coleman is Row 2 name ten and the tenth standing face is the woman with the large afro of her freshman portrait; Clair Parrish is Row 1 name five and the fifth seated face is the dark bob of her sophomore portrait. The 1972 index gives Mason, Candace Carla only p. 234."
+ },
+ {
+  "year": "1971-72",
+  "name": "Julie Bush",
+  "file": "1971-72-julie-bush.jpg",
+  "replaces": null,
+  "width": 230,
+  "height": 330,
+  "why": "The only usable photograph of her in the 1971, 1972, 1973 or 1974 volumes. She sat for no class portrait, so this is a crop from the Panhellenic Council group on p. 273.",
+  "caption_quote": "Row 2 ... Janice Lancaster, Julie Bush, Nancy Manar",
+  "src": {
+   "label": "1972 Talisman, p. 273",
+   "url": "https://archive.org/details/talisman1972west"
+  },
+  "quality": "group crop",
+  "note": "The caption gives the group in two named rows, Row 1 of ten and Row 2 of thirteen, and the photograph has exactly ten seated in front and thirteen standing behind, so Row 2 is the standing row. Bush is the sixth of its thirteen names, so the sixth standing face from the left. The left-to-right order was checked against three faces already cut from this block: Cindy Coslett is Row 2 name three and the third standing face is her long-haired blonde senior portrait; Mary Coleman is Row 2 name ten and the tenth standing face is the woman with the large afro of her freshman portrait; Clair Parrish is Row 1 name five and the fifth seated face is the dark bob of her sophomore portrait. The 1972 index gives Bush, Julie Ann only pp. 236 and 273."
+ },
+ {
+  "year": "1972-73",
+  "name": "Susan Stuebing",
+  "file": "1972-73-susan-stuebing.jpg",
+  "replaces": null,
+  "width": 336,
+  "height": 515,
+  "why": "Her studio senior portrait. The alternative is a Who is Who candid on p. 224 labelled Sue Steubing, where she is reading with her head down and her eyes are not visible.",
+  "caption_quote": "SUSAN G. STUEBING, History, Cincinnati, Ohio",
+  "src": {
+   "label": "1973 Talisman, p. 390, senior portraits",
+   "url": "https://archive.org/details/talisman1973west"
+  },
+  "note": "First of the five names in the sixth block on p. 390, so the first portrait in that row of five, and the row matches the list by sex (Stuebing f, Sturgeon f, Sublett f, G. Sullivan m, J. Sullivan f). Confirmed as the right Stuebing by the Who is Who page 224 of the same volume, which says of Sue Stuebing that this senior history and economics major from Cincinnati has been a member of the Associated Students and its academic council, the office the roster gives her. The index entry Stuebing, Susan Gayle, 224, 262, 263, 390 is the only Stuebing in the volume."
+ },
+ {
+  "year": "1972-73",
+  "name": "Ronda Talley",
+  "file": "1972-73-ronda-talley.jpg",
+  "replaces": null,
+  "width": 327,
+  "height": 488,
+  "why": "Her studio senior portrait, the best-lit frame of her in the volume; the others are organization group photographs.",
+  "caption_quote": "RONDA C. TALLEY, Elementary Ed., Louisville",
+  "src": {
+   "label": "1973 Talisman, p. 390, senior portraits",
+   "url": "https://archive.org/details/talisman1973west"
+  },
+  "note": "Fifth and last of the five names in the seventh block on p. 390, so the rightmost portrait in that row of five, and the row matches the list by sex (Swearingen f, Swift m, Sydnor m, Tabb m, Talley f). The index entry Talley, Ronda Carol, 230, 284, 289, 390 is the only Ronda Talley in the volume."
+ },
+ {
+  "year": "1973-74",
+  "name": "Christy Kay Vogt",
+  "file": "1973-74-christy-kay-vogt.jpg",
+  "replaces": null,
+  "width": 196,
+  "height": 244,
+  "why": "Her studio freshman portrait. The other frame, a two-person library photograph on p. 410, is captioned with both freshman class officers but gives no left or right, so it cannot be used to tell her from her fellow officer. The freshman grid prints small, so this is 196 pixels wide.",
+  "caption_quote": "CHRISTY VOGT",
+  "src": {
+   "label": "1974 Talisman, p. 429, freshman portraits",
+   "url": "https://archive.org/details/talisman1974west"
+  },
+  "quality": "small",
+  "note": "Freshman grid, nine portraits to a row and nine names to a block. Vogt is the second name of the last block on p. 429, so the second portrait of the bottom row, and the row matches the list by sex right across (Viterisi f, Vogt f, Vonderleith f, Waddy m, Wade f, Wadlington m, Wagner f, Wakefield m, Walden f). The index entry Vogt, Christy Kay 410, 414, 429 is the only Christy Vogt in the volume, and p. 410 names Christy Kay Vogt as freshman class vice-president, the office the roster gives her for 1973-74."
+ },
+ {
+  "year": "1972-73",
+  "name": "Larry Daniel",
+  "file": "1972-73-larry-daniel.jpg",
+  "replaces": null,
+  "width": 328,
+  "height": 478,
+  "why": "His studio senior portrait, the best-lit frame of him in the volume; the others are organization group photographs.",
+  "caption_quote": "LARRY W. DANIEL, Biology, Beaver Dam",
+  "src": {
+   "label": "1973 Talisman, p. 362, senior portraits",
+   "url": "https://archive.org/details/talisman1973west"
+  },
+  "note": "First of the five names in the fourth block on p. 362, so the first portrait in that row of five, and the row matches the list by sex (L. Daniel m, L. D. Daniel f, Darby f, Darnall m, Davenport m). Lucy D. Daniel, a different student, is the portrait immediately to his right. The index entry Daniel, Larry Wayne, 264, 265, 337, 362 is the only Larry Daniel in the volume."
+ },
+ {
+  "year": "1976-77",
+  "name": "John Evans",
+  "file": "1976-77-john-evans.jpg",
+  "replaces": null,
+  "width": 342,
+  "height": 519,
+  "why": "His studio senior portrait, and the larger of his two grid portraits; the 1976 junior grid prints the same man at less than half this size.",
+  "caption_quote": "JOHN D. EVANS, JR., Admin. Service, Prestonsburg",
+  "src": {
+   "label": "1977 Talisman, p. 339, senior portraits",
+   "url": "https://archive.org/details/talisman1977west"
+  },
+  "note": "Fifth and last of the five names in the last block on p. 339, so the rightmost portrait in the bottom row of five, and the row matches the list by sex (Emmitt f, Erskine m, Essling f, Estridge m, Evans m). Tied to student government by the 1976 index, which reads Evans, John David Jr. 63, 308, 378, page 63 being the ASG attendance roll that lists John Evans; p. 378 of that volume prints him in the junior grid as JOHN D. EVANS, Prestonsburg, the same hometown as this senior listing. He also served 1975-76."
+ },
+ {
+  "year": "1975-76",
+  "name": "Huston Monarch",
+  "file": "1975-76-huston-monarch.jpg",
+  "replaces": null,
+  "width": 196,
+  "height": 238,
+  "why": "His studio sophomore portrait, and the only photograph of him in any volume from 1973 to 1978; the sophomore grid prints small, so the crop is 196 pixels wide.",
+  "caption_quote": "HUSTON MONARCH",
+  "src": {
+   "label": "1974 Talisman, p. 404, sophomore portraits",
+   "url": "https://archive.org/details/talisman1974west"
+  },
+  "quality": "small",
+  "note": "Sophomore grid, nine portraits to a row and nine names to a block. Monarch is the seventh name of the last block on p. 404, so the seventh portrait of the bottom row, and the row matches the list by sex right across (Milliken m, Mills m, Mitchell m, Moffett m, Moffitt f, Moisan f, Monarch m, Montell f, Montgomery f). Tied to student government by the shared index name: the 1974 index reads Monarch, Gilbert Huston 404 and the 1976 index reads Monarch, Gilbert Huston 63, page 63 being the ASG attendance roll that lists Huston Monarch. He sat for no portrait in the 1975 or 1976 volumes."
+ },
+ {
+  "year": "1974-75",
+  "name": "Stan McDivitt",
+  "file": "1974-75-stan-mcdivitt.jpg",
+  "replaces": null,
+  "width": 261,
+  "height": 349,
+  "why": "His studio sophomore portrait, and the only photograph of him in any volume from 1973 to 1978. It predates his ASG service by two years, but the 1975 and 1976 volumes name him only in prose and print no picture of him.",
+  "caption_quote": "STAN C. MCDIVITT",
+  "src": {
+   "label": "1973 Talisman, p. 428, sophomore portraits",
+   "url": "https://archive.org/details/talisman1973west"
+  },
+  "quality": "small",
+  "note": "Sophomore grid, eight portraits to a row and eight names to a block. McDivitt is the seventh name of the first block on p. 428, so the seventh portrait of the top row, and the row matches the list by sex right across (McBride m, McCamish f, McClave f, B. McCoy f, M. McCoy m, S. McCoy f, McDivitt m, McDonald f). Tied to student government by the shared index name: the 1975 and 1976 indexes both read McDivitt, Stanley Curtis, the 1976 entry giving page 63, the ASG attendance roll that lists Stan McDivitt. The other McDivitt in these volumes is Norris Edwin Jr. He also served 1975-76."
  }
 ]

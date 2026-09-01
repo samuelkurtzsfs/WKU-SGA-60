@@ -1,1 +1,113 @@
-[]
+[
+ {
+  "year": "1993-94",
+  "name": "Scott Sivley",
+  "file": "1993-94-scott-sivley.jpg",
+  "replaces": null,
+  "width": 352,
+  "height": 516,
+  "why": "A real captioned head-and-shoulders portrait printed with the Herald's profile of him as a presidential candidate, taken in the year he was administrative vice-president. Sharp, well lit, looking at the camera.",
+  "caption_quote": "Scott Sivley",
+  "src": {
+   "label": "Herald 69:47, 5 Apr 1994, p. 3, \"SIVLEY: Candidate focuses on SGA experience\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7875"
+  }
+ },
+ {
+  "year": "1992-93",
+  "name": "Bert Blevins",
+  "file": "1992-93-bert-blevins.jpg",
+  "replaces": null,
+  "width": 106,
+  "height": 130,
+  "quality": "small",
+  "why": "A posed studio class portrait, front-facing and in focus, but the TopSCHOLAR scan of this volume is low resolution so the frame is only 106 by 130 pixels. No larger photograph of him was found; the volume's own SGA group photograph gives faces of about 18 pixels.",
+  "caption_quote": "Bert K. Blevins III, Newburgh, Ind.",
+  "src": {
+   "label": "1993 Talisman, p. 48, junior class portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
+  },
+  "how_identified": "Junior grid, left page: five columns by six rows, with the margin name list in blocks of five, one block per row. Blevins is the fifth and last name of the third block (Julie C. Ball, Kathy Ballard, Kathy Beasley, Gary Bickett, Bert K. Blevins III), so he is row three, column five. The block is alphabetical and its five names match the five faces in that row, whose sexes read female, female, female, male, male in the same order."
+ },
+ {
+  "year": "1997-98",
+  "name": "Chad Lewis",
+  "file": "1997-98-chad-lewis.jpg",
+  "replaces": null,
+  "width": 194,
+  "height": 274,
+  "quality": "soft",
+  "why": "Quarantined crop, now sourced and confirmed. A newspaper halftone mugshot, so it is coarse, but it is a real front-facing portrait and the only photograph of him found.",
+  "caption_quote": "Name: Chad Lewis Hometown: Scottsburg, Ind. Class: Junior Major: Accounting",
+  "src": {
+   "label": "Herald 73:50, 16 Apr 1998, p. 3, \"Race for SGA vice presidency heats up\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7980"
+  },
+  "how_identified": "The vice-presidential race panel sets each candidate's data block immediately to the left of that candidate's photograph. The first block is Laura Hancock, sophomore, chemistry, followed by a woman's photograph; the second is Chad Lewis, junior, accounting, followed by this man's photograph. The column running beside this frame carries Lewis's own quotation, \"Lewis said ...\". Held against the page image, the quarantined crop is the same frame, matching in halftone banding, pose and the dark mark at the top left corner.",
+  "was_unverified": true
+ },
+ {
+  "year": "1991-92",
+  "name": "Ryan James",
+  "file": "1991-92-ryan-james.jpg",
+  "replaces": null,
+  "width": 1180,
+  "height": 1450,
+  "quality": "soft",
+  "why": "A large, well exposed working photograph of him at the university president's desk on the day he held the job, in shirt and tie taking a call. Not a portrait: he is in profile with his head down, and no front-facing frame of him was found. The scan is 4848 by 7167, so the frame is big and clean.",
+  "caption_quote": "Nashville junior Ryan James switched roles with Meredith after winning the \"President for A Day\" raffle",
+  "src": {
+   "label": "Herald 67:25, 21 Nov 1991, p. 1, \"Trading places\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7776"
+  },
+  "how_identified": "The caption names only two people, Meredith and James, and describes this scene as the moment they swapped roles; the man pictured is the young one seated at the desk. Meredith is separately pictured and captioned twice in the same issue, on this page rubbing his eyes in an economics class and again in a mugshot on p. 3, and is an older man in glasses who is plainly not this person."
+ },
+ {
+  "year": "1991-92",
+  "name": "Eric Griggs",
+  "file": "1991-92-eric-griggs.jpg",
+  "replaces": null,
+  "width": 44,
+  "height": 54,
+  "quality": "group crop",
+  "why": "Only 44 by 54 pixels, cut from a twelve-person group photograph in a low resolution scan, and that is the whole problem with it. Recorded because it is the only face of him found anywhere and the identification is firm. Front-facing and in focus for what it is.",
+  "caption_quote": "Third Row: Melissa A. Maggard, Eric D. Griggs, Jennifer J. Jaggers",
+  "src": {
+   "label": "1992 Talisman, p. 180, Associated Student Government",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416"
+  },
+  "how_identified": "Twelve faces, and the caption lists twelve names in rows of five, four and three. The five lowest faces are the first row, and its stated order runs male, male, female, female, male, matching them, with Huma Ahsan fourth. The remaining seven split into a rear group of three and a middle group of four. Griggs is the middle name of the three-name third row, and the middle face of the rear three is the only man among them, which is this one."
+ },
+ {
+  "year": "1991-92",
+  "name": "Jennifer Jaggers",
+  "file": "1991-92-jennifer-jaggers.jpg",
+  "replaces": null,
+  "width": 44,
+  "height": 54,
+  "quality": "group crop",
+  "why": "Only 44 by 54 pixels, cut from a twelve-person group photograph in a low resolution scan. Kept because it is the only face of her found and she is clearly lit and smiling at the camera in it.",
+  "caption_quote": "Third Row: Melissa A. Maggard, Eric D. Griggs, Jennifer J. Jaggers",
+  "src": {
+   "label": "1992 Talisman, p. 180, Associated Student Government",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416"
+  },
+  "how_identified": "Same page and same photograph as Eric Griggs. Twelve faces against a caption of twelve names in rows of five, four and three. Jaggers is the last of the three names in the third row, and the rightmost of the three rearmost faces, a woman, which the caption's order requires."
+ },
+ {
+  "year": "1991-92",
+  "name": "Tom Springer",
+  "file": "1991-92-tom-springer.jpg",
+  "replaces": null,
+  "width": 44,
+  "height": 54,
+  "quality": "group crop",
+  "why": "Only 44 by 54 pixels, cut from a twelve-person group photograph in a low resolution scan. The one face of him found. He is front-facing and unobstructed, which is why this frame was taken rather than the Baptist Student Union group on p. 190 of the same volume, where he stands further back.",
+  "caption_quote": "Second Row: Nancy L. Rascoe, Mistianna Holcomb, Kathleen Young, Tom Springer",
+  "src": {
+   "label": "1992 Talisman, p. 180, Associated Student Government",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416"
+  },
+  "how_identified": "Same photograph as Griggs and Jaggers. Of the seven faces left once the five-strong first row is accounted for, three sit highest and are the third row; the other four are the second row. Springer is the fourth and last name of the second row and the rightmost of those four, and the only man among them, which the caption's three women and one man requires."
+ }
+]

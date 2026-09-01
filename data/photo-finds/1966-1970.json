@@ -71,20 +71,6 @@
  },
  {
   "year": "1970-71",
-  "name": "Earl Bush",
-  "file": "1970-71-earl-bush.jpg",
-  "replaces": null,
-  "width": 335,
-  "height": 467,
-  "why": "His senior studio portrait. A brother, Eddie Bush, sits in the next cell, so the identification rests on the printed activity line naming A.S. Rules and Elections, which only Earl carries, and on the back index putting only Hadley Earl Bush Jr. on p. 68.",
-  "caption_quote": "EARL BUSH, Augusta. Engineering Technology. Alpha Phi Omega; A.S., Rules and Elections",
-  "src": {
-   "label": "1971 Talisman, p. 165, senior portraits; six rows of four faces against six blocks of four alphabetical names, so EARL BUSH, twenty-third of twenty-four, is the third face in the sixth row, with EDDIE BUSH fourth",
-   "url": "https://archive.org/details/talisman1971west"
-  }
- },
- {
-  "year": "1970-71",
   "name": "Thomas Chance",
   "file": "1970-71-thomas-chance.jpg",
   "replaces": null,
@@ -109,6 +95,245 @@
   "src": {
    "label": "1971 Talisman, p. 140, senior portraits; seven rows of four faces against twenty-eight names in order, so PHILIP S. MYERS, the first name on the page, is the first face in the first row",
    "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Mark Barber",
+  "file": "1970-71-mark-barber.jpg",
+  "replaces": null,
+  "width": 230,
+  "height": 282,
+  "why": "His junior class portrait. Small, because the junior grid prints six to a row, but sharper and better lit than the only alternative, his figure in the nine-person Judicial Committee group on p. 68.",
+  "quality": "small",
+  "caption_quote": "MARK E. BARBER, Pompano Beach, Fla.",
+  "src": {
+   "label": "1971 Talisman, p. 179, junior portraits; ten rows of six faces against ten blocks of six names, so MARK E. BARBER, third name of the first block, is the third face in the first row. The back index entry Barber, Mark Elton, 68, 127, 179 ties this face to the Judicial Committee caption on p. 68",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Ken Bowman",
+  "file": "1970-71-ken-bowman.jpg",
+  "replaces": null,
+  "width": 230,
+  "height": 262,
+  "why": "His junior class portrait. Small, six to a row, but a clear front-on face; the same man appears at the left of the back row of the Rules and Elections group on p. 68, matching on fringe, ears and smile.",
+  "quality": "small",
+  "caption_quote": "KEN BOWMAN, Florence",
+  "src": {
+   "label": "1971 Talisman, p. 179, junior portraits; ten rows of six faces against ten blocks of six names, so KEN BOWMAN, second name of the seventh block, is the second face in the seventh row. Back index: Bowman, Kenneth Paul, 68, 92, 127, 178, 179",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Rick McClain",
+  "file": "1970-71-rick-mcclain.jpg",
+  "replaces": null,
+  "width": 224,
+  "height": 300,
+  "why": "His freshman class portrait. Small, six to a row, but front-on and well lit; the same man stands second from left in the back row of the Rules and Elections group on p. 68, matching on jaw, hairline and dark suit.",
+  "quality": "small",
+  "caption_quote": "RICHARD ERVIN McCLAIN, Louisville",
+  "src": {
+   "label": "1971 Talisman, p. 228, freshman portraits; ten rows of six faces against ten blocks of six names, so RICHARD ERVIN McCLAIN, fifth name of the eighth block, is the fifth face in the eighth row. Back index: McClain, Richard Ervin, 68, 228",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Earl Bush",
+  "file": "1970-71-earl-bush.jpg",
+  "replaces": null,
+  "width": 335,
+  "height": 467,
+  "why": "His senior studio portrait, identified from its own printed entry, which names the A.S. Rules and Elections seat. Recorded doubt for the editor: his brother Eddie Bush sits in the next cell, and the man captioned third in the back row of the p. 68 committee group has noticeably darker, thicker hair than either portrait. The first and second men in that back row, Bowman and McClain, both match their portraits, so the group order is sound and the discrepancy is unexplained. The portrait is published because its own caption names the office; a later pass may want to look again.",
+  "caption_quote": "EARL BUSH, Augusta. Engineering Technology. Alpha Phi Omega; A.S., Rules and Elections",
+  "src": {
+   "label": "1971 Talisman, p. 165, senior portraits; six rows of four faces against six blocks of four alphabetical names, so EARL BUSH, twenty-third of twenty-four, is the third face in the sixth row, with EDDIE BUSH fourth. Back index: Bush, Hadley Earl, Jr., 52, 68, 165; Bush, Hickman Edward, 52, 165 (not 68)",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Sam DeShazer",
+  "file": "1970-71-sam-deshazer.jpg",
+  "replaces": null,
+  "width": 300,
+  "height": 410,
+  "why": "Cropped from the Judicial Committee group, the only photograph of him in the volume; the back index lists Deshazer, Samuel Henry only on p. 68, so he sat for no class portrait. Face is small and slightly soft but clearly readable.",
+  "quality": "group crop",
+  "caption_quote": "Front Row: Sam DeShazer, Jeanne Jackson, Michael E. Freville, vice-chairman",
+  "src": {
+   "label": "1971 Talisman, p. 68, Judicial Committee group photograph; eight people in four and four, matching the caption. Front row reads left to right, so Sam DeShazer is the seated man at the far left. Order verified independently: the third and fourth figures I read as Freville and Eyler match the crops of those two already published in this archive from the same photograph",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1970-71",
+  "name": "Gary Whittington",
+  "file": "1970-71-gary-whittington.jpg",
+  "replaces": null,
+  "width": 280,
+  "height": 370,
+  "why": "Cropped from the Rules and Elections group, the best of only two photographs of him in the volume; the back index lists him on pp. 52 and 68 only, so he sat for no class portrait. Front-on and smiling, but small and softened by the halftone.",
+  "quality": "group crop",
+  "caption_quote": "Front Row: Phil Myers, Rita Highbaugh, Cathy Ashabraner, Alice Thomason, Gary Whittington",
+  "src": {
+   "label": "1971 Talisman, p. 68, Rules and Elections Committee group photograph; nine people in five and four, matching the caption. Front row reads left to right, so Gary Whittington is the seated young man at the right-hand end. Order verified: the first figure in that front row matches the senior portrait of Phil Myers on p. 140",
+   "url": "https://archive.org/details/talisman1971west"
+  }
+ },
+ {
+  "year": "1968-69",
+  "name": "Terry Gilpin",
+  "file": "1968-69-terry-gilpin.jpg",
+  "replaces": null,
+  "width": 335,
+  "height": 356,
+  "why": "Quarantined crop confirmed against the page and published unchanged. A dignified working photograph of him at his desk, and the only individual photograph of him in the volume. Soft because the TopSCHOLAR scan of this volume is about a quarter the linear resolution of the archive.org volumes.",
+  "quality": "soft",
+  "caption_quote": "Terry Gilpin, Vice President",
+  "src": {
+   "label": "1969 Talisman pt. 1, p. 96, Associated Students officers; the caption Terry Gilpin / Vice President is set immediately above this photograph, and the two other officer photographs on the page carry their own captions below them",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385/"
+  }
+ },
+ {
+  "year": "1968-69",
+  "name": "Tonii Rizzo",
+  "file": "1968-69-tonii-rizzo.jpg",
+  "replaces": null,
+  "width": 374,
+  "height": 312,
+  "why": "Quarantined crop confirmed against the page and published unchanged; it is framed slightly wider than the face so as to keep the desk nameplate reading TONII, which corroborates the printed caption. A working photograph at his desk, and the only individual photograph of him in the volume.",
+  "quality": "soft",
+  "caption_quote": "Toni Rizzo, Treasurer",
+  "src": {
+   "label": "1969 Talisman pt. 1, p. 96, Associated Students officers; the caption Toni Rizzo / Treasurer is set immediately below this photograph",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385/"
+  }
+ },
+ {
+  "year": "1968-69",
+  "name": "Chris Grau",
+  "file": "1968-69-chris-grau.jpg",
+  "replaces": null,
+  "width": 389,
+  "height": 303,
+  "why": "Quarantined crop confirmed against the page and published unchanged. A working photograph of her at the Associated Students office desk, in profile, and the only photograph of her in the volume.",
+  "quality": "soft",
+  "caption_quote": "Chris Grau, Office Secretary",
+  "src": {
+   "label": "1969 Talisman pt. 1, p. 96, Associated Students officers; the caption Chris Grau / Office Secretary sits to the right of this photograph. The note Not Pictured on the same page names only Becky Cooper, Secretary",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385/"
+  }
+ },
+ {
+  "year": "1969-70",
+  "name": "David Porter",
+  "file": "1969-70-david-porter.jpg",
+  "replaces": null,
+  "width": 295,
+  "height": 370,
+  "why": "Quarantined crop confirmed against the page and published unchanged; it is framed more tightly than the printed photograph, which runs on into the section heading. A working photograph of him at a desk, and the only individual photograph of him in the volume.",
+  "quality": "soft",
+  "caption_quote": "DAVID PORTER, Vice President",
+  "src": {
+   "label": "1970 Talisman pt. 1, p. 31, Associated Students officers; four photographs in two columns, each caption set against its own photograph. The caption DAVID PORTER, Vice President sits immediately above the lower left photograph. Reading verified: the upper left photograph, captioned LARRY ZIELKE, President below it, is the same frame this archive already publishes as Larry Zielke from this page",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/387/"
+  }
+ },
+ {
+  "year": "1969-70",
+  "name": "John Barra",
+  "file": "1969-70-john-barra.jpg",
+  "replaces": null,
+  "width": 335,
+  "height": 421,
+  "why": "Quarantined crop confirmed against the page and published unchanged. A working photograph, front on and well lit, and the only individual photograph of him in the volume.",
+  "quality": "soft",
+  "caption_quote": "JOHN BARRA, Treasurer",
+  "src": {
+   "label": "1970 Talisman pt. 1, p. 31, Associated Students officers; the caption JOHN BARRA, Treasurer is set immediately below the upper right photograph. Reading verified against the upper left photograph on the same page, captioned LARRY ZIELKE, President, which is the frame this archive already publishes as Zielke",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/387/"
+  }
+ },
+ {
+  "year": "1969-70",
+  "name": "Georgenna Sleamaker",
+  "file": "1969-70-georgenna-sleamaker.jpg",
+  "replaces": null,
+  "width": 353,
+  "height": 468,
+  "why": "Quarantined crop confirmed against the page and published unchanged. A working photograph of her reading at a desk; her face is turned down over the page, but it is the only individual photograph of her in the volume.",
+  "quality": "soft",
+  "caption_quote": "GEORGANNA SLEAMAKER, Secretary",
+  "src": {
+   "label": "1970 Talisman pt. 1, p. 31, Associated Students officers; the caption GEORGANNA SLEAMAKER, Secretary is set immediately above the lower right photograph. Reading verified against the upper left photograph on the same page, captioned LARRY ZIELKE, President, which is the frame this archive already publishes as Zielke",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/387/"
+  }
+ },
+ {
+  "year": "1967-68",
+  "name": "Ronald Beck",
+  "file": "1967-68-ronald-beck.jpg",
+  "replaces": null,
+  "width": 139,
+  "height": 187,
+  "why": "His officer portrait, a proper head-and-shoulders frame and much better than his figure in the twenty-person group photograph on the same page. Small because the officers run in a narrow single column and the TopSCHOLAR scan of this volume is low resolution; not upscaled.",
+  "quality": "small",
+  "caption_quote": "RONALD D. BECK, Vice President",
+  "src": {
+   "label": "1968 Talisman, p. 153, Associated Students; four officer portraits stacked in a column with the four captions listed below them in the same order, so RONALD D. BECK, Vice President is the second portrait down. Order verified two ways: the only woman named, Claudia L. Fowler, is third and the only woman pictured is third, and the top portrait is the frame this archive already publishes as William Menser from this page",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384/"
+  }
+ },
+ {
+  "year": "1967-68",
+  "name": "Claudia Fowler",
+  "file": "1967-68-claudia-fowler.jpg",
+  "replaces": null,
+  "width": 139,
+  "height": 184,
+  "why": "Her officer portrait, a proper head-and-shoulders frame and much better than her figure in the twenty-person group photograph on the same page. Small because the officers run in a narrow single column and the TopSCHOLAR scan of this volume is low resolution; not upscaled.",
+  "quality": "small",
+  "caption_quote": "CLAUDIA L. FOWLER, Secretary",
+  "src": {
+   "label": "1968 Talisman, p. 153, Associated Students; four officer portraits stacked in a column with the four captions listed below them in the same order, so CLAUDIA L. FOWLER, Secretary is the third portrait down. She is the only woman among the four names and the third portrait is the only woman pictured, and the top portrait is the frame this archive already publishes as William Menser from this page",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384/"
+  }
+ },
+ {
+  "year": "1967-68",
+  "name": "Larry Heishman",
+  "file": "1967-68-larry-heishman.jpg",
+  "replaces": null,
+  "width": 139,
+  "height": 186,
+  "why": "His officer portrait, a proper head-and-shoulders frame and much better than his figure in the twenty-person group photograph on the same page. Small because the officers run in a narrow single column and the TopSCHOLAR scan of this volume is low resolution; not upscaled.",
+  "quality": "small",
+  "caption_quote": "LARRY S. HEISHMAN, Treasurer",
+  "src": {
+   "label": "1968 Talisman, p. 153, Associated Students; four officer portraits stacked in a column with the four captions listed below them in the same order, so LARRY S. HEISHMAN, Treasurer is the fourth and last portrait. Order verified two ways: the only woman named, Claudia L. Fowler, is third and the only woman pictured is third, and the top portrait is the frame this archive already publishes as William Menser from this page",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384/"
+  }
+ },
+ {
+  "year": "1967-68",
+  "name": "Michael Klein",
+  "file": "1967-68-michael-klein.jpg",
+  "replaces": null,
+  "width": 102,
+  "height": 126,
+  "why": "His senior class portrait, taken the year after he served. Small, four to a row on a low-resolution scan, and not upscaled. The only alternative is the twenty-person Associated Students group on p. 153 of the 1968 volume, where the faces are about thirty pixels across and unusable. Identification rests on the printed name in the class list plus the same name in that group caption, not on an activity line, since the 1969 class lists print only name, major and home town.",
+  "quality": "small",
+  "caption_quote": "Michale Klein, Business Administration, Westfield, N.J.",
+  "src": {
+   "label": "1969 Talisman pt. 2, p. 282, senior portraits; the page prints eight labelled rows of four, and FIFTH ROW reads Larry Kirkland, Jack T. Kizer, Michale Klein, Sharon Lee Klumb, so he is the third face in the fifth row. The row checks out as three men then a woman, matching the four names. He is named Michael Klein in the Associated Students group caption on p. 153 of the 1968 Talisman",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/386/"
   }
  }
 ]
