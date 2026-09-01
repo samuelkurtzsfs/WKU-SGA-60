@@ -1,0 +1,83 @@
+[
+ {
+  "note": "SCOPE OF THE SEARCH, so nobody repeats it. All 44 names in _worklist-p10.json were run three ways: (1) full name against data/herald-photos.json, (2) full name as a quoted phrase against wkuherald.com's media endpoint with order=asc, which searches caption, title and description across the whole library and is not subject to the hundred-item page cap, (3) full name as a quoted phrase against the posts endpoint. Only nine of the forty-four are named in any Herald photograph caption at all: Annalise Finch, Antonina Clementi, Cain Alvey, Cody Cox, Hannah Neeper, Harper Anderson, Mark Clark, Murphy Burke and Noah Moore. The other thirty-five return nothing from the caption route, and the media endpoint agreed with the local index on every one of them, so for this block the committed index is not the thin thing it is for other blocks."
+ },
+ {
+  "note": "SPIRIT MASTERS IS EMPTY FOR THIS BLOCK. All seven booklets, dlsc_ua_records/8496 to 8502 covering 2011-12 through 2017-18, were already downloaded to the staging folder by an earlier researcher and their text was searched for every one of the 44 names, full name and surname. Not one of them appears. Every apparent surname hit was Cherry Hall, the Hill, Judy Garland, Edmund Burke or a different student. Do not spend another run on Spirit Masters for anyone who first served between 2010 and 2024."
+ },
+ {
+  "name": "Cain Alvey",
+  "year": "2012-13",
+  "fact": "He was elected administrative vice president unopposed in March 2012 as a freshman, having been a senator; he said he wanted a leadership role in a decision-making body and that he had been interested in organizational aid since joining. Devon Hilderbrandt, the sitting administrative vice president, said Alvey was a very suitable choice to replace him. Alvey was also a resident assistant in McCormack Hall.",
+  "src": {
+   "label": "College Heights Herald 87:30, 23 March 2012, p. 3, 'Vice presidential candidates run unopposed'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6581"
+  }
+ },
+ {
+  "name": "Cain Alvey",
+  "year": "2012-13",
+  "fact": "He ran for student body president in the spring 2013 election against Keyana Boka and Fort Knox senior Austin Wingate, standing as the sitting administrative vice president. His platform was a design-a-course programme, an expanded Safe Ride service, more summer term scholarships and more test-preparation programmes, and he was then working with Parking and Transportation Services to add a third Safe Ride bus so that no student waited more than 45 minutes.",
+  "src": {
+   "label": "College Heights Herald 88:42, 29 March 2013, pp. 1 and 3, 'Presidential candidates debate issues'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6542"
+  }
+ },
+ {
+  "name": "Megan Skaggs",
+  "year": "2015-16",
+  "fact": "A Brownsville native who read English and international affairs, she interned for six weeks at the Casa Shalom Orphanage in Guatemala between her sophomore and junior years, wrote an honours thesis on Central American non-profits providing education to children, and in the autumn of 2016 ran a fundraising campaign called Paces for Pages to buy Spanish-language books for the orphanage. She left in January 2017 to be a Fulbright English Teaching Assistant in Guatemala.",
+  "src": {
+   "label": "College Heights Herald 92:20, 1 November 2016, pp. B1-B2, 'Alum raises funds for Guatemalan orphanage'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9604"
+  }
+ },
+ {
+  "name": "Braxton Powell",
+  "year": "2015-16",
+  "fact": "He ran for student body president in the spring 2016 election; the Herald of 14 April 2016 carried a signed opinion piece by Allan Moreno endorsing him. A caution for a later researcher rather than a fact about him: the Herald index for 18 October 2016 carries an item headed 'Student Government Association Members Resign After Allegations of Racism' naming Powell and John McKinney. That issue was not opened for this hunt and no photograph from it was considered, because a frame attached to a conduct matter is a last resort under the archive's rules for living people. Anyone who does open it should read the outcome as well as the allegation before writing anything.",
+  "src": {
+   "label": "College Heights Herald 91:21, 14 April 2016, p. 5",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6463"
+  }
+ },
+ {
+  "name": "Rachel Keightley",
+  "year": "2015-16",
+  "fact": "Her name in the university's own records is Rachel A. Keightley: she is on WKU's Bowling Green area dean's and president's list for autumn 2015, alongside an Andrew B. Keightley at the same postcode. This matters because a search for Keightley on wku.edu leads straight to the English department's alumni profile of 'Keightley Dudgeon', class of 2019, which is a different person with Keightley as a given name. See _do-not-use.json.",
+  "src": {
+   "label": "WKU Media Relations, autumn 2015 dean's and president's list, Bowling Green area",
+   "url": "https://www.wku.edu/mediarelations/documents/2015/stu_dean_pres_bg_area_lst_fall_2015.pdf"
+  }
+ },
+ {
+  "name": "Barrett Greenwell",
+  "year": "2015-16",
+  "fact": "He read political science and wrote a Mahurin Honors College thesis, 'Do Ask, Do Tell: The Exclusion of Gay Men from Universal Male Conscription in the Republic of Turkey', researched over four months in Turkey interviewing lawyers, activists and men who had been through the exemption process. He presented it at the Pi Sigma Alpha research conference in Washington in the spring of 2016. WKU's write-up of that carries no photograph.",
+  "src": {
+   "label": "WKU News, 'Barrett Greenwell presented at the Pi Sigma Alpha Research Conference', 5 April 2016",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=4079"
+  }
+ },
+ {
+  "name": "Lauren Willett",
+  "year": "2022-23",
+  "fact": "She was one of thirty-one candidates for WKU's 2022 Homecoming queen, sponsored by the Student Government Association itself. She was from Owensboro, read hospitality management and dietetics with a minor in military service, and was commissioned as an army officer on graduating with the class of 2023, assigned to Fort Leonard Wood. WKU's candidate announcement carries a single photograph of the previous year's queen and no portraits of the candidates.",
+  "src": {
+   "label": "WKU News, '31 WKU students candidates for 2022 Homecoming queen', 19 October 2022",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=10824"
+  }
+ },
+ {
+  "name": "Kody Okert",
+  "year": "2020-21",
+  "fact": "He was a candidate for WKU's 2020 Coming Home King, from Hendersonville, Tennessee, son of Danny and Faye Okert, reading corporate and organizational communication and sponsored by Kappa Sigma. WKU's candidate announcements for both 2020 and 2021 name every candidate but carry only one photograph, of the previous year's winner, so they are not a portrait source.",
+  "src": {
+   "label": "WKU News, '20 WKU students candidates for 2020 Coming Home King', 29 January 2020",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=8444"
+  }
+ },
+ {
+  "note": "SGA'S OWN CABINET PAGES CARRY NO PORTRAITS BEFORE 2025-26. wku.edu/sga/executive/index.php is the current page and does embed headshots, at /sga/2025_2026_executive/headshots_website/. The surviving older page, /sga/executive/index_old.php, is the 2016-17 cabinet and gives names, offices and topper.wku.edu addresses only, with no images. Every plausible older path was probed and all returned 404: 2018-2019-executive, 2019-2020-executive, 2021_2022_executive, 2022_2023_executive, 2023_2024_executive, 2024_2025_executive, index_old2.php. The headshot directory convention does not appear to predate the current cabinet."
+ }
+]

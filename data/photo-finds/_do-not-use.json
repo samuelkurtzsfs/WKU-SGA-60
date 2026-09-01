@@ -15,7 +15,8 @@
   "name": "Paige Pride",
   "year": "1990-91",
   "file": "1991 Talisman, p. 119, underclassmen portraits (McF-Poy), the cell printed 'Susan P. Pride, Tell City, Ind.'",
-  "reason": "The 1991 index carries exactly one Pride in the whole volume and the timing is right, but the printed name is Susan P. Pride and nothing in the archive gives Paige Pride a first name of Susan. A middle-initial match is not an identification. Do not cut this face until a source gives her full name; the ASG minutes only ever call her Paige, and once Page."
+  "reason": "The 1991 index carries exactly one Pride in the whole volume and the timing is right, but the printed name is Susan P. Pride and nothing in the archive gives Paige Pride a first name of Susan. A middle-initial match is not an identification. Do not cut this face until a source gives her full name; the ASG minutes only ever call her Paige, and once Page.",
+  "resolved": "Settled 1 September 2026. The 1993 Talisman senior grid, p. 42, prints her as \"S. Paige Pride, Biochemistry, Tell City, Ind.\" and indexes her as \"Pride, Paige 42, 156, 188, 192, 203\". Same hometown as the 1991 cell, and the S. is the Susan of that cell, so Susan P. Pride and Paige Pride are one woman. The 1993 portrait carries her own name in its caption and was cut from that page instead; the 1991 cell no longer needs to be inferred and remains unused."
  },
  {
   "name": "Todd Wallace",
@@ -34,5 +35,11 @@
   "year": "1977-78",
   "file": "1978 Talisman, p. 34, top right photograph of an ASG meeting",
   "reason": "The caption reads: A LIGHT MOMENT IN AN ASG MEETING brings laughter from president Bob Moore and smiles from activities vice president David Bass, secretary Sharon May and vice president Cathy Murphy. Four people are in the frame and the laughing man is plainly Moore, but the caption gives no positions for the other three, one of them is turned away with no face visible, and the remaining two cannot be told apart by sex at this print quality: the foreground figure in sunglasses has the feathered shoulder-length hair of either. It is the only picture in the 1977-81 volumes that names Bass at all, and his index entry gives him no class portrait page, so a later researcher will find this frame and be tempted. Do not use it without a source that says who is where."
+ },
+ {
+  "name": "Horace Johnson",
+  "year": "1995-96",
+  "file": "any Herald 1995-1999 photograph or mention captioned Horace Johnson",
+  "reason": "Every Horace Johnson in the Herald across these years is the WKU campus police chief, not a student. Herald 71:48, 28 March 1996 p. 6 has \"Chief Horace Johnson said the bike patrol has been a tremendous success\"; Herald 71:51, 9 April 1996 p. 2 has \"Police Chief Horace Johnson\" swearing in new officers; and the paper covered his resignation as chief on 4 March 1999. The archive lists an SGA officer of this name in 1995-96 with no title. Do not attach the chief to the student without a source that puts a Horace Johnson in a student seat."
  }
 ]
