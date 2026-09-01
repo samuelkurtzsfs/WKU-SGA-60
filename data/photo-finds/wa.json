@@ -178,5 +178,20 @@
    "label": "1968 Talisman, p. 291, junior portraits; back index p. 391",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/384/"
   }
+ },
+ {
+  "year": "1972-73",
+  "name": "Debby Clark",
+  "file": "1972-73-debby-clark.jpg",
+  "replaces": null,
+  "width": 342,
+  "height": 432,
+  "quality": "studio senior portrait at the full resolution of the archive.org scan, no upscaling",
+  "why": "The 1974 Talisman senior grid on p. 350 carries two Deborah Clarks in the same block of five names: DEBORAH J. CLARK, Elem. Ed., Campbellsville and DEBORAH K. CLARK, Admin. Services, Bowling Green, followed by Gail F., Hazel W. and Lynn M. Clark, against five faces in the third row. The back index of the same volume names them in full, Clark, Deborah Janca 248, 311, 350 and Clark, Deborah Kelly 259, 283, 350, so J is Janca and K is Kelly. The Herald separates them. Its report of 6 November 1973 on her selection as a state legislative intern calls Debby Clark a 21-year-old Western senior and, in the last paragraph, an Associated Student Government and Chi Omega member. Chi Omega is p. 259 of the 1974 Talisman by that volumes own index, and of the two Deborah Clarks only Deborah Kelly is indexed on p. 259; the Chi Omega membership key on that page reads 31- Debby Clark and its text names Debbie Clark as mistress of ceremonies of the sorority November Nonsense. The ASG secretary is therefore Deborah K. Clark, and her portrait is the second face in the third row of p. 350. The row checks out: five faces for the five names, and the second face is the only fair-haired one in it.",
+  "caption_quote": "DEBORAH K. CLARK, Admin. Services, Bowling Green",
+  "src": {
+   "label": "1974 Talisman, p. 350, senior portraits; disambiguated by College Heights Herald 53:20, 6 Nov 1973, p. 2, and by the 1974 Talisman Chi Omega page and back index",
+   "url": "https://archive.org/details/talisman1974west"
+  }
  }
 ]
