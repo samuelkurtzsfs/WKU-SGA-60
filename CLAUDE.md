@@ -71,6 +71,13 @@ following **spring**. If they differ, someone is missing. Mark an acting officeh
   1966 addresses to him by name. Why it reads 1968 and not 1966 is still not established, and
   is not worth guessing at. Do not reopen the presidency question without a source that puts
   him in an office.
+- **Carlene Lodmell and Darlene Lodmell are two different people.** Their names differ by one
+  letter and any name-similarity check flags them as one person spelled two ways. They are not.
+  They held office side by side: in 1995-96 Darlene chaired Student Affairs while Carlene chaired
+  Legislative Research, and in 1996-97 Carlene was Vice President while Darlene was Secretary
+  (SGA minutes of 14 Nov 1995, 5 Mar 1996, 27 Aug 1996 and 22 Apr 1997). Confirmed independently
+  against the university's own records, 1 September 2026. Never merge them, and never let a
+  portrait of one attach to the other.
 - Still open: John Lyne vs Larry Zielke 1970-71, David Payne 1982-83.
 
 ## Search locally before you crawl
