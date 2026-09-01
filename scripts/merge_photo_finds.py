@@ -211,6 +211,17 @@ def main():
         print("\nnothing to write")
         return
 
+    # A researcher who finds a better frame files it under a new name and
+    # deletes the old file, which leaves the overlay pointing at something
+    # that is no longer there and the site rendering a broken image. Worse
+    # than no portrait, and invisible until someone looks at the page.
+    missing = [p for p in have.values() if not (PHOTOS / p["file"]).is_file()]
+    for p in missing:
+        print(f"  dropped {p['name']} ({p['year']}): {p['file']} is gone")
+        del have[(p["year"], p["name"])]
+    if missing:
+        print(f"{len(missing)} entries pointed at files that no longer exist")
+
     overlay["leaders"] = sorted(have.values(),
                                 key=lambda p: (p["year"], p["name"]))
     OVERLAY.write_text(json.dumps(overlay, indent=1, ensure_ascii=False) + "\n")
