@@ -188,5 +188,25 @@
    "label": "Talismans 1987-1994, UA12/2/2",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
   }
+ },
+ {
+  "kind": "source spent",
+  "name": "Spirit Masters booklets 2012-2017",
+  "year": "",
+  "detail": "dlsc_ua_records 8497 to 8502, all six downloaded and all carrying clean OCR text where member names read correctly. Not one of the seventy-two executives still without a face appears in any of them. This was billed as the best portrait lead for those years and it is closed. The Spirit Masters SCRAPBOOKS in stu_org are a different collection and are not covered by this.",
+  "src": {
+   "label": "digitalcommons.wku.edu/dlsc_ua_records/8497-8502",
+   "url": ""
+  }
+ },
+ {
+  "kind": "source found, one year survives",
+  "name": "SGA's own election candidate booklet",
+  "year": "2012-13",
+  "detail": "wku.edu/sga/debate/s13candidates.pdf gives a name heading, a studio photograph and a full biography for each candidate, which is the best identification this archive accepts. It placed Cain Alvey and Brad Cockrel outright. It is the only file left in /sga/debate/: s12, s14, s15 and f13 all 404, and the elections page links no booklets at all. If another year of this document type surfaces anywhere it is worth a run on its own.",
+  "src": {
+   "label": "WKU SGA, Spring 2013 candidate booklet",
+   "url": "https://www.wku.edu/sga/debate/s13candidates.pdf"
+  }
  }
 ]

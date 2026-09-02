@@ -73,5 +73,35 @@
   },
   "width": 140,
   "height": 182
+ },
+ {
+  "year": "1992-93",
+  "name": "Ashley Means",
+  "file": "1992-93-ashley-means.jpg",
+  "replaces": null,
+  "quality": "small",
+  "why": "Her own senior class studio portrait, in the year she served. The 1993 Talisman index reads \"Means, Ashley 40, 178\"; p. 40 is a senior portrait grid, four across and five rows down, with each row's four names set as a block in the column at the left in the same left-to-right order, and p. 178 is an organization page. She is second in the third block, which reads Jason Meadows, Ashley Means, Jana Menefee, Robyn Meredith, that is man, woman, woman, woman; the third row of faces is man, woman, woman, woman and matches. The blocks above and below check the same way: block 1 reads Heather Marie McCoy, Heather Renee McCoy, Tara Lind McCubbins, Marla Renae McIntyre, four women, and row 1 is four women; block 2 reads McKinney, McKnight, McWhorter, Meador as woman, woman, man, woman and row 2 matches; block 4 reads Cheryl Meyer, Christopher David Miles, Mark Miller, Paige Miller as woman, man, man, woman and row 4 matches. Grid geometry measured off the scan: column gutters at native x 291, 437, 578 and 722, row gutters at y 288, 472, 654 and 839.",
+  "caption_quote": "Ashley Means, Art Education Nashville, Tenn.",
+  "src": {
+   "label": "1993 Talisman, p. 40, senior portraits (McCoy-Miner); indexed \"Means, Ashley 40, 178\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+  },
+  "width": 138,
+  "height": 181
+ },
+ {
+  "year": "1989-90",
+  "name": "Emily Morgan",
+  "file": "1989-90-emily-morgan.jpg",
+  "replaces": null,
+  "quality": "small",
+  "why": "Her own senior class studio portrait. The 1993 Talisman index reads \"Morgan, Emily 41\"; p. 41 is the right-hand half of a senior portrait grid, four across and five rows down, and on a right-hand page the block of four names sits in the column at the right of its row, again in left-to-right order. She is first in the third block, which reads Emily G. Morgan, Stacey Mullins, Tracy L. Mullins, Tonya R. Newton. All four are women, so the placement rests on the order rather than on the sexes, and the order is fixed: the index runs alphabetically, the row runs left to right, and the surrounding blocks show the same rule holding on this page. Block 2 reads Paulette Monroe, Kevin Moore, Alison L. Moorman, Chris Morehead as woman, man, woman, man and row 2 is woman, man, woman, man; block 4 reads James Nichols, Constance Norcia, Leslie Osborne-Nou, Nikki Owen as man, woman, woman, woman and row 4 matches; block 5 reads Christy Ozier, Mary Julia Mazur Pace, Denise Page, Eric Parsons as woman, woman, woman, man and row 5 matches. Grid geometry measured off the scan: column gutters at native x 1013, 1155, 1299 and 1447, row gutters at y 287, 468, 653 and 836. She was a Bowling Green senior reading psychology in 1992-93, so a freshman in 1989-90; the earlier volumes carry her too, indexed \"Morgan, Emily G.\" at 1990 p. 119, 1991 p. 118 and 1992 p. 133.",
+  "caption_quote": "Emily G. Morgan, Psychology Bowling Green",
+  "src": {
+   "label": "1993 Talisman, p. 41, senior portraits (Mingus-Parsons); indexed \"Morgan, Emily 41\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+  },
+  "width": 138,
+  "height": 182
  }
 ]
