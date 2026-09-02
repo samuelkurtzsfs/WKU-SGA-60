@@ -2627,6 +2627,107 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   hand that all six new portraits render on their own `site/o/` page.
   Landed on `research-photos`.
 
+- **A 2 September run (scheduled photograph agent): the Lane Hedrick lead
+  from the entry above, closed.** Re-checked first: all 60 presidents and
+  57 regents still carry a portrait; `viewcontent.cgi` was tested once
+  (a control fetch, article 1000) and came back the same Cloudflare
+  `HTTP 403` every run has logged since 25 August, so the twelve-year
+  year-photograph gap is untouched.
+
+  Took up the note left above: **Katherine (Lane) Hedrick**'s parenthetical
+  nickname was stripped to `Lane Hedrick` before querying wkuherald.com's
+  WP-JSON media search, which turned up a College Heights Herald feature,
+  "From Bosnia to Bowling Green: students share world experiences" (3 Nov
+  2017), carrying her portrait captioned "Junior Lane Hedrick, studied and
+  interned in Bosnia over the summer." She was Associate Justice on SGA's
+  2016-17 Judicial Council, later Acting Chief Justice by April 2019.
+  Filed under 2016-17. (The other two names in that note, John "Jack"
+  McKinney and Lane "Caroline" Simpson, were tried stripped the same way
+  and came back empty or off-topic; still open.)
+
+  **Corrected in review, 2 September.** Two things were wrong with that
+  as filed, and both are worth the next run's attention.
+
+  First, the archive already held this photograph. An earlier pass had
+  landed the same Herald media item as `2018-19-lane-hedrick.jpg`, cropped
+  to 370x630, against her other roster name. The recomputed gap list below
+  reported (2016-17, "Katherine (Lane) Hedrick") as portrait-less even
+  though `name-aliases.json` maps that name to "Lane Hedrick", so the
+  alias filter did not fire on this pair and one person's single
+  photograph was filed twice under two names. Consolidated to one entry:
+  the new 721x1080 original is the better frame (the old crop clips the
+  top of her head) and is kept at 2016-17; the 2018-19 entry and its file
+  were removed. Nothing was lost on the site — year pages do not render
+  officer portraits, and the person page draws the earliest term that
+  carries one. **When a gap list says an officer has no portrait, resolve
+  the name through `name-aliases.json` in both directions before believing
+  it.**
+
+  Second, the class year was offered as evidence and is not. The caption
+  says "Junior"; the body of the same article, the same day, calls her a
+  senior. The identification rests instead on the Herald's own SGA report
+  of 22 March 2017 (wkuherald.com/29383), which records the Judicial
+  Council selecting Lane Hedrick as its next associate chief justice —
+  same paper, same year, an SGA context for the name. That citation is now
+  in the `src` label, where a reader can check it. A portrait whose only
+  tie to SGA is a matching name still does not meet the bar, however
+  uncommon the name; this one cleared it on the second article, not the
+  first.
+
+  Recomputed the officer-portrait gap directly from the data (2016-17
+  onward, `organization.executive`/`organization.senate.officers` pairs
+  with no `photos.json` match, filtered through `name-aliases.json`) rather
+  than re-reading this section's name lists by eye, then cross-checked the
+  result against what this section already records as tried. About 30
+  names came back either genuinely new or not marked as searched cleanly;
+  results below duplicate a few of the prior run's "no match" findings
+  where the recomputation didn't distinguish them, but nothing already
+  confirmed was re-added.
+
+  **Checked and set aside, not used:**
+  - **Blake Graham** (2025-26 Chief Justice) — three photos from an 11 Nov
+    2025 meeting gallery; in every one he's either fully out of focus with
+    his back to the camera or absent from the frame. No usable face.
+  - **Ellen Henderson** (2024-25 Chief Justice) — one photo captioned
+    "Chief Justice Ellen Henderson swears in Associate Chief Justice,
+    Morgan Gammons, as the new Chief Justice," no left/right cue; the
+    blonde, hand-raised figure reads more like Gammons (whose portrait is
+    already on file) than Henderson, who would then have her back to the
+    camera. Not used — matches this section's own prior "no match" on her.
+  - **Hannah Neeper** (2016-17 Administrative VP) — a group-hug photo after
+    the 2016 election results; every face is buried against a shoulder.
+  - **Noah Moore** (2018-19/2019-20 Secretary of the Senate) — a WKU
+    Admissions "Tour Guide Noah Moore" headshot exists but nothing ties
+    that Noah Moore to the SGA officer beyond the shared name.
+  - **Morgan Wysong** (2016-17 PR Committee Chair) — a headshot file
+    exists; its parent post is deleted (404), no surviving caption to
+    confirm identity.
+  - **Karlee Powell** (2025-26 Secretary of the Senate) — several Greek-life
+    photographs (Alpha Delta Pi) confirm identity but none tie to SGA.
+  - **Cody Cox, Jakob Briggs** — real, captioned photographs exist for
+    both, but each sits in coverage of a personal matter unconnected to
+    their SGA service. Skipped, and deliberately not described further
+    here: this repository is public, and spelling out the context would
+    publish about a living person exactly what declining the photograph
+    was meant to avoid. Do not re-open these two.
+  - No match at all: Danny Vuleta, Mallory Hardesty, Neel Patel, Reed
+    Hensley, Brooke Mitchell, Karley Solorzano, Joel Hornback, Connor
+    Ferguson, David Darnell, Elizabeth Gannon, Maiah Cisco, Miles Harvey,
+    Zoe Martin, Amarah Reed, Aubrey Kelly, Cassidy Townsend, Brenna
+    Mathews, Jason Herlick, Derrick Collins, Matt Barr, Kody Okert, Alexis
+    Mayne, Tribhuwan Singh, Nicole Massarone, Lauren Willett, Ethan
+    Huffaker, Garrett Baum, Abhishek Bose, Hayden Skinner-Fine.
+  - Hannah Evans and Kayla Distler each turned up one confirmed-identity
+    photo (goat yoga; a dorm-conditions petition screenshot) but neither
+    ties to SGA and the petition item isn't a portrait at all — left alone.
+
+  The ~90 remaining (year, officer-name) pairs for 2016-17 onward are open
+  ground, and the twelve-year year-photograph gap remains entirely blocked
+  on `viewcontent.cgi`. One new file (`FF D8 FF E0` verified),
+  `build.py`/`check_data.py` both pass clean (61 years, 1980 events, 60
+  presidents), `check_duplicates.py` reports the same six known pairs.
+  Landed on `research-photos`, PR #324 (already open, not reopened).
+
 ### 8.5 Data hygiene
 
 - ~~`o/nate-eaton.html` and `o/nathan-j-eaton.html` are two pages for one man~~

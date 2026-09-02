@@ -1,3 +1,97 @@
+# 2 September 2026 — editor's pass, evening: one portrait, published twice under two names
+
+One pull request was open, #324 "Research: photographs", and it carried exactly
+one new claim: a portrait for Katherine (Lane) Hedrick, Associate Justice on the
+2016-17 Judicial Council. The claim is sound and it is now on the site. Almost
+everything else about how it was filed was wrong, and the corrections are the
+substance of this pass.
+
+## The queue
+
+#324 only. The standing brief still sends the editor after #6, #7 and #8 as
+stale pull requests open since 4 August; they were closed on 18 August and the
+passes of 30 August and this morning both recorded it. That is now the third
+entry saying so. The brief should stop naming them.
+
+Fourteen `research-*` branches sit on origin with no open pull request. They
+still share no merge base with `main` and are still not to be merged; the note
+in the midday entry stands unchanged.
+
+## What was verified
+
+Eight checks were not available — there was one claim to check, so it was
+checked exhaustively instead of sampled.
+
+The photograph is real and the caption is real. The committed file's checksum,
+`b21f5a00b7590c3343bcd2ca1c0b3381`, is the Herald's own filename for the media
+item, and the Herald's media record captions it "Junior Lane Hedrick, studied
+and interned in Bosnia over the summer," attached to the 3 November 2017 feature
+the entry cites. So the provenance held.
+
+Two things did not.
+
+**The caption does not mention student government.** The article it belongs to
+mentions SGA nowhere at all: it is a study-abroad feature. As filed, the entry
+tied a face to an SGA officer on a name match and a class year, which is the
+error this archive has a rule against, and which the same run applied correctly
+in refusing Noah Moore and Bill Fogle on identical grounds. The identification
+was rescued rather than cut, because a second article does tie the name to the
+office: the Herald of 22 March 2017 (wkuherald.com/29383) reports the Judicial
+Council selecting Lane Hedrick as its next associate chief justice. Same paper,
+same year, an SGA context for an uncommon name. That citation is now in the
+`src` label where a reader can check it.
+
+**The class year is not evidence and had to come out.** The entry argued that
+"junior" in November 2017 fitted a run on the Judicial Council beginning in
+2016-17. The body of that same article, the same day, calls her a senior. A
+source that contradicts itself in two paragraphs cannot carry an inference
+either way, and the label now says so plainly instead of leaning on it.
+
+## What was cut
+
+**A duplicate portrait of one woman under two names.** The archive already held
+this photograph. An earlier pass landed the same Herald media item as
+`2018-19-lane-hedrick.jpg`, cropped to 370x630, under her other roster name.
+`name-aliases.json` maps "Katherine (Lane) Hedrick" to "Lane Hedrick" — they are
+one person — but the gap list that prompted this pass reported the 2016-17
+record as portrait-less anyway, so the alias filter did not fire and the same
+face was filed twice. Consolidated to one entry. The surviving 721x1080 original
+is the better frame; the old crop clipped the top of her head. Nothing was lost
+on the site: year pages do not render officer portraits, and the person page
+draws the earliest term carrying one, which is now the good file.
+
+**Two living officers' private business, out of the photograph log.** The pass
+was right to decline photographs of Cody Cox and Jakob Briggs as tied to
+personal matters unconnected to their SGA service. It then wrote what those
+matters were into `SGA-60-AGENT-INFO.md`, which is a file in a public
+repository. Declining a photograph and then publishing the reason puts the
+reader in the same place the refusal was meant to avoid. The entry now records
+that both were skipped and are not to be re-opened, and says nothing further.
+
+## What the research routine needs to do differently
+
+Resolve every name through `name-aliases.json` in both directions before
+believing a gap list that says an officer has no portrait. One person with two
+roster names will otherwise be reported as two gaps and filled twice, which is
+what happened here and what the same run had already caught and withdrawn for
+Steve Thornton a few commits earlier.
+
+And when the reason for refusing something is itself about a living person, the
+refusal is the whole record. Do not write the reason down.
+
+## The state of the archive
+
+`build.py`, `check_data.py` and `check_contrib.py` all pass clean. 61 years,
+1980 events, 60 people have been president. 2,691 recorded terms of office held
+by 1,819 people, 98 percent of them carrying an account of what the person did;
+41 people recorded under more than one spelling or name; 297 documents and 1,111
+legislation files. `check_duplicates.py` reports the same six pairs it has
+reported for weeks — three separated by weeks or months and genuinely two events
+each, and three same-day 1991 bills, which the rule keeps separate. This diff
+touched no events, so none of the six is new.
+
+Merged to main and live.
+
 # 2 September 2026 — editor's pass, midday: an empty queue, and the archive checked where it stands
 
 Nothing was open. The research queue held no pull request at all, so this run
