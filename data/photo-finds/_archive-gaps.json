@@ -138,5 +138,15 @@
    "label": "College Heights Herald, 20 Mar 2012",
    "url": ""
   }
+ },
+ {
+  "kind": "source mapped and largely spent",
+  "name": "WKU's own SGA executive headshot directories",
+  "year": "",
+  "detail": "The live server still serves these files; only the directory listing is blocked, so a 403 does not mean the images are gone. Three archived directories exist, wku.edu/sga/<YYYY-YYYY>-executive/headshots/, for 2018-19, 2022-23 and 2023-24, named firstname_lastname_min.jpg. They gave up Lyndsey Kelley, Annalise Finch and Sydney Denney at 4480 by 6720, better than anything else for their years. The current executive page uses a different scheme: wku.edu/sga/2025_2026_executive/headshots_website/ with underscores in the year and short forms for filenames, caden.jpg and gabipace2.jpg, so it cannot be guessed and must be read off wku.edu/sga/executive/index.php, where each portrait sits beside the person's name and office. All five current executives already have faces. Every naming pattern was tried against the four executives still missing from 2018-19 and 2022-23 and none resolved, so the route is spent apart from watching the live executive page as each new year is published.",
+  "src": {
+   "label": "wku.edu/sga/executive/index.php",
+   "url": "https://www.wku.edu/sga/executive/index.php"
+  }
  }
 ]
