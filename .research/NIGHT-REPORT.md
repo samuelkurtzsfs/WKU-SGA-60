@@ -94,6 +94,29 @@ cannot either. Both faces withdrawn this pass were of that kind, and the
 Cite the article whose caption names the subject. Keep the image URL as well
 if it helps, but the article is the evidence and it is the thing a reader needs.
 
+## Forty-two more faces landed while this pass was running
+
+A further 42 portraits reached `main` mid-pass, and they are a different and
+better class of work: 20 from *Talisman* volumes on archive.org, 21 from
+TopSCHOLAR, one from wku.edu, and not one bare image file. They were screened
+rather than sampled one by one.
+
+The screen turned up one thing worth acting on and one worth saying.
+
+Both Lodmells were given a portrait out of the same 1996-97 Spirit Masters
+scrapbook, which is the arrangement CLAUDE.md warns about in the sharpest
+terms. It survives the warning: Darlene's is p. 9 of the scanned volume and
+Carlene's is p. 10, so these are two separate captioned member boards, not two
+faces picked out of one group frame. That is the right basis, and it should be
+left alone.
+
+The archival reference on all fourteen Spirit Masters citations was wrong.
+They read "WKU Archives UA68, Student Organizations"; UA68 is this archive's
+SGA series and has been carried across by habit. All three scrapbooks are
+UA12/2/16, and TopSCHOLAR's own records for `stu_org/327`, `328` and `329`
+confirm both the number and the years each label claims — 2004-2005, 2007-2008
+and 1996-1997. Corrected in place.
+
 ## The duplicate report
 
 The same six pairs as the last pass, all already on `main` and none introduced
@@ -105,7 +128,7 @@ here. Four are an event and its later outcome; two are separate bills filed on
 61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,821
 people, 2,650 of those terms (98%) carrying an account of what the person did,
 39 people recorded under more than one name. 60 people have been president.
-627 portraits, 297 documents, 1,111 legislation files. `build.py` completes
+668 portraits, 297 documents, 1,111 legislation files. `build.py` completes
 cleanly and `check_data.py` and `check_contrib.py` both exit 0.
 
 ## Still open
