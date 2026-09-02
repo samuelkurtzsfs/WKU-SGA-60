@@ -13598,3 +13598,90 @@ to a run for editing a comment once it is up. Pull request bodies can be
 rewritten, and this pass's was — the line was appended to #327 on creation and
 stripped before merge. Nothing committed this pass carries one, and main's
 history is still clean.
+
+# 2 September 2026, late — a portrait very nearly withdrawn, and the citation that saved it
+
+The container running the evening pass restarted after that pass had finished.
+Main had moved on: the photograph routine's `research-photos` work was merged,
+carrying a new portrait for Katherine (Lane) Hedrick, Associate Justice
+2016-17. No night-report entry covered it, so it had reached the live site
+without an editor reading it. This is that reading.
+
+## The alarm, and why it was wrong
+
+Two things looked bad at first and one of them looked very bad.
+
+The credit is a seven-hundred-character paragraph rather than a volume and a
+page, which is the exact shape the afternoon pass had withdrawn an entry over.
+Measured it before acting: 245 of the 781 leader portraits carry a credit over
+300 characters, the longest is 1,315, and the median is 153. So the long credit
+is this file's established convention, not a regression introduced that night.
+What the afternoon pass actually withdrew was a label that *destroyed* a working
+citation — `1979 Talisman, p. 288` replaced by prose. Nothing was displaced
+here. Restyling this entry would have meant imposing a house style on a third
+of the archive unsupervised, and it was not mine to do.
+
+The second looked worse. The credit cited the Herald's "From Bosnia to Bowling
+Green" of 3 November 2017 and quoted a caption naming Lane Hedrick and giving
+her home town as Morehead. That article carries exactly one photograph, of a
+different, named student — "WKU sophomore Kenan Mujkanovic" — and the words
+Morehead and junior appear on it zero times. Downloaded both images: the stored
+portrait is a young woman, Mujkanovic's is a young man, plainly from one studio
+session. On the evidence in front of me the archive was publishing a face it
+could not source, of a living person, which is the one error this project holds
+to be worse than no face at all.
+
+It was not. The caption exists. It sits on the photograph's own page rather
+than on the article it illustrates: "Junior Lane Hedrick, studied and interned
+in Bosnia over the summer... said Hedrick, who is originally from Morehead,
+Kentucky," credited to Lydia Schweickart and dated 6 November 2017
+(wkuherald.com/27091). Every claim the entry made about that caption is
+accurate, down to the class-year discrepancy it flagged: the caption says
+junior, the article says senior, and it was right to say the year proves
+nothing. The portrait is Lane Hedrick and it stays.
+
+The SGA tie checks out too, at the second source the entry cites: the Herald of
+22 March 2017 records the Judicial Council selecting her as its next associate
+chief justice. Worth noting for whoever files it that the selection was for the
+following term and was subject to senate approval, so it is not itself evidence
+for the 2016-17 year; the roster is what carries that.
+
+## What changed
+
+One field. The credit pointed at the article, where a reader who went to check
+the identification would find no photograph of her and no caption — the dead
+end this pass walked into. It now points at the photograph's own page, where the
+caption is, and names Lydia Schweickart as the photographer, which the entry had
+not credited. The reasoning is unchanged apart from saying where the caption
+lives and that the judicial selection was subject to approval.
+
+## The lesson worth keeping
+
+A citation has to lead to the evidence, not merely near it. This one named the
+right newspaper, the right week and the right words, and still sent a checker to
+a page that would have made the entry look fabricated. On a modern Herald story
+the caption often lives on the attachment page, not the article; cite that.
+
+And: measure before reverting. Both of this pass's first instincts — restyle the
+credit, withdraw the portrait — were wrong, and each would have damaged
+something correct. The archive was right twice and the reviewer was wrong twice.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. One site
+file changed, `o/lane-hedrick.html`. `check_duplicates.py` reports the same six
+pairs standing on main, unchanged.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,820
+people, 2,650 of those terms (98%) carrying an account of what the person did,
+41 people recorded under more than one name. 60 people have been president.
+
+## Still open
+
+`web.archive.org` is unreachable from these containers — the tunnel resets —
+which is worth knowing before a run plans on the Wayback Machine for anything.
+`archive.org/download` is fine. The gated `viewcontent.cgi` endpoint on
+digitalcommons is unchanged, as is the 1993-94 to 2009-10 gap in year
+photographs and the 431 legislation files with no author recorded.
