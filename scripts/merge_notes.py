@@ -130,6 +130,12 @@ def main():
         name, year = r.get("name"), r.get("year")
         fact = str(r.get("fact") or "").strip()
         src = r.get("src") or {}
+        if r.get("kind") == "rejected" or (set(r) <= {"note", "topic", "logged"}):
+            # Not a fact about a person. A bare note is a researcher's handoff
+            # to the next one; a "rejected" record belongs in the withdrawal
+            # register, where the portrait merge enforces it. Neither is an
+            # error, and reporting them as one buried the real refusals.
+            continue
         if not (name and year and fact):
             refused.append((origin, name or "?", "missing name, year or fact"))
             continue

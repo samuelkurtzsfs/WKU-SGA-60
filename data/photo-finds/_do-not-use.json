@@ -423,5 +423,29 @@
   "file": "1972 Talisman, printed p. 273, Interfraternity Council group photograph (no direct url; this entry is advisory)",
   "url": "",
   "reason": "The caption gives rows of four, seven and five and the photograph has four seated and twelve standing, so the count agrees. The standing twelve are staggered rather than in two rows, and separating a row of seven from a row of five by head height is a guess. It is also the Interfraternity Council, not student government; CLAUDE.md records that IFC officers are a known route into being miscoded as SGA. The index carries exactly one Danny Lynn Creasy and one Gayle Burriss Sharp, and both of their pages (225 and 247, with 273) are fraternity pages, so nothing here ties the face to a student government seat either."
+ },
+ {
+  "name": "Annalise Finch",
+  "year": "2023-24",
+  "file": "https://wkuherald.com/wp-content/uploads/2024/01/ER12048.jpg",
+  "url": "https://wkuherald.com/wp-content/uploads/2024/01/ER12048.jpg",
+  "reason": "Herald 24 Jan 2024, caption 'Elementary education major and Executive Vice President of SGA, Annalise Finch, takes a selfie with her class pet'. The caption is a clean identification but the photograph is useless as a portrait: she is standing on the dais with her back to the camera, arm raised holding the phone, and no part of her face is in the frame. Do not crop this one.",
+  "logged": "migrated from leads-notes.json"
+ },
+ {
+  "name": "Antonina Clementi",
+  "year": "2022-23",
+  "file": "https://wkuherald.com/wp-content/uploads/2022/04/download.png",
+  "url": "https://wkuherald.com/wp-content/uploads/2022/04/download.png",
+  "reason": "Herald 21 April 2022, the WKU Forensics team championship photograph. Its caption does list every person by row and left-to-right position, and Clementi is named first in the front row, so this is one of the rare group frames that does identify people. It still cannot be used: the file the Herald published is download.png at 640x428 for about twenty-six people, so a single face is roughly a dozen pixels across and no larger version exists. The better-looking alternative, Herald 25 January 2023 (",
+  "logged": "migrated from leads-notes.json"
+ },
+ {
+  "name": "Blake Graham",
+  "year": "2025-26",
+  "file": "https://wkuherald.com/wp-content/uploads/2025/11/SAV2500.jpg",
+  "url": "https://wkuherald.com/wp-content/uploads/2025/11/SAV2500.jpg",
+  "reason": "Two Herald frames name Blake Graham and neither shows his face. In the 23 September 2025 swearing-in the caption reads 'International Senator Grace Ekrikpo is sworn in by Chief Justice Blake Graham' but only one person is in the frame, the senator taking the oath, and that photograph has been used for Ekrikpo instead. In the 11 November 2025 frame, 'Chief Justice Blake Graham gives his final report as chief justice', the camera is behind him and he is the out-of-focus back of a head in the right",
+  "logged": "migrated from leads-notes.json"
  }
 ]
