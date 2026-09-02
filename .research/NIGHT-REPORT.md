@@ -96,9 +96,25 @@ officer records still without a portrait, the unread 1977-78 organization
 chart, the 431 legislation files with a readable authors block and no author
 recorded, and John Lyne vs Larry Zielke 1970-71 and David Payne 1982-83.
 
-The item left for a human by an earlier pass is still outstanding: the trailing
-tool-attribution line on the review comment at `#issuecomment-5488430131`,
-which can only be deleted or edited from the web interface.
+There are now two of these to clean up by hand, and this pass should be honest
+that it added the second. The review comment posted on #321 this pass,
+`#issuecomment-5505463064`, carries a trailing tool-attribution line, appended
+by the platform after the comment was submitted and not written into it. It was
+caught by reading the comment back, which is the check `AGENT-LANDING.md` asks
+for, and then could not be removed: no GitHub tool available here edits an
+existing comment, `update_pull_request` reaches only the pull request body, and
+a direct `api.github.com` call is refused by the session's proxy. Reposting
+would only earn the same line again.
+
+So it joins the older one at `#issuecomment-5488430131`. Both need deleting or
+editing from the web interface, and both are a moment's work there. The commits
+are clean, `main` is clean, and nothing on the site carries it — this is
+confined to two comment bodies on two pull requests.
+
+Worth recording for whoever writes the next routine: the append happens on
+every comment posted through this path, so any pass that comments will add one.
+The only way to leave none is not to comment, which is worse. Better to keep
+reading them back and listing them here.
 
 # 2 September 2026 — editor's pass: four notes that stopped mid-word, and two faces with nothing behind them
 
