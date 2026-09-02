@@ -1,3 +1,107 @@
+# 2 September 2026 — editor's pass, morning: a face pinned by correlation, and a yearbook that contradicts itself
+
+One pull request open, #322, "Research: photographs (rolling)". One new claim
+in it: a portrait for Naheed Shafi, Associated Student Government's public
+relations vice chair in 1986-87, cropped from the International Student
+Organization group photograph in the 1987 *Talisman*. Merged, after one cut.
+
+## The identification holds, and this time it was proved rather than argued
+
+The report's reasoning was the usual chain — the caption names her first, the
+row reads left to right, she is the only woman of the three. Chains like that
+have been wrong on this project before, so the crop was matched against the
+page itself rather than against the report.
+
+`archive.org/download/talisman1987west/page/n121_w1600.jpg` is printed page
+118; the leaf offset was fixed by fetching n124 and reading its footer, 121.
+Normalised cross-correlation of the submitted file against that scan, searched
+over scales from 70 to 260 pixels wide, put its best match at x=1098, y=1732,
+size 130x150, score 0.89, with nothing else in the band coming near it. That
+is the leftmost figure in the front row. The crop is where the report said it
+was.
+
+The caption is verbatim as quoted, and the photograph resolves into rows of
+three, five and six exactly as the caption divides it. The left-to-right
+reading was then confirmed three ways instead of assumed: George Marshall
+first and Selim Yavuz Dogruyol last across the back row, Rob Quasem first and
+Smita Bhatt last across the second, and the front row's apparent ethnicities
+matching the caption order. The Panhellenic Council caption beside it runs the
+same way.
+
+She is not being matched on a surname. The volume's index carries one Shafi —
+"Shafi, Naheed 117, 118, 343" — so there is no second person of the name in
+the book to confuse her with.
+
+## What was cut
+
+The credit quoted the ISO article calling her "a Bowling Green junior". The
+same volume's class directory lists NAHEED SHAFI, Bowling Green on p. 343, a
+page footed *Sophomores/Puttman—Sobotka*; the footer was read off the scan,
+not off the OCR. The 1986 *Talisman* had called her a freshman, which agrees
+with sophomore in 1986-87 and against junior. So the article is the outlier,
+and it was the half about to be published.
+
+The credit now records the conflict and claims no class year. That also brings
+it back inside the one-quote-per-source rule, which two quotations from the
+same volume had crossed. The URL was moved to the leaf that was actually
+checked against the scan, `page/n121`, rather than a printed page number that
+was never verified to resolve.
+
+The portrait itself stands. Nothing in the identification ever depended on her
+class year.
+
+## Two things for the photograph routine
+
+The submitted file is heavily posterised, far more than the source scan
+warrants — a straight crop of the same region is markedly cleaner. Not an
+accuracy problem and not worth holding a correct portrait over, but the
+contrast should come down on the next batch.
+
+`data/name-aliases.json` line 74 maps "Naheed Malik" to "Naheed Shafi". By
+that file's own note, adding a pair there asserts the two are the same human,
+while `years.json` says in terms that the identification "is not proven". The
+two files disagree. "Naheed Malik" appears nowhere else in the data, so it
+reaches no reader and it did not block this merge, but one of the two should
+give. Left to the roster routine, being outside this diff.
+
+## Merged
+
+#322. `build.py` completes cleanly, `check_data.py` and `check_contrib.py`
+both exit 0, on the branch before the merge and on `main` after it.
+`check_duplicates.py` reports the same six pairs as the last several passes,
+and all six are still genuinely distinct: three separate bills of 1 September
+1991, and four introduce-then-resolve pairs weeks apart.
+
+No traps tripped otherwise. No advance notice cited, no committee chair
+recorded as an officer, no April election shifted out of its year, nothing
+touching the settled facts, no contributor edit in the diff.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,820
+people, 2,650 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one name. 60 people have been president.
+297 documents and 1,111 legislation files.
+
+## Still open
+
+The review comment posted on #322 went out carrying the trailing
+tool-attribution line, and it could not be taken off. Editing a comment needs
+`PATCH /issues/comments/{id}`, and direct calls to `api.github.com` from this
+container are answered by the platform gate, not by GitHub; the GitHub tool
+set available here has no edit-comment or delete-comment method. This is the
+same wall the addendum of 30 August recorded, and it now has a second instance
+outstanding: `#issuecomment-5507460371` on #322, alongside
+`#issuecomment-5488430131`. Both need deleting or editing from the web
+interface. The commits and the merge commit carry no such line, and neither
+does anything in `data/` or the generated site.
+
+The twelve-year gap in year photographs, 1993-94 through 2009-10, did not move
+and was not worked this pass. Otherwise unchanged: the unread 1977-78
+organization chart, the 431 legislation files with a readable authors block
+and no author recorded, and John Lyne vs Larry Zielke 1970-71 and David Payne
+1982-83.
+
 # 2 September 2026 — editor's pass, late: a pull request with nothing in it, and that is the right answer
 
 One pull request open, #321, "Research: photographs (rolling)", reopened after
