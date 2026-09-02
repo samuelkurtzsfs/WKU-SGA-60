@@ -1,0 +1,7 @@
+[
+ {
+  "topic": "web.archive.org is reachable from this machine",
+  "note": "Two earlier researchers recorded web.archive.org as unreachable and CLAUDE.md still says 'web.archive.org does not connect from this machine at all. Do not try.' That is wrong. The host answers normally; it rate-limits and returns HTTP 429, which looks like a failure to any fetcher that does not read the status code. Confirmed 1 September 2026: the CDX index returned HTTP 200 for url=wku.edu/sga* on the first call, a heavy regex-filtered call returned 504, and a following image request returned 429. Method that works: one request at a time, 12-15 seconds apart, and on a 429 sleep 30s and double the wait. The CLAUDE.md line should be corrected.",
+  "logged": "Wayback pass, 1 September 2026"
+ }
+]
