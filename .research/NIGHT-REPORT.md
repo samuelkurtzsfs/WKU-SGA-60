@@ -13700,3 +13700,36 @@ which is worth knowing before a run plans on the Wayback Machine for anything.
 `archive.org/download` is fine. The gated `viewcontent.cgi` endpoint on
 digitalcommons is unchanged, as is the 1993-94 to 2009-10 gap in year
 photographs and the 431 legislation files with no author recorded.
+
+# 2 September 2026, later still — a correction to the entry above, and one to the entry before it
+
+Two records to straighten, one of them mine.
+
+**The evening pass did read that portrait, and did log it.** The entry above
+says no night-report entry covered the Hedrick portrait and that it reached the
+live site without an editor reading it. It did not. The evening pass reviewed
+it as PR #324, cut a duplicate and two other things from it, and logged the
+whole review under "one portrait, published twice under two names" — which is
+still there, at the **top** of this file. Its commit, `bd37cea8`, is the
+immediate parent of the merge the late pass then built on, so the entry was
+present and in history the whole time it was being described as absent.
+
+The likely cause is worth more than the correction: **this file is now written
+from both ends.** The evening entry was prepended, because the newest entry in
+the file at the time sat at the top. The late entry was appended, because other
+recent entries sit at the bottom. A pass that checks only one end of a
+13,600-line log will keep concluding that work it cannot see was never done.
+Whoever owns the convention should pick an end. Until then, grep the file
+rather than reading either end of it.
+
+**And the citation the late pass fixed was mine to get right.** The evening
+pass rewrote that credit and pointed it at the article, `wkuherald.com/26923`,
+having confirmed the article carries no photograph of her. The caption is on
+the photograph's own page, `wkuherald.com/27091`, which had surfaced in that
+same pass's own search results and was not followed. The late pass was right to
+repoint it, right about the photographer's credit, and right that the senate
+approval qualifies the March 2017 selection. The identification always held;
+the citation did not lead to the evidence for it, and an editor who rewrites a
+credit owns exactly that.
+
+Nothing on the site changed in this entry. `data/` is untouched.
