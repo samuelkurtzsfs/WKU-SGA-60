@@ -1,0 +1,17 @@
+[
+ {
+  "year": "2023-24",
+  "name": "Lyndsey Kelley",
+  "file": "2023-24-lyndsey-kelley.jpg",
+  "replaces": null,
+  "width": 1000,
+  "height": 1500,
+  "quality": "studio portrait, full resolution original 4480x6720, downscaled only",
+  "why": "WKU SGA's own 2023-2024 executive headshots directory. The Wayback CDX index for wku.edu/sga/2023-2024-executive/headshots/* gave the file naming scheme of that directory (six captures, all firstname_lastname[_min].jpg), which is what made the filename guessable; the live wku.edu server then served this file at HTTP 200. The directory listing itself is what 403s, not the files inside it. The path is published by WKU under the 2023-2024 executive branch and names her, and data/years.json records Lyndsey Kelley as Chief of Staff for 2023-24. The image is a single-subject studio headshot on WKU's standard brown portrait backdrop, matching the other five headshots in the same directory, each of which is the officer its filename names.",
+  "caption_quote": "wku.edu/sga/2023-2024-executive/headshots/lyndsey_kelley_min.jpg - the identification is the university's own file path, not a printed caption. There is no caption text; the office comes from the directory (2023-2024 executive) and the name from the filename.",
+  "src": {
+   "label": "WKU Student Government Association, 2023-2024 executive branch headshots, wku.edu. Filename recovered from the Internet Archive CDX index of wku.edu/sga/2023-2024-executive/headshots/*, file retrieved from the live WKU server 1 September 2026.",
+   "url": "https://www.wku.edu/sga/2023-2024-executive/headshots/lyndsey_kelley_min.jpg"
+  }
+ }
+]
