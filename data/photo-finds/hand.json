@@ -12,5 +12,19 @@
    "label": "1987 Talisman, p. 345, sophomore portraits; the volume's index gives her pp. 114, 119 and 345, and p. 114 is the student government page, which is what ties this face to the officer rather than to a namesake",
    "url": "https://archive.org/details/talisman1987west"
   }
+ },
+ {
+  "year": "1976-77",
+  "name": "Tom Blair",
+  "file": "1976-77-tom-blair.jpg",
+  "replaces": "1976-77-tom-blair.jpg",
+  "width": 865,
+  "height": 1130,
+  "why": "A re-cut of the frame an earlier researcher found on the same page. Theirs is 750 by 765, dark, and cut off below his forearm; this is 865 by 1130 from the 3000-pixel scan, brighter, and keeps the desk and the ASG poster behind him.",
+  "caption_quote": "Thomas Alan Blair - printed directly beneath this photograph, the third of three individually captioned portraits on the page",
+  "src": {
+   "label": "1977 Talisman, p. 340, 'What's What about Who's Who'; the volume index gives him pp. 50, 277 and 340, and p. 50 is the student government page. The accompanying text names him a psychology and business major from Bellbrook, Ohio.",
+   "url": "https://archive.org/details/talisman1977west"
+  }
  }
 ]
