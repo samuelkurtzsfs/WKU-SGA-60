@@ -349,5 +349,23 @@
   "year": "2018-19",
   "file": "https://wkuherald.com/wp-content/uploads/2018/03/ff3590c86a518a0590959d98f25a7537.jpg",
   "reason": "The label dated this to an SGA meeting of 27 February 2019 and identified her as 'the only standing figure, at the lectern'. The only checkable metadata contradicts the date: the Herald filed the image under its March 2018 upload path, which is earlier than any service the archive records for her, her first citation being the Senate minutes of 26 March 2019. No article carrying the image could be found on wkuherald.com to supply the caption that would name her. Withdrawn 2 September 2026 as an identification with nothing behind it. Restore it only with the article URL whose caption names her."
+ },
+ {
+  "name": "Shawna Whartenby",
+  "year": "1996-97",
+  "file": "College Heights Herald 71:37, 8 February 1996, p. 14, 'Greek Scholar of the month ... Shawna Whartenby'",
+  "reason": "There is no photograph. It is a text-only congratulations advertisement inside the Panhellenic border strip, reading Congratulations to the Greek Scholar of the month, Kappa Delta member Shawna Whartenby. A name search of the digitised Herald puts this at the top of her results and it looks like a caption in the text layer, so it will be re-found. Checked at the page image, 1 September 2026."
+ },
+ {
+  "name": "Mitchell Bailey",
+  "year": "1998-99",
+  "file": "College Heights Herald 74:12, 6 October 1998, p. 1, student loan feature",
+  "reason": "The front-page story on rising student loans opens on Winchester sophomore Mitchell Bailey and quotes him, so a text search reads like a photo caption. The only photographs on that page are of the 10k Classic road race and of Bowling Green freshman Lauren Cohen watching the fast-walking race. Bailey is not pictured."
+ },
+ {
+  "name": "Drew DeLozier",
+  "year": "1987-88",
+  "file": "1988 Talisman, pp. 38-39, 'Policy of politics'",
+  "reason": "His only index entry in the 1988 volume is 'DeLozier, Drew 38', which is this Associated Student Government election story. He is named twice in the body text as chairman of Rules and Elections and is not photographed; the two pictures on the spread are of students queueing to vote and of Scott Whitehouse handing a flyer to a prospective student, each with its own caption. He is absent from the 1987 volume's index altogether, and he cannot be looked up in the 1989 volume because the leaf carrying the whole D and E section of that index is missing from the TopSCHOLAR scan."
  }
 ]

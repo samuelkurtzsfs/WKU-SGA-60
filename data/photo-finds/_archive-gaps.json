@@ -148,5 +148,45 @@
    "label": "wku.edu/sga/executive/index.php",
    "url": "https://www.wku.edu/sga/executive/index.php"
   }
+ },
+ {
+  "kind": "exhausted: no portraits here",
+  "name": "WKU Spirit Masters class booklets 2012-2017",
+  "year": "2011-12 to 2017-18",
+  "detail": "dlsc_ua_records 8497 (2012) through 8502 (2017), one booklet per class, each about 22 pages of studio portrait plus biography. All six were downloaded and all six carry a clean OCR text layer of 22,000 to 30,000 characters in which the members' names read correctly. Not one of the 72 executive officers still without a portrait is named in any of them. The 2011 booklet (8496) had already been worked. This closes the Spirit Masters route for the executive cohort; it may still be worth searching for senators.",
+  "src": {
+   "label": "digitalcommons.wku.edu/dlsc_ua_records/8497-8502",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8502"
+  }
+ },
+ {
+  "kind": "live source, mostly gone",
+  "name": "wku.edu SGA executive headshot directories",
+  "year": "2011-12 to 2024-25",
+  "detail": "Probed every /sga/<year>-<year>-executive/ and /sga/<year>_<year>_executive/ path from 2011-12 to 2024-25 on the live server on 1 September 2026. Only four still exist, and a directory that exists answers 403 while one that never existed answers 404: 2018-2019-executive, 2022-2023-executive, 2023-2024-executive and 2024_2025_executive. Only 2023-2024-executive has a headshots/ subdirectory, and that one has already been mined; its files are served at 200 even though the listing 403s, with names of the form firstname_lastname_min.jpg. Nothing under 2018-2019 or 2022-2023 is reachable by any guessed filename or subdirectory (headshots, headshots_website, images, photos, pics tried). The current officer page at /sga/executive/index.php serves the 2025-2026 headshots from /sga/2025_2026_executive/headshots_website/, a third naming scheme. web.archive.org refused every connection through this pass, so the older directories were not testable there.",
+  "src": {
+   "label": "wku.edu/sga",
+   "url": "https://www.wku.edu/sga/executive/index.php"
+  }
+ },
+ {
+  "kind": "source found",
+  "name": "SGA's own election candidate booklet, spring 2013",
+  "year": "2012-13, 2013-14",
+  "detail": "wku.edu/sga/debate/s13candidates.pdf is SGA's own two-page Spring 2013 Election candidate booklet: every candidate for president, executive vice president and administrative vice president gets a name heading, a photograph directly beneath it and a full biography. It placed Cain Alvey and Brad Cockrel. It is the only file left in /sga/debate/, and s12, s14, s15 and f13 equivalents all 404, so this appears to be the sole surviving year. Worth remembering as a document type: SGA published candidate booklets with portraits, and other years may survive elsewhere on wku.edu or in the Wayback Machine.",
+  "src": {
+   "label": "WKU SGA, Spring 2013 Election: The Candidates",
+   "url": "https://www.wku.edu/sga/debate/s13candidates.pdf"
+  }
+ },
+ {
+  "kind": "written off: checked the Talisman indexes name by name",
+  "name": "Six 1980s and 1990s executives, Talisman index sweep of 1 September 2026",
+  "year": "1987-88 to 1994-95",
+  "detail": "Read at the exact alphabetical position from the page images with Apple Vision OCR, because the embedded 96 dpi text layers mangle surnames and a miss in them proves nothing. DREW DELOZIER: absent from the 1987 index; in 1988 the one entry is 'DeLozier, Drew 38', the ASG election story on pp.38-39, where he is named twice in the body and not photographed; he cannot be checked in 1989 because that scan is missing the leaf carrying the whole D and E index. MICKIE HENNIG: 1987 gives 'Hennig, Kathryn Michelle 316', which is the Juniors divider page carrying only a pull quote signed with her name, and she is absent from the 1988 and 1989 indexes. SHANNON MONTGOMERY: 1990 gives 'Montgomery, Shannon - 162', which is the Associated Student Government group photograph, where she is fifth in the middle row of fourteen at about 20 px a face; absent from the 1991 index (it runs Monroe, Moody, Moon) and from 1992, 1993 and 1994. HEATHER FALMLEN: absent from the indexes of 1990, 1991, 1992, 1993 and 1994, although the 1992 volume covers her presidency in the text on p.260. JOHN SEIBER: 1990 gives 'Seiber, John M. - 154, 166, 224', all three organisation group pages; absent from the 1992, 1993 and 1994 indexes. TARA HIGDON: absent from the 1991 index (only Mark D. Higdon) and from the 1994 index (Hicks, Higgins, Highland, Hildreth, no Higdon). The 1994 volume is the last with portrait grids, and its People section is by residence hall rather than by class, so anyone living off campus is not in it at all.",
+  "src": {
+   "label": "Talismans 1987-1994, UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
+  }
  }
 ]
