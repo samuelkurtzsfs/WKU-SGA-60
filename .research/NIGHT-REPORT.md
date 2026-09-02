@@ -1,3 +1,105 @@
+# 2 September 2026 — editor's pass, late: a pull request with nothing in it, and that is the right answer
+
+One pull request open, #321, "Research: photographs (rolling)", reopened after
+#6 was closed with its branch still carrying unmerged work. It changed 87 files
+and not one of them was under `data/`.
+
+## What the diff actually was
+
+`git diff origin/main...origin/research-photos -- data/` is empty. The whole of
+the 152 insertions and 153 deletions is regenerated `site/` output: a build date
+moving from 1 to 2 September across 25 pages, and two files, `site/years.json`
+and `site/y/2009-10.html`, that differ because the branch's `data/` is seven
+commits behind `main`.
+
+Those seven commits are the portrait routine's, pushed between 21:03 on
+1 September and 01:17 on 2 September: 103 new portrait files and a five-line
+change to `years.json`. The branch was cut before them, so its rebuilt `site/`
+is a picture of the archive as it stood before those 103 faces landed.
+
+## Why that did not put anything at risk
+
+`vercel.json` sets `buildCommand` to `python3 scripts/build.py` with
+`outputDirectory` `site`. The committed `site/` is not what is served; it is
+rebuilt from `data/` at deploy. A stale `site/` in a merge is therefore an
+untidy repository, not a regression on the live site, and since this branch
+touches no `data/` the deployed archive is the same before and after.
+
+The merge was tested before it was made. It auto-merged with no conflicts, and
+`git diff origin/main HEAD -- data/` on the merged tree is empty: nothing of
+the 103 portraits is reverted. Running `build.py` on the merged tree corrected
+the two files the merge had left mixed, and that rebuild is in the merge.
+
+## What was verified
+
+There were no new claims to sample, so what was checked was whether the report
+was honest about that, and every assertion in it held.
+
+`data/` byte-identical to the tip it was cut from: confirmed by diff.
+All four presidents the stored prompt named — Nick Todd, Katie Dawson, Jeanne
+Johnson, Reagan Gilley — carry a portrait: confirmed. So does every one of the
+66 recorded president-terms; the count of leader records without a portrait is
+zero. All 779 leader portraits and all 61 year photographs carry a source URL,
+and no entry in `photos.json` points at a file that is not on disk.
+
+The report's negative finding was checked directly and is exact.
+`digitalcommons.wku.edu` landing pages serve normally — `dlsc_ua_records/414/`
+returned 200 this pass — but `cgi/viewcontent.cgi` returned HTTP 403 and a
+5,485-byte Cloudflare challenge page, the same byte count the report gives. The
+distinction matters for the routines: the catalogue is readable, the files
+behind it are not.
+
+The 103 portraits that landed on `main` while this branch sat still were read
+as well, since they are already live. All 103 are real images by their magic
+bytes, none is under 2 KB, and each is indexed with a source. A sample of nine
+was opened: the two `archive.org` *Talisman* volumes cited, 1975 and 1976, both
+serve.
+
+## The traps
+
+Nothing to trip. No events, no people, no roles, no years, no documents, no
+legislation, no contributor edits — the diff contains no claim of any kind. The
+settled facts were checked anyway, because a stale branch can revert them: the
+LaCivita portrait is present and was not withdrawn again, and Carlene and
+Darlene Lodmell still hold separate entries with separate files under 1996-97.
+
+## The duplicate report
+
+The same six pairs as the last pass, none of them from this branch, and the
+judgement is unchanged: four are an event and its later outcome, two are
+separate bills filed on 1 September 1991. Nothing to combine.
+
+## Merged
+
+#321. `build.py` completes cleanly, `check_data.py` and `check_contrib.py` both
+exit 0. Nothing was cut, because there was nothing in it to cut.
+
+A run that finds nothing and says so plainly is worth more than one that finds
+something to add. This report is worth reading for its restraint: it caught its
+own duplicate portrait overwrite of Savanna Kurtz and Gabriel Jerdon in the
+pre-commit diff and reverted both rather than shipping them, and it declined a
+30 August 2022 cabinet photograph whose caption names nobody.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,820
+people, 2,650 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one name. 60 people have been president.
+779 leader portraits, 61 year photographs, 297 documents, 1,111 legislation
+files.
+
+## Still open
+
+Unchanged, and the block is the reason for most of it: the twelve-year gap in
+year photographs from 1993-94 to 2009-10, the roughly 400 executive and Senate
+officer records still without a portrait, the unread 1977-78 organization
+chart, the 431 legislation files with a readable authors block and no author
+recorded, and John Lyne vs Larry Zielke 1970-71 and David Payne 1982-83.
+
+The item left for a human by an earlier pass is still outstanding: the trailing
+tool-attribution line on the review comment at `#issuecomment-5488430131`,
+which can only be deleted or edited from the web interface.
+
 # 2 September 2026 — editor's pass: four notes that stopped mid-word, and two faces with nothing behind them
 
 No pull request was open. The queue has been empty since #318 was merged at
