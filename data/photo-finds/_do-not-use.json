@@ -367,5 +367,47 @@
   "year": "1987-88",
   "file": "1988 Talisman, pp. 38-39, 'Policy of politics'",
   "reason": "His only index entry in the 1988 volume is 'DeLozier, Drew 38', which is this Associated Student Government election story. He is named twice in the body text as chairman of Rules and Elections and is not photographed; the two pictures on the spread are of students queueing to vote and of Scott Whitehouse handing a flyer to a prospective student, each with its own caption. He is absent from the 1987 volume's index altogether, and he cannot be looked up in the 1989 volume because the leaf carrying the whole D and E section of that index is missing from the TopSCHOLAR scan."
+ },
+ {
+  "name": "Alex Rose",
+  "year": "1992-93",
+  "file": "1994 Talisman, p. 23, the mirror reflection in the Schneider Hall makeover photograph",
+  "reason": "The caption does identify him, and that is why a later pass will find it again. 'Nashville senior Alex Rose checks out his dental work in the mirror of a makeover artist who visited Schneider Hall lobby. Dormmates Louisville senior Glen Siegel and Gamaliel senior Jeff Murray watch in amusement.' Rose is the man with his back to the camera holding the mirror, so the only view of his face is the reflection: the mirror frame cuts off the top of his head and his mouth is wide open to show his teeth. It is not a portrait and it does not let a reader recognise him. His other Talisman page, 1993 p. 109, is an overhead shot of him on a racquetball court where his head is about forty pixels across. Do not publish either."
+ },
+ {
+  "name": "Michelle Johnson",
+  "year": "1989-90",
+  "file": "1989 Talisman, p. 113, junior portrait grid, row 3 position 4",
+  "reason": "The 1989 index reads 'Johnson, Michele Dawn 113' and the grid position is unambiguous, so a later researcher will find this face and be tempted. It should not be used. Michelle Johnson is among the commonest names in the record, the Talisman spells this student Michele, and the index gives her no second page tying her to student government. There is nothing beyond the name to say that the junior photographed in 1988-89 is the Michelle Johnson who served in 1989-90."
+ },
+ {
+  "name": "David Smith",
+  "year": "1991-92",
+  "file": "1994 Talisman, p. 46, portrait grid, row 3 position 4",
+  "reason": "Indexed 'Smith, Dave, 46' and printed as Dave Smith Sr., Ontario, Canada. The grid position is certain but the identification is not: Smith is the commonest surname in the archive, nothing on the page or in the index ties this man to student government, and the archive's David Smith served in 1991-92 and 1992-93. A name match alone is not enough here."
+ },
+ {
+  "name": "Crystal Smith",
+  "year": "1992-93",
+  "file": "1991 Talisman pp. 131, 138 and 140; 1994 Talisman p. 59",
+  "reason": "The 1991 volume indexes two different women, 'Smith, Christal G.' and 'Smith, Crystal R.', on different pages, so there was more than one at Western in these years. No index entry ties either to student government. Any grid cell picked from these pages would be a guess between them."
+ },
+ {
+  "name": "Jeff Moore",
+  "year": "1990-91",
+  "file": "1994 Talisman, p. 66, portrait grid",
+  "reason": "The single index entry 'Moore, Jeff, 66' cannot be assigned. The archive carries a Jeff Moore in 1990-91 and a Jeffrey Moore in 1991-92 as two separate people, and nothing in the volume says which of them this is, or whether it is either."
+ },
+ {
+  "name": "Kenny Mays",
+  "year": "1990-91",
+  "file": "1993 Talisman, p. 52, junior portrait grid, row 2 position 2",
+  "reason": "The face is certainly Kenny May of Elizabethtown, indexed 'May, Kenny 52, 200'. It is not certainly Kenny Mays. The archive holds Kenny May and Kenny Mays as two separate people in two different years, and the Talisman knows only the one spelling, so attaching this portrait to Mays would be a merge on a guess."
+ },
+ {
+  "name": "Donnie Miller",
+  "year": "1992-93",
+  "file": "1992 Talisman, p. 132, underclassmen grid, row 5 position 4",
+  "reason": "Indexed 'Miller, Donald 132, 162' and printed as Donald Miller (Soph.), Bowling Green. Donnie is a natural short form of Donald, but Miller is one of the commonest surnames in the record and the second page the index gives him is not the student government spread, so nothing beyond the name connects this sophomore to the Donnie Miller who served."
  }
 ]

@@ -1,0 +1,33 @@
+[
+ {
+  "year": "2022-23",
+  "name": "Salvador Leon Golib",
+  "file": "2022-23-salvador-leon-golib.jpg",
+  "replaces": null,
+  "width": 200,
+  "height": 265,
+  "quality": "small: cropped out of a wide frame of the whole SGA chamber, so his head is about 70 pixels across. Not upscaled.",
+  "why": "The caption names one person and describes what he is doing, and exactly one person in the frame is doing it: everyone else in the chamber is seated at the horseshoe or in the gallery, and he is the only figure standing, at the lectern, mid-report. His face is turned three-quarters to the camera and is clear.",
+  "caption_quote": "Administrative Vice President, Salvador Leon Golib, gives a brief report on SGA's finances at the first SGA meeting of the semester on Tuesday, Jan. 23.",
+  "identification": "An outright SGA identification in the caption, with the office named. The archive carries this man twice under two spellings, Salvador Leon (International Senator, 2022-23) and Salvador Leoń (Administrative Vice President, 2023-24), and the worklist row 'Salvador Leon Golib' is the 2022-23 senator record; years.json's own 2023-24 note says the names point to one person. Same frame as the existing 2022-23-salvador-leon.jpg, cropped again for this row.",
+  "src": {
+   "label": "College Heights Herald, 24 January 2024, first SGA meeting of the spring semester; cropped to the only standing figure, at the lectern",
+   "url": "https://wkuherald.com/wp-content/uploads/2024/01/ER12077.jpg"
+  }
+ },
+ {
+  "year": "2022-23",
+  "name": "Adan Canizalez",
+  "file": "2022-23-adan-canizalez.jpg",
+  "replaces": null,
+  "width": 370,
+  "height": 420,
+  "why": "A sharp, well lit, laughing face in three-quarter view, cropped from a landscape frame. The caption names one person and describes the one thing only he is doing in the picture: holding a goat above his head. Nobody else in the frame has a goat.",
+  "caption_quote": "Adan Canizalez, a junior biology major, holds a goat in the air while doing yoga poses during the Goat Yoga event at the First Year Village on Thursday, March 23, 2023.",
+  "identification": "The caption names him alone as the man doing the action the picture shows. The archive lists Adan Canizalez as a Senator At Large in 2022-23 and again in 2023-24; the caption calls him a WKU junior in March 2023, inside that run, and Canizalez is an uncommon surname at WKU. Confirmed against a second Herald frame six weeks later, 'Junior WKU biology student Adan Canizalez (20, left) celebrates with graduating healthcare administration student Tramaine Hawkins (23, right)' (wkuherald.com/wp-content/uploads/2023/05/WalkBashCommencement_25-1.jpg), where the man positioned at left is the same face and the caption again gives biology and junior.",
+  "src": {
+   "label": "College Heights Herald, 24 March 2023, Goat Yoga at the First Year Village; cropped to the man holding the goat",
+   "url": "https://wkuherald.com/wp-content/uploads/2023/03/arnold_goatyoga8.jpg"
+  }
+ }
+]
