@@ -55,6 +55,20 @@ def publishable(fact):
     return not INTERNAL.search(fact)
 
 
+def clip(fact, limit=600):
+    """Cut a long account at a sentence end, never mid-word.
+
+    Cutting on the character count alone put four notes on the site ending
+    "she asked me" and "set a policy req". A note that stops mid-sentence
+    reads as though the archive does not know how the sentence ended.
+    """
+    fact = fact.strip()
+    if len(fact) <= limit:
+        return fact
+    ends = [m.end() for m in re.finditer(r"[.!?](?=\s|$)", fact[:limit])]
+    return fact[:ends[-1]] if ends else fact[:limit].rsplit(" ", 1)[0]
+
+
 def fold(s):
     s = unicodedata.normalize("NFKD", str(s or ""))
     s = "".join(c for c in s if not unicodedata.combining(c))
@@ -150,7 +164,7 @@ def main():
             if (e.get("note") or "").strip():
                 already += 1
                 continue
-            e["note"] = fact[:600]
+            e["note"] = clip(fact)
             if not e.get("src") and not e.get("sources"):
                 e["src"] = {"label": src["label"], "url": src["url"]}
             written.append((year, name, fact))
