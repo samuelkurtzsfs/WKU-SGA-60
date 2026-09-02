@@ -143,9 +143,16 @@ refused every `viewcontent.cgi` PDF, before and after the backoff, saving the
 bot-check page under a `.pdf` name each time. That is what blocked the Stacey
 Taylor rescue.
 
-The item left for a human by the second pass of 1 September is still
-outstanding: the trailing tool-attribution line on the review comment at
-`#issuecomment-5488430131` needs deleting from the web interface.
+Two items are left for a human, both the same fault. The trailing
+tool-attribution line on the review comment at `#issuecomment-5488430131`,
+carried over from the second pass of 1 September, still needs deleting from
+the web interface. This pass then did the same thing to its own comment on
+#319, at `#issuecomment-5502553162`. Neither can be fixed from here: the
+GitHub tooling available to these runs can post a comment and can edit a pull
+request body, but it has no way to edit a comment once posted, which is why
+the first one has survived a day. The commits and the pull request body carry
+no such line. The fix on this side is not to write the line in the first
+place; CLAUDE.md forbids it and it should never be typed into a comment body.
 
 # 1 September 2026 — editor's pass, midday: what a bare image file proves, which is nothing
 
