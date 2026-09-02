@@ -1,0 +1,1525 @@
+{
+ "what_this_is": "Index lookups for every archive.org Talisman, done once so a researcher does not repeat them. For each volume, the people who still need a face and the printed pages the volume's own back index gives them. A person listed on the volume's SGA page AND on another page is the safe case: the second page is usually their class portrait, and the shared page is what ties the face to the seat. Given names were matched, not just surnames, so nobody here is a namesake.",
+ "likely_sga_page": {
+  "1974": {
+   "page": "247",
+   "people_on_it": 4
+  },
+  "1975": {
+   "page": "282",
+   "people_on_it": 3
+  },
+  "1976": {
+   "page": "63",
+   "people_on_it": 17
+  },
+  "1977": {
+   "page": "51",
+   "people_on_it": 7
+  },
+  "1978": {
+   "page": "34",
+   "people_on_it": 11
+  },
+  "1979": {
+   "page": "336",
+   "people_on_it": 9
+  },
+  "1980": {
+   "page": "268",
+   "people_on_it": 3
+  },
+  "1981": {
+   "page": "282",
+   "people_on_it": 13
+  },
+  "1987": {
+   "page": "114",
+   "people_on_it": 12
+  }
+ },
+ "by_volume": {
+  "1971": {
+   "Joe Gerard": [
+    {
+     "given": "Joe Stark",
+     "pages": [
+      "67",
+      "127",
+      "183"
+     ],
+     "leaf": 409
+    }
+   ]
+  },
+  "1972": {
+   "Danny Creasy": [
+    {
+     "given": "Danny Lynn",
+     "pages": [
+      "225",
+      "273"
+     ],
+     "leaf": 430
+    }
+   ],
+   "Donna Porter": [
+    {
+     "given": "Donna Jo",
+     "pages": [
+      "2",
+      "368"
+     ],
+     "leaf": 443
+    }
+   ],
+   "Gayle Sharp": [
+    {
+     "given": "Gayle Burriss",
+     "pages": [
+      "247",
+      "273"
+     ],
+     "leaf": 444
+    }
+   ]
+  },
+  "1974": {
+   "Debbie Filburn": [
+    {
+     "given": "Debra Ann",
+     "pages": [
+      "247",
+      "267"
+     ],
+     "leaf": 444
+    },
+    {
+     "given": "Debra Ann",
+     "pages": [
+      "247",
+      "267"
+     ],
+     "leaf": 444
+    }
+   ],
+   "Jan Clark": [
+    {
+     "given": "Janice Carol",
+     "pages": [
+      "258"
+     ],
+     "leaf": 441
+    },
+    {
+     "given": "Janice Carol",
+     "pages": [
+      "258"
+     ],
+     "leaf": 441
+    },
+    {
+     "given": "Janis Elaine",
+     "pages": [
+      "247",
+      "388"
+     ],
+     "leaf": 441
+    },
+    {
+     "given": "Janis Elaine",
+     "pages": [
+      "247",
+      "388"
+     ],
+     "leaf": 441
+    }
+   ],
+   "Jeff Wampler": [
+    {
+     "given": "Jeffrey Lee",
+     "pages": [
+      "282",
+      "398"
+     ],
+     "leaf": 465
+    }
+   ]
+  },
+  "1975": {
+   "Gail Getchell": [
+    {
+     "given": "Gail Diane",
+     "pages": [
+      "90",
+      "250",
+      "290"
+     ],
+     "leaf": 438
+    }
+   ],
+   "Jeff Wampler": [
+    {
+     "given": "Jeffrey Lee",
+     "pages": [
+      "282",
+      "384"
+     ],
+     "leaf": 461
+    },
+    {
+     "given": "Jeffrey Lee",
+     "pages": [
+      "282",
+      "384"
+     ],
+     "leaf": 461
+    }
+   ],
+   "John Draheim": [
+    {
+     "given": "John Robert",
+     "pages": [
+      "282",
+      "394"
+     ],
+     "leaf": 435
+    }
+   ],
+   "Larry Hooks": [
+    {
+     "given": "Larry James",
+     "pages": [
+      "284"
+     ],
+     "leaf": 442
+    }
+   ],
+   "Rodney Berry": [
+    {
+     "given": "Rodney Burns",
+     "pages": [
+      "108",
+      "276"
+     ],
+     "leaf": 428
+    },
+    {
+     "given": "Rodney Burns",
+     "pages": [
+      "108",
+      "276"
+     ],
+     "leaf": 428
+    }
+   ]
+  },
+  "1976": {
+   "Debbie Marcum": [
+    {
+     "given": "Debra Lynn",
+     "pages": [
+      "63",
+      "303"
+     ],
+     "leaf": 446
+    },
+    {
+     "given": "Debra Lynn",
+     "pages": [
+      "63",
+      "303"
+     ],
+     "leaf": 446
+    }
+   ],
+   "Howard Sypher": [
+    {
+     "given": "Howard Elliott",
+     "pages": [
+      "20",
+      "63"
+     ],
+     "leaf": 457
+    }
+   ],
+   "Jeff Cashdollar": [
+    {
+     "given": "Jeffrey James",
+     "pages": [
+      "63"
+     ],
+     "leaf": 429
+    }
+   ],
+   "Jenny Parker": [
+    {
+     "given": "Jenny Lu",
+     "pages": [
+      "63",
+      "270"
+     ],
+     "leaf": 452
+    },
+    {
+     "given": "Jenny Lu",
+     "pages": [
+      "63",
+      "270"
+     ],
+     "leaf": 452
+    },
+    {
+     "given": "Jenny Lu",
+     "pages": [
+      "63",
+      "270"
+     ],
+     "leaf": 452
+    },
+    {
+     "given": "Jenny Lu",
+     "pages": [
+      "63",
+      "270"
+     ],
+     "leaf": 452
+    },
+    {
+     "given": "Jenny Lu",
+     "pages": [
+      "63",
+      "270"
+     ],
+     "leaf": 452
+    }
+   ],
+   "Kathi Tabor": [
+    {
+     "given": "Kathi Jo",
+     "pages": [
+      "63",
+      "268"
+     ],
+     "leaf": 457
+    },
+    {
+     "given": "Kathi Jo",
+     "pages": [
+      "63",
+      "268"
+     ],
+     "leaf": 457
+    }
+   ],
+   "Pat Williams": [
+    {
+     "given": "Patricia A.",
+     "pages": [
+      "271",
+      "305",
+      "419"
+     ],
+     "leaf": 461
+    },
+    {
+     "given": "Patricia A.",
+     "pages": [
+      "271",
+      "305",
+      "419"
+     ],
+     "leaf": 461
+    },
+    {
+     "given": "Patricia A.",
+     "pages": [
+      "271",
+      "305",
+      "419"
+     ],
+     "leaf": 461
+    },
+    {
+     "given": "Patricia A.",
+     "pages": [
+      "271",
+      "305",
+      "419"
+     ],
+     "leaf": 461
+    },
+    {
+     "given": "Patricia A.",
+     "pages": [
+      "271",
+      "305",
+      "419"
+     ],
+     "leaf": 461
+    },
+    {
+     "given": "Patricia Lynn",
+     "pages": [
+      "306",
+      "373"
+     ],
+     "leaf": 461
+    },
+    {
+     "given": "Patricia Lynn",
+     "pages": [
+      "306",
+      "373"
+     ],
+     "leaf": 461
+    },
+    {
+     "given": "Patricia Lynn",
+     "pages": [
+      "306",
+      "373"
+     ],
+     "leaf": 461
+    },
+    {
+     "given": "Patricia Lynn",
+     "pages": [
+      "306",
+      "373"
+     ],
+     "leaf": 461
+    }
+   ],
+   "Patty Campbell": [
+    {
+     "given": "Patricia Ann",
+     "pages": [
+      "63",
+      "267"
+     ],
+     "leaf": 429
+    },
+    {
+     "given": "Patricia Ann",
+     "pages": [
+      "63",
+      "267"
+     ],
+     "leaf": 429
+    },
+    {
+     "given": "Patricia Ann",
+     "pages": [
+      "63",
+      "267"
+     ],
+     "leaf": 429
+    },
+    {
+     "given": "Patricia Ann",
+     "pages": [
+      "63",
+      "267"
+     ],
+     "leaf": 429
+    },
+    {
+     "given": "Patricia Ann",
+     "pages": [
+      "63",
+      "267"
+     ],
+     "leaf": 429
+    },
+    {
+     "given": "Patricia Ann",
+     "pages": [
+      "63",
+      "267"
+     ],
+     "leaf": 429
+    }
+   ]
+  },
+  "1977": {
+   "Bill Cortus": [
+    {
+     "given": "William James",
+     "pages": [
+      "307",
+      "325",
+      "389",
+      "399"
+     ],
+     "leaf": 424
+    }
+   ],
+   "Don Augenstein": [
+    {
+     "given": "Donald Edward",
+     "pages": [
+      "11",
+      "51",
+      "282"
+     ],
+     "leaf": 420
+    },
+    {
+     "given": "Donald Edward",
+     "pages": [
+      "11",
+      "51",
+      "282"
+     ],
+     "leaf": 420
+    },
+    {
+     "given": "Donald Edward",
+     "pages": [
+      "11",
+      "51",
+      "282"
+     ],
+     "leaf": 420
+    }
+   ],
+   "Gene Saunders": [
+    {
+     "given": "Gene Thomas",
+     "pages": [
+      "383"
+     ],
+     "leaf": 447
+    },
+    {
+     "given": "Gene Thomas",
+     "pages": [
+      "383"
+     ],
+     "leaf": 447
+    },
+    {
+     "given": "Gene Thomas",
+     "pages": [
+      "383"
+     ],
+     "leaf": 447
+    }
+   ],
+   "George Carlson": [
+    {
+     "given": "Georgiana Lynn",
+     "pages": [
+      "51",
+      "267",
+      "387"
+     ],
+     "leaf": 422
+    },
+    {
+     "given": "Georgiana Lynn",
+     "pages": [
+      "51",
+      "267",
+      "387"
+     ],
+     "leaf": 422
+    }
+   ],
+   "Georgiana Carlson": [
+    {
+     "given": "Georgiana Lynn",
+     "pages": [
+      "51",
+      "267",
+      "387"
+     ],
+     "leaf": 422
+    },
+    {
+     "given": "Georgiana Lynn",
+     "pages": [
+      "51",
+      "267",
+      "387"
+     ],
+     "leaf": 422
+    }
+   ],
+   "Mike Seiler": [
+    {
+     "given": "Michael Anthony",
+     "pages": [
+      "93"
+     ],
+     "leaf": 447
+    }
+   ]
+  },
+  "1978": {
+   "Brad Ford": [
+    {
+     "given": "Bradley Scott",
+     "pages": [
+      "33"
+     ],
+     "leaf": 435
+    },
+    {
+     "given": "Bradley Scott",
+     "pages": [
+      "33"
+     ],
+     "leaf": 435
+    },
+    {
+     "given": "Bradley Scott",
+     "pages": [
+      "33"
+     ],
+     "leaf": 435
+    },
+    {
+     "given": "Bradley Scott",
+     "pages": [
+      "33"
+     ],
+     "leaf": 435
+    }
+   ],
+   "David Bass": [
+    {
+     "given": "David Eugene",
+     "pages": [
+      "34"
+     ],
+     "leaf": 429
+    },
+    {
+     "given": "David Eugene",
+     "pages": [
+      "34"
+     ],
+     "leaf": 429
+    },
+    {
+     "given": "David Eugene",
+     "pages": [
+      "34"
+     ],
+     "leaf": 429
+    },
+    {
+     "given": "David Eugene",
+     "pages": [
+      "34"
+     ],
+     "leaf": 429
+    }
+   ],
+   "Gene Saunders": [
+    {
+     "given": "Gene Thomas",
+     "pages": [
+      "34"
+     ],
+     "leaf": 457
+    },
+    {
+     "given": "Gene Thomas",
+     "pages": [
+      "34"
+     ],
+     "leaf": 457
+    },
+    {
+     "given": "Gene Thomas",
+     "pages": [
+      "34"
+     ],
+     "leaf": 457
+    },
+    {
+     "given": "Gene Thomas",
+     "pages": [
+      "34"
+     ],
+     "leaf": 457
+    }
+   ],
+   "Kevin Kinne": [
+    {
+     "given": "Kevin Robert",
+     "pages": [
+      "34"
+     ],
+     "leaf": 444
+    },
+    {
+     "given": "Kevin Robert",
+     "pages": [
+      "34"
+     ],
+     "leaf": 444
+    },
+    {
+     "given": "Kevin Robert",
+     "pages": [
+      "34"
+     ],
+     "leaf": 444
+    }
+   ],
+   "Steve Parnell": [
+    {
+     "given": "Stevie Lynn",
+     "pages": [
+      "255",
+      "317"
+     ],
+     "leaf": 452
+    },
+    {
+     "given": "Stevie Lynn",
+     "pages": [
+      "255",
+      "317"
+     ],
+     "leaf": 452
+    }
+   ]
+  },
+  "1979": {
+   "Dave Clark": [
+    {
+     "given": "David Bryce",
+     "pages": [
+      "291",
+      "304",
+      "336",
+      "350"
+     ],
+     "leaf": 426
+    }
+   ],
+   "Dave Roberts": [
+    {
+     "given": "David Norman",
+     "pages": [
+      "126",
+      "338"
+     ],
+     "leaf": 443
+    },
+    {
+     "given": "David Norman",
+     "pages": [
+      "126",
+      "338"
+     ],
+     "leaf": 443
+    },
+    {
+     "given": "David Norman",
+     "pages": [
+      "126",
+      "338"
+     ],
+     "leaf": 443
+    },
+    {
+     "given": "David Norman",
+     "pages": [
+      "126",
+      "338"
+     ],
+     "leaf": 443
+    },
+    {
+     "given": "David Norman",
+     "pages": [
+      "126",
+      "338"
+     ],
+     "leaf": 443
+    },
+    {
+     "given": "David Norman",
+     "pages": [
+      "126",
+      "338"
+     ],
+     "leaf": 443
+    }
+   ],
+   "David Young": [
+    {
+     "given": "David Paul",
+     "pages": [
+      "289"
+     ],
+     "leaf": 451
+    }
+   ],
+   "Eddie Yates": [
+    {
+     "given": "Eddie",
+     "pages": [
+      "379"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Eddie",
+     "pages": [
+      "379"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Eddie",
+     "pages": [
+      "379"
+     ],
+     "leaf": 451
+    }
+   ],
+   "Ian Young": [
+    {
+     "given": "Ian Troy",
+     "pages": [
+      "332"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Ian Troy",
+     "pages": [
+      "332"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Ian Troy",
+     "pages": [
+      "332"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Ian Troy",
+     "pages": [
+      "332"
+     ],
+     "leaf": 451
+    }
+   ],
+   "Jamie Hargrove": [
+    {
+     "given": "James Earl",
+     "pages": [
+      "290"
+     ],
+     "leaf": 433
+    }
+   ],
+   "Melody Berryman": [
+    {
+     "given": "Melody Ann",
+     "pages": [
+      "298",
+      "345"
+     ],
+     "leaf": 423
+    },
+    {
+     "given": "Melody Ann",
+     "pages": [
+      "298",
+      "345"
+     ],
+     "leaf": 423
+    },
+    {
+     "given": "Melody Ann",
+     "pages": [
+      "298",
+      "345"
+     ],
+     "leaf": 423
+    },
+    {
+     "given": "Melody Ann",
+     "pages": [
+      "298",
+      "345"
+     ],
+     "leaf": 423
+    }
+   ],
+   "Rita Young": [
+    {
+     "given": "Rita Cheryl",
+     "pages": [
+      "282",
+      "379"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Rita Cheryl",
+     "pages": [
+      "282",
+      "379"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Rita Cheryl",
+     "pages": [
+      "282",
+      "379"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Rita Kaye",
+     "pages": [
+      "401"
+     ],
+     "leaf": 451
+    }
+   ],
+   "Shaun Bryant": [
+    {
+     "given": "Shawn Ratliff",
+     "pages": [
+      "346"
+     ],
+     "leaf": 424
+    }
+   ],
+   "Steve Wilson": [
+    {
+     "given": "Steve Alan",
+     "pages": [
+      "296",
+      "318",
+      "320",
+      "336"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Steve Alan",
+     "pages": [
+      "296",
+      "318",
+      "320",
+      "336"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Steve Alan",
+     "pages": [
+      "296",
+      "318",
+      "320",
+      "336"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Steve Alan",
+     "pages": [
+      "296",
+      "318",
+      "320",
+      "336"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Steve Alan",
+     "pages": [
+      "296",
+      "318",
+      "320",
+      "336"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Steve Alan",
+     "pages": [
+      "296",
+      "318",
+      "320",
+      "336"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Steve Alan",
+     "pages": [
+      "296",
+      "318",
+      "320",
+      "336"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Steve Alan",
+     "pages": [
+      "296",
+      "318",
+      "320",
+      "336"
+     ],
+     "leaf": 451
+    },
+    {
+     "given": "Stevie Joe",
+     "pages": [
+      "379"
+     ],
+     "leaf": 451
+    }
+   ]
+  },
+  "1980": {
+   "Judy Beard": [
+    {
+     "given": "Judith Lee",
+     "pages": [
+      "268",
+      "275",
+      "322",
+      "329",
+      "374"
+     ],
+     "leaf": 415
+    },
+    {
+     "given": "Judith Lee",
+     "pages": [
+      "268",
+      "275",
+      "322",
+      "329",
+      "374"
+     ],
+     "leaf": 415
+    },
+    {
+     "given": "Judith Lee",
+     "pages": [
+      "268",
+      "275",
+      "322",
+      "329",
+      "374"
+     ],
+     "leaf": 415
+    }
+   ],
+   "Tim Irons": [
+    {
+     "given": "Timothy Collins",
+     "pages": [
+      "274",
+      "335",
+      "377"
+     ],
+     "leaf": 423
+    }
+   ]
+  },
+  "1981": {
+   "Allison Boyd": [
+    {
+     "given": "Allison Anne",
+     "pages": [
+      "274",
+      "282",
+      "319"
+     ],
+     "leaf": 390
+    },
+    {
+     "given": "Allison Anne",
+     "pages": [
+      "274",
+      "282",
+      "319"
+     ],
+     "leaf": 390
+    },
+    {
+     "given": "Allison Anne",
+     "pages": [
+      "274",
+      "282",
+      "319"
+     ],
+     "leaf": 390
+    },
+    {
+     "given": "Allison Anne",
+     "pages": [
+      "274",
+      "282",
+      "319"
+     ],
+     "leaf": 390
+    },
+    {
+     "given": "Allison Anne",
+     "pages": [
+      "274",
+      "282",
+      "319"
+     ],
+     "leaf": 390
+    },
+    {
+     "given": "Allison Anne",
+     "pages": [
+      "274",
+      "282",
+      "319"
+     ],
+     "leaf": 390
+    }
+   ],
+   "Charles Bussell": [
+    {
+     "given": "Charles Edward",
+     "pages": [
+      "282",
+      "371"
+     ],
+     "leaf": 390
+    }
+   ],
+   "Debbie Thomas": [
+    {
+     "given": "Deborah Lynn",
+     "pages": [
+      "356"
+     ],
+     "leaf": 408
+    },
+    {
+     "given": "Deborah Lynn",
+     "pages": [
+      "356"
+     ],
+     "leaf": 408
+    }
+   ],
+   "Glenn Humphrey": [
+    {
+     "given": "Glenn Douglas",
+     "pages": [
+      "288",
+      "311"
+     ],
+     "leaf": 398
+    },
+    {
+     "given": "Glenn Douglas",
+     "pages": [
+      "288",
+      "311"
+     ],
+     "leaf": 399
+    },
+    {
+     "given": "Glenn Douglas",
+     "pages": [
+      "288",
+      "311"
+     ],
+     "leaf": 399
+    },
+    {
+     "given": "Glenn Douglas",
+     "pages": [
+      "288",
+      "311"
+     ],
+     "leaf": 399
+    },
+    {
+     "given": "Glenn Douglas",
+     "pages": [
+      "288",
+      "311"
+     ],
+     "leaf": 399
+    },
+    {
+     "given": "Glenn Douglas",
+     "pages": [
+      "288",
+      "311"
+     ],
+     "leaf": 399
+    }
+   ],
+   "Jim Brumfield": [
+    {
+     "given": "James Clay",
+     "pages": [
+      "290",
+      "314",
+      "349"
+     ],
+     "leaf": 390
+    },
+    {
+     "given": "James Clay",
+     "pages": [
+      "290",
+      "314",
+      "349"
+     ],
+     "leaf": 390
+    },
+    {
+     "given": "James Clay",
+     "pages": [
+      "290",
+      "314",
+      "349"
+     ],
+     "leaf": 390
+    }
+   ],
+   "Kevin Kinne": [
+    {
+     "given": "Kevin Robert",
+     "pages": [
+      "282"
+     ],
+     "leaf": 400
+    },
+    {
+     "given": "Kevin Robert",
+     "pages": [
+      "282"
+     ],
+     "leaf": 400
+    },
+    {
+     "given": "Kevin Robert",
+     "pages": [
+      "282"
+     ],
+     "leaf": 400
+    },
+    {
+     "given": "Kevin Robert",
+     "pages": [
+      "282"
+     ],
+     "leaf": 400
+    }
+   ],
+   "Mark Chesnut": [
+    {
+     "given": "Mark Cameron",
+     "pages": [
+      "234"
+     ],
+     "leaf": 392
+    },
+    {
+     "given": "Mark Cameron",
+     "pages": [
+      "234"
+     ],
+     "leaf": 392
+    }
+   ],
+   "Marsha Sanner": [
+    {
+     "given": "Marsha Lee",
+     "pages": [
+      "208",
+      "282",
+      "304",
+      "340"
+     ],
+     "leaf": 406
+    }
+   ],
+   "Maura Fleenor": [
+    {
+     "given": "Maura Ann",
+     "pages": [
+      "304"
+     ],
+     "leaf": 395
+    },
+    {
+     "given": "Maura Ann",
+     "pages": [
+      "304"
+     ],
+     "leaf": 395
+    }
+   ],
+   "Osama Sharif": [
+    {
+     "given": "Osama Yasseen",
+     "pages": [
+      "264",
+      "282",
+      "354"
+     ],
+     "leaf": 406
+    }
+   ],
+   "Patti Davis": [
+    {
+     "given": "Patti",
+     "pages": [
+      "47"
+     ],
+     "leaf": 393
+    }
+   ],
+   "Shawn Bryant": [
+    {
+     "given": "Shawn Ratliff",
+     "pages": [
+      "320"
+     ],
+     "leaf": 390
+    }
+   ],
+   "Sheren Compton": [
+    {
+     "given": "Sheren Lee",
+     "pages": [
+      "284"
+     ],
+     "leaf": 392
+    },
+    {
+     "given": "Sheren Lee",
+     "pages": [
+      "284"
+     ],
+     "leaf": 392
+    },
+    {
+     "given": "Sheren Lee",
+     "pages": [
+      "284"
+     ],
+     "leaf": 392
+    },
+    {
+     "given": "Sheren Lee",
+     "pages": [
+      "284"
+     ],
+     "leaf": 392
+    },
+    {
+     "given": "Sheren Lee",
+     "pages": [
+      "284"
+     ],
+     "leaf": 392
+    },
+    {
+     "given": "Sheren Lee",
+     "pages": [
+      "284"
+     ],
+     "leaf": 392
+    },
+    {
+     "given": "Sheren Lee",
+     "pages": [
+      "284"
+     ],
+     "leaf": 392
+    },
+    {
+     "given": "Sheren Lee",
+     "pages": [
+      "284"
+     ],
+     "leaf": 392
+    }
+   ]
+  },
+  "1987": {
+   "Andrea Collin": [
+    {
+     "given": "Andrea Lee",
+     "pages": [
+      "114"
+     ],
+     "leaf": 375
+    },
+    {
+     "given": "Andrea Lee",
+     "pages": [
+      "114"
+     ],
+     "leaf": 375
+    },
+    {
+     "given": "Andrea Lee",
+     "pages": [
+      "114"
+     ],
+     "leaf": 375
+    },
+    {
+     "given": "Andrea Lee",
+     "pages": [
+      "114"
+     ],
+     "leaf": 375
+    }
+   ],
+   "Bill Fogle": [
+    {
+     "given": "William Bernard",
+     "pages": [
+      "119"
+     ],
+     "leaf": 377
+    },
+    {
+     "given": "William Bernard",
+     "pages": [
+      "119"
+     ],
+     "leaf": 377
+    }
+   ],
+   "Donald Herron": [
+    {
+     "given": "Donald E. Jr.",
+     "pages": [
+      "114",
+      "115"
+     ],
+     "leaf": 379
+    }
+   ],
+   "Hollie Hale": [
+    {
+     "given": "Hollie Elaine",
+     "pages": [
+      "103",
+      "114",
+      "118"
+     ],
+     "leaf": 379
+    }
+   ],
+   "Julie Deboy": [
+    {
+     "given": "Julie Renee",
+     "pages": [
+      "31",
+      "115",
+      "283",
+      "319"
+     ],
+     "leaf": 376
+    }
+   ],
+   "Karen Lassiter": [
+    {
+     "given": "Karen Elaine",
+     "pages": [
+      "114",
+      "337"
+     ],
+     "leaf": 380
+    }
+   ],
+   "Kimberly Summers": [
+    {
+     "given": "Kimberly Bilete",
+     "pages": [
+      "114",
+      "119",
+      "345"
+     ],
+     "leaf": 385
+    },
+    {
+     "given": "Kimberly Bilete",
+     "pages": [
+      "114",
+      "119",
+      "345"
+     ],
+     "leaf": 385
+    }
+   ],
+   "Laura Dibert": [
+    {
+     "given": "Laura Lynn",
+     "pages": [
+      "114",
+      "160"
+     ],
+     "leaf": 377
+    }
+   ],
+   "Laura Tracy": [
+    {
+     "given": "Laura E.",
+     "pages": [
+      "114",
+      "119"
+     ],
+     "leaf": 387
+    }
+   ],
+   "Martha Wilson": [
+    {
+     "given": "Martha Ann",
+     "pages": [
+      "18",
+      "1",
+      "14"
+     ],
+     "leaf": 388
+    },
+    {
+     "given": "Mary Delia",
+     "pages": [
+      "348"
+     ],
+     "leaf": 388
+    }
+   ],
+   "Terri Wakefield": [
+    {
+     "given": "Terri Lynn",
+     "pages": [
+      "114",
+      "361"
+     ],
+     "leaf": 387
+    }
+   ]
+  }
+ }
+}
