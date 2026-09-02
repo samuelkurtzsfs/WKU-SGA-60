@@ -13659,8 +13659,23 @@ lives and that the judicial selection was subject to approval.
 
 A citation has to lead to the evidence, not merely near it. This one named the
 right newspaper, the right week and the right words, and still sent a checker to
-a page that would have made the entry look fabricated. On a modern Herald story
-the caption often lives on the attachment page, not the article; cite that.
+a page that would have made the entry look fabricated.
+
+Be precise about when that happens, because the obvious generalisation is wrong
+and acting on it would do harm. Checked it rather than assuming: of 176 Herald
+portraits, 81 cite an article page and only 2 an attachment page. Sampled five
+of the 81. Two carry a caption naming the subject on the article itself. The
+other three — Boka, Richey, Taylor — carry no caption naming them, but each is
+an article *about* that person (15, 47 and 15 mentions of the surname) with a
+single photograph on it, which is identification from context and is exactly
+what this project's rules accept. None of them needs changing.
+
+The Hedrick entry was the unusual shape: an article about a *programme* with two
+student subjects, where the one surviving photograph is of the other one. That
+is the case where the article page actively contradicts the credit, and that is
+the case where the attachment page is the right citation. A run should repoint a
+credit when the cited page has no photograph of the subject at all — not merely
+when it lacks a caption.
 
 And: measure before reverting. Both of this pass's first instincts — restyle the
 credit, withdraw the portrait — were wrong, and each would have damaged
