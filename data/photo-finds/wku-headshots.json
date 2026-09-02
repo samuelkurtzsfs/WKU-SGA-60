@@ -1,0 +1,30 @@
+[
+ {
+  "year": "2023-24",
+  "name": "Annalise Finch",
+  "file": "2023-24-annalise-finch.jpg",
+  "replaces": null,
+  "width": 600,
+  "height": 900,
+  "why": "WKU's own official headshot of the executive vice president, a studio portrait published by SGA itself. Downscaled from 4480x6720.",
+  "caption_quote": "published as annalise_finch_min.jpg in SGA's 2023-2024 executive headshots directory",
+  "src": {
+   "label": "WKU Student Government Association, 2023-2024 executive branch headshots",
+   "url": "https://www.wku.edu/sga/2023-2024-executive/headshots/annalise_finch_min.jpg"
+  }
+ },
+ {
+  "year": "2023-24",
+  "name": "Sydney Denney",
+  "file": "2023-24-sydney-denney.jpg",
+  "replaces": null,
+  "width": 600,
+  "height": 900,
+  "why": "WKU's own official headshot of the speaker of the senate, a studio portrait published by SGA itself. Downscaled from 4480x6720.",
+  "caption_quote": "published as sydney_denney_min.jpg in SGA's 2023-2024 executive headshots directory",
+  "src": {
+   "label": "WKU Student Government Association, 2023-2024 executive branch headshots",
+   "url": "https://www.wku.edu/sga/2023-2024-executive/headshots/sydney_denney_min.jpg"
+  }
+ }
+]
