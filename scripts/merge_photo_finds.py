@@ -119,11 +119,27 @@ def barred():
         if not isinstance(r, dict):
             continue
         for field in ("url", "file"):
-            v = str(r.get(field) or "")
-            if v.startswith("http"):
-                out[v.strip()] = (r.get("name", "?"),
-                                  r.get("reason") or "withdrawn by an editor")
+            v = str(r.get(field) or "").strip()
+            if not v.startswith("http") or not frame_level(v):
+                continue
+            out[v] = (r.get("name", "?"),
+                      r.get("reason") or "withdrawn by an editor")
     return out
+
+
+# A register entry has to name one photograph. An entry pointing at a whole
+# volume or collection bars every picture in it: one written against a single
+# yearbook page carried the volume's own landing page as its url and refused
+# forty-five good portraits cut from that book on the next run.
+COLLECTION = re.compile(
+    r"archive\.org/(details|download)/[^/]+/?$"
+    r"|digitalcommons\.[^/]+/[a-z_]+/\d+/?$"
+    r"|/$", re.I)
+
+
+def frame_level(url):
+    """Does this url address one photograph rather than a whole source?"""
+    return not COLLECTION.search(url)
 
 
 def check(rec, known, no=None):
