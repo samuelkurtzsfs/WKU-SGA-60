@@ -1,3 +1,152 @@
+# 2 September 2026 — editor's pass: four notes that stopped mid-word, and two faces with nothing behind them
+
+No pull request was open. The queue has been empty since #318 was merged at
+18:32 on 1 September, and the six `research-*` branches from 4 August are the
+superseded snapshots with no merge base, unchanged. So this pass did what the
+last three did and audited what reached `main` without an editor.
+
+## Ten commits went straight to `main` after the last report was written
+
+Between 18:35 and 19:04 on 1 September the portrait routine pushed ten commits
+to `main`: 98 new portraits, notes for members of four decades, and a change to
+four scripts. `main` deploys on push, so all of it was live and none of it had
+been read. That is the same pattern the midday pass of 1 September described,
+and it is still the reason these passes exist.
+
+## What was checked
+
+Ten claims across the diff, opened at their own sources.
+
+Five portraits held up completely. The Calleigh Powell crop is from the
+Herald's homecoming football gallery of 29 October 2022, whose caption names
+her outright as the newly crowned homecoming queen greeted by fans outside
+Houchens Industries L.T. Smith Stadium. The Demani Bell crop is from the
+Hilltopper Family Fall Gathering story of 19 November 2024, and the caption
+names him with Caboni, which is what "identified by eliminating Caboni" means.
+
+The three *Talisman* class-portrait crops are the best-evidenced work in the
+diff and they should be said to be. Fred Price, Joanie Baumeister and Cathi
+Stillwell are each pinned by counting a named block of portraits across a grid,
+and every step is checkable against the volume's own back index. The 1973 index
+puts Powell, Powell, Powell, Power, Presler, Price, Pritchett and Pryor all on
+p. 410, in the order the label gives, and enters Price, Fred Franklin at 260,
+397 and 410 exactly as claimed; p. 397 carries the words the label quotes.
+The 1972 index gives Baumeister, Joan at 236, 237, 304 and 306 and Stillwell,
+Catherine M. at 268 and 387, both exact. This method works and is worth keeping.
+
+Two note claims were checked against the documents they cite. The minutes of
+8 December 1998 are described by TopSCHOLAR as the meeting on the resignation
+of vice president Brad Sweatt, which is what the note says. The minutes of
+27 August 2002 are described as covering appointments, which is consistent
+with the appointment the note reports.
+
+## What was cut
+
+**Two portraits, withdrawn and entered in `_do-not-use.json`.**
+
+Stacey Taylor, 2000-01. The crop is from Herald 76:54, pp. 10-11, and the
+article on those pages is Wendi Thompson's "A Tale of Two Sisters", about
+Natalie Taylor and Stacey Taylor, twins. The entry recorded only "cropped from
+a group photo" and gave no basis whatever for telling one sister from the
+other. The archive already knows what this costs: the Lodmell entry in
+CLAUDE.md exists because two sisters are the hardest thing in this record to
+keep straight. The issue PDF was refused twice, once after the full 90-second
+backoff, so the caption could not be read this pass. It can be restored by
+reading pp. 10-11 and putting the positional cue in the label.
+
+Symone Whalin, 2018-19. The label dated the frame to an SGA meeting of
+27 February 2019 and identified her as the only standing figure at the lectern.
+The Herald filed the image under its March 2018 upload path, which is earlier
+than any service the archive records for her — her first citation is the Senate
+minutes of 26 March 2019 — and no article carrying the image could be found to
+supply a caption. An identification with nothing behind it.
+
+**One note, cut whole.** Angelika Masero, 2009-10, carried three sentences of
+post-service biography: a 2010 graduation, a 2014 Fulbright assistantship, and
+her employer, named, at a named high school. Its cited source is the SGA senate
+minutes of 20 October 2009, which report none of it. Unconnected to her SGA
+service and unsourced against the source given.
+
+## What was corrected rather than cut
+
+**Six notes stopped mid-sentence on the live site.** Four were cut at exactly
+600 characters and ended "she asked me", "backed New Level", "set a policy req"
+and "the ruling on the secretary report". Two more ended on an ellipsis, one
+of them breaking off in the middle of the list of executives it was making a
+point about. Each was trimmed back to where the evidence actually ends. Nothing
+was added.
+
+The cause is `scripts/merge_notes.py`, which wrote `fact[:600]` — a character
+count with no idea where a sentence is. It now cuts at the last sentence end
+inside the limit and never mid-word. This is trap 7 again, a script that
+reported success while producing something wrong, and it is the fourth time in
+this file.
+
+## One thing the routine should know
+
+Forty-two of the 98 new portraits cite a bare image file on
+`wkuherald.com/wp-content/uploads/`. All forty-two resolve, and the ones that
+could be traced to their article were right. But a raw image URL carries no
+caption, so the reader cannot check the identification and the next editor
+cannot either. Both faces withdrawn this pass were of that kind, and the
+*Talisman* entries, which show their whole reasoning, were the ones that held.
+
+Cite the article whose caption names the subject. Keep the image URL as well
+if it helps, but the article is the evidence and it is the thing a reader needs.
+
+## Forty-two more faces landed while this pass was running
+
+A further 42 portraits reached `main` mid-pass, and they are a different and
+better class of work: 20 from *Talisman* volumes on archive.org, 21 from
+TopSCHOLAR, one from wku.edu, and not one bare image file. They were screened
+rather than sampled one by one.
+
+The screen turned up one thing worth acting on and one worth saying.
+
+Both Lodmells were given a portrait out of the same 1996-97 Spirit Masters
+scrapbook, which is the arrangement CLAUDE.md warns about in the sharpest
+terms. It survives the warning: Darlene's is p. 9 of the scanned volume and
+Carlene's is p. 10, so these are two separate captioned member boards, not two
+faces picked out of one group frame. That is the right basis, and it should be
+left alone.
+
+The archival reference on all fourteen Spirit Masters citations was wrong.
+They read "WKU Archives UA68, Student Organizations"; UA68 is this archive's
+SGA series and has been carried across by habit. All three scrapbooks are
+UA12/2/16, and TopSCHOLAR's own records for `stu_org/327`, `328` and `329`
+confirm both the number and the years each label claims — 2004-2005, 2007-2008
+and 1996-1997. Corrected in place.
+
+## The duplicate report
+
+The same six pairs as the last pass, all already on `main` and none introduced
+here. Four are an event and its later outcome; two are separate bills filed on
+1 September 1991. Nothing to combine.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,821
+people, 2,650 of those terms (98%) carrying an account of what the person did,
+39 people recorded under more than one name. 60 people have been president.
+668 portraits, 297 documents, 1,111 legislation files. `build.py` completes
+cleanly and `check_data.py` and `check_contrib.py` both exit 0.
+
+## Still open
+
+Unchanged: the twelve-year gap in year photographs, 1993-94 through 2009-10;
+the unread 1977-78 organization chart; the 431 legislation files with a
+readable authors block and no author recorded; John Lyne vs Larry Zielke
+1970-71 and David Payne 1982-83.
+
+`digitalcommons.wku.edu` served its landing pages normally this pass but
+refused every `viewcontent.cgi` PDF, before and after the backoff, saving the
+bot-check page under a `.pdf` name each time. That is what blocked the Stacey
+Taylor rescue.
+
+The item left for a human by the second pass of 1 September is still
+outstanding: the trailing tool-attribution line on the review comment at
+`#issuecomment-5488430131` needs deleting from the web interface.
+
 # 1 September 2026 — editor's pass, midday: what a bare image file proves, which is nothing
 
 No pull request was open again. #313 was merged at 03:23 and nothing has been
