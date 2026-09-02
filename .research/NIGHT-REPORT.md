@@ -13411,3 +13411,96 @@ on rising by one every time a routine comments, until somebody either turns the
 appended line off at the platform end or decides the archive can live with it
 on the pull requests, where it is at least not on the site. Nothing committed
 this pass carries one, and main's history is still clean.
+
+# 2 September 2026, evening — an empty queue, and a citation taken off the wall
+
+## What was in the queue
+
+One open pull request, #324, the rolling photograph PR on `research-photos`.
+Nothing else. The three branches the standing brief still names as stale — #6,
+#7 and #8 from 4 August — were all closed on 18 August; there is nothing left
+there to rescue or to shut.
+
+## #324: nothing to merge, and that is the correct outcome
+
+The afternoon pass reviewed this branch, found its one new entry rewrote a
+working citation into a paragraph of editorial explanation, and withdrew it.
+Checked that independently rather than taking it on trust: the branch's three
+commits are an addition, a merge of main, and the withdrawal, and
+`git diff` from the merge base to the branch tip is empty. Its `data/` is
+identical to main's. There is no diff to spot-check because there is no diff.
+Left open as the rolling PR, and brought up to date with main so the next
+photograph run starts from the current archive rather than fourteen commits
+behind it.
+
+## What was done instead
+
+The afternoon pass left one item flagged and unmade, and it was worth making.
+
+The archive records Steve Thornton as sophomore class president in 1977-78. It
+rested that on a single source — the ASG organization chart of March 1978 —
+whose landing page resolves but whose PDF has been behind the Cloudflare bot
+check for four consecutive runs. A fact the archive asserts on a document no
+reader can currently open is a weak point whether or not the fact is right.
+
+The fact is right, and there is a second source for it that anyone can read.
+The 1978 *Talisman*'s account of the contested April 1978 election says of
+Thornton that he was sophomore president at the time of that election. Verified
+here from the archive.org OCR rather than carried over from the afternoon's
+report: the passage sits in the election-appeal narrative, runs on from Ed
+Johnson's 72-vote loss and the judicial council's rejection of his appeal, and
+ends with the byline and the page number 35 — matching the volume's own index
+entry, "Thornton, Steven Owen 35, 273, 324, 404."
+
+Added as `src2` alongside the chart, not in place of it. The chart stays the
+primary citation and will be readable again when the bot check lifts.
+
+Built both sides and diffed the generated site before committing, which is the
+lesson the afternoon pass wrote up. The new citation renders on `y/1977-78.html`
+and on `o/steven-thornton.html` as a second link beside the first, and nothing
+else on the site moves.
+
+Three other facts already in the record fell out of the same passage and check
+out against it: Johnson's margin of 72 votes, the rules and elections committee
+hearing the protest before the judicial council did, and ASG's vote to support
+the Student Rights Alliance petition on dormitory rules.
+
+## The duplicate report
+
+The same six pairs standing on main. Read again, left alone: each is an
+introduction and its outcome, or separate business transacted on one day.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0, `check_contrib.py` exit 0.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,820
+people, 2,650 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one name. 60 people have been president.
+297 documents and 1,111 legislation files.
+
+## Still open
+
+The gated PDF endpoint at `digitalcommons.wku.edu/cgi/viewcontent.cgi`, checked
+again and still returning the bot challenge. Landing pages on the same domain
+serve normally, and archive.org is unaffected.
+
+The twelve-year gap in year photographs, 1993-94 through 2009-10, unmoved, and
+for the same reason: the gated endpoint, and an archive.org *Talisman* run that
+stops at 1987.
+
+The 431 legislation files with a readable authors block and no author recorded.
+John Lyne vs Larry Zielke 1970-71, and David Payne 1982-83.
+
+The trailing tool-attribution lines on the review comments still need a hand
+edit from the web interface. There are now three: `#issuecomment-5488430131`,
+`#issuecomment-5512032953`, and this pass's own comment on #324,
+`#issuecomment-5514386040`, which was written without one and had one appended
+like the others. The afternoon pass established why no run can fix them: the
+line is added by the platform after posting, and there is no API call available
+to a run for editing a comment once it is up. Pull request bodies can be
+rewritten, and this pass's was — the line was appended to #327 on creation and
+stripped before merge. Nothing committed this pass carries one, and main's
+history is still clean.
