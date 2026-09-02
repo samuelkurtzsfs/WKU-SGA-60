@@ -13391,4 +13391,23 @@ and no author recorded, and John Lyne vs Larry Zielke 1970-71 and David Payne
 The item left for a human by the second pass on 1 September is still
 outstanding — the trailing tool-attribution line on the review comment at
 `#issuecomment-5488430131`, which needs deleting or editing from the web
-interface. Nothing posted or committed this pass carries one.
+interface. There are now two of them: the review comment posted this pass,
+`#issuecomment-5512032953`, carries the same line.
+
+It is worth being exact about how it gets there, because it is not carelessness
+and no amount of care at the writing end will stop it. The line is appended
+after the fact, by the platform, to what a run posts. The comment was written
+without one. The same line was appended to the body of the night-log pull
+request, #325, and that one came off cleanly, because a pull request body can
+be rewritten through the API. A comment cannot: there is no call available to a
+run for editing or deleting one once posted. So the standing instruction in
+AGENT-LANDING.md — read the body back and strip the line — works for pull
+requests and can only ever half-work for comments.
+
+Two things follow. A run should keep reading back what it posts and stripping
+what it can, and should say plainly when it could not, rather than reporting
+its own draft as though that were what went up. And the count of these will go
+on rising by one every time a routine comments, until somebody either turns the
+appended line off at the platform end or decides the archive can live with it
+on the pull requests, where it is at least not on the site. Nothing committed
+this pass carries one, and main's history is still clean.
