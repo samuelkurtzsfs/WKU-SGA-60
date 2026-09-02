@@ -93,11 +93,47 @@ def load_finds():
     return rows
 
 
-def check(rec, known):
+def barred():
+    """Photographs an editor has withdrawn, keyed by the frame, not the person.
+
+    The register was advisory: researchers were told to read it and mostly did,
+    but nothing stopped a later pass re-finding the same frame and offering it
+    again. Two withdrawn faces were back this morning.
+
+    It has to key on the URL rather than the name. Almost every entry rejects a
+    particular photograph, not a person: Kaison Barton is barred from a track
+    and field frame and is published from a good one taken at the lectern, and
+    barring him by name would quietly delete the portrait he has. Only a URL
+    can tell those apart. Entries that describe a frame in prose with no link
+    stay advisory, which is what the brief tells researchers to read them as.
+    """
+    p = FINDS / "_do-not-use.json"
+    if not p.is_file():
+        return {}
+    try:
+        rows = json.loads(p.read_text())
+    except (json.JSONDecodeError, OSError):
+        return {}
+    out = {}
+    for r in rows:
+        if not isinstance(r, dict):
+            continue
+        for field in ("url", "file"):
+            v = str(r.get(field) or "")
+            if v.startswith("http"):
+                out[v.strip()] = (r.get("name", "?"),
+                                  r.get("reason") or "withdrawn by an editor")
+    return out
+
+
+def check(rec, known, no=None):
     """Return the reason to refuse this finding, or None to accept it."""
     year, name, fn = rec.get("year"), rec.get("name"), rec.get("file")
     if not (year and name and fn):
         return "missing year, name or file"
+    url = str((rec.get("src") or {}).get("url") or "").strip()
+    if no and url in no:
+        return f"withdrawn frame: {no[url][1][:88]}"
     src = rec.get("src") or {}
     if not str(src.get("url", "")).startswith("http") or not src.get("label"):
         return "no usable source"
@@ -162,6 +198,9 @@ def main():
         return
 
     known = people_by_year(json.loads(YEARS.read_text()))
+    no = barred()
+    if no:
+        print(f"{len(no)} withdrawn photographs on record, matched by url")
     overlay = json.loads(OVERLAY.read_text())
     have = {(p["year"], p["name"]): p for p in overlay.get("leaders", [])}
 
@@ -188,7 +227,7 @@ def main():
 
     added, improved, refused = [], [], []
     for origin, rec in finds:
-        why = check(rec, known)
+        why = check(rec, known, no)
         if why:
             refused.append((origin, rec.get("name", "?"), why))
             continue
