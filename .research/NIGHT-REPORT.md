@@ -1,3 +1,129 @@
+# 2 September 2026 — editor's pass, midday: an empty queue, and the archive checked where it stands
+
+Nothing was open. The research queue held no pull request at all, so this run
+was spent on the two things that are still worth doing when there is nothing to
+merge: proving the last thing published is sound, and proving what is live still
+passes its own rules. Both hold. Nothing was merged and nothing was cut, because
+there was nothing in front of the editor to merge or cut.
+
+## The queue
+
+No open pull requests. Checked twice by different routes, because an empty
+list is exactly the shape a broken query returns: `gh` is not installed in
+these containers and reported nothing, and the GitHub API listing for open
+pull requests came back empty on its own. Write access is present — a
+dry-run push of a probe branch was accepted — so the emptiness is real and
+not the platform gate.
+
+The standing brief still names three stale pull requests to deal with, #6
+"Research: photographs (rolling)", #7 "the 1980s" and #8 "the 2020s", open
+since 4 August. They are not open. #6 and #8 were both closed on 18 August and
+#7 with them. The evening pass of 30 August recorded this same fact and it has
+not reached the brief since, so the brief has now been sending editors after
+three dead pull requests for a fortnight. It should stop naming them.
+
+They should also not be revived. The 4 August research branches, and every
+branch cut before the 28 August history rewrite, now share **no merge base**
+with `main`: `research-1966-79`, `research-1980s`, `research-1990s`,
+`research-2000s`, `research-2010s`, `research-2020s`, `research-backlog`,
+`research-senate`, `research-profiles`, the three `research-roster-*` branches
+and the two `research-editor-*` snapshots. Diffed against `main`, the mildest
+of the fourteen removes 168,235 lines of `data/` and the six from 4 August
+remove upwards of 471,000 each. They are photographs of a superseded
+repository, not forks of this one. Anything wanted out of them has to be lifted
+file by file onto a branch cut from current `main`, exactly as the landing
+notes say.
+
+## The one thing published since the last pass, re-verified
+
+The morning pass merged a single new claim, the Naheed Shafi portrait, and it
+went to the live site. It was checked again here from the source rather than
+from the report, and it holds in every particular.
+
+The 1987 *Talisman* full text on archive.org carries the caption verbatim —
+front row Naheed Shafi, Hiroto Ishige, Yoo-Cheong Chang — with the page
+number immediately below it, and the volume's index enters her at 117, 118
+and 343, which is what the credit claims. The contradiction the credit
+declines to resolve is real and sits where it says: the facing article calls
+her a Bowling Green junior and names her the organisation's president, while
+the directory that follows the page 342 marker lists her under Sophomores.
+Claiming no class year was the right call.
+
+The crop itself adds something the report did not have. The frame carries a
+shoulder at its right edge and nothing at its left, which is what the leftmost
+person in a row of three looks like. The identification no longer rests only
+on the convention that captions read left to right.
+
+## What is live, checked against its own rules
+
+`build.py` completes cleanly. `check_data.py` exits 0 and reports the archive
+consistent. `check_contrib.py` exits 0 across all twenty-nine of its cases,
+including the two that matter most here — that the drop box cannot reach
+`main`, and that the commit it writes carries no tool attribution.
+
+`check_duplicates.py` printed six pairs. All six are two events, and none was
+merged:
+
+- 1997-98, the designated driver cards. Bill 97-3-F funding the printing in
+  November against the *Herald* reporting the distribution in February. Three
+  months and two sources apart.
+- 1991-92, the student regent advisory committee. Bill #92-01-S introduced on
+  28 January against the same bill failing on 6 February after amendment. The
+  second is the fate of the first, not a retelling of it.
+- 1971-72, the Civil Liberties Union. The union planning action in February
+  against Associated Students formally endorsing the suit in March.
+- 2003-04, plus/minus grading. Members speaking against it on 25 September
+  against the legislation passing unanimously on 16 October.
+- Two pairs of 1991-09-01 bills, which is same-day legislative business and
+  stays three entries.
+
+## The attribution sweep, and where the line still sits
+
+The repository itself is clean. No `Co-Authored-By` trailer, no session link
+and no "generated with" line anywhere in the last two hundred commits; every
+one of them authored by SGA 60, Sam Kurtz or samuelkurtzsfs. The six files
+that answer a grep for "anthropic" all contain the word philanthropic, in the
+1991 raffle entry.
+
+The pull request bodies are a different matter, and the shape of it is worth
+recording because it is better than it looks. Of the first thirty pull
+requests, twenty-four end in the appended tool line — the landing notes give
+#8 as the example and it is one of two dozen. Of the forty most recent, the
+grep flags eight and **all eight are false positives**: every one mentions the
+line in prose because it is reporting on this very problem, and not one of
+them ends in it. So the leak is historical, confined to the opening month, and
+the practice of reading the body back and stripping it has held since.
+
+Twenty-four closed pull request bodies from early August still carry it. They
+are editable through the API and it would take a few minutes, but rewriting
+the recorded bodies of two dozen closed pull requests is a change to the
+project's own history rather than a correction to the archive, and it is the
+owner's to authorise rather than an editor's to do unasked.
+
+## Cut
+
+Nothing. There was nothing in front of the editor to cut.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,820
+people, 2,650 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one spelling. 60 people have been president.
+297 documents and 1,111 legislation files. The search index holds 4,972
+records.
+
+## Still open
+
+Unchanged, and none of it moved this run because none of it was in the queue:
+the twelve-year gap in year photographs from 1993-94 to 2009-10, the unread
+1977-78 organization chart, the 431 legislation files with a readable authors
+block and no author recorded, and the two identity questions, John Lyne
+against Larry Zielke in 1970-71 and David Payne in 1982-83.
+
+The tool-attribution line on the review comment at `#issuecomment-5488430131`
+is still there. It needs deleting by hand from the web interface; nothing an
+agent can reach will edit it.
+
 # 2 September 2026 — editor's pass, morning: a face pinned by correlation, and a yearbook that contradicts itself
 
 One pull request open, #322, "Research: photographs (rolling)". One new claim
