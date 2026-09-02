@@ -409,5 +409,19 @@
   "year": "1992-93",
   "file": "1992 Talisman, p. 132, underclassmen grid, row 5 position 4",
   "reason": "Indexed 'Miller, Donald 132, 162' and printed as Donald Miller (Soph.), Bowling Green. Donnie is a natural short form of Donald, but Miller is one of the commonest surnames in the record and the second page the index gives him is not the student government spread, so nothing beyond the name connects this sophomore to the Donnie Miller who served."
+ },
+ {
+  "name": "Danny Creasy",
+  "year": "1971-72",
+  "file": "1972 Talisman, printed p. 273, Interfraternity Council group",
+  "url": "https://archive.org/details/talisman1972west",
+  "reason": "The caption gives rows of four, seven and five and the photograph has four seated and twelve standing, so the count agrees. The standing twelve are staggered rather than in two rows, and separating a row of seven from a row of five by head height is a guess. It is also the Interfraternity Council, not student government; CLAUDE.md records that IFC officers are a known route into being miscoded as SGA. The index carries exactly one Danny Lynn Creasy and one Gayle Burriss Sharp, and both of their pages (225 and 247, with 273) are fraternity pages, so nothing here ties the face to a student government seat either."
+ },
+ {
+  "name": "Gayle Sharp",
+  "year": "1971-72",
+  "file": "1972 Talisman, printed p. 273, Interfraternity Council group",
+  "url": "https://archive.org/details/talisman1972west",
+  "reason": "The caption gives rows of four, seven and five and the photograph has four seated and twelve standing, so the count agrees. The standing twelve are staggered rather than in two rows, and separating a row of seven from a row of five by head height is a guess. It is also the Interfraternity Council, not student government; CLAUDE.md records that IFC officers are a known route into being miscoded as SGA. The index carries exactly one Danny Lynn Creasy and one Gayle Burriss Sharp, and both of their pages (225 and 247, with 273) are fraternity pages, so nothing here ties the face to a student government seat either."
  }
 ]
