@@ -13274,3 +13274,121 @@ trailing tool-attribution line on the review comment at
 `#issuecomment-5488430131`, which needs deleting or editing from the web
 interface. The comment posted on #317 this pass carries no such line, and
 neither do any of the commits.
+
+# 2 September 2026 — a portrait that was already on the page
+
+## What was open
+
+One pull request, #324, the rolling photograph hunt on `research-photos`. The
+three branches that had sat unmerged since 4 August — #6, #7 and #8 — are long
+since closed and did not come up. The branch was one commit behind main, the
+night log; merged cleanly.
+
+## What the diff actually contained
+
+One file, one new entry in `data/photos.json`, nine added lines. A second
+`leaders` record for Steve Thornton, filed under 1977-78, pointing at the
+portrait file he already carried from 1978-79, with an explanation of the reuse
+written into the `src.label`.
+
+## What was checked
+
+Fewer than eight claims, so all of them rather than a sample.
+
+The caption is real. The 1979 *Talisman* OCR on archive.org carries "A GAVEL
+serves as a chin rest and a parliamentary tool for president Steve Thornton
+during a meeting," verbatim, and the existing p. 288 credit on main is right.
+
+The identity is real, and better sourced than what we cite for it. The 1978
+*Talisman*'s account of the contested election calls Thornton "sophomore
+president at the time of the election" outright. That is the 1977-78 class
+officer and the winner of 6 April 1978 stated as one man by the yearbook. Our
+1977-78 officer note rests only on the ASG organization chart of 3 March 1978,
+whose landing page resolves but whose PDF is still behind the bot check.
+
+## What was cut, and why
+
+The entry, entirely.
+
+Built the branch, built main, and diffed the two generated sites. Exactly one
+file out of the whole site differed, and it was not the appearance of a
+photograph. `y/1977-78.html` came out byte-identical: year pages do not render
+portraits in the officer blocks, so no picture reached the page the entry was
+written for. His person page already showed the photograph, from the 1978-79
+leader record, and `name-aliases.json` maps Steve to Steven so both entries
+land on the same page and the same image.
+
+What the entry changed was the credit on that portrait. `1979 Talisman, p. 288`
+became a 264-character paragraph of editorial explanation rendered as the text
+of the hyperlink under the picture. `vercel.json` runs the build at deploy, so
+it would have gone live on merge.
+
+Withdrawn in `83b7919a`, pushed to the branch. Its `data/` is now identical to
+main and #324 stays open as the rolling PR.
+
+## What held up, and is worth keeping
+
+Every negative finding in the report. The pass declined to identify Bob Tinsley
+and Gene Saunders out of the 1978 *Talisman* p. 34 group shots, and it was
+right to: the captions name several people across a frame with no positional
+cue. It concluded no 1977-78-dated photograph of Thornton exists, and that need
+not be chased again — the volume's index puts him on pp. 35, 273, 324 and 404,
+and 35 is the election narrative in text while 273 is a two-man Forensic Union
+caption with the same ambiguity.
+
+The access note is accurate. `viewcontent.cgi` returned 403 here as well. Only
+that endpoint is gated: landing pages under `digitalcommons.wku.edu` serve
+normally, and one will still confirm a document's title, date and description
+when the file itself will not open. That is worth remembering the next time a
+run reports the whole domain as unreachable.
+
+## Two things the routine should know
+
+A `src.label` is a citation, not a note. It renders as the link text under the
+picture and displaces the volume and page. Reasoning about why a photograph was
+reused belongs in the officer note or in the report, where this one already was
+and where it read perfectly well.
+
+Check what the build renders before reporting a photograph as landed. Building
+both sides and diffing `site/` takes a minute. A portrait already on a person's
+page needs no second entry to cover their other years — the person page spans
+every term they held, and the year page links through to it.
+
+## The duplicate report
+
+The same six pairs that stand on main. Read again and left alone: each is two
+events, an introduction and its outcome, or separate business transacted on one
+day.
+
+## Merged
+
+Nothing. The one entry offered did not survive the check, and with it withdrawn
+the branch has nothing to publish. `build.py` completes cleanly, `check_data.py`
+and `check_contrib.py` both exit 0.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,820
+people, 2,650 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one name. 60 people have been president.
+297 documents and 1,111 legislation files.
+
+## Still open
+
+The twelve-year gap in year photographs, 1993-94 through 2009-10, did not move,
+and for the fourth consecutive run the reason is the same wall: the gated PDF
+endpoint, and a digitised *Talisman* run on archive.org that stops at 1987.
+
+The 1977-78 organization chart is still unread, but it matters less than it
+did: the one fact the archive leans on it for is now independently confirmed by
+the 1978 *Talisman*, and adding that citation alongside it is a small job for a
+decade routine.
+
+Otherwise unchanged: the 431 legislation files with a readable authors block
+and no author recorded, and John Lyne vs Larry Zielke 1970-71 and David Payne
+1982-83.
+
+The item left for a human by the second pass on 1 September is still
+outstanding — the trailing tool-attribution line on the review comment at
+`#issuecomment-5488430131`, which needs deleting or editing from the web
+interface. Nothing posted or committed this pass carries one.
