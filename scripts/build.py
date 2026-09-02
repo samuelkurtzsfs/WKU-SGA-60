@@ -6586,6 +6586,20 @@ def officer_index(ys):
             member = dict(m)
             member["office"] = m.get("seat") or "Senator"
             rows.append((member, True))
+        # A committee record names the committee and puts the person in `chair`,
+        # so chairs never reached this list and their year never reached their
+        # page. Somebody who chaired a committee in one year and held no other
+        # office that year lost the term entirely, and a portrait found for it
+        # attached to nothing.
+        for c in ((org.get("senate") or {}).get("committees") or []):
+            if not c.get("chair"):
+                continue
+            chair = dict(c)
+            chair["name"] = c["chair"]
+            chair["office"] = f'Chair, {c.get("name", "")}'.rstrip(", ")
+            if c.get("chair_photo"):
+                chair["photo"] = c["chair_photo"]
+            rows.append((chair, True))
         for o, is_sen in rows:
             if not o.get("name") or not o.get("office"):
                 continue
