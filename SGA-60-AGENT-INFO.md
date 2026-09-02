@@ -2640,11 +2640,39 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   "From Bosnia to Bowling Green: students share world experiences" (3 Nov
   2017), carrying her portrait captioned "Junior Lane Hedrick, studied and
   interned in Bosnia over the summer." She was Associate Justice on SGA's
-  2016-17 Judicial Council, later Acting Chief Justice by April 2019, and
-  "junior" in Nov 2017 fits a multi-year run on the Judicial Council
-  starting in 2016-17. Filed under 2016-17. (The other two names in that
-  note, John "Jack" McKinney and Lane "Caroline" Simpson, were tried
-  stripped the same way and came back empty or off-topic; still open.)
+  2016-17 Judicial Council, later Acting Chief Justice by April 2019.
+  Filed under 2016-17. (The other two names in that note, John "Jack"
+  McKinney and Lane "Caroline" Simpson, were tried stripped the same way
+  and came back empty or off-topic; still open.)
+
+  **Corrected in review, 2 September.** Two things were wrong with that
+  as filed, and both are worth the next run's attention.
+
+  First, the archive already held this photograph. An earlier pass had
+  landed the same Herald media item as `2018-19-lane-hedrick.jpg`, cropped
+  to 370x630, against her other roster name. The recomputed gap list below
+  reported (2016-17, "Katherine (Lane) Hedrick") as portrait-less even
+  though `name-aliases.json` maps that name to "Lane Hedrick", so the
+  alias filter did not fire on this pair and one person's single
+  photograph was filed twice under two names. Consolidated to one entry:
+  the new 721x1080 original is the better frame (the old crop clips the
+  top of her head) and is kept at 2016-17; the 2018-19 entry and its file
+  were removed. Nothing was lost on the site — year pages do not render
+  officer portraits, and the person page draws the earliest term that
+  carries one. **When a gap list says an officer has no portrait, resolve
+  the name through `name-aliases.json` in both directions before believing
+  it.**
+
+  Second, the class year was offered as evidence and is not. The caption
+  says "Junior"; the body of the same article, the same day, calls her a
+  senior. The identification rests instead on the Herald's own SGA report
+  of 22 March 2017 (wkuherald.com/29383), which records the Judicial
+  Council selecting Lane Hedrick as its next associate chief justice —
+  same paper, same year, an SGA context for the name. That citation is now
+  in the `src` label, where a reader can check it. A portrait whose only
+  tie to SGA is a matching name still does not meet the bar, however
+  uncommon the name; this one cleared it on the second article, not the
+  first.
 
   Recomputed the officer-portrait gap directly from the data (2016-17
   onward, `organization.executive`/`organization.senate.officers` pairs
@@ -2677,9 +2705,11 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   - **Karlee Powell** (2025-26 Secretary of the Senate) — several Greek-life
     photographs (Alpha Delta Pi) confirm identity but none tie to SGA.
   - **Cody Cox, Jakob Briggs** — real, captioned photographs exist for
-    both, but each is tied to sensitive personal-health context (a
-    coming-out story; a suicide-prevention walk) unconnected to their SGA
-    service. Skipped rather than attach that context to an SGA record.
+    both, but each sits in coverage of a personal matter unconnected to
+    their SGA service. Skipped, and deliberately not described further
+    here: this repository is public, and spelling out the context would
+    publish about a living person exactly what declining the photograph
+    was meant to avoid. Do not re-open these two.
   - No match at all: Danny Vuleta, Mallory Hardesty, Neel Patel, Reed
     Hensley, Brooke Mitchell, Karley Solorzano, Joel Hornback, Connor
     Ferguson, David Darnell, Elizabeth Gannon, Maiah Cisco, Miles Harvey,
