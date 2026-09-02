@@ -13494,10 +13494,13 @@ stops at 1987.
 The 431 legislation files with a readable authors block and no author recorded.
 John Lyne vs Larry Zielke 1970-71, and David Payne 1982-83.
 
-The trailing tool-attribution lines on the two review comments,
-`#issuecomment-5488430131` and `#issuecomment-5512032953`, still need a hand
-edit from the web interface. The afternoon pass established why no run can fix
-them: the line is appended by the platform after posting, and there is no API
-call available for editing a comment once it is up. Pull request bodies can be
-rewritten and are being rewritten. Nothing committed this pass carries one, and
-main's history is still clean.
+The trailing tool-attribution lines on the review comments still need a hand
+edit from the web interface. There are now three: `#issuecomment-5488430131`,
+`#issuecomment-5512032953`, and this pass's own comment on #324,
+`#issuecomment-5514386040`, which was written without one and had one appended
+like the others. The afternoon pass established why no run can fix them: the
+line is added by the platform after posting, and there is no API call available
+to a run for editing a comment once it is up. Pull request bodies can be
+rewritten, and this pass's was — the line was appended to #327 on creation and
+stripped before merge. Nothing committed this pass carries one, and main's
+history is still clean.
