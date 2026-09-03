@@ -7497,8 +7497,21 @@ def main():
             if f.is_file() and not f.name.startswith(".") and f.suffix != ".md":
                 shutil.copy(f, SITE / "docs" / f.name)
                 ndocs += 1
+    # Photographs are mirrored, not accumulated. copytree only ever adds, so for
+    # a long time a withdrawn portrait went on being served at its own address
+    # after its metadata was cut: six of them were, including faces withdrawn
+    # because the identification was wrong. A withdrawal has to take the file
+    # down too, so anything here that data/photos no longer holds is deleted.
+    nstale = 0
     if PHOTOS.is_dir():
         shutil.copytree(PHOTOS, SITE / "photos", dirs_exist_ok=True)
+        keep = {f.name for f in PHOTOS.iterdir() if f.is_file()}
+        for f in (SITE / "photos").iterdir():
+            if f.is_file() and f.name not in keep:
+                f.unlink()
+                nstale += 1
+        if nstale:
+            print(f"  withdrew {nstale} photograph(s) the archive no longer holds")
     print(f'built the board, {len(ys)} year pages, the timeline and {len(DECADES)} decade '
           f'pages, the legislation archive, corrections and about '
           f'+ {ndocs} documents + {len(leg)} legislation files -> {SITE}')
