@@ -495,6 +495,7 @@ NAV_ITEMS = [("index.html", "The board"), ("search.html", "Search"),
              ("irregular.html", "Irregular terms"),
              ("branches.html", "How it was built"),
              ("officers.html", "The officers"),
+             ("network.html", "Who knew whom"),
              ("history.html", "Timeline"),
              ("legislation.html", "Legislation"), ("corrections.html", "Corrections"),
              ("sources.html", "Sources"), ("about.html", "About and method")]
@@ -7061,6 +7062,35 @@ How the organisation was arranged in each period is set out under
 SEAT_WORDS = re.compile(r"senator|representative|congressman|congresswoman|member", re.I)
 
 
+def render_network(ys, people):
+    """The people as a graph. Everything it needs is baked into the page."""
+    import network as netmod
+
+    def top(p):
+        for t in p["terms"]:
+            if t.get("leader"):
+                return t["office"]
+        return p["terms"][0]["office"] if p["terms"] else ""
+
+    rows = {}
+    regents = {l["name"] for y in ys for l in y["leaders"] if l.get("role") == "regent"}
+    for name, p in people.items():
+        yrs = sorted({t["year"] for t in p["terms"] if t.get("year")})
+        if not yrs:
+            continue
+        rows[name] = {"slug": slug(name), "years": yrs, "office": top(p),
+                      "president": bool(p.get("president")), "regent": name in regents,
+                      "photo": (p.get("photo") or {}).get("file") if isinstance(
+                          p.get("photo"), dict) else None}
+    years = [y["id"] for y in ys]
+    body = netmod.network_page(netmod.payload(rows, years))
+    return shell("Who knew whom \u00b7 SGA 60",
+                 "Every person the record shows holding office in WKU's Student "
+                 "Government Association, drawn as a web: search anyone and see "
+                 "who served alongside them.",
+                 body, netmod.NETWORK_CSS, depth=0, current="network.html")
+
+
 def render_officers(ys, people):
     """Two lists, because they are two different things and one of them may run
     to thousands. Officers held a named post; members sat in the chamber."""
@@ -7550,6 +7580,7 @@ def main():
     ODIR = SITE / "o"
     ODIR.mkdir(parents=True, exist_ok=True)
     (SITE / "officers.html").write_text(repair_anchors(render_officers(ys, people)))
+    (SITE / "network.html").write_text(render_network(ys, people))
     keep_o = set()
     for person in people.values():
         fn = f'{slug(person["name"])}.html'
