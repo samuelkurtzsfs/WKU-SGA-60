@@ -3843,13 +3843,31 @@ Senate officers without a portrait — 400 of 953 officer records, checked by
 script). Searched by name for roughly two dozen missing officers across
 2021-22 through 2025-26, reading each hit's `figcaption` markup rather than
 guessing from a headline. One clean identification: **Emily Reinneck**,
-Senator At-Large 2025-26, is named alone in a sworn-in photograph, "Soon-to-be
-Campus Improvements and Sustainability Committee Chair Emily Reinneck is sworn
-in on Tuesday, August 19, 2025 in Senate Chambers," Herald 19 Aug 2025
-(`wkuherald.com/85782/`). She is in sharp focus, front and alone at the
-swearing-in lectern, with senators out of focus behind her — a clean
-identification, not a crowd shot. Added as
+Senator At-Large 2025-26, named as the only person in a swearing-in caption
+that calls her the incoming Campus Improvements and Sustainability Committee
+chair, Herald 19 Aug 2025 (`wkuherald.com/85782/`). Added as
 `data/photos/2025-26-emily-reinneck.jpg`.
+
+**Editor's note, 3 September 2026, settling this frame.** An earlier
+photograph run had already found this same caption and *rejected* it, on the
+grounds that the picture showed "a row of six senators with hands raised and
+no positional cue" — that entry is still above in this file, and the run that
+added the portrait did not mention it. Checked against the full-resolution
+original (`JSAV9938.jpg`, 2001x1034, which is what was downloaded, byte for
+byte). The earlier reading described the background row and missed the frame's
+structure: the focal plane carries exactly one face, front right, hand raised
+for the oath, and every other person in the picture — the standing row at
+left, the two women immediately behind her, the figure at the right edge — is
+visibly out of focus. A Herald caption naming one person over a frame focused
+on one person is the same standard already relied on by dozens of entries in
+`photos.json`, so the identification stands. The stored file has been cropped
+to that figure so the ambiguity that prompted the first rejection cannot
+recur, and the crop is recorded in the entry's own source label. The wording
+first written here — "front and alone at the swearing-in lectern," "not a
+crowd shot" — overstated it and has been removed: it *is* a group
+swearing-in, and the identification rests on the focal plane, not on her
+being alone. Do not withdraw this portrait on the "row of six senators"
+reasoning again without looking at the full-resolution frame first.
 
 Everyone else searched came back negative and is recorded here so the next
 run does not re-spend the same two dozen queries: **Blake Graham** (2025-26
