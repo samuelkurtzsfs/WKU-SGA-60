@@ -124,6 +124,7 @@ def payload(people, years):
             "o": p["office"],
             "p": 1 if p["president"] else 0,
             "r": 1 if p.get("regent") else 0,
+            "l": sorted(yi[v] for v in (p.get("lyears") or []) if v in yi),
             "f": p.get("photo") or "",
             "x": round(x),
             "z": round(y),
@@ -285,12 +286,13 @@ function cohortOf(i){
 let BOARD = null;
 
 function buildBoard(){
+  const termOf = (i)=> (N[i].l && N[i].l.length) ? N[i].l[0] : N[i].y[0];
   const pres = N.map((n,i)=>i).filter(i=>N[i].p)
-                .sort((a,b)=>N[a].y[0]-N[b].y[0] || N[a].n.localeCompare(N[b].n));
-  // one card per administration; presidents sharing a first year share a card
+                .sort((a,b)=>termOf(a)-termOf(b) || N[a].n.localeCompare(N[b].n));
+  // one card per administration, keyed by the year they actually held the office
   const cards = [];
   for(const i of pres){
-    const y0 = N[i].y[0];
+    const y0 = termOf(i);
     const last = cards[cards.length-1];
     if(last && last.y0 === y0) last.who.push(i);
     else cards.push({y0, who:[i], span:N[i].y.length, kids:[]});
@@ -308,14 +310,18 @@ function buildBoard(){
     c.kids.push(i);
   }
   // lay the cards out left to right, wrapping, sized by how many they hold
-  const COLW = 30, ROWH = 15, PAD = 74;
+  const COLW = 30, ROWH = 16, PAD = 78, MARGIN = 15;
   let x = 0, y = 0, rowH = 0;
-  const WRAP = 5200;
+  // A single long strip left most of the cork empty and every card tiny. Wrapping
+  // nearer to square fills the view, so the cards can be read without zooming.
+  const WRAP = 2600;
   for(const c of cards){
     const n = c.kids.length;
     c.cols = Math.max(4, Math.ceil(Math.sqrt(n*1.7)));
-    c.w = Math.max(210, c.cols*COLW);
-    c.h = 108 + Math.ceil(n/c.cols)*ROWH;
+    // the card has to be wider than the grid it holds, or the people spill off
+    // the right edge of the paper and float on the cork
+    c.w = Math.max(210, c.cols*COLW + MARGIN*2);
+    c.h = 108 + Math.ceil(n/c.cols)*ROWH + 18;
     if(x + c.w > WRAP){ x = 0; y += rowH + PAD; rowH = 0; }
     c.x = x; c.y = y;
     rowH = Math.max(rowH, c.h);
@@ -329,7 +335,7 @@ function buildBoard(){
     c.kids.sort((a,b)=> (N[b].p-N[a].p) || N[a].n.localeCompare(N[b].n));
     c.kids.forEach((i,k)=>{
       const col = k % c.cols, row = (k - col)/c.cols;
-      bx[i] = c.x + 14 + col*COLW + COLW/2;
+      bx[i] = c.x + MARGIN + col*COLW + COLW/2;
       by[i] = c.y + 100 + row*ROWH;
     });
   }
@@ -390,7 +396,12 @@ function drawBoardBase(w,h){
     cx.fillRect(0, 0, cw, ch);
     cx.shadowBlur = 0; cx.shadowOffsetY = 0;
     // duct tape across the top corner
-    const tw = Math.min(cw*0.62, 150*k), th = 26*k;
+    const th = 26*k;
+    cx.font = "700 " + (12.5*k).toFixed(1) + "px ui-serif,Georgia,serif";
+    const nm = c.who.map(i=>N[i].n).join(" & ");
+    // size the tape to the name rather than clipping the name to the tape; two
+    // presidents sharing a year need a longer strip than one
+    const tw = Math.max(90*k, Math.min(cw*1.02, cx.measureText(nm).width + 26*k));
     cx.save(); cx.translate(cw*0.5, 0); cx.rotate(-0.035);
     cx.fillStyle = "rgba(178,180,176,.93)";
     cx.fillRect(-tw/2, -th*0.55, tw, th);
@@ -398,9 +409,10 @@ function drawBoardBase(w,h){
     cx.strokeRect(-tw/2, -th*0.55, tw, th);
     if(k > 0.28){
       cx.fillStyle = "#23241F"; cx.textAlign = "center";
-      cx.font = "700 " + (12.5*k).toFixed(1) + "px ui-serif,Georgia,serif";
-      const nm = c.who.map(i=>N[i].n).join(" & ");
-      cx.fillText(nm.length>26 ? nm.slice(0,25)+"…" : nm, 0, th*0.20);
+      let show = nm;
+      const room = tw - 14*k;
+      while(show.length > 6 && cx.measureText(show).width > room) show = show.slice(0, -2);
+      cx.fillText(show === nm ? nm : show + "…", 0, th*0.20);
     }
     cx.restore();
     if(k > 0.3){
@@ -643,10 +655,15 @@ window.addEventListener("keydown", e=>{ if(e.key==="Escape"){shut();hits.innerHT
 window.addEventListener("resize", ()=>{size();invalidate();});
 size(); fit(); cam.k = want.k*0.55; invalidate();
 
-// deep link: /network.html#name-slug opens straight onto that person
+// deep link: #board opens the corkboard, #name-slug opens straight onto that
+// person, and #board/name-slug does both
 if(location.hash.length>1){
-  const s=location.hash.slice(1), i=N.findIndex(n=>n.s===s);
-  if(i>=0) setTimeout(()=>open(i), 120);
+  let h = location.hash.slice(1);
+  if(h === "board" || h.startsWith("board/")){ setMode("board"); h = h.slice(6); }
+  if(h){
+    const i = N.findIndex(n=>n.s===h);
+    if(i>=0) setTimeout(()=>open(i), 120);
+  }
 }
 })();
 </script>

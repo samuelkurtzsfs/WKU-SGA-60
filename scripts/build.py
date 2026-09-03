@@ -7074,12 +7074,20 @@ def render_network(ys, people):
 
     rows = {}
     regents = {l["name"] for y in ys for l in y["leaders"] if l.get("role") == "regent"}
+    # The year somebody was president is not their first year: Bornefeld first
+    # appears as a senator in 2021-22 and holds the office in 2022-23. The board
+    # files a card under the presidency, so it needs the term, not the debut.
+    led = {}
+    for y in ys:
+        for l in y["leaders"]:
+            led.setdefault(l["name"], []).append(y["id"])
     for name, p in people.items():
         yrs = sorted({t["year"] for t in p["terms"] if t.get("year")})
         if not yrs:
             continue
         rows[name] = {"slug": slug(name), "years": yrs, "office": top(p),
                       "president": bool(p.get("president")), "regent": name in regents,
+                      "lyears": sorted(set(led.get(name, []))),
                       "photo": (p.get("photo") or {}).get("file") if isinstance(
                           p.get("photo"), dict) else None}
     years = [y["id"] for y in ys]
