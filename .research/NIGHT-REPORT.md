@@ -1,3 +1,82 @@
+# 3 September 2026, early morning — an empty queue, and the six standing pairs finally judged
+
+Nothing to merge. No pull request was open at 06:25 UTC, and nothing is
+stranded on a branch waiting for one: `research-photos`, the only research
+branch still producing, has no difference from main in `data/` or `.research/`
+at all, so the photograph routine's work is fully landed. Every other
+`research-*` branch is a snapshot from behind main rather than ahead of it —
+the large commit counts they report against main are artefacts of the history
+rewrite and of squash merges, not unlanded research. There is nothing on any
+of them that main lacks.
+
+Main itself checks out. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0, and `git status` empty after a rebuild, which is
+the part worth stating plainly: the committed `site/` matches what the current
+`data/` builds, so what is being served is what the archive actually says.
+
+## The six duplicate pairs
+
+`check_duplicates.py` has reported the same six pairs for several passes now,
+and successive night logs have recorded them as "standing, unchanged" without
+saying whether they should stand. They should. All six are separate events and
+none should be combined:
+
+- **1971-72.** The Kentucky Civil Liberties Union *planning* court action
+  (Herald 51:40, 29 Feb 1972) and Associated Students *endorsing* the suit
+  (51:44, 28 Mar) are a month and two issues apart.
+- **1991-92, the regent advisory committee.** Bill #92-01-S introduced on
+  28 January; the altered bill failing on 6 February. An introduction and a
+  defeat are not one event.
+- **1991-92, the three same-day bills.** #91-09-F, #91-03-F and #91-11-F are
+  three different bills with three different numbers. This is exactly the case
+  CLAUDE.md says stays three entries.
+- **1997-98.** Bill 97-3-F's first reading in November 1997 and the Herald
+  reporting the cards going out in February 1998, three months later.
+- **2003-04.** SGA voicing opposition to plus/minus grading on 25 September and
+  passing legislation against it on 16 October.
+
+A later pass should not need to re-open these. They are judged.
+
+One thing checked while I was in there, because it read like an error and was
+not: the 1991-92 bill entry says the bill was introduced "two days before the
+Herald reported the plan," while the entry beside it cites the Herald of
+6 February. The cross-reference is to the 30 January issue (67:34, "Associated
+Student Government Plans Regent Committee"), which the year does carry, and
+28 January plus two days is 30 January. It is correct as written.
+
+Also correct as written, and worth recording since it is the trap most likely
+to catch a fast pass: the 17 February 1998 designated-driver entry is built on
+an advance notice, and it says so — it reports that the cards *would be*
+distributed the next day and states outright that the archive holds only a
+contents listing. It claims nothing about how the distribution went. That is
+what an advance notice is allowed to support.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,819
+people, 2,650 of those terms (98%) carrying an account of what the person did,
+41 people recorded under more than one name. 60 people have been president.
+The people count is one lower than the 1,820 in the previous entry, which is
+the Kimberly Summers merge landing — one person who had been recorded twice is
+now recorded once.
+
+## A convention, settled
+
+The previous entry asked whoever owns this file to pick an end, because it has
+been written from both. Picking: **new entries go on top.** The three most
+recent entries were already prepended, so the top is where a reader looking for
+current work will land. The older ascending run at the bottom stays where it
+is — rewriting 13,900 lines to reverse it would risk more than it fixes — but
+nothing new should be added there.
+
+## Still open
+
+Unchanged from the previous passes, and none of it new tonight:
+`web.archive.org` is unreachable from these containers, the gated
+`viewcontent.cgi` endpoint on digitalcommons is still gated, the 1993-94 to
+2009-10 gap in year photographs is still open, and 431 legislation files still
+have no author recorded.
+
 # 3 September 2026, editor's pass — a citation that was really a work note
 
 One pull request open, #335, the rolling photograph branch. It restores a
