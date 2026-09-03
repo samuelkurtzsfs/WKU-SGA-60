@@ -3743,7 +3743,7 @@ not a senior portrait at all, see `data/photo-finds/_do-not-use.json`), which
 correctly removed a bad photo but left the 1984-85 leg of Smith's 1983-85
 two-year term with no portrait for the first time. Fixed by reusing his
 already-verified 1984 Talisman senior portrait (`1983-84-jack-smith.jpg`,
-already covering 1982-83 and 1983-84 of the same continuous term) for
+already covering 1983-84, the first year of the same continuous term) for
 1984-85 too — same person, same unbroken term, no new identification claim,
 and `check_data.py`'s "1 leaders have no portrait" warning is gone after it.
 

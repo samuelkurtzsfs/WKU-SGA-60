@@ -1,3 +1,63 @@
+# 3 September 2026, editor's pass — a citation that was really a work note
+
+One pull request open, #335, the rolling photograph branch. It restores a
+portrait to the second year of Jack Smith's term, which the same day's
+withdrawal had emptied. Merged, after one cut.
+
+The withdrawal was right and stays: the frame credited to the 1985 Talisman
+showed a man in a baseball cap and sunglasses, which is not what a senior
+class portrait of that era looks like, and nothing else stood behind the
+identification. What this branch does instead is give 1984-85 the portrait
+already published for 1983-84 — the 1984 Talisman senior portrait, p. 118.
+That is not a new identification. Smith held the office across both years and
+the Herald says so from inside the term: he won the presidency in the issue of
+14 April 1983, the Board of Regents gained him as a member that August, the
+paper was still calling him ASG's emperor in December 1984, and Mack Humphreys
+wrote up the end of his term on 11 April 1985. Reusing a portrait across the
+two legs of one unbroken term is what the archive already does for Donald
+Smith in 1992-94.
+
+The cut was the citation itself. It had been written as a work note and it was
+being served to readers as a source: it named the withdrawal, gave its date,
+and sent anyone reading it to a JSON file inside the repository, sitting in the
+list of thirty-two sources for the year between two Herald issues. Trimmed to
+what a citation is for — the volume, the page, and the fact that it is the same
+photograph as the year before. The reasoning behind the withdrawal has not been
+lost; it lives in `data/photo-finds/_do-not-use.json`, which is where a future
+pass will look for it, and in yesterday's entry above.
+
+Spot-checked the rest against the sources rather than the report. WKU's own
+student publications page carries the Talisman gap the branch found — published
+continuously until 1996, resumed with the 2003 yearbook — so the note is right
+that 1996-97, 1997-98 and 2000-01 have no yearbook to find and future runs
+should stop spending requests looking for one. Checked the two catalogue items
+it rests on: 418 is the 1994 volume, "Against All Odds," and 594 is the 2003
+resumption, "About Face." Both as described. The six officer portraits the run
+explored and refused — Bass, Saunders, Tinsley, Taylor, Young, Chesnut — were
+refused for the right reason each time, a group photograph with no way to fix a
+name to a face, or no photograph at all.
+
+`build.py`, `check_data.py`, `check_contrib.py` all clean: 61 years, 1980
+events, 60 presidents, no leader without a portrait. `check_duplicates.py`
+prints the same six pairs as before, none of them touched by this branch and
+none of them actually duplicates: two same-day 1991 bills are two bills, and a
+resolution introduced is not a resolution defeated.
+
+## Flagged, not fixed
+
+`data/photos.json` carries a leaders entry putting Jack Smith's portrait on
+**1982-83**, a year he did not hold. Margaret Ragan did, and the Herald index
+shows Smith losing that April: the spring of 1982 is full of letters supporting
+him and the presidency went elsewhere. The entry predates this branch and does
+nothing — the year renders Ragan's portrait, because the build matches on name
+as well as year — but it is wrong, it misled this branch's own report into
+describing a three-year term, and a rename anywhere near it would put the wrong
+face on the wrong year. It wants deleting deliberately, by a pass that has
+looked at what else in that file has drifted, not folded into a photograph
+merge.
+
+---
+
 # 3 September 2026, later — six withdrawn faces that were still being served
 
 The withdrawal above turned up something larger than itself, which is the
