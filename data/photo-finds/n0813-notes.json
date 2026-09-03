@@ -124,5 +124,23 @@
    "label": "WKU SGA executive branch pages, captured 23 November 2009 and 28 May 2010",
    "url": "http://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"
   }
+ },
+ {
+  "name": "Elizabeth McGrew",
+  "year": "2013-14",
+  "fact": "Almost certainly the same person as 'Beth McGrew', whom years.json carries separately as a senator in 2014-15 voting in the roll-calls of 24 February and 5 May 2015, against Elizabeth McGrew as a presidential appointee reported to the Senate on 18 February 2014. Beth is the ordinary short form of Elizabeth, the two records are consecutive years in the same body, and McGrew is rare enough that the whole digitised Herald back file carries only four lines of it across sixty years, none of them a second student of that surname in these years. The Herald photographed her in April 2015 at an Earth Day event the Student Government Association co-sponsored and captioned her 'WKU grad student Beth McGrew'. Flagged, not merged, per the repo rule on spelling doubts. This pair is not in _alias-candidates.md.",
+  "src": {
+   "label": "College Heights Herald, photograph published 8 June 2015, Earth Day Garden Party of 22 April 2015",
+   "url": "https://wkuherald.com/wp-content/uploads/2015/06/abc113c48bbee4bbc3e8cfdba556a5fa.jpg"
+  }
+ },
+ {
+  "name": "Chris Mckenna",
+  "year": "2013-14",
+  "fact": "Still at WKU as a senior in March 2016, when the Herald photographed him being honoured with four other members of WKU's Model Arab League team at the regional conference at Miami University in Oxford, Ohio. The Herald spells him McKenna. He is the only Chris McKenna anywhere in the Herald photograph library or the digitised back file.",
+  "src": {
+   "label": "College Heights Herald, 1 March 2016, Model Arab League regional conference",
+   "url": "https://wkuherald.com/wp-content/uploads/2016/03/4542deb70f4c179cb4b5b63a4607202f.jpg"
+  }
  }
 ]

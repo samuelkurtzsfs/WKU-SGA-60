@@ -57,22 +57,8 @@
   "src": {
    "label": "College Heights Herald, 3 May 2017, portrait from the paper's first-person series",
    "url": "https://wkuherald.com/wp-content/uploads/2017/05/0b883a0f92f3b5ebc3d09236e3dc08b6.jpg"
-  }
- },
- {
-  "year": "2018-19",
-  "name": "Noah Moore",
-  "file": "2018-19-noah-moore.jpg",
-  "replaces": null,
-  "width": 696,
-  "height": 1080,
-  "quality": "good",
-  "why": "A Herald studio headshot of him alone, the only person in the frame, lit and posed. The chain of identification runs entirely through the Herald: the portrait is captioned with his name and is attached to his own tour-guide column, whose sign-off reads 'Features reporter Noah Moore'; the Herald's SGA reporting then names the same man in office, calling the newly appointed senator Noah Moore a features reporter for the Herald (14 Feb 2018) and 'Senator Noah Moore, who is also a reporter for the College Heights Herald' (11 Apr 2018). He is the archive's 2018-19 Director of Public Relations, an office the Herald also gives him (9 Apr 2019).",
-  "caption_quote": "Tour guide Noah Moore",
-  "src": {
-   "label": "College Heights Herald, 27 February 2018, portrait accompanying his column 'Tour guide tell-all: Introduction to residence halls'",
-   "url": "https://wkuherald.com/wp-content/uploads/2018/02/3a24da74bc091f493a48dadc637123b4.jpg"
-  }
+  },
+  "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: this is the 3 May 2017 'Shades of Melanin' studio portrait, withdrawn for the same reason as the Cody Cox frame - she sat for a feature about skin tone and her own words about self love, not for a student government photograph. The register entry carries no url, so the landing script may not catch it automatically. Do not publish."
  },
  {
   "year": "2019-20",
@@ -102,7 +88,8 @@
   "src": {
    "label": "College Heights Herald, 3 September 2015, staff mugshot of John Winstead",
    "url": "https://wkuherald.com/wp-content/uploads/2015/09/cf4ffdd7a9e6f0c27aad58cb908525dc-1.jpg"
-  }
+  },
+  "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: the Herald columnist's mug for 'Synthesis'. None of the thirteen captions says the columnist held office; only the name links it to the 2015-16 senator. Do not publish."
  },
  {
   "year": "2016-17",
@@ -117,7 +104,8 @@
   "src": {
    "label": "College Heights Herald, 27 November 2017, studio portrait from the paper's feature on Black hair",
    "url": "https://wkuherald.com/wp-content/uploads/2017/11/c3423494456f51a2f0ee6dbcfc433e60.jpg"
-  }
+  },
+  "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: the 27 Nov 2017 'evolution of black hair' gallery frame. Neither caption nor gallery mentions student government and it is from the year after his term. Do not publish."
  },
  {
   "year": "2016-17",
@@ -132,6 +120,186 @@
   "src": {
    "label": "College Heights Herald, 10 February 2015, portrait by Emily Kask",
    "url": "https://wkuherald.com/wp-content/uploads/2015/02/a7be4e6f4ec8bb639654501fa1f924a9.jpg"
+  },
+  "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: the 10 Feb 2015 forensics-signing portrait of a LaRue County high school senior. Name plus timing only, and Brian Anderson is a common name. Do not publish."
+ },
+ {
+  "year": "2018-19",
+  "name": "Aubrey Kelly",
+  "file": "2018-19-aubrey-kelly.jpg",
+  "replaces": null,
+  "width": 852,
+  "height": 852,
+  "quality": "good",
+  "why": "SGA's own studio headshot, 852x852, still served by the live WKU server. Not cropped, not upscaled, only converted from PNG. It is the same woman as the archive's existing 2019-20-aubrey-kelley.jpg (284x360 crop from the Mahurin Honors College news item) and much the better frame of the two.",
+  "caption_quote": "Aubrey Kelley, Chief of Staff (headshot file 2019-2020/aubrey.png on SGA's executive page)",
+  "src": {
+   "label": "WKU Student Government Association executive branch page, wku.edu/sga/executive (file /sga/executive/headshots/2019-2020/aubrey.png). The page itself pairs this image file with the heading 'Aubrey Kelley', the office 'Chief of Staff' and the address aubrey.kelley099@topper.wku.edu; pairing read from the Internet Archive capture of 5 December 2019 (web.archive.org/web/20191205193509/http://www3.wku.edu/sga/executive/index.php). years.json already records that the 2018-19 minutes spell her Kelly at nomination and Kelley afterwards, and that she was Director of Academic and Student Affairs the year before she was Chief of Staff.",
+   "url": "https://www.wku.edu/sga/executive/headshots/2019-2020/aubrey.png"
+  }
+ },
+ {
+  "year": "2018-19",
+  "name": "Megan Armstrong",
+  "file": "2018-19-megan-armstrong.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait of her, single subject, full face, uncropped and unresized. The only photograph of her the university publishes.",
+  "caption_quote": "Megan Armstrong, Associate Justice, megan.armstrong862@topper.wku.edu",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file megan_armstrong862.jpg. The handle is WKU's own: its SGA Judicial Council page for 2018-2019 lists 'Megan Armstrong, Associate Justice, megan.armstrong862@topper.wku.edu' (web.archive.org/web/20190720073043/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php), and WKU renders these files on its own department pages with the person's name as the img title, e.g. img_facstaff/dawson_mccoun052.jpg titled 'Dawson McCoun' beside dawson.mccoun052@topper.wku.edu.",
+   "url": "https://www.wku.edu/img_facstaff/megan_armstrong862.jpg"
+  }
+ },
+ {
+  "year": "2016-17",
+  "name": "Annalicia Carlson",
+  "file": "2016-17-annalicia-carlson.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. She served three years on the Judicial Council and this is the only photograph of her the university publishes.",
+  "caption_quote": "Annalicia Carlson, Associate Justice, annalicia.carlson560@topper.wku.edu",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file annalicia_carlson560.jpg. The handle is WKU's own: its SGA Judicial Council page for 2018-2019 lists 'Annalicia Carlson, Associate Justice, annalicia.carlson560@topper.wku.edu' (web.archive.org/web/20190720073043/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php), and WKU renders these files on its own department pages with the person's name as the img title.",
+   "url": "https://www.wku.edu/img_facstaff/annalicia_carlson560.jpg"
+  }
+ },
+ {
+  "year": "2018-19",
+  "name": "Yasmine Sadrinia",
+  "file": "2018-19-yasmine-sadrinia.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. The only photograph of her the university publishes.",
+  "caption_quote": "Yasmine Sadrinia, Associate Justice, yasmine.sadrinia100@topper.wku.edu",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file yasmine_sadrinia100.jpg. The handle is WKU's own: its SGA Judicial Council page for 2018-2019 lists 'Yasmine Sadrinia, Associate Justice, yasmine.sadrinia100@topper.wku.edu' (web.archive.org/web/20190720073043/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php), and WKU renders these files on its own department pages with the person's name as the img title.",
+   "url": "https://www.wku.edu/img_facstaff/yasmine_sadrinia100.jpg"
+  }
+ },
+ {
+  "year": "2016-17",
+  "name": "Murphy Burke",
+  "file": "2016-17-murphy-burke.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. Replaces nothing: her only Herald frame is the presidential search forum of 27 April 2016, where she is the questioner with her back to the camera and is refused in the withdrawal register.",
+  "caption_quote": "Murphy Burke, Director of Public Relations, murphy.burke097@topper.wku.edu",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file murphy_burke097.jpg. The handle is WKU's own: its SGA executive branch page for 2016-2017 lists 'Murphy Burke, Director of Public Relations, murphy.burke097@topper.wku.edu' (web.archive.org/web/20161230150409/http://www.wku.edu/sga/executive/), and WKU renders these files on its own department pages with the person's name as the img title.",
+   "url": "https://www.wku.edu/img_facstaff/murphy_burke097.jpg"
+  }
+ },
+ {
+  "year": "2014-15",
+  "name": "Hannah Neeper",
+  "file": "2014-15-hannah-neeper.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. Her only Herald frame is the SGA results hug of 20 April 2016, in which she has her back to the camera; that frame is refused in the withdrawal register.",
+  "caption_quote": "Hannah Neeper, Administrative Vice President, Hannah.neeper918@topper.wku.edu",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file hannah_neeper918.jpg. The handle is WKU's own: its SGA executive branch page for 2016-2017 lists 'Hannah Neeper, Administrative Vice President, Hannah.neeper918@topper.wku.edu' (web.archive.org/web/20161230150409/http://www.wku.edu/sga/executive/), and WKU renders these files on its own department pages with the person's name as the img title.",
+   "url": "https://www.wku.edu/img_facstaff/hannah_neeper918.jpg"
+  }
+ },
+ {
+  "year": "2019-20",
+  "name": "Dawson McCoun",
+  "file": "2019-20-dawson-mccoun.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. WKU publishes it on his own HonorsToppers profile page, which is headed with his name and carries the img title 'Dawson McCoun'. The page makes him a Political Science and Public Relations major from Frankfort, Kentucky, class of 2022, which puts him a sophomore in 2019-20 and a junior in 2020-21, the two years the archive records him as a senator and then chair of Legislative Research. McCoun is a rare surname and the only other bearers the archive knows are Addison McCoun, a separate person already recorded, and Jack McCoun in 2023-24.",
+  "caption_quote": "img title 'Dawson McCoun', beside dawson.mccoun052@topper.wku.edu",
+  "src": {
+   "label": "WKU Mahurin Honors College, HonorsToppers staff profile for Dawson McCoun (wku.edu/honors/student_life/honorstoppers/staff/dawson_mccoun052, capture of 19 June 2021), which renders WKU's directory photograph img_facstaff/dawson_mccoun052.jpg with the img title 'Dawson McCoun'. File taken from the live WKU server.",
+   "url": "https://www.wku.edu/img_facstaff/dawson_mccoun052.jpg"
+  }
+ },
+ {
+  "year": "2017-18",
+  "name": "Zach DeBord",
+  "file": "2017-18-zach-debord.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. WKU publishes his photograph on the Mahurin Honors College H4 counsellor page headed 'Zach DeBord', where the picture carries the alt text 'Zach DeBord' and the text signs off with his address, Zachary.debord748@topper.wku.edu. That page has him entering his senior year in August 2019, which makes him a sophomore in 2017-18, the year the archive records him as a senator from SGA Bill 11-17-F. DeBord is a rare surname and no second one appears in the archive.",
+  "caption_quote": "alt text 'Zach DeBord' on the page headed Zach DeBord",
+  "src": {
+   "label": "WKU Mahurin Honors College H4 counsellor page for Zach DeBord (www3.wku.edu/honors/h4/counselor-pages/zachdebord.php, capture of 20 August 2019). WKU's directory photograph of the same handle, img_facstaff/zachary_debord748.jpg, is the better file and is the one taken; the counsellor page's own copy is /honors/h4/counselor-photos/zachdebord.png at 300x250.",
+   "url": "https://www.wku.edu/img_facstaff/zachary_debord748.jpg"
+  }
+ },
+ {
+  "year": "2015-16",
+  "name": "Chelsea Faught",
+  "file": "2015-16-chelsea-faught.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. The only photograph of her the university publishes.",
+  "caption_quote": "2015 - 2016 Student Senate ... Chelsea Faught, chelsea.faught686@topper.wku.edu",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file chelsea_faught686.jpg. The handle is WKU's own: its SGA legislative branch page listing the 2015-2016 Student Senate gives 'Chelsea Faught, chelsea.faught686@topper.wku.edu' (web.archive.org/web/20151011130540/http://www.wku.edu/sga/legislative/), and WKU renders these directory files on its own department pages with the person's name as the img title.",
+   "url": "https://www.wku.edu/img_facstaff/chelsea_faught686.jpg"
+  }
+ },
+ {
+  "year": "2018-19",
+  "name": "Andrew Merritt",
+  "file": "2018-19-andrew-merritt.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. The only photograph of him the university publishes.",
+  "caption_quote": "2018 - 2019 Student Senate, Senator-At-Large ... Andrew Merritt, joseph.merritt815@topper.wku.edu",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file joseph_merritt815.jpg. The handle is WKU's own and the pairing is SGA's: its legislative branch page listing the 2018-2019 Student Senate prints 'Andrew Merritt' immediately above 'joseph.merritt815@topper.wku.edu' (web.archive.org/web/20210624061546/https://www.wku.edu/sga/legislative/). Andrew is his middle-name usage; Joseph is the given name on the university account.",
+   "url": "https://www.wku.edu/img_facstaff/joseph_merritt815.jpg"
+  }
+ },
+ {
+  "year": "2018-19",
+  "name": "Noah Moore",
+  "file": "2018-19-noah-moore.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. This is NOT the refused Herald 'Tour guide Noah Moore' frame: the identification here does not go through a caption at all, it goes through SGA's own account handle. WKU's legislative branch page for the 2018-2019 Student Senate prints 'Junior Senator, Noah Moore, noah.moore786@topper.wku.edu', and this file is img_facstaff/noah_moore786.jpg, the university directory photograph attached to that exact account. Whoever the Herald's tour guide is, this is the man the SGA roster names. Worth flagging to the editor: the two photographs resemble one another and both subjects wear a WKU Admissions polo, so the two-Noah-Moores finding in _do-not-use.json may deserve a second look; nothing here rests on that question either way.",
+  "caption_quote": "2018 - 2019 Student Senate, Junior Senator, Noah Moore, noah.moore786@topper.wku.edu",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file noah_moore786.jpg. The handle is WKU's own: its SGA legislative branch page listing the 2018-2019 Student Senate gives 'Junior Senator ... Noah Moore, noah.moore786@topper.wku.edu' (web.archive.org/web/20210624061546/https://www.wku.edu/sga/legislative/), and WKU renders these directory files on its own department pages with the person's name as the img title.",
+   "url": "https://www.wku.edu/img_facstaff/noah_moore786.jpg"
+  },
+  "replaced_entry": {
+   "note": "This finding occupies the filename the previous researcher's refused entry used, so that entry is recorded here verbatim rather than lost. It is refused by data/photo-finds/_do-not-use.json and must not be published.",
+   "year": "2018-19",
+   "name": "Noah Moore",
+   "file": "2018-19-noah-moore.jpg",
+   "width": 696,
+   "height": 1080,
+   "caption_quote": "Tour guide Noah Moore",
+   "src": {
+    "label": "College Heights Herald, 27 February 2018, portrait accompanying his column 'Tour guide tell-all: Introduction to residence halls'",
+    "url": "https://wkuherald.com/wp-content/uploads/2018/02/3a24da74bc091f493a48dadc637123b4.jpg"
+   },
+   "refusal": "_do-not-use.json: it is the wrong Noah Moore. WKU has two in these years and the tour guide is Noah Moore of Fort Thomas, class of 2021, whose WKU write-up lists five campus offices and does not include SGA."
   }
  }
 ]

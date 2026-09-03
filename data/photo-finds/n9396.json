@@ -223,5 +223,50 @@
   },
   "width": 68,
   "height": 84
+ },
+ {
+  "year": "1994-95",
+  "name": "Angelo Roderiguez",
+  "file": "1994-95-angelo-roderiguez.jpg",
+  "replaces": null,
+  "quality": "small",
+  "why": "1994 Talisman South Hall portrait grid, p. 39. The grid runs five portraits across; the five names printed beside the top row are Allen Martin, Laura McCauley, Eric Parsons, John Perry, Angelo Rodriguez, in that order, and the five faces run man, woman, man, man, man, so the one woman in the list and the one woman in the row fix the order. He is the fifth and last cell of the top row. The volume prints Rodriguez where the SGA roster prints Roderiguez, and he is the only person of either spelling in the 1993 or 1994 index. He is a senior in the 1993-94 volume and the archive records him on the Judicial Council the following year, so this is his portrait taken one year before the term recorded here. A clean studio headshot, small only because the scan is 816 pixels to a printed page.",
+  "caption_quote": "Angelo Rodriguez Sr. Bowling Green",
+  "src": {
+   "label": "1994 Talisman, p. 39, South Hall portraits; indexed \"Rodriguez, Angelo, 39\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
+  },
+  "width": 125,
+  "height": 169
+ },
+ {
+  "year": "1994-95",
+  "name": "David A. Varderpool",
+  "file": "1994-95-david-a-varderpool.jpg",
+  "replaces": null,
+  "quality": "small",
+  "why": "1994 Talisman Greek portrait grid, p. 70. The page is a left-hand page, so the names run down the column at the left and the portraits fill five columns across three full rows to the right of them. Fifteen names are printed for fifteen cells and they run straight across the rows: Dan Smith, Chad D. Stahl, Hunter Stewart, Zack S. Stroble, Jeremy Sublett; Larry K. Swisher, Gene Wheeler, Jason W. Bracy, Steve Carter, Phillip Eleson; Steven Neely, Darren Shipley, Greg Sutton, Dave Vanderpool, Charles Carneal. He is the fourth cell of the third row. Two cells of the same grid are already published in this archive from earlier work and both sit where this reading puts them, which is the check that the count is right. The volume prints Vanderpool where the SGA roster prints Varderpool, and he is the only person of either spelling in the book. A sophomore in the 1993-94 volume is a junior in 1994-95, the year the archive records him. A quarantined crop of this same cell was already staged as _unmatched-1994-95-dave-vanderpool.jpg and matches pixel for pixel.",
+  "caption_quote": "Dave Vanderpool So. Danville",
+  "src": {
+   "label": "1994 Talisman, p. 70, Sigma Nu portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
+  },
+  "width": 122,
+  "height": 166
+ },
+ {
+  "year": "1993-94",
+  "name": "Matt Krygiel",
+  "file": "1993-94-matt-krygiel.jpg",
+  "replaces": null,
+  "quality": "group crop",
+  "why": "Cropped out of the Sigma Alpha Epsilon chapter photograph at the top of p. 200 of the 1993 Talisman. The caption prints three rows of three, four and five names and the photograph shows exactly three, four and five men: three stand at the front with their hands clasped, four stand behind and between them, and five stand at the back, their heads a clear band higher than the rest. That count is what makes the positions readable rather than guessed. He is the second of the four in the middle row, the man with the long dark fringe, counting from the left. The 1993 index carries one Krygiel in the whole volume and gives him this page alone. Small and soft, and the top of the head of the man in front of him clips the bottom right corner.",
+  "caption_quote": "Second Row: Jason Martin, Matt Krygiel, Robert Duke, Jeremy Sublett",
+  "src": {
+   "label": "1993 Talisman, p. 200, Sigma Alpha Epsilon; indexed \"Krygiel, Matt 200\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+  },
+  "width": 58,
+  "height": 82
  }
 ]

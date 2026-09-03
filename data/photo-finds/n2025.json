@@ -109,5 +109,65 @@
    "label": "College Heights Herald, 4 September 2024, BSA & Bingo in the DSU Nite Class",
    "url": "https://wkuherald.com/wp-content/uploads/2024/09/sebastian_BNB_09.jpg"
   }
+ },
+ {
+  "year": "2025-26",
+  "name": "Vanessa Ocampo",
+  "file": "2025-26-vanessa-ocampo.jpg",
+  "replaces": null,
+  "width": 560,
+  "height": 700,
+  "quality": "good",
+  "why": "The only Herald frame that names her, and a sharp, evenly lit three-quarter view of her face. Two people, both named, with an explicit position for her.",
+  "caption_quote": "Freshman international affairs major Vanessa Ocampo (right) talks through her shoe design",
+  "id_note": "The caption names two people and positions Ocampo '(right)'. The right-hand figure is the woman in the pale hoodie holding the white shoe; the left figure, in the green sweatshirt with braids, is Haley Rankin. Cropped to Ocampo alone. The caption calls her a freshman in February 2023, which fits the archive record of her serving in 2025-26.",
+  "src": {
+   "label": "College Heights Herald, 23 February 2023, Walk in Your Excellence shoe-painting event in DSU, put on by Blaq Art Nouveau",
+   "url": "https://wkuherald.com/wp-content/uploads/2023/02/Covey_T_BANShoePainting_20230222-044.jpg"
+  }
+ },
+ {
+  "year": "2025-26",
+  "name": "Maggie Phelps",
+  "file": "2025-26-maggie-phelps.jpg",
+  "replaces": null,
+  "width": 820,
+  "height": 1025,
+  "quality": "good",
+  "why": "A studio portrait, single subject, sharp and evenly lit. The best photograph of anyone in this block.",
+  "caption_quote": "Maggie Phelps is a member of the news staff for the Herald for Fall 2023.",
+  "id_note": "Single-subject captioned mug, so the name is unambiguous. Proved to be the SGA Maggie Phelps by matching it against the Herald frame of 28 April 2026 captioned 'New Judicial Council member Maggie Phelps speaks with fellow judicial council members' (042826_sga_KH06.jpg): the left-hand woman there has the same fair strawberry-blonde hair, the same pale blue eyes, the same fine sparse brows and the same small gold ring in the right nostril. A previous pass set this mug aside on the ground that it ties her to the newspaper rather than to SGA; the objection was relevance, not identity, and the 2026 SGA frame closes the identity question. The 042826 frame itself stays withdrawn and is not the file offered here.",
+  "src": {
+   "label": "College Heights Herald, 1 September 2023, Fall 2023 news staff portrait",
+   "url": "https://wkuherald.com/wp-content/uploads/2023/09/Maggie_Phelps_1.jpg"
+  }
+ },
+ {
+  "year": "2020-21",
+  "name": "Matthew Winiger",
+  "file": "2021-22-matthew-wininger.jpg",
+  "replaces": null,
+  "quality": "good",
+  "why": "The archive records this person twice under two spellings of the surname, so the portrait reached only one of the two and the other read as somebody nobody had found. Same photograph, the WKU News portrait of him as president-elect.",
+  "caption_quote": "(the same photograph as the other spelling)",
+  "id_note": "Spelling variant, flagged rather than fixed. The archive's own 2020-21 note on Matthew Winiger reads 'The minutes spell the surname both Winiger and Wininger; unsettled which is correct.' The 2020-21 Winiger chaired the Sustainability Committee from October 2020 to March 2021; the 2021-22 president Matthew Wininger ran on continuing the recycling and sustainability work, and Zachary Skillman's record says he continued the initiatives Wininger had started. One man, one office followed by another. If an editor judges them two people, drop this entry; the 2021-22 portrait is unaffected.",
+  "src": {
+   "label": "WKU News, Apr 2021 (the portrait already published in the archive at 2021-22, under the Wininger spelling)",
+   "url": "https://www.wku.edu/news/articles/index.php?articleid=9622&view=article"
+  }
+ },
+ {
+  "year": "2026-27",
+  "name": "Molly Ricky",
+  "file": "2025-26-molly-ricke.jpg",
+  "replaces": null,
+  "quality": "good",
+  "why": "The archive records this person twice under two spellings of the surname, so the portrait reached only one of the two and the other read as somebody nobody had found. Same photograph, the Herald frame of her being sworn in.",
+  "caption_quote": "Molly Ricke is sworn into as a Senator-at-Large",
+  "id_note": "Spelling variant, flagged rather than fixed. Molly Ricke sat as a senator from January 2025 and authored spring 2026 legislation (Bill 19-26-S); 'Molly Ricky' exists in the archive on the strength of one Herald sentence about the 26th Senate's first meeting on 28 April 2026, where a sitting senator of that name ran for Speaker. Two senators whose names differ by one letter sitting in the same chamber in the same month is not credible, and no second Molly Rick- appears anywhere in SGA's minutes or legislation. The Herald's own frame of the speaker vote that day shows three women at the lectern, the leftmost of whom matches the sworn-in portrait on hairline, freckling, nose and jaw, but that frame carries no caption naming her and is not relied on. If an editor judges them two people, drop this entry; the 2025-26 portrait is unaffected.",
+  "src": {
+   "label": "College Heights Herald, 28 Jan 2025, \"SGA passes bill to fund Fashion Merchandising Department, swears in new senators\" (the portrait already published in the archive at 2025-26, under the Ricke spelling)",
+   "url": "https://wkuherald.com/81625/news/sga-passes-bill-to-fund-fashion-merchandising-department-swears-in-new-senators/"
+  }
  }
 ]
