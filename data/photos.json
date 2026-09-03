@@ -5036,7 +5036,7 @@
    "name": "Diane DeRosa-Reynolds",
    "file": "2006-07-diane-derosa-reynolds.jpg",
    "src": {
-    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA68, Student Organizations), p. 27 of the scanned volume",
+    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA12/2/16, Student Organizations), p. 27 of the scanned volume",
     "url": "https://digitalcommons.wku.edu/stu_org/328/"
    }
   },
@@ -5072,7 +5072,7 @@
    "name": "Tori Theiss",
    "file": "2006-07-tori-theiss.jpg",
    "src": {
-    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA68, Student Organizations), p. 33 of the scanned volume",
+    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA12/2/16, Student Organizations), p. 33 of the scanned volume",
     "url": "https://digitalcommons.wku.edu/stu_org/328/"
    }
   },
@@ -5081,7 +5081,7 @@
    "name": "Chase Goff",
    "file": "2007-08-chase-goff.jpg",
    "src": {
-    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA68, Student Organizations), p. 30 of the scanned volume",
+    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA12/2/16, Student Organizations), p. 30 of the scanned volume",
     "url": "https://digitalcommons.wku.edu/stu_org/328/"
    }
   },
@@ -5090,7 +5090,7 @@
    "name": "Earlene Whitaker",
    "file": "2007-08-earlene-whitaker.jpg",
    "src": {
-    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA68, Student Organizations), p. 34 of the scanned volume",
+    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA12/2/16, Student Organizations), p. 34 of the scanned volume",
     "url": "https://digitalcommons.wku.edu/stu_org/328/"
    }
   },
@@ -5117,7 +5117,7 @@
    "name": "Nathan Eaton",
    "file": "2007-08-nathan-eaton.jpg",
    "src": {
-    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA68, Student Organizations), p. 28 of the scanned volume",
+    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA12/2/16, Student Organizations), p. 28 of the scanned volume",
     "url": "https://digitalcommons.wku.edu/stu_org/328/"
    }
   },
@@ -7027,6 +7027,42 @@
    "src": {
     "label": "College Heights Herald, 6 Nov 2017, portrait by Lydia Schweickart; the Herald's caption names \"Junior Lane Hedrick\" and gives her home town as Morehead, Kentucky. The caption is on the photograph's own page, not on the article it illustrates (\"From Bosnia to Bowling Green,\" 3 Nov 2017, wkuherald.com/26923), which carries no photograph of her. The tie to SGA is the same paper's report of 22 March 2017 (wkuherald.com/29383), which records the Judicial Council selecting Lane Hedrick as its next associate chief justice, subject to senate approval. SGA's own roster gives her as Katherine (Lane) Hedrick, Associate Justice in 2016-17, and she was Acting Chief Justice by April 2019. Her class year is not evidence either way: this caption calls her a junior and the article calls her a senior.",
     "url": "https://wkuherald.com/27091/uncategorized/web_bosniaportrait_lane_lschweickart2-jpg/"
+   }
+  },
+  {
+   "year": "1966-67",
+   "name": "James P. Haynes",
+   "file": "1966-67-jim-haynes.jpg",
+   "src": {
+    "label": "1967 Talisman pt. 1, p. 136; the organization roster gives him fully as James P. Haynes, the same officer as this year's leader entry",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/382"
+   }
+  },
+  {
+   "year": "2007-08",
+   "name": "Nate Eaton",
+   "file": "2007-08-nathan-eaton.jpg",
+   "src": {
+    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA12/2/16, Student Organizations), p. 28 of the scanned volume; the same portrait as this year's Nathan Eaton record. The archive carries the one Campus Improvements chairmanship under both spellings, from the senate minutes of 4 and 11 September 2007, and data/name-aliases.json maps them to one person.",
+    "url": "https://digitalcommons.wku.edu/stu_org/328/"
+   }
+  },
+  {
+   "year": "2015-16",
+   "name": "Page Settles",
+   "file": "2015-16-paige-settles.jpg",
+   "src": {
+    "label": "College Heights Herald, 22 Sep 2015; the same portrait as this year's Paige Settles record, whose note in the archive records the correction: the \"Page Settles\" spelling comes from the cabinet minutes of 1 December 2015, and the SGA senate page gives Paige Settles.",
+    "url": "https://wkuherald.com/wp-content/uploads/2015/09/77c586e79692fb054940233f31197892.jpg"
+   }
+  },
+  {
+   "year": "1980-81",
+   "name": "Marsha Sanner",
+   "file": "1980-81-marsha-sanner.jpg",
+   "src": {
+    "label": "1981 Talisman, p. 282, group photograph captioned \"ASSOCIATED STUDENT GOVERNMENT — Front row: Patti Davis, Cristy Sisk, Diane Olson, Marsha Sanner, Debbie Ray, Anne McKee...\"; Sanner is fourth of the six front-row figures, the crop taken from that position; the committee-chair record for this year gives her without the middle initial.",
+    "url": "https://archive.org/details/talisman1981west/page/n285/mode/1up"
    }
   }
  ],
