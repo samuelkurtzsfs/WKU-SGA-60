@@ -3731,6 +3731,79 @@ re-flagged, per the standing rule in this file: it was already put to the
 account owner via `PushNotification` on 30 August and nothing about the
 condition has changed since.
 
+**A 3 September 2026 run (photograph agent).** Re-checked the four originally
+named presidents (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) and
+every other president/regent leader record directly against `data/photos.json`:
+all still carry a portrait, confirmed by a full scripted cross-check against
+`data/years.json` rather than by inference — zero leader records had no
+portrait at all. `build.py`/`check_data.py` did flag one gap, though: the
+merge from `origin/main` brought in `6b48c5ba`, "Withdraw the 1984-85 portrait
+of Jack Smith" (a same-day, well-reasoned withdrawal — the credited frame was
+not a senior portrait at all, see `data/photo-finds/_do-not-use.json`), which
+correctly removed a bad photo but left the 1984-85 leg of Smith's 1983-85
+two-year term with no portrait for the first time. Fixed by reusing his
+already-verified 1984 Talisman senior portrait (`1983-84-jack-smith.jpg`,
+already covering 1982-83 and 1983-84 of the same continuous term) for
+1984-85 too — same person, same unbroken term, no new identification claim,
+and `check_data.py`'s "1 leaders have no portrait" warning is gone after it.
+
+**`viewcontent.cgi` was tested twice this session, about ten minutes apart,
+and was closed both times** — `HTTP 403`, the Cloudflare "Attention
+Required" challenge page, matching the majority state reported across late
+August. Web search and a plain `curl` to `archive.org`'s advanced-search API
+both worked throughout, so this run did its research there instead.
+
+**A genuinely new finding, not previously in this file: the Talisman
+yearbook has a real, permanent publication gap, not just an access
+problem.** WKU's own Student Publications page
+(`wku.edu/studentpublications/aboutus.php`) states the Talisman "was
+published continuously until 1996" and "resumed publication with the 2003
+yearbook" — it was a magazine, *Xposure*, quarterly through 1995-96, not a
+yearbook, in between. Confirmed independently against `digitalcommons.wku.edu`
+itself: item 417 ("A New Shade of Red") carries `citation_date` 1993, item
+418 ("Against All Odds") carries 1994 — the last traditional volume — and
+the six items directly after it on the yearbooks landing page are all titled
+`Xposure`, dated Fall 1995 through Summer 1996; the next Talisman-titled item
+after those is 594, "2003 Talisman: About Face." **This means three of the
+year-photograph gap's eight still-open years from the 24-25 August entries —
+1996-97, 1997-98 and 2000-01 — have no Talisman yearbook to find, ever, not
+merely one blocked by `viewcontent.cgi`.** No future run should keep spending
+a `viewcontent.cgi` attempt on a Talisman lead for those three years; the
+only possible sources for them are the Herald (also behind `viewcontent.cgi`
+for this era), WKU Archives photograph collections, or the still-unopened
+UA1C4/10 SGA-photographs finding aid (`article=1619`, `context=dlsc_ua_fin_aid`,
+flagged 24 August, never yet read). The other five open years (1993-94,
+1994-95, 1995-96, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10 — nine,
+not eight, once 1993-94/1994-95/1995-96/2002-03 are added from this run's own
+count of 12 open years) do have a yearbook on file at digitalcommons, just
+not yet openable this session: 1993-94 is item 418 itself (`article=1418`),
+and 2002-03 is the 2003 "About Face" resumption issue (item 594).
+
+Spent the rest of the session on `organization.executive`/`senate` officer
+portraits in the archive.org-held Talisman years (1971-81, 1986-87), which
+cost no `viewcontent.cgi` calls at all. Found leads for six missing names via
+the `fulltext/inside.php` search API and PyMuPDF page rendering (installed
+`pip install pymupdf` fresh this session; not preinstalled) but placed none
+of them: **David Bass, Gene Saunders and Bob Tinsley** (1977-78) appear only
+in a four-or-more-person group photo on 1978 Talisman p. 34 whose caption
+does not fix each name to a face position; **Scott Taylor** (1975-76) turns
+up only in a large, informally-posed Pi Kappa Alpha composite (1976 Talisman
+p. 292) naming eleven people in one row, not a studio grid a face can be
+counted against with confidence; **David Young** (1978-79) is quoted by name
+on 1979 Talisman p. 291 with no accompanying photo of him at all; **Mark
+Chesnut** (1980-81) indexes to p. 234, which turned out to be an intramural
+sports results table, not a photograph. None met the "misidentified face is
+worse than no face" bar, so none were added — recorded here so a future run
+does not re-spend a session rediscovering the same four dead ends. One
+positive identification did come out of this sweep, already on file: p. 288
+of the 1979 Talisman has a clean single-subject close-up of "president Steve
+Thornton" with a gavel, already the source for `1978-79-steven-thornton.jpg`
+in `data/photos.json` — not new, just independently reconfirmed.
+
+`build.py`, `check_data.py` and `check_duplicates.py` all pass clean on the
+merged tree (61 years, 1980 events, 60 presidents, no leader without a
+portrait). Landed the Jack Smith fix and this note on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
