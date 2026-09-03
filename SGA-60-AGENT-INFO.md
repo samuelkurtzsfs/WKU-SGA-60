@@ -3925,8 +3925,11 @@ candidates came out of it:
 - **James P. Haynes** (President, 1966-67 executive roster) is Jim Haynes,
   the year's leader, already portrayed from the 1967 Talisman.
 - **Nate Eaton** (Chair, Campus Improvements Committee, 2007-08) is Nathan
-  Eaton; the year's own committee record already says his name was
-  "printed as Nate and Nathan Eaton" for this chairmanship.
+  Eaton; the year carries the one Campus Improvements chairmanship under
+  both spellings — the senate-officer record from the minutes of 4
+  September 2007 reads Nate, the committee record from those of 11
+  September reads Nathan — and `data/name-aliases.json` already maps both
+  to Nathan J. Eaton.
 - **Page Settles** (Speaker of the Senate, 2015-16) is Paige Settles; the
   year's own senate-officer record for her carries a correction note
   reading "the archive currently carries 'Page Settles'... " and gives the
@@ -3994,6 +3997,46 @@ the build's photo-overlay or for anything else that matches on exact name.
 This run worked around it on the photos side only (see above); the
 underlying years.json spelling mismatch is still there for a decade or
 roster agent to reconcile if it's worth doing.
+
+**Editor's pass on the four reuses, 3 September 2026.** All four
+identifications hold and were merged, but two citation faults were fixed
+first, and one of them is the kind that must not recur.
+
+The Nate Eaton credit line said the archive's own record noted his name was
+"printed as Nate and Nathan Eaton" for the chairmanship. **No such wording
+exists anywhere.** It is not on the cited TopSCHOLAR record (`stu_org/328`,
+opened and read: the landing page carries an abstract of one sentence and
+no personal names at all), it is not in the 2007-08 committee note in
+`years.json`, which reads only that Eaton was reported as chair from
+September 2007 and also sat and moved as a senator, and it is nowhere in
+`data/`. A quotation was put in quotation marks and attributed to a source
+that does not contain it, and it would have been published under the
+portrait. Rewritten to what the record actually shows — the same
+chairmanship recorded under two spellings — and the sentence was corrected
+in this section and on the pull request too. The identification itself was
+never in doubt: `name-aliases.json` has mapped Nate and Nathan Eaton to one
+person since long before this run.
+
+The second fault is older and wider. Every Spirit Masters credit line
+citing `digitalcommons.wku.edu/stu_org/328` gave the call number as "WKU
+Archives UA68, Student Organizations". UA68 is SGA's own record group; the
+archive titles this item **UA12/2/16 Spirit Masters Scrapbook**, and a
+Spirit Masters scrapbook filed under SGA's number reads as an SGA record
+when it is not one — which matters, because a reader weighing whether the
+man in the scrapbook is the SGA senator is being told the picture came from
+SGA's own papers. Corrected in all six entries pointing at that URL. The
+same wrong number is still on the 1996-97 and 2004-05 Spirit Masters
+entries, which cite different scans this pass did not open; other entries
+in the same file already give UA12/2/16 correctly, so the file currently
+contradicts itself. Worth a photograph run opening those scans and settling
+them.
+
+Standing question, not a defect found here: the Spirit Masters portraits
+rest on identifications made from the scanned display boards themselves,
+and `viewcontent.cgi` has been returning 403 for weeks, so no editor pass
+can re-open them to check. They were accepted on the record of the run that
+found them. If that endpoint ever reopens, they are the first thing to
+re-verify.
 
 ## 9. Restarting a session
 
