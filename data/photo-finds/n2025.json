@@ -45,5 +45,69 @@
   "width": 390,
   "height": 472,
   "replaces": null
+ },
+ {
+  "year": "2025-26",
+  "name": "Karlee Powell",
+  "file": "2025-26-karlee-powell.jpg",
+  "replaces": null,
+  "width": 295,
+  "height": 370,
+  "quality": "small",
+  "why": "The only frame in the Herald library that names her and shows her face. She is the single subject in focus, laughing, arm raised; cropped to her alone.",
+  "caption_quote": "Karlee Powell, chapter president of Alpha Delta Pi, dances before the WKU Homecoming Parade",
+  "id_note": "Single-subject caption: everyone else in the frame is turned away or out of focus, so there is no ambiguity about which figure is named. The archive records Powell as Secretary of the Senate in 2025-26 and a graduating senior in April 2026, which puts her in her junior year at the November 2024 parade; the spelling Karlee Powell is uncommon and no second student of that name appears anywhere in the Herald library.",
+  "src": {
+   "label": "College Heights Herald, 15 November 2024, WKU Homecoming Parade",
+   "url": "https://wkuherald.com/wp-content/uploads/2024/11/11_15_24_Homecoming2024_GEM01.jpg"
+  }
+ },
+ {
+  "year": "2023-24",
+  "name": "Hannah Evans",
+  "file": "2023-24-hannah-evans.jpg",
+  "replaces": null,
+  "width": 490,
+  "height": 620,
+  "quality": "soft",
+  "why": "The only Herald frame that names her. She is the sole subject in focus, head lowered towards the goat, so the face is a three-quarter view rather than a portrait, but it is sharp and well lit.",
+  "caption_quote": "Hannah Evans, a freshman business economics major, feeds animal crackers to a goat",
+  "id_note": "One named subject and one person in focus, so no ambiguity. The caption calls her a freshman in March 2023, which matches the archive record of Hannah Evans as Sophomore Senator in 2023-24.",
+  "src": {
+   "label": "College Heights Herald, 24 March 2023, Goat Yoga at the First Year Village",
+   "url": "https://wkuherald.com/wp-content/uploads/2023/03/arnold_goatyoga9.jpg"
+  }
+ },
+ {
+  "year": "2023-24",
+  "name": "Karley Solorzano",
+  "file": "2023-24-karley-solorzano.jpg",
+  "replaces": null,
+  "width": 470,
+  "height": 570,
+  "quality": "good",
+  "why": "A sharp, evenly lit, front-facing frame of her accepting an SGA award, cropped to her alone. The best photograph of any of this block available.",
+  "caption_quote": "Karley Soloranzo receives Chief Justice’s Verdict Award from Isaac King on Wednesday, Oct. 18.",
+  "id_note": "Two people, both named. The certificate she is holding is legible in the frame and reads Chief Justice’s Verdict Award, September 2023, Karley Solorzano, so the recipient is identified by the document in her own hands. The man beside her is Chief Justice Isaac King: the archive’s existing 2023-24-isaac-king.jpg is cut from this same photograph. The Herald caption misspells her surname Soloranzo; the certificate and SGA’s own legislation both give Solorzano.",
+  "src": {
+   "label": "College Heights Herald, 19 October 2023, \"SGA announces September Chief Justice’s Verdict Award\"",
+   "url": "https://wkuherald.com/wp-content/uploads/2023/10/sga-10-18-photo.jpg"
+  }
+ },
+ {
+  "year": "2024-25",
+  "name": "Karisha Petty",
+  "file": "2024-25-karisha-petty.jpg",
+  "replaces": null,
+  "width": 550,
+  "height": 710,
+  "quality": "soft",
+  "why": "The only Herald frame that names her. Lit only by a monitor at a darkened event, so the face is dim and she is looking down with a hand at her chin, but it is her face and it is in focus.",
+  "caption_quote": "From left: ... Gabrielle Winston, ... Ke’Andrea, and ... Karisha Petty keep the BSA & Bingo event organized",
+  "id_note": "The caption is explicitly ordered from left and names three people; three women are grouped at the monitor and Petty is named third, so she is the rightmost. The fourth figure in the frame is an unnamed man in the background. The caption calls her a sophomore in September 2024, matching the archive record of her 2024-25 Senate seat.",
+  "src": {
+   "label": "College Heights Herald, 4 September 2024, BSA & Bingo in the DSU Nite Class",
+   "url": "https://wkuherald.com/wp-content/uploads/2024/09/sebastian_BNB_09.jpg"
+  }
  }
 ]

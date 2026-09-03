@@ -88,5 +88,50 @@
    "label": "WKU Student Government Association executive branch page, wku.edu/sga/executive (file /sga/executive/headshots/paul.jpg). Name-to-file pairing taken from the Internet Archive capture of that page, 5 December 2019.",
    "url": "https://www.wku.edu/sga/executive/headshots/paul.jpg"
   }
+ },
+ {
+  "year": "2015-16",
+  "name": "John Winstead",
+  "file": "2015-16-john-winstead.jpg",
+  "replaces": null,
+  "width": 710,
+  "height": 887,
+  "quality": "good",
+  "why": "The Herald's own staff mugshot of him, a single-subject frame shot against the Talisman shelves in the paper's office and re-run in fourteen issues from September 2015 to September 2016 — exactly his SGA year. Only one person is in the frame, so the caption cannot be misread onto anyone else. Cropped to head and shoulders from 1501x1001; not upscaled.",
+  "caption_quote": "John Winstead mug",
+  "src": {
+   "label": "College Heights Herald, 3 September 2015, staff mugshot of John Winstead",
+   "url": "https://wkuherald.com/wp-content/uploads/2015/09/cf4ffdd7a9e6f0c27aad58cb908525dc-1.jpg"
+  }
+ },
+ {
+  "year": "2016-17",
+  "name": "Blake Bowden",
+  "file": "2016-17-blake-bowden.jpg",
+  "replaces": null,
+  "width": 802,
+  "height": 1003,
+  "quality": "good",
+  "why": "A Herald studio portrait of him alone against a plain backdrop, sharp and strongly lit, made for the paper's feature on Black students and their hair. Only one person is in the frame. The caption's description of the hair — locs newly started on top, sides cut and faded — matches the photograph exactly, so caption and image are certainly the same subject. Cropped from 1501x1003; not upscaled. The tie to the archive's Blake Bowden is name plus campus plus period: the Herald puts a WKU student of that name on the Hill in the year on either side of his SGA service, and no second Blake Bowden appears anywhere in the paper's photo library.",
+  "caption_quote": "Blake Bowden, 21, of Stone Mountain, Ga., has just recently started the locking process",
+  "src": {
+   "label": "College Heights Herald, 27 November 2017, studio portrait from the paper's feature on Black hair",
+   "url": "https://wkuherald.com/wp-content/uploads/2017/11/c3423494456f51a2f0ee6dbcfc433e60.jpg"
+  }
+ },
+ {
+  "year": "2016-17",
+  "name": "Brian Anderson",
+  "file": "2016-17-brian-anderson.jpg",
+  "replaces": null,
+  "width": 800,
+  "height": 999,
+  "quality": "good",
+  "why": "A posed single-subject Herald portrait, suited, lit from the window of Gordon Wilson Hall. Only one person is in the frame, so the caption cannot attach to anyone else. It is a profile rather than a full-face view, but it is far the best-made picture of him the Herald holds. The 2015 date is before he reached SGA, and the link forward is the Herald's own: the same paper photographs 'Brian Anderson, sophomore from Hodgenville' at the campus surrogate debate of 1 November 2016, inside his year as Chair of Legislative Research, and Hodgenville is the seat of LaRue County, the school this portrait names. Cropped from 1501x999; not upscaled.",
+  "caption_quote": "Brian Anderson, a senior from LaRue County High School, poses for a portrait in Gordon Wilson Hall",
+  "src": {
+   "label": "College Heights Herald, 10 February 2015, portrait by Emily Kask",
+   "url": "https://wkuherald.com/wp-content/uploads/2015/02/a7be4e6f4ec8bb639654501fa1f924a9.jpg"
+  }
  }
 ]

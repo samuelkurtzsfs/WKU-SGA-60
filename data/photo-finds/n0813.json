@@ -1,1 +1,17 @@
-[]
+[
+ {
+  "year": "2008-09",
+  "name": "Ann Blair Thornton",
+  "file": "2008-09-ann-blair-thornton.jpg",
+  "replaces": null,
+  "width": 435,
+  "height": 544,
+  "why": "Sharp, well-lit, smiling frame; she is the only named subject and the only face turned to the camera, wearing the Miss Kentucky crown and sash the caption describes. Cropped from a 1501x992 Herald photograph. NOTE FOR THE EDITOR: the archive already publishes a smaller crop (270x450) of this same photograph as 2009-10-ann-blair-thornton.jpg. years.json carries 'Ann Blair Thornton' (2008-09, member) and 'Ann-Blair Thornton' (2009-10, Secretary of the Senate) as two records, and they are almost certainly one person. If they are merged, keep this larger crop and drop the other; if they are not merged, this fills the 2008-09 record.",
+  "caption_quote": "Bowling Green native Ann-Blair Thornton, the current Miss Kentucky and WKU student",
+  "src": {
+   "label": "College Heights Herald, 1 September 2011",
+   "url": "https://wkuherald.com/wp-content/uploads/2011/09/27a97f031cfaeaea761bac9542660fcd.jpg"
+  },
+  "quality": "good"
+ }
+]

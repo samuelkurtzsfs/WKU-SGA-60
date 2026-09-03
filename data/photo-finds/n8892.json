@@ -1,1 +1,33 @@
-[]
+[
+ {
+  "year": "1992-93",
+  "name": "Kevin Moore",
+  "file": "1992-93-kevin-moore.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 137,
+  "height": 182,
+  "why": "1993 Talisman senior portrait grid, p. 41. The grid is four portraits across and five rows deep; each row's four names, majors and hometowns are printed in order in the column to the right of the grid. The second row's names read Paulette Monroe, Kevin Moore, Alison L. Moorman, Chris Morehead, and this is the second cell of that row. He is the only Kevin Moore in the 1993 index, which gives him p. 41. A clean studio headshot, in focus, facing the camera; small only because the TopSCHOLAR scan is about 96 dpi, 864 pixels to a printed page.",
+  "caption_quote": "Kevin Moore, Government, Barbourville",
+  "src": {
+   "label": "1993 Talisman, p. 41, senior portraits; indexed \"Moore, Kevin 41\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+  }
+ },
+ {
+  "year": "1991-92",
+  "name": "Mary Susan Bunce",
+  "file": "1991-92-mary-susan-bunce.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 155,
+  "height": 193,
+  "why": "1991 Talisman senior portrait grid, p. 88. Four portraits across, five rows deep, with each row's four names, majors and hometowns printed in order in the column to the left. The fourth row reads John A. Buckingham, John A. Burden, Mary S. Bunce, Shannon M. Bunnell, and this is the third cell of that row; the first two cells are men and the last two women, which agrees with the list. She is the only Bunce anywhere in the volume, and the same volume's organization captions on pp. 184-185 print her as Mary Susan Bunce three times, in Kappa Delta, the Inter-Organizational Council and Leadership. A clean studio headshot, in focus, facing the camera; small only because the TopSCHOLAR scan is about 96 dpi.",
+  "caption_quote": "Mary S. Bunce, Corp. Comm., Louisville",
+  "id_note": "The archive also carries a 'Mary Sue Bunce' at 1990-91, almost certainly the same woman, but the two entries are not merged here. Filed to the spelling the Talisman itself uses.",
+  "src": {
+   "label": "1991 Talisman, p. 88, senior portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/415/"
+  }
+ }
+]
