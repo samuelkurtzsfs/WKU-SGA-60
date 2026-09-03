@@ -1,3 +1,112 @@
+# 3 September 2026 — editor's pass: an empty queue again, and a face that did not belong to its citation
+
+Nothing was open. No pull request, and — checked a second way, because an empty
+list is the shape a broken query also returns — no branch sharing history with
+`main` carries an unmerged commit. Every branch with a merge base is fully
+merged. The one that reads a commit ahead, `editor-night-2026-09-02b`, holds the
+midday log entry that reached `main` by another commit; its text is already at
+line 95 of this file. Write access is present: a probe branch pushed.
+
+So the run went where it should when there is nothing to merge — into what is
+already live — and it found something.
+
+## Withdrawn: the 1984-85 portrait of Jack Smith
+
+The credit read "1985 Talisman, p. 313 (senior portraits)". The photograph is a
+man in a backwards baseball cap, dark sunglasses and a Nike shirt with a bag
+strap over one shoulder. That is not a senior portrait, and the check is in the
+archive's own holdings: the sourced 1984-85 portraits of Dorothy Metzmeier and
+Stanley Reagan, both cited to senior class portrait pages, are formal studio
+head-shots on a plain ground, printed five to a row. The credit did not describe
+the photograph it was attached to.
+
+Nothing else stood behind it. Every other portrait from that era carries a
+caption quote, an index entry and a position in the grid — Naheed Shafi's credit
+runs to five lines and even declines to claim her class year because the volume
+contradicts itself. This one carried a page number and no evidence at all. The
+sunglasses hide the face, so it could not even be compared with the 1984 Talisman
+frame the archive already holds of him. And Smith is the commonest surname in
+this record: `_do-not-use.json` already refuses four other Smith portraits on
+exactly that ground, one of them for "a mismatched initial".
+
+The page could not be opened to settle it. archive.org holds the 1971-1981, 1986
+and 1987 volumes but not 1984 or 1985 — which is why that era's researcher
+worked from the 1986 book — and `viewcontent.cgi` refused the PDF twice, the
+second time after the full 90-second backoff. A claim the archive cannot check
+and did not evidence does not stay on the wall.
+
+**His presidency is not affected and was never in doubt.** The Herald of
+14 April 1983 carries "Jack Smith Wins Presidency of Associated Student
+Government" and 11 April 1985 carries the report of his term ending; both landing
+pages were opened for this. He keeps his 1984 Talisman portrait, which serves
+1982-83 and 1983-84. What was cut is one face in one year, not a president.
+The withdrawal and its reasoning are on the do-not-use list, because the lesson
+of the LaCivita portrait is that reasoning left out of the record gets re-litigated
+by a later pass that cannot see it.
+
+Flagged and not fixed: the surviving credit reads "1984 Talisman, p. 118 (senior
+portrait)", and p. 118 is not where that volume prints class portraits — the
+do-not-use list puts them at p. 147. The parenthetical is probably wrong even
+though the photograph looks sound. It needs the page itself, so it waits for
+`viewcontent.cgi`.
+
+## The spot check
+
+Nine claims opened against their sources. Eight held.
+
+- Lane Hedrick's portrait credit, repointed by the late pass of 2 September:
+  `wkuherald.com/27091` carries "Junior Lane Hedrick", Morehead, Lydia
+  Schweickart, 6 November 2017, exactly as cited. The repointing was right.
+- Her tie to SGA: `wkuherald.com/29383` records the judicial council selecting
+  her as next associate chief justice, subject to senate approval. As cited.
+- Naheed Shafi: the 1987 Talisman caption reads "FRONT ROW: Naheed Shafi, Hiroto
+  Ishige, Yoo-Cheong Chang", the index reads "Shafi, Naheed 117, 118, 343", and
+  the volume does contradict itself on her class year — the article calls her a
+  Bowling Green junior, the directory lists her elsewhere. The credit claims no
+  class year. All three as cited.
+- Steve Thornton: the 1978 Talisman says he "was sophomore president at the time
+  of the election", in its account of Ed Johnson's protest at losing by 72 votes.
+  As cited.
+- Jack Smith's election and the end of his term, both Herald landing pages, above.
+- The 1984-85 portrait, which failed.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_data`
+now reports one leader without a portrait, 1984-85 Jack Smith, which is the
+honest state of the record and the point of the cut. `check_duplicates.py`
+reports the same six pairs standing on main. Judged again, unchanged: the three
+1991-09-01 bills are same-day legislative business and stay three entries, and
+the other three pairs are each a plan and its outcome weeks or months apart.
+
+## A convention, since the last pass asked for one
+
+The 2 September log noted this file is written from both ends and that a pass
+reading only one end concludes work it cannot see was never done. Picking the
+end: **new entries go on top.** The five most recent entries are already there.
+Nothing below is to be moved — thirteen thousand lines of history do not need
+reordering to fix a habit — but grep before you conclude anything is absent.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,819
+people, 2,650 of those terms (98%) carrying an account of what the person did,
+41 people recorded under more than one name. 60 people have been president.
+72 portraits, down one. Search index 4,971 records.
+
+## Still open
+
+The standing brief for this routine still sends the editor after pull requests
+#6, #7 and #8 as stale and open. They were closed on 18 August. Three passes have
+now recorded this — 30 August, 2 September midday, and this one — and the brief
+has not changed, so it is worth saying plainly: those three lines should come
+out of it, and the 4 August branches behind them should not be revived, having
+no merge base with `main`.
+
+Unchanged otherwise: `viewcontent.cgi` gated, `web.archive.org` unreachable from
+these containers while `archive.org/download` is fine, the 1993-94 to 2009-10 gap
+in year photographs, and 431 legislation files with no author recorded.
+
 # 2 September 2026 — editor's pass, evening: one portrait, published twice under two names
 
 One pull request was open, #324 "Research: photographs", and it carried exactly
