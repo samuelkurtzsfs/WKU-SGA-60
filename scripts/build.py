@@ -7085,9 +7085,29 @@ def render_network(ys, people):
         yrs = sorted({t["year"] for t in p["terms"] if t.get("year")})
         if not yrs:
             continue
+        # What they held in each year, not just the best title they ever
+        # reached. Showing career-best against every year made Rush Robinson
+        # read as "President and Student Regent" in 2022-23, when he was a
+        # freshman senator and would not hold the office for three more years.
+        prog = {}
+        for t in p["terms"]:
+            if t.get("year") and t.get("office"):
+                prog.setdefault(t["year"], []).append(t["office"])
+        def tidy(v):
+            # A president holds one office that the record writes twice: the
+            # cabinet seat "President" and the leader role "President and
+            # Student Regent". Listing both reads as two jobs. Where one title
+            # contains another, only the fuller one survives.
+            out = []
+            for o in dict.fromkeys(v):
+                if any(o != w and o.lower() in w.lower() for w in v):
+                    continue
+                out.append(o)
+            return "; ".join(out)
         rows[name] = {"slug": slug(name), "years": yrs, "office": top(p),
                       "president": bool(p.get("president")), "regent": name in regents,
                       "lyears": sorted(set(led.get(name, []))),
+                      "prog": {y: tidy(v) for y, v in prog.items()},
                       "photo": (p.get("photo") or {}).get("file") if isinstance(
                           p.get("photo"), dict) else None}
     years = [y["id"] for y in ys]

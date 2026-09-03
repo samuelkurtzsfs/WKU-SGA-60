@@ -112,6 +112,15 @@ def payload(people, years):
     """
     pos, anch = layout(people, years)
     yi = {y: i for i, y in enumerate(years)}
+    # Offices repeat hard across 1,819 people; a dictionary and an index costs
+    # a fraction of writing "Campus Improvements and Sustainability Committee
+    # Chair" out once per person per year.
+    seen_off, off_list = {}, []
+    def oid(txt):
+        if txt not in seen_off:
+            seen_off[txt] = len(off_list)
+            off_list.append(txt)
+        return seen_off[txt]
     nodes = []
     for name, p in sorted(people.items()):
         if name not in pos:
@@ -125,12 +134,15 @@ def payload(people, years):
             "p": 1 if p["president"] else 0,
             "r": 1 if p.get("regent") else 0,
             "l": sorted(yi[v] for v in (p.get("lyears") or []) if v in yi),
+            "t": sorted([yi[y], oid(o)] for y, o in (p.get("prog") or {}).items()
+                        if y in yi),
             "f": p.get("photo") or "",
             "x": round(x),
             "z": round(y),
         })
     return {
         "years": years,
+        "offices": off_list,
         "anchors": [[round(anch[y][0]), round(anch[y][1])] for y in years],
         "nodes": nodes,
     }
@@ -175,6 +187,11 @@ NETWORK_CSS = """
 .card .who{display:flex;gap:11px;align-items:flex-start}
 .card img{width:54px;height:54px;border-radius:9px;object-fit:cover;flex:none;
   background:#26272E;border:1px solid #34363E}
+.card .prog{margin-top:11px;border-top:1px solid #24252C;padding-top:9px}
+.card .run{display:flex;gap:9px;justify-content:space-between;align-items:baseline;
+  padding:2px 0;font-size:12.5px}
+.card .run b{color:#E7E7EC;font-weight:500}
+.card .run span{color:#7C7E88;font-size:11px;white-space:nowrap}
 .card .mates{border-top:1px solid #24252C;max-height:32vh;overflow:auto}
 .card .mates a{display:block;padding:7px 16px;color:#C9CAD2;text-decoration:none;font-size:12.5px}
 .card .mates a:hover{background:#22242B;color:#fff}
@@ -225,6 +242,7 @@ def network_page(data):
   <div class="pad">
     <div class="who"><img id="cimg" alt="" hidden>
       <div><h3 id="cname"></h3><div class="sub" id="csub"></div></div></div>
+    <div class="prog" id="cprog"></div>
   </div>
   <div class="mates" id="cmates"></div>
   <a class="go" id="cgo" href="#">Open their record</a>
@@ -558,7 +576,23 @@ function open(i){
   document.getElementById("cname").textContent = n.n;
   const yrs = n.y.map(k=>YEARS[k]);
   document.getElementById("csub").textContent =
-    (n.o||"Served") + " \\u00b7 " + (yrs.length>1 ? yrs[0]+" to "+yrs[yrs.length-1] : yrs[0]);
+    yrs.length>1 ? yrs[0]+" to "+yrs[yrs.length-1] : yrs[0];
+  // The whole progression, year by year. Showing the best title somebody ever
+  // reached against every one of their years turned three years of committee
+  // chairing into three years of being president, which is not what the record
+  // says and is unfair to everyone on either side of it.
+  const runs = [];
+  for(const pair of (n.t||[])){
+    const label = D.offices[pair[1]];
+    const last = runs[runs.length-1];
+    if(last && last.o === label) last.ys.push(YEARS[pair[0]]);
+    else runs.push({o:label, ys:[YEARS[pair[0]]]});
+  }
+  document.getElementById("cprog").innerHTML = runs.map(function(r){
+    return '<div class="run"><b>' + r.o + '</b><span>'
+      + (r.ys.length>1 ? r.ys[0]+"\\u2013"+r.ys[r.ys.length-1].slice(-2) : r.ys[0])
+      + '</span></div>';
+  }).join("");
   const im = document.getElementById("cimg");
   if(n.f){ im.src = "photos/"+n.f; im.hidden=false; } else im.hidden=true;
   document.getElementById("cgo").href = "o/"+n.s+".html";
