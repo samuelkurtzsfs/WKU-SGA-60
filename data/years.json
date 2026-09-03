@@ -44468,19 +44468,6 @@
        }
       },
       {
-       "name": "Lily Nellans",
-       "seat": "Senator",
-       "src": {
-        "label": "SGA Bill 20-17-S, 2016-17 session",
-        "url": "https://www.wku.edu/sga/accountability/bill_20-17-s.pdf"
-       },
-       "note": "Nellans was one of the five authors of Bill 20-17-S, the bill requiring student organisations to sign a nondiscrimination pledge before receiving organizational aid, passed 17-9-1 on 28 March 2017. Her wider part in the year is under her senate officer entry.",
-       "src2": {
-        "label": "Herald, 29 Mar 2017",
-        "url": "https://wkuherald.com/29414/news/senate-considers-new-legislation-in-final-weeks-of-semester/"
-       }
-      },
-      {
        "name": "Shantel Pettway",
        "seat": "Senator",
        "src": {
@@ -44509,15 +44496,6 @@
         "url": "https://www.wku.edu/sga/accountability/legislation-2016-2017/bill-22-16-f.pdf"
        },
        "note": "Raza served on the organizational aid committee and is recorded among its members on Bill 22-16-F, the November 2016 bill that split $1,500 between the S.T.R.I.P.E.S. club, College Youth in Government and the Student Coalition for Renters' Rights."
-      },
-      {
-       "name": "Ryan Richardson",
-       "seat": "Senator",
-       "src": {
-        "label": "SGA Bill 28-17-S, 2016-17 session",
-        "url": "https://www.wku.edu/sga/accountability/bill_28-17-s.pdf"
-       },
-       "note": "Richardson authored Bill 28-17-S, the constitutional amendment merging the academic affairs and student affairs committees, passed 28-0-0 on 25 April 2017. His later offices are under his senate officer entry."
       },
       {
        "name": "Sara Saeed",
@@ -45982,15 +45960,6 @@
        }
       },
       {
-       "name": "Will Harris",
-       "seat": "Freshman Senator",
-       "src": {
-        "label": "SGA Bill 12-17-F, 2017-18 session",
-        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-12-17-f.pdf"
-       },
-       "note": "Harris authored Bill 12-17-F, the constitutional amendment setting a fixed process for appointing senators to vacant seats. His wider part in the year is under his senate officer entry."
-      },
-      {
        "name": "Logan Hornback",
        "seat": "Senator-at-Large",
        "src": {
@@ -46165,15 +46134,6 @@
         "label": "Herald, 28 Mar 2018",
         "url": "https://wkuherald.com/25087/news/debate-sparked-in-sga-over-funding-for-lgbtq-ceremony/"
        }
-      },
-      {
-       "name": "Cassidy Townsend",
-       "seat": "Senator",
-       "src": {
-        "label": "SGA Bill 9-18-S, 2017-18 session",
-        "url": "https://www.wku.edu/sga/accountability/bill-9-18-s.pdf"
-       },
-       "note": "Townsend co-authored Bill 9-18-S, which replaced two at-large seats and one graduate seat with first-generation, transfer and international student seats. Her other legislation is under her senate officer entry."
       },
       {
        "name": "Morgan Wysong",
@@ -49730,7 +49690,11 @@
         "label": "SGA legislation: Bill 6-22-S, A Bill to Amend the Student Government Association Constitution",
         "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/6_22_s.pdf"
        },
-       "note": "Named as an author on two pieces of SGA legislation in the 2021-22 session, both amendments to SGA's constitution or bylaws (Bill 4-22-S and Bill 6-22-S)."
+       "note": "Named as an author on two pieces of SGA legislation in the 2021-22 session, both amendments to SGA's constitution or bylaws (Bill 4-22-S and Bill 6-22-S).",
+       "src2": {
+        "label": "SGA Bill 4-22-S, 2021-22 session",
+        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/4_22_s.pdf"
+       }
       },
       {
        "office": "Gatton Academy Senator",
@@ -49814,19 +49778,15 @@
        "src3": {
         "label": "Herald, 1 Dec 2021 - SGA discusses critical race theory legislation",
         "url": "https://wkuherald.com/62662/news/sga-discusses-critical-race-theory-legislation/"
-       }
-      }
-     ],
-     "members": [
-      {
-       "name": "Jesse Banales",
-       "seat": "Gordon Ford College of Business Senator",
-       "src": {
+       },
+       "src4": {
         "label": "SGA Bill 3-21-F, 2021-22 session",
         "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/3_21_f.pdf"
        },
        "note": "Named as an author on two pieces of SGA legislation in the 2021-22 session: Resolution 7-21-F (Resolution to Support Critical Race Theory). Bill 3-21-F amended SGA's constitution or bylaws."
-      },
+      }
+     ],
+     "members": [
       {
        "name": "Garrett Baum",
        "seat": "Junior Senator",
@@ -49882,24 +49842,6 @@
        "note": "Named as an author on two pieces of SGA legislation in the 2021-22 session: Resolution 6-21-F (Resolution to Support the Inclusion of Studetns in Mandatory Title IX Trainings). Bill 9-21-F amended SGA's constitution or bylaws."
       },
       {
-       "name": "Kat Howard",
-       "seat": "Ogden College of Science & Engineering Senator",
-       "src": {
-        "label": "SGA Bill 14-22-S, 2021-22 session",
-        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/14_22_s.pdf"
-       },
-       "note": "Named as an author on two pieces of SGA legislation in the 2021-22 session: Bill 5-21-F and Bill 14-22-S."
-      },
-      {
-       "name": "Sam Kurtz",
-       "seat": "Freshman Senator",
-       "src": {
-        "label": "SGA Bill 4-22-S, 2021-22 session",
-        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/4_22_s.pdf"
-       },
-       "note": "Named as an author on two pieces of SGA legislation in the 2021-22 session: Bill 4-22-S and Bill 6-22-S."
-      },
-      {
        "name": "Addison McCoun",
        "seat": "Potter College of Arts & Letters Senator",
        "note": "Also chaired the Legislative Operations Committee.",
@@ -49943,15 +49885,6 @@
         "label": "SGA Bill 9-22-S, 2021-22 session",
         "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/9_22_s.pdf"
        }
-      },
-      {
-       "name": "Preston Romanov",
-       "seat": "Senator At Large",
-       "src": {
-        "label": "SGA Bill 14-22-S, 2021-22 session",
-        "url": "https://www.wku.edu/sga/legislative/2021_22_legislation/14_22_s.pdf"
-       },
-       "note": "Named as an author on two pieces of SGA legislation in the 2021-22 session: Bill 13-21-F and Bill 14-22-S."
       },
       {
        "name": "Ari Srivastava",
@@ -50617,7 +50550,8 @@
        },
        "profile": [
         "Griffin Plumb served as a Senator At-Large in the Student Government Association during 2022-23. He co-authored Bill 5-22-F, which added a duty for each academic college's senator to meet at least once per term of office with their college's dean or associate dean; the Senate passed it 37-0 on 11 October 2022. He also co-authored Bill 14-22-F, correcting a mismatch between the SGA bylaws and the constitution over which committee reviewed legislation, replacing the bylaws' reference to the \"LRC\" — an entity the bill states does not exist under the constitution — with the constitution's actual \"Legislative Operations Committee\"; the Senate passed it 30-0 on 1 November 2022."
-       ]
+       ],
+       "note": "Named as an author on two pieces of SGA legislation in the 2022-23 session, both amendments to SGA's constitution or bylaws (Bill 5-22-F and Bill 14-22-F)."
       },
       {
        "office": "International Senator",
@@ -50647,7 +50581,8 @@
        "src3": {
         "label": "SGA legislation: Bill 50-23-S, A Bill to Amend the Student Government Association Constitution",
         "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_50_23_s.pdf"
-       }
+       },
+       "note": "Bill 16-22-F spells the name \"Zaepfel\" and Bill 50-23-S \"Zaephel\", in the same seat and the same session; which is correct could not be settled from the bills."
       },
       {
        "office": "Gordon Ford College of Business Senator",
@@ -50737,7 +50672,8 @@
        },
        "profile": [
         "Danny Vuleta served as the First Generation Senator in 2022-23. He co-authored Bill 27-23-S with Adan Canizalez, allocating $2,000 for the Legislative Voucher Program's Dental Hygiene Clinic, ID Center and Preston Center vouchers; the Senate passed it 34-0 on 7 February 2023."
-       ]
+       ],
+       "note": "Named as an author on one piece of SGA legislation in the 2022-23 session: Bill 27-23-S (Funding for vouchers for the WKU Dental Hygiene Center, ID Center and Preston Center)."
       },
       {
        "office": "Senator At Large",
@@ -50807,7 +50743,12 @@
        },
        "profile": [
         "Neel Patel served as the Gatton Academy Senator in 2022-23. He co-authored Bill 34-23-S, allocating $50 for a Community Relations Committee survey asking students how the committee could bridge the gap with the Bowling Green community; the Senate passed it with 29 votes in favor on 28 February 2023. He also co-authored Bill 39-23-S, rewriting the constitution's process for filling vacant senate seats and adding language requiring spring and fall elections to follow the election codes set by the Judicial Council and approved by a Senate majority; the Senate passed it by the closer margin of 19-15 on 21 March 2023. A later bill he co-authored, 47-23-S, proposed further changes to when senate elections are held; the surviving copy of that bill does not record a final vote."
-       ]
+       ],
+       "src4": {
+        "label": "SGA Bill 15-22-F, 2022-23 session",
+        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_15_22_f.pdf"
+       },
+       "note": "Named as an author on six pieces of SGA legislation in the 2022-23 session: Bill 34-23-S (Funding for Community Relations Survey). Five of them amended SGA's constitution or bylaws (Bill 15-22-F, Bill 16-22-F, Bill 39-23-S, Bill 47-23-S and Bill 50-23-S)."
       },
       {
        "office": "Senator",
@@ -50855,7 +50796,8 @@
        },
        "profile": [
         "Jakob Briggs served as a Sophomore Senator in 2022-23. He co-authored Bill 41-23-S with three other senators, seeking $300 for Dance Big Red's 2023 fundraiser benefiting Norton Children's Hospital; the Senate rejected it, 10 votes in favor to 17 against with 4 abstentions, on 28 March 2023."
-       ]
+       ],
+       "note": "Named as an author on four pieces of SGA legislation in the 2022-23 session: Bill 3-22-F (Funding for the Counseling Center’s October Domestic Violence Awareness Month T-Shirts); Bill 41-23-S (Funding for Dance Big Red 2023); Bill 43-23-S (Funding for the Miss Phi Beta Sigma Pageant); Bill 46-23-S (Funding for the Mental Health Awareness Week in April 2023)."
       },
       {
        "office": "Graduate Student Senator",
@@ -50950,15 +50892,6 @@
      ],
      "members": [
       {
-       "name": "Jakob Briggs",
-       "seat": "Sophomore Senator",
-       "src": {
-        "label": "SGA Bill 41-23-S, 2022-23 session",
-        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_41_23_s.pdf"
-       },
-       "note": "Named as an author on four pieces of SGA legislation in the 2022-23 session: Bill 3-22-F (Funding for the Counseling Center’s October Domestic Violence Awareness Month T-Shirts); Bill 41-23-S (Funding for Dance Big Red 2023); Bill 43-23-S (Funding for the Miss Phi Beta Sigma Pageant); Bill 46-23-S (Funding for the Mental Health Awareness Week in April 2023)."
-      },
-      {
        "name": "Adan Canizalez",
        "seat": "Senator at Large",
        "src": {
@@ -50975,15 +50908,6 @@
         "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_13_22_f.pdf"
        },
        "note": "Named as an author on five pieces of SGA legislation in the 2022-23 session: Resolution 1-22-F (Resolution to Support selling personal safety items at WKU); Bill 7-22-F (Funding for a Safety Awareness Week in October 2022); Bill 13-22-F (Funding for Off-Campus Recycling Vouchers). Two of them amended SGA's constitution or bylaws (Bill 4-22-F and Bill 6-22-F)."
-      },
-      {
-       "name": "Megan Farmer",
-       "seat": "Senator At-Large",
-       "src": {
-        "label": "SGA Bill 26-22-F, 2022-23 session",
-        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_26_22_f.pdf"
-       },
-       "note": "Named as an author on one piece of SGA legislation in the 2022-23 session: Bill 26-22-F."
       },
       {
        "name": "Annalise Finch",
@@ -51022,24 +50946,6 @@
        "note": "Named as an author on two pieces of SGA legislation in the 2022-23 session: Bill 41-23-S (Funding for Dance Big Red 2023); Bill 46-23-S (Funding for the Mental Health Awareness Week in April 2023)."
       },
       {
-       "name": "Neel Patel",
-       "seat": "Gatton Academy Senator",
-       "src": {
-        "label": "SGA Bill 15-22-F, 2022-23 session",
-        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_15_22_f.pdf"
-       },
-       "note": "Named as an author on six pieces of SGA legislation in the 2022-23 session: Bill 34-23-S (Funding for Community Relations Survey). Five of them amended SGA's constitution or bylaws (Bill 15-22-F, Bill 16-22-F, Bill 39-23-S, Bill 47-23-S and Bill 50-23-S)."
-      },
-      {
-       "name": "Griffin Plumb",
-       "seat": "Senator At-Large",
-       "src": {
-        "label": "SGA Bill 14-22-F, 2022-23 session",
-        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_14_22_f.pdf"
-       },
-       "note": "Named as an author on two pieces of SGA legislation in the 2022-23 session, both amendments to SGA's constitution or bylaws (Bill 5-22-F and Bill 14-22-F)."
-      },
-      {
        "name": "Rush Robinson",
        "seat": "Senator",
        "note": "Listed as \"Member of Organizational Aid\" alongside the Senator title.",
@@ -51065,33 +50971,6 @@
         "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_17_22_f.pdf"
        },
        "note": "Named as an author on one piece of SGA legislation in the 2022-23 session: Bill 17-22-F (Funding for the Midnight on the Hill Organization)."
-      },
-      {
-       "name": "Danny Vuleta",
-       "seat": "First Generation Senator",
-       "src": {
-        "label": "SGA Bill 27-23-S, 2022-23 session",
-        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_27_23_s.pdf"
-       },
-       "note": "Named as an author on one piece of SGA legislation in the 2022-23 session: Bill 27-23-S (Funding for vouchers for the WKU Dental Hygiene Center, ID Center and Preston Center)."
-      },
-      {
-       "name": "Jenna Wells",
-       "seat": "Gordon Ford College of Business Senator",
-       "src": {
-        "label": "SGA Bill 5-22-F, 2022-23 session",
-        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_17_22_f.pdf"
-       },
-       "note": "Named as an author on two pieces of SGA legislation in the 2022-23 session: Bill 5-22-F and Bill 17-22-F."
-      },
-      {
-       "name": "Maksim Zaepfel",
-       "seat": "Senator At-large",
-       "note": "Bill 16-22-F spells the name \"Zaepfel\" and Bill 50-23-S \"Zaephel\", in the same seat and the same session; which is correct could not be settled from the bills.",
-       "src": {
-        "label": "SGA Bill 16-22-F, 2022-23 session",
-        "url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_16_22_f.pdf"
-       }
       }
      ]
     }
@@ -51869,7 +51748,9 @@
        },
        "profile": [
         "Ralston was sworn in as a freshman senator after the fall 2023 election. In February 2024 she co-authored a bill funding tabling during National Eating Disorder Awareness Week with Livi Ray and Savanna Kurtz. In January 2024 Executive Vice President Annalise Finch appointed her head of the Colonnade General Education Committee.",
-        "Ralston ran again in the spring 2024 general election and was elected a senator-at-large for 2024-25."
+        "Ralston ran again in the spring 2024 general election and was elected a senator-at-large for 2024-25.",
+        "Ralston was elected a freshman senator in the fall 2023 elections announced 20 September, one of six students the Herald named as winners; the Herald reported that five of the six were sworn in at the following Tuesday meeting without naming which five. At the spring semester's first meeting in January 2024, Executive Vice President Annalise Finch appointed her to chair the Colonnade General Education committee.",
+        "She co-authored, with Annalise Finch and Ryan Dilts, Bill 7-23-F, funding a $600 Veterans Day 5k run at Kereiakes Park, and co-authored, with Livi Ray and Savanna Kurtz, Bill 10-24-S, funding a $100 National Eating Disorder Awareness Week tabling event. She continued into 2024-25 as a Senator-At-Large and was named an author on Bill 19-25-S in March 2025."
        ]
       },
       {
@@ -51911,7 +51792,8 @@
         "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_11_23_f.pdf"
        },
        "profile": [
-        "Ferguson, a senior business management major, was elected the Gordon Ford College of Business senator in the April 2023 election. He was individually appointed to the county's Warren County Election Education Commission, supplying door hangers and voting-information literature to campus political groups including the College Democrats and Republicans. In March 2024 he spoke in favor of a mental-health-related funding bill."
+        "Ferguson, a senior business management major, was elected the Gordon Ford College of Business senator in the April 2023 election. He was individually appointed to the county's Warren County Election Education Commission, supplying door hangers and voting-information literature to campus political groups including the College Democrats and Republicans. In March 2024 he spoke in favor of a mental-health-related funding bill.",
+        "Ferguson served as the Gordon Ford College of Business Senator in 2023-24. Through the Community Relations Committee he co-authored three funding bills, each time with Sarah Vincent, Ethan Taylor and Maiah Cisco (joined also by Savanna Kurtz on two of them): Bill 11-23-F, paying for wrapping materials for a Boys and Girls Club of Bowling Green toy drive in November 2023; Bill 14-23-F, creating two $500 Community Builder Excellence Scholarships, totaling $1,000, for incoming Bowling Green-area freshmen; and Bill 11-24-S, allocating $800 in February 2024 to the committee's \"Dress for Success\" drive supplying shoes, socks, underwear and toiletries."
        ],
        "src2": {
         "label": "SGA announces election results, Herald, 19 Apr 2023",
@@ -52032,7 +51914,8 @@
        },
        "profile": [
         "Dilts was elected a senator-at-large for the 2023-24 Senate. He co-authored bills that fall, including one with then-Executive Vice President Annalise Finch and Chloe Ralston on 9 November 2023, and in March 2024 co-authored the SGA Spring Fling Event funding bill, which passed the Senate 28-2.",
-        "He ran again in the spring 2024 election and was elected a junior senator for 2024-25. That August the Senate appointed him chair of the Outreach and Public Relations Committee, and in October 2024 he proposed adding to the budget of a bill during a Senate meeting."
+        "He ran again in the spring 2024 election and was elected a junior senator for 2024-25. That August the Senate appointed him chair of the Outreach and Public Relations Committee, and in October 2024 he proposed adding to the budget of a bill during a Senate meeting.",
+        "Dilts served as a Senator At Large in 2023-24 and, in 2024-25, was confirmed by the Senate to chair the Outreach and Public Relations Committee. In fall 2023 he co-authored, with Executive Vice President Annalise Finch and Chloe Ralston, Bill 7-23-F, allocating $600 for a Veterans Day 5k run at Kereiakes Park, and in March 2024 he co-authored, with Madison Payne, Elizabeth Gannon and Livi Ray, Bill 15-24-S, funding an SGA Spring Fling tailgate on South Lawn that raised money for Kids Cancer Alliance."
        ]
       },
       {
@@ -52043,7 +51926,8 @@
         "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_15_24_s.pdf"
        },
        "profile": [
-        "Gannon, who had graduated from WKU in May 2023 with a Bachelor of Arts in Chinese and a Bachelor of Science in Biology, minoring in Asian religions and culture, was nominated by then-President Sam Kurtz to fill the graduate senator seat in January 2024. In March 2024 she co-authored, as graduate senator, the SGA Spring Fling Event funding bill, which passed the Senate 28-2."
+        "Gannon, who had graduated from WKU in May 2023 with a Bachelor of Arts in Chinese and a Bachelor of Science in Biology, minoring in Asian religions and culture, was nominated by then-President Sam Kurtz to fill the graduate senator seat in January 2024. In March 2024 she co-authored, as graduate senator, the SGA Spring Fling Event funding bill, which passed the Senate 28-2.",
+        "Gannon was appointed to a vacant graduate senate seat by President Sam Kurtz at the first Senate meeting of spring 2024, alongside Sawyer Edmonds and Gabe Jerdon filling other vacancies, at the same meeting where Kurtz also announced the resignations of Chief of Staff Lindsey Kelly and Director of Enrollment and Student Experience Donte Reed. She was a co-author, with Madison Payne, Ryan Dilts and Livi Ray, of Bill 15-24-S, funding an SGA Spring Fling tailgate on South Lawn for Kids Cancer Alliance in March 2024."
        ],
        "src2": {
         "label": "SGA swears in new members, opens spring scholarships, Herald, 24 Jan 2024",
@@ -52159,7 +52043,8 @@
        },
        "profile": [
         "Hannah Evans served as a sophomore senator in SGA's 23rd Senate, 2023-24. In September 2023 she co-authored, with senators Meghan Pierce and Samantha Bodemann, a bill funding WKU Student Activities' \"Shark Tank\" event, and that November a bill amending SGA's constitution and bylaws. She was a recurring co-author that spring, alongside Senator at Large Joel Hornback, on the fourteen-bill package rewriting large sections of the constitution that the Senate read together on 12 March 2024; thirteen of the fourteen passed at the second reading on 28 March. She also co-authored the bill funding SGA's spring 2024 Organizational Aid round with Administrative Vice President Salvador Leon Golib and others."
-       ]
+       ],
+       "note": "Named as an author on eighteen pieces of SGA legislation in the 2023-24 session: Bill 2-23-F (Funding for Student Activities \"Shark Tank\" Event); Bill 33-24-S (Organizational Aid Funding Spring 2024). Sixteen of them amended SGA's constitution or bylaws (Bill 8-23-F, Bill 9-23-F, Bill 19-24-S, Bill 20-24-S and 12 more)."
       },
       {
        "office": "Senator At Large",
@@ -52207,7 +52092,8 @@
        "src10": {
         "label": "SGA Bill 17-25-F, Funding for the Go With the Flow Program and WKU Food Pantry Donation Drive",
         "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_17_25_f.pdf"
-       }
+       },
+       "note": "Named as an author on one piece of SGA legislation in the 2023-24 session: Bill 4-24-S (Funding for the Neurodiversity Acceptance Week)."
       },
       {
        "office": "Senator At Large",
@@ -52230,7 +52116,8 @@
        "src4": {
         "label": "SGA Bill 3-23-F, Funding for the Bowling Green Pride SGA Table",
         "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_3_23_f.pdf"
-       }
+       },
+       "note": "Named as an author on three pieces of SGA legislation in the 2023-24 session: Bill 3-23-F (Funding for the Bowling Green Pride SGA Table); Bill 8-24-S (Funding for the Valentine's Day Tabling); Bill 14-24-S (Funding for Student Government Association DEI Week)."
       },
       {
        "office": "College of Education and Behavioral Sciences Senator",
@@ -52376,17 +52263,6 @@
        ]
       },
       {
-       "name": "Ryan Dilts",
-       "seat": "Senator At Large",
-       "src": {
-        "label": "SGA Bill 15-24-S, 2023-24 session",
-        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_15_24_s.pdf"
-       },
-       "profile": [
-        "Dilts served as a Senator At Large in 2023-24 and, in 2024-25, was confirmed by the Senate to chair the Outreach and Public Relations Committee. In fall 2023 he co-authored, with Executive Vice President Annalise Finch and Chloe Ralston, Bill 7-23-F, allocating $600 for a Veterans Day 5k run at Kereiakes Park, and in March 2024 he co-authored, with Madison Payne, Elizabeth Gannon and Livi Ray, Bill 15-24-S, funding an SGA Spring Fling tailgate on South Lawn that raised money for Kids Cancer Alliance."
-       ]
-      },
-      {
        "name": "Kayla Distler",
        "seat": "CEBS Senator",
        "src": {
@@ -52394,46 +52270,6 @@
         "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_33_23_s.pdf"
        },
        "note": "Named as an author on seven pieces of SGA legislation in the 2023-24 session: Bill 3-23-F (Funding for the Bowling Green Pride SGA Table); Resolution 2-24-S (Resolution to Support Expanding Benches or Awnings at Topper Transit Stops on Campus); Bill 3-24-S (Funding for the \"Abby Nash Creatvity\" Scholarship); Bill 4-24-S (Funding for the Neurodiversity Acceptance Week); Bill 8-24-S (Funding for the Valentine's Day Tabling); Bill 14-24-S (Funding for Student Government Association DEI Week); Bill 33-24-S (Organizational Aid Funding Spring 2024)."
-      },
-      {
-       "name": "Hannah Evans",
-       "seat": "Sophomore Senator",
-       "src": {
-        "label": "SGA Bill 19-24-S, 2023-24 session",
-        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_19_24_s.pdf"
-       },
-       "note": "Named as an author on eighteen pieces of SGA legislation in the 2023-24 session: Bill 2-23-F (Funding for Student Activities \"Shark Tank\" Event); Bill 33-24-S (Organizational Aid Funding Spring 2024). Sixteen of them amended SGA's constitution or bylaws (Bill 8-23-F, Bill 9-23-F, Bill 19-24-S, Bill 20-24-S and 12 more)."
-      },
-      {
-       "name": "Megan Farmer",
-       "seat": "Senator At Large",
-       "src": {
-        "label": "SGA Bill 8-24-S, 2023-24 session",
-        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_8_24_s.pdf"
-       },
-       "note": "Named as an author on three pieces of SGA legislation in the 2023-24 session: Bill 3-23-F (Funding for the Bowling Green Pride SGA Table); Bill 8-24-S (Funding for the Valentine's Day Tabling); Bill 14-24-S (Funding for Student Government Association DEI Week)."
-      },
-      {
-       "name": "Connor Ferguson",
-       "seat": "Gordon Ford College of Business Senator",
-       "src": {
-        "label": "SGA Bill 11-23-F, 2023-24 session",
-        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_11_23_f.pdf"
-       },
-       "profile": [
-        "Ferguson served as the Gordon Ford College of Business Senator in 2023-24. Through the Community Relations Committee he co-authored three funding bills, each time with Sarah Vincent, Ethan Taylor and Maiah Cisco (joined also by Savanna Kurtz on two of them): Bill 11-23-F, paying for wrapping materials for a Boys and Girls Club of Bowling Green toy drive in November 2023; Bill 14-23-F, creating two $500 Community Builder Excellence Scholarships, totaling $1,000, for incoming Bowling Green-area freshmen; and Bill 11-24-S, allocating $800 in February 2024 to the committee's \"Dress for Success\" drive supplying shoes, socks, underwear and toiletries."
-       ]
-      },
-      {
-       "name": "Elizabeth Gannon",
-       "seat": "Graduate Senator",
-       "src": {
-        "label": "SGA Bill 15-24-S, 2023-24 session",
-        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_15_24_s.pdf"
-       },
-       "profile": [
-        "Gannon was appointed to a vacant graduate senate seat by President Sam Kurtz at the first Senate meeting of spring 2024, alongside Sawyer Edmonds and Gabe Jerdon filling other vacancies, at the same meeting where Kurtz also announced the resignations of Chief of Staff Lindsey Kelly and Director of Enrollment and Student Experience Donte Reed. She was a co-author, with Madison Payne, Ryan Dilts and Livi Ray, of Bill 15-24-S, funding an SGA Spring Fling tailgate on South Lawn for Kids Cancer Alliance in March 2024."
-       ]
       },
       {
        "name": "Gabriel Jerdon",
@@ -52454,15 +52290,6 @@
        "note": "Named as an author on three pieces of SGA legislation in the 2023-24 session: Bill 11-23-F (Funding for Boys and Girls Club Toy Drive); Bill 10-24-S (Funding for the National Eating Disorder Awareness Week Tabling); Bill 11-24-S (Funding for \"Dress for Success\" Drive)."
       },
       {
-       "name": "Jaden Marshall",
-       "seat": "Senator At Large",
-       "src": {
-        "label": "SGA Bill 4-24-S, 2023-24 session",
-        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_4_24_s.pdf"
-       },
-       "note": "Named as an author on one piece of SGA legislation in the 2023-24 session: Bill 4-24-S (Funding for the Neurodiversity Acceptance Week)."
-      },
-      {
        "name": "Thomas Pabin",
        "seat": "Senator At Large",
        "src": {
@@ -52474,15 +52301,6 @@
        ]
       },
       {
-       "name": "Callison Padgett",
-       "seat": "Sophomore Senator",
-       "src": {
-        "label": "SGA Resolution 1-23-F, 2023-24 session",
-        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/res_1_23_f.pdf"
-       },
-       "note": "Named as an author on two pieces of SGA legislation in the 2023-24 session: Resolution 1-23-F and Bill 6-23-F."
-      },
-      {
        "name": "Madison Payne",
        "seat": "Ogden College of Science & Engineering Senator",
        "src": {
@@ -52491,18 +52309,6 @@
        },
        "profile": [
         "Payne, the Ogden College of Science & Engineering senator in 2023-24, received the inaugural Chief Justice's Verdict Award for August 2023, an honor Chief Justice Isaac King created that year to recognize a senator each month. At the spring semester's first meeting she was appointed chair of the Outreach Committee. She co-authored Bill 15-24-S, with Ryan Dilts, Elizabeth Gannon and Livi Ray, funding the SGA Spring Fling tailgate for Kids Cancer Alliance in March 2024. The Senate confirmed her to the 2024-25 Judicial Council at the 24th Senate's first fall meeting."
-       ]
-      },
-      {
-       "name": "Chloe Ralston",
-       "seat": "Freshman Senator",
-       "src": {
-        "label": "SGA Bill 10-24-S, 2023-24 session",
-        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_10_24_s.pdf"
-       },
-       "profile": [
-        "Ralston was elected a freshman senator in the fall 2023 elections announced 20 September, one of six students the Herald named as winners; the Herald reported that five of the six were sworn in at the following Tuesday meeting without naming which five. At the spring semester's first meeting in January 2024, Executive Vice President Annalise Finch appointed her to chair the Colonnade General Education committee.",
-        "She co-authored, with Annalise Finch and Ryan Dilts, Bill 7-23-F, funding a $600 Veterans Day 5k run at Kereiakes Park, and co-authored, with Livi Ray and Savanna Kurtz, Bill 10-24-S, funding a $100 National Eating Disorder Awareness Week tabling event. She continued into 2024-25 as a Senator-At-Large and was named an author on Bill 19-25-S in March 2025."
        ]
       },
       {
@@ -54336,7 +54142,8 @@
        },
        "profile": [
         "Miles Harvey sat as a senator at-large in 2025-26 and worked closely with the Student Mental Health and Wellbeing Committee. He co-authored Bill 11-25-F, funding chalk and fidget toys for the \"Toppers Talk About It\" Mental Health Awareness Week tabling in November 2025; Bill 5-26-S, funding $492.98 for an SGA International Women's Day tabling event in March 2026 that made domestic-violence-awareness ribbons and buttons and distributed flowers from the WKU Floral Design Department; and Resolution 3-26-S, supporting the installation and updated mapping of more bicycle racks on campus."
-       ]
+       ],
+       "note": "Named as an author on four pieces of SGA legislation in the 2025-26 session: Resolution 3-25-F (Resolution to Support “Flipping the Script”: Faculty-Student Mental Wellness Panel); Bill 11-25-F (Funding for the “Toppers Talk About It” Mental Health Awareness Week in November 2025); Resolution 3-26-S (Resolution to Support More Bicycle Racks on Campus); Bill 5-26-S (Funding for SGA International Women’s Day Tabling Event)."
       },
       {
        "office": "Senator At-Large",
@@ -54351,7 +54158,8 @@
        },
        "profile": [
         "Zoe Martin sat as a senator at-large in 2025-26 and worked with the Student Mental Health and Wellbeing Committee. She co-authored Bill 11-25-F, funding the \"Toppers Talk About It\" Mental Health Awareness Week tabling, and Resolution 3-25-F, supporting \"Flipping the Script,\" a two-part faculty-student mental wellness panel held 6 November 2025 in which staff from the Counseling Center, SARC and the Psych Clinic answered student questions before pre-selected student leaders took the stage to answer questions of their own."
-       ]
+       ],
+       "note": "Named as an author on two pieces of SGA legislation in the 2025-26 session: Resolution 3-25-F (Resolution to Support “Flipping the Script”: Faculty-Student Mental Wellness Panel); Bill 11-25-F (Funding for the “Toppers Talk About It” Mental Health Awareness Week in November 2025)."
       },
       {
        "office": "Senator At Large",
@@ -54450,7 +54258,8 @@
        "src2": {
         "label": "SGA announces spring election results, DEI constitution amendment passes, Herald, 16 Apr 2025",
         "url": "https://wkuherald.com/83881/news/sga-announces-spring-election-results-dei-constitution-amendment-passes/"
-       }
+       },
+       "note": "Named as an author on two pieces of SGA legislation in the 2025-26 session: Bill 3-25-F (Funding for the SGA Big Red Rise Event); Bill 16-25-F (Funding for the Borrow-an-Umbrella Program)."
       },
       {
        "office": "Mahurin Honors College Senator",
@@ -54481,7 +54290,8 @@
        "src6": {
         "label": "SGA votes to assist with student transcripts, Herald, 27 Nov 2025",
         "url": "https://wkuherald.com/89272/news/sga-votes-to-assist-with-student-transcripts/"
-       }
+       },
+       "note": "Named as an author on two pieces of SGA legislation in the 2025-26 session: Bill 3-25-F (Funding for the SGA Big Red Rise Event); Bill 16-25-F (Funding for the Borrow-an-Umbrella Program)."
       },
       {
        "office": "Sophomore Senator",
@@ -54490,7 +54300,11 @@
         "label": "SGA legislation: Bill 17-25-F, Funding for the Go With the Flow Program and WKU Food Pantry Donation Drive",
         "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_17_25_f.pdf"
        },
-       "note": "Named as an author on four pieces of SGA legislation in the 2025-26 session: Resolution 4-25-F (Resolution to Support the Installation of Drinking Water Dispensers, Printers, and Computers within Residence Halls); Resolution 5-25-F (Resolution to Support an Administrative Commitment to Establish and Maintain an Accessible 24-Hour Space on Campus); Bill 10-25-F (Organizational Aid Funding Fall 2025); Bill 17-25-F (Funding for the Go With the Flow Program and WKU Food Pantry Donation Drive)."
+       "note": "Named as an author on four pieces of SGA legislation in the 2025-26 session: Resolution 4-25-F (Resolution to Support the Installation of Drinking Water Dispensers, Printers, and Computers within Residence Halls); Resolution 5-25-F (Resolution to Support an Administrative Commitment to Establish and Maintain an Accessible 24-Hour Space on Campus); Bill 10-25-F (Organizational Aid Funding Fall 2025); Bill 17-25-F (Funding for the Go With the Flow Program and WKU Food Pantry Donation Drive).",
+       "src2": {
+        "label": "SGA Resolution 4-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_resolution/resolution_4_25_f.pdf"
+       }
       },
       {
        "office": "Transfer Senator",
@@ -54569,7 +54383,8 @@
        "src3": {
         "label": "SGA works to eliminate barriers for student outreach, Herald, 24 Sep 2025",
         "url": "https://wkuherald.com/87022/news/sga-works-to-eliminate-barriers-for-student-outreach/"
-       }
+       },
+       "note": "Named as an author on two pieces of SGA legislation in the 2025-26 session: Bill 19-25-F (Funding for Pickleball Paddles and Balls for the Preston Center); Bill 9-26-S (Funding for Additional SGA Student ID Vouchers)."
       },
       {
        "office": "Senator At-Large",
@@ -54605,7 +54420,8 @@
        },
        "profile": [
         "Julianna Mitchell sat as a senator at-large in 2025-26. She co-authored Bill 5-25-F, funding giveaway items to publicize SGA, whose second reading was tabled twice before it passed, and Bill 19-26-S, funding the \"Fuel Up for Finals\" tabling event that handed out Scantrons, blue books and notes of encouragement during finals week."
-       ]
+       ],
+       "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Bill 5-25-F (A Bill to Fund Giveaway Initiatives to Increase Publicity of the Student Government Association); Bill 25-25-F (Funding for the Western Kentucky University “Professor of The Month” Award); Bill 19-26-S (Fuel Up for Finals)."
       },
       {
        "office": "CEBS Senator",
@@ -54620,7 +54436,12 @@
        },
        "profile": [
         "Caroline Yates served as the College of Education and Behavioral Sciences senator in 2025-26. She co-authored Bill 19-26-S, funding the \"Fuel Up for Finals\" tabling event, and Resolution 4-25-F, supporting the installation of drinking water dispensers, printers and computers in residence halls; the resolution stated that five of the university's sixteen open residence halls lacked a working water fountain and that none gave students access to a printer or computer."
-       ]
+       ],
+       "src3": {
+        "label": "SGA Bill 17-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_17_25_f.pdf"
+       },
+       "note": "Named as an author on five pieces of SGA legislation in the 2025-26 session: Resolution 4-25-F (Resolution to Support the Installation of Drinking Water Dispensers, Printers, and Computers within Residence Halls); Resolution 5-25-F (Resolution to Support an Administrative Commitment to Establish and Maintain an Accessible 24-Hour Space on Campus); Bill 17-25-F (Funding for the Go With the Flow Program and WKU Food Pantry Donation Drive); Bill 20-25-F (Funding for the Fuel Up For Finals tabling event); Bill 19-26-S (Fuel Up for Finals)."
       },
       {
        "office": "Senior Senator",
@@ -54693,7 +54514,8 @@
        "src5": {
         "label": "SGA holds first meeting of 26th Senate, swears in new senators, senate speaker, Herald, 28 Apr 2026",
         "url": "https://wkuherald.com/93405/election/sga-holds-first-meeting-of-26th-senate-swears-in-new-senators-senate-speaker/"
-       }
+       },
+       "note": "Named as an author on one piece of SGA legislation in the 2025-26 session: Bill 23-25-F (Funding for the Boys and Girls Holiday Snack Drive)."
       },
       {
        "office": "Freshman Senator",
@@ -54716,7 +54538,8 @@
        "src4": {
         "label": "Lucas wins SGA presidential election, Herald, 15 Apr 2026",
         "url": "https://wkuherald.com/92808/news/lucas-wins-sga-presidential-election/"
-       }
+       },
+       "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Bill 25-25-F (Funding for the Western Kentucky University “Professor of The Month” Award); Bill 26-25-F (A Bill to Fund New Ping Pong Paddles and Balls for The DSU Recreation Room); Bill 24-26-S (A Bill to Fund Massage Therapy Vouchers for Student Stress Relief During Finals Week)."
       },
       {
        "office": "Freshman Senator",
@@ -54743,7 +54566,12 @@
        "src5": {
         "label": "Lucas wins SGA presidential election, Herald, 15 Apr 2026",
         "url": "https://wkuherald.com/92808/news/lucas-wins-sga-presidential-election/"
-       }
+       },
+       "src6": {
+        "label": "SGA Bill 19-25-F, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_19_25_f.pdf"
+       },
+       "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Bill 19-25-F (Funding for Pickleball Paddles and Balls for the Preston Center); Bill 26-25-F (A Bill to Fund New Ping Pong Paddles and Balls for The DSU Recreation Room); Bill 24-26-S (A Bill to Fund Massage Therapy Vouchers for Student Stress Relief During Finals Week)."
       },
       {
        "office": "Sophomore Senator",
@@ -54779,7 +54607,8 @@
        "src3": {
         "label": "SGA works to eliminate barriers for student outreach, Herald, 24 Sep 2025",
         "url": "https://wkuherald.com/87022/news/sga-works-to-eliminate-barriers-for-student-outreach/"
-       }
+       },
+       "note": "Named as an author on one piece of SGA legislation in the 2025-26 session: Bill 3-26-S (Funding for the STEMPOWERMENT and SGA Uno Tournament Fundraiser)."
       },
       {
        "office": "Senator At Large",
@@ -54815,7 +54644,12 @@
        "src4": {
         "label": "Lucas wins SGA presidential election, Herald, 15 Apr 2026",
         "url": "https://wkuherald.com/92808/news/lucas-wins-sga-presidential-election/"
-       }
+       },
+       "src5": {
+        "label": "SGA Bill 19-26-S, 2025-26 session",
+        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_19_26_s.pdf"
+       },
+       "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Bill 5-25-F (A Bill to Fund Giveaway Initiatives to Increase Publicity of the Student Government Association); Bill 25-25-F (Funding for the Western Kentucky University “Professor of The Month” Award); Bill 19-26-S (Fuel Up for Finals)."
       },
       {
        "office": "Freshman Senator",
@@ -54866,7 +54700,8 @@
        },
        "profile": [
         "Tuck was elected a senator-at-large in the spring 2025 general election. In April 2026 he and fellow senator-at-large Amelia Tucker co-authored a bill to purchase three spikeball nets for students to check out from the Senate office, similar to its existing hammock-lending program, which passed unanimously. In the spring 2026 election he was returned to the Senate as a junior senator."
-       ]
+       ],
+       "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Resolution 7-25-F (Resolution to Support the Installation of Additional Handicapped-Accessible Restrooms and/or Stalls in Grise Hall); Bill 23-26-S (Funding for Spikeball Nets). Resolution 2-26-S amended SGA's constitution or bylaws."
       }
      ],
      "committees": [
@@ -54951,51 +54786,6 @@
        "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Resolution 7-25-F (Resolution to Support the Installation of Additional Handicapped-Accessible Restrooms and/or Stalls in Grise Hall); Bill 23-26-S (Funding for Spikeball Nets). Resolution 2-26-S amended SGA's constitution or bylaws."
       },
       {
-       "name": "William Derryberry",
-       "seat": "Sophomore Senator",
-       "src": {
-        "label": "SGA Resolution 4-25-F, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_resolution/resolution_4_25_f.pdf"
-       },
-       "note": "Named as an author on four pieces of SGA legislation in the 2025-26 session: Resolution 4-25-F, Resolution 5-25-F, Bill 10-25-F and Bill 17-25-F."
-      },
-      {
-       "name": "Grace Ekrikpo",
-       "seat": "International Student Senator",
-       "src": {
-        "label": "SGA Bill 3-26-S, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_3_26_s.pdf"
-       },
-       "note": "Named as an author on one piece of SGA legislation in the 2025-26 session: Bill 3-26-S (Funding for the STEMPOWERMENT and SGA Uno Tournament Fundraiser)."
-      },
-      {
-       "name": "Miles Harvey",
-       "seat": "Senator At-Large",
-       "src": {
-        "label": "SGA Bill 11-25-F, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_11_25_f.pdf"
-       },
-       "note": "Named as an author on four pieces of SGA legislation in the 2025-26 session: Resolution 3-25-F (Resolution to Support “Flipping the Script”: Faculty-Student Mental Wellness Panel); Bill 11-25-F (Funding for the “Toppers Talk About It” Mental Health Awareness Week in November 2025); Resolution 3-26-S (Resolution to Support More Bicycle Racks on Campus); Bill 5-26-S (Funding for SGA International Women’s Day Tabling Event)."
-      },
-      {
-       "name": "Ben Lee",
-       "seat": "Gatton Senator",
-       "src": {
-        "label": "SGA Bill 19-25-F, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_19_25_f.pdf"
-       },
-       "note": "Named as an author on two pieces of SGA legislation in the 2025-26 session: Bill 19-25-F (Funding for Pickleball Paddles and Balls for the Preston Center); Bill 9-26-S (Funding for Additional SGA Student ID Vouchers)."
-      },
-      {
-       "name": "Ciin Lun",
-       "seat": "Mahurin Honors College Senator",
-       "src": {
-        "label": "SGA Bill 16-25-F, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_16_25_f.pdf"
-       },
-       "note": "Named as an author on two pieces of SGA legislation in the 2025-26 session: Bill 3-25-F (Funding for the SGA Big Red Rise Event); Bill 16-25-F (Funding for the Borrow-an-Umbrella Program)."
-      },
-      {
        "name": "Jaden Marshall",
        "seat": "ISEC Senator",
        "src": {
@@ -55003,24 +54793,6 @@
         "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_17_25_f.pdf"
        },
        "note": "Named as an author on six pieces of SGA legislation in the 2025-26 session: Resolution 4-25-F (Resolution to Support the Installation of Drinking Water Dispensers, Printers, and Computers within Residence Halls); Resolution 5-25-F (Resolution to Support an Administrative Commitment to Establish and Maintain an Accessible 24-Hour Space on Campus); Bill 10-25-F (Organizational Aid Funding Fall 2025); Bill 17-25-F (Funding for the Go With the Flow Program and WKU Food Pantry Donation Drive); Bill 1-26-S (Funding for the Black History Trivia Night in Partnership with Why Knot Us, Black Women of Western, and Student Government Association); Bill 22-26-S (Funding for SGA to purchase Graduation Cords for Transfer Students)."
-      },
-      {
-       "name": "Zoe Martin",
-       "seat": "Senator At-Large",
-       "src": {
-        "label": "SGA Bill 11-25-F, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_11_25_f.pdf"
-       },
-       "note": "Named as an author on two pieces of SGA legislation in the 2025-26 session: Resolution 3-25-F (Resolution to Support “Flipping the Script”: Faculty-Student Mental Wellness Panel); Bill 11-25-F (Funding for the “Toppers Talk About It” Mental Health Awareness Week in November 2025)."
-      },
-      {
-       "name": "Julianna Mitchell",
-       "seat": "Senator At-Large",
-       "src": {
-        "label": "SGA Bill 19-26-S, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_19_26_s.pdf"
-       },
-       "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Bill 5-25-F (A Bill to Fund Giveaway Initiatives to Increase Publicity of the Student Government Association); Bill 25-25-F (Funding for the Western Kentucky University “Professor of The Month” Award); Bill 19-26-S (Fuel Up for Finals)."
       },
       {
        "name": "Vanessa Ocampo",
@@ -55032,51 +54804,6 @@
        "note": "Named as an author on two pieces of SGA legislation in the 2025-26 session: Bill 1-26-S (Funding for the Black History Trivia Night in Partnership with Why Knot Us, Black Women of Western, and Student Government Association); Bill 5-26-S (Funding for SGA International Women’s Day Tabling Event)."
       },
       {
-       "name": "Maggie Phelps",
-       "seat": "PCAL Senator",
-       "src": {
-        "label": "SGA Bill 23-25-F, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_23_25_f.pdf"
-       },
-       "note": "Named as an author on one piece of SGA legislation in the 2025-26 session: Bill 23-25-F (Funding for the Boys and Girls Holiday Snack Drive)."
-      },
-      {
-       "name": "Molly Ricke",
-       "seat": "Sophomore Senator",
-       "src": {
-        "label": "SGA Bill 19-26-S, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_19_26_s.pdf"
-       },
-       "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Bill 5-25-F (A Bill to Fund Giveaway Initiatives to Increase Publicity of the Student Government Association); Bill 25-25-F (Funding for the Western Kentucky University “Professor of The Month” Award); Bill 19-26-S (Fuel Up for Finals)."
-      },
-      {
-       "name": "Nolan Rongey",
-       "seat": "Senator At-Large",
-       "src": {
-        "label": "SGA Bill 16-25-F, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_16_25_f.pdf"
-       },
-       "note": "Named as an author on two pieces of SGA legislation in the 2025-26 session: Bill 3-25-F (Funding for the SGA Big Red Rise Event); Bill 16-25-F (Funding for the Borrow-an-Umbrella Program)."
-      },
-      {
-       "name": "Jackson Smith",
-       "seat": "Freshman Senator",
-       "src": {
-        "label": "SGA Bill 19-25-F, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_19_25_f.pdf"
-       },
-       "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Bill 19-25-F (Funding for Pickleball Paddles and Balls for the Preston Center); Bill 26-25-F (A Bill to Fund New Ping Pong Paddles and Balls for The DSU Recreation Room); Bill 24-26-S (A Bill to Fund Massage Therapy Vouchers for Student Stress Relief During Finals Week)."
-      },
-      {
-       "name": "Carter Smith",
-       "seat": "Freshman Senator",
-       "src": {
-        "label": "SGA Bill 24-26-S, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_24_26_s.pdf"
-       },
-       "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Bill 25-25-F (Funding for the Western Kentucky University “Professor of The Month” Award); Bill 26-25-F (A Bill to Fund New Ping Pong Paddles and Balls for The DSU Recreation Room); Bill 24-26-S (A Bill to Fund Massage Therapy Vouchers for Student Stress Relief During Finals Week)."
-      },
-      {
        "name": "Jacob Thomas",
        "seat": "Senior Senator",
        "src": {
@@ -55084,15 +54811,6 @@
         "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_14_26_s.pdf"
        },
        "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Resolution 1-26-S (Resolution to Reaffirm Campus Safety and Security); Bill 14-26-S (Funding for Student Government Association Campus Safety and Security Week); Bill 17-26-S (Funding for the \"Textbooks for Toppers\" Reimbursement Program)."
-      },
-      {
-       "name": "Evan Tuck",
-       "seat": "Senator-at-Large",
-       "src": {
-        "label": "SGA Resolution 2-26-S, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_resolution/resolution_2_26_s.pdf"
-       },
-       "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Resolution 7-25-F (Resolution to Support the Installation of Additional Handicapped-Accessible Restrooms and/or Stalls in Grise Hall); Bill 23-26-S (Funding for Spikeball Nets). Resolution 2-26-S amended SGA's constitution or bylaws."
       },
       {
        "name": "Miles VanRude",
@@ -55111,15 +54829,6 @@
         "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_22_25_f.pdf"
        },
        "note": "Named as an author on three pieces of SGA legislation in the 2025-26 session: Bill 9-25-F (Funding for the SGA Pink Walk); Bill 22-25-F (Funding for Happy Holiday’s from the Hill); Bill 23-25-F (Funding for the Boys and Girls Holiday Snack Drive)."
-      },
-      {
-       "name": "Caroline Yates",
-       "seat": "CEBS Senator",
-       "src": {
-        "label": "SGA Bill 17-25-F, 2025-26 session",
-        "url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_17_25_f.pdf"
-       },
-       "note": "Named as an author on five pieces of SGA legislation in the 2025-26 session: Resolution 4-25-F (Resolution to Support the Installation of Drinking Water Dispensers, Printers, and Computers within Residence Halls); Resolution 5-25-F (Resolution to Support an Administrative Commitment to Establish and Maintain an Accessible 24-Hour Space on Campus); Bill 17-25-F (Funding for the Go With the Flow Program and WKU Food Pantry Donation Drive); Bill 20-25-F (Funding for the Fuel Up For Finals tabling event); Bill 19-26-S (Fuel Up for Finals)."
       }
      ]
     }

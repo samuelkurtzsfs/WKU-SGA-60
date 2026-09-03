@@ -1,3 +1,125 @@
+# 3 September 2026, midday — the senate roll was printing the same seat twice
+
+Nothing was open to merge. No pull request was open at 11:00 UTC, and the
+branches are in the state the early-morning pass described: `research-photos`
+differs from main only by lacking main's newer night log, and every other
+`research-*` branch is a snapshot from behind main rather than ahead of it.
+The research routines have nothing stranded.
+
+So this pass went at main itself, and found a fault in it.
+
+## Thirty-seven people were on the senate roll twice
+
+A year's `organization.senate` carries an `officers` list and a `members`
+list. Thirty-seven people sat in both, under the **same seat title in the same
+year**: Grace Ekrikpo was the 2025-26 international student senator in both,
+Ben Lee the Gatton senator in both, and so on across 2016-17, 2017-18,
+2021-22, 2022-23, 2023-24 and 2025-26, thirteen of them in 2025-26 alone.
+
+This was not invisible. The year page prints both lists in one "The senate"
+section, so the roll named those people twice, and each of their own pages
+counted the one seat as two. Grace Ekrikpo's page read "Offices held 2" for a
+single senate seat; Ben Lee's and Miles Harvey's did the same. The archive's
+headline count of recorded terms was inflated by the same thirty-seven.
+
+The two rows have different parentage. The `members` rows are the legislation
+author harvest's output — every one of them reads "Named as an author on N
+pieces of SGA legislation in the session". The `officers` rows are researched:
+they carry the September election, the swearing-in date, a profile and several
+citations. Nothing ever reconciled the two, and `build.py` does not dedupe, so
+both were published.
+
+The members row has been folded into the officers row in all thirty-seven
+cases. The officers row survives because it is the fuller record and because
+`build.py` drops `profile` and `src2`..`src20` when it renders someone as a
+member, so keeping the member instead would have thrown away the researched
+material. Every citation the members row carried was moved across first: a
+check against the pre-merge file confirms all thirty-seven removed rows had
+each of their source URLs present on the surviving row afterwards, none lost.
+Its note was taken where the officers row had none, and its profile paragraphs
+where they were not already present.
+
+Eleven cases had a note on both rows. The first attempt appended the members
+note to the officers note and produced sentences that said the same thing
+twice — Derryberry's read "Named as an author on four pieces ... Resolution
+4-25-F (full title) ..." and then "Named as an author on four pieces ...
+Resolution 4-25-F" again. That was thrown away and redone. All eleven were
+read by hand: in none of them did the members note name a piece of legislation
+the officers note did not already name, so the officers wording stands alone
+and the restatement is dropped. Their citations were carried across regardless.
+
+## Will and William Derryberry are one sophomore senator
+
+The early-morning pass left this open, correctly, rather than fixing it blind:
+`photos.json` carried both name forms for 2025-26 pointing at one portrait
+file. The source check it asked for has an unusually clean answer, and it is
+SGA's own paperwork that caused the split. In the same 2025-26 session the two
+bills he authored, 10-25-F and 17-25-F, sign him **Will Derryberry**; the two
+resolutions, 4-25-F and 5-25-F, sign him **William Derryberry**. The harvest
+made two people out of four documents, and a later pass filed one under
+`officers` and one under `members`.
+
+`name-aliases.json` already held the mapping, so the site knew they were one
+man; what it did not do was stop him being listed twice. He is now a single
+sophomore senator record under Will, the form the *Herald* and the majority of
+the file use, and the redundant William entry in `photos.json` — which
+`check_data.py` flagged the moment the years.json record went — is gone with
+it. His page now reads two offices held, the 2025-26 seat and the 2026-27
+chief financial officership, which is right.
+
+This is not a spelling ruled on. Both forms are what the primary documents
+say, the alias file keeps both reachable, and nothing was renamed in a source.
+
+## What was deliberately left alone
+
+Twenty-three more people sit in both lists under **different** titles, and
+those were not touched. Three of them — Nathan J. Eaton in 2006-07 and
+2007-08, Arivumani Srivastava in 2021-22 — are only visible once the alias
+file is applied, which is worth saying because the first count of this made
+without it came out three short.
+
+The different-title pattern is often legitimate, and it is already recorded:
+Andrea Cailles chaired Student Affairs in the autumn of 1992 and was seated as
+a plain Representative at Large the following February, so two rows are two
+real roles. The same reading covers Zach Jones and Calleigh Powell, senators
+who also held a committee chairmanship.
+
+But some of the twenty-three are almost certainly the same duplication wearing a
+different spelling — "Senator At Large" against "Senator at Large",
+"Senator-at-Large" and "Senator At-large" across 2017-18, 2021-22 and 2022-23,
+and Kayla Distler's "College of Education and Behavioral Sciences Senator"
+against "CEBS Senator" in 2023-24. Each needs a judgement about whether a
+committee headship is a second office before it can be merged, and that is a
+decision about how this archive counts offices, not a typo to sweep. It is
+left for a pass that can make it deliberately.
+
+Two things for the routines. The legislation-author harvest writes into
+`senate.members` without checking whether the person is already in
+`senate.officers` for that year, which is what produced all thirty-seven; it
+will produce more on its next run unless it checks. And `build.py` renders the
+two lists into one section without noticing a name in both, which is what let
+this reach the public site rather than a validator.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six pairs, unchanged and already judged
+in the early-morning entry; this diff added no events.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,819
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one name. 60 people have been president.
+The term count is 37 lower than this morning's 2,691 and the multiple-name
+count one lower than 41; both are the correction, not a loss of research.
+
+## Still open
+
+The twenty-three different-title overlaps above. The 1993-94 to 2009-10 gap in
+year photographs, the 431 legislation files with no author recorded, and the
+gated `viewcontent.cgi` endpoint on digitalcommons are all unchanged.
+
 # 3 September 2026, early morning — an empty queue, and the six standing pairs finally judged
 
 Nothing to merge. No pull request was open at 06:25 UTC, and nothing is
@@ -14038,3 +14160,115 @@ the citation did not lead to the evidence for it, and an editor who rewrites a
 credit owns exactly that.
 
 Nothing on the site changed in this entry. `data/` is untouched.
+
+# 3 September 2026 — one portrait, and the frame two runs disagreed about
+
+Appended at the foot, following the most recent entries. The 2 September note
+about this file being written from both ends still stands unresolved.
+
+## What was open
+
+One pull request, #337, "Research: photographs," opened this morning by the
+photograph routine. The three branches that had been stale since 4 August —
+#6, #7 and #8 — are no longer open and needed nothing this pass. The queue was
+otherwise empty.
+
+## What was in it
+
+A single new claim: a portrait for **Emily Reinneck**, Senator At-Large and
+Campus Improvements and Sustainability Committee chair for 2025-26, from the
+*Herald*'s report of SGA's first fall meeting, 19 August 2025. Fewer than eight
+new claims, so all of it was checked rather than a sample.
+
+It held up. The article carries the caption verbatim and names her and no one
+else; its own list of the seven appointed committee chairs gives her the same
+committee, which is what `years.json` already had from the Senate minutes of
+14 April 2026. The stored file is byte-identical to the article's own
+full-resolution image rather than a re-encode or a lookalike. Sworn in in
+August 2025 and filed under 2025-26, which is the right academic year. A
+report, not an advance notice. No office inflated, no settled fact disturbed,
+nothing about a living person beyond her service.
+
+## The thing worth recording
+
+**An earlier photograph run had already found this caption and rejected it** —
+the picture showed "a row of six senators with hands raised and no positional
+cue," so which face was hers could not be confirmed. That entry is still in
+`SGA-60-AGENT-INFO.md`, above the one this run appended, and this run did not
+mention it. It described the same frame as showing her "front and alone at the
+swearing-in lectern... not a crowd shot."
+
+Neither description was right, so the frame was checked at full resolution
+instead of taking either run's word. It is a group swearing-in — the earlier
+run was right about that — but the focal plane carries exactly one face, front
+right, hand raised for the oath, and every other person in the picture is
+visibly out of focus. A caption naming one person over a frame focused on one
+person is the standard dozens of accepted entries in `photos.json` already rest
+on. The identification stands; the earlier rejection had described the
+background row and missed the frame's structure.
+
+## What was cut
+
+Three corrections, pushed to the branch before the merge.
+
+The stored file was **cropped to the subject**, so the ambiguity that produced
+the first rejection cannot recur, and the crop recorded in the entry's own
+source label — which is what the house style does with a group frame.
+
+The label's **quotation was trimmed**. It reproduced twenty words of the
+*Herald*'s caption; the limit is under fifteen. Rewritten into the "the caption
+names..." form the other recent-year entries use, keeping the identifying
+content and the photographer's credit.
+
+The **log entry was rewritten** and a note added settling the frame, so a third
+run does not withdraw this portrait on the "row of six senators" reasoning.
+That is the failure the LaCivita portrait already went through twice, and the
+cure both times was writing down why the withdrawal was wrong.
+
+Merged as #337.
+
+## Two notes left for the routines
+
+Read the log before appending to it. Both runs here were the photograph agent,
+both examined the same frame, and the second spent search budget on a lead the
+first had set aside and then reached the opposite verdict without knowing it. A
+grep for the subject's name before writing would have caught it.
+
+And do not describe a frame more cleanly than it is. "Alone at the lectern"
+would have reached the public site as the justification for a face. The honest
+version — one sharp subject in a group shot — is what actually supports the
+identification, and it is enough.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six pairs standing, unchanged and
+already judged; this diff added no events.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,691 recorded terms of office held by 1,819
+people, 2,650 of those terms (98%) carrying an account of what the person did,
+41 people recorded under more than one name. 60 people have been president.
+
+## Still open
+
+`photos.json` carries both **"Will Derryberry" and "William Derryberry"** for
+2025-26, pointing at the same portrait file; `years.json` has ten of the former
+and one of the latter. One person under two name forms. It predates #337 and
+was left alone rather than fixed blind — it needs a source check on which form
+the *Herald* and the minutes actually use.
+
+The attribution footer this platform appends to pull-request comments landed on
+the review comment on #337, against the rule in CLAUDE.md. Direct GitHub REST
+is refused in these containers even though the MCP tools and `git push` both
+work, so the comment could not be edited afterwards. **It needs deleting by
+hand.** Worth solving properly: the footer is appended by the harness, and the
+only reliable defence found so far is not to write one into the body and to
+strip it immediately after posting, which the gate here prevented.
+
+The gated `viewcontent.cgi` endpoint on digitalcommons is unchanged, as is the
+1993-94 to 2009-10 gap in year photographs and the 431 legislation files with
+no author recorded. PastPerfect Online and headless Chromium were both tried
+against TopSCHOLAR this morning and both failed; the reasons are in
+`SGA-60-AGENT-INFO.md` so they are not retried.
