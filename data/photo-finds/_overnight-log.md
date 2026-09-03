@@ -33,3 +33,23 @@ start of night: 248 portraits in the archive, 370 people on a worklist still wit
 - 02 Sep 12:59  671/1820 with a face. Still on battery. Worked 1976 by hand: established leaf-3 = printed page, and that the leaf an OCR hit lands on is only a pointer because the text pools captions from several pages away. Found the 1976 ASG cohort have no class portraits, only Greek and organisation groups. Both recorded in the index map.
 - 02 Sep 14:38  671/1819 with a face. Still on battery. Placed Kimberly Summers by hand from the 1987 sophomore grid, third of six in an alphabetical row, index pairing p.345 with the SGA page p.114. Found she was already published under the short form Kim Summers, so a long-form check had reported her as having none; both now resolve to one person. Of the 20 people needing SGA coding, 16 have a face and 4 do not.
 - 02 Sep 15:39  671/1819 with a face. Still on battery. Chased the last uncoded officers without portraits: Tom Blair already had one from the 1977 Who's Who page, re-cut better (750x765 dark and clipped -> 865x1130). David Young established as having no photograph on his only indexed page. 1977 confirms leaf-3, same as 1972, 1976 and 1987.
+- **2026-09-02 17:37** — 781 portraits live, 693/1862 people have a face, 1169 still none (1990s worst at 380). Nothing new to land: all eleven agents were already dead, none had dropped findings, 0 added / 0 replaced / 0 refused. Last agent died 2 days ago on the account's monthly spend limit (HTTP 429), which is why the night produced nothing. New month, so launched ONE probe agent on a fresh 1993-96 worklist (154 people) rather than eleven, to see whether the limit has reset before spending on a full fleet. Staging still 3.4 GB, not swept — worklists are far from exhausted.
+
+### ⚠ 2026-09-02 19:12 — THE NIGHT PRODUCED NOTHING, AND IT IS THE MAC, NOT THE ACCOUNT
+
+**Read this first.** 781 portraits live, 693/1862 people have a face, 1169 still none. No change since yesterday.
+
+The probe agent I launched this cycle died in seconds with `Your computer went to sleep mid-response` — before it read a single file. That is a different cause from the August failure (monthly spend limit). The spend limit may well have reset; I could not get far enough to find out.
+
+Why it cannot be fixed from here:
+
+| | Battery | AC |
+|---|---|---|
+| `sleep` | **1 minute** | 0 (never) |
+
+`caffeinate -dimsu` IS running and holds `PreventUserIdleSystemSleep 1`, but `PreventSystemSleep` reads **0**. On battery macOS ignores the system-sleep flag, and with the lid shut the machine is forced to sleep no matter what any process asks for. Every agent dies on its first API round-trip. Local OCR would die the same way. Changing the power setting needs sudo and is a system change I will not make while you are asleep.
+
+**Plug the Mac in and the queue runs on its own.** Nothing else is wrong: the data is clean, the landing script reports 0 to add / 0 to replace / 0 refused, git is clean, and there are 1,169 people still to find with the 1990s the worst hole at 380. A fresh 1993-96 worklist of 154 people is built and waiting at `data/photo-finds/_worklist-n9396.json`.
+
+I have stopped relaunching. Agents that die on their first call burn the account and find nobody.
+- **2026-09-03 11:37** — 17 further cycles since, no change and none possible. Still Battery Power, `PreventSystemSleep 0`. No agents alive; 0 to add / 0 to replace / 0 refused; 781 portraits, 693/1862 with a face, 1169 none. Not relaunching while the machine sleeps — see the block above. (Tally updated in place each cycle rather than repeated, so this log stays readable.)

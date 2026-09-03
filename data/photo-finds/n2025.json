@@ -1,0 +1,49 @@
+[
+ {
+  "year": "2022-23",
+  "name": "Lauren Willett",
+  "quality": "good",
+  "why": "WKU SGA published its own studio headshot of her as chief of staff; a clean, well-lit portrait at 1080x1080.",
+  "caption_quote": "SGA Chief of Staff Lauren Willett",
+  "src": {
+   "label": "WKU Student Government Association, 2022-2023 executive branch page",
+   "url": "https://www.wku.edu/sga/2022-2023-executive/exec_headshots/willett_lauren_headshot.jpg"
+  },
+  "file": "2022-23-lauren-willett.jpg",
+  "width": 1080,
+  "height": 1080,
+  "replaces": null
+ },
+ {
+  "year": "2022-23",
+  "name": "Tramaine Hawkins",
+  "quality": "group crop",
+  "why": "The only Herald photograph that names him. Cropped from a two-person frame whose caption places him on the right; he is in cap and gown at his own commencement celebration, laughing, eyes closed mid-laugh.",
+  "caption_quote": "Adan Canizalez (20, left) celebrates with ... Tramaine Hawkins (23, right)",
+  "id_note": "Caption gives explicit left/right positions. The left figure matches the archive existing portrait 2022-23-adan-canizalez.jpg, which fixes Hawkins as the right figure in cap and gown.",
+  "src": {
+   "label": "College Heights Herald, 9 May 2023, Big Red Bash",
+   "url": "https://wkuherald.com/wp-content/uploads/2023/05/WalkBashCommencement_25-1.jpg"
+  },
+  "file": "2022-23-tramaine-hawkins.jpg",
+  "width": 650,
+  "height": 825,
+  "replaces": null
+ },
+ {
+  "year": "2022-23",
+  "name": "Cade Holcombe",
+  "quality": "group crop",
+  "why": "The only Herald photograph that names him. A sharp, well-lit face in a two-person frame with an explicit position in the caption; cropped to him alone.",
+  "caption_quote": "Cade Holcombe (left) and Tanner Thomas play a game of pool in Topper Social",
+  "id_note": "Caption positions him left; he is the nearer of the two men, in the blue hoodie leaning over the table, with the second man standing to his right.",
+  "src": {
+   "label": "College Heights Herald, 16 February 2024, Topper Social",
+   "url": "https://wkuherald.com/wp-content/uploads/2024/02/ER26754.jpg"
+  },
+  "file": "2022-23-cade-holcombe.jpg",
+  "width": 390,
+  "height": 472,
+  "replaces": null
+ }
+]
