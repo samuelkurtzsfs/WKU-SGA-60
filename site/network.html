@@ -4,9 +4,9 @@
 <meta name="theme-color" content="#0B0B0C">
 <meta name="description" content="Every person the record shows holding office in WKU&#x27;s Student Government Association, drawn as a web: search anyone and see who served alongside them.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Who knew whom · SGA 60">
+<meta property="og:title" content="SGA network · SGA 60">
 <meta property="og:description" content="Every person the record shows holding office in WKU&#x27;s Student Government Association, drawn as a web: search anyone and see who served alongside them.">
-<title>Who knew whom · SGA 60</title>
+<title>SGA network · SGA 60</title>
 <style>
 :root{
  --red:#B01E24; --red-dark:#8A171C; --black:#0B0B0C;
@@ -316,6 +316,17 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
 .card .x:hover{color:#fff}
 .legend{bottom:18px;left:18px;color:#7E808A;font-size:11.5px;max-width:280px}
 .legend b{color:#B9BAC3;font-weight:600}
+.modes{top:18px;left:50%;transform:translateX(-50%);display:flex;gap:0;
+  border-radius:11px;overflow:hidden;border:1px solid #2A2C33;
+  background:rgba(18,19,23,.92);backdrop-filter:blur(14px);
+  box-shadow:0 10px 34px rgba(0,0,0,.55)}
+.modes button{padding:9px 17px;border:0;background:transparent;color:#9A9CA6;
+  font:600 12.5px/1 inherit;cursor:pointer;letter-spacing:.02em}
+.modes button.on{background:var(--red);color:#fff}
+.modes button:not(.on):hover{background:#22242B;color:#DDD}
+.netwrap.board{background:#6B4E33}
+.netwrap.board .legend{color:#3B2A1B}
+.netwrap.board .legend b{color:#241a10}
 .zoomui{bottom:18px;right:18px;display:flex;gap:7px}
 .zoomui button{width:34px;height:34px;border-radius:9px;border:1px solid #2A2C33;
   background:rgba(18,19,23,.92);color:#C9CAD2;font-size:16px;cursor:pointer;
@@ -325,7 +336,7 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
  .legend{display:none}}
 </style></head><body>
 <a class="skip" href="#main">Skip to the record</a>
-<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="index.html">SGA <b>60</b></a><ul><li><a href="index.html">The board</a></li><li><a href="story.html">The story</a></li><li><a href="voices.html">In their own words</a></li><li><a href="patterns.html">Patterns</a></li><li><a href="events.html">What SGA put on</a></li><li><a href="irregular.html">Irregular terms</a></li><li><a href="branches.html">How it was built</a></li><li><a href="officers.html">The officers</a></li><li><a href="network.html" aria-current="page">Who knew whom</a></li><li><a href="history.html">Timeline</a></li><li><a href="legislation.html">Legislation</a></li><li><a href="corrections.html">Corrections</a></li><li><a href="sources.html">Sources</a></li><li><a href="about.html">About and method</a></li></ul><form class="navsearch" role="search" action="search.html" method="get"><label class="skip" for="navq">Search the archive</label><input id="navq" name="q" type="search" placeholder="Search" autocomplete="off"><button type="submit" aria-label="Search"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></form></div></nav>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a class="brand" href="index.html">SGA <b>60</b></a><ul><li><a href="index.html">The board</a></li><li><a href="story.html">The story</a></li><li><a href="voices.html">In their own words</a></li><li><a href="patterns.html">Patterns</a></li><li><a href="events.html">What SGA put on</a></li><li><a href="irregular.html">Irregular terms</a></li><li><a href="branches.html">How it was built</a></li><li><a href="officers.html">The officers</a></li><li><a href="network.html" aria-current="page">SGA network</a></li><li><a href="history.html">Timeline</a></li><li><a href="legislation.html">Legislation</a></li><li><a href="corrections.html">Corrections</a></li><li><a href="sources.html">Sources</a></li><li><a href="about.html">About and method</a></li></ul><form class="navsearch" role="search" action="search.html" method="get"><label class="skip" for="navq">Search the archive</label><input id="navq" name="q" type="search" placeholder="Search" autocomplete="off"><button type="submit" aria-label="Search"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 11l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></form></div></nav>
 <main id="main">
 
 <div class="netwrap">
@@ -351,6 +362,11 @@ h2.sec .n{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.0
   <b>Every person the record shows in office.</b> Colour is the decade they
   started; the ringed points are presidents and student regents. Drag to move,
   scroll to zoom, click anyone to light up everyone who served alongside them.
+</div>
+
+<div class="netui modes">
+  <button id="mweb" class="on">The web</button>
+  <button id="mboard">The board</button>
 </div>
 
 <div class="netui zoomui">
@@ -387,6 +403,73 @@ function cohortOf(i){
   return seen;
 }
 
+
+// ---------------------------------------------------------------- the board
+// The web answers "who did they know". The board answers "whose administration
+// was this". Every president gets a taped case card in order of their term,
+// and each person is filed under the president who was in office when they
+// first appear. Anyone whose service crossed into another administration is
+// strung to it, which is the thing worth seeing: the people who carried
+// continuity across a change of president.
+let BOARD = null;
+
+function buildBoard(){
+  const pres = N.map((n,i)=>i).filter(i=>N[i].p)
+                .sort((a,b)=>N[a].y[0]-N[b].y[0] || N[a].n.localeCompare(N[b].n));
+  // one card per administration; presidents sharing a first year share a card
+  const cards = [];
+  for(const i of pres){
+    const y0 = N[i].y[0];
+    const last = cards[cards.length-1];
+    if(last && last.y0 === y0) last.who.push(i);
+    else cards.push({y0, who:[i], span:N[i].y.length, kids:[]});
+  }
+  const byYear = new Map();                     // first year -> card
+  cards.forEach(c => byYear.set(c.y0, c));
+  // file everyone under the administration running when they first appear,
+  // walking back to the nearest earlier card for years with no president
+  const home = new Array(N.length).fill(-1);
+  for(let i=0;i<N.length;i++){
+    let y = N[i].y[0], c = null;
+    while(y >= 0 && !(c = byYear.get(y))) y--;
+    if(!c) c = cards[0];
+    home[i] = cards.indexOf(c);
+    c.kids.push(i);
+  }
+  // lay the cards out left to right, wrapping, sized by how many they hold
+  const COLW = 30, ROWH = 15, PAD = 74;
+  let x = 0, y = 0, rowH = 0;
+  const WRAP = 5200;
+  for(const c of cards){
+    const n = c.kids.length;
+    c.cols = Math.max(4, Math.ceil(Math.sqrt(n*1.7)));
+    c.w = Math.max(210, c.cols*COLW);
+    c.h = 108 + Math.ceil(n/c.cols)*ROWH;
+    if(x + c.w > WRAP){ x = 0; y += rowH + PAD; rowH = 0; }
+    c.x = x; c.y = y;
+    rowH = Math.max(rowH, c.h);
+    x += c.w + PAD;
+    // seeded tilt, so the board looks pinned by hand and not by a machine
+    c.tilt = ((c.y0*2654435761) % 1000 / 1000 - 0.5) * 0.045;
+  }
+  // where each person sits on their card
+  const bx = new Float32Array(N.length), by = new Float32Array(N.length);
+  for(const c of cards){
+    c.kids.sort((a,b)=> (N[b].p-N[a].p) || N[a].n.localeCompare(N[b].n));
+    c.kids.forEach((i,k)=>{
+      const col = k % c.cols, row = (k - col)/c.cols;
+      bx[i] = c.x + 14 + col*COLW + COLW/2;
+      by[i] = c.y + 100 + row*ROWH;
+    });
+  }
+  const W = WRAP, H = y + rowH;
+  return {cards, home, bx, by, W, H};
+}
+
+let MODE = "web";
+const PX = (i)=> MODE==="board" ? BOARD.bx[i] : N[i].x;
+const PY = (i)=> MODE==="board" ? BOARD.by[i] : N[i].z;
+
 let cam = {x:0, y:0, k:0.5}, want = Object.assign({}, cam);
 let sel = -1, hov = -1, cohort = new Map(), dragging = false, moved = false;
 let px = 0, py = 0, DPR = 1;
@@ -397,12 +480,16 @@ function size(){
 }
 function fit(){
   let a=1e9,b=1e9,c=-1e9,d=-1e9;
-  N.forEach(n=>{a=Math.min(a,n.x);b=Math.min(b,n.z);c=Math.max(c,n.x);d=Math.max(d,n.z);});
+  for(let i=0;i<N.length;i++){
+    const x=PX(i), y=PY(i);
+    a=Math.min(a,x); b=Math.min(b,y); c=Math.max(c,x); d=Math.max(d,y);
+  }
   const w=cv.clientWidth, h=cv.clientHeight, pad=70;
   want.k = Math.min((w-pad*2)/(c-a||1),(h-pad*2)/(d-b||1));
   want.x = (a+c)/2; want.y = (b+d)/2;
 }
 const S = (n)=>({x:(n.x-cam.x)*cam.k + cv.clientWidth/2, y:(n.z-cam.y)*cam.k + cv.clientHeight/2});
+const SI = (i)=>({x:(PX(i)-cam.x)*cam.k + cv.clientWidth/2, y:(PY(i)-cam.y)*cam.k + cv.clientHeight/2});
 
 // Redraw when something changes, and stop when it does not. A permanent
 // animation frame loop holds the main thread at full tilt for a picture that
@@ -410,6 +497,49 @@ const S = (n)=>({x:(n.x-cam.x)*cam.k + cv.clientWidth/2, y:(n.z-cam.y)*cam.k + c
 // page or the browser wants to do.
 let raf = 0, dirty = true;
 function invalidate(){ dirty = true; if(!raf) raf = requestAnimationFrame(draw); }
+
+
+function drawBoardBase(w,h){
+  // cork, then the case cards: a strip of tape with the president's name and
+  // the years their administration ran
+  const g = cx.createLinearGradient(0,0,0,h);
+  g.addColorStop(0,"#77573A"); g.addColorStop(1,"#5E4229");
+  cx.fillStyle = g; cx.fillRect(0,0,w,h);
+  const k = cam.k;
+  cx.textBaseline = "alphabetic";
+  for(const c of BOARD.cards){
+    const p = S({x:c.x, z:c.y});
+    const cw = c.w*k, ch = c.h*k;
+    if(p.x+cw < -40 || p.x > w+40 || p.y+ch < -40 || p.y > h+40) continue;
+    cx.save();
+    cx.translate(p.x, p.y); cx.rotate(c.tilt);
+    // paper
+    cx.shadowColor = "rgba(0,0,0,.45)"; cx.shadowBlur = 16*k; cx.shadowOffsetY = 5*k;
+    cx.fillStyle = "#EFE6D2";
+    cx.fillRect(0, 0, cw, ch);
+    cx.shadowBlur = 0; cx.shadowOffsetY = 0;
+    // duct tape across the top corner
+    const tw = Math.min(cw*0.62, 150*k), th = 26*k;
+    cx.save(); cx.translate(cw*0.5, 0); cx.rotate(-0.035);
+    cx.fillStyle = "rgba(178,180,176,.93)";
+    cx.fillRect(-tw/2, -th*0.55, tw, th);
+    cx.strokeStyle = "rgba(120,122,118,.55)"; cx.lineWidth = Math.max(.5,1*k);
+    cx.strokeRect(-tw/2, -th*0.55, tw, th);
+    if(k > 0.28){
+      cx.fillStyle = "#23241F"; cx.textAlign = "center";
+      cx.font = "700 " + (12.5*k).toFixed(1) + "px ui-serif,Georgia,serif";
+      const nm = c.who.map(i=>N[i].n).join(" & ");
+      cx.fillText(nm.length>26 ? nm.slice(0,25)+"…" : nm, 0, th*0.20);
+    }
+    cx.restore();
+    if(k > 0.3){
+      cx.fillStyle = "#6A5A44"; cx.textAlign = "left";
+      cx.font = "600 " + (10.5*k).toFixed(1) + "px ui-sans-serif,system-ui,sans-serif";
+      cx.fillText(YEARS[c.y0] + "  ·  " + c.kids.length + " in office", 13*k, 44*k);
+    }
+    cx.restore();
+  }
+}
 
 function draw(){
   raf = 0;
@@ -427,9 +557,10 @@ function draw(){
 
   const focus = sel>=0 ? sel : hov;
   const lit = focus>=0 ? cohort : null;
+  if(MODE==="board"){ drawBoardBase(w,h); }
 
   // year rings, faint, so the spiral of time is legible under the people
-  if(cam.k > 0.16){
+  if(MODE==="web" && cam.k > 0.16){
     cx.save(); cx.globalAlpha = Math.min(.5,(cam.k-.16)*1.5);
     cx.font = "600 10px ui-sans-serif,system-ui,sans-serif";
     cx.fillStyle = "#3A3C45"; cx.textAlign="center";
@@ -444,16 +575,20 @@ function draw(){
 
   // edges only for the person in focus
   if(focus>=0){
-    const o = S(N[focus]);
+    const o = SI(focus);
     cx.lineWidth = Math.max(.5, cam.k*0.9);
     lit.forEach((shared,j)=>{
-      const p = S(N[j]);
+      const p = SI(j);
       if((p.x<-200&&o.x<-200)||(p.x>w+200&&o.x>w+200)) return;
-      const g = cx.createLinearGradient(o.x,o.y,p.x,p.y);
       const al = Math.min(.62, .16 + shared*0.13);
-      g.addColorStop(0,"rgba(255,255,255,"+al+")");
-      g.addColorStop(1, N[j].c + Math.round(al*150).toString(16).padStart(2,"0"));
-      cx.strokeStyle = g;
+      if(MODE==="board"){
+        cx.strokeStyle = "rgba(150,26,38," + Math.min(.85, al+.22).toFixed(2) + ")";
+      } else {
+        const g = cx.createLinearGradient(o.x,o.y,p.x,p.y);
+        g.addColorStop(0,"rgba(255,255,255,"+al+")");
+        g.addColorStop(1, N[j].c + Math.round(al*150).toString(16).padStart(2,"0"));
+        cx.strokeStyle = g;
+      }
       cx.beginPath(); cx.moveTo(o.x,o.y);
       const mx=(o.x+p.x)/2, my=(o.y+p.y)/2, dx=p.x-o.x, dy=p.y-o.y;
       cx.quadraticCurveTo(mx - dy*0.11, my + dx*0.11, p.x, p.y);
@@ -463,7 +598,7 @@ function draw(){
 
   // people
   for(let i=0;i<N.length;i++){
-    const n = N[i], p = S(n), r = Math.max(1.1, n.R*Math.sqrt(cam.k)*1.15);
+    const n = N[i], p = SI(i), r = Math.max(1.1, n.R*Math.sqrt(cam.k)*1.15);
     if(p.x<-30||p.x>w+30||p.y<-30||p.y>h+30) continue;
     const on = focus<0 || i===focus || (lit && lit.has(i));
     cx.globalAlpha = on ? 1 : 0.13;
@@ -481,21 +616,44 @@ function draw(){
     cx.globalAlpha = 1;
   }
 
-  // names, once there is room for them
+  // Names, once there is room, and never on top of each other. Overlapping
+  // labels were unreadable exactly where the graph is densest, which is where
+  // a reader most wants to know who they are looking at. Each label claims a
+  // box; a label whose box hits one already taken is dropped. Order decides
+  // who wins, so the person in focus and their cohort are placed first, then
+  // presidents, then everyone else.
   const showAll = cam.k > 1.25;
   cx.font = "600 11px ui-sans-serif,system-ui,sans-serif";
   cx.textAlign = "center"; cx.textBaseline = "bottom";
+  const want_lbl = [];
   for(let i=0;i<N.length;i++){
     const n=N[i], big = n.p||n.r;
     const near = i===focus || (lit&&lit.has(i));
     if(!(showAll || (cam.k>0.62&&big) || near)) continue;
-    const p = S(n); if(p.x<-90||p.x>w+90||p.y<-30||p.y>h+30) continue;
+    const p = SI(i); if(p.x<-90||p.x>w+90||p.y<-30||p.y>h+30) continue;
+    want_lbl.push([i===focus?0:(near?1:(big?2:3)), i, p]);
+  }
+  want_lbl.sort((a,b)=>a[0]-b[0]);
+  const taken = [];
+  for(const [,i,p] of want_lbl){
+    const n = N[i];
     const r = Math.max(1.1, n.R*Math.sqrt(cam.k)*1.15);
+    const tw = cx.measureText(n.n).width, ty = p.y-r-3.5;
+    const box = [p.x-tw/2-2, ty-11, p.x+tw/2+2, ty+2];
+    let clash = false;
+    for(const t of taken){
+      if(box[0] < t[2] && t[0] < box[2] && box[1] < t[3] && t[1] < box[3]){ clash = true; break; }
+    }
+    if(clash) continue;
+    taken.push(box);
+    const near = i===focus || (lit&&lit.has(i));
     cx.globalAlpha = (focus<0||near) ? (i===focus?1:.82) : .1;
-    cx.lineWidth = 3.2; cx.strokeStyle = "rgba(7,7,8,.92)";
-    cx.strokeText(n.n, p.x, p.y-r-3.5);
-    cx.fillStyle = i===focus ? "#FFFFFF" : "#C6C7D0";
-    cx.fillText(n.n, p.x, p.y-r-3.5);
+    cx.lineWidth = 3.2;
+    cx.strokeStyle = MODE==="board" ? "rgba(239,230,210,.92)" : "rgba(7,7,8,.92)";
+    cx.strokeText(n.n, p.x, ty);
+    cx.fillStyle = i===focus ? (MODE==="board" ? "#7A1220" : "#FFFFFF")
+                             : (MODE==="board" ? "#2E2418" : "#C6C7D0");
+    cx.fillText(n.n, p.x, ty);
     cx.globalAlpha = 1;
   }
   if(moving) raf = requestAnimationFrame(draw);
@@ -504,7 +662,7 @@ function draw(){
 function pick(mx,my){
   let best=-1, bd=18*18;
   for(let i=0;i<N.length;i++){
-    const p=S(N[i]), dx=p.x-mx, dy=p.y-my, d=dx*dx+dy*dy;
+    const p=SI(i), dx=p.x-mx, dy=p.y-my, d=dx*dx+dy*dy;
     if(d<bd){bd=d;best=i;}
   }
   return best;
@@ -528,7 +686,7 @@ function open(i){
     + rows.slice(0,60).map(([j,c])=>'<a href="o/'+N[j].s+'.html">'+N[j].n
         +'<span>'+c+(c>1?" yrs":" yr")+'</span></a>').join("");
   card.classList.add("on");
-  want.x = n.x; want.y = n.z; want.k = Math.max(want.k, 1.15);
+  want.x = PX(i); want.y = PY(i); want.k = Math.max(want.k, MODE==="board" ? 1.6 : 1.15);
   invalidate();
 }
 function shut(){ sel=-1; cohort=new Map(); card.classList.remove("on"); invalidate(); }
@@ -567,6 +725,22 @@ cv.addEventListener("wheel", e=>{
   want.y = wy - (my-cv.clientHeight/2)/want.k;
   invalidate();
 }, {passive:false});
+
+
+function setMode(m){
+  if(m === MODE) return;
+  if(m === "board" && !BOARD) BOARD = buildBoard();
+  MODE = m;
+  document.getElementById("mweb").classList.toggle("on", m==="web");
+  document.getElementById("mboard").classList.toggle("on", m==="board");
+  document.querySelector(".netwrap").classList.toggle("board", m==="board");
+  const keep = sel;
+  if(keep >= 0){ want.x = PX(keep); want.y = PY(keep); }
+  else fit();
+  invalidate();
+}
+document.getElementById("mweb").onclick = ()=>setMode("web");
+document.getElementById("mboard").onclick = ()=>setMode("board");
 
 document.getElementById("zin").onclick = ()=>{want.k=Math.min(7,want.k*1.45);invalidate();};
 document.getElementById("zout").onclick = ()=>{want.k=Math.max(0.09,want.k/1.45);invalidate();};

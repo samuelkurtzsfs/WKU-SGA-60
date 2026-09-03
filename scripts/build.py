@@ -495,7 +495,7 @@ NAV_ITEMS = [("index.html", "The board"), ("search.html", "Search"),
              ("irregular.html", "Irregular terms"),
              ("branches.html", "How it was built"),
              ("officers.html", "The officers"),
-             ("network.html", "Who knew whom"),
+             ("network.html", "SGA network"),
              ("history.html", "Timeline"),
              ("legislation.html", "Legislation"), ("corrections.html", "Corrections"),
              ("sources.html", "Sources"), ("about.html", "About and method")]
@@ -7084,7 +7084,7 @@ def render_network(ys, people):
                           p.get("photo"), dict) else None}
     years = [y["id"] for y in ys]
     body = netmod.network_page(netmod.payload(rows, years))
-    return shell("Who knew whom \u00b7 SGA 60",
+    return shell("SGA network \u00b7 SGA 60",
                  "Every person the record shows holding office in WKU's Student "
                  "Government Association, drawn as a web: search anyone and see "
                  "who served alongside them.",
