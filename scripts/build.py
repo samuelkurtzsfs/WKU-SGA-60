@@ -6637,20 +6637,126 @@ def officer_index(ys):
     for p in people.values():
         p["terms"].sort(key=lambda t: (t["year"], t["office"]))
         p["photo"] = next((t["photo"] for t in p["terms"] if t.get("photo")), None)
+    PEOPLE_SPANS.clear()
+    for p in people.values():
+        yrs = [int(t["year"][:4]) for t in p["terms"] if t.get("year")]
+        if yrs:
+            PEOPLE_SPANS[p["name"]] = (min(yrs), max(yrs), frozenset(all_spellings(p)))
+    build_rivals()
     return people
 
 
+# Every officer's name and the years they served, so a mention can be told
+# apart from a mention of somebody who shares the name. Filled by
+# officer_index, read by officer_mentions.
+PEOPLE_SPANS = {}
+
+
+RIVALS = {}
+DUPES = []
+
+
+def _surname(s):
+    import unicodedata
+    s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode()
+    parts = [re.sub(r"[^A-Za-z]", "", p) for p in s.split()]
+    parts = [p for p in parts if p and p not in ("Jr", "II", "III", "IV")]
+    return parts[-1].lower() if parts else ""
+
+
+def build_rivals():
+    """Pairs of people whose names the mention matcher cannot tell apart.
+
+    name_pattern matches the given name as a prefix, so the pattern built from
+    "Rob Evans" also matches every "Robert Evans" in the archive, while the
+    pattern built from "Robert Evans" matches no "Rob Evans". The collision is
+    one-way, which is why only the shorter name's page looked wrong: it was
+    quietly collecting the other person's record. WKU had both, three years
+    apart, and the Herald called both of them Rob.
+
+    Both pages need to warn, so the test runs in both directions. Only people
+    sharing a surname can collide, so the comparison is bucketed by surname:
+    testing all 1,861 against each other compiles three million patterns and
+    does not finish.
+    """
+    RIVALS.clear()
+    DUPES.clear()
+    buckets, pats = {}, {}
+    for name, (lo, hi, spellings) in PEOPLE_SPANS.items():
+        forms = {name} | set(spellings)
+        pats[name] = [q for q in (name_pattern(s) for s in forms) if q]
+        for s in forms:
+            buckets.setdefault(_surname(s), set()).add(name)
+    for group in buckets.values():
+        if len(group) < 2:
+            continue
+        for a in group:
+            for b in group:
+                if a >= b:
+                    continue
+                fa = {a} | set(PEOPLE_SPANS[a][2])
+                fb = {b} | set(PEOPLE_SPANS[b][2])
+                if {x.lower() for x in fa} & {x.lower() for x in fb}:
+                    continue                      # same person, two spellings
+                if not (any(q.search(x) for q in pats[a] for x in fb)
+                        or any(q.search(x) for q in pats[b] for x in fa)):
+                    continue
+                alo, ahi = PEOPLE_SPANS[a][:2]
+                blo, bhi = PEOPLE_SPANS[b][:2]
+                # Nearly every name pair here is one person the archive holds
+                # twice under two forms: Ben and Benjamin Lineweaver, Matt and
+                # Matthew Barr, Cacy and Cacy A. Schooler. Telling a reader
+                # there are two of them would be worse than the bug this fixes.
+                # A student's service runs a few years at most, so a pair whose
+                # terms sit within a normal degree of each other is treated as
+                # one person to merge and nothing is printed. Only a real gap,
+                # like the two Evanses, is shown as two people.
+                gap = max(blo - ahi, alo - bhi)
+                if gap < 3:
+                    DUPES.append((a, f"{alo}-{ahi}", b, f"{blo}-{bhi}", gap))
+                    continue
+                RIVALS.setdefault(a, []).append((b, blo, bhi))
+                RIVALS.setdefault(b, []).append((a, alo, ahi))
+
+
+def rivals_for(person):
+    return RIVALS.get(person["name"], [])
+
+
 def officer_mentions(person, ys):
-    """Entries elsewhere in the archive that name this person."""
+    """Entries elsewhere in the archive that name this person.
+
+    Where two people share a name the text usually cannot separate them: the
+    Herald called both Evanses "Rob Evans". The date can. An entry is given to
+    whichever of them was in office nearest to it, and an entry that is not
+    clearly nearer to one than the other is given to neither, because putting
+    another person's presidency on this page is worse than omitting an entry.
+    """
     pats = [q for q in (name_pattern(s) for s in all_spellings(person)) if q]
     if not pats:
         return []
+    span = PEOPLE_SPANS.get(person["name"])
+    rivals = rivals_for(person) if span else []
+    lo, hi = (span[0], span[1]) if span else (0, 9999)
+
+    def distance(year, a, b):
+        return 0 if a <= year <= b else min(abs(year - a), abs(year - b))
+
     out = []
     for y in ys:
         for e in y["events"]:
             hay = e["title"] + " " + e["body"]
-            if any(q.search(hay) for q in pats):
-                out.append((y, e))
+            if not any(q.search(hay) for q in pats):
+                continue
+            if rivals:
+                yr = int(str(e.get("date", "0"))[:4] or 0)
+                ours = distance(yr, lo, hi)
+                theirs = min(distance(yr, a, b) for _, a, b in rivals)
+                # equal distance means the record cannot say which of them it
+                # is, and a guess would put a presidency on the wrong page
+                if theirs < ours or (theirs == ours and ours > 0):
+                    continue
+            out.append((y, e))
     out.sort(key=lambda t: t[1]["date"])
     return out
 
@@ -6891,6 +6997,20 @@ def render_officer(person, ys, leg=()):
         lead = ('<p class="roles">Also served as president or student regent; that record is '
                 'on the year pages linked below.</p>')
 
+    # Two people can carry one name, and a reader has no way of telling from
+    # the page that the archive holds another of them. Say so, and say which
+    # years each served, which is the only thing that separates them.
+    shared, others = "", rivals_for(person)
+    if others:
+        who = "; ".join(
+            f'{ext("../o/" + slug(n) + ".html", h(n))}, {a}-{str(b + 1)[-2:]}'
+            for n, a, b in sorted(others))
+        shared = (f'<p class="roles sharedname">The archive holds another person of this '
+                  f'name: {who}. Entries below are assigned by date, and any the record '
+                  f'cannot separate are left off both pages.</p>')
+    sharednote = (' This name is shared, so entries are assigned to whichever of them held '
+                  'office nearest the date.' if others else "")
+
     photo_block = ""
     if person.get("photo"):
         ph = person["photo"]
@@ -6905,7 +7025,7 @@ def render_officer(person, ys, leg=()):
  <p class="kicker">{h(span)}</p>
  <h1>{h(person["name"])}</h1>
  <p class="roles">{h(", ".join(offices))}.</p>
- {lead}{spellings}
+ {lead}{shared}{spellings}
  {at_glance}
 </div></header>
 
@@ -6918,7 +7038,7 @@ def render_officer(person, ys, leg=()):
 <h2 class="sec">Where the record names them<span class="n">{len(mrows)}</span></h2>
 <p class="secnote">Entries elsewhere in this archive that name this person. They are matched on
 the full name, never on a surname alone, because a surname on its own catches other people and
-sometimes catches buildings.</p>
+sometimes catches buildings.{sharednote}</p>
 <div class="mentions">{"".join(mrows) if mrows
     else '<p class="prose">No entry in the archive names them beyond the offices above.</p>'}</div>
 
