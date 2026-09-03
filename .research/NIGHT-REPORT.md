@@ -1,3 +1,125 @@
+# 3 September 2026, midday — the senate roll was printing the same seat twice
+
+Nothing was open to merge. No pull request was open at 11:00 UTC, and the
+branches are in the state the early-morning pass described: `research-photos`
+differs from main only by lacking main's newer night log, and every other
+`research-*` branch is a snapshot from behind main rather than ahead of it.
+The research routines have nothing stranded.
+
+So this pass went at main itself, and found a fault in it.
+
+## Thirty-seven people were on the senate roll twice
+
+A year's `organization.senate` carries an `officers` list and a `members`
+list. Thirty-seven people sat in both, under the **same seat title in the same
+year**: Grace Ekrikpo was the 2025-26 international student senator in both,
+Ben Lee the Gatton senator in both, and so on across 2016-17, 2017-18,
+2021-22, 2022-23, 2023-24 and 2025-26, thirteen of them in 2025-26 alone.
+
+This was not invisible. The year page prints both lists in one "The senate"
+section, so the roll named those people twice, and each of their own pages
+counted the one seat as two. Grace Ekrikpo's page read "Offices held 2" for a
+single senate seat; Ben Lee's and Miles Harvey's did the same. The archive's
+headline count of recorded terms was inflated by the same thirty-seven.
+
+The two rows have different parentage. The `members` rows are the legislation
+author harvest's output — every one of them reads "Named as an author on N
+pieces of SGA legislation in the session". The `officers` rows are researched:
+they carry the September election, the swearing-in date, a profile and several
+citations. Nothing ever reconciled the two, and `build.py` does not dedupe, so
+both were published.
+
+The members row has been folded into the officers row in all thirty-seven
+cases. The officers row survives because it is the fuller record and because
+`build.py` drops `profile` and `src2`..`src20` when it renders someone as a
+member, so keeping the member instead would have thrown away the researched
+material. Every citation the members row carried was moved across first: a
+check against the pre-merge file confirms all thirty-seven removed rows had
+each of their source URLs present on the surviving row afterwards, none lost.
+Its note was taken where the officers row had none, and its profile paragraphs
+where they were not already present.
+
+Eleven cases had a note on both rows. The first attempt appended the members
+note to the officers note and produced sentences that said the same thing
+twice — Derryberry's read "Named as an author on four pieces ... Resolution
+4-25-F (full title) ..." and then "Named as an author on four pieces ...
+Resolution 4-25-F" again. That was thrown away and redone. All eleven were
+read by hand: in none of them did the members note name a piece of legislation
+the officers note did not already name, so the officers wording stands alone
+and the restatement is dropped. Their citations were carried across regardless.
+
+## Will and William Derryberry are one sophomore senator
+
+The early-morning pass left this open, correctly, rather than fixing it blind:
+`photos.json` carried both name forms for 2025-26 pointing at one portrait
+file. The source check it asked for has an unusually clean answer, and it is
+SGA's own paperwork that caused the split. In the same 2025-26 session the two
+bills he authored, 10-25-F and 17-25-F, sign him **Will Derryberry**; the two
+resolutions, 4-25-F and 5-25-F, sign him **William Derryberry**. The harvest
+made two people out of four documents, and a later pass filed one under
+`officers` and one under `members`.
+
+`name-aliases.json` already held the mapping, so the site knew they were one
+man; what it did not do was stop him being listed twice. He is now a single
+sophomore senator record under Will, the form the *Herald* and the majority of
+the file use, and the redundant William entry in `photos.json` — which
+`check_data.py` flagged the moment the years.json record went — is gone with
+it. His page now reads two offices held, the 2025-26 seat and the 2026-27
+chief financial officership, which is right.
+
+This is not a spelling ruled on. Both forms are what the primary documents
+say, the alias file keeps both reachable, and nothing was renamed in a source.
+
+## What was deliberately left alone
+
+Twenty-three more people sit in both lists under **different** titles, and
+those were not touched. Three of them — Nathan J. Eaton in 2006-07 and
+2007-08, Arivumani Srivastava in 2021-22 — are only visible once the alias
+file is applied, which is worth saying because the first count of this made
+without it came out three short.
+
+The different-title pattern is often legitimate, and it is already recorded:
+Andrea Cailles chaired Student Affairs in the autumn of 1992 and was seated as
+a plain Representative at Large the following February, so two rows are two
+real roles. The same reading covers Zach Jones and Calleigh Powell, senators
+who also held a committee chairmanship.
+
+But some of the twenty-three are almost certainly the same duplication wearing a
+different spelling — "Senator At Large" against "Senator at Large",
+"Senator-at-Large" and "Senator At-large" across 2017-18, 2021-22 and 2022-23,
+and Kayla Distler's "College of Education and Behavioral Sciences Senator"
+against "CEBS Senator" in 2023-24. Each needs a judgement about whether a
+committee headship is a second office before it can be merged, and that is a
+decision about how this archive counts offices, not a typo to sweep. It is
+left for a pass that can make it deliberately.
+
+Two things for the routines. The legislation-author harvest writes into
+`senate.members` without checking whether the person is already in
+`senate.officers` for that year, which is what produced all thirty-seven; it
+will produce more on its next run unless it checks. And `build.py` renders the
+two lists into one section without noticing a name in both, which is what let
+this reach the public site rather than a validator.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six pairs, unchanged and already judged
+in the early-morning entry; this diff added no events.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,819
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one name. 60 people have been president.
+The term count is 37 lower than this morning's 2,691 and the multiple-name
+count one lower than 41; both are the correction, not a loss of research.
+
+## Still open
+
+The twenty-three different-title overlaps above. The 1993-94 to 2009-10 gap in
+year photographs, the 431 legislation files with no author recorded, and the
+gated `viewcontent.cgi` endpoint on digitalcommons are all unchanged.
+
 # 3 September 2026, early morning — an empty queue, and the six standing pairs finally judged
 
 Nothing to merge. No pull request was open at 06:25 UTC, and nothing is
