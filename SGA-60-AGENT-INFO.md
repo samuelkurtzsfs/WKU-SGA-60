@@ -3898,6 +3898,103 @@ mismatch rather than force a citation that describes a different office.
 the Reinneck addition (61 years, 1980 events, 60 presidents; the same six
 standing duplicate pairs, unchanged). Landed on `research-photos`.
 
+**A third 3 September 2026 run (photograph agent, scheduled).** Confirmed
+again from a script against `data/photos.json` that all four named
+presidents and every other leader already carry a portrait. Found and fixed
+a real defect first: merging `origin/main` into `research-photos` had left
+two byte-identical copies of the Emily Reinneck entry (main had already
+landed the same portrait independently), which `check_data.py` does not
+check for. Removed the duplicate.
+
+`viewcontent.cgi` was tested again with the full browser-navigation header
+set — still `403`. Landing pages on `digitalcommons.wku.edu` load fine
+(`200`, following the `301`), so the block is specific to the download
+endpoint, exactly as every prior run has found; no `data/documents/` or
+year-photograph work was attempted against it this run either.
+
+Spent the rest of the session on a systematic sweep for same-person,
+same-year name variants: for every executive officer, senate officer and
+committee chair still missing a portrait, checked whether someone with the
+same year and the same surname already had one under a differently-spelled
+first name. This is a narrower, safer check than surname matching alone
+(CLAUDE.md's warning case) because it requires an exact office/year context,
+not just a shared surname — and every candidate was read against the
+record's own text before use, not accepted on the string match. Four
+candidates came out of it:
+
+- **James P. Haynes** (President, 1966-67 executive roster) is Jim Haynes,
+  the year's leader, already portrayed from the 1967 Talisman.
+- **Nate Eaton** (Chair, Campus Improvements Committee, 2007-08) is Nathan
+  Eaton; the year's own committee record already says his name was
+  "printed as Nate and Nathan Eaton" for this chairmanship.
+- **Page Settles** (Speaker of the Senate, 2015-16) is Paige Settles; the
+  year's own senate-officer record for her carries a correction note
+  reading "the archive currently carries 'Page Settles'... " and gives the
+  fix.
+- **Marsha Sanner** (chair, Rules and Elections, 1980-81) is Marsha L.
+  Sanner; the existing portrait's own source caption ("ASSOCIATED STUDENT
+  GOVERNMENT — Front row: ...Marsha Sanner...") spells her name exactly
+  as the committee record does, with no middle initial.
+
+All four reuse the sibling entry's exact file and source, extended to name
+the identification. One look-alike candidate was found and rejected:
+**David Smith** (Chair, Academic Affairs, 1992-93) superficially matches
+Donald Smith, portrayed for 1992-93 and 1993-94 from Herald 69:7 — but the
+first names do not correspond (not a nickname pair, unlike Nate/Nathan or
+Page/Paige) and nothing in the record ties them together, so this is left
+as still missing rather than guessed at. A second false match the same
+sweep threw up, **Savanna Kurtz** against **Sam Kurtz** (2024-25), is not
+a spelling variant at all — they are two different people who happen to
+share a surname, exactly the trap CLAUDE.md warns against; rejected
+without a second thought.
+
+Beyond that sweep, this run found no new portraits. Tried the `wkuherald.com`
+media search API (`/wp-json/wp/v2/media?search=`) against roughly 30 named
+executive and senate officers still missing a portrait across 2010-11
+through 2022-23: almost all returned no hits at all, and the few that did
+were unusable on inspection — a caption naming **Hannah Neeper** (2015-16
+Administrative Vice President) turned up a real photograph
+(`7acb7747154cad4e475308f8bf1d9288-1.jpg`, a double-hug scene at the 2016
+election results), but both women in the frame have their faces fully
+hidden in the hug; no face, no identification, left alone. A caption naming
+**Mark Clark** (2017-18, Chair of the Committee of Diversity and Inclusion)
+turned up a Pride Center photo of a "Junior Mark Clark," but nothing ties
+that Mark Clark to the SGA committee chair beyond the shared name and
+plausible year, so it was not used either.
+
+Also confirmed, so a future run does not re-spend the checks: `wkuherald.com`
+posts from 2003-2010 (tested against several SGA-related search terms,
+landing squarely in the twelve-year year-photograph gap) exist as text with
+`featured_media: 0` — the site's WordPress migration carried the words but
+not the pictures for that era, so `wkuherald.com` is not a route into the
+year-photograph gap no matter how it's queried; only `digitalcommons.wku.edu`
+holds images for those years, and it is still closed. Also checked
+`archive.org/download/talisman1988west` (the 1987-88 yearbook) directly: it
+404s, confirming the existing note that archive.org holds 1971-1981, 1986
+and 1987 only, not 1988. In the two years archive.org does hold that still
+had missing officers, full-text search of the djvu turned up nothing: none
+of Vern Pulman (1974-75), Alice Wicks, Eddie Fisher or Steve Wilson (all
+1978-79), or Chris Millay, Dwight Austin, Dan Wooten, Jeff Key or Bill
+Fogle (all 1986-87) appear anywhere in their respective yearbook's text,
+including the Associated Student Government section itself, which for 1987
+lists only rank-and-file members by row, not committee-level officers.
+
+`build.py`, `check_data.py` and `check_duplicates.py` all pass clean after
+the four reused portraits (61 years, 1980 events, 60 presidents; the same
+six standing duplicate pairs, unchanged). Landed on `research-photos`, in
+three commits: the duplicate-entry fix, the four name-variant reuses, and
+the Sanner fix split out on its own.
+
+**A data note for whoever next touches `years.json` officer records (not
+this agent's file to edit):** the executive-officer entry for 1966-67
+spells the president "James P. Haynes" while the year's own top-level
+leader record spells him "Jim Haynes" — same office, same year, clearly
+the same person, just two spellings that don't string-match each other for
+the build's photo-overlay or for anything else that matches on exact name.
+This run worked around it on the photos side only (see above); the
+underlying years.json spelling mismatch is still there for a decade or
+roster agent to reconcile if it's worth doing.
+
 ## 9. Restarting a session
 
 ```bash
