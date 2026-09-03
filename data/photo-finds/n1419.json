@@ -301,5 +301,35 @@
    },
    "refusal": "_do-not-use.json: it is the wrong Noah Moore. WKU has two in these years and the tour guide is Noah Moore of Fort Thomas, class of 2021, whose WKU write-up lists five campus offices and does not include SGA."
   }
+ },
+ {
+  "year": "2015-16",
+  "name": "Mary Hart",
+  "file": "2015-16-mary-hart.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. It also settles an open question in years.json, which records for 2015-16 that whether the senator 'Mary Hart' and the Academic Affairs chair 'Kate Hart' are one person spelled two ways is not established: WKU's SGA executive branch page for 2016-2017 prints 'Kate Hart, Executive Vice President' against the address mary.hart018@topper.wku.edu, so Kate is the working name on the university account registered to Mary Hart. One person, one account, one photograph.",
+  "caption_quote": "Kate Hart, Executive Vice President, mary.hart018@topper.wku.edu",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file mary_hart018.jpg. The handle is WKU's own: its SGA executive branch page for 2016-2017 lists 'Kate Hart, Executive Vice President, mary.hart018@topper.wku.edu' (web.archive.org/web/20161230150409/http://www.wku.edu/sga/executive/), and WKU renders these directory files on its own department pages with the person's name as the img title.",
+   "url": "https://www.wku.edu/img_facstaff/mary_hart018.jpg"
+  }
+ },
+ {
+  "year": "2019-20",
+  "name": "Derrick Collins",
+  "file": "2019-20-derrick-collins.jpg",
+  "replaces": null,
+  "width": 250,
+  "height": 315,
+  "quality": "small",
+  "why": "WKU's own directory portrait, single subject, full face, uncropped and unresized. The archive already treats Derek and Derrick as one man: its own profile notes he is 'recorded in the Senate's own minutes of 24 September 2019 as \"Derrick Collins\"' while the Herald and SGA's website call him Derek, and only one Collins sat on that Judicial Council.",
+  "caption_quote": "Derek Collins, Associate Justice, derek.collins989@topper.wku.edu",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file derek_collins989.jpg. The handle is WKU's own: its SGA Judicial Council page lists 'Derek Collins, Associate Justice' against derek.collins989@topper.wku.edu (web.archive.org capture of wku.edu/sga/2018-2019-judicial/judicial-council.php), and WKU renders these directory files on its own department pages with the person's name as the img title.",
+   "url": "https://www.wku.edu/img_facstaff/derek_collins989.jpg"
+  }
  }
 ]
