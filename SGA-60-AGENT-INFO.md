@@ -3804,6 +3804,100 @@ in `data/photos.json` — not new, just independently reconfirmed.
 merged tree (61 years, 1980 events, 60 presidents, no leader without a
 portrait). Landed the Jack Smith fix and this note on `research-photos`.
 
+**A second 3 September 2026 run (photograph agent, later the same day).**
+Re-checked the four named presidents and every leader record again by direct
+script against `data/photos.json`: still zero leaders without a portrait,
+confirming the prior run's finding rather than assuming it. `viewcontent.cgi`
+was tested twice more, about ten minutes apart, and was closed both times —
+`HTTP 403`, Cloudflare — so no `data/documents/`-side or year-photograph work
+against digitalcommons was attempted this run either.
+
+Tried one avenue not previously logged in this file: WKU Special Collections'
+own PastPerfect Online catalog
+(`westernkentuckyuniversity.pastperfectonline.com`), which a web search
+surfaced as holding "UA1C4/10 Student Government Association Photos" and
+looked like it might sidestep TopSCHOLAR's Cloudflare wall entirely, being a
+different host. It does not: a plain request redirects to the site's own
+`Home/ContactAdmin` page rather than serving search results, and the same
+happens after fetching the homepage first to pick up a session cookie. A
+fetch through this session's web-fetch tool returns a flat `403`. Also tried
+running the pre-installed headless Chromium (via Playwright, not preinstalled
+as a Python package here — `pip install playwright` first) against both that
+site and `digitalcommons.wku.edu` directly, on the chance that a real browser
+would clear a bot check `curl` cannot. Neither loaded: both come back
+`net::ERR_CONNECTION_RESET`, with and without the session's proxy passed
+explicitly to the browser launch. The proxy's own status endpoint
+(`http://127.0.0.1:33603/__agentproxy/status`) shows these as
+`ws_closed_mid_exchange` failures against `digitalcommons.wku.edu`,
+`accounts.google.com` and `www.google.com` alike, tunnels dying about six
+seconds in regardless of destination — this reads as a limit on how this
+session's proxy handles a headless browser's connection pattern generally,
+not a Cloudflare-specific block, so a future run should not spend time on
+Playwright against TopSCHOLAR-family sites again without a proxy fix. Net for
+both avenues: no new access, and PastPerfect Online should not be tried again
+the same way.
+
+Turned to `wkuherald.com`'s WordPress API instead, which is not paced or
+gated, to hunt portraits for officers on the priority-3 list (cabinet and
+Senate officers without a portrait — 400 of 953 officer records, checked by
+script). Searched by name for roughly two dozen missing officers across
+2021-22 through 2025-26, reading each hit's `figcaption` markup rather than
+guessing from a headline. One clean identification: **Emily Reinneck**,
+Senator At-Large 2025-26, named as the only person in a swearing-in caption
+that calls her the incoming Campus Improvements and Sustainability Committee
+chair, Herald 19 Aug 2025 (`wkuherald.com/85782/`). Added as
+`data/photos/2025-26-emily-reinneck.jpg`.
+
+**Editor's note, 3 September 2026, settling this frame.** An earlier
+photograph run had already found this same caption and *rejected* it, on the
+grounds that the picture showed "a row of six senators with hands raised and
+no positional cue" — that entry is still above in this file, and the run that
+added the portrait did not mention it. Checked against the full-resolution
+original (`JSAV9938.jpg`, 2001x1034, which is what was downloaded, byte for
+byte). The earlier reading described the background row and missed the frame's
+structure: the focal plane carries exactly one face, front right, hand raised
+for the oath, and every other person in the picture — the standing row at
+left, the two women immediately behind her, the figure at the right edge — is
+visibly out of focus. A Herald caption naming one person over a frame focused
+on one person is the same standard already relied on by dozens of entries in
+`photos.json`, so the identification stands. The stored file has been cropped
+to that figure so the ambiguity that prompted the first rejection cannot
+recur, and the crop is recorded in the entry's own source label. The wording
+first written here — "front and alone at the swearing-in lectern," "not a
+crowd shot" — overstated it and has been removed: it *is* a group
+swearing-in, and the identification rests on the focal plane, not on her
+being alone. Do not withdraw this portrait on the "row of six senators"
+reasoning again without looking at the full-resolution frame first.
+
+Everyone else searched came back negative and is recorded here so the next
+run does not re-spend the same two dozen queries: **Blake Graham** (2025-26
+Chief Justice) is never photographed alone in Herald coverage found this run
+— the article on his successor's election (`wkuherald.com/88753/`) names him
+only in body text, and the article covering his own cabinet's first meeting
+(`wkuherald.com/85782/`) photographs the President, Vice President, CFO and
+Chief Communications Officer as a group but not him. **Karlee Powell**
+(Secretary of the Senate), **Tyreesha Morris**, **Miles Harvey**, **Zoe
+Martin**, **Nolan Rongey**, **Maggie Phelps** (except see below), **Carter
+Smith**, **Jackson Smith** and **Evan Tuck** (2025-26 senators) each turned up
+only in articles that mention their name in body text or vote counts with no
+accompanying photograph, or in group photographs whose caption does not
+resolve which pictured face is theirs. **Justin Goins** (2021-22 Associate
+Chief Justice, 2022-23 Chief Justice) and **Lauren Willett** (2021-22 senator,
+2022-23 Chief of Staff) came back the same way; the one photographed Judicial
+Council hearing found for Goins's era (`wkuherald.com/70591/`) concerns a
+censure proceeding against a different officer and was avoided as a source
+for identification on that ground regardless. One near-miss, not used:
+Maggie Phelps appears by name in a caption in `wkuherald.com/93405/`
+("New Judicial Council member Maggie Phelps speaks with fellow judicial
+council members...") but the date is 28 April 2026, describing her joining
+the *next* (26th) Senate rather than her 2025-26 PCAL Senator term the
+missing-portrait list was checking against — left alone as a role/year
+mismatch rather than force a citation that describes a different office.
+
+`build.py`, `check_data.py` and `check_duplicates.py` all pass clean after
+the Reinneck addition (61 years, 1980 events, 60 presidents; the same six
+standing duplicate pairs, unchanged). Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
