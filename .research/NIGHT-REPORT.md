@@ -1,3 +1,60 @@
+# 3 September 2026, later — six withdrawn faces that were still being served
+
+The withdrawal above turned up something larger than itself, which is the
+argument for checking that a cut actually took effect rather than trusting the
+page to go blank.
+
+Taking the Jack Smith portrait off `data/` removed it from every page, and left
+the JPEG sitting in `site/photos` under his name. `build.py` copied the
+photographs with `copytree(..., dirs_exist_ok=True)`, which only ever adds. So a
+withdrawal has never taken a picture off the site. It took it off the pages and
+left it at its own address, fetchable by anyone who guessed the filename, which
+is the same filename the archive itself chose: year, then name.
+
+Six were up. One was mine, from an hour earlier. One, a Jeffery Yan file,
+predates the current history and matches no entry anywhere. The other four were
+withdrawn deliberately, by earlier passes, for cause:
+
+- **Stacey Taylor**, 2000-01, cropped from a Herald feature about twin sisters,
+  Natalie and Stacey, with nothing on file to say which twin it is.
+- **Drew Mitchell**, 2012-13, pinned to a caption that gives a surname and
+  nothing else.
+- **Symone Whalin**, 2018-19, whose label dated the frame to a meeting of
+  27 February 2019 and whose own filing date contradicted it.
+- **Shantel Pettway**, 2016-17, and this is the one worth stopping on. It is
+  genuinely her. That is the problem. It was made for a feature about skin tone,
+  in which she spoke about self-love and her faith, and lifting it into a student
+  government archive puts her words to a use she did not sit for. The pass that
+  withdrew it was right to, and it has been publicly fetchable ever since anyway.
+
+Three of the four are living people and the fourth is a misidentification of one.
+A withdrawal that leaves the file up is not a withdrawal.
+
+Photographs are mirrored now rather than accumulated: anything in `site/photos`
+that `data/photos` no longer holds is deleted on build, and the build prints the
+count, because a silent cleanup is the fourth kind of script that reports success
+while producing nothing. It took down six. A second build takes down none.
+
+## Two things seen and not touched
+
+`data/photos` holds six files nothing references: Deanna Mills, Mark Miller and
+Mistianna Holcomb (1990-91), Deven Delano (1991-92), Carlene Lodmell (1996-97)
+and Evelina V. Petkova (2004-05). They are copied to the site and served, but no
+page links them. They may be staged for entries not yet written, so they stay;
+whoever staged them should say so or cut them. The Carlene Lodmell file wants
+care either way, given how firmly the record has had to establish that she and
+her twin sister Darlene are two people.
+
+And `data/photos` holds both `2013-14-keyana-boka.jpg` and
+`2013-14-keyanna-boka.jpg`, both referenced. That is the Keyanna / Keyana
+spelling the rules say to flag and not fix, so it is flagged here and left alone.
+
+## Checks
+
+`build.py` clean and idempotent, `check_data.py` exit 0, `check_contrib.py`
+exit 0. No HTML changed: the whole difference is six image files and six lines
+of build code.
+
 # 3 September 2026 — editor's pass: an empty queue again, and a face that did not belong to its citation
 
 Nothing was open. No pull request, and — checked a second way, because an empty
