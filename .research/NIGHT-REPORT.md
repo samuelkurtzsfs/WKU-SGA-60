@@ -1,3 +1,67 @@
+# 3 September 2026, evening — the wrong record group, settled from the archive's own titles
+
+Nothing was open. `gh` is not installed in these containers, so the access probe
+was the one AGENT-LANDING.md prescribes: `git push --dry-run` reported write
+access, and the GitHub tools listed no open pull requests. Everything the
+photograph routine filed today is merged and on the site. The stored prompt this
+pass fires from still describes #6, #7 and #8 as stale since 4 August; that is
+now the second night log to say so. All three closed weeks ago.
+
+The 4 August `research-*` branches are still on origin and still have **no merge
+base with main**. Nine of them differ from main across roughly 1,900 files each.
+They are snapshots of the superseded repository, not forks, exactly as
+AGENT-LANDING.md warns. Merging one would delete the contributor layer and the
+validators. They should be left alone or deleted deliberately, never merged.
+
+## The correction
+
+The afternoon pass fixed the archive call number on six Spirit Masters portrait
+credits and handed forward that the same error was still on others it had not
+opened. It was, and the file contradicted itself: `stu_org/327` was cited as
+UA12/2/16 in two credits and as UA68 in four more, on the same page of the same
+scanned volume.
+
+Both landing pages were opened. Each carries the archive's own title,
+**UA12/2/16 Spirit Masters Scrapbook** — `stu_org/327` covering 2004-2005 and
+`stu_org/329` covering 1996-1997. The abstracts match the years already written
+into the credits, so only the record group was ever wrong. UA68 is SGA's own
+record group, and giving it here told a reader the photographs came out of SGA's
+papers when they came out of the Spirit Masters'.
+
+Nine credits corrected: the four 1996-97 Spirit Masters portraits, Tim Leavell
+1997-98, Morgan Rink 2002-03, Evelina Petkova 2003-04, Lindsey Inman 2004-05 and
+Chris Whitfield 2005-06. No occurrence of UA68 now remains anywhere in
+`photos.json` or in the built site — every one of them had been this same error.
+
+## What was checked and stands
+
+The largest change published today was the senate de-duplication, which removed
+373 lines from `years.json`. Its commit message claims it folded each duplicate
+members row into the officers row keeping every citation. That claim was tested
+rather than taken: all 2,083 person-rows before the change were compared against
+the 2,082 after, matching notes, profile text and every source URL.
+
+It holds. Ten notes and four source URLs do not survive verbatim, and every one
+of them is superseded rather than lost — the surviving row tells the same fact at
+greater length and usually with an extra citation. Lily Nellans keeps the
+nondiscrimination bill, its 17-9-1 vote and a third Herald source; Ryan
+Richardson, Will Harris and Jesse Banales the same. The four dropped URLs are
+per-bill PDFs whose bills are still named in the surviving note, and all four —
+Bill 3-21-F, Bill 15-22-F, Bill 19-25-F and Bill 19-26-S — are mirrored in
+`data/legislation/` and render on their own year pages. Nothing sourced was lost.
+
+The six standing duplicate pairs were read again and are again distinct. The
+1997-98 pair is the closest of them and is still two events: Bill 97-3-F passing
+in November 1997, and the Herald reporting the cards going out in February 1998.
+The second is written down to what an index listing proves and claims nothing
+about how the distribution went, which is the right handling of a notice.
+
+## Checks
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0, `check_duplicates.py`
+the same six judged pairs. 61 years, 1,980 events, 60 presidents; 2,654 recorded
+terms held by 1,819 people, 98% with an account of what the person did.
+
 # 3 September 2026, afternoon — a quotation that no source contained
 
 One pull request was open, #340, "Research: photographs (rolling)", opened at
