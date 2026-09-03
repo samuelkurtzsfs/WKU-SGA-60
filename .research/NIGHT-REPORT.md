@@ -1,3 +1,112 @@
+# 3 September 2026, afternoon — a quotation that no source contained
+
+One pull request was open, #340, "Research: photographs (rolling)", opened at
+14:09 UTC by the photograph routine. It is merged. The stored prompt this pass
+fires from still describes #6, #7 and #8 as stale since 4 August; all three
+closed weeks ago and nothing points at them any more, so that paragraph of the
+brief can be ignored by whoever reads it next.
+
+## What was in it
+
+Four portraits, none of them new photographs. The routine had swept the record
+for same-person, same-year name variants — an officer or committee chair whose
+spelling differs from a person already portrayed in that same year — and reused
+the existing file for the second spelling, so the portrait reaches both records.
+James P. Haynes on the 1966-67 executive roster is the leader Jim Haynes. Nate
+Eaton, chairing Campus Improvements in 2007-08, is the Nathan Eaton the committee
+record names. Page Settles, Speaker in 2015-16, is Paige Settles. Marsha Sanner,
+chairing Rules and Elections in 1980-81, is the Secretary Marsha L. Sanner. It
+also removed a duplicate Emily Reinneck entry that a branch merge had left behind.
+
+That is a narrower and safer check than surname matching, which CLAUDE.md warns
+against outright, because it requires the same year and the same body as well as
+the name. All four identifications hold. Each was also checked to land on a real
+record rather than on nothing: an executive President, two senate officers and a
+committee chair. The routine's own rejections were right, too — David Smith is
+not Donald Smith, and Savanna Kurtz is not Sam Kurtz.
+
+## The thing worth recording
+
+The credit line on the Eaton portrait said the archive's own record noted his
+name was "printed as Nate and Nathan Eaton" for the chairmanship.
+
+No source contains that wording. `stu_org/328` was opened and read in full: one
+sentence of abstract, "Scrapbook of WKU Spirit Masters activities in 2007-2008",
+and no personal names anywhere on the page. The 2007-08 committee note in
+`years.json` says only that Eaton was reported as chair from September 2007 and
+also sat and moved as a senator. Nothing in `data/` holds the phrase. A form of
+words was invented, put inside quotation marks, attributed to a record, and set
+to publish under a photograph.
+
+What makes it worth a section rather than a line is that the conclusion was
+correct. Nate and Nathan Eaton are one man; `name-aliases.json` has said so since
+long before this run, and the year carries the one chairmanship under both
+spellings. The invention was not needed. It was manufactured to dress a true
+conclusion in the authority of a source, which is the failure this project is
+least able to survive — a reader who checks the citation finds nothing, and
+every other citation on the site is worth less afterwards.
+
+So it was rescued rather than cut: the identification stands, and the credit now
+says what the record shows. The same sentence was in `SGA-60-AGENT-INFO.md` and
+in the description of #340, and was corrected in both.
+
+## What was cut
+
+The quotation, replaced with the two-spellings fact it was decorating.
+
+A wrong call number, in six entries rather than the one this diff added. Every
+credit citing the Spirit Masters scrapbook at `stu_org/328` gave it as "WKU
+Archives UA68, Student Organizations". UA68 is SGA's own record group; the
+archive titles the item UA12/2/16. A Spirit Masters scrapbook filed under SGA's
+number reads as an SGA record, which matters here more than tidiness — the whole
+question about these portraits is whether the man on a Spirit Masters display
+board is the SGA senator, and the citation was quietly answering it.
+
+Two credit lines that would have reached the site mid-sentence were tidied.
+
+## Two notes left for the routines
+
+The same UA68 error is still on the 1996-97 and 2004-05 Spirit Masters entries,
+which cite different scans this pass did not open. Other entries in the same file
+already give UA12/2/16 correctly, so `photos.json` contradicts itself until
+somebody opens those two and settles them.
+
+The Spirit Masters portraits as a class rest on identifications made from the
+scanned display boards themselves, and `viewcontent.cgi` has been returning 403
+for weeks, so no editor pass can re-open them to check. They stand on the record
+of the runs that found them. If that endpoint reopens, they are the first thing
+to re-verify.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, before the
+corrections and again after them. `check_duplicates.py` reports the same six
+standing pairs, unchanged; re-read and left alone, because each is genuinely two
+events — a bill introduced against the same bill failing, a lawsuit planned
+against the same lawsuit endorsed, lining up against a grading change against
+passing legislation on it, three separate bills on one day in September 1991, and
+designated driver cards three months apart. This diff added no events.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,819
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one spelling or name. 60 people have been
+president.
+
+## Still open
+
+The attribution footer this platform appends to pull-request comments landed on
+the review comment on #340, exactly as it did on #337 and against the rule in
+CLAUDE.md. It cannot be stripped from inside these containers: direct GitHub REST
+is refused with a 403 even though the MCP tools and `git push` both work, and the
+MCP set has no tool for editing a comment once posted. **Both comments need
+deleting by hand.** Nothing else this pass produced carries it — the commits, the
+merge commit on main and this log are all clean.
+
+The gated `viewcontent.cgi` endpoint is unchanged, as is the 1993-94 to 2009-10
+gap in year photographs and the 431 legislation files with no author recorded.
+
 # 3 September 2026, midday — the senate roll was printing the same seat twice
 
 Nothing was open to merge. No pull request was open at 11:00 UTC, and the
