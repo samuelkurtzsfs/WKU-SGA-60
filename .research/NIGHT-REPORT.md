@@ -1,3 +1,131 @@
+# 4 September 2026, morning — the unreviewed pushes carried two faces that were not earned
+
+The queue is empty again: no open pull requests, and every `research-*` branch
+is behind `main` rather than ahead of it. The standing instruction to rescue
+pull requests #6, #7 and #8 is out of date — all three were closed on
+18 August, and the repository is at #345.
+
+So the review went where the risk actually was. Since the last editor pass two
+commits went straight to `main` without review, and unlike `38f0b4d` in the
+entry below, these were not harmless: `d645f43` and `7e2daf3` added **36 leader
+portraits** to `photos.json`. `main` deploys on merge, so all 36 were already
+public when this pass started.
+
+Thirty-four hold up. Two did not, and are withdrawn.
+
+## The two faces withdrawn
+
+**Todd Duncan, 1983-84.** The label credited "the Pi Kappa Alpha group
+photograph" on p. 265 of the 1986 *Talisman*. The volume's own index puts Pi
+Kappa Alpha on pages 36 and 364-365; p. 265 is Sigma Alpha Epsilon, whose
+feature the surrounding text is, quoting Tinsley on the chapter's pledges and
+its Balloon-A-Thon. The row arithmetic in the label is sound and the caption
+does end "Kenny Stiglects, Todd Duncan", so a Todd Duncan is certainly in the
+frame. What is missing is any link between him and student government: the 1986
+index carries no Todd Duncan at all, and the label admitted as much. That
+leaves a full name, three years after the Senate term it was attached to, doing
+all the work. It is the same failure as the 1983-84 Todd Wallace entry already
+in `_do-not-use.json`, where the obvious match was a different student.
+
+**Amanda K. Thurmond, 1994-95.** The whole of the identification was "1993
+*Talisman*, p. 188, Kappa Delta (cropped from a group photo)". No index line
+placing her on that page, and no statement of which figure in the group she is.
+The two comparable finds from the same sweep both cite an index entry pinning
+the person to the exact page — "Pepper, Daryl 19", "Cailles, Andrea 194" — and
+those are why they stand. This one cites nothing, so there is no way to check
+that the cropped face is hers, or that she is in the photograph at all.
+
+Both are recorded in `data/photo-finds/_do-not-use.json` with the reasoning, so
+a later run does not re-find them, and both image files are deleted rather than
+left orphaned: since #333 the build mirrors `data/photos` instead of adding to
+it, and the files are confirmed gone from `site/photos`.
+
+## What was checked and kept
+
+The 1986 *Talisman* full text settles two more of the same cluster, both in
+favour of the finder. **Jeff Key** is indexed "Key, Jeffrey Len 265" and the
+caption's rows run 6, 7 and 6 with Key fourth in the second row, exactly as
+claimed. **Drew DeLozier** is named outright in the same caption — "FRONT ROW:
+Billie Brown, Drew Delozer" — second of six, as claimed. The label's argument
+that the index entry "Delozier, Andrew Steven 295" must be an OCR misreading of
+265 was never needed and is probably wrong, since a senior grid running
+Cox-Enders is where a Delozier would alphabetically fall; but the caption names
+him in this frame, so the identification does not depend on it.
+
+One clause was **trimmed** from the Key label: it claimed Julius Irvin Key was
+the only other Key in the volume, and the index also carries Cynthia Lynn Key
+at 303. The identification is untouched — it rests on the index line and the
+row position, both confirmed.
+
+The three faculty-directory portraits were re-fetched and compared byte for
+byte against the URLs they cite: **Margaret Glaser**, **Ellen Henderson** and
+**Derek Collins** are identical to the files at `wku.edu/img_facstaff`, real
+JPEGs, correctly credited. The three WKU News sources behind **Ethan
+Huffaker**, **Will Hemenover** and **Arivumani Srivastava** are live and name
+their subjects. All 885 portrait files in the archive start with the JPEG or
+PNG magic bytes, and all 36 new names match a person recorded in that year in
+`years.json`.
+
+The 1982, 1992 and 1993 *Talisman* volumes are **not** on archive.org — only 19
+`talisman*west` items exist there — so the grid-position identifications for
+Jamie Nichols, Claire Groemling, Kelly Cook, Daryl Pepper and Andi Cailles
+could not be checked against the page images, which are behind the gated
+`viewcontent.cgi` endpoint. They are left standing: not being able to reach a
+page is not evidence against it, and each of those labels states reasoning a
+later run can check. Two `.txt` fetches came back HTTP 503 and saved the error
+page under the filename asked for, which is trap 7 exactly; both were caught by
+checking the size and deleted.
+
+## Lily Nellans and Lillian Nellans were one person filed as two
+
+`years.json` carried **Lily Nellans** as Senator in 2016-17 and 2017-18 and
+**Lillian Nellans** as Legislative Research chair in 2017-18, with no entry in
+`name-aliases.json` joining them. The new portrait was filed under the Lillian
+spelling, so the one face the archive has for her hung on the record that
+carried one of her three terms, and the site published her as two people. The
+Herald's own body text reads Lily Nellans. The alias is added in the direction
+the file's convention and the sources both point — `Lillian Nellans` maps to
+`Lily Nellans` — which is the same shape as the `William Derryberry` pair
+already there. Both spellings survive in the data, as the alias file intends;
+they now reach one page, `o/lily-nellans.html`.
+
+That also closes the item the previous entry left open about Derryberry: the
+pair is already registered, so no split remains there.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six standing pairs, unchanged and
+already judged: an introduction and a failure a week apart, a plan and an
+endorsement, a stated position and the vote that carried it, and three separate
+bills of 1 September 1991. No merges. This diff adds no events.
+
+`build.py` was also run three times over unchanged data and produced an
+identical `site/network.html` each time, so the generator is deterministic; the
+difference against the committed `site/` is only that the last direct push did
+not rebuild. Nothing reaches the public that way — Vercel's `buildCommand`
+regenerates `site/` from `data/` on deploy.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,818
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+41 people recorded under more than one name. 60 people have been president.
+997 leader portraits, down two.
+
+## Still open
+
+**The unreviewed direct push is now a demonstrated risk, not a theoretical
+one.** The entry below called `38f0b4d` harmless because it touched no
+published data. These two touched nothing but published data, and one face in
+eighteen did not hold. Everything that reaches `main` without review is live
+before anyone reads it.
+
+The gated `viewcontent.cgi` endpoint is unchanged, so Talisman page images
+outside the 19 volumes on archive.org cannot be checked at all. The 1993-94 to
+2009-10 gap in year photographs and the 431 legislation files with no recorded
+author both stand.
+
 # 4 September 2026, overnight — nothing to merge, and the guard holding
 
 The queue is empty for the fourth log running. The GitHub tools list no open
