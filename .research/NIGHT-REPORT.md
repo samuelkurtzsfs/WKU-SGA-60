@@ -1,3 +1,108 @@
+# 4 September 2026, night — twenty-nine citations put back on the wall
+
+One pull request open, #349, the rolling photograph one. It carried no new
+history at all: a single change to `scripts/merge_photo_finds.py`, nineteen
+lines. Nothing to spot-check against a source, because nothing was claimed.
+Checking the code instead turned out to be worth more than a decade sweep.
+
+## What the pull request said, and whether it was true
+
+The photograph routine reported that the merge tool's dry run wanted to
+"replace with a better frame" twenty-five portraits that were already
+published — including the batch whose reasoning #348 had put on the page that
+same afternoon — and that every one was the same photograph, same file, same
+url. It said the check for an already-enriched citation was comparing prose:
+it tested whether the finding's short filed label still appeared inside the
+citation, which it never can once an editor has written the identification
+reasoning into it.
+
+Against `main` as it stands, that dry run reports nothing at all. So the claim
+was checked where it was made, at `e135e90`, the commit the branch was cut
+from. There it reports exactly twenty-five. The diagnosis was right.
+
+## Why the number had already moved, which is the real finding
+
+It reported nothing today because the damage had already been done.
+
+`8b3347c3`, "2002-07 officers closed out", ran the merge tool with the broken
+check one commit after #348 published the reasoning behind twenty-five
+portraits, and wrote all twenty-five back down to the short labels the findings
+had been filed under. Reading the rest of `main` for the same signature found
+three more runs that did the same thing: `d645f434`, `0c0bee1b`, and
+`9f34b443`, which flattened twenty-one in a single commit.
+
+Twenty-nine leader portraits were carrying a citation far shorter than one
+already published for the same file and the same source url. Not one of those
+four commits mentions withdrawing a citation. Every one of them describes
+adding a face or closing out a year's officers. The reasoning went silently,
+as collateral, and it went to the live site each time.
+
+What went is not decoration. Karl Miller's citation had been reduced to a page
+number. What it said before, and says again, is that the 1991 *Talisman* group
+photograph holds nine people in two rows against nine names, that the back
+row's five read woman, woman, man, man, woman and the pictured row reads the
+same, which fixes the caption's direction, and that the facing text names him
+treasurer under the same officers the caption lists. That is the evidence for
+the face. Without it the page asserts an identification and shows no working.
+
+## What was done
+
+All twenty-nine restored from the longest version ever published for that same
+file and url, keeping whatever quality note — "only picture found", "cropped
+from a group photo" — the flattened label had picked up in the meantime. Then
+the two landed together in #349, because they only work as a pair: the fix
+alone leaves the site flattened, and the restoration alone gets undone by the
+next run of the tool.
+
+Proof they hold. With the twenty-nine back in place, the old check proposes to
+replace all twenty-nine again; the new one proposes none. The three
+withdrawal-register refusals are unaffected and no portrait is added or
+dropped.
+
+Nothing was cut. The one thing kept out of the merge was a rebuilt
+`site/network.html`, whose node coordinates differ on every build; that is
+layout churn, not a consequence of the change.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, all three
+re-run against `main` after the merge. `check_duplicates.py` reports the same
+six standing pairs, all pre-existing and all read again before being left
+alone: an announcement and the distribution that followed it, a bill introduced
+and the same bill failing after amendment, a lawsuit planned and then endorsed,
+a position taken and then legislated, and three separate bills filed on
+1 September 1991. Same-day legislative business is several events. Nothing
+merged.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,818
+people, 2,614 of those terms (98%) carrying an account of what the person did,
+41 people recorded under more than one name. 60 people have been president.
+
+## Still open
+
+The lesson for the photograph routine is not the bug, it is the habit that
+caught it: the run looked at what its own tool proposed instead of running
+`--write` on it. Any run that does call `--write` should diff `data/photos.json`
+afterwards and read what **shrank**, not only what was added. Four runs did
+not, and four runs did damage.
+
+Both dead ends this run re-walked — David Bass, Mark Chesnut, Vern Pulman,
+Chris Millay, Dwight Austin — were already written down in
+`SGA-60-AGENT-INFO.md` §8.3. Reading §8.3 first would have freed the session
+for §8.4's live leads. The gated `viewcontent.cgi` endpoint is unchanged, and
+so are the 1993-94 to 2009-10 gap in year photographs and the 442 officer
+records with no portrait.
+
+The attribution footer landed on the review comment on #349, the same way it
+landed on #337. Direct GitHub REST is refused in these containers while the
+MCP tools and `git push` both work, and the MCP set has no method that edits a
+comment, so it could not be stripped after posting. **It needs deleting by
+hand**, along with the one on #337.
+
+---
+
 # 4 September 2026, evening — the reasoning that never reached the page
 
 No pull request was open. #347 merged this afternoon, every `research-*` branch
