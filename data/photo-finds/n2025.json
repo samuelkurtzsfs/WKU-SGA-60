@@ -217,5 +217,21 @@
    "label": "College Heights Herald, 9 March 2025, Walk for Suicide Prevention on WKU's campus",
    "url": "https://wkuherald.com/wp-content/uploads/2025/03/030825_WalkForLife_GEM14.jpg"
   }
+ },
+ {
+  "year": "2021-22",
+  "name": "Jacob Skillman",
+  "file": "2021-22-jacob-skillman.jpg",
+  "replaces": null,
+  "width": 320,
+  "height": 400,
+  "quality": "small",
+  "why": "The only Herald photograph that names him. A cross-country practice frame, cropped to him alone; the face is a small three-quarter view mid-stride but it is sharp and lit, and nothing else exists.",
+  "caption_quote": "(left) sophomore Anthony Sweet and (right) sophomore Jacob Skillman practicing",
+  "id_note": "Two runners in the frame and the Herald's own record for the photograph positions them, Sweet left and Skillman right, so the right-hand runner in the long-sleeved shirt is Skillman. That positional wording is carried in the Herald's stored caption for the image, not in the shorter caption printed under it in the article, and it is also the slug of the Herald's own attachment URL for the file. Proved to be the SGA Jacob Skillman from the Herald's own reporting rather than from the name alone: its C-USA academic honours lists of 7 and 8 May 2020 put both Jacob Skillman and Zach Skillman on WKU men's cross country, its report of 15 September 2021 names Jacob Skillman among the senate members sworn in that night, and its profile of 23 September 2021 calls Senator Jacob Skillman a junior, which makes him a sophomore in October 2020 exactly as this caption does.",
+  "src": {
+   "label": "College Heights Herald, 15 October 2020, WKU cross-country practice at the Charles M. Ruter Track and Field Complex",
+   "url": "https://wkuherald.com/wp-content/uploads/2020/10/9489d8de5416cde8d811ef791024fd58.jpg"
+  }
  }
 ]
