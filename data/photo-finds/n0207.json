@@ -647,5 +647,38 @@
    "label": "College Heights Herald 86:27, 10 December 2010, printed p. 7",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6262"
   }
+ },
+ {
+  "name": "Jacob Riggs",
+  "year": "2005-06",
+  "file": "2005-06-jacob-riggs.jpg",
+  "replaces": null,
+  "width": 222,
+  "height": 333,
+  "quality": "group crop",
+  "why": "A sharp working photograph cropped from a four-person crew shot, the only picture of him in the archive. Sunglasses hide his eyes but the face is clear and unmistakable, and the crop is at the scan native resolution.",
+  "caption_quote": "The rowers in the coed race are (front to back) Upton senior Jacob Riggs",
+  "how_identified": "The caption gives a positional key, front to back, and names four rowers in order: Riggs, Benjamin Webster, Erica Rigney, Kelly Stolt. The Western canoe holds four, two men then two women reading left to right, which is the order and the genders the caption gives, and the rowers face left, so the bow and therefore the front of the boat is on the left. Riggs is the leftmost figure. The University of Cincinnati boat named in the caption is the other one, further back.",
+  "also": "He is filed to 2005-06 because that is his year in the archive; the photograph itself was taken in April 2009, when the Herald calls him an Upton senior, which fits a student who entered in 2005.",
+  "src": {
+   "label": "College Heights Herald 84:43, 7 April 2009, p. 1; photograph by Jacob Hill",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6751"
+  }
+ },
+ {
+  "name": "Ashley Bishop",
+  "year": "2002-03",
+  "file": "2002-03-ashley-bishop.jpg",
+  "replaces": null,
+  "width": 283,
+  "height": 397,
+  "quality": "group crop",
+  "why": "A warm, sharply focused, smiling face, cropped from a two-person news photograph taken in the middle of her own year in office. It is the only picture of her in the archive.",
+  "caption_quote": "Louisville freshman Ashley Bishop gives Danielle Taylor a ride on her wheelchair",
+  "how_identified": "The caption names two women. Bishop is the one giving the ride, so she is the one driving the chair, and only one figure in the frame is doing that: the woman in the foreground with her hand on the handrim. The rest of the caption settles it, because Taylor is quoted saying Slow down as the two zipped down the sidewalk, which is the passenger speaking, not the driver. Taylor is the figure leaning over Bishop from behind and is cropped out.",
+  "src": {
+   "label": "College Heights Herald, 14 November 2002, p. 3 (Vol. 78, No. 24); photograph by Samuel M. Simpkins",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9250"
+  }
  }
 ]
