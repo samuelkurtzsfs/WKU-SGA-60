@@ -109,3 +109,4 @@ opened #347 as its replacement and pushed this branch there. Left open:
 several hundred executive/Senate officer records still without a portrait
 (none currently sitting ready in the worklists) and the 12 years without a
 year photograph named in `SGA-60-AGENT-INFO.md` §8.4.
+- **2026-09-04 09:35** — holding at **1,046 portraits, 952/1861 with a face, 909 none, 248 officers without one**. Nothing new landed; the one surviving agent is still working the 2020-26 officers and has not dropped since its last batch. Same 5 known refusals. Not launching a second while it runs. (1 quiet cycles, one agent working)
