@@ -278,5 +278,39 @@
    "label": "web.archive.org CDX for wku.edu/sga",
    "url": "https://www.wku.edu/sga/executive/index.php"
   }
+ },
+ {
+  "kind": "source found, the best one in this era",
+  "name": "2016 Talisman: Life More Life",
+  "year": "2009-10 to 2015-16",
+  "detail": "dlsc_ua_records/8677 is the only Talisman of the 2010s with a complete portrait section, and it produced six of nine finds on the n0813 block. Printed pp. 234-257 seniors, 258-295 underclassmen, 296-299 graduate students, 300-305 faculty and staff, and a full back index at 344-352 that names every person in the book with page numbers, so grep the index before anything else. Layout throughout: square studio portraits three or four to a row, that row's names set in the outer margin in ONE COLUMN top to bottom against left to right, names alphabetical down the page. Always verify by counting sexes in a neighbouring row of the same spread. Do not skip the faculty and staff grid when hunting former students: Elizabeth McGrew, WKU's coordinator of resource conservation by 2015, and Catherine Havel are both in it."
+ },
+ {
+  "topic": "WAYBACK: PARALLEL RANGE REQUESTS BEAT A SINGLE STREAM BY TWO ORDERS OF MAGNITUDE",
+  "note": "The 2016 Talisman is 755,645,090 bytes and a single curl was pulling it at about 30 KB/s after an hour of sustained use, which would have taken another hour. web.archive.org honours HTTP Range on these files. Ask for one byte with -r 0-0 -D - and the response carries content-range: bytes 0-0/755645090, which gives you the true size; then split the remainder into four ranges and fetch them in parallel with curl -r a-b. The last 111 MB came down in about two minutes, exact byte counts, and concatenating them onto the truncated file produced a PDF that opens cleanly. Use this for any Talisman; four ranges is within the concurrency ceiling."
+ },
+ {
+  "topic": "THE 2016 TALISMAN IS THE PORTRAIT BOOK FOR 2008-2016",
+  "note": "dlsc_ua_records/8677. Complete seniors, underclassmen, graduate students and faculty-and-staff grids with a full back index — the portrait book this era was missing. It gave six of nine grid finds in one run. DO NOT SKIP THE STAFF GRID when hunting former students: Elizabeth McGrew was found there because she had become WKU's coordinator of resource conservation. Grids key four portraits to a row against four margin names, alphabetical, top to bottom against left to right."
+ },
+ {
+  "topic": "THE 2015 TALISMAN SCAN IS DEFECTIVE",
+  "note": "Printed pages 268-313, the entire student portraits section, are absent from the scan. Its own back index puts Tyler Scaff at p. 290, which makes that the single highest-value missing page in this archive. Do not keep re-deriving that the section is missing."
+ },
+ {
+  "topic": "HERALD CAPTION INDEX 2010-2016",
+  "note": "~/Desktop/SGA60 photo hunt/_herald-index-2010-2016/, 46 MB. Every digitised print Herald 2010-2016, 376 of 378 issues: full page text plus one row per embedded photograph with its xref, native size, rectangle, and the text below, right of AND ABOVE it. Over 29,000 photographs. The `above` field matters: the Herald sets mugshot labels above the frame as often as below, and an index that only looks below misses half of them."
+ },
+ {
+  "topic": "WAYBACK MECHANICS",
+  "note": "About four concurrent connections is the ceiling; a fifth fails in a way that looks like a missing snapshot rather than a refused connection, so it is easy to misread as 'not archived'. Parallel HTTP Range requests beat a single stream by two orders of magnitude on the large Talismans: the last 111 MB of a 755 MB file came down in two minutes."
+ },
+ {
+  "topic": "SGA ELECTION ADVERTISEMENTS HAVE INVERTED IMAGE DECODE",
+  "note": "The embedded images in the Herald's SGA election advertisements carry an inverted decode array, so PyMuPDF's extract_image() returns a photographic negative. Render the page clipped to the image rectangle instead. Two officer portraits came out of one such advert."
+ },
+ {
+  "topic": "wku.edu/sga ON WAYBACK IS EXHAUSTED FOR 2009-2016",
+  "note": "1,592 captures walked; not one member headshot anywhere in 2009-2016. The headshot directories that do serve files are a different path and belong to other years."
  }
 ]
