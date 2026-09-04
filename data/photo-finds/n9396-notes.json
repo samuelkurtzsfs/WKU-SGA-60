@@ -7,5 +7,23 @@
    "label": "1994 Talisman, p. 70, Sigma Nu portraits; indexed \"Vanderpool, Dave, 70\"",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
   }
+ },
+ {
+  "name": "Edward \"Eddie\" Myers",
+  "year": "1994-95",
+  "fact": "NO USABLE FACE. The 1993 Talisman index reads \"Myers, Edward 204\" and that is his only appearance in either digitised volume (the 1994 volume names no Myers at all). Page 204 is the Student Government Association group photograph. It cannot be read positionally. The caption prints rows of six, eight and seven, twenty-one people; the printed FIRST row of six resolves perfectly, the figures running man, woman, man, woman, man, woman exactly as Donnie Miller, Jennifer Raffaelli, Jeremy Sublett, Susan Mitchell, Joe Rains, Cindy Hayes do. The other two rows do not. The group stands staggered on risers in four or five height bands rather than three, the topmost band holds eight figures where the printed third row has seven, and two of those eight are women where the third row's names are six men and Kibby Rose. An older grey-haired man stands in the middle of the top band who is very likely a faculty adviser and is not in the caption at all. Myers is first in the printed third row, so a mis-set row costs the identification outright. Two earlier researchers measured this same photograph independently and both put the faces at about eighteen pixels; measured again at native resolution here, the page is 864 pixels wide, the photograph 388 pixels wide, and a face runs about thirty pixels. No crop was cut.",
+  "src": {
+   "label": "1993 Talisman, p. 204, Student Government Association; indexed \"Myers, Edward 204\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+  }
+ },
+ {
+  "name": "Horace Johnson",
+  "year": "1995-96",
+  "fact": "CONFIRMS THE STANDING REFUSAL, from a second and independent source. _do-not-use.json refuses every Herald photograph of a Horace Johnson on the ground that the paper's Horace Johnson is the campus police chief. The 1993 Talisman settles it the same way: its back index carries exactly one entry, \"Johnson, Horace Jr. 78\", and p. 78 is a FACULTY AND STAFF portrait page where the line beside the portrait reads Horace Johnson Jr., Public Safety Director. There is no student of that name anywhere in the 1993 or 1994 volume. So a portrait of a Horace Johnson does exist and is easy to find, and it is the wrong man. Do not file it.",
+  "src": {
+   "label": "1993 Talisman, p. 78, Faculty & Staff; indexed \"Johnson, Horace Jr. 78\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+  }
  }
 ]

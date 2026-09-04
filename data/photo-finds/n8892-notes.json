@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Joe Leffert",
+  "year": "1989-90",
+  "kind": "found and refused",
+  "fact": "The 1989 Talisman photographs him. Printed p. 91 carries a Phonathon picture whose caption names two people: 'Big Red encourages Nashville, Tenn. senior Alyson Hyatt and Madison, Ind. junior Joe Leffert to bring in more money during the Phonathon. $96,215 was raised, topping the $60,000 goal.' Two figures are at the phones. The left one is plainly a woman and would be Hyatt on the usual left-to-right reading; the right one, in glasses, would be Leffert. It is not used, for two reasons: the caption carries no position word, so which figure is which rests on convention alone, and the right-hand face is a blurred three-quarter profile about 90 pixels across with a telephone handset across the jaw. A misidentified face is worse than no face. A later pass with a better scan of this page could revisit it.",
+  "src": {
+   "label": "1989 Talisman, p. 91, Phonathon",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413/"
+  }
+ },
+ {
+  "name": "Cory Hollon",
+  "year": "1992-93",
+  "kind": "sourced fact, no photograph",
+  "fact": "Named in the 1992 Talisman on the Organizations divider, printed p. 153, as a freshman from Evansville, Indiana, and quoted about the debate team. The spread is a photograph of the Garrett Conference Center steps with three student quotations set over it; it carries no portrait of any of the three. This is the only appearance of his name anywhere in the 1989 to 1993 volumes.",
+  "src": {
+   "label": "1992 Talisman, p. 153, Organizations divider",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416/"
+  }
+ },
+ {
+  "name": "Amy McLoud",
+  "year": "1988-89",
+  "kind": "probable duplicate person, flagged not merged",
+  "fact": "The 1989 Talisman freshman grid, printed p. 147, prints 'Amy McCloud, Hendersonville, Tenn.' and the archive already publishes that face at 1989-90 under the spelling Amy McCloud. The archive holds Amy McLoud (1988-89, on-campus representative) and Amy McCloud (1989-90) as two rows one year apart, and there is only one Amy McCloud in the volume. Almost certainly one woman. No second copy of the face was cut, because the archive's rule is to flag rather than merge and because the Lodmell twins are the standing warning against merging on name similarity. If the editor merges the rows, the existing crop covers both.",
+  "src": {
+   "label": "1989 Talisman, p. 147, freshman portraits; data/photos/1989-90-amy-mccloud.jpg",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413/"
+  }
+ },
+ {
+  "name": "Mary Sue Bunce",
+  "year": "1990-91",
+  "kind": "probable duplicate person, flagged not merged",
+  "fact": "The only Bunce in any of the five volumes is 'Mary S. Bunce, Corp. Comm., Louisville', 1991 Talisman senior grid p. 88, row 4 cell 3, and that face is already published in this block at 1991-92 under the name Mary Susan Bunce. The 1990-91 row named Mary Sue Bunce is almost certainly the same woman. A predecessor on this block considered the point and deliberately filed the crop to one row only; that decision is left standing rather than re-argued.",
+  "src": {
+   "label": "1991 Talisman, p. 88, senior portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/415/"
+  }
+ },
+ {
+  "name": "Eric Elliot",
+  "year": "1989-90",
+  "kind": "probable duplicate person, flagged not merged",
+  "fact": "The 1990 Talisman underclassmen grid, printed p. 112, prints 'Eric Elliott, (Jr.) Somerset'. That exact cell is already published in this block at 1988-89 under the spelling Eric Elliott. The archive carries Eric Elliot (1989-90) and Eric Elliott (1988-89) as two rows. There is only one Eric Elliott in the volume, so they are the same man. No second copy cut.",
+  "src": {
+   "label": "1990 Talisman, p. 112, underclassmen portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414/"
+  }
+ },
+ {
+  "name": "Kelly Elliot",
+  "year": "1989-90",
+  "kind": "probable duplicate person, flagged not merged",
+  "fact": "The 1990 Talisman underclassmen grid, printed p. 112, prints 'Kelly Elliott, (Fr.) Bowling Green', a year earlier than the 1991 sophomore portrait already published in this block at 1990-91 as Kelly Elliott. It is a second, different photograph of the same woman, one year younger. It was not cut, because the identification of the 1989-90 row 'Kelly Elliot' as the same person is exactly the merge a predecessor on this block declined to make. If the editor accepts the merge, the 1990 volume holds a usable second frame at p. 112.",
+  "src": {
+   "label": "1990 Talisman, p. 112, underclassmen portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414/"
+  }
+ }
+]

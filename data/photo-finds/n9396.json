@@ -313,5 +313,20 @@
   },
   "width": 52,
   "height": 65
+ },
+ {
+  "year": "1997-98",
+  "name": "Laura Hancock",
+  "file": "1997-98-laura-hancock.jpg",
+  "replaces": null,
+  "quality": "small",
+  "why": "A labelled campaign mugshot from the Herald's 1998 SGA vice-presidential race panel. Head-and-shoulders, front-facing, in focus and smiling at the camera; small only because the scanned page is 2182 pixels wide and the printed frame is about 184 pixels of it. The page sets two candidates side by side, each one's data block immediately to the LEFT of that candidate's photograph: the first block reads Laura Hancock, Morganfield, Ky., Sophomore, Chemistry and is followed by this woman's portrait, and the second reads Chad Lewis, Scottsburg, Ind., Junior, Accounting and is followed by a man's. The article text confirms the pairing twice over: it calls Hancock a Morganfield sophomore majoring in chemistry running for vice president, and Lewis a junior from Scottsburg, Ind., majoring in accounting. The archive already publishes the Chad Lewis crop from this same panel, cut by an earlier pass that read the layout the same way and did not take Hancock. Filed to 1997-98 because that is the academic year the photograph was taken in and it is one of her recorded years; she was still a Congress member then and became Campus Improvements chair in 1998-99.",
+  "caption_quote": "Name: Laura Hancock Hometown: Morganfield, Ky. Class: Sophomore Major: Chemistry",
+  "src": {
+   "label": "College Heights Herald 73:50, 16 April 1998, p. 3, \"Race for SGA vice presidency heats up\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7980"
+  },
+  "width": 184,
+  "height": 260
  }
 ]
