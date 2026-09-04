@@ -88,13 +88,21 @@ Swept the `1966-1970` through `2001-2005` officer worklists against the
 current `photos.json` rather than trusting their own "remaining" framing (a
 field-name mismatch had been inflating apparent gaps in the officers-list
 format used elsewhere in `photo-finds/`): all but two candidates in those
-blocks were already merged in by the fleet above. The two left: Carmen Ann
-Willoughby (1966-67 secretary, image already staged on disk, never attached —
-same fix line 9 above records as already done on 1 Sep and evidently lost in
-a merge since) and Jamil Sewell, whose portrait was attached to the wrong
-year (2000-01, his campaign year, instead of 2001-02, the year the archive's
-own organization record confirms him in office). Both fixed; `photos.json`
-now carries 1,047 leader portraits. `build.py` and `check_data.py` clean.
+blocks were already merged in by the fleet above. Two were flagged as left.
+The first, Carmen Ann Willoughby (1966-67 secretary), was a false positive:
+her portrait had already been attached on `main` under exactly that name, so
+the entry added here was a second copy of it and was cut on review. The
+worklist's own name field is now the fuller "Carmen Ann Willoughby", which is
+what `photos.json` and the executive roster carry, so a later pass does not
+re-flag her. The second was real: Jamil Sewell, whose portrait was attached
+to the wrong year (2000-01, his campaign year, instead of 2001-02, the year
+the archive's own organization record confirms him in office). Fixed;
+`photos.json` still carries 1,046 leader portraits, no net gain this pass.
+
+The lesson for the next run: check the current `photos.json` for the
+candidate's year and name — after `name-aliases.json` — before adding, not
+just the worklist. A merge from `main` will not dedupe an entry the branch is
+about to add.
 
 PR #6 had been closed since 18 August with nothing reopened behind it;
 opened #347 as its replacement and pushed this branch there. Left open:
