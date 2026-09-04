@@ -216,6 +216,28 @@ def check_photos(ys):
         elif (who, when) not in live:
             bad(f"photos.json puts {who!r} in {when}, where the archive does not "
                 f"have them; the portrait will not attach")
+    # The same name in the same year twice. The build renders such a pair once,
+    # so nothing shows on the site, which is exactly why it goes unnoticed: what
+    # it corrupts is the count of how many portraits the archive holds, and a
+    # run that trusts that count reports progress it did not make. It happens
+    # when a research branch adds a portrait that has already landed on main by
+    # another route: merging main in does not dedupe an entry the branch is
+    # about to write. Caught by hand on 4 September, when
+    # a second copy of Carmen Ann Willoughby's 1966-67 portrait reached a pull
+    # request. Compared on the exact name and not through name-aliases.json,
+    # because one image deliberately carries an entry under each name form the
+    # archive uses for the person — Jim Haynes and James P. Haynes both need one
+    # in 1966-67 or the portrait detaches from the roster or from the year page.
+    seen = {}
+    for e in overlay.get("leaders", []):
+        key = (e.get("name"), e.get("year"))
+        if key in seen:
+            bad(f"photos.json attaches two portraits to {key[0]!r} in {key[1]} "
+                f"({seen[key]} and {e.get('file')}). One name, one year, one "
+                f"entry: check photos.json for the year and name before adding, "
+                f"not just the worklist")
+        seen[key] = e.get("file")
+
     # The Spirit Masters scrapbooks are catalogued UA12/2/16. UA68 is SGA's own
     # record group, and portrait passes have written it over the correction
     # three times now (settled 3 September, put back by a rebuild, restored,

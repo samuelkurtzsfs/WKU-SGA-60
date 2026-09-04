@@ -1,3 +1,119 @@
+# 4 September 2026, afternoon — a portrait counted twice, and the count that believed it
+
+One pull request open, #347, "Research: photographs (rolling)", pushed this
+morning by the photograph routine and small: five files outside `site/`, 43
+lines added, 8 removed. It carried two claims. One was right, one was a
+duplicate of something already published, and the interesting part is why
+nothing caught it.
+
+## What was in it
+
+**Jamil Sewell's portrait, moved from 2000-01 to 2001-02.** This is correct and
+it is the pull request's real contribution. The portrait comes from the *Herald*
+of 10 April 2001, and the routine had filed it under the year it was printed in
+rather than the year it belongs to. Trap five: SGA elects in the spring and the
+winner serves the following year. The article's own title says so —
+"New Student Government Association Vice Presidents Prepare for Next Semester",
+Erica Walsh, *Herald* 76:50, and the local index carries it in full with both
+names, Sewell and Spencer, so it did not cost TopSCHOLAR a request to confirm.
+
+The archive's own mirrored minutes settle where he actually served. The text of
+`2001-02-minutes-2001-08-28.pdf`, the 28 August 2001 Congress meeting, runs the
+officer reports in order and names "Vice President of Administration Jamil
+Sewell" among them. Against that, the 2000-01 record has him only as a Congress
+award nominee, with membership marked "not independently confirmed". The
+portrait was attached to the year he was not confirmed in and is now attached to
+the year he was. The file was renamed with it and is a clean rename — same
+checksum, a valid JPEG at 141x224, and the old filename is gone.
+
+**Carmen Ann Willoughby's portrait, added to 1966-67.** Cut. `main` already had
+it, under exactly that name and pointing at exactly that file. The pull request
+described the image as "never attached in `photos.json`", which was true when
+the routine started and stopped being true while it worked; the branch merged
+`main` in and deduped five other rejoined leader portraits, but a merge cannot
+dedupe an entry the branch has not written yet.
+
+## Why nothing caught it
+
+`build.py` renders such a pair once. Rebuilding with the duplicate present and
+with it removed produces a byte-identical `site/`, and her portrait appears once
+on each of the five pages that carry it. So nothing wrong would have reached a
+reader, and there was no visible symptom to notice.
+
+What it corrupted was the count. The run's own log recorded "`photos.json` now
+carries 1,047 leader portraits", up one on `main`'s 1,046, and reported two
+portraits recovered. The true figure is 1,046 and the true recovery is one: the
+second entry was the first entry again. A routine that measures its progress by
+that number will keep reporting gains it has not made, which is the failure mode
+worth fixing rather than the duplicate itself.
+
+So `check_data.py` now refuses a second entry for the same name in the same
+year. It is compared on the exact name and deliberately not through
+`name-aliases.json`: one image legitimately carries an entry under each name
+form the archive uses for a person — Jim Haynes and James P. Haynes both need
+one in 1966-67 or the portrait detaches — and an alias-aware version of this
+check flags seven such pairs on `main` that are all correct. The narrow check
+passes on the corrected data and catches the entry that got through.
+
+## What was cut, and what was corrected
+
+- The duplicate `photos.json` entry for Carmen Ann Willoughby, 1966-67. `main`'s
+  copy stands untouched; it carries the fuller identification reasoning and two
+  sibling entries cross-reference it.
+- The cut entry quoted the *Talisman* caption verbatim. That quotation was not
+  kept. The 1967 volume is not among the nineteen on archive.org, so it could
+  not be read; TopSCHOLAR record 382 confirms the volume and page range
+  ("UA12/2/2 1967 Talisman pt. 1", pp. 1-187) but not the caption. An
+  unverifiable quotation does not go on the site, and this branch's own history
+  includes withdrawing an invented one.
+- The run log's account of both fixes, which recorded the Willoughby entry as
+  lost in a merge and claimed 1,047 portraits. Rewritten to what happened, with
+  the check-before-adding lesson left where the next run will read it.
+
+The worklist rename of "Carmen Willoughby" to "Carmen Ann Willoughby" was kept.
+It is the form `photos.json` and the 1966-67 executive roster both use, and
+`name-aliases.json` already reconciles the two, so it stops a later pass
+re-flagging her.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` both exit 0, the latter
+across all 26 of its cases. `check_duplicates.py` reports the same six pairs as
+the last three passes and they are still not duplicates: the four spread over
+weeks are legislative sequences — a bill introduced and a bill failing, a
+lawsuit planned and a lawsuit endorsed, an objection raised and legislation
+passed — and the two dated 1 September 1991 are three separate bills of one
+evening, which is exactly the case CLAUDE.md says stays three entries. This
+pull request added no events.
+
+Merged.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,818
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+41 people recorded under more than one name. 60 people have been president.
+`photos.json` holds 1,046 leader portraits and 61 year photographs, and all 61
+years carry both.
+
+## Still open
+
+The entry above this one recorded 2,691 terms held by 1,819 people. This build
+reports 2,654 and 1,818. The difference is on `main` and not in this pull
+request, and it was not traced. `212536c`, "Officer lists rebuilt off the
+current count", is the commit to look at first.
+
+Two pairs in `photos.json` attach **two different image files** to one person in
+one year: Steve Fuller and Steven Fuller in 1980-81, and Cherieth L. Lineweaver
+and Cherieth Lea Lineweaver in 2006-07. Both name forms are real and aliased, so
+these are not the duplicate the new check catches — they are two photographs
+where the other five same-image pairs have one. Left alone rather than fixed
+blind; it needs somebody to look at the two images and say whether both are the
+person.
+
+The 2025-26 "Will Derryberry" / "William Derryberry" pair from the last entry is
+unchanged and still needs the same source check.
+
 # 4 September 2026, morning — the unreviewed pushes carried two faces that were not earned
 
 The queue is empty again: no open pull requests, and every `research-*` branch
