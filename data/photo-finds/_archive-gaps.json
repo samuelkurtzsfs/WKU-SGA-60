@@ -240,5 +240,43 @@
  {
   "topic": "SPIRIT MASTERS OF THE MONTH ADVERTISEMENTS, A LIVE LEAD",
   "note": "The Herald ran a Spirit Masters of the Month advertisement monthly through 2002-2005 carrying studio portraits with the name printed beneath. Two portraits have already come from them. The text layer over these adverts is unreliable, so they have to be found by eye, page by page. Still unworked for most months."
+ },
+ {
+  "topic": "HERALD CAPTION INDEX 2010-2016, BUILT 4 SEPTEMBER 2026",
+  "note": "The companion this archive was missing. ~/Desktop/SGA60 photo hunt/_herald-index-2010-2016/ now holds, for every digitised print Herald from 2010 to 2016 that the Internet Archive will serve, the full text of every page (herald_text*.jsonl) and one row per embedded photograph (photo_captions*.jsonl) carrying its xref, its native pixel size, its rectangle on the page, and the text immediately BELOW it, to its RIGHT and ABOVE it. That is over 27,000 photographs. Grep it before fetching anything for these years; it is the direct equivalent of _herald-index-2002-2009 and it is what turned up the Kat Johns vox-pop mugshot. The 'above' field is new and matters: the Herald sets a lot of its mugshot labels above the frame, not below. Note two shapes of false positive it will hand you: full-column advertisements whose neighbouring text is the story beside them, and sidebar boxes of names set as images."
+ },
+ {
+  "topic": "THE WAYBACK ROUTE HAS A CONCURRENCY CEILING",
+  "note": "web.archive.org serves these PDFs at roughly 0.5 to 1 MB/s per connection and will accept about four connections from one address. A fifth gets 'Failed to connect to web.archive.org port 80' rather than an HTTP error, and a harvester that treats that as a missing snapshot will silently skip real issues. Run three or four workers, never more; give curl --connect-timeout 25 --speed-time 25 --speed-limit 20000; and on curl exit codes 7, 28, 35, 52 or 56 back off twenty seconds and retry the SAME url rather than falling through to the /context/.../type/native/viewcontent form, which costs another timeout. Never mark an issue done on a failed fetch. Sustained pulling for an hour or two visibly slows the whole thing down, so plan the run long rather than wide."
+ },
+ {
+  "kind": "defective scan",
+  "name": "2015 Talisman, printed pages 268-313",
+  "year": "2014-15",
+  "detail": "TopSCHOLAR's scan of the 2015 Talisman: Resurgence (dlsc_ua_records/8679) has no student PORTRAITS section. Folios run to 267 on PDF page 138 and resume at 314-315 on PDF page 140; nothing in the file carries a folio between. The volume's own back index, which IS present, indexes people into that range, so the pages exist in print: Scaff Tyler 290, Smith Sherry 291, Spalding Shelley 292, Wilkins Hayley 295, Havel Catherine 279. There is no Part II; 8677 and 8678 are the two 2016 issues. Page 290 carries the only known portrait of Tyler Scaff, Campus Improvements chair 2013-14 and 2014-15.",
+  "src": {
+   "label": "2015 Talisman: Resurgence, UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8679"
+  }
+ },
+ {
+  "kind": "source found",
+  "name": "SGA's own election advertisements in the Herald",
+  "year": "2008-09",
+  "detail": "SGA bought full pages in the Herald at election time and they are the best portrait source in the 2008-2010 window, because they are one name to one face with the name set in large type beside the photograph. The page of 9 April 2009 (Herald 84:44, p. 12, dlsc_ua_records/6750) gave up Benjamin Lineweaver and Brittany-Ann Wick and also carries Kayla Shelton, Kevin Smiley, Reginald Lane, Justin Thurman and Kendrick Bryan. IMPORTANT MECHANICAL NOTE: the embedded images on these press-ready pages have an inverted decode array, so extract_image() returns a photographic negative. Do not publish that. Render the page clipped to the image rectangle at a matrix chosen to match the image's native pixel width and the tones come out right. A sweep of the whole 2005-2009 caption index for all-caps personal names found no second advertisement of this kind, so this one page is the whole seam.",
+  "src": {
+   "label": "College Heights Herald 84:44, 9 April 2009, p. 12",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6750"
+  }
+ },
+ {
+  "kind": "source exhausted",
+  "name": "wku.edu/sga on the Wayback Machine, 2009-2016",
+  "year": "2008-09 to 2015-16",
+  "detail": "Checked directly rather than assumed. The CDX list for wku.edu/sga returns 1,592 captures, and no page of the SGA site between 2009 and 2016 carries a member headshot of any kind. index.php?page=executive (Nov 2009) and ?page=judicial, and the 2012 rebuild's /sga/executive/, /sga/judicial/ and /sga/legislative/, all carry one image apiece and it is the university's own banner. The only student photographs anywhere under /sga/images/ are event pictures: fall13/boka-porter.jpg, fall13/sen_retreat1.jpg, senateretreat111.jpg, rally.jpg, jaytodd.jpg. Worth recording for a later block: a fourth headshot naming scheme exists that the earlier note did not have, wku.edu/sga/2022-2023-executive/exec_headshots/surname_firstname_headshot.jpg, e.g. bornefeld_cole_headshot.jpg and reed_donte_steven_headshot.jpg, both live at 200.",
+  "src": {
+   "label": "web.archive.org CDX for wku.edu/sga",
+   "url": "https://www.wku.edu/sga/executive/index.php"
+  }
  }
 ]

@@ -243,8 +243,8 @@
   "name": "Taylor Ruby",
   "file": "2012-13-taylor-ruby.jpg",
   "replaces": null,
-  "width": 434,
-  "height": 579,
+  "width": 435,
+  "height": 580,
   "why": "His own studio portrait from the university yearbook, front on, evenly lit, eyes open, smiling. Taken in the autumn after his year as a freshman senator, which is the earliest portrait of him that exists: no Talisman was published while he was a freshman. Extracted at the printed image's native resolution; not upscaled.",
   "caption_quote": "Taylor Ruby",
   "identification": "The underclassmen grid prints four portraits to a row with the row's four names set beside it in one column, top to bottom against left to right. Ruby is the third name of the third row on p. 308, so his is the third portrait, at x 445-549. The pairing is checked rather than assumed: the row reads Barrett Rogers, Kelly Rosen, Taylor Ruby, Eric Saasita against man, woman, man, man, and both the names and the portraits run in strict alphabetical order, so a shift of one place would break both checks. That this is the senator: the Herald of 15 April 2014 photographs 'Somerset sophomore Taylor Ruby' of Phi Gamma Delta, a sophomore in the same academic year as this book, and the whole yearbook holds one Taylor Ruby.",
@@ -259,7 +259,7 @@
   "name": "Tori Conyers",
   "file": "2011-12-tori-conyers.jpg",
   "replaces": null,
-  "width": 434,
+  "width": 435,
   "height": 579,
   "why": "Her own studio portrait from the university yearbook: front on, evenly lit, eyes open, smiling. The earliest portrait of her that exists, since no Talisman was published in the year she sat in the Senate. Extracted at the printed image's native resolution; not upscaled.",
   "caption_quote": "Tori Conyers",
@@ -317,5 +317,37 @@
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6750"
   },
   "quality": "good"
+ },
+ {
+  "year": "2009-10",
+  "name": "Kat Johns",
+  "file": "2009-10-kat-johns.jpg",
+  "replaces": null,
+  "width": 163,
+  "height": 251,
+  "why": "A front-on studio-style mugshot cut for the Herald's own vox pop column, evenly lit, eyes open, smiling. It is the only photograph of her in any WKU source. Small because that is the printed size; rendered at the embedded image's native resolution and not upscaled.",
+  "caption_quote": "KAT JOHNS, Bowling Green sophomore",
+  "identification": "The 'So who do you follow?' column on p. 12 of the Herald of 3 November 2009 runs three students down the left margin, each as one block: a mugshot at x 27-85 with the student's answer set beside it at x 99 and the student's name in bold at the foot of that answer. The three blocks do not overlap vertically. Johns's name sits at y 542, inside the band of the top photograph (y 481-571); the second photograph's band (y 579-669) carries Liz Floore's answer and name, the third (y 677-767) Danielle Tosti's. One photograph, one answer, one name, three times over. That this is the SGA senator: the whole digitised Herald back file holds exactly one Kat Johns, a Bowling Green freshman in February and March 2009 who chaired the academic affairs committee and co-wrote the study-abroad scholarship bill, and a Bowling Green sophomore here eight months later. Her answer names her sorority sisters, and the Kappa Delta new-member advertisement of 4 September 2009 lists Kat Johns.",
+  "src": {
+   "label": "College Heights Herald 85:16, 3 November 2009, p. 12, 'So who do you follow?' (WKU Archives UA12/2/1)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6244"
+  },
+  "quality": "small"
+ },
+ {
+  "year": "2013-14",
+  "name": "Laura Harper",
+  "file": "2013-14-laura-harper.jpg",
+  "replaces": null,
+  "width": 134,
+  "height": 173,
+  "why": "The only photograph of her in any WKU source. A group crop, front on, eyes open, smiling, evenly lit studio light. Cut at the printed image's native resolution and not upscaled, which is why it is small.",
+  "caption_quote": "Row 2: Sarah Stout, Laura Harper, Brent Shinkle, Ebony Lee, Macy Lethco",
+  "identification": "The 2015 Talisman's club section prints each group photograph with a numbered row key beside it. The Revolution 91.7 photograph on p. 328 is keyed Row 1: four names, Row 2: five names, Row 3: six names. The picture holds exactly four people in the front row, five in the middle and six at the back, so Row 1 is the front and the counts fix the rows before anything else is assumed. The sexes then confirm each row independently: Row 1 reads Taylor Hodgkins, Diamond Darling, Angela Conway, Ford Parson against three women and, last, one man; Row 2 reads Sarah Stout, Laura Harper, Brent Shinkle, Ebony Lee, Macy Lethco against woman, woman, man, woman, woman; Row 3 reads David Hormell, Jeris Johnson, Cameron Coats, Michael Bowlds, Madison Martin, Ben Potts against five men with the one woman fifth. All three rows line up, so Harper is the second face from the left of the middle row, the woman with red hair. That this is the SGA officer and not a namesake: the Herald calls her 'Louisville sophomore Laura Harper, an SGA senator-at-large' on 12 April 2013 and quotes her right through the autumn of 2013 as SGA's director of public relations, then on 20 November 2014 calls her 'Louisville senior Laura Harper, a director at Revolution'. Sophomore in spring 2013 is senior in autumn 2014, the same Louisville student, and Revolution 91.7 is the club in this photograph. The digitised Herald holds no second Laura Harper in these years.",
+  "src": {
+   "label": "2015 Talisman: Resurgence, p. 328, Revolution 91.7 (WKU Archives UA12/2/2)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8679"
+  },
+  "quality": "group crop"
  }
 ]

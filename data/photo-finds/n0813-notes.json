@@ -29,10 +29,14 @@
  {
   "name": "Christopher Jankowski",
   "year": "2009-10",
-  "fact": "Almost certainly the same person as 'Chris Jankowski', whom years.json carries separately as Associate Justice in 2010-11 and 2011-12, against Christopher Jankowski as a member in 2009-10 and Chief Justice in 2012-13. The sequence member, associate justice, associate justice, chief justice is one continuous judicial career. The Herald photo library holds exactly one Jankowski in twenty-one thousand captions, 'Versailles sophomore Chris Jankowski', December 2010, which fits both records. Flagged, not merged.",
+  "fact": "Almost certainly the same person as 'Chris Jankowski', whom years.json carries separately as Associate Justice in 2010-11 and 2011-12, against Christopher Jankowski as a member in 2009-10 and Chief Justice in 2012-13. The sequence member, associate justice, associate justice, chief justice is one continuous judicial career. The Herald photo library holds exactly one Jankowski in twenty-one thousand captions, 'Versailles sophomore Chris Jankowski', December 2010, which fits both records. Flagged, not merged.  NO PORTRAIT. The long form of the name is used once in the printed Herald, in a story on students using SNAP benefits (29 Mar 2011), where he is a Lexington sophomore; every other appearance is as Chris Jankowski, a Versailles sophomore. That the two records are one man is already recorded in this file. No photograph exists apart from the Pearce-Ford Tower frame of 7 December 2010, which _do-not-use.json refuses because its caption names two men and gives no positions.",
   "src": {
    "label": "College Heights Herald, 7 December 2010, resident assistants making signs in Pearce-Ford Tower",
    "url": "https://wkuherald.com/wp-content/uploads/2010/12/9c2cdddaec25a2d7acf47bba70e46fd7.jpg"
+  },
+  "src2": {
+   "label": "College Heights Herald, 29 March 2011, p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6613"
   }
  },
  {
@@ -63,15 +67,6 @@
   }
  },
  {
-  "name": "Lisa M. Kappler",
-  "year": "2008-09",
-  "fact": "Resigned as Chief Justice of the Judicial Council during 2008-09; the Herald reported it on 17 February 2009. Corey Bewley, listed in the worklist as the successor Chief Justice, was approved two days later, reported 19 February 2009. The worklist records Kappler as Clerk of the Judicial Council, which the Herald contradicts by calling her chief justice.",
-  "src": {
-   "label": "Herald 84:22 [32], 17 Feb 2009 and Herald 84:33, 19 Feb 2009",
-   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6721"
-  }
- },
- {
   "name": "Kevin Adams",
   "year": "2011-12",
   "fact": "Removed from the Student Senate, with others placed under review, in November 2011, alongside Kevin Preston.",
@@ -92,37 +87,53 @@
  {
   "name": "Sarah Howell",
   "year": "2009-10",
-  "fact": "SGA's own website listed her mid-year as Director of Information Technology on the executive branch page, alongside President and Student Regent Kevin T. Smiley, Executive Vice President Kendrick W. Bryan, Administrative Vice President Justin P. Thurman, Chief of Staff Eric Smiley, Director of Public Relations Angelika Masero and Director of Academic and Student Affairs J. Aaron Pawley. The same page names three office associates: Rachel Calhoun, Jerebeth Lucas and Katie Stillwell.",
+  "fact": "SGA's own website listed her mid-year as Director of Information Technology on the executive branch page, alongside President and Student Regent Kevin T. Smiley, Executive Vice President Kendrick W. Bryan, Administrative Vice President Justin P. Thurman, Chief of Staff Eric Smiley, Director of Public Relations Angelika Masero and Director of Academic and Student Affairs J. Aaron Pawley. The same page names three office associates: Rachel Calhoun, Jerebeth Lucas and Katie Stillwell.  NO PORTRAIT, and no mention of her in the newspaper at all. The full text of the digitised Heralds of 2002-2009 and 2010-2016 never names her, and wkuherald.com's article search returns nothing. The only Howells in the Herald photograph library are a viticulture technician, a farmer, a footballer and three children, none of them her. Her whole presence in the archive is SGA's own executive page of 23 November 2009.",
   "src": {
    "label": "WKU SGA executive branch page, captured 23 November 2009",
+   "url": "http://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"
+  },
+  "src2": {
+   "label": "College Heights Herald text index 2002-2009 and 2010-2016",
    "url": "http://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"
   }
  },
  {
   "name": "Aaron Pawley",
   "year": "2009-10",
-  "fact": "SGA's own website gave his full name as J. Aaron Pawley, with the university email Joseph.Pawley193@wku.edu, so his first name was Joseph.",
+  "fact": "SGA's own website gave his full name as J. Aaron Pawley, with the university email Joseph.Pawley193@wku.edu, so his first name was Joseph.  NO PORTRAIT. Two mentions in the digitised Herald, neither with a photograph: a column of 4 September 2009 objecting that Kevin Smiley's cabinet nominees were friends and supporters, which names Pawley as the nominee for Director of Academic and Student Affairs, and a correction of 29 January 2010 recording that he had resigned from that office. Nothing in the caption index of the 2005-2009 or 2010-2016 Heralds, the Herald photograph library, the 2014 Talisman, or wkuherald.com beyond those two lines.",
   "src": {
    "label": "WKU SGA executive branch page, captured 23 November 2009",
    "url": "http://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"
+  },
+  "src2": {
+   "label": "College Heights Herald 85:2, 4 Sept 2009, p. 4; Herald correction, 29 Jan 2010, p. 2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6738"
   }
  },
  {
   "name": "Jessi Wurth",
   "year": "2010-11",
-  "fact": "SGA's own website named her as Jessica Wurth, and listed her in May 2010 as the nominee for Director of Public Relations rather than a confirmed officer, alongside Charlie Harris as nominee for Chief of Staff and Cory Dodds as nominee for Director of Information Technology.",
+  "fact": "SGA's own website named her as Jessica Wurth, and listed her in May 2010 as the nominee for Director of Public Relations rather than a confirmed officer, alongside Charlie Harris as nominee for Chief of Staff and Cory Dodds as nominee for Director of Information Technology.  NO PORTRAIT AND NO PRINT MENTION. Wurth appears nowhere in the full text of the digitised Heralds of 2002-2009 or 2010-2016, nowhere in the Herald photograph library's 21,304 captions, and in exactly one text-only web item, 'Ransdell speaks to SGA' of 29 September 2010. Her name in the archive rests on SGA's own executive page, which lists her as a nominee rather than a confirmed officer.",
   "src": {
    "label": "WKU SGA executive branch page, captured 28 May 2010",
    "url": "http://web.archive.org/web/20100528165546/http://www.wku.edu/sga/index.php?page=executive"
+  },
+  "src2": {
+   "label": "wkuherald.com, 29 September 2010; College Heights Herald text index 2002-2016",
+   "url": "https://wkuherald.com/54975/news/ransdell-speaks-to-sga/"
   }
  },
  {
   "name": "Rachel Calhoun",
   "year": "2010-11",
-  "fact": "Worked in the SGA office as one of three office associates before becoming Secretary of the Student Senate, listed in that role on SGA's own executive page in both November 2009 and May 2010.",
+  "fact": "Worked in the SGA office as one of three office associates before becoming Secretary of the Student Senate, listed in that role on SGA's own executive page in both November 2009 and May 2010.  NO PORTRAIT. One mention in the printed Herald, quoted as secretary of the student senate on the organizational aid she worked on (20 Apr 2012), and three further text-only items on wkuherald.com. The 2005-2009 caption index holds four Calhoun photographs and all four are Wes Calhoun, the senator from Indianapolis, a different person. No Rachel Calhoun anywhere in the Herald photograph library.",
   "src": {
    "label": "WKU SGA executive branch pages, captured 23 November 2009 and 28 May 2010",
    "url": "http://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"
+  },
+  "src2": {
+   "label": "College Heights Herald, 20 April 2012, p. 7",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6552"
   }
  },
  {
@@ -150,6 +161,330 @@
   "src": {
    "label": "data/photo-finds/_do-not-use.json",
    "url": ""
+  }
+ },
+ {
+  "name": "Corey Bewley",
+  "year": "2008-09",
+  "fact": "NO PORTRAIT. He is the best-documented officer on this list who was never photographed. The Herald names him eleven times between February and April 2009 and quotes him in seven of those, as associate justice, then as the chief justice who succeeded Lisa Kappler on 19 February 2009, verified the student regent special election result at 12.17 a.m. on 26 February, ruled on the senators' absences on 5 March, announced the spring candidates on 31 March and reported the senate election result on 16 April. The paper calls him a Vine Grove senior throughout, so he graduated in 2009 and cannot appear in a later volume. Every one of the eleven is running text; not one sits beside a photograph of him. Checked: the caption index of every embedded photograph in the digitised Heralds of 2005-2009, the Herald's own photograph library from 2010 (21,304 captions), the 2014 Talisman portrait grids, and wkuherald.com's article search, which returns nothing for him at all.",
+  "src": {
+   "label": "College Heights Herald 84:33, 19 Feb 2009 p. 3; 84:35, 26 Feb 2009 p. 1; 84:46, 16 Apr 2009 p. 1",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6721"
+  }
+ },
+ {
+  "name": "Lisa M. Kappler",
+  "year": "2008-09",
+  "fact": "NO PORTRAIT. Named six times in the digitised Herald, always in running text: in a Sigma Kappa sorority list of September 2004, twice as associate justice of the Judicial Council during the disputed election of April 2008, and three times in February 2009 around her resignation as chief justice on 12 February. The worklist calls her Clerk of the Judicial Council; the Herald calls her chief justice, which is the contemporaneous source and should be preferred. No photograph of her exists anywhere in the caption index of the 2005-2009 Heralds, the 2010-2016 Heralds, the Herald photograph library, or the 2014 Talisman; wkuherald.com's search returns nothing.",
+  "src": {
+   "label": "College Heights Herald 84:21[31], 12 Feb 2009 p. 1; 84:22[32], 17 Feb 2009 p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6721"
+  }
+ },
+ {
+  "name": "Jacob A. Miers",
+  "year": "2008-09",
+  "fact": "NO PORTRAIT, and only one mention in the whole digitised Herald: the senate election results of 25 September 2007, where Jacob Miers is elected with 168 votes, two names above Brittney-Ann Wick on 166. That single line is a results table, not an article, and carries no photograph. Nothing in the caption indexes of the 2005-2009 or 2010-2016 Heralds, the Herald photograph library, the 2014 Talisman, or wkuherald.com.",
+  "src": {
+   "label": "College Heights Herald 83:8, 25 Sept 2007, p. 8, student senate election results",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6721"
+  }
+ },
+ {
+  "name": "Monique Gooch",
+  "year": "2008-09",
+  "fact": "NO PORTRAIT. Twice in the digitised Herald, both times quoted as Director of Public Relations: on 24 February 2009 about a possible SGA branch on South Campus, where the paper calls her a Franklin senior, and on 2 April 2009 opposing the amendment that would have made the directors non-voting members. A Franklin senior in 2009 graduated that spring. Neither mention has a photograph, and the surname search of the Herald photograph library returns only the basketball player Chastity Gooch and the softball player Tiffany Gooch, who are different people.",
+  "src": {
+   "label": "College Heights Herald 84:34, 24 Feb 2009, p. 3; 84:42, 2 Apr 2009, p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6752"
+  }
+ },
+ {
+  "name": "VaShae Swope",
+  "year": "2008-09",
+  "fact": "NO PORTRAIT. Four mentions, all running text: quoted on 19 March 2009 as an SGA senator and chair of diversity issues wanting South Campus students involved, quoted again on 7 April on the senate's spending, left off the ballot by a TopNet error on 16 April yet elected because the race was uncontested, and called before the judicial council for absences in November 2009, when the council let her keep her seat. The Herald calls her a Lexington freshman in 2009 and a Lexington sophomore in November 2009. No photograph accompanies any of them, and there is no Swope anywhere in the Herald photograph library.",
+  "src": {
+   "label": "College Heights Herald 84:38, 19 Mar 2009, p. 1; 84:46, 16 Apr 2009, p. 1; 85:19, 13 Nov 2009, p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6752"
+  }
+ },
+ {
+  "name": "Eileen Forsythe",
+  "year": "2008-09",
+  "fact": "NO PORTRAIT AND NO CONTEMPORANEOUS MENTION. She does not appear anywhere in the full text of the digitised Heralds of 2002-2009 or 2010-2016, and the only Forsythes in the Herald photograph library are a faculty senate committee chair and two Bowling Green residents photographed in 2024, none of them her. wkuherald.com returns a single article, the SGA transgender-students resolution of 2 May 2012, which is three years after her term and carries no photograph. The archive's record of her rests on SGA's own papers rather than on the newspaper.",
+  "src": {
+   "label": "College Heights Herald text index 2002-2009 and 2010-2016; wkuherald.com article search",
+   "url": "https://wkuherald.com/47212/news/sga-passes-resolution-in-favor-of-transgender-students/"
+  }
+ },
+ {
+  "name": "Art Scisney",
+  "year": "2009-10",
+  "fact": "NO PORTRAIT AND NO PRINT MENTION. Scisney appears nowhere in the full text of the digitised Heralds of 2002-2009 or 2010-2016, and nowhere in the Herald photograph library. The one place he is named is wkuherald.com's SGA Notes of 29 March 2011, 'Jessie appoints Scisney as new Chief Justice', which is a text-only web item; the printed issue of 29 March 2011 was checked and carries the same story without his name and without a photograph of him.",
+  "src": {
+   "label": "wkuherald.com, SGA Notes, 29 March 2011",
+   "url": "https://wkuherald.com/52467/news/sga-notes-jessie-appoints-scisney-as-new-chief-justice/"
+  }
+ },
+ {
+  "name": "Corbin Snardon",
+  "year": "2009-10",
+  "fact": "NO PORTRAIT AND NO MENTION ANYWHERE. Snardon is absent from the full text of every digitised Herald 2002-2009 and 2010-2016, from the Herald photograph library's 21,304 captions, from wkuherald.com's article search and from the 2014 Talisman. This is the thinnest record of anyone on the block.",
+  "src": {
+   "label": "College Heights Herald text and photograph indexes, 2002-2016",
+   "url": ""
+  }
+ },
+ {
+  "name": "Dajana Crockett",
+  "year": "2009-10",
+  "fact": "NO PORTRAIT. Three mentions in the printed Herald, all in March 2011 and all running text: she extended the SGA election filing deadline to the Tuesday after spring break (18 March), said the judicial council was disappointed by the low number of scholarship applications (22 March), and the news brief of 29 March 2011 reports that she had resigned as chief justice and was no longer a WKU student. No photograph accompanies any of the three, and no Crockett appears in the Herald photograph library.",
+  "src": {
+   "label": "College Heights Herald, 18 Mar 2011 p. 1; 22 Mar 2011 p. 4; 29 Mar 2011 p. 2",
+   "url": "https://wkuherald.com/52195/news/sga-chief-justice-crockett-resigns/"
+  }
+ },
+ {
+  "name": "Eliana Martinez",
+  "year": "2009-10",
+  "fact": "NO PORTRAIT. One mention in the whole digitised Herald and it is a list, not an article: the honours roll printed on 4 May 2010. Nothing in the caption indexes of the 2005-2009 or 2010-2016 Heralds. The Herald photograph library holds twenty-eight Martinezes and not one is her; they are a Nebraska quarterback, a mezcal maker in Santa Ana and several children at Bowling Green festivals.",
+  "src": {
+   "label": "College Heights Herald, 4 May 2010, p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6633"
+  }
+ },
+ {
+  "name": "Brittany Crowley",
+  "year": "2010-11",
+  "fact": "NO PORTRAIT. Five mentions in the printed Herald and not one photograph: as Academic Affairs Committee head explaining how the scholarship committee chooses winners (18 Oct 2011), as a Dixon junior on the new apartment complex (31 Aug 2010), as a Dixon senior on yoga (27 Apr 2012), and twice in the SGA executive's own signed commentaries of 7 Dec 2012 and 1 Mar 2013, where she signs as Director of Academic and Student Affairs. The commentaries print a mugshot of Cory Dodds only. The Herald photograph library holds two Crowleys, a 1920s Notre Dame footballer and a film director, neither of them her.",
+  "src": {
+   "label": "College Heights Herald, 18 Oct 2011, p. 7; 1 Mar 2013, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6537"
+  }
+ },
+ {
+  "name": "Chris Jankowski",
+  "year": "2010-11",
+  "fact": "NO USABLE PORTRAIT. Five mentions in the printed Herald, all text: on food stamps (29 Mar 2011), on the student appeals committee (26 Apr 2011), as a co-ordinator of the diversity cookout (3 May 2011), as the justice who explained the removal of two senators (15 Nov 2011), and as one of four SGA members at the Frankfort rally (10 Feb 2012). The Herald calls him a Versailles sophomore. The single photograph of a Chris Jankowski in the whole Herald library is the Pearce-Ford Tower sign-making frame of 7 December 2010, which _do-not-use.json refuses because its caption names three people, two of them men, and gives no positions. Nothing else exists.",
+  "src": {
+   "label": "College Heights Herald, 15 Nov 2011, p. 1; 10 Feb 2012, p. 5",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6588"
+  }
+ },
+ {
+  "name": "David Spalding",
+  "year": "2010-11",
+  "fact": "NO PORTRAIT. One mention in the printed Herald, quoted as Chief Justice on the removal of two senators (15 Nov 2011), plus three text-only items on wkuherald.com. Page 3 of that issue was pulled and rendered: every image on it is an advertisement or the WKU Store panel, and the 'Senators up for review' box is set type, not a photograph. The only Spaldings in the Herald photograph library are a Uniontown man at Mudfest and a schoolteacher, neither of them him.",
+  "src": {
+   "label": "College Heights Herald, 15 Nov 2011, p. 1 and p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6588"
+  }
+ },
+ {
+  "name": "Jane Wood",
+  "year": "2011-12",
+  "fact": "NO PORTRAIT, and this one was chased to the end. Eight mentions in the printed Herald, all quoting her as SGA's public relations director on the vote T-shirts, the safe-ride campaign, the homecoming croakies and the DUC name-change resolution, plus one as Pi Chi adviser and one as a runner in the Medical Center 10K; the paper calls her a Bowling Green senior. The one item that looked like a photograph, the WKU-students-tackle-childhood-obesity feature of 20 March 2012 whose text names her first of five, was pulled and rendered: page 10 is a full-column Nat's Outdoor Sports advertisement and the story beside it carries no picture at all. Nothing in the Herald photograph library either, where 268 Woods are a surname or a substring.",
+  "src": {
+   "label": "College Heights Herald, 20 March 2012, p. 10; 1 Nov 2011, p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6604"
+  }
+ },
+ {
+  "name": "Mac Mullins",
+  "year": "2011-12",
+  "fact": "NO PORTRAIT. Three mentions in the printed Herald: a signed letter to the editor of 25 March 2011, where he is a Bowling Green sophomore; a Sigma Chi member quoted on the new fraternity house (11 Sept 2012); and as chair of the public relations committee opposing the plus-minus grading resolution (26 Feb 2013). None carries a photograph of him, and the only Mullins in the Herald photograph library is a Belmont volleyball player.",
+  "src": {
+   "label": "College Heights Herald, 26 February 2013, p. 3; 11 September 2012, p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6536"
+  }
+ },
+ {
+  "name": "Mallory Chaney",
+  "year": "2011-12",
+  "fact": "NO PORTRAIT. Three mentions in the printed Herald, all text: quoted as Campus Clean-up committee chairman on the free T-shirts (12 Oct 2012), as an Elizabethtown sophomore and chair of Campus Improvements who co-ordinated the campus safety walk (16 Apr 2013), and as Alpha Delta Pi's philanthropy chair at the Ronald McDonald House 5K (17 Sept 2013). The Herald photograph library's 34 Chaney hits are all the basketball player Chaney Means or Chaney's Dairy Barn.",
+  "src": {
+   "label": "College Heights Herald, 16 April 2013, p. 6; 12 October 2012, p. 2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6547"
+  }
+ },
+ {
+  "name": "Barrett Greenwell",
+  "year": "2012-13",
+  "fact": "NO PORTRAIT, despite being one of the most-covered officers of the block on the web. Thirteen wkuherald.com stories name him and four printed mentions were found: student affairs council chair on test materials in the library (27 Feb 2014), a co-author of the resolution honouring faculty regent Patricia Minter (20 Nov 2014), and twice as SGA Director of Academic and Student Affairs on the scholarship budget (15 Sept 2015). Every one is running text. The three Greenwells in the Herald photograph library are Jacob Greenwell of Lambda Chi Alpha and Zach Greenwell of the athletic department, neither of them him. He is also absent from the 2014 Talisman portrait grids.",
+  "src": {
+   "label": "College Heights Herald, 15 September 2015, p. 1; 20 November 2014, p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6425"
+  }
+ },
+ {
+  "name": "Cole McDowell",
+  "year": "2012-13",
+  "fact": "NO PORTRAIT. The nearest miss on the block. He authored the resolution against the Gatton Academy expansion and the Herald led page 1 with it on 20 November 2014, quoting him three times across pages 1, 2 and 3 and setting his name in a pull quote; the photographs on that spread are of Malika Pitt carrying boxes out of Bates-Runner and are credited to Mike Clark, and the caption names Pitt, not McDowell. Ten further wkuherald.com stories name him, all text only. He is absent from the 2014 Talisman portrait grids and from the Herald photograph library.",
+  "src": {
+   "label": "College Heights Herald, 20 November 2014, pp. 1-3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6399"
+  }
+ },
+ {
+  "name": "Drew Mitchell",
+  "year": "2012-13",
+  "fact": "NO USABLE PORTRAIT. Three printed mentions: a Bowling Green sophomore on the summer building hours (12 Apr 2011) and two signed SGA executive commentaries of 7 December 2012 and 1 March 2013, both of which print a mugshot of Cory Dodds and of nobody else. _do-not-use.json separately refuses the mugshot captioned MITCHELL in the Herald of 12 October 2010 because a surname alone cannot pin down a name as common as Mitchell; that refusal was re-checked and stands. Sixty-five Mitchells in the Herald photograph library and not one is captioned Drew.",
+  "src": {
+   "label": "College Heights Herald, 1 March 2013, p. 4; 12 April 2011, p. 8",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6537"
+  }
+ },
+ {
+  "name": "Julia Payne",
+  "year": "2012-13",
+  "fact": "NO PORTRAIT AND NO MENTION. Julia Payne appears nowhere in the full text of the digitised Heralds of 2002-2009 or 2010-2016, nowhere in the Herald photograph library, nowhere in the 2014 Talisman index, and wkuherald.com's article search returns nothing for her. The thirteen Paynes in the photograph library are a public relations professor, a communication professor, the film director Alexander Payne, the singer Liam Payne and a bank manager.",
+  "src": {
+   "label": "College Heights Herald text and photograph indexes, 2002-2016",
+   "url": ""
+  }
+ },
+ {
+  "name": "Justin McDole",
+  "year": "2012-13",
+  "fact": "NO PORTRAIT AND NO MENTION. McDole is absent from the full text of every digitised Herald 2002-2009 and 2010-2016, from the Herald photograph library's 21,304 captions, from wkuherald.com's article search and from the 2014 Talisman. The surname does not occur once in any WKU source searched.",
+  "src": {
+   "label": "College Heights Herald text and photograph indexes, 2002-2016",
+   "url": ""
+  }
+ },
+ {
+  "name": "Kelly Simmons",
+  "year": "2012-13",
+  "fact": "NO PORTRAIT. One mention in the printed Herald and it is a dean's-list column of 5 February 2010, not an article. wkuherald.com returns one further story. The eighteen Simmonses in the Herald photograph library are footballers, a baseball outfielder, a soccer player and a drag performer, none of them her, and the one Simmons mugshot in the caption index is captioned NICK SIMMONS, Owensboro Senior.",
+  "src": {
+   "label": "College Heights Herald, 5 February 2010, p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6735"
+  }
+ },
+ {
+  "name": "Laura Harper",
+  "year": "2012-13",
+  "fact": "PORTRAIT FOUND, but not in the newspaper. She is the officer the Herald quoted most and never once photographed: ten printed mentions, eight of them as SGA's director of public relations, including the whole autumn 2013 run on the university's email policy, where she is quoted on pages 1 and 3 of the 24 October 2013 issue and again on 21 November. The Herald calls her a Louisville sophomore in April 2013 and a Louisville senior in November 2014. Ninety-four Harper captions in the Herald photograph library are all Ray Harper, the men's basketball coach. The face came from the 2015 Talisman instead: the Revolution 91.7 club photograph on p. 328, keyed by rows, with the Herald's own line of 20 November 2014 calling her 'a director at Revolution' making the link. Filed as 2013-14-laura-harper.jpg.",
+  "src": {
+   "label": "College Heights Herald, 24 October 2013, pp. 1 and 3; 21 November 2013, p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6358"
+  }
+ },
+ {
+  "name": "Mallory Treece",
+  "year": "2012-13",
+  "fact": "NO PORTRAIT. Five printed mentions: elected to the senate on 23 September 2011, listed among the senators under review in November 2011, one of four SGA members at the Frankfort rally of February 2012, co-author of the diversity bill in April 2012, and a Smiths Grove freshman nominated for Speaker of the Senate later that month. Page 3 of the 15 November 2011 issue was pulled and rendered to check the images around the 'Senators up for review' box: they are all advertisements. No Treece anywhere in the Herald photograph library.",
+  "src": {
+   "label": "College Heights Herald, 23 Sept 2011, p. 7; 15 Nov 2011, p. 3; 20 Apr 2012, p. 7",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6588"
+  }
+ },
+ {
+  "name": "Sarah Hazelip",
+  "year": "2012-13",
+  "fact": "NO PORTRAIT. Two printed mentions: the signed SGA executive commentary of 7 December 2012, where she is listed as director of academic and student affairs, and the meeting report of 10 October 2013, where she is quoted as SGA's director of information technology working to put the budget online. Neither carries a photograph, and Hazelip does not occur once in the Herald photograph library or in the 2014 Talisman.",
+  "src": {
+   "label": "College Heights Herald, 10 October 2013, p. 3; 7 December 2012, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6363"
+  }
+ },
+ {
+  "name": "Alexis Baker",
+  "year": "2013-14",
+  "fact": "NO PORTRAIT. One printed mention: 31 October 2013, where she is 'the resolution's author and newly appointed Campus Improvements committee head', presenting the charging-station resolution to the senate. She had resigned by 25 March 2014, which is why the archive gives Tyler Scaff the same chair from 1 April. No photograph accompanies the story, and the forty-one Bakers in the Herald photograph library are footballers, a park ranger, an arboretum and several unrelated students.",
+  "src": {
+   "label": "College Heights Herald, 31 October 2013, p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6354"
+  }
+ },
+ {
+  "name": "Jackie Stewart",
+  "year": "2013-14",
+  "fact": "NO PORTRAIT AND NO MENTION. Jackie Stewart appears nowhere in the full text of the digitised Heralds of 2002-2009 or 2010-2016, and wkuherald.com returns one story only. Stewart is a trap surname in this archive: eighty-four Stewart captions in the photograph library and every mugshot captioned STEWART in the print caption index is Todd Stewart, WKU's director of athletics. Do not cut any of them.",
+  "src": {
+   "label": "College Heights Herald text and photograph indexes, 2002-2016",
+   "url": ""
+  }
+ },
+ {
+  "name": "Kara Raley",
+  "year": "2013-14",
+  "fact": "NO PORTRAIT AND NO MENTION. Raley is absent from the full text of every digitised Herald 2002-2009 and 2010-2016 and from the 2014 Talisman. The two Raleys in the Herald photograph library are Jeremy Raley, a Mount Washington triathlete, and an unnamed marcher. wkuherald.com returns one story.",
+  "src": {
+   "label": "College Heights Herald text and photograph indexes, 2002-2016",
+   "url": ""
+  }
+ },
+ {
+  "name": "Megan Skaggs",
+  "year": "2013-14",
+  "fact": "NO PORTRAIT. Three printed mentions: quoted as head of the Academic Affairs committee on the bill behind the $7 fee programme (26 Sept 2013) and twice in the SGA report of 29 January 2015 recording her appointment as Director of Academic and Student Affairs. None carries a photograph. The three Skaggses in the Herald photograph library are a Louisville graduate student, a Sigma Chi Fight Night competitor and an Edmonson County bidder, none of them her; she is absent from the 2014 Talisman grids.",
+  "src": {
+   "label": "College Heights Herald, 26 September 2013, p. 3; 29 January 2015, p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6577"
+  }
+ },
+ {
+  "name": "Tyler Scaff",
+  "year": "2013-14",
+  "fact": "NO PORTRAIT, and he is the most-quoted man on this list. Thirteen printed mentions between October 2013 and April 2015: the honours students' registration complaints (31 Oct and 14 Nov 2013), the bus-stop benches (3 Dec 2013), the judicial-council amendment (13 Feb 2014), the campus safety walk he ran (1 May 2014 and 2 Apr 2015), the commuter focus group (25 Sept 2014) and the Veterans Resource Center resolution (20 Nov 2014). The Herald calls him a Louisville junior in 2013. Every mention is running text; the photographs on those pages are advertisements or unrelated news frames, and the only mugshot near his name on 14 November 2013 is captioned EMSLIE, the provost. Four Scaff captions in the photograph library, none of them him.",
+  "src": {
+   "label": "College Heights Herald, 3 December 2013, p. 3; 25 September 2014, p. 3; 2 April 2015, p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6375"
+  }
+ },
+ {
+  "name": "SOURCE NOTE: what was searched for this block",
+  "year": "2008-09 to 2015-16",
+  "fact": "Every officer on _officers-n0813.json who is recorded here as having no portrait was run against all of: (1) the Herald's own photograph library, 21,304 captions from 2010 to 2026, by surname; (2) a NEW caption index of every embedded photograph in the digitised print Heralds of 2010-2016, built during this run and kept at ~/Desktop/SGA60 photo hunt/_herald-index-2010-2016/, which by the end held over 21,000 photographs with the text below, to the right of and above each one; (3) the existing 2005-2009 caption index; (4) the full page text of the digitised Heralds, 2002-2009 and 2010-2016; (5) wkuherald.com's WordPress article search, which lists every story naming a person and was used to pick out the 160 print issues most likely to carry their picture, all 160 of which were harvested; (6) a sweep for surname-only mugshot captions, which is how the Herald labels a head-and-shoulders cut; (7) the 2014 Talisman portrait grids; (8) the SGA pages on wku.edu from 2009 to 2016 in the Wayback Machine. The conclusion is consistent and worth stating plainly: the print Herald of these years quoted committee chairs, directors and justices constantly and almost never photographed them. Its student photographs are of athletes, Greek life and events; SGA got one posed frame a year, usually of the president.",
+  "src": {
+   "label": "data/photo-finds/_archive-gaps.json and the indexes named above",
+   "url": ""
+  }
+ },
+ {
+  "name": "Paul Shively",
+  "year": "2010-11",
+  "fact": "PHOTOGRAPH FOUND AND REFUSED. The Herald of 19 March 2010, p. 6, ran a half-page frame of the University Police Academy's mock traffic stop captioned 'Capt. Kerry Hatchett, patrol commander for Western police, addresses Owensboro freshman Paul Shively, who was a student participant'. The frame cannot be cropped to him. Two young men sit in the car, neither named or positioned, and the only other figure is an arm, a torso and a torch at the extreme left with no face in shot. The article makes it worse rather than better: it says the students played the officers, and quotes Shively saying it feels powerful being in all that gear, which would put him behind the torch. Nothing else in the frame separates them. He appears nowhere else in the digitised Herald and nowhere in the Herald photograph library.",
+  "src": {
+   "label": "College Heights Herald 85:38, 19 March 2010, p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6759"
+  }
+ },
+ {
+  "name": "Hannah Pennington",
+  "year": "2008-09",
+  "fact": "NO PORTRAIT, and the refusal in _do-not-use.json is now settled on positive evidence rather than on doubt. The Herald of 7 May 2010 carried the Honors College's own full-page congratulations advertisement, and its Honors Program Graduates column lists 'Hannah Pennington, Biochemistry' among the May 2010 graduates. A Hannah Pennington therefore took her WKU degree in May 2010, which is exactly what a student sworn to the Student Senate in September 2008 would do, and it is not what the woman in WKU's 'Hannah Pennington Spotlight' of 25 January 2022 did: that article's subject came through the Gatton Academy, graduated in 2015 with the Mahurin Honors College CE/T of the Year and started medical school that autumn. Two different women. Do not publish wku.edu/img_news/article_images/10188.jpg. The 2010 advertisement is a name list and carries no photographs, so it gives a date and not a face.",
+  "src": {
+   "label": "College Heights Herald 85:52, 7 May 2010, p. 6, Honors College graduation advertisement",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6634"
+  }
+ },
+ {
+  "name": "DEFECTIVE SCAN: 2015 Talisman, printed pages 268-313",
+  "year": "2014-15",
+  "fact": "TopSCHOLAR's scan of the 2015 Talisman: Resurgence (dlsc_ua_records/8679) is missing its entire student PORTRAITS section. The folios run continuously to 267 on PDF page 138 and resume at 314-315 on PDF page 140, with one uncaptioned full-bleed image between them; no page in the file carries a folio between 268 and 313. The book's own back index, which IS in the file, indexes people to those pages, so they exist in print: 'Scaff, Tyler 290', 'Smith, Sherry 291', 'Spalding, Shelley 292', 'Wilkins, Hayley 295', 'Havel, Catherine 279'. Tyler Scaff, the Campus Improvements chair of 2013-14 and 2014-15, therefore has a printed portrait at p. 290 that cannot be reached through TopSCHOLAR. There is no Part II: records 8677 and 8678 are the two 2016 issues and 8676 and 8680 are unrelated collections. If a complete copy of this volume ever surfaces, page 290 is the single highest-value page in it for this archive.",
+  "src": {
+   "label": "2015 Talisman: Resurgence, UA12/2/2, and its back index pp. 347-352",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8679"
+  }
+ },
+ {
+  "name": "SOURCE NOTE: the 2015 Talisman club pages",
+  "year": "2014-15",
+  "fact": "The club and organisation spread of the 2015 Talisman, printed pp. 316-333, is worth knowing about because it is half usable and half not. Some groups are keyed positionally, 'Row 1: ... Row 2: ...', and those are identifications this archive accepts: that is how Laura Harper was placed in the Revolution 91.7 photograph on p. 328. The large groups, chiefly the sororities and the honour societies, are captioned with a single alphabetical list and no positions at all, and a grid of faces against an alphabetical list identifies nobody. Checked and refused on that ground: Megan Skaggs on p. 323, Sarah Hazelip and Ashley Presnell on p. 329, Alexis Baker and Hayley Wilkins and Catherine Havel on p. 316, Brenna Duncan and Alyson Manley on p. 327, Catherine Havel and Alyson Manley again on p. 331. Do not cut faces from those.",
+  "src": {
+   "label": "2015 Talisman: Resurgence, pp. 316-333",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8679"
+  }
+ },
+ {
+  "name": "Mallory Treece",
+  "year": "2013-14",
+  "fact": "One further source checked and refused. The 2015 Talisman's election feature 'Gunning For It', pp. 58-59, is built round her honours thesis on party affiliation and gun ownership and calls her a Bowling Green senior, but the single photograph on the spread is a hunting scene credited to Ditte Lysgaard Holm with no caption and no person identified. Her name appears on p. 59 of that volume for the text alone.",
+  "src": {
+   "label": "2015 Talisman: Resurgence, pp. 58-59",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8679"
   }
  }
 ]
