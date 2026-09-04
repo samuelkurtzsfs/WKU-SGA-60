@@ -156,7 +156,8 @@
   "file": "Herald, thirteen uploads Sept 2015 - Sept 2016, each captioned 'John Winstead mug'",
   "reason": "The columnist's mug for the Herald opinion column Synthesis. The column it first ran with mentions SGA president Jay Todd Richey but says nothing about the columnist holding office, and none of the thirteen captions does either. Only the name links it to the archive's 2015-16 senator.",
   "url": "https://wkuherald.com/wp-content/uploads/2015/09/cf4ffdd7a9e6f0c27aad58cb908525dc-1.jpg",
-  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json",
+  "resolved": "Answered 4 September 2026. The entry's objection was that 'none of the thirteen captions' ties the columnist to student government and 'only the name links it'. The Herald says it three times in its own text, which is why a caption sweep could never find it: 'The Judicial Council launched an investigation on SGA senator John Winstead, who is also an opinion columnist for the Herald' (3 Dec 2015); 'Another author, John Winstead, who is also a columnist for the Herald' (29 Mar 2016); and 'John Winstead, SGA senator and Herald columnist, reached out to her to be a co-author' (29 Mar 2016, quoting Kate McElroy). years.json already carries the December 2015 censure episode under his name. The senator and the columnist are one man. He also has a senior class portrait in the 2016 Talisman, p. 257, printed JOHN WINSTEAD / PHILOSOPHY / WHITE HOUSE, TENNESSEE, and it is plainly the same face as the mug. That portrait is now published as 2015-16-john-winstead.jpg. The mugshot this entry refuses is NOT republished - it is held at ~/Desktop/SGA60 photo hunt/n1419/ for the editor, since reinstating a refused frame is the editor's call - but the ground for refusing it has gone."
  },
  {
   "name": "Julia Bright",
@@ -221,7 +222,8 @@
   "file": "Herald 1 Oct 2019, canvassing for the Beshear campaign",
   "reason": "Two people named with no positions, and the photograph is made from behind: the one clear figure is walking away across a lawn and no face is visible.",
   "url": "https://wkuherald.com/wp-content/uploads/2019/10/531cdd2578abd1b7426eba4363cad003.jpg",
-  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json",
+  "resolved": "Superseded by a different frame, 4 September 2026. This entry is right about the Herald photograph - it is shot from behind and shows no face. The 2019 Talisman: Balance photo story 'Young and Partisan' covers the same student on the same Beshear campaign four days later, on 5 October 2019, and its caption is positional: it labels the full-bleed photograph on p. 52 'LEFT:' and names 'Spring Hill, Tenn., junior Elias Thompson and White House, Tenn., sophomore Julianna Lowe', a man and a woman, which is exactly what the frame holds. Published as 2019-20-elias-thompson.jpg. It is soft, because the photographer focused on the other subject."
  },
  {
   "name": "MJ Mayo",
@@ -317,7 +319,8 @@
   "file": "Herald 10 Feb 2015, and a second frame of 2 Nov 2016",
   "reason": "Rejected. The leads frame is a high school senior from LaRue County signing with WKU forensics and says nothing about student government. Recorded so it is not re-found as new: there is a second frame, Herald 2 Nov 2016, 'Donald Trump surrogate Brian Anderson, sophomore from Hodgenville, watches Hillary Clinton surrogate Lily Nellans ... answer questions'. Hodgenville is the LaRue County seat, so the two are consistent with one man who was a WKU sophomore in the year the archive makes him Legislative Research chair. It is still name plus timing, the 2016 frame names two people and positions neither, and Brian Anderson is a common name.",
   "url": "https://wkuherald.com/wp-content/uploads/2015/02/a7be4e6f4ec8bb639654501fa1f924a9.jpg",
-  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json",
+  "resolved": "Answered 4 September 2026, and answered on the point the entry itself made. The refusal was that the tie to SGA was 'name plus timing'. It is not: the link is the WKU Forensics Team, stated by the Herald twice. Its report of 2 November 2016 says the surrogate debaters were 'Students from the WKU Forensics team' and names 'Brian Anderson, Hodgenville sophomore'; its letters page of 17 April 2017 carries a WKU alumnus who served 'in the Student Government Association and being a member of WKU's Forensics Team' writing that he worked 'alongside both Lily Nellans and Brian Anderson as WKU Forensics Team members and observing the work they have done in SGA'. One man, forensics and SGA, partnered with Nellans in both. The 2 Nov 2016 frame also does position its two subjects, contrary to this entry: the caption has Anderson WATCH while Nellans ANSWERS, the frame holds one seated man watching one standing woman mid-sentence, and the event slide projected behind them prints both names under both thumbnails. That frame is now published as 2016-17-brian-anderson.jpg. The 10 Feb 2015 studio portrait this entry refuses is visibly the same man and is therefore also of the SGA officer; it is NOT republished, and is held at ~/Desktop/SGA60 photo hunt/n1419/ for the editor to decide on, because reinstating a refused frame is the editor's call. SEPARATE WARNING: the 2016 Talisman underclassman grid, p. 260, has a cell printed BRIAN ANDERSON and it is a different man entirely - fuller strawberry-blond hair, broad face, freckles. Do not cut it. The crop is in ~/Desktop/SGA60 photo hunt/_rejected/."
  },
  {
   "name": "Kaison Barton",
@@ -331,7 +334,8 @@
   "name": "Shantel Pettway",
   "year": "2016-17",
   "file": "College Heights Herald, 3 May 2017, 'Shades of Melanin' portrait feature",
-  "reason": "It is her, it is a good studio portrait, and it is not her SGA photograph. She sat for it for a feature about skin tone, and the caption carries her own words about self love and her faith. Lifting that into the archive as a student government headshot puts a picture she gave for one purpose to another, on a page about her committee work. Same reasoning as the Cody Cox withdrawal. The researcher who found it flagged it rather than publishing it quietly, which was right."
+  "reason": "It is her, it is a good studio portrait, and it is not her SGA photograph. She sat for it for a feature about skin tone, and the caption carries her own words about self love and her faith. Lifting that into the archive as a student government headshot puts a picture she gave for one purpose to another, on a page about her committee work. Same reasoning as the Cody Cox withdrawal. The researcher who found it flagged it rather than publishing it quietly, which was right.",
+  "resolved": "Replaced, not overturned, 4 September 2026. The objection stands: she sat for the Shades of Melanin portrait for a feature about skin tone and it should not be lifted onto a page about her committee work. A different picture now serves - her own underclassman portrait in the 2016 Talisman, p. 284, printed SHANTEL PETTWAY, published as 2016-17-shantel-pettway.jpg. The refused frame is kept at ~/Desktop/SGA60 photo hunt/_rejected/2016-17-shantel-pettway--shades-of-melanin-REFUSED.jpg."
  },
  {
   "name": "Danny Creasy, Bill Livingston, Marshall Florence, Gayle Sharp, John Tuttle",

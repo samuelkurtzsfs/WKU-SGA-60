@@ -45,22 +45,6 @@
   }
  },
  {
-  "year": "2016-17",
-  "name": "Shantel Pettway",
-  "file": "2016-17-shantel-pettway.jpg",
-  "replaces": null,
-  "width": 860,
-  "height": 946,
-  "quality": "good",
-  "why": "A Herald studio portrait of her alone, made for a first-person photo series in which each frame carries its own subject's words and name. Sharper and much closer than the only other Herald frame of her, a small black-and-white full-length pageant photograph from 2015. Cropped from 1501x1001; not upscaled.",
-  "caption_quote": "My dark skin is who I am ... Louisville senior Shantel Pettway, 22, stated.",
-  "src": {
-   "label": "College Heights Herald, 3 May 2017, portrait from the paper's first-person series",
-   "url": "https://wkuherald.com/wp-content/uploads/2017/05/0b883a0f92f3b5ebc3d09236e3dc08b6.jpg"
-  },
-  "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: this is the 3 May 2017 'Shades of Melanin' studio portrait, withdrawn for the same reason as the Cody Cox frame - she sat for a feature about skin tone and her own words about self love, not for a student government photograph. The register entry carries no url, so the landing script may not catch it automatically. Do not publish."
- },
- {
   "year": "2019-20",
   "name": "Paul Brosky",
   "file": "2019-20-paul-brosky.jpg",
@@ -74,22 +58,6 @@
    "label": "WKU Student Government Association executive branch page, wku.edu/sga/executive (file /sga/executive/headshots/paul.jpg). Name-to-file pairing taken from the Internet Archive capture of that page, 5 December 2019.",
    "url": "https://www.wku.edu/sga/executive/headshots/paul.jpg"
   }
- },
- {
-  "year": "2015-16",
-  "name": "John Winstead",
-  "file": "2015-16-john-winstead.jpg",
-  "replaces": null,
-  "width": 710,
-  "height": 887,
-  "quality": "good",
-  "why": "The Herald's own staff mugshot of him, a single-subject frame shot against the Talisman shelves in the paper's office and re-run in fourteen issues from September 2015 to September 2016 — exactly his SGA year. Only one person is in the frame, so the caption cannot be misread onto anyone else. Cropped to head and shoulders from 1501x1001; not upscaled.",
-  "caption_quote": "John Winstead mug",
-  "src": {
-   "label": "College Heights Herald, 3 September 2015, staff mugshot of John Winstead",
-   "url": "https://wkuherald.com/wp-content/uploads/2015/09/cf4ffdd7a9e6f0c27aad58cb908525dc-1.jpg"
-  },
-  "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: the Herald columnist's mug for 'Synthesis'. None of the thirteen captions says the columnist held office; only the name links it to the 2015-16 senator. Do not publish."
  },
  {
   "year": "2016-17",
@@ -106,22 +74,6 @@
    "url": "https://wkuherald.com/wp-content/uploads/2017/11/c3423494456f51a2f0ee6dbcfc433e60.jpg"
   },
   "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: the 27 Nov 2017 'evolution of black hair' gallery frame. Neither caption nor gallery mentions student government and it is from the year after his term. Do not publish."
- },
- {
-  "year": "2016-17",
-  "name": "Brian Anderson",
-  "file": "2016-17-brian-anderson.jpg",
-  "replaces": null,
-  "width": 800,
-  "height": 999,
-  "quality": "good",
-  "why": "A posed single-subject Herald portrait, suited, lit from the window of Gordon Wilson Hall. Only one person is in the frame, so the caption cannot attach to anyone else. It is a profile rather than a full-face view, but it is far the best-made picture of him the Herald holds. The 2015 date is before he reached SGA, and the link forward is the Herald's own: the same paper photographs 'Brian Anderson, sophomore from Hodgenville' at the campus surrogate debate of 1 November 2016, inside his year as Chair of Legislative Research, and Hodgenville is the seat of LaRue County, the school this portrait names. Cropped from 1501x999; not upscaled.",
-  "caption_quote": "Brian Anderson, a senior from LaRue County High School, poses for a portrait in Gordon Wilson Hall",
-  "src": {
-   "label": "College Heights Herald, 10 February 2015, portrait by Emily Kask",
-   "url": "https://wkuherald.com/wp-content/uploads/2015/02/a7be4e6f4ec8bb639654501fa1f924a9.jpg"
-  },
-  "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: the 10 Feb 2015 forensics-signing portrait of a LaRue County high school senior. Name plus timing only, and Brian Anderson is a common name. Do not publish."
  },
  {
   "year": "2018-19",
@@ -441,5 +393,212 @@
   },
   "identification": "The FACE is fixed beyond doubt. The right-hand page runs five rows of four portraits against twenty margin names set in one column in five groups of four, each group top to bottom against its row left to right, and every one of the five rows checks on sex: row 1 m/f/f/f, row 2 HUMBERTO CORREA, MOLLY COUCH, TUCKER COVEY, ASHLEY COX against m/f/m/f, row 3 f/f/m/m, row 4 m/f/m/f, row 5 f/f/f/m. Cox is the fourth portrait of row 2.",
   "identification_caveat": "The PERSON is probable, not proved, and the editor should weigh it. The tie is name, institution, and a class-year progression that fits with nothing left over: SGA's Ashley Cox was appointed to the Senate on 17 November 2015, which is her freshman year, and an underclassman is what the 2015-16 book makes her; the Herald then has her elected a sophomore senator in April 2016 and a junior senator in April 2017, and she chaired Student Affairs, later CASA, in 2017-18. The 2016 Talisman's back index carries exactly one Ashley Cox, and the Herald's whole photograph library holds no frame of her. What is missing is a disambiguator of the kind used for Liz Koehler on this same run: the underclassmen cells print a name and nothing else, no major and no home town, so there is nothing in the cell to cross-check. The volume separately lists her in the Alpha Xi Delta roster on p. 307 as 'Ashley K. Cox', and no SGA record mentions a sorority. Ashley Cox is a common name."
+ },
+ {
+  "year": "2016-17",
+  "name": "Brian Anderson",
+  "file": "2016-17-brian-anderson.jpg",
+  "replaces": "2016-17-brian-anderson.jpg (the refused Herald studio portrait of 10 Feb 2015; the old file is kept at ~/Desktop/SGA60 photo hunt/n1419/2016-17-brian-anderson--herald-2015-studio-portrait-ALTERNATIVE.jpg)",
+  "width": 320,
+  "height": 400,
+  "quality": "small",
+  "why": "Full face, sharp, suited, taken inside his SGA year at a WKU academic event. Cropped to head and shoulders from a 1350x1080 Herald frame; not upscaled. It replaces a refused frame and answers the refusal rather than working around it.",
+  "caption_quote": "Donald Trump surrogate Brian Anderson, sophomore from Hodgenville, watches ... Lily Nellans ... answer questions",
+  "src": {
+   "label": "College Heights Herald, 2 November 2016, WKU Forensics Team surrogate debate in Gary Ransdell Hall, 1 November 2016",
+   "url": "https://wkuherald.com/wp-content/uploads/2016/11/7d6229ac6a5f6b2eac531da397e57671.jpg"
+  },
+  "identification": "Which figure is which. The caption names two people and assigns them by what they are doing: Anderson WATCHES while Nellans ANSWERS. The frame holds one woman standing at the lectern mid-sentence and one man seated looking at her, so the verbs settle it, and the two are of different sexes besides. The standing woman also matches the portrait of Lily Nellans the archive already publishes. Confirming both, the event slide projected on the wall behind them is legible in the frame and prints the two thumbnails with their names beneath: 'Lily Nellans, class of 2018, will represent Hillary Clinton' and 'Brian Anderson ... will represent Donald Trump'.",
+  "identification_person": "That this Brian Anderson is the SGA officer no longer rests on name plus timing, which is what the withdrawal register refused. The link is the WKU Forensics Team, and the Herald states it twice. Its report of the same debate says the debaters were 'Students from the WKU Forensics team' and names 'Brian Anderson, Hodgenville sophomore'. Its letters page of 17 April 2017 then carries an endorsement from a WKU alumnus who writes that he served 'in the Student Government Association and being a member of WKU's Forensics Team' and that he worked 'alongside both Lily Nellans and Brian Anderson as WKU Forensics Team members and observing the work they have done in SGA' - one man who is both a forensics debater and an SGA officer, partnered with Nellans in both. A second letter of 12 April 2017 calls the SGA ticket 'competitive debaters ... internationally recognized for their ability to speak'. SGA's own minutes of 13 September 2016 make Brian Anderson chair of the Legislative Research Committee that semester, and the Herald of 5 April 2017 calls him 'current chair of the legislative research committee' standing for executive vice president on Nellans's ticket. The class year fits without slack: the Herald of 10 February 2015 has a Brian Anderson of LaRue County High School signing with WKU forensics, Hodgenville is the LaRue County seat, and a freshman entering in autumn 2015 is a sophomore in November 2016.",
+  "resolves": "data/photo-finds/_do-not-use.json, Brian Anderson, 2016-17. That entry refused the Herald studio portrait of 10 Feb 2015 because the tie to SGA was 'name plus timing' and recorded this 2016 frame as unusable because it 'names two people and positions neither'. Both objections are answered above: the caption does position them, and the forensics-team evidence is not timing. The seated man here is visibly the same person as the 2015 studio portrait - the same very short high-faded haircut, narrow chin and profile, eighteen months older - so that portrait is also of the SGA officer and the editor may prefer it as the better-made picture; it is kept in the staging folder rather than published, because reinstating a refused frame is the editor's call and not mine.",
+  "warning_for_the_next_agent": "The 2016 Talisman's underclassman grid carries a cell printed BRIAN ANDERSON on p. 260 (PDF page 132, row 4 column 4 of the left page) and it is a DIFFERENT MAN: fuller wavy strawberry-blond hair, broad face, freckles, no resemblance to either Herald frame of the SGA officer. It looks like an easy grid find and it is the trap this block keeps falling into. The crop is in ~/Desktop/SGA60 photo hunt/_rejected/ so it is not re-cut as new.",
+  "replaced_entry": {
+   "year": "2016-17",
+   "name": "Brian Anderson",
+   "file": "2016-17-brian-anderson.jpg",
+   "replaces": null,
+   "width": 800,
+   "height": 999,
+   "quality": "good",
+   "why": "A posed single-subject Herald portrait, suited, lit from the window of Gordon Wilson Hall. Only one person is in the frame, so the caption cannot attach to anyone else. It is a profile rather than a full-face view, but it is far the best-made picture of him the Herald holds. The 2015 date is before he reached SGA, and the link forward is the Herald's own: the same paper photographs 'Brian Anderson, sophomore from Hodgenville' at the campus surrogate debate of 1 November 2016, inside his year as Chair of Legislative Research, and Hodgenville is the seat of LaRue County, the school this portrait names. Cropped from 1501x999; not upscaled.",
+   "caption_quote": "Brian Anderson, a senior from LaRue County High School, poses for a portrait in Gordon Wilson Hall",
+   "src": {
+    "label": "College Heights Herald, 10 February 2015, portrait by Emily Kask",
+    "url": "https://wkuherald.com/wp-content/uploads/2015/02/a7be4e6f4ec8bb639654501fa1f924a9.jpg"
+   },
+   "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: the 10 Feb 2015 forensics-signing portrait of a LaRue County high school senior. Name plus timing only, and Brian Anderson is a common name. Do not publish."
+  }
+ },
+ {
+  "year": "2016-17",
+  "name": "Shantel Pettway",
+  "file": "2016-17-shantel-pettway.jpg",
+  "replaces": "2016-17-shantel-pettway.jpg (the refused 'Shades of Melanin' studio portrait; the old file is kept at ~/Desktop/SGA60 photo hunt/_rejected/2016-17-shantel-pettway--shades-of-melanin-REFUSED.jpg)",
+  "width": 511,
+  "height": 511,
+  "quality": "good",
+  "why": "Her own university portrait, sat for as a WKU student in the year before her SGA service, on a white ground, sharp and full face. It answers the objection that got the previous file withdrawn: this picture was made to be her record of being at WKU, not for a feature on a subject she was asked to speak about. Rendered from the page at the image's native pixel width; not upscaled.",
+  "caption_quote": "SHANTEL PETTWAY",
+  "src": {
+   "label": "2016 Talisman: Life More Life, p. 284, underclassmen portraits (Parsons-Plott), UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
+  },
+  "identification": "Grid keyed by position. The left-hand page of the spread runs five rows of four portraits against twenty margin names set in one column in five groups of four, each group top to bottom against its row left to right. Her row reads SHANTEL PETTWAY, RACHEL PHELPS, MICHAEL PICENTE, LESLIE PIKE against female, female, male, female, and the same check holds on the facing page of the same spread, whose fourth row is JONATHAN RATLIFF, ROSA RAUDALES, NIKIL RAVISHANKAR, CARLY RAYMER against m/f/m/f and whose fifth row opens with the name BIG RED against the WKU mascot in costume. Pettway is the first portrait of her row. The volume's back index carries exactly one Pettway, 'Pettway, Shantel 284'. The person checks two ways: the Herald of 3 May 2017 calls her 'Louisville senior Shantel Pettway, 22', and a senior in 2016-17 is an underclassman in the book made in 2015-16; and the face in this cell is the same woman as the withdrawn Herald portrait, which nobody has ever doubted is her.",
+  "resolves": "data/photo-finds/_do-not-use.json, Shantel Pettway, 2016-17. That entry does not doubt the face, only the propriety of lifting a portrait she sat for in a feature about skin tone into an archive page about her committee work, the same reasoning as the Cody Cox withdrawal. The refusal stands and this replaces the frame rather than arguing with it.",
+  "replaced_entry": {
+   "year": "2016-17",
+   "name": "Shantel Pettway",
+   "file": "2016-17-shantel-pettway.jpg",
+   "replaces": null,
+   "width": 860,
+   "height": 946,
+   "quality": "good",
+   "why": "A Herald studio portrait of her alone, made for a first-person photo series in which each frame carries its own subject's words and name. Sharper and much closer than the only other Herald frame of her, a small black-and-white full-length pageant photograph from 2015. Cropped from 1501x1001; not upscaled.",
+   "caption_quote": "My dark skin is who I am ... Louisville senior Shantel Pettway, 22, stated.",
+   "src": {
+    "label": "College Heights Herald, 3 May 2017, portrait from the paper's first-person series",
+    "url": "https://wkuherald.com/wp-content/uploads/2017/05/0b883a0f92f3b5ebc3d09236e3dc08b6.jpg"
+   },
+   "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: this is the 3 May 2017 'Shades of Melanin' studio portrait, withdrawn for the same reason as the Cody Cox frame - she sat for a feature about skin tone and her own words about self love, not for a student government photograph. The register entry carries no url, so the landing script may not catch it automatically. Do not publish."
+  }
+ },
+ {
+  "year": "2018-19",
+  "name": "Matt Barr",
+  "file": "2018-19-matt-barr.jpg",
+  "replaces": null,
+  "width": 666,
+  "height": 667,
+  "quality": "good",
+  "why": "SGA's own official studio headshot of him as a member of the executive cabinet: front-facing, evenly lit, suited, with the WKU Big Red lapel pin. Taken from the live WKU server at its native 666x667; not cropped, not resized. The archive holds no other photograph of him, and the Herald never took one in eleven stories.",
+  "caption_quote": "published as matt.jpg in SGA's executive branch headshots directory",
+  "src": {
+   "label": "WKU Student Government Association, executive branch headshots directory, file matt.jpg",
+   "url": "https://www.wku.edu/sga/executive/headshots/matt.jpg"
+  },
+  "src2": {
+   "label": "WKU SGA Executive Branch page served by this directory (Internet Archive capture, 15 August 2020), which pairs paul.jpg with 'Paul Brosky', ashlynn.jpeg with 'Ashlynn Evans', aubrey.png with 'Aubrey Kelley', kenan.jpg with 'Kenan Mujkanovic', will2.jpeg with 'Will Harris', garrett_new.jpg with 'Garrett Edmonds' and abbey.jpeg with 'Abbey Norvell'",
+   "url": "https://web.archive.org/web/20200815142434/http://www3.wku.edu/sga/executive/index.php"
+  },
+  "identification": "An uncaptioned file, identified by a naming convention that was proved before it was used, not assumed. WKU SGA's executive headshots directory names each cabinet portrait by the member's working given name, and the archived executive page above pairs seven of those files with seven names outright. A predecessor tested the convention on this same directory against faces the archive already held from independent sources and published kody.jpg as Kody Okert on that basis. Three further checks were made here. First, matt.jpg is from the same studio session as kody.jpg: the same mottled dark-brown backdrop, the same lighting and framing, and the same WKU Big Red lapel pin, and Kody Okert sat on the 2020-21 cabinet. Second, of every cabinet this directory serves - 2019-20 (Harris, Edmonds, Mujkanovic, Kelley, Brosky, Evans, Norvell) and 2020-21 (Edmonds, Norvell, Barr, Evans, Okert, Brosky) - exactly one member is called Matt, and it is Matt Barr, Chief of Staff for 2020-21. Third, the only other people of the period whose given name is Matthew are ruled out against portraits the archive already publishes: Matthew Wininger, president 2021-22, is a different man with no glasses and curly fair hair, and Reed Breunig, whose WKU account is matthew.breunig132, is a different man again. The directory does hold one 2021-22 file, jamison.jpeg, so it was not sealed after 2020-21; that is why the two Matthews of 2021-22 were checked by face rather than by date.",
+  "note_on_year": "Filed to 2018-19, his first year and the one this block covers, where the archive records him as Chair of Campus Improvements. The photograph itself is his 2020-21 executive cabinet headshot, made two years later; the same file should serve his 2019-20 and 2020-21 rows. The archive already does this - the 2018-19 Aubrey Kelly entry uses her 2019-2020 cabinet headshot."
+ },
+ {
+  "year": "2014-15",
+  "name": "Elicia Tillis",
+  "file": "2014-15-elicia-tillis.jpg",
+  "replaces": null,
+  "width": 511,
+  "height": 511,
+  "quality": "good",
+  "why": "Her graduate-student studio portrait in the 2016 Talisman, sharp, evenly lit, full face and composed by the sitter: she holds an open book in one hand and a poster of Angela Davis in the other. The archive holds no other photograph of her and the Herald never took one. Rendered from the page at the image's native pixel width; not upscaled.",
+  "caption_quote": "ELICIA TILLIS",
+  "src": {
+   "label": "2016 Talisman: Life More Life, p. 299, graduate student portraits (Pait-Vaughn), UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
+  },
+  "identification": "Grid keyed by position. The right-hand page of this spread runs four rows of four portraits against sixteen margin names set in one column in groups of four, each group top to bottom against its row left to right, and every row checks on sex: row 1 RYAN PAIT, EMILY POTTER, CONOR SCRUTON, RIPPA SEHGAL against m/f/m/f, row 2 m/f/f/f, row 3 SIMONE SMITH, RAHUL SRINIVASAN, STEVEN STEWART, ELICIA TILLIS against f/m/m/f, and the last row carries three names against three portraits. Tillis is the fourth and last portrait of row 3. The volume's back index reads 'Tillis, Elicia 299' and carries no other Tillis. The person is settled by the Herald three ways over: it reports on 11 February 2015 that 'SGA also approved Brian Chism as Student Affairs Chair and Elicia Tillis as Cultural and Diversity Affairs Chair', which is exactly the office the archive records; it calls her 'Senator Elicia Tillis' on 6 May 2015; and on 15 October 2015 it calls her 'Denver graduate student Elicia Tillis', which is what she is in this grid, in the year this book covers. It had called her a Denver, Colorado junior in 2012."
+ },
+ {
+  "year": "2015-16",
+  "name": "Omer Toqeer",
+  "file": "2015-16-omer-toqeer.jpg",
+  "replaces": null,
+  "width": 510,
+  "height": 510,
+  "quality": "good",
+  "why": "His graduate-student studio portrait in the 2016 Talisman, taken in the year he was appointed to the Senate: single subject on a white ground, front-facing, sharp, in a WKU polo. The only photograph of him in the archive's reach. Rendered from the page at the image's native pixel width; not upscaled.",
+  "caption_quote": "TOQEER OMER",
+  "src": {
+   "label": "2016 Talisman: Life More Life, p. 298, graduate student portraits (Kang-Omer), UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
+  },
+  "identification": "Grid keyed by position. The left-hand page of this spread runs five rows of four portraits against twenty margin names in one column in groups of four, each group top to bottom against its row left to right, and four of the five rows check on sex: row 1 ZHUFENG KANG, SUMRA KANWAL, MAYANK KAPADIA, JASMINE KELLY against m/f/m/f, row 2 f/m/f/m, row 3 m/f/f/f, row 4 f/m/m/m. Row 5 is VAMSI MOHAN NARISETTY, FAHAM NEHAL, MATTHEW NGUYEN, TOQEER OMER against four men, so it cannot be sex-checked, but it is four names against four portraits in a page whose other four rows all resolve, and Omer is the fourth and last of the row. The person is confirmed by the Herald of 5 April 2016, which calls him 'PSA President Toqeer Omer, a graduate student from Islamabad, Pakistan' - a graduate student in the year of this book, which is the grid he is in, and the only Toqeer or Omer the paper has ever named.",
+  "name_note": "The archive spells him Omer Toqeer, from SGA's own Senate minutes of 26 January 2016 recording his appointment. Both the Talisman and the Herald print him the other way round, Toqeer Omer, and the Talisman alphabetises him under O between Nguyen and Pait, so the yearbook and the newspaper both treat Omer as the surname. This is the ordinary reversal of a South Asian name in a minutes book. Flagged, not fixed."
+ },
+ {
+  "year": "2015-16",
+  "name": "Paul Francis Wilson",
+  "file": "2015-16-paul-francis-wilson.jpg",
+  "replaces": null,
+  "width": 511,
+  "height": 511,
+  "quality": "good",
+  "why": "His underclassman studio portrait in the 2016 Talisman, taken in the year he was appointed to the Senate. Single subject on a white ground, front-facing, sharp and well lit. Rendered from the page at the image's native pixel width; not upscaled.",
+  "caption_quote": "PAUL FRANCIS WILSON",
+  "src": {
+   "label": "2016 Talisman: Life More Life, p. 294, underclassmen portraits (Williams-Wright), UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
+  },
+  "identification": "Grid keyed by position. The left-hand page runs five rows of four portraits against twenty margin names in one column in groups of four, each group top to bottom against its row left to right, and every row checks on sex: row 1 CYNTHIA WILLIAMS, JAROD WILLIAMS, JEFF WILLIAMS, MARISA WILLIAMS against f/m/m/f, row 2 m/m/f/f, row 3 PAUL FRANCIS WILSON, RACHAEL WILSON, MATTHEW WINE, MAX WINEBRENNER against m/f/m/m, row 4 m/m/f/m, row 5 m/f/m/m. Wilson is the first portrait of row 3. Two cells on this page hold two people rather than one, the third of row 1 and the fourth of row 3, but neither is his and the name-to-cell count is unaffected. The name is distinctive enough that the volume's back index carries it in full, 'Wilson, Paul Francis 294', and SGA's own Senate minutes of 20 October 2015 record his appointment under exactly that three-part name. The Herald confirms the timing from the other end: reporting on the 2020 Bowling Green city commission race it calls him 'Paul Francis Wilson ... a 2019 WKU alumnus', and a 2019 graduate is an underclassman in the book made in 2015-16.",
+  "name_note": "SGA's minutes of 2 February 2016 record his vote as 'Francis Wilson', which years.json already flags."
+ },
+ {
+  "year": "2015-16",
+  "name": "James Hill",
+  "file": "2015-16-james-hill.jpg",
+  "replaces": null,
+  "width": 511,
+  "height": 511,
+  "quality": "good",
+  "why": "His underclassman studio portrait in the 2016 Talisman, made in the very semester he was appointed to the Senate. Single subject on a white ground, front-facing, sharp. Rendered from the page at the image's native pixel width; not upscaled.",
+  "caption_quote": "JAMES HILL",
+  "src": {
+   "label": "2016 Talisman: Life More Life, p. 274, underclassmen portraits (Hayslip-Hoffman), UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
+  },
+  "identification": "The FACE is fixed. The left-hand page runs five rows of four portraits against twenty margin names in one column in groups of four, each group top to bottom against its row left to right, and every row checks on sex: row 1 JACOB HAYSLIP, JADE HAYWOOD, KATHERINE HEDRICK, EVAN HEICHELBECH against m/f/f/m, row 2 f/m/m/f, row 3 m/f/f/f, row 4 four men, row 5 JAMES HILL, TAYLOR HILLARD, JACOB HODGES, TREVOR HOFFMAN against m/f/m/m. Hill is the first portrait of row 5. Worth noting for whoever checks this: the third portrait of row 1 on the same page is Katherine Hedrick, the 2016-17 associate justice whose face the archive already publishes from a Herald frame, so this page can be verified against a known face.",
+  "identification_caveat": "The PERSON is probable, not proved, and the editor should weigh it. Hill is a common surname and James a common given name. What is in its favour: SGA's own Senate minutes appoint James Hill to the Senate on 26 January 2016, inside the academic year this book photographs, so he was a WKU student of that name in that year, which is exactly what the cell says; the Herald of 21 April 2016 then has him elected a sophomore senator for 2016-17, which makes him a freshman in 2015-16 and an underclassman in this grid; and the volume's back index carries exactly one James Hill, the other Hills being Harrison and Jerome. What is missing is a disambiguator inside the cell: the underclassmen cells print a name and nothing else, no major and no home town, and the Herald has never given him one either."
+ },
+ {
+  "year": "2019-20",
+  "name": "Elias Thompson",
+  "file": "2019-20-elias-thompson.jpg",
+  "replaces": null,
+  "width": 505,
+  "height": 718,
+  "quality": "soft",
+  "why": "A working photograph, and the only frame of him in any WKU source that shows a face at all. He is planning a door-to-door canvassing route with a fellow student, head and shoulders, three-quarter view, looking down at the phone in her hand. Soft, because the photographer focused on the other subject, and cropped from a full-bleed page image; rendered at the page image's own native scale, not upscaled. It is published because the archive's quality floor is low and the alternative is nothing: the Herald's only frame of the same activity is shot from behind and is refused in the withdrawal register for showing no face.",
+  "caption_quote": "LEFT: Spring Hill, Tenn., junior Elias Thompson and White House, Tenn., sophomore Julianna Lowe plan out their route",
+  "src": {
+   "label": "2019 Talisman: Balance, p. 52, from the photo story 'Young and Partisan' by Morgan Bass, UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8683"
+  },
+  "identification": "Which figure is which. The caption block sits on the facing page and is positional: it labels this full-bleed photograph 'LEFT:' and the one beneath it 'BELOW:', so the caption belongs to this frame and to no other. It names two people, Elias Thompson and Julianna Lowe, and the frame holds exactly two, one man and one woman; Elias is the man and Julianna the woman. He is the figure on the left, blond hair tied up over a shaved undercut, in a white t-shirt.",
+  "identification_person": "The archive's Elias Thompson is a 2019-20 senator, confirmed by the Senate on 25 February 2020, and this photograph was made on 5 October 2019, inside that academic year. The tie is not name plus timing alone: the withdrawal register already records a Herald photograph of Elias Thompson canvassing for the Beshear campaign on 1 October 2019 and refuses it only because it is shot from behind and shows no face, not because the person is doubted. This is the same student on the same campaign four days later, and it shows his face. The caption also gives him a home town, Spring Hill, Tennessee, which no other source in the archive has for him, and a class year, junior, that fits."
+ },
+ {
+  "year": "2015-16",
+  "name": "John Winstead",
+  "file": "2015-16-john-winstead.jpg",
+  "replaces": "2015-16-john-winstead.jpg (the refused Herald staff mugshot; the old file is kept at ~/Desktop/SGA60 photo hunt/n1419/2015-16-john-winstead--herald-columnist-mug-ALTERNATIVE.jpg)",
+  "width": 642,
+  "height": 642,
+  "quality": "good",
+  "why": "His senior class studio portrait in the 2016 Talisman, 642x642 on a white ground, made in the year he sat in the Senate. It carries his own printed name, major and home town in the margin beside it, which the refused newsroom mugshot did not. Rendered from the page at the image's native pixel width; not upscaled.",
+  "caption_quote": "JOHN WINSTEAD / PHILOSOPHY / WHITE HOUSE, TENNESSEE",
+  "src": {
+   "label": "2016 Talisman: Life More Life, p. 257, senior portraits (Wells-Woodward), UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
+  },
+  "identification": "Grid keyed by position. The right-hand page carries twelve margin names in one column in four groups of three against four rows of three portraits, the groups lining up in y with the rows and each group reading top to bottom against its row left to right. His row is SKYLER WILSON, JOHN WINSTEAD, SARAH WOODWARD against male, male, female, and the two rows above check the same way, row 2 ELIZABETH WHITTERS, LINDSAY WHITTINGTON, JEFFREY WILLIAMS against f/f/m and row 3 BRIANNA WILLIAMS, JADE WILSON, DANIEL WILSON against f/f/m. Winstead is the centre portrait of the last row.",
+  "resolves": "data/photo-finds/_do-not-use.json, John Winstead, 2015-16. That entry refused the Herald's staff mugshot of its Synthesis columnist because 'none of the thirteen captions' says the columnist held office and 'only the name links it to the archive's 2015-16 senator'. The Herald's own text says it, three separate times, and none of it is in a caption, which is why a caption sweep missed it: 'The Judicial Council launched an investigation on SGA senator John Winstead, who is also an opinion columnist for the Herald' (3 December 2015, on the impeach-Ransdell sign, an episode years.json already records); 'Another author, John Winstead, who is also a columnist for the Herald' (29 March 2016, on Resolution 2-16-S); and 'John Winstead, SGA senator and Herald columnist, reached out to her to be a co-author', quoting Kate McElroy the same day. One man, senator and columnist. The two photographs are also plainly the same face - the same strawberry-blond hair and hairline, the same pale eyes, nose and mouth, bearded in the yearbook and clean-shaven in the newsroom. The refused mug is therefore also of the SGA senator; it is NOT republished, because reinstating a refused frame is the editor's call, and it is kept in the staging folder. The Talisman portrait is in any case the better picture and carries its own printed name.",
+  "adds_to_the_record": "The Talisman cell gives him a major, Philosophy, and a home town, White House, Tennessee, neither of which the archive holds.",
+  "replaced_entry": {
+   "year": "2015-16",
+   "name": "John Winstead",
+   "file": "2015-16-john-winstead.jpg",
+   "replaces": null,
+   "width": 710,
+   "height": 887,
+   "quality": "good",
+   "why": "The Herald's own staff mugshot of him, a single-subject frame shot against the Talisman shelves in the paper's office and re-run in fourteen issues from September 2015 to September 2016 — exactly his SGA year. Only one person is in the frame, so the caption cannot be misread onto anyone else. Cropped to head and shoulders from 1501x1001; not upscaled.",
+   "caption_quote": "John Winstead mug",
+   "src": {
+    "label": "College Heights Herald, 3 September 2015, staff mugshot of John Winstead",
+    "url": "https://wkuherald.com/wp-content/uploads/2015/09/cf4ffdd7a9e6f0c27aad58cb908525dc-1.jpg"
+   },
+   "do_not_use": "REFUSED by data/photo-finds/_do-not-use.json: the Herald columnist's mug for 'Synthesis'. None of the thirteen captions says the columnist held office; only the name links it to the 2015-16 senator. Do not publish."
+  }
  }
 ]

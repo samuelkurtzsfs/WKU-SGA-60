@@ -1,17 +1,5 @@
 [
  {
-  "name": "Ben Lineweaver",
-  "years": "2008-09",
-  "first_year": "2008-09",
-  "offices": "Chair, Campus Improvements Committee (2008-09)"
- },
- {
-  "name": "Brittany Ann Wick",
-  "years": "2008-09",
-  "first_year": "2008-09",
-  "offices": "Chair, Academic Affairs Committee (2008-09)"
- },
- {
   "name": "Corey Bewley",
   "years": "2008-09",
   "first_year": "2008-09",
@@ -28,12 +16,6 @@
   "years": "2008-09",
   "first_year": "2008-09",
   "offices": "Secretary of the Senate (2008-09)"
- },
- {
-  "name": "Jesse Caylor",
-  "years": "2008-09",
-  "first_year": "2008-09",
-  "offices": "Chair, Student Affairs Committee (2008-09); Chair, Student Affairs (2008-09)"
  },
  {
   "name": "Lisa M. Kappler",
@@ -78,28 +60,10 @@
   "offices": "Justice, Judicial Council (2009-10)"
  },
  {
-  "name": "Currie Martin",
-  "years": "2009-10",
-  "first_year": "2009-10",
-  "offices": "Chair, Student Affairs (2009-10)"
- },
- {
   "name": "Dajana Crockett",
   "years": "2009-10; 2010-11",
   "first_year": "2009-10",
   "offices": "Justice, Judicial Council (2009-10); Chief Justice (2010-11)"
- },
- {
-  "name": "Daniel Shaw",
-  "years": "2009-10; 2010-11; 2011-12",
-  "first_year": "2009-10",
-  "offices": "Parliamentarian (2009-10); Senator (2010-11); Senator (2011-12)"
- },
- {
-  "name": "Dave Vickery",
-  "years": "2009-10",
-  "first_year": "2009-10",
-  "offices": "Chair, Academic Affairs (2009-10)"
  },
  {
   "name": "Eliana Martinez",
@@ -144,12 +108,6 @@
   "offices": "Senator (2010-11); Secretary of the Student Senate (2011-12)"
  },
  {
-  "name": "Hannah Garland",
-  "years": "2011-12; 2013-14",
-  "first_year": "2011-12",
-  "offices": "Senator (2011-12); Director of Academic and Student Affairs (2013-14)"
- },
- {
   "name": "Jane Wood",
   "years": "2011-12",
   "first_year": "2011-12",
@@ -166,12 +124,6 @@
   "years": "2011-12; 2012-13; 2013-14",
   "first_year": "2011-12",
   "offices": "Senator (2011-12); Chair, Campus Improvements (2012-13); Chair, Campus Improvements Committee (early fall 2013) (2013-14)"
- },
- {
-  "name": "Barrett Greenwell",
-  "years": "2012-13; 2013-14; 2014-15; 2015-16",
-  "first_year": "2012-13",
-  "offices": "Senator (freshman) (2012-13); Student Affairs Committee Chair (2013-14); Director of Academic and Student Affairs (2014-15); Director of Academic and Student Affairs (2015-16)"
  },
  {
   "name": "Cole McDowell",
@@ -204,12 +156,6 @@
   "offices": "Justice, Judicial Council (2012-13)"
  },
  {
-  "name": "Laura Harper",
-  "years": "2012-13; 2013-14",
-  "first_year": "2012-13",
-  "offices": "Senator at Large (2012-13); Director of Public Relations (2013-14)"
- },
- {
   "name": "Mallory Treece",
   "years": "2012-13; 2013-14",
   "first_year": "2012-13",
@@ -238,12 +184,6 @@
   "years": "2013-14; 2014-15",
   "first_year": "2013-14",
   "offices": "Justice, Judicial Council (2013-14); Chief Justice (2014-15)"
- },
- {
-  "name": "Megan Skaggs",
-  "years": "2013-14; 2014-15; 2015-16",
-  "first_year": "2013-14",
-  "offices": "Chair, Academic Affairs Committee (2013-14); Director of Academic and Student Affairs (2014-15); Legislative Research Committee Head (2015-16)"
  },
  {
   "name": "Tyler Scaff",

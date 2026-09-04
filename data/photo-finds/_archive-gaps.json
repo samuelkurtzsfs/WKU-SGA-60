@@ -346,5 +346,67 @@
    "label": "data/years.json 2015-16 judicial council; 2016 Talisman p. 315",
    "url": ""
   }
+ },
+ {
+  "topic": "HERALD PRINT CAPTION INDEX NOW REACHES 2019, BUILT 4 SEPTEMBER 2026",
+  "note": "The 2010-2016 index has been extended three years. ~/Desktop/SGA60 photo hunt/_herald-index-2010-2016/ now also holds photo_captions_2017-2019.jsonl and photo_captions_2017-2019b.jsonl plus the matching herald_text files: 96 of the 99 digitised print Heralds of 2017, 2018 and 2019, 988 embedded photographs, each with its xref, native pixel size, rectangle and the text below, right of and above it. Same schema as the 2010-2016 files, so one grep covers 2010 to 2019. Built through the Wayback route with three workers; three issues would not come down after retries (2017-04-06 art.10721, 2017-08-22 art.10671, 2017-11-02 art.10950) and are the only gap. WHAT IT PROVES: all 44 officers of the n1419 block and all 64 names of its worklist, 108 people, were run against it and not one appears in a single caption. Combined with the same result from the 2010-2016 index and from the whole wkuherald.com media library, this is the hard evidence for the pattern earlier blocks suspected - the Herald quotes committee chairs and justices constantly and almost never photographs them.",
+  "src": {
+   "label": "College Heights Herald 2017-2019, UA12/2/1",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
+  }
+ },
+ {
+  "kind": "source checked and thin",
+  "name": "Talisman magazines 2016-2020",
+  "year": "2016-17 to 2019-20",
+  "detail": "The Talisman stopped being a yearbook after the 2016 volume and became a twice-yearly magazine: dlsc_ua_records 8678 (2016 Identity), 8685 (2017 Well Being), 8686 (2017 Power), 8684 (2018 Grit), 8690 (2018 Movement), 8682 (2019 Paradise), 8683 (2019 Balance), 8681 (2020 Zeitgeist). There are no portrait grids in any of them and no back index of people. Each is about 100 pages and roughly 70-100 MB through the Wayback route, with a clean text layer. Identity and Well Being were pulled and searched against all 44 officers of the n1419 block: not one is named. Worth finishing for a later block, but expect feature subjects, not officers.",
+  "src": {
+   "label": "Talisman magazines, UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8685"
+  }
+ },
+ {
+  "topic": "THE 2016 TALISMAN ALSO CARRIES GRADUATE STUDENTS AND A STAFF GRID - AND THREE OF THIS BLOCK'S FINDS CAME FROM THEM",
+  "note": "The note above says do not skip the faculty and staff grid. Add the GRADUATE STUDENT grid, pp. 296-299, to that warning. Elicia Tillis, an SGA senator and Cultural and Diversity Affairs chair in 2014-15, and Omer Toqeer, a senator appointed in January 2016, are both in it and neither is anywhere else in the archive's reach. An officer who is invisible in the senior and underclassmen grids may simply have been a graduate student. Mechanics for the whole portrait section, verified: PDF page i carries printed folios 2i-2 on the left and 2i-1 on the right, except that PDF 130, 131, 150 and 151 are single pages. Seniors are three portraits to a row at 641x641 native; underclassmen and graduate students are four to a row at 510x510; the margin names sit in the OUTER margin, far left on a left page and far right on a right page, in one column grouped by row. Verify every claim by counting sexes down the row - it resolved every page worked on this run - and note two anchors that make it certain on the pages that have them: p. 285 row 5 opens with the name BIG RED against the mascot in costume, and p. 260 row 4 position 3 is Andrea Ambam, whose face the archive already publishes."
+ },
+ {
+  "topic": "TALISMAN MAGAZINES 2016-2020 ARE NOW ON DISK",
+  "note": "All eight are at ~/Desktop/SGA60 photo hunt/_topscholar-pdfs/talisman-mag-*.pdf, about 450 MB, pulled through the Wayback route. They have no portrait grids and no index of people, and their staff and editorial-board pages carry no photographs at all, which closes an obvious-looking lead: Sophie Whorf was the magazine's marketing manager for two years, Tony Piedmonte and Dillon McCormick wrote for it for four, and none of them is pictured. What they DO have is captioned photo stories, and one of those gave the only face of Elias Thompson that exists anywhere - 2019 Balance, p. 52, whose caption is positional ('LEFT:'). Grep the text layer, it is clean."
+ },
+ {
+  "kind": "settled: one person, two roles",
+  "name": "John Winstead",
+  "year": "2015-16",
+  "detail": "The withdrawal register refused the Herald's mugshot of its Synthesis columnist because nothing tied the columnist to student government. The Herald ties them in its news text, three times, which is why every caption sweep missed it: 'SGA senator John Winstead, who is also an opinion columnist for the Herald' (3 Dec 2015), 'John Winstead, who is also a columnist for the Herald' (29 Mar 2016), and 'John Winstead, SGA senator and Herald columnist' (29 Mar 2016). GENERAL LESSON, worth more than this one case: a do-not-use entry that turns on 'no caption says so' should be retested against ARTICLE TEXT before it is treated as final. Three of this block's four standing refusals fell to that test - Winstead, Brian Anderson (the SGA officer is a WKU Forensics Team member, said outright in two April 2017 letters) and Elias Thompson.",
+  "src": {
+   "label": "College Heights Herald, 3 Dec 2015 and 29 Mar 2016",
+   "url": "https://wkuherald.com/"
+  }
+ },
+ {
+  "kind": "source exhausted",
+  "name": "The Herald never photographs SGA committee chairs and justices, 2014-2020",
+  "year": "2014-15 to 2019-20",
+  "detail": "Earlier blocks suspected this; it is now measured. All 44 officers of the n1419 list and all 108 names of its officer and worklist files were run against four separate photograph indexes: the live wkuherald.com media library searched name by name (the authoritative one, not a cache), data/herald-photos.json with 21,304 captions from 2010 to 2026, the print caption index for 2010-2016 with 23,252 photographs, and the new print caption index for 2017-2019 with 988. Of the 44 officers, five appear in a Herald caption and four of those five frames are refused. Yet the same people are quoted constantly: Mark Clark in 21 articles, Ian Hamilton in 15, Cassidy Townsend and Josh Knight in 14 each, William Hurst in 11, Matt Barr in 11, Josh Zaczek and Ryan Richardson in 10 each. The paper covers SGA as votes and quotations and photographs almost nobody but the president and the election-night winners. A later block should not spend a run re-proving this; go to the yearbooks, to SGA's own headshot directories, and to the university photograph directory instead.",
+  "src": {
+   "label": "wkuherald.com media and posts endpoints; the print caption indexes",
+   "url": "https://wkuherald.com/wp-json/wp/v2/media"
+  }
+ },
+ {
+  "topic": "img_facstaff RETURNS 200 FOR A PHOTO THAT DOES NOT EXIST",
+  "note": "wku.edu/img_facstaff/<handle>.jpg answers HTTP 200 with an identical WKU-logo placeholder when the person has no photograph: md5 819cd6b1bf686b3881d1434c635e3a1f, exactly 39,409 bytes. A status-code check will happily file the same logo as three different people. Always hash the body. Of 101 handles tested, 79 were the placeholder, including all 26 recoverable handles for the 2014-19 officers, so that route is exhausted for that cohort."
+ },
+ {
+  "topic": "RETEST A REFUSAL AGAINST ARTICLE TEXT, NOT JUST CAPTIONS",
+  "note": "Three of the four standing refusals on 2014-19 fell to one test. Each rested on the reasoning that no caption ties the person to SGA — but the Herald states the tie in ARTICLE TEXT and caption sweeps never see it. John Winstead's columnist mugshot was refused for exactly that reason, and the paper wrote 'SGA senator John Winstead, who is also an opinion columnist for the Herald' three separate times. Before accepting a 'no caption says so' refusal, search the body text of the issues around it."
+ },
+ {
+  "topic": "THE 2016 TALISMAN GRADUATE GRID, AND WHY AN OFFICER CAN BE MISSING",
+  "note": "Pages 296-299 are the graduate students grid and have now yielded finds on two separate blocks. An officer absent from the senior and underclassmen grids may simply have been a graduate student that year, or on the faculty-and-staff grid if they went on to work for WKU. Check all four grids before concluding somebody is not in the book."
+ },
+ {
+  "topic": "HERALD CAPTION INDEX NOW REACHES 2019",
+  "note": "~/Desktop/SGA60 photo hunt/_herald-index-2010-2016/ now also holds photo_captions_2017-2019*.jsonl, 96 of 99 issues and 988 photographs in the same schema, so a single grep covers 2010-2019. Three issues never came down: articles 10721, 10671, 10950. All eight Talisman magazines 2016-2020 are in _topscholar-pdfs/ — no portrait grids, but captioned photo stories, one of which held the only face of Elias Thompson."
  }
 ]

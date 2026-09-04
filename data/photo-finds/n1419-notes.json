@@ -138,5 +138,195 @@
   "outcome": "not found - no photograph in any WKU source",
   "detail": "Judicial Council 2019-20 and Associate Chief Justice 2021-22. His account handle turner.reynolds233 was recovered on this run from the SGA judicial council page captured 21 January 2022; the directory answers the placeholder. He is named in the same single Herald article as Jason Herlick, 25 September 2019, and nowhere else. The 2016 Talisman indexes four Reynoldses and none is Turner.",
   "checked": "wkuherald.com media library (0); data/herald-photos.json (38 Reynolds captions, none him); wkuherald.com article text (1 article); the 2016 Talisman back index (Reynolds, Benjamin S. 315; Logan 285; Nicole 285; Stefan 251) and portrait grids; the 2015 Talisman index (J.P. and Tyler Reynolds only); wku.edu/img_facstaff for turner_reynolds233 (placeholder)"
+ },
+ {
+  "name": "Josh Knight",
+  "year": "2014-15",
+  "outcome": "not found - named in fourteen Herald stories, photographed in none",
+  "detail": "Academic Affairs Committee chair 2014-15, senator 2015-16, Director of Academic and Student Affairs 2016-17, and by 2019 a WKU Master of Public Administration student still being quoted by the Herald. Fourteen articles across six years and not one photograph. He is in the 2016 Talisman, and only as words: its back index reads 'Knight, Josh 141', and printed page 141 is the profile of chief of staff James Line, where he is quoted saying Line's friendship with President Richey 'has been key for SGA accomplishing its initiatives'. The two photographs on that spread are of Line and Richey, and the caption names them. He is not in any portrait grid in either surviving Talisman. Two details a later pass can use as disambiguators if a frame ever surfaces: the Talisman calls him 'an Owensboro junior' in 2015-16 and the Herald of 27 March 2019 'a Master's of Public Administration student from Owensboro'.",
+  "checked": "wkuherald.com media library (2 items, both a 2021 basketball caption naming Josh Anderson); data/herald-photos.json; the print Herald caption index 2010-2016 and the new 2017-2019 index built on this run (0); wkuherald.com article text (14 articles); the 2016 Talisman back index, portrait grids and the p.141 spread; the 2015 Talisman index ('Knight, Josh 332', a clubs roster); wku.edu/img_facstaff for joshua_knight976 (placeholder)"
+ },
+ {
+  "name": "Nathan Cherry",
+  "year": "2014-15",
+  "outcome": "not found - and he sat out the yearbook",
+  "detail": "One of the three freshman senators elected in September 2014, with 162 votes, then a senator in 2015-16 and Speaker of the Senate in 2016-17. He should have been an underclassman in the 2016 Talisman and he is not there: the volume's index carries Jenna K. Cherry and Samuel Cherry and no Nathan, and its portrait grids hold neither. Not every student sat for a portrait, and he was one who did not. The Herald names him in ten articles between September 2014 and February 2017 and photographs him in none. Cherry is also a search trap on this campus - Cherry Hall is WKU's main academic building, so caption searches return the building.",
+  "checked": "wkuherald.com media library (1 item, a 2023 caption set at Cherry Hall); data/herald-photos.json (156 Cherry captions, the building or other people); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (10 articles); the 2016 and 2015 Talisman back indexes and every portrait grid; wku.edu/img_facstaff for nathan_cherry887 (placeholder)"
+ },
+ {
+  "name": "Cody Cox",
+  "year": "2015-16",
+  "outcome": "a photograph of him exists and is refused on purpose, not on identity",
+  "detail": "Associate Justice 2015-16 and Chief Justice 2016-17. The only photograph the Herald holds of him is the single-subject portrait of 6 February 2014 made for 'In My Skin: Gay students take pride in sexuality', captioned 'Winchester freshman Cody Cox came out of the closet when he was a junior in high school'. It is him and it is a good photograph. It is refused in data/photo-finds/_do-not-use.json because he sat for it for that feature and not for anything to do with student government, the same reasoning that withdrew the Shantel Pettway portrait, and it has already been withdrawn once and re-found once. That refusal is not challenged here and should not be re-litigated. Nothing else exists: the 2016 Talisman has three Coxes and none is Cody, and WKU's directory has no photograph for his account cody.cox736, which was recovered on this run from SGA's judicial council page.",
+  "checked": "wkuherald.com media library (1 item, the refused frame); data/herald-photos.json; the print Herald caption index 2010-2016 (1 hit, the same frame) and the new 2017-2019 index (0); wkuherald.com article text (10 articles, nine of them SGA business); the 2016 and 2015 Talisman back indexes and portrait grids; wku.edu/img_facstaff for cody_cox736 (placeholder)"
+ },
+ {
+  "name": "Cassidy Townsend",
+  "year": "2016-17",
+  "outcome": "not found - fourteen Herald stories, no photograph",
+  "detail": "Senator at large 2016-17, senator 2017-18, SGA SAVES chair 2018-19, and named in fourteen Herald articles across those three years, including her own legislation. Never photographed. The 2016 Talisman indexes only Bailey R. Townsend, on a clubs page, and the 2015 volume only Bailey Townsend. Her account handle cassidy.townsend305 comes from an archived SGA legislative page and WKU's directory has nothing against it.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (4 Townsend captions, none hers); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (14 articles); the 2016 and 2015 Talisman back indexes and every portrait grid; wku.edu/img_facstaff for cassidy_townsend305 (placeholder)"
+ },
+ {
+  "name": "Helen Vickrey",
+  "year": "2016-17",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "MyCampusToo Committee chair 2016-17, the committee SGA created in October 2016 after the resignations over allegations of racism, so she chaired the year's most closely reported initiative and the paper still never photographed her. Six Herald articles, no frame. Vickrey is a rare surname and it appears in no Herald caption at all and in neither Talisman index. No WKU account handle for her survives on any archived SGA page.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Vickrey captions); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (6 articles); the 2016 and 2015 Talisman back indexes at the alphabetical position; every archived wku.edu/sga executive, legislative and judicial page 2014-2022 for a handle (none)"
+ },
+ {
+  "name": "Ian Hamilton",
+  "year": "2016-17",
+  "outcome": "not found - fifteen Herald stories, no photograph",
+  "detail": "Gordon Ford College of Business senator 2016-17, then Sustainability Committee chair and senator at large 2017-18. Fifteen Herald articles including the sustainability committee's own coverage in August 2017 and the election-discrepancy debate of January 2018. Not one photograph. The 2016 Talisman has Courtney, Darrion and Emily Hamilton and no Ian; the 2015 volume has Joseph and Roy. No WKU account handle survives for him.",
+  "checked": "wkuherald.com media library (3 items, all false: a film review, and two captions naming the basketball player Jairus Hamilton); data/herald-photos.json (40 Hamilton captions, none him); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (15 articles, two of them 2004 sports stories about a different man); the 2016 and 2015 Talisman back indexes and every portrait grid; no handle on any archived SGA page"
+ },
+ {
+  "name": "Morgan Wysong",
+  "year": "2016-17",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Public Relations Committee chair 2016-17 and senator at large 2017-18. Wysong is a rare surname and returns nothing anywhere: no Herald caption in the whole photograph library, no print caption 2010-2019, no Talisman index entry in either volume. Three Herald articles name her, all of them election or appointment lists. No WKU account handle survives on any archived SGA page.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Wysong captions); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (3 articles); the 2016 and 2015 Talisman back indexes at the alphabetical position; no handle on any archived SGA page"
+ },
+ {
+  "name": "Ryan Richardson",
+  "year": "2016-17",
+  "outcome": "not found - ten Herald stories, no photograph",
+  "detail": "Senator 2016-17 and Speaker of the Senate 2017-18, so he chaired the Senate for a year and the paper never photographed him. Ten Herald articles, including the Caboni strategic-planning visit of November 2017 and the LGBTQ ceremony funding debate of March 2018. Richardson is a common surname and every caption match is somebody else. He is not in either Talisman index. No WKU account handle survives for him on any archived SGA page.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (11 Richardson captions, none him); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (10 articles); the 2016 Talisman back index (A'Lexus, Ben, Casey, Colton and Sarah Richardson) and every portrait grid; the 2015 Talisman index; no handle on any archived SGA page"
+ },
+ {
+  "name": "Devan Richardson",
+  "year": "2017-18",
+  "outcome": "not found - and the Herald has never printed the name",
+  "detail": "Associate justice 2017-18. Unlike the other Richardson on this list he is not even quoted: no Herald article anywhere carries his name, in either the Devan or the Devon spelling, and the archive knows him only from SGA's own records. No WKU account handle survives on any archived SGA judicial page for 2017-18; the judicial roster captures that do carry addresses are 2016-17 and 2018-19, and he is on neither.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (11 Richardson captions, none him); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (0 articles); the 2016 and 2015 Talisman back indexes and portrait grids; the archived SGA judicial council pages of 1 Nov 2016, 23 Mar 2017, 2 Jun 2017 and 20 Jul 2019 for a handle (he appears on none of them)"
+ },
+ {
+  "name": "Divya Gangavelli",
+  "year": "2017-18",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Chair of Diversity and Inclusion, the committee that had been MyCampusToo, 2017-18. Another rare surname with a clean negative: Gangavelli appears in no Herald caption anywhere, in no print caption 2010-2019, and in neither Talisman index. Two Herald articles name her. No WKU account handle survives on any archived SGA page.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Gangavelli captions); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (2 articles); the 2016 and 2015 Talisman back indexes at the alphabetical position; wku.edu search and campus directory (0 results); no handle on any archived SGA page"
+ },
+ {
+  "name": "Mark Clark",
+  "year": "2017-18",
+  "outcome": "a frame exists, was refused, and the refusal is right - re-examined this run",
+  "detail": "Chair of the Committee of Diversity and Inclusion 2017-18 and 2018-19 and a senator into 2019-20, named in twenty-one Herald articles, more than anyone else on this list. The Herald's photograph library holds exactly one frame that names him, of 14 February 2018 (re-uploaded 13 April 2018), captioned 'Junior Mark Clark and freshman Kat Tyler work in the new Pride Center relocated in Downing Student Union room 2084'. It is refused in _do-not-use.json and the frame was pulled and looked at again on this run: the refusal is correct and should stand. Two people sit at opposite ends of a table, both laughing with a hand raised to the mouth, both with short dark hair, both partly hidden behind laptop screens; the caption gives no positions and nothing visual separates a junior from a freshman. The register's second point, that a photograph made inside the Pride Center may be the wrong portrait for someone whose service is the point, is a question for the editor and is not settled here. Nothing else exists: the 2016 Talisman has seven Clarks and no Mark, and WKU's directory has no photograph for mark.clark867.",
+  "checked": "wkuherald.com media library (2 items, both uploads of the same refused frame); data/herald-photos.json (406 Clark captions); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (21 articles); the 2016 and 2015 Talisman back indexes and every portrait grid; wku.edu/img_facstaff for mark_clark867 (placeholder)"
+ },
+ {
+  "name": "Smita Peter",
+  "year": "2017-18",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Director of Information Technology 2017-18. Six Herald articles name her, including the executives' farewell to the Senate on 25 April 2018 and two stories about international students; none carries a photograph of her. Neither Talisman index has a Peter as a surname - the near misses are Peter Fields, Peter Vawryk and Gracie Peter, all given names or a different family. No WKU account handle survives on any archived SGA page.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (80 Peter captions, all the given name); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (6 articles); the 2016 and 2015 Talisman back indexes at the alphabetical position; no handle on any archived SGA page"
+ },
+ {
+  "name": "Trevor Huffman",
+  "year": "2017-18",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Senator 2017-18 and Chair of Legislative Research 2018-19. Four Herald articles, no photograph. The 2016 Talisman indexes only Luke Huffman and the 2015 volume only Anna, John Michael and Rachel Huffman. His account handle trevor.huffman267 comes from an archived SGA legislative page and WKU's directory has nothing against it.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (1 Huffman caption, not him); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (4 articles); the 2016 and 2015 Talisman back indexes and every portrait grid; wku.edu/img_facstaff for trevor_huffman267 (placeholder)"
+ },
+ {
+  "name": "William Hurst",
+  "year": "2016-17",
+  "outcome": "not found - eleven Herald stories, no photograph, including his own censure",
+  "detail": "Senator at large 2016-17 and 2017-18 and Chair of Public Relations 2017-18. Eleven Herald articles name him, including the Dreamers resolution of October 2017 and the GPA-requirement debate in which he is quoted at length. years.json records that his committee chairmanship was censured by the Judicial Council in January 2018 over an election-discrepancy complaint; even that produced no photograph. Hurst appears in no Talisman index. No WKU account handle survives for him on any archived SGA page.",
+  "checked": "wkuherald.com media library (1 item, a 2022 ROTC caption naming somebody else); data/herald-photos.json (13 Hurst captions, none him); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (11 articles); the 2016 and 2015 Talisman back indexes at the alphabetical position; no handle on any archived SGA page"
+ },
+ {
+  "name": "Jillian Kenney",
+  "year": "2018-19",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Senator at large 2018-19 and Sustainability Committee head 2019-20. Her account handle jillian.kenney124 was recovered on this run from SGA's own 2018-2019 legislative branch page, captured 20 July 2019, which lists her office hours as Monday 12-1; WKU's photograph directory answers the placeholder for it. Two Herald articles name her, the Bowling Green pride festival of October 2018 and the fairness ordinance report of April 2019. The 2016 Talisman indexes James Kenney and Weston Kenney and no Jillian.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (19 Kenney captions, none hers); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (2 articles); the 2016 and 2015 Talisman back indexes and every portrait grid; wku.edu/img_facstaff for jillian_kenney124 (placeholder)"
+ },
+ {
+  "name": "Josh Zaczek",
+  "year": "2018-19",
+  "outcome": "not found - ten Herald stories, no photograph",
+  "detail": "Legislative Research chair 2018-19 and 2019-20, and one of the more heavily reported senators of those years: the budget impasse of September 2019, the Alpha Xi Delta repercussions story of October 2019, the executive board's veto of Resolution 4-19-F. Ten Herald articles, no photograph. Zaczek is about as rare a surname as this list has and it returns nothing in any caption index or Talisman. His account handle joshua.zaczek394 was recovered on this run from SGA's 2018-2019 legislative branch page; WKU's directory answers the placeholder.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Zaczek captions); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (10 articles); the 2016 and 2015 Talisman back indexes; wku.edu/img_facstaff for joshua_zaczek394 (placeholder)"
+ },
+ {
+  "name": "Matt Barr",
+  "year": "2018-19",
+  "outcome": "SUPERSEDED - FOUND later in the same run",
+  "detail": "Chair of Campus Improvements 2018-19 and 2019-20 and Chief of Staff 2020-21, so he reached the executive cabinet. That matters because SGA's own executive headshot directory survives for exactly the year before his, wku.edu/sga/executive/headshots/2019-2020/, holding abbey, ashlynn, aubrey, kenan, will2, garrett_new and paul - and no equivalent directory for 2020-21 exists in the Wayback Machine or on the live server. Had the page been captured one year later his portrait would probably be in it. Eleven Herald articles name him and none carries a photograph. The 2016 Talisman indexes Carli Barr and Louise Barr and no Matt.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (92 Barr captions, none him); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (11 articles); the 2016 and 2015 Talisman back indexes and every portrait grid; SGA's archived executive pages of 5 Dec 2019 and the 2019-2020 headshots directory; wku.edu/sga/2020-2021-executive and 2020_2021_executive on the live server (404) and in the Wayback CDX (no captures)",
+  "superseded": "This note was written before the executive headshots directory was probed by hand. wku.edu/sga/executive/headshots/matt.jpg serves at 200 and is his SGA cabinet studio portrait; it is now published as 2018-19-matt-barr.jpg. The note is kept because its reasoning about the missing 2020-21 executive page is still true and still useful: no capture of wku.edu/sga/executive/index.php exists between 15 August 2020 and 21 January 2022, so the page that would have named this file was never archived, and the identification had to be made from the directory's naming convention and the studio session instead. LESSON FOR THE NEXT AGENT: probe the directory by given name even when the page that lists it is missing."
+ },
+ {
+  "name": "Brenna Mathews",
+  "year": "2019-20",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Parliamentarian and Secretary of the Senate 2019-20, Secretary of the Senate again 2020-21. Two Herald articles name her, the Model Arab League preview of March 2018 and an SGA meeting report of November 2020. No photograph anywhere. She is not in either Talisman index, and no WKU account handle for her survives on any archived SGA page - the 2018-2019 legislative branch capture that yielded handles for Hope Wells, Josh Zaczek and Jillian Kenney predates her taking office.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (6 Mathews captions, none hers); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (2 articles); the 2016 and 2015 Talisman back indexes; every archived wku.edu/sga executive, legislative and judicial roster page 2014-2022 for a handle (none)"
+ },
+ {
+  "name": "Hope Wells",
+  "year": "2019-20",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "SAVES Committee head 2019-20, and before that the College of Behavioral and Human Services senator listed on SGA's own 2018-2019 legislative branch page with office hours on Thursday 1-2 and the address hope.wells024@topper.wku.edu, recovered on this run. WKU's photograph directory answers the placeholder for it. Three Herald articles name her. The 2016 Talisman indexes Kaitlin M. Wells and Thomas Wells and no Hope.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (23 Wells captions, none hers); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (3 articles); the 2016 and 2015 Talisman back indexes and every portrait grid; wku.edu/img_facstaff for hope_wells024 (placeholder)"
+ },
+ {
+  "name": "Matthew Johnson",
+  "year": "2019-20",
+  "outcome": "not found - and the surname makes every route useless",
+  "detail": "Academic and Student Affairs Committee head 2019-20. The hardest name on the list to work with: Johnson returns 227 captions in the Herald's photograph library and 23 separate Johnsons in the 2016 Talisman's back index alone, one of whom is a Matthew Johnson indexed at p. 320 of the 2015 volume, on a clubs page - four years before his SGA service, unpositioned, and with nothing to say it is the same man. The single Herald article matching his full name is from 2003 and is about somebody else entirely. No WKU account handle for him survives on any archived SGA page. Unless a source turns up giving him a home town, a major or a class year, no photograph of him can ever be safely claimed.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (227 Johnson captions); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); wkuherald.com article text (1 article, 2003, a different man); the 2016 Talisman back index name by name at the alphabetical position and every portrait grid; the 2015 Talisman index; every archived wku.edu/sga roster page 2014-2022 for a handle (none)"
+ },
+ {
+  "name": "Abdullah Raza",
+  "year": "2016-17",
+  "outcome": "a frame exists, the person is named, and which face is his cannot be settled - WITHHELD, crop staged",
+  "detail": "WORKLIST, not officers. The 2016 Talisman indexes 'Raza, Abdullah 221' and printed page 221 carries a 3492x3492 full-page photograph of the Pakistani Student Association in a huddle before a cricket match, captioned 'Sialkot, Pakistan, junior Abdullah Raza brings the Pakistani Student Association together for a cricket match against the Indian Student Association at Lampkin Park.' The caption names one person and the frame holds at least six, arms across shoulders. One man is central, sharp, facing the camera and mid-shout, and the composition and the verb both point at him, but the caption gives no position and the archive's own register has refused the same shape of claim before, on Beth McGrew's garden-party frame and on Murphy Burke's forum frame. Withheld on that precedent rather than published on a reading of the composition. The crop is staged at ~/Desktop/SGA60 photo hunt/n1419/UNRESOLVED-2016-17-abdullah-raza--talisman-p221-central-figure.jpg so the work is not lost; publish it only if a second frame or a positional caption turns up. Two facts in its favour if anyone revisits it: the caption gives him a home town, Sialkot, Pakistan, and a class year, junior in 2015-16, which the archive does not otherwise have; and Omer Toqeer, whose portrait was found on this run, was the Pakistani Student Association's president in the same year, so the two SGA senators were in the same society.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Raza captions); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); the 2016 Talisman back index and every portrait grid (he has no portrait cell); the 2015 Talisman index"
+ },
+ {
+  "name": "Courtney Hamilton",
+  "year": "2014-15",
+  "outcome": "two frames exist and neither shows a usable face - both refused",
+  "detail": "WORKLIST, not officers. The Herald's four uploads of 9 October 2014 all carry one caption naming two women, 'Owensboro junior Courtney Hamilton and Louisville junior Emily Woodruff are residents in the newly constructed Kentucky Street Apartments', with no positions; that frame is already in the withdrawal register. The 2016 Talisman adds a second, and it fails for a different reason: its index puts her at printed page 208, where the beer-class photo story captions the facing page 'OPPOSITE The notebook tucked in Owensboro senior Courtney Hamilton's arms details the profiles of beer varieties from previous brews.' The photograph is a close-up of the notebook. She is cropped at the chin and only her mouth and jaw are in the frame. Worth recording that the two sources agree she is from Owensboro, a junior in 2014 and a senior in 2015-16, which is the only biography of her the archive has.",
+  "checked": "wkuherald.com media library (4 items, all the same refused caption); data/herald-photos.json; the print Herald caption index 2010-2016 and the new 2017-2019 index; the 2016 Talisman back index, p. 208-209 spread and every portrait grid (no portrait cell); the 2015 Talisman index"
+ },
+ {
+  "name": "Lucas Knight",
+  "year": "2014-15",
+  "outcome": "not found - quoted at length in the Talisman, photographed in none of it",
+  "detail": "WORKLIST, not officers. He served five consecutive years, 2014-15 to 2018-19, the longest run on this block. The 2018 Talisman: Grit gives him a substantial voice in its renters' rights story, calling him 'Owensboro sophomore Lucas Knight, chair of the student coalition' and quoting him three times across two pages, but the photographs on that story are of the rental houses and of Katherine Jones, and none carries a caption naming him. The 2016 Talisman indexes only Courtney Knight and Josh Knight. His account handle lucas.knight078 comes from an archived SGA legislative page and WKU's directory answers the placeholder.",
+  "checked": "wkuherald.com media library (0 for the full name); data/herald-photos.json (106 Knight captions, none his); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); the 2016 and 2015 Talisman back indexes and every portrait grid; the 2018 Talisman: Grit renters' rights story pp. 64-69 read image by image; wku.edu/img_facstaff for lucas_knight078 (placeholder)"
+ },
+ {
+  "name": "Braxton Powell",
+  "year": "2015-16",
+  "outcome": "not found - named in the Talisman only as the man who lost",
+  "detail": "WORKLIST, not officers. He stood against Jay Todd Richey for the presidency in April 2016 and lost with 36 per cent. The 2016 Talisman indexes him at pp. 140 and 315; p. 315 is a club roster, and p. 140 is the profile of chief of staff James Line, where the caption reads 'Richey celebrates the news of being re-elected as the SGA president for next year with his chief of staff and friend, Line on April 19. Richey won reelection over Lewisburg junior Braxton Powell with 64 percent of the overall vote.' The photograph is of Richey and Line. Powell is named in the caption and is not in the frame - the reverse of a usable identification. The Herald never photographed him either.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json; the print Herald caption index 2010-2016 and the new 2017-2019 index (0); the 2016 Talisman back index, the p. 140-141 spread and every portrait grid; the 2015 Talisman index; wku.edu/img_facstaff for braxton_powell007 (placeholder)"
+ },
+ {
+  "name": "Sophie Whorf",
+  "year": "2014-15",
+  "outcome": "not found - on the Talisman's own masthead and still not photographed",
+  "detail": "WORKLIST, not officers. A senator appointed by unanimous consent in 2014-15, and by 2017 and 2018 the Talisman magazine's own Marketing Manager, printed on its editorial board page in both the Power and the Grit issues. Those masthead pages carry no photographs at all - checked image by image, they hold none. The 2016 Talisman's portrait grids and back index have no Whorf. Her account handle sophia.whorf458 comes from an archived SGA legislative page and WKU's directory answers the placeholder.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Whorf captions); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); the 2016 and 2015 Talisman back indexes and portrait grids; the editorial board pages of the 2017 Power and 2018 Grit magazines (no images embedded); wku.edu/img_facstaff for sophia_whorf458 (placeholder)"
+ },
+ {
+  "name": "Tony Piedmonte",
+  "year": "2014-15",
+  "outcome": "not found - wrote for the Talisman for years and never sat for it",
+  "detail": "WORKLIST, not officers. A senator sworn in on 30 September 2014, and the Talisman magazine's horoscope writer through 2016 and 2017, credited by name on the games page of both the Identity and the Well Being issues and listed on their staff pages. Neither staff page carries photographs. He has no portrait cell in the 2016 Talisman and no Herald caption anywhere.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Piedmonte captions); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); the 2016 and 2015 Talisman back indexes and portrait grids; the staff pages of the 2016 Identity and 2017 Well Being magazines (no images embedded)"
+ },
+ {
+  "name": "Dillon McCormick",
+  "year": "2016-17",
+  "outcome": "not found - the Talisman's most prolific writer of these years and never in front of a camera",
+  "detail": "WORKLIST, not officers. A senator in 2016-17 and 2017-18 who sat on the organizational aid committee. He is on the staff page of every Talisman magazine from 2017 Power to 2020 Zeitgeist, wrote the horoscopes for five issues running and has bylines on major photo stories, and not one of those pages carries a photograph of the staff. No Herald caption names him.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 McCormick captions matching both names); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); the 2016 and 2015 Talisman back indexes and portrait grids; the staff pages of all eight Talisman magazines 2016-2020"
  }
 ]

@@ -231,14 +231,40 @@ def main():
         p = PHOTOS / str(rec.get("file") or "")
         return p.stat().st_size if p.is_file() else 0
 
+    def supersedes(rec, other):
+        """Does this finding explicitly replace that one?
+
+        A researcher who overturns a withdrawn frame files the new one with
+        `replaces` naming the old. Size cannot decide that case and got it
+        backwards: three corrections were smaller than the frames they
+        overturned, so two would have been dropped without a word and the
+        third would have republished a citation that says the picture is of
+        somebody else, attached to a photograph that is not. An explicit
+        replacement beats the thing it names however small it is.
+        """
+        r = rec.get("replaces")
+        if not r:
+            return False
+        names = r if isinstance(r, list) else [r]
+        against = {str(other.get("file") or ""), str((other.get("src") or {}).get("url") or "")}
+        return any(str(n) and str(n) in against for n in names)
+
     best = {}
     for origin, rec in finds:
         k = (rec.get("year"), rec.get("name"))
-        if k not in best or pixels(rec) > pixels(best[k][1]):
+        if k not in best:
+            best[k] = (origin, rec)
+            continue
+        cur = best[k][1]
+        if supersedes(rec, cur):
+            best[k] = (origin, rec)
+        elif supersedes(cur, rec):
+            pass
+        elif pixels(rec) > pixels(cur):
             best[k] = (origin, rec)
     if len(best) < len(finds):
         print(f"{len(finds) - len(best)} findings were duplicates; kept the "
-              f"largest frame of each")
+              f"one that supersedes, or failing that the largest frame")
     finds = list(best.values())
 
     added, improved, refused = [], [], []
