@@ -216,5 +216,13 @@
  {
   "topic": "THE WAYBACK ROUTE INTO TOPSCHOLAR, found 4 September 2026",
   "note": "TopSCHOLAR's file endpoint /cgi/viewcontent.cgi refuses every script and even headless Chrome with a 403; the block is on the TLS fingerprint. The Internet Archive has mirrored those same PDFs and serves them to plain curl. Fetching http://web.archive.org/web/2024id_/https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=<N>&context=dlsc_ua_records returned a real 4.6 MB Herald issue on the first try. Get <N> from the record page, which curl CAN read with -L: it carries the viewcontent link. The `id_` in the wayback path matters, it asks for the raw file rather than the archive's HTML wrapper. The PDFs carry an OCR text layer but it is close to unreadable on these scans; render at 300 dpi with PyMuPDF and run ocrmac over the pages instead, which reads them well. This opens every scanned Herald and Talisman on TopSCHOLAR to plain scripts and removes the reason _topscholar-wanted.json existed."
+ },
+ {
+  "topic": "THE WAYBACK ROUTE, SECOND URL FORM",
+  "note": "The cgi form web/2024id_/.../cgi/viewcontent.cgi?article=N&context=C works for most of TopSCHOLAR but the Internet Archive has no snapshot of some items: context=stu_org articles 1342-1379 404 on it. A second form reaches those: web/2024id_/https://digitalcommons.wku.edu/context/<collection>/article/<N>/type/native/viewcontent That is how the Phi Mu composites came in, at 3400x2500. Try the cgi form first and fall back to this one; between them TopSCHOLAR is effectively open to plain scripts."
+ },
+ {
+  "topic": "OCR INDEX OF THE HERALD, 1997-2005",
+  "note": "Every digitised Herald issue for 1997-2005, 537 of them and roughly 10,000 pages, has been OCR'd with ocrmac and the page text saved one JSON file per issue. It is kept at ~/Desktop/SGA60 photo hunt/_herald-ocr-1997-2005/, 133 MB, named <date>-a<article>.json. Search that before fetching anything: it is the difference between one grep and re-downloading ten thousand pages. It was built in /tmp and would have been lost at the next reboot."
  }
 ]
