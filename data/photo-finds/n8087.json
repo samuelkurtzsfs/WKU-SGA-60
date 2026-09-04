@@ -544,5 +544,35 @@
    "label": "1986 Talisman, p. 366, freshman class portraits, the page headed Shemwell-Taylor. The names run down the left in five blocks of six and the photographs to their right in five rows of six, one block per row, so a name’s block is its row and its line its column. Hers is the first line of the first block, so her cell is row 1, column 1, the first photograph on the page. The block reads Cindy Shemwell, Richie Shepperson, Terra Shively, Terry Shoulders, Sandra Siddens, Cammie Sikes and the row opens woman, man, woman, which is how the key was checked. She is the only Shemwell in the volume’s index, listed as Cynthia Marie at this page.",
    "url": "https://archive.org/details/talisman1986west/page/n369/mode/1up"
   }
+ },
+ {
+  "year": "1980-81",
+  "name": "Glenn Humphrey",
+  "file": "1980-81-glenn-humphrey.jpg",
+  "quality": "group crop",
+  "why": "The only photograph of him the volume carries: last of the four back-row figures in the Association for Computing Machinery group portrait, cropped to the face. His index entry gives only pp. 288 and 311 and he is in no class grid.",
+  "caption_quote": "Back row: Claudia Starks, Bradley Wilson, Timothy Ebelhar, Glenn Humphrey",
+  "src": {
+   "label": "1981 Talisman, p. 288, the Association for Computing Machinery group photograph, left of three on the page. The caption names four in the front row, five in the second and four in the back, and the frame holds exactly 4, 5 and 4 heads in three bands. The front four are all women against four women named; the second row names four men then Patty Coker and shows four men then a woman; the back row names Claudia Starks then three men and shows a woman then three men. He is the fourth and last back-row figure, at the right of that band.",
+   "url": "https://archive.org/details/talisman1981west/page/n291/mode/1up"
+  },
+  "replaces": null,
+  "width": 148,
+  "height": 178
+ },
+ {
+  "year": "1981-82",
+  "name": "Susan Day",
+  "file": "1981-82-susan-day.jpg",
+  "quality": "small",
+  "why": "Her class portrait in the volume covering her year in Congress, cut from the grid cell the page own name key places her in.",
+  "caption_quote": "SUSAN DAY, Portsmouth, R.I.",
+  "src": {
+   "label": "1982 Talisman, p. 319, underclass portraits (Colon-Fraley). Six photographs to a row and the marginal key runs blocks of six names, one block per row, so a name block is its row and its line its column. Hers is the fifth line of the sixth block, so her cell is row 6, column 5. That block reads Rebecca A. Davis, Rita K. Davis, Robert Davis, Teryl A. Davis, Susan Day, Anita DeArmond and the row reads woman, woman, man, woman, woman, woman, the single man falling at the third cell exactly where Robert Davis stands, which is how the key was checked. She is the only Susan Day in the volume; the 1981 index carries one woman who can give the name, Linda Susan Day.",
+   "url": "https://digitalcommons.wku.edu/talisman/"
+  },
+  "replaces": null,
+  "width": 142,
+  "height": 175
  }
 ]

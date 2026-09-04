@@ -414,5 +414,69 @@
    "label": "1975 Talisman, p. 350",
    "url": "https://archive.org/details/talisman1975west/page/n353/mode/1up"
   }
+ },
+ {
+  "year": "1974-75",
+  "name": "John Draheim",
+  "file": "1974-75-john-draheim.jpg",
+  "quality": "good",
+  "why": "The only photograph in the volume that names him; a three-quarter profile at an ASG meeting, sharp and well lit.",
+  "caption_quote": "Sophomore officers John Draheim and Jo Ann Ballance compare notes at an ASG meeting.",
+  "id_note": "Two people in the frame, one woman and one man; Draheim is the man in the Sigma Alpha Epsilon sweatshirt, Ballance the woman.",
+  "src": {
+   "label": "1975 Talisman, p. 394",
+   "url": "https://archive.org/details/talisman1975west"
+  },
+  "width": 1024,
+  "height": 1280,
+  "replaces": null
+ },
+ {
+  "year": "1974-75",
+  "name": "Hank Miles",
+  "file": "1974-75-hank-miles.jpg",
+  "quality": "group crop",
+  "why": "The only frame in the volume that names him at student government; a two-person meeting photograph cropped to him. His head is turned in conversation, so the face is three-quarter and partly shadowed, but it is the only identified likeness.",
+  "caption_quote": "Graduates Evie Shrewsbury and Hank Miles consider a program issue.",
+  "id_note": "Two people in the frame, one woman and one man; Miles is the man on the right in the patterned shirt, Shrewsbury the woman on the left. Rejected the Eta Sigma Gamma group on p. 301, where the front row is staggered on steps and cannot be counted.",
+  "src": {
+   "label": "1975 Talisman, p. 109",
+   "url": "https://archive.org/details/talisman1975west"
+  },
+  "width": 460,
+  "height": 575,
+  "replaces": null
+ },
+ {
+  "year": "1974-75",
+  "name": "Gail Getchell",
+  "file": "1974-75-gail-getchell.jpg",
+  "quality": "good",
+  "why": "A posed Who's Who portrait with her name printed directly beneath it, the best frame of her in the volume.",
+  "caption_quote": "Gail Getchell",
+  "id_note": "Her name is set as the label under this single-subject portrait in the Who's Who spread; the facing column identifies her as a representative-at-large and College of Applied Arts and Health representative in ASG.",
+  "src": {
+   "label": "1975 Talisman, p. 90",
+   "url": "https://archive.org/details/talisman1975west"
+  },
+  "width": 900,
+  "height": 1125,
+  "replaces": null
+ },
+ {
+  "year": "1974-75",
+  "name": "Jeff Wampler",
+  "file": "1974-75-jeff-wampler.jpg",
+  "quality": "good",
+  "why": "A clear, well-lit half-length frame of him looking at the camera, cropped from the two-person junior class officers picture.",
+  "caption_quote": "Miss McNally, vice-president, and Jeff Wampler, president, served as junior class officers.",
+  "id_note": "Two people in the frame, one man and one woman; Wampler is the man in the plaid jacket, McNally the woman blowing a bubble at right.",
+  "src": {
+   "label": "1975 Talisman, p. 384",
+   "url": "https://archive.org/details/talisman1975west"
+  },
+  "width": 540,
+  "height": 675,
+  "replaces": null
  }
 ]

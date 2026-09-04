@@ -13,5 +13,85 @@
    "url": "https://wkuherald.com/wp-content/uploads/2011/09/27a97f031cfaeaea761bac9542660fcd.jpg"
   },
   "quality": "good"
+ },
+ {
+  "year": "2013-14",
+  "name": "Chris Mckenna",
+  "file": "2013-14-chris-mckenna.jpg",
+  "replaces": null,
+  "width": 340,
+  "height": 510,
+  "why": "Sharp, well-lit, front-facing frame from a posed Herald group portrait; the only picture of him in the digitised Herald.",
+  "caption_quote": "(from left to right) sophomore Alexandria Knipp, freshman Noah Stevens, senior Chris McKenna",
+  "identification": "The caption gives an explicit left-to-right key for five people. Ordered by horizontal position the frame reads Knipp (front left, female), Stevens (back left, male, glasses), McKenna (front centre, male, dark suit), Alamri (back right, male), Shipp (front right, female). The three genders in the list match that order exactly, so the third name lands on the seated man in the centre. Herald spells the surname McKenna; the archive spells it Mckenna.",
+  "src": {
+   "label": "College Heights Herald, 1 March 2016",
+   "url": "https://wkuherald.com/wp-content/uploads/2016/03/4542deb70f4c179cb4b5b63a4607202f.jpg"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2010-11",
+  "name": "Austin Wingate",
+  "file": "2010-11-austin-wingate.jpg",
+  "replaces": null,
+  "width": 670,
+  "height": 865,
+  "why": "Sharp, well-lit, dignified three-quarter profile in a suit; the only photograph of him in the digitised Herald.",
+  "caption_quote": "WKU graduate Austin Wingate, from Elizabethtown talks with junior Darius Fields",
+  "identification": "Two men in frame. Three cues agree on the sharp foreground man at left: he is named first in a caption that runs left to right, he is the only one in focus and so the frame subject, and the caption has him doing the talking while he is the one mid-word. Darius Fields is the blurred man behind. That this is the SGA Austin Wingate rather than a namesake is supported by the Herald of 20 March 2012 (Vol. 87 No. 29), which lists Austin Wingate as one of three candidates for SGA president, so he was a student until 2012 and a WKU graduate by 2017.",
+  "src": {
+   "label": "College Heights Herald, 23 February 2017",
+   "url": "https://wkuherald.com/wp-content/uploads/2017/02/6deb3b09934715e3fdbbd31ffaebea16.jpg"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2008-09",
+  "name": "Austin Bernard Wingate",
+  "file": "2008-09-austin-bernard-wingate.jpg",
+  "replaces": null,
+  "width": 670,
+  "height": 865,
+  "why": "Same frame as the 2010-11 Austin Wingate portrait. NOTE FOR THE EDITOR: years.json carries Austin Bernard Wingate (2008-09, member) and Austin Wingate (2010-11, Speaker of the Student Senate) as two records and they are almost certainly one man. If they are merged, keep one copy and drop this file; if they are not, this fills the 2008-09 record.",
+  "caption_quote": "WKU graduate Austin Wingate, from Elizabethtown talks with junior Darius Fields",
+  "identification": "See the 2010-11 Austin Wingate entry. Same photograph, same reasoning.",
+  "src": {
+   "label": "College Heights Herald, 23 February 2017",
+   "url": "https://wkuherald.com/wp-content/uploads/2017/02/6deb3b09934715e3fdbbd31ffaebea16.jpg"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2010-11",
+  "name": "Chad Winston",
+  "file": "2010-11-chad-winston.jpg",
+  "replaces": null,
+  "width": 158,
+  "height": 240,
+  "why": "Small but eyes-open and dignified: he is preaching, which is what the caption describes. A larger frame of him from the same photographers package that day (wkuherald.com/wp-content/uploads/2012/02/466bda81854f135120483499fa0cebd4.jpg, 716x759, same grey suit, lavender shirt and purple tie, same church) carries no caption of its own and shows him with his eyes screwed shut comforting a weeping woman, so it is better resolved and worse as a portrait. The editor may prefer it.",
+  "caption_quote": "Bowling Green senior Chad Winston leads a Bible study before preaching at Cedar Grove Baptist Church",
+  "identification": "The caption names one person and describes one action. He is the only person standing, the only one at the lectern with an open book, and the only one in a suit; everyone else is seated in the pews. No ambiguity.",
+  "src": {
+   "label": "College Heights Herald, 3 February 2012",
+   "url": "https://wkuherald.com/wp-content/uploads/2012/02/ffd0ab8824a8206c5e8c6f5bdcc5e33b.jpg"
+  },
+  "quality": "small"
+ },
+ {
+  "year": "2013-14",
+  "name": "Elizabeth McGrew",
+  "file": "2013-14-elizabeth-mcgrew.jpg",
+  "replaces": null,
+  "width": 220,
+  "height": 295,
+  "why": "The only photograph of her in any WKU source found; face is small and she is in motion, but it is lit, front-on enough to be recognisable, and it shows her at the SGA-sponsored garden she ran. NOTE FOR THE EDITOR: years.json carries Elizabeth McGrew (2013-14) and Beth McGrew (2014-15) as two records and they are one woman; Beth McGrew is not on this worklist, so only the 2013-14 record is filled here.",
+  "caption_quote": "WKU grad student Beth McGrew helps direct volunteer efforts during the Earth Day Garden Party",
+  "identification": "Five people in frame, one named, and the caption describes one action. She is the only person directing: pointing across the bed with a watering can in her other hand while the rest kneel and plant, and she is the only one wearing the gardens own Project Grow shirt. The Herald of 21 April 2014 settles it by giving her the job: it calls her Henderson graduate student Beth McGrew, coordinator of the community garden (wkuherald.com/40323/news/sga-and-office-of-sustainability-kick-off-earth-week). The coordinator is the person directing volunteers.",
+  "src": {
+   "label": "College Heights Herald, 8 June 2015",
+   "url": "https://wkuherald.com/wp-content/uploads/2015/06/abc113c48bbee4bbc3e8cfdba556a5fa.jpg"
+  },
+  "quality": "soft"
  }
 ]
