@@ -1,3 +1,97 @@
+# 4 September 2026 — a settled correction that the portrait rebuild undid
+
+Nothing was open. The queue is empty: the GitHub tools list no open pull
+requests at all, and the repository is at #342. The stored prompt this pass
+fires from still describes #6, #7 and #8 as stale since 4 August; that is now
+the third night log to record that all three closed weeks ago, and the prompt
+should be rewritten.
+
+`gh` is still not installed in these containers, so the access probe was the one
+AGENT-LANDING.md prescribes rather than the one the prompt asks for. Write
+access is present and the correction below is pushed.
+
+## The regression
+
+Yesterday's evening pass corrected the Spirit Masters archive call number and
+recorded, in the entry above this one, that no occurrence of UA68 remained
+anywhere in `photos.json` or the built site. That was true when it was written
+and merged as #342 at 18:27. It was not true four hours later.
+
+The portrait rebuild that followed — `322e04f1`, "Portraits: 63 more faces from
+the yearbooks and the Herald" — carried an older `photos.json` and put the wrong
+record group back on fourteen credits. The count walks the history plainly:
+UA68 stood at 0 through `40376b71`, `1cd4db49`, `a218473f`, `759ca7e1`,
+`c3b93d63` and `6f566bd9`, then jumped to 14 at `322e04f1` and has stayed there
+through the tip. The wrong call number has therefore been on the live site since
+yesterday evening, on more credits than the correction originally touched.
+
+This is the third time the log has recorded a merged correction being served
+again afterwards — the withdrawn photographs of 3 September and the twenty-two
+roster entries of 1 September were the same shape. The common cause is a rebuild
+that regenerates from a stale copy of the data rather than from the branch it is
+merging into. It is worth a guard: a rebuild should never reduce the number of
+corrections already in the file.
+
+## What was verified
+
+All four scanned volumes were opened directly and read from the archive's own
+`bepress_citation_title`, paced three seconds apart:
+
+- `stu_org/327` — UA12/2/16 Spirit Masters Scrapbook, 2004-2005
+- `stu_org/328` — UA12/2/16 Spirit Masters Scrapbook, 2007-2008
+- `stu_org/329` — UA12/2/16 Spirit Masters Scrapbook, 1996-1997
+- `stu_org/563` — UA12/2/16 Scrapbook, 1991-1992
+
+None of the four carries UA68 anywhere in its page. UA68 is SGA's own record
+group; giving it here told a reader the portraits came out of SGA's papers when
+they came out of the Spirit Masters'.
+
+The file was contradicting itself again on two volumes, not one: `stu_org/327`
+appeared as UA12/2/16 in two credits and UA68 in four, and `stu_org/328` as
+UA12/2/16 for Nate Eaton and UA68 for the five others, all on the same pages of
+the same volumes.
+
+Fourteen credits corrected, which is every UA68 in the file: the four 1996-97
+portraits and Tim Leavell 1997-98 from `stu_org/329`; Morgan Rink 2002-03,
+Evelina Petkova 2003-04, Lindsey Inman 2004-05 and Chris Whitfield 2005-06 from
+`stu_org/327`; Diane DeRosa-Reynolds and Tori Theiss 2006-07 and Chase Goff,
+Earlene Whitaker and Nathan Eaton 2007-08 from `stu_org/328`. Only the record
+group changed. The volumes, page numbers and years already in the credits match
+the abstracts and are untouched.
+
+## What was checked and left alone
+
+`research-photos` is 8 commits ahead of main and 15 behind, and it is the only
+branch on origin that still has a merge base. It needs no merge: its tip
+`55492710` is exactly the head that went in as #340 yesterday afternoon, and all
+four leader entries it adds — James P. Haynes 1966-67, Nate Eaton 2007-08, Page
+Settles 2015-16 and Marsha Sanner 1980-81 — are already on main under those
+names. Merging it now would be destructive rather than redundant: main has moved
+far past it, and the merge would delete about 170 portrait files and 1,601 lines
+of `photos.json`. The next photograph run should merge main into it before it
+does anything else.
+
+The 4 August `research-*` branches still have no merge base with main, as the
+last two logs record. Unchanged, and still not to be merged.
+
+`check_duplicates.py` reports the same six standing pairs, and they were read
+again rather than taken on trust. All six are genuinely separate events: the
+designated driver cards were introduced in November 1997 and distributed in
+February 1998; the student regent advisory committee bill was introduced on 28
+January 1992 and failed on 6 February; the Civil Liberties Union action was
+planned in February 1972 and endorsed in March; the plus/minus grading fight ran
+from September to a vote in October 2003; and the three bills of 1 September
+1991 are same-day legislative business, which the rules keep separate. Nothing
+was merged.
+
+## Counts after this pass
+
+61 years, 1,980 events, 60 people recorded as president. 2,654 terms of office
+held by 1,819 people, 2,613 of them (98%) carrying an account of what the person
+did, and 40 people recorded under more than one spelling. 297 documents and
+1,111 legislation files. `build.py`, `check_data.py`, `check_contrib.py` and
+`check_duplicates.py` all pass.
+
 # 3 September 2026, evening — the wrong record group, settled from the archive's own titles
 
 Nothing was open. `gh` is not installed in these containers, so the access probe
