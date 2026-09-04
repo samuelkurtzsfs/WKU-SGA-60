@@ -142,5 +142,14 @@
    "label": "College Heights Herald, 1 March 2016, Model Arab League regional conference",
    "url": "https://wkuherald.com/wp-content/uploads/2016/03/4542deb70f4c179cb4b5b63a4607202f.jpg"
   }
+ },
+ {
+  "name": "Chad Winston and Elizabeth McGrew",
+  "year": "2010-11, 2013-14",
+  "fact": "Both were withdrawn on 4 September 2026 after the editor refused them and recorded the refusals in _do-not-use.json. Their entries were dropped from n0813.json and the two crops moved out of data/photos/ into ~/Desktop/SGA60 photo hunt/_rejected/, so a later merge cannot republish them. Winston's frame is the Herald's 3 February 2012 feature on students who became ordained ministers, which never mentions student government; McGrew's is the Earth Day Garden Party of 22 April 2015, where the caption names one person but six or seven are at the garden bed with no positions given.",
+  "src": {
+   "label": "data/photo-finds/_do-not-use.json",
+   "url": ""
+  }
  }
 ]

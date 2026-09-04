@@ -63,38 +63,6 @@
   "quality": "good"
  },
  {
-  "year": "2010-11",
-  "name": "Chad Winston",
-  "file": "2010-11-chad-winston.jpg",
-  "replaces": null,
-  "width": 158,
-  "height": 240,
-  "why": "Small but eyes-open and dignified: he is preaching, which is what the caption describes. A larger frame of him from the same photographers package that day (wkuherald.com/wp-content/uploads/2012/02/466bda81854f135120483499fa0cebd4.jpg, 716x759, same grey suit, lavender shirt and purple tie, same church) carries no caption of its own and shows him with his eyes screwed shut comforting a weeping woman, so it is better resolved and worse as a portrait. The editor may prefer it.",
-  "caption_quote": "Bowling Green senior Chad Winston leads a Bible study before preaching at Cedar Grove Baptist Church",
-  "identification": "The caption names one person and describes one action. He is the only person standing, the only one at the lectern with an open book, and the only one in a suit; everyone else is seated in the pews. No ambiguity.",
-  "src": {
-   "label": "College Heights Herald, 3 February 2012",
-   "url": "https://wkuherald.com/wp-content/uploads/2012/02/ffd0ab8824a8206c5e8c6f5bdcc5e33b.jpg"
-  },
-  "quality": "small"
- },
- {
-  "year": "2013-14",
-  "name": "Elizabeth McGrew",
-  "file": "2013-14-elizabeth-mcgrew.jpg",
-  "replaces": null,
-  "width": 220,
-  "height": 295,
-  "why": "The only photograph of her in any WKU source found; face is small and she is in motion, but it is lit, front-on enough to be recognisable, and it shows her at the SGA-sponsored garden she ran. NOTE FOR THE EDITOR: years.json carries Elizabeth McGrew (2013-14) and Beth McGrew (2014-15) as two records and they are one woman; Beth McGrew is not on this worklist, so only the 2013-14 record is filled here.",
-  "caption_quote": "WKU grad student Beth McGrew helps direct volunteer efforts during the Earth Day Garden Party",
-  "identification": "Five people in frame, one named, and the caption describes one action. She is the only person directing: pointing across the bed with a watering can in her other hand while the rest kneel and plant, and she is the only one wearing the gardens own Project Grow shirt. The Herald of 21 April 2014 settles it by giving her the job: it calls her Henderson graduate student Beth McGrew, coordinator of the community garden (wkuherald.com/40323/news/sga-and-office-of-sustainability-kick-off-earth-week). The coordinator is the person directing volunteers.",
-  "src": {
-   "label": "College Heights Herald, 8 June 2015",
-   "url": "https://wkuherald.com/wp-content/uploads/2015/06/abc113c48bbee4bbc3e8cfdba556a5fa.jpg"
-  },
-  "quality": "soft"
- },
- {
   "year": "2008-09",
   "name": "LaDarra Starkey",
   "file": "2008-09-ladarra-starkey.jpg",
@@ -315,6 +283,38 @@
   "src": {
    "label": "2014 Talisman: Reckoning, Part II, p. 283, seniors and graduate students (WKU Archives UA12/2/2)",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5162"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2008-09",
+  "name": "Ben Lineweaver",
+  "file": "2008-09-ben-lineweaver.jpg",
+  "replaces": null,
+  "width": 524,
+  "height": 427,
+  "why": "A posed head-and-shoulders portrait in jacket and WKU tie, front on, eyes open, smiling; the only photograph of him anywhere in the digitised archive. Extracted at the printed image's native resolution and not upscaled.",
+  "caption_quote": "BENJAMIN LINEWEAVER",
+  "identification": "SGA's own full-page election advertisement, printed p. 12 of the Herald of 9 April 2009 under the heading SGA SENATE RACE with the WKU Student Government Association logo. It is a one-name-one-face grid: three office rows down the left margin (President, Executive Vice President, Administrative Vice President) with each candidate's photograph and their name set immediately beside it in large type. Lineweaver's name sits directly to the right of this frame in the Executive Vice President row; measured off the page, the name block runs x 168-311 and the image rect x 173-303 on the row below it, and no other photograph is on that side of the row. Checked as the same man as the archive's 2008-09 Campus Improvements chair: he is standing for SGA executive office in the spring of his own year of service, and Lineweaver appears nowhere else in the Herald back file for these years except his relative Cherieth Lineweaver, the 2007 candidate.",
+  "src": {
+   "label": "College Heights Herald 84:44, 9 April 2009, p. 12, SGA election advertisement (WKU Archives UA12/2/1)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6750"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2008-09",
+  "name": "Brittany Ann Wick",
+  "file": "2008-09-brittany-ann-wick.jpg",
+  "replaces": null,
+  "width": 362,
+  "height": 510,
+  "why": "A posed three-quarter-length portrait on a park bench, front on, eyes open, smiling; the only photograph of her in the digitised archive. Extracted at the printed image's native resolution and not upscaled.",
+  "caption_quote": "BRITTANY-ANN WICK",
+  "identification": "SGA's own full-page election advertisement, printed p. 12 of the Herald of 9 April 2009 under the heading SGA SENATE RACE with the WKU Student Government Association logo. One name to one face: three office rows down the left margin, each candidate's photograph with the name set immediately beside it in large type. Hers is the bottom row, Administrative Vice President, and her name block runs x 518-576 against an image rect of x 384-500 in the same row, the only photograph to its left. She is the one woman in that row and the frame shows a woman. Checked as the archive's 2008-09 Academic Affairs chair: she is standing for SGA executive office in the spring of her own year of service, and Wick appears nowhere else in the Herald back file for these years.",
+  "src": {
+   "label": "College Heights Herald 84:44, 9 April 2009, p. 12, SGA election advertisement (WKU Archives UA12/2/1)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6750"
   },
   "quality": "good"
  }
