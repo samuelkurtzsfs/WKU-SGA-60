@@ -34,3 +34,4 @@ on the site for these.
 - **Tim Hill** (2006-2006) == **Tim Hill Jr.** (2006-2006)
 - **Troy Davis** (2020-2020) == **Troy Davis II** (2018-2018) — 2 year gap
 - **Wes Calhoun** (2006-2008) == **Wesley Calhoun** (2007-2007)
+- **Drew Eclov** (2007-08 senator) == **M. Andrew Eclov** (2008-09 Director of Academic and Student Affairs) — adjacent years, and the same mugshot is now filed under both

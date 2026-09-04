@@ -324,5 +324,96 @@
    "label": "SGA Senate minutes 16 Oct 2007 and 26 Aug 2008; College Heights Herald 86:27, 10 Dec 2010, p. 7",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6262"
   }
+ },
+ {
+  "kind": "frame exists but unusable",
+  "name": "Ben Redmon",
+  "year": "2005-06",
+  "checked": "College Heights Herald, 25 January 2007, p. 8A. The caption reads: Garrett junior Ben Redmon is reflected in a security camera attached to the Helm-Cravens Library. It is the only photograph in the archive that names him.",
+  "why": "He appears only as a reflection in the dome of a Pelco security camera, a figure a few pixels across at the far end of a fisheye image. The frame is striking and the identification is certain, but there is no face in it.",
+  "src": {
+   "label": "College Heights Herald, 25 January 2007, p. 8A (Vol. 82, No. 27); photograph by Daniel Houghton",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6656"
+  }
+ },
+ {
+  "kind": "frame exists but unusable",
+  "name": "Gary Steven Taylor Jr.",
+  "year": "2006-07",
+  "checked": "College Heights Herald, 21 February 2008, p. 7A. The caption names one subject: Gary Taylor, a sophomore from Santa Ana, Calif., signs a ONE Campaign petition in the Fresh Food Company, and quotes him.",
+  "why": "The identification is sound, since he is the only person in the frame who is signing anything, but he is bent forward over the petition with his head down. The picture prints at 402 by 257 pixels, so his head comes out about 75 pixels across and shows the crown of his head, his glasses and a steeply foreshortened cheek. There is no usable face.",
+  "src": {
+   "label": "College Heights Herald, 21 February 2008, p. 7A (Vol. 83, No. 35); photograph by Luke Sharrett",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6680"
+  }
+ },
+ {
+  "kind": "frame exists, cannot be identified",
+  "name": "Rob Anderson",
+  "year": "2006-07",
+  "checked": "College Heights Herald, 10 April 2008, p. 3B. Caption: Rob Anderson and Tyler Etheridge act during their final dress rehearsal before opening night of Memorandum in the Gordon Wilson Lab Theatre.",
+  "why": "Two actors, both men, and the caption gives no left, right or other key. One faces the camera and one has his back to it. Nothing in the frame or the story says which is Anderson, so it cannot be published.",
+  "src": {
+   "label": "College Heights Herald, 10 April 2008, p. 3B (Vol. 83, No. 46); photograph by Loren Gifford",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6700"
+  }
+ },
+ {
+  "kind": "frame exists, cannot be identified",
+  "name": "Sarah White",
+  "year": "2006-07",
+  "checked": "College Heights Herald, 29 January 2008, p. 9A. The upper of two PRISM concert photographs is captioned: (Top) Chorus member Sarah White, a Louisville senior, performs in the music department 13th annual PRISM concert.",
+  "why": "The frame holds four women singing and the caption names only one, without a position. The centre figure holds the microphone and is the sharpest, but the other three are also chorus members performing, so focus alone is not proof. It is also unestablished that this Louisville senior is the Sarah White who sat in the Senate in 2006-07. Rejected on both counts.",
+  "src": {
+   "label": "College Heights Herald, 29 January 2008, p. 9A (Vol. 83, No. 28); photograph by Mary Powers",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6688"
+  }
+ },
+ {
+  "kind": "frames exist but unusable",
+  "name": "Matthew Latimer",
+  "year": "2002-03",
+  "checked": "Fourteen pages name him. Two carry photographs: 26 August 2004 p. 13, a posed shot of the three men competing for the soccer goalkeeper's job, captioned Senior Matt Latimer and freshmen Kyle Schroeder (right) and Ryan Simpson; and 28 September 2004 p. 10, captioned Western junior Matt Latimer dives and misses the ball allowing Ian Schinelli of Belmont to score.",
+  "why": "The August frame is destroyed by show-through from the reverse of the sheet, a full-width advertisement printed straight across the three figures, who survive only as silhouettes; and in any case the caption keys only Schroeder, as (right), leaving Latimer and Simpson indistinguishable. The September frame shows the keeper flat on the ground with his back to the camera at the moment he concedes, so there is no face and it is a picture of a failure. Note for the record that there is exactly one Matt Latimer in the whole 2001-2009 Herald, a goalkeeper who transferred in from Lipscomb in 2002 and who reported a stolen temporary handicap parking permit in April 2004 after an anterior cruciate ligament tear; the years fit the Congress member exactly, but no source puts the goalkeeper in SGA.",
+  "src": {
+   "label": "College Heights Herald, 26 August 2004, p. 13 (Vol. 80, No. 2), photograph by Tyler Michael Pelan; and 28 September 2004, p. 10 (Vol. 80, No. 10), photograph by David Dagner",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9406"
+  }
+ },
+ {
+  "kind": "method and coverage, for the next agent",
+  "name": "How the 2002-2009 Herald was swept on this block",
+  "year": "2002-03 to 2007-08",
+  "checked": "Three indexes were built or used over the 375 Herald PDFs already staged at ~/Desktop/SGA60 photo hunt/n0207/herald, which cover 2002 to 2009 complete except autumn 2006. First, the predecessor's herald_text.jsonl, the embedded text layer of all 5,623 pages, which is good from 2002 onward and much better than OCR on these scans. Second, a new caption index of every embedded photograph in every staged issue with the text block underneath and beside it, 5,300 captions, which only exists for 2007 onward because the 2002-2006 scans are one flat image per page with no separate photo objects. Third, for 2002-2006, an index of every photographer credit line of the form Name/Herald and the 380 characters after it, 2,993 of them across the embedded text and the ocrmac page index, which is where a Herald caption of that era actually lives.",
+  "why": "Every officer name and every remaining worklist name was run against all three. That is the systematic sweep, and it is what turned up the Amanda Allen, Jessica VanWinkle and Ashley Bishop frames. A name that is not in those results is not in a Herald caption for 2002-2009. What the method still cannot see: captions whose photographer credit was mangled by the scan, and mugshots labelled only with a bare surname in the 2002-2006 issues. Those need the page image."
+ },
+ {
+  "kind": "source mapped: the Herald's old website in the Wayback Machine",
+  "name": "wkuherald.com and media.www.wkuherald.com, 2002-2009",
+  "year": "2002-03 to 2007-08",
+  "checked": "Two hosts, not one. The CDX for wkuherald.com gives 3,643 unique archived College Publisher article pages, 2002 to 2009. A second host, media.www.wkuherald.com, which the first redirects to from 2006, gives another 863. Roughly 830 of them were pulled and their photo alt text and caption divs read.",
+  "why": "Story photographs with captions survive only for roughly 2003 to 2006. From 2007 the archived pages carry no story image at all, only a Download Print Edition PDF thumbnail, and the print PDFs themselves are not archived, only one and that a redirect. Of the still images the Archive did keep on media.collegepublisher.com, forty, not one matches a caption we know. Not one officer or senator on this block appears in any archived caption. The route is real but it is thin, and it is now mapped rather than guessed at.",
+  "src": {
+   "label": "web.archive.org CDX for wkuherald.com and media.www.wkuherald.com",
+   "url": "https://web.archive.org/web/*/wkuherald.com/*"
+  }
+ },
+ {
+  "kind": "working material preserved for the next agent",
+  "name": "Herald indexes 2002-2009",
+  "year": "",
+  "checked": "Four files are now at ~/Desktop/SGA60 photo hunt/_herald-index-2002-2009/ rather than in /tmp, where they would be lost at the next reboot. herald_text.jsonl is the embedded text layer of all 5,623 staged Herald pages 2002-2009, 33 MB, one row per page. photo_captions.jsonl is every embedded photograph in the 2007-2009 issues with its rect, its native pixel size and the text under and beside it, 5,300 rows. cdx_herald_html.txt and cdx_media.txt are the Wayback capture lists for the two old Herald hosts. media_imgs.jsonl and cp_imgs.jsonl hold what 830 of those archived pages actually carried.",
+  "why": "Grepping herald_text.jsonl answers in one second what re-downloading the run answers in a day, and photo_captions.jsonl turns finding a face into a caption search. The predecessor left an equivalent OCR index for 1997-2005 at _herald-ocr-1997-2005 and both are worth using together: the embedded text is better from 2002, the OCR catches pages where the text layer is thin. A partly built OCR index for 2006-2008 was deleted rather than left half finished, because the embedded text layer covers those years better."
+ },
+ {
+  "kind": "worklist swept: ninety names with no captioned photograph",
+  "name": "General worklist, 2002-03 to 2007-08",
+  "year": "2002-03 to 2007-08",
+  "checked": "After the officer list was finished, all 131 names still without a face on _worklist-n0207.json were run against the three Herald indexes described in the method note: the embedded text of every staged page 2002-2009, the caption index of every embedded photograph 2007-2009, and the 2,993 photographer-credit contexts that carry the captions of the 2002-2006 issues. They were also run against the alt text and caption divs of 830 archived wkuherald.com and media.www.wkuherald.com article pages, the 2003 Talisman, the Spirit Masters scrapbook of 2005 and the three 2007 issues of The Greek Standard.",
+  "why": "These ninety are named nowhere in a caption. Several are named often in body text - Jessica Sasseen and Christina Allen most of all, because both wrote for the Herald and their names appear on sixty-odd pages as bylines - but a byline is not a photograph. Do not re-run a plain name search on the Herald for these; it has been done. What would be new: the Talisman is no help because none was published between 1994 and 2012, so the remaining routes are Greek chapter composites in stu_org, sorority and fraternity newsletters, and any surviving departmental or residence-hall publication. NAMES: Aaron Smither; Alaina Minor; Alex Wimsatt; Amanda Snyder; Amr Yassein; Amy Bell; Angie Ellison; Blake McAlister; Bob Bell; Bradley Morgan; Bradley Venable; Brandon Logan; Brent Richardson; Chris Anderson; Christa Wilcox; Christian Cullip; Christina Allen; Christopher Nation; Damien Clark; Daniel Brown; Danielle Pyle; David Padron; Doug Tate; Drew Bly; Earlene Racquel Whitaker; Elizabeth Hennessey; Elizabeth Worthington; Emily St Clair; Glenn Fedor Jr.; Grant Clark; Heather Francis; Hollan Hohn; Jamie Lokey; Jamie Mann; Jessica Sasseen; John Maris; John Michael Sigler II; Jonathon Roy; Jonathon Sprowles; Joseph Millhouse; Joshua Fries; Julia Bright; Katherine Smith; Katie Reynolds; Kayla Smith; Keanan Noel Cortney; Kelly Johnson; Kent Lucas; Keri N. Anderson; Kyle Payne; LaTonnsya Burney; Lauren McGee; Leah Holliday; Leah Keys; Lhousseinene Guerwane; Lindsay Hughes; Lindsay Lunderga; Lori Frey; LoriLee Beckman; Mary Johns; Megan Gorski; Melissa Constant; Melissa Rickman; Michael Baller; Michael Holcomb; Michael Kaelin; Michelle Fusting; Michelle Reynolds; Natalina Elliot; Nick Lowe; Nicole Tice; Phallida White; Robert Ashby; Robert Reynolds; Ryan Dillon; Sara Hanley; Sarah Ashley Lawrence; Sarah Collins; Sarah Lawrence; Stefanie Seifers; Suzie Moghaddam; Tim Hill Jr.; Timothy Hill Jr.; Toni Corella; Toni Curella; Vanessa Pierrard; Wesley Calhoun; Whitney Simpson; William Doolin; Zackary Rockrohr",
+  "src": {
+   "label": "data/photo-finds/_worklist-n0207.json",
+   "url": ""
+  }
  }
 ]
