@@ -583,5 +583,37 @@
    "label": "College Heights Herald, Vol. 80, No. 7, 2004-09-16, p. 1",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9401"
   }
+ },
+ {
+  "name": "Amanda B. Allen",
+  "year": "2006-07",
+  "file": "2006-07-amanda-b-allen.jpg",
+  "replaces": null,
+  "width": 526,
+  "height": 585,
+  "quality": "group crop",
+  "why": "The only photograph of her in the digitised Herald; a working frame from the SGA mock primary, cropped from a two-person shot to her alone. Her face is in three-quarter profile, so it is soft, but she is plainly identifiable and no other frame exists.",
+  "caption_quote": "Amanda Allen, executive vice president of the Student Government Association",
+  "how_identified": "The caption names two people, Allen and Bowling Green senior Ryan Sprouse. She is the only woman in the frame and the only figure on the left; Sprouse is the bearded man on the right, who is cropped out.",
+  "src": {
+   "label": "College Heights Herald, 12 April 2007, p. 3 (Vol. 82, No. 45); photograph by Daniel Houghton",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6697"
+  }
+ },
+ {
+  "name": "Jessica VanWinkle",
+  "year": "2007-08",
+  "file": "2007-08-jessica-vanwinkle.jpg",
+  "replaces": null,
+  "width": 324,
+  "height": 370,
+  "quality": "small",
+  "why": "A sharp, warm candid taken during her officer year and cropped from the Up til Dawn letter-writing photograph. The printed frame is only 863 pixels wide, so the face comes out small, but it is the clearest picture of her the archive holds.",
+  "caption_quote": "Frankfort sophomore Jessica VanWinkle shares a laugh with friends",
+  "how_identified": "The caption names one person only and describes her action. She is the sharply focused, laughing figure at the centre; the unnamed friend in the foreground is turned away and out of focus, and is cropped out.",
+  "src": {
+   "label": "College Heights Herald, 18 October 2007, p. 2B (Vol. 83, No. 14); photograph by Eric Bateman",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4486"
+  }
  }
 ]
