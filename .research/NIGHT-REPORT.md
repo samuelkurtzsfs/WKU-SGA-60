@@ -1,3 +1,101 @@
+# 4 September 2026, later — the same correction undone a third time
+
+Nothing was open again. The GitHub tools list no open pull requests, and every
+`research-*` branch is behind `main` rather than ahead of it: the 4 August
+branches this pass's stored prompt still calls stale (#6, #7, #8) closed weeks
+ago, and the repository is now at #343. That prompt has been wrong for three
+night logs running. It should be rewritten to say the queue is usually empty and
+the work is auditing what reached `main` unreviewed.
+
+## What was reviewed
+
+`main` itself. Its tip, `aa6c8c5`, "Portraits: 4 more faces, and 15 cut again
+from a better frame", was committed straight to `main` at 03:09 UTC — after
+#343 merged at 00:33 — so nothing reviewed it before it deployed. It is the
+only thing that has reached the public site since the last pass.
+
+## The call number, put back for the third time
+
+`aa6c8c5` reverted #343 in full. All fourteen Spirit Masters portrait credits
+went back to citing the scrapbooks as **UA68**, which is SGA's own record group
+and not this collection's. This is the third time a "Portraits: N more faces"
+rebuild has written over the correction: settled in #342, undone by the 63-face
+rebuild, restored in #343, undone again here. It was live on the site all day.
+
+Checked independently rather than taken from the earlier logs. The landing pages
+for `stu_org/329` and `stu_org/328` were opened and both are titled *UA12/2/16
+Spirit Masters Scrapbook*; UA68 appears on neither. All fourteen credits are
+back to UA12/2/16.
+
+**A guard now stops it recurring.** `check_data.py` fails if a credit pointing at
+a `stu_org` volume cites UA68. The rebuild that keeps doing this cannot merge
+through the checks again, which is the only thing that will end the loop — three
+corrections in two days did not.
+
+## The four new portraits: kept, their credits rewritten
+
+All four identifications hold, and the evidence for them is real. It just was
+not on the public page. Each `photo-finds` record carries a caption naming the
+subject and, for the Herald frames, the reasoning that fixes which figure is
+theirs; the labels that reached `photos.json` gave only the event.
+
+- **Polly Proctor** (1981-82) already carried its full grid derivation. Left alone.
+- **Jacob Skillman** (2021-22) was the one worth checking hardest, because a
+  cross-country runner matched to a senator is exactly the surname trap. It is
+  not one: the Herald's own profile of 23 September 2021 calls Senator Jacob
+  Skillman a junior, which makes him the sophomore its October 2020 caption
+  names, and its cross-country honours lists put him on the team. Verified
+  against the Herald directly, not from the finder's note. Label rewritten to
+  carry that chain.
+- **Jakob Briggs** (2022-23) and **Evan Tuck** (2025-26): labels rewritten to
+  cite the caption that names them — Briggs by his fraternity's name on the
+  sweatshirt, Tuck by the award legible in his hands.
+
+None of these is a cut. The house style set by #315 and #329 is that a portrait
+credit names the caption that identifies the person, and these three did not
+follow it.
+
+## The finder's quality score, off the public site
+
+Forty-seven credits ended in a bare `(good)` — the `quality` field from
+`photo-finds` leaking into published text, meaningless to a reader. Removed.
+`(only picture found)` was kept everywhere it appears: that one tells a reader
+why a poor frame is the one used, which is worth saying.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. The new
+guard was tested by reintroducing the regression, which it caught, and the file
+then restored. `check_duplicates.py` reports the same six pairs, unchanged and
+already judged; each is two genuine events — a bill introduced and the same bill
+failing, a lawsuit planned and then endorsed, a position taken and then
+legislated, three separate bills on one day, and a card scheme approved and
+later distributed. No events were added or merged.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,819
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one name. 60 people have been president.
+
+## Still open
+
+The **Derryberry** name split the last pass left open is resolved and needed no
+edit: `name-aliases.json` carries "William Derryberry" as an alias of Will
+Derryberry, which is what that file is for, and the roles file forward correctly
+— sophomore senator in 2025-26, chief financial officer in 2026-27.
+
+**Portrait rebuilds keep landing on `main` without review.** The call number is
+the visible symptom; the cause is that a rebuild regenerates credits from the
+finder's records and overwrites editorial corrections that were never written
+back into those records. The guard blocks this one field. The general fix is to
+carry corrections back into `data/photo-finds/`, which is where the rebuild
+reads from, and that has not been done.
+
+The gated `viewcontent.cgi` endpoint, the 1993-94 to 2009-10 gap in year
+photographs and the 431 legislation files with no author recorded are all
+unchanged.
+
 # 4 September 2026 — a settled correction that the portrait rebuild undid
 
 Nothing was open. The queue is empty: the GitHub tools list no open pull
