@@ -312,5 +312,39 @@
  {
   "topic": "wku.edu/sga ON WAYBACK IS EXHAUSTED FOR 2009-2016",
   "note": "1,592 captures walked; not one member headshot anywhere in 2009-2016. The headshot directories that do serve files are a different path and belong to other years."
+ },
+ {
+  "topic": "TRAP: wku.edu/img_facstaff SERVES A LOGO PLACEHOLDER, NOT A 404",
+  "note": "Every handle with no photograph on file returns HTTP 200 with an identical 39,409-byte 250x315 JPEG of the red WKU logo on black, md5 819cd6b1bf686b3881d1434c635e3a1f. It is not a 404 and it is not blank, so a script that only checks the status code will file the same logo as three different people's portraits. ALWAYS md5 the result against that value before cutting. Found 4 September 2026 while re-walking the route that produced eleven finds on the n1419 block; of 101 SGA account handles tested, 22 returned a real photograph and 79 returned the placeholder."
+ },
+ {
+  "kind": "source exhausted for one cohort",
+  "name": "wku.edu/img_facstaff for the 2014-2020 SGA officers",
+  "year": "2014-15 to 2019-20",
+  "detail": "All 26 account handles recoverable for the forty-four officers of the _officers-n1419 list were tested against the university directory: abigail.potter827, allison.payne040, amber.daniel183, ashley.cox539, abhishek.bose982, amarah.reed975, brian.anderson026, cassidy.townsend305, cody.cox736, elizabeth.koehler043, emily.pride878, erika.puhakka919, hayden.skinner-fine237 (and the unhyphenated form), jason.herlick385, john.mckinney901, joshua.knight976, lane.simpson586, madison.keller906, mark.clark867, nathan.cherry887, rachel.keightley450, robert.bell271, sawyer.coffey171, stacey.schepers252, temple.ricke559, trevor.huffman267, turner.reynolds233. Every one returns the placeholder. The directory only holds photographs of people who were WKU employees, which is why the eleven earlier finds on this block were all justices and committee heads who happened to hold campus jobs. Do not rework these handles. New handles are still worth testing as fresh rosters surface.",
+  "src": {
+   "label": "wku.edu/img_facstaff",
+   "url": "https://www.wku.edu/img_facstaff/"
+  }
+ },
+ {
+  "kind": "duplicate person, one WKU account",
+  "name": "Lane (Caroline) Simpson / Caroline Simpson",
+  "year": "2016-17, 2018-19",
+  "detail": "Two rows on the officer list, one woman. SGA's own judicial council page of 1 November 2016 gives the 2016-17 associate justice the address lane.simpson586@topper.wku.edu, and its 2018-2019 judicial council page, captured 20 July 2019, prints the heading 'Caroline Simpson' with the office 'Associate Justice' directly above the same address. Lane is her working name and Caroline her given name, the same shape as Katherine (Lane) Hedrick, who sat on the same council. Neither row has a portrait, so nothing is at stake yet, but a face found for either belongs to both.",
+  "src": {
+   "label": "WKU SGA judicial council pages, captures of 1 Nov 2016 and 20 Jul 2019",
+   "url": "https://web.archive.org/web/20190720073043/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php"
+  }
+ },
+ {
+  "kind": "probable duplicate person, flagged not merged",
+  "name": "Amber Daniels / Amber Daniel",
+  "year": "2014-15, 2015-16",
+  "detail": "Entered twice, as Amber Daniels (justice, 2014-15) and Amber Daniel (chief justice, 2015-16). One woman on one council in consecutive years is far likelier than two whose names differ by a single s, and years.json already notes that by the Senate meeting of 2 February 2016 'a justice named Amber Daniel had been elected chief justice'. Only the singular form has a WKU account handle on SGA's own pages, amber.daniel183, and only the singular form appears in either Talisman, as 'Daniel, Amber H.' in the 2016 Sigma Kappa roster and 'Daniel, Amber' in the 2015 equivalent. Not merged here because the archive's rule is to flag rather than fix, and because Carlene and Darlene Lodmell are the standing warning against merging on name similarity alone.",
+  "src": {
+   "label": "data/years.json 2015-16 judicial council; 2016 Talisman p. 315",
+   "url": ""
+  }
  }
 ]

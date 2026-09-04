@@ -1,0 +1,142 @@
+[
+ {
+  "name": "Abigail Potter",
+  "year": "2014-15",
+  "outcome": "not filed - a face exists and cannot be tied to her",
+  "detail": "The 2016 Talisman carries an underclassman portrait cell printed ABBY POTTER on p. 285 (grid position row 2, column 1; PDF page 144, xref 18221, 510x510), and Abby is the ordinary short form of Abigail. It was not cut, because the Herald shows more than one Abby Potter at WKU in these years and the underclassman cell fits the wrong one. The Herald of 16 April 2015 has 'Bowling Green senior Abby Potter, Greek Week chair and Kappa Delta sorority member', a junior in its stories of 19 March and 3 April 2014, so that Abby Potter graduated in spring 2015 and cannot be an underclassman in a book made in 2015-16. A second Abby Potter is the Herald's own photojournalist, credited 'Abby Potter/HERALD' through 2016 and 2017 and described on 16 September 2018 as 'WKU graduate Abby Potter of Bowling Green ... A photojournalism major' - she was an undergraduate in 2015-16 and fits the cell. Nothing in the Judicial Council record gives a major, a hometown or a class year that would separate them. The Herald names the justice twice, on 17 and 21 April 2015, both times as 'Judicial Council member Abby Potter' quoted on the Richey election appeal, and photographs her neither time.",
+  "checked": "2016 Talisman back index and portrait grids; wkuherald.com post search for 'Abby Potter' and 'Abigail Potter'; data/herald-photos.json caption index (109 Potter captions, none naming her); WKU img_facstaff directory for handle abigail.potter827 (placeholder, no photograph on file)"
+ },
+ {
+  "name": "Allie Payne",
+  "year": "2014-15",
+  "outcome": "not found - no photograph exists in any WKU source",
+  "detail": "Associate justice on the 2014-15 Judicial Council. She is the least visible person on this list: the Herald has never once printed her name, in a caption or in an article, and the archive knows her only from SGA's own judicial branch page. Her WKU account handle is allison.payne040, taken from that page.",
+  "checked": "wkuherald.com media library searched live by name (0 items); data/herald-photos.json, 21,304 captioned Herald photographs 2010-2026 (13 Payne captions, none hers); the print Herald caption index 2010-2016, 23,252 photographs with the text below, right of and above each (0); wkuherald.com article text (0 articles); the 2016 Talisman back index (six Paynes, none Allie or Allison, and none of them her); the 2015 Talisman index (two Paynes, neither hers); wku.edu/img_facstaff for allison_payne040 (the WKU logo placeholder, no photograph on file)"
+ },
+ {
+  "name": "Amber Daniels",
+  "year": "2014-15",
+  "outcome": "not found - and the name itself is unsettled",
+  "detail": "Associate justice on the 2014-15 Judicial Council. Worth flagging to the editor before more time is spent on her: the list also carries 'Amber Daniel' as Chief Justice for 2015-16, and years.json already records that by the Senate meeting of 2 February 2016 'a justice named Amber Daniel had been elected chief justice'. One woman on one council in consecutive years, spelled with and without the s, is far likelier than two. Only the singular form has a WKU account handle in SGA's own pages, amber.daniel183. If they are one person, this row and the Amber Daniel row should be merged rather than hunted separately.",
+  "checked": "wkuherald.com media library, both spellings (0); data/herald-photos.json (9 Daniels captions and 75 Daniel captions, none hers); the print Herald caption index 2010-2016 (0); wkuherald.com article text (0 for Daniels; 2 for Daniel, both routine SGA meeting reports of 23 March 2016); the 2016 Talisman back index, which has 'Daniels, Evan 238' and 'Daniel, Amber H. 315' - the latter is the Sigma Kappa roster on a clubs page, not a portrait; the 2015 Talisman index, 'Daniel, Amber 329', also a clubs roster; wku.edu/img_facstaff for amber_daniel183 (placeholder)"
+ },
+ {
+  "name": "Amber Daniel",
+  "year": "2015-16",
+  "outcome": "not found - a name in two club rosters and no face",
+  "detail": "Chief Justice 2015-16. She is in both surviving Talismans, and in neither of them as a portrait: the 2016 volume indexes her at p. 315, which is the Sigma Kappa membership roster set as a block of names beside a group photograph, and the 2015 volume at p. 329, the same kind of roster. Neither is positional, so neither identifies a face. The 2016 volume's student portrait grids do not contain her at all. See the Amber Daniels note above: she and the 2014-15 justice 'Amber Daniels' are probably one person.",
+  "checked": "as for Amber Daniels above, plus the 2016 Talisman senior, underclassmen, graduate and faculty grids read name by name at the alphabetical position"
+ },
+ {
+  "name": "Kasey Glasgow",
+  "year": "2014-15",
+  "outcome": "not found - no photograph, and the surname is a search trap",
+  "detail": "Student Affairs Committee chair 2014-15. Glasgow is a Kentucky town and a WKU regional campus, so every index and caption search for her returns dozens of false positives: the 2016 Talisman prints GLASGOW as a home town on seven separate portrait spreads and has no Glasgow in its back index as a surname at all, and the Herald's photograph library holds 56 captions containing the word, every one of them the place. The only Herald article naming her is the SGA meeting report of 3 September 2014. No WKU account handle for her survives on any archived SGA page, so the university photograph directory could not even be tried.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (56 Glasgow captions, all the town or the campus); the print Herald caption index 2010-2016 (0); wkuherald.com article text (1 article, no photograph); the 2016 and 2015 Talisman back indexes at the alphabetical position (no Glasgow as a surname in either); netids harvested from every archived wku.edu/sga executive, legislative and judicial page 2014-2022 (no handle)"
+ },
+ {
+  "name": "Robert Bell",
+  "year": "2014-15",
+  "outcome": "not found - the surname is too common to work with",
+  "detail": "Associate justice on the 2014-15 Judicial Council. Bell returns 226 captions in the Herald's photograph library and none is him; the two articles that match his full name are both about the Guthrie Bell Tower in 2011. The 2016 Talisman indexes three Bells and none is Robert. WKU's photograph directory holds nothing for robert.bell271.",
+  "checked": "wkuherald.com media library (4 items matching both names, all false: a Delta Zeta bid day, the Guthrie Bell Tower, a basketball game, a cheque presentation); data/herald-photos.json; the print Herald caption index 2010-2016 (1 hit, the Robert Guthrie statue); wkuherald.com article text (2 articles, both 2011 Kentucky Building Civil War events, neither about a student); the 2016 Talisman back index (Bell, Bethany M. 309; Bell, Kennedi 262; Bell, Shelbie E. 314); the 2015 Talisman index (Bell, Bridgitte, Caroline, Kathleen, Lauren - no Robert); wku.edu/img_facstaff for robert_bell271 (placeholder)"
+ },
+ {
+  "name": "Stacey Schepers",
+  "year": "2014-15",
+  "outcome": "not found - no photograph exists in any WKU source",
+  "detail": "Associate justice on the 2014-15 Judicial Council. A rare surname, which makes the negative worth something: Schepers appears nowhere in the Herald's photograph library, nowhere in its article text, and nowhere in the back index of either surviving Talisman. Her account handle stacey.schepers252 comes from SGA's own judicial page and WKU's directory has no photograph against it.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Schepers captions of any kind); the print Herald caption index 2010-2016 (0); wkuherald.com article text (0); the 2016 Talisman back index at the alphabetical position (Schenk, Schepper absent - no Schepers); the 2015 Talisman index (none); wku.edu/img_facstaff for stacey_schepers252 (placeholder)"
+ },
+ {
+  "name": "Madison Keller",
+  "year": "2014-15",
+  "outcome": "not found - a name in a sorority roster, no portrait",
+  "detail": "Senator 2014-15, then Public Relations Committee head from 10 November 2015 when President Richey appointed her to succeed Emily Pride. The 2016 Talisman indexes her once, 'Keller, Madison I. 315', which is the Sigma Kappa membership roster printed as a block of names beside a group photograph; the 2015 Talisman does the same at p. 329. Neither list is positional, so neither identifies a face, and she is not in the volume's portrait grids. Note for the editor: Liz Koehler, whose portrait was found on this run, is in the same Sigma Kappa roster as 'Elizabeth J. Koehler' and wears a Sigma Kappa sweatshirt in her portrait cell, so the roster is real and Keller was in the chapter - it simply carries no picture of her.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (2 Keller captions, neither hers); the print Herald caption index 2010-2016 (0); wkuherald.com article text (2 articles, both election results lists); the 2016 Talisman senior, underclassmen, graduate and faculty grids and back index; the 2015 Talisman index; wku.edu/img_facstaff for madison_keller906 (placeholder)"
+ },
+ {
+  "name": "Sawyer Coffey",
+  "year": "2014-15",
+  "outcome": "not found - named in ten Herald stories, photographed in none",
+  "detail": "Director of Public Relations 2014-15 and Public Relations Director 2015-16, so SGA's own publicity officer for two years, and the paper never once photographed her. She is quoted or listed in ten Herald articles between April 2015 and May 2016, including the Dub the Pub contest she ran and six SGA meeting reports. The 2016 Talisman indexes her twice, at pp. 306 and 314, both unpositioned club rosters - the Alpha Delta Pi list and the Phi Mu list; the 2015 volume has her at p. 316, another roster. She is not in any portrait grid.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Coffey captions); the print Herald caption index 2010-2016 (0); wkuherald.com article text (10 articles); the 2016 and 2015 Talisman back indexes and every portrait grid; wku.edu/img_facstaff for sawyer_coffey171 (placeholder)"
+ },
+ {
+  "name": "Rachel Keightley",
+  "year": "2015-16",
+  "outcome": "not found - and the obvious candidate is a different person",
+  "detail": "Director of Information Technology 2015-16, sworn in at the Senate's first meeting of 2 September 2015. The 2016 Talisman indexes 'Keightley, Rachel A. 312', which is an unpositioned club roster on a clubs spread, not a portrait, and the 2015 volume has her at p. 324, the same kind of list. Her middle initial A matches WKU's own autumn 2015 dean's list entry for Rachel A. Keightley. The archive's withdrawal register already refuses the first thing a search for Keightley on wku.edu returns, the English department's alumni profile portrait of Keightley Dudgeon, class of 2019, whose given name is Keightley; that refusal stands and should not be reopened.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Keightley captions); the print Herald caption index 2010-2016 (0); wkuherald.com article text (1 article, the swearing-in report of 2 September 2015); the 2016 and 2015 Talisman back indexes and portrait grids; wku.edu/img_facstaff for rachel_keightley450 (placeholder)"
+ },
+ {
+  "name": "Temple Ricke",
+  "year": "2015-16",
+  "outcome": "not found - a face may exist in one print frame and cannot be picked out of it",
+  "detail": "Student Affairs Committee head 2015-16, sworn in on 2 September 2015 alongside Rachel Keightley and Emily Pride. One thing came close and does not work: the print Herald of 21 April 2016 carries a wide photograph on p. 2, 1950 by 1030 pixels, immediately below the story listing the spring election winners, and her name is in that list - 'than Cherry, Meagan Ward, Temple Ricke, Lucas Knight, Abdullah Raza and Abdul Salam Olanrewaju'. That is running text about who won, not a caption, and it positions nobody in the frame. The 2016 Talisman has no Ricke in its back index at all; the 2015 volume indexes her at p. 318, an unpositioned club roster.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (7 Ricke captions, none hers); the print Herald caption index 2010-2016 (1 hit, the unpositioned election-results frame described above, dlsc_ua_records/6465 p.2); wkuherald.com article text (2 articles); the 2016 Talisman back index at the alphabetical position and every portrait grid; the 2015 Talisman index; wku.edu/img_facstaff for temple_ricke559 (placeholder)"
+ },
+ {
+  "name": "Abhishek Bose",
+  "year": "2016-17",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Director of Information Technology 2016-17. A rare surname, so the negatives count for something. The Herald names him once, in a preview of an Indian student group celebration on 3 April 2017, and never photographs him. No WKU account handle for him survives on any archived SGA page beyond abhishek.bose982, which the university photograph directory answers with the placeholder.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (5 Bose captions, none him); the print Herald caption index 2010-2016 (0); wkuherald.com article text (1 article); the 2016 Talisman back index at the alphabetical position (no Bose) and every portrait grid; the 2015 Talisman index (none); wku.edu/img_facstaff for abhishek_bose982 (placeholder)"
+ },
+ {
+  "name": "Amarah Reed",
+  "year": "2016-17",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Associate justice 2016-17. Her account handle amarah.reed975 was recovered on this run from SGA's own judicial council page, captured 1 November 2016, 23 March 2017 and 2 June 2017; WKU's photograph directory has nothing against it. The 2016 Talisman indexes three Reeds and none is Amarah.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (114 Reed captions, none hers); the print Herald caption index 2010-2016 (0); wkuherald.com article text (2 SGA meeting reports, November 2016); the 2016 Talisman back index (Reed, Ashton S. 315; Reed, Hannah 307, 316; Reed, Jake 318) and every portrait grid; the 2015 Talisman index; wku.edu/img_facstaff for amarah_reed975 (placeholder)"
+ },
+ {
+  "name": "Hayden Skinner-Fine",
+  "year": "2016-17",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Associate justice 2016-17. The rarest surname on the whole list and it returns nothing anywhere: no Herald caption, no Herald article, no Talisman index entry. The account handle hayden.skinner-fine237 was recovered on this run from SGA's judicial council page; the university photograph directory answers with the placeholder for both the hyphenated and the unhyphenated file name.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Skinner-Fine captions); the print Herald caption index 2010-2016 (0); wkuherald.com article text (0); the 2016 and 2015 Talisman back indexes at the alphabetical position; wku.edu/img_facstaff for hayden_skinner-fine237 and hayden_skinnerfine237 (placeholder both)"
+ },
+ {
+  "name": "John (Jack) McKinney",
+  "year": "2016-17",
+  "outcome": "not found - named in a club roster, never photographed",
+  "detail": "Associate justice 2016-17. His account handle john.mckinney901 was recovered on this run from SGA's judicial council page. The 2016 Talisman indexes 'McKinney, John R. 315', which is one of the unpositioned club rosters on that clubs spread, not a portrait; the volume's portrait grids hold Jennifer McKinney and Juliet V. McKinney and no John. The Herald has never printed his name in a caption or an article.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (20 McKinney captions, none him); the print Herald caption index 2010-2016 (0); wkuherald.com article text (0); the 2016 Talisman back index and every portrait grid; the 2015 Talisman index (Barbara and Hannah McKinney only); wku.edu/img_facstaff for john_mckinney901 (placeholder)"
+ },
+ {
+  "name": "Lane (Caroline) Simpson",
+  "year": "2016-17",
+  "outcome": "not found - and this row is the same woman as the 2018-19 Caroline Simpson row",
+  "detail": "Associate justice 2016-17. Worth flagging to the editor as a duplicate: SGA's judicial council page of 1 November 2016 gives this justice the account lane.simpson586, and the 2018-19 judicial council page of 20 July 2019 prints the heading 'Caroline Simpson' against the same address, lane.simpson586@topper.wku.edu. One woman, one WKU account, two rows on the officer list. Neither row has a photograph: WKU's directory answers the placeholder for lane_simpson586, the Herald has never printed her name, and the 2016 Talisman's only Simpson is Lashonda.",
+  "checked": "wkuherald.com media library, both name forms (0); data/herald-photos.json (40 Simpson captions, none hers); the print Herald caption index 2010-2016 (0); wkuherald.com article text (0 for either form); the 2016 Talisman back index and portrait grids; the 2015 Talisman index (Cleveland Simpson only); wku.edu/img_facstaff for lane_simpson586 (placeholder)"
+ },
+ {
+  "name": "Caroline Simpson",
+  "year": "2018-19",
+  "outcome": "not found - see the Lane (Caroline) Simpson note",
+  "detail": "Associate justice 2018-19, and the same person as the 2016-17 justice entered as Lane (Caroline) Simpson. The proof is SGA's own: its judicial council page for 2018-2019, captured 20 July 2019, prints the heading 'Caroline Simpson' and the office 'Associate Justice' directly above the address lane.simpson586@topper.wku.edu, which is the account the 2016-17 judicial page gives to Lane Simpson. Every search route was run against both name forms and neither yields a photograph.",
+  "checked": "as for the 2016-17 row"
+ },
+ {
+  "name": "Erika Puhakka",
+  "year": "2018-19",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Associate justice 2018-19 and Chief Justice 2020-21. Another rare surname with a clean negative: no Herald caption anywhere in the photograph library, no Talisman index entry in either surviving volume. The Herald names her in five articles, all SGA business, including the cancelled impeachment hearing of a Judicial Council member reported on 7 May 2019, and photographs her in none of them. WKU's directory has nothing for erika.puhakka919.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Puhakka captions); the print Herald caption index 2010-2016 (0, and she is after that index's range in any case); wkuherald.com article text (5 articles, 2019 and 2021); the 2016 and 2015 Talisman back indexes; wku.edu/img_facstaff for erika_puhakka919 (placeholder)"
+ },
+ {
+  "name": "Jason Herlick",
+  "year": "2019-20",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Judicial Council 2019-20 and Associate Justice 2021-22. His account handle jason.herlick385 was recovered on this run from the SGA judicial council page captured 21 January 2022; the university directory answers the placeholder. Herlick appears in exactly one Herald article, the report of 25 September 2019 that the judicial council was 'fully functional' after four nominations, and in no caption anywhere.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (0 Herlick captions); wkuherald.com article text (1 article); the 2016 and 2015 Talisman back indexes; wku.edu/img_facstaff for jason_herlick385 (placeholder)"
+ },
+ {
+  "name": "Turner Reynolds",
+  "year": "2019-20",
+  "outcome": "not found - no photograph in any WKU source",
+  "detail": "Judicial Council 2019-20 and Associate Chief Justice 2021-22. His account handle turner.reynolds233 was recovered on this run from the SGA judicial council page captured 21 January 2022; the directory answers the placeholder. He is named in the same single Herald article as Jason Herlick, 25 September 2019, and nowhere else. The 2016 Talisman indexes four Reynoldses and none is Turner.",
+  "checked": "wkuherald.com media library (0); data/herald-photos.json (38 Reynolds captions, none him); wkuherald.com article text (1 article); the 2016 Talisman back index (Reynolds, Benjamin S. 315; Logan 285; Nicole 285; Stefan 251) and portrait grids; the 2015 Talisman index (J.P. and Tyler Reynolds only); wku.edu/img_facstaff for turner_reynolds233 (placeholder)"
+ }
+]
