@@ -265,5 +265,93 @@
    "label": "WKU News, 'Will Hemenover - Scholar Spotlight', 14 October 2022",
    "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=10816"
   }
+ },
+ {
+  "year": "2021-22",
+  "name": "Arivumani Srivastava",
+  "file": "2021-22-arivumani-srivastava.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 232,
+  "height": 333,
+  "why": "A real portrait, and WKU's own: a single-subject outdoor headshot illustrating a news story about him alone, taken inside his 2021-22 year on the Senate. Source frame 500x333, cropped to him, nothing upscaled.",
+  "caption_quote": "Arivumani Srivastava of Bowling Green, a senior at The Gatton Academy",
+  "id_note": "The photograph is uncaptioned but the article names one person, him, and carries one image, a portrait of one young man of school age. No other individual appears in the piece.",
+  "src": {
+   "label": "WKU News, 'Gatton Academy student secures grant for Hardin Planetarium', 9 December 2021",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=10120"
+  }
+ },
+ {
+  "year": "2021-22",
+  "name": "Ari Srivastava",
+  "file": "2021-22-arivumani-srivastava.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 232,
+  "height": 333,
+  "why": "Same photograph as the Arivumani Srivastava entry. The worklist carries both forms of the name for 2021-22, one as a member and one as the Gatton Academy senator, and they are one person under a short form and a full form.",
+  "caption_quote": "Arivumani Srivastava of Bowling Green, a senior at The Gatton Academy",
+  "id_note": "Short-form duplicate, flagged rather than merged. The archive lists 'Ari Srivastava' as a 2021-22 member and 'Arivumani Srivastava' as the 2021-22 Gatton Academy senator; Ari is the ordinary short form of Arivumani and no source gives WKU two Srivastavas in that year. If an editor judges them two people, drop this entry; the Arivumani entry is unaffected.",
+  "src": {
+   "label": "WKU News, 'Gatton Academy student secures grant for Hardin Planetarium', 9 December 2021",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=10120"
+  }
+ },
+ {
+  "year": "2024-25",
+  "name": "Ellen Henderson",
+  "file": "2024-25-ellen-henderson.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 250,
+  "height": 315,
+  "why": "A real studio portrait from WKU's own faculty and staff photograph directory, and the only picture of her face in any WKU source. The Herald's one frame that names her is the back of her head, which the withdrawal register already refused. Used at native size, nothing upscaled.",
+  "caption_quote": "Ellen Henderson Chief Justice ellen.henderson345@topper.wku.edu",
+  "id_note": "Identified the same way the archive's Derek Collins portrait was. WKU's own SGA Judicial Council page prints each justice's name against their NetID address: the capture of 13 November 2024 gives 'Ellen Henderson, Chief Justice, ellen.henderson345@topper.wku.edu'. WKU's directory then serves that NetID's portrait at wku.edu/img_facstaff/ellen_henderson345.jpg. The directory returns an identical 39,409-byte placeholder for people who have no photograph on file, which is what it returns for Mayne, Massarone, Goins, Baum and Graham; this file is a different image and a real portrait.",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file ellen_henderson345.jpg, keyed to the NetID WKU's own SGA Judicial Council page gives for her (Wayback capture, 13 November 2024)",
+   "url": "https://www.wku.edu/img_facstaff/ellen_henderson345.jpg"
+  },
+  "src2": {
+   "label": "WKU SGA, Judicial Council page as it stood 13 November 2024 (Wayback Machine)",
+   "url": "https://web.archive.org/web/20241113010032/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php"
+  }
+ },
+ {
+  "year": "2020-21",
+  "name": "Derek Collins",
+  "file": "2019-20-derrick-collins.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 250,
+  "height": 315,
+  "why": "The archive already holds this photograph, filed to the 2019-20 record spelled Derrick Collins. It is the same man and the same WKU directory file, and the 2020-21 Associate Chief Justice had no face. No new image was cut.",
+  "caption_quote": "Derek Collins Associate Justice derek.collins989@topper.wku.edu",
+  "id_note": "Spelling variant, flagged rather than merged. The archive's own 2020-21 profile of Derek Collins opens 'Collins, recorded in the Senate's own minutes of 24 September 2019 as \"Derrick Collins,\" was one of four nominees Student Body President Will Harris brought before the Senate that night', so the archive already states these two records are one man; the 24 September 2019 event entry names him Derek. The published portrait is WKU's directory file derek_collins989.jpg, keyed to the NetID WKU's SGA Judicial Council page prints beside Derek Collins, so the picture is filed under the spelling the source does not use. If an editor judges them two people, drop this entry; the 2019-20 entry is unaffected.",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file derek_collins989.jpg, keyed to the NetID WKU's own SGA Judicial Council page gives for Derek Collins",
+   "url": "https://www.wku.edu/img_facstaff/derek_collins989.jpg"
+  }
+ },
+ {
+  "year": "2021-22",
+  "name": "Margaret Glaser",
+  "file": "2021-22-margaret-glaser.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 250,
+  "height": 315,
+  "why": "A real studio portrait from WKU's own faculty and staff photograph directory. The Herald holds a file named margaret_glaser_2.jpg but it is uncaptioned and could not be downloaded this run; this one is captioned by WKU's own roster and is served by wku.edu. Native size, nothing upscaled.",
+  "caption_quote": "Margaret Glaser Associate Justice margaret.glaser099@topper.wku.edu",
+  "id_note": "WKU's SGA Judicial Council page prints each justice's name against their NetID address; the capture of 4 February 2023 gives 'Margaret Glaser, Associate Justice, margaret.glaser099@topper.wku.edu'. WKU's directory serves that NetID's portrait at wku.edu/img_facstaff/margaret_glaser099.jpg, and it is a real photograph rather than the identical 39,409-byte placeholder the directory returns for people with none on file. Filed to 2021-22, her only year in the worklist, though the portrait is from her later Judicial Council service.",
+  "src": {
+   "label": "WKU faculty/staff photograph directory, file margaret_glaser099.jpg, keyed to the NetID WKU's own SGA Judicial Council page gives for her (Wayback capture, 4 February 2023)",
+   "url": "https://www.wku.edu/img_facstaff/margaret_glaser099.jpg"
+  },
+  "src2": {
+   "label": "WKU SGA, Judicial Council page as it stood 4 February 2023 (Wayback Machine)",
+   "url": "https://web.archive.org/web/20230204112710/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php"
+  }
  }
 ]

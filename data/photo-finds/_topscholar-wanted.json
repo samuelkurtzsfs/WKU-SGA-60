@@ -298,5 +298,12 @@
   "who": [
    "2015-16 through 2019-20 senators and justices on _worklist-n1419.json"
   ]
+ },
+ {
+  "want": "https://digitalcommons.wku.edu/dlsc_ua_fin_aid/620",
+  "why": "UA1C4/10 Student Government Association Photos - the WKU Archives' own SGA photograph collection, described as 'Images of Student Government Association members and activities at Western Kentucky University'. The record page reads fine over plain HTTP; the finding aid PDF behind it (context/dlsc_ua_fin_aid/article/1619/viewcontent/auto_convert.pdf) is the only thing that lists what is actually in the collection, and that file 403s like every other TopSCHOLAR download. This is the single most relevant unread document in the archive for the whole portrait project, not just one block: an item-level inventory of SGA photographs would give dates, subjects and names for decades that no other source covers, and 2004-2011 in particular has no Talisman at all.",
+  "who": [],
+  "file_url": "https://digitalcommons.wku.edu/context/dlsc_ua_fin_aid/article/1619/viewcontent/auto_convert.pdf",
+  "note": "Found by harvesting TopSCHOLAR's OAI-PMH feed, which is open to plain HTTP and is not the blocked search page. digitalcommons.wku.edu/do/oai/?verb=ListRecords&metadataPrefix=oai_dc&set=publication:<set> returns every record's title, date, description and both URLs, in bulk, with no rate limiting beyond ordinary politeness. Record pages answer 200 to Python urllib (curl is TLS-fingerprint blocked); only /context/.../viewcontent file downloads are hard-403. So metadata is fully reachable from a script and files are not."
  }
 ]
