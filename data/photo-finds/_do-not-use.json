@@ -204,7 +204,8 @@
   "file": "Herald 15 Apr 2014, the Fiji house clean-up",
   "reason": "Three men named, no positions, three young men in the frame, nothing to separate them.",
   "url": "https://wkuherald.com/wp-content/uploads/2014/04/e9b603cf7fff19ebb422d97f60ea691a.jpg",
-  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json"
+  "logged": "Herald leads pass, 1 September 2026; full reasoning in data/photo-finds/leads-notes.json",
+  "resolved": "Restored 4 September 2026, from a different source. The Fiji house clean-up frame condemned above named three men without positions and is not what is published. The portrait now published is his own studio portrait cell from the underclassmen grid on p. 308 of the 2014 Talisman, captioned with his name, which identifies one person by construction. The 2014 volume is not on archive.org, so the page image could not be re-checked; the label states the page and the grid so a later run can."
  },
  {
   "name": "William Berry",
@@ -342,7 +343,8 @@
   "name": "Stacey Taylor",
   "year": "2000-01",
   "file": "https://digitalcommons.wku.edu/dlsc_ua_records/9092 (Herald 76:54, 24 Apr 2001, pp. 10-11)",
-  "reason": "The photograph on those pages belongs to Wendi Thompson's feature 'A Tale of Two Sisters', which is about Natalie Taylor and Stacey Taylor, twins. The entry recorded only 'cropped from a group photo' and gave no basis at all for telling one sister from the other, so nothing in the citation says which twin the crop is. Withdrawn 2 September 2026. It can be restored, but only by reading pp. 10-11 of the issue PDF and recording in the label the positional cue in the caption that fixes Stacey. Do not republish it on the strength of the article title alone."
+  "reason": "The photograph on those pages belongs to Wendi Thompson's feature 'A Tale of Two Sisters', which is about Natalie Taylor and Stacey Taylor, twins. The entry recorded only 'cropped from a group photo' and gave no basis at all for telling one sister from the other, so nothing in the citation says which twin the crop is. Withdrawn 2 September 2026. It can be restored, but only by reading pp. 10-11 of the issue PDF and recording in the label the positional cue in the caption that fixes Stacey. Do not republish it on the strength of the article title alone.",
+  "resolved": "Restored 4 September 2026, from a different photograph. The frame withdrawn above is the twins feature of 24 April 2001; the portrait now published is from the Shantytown package in the Herald of 13 November 2001, p. 9, whose caption names her and gives 'left' for her, and whose other figure is Ashley Roberts rather than her sister. The twin ambiguity that condemned the April frame therefore does not arise in this one. Do not read this entry as clearing the April photograph, which stays withdrawn."
  },
  {
   "name": "Symone Whalin",
@@ -472,7 +474,8 @@
   "name": "Tyler Jury",
   "year": "2008-09",
   "file": "https://www.wku.edu/img_news/article_images/9385.jpg",
-  "reason": "WKU's 'Clay Simpson and Tyler Jury Spotlight' of 4 November 2019 (articleid=9385). The identification of the man is sound in kind - the Herald ties a WKU Tyler Jury to Phi Gamma Delta in April 2010 and to the Clayton & Crume leather business with Clay Simpson in October 2013, and the article calls them Mahurin Honors College alumni of 2012 - but the photograph is of two men sitting side by side against a brick wall, and neither the article nor any caption says which is which. This is the David Bass problem: two names, no positions, two men of the same age and colouring. Do not cut a face from it."
+  "reason": "WKU's 'Clay Simpson and Tyler Jury Spotlight' of 4 November 2019 (articleid=9385). The identification of the man is sound in kind - the Herald ties a WKU Tyler Jury to Phi Gamma Delta in April 2010 and to the Clayton & Crume leather business with Clay Simpson in October 2013, and the article calls them Mahurin Honors College alumni of 2012 - but the photograph is of two men sitting side by side against a brick wall, and neither the article nor any caption says which is which. This is the David Bass problem: two names, no positions, two men of the same age and colouring. Do not cut a face from it.",
+  "resolved": "Restored 4 September 2026, from a different source. The two-men-against-a-brick-wall frame condemned above is still not usable and is not what is published. The portrait now published is a studio headshot from the Spirit Masters Class of 2011-2012 booklet (UA12/2/16), p. 11, captioned with his name beneath the portrait, and the volume's own member roster lists him in the class. That is the same kind of identification as the twenty-six other Spirit Masters portraits in this archive."
  },
  {
   "name": "Todd Duncan",
@@ -484,6 +487,7 @@
   "name": "Amanda K. Thurmond",
   "year": "1994-95",
   "file": "1993 Talisman, p. 188, the Kappa Delta group photograph",
-  "reason": "The record gave a page and a sorority and nothing else: no index entry pinning her to p. 188, and no statement of which figure in the group she is. The comparable finds on the same sweep (Daryl Pepper, Andi Cailles) both cite an index line placing the person on the exact page; this one cites nothing, so there is no way to check that the cropped face is hers, or that she is in the frame at all. Restore only with an index citation or caption position."
+  "reason": "The record gave a page and a sorority and nothing else: no index entry pinning her to p. 188, and no statement of which figure in the group she is. The comparable finds on the same sweep (Daryl Pepper, Andi Cailles) both cite an index line placing the person on the exact page; this one cites nothing, so there is no way to check that the cropped face is hers, or that she is in the frame at all. Restore only with an index citation or caption position.",
+  "resolved": "Restored 4 September 2026, on the condition this entry set. The caption position the record was missing does exist and had simply never reached the published label: the caption's middle row runs Heather Meenach, Amanda Thurmond, Rachel Schroeder, Becky Harris against a middle row of exactly four women, and the rows of two, four and five names line up one to one with a frame holding two, four and five. Meenach, named first in that row, is the archive's own Heather Renee Meenach, which checks the count against a face already published. The label now carries that reasoning. The withdrawal of 4 September was right on what it could see and is left standing above as the reason the label had to change."
  }
 ]
