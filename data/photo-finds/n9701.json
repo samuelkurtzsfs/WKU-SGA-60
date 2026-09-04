@@ -382,5 +382,37 @@
    "label": "College Heights Herald 73:31, 29 January 1998, p. 5",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7963"
   }
+ },
+ {
+  "year": "2000-01",
+  "name": "Stacey Taylor",
+  "file": "2000-01-stacey-taylor.jpg",
+  "quality": "soft",
+  "why": "The only photograph of her found in the digitised Herald run; a night frame lit by a fire barrel, soft and grainy, but the face reads.",
+  "caption_quote": "Top: Paducah junior Stacey Taylor, left, chats with Elizabethtown freshman Ashley Roberts",
+  "id_basis": "The Shantytown package runs two photographs under one credit line. The caption identifies the lower frame first, then marks the second with 'Top:' and names the two people in it, giving 'left' for Taylor. The upper frame holds exactly two figures seated at a fire barrel; the left of the two is cropped here.",
+  "src": {
+   "label": "College Heights Herald 77:24, 13 November 2001, p. 9",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9122"
+  },
+  "replaces": null,
+  "width": 242,
+  "height": 253
+ },
+ {
+  "year": "1998-99",
+  "name": "Brianne Dockins",
+  "file": "1998-99-brianne-dockins.jpg",
+  "quality": "soft",
+  "why": "The only photograph of her found in the digitised Herald; a high-contrast newsprint action frame, but the profile, eye and mouth all read.",
+  "caption_quote": "Elizabethtown freshman Briana Dockins led the way for karaoke night",
+  "id_basis": "The caption names four people and separates them by what they are doing: Dockins 'led the way for karaoke night' while the other three named 'applauded from the sidelines.' The photograph has one figure singing into a microphone with onlookers behind, so the singer is Dockins. The Herald prints her given name 'Briana'; the archive's roster has 'Brianne', same surname, same hall-social freshman year, 1998-99.",
+  "src": {
+   "label": "College Heights Herald 74:29, 14 January 1999, p. 2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8033"
+  },
+  "replaces": null,
+  "width": 431,
+  "height": 505
  }
 ]

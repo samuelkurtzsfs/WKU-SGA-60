@@ -606,21 +606,6 @@
   "replaces": null
  },
  {
-  "year": "1983-84",
-  "name": "Todd Duncan",
-  "file": "1983-84-todd-duncan.jpg",
-  "quality": "group crop",
-  "why": "The only photograph of a Todd Duncan in the digitised Talismans; cut from the Pi Kappa Alpha group frame that names him.",
-  "caption_quote": "BACK ROW: Mark Shriner, Tony Stamps ... Kenny Stiglets, Todd Duncan",
-  "src": {
-   "label": "1986 Talisman, p. 265, the Pi Kappa Alpha group photograph at the top of the Greeks spread. The frame holds exactly 24 figures in four staggered rows of 7, 6, 6 and 5 counting from the back, matching the caption's 7, 6, 6 and 5 names, so the rows line up; Duncan is the last of the seven in the back row, the rightmost and highest figure in the frame. The identification rests on the caption alone: no other Todd Duncan appears in the 1986 or 1987 volumes, but the volume index does not cross-reference him to a student government page.",
-   "url": "https://archive.org/details/talisman1986west/page/n268/mode/1up"
-  },
-  "width": 140,
-  "height": 175,
-  "replaces": null
- },
- {
   "year": "1987-88",
   "name": "Drew DeLozier",
   "file": "1987-88-drew-delozier.jpg",
@@ -679,5 +664,78 @@
   "width": 140,
   "height": 180,
   "replaces": null
+ },
+ {
+  "year": "1984-85",
+  "name": "Julie Lippert",
+  "file": "1984-85-julie-lippert.jpg",
+  "replaces": null,
+  "quality": "small",
+  "why": "Her junior class portrait, cut from the grid cell the page's own name key places her in. The volume's other two pictures of her are worse: the homecoming crowning on p. 10 puts her face at about thirty pixels, and the Chi Omega group on p. 290 is smaller still.",
+  "caption_quote": "JULIE LIPPERT, Boaz",
+  "src": {
+   "label": "1984 Talisman (The Touch of Red), p. 138, junior class portraits (Koenig-Locke). Three rows of six photographs against three blocks of six names in the left margin; she is the third name of the third block, so her cell is row 3, column 3. The key was checked against the whole eighteen: rows read M M F F M F / F F M F M F / M F F M M F and the eighteen faces read the same, and the second face of row 1 is visibly East Asian, matching Nobuhiko Koyama of Kanagawa, Japan. The volume's index gives her pp. 10, 12, 138, 290 and 294; p. 10 captions her as homecoming queen, 'a Paducah junior', which ties this face to the woman the Herald and the Talisman both name.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/408"
+  },
+  "width": 97,
+  "height": 115
+ },
+ {
+  "year": "1983-84",
+  "name": "Kevin Jackson",
+  "file": "1983-84-kevin-jackson.jpg",
+  "replaces": null,
+  "quality": "soft",
+  "why": "A half-page editorial photograph of him alone, cropped to head and shoulders; the only other page the volume gives him is a group in the organizations section. He is looking down at the trombone, but the face is fully lit and unobstructed.",
+  "caption_quote": "BIG RED band member Kevin Jackson, an Olmstead freshman, reassembles his trombone",
+  "src": {
+   "label": "1984 Talisman (The Touch of Red), p. 172, the freshman class divider. The caption names one person and the frame holds one person, so no positional reading is needed. The volume's index carries a single Kevin Jackson, 'Jackson, Kevin Edward 172, 266'; the Kevin Lynn Jackson of the 1980 and 1981 volumes is a different man who had already left.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/408"
+  },
+  "width": 240,
+  "height": 300
+ },
+ {
+  "year": "1982-83",
+  "name": "Robert Cook",
+  "file": "1982-83-robert-cook.jpg",
+  "replaces": null,
+  "why": "His sophomore class portrait, cut from the grid cell the page's own name key places him in. The volume's only other page for him is p. 61 in student life.",
+  "caption_quote": "ROBERT F. COOK, Cerulean",
+  "src": {
+   "label": "1983 Talisman (A Season of Hope), p. 290, sophomore class portraits (Coo-Dor). Five rows of six photographs against five blocks of six names in the left margin; he is the second name of the first block, so his cell is row 1, column 2. All thirty were checked against the key: the rows read F M M F F F / F F M F F M / F F F F M M / M F F F F M / M F F F M M and the thirty faces read the same. The volume's index carries one Robert Cook, 'Cook, Robert Fredrick 61, 290'.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/407"
+  },
+  "width": 200,
+  "height": 238
+ },
+ {
+  "year": "1982-83",
+  "name": "Ed Jordan",
+  "file": "1982-83-ed-jordan.jpg",
+  "replaces": null,
+  "why": "A large, sharp working photograph of him leading a campus tour, cropped to head and shoulders. The volume's only other picture of him is the ASG group on p. 232, where he is one of thirty-seven faces.",
+  "caption_quote": "ON A TOUR of the campus, Radcliff senior Ed Jordan and Kim Duncan ... point out Western's features",
+  "src": {
+   "label": "1983 Talisman (A Season of Hope), p. 212. The caption names two guides, Ed Jordan and Kim Duncan; two figures in the frame wear guide name tags, one a man and one a woman, and everyone else is a coated visitor walking behind them. Kim Duncan is a woman, printed as Kimberlee Duncan in the Spirit Masters key lower on the same page, so the man is Jordan. The volume's index carries one Jordan, 'Jordan, Ed 212, 232', and the ASG group key on p. 232 gives him in full as Edmund Jordan.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/407"
+  },
+  "width": 380,
+  "height": 475
+ },
+ {
+  "year": "1983-84",
+  "name": "Shiela Marie Waninger",
+  "file": "1983-84-shiela-marie-waninger.jpg",
+  "replaces": null,
+  "quality": "group crop",
+  "why": "The only photograph of her the archive can reach: third of six in the front row of the Phi Mu chapter portrait, cropped to head and shoulders. She has no class portrait in either the 1983 or the 1984 volume; the 1984 book gives her only two more group frames, both smaller.",
+  "caption_quote": "PHI MU - Front row: Laura Lafferty, Lori Campbell, Shelia Waninger, Susan Hall, Lisa Babcock, Cindy Strine",
+  "src": {
+   "label": "1983 Talisman (A Season of Hope), p. 254, the left of two Phi Mu chapter photographs. Twenty names in three rows of six, seven and seven; the frame holds twenty women in rows of six, seven and seven, so the rows fix the reading, and she is third of the six standing at the front. The text beside the picture names her again as the chapter president, 'a junior from Fulda, Ind.' The volume prints her as Shelia and indexes her as Waninger, Sheila Marie 254.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/407"
+  },
+  "width": 160,
+  "height": 200
  }
 ]
