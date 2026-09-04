@@ -478,5 +478,117 @@
   "width": 540,
   "height": 675,
   "replaces": null
+ },
+ {
+  "year": "1977-78",
+  "name": "Bob Tinsley",
+  "file": "1977-78-bob-tinsley.jpg",
+  "quality": "small",
+  "why": "His own senior class portrait, a clean studio head-and-shoulders frame; the only likeness of him the volume carries besides an ROTC group.",
+  "caption_quote": "ROBERT L. TINSLEY, JR., History and Govt. Radcliff",
+  "id_note": "1977 Talisman senior grid, printed p. 372 (scan leaf n375). Names run five to a block in alphabetical order beside a row of five photographs, left to right: Diane K. Tinsley, Robert L. Tinsley Jr., Lynne G. Tobe, Paula J. Todd, Krissy W. Tolle. He is the second cell and the only man in the row, matching the only male name in the block. The volume index carries one Robert Tinsley.",
+  "src": {
+   "label": "1977 Talisman, p. 372",
+   "url": "https://archive.org/details/talisman1977west/page/n375/mode/1up"
+  },
+  "width": 329,
+  "height": 524,
+  "replaces": null
+ },
+ {
+  "year": "1979-80",
+  "name": "Tim Irons",
+  "file": "1979-80-tim-irons.jpg",
+  "quality": "small",
+  "replaces": "an unregistered 209x302 crop already sitting in data/photos with no citation; it is the same man from the 1980 volume, and this larger cell with an unambiguous printed name replaces it",
+  "why": "His own senior class portrait, the largest and most clearly captioned cell of him in the digitised volumes.",
+  "caption_quote": "TIMOTHY C. IRONS, finance Louisville",
+  "id_note": "1981 Talisman senior grid, printed p. 331 (scan leaf n334), six photographs to a row against a block of six names in alphabetical order: Rick Huntsman, Karen G. Husk, Rickey Husk, David Hutchison, Donna Hyde, Timothy C. Irons. He is the sixth and last cell of the last row and the sexes run m,f,m,m,f,m to match. Cross-checked against the 1980 junior grid, printed p. 377, where the same face sits in the cell the 1980 index files under Irons, Timothy Collins; that page prints the surname as IRSON, so it was not used as the citation.",
+  "src": {
+   "label": "1981 Talisman, p. 331",
+   "url": "https://archive.org/details/talisman1981west/page/n334/mode/1up"
+  },
+  "width": 263,
+  "height": 442
+ },
+ {
+  "year": "1978-79",
+  "name": "Jamie Hargrove",
+  "file": "1978-79-jamie-hargrove.jpg",
+  "quality": "good",
+  "why": "His own senior class portrait, a studio head-and-shoulders frame in suit and tie; better than the working photographs of him at ASG meetings.",
+  "caption_quote": "JAMES E. HARGROVE, accounting Milton",
+  "id_note": "1980 Talisman senior grid, printed p. 351 (scan leaf n354). Five photographs to a row beside a block of five names in alphabetical order: Kathleen Hancock, Carolyn E. Handley, Julie L. Hanson, Tracey J. Hardesty, James E. Hargrove. He is the fifth cell and the only man in the row, matching the only male name in the block. Jamie is James Earl Hargrove: the same volume captions him Jamie Hargrove as ASG president on pp. 274-5 and its back index files Hargrove, James Earl at 274, 275 and 351.",
+  "src": {
+   "label": "1980 Talisman, p. 351",
+   "url": "https://archive.org/details/talisman1980west/page/n354/mode/1up"
+  },
+  "width": 298,
+  "height": 488,
+  "replaces": null
+ },
+ {
+  "year": "1977-78",
+  "name": "Steve Thornton",
+  "file": "1977-78-steve-thornton.jpg",
+  "quality": "small",
+  "why": "His own class portrait from the year he was sophomore president; the alternatives are meeting photographs of him a year later as ASG president.",
+  "caption_quote": "STEVE O. THORNTON, Bowling Green",
+  "id_note": "1978 Talisman sophomore grid, printed p. 404 (scan leaf n407). This block runs four names to four photographs: Steve O. Thornton, Cathy J. Thurmond, Elizabeth Thurston, Micahel Tigue. He is the first cell; the row reads man, woman, woman, man against name genders m,f,f,m. The 1978 index carries one Steven Owen Thornton, at 35, 273, 324 and 404, and pp. 33-35 are the ASG spread.",
+  "src": {
+   "label": "1978 Talisman, p. 404",
+   "url": "https://archive.org/details/talisman1978west/page/n407/mode/1up"
+  },
+  "width": 181,
+  "height": 264,
+  "replaces": null
+ },
+ {
+  "year": "1976-77",
+  "name": "Don Augenstein",
+  "file": "1976-77-don-augenstein.jpg",
+  "quality": "small",
+  "why": "His own senior class portrait, taken the year after the term the archive gives him; the only other frame naming him is a four-person committee photograph with no positions.",
+  "caption_quote": "DON AUGENSTEIN JR., Textiles Clothing and Merch. Owensboro",
+  "id_note": "1978 Talisman senior grid, printed p. 349 (scan leaf n352). Five photographs to a row against a block of five names in alphabetical order: Don Augenstein Jr., Dwight L. Austin, Janet M. Bacon, Vicki Bagwell, Mark K. Bailey. He is the first cell of the second row and the row reads m,m,f,f,m against name genders m,m,f,f,m. The 1978 index carries one Augenstein, Donald Edward, at 324 and 349, his brother Michael Dale having no page that year; the 1977 index puts the same Donald Edward Augenstein on p. 51, that volume ASG spread, where the caption names Don Augenstein organising a rules and elections committee. The p. 51 photograph itself was rejected: four people, no positions given, and one turned away from the camera.",
+  "src": {
+   "label": "1978 Talisman, p. 349",
+   "url": "https://archive.org/details/talisman1978west/page/n352/mode/1up"
+  },
+  "width": 326,
+  "height": 455,
+  "replaces": null
+ },
+ {
+  "year": "1966-67",
+  "name": "Larry S. Heishman",
+  "file": "1966-67-larry-s-heishman.jpg",
+  "quality": "small",
+  "why": "His own freshman class portrait, two years before the term the archive gives him, and the only likeness of him in the digitised volumes.",
+  "caption_quote": "Larry Stephen Heishman ... Owensboro",
+  "id_note": "1965 Talisman freshman grid, printed p. 262 (scan leaf n269). The grid runs seven faces to a row against a numbered key in the right-hand column that labels each row: Eleventh Row reads Kristen Elizabeth Hein, Larry Stephen Heishman, Edward Jay Heitz, Joseph Carter Helm, Lawrence William Helm, Dane Howard Heltzel, Hugh C. Henderson III. He is the second cell of the eleventh row; the row reads woman then six men, matching the key exactly. Larry S. Heishman was ASG treasurer in 1966-67, which fits a 1964-65 freshman.",
+  "src": {
+   "label": "1965 Talisman, p. 262",
+   "url": "https://archive.org/details/talisman1965west/page/n269/mode/1up"
+  },
+  "width": 208,
+  "height": 300,
+  "replaces": null
+ },
+ {
+  "year": "1966-67",
+  "name": "William (Winky) Menser",
+  "file": "1966-67-william-winky-menser.jpg",
+  "quality": "small",
+  "why": "His own sophomore class portrait, from two years before the term the archive gives him. A separate 1968 Talisman frame is already published for him under 1967-68; this is the contemporaneous one for his class presidency.",
+  "caption_quote": "William Menser ....... Dawson Springs",
+  "id_note": "1965 Talisman sophomore grid, printed p. 241 (scan leaf n248). Seven faces to a row against a key in the left-hand column that labels each row: Fourth Row reads William Menser, Bobby Meredith, Hershal Meredith, William Meredith, Charles Metcalfe, Betty Meuth, Vivian Michael. He is the first cell of the fourth row; the row reads five men then two women, matching the key exactly. The 1965 back index carries one William Menser, William Earl Menser at pp. 58 and 241, the other Menser in the volume being Phillip Morris Menser. A sophomore in 1964-65 was a senior in 1966-67, the year he was senior class president.",
+  "src": {
+   "label": "1965 Talisman, p. 241",
+   "url": "https://archive.org/details/talisman1965west/page/n248/mode/1up"
+  },
+  "width": 291,
+  "height": 314,
+  "replaces": null
  }
 ]

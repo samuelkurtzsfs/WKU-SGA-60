@@ -233,5 +233,37 @@
    "label": "College Heights Herald, 15 October 2020, WKU cross-country practice at the Charles M. Ruter Track and Field Complex",
    "url": "https://wkuherald.com/wp-content/uploads/2020/10/9489d8de5416cde8d811ef791024fd58.jpg"
   }
+ },
+ {
+  "year": "2022-23",
+  "name": "Ethan Huffaker",
+  "file": "2022-23-ethan-huffaker.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 270,
+  "height": 374,
+  "why": "WKU's own news photograph of him doing the thing the article is about, and the only picture of him in any WKU source. Uncaptioned, so the identification is by elimination and is set out in id_note. Source frame is only 499x399, so the crop is small; nothing was upscaled.",
+  "caption_quote": "Philosophy major Ethan Huffaker presented a co-authored paper",
+  "id_note": "The article carries one photograph and names two people: Ethan Huffaker, a philosophy major, and Dr. Landon Elkind, Assistant Professor of Philosophy, his co-author. The frame shows one person speaking at a lectern in a WKU Philosophy student shirt, and the lectern is branded cfi, the Center for Inquiry in Amherst, New York, which is where the article says the Bertrand Russell Society's 51st annual meeting was held on 7-9 June 2024. Elkind is eliminated on WKU's own faculty portrait of him at wku.edu/img_facstaff/landon_elkind.jpg, which shows a full-bearded man; the speaker is clean-shaven and visibly younger. The remaining named person, and the student the headline is about, is Huffaker.",
+  "src": {
+   "label": "WKU News, 'WKU Philosophy Student Presents Research at National Philosophy Meeting', 14 June 2024",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=12042"
+  }
+ },
+ {
+  "year": "2022-23",
+  "name": "Will Hemenover",
+  "file": "2022-23-will-hemenover.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 290,
+  "height": 415,
+  "why": "WKU's own Mahurin Honors College Scholar Spotlight on him, a profile of one student illustrated by one photograph of him doing the work the piece describes. The article also puts him in SGA in its own words, so the subject and the senator are the same person. Source frame is 500x500; nothing was upscaled.",
+  "caption_quote": "Will Hemenover - Scholar Spotlight",
+  "id_note": "Uncaptioned photograph, but the article has a single human subject and its headline is his name. The frame shows one person in a WKU shirt kneeling in a crop row, which is the internship the article is about: 'Will was an intern for WKU's Farm-to-Table Program as a horticulture student', responsible for the plants and the crops. Nobody else is named in the piece except its author.",
+  "src": {
+   "label": "WKU News, 'Will Hemenover - Scholar Spotlight', 14 October 2022",
+   "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=10816"
+  }
  }
 ]

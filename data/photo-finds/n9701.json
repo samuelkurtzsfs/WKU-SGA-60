@@ -318,5 +318,53 @@
   "width": 160,
   "height": 275,
   "replaces": null
+ },
+ {
+  "year": "1998-99",
+  "name": "Kara Yeckering",
+  "file": "1998-99-kara-yeckering.jpg",
+  "replaces": null,
+  "width": 170,
+  "height": 244,
+  "quality": "small",
+  "why": "Studio portrait the Herald ran with its SGA election candidate profiles; the only photograph of her in the digitised run.",
+  "caption_quote": "Will Jones and Kara Yeckering",
+  "id_basis": "Page-wide SGA ELECTION CANDIDATES strip: three pairs, each headed by two names with two portraits stacked in that column, top then bottom in heading order. The Jones/Yeckering column heads Jones first and the top frame is of a Black man, which the same page's story confirms ('the first black student to run for SGA president in years'); the lower frame is therefore Yeckering, described in the block as 'an Owensboro senior'.",
+  "src": {
+   "label": "College Heights Herald 74:50, 13 April 1999, p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8051"
+  }
+ },
+ {
+  "year": "1997-98",
+  "name": "Derek Durbin",
+  "file": "1997-98-derek-durbin.jpg",
+  "replaces": null,
+  "width": 210,
+  "height": 318,
+  "quality": "small",
+  "why": "The standing headshot the Herald ran beside his commentary column; well lit, smiling, and the cleanest of the several printings of it.",
+  "caption_quote": "Derek R. Durbin is a senior English major from Bowling Green",
+  "id_basis": "Column mugshot with his name set beside it in bold, 'Derek Durbin / commentary', and the italic tagline under the column naming him again in full. Durbin is a rare surname at Western in these years; the corpus carries no second Derek Durbin, and Derek R. Durbin published commentary through 1997-98 and 1998-99, the years the archive records his SGA service.",
+  "src": {
+   "label": "College Heights Herald 74:7, 17 September 1998, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9085"
+  }
+ },
+ {
+  "year": "1997-98",
+  "name": "Gabriel Fancher",
+  "file": "1997-98-gabriel-fancher.jpg",
+  "replaces": null,
+  "width": 162,
+  "height": 215,
+  "quality": "small",
+  "why": "The headshot printed with his Herald commentary column; smiling and evenly lit, and the only frame of his face in the digitised run.",
+  "caption_quote": "Gabriel Fancher commentary",
+  "id_basis": "Column mugshot with his name and the word commentary set immediately beneath the frame, no other name within the block. Corroborated by a 1998 Herald caption naming 'Horse Cave junior Gabriel Fancher' at the 10k Classic, the same rare name in the same student generation.",
+  "src": {
+   "label": "College Heights Herald 76:17, 24 October 2000, p. 5",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8704"
+  }
  }
 ]

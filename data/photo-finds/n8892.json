@@ -60,5 +60,51 @@
    "label": "1992 Talisman, p. 94, senior portraits; indexed \"Button, Amanda K. 94\"",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416/"
   }
+ },
+ {
+  "year": "1989-90",
+  "name": "Daryl Pepper",
+  "file": "1989-90-daryl-pepper.jpg",
+  "replaces": null,
+  "quality": "group crop",
+  "width": 106,
+  "height": 165,
+  "why": "1992 Talisman, p. 19, bottom-right photograph of the 1991 Homecoming court on the Smith Stadium track, credited to Mark T. Osler. Only two people stand in the frame, a man in a light suit and a woman on his arm, and the caption beside it names exactly two, Daryl Pepper escorting Lee Ann Walke, so the man is Pepper. Indexed 'Pepper, Daryl 19' and he is the only Pepper of that name in the volume. His only photograph anywhere in the 1988-1993 volumes: he has no class-portrait page. Soft and small because the scan is about 96 dpi and this is a night exposure cropped out of a wider frame, but the face is legible and the frame is a dignified one.",
+  "caption_quote": "Daryl Pepper, an Elizabethtown senior, escorted Lee Ann Walke",
+  "src": {
+   "label": "1992 Talisman, p. 19, Homecoming; indexed \"Pepper, Daryl 19\"",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416/"
+  }
+ },
+ {
+  "year": "1989-90",
+  "name": "Dawn Bradley",
+  "file": "1989-90-dawn-bradley.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 88,
+  "height": 107,
+  "why": "1990 Talisman, p. 109, underclassmen portrait grid, running head 'A - Bri'. The grid is six portraits across and eight rows deep, forty-eight cells, and the names are printed in the outer column in eight groups of exactly six, one group per row, left to right. The eighth group reads Dawn Bradley, Carrie Bragg, Sheryl Brewer, Tanya Bricking, Henry D. Brierly, Robin Bristoe, and this is the first cell of the eighth row. The mapping checks against the sexes: row one reads man, man, woman, woman, woman, man for Chris Adams, Tim Adcox, Tabitha Aldridge, Amanda Alexander, Sandra Alford, Danny C. Allen, and the pictures agree, as they do in row six and row eight. She is the only Bradley on the page and the page covers the whole of A to Bri. A clean studio headshot, in focus, facing the camera; small only because the scan is about 96 dpi.",
+  "caption_quote": "Dawn Bradley, (Fr.) Lebanon, Tenn.",
+  "src": {
+   "label": "1990 Talisman, p. 109, underclassmen portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414/"
+  }
+ },
+ {
+  "year": "1988-89",
+  "name": "Eric Elliott",
+  "file": "1988-89-eric-elliott.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 96,
+  "height": 114,
+  "why": "1990 Talisman, p. 112, underclassmen portrait grid, running head 'Ebe - Fut'. Six portraits across; the names are printed in the outer column in groups of six, one group per row, left to right. The first group reads Gena Eberhard, Angelo Edwards, Eric Elliott, Kelly Elliott, Marcy Elrod, Lisa Embry, and this is the third cell of the first row. The mapping checks against the sexes across all three full rows: row one is woman, man, man, woman, woman, woman and the pictures agree, as do row two (woman, man, man, woman, woman, woman) and row three (woman, woman, woman, man, man, woman). He is the only Eric Elliott in the volume and the page covers Ebe to Fut. A clean studio headshot in coat and tie, in focus, facing the camera; small only because the scan is about 96 dpi.",
+  "caption_quote": "Eric Elliott, (Jr.) Somerset",
+  "id_note": "The archive carries 'Eric Elliott' at 1988-89 and 'Eric Elliot' at 1989-90 as two entries. The 1990 Talisman knows one Eric Elliott, a junior from Somerset, and this portrait is filed only to the entry whose spelling the Talisman matches exactly. The two entries are not merged here.",
+  "src": {
+   "label": "1990 Talisman, p. 112, underclassmen portraits",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414/"
+  }
  }
 ]

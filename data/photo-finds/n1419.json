@@ -331,5 +331,35 @@
    "label": "WKU faculty/staff photograph directory, file derek_collins989.jpg. The handle is WKU's own: its SGA Judicial Council page lists 'Derek Collins, Associate Justice' against derek.collins989@topper.wku.edu (web.archive.org capture of wku.edu/sga/2018-2019-judicial/judicial-council.php), and WKU renders these directory files on its own department pages with the person's name as the img title.",
    "url": "https://www.wku.edu/img_facstaff/derek_collins989.jpg"
   }
+ },
+ {
+  "year": "2018-19",
+  "name": "Lane Hedrick",
+  "file": "2016-17-katherine-lane-hedrick.jpg",
+  "replaces": null,
+  "width": 721,
+  "height": 1080,
+  "quality": "good",
+  "why": "The archive already holds this portrait, but only against the other spelling of her name: SGA's own judicial page calls her Katherine (Lane) Hedrick, which is the 2016-17 entry, while the 2018-19 Acting Chief Justice is entered as Lane Hedrick, so the face never reached that year. data/name-aliases.json already asserts the two are one person. Same file, no second copy cut. Identification is the Herald naming the same student twice in the same academic year: its SGA meeting report of 22 March 2017 says 'Lane Hedrick was selected to be the next associate chief justice', and this single-subject studio portrait of a WKU junior named Lane Hedrick ran on 3 November 2017. The paper's own duplicate upload of the frame is titled WEB_BosniaPortrait_Lane_LSchweickart2.jpg, so the Herald itself calls it a portrait of Lane. One person in the frame, plain grey backdrop, full face.",
+  "caption_quote": "Junior Lane Hedrick, studied and interned in Bosnia over the summer.",
+  "src": {
+   "label": "College Heights Herald, 3 November 2017, 'From Bosnia to Bowling Green: students share world experiences'; SGA role confirmed by the Herald's SGA report of 22 March 2017, 'SGA supports military students through legislation'",
+   "url": "https://wkuherald.com/wp-content/uploads/2017/11/b21f5a00b7590c3343bcd2ca1c0b3381.jpg"
+  }
+ },
+ {
+  "year": "2017-18",
+  "name": "Lillian Nellans",
+  "file": "2016-17-lily-nellans.jpg",
+  "replaces": null,
+  "width": 420,
+  "height": 525,
+  "quality": "small",
+  "why": "The same spelling problem as Hedrick: the archive already holds this portrait against Lily Nellans in 2016-17, while the 2017-18 Legislative Research chair is entered as Lillian Nellans, so the face never reached that year. Same file, no second copy cut. The two spellings are the Herald's own, for one person in one organisation across consecutive semesters: its SGA report of 25 October 2017 quotes 'Legislative Research Committee Chair Lillian Nellans' arguing for Resolution 2-17-F, which is exactly the office and year on the worklist, and this portrait ran the previous April captioned Lily Nellans and describing her SGA presidential run. Lily is the ordinary short form of Lillian, and no second Nellans appears anywhere in SGA's records or the Herald's photo library. Single subject, full face, but only 420x525 and slightly soft.",
+  "caption_quote": "Lily Nellans, a junior from Des Moines, Iowa, ran for Student Government Association president",
+  "src": {
+   "label": "College Heights Herald, 12 April 2017, 'SGA candidates debate, discuss platforms at Herald Town Hall'; the office and the Lillian spelling from the Herald's SGA report of 25 October 2017, 'SGA fails to pass resolution supporting Dreamers'",
+   "url": "https://wkuherald.com/wp-content/uploads/2017/04/88a225150ba0ee61252fef835dbee097.jpg"
+  }
  }
 ]

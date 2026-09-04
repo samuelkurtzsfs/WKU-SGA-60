@@ -589,5 +589,95 @@
   "replaces": null,
   "width": 122,
   "height": 174
+ },
+ {
+  "year": "1986-87",
+  "name": "Jeff Key",
+  "file": "1986-87-jeff-key.jpg",
+  "quality": "group crop",
+  "why": "The only photograph of him in any digitised Talisman; cut from the Sigma Alpha Epsilon group frame his fraternity page names him in.",
+  "caption_quote": "SECOND ROW: ... Scott Wilson, Jeff Key, Kirk Coverdill",
+  "src": {
+   "label": "1986 Talisman, p. 265, the lower of two Sigma Alpha Epsilon group photographs on the Greeks spread. The three printed rows count 6, 7 and 6 figures, exactly matching the caption's 6, 7 and 6 names, so the positions line up; Key is the fourth of the seven in the second row. The volume's index lists him once, as Key, Jeffrey Len, p. 265 and nowhere else, and the only other Key in the book is Julius Irvin Key.",
+   "url": "https://archive.org/details/talisman1986west/page/n268/mode/1up"
+  },
+  "width": 154,
+  "height": 193,
+  "replaces": null
+ },
+ {
+  "year": "1983-84",
+  "name": "Todd Duncan",
+  "file": "1983-84-todd-duncan.jpg",
+  "quality": "group crop",
+  "why": "The only photograph of a Todd Duncan in the digitised Talismans; cut from the Pi Kappa Alpha group frame that names him.",
+  "caption_quote": "BACK ROW: Mark Shriner, Tony Stamps ... Kenny Stiglets, Todd Duncan",
+  "src": {
+   "label": "1986 Talisman, p. 265, the Pi Kappa Alpha group photograph at the top of the Greeks spread. The frame holds exactly 24 figures in four staggered rows of 7, 6, 6 and 5 counting from the back, matching the caption's 7, 6, 6 and 5 names, so the rows line up; Duncan is the last of the seven in the back row, the rightmost and highest figure in the frame. The identification rests on the caption alone: no other Todd Duncan appears in the 1986 or 1987 volumes, but the volume index does not cross-reference him to a student government page.",
+   "url": "https://archive.org/details/talisman1986west/page/n268/mode/1up"
+  },
+  "width": 140,
+  "height": 175,
+  "replaces": null
+ },
+ {
+  "year": "1987-88",
+  "name": "Drew DeLozier",
+  "file": "1987-88-drew-delozier.jpg",
+  "quality": "group crop",
+  "why": "The only photograph of him in any digitised Talisman; he has no class portrait, so this is the Sigma Alpha Epsilon group frame his fraternity page names him in.",
+  "caption_quote": "FRONT ROW: Billie Brown, Drew Delozier, Clint Harris, Kahle Morris",
+  "src": {
+   "label": "1986 Talisman, p. 265, the lower of two Sigma Alpha Epsilon group photographs on the Greeks spread. The three rows hold 6, 7 and 6 figures against the caption's 6, 7 and 6 names, so the positions line up; he is the second of the six in the front row. He is the only DeLozier in the volume. The index reads Delozier, Andrew Steven 295, but p. 295 is the senior grid Cox-Enders and runs Dejhrnette, Depriest, Dermody with no DeLozier in it, so that figure is an OCR misreading of 265, this page.",
+   "url": "https://archive.org/details/talisman1986west/page/n268/mode/1up"
+  },
+  "width": 200,
+  "height": 250,
+  "replaces": null
+ },
+ {
+  "year": "1981-82",
+  "name": "Jamie Nichols",
+  "file": "1981-82-jamie-nichols.jpg",
+  "quality": "small",
+  "why": "Her senior class portrait in the volume covering the year she sat in Associated Student Government.",
+  "caption_quote": "JAMIE NICHOLS, business admin. Lexington",
+  "src": {
+   "label": "1982 Talisman, p. 357, senior class portraits, the page footed Muir-Patterson. Five photographs to a row against five names to a block, and the run of men and women in each row matches the names in order; she is the fourth of the five in the third row, between Michael Newton and Greg F. Nicks. She is the only Jamie Nichols in the 1981 and 1982 volumes.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/405"
+  },
+  "width": 112,
+  "height": 149,
+  "replaces": null
+ },
+ {
+  "year": "1982-83",
+  "name": "Claire Groemling",
+  "file": "1982-83-claire-groemling.jpg",
+  "quality": "small",
+  "why": "Her sophomore class portrait, the only photograph of her in the digitised volumes; the 1981 book quotes her but carries no picture.",
+  "caption_quote": "CLAIRE GROEMLING, Louisville",
+  "src": {
+   "label": "1982 Talisman, p. 305, sophomore class portraits, the page footed Eubanks-Higdon. Seven photographs to a row against seven names to a block; her line is the third of the eighth block, so her cell is row 8, column 3, between Gary Griggs and Brad Grot. The row runs woman, man, woman, man, woman, woman, which matches the seven names in order. She is the only Claire Groemling in the 1981 and 1982 volumes, and the 1981 book quotes her as a Louisville freshman, which matches the hometown printed here.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/405"
+  },
+  "width": 68,
+  "height": 78,
+  "replaces": null
+ },
+ {
+  "year": "1981-82",
+  "name": "Kelly Cook",
+  "file": "1981-82-kelly-cook.jpg",
+  "quality": "group crop",
+  "why": "Cut from the Associated Student Government group photograph of his own years in the Congress, the only picture of him the digitised volumes carry.",
+  "caption_quote": "Front row: Bill Borden, P. Kelly Cook, Doug Robertson, Tony Whalen",
+  "src": {
+   "label": "1983 Talisman, p. 232, the Associated Student Government group photograph. The four printed rows hold 6, 7, 9 and 9 figures, exactly matching the caption's 6, 7, 9 and 9 names, and the run of men and women in each row matches the names in order; he is the second of the six in the front row, between Bill Borden and Doug Robertson.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/407"
+  },
+  "width": 140,
+  "height": 180,
+  "replaces": null
  }
 ]

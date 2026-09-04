@@ -1,0 +1,35 @@
+[
+ {
+  "note": "wkuherald.com served this run a Cloudflare 'Just a moment' interstitial on every path except /wp-json, and then on that too. No image on the host could be fetched by plain HTTP at any point in the run: 403 on the bare URL, with a Referer, with a cookie jar, over HTTP/1.1, over TLS 1.2, from curl, from node and from python. The Wayback Machine holds none of these files and Save Page Now answers 520. Chrome was barred for this run, so these frames are recorded rather than cut. Everything below is a caption the Herald's own media API returned; the caption text is quoted verbatim.",
+  "logged": "n2025 officer pass, 4 September 2026"
+ },
+ {
+  "name": "Margaret Glaser",
+  "year": "2021-22",
+  "url": "https://wkuherald.com/wp-content/uploads/2021/04/margaret_glaser_2.jpg",
+  "caption": "",
+  "date": "2021-04-28",
+  "why": "The only photograph on wkuherald.com that carries her name, and it carries it as the filename rather than a caption: the media record has an empty caption and a title of 'margaret_glaser_2'. A file uploaded under a person's own name in the last week of April, with no caption and no article text around it, has the shape of a Herald staff portrait, which is how the archive's Maggie Phelps portrait was sourced. That is a lead, not an identification: the brief for this run requires a caption or a numbered key, and a filename is neither. An editor who accepts the wku.edu headshot precedent, where annalise_finch_min.jpg in a headshots directory was taken as identification, may judge this the same kind of evidence. Do not publish it on the filename alone without that ruling.",
+  "alt": [
+   "https://wkuherald.com/wp-content/uploads/2021/04/margaret_glaser_2-1.jpg"
+  ]
+ },
+ {
+  "name": "Jackson Smith",
+  "year": "2025-26",
+  "url": "https://wkuherald.com/wp-content/uploads/2026/04/041526_Kickball_CT05.jpg",
+  "caption": "Jackson Smith rounds third base, making it to the home plate and scoring the Spirit Masters thier 10th point at the Spirit Masters v.s. Honors Toppers kickball game held at Western Kentucky Universities Honors College yard on April 15, 2026.",
+  "date": "2026-04-22",
+  "why": "A single-subject action caption naming him alone, which is the first frame of any Jackson Smith that does not have the identification problem the withdrawal register already records for the 11 November 2025 committee photograph. It has a different problem. Jackson Smith is a very common name, the caption places him with the Spirit Masters and says nothing about student government, and nothing in a WKU source ties the 2025-26 freshman senator to the Spirit Masters. WKU's own Spirit Masters pages carry no member roster to check him against. Needs corroboration before use, not just a download.",
+  "blocks": "Also unresolved without the bytes: SAV2513.jpg of 11 Nov 2025, where the withdrawal register could not separate Smith from Malachi Humble."
+ },
+ {
+  "name": "Blake Graham",
+  "year": "2025-26",
+  "url": "https://wkuherald.com/wp-content/uploads/2025/11/SAV2487.jpg",
+  "caption": "Associate Justice Sophie Stirling (left) and Associate Justice Hannah Hash (right) are introduced by Chief Justice Blake Graham during the SGA meeting on Tuesday, Nov. 11, 2025 in the Senate Chambers. Stirling is running to replace Graham, who is graduating at the end of the fall semester.",
+  "date": "2025-11-11",
+  "why": "Already in the withdrawal register, and re-examined here rather than re-found. The register's reason is that the caption places Stirling and Hash but not Graham. That is right as far as it goes, but it is worth saying what would settle it: if the frame holds exactly three people, two of them fixed by (left) and (right), the third is Graham by elimination, and the archive already holds portraits of both Stirling and Hash to check the two fixed positions against. This run could not open the file to count the people in it. The only officer on this block whose identification could plausibly be completed by looking at one image.",
+  "status": "in _do-not-use.json; listed here because the bytes would decide it"
+ }
+]

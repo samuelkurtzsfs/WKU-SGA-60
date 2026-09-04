@@ -14,11 +14,71 @@
   {
    "topic": "1994-95 Congress roster",
    "body": "p. 14 of the 1994-95 Spirit Masters scrapbook is headed, in hand lettering, 'SPIRIT MASTERS IN STUDENT GOVERNMENT', and pastes in a printed roster sheet titled '1994 - 1995 CONGRESS MEMBERS' with the Spirit Masters among them picked out in yellow highlighter. It is a contemporaneous membership list for the whole 1994-95 Congress.",
-   "congress_members": ["Kaylyn Ashley", "Lance Blincoe", "Rob Carothers", "Cindy Chiappetta", "Nick Church", "Angela Crume", "Terry Ekbundit", "Melani Fischer", "Jason Gerst", "Josh Gravot", "Valerie Hadnot", "Jason Hays", "Raymond Herrick", "Patrick Howard", "Jennifer Lewis", "Carlene Lodmell", "Darlene Lodmell", "Jason Loehr", "Jason Martin", "Stephanie McCarty", "David Minor", "Devon Moore", "Justin Mylor", "Bonnie Newton", "Gina Raffaelli", "Jennifer Raffaelli", "Junior Rajewich", "Shelley Reitmeyer", "Steven Roadcap", "Erin Schepman", "David Southard", "Chad Stahl", "Hunter Stewart", "Terra Swanson", "Lena Sweeten", "Jeff Turner", "Mark Warren", "Shawna Whartenby", "Jason Whitsell", "Eric Wilson", "Allyson Wood", "Brian Woods", "Jeff Yan", "John Yerk", "Jason Young", "Jason Vincent"],
-   "judicial_council": ["Kenny May, Foreman", "Grace Hancock", "Lori Spear", "Angelo Rodriguez"],
-   "highlighted_as_spirit_masters": ["Nick Church", "Jason Martin", "Jason Vincent", "Kenny May"],
+   "congress_members": [
+    "Kaylyn Ashley",
+    "Lance Blincoe",
+    "Rob Carothers",
+    "Cindy Chiappetta",
+    "Nick Church",
+    "Angela Crume",
+    "Terry Ekbundit",
+    "Melani Fischer",
+    "Jason Gerst",
+    "Josh Gravot",
+    "Valerie Hadnot",
+    "Jason Hays",
+    "Raymond Herrick",
+    "Patrick Howard",
+    "Jennifer Lewis",
+    "Carlene Lodmell",
+    "Darlene Lodmell",
+    "Jason Loehr",
+    "Jason Martin",
+    "Stephanie McCarty",
+    "David Minor",
+    "Devon Moore",
+    "Justin Mylor",
+    "Bonnie Newton",
+    "Gina Raffaelli",
+    "Jennifer Raffaelli",
+    "Junior Rajewich",
+    "Shelley Reitmeyer",
+    "Steven Roadcap",
+    "Erin Schepman",
+    "David Southard",
+    "Chad Stahl",
+    "Hunter Stewart",
+    "Terra Swanson",
+    "Lena Sweeten",
+    "Jeff Turner",
+    "Mark Warren",
+    "Shawna Whartenby",
+    "Jason Whitsell",
+    "Eric Wilson",
+    "Allyson Wood",
+    "Brian Woods",
+    "Jeff Yan",
+    "John Yerk",
+    "Jason Young",
+    "Jason Vincent"
+   ],
+   "judicial_council": [
+    "Kenny May, Foreman",
+    "Grace Hancock",
+    "Lori Spear",
+    "Angelo Rodriguez"
+   ],
+   "highlighted_as_spirit_masters": [
+    "Nick Church",
+    "Jason Martin",
+    "Jason Vincent",
+    "Kenny May"
+   ],
    "caveats": "Jason Vincent is on a separate slip pasted over the gap between the two printed columns, so he was added by hand to the printed sheet. Carlene Lodmell and Darlene Lodmell are both on it, side by side, which is independent support for the settled ruling that they are two people. The list also shows the 1994-95 spelling 'Steven Roadcap' and 'Shawna Whartenby'.",
-   "src": {"label": "WKU Spirit Masters Scrapbook, 1994-95 (WKU Archives UA68, Student Organizations), p. 14 of the scanned volume", "url": "https://digitalcommons.wku.edu/stu_org/322/"}
+   "src": {
+    "label": "WKU Spirit Masters Scrapbook, 1994-95 (WKU Archives UA12/2/16, Student Organizations), p. 14 of the scanned volume",
+    "url": "https://digitalcommons.wku.edu/stu_org/322/"
+   }
   }
  ]
 }
