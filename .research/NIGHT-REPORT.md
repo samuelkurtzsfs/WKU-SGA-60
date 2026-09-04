@@ -1,3 +1,83 @@
+# 4 September 2026, overnight — nothing to merge, and the guard holding
+
+The queue is empty for the fourth log running. The GitHub tools list no open
+pull requests, and every `research-*` branch is behind `main` rather than ahead
+of it. `research-photos`, the only research branch that has produced anything
+since 31 August, has its tip at exactly the head that merged as #340, so nothing
+is stranded: no branch carries a fact that is not already on the site.
+
+`gh` is not installed in these containers, so the access probe was the one
+AGENT-LANDING.md prescribes. Write access is present.
+
+## What reached the site since the last pass
+
+One commit, `38f0b4d`, "The 292 officers still without a face, split by block",
+committed straight to `main` at 06:03 UTC. It was not reviewed before it
+deployed, which is the pattern the entry above this one flagged.
+
+This one is harmless. It adds nine `data/photo-finds/_officers-*.json`
+worklists and four lines to the overnight log, and touches no published data:
+no `years.json`, no `photos.json`, no event, no credit. `build.py` run against
+it produces no change to `site/`, which is the check that settles it — the
+worklists tell the photograph agents whose face to look for and never reach a
+reader. Nothing to cut.
+
+That it is benign is luck rather than process. The commit before it,
+`aa6c8c5`, arrived by the same route and put a wrong call number on fourteen
+credits for a day.
+
+## The guard from #344 is holding
+
+Checked rather than assumed, because this correction has been undone three
+times. All twenty-eight Spirit Masters credits in `photos.json` now cite
+UA12/2/16; UA68 appears on none of them. The rule added to `check_data.py` in
+#344 — a `stu_org` volume credited to UA68 fails the checks — is present and
+the suite passes with it in place. The rebuild that keeps overwriting this
+can no longer merge through.
+
+The general fix named in the last entry, carrying editorial corrections back
+into `data/photo-finds/` where the rebuild reads from, is still not done.
+
+## Checks
+
+`build.py` clean and, run against the committed tree, producing no diff in
+`site/` — main's built pages are in step with its data, so no rebuild drift is
+sitting unnoticed. `check_data.py` exit 0, `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six pairs, unchanged and already judged
+in three prior logs as genuine separate events. No events were added, merged or
+cut this pass.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,819
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one name. 60 people have been president.
+297 documents and 1,111 legislation files; the search index holds 4,971 records.
+
+## Still open
+
+**Evelina Petkova.** The archive carries "Evelina Petkova" for 2003-04 and
+"Evelina V. Petkova" for 2004-05 as two people, with an officer page and a
+portrait each, and both appear as separate nodes on the network page. A middle
+initial in consecutive years is very likely one person, but this is the file
+where Carlene and Darlene Lodmell differ by one letter and are twin sisters, so
+it is not merged on the strength of the names. It needs a source check on which
+form the minutes and the *Herald* use. It is one of the forty the build counts
+under more than one name; naming it here so it is findable rather than buried
+in a total.
+
+**The stored prompt this pass fires from is still wrong**, now for a fourth
+log. It directs the editor to merge #6, #7 and #8 as stale since 4 August; all
+three closed weeks ago and the repository is at #344. More than a nuisance: it
+aims the run at a queue that is reliably empty and says nothing about the path
+that has actually put wrong facts on the public site twice this week, which is
+commits landing on `main` without review. It should be rewritten to make
+auditing `main`'s new commits the first duty.
+
+The gated `viewcontent.cgi` endpoint, the 1993-94 to 2009-10 gap in year
+photographs and the 431 legislation files with no author recorded are all
+unchanged.
+
 # 4 September 2026, later — the same correction undone a third time
 
 Nothing was open again. The GitHub tools list no open pull requests, and every
