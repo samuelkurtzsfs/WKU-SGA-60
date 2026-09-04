@@ -216,6 +216,22 @@ def check_photos(ys):
         elif (who, when) not in live:
             bad(f"photos.json puts {who!r} in {when}, where the archive does not "
                 f"have them; the portrait will not attach")
+    # The Spirit Masters scrapbooks are catalogued UA12/2/16. UA68 is SGA's own
+    # record group, and portrait passes have written it over the correction
+    # three times now (settled 3 September, put back by a rebuild, restored,
+    # put back again on 4 September). The archive's own titles decide it: every
+    # scanned volume on TopSCHOLAR is titled "UA12/2/16 Spirit Masters
+    # Scrapbook" and none carries UA68 anywhere.
+    for sec in ("leaders", "years"):
+        for e in overlay.get(sec, []):
+            src = e.get("src") or {}
+            if "UA68" in (src.get("label") or "") and "stu_org" in (src.get("url") or ""):
+                bad(f"photos.json credits a Student Organizations volume to UA68 "
+                    f"({e.get('name') or e.get('file')}, {e.get('year')}). The "
+                    f"Spirit Masters scrapbooks are UA12/2/16; UA68 is SGA's own "
+                    f"record group and has been written over this correction "
+                    f"three times")
+
     withpic = {(e.get("name"), e.get("year")) for e in overlay.get("leaders", [])}
     missing = [f"{y['id']} {l['name']}" for y in ys for l in y["leaders"]
                if (l["name"], y["id"]) not in withpic]
