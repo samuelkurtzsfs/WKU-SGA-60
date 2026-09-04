@@ -201,5 +201,21 @@
    "label": "College Heights Herald, 27 April 2026, Greek Week Convocation in E.A. Diddle Arena",
    "url": "https://wkuherald.com/wp-content/uploads/2026/04/042626_GreekConvocation1.4k_HeraldJS_20.jpg"
   }
+ },
+ {
+  "year": "2022-23",
+  "name": "Jakob Briggs",
+  "file": "2022-23-jakob-briggs.jpg",
+  "replaces": null,
+  "width": 400,
+  "height": 500,
+  "quality": "good",
+  "why": "The only Herald frame that names him. A sharp, well-lit three-quarter view of his face, cropped to him alone out of a crowd scene.",
+  "caption_quote": "Jakob Briggs, a member of Phi Beta Sigma Fraternity, Inc., participates in the Walk for Suicide Prevention",
+  "id_note": "One named subject. He is the only person in the frame in sharp focus, everyone in the foreground being thrown out by the shallow depth of field, and the only person identifiable as what the caption calls him: his sweatshirt is legible in the crop and reads PROPERTY OF PHI BETA SIGMA, 1914, ATHLETIC DEPARTMENT. A second Black man stands behind him in the frame, out of focus and half hidden, wearing no fraternity letters; he is cropped out. The spelling Jakob Briggs is distinctive and no second student of that name appears in the Herald library. The frame is dated March 2025, two years after his 2022-23 Senate term, but nothing in it is personal to him: he is walking with his fraternity at a public campus awareness event, and the caption attributes no statement or circumstance to him.",
+  "src": {
+   "label": "College Heights Herald, 9 March 2025, Walk for Suicide Prevention on WKU's campus",
+   "url": "https://wkuherald.com/wp-content/uploads/2025/03/030825_WalkForLife_GEM14.jpg"
+  }
  }
 ]
