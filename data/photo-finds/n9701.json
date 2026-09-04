@@ -446,5 +446,101 @@
   "width": 116,
   "height": 178,
   "replaces": null
+ },
+ {
+  "year": "1997-98",
+  "name": "Sarah Leonard",
+  "file": "1997-98-sarah-leonard.jpg",
+  "quality": "good",
+  "why": "Her own studio portrait cell from the Phi Mu chapter composite for 1997-98, the year she sat in Congress; sharp, lit and front-on.",
+  "caption_quote": "SARAH LEONARD",
+  "id_basis": "A sorority composite prints each name in its own panel directly under that portrait, so this is a labelled single portrait and not a grid keyed to a list. The label SARAH LEONARD sits centred beneath this oval, its OCR box running x=2369-2474 against an oval centred on x=2425 in the 3432x2523 scan. The Herald of 9 September 1997 carries a Phi Mu welcome advertisement naming Sarah Leonard among the new members, which puts a Sarah Leonard in this chapter in the same academic year the archive seats her in Congress.",
+  "src": {
+   "label": "WKU Archives UA1C11/105/21, Phi Mu Composite, 1998",
+   "url": "https://digitalcommons.wku.edu/stu_org/354"
+  },
+  "width": 226,
+  "height": 275,
+  "replaces": null
+ },
+ {
+  "year": "1998-99",
+  "name": "Elizabeth Pemberton",
+  "file": "1998-99-elizabeth-pemberton.jpg",
+  "quality": "good",
+  "why": "Her own studio portrait cell from the Phi Mu chapter composite for 1999-2000, the nearest surviving portrait to her year in Congress; sharp, lit and front-on.",
+  "caption_quote": "ELIZABETH PEMBERTON",
+  "id_basis": "A sorority composite prints each name in its own panel directly under that portrait, so this is a labelled single portrait, not a grid keyed to a list. The label ELIZABETH PEMBERTON runs x=2400-2562 in the 3597x2646 scan, centred under this oval. Caveat for the editor: the tie to the Congress member of 1998-99 is the full name plus the cohort. She is not on the 1998-99 composite, so she joined the chapter later; the Herald of 23 January 2001 lists her as Phi Mu house manager alongside the same names that appear on this board, which puts her at Western from before 1999-2000 into 2001, spanning the year the archive seats her.",
+  "src": {
+   "label": "WKU Archives UA1C11/105/23, Phi Mu Composite, 2000",
+   "url": "https://digitalcommons.wku.edu/stu_org/352"
+  },
+  "width": 226,
+  "height": 274,
+  "replaces": null
+ },
+ {
+  "year": "1997-98",
+  "name": "Jodi Clinard-Pulley",
+  "file": "1997-98-jodi-clinard-pulley.jpg",
+  "quality": "group crop",
+  "why": "Cropped from the Herald photograph of her Spirit Master ceremony; smiling, front-on and the only frame of her found in the digitised run.",
+  "caption_quote": "Jodi Clinard-Pulley, a senior from Springfield, Tenn.",
+  "id_basis": "The caption names three people in the frame and the frame holds exactly three: two students being congratulated by their sponsor Carl Kell, who is plainly the older man in the centre. Of the two students one is a woman and one a man, and the Herald of 17 October 2000 shows Andrea Farrior is a man - Hopkinsville senior, a stepper for the Alphas, referred to as he. Clinard-Pulley is therefore the woman on the left. The Herald also prints her with Alpha Delta Pi in February 1999.",
+  "src": {
+   "label": "College Heights Herald 76:53, 19 April 2001, p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9091"
+  },
+  "width": 172,
+  "height": 246,
+  "replaces": null
+ },
+ {
+  "year": "1998-99",
+  "name": "Conrad Davies",
+  "file": "1998-99-conrad-davies.jpg",
+  "quality": "soft",
+  "why": "News frame from the Herald front-page package on the campus evangelist; his face fills the right of the frame, lit and looking almost into the lens, and it is the only photograph of him in the digitised run.",
+  "caption_quote": "Frankfort sophomore Conrad Davies debates his interpretation of Bible scriptures",
+  "id_basis": "The caption names two men in the frame, Davies and the visiting preacher Jim Gilles. The story inside the same issue describes Gilles standing on a manhole cover in a white shirt and black suspenders waving his Bible, and the man at the left edge of the frame is in a white shirt with a dark suspender strap, mouth open, an open book held below him. That fixes Gilles as the left figure and leaves the young man on the right, the one the crowd is watching, as Davies. He is a sophomore in April 2000, which makes him a freshman in 1998-99, the year the archive records him sworn in as an At-Large member.",
+  "src": {
+   "label": "College Heights Herald 75:55, 25 April 2000, p. 1",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8117"
+  },
+  "width": 380,
+  "height": 475,
+  "replaces": null
+ },
+ {
+  "year": "1998-99",
+  "name": "Kamaria Johnson-El",
+  "file": "1998-99-kamaria-johnson-el.jpg",
+  "quality": "small",
+  "why": "People Poll head shot, taken in her own SGA year; front-on, well lit and smiling, and the only photograph of her in the digitised run.",
+  "caption_quote": "Kamaria Johnson El, Nashville freshman",
+  "id_basis": "A five-across People Poll on Black History Month figures; each quote and name block is centred under its own head shot. The name blocks centre on x=197, 326, 454, 583 and 713 at 150 dpi and the detected photo blocks on x=325, 580 and 720, so the fourth face carries the Johnson El label, within four pixels. The Herald drops the hyphen the archive keeps; she is a Nashville freshman here, in the same academic year the archive seats her.",
+  "src": {
+   "label": "College Heights Herald 74:32, 28 January 1999, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8030"
+  },
+  "width": 216,
+  "height": 324,
+  "replaces": null
+ },
+ {
+  "year": "1997-98",
+  "name": "Michael Hardin",
+  "file": "1997-98-michael-hardin.jpg",
+  "quality": "masked",
+  "why": "The only labelled photograph of him in the digitised run, a People Poll head shot. The brim of his cap blacks out his eyes in the printed halftone, so the nose, mouth and jaw read but the upper face does not; offered because nothing else of him survives, and easy for an editor to drop.",
+  "caption_quote": "Michael Hardin, Burkesville freshman",
+  "id_basis": "A five-across People Poll on the University Boulevard crosswalks. Each quote and name block is centred under its own head shot: the five photo blocks centre on x=117, 250, 383, 513 and 643 at 150 dpi and the first three name blocks on x=118, 252 and 385, so the first face carries the Hardin label. The printed name reads Michael Hardin at full scan resolution although the OCR makes it Herdin, and he is the only Michael Hardin in the digitised run. A Burkesville freshman in January 1997 is a sophomore in 1997-98, the year the archive seats him.",
+  "src": {
+   "label": "College Heights Herald 72:33, 30 January 1997, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3032"
+  },
+  "width": 79,
+  "height": 145,
+  "replaces": null
  }
 ]
