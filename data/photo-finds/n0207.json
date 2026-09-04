@@ -615,5 +615,37 @@
    "label": "College Heights Herald, 18 October 2007, p. 2B (Vol. 83, No. 14); photograph by Eric Bateman",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4486"
   }
+ },
+ {
+  "name": "Natalie Croney",
+  "year": "2003-04",
+  "file": "2003-04-natalie-croney.jpg",
+  "replaces": null,
+  "width": 240,
+  "height": 350,
+  "quality": "soft",
+  "why": "A studio portrait printed in her own officer year with her name set directly beneath it. The newsprint reproduction is dark and coarse and the native scan gives only 240 pixels across, so it is soft, but it is a real posed portrait and the only photograph of her in the archive.",
+  "caption_quote": "Natalie Croney (January) — Spirit Masters of the Month",
+  "how_identified": "The advertisement carries two portraits side by side, each with its name printed underneath: Terry Woodall (December) on the left and Natalie Croney (January) on the right. The right-hand frame is the one cropped.",
+  "src": {
+   "label": "College Heights Herald, 17 February 2004, p. 5, WKU Spirit Masters advertisement (Vol. 78, No. 38 [Vol. 79])",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9373"
+  }
+ },
+ {
+  "name": "Drew Eclov",
+  "year": "2007-08",
+  "file": "2007-08-drew-eclov.jpg",
+  "replaces": null,
+  "width": 146,
+  "height": 290,
+  "quality": "small",
+  "why": "A straight head-and-shoulders newspaper mugshot, the only photograph of him anywhere in the archive. Cut at the scan native resolution rather than upscaled, so it is small; the circled 2 in the corner is left in because it is part of the numbered key that identifies him.",
+  "caption_quote": "Lexington senior Drew Eclov was just accepted into graduate school",
+  "how_identified": "The graphic Soon-to-be-graduates make plans for their future carries four numbered portraits round a map. The frame numbered 2 is labelled ECLOV beneath and sits against entry 2, which names Lexington senior Drew Eclov. Same person as the SGA senator: the Herald calls him a Lexington freshman in March 2007 and a Lexington sophomore in October 2007, which puts him in his senior year in December 2010, and the surname appears nowhere else on campus.",
+  "src": {
+   "label": "College Heights Herald 86:27, 10 December 2010, printed p. 7",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6262"
+  }
  }
 ]
