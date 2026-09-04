@@ -542,5 +542,69 @@
   "width": 79,
   "height": 145,
   "replaces": null
+ },
+ {
+  "year": "2003-04",
+  "name": "Troy Ransdell",
+  "file": "2003-04-troy-ransdell.jpg",
+  "quality": "soft",
+  "why": "His own columnist head shot, run beside the commentary he wrote against plus/minus grading; front-on, well lit and the best frame of him in the digitised run.",
+  "caption_quote": "Troy Ransdell is a senior political science major from Louisville.",
+  "id_basis": "A single-subject commentary mugshot with the name Troy Ransdell set in italic directly beneath the frame and the standing line at the foot of the column naming him again as the author, a senior political science major from Louisville. Nobody else appears in the frame. The tie to the office is contemporaneous and not merely nominal: the Herald of 9 March 2004, two days earlier, calls him SGA chief justice while reporting the constitutional referendum (digitalcommons.wku.edu/dlsc_ua_records/9381), and the Herald of 13 November 2001 had already introduced him as Louisville sophomore Troy Ransdell of SGA's Progressive Caucus.",
+  "src": {
+   "label": "College Heights Herald 79:45, 11 March 2004, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9380"
+  },
+  "width": 147,
+  "height": 203,
+  "replaces": null
+ },
+ {
+  "year": "2004-05",
+  "name": "Terry Woodall",
+  "file": "2004-05-terry-woodall.jpg",
+  "quality": "soft",
+  "why": "A studio portrait in coat and tie, front-on and smiling, run in the Herald advertisement congratulating him as a Spirit Master; much the best frame of him in the digitised run.",
+  "caption_quote": "TERRY WOODALL (DECEMBER)",
+  "id_basis": "A two-portrait advertisement in which each photograph carries its own name in large small caps directly beneath it, TERRY WOODALL under the left frame and NATALIE CRONEY under the right, so this is a labelled single portrait rather than a grid keyed to a list. Two caveats for the editor. The tie to the Judicial Council justice of 2004-05 is the full name plus the cohort: the advertisement is about Spirit Masters and says nothing of student government, and no Herald story in the digitised run ties a Terry Woodall to SGA. Nothing else of him survives, and Woodall is uncommon at Western in these years - the only other trace is the 2003 Talisman, which lists Terry Woodall of Phi Delta Theta in the Greek Hall of Fame. Second, a Herald news photograph of 11 November 2004 (record 9420, front page) also names a Terry Woodall, identified by elimination from a caption that marks the other two men centre and right, but that man wears glasses and a beard and this one does not, so only this labelled portrait is offered.",
+  "src": {
+   "label": "College Heights Herald 79:38, 17 February 2004, p. 5",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9373"
+  },
+  "width": 229,
+  "height": 344,
+  "replaces": null
+ },
+ {
+  "year": "1998-99",
+  "name": "Arcentra Beasly",
+  "file": "1998-99-arcentra-beasly.jpg",
+  "quality": "small",
+  "why": "People Poll head shot from her own SGA year; darkly printed but the eyes, nose and mouth all read, and it is the only photograph of her in the digitised run.",
+  "caption_quote": "Arcentra Beasley, Bowling Green junior",
+  "id_basis": "A five-across People Poll on whether classes should meet on Fridays. Each quote and name block is centred under its own head shot: the five photo blocks centre on x=173, 279, 385, 490 and 594 at 150 dpi and the name blocks on x=178, 284, 388, 493 and 600, a constant offset of about five pixels, so the first face carries the Beasley label. The Herald spells the surname Beasley where the archive has Beasly; the given name Arcentra is unique in the digitised run.",
+  "src": {
+   "label": "College Heights Herald 74:41, 2 March 1999, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8042"
+  },
+  "width": 182,
+  "height": 266,
+  "replaces": null
+ },
+ {
+  "year": "1997-98",
+  "name": "Amy Duncan",
+  "file": "1997-98-amy-duncan.jpg",
+  "quality": "small",
+  "why": "People Poll head shot, front-on and smiling; the only photograph of her in the digitised run.",
+  "caption_quote": "Amy Duncan, Bowling Green junior",
+  "id_basis": "A five-across People Poll. Each name block is centred under its own head shot: the photo blocks centre on x=153, 266, 359, 461 and 566 at 150 dpi and the two name blocks the OCR recovered on x=357 and x=563, matching the third and fifth frames, so the third face carries the Duncan label. Caveat for the editor: Amy Duncan is a common name and the tie to the Congress member of 1997-98 is the name plus the cohort, a Bowling Green junior in November 1999 being an underclassman in 1997-98. No second Amy Duncan appears in the digitised run.",
+  "src": {
+   "label": "College Heights Herald 75:18, 2 November 1999, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8071"
+  },
+  "width": 168,
+  "height": 260,
+  "replaces": null
  }
 ]
