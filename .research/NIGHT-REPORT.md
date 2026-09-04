@@ -1,3 +1,646 @@
+# 4 September 2026, morning — the unreviewed pushes carried two faces that were not earned
+
+The queue is empty again: no open pull requests, and every `research-*` branch
+is behind `main` rather than ahead of it. The standing instruction to rescue
+pull requests #6, #7 and #8 is out of date — all three were closed on
+18 August, and the repository is at #345.
+
+So the review went where the risk actually was. Since the last editor pass two
+commits went straight to `main` without review, and unlike `38f0b4d` in the
+entry below, these were not harmless: `d645f43` and `7e2daf3` added **36 leader
+portraits** to `photos.json`. `main` deploys on merge, so all 36 were already
+public when this pass started.
+
+Thirty-four hold up. Two did not, and are withdrawn.
+
+## The two faces withdrawn
+
+**Todd Duncan, 1983-84.** The label credited "the Pi Kappa Alpha group
+photograph" on p. 265 of the 1986 *Talisman*. The volume's own index puts Pi
+Kappa Alpha on pages 36 and 364-365; p. 265 is Sigma Alpha Epsilon, whose
+feature the surrounding text is, quoting Tinsley on the chapter's pledges and
+its Balloon-A-Thon. The row arithmetic in the label is sound and the caption
+does end "Kenny Stiglects, Todd Duncan", so a Todd Duncan is certainly in the
+frame. What is missing is any link between him and student government: the 1986
+index carries no Todd Duncan at all, and the label admitted as much. That
+leaves a full name, three years after the Senate term it was attached to, doing
+all the work. It is the same failure as the 1983-84 Todd Wallace entry already
+in `_do-not-use.json`, where the obvious match was a different student.
+
+**Amanda K. Thurmond, 1994-95.** The whole of the identification was "1993
+*Talisman*, p. 188, Kappa Delta (cropped from a group photo)". No index line
+placing her on that page, and no statement of which figure in the group she is.
+The two comparable finds from the same sweep both cite an index entry pinning
+the person to the exact page — "Pepper, Daryl 19", "Cailles, Andrea 194" — and
+those are why they stand. This one cites nothing, so there is no way to check
+that the cropped face is hers, or that she is in the photograph at all.
+
+Both are recorded in `data/photo-finds/_do-not-use.json` with the reasoning, so
+a later run does not re-find them, and both image files are deleted rather than
+left orphaned: since #333 the build mirrors `data/photos` instead of adding to
+it, and the files are confirmed gone from `site/photos`.
+
+## What was checked and kept
+
+The 1986 *Talisman* full text settles two more of the same cluster, both in
+favour of the finder. **Jeff Key** is indexed "Key, Jeffrey Len 265" and the
+caption's rows run 6, 7 and 6 with Key fourth in the second row, exactly as
+claimed. **Drew DeLozier** is named outright in the same caption — "FRONT ROW:
+Billie Brown, Drew Delozer" — second of six, as claimed. The label's argument
+that the index entry "Delozier, Andrew Steven 295" must be an OCR misreading of
+265 was never needed and is probably wrong, since a senior grid running
+Cox-Enders is where a Delozier would alphabetically fall; but the caption names
+him in this frame, so the identification does not depend on it.
+
+One clause was **trimmed** from the Key label: it claimed Julius Irvin Key was
+the only other Key in the volume, and the index also carries Cynthia Lynn Key
+at 303. The identification is untouched — it rests on the index line and the
+row position, both confirmed.
+
+The three faculty-directory portraits were re-fetched and compared byte for
+byte against the URLs they cite: **Margaret Glaser**, **Ellen Henderson** and
+**Derek Collins** are identical to the files at `wku.edu/img_facstaff`, real
+JPEGs, correctly credited. The three WKU News sources behind **Ethan
+Huffaker**, **Will Hemenover** and **Arivumani Srivastava** are live and name
+their subjects. All 885 portrait files in the archive start with the JPEG or
+PNG magic bytes, and all 36 new names match a person recorded in that year in
+`years.json`.
+
+The 1982, 1992 and 1993 *Talisman* volumes are **not** on archive.org — only 19
+`talisman*west` items exist there — so the grid-position identifications for
+Jamie Nichols, Claire Groemling, Kelly Cook, Daryl Pepper and Andi Cailles
+could not be checked against the page images, which are behind the gated
+`viewcontent.cgi` endpoint. They are left standing: not being able to reach a
+page is not evidence against it, and each of those labels states reasoning a
+later run can check. Two `.txt` fetches came back HTTP 503 and saved the error
+page under the filename asked for, which is trap 7 exactly; both were caught by
+checking the size and deleted.
+
+## Lily Nellans and Lillian Nellans were one person filed as two
+
+`years.json` carried **Lily Nellans** as Senator in 2016-17 and 2017-18 and
+**Lillian Nellans** as Legislative Research chair in 2017-18, with no entry in
+`name-aliases.json` joining them. The new portrait was filed under the Lillian
+spelling, so the one face the archive has for her hung on the record that
+carried one of her three terms, and the site published her as two people. The
+Herald's own body text reads Lily Nellans. The alias is added in the direction
+the file's convention and the sources both point — `Lillian Nellans` maps to
+`Lily Nellans` — which is the same shape as the `William Derryberry` pair
+already there. Both spellings survive in the data, as the alias file intends;
+they now reach one page, `o/lily-nellans.html`.
+
+That also closes the item the previous entry left open about Derryberry: the
+pair is already registered, so no split remains there.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six standing pairs, unchanged and
+already judged: an introduction and a failure a week apart, a plan and an
+endorsement, a stated position and the vote that carried it, and three separate
+bills of 1 September 1991. No merges. This diff adds no events.
+
+`build.py` was also run three times over unchanged data and produced an
+identical `site/network.html` each time, so the generator is deterministic; the
+difference against the committed `site/` is only that the last direct push did
+not rebuild. Nothing reaches the public that way — Vercel's `buildCommand`
+regenerates `site/` from `data/` on deploy.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,818
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+41 people recorded under more than one name. 60 people have been president.
+997 leader portraits, down two.
+
+## Still open
+
+**The unreviewed direct push is now a demonstrated risk, not a theoretical
+one.** The entry below called `38f0b4d` harmless because it touched no
+published data. These two touched nothing but published data, and one face in
+eighteen did not hold. Everything that reaches `main` without review is live
+before anyone reads it.
+
+The gated `viewcontent.cgi` endpoint is unchanged, so Talisman page images
+outside the 19 volumes on archive.org cannot be checked at all. The 1993-94 to
+2009-10 gap in year photographs and the 431 legislation files with no recorded
+author both stand.
+
+# 4 September 2026, overnight — nothing to merge, and the guard holding
+
+The queue is empty for the fourth log running. The GitHub tools list no open
+pull requests, and every `research-*` branch is behind `main` rather than ahead
+of it. `research-photos`, the only research branch that has produced anything
+since 31 August, has its tip at exactly the head that merged as #340, so nothing
+is stranded: no branch carries a fact that is not already on the site.
+
+`gh` is not installed in these containers, so the access probe was the one
+AGENT-LANDING.md prescribes. Write access is present.
+
+## What reached the site since the last pass
+
+One commit, `38f0b4d`, "The 292 officers still without a face, split by block",
+committed straight to `main` at 06:03 UTC. It was not reviewed before it
+deployed, which is the pattern the entry above this one flagged.
+
+This one is harmless. It adds nine `data/photo-finds/_officers-*.json`
+worklists and four lines to the overnight log, and touches no published data:
+no `years.json`, no `photos.json`, no event, no credit. `build.py` run against
+it produces no change to `site/`, which is the check that settles it — the
+worklists tell the photograph agents whose face to look for and never reach a
+reader. Nothing to cut.
+
+That it is benign is luck rather than process. The commit before it,
+`aa6c8c5`, arrived by the same route and put a wrong call number on fourteen
+credits for a day.
+
+## The guard from #344 is holding
+
+Checked rather than assumed, because this correction has been undone three
+times. All twenty-eight Spirit Masters credits in `photos.json` now cite
+UA12/2/16; UA68 appears on none of them. The rule added to `check_data.py` in
+#344 — a `stu_org` volume credited to UA68 fails the checks — is present and
+the suite passes with it in place. The rebuild that keeps overwriting this
+can no longer merge through.
+
+The general fix named in the last entry, carrying editorial corrections back
+into `data/photo-finds/` where the rebuild reads from, is still not done.
+
+## Checks
+
+`build.py` clean and, run against the committed tree, producing no diff in
+`site/` — main's built pages are in step with its data, so no rebuild drift is
+sitting unnoticed. `check_data.py` exit 0, `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six pairs, unchanged and already judged
+in three prior logs as genuine separate events. No events were added, merged or
+cut this pass.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,819
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one name. 60 people have been president.
+297 documents and 1,111 legislation files; the search index holds 4,971 records.
+
+## Still open
+
+**Evelina Petkova.** The archive carries "Evelina Petkova" for 2003-04 and
+"Evelina V. Petkova" for 2004-05 as two people, with an officer page and a
+portrait each, and both appear as separate nodes on the network page. A middle
+initial in consecutive years is very likely one person, but this is the file
+where Carlene and Darlene Lodmell differ by one letter and are twin sisters, so
+it is not merged on the strength of the names. It needs a source check on which
+form the minutes and the *Herald* use. It is one of the forty the build counts
+under more than one name; naming it here so it is findable rather than buried
+in a total.
+
+**The stored prompt this pass fires from is still wrong**, now for a fourth
+log. It directs the editor to merge #6, #7 and #8 as stale since 4 August; all
+three closed weeks ago and the repository is at #344. More than a nuisance: it
+aims the run at a queue that is reliably empty and says nothing about the path
+that has actually put wrong facts on the public site twice this week, which is
+commits landing on `main` without review. It should be rewritten to make
+auditing `main`'s new commits the first duty.
+
+The gated `viewcontent.cgi` endpoint, the 1993-94 to 2009-10 gap in year
+photographs and the 431 legislation files with no author recorded are all
+unchanged.
+
+# 4 September 2026, later — the same correction undone a third time
+
+Nothing was open again. The GitHub tools list no open pull requests, and every
+`research-*` branch is behind `main` rather than ahead of it: the 4 August
+branches this pass's stored prompt still calls stale (#6, #7, #8) closed weeks
+ago, and the repository is now at #343. That prompt has been wrong for three
+night logs running. It should be rewritten to say the queue is usually empty and
+the work is auditing what reached `main` unreviewed.
+
+## What was reviewed
+
+`main` itself. Its tip, `aa6c8c5`, "Portraits: 4 more faces, and 15 cut again
+from a better frame", was committed straight to `main` at 03:09 UTC — after
+#343 merged at 00:33 — so nothing reviewed it before it deployed. It is the
+only thing that has reached the public site since the last pass.
+
+## The call number, put back for the third time
+
+`aa6c8c5` reverted #343 in full. All fourteen Spirit Masters portrait credits
+went back to citing the scrapbooks as **UA68**, which is SGA's own record group
+and not this collection's. This is the third time a "Portraits: N more faces"
+rebuild has written over the correction: settled in #342, undone by the 63-face
+rebuild, restored in #343, undone again here. It was live on the site all day.
+
+Checked independently rather than taken from the earlier logs. The landing pages
+for `stu_org/329` and `stu_org/328` were opened and both are titled *UA12/2/16
+Spirit Masters Scrapbook*; UA68 appears on neither. All fourteen credits are
+back to UA12/2/16.
+
+**A guard now stops it recurring.** `check_data.py` fails if a credit pointing at
+a `stu_org` volume cites UA68. The rebuild that keeps doing this cannot merge
+through the checks again, which is the only thing that will end the loop — three
+corrections in two days did not.
+
+## The four new portraits: kept, their credits rewritten
+
+All four identifications hold, and the evidence for them is real. It just was
+not on the public page. Each `photo-finds` record carries a caption naming the
+subject and, for the Herald frames, the reasoning that fixes which figure is
+theirs; the labels that reached `photos.json` gave only the event.
+
+- **Polly Proctor** (1981-82) already carried its full grid derivation. Left alone.
+- **Jacob Skillman** (2021-22) was the one worth checking hardest, because a
+  cross-country runner matched to a senator is exactly the surname trap. It is
+  not one: the Herald's own profile of 23 September 2021 calls Senator Jacob
+  Skillman a junior, which makes him the sophomore its October 2020 caption
+  names, and its cross-country honours lists put him on the team. Verified
+  against the Herald directly, not from the finder's note. Label rewritten to
+  carry that chain.
+- **Jakob Briggs** (2022-23) and **Evan Tuck** (2025-26): labels rewritten to
+  cite the caption that names them — Briggs by his fraternity's name on the
+  sweatshirt, Tuck by the award legible in his hands.
+
+None of these is a cut. The house style set by #315 and #329 is that a portrait
+credit names the caption that identifies the person, and these three did not
+follow it.
+
+## The finder's quality score, off the public site
+
+Forty-seven credits ended in a bare `(good)` — the `quality` field from
+`photo-finds` leaking into published text, meaningless to a reader. Removed.
+`(only picture found)` was kept everywhere it appears: that one tells a reader
+why a poor frame is the one used, which is worth saying.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. The new
+guard was tested by reintroducing the regression, which it caught, and the file
+then restored. `check_duplicates.py` reports the same six pairs, unchanged and
+already judged; each is two genuine events — a bill introduced and the same bill
+failing, a lawsuit planned and then endorsed, a position taken and then
+legislated, three separate bills on one day, and a card scheme approved and
+later distributed. No events were added or merged.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,819
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one name. 60 people have been president.
+
+## Still open
+
+The **Derryberry** name split the last pass left open is resolved and needed no
+edit: `name-aliases.json` carries "William Derryberry" as an alias of Will
+Derryberry, which is what that file is for, and the roles file forward correctly
+— sophomore senator in 2025-26, chief financial officer in 2026-27.
+
+**Portrait rebuilds keep landing on `main` without review.** The call number is
+the visible symptom; the cause is that a rebuild regenerates credits from the
+finder's records and overwrites editorial corrections that were never written
+back into those records. The guard blocks this one field. The general fix is to
+carry corrections back into `data/photo-finds/`, which is where the rebuild
+reads from, and that has not been done.
+
+The gated `viewcontent.cgi` endpoint, the 1993-94 to 2009-10 gap in year
+photographs and the 431 legislation files with no author recorded are all
+unchanged.
+
+# 4 September 2026 — a settled correction that the portrait rebuild undid
+
+Nothing was open. The queue is empty: the GitHub tools list no open pull
+requests at all, and the repository is at #342. The stored prompt this pass
+fires from still describes #6, #7 and #8 as stale since 4 August; that is now
+the third night log to record that all three closed weeks ago, and the prompt
+should be rewritten.
+
+`gh` is still not installed in these containers, so the access probe was the one
+AGENT-LANDING.md prescribes rather than the one the prompt asks for. Write
+access is present and the correction below is pushed.
+
+## The regression
+
+Yesterday's evening pass corrected the Spirit Masters archive call number and
+recorded, in the entry above this one, that no occurrence of UA68 remained
+anywhere in `photos.json` or the built site. That was true when it was written
+and merged as #342 at 18:27. It was not true four hours later.
+
+The portrait rebuild that followed — `322e04f1`, "Portraits: 63 more faces from
+the yearbooks and the Herald" — carried an older `photos.json` and put the wrong
+record group back on fourteen credits. The count walks the history plainly:
+UA68 stood at 0 through `40376b71`, `1cd4db49`, `a218473f`, `759ca7e1`,
+`c3b93d63` and `6f566bd9`, then jumped to 14 at `322e04f1` and has stayed there
+through the tip. The wrong call number has therefore been on the live site since
+yesterday evening, on more credits than the correction originally touched.
+
+This is the third time the log has recorded a merged correction being served
+again afterwards — the withdrawn photographs of 3 September and the twenty-two
+roster entries of 1 September were the same shape. The common cause is a rebuild
+that regenerates from a stale copy of the data rather than from the branch it is
+merging into. It is worth a guard: a rebuild should never reduce the number of
+corrections already in the file.
+
+## What was verified
+
+All four scanned volumes were opened directly and read from the archive's own
+`bepress_citation_title`, paced three seconds apart:
+
+- `stu_org/327` — UA12/2/16 Spirit Masters Scrapbook, 2004-2005
+- `stu_org/328` — UA12/2/16 Spirit Masters Scrapbook, 2007-2008
+- `stu_org/329` — UA12/2/16 Spirit Masters Scrapbook, 1996-1997
+- `stu_org/563` — UA12/2/16 Scrapbook, 1991-1992
+
+None of the four carries UA68 anywhere in its page. UA68 is SGA's own record
+group; giving it here told a reader the portraits came out of SGA's papers when
+they came out of the Spirit Masters'.
+
+The file was contradicting itself again on two volumes, not one: `stu_org/327`
+appeared as UA12/2/16 in two credits and UA68 in four, and `stu_org/328` as
+UA12/2/16 for Nate Eaton and UA68 for the five others, all on the same pages of
+the same volumes.
+
+Fourteen credits corrected, which is every UA68 in the file: the four 1996-97
+portraits and Tim Leavell 1997-98 from `stu_org/329`; Morgan Rink 2002-03,
+Evelina Petkova 2003-04, Lindsey Inman 2004-05 and Chris Whitfield 2005-06 from
+`stu_org/327`; Diane DeRosa-Reynolds and Tori Theiss 2006-07 and Chase Goff,
+Earlene Whitaker and Nathan Eaton 2007-08 from `stu_org/328`. Only the record
+group changed. The volumes, page numbers and years already in the credits match
+the abstracts and are untouched.
+
+## What was checked and left alone
+
+`research-photos` is 8 commits ahead of main and 15 behind, and it is the only
+branch on origin that still has a merge base. It needs no merge: its tip
+`55492710` is exactly the head that went in as #340 yesterday afternoon, and all
+four leader entries it adds — James P. Haynes 1966-67, Nate Eaton 2007-08, Page
+Settles 2015-16 and Marsha Sanner 1980-81 — are already on main under those
+names. Merging it now would be destructive rather than redundant: main has moved
+far past it, and the merge would delete about 170 portrait files and 1,601 lines
+of `photos.json`. The next photograph run should merge main into it before it
+does anything else.
+
+The 4 August `research-*` branches still have no merge base with main, as the
+last two logs record. Unchanged, and still not to be merged.
+
+`check_duplicates.py` reports the same six standing pairs, and they were read
+again rather than taken on trust. All six are genuinely separate events: the
+designated driver cards were introduced in November 1997 and distributed in
+February 1998; the student regent advisory committee bill was introduced on 28
+January 1992 and failed on 6 February; the Civil Liberties Union action was
+planned in February 1972 and endorsed in March; the plus/minus grading fight ran
+from September to a vote in October 2003; and the three bills of 1 September
+1991 are same-day legislative business, which the rules keep separate. Nothing
+was merged.
+
+## The build check has been failing on main since last night
+
+Worth recording separately, because it is the guard that stops a broken data
+file reaching the live site and it has not been working. `Build check` has
+failed on every push to main since `6f566bd9`, "Who knew whom: the people of
+SGA as a graph you can walk" — eight consecutive runs, 1214 through 1221. The
+last green run was 1213.
+
+The whole failure is one line: `broken: site/network.html -> o/'+N[j].s+'.html`.
+
+It is a false positive, and the link checker's own regex is the cause. The
+network page builds its links in the browser, so the href in the file is a
+JavaScript concatenation, `'<a href="o/'+N[j].s+'.html">'`. The pattern
+`href="([^"#:$]+\.html)"` reads straight through the quote and the plus and
+comes out with a filename no build would ever produce. The 1,817 pages under
+`site/o/` are all built and all present; they are gitignored, which is correct
+and not related.
+
+The checker now excludes the quote and the plus, which no real filename here
+carries. Tested three ways: nothing is reported against the current site, a
+page with two genuinely missing targets still reports both, and the JavaScript
+line is no longer matched. It still validates 53,049 links across the site, so
+the guard is doing its job rather than being switched off.
+
+This was not caused by anything in this pass. It reproduces on main at its tip
+and the fix is carried here because nothing merges green until it is in.
+
+## The 125 portraits that landed straight on main
+
+With nothing in the queue, the substance to review was what went onto the site
+without passing through one: 125 portrait credits added between `322e04f1` and
+the tip. Eight were sampled and their sources opened.
+
+Three carried no identifying evidence in the label at all, only a page number or
+"(only picture found)", which is the shape the rules warn about — a face nobody
+can check. All three turned out to be right, and the yearbooks' own indexes say
+so: `Young, Ian Troy 332-3, 379` for the 1979 Talisman p. 379 credit,
+`Carlson, Georgiana Lynn 51, 267, 387` for 1977 p. 387, and
+`Cortus, William James 307, 325, 389, 399` for 1977 p. 389. Each page is the
+subject's own indexed class portrait, and the 1977 volume independently puts
+Carlson on the rules and elections committee with Christy Vogt, Bob Moore and
+Don Augenstein.
+
+Nothing was cut. The identifications hold; what is missing is the evidence for
+them, which sits in the index of the same volume the credit already cites. A
+label reading "(only picture found)" gives a reader nothing to check and gives
+the next pass no reason not to withdraw the picture — which is how the LaCivita
+portrait came off the site twice. The index line belongs in the label.
+
+Two others in the sample derive a face by counting positions in a group
+photograph — Bridget Wyatt from the 1981 ASG group and Paul Wellander from a
+grid of freshman portraits, and Wellander's credit reaches a 1983-84 record
+through a 1981 volume. Both spell out their reasoning in full, which is the
+right way to file an inference, and both are left standing.
+
+## The attribution line, again
+
+The pull request body for #343 came back with a "Generated by Claude Code" line
+appended, and it was stripped with `update_pull_request` as AGENT-LANDING.md
+says to. The review comment on the same pull request came back with one too, and
+that one is still there. There is no tool in this session that edits an existing
+comment, and `api.github.com` answers 403 directly — the platform gate is real
+for the REST API even though the GitHub tools and `git push` both work. Earlier
+passes hit exactly this and recorded it the same way rather than leaving it
+unremarked.
+
+Nothing in the repository or the built site carries it. It is on the comment
+only, which is GitHub's own furniture rather than published archive text, and it
+can be edited away by hand in a second.
+
+## Counts after this pass
+
+61 years, 1,980 events, 60 people recorded as president. 2,654 terms of office
+held by 1,819 people, 2,613 of them (98%) carrying an account of what the person
+did, and 40 people recorded under more than one spelling. 297 documents and
+1,111 legislation files. `build.py`, `check_data.py`, `check_contrib.py` and
+`check_duplicates.py` all pass.
+
+# 3 September 2026, evening — the wrong record group, settled from the archive's own titles
+
+Nothing was open. `gh` is not installed in these containers, so the access probe
+was the one AGENT-LANDING.md prescribes: `git push --dry-run` reported write
+access, and the GitHub tools listed no open pull requests. Everything the
+photograph routine filed today is merged and on the site. The stored prompt this
+pass fires from still describes #6, #7 and #8 as stale since 4 August; that is
+now the second night log to say so. All three closed weeks ago.
+
+The 4 August `research-*` branches are still on origin and still have **no merge
+base with main**. Nine of them differ from main across roughly 1,900 files each.
+They are snapshots of the superseded repository, not forks, exactly as
+AGENT-LANDING.md warns. Merging one would delete the contributor layer and the
+validators. They should be left alone or deleted deliberately, never merged.
+
+## The correction
+
+The afternoon pass fixed the archive call number on six Spirit Masters portrait
+credits and handed forward that the same error was still on others it had not
+opened. It was, and the file contradicted itself: `stu_org/327` was cited as
+UA12/2/16 in two credits and as UA68 in four more, on the same page of the same
+scanned volume.
+
+Both landing pages were opened. Each carries the archive's own title,
+**UA12/2/16 Spirit Masters Scrapbook** — `stu_org/327` covering 2004-2005 and
+`stu_org/329` covering 1996-1997. The abstracts match the years already written
+into the credits, so only the record group was ever wrong. UA68 is SGA's own
+record group, and giving it here told a reader the photographs came out of SGA's
+papers when they came out of the Spirit Masters'.
+
+Nine credits corrected: the four 1996-97 Spirit Masters portraits, Tim Leavell
+1997-98, Morgan Rink 2002-03, Evelina Petkova 2003-04, Lindsey Inman 2004-05 and
+Chris Whitfield 2005-06. No occurrence of UA68 now remains anywhere in
+`photos.json` or in the built site — every one of them had been this same error.
+
+## What was checked and stands
+
+The largest change published today was the senate de-duplication, which removed
+373 lines from `years.json`. Its commit message claims it folded each duplicate
+members row into the officers row keeping every citation. That claim was tested
+rather than taken: all 2,083 person-rows before the change were compared against
+the 2,082 after, matching notes, profile text and every source URL.
+
+It holds. Ten notes and four source URLs do not survive verbatim, and every one
+of them is superseded rather than lost — the surviving row tells the same fact at
+greater length and usually with an extra citation. Lily Nellans keeps the
+nondiscrimination bill, its 17-9-1 vote and a third Herald source; Ryan
+Richardson, Will Harris and Jesse Banales the same. The four dropped URLs are
+per-bill PDFs whose bills are still named in the surviving note, and all four —
+Bill 3-21-F, Bill 15-22-F, Bill 19-25-F and Bill 19-26-S — are mirrored in
+`data/legislation/` and render on their own year pages. Nothing sourced was lost.
+
+The six standing duplicate pairs were read again and are again distinct. The
+1997-98 pair is the closest of them and is still two events: Bill 97-3-F passing
+in November 1997, and the Herald reporting the cards going out in February 1998.
+The second is written down to what an index listing proves and claims nothing
+about how the distribution went, which is the right handling of a notice.
+
+## Checks
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0, `check_duplicates.py`
+the same six judged pairs. 61 years, 1,980 events, 60 presidents; 2,654 recorded
+terms held by 1,819 people, 98% with an account of what the person did.
+
+# 3 September 2026, afternoon — a quotation that no source contained
+
+One pull request was open, #340, "Research: photographs (rolling)", opened at
+14:09 UTC by the photograph routine. It is merged. The stored prompt this pass
+fires from still describes #6, #7 and #8 as stale since 4 August; all three
+closed weeks ago and nothing points at them any more, so that paragraph of the
+brief can be ignored by whoever reads it next.
+
+## What was in it
+
+Four portraits, none of them new photographs. The routine had swept the record
+for same-person, same-year name variants — an officer or committee chair whose
+spelling differs from a person already portrayed in that same year — and reused
+the existing file for the second spelling, so the portrait reaches both records.
+James P. Haynes on the 1966-67 executive roster is the leader Jim Haynes. Nate
+Eaton, chairing Campus Improvements in 2007-08, is the Nathan Eaton the committee
+record names. Page Settles, Speaker in 2015-16, is Paige Settles. Marsha Sanner,
+chairing Rules and Elections in 1980-81, is the Secretary Marsha L. Sanner. It
+also removed a duplicate Emily Reinneck entry that a branch merge had left behind.
+
+That is a narrower and safer check than surname matching, which CLAUDE.md warns
+against outright, because it requires the same year and the same body as well as
+the name. All four identifications hold. Each was also checked to land on a real
+record rather than on nothing: an executive President, two senate officers and a
+committee chair. The routine's own rejections were right, too — David Smith is
+not Donald Smith, and Savanna Kurtz is not Sam Kurtz.
+
+## The thing worth recording
+
+The credit line on the Eaton portrait said the archive's own record noted his
+name was "printed as Nate and Nathan Eaton" for the chairmanship.
+
+No source contains that wording. `stu_org/328` was opened and read in full: one
+sentence of abstract, "Scrapbook of WKU Spirit Masters activities in 2007-2008",
+and no personal names anywhere on the page. The 2007-08 committee note in
+`years.json` says only that Eaton was reported as chair from September 2007 and
+also sat and moved as a senator. Nothing in `data/` holds the phrase. A form of
+words was invented, put inside quotation marks, attributed to a record, and set
+to publish under a photograph.
+
+What makes it worth a section rather than a line is that the conclusion was
+correct. Nate and Nathan Eaton are one man; `name-aliases.json` has said so since
+long before this run, and the year carries the one chairmanship under both
+spellings. The invention was not needed. It was manufactured to dress a true
+conclusion in the authority of a source, which is the failure this project is
+least able to survive — a reader who checks the citation finds nothing, and
+every other citation on the site is worth less afterwards.
+
+So it was rescued rather than cut: the identification stands, and the credit now
+says what the record shows. The same sentence was in `SGA-60-AGENT-INFO.md` and
+in the description of #340, and was corrected in both.
+
+## What was cut
+
+The quotation, replaced with the two-spellings fact it was decorating.
+
+A wrong call number, in six entries rather than the one this diff added. Every
+credit citing the Spirit Masters scrapbook at `stu_org/328` gave it as "WKU
+Archives UA68, Student Organizations". UA68 is SGA's own record group; the
+archive titles the item UA12/2/16. A Spirit Masters scrapbook filed under SGA's
+number reads as an SGA record, which matters here more than tidiness — the whole
+question about these portraits is whether the man on a Spirit Masters display
+board is the SGA senator, and the citation was quietly answering it.
+
+Two credit lines that would have reached the site mid-sentence were tidied.
+
+## Two notes left for the routines
+
+The same UA68 error is still on the 1996-97 and 2004-05 Spirit Masters entries,
+which cite different scans this pass did not open. Other entries in the same file
+already give UA12/2/16 correctly, so `photos.json` contradicts itself until
+somebody opens those two and settles them.
+
+The Spirit Masters portraits as a class rest on identifications made from the
+scanned display boards themselves, and `viewcontent.cgi` has been returning 403
+for weeks, so no editor pass can re-open them to check. They stand on the record
+of the runs that found them. If that endpoint reopens, they are the first thing
+to re-verify.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, before the
+corrections and again after them. `check_duplicates.py` reports the same six
+standing pairs, unchanged; re-read and left alone, because each is genuinely two
+events — a bill introduced against the same bill failing, a lawsuit planned
+against the same lawsuit endorsed, lining up against a grading change against
+passing legislation on it, three separate bills on one day in September 1991, and
+designated driver cards three months apart. This diff added no events.
+
+## Where the archive stands
+
+61 academic years, 1,980 events, 2,654 recorded terms of office held by 1,819
+people, 2,613 of those terms (98%) carrying an account of what the person did,
+40 people recorded under more than one spelling or name. 60 people have been
+president.
+
+## Still open
+
+The attribution footer this platform appends to pull-request comments landed on
+the review comment on #340, exactly as it did on #337 and against the rule in
+CLAUDE.md. It cannot be stripped from inside these containers: direct GitHub REST
+is refused with a 403 even though the MCP tools and `git push` both work, and the
+MCP set has no tool for editing a comment once posted. **Both comments need
+deleting by hand.** Nothing else this pass produced carries it — the commits, the
+merge commit on main and this log are all clean.
+
+The gated `viewcontent.cgi` endpoint is unchanged, as is the 1993-94 to 2009-10
+gap in year photographs and the 431 legislation files with no author recorded.
+
 # 3 September 2026, midday — the senate roll was printing the same seat twice
 
 Nothing was open to merge. No pull request was open at 11:00 UTC, and the

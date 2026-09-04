@@ -1,0 +1,146 @@
+[
+ {
+  "name": "Chris Costa",
+  "year": "2013-14",
+  "fact": "Almost certainly the same person as 'Christopher Costa', who years.json carries separately as a member in 2012-13 and Speaker of the Senate in 2012-13, and who already has a portrait in the archive as 2012-13-christopher-costa.jpg. Flagged, not merged, per the repo rule on spelling doubts. No separate portrait was cut for the 2013-14 record: the face already exists in the archive under the long form.",
+  "src": {
+   "label": "data/photos.json leaders entry for Christopher Costa, 2012-13, sourced to College Heights Herald 87, 20 April 2012, p. 7",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6552"
+  }
+ },
+ {
+  "name": "Ann Blair Thornton",
+  "year": "2008-09",
+  "fact": "Almost certainly the same person as 'Ann-Blair Thornton', whom years.json carries separately as Secretary of the Senate in 2009-10 and who already had a 270x450 crop of the very same Herald photograph. A larger 435x544 crop of that frame has now been cut for the 2008-09 record. If the two records are merged, keep the larger crop and drop the smaller.",
+  "src": {
+   "label": "College Heights Herald, 1 September 2011; the same source photograph already cited by 2009-10-ann-blair-thornton.jpg",
+   "url": "https://wkuherald.com/wp-content/uploads/2011/09/27a97f031cfaeaea761bac9542660fcd.jpg"
+  }
+ },
+ {
+  "name": "Austin Bernard Wingate",
+  "year": "2008-09",
+  "fact": "Almost certainly the same person as 'Austin Wingate', whom years.json carries separately as Chair of Public Relations in 2009-10 and Speaker of the Student Senate in 2010-11. The Herald of 20 March 2012 names one Austin Wingate as one of three candidates for SGA president, and the Herald photo library holds exactly one Wingate in twenty-one thousand captions, 'WKU graduate Austin Wingate, from Elizabethtown', in 2017. Flagged, not merged.",
+  "src": {
+   "label": "Herald 87:29, 20 March 2012, 'three candidates vie for student government association president - cory dodds, austin wingate, corey johnson'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6604"
+  }
+ },
+ {
+  "name": "Christopher Jankowski",
+  "year": "2009-10",
+  "fact": "Almost certainly the same person as 'Chris Jankowski', whom years.json carries separately as Associate Justice in 2010-11 and 2011-12, against Christopher Jankowski as a member in 2009-10 and Chief Justice in 2012-13. The sequence member, associate justice, associate justice, chief justice is one continuous judicial career. The Herald photo library holds exactly one Jankowski in twenty-one thousand captions, 'Versailles sophomore Chris Jankowski', December 2010, which fits both records. Flagged, not merged.",
+  "src": {
+   "label": "College Heights Herald, 7 December 2010, resident assistants making signs in Pearce-Ford Tower",
+   "url": "https://wkuherald.com/wp-content/uploads/2010/12/9c2cdddaec25a2d7acf47bba70e46fd7.jpg"
+  }
+ },
+ {
+  "name": "Danial Shaw",
+  "year": "2008-09",
+  "fact": "Almost certainly the same person as 'Daniel Shaw', whom years.json carries separately as Parliamentarian in 2009-10 and a member through 2011-12. 'Danial' appears once and only for 2008-09. The Herald of 23 October 2009 reports the resignation of three senators and spells him Daniel. Flagged, not merged.",
+  "src": {
+   "label": "Herald 85:13, 23 October 2009, 'three student government association senators resign - michel stephens, daniel shaw, emmett stephens'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6220"
+  }
+ },
+ {
+  "name": "William Currie Martin",
+  "year": "2008-09",
+  "fact": "Almost certainly the same person as 'Currie Martin', whom years.json carries separately as Chair of Student Affairs in 2009-10. The Herald prints him as Currie Martin twice: as a tennis player in January 2008 and as a candidate for SGA executive vice president in March 2010. Flagged, not merged.",
+  "src": {
+   "label": "Herald 85:39, 23 March 2010, 'candidates for student government association executive vice president - kendrick bryan, currie martin'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6757"
+  }
+ },
+ {
+  "name": "Austin Wingate",
+  "year": "2010-11",
+  "fact": "Ran for SGA president in the spring of 2012 in a three-way race against Cory Dodds and Corey Johnson, after his year as Speaker of the Student Senate. Dodds won. The 2013 Talisman also carries a feature on him, 'A Vote for Support' by Allyson Beasecker.",
+  "src": {
+   "label": "Herald 87:29, 20 March 2012; 2013 Talisman: Form",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6604"
+  }
+ },
+ {
+  "name": "Lisa M. Kappler",
+  "year": "2008-09",
+  "fact": "Resigned as Chief Justice of the Judicial Council during 2008-09; the Herald reported it on 17 February 2009. Corey Bewley, listed in the worklist as the successor Chief Justice, was approved two days later, reported 19 February 2009. The worklist records Kappler as Clerk of the Judicial Council, which the Herald contradicts by calling her chief justice.",
+  "src": {
+   "label": "Herald 84:22 [32], 17 Feb 2009 and Herald 84:33, 19 Feb 2009",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6721"
+  }
+ },
+ {
+  "name": "Kevin Adams",
+  "year": "2011-12",
+  "fact": "Removed from the Student Senate, with others placed under review, in November 2011, alongside Kevin Preston.",
+  "src": {
+   "label": "Herald 87:22, 15 November 2011, 'two student government association senators removed; others go under review - kevin adams, kevin preston'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6588"
+  }
+ },
+ {
+  "name": "Kevin Preston",
+  "year": "2011-12",
+  "fact": "Removed from the Student Senate, with others placed under review, in November 2011, alongside Kevin Adams.",
+  "src": {
+   "label": "Herald 87:22, 15 November 2011, 'two student government association senators removed; others go under review - kevin adams, kevin preston'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6588"
+  }
+ },
+ {
+  "name": "Sarah Howell",
+  "year": "2009-10",
+  "fact": "SGA's own website listed her mid-year as Director of Information Technology on the executive branch page, alongside President and Student Regent Kevin T. Smiley, Executive Vice President Kendrick W. Bryan, Administrative Vice President Justin P. Thurman, Chief of Staff Eric Smiley, Director of Public Relations Angelika Masero and Director of Academic and Student Affairs J. Aaron Pawley. The same page names three office associates: Rachel Calhoun, Jerebeth Lucas and Katie Stillwell.",
+  "src": {
+   "label": "WKU SGA executive branch page, captured 23 November 2009",
+   "url": "http://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"
+  }
+ },
+ {
+  "name": "Aaron Pawley",
+  "year": "2009-10",
+  "fact": "SGA's own website gave his full name as J. Aaron Pawley, with the university email Joseph.Pawley193@wku.edu, so his first name was Joseph.",
+  "src": {
+   "label": "WKU SGA executive branch page, captured 23 November 2009",
+   "url": "http://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"
+  }
+ },
+ {
+  "name": "Jessi Wurth",
+  "year": "2010-11",
+  "fact": "SGA's own website named her as Jessica Wurth, and listed her in May 2010 as the nominee for Director of Public Relations rather than a confirmed officer, alongside Charlie Harris as nominee for Chief of Staff and Cory Dodds as nominee for Director of Information Technology.",
+  "src": {
+   "label": "WKU SGA executive branch page, captured 28 May 2010",
+   "url": "http://web.archive.org/web/20100528165546/http://www.wku.edu/sga/index.php?page=executive"
+  }
+ },
+ {
+  "name": "Rachel Calhoun",
+  "year": "2010-11",
+  "fact": "Worked in the SGA office as one of three office associates before becoming Secretary of the Student Senate, listed in that role on SGA's own executive page in both November 2009 and May 2010.",
+  "src": {
+   "label": "WKU SGA executive branch pages, captured 23 November 2009 and 28 May 2010",
+   "url": "http://web.archive.org/web/20091123151508/http://www.wku.edu/sga/index.php?page=executive"
+  }
+ },
+ {
+  "name": "Elizabeth McGrew",
+  "year": "2013-14",
+  "fact": "Almost certainly the same person as 'Beth McGrew', whom years.json carries separately as a senator in 2014-15 voting in the roll-calls of 24 February and 5 May 2015, against Elizabeth McGrew as a presidential appointee reported to the Senate on 18 February 2014. Beth is the ordinary short form of Elizabeth, the two records are consecutive years in the same body, and McGrew is rare enough that the whole digitised Herald back file carries only four lines of it across sixty years, none of them a second student of that surname in these years. The Herald photographed her in April 2015 at an Earth Day event the Student Government Association co-sponsored and captioned her 'WKU grad student Beth McGrew'. Flagged, not merged, per the repo rule on spelling doubts. This pair is not in _alias-candidates.md.",
+  "src": {
+   "label": "College Heights Herald, photograph published 8 June 2015, Earth Day Garden Party of 22 April 2015",
+   "url": "https://wkuherald.com/wp-content/uploads/2015/06/abc113c48bbee4bbc3e8cfdba556a5fa.jpg"
+  }
+ },
+ {
+  "name": "Chris Mckenna",
+  "year": "2013-14",
+  "fact": "Still at WKU as a senior in March 2016, when the Herald photographed him being honoured with four other members of WKU's Model Arab League team at the regional conference at Miami University in Oxford, Ohio. The Herald spells him McKenna. He is the only Chris McKenna anywhere in the Herald photograph library or the digitised back file.",
+  "src": {
+   "label": "College Heights Herald, 1 March 2016, Model Arab League regional conference",
+   "url": "https://wkuherald.com/wp-content/uploads/2016/03/4542deb70f4c179cb4b5b63a4607202f.jpg"
+  }
+ }
+]

@@ -1,0 +1,321 @@
+[
+ {
+  "year": "2008-09",
+  "name": "Ann Blair Thornton",
+  "file": "2008-09-ann-blair-thornton.jpg",
+  "replaces": null,
+  "width": 435,
+  "height": 544,
+  "why": "Sharp, well-lit, smiling frame; she is the only named subject and the only face turned to the camera, wearing the Miss Kentucky crown and sash the caption describes. Cropped from a 1501x992 Herald photograph. NOTE FOR THE EDITOR: the archive already publishes a smaller crop (270x450) of this same photograph as 2009-10-ann-blair-thornton.jpg. years.json carries 'Ann Blair Thornton' (2008-09, member) and 'Ann-Blair Thornton' (2009-10, Secretary of the Senate) as two records, and they are almost certainly one person. If they are merged, keep this larger crop and drop the other; if they are not merged, this fills the 2008-09 record.",
+  "caption_quote": "Bowling Green native Ann-Blair Thornton, the current Miss Kentucky and WKU student",
+  "src": {
+   "label": "College Heights Herald, 1 September 2011",
+   "url": "https://wkuherald.com/wp-content/uploads/2011/09/27a97f031cfaeaea761bac9542660fcd.jpg"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2013-14",
+  "name": "Chris Mckenna",
+  "file": "2013-14-chris-mckenna.jpg",
+  "replaces": null,
+  "width": 340,
+  "height": 510,
+  "why": "Sharp, well-lit, front-facing frame from a posed Herald group portrait; the only picture of him in the digitised Herald.",
+  "caption_quote": "(from left to right) sophomore Alexandria Knipp, freshman Noah Stevens, senior Chris McKenna",
+  "identification": "The caption gives an explicit left-to-right key for five people. Ordered by horizontal position the frame reads Knipp (front left, female), Stevens (back left, male, glasses), McKenna (front centre, male, dark suit), Alamri (back right, male), Shipp (front right, female). The three genders in the list match that order exactly, so the third name lands on the seated man in the centre. Herald spells the surname McKenna; the archive spells it Mckenna.",
+  "src": {
+   "label": "College Heights Herald, 1 March 2016",
+   "url": "https://wkuherald.com/wp-content/uploads/2016/03/4542deb70f4c179cb4b5b63a4607202f.jpg"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2010-11",
+  "name": "Austin Wingate",
+  "file": "2010-11-austin-wingate.jpg",
+  "replaces": null,
+  "width": 670,
+  "height": 865,
+  "why": "Sharp, well-lit, dignified three-quarter profile in a suit; the only photograph of him in the digitised Herald.",
+  "caption_quote": "WKU graduate Austin Wingate, from Elizabethtown talks with junior Darius Fields",
+  "identification": "Two men in frame. Three cues agree on the sharp foreground man at left: he is named first in a caption that runs left to right, he is the only one in focus and so the frame subject, and the caption has him doing the talking while he is the one mid-word. Darius Fields is the blurred man behind. That this is the SGA Austin Wingate rather than a namesake is supported by the Herald of 20 March 2012 (Vol. 87 No. 29), which lists Austin Wingate as one of three candidates for SGA president, so he was a student until 2012 and a WKU graduate by 2017.",
+  "src": {
+   "label": "College Heights Herald, 23 February 2017",
+   "url": "https://wkuherald.com/wp-content/uploads/2017/02/6deb3b09934715e3fdbbd31ffaebea16.jpg"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2008-09",
+  "name": "Austin Bernard Wingate",
+  "file": "2008-09-austin-bernard-wingate.jpg",
+  "replaces": null,
+  "width": 670,
+  "height": 865,
+  "why": "Same frame as the 2010-11 Austin Wingate portrait. NOTE FOR THE EDITOR: years.json carries Austin Bernard Wingate (2008-09, member) and Austin Wingate (2010-11, Speaker of the Student Senate) as two records and they are almost certainly one man. If they are merged, keep one copy and drop this file; if they are not, this fills the 2008-09 record.",
+  "caption_quote": "WKU graduate Austin Wingate, from Elizabethtown talks with junior Darius Fields",
+  "identification": "See the 2010-11 Austin Wingate entry. Same photograph, same reasoning.",
+  "src": {
+   "label": "College Heights Herald, 23 February 2017",
+   "url": "https://wkuherald.com/wp-content/uploads/2017/02/6deb3b09934715e3fdbbd31ffaebea16.jpg"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2010-11",
+  "name": "Chad Winston",
+  "file": "2010-11-chad-winston.jpg",
+  "replaces": null,
+  "width": 158,
+  "height": 240,
+  "why": "Small but eyes-open and dignified: he is preaching, which is what the caption describes. A larger frame of him from the same photographers package that day (wkuherald.com/wp-content/uploads/2012/02/466bda81854f135120483499fa0cebd4.jpg, 716x759, same grey suit, lavender shirt and purple tie, same church) carries no caption of its own and shows him with his eyes screwed shut comforting a weeping woman, so it is better resolved and worse as a portrait. The editor may prefer it.",
+  "caption_quote": "Bowling Green senior Chad Winston leads a Bible study before preaching at Cedar Grove Baptist Church",
+  "identification": "The caption names one person and describes one action. He is the only person standing, the only one at the lectern with an open book, and the only one in a suit; everyone else is seated in the pews. No ambiguity.",
+  "src": {
+   "label": "College Heights Herald, 3 February 2012",
+   "url": "https://wkuherald.com/wp-content/uploads/2012/02/ffd0ab8824a8206c5e8c6f5bdcc5e33b.jpg"
+  },
+  "quality": "small"
+ },
+ {
+  "year": "2013-14",
+  "name": "Elizabeth McGrew",
+  "file": "2013-14-elizabeth-mcgrew.jpg",
+  "replaces": null,
+  "width": 220,
+  "height": 295,
+  "why": "The only photograph of her in any WKU source found; face is small and she is in motion, but it is lit, front-on enough to be recognisable, and it shows her at the SGA-sponsored garden she ran. NOTE FOR THE EDITOR: years.json carries Elizabeth McGrew (2013-14) and Beth McGrew (2014-15) as two records and they are one woman; Beth McGrew is not on this worklist, so only the 2013-14 record is filled here.",
+  "caption_quote": "WKU grad student Beth McGrew helps direct volunteer efforts during the Earth Day Garden Party",
+  "identification": "Five people in frame, one named, and the caption describes one action. She is the only person directing: pointing across the bed with a watering can in her other hand while the rest kneel and plant, and she is the only one wearing the gardens own Project Grow shirt. The Herald of 21 April 2014 settles it by giving her the job: it calls her Henderson graduate student Beth McGrew, coordinator of the community garden (wkuherald.com/40323/news/sga-and-office-of-sustainability-kick-off-earth-week). The coordinator is the person directing volunteers.",
+  "src": {
+   "label": "College Heights Herald, 8 June 2015",
+   "url": "https://wkuherald.com/wp-content/uploads/2015/06/abc113c48bbee4bbc3e8cfdba556a5fa.jpg"
+  },
+  "quality": "soft"
+ },
+ {
+  "year": "2008-09",
+  "name": "LaDarra Starkey",
+  "file": "2008-09-ladarra-starkey.jpg",
+  "replaces": null,
+  "width": 176,
+  "height": 236,
+  "why": "A studio headshot cut from the Phi Mu Delta Tau chapter composite for 2007-2008: front on, evenly lit, smiling, eyes open. Small only because eighty-four portraits share one 2997x2327 scan; not upscaled. This is the same route four portraits already in the archive came by (Katie Jeter, Jessica Sutton, Kristiana Garvey, Dajana Vasilijevic-Klingler).",
+  "caption_quote": "LaDARRA STARKEY",
+  "identification": "Her name is printed on the plate directly beneath her own oval, so no counting is needed. The archive's own record key agrees independently: TopSCHOLAR describes UA1C11/105/31 as '7th row l to r: Devin Roos, Brenda Sherlock, Kayla Smith, Katelyn Spralding, LaDarra Starkey, Kelli Stuntebeck ...', and she is the fifth oval in the bottom row, between Katelyn Spalding and Kelli Stuntebeck exactly as printed. A WKU student in 2007-08 named LaDarra Starkey and the LaDarra Starkey who sat in the SGA senate in 2008-09 are the same person on the same campus in consecutive years.",
+  "src": {
+   "label": "WKU Archives UA1C11/105/31 Phi Mu Composite, 2007-2008, bottom row, fifth from left",
+   "url": "https://digitalcommons.wku.edu/stu_org/371"
+  },
+  "quality": "small"
+ },
+ {
+  "year": "2008-09",
+  "name": "Tyler Jury",
+  "file": "2008-09-tyler-jury.jpg",
+  "replaces": null,
+  "width": 417,
+  "height": 601,
+  "why": "A studio headshot published by WKU itself in the Spirit Masters class booklet: front on, evenly lit, eyes open, suit and tie. Small only because the whole two-page spread was scanned as one 2104x739 image; not upscaled.",
+  "caption_quote": "Tyler Jury / Spirit Master",
+  "identification": "The spread at PDF p. 11 carries two members, one per half-page, and each half-page holds exactly one portrait and one name heading. Katie Beth Harmon's heading sits at x 235-361 with her portrait on the outer (left) edge at x 0-414; Jury's heading sits at x 540-606 with his portrait on the outer (right) edge at x 1687-2103. One name, one face, no counting. That this is the Tyler Jury who sat in the Senate in 2008-09 rather than a namesake: the booklet calls him a senior from Elizabethtown, past-president of Phi Gamma Delta, which matches the Herald's only other WKU Tyler Jury (Phi Gamma Delta, 2 April 2010), and a senior in 2011-12 entered in 2008. The digitised Herald back file carries no second Tyler Jury.",
+  "src": {
+   "label": "WKU Spirit Masters Class of 2011-2012 booklet (WKU Archives UA12/2/16), p. 11 of the scanned volume",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8496"
+  },
+  "quality": "small"
+ },
+ {
+  "year": "2008-09",
+  "name": "William Currie Martin",
+  "file": "2008-09-william-currie-martin.jpg",
+  "replaces": null,
+  "width": 360,
+  "height": 440,
+  "why": "The only photograph of him in any WKU source. A working sports frame rather than a portrait, but he is the sole figure, sharp, lit and looking towards the camera with his eyes open. Cut from the 993x585 press photograph at native resolution; not upscaled.",
+  "caption_quote": "Freshman Currie Martin gets some practice with his teammates yesterday afternoon at Total Fitness",
+  "identification": "The caption names one person and one person is in the frame; the words 'with his teammates' describe the session, not the picture. That this is the SGA man: William Currie Martin was sworn to the Student Senate on 23 September 2008 (SGA minutes) and a 'Currie Martin' stood for executive vice president in March 2010 (Herald 85:39). The Herald's whole digitised back file and its 21,000 photograph captions carry exactly one Currie Martin, the tennis freshman of 2007-08, whose years line up: a freshman in January 2008 is a sophomore senator in September 2008 and a junior candidate in March 2010. Currie is his middle name and the name he went by.",
+  "src": {
+   "label": "College Heights Herald 83:29, 31 January 2008, p. 12, 'Martin's talent shines early for Western' (photograph by Alton Strupp)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6687"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2009-10",
+  "name": "Currie Martin",
+  "file": "2009-10-currie-martin.jpg",
+  "replaces": null,
+  "width": 360,
+  "height": 440,
+  "why": "Same frame as the 2008-09 William Currie Martin portrait. NOTE FOR THE EDITOR: years.json carries 'William Currie Martin' (2008-09, senator) and 'Currie Martin' (2009-10, chair of Student Affairs) as two records and they are one man. If they are merged, keep one copy and drop the other; if they are not, this fills the 2009-10 record.",
+  "caption_quote": "Freshman Currie Martin gets some practice with his teammates yesterday afternoon at Total Fitness",
+  "identification": "See the 2008-09 William Currie Martin entry. Same photograph, same reasoning.",
+  "src": {
+   "label": "College Heights Herald 83:29, 31 January 2008, p. 12, 'Martin's talent shines early for Western' (photograph by Alton Strupp)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6687"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2009-10",
+  "name": "Bianca Brown",
+  "file": "2009-10-bianca-brown.jpg",
+  "replaces": null,
+  "width": 231,
+  "height": 266,
+  "why": "A single-subject mugshot printed with her own guest column while she was in office, front on, evenly lit, eyes open, smiling. Small because a printed column mug is 83 by 95 points on the page; cut at the scan's native resolution and not upscaled.",
+  "caption_quote": "BIANCA BROWN / SGA senator, Louisville sophomore",
+  "identification": "Her name and her office are set directly beneath her own photograph, in the standing head of the guest column she wrote. One face, one name, and the label itself says SGA senator, so there is no question of a namesake.",
+  "src": {
+   "label": "College Heights Herald 85:20, 17 November 2009, p. 5, guest column mugshot",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6238"
+  },
+  "quality": "small"
+ },
+ {
+  "year": "2008-09",
+  "name": "Jacob Turner",
+  "file": "2008-09-jacob-turner.jpg",
+  "replaces": null,
+  "width": 405,
+  "height": 780,
+  "why": "A posed studio portrait taken for the Herald's 'What's Your Story?' feature on him, in office at the time: lit, sharp, arms folded, eyes to the camera. Cropped from the 1211x805 press photograph at the scan's native resolution; the Gandalf figurine at the right edge is cropped out and the Darth Vader cutout at the left with it.",
+  "caption_quote": "Hazard sophomore Jacob Turner stands with his recent Christmas present, a life size cutout of Darth Vader",
+  "identification": "One living person is in the frame; the two other figures the caption names are a cardboard cutout and a figurine. The profile beside it is about the same man, quoting 'Hazard, Ky., sophomore Jacob Turner' at length. That this is the senator: the Herald of 10 February 2009 calls SGA senator Jacob Turner an 'Ary senior', and Ary is a Perry County community ten miles from Hazard, which is where this man's home is; the class year is the paper's own error, settled by SGA's minutes, which still have Jacob Turner taking over the Legislative Research chair in February 2010, a year after he was supposedly a graduating senior.",
+  "src": {
+   "label": "College Heights Herald 84:32, 17 February 2009, p. 9, 'What's Your Story?' (photograph by Ariana McLaughlin)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6721"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2008-09",
+  "name": "Jesse Caylor",
+  "file": "2008-09-jesse-caylor.jpg",
+  "replaces": null,
+  "width": 300,
+  "height": 450,
+  "why": "The only photograph of him in any WKU source. A stage frame rather than a portrait, but he is lit, sharp, smiling and looking towards the camera. Cropped from the 1297x888 press photograph at the scan's native resolution; the woman he is dancing with is cropped to a sliver of shoulder.",
+  "caption_quote": "Louisville freshman Jesse Caylor, left, from Sigma Nu dances with Elizabethtown senior Erin Larkin, right",
+  "identification": "The caption gives explicit positions for both people it names, left and right, and the two foreground figures are one man and one woman in that order. Caylor is the man at left. That this is the SGA man: the Herald puts a Jesse Caylor in Sigma Nu again in March 2009 as a sophomore, and the SGA senatorial candidate list of March 2008 carries one Jesse Caylor; a Louisville freshman in October 2007 is a sophomore chairing Student Affairs in 2008-09.",
+  "src": {
+   "label": "College Heights Herald 83:16, 25 October 2007, p. 2, Shenanigans in DUC (photograph by Ryan Stone)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4484"
+  },
+  "quality": "group crop"
+ },
+ {
+  "year": "2009-10",
+  "name": "Dave Vickery",
+  "file": "2009-10-dave-vickery.jpg",
+  "replaces": null,
+  "width": 380,
+  "height": 440,
+  "why": "The only photograph of him in any WKU source. Eyes are lowered to the papers he is reading, but the face is lit, sharp and unobstructed. Cut from the 1719x1119 press photograph at the scan's native resolution.",
+  "caption_quote": "Danville junior Kevin Smiley, Taylor Mill junior Dave Vickery and Lexington freshman Daniel Shaw",
+  "identification": "Three men sit in a row on one sofa and the caption names three people. The order is fixed by an outside anchor rather than assumed: the archive already holds a portrait of Kevin Smiley, and the man on the left, the only one with curly strawberry hair and a red beard, is plainly him. Smiley is named first, so the caption runs left to right, which puts Vickery, named second, in the centre and Shaw, named third, at the right. That this is the SGA man: the article on p. 4 of the same issue names 'Taylor Mill junior David Vickery' as the one Western student on the Frankfort trip who was not then in SGA, and the Herald of 30 April and 7 May 2009 has 'Taylor Mill sophomore David Vickery' writing and re-writing SGA's AARC funding bill; he chaired Academic Affairs the following year. There is one Vickery in the record.",
+  "src": {
+   "label": "College Heights Herald 84:29, 5 February 2009, p. 2, students lobbying in Frankfort (photograph by Albert Cesare)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6725"
+  },
+  "quality": "soft"
+ },
+ {
+  "year": "2008-09",
+  "name": "Danial Shaw",
+  "file": "2008-09-danial-shaw.jpg",
+  "replaces": null,
+  "width": 380,
+  "height": 440,
+  "why": "The only photograph of him in any WKU source, taken during his term. Eyes are lowered to the paper he is holding, but the face is lit, sharp and unobstructed. Cut from the 1719x1119 press photograph at the scan's native resolution.",
+  "caption_quote": "Danville junior Kevin Smiley, Taylor Mill junior Dave Vickery and Lexington freshman Daniel Shaw",
+  "identification": "Three men in a row, three names. The order is anchored, not assumed: the archive's existing portrait of Kevin Smiley matches the man on the left, the only one with curly strawberry hair and a red beard, and Smiley is the first name in the caption, so the caption runs left to right and Shaw, named last, is the man on the right. That this is the senator: the Herald of 19 March 2009 calls him 'Lexington freshman and SGA senator Daniel Shaw', the same hometown and class the caption gives. years.json carries him as 'Danial Shaw' in 2008-09 and 'Daniel Shaw' from 2009-10; SGA's own minutes spell him Daniel.",
+  "src": {
+   "label": "College Heights Herald 84:29, 5 February 2009, p. 2, students lobbying in Frankfort (photograph by Albert Cesare)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6725"
+  },
+  "quality": "soft"
+ },
+ {
+  "year": "2009-10",
+  "name": "Daniel Shaw",
+  "file": "2009-10-daniel-shaw.jpg",
+  "replaces": null,
+  "width": 380,
+  "height": 440,
+  "why": "Same frame as the 2008-09 Danial Shaw portrait. NOTE FOR THE EDITOR: years.json carries 'Danial Shaw' (2008-09) and 'Daniel Shaw' (2009-10 to 2011-12) as two records and they are one man. If they are merged, keep one copy and drop the other; if they are not, this fills the 2009-10 record.",
+  "caption_quote": "Danville junior Kevin Smiley, Taylor Mill junior Dave Vickery and Lexington freshman Daniel Shaw",
+  "identification": "See the 2008-09 Danial Shaw entry. Same photograph, same reasoning.",
+  "src": {
+   "label": "College Heights Herald 84:29, 5 February 2009, p. 2, students lobbying in Frankfort (photograph by Albert Cesare)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6725"
+  },
+  "quality": "soft"
+ },
+ {
+  "year": "2013-14",
+  "name": "Hannah Garland",
+  "file": "2013-14-hannah-garland.jpg",
+  "replaces": null,
+  "width": 435,
+  "height": 577,
+  "why": "Her own studio portrait from the university yearbook, taken in the year she was Director of Academic and Student Affairs: front on, evenly lit, eyes open, smiling. Extracted at the printed image's native resolution, 434x579; not upscaled. NOTE FOR THE EDITOR: years.json also carries her as a senator in 2011-12, and this portrait would serve that record equally.",
+  "caption_quote": "Hannah Garland",
+  "identification": "The underclassmen grid prints four portraits to a row with the row's four names set beside it in a single column, top to bottom matching left to right. Garland is the fourth name of the second row on p. 299, so hers is the fourth and rightmost portrait, at x 1087-1191. The mapping is checked, not assumed: on this spread the eight rows' name lists and portraits agree on sex in all thirty-two cases (row 2 reads Frazier, French, Gachassin, Garland against man, man, woman, woman), and both the names and the portraits run in strict alphabetical order, so a shift by one place anywhere would break both checks. That this is the SGA woman: the Herald of 2 April 2013 identifies its letter-writer as 'Hannah Garland ... chair of academic affairs and part of the Student Government Association', the same year and the same campus, and the Talisman grid holds one Hannah Garland.",
+  "src": {
+   "label": "2014 Talisman: Reckoning, Part II, p. 299, underclassmen portraits (WKU Archives UA12/2/2)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5162"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2012-13",
+  "name": "Taylor Ruby",
+  "file": "2012-13-taylor-ruby.jpg",
+  "replaces": null,
+  "width": 434,
+  "height": 579,
+  "why": "His own studio portrait from the university yearbook, front on, evenly lit, eyes open, smiling. Taken in the autumn after his year as a freshman senator, which is the earliest portrait of him that exists: no Talisman was published while he was a freshman. Extracted at the printed image's native resolution; not upscaled.",
+  "caption_quote": "Taylor Ruby",
+  "identification": "The underclassmen grid prints four portraits to a row with the row's four names set beside it in one column, top to bottom against left to right. Ruby is the third name of the third row on p. 308, so his is the third portrait, at x 445-549. The pairing is checked rather than assumed: the row reads Barrett Rogers, Kelly Rosen, Taylor Ruby, Eric Saasita against man, woman, man, man, and both the names and the portraits run in strict alphabetical order, so a shift of one place would break both checks. That this is the senator: the Herald of 15 April 2014 photographs 'Somerset sophomore Taylor Ruby' of Phi Gamma Delta, a sophomore in the same academic year as this book, and the whole yearbook holds one Taylor Ruby.",
+  "src": {
+   "label": "2014 Talisman: Reckoning, Part II, p. 308, underclassmen portraits (WKU Archives UA12/2/2)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5162"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2011-12",
+  "name": "Tori Conyers",
+  "file": "2011-12-tori-conyers.jpg",
+  "replaces": null,
+  "width": 434,
+  "height": 579,
+  "why": "Her own studio portrait from the university yearbook: front on, evenly lit, eyes open, smiling. The earliest portrait of her that exists, since no Talisman was published in the year she sat in the Senate. Extracted at the printed image's native resolution; not upscaled.",
+  "caption_quote": "Tori Conyers",
+  "identification": "The underclassmen grid prints four portraits to a row with the row's four names beside it in one column, top to bottom against left to right. Conyers is the third name of the second row on p. 296, so hers is the third portrait, at x 445-549. The row reads Ty Cobb, Cristina Comandasu, Tori Conyers, Donny Coolo against man, woman, woman, man, and both the names and the portraits run in strict alphabetical order, so the pairing is checked twice over. Conyers is a rare surname: it appears nowhere else in the digitised Herald back file, its photograph library, or this yearbook, so the WKU undergraduate of 2013-14 and the senator of 2011-12 are the same student inside one enrolment.",
+  "src": {
+   "label": "2014 Talisman: Reckoning, Part II, p. 296, underclassmen portraits (WKU Archives UA12/2/2)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5162"
+  },
+  "quality": "good"
+ },
+ {
+  "year": "2012-13",
+  "name": "Roy Ratliff",
+  "file": "2012-13-roy-ratliff.jpg",
+  "replaces": null,
+  "width": 900,
+  "height": 1196,
+  "why": "His own studio senior portrait from the university yearbook, at full printed resolution: front on, evenly lit, eyes open, smiling, shirt and tie. The best frame of anyone in this block.",
+  "caption_quote": "Roy Ratliff / Chicago / Management",
+  "identification": "The seniors grid prints three portraits to a row with that row's three names, each with hometown and major, set beside it in one column, top to bottom against left to right. Ratliff is the second of the three names against the second row on p. 283, so his is the middle portrait, at x 897-1043. The pairing is verified on the same spread: the row below reads Mark Reeves, Laura Rich, Brenda Roberts against a young man, a woman and an older woman, and the young man in the first position is wearing a black polo with SGA embroidered on the chest, which is Reeves, SGA's executive vice-presidential candidate that spring. Sexes agree in every row on the spread. That this is the senator at large of 2012-13: Ratliff is a rare surname, absent from the digitised Herald back file for these years, and a senior in the 2013-14 book was in the Senate the year before.",
+  "src": {
+   "label": "2014 Talisman: Reckoning, Part II, p. 283, seniors and graduate students (WKU Archives UA12/2/2)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5162"
+  },
+  "quality": "good"
+ }
+]
