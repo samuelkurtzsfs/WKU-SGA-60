@@ -111,6 +111,34 @@ the guard is doing its job rather than being switched off.
 This was not caused by anything in this pass. It reproduces on main at its tip
 and the fix is carried here because nothing merges green until it is in.
 
+## The 125 portraits that landed straight on main
+
+With nothing in the queue, the substance to review was what went onto the site
+without passing through one: 125 portrait credits added between `322e04f1` and
+the tip. Eight were sampled and their sources opened.
+
+Three carried no identifying evidence in the label at all, only a page number or
+"(only picture found)", which is the shape the rules warn about — a face nobody
+can check. All three turned out to be right, and the yearbooks' own indexes say
+so: `Young, Ian Troy 332-3, 379` for the 1979 Talisman p. 379 credit,
+`Carlson, Georgiana Lynn 51, 267, 387` for 1977 p. 387, and
+`Cortus, William James 307, 325, 389, 399` for 1977 p. 389. Each page is the
+subject's own indexed class portrait, and the 1977 volume independently puts
+Carlson on the rules and elections committee with Christy Vogt, Bob Moore and
+Don Augenstein.
+
+Nothing was cut. The identifications hold; what is missing is the evidence for
+them, which sits in the index of the same volume the credit already cites. A
+label reading "(only picture found)" gives a reader nothing to check and gives
+the next pass no reason not to withdraw the picture — which is how the LaCivita
+portrait came off the site twice. The index line belongs in the label.
+
+Two others in the sample derive a face by counting positions in a group
+photograph — Bridget Wyatt from the 1981 ASG group and Paul Wellander from a
+grid of freshman portraits, and Wellander's credit reaches a 1983-84 record
+through a 1981 volume. Both spell out their reasoning in full, which is the
+right way to file an inference, and both are left standing.
+
 ## Counts after this pass
 
 61 years, 1,980 events, 60 people recorded as president. 2,654 terms of office
