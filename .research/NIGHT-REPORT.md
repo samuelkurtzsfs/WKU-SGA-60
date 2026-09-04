@@ -1,3 +1,110 @@
+# 4 September 2026, evening — the reasoning that never reached the page
+
+No pull request was open. #347 merged this afternoon, every `research-*` branch
+is behind `main`, and the three branches that were stale on 4 August are long
+closed: the numbering is in the 340s now. So the review went where the risk
+actually is on this project, which is no longer the pull request queue at all.
+
+Fifty-four leader portraits have been committed **straight to `main`** since the
+last editor pass merged at 09:36 — eleven commits, no branch, no review, live on
+the deploy the moment each landed. That is the same gap #346 flagged this
+morning and it has widened since.
+
+## What the check found
+
+Four of the fifty-four were on the do-not-use register. Two of them, Amanda K.
+Thurmond and Taylor Ruby, had been withdrawn earlier the same day.
+
+My first reading was that this was a straight regression and all four should
+come off again. That reading was wrong, and it is worth saying why, because it
+is the same mistake the morning pass made.
+
+The register's entries condemn a **specific photograph**, not a person. Three of
+the four are now published from a **different source** that answers the
+objection outright:
+
+- **Stacey Taylor** — the withdrawn frame was the twins feature of 24 April
+  2001, condemned because nothing separated her from her identical sister. What
+  is published now is the Shantytown package of 13 November 2001, p. 9, whose
+  caption names her and gives "left", and whose other figure is Ashley Roberts.
+  The twin ambiguity does not arise in this frame.
+- **Tyler Jury** — the withdrawn frame was the 2019 two-men-on-a-bench spotlight.
+  What is published now is a studio headshot from the Spirit Masters Class of
+  2011-2012 booklet, p. 11, captioned with his name, with the volume's own
+  roster listing him.
+- **Taylor Ruby** — the withdrawn frame was the Fiji house clean-up, three men
+  and no positions. What is published now is his own captioned portrait cell
+  from the 2014 underclassmen grid.
+
+**Amanda K. Thurmond** is the sharpest case. The register required "an index
+citation or caption position" before she could be restored. That caption
+position existed all along, in `data/photo-finds/n9396.json`: the caption's
+middle row runs Meenach, Thurmond, Schroeder, Harris against a middle row of
+four, the rows of two, four and five names line up one to one with the frame,
+and Meenach — named first — is a face this archive already publishes. She was
+correctly identified, and cut anyway.
+
+## The actual defect
+
+It is not in the research. It is in the publishing layer.
+
+The identification lives in `caption_quote`, `id_basis` and `how_identified` in
+`data/photo-finds/`. The site renders only `src.label` from `data/photos.json`,
+and nothing copies one into the other. So the page published a bare
+"cropped from a group photo", and the next pass — reading the same bare line —
+had no way to tell a rigorous identification from a guess, and cut it.
+
+That is the whole loop. It is why the register carries entries reading
+"withdrawn once already and re-found by a later researcher who did not know",
+and it will keep running as long as the evidence sits in a file the site never
+shows.
+
+Twenty-one labels now carry the reasoning, in the house style Ed Jordan and
+Robert Cook already set: which row, how the row order was fixed, and what
+outside the frame confirms it. A reader can check the claim; more to the point,
+so can the next pass. Two spelling divergences surfaced in the doing and are
+flagged rather than fixed, per the rule: the 1991 *Talisman* prints D'Aniello
+where the archive carries O'Daniello, and Wells where the archive carries Weils.
+
+Four register entries now carry `resolved` notes recording what was restored and
+on what evidence, following the Paige Pride precedent. Each says plainly that
+the originally condemned photograph stays condemned.
+
+## Checked, and not cut
+
+The remaining fifty were checked against the register and for image integrity;
+all carry real JPEG magic bytes. The identifications behind the early group
+crops are strong and were nearly cut on a thin reading: Hamp Moore, Brad Ford
+and Donna Porter each resolve a two-or-four-figure frame from **outside** it,
+against a class portrait already published in this archive — which is exactly
+the method the David Bass entry says was missing there. Todd Duncan stays cut;
+nothing has put him in student government.
+
+The Spirit Masters call number guard is holding: 27 entries at UA12/2/16, none
+at UA68, four passes after it was first settled.
+
+Nothing was cut this pass. The one thing I could not do is read p. 9 of *Herald*
+77:24 directly — `viewcontent.cgi` returned 403 on both attempts, ninety seconds
+apart, while landing pages served normally. The Stacey Taylor restore therefore
+rests on the caption transcribed in `n9701.json` rather than on the page image,
+and the label says which frame it is so a later run can confirm it.
+
+## Counts
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six standing pairs, judged before and
+still genuinely separate events; this pass adds no events.
+
+61 years, 1,980 events, 2,654 terms held by 1,818 people, 41 recorded under more
+than one name, 60 presidents. 1,054 leader portraits.
+
+## For the routines
+
+The portrait routine should write the identification into `src.label` when it
+writes the file, not only into its finds file. A portrait whose label does not
+say how the face was identified will be cut by the next honest reviewer, and
+that has now cost this archive the same four portraits twice.
+
 # 4 September 2026, afternoon — a portrait counted twice, and the count that believed it
 
 One pull request open, #347, "Research: photographs (rolling)", pushed this
