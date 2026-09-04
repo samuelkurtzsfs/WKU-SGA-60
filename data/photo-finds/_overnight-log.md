@@ -75,3 +75,29 @@ I have stopped relaunching. Agents that die on their first call burn the account
 The spend limit is not simply on or off, and the shape of it matters: the single probe launched alone has now run **three hours** and is still going, while nine launched together died within minutes, twice. Nine agents exhaust the headroom immediately; one fits inside it and works all night. That 48-portrait haul came mostly from the agents that got a few minutes each before dying, plus the probe that did not.
 
 So from here: **keep one agent running, and launch the next only when it stops.** It is slower per cycle and far better per night. The officer lists are already split by block, so there is a natural queue: take the smallest remaining list each time.
+
+### 2026-09-04 14:00 — separate scheduled run, single pass
+
+Not part of the overnight fleet above; a separately scheduled photograph-agent
+run picking up cold. The four named priority portraits (Todd, Dawson, Johnson,
+Gilley) and every president/regent leader record were already covered — 61 of
+61 years carry a leader portrait, 61 of 61 carry a year photograph. Confirms
+what every run since 20 August has already found on that item.
+
+Swept the `1966-1970` through `2001-2005` officer worklists against the
+current `photos.json` rather than trusting their own "remaining" framing (a
+field-name mismatch had been inflating apparent gaps in the officers-list
+format used elsewhere in `photo-finds/`): all but two candidates in those
+blocks were already merged in by the fleet above. The two left: Carmen Ann
+Willoughby (1966-67 secretary, image already staged on disk, never attached —
+same fix line 9 above records as already done on 1 Sep and evidently lost in
+a merge since) and Jamil Sewell, whose portrait was attached to the wrong
+year (2000-01, his campaign year, instead of 2001-02, the year the archive's
+own organization record confirms him in office). Both fixed; `photos.json`
+now carries 1,047 leader portraits. `build.py` and `check_data.py` clean.
+
+PR #6 had been closed since 18 August with nothing reopened behind it;
+opened #347 as its replacement and pushed this branch there. Left open:
+several hundred executive/Senate officer records still without a portrait
+(none currently sitting ready in the worklists) and the 12 years without a
+year photograph named in `SGA-60-AGENT-INFO.md` §8.4.
