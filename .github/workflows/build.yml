@@ -47,9 +47,13 @@ jobs:
           python3 - <<'PY'
           import re, sys
           from pathlib import Path
+          # A page that builds its own links in JavaScript writes the href as a
+          # concatenation, so the literal text carries a quote and a plus that no
+          # real filename does. Excluding them keeps the checker on actual links.
+          href_re = re.compile(r'''href="([^"#:$'+]+\.html)[^"]*"''')
           bad = 0
           for f in Path('site').rglob('*.html'):
-              for href in re.findall(r'href="([^"#:$]+\.html)[^"]*"', f.read_text()):
+              for href in href_re.findall(f.read_text()):
                   if not (f.parent / href).resolve().exists():
                       print('broken:', f, '->', href); bad += 1
           sys.exit(1 if bad else 0)

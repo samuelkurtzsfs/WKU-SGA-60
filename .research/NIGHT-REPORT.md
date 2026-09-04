@@ -84,6 +84,33 @@ from September to a vote in October 2003; and the three bills of 1 September
 1991 are same-day legislative business, which the rules keep separate. Nothing
 was merged.
 
+## The build check has been failing on main since last night
+
+Worth recording separately, because it is the guard that stops a broken data
+file reaching the live site and it has not been working. `Build check` has
+failed on every push to main since `6f566bd9`, "Who knew whom: the people of
+SGA as a graph you can walk" — eight consecutive runs, 1214 through 1221. The
+last green run was 1213.
+
+The whole failure is one line: `broken: site/network.html -> o/'+N[j].s+'.html`.
+
+It is a false positive, and the link checker's own regex is the cause. The
+network page builds its links in the browser, so the href in the file is a
+JavaScript concatenation, `'<a href="o/'+N[j].s+'.html">'`. The pattern
+`href="([^"#:$]+\.html)"` reads straight through the quote and the plus and
+comes out with a filename no build would ever produce. The 1,817 pages under
+`site/o/` are all built and all present; they are gitignored, which is correct
+and not related.
+
+The checker now excludes the quote and the plus, which no real filename here
+carries. Tested three ways: nothing is reported against the current site, a
+page with two genuinely missing targets still reports both, and the JavaScript
+line is no longer matched. It still validates 53,049 links across the site, so
+the guard is doing its job rather than being switched off.
+
+This was not caused by anything in this pass. It reproduces on main at its tip
+and the fix is carried here because nothing merges green until it is in.
+
 ## Counts after this pass
 
 61 years, 1,980 events, 60 people recorded as president. 2,654 terms of office
