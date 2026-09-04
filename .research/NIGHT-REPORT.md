@@ -96,7 +96,26 @@ and the label says which frame it is so a later run can confirm it.
 still genuinely separate events; this pass adds no events.
 
 61 years, 1,980 events, 2,654 terms held by 1,818 people, 41 recorded under more
-than one name, 60 presidents. 1,054 leader portraits.
+than one name, 60 presidents. 1,058 leader portraits.
+
+## Four more, landed mid-pass
+
+`main` moved twice while this ran, adding twelve faces. Four are leader
+portraits, none on the register, all real JPEGs, and all four had the same thin
+label over the same solid reasoning — including two People Polls identified by
+measuring the column centres of the photo blocks against the name blocks at 150
+dpi, which is careful work that the page was not showing. Their labels now carry
+it, and carry the caveats the finder wrote down and the label had been dropping:
+
+- **Amy Duncan** and **Terry Woodall** are tied to their offices by name and
+  cohort alone. Woodall's portrait is certainly a WKU student of that name — the
+  advertisement labels it — but the advertisement is about Spirit Masters and no
+  Herald story in the digitised run ties a Terry Woodall to SGA. Both labels now
+  say so outright, so a reader weighs the claim knowing what holds it up.
+- **Troy Ransdell** needs no such caveat: the *Herald* of 9 March 2004 calls him
+  SGA chief justice two days before his column ran.
+- The *Herald* spells **Beasley** where the archive carries **Beasly**. Flagged,
+  not fixed.
 
 ## For the routines
 
