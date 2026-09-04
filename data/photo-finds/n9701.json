@@ -414,5 +414,37 @@
   "replaces": null,
   "width": 431,
   "height": 505
+ },
+ {
+  "year": "1997-98",
+  "name": "Bryan Raisor",
+  "file": "1997-98-bryan-raisor.jpg",
+  "quality": "small",
+  "why": "People Poll head shot, the only photograph of him in the digitised Herald; front-on, smiling and evenly lit.",
+  "caption_quote": "Bryan Raisor, Lexington freshman",
+  "id_basis": "A four-across People Poll; each quote and name block is centred under its own head shot. The four photo blocks centre on x=143, 306, 473 and 643 at 150 dpi and the four name blocks on x=143, 307, 474 and 645, so the third face carries the Raisor label.",
+  "src": {
+   "label": "College Heights Herald 72:31, 23 January 1997, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3034"
+  },
+  "width": 117,
+  "height": 174,
+  "replaces": null
+ },
+ {
+  "year": "1998-99",
+  "name": "Robert Lightning",
+  "file": "1998-99-robert-lightning.jpg",
+  "quality": "small",
+  "why": "People Poll head shot, front-on and evenly lit; the only photograph in the digitised run in which his face is visible.",
+  "caption_quote": "Robert Lightning, Hopkinsville junior",
+  "id_basis": "A five-across People Poll under the question about President Kennedy. Each quote and name block is centred under its own head shot: the five photo blocks centre on x=131, 264, 395, 526 and 657 at 150 dpi and the five name blocks on x=140, 271, 403, 533 and 657, a constant offset of about eight pixels, so the first face carries the Lightning label. He is a sophomore in the Herald of 21 August 1997 and a junior here, which matches the two years the archive seats him.",
+  "src": {
+   "label": "College Heights Herald 74:11, 1 October 1998, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9074"
+  },
+  "width": 116,
+  "height": 178,
+  "replaces": null
  }
 ]
