@@ -266,15 +266,25 @@ def main():
         if old:
             if old["file"] == rec["file"] and old["src"] == entry["src"]:
                 continue
-            # An editor working after the researcher writes the identifying
-            # reasoning into the citation: which row of the group photograph,
-            # how the count was done. The finding still holds the short label
-            # it was filed with, so re-merging the same finding would truncate
-            # all that back off. If the label on file already contains the
-            # finding's own, it has been enriched, and it stays.
-            if (old["file"] == rec["file"]
-                    and old["src"].get("url") == entry["src"]["url"]
-                    and label in old["src"].get("label", "")):
+            # Same file, same url: the same photograph is already on file,
+            # whatever its label says now. An editor working after the
+            # researcher writes the identifying reasoning into the citation
+            # -- which row of the group photograph, how the count was done --
+            # and a finding's own label is only ever the short form it was
+            # filed with, so comparing labels here can only ever detect that
+            # the prose changed, never that the photograph did. Earlier
+            # versions of this check tried to detect "already enriched" by
+            # testing whether the finding's label was still contained in the
+            # file's label, first as a literal substring and then on content
+            # words; a quality note the enriched label drops, an article the
+            # editor's prose adds, or just a different date format
+            # ("82:48, 24 April 2007" against "Vol. 82, No. 48, 2007-04-24")
+            # broke both, and every enriched entry in the archive got flagged
+            # to be replaced with its own, worse, un-enriched self. The file
+            # and url are the record of what photograph this is; the label is
+            # prose about it, and re-merging a finding never gets to overwrite
+            # prose for a photograph already on file.
+            if old["file"] == rec["file"] and old["src"].get("url") == entry["src"]["url"]:
                 continue
             improved.append((key, old["file"], rec["file"],
                              rec.get("why", "")))
