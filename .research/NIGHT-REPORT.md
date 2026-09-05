@@ -15479,3 +15479,101 @@ are clean; it is only those two comment bodies.
 Carried forward untouched: the closed `viewcontent.cgi` endpoint on
 digitalcommons, and with it the 1993-94 to 2009-10 gap in year photographs; and
 the 431 legislation files with no author recorded.
+
+# 5 September 2026 — editorial pass, third of the day
+
+One pull request open, #353, the rolling photograph hunt on `research-photos`,
+opened at 08:04. The three branches this pass was told to expect — #6, #7 and #8,
+stale since 4 August — are no longer open and needed nothing. Merged as
+4c740e2.
+
+## What #353 was
+
+Two files, and neither of them data: sixty lines of research log in
+`SGA-60-AGENT-INFO.md`, and one line of `site/network.html`. No event, person,
+photograph, source or document changed. That is worth stating plainly because it
+decides what reviewing it even means. There were no cited claims in the diff to
+open source URLs against, so the sample of eight the pass normally takes had
+nothing to sample. What the log does assert is a set of statements about the
+data, and those can be tested against the data outright, which is a stronger
+check than a sample:
+
+- Every president and regent carries a portrait. Holds. All 73 leader entries
+  across the 61 years match an entry in `data/photos.json`, with no misses. The
+  four names the run was asked to check — Nick Todd, Katie Dawson, Jeanne
+  Johnson, Reagan Gilley — are all in place.
+- Twelve years still have no general photograph. Holds exactly: the computed
+  list is the list in the report, 1993-94 through 1997-98, 2000-01, 2002-03,
+  2003-04, 2005-06, 2006-07, 2008-09, 2009-10.
+- Nothing was added. Holds by the diff itself, and every name the run looked at
+  and turned down is absent from the file.
+
+That last one is the substance of the run. It checked roughly twenty-five
+officers against the Herald's WP-JSON endpoints, found that the handful of hits
+all carried the same reused stock images with no caption naming anyone, and
+added none of them. A run that adds nothing and writes down why is worth more
+here than one that adds a face it cannot prove, and the note that the WP-JSON
+search matches article text rather than photo captions is the kind of finding
+that stops the next run repeating the sweep.
+
+Nothing cut. `build.py` clean, `check_data.py` and `check_contrib.py` both zero.
+`check_duplicates.py` reported six pairs, all of them already on main and none
+introduced by this diff. Read the closest, 1997-98 at 0.60: the designated
+driver cards are three separate events — the first reading of Bill 97-3-F on 4
+November, the Herald's report on 13 November, distribution announced on 17
+February — each with its own source, and each already careful to say what a
+contents listing does not establish. Left alone.
+
+## The network.html line, and a correction to my own comment
+
+`site/` is never hand-edited, so the second file had to be ruled on before
+anything else. Parsing the graph data out of both copies: 1,818 nodes either
+way, identical in name, office, term and ordering, differing only in their
+coordinates. Legitimate build output, not an edit.
+
+I then wrote in the merge comment that main's copy was stale against its own
+data. That was wrong, and the answer was already in this file — the 4 September
+entry above has it. The layout is seeded with `random.seed(60)` and is
+deterministic within one machine; 140 rounds of force relaxation amplify
+floating-point rounding until a container with a different CPU or libm lands the
+graph a few pixels away. Neither copy is stale and neither is more correct. I
+have posted the correction on the pull request rather than leaving the wrong
+reason standing where the next run would read it. The merge was still right; it
+just did not fix anything, and the next branch that builds will produce the same
+600 KB one-line diff. The fix is a change to the layout code and remains the
+owner's call.
+
+## Two things for the next photo run
+
+Neither blocked the merge. The log gives 131 executive and Senate officers
+without a portrait; counting distinct officers from 2010-11 onward against
+`data/photos.json` gives 100. The work is real either way, but the next run
+should settle which population the number describes before treating it as a
+target. And "61 years, 61 year photos" is true of photograph *entries*, which
+sit across 49 years — the same paragraph's own point about the twelve empty
+years. As written the two lines read as contradicting each other.
+
+## Cleared, so it is not re-opened
+
+`data/photos.json` holds three leader entries whose year is not a year that
+person served: Nick Todd at 2003-04, Jeanne Johnson at 2005-06, Reagan Gilley at
+2007-08. They look alarming and are not. The build matches on year and name
+together, so they attach to nothing. Checked on the built pages: no Todd on
+2003-04, no Gilley on 2007-08, Johnson only on 2007-08 where she did serve. Dead
+weight in the file, not a wrong face on the site, and pre-existing on main.
+
+## Counts after the merge
+
+61 years, 1,981 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) carrying an account of what the person
+did; 41 people recorded under more than one spelling. 297 documents, 1,111
+legislation files, 61 photograph entries across 49 years.
+
+## Still open
+
+Carried forward unchanged: the two review comments on #337 and #351 that still
+carry an attribution footer and still cannot be deleted from this container by
+either route; the closed `viewcontent.cgi` endpoint and with it the 1993-94 to
+2009-10 gap in year photographs; the 431 legislation files with no author
+recorded; and John Lyne against Larry Zielke for 1970-71, and David Payne for
+1982-83.
