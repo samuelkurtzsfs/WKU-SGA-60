@@ -15577,3 +15577,144 @@ either route; the closed `viewcontent.cgi` endpoint and with it the 1993-94 to
 2009-10 gap in year photographs; the 431 legislation files with no author
 recorded; and John Lyne against Larry Zielke for 1970-71, and David Payne for
 1982-83.
+
+# 5 September 2026 — editorial pass, fourth of the day
+
+Began with nothing open. The photograph branch merged at 09:23 and its night log
+at 09:25, and the three branches this pass is still told to expect — #6, #7 and
+#8, stale since 4 August — have been closed for a month; the numbering is past
+#354. So the pass started on `main` itself, and `main` moved underneath it: at
+12:22 the twelve officer portraits of `63012df3` arrived, pushed straight to
+`main` rather than through a pull request. That is the review that matters here,
+because a direct push deploys without anyone standing in front of it.
+
+## The twelve faces, checked one at a time
+
+`63012df3` adds twelve officer portraits for 1966-79 with no event, person or
+source text changed. All twelve stand up, and none was cut.
+
+Each name was matched against the office records for its own year rather than
+taken on trust, and all twelve attach to a real officer: Dale Weaver as
+Sophomore Class President in 1966-67, Bob Fox as Interfraternity Council
+representative and Frank Genzianelli as Sophomore Class President in 1967-68,
+Paul Gaines as Sophomore Class Vice-President, Randi Jensen for the women's
+residence halls, Sandra Tonjes in the body; then Jeanette Bohannon, Kathy
+Bradshaw, Lowry Stagg, Steve Hunter and Steve Robinson across 1969-70, and Buzz
+Smith in 1978-79. In four cases the yearbook caption names the same office the
+record does — Bohannon's "Secretary, Senior Class", Bradshaw's Senior Class
+Treasurer, Robinson's Senior Class Vice President — so the identification does
+not rest on the name alone, which is the whole point.
+
+Then the faces themselves, all twelve opened rather than sampled. Every one is a
+single subject, and every one matches the sex its counting argument predicts:
+Bohannon the dark-haired woman the row description gives, Robinson the man in a
+suit, Fox, Genzianelli, Gaines and Hunter men, Jensen and Bradshaw women. The
+two group crops are the ones worth naming, because a crop is where a face slides
+onto the wrong name. Weaver is cropped from the Mr. and Miss Sophomore frame and
+is the man in glasses holding up a WESTERN KENTUCKY sweatshirt, exactly the
+figure the caption's one-man-one-woman pairing fixes. Stagg is cropped from a
+Campus Favorites frame and is the woman against the brick wall, and the run
+established she is a woman from a Chi Omega membership list before cropping
+rather than assuming it from the caption order. Both crops hold exactly one
+person, so neither pairing can slide.
+
+The identification most at risk of the do-not-merge-people rule is Gaines, which
+turns on Skip and Paul being one man. It holds, and it holds for the right
+reason: the argument is closed inside a single chapter page, whose officers
+caption reads "Skip Gaines, Vice President" while its member grid carries
+exactly one Gaines, a Paul. That is a closed set, not a match on a surname
+across the archive.
+
+Buzz Smith is the weakest of the twelve and is filed honestly as such. It is a
+costume photograph from a fraternity skit and the cap brim throws his eyes into
+shadow. The identification is still sound — the caption distinguishes the two
+men by action, and he is the one in the XΩ cap standing in the witness box,
+which the image confirms — but it is graded "soft" in the finds file and the
+label says it is the only picture found. Kept, with that noted.
+
+Files: all twelve are complete JPEGs, correct from first bytes to last, and the
+twelve copies under `site/photos/` are byte-identical to the originals.
+
+## What is not published, and why that matters here
+
+The finds file carries long caption quotes, several well past the fifteen-word
+limit. That limit governs what the site reuses, and none of this reaches the
+site: `data/photo-finds/` is not read by `build.py` at any point, and no caption
+quote appears anywhere in the built output. It is working evidence, and cutting
+it would make the identifications unverifiable by the next pass, which is the
+opposite of what the rule is for. Left as it is.
+
+## Checks
+
+`build.py` clean. `check_data.py` zero, `check_contrib.py` zero, all sixteen
+contributor guards holding, including the two that matter most: the drop box
+cannot reach `main`, and the commit it writes carries no tool attribution.
+
+`check_duplicates.py` reported six pairs, none introduced by the twelve
+portraits and all pre-existing. Judged independently rather than carried forward
+from this morning, and the answer is the same: every one is separate business.
+The two 1991-92 pairs at 0.33 are three different bills introduced the same day,
+91-09-F, 91-03-F and 91-11-F, which is exactly the case the rule says stays
+separate. The 1991-92 pair at 0.56 is a bill introduced on 28 January and
+defeated on 6 February. The 1971-72 pair is a lawsuit reported as planned in
+February and endorsed a month later. The 2003-04 pair is a debate in September
+and a unanimous vote in October. The 1997-98 pair at 0.60 is the designated
+driver cards, and the entry above is right that there are three of them: the
+first reading on 4 November, Charlie Lanter's report on 13 November, and
+distribution announced on 17 February. Left alone, all six.
+
+## The network.html churn, seen from both sides
+
+Worth recording because three passes have now rediscovered it. Rebuilding
+against the previous `main` left the working tree completely empty — not one
+byte of 297 documents, 1,111 legislation files, 61 year pages and a 1,185 KB
+search index differed from what was published, `network.html` included.
+Rebuilding against the new `main` moves `network.html` and nothing else. That is
+the drift diagnosed on 4 September behaving exactly as diagnosed: the layout is
+deterministic on one machine and moves between machines, so it stays silent
+until a different container builds it, and `63012df3` was built elsewhere.
+Checked rather than assumed — the file's non-numeric skeleton is identical
+byte for byte and only coordinates differ, 3,542 of 17,498 numbers. Neither copy
+is stale and neither is more correct. Not committed, because committing it would
+add 600 KB of churn and change nothing a reader sees.
+
+## Nothing is stranded on a branch
+
+Sixteen `research-*` branches sit on origin. `research-photos` is the live one
+and is fully merged, nought ahead. The other fifteen — the decade branches, the
+roster, senate and profile branches, the 0823 to 0901 editor branches — every
+one returns no merge base against `main`. They are the superseded snapshots
+AGENT-LANDING.md describes, and the diffs say so plainly: merging the smallest
+would delete 30,000 lines and the largest 595,000. They are not work waiting to
+land, and nothing is lost by leaving them.
+
+## Checked and not raised
+
+The 1972 Benjamin Mays lecture is filed `kind: speaker` with no `campus` flag,
+which reads at first like a context event that missed its tag. It is not:
+`speaker` is one of the build's own programming categories, rendered as
+Lectures and used 49 times, marking SGA's own programme rather than the world
+around it. The entry is also a model of the advance-notice rule, having a
+"Speaks Tonight" headline and a yearbook whose caption and running text disagree
+about whether he actually spoke, and saying so instead of resolving it.
+
+## Counts
+
+61 years, 1,981 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) carrying an account of what the person
+did; 41 people recorded under more than one spelling. 297 documents, 1,111
+legislation files. Year photographs are unchanged at 61 across 49 years, the
+twelve new faces being portraits rather than year photographs: those go from
+1,146 to 1,158. The two are worth keeping apart in the count, because the
+entry above notes that "61 years, 61 year photos" has already been read as
+saying more than it does.
+
+## Still open
+
+Carried forward unchanged: the two review comments on #337 and #351 that still
+carry an attribution footer and cannot be deleted from this container; the
+closed `viewcontent.cgi` endpoint and with it the 1993-94 to 2009-10 gap in year
+photographs; the 431 legislation files with no author recorded; the question of
+which population the photograph routine's "131 officers without a portrait"
+describes; and John Lyne against Larry Zielke for 1970-71, and David Payne for
+1982-83.
