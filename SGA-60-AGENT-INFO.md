@@ -4117,6 +4117,66 @@ recent research runs had already landed independently) to keep the branch
 current; no conflicts. Landed as a documentation-only commit on
 `research-photos`.
 
+**A 5 September run (photo-research trigger).** Checked the four named
+priorities first, as every run since 21 August has: Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json`, and a fresh cross-check of every `leaders` entry in
+`data/years.json` against `data/photos.json` found zero presidents or
+student regents anywhere in the record without a portrait — that backlog
+item is completely closed, not just for the four named people. Merged
+`origin/main` into `research-photos` (a plain fast-forward-then-merge, real
+merge base, no conflicts) to pick up 17 further commits of independently
+landed portrait work.
+
+Spent the rest of the run on the two items still open. **The 12 years with
+no year-level photograph** (1993-94 through 1997-98, 2000-01, 2002-03,
+2003-04, 2005-06, 2006-07, 2008-09, 2009-10) are still blocked exactly the
+way §8.4 describes: `viewcontent.cgi` returned HTTP 403 (a Cloudflare/WAF
+challenge page, not the AWS WAF 202 some earlier entries describe) on three
+attempts spaced 90 seconds apart against three different leads — article
+7740 (2008-09), article 1619 (the WKU Archives SGA-photographs finding aid,
+still never actually opened), and a plain retry — tested both with `curl`
+and with the session's `WebFetch` tool, which failed identically. Checked
+whether archive.org's Talisman holdings had grown to cover any of the
+gap years since this was last surveyed: an `advancedsearch.php` query for
+every `talisman*west` identifier currently on archive.org returned the same
+set documented before (1963-65, 1971-81, 1986-87, 1943, 1946-47) — nothing
+in the 1990s or 2000s exists there under any naming variant, so this route
+is confirmed closed rather than just untried.
+
+**Executive/Senate officers without a portrait** (131 names from 2010-11
+onward, the open end of priority 3) got a first real look this run — no
+prior entry in this file records having swept this list. Checked roughly 25
+names against `wkuherald.com`'s WP-JSON media and posts endpoints
+(`/wp-json/wp/v2/media?search=`, and `/wp-json/wp/v2/posts?search=&_embed=1`
+for the featured image). Most returned nothing at all (Caroline Simpson,
+Sawyer Coffey, David Spalding, Kara Raley, Jillian Kenney, Hope Wells,
+Alexis Mayne among them). The ones that did return a hit were a trap worth
+recording so a future run doesn't repeat it: Erika Puhakka, Josh Zaczek,
+Jason Herlick, Turner Reynolds and Brenna Mathews all matched SGA news
+articles from 2019-2021, but every one of those articles carries the same
+handful of generic stock/logo images as its "featured image"
+(`148fbba2660a7e4d0599e56cb93c6b48-*.png`, `a381fe6c9b738bb459d2c3ac4253eaba.jpg`)
+— reused across dozens of unrelated SGA stories with no caption naming
+anyone, confirmed by fetching one article's raw HTML directly and reading
+every `<img>` tag on the page. None is a portrait of the person the search
+matched on; the WP-JSON search endpoint matches full article text, not
+photo captions, so a hit there is not evidence of a photo at all. Cody Cox,
+Nathan Cherry and Chris Jankowski returned real photographs of people with
+those exact names, but each was a `wkuherald.com` feature story unconnected
+to student government (a 2014 coming-out profile, a 2023 Kona Ice vendor
+photo, a 2010 residence-hall photo of an RA) — plausibly the same person as
+the SGA officer in Jankowski's case given the timeline, but with no SGA
+context in the photo or caption, so none was added. **wkuherald.com's own
+site search (not the WP-JSON API) and a dedicated crop from an SGA meeting
+photo remain untried for this list of 131** and are the next thing to try,
+not a repeat of the WP-JSON sweep just done.
+
+Nothing added to `data/photos/` or `data/photos.json` this run. `build.py`
+and `check_data.py` pass clean against the merged tree (61 years, 61 year
+photos, all president/regent portraits present). Landed as a
+documentation-only commit on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
