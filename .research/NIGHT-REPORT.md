@@ -15912,3 +15912,125 @@ photographs, now known to be closed on the wkuherald.com side as well and for a
 sharper reason than the entry first gave; the 431 legislation files with no
 author recorded; and John Lyne against Larry Zielke for 1970-71, and David Payne
 for 1982-83.
+
+# 5 September 2026 — editorial pass, sixth of the day
+
+## What was on the desk
+
+One open pull request, #359, "Research: photographs (rolling)" on
+`research-photos`, opened at 20:08 and reopened against current main because #6
+was closed against a pre-rewrite root. Nothing else was open. The brief's three
+stale pull requests from 4 August — #6, #7 and #8 — are still resolved; #6 was
+closed on 18 August and the list of open pull requests is now empty.
+
+## What the diff was
+
+Six files: two portraits into `data/photos/`, their two entries in
+`photos.json`, the two copies under `site/photos/`, and the usual regenerated
+line in `site/network.html`. No events, no leaders, no sources, no
+`years.json`. Two new claims, so both were checked rather than sampled, and
+both were checked against the page images on archive.org rather than the OCR
+text — which is the only way this pass caught what it caught.
+
+## One of the two was wrong, and it was a face
+
+`1975-76-david-payne.jpg` came from the right page — p. 382 of the 1976
+Talisman, the junior portraits, leaf n385 — and from the wrong frame. That row
+sets nine names against nine photographs: Page, Papciak, Parrish, Parrott,
+Pasley, Patterson, Payne, Payne, Paynter. Two of them are Paynes. The seventh
+frame is David C. Payne of Owensboro, the ASG treasurer. The eighth is William
+H. Payne of Shelbyville, and the eighth is what had been cut and committed — a
+young man in a headband and a basketball singlet.
+
+The tell needed no archive at all. The two portraits added in the same commit,
+one year apart, are plainly two different men: a Black student in athletic kit
+in 1976 and a white student in a plaid jacket and aviator glasses in 1977. Any
+run that adds two portraits of one person should look at them side by side
+before it pushes.
+
+The frame has been re-cut to the seventh cell and the file replaced. The source
+label read p. 383; the page prints 382, and the label now says so.
+
+## The other one holds
+
+`1976-77-david-payne.jpg` is p. 365 of the 1977 Talisman, third frame of a top
+row of five against Patton, Patton, PAYNE, Payne, Pearl. It came within one
+frame of the same failure: the first man in that row, Jerry T. Patton, also
+wears glasses and a plaid jacket. The count holds, and the face matches the
+corrected 1976 frame.
+
+## Why these are the treasurer and not merely a name
+
+The captions prove a name, nothing more. Each yearbook's own back index ties
+one person to both the ASG section and the class portraits: the 1976 volume
+gives `Payne, David Charles 63, 283, 382`, where p. 63 names him treasurer and
+quotes him calling the job simple record keeping; the 1977 volume gives
+`Payne, David Charles 50, 277, 307, 346, 365`, where p. 50 records him
+beginning a second term. Two indexes, two portrait pages, and one face common
+to both frames.
+
+Nothing here touches the question of whether this treasurer is the David Payne
+who succeeded Marcel Bush in January 1982. The archive's note refusing that
+merge is intact and neither portrait was filed forward.
+
+## Merged
+
+Yes, after the correction. `build.py` clean, `check_data.py` and
+`check_contrib.py` exit 0, `check_duplicates.py` six pairs — all pre-existing on
+main and all genuinely distinct: a bill introduced and the same bill failing are
+two events, and three bills on 1 September 1991 are three. Merged as a merge
+commit, and main rebuilds with no drift between the data and the committed site.
+
+The merge decision was close enough to be worth recording. The rule is that
+every claim in the sample must hold, and one of two did not. What tipped it was
+that the sample was not a sample: with only two claims in the diff both were
+checked, both against the page images, so nothing was left unexamined behind a
+proxy. The corrected head contains two portraits verified three ways each, and
+holding them back would have withheld correct work without a defect to point at.
+
+## Two things for the next photo run
+
+`1976-77-david-payne.jpg` is referenced nowhere in the built site. A person
+carries one portrait and the earlier year wins, so a second portrait of the same
+officer for a second term is right to hold but invisible. Worth knowing before
+another run is spent on second-term faces.
+
+Counting names against a photo grid is arithmetic, not identification, and it
+fails silently. Where a run has to use it, the report should name the cell taken
+and what stands either side of it, and should prefer a row whose surname is
+unique. A row with two Paynes in it is the one row not to trust.
+
+## The person page merges people of one name, and the build does it
+
+Not this pull request's doing, and the larger finding of the pass.
+`site/o/david-payne.html` presents a single David Payne, "1974-75 to 1981-82,
+representative-at-large, Treasurer, President", under one face — while
+`years.json` says in terms that the 1970s treasurer and the 1981-82 president
+are not established as the same man. The data is right and year-scoped; the
+build conflates them. `RIVALS` separates only people whose names are spelled
+differently, the Rob against Robert case; two people with an identical name have
+no mechanism at all and collapse to one person page and one portrait. This was
+already true on main, where the president's Herald portrait headed the same
+merged page, so the merge did not create it and swapping which face heads it
+does not make it worse. It is the archive's own rule against merging people by
+name being broken by the renderer rather than by the record, and it wants a fix
+in `build.py`, not in the data.
+
+## Counts
+
+61 years, 1,982 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) carrying an account of what the person
+did; 41 people recorded under more than one spelling. 297 documents, 1,111
+legislation files. The event count is one above the fifth pass because of
+Caboni's restoration to 2016-17 on main, not because of this merge, which added
+no history.
+
+## Still open
+
+Carried forward: the attribution footer, which struck again — the review comment
+on #359 carries one this container did not write and cannot remove, the same
+condition already recorded against #337, #351 and #356; the closed
+`viewcontent.cgi` endpoint and the 1993-94 to 2009-10 gap in year photographs;
+the 431 legislation files with no author recorded; John Lyne against Larry
+Zielke for 1970-71, and David Payne for 1982-83. New: the person page merging
+everyone of one name, described above.
