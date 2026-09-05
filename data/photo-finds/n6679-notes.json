@@ -1,0 +1,34 @@
+[
+ {
+  "topic": "WHAT THIS BLOCK IS, AND WHAT THE 44 EXISTING FINDS ARE NOT",
+  "note": "n6679.json arrived at this run with 44 entries and no notes file. Cross-checked every one of them against _worklist-n6679.json and _officers-n6679.json on 5 September 2026: NOT ONE of the 44 is on either list. The worklist and officers files are timestamped 4 Sep 18:12 and n6679.json 4 Sep 06:25, so the block was re-scoped after the earlier passes ran; the 44 are real, sourced finds against an older scope and must not be discarded, but they are not this block's assignment. As of the start of this run the officers list stood at 19 found 0. Anyone picking this block up should filter against _officers-n6679.json first, as the brief says, and not read the 44 as progress on it."
+ },
+ {
+  "topic": "THE 1966-1970 TALISMANS ARE THE MISSING PORTRAIT BOOKS FOR THIS BLOCK, AND THEY ARE NOT ON archive.org",
+  "note": "archive.org holds 1943, 1946, 1947, 1963, 1964, 1965, then jumps to 1971-1981, 1986, 1987. There is NO 1966, 1967, 1968, 1969 or 1970 volume there, checked against the advancedsearch API. Twelve of this block's nineteen officers first served between 1966-67 and 1969-70, so their own class portraits are in exactly the five volumes archive.org does not have. That gap is why every earlier pass on this block fell back on the 1971 volume and on people outside the worklist. The five volumes DO exist on disk, pulled from TopSCHOLAR by an earlier run, at ~/Desktop/SGA60 photo hunt/1966-1970/ as eight PDFs: tal1966, tal1967-pt1, tal1967-pt2, tal1968, tal1969-pt1, tal1969-pt2, tal1970-pt1, tal1970-pt2, 990 pages in all.",
+  "src": {
+   "label": "TopSCHOLAR, WKU Archives Records UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/381"
+  }
+ },
+ {
+  "topic": "TOPSCHOLAR RECORD NUMBERS FOR THE 1966-1970 TALISMANS",
+  "note": "Read off each PDF's own recommended-citation cover sheet, so these are exact and need no search. 1966 = dlsc_ua_records/381. 1967 pt.1 = /382. 1967 pt.2 = /383. 1968 = /384. 1969 pt.1 = /385. 1969 pt.2 = /386. 1970 pt.1 = /387. 1970 pt.2 = /388. TopSCHOLAR's own search endpoint returns HTTP 500 to a script, so do not try to find these by searching; the collection landing page at /dlsc_ua_records does serve to plain curl."
+ },
+ {
+  "topic": "THE EMBEDDED TEXT LAYER IN THE 1966-1970 TALISMANS IS WORTHLESS - AND THAT IS WHY NOBODY HAS WORKED THEM",
+  "note": "All eight PDFs carry a text layer and it looks usable from a character count: 233,316 characters in the 1966 volume alone. It is unreadable rubbish. A real line comes out as 'Cill. ,;.,~\", .. \" P .... I,;,., \" Am H,\",\",\",,,,o. p\",,;ri<n'_'. Searching it for a surname returns nothing: 'Spinnogatti' has zero hits in all eight volumes against the embedded layer. Any agent that greps these PDFs and concludes the people are not in them will be wrong. Re-OCR is not optional here, it is the only way in."
+ },
+ {
+  "topic": "NEW ASSET: THE 1966-1970 TALISMANS ARE NOW OCR'd, 990 PAGES",
+  "note": "Built 5 September 2026 and kept at ~/Desktop/SGA60 photo hunt/_talisman-ocr-1966-1970/, one JSON per volume, about 2.8 MB. Every page of all eight PDFs, rendered at twice the scan's native pixel width and read with ocrmac (Apple Vision), stored as [{page, w, h, runs:[[text, confidence, [x,y,w,h] normalised]]}]. Quality is the difference between nothing and everything: the page that gives 'Cill. ,;.,~\"' in the embedded layer gives 'Advisor: John Estill, Vice President; Karen Edmonds, President' from Vision. It runs at about one second a page, so the whole set rebuilds in twenty minutes on four workers. The bounding boxes are stored, so a name run can be turned straight into a crop rectangle. GREP THIS BEFORE RENDERING ANYTHING for 1966-1970."
+ },
+ {
+  "topic": "SCAN CEILING FOR 1966-1970: ONE SPREAD PER PAGE AT 1728 PIXELS",
+  "note": "Every page of all eight PDFs is a single landscape image of a two-page spread, 1728 by 1152 pixels on a 1296 by 864 point page. That is 96 dpi, and it works out at about 864 by 1152 pixels for each printed page. It is the same ceiling recorded for the TopSCHOLAR Talismans of 1982-1991. A full-page studio portrait still cuts at around 480 by 630, which is good; a face in a class grid cuts at around 100 by 130, which is small but real; a face in a large group photograph is not worth cutting. Render with matrix zoom = native_image_width / page_width, then multiply by two for OCR only. Do not render at a fixed zoom."
+ },
+ {
+  "topic": "THE 1966-1970 VOLUMES CAPTION BY ROW, WHICH IS BETTER THAN THE 1970s ALPHABETICAL BLOCKS",
+  "note": "From 1971 on, the Talisman class sections run alphabetical name blocks against a photograph grid and every identification is a counting argument. The 1966-1970 volumes do not. Their group photographs are captioned 'First Row: ... Second Row: ...' with the names enumerated in order, and their Who's Who and honours sections print a biographical block per person with that person's own portrait adjacent in the same column. Both are far more provable than a grid. Class section locations, by PDF page: tal1967-pt2 seniors 26-38, juniors 39-46, sophomores 47-57, freshmen 58-72. tal1968 seniors 126-139, juniors 140-150, sophomores 151-161, freshmen 162-178. tal1966 seniors 108-125. The 1969 and 1970 volumes hide their section headings from the embedded layer and have to be found through the new OCR index."
+ }
+]
