@@ -1,3 +1,88 @@
+# 5 September 2026, night — an empty queue, and eight stale branches finally measured
+
+No pull request was open. Nothing was waiting to reach the live site, and
+nothing was merged from a routine this run. The whole of the night went on the
+question the last several reports have deferred: what, if anything, is still
+sitting on the research branches from 4 August that nobody has landed.
+
+The answer is: one event, and it has now been landed. Everything else on those
+branches is already on `main`, and in most cases `main` has it filed under a
+different academic year — the right one.
+
+## The measurement, and the mistake that nearly made it useless
+
+The clone this run started from was **shallow**. `git merge-base` against every
+research branch returned empty, which reads exactly like the orphan-history
+warning in section 8.0 of the handoff, and it is what an earlier run appears to
+have recorded as fact. It is an artifact. After `git fetch --unshallow`, all
+eight branches have an ordinary merge base with `main`: the five from 4 August
+share `89e834f0` of that date, and the three roster branches of 31 August sit on
+`558ff1bd`. The orphan claim in 8.0 should not be trusted as written; the test
+in it is right, but it must be run on a full clone or it lies.
+
+The second trap was subtler. Comparing each branch's events to `main` keyed on
+the year they are filed under produced twenty-three events that `main` appeared
+to have nothing for. Every one of them was a false alarm, and all in the same
+direction: the branch had the event filed a year late, and `main` had since
+corrected it. Four examples, all confirmed by hand:
+
+- Doug Alexander's vice-presidential win, 27 March 1970. Branch: 1970-71.
+  `main`: 1969-70, which is where a March 1970 result belongs.
+- Norfleet's regent term nearing its end, 15 April 1982. Branch: 1982-83.
+  `main`: 1981-82. Merging that branch would file her forward again, which
+  CLAUDE.md forbids by name.
+- Keith Coffman taking charge, 24 April 1997. Branch: 1997-98. `main`: 1996-97.
+- The Regents honouring McKinney, 8 August 1986. Branch: 1985-86. `main`: 1986-87.
+
+The four 2026 items the comparison flagged as missing — the ODK award, Lucas on
+the proposed tuition increase, the Regents raising tuition over the student
+regent's lone no vote, and Rash becoming interim adviser — are all on `main`,
+under 2025-26. May, June and July 2026 fall in the 2025-26 academic year. The
+branch had put them in 2026-27.
+
+## The one thing worth rescuing
+
+Of everything on those eight branches, one claim was real, absent from `main`,
+and admissible: the Board of Regents naming Timothy Caboni the tenth president
+of the university, January 2017. `main` records Caboni from May 2018 onward and
+has never recorded his arrival.
+
+The branch cited WBKO, which is not one of this archive's sources. The Herald
+carried it: the local unfiltered index has "Board of Regents Name WKU's 10th
+President" in the issue of 31 January 2017, and the landing page for
+`dlsc_ua_records/9724` was opened and read to confirm it — volume 92, number 29,
+publication date 1-31-2017, the line present in the abstract along with "Board
+Approves President, Coach Contract". The entry has been written from that issue
+and cites it, not WBKO.
+
+It was drafted with a closing sentence putting Caboni in succession to Ransdell
+in his twentieth and final year. That sentence was cut before the commit: the
+cited issue does not carry it, and an editor who will not hold their own
+addition to the sourcing rule has no business enforcing it on a routine. What
+stands is what the 31 January issue proves. It is tagged `campus`, correctly —
+the Board acted, SGA did not.
+
+## What the eight branches should now become
+
+They should be closed. Their content is on `main` in better words, with better
+sources and, repeatedly, in the correct academic year. A merge of any of them
+would not add history; it would refile events into years the record has already
+corrected, Norfleet's among them. Nothing further is owed to them, and leaving
+them open costs every future run the same night's work to reach the same answer.
+
+## The state of the archive tonight
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0.
+
+  61 years, 1982 events, 60 people have been president
+  2654 recorded terms of office, held by 1818 people
+  2615 of those terms (98%) carry an account of what the person did
+  41 people are recorded under more than one spelling or name
+
+`check_duplicates.py` reports six pairs, unchanged by this run and all judged
+genuine: an introduction and its later failure, a plan and its endorsement, a
+proposal and its passage, and three separate bills of 1 September 1991.
+
 # 4 September 2026, night — twenty-nine citations put back on the wall
 
 One pull request open, #349, the rolling photograph one. It carried no new
