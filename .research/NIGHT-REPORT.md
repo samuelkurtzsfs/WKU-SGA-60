@@ -15718,3 +15718,110 @@ photographs; the 431 legislation files with no author recorded; the question of
 which population the photograph routine's "131 officers without a portrait"
 describes; and John Lyne against Larry Zielke for 1970-71, and David Payne for
 1982-83.
+
+# 5 September 2026 — editorial pass, fifth of the day
+
+## What was on the desk
+
+One open pull request, #356, "Research: photographs (rolling)" on
+`research-photos`. The three pull requests this routine's brief still names as
+stale since 4 August — #6, #7 and #8 — are long since resolved; the numbering
+has run past #350 and #356's own body records #347 as merged. Nothing else was
+open.
+
+## What the diff actually was
+
+Two files, 62 lines added and one removed, and no history in it at all: an entry
+appended to `data/photo-finds/_overnight-log.md`, and `site/network.html`. The
+run added no event, no portrait, no leader and no source. `years.json` and
+`photos.json` were untouched. The single changed line in `site/network.html` is
+the generated node blob, and the only difference in it is the x/z coordinates
+the force layout assigns — the same data laid out from a different seed. It is
+a build artifact, not a change, and it was regenerated here anyway.
+
+That left the run's own report as the thing to check, so it was checked as a
+claim rather than read as a note.
+
+## Verified
+
+Ten claims, eight of them against the repository and two against the live
+sources.
+
+The nineteen orphaned files are real and are exactly the nineteen named: 1,114
+files in `data/photos/`, 1,095 referenced from `photos.json`. All three
+explanations hold. The twelve called superseded duplicates each already carry a
+portrait under a different filename, seven of them the `-spirit` studio print.
+The five held back are each flagged `FACE PROVED, PERSON NOT PROVED — FOR THE
+EDITOR` in `n9396.json` and each also sit in `_do-not-use.json`. Horrall and
+Bowden are both in the refusal register as described.
+
+Carlene and Darlene Lodmell survive the pass intact, which is the check worth
+naming because the twelve-duplicate list contains one of them. They remain two
+people with two portraits from two different pages of the same scrapbook,
+Darlene from p. 9 and Carlene from p. 10, and the orphan is Carlene's own
+superseded crop, not Darlene's face drifting onto her sister.
+
+Every leader record carries a portrait, and the twelve years without a year
+photograph are precisely the twelve the entry lists. `viewcontent.cgi` still
+answers HTTP 403 while ordinary landing pages answer normally, so the endpoint
+is closed rather than the host being unreachable.
+
+## Cut
+
+Two overclaims, both trimmed to what the evidence supports rather than deleted.
+
+The entry said wkuherald.com's WordPress archive returns **zero posts of any
+kind** between September 2005 and September 2010. It does not: the window holds
+sixteen, the earliest 4 September 2009. The conclusion drawn from it survives,
+because every one of the sixteen carries `featured_media: 0` and so cannot
+supply a year photograph — but "near-empty" and "empty" are not the same claim,
+and the second one was written. Rewritten to the count, with the correction
+visible rather than quietly swapped.
+
+The entry also said "all 61 leader records". There are 73 leader records across
+61 years. The substance — every one of them has a portrait — is right, and the
+number was the year count wearing the wrong label. Corrected in place.
+
+One thing noticed while checking and left alone: one of the sixteen posts is
+"Three SGA senators resign" of 22 October 2009, and the archive already carries
+it from the Herald back file at 2009-10-20.
+
+## Not cut
+
+The two photograph leads the run rejected both trace to real stories — the
+election-night report of 21 April 2016 and the SGA debate frame of 24 September
+2020, which is on the site under its own filename. The entry dates the first to
+20 April, a day early. Nothing was published from either, so the slip costs
+nothing, and the refusals themselves are sound.
+
+The six pairs `check_duplicates.py` prints all predate this branch and all are
+genuinely separate events. The one worth reading was the 1997-98 designated
+driver pair: a bill allocating $900 in November 1997 and the Herald's notice in
+February 1998 that the cards were about to go out. Two events, two sources. The
+February entry is also a model of the advance-notice rule, saying plainly that
+the archive holds only a contents listing and claiming nothing about the
+distribution itself.
+
+## Merged
+
+Yes. `build.py`, `check_data.py` and `check_contrib.py` all clean after the
+corrections; the merge of `origin/main` conflicted only in the log file, where
+both sides were additive entries and both were kept in date order.
+
+## Counts
+
+61 years, 1,981 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) carrying an account of what the person
+did; 41 people recorded under more than one spelling. 297 documents, 1,111
+legislation files. Unchanged from the fourth pass, as a diff that touched no
+history should leave them.
+
+## Still open
+
+Carried forward: the two review comments on #337 and #351 that still carry an
+attribution footer and cannot be deleted from this container; the closed
+`viewcontent.cgi` endpoint and with it the 1993-94 to 2009-10 gap in year
+photographs, now known to be closed on the wkuherald.com side as well and for a
+sharper reason than the entry first gave; the 431 legislation files with no
+author recorded; and John Lyne against Larry Zielke for 1970-71, and David Payne
+for 1982-83.
