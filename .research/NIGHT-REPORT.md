@@ -15371,3 +15371,111 @@ here was reporting a negative it had not established. When a name is checked and
 what comes back simply is not a photograph, the thing to record is what came
 back. "No hits" and "hits, none of them a face" send the next run in opposite
 directions.
+
+---
+
+# 5 September 2026 — editorial pass, second of the day
+
+Nothing to review. The queue is empty: no pull request is open, #351 was merged
+at 03:25 this morning and logged in the entry above, and no research branch has
+moved since. The three stale August branches named in the standing brief — #6,
+#7 and #8 — have been closed for a month; the numbering is now in the 350s, so
+that instruction has outlived the pull requests it names.
+
+An empty queue is not an idle pass. Main was checked where it stands, the newest
+thing published on it was verified against its source, and two questions the last
+pass carried forward were worked. One of them is now closed.
+
+## Main, where it stands
+
+`build.py` clean, `check_data.py` and `check_contrib.py` exit 0. 61 academic
+years, 1,981 events, 60 people have been president, 2,654 recorded terms of
+office held by 1,818 people, 2,615 of those terms (98%) carrying an account of
+what the person did, 41 people recorded under more than one name.
+
+`check_duplicates.py` reports the same six pairs as yesterday and they are the
+same six judgements: three same-day 1991 bills, which the rule expressly allows,
+and three approve-then-act pairs weeks or months apart. Nothing to merge.
+
+## The newest thing on the site, checked
+
+The 1978-79 constitution event written at the end of yesterday's pass is the most
+recent claim on the live site, and it was written in a hurry, so it was read back
+against the source rather than taken on trust. The 1979 *Talisman* full text
+carries all of it: the constitution approved by the student body at the April
+general elections, 24 separate races for the 24 representative-at-large seats,
+David Young named as administrative vice president on the reasoning, and the
+activities vice president's duties changed to line up with the new center board.
+Every clause holds.
+
+The page citation holds too, and it is worth recording how, because yesterday's
+pass corrected this number once already and a third opinion would otherwise cost
+another run. The passage sits on page object 290 of the item's `djvu.xml`, which
+is what archive.org's `n290` addresses, so the URL is right. That object carries
+scan file `_0291.djvu`, and `scandata.xml` gives leaf 291 the printed folio 289.
+Printed p. 289 at leaf n290, exactly as cited. The folio running one behind the
+leaf through this volume is now confirmed from the volume's own scan metadata
+rather than inferred from a second citation.
+
+## Derryberry — closed
+
+The "Will Derryberry" / "William Derryberry" split has been carried forward
+unresolved for several passes. It is resolved, and it can stop being carried.
+
+SGA's own 2025-26 legislation names the author **William Derryberry** on four
+items. The *Herald* names him **Will Derryberry** throughout, in the story and in
+the photograph caption. The question was whether joining them is an assertion the
+sources support, because `name-aliases.json` says in its own note that a short
+form is only added when the surname matches a recorded person *and* the years
+overlap — and the 2025-26 record is itself built through the alias, so the
+overlap it shows is circular and proves nothing on its own.
+
+The *Herald* breaks the circle. Its election story of 15 April 2026 describes him
+as a sophomore senator at the time of the election, which places a Will
+Derryberry in the Senate during the 2025-26 session independently of the
+legislation. Same surname, same body, same session, formal name on SGA's own
+documents and the familiar form in the paper. The identification is sound and the
+alias is correctly filed; the site follows the *Herald*'s form and maps the
+legislation's, which is the right way round.
+
+Checked against the article itself this pass, not against the archive's summary
+of it. The archive's account of what he said — that he had not expected the
+position and did not plan to lower the executive stipends — matches the story,
+as does Barker succeeding Savanna Kurtz.
+
+## Why network.html conflicts on every branch
+
+Worth writing down, because it has now cost one conflict resolution and will keep
+costing them. A rebuild in this container produces a `site/network.html` that
+differs from the committed one. It is not a data change and not a stale build:
+the same 1,818 people are present, with the same names, and only their
+coordinates move — a median of 20 pixels, 145 at the extreme.
+
+The layout is seeded (`random.seed(60)`) and is fully deterministic within one
+machine: repeated builds here are byte-identical, and forcing `PYTHONHASHSEED`
+changes nothing. What moves it is the machine. The positions come from 140 rounds
+of force relaxation, which amplifies the last bits of floating-point rounding
+until they show up in whole pixels, so a container with a different CPU or libm
+lands the graph in a slightly different place.
+
+The consequence is that any branch whose run calls `build.py` carries a 600 KB
+one-line diff on this file and is guaranteed to conflict with any other such
+branch. Resolving it in favour of main and rebuilding is correct and loses
+nothing. Nothing was changed here: the fix is a code change to the layout, it
+would churn every node's position once more, and it is the owner's call, not a
+thing to slip into an editorial pass.
+
+## Still open
+
+The attribution footer on the review comments on **#337 and #351 still needs
+deleting by hand.** This was retested properly this pass rather than assumed.
+GitHub REST is reachable from this container for `/user`, which returns 200, but
+every repository endpoint is refused with the platform gate message, so the
+comment cannot be deleted that way. The MCP tool set can read comments and post
+them but has no method that edits or deletes one. Both routes are closed, which
+is why this keeps carrying forward. The commits, the merge commits and the site
+are clean; it is only those two comment bodies.
+
+Carried forward untouched: the closed `viewcontent.cgi` endpoint on
+digitalcommons, and with it the 1993-94 to 2009-10 gap in year photographs; and
+the 431 legislation files with no author recorded.
