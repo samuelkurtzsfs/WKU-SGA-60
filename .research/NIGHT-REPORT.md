@@ -15818,8 +15818,10 @@ history should leave them.
 
 ## Still open
 
-Carried forward: the two review comments on #337 and #351 that still carry an
-attribution footer and cannot be deleted from this container; the closed
+Carried forward: the review comments on #337, #351 and now #356 that still
+carry an attribution footer and cannot be stripped from this container — the
+comment posts, the footer is appended after it, and both the MCP tool set and a
+direct PATCH to the comments endpoint (403) leave no way to edit it back out; the closed
 `viewcontent.cgi` endpoint and with it the 1993-94 to 2009-10 gap in year
 photographs, now known to be closed on the wkuherald.com side as well and for a
 sharper reason than the entry first gave; the 431 legislation files with no
