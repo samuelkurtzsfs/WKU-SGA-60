@@ -1011,6 +1011,28 @@ lacks, and apply it as a fresh commit on a branch cut from current `origin/main`
 Branches cut from current `main` are ordinary branches and merge normally; this
 warning is about the 4 August ones only.
 
+**Correction, 5 September 2026 — run the test on a full clone or it lies.**
+The "no merge base" half of this warning is wrong, and it is wrong in a way that
+reproduces perfectly. These containers clone **shallow**. On a shallow clone
+`git merge-base origin/main <branch>` returns empty for *every* research branch,
+including ones cut from `main` days earlier, because the history it would need
+has not been fetched. That empty output is what the orphan claim above rests on.
+
+Run `git rev-parse --is-shallow-repository` first. If it prints `true`, run
+`git fetch --unshallow` before believing any merge-base result. Done that way,
+all eight unmerged branches have ordinary merge bases: the five of 4 August share
+`89e834f0` of that date, the three roster branches of 31 August sit on `558ff1bd`.
+
+**The conclusion still stands, for a better reason.** Do not merge the 4 August
+branches. Not because they are orphans, but because they are a month stale and
+their events are filed under the wrong academic years. Every one of the twenty-three
+events that looked missing from `main` turned out to be present and *correctly
+refiled*: Doug Alexander's March 1970 win is 1969-70 on `main` and 1970-71 on the
+branch; Keith Coffman is 1996-97, not 1997-98; the Regents honouring McKinney is
+1986-87, not 1985-86. Norfleet's term-end is 1981-82 on `main` and **1982-83** on
+the branch, so merging one would refile her forward, which CLAUDE.md forbids by
+name. The eight branches hold nothing `main` lacks and should be closed.
+
 ### 8.1 What this environment can and cannot reach
 
 Re-tested by hand at 05:07 UTC on 20 August 2026, one request each. This is the
