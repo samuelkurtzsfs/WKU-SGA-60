@@ -8,6 +8,24 @@
    "pages": 25,
    "board": false,
    "verdict": "No display board of named studio headshots. p. 4 carries a printed 'Congratulations 1994-95 Spirit Masters' name list of 24 with a collage of cut-out candid snapshots around it; the names are not set against the faces, so the page identifies nobody. Portraits: spent."
+  },
+  {
+   "id": "stu_org/324",
+   "title": "Spirit Masters Scrapbook, spring/summer 1986",
+   "url": "https://digitalcommons.wku.edu/stu_org/324/",
+   "article": 1323,
+   "pages": 42,
+   "board": false,
+   "verdict": "OPENED AND SPENT. No class composite board of any kind, and no printed roster. Forty-one leaves of loose colour snapshots pasted four to six a page, nearly all uncaptioned. The only named material is a two-page 'Our Officers' spread at pp. 10-11 where the names are hand-lettered beside individual snapshots: Laura McClellan Chairman 1985, Louise Gilchrist Secretary (her mounting corners are empty, the photograph was never pasted in), Barkley Payne Public Relations and Spirit Master of the year for 1985, Tommy Clayton Parliamentarian, Leslie Moseley Treasurer, Kelly Ford and Ursula Thomas Historians, David Newman, and the incoming pair for 1986, Cindy Smith Chairman and Jim Robinson Vice-Chairman. Every one of those eleven names was checked against all 1,858 people in years.json by surname, and not one is in the SGA record: there is no Gilchrist, McClellan, Moseley, Clayton or Farrior in the archive at all, the Paynes, Fords, Newmans, Thomases, Smiths and Robinsons on file are other people in other decades. Portraits for SGA: none. The rest of the volume is newspaper clippings (the Coke Classic story, Sweet Sixteen, Kern Alexander sworn in as WKU's seventh president) and registration paperwork."
+  },
+  {
+   "id": "stu_org/323",
+   "title": "Spirit Masters Scrapbook, 2001-02",
+   "url": "https://digitalcommons.wku.edu/stu_org/323/",
+   "article": 1320,
+   "pages": 82,
+   "board": true,
+   "verdict": "OPENED, AND THE RICHEST OF THE NINE. The composite is not a display board but the official printed WKU Spirit Masters brochure for 2001-2002, cut into cards and pasted across pp. 38-39: each card carries two colour studio portraits side by side with the name, home town, class standing and major printed directly beneath its own portrait, so name and face are one printed unit. The mapping is provable card by card: on five of the eleven cards exactly one man is named and exactly one man is pictured, and the sexes agree every time, with no contradiction anywhere on the two sheets. p. 37 carries the same class again as a photographed display poster, 'Western Kentucky University Spirit Masters Class of 2001-2002', at a much smaller scale; the brochure is the better source and was used. Five faces and two upgrades came off it. The volume also holds a full-page SGA election poster on p. 75 and the Herald's election result on p. 76."
   }
  ],
  "facts": [
@@ -78,6 +96,72 @@
    "src": {
     "label": "WKU Spirit Masters Scrapbook, 1994-95 (WKU Archives UA12/2/16, Student Organizations), p. 14 of the scanned volume",
     "url": "https://digitalcommons.wku.edu/stu_org/322/"
+   }
+  },
+  {
+   "topic": "2001-02 Spirit Masters full class roster, 30 members",
+   "body": "The official printed WKU Spirit Masters brochure for 2001-2002, pasted into the scrapbook across pp. 38-39, prints all thirty members with home town, class standing and major beside a studio portrait of each. It is a contemporaneous membership list and it is how the portraits in spirit.json from this volume are identified.",
+   "members": [
+    "Amy Caswell, Chair, Paris KY, Senior, Broadcasting",
+    "Brenton Ditto, Vice-Chair, Elizabethtown KY, Senior, Business Economics",
+    "Alecea Davis, Bowling Green KY, Sophomore, Biology",
+    "Amanda Demarest, Evansville IN, Senior, Corporate Comm.",
+    "JacLyn Dunkelberger, Radcliff KY, Senior, Corporate Comm.",
+    "Andrea' Farrior, Pembroke KY, Senior, Biology/Chemistry",
+    "Timothy Gilbert, Owensboro KY, Junior, Corporate Comm.",
+    "Ann Green, Loretto KY, Junior, Advertising",
+    "Zhela Harris-Layne, Panama, Senior, Biology",
+    "Sarah Irvin, Columbia KY, Senior, Marketing",
+    "Jessica Jolly, Bowling Green KY, Sophomore, Psychology",
+    "Adam Leach, Princeton KY, Junior, Govt./Sociology",
+    "David Lodmell, Frankfort KY, Senior, Chemistry/Biology",
+    "Brittney Long, Bowling Green KY, Junior, Public Relations",
+    "Brooke Marshall, Marion KY, Junior, Public Relations",
+    "Lori Martin, Columbia KY, Senior, Elementary Ed.",
+    "Kate Mercer, Hardinsburg KY, Junior, Broadcasting",
+    "Lauren Millard, Union KY, Senior, Mass Communications",
+    "Dana Milliner, Brandenburg KY, Senior, Comm. Disorders",
+    "Joe Morel, Hendersonville TN, Senior, Health Care Admin.",
+    "Jaclyn Phelps, Somerset KY, Senior, CFS Education",
+    "Casey Powell, Hickman KY, Senior, Biology/Pre-Med",
+    "Kacie Powell, Glasgow KY, Junior, Public Relations",
+    "Jamie Sears, Lowes KY, Junior, Public Relations",
+    "Jessica Staten, Glasgow KY, Sophomore, Performing Arts/Dance",
+    "Jennifer Wheeler, Bardstown KY, Sophomore, Nursing",
+    "Jason Seay, Elkton KY, Junior, Pre-Medicine",
+    "Meredith Sherrow, Lexington KY, Senior, Comm. Disorders",
+    "Cinnamon White, Nashville TN, Senior, Marketing",
+    "Jeffrey Ximenes, Fortaleza Brazil, Junior, Advertising/Marketing"
+   ],
+   "advisory_committee": [
+    "Lucinda Anderson",
+    "Howard Bailey",
+    "Dr. Luther Hughes",
+    "Dr. Carl Kell",
+    "Donald Smith",
+    "Jeff Younglove"
+   ],
+   "who_is_in_the_sga_archive": "Six of the thirty are in years.json. Adam Leach, Sergeant-at-Arms 2001-02, and David Lodmell, Congress 1997-98 and 1998-99, had no portrait and now do. Amy Caswell, Joe Morel and Brent Ditto had only tiny newsprint crops and now have colour studio work. Jamie Sears, Executive Vice President 2001-02 and President 2002-03, is on the board but is better served by the campaign poster in the same volume. Tim Gilbert matches by name only and the class years do not fit cleanly; see the caveat on his entry in spirit.json. The other twenty-four are in no SGA record the archive holds.",
+   "src": {
+    "label": "WKU Spirit Masters Scrapbook, 2001-02 (WKU Archives UA12/2/16, Student Organizations), pp. 38-39 of the scanned volume",
+    "url": "https://digitalcommons.wku.edu/stu_org/323/"
+   }
+  },
+  {
+   "topic": "SGA executive election of 9-10 April 2002, full result",
+   "body": "The Herald's report of the spring 2002 executive election is pasted into the Spirit Masters scrapbook at p. 76, headed 'Sears wins election in landslide / Stinson defeated by 690 votes', by Molly O'Connor. Candidates waited in the SGA office and had the result shortly after midnight, at 12.15 a.m., online voting having closed fifteen minutes earlier. Outgoing president Leslie Bedo announced it. Scott Taylor, the student activities and organizations director, came by the office afterwards to congratulate the winners.",
+   "results": [
+    "President: Jamie Sears 1,284, defeating Sam Stinson 594",
+    "Executive Vice President: John Bradley 1,065, defeating Dana Lockhart 730",
+    "Vice President of Administration: Brandon Copeland, defeating Patti Johnson 1,106 to 761",
+    "Vice President of Finance: Ross Pruitt, unopposed, 1,524 votes",
+    "Vice President of Public Relations: Anna Coats, defeating Holly Skidmore 933 to 809, a margin of 124"
+   ],
+   "photo_caption": "Jamie Sears, right, embraces Henderson senior Joe Loney after hearing she was elected; Ross Pruitt in the middle. Credit Edward Linsmier/Herald.",
+   "note": "All nine people named already have a portrait in the archive except Dana Lockhart, who is recorded only as an At-Large member sworn in 30 January 2001 and is not in the photograph.",
+   "src": {
+    "label": "College Heights Herald, April 2002, 'Sears wins election in landslide', pasted into the WKU Spirit Masters Scrapbook, 2001-02 (WKU Archives UA12/2/16), p. 76 of the scanned volume",
+    "url": "https://digitalcommons.wku.edu/stu_org/323/"
    }
   }
  ]
