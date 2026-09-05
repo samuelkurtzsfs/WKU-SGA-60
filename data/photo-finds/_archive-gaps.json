@@ -420,5 +420,21 @@
  {
   "topic": "READING FLAT-IMAGE SCANS, 2002-2006",
   "note": "Those years scan as flat images and defeat every text index. Method that works: search the ocrmac output for text runs that are EXACTLY a target's name, rank them by type height, then tell a caption from a list by counting same-height neighbours. A caption stands alone in its size; a roster line has siblings. Two frames came out that nothing else could see. The Spirit Master adverts yield to the same idea: the advert's repeating border is itself indexed, so a box-union renders the whole advert in one step rather than hunting it by eye."
+ },
+ {
+  "topic": "SPIRIT MASTERS CLASS COMPOSITES — THE BEST UNWORKED LEAD LEFT",
+  "note": "TopSCHOLAR stu_org/321, board 4, is twenty-four studio portraits each with the name printed beside it: one name, one face, no positional reasoning needed at all. Five portraits came off that single board in one run. **Four more scrapbooks have never been opened: 1985-86, 1996-97, 2001-02 and 2004-05.** This is the highest-yield unworked source in the archive. Note the 1994-95 board is a different thing, an unlabelled collage, already checked and closed."
+ },
+ {
+  "topic": "TRUSTWORTHY NEGATIVE: 70 PEOPLE ARE IN NO PORTRAIT GRID 1988-1993",
+  "note": "Every leaf of six Talismans was OCR'd, 1,472 leaves and 127,157 lines, and the whole 1988-92 worklist matched in one pass at the exact alphabetical position with fuzzy matching. Seventy named people are in no portrait grid of those years, and the tempting near-neighbours are listed by name in n8892-notes.json. **Do not re-run this.** The volume-at-a-time sweep is still the right method, but on this block its value was the negative, not the finds: it yielded exactly one grid portrait."
+ },
+ {
+  "topic": "archive.org BEATS TopSCHOLAR ON THE 1986-87 TALISMANS, AND ONLY THOSE",
+  "note": "archive.org holds 1986 and 1987 at 3282 px a page against TopSCHOLAR's 880, and holds nothing at all between 1988 and 1993. Three finds came from the 1987 volume, all far better than anything cuttable from the 96 dpi scans. Also: the 1988 volume covers 1987-88, the year BEFORE the earliest 1988-89 cohort, which is where that intake sit as freshmen. It had never been swept for this block and held a face nobody had looked for."
+ },
+ {
+  "topic": "THE 1991 TALISMAN SCAN IS MISSING PRINTED PAGE 91",
+  "note": "Leaf 48 photographs page 90 twice. The senior surname run Dow to Gad is lost; the back index names sixteen people who were on it. Every other leaf of four spread volumes was tested for the same fault and this is the only one. Companion to the 1989 missing D-E index run and the 2015 missing student-portraits section."
  }
 ]
