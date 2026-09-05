@@ -98,5 +98,145 @@
    "label": "1993 Talisman, p. 204, Student Government Association; p. 202, Spirit Masters",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
   }
+ },
+ {
+  "name": "Scott Wilson",
+  "year": "1988-89",
+  "kind": "found, position provable, PERSON not proved, NOT published",
+  "fact": "1987 Talisman, printed p. 116, the Spirit Masters group photograph, is a clean fifteen-person picture in three tiers of five with a positional caption: FRONT ROW Kelly Neill, Angie Norcia, Elizabeth Williams, Marty Hoffebler, Cindy Smith; SECOND ROW Lisa LaFavers, Bernadette Zell, Whitney Auslander, Deanna Duvall, Leslie Moseley; BACK ROW Jamie Banks, Brian Maddox, Scott Wilson, Chip Polston, Chris Daniels. The back tier is five men and the two tiers in front are ten women, exactly as the names require, so the third man of the back row is Scott Wilson beyond argument. It is not published because the PERSON is not proved. Scott Wilson is a common name, the archive's Scott Wilson is a Congress member of 1988-89 with no other detail, and nothing in the volume mentions student government. The books hold two separate Scott Wilsons a year apart with no page in common: the 1987 index reads 'Wilson, Alan Scott 116', Spirit Masters only, and the 1990 index reads 'Wilson, Scott - 201', the Sigma Chi group photograph of 1989-90 only. They may be one man or two and nothing settles it. This is the same reasoning the archive already applied to David Smith, Michelle Johnson and Jeff Moore. If an editor accepts the name, the crop is the archive.org scan of the 1987 volume, leaf n119, back row third from the left.",
+  "src": {
+   "label": "1987 Talisman, p. 116, Spirit Masters; 1990 Talisman index, p. 365",
+   "url": "https://archive.org/details/talisman1987west"
+  }
+ },
+ {
+  "name": "THE VOLUME-AT-A-TIME SWEEP OF 1988-1993, AND WHAT IT SETTLES",
+  "year": "1988-89 to 1992-93",
+  "kind": "method that worked, and a definitive negative",
+  "fact": "Every leaf of six Talismans was rendered from the embedded scan and OCR'd with ocrmac at twice native size, and the whole worklist was then matched against the result in one pass instead of person by person: 1988 (389 leaves), 1989 (189), 1990 (375), 1991 (190), 1992 (185) and 1993 (144), 1,472 leaves and 127,157 lines of text. Cost about forty minutes of machine time with four sweeps running at once, roughly 1.2 seconds a page. IT WORKS AND IT SHOULD BE THE DEFAULT. It found in one pass what eight person-by-person passes had missed, and it produces a negative that can be trusted. THE THREE THINGS IT TURNED UP THAT THE INDEX ROUTE COULD NOT. First, the 1988 volume had never been swept by this block at all. It covers 1987-88, the year BEFORE the earliest cohort here, which is exactly where the 1988-89 intake sit as freshmen and sophomores, and it is where Elaine Burge's portrait was, in the freshman grid on p. 347. Always work the volume before the first year of service, not only the years of service and after. Second, the portrait grids are keyed to margin name blocks that the back index does not always index, so a person absent from an index can still be in a grid, and the reverse. Third, an organisation photograph with a positional caption is a portrait source, not just a name list, and the write-off entry in _archive-gaps.json about thirty-one members of 1990-91 to 1994-95 is wrong on that point: it reasons that a person 'named in an index but only on organization or story pages ... never sat for a portrait', which is true of the grids and does not mean there is no usable face. Ginger Markham was written off that way and her face is on 1993 p. 202. WHAT THE SWEEP PROVES NEGATIVELY: the following people are in NO portrait grid of any of the six volumes, checked line by line at the exact alphabetical position with fuzzy matching for OCR damage, and in most cases are absent from the volumes entirely. Amy McLoud, Brian Thornton, Chris Gaddis, Diane Robinson, Georgia Childress, Honor Logsdon, John Lindsey, Johnna Shirley, Lori Easton, Mark Spader, Mickie Hennig, Ron Hennig, Scott Hutchison, Chris Summerville, Jo Wood, Maribel Torres, Todd Gion, Allyson Adams, Andy Gowins, Angie Berry, Angie Sell, Aubrey Harris, Brent Weaver, Derrick Holt, Jeffrey Sanders, Julie Wedge, Mills Brockman, Nita Doshi, Richard Parish, Traceyealeen Garrett, Wallace Brown, Wendy Townsend, Wil Gramm, Brent Weeden, Chad Reagan, Chris Gibson, Chris Sweeney, Greg Butler, Gwendolyn Griffin, James Lindsey, Kristen Graves, Maryann D'Anielle, Melony Johnson, Melony Shemberger, Randy Elassal, Richard Parrish, Scott Ballard, Wilson Covington, Darron Brawner, Dawn Dillard, Derrek Duncan, Jason Sikes, Jeff Carlisle, Jeff Duncan, Jenny Stelmach, Jill Howard, Jill Reading, Jim Lee, Kendra Welch, Kim Mann, Laura Nunn, Margaret Carter, Molly Schreiner, Nicki Jerome, Paula Miller, Shawn Pinkston, Susanne Jeffiers, Thomas Lally, Tim Sturm, Trent Lyda, Von Parrish. For several the volumes hold a near neighbour that will tempt a later pass and is a different person: Sherry and Nicole Gaddis but no Chris; Dana, Rebekah, Clarence and Emily Shirley and a Shirley Green but no Johnna; Ann Michele Dillard but no Dawn; Anne, Lori Ann, James T. and Lisa Duncan and a Duncan Gibson but no Derrek and no Jeff; Amy, Kelley, Vikki, Jeffery, Willie, Reece, Donald, Charles, James, Melissa, Juliane and Tricia Carter but no Margaret; Sherry Woods, Karen Wood, Donna Wood and JoAnn Woodruff but no Jo Wood; Devon and Laura Pinkston but no Shawn; Loretta Welch but no Kendra; Jeff Schreiner but no Molly; Justin Carlisle but no Jeff; Stacey Brawner but no Darron; Sondra Jeffries but no Susanne. DO NOT RE-RUN THIS. If a later pass wants to re-check, the OCR is reproducible in forty minutes with scripts of about sixty lines; what is not worth doing again is looking these names up one at a time.",
+  "src": {
+   "label": "Talismans 1988-1993, UA12/2/2, dlsc_ua_records 412-417, every leaf",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+  }
+ },
+ {
+  "name": "THE 1986 AND 1987 TALISMANS ON ARCHIVE.ORG ARE THE BEST SOURCE THIS BLOCK HAS",
+  "year": "1988-89 to 1989-90",
+  "kind": "source found, and it is four times the resolution of anything else here",
+  "fact": "archive.org holds the Talisman for 1943-1981, 1986 and 1987 and NOTHING between 1988 and 1993, checked against its advanced-search API on 4 September 2026: talisman1988west through talisman1993west all return empty metadata. So the note in _archive-gaps.json that says to prefer archive.org copies over TopSCHOLAR for 1982-1991 cannot be followed for the volumes that cover this block's own years; those must come off TopSCHOLAR at about 96 dpi. But 1986 and 1987 CAN, and they scan at 3282 by 4500 pixels a page against TopSCHOLAR's 880, which is nearly four times the linear resolution. THAT CHANGES WHAT COUNTS AS A USABLE GROUP PHOTOGRAPH. A face in a fifteen-person club picture, worth 30 pixels on a TopSCHOLAR page and therefore worthless, comes out 200 pixels here. Three of this run's finds are from the 1987 volume and all three are far better than anything cut from 1988-1993: Becky Shirley's sophomore portrait at 360 by 435, Lisa Kaufman at 187 by 250 out of a thirteen-woman Alpha Delta Pi group, Joe Leffert at 205 by 295 out of a fifteen-person University Scholars group. Use scripts/talisman.py, which searches the OCR text stream and maps a hit back to a leaf; search the surname alone, and treat the leaf it returns as a pointer only, because the text stream pools captions from several leaves away. The reliable route is the back index: search 'Surname,' to get the index line, which gives printed page numbers, then pull leaf = page + 3. WHO THIS SEAM IS FOR: anyone whose first SGA year is 1988-89 or 1989-90 was at Western in 1986-87, and the whole 1988-89 cohort of this block was run against both volumes on this pass. Blocks whose people served 1985-86 to 1987-88 should work these two volumes before anything else.",
+  "src": {
+   "label": "1987 Talisman, UA12/2/2, archive.org",
+   "url": "https://archive.org/details/talisman1987west"
+  }
+ },
+ {
+  "name": "Mickie Hennig",
+  "year": "1988-89",
+  "kind": "written off with positive evidence: she sat for no portrait",
+  "fact": "She is in the Talismans and she is not photographed, and the shape of the evidence makes that near certain rather than merely unfound. The 1987 index reads 'Hennig, Kathryn Michelle 316' and gives no second page; p. 316 is the Juniors divider, pulled and read at 3282 pixels on the archive.org copy, and it carries a full-page overhead photograph of a print sale in the Downing University Center, an essay on the junior year, and a pull quote signed '- Mickie Hennig' in the left margin. There is no portrait of her on it and no photograph of any named person. Being a junior in 1986-87 makes her a senior in 1987-88, so the 1988 volume is where her senior portrait would be; every one of its 389 leaves was OCR'd on this run and the only Hennig anywhere in the book is her brother or namesake Ron, in the University Scholars caption on p. 159. She is absent from the 1989, 1990, 1991, 1992 and 1993 volumes entirely. Secretary of ASG in 1988-89 and there is no picture of her.",
+  "src": {
+   "label": "1987 Talisman, p. 316, Juniors divider; 1988 Talisman, every leaf",
+   "url": "https://archive.org/details/talisman1987west"
+  }
+ },
+ {
+  "name": "Ron Hennig",
+  "year": "1988-89",
+  "kind": "found twice in text, no usable face",
+  "fact": "Two appearances, neither of which yields a photograph. The 1988 Talisman, p. 159, names him in the University Scholars group caption, 'BACK ROW: Michael Harrison, Mikey Wilson, Pat Padgett, Icey Shuffett, Ron Hennig, Lewie Bently, James Baker', which is a determinate position, sixth of seven in the back row of a picture of twenty-one. It is not cut because the frame is about 300 pixels wide on a 96 dpi single-page scan and a head in it is roughly 14 pixels across, well below anything a reader could recognise. The 1991 Talisman, p. 343, quotes him twice as the coach of Obsession, the women's intramural flag football champions, but the photograph on that page is captioned as Kim Jacobs celebrating, not him. He is in no portrait grid of any volume 1988-1993.",
+  "src": {
+   "label": "1988 Talisman, p. 159, University Scholars; 1991 Talisman, p. 343, intramurals",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/412/"
+  }
+ },
+ {
+  "name": "Diane Robinson",
+  "year": "1988-89",
+  "kind": "found in a photograph, face too small, NOT published",
+  "fact": "1989 Talisman, printed p. 215, the first of the two Kappa Delta group photographs. The caption is positional and she is determinate within it: 'SECOND ROW: Kimberly Grissom, Susan Ecton, Diane Robinson, Tara Thacker, Julia Johnson, Gina Casabella, Ann Ziertman, Ali Baker, Janie Price, Beverly Cathey', ten names against a first row of ten, so she is third of the second row. It is not cut because the frame holds twenty women in about 300 pixels of a 96 dpi page and a head is roughly 15 pixels across. Two things make this worth recording rather than forgetting. Janie Price is ninth of the same row and the archive already publishes her face from the 1992 volume, so a better scan of this page would give an anchor as well as a face. And Robinson is in no portrait grid of any volume 1988-1993, so this is the only photograph of her the Talismans contain.",
+  "src": {
+   "label": "1989 Talisman, p. 215, Kappa Delta",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413/"
+  }
+ },
+ {
+  "name": "Chelsea Klatt",
+  "year": "1991-92",
+  "kind": "found in a photograph, position NOT provable, NOT published",
+  "fact": "1993 Talisman, printed p. 188, the second of the four Kappa Delta group photographs, captioned 'First Row: Angela Grimes, Jinger Davis, Tricia Boyd, Chelsea Klatt; Second Row: Heather Smith, Sherry Karnuth, Sarah Peoples, Sandra Karr, Pamela Robinson; Third Row: Kristen Knight, Kellie Taylor, Mistianna Holcomb, Paige Pride, Kristan Abernathy, Jennifer Greer, Cathleen Bell', which would make her fourth of the front four. It is not cut because the picture is sixteen women packed in a staggered crowd rather than three clean tiers, and four, five and seven cannot be separated from it with any confidence at 96 dpi; every one of the sixteen is a woman so there is no sex test to fall back on. The volume also quotes her in the story on p. 144 about the Kappa Delta housemother's retirement, 'Chelsea Klatt, a junior from Franklin, Tenn.', which confirms she is a Kappa Delta and puts her class year, but the photograph on that page is of Cindy Crume hugging Marie Kessinger. The 1993 index gives her these pages only and she is in no portrait grid of any volume.",
+  "src": {
+   "label": "1993 Talisman, pp. 144 and 188, Kappa Delta",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+  }
+ },
+ {
+  "name": "Jenny Stelmach",
+  "year": "1992-93",
+  "kind": "found in a photograph, position NOT provable, NOT published",
+  "fact": "The _archive-gaps.json write-off lists her as absent from every index of 1991-1994, and that is right for those volumes and wrong as a conclusion, because she is in the 1990 one. The 1990 Talisman, printed p. 227, carries the first of the two Alpha Gamma Delta group photographs, captioned 'Front Row: Gwen K. Riley, Susan L. Brawner, Bonnie J. Waters, M. Beth Robinson, Courtney H. Scott; Middle Row: Alice A. Bivin, Amy A. Bivin, Dawn M. Edelen, Jennifer L. Brown, Meredith L. Howe; Back Row: Amy E. McCloud, Noelle A. Phillips, Jennifer L. Long, Jennifer L. Seitz, Jennifer L. Stelmach', which would make her the last of the back five. It is not cut because the fifteen women stand as a staggered crowd with no separable tiers and all fifteen are women, so neither counting nor a sex test resolves it; heads are about 30 pixels. An anchor exists and was tried and failed: Amy E. McCloud is first of the same back row and the archive publishes her face from the 1989 freshman grid, but the published crop is 93 by 108 and too soft to match against a 30-pixel head. A better scan of p. 227 would probably settle both her and the row.",
+  "src": {
+   "label": "1990 Talisman, p. 227, Alpha Gamma Delta",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414/"
+  }
+ },
+ {
+  "name": "Derrek Duncan",
+  "year": "1993-94",
+  "kind": "sourced fact, and a live lead for a later pass",
+  "fact": "He was a Spirit Master. The Herald of 22 September 1994 carries a full Kappa Delta advertisement headed 'Congratulations 1994-95 Spirit Masters' listing the whole class in two columns, and Derrek Duncan is the sixth name of the left column. The list also names Melissa Burgess, Nathan Burton, Andi Cailles, Nicholas Church, Jonathan Estes, Nicole Ezell, Jerry Hedinger, Hardin Hester, Amanda Holsclaw, Martha Humphries, Kristie Jackson, Jennifer Lynch, Jason Martin, Annemarie Maxwell, Kenny May, Christiane McCombie, Paige Robinson, Scott Sivley, Amanda Thurmond, David Vanderpool, Jason Vincent, Andrea Wilson and Lara Briner as chairman. THE LEAD: TopSCHOLAR's stu_org collection holds nine WKU Spirit Masters scrapbooks, UA12/2/16, at stu_org/321 to 329, and their record pages give the year each covers - 321 is 1989-90, 322 is 1994-95, 323 is 2001-02, 324 is 1985-86, 326 is 2011-12, 327 is 2004-05, 328 is 2007-08, 329 is 1996-97. stu_org/322 is therefore the scrapbook of Duncan's own Spirit Masters class and its file is article 1321, 61.8 MB through the Wayback route. _archive-gaps.json already records that the scrapboards carry a block of portraits beside a name list and that the pairing can be proved by column. That is the place to look for him, and 321 is the equivalent for anybody in this block who served in 1989-90. He is in no portrait grid of the 1988-1993 Talismans and in none of their indexes.",
+  "src": {
+   "label": "College Heights Herald, 22 Sept 1994, p. 13; TopSCHOLAR stu_org/322",
+   "url": "https://digitalcommons.wku.edu/stu_org/322/"
+  }
+ },
+ {
+  "name": "Syed Ahsan",
+  "year": "1991-92",
+  "kind": "spelling verified",
+  "fact": "The worklist records his given name as unverified. The 1993 Talisman settles it: the back index reads 'Ahsan, Syed 194' and the Phi Beta Lambda caption on p. 194 prints 'Syed Ahsan'. The volume also carries a Huma Ahsan, indexed at 56, 168 and 204, who is a different person and is named in the Student Government Association group photograph on p. 204; the archive does not currently record a Huma Ahsan in SGA and probably should.",
+  "src": {
+   "label": "1993 Talisman, p. 194 and back index",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+  }
+ },
+ {
+  "name": "Tracey Maxwell",
+  "year": "1989-90",
+  "kind": "probable duplicate person, flagged not merged",
+  "fact": "The only Maxwell of that name in the 1988-1993 volumes is the woman printed 'Tracy Maxwell' in the 1992 senior grid on p. 105, and that cell is already published in this block at 1990-91 under the spelling Tracy Maxwell. The archive holds Tracey Maxwell (1989-90, Potter College Representative) and Tracy Maxwell (1990-91) as two rows one year apart and there is one woman of that name in the books. The 1990 volume corroborates her: p. 214 captions the Alpha Omicron Pi group 'Front Row: Tracy Maxwell, Paula Benson, Jami Todd, Kimberly Sammons, Kathy Lee, Anne Crafton', and the 1992 volume's Spirit Masters page calls her 'Tracy Maxwell, the club's president'. No second copy of the face was cut, because the archive's rule is to flag rather than merge. If the editor merges the rows, the existing crop covers both. There is also an Annemarie Maxwell in the 1994-95 Spirit Masters class, who is a different woman and whose face the archive already publishes at 1994-95.",
+  "src": {
+   "label": "1992 Talisman, p. 105; 1990 Talisman, p. 214; 1992 Talisman, p. 170",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416/"
+  }
+ },
+ {
+  "name": "SGA's own 1994-95 Congress roster, found in the Spirit Masters scrapbook",
+  "year": "1994-95",
+  "kind": "sourced fact for the block after this one, found while hunting",
+  "fact": "TopSCHOLAR stu_org/322, the WKU Spirit Masters scrapbook for 1994-95 (UA12/2/16, article 1321, 61.8 MB through the Wayback route), carries on its fourteenth board a printed sheet headed SPIRIT MASTERS IN STUDENT GOVERNMENT, and pasted to it is SGA's own full membership list for the year. It reads in two columns under '1994 - 1995 CONGRESS MEMBERS': Kaylyn Ashley, Lance Blincoe, Rob Carothers, Cindy Chiappetta, Nick Church, Angela Crume, Terry Ekbundit, Melani Fischer, Jason Gerst, Josh Gravot, Valerie Hadnot, Jason Hays, Raymond Herrick, Patrick Howard, Jennifer Lewis, Carlene Lodmell, Darlene Lodmell, Jason Loehr, Jason Martin, Stephanie McCarty, David Minor, Devon Moore, Justin Mylor, Bonnie Newton, Gina Raffaelli, Jennifer Raffaelli, Junior Rajewich, Shelley Reitmeyer, Steven Roadcap, Erin Schepman, David Southard, Chad Stahl, Hunter Stewart, Terra Swanson, Lena Sweeten, Jeff Turner, Mark Warren, Shawna Whartenby, Jason Whitsell, Eric Wilson, Allyson Wood, Brian Woods, Jeff Yan, John Yerk, Jason Young and Jason Vincent; and under 'JUDICIAL COUNCIL': Kenny May, Foreman, Grace Hancock, Lori Spear, Angelo Rodriguez. Four names are highlighted in yellow because they were the Spirit Masters among them: Kenny May, Jason Martin, Jason Vincent and Nick Church. TWO THINGS THIS SETTLES OR SUPPORTS. Carlene Lodmell and Darlene Lodmell are printed one under the other on the same roster, which is a fourth independent witness that they are two people, and it is a contemporaneous one. And Kenny May, whose portrait _do-not-use.json refuses because the archive holds a Kenny May and a Kenny Mays as separate people and the Talisman knows only the one spelling, is here in SGA's own document, in SGA, spelled May. Recorded but not acted on: 1994-95 is not this block.",
+  "src": {
+   "label": "WKU Spirit Masters Scrapbook 1994-95, UA12/2/16, board 14",
+   "url": "https://digitalcommons.wku.edu/stu_org/322/"
+  }
+ },
+ {
+  "name": "Spirit Masters scrapbook 1994-95, board 3",
+  "year": "1993-94",
+  "kind": "source checked and closed for identification",
+  "fact": "Board three of stu_org/322 is the one that looks like the answer and is not. It has the Kappa Delta 'Congratulations 1994-95 Spirit Masters' newspaper advertisement pasted in the centre, with the whole class named in two columns, and about thirty cut-out photographs pasted around it. The cut-outs are not in columns, not in rows and not in any order: they are scattered at angles across the whole board, some are head-and-shoulders, some are full-length candids of two or three people, and nothing pairs a face with a name. The note in _archive-gaps.json that says the scrapboards 'pair by column, provably' holds for the 2007-08 board it was written from and does not hold for this one, so check the layout before trusting it. The rest of the 1994-95 scrapbook is party and event candids with handwritten speech-bubble jokes rather than captions, plus programmes and clippings. No face can be identified from it. That closes the route for Derrek Duncan, who was in this Spirit Masters class.",
+  "src": {
+   "label": "WKU Spirit Masters Scrapbook 1994-95, UA12/2/16",
+   "url": "https://digitalcommons.wku.edu/stu_org/322/"
+  }
+ },
+ {
+  "name": "THE SPIRIT MASTERS CLASS COMPOSITES ARE ONE NAME TO ONE FACE, AND NOBODY HAD FOUND THEM",
+  "year": "1989-90",
+  "kind": "source found, the strongest identification available anywhere in this era",
+  "fact": "TopSCHOLAR stu_org/321 is the WKU Spirit Masters scrapbook for 1989-90 (UA12/2/16, article 1322, 154 MB through the Wayback route, seventy boards). Its fourth board is the class COMPOSITE: twenty-four studio portraits pasted in five ranks, and beside each portrait is a printed strip giving the person's name, home town, class and major. One name against one face, no counting, no row-and-column reasoning, no sex test - the strongest identification this archive accepts, and it is on a board scanned at 4209 by 3474, so a single portrait crops out at about 370 by 400 with no upscaling. The twenty-four are Paige Hudson, Matt Warren, Janie Price, Paul Sagun, Jill Miller, Julie Caldwell, Chuck Patton, Eddie Smith, Kimberly Burns, Michael Colvin, Jeff Welch, Chari Beth Rose, Dan Knowles, Dwight Adkins, Laura Hodges, Jeff Stum, John Seiber, Marie Smith, Joe Leffert, Kyna Stinson, Daryl Pepper, Lee Ann Walke, Amos Gott and Ruth Hosse. It supplied five portraits on this run - Joe Leffert, Janie Price, Paul Sagun, John Seiber and Daryl Pepper - four of them replacing group crops of 1.8 to 6 KB. WHY THIS MATTERS BEYOND THIS BLOCK. The existing notes on Spirit Masters in _archive-gaps.json are all about the 2011-2018 BOOKLETS, which are closed, and about the scrapboards pairing by column, which is fragile. This is a different thing: a labelled composite. Nine scrapbooks exist at stu_org/321-329 and their record pages give the year each covers - 321 is 1989-90, 322 is 1994-95, 323 is 2001-02, 324 is 1985-86, 326 is 2011-12, 327 is 2004-05, 328 is 2007-08, 329 is 1996-97. Not all have a composite: the 1994-95 book has only an unlabelled collage of cut-outs round a newspaper advertisement, checked and closed. But 324 (1985-86), 329 (1996-97), 323 (2001-02) and 327 (2004-05) have never been opened by this project and each could hold twenty-odd labelled studio portraits for its year. THAT IS THE SINGLE BEST UNWORKED LEAD LEFT IN THIS ARCHIVE.",
+  "src": {
+   "label": "WKU Spirit Masters Scrapbook 1989-90, UA12/2/16, class composite board",
+   "url": "https://digitalcommons.wku.edu/stu_org/321/"
+  }
  }
 ]
