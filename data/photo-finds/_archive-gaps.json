@@ -446,5 +446,55 @@
    "label": "WKU Spirit Masters Scrapbooks, WKU Archives UA12/2/16, Student Organizations",
    "url": "https://digitalcommons.wku.edu/stu_org/321/"
   }
+ },
+ {
+  "topic": "THE HERALD PEOPLE POLL IS A PORTRAIT SOURCE, AND IT IS NOW MAPPED FOR 1993-1999",
+  "note": "The College Heights Herald ran a People Poll on its Opinion page through the 1990s: four or five students, each with a quotation, a framed studio-style mugshot, and the name and home town in bold set IMMEDIATELY BENEATH that person's own frame. Because the label sits under its own frame the pairing cannot slide, which makes it the most provable portrait source in the newsprint era, and it gave FIVE of the eleven faces found on the n9396 block. Two layouts: a vertical column of five down the right-hand edge, and a horizontal strip of four or five across the foot of the page. On this run every People Poll page from 1993 to 1999 was found by searching the OCR for the phrase itself - 316 pages - and every personal name printed on them extracted, 2,522 distinct names, then matched against all 172 people of the n9396 officer and worklist files. THAT SOURCE IS NOW EXHAUSTED FOR 1993-1999 and the roster is worth rebuilding the same way for other decades. Two traps. FIRST, the same Opinion page carries letters to the editor whose signature blocks look exactly like poll labels in OCR - Steve Roadcap, Kip Carr, Joel Banashak, John W. Taylor and Kristin Willis all matched that way and none is pictured; check that the label sits directly under a frame. SECOND, the crushed halftone: a poll frame of a dark-haired or dark-skinned subject can print as a solid black shape with only the teeth legible, which is why Steven Graham and Anne Guillory stay refused.",
+  "src": {
+   "label": "College Heights Herald Opinion pages 1993-1999, UA12/2/1",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
+  }
+ },
+ {
+  "topic": "XPOSURE MAGAZINES 1995-1996: OPENED 5 SEPTEMBER 2026 AND CLOSED",
+  "note": "Xposure is the soft-cover magazine that replaced the Talisman when the yearbook stopped, so it covers exactly the 1994-96 years that have no portrait book, and it reads as the obvious unworked source for that block. It is spent. Three issues are digitised, dlsc_ua_records 1422 fall 1995, 1423 spring 1996, 1424 summer 1996, 132 pages, with no embedded text layer beyond the cover sheet. All 132 pages were rendered and OCR'd with ocrmac and the output is kept at ~/Desktop/SGA60 photo hunt/_xposure-ocr-1995-1996/ with a README. There are NO portrait grids and NO index of people, and of the 172 people on the n9396 officer and worklist files exactly one, Kristin Willis, is named anywhere in the three issues - in a feature on prayer at fall 1995 printed pp. 20-21, whose only photograph is captioned as somebody else. Native resolution is about 780 pixels to a printed page, worse than the 96 dpi Talismans. Do not re-open it.",
+  "src": {
+   "label": "Xposure, WKU Student Publications, TopSCHOLAR",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/1422/"
+  }
+ },
+ {
+  "topic": "HERALD SCAN RESOLUTION SWINGS BY A FACTOR OF SEVEN WITHIN 1993-1996",
+  "note": "Do not assume a 1990s Herald page is unusable because the last one was. Measured across the 262 digitised issues of 1993-1996: most pages carry ONE embedded image for the whole sheet at 1050 to 1300 pixels across, which yields a mugshot of about 90 by 120 - small but real. A minority are scanned at 2100 pixels, which yields 170 by 270, and the two-page sports and feature SPREADS of early 1993 are scanned at up to 8813 pixels across, which yielded a 651 by 959 face on this block, the largest newsprint crop in the archive. Always read the native width off the embedded image (PyMuPDF get_images plus extract_image) and render at exactly width divided by page-rect width, never at a fixed zoom: a fixed zoom either upscales, which the archive forbids, or throws away half the detail on the good scans.",
+  "src": {
+   "label": "College Heights Herald 1993-1996, UA12/2/1",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7829"
+  }
+ },
+ {
+  "kind": "probable duplicate person, flagged not merged",
+  "name": "Andrew Gailer / Andy Gailor",
+  "year": "1995-96, 1996-97",
+  "detail": "The n9396 worklist has ANDREW GAILER as Junior Off-Campus Representative in 1995-96 and the officers file has ANDY GAILOR as Legislative Research chairman in 1996-97 and 1997-98. Almost certainly one man. The Herald of 16 January 1997, printed p. 6, attributes a pull quote to \"Andy Gailor, Louisville senior\", and a Louisville senior in 1996-97 was a junior in 1995-96, which is exactly Gailer's recorded seat and year. The dean's list of 22 February 1994 gives the full form \"Andrew King Gailor\". The surname Gailer does not occur once in the 262 digitised Heralds of 1993-1996 in any context. Neither spelling is photographed anywhere.",
+  "src": {
+   "label": "College Heights Herald 72:30, 16 January 1997, printed p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3035"
+  }
+ },
+ {
+  "topic": "THE HERALD PEOPLE POLL IS THE MOST PROVABLE NEWSPRINT PORTRAIT SOURCE",
+  "note": "The Opinion-page People Poll sets each person's name in bold DIRECTLY BENEATH THEIR OWN FRAME, so the pairing cannot slide — no row counting, no positional reasoning. It gave five of eleven finds on 1993-96. Every poll page 1993-1999 is now indexed, 316 pages and 2,522 printed names, and that range is SPENT for those years — but the method should be re-run on every other decade. Two traps: letter-signature blocks on the same Opinion page mimic poll labels in OCR and name people who are not pictured, and a crushed halftone can print a frame as solid black."
+ },
+ {
+  "topic": "HERALD SCAN RESOLUTION SWINGS SEVENFOLD INSIDE 1993-96",
+  "note": "Most pages are about 1,200 px wide, some 2,100, and the early-1993 spreads up to 8,813. Read the native width off the embedded image and render at exactly that ratio. A fixed zoom either upscales a small scan into mush or throws away most of a large one."
+ },
+ {
+  "topic": "XPOSURE MAGAZINES 1995-96 — OPENED AND CLOSED",
+  "note": "These replaced the Talisman for exactly the years with no yearbook, so they read as the obvious unworked source for 1995-96. They are not: all 132 pages OCR'd, no portrait grids, no index, and of 172 names on that block exactly one appears — in a feature whose only photograph is of somebody else. OCR kept at ~/Desktop/SGA60 photo hunt/_xposure-ocr-1995-1996/ with a README. Do not reopen."
+ },
+ {
+  "topic": "HERALD OCR INDEX 1993-1996 EXISTS",
+  "note": "262 issues, 4,973 pages at 300 dpi with bounding boxes, at ~/Desktop/SGA60 photo hunt/_herald-ocr-1993-1996/ alongside the source PDFs. With _herald-ocr-1997-2005/, _herald-index-2002-2009/ and _herald-index-2010-2016/ (which now reaches 2019), the Herald is indexed continuously from 1993 to 2019. Grep before fetching anything."
  }
 ]

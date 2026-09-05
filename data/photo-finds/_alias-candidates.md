@@ -37,3 +37,4 @@ on the site for these.
 - **Drew Eclov** (2007-08 senator) == **M. Andrew Eclov** (2008-09 Director of Academic and Student Affairs) — adjacent years, and the same mugshot is now filed under both
 - **Lane (Caroline) Simpson** == **Caroline Simpson** — one WKU account, lane.simpson586, on both judicial pages
 - **Amber Daniels** == **Amber Daniel** — probable, flagged not merged
+- **Andrew Gailer** (1995-96) == **Andy Gailor** (1996-97) — Andy Gailor is a Louisville senior in Jan 1997, so a junior in 1995-96, matching Gailer exactly; the surname Gailer occurs nowhere in four years of Herald

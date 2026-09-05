@@ -147,6 +147,14 @@ def check(rec, known, no=None):
     year, name, fn = rec.get("year"), rec.get("name"), rec.get("file")
     if not (year and name and fn):
         return "missing year, name or file"
+    # A researcher who can prove the face but not the person says so in the
+    # entry and leaves it for the editor. That is the right thing to do and it
+    # has caught several wrong people. It only works if something reads the
+    # flag: four such findings were merged and published because this did not,
+    # and the editor never saw the words written for them.
+    ident = str(rec.get("identification") or "")
+    if "PERSON NOT PROVED" in ident.upper():
+        return f"researcher flagged it for the editor: {ident[:110]}"
     url = str((rec.get("src") or {}).get("url") or "").strip()
     if no and url in no:
         return f"withdrawn frame: {no[url][1][:88]}"
