@@ -822,5 +822,21 @@
    "label": "1987 Talisman, p. 160, Alpha Delta Pi",
    "url": "https://archive.org/details/talisman1987west"
   }
+ },
+ {
+  "year": "1988-89",
+  "name": "Becky Shirley",
+  "file": "1988-89-becky-shirley.jpg",
+  "replaces": null,
+  "quality": "good",
+  "width": 360,
+  "height": 435,
+  "why": "1987 Talisman, printed p. 343, the sophomore portrait grid, row 6 cell 2. The page prints forty-two portraits, six across and seven down, with each row's six names set as one block in the right-hand margin in alphabetical order. Row six reads CLARENCE SHIRLEY, REBEKAH SHIRLEY, PAMELA SHOOK, TOMMY SHRIVER, RHONDA SIDEBOTTOM, JAMES SMITH, which requires man, woman, woman, man, woman, man, and the row shows exactly that. The rows either side confirm the mapping: row five reads Wendell Sears, Stephen Seaton, Sandra Sendelbach, Naheed Shafi, Teresa Shanks, Marya Shelton, two men then four women, and the picture agrees; row seven reads Jason Smith, Lori Smith, Mark Smith, Terri Smith, Jimmy Smothers, Jodi Sobotka, alternating man and woman, and the picture agrees. She is the second cell of row six, a studio headshot facing the camera. This is the ARCHIVE.ORG copy of the volume at 3282 pixels to the page, so the crop is 360 by 435 with no upscaling, the best portrait this block has recovered.",
+  "caption_quote": "REBEKAH SHIRLEY, Manhattan, Kan.",
+  "id_note": "The volume itself equates Rebekah and Becky, which is what makes this safe. The 1987 back index reads \"Shirley, Rebekah Ann 189, 343\", one woman on two pages: p. 343 is this grid cell, printed REBEKAH SHIRLEY, and p. 189 is a group photograph whose caption reads \"FRONT ROW: Kelly Thurmond, Lisa Hurt, Becky Shirley, Cindy Herbert, Kim Martin\". The only other Shirley in the volume is Clarence Edward Shirley, indexed at p. 343 alone. She served in SGA in 1988-89 and was a sophomore in 1986-87, which fits.",
+  "src": {
+   "label": "1987 Talisman, p. 343, sophomore portraits",
+   "url": "https://archive.org/details/talisman1987west"
+  }
  }
 ]
