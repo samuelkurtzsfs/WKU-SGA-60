@@ -132,13 +132,15 @@ year photograph named in `SGA-60-AGENT-INFO.md` §8.4.
 - **2026-09-04 23:37** — **1,148 portraits, 1,051/1861 with a face, 810 none, 211 officers without one.** Landed 8 from 1993-96, but **all eight were rank-and-file senators and the officer count did not move** — the same drift the 1997-2001 agent showed. Redirected it. This is now a known failure mode rather than a one-off: the general worklist is far longer than the officers list, so a volume-wide grid sweep naturally lands on whoever it hits unless the agent filters its matches against the officers file before cutting. Worth building into the brief rather than correcting each time.
 - **2026-09-05 00:10** — **1,146 portraits, 1,049/1861 with a face, 812 none, 209 officers without one.** Two corrections of mine this cycle, both worth recording. **First: I published four unproven identifications.** Researchers flag a find `FACE PROVED, PERSON NOT PROVED` and leave it for the editor; merge_photo_finds.py never read that field, so John Chestnut, Grace Hancock, Lori Doolin and Curtis Street went straight onto the site with the words written for me unread. Pulled, reasoning kept in the withdrawal register, and the merge now refuses any entry carrying the flag. **Second: my mid-run redirect was wrong.** I told the 1993-96 agent its officers list had not moved; it had been finished before the agent arrived — all 39 accounted for, 8 with portraits and 31 with written reasons. My brief was built on stale counts, and it also asked the agent to build a Herald OCR index its predecessor had already built. Read the block's own notes before briefing it. The run itself was good: 11 faces, two officers won by overturning earlier refusals, and the **People Poll** identified as the most provable newsprint portrait source of the era — the name sits directly beneath its own frame, so the pairing cannot slide. Indexed 1993-1999 and spent there; worth re-running on every other decade.
 - **2026-09-05 00:36** — **1,146 portraits, 1,049/1861 with a face, 812 none, 209 officers without one.** No agents were running; nothing new to land. Surveyed the blocks by their **notes** rather than their worklist counts, which is the lesson from getting the last brief wrong. Six of nine are genuinely closed out — officers either photographed or documented as searched-and-not-found. Only two are open: **1966-79 has 19 officers and no notes file at all**, and 1980-87 has 15 officers and 2 notes. Launched on 1966-79, with the officers-filter instruction built into the brief this time rather than corrected after, and with the People Poll method to try on a decade it has never been tried on.
+- **2026-09-05 09:01** — **1,158 portraits, 1,061/1861 with a face, 800 none, 197 officers without one.** Landed 12 from 1966-79 and **all twelve were officers** — the officers-filter went into the brief this time rather than being corrected afterwards, and it worked first time. Officers are down from 292 to 197 since the owner asked for them. The agent stalled on the 600s watchdog with its People Poll test unfinished; the machine is back on **Battery Power**, which is the cause. Nothing else is wrong: checks pass, tree clean, pushed.
 
 ### 2026-09-05 14:00 — separate scheduled run, single pass
 
 Not part of the overnight fleet above; the cloud photograph routine picking
 up cold. Confirmed again what every run since 20 August has found: all four
-named priority portraits (Todd, Dawson, Johnson, Gilley) and all 61 leader
-records already carry a portrait, and every year already carries a year
+named priority portraits (Todd, Dawson, Johnson, Gilley) and every leader
+record already carries a portrait — 73 leader records across the 61 years,
+not 61, as this entry first had it — and every year already carries a year
 photograph except the twelve long-standing gaps in `SGA-60-AGENT-INFO.md`
 §8.4 (1993-94 through 1997-98, 2000-01, 2002-03, 2003-04, 2005-06 through
 2006-07, 2008-09, 2009-10).
@@ -176,14 +178,21 @@ their faces buried in a hug, nothing to crop) and a 24 September 2020
 town-hall debate photograph naming Abbey Norvell, whose figures are all
 out of focus in the background. No new officer portrait this run.
 
-Also confirmed a source gap worth recording: wkuherald.com's WordPress
-archive returns **zero posts of any kind** between roughly September 2005
-and September 2010 (`after`/`before` queries against that whole window
-come back empty), so it cannot supply the year-photograph for 2005-06,
-2006-07, 2008-09 or 2009-10 the way it did for the 2016-2026 blocks. The
-2002-04 posts that do exist carry no attached media in the WordPress
-library at all, so wkuherald.com is a dead end for the whole pre-2010
-year-photograph gap, not only the mid-decade hole. Re-tested
+Also confirmed a source gap worth recording, in a corrected form. This run
+first wrote that wkuherald.com's WordPress archive returns **zero posts of
+any kind** between September 2005 and September 2010. Re-checked at the
+editor's desk on 5 September, that is too strong: the window holds **16
+posts**, the earliest 4 September 2009, against 68 in the single month of
+August 2010 when the archive resumes properly. What is true, and is the
+part that matters, is that **every one of those 16 carries
+`featured_media: 0`** — no attached image — so the archive still cannot
+supply the year-photograph for 2005-06, 2006-07, 2008-09 or 2009-10 the
+way it did for the 2016-2026 blocks. The 2002-04 posts that do exist
+likewise carry no attached media in the WordPress library, so
+wkuherald.com remains a dead end for the whole pre-2010 year-photograph
+gap; it is a near-empty archive rather than an empty one. (One of the 16,
+"Three SGA senators resign" of 22 October 2009, is already in the record
+from the Herald back file at 2009-10-20.) Re-tested
 `viewcontent.cgi` once more (four leads, 3 seconds apart): still HTTP 403,
 the Cloudflare challenge, matching every report since 25 August. No change
 to the twelve-year gap.
