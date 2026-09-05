@@ -4038,6 +4038,59 @@ can re-open them to check. They were accepted on the record of the run that
 found them. If that endpoint ever reopens, they are the first thing to
 re-verify.
 
+**A 5 September 2026 run (photograph agent, scheduled).** The stored trigger
+prompt is still the frozen one: re-checked its four named targets directly
+against `data/photos.json` before anything else, same result as every run
+since 20 August — Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley
+all already carry a portrait, and a script pass over every leader record in
+`years.json` confirms zero presidents or student regents are missing one.
+
+`viewcontent.cgi` was retested at the top of the session against
+`stu_org/328` with the full browser-navigation header set: still `403`.
+Landing pages on `digitalcommons.wku.edu` still load fine (`200`). No
+`data/documents/` or year-photograph-gap work was attempted against it, same
+as every run since it closed.
+
+Checked the untried executive-officer names in the two years archive.org's
+Talisman djvu text covers that still had gaps this run hadn't already ruled
+out: **David Bass** (Activities Vice President, 1977-78) turns up only in
+the caption of the year photograph the archive already holds
+(`1977-78-asg-meeting.jpg`, 1978 Talisman p. 34) — a "light moment" group
+shot naming four people, already used as the year's photograph and already
+judged, by the 31 August run, too weak for an individual portrait crop. No
+new use for it. **David Young** and **Alice Wicks** (1978-79), **Mark
+Chesnut** (1980-81), and **Chris Millay** and **Dwight Austin** (1986-87)
+return no hits at all in their respective yearbook's full text.
+
+Tried `wkuherald.com`'s media search against ten more names still missing a
+portrait, spanning the recent Senate roster and the untried end of the
+2010s-2020s executive gap: Zachary Skillman and Tribhuwan Singh (2021-22),
+Sawyer Coffey (Director of Public Relations, 2014-15/2015-16), and six
+2022-23/2023-24/2025-26 senators (Justin Goins, Maiah Cisco, Miles Harvey,
+Zoe Martin, Nolan Rongey, and — see below — Blake Graham). All ten returned
+zero results.
+
+One near-miss worth recording so it isn't retried: **Blake Graham** (Chief
+Justice, 2025-26, stepped down mid-year to Sophie Stirling, whose own
+portrait is already in the archive) has three named hits on `wkuherald.com`,
+none usable. `SAV2500.jpg` ("Chief Justice Blake Graham gives his final
+report... Nov. 11, 2025") shows him from behind, out of focus, no face
+visible. `SAV2487.jpg` is the photograph already in the archive under
+Hannah Hash's name — its caption names Graham only as the person doing the
+introducing, off-frame; the two faces it does show, Sophie Stirling and
+Hannah Hash, are already both portrayed. `SAV9099.jpg` ("International
+Senator Grace Ekrikpo is sworn in by Chief Justice Blake Graham... Sept.
+23, 2025") shows Ekrikpo, not Graham, who is off-camera administering the
+oath. No photograph of Graham's own face was found this run.
+
+No files changed under `data/photos/` or `data/photos.json` this run — no
+new portrait cleared the "misidentified face is worse than no face" bar.
+Merged 17 commits from `origin/main` (an untracked long tail: 33 face
+`site/photos/*.jpg` files and matching `data/photos.json` entries other
+recent research runs had already landed independently) to keep the branch
+current; no conflicts. Landed as a documentation-only commit on
+`research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
