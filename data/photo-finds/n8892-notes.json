@@ -78,5 +78,25 @@
    "label": "1992 Talisman, p. 218, Kappa Delta",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/416/"
   }
+ },
+ {
+  "name": "1991 Talisman, printed page 91",
+  "year": "1990-91",
+  "kind": "defective scan, found 4 September 2026",
+  "fact": "The TopSCHOLAR scan of the 1991 Talisman (dlsc_ua_records/415) is missing one printed page. PDF leaf 48 (0-based) is a spread whose two halves are the SAME image: printed p. 90, running head 'Cou-Dow', is photographed twice and printed p. 91 is not in the file at all. The running heads run ... Bec-Bus (88), Bya-Cor (89), Cou-Dow (90), Cou-Dow (90 again), Gad-Har (92) ..., so the whole senior surname run Dow to Gad is lost. The volume's own back index proves what was on it and names sixteen people there, among them 'Duncan, James T. 91', 'Elliot, Eric A. 91', 'Elliot, Kim A. 91', 'Evans, Kimberly A. 91', 'Field, Frank E. 91.143' and six Fs from Farrar to Fudge. Anyone whose surname falls between Downen and Gaddis cannot be found in the 1991 senior grid, and that is a defect in the scan, not an absence from the book. Every other leaf of the volume was checked for the same fault by comparing running heads across all 190 leaves; leaf 48 is the only one.",
+  "src": {
+   "label": "1991 Talisman, UA12/2/2, PDF leaf 48 and back index pp. 356-357",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/415/"
+  }
+ },
+ {
+  "name": "Cinnamon Roberts",
+  "year": "1992-93",
+  "kind": "found in a photograph, position NOT provable, NOT published",
+  "fact": "She is named in the Student Government Association group photograph of the 1993 Talisman, printed p. 204: 'Second Row: Bert Blevins, Scott Sivley, Jason Embry, Cinnamon Roberts, Nikki Creasey, Woody Zorn, Greg Edmonds, Huma Ahsan', which would make her fourth of eight. The photograph's FRONT and BACK rows both resolve and were used for four finds on this run; the middle row does not. The caption accounts for twenty-one people, six, eight and seven. The front six are unambiguous and run man, woman, man, woman, man, woman as the names require. The back line carries eight heads for seven names, and that was settled by two faces the same volume shows elsewhere - Kibby Rose from p. 208 and Joe Tinsley from p. 186 - which fix the seven and make the eighth head, a woman in a patterned dress at the far right, the second row's last name, Huma Ahsan. What is left for the middle row is a tier that reads woman, man, man, man in a bow tie, man, woman, man, man from left to right. The second row's names require man, man, man, woman, woman, man, man. The counts do not reconcile: there is a woman in long light hair and a floral top at the far left of the middle tier where Bert Blevins should be, and the 1993 Spirit Masters photograph on p. 202 proves Blevins is a man, second of the five in its back row against a caption reading Meredith Howe, Bert Blevins, Patrick Monohan, Scott Sivley, Staci Kitchens over a picture of woman, man, man, man, woman. Either the photograph carries a twenty-second person the caption does not name, most likely an adviser, or the middle row is not printed in left-to-right order. Until that is settled no face can be cut from the middle row, and that costs this block Cinnamon Roberts, Jason Embry, Nikki Creasey, Woody Zorn and Greg Edmonds. A better scan of p. 204 would probably settle it in one look.",
+  "src": {
+   "label": "1993 Talisman, p. 204, Student Government Association; p. 202, Spirit Masters",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+  }
  }
 ]
