@@ -202,3 +202,6 @@ No changes to `data/photos.json` or any photo file this run. Merged
 portraits now live) into `research-photos` cleanly, no conflicts.
 `build.py` and `check_data.py` both pass clean: 61 years, 1981 events, 60
 presidents, "the archive checks out against its own rules."
+
+- **2026-09-05 15:24** — **1,158 portraits, 1,061/1861 with a face, 800 none, 197 officers without one.** Nothing new to land. Two 1966-79 agents stalled on the 600s watchdog in a row; the machine is on **Battery Power** and that is the whole cause. The block still owes two things: whether the **People Poll existed in the 1960s and 70s** (unanswered, and a definite no would be as useful as a yes), and its notes file, the last block without one.
+  Also, a warning to my successor: resolving a conflict in THIS FILE by taking one side deletes the other night's work. I did that and cut 69 lines before catching it. The log is append-only by nature — on a conflict, keep both sides and dedupe, never checkout --ours or --theirs.
