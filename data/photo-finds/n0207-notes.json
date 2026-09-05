@@ -415,5 +415,199 @@
    "label": "data/photo-finds/_worklist-n0207.json",
    "url": ""
   }
+ },
+ {
+  "kind": "SOURCE FOUND, IMAGES LOST: SGA's own website carried named officer portraits",
+  "name": "wku.edu/sga profile pages, 2003-04",
+  "year": "2003-04",
+  "checked": "The Wayback Machine holds the SGA website of September 2003 at www.wku.edu/sga. Two pages carry a portrait for every member with the person's name in the IMG ALT attribute and repeated in a Name: field in the same table cell, which is as tight an identification as this archive ever gets. j_profiles.html (captured 20030925031832) keys five justices: Pics/Judicial/chief.png Troy Ransdell, j1.png Scott Broadbent, j2.png Josh Collins, j3.png GRETCHEN LIGHT, j4.png KRISTIN HARTLEY. l_profiles.html (captured 20030925014259) keys eight congress members: pics/leg/0.png Scott Wolfe, 1.png Stacey Adkisson, 2.png Natalie Croney, 3.png Katie Dawson, 4.png Brittany Fausey, 6.png TIM HOWARD, 7.png Shawn Peavie, 8.png Evelina Petkova.",
+  "why": "The image files themselves were never captured. Every one of the thirteen PNGs returns 404 from the Wayback Machine on the im_ and id_ replay forms and on the direct path, and a CDX prefix search over www.wku.edu/sga returns 3,531 captures with not one under Pics/ or pics/. The HTML survives and the images do not. This closes three officers - Gretchen Light, Kristin Hartley and Tim Howard - on the only route that ever named a portrait of them, and it is worth recording that the portraits existed. If a WKU server backup or a departmental mirror ever surfaces, this is the file list to ask for. Also note the page gives Kristin Hartley an office the archive does not have: she was a Justice on the Judicial Council in 2003-04, a sophomore-year office beyond her 2002-03 Senior Recognition chairmanship, and Gretchen Light is given as a Newburgh, Indiana sophomore whose earlier office was Secretary of the Legislative Research Committee.",
+  "src": {
+   "label": "WKU SGA website, j_profiles.html and l_profiles.html, September 2003, in the Internet Archive",
+   "url": "https://web.archive.org/web/20030925031832/http://www.wku.edu/sga/j_profiles.html"
+  }
+ },
+ {
+  "kind": "lead worked out: Spirit Master of the Month advertisements",
+  "name": "Spirit Master of the Month advertisements, 2002-2005",
+  "year": "2002-03 to 2004-05",
+  "checked": "The predecessor left these as the best untouched seam and said they had to be found by eye. They can be found mechanically instead. The ocrmac page index at _herald-ocr-1997-2005 reads the advertisement's own border, which repeats SPIRIT MASTERS around all four sides, and its footer SPIRIT MASTER / OF THE MONTH, with bounding boxes. Taking the union of those boxes on each page and rendering the page clipped to it at 400 dpi puts the whole advertisement on screen in one step. Eleven advertisements were found and read this way: 22 Oct 2002 p12, 7 Nov 2002 p9, 6 Feb 2003 p6, 14 Oct 2003 p6, 17 Feb 2004 p6, 9 Mar 2004 p13, 27 Apr 2004 p8, 14 Oct 2004 p4, 18 Nov 2004 p7, 8 Feb 2005 p4, 15 Mar 2005 p14 (PDF page numbers).",
+  "why": "Every portrait in them was read and named: Jason Detre (September 2002), Laura Allen (October 2002, also Homecoming Queen), Nichole Johnson (November 2002), Amber Braden (December 2002 and again March 2004), John Tower (September 2003), Terry Woodall (December 2003), Natalie Croney (January 2004, already published), Lindsey Ransdell (February 2004), Jenny Corum (Summer 2004), Chris Whitfield (September 2004), Destiny Smith (October 2004, printed so dark there is no face in it), Nathan Hodson (January 2005), Richard McFarland (February 2005). Not one of them is an officer on this block and not one is on the worklist. The seam is real, the method works, and for this block it is now spent. Anyone working another block should re-run the same box-union trick on the ocrmac index rather than paging through by eye.",
+  "src": {
+   "label": "College Heights Herald, WKU Spirit Masters advertisements, 2002-2005",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9373"
+  }
+ },
+ {
+  "kind": "CORRECTION to an earlier note, and a source closed",
+  "name": "Lisa Kappler and Cherieth Lineweaver are Sigma Kappa, not Phi Mu",
+  "year": "2007-08",
+  "checked": "The earlier Lisa Kappler note calls the initiate lists of 2 September and 26 October 2004 Phi Mu lists. They are not. Both pages were rendered and read. The 2 September advertisement signs off Sisters of Sigma Kappa, and the 26 October one on p12 is bordered with the Sigma Kappa letters and headed Violets to our new initiates, the violet being the Sigma Kappa flower. Kappler and Lineweaver are Sigma Kappa.",
+  "why": "This matters because it kills what looked like the best remaining lead. TopSCHOLAR's stu_org collection holds forty-three Phi Mu chapter composites and no composite of any other sorority, so there is no Sigma Kappa plate to find her on. For completeness the Phi Mu composites for 2004-05 and 2005-06 were pulled fresh (articles 1377 and 1376, which the predecessor had not taken) and tile-OCRed along with the four already staged; no officer of this block appears on any of them. The Phi Mu landing pages also print the whole membership as text, row by row, in the item description, so all six years 2002-03 to 2007-08 were checked a second way by reading those lists. Same answer. Both advertisements are type-only: names set in a list, no portraits anywhere on either page.",
+  "src": {
+   "label": "College Heights Herald, 26 October 2004, p. 12, Sigma Kappa advertisement; and UA1C11/105/26-31 Phi Mu Composites",
+   "url": "https://digitalcommons.wku.edu/stu_org/369"
+  }
+ },
+ {
+  "kind": "method gap in the predecessor's index, filled",
+  "name": "The 2002-2009 caption index had no above field",
+  "year": "2002-03 to 2007-08",
+  "checked": "photo_captions.jsonl at _herald-index-2002-2009 records only the text below a photograph and the text to its right. The Herald labels a mugshot above the frame as often as below, and the equivalent index for 2010-2019 carries an above field for exactly that reason. A replacement index was built over all 375 staged 2002-2009 issues capturing text above, below and right of every embedded image: 31,640 records, at /tmp/hunt-n0207b/captions_above_2002-2009.jsonl. Every one of the 34 officers was run against the above field.",
+  "why": "Thirteen officers produce an above-hit and not one of them is a photograph of that officer. They are all text bleeding from an adjacent column onto an advertisement: Kathleen Hennessey's name sits above a Papa John's coupon block on 6 February 2007 p9, Jonathan Sprowles above a Peace Corps advertisement on the same page, Cameron Yancey above a crime-report rule, Liz Goddard's hits are all Evan Goddard of Pi Kappa Alpha at Sigma Chi Fight Night. The gap was real and worth closing; it yielded nothing here, and the index is worth rebuilding for other blocks.",
+  "src": {
+   "label": "Rebuilt caption index over the 375 staged Herald issues, 2002-2009",
+   "url": ""
+  }
+ },
+ {
+  "kind": "source checked: the 2010-2019 Herald indexes",
+  "name": "Officers of 2002-2008 sought in the later Herald",
+  "year": "2002-03 to 2007-08",
+  "checked": "The 29,995-record photograph index and the full page text for 2010 to 2019 at _herald-index-2010-2016 were searched for all 34 officers, on the above, caption and right fields and then on the body text. Several were still students into 2009 and 2010, so this was worth doing.",
+  "why": "One captioned frame of a person of the right name exists and it is rejected on two grounds. College Heights Herald, 4 May 2010, p. 1, photograph by Tanner Curtis, 1337 by 892 pixels, captioned that Owensboro junior Tim Hill laughs with Chicago sophomore Samantha Dahlgren and others on the porch of Froggy's the last night the bar was open. First, the caption names two people in a frame holding at least four, gives no left or right, and two of the figures are men, so nothing fixes which one is Hill. Second, an Owensboro junior in May 2010 entered in 2007, and the officer chaired the Legislative Research Committee in 2006-07, so this is probably a different man. It is also a bar table covered in beer bottles. Everything else is a namesake: Aaron Hughey the counselling professor, Evan Goddard, Emily Holland, a graduation list. Vanessa Scott turns up once more usefully, as Vanessa M. Scott in the May 2010 graduation list beside Kayla W. Shelton and Brittany Ann M. Wick, which fixes when she left.",
+  "src": {
+   "label": "College Heights Herald, 4 May 2010, p. 1 (Vol. 85, No. 51)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6633"
+  }
+ },
+ {
+  "kind": "method worth reusing: finding 2002-2006 mugshots that no text index can see",
+  "name": "Standalone name labels in the ocrmac index",
+  "year": "2001-02 to 2005-06",
+  "checked": "The 2002-2006 Herald scans are one flat image per page, so there are no embedded photo objects and the caption index cannot exist for those years. A mugshot of that era is labelled with the bare name in display type and carries no photographer credit, so the predecessor's photographer-credit method cannot see it either. The ocrmac index does record every text run with its height as a fraction of the page, and body text sits at 0.007 to 0.009. Searching it for text runs that are exactly a target person's name and nothing else, then ranking by height, finds every display-type name label on the page in one pass. All 34 officers and all 129 worklist names were run through it for 2001 to 2005.",
+  "why": "Forty-three pure name labels came out. Every one belonging to an officer was rendered and read, and all of them are lists rather than captions: Kristin Hartley appears at 0.0219, nearly three times body height, in the SGA's own Congratulations to the Hall of Distinguished Seniors 2005 advertisement of 19 April 2005 p7, which is type only; at 0.0105 in a Kappa Delta new-initiates advertisement of 11 October 2001; and in two more Kappa Delta lists. Lisa Kappler's two labels are the Sigma Kappa lists described above. The method is sound and found nothing here, but it is the only way into 2002-2006 mugshots and should be the first thing the next agent runs on another block.",
+  "src": {
+   "label": "~/Desktop/SGA60 photo hunt/_herald-ocr-1997-2005, 537 issues with per-run bounding boxes",
+   "url": ""
+  }
+ },
+ {
+  "kind": "sourced fact turned up while hunting",
+  "name": "Kristin Hartley",
+  "year": "2004-05",
+  "fact": "Kristin Hartley was named to WKU's Hall of Distinguished Seniors for 2005. The Student Government Association bought a full advertisement on 19 April 2005 congratulating the twelve, among them Jennifer Corum, Katherine Dittmeier, Hollan Holm, Whitney LeGrand, Abby Lovan, Richard McFarland, Jessica Martin, Sarah Price and Lindsey Ransdell.",
+  "src": {
+   "label": "College Heights Herald, 19 April 2005, p. 7 (Vol. 80, No. 50 [52]), SGA advertisement",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8942"
+  }
+ },
+ {
+  "kind": "sourced fact turned up while hunting",
+  "name": "Gretchen Light",
+  "year": "2003-04",
+  "fact": "SGA's own website in September 2003 gives Gretchen Light as a Justice on the Judicial Council, a sophomore from Newburgh, Indiana, reading Religious Studies and English Literature, whose earlier SGA offices were Secretary of the Legislative Research Committee and member of Congress.",
+  "src": {
+   "label": "WKU SGA website, j_profiles.html, captured 25 September 2003",
+   "url": "https://web.archive.org/web/20030925031832/http://www.wku.edu/sga/j_profiles.html"
+  }
+ },
+ {
+  "kind": "sourced fact turned up while hunting",
+  "name": "Kristin Hartley",
+  "year": "2003-04",
+  "fact": "SGA's own website in September 2003 gives Kristin Hartley as a Justice on the Judicial Council, a junior from Versailles, Kentucky, reading Exceptional Education. The archive currently records only her 2002-03 chairmanship of Senior Recognition.",
+  "src": {
+   "label": "WKU SGA website, j_profiles.html, captured 25 September 2003",
+   "url": "https://web.archive.org/web/20030925031832/http://www.wku.edu/sga/j_profiles.html"
+  }
+ },
+ {
+  "kind": "source checked and spent",
+  "name": "wku.edu/sga in the Wayback Machine, 2009-2011, and wkuherald.com search",
+  "year": "2007-08",
+  "checked": "Stuart Kenderes was Chief Justice in 2009-10 and Lisa Kappler in 2008-09, so the SGA website of those years was the obvious place for an officer portrait. index.php?page=judicial is archived twice, 23 November 2009 and 28 May 2010, and index.php?page=executive with it. Separately the wkuherald.com WordPress search API was queried for Kenderes, Kappler, Selzer, Vanessa Scott and Josh Fries.",
+  "why": "The 2009-10 site is text only. Both judicial captures list Stuart Kenderes (Chief Justice) with his e-mail and the four justices beside him and carry exactly one image, the SGA logo. The redesign of 2009 dropped the portraits the 2003 site had. wkuherald.com returns nothing for any of the five names."
+ },
+ {
+  "kind": "frame exists, cannot be tied to this person",
+  "name": "Rob Anderson",
+  "year": "2006-07",
+  "checked": "College Heights Herald, 29 October 2002, printed p. 9, the What's Your Story? feature by Beth Sewell, headlined Anderson's story: eviction woes. It carries a mugshot with the name set directly beneath the frame in the feature's standard label, exactly the format that gave this archive its Stacey Adkisson portrait. The predecessor missed it because it can only be found by the display-type name-label method, not by any caption or text search.",
+  "why": "The face is proved and the person is not. The article calls him a Nashville senior in October 2002, so he graduated in spring 2003, and the archive's Rob Anderson was a senator in 2006-07. On the arithmetic they are two different men, and Rob Anderson is a common name. The story is also about his being evicted. Recorded so the editor can decide, not published.",
+  "src": {
+   "label": "College Heights Herald, 29 October 2002, p. 9 (Vol. 78, No. 19)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9245"
+  }
+ },
+ {
+  "kind": "frame exists but unusable",
+  "name": "Robert Ashby",
+  "year": "2005-06",
+  "checked": "College Heights Herald, 13 October 2005, printed p. 8B, the student-life feature Some sports fans are more than just spectators. A full-length photograph of him leaping in a Hilltoppers jersey and a big afro wig, with Robert Ashby / Louisville senior set in display type directly beneath the frame. He is the sole subject and the year fits the archive's senator of 2005-06 exactly.",
+  "why": "There is no face in it. The newsprint reproduction has crushed the whole head to solid black under the wig; enlarged to 600 dpi the head is an unbroken silhouette with only a faint suggestion of a mouth. The identification could not be better and the picture cannot be used. Worth revisiting only if a better scan of Vol. 81 No. 12 ever appears.",
+  "src": {
+   "label": "College Heights Herald, 13 October 2005, p. 8B (Vol. 81, No. 12)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3629"
+  }
+ },
+ {
+  "kind": "SOURCE WORKED: the best portrait source this block has",
+  "name": "WKU Spirit Masters Scrapbook, 2007-08 (stu_org/328, article 1325)",
+  "year": "2006-07 to 2007-08",
+  "checked": "Ten of its thirty-nine pages, 24 to 33 by PyMuPDF index and 25 to 34 of the scanned volume, are a member display board: the whole 2007-08 class in full colour studio portraits with the name, hometown, class, major and years of Spirit Master service printed on a card beside each. Three members to a page in three columns, each column holding one portrait and one card. The whole book was rendered at 260 dpi and read with ocrmac. THE FULL ROSTER, worth having for other blocks: Kelly Austin, Bryant Blodgett, Megan Bird, Monique Braun, Tom Cannon, Jenna Brown, Lauren Carter, Clint Conrad, Diane DeRosa-Reynolds, Nathan Eaton, Angelena Edwards, Olivia Faulkner, Sarah Foster, Glenn Fedor, Catie Gay, Chase Goff, Austin Howell, Lauren Keeling, Justin Ladd, Sarah Korona, Coleman Martin, Lori Morel, Lynetra Ross, Kathy Smallwood, Caelin Smith, Kelly Stinson, Tori Theiss, Emily Turner, Earlene Whitaker, Ena Viteskic.",
+  "why": "It gave this block two portraits, Glenn Fedor Jr. and Earlene Racquel Whitaker, both far better than anything the Herald holds for these years. HOW THE COLUMN PAIRING IS PROVED, because a grid of faces beside a name list normally identifies nobody: two pages settle it by gender alone. On p. 29 the three named are Sarah Foster, Glenn Fedor and Catie Gay, and exactly one of the three portraits is a man, in the same column as the Fedor card. On p. 28 the three named are Nathan Eaton, Angelena Edwards and Olivia Faulkner, and again exactly one portrait is a man, in the same column as the Eaton card. The columns pair, and they pair the same way on every page. Note the archive already held one portrait from this board, Diane DeRosa-Reynolds, so the source was known but had never been read through.",
+  "src": {
+   "label": "UA12/2/16 WKU Spirit Masters Scrapbook, 2007-2008",
+   "url": "https://digitalcommons.wku.edu/stu_org/328/"
+  }
+ },
+ {
+  "kind": "source inventory, so nobody derives it again",
+  "name": "Every Spirit Masters scrapbook on TopSCHOLAR, by year",
+  "year": "",
+  "checked": "The nine scrapbooks in stu_org are numbered in reverse: stu_org/321 is article 1322, /322 is 1321, /323 is 1320, /324 is 1323, /326 is 1327, /327 is 1326, /328 is 1325, /329 is 1324. Their years, from the landing-page descriptions: 1986 spring-summer (324), 1988-89 photograph album (565), 1989-90 (321), 1991-92 (563), 1994-95 (322), 1996-97 (329), 2001-02 (323), 2004-05 (327), 2007-08 (328), 2011-12 (326). Only two of them fall inside 2002-03 to 2007-08 and both are now read: 2004-05 by the predecessor, 2007-08 by this pass. The 2001-02 book was also pulled and its twenty text pages OCRed on the chance it caught a 2002-03 officer early.",
+  "why": "The 2001-02 book is a photograph album with handwritten captions, not a portrait board, and it names nobody on this block. Do not confuse these scrapbooks with the Spirit Masters class BOOKLETS at dlsc_ua_records 8496-8502, which cover 2011-2018 and are separately recorded as spent. Note also that the Wayback route for these needs the cgi form, not the native form, and the files run 50 to 205 MB, so fetch them one at a time in the background.",
+  "src": {
+   "label": "digitalcommons.wku.edu/stu_org/321-329 and /563, /565",
+   "url": "https://digitalcommons.wku.edu/stu_org/328/"
+  }
+ },
+ {
+  "kind": "frame exists, cannot be tied to this person",
+  "name": "Drew Bly",
+  "year": "2007-08",
+  "checked": "College Heights Herald, 19 February 2013, p. 4, the four-across vox pop on the live-on-campus policy. Each column carries one mugshot above one quotation, and each quotation carries its own signature: Chad Winston, an unnamed second, Drew Bly of Louisville and Mustafa Zahmak. The third column's quotation is the one the page text signs -Drew Bly, Louisville senior, so the third face is his. Cut at the scan's own resolution, 193 by 289, and left at ~/Desktop/SGA60 photo hunt/n0207/UNPROVED-drew-bly-2013.jpg rather than published.",
+  "why": "The face is proved and the person is not. The archive's Drew Bly was appointed a senator on 27 November 2007 and approved on 4 December. The Herald of 3 December 2013 says that before coming to WKU, Louisville senior Drew Bly spent two years as a bike messenger in Chicago, which places his arrival on the Hill after the Chicago years and therefore after 2007. Against that, the name is rare, both are Louisville, and a student who broke off and came back would fit. It is one man or two and the sources do not say which. Left for the editor.",
+  "src": {
+   "label": "College Heights Herald, 19 February 2013, p. 4 (Vol. 88, No. 35); and 3 December 2013, p. 12",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6533"
+  }
+ },
+ {
+  "kind": "lead flagged, not taken",
+  "name": "Kayla Smith",
+  "year": "2007-08",
+  "checked": "A Kayla Smith is printed in the Phi Mu Delta Tau chapter composites for 2005-06, 2007-08 and 2009-10, both on the plates themselves and in the text roster the TopSCHOLAR landing pages carry. Her portrait could be cut from any of them in ten minutes.",
+  "why": "Not taken, because Smith is the commonest surname on the roll and Kayla a common given name in this cohort, and there is demonstrably more than one Kayla Smith at WKU: the Herald of 19 November 2015 has a freshman guard Kayla Smith on the Lady Toppers. Nothing found ties the Phi Mu member to the senator of 2007-08. The plate is there whenever a source turns up that puts the senator in Phi Mu.",
+  "src": {
+   "label": "UA1C11/105/31 Phi Mu Composite, 2007-2008",
+   "url": "https://digitalcommons.wku.edu/stu_org/371"
+  }
+ },
+ {
+  "kind": "method note: what the display-type name search returns and what it does not",
+  "name": "Reading the 43 name labels found in the 2001-2005 OCR index",
+  "year": "2002-03 to 2005-06",
+  "checked": "Every standalone name label was classified before rendering, by counting how many other name-shaped text runs of the same height sat within a small radius. Three or more neighbours means a printed list; none or one means an isolated label, which is what a caption looks like. All the isolated ones were rendered and read.",
+  "why": "The isolated labels split two ways. Most are LETTERS TO THE EDITOR: the Herald signs a letter with the writer's name over their hometown and class, which looks exactly like a mugshot caption to the classifier and carries no picture. Robert Ashby of 5 February 2004, Ryan Dillon four times over, Bob Bell three times and Robert Reynolds are all letters. That is worth knowing before anyone rebuilds this search. The rest are real captions, and they gave the two frames recorded separately above, the Rob Anderson What's Your Story mugshot of 29 October 2002 and the Robert Ashby sports-fan photograph of 13 October 2005. The lists are Kappa Delta and Sigma Kappa advertisements, dean's list rolls and the SGA's own Hall of Distinguished Seniors advertisement.",
+  "src": {
+   "label": "~/Desktop/SGA60 photo hunt/_herald-ocr-1997-2005",
+   "url": ""
+  }
+ },
+ {
+  "kind": "worklist swept again on the new indexes",
+  "name": "General worklist, 2002-03 to 2007-08, second pass",
+  "year": "2002-03 to 2007-08",
+  "checked": "All 129 remaining worklist names were run against three things the predecessor did not have: the rebuilt 2002-2009 caption index carrying the text ABOVE each photograph as well as below and right; the 2010-2019 photograph index of 29,995 frames with the same three fields, plus its full page text; and the display-type name-label search over the 2001-2005 ocrmac index.",
+  "why": "Three names came out of it. Julia Bright is published, from a 2010 Herald feature. Drew Bly and Rob Anderson are recorded above as faces proved but people unproved. Everything else is a namesake or a printed list: Angie Ellison returns Kris Ellison-Baete, Bradley Morgan returns a seven-year-old called Morgan Douglas, Lauren McGee returns Professor Laura McGee, Kayla Smith returns a Lady Toppers guard, Christa Wilcox returns Josh Wilcox, and Earlene Racquel Whitaker returns Forest Whitaker and the Adams-Whitaker Student Publications Center. The Herald route for this block is now as worked as it can be from an index."
+ },
+ {
+  "kind": "working material preserved for the next agent, second pass",
+  "name": "What this pass left on disk",
+  "year": "",
+  "checked": "Three things are now at ~/Desktop/SGA60 photo hunt/ rather than in /tmp. _herald-index-2002-2009/photo_captions_above_2002-2009.jsonl is a rebuilt index of all 31,640 embedded photographs in the 375 staged Herald issues 2002-2009, carrying the text ABOVE each frame as well as below and to the right, which the predecessor's photo_captions.jsonl does not have and which is the field the Herald most often uses for a mugshot label. spirit-scrap/spirit-masters-scrapbook-2007-08_stu_org-328.pdf is the 87 MB scanned volume that gave this block its two best portraits, so nobody has to pull it again. spirit-scrap/spirit-masters-2007-08-ocr.json is its page-by-page OCR.",
+  "why": "The old caption index covers 2007-2009 only and reads below and right. The new one covers 2002-2009 and adds above. Between them a Herald photograph of these years can be found by any text that touches it. Everything else this pass downloaded, about two gigabytes of scrapbooks and composites, was deleted rather than left lying about; the fetch recipes are written into the notes above so any of it can be pulled again in a minute."
  }
 ]

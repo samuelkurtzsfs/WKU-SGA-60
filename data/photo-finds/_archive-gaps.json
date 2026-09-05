@@ -219,7 +219,7 @@
  },
  {
   "topic": "THE WAYBACK ROUTE, SECOND URL FORM",
-  "note": "The cgi form web/2024id_/.../cgi/viewcontent.cgi?article=N&context=C works for most of TopSCHOLAR but the Internet Archive has no snapshot of some items: context=stu_org articles 1342-1379 404 on it. A second form reaches those: web/2024id_/https://digitalcommons.wku.edu/context/<collection>/article/<N>/type/native/viewcontent That is how the Phi Mu composites came in, at 3400x2500. Try the cgi form first and fall back to this one; between them TopSCHOLAR is effectively open to plain scripts."
+  "note": "The cgi form web/2024id_/.../cgi/viewcontent.cgi?article=N&context=C works for most of TopSCHOLAR but the Internet Archive has no snapshot of some items: context=stu_org articles 1342-1379 404 on it. A second form reaches those: web/2024id_/https://digitalcommons.wku.edu/context/<collection>/article/<N>/type/native/viewcontent That is how the Phi Mu composites came in, at 3400x2500. Try the cgi form first and fall back to this one; between them TopSCHOLAR is effectively open to plain scripts. CORRECTION: Kappler and Lineweaver were Sigma Kappa, not Phi Mu. There is no Sigma Kappa composite on TopSCHOLAR, so that route is closed, not open."
  },
  {
   "topic": "OCR INDEX OF THE HERALD, 1997-2005",
@@ -408,5 +408,17 @@
  {
   "topic": "HERALD CAPTION INDEX NOW REACHES 2019",
   "note": "~/Desktop/SGA60 photo hunt/_herald-index-2010-2016/ now also holds photo_captions_2017-2019*.jsonl, 96 of 99 issues and 988 photographs in the same schema, so a single grep covers 2010-2019. Three issues never came down: articles 10721, 10671, 10950. All eight Talisman magazines 2016-2020 are in _topscholar-pdfs/ — no portrait grids, but captioned photo stories, one of which held the only face of Elias Thompson."
+ },
+ {
+  "topic": "SGA'S OWN 2003-04 WEBSITE SURVIVES, ITS PHOTOGRAPHS DO NOT",
+  "note": "The Wayback Machine holds SGA's own j_profiles.html and l_profiles.html from 2003-04, which carry a portrait per member with the name in the IMG ALT and a Name: field beside it — Gretchen Light, Kristin Hartley and Tim Howard among them. **The image files were never archived**: all thirteen PNGs 404. The HTML survives and the pictures do not. Recorded because if a WKU server backup ever surfaces, this is the exact file list to ask for, and because it otherwise reads as a promising lead every time somebody finds it."
+ },
+ {
+  "topic": "SPIRIT MASTERS SCRAPBOARDS PAIR BY COLUMN, PROVABLY",
+  "note": "The Spirit Masters scrapbook boards list names beside a block of portraits, which looks like an unprovable grid. It is not: on two separate pages the only man named is also the only man pictured, each in his own column, which fixes the column pairing. Two colour studio portraits at 1200x1700 came out of the 2007-08 board that way, far better than any newsprint frame. Nine scrapbooks are inventoried by year."
+ },
+ {
+  "topic": "READING FLAT-IMAGE SCANS, 2002-2006",
+  "note": "Those years scan as flat images and defeat every text index. Method that works: search the ocrmac output for text runs that are EXACTLY a target's name, rank them by type height, then tell a caption from a list by counting same-height neighbours. A caption stands alone in its size; a roster line has siblings. Two frames came out that nothing else could see. The Spirit Master adverts yield to the same idea: the advert's repeating border is itself indexed, so a box-union renders the whole advert in one step rather than hunting it by eye."
  }
 ]
