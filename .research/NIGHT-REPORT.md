@@ -15262,3 +15262,112 @@ The gated `viewcontent.cgi` endpoint on digitalcommons is unchanged, as is the
 no author recorded. PastPerfect Online and headless Chromium were both tried
 against TopSCHOLAR this morning and both failed; the reasons are in
 `SGA-60-AGENT-INFO.md` so they are not retried.
+
+---
+
+# 5 September 2026 — editorial pass
+
+One pull request open, #351, "Research: photographs (rolling)". Merged, after
+two corrections. The three stale August branches named in the standing brief —
+#6, #7 and #8 — are already closed; nothing was left to rescue or close.
+
+## What was in it
+
+A documentation-only diff: 87 files, of which 86 were a `site/` rebuild and one
+was a log entry in `SGA-60-AGENT-INFO.md` §8. No change to `years.json`, no
+change to `photos.json`, no new image. The branch sat two commits behind main,
+so main was merged into it first; the only conflict was `site/network.html`,
+resolved to main's copy and settled by rebuilding.
+
+## What was checked
+
+Because the diff carried no data claims, the review went to the log's
+assertions, which are what tell later runs which questions are answered.
+
+The claim that no leader is missing a portrait was checked against the data
+rather than taken from the report: 73 leader records in `years.json`, every one
+matched to an entry in `photos.json`. It holds. So do the four named targets.
+
+The claim that TopSCHOLAR's `viewcontent.cgi` is still closed was retested from
+this container: landing pages return 200, the download endpoint returns 403 with
+151 KB of bot-check HTML. It holds, and the work it blocks is genuinely blocked.
+
+The four negative findings from the Talisman full texts were re-run against the
+djvu text. Two held: David Bass appears only on the p. 34 group page the archive
+already uses, and the 1987 Millay hits are Beth Ann and Lori Ann, a surname match
+correctly refused.
+
+## What did not hold
+
+The log recorded David Young, Alice Wicks, Mark Chesnut, Chris Millay and Dwight
+Austin as returning "no hits at all in their respective yearbook's full text."
+Two of those five do return hits. Worse, the archive had already found both, and
+described them correctly, in an earlier §8 entry: Young quoted by name in the
+1979 Talisman with no photograph attached, Chesnut indexing to p. 234, which is
+an intramural results table. The newer entry overwrote better knowledge with a
+false negative.
+
+The portrait conclusion was right — neither name yields a usable face — but it
+was written as an absence of evidence rather than as the evidence actually
+found, which is the one thing CLAUDE.md says a miss must never become. A later
+run reading only that sentence would have taken a settled question for an open
+one. Corrected in place, with the earlier finding cross-referenced, rather than
+cut.
+
+One page number went with it. The earlier entry puts the Young quotation on
+p. 291 of the 1979 Talisman; it is p. 289. The printed folio runs one behind the
+archive.org leaf throughout that volume, which the archive's own Thornton
+portrait citation confirms independently (leaf n289, recorded as p. 288).
+
+## What was rescued
+
+Young's quotation was worth more than the portrait hunt made of it. The 1979
+Talisman records the revised ASG constitution being put to the student body at
+the April general elections and approved: 24 separate races for the 24
+representative-at-large seats, Young on the reasoning behind splitting them, and
+the activities vice president's duties redrawn to match the new university
+center board the Regents had funded that spring. The archive held two entries
+saying a constitution passed and not one word about what it did. Written up as
+an event in 1978-79, cited to 1979 Talisman p. 289 (leaf n290). It is a distinct
+act from the congressional approval of 30 November 1978, and the duplicate
+checker does not pair it with either existing entry.
+
+## Traps
+
+No advance notice used as a report. No committee chair recorded as an officer.
+The one surname-only match in the diff was the Millay case, and the run refused
+it correctly. No changed-surname duplicate. The April 1979 result files forward
+correctly. Nothing touches the settled facts. Nothing about a living person goes
+beyond its cited source.
+
+The six pairs `check_duplicates.py` reports all predate this branch and are all
+genuine separate events: three same-day 1991 bills, which the rule expressly
+allows, and three approve-then-act pairs weeks or months apart.
+
+## Counts
+
+`build.py` clean, `check_data.py` and `check_contrib.py` exit 0. 61 academic
+years, 1,981 events, 2,654 recorded terms of office held by 1,818 people, 2,614
+of those terms (98%) carrying an account of what the person did, 41 people
+recorded under more than one name. 60 people have been president.
+
+## Still open
+
+The attribution footer landed on the review comment on #351, the same way it
+landed on #337, and for the same reason: the harness appends it and direct
+GitHub REST is refused in these containers, so the comment cannot be edited
+after posting. The MCP tool set has no method for editing a comment. **It needs
+deleting by hand**, on #351 as on #337. The commits and the merge commit are
+clean — the footer reached no part of the permanent record or the site.
+
+Carried forward untouched from the last pass: the "Will Derryberry" /
+"William Derryberry" split in `photos.json` for 2025-26, still wanting a source
+check on which form the *Herald* and the minutes use; the closed
+`viewcontent.cgi` endpoint and with it the 1993-94 to 2009-10 gap in year
+photographs; and the 431 legislation files with no author recorded.
+
+A note for the photograph routine, left on the pull request as well. The failure
+here was reporting a negative it had not established. When a name is checked and
+what comes back simply is not a photograph, the thing to record is what came
+back. "No hits" and "hits, none of them a face" send the next run in opposite
+directions.
