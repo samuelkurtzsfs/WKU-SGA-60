@@ -4058,9 +4058,35 @@ the caption of the year photograph the archive already holds
 (`1977-78-asg-meeting.jpg`, 1978 Talisman p. 34) — a "light moment" group
 shot naming four people, already used as the year's photograph and already
 judged, by the 31 August run, too weak for an individual portrait crop. No
-new use for it. **David Young** and **Alice Wicks** (1978-79), **Mark
-Chesnut** (1980-81), and **Chris Millay** and **Dwight Austin** (1986-87)
-return no hits at all in their respective yearbook's full text.
+new use for it. **Alice Wicks** (1978-79) appears in the 1979 index with no
+page reference beside her name, and **Chris Millay** and **Dwight Austin**
+(1986-87) return nothing: the 1987 Millay hits are Beth Ann and Lori Ann
+Millay, a surname match and not him.
+
+*Corrected by the editor, 5 September 2026.* This entry originally read that
+David Young, Alice Wicks, Mark Chesnut, Chris Millay and Dwight Austin
+"return no hits at all in their respective yearbook's full text." Two of
+those five do return hits, and the archive had already found both: see the
+earlier §8 passage above, which records **David Young** quoted by name in
+the 1979 Talisman with no photograph of him attached, and **Mark Chesnut**
+indexing to p. 234, an intramural sports results table rather than a
+photograph. Re-checked against the djvu text on 5 September and both hold:
+Young is quoted on p. 289 (leaf n290), Chesnut sits in the intramural
+champions table. The portrait conclusion — neither name yields a usable
+face — was right, but it was recorded as an absence of evidence rather than
+as the evidence actually found, which is the one thing CLAUDE.md says a miss
+must never become. A future run reading only the uncorrected sentence would
+have taken a searched-and-answered question for an unsearched one.
+
+The earlier passage puts the Young quote on p. 291; it is p. 289. The
+printed folio runs one behind the archive.org leaf throughout this volume,
+which the archive's own Thornton portrait citation confirms (leaf n289,
+recorded as p. 288). The substance of that entry is unaffected.
+
+Young's quotation was also worth more than the portrait hunt made of it: it
+records what the 1978-79 constitution actually did, where the archive had
+only the bare fact that one passed. Written up as an event in 1978-79 on
+5 September.
 
 Tried `wkuherald.com`'s media search against ten more names still missing a
 portrait, spanning the recent Senate roster and the untried end of the
