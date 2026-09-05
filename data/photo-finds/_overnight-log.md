@@ -132,3 +132,64 @@ year photograph named in `SGA-60-AGENT-INFO.md` §8.4.
 - **2026-09-04 23:37** — **1,148 portraits, 1,051/1861 with a face, 810 none, 211 officers without one.** Landed 8 from 1993-96, but **all eight were rank-and-file senators and the officer count did not move** — the same drift the 1997-2001 agent showed. Redirected it. This is now a known failure mode rather than a one-off: the general worklist is far longer than the officers list, so a volume-wide grid sweep naturally lands on whoever it hits unless the agent filters its matches against the officers file before cutting. Worth building into the brief rather than correcting each time.
 - **2026-09-05 00:10** — **1,146 portraits, 1,049/1861 with a face, 812 none, 209 officers without one.** Two corrections of mine this cycle, both worth recording. **First: I published four unproven identifications.** Researchers flag a find `FACE PROVED, PERSON NOT PROVED` and leave it for the editor; merge_photo_finds.py never read that field, so John Chestnut, Grace Hancock, Lori Doolin and Curtis Street went straight onto the site with the words written for me unread. Pulled, reasoning kept in the withdrawal register, and the merge now refuses any entry carrying the flag. **Second: my mid-run redirect was wrong.** I told the 1993-96 agent its officers list had not moved; it had been finished before the agent arrived — all 39 accounted for, 8 with portraits and 31 with written reasons. My brief was built on stale counts, and it also asked the agent to build a Herald OCR index its predecessor had already built. Read the block's own notes before briefing it. The run itself was good: 11 faces, two officers won by overturning earlier refusals, and the **People Poll** identified as the most provable newsprint portrait source of the era — the name sits directly beneath its own frame, so the pairing cannot slide. Indexed 1993-1999 and spent there; worth re-running on every other decade.
 - **2026-09-05 00:36** — **1,146 portraits, 1,049/1861 with a face, 812 none, 209 officers without one.** No agents were running; nothing new to land. Surveyed the blocks by their **notes** rather than their worklist counts, which is the lesson from getting the last brief wrong. Six of nine are genuinely closed out — officers either photographed or documented as searched-and-not-found. Only two are open: **1966-79 has 19 officers and no notes file at all**, and 1980-87 has 15 officers and 2 notes. Launched on 1966-79, with the officers-filter instruction built into the brief this time rather than corrected after, and with the People Poll method to try on a decade it has never been tried on.
+
+### 2026-09-05 14:00 — separate scheduled run, single pass
+
+Not part of the overnight fleet above; the cloud photograph routine picking
+up cold. Confirmed again what every run since 20 August has found: all four
+named priority portraits (Todd, Dawson, Johnson, Gilley) and all 61 leader
+records already carry a portrait, and every year already carries a year
+photograph except the twelve long-standing gaps in `SGA-60-AGENT-INFO.md`
+§8.4 (1993-94 through 1997-98, 2000-01, 2002-03, 2003-04, 2005-06 through
+2006-07, 2008-09, 2009-10).
+
+Spent most of the run chasing what looked like a real landing gap: 19 files
+sit in `data/photos/` with no entry in `photos.json` at all. Checked every
+one against the block files in `data/photo-finds/` before touching
+anything. None were an actual gap. Twelve are superseded low-resolution
+duplicates that a better version already replaced under a different
+filename — Dan Knowles, Dwight Adkins, Deanna Mills, Jeff Welch, Mark
+Miller, Mistianna Holcomb, Deven Delano, Jason Loehr, Carlene Lodmell,
+Brent Ditto, Joe Morel and Evelina Petkova all already carry a portrait,
+most of them the higher-quality Spirit Masters studio print that a
+predecessor filed under a `-spirit`/alternate name and correctly left the
+old newsprint crop sitting unreferenced rather than delete it. Five more
+are the four names already on record as wrongly published and pulled on 5
+September (John Chestnut, Grace Hancock, Lori Doolin, Curtis Street) plus
+Amy Renigar, all flagged by their own researcher `FACE PROVED, PERSON NOT
+PROVED` and correctly held back. The last two, Logan Horrall and Blake
+Bowden, are both explicit refusals already recorded in `_do-not-use.json`
+— Horrall's tie to the 2009-10 senator is a surname alone across seven
+years, and Bowden's only frame is from the year after his term and never
+mentions student government. Left all nineteen files exactly where they
+are; nothing to add, nothing safe to delete.
+
+Ran a fresh sweep of wkuherald.com (not rate-limited, unlike TopSCHOLAR)
+for a sample of executive/Senate officers still without a portrait:
+Kendrick Bryan, Keyana Boka, Nathan Cherry, Ryan Richardson, Paige Settles,
+Justin Goins, Seth Church, David Spalding, Cody Cox, Abbey Norvell, Kate
+Hart, Preston Romanov, Antonina Clementi. Two leads looked promising and
+both failed on inspection: the 20 April 2016 election-night photograph
+naming Kate Hart and Hannah Neeper (`_do-not-use.json` already carries
+Neeper's half of this; confirmed again independently — both women have
+their faces buried in a hug, nothing to crop) and a 24 September 2020
+town-hall debate photograph naming Abbey Norvell, whose figures are all
+out of focus in the background. No new officer portrait this run.
+
+Also confirmed a source gap worth recording: wkuherald.com's WordPress
+archive returns **zero posts of any kind** between roughly September 2005
+and September 2010 (`after`/`before` queries against that whole window
+come back empty), so it cannot supply the year-photograph for 2005-06,
+2006-07, 2008-09 or 2009-10 the way it did for the 2016-2026 blocks. The
+2002-04 posts that do exist carry no attached media in the WordPress
+library at all, so wkuherald.com is a dead end for the whole pre-2010
+year-photograph gap, not only the mid-decade hole. Re-tested
+`viewcontent.cgi` once more (four leads, 3 seconds apart): still HTTP 403,
+the Cloudflare challenge, matching every report since 25 August. No change
+to the twelve-year gap.
+
+No changes to `data/photos.json` or any photo file this run. Merged
+`origin/main` (six days of other routines' work, including 1,158 leader
+portraits now live) into `research-photos` cleanly, no conflicts.
+`build.py` and `check_data.py` both pass clean: 61 years, 1981 events, 60
+presidents, "the archive checks out against its own rules."
