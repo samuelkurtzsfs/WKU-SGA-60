@@ -422,8 +422,8 @@
   "note": "Those years scan as flat images and defeat every text index. Method that works: search the ocrmac output for text runs that are EXACTLY a target's name, rank them by type height, then tell a caption from a list by counting same-height neighbours. A caption stands alone in its size; a roster line has siblings. Two frames came out that nothing else could see. The Spirit Master adverts yield to the same idea: the advert's repeating border is itself indexed, so a box-union renders the whole advert in one step rather than hunting it by eye."
  },
  {
-  "topic": "SPIRIT MASTERS CLASS COMPOSITES — THE BEST UNWORKED LEAD LEFT",
-  "note": "TopSCHOLAR stu_org/321, board 4, is twenty-four studio portraits each with the name printed beside it: one name, one face, no positional reasoning needed at all. Five portraits came off that single board in one run. **Four more scrapbooks have never been opened: 1985-86, 1996-97, 2001-02 and 2004-05.** This is the highest-yield unworked source in the archive. Note the 1994-95 board is a different thing, an unlabelled collage, already checked and closed."
+  "topic": "SPIRIT MASTERS SCRAPBOOKS — SERIES CLOSED",
+  "note": "CLOSED. All eight scrapbooks have now been opened and every named composite board read: six boards across six volumes, 124 names checked one by one against all 1,858 people in the archive. It was the highest-yield unworked source and it delivered — five new faces and eleven upgrades, including a 1400x1358 studio portrait of president Jamie Sears off her own campaign poster pasted whole into the 2001-02 book. Nothing is left to work. **There are eight scrapbooks, not nine: stu_org/325 is the Big Red Marching Band Newsletter**, which will cost somebody a download if they do not know. 1985-86 and 2011-12 have no composite at all. Pairing was proved separately on each board and the method is written into each entry."
  },
  {
   "topic": "TRUSTWORTHY NEGATIVE: 70 PEOPLE ARE IN NO PORTRAIT GRID 1988-1993",
@@ -436,5 +436,15 @@
  {
   "topic": "THE 1991 TALISMAN SCAN IS MISSING PRINTED PAGE 91",
   "note": "Leaf 48 photographs page 90 twice. The senior surname run Dow to Gad is lost; the back index names sixteen people who were on it. Every other leaf of four spread volumes was tested for the same fault and this is the only one. Companion to the 1989 missing D-E index run and the 2015 missing student-portraits section."
+ },
+ {
+  "kind": "SOURCE CLOSED: all eight Spirit Masters scrapbooks now opened",
+  "name": "WKU Spirit Masters scrapbooks, stu_org/321-329",
+  "year": "1985-86 to 2011-12",
+  "detail": "Supersedes the earlier entry calling four of these the highest-yield unworked source in the archive. All of them have now been opened and the series is finished. THERE ARE EIGHT, NOT NINE: 321 (1989-90), 322 (1994-95), 323 (2001-02), 324 (1985-86), 326 (2011-12), 327 (2004-05), 328 (2007-08), 329 (1996-97). stu_org/325 is the Big Red Marching Band Newsletter and is not one of them; do not spend a download on it. WHICH ONES HAVE A NAMED COMPOSITE: 321 has the best, twenty-four printed cards each with the name set under its own photograph; 329 has two, a photographed board of twenty-three red-matted portraits with separate nameplates at p. 3 and the printed class brochure at pp. 21-22 which carries the twenty-fourth member; 323 has the printed 2001-02 brochure cut into two-portrait cards at pp. 38-39, thirty members with home town, class and major; 327 has a hand-lettered chevron board of twenty-nine at pp. 4-5; 328 has the 2007-08 display board. WHICH HAVE NOTHING: 322 (1994-95) is an unlabelled collage, checked and closed long ago, though its p. 14 holds SGA's own 1994-95 Congress roster. 324 (1985-86) has no board at all, only a hand-lettered 'Our Officers' spread at pp. 10-11 whose eleven names are in no year of years.json. 326 (2011-12) has no board and no named portraits, only group snapshots. TOTAL YIELD OF THE FULL SWEEP: every name on every board has been checked against all 1,858 people in years.json. Seven new faces and ten upgrades in all; the detail and the full class rosters are in data/photo-finds/spirit-notes.json, one volume record each. The routine hit rate is low because Spirit Masters were an ambassador corps, not student government: of 24 named in 1989-90, 24 in 1996-97, 30 in 2001-02 and 29 in 2004-05, only eleven, eight, six and six respectively are in the SGA record at all. Do not reopen these volumes.",
+  "src": {
+   "label": "WKU Spirit Masters Scrapbooks, WKU Archives UA12/2/16, Student Organizations",
+   "url": "https://digitalcommons.wku.edu/stu_org/321/"
+  }
  }
 ]
