@@ -16257,3 +16257,120 @@ year photographs, now mapped well enough to know that ten of those years will
 never be answered from TopSCHOLAR's yearbook collection and need *Herald* pages
 or a UA1C search instead; the 431 legislation files with no author recorded;
 John Lyne against Larry Zielke for 1970-71; and David Payne 1982-83.
+
+# 6 September 2026, early morning — an empty queue, and the reason for it found
+
+No pull request was open. The queue has now been empty on all but one pass for
+three weeks, and three consecutive reports have carried that as an unexplained
+"supply problem" with nothing behind it but the observation that branches had
+stopped moving. This pass went and looked at the routines themselves, and the
+answer is plain: they are switched off.
+
+## Fourteen of the sixteen routines are disabled
+
+The account holds sixteen scheduled routines. Two are enabled:
+
+- **SGA 60 - editor**, every three hours (`17 0-23/3 * * *`) — this one.
+- **SGA 60 - portraits**, every six hours (`52 1-23/6 * * *`) — the photograph
+  routine, which is why `research-photos` has been the only branch moving.
+
+The other fourteen are disabled, among them every routine that produces the
+history this editor exists to check:
+
+| routine | last ran | cron |
+|---|---|---|
+| SGA 60 - person profiles | 24 Aug | `7 */2 * * *` |
+| SGA 60 - backlog | 25 Aug | `23 0-23/4 * * *` |
+| SGA 60 - senate rolls | 25 Aug | `41 2-23/4 * * *` |
+| SGA 60 - 1966-1979 | 5 Aug | `5 */3 * * *` |
+| SGA 60 - the 1980s | 5 Aug | `5 */3 * * *` |
+| SGA 60 - the 1990s | 5 Aug | `0 1-23/3 * * *` |
+| SGA 60 - the 2000s | 5 Aug | `0 1-23/3 * * *` |
+| SGA 60 - the 2010s | 5 Aug | `0 2-23/3 * * *` |
+| SGA 60 - the 2020s | 5 Aug | `0 2-23/3 * * *` |
+| SGA 60 - photographs (hourly, superseded) | 5 Aug | `51 * * * *` |
+| SGA 60 - legislation harvest | 4 Aug | `0 9 * * *` |
+
+Every last run recorded is `SUCCEEDED`. None of them failed, ran out, or broke.
+Every one carries an empty `ended_reason` and an empty `suspension_reason`,
+which is the platform's way of saying a person paused it — not that it was
+disabled automatically after failing, and not that it is on hold behind a
+subscription. So the standing description of this as routines that have "gone
+silent" was wrong in a way worth correcting: nothing has gone wrong with them.
+They were turned off, the six decade routines a month ago and the other three in
+the last week of August, and nobody turned them back on.
+
+This is not an editor's call to reverse, and it has not been reversed here. But
+it is now a fact with a cause and a one-action remedy rather than a mystery, and
+it goes out with tonight's notification with the routine names attached so the
+remedy can actually be applied.
+
+## The queue, and the three branches this pass was told to expect
+
+Zero pull requests open. #6, #7 and #8 are not stale — they were closed on and
+after 18 August, and the instruction to rescue or close them is now out of date.
+The 4 August branches behind them are still on origin and still what
+`AGENT-LANDING.md` describes: superseded snapshots with no merge base.
+
+That last property has spread. Of the sixteen `research-*` branches on origin,
+**fifteen now have no merge base with `main`** — not only the six from 4 August
+but the roster branches of 31 August and the editor branches of 1 September as
+well. `main` itself is seventy commits deep and its root commit is dated
+4 September, and it took a non-fast-forward update during this run. The history
+is being rewritten often enough that any branch not cut from the current tip is
+orphaned within days. `research-photos` is the sole exception and the only branch
+that can still be merged normally. The next pass should assume a branch older
+than about a day cannot be merged and must be reconciled by file contents, as
+`AGENT-LANDING.md` already prescribes for the 4 August six.
+
+## Nothing was lost in the rewriting, which was worth proving rather than assuming
+
+A history that is repeatedly force-pushed is exactly where published work
+quietly disappears, so the current tip was diffed against the older one this
+container had cloned. `main` gained 5,799 lines across 155 files and lost 419,
+and the losses are structural or supersessions rather than deletions.
+
+The one that looked like a real loss was not. Two "Note for the editor" asides
+about whether the 1981-82 president is the same David Payne who was ASG
+treasurer in the 1970s are gone from `years.json` by that wording. The caution
+itself survives, rewritten into the officer notes and profiles where readers see
+it: that the identification is not established by any source found so far and
+the archive should not merge the two without one. That is the improvement the
+previous pass described as making the question honest on the page without
+answering it. The withdrawal of the David Bass portrait holds — there is no
+leaders row for him — and the 1978 *Talisman* p. 34 citation correction is in
+place on the year photograph whose caption names him.
+
+## The build, run against `main` rather than against any branch
+
+`build.py` completes cleanly. `check_data.py` and `check_contrib.py` both exit 0,
+the latter confirming the drop box still refuses `main`, a disguised `main`, a
+ref path and another agent's branch. `check_duplicates.py` returns the same six
+pairs it has returned for several passes, every one already published and none
+new: the three designated-driver entries of November 1997 to February 1998, the
+student regent advisory committee bill and its failure nine days later, the civil
+liberties suit and ASG's later endorsement of it, the two plus/minus grading
+entries a month apart, and the three separate bills of 1 September 1991. Read
+again rather than waved through. None is a duplicate.
+
+## Merged
+
+Nothing to merge. No pull request existed and no change to `data/` was made by
+this pass.
+
+## Counts
+
+61 years, 1,982 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) carrying an account of what the person
+did; 41 people recorded under more than one spelling. 297 documents, 1,111
+legislation files, 4,972 records in the search index.
+
+## Still open
+
+The supply problem, now with its cause: eleven research routines paused, nine of
+them for a month, and only the photograph routine feeding the archive. Carried
+forward unchanged: the closed `viewcontent.cgi` endpoint; the twelve-year gap in
+year photographs, of which ten years cannot be answered from TopSCHOLAR's
+yearbook collection at all; the 431 legislation files with no author recorded;
+John Lyne against Larry Zielke for 1970-71; and David Payne 1982-83. New: every
+research branch but one is now orphaned from `main`.
