@@ -22,8 +22,9 @@
    "people_on_it": 11
   },
   "1979": {
-   "page": "336",
-   "people_on_it": 9
+   "page": "288-289",
+   "people_on_it": 9,
+   "corrected": "6 Sep 2026: the earlier guess of 336 is the Fraternities section. The real ASG pages are 288-289, checked against the printed folios."
   },
   "1980": {
    "page": "268",
@@ -1522,6 +1523,6 @@
    ]
   }
  },
- "how_to_use_the_page_numbers": "The printed page numbers here come from the volume's own back index and are sound. Turning one into a leaf is not. Verified on 1976: leaf minus three gives the printed page (leaf 270 is p. 267, leaf 307 is p. 304, leaf 308 is p. 305), and 1972 runs the same. But the OCR text attached to a leaf can carry captions from pages several leaves away, so the leaf a search hit lands on is a rough pointer and not where the photograph is. Fetch the page, read the printed folio in the corner, and move from there. Three fetches went on one person before that was clear.",
+ "how_to_use_the_page_numbers": "The printed page numbers here come from the volume's own back index and are sound. Turning one into a leaf is not. Verified on 1976: leaf minus three gives the printed page (leaf 270 is p. 267, leaf 307 is p. 304, leaf 308 is p. 305), and 1972 runs the same. But the OCR text attached to a leaf can carry captions from pages several leaves away, so the leaf a search hit lands on is a rough pointer and not where the photograph is. Fetch the page, read the printed folio in the corner, and move from there. Three fetches went on one person before that was clear.  WARNING on 1979: its leaf offset is MINUS ONE, not the minus three that holds for 1972, 1976, 1977 and 1987, and it VARIES WITHIN THE VOLUME (leaf n127 is printed page 124). Always read the printed folio off the page rather than trusting a fixed offset.",
  "what_the_1976_cohort_actually_have": "For the people on the 1976 ASG attendance roll (printed p. 63, a text table with no photograph), the second page their index entry gives is an organisation or Greek group photograph, not a class portrait grid. Patty Campbell is in a sixty-odd-woman Alpha Delta Pi photograph on steps, Kathi Tabor and Jenny Parker in sorority features, Debbie Marcum in a twenty-person Speech Pathology Club frame. Only the last of those has rows small enough to count. Do not expect class grids from this volume for this cohort."
 }
