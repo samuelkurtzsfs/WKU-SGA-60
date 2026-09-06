@@ -16476,3 +16476,127 @@ request in a night, carrying no new history, is what an archive looks like when
 almost all of its research routines are paused. The photograph routine has now
 also reported for several cycles that it cannot run at all because its machine
 is on battery power.
+
+# 6 September 2026, midday — no pull requests, so the live site was audited instead
+
+The queue was empty. No pull request has been open since #364 was merged at
+09:24 this morning, and the three branches this pass is told to expect — #6, #7
+and #8 of 4 August — have been closed since 18 August. Eleven of the thirteen
+research routines remain disabled; only the editor and the portrait routine are
+enabled, which is why nothing arrives to review. That has now been the finding
+of four consecutive passes.
+
+With nothing to merge, the run was spent on what an editor is for when the
+supply stops: testing what is already published. Main auto-deploys, so
+everything audited below was live while it was being checked.
+
+## Ten claims drawn at random from the whole archive
+
+A seeded random sample of ten events out of 1,982, spread from 1969 to 2022,
+each opened at its cited source.
+
+- **1972-09-01, registration week.** The 1973 *Talisman* full text carries the
+  sentence almost word for word, and names the Activity Committee under
+  vice-president Mike Fiorella. Holds.
+- **1969-09-23, John Lyne on the music poll.** Herald 49:2 indexes both the Lyne
+  piece and Mike Harris on Congress dropping the survey-validity discussion.
+  Holds.
+- **1981-11-05, the budget protest.** Herald 57:21 indexes Ellen Banahan on ASG
+  supporting the protest and Wilma Norton on the petition to the Council on
+  Higher Education. Holds.
+- **1998-04-28, the $15,000 sign.** Herald 73:52 indexes the People Poll, the
+  column against the sign, the two duelling letters and the Detre and Cosby
+  candidate profiles. Holds.
+- **1986-04-02, the Financial Advisory Council.** Failed. See below.
+- **1994-11-08, the band council resolutions.** Resolution 94-17-F is dated
+  8 November 1994 and asks for the Diddle-to-Van Meter shuttle, as written. The
+  companion 94-16-F was described in the body but not cited; it is in this
+  archive's own legislation index, and is now cited as a second source.
+- **1989-11-28, Big Red Day.** True but under-cited. See below.
+- **2003-09-30, the shuttle shelter.** The Herald report confirms the $8,000
+  request, Patti Johnson, the Campus Improvements Committee and the University
+  Senate appointments. The entry correctly reports it as business set for the
+  next meeting and claims no outcome, which is the advance-notice rule kept.
+  Holds.
+- **2003-12-04, student addresses.** Confirmed: passed Tuesday, permission
+  before publication. Holds.
+- **2022-09-28, the Bowling Green Pride sponsorship.** Confirmed to the number:
+  Senator Meghan Pierce, $250 from the Legislative Directory, Rainbow Sponsor,
+  tabling space, passed; and the veteran scholarship announced the same night.
+  Holds.
+
+## Big Red Day: rescued rather than cut
+
+The entry cited Resolution 89-9-F but its second sentence described what the
+minutes of 14 and 28 November 1989 record — a claim the cited page cannot
+support. Both sets of minutes exist. The record of 14 November lists the
+counselling centre, Big Red's tenth birthday, a leadership reception and
+legislation; that of 28 November lists the tuition increase and the birthday.
+The sentence was true and unsourced, so it was split: the 28 November half stays
+with the resolution entry and now carries the minutes as a second source, and
+the 14 November half became its own entry citing its own minutes. Nothing was
+lost and nothing is now uncited.
+
+## A misread date, and the sweep it prompted
+
+TopSCHOLAR prints legislation dates day-first. `4-2-1986` is 4 February, and the
+Financial Advisory Council entry had it as 2 April. That is a mechanical error
+that repeats, so all 193 events citing an item in the SGA legislation collection
+were checked against the dates their own pages print, one request at a time.
+
+163 of the 177 that carry dates match the record exactly. Three were wrong in
+the same way, and all three are fixed:
+
+- Bill 85-15-F, the ASG discount card: was 12 October 1985, record reads
+  3 to 10 December 1985.
+- Bill 86-3-S, the Financial Advisory Council: was 2 April 1986, record reads
+  28 January to 4 February 1986.
+- Bill 86-13-S, the commendation of President McKinney: was 3 April 1986, record
+  reads 4 March 1986. The title called the congress "outgoing" on the strength
+  of the wrong date and no longer does; 4 March is the week the *Herald*
+  reported McKinney would not seek re-election.
+
+Eleven others sit within a few days of their record's dates rather than on them,
+which is what taking the meeting date rather than the filing date looks like and
+is not evidence of an error. One is a real question and is left open: the free
+USA Today pilot, Bill 00-3-S, is filed in 1999-00 and dated 22 February 2000,
+but its TopSCHOLAR record reads 26 September 2000. The bill number says spring
+2000 and the record says autumn; nothing here settles which, and it was not
+moved on a guess.
+
+The same audit is running against the other 483 citations into the SGA
+collection — minutes, reports and correspondence — and its result will be in the
+next entry.
+
+## A campus tag that did not belong
+
+The 1977 entry on Bob Moore questioning freshman campaign spending was flagged
+`campus: true`. An ASG president, ASG's own class elections and a *Herald*
+editorial exchange with him is student government's own business, not the world
+around it. The tag is worth nothing if it is on everything, so it was removed.
+Twenty-three campus-context events remain out of 1,983.
+
+## The other checks
+
+`check_data.py` and `check_contrib.py` exit 0 and `build.py` completes cleanly.
+`check_duplicates.py` returns the same six pairs as every recent pass; read
+again, and the standing judgement holds — a bill and the report of its result
+months later are two events, an introduction and a defeat are two events, and
+the three bills of 1 September 1991 are the rule's own stated exception. The new
+14 November 1989 entry raised no new pair. Every source host on the site was
+listed: all 1,983 events cite WKU's archives, the *Herald*, the *Talisman*, the
+Bowling Green *Daily News*, WKMS or FactCheck, and nothing else.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) carrying an account of what the person
+did; 41 people recorded under more than one spelling. 297 documents, 1,111
+legislation files, 4,973 records in the search index, 1,160 portraits.
+
+## Still open
+
+Unchanged: the closed `viewcontent.cgi` endpoint; the 1993 to 2010 gap in year
+photographs; the 431 legislation files with no author recorded; John Lyne
+against Larry Zielke for 1970-71; and whether the 1981-82 president is the 1970s
+ASG treasurer of the same name. New: Bill 00-3-S and its two dates, above.
