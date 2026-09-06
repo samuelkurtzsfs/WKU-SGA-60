@@ -535,5 +535,29 @@
   "year": "1995-96",
   "file": "https://digitalcommons.wku.edu/dlsc_ua_records/2982",
   "reason": "Withheld: the researcher flagged this FACE PROVED, PERSON NOT PROVED and wrote the reasoning for the editor. FACE PROVED, PERSON NOT PROVED - FOR THE EDITOR"
+ },
+ {
+  "name": "Kate Hart",
+  "year": "2016-17",
+  "file": "https://wkuherald.com/wp-content/uploads/2016/04/7acb7747154cad4e475308f8bf1d9288.jpg",
+  "reason": "Herald caption, results announcement of 20 Apr 2016 (published 21 Apr, Michael Noble Jr./HERALD): it names Richey 'left' hugging Administrative Vice President Hannah Neeper, and Executive Vice President Kate Hart hugging Colton Hushell. Two hugging pairs, and the caption identifies both women by name and title. Editor checked the frame itself, 6 Sep 2026: Neeper's face is entirely hidden. Hart's is partly visible in the right-hand pair, turned outward against Hushell's chest, but pressed and distorted mid-hug and never a usable portrait. An earlier version of this note said Richey was the only face visible in the frame; that was wrong (Hushell and several bystanders are visible), and the correction is kept here so a later pass can judge the call rather than inherit it. The rejection stands for both women. Neeper already had her own entry against this same URL before this one was written; that entry stands and is not repeated here."
+ },
+ {
+  "name": "Stephen Mayer",
+  "year": "2018-19",
+  "file": "https://wkuherald.com/wp-content/uploads/2018/04/252a57c863862af32ec61481111279fc-1.jpg",
+  "reason": "Herald caption, 18 Apr 2018: the Mayer, Edmonds and Anderson campaign reacting to their election victory. Three names, three faces clearly visible in the front row, but no left-to-right order is given in the caption or the article, and the three names are the ticket's own order of office, not an order in the frame. Nothing in the picture lets a viewer assign a name to a face independently, and gender is not a substitute: guessing which front-row face is which name is the David Bass problem. Filed here as 2018-19 because that is the year the ticket served; this entry was written as 2017-18, which is the academic year of the April election rather than of the term, and 2017-18 was Andi Dahmer's."
+ },
+ {
+  "name": "Garrett Edmonds",
+  "year": "2018-19",
+  "file": "https://wkuherald.com/wp-content/uploads/2018/04/252a57c863862af32ec61481111279fc-1.jpg",
+  "reason": "Same frame and same problem as the Stephen Mayer entry above: three names, no stated order."
+ },
+ {
+  "name": "Harper Anderson",
+  "year": "2018-19",
+  "file": "https://wkuherald.com/wp-content/uploads/2018/04/252a57c863862af32ec61481111279fc-1.jpg",
+  "reason": "Same frame and same problem as the Stephen Mayer entry above: three names, no stated order."
  }
 ]
