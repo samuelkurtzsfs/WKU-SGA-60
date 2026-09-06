@@ -16821,3 +16821,120 @@ records that fifteen of the sixteen research branches are already orphaned by
 earlier rewrites, and a cosmetic tidy is not worth orphaning another. The
 correction belongs in the history rather than in place of it, which is this
 project's own rule about corrections generally.
+
+# 6 September 2026, night: the photograph branch again, and an election year filed a year early
+
+One pull request open, #370, the rolling photograph hunt, reopened on the same
+branch after #6 was closed unmerged. Two commits, two files, thirty-four lines.
+Merged, after three corrections.
+
+Nothing in it touched the published record. Both files it changed,
+`_do-not-use.json` and `_overnight-log.md`, are the photograph agents' own
+coordination layer; `photos.json` and `years.json` were untouched, and the
+rebuild produced no change to a single tracked page. That is worth saying
+plainly because it sets what was at stake: not a wrong fact on the site, but a
+wrong instruction to the next pass. The register exists to stop a researcher
+re-finding a frame that has already been rejected, and an entry that misstates
+the year or misdescribes the picture teaches the next run something false.
+
+## What it claimed, and what held
+
+Six checkable claims, which is fewer than the eight a sample would take, so all
+six were checked rather than sampled.
+
+Both *Herald* captions are verbatim. They were read back off the paper's own
+attachment records rather than off the research note: the April 2016 caption is
+the attachment title on `richey-wins-high-turnout-sga-election`, published
+21 April and credited to Michael Noble Jr.; the April 2018 one sits on
+`sga-election-results-announced-formerly-disqualified-mea-ticket-elected`. The
+`wkuherald.com` media library returns `x-wp-total: 0` for the whole of 2004, so
+the run's new negative result about the 1993-2010 photograph gap stands.
+archive.org holds Talisman identifiers from 1943 to 1987 and none after, as the
+log says. `viewcontent.cgi` on TopSCHOLAR is still 403 to a browser-headed
+request. And every one of the 73 leader records across the 61 years carries a
+portrait, so the 61/61 the run opens with is true.
+
+Both photographs were opened and looked at, rather than taken on the caption.
+That is what turned up two of the three corrections.
+
+## The April election filed against the wrong year
+
+Stephen Mayer, Garrett Edmonds and Harper Anderson were entered against
+**2017-18**. They served **2018-19**. 2017-18 was Andi Dahmer's year.
+
+This is the oldest trap in the brief and it caught a careful run: the frame is
+election-night coverage dated 18 April 2018, and the year written down was the
+academic year the election fell in rather than the year the winners went on to
+serve. The file was already contradicting itself, which is how it was caught —
+the register's own earlier Harper Anderson entry, written against a different
+frame, correctly reads 2018-19. Refiled, with the correction written into the
+note rather than made silently, as this project does corrections.
+
+## A frame described as something it is not
+
+The 2016 entry said Richey was "the only face actually visible in the frame."
+He is not. Hushell is fully visible, and so are half a dozen bystanders. Neeper
+is described correctly — she has her back to the camera in the left pair and
+there is no face to cut. But Hart's face is partly visible in the right-hand
+pair, turned outward against Hushell's chest, pressed and distorted mid-hug.
+
+The rejection is right and stands for both women: a face mashed sideways in a
+hug is not a portrait. What was wrong was the reason given for it. An entry
+whose description does not match the picture cannot be audited by whoever reads
+it next; they either trust it blindly or re-do the whole search. The note now
+describes the frame accurately and records what it previously said, so the call
+can be judged rather than inherited.
+
+## A duplicate dropped
+
+The run's Hannah Neeper entry was the second in the register against that
+identical URL. One was already there, and the older one is better written — it
+places her in the left pair and notes that the 2016-04-21 upload is the same
+file. The new one was removed and the Kate Hart entry, which is genuinely new,
+now points at it. Four new frames landed, not five.
+
+The register still holds two duplicate name-and-URL pairs that predate this
+branch, Antonina Clementi and Annalise Finch. They are not this branch's and
+were left for a pass that can look at both frames properly.
+
+## The rejection that needed no correction
+
+The April 2018 photograph is refused for the right reason and the reasoning is
+worth keeping. Three faces are clearly visible in the front row and the caption
+names three people, but "Mayer, Edmonds and Anderson" is the ticket's order of
+office, not an order in the frame, and nothing in the picture assigns a name to
+a face. Two of the three names read as men's and one of the three front-row
+faces reads as a woman's, which is exactly the inference that must be refused:
+it is a guess about living people, and it is the David Bass problem the register
+already carries a warning about.
+
+## Checks
+
+`build.py`, `check_data.py` and `check_contrib.py` all clean, before and after
+the corrections. `check_duplicates.py` reports the same six pairs it reported on
+main — the 1972 civil liberties pair, the 2003 plus/minus pair and the three
+same-day 1991 ASG bills, which are separate business and stay separate. None of
+them is this branch's; it never touched `years.json`.
+
+Main moved during the review and the merge conflicted. The conflict was the
+rolling battery heartbeat line, 15:03 against 16:22, and both were kept.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person
+did. 297 documents, 1,111 legislation files, 4,973 records in the search index.
+Unchanged by this merge, as expected of a branch that touched no published file.
+
+## Still open
+
+The queue is empty again. The eleven paused routines are unchanged and still not
+an editor's call to reverse. Mary Fyfe remains unlooked-at, carried from two
+passes back. The twenty-three advance-notice entries flagged in the previous
+pass are still worth the second look it asked for.
+
+The review comment on #370 carries the "Generated by Claude Code" footer, for
+the standing reason already recorded above: the platform appends it and no tool
+available here can edit a comment after it is posted. Nothing in `data/` or the
+generated site carries it and the commits are clean, which is what the rule
+protects.
