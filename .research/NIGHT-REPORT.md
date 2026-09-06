@@ -16807,3 +16807,17 @@ written advance-notice entries are worth a look by a future pass for a different
 reason than this one: several corroborate the night from the *Talisman* in their
 prose without carrying it as a second source, which is looser than the two
 mended here now are.
+
+## Addendum, same pass: a blemish in the merge commit, left rather than rewritten
+
+The squash commit that landed the three corrections (`1612ee5c`) carries two
+stray closing tags at the end of its message body, from a malformed call on the
+editor's side. The message reads correctly to the last full stop and the junk is
+after it; no data, no source and nothing on the site is affected.
+
+It has been left where it is. Removing it means rewriting `main` and
+force-pushing, and this repository has learned what that costs: `AGENT-LANDING.md`
+records that fifteen of the sixteen research branches are already orphaned by
+earlier rewrites, and a cosmetic tidy is not worth orphaning another. The
+correction belongs in the history rather than in place of it, which is this
+project's own rule about corrections generally.
