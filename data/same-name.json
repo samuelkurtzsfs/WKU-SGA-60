@@ -1,0 +1,6 @@
+{
+ "note": "The inverse of name-aliases.json. That file says two spellings are one person; this one says one spelling covers more than one person. The officer pages are keyed by name, so identical names collapse into a single page with a single portrait and a single span of service, which is the archive's own rule against merging people by name broken by the renderer rather than by the record. A name listed here keeps its one page, because splitting the terms between the people would mean deciding something the sources have not established, but the page stops asserting that the terms belong to one person. Adding a name here asserts that the archive holds more than one human under it, so it needs the same kind of source as any other claim. Do not add a name merely because its terms are far apart.",
+ "names": {
+  "David Payne": "The archive holds more than one David Payne and has not established that they are the same man. A David Payne was ASG representative-at-large in 1974-75 and treasurer in 1975-76 and 1976-77; a David Payne succeeded Marcel Bush as ASG president in January 1982. No source found so far links the two, so the terms below are listed together under the one name they share without being claimed as one person's career, and the portrait belongs to the term it is credited to."
+ }
+}

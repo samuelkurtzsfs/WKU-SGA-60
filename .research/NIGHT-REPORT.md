@@ -16034,3 +16034,101 @@ condition already recorded against #337, #351 and #356; the closed
 the 431 legislation files with no author recorded; John Lyne against Larry
 Zielke for 1970-71, and David Payne for 1982-83. New: the person page merging
 everyone of one name, described above.
+
+# 6 September 2026 — an empty queue, and two things the site was saying that it should not
+
+No pull request was open. The four research routines had nothing waiting: the
+last of them pushed at 21:26 on 5 September and that work is already on `main`.
+Every `research-*` branch was measured against `main` by content rather than by
+history, because this clone is shallow and `git merge-base` reports no common
+ancestor for branches that plainly have one. `research-photos` is contained in
+`main` entirely. The 4 August branches are unchanged in their old condition: any
+one of them merged would delete around 489,000 lines, which is the warning in
+`AGENT-LANDING.md` measured rather than repeated.
+
+Nothing was merged from a routine this run. The night went instead on two
+defects that were live on the site, both of them found by the previous pass and
+left in its report.
+
+## The archive was publishing notes written to its own editors
+
+Two paragraphs in `years.json` began "Note for the editor:" and were being
+served to readers — on David Payne's officer page and on the 1975-76 and 1976-77
+year pages. They discussed `years.json` by name, quoted the `year_confidence`
+field, and told a future agent what the archive should and should not do. A
+`profile` is prose for readers, and this was process talk addressed to somebody
+else standing in the middle of it.
+
+Both were rewritten in reader voice with every sourced fact kept: that a David
+Payne succeeded Marcel Bush as ASG president in January 1982, that the Board of
+Regents minutes of 30 January 1982 name him in the office, that the term is
+filed here under 1981-82, and that no source found so far links him to the
+1970s treasurer. What was dropped was the file mechanics and the instruction to
+the next editor. Nothing factual came out.
+
+The citation was checked at the source rather than taken from the record: the
+TopSCHOLAR landing page for the 1982 Board of Regents minutes
+(`digitalcommons.wku.edu/bor/1982/mtgs/1`) describes itself as minutes regarding
+the new SGA president David Payne. It holds.
+
+## The renderer was merging two people the record keeps apart
+
+The larger finding, and the previous pass was right that it wants a fix in
+`build.py` and not in the data. `officer_index` keys people by name, so two
+people spelled identically arrive at one page. `RIVALS` separates only people
+whose spellings differ — the Rob against Robert case — and has nothing to say
+about an exact collision. So `site/o/david-payne.html` presented one man,
+"1974-75 to 1981-82, representative-at-large, Treasurer, President", under one
+face and a headline count of four years in office, while the data underneath it
+said in terms that the 1970s treasurer and the 1981-82 president are not
+established as the same person. The archive's own rule against merging people by
+name, broken by the renderer.
+
+The fix is `data/same-name.json`, the inverse of `name-aliases.json`: that file
+says two spellings are one person, this one says one spelling covers more than
+one. A name listed there keeps its single page, because splitting the terms
+between the two men would mean deciding the thing the sources have not settled.
+What the page stops doing is claiming the terms are one career: the merged span
+and the Service/Span/Offices count are suppressed, and a paragraph says what the
+archive actually holds and that the portrait belongs to the term it is credited
+to.
+
+Only David Payne is listed. Four names in the archive have terms far enough
+apart to raise the question — Brian Shaw 1982-83 and 1990-91, Steve Wilson
+1971-72 and 1978-79, Terry Woodall 2000-01 and 2004-05 — and no source has been
+read on any of them. A gap is not evidence of two people, and asserting one
+would be the same error running the other way. They are left alone and recorded
+here as a question, not a finding.
+
+The change is opt-in and was checked for blast radius: of 1,816 officer pages,
+exactly one now lacks the span and the count, and it is the declared one.
+
+## Merged
+
+Yes. `build.py` completes cleanly, `check_data.py` and `check_contrib.py` exit
+0, and `check_duplicates.py` returns the same six pairs it has returned for
+several passes — all pre-existing on `main` and all genuinely distinct, a bill
+introduced and the same bill failing being two events and three bills on
+1 September 1991 being three. No new historical claim was added this run, so
+there was nothing new to spot-check beyond the one citation the rewrite leans
+on, which was opened and confirmed.
+
+## Counts
+
+61 years, 1,982 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) carrying an account of what the person
+did; 41 people recorded under more than one spelling. 297 documents, 1,111
+legislation files. Unchanged from the previous pass: no history was added or
+removed, only the way two records are worded and one page is rendered.
+
+## Still open
+
+Carried forward: the closed `viewcontent.cgi` endpoint, which still stands
+between readers and the PDF of every TopSCHOLAR document including the Board of
+Regents minutes checked above; the 1993-94 to 2009-10 gap in year photographs;
+the 431 legislation files with no author recorded; John Lyne against Larry
+Zielke for 1970-71, and whether the 1981-82 president is the 1970s treasurer,
+which this run has made honest on the page without answering. New: the three
+same-name candidates above, unexamined; and `1976-77-david-payne.jpg`, still
+referenced nowhere in the built site because a person carries one portrait and
+the earlier year wins.
