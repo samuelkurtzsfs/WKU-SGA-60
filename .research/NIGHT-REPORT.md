@@ -16620,3 +16620,96 @@ and stopped: those are collection and index pages rather than dated items, the
 requests were running at about eighteen seconds each, and finishing would have
 taken two hours for pages that carry no date to check. Not worth the archive's
 patience or the run's time.
+
+# 6 September 2026, evening: the photograph branch merged, with its count corrected
+
+One pull request was open, #367, the rolling photograph branch. Three others
+named in the editor's standing brief — #6 photographs, #7 the 1980s, #8 the
+2020s — were all closed on 18 August and need no further attention; the brief
+is out of date on that point.
+
+## What was in it
+
+Three files, all under `data/photo-finds/`: the overnight log, the archive-gaps
+register, and a new list of officers with no portrait. `build.py` does not read
+that directory, so nothing in the branch would have reached a reader's page. It
+was still tested in full, because these files are what the next photograph run
+acts on, and a wrong number here becomes a wrong decision later.
+
+## What held up
+
+The People Poll finding, which closes the 1966-79 block's one standing open
+question — did the *Herald* run a man-on-the-street column with mugshots before
+1993? It did not. The unfiltered index gives 295 matches for the column, the
+earliest 14 January 1993 and none before it, reproduced here exactly. The four
+record numbers cited resolve to the four issues claimed, and the issue of
+30 October 1970 was opened and read in full: no such column, and no comparable
+one.
+
+The officer count reproduced too. Recomputed independently from `years.json`
+and `photos.json`, the people holding a leader, executive or Senate or Judicial
+office with no portrait in any year came to 191, exactly as the branch said.
+Every name on the list is a real person in the record, and the year lists,
+where they looked short, are consistently the years the person held an office.
+
+## What did not, and what was cut
+
+**The list was not deduped by person, which was the whole point of it.** It
+keyed on raw name strings and never went through `data/name-aliases.json`, the
+repository's own map of one person spelled several ways. Lisa Kappler, Jacob
+Miers and Caroline Simpson were each counted twice under two spellings. Michael
+Klein and Eddie Myers were carried as having no portrait when the archive holds
+one of each, filed under the other spelling. Rebuilt through the alias map: the
+true figure is **186 officeholders without a portrait, 99 of them from 2010-11
+onward**. Merged rows keep the working spellings in an `also_spelled` field.
+
+**The 800 was not wrong and has been put back.** The branch framed 186 as
+replacing a "197-800 range". It does not. 800 is every named person in the
+archive without a face, senators and committee members included, and it remains
+correct for that population; 186 counts officeholders only. Two questions, two
+numbers, both now in the log and each labelled.
+
+**Amarah Reed was written up as already covered.** She is an Associate Justice
+of 2016-17, she has no portrait, and she sits on the branch's own missing list —
+the note contradicted the file beside it. Corrected, and she stays on the list.
+This was the correction worth making: a future run reading that line would have
+struck a real gap off as closed.
+
+**"A definite no" was trimmed to a strong negative.** The People Poll conclusion
+stands and so does the instruction to stop looking. But it rests on four issues
+read in full, not on an exhaustive read of thirteen years, and this project's
+rule is that a miss is not proof of absence. The scope is now stated alongside
+the finding. The 30 October 1970 issue carries 22 headlines, not the 20 claimed.
+
+## Checks
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports six pairs and exits 1, as it does by design when
+it has anything to report; run against main's own data it returns the identical
+six, so none belongs to this branch, and all six are genuinely separate events —
+business at two stages on two dates, or the same-day bills the rule already
+exempts.
+
+Nothing in the branch added an event or a roster entry, so there was no exposure
+to the advance-notice trap, a committee chair miscast as an officer, or an April
+result filed in the wrong year. The sweep's own refusals — Reed, Smith, Chris,
+David, and the Steve Wilson class portrait — were all correct surname-only
+rejections. No settled fact was touched. Nothing about a living person goes
+past their SGA service. Merged.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person
+did; 41 people under more than one spelling. 297 documents, 1,111 legislation
+files, 4,973 records in the search index.
+
+## Still open
+
+Unchanged from the last pass. New from this one: **Mary Fyfe**, named left and
+right in a *Herald* caption beside Amanda Harder, has no portrait and does not
+appear in `years.json` at all — worth one look to see whether she held an office
+before the frame is discarded. And a housekeeping note: the review comment left
+on #367 carries a "Generated by Claude Code" footer that this project's rules
+would strip. It could not be edited off — the token pushes and merges but is
+refused on the comments endpoint — so it wants deleting by hand.
