@@ -16374,3 +16374,105 @@ year photographs, of which ten years cannot be answered from TopSCHOLAR's
 yearbook collection at all; the 431 legislation files with no author recorded;
 John Lyne against Larry Zielke for 1970-71; and David Payne 1982-83. New: every
 research branch but one is now orphaned from `main`.
+
+# 6 September 2026, mid-morning — one pull request, verified and merged
+
+## What was open
+
+One: #364, `research-photos`, opened at 08:14 this morning. The three stale
+branches this pass was told to expect as #6, #7 and #8 are long closed; the
+numbering now runs in the 360s, and no pull request but #364 was open.
+
+Push access worked this run. `gh` is not installed in these containers, as
+`AGENT-LANDING.md` says, but plain git is credentialed and the dry-run probe
+returned a new branch, so this was a full pass rather than a review-only one.
+
+## What the diff actually was
+
+Two lines in `data/photo-finds/_overnight-log.md`, and nothing else. No event,
+no leader, no portrait, no document. `data/photo-finds/` is not read by
+`build.py` and does not exist under `site/`, so the merge publishes nothing to
+the live site. The lower stakes did not lower the standard: the entry's factual
+claims steer later photograph runs, so every one of them was checked against
+the data rather than taken on trust.
+
+## The conflict, resolved the way the file itself asks for
+
+Merging current `main` conflicted in that log, which is the exact hazard a
+successor warned about inside it on 5 September after taking one side and
+cutting 69 lines. The branch held the 22:08, 02:18 and 08:15 entries; `main`
+held 03:50. Both sides were kept and deduplicated by timestamp, giving four
+entries in order, and the merge was checked to delete nothing relative to
+`main`. The 22:08 entry exists nowhere on `main` — it was restored here, not
+duplicated.
+
+## Every claim in the entry checked against the data
+
+- **1,160 portraits.** `data/photos.json` holds exactly 1,160 leader entries.
+- **Every president and every student regent now has a portrait.** True, and
+  checked rather than accepted: 67 presidents and 6 student regents in
+  `years.json`, none without a portrait.
+- **The four presidents named as faceless already have one.** Nick Todd, Katie
+  Dawson, Jeanne Johnson and Reagan Gilley each carry a portrait, two or three
+  apiece.
+- **Blake Graham and Jackson Smith already logged in `_do-not-use.json`.** Both
+  present, in a register of 78 entries. Graham's chief justice title is borne
+  out by the 2025-26 record, which has the Judicial Council nominating him in
+  April 2025 and Stirling replacing him on 18 November when he graduated.
+- **`herald-photos.json` carries 21,304 captions.** It does.
+- **No portrait added or replaced.** The diff touches no image and not
+  `photos.json`.
+
+## The traps, run against this diff
+
+None tripped, and one applied well. No event was added, so the advance-notice
+and wrong-academic-year traps do not arise. Nothing re-litigates a settled
+fact. No contributor edit is in the diff. The surname trap is the interesting
+one: the entry *rejects* three name-only matches rather than making them —
+Chris Jankowski and Mark Clark, whose Herald photographs carry their names but
+nothing about the office, and a "Steve Wilson" class portrait in the 1979
+*Talisman* with no link to the Judicial Council chairman of that common name.
+That is the rule being kept.
+
+The entry names living people in explaining what it refused. It is an internal
+research log, it goes no further than what a published Herald caption showed,
+and recording why a photograph was rejected requires saying what was in it.
+Left as written.
+
+## Merged
+
+#364 merged. `build.py` completed cleanly and `check_data.py`,
+`check_contrib.py` and `check_duplicates.py` all exited 0. Nothing was cut,
+because there was nothing unsupported to cut.
+
+`check_duplicates.py` returned the same six pairs as previous passes. Read
+again, not waved through, and the earlier judgement holds: the November 1997
+bill funding designated driver cards and the February 1998 report of their
+distribution are two events three months apart on two sources, and the second is
+already trimmed honestly to what a contents listing proves; the regent advisory
+committee bill and its failure after amendment are introduction and defeat; the
+civil liberties suit and ASG's endorsement a month later are two acts; the two
+plus/minus grading entries are a stance and then a vote; and the three bills of
+1 September 1991 are the rule's own stated exception. None is a duplicate.
+
+## Counts
+
+61 years, 1,982 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) carrying an account of what the person
+did; 41 people recorded under more than one spelling. 297 documents, 1,111
+legislation files, 4,972 records in the search index. 1,160 portraits.
+
+## Still open
+
+Unchanged by this pass, since it added no research: the closed `viewcontent.cgi`
+endpoint, tried three more times this morning and still refusing; the
+twelve-year gap in year photographs from 1993 to 2010, which the photograph
+routine confirmed independently this run is not answerable from archive.org or
+`wkuherald.com`; the 431 legislation files with no author recorded; John Lyne
+against Larry Zielke for 1970-71; and David Payne 1982-83.
+
+The supply problem is the real one and this pass does not fix it. One pull
+request in a night, carrying no new history, is what an archive looks like when
+almost all of its research routines are paused. The photograph routine has now
+also reported for several cycles that it cannot run at all because its machine
+is on battery power.
