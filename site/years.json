@@ -9037,7 +9037,6 @@
      "date": "1977-10-25",
      "title": "Moore questioned freshman campaign spending and the Herald answered him",
      "body": "President Bob Moore publicly questioned how freshman class candidates were spending their campaign money, in a story the Herald headlined \"A$G?\". The paper answered the same week with an editorial arguing that Moore's comment was not good politics. Moore wrote back disputing the editorial.",
-     "campus": true,
      "src": {
       "label": "Herald 53:18, 25 Oct 1977",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5464",
@@ -14245,9 +14244,9 @@
      }
     },
     {
-     "date": "1985-10-12",
+     "date": "1985-12-10",
      "title": "ASG orders its own student discount card",
-     "body": "The congress passed legislation calling for ASG to produce its own student discount card, one of several consumer-service ideas the group pursued that fall.",
+     "body": "The congress passed legislation calling for ASG to produce its own student discount card, one of several consumer-service ideas the group pursued that autumn. The bill's record runs from 3 to 10 December 1985.",
      "src": {
       "label": "SGA Bill 85-15-F, Production of Own Student Discount Card",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/18"
@@ -14370,18 +14369,18 @@
      }
     },
     {
-     "date": "1986-04-02",
+     "date": "1986-02-04",
      "title": "Financial Advisory Council written into the bylaws",
-     "body": "The congress incorporated the Financial Advisory Council into the ASG bylaws, months after abolishing its own Finance Committee.",
+     "body": "The congress incorporated the Financial Advisory Council into the ASG bylaws, months after abolishing its own Finance Committee. The bill's record runs from 28 January to 4 February 1986.",
      "src": {
       "label": "SGA Bill 86-3-S, Incorporation of Councils into By-Laws",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/44"
      }
     },
     {
-     "date": "1986-04-03",
-     "title": "Outgoing congress commends President McKinney",
-     "body": "The outgoing congress passed a bill commending the work of SGA president Mitchell McKinney as his term ended.",
+     "date": "1986-03-04",
+     "title": "Congress commends President McKinney",
+     "body": "The congress passed a bill commending the work of SGA president Mitchell McKinney. The record carries a single date, 4 March 1986, the week the Herald reported he would not seek re-election.",
      "src": {
       "label": "SGA Bill 86-13-S, Commendation of President",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/35"
@@ -17709,11 +17708,24 @@
     {
      "date": "1989-11-28",
      "title": "Big Red Day for the mascot's tenth birthday",
-     "body": "Resolution 89-9-F, dated 28 November 1989, made 2 December 1989 Big Red Day in honour of the mascot's tenth anniversary. The minutes of 14 November record Big Red's tenth birthday alongside the counselling centre and a leadership reception, and those of 28 November return to it with the tuition increase.",
+     "body": "Resolution 89-9-F, dated 28 November 1989, made 2 December 1989 Big Red Day in honour of the mascot's tenth anniversary. The minutes of that evening's meeting, which ran from five o'clock to 6.16, record the birthday alongside the tuition increase and the session's legislation.",
      "kind": "tradition",
      "src": {
       "label": "Resolution 89-9-F, Big Red Day, 28 November 1989",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/135/"
+     },
+     "src2": {
+      "label": "ASG meeting minutes, 28 November 1989",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/65/"
+     }
+    },
+    {
+     "date": "1989-11-14",
+     "title": "The counselling centre and the mascot's birthday in a half-hour meeting",
+     "body": "The congress met for half an hour on 14 November 1989, from five o'clock to 5.30. The minutes record the counselling centre, Big Red's tenth birthday, a leadership reception and legislation as the business of the evening.",
+     "src": {
+      "label": "ASG meeting minutes, 14 November 1989",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/67/"
      }
     },
     {
@@ -22979,6 +22991,10 @@
      "src": {
       "label": "TopSCHOLAR - Resolution 94-17-F, Support for WKU Band Council Public Concert Shuttle Service",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/66"
+     },
+     "src2": {
+      "label": "TopSCHOLAR - Resolution 94-16-F, Support for WKU Band Council Instrument Transportation",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/67"
      }
     },
     {
