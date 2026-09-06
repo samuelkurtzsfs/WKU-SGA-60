@@ -16100,6 +16100,14 @@ read on any of them. A gap is not evidence of two people, and asserting one
 would be the same error running the other way. They are left alone and recorded
 here as a question, not a finding.
 
+The same claim was made on two other surfaces and both were followed: the
+officers index printed "David Payne, representative-at-large, 1974-75 to
+1981-82" in its browsable list, and `roster-people.csv` exported first_year,
+last_year and years_served as one career. The index row now carries the name
+without a span and says there is more than one person of it; the export gains a
+`same_name` column, added at the end so nothing reading the file by field name
+is disturbed.
+
 The change is opt-in and was checked for blast radius: of 1,816 officer pages,
 exactly one now lacks the span and the count, and it is the declared one.
 
