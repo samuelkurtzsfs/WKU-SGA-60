@@ -50,6 +50,18 @@ def load():
     return years, aliases
 
 
+def same_names():
+    """Names the archive holds more than one person under.
+
+    first_year, last_year and years_served read as one person's career, so a
+    row for a shared name has to say that it is not one."""
+    p = os.path.join(ROOT, "data", "same-name.json")
+    if not os.path.exists(p):
+        return {}
+    with open(p) as f:
+        return json.load(f).get("names", {})
+
+
 def what_they_did(rec):
     """The archive's own account of this person's service, if it has one."""
     prof = rec.get("profile")
@@ -125,6 +137,7 @@ def people(rows):
     for r in rows:
         by[r["person"]].append(r)
 
+    shared = same_names()
     out = []
     for person, rs in sorted(by.items()):
         yrs = sorted({r["year"] for r in rs})
@@ -147,6 +160,7 @@ def people(rows):
             "all_offices": "; ".join(offices),
             "what_they_did": " ".join(told),
             "sources": "; ".join(sorted({r["source"] for r in rs if r["source"]})),
+            "same_name": "yes" if person in shared else "",
         })
     return out
 
@@ -172,7 +186,7 @@ def main():
     write_csv(os.path.join(OUT, "roster-people.csv"), ppl, [
         "person", "also_recorded_as", "first_year", "last_year",
         "years_served", "years", "most_senior_office", "all_offices",
-        "what_they_did", "sources"])
+        "what_they_did", "sources", "same_name"])
 
     with open(os.path.join(OUT, "roster.json"), "w") as f:
         json.dump({"holdings": rows, "people": ppl}, f, indent=1)

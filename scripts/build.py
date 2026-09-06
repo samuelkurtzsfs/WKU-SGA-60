@@ -6529,6 +6529,17 @@ def load_aliases():
     ALIASES.clear()
     if p.exists():
         ALIASES.update(json.loads(p.read_text()).get("aliases", {}))
+    q = ROOT / "data" / "same-name.json"
+    SAME_NAME.clear()
+    if q.exists():
+        SAME_NAME.update(json.loads(q.read_text()).get("names", {}))
+
+
+# Names the archive holds more than one person under. An officer page is keyed
+# by the name, so two people spelled identically arrive at one page; RIVALS
+# separates only people whose spellings differ, and has nothing to say here.
+# Read by person_page, which stops the page claiming the terms are one career.
+SAME_NAME = {}
 
 
 def canonical(name):
@@ -7012,6 +7023,16 @@ def render_officer(person, ys, leg=()):
     sharednote = (' This name is shared, so entries are assigned to whichever of them held '
                   'office nearest the date.' if others else "")
 
+    # A name two people share letter for letter arrives here as one person, and
+    # the header would otherwise read their terms as one career: one span, one
+    # portrait, so many years in office. Say what the archive actually holds,
+    # and drop the counts rather than assert a career nobody has established.
+    samename = ""
+    if person["name"] in SAME_NAME:
+        samename = (f'<p class="roles sharedname">{h(SAME_NAME[person["name"]])}</p>')
+        at_glance = ""
+        span = ""
+
     photo_block = ""
     if person.get("photo"):
         ph = person["photo"]
@@ -7023,10 +7044,10 @@ def render_officer(person, ys, leg=()):
     body = f"""
 <header class="wrap"><div class="who-head">
  {photo_block}
- <p class="kicker">{h(span)}</p>
+ {f'<p class="kicker">{h(span)}</p>' if span else ''}
  <h1>{h(person["name"])}</h1>
  <p class="roles">{h(", ".join(offices))}.</p>
- {lead}{shared}{spellings}
+ {lead}{shared}{samename}{spellings}
  {at_glance}
 </div></header>
 
@@ -7054,7 +7075,7 @@ How the organisation was arranged in each period is set out under
 </div>
 </div></div>"""
     desc = (f'{person["name"]}, {", ".join(offices[:3])} in the Student Government Association '
-            f'at Western Kentucky University, {span}.')
+            f'at Western Kentucky University{", " + span if span else ""}.')
     return shell(f'{person["name"]} · SGA 60', desc, body, OFFICERS_CSS,
                  depth=1, current="officers.html")
 
@@ -7140,8 +7161,13 @@ def render_officers(ys, people):
             lis = "".join(
                 f'<li><a href="o/{slug(p["name"])}.html">{h(p["name"])}</a>'
                 f'<span>{h(p["terms"][0]["office"])}'
-                + (f', {h(p["terms"][0]["year"])}' if len(p["terms"]) == 1
+                # A name more than one person holds gets no span: running the
+                # first year to the last would read as one person's service.
+                + ('' if p["name"] in SAME_NAME
+                   else f', {h(p["terms"][0]["year"])}' if len(p["terms"]) == 1
                    else f', {h(p["terms"][0]["year"])} to {h(p["terms"][-1]["year"])}')
+                + ('<i> &middot; more than one person of this name</i>'
+                   if p["name"] in SAME_NAME else '')
                 + '</span></li>' for p in rows)
             secs.append(f'<p class="decadehead">{dec}s &middot; {len(rows)}</p>'
                         f'<ul class="whoindex">{lis}</ul>')
