@@ -16131,6 +16131,20 @@ removed, only the way two records are worded and one page is rendered.
 
 ## Still open
 
+First, the one that is not this archive's own text but its supply. The note of
+29 August recorded that three of the four research routines had stopped opening
+pull requests and that the owner should know. Eight days later nothing has
+changed: every research pull request since 31 August has come from
+`research-photos`, and the roster routines last opened one on 31 August
+(#296, #297, #298). `research-profiles`, `research-senate` and `research-backlog`
+remain silent, only the last of them explicably so, its own commit recording that
+its trigger was disabled deliberately. The photograph routine is doing real work
+and the portraits are the project's most wanted material, but a pipeline of one
+is why the editor's queue has been empty on almost every pass for a fortnight.
+Restarting a routine is not an editor's call, which is why this is recorded
+again rather than acted on — but it has now been recorded twice and reached
+nobody, so it goes out with tonight's notification as well.
+
 Carried forward: the closed `viewcontent.cgi` endpoint, which still stands
 between readers and the PDF of every TopSCHOLAR document including the Board of
 Regents minutes checked above; the 1993-94 to 2009-10 gap in year photographs;
