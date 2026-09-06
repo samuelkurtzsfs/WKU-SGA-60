@@ -762,5 +762,30 @@
    "label": "1984 Talisman, printed p. 299, Pi Kappa Alpha chapter photograph, back row, seventh and last from the left. The caption prints three rows and the frame holds three rows, and the counts match exactly: four named in the front row against four faces, six in the second row against six, seven in the back row against seven, seventeen in all. Todd Duncan is the last name of the back row, so he is the rightmost man in the top row. The volume's back index carries one Todd Duncan and no other, 'Duncan, Todd 299, 351', and page 351 is the sports clubs feature, which quotes him on the men's volleyball club and calls him an Edmonton junior; that is the same year the officer record has him on the ASG P.R. Committee. Nothing in the volume ties this man to student government directly - the 1984 Talisman has no ASG group photograph or member roster at all, its student government coverage being the year-in-review text on printed pp. 48-50 - so the identification rests on his being the only Todd Duncan the volume knows in the year he served, which is the same test the Jim Brumfield find on this block used. Spread is PDF leaf 152, printed pp. 298-299, on the TopSCHOLAR scan; leaf-to-page is 2*leaf-6.",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/408"
   }
+ },
+ {
+  "name": "Stephen Kiehn",
+  "year": "1983-84",
+  "file": "1983-84-stephen-kiehn.jpg",
+  "quality": "group crop",
+  "why": "Head and shoulders cut from a chapter group photograph. The 1984 Talisman is a 96 dpi scan, so the native cell is 58 by 120 pixels and the file is that cell resampled four times with Lanczos. Soft, but a clear front-row face rather than a back-row speck.",
+  "caption_quote": "Front row: Stephen Kiehn, O'Brian McKinley, Angie Scherman, Lewis Egnet",
+  "src": {
+   "label": "1984 Talisman, printed p. 290, Delta Tau Delta chapter photograph, front row, first from the left. The caption gives three rows of four, five and six, and the frame holds four, five and six, fifteen people in all, so the reading is fixed by the counts. It is confirmed a second way inside the frame: Angie Scherman is the only woman named anywhere in the caption and she is third in the front row, and the third front-row face is the only woman in the photograph. The volume's back index has one Kiehn and no other, 'Kiehn, Stephen Matthew 290', a single page, sitting between Khan, Carol Diane and Kietz, Bruce Edward; the surname is rare enough and the year is exactly his, 1983-84, so the man in the frame is the Student Affairs Committee member. Page 290 is a stack of five Greek chapter photographs down the outer column; the spread is PDF leaf 148 on the TopSCHOLAR scan, printed pp. 290-291, leaf-to-page being 2*leaf-6.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/408"
+  }
+ },
+ {
+  "name": "Pat Franke",
+  "year": "1984-85",
+  "file": "1984-85-pat-franke.jpg",
+  "quality": "small",
+  "identification": "SPELLING NOTE FOR THE EDITOR: the 1985 Talisman spells him FRANCKE, with a c, in its index and in all three captions. The officer list reads Franke. Flagged, not fixed, per the repository rule on spelling doubts. It is the same man: there is exactly one Fran(c)ke of any kind in the volume.",
+  "why": "Head and shoulders from a chapter group photograph. Native cell 54 by 78 pixels on a 96 dpi scan, resampled four times with Lanczos. Very small, but the face is there and the position is proved rather than guessed.",
+  "caption_quote": "FRONT ROW: David Baulch, Bernard O'Nan, Jeffrey Kula, George Bowen, Paul Byrom, Patrick Francke, John Greer, Jeffrey Thomas, Rodney Sease",
+  "src": {
+   "label": "1985 Talisman, printed p. 273, Kappa Sigma chapter photograph, front row, sixth from the left. The front row is the one row in this frame that can be counted without ambiguity: it stands clear in front of the empty theatre seats and holds exactly nine men against the nine front-row names, in order, while the second and back rows are staggered up the seating and cannot be resolved at this scan resolution. The volume's index gives him three pages, 'Francke, Pat Michael 224, 237, 273', and the other two were rejected for exactly that reason: p. 224 is Alpha Epsilon Delta, where the caption puts him last in a third row of nine that cannot be separated from the second row of eight, and p. 237 is the Tri-Beta Club, where he is third in a back row of four whose members are scattered across the seating. He is the only Franke or Francke in the whole 1985 index, the run reading Frakes, Shannon Ranee 260 / Francisco, Patrice Carol 355 / Francke, Pat Michael / Frank, Maria Alice 321, so the man is the Sergeant-at-Arms of that same year. Spread is PDF leaf 138 on the TopSCHOLAR scan, printed pp. 272-273; leaf-to-page for this volume is 2*leaf-4.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/409"
+  }
  }
 ]
