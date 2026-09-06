@@ -211,3 +211,58 @@ presidents, "the archive checks out against its own rules."
 - **2026-09-06 03:50** — no change and none possible: **1,158 portraits, 1,061/1861 with a face, 800 none, 197 officers without one.** Battery Power, nothing dropped, tree clean, 6 known refusals. Not relaunching: three agents stalled in a row on this machine and the last cycle my own git commands timed out too, so it is asleep deeply enough that local work fails, not just API calls. Plug in and the queue runs. (3 quiet cycles on battery)
 - **2026-09-06 08:15** — no change: **1,160 portraits, 1,061/1861 with a face, 800 none.** First checked this run's own priority list against the archive rather than the worklists: all four presidents named as faceless (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) already have one, and a full sweep confirms **every president and every student regent in the archive now has a portrait** — the remaining 800 are executives, senators and committee people. Tried three routes for those and for the twelve-year (1993-2010) general-photo gap: (1) `viewcontent.cgi` — still hard 403 on every attempt, three tries spread over 25+ minutes, cookies and a referer made no difference; no change to the standing dead end. (2) `archive.org`'s djvu text for 1975, 1978, 1979 and 1981 (not rate-limited) — found nothing safely usable: Vern Pulman (1974-75) does not appear anywhere in the 1975 volume; David Bass (1977-78) has only the already-known four-person meeting caption, no individual portrait, and the caption gives no position to crop by; a "STEVE WILSON, agriculture" class portrait in the 1979 volume is a name match only, with no major/hometown link to the 1978-79 Judicial Council chairman of the same common name, so left alone as an unproven surname match; Mark Chesnut's index entry (1980-81, p. 234) could not be located in the plain-text dump at all, since the djvu text carries no page breaks. (3) Cross-checked every officer still missing a face against the local `data/herald-photos.json` (2010-2026, 21,304 captions) by exact first+last name inside the person's academic year: five hits. Chris Jankowski (2010-11) and Mark Clark (2017-18) both turned up in photos with no SGA content at all (an RA sign-making shoot, Pride Center work) — the name matches but the caption proves nothing about the office, so both rejected. Blake Graham (2025-26, Chief Justice) has three SGA-meeting photos this year and in all three his face is turned away or off-camera (swearing in Grace Ekrikpo, introducing Stirling and Hash, giving his final report) — no usable frame, consistent with his existing entry in `_do-not-use.json`. Jackson Smith (2025-26) appears in exactly the frame `_do-not-use.json` already logged on 1 September: I re-derived it independently (cropped the white-cap figure, reasoning caption-order-equals-left-to-right) before finding the register entry, which is right to have stopped it — Ciin Lun's face confirms the woman on the right, but comparing the two men against Malachi Humble's one confirmed frame (a profile in a different cap, different day) still is not decisive between them, so I backed the crop and finding-file entry back out rather than overrule a call already made for a documented reason. No portrait added or replaced. Confirmed independently, not just cited: the pre-2010 year-photograph gap is real and the same eleven years remain closed (archive.org has no Talisman between 1982-1992 and none of 1993-2010; wkuherald.com's own archive does not reach that far back). `build.py` and `check_data.py` both pass clean.
 - **2026-09-06 08:51** — no change and none possible: **1,158 portraits, 1,061/1861 with a face, 800 none, 197 officers without one.** Battery Power, nothing dropped, tree clean, 6 known refusals. Not relaunching while the machine sleeps. (7 quiet cycles on battery)
+
+### 2026-09-06 — cloud photograph routine, separate pass
+
+Not part of the overnight fleet above; the cloud routine picking this up cold, unaffected by
+the laptop's Battery Power problem. Confirmed again first: all four named priority portraits
+(Todd, Dawson, Johnson, Gilley) and every president and student regent already carry one — no
+work needed there.
+
+**Fixed a miscount this run's predecessors were carrying.** The "officers without one" figure
+in this log undercounts correctly in one direction and overcounts in another: a person who
+served several years is fully covered once *any* year has their portrait, but the block
+worklists sometimes still flag their other, unphotographed years as gaps. Deduped by person
+against the full archive: **186 officers have no portrait in any year**. Written to
+`data/photo-finds/_officers-truly-missing-2026-09-06.json`, one row per person with the years
+in which they held an office, so the next run can search this list directly instead of
+re-deriving it. 99 of the 186 are from 2010-11 onward, where wkuherald.com is the live source.
+
+This figure counts officeholders only — presidents, student regents, executives, Senate and
+Judicial officers. It does not supersede the **800**: that is every named person in the archive
+without a face, senators and committee members included, and it stays correct for that wider
+population. The two numbers answer different questions and both belong in the log.
+
+*Corrected on editorial review, 6 September 2026.* The list as first written was not in fact
+deduped by person: it keyed on raw name strings and never consulted `data/name-aliases.json`.
+Lisa Kappler, Jacob Miers and Caroline Simpson were each counted twice under two spellings, and
+Michael Klein and Eddie Myers were listed as faceless when the archive holds a portrait of each
+under the other spelling. That is the very error the file was written to end, so: run any name
+list through the alias map before you count it.
+
+**Closed the block's one standing open question.** 1966-79 has been asking since 5 September
+whether the Herald ran a "People Poll" (or similar man-on-the-street feature) in the 1960s-70s
+— the source that has done the most work for 1993-99. Answer: **no evidence it existed yet.**
+The full unindexed `herald-index-full.json` never matches "People Poll" before 1993-01-14
+(295 hits total, all 1993 onward), and four actual Herald issue landing pages were opened and
+their complete headline lists read to check what a truncated index could hide: 30 Oct 1970,
+2 Nov 1971, 7 Sep 1973, 5 Nov 1974 (dlsc_ua_records/4957, 4831, 3494, 5039). None carries one.
+Recorded in `_archive-gaps.json`. A strong negative rather than a closed proof — it rests on
+four issues read in full plus an index that does name the column once it exists — but the
+block's own brief said a no would be as useful as a yes, and this is one.
+
+**Ran a systematic wkuherald.com sweep against the 2010+ list** (the
+WP-JSON search API, not rate-limited): 124 names, 388 SGA-titled hits, 139 unique images,
+every caption/alt/description pulled. 20 images named their subject outright and were
+downloaded and viewed — Symone Whalin, Isaac King (with Karley Solorzano), Caroline Yates,
+Kenan Mujkanovic, Ashlynn Evans, Sophia Bryant (with Alex Cissell, captioned left/right),
+Amanda Harder (with Mary Fyfe, captioned left/right), Nolan Miles, Jody Dahmer, a woman
+identified in caption as Kat Howard, Chloe Ralston and Jaden Marshall among them, all clean
+and well-captioned. **Every one turned out to be a person the archive already has a portrait
+for, under a different year they also served** — the exact miscount pattern this entry opens
+with. Good independent confirmation the existing identifications hold up; zero net-new
+coverage. A looser last-name-only pass against the 2010+ list caught nothing safe either, only
+surname collisions (Reed Hensley vs. Amarah Reed — an Associate Justice of 2016-17 who is
+herself still without a portrait, and stays on the list; Smith; Chris; David).
+No portrait added or changed this run. `build.py` and `check_data.py` both pass clean; tree
+otherwise unchanged.
