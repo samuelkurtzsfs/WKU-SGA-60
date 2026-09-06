@@ -223,12 +223,22 @@ work needed there.
 in this log undercounts correctly in one direction and overcounts in another: a person who
 served several years is fully covered once *any* year has their portrait, but the block
 worklists sometimes still flag their other, unphotographed years as gaps. Deduped by person
-against the full archive: **191 officers have no portrait in any year**, not the 197-800
-range these entries have been citing (that range mixed people-with-a-gap-year against
-people-with-no-face-at-all). Written to
-`data/photo-finds/_officers-truly-missing-2026-09-06.json`, one row per person with every
-year they served, so the next run can search this list directly instead of re-deriving it.
-100 of the 191 are from 2010-11 onward, where wkuherald.com is the live source.
+against the full archive: **186 officers have no portrait in any year**. Written to
+`data/photo-finds/_officers-truly-missing-2026-09-06.json`, one row per person with the years
+in which they held an office, so the next run can search this list directly instead of
+re-deriving it. 99 of the 186 are from 2010-11 onward, where wkuherald.com is the live source.
+
+This figure counts officeholders only — presidents, student regents, executives, Senate and
+Judicial officers. It does not supersede the **800**: that is every named person in the archive
+without a face, senators and committee members included, and it stays correct for that wider
+population. The two numbers answer different questions and both belong in the log.
+
+*Corrected on editorial review, 6 September 2026.* The list as first written was not in fact
+deduped by person: it keyed on raw name strings and never consulted `data/name-aliases.json`.
+Lisa Kappler, Jacob Miers and Caroline Simpson were each counted twice under two spellings, and
+Michael Klein and Eddie Myers were listed as faceless when the archive holds a portrait of each
+under the other spelling. That is the very error the file was written to end, so: run any name
+list through the alias map before you count it.
 
 **Closed the block's one standing open question.** 1966-79 has been asking since 5 September
 whether the Herald ran a "People Poll" (or similar man-on-the-street feature) in the 1960s-70s
@@ -237,10 +247,11 @@ The full unindexed `herald-index-full.json` never matches "People Poll" before 1
 (295 hits total, all 1993 onward), and four actual Herald issue landing pages were opened and
 their complete headline lists read to check what a truncated index could hide: 30 Oct 1970,
 2 Nov 1971, 7 Sep 1973, 5 Nov 1974 (dlsc_ua_records/4957, 4831, 3494, 5039). None carries one.
-Recorded in `_archive-gaps.json`. A definite no, which the block's own brief said would be as
-useful as a yes.
+Recorded in `_archive-gaps.json`. A strong negative rather than a closed proof — it rests on
+four issues read in full plus an index that does name the column once it exists — but the
+block's own brief said a no would be as useful as a yes, and this is one.
 
-**Ran a systematic wkuherald.com sweep against the corrected 100-person 2010+ list** (the
+**Ran a systematic wkuherald.com sweep against the 2010+ list** (the
 WP-JSON search API, not rate-limited): 124 names, 388 SGA-titled hits, 139 unique images,
 every caption/alt/description pulled. 20 images named their subject outright and were
 downloaded and viewed — Symone Whalin, Isaac King (with Karley Solorzano), Caroline Yates,
@@ -250,7 +261,8 @@ identified in caption as Kat Howard, Chloe Ralston and Jaden Marshall among them
 and well-captioned. **Every one turned out to be a person the archive already has a portrait
 for, under a different year they also served** — the exact miscount pattern this entry opens
 with. Good independent confirmation the existing identifications hold up; zero net-new
-coverage. A looser last-name-only pass against the true 100 caught nothing safe either, only
-surname collisions (Reed Hensley vs. the already-covered Amarah Reed; Smith; Chris; David).
+coverage. A looser last-name-only pass against the 2010+ list caught nothing safe either, only
+surname collisions (Reed Hensley vs. Amarah Reed — an Associate Justice of 2016-17 who is
+herself still without a portrait, and stays on the list; Smith; Chris; David).
 No portrait added or changed this run. `build.py` and `check_data.py` both pass clean; tree
 otherwise unchanged.
