@@ -266,4 +266,4 @@ surname collisions (Reed Hensley vs. Amarah Reed — an Associate Justice of 201
 herself still without a portrait, and stays on the list; Smith; Chris; David).
 No portrait added or changed this run. `build.py` and `check_data.py` both pass clean; tree
 otherwise unchanged.
-- **2026-09-06 15:03** — no change and none possible: **1,158 portraits, 1,061/1861 with a face, 800 none, 197 officers without one.** Battery Power, nothing dropped, tree clean. (10 quiet cycles on battery)
+- **2026-09-06 16:22** — no change and none possible: **1,158 portraits, 1,061/1861 with a face, 800 none, 197 officers without one.** Battery Power, nothing dropped, tree clean. (11 quiet cycles on battery)
