@@ -737,5 +737,30 @@
   },
   "width": 160,
   "height": 200
+ },
+ {
+  "name": "Debbie Thomas",
+  "year": "1980-81",
+  "file": "1980-81-debbie-thomas.jpg",
+  "quality": "small",
+  "identification": "FACE PROVED, PERSON NOT PROVED - FOR THE EDITOR",
+  "why": "The cell is proved to be Deborah L. Thomas of Glasgow beyond doubt. What is not proved is that Deborah L. Thomas is the Debbie Thomas who chaired the Complaint and Suggestion committee. TWO women with that name were enrolled at Western in her officer year and both sat for portraits: the 1980 Talisman name index, printed p. 430, reads 'Thomas, Deborah Anne 369' and 'Thomas, Deborah Lynn 392', two consecutive lines, each with a page number, and the 1981 index carries 'Thomas, Deborah Lynn 356' pictured and 'Thomas, Debra Ann' enrolled but not pictured. Nothing in either volume separates them by anything the officer record also records. The usual tie-breaker fails as well: the 1981 volume's Associated Student Government group photograph, printed p. 282, names all twenty-eight people in it and no Thomas is among them, so neither woman is tied to a student government page. Deborah Lynn is the better of the two candidates and the reason this crop is of her rather than the other: she is the only Deborah Thomas pictured in the volume that covers the officer year, she is a junior in 1980-81, which fits a person already co-authoring ASG Resolution 79-5 in 1978-79, and the Glasgow hometown follows her across three volumes (1980 p. 392 'DEBORAH THOMAS, Glasgow', 1981 p. 356, 1982 'DEBORAH THOMAS, dietetics/institution admin., Glasgow'). That is a good candidate, not an identification, so it goes to the editor.",
+  "caption_quote": "DEBORAH L. THOMAS, Glasgow",
+  "src": {
+   "label": "1981 Talisman, p. 356, junior class portraits (Shriver-Wheeler), first cell of the row keyed to the nine-name block beginning DEBORAH L. THOMAS. The block prints nine names against nine faces and the row proves out sex by sex in order: Deborah (woman), Gregory S. Thomas (man), James A. Thomason (man), Amy Thompson (woman), Daniel Thompson (man), George A. Thompson (man), Lynette Thompson (woman), Mary Thompson (woman), Roxanne Thompson (woman). The rows above it on the same page run six wide because a full-height photograph occupies the outer third, and the rows from this one down run nine wide, which is how the change of width was checked. Page image is archive.org leaf n359, printed folio 356 read off the page.",
+   "url": "https://archive.org/details/talisman1981west"
+  }
+ },
+ {
+  "name": "Todd Duncan",
+  "year": "1983-84",
+  "file": "1983-84-todd-duncan.jpg",
+  "quality": "group crop",
+  "why": "The only photograph of him the archive can reach. The 1984 Talisman is a 96 dpi scan, so the native cell is 43 by 72 pixels; the file is that cell resampled four times with Lanczos, which adds no detail but makes it viewable. Soft and small, but it is a face.",
+  "caption_quote": "Back row: Stephen Smith, Jeff Grieder, Jeff Rogers, Steven Luckett, John Pinkstaff, Mark Burkett, Todd Duncan",
+  "src": {
+   "label": "1984 Talisman, printed p. 299, Pi Kappa Alpha chapter photograph, back row, seventh and last from the left. The caption prints three rows and the frame holds three rows, and the counts match exactly: four named in the front row against four faces, six in the second row against six, seven in the back row against seven, seventeen in all. Todd Duncan is the last name of the back row, so he is the rightmost man in the top row. The volume's back index carries one Todd Duncan and no other, 'Duncan, Todd 299, 351', and page 351 is the sports clubs feature, which quotes him on the men's volleyball club and calls him an Edmonton junior; that is the same year the officer record has him on the ASG P.R. Committee. Nothing in the volume ties this man to student government directly - the 1984 Talisman has no ASG group photograph or member roster at all, its student government coverage being the year-in-review text on printed pp. 48-50 - so the identification rests on his being the only Todd Duncan the volume knows in the year he served, which is the same test the Jim Brumfield find on this block used. Spread is PDF leaf 152, printed pp. 298-299, on the TopSCHOLAR scan; leaf-to-page is 2*leaf-6.",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/408"
+  }
  }
 ]

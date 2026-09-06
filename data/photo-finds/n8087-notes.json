@@ -26,5 +26,45 @@
    "label": "1980 Talisman (Western Kentucky University), pp. 124-125 and 423, and index p. 420; 1981 Talisman index; 1982 Talisman (The Talisman 1982), pp. 266-267 and index p. 381",
    "url": "https://archive.org/details/talisman1980west"
   }
+ },
+ {
+  "name": "Chris Millay",
+  "year": "1986-87",
+  "kind": "SEARCHED, NOT FOUND - absent from every index that could hold him",
+  "fact": "Checked at the exact alphabetical position on the page images of all three volumes that cover his two terms, not on an OCR miss. 1986 Talisman (covers 1985-86), printed index p. 375: the run is Milby, Melinda Alice 331 / Miles, Laura Lynn 310 / Millay, Beth Ann 132, 185, 346 / Miller, Audwin Glendell - no Chris Millay. 1987 Talisman (covers 1986-87), printed index p. 369: Millam, Glenn Everett 134-135 / Millay, Beth Ann 240 / Millay, Lori Ann 52 / Miller, Aubrey Douglas - no Chris Millay. 1988 Talisman (covers 1987-88, when he would have been a year older), index OCR'd from the page images because that volume's embedded text layer is unreadable noise: Miles, Andreae 145 / Millay, Beth 216-219, 238-239 / Millea, Scott 160 / Miller, Anna 355 - no Chris Millay. The Beth Ann Millay in all three is a distance runner from Guston and no relation the record shows. He is also in neither of the two Associated Student Government group photographs of the 1987 volume, printed p. 114, whose captions name all twenty-nine members, nor in the two of the 1986 volume, printed pp. 194-195, which name twenty-five. Since these indexes carry page numbers only for people actually pictured, absence from all three is a real negative and not a search failure.",
+  "src": {
+   "label": "1986 Talisman index p. 375 and pp. 194-195; 1987 Talisman index p. 369 and p. 114; 1988 Talisman index (TopSCHOLAR dlsc_ua_records/412), PDF leaf 372",
+   "url": "https://archive.org/details/talisman1987west"
+  }
+ },
+ {
+  "name": "Dwight Austin",
+  "year": "1986-87",
+  "kind": "SEARCHED, NOT FOUND - absent from every index that could hold him",
+  "fact": "Same method, same three volumes, read off the page images at the exact alphabetical position. 1986 Talisman, printed index p. 370: Ausenbaugh, Jim 77 / Auslander, Whitney Anne 277 / Austin, Alan Earl 338 / Austin, Robin Renae 352 / Austin, Samantha Andora 352 / Ayer, Jennifer Suzanne - no Dwight. 1987 Talisman, printed index p. 362: Auslander, Whitney Anne 14-17, 97, 116, 317 / Austin, Lee Ann 148 / Austin, Sherlan Salome 317 / Ayer, Jennifer Suzanne - no Dwight. 1988 Talisman, index OCR'd from the images: Ausenbaugh, Laura 347 / Austin, Alan 188 / Austin, Twana 347 / Ayer, Jennifer 132 - no Dwight. He is in neither of the two Associated Student Government group photographs in the 1987 volume, p. 114, nor the two in the 1986 volume, pp. 194-195. The one place he is named at all is the 1981 Talisman's full student-name index, 'Austin, Dwight Lea', which in that volume carries no page numbers, meaning he was enrolled but appeared in no photograph in the book. Note the 1980 and 1981 volumes index every enrolled student whether pictured or not, while 1986, 1987 and 1988 index only people who appear, so the two kinds of absence mean the same thing here.",
+  "src": {
+   "label": "1986 Talisman index p. 370; 1987 Talisman index p. 362; 1988 Talisman index, PDF leaf 365; 1981 Talisman name index",
+   "url": "https://archive.org/details/talisman1987west"
+  }
+ },
+ {
+  "name": "METHOD: archive.org 1986 and 1987 Talismans, corrected leaf arithmetic",
+  "year": "1985-86 to 1986-87",
+  "kind": "correction to a recorded offset - costs a wasted download if you get it wrong",
+  "fact": "Two separate numbers, and the earlier notes conflated them. (1) PAGE IMAGES: printed page = image leaf minus 3, for BOTH 1986 and 1987. Verified against printed folios: 1987 image leaf n117 is p. 114 (the Associated Student Government spread), n365 is p. 362, n372 is p. 369, n374 is p. 371; 1986 image leaf n195 is p. 192, n373 is p. 370, n374 is p. 371, n378 is p. 375, n379 is p. 376. The same rule holds for 1980: image leaf n426 is p. 423 and n427 is p. 424. (2) OCR TEXT STREAM: the leaf number that scripts/talisman.py computes by bisecting the hOCR page index runs THREE HIGHER than the image leaf on the 1987 item. Stream leaf 120 is image leaf 117. So from a search hit, image leaf = stream leaf minus 3 and printed page = stream leaf minus 6. Fetching the page at the stream's own leaf number lands three pages late, which is what made the 1987 index look as though A ran to R.",
+  "src": {
+   "label": "archive.org talisman1986west and talisman1987west, printed folios read off the page images",
+   "url": "https://archive.org/details/talisman1987west"
+  }
+ },
+ {
+  "name": "Mark Chesnut",
+  "year": "1980-81",
+  "kind": "SEARCHED, NOT FOUND - indexed twice, both times to a table of names",
+  "fact": "He is in the archive's reach and still has no face. The 1980 and 1981 Talisman name indexes list every enrolled student and print page numbers only against the pages where a person actually appears, so his entries are exhaustive. 1980 index: 'Chesnut, Mark Cameron 257', one page. Printed p. 257 is the intramural champions table, where he is named twice, at Racquetball (D) as 'Mark Chesnut and Mitch Gum (Sigma Alpha Epsilon)' and at Tennis (D) as 'Mark Chesnut (Sigma Alpha Epsilon)'. The only photograph on the page is an uncaptioned water polo frame. 1981 index: 'Chesnut, Mark Cameron 234', one page. Printed p. 234 is the same table a year on, Badminton (s) 'Mark Chestnut (Sigma Alpha Epsilon)' and Racquetball (d) 'Mark Chestnut/Mitch Gum', with an uncaptioned flag football photograph below it. Neither is a picture of him. He sat for no class portrait in either volume. He is not in the 1981 Sigma Alpha Epsilon chapter photograph on printed p. 314, whose caption names all thirty-eight members in five rows. And he is not in the 1982 volume at all: the only occurrences of the string in that book are Chestnut Street. The volumes print him both ways, Chesnut in the index and Chestnut in the 1981 table, and the 1980 text calls him 'a junior accounting major', which fits the man who was ASG Treasurer the following year.",
+  "src": {
+   "label": "1980 Talisman, p. 257 and index; 1981 Talisman, pp. 234 and 314 and index; 1982 Talisman full-text search",
+   "url": "https://archive.org/details/talisman1981west"
+  }
  }
 ]
