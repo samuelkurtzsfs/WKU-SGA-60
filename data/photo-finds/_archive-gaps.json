@@ -496,5 +496,25 @@
  {
   "topic": "HERALD OCR INDEX 1993-1996 EXISTS",
   "note": "262 issues, 4,973 pages at 300 dpi with bounding boxes, at ~/Desktop/SGA60 photo hunt/_herald-ocr-1993-1996/ alongside the source PDFs. With _herald-ocr-1997-2005/, _herald-index-2002-2009/ and _herald-index-2010-2016/ (which now reaches 2019), the Herald is indexed continuously from 1993 to 2019. Grep before fetching anything."
+ },
+ {
+  "kind": "source checked, negative — closes an open question",
+  "name": "",
+  "year": "1966-79",
+  "detail": "Answers the block's standing open question: did the Herald run a \"People Poll\" (or similar man-on-the-street feature with mugshots and quotes) in the 1960s and 70s? The full unfiltered index (data/herald-index-full.json) never once matches \"People Poll\" before 1993-01-14, its earliest hit of 295 total, all 1993 onward. That alone is not proof (a truncated index line is not evidence of absence), so four confirmed College Heights Herald issue landing pages were opened directly and their complete headline lists read in full: 1970-10-30 (dlsc_ua_records/4957, 20 headlines), 1971-11-02 (dlsc_ua_records/4831, 38 headlines), 1973-09-07 (dlsc_ua_records/3494, 28 headlines) and 1974-11-05 (dlsc_ua_records/5039, 24 headlines). None carries a People Poll or any comparable recurring poll column. The source most likely to prove the 1966-79 block's hardest names by pairing a face directly beneath its own name (as it does from 1993 on) did not exist yet in this period, at least not under that title. A definite no, as the block's own brief said would be as useful as a yes: stop looking for it here.",
+  "src": {
+   "label": "data/herald-index-full.json; College Heights Herald issues of 30 Oct 1970, 2 Nov 1971, 7 Sep 1973, 5 Nov 1974",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4957"
+  }
+ },
+ {
+  "kind": "source checked, negative — sweep of wkuherald.com WP-API for the 2010-2026 gap",
+  "name": "",
+  "year": "2010-2026",
+  "detail": "Recomputed the true missing-portrait list correctly this run: earlier per-year tallies undercounted because a person who served multiple years is fully covered once any one year carries their portrait, and prior counts (including this file's own worklists) sometimes flagged a second, unphotographed year as if the person had no face at all. Deduping by person gives 191 officers archive-wide with no portrait in any year, 100 of them from 2010-11 onward. Searched wkuherald.com's WP-JSON API (search=<name>, not rate-limited) for 124 names drawn from the flawed per-year list, kept only posts with SGA/Student Government/senate in the title (388 hits, 139 unique images), and pulled caption/alt/description text for every one. 20 images named their subject explicitly and were downloaded and viewed: Symone Whalin, Jamison Moorehead/Kat Howard, Isaac King, Caroline Yates, Kenan Mujkanovic, Ashlynn Evans, Sophia Bryant, Amanda Harder, Nolan Miles, Jody Dahmer, Chloe Ralston and Jaden Marshall among them, all clean, well-captioned photographs. Every single one turned out to be a person the archive already has a portrait for under a different year they also served (the same multi-year-coverage pattern this entry opens with) — a useful independent confirmation that the existing identifications are sound, but zero net-new coverage. A looser last-name-only match against the true 100-person 2010+ list surfaced nothing safely usable: every candidate was either a coincidental surname collision (\"Reed\" matching both Reed Hensley and the already-covered Amarah Reed; \"Smith\", \"Chris\", \"David\" the same way) or the already-registered Jackson Smith refusal. No new portrait added. The true 100-person 2010+ list is otherwise unchanged from what the block files already record; a future run should search it directly by name rather than re-deriving it from a flawed per-year tally.",
+  "src": {
+   "label": "wkuherald.com WP-JSON API, wp/v2/posts and wp/v2/media, searched 6 September 2026",
+   "url": "https://wkuherald.com/wp-json/wp/v2/"
+  }
  }
 ]
