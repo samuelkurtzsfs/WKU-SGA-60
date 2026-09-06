@@ -16600,3 +16600,23 @@ Unchanged: the closed `viewcontent.cgi` endpoint; the 1993 to 2010 gap in year
 photographs; the 431 legislation files with no author recorded; John Lyne
 against Larry Zielke for 1970-71; and whether the 1981-82 president is the 1970s
 ASG treasurer of the same name. New: Bill 00-3-S and its two dates, above.
+
+## Addendum, same pass: the minutes and reports come back clean
+
+The second audit finished. All 120 events citing an item in SGA's own meetings
+or documents collections were checked against the dates their records print.
+107 of the 108 that carry dates match exactly, and there is no sign there of the
+day-first misreading that cost three legislation entries. Whatever produced that
+error, it did not spread here.
+
+The single exception was a placeholder rather than a mistake: the correspondence
+on Resolution 89-3-F, asking administrators for AIDS, HIV and sexually
+transmitted disease education, sat under the year-only date 1 January 1989 while
+its record gives 2 November to 13 December 1989. It is now dated 2 November 1989
+and the body says what the record covers.
+
+A wider sweep of the remaining 363 citations into the SGA collection was started
+and stopped: those are collection and index pages rather than dated items, the
+requests were running at about eighteen seconds each, and finishing would have
+taken two hours for pages that carry no date to check. Not worth the archive's
+patience or the run's time.
