@@ -4199,6 +4199,70 @@ and `check_data.py` pass clean against the merged tree (61 years, 61 year
 photos, all president/regent portraits present). Landed as a
 documentation-only commit on `research-photos`.
 
+**A note on "61 year photos" in the entry directly above.** That is a row
+count from `data/photos.json`'s `years` array, not a count of distinct
+years covered — as the 30 August entry above already explains, several
+years hold two or three photographs apiece, so 61 rows cover fewer than 61
+years. Measured directly against `data/years.json` on 6 September (see
+below): still exactly **49** distinct years covered and **12** with none,
+the same twelve tracked since 21 August. Nobody has closed this gap; the
+row count should not be read as having done so.
+
+**A 6 September 2026 run (photograph agent, scheduled).** Re-checked
+priorities one and two before anything else, as every run does: Nick Todd,
+Katie Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait,
+and a script comparing every `leaders` entry in `data/years.json` against
+`data/photos.json` by name found zero presidents or student regents without
+one. Both are closed, unchanged.
+
+Spent the run on priority four, the twelve-year photo gap (1993-94 through
+1997-98, 2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10), and
+came away with a narrower map of it rather than a new photograph. First,
+`viewcontent.cgi` was tested three times, spaced by 90-second-plus backoffs,
+against two different documents — article 1594 (`dlsc_ua_records/594`, the
+2003 Talisman) with a plain request, the same article again with a fresh
+cookie jar, and article 1418 (`dlsc_ua_records/418`, the 1994 Talisman) with
+`httpsredir=1` added and a fresh cookie jar again. All three returned the
+same bepress-branded "403 Error" page (not a Cloudflare challenge or an AWS
+202), while the plain landing pages for both records loaded normally at
+`200`. This is the same endpoint every entry since late August has recorded
+as closed; it is still closed today, under three separate variations of the
+request.
+
+Second, and new this run: paged through `digitalcommons.wku.edu/dlsc_ua_yearbooks/`
+itself (both pages of the collection index, not archive.org) and extracted
+every Talisman entry's year and record number directly from the listing
+HTML. TopSCHOLAR's own yearbook collection **holds no Talisman volume at
+all** for 1995 through 2002 or for 2004 through 2011 — there is no record
+to request even once `viewcontent.cgi` reopens. Only two of the twelve gap
+years have a yearbook there to try: **1993-94** (the 1994 Talisman, *Against
+All Odds*, `dlsc_ua_records/418`, article 1418) and **2002-03** (the 2003
+Talisman, *About Face*, `dlsc_ua_records/594`, article 1594). The other ten
+gap years have no Talisman source on TopSCHOLAR under any record number;
+whoever next works this list should stop looking there for those ten and
+go straight to Herald issue pages or a UA1C photograph-collection search
+instead. (`archive.org`'s parallel gap — no `talisman*west` item for the
+1990s or 2000s at all — was already confirmed separately on 3 September;
+this is the same absence, verified against TopSCHOLAR's own listing rather
+than archive.org's.)
+
+Third, checked whether `wkuherald.com` carries a usable image for either of
+those two open years independent of TopSCHOLAR: fetched one of the articles
+already cited for Jamie Sears's 2002-03 term (`57861/news/sga-to-look-for-lost-funds`)
+directly and read every `<img>` tag on the page. The only images present are
+the site's current header/footer logos and unrelated "trending" sidebar
+thumbnails from 2019-2026; nothing from 2002 was migrated with an image.
+This matches the general rule already in §4 that `wkuherald.com`'s full-text
+archive starts "roughly 2003," but confirms directly that even where a 2002
+article's text survived the migration, its photographs did not.
+
+Nothing added to `data/photos/` or `data/photos.json` this run — no lead
+this run chased turned into a confirmed, captioned face. Merged `origin/main`
+into `research-photos` (fast-forward, no conflicts) before starting so the
+branch carried the latest independently-landed work; `build.py` and
+`check_data.py` both pass clean against the result. Landed as a
+documentation-only commit on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
