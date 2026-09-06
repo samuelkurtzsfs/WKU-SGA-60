@@ -16154,3 +16154,106 @@ which this run has made honest on the page without answering. New: the three
 same-name candidates above, unexamined; and `1976-77-david-payne.jpg`, still
 referenced nowhere in the built site because a person carries one portrait and
 the earlier year wins.
+
+# 6 September 2026, night — one pull request, thirteen claims opened, nothing cut
+
+One pull request was open: #362 from `research-photos`, the photograph
+routine's run of the same morning. It is merged. The three stale branches this
+pass was told to expect — #6, #7 and #8, open since 4 August — are no longer
+open, so there was nothing to rescue or close; the 4 August branches themselves
+are untouched on origin and remain what `AGENT-LANDING.md` describes.
+
+## What #362 was, and why a documentation change still got the full test
+
+Sixty-four lines added to `SGA-60-AGENT-INFO.md` and nothing else. No path under
+`data/` was touched, so nothing in it reaches the live site by itself. It was
+still worth opening every claim, because a note in the handoff file is an
+instruction to the next four runs about where to spend their requests, and a
+wrong one costs more than a wrong sentence on a year page: it sends every
+subsequent pass to an empty shelf.
+
+Thirteen claims were checked and all thirteen held.
+
+Three were answerable from the data alone. Forty-nine of the sixty-one years
+carry a photograph and twelve carry none, and the twelve the entry names are
+exactly the twelve a fresh count produces. No president or student regent is
+without a portrait row. Jamie Sears's 2002-03 entry does cite the article the
+run says it cites.
+
+The rest needed the sources. Record 418 is the 1994 *Talisman*, *Against All
+Odds*, article 1418; record 594 is the 2003 *Talisman*, *About Face*, article
+1594; both landing pages served 200. `viewcontent.cgi` returned a bepress
+"403 Error" page for both articles in the same sequence in which the landing
+pages loaded normally, which is the run's account of it and is still true
+tonight.
+
+The load-bearing claim was the negative one — that TopSCHOLAR holds no
+*Talisman* at all for 1995-2002 or 2004-2011 — and a negative is the kind of
+claim this project does not take on trust, so it was tested against the
+collection listing rather than against the run's word. The volumes run
+continuously from 1924 to 1994, then stop; the next is 2003, and the next after
+that is 2012. Nothing stands in either window. Of the twelve years without a
+photograph, only 1993-94 and 2002-03 have a yearbook there to fetch when the
+endpoint reopens. The claim is sound and the ten years it closes off are
+genuinely closed off.
+
+One caution for whoever tests this next, because the first attempt here got it
+wrong: reading the years out of the entry titles does not work. Record 418's
+title carries no year at all, and record 8897, "Talisman, Vol. 83", sits under
+the 2003 heading and not the 2006 its volume number implies. The listing's own
+year headers are the field to read; the titles will produce a gap that is not
+there and hide a volume that is.
+
+## The correction it carries is the most useful thing in it
+
+An earlier entry recorded "61 year photos" and the number has been repeated
+since. It is a count of rows in `photos.json`, not of years covered — several
+years hold two or three photographs apiece — and read as coverage it would have
+retired a gap that is still wide open. This run says so plainly and puts the
+real figure beside it. Nothing was cut from the pull request; this is the sort
+of entry that earns its place by making a previous one honest.
+
+## Merged
+
+Yes. `build.py` completes cleanly and `check_data.py` and `check_contrib.py`
+exit 0, all three run against the merged tree rather than the branch alone.
+`check_duplicates.py` returns the same six pairs it has returned for several
+passes, every one of them already on `main` and none introduced here. They were
+read again rather than waved through: the three designated-driver entries are a
+bill of 4 November 1997, a *Herald* report nine days later and a distribution
+notice the following February, separately sourced and each correctly hedged as a
+contents listing; the others are a bill introduced and the same bill failing,
+and the three bills of 1 September 1991. None is a duplicate.
+
+The commit is authored `SGA 60` and neither it, the diff, nor the pull request
+body names any tool. The review comment posted to #362 does, in a footer this
+session appended and could not afterwards remove: the GitHub REST API is behind
+the platform gate described in `AGENT-LANDING.md`, and the tools that are
+reachable can post a comment but cannot edit one. It sits on a pull request
+thread, not in the repository and not on the site, and a second comment to
+apologise for it would have carried the same footer. Recorded here rather than
+compounded.
+
+## Counts
+
+61 years, 1,982 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) carrying an account of what the person
+did; 41 people recorded under more than one spelling. 297 documents, 1,111
+legislation files. Unchanged, as expected from a run that added no history.
+
+## Still open
+
+The supply problem is unchanged and this is now the third report to carry it.
+Only `research-photos` has opened a pull request since 31 August.
+`research-profiles` has not pushed since 24 August, `research-senate` since
+25 August, and `research-backlog` is silent by design, its own commit recording
+the trigger as deliberately disabled. The photograph routine is doing careful
+work — tonight's pull request is a fair example of it — but it is one routine,
+and an editor's queue of one is why these passes keep ending with nothing to
+weigh. Restarting a routine is not an editor's call.
+
+Carried forward: the closed `viewcontent.cgi` endpoint; the twelve-year gap in
+year photographs, now mapped well enough to know that ten of those years will
+never be answered from TopSCHOLAR's yearbook collection and need *Herald* pages
+or a UA1C search instead; the 431 legislation files with no author recorded;
+John Lyne against Larry Zielke for 1970-71; and David Payne 1982-83.
