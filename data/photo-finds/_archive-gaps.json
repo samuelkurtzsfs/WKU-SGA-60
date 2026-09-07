@@ -449,7 +449,7 @@
  },
  {
   "topic": "THE HERALD PEOPLE POLL IS A PORTRAIT SOURCE, AND IT IS NOW MAPPED FOR 1993-1999",
-  "note": "The College Heights Herald ran a People Poll on its Opinion page through the 1990s: four or five students, each with a quotation, a framed studio-style mugshot, and the name and home town in bold set IMMEDIATELY BENEATH that person's own frame. Because the label sits under its own frame the pairing cannot slide, which makes it the most provable portrait source in the newsprint era, and it gave FIVE of the eleven faces found on the n9396 block. Two layouts: a vertical column of five down the right-hand edge, and a horizontal strip of four or five across the foot of the page. On this run every People Poll page from 1993 to 1999 was found by searching the OCR for the phrase itself - 316 pages - and every personal name printed on them extracted, 2,522 distinct names, then matched against all 172 people of the n9396 officer and worklist files. THAT SOURCE IS NOW EXHAUSTED FOR 1993-1999 and the roster is worth rebuilding the same way for other decades. Two traps. FIRST, the same Opinion page carries letters to the editor whose signature blocks look exactly like poll labels in OCR - Steve Roadcap, Kip Carr, Joel Banashak, John W. Taylor and Kristin Willis all matched that way and none is pictured; check that the label sits directly under a frame. SECOND, the crushed halftone: a poll frame of a dark-haired or dark-skinned subject can print as a solid black shape with only the teeth legible, which is why Steven Graham and Anne Guillory stay refused.",
+  "note": "SUPERSEDED, AND THE OLD VERSION WAS WRONG IN THE DIRECTION THAT STOPS PEOPLE LOOKING. It said the poll ran 1993-1998 and was spent. In fact **the feature outlived its own title**: from 1999 the identical five-across mugshot strip ran headed with the QUESTION instead of the words 'People poll', so a phrase search returns zero for 1999 and near-zero for 2000-02 while the photographs are still there. Find them by GEOMETRY instead: a short 'Firstname Lastname' line with a home-town-and-class line within 0.04 of page height directly beneath it at the same x. That yields 2,560 labels across 1993-2004, including 65 pages no phrase search can see. TRAPS: letter signatures on the same page mimic labels (six false hits in one run), and bold-type OCR corrupts names — 'Michael Hardin' read as 'Michael Hand', 'Amy Jones' as 'Amy Jonce'. Either would have published a wrong face.",
   "src": {
    "label": "College Heights Herald Opinion pages 1993-1999, UA12/2/1",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
@@ -483,7 +483,7 @@
  },
  {
   "topic": "THE HERALD PEOPLE POLL IS THE MOST PROVABLE NEWSPRINT PORTRAIT SOURCE",
-  "note": "The Opinion-page People Poll sets each person's name in bold DIRECTLY BENEATH THEIR OWN FRAME, so the pairing cannot slide — no row counting, no positional reasoning. It gave five of eleven finds on 1993-96. Every poll page 1993-1999 is now indexed, 316 pages and 2,522 printed names, and that range is SPENT for those years — but the method should be re-run on every other decade. Two traps: letter-signature blocks on the same Opinion page mimic poll labels in OCR and name people who are not pictured, and a crushed halftone can print a frame as solid black."
+  "note": "SUPERSEDED, AND THE OLD VERSION WAS WRONG IN THE DIRECTION THAT STOPS PEOPLE LOOKING. It said the poll ran 1993-1998 and was spent. In fact **the feature outlived its own title**: from 1999 the identical five-across mugshot strip ran headed with the QUESTION instead of the words 'People poll', so a phrase search returns zero for 1999 and near-zero for 2000-02 while the photographs are still there. Find them by GEOMETRY instead: a short 'Firstname Lastname' line with a home-town-and-class line within 0.04 of page height directly beneath it at the same x. That yields 2,560 labels across 1993-2004, including 65 pages no phrase search can see. TRAPS: letter signatures on the same page mimic labels (six false hits in one run), and bold-type OCR corrupts names — 'Michael Hardin' read as 'Michael Hand', 'Amy Jones' as 'Amy Jonce'. Either would have published a wrong face."
  },
  {
   "topic": "HERALD SCAN RESOLUTION SWINGS SEVENFOLD INSIDE 1993-96",
@@ -532,5 +532,191 @@
  {
   "topic": "THE 1982 ASG GROUP PHOTOGRAPH: WORKED, AND NOT CUTTABLE",
   "note": "1982 Talisman p. 241 had never been opened and names nine people the archive holds, including officers Melody Murphy, John Holland, Douglas Ball and Mark Smith. It is 371 x 213 pixels for thirty people on tiered seating — twelve to eighteen pixels a face — so nothing can be cut from it. Do not spend another run on it. It is still worth something: it puts John Holland in ASG two years before his first recorded office. Related: the 1984 Talisman has NO ASG group photograph and no roster at all, which is why the 1983-84 cohort resists every method."
+ },
+ {
+  "topic": "THE PEOPLE POLL OUTLIVED ITS OWN TITLE - THE 1999-2004 STRIPS ARE UNINDEXED AND FINDABLE BY GEOMETRY",
+  "note": "SUPERSEDED, AND THE OLD VERSION WAS WRONG IN THE DIRECTION THAT STOPS PEOPLE LOOKING. It said the poll ran 1993-1998 and was spent. In fact **the feature outlived its own title**: from 1999 the identical five-across mugshot strip ran headed with the QUESTION instead of the words 'People poll', so a phrase search returns zero for 1999 and near-zero for 2000-02 while the photographs are still there. Find them by GEOMETRY instead: a short 'Firstname Lastname' line with a home-town-and-class line within 0.04 of page height directly beneath it at the same x. That yields 2,560 labels across 1993-2004, including 65 pages no phrase search can see. TRAPS: letter signatures on the same page mimic labels (six false hits in one run), and bold-type OCR corrupts names — 'Michael Hardin' read as 'Michael Hand', 'Amy Jones' as 'Amy Jonce'. Either would have published a wrong face.",
+  "src": {
+   "label": "College Heights Herald 74:52, 20 April 1999, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/477"
+  }
+ },
+ {
+  "topic": "THE SPRING SGA CANDIDATE PROFILE PAGE PRINTS A LABELLED STUDIO MUGSHOT OF EVERY CANDIDATE",
+  "note": "A portrait source nobody has worked, and the best-quality one found on this block. Every spring in election season the Herald runs a page headed 'SGA Candidates' carrying one profile per candidate, each with a studio head shot and the candidate's name set in bold DIRECTLY BENEATH the frame, exactly like a poll label but sharper and larger. The page of 20 March 2003 carries Patti Johnson and Dana Lockhart; the Lockhart nameplate centres on x=0.610 of the page width and the frame above it measures x 0.564-0.654, centre 0.609. That gave this run its cleanest face. The value for the wider hunt is that CANDIDATES ARE OFTEN RANK-AND-FILE SENATORS STANDING FOR AN EXECUTIVE OFFICE, so this page reaches people no other source photographs, and it also carries executive officers whose portraits may already be missing. The pages are easy to find in the OCR: search for 'SGA Candidates', 'is running for', 'vying for the office'. 59 such pages exist in 1993-2005. Worth a dedicated pass across the whole run.",
+  "src": {
+   "label": "College Heights Herald 78:47, 20 March 2003, p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9223"
+  }
+ },
+ {
+  "topic": "HOW OFTEN A RANK-AND-FILE SENATOR IS PHOTOGRAPHED AT ALL - MEASURED, NOT GUESSED",
+  "note": "The question the n9701 run was sent to answer for the six hundred senators in the archive who have no portrait. All 107 rank-and-file members of the 1997-2002 block were searched by name against every digitised Herald 1993-2005, 800 issues and 13,818 pages, and every photograph involved was pulled and looked at. Four of the 107 are roster fragments rather than names, leaving 103 people. 65 of the 103 (63 per cent) are named in the paper at least once. 18 (17 per cent) are certainly inside a printed frame, meaning a caption names them. 6 (6 per cent) are in a frame where their own position is provable and the face is legible. So the answer is that the Herald DID write about most of them and did NOT photograph them: two in five never appear at all, and of those who are photographed two thirds are in frames that identify nobody - a night silhouette, an overhead shot of the tops of two heads, a figure forty halftone dots wide across a road, a crowd caption naming three people and positioning none. Expect roughly ONE PORTRAIT PER SIXTEEN SENATORS from a full pass over the other eight blocks, about forty faces in all. That is worth doing, but plan it as a bulk exercise on the two sources that carry labelled frames (the opinion-page poll strip and the spring candidate page), not as a page-by-page hunt: reading news photographs one at a time produced two usable faces out of about seventy pages opened on this run.",
+  "src": {
+   "label": "Sweep of the OCR'd College Heights Herald 1993-2005",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
+  }
+ },
+ {
+  "topic": "A CHEAP WAY TO ASK 'IS THERE A PHOTOGRAPH ON THIS PAGE, AND IS THIS NAME UNDER IT'",
+  "note": "Two techniques that made the difference between opening 70 pages and opening 500, worth reusing on any newsprint block. FIRST, detect halftone photographs without OCR: render the page at 100 dpi greyscale, take the fraction of pixels below 140 in each 16-pixel block, and threshold at 0.36. Newsprint body text sits at about 0.17, headlines about 0.3, halftone photographs 0.45 to 0.8, blank paper 0.0. Close the mask once and take connected components larger than five blocks square. That separates photographs from type reliably on 1993-2005 Heralds and tells you in a second whether a page has any picture at all - on this run it killed a dozen leads outright because the page turned out to carry nothing but advertisements. SECOND, and cheaper still because it needs no PDF: a name is probably in a CAPTION if a photographer credit token ('/Herald', 'photo by', 'Photos by') sits on the same page within 0.10 of the page height ABOVE it and roughly the same column. Run that over the OCR alone and 1,027 raw name hits reduce to 149 caption-zone candidates. Both are in /tmp/hunt-n9701b but that will not survive; they are four dozen lines each and are described here so they can be rewritten.",
+  "src": {
+   "label": "Method note, n9701 run",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
+  }
+ },
+ {
+  "kind": "missing term",
+  "name": "Heidi Grogg",
+  "year": "2001-02",
+  "detail": "The archive has her only as a rank-and-file member of 1998-99, recorded absent from a roll call on 29 September 1998. The Herald names her twice in 2002 as SGA CHIEF JUSTICE: 'SGA chief justice Heidi Grogg' on 12 March 2002, and on 23 April 2002 'Chief Justice Heidi Grogg confirmed Wednesday that the names of this year's candidates were not drawn randomly at the meeting. She called the violation a simple mistake.' That is a Judicial Council office in 2001-02 which the record does not carry.",
+  "src": {
+   "label": "College Heights Herald 77:54, 23 April 2002, p. 2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9178"
+  }
+ },
+ {
+  "kind": "missing term",
+  "name": "John Crowe",
+  "year": "1998-99",
+  "detail": "The archive has him as a Gilbert Hall and later Business College representative in 1997-98. The Herald of April 1999 names him four times as SGA JUDICIAL COUNCIL CHIEF JUSTICE and a Madisonville senior: he oversaw the election exemption hearings, ruled on a campaigning complaint in the residence halls, and is quoted on the election code and on the judicial council's Friday meeting. A Judicial Council office in 1998-99 that the record does not carry.",
+  "src": {
+   "label": "College Heights Herald 74:48, 6 April 1999, pp. 4 and 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8049"
+  }
+ },
+ {
+  "kind": "missing term",
+  "name": "Dana Lockhart",
+  "year": "2002-03",
+  "detail": "The archive has him only as an At-Large member sworn in on 30 January 2001. The Herald's candidate profile of 20 March 2003 sets out a much longer service: a junior from Hendersonville, Tenn., in his fifth semester in SGA, a member of Congress for three semesters, then a justice of the judicial council, and SGA PARLIAMENTARIAN at the time of writing, standing for executive vice president on a ticket with presidential candidate Jessica Martin. He is still 'Dana Lockhart, student senator' in April 2004 and a 'former Judicial Council' member as a graduate in August 2004. At least the parliamentarianship and the judicial council seat are offices the record does not carry.",
+  "src": {
+   "label": "College Heights Herald 78:47, 20 March 2003, p. 6",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9223"
+  }
+ },
+ {
+  "kind": "probable duplicate person",
+  "name": "Tommy Schanding / Tommy Schandling",
+  "year": "1997-98, 1998-99",
+  "detail": "Two roster entries one letter apart in consecutive years, and the Herald knows only one of the spellings. It quotes 'Paris freshman Tommy Schanding' at the Welcome Back Western fair on 21 August 1997, which is his only appearance anywhere in the digitised run 1993-2005; there is no Schandling in the paper at all. Almost certainly one man whose surname the 1998-99 minutes mistyped. Flagged, not merged.",
+  "src": {
+   "label": "College Heights Herald 73:1, 21 August 1997, p. 1",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7938"
+  }
+ },
+ {
+  "kind": "probable duplicate person",
+  "name": "Julie Gray / Julie Beth Gray",
+  "year": "1997-98",
+  "detail": "Carried as two people in the same year, one with a named seat (Central Hall representative) and one from the absence lists. The Herald knows exactly one Julie Gray in these years, 'Bremen freshman Julie L. Gray', quoted on a reorganisation of student affairs on 10 February 1998, and she recurs in graduation and sorority lists as Julie Gray. The middle name in the archive is Beth and the Herald's middle initial is L, which is the only thing arguing against a merge. Flagged, not merged.",
+  "src": {
+   "label": "College Heights Herald 73:34, 10 February 1998, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7965"
+  }
+ },
+ {
+  "kind": "probable duplicate person",
+  "name": "Jason Henin / Jason Heflin",
+  "year": "1997-98",
+  "detail": "'Jason Henin' appears in the 1997-98 absence lists and nowhere in the Herald, ever. 'Jason Heflin' is in the archive in the same year as chairman of the Hillraisers committee and the Herald covers him twice, as a Russellville senior working the Phonathon in February 1996 and as co-chairman of the new Hillraiser committee in September 1997. Henin is a plausible mis-transcription of Heflin in a handwritten roll. Flagged, not merged.",
+  "src": {
+   "label": "College Heights Herald 73:3, 4 September 1997, p. 14",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7941"
+  }
+ },
+ {
+  "kind": "source checked, negative",
+  "name": "Katie Staples, WKU Homecoming Queen 2001",
+  "year": "1997-98",
+  "detail": "Recorded because it is the sharpest single illustration of how thin the photographic record of a rank-and-file senator is. Katie Staples won the National Polled Hereford Queen title in January 2000 and was elected WKU HOMECOMING QUEEN in October 2001, which Spirit Masters and Kappa Delta both announce in congratulation advertisements. The Herald names her sixteen times. It never once printed her picture: the Homecoming special section sets the fourteen queen candidates as plain type with no mugshots, the Homecoming issue's front page is given to the Step Show, and the crowning itself was not photographed in the digitised run. If the paper did not photograph the Homecoming Queen, do not expect it to have photographed an ordinary senator.",
+  "src": {
+   "label": "College Heights Herald, Homecoming special section, 18 October 2001, p. 4A",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9118"
+  }
+ },
+ {
+  "topic": "THE SPRING SGA CANDIDATE PAGE, NEVER WORKED",
+  "note": "Every spring the Herald ran a candidate page printing a labelled studio mugshot of each candidate, name in bold directly beneath the frame — the same unsliddable pairing as the poll. Nineteen such issues between 1993 and 2005 and not one has been worked. Together with the poll this is the pair of sources a bulk pass over the remaining blocks should run, rather than hunting person by person."
+ },
+ {
+  "topic": "HOW OFTEN THE HERALD PHOTOGRAPHED A RANK-AND-FILE SENATOR: MEASURED",
+  "note": "All 107 members of the 1997-2001 block were searched against every digitised Herald 1993-2005, 800 issues and 13,818 OCR'd pages, and every photograph involved was opened. Of 103 real people: 65 (63%) are named in the paper at least once; 18 (17%) are certainly inside a printed frame; **6 (6%) are in a frame where their position is provable and the face is legible**. The paper wrote about most of them and photographed almost none. Katie Staples was WKU Homecoming Queen in 2001, named sixteen times, and the Herald never printed her picture. Budget the other eight blocks at roughly ONE PORTRAIT PER SIXTEEN SENATORS, about forty faces in total — worth doing, but as a bulk run over the poll and the candidate pages, never as a per-person hunt."
+ },
+ {
+  "topic": "THE PEOPLE POLL HAS NOW BEEN SWEPT IN BULK, 1993-2005, AND IS SPENT FOR THIS ARCHIVE",
+  "note": "This is the bulk pass the last three entries on the poll asked for, and it is finished. METHOD: every one of the 798 OCR'd issues and 13,818 pages was read for the poll's label geometry - a two-to-three-word capitalised line with a home-town-and-class line within 0.045 of page height directly beneath it at the same x. 487 pages carry the feature. Both detectors are needed and neither alone is enough: 126 pages were found by geometry that the phrase 'People poll' never appears on, and 174 pages carry the phrase but no strip the geometry could see (most of those are the facing page carrying a 'See People poll, page 4' pointer). HARVEST: 1,874 labels on poll pages, 1,730 distinct names, spread 184/179/241/252/242/216/162/66/134/78/27/59/34 across 1993 to 2005. THE YIELD, matched against all 1,893 people named anywhere in years.json rather than against one block's list: 43 of the 1,730 are people this archive holds, and only 12 of those 43 have no portrait. Three of the twelve (Lori Doolin, Curtis Street, Grace Hancock) had already been worked and withheld; five were letter signatures or OCR corruptions; three gave portraits, plus one more from a label the strip test missed. DO NOT RE-RUN THE SWEEP. What is left is only the harvest file itself, which is worth rebuilding only if the archive's population of people changes.",
+  "src": {
+   "label": "Sweep of the OCR'd College Heights Herald 1993-2005, Opinion pages",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
+  }
+ },
+ {
+  "topic": "WHAT SEPARATES A POLL LABEL FROM A LETTER SIGNATURE: MEASURE THE PAGE, NOT THE TEXT",
+  "note": "The single most useful thing learned on the bulk pass, and the reason six false hits were reported once before. On the Herald's Opinion page the People Poll label and the LETTER SIGNATURE are set in exactly the same way - name in bold, home town and class in italic beneath it - so no amount of text analysis will tell them apart, and clustering does not save you either: three Young Democrats co-signing one letter on 30 January 1996 look precisely like three poll entries in a row. THE TEST THAT WORKS is the photograph. Render the page grey at about 110 dpi, walk upward from the label in strips 0.004 of page height deep across the label's own column, and take the fraction of pixels below 140. Newsprint body type sits near 0.17, a headline near 0.3, a halftone photograph between 0.45 and 0.8, blank paper at 0. Four consecutive dark strips is a frame; anything less is the letter's own body text. On this run that test turned 85 name matches into 18 real frames in a few minutes and every one of the rejects was confirmed by eye afterwards. Second warning: what sits above a letter signature is very often a CARTOON, which is halftone-dark too, so always look at the crop before cutting - Alex Rose (a David Koresh cartoon), Lena Sweeten-Garner, Robert Reynolds, Bob Bell and Matt Bogard all pass a naive darkness test and none is a portrait.",
+  "src": {
+   "label": "Method note, bulk poll and candidate-page run",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
+  }
+ },
+ {
+  "topic": "THREE NAME TRAPS CONFIRMED ON THE PAGE IMAGE, NOT GUESSED AT",
+  "note": "The standing brief names two OCR corruptions; both were reproduced on this run and both were caught only by opening the page. (1) The People Poll of 14 November 1996, p. 4, OCRs as 'Michael Hand, Cumberland freshman' and the printed label is MICHAEL HARDIN. The archive holds a Michael Hand of 1998-99, so this is a clean-looking exact match to the wrong man. (2) The poll of 14 January 1999, p. 4, OCRs as 'Amy Jonce, Morehead sophomore' and the printed label is AMY JONES; the archive holds an Amy Joyce of 2001-02. (3) NEW, and it comes from the matcher rather than the OCR: fuzzy SURNAME matching at edit distance one is too loose on short names. It turned the poll label 'Brandon Smith' into the archive's B.J. Stith (Smith/Stith is one letter, and an initialised first name matches almost anything), and 'Rob Bell, Louisville sophomore' of 1997 into the archive's Bob Bell of 2002-03. Require the first name to match in full before accepting a one-letter surname difference, or require the dates to be tight.",
+  "src": {
+   "label": "College Heights Herald 72:24, 14 Nov 1996 and 74:29, 14 Jan 1999, Opinion pages",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3001"
+  }
+ },
+ {
+  "kind": "source opened and closed",
+  "name": "The spring SGA candidate page in the Herald, 1993-2005",
+  "year": "1993-94 to 2005-06",
+  "detail": "IT IS NOT THE RICHER OF THE TWO SOURCES. The note that called this a portrait source nobody has worked was right that it exists and right about how it is set - a studio head shot with the candidate's name in bold directly beneath the frame - and wrong about what it is worth to this archive. All 798 OCR'd issues were searched for the page furniture ('SGA Candidates', 'candidate profiles', 'is running for', 'vying for the office'). 43 pages across 36 issues carry it, 1993 to 2005. Those 43 pages were harvested for every name-shaped line: 399 lines, 366 distinct names, 146 of them with a photograph-sized gap above. Matched against all 1,893 people named in years.json, only 14 are people this archive holds, and only ONE of those fourteen has no portrait - Kristin Willis, and her line turns out to be a letter signature on the facing column of the candidate page of 9 April 1996, not a candidate mugshot. THE REASON is structural and should stop anyone reworking it: the page profiles candidates for PRESIDENT and the two VICE-PRESIDENCIES, and those are exactly the people the archive already photographs. It does not reach the rank-and-file senator the note hoped it would. Do not spend another run on it.",
+  "src": {
+   "label": "College Heights Herald spring candidate pages 1993-2005; 78:47, 20 March 2003, p. 6 is the type specimen",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9223"
+  }
+ },
+ {
+  "kind": "source counted, one item only, already mined",
+  "name": "The Herald's SGA elections special section",
+  "year": "2004-05, 2005-06",
+  "detail": "Worth recording because the candidate page and the special SECTION are different things and the section is the good one: it prints a grid of labelled mugshots of SENATE candidates, which is the population the archive is short of. There is exactly ONE in the whole digitised run. Checked against the full unfiltered index, data/herald-index-full.json, 11,850 items: the only Herald item whose own title names student government is 'UA12/2/1 Student Government Association Elections', 15 March 2005, dlsc_ua_records/8961. It has already been mined hard - eighteen crops across n0207.json, 2001-2005.json, leadership.json and p00.json, including Willie Cravens, Katie Bennett, Paul Blevins, Josh Collins, Lindsey Lilly, Emily Lovan, Jed Conrad, Kara Ratliff, Mason Stevenson, Melissa Paris, Seth Norman, Ricky Jordan and Elizabeth White. Nothing is left in it and there is no second one to find.",
+  "src": {
+   "label": "College Heights Herald, Student Government Association Elections, 15 March 2005",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8961"
+  }
+ },
+ {
+  "topic": "WHAT THE BULK PASS OVER BOTH LABELLED SOURCES ACTUALLY RETURNED",
+  "note": "So the next run can budget honestly. Two sources, 798 issues, 13,818 OCR'd pages, 2,273 labels harvested (1,874 poll, 399 candidate page), matched against every person in years.json rather than one block. 40 real people in the archive with no portrait were touched by a label. 25 of the 40 had something photograph-shaped above the label; the other 15 were pull quotes and masthead lines with nothing but type above them. After opening all 25 on the page image, most of the 25 turned out to be a cartoon over a letter rather than a mugshot, and the result was: FOUR published - Darron Brawner 1992-93, Jason Sikes 1992-93, Steven Graham 1996-97, Garrett Blincoe 1996-97 - and TWO flagged FACE PROVED, PERSON NOT PROVED for the editor, Mark Page 1998-99 and Bill Brown 1998-99. Three more (Renigar, Doolin, Street) were the same frames earlier runs had already found and withheld, which is an independent check that the geometry finds what a careful human finds. That is a hit rate of about one portrait per 200 harvested labels, and it is the whole of what these two sources hold for this archive. The remaining faceless senators are not in the Herald's labelled frames; they are not in the Herald at all.",
+  "src": {
+   "label": "Bulk pass over the People Poll and the spring candidate page, 1993-2005",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
+  }
+ },
+ {
+  "topic": "FORTY MORE 1997-2005 HERALD PDFs ARE NOW ON DISK",
+  "note": "~/Desktop/SGA60 photo hunt/_herald-pdfs-1997-targeted/ now holds 59 issues rather than 19: forty more were pulled through the Wayback route on the bulk poll run and moved out of /tmp so they survive. They are every 1997-2005 issue that carried a labelled-frame candidate for somebody in the archive, named <date>-a<article>.pdf to match the OCR files. Two things worth knowing about them. FIRST, scan resolution swings just as widely here as the note for 1993-96 says it does: 9 December 1997 is 2,186 pixels to the page and 6 November 2001 is 2,540, while 9 November 1995 and most of 2005 are near 1,000. Always read the native width off the embedded image and render at exactly width over page-rect width. SECOND, some dates have two records and they are different publications, not two scans of one issue: 1995-11-09-a10026 is Herald 71:22 at 1,007 pixels and 1995-11-09-a10027 is a separate supplement called 'The Time Is Now' at 1,979. Do not assume the higher-resolution file is the same paper.",
+  "src": {
+   "label": "College Heights Herald 1997-2005, UA12/2/1",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
+  }
+ },
+ {
+  "topic": "THE SPRING CANDIDATE PAGE IS CLOSED, AND THE REASON IS STRUCTURAL",
+  "note": "Swept: 399 name lines on 43 pages across 36 issues, 1993-2005. Of 366 distinct names only 14 are people this archive holds and only ONE lacked a portrait — and she turned out to be a letter signature on the facing column, not a candidate. The page profiles candidates for president and the two vice-presidencies, which are precisely the people already photographed; it never reaches a rank-and-file senator. Do not reopen. ONE EXCEPTION, a different thing entirely: the elections special section of 15 March 2005, dlsc_ua_records/8961, does print a senate-candidate grid. Checked against all 11,850 items in the full index, it is the only one in the whole digitised run, and it has already been mined for eighteen crops."
+ },
+ {
+  "topic": "THE PEOPLE POLL IS NOW FULLY SWEPT, 1993-2005",
+  "note": "1,874 labels on 487 pages harvested by geometry across the whole OCR'd run. Both detectors are needed and neither alone suffices: 126 pages carry the strip but never the words 'People poll', and 174 pages carry the phrase with no strip, mostly a 'See People poll, page 4' pointer on the facing page. Yearly counts 1993 to 2005: 184, 179, 241, 252, 242, 216, 162, 66, 134, 78, 27, 59, 34. Matched against all 1,893 people in years.json it touched 40 without a portrait, 25 had something photograph-shaped above the label, and opening all 25 gave four portraits and two editor-flagged frames. About one portrait per 200 labels. The source is spent."
+ },
+ {
+  "topic": "SEPARATING A POLL LABEL FROM A LETTER SIGNATURE: MEASURE THE PAGE",
+  "note": "A letter signature is typographically identical to a poll label and clustering does not separate them — three Young Democrats co-signing one letter look exactly like three poll entries. What works is measuring ink above the label: dark-pixel fraction is about 0.17 for body type against 0.45-0.8 for a halftone. That cut 85 name matches to 25 in minutes. WATCH FOR CARTOONS, which pass a naive darkness test: Alex Rose, Lena Sweeten-Garner, Robert Reynolds, Bob Bell and Matt Bogard all sit under one."
+ },
+ {
+  "topic": "A THIRD NAME TRAP, AND IT IS IN THE MATCHER NOT THE OCR",
+  "note": "The two known OCR corruptions reproduced and were caught only on the page image: 'Michael Hand' is MICHAEL HARDIN, 'Amy Jonce' is AMY JONES. A third comes from fuzzy matching rather than from the scan — edit-distance-one on the surname turned Brandon Smith into B.J. Stith and Rob Bell into Bob Bell. Never accept a fuzzy surname match without reading the printed name off the page image."
  }
 ]

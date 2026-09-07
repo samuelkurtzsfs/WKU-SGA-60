@@ -609,5 +609,35 @@
   "year": "",
   "checked": "Three things are now at ~/Desktop/SGA60 photo hunt/ rather than in /tmp. _herald-index-2002-2009/photo_captions_above_2002-2009.jsonl is a rebuilt index of all 31,640 embedded photographs in the 375 staged Herald issues 2002-2009, carrying the text ABOVE each frame as well as below and to the right, which the predecessor's photo_captions.jsonl does not have and which is the field the Herald most often uses for a mugshot label. spirit-scrap/spirit-masters-scrapbook-2007-08_stu_org-328.pdf is the 87 MB scanned volume that gave this block its two best portraits, so nobody has to pull it again. spirit-scrap/spirit-masters-2007-08-ocr.json is its page-by-page OCR.",
   "why": "The old caption index covers 2007-2009 only and reads below and right. The new one covers 2002-2009 and adds above. Between them a Herald photograph of these years can be found by any text that touches it. Everything else this pass downloaded, about two gigabytes of scrapbooks and composites, was deleted rather than left lying about; the fetch recipes are written into the notes above so any of it can be pulled again in a minute."
+ },
+ {
+  "name": "Robert Reynolds",
+  "year": "2002-03",
+  "kind": "label found, no photograph",
+  "fact": "'Robert Reynolds / Nashville Senior' on 29 August 2002, p. 4, is a letter signature recruiting members to an organisation and printing a telephone number, set under a cartoon. Not a poll entry and not a frame.",
+  "src": {
+   "label": "College Heights Herald 78:4, 29 August 2002, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9320"
+  }
+ },
+ {
+  "name": "Rob Anderson",
+  "year": "2006-07",
+  "kind": "frame found, wrong man",
+  "fact": "The Herald's 'What's your story?' feature of 29 October 2002, p. 9, runs a good studio-lit portrait with the subject's name set directly beneath the column head — Rob Anderson, by Beth Sewell — and the story opens 'Nashville senior Rob Anderson'. A Nashville senior in October 2002 graduated in 2003 and cannot be the Rob Anderson sworn into the Student Senate on 3 October 2006. Different man; not cut.",
+  "src": {
+   "label": "College Heights Herald 78:19, 29 October 2002, p. 9",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9262"
+  }
+ },
+ {
+  "name": "Ryan Dillon, Robert Ashby, Matthew Pava, Jason Brown, John Tebault, Brent Richardson, Jessica Sasseen, Damien Clark, David Logan, Stephen Martin",
+  "year": "2000-01 to 2007-08",
+  "kind": "swept and negative",
+  "fact": "Every poll-shaped and nameplate-shaped hit for these ten was opened on the page image and none is a portrait. Ryan Dillon (23 Sept and 4 Nov 2004, 11 Oct and 22 Nov 2005), Robert Ashby (5 Feb 2004, 13 Oct 2005), Matthew Pava (4 Dec 2001, 22 Apr 2003, 16 Mar 2004) and John Tebault (7 Oct 2003, 8 Apr 2003) are letter signatures or masthead lines; Jessica Sasseen, Damien Clark, David Logan and Brent Richardson are OCR corruptions of Herald reporters' bylines (JESSICA SASSEE for a Davasher story, DY ASHLEE CLARK, DY LAURA LAGAN, BY KELLY RICHARDSON); Stephen Martin is a crime-report entry in the Arrests column of 29 October 2002.",
+  "src": {
+   "label": "Sweep of the OCR'd College Heights Herald 1993-2005",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/"
+  }
  }
 ]
