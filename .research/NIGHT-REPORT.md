@@ -17121,3 +17121,91 @@ judging the next run of it by how many faces it lands.
 The two duplicate name-and-URL pairs in the photograph register, Antonina
 Clementi and Annalise Finch, are still waiting on a pass that can open both
 frames. The six unresolved-corroboration entries are unchanged.
+
+---
+
+# 7 September 2026 — editor's pass, second
+
+No open pull request. #373 was reviewed and merged by the earlier pass this
+morning, and nothing has come in since. The three branches stale since 4 August
+remain long closed. With an empty queue the pass went to the state of main and
+to the one defect the last two reports had left standing.
+
+## Main, as published
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0. `check_duplicates.py`
+reports the same six pairs as before, and all six are separate business on a
+second reading: a bill introduced and the same bill failing after amendment, a
+lawsuit planned and then endorsed, a position taken and then legislated, three
+bills filed on 1 September 1991, and a designated-driver scheme announced in
+November and distributed in February. None should be combined.
+
+## The photograph register: both flagged pairs closed
+
+Antonina Clementi and Annalise Finch had been carried as "duplicate name-and-URL
+pairs waiting on a pass that can open both frames" for several nights. Both
+frames were opened. Both hold, and neither is a duplicate.
+
+**Clementi** is the substantial one, and it was the closer call. Her portrait is
+a face cropped out of an eight-person group photograph on the forensics team's
+history archive, from a file named `2022sample3.jpg` — the kind of source that
+should not identify anybody, and the reason the entry kept being re-flagged. The
+archive page does identify her: the caption carried on the image names the back
+row left to right as Miles Morton, Antonina Clemente, Andre Swai and Imam Brula,
+and the front row as Tanya Prabhakar, Madelynn Einhorn, Tess Welch and Avery
+Linehan. Eight names, eight people, four standing behind four. The second figure
+in the back row is the woman in the maroon floral dress who was cropped for the
+portrait. The identification is sound and the picture stays.
+
+The entry never recorded any of that, which is precisely why three passes in a
+row re-opened it. The caption is now written into the label, so the next reader
+sees the evidence instead of repeating the search. The caption also spells the
+surname **Clemente**, where the season roster higher up that same page spells it
+Clementi, as does the Herald in its photograph of her as secretary of the senate.
+The archive follows Clementi and the variant is now flagged in the label rather
+than fixed anywhere, per the spelling rule.
+
+**Finch** is one person, one portrait, two years of service, and was already
+honestly labelled. The 2024-25 register entry stands under "Annie Finch" because
+that is the spelling of the record it attaches to — she chairs the Community
+Relations Committee that year under that name — while the 2023-24 entry stands
+under Annalise for the same reason. `name-aliases.json` carries the pair, the
+build resolves them to one officer page, and the label says outright that the
+portrait is the one already published at 2023-24. Winiger/Wininger and
+Ricky/Ricke follow the same pattern. Nothing to fix.
+
+## One thing examined and deliberately left alone
+
+Ninety-two photograph credits end in "(good)", which reads at first like a
+verifier's grade left in a public citation. It is not. It sits in a scale with
+"(medium)" on 38 credits and "(low)" on 22, and alongside "(small: ...)" and
+"(cropped from a group photo)" — a deliberate note on what the image itself is
+like. Stripping it would have destroyed a real annotation on 152 entries.
+Recorded here so the next pass that notices it does not cut it either.
+
+"(only picture found)", on 423 credits, is a note about the search rather than
+about the source. It is honest and it is not wrong, but whether it belongs in a
+public credit line is an editorial question rather than a defect, and not one to
+settle unilaterally on a routine pass.
+
+## Merged
+
+Yes. One file, `data/photos.json`, one label. No photograph added or withdrawn,
+no event, no person, no change to `years.json`.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person did.
+297 documents, 1,111 legislation files, 4,973 records in the search index.
+Unchanged: this pass added no history, it recorded the evidence for a photograph
+already published.
+
+## Still open
+
+The eleven paused routines, unchanged and still not an editor's call to reverse.
+The six unresolved-corroboration entries are unchanged and need no further pass.
+The photograph register now has no flagged pair outstanding. The photograph
+routine is working cabinet and Senate officers, where dead ends are the normal
+result, which is worth knowing before judging its next run by how many faces it
+lands.
