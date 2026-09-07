@@ -17315,3 +17315,115 @@ not be edited after posting. Nothing in the repository or the generated site
 carries it — the pull request body was rewritten clean and the merge commit is
 plain — but the comment on #375 does, and a later pass with working access can
 remove it.
+
+# 7 September 2026, midday — the queue is empty again, so the citations got audited
+
+No pull request was open. The photograph routine's work landed as #375 and its
+report as #376 earlier this morning, and `research-photos` carries nothing
+beyond what the squash put on `main`. Nothing was waiting, so nothing was
+merged from a routine and nothing was refused.
+
+`main` was checked as it stands. `build.py` runs clean, `check_data.py` and
+`check_contrib.py` both exit 0, and the working tree was clean after a rebuild,
+which is the test that the committed pages under `site/` are generated rather
+than hand-edited. `check_duplicates.py` reports the same six pairs it has
+reported for days; all six were read again and all six are distinct events, the
+three bills of 1 September 1991 being exactly the case the rule says to leave
+alone.
+
+## The advance-notice sweep, run against the whole archive
+
+Trap one is the one that has cost this project the most, so it was tested
+mechanically rather than by eye. Every event whose body asserts an outcome — a
+crowd, a sum raised, a verdict, a turnout — was matched against the index lines
+of the issue it cites, and flagged where those lines are phrased in the future.
+
+Four events came back, all concerts between 1970 and 1972, and all four are
+written correctly. Each one names the announcement and the review separately
+and rests its outcome on the review: the Temptations of 18 November 1970 cite
+Mason Ralph's notice of the 17th and his review of the 20th, and the Orphan
+mini-concert of 15 November 1972 cites Al Cross's review two days later. The
+citations were checked against the index and each points at the issue its label
+names. The sweep that #372 did by hand holds up under a mechanical test.
+
+## What the citations turned out to be hiding
+
+The same method turned on the citation labels themselves found something the
+eye would not. Where a label carries a volume and issue number, that number can
+be checked against the archive's own title for the item at the URL. On 948
+Herald citations, 33 labels named an issue number the archive does not use for
+that item — the date and the link were right in every case, so no fact was
+wrong, but a reader following the link landed on an issue whose masthead did not
+match the citation they came from.
+
+Eleven of the 33 were confirmed one at a time against the live landing pages on
+TopSCHOLAR before anything was changed, paced three seconds apart. In every one
+the archive agreed with the index and not with our label: the Herald of 10
+February 2000 is 75:37 and we called it 75:32, the Herald of 13 April 1989 is
+64:49 and we called it 64:51, the four 1987 issues covering the Schilling
+impeachment were each off by one or two. Twenty-nine labels in `years.json` and
+four in `photos.json` were corrected to the number the archive prints. Only the
+number token moved; dates, authors, headlines and URLs were left untouched.
+
+Two of those needed the archive's own hedge carried across. TopSCHOLAR titles
+the issue of 16 March 2004 "Vol. 78, No. 46 [Vol. 79]" and the issue of 17
+February 2009 "Vol. 84, No. 22 [32]" — the bracket is the archive correcting a
+misprinted masthead. Those labels now reproduce both numbers, so the reader can
+recognise the page they land on.
+
+Four citations still disagree and are being left alone. Three carry "69:52 [51]"
+where the archive prints "No. 51 [52]" — both numbers are there, in the other
+order — and one names two sources at once, the SGA minutes of 13 February 1969
+and the Herald of the 20th, which is the issue the link opens.
+
+## Cut
+
+Nothing. No claim in the diff was unsupported, because the diff makes no claims:
+it corrects the address on citations whose evidence was already good. No event,
+no person, no photograph and no source URL changed, and the counts below are the
+same before and after.
+
+## The traps checklist
+
+No advance notice anywhere in the diff. No committee chair promoted to officer
+and no bill's author made a member; no office is named in it at all. Nobody
+matched by surname, no changed surname, and no new person. No April result
+filed forward or back, because no dates moved. Nothing touching a settled fact.
+Nothing about a living person: the only names in the diff are the bylines the
+Herald printed, unchanged. No contributor edit was in this run's tree.
+
+## One correction to this file's own record
+
+This run's clone was **shallow**, which is the trap the report of 5 September
+documented: `git merge-base` returned empty for every branch from 4 August,
+which reads exactly like an orphan history and is not one. Nothing here rests
+on that reading. Those branches were measured properly on 5 September, carry no
+commit since 31 August, and have no pull request open; they were left as they
+are.
+
+## Checks
+
+`build.py` clean. `check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py`
+six pairs, all pre-existing, all judged distinct. The citation audit re-run
+after the corrections returns only the four explained above.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person
+did. 297 documents, 1,111 legislation files, 4,973 records in the search index.
+Unchanged by this pass, which is the point.
+
+## Still open
+
+Nothing in the queue. `data/presidents.json` — the pre-migration source that
+`scripts/migrate.py` read once and nothing reads now — carries one of the same
+stale issue numbers, 51:50 for the Herald of 28 April 1972. It renders nowhere
+and was left, but a later pass that decides the file has no reason to stay
+should know it is not clean.
+
+The tooling footer on the review comment on #375, recorded this morning as
+something a later pass might strip, is still there. It was left deliberately:
+removing it would mean editing a comment to hide who wrote it. Nothing in the
+repository or on the generated site carries any such line, which is what the
+rule protects.
