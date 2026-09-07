@@ -559,5 +559,47 @@
   "year": "2018-19",
   "file": "https://wkuherald.com/wp-content/uploads/2018/04/252a57c863862af32ec61481111279fc-1.jpg",
   "reason": "Same frame and same problem as the Stephen Mayer entry above: three names, no stated order."
+ },
+ {
+  "name": "Vern Pulman",
+  "year": "1974-75",
+  "file": "1975 Talisman (archive.org talisman1975west)",
+  "reason": "Neither 'Pulman' nor 'Vern' turns up a hit in the volume's OCR text. 'Vernon' matches only an unrelated Vernon Kidd in the yearbook staff credits. No class portrait, no ASG-section mention. Nothing to check next; the surname may be badly misread by the OCR, but a name search alone does not justify guessing at a face."
+ },
+ {
+  "name": "David Young",
+  "year": "1978-79",
+  "file": "1979 Talisman (archive.org talisman1979west)",
+  "reason": "Named twice in running text as administrative vice president, discussing the new ASG constitution's 24 representative-at-large seats, but neither mention is a photo caption. He does not appear in the senior-class portrait listing (the Youngs indexed there are Beverly, Ian, Judith, Rita, Robbi and Sandra; no David). No ASG-section photograph names him."
+ },
+ {
+  "name": "Alice Wicks",
+  "year": "1978-79",
+  "file": "1979 Talisman (archive.org talisman1979west)",
+  "reason": "The back-of-book index carries exactly one 'Wicks, Alice Elizabeth' entry, and it is followed by no page number at all, unlike neighboring entries — she is enrolled but was not photographed for the volume, or her page reference was dropped. No other mention of her anywhere in the OCR text."
+ },
+ {
+  "name": "Steve Wilson",
+  "year": "1978-79",
+  "file": "1979 Talisman (archive.org talisman1979west)",
+  "reason": "A Steve Wilson has a senior class portrait ('STEVE WILSON, agriculture, Tompkinsville') and a separate Steve Wilson is named in a Spring Sing story. Neither mention ties to ASG or the Judicial Council chairmanship, and Wilson is too common a surname to assume either is the officer without a source that says so."
+ },
+ {
+  "name": "Mark Chesnut",
+  "year": "1980-81",
+  "file": "1981 Talisman (archive.org talisman1981west), back index 'Chesnut, Mark Cameron 234'",
+  "reason": "The index gives a page number but the running text around that position in the OCR shows only an unrelated William G. Chesnut in a different class-portrait block; no caption anywhere in the volume names an ASG treasurer or ties either Chesnut to student government."
+ },
+ {
+  "name": "Chris Millay",
+  "year": "1986-87",
+  "file": "1987 Talisman (archive.org talisman1987west)",
+  "reason": "'Millay' returns only Beth Ann Millay and Lori Ann Millay in the index and text, both apparently unrelated women. No 'Chris Millay' or 'Christopher Millay' anywhere in the OCR."
+ },
+ {
+  "name": "Dwight Austin",
+  "year": "1986-87",
+  "file": "1987 Talisman (archive.org talisman1987west)",
+  "reason": "'Dwight' and 'Austin' both return no relevant hits — every 'Austin' match is Austin Peay University, mentioned in sports coverage. No sergeant-at-arms photograph or portrait found."
  }
 ]
