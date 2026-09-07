@@ -294,3 +294,13 @@ An agent died on sleep but said something first: `/tmp/overnight.md` does not ex
 **The job has changed.** With every block closed out on officers, the remaining 796 are 193 documented officers and **603 rank-and-file senators who have never had a dedicated pass**. Launched on 1997-2001, which has 107 of them, with a different objective: the most useful thing it can produce may be a number rather than a face. If the Herald simply never photographed rank-and-file senators, proving that with counts answers the question for six hundred people at once and decides whether the other eight blocks are worth a pass at all.
 - **2026-09-07 13:58** — holding at **1,164 portraits, 1,065/1861 with a face, 796 none, 193 officers without one.** Nothing dropped yet; the 1997-2001 senators agent has only just started. Tree clean, 9 refusals, all of them the withdrawal register and the editor-flagged holds working as intended.
 - **2026-09-07 14:36** — **1,167 portraits, 1,067/1861 with a face, 794 none, 193 officers without one.** Landed 3 from the 1997-2001 senators run, 38 minutes in, and they are senators rather than officers by design now — the officer lists are closed and this is the first dedicated pass at the 603 rank and file.
+
+### 2026-09-07 15:13 — the odds on a senator, measured
+
+**1,171 portraits, 1,071/1861 with a face, 790 none, 193 officers without one.**
+
+The 1997-2001 run was sent to measure rather than to hunt, and the measurement is the result. All 107 members against every digitised Herald 1993-2005 — 800 issues, 13,818 OCR'd pages, every photograph opened. Of 103 real people: **65 named in the paper at least once, 18 certainly inside a printed frame, 6 in a frame where the position is provable and the face legible.** Katie Staples was Homecoming Queen in 2001 and named sixteen times; the paper never printed her picture. That is one portrait per sixteen senators, about forty faces across the eight remaining blocks.
+
+So the approach changes: a **bulk sweep of two sources**, not a per-person hunt. The run found both. The **People Poll outlived its own title** — from 1999 the same mugshot strip ran headed with the question, so phrase search returns nothing while the photographs are still there; found by geometry it yields 2,560 labels across 1993-2004. And the **spring SGA candidate page** prints a labelled studio mugshot of every candidate, nineteen issues 1993-2005, never once worked.
+
+That also corrects an entry of mine which said the poll ran 1993-98 and was spent — wrong, and wrong in the direction that stops people looking. Agent now running the bulk sweep across all nine blocks at once.
