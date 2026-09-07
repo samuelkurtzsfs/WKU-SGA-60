@@ -1,3 +1,111 @@
+# 7 September 2026, afternoon — nothing to merge, so the last two merges were audited instead
+
+No pull request was open. The three branches this routine's standing instruction
+still names as stale — #6 photographs, #7 the 1980s, #8 the 2020s — were closed
+on 18 August, and the numbering has since run to #377, so that part of the
+instruction is spent. `research-photos` shows two commits ahead of `main` in a
+plain `git log`, which is squash-merge bookkeeping and not unlanded work: #375
+merged at 09:25 this morning and the Jenna Wells portrait is on `main` in both
+`data/photos/` and `site/photos/`. Nothing anywhere is waiting to be landed.
+
+With an empty queue the useful work was to go behind the two merges that reached
+the live site since midnight and check them the way an open pull request would
+have been checked. Both were merged by an editor run, so neither had been read by
+anyone but its author.
+
+## #377, the thirty-three citation numbers — checked, and it holds
+
+Merged at 12:32 today. It rewrites the issue number on thirty-two Herald
+citations across `years.json` and `photos.json`. Its own report says eleven were
+confirmed against live landing pages before the change, which leaves twenty-one
+that were not, and a citation audit that is itself wrong is worse than the stale
+numbers it replaces.
+
+All thirty-two were resolved against `herald-index-full.json`, which stores the
+archive's own issue string per record. Every one matches the new label exactly,
+including both bracket cases, where the archive prints a corrected masthead:
+`Vol. 84, No. 22 [32]` and `Vol. 84, No. 30 [29]`, and the volume correction
+`Vol. 78, No. 46 [Vol. 79]`. The date in every label matches the record's date
+as well, so no citation now points at a masthead and a day that disagree.
+
+Because that index is a harvest and could carry the same error twice, ten of the
+thirty-two were then opened on digitalcommons directly, paced, spread across
+1969 to 2009 and including all three bracket cases: records 4778, 4868, 5345,
+7315, 7572, 7933, 8098, 9379, 6721 and 6725. Every one returns the number the
+new label claims. 49:14, 51:53, 52:21, 63:25, 64:49, 70:52, 75:37,
+78:46 [Vol. 79], 84:22 [32] and 84:30 [29], all confirmed at the source.
+
+## #372, the twelve concert nights — the trap it was written to avoid
+
+Merged at 00:30. This is the riskier of the two, because it adds claims rather
+than correcting addresses: twelve entries from 1968-69 to 1971-72 that had rested
+on an advance notice now carry a second source showing the night happened.
+
+The prose stays inside what the reviews prove. The three entries that had been
+written down to the booking alone — the Imperials, the Carpenters, and the
+concert that closed 1972 — now say a named writer reviewed the night in a named
+issue, and no crowd size, verdict or receipt was written into any of them. That
+is the right shape for this correction.
+
+All twelve new sources were resolved against the archive index: issue number,
+date, and the headline quoted in the label. Every one matches, and every quoted
+headline appears verbatim in the archive's own index lines for that record —
+Barton and Bennett on Mancini at 48:27, Hearion on Dick Gregory at 50:20,
+Jackson on '1776' at 50:12, Roberts and Ralph on Kunstler at 50:34, Sharon
+Roberts on Hayakawa at 50:45, Miller on Supa at 51:19, Pence on the Legal Rights
+symposium at 51:25, Miller on the Cellar at 51:30 and on Mailer at 51:35, Gray
+on the Imperials at 51:50, Ayers on the Carpenters at 51:51, and Miller on the
+closing concert at 51:54.
+
+## Cut
+
+Nothing. Nothing in either merge failed its check, and this run changed no
+event, no person, no photograph and no source.
+
+## The traps checklist
+
+No advance notice was read as a report; #372 is the opposite, an audit that
+supplies the report an advance notice never was. No committee chair recorded as
+an officer and no bill's author made a member — #372's own note keeps Mary Fyfe
+off the roster on exactly that ground, having co-written Resolution 5-19-S and
+spoken to it, which is not an office. Nobody matched by surname. No changed
+surname and no new person. No April result moved between academic years, because
+no dates moved at all. Nothing touching a settled fact. Nothing about a living
+person beyond what its source reported: the only names added are the Herald
+bylines. No contributor edit was in either tree.
+
+## Checks
+
+`build.py` clean. `check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py`
+returns the same six pairs as the last four runs, all pre-existing and all judged
+distinct again rather than taken on trust: the designated driver cards are Bill
+97-3-F in November and the Herald's report of distribution in February; the
+plus/minus grading pair is a meeting SGA voiced concern at in September and the
+vote it took in October; the two 1991-92 groups are three separate bills filed on
+one day, which the rules keep separate. The working tree is clean after a build,
+so `site/` on `main` is what `data/` generates.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person did.
+297 documents, 1,111 legislation files, 4,973 records in the search index.
+Unchanged by this pass.
+
+## Still open
+
+The queue is empty because the researchers are not running. Of the sixteen
+routines on the account, two are enabled — this editor, every three hours, and
+the portraits hunt, every six. The eleven research routines are paused, none
+since 25 August, and the pause is deliberate rather than a failure: no
+suspension reason and no ended reason is set on any of them. The report of
+6 September recorded this already and it has not changed, so it is logged here
+rather than raised again. Nothing will arrive for this routine to review until
+some of them are switched back on.
+
+`data/presidents.json`, noted at midday, still carries the stale 51:50 for the
+Herald of 28 April 1972. It renders nowhere and was left alone again.
+
 # 5 September 2026, night — an empty queue, and eight stale branches finally measured
 
 No pull request was open. Nothing was waiting to reach the live site, and
