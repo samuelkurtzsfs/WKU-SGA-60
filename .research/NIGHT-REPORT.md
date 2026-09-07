@@ -17644,3 +17644,124 @@ growing, and the editor's three-hour cadence is now mostly reviewing nothing.
 
 `data/presidents.json` still carries the stale 51:50 for the Herald of 28 April
 1972, as the midday pass recorded. It renders nowhere and was left again.
+
+---
+
+# 7 September 2026, night — #380, seventy-eight portraits carried sideways
+
+One pull request open. The three from 4 August named in the editor's standing
+brief, #6, #7 and #8, were closed on 18 August; the brief is out of date on that
+and nothing is rotting.
+
+## What #380 is
+
+It adds no photographs. Every one of its seventy-eight entries points at a file
+already published on main under another year, and the whole of what is new is the
+association of that face with a second year. Seventy-five distinct images, all
+still valid JPEGs, none of them a face the archive had not already identified and
+published. That narrows what can go wrong here: no new identification can be
+wrong, only a year can be, or a label.
+
+Every one of the seventy-eight names is on record holding an office in the year
+it was carried into. That was checked against `years.json` entry by entry, not
+sampled.
+
+## Verified against the sources
+
+Ten claims across six documents, opened and read this pass.
+
+The 1987 *Talisman* index prints "Sewell, Brian Lewis 359" and "Summers,
+Kimberly Bilete 114, 119, 345", both exactly as the labels quote them. The
+freshman run on p. 359 reads Schmits, Schroeder, Schroeder, Schwartz, Scott,
+Sewell — six names, Schwartz fourth and Sewell sixth, and Rodney and Brian the
+only two men among them, precisely as the label reconstructs the row. The 1981
+volume enters "Albert, Susan Marie 244, 259, 370" and its p. 370 block opens
+Abell, Adams, Adams, Adams, Agent, Akins, Albert: seventh, and the run of men and
+women is man, woman, man, man, woman, woman, woman, exactly the sequence the
+label uses to place her. "Stewart, Kerrie Fay 382" and the caption "KERRIE
+STEWART, La Center" are both there. The 1977 index gives "Saunders, Gene Thomas
+383", the page cited, and he is the only Gene Saunders in the volume.
+
+Four TopSCHOLAR records resolve as labelled: 407 is the 1983 *Talisman* pt. 2,
+pages 194 to the end, so Kelly Cook's p. 232 falls inside it; 7980 is the *Herald*
+of 16 April 1998 and its index carries the vice-presidential race story naming
+Chad Lewis; 384 is the 1968 *Talisman* with its Associated Students section; 382
+is the 1967 volume, pp. 1-187, holding Robert Patterson's p. 136.
+
+This is careful work. Nothing sampled was wrong about a photograph.
+
+## Cut
+
+Nothing was deleted. Twenty-nine labels were trimmed back to what the record
+supports.
+
+Twenty-six said the sitter was "confirmed as the same person" in the second year.
+For a good number of them the archive confirms nothing of the sort: it records
+the same name holding office in two consecutive years, which is a weaker claim
+and the one the labels now make. Where the record does say it outright — Chad
+Lewis "elected executive vice president for the following year", Paul Brosky
+confirmed "for a second year in the post", LaCivita in the office "in 1973-74 and
+again in 1974-75", Ashlynn Evans appointed director that September — the
+surrounding label still says so. What went is the assertion, not the evidence.
+
+Three labels were wrong on their own terms and were fixed:
+
+- Chad Lewis's 1996-97 entry offered as its evidence the quotation "68 against a
+  balance of $30,605." That is a mis-slice of the middle of the *following*
+  year's treasurer's report and proves nothing. Removed.
+- Mistianna Holcomb's said the portrait was carried back from 1990-91. The
+  *Herald* printed it on 9 April 1992, inside 1991-92, the year the entry files
+  it under. It is not a carry at all, and the label now says where the picture
+  comes from.
+- Brian Sewell's said he was "pictured here from 1988-89". The photograph is a
+  freshman portrait in the 1987 *Talisman*, three years earlier, and the same
+  label admitted two sentences above that the identification "rests on the name
+  being unique in the volume, not on a caption tying him to student government."
+  It claimed a confirmation it had just disclaimed. The label now gives the real
+  ground for the carry, which is a good one: he chaired Student Affairs alongside
+  the same co-chair, Bill Engle, in 1988-89 and again in 1989-90.
+
+## The traps checklist
+
+No advance notice is used to carry a result: the one pre-election article in the
+sample, the April 1998 vice-presidential race, is cited for a photograph and for
+nothing else. No committee chair promoted to officer. No bill's author made a
+member. Nobody matched by surname alone; every carry is a full-name match with an
+office recorded in both years, and the three the researcher itself refused —
+Phil Myers, Ryan Boyer, Laura Hancock — were refused on exactly the right ground.
+
+The Lodmell twins survive intact. Carlene's 1995-96 carry uses Carlene's own
+1996-97 portrait; Darlene keeps her own separate file and was not touched. No
+April result moved year. LaCivita's 1974-75 portrait is not withdrawn and its
+label restates the settled identification rather than reopening it. Nothing
+touching a living person goes past its source. No contributor edit in this tree.
+
+## Not verified, and why
+
+Twenty-eight of the seventy-eight cite `wkuherald.com`, which refused every
+request this pass, direct and through the Wayback Machine alike. Those captions
+could not be reread. They are not new claims — each image and its identification
+is already published on main for its own year, and what this pull request adds to
+them is only the second year, which was checked against `years.json` like the
+rest. A later pass with an open window should reread that group.
+
+## Checks
+
+`build.py` clean. `check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py`
+returns the same six pairs as for weeks: three introduction-then-outcome pairs,
+one November bill and its February distribution, and two same-day 1991 bills that
+CLAUDE.md's own rule keeps apart. All pre-existing, none touched by this pull
+request, which changes no events at all. No tool attribution anywhere in the
+diff; every commit on the branch is authored SGA 60.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,616 of them (98%) with an account of what the person did.
+41 people recorded under more than one spelling. 297 documents, 1,111 legislation
+files, 4,973 records in the search index.
+
+## Still open
+
+The wkuherald group above. And the eleven disabled routines remain the owner's
+question, unchanged from the last several passes.
