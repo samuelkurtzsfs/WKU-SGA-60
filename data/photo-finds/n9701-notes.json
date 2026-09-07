@@ -436,7 +436,7 @@
   "year": "1998-99",
   "fact": "Three appearances, all text. The Herald of 11 September 1997 quotes 'Louisville freshman Tyler Bronger' on the new convenience store, and there is no photograph on that page; the Opinion page of 23 September 1997 mentions him in the same debate, and the People Poll at its foot carries five other faces, Traci Gott, Andy Hoover, Chandra Poole, Jennifer Ball and Jared Cox. A Louisville freshman in September 1997 is a sophomore in 1998-99, which fits his swearing-in on 26 January 1999.",
   "src": {
-   "label": "College Heights Herald 73:6, 11 September 1997, p. 2 (PDF p. 2)",
+   "label": "College Heights Herald 73:6, 11 September 1997, p. 1 (PDF p. 2)",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7943"
   }
  },
@@ -1194,6 +1194,106 @@
   "src": {
    "label": "College Heights Herald 72:55, 29 April 1997, p. 18 (PDF p. 19)",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3011"
+  }
+ },
+ {
+  "name": "J Thomas",
+  "year": "1997-98",
+  "kind": "a frame exists that cannot be identified",
+  "fact": "The People Poll of 11 November 1997, printed p. 4, carries a clean labelled mugshot of 'Jay Thomas, Bardstown sophomore', 322 pixels wide on a 2,211-pixel scan. The archive's 1997-98 Congress member is recorded only as the initial 'J Thomas', never with a first name, and a Bardstown sophomore in autumn 1997 is exactly the right cohort. It is NOT cut, because expanding an initial is not an identification: J could be Jay, James, Jason, Jeff, John or Jennifer, and nothing in any source puts Jay Thomas in student government. The frame is recorded here so a later pass with a fuller 1997-98 roster can settle it in one step rather than searching again.",
+  "src": {
+   "label": "College Heights Herald 73:22, 11 November 1997, p. 4, People Poll",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7955"
+  }
+ },
+ {
+  "name": "Bob Bell",
+  "year": "2002-03",
+  "kind": "label found, no photograph; and a near-miss",
+  "fact": "Four sightings, none usable. The poll of 30 September 1997, p. 4, carries a good labelled frame of 'Rob Bell, Louisville sophomore', which the OCR offered as Bob Bell: wrong man, and the dates rule it out anyway, a sophomore of 1997 having left before 2002. The three sightings of the archive's own Bob Bell are all letter signatures on the Opinion page, 28 March 2002 p. 5, 23 April 2002 p. 4 and 23 January 2003 p. 4, each set in the poll's own bold-over-italic form under a cartoon.",
+  "src": {
+   "label": "College Heights Herald 78:31, 23 January 2003, p. 4; the Rob Bell poll frame is 73:11, 30 September 1997, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9242"
+  }
+ },
+ {
+  "name": "Amy Joyce",
+  "year": "2001-02",
+  "kind": "OCR trap, the label is another woman",
+  "fact": "The poll of 14 January 1999, p. 4, gives what looks like a perfect hit: a clear labelled mugshot the OCR reads 'Amy Jonce, Morehead sophomore'. The page image reads AMY JONES. The standing brief names this exact corruption as one of the two that would have published a wrong face, and it is confirmed here on the page itself.",
+  "src": {
+   "label": "College Heights Herald 74:29, 14 January 1999, p. 4, People Poll",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8033"
+  }
+ },
+ {
+  "name": "Lisa Ruble",
+  "year": "1998-99",
+  "kind": "label found, no photograph",
+  "fact": "'— Lisa Ruble / Louisville senior' on 12 March 2002, p. 3, is a pull quote in a story on internships and co-ops, set in large italic display type with no frame. Not a poll entry.",
+  "src": {
+   "label": "College Heights Herald, 12 March 2002 ('Take Control'), p. 3",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9181"
+  }
+ },
+ {
+  "name": "David Wilkins",
+  "year": "1998-99",
+  "kind": "label found, no photograph",
+  "fact": "Four sightings between November 1998 and April 1999, all letter signatures reading 'David Wilkins / Bardstown freshman' on the Opinion page: 17 November 1998, 24 November 1998, and 13 April 1999, the last on the SGA candidate page itself, where he writes attacking the Spears-Mory abolish-SGA ticket. He is in no frame.",
+  "src": {
+   "label": "College Heights Herald 74:50, 13 April 1999, p. 4; also 74:23 and 74:25, November 1998",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8051"
+  }
+ },
+ {
+  "name": "Matt Bogard",
+  "year": "1998-99",
+  "kind": "label found, no photograph",
+  "fact": "Three sightings, 26 April 2001, 22 April 2003 and 18 September 2003, all letter signatures ('Louisville senior', then 'Bowling Green graduate student', then 'Taylorsville graduate student'), each under a cartoon rather than a frame.",
+  "src": {
+   "label": "College Heights Herald 78:53, 22 April 2003, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9217"
+  }
+ },
+ {
+  "name": "Katie McConathy",
+  "year": "1998-99",
+  "kind": "label found, no photograph",
+  "fact": "'Katie McConathy / Lexington sophomore' on 8 December 1998, p. 4, is a letter signature about SGA giving money to the KAs and to Murray State. No frame.",
+  "src": {
+   "label": "College Heights Herald 74:27, 8 December 1998, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9052"
+  }
+ },
+ {
+  "name": "Tyler Bronger",
+  "year": "1998-99",
+  "kind": "quoted twice, never photographed",
+  "fact": "The Herald quotes 'Louisville freshman Tyler Bronger' on 11 September 1997, p. 1, and again on 23 September 1997 in stories on new campus shops. The 11 September item sets his name in the poll's own pull-quote form, '— Tyler Bronger / Louisville freshman', which is why the sweep found it; there is no frame, only display type. Useful as dating: a Louisville freshman in autumn 1997 is a sophomore when the archive has him sworn in on 26 January 1999.",
+  "src": {
+   "label": "College Heights Herald 73:6, 11 September 1997, p. 1",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7943"
+  }
+ },
+ {
+  "name": "Martha Bonds",
+  "year": "1997-98",
+  "kind": "label found, no photograph",
+  "fact": "'Martha Bonds / Scottsville freshman' on 18 February 1997, p. 4, is a letter signature; the line immediately beneath it is the jump line SEE LETTERS. No frame.",
+  "src": {
+   "label": "College Heights Herald 72:38, 18 February 1997, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3027"
+  }
+ },
+ {
+  "name": "Kyle Gott",
+  "year": "2001-02",
+  "kind": "label found, no photograph",
+  "fact": "'Kyle Gott / Bowling Green sophomore' on 28 October 2003, p. 4, is a letter signature urging a vote for Ben Chandler. No frame.",
+  "src": {
+   "label": "College Heights Herald 79:19, 28 October 2003, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9350"
   }
  }
 ]

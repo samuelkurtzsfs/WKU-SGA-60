@@ -603,5 +603,41 @@
   },
   "width": 142,
   "height": 253
+ },
+ {
+  "name": "Steven Graham",
+  "year": "1996-97",
+  "file": "1996-97-steven-graham.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 146,
+  "height": 261,
+  "caption_quote": "Steven Graham, Guthrie sophomore",
+  "why": "College Heights Herald People Poll, 9 December 1997, printed p. 4. The poll sets each student's head shot with the quotation directly beneath it and the name in bold, home town and class beneath that, one column per student. His frame runs x 0.524 to 0.589 of the page width and his name line sits at x 0.525, the same column; the column to its left ends at x 0.511. This issue is scanned at 2,186 pixels to the page, nearly twice the run's usual 1,200, so the face reads clearly.",
+  "id_note": "Two poll frames of the same man exist and they corroborate each other. The Herald of 12 September 1996, p. 4, prints the same five-across strip with 'Steven Graham, Guthrie freshman'; the Herald of 9 December 1997 prints 'Guthrie sophomore' (OCR reads the home town as Guthne in both). Same name, same home town, consecutive class years, so it is one student, and a freshman in autumn 1996 is exactly what the archive records: Graham is in the 1996-97 Congress on the roll-call vote of 3 December 1996 and was congratulated that night for perfect attendance. The September 1996 frame is contemporaneous with his term but is only 85 pixels wide on a 1,323-pixel scan and prints almost black; the December 1997 frame is the same man a year older and is legible, so it is the one cut. Identification proved.",
+  "src": {
+   "label": "College Heights Herald 73:28, 9 December 1997, p. 4, People Poll",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7960"
+  },
+  "src_second": {
+   "label": "College Heights Herald 72:7, 12 September 1996, p. 4, People Poll",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2978"
+  }
+ },
+ {
+  "name": "Garrett Blincoe",
+  "year": "1996-97",
+  "file": "1996-97-garrett-blincoe.jpg",
+  "replaces": null,
+  "quality": "good",
+  "width": 200,
+  "height": 248,
+  "caption_quote": "Garrett Blincoe, Bardstown senior",
+  "why": "College Heights Herald People Poll, 27 August 1998, printed p. 4. Students run across the foot of the Opinion page, each with a head shot, the quotation beneath it, then the name in bold with home town and class. Measured on the page: the frames in that row sit at x 0.329-0.443, x 0.471-0.571 and x 0.586-0.714 of the page width, and his name line begins at x 0.349, inside the first of those and inside no other. Front on, eyes to camera, 200 by 248 on a page scanned 1,722 pixels wide, which is one of the better newsprint frames in this run.",
+  "id_note": "The archive has him in the 1996-97 Congress from the roll call of 17 September 1996, and warns that a Lance Blincoe served alongside him, so the given name has to carry the identification: this label reads Garrett in full. A Bardstown senior in August 1998 was a sophomore in 1996-97, which fits. Garrett Blincoe occurs nowhere else in the digitised Herald of 1993-2005 and there is no second Garrett Blincoe in the record. Identification proved.",
+  "src": {
+   "label": "College Heights Herald 74:2, 27 August 1998, p. 4, People Poll",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9079"
+  }
  }
 ]

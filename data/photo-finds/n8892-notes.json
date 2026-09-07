@@ -238,5 +238,25 @@
    "label": "WKU Spirit Masters Scrapbook 1989-90, UA12/2/16, class composite board",
    "url": "https://digitalcommons.wku.edu/stu_org/321/"
   }
+ },
+ {
+  "name": "Alex Rose",
+  "year": "1992-93",
+  "kind": "label found, no photograph",
+  "fact": "Three Herald items label him 'Alex Rose, Nashville junior' and 'Nashville senior' in exactly the poll's typographic form, and none of the three is a poll entry. All three are LETTER SIGNATURES on the Opinion page: 4 March 1993 p. 4, under a Waco/David Koresh cartoon; 4 November 1993 p. 4; 22 February 1994 p. 5. The Opinion page sets a letter signature in the same bold-name-over-italic-town-and-class as the People Poll, which is why a geometry sweep finds them and why six false hits were reported on an earlier run. Nothing of Alex Rose is photographed in 1993-2005.",
+  "src": {
+   "label": "College Heights Herald 68:42, 4 March 1993, p. 4; 69:20, 4 November 1993, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7823"
+  }
+ },
+ {
+  "name": "Lena S. Garner",
+  "year": "1994-95",
+  "kind": "label found, no photograph",
+  "fact": "The Opinion page of 25 March 1993 carries 'Lena Sweeten-Garner / Smiths Grove junior' set exactly like a poll label; the OCR reads it 'Lena S. Garner', which is also how the archive holds her, so the two look like a perfect match. It is a letter signature, and what stands above it is a full-column cartoon, not a photograph. Worth keeping because it is also the archive's only sighting of the full form of her name: Lena Sweeten-Garner of Smiths Grove, a junior in spring 1993.",
+  "src": {
+   "label": "College Heights Herald 68:45, 25 March 1993, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7828"
+  }
  }
 ]

@@ -855,5 +855,37 @@
    "url": "https://digitalcommons.wku.edu/stu_org/321/"
   },
   "id_note": "SUPERSEDED SOURCE, KEPT SO THE REASONING IS NOT LOST: the crop this replaces was 1992 Talisman, p. 19, the 1991 Homecoming court on the Smith Stadium track, a two-person night frame captioned 'Daryl Pepper, an Elizabethtown senior, escorted Lee Ann Walke', indexed 'Pepper, Daryl 19'. That identification was sound; the image was a soft night exposure. Lee Ann Walke is also on this Spirit Masters board, which corroborates both."
+ },
+ {
+  "name": "Darron Brawner",
+  "year": "1992-93",
+  "file": "1992-93-darron-brawner.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 163,
+  "height": 236,
+  "caption_quote": "—Darron Brawner, Calhoun freshman",
+  "why": "College Heights Herald People Poll, 15 April 1993, printed p. 4. This issue sets the poll as a row of ruled boxes across the foot of the Opinion page, each box holding one student's quotation with that student's head shot beside it and the student's name in bold with home town and class immediately beneath the pair. Measured on the page: the halftone frames in that row sit at x 0.127-0.225, x 0.310-0.394 and x 0.493-0.578 of the page width, one every 0.183, and his name line begins at x 0.428 and runs to about x 0.58. Only the 0.493-0.578 frame falls inside his box; the next one is 0.183 away, in the box whose own name line is to the left of his. Nothing can slide.",
+  "id_note": "The archive has him as a Freshman Representative of 1992-93, elected in the autumn 1992 freshman elections and reported to Congress on 29 September 1992. The poll of 15 April 1993 calls him a Calhoun freshman, which is the same class in the same academic year, and Darron with that spelling occurs nowhere else in the digitised Herald of 1993-2005. Identification proved.",
+  "src": {
+   "label": "College Heights Herald 68:52, 15 April 1993, p. 4, People Poll",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7835"
+  }
+ },
+ {
+  "name": "Jason Sikes",
+  "year": "1992-93",
+  "file": "1992-93-jason-sikes.jpg",
+  "replaces": null,
+  "quality": "good",
+  "width": 340,
+  "height": 499,
+  "caption_quote": "—Jason Sikes, Bowling Green freshman",
+  "why": "College Heights Herald People Poll, 15 February 1994, printed p. 4, under the standing head 'PEOPLE POLL'. Each respondent gets a head shot with the quotation set beside it and the name in bold with home town and class directly beneath the pair. His frame runs x 0.127 to 0.211 of the page width and his name line begins at x 0.100 under it, inside his own ruled box; the neighbouring box begins at x 0.28. This issue is scanned at 4,058 pixels to the page, three times the usual, so the crop is 340 by 499 and is the sharpest newsprint face taken on this run.",
+  "id_note": "One Jason Sikes runs through the digitised Herald and the chain fits the archive's record. The Herald of 12 January 1993, p. 12, captions a drop-add queue photograph 'Bowling Green freshman Jason Sikes', which places him as a freshman in 1992-93 — the year SGA's own minutes record him, absent from the roll of 6 April 1993. By the autumn he is a public figure: the Herald names him four times in August to October 1993 as 'USA President Jason Sikes, a Bowling Green sophomore', president of the United Student Activists, then in dispute with SGA over $500 of Adopt-A-Spot prize money. Same name, same home town, one class year on. THE ONE DISCREPANCY, recorded rather than smoothed over: this poll label of February 1994 calls him a Bowling Green freshman when the paper's own October 1993 reporting had already made him a sophomore. The label conflicts with the Herald, not with SGA's record, and no second Jason Sikes appears anywhere in the 262 digitised issues of 1993-1996 or the 537 of 1997-2005. The January 1993 news photograph, which would have been contemporaneous, was opened and is unusable: a very dark two-figure frame with no legible face.",
+  "src": {
+   "label": "College Heights Herald 69:37, 15 February 1994, p. 4, People Poll",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7857"
+  }
  }
 ]

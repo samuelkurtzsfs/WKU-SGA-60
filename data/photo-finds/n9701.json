@@ -702,5 +702,39 @@
   "width": 255,
   "height": 431,
   "replaces": null
+ },
+ {
+  "name": "Mark Page",
+  "year": "1998-99",
+  "file": "1998-99-mark-page.jpg",
+  "replaces": null,
+  "quality": "soft",
+  "width": 184,
+  "height": 257,
+  "identification": "FACE PROVED, PERSON NOT PROVED - FOR THE EDITOR",
+  "caption_quote": "Mark Anthony Page, Louisville senior",
+  "why": "THE FRAME IS CERTAIN. College Heights Herald People Poll, 6 November 2001, printed p. 4: five students across the foot of the Opinion page, each head shot with its quotation beneath and then the name in bold with home town and class. His frame runs x 0.214 to 0.286 of the page width and the name line sits at x 0.208 directly under it; the next frame to the left is at x 0.100 to 0.171, one frame to each name, so the pairing cannot slide. The page is scanned 2,540 pixels wide, so the crop is 184 by 257. Soft and low in contrast, a snapshot in a baseball cap rather than a studio frame, but the face reads.",
+  "id_note": "WHY THE PERSON IS FLAGGED, and it is a dating problem rather than a name problem. The archive's Mark Page is a rank-and-file Congress member of 1998-99, recorded absent from the roll calls of 8 and 15 September 1998. The man in this photograph is named in the Herald three other times and the sequence does not fit: on 29 August 2000 he is 'Louisville sophomore Mark Anthony Page', a bartender at a nightclub; on 6 November 2001 the poll calls him a Louisville senior; and on 2 May 2002 he is in the graduation list as Mark Anthony Page. A sophomore in autumn 2000 started at Western in 1999 at the earliest, which is a year after the Congress member is recorded in the minutes. He may be the same man advancing by credit hours rather than by year, and Louisville fits, but nothing in any source puts the man in this frame in student government. Not published on that basis.",
+  "src": {
+   "label": "College Heights Herald 77:22, 6 November 2001, p. 4, People Poll",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9128"
+  }
+ },
+ {
+  "name": "Bill Brown",
+  "year": "1998-99",
+  "file": "1998-99-bill-brown.jpg",
+  "replaces": null,
+  "quality": "small",
+  "width": 85,
+  "height": 124,
+  "identification": "FACE PROVED, PERSON NOT PROVED - FOR THE EDITOR",
+  "caption_quote": "—Bill Brown, freshman from Evansville, Ind.",
+  "why": "THE FRAME IS CERTAIN. College Heights Herald People Poll, 9 November 1995, printed p. 4. This issue sets the poll as a vertical column down the right edge of the Opinion page rather than five across the foot: one head shot, then the quotation, then the name in bold with home town and class, repeated down the page. His frame runs x 0.843 to 0.926 of the page width with the name line at x 0.824 directly beneath it, and the frame above belongs to Joey Baldwin, Carrollton freshman, whose own label sits between the two. Front on, in focus, small only because the page is scanned 1,007 pixels wide.",
+  "id_note": "WHY THE PERSON IS FLAGGED. This is the ONLY occurrence of the name Bill Brown in the digitised Herald of 1993-2005, and the dates work: a freshman in November 1995 is a senior in 1998-99, which is when SGA's minutes have Bill Brown on the floor speaking against the Kappa Alpha Order funding bill on 1 December 1998. But Bill Brown is one of the commonest names there is, the poll says nothing about student government, and the paper's silence on any other Bill Brown proves little for a name like this one. The photograph is of a Bill Brown from Evansville, Indiana; whether he is our Bill Brown is for the editor.",
+  "src": {
+   "label": "College Heights Herald 71:22, 9 November 1995, p. 4, People Poll",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9047"
+  }
  }
 ]
