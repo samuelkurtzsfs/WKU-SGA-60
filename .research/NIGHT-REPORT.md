@@ -17049,3 +17049,75 @@ The six unresolved-corroboration entries above are not a defect and need no
 further pass unless a review turns up for one of them. Two duplicate name-and-URL
 pairs in the photograph register, Antonina Clementi and Annalise Finch, are
 still waiting on a pass that can open both frames.
+
+---
+
+# 7 September 2026 — editor's pass
+
+One open pull request, #373, the rolling photograph hunt. The three branches
+that had been stale since 4 August are long gone; nothing else is waiting.
+
+## What was in it
+
+Forty-two lines, one file, `data/photo-finds/_do-not-use.json`. No photograph,
+no event, no person, no change to `years.json` or `photos.json`. Seven dead ends
+recorded so a later run does not repeat the search: Vern Pulman (1974-75),
+David Young, Alice Wicks and Steve Wilson (1978-79), Mark Chesnut (1980-81),
+Chris Millay and Dwight Austin (1986-87). All seven are officers already in the
+record and the offices named match what `years.json` holds for them.
+
+## Verified
+
+All seven, not a sample — the Talisman volumes for 1975, 1979, 1981 and 1987
+were read from archive.org, which is full text and not rate limited. Every one
+of the seven conclusions holds: no photograph in those volumes can be tied to
+any of these officers by a caption. The Steve Wilson entry refusing to match on
+a common surname is the right call and stays.
+
+Four of the seven reasons overstated what the page actually shows, and were
+trimmed to it rather than cut:
+
+- **Mark Chesnut** was the substantial one. The entry said page 234 held an
+  unrelated William G. Chesnut and stopped there. Page 234 is the men's
+  intramural champions list, and the name is printed there as **Mark Chestnut**,
+  with a T, Sigma Alpha Epsilon, all-sports champion — a spelling the entry's
+  search never tried. The page is fixed by three other names in the same block
+  indexing to it. It is a text listing, not a photograph, so the conclusion was
+  right, but a future run reading the old note would have thought the lead
+  unchecked. The variant spelling is now written into the entry.
+- **David Young** was "named twice" in running text; he is named once. The back
+  index points at that same passage, not at a picture, and the ASG spread's
+  captions name Thornton, Jackson and Orr.
+- **Alice Wicks**'s missing page number was called unusual. It is ordinary in
+  that index — Joel David Wicks below her has none either — so it shows there is
+  nothing to turn to, not that she went unphotographed.
+- **Dwight Austin**'s reason said every Austin was Austin Peay. There are also
+  two Austins in the index and Austin as a hometown. No Dwight Austin either way.
+
+Chesnut aside, these are precision, not error. The conclusions were sound.
+
+## Merged
+
+Yes, with those corrections. `build.py` clean, `check_data.py` 0,
+`check_contrib.py` 0. `check_duplicates.py` reports the same six pairs as main,
+none of them touched by this branch, and each is separate business: an
+introduction and its outcome, a plan and its endorsement, three bills filed on
+one day. The commit carried no tool attribution.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person
+did. 297 documents, 1,111 legislation files, 4,973 records in the search index.
+Unchanged by this merge, which added no history.
+
+## Still open
+
+Every president and student regent now carries a portrait, so the photograph
+routine has moved to cabinet and Senate officers, where the archive is much
+thinner and dead ends are the normal result. That is worth knowing before
+judging the next run of it by how many faces it lands.
+
+The two duplicate name-and-URL pairs in the photograph register, Antonina
+Clementi and Annalise Finch, are still waiting on a pass that can open both
+frames. The six unresolved-corroboration entries are unchanged.
