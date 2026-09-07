@@ -17535,3 +17535,109 @@ something a later pass might strip, is still there. It was left deliberately:
 removing it would mean editing a comment to hide who wrote it. Nothing in the
 repository or on the generated site carries any such line, which is what the
 rule protects.
+
+# 7 September 2026, evening — an empty queue, and the routine roster behind it
+
+## What was reviewed
+
+Nothing was open. `git fetch origin` and a listing of pull requests returned no
+open pull request at all: the repository is at #378 and every research branch
+that had work in it has been merged. The three stale pull requests this pass was
+told to triage — #6 photographs, #7 the 1980s, #8 the 2020s — have been closed
+for weeks. `research-photos` reads two commits ahead of `main`, which is the
+squash-merge artifact of #375 and not unlanded work; compared by content rather
+than by ancestry it holds nothing `main` lacks.
+
+## The force-push on main, checked rather than assumed
+
+The fetch reported `main` force-updated from `f374dda7`. That is this container's
+stale 4 September ref catching up to the rewritten history, not a loss, and it
+was confirmed by content: every photograph file in the old tip is present in the
+new one, `main` carries 1,122 of them against the old tip's 1,002, and
+`years.json` is the larger file. Nothing was dropped.
+
+The two newest commits on `main` were pushed directly rather than through a pull
+request, so no editor had seen them. Both were read. They add the standing brief
+to `data/photo-finds/` and remove six generated officer worklists from the same
+directory; neither touches `years.json`, `photos.json`, or anything the site
+renders. Nothing to hold.
+
+## The routine roster
+
+The premise this pass runs on is out of date, and the trigger list says so.
+Eleven research routines exist and **nine are disabled**: the four decade
+routines, photographs, person profiles, senate rolls, backlog and the legislation
+harvest, all paused since between 5 and 26 August, none of them auto-disabled.
+Two are live — the editor every three hours, and portraits every six. Portraits
+last fired at 13:52 and pushed nothing, which is an ordinary empty pass and not a
+fault. So the queue is not empty by accident: there is one research routine
+feeding it, and the editor now runs more often than anything that produces work
+for it.
+
+## The spot check, run against the live archive instead
+
+With no diff to sample, eight Herald-cited claims were drawn at random from the
+758 on `main` and checked against TopSCHOLAR one at a time, three seconds apart.
+All eight resolved and all eight matched: 50:14, 52:53, 58:42, 53:36, 83:50,
+70:19, 60:9 and the *Student Insight* supplement each carry the masthead the
+citation claims. Three were taken further into the article index. The 1984 grade
+scale entry is Malmer's "Associated Student Government's Grade Scale Denied",
+printed as our entry describes it. All three 2007-08 entries off the issue of 24
+April 2008 are separately indexed articles by Neil Siders — the diploma
+rejection, the engagement transcript and the Ruckus bill — and the library
+closing time is there too.
+
+One pair looked like the duplication CLAUDE.md warns about, two entries dated 15
+October 1974 off one issue described in different words. They are not. The index
+carries "Protesters Urge Associated Student Government Revamping" and
+Wethington's "Protest Prompts Coalition for Change in Concert Booking" as two
+separate articles. Both stand.
+
+## Changed
+
+Four Herald citations that named a date but no issue were completed against the
+archive's own masthead, in the format #377 settled: the issues of 15 October 1974,
+6 December 1974, 4 April 1975 and 30 June 1976 are 50:14, 50:28, 50:47 and 51:60.
+Only the number token was added; dates, headlines and URLs are untouched, and the
+event counts are identical before and after.
+
+Three more citations that carry no number were checked and deliberately left. The
+archive prints no volume or issue for them: the Homecoming issues of 25 October
+1979 and 24 October 1996, and the "Extra Special Bonus Budget Issue" of 1 May
+1992. Their labels are right as they stand.
+
+## Cut
+
+Nothing. No claim examined this pass failed against its source.
+
+## The traps checklist
+
+No advance notice: the four citations corrected carry no claim at all beyond an
+address, and the entries sampled are reports rather than bookings. No committee
+chair promoted to officer and no bill's author made a member. Nobody matched by
+surname; no changed surname; no new person. No April result filed into the wrong
+year, because no date moved. Nothing touching a settled fact. Nothing about a
+living person: the only names added are the volume numbers the Herald printed.
+No contributor edit in this tree.
+
+## Checks
+
+`build.py` clean and `site/` regenerated identically apart from the four labels.
+`check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py` returns the same
+six pairs it has returned for weeks, all pre-existing, all read and all distinct.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person did.
+297 documents, 1,111 legislation files, 4,973 records in the search index.
+Unchanged by this pass.
+
+## Still open
+
+The nine disabled routines are the substantive open question, and it is the
+owner's to answer: with only portraits running, the archive is close to finished
+growing, and the editor's three-hour cadence is now mostly reviewing nothing.
+
+`data/presidents.json` still carries the stale 51:50 for the Herald of 28 April
+1972, as the midday pass recorded. It renders nowhere and was left again.
