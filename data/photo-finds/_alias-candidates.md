@@ -42,3 +42,4 @@ on the site for these.
 - **Steve Wilson** — the reverse problem, one record that is probably TWO men. years.json has him as junior class rep 1971-72 AND Judicial Council chairman 1978-79, which is not one undergraduate career, and the 1979 Talisman index carries both "Wilson, Stephen Alan" and "Wilson, Steve Alan". No portrait should be cut for him until the archive decides how many Steve Wilsons it is describing.
 - **Tommy Schanding** == **Tommy Schandling** — one letter apart, flagged by the 1997-2001 run
 - **Jason Henin** == **Jason Heflin** — flagged by the 1997-2001 run
+- **Evon A. Rajeivick Jr.** is **Evon A. Rajewich Jr.** — the alphabetical position in the 1993 index gives Rajewich, Tammy, and the Herald names the man twice with the W spelling: "Junior Rajewich, a Brownsville junior" (4 Nov 1993) and the dean's list of 27 Jan 1994. A spelling correction, not a merge. He is still unphotographed.
