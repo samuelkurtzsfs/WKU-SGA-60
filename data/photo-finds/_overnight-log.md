@@ -320,3 +320,13 @@ It also found that our stored 1993 index has a hole from Seebold to Templeton, l
 **And it found somebody who was never in student government.** Horace Johnson was carried as a 1995-96 executive on one Herald letter. The page reads 'to me, campus police Chief Horace Johnson', and the headline beside it is 'Officers to patrol dorms'; the 1993 Talisman labels his photograph Public Safety Director. I read the page myself before removing him. An agent sent to find his face found his job instead.
 - **2026-09-07 17:36** — **1,253 portraits, 1,075/1860 with a face, 785 none, 191 officers without one.** Nothing new to land. The portrait count jumped 78 without coverage moving, which is the cloud routine carrying existing portraits sideways onto the adjacent years those same people also served — same faces, more year-pages showing them. Checked and correct.
   With the 1990s closed, **2002-07 is now the largest gap** at 126 people, so the next agent is there. Its 34 officers are already exhaustively documented in 68 notes, so it is briefed to read those first and work the 92 senators in bulk off the caption index rather than person by person — the measured rate is one portrait per sixteen senators and a per-person hunt burns the run.
+
+### 2026-09-07 18:34 — a lead that needs a person, not an agent
+
+**1,253 portraits, 1,075/1860 with a face, 785 none, 191 officers without one.**
+
+2002-07 had been searched name-by-name twice, so this run went the other way and harvested first: **65,839 name lines across 375 Heralds**, 663 mugshot frames, 702 People Poll labels from 2006-2009 that the earlier sweep never reached, and 892 names off 27 WKU class composites. 207 hits on 45 of the 126, all ink-probed, all survivors rendered and read. Two crops, both flagged. The Herald is now worked from both directions for these people and is closed.
+
+**The thing worth your attention is not a photograph.** SGA's own newsletter *Seconds* records that the organisation **photographed every one of its members at the meeting of 14 February 2006**. Those portraits were taken. They are on no page the Internet Archive kept and no crawl will find them. That is a request to WKU Archives — SGA's own photographs from that session, or whatever the 2005-06 executive deposited — and it would fill a hole every automated route has now failed on.
+
+Also newly usable: **WKU class composites** (Dental Hygiene, Nursing, 2001-2010) are a source class nobody had touched — roster as text on the landing page, plates to 4,300 px, one name one face. Cheap to run against any block.
