@@ -16938,3 +16938,114 @@ the standing reason already recorded above: the platform appends it and no tool
 available here can edit a comment after it is posted. Nothing in `data/` or the
 generated site carries it and the commits are clean, which is what the rule
 protects.
+
+# 7 September 2026, night: the advance-notice backlog cleared, and Mary Fyfe settled
+
+No pull request was open. #370 merged late on the 6th and nothing has been
+pushed since, so there was again no research to review. The standing instruction
+to rescue #6, #7 and #8 is still out of date: all three have been closed since
+18 August, and the numbering is now in the 370s.
+
+Main was tested as it stands before anything else. `build.py` clean,
+`check_data.py` 0, `check_contrib.py` 0, `check_duplicates.py` the same six
+pairs. All six were read rather than assumed this time. The two the previous
+pass did not enumerate both hold: the 1992 student regent advisory committee
+pair is a bill introduced on 28 January and the same bill failing after
+amendment on 6 February, which is two events; and the designated driver cards
+are three — Bill 97-3-F of 4 November 1997, the *Herald*'s report of nine days
+later, and the announcement in February that the cards would be handed out. The
+1997 and 1998 entries are also models of the rule they are filed under, each
+saying plainly that the archive holds the issue only as a contents listing.
+
+## The twenty-three, cleared
+
+The previous pass left this open: of the twenty-six events dated after the issue
+they cite, twenty-three were written correctly, but several established that the
+night actually happened by naming a review or the *Talisman* in their prose
+without carrying it as a source. A reader could not check them without going
+looking for a citation the entry declined to give.
+
+Twelve of them can now be checked. The corroboration each one names in prose was
+resolved against the local index and then **opened on digitalcommons and read**,
+one request at a time, three seconds apart. Twelve of twelve confirmed, no 403s.
+Each is now carried as a second source:
+
+- **1968-69, Henry Mancini.** Barton and Bennett's review, *Herald* 48:27 of
+  1 May 1969.
+- **1970-71, '1776'.** Jeanne Jackson's review, 50:12 of 10 October 1970.
+- **1970-71, Dick Gregory.** Ernie Hearion's report of the lecture, 50:20 of
+  6 November 1970.
+- **1970-71, William Kunstler.** Roberts and Ralph, "William Kunstler Rakes
+  Courts", 50:34 of 5 February 1971.
+- **1970-71, S. I. Hayakawa.** Sharon Roberts's report, 50:45 of 2 April 1971.
+- **1971-72, Supa.** Roger Miller's review, 51:19 of 2 November 1971.
+- **1971-72, the Legal Rights symposium.** Carter Pence's report, 51:25 of
+  3 December 1971.
+- **1971-72, the Cellar.** Miller's "Cellar-Dwellers", 51:30 of 25 January 1972.
+- **1971-72, Norman Mailer.** Miller's review, 51:35 of 11 February 1972.
+- **1971-72, the Imperials.** David Gray, "Imperials Cool and Controlled",
+  51:50 of 18 April 1972.
+- **1971-72, the Carpenters.** Elaine Ayers, "Carpenters Plays Songs of Magic
+  for Crowd", 51:51 of 20 April 1972.
+- **1971-72, It's a Beautiful Day and If.** Miller's review, 51:54 of
+  2 May 1972.
+
+Three of the twelve gained more than a citation. The Imperials, the Carpenters
+and the closing concert of 1972 had each been written down to the booking alone,
+which was the correct and careful thing to do while the booking was all the
+entry could prove. A contemporaneous review of each night exists, so all three
+now record that the concert happened and say who reported it. The last of them
+is the reason its own title — the concert that closed the year — is now
+supported rather than assumed.
+
+Six of the twenty-six were left exactly as they stand. Jimmy Buffett, Neil
+Diamond, Ravi Shankar, the *King Kong* series, Harry Chapin and Sam and Dave
+name no corroboration this pass could resolve, and every one of them is already
+written to what its notice proves — "announced", "billed", "scheduled". A miss
+in the local index is not evidence of absence and no negative was written into
+any of them. The remaining three already carried a second source, and two more
+are not advance notices at all: the 1966 Congress roster and the 1968 ballot are
+archive records that happen to predate the day they describe.
+
+## Mary Fyfe: not an officeholder, and that is the finding
+
+Carried open for three passes on the note that she is "named left and right in a
+*Herald* caption beside Amanda Harder" and "does not appear in `years.json` at
+all". The second half was wrong — she is in the file, in Harder's profile, as a
+co-author of Resolution 5-19-S — and the first half is the oldest trap in the
+brief wearing a photograph: a bill's author read as a member.
+
+The *Herald*'s own report of the 23 April 2019 meeting settles it positively
+rather than by absence. It gives Harder her title and then draws the line
+itself, naming the resolution as authored by the Academic and Student Affairs
+Committee chair "and students" Fyfe, Zaffiro, Neal and Vowels. Fyfe's own words
+to the chamber put her outside it: she addresses the senators in the second
+person as students involved in government. She co-wrote a resolution and spoke
+to it, which is not an office.
+
+So nothing changes in the published record, and that is the point. Fyfe stays
+where she is, named in prose as a co-author, off the roster and without an
+officer's portrait. Do not add her to a year without a source that puts her in
+an office.
+
+## Checks
+
+`build.py` clean. `check_data.py` 0. `check_contrib.py` 0.
+`check_duplicates.py` the same six pairs, unchanged by this work, every one of
+them separate business.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person
+did. 297 documents, 1,111 legislation files, 4,973 records in the search index.
+No event was added or removed this pass; twelve gained a source and three gained
+a sentence.
+
+## Still open
+
+The eleven paused routines, unchanged and still not an editor's call to reverse.
+The six unresolved-corroboration entries above are not a defect and need no
+further pass unless a review turns up for one of them. Two duplicate name-and-URL
+pairs in the photograph register, Antonina Clementi and Annalise Finch, are
+still waiting on a pass that can open both frames.
