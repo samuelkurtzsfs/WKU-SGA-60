@@ -4263,6 +4263,104 @@ branch carried the latest independently-landed work; `build.py` and
 `check_data.py` both pass clean against the result. Landed as a
 documentation-only commit on `research-photos`.
 
+**A 7 September 2026 run (photograph agent, scheduled).** Re-checked
+priorities one and two before anything else: Nick Todd, Katie Dawson,
+Jeanne Johnson and Reagan Gilley all still carry a portrait, and a script
+comparing every `leaders` entry in `data/years.json` against
+`data/photos.json` by name found zero presidents or student regents
+without one. Both remain closed.
+
+Also worth recording: `research-photos` briefly looked like an orphaned
+branch relative to `origin/main` (no `git merge-base`) when this run
+started, which raised the same alarm `AGENT-LANDING.md` describes for the
+4 August branches. It was not one. `main` had simply been fetched stale on
+the first pass — a second `git fetch origin main` picked up two photograph
+PRs (#373, #374) that had merged and closed only hours earlier, after
+which the two branches' content matched but for one label edit. No data
+was at risk; recorded here only so a future run that sees the same
+"no merge-base" warning checks whether its `origin/main` ref is simply
+stale before treating it as an orphan-history emergency.
+
+Spent the run on priority three, executive/Senate officers without a
+portrait (186 distinct names as of the 6 September count in
+`data/photo-finds/_officers-truly-missing-2026-09-06.json`, 163 of them
+never yet tried against any source per `_do-not-use.json`). Two things
+worth recording:
+
+`wkuherald.com`'s own on-site search (`/?s=query`) is not a search at all
+from the outside — it returns the identical five most-recent posts
+regardless of query text, confirmed by running two unrelated queries
+("Caroline Simpson SGA" and "Sophie Stirling") and diffing the result
+links, which were byte-for-byte the same five URLs. The 5-6 September
+entries above flagged this as untried; it is now tried and confirmed
+non-functional as a research channel. Do not retry it.
+
+A working technique, new to this file: when a `wkuherald.com` article's
+HTML names a photo gallery by `data-photo-ids`, or a post's `featured_media`
+ID is known from `/wp-json/wp/v2/posts/{id}`, fetching
+`/wp-json/wp/v2/media/{id}` directly returns the image's full caption text
+in `caption.rendered` — often several sentences naming everyone in the
+frame, more than the alt text or the rendered page ever shows. Used this to
+read all eight captions on the 2022 SGA election-night gallery
+(`wkuherald.com/65821/...`, photo ids 65823-65830): every person named
+(Sam Kurtz, Cole Bornefeld, Holden Schroeder, Garrison Reed, Alexis
+Courtenay) already had a portrait on file, so nothing new came of that
+specific gallery, but the technique is worth keeping for the next officer
+with a known article and an unread gallery.
+
+**One new portrait: Jenna Wells, 2022-23 Senator for the Gordon Ford
+College of Business.** WKU News ran an individual "Spotlight" profile of
+her, `wku.edu/news/articles/index.php?view=article&articleid=10793`
+("Jenna Wells Spotlight" by Sydney Windhorst, 7 October 2022), which
+states in running text that she had served as freshman senator and had
+been "recently elected" the 2022-2023 senator for the Gordon Ford College
+of Business, and committee head for student enrollment and experience —
+matching her record in `data/years.json` exactly. The
+article carries exactly one photograph, of her alone at a podium in the
+SGA chambers (the wall plaque text naming the "Student Government
+Association of Western Kentucky University" is legible behind her), so
+there is no ambiguity about who the photograph shows. Saved as
+`data/photos/2022-23-jenna-wells.jpg` (verified JPEG, 323x430) and added
+to `data/photos.json`. This is the same "WKU News Scholar/Spotlight
+profile" pattern already used for Will Hemenover's 2022-23 portrait
+immediately above it in the file — evidently a real vein for Honors
+College students who also serve in SGA, worth searching by name plus
+"Spotlight" for the remaining Mahurin Honors College senators on the
+missing list.
+
+Tried the same "Spotlight" search pattern against roughly 20 more names
+from the missing-officer list, weighted toward 2018-2026 where Herald and
+WKU News coverage is thickest: Callison Padgett, Garrett Baum, Danny
+Vuleta, Maksim Zaepfel, Trevor Clark, Gunnar Robinson, Neel Patel, Mallory
+Hardesty, Elizabeth DeLozier, Tess Welch, James Cecil, Caleb Collins, Livi
+Ray, Joel Hornback, Connor Ferguson, Elizabeth Gannon, Abi Canter, Jesse
+Banales, Nicole Massarone, Turner Reynolds, Tyreesha Morris, Carter Smith.
+All of them have some text mention of their SGA role somewhere on
+`wkuherald.com` or `wku.edu/news` — confirming they are real officers, not
+a data error — but none produced an individually captioned photograph.
+One near miss: Livi Ray appears in a WKU News photograph of seven Gatton
+Academy students presenting research at the Kentucky Capitol
+(`articleid=11877`), but the image carries no per-person caption and the
+seven cannot be told apart from the article text, so it was not used. It
+is recorded in `_do-not-use.json` under her name, so a later pass does not
+open the same picture twice. The pattern across this batch matches what the 5-6
+September entries already found for the WP-JSON post-search sweep: a name
+hit is common, an individually identified photograph is rare, and most of
+this list will need either a source not yet tried (a department or
+college's own news page, a club's own social-facing page within the
+university's own domains) or will simply stay unphotographed.
+
+`viewcontent.cgi` was tested twice this run, at the start and again after
+the officer sweep, against `article=1418` (1993-94 Talisman) and
+`article=1594` (2003-03 Talisman) — both still the bepress-branded "403
+Error" page, not open. Left alone rather than spend the pacing budget on a
+route every recent run has found closed; the two Talisman leads and the
+ten years with no yearbook at all remain exactly where the 6 September
+entry left them.
+
+`build.py` and `check_data.py` both pass clean with the one new photograph
+(61 years, 60 presidents, all still portrayed). Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash

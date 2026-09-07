@@ -576,7 +576,7 @@
   "name": "Alice Wicks",
   "year": "1978-79",
   "file": "1979 Talisman (archive.org talisman1979west)",
-  "reason": "The back-of-book index carries exactly one 'Wicks, Alice Elizabeth' entry and it is followed by no page number, so it points at no photograph. A missing page number is common in this index rather than unusual — 'Wicks, Joel David' directly below it has none either — so it shows only that there is nothing to turn to, not that she went unphotographed. No other mention of her anywhere in the OCR text."
+  "reason": "The back-of-book index carries exactly one 'Wicks, Alice Elizabeth' entry and it is followed by no page number, so it points at no photograph. A missing page number is common in this index rather than unusual \u2014 'Wicks, Joel David' directly below it has none either \u2014 so it shows only that there is nothing to turn to, not that she went unphotographed. No other mention of her anywhere in the OCR text."
  },
  {
   "name": "Steve Wilson",
@@ -588,7 +588,7 @@
   "name": "Mark Chesnut",
   "year": "1980-81",
   "file": "1981 Talisman (archive.org talisman1981west), back index 'Chesnut, Mark Cameron 234'",
-  "reason": "The index page number resolves to the men's intramural champions list, where the name is printed 'Mark Chestnut (Sigma Alpha Epsilon)' as all-sports champion — a spelling variant, and a text listing rather than a photograph. Page 234 is fixed by three other names in the same block indexing to it: Mike Bell, Gary Crenshaw and Karen Francis. The only other Chesnut in the volume is a senior portrait, 'WILLIAM G. CHESNUT, Berea', a different person. Nothing in the volume ties either spelling to ASG or shows the treasurer's face. Search 'Chestnut' as well as 'Chesnut' before reopening this."
+  "reason": "The index page number resolves to the men's intramural champions list, where the name is printed 'Mark Chestnut (Sigma Alpha Epsilon)' as all-sports champion \u2014 a spelling variant, and a text listing rather than a photograph. Page 234 is fixed by three other names in the same block indexing to it: Mike Bell, Gary Crenshaw and Karen Francis. The only other Chesnut in the volume is a senior portrait, 'WILLIAM G. CHESNUT, Berea', a different person. Nothing in the volume ties either spelling to ASG or shows the treasurer's face. Search 'Chestnut' as well as 'Chesnut' before reopening this."
  },
  {
   "name": "Chris Millay",
@@ -601,5 +601,11 @@
   "year": "1986-87",
   "file": "1987 Talisman (archive.org talisman1987west)",
   "reason": "No 'Dwight Austin' anywhere in the volume. The only 'Dwight' is the index entry 'Scott, Dwight Anthony 329', a different surname. 'Austin' matches are Austin Peay University in sports coverage, Austin as a hometown, and two unrelated Austins in the index (Sherian Salome and Lee Ann). No sergeant-at-arms photograph or portrait found."
+ },
+ {
+  "name": "Livi Ray",
+  "year": "2022-23",
+  "file": "https://www.wku.edu/img_news/article_images/11877.jpg",
+  "reason": "WKU News, 'Gatton Academy Students Present Research at Kentucky Capitol' (articleid=11877), shows seven Gatton Academy students in one group photograph on the Capitol steps, Ray's research among those described in the text. No per-person caption ties any of the seven faces to a name, and the group cannot be told apart by the article text alone. Not used."
  }
 ]
