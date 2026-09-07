@@ -606,5 +606,37 @@
   "width": 168,
   "height": 260,
   "replaces": null
+ },
+ {
+  "year": "1998-99",
+  "name": "Kathleen Speicher",
+  "file": "1998-99-kathleen-speicher.jpg",
+  "quality": "soft",
+  "why": "Herald opinion-page poll mugshot, front-on and clearly lit; the only usable photograph of her in the digitised run.",
+  "caption_quote": "Kathleen Speicher, Louisville freshman",
+  "id_basis": "The Herald's People Poll layout, running here under the question headline 'What do you think of Banshee?' rather than the poll's own name. Five framed head shots in a row across the foot of the Opinion page, each with its quotation and then its subject's name in bold and home town and class directly beneath its own frame. The five labels track the five frames left to right and each label centre sits within 0.013 of its frame centre: Adam Sharp 0.131 against frame 0.119, Amber Jackson 0.230 against 0.224, Derrick Herron 0.334 against 0.325, Angela Dennis 0.431 against 0.427, Kathleen Speicher 0.535 against 0.531. The fifth and rightmost face therefore carries the Speicher label. The cohort is confirmed twice over: this poll calls her a Louisville freshman in April 1999, and Shawn Poynter's bonfire picture of 10 November 1998 calls her one of two 'Louisville freshmen', which fits the Congress seat she was sworn into on 8 September 1998.",
+  "src": {
+   "label": "College Heights Herald 74:52, 20 April 1999, p. 4 (PDF p. 5)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/477"
+  },
+  "width": 222,
+  "height": 320,
+  "replaces": null
+ },
+ {
+  "year": "1997-98",
+  "name": "Jeff Swaim",
+  "file": "1997-98-jeff-swaim.jpg",
+  "quality": "soft",
+  "why": "Herald opinion-page poll mugshot, front-on and smiling; the only photograph of him in the digitised run. The halftone is crushed dark but the face reads.",
+  "caption_quote": "Jeff Swaim, Crestwood freshman",
+  "id_basis": "A five-across poll strip at the foot of the Opinion page, run under the question 'How was 1995 for you?' rather than the People Poll label. Each subject's name is set in bold with home town and class directly beneath its own frame. The five frames measure at x-centres 0.0875, 0.1909, 0.2943, 0.3985 and 0.5023 of the page width; the three name blocks the OCR recovered cleanly centre on 0.1884 (Swaim), 0.3965 (Keisha LeBlanc) and 0.5022 (Will Baird), each within 0.0025 of its own frame. Swaim is therefore the second face from the left. Caveat for the editor: the poll proves the face is Jeff Swaim, and the tie to the Congress member of 1997-98 is name plus cohort. Swaim is a rare surname at Western and the whole digitised Herald 1993-2005 carries only this Jeff Swaim, a 'Jeff A. Swaim' in the Phi Eta Sigma national honor society list of 29 April 1997, and an unrelated Anne Swaim. A Crestwood freshman in January 1996 is a junior in 1997-98, and Phi Eta Sigma membership in spring 1997 confirms he was still enrolled.",
+  "src": {
+   "label": "College Heights Herald 71:29, 9 January 1996, p. 4 (PDF p. 5)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2950"
+  },
+  "width": 254,
+  "height": 358,
+  "replaces": null
  }
 ]

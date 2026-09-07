@@ -1,3 +1,111 @@
+# 7 September 2026, afternoon — nothing to merge, so the last two merges were audited instead
+
+No pull request was open. The three branches this routine's standing instruction
+still names as stale — #6 photographs, #7 the 1980s, #8 the 2020s — were closed
+on 18 August, and the numbering has since run to #377, so that part of the
+instruction is spent. `research-photos` shows two commits ahead of `main` in a
+plain `git log`, which is squash-merge bookkeeping and not unlanded work: #375
+merged at 09:25 this morning and the Jenna Wells portrait is on `main` in both
+`data/photos/` and `site/photos/`. Nothing anywhere is waiting to be landed.
+
+With an empty queue the useful work was to go behind the two merges that reached
+the live site since midnight and check them the way an open pull request would
+have been checked. Both were merged by an editor run, so neither had been read by
+anyone but its author.
+
+## #377, the thirty-three citation numbers — checked, and it holds
+
+Merged at 12:32 today. It rewrites the issue number on thirty-two Herald
+citations across `years.json` and `photos.json`. Its own report says eleven were
+confirmed against live landing pages before the change, which leaves twenty-one
+that were not, and a citation audit that is itself wrong is worse than the stale
+numbers it replaces.
+
+All thirty-two were resolved against `herald-index-full.json`, which stores the
+archive's own issue string per record. Every one matches the new label exactly,
+including both bracket cases, where the archive prints a corrected masthead:
+`Vol. 84, No. 22 [32]` and `Vol. 84, No. 30 [29]`, and the volume correction
+`Vol. 78, No. 46 [Vol. 79]`. The date in every label matches the record's date
+as well, so no citation now points at a masthead and a day that disagree.
+
+Because that index is a harvest and could carry the same error twice, ten of the
+thirty-two were then opened on digitalcommons directly, paced, spread across
+1969 to 2009 and including all three bracket cases: records 4778, 4868, 5345,
+7315, 7572, 7933, 8098, 9379, 6721 and 6725. Every one returns the number the
+new label claims. 49:14, 51:53, 52:21, 63:25, 64:49, 70:52, 75:37,
+78:46 [Vol. 79], 84:22 [32] and 84:30 [29], all confirmed at the source.
+
+## #372, the twelve concert nights — the trap it was written to avoid
+
+Merged at 00:30. This is the riskier of the two, because it adds claims rather
+than correcting addresses: twelve entries from 1968-69 to 1971-72 that had rested
+on an advance notice now carry a second source showing the night happened.
+
+The prose stays inside what the reviews prove. The three entries that had been
+written down to the booking alone — the Imperials, the Carpenters, and the
+concert that closed 1972 — now say a named writer reviewed the night in a named
+issue, and no crowd size, verdict or receipt was written into any of them. That
+is the right shape for this correction.
+
+All twelve new sources were resolved against the archive index: issue number,
+date, and the headline quoted in the label. Every one matches, and every quoted
+headline appears verbatim in the archive's own index lines for that record —
+Barton and Bennett on Mancini at 48:27, Hearion on Dick Gregory at 50:20,
+Jackson on '1776' at 50:12, Roberts and Ralph on Kunstler at 50:34, Sharon
+Roberts on Hayakawa at 50:45, Miller on Supa at 51:19, Pence on the Legal Rights
+symposium at 51:25, Miller on the Cellar at 51:30 and on Mailer at 51:35, Gray
+on the Imperials at 51:50, Ayers on the Carpenters at 51:51, and Miller on the
+closing concert at 51:54.
+
+## Cut
+
+Nothing. Nothing in either merge failed its check, and this run changed no
+event, no person, no photograph and no source.
+
+## The traps checklist
+
+No advance notice was read as a report; #372 is the opposite, an audit that
+supplies the report an advance notice never was. No committee chair recorded as
+an officer and no bill's author made a member — #372's own note keeps Mary Fyfe
+off the roster on exactly that ground, having co-written Resolution 5-19-S and
+spoken to it, which is not an office. Nobody matched by surname. No changed
+surname and no new person. No April result moved between academic years, because
+no dates moved at all. Nothing touching a settled fact. Nothing about a living
+person beyond what its source reported: the only names added are the Herald
+bylines. No contributor edit was in either tree.
+
+## Checks
+
+`build.py` clean. `check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py`
+returns the same six pairs as the last four runs, all pre-existing and all judged
+distinct again rather than taken on trust: the designated driver cards are Bill
+97-3-F in November and the Herald's report of distribution in February; the
+plus/minus grading pair is a meeting SGA voiced concern at in September and the
+vote it took in October; the two 1991-92 groups are three separate bills filed on
+one day, which the rules keep separate. The working tree is clean after a build,
+so `site/` on `main` is what `data/` generates.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person did.
+297 documents, 1,111 legislation files, 4,973 records in the search index.
+Unchanged by this pass.
+
+## Still open
+
+The queue is empty because the researchers are not running. Of the sixteen
+routines on the account, two are enabled — this editor, every three hours, and
+the portraits hunt, every six. The eleven research routines are paused, none
+since 25 August, and the pause is deliberate rather than a failure: no
+suspension reason and no ended reason is set on any of them. The report of
+6 September recorded this already and it has not changed, so it is logged here
+rather than raised again. Nothing will arrive for this routine to review until
+some of them are switched back on.
+
+`data/presidents.json`, noted at midday, still carries the stale 51:50 for the
+Herald of 28 April 1972. It renders nowhere and was left alone again.
+
 # 5 September 2026, night — an empty queue, and eight stale branches finally measured
 
 No pull request was open. Nothing was waiting to reach the live site, and
@@ -17209,3 +17317,330 @@ The photograph register now has no flagged pair outstanding. The photograph
 routine is working cabinet and Senate officers, where dead ends are the normal
 result, which is worth knowing before judging its next run by how many faces it
 lands.
+
+---
+
+# 7 September 2026 — editor's pass, third: one portrait, verified to the byte
+
+One pull request open, #375 on `research-photos`, carrying a single new
+photograph. Merged. The three August stale branches named in the standing brief
+— #6, #7 and #8 — are not open and have not been since 18 August; that part of
+the brief has been overtaken.
+
+## What was in it
+
+Six files, but only two published claims: a portrait for Jenna Wells at 2022-23,
+and one photograph rejected and logged as unusable. Fewer than the sampling
+threshold, so both were checked rather than sampled. The rest of the diff was
+the run's notes, the generated `site/`, and a re-escaping of `_do-not-use.json`
+that changed no entry's content.
+
+## Verified
+
+The portrait holds on about the strongest evidence this archive can get. WKU News
+`articleid=10793` is a Spotlight profile by Sydney Windhorst dated 7 October 2022;
+its running text names her a freshman senator and then the 2022-2023 senator for
+the Gordon Ford College of Business and committee head for student enrollment and
+experience, and the page carries exactly one article image. That image was
+downloaded and compared against the committed file: identical, md5
+`b3247a98d41d14c7a30701e55a449853`, 124,837 bytes. Not a lookalike and not a
+re-crop — the article's own photograph. The picture itself shows one person alone
+at a WKU podium with the chambers preamble wall legible behind her.
+
+The identification does not rest on that article alone. `years.json` already held
+her three times from unrelated sources: freshman senator in 2021-22 from the
+Herald of 15 September 2021, Gordon Ford senator in 2022-23 from Bill 17-22-F, and
+Community Relations chair by March 2025 from the Senate minutes of 4 March 2025.
+Full name throughout, never a surname match, and no `Wells` in `name-aliases.json`,
+so no changed-surname duplicate.
+
+The rejected photograph was rejected correctly. WKU News `articleid=11877` shows
+seven Gatton Academy students in one frame at the Kentucky Capitol with no
+per-person caption, and the text names Livi Ray only as a presenter. Nothing ties
+a face to a name, and the run declined to guess.
+
+## Cut
+
+Two things, both in the run's own notes rather than in anything the site renders.
+
+The note on the new portrait reproduced twenty-nine consecutive words of the WKU
+News profile where the hard rule is under fifteen. Trimmed to a two-word
+quotation carrying the same claim, in `SGA-60-AGENT-INFO.md` and in the pull
+request body. This is worth the photograph routine's attention rather than just
+fixing quietly: the credit line it wrote into `photos.json` was a careful
+paraphrase and needed nothing, and the notes beside it were not written to the
+same standard. Both are public text in a public repository, and the rule covers
+the notes too.
+
+The same note said the rejected Livi Ray photograph had been logged in the run
+notes "rather than in `_do-not-use.json`". It is in `_do-not-use.json`, under her
+name. The run did the more conservative thing and then described itself as having
+done the less, which would have sent a later pass looking for a record it already
+had. Corrected.
+
+## The traps checklist
+
+No advance notice anywhere in the diff; a dated profile is a report, not a booking.
+No committee chair promoted to officer — the photograph entry records no office at
+all, and the roles named in its credit are the ones the article states and the
+archive already held. No April election result, so nothing to file forward. Nothing
+touching a settled fact. Nothing about a living person beyond her service in SGA.
+The research commit was authored `SGA 60` and carried no tool attribution, and
+neither does the squashed commit now on `main`.
+
+## Checks
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0. The working tree was
+clean after a rebuild, which is the check that matters for `site/`: it confirms
+the committed pages are genuinely generated and were not hand-edited.
+`check_duplicates.py` reports six pairs, every one of them pre-existing and none
+introduced by this diff. All six were read and all six are distinct events: the
+three designated-driver entries are a bill of 4 November 1997, a Herald report
+nine days later and distribution announced the following February, and the three
+entries dated 1 September 1991 are three separate bills, which is exactly the case
+the rule says to leave alone.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office held
+by 1,818 people, 2,615 of them (98%) with an account of what the person did. 297
+documents, 1,111 legislation files, 4,973 records in the search index. One
+photograph added; no event, no person and no change to `years.json`.
+
+## Still open
+
+Nothing in the queue: after this merge there is no open pull request. The
+photograph routine is working executive-cabinet and Senate officers, where a dead
+end is the ordinary result and a landed face is the exception — worth knowing
+before judging its next run by how many portraits it brings back. The two Talisman
+leads at 1993-94 and 2002-03 remain closed behind bepress's 403 on
+`viewcontent.cgi`, tested twice more this run.
+
+One limitation to record honestly: the review comment posted to #375 carries a
+tooling footer that the harness appends and that this session could not strip.
+The repository's own REST paths are gated for direct calls, so the comment could
+not be edited after posting. Nothing in the repository or the generated site
+carries it — the pull request body was rewritten clean and the merge commit is
+plain — but the comment on #375 does, and a later pass with working access can
+remove it.
+
+# 7 September 2026, midday — the queue is empty again, so the citations got audited
+
+No pull request was open. The photograph routine's work landed as #375 and its
+report as #376 earlier this morning, and `research-photos` carries nothing
+beyond what the squash put on `main`. Nothing was waiting, so nothing was
+merged from a routine and nothing was refused.
+
+`main` was checked as it stands. `build.py` runs clean, `check_data.py` and
+`check_contrib.py` both exit 0, and the working tree was clean after a rebuild,
+which is the test that the committed pages under `site/` are generated rather
+than hand-edited. `check_duplicates.py` reports the same six pairs it has
+reported for days; all six were read again and all six are distinct events, the
+three bills of 1 September 1991 being exactly the case the rule says to leave
+alone.
+
+## The advance-notice sweep, run against the whole archive
+
+Trap one is the one that has cost this project the most, so it was tested
+mechanically rather than by eye. Every event whose body asserts an outcome — a
+crowd, a sum raised, a verdict, a turnout — was matched against the index lines
+of the issue it cites, and flagged where those lines are phrased in the future.
+
+Four events came back, all concerts between 1970 and 1972, and all four are
+written correctly. Each one names the announcement and the review separately
+and rests its outcome on the review: the Temptations of 18 November 1970 cite
+Mason Ralph's notice of the 17th and his review of the 20th, and the Orphan
+mini-concert of 15 November 1972 cites Al Cross's review two days later. The
+citations were checked against the index and each points at the issue its label
+names. The sweep that #372 did by hand holds up under a mechanical test.
+
+## What the citations turned out to be hiding
+
+The same method turned on the citation labels themselves found something the
+eye would not. Where a label carries a volume and issue number, that number can
+be checked against the archive's own title for the item at the URL. On 948
+Herald citations, 33 labels named an issue number the archive does not use for
+that item — the date and the link were right in every case, so no fact was
+wrong, but a reader following the link landed on an issue whose masthead did not
+match the citation they came from.
+
+Eleven of the 33 were confirmed one at a time against the live landing pages on
+TopSCHOLAR before anything was changed, paced three seconds apart. In every one
+the archive agreed with the index and not with our label: the Herald of 10
+February 2000 is 75:37 and we called it 75:32, the Herald of 13 April 1989 is
+64:49 and we called it 64:51, the four 1987 issues covering the Schilling
+impeachment were each off by one or two. Twenty-nine labels in `years.json` and
+four in `photos.json` were corrected to the number the archive prints. Only the
+number token moved; dates, authors, headlines and URLs were left untouched.
+
+Two of those needed the archive's own hedge carried across. TopSCHOLAR titles
+the issue of 16 March 2004 "Vol. 78, No. 46 [Vol. 79]" and the issue of 17
+February 2009 "Vol. 84, No. 22 [32]" — the bracket is the archive correcting a
+misprinted masthead. Those labels now reproduce both numbers, so the reader can
+recognise the page they land on.
+
+Four citations still disagree and are being left alone. Three carry "69:52 [51]"
+where the archive prints "No. 51 [52]" — both numbers are there, in the other
+order — and one names two sources at once, the SGA minutes of 13 February 1969
+and the Herald of the 20th, which is the issue the link opens.
+
+## Cut
+
+Nothing. No claim in the diff was unsupported, because the diff makes no claims:
+it corrects the address on citations whose evidence was already good. No event,
+no person, no photograph and no source URL changed, and the counts below are the
+same before and after.
+
+## The traps checklist
+
+No advance notice anywhere in the diff. No committee chair promoted to officer
+and no bill's author made a member; no office is named in it at all. Nobody
+matched by surname, no changed surname, and no new person. No April result
+filed forward or back, because no dates moved. Nothing touching a settled fact.
+Nothing about a living person: the only names in the diff are the bylines the
+Herald printed, unchanged. No contributor edit was in this run's tree.
+
+## One correction to this file's own record
+
+This run's clone was **shallow**, which is the trap the report of 5 September
+documented: `git merge-base` returned empty for every branch from 4 August,
+which reads exactly like an orphan history and is not one. Nothing here rests
+on that reading. Those branches were measured properly on 5 September, carry no
+commit since 31 August, and have no pull request open; they were left as they
+are.
+
+## Checks
+
+`build.py` clean. `check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py`
+six pairs, all pre-existing, all judged distinct. The citation audit re-run
+after the corrections returns only the four explained above.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person
+did. 297 documents, 1,111 legislation files, 4,973 records in the search index.
+Unchanged by this pass, which is the point.
+
+## Still open
+
+Nothing in the queue. `data/presidents.json` — the pre-migration source that
+`scripts/migrate.py` read once and nothing reads now — carries one of the same
+stale issue numbers, 51:50 for the Herald of 28 April 1972. It renders nowhere
+and was left, but a later pass that decides the file has no reason to stay
+should know it is not clean.
+
+The tooling footer on the review comment on #375, recorded this morning as
+something a later pass might strip, is still there. It was left deliberately:
+removing it would mean editing a comment to hide who wrote it. Nothing in the
+repository or on the generated site carries any such line, which is what the
+rule protects.
+
+# 7 September 2026, evening — an empty queue, and the routine roster behind it
+
+## What was reviewed
+
+Nothing was open. `git fetch origin` and a listing of pull requests returned no
+open pull request at all: the repository is at #378 and every research branch
+that had work in it has been merged. The three stale pull requests this pass was
+told to triage — #6 photographs, #7 the 1980s, #8 the 2020s — have been closed
+for weeks. `research-photos` reads two commits ahead of `main`, which is the
+squash-merge artifact of #375 and not unlanded work; compared by content rather
+than by ancestry it holds nothing `main` lacks.
+
+## The force-push on main, checked rather than assumed
+
+The fetch reported `main` force-updated from `f374dda7`. That is this container's
+stale 4 September ref catching up to the rewritten history, not a loss, and it
+was confirmed by content: every photograph file in the old tip is present in the
+new one, `main` carries 1,122 of them against the old tip's 1,002, and
+`years.json` is the larger file. Nothing was dropped.
+
+The two newest commits on `main` were pushed directly rather than through a pull
+request, so no editor had seen them. Both were read. They add the standing brief
+to `data/photo-finds/` and remove six generated officer worklists from the same
+directory; neither touches `years.json`, `photos.json`, or anything the site
+renders. Nothing to hold.
+
+## The routine roster
+
+The premise this pass runs on is out of date, and the trigger list says so.
+Thirteen recurring routines exist and **eleven are disabled**: the six decade
+routines, photographs, person profiles, senate rolls, backlog and the legislation
+harvest. The legislation harvest last fired on 4 August, the decade routines and
+photographs on 5 August, person profiles on 24 August, backlog and senate rolls
+on 25 August. None carries an `ended_reason`, so all eleven were paused by hand
+rather than disabled by a failure. Two are live — the editor every three hours,
+and portraits every six. Portraits
+last fired at 13:52 and pushed nothing, which is an ordinary empty pass and not a
+fault. So the queue is not empty by accident: there is one research routine
+feeding it, and the editor now runs more often than anything that produces work
+for it.
+
+## The spot check, run against the live archive instead
+
+With no diff to sample, eight Herald-cited claims were drawn at random from the
+758 on `main` and checked against TopSCHOLAR one at a time, three seconds apart.
+All eight resolved and all eight matched: 50:14, 52:53, 58:42, 53:36, 83:50,
+70:19, 60:9 and the *Student Insight* supplement each carry the masthead the
+citation claims. Three were taken further into the article index. The 1984 grade
+scale entry is Malmer's "Associated Student Government's Grade Scale Denied",
+printed as our entry describes it. All three 2007-08 entries off the issue of 24
+April 2008 are separately indexed articles by Neil Siders — the diploma
+rejection, the engagement transcript and the Ruckus bill — and the library
+closing time is there too.
+
+One pair looked like the duplication CLAUDE.md warns about, two entries dated 15
+October 1974 off one issue described in different words. They are not. The index
+carries "Protesters Urge Associated Student Government Revamping" and
+Wethington's "Protest Prompts Coalition for Change in Concert Booking" as two
+separate articles. Both stand.
+
+## Changed
+
+Four Herald citations that named a date but no issue were completed against the
+archive's own masthead, in the format #377 settled: the issues of 15 October 1974,
+6 December 1974, 4 April 1975 and 30 June 1976 are 50:14, 50:28, 50:47 and 51:60.
+Only the number token was added; dates, headlines and URLs are untouched, and the
+event counts are identical before and after.
+
+Three more citations that carry no number were checked and deliberately left. The
+archive prints no volume or issue for them: the Homecoming issues of 25 October
+1979 and 24 October 1996, and the "Extra Special Bonus Budget Issue" of 1 May
+1992. Their labels are right as they stand.
+
+## Cut
+
+Nothing. No claim examined this pass failed against its source.
+
+## The traps checklist
+
+No advance notice: the four citations corrected carry no claim at all beyond an
+address, and the entries sampled are reports rather than bookings. No committee
+chair promoted to officer and no bill's author made a member. Nobody matched by
+surname; no changed surname; no new person. No April result filed into the wrong
+year, because no date moved. Nothing touching a settled fact. Nothing about a
+living person: the only names added are the volume numbers the Herald printed.
+No contributor edit in this tree.
+
+## Checks
+
+`build.py` clean and `site/` regenerated identically apart from the four labels.
+`check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py` returns the same
+six pairs it has returned for weeks, all pre-existing, all read and all distinct.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office
+held by 1,818 people, 2,615 of them (98%) with an account of what the person did.
+297 documents, 1,111 legislation files, 4,973 records in the search index.
+Unchanged by this pass.
+
+## Still open
+
+The eleven disabled routines are the substantive open question, and it is the
+owner's to answer: with only portraits running, the archive is close to finished
+growing, and the editor's three-hour cadence is now mostly reviewing nothing.
+
+`data/presidents.json` still carries the stale 51:50 for the Herald of 28 April
+1972, as the midday pass recorded. It renders nowhere and was left again.

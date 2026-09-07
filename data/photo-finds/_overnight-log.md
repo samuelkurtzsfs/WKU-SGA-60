@@ -284,3 +284,13 @@ n8087 was the ninth and last. Across all nine blocks there are now **327 written
 Officers have gone 292 to 193 since the owner asked for them.
 
 Four scan defects are now on record, which between them account for a fair share of what is missing: the 1989 D-E index run, the 1991 printed page 91 (senior run Dow-Gad), the 1985 printed page 322 (juniors Gal-Hoo, blank in the scan), and the 2015 student portraits section. Those portraits exist in print and in no copy anyone can reach.
+
+### 2026-09-07 13:57 — the standing brief had been missing for days
+
+**1,164 portraits, 1,065/1861 with a face, 796 none, 193 officers without one.**
+
+An agent died on sleep but said something first: `/tmp/overnight.md` does not exist. It had been cleared with /tmp, there was no copy in the repository and none in git history, and every agent brief for days has opened by telling the agent to read it. The runs since have been working from my prompt and `_archive-gaps.json` alone — which is why they kept succeeding, and why nobody noticed. Rewritten from what the runs actually established and committed as `data/photo-finds/_brief.md`, so it now lives with the data it describes.
+
+**The job has changed.** With every block closed out on officers, the remaining 796 are 193 documented officers and **603 rank-and-file senators who have never had a dedicated pass**. Launched on 1997-2001, which has 107 of them, with a different objective: the most useful thing it can produce may be a number rather than a face. If the Herald simply never photographed rank-and-file senators, proving that with counts answers the question for six hundred people at once and decides whether the other eight blocks are worth a pass at all.
+- **2026-09-07 13:58** — holding at **1,164 portraits, 1,065/1861 with a face, 796 none, 193 officers without one.** Nothing dropped yet; the 1997-2001 senators agent has only just started. Tree clean, 9 refusals, all of them the withdrawal register and the editor-flagged holds working as intended.
+- **2026-09-07 14:36** — **1,167 portraits, 1,067/1861 with a face, 794 none, 193 officers without one.** Landed 3 from the 1997-2001 senators run, 38 minutes in, and they are senators rather than officers by design now — the officer lists are closed and this is the first dedicated pass at the 603 rank and file.
