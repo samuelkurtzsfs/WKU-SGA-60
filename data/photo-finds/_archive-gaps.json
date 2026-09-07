@@ -732,5 +732,21 @@
  {
   "topic": "HORACE JOHNSON WAS THE CAMPUS POLICE CHIEF, NOT AN SGA OFFICER",
   "note": "Removed from the 1995-96 executive on 7 Sep 2026. The archive's only source for him was the Herald of 13 Feb 1996, and reading the page shows why he was filed wrongly: the sentence is 'to me, campus police Chief Horace Johnson', and the headline immediately beside it on the same page is 'Officers to patrol dorms'. The 1993 Talisman labels his photograph 'Public Safety Director'. He is a real WKU figure and belongs in the record of the university; he was never in student government. Found by a Talisman grid sweep that was looking for his face and found his job title instead."
+ },
+ {
+  "topic": "ASK WKU ARCHIVES: SGA PHOTOGRAPHED EVERY MEMBER ON 14 FEBRUARY 2006",
+  "note": "SGA's own weekly newsletter Seconds records that the organisation photographed every one of its members at the meeting of 14 February 2006. Those portraits were taken and they exist somewhere. They are on no page the Internet Archive kept, and no crawl will find them. **This is a question for WKU Archives rather than for another agent** — a request for SGA's own photographs from that meeting, or for whatever the 2005-06 executive deposited. It would fill a hole that every automated route has now failed on."
+ },
+ {
+  "topic": "WKU CLASS COMPOSITES — A SOURCE CLASS NOBODY HAD USED",
+  "note": "Dental Hygiene (UA60/5) and Nursing (UA61/1) deposit annual class composites on TopSCHOLAR, 2001-2010 at least. The roster sits as TEXT on the landing page and the plates run to 4,300 px — one name, one face, no positional reasoning, and the best quality available for that era. 27 plates and 892 names read on one run; one match. Cheap to run against any block, and worth doing for every block whose people might have been in a health programme."
+ },
+ {
+  "topic": "SGA'S OWN NEWSLETTER, SECONDS — READ AND NEGATIVE",
+  "note": "70 issues, 47 pulled and read, preserved at ~/Desktop/SGA60 photo hunt/_sga-seconds-2002-2008/. Fourteen of them cover the autumn 2006 semester that the Herald run skips entirely, which made it the most promising gap-filler in the archive. It is not one: every issue is halftone-scanned, no member is ever photographed, and the Senator Spotlight is illustrated with the same trophy clipart every week. Do not reopen. It is still the source that records the 14 February 2006 photograph session."
+ },
+ {
+  "topic": "A 65,839-LABEL NAME INDEX OF THE HERALD 2002-2009",
+  "note": "Every bare personal-name text line in 375 issues, with bounding box, type height and the text above and below it: ~/Desktop/SGA60 photo hunt/_herald-index-2002-2009/name_labels_2002-2009.jsonl, 18,084 distinct strings. Built for one block but reusable by any whose people appear in those years. Harvest-then-match is the right direction for bulk work; name-then-search has been done exhaustively on 2002-07 and is spent."
  }
 ]
