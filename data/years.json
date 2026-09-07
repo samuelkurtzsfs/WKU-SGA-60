@@ -1572,6 +1572,10 @@
      "src": {
       "label": "Herald 48:26, 24 Apr 1969",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2107/"
+     },
+     "src2": {
+      "label": "College Heights Herald 48:27, 1 May 1969, Gail Barton & Ellen Bennett, \"Concert Sets Mood of Delight\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2108/"
      }
     },
     {
@@ -2846,6 +2850,10 @@
       "label": "Herald 50:18, 30 Oct 1970",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4957/",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=5962&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "College Heights Herald 50:20, 6 Nov 1970, Ernie Hearion, \"Fate and Destiny of Nation Depends on Youth: Dick Gregory\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4959/"
      }
     },
     {
@@ -2889,6 +2897,10 @@
      "src": {
       "label": "Herald 50:33, 2 Feb 1971",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4785/"
+     },
+     "src2": {
+      "label": "College Heights Herald 50:34, 5 Feb 1971, Mike Roberts & Mason Ralph, \"William Kunstler Rakes Courts\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4794/"
      }
     },
     {
@@ -2920,6 +2932,10 @@
       "label": "Herald 50:44, 30 Mar 1971",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4795/",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=5803&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "College Heights Herald 50:45, 2 Apr 1971, Sharon Roberts, \"Overindulgence Spawns Goons, S.I. Hayakawa Says\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4805/"
      }
     },
     {
@@ -2951,6 +2967,10 @@
      "src": {
       "label": "College Heights Herald 50:11, 6 Oct 1970",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4964/"
+     },
+     "src2": {
+      "label": "College Heights Herald 50:12, 10 Oct 1970, Jeanne Jackson, \"‘1776,’ Western’s ‘Best Ever’ Musical\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4977/"
      }
     },
     {
@@ -3666,6 +3686,10 @@
      "src": {
       "label": "Herald 51:18, 29 Oct 1971",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4832/"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:19, 2 Nov 1971, Roger Miller, \"Mini-Concert Doesn’t Mean Mini-Talent; Supa Brings Jamboree to Western\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4831/"
      }
     },
     {
@@ -3706,6 +3730,10 @@
      "src": {
       "label": "Herald 51:24, 19 Nov 1971",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4836/"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:25, 3 Dec 1971, Carter Pence, \"Students Air Complaints at Symposium\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4834/"
      }
     },
     {
@@ -3716,6 +3744,10 @@
      "src": {
       "label": "Herald 51:28, 18 Jan 1972",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4839/"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:30, 25 Jan 1972, Roger Miller, \"Cellar-Dwellers\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4847/"
      }
     },
     {
@@ -3786,6 +3818,10 @@
      "src": {
       "label": "Herald 51:34, 8 Feb 1972",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4844/"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:35, 11 Feb 1972, Roger Miller, \"Norman Mailer was Divinely Drafted\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4843/"
      }
     },
     {
@@ -3831,31 +3867,43 @@
     {
      "date": "1972-04-13",
      "title": "The Imperials play a mini-concert",
-     "body": "The Herald of 11 April announced that the Thursday Associated Students mini-concert would feature the Imperials.",
+     "body": "The Herald of 11 April announced that the Thursday Associated Students mini-concert would feature the Imperials. David Gray reviewed the night in the issue of 18 April.",
      "kind": "concert",
      "src": {
       "label": "Herald 51:48, 11 Apr 1972",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4863/"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:50, 18 Apr 1972, David Gray, \"Imperials Cool and Controlled\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4861/"
      }
     },
     {
      "date": "1972-04-18",
      "title": "The Carpenters in Diddle Arena",
-     "body": "The Herald of 14 April announced that the Carpenters would appear in concert the following Tuesday. The 1972 Talisman confirms the brother and sister recording act appeared in Diddle Arena on 18 April; they had been promised to students back in October alongside Mountain, Black Oak Arkansas and Isaac Hayes.",
+     "body": "The Herald of 14 April announced that the Carpenters would appear in concert the following Tuesday. Elaine Ayers reviewed the concert in the issue of 20 April. The 1972 Talisman confirms the brother and sister recording act appeared in Diddle Arena on 18 April; they had been promised to students back in October alongside Mountain, Black Oak Arkansas and Isaac Hayes.",
      "kind": "concert",
      "src": {
       "label": "Herald 51:49, 14 Apr 1972",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4862/"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:51, 20 Apr 1972, Elaine Ayers, \"Carpenters Plays Songs of Magic for Crowd\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4860/"
      }
     },
     {
      "date": "1972-04-27",
      "title": "It's a Beautiful Day and If close the concert year",
-     "body": "The Herald of 20 April announced a rock concert for the following Thursday with It's a Beautiful Day and If. Reginald Glass wrote the preview \"Beautiful Day, If Headline Concert\" in the issue of 25 April.",
+     "body": "The Herald of 20 April announced a rock concert for the following Thursday with It's a Beautiful Day and If. Reginald Glass wrote the preview \"Beautiful Day, If Headline Concert\" in the issue of 25 April. Roger Miller reviewed the concert in the issue of 2 May.",
      "kind": "concert",
      "src": {
       "label": "Herald 51:51, 20 Apr 1972",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4860/"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:54, 2 May 1972, Roger Miller, \"Beautiful Day Sounds Like the Jefferson Airplane\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4867/"
      }
     },
     {
