@@ -4312,10 +4312,10 @@ with a known article and an unread gallery.
 College of Business.** WKU News ran an individual "Spotlight" profile of
 her, `wku.edu/news/articles/index.php?view=article&articleid=10793`
 ("Jenna Wells Spotlight" by Sydney Windhorst, 7 October 2022), which
-states in running text that she "served as Freshman Senator and was
-recently elected to serve as the 2022-2023 Senator for the Gordon Ford
-College of Business and Committee Head for Student Enrollment and
-Experience" — matching her record in `data/years.json` exactly. The
+states in running text that she had served as freshman senator and had
+been "recently elected" the 2022-2023 senator for the Gordon Ford College
+of Business, and committee head for student enrollment and experience —
+matching her record in `data/years.json` exactly. The
 article carries exactly one photograph, of her alone at a podium in the
 SGA chambers (the wall plaque text naming the "Student Government
 Association of Western Kentucky University" is legible behind her), so
@@ -4341,9 +4341,9 @@ a data error — but none produced an individually captioned photograph.
 One near miss: Livi Ray appears in a WKU News photograph of seven Gatton
 Academy students presenting research at the Kentucky Capitol
 (`articleid=11877`), but the image carries no per-person caption and the
-seven cannot be told apart from the article text, so it was not used —
-logged here rather than in `_do-not-use.json` since no specific frame was
-ever claimed as hers. The pattern across this batch matches what the 5-6
+seven cannot be told apart from the article text, so it was not used. It
+is recorded in `_do-not-use.json` under her name, so a later pass does not
+open the same picture twice. The pattern across this batch matches what the 5-6
 September entries already found for the WP-JSON post-search sweep: a name
 hit is common, an individually identified photograph is rare, and most of
 this list will need either a source not yet tried (a department or
