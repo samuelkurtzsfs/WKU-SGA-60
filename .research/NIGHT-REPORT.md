@@ -17209,3 +17209,109 @@ The photograph register now has no flagged pair outstanding. The photograph
 routine is working cabinet and Senate officers, where dead ends are the normal
 result, which is worth knowing before judging its next run by how many faces it
 lands.
+
+---
+
+# 7 September 2026 — editor's pass, third: one portrait, verified to the byte
+
+One pull request open, #375 on `research-photos`, carrying a single new
+photograph. Merged. The three August stale branches named in the standing brief
+— #6, #7 and #8 — are not open and have not been since 18 August; that part of
+the brief has been overtaken.
+
+## What was in it
+
+Six files, but only two published claims: a portrait for Jenna Wells at 2022-23,
+and one photograph rejected and logged as unusable. Fewer than the sampling
+threshold, so both were checked rather than sampled. The rest of the diff was
+the run's notes, the generated `site/`, and a re-escaping of `_do-not-use.json`
+that changed no entry's content.
+
+## Verified
+
+The portrait holds on about the strongest evidence this archive can get. WKU News
+`articleid=10793` is a Spotlight profile by Sydney Windhorst dated 7 October 2022;
+its running text names her a freshman senator and then the 2022-2023 senator for
+the Gordon Ford College of Business and committee head for student enrollment and
+experience, and the page carries exactly one article image. That image was
+downloaded and compared against the committed file: identical, md5
+`b3247a98d41d14c7a30701e55a449853`, 124,837 bytes. Not a lookalike and not a
+re-crop — the article's own photograph. The picture itself shows one person alone
+at a WKU podium with the chambers preamble wall legible behind her.
+
+The identification does not rest on that article alone. `years.json` already held
+her three times from unrelated sources: freshman senator in 2021-22 from the
+Herald of 15 September 2021, Gordon Ford senator in 2022-23 from Bill 17-22-F, and
+Community Relations chair by March 2025 from the Senate minutes of 4 March 2025.
+Full name throughout, never a surname match, and no `Wells` in `name-aliases.json`,
+so no changed-surname duplicate.
+
+The rejected photograph was rejected correctly. WKU News `articleid=11877` shows
+seven Gatton Academy students in one frame at the Kentucky Capitol with no
+per-person caption, and the text names Livi Ray only as a presenter. Nothing ties
+a face to a name, and the run declined to guess.
+
+## Cut
+
+Two things, both in the run's own notes rather than in anything the site renders.
+
+The note on the new portrait reproduced twenty-nine consecutive words of the WKU
+News profile where the hard rule is under fifteen. Trimmed to a two-word
+quotation carrying the same claim, in `SGA-60-AGENT-INFO.md` and in the pull
+request body. This is worth the photograph routine's attention rather than just
+fixing quietly: the credit line it wrote into `photos.json` was a careful
+paraphrase and needed nothing, and the notes beside it were not written to the
+same standard. Both are public text in a public repository, and the rule covers
+the notes too.
+
+The same note said the rejected Livi Ray photograph had been logged in the run
+notes "rather than in `_do-not-use.json`". It is in `_do-not-use.json`, under her
+name. The run did the more conservative thing and then described itself as having
+done the less, which would have sent a later pass looking for a record it already
+had. Corrected.
+
+## The traps checklist
+
+No advance notice anywhere in the diff; a dated profile is a report, not a booking.
+No committee chair promoted to officer — the photograph entry records no office at
+all, and the roles named in its credit are the ones the article states and the
+archive already held. No April election result, so nothing to file forward. Nothing
+touching a settled fact. Nothing about a living person beyond her service in SGA.
+The research commit was authored `SGA 60` and carried no tool attribution, and
+neither does the squashed commit now on `main`.
+
+## Checks
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0. The working tree was
+clean after a rebuild, which is the check that matters for `site/`: it confirms
+the committed pages are genuinely generated and were not hand-edited.
+`check_duplicates.py` reports six pairs, every one of them pre-existing and none
+introduced by this diff. All six were read and all six are distinct events: the
+three designated-driver entries are a bill of 4 November 1997, a Herald report
+nine days later and distribution announced the following February, and the three
+entries dated 1 September 1991 are three separate bills, which is exactly the case
+the rule says to leave alone.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,654 terms of office held
+by 1,818 people, 2,615 of them (98%) with an account of what the person did. 297
+documents, 1,111 legislation files, 4,973 records in the search index. One
+photograph added; no event, no person and no change to `years.json`.
+
+## Still open
+
+Nothing in the queue: after this merge there is no open pull request. The
+photograph routine is working executive-cabinet and Senate officers, where a dead
+end is the ordinary result and a landed face is the exception — worth knowing
+before judging its next run by how many portraits it brings back. The two Talisman
+leads at 1993-94 and 2002-03 remain closed behind bepress's 403 on
+`viewcontent.cgi`, tested twice more this run.
+
+One limitation to record honestly: the review comment posted to #375 carries a
+tooling footer that the harness appends and that this session could not strip.
+The repository's own REST paths are gated for direct calls, so the comment could
+not be edited after posting. Nothing in the repository or the generated site
+carries it — the pull request body was rewritten clean and the merge commit is
+plain — but the comment on #375 does, and a later pass with working access can
+remove it.
