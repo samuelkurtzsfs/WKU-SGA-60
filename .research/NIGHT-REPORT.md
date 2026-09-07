@@ -17565,10 +17565,13 @@ renders. Nothing to hold.
 ## The routine roster
 
 The premise this pass runs on is out of date, and the trigger list says so.
-Eleven research routines exist and **nine are disabled**: the four decade
+Thirteen recurring routines exist and **eleven are disabled**: the six decade
 routines, photographs, person profiles, senate rolls, backlog and the legislation
-harvest, all paused since between 5 and 26 August, none of them auto-disabled.
-Two are live — the editor every three hours, and portraits every six. Portraits
+harvest. The legislation harvest last fired on 4 August, the decade routines and
+photographs on 5 August, person profiles on 24 August, backlog and senate rolls
+on 25 August. None carries an `ended_reason`, so all eleven were paused by hand
+rather than disabled by a failure. Two are live — the editor every three hours,
+and portraits every six. Portraits
 last fired at 13:52 and pushed nothing, which is an ordinary empty pass and not a
 fault. So the queue is not empty by accident: there is one research routine
 feeding it, and the editor now runs more often than anything that produces work
@@ -17635,7 +17638,7 @@ Unchanged by this pass.
 
 ## Still open
 
-The nine disabled routines are the substantive open question, and it is the
+The eleven disabled routines are the substantive open question, and it is the
 owner's to answer: with only portraits running, the archive is close to finished
 growing, and the editor's three-hour cadence is now mostly reviewing nothing.
 
