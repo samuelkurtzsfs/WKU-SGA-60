@@ -104,3 +104,15 @@ Studio portrait cut from the WKU Dental Hygiene Class of 2006 composite, bottom 
 
 Studio portrait cut from the Phi Mu Delta Tau chapter composite for 2002-2003, sixth row, eighth from left, with the name printed on the plate directly beneath the oval. THE FACE IS PROVED. The plate image was opened and the nameplate read by eye: it prints KEANAN COURTNEY. The row-and-position key is proved on this same plate, because the archive's existing Kristiana Garvey portrait was cut from the sixth row, tenth from left, and the landing page's text roster gives Kritiana Garvey at exactly that position. THE PERSON IS NOT PROVED, on one point only: the surname is spelled two ways. SGA's own minutes of 1 October 2002 were pulled and the page rendered, and they print 'Keanan Noel Cortney - At large rep' among three people sworn in as Congress members that evening, beside Kelly Johnson and John Law. The composite and the Herald both print Courtney. WHAT ARGUES THEY ARE ONE WOMAN: the given name Keanan occurs exactly once in the 5,623 digitised Herald pages of 2002-2009, in the Phi Mu new-member advertisement of 12 September 2002 that lists this same woman three weeks before the swe
 
+
+## Sawyer Coffey — 2016-17  *(not cut; needs a second source of her face)*
+
+
+Fourteen people against fourteen names, and she belongs in the group beyond doubt — SGA public
+relations director, journalism senior. What is missing is her position. The list carries **no row
+key**, and four other captions in the same column of that volume do print "Row 1: / Row 2:", so
+the absence is the book's own convention saying membership list rather than key. There is a real
+counter-signal: the two unambiguously male names fall at exactly the two positions where the
+photograph shows men, reading left to right, which would put her seventh from the left. But the
+subjects are staggered in depth, and 2014-19 is the block that produced every wrong-person trap in
+this project. One more source of her face settles it either way.
