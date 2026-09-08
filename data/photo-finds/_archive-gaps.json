@@ -834,5 +834,29 @@
  {
   "topic": "THE ROSTERS WERE ALREADY ON DISK, TRUNCATED AT 300 CHARACTERS",
   "note": "data/herald-index-full.json already contains every composite roster and silently cuts each at 300 characters — and the landing page's own <meta name='description'> truncates at exactly the same point, so fetching that reproduces the defect rather than fixing it. The full roster is in the page body at <div id='abstract'>, in single quotes. Any index built off the meta description of these pages is missing most of every roster."
+ },
+ {
+  "topic": "Class composite rosters (_composite-rosters/rosters.json) - closed for 2014-2020",
+  "note": "All 150 composites parsed with parse2.py and matched against the 39 officers of block n1419. Nothing. The collection is Nursing 1966-2011, Dental Hygiene 1972-2015 and a single UA61/16 Physical Therapy class of 2016, so it can only ever reach students in those three programmes. Worth running against any block whose people studied nursing, dental hygiene or physical therapy, and not worth running against anyone else. Fifteen surname collisions in 2010-2018 were checked one by one and every one is a different given name."
+ },
+ {
+  "topic": "Spirit Masters class booklets 2011-12 to 2017-18 (_composite-rosters/sm_people.json) - closed for block n1419",
+  "note": "All 219 biographies searched by name and by full bio text against the 39 officers. No officer of this block is a Spirit Master and none is named inside any biography. Twenty-three biographies do state SGA membership in plain words and all name people outside this officers list: Kelley Boothe, Kaylee Egerer, Alex Fahnders, Mary Boothe, Derek Daniel, Ashlee Manley, Sarah Newton, Poorvie Patel, Alyson Manley, Alexis Baker, Katherine 'KJ' Hall, Nolan Miles, Jay Todd Richey, Brian Chism, Haley Jones, Yasmine Sadrinia. The booklets remain live for senators; they are exhausted for these officers."
+ },
+ {
+  "topic": "2016 Talisman (dlsc_ua_records/8677) - portrait grids completely closed for block n1419",
+  "note": "The volume is digital-native and every nameplate is in the text layer, so this is a complete test rather than a sample. All 1,430 grid cells were extracted and matched against the 39 surnames: SENIORS and UNDERCLASSMEN (PDF pp. 118-149), GRADUATE STUDENTS (150-152, printed 296-299) and FACULTY & STAFF (153-155, printed 300-305). No officer of the block appears in any of them, the graduate and staff grids included. The organisations section (PDF pp. 156-162) runs alphabetically from Alpha Delta Pi to YoungLife and contains no SGA group photograph. Do not reopen the grids for these names."
+ },
+ {
+  "topic": "Herald caption index 2010-2019 (_herald-index-2010-2016/) - closed for block n1419, and a structural limit worth knowing",
+  "note": "All 24,240 photo_captions records searched across cap, right and above, with nickname expansion. Three hits for 39 people and none usable. The structural point for any later run: from roughly October 2016 the digitised Herald is stored as one full-page raster per page (single images of 1570-1790 by 3530-3620 pixels) rather than as separate photographs, so the caption index cannot yield an individual portrait for anything after that date. That is why the 2017-18, 2018-19 and 2019-20 officers return nothing here, and it is a property of the source, not of the search."
+ },
+ {
+  "topic": "Talisman after 2016 - there is no yearbook",
+  "note": "The Talisman became a magazine after the 2016 volume. The eight magazine issues on disk (Identity, Power, Well Being, Grit, Balance, Paradise, Movement, Zeitgeist, 782 pages, about 1.2 million characters of clean text) carry no portrait grids and no club group photographs at all. Searched in full for the 39 officers of block n1419: one mention, Deven Richardson quoted in 2017 Power p. 64, unphotographed. Any block from 2016-17 onward has no yearbook route to a portrait and should not be sent looking for one."
+ },
+ {
+  "topic": "2014 Talisman Part II - grids exist and are clean for block n1419; 2013 Talisman download is damaged",
+  "note": "talisman2014-reckoning-2.pdf does carry full portrait grids with text-layer nameplates (SENIORS & GRADUATE STUDENTS PDF pp. 46-59, UNDERCLASSMEN 60-70, FACULTY AND STAFF 71-73), which makes it a live source for blocks touching 2013-14. 801 nameplates extracted and matched against the 39 officers: twenty surname collisions, all different people. Part I has no usable text layer and is the narrative half. Separately, talisman2013-form.pdf on disk is a damaged download: 72 of its 202 pages will not load. Re-fetch it before relying on a negative from that volume."
  }
 ]
