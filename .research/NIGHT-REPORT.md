@@ -17905,3 +17905,124 @@ The nine unregistered name pairs above, each needing one source.
 And the bypass. While research commits directly to main, no pass of this routine
 can be a gate, because everything it would review is already published. The
 eleven disabled routines remain the owner's question, unchanged.
+
+# 8 September 2026, early morning — five of the nine double-published people closed at the source
+
+No pull request was open, and nothing is waiting on a branch. The `research-*`
+branches from 4 August remain the orphan snapshots AGENT-LANDING.md warns about,
+with no merge base against `main`; everything else ahead of `main` is squash-merge
+bookkeeping. Research continues to commit straight to `main`, so this pass again
+audited what has already been published rather than gating anything.
+
+## What landed since the last pass, read now
+
+Ten commits, one new published claim: the Josh Knight portrait for 2014-15, cut
+from the WKU College Youth in Government group photograph on p. 332 of the 2015
+*Talisman*. The file is a real JPEG. The identification is the best-argued in the
+photograph notes: the printed caption keys the frame by row, the researcher proved
+the key against the picture before cutting by matching the sex pattern of both
+rows independently, and two further checks hold — James Line in a Potter College
+sweatshirt at the position the key gives him, and the Row 1 figure consistent with
+the Dahmer mug already on file. The volume indexes one Josh Knight, at this page;
+four officers this archive already records stand beside him in the same caption;
+and the 2016 volume independently calls him an Owensboro junior and SGA senator.
+The note is honest that no document names him a member of that club. Published
+correctly, but the citation the site actually showed carried none of that, so the
+label now carries the row key and his position in it. Everything else in those ten
+commits is documented dead ends, which is the routine working as intended.
+
+## Nine people published twice — five closed, four left flagged
+
+The last pass found nine name pairs the archive renders as eighteen people and
+left them all, on the ground that each needed one source. Each was worked at the
+source rather than on the resemblance of the names, and five closed.
+
+**Paige Settles was not a spelling variant at all; it was our error.** The 2015-16
+record for "Page Settles" cited the executive cabinet minutes of 1 December 2015
+and told the reader that "the plate spelling is followed here with the doubt
+flagged". Those minutes were read: they print "Speaker of the Senate Paige
+Settles". The cited source says the opposite of the claim it was cited for, and
+there is no plate for a Speaker of the Senate in any case — the plaque records
+presidents and student regents. The record is cut and its two sourced facts, her
+attendance on 1 December and her 12 April 2016 report that the next speaker's
+election would fall on 26 April, are merged into the Paige Settles record, which
+now carries all three citations. She is one person with four years in the senate.
+
+**Nolan and Noland Miles are one man.** The minutes of 8 and 29 October 2013 give
+the Student Affairs committee head as Noland Miles; a later 2013-14 senate file
+gives the same committee's report under Nolan Miles; and on 11 February 2014 he
+moved to the Public Relations chair as Barrett Greenwell took Student Affairs.
+Each document carries one spelling and never both, and the office hands over
+cleanly across them. He is the Nolan Miles who was executive vice president in
+2014-15 and 2015-16.
+
+**Matthew Winiger and Matthew Wininger are one man, and one page proves it.** The
+senate minutes of 23 February 2021 spell him "Winiger" where he and Matthew Thomas
+speak for Resolution 2-21-S as its authors, and "Wininger" in the Sustainability
+committee roll a few paragraphs later — the two roles the archive already recorded
+as one man's. He was elected president for 2021-22. The record had said "unsettled
+which is correct" and now says what settled it.
+
+**Molly Ricke and Molly Ricky are one woman, and the *Herald* spelled her both
+ways.** It printed Molly Ricke twice in January 2025, in the caption and the body
+of the story that swore her in, and Molly Ricky in April 2026 when she ran for
+speaker. SGA's own minutes and three bills read Ricke.
+
+**Anna Rose McAvoy dropped her middle name.** Bills 22-16-F and 32-17-F carry the
+two forms in consecutive sessions, with continuous senate service either side.
+**Marsha L. Sanner and Marsha Sanner** are the 1980-81 secretary and the Rules and
+Elections chair, and each record's own note already said she held both.
+
+Four pairs are deliberately left flagged. Staci/Stacy Kitchens, Carleton
+Ruminer/Carlton Rumenier and Brittany Ann/Brittany-Ann Wick all rest on OCR the
+archive's own notes call unverified — the Kitchens note records the scan as
+"Sta t i Kitche ns" and the Ruminer note gives a third reading, "Rumenicr" — and
+the minutes behind them are on digitalcommons, which refused the PDF endpoint
+through three backoffs tonight while serving the landing pages normally. The Wick
+pair looked safe from the roster, which shows both names chairing Academic Affairs
+in 2008-09; that second year is an artifact of a photograph entry, not a second
+record, and the two real records sit in different years, in different offices, and
+disagree about whether she ran for executive vice president or for speaker in
+April 2008. None of the four is worth an assertion made unwatched. They need
+someone to open the page.
+
+## Verified at the source
+
+Twelve claims were opened at their cited URLs: four sets of 2013-14 senate
+minutes, the executive cabinet minutes of 1 December 2015, the senate minutes of
+23 February 2021, bills 22-16-F and 32-17-F, both *Herald* stories on Ricke, and
+the Knight image. Eleven held exactly as the archive reports them. The twelfth was
+the Settles spelling above, which its own source contradicts. The 1 December 2015
+minutes incidentally confirmed six other officers of 2015-16 — Richey, Miles,
+Koehler, Line, Coffey and Greenwell — against what the archive already says.
+
+## Checks
+
+`build.py` clean. `check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py`
+returns the same six pairs it has returned for weeks; four are an introduction and
+its later outcome and two are same-day 1991 bills that CLAUDE.md's own rule keeps
+apart. Nothing merged.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,652 terms of office
+held by 1,811 people, 2,615 of them (98%) with an account of what the person did.
+46 people recorded under more than one spelling. 297 documents, 1,111 legislation
+files, 4,966 records in the search index. The people count falls by six against
+the last pass: five merges and the duplicate Settles record.
+
+## Still open
+
+The four flagged name pairs above, each needing one page opened on digitalcommons.
+
+The nineteen held portraits in `data/photo-finds/_for-the-editor.md`, covering
+eighteen people. Each is a face established beyond doubt attached to a person the
+researcher could not prove is the person the archive records, and the routine was
+right to hold every one of them rather than publish on a resemblance. They need an
+editor's decision one at a time, and this pass did not take them: nineteen identity
+judgements made quickly at four in the morning is exactly the trade that produced
+the Lodmell warning.
+
+And the bypass, unchanged. While research commits directly to main, no pass of
+this routine can be a gate, because everything it would review is already
+published.

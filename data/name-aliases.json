@@ -1,5 +1,5 @@
 {
- "note": "One person, spelled more than one way across the sources. The data keeps each source's own spelling; this maps them to a single person for the officer profiles. Adding a pair here asserts they are the same human, so check before adding one. Short forms used in the entry text are mapped here too, so an article calling him Jamie Hargrove reaches the page of James Hargrove. A short form is only added when the surname matches a recorded person AND the years overlap: Ron Beck of 1971-74 is an assistant dean, not the Ronald Beck who sat in the 1966-67 Congress, and is deliberately not mapped.",
+ "note": "One person, spelled more than one way across the sources. The data keeps each source's own spelling; this maps them to a single person for the officer profiles. Adding a pair here asserts they are the same human, so check before adding one. Short forms used in the entry text are mapped here too, so an article calling him Jamie Hargrove reaches the page of James Hargrove. A short form is only added when the surname matches a recorded person AND the years overlap: Ron Beck of 1971-74 is an assistant dean, not the Ronald Beck who sat in the 1966-67 Congress, and is deliberately not mapped. Five pairs were added on 8 September 2026, each after reading the cited document rather than on the resemblance of the names: the SGA minutes of 8 October and 29 October 2013 give the Student Affairs committee head as Noland Miles and a later undated 2013-14 senate file gives the same committee's report under Nolan Miles, who on 11 February 2014 moved to the Public Relations chair as Barrett Greenwell took Student Affairs; the senate minutes of 23 February 2021 spell one man both ways on the same page, Winiger as co-author of Resolution 2-21-S and Wininger in the Sustainability committee roll; the Herald called her Molly Ricke in January 2025 and Molly Ricky in April 2026, and SGA's own minutes and three bills read Ricke; bills 22-16-F and 32-17-F carry Anna Rose McAvoy and then Anna McAvoy in consecutive sessions; and the 1980-81 records give Marsha L. Sanner as ASG Secretary and Marsha Sanner as Rules and Elections chair, each note stating she held both. Three further pairs the archive still publishes twice were examined the same night and deliberately NOT added, because the minority spelling in each rests on OCR the archive's own notes call unverified and the source PDFs on digitalcommons were refusing requests: Staci/Stacy Kitchens, Carleton Ruminer/Carlton Rumenier, and Brittany Ann/Brittany-Ann Wick. Leave them flagged until someone reads the page.",
  "aliases": {
   "Amanda B. Allen": "Amanda Allen",
   "Maksim Zaephel": "Maksim Zaepfel",
@@ -81,6 +81,11 @@
   "Patrick Monahan": "Patrick Monohan",
   "Salvador Leon": "Salvador León",
   "Kim Summers": "Kimberly Summers",
-  "Lillian Nellans": "Lily Nellans"
+  "Lillian Nellans": "Lily Nellans",
+  "Noland Miles": "Nolan Miles",
+  "Matthew Winiger": "Matthew Wininger",
+  "Molly Ricky": "Molly Ricke",
+  "Anna Rose McAvoy": "Anna McAvoy",
+  "Marsha Sanner": "Marsha L. Sanner"
  }
 }
