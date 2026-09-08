@@ -42677,23 +42677,6 @@
     "senate": {
      "officers": [
       {
-       "office": "Speaker of the Senate",
-       "name": "Page Settles",
-       "note": "Listed among non-voting officers in attendance at the 1 Dec 2015 executive cabinet meeting.",
-       "profile": [
-        "Page Settles served as Speaker of the Senate in 2015-16. In her Senate Speaker report at the meeting of 12 April 2016 she announced that the election for the next Senate Speaker would be held on 26 April. (The Herald's coverage spells her first name \"Paige\"; the plate spelling is followed here with the doubt flagged.)"
-       ],
-       "src": {
-        "label": "SGA Executive Cabinet minutes, 1 Dec 2015",
-        "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf",
-        "file": "2015-16-executive-cabinet-minutes-12-1-15.pdf"
-       },
-       "src2": {
-        "label": "Herald, 13 Apr 2016 - SGA discusses colonnade program, passes one bill",
-        "url": "https://wkuherald.com/32561/news/sga-discusses-colonnade-program-passes-one-bill/"
-       }
-      },
-      {
        "office": "Secretary of the Senate",
        "name": "Cole McDowell",
        "note": "Appointed by Speaker Paige Settles and approved by the Senate at its first meeting on 1 September 2015. He asked senators in December to tell him if they were not returning in the spring.",
@@ -42822,10 +42805,22 @@
       {
        "office": "Speaker of the Senate",
        "name": "Paige Settles",
-       "note": "Correction of spelling only: the archive currently carries \"Page Settles\" from the 1 December 2015 cabinet minutes. The SGA senate page and her own topper.wku.edu address give Paige Settles. She called the first meeting of the Fourteenth Senate to order on 1 September 2015 and reported in February 2016 that she was updating senate records and procedures.",
+       "note": "Called the first meeting of the Fourteenth Senate to order on 1 September 2015, sat among the non-voting officers at the executive cabinet meeting of 1 December 2015, and reported in February 2016 that she was updating senate records and procedures. The archive carried a second record for this same office under the spelling \"Page Settles\", cited to the cabinet minutes of 1 December 2015; those minutes in fact read \"Speaker of the Senate Paige Settles\", and the two records were combined on 8 September 2026.",
+       "profile": [
+        "Paige Settles served as Speaker of the Senate in 2015-16, the fourth year of a senate career that began with her swearing-in as a freshman senator in September 2012. In her Senate Speaker report at the meeting of 12 April 2016 she announced that the election for the next Senate Speaker would be held on 26 April."
+       ],
        "src": {
         "label": "SGA Senate page, archived 19 Sep 2015 (last modified 6 Aug 2015)",
         "url": "https://web.archive.org/web/20150919132838/http://www.wku.edu/sga/legislative/"
+       },
+       "src2": {
+        "label": "SGA Executive Cabinet minutes, 1 Dec 2015",
+        "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf",
+        "file": "2015-16-executive-cabinet-minutes-12-1-15.pdf"
+       },
+       "src3": {
+        "label": "Herald, 13 Apr 2016 - SGA discusses colonnade program, passes one bill",
+        "url": "https://wkuherald.com/32561/news/sga-discusses-colonnade-program-passes-one-bill/"
        }
       },
       {
@@ -48902,7 +48897,7 @@
       {
        "name": "Matthew Winiger",
        "seat": "Senator (Sustainability Committee Chair)",
-       "note": "Chaired the Sustainability Committee from at least Oct. 27, 2020 through Mar. 2, 2021, and co-authored Resolution 2-21-S and Bill 7-21-S. The minutes spell the surname both 'Winiger' and 'Wininger'; unsettled which is correct.",
+       "note": "Chaired the Sustainability Committee from at least Oct. 27, 2020 through Mar. 2, 2021, and co-authored Resolution 2-21-S and Bill 7-21-S. The minutes spell the surname both 'Winiger' and 'Wininger', and the minutes of 23 February 2021 spell it both ways on the same page: 'Winiger' where he and Matthew Thomas speak for Resolution 2-21-S as its authors, 'Wininger' in the Sustainability committee roll a few paragraphs later. Both are this man, who was elected president for 2021-22; the archive keeps each source's spelling and files them as one person under Wininger, the spelling SGA's own legislation index and WKU News use.",
        "src": {
         "label": "SGA Senate minutes, 23 Feb 2021",
         "url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/2_23_21_minutes.pdf"
