@@ -328,5 +328,40 @@
   "outcome": "not found - the Talisman's most prolific writer of these years and never in front of a camera",
   "detail": "WORKLIST, not officers. A senator in 2016-17 and 2017-18 who sat on the organizational aid committee. He is on the staff page of every Talisman magazine from 2017 Power to 2020 Zeitgeist, wrote the horoscopes for five issues running and has bylines on major photo stories, and not one of those pages carries a photograph of the staff. No Herald caption names him.",
   "checked": "wkuherald.com media library (0); data/herald-photos.json (0 McCormick captions matching both names); the print Herald caption index 2010-2016 and the new 2017-2019 index (0); the 2016 and 2015 Talisman back indexes and portrait grids; the staff pages of all eight Talisman magazines 2016-2020"
+ },
+ {
+  "name": "Josh Knight",
+  "year": "2014-15",
+  "outcome": "FOUND - the 2015 Talisman clubs section, which every earlier pass read as an index entry and never opened",
+  "detail": "The earlier note closed him with '2015 Talisman index (Knight, Josh 332, a clubs roster)'. Page 332 is not a roster. It is the WKU College Youth in Government group photograph, and its caption is a numbered row key: 'Row 1: Angella Farmer, Austin Hatfield, Merideth Cundiff, Jay Todd Richey, Jody Dahmer, Tyler Rucker. Row 2: Hayden Hickey, Zach Jones, James Line, Josh Knight, Nora Grossman, Colton Hounshell, Mason Hill.' Filed as 2014-15-josh-knight.jpg. GENERAL LESSON for the next run: in the 2015 and 2016 Talismans the clubs section mixes two kinds of caption, a bulk alphabetical membership list with no faces attached and a 'Row 1: / Row 2:' key that positions every face. An index hit that lands in the clubs pages must be opened to see which of the two it is. Distinguishing them is one grep for 'Row 1' in the page text.",
+  "checked": "2015 Talisman p. 332 image xref 12644, 691x395 CMYK, extracted natively; row key proved against the frame on sex sequence in both rows; cross-checked against the Jody Dahmer mug already in data/photos and against the POTTER COLLEGE sweatshirt at the James Line position"
+ },
+ {
+  "name": "SOURCE CLOSED: the WKU class composites (UA61/1, UA60/5, UA61/16)",
+  "year": "2014-15 to 2019-20",
+  "outcome": "tested against all 39 officers of this block for the first time - nothing",
+  "detail": "The untruncated composite roster corpus at ~/Desktop/SGA60 photo hunt/_composite-rosters/rosters.json holds 150 records and 4,429 named people: Nursing UA61/1 1966-2011 (75), Dental Hygiene UA60/5 1972-2015 (42), the UA60/5/1 and UA60/5/3 scrapbooks (18), Physical Therapy UA61/16 (8) and Spirit Masters UA12/2/16 (7). Every one of the 39 officers was run against it, exact name and then surname alone. Zero exact matches. This is not surprising once the dates are laid out: the corpus effectively stops at 2015, and the professional-programme composites only ever cover Nursing, Dental Hygiene and Physical Therapy, none of which any of these 39 was reading. It is a real source and it was never applied to these officers before, and it is now closed for them.",
+  "checked": "rosters.json parsed with its own parse2.py, both the forward and the inverted name orders; 39 names x 4,429 roster names"
+ },
+ {
+  "name": "SOURCE CLOSED: the Spirit Masters class booklets, dlsc_ua_records 8496-8502",
+  "year": "2014-15 to 2019-20",
+  "outcome": "tested against all 39 officers for the first time - nothing",
+  "detail": "All seven booklets are parsed on disk at ~/Desktop/SGA60 photo hunt/_composite-rosters/sm_people.json: 2011-12 (30 people), 2012-13 (32), 2013-14 (29), 2014-15 (33), 2015-16 (32), 2016-17 (33), 2017-18 (30) - 219 people with page, side and biography. Not one of the 39 is a Spirit Master in any of the seven years. The near misses are other people: Derek Daniel 2012-13 and 2013-14 (not Amber Daniel), Hannah Reed 2015-16 (not Amarah Reed), Logan Reynolds 2016-17 and 2017-18 (not Turner Reynolds). Twenty-three of the 219 biographies name student government outright and none of the twenty-three is one of these 39; they are Kelley Boothe, Kaylee Egerer, Alex Fahnders, Mary Boothe, Derek Daniel, Ashlee Manley, Sarah Newton, Poorvie Patel, Alyson Manley, Alexis Baker, KJ Hall, Nolan Miles, Jay Todd Richey, Brian Chism, Haley Jones and Yasmine Sadrinia. Closed for this block.",
+  "checked": "sm_people.json, 219 records, exact name and surname-only against all 39; biographies grepped for 'Student Government' and 'SGA'"
+ },
+ {
+  "name": "SOURCE CLOSED: the stu_org Greek and organisation composites, 645 records",
+  "year": "2014-15 to 2019-20",
+  "outcome": "a composite collection nobody in this project had opened - and it stops just short of being useful here",
+  "detail": "digitalcommons.wku.edu/stu_org holds 645 records, and they are NOT in the ~/Desktop composite roster corpus, which only covers the health-science classes and the Spirit Masters. Many of them are photographic composites whose abstracts carry a complete row-by-row key ('top row l to r: ...'), which is the strongest identification a source can give. The whole collection was run against these 39: zero hits. The reason is coverage, not method. Only one organisation has composites inside this block's years - Phi Mu, UA1C11/105/37 to /40 for 2014, 2015, 2016 and 2017, at stu_org/377, /378, /379 and /380 - and none of these officers is in them. Everything else in stu_org after 2012 is two Alpha Delta Pi newsletters and a Ceres advisor's manual. WORTH SAYING FOR OTHER BLOCKS: the Phi Mu composites run 1972-2017 with full row keys and the whole collection is 645 records deep, so this is a live untested source for the 1970s to the 2000s even though it is dry here.",
+  "checked": "all 645 stu_org entries in data/herald-index-full.json, full untruncated abstracts, exact name against all 39 plus a surname sweep of the 2013-2017 Phi Mu composites"
+ },
+ {
+  "name": "SOURCE CLOSED: the Talisman magazines 2016-2020",
+  "year": "2016-17 to 2019-20",
+  "outcome": "eight volumes, full text, not one of the 39 named",
+  "detail": "After the 2016 yearbook the Talisman became a magazine and stopped printing portrait grids. All eight magazine PDFs already on disk were read cover to cover through their text layers - 2016 Identity, 2017 Power, 2017 Well Being, 2018 Grit, 2019 Balance, 2019 Paradise, Movement and Zeitgeist - and none of the 39 appears anywhere in any of them, in a caption, a credit or a story. This is the whole of the Talisman for 2017 onward, so for the 2017-18, 2018-19 and 2019-20 officers there is no yearbook route left at all.",
+  "checked": "~/Desktop/SGA60 photo hunt/_topscholar-pdfs/talisman-mag-*.pdf, eight files, PyMuPDF text layer, all 39 names"
  }
 ]

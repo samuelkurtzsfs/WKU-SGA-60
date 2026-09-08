@@ -515,5 +515,131 @@
    "label": "WKU class composites on TopSCHOLAR, UA60/5 and UA61/1",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2530"
   }
+ },
+ {
+  "name": "SOURCE CLOSURE - all 31 officers of _officers-n0813.json",
+  "year": "2008-09 to 2015-16",
+  "fact": "THE CLASS COMPOSITES ARE NOW TESTED AGAINST THIS BLOCK AND HOLD NONE OF IT. The complete untruncated roster corpus at ~/Desktop/SGA60 photo hunt/_composite-rosters/rosters.json was parsed with its own parse2.py and every name in every Nursing UA61/1 1966-2011 plate, every Dental Hygiene UA60/5 1972-2015 plate and the Physical Therapy UA61/16 class of 2016 was matched against all 31 officers on first-name-plus-surname. Zero full-name matches. Fifty-nine surname-only coincidences were read by hand and every one is a different person in a class years away from the officer (Chaney 1973 and 1998, Hazelip 1982, Howell 1968/1990/1994/2015, Jankowski 1988, Mitchell 1978/1990/1995/2000, Mullins 1995/2006, Pawley 1978, Payne 1971/1974/1989/1993/1994/1998/1999/2005/2010, Simmons 1983/1986/1991/1992/1993/1999/2006-07/2008, Spalding 2004, Stewart 1976/1979/1983/1989/1990/1991/2008/2011, Wood 1978/1979/1982/1984/1987/1988/1989/1991/1992/1999/2005/2006/2011). The abstracts of every in-range plate (Nursing 2008, 2009, 2010, 2011; Dental Hygiene 2008 through 2015) were read in full and none of the 31 is in them. This source had never been tested against these officers. It is closed for this block.",
+  "src": {
+   "label": "UA61/1 WKU Nursing plates 1966-2011, UA60/5 WKU Dental Hygiene plates 1972-2015, UA61/16 Physical Therapy Class of 2016; local corpus ~/Desktop/SGA60 photo hunt/_composite-rosters/rosters.json",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2485"
+  }
+ },
+ {
+  "name": "SOURCE CLOSURE - all 31 officers of _officers-n0813.json",
+  "year": "2008-09 to 2015-16",
+  "fact": "THE SPIRIT MASTERS CLASS BOOKLETS ARE NOW TESTED AGAINST THIS BLOCK AND HOLD NONE OF IT. All 219 people parsed out of the seven booklets 2011-12 to 2017-18 (dlsc_ua_records/8496-8502), name, role, page, side and full biography, were matched against all 31 officers. Zero name matches. The only surname coincidences are inside biography text and belong to other people: 'crowley' in Rachel Gumble's bio (2011-2012), 'wood' in Meghan McGuirk's (2012-2013) and Thomas Deaton's (2017-2018). The seven booklet rosters were also read in full against the officer list. This source overlaps this block's later years and had never been tested against these officers. It is closed for this block.",
+  "src": {
+   "label": "UA12/2/16 WKU Spirit Masters class booklets 2011-12 through 2017-18; local corpus ~/Desktop/SGA60 photo hunt/_composite-rosters/sm_people.json",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8496"
+  }
+ },
+ {
+  "name": "SOURCE CLOSURE - all 31 officers of _officers-n0813.json",
+  "year": "2008-09 to 2015-16",
+  "fact": "THE 2016 TALISMAN IS NOW TESTED AGAINST THIS BLOCK AND HOLDS NONE OF IT. dlsc_ua_records/8677, the 755 MB copy already on disk, was opened page by page. Its embedded text layer is clean and complete: every portrait grid prints its subject's name as plain text, verified by hand on the seniors grid (PDF pp. 118-130, printed 234-258), the underclassmen grid (PDF pp. 131-149, printed 259-295), the graduate students grid (PDF pp. 150-152, printed 296-299) and the faculty-and-staff grid (PDF pp. 153-155, printed 300-305). Two independent passes were run. First the back index (PDF pp. 175-179, printed 344-352, 3,190 lines) was parsed and every surname among the 31 officers was pulled out: thirty index lines carry one of those surnames and every single one has a different given name (Aaliyah Calhoun, Hannah Chaney, Lindsay C. Crockett, Madison A. Gooch, Caley Howell, Daniel and Patrick McDowell, Paige L. Mitchell, Hannah V. Mullins, six Paynes, Caroline and Megan K. Raley, three Simmonses, Logan B. and Shelley Spalding, five Stewarts, Hannah E. and Lindsay A. Wood, Hannah K. Wurth). Second, the full text of all 180 pages was matched on first-name-plus-surname with nickname variants (Chris/Christopher, Jessi/Jessica, Drew/Andrew, Sara/Sarah, Kelli/Kelly, Brittney/Brittany, Julie/Julia, Jake/Jacob, Rachael/Rachel): zero hits for any of the 31, on any page, including the graduate and faculty-and-staff grids that have caught people other passes missed. The book this era was missing does not contain a single one of these officers. This source had never been tested against these officers. It is closed for this block.",
+  "src": {
+   "label": "2016 Talisman: Life More Life, UA12/2/2, back index printed pp. 344-352 and portrait grids printed pp. 234-305",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
+  }
+ },
+ {
+  "name": "Tyler Scaff",
+  "year": "2013-14",
+  "fact": "CONFIRMED AND LEFT. The 2015 Talisman's own back index reads 'Scaff, Tyler 290'. Printed page 290 sits inside the student portraits section, printed pp. 268-313, which is absent from TopSCHOLAR's scan of the volume: the copy on disk runs 266-267 on PDF page 138, carries an uncredited full-bleed photograph with no folio on PDF page 139, and resumes at 'PORTRAITS - FACULTY & STAFF 315 / 314' on PDF page 140. The faculty-and-staff spread that does survive holds 21 names and Scaff is not among them, as expected for a student. The index itself, PDF pp. 156-159, is complete and was read line by line: of the 31 officers only Scaff is indexed into the missing range. Page 290 exists in print and in no copy we can reach. Verified independently against the 2016 Talisman, whose grids and 3,190-line index contain no Tyler Scaff at all, so the 2015 portrait is the only one. Confirmed 7 September 2026; leave it.",
+  "src": {
+   "label": "2015 Talisman: Resurgence, UA12/2/2, back index printed p. 350 (PDF p. 158)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8679"
+  }
+ },
+ {
+  "name": "Sarah Hazelip",
+  "year": "2012-13",
+  "fact": "FOUND IN THE 2015 TALISMAN AND NOT USABLE. She is named on printed p. 329 (PDF p. 147) of the 2015 Talisman, in the Sigma Kappa sorority membership list: '...Megan Hayden, Sarah Hazelip, Julie Hirtzel, Kara Hodges...'. That list is a plain alphabetical roster of about 125 women printed as a block of running text with no row key and no numbering, set beside one group photograph of the chapter. There is no way to tie any face in that frame to her name, and the caption carries no SGA reference. This is the Elizabeth McGrew pattern exactly and it is refused on the same grounds. Recorded so no later run spends time on the hit. Her only other appearance in the volume is the back index, 'Hazelip, Sarah 329', pointing at the same page.",
+  "src": {
+   "label": "2015 Talisman: Resurgence, UA12/2/2, printed p. 329, Sigma Kappa",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8679"
+  }
+ },
+ {
+  "name": "Mallory Treece",
+  "year": "2012-13",
+  "fact": "FOUND IN THE 2015 TALISMAN AND NOT PHOTOGRAPHED. The volume's 'Gunning For It' feature, printed pp. 58-59 (PDF p. 30), gives her nine paragraphs: 'Bowling Green senior Mallory Treece explored the subject for her honors thesis', on party affiliation and gun ownership, with three direct quotations. The spread carries exactly one photograph, a single 3967x2848 image whose caption is U.S. Rep. Brett Guthrie and campaign worker Kaylii Carnaham on election night, 4 November 2014. Treece is quoted at length and not pictured, which is the same pattern the Herald shows for this block. The back index confirms the page, 'Treece, Mallory 59', and lists no other.",
+  "src": {
+   "label": "2015 Talisman: Resurgence, UA12/2/2, printed pp. 58-59",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8679"
+  }
+ },
+ {
+  "name": "SOURCE CLOSURE - all 31 officers of _officers-n0813.json",
+  "year": "2008-09 to 2015-16",
+  "fact": "THE HERALD PRINT CAPTION INDEX, READ WITH ITS 'ABOVE' FIELD, IS NOW TESTED AGAINST THIS BLOCK AND HOLDS NONE OF IT. Both indexes were swept: _herald-index-2002-2009/photo_captions_above_2002-2009.jsonl and all eleven files of _herald-index-2010-2016/, which now reaches 2019. Every photograph's text BELOW, RIGHT OF and ABOVE the frame was matched against all 31 officers on first-name-plus-surname with initial and nickname variants. Forty-two hits came back and every one was read by hand; not one is a photograph of one of these officers. The near misses worth recording: the SGA election-results page of 8 April 2011 (dlsc_ua_records/6616, p. 3) prints Mac Mullins, David Spalding, Rachel Calhoun, Eileen Forsythe and Brittany Crowley in its list of winning STUDENT SENATORS, but the page carries only two portraits and both belong to the executive winners, Kendrick Bryan and Devon Hilderbrandt; the graduation advertisement of 4 May 2012 (6557, p. 11) sets 'David W. Spalding' in a Political Science graduate list beside a decorative image, not a portrait; Cole McDowell is named in the lead story of 20 November 2014 (6399, p. 1) and the two photographs on that page are of Shantytown; Tyler Scaff is named in senate reports of 14 November 2013 (6379), 13 February 2014 (6519) and 1 May 2014 (6499) and none of those pages photographs him. Three further passes were run to catch what a full-name match cannot: a mugshot-nameplate pass over every image between 40 and 600 px wide whose caption is under 70 characters and carries an officer surname (13 hits, all other people - Nick Simmons, Todd Stewart, Kwabena Boateng of Fort Mitchell, Meaghan Howell, Shayna Crowley); a harvest-then-match pass over all 237 photographs in 2002-2019 whose caption mentions SGA, student government, the student senate or the judicial council, matched on surname alone (one hit, senator Wes Calhoun of Indianapolis, 3 February 2009, not Rachel Calhoun); and a full-text pass for context. One coverage gap is worth recording for a later run: the 2002-2009 caption index has no records for September 2008 or December 2008, and none for August-December 2006.",
+  "src": {
+   "label": "Herald print caption indexes 2002-2009 and 2010-2019, ~/Desktop/SGA60 photo hunt/",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6616"
+  }
+ },
+ {
+  "name": "Chris Jankowski",
+  "year": "2010-11",
+  "fact": "REFUSAL RE-TESTED AND UPHELD. _do-not-use.json refuses the Herald photograph of 7 December 2010, resident assistants making signs in Pearce-Ford Tower, on the ground that the caption names three people and nothing separates the two men. The frame was opened and counted this run: three people are in it, one woman kneeling at the left, one man bent over painting in the centre and one man seated at the right edge. The caption names Laqisha Walton and 'Versailles sophomore Chris Jankowski' as the two resident assistants making signs and then quotes 'Nicholasville junior Matt Brockman', giving no positions for any of them. Walton is identifiable as the only woman; the two men are not separable. The refusal is correct and stands. This is the only frame in the whole 21,304-caption wkuherald.com photograph library that names any of the 31 officers.",
+  "src": {
+   "label": "College Heights Herald, 7 December 2010",
+   "url": "https://wkuherald.com/wp-content/uploads/2010/12/9c2cdddaec25a2d7acf47bba70e46fd7.jpg"
+  }
+ },
+ {
+  "name": "Lisa M. Kappler",
+  "year": "2008-09",
+  "fact": "THE ONE STORY THAT IS ABOUT HER CARRIES NO PORTRAIT. The Herald of 17 February 2009 (84:22, p. 3) leads with 'SGA chief justice resigns', eight paragraphs on her resignation of 12 February 2009 with three quotations from her by e-mail, and it also quotes 'Vine Grove senior Corey Bewley, an associate justice on the judicial council'. The page was rendered and read: it carries no photograph of any person. Its only images are a Domino's Pizza advertisement, a Kentucky Tobacco Quit Line advertisement and a Great Escape Theatres advertisement, and the two mugshot-sized 188x278 images that a size heuristic flags are the Jonas Brothers and 'Fired Up!' film posters inside that last advertisement. Her name also appears in the text of 2 September 2004 (80:4, p. 3), 10 April 2008 (83:46, p. 5, the Judicial Council tie and campaign complaint story), 22 April 2008 (83:49, p. 6) and 12 February 2009 (84:21, p. 1); none of those pages photographs her either. Her two surviving wkuherald.com articles of February 2009, 'SGA Chief Justice Resigns' and 'SGA Sets Date For Student Regent Election', are archived with nothing but the masthead GIF and a print-edition thumbnail.",
+  "src": {
+   "label": "College Heights Herald 84:22, 17 February 2009, p. 3, 'SGA chief justice resigns'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6749"
+  }
+ },
+ {
+  "name": "Corey Bewley",
+  "year": "2008-09",
+  "fact": "QUOTED THROUGHOUT THE SPRING OF 2009 AND NEVER PHOTOGRAPHED. Every Herald page of 2008-09 whose text names him was cross-referenced against the print caption index and each page's photographs listed: 17 February (84:22, p. 3, the chief justice resignation story, rendered and read in full - no portrait on the page), 26 February (84:35, p. 1), 5 March (84:37, p. 3), 31 March (84:41, p. 6), 2 April (84:42, p. 3), 9 April (84:44, p. 6), 16 April (84:46, pp. 1 and 5) and 30 April (84:50, p. 3). Not one of those pages carries a photograph whose caption names him, and the two pages checked frame by frame carry no unattributed portrait either. His only appearance in the surviving wkuherald.com library is the article of 26 February 2009, 'Gilley Elected Student Regent', whose single photograph is captioned 'Pineville senior Reagan Gilley celebrates winning the Student Government Association student regent election'. The Herald printed his words and never his face.",
+  "src": {
+   "label": "College Heights Herald 84:22, 17 February 2009, p. 3; wkuherald.com article 3650062, 26 February 2009",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6749"
+  }
+ },
+ {
+  "name": "Monique Gooch",
+  "year": "2008-09",
+  "fact": "NAMED IN THE HERALD BY OFFICE AND NOT PHOTOGRAPHED. The Herald of 24 February 2009 (84:34, p. 3) reports the annual Minority Future on the Hill forum and names her by her office: 'Franklin senior Monique Gooch, Student Government Association public relations director, said SGA has discussed establishing a branch on South Campus if it's needed.' That page was rendered and read frame by frame. It carries no photograph of any person: its images are a WKU Health Services 'Fad Diets' advertisement, a Domino's Pizza advertisement and a Great Escape Theatres advertisement whose two mugshot-sized panels are the Jonas Brothers and 'Madea Goes to Jail' film posters. She is also named in the text of 2 April 2009 (84:42, p. 3), which carries only a colour bar and a full-page advertisement.",
+  "src": {
+   "label": "College Heights Herald 84:34, 24 February 2009, p. 3, 'Minority forum provides outlet for concerns'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6754"
+  }
+ },
+ {
+  "name": "Aaron Pawley",
+  "year": "2009-10",
+  "fact": "NAMED IN A COMMENTARY AND NOT PHOTOGRAPHED. The Herald opinion page of 4 September 2009 (85:2, p. 4) carries Skylar Baker-Jordan's commentary 'Nepotism has no place in student government', which names him directly: his nomination as 'director of academic and student affairs, Aaron Pawley' is challenged as a friendship appointment. The page was rendered and read. Its only portrait is a 461x502 studio mugshot of the commentary's author, captioned 'SKYLAR BAKER-JORDAN, Former executive vice president, SGA, Bowling Green senior'. The rest of the page is the Captain Professor editorial cartoon, the Annie's Outlook strip and the staff box. Pawley is argued about at length and never pictured.",
+  "src": {
+   "label": "College Heights Herald 85:2, 4 September 2009, p. 4",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6763"
+  }
+ },
+ {
+  "name": "VaShae Swope",
+  "year": "2008-09",
+  "fact": "THE STORY THAT IS ABOUT HER RUNS ON PAGE ONE WITHOUT HER FACE. The Herald of 19 March 2009 (84:38, p. 1) leads its left column with 'South Campus wants voice on SGA', built almost entirely on her: 'Lexington freshman VaShae Swope, an SGA senator, said she wants to get students on South Campus involved with the main campus government. Swope is the committee chair for diversity issues', plus two direct quotations and her plan for an interest table at South Campus that day. The page was rendered and read. Its three photographs are the Taikoproject on stage at the Capitol Arts Theatre, drummer Tomomi Hongo, and Gov. Steve Beshear with Staff Regent Tamela Smith. The whole issue was searched: her name occurs on page 1 only, and the story's jump page carries no further mention. She is also named in the text of 7 April 2009 (84:43, p. 9), 16 April 2009 (84:46, p. 1) and 13 November 2009 (85:19, p. 3), none of which photographs her. Her surviving wkuherald.com article, 'South Campus Wants Voice On SGA' of 19 March 2009, is archived with no image but the masthead.",
+  "src": {
+   "label": "College Heights Herald 84:38, 19 March 2009, p. 1, 'South Campus wants voice on SGA'",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6758"
+  }
+ },
+ {
+  "name": "SOURCE FOUND, NEVER RECORDED BEFORE - the 2013 and 2014 Talismans",
+  "year": "2012-13; 2013-14",
+  "fact": "THE 2010s HAD MORE YEARBOOKS THAN THIS PROJECT THOUGHT. _archive-gaps.json states that the 2016 Talisman is 'the only Talisman of the 2010s with a complete portrait section' and the file contains no mention anywhere of a 2013 or a 2014 volume. Both exist and are digitised: UA12/2/2 2013 Talisman: Form, dlsc_ua_records/8696, article 9683; UA12/2/2 2014 Talisman: Reckoning Part I, dlsc_ua_records/5160, article 6164, 357,825,356 bytes; and Part II, dlsc_ua_records/5162, article 6167. Found by reading the dlsc_ua_yearbooks collection listing rather than by searching for a name. They cover the academic years 2012-13 and 2013-14 exactly, which is where nine of this block's officers sit. All three were pulled through the Wayback range route into ~/Desktop/SGA60 photo hunt/_topscholar-pdfs/ as talisman2013-form.pdf, talisman2014-reckoning-1.pdf and talisman2014-reckoning-2.pdf. Whatever this run concludes about them, the volumes are now on disk and no later run should treat the 2010s as having only 2015 and 2016.",
+  "src": {
+   "label": "TopSCHOLAR dlsc_ua_yearbooks collection listing, UA12/2/2",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+  }
  }
 ]
