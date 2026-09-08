@@ -936,5 +936,15 @@
  {
   "topic": "THE 2012 TALISMAN CLUBS SECTION IS NOW CLOSED",
   "note": "All 19 club pages, printed 369-387, were OCR'd and every group key parsed and matched against everyone in the archive without a face. **Two faces, and they are the only two there are**: Drew Mitchell from the Public Relations Student Society of America on p. 382 and Sunetris Fluellen from Delta Sigma Theta on p. 374. Do not reopen it.\n  The rule that decides these: **a club key is only usable when the group is small enough that rows can be told apart.** The fraternity and sorority pages name a hundred or more people in one alphabetical run with no row markers at all — Kelly Simmons sits in an Alpha Omicron Pi list of that kind and Eileen Forsythe in Phi Mu, and neither can ever be cut from them. The row-keyed groups of thirty or more are just as useless because the faces fall below twenty pixels.\n  Where a row assignment is genuinely ambiguous, **occlusion settles it and head height does not.** On the PRSSA photograph the sexes named in the key admit two different readings, and what fixed Drew Mitchell was that his shoulders are overlapped on both sides by the two people in front of him. On Delta Sigma Theta the counts forced it outright: the key's rows run two, three and four, and the tiers hold two, three and four."
+ },
+ {
+  "kind": "verification owed",
+  "name": "Six 2012 Talisman grid cells: Julia Payne, Sarah Hazelip, Brenna Duncan, Jonathon Tabor, Katie Martin, Lucy George",
+  "year": "2009-10 to 2013-14",
+  "detail": "Published 8 September from the 2012 Talisman class grids. The CELL is proved in every case, by the group's alphabetical order and its sex pattern against the printed row, which is the method this project trusts. What is missing is the second test the twenty-eight faces published from the all-volumes sweep the same night all carried: neither the volume's back index nor any ASG page is cited to show the student in the grid is the SGA person of that name. Katie Martin is the partial exception - she is in the graduate section and sat as Senator for Graduate Students, which is consistent but is not an index citation. Names like Katie Martin, Julia Payne and Lucy George carry a real collision risk in a volume of this size. NOT CUT, and a later pass must not cut them either on a failed search: the 2012 volume is not on archive.org - the identifier talisman2012west returns 503 - so the index could not be opened from here, and CLAUDE.md is explicit that a miss proves nothing. WHAT TO DO: open dlsc_ua_records/8897, read the back index for each of the six, and record either the index line tying the name to an ASG page or the fact that the volume carries only one person of that name. Also worth settling while there: Jonathon Tabor and Lucy George are filed to 2009-10 off an underclassmen grid covering 2011-12, which works only if the grid runs to juniors.",
+  "src": {
+   "label": "UA12/2/2 Talisman, Vol. 83 (2012)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8897"
+  }
  }
 ]

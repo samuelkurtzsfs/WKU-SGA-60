@@ -1,6 +1,6 @@
 # Faces proved, people not — for the editor
 
-19 entries covering 18 people are cut, on disk and refused by the merge. Each one is a face a
+18 entries covering 17 people are cut, on disk and refused by the merge. Each one is a face a
 researcher established beyond doubt, attached to a person they could not prove is the same
 person the archive records. The rule here is that identification is absolute, so none of them
 is published and none is thrown away.
@@ -9,15 +9,8 @@ Each needs one decision. Where the answer is yes, remove the `identification` li
 entry in its findings file and the next merge will publish it. Where it is no, move the entry
 to `_do-not-use.json` with the reason.
 
-## Janice Berkshire — 1972-73
-`1972-73-janice-berkshire.jpg`
-
-A studio portrait in a professionally printed class composite, with her own nameplate directly beneath it. 192 by 275 pixels cut at native resolution from a 2632 by 1991 plate; not enlarged. The 1973 Talisman index carries her name with no page reference, so she sat for no class portrait, and this is the only photograph of her the archive has found.
-
-## Sally Chenault — 1975-76
-`1975-76-sally-chenault.jpg`
-
-A studio portrait in a professionally printed class composite, with her own printed nameplate directly beneath it. 220 by 306 pixels cut at native resolution from a 2160 by 1800 plate; not enlarged. Nothing else in the digitised record shows her at all.
+Two of the original nineteen came off this list on 8 September and are recorded at the foot of
+this file. Both were answered by evidence, not by a decision made at a desk.
 
 ## George Carlson — 1976-77
 `1976-77-georgiana-carlson.jpg`
@@ -147,3 +140,42 @@ That is your call to make and not mine to make quietly.
 
 Say the word and it goes up in one command; say no and I will record it as
 found-and-declined so nobody hunts him again.
+
+# Closed on 8 September 2026
+
+Both of these were on the list above until the all-volumes Talisman sweep of the night of
+7 September opened books no earlier pass had reached. In each case the person question was
+settled by a printed index, so the decision was made by the archive rather than by an editor.
+
+## Sally Chenault — 1975-76 — PERSON PROVED, PUBLISHED
+
+The published portrait is now her own freshman class portrait, `1975-76-sally-chenault.jpg`,
+236 by 292, cut from the 1974 *Talisman* at printed p. 413. What settles the person is the
+1976 volume's own back index, which reads "Chenault, Sarah Elizabeth 63, 270, 272, 321".
+Page 63 is the Associated Student Government attendance roll that is the archive's source for
+her seat, and p. 270 carries the sentence naming the sorority's Associated Student Government
+representatives as Jenny Parker, Sally Chenault and Jane Anne Coverdale. Sally is the ordinary
+diminutive of Sarah and the grid label reads SALLY E. CHENAULT, matching the middle initial.
+All four of those references were opened and read at the source on 8 September and every one
+holds exactly as quoted.
+
+The held Dental Hygiene composite crop has been renamed `1975-76-sally-chenault-composite.jpg`
+and stays on file, unused. It needed the rename: the new portrait had been written over it
+under the old filename, so the held record was describing an image that no longer existed.
+
+## Janice Berkshire — 1972-73 — PERSON PROVED, PUBLISHED FROM A DIFFERENT FRAME
+
+The published portrait is `1972-73-janice-berkshire-talisman.jpg`, her own freshman class
+portrait in the 1970 *Talisman* at printed p. 400. The person is proved by the 1973 volume,
+whose Kappa Delta page prints, in words, that Janice Berkshire represented the College of
+Applied Arts to ASG Congress. That sentence was read at the source on 8 September. A freshman
+in 1969-70 is a senior in 1972-73, so the years line up, and the 1973 index separates her from
+Barbara Rose Berkshire.
+
+**The composite crop stays held, and a later pass should not simply swap it in for being the
+bigger picture.** `1972-73-janice-berkshire.jpg` is 192 by 275 against the published 74 by 102,
+and the temptation is obvious. But it is cut from the WKU Nursing Class of **1971** composite,
+and a woman who finished a nursing class in 1971 is not obviously the same woman sitting as a
+senior in 1972-73. That tension is exactly why it was held and it is not resolved by anything
+found since. What is new is that there is now a second face of the proved person to compare it
+against. That is a judgement about two images and it belongs to a person with both open.
