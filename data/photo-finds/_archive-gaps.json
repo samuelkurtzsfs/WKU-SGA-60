@@ -932,5 +932,9 @@
  {
   "topic": "THE TALISMAN GAP OF 1995-2002 AND 2004-2011 IS REAL",
   "note": "Not a search failure and not a crawl gap — the yearbook was suspended. All 105 TopSCHOLAR Talisman records were enumerated and dated: the run is essentially complete 1906-1994, then 2003, then 2012 onward. archive.org holds only 1943, 1946, 1947, 1963-65, 1971-81, 1986 and 1987. **There is no Talisman portrait grid for anyone whose only years on the Hill fall in 1995-2002 or 2004-2011.** Stop looking; those people need the Herald or nothing."
+ },
+ {
+  "topic": "THE 2012 TALISMAN CLUBS SECTION IS NOW CLOSED",
+  "note": "All 19 club pages, printed 369-387, were OCR'd and every group key parsed and matched against everyone in the archive without a face. **Two faces, and they are the only two there are**: Drew Mitchell from the Public Relations Student Society of America on p. 382 and Sunetris Fluellen from Delta Sigma Theta on p. 374. Do not reopen it.\n  The rule that decides these: **a club key is only usable when the group is small enough that rows can be told apart.** The fraternity and sorority pages name a hundred or more people in one alphabetical run with no row markers at all — Kelly Simmons sits in an Alpha Omicron Pi list of that kind and Eileen Forsythe in Phi Mu, and neither can ever be cut from them. The row-keyed groups of thirty or more are just as useless because the faces fall below twenty pixels.\n  Where a row assignment is genuinely ambiguous, **occlusion settles it and head height does not.** On the PRSSA photograph the sexes named in the key admit two different readings, and what fixed Drew Mitchell was that his shoulders are overlapped on both sides by the two people in front of him. On Delta Sigma Theta the counts forced it outright: the key's rows run two, three and four, and the tiers hold two, three and four."
  }
 ]
