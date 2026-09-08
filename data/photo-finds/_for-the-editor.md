@@ -106,7 +106,7 @@ Studio portrait cut from the Phi Mu Delta Tau chapter composite for 2002-2003, s
 
 
 ## Sawyer Coffey — 2016-17  *(not cut; needs a second source of her face)*
-
+`2016 Talisman, printed p. 314, PRSSA group photograph`
 
 Fourteen people against fourteen names, and she belongs in the group beyond doubt — SGA public
 relations director, journalism senior. What is missing is her position. The list carries **no row
