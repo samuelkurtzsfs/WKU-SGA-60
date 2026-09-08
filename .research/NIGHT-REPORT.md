@@ -18509,3 +18509,81 @@ person did. 46 people recorded under more than one spelling. 297 documents and
   index, which proves nothing.
 - The three flagged name pairs: Staci/Stacy Kitchens, Carleton Ruminer/Carlton
   Rumenier, Brittany Ann/Brittany-Ann Wick.
+
+---
+
+# 8 September 2026, later: photograph run #387 verified against source and merged
+
+## What was reviewed
+
+Pull request #387, "Research: photographs — queue re-confirmed empty, two leads
+still blocked", the only open pull request. Since the earlier pass of the same
+evening reviewed it and reopened its two dead ends, the run followed that
+correction to its end and two further commits landed: the Kappler lead closed
+for good, and — the one thing in the branch that reaches a public page — a
+misidentified 2012-13 portrait replaced. The three stale pull requests named in
+the standing brief, #6, #7 and #8, were closed on 18 August and no longer exist.
+
+The diff is five files: a run-log entry and this report, a one-line source label,
+and the Katie Martin portrait swapped in `data/photos/` and `site/photos/`. No
+events, no leaders added, nothing in `years.json` or the legislation.
+
+## Verified against the source, not the note
+
+The Katie Martin change was checked against the yearbook itself. Retrieved the
+2012 *Talisman* by the Wayback recipe the earlier pass recorded
+(`web.archive.org/web/<timestamp>id_/<the blocked viewcontent URL>`): the full
+740,936,167-byte PDF, its length matching the server's own Content-Length to the
+byte, opening `%PDF`, 404 pages as the note says. Printed page 333 (PDF page 334,
+"SENIORS") carries a row captioned in its margin MAE MARCHIONE / NANCY MARSHALL /
+KATIE MARTIN against three photographs; the third, column three, is a woman in
+glasses with light hair and a cream scarf on a blue studio ground — the exact
+face now published as `2012-13-katie-martin.jpg`. The file replaced was a broken
+two-cell crop of a different person entirely. This is a real correction of the
+precise failure the photo rules exist to catch, and it is now confirmed by the
+strongest method there is: the printed caption beside the portrait.
+
+Sampled further: Jonathon Tabor is captioned in print on printed page 366 as the
+note claims; all four named presidents (Nick Todd, Katie Dawson, Jeanne Johnson,
+Reagan Gilley) carry a portrait entry; the 2012 *Talisman* is genuinely not on
+archive.org (empty metadata), retrievable only via Wayback of TopSCHOLAR. Every
+sampled claim held.
+
+## Traps
+
+No events in the diff, so no advance notice used as a report. No committee chair
+promoted to officer, no bill author made a member, nobody matched by surname, no
+changed surname, no election filed forward wrong. Nothing touches the settled
+facts. The only living people named are Katie Martin, in a sourced yearbook
+caption, and Lisa Kappler, named in a run-log as the subject of a resignation
+story the *Herald*'s own index names, with nothing written beyond it. No
+contributor commit; every commit on the branch is authored SGA 60.
+
+## Checks
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0.
+`check_duplicates.py` reports the same six pairs as the last three nights; none
+belongs to this diff, which adds no events, and all six stay — four a proposal
+and its later vote or defeat, two genuine same-day bills.
+
+## Verdict
+
+Merged. The three conditions all hold: the validators pass and the build is
+clean, every sampled claim held against its source, and nothing in the diff
+trips the traps unfixed. The portrait swap is a verified correction and the rest
+is run-log the routines read; it publishes cleanly.
+
+## Counts
+
+61 years, 1,983 dated events, 60 people who were president. 2,652 recorded terms
+of office held by 1,811 people, 98% carrying an account of what the person did.
+46 people recorded under more than one spelling. 297 documents and 1,111
+legislation files in the built site.
+
+## Still open
+
+- The remaining pre-2000 gaps unchanged: the 1997-98 legislation gap (39
+  digitised pieces, two events written); Eddie Myers 1994-95 and Jacob A. Miers
+  2008-09, absent from the local *Herald* index, which proves nothing.
+- The three flagged name pairs: Staci/Stacy Kitchens, Carleton Ruminer/Carlton
+  Rumenier, Brittany Ann/Brittany-Ann Wick.
