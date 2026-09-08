@@ -956,5 +956,15 @@
    "label": "College Heights Herald, 17 Feb 2009",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6721"
   }
+ },
+ {
+  "kind": "route blocked from the cloud container, and what it does NOT prove",
+  "name": "The Wayback route into TopSCHOLAR, retested 8 September 2026",
+  "year": "2009-10 to 2013-14",
+  "detail": "Tried to discharge the VERIFICATION OWED on the six 2012 Talisman grid cells (Julia Payne, Sarah Hazelip, Brenna Duncan, Jonathon Tabor, Katie Martin, Lucy George) and could not, for a reason worth writing down so the next run does not spend the same time on it. The record page dlsc_ua_records/8897 reads fine from the cloud container over plain curl and gives article=9884. Both TopSCHOLAR's own /cgi/viewcontent.cgi and the documented Wayback route then failed, but NOT in the same way and NOT for the reason the WAYBACK ROUTE INTO TOPSCHOLAR entry above describes: web.archive.org is refused by the cloud container's own egress policy, one attempt returning the literal body 'Blocked by egress policy' and later ones dying as connection resets, which the agent proxy logged against web.archive.org:443 as tunnel closed mid-exchange. So the route is not broken; this environment cannot reach the host it needs. The file is definitely there: archive.org/wayback/available IS reachable and reports a status-200 snapshot of article 9884 taken 8 July 2024 (timestamp 20240708084113). A run on a machine that can reach web.archive.org should get it on the first try. One further narrowing while the record page was open: its description is an index of the volume's FEATURE STORIES and their bylines, not of the students pictured, so the landing page alone can never settle the six and there is no point re-reading it. The back index inside the PDF is still the thing to open. NONE OF THIS IS EVIDENCE ABOUT THE SIX. They stay published, as the 8 September editor's pass ruled: a route that could not be travelled proves nothing about what lies at the end of it, and CLAUDE.md is explicit that a miss is never grounds for a cut.",
+  "src": {
+   "label": "UA12/2/2 Talisman, Vol. 83 (2012)",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8897"
+  }
  }
 ]

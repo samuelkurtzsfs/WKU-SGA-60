@@ -18170,3 +18170,118 @@ underclassmen grid covering 2011-12, which works only if that grid runs as far a
 The standard slipped inside four hours, on the same night, in the same file. That is worth naming
 plainly: the sweep that produced the twenty-eight set a very high bar and the 2012 pass did not
 clear it.
+
+# 8 September 2026, morning — one small pull request, checked to the bottom
+
+The queue was very nearly empty. One pull request was open, #384 from the photograph routine, and
+it added ten lines to `data/photo-finds/_archive-gaps.json` and nothing else. It is merged. Nothing
+was cut, because nothing in it failed.
+
+## What #384 actually was
+
+A run that found no photographs and said so. Every priority in its brief was already satisfied by
+earlier work, so it added no portrait and wrote down what it had checked instead. Declining to force
+a weak match is the rule working rather than a run wasted, and the note it left is the useful
+output: a later pass reads it and skips ground already closed.
+
+That also decides how hard it had to be checked. A note nobody acts on can be loose. A note that
+tells a future run what not to bother with has to be right, or it hides real work. So rather than
+sample it, every claim in it was re-derived.
+
+## Verified at the source
+
+Eleven claims, eleven held.
+
+The four named presidents — Todd, Dawson, Johnson, Gilley — carry portraits, and the files are on
+disk and are real JPEGs. Every president and student regent in `years.json` has one: nought without.
+All sixty-one years carry at least one photograph: nought without. The count of officer rows showing
+no portrait is 221, of which 216 were already closed in the truly-missing list, leaving five, and
+those five are the five names the note gives. Michael R. Klein is covered by the `SOURCE CLOSED`
+sweep of the 1966–1970 *Talismans*, whose range does contain his year. Lane (Caroline) Simpson is
+covered twice over, by the `img_facstaff` entry whose range contains 2016-17 and by the duplicate
+account entry. The Wayback route the note points at exists in the file verbatim.
+
+The one external claim was opened rather than taken on trust. The *Herald* record at
+`dlsc_ua_records/6721` does carry "Student Government Association Chief Justice Resigns – Lisa
+Kappler", dated 2-17-2009, Vol. 84 No. 22. It is a report of a resignation that had happened, not an
+advance notice of one to come. Lisa M. Kappler sits in the 2008-09 Senate officers as Clerk of the
+Judicial Council, and the same *Herald* story was already cited against her there on `main`, so the
+note added no new claim about a living person.
+
+Worth recording how the counting reconciles, because the obvious method gives a different answer and
+a later reader will think the note is wrong. The 221 counts officer *rows* whose name carries no
+portrait in any year. Counting distinct names gives 179 and 174. Counting year-and-name pairs against
+portraits for that same year gives 298. All three land on the same five names, so the conclusion is
+stable, but only the row method reproduces the figures as printed.
+
+## Traps
+
+Clear on every line. No advance notice was written up as a report. No officer records were added, so
+no committee chair could be promoted into one. Kappler is matched on full name, year and office
+rather than surname, and the note flags the discrepancy between SGA's own minutes, which call her
+Clerk, and the *Herald*, which calls her Chief Justice, instead of quietly picking one. No new
+people, so no changed surname could split into two. No election result to file forward. Nothing
+touching a settled fact. The commit is authored `SGA 60` and carries no tool attribution.
+
+## Checks
+
+`build.py`, `check_data.py` and `check_contrib.py` all clean. `check_duplicates.py` reports six
+pairs; every one of them is already on `main` and none was introduced here. All six were read and
+all six kept. Four are a proposal and its later vote or defeat, and two are same-day bills, which
+the rule keeps apart. The sixth is 1997-98, where Bill 97-3-F funding the designated driver cards in
+November and the *Herald*'s February notice that they were about to go out are two events with two
+sources — and that second entry, unprompted, says outright that the archive holds only a contents
+listing and claims nothing about how the distribution went. That is the advance-notice rule being
+applied by the routine to itself.
+
+## Counts
+
+61 years, 1,983 dated events, 60 people who were president. 2,652 recorded terms of office held by
+1,811 people, 98% of them carrying an account of what the person did. 46 people recorded under more
+than one spelling. 297 documents and 1,111 legislation files in the built site.
+
+## The gate held this time
+
+Last night's entry ended on the bypass: research committing straight to `main`, so that a review pass
+arrives after publication rather than before it. Tonight the history says otherwise. Between the last
+editor's pass and this one, the only thing that reached `main` was #384, through the pull request,
+reviewed before it landed. Nothing went round. That is one night, not a fix, but it is worth writing
+down as plainly as the failure was.
+
+## The verification owed, attempted and still owed
+
+With the queue clear, the remaining time went on the debt the last pass left: the six 2012 *Talisman*
+grid cells published at a standard that pass judged short, and live on the site now. It could not be
+discharged, and the reason is worth more than the attempt.
+
+The record page reads fine from here and gives the article number. Both TopSCHOLAR's file endpoint
+and the documented Wayback route then failed — but the Wayback failure is not the one the route's own
+note describes. `web.archive.org` is refused by this container's egress policy, once as a body
+reading "Blocked by egress policy" and afterwards as connection resets that the agent proxy logged
+against that host as a tunnel closed mid-exchange. The route is not broken; this environment cannot
+reach the host it needs. The file is certainly there: the availability API is reachable and reports a
+status-200 snapshot of the volume taken 8 July 2024. A run on a machine that can reach the Archive
+should have it on the first request.
+
+One narrowing came out of it. The record page's description indexes the volume's feature stories and
+their bylines, not the students pictured, so the landing page can never settle the six and re-reading
+it is wasted time. The back index inside the PDF remains the thing to open. All of this is now in
+`_archive-gaps.json` alongside the original debt.
+
+The six stay published. A route that could not be travelled proves nothing about what lies at its
+end, and the rule against cutting on a failed search exists for exactly this.
+
+## Still open
+
+- The six 2012 *Talisman* grid cells, unchanged: an index line or an ASG page tying each name to the
+  SGA person, and whether the underclassmen grid runs as far as juniors, which is what filing
+  Jonathon Tabor and Lucy George to 2009-10 depends on.
+- The Kappler issue PDF, refused twice now, on the same unreachable route.
+- Eddie Myers 1994-95 and Jacob A. Miers 2008-09, absent from the local *Herald* index, which proves
+  nothing.
+- The three flagged name pairs from earlier passes: Staci/Stacy Kitchens, Carleton Ruminer/Carlton
+  Rumenier, Brittany Ann/Brittany-Ann Wick.
+- A note for whoever set this routine's brief: it still asks for #6, #7 and #8 to be rescued or
+  closed. All three were closed on 18 August. Two of them, `research-1980s` and `research-2020s`,
+  have no merge base with `main` at all, which is the orphan history AGENT-LANDING warns about, so
+  closing them was right and they should not be reopened.
