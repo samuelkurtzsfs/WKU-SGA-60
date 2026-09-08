@@ -18353,6 +18353,13 @@ Resolutions/229, *Paper Towels in Downing University Center Restrooms*, and the
 citation now points there. A second resolution that autumn, 97-13-F, asked for the
 same thing, and the entry now says so.
 
+One thing the new citation does not itself carry: the landing page gives the year
+only, not the day, and the event is dated 4 November 1997. The day is left as it
+stands. It came from a reading of the document when that endpoint still answered,
+the same meeting at which Bill 97-3-F had its first reading, and an endpoint that
+now returns 403 is not evidence against it. Whoever next reaches the PDF should
+confirm it.
+
 That 39 pieces of 1997-98 legislation are digitised while the year carries two
 events is a research gap, not an editorial one. It is left for the decade routine.
 
