@@ -1,3 +1,85 @@
+# 8 September 2026, evening — one pull request, merged after a closed lead was reopened
+
+One pull request was open: #388, the rolling photograph branch, ten lines adding
+a single run-log entry to `data/photo-finds/_archive-gaps.json`. The standing
+instruction still names #6, #7 and #8 as stale; they were closed on 18 August and
+the numbering has run to #388, so that part of the instruction remains spent.
+
+The first thing worth establishing was how far this file can reach. It reaches no
+reader at all: `build.py` copies only `legislation/`, `years.json`, `docs/` and
+`photos/` into `site/`, and `merge_notes.py` loads only `*-notes.json`, so
+`_archive-gaps.json` can travel neither to the site nor into `years.json`. It is
+a message from one run to the next. That does not lower the standard it is held
+to — a false negative in it closes a lead nobody reopens — but it does mean
+nothing in this diff was ever going to reach the public site.
+
+## What held
+
+Twenty-two of twenty-three sampled claims. Against the repository's own data: all
+four presidents the entry names carry a real JPEG; every leader whose role is
+president or regent has a portrait row on an exact year-and-name match across all
+sixty-one years; every year carries at least one photograph. Every officer's year
+and office matched `years.json` exactly.
+
+Trap 2 was the one to press, because the entry calls two men president. Both are
+the student body president rather than a class president: Robert Moore 1977-78,
+Steven Thornton 1978-79. The caption the run found names Moore, Bass, May and
+Murphy, and those four are the 1977-78 executive line for line, which is itself
+good evidence the caption is what it was claimed to be.
+
+The sources were opened rather than taken on trust. The Bass caption is verbatim
+in the 1978 *Talisman*. In the 1979 volume Wicks appears only in the senior
+directory, Young has one text mention and an index line at p. 289 with no
+photograph, and Wilson's three hits are a Spring Sing story and a directory line
+giving his major — correctly refused under the rule against matching on a surname.
+Pulman returns nothing in the 1975 volume, Austin nothing in 1987, and the only
+Millays in 1987 are Beth Ann and Lori Ann, different people. The *Herald*'s
+election-night gallery checks out through its own caption data: four subjects
+named, all four already published, and none of the three names still on the
+search list appearing in any caption.
+
+## What failed, and the rule that comes out of it
+
+Mark Chesnut was logged as returning no hits in the 1981 *Talisman*. He does not.
+That volume's own name index carries `Chesnut, Mark Cameron 234`, a content page
+rather than a directory line, while the OCR of page 234 never repeats his name —
+which is exactly why a full-text search comes back empty. A search miss is not a
+closed lead when the volume prints its own index, because the index is a separate
+finding aid compiled from the page and survives an OCR pass the caption did not.
+The sentence has been rewritten, the lead reopened, and page 234 still needs
+pulling as an image and reading.
+
+## Cut
+
+The entry reproduced the Bass caption verbatim at about thirty words, twice the
+limit. It now paraphrases and keeps the order in which the four subjects are
+named, which was the only part carrying evidential weight: with four names over a
+photograph showing three clear faces, the order is the only guide to which face is
+which. The run was right not to publish it, and right to log it as live rather
+than dead.
+
+Nothing else tripped the checklist. No advance notice written up as a report, no
+committee chair recorded as an officer, no surname match, no changed-surname
+duplicate, no April result filed forward into the wrong year, nothing touching
+the settled facts, nothing about a living person beyond their SGA service, and no
+contributor edit in the diff.
+
+## Counts
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both 0. Sixty-one years,
+1,983 events, 60 people have been president. 2,652 recorded terms of office held
+by 1,811 people, 2,615 of them (98%) carrying an account of what the person did;
+46 people recorded under more than one spelling or name. 297 documents and 1,111
+legislation files. `check_duplicates.py` reports six pairs, all pre-existing on
+`main` and all genuinely separate events: the introduction and the defeat of the
+1992 student regent advisory committee bill nine days apart, the 2003 plus/minus
+objection and the vote three weeks after it, the 1997 designated-driver bill and
+the 1998 distribution notice, the Civil Liberties Union suit and the endorsement
+a month later, and three separate bills filed on 1 September 1991. No merges
+needed.
+
+Nothing is left open. #388 was merged after the correction; the queue is empty.
+
 # 7 September 2026, afternoon — nothing to merge, so the last two merges were audited instead
 
 No pull request was open. The three branches this routine's standing instruction
