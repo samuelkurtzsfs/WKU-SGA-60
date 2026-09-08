@@ -17765,3 +17765,143 @@ files, 4,973 records in the search index.
 
 The wkuherald group above. And the eleven disabled routines remain the owner's
 question, unchanged from the last several passes.
+
+---
+
+# 8 September 2026, overnight — an empty queue, and the reason it is empty
+
+Nothing was merged, because there was nothing to merge. The pull request queue is
+empty: no open pull requests at all. #380 was the last, and the previous pass
+merged it at 21:35. The three from 4 August named in the standing brief, #6, #7
+and #8, were closed on 18 August and are still closed; the brief remains out of
+date on that point and nothing is rotting.
+
+## Why the queue is empty
+
+The research is not stopping. It is going straight to main.
+
+Four content commits landed on main in the ten hours before this pass, none of
+them through a pull request and none of them reviewed before publishing:
+a7cae92f, 36867d81 and a080e73b, together with the merge bba0f3cc. They are
+authored `Sam Kurtz` rather than `SGA 60`, but the cadence gives them away — a
+research commit followed within a minute by a night-log commit, hour after hour
+around the clock. Main auto-deploys, so each of these was on the live site
+before anything read it.
+
+That is the finding of this pass, and it matters more than any single entry. The
+editorial gate is not being failed, it is being bypassed. Everything below is a
+review done after publication, which is the wrong order.
+
+## What went out unreviewed, read now
+
+It holds up. This is careful work, and the review found nothing that had to be cut.
+
+**Horace Johnson, removed, correctly.** He had been carried as a 1995-96
+executive on one *Herald* letter. The index of that issue was opened this pass
+and it does carry the letter: Webb, Tracie, "Don't Call Horace Johnson, Kristen
+Miller 'Hair-brained'" (*Herald* 71:38, 13 Feb 1996). But the letter is the only
+thing that ever put him in SGA, the page reads campus police Chief, and the 1993
+*Talisman* labels his photograph Public Safety Director. He was never in student
+government. Kristen Miller, named in the same sentence, is properly retained as
+Public Relations Director.
+
+**Four portraits published, all four sound.** Each is a *Herald* People Poll
+frame, and a People Poll interviews any student who passes, so a name under a
+face proves a name, not an officer. The test that settles it is class-year
+arithmetic against SGA's own record, and all four pass:
+
+- Darron Brawner, elected a freshman representative in autumn 1992, captioned
+  "Calhoun freshman" on 15 April 1993. Same year, same standing.
+- Steven Graham, congratulated for perfect attendance on 3 December 1996,
+  captioned "Guthrie sophomore" a year later. A freshman senator.
+- Garrett Blincoe, on the roll of 17 September 1996, captioned "Bardstown
+  senior" in August 1998. A sophomore in 1996-97.
+- Jason Sikes looked at first like the exception, because a poll label of
+  February 1994 calls him a freshman when SGA's minutes have him in 1992-93. He
+  is not. The routine anchored him independently and recorded the discrepancy
+  instead of smoothing it: the *Herald* of 12 January 1993 captions him "Bowling
+  Green freshman", which is the right year, and by autumn 1993 the paper calls
+  him a sophomore. The February 1994 label conflicts with the *Herald*, not with
+  SGA. No second Jason Sikes appears in 799 digitised issues.
+
+**The staging discipline held.** Two crops the routine could not prove — Keanan
+Noel Cortney, where the surname is spelled Cortney in SGA's minutes and Courtney
+on the composite, and Heather Francis — were flagged FOR THE EDITOR and left in
+`data/photo-finds/`. Both were checked this pass: neither is in `photos.json`,
+and no page in the built site references either file. Nothing unproved reached a
+reader. That is the pipeline working as intended.
+
+## Verified at the source
+
+Eleven citations opened and read this pass.
+
+Five TopSCHOLAR records resolve to exactly the volume, issue and date their
+labels claim: 7835 is *Herald* 68:52 of 15 April 1993, 7857 is 69:37 of 15
+February 1994, 9079 is 74:2 of 27 August 1998, 7960 is 73:28 of 9 December 1997,
+2959 is 71:38 of 13 February 1996. No mis-cited record among them.
+
+## The wkuherald group, closed
+
+The last pass could not reread the wkuherald.com citations because the site
+refused every request. It is answering again. All 143 distinct wkuherald.com
+URLs cited in `photos.json` were requested this pass and all 143 returned 200:
+no dead citation anywhere in that group. Six article pages were then read for
+content and every one names its subject, the best of them the group photograph
+that captions Andi Dahmer, Kara Lowry and Conner Hounshell together, which is
+the picture three separate officers are cut from. That item is closed.
+
+## Nine people the site publishes twice
+
+This is pre-existing rather than new, and it is the most useful thing this pass
+found. `data/name-aliases.json` registers 81 spellings as one person. Nine more
+pairs are not registered, and in each of them the photograph agent has already
+attached the *same portrait file* to both names — so the archive asserts one
+person in `photos.json` and renders two on the site, with two officer pages and
+two roster rows apiece:
+
+    Matthew Winiger / Matthew Wininger      Page Settles / Paige Settles
+    Nolan Miles / Noland Miles              Brittany Ann Wick / Brittany-Ann Wick
+    Staci Kitchens / Stacy Kitchens         Molly Ricke / Molly Ricky
+    Marsha L. Sanner / Marsha Sanner        Carleton Ruminer / Carlton Rumenier
+    Anna McAvoy / Anna Rose McAvoy
+
+The people count of 1,817 is inflated by nine for this reason.
+
+They were deliberately not merged this pass. Three are pure formatting — a
+hyphen, a middle initial, a middle name — and would be safe. The other six are
+one-letter spelling differences, which is exactly the shape that produced the
+Lodmell sisters, two real people any similarity check calls one. CLAUDE.md says
+to flag spelling doubts rather than fix them, and the alias file says in its own
+note that adding a pair asserts the two are the same human and should be checked
+first. Nine assertions made unwatched and unchecked is not a trade worth taking
+to save nine rows. Each pair needs one source, and then it is a minute's work.
+
+## Checks
+
+`build.py` clean. `check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py`
+returns the same six pairs it has returned for weeks, and all six are properly
+distinct: four are an introduction and its later outcome, and two are same-day
+1991 bills that CLAUDE.md's own rule keeps apart. Nothing merged.
+
+One observation, not acted on. 155 photograph citations end in a bare image
+grade — `(good)`, `(medium)`, `(low)` — and these do render publicly, on the
+individual officer pages, though not on the year pages. They read as a note to
+the cataloguer rather than a citation. The other 429 ending in `(only picture
+found)` are worth keeping, since that tells a reader something true. Left alone
+because it is cosmetic, long-standing and a house convention the owner may have
+chosen on purpose.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,653 terms of office
+held by 1,817 people, 2,615 of them (98%) with an account of what the person
+did. 41 people recorded under more than one spelling. 297 documents, 1,111
+legislation files, 4,972 records in the search index.
+
+## Still open
+
+The nine unregistered name pairs above, each needing one source.
+
+And the bypass. While research commits directly to main, no pass of this routine
+can be a gate, because everything it would review is already published. The
+eleven disabled routines remain the owner's question, unchanged.
