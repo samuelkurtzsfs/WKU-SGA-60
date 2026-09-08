@@ -18141,3 +18141,32 @@ warning by name and refused to guess, which is the rule working.
 And the bypass, unchanged. While research commits directly to `main`, no pass of this routine can be
 a gate, because everything it would review is already published. Tonight that cost two hold-list
 decisions and one deleted image, all recoverable. It will not always be.
+
+## Addendum, written while this pass was still running
+
+Three more commits reached `main` during the review, publishing ten further portraits out of the
+2012 *Talisman* — a volume the routine's own note says nobody had opened. Four of them are cuts
+from **SGA's own group photograph** at p. 386, which prints a full left-to-right row key, and the
+reasoning checks the key against the sexes in the frame and against the portrait of Kendrick Bryan
+the archive already holds. That is the strongest identification this project makes and the person
+tie is inherent in the picture. No objection to those four.
+
+The other six — Julia Payne, Sarah Hazelip, Brenna Duncan, Jonathon Tabor, Katie Martin and Lucy
+George — are class-grid cells, and they are the weaker half. The cell is proved in every case by
+alphabetical order and the row's sex pattern. What is missing is the second test that **all
+twenty-eight** faces from the all-volumes sweep carried a few hours earlier: an index line or an
+ASG page showing the student in the grid is the SGA person of that name. Katie Martin is the
+partial exception, being in the graduate section and recorded as Senator for Graduate Students,
+which is consistent but is not a citation. Katie Martin, Julia Payne and Lucy George are names with
+a real collision risk in a book that size.
+
+**They are not cut.** The 2012 volume is not on archive.org — `talisman2012west` returns 503 — so
+the back index could not be opened from here, and CLAUDE.md is explicit that a miss proves nothing
+and must never be the grounds for cutting. The work owed is now written into `_archive-gaps.json`
+as a verification owed, naming the six, the record to open (`dlsc_ua_records/8897`) and exactly what
+to read. One thing to settle while there: Jonathon Tabor and Lucy George are filed to 2009-10 off an
+underclassmen grid covering 2011-12, which works only if that grid runs as far as juniors.
+
+The standard slipped inside four hours, on the same night, in the same file. That is worth naming
+plainly: the sweep that produced the twenty-eight set a very high bar and the 2012 pass did not
+clear it.
