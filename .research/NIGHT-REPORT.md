@@ -18285,3 +18285,148 @@ end, and the rule against cutting on a failed search exists for exactly this.
   closed. All three were closed on 18 August. Two of them, `research-1980s` and `research-2020s`,
   have no merge base with `main` at all, which is the orphan history AGENT-LANDING warns about, so
   closing them was right and they should not be reopened.
+
+# 8 September 2026, midday — an empty queue, and four citations that pointed at the wrong document
+
+No pull request was open. `gh` is not installed in this container, so the
+instruction's gate test could not be run as written; the routes AGENT-LANDING
+describes both work, and `git push --dry-run` returned a new branch, so this was
+a full pass and not a review-only one. The stale #6, #7 and #8 in the standing
+brief were closed on 18 August and the numbering has since run past #385.
+
+`research-photos` again shows as one commit ahead of `main`. It is not. Its tip
+is the head of #384, which was squash-merged at 09:22, and the entry it adds to
+`_archive-gaps.json` is on `main` already; a two-dot content diff between the two
+branches is empty. Every other `research-*` branch is one of the 4 August
+snapshots with no merge base, which AGENT-LANDING says to leave alone. Nothing
+anywhere is waiting to be landed.
+
+## What was checked instead
+
+With no diff to review, the pass went looking for a class of error the per-year
+routines cannot see, because it only shows up when the whole file is read at
+once: a citation whose label names one document and whose URL fetches another. A
+reader who clicks through lands on something that does not say what the entry
+says, which is the quietest way for this archive to lose credibility. Five
+citations out of the 530 that carry a legislation number were mismatched. Four
+were real errors; all four are fixed here, and each was settled by reading the
+document rather than by reasoning about the numbering.
+
+## What was wrong, and is now fixed
+
+**Bill 33-24-S, published twice under the wrong number (2023-24).** WKU's own
+server stores the spring 2024 Organizational Aid bill as `bill_33_23_s.pdf`, and
+a bill genuinely numbered 33-23-S — Funding for Bike4Alz Team #11, read
+21 and 28 February 2023 — exists in the 2022-23 session under the same filename.
+Two citations had taken the number off the filename. The document itself settles
+it: it reads *Bill 33-24-S: Organizational Aid Funding Spring 2024*, first
+reading 3/12/24, second 3/28/24. Karley Solorzano's entry carried it twice, once
+under each number, so the wrong one was removed rather than relabelled; Hannah
+Evans's was relabelled. The five citations that name 33-23-S for the Bike4Alz
+bill point at the 2022-23 file and are correct — they were left alone.
+
+**A constitution bill that was the bylaws bill (2023-24).** Hannah Evans carried
+two citations to the same file, `bill_9_23_f.pdf`, under two different titles.
+The file is Bill 9-23-F, *A Bill to Amend the Bylaws*, read 7 and 14 November
+2023. The constitution bill of that pair is 8-23-F, and its authors are Meghan
+Pierce, Samantha Bodemann, Hannah Evans and Joel Hornback — so the citation was
+repointed at 8-23-F rather than deleted. Bodemann's profile already described the
+two bills correctly and needed nothing.
+
+**Bill 32-17-F cited to Bill 11-17-F (2017-18).** Kenan Mujkanovic's senate entry
+made two claims — that he sat on the organizational aid committee, and that he is
+among the contacts on Bill 32-17-F — under a single source whose label named one
+bill and whose URL fetched the other. Both claims are true and each is proved by
+a different document: 11-17-F lists him as *Member of Organizational Aid,
+Senator*, and 32-17-F lists him as *Senator-At-Large* among its contacts. The
+citation was split in two, matching how his officer entry for the same year
+already cites them. The four other senators sourced to 11-17-F — DeBord, Huffman,
+Luckett, McCormick — are all on its contacts list and were correct as they stood.
+
+**"One of only two pieces of legislation from the year" (1997-98).** This was
+false, and it was the only claim of its kind in the file. The digitised SGA
+collection holds 31 resolutions and 8 bills from the 1997-98 academic year — 97-1-F
+through 97-24-F and 98-1-S through 98-19-S. The sentence is cut. The entry's
+citation also pointed at a file endpoint named `sga_res_94_9_f.pdf`, which returns
+403 and reads as a 1994 document; the resolution is real and its landing page is
+Resolutions/229, *Paper Towels in Downing University Center Restrooms*, and the
+citation now points there. A second resolution that autumn, 97-13-F, asked for the
+same thing, and the entry now says so.
+
+One thing the new citation does not itself carry: the landing page gives the year
+only, not the day, and the event is dated 4 November 1997. The day is left as it
+stands. It came from a reading of the document when that endpoint still answered,
+the same meeting at which Bill 97-3-F had its first reading, and an endpoint that
+now returns 403 is not evidence against it. Whoever next reaches the PDF should
+confirm it.
+
+That 39 pieces of 1997-98 legislation are digitised while the year carries two
+events is a research gap, not an editorial one. It is left for the decade routine.
+
+## A defect I thought I had found, and did not
+
+Partway through, a check on the seventy-eight portraits carried into adjacent
+years on 7 September appeared to show 257 more portraits published under a year
+the cited Talisman volume does not cover, without saying so. Reading the labels
+killed it. Those are senior and student portraits marked "(only picture found)",
+each citing the volume and page that actually holds the face — a 1965 Talisman
+portrait of a 1966-67 officer is the right person from the book that pictures
+them, and the label says which book. Nothing is misrepresented. The "reused for"
+wording belongs to the officer-group carries, which are a different thing, and
+all of those do carry it. Worth writing down because the check looked damning and
+was wrong, and the next pass will run into the same pattern.
+
+The nine people whose portrait is published twice in one year were also checked
+against `name-aliases.json`. Eight are linked. The ninth, Brittany Ann /
+Brittany-Ann Wick, is one of the three pairs deliberately left flagged on
+8 September because the minority spelling rests on unverified OCR. That is the
+documented decision, not an oversight, and it stands.
+
+## The same check run across the Herald citations, which came back clean
+
+The mismatch hunt was worth running against the other half of the archive's
+sourcing. Every citation pointing at a `dlsc_ua_records` issue whose label also
+prints a day, month and year was compared against that record's own date in
+`herald-index-full.json`: 1,159 of them. One disagreed, and it is not an error —
+"SGA Meeting Minutes, 13 Feb 1969; College Heights Herald 48:18, 20 Feb 1969" is
+a compound label whose first date belongs to the minutes and whose URL correctly
+fetches the issue that reported them. So the Herald layer is sound, which is the
+work of #377 and #379 holding up under a test they were not written for. The
+mismatches were confined to legislation, where a number in a filename can be
+mistaken for the number of the bill.
+
+## Traps
+
+The four fixes add no new fact about anybody: each one repoints a citation at the
+document that already proved the claim, or cuts a claim outright. No advance
+notice was written up as a report — the one entry in this diff that rests on a
+contents listing, the February 1998 designated-driver notice, already says so
+itself and was not touched. No committee chair promoted to officer, no author
+recorded as a member: Mujkanovic's two roles are each taken from the document
+that names them. Nobody matched by surname. No changed surname, no new person, no
+election result filed forward, nothing near a settled fact. No contributor commit
+in this diff.
+
+## Checks
+
+`build.py`, `check_data.py` and `check_contrib.py` all clean, before and after.
+`check_duplicates.py` reports the same six pairs as last night; all six were read
+again and all six kept, for the reasons already recorded — four are a proposal and
+its later vote or defeat, two are same-day bills.
+
+## Counts
+
+61 years, 1,983 dated events, 60 people who were president. 2,652 recorded terms
+of office held by 1,811 people, 98% of them carrying an account of what the person
+did. 46 people recorded under more than one spelling. 297 documents and 1,111
+legislation files in the built site.
+
+## Still open
+
+- The 1997-98 legislation gap: 39 digitised pieces, two events written.
+- The six 2012 *Talisman* grid cells, unchanged, and the Kappler issue PDF —
+  both still behind routes this container cannot travel.
+- Eddie Myers 1994-95 and Jacob A. Miers 2008-09, absent from the local *Herald*
+  index, which proves nothing.
+- The three flagged name pairs: Staci/Stacy Kitchens, Carleton Ruminer/Carlton
+  Rumenier, Brittany Ann/Brittany-Ann Wick.
