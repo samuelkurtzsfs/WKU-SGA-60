@@ -176,5 +176,15 @@
    "label": "Talismans 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987 and 1988; archive.org for 1980, 1981, 1986 and 1987, TopSCHOLAR through the Wayback route for the rest",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/408"
   }
+ },
+ {
+  "name": "Betsy Davis",
+  "year": "1984-85",
+  "kind": "candidate found on a WKU class composite and cut",
+  "fact": "Matched to an Elizabeth Davis on UA61/1 WKU Nursing Class 1996, twelve years after her SGA service. The nickname maps but the span does not, and Davis is a common surname. Not cut. CONTEXT: this came out of a sweep of every WKU class composite on TopSCHOLAR, 150 records and 4,429 roster names, run against all 796 people in the nine block worklists on 7 September 2026. The composites are UA60/5 dental hygiene 1972-2015 and UA61/1 nursing 1966-2011, plus the UA12/2/16 Spirit Masters class booklets 2011-2018, the UA61/16 physical therapy Class of 2016 and the UA60/5/1 dental hygiene scrapbooks. The full inventory is in _archive-gaps.json.",
+  "src": {
+   "label": "WKU class composites on TopSCHOLAR, UA60/5 and UA61/1",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2530"
+  }
  }
 ]

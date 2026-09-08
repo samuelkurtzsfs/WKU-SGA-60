@@ -429,5 +429,31 @@
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
   },
   "quality": "good"
+ },
+ {
+  "year": "2013-14",
+  "name": "Alexis Baker",
+  "file": "2013-14-alexis-baker.jpg",
+  "why": "A colour studio headshot, 414 by 616 pixels, cut at native resolution from the scanned page. This is a proper commissioned portrait, not a crop out of a crowd, and it is the best-quality frame the archive holds for anyone in this block's committee chairs.",
+  "caption_quote": "Alexis Baker / Spirit Master",
+  "how_identified": "WKU Archives UA12/2/16, WKU Spirit Masters Class of 2014-2015, TopSCHOLAR dlsc_ua_records/8499. The booklet gives each member a facing page of their own: the portrait on the outer half, and on the inner half the member's name set as the heading in bold with the role Spirit Master beneath it, then a biography. Hers is the left half of the fifth spread, headed Alexis Baker. There is one photograph and one name on that half page and nothing to count or infer. The other half of the same spread is Taylor Bowling, whose own name heads his own portrait, so the pairing cannot slide.",
+  "identification_reasoning": "Both halves of the identification are carried by the booklet itself. THE FACE: the name is printed as the heading of her own page beside her own photograph. THE PERSON: her printed biography ends by listing what she was involved in, and the last item is Student Government Association. It also says she is a junior from Bowling Green, a first-year Spirit Master, majoring in Biochemistry with a minor in Biology and a student in the WKU Honors College, and that she was Vice President of Recruitment for Panhellenic Council and a member of Alpha Delta Pi. A junior in 2014-15 was a sophomore in 2013-14, which is the year the archive records her as Chair of the Campus Improvements Committee, sworn in 29 October 2013 and resigned by 25 March 2014. So the booklet independently puts an Alexis Baker in the Student Government Association in exactly the window the SGA minutes do. The bio calls her Lexie Baker in its running text, which is the short form of the same name and is why a search on the short form alone would have missed her.",
+  "src": {
+   "label": "WKU Archives UA12/2/16 WKU Spirit Masters Class of 2014-2015 booklet, portrait and biography page",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8499"
+  }
+ },
+ {
+  "year": "2013-14",
+  "name": "Alyson Manley",
+  "file": "2013-14-alyson-manley.jpg",
+  "why": "A colour studio headshot, 414 by 614 pixels, cut at native resolution from the scanned page. A commissioned portrait, not a crop out of a group.",
+  "caption_quote": "Alyson Manley / Spirit Master",
+  "how_identified": "WKU Archives UA12/2/16, WKU Spirit Masters Class of 2013-2014, TopSCHOLAR dlsc_ua_records/8498, the tenth spread of the scanned booklet. The booklet's layout is [photograph][text] on the left half and [text][photograph] on the right, so the two portraits on a spread sit at its outer edges and each name heads the text block beside its own face. The left half is headed Alyson Manley and the outer-left photograph is hers.",
+  "identification_reasoning": "THE FACE: the name heads her own half page beside her own photograph. THE PERSON: her printed biography states in so many words that she 'serves as a Student Government Association Senator' - present tense, in the booklet for 2013-14, which is exactly the year the archive records her as a senator from the Senate minutes of 4 February 2014. The bio also gives her as a senior from Morganfield, KY, a first-year Spirit Master reading Public Relations with a Marketing minor, a member of Phi Mu, a Harlaxton student in spring 2013 and a recipient of the World Topper and SGA scholarships. WHY THE HALF MATTERS HERE, AND THE WARNING FOR THE NEXT PASS: the other half of this same spread is ASHLEE MANLEY, who is a different person and already has a portrait in the archive from the 2014-15 booklet. The two are near-identical on paper - both seniors from Morganfield, KY, both Public Relations majors, both Phi Mu, both Student Government Association senators, both student workers in the Admissions Office, both abroad in spring 2013 - and any name-similarity check will want to merge them. They must not be merged, on the same footing as Carlene and Darlene Lodmell. They are separable in the record by office, Alyson a senator and Ashlee Chair of Legislative Research in fall 2013, by minor, Marketing against tourism, by Spirit Master seniority, first year against second, and by where they studied abroad, Harlaxton against the University of Sunderland. They are also plainly two different faces, and the portrait already filed as Ashlee Manley is the right-hand photograph of this same spread, not this one.",
+  "src": {
+   "label": "WKU Archives UA12/2/16 WKU Spirit Masters Class of 2013-2014 booklet, left half of the tenth spread",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8498"
+  }
  }
 ]

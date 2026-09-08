@@ -732,5 +732,15 @@
   "year": "2002-03 to 2007-08",
   "checked": "TWO MORE SOURCES CLOSED. univ_org, the University Organizations collection and the sibling of stu_org, holds 193 downloadable items and only 34 of them fall in 2001-2009: every single one is UA62/3, the WKU Small Business Development Center's monthly newsletter for 2007, 2008 and 2009, which is a business-outreach publication with no students in it. Nothing at all is filed for 2001-2006. A Century of Spirit, WKU's thirteen-section centennial publication of 2006, was opened at its two likeliest sections, Student Life (record 154, article 1152) and the section covering the campus master plan and the 100 Hours of Life on the Hill photo essay of 13-17 September 2006 (record 161, article 1158). Both are historical essays by the University Archivist with a thin text layer and no name-keyed photographs; neither names anyone on this block.",
   "why": "The 100 Hours section looked like the one thing that might photograph students during the undigitised autumn 2006 semester. It does not name them. WHAT IS NOW ON DISK for the next agent, all outside /tmp: ~/Desktop/SGA60 photo hunt/_sga-seconds-2002-2008/ holds 47 issues of SGA's own newsletter named by date, 26 MB. ~/Desktop/SGA60 photo hunt/n0207c-plates/ holds the Phi Mu 2002-03 composite at 3303 by 2450 and the Dental Hygiene Class of 2006 plate at 4300 by 3420, the two plates this pass cut from. ~/Desktop/SGA60 photo hunt/_herald-index-2002-2009/name_labels_2002-2009.jsonl is the new harvest: 65,839 bare-personal-name text lines from all 375 staged Heralds 2002-2009, each with its bounding box, its type height, and the text directly above and below it. That last file is reusable on any block whose people appear in these years, and it is the thing to grep before opening a page."
+ },
+ {
+  "name": "Jamie Mann",
+  "year": "2006-07",
+  "kind": "candidate found on a WKU class composite and cut",
+  "fact": "Matched to a Jamie Mann on UA61/1 WKU Nursing Class 1983, twenty-three years before her SGA service. Not the same person. CONTEXT: this came out of a sweep of every WKU class composite on TopSCHOLAR, 150 records and 4,429 roster names, run against all 796 people in the nine block worklists on 7 September 2026. The composites are UA60/5 dental hygiene 1972-2015 and UA61/1 nursing 1966-2011, plus the UA12/2/16 Spirit Masters class booklets 2011-2018, the UA61/16 physical therapy Class of 2016 and the UA60/5/1 dental hygiene scrapbooks. The full inventory is in _archive-gaps.json.",
+  "src": {
+   "label": "WKU class composites on TopSCHOLAR, UA60/5 and UA61/1",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2530"
+  }
  }
 ]
