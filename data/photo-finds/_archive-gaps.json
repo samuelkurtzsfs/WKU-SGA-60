@@ -976,5 +976,15 @@
    "label": "College Heights Herald, 17 Feb 2009",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6721"
   }
+ },
+ {
+  "kind": "lead closed: article read, no photograph exists",
+  "name": "Lisa Kappler chief justice resignation, retrieved via Wayback",
+  "year": "2008-09",
+  "detail": "Followed the editor's pass recipe (web.archive.org/web/<timestamp>id_/<the blocked viewcontent.cgi URL>) and it worked: the snapshot taken 21 Jul 2024 (timestamp 20240721095749) delivered the full issue PDF, 13,418,383 bytes, opening with %PDF-1.7. Extracted with pymupdf (installed fresh into this container; neither pymupdf nor pdftotext nor any PDF CLI was actually present despite SGA-60-AGENT-INFO.md's note that PyMuPDF is installed). The story is on page 4 of the PDF (printed 'Page 3'), headline 'SGA chief justice resigns' by Mary Barczak, confirming the text already summarized in this file: Kappler resigned 12 Feb 2009, President Kayla Shelton needed a replacement before the 24-25 Feb student regent special election, Executive VP Skylar Jordan and associate justice Corey Bewley commented. But there is no photograph attached to it: every image on the page was located by bounding box (15 raster images total) and every one falls either to the right of x=460 (the adjoining Relay For Life sidebar and a financial-aid photo) or below y=497 (the stimulus-bill story further down the page); the Kappler article's own text occupies only x=44-455, y=92-490, and no image bbox overlaps that region. It is a text-only story. This lead is closed, not just retried: the PDF is now provably readable from this container, and it provably contains no Kappler portrait. Do not re-open it looking for an image that was never there.",
+  "src": {
+   "label": "College Heights Herald 84:36, 17 Feb 2009, p. 3",
+   "url": "https://web.archive.org/web/20240721095749id_/https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=7724&context=dlsc_ua_records"
+  }
  }
 ]
