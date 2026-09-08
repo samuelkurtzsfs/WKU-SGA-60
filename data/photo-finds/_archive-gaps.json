@@ -946,5 +946,15 @@
    "label": "UA12/2/2 Talisman, Vol. 83 (2012)",
    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8897"
   }
+ },
+ {
+  "kind": "run confirms the queue is empty, one lead left dangling",
+  "name": "8 September 2026 photograph run",
+  "year": "",
+  "detail": "Checked every priority in order before searching for anything new. All four named presidents (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) already carry portraits. Every president and student regent in years.json has one. Cross-referencing organization.executive and organization.senate.officers against photos.json leaders turned up 221 officer rows with no portrait, but 216 of those are already named in _officers-truly-missing-2026-09-06.json, i.e. already hunted and closed. Every one of the 61 years already carries at least one photograph (a leader portrait or a years[] entry), so the general-photograph priority is also satisfied. The five rows not yet in the truly-missing list turned out to be already closed elsewhere in this file under different framing: Michael R. Klein 1966-67 is covered by the 1966-1970 Talisman sweep (SOURCE CLOSED entry above), and Lane (Caroline) Simpson 2016-17 by the wku.edu/img_facstaff entry and the Simpson duplicate-account entry. Eddie Myers 1994-95 and Jacob A. Miers 2008-09 were not found in the local Herald index (data/herald-index-full.json), which per CLAUDE.md is not evidence of absence and is left open for a future run with TopSCHOLAR access to spare. One new lead: the Herald of 17 Feb 2009 (dlsc_ua_records/6721, 'Student Government Association Chief Justice Resigns - Lisa Kappler') is a resignation story about the same Lisa Kappler on the 2008-09 officer list (recorded there as Clerk, Judicial Council, though the Herald headline calls her Chief Justice) and might carry a photograph; the issue PDF (viewcontent.cgi?article=7724&context=dlsc_ua_records) returned 403 on the one attempt this run, not yet retried through the Wayback route (see THE WAYBACK ROUTE INTO TOPSCHOLAR entry above). No new portraits added; data/photos.json and data/photos/ are unchanged.",
+  "src": {
+   "label": "College Heights Herald, 17 Feb 2009",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6721"
+  }
  }
 ]
