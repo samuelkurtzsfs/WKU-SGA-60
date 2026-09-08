@@ -1054,5 +1054,39 @@
    "label": "1974 Talisman, p. 413, freshman class portraits",
    "url": "https://archive.org/details/talisman1974west"
   }
+ },
+ {
+  "year": "1975-76",
+  "name": "Patty Campbell",
+  "file": "1975-76-patty-campbell.jpg",
+  "width": 224,
+  "height": 290,
+  "quality": "good",
+  "why": "Class portrait cut at native resolution from the archive.org scan of the 1974 Talisman, 3122 by 4195 pixels a page. Not enlarged.",
+  "caption_quote": "PATTY CAMPBELL",
+  "how_identified": "1974 Talisman, printed p. 412, the freshman portrait grid (archive.org talisman1974west, image leaf n415; the folio 412 and the word Freshmen are printed at the foot of the page). Nine portraits across, thirteen rows deep, 117 names set in ONE COLUMN down the outer margin in blocks of nine against each grid row, alphabetical left to right. Hers is the 104th of the 117, so fifth in the twelfth row. Proved by sex before cutting: SUSAN S. CALLOWAY, MONICA L. CALVERT, DIANA A. CAMPBELL, KERMIT P. CAMPBELL, PATTY CAMPBELL, JOSEPH M. CANNON, WILLIAM A. CANNON, CAROLYN S. CAPPS, VIRGINIA A. CAPPS reads F F F M F M M F F and the printed row is exactly that, the single man at position four separating her from the two women before him and the two men after her. The volume's own index confirms the page: 'Campbell, Patricia Ann 412'.",
+  "identification": "proved",
+  "identification_reasoning": "Two indexes close this. The 1974 index puts 'Campbell, Patricia Ann' on p. 412, the page this portrait is on, and there is no other Patricia or Patty Campbell in it - the neighbouring Campbells are Joy Yvonne, Karen Lee, Kathryn R., Kenneth Keith, Kenneth R., Kermit Dale, Kermit Porter, Melissa Jean, Nanette and Paul Browning. The 1976 index then reads 'Campbell, Patricia Ann 63, 267', and p. 63 of that volume is the ASG attendance roll that is the archive's source for Patty Campbell as an ASG member in 1975-76; p. 267 is the sorority page whose caption names her as an Associated Student Government representative alongside Sherry Casebier. Same woman, same index name, in the same book that records the office. The years fit: a freshman in the 1974 book entered in the autumn of 1973, making her a junior in 1975-76. NOT the Patty Lee King Campbell of the 1980 index, who is a different and later person.",
+  "src": {
+   "label": "1974 Talisman, p. 412, freshman class portraits",
+   "url": "https://archive.org/details/talisman1974west"
+  }
+ },
+ {
+  "year": "1974-75",
+  "name": "Deborah DeJarnette",
+  "file": "1974-75-deborah-dejarnette.jpg",
+  "width": 218,
+  "height": 282,
+  "quality": "good",
+  "why": "Class portrait cut at native resolution from the archive.org scan of the 1974 Talisman, 3128 by 4214 pixels a page. Not enlarged.",
+  "caption_quote": "DEBORAH J. DEJARNETTE",
+  "how_identified": "1974 Talisman, printed p. 415, the freshman portrait grid (archive.org talisman1974west, image leaf n418; the word Freshmen and the folio 415 are printed at the foot of the page). Nine portraits across, thirteen rows deep, 117 names set in ONE COLUMN down the outer margin in blocks of nine against each grid row, alphabetical left to right. Hers is the thirty-eighth of the 117, so second in the fifth row. Proved by sex before cutting: MELODIELLEN DEAN, DEBORAH J. DEJARNETTE, GLORIA A. DELLARIO, MARIE A. DEMAREE, CYNTHIA A. DENHAM, WILMA K. DENHAM, LYNN S. DENNING, BETTY J. DENNIS, DANIEL F. DENNISON is eight women followed by one man, and the printed row is eight women followed by one man. Row four above it, DEBRA J. DAVIS, DONALD L. DAVIS, JO ANN J. DAVIS, KAREN DAVIS, RICHARD G. DAVIS, TOM A. DAVIS, WALLACE D. DAVIS, WARD G. DAVIS, JOHN R. DAY, reads F M F F M M M M M and the printed row is exactly that.",
+  "identification": "proved",
+  "identification_reasoning": "The archive's source for her ASG membership is the Alpha Xi Delta chapter page of the 1975 Talisman, which names DeJarnette, Mary Pat Swift, Jennifer Rapp and Debbie Johnson as representatives for the Associated Student Government. That page is printed p. 249, and the 1975 volume's own back index reads 'Dejarnette, Deborah Jo 249' - the book itself naming the ASG representative as Deborah Jo DeJarnette. The 1974 grid labels this portrait DEBORAH J. DEJARNETTE, the same given name and middle initial. She is the only Deborah DeJarnette in the run; the other DeJarnettes indexed are Marlene and Timothy, and a Rebecca Kaye Dejarnatt spelled differently. The years fit: a freshman in the 1974 book entered in the autumn of 1973, making her a sophomore in 1974-75.",
+  "src": {
+   "label": "1974 Talisman, p. 415, freshman class portraits",
+   "url": "https://archive.org/details/talisman1974west"
+  }
  }
 ]
