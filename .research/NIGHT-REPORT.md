@@ -80,6 +80,22 @@ needed.
 
 Nothing is left open. #388 was merged after the correction; the queue is empty.
 
+## Still open
+
+The attribution footer this platform appends landed on the review comment on
+#388, joining #337 and #340. The behaviour has changed since 3 September but not
+in a way that helps: direct GitHub REST is no longer refused with a 403, and a
+PATCH of the comment body now returns 200, but the footer is re-appended on the
+way out, so a write that sends 4,631 clean characters stores 4,689 with the line
+back on the end. It still cannot be removed from inside these containers, and
+the MCP set still has no tool for editing a comment. **That comment needs
+deleting by hand.** The pull request bodies on #388 and #389 were both stripped
+successfully, and the commits, both merge commits on main and this log are clean.
+
+The gated `viewcontent.cgi` endpoint is unchanged, as is the 1993-94 to 2009-10
+gap in year photographs and the 431 legislation files with no author recorded.
+Page 234 of the 1981 *Talisman* is the one new lead this pass produced.
+
 # 7 September 2026, afternoon — nothing to merge, so the last two merges were audited instead
 
 No pull request was open. The three branches this routine's standing instruction
