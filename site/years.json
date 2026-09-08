@@ -26494,10 +26494,10 @@
     {
      "date": "1997-11-04",
      "title": "Paper towels for the Downing University Center",
-     "body": "Resolution 97-9-F asked that paper towels be placed in the restrooms of the Downing University Center. It is one of only two pieces of legislation from the year in the digitised SGA collection.",
+     "body": "Resolution 97-9-F asked that paper towels be placed in the restrooms of the Downing University Center. A second resolution that autumn, 97-13-F, asked for the same thing.",
      "src": {
-      "label": "SGA Records: Resolution 97-9-F, 4 Nov 1997",
-      "url": "https://digitalcommons.wku.edu/context/sga/article/2023/viewcontent/sga_res_94_9_f.pdf"
+      "label": "SGA Records: Resolution 97-9-F, Paper Towels in Downing University Center Restrooms",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/229"
      }
     },
     {
@@ -46156,10 +46156,14 @@
        "name": "Kenan Mujkanovic",
        "seat": "Senator-at-Large",
        "src": {
-        "label": "SGA Bill 32-17-F, 2017-18 session",
-        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-11-17-f.pdf"
+        "label": "SGA Bill 32-17-F, To Support the Removal of the First Reading of Legislation",
+        "url": "https://www.wku.edu/sga/accountability/bill-32-17-f.pdf"
        },
-       "note": "Mujkanovic served on the organizational aid committee and is recorded among the contacts on Bill 32-17-F. His fuller record for the year is under his senate officer entry."
+       "note": "Mujkanovic served on the organizational aid committee and is recorded among the contacts on Bill 32-17-F. His fuller record for the year is under his senate officer entry.",
+       "src2": {
+        "label": "SGA Bill 11-17-F, Funding from the Organizational Aid Appropriations for WKU Habitat for Humanity Campus Chapter and Financial Planning Association",
+        "url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-11-17-f.pdf"
+       }
       },
       {
        "name": "Lauren Pederson",
@@ -52037,14 +52041,10 @@
         "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_14_24_s.pdf"
        },
        "src4": {
-        "label": "SGA Bill 33-23-S, Organizational Aid Funding Spring 2024",
-        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_33_23_s.pdf"
-       },
-       "src5": {
         "label": "SGA Resolution 2-24-S, to Support Expanding Benches or Awnings at Topper Transit Stops",
         "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/res_2_24_s.pdf"
        },
-       "src6": {
+       "src5": {
         "label": "SGA legislation: Bill 33-24-S, Organizational Aid Funding Spring 2024",
         "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_33_23_s.pdf"
        },
@@ -52113,12 +52113,12 @@
         "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_19_24_s.pdf"
        },
        "src3": {
-        "label": "SGA Bill 33-23-S, Organizational Aid Funding Spring 2024",
+        "label": "SGA Bill 33-24-S, Organizational Aid Funding Spring 2024",
         "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_33_23_s.pdf"
        },
        "src4": {
-        "label": "SGA Bill 9-23-F, Bill to Amend the Constitution of the Student Government Association",
-        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_9_23_f.pdf"
+        "label": "SGA legislation: Bill 8-23-F, A Bill to Amend the Constitution of the Student Government Association of Western Kentucky University",
+        "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_8_23_f.pdf"
        },
        "src5": {
         "label": "SGA legislation: Bill 9-23-F, A Bill to Amend the Bylaws of the Student Government Association of Western Kentucky University",
