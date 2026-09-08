@@ -1,6 +1,6 @@
 # Faces proved, people not — for the editor
 
-17 entries covering 16 people are cut, on disk and refused by the merge. Each one is a face a
+18 entries covering 17 people are cut, on disk and refused by the merge. Each one is a face a
 researcher established beyond doubt, attached to a person they could not prove is the same
 person the archive records. The rule here is that identification is absolute, so none of them
 is published and none is thrown away.
@@ -111,6 +111,35 @@ subjects are staggered in depth, and 2014-19 is the block that produced every wr
 this project. One more source of her face settles it either way.
 
 ---
+
+## Cody Cox, Associate Justice 2015-16, Chief Justice 2016-17
+
+**Held for you to decide, 8 September 2026. Not a doubt about the face.**
+
+Crop: `~/Desktop/SGA60 photo hunt/_withheld/2015-16-cody-cox-HELD.jpeg`, 796x1219,
+a studio portrait, one subject, sharp.
+
+**Source.** College Heights Herald, 6 February 2014, page A1. The caption sits
+directly beneath its own frame: "Winchester freshman Cody Cox came out of the
+closet when he was a junior in high school... IAN MAULE/HERALD." That is the
+strongest form of proof this project uses — one name, one frame, caption
+underneath.
+
+**Identification.** He is named Chief Justice in four separate 2016-17 Herald
+reports. The Herald 1993-2019 contains exactly one Cody Cox: this one. A
+freshman in spring 2014 is a junior in 2016-17, which is exactly when he holds
+the office. No second Cody Cox exists anywhere in the corpus to confuse him
+with.
+
+**Why it is held, and it is not an identification problem.** The photograph
+illustrates a front-page feature about him coming out. The face is his and the
+citation would read neutrally — issue, date, page, as every other citation on
+the site does — but a reader who follows the citation lands on that story. He is
+a living private person who did not put that photograph on an SGA page himself.
+That is your call to make and not mine to make quietly.
+
+Say the word and it goes up in one command; say no and I will record it as
+found-and-declined so nobody hunts him again.
 
 # Closed on 8 September 2026
 
