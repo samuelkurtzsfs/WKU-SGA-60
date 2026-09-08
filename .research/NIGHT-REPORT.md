@@ -18382,6 +18382,19 @@ Brittany-Ann Wick, is one of the three pairs deliberately left flagged on
 8 September because the minority spelling rests on unverified OCR. That is the
 documented decision, not an oversight, and it stands.
 
+## The same check run across the Herald citations, which came back clean
+
+The mismatch hunt was worth running against the other half of the archive's
+sourcing. Every citation pointing at a `dlsc_ua_records` issue whose label also
+prints a day, month and year was compared against that record's own date in
+`herald-index-full.json`: 1,159 of them. One disagreed, and it is not an error —
+"SGA Meeting Minutes, 13 Feb 1969; College Heights Herald 48:18, 20 Feb 1969" is
+a compound label whose first date belongs to the minutes and whose URL correctly
+fetches the issue that reported them. So the Herald layer is sound, which is the
+work of #377 and #379 holding up under a test they were not written for. The
+mismatches were confined to legislation, where a number in a filename can be
+mistaken for the number of the bill.
+
 ## Traps
 
 The four fixes add no new fact about anybody: each one repoints a citation at the
