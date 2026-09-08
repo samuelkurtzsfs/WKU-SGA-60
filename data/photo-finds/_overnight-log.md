@@ -331,3 +331,13 @@ It also found that our stored 1993 index has a hole from Seebold to Templeton, l
 
 Also newly usable: **WKU class composites** (Dental Hygiene, Nursing, 2001-2010) are a source class nobody had touched — roster as text on the landing page, plates to 4,300 px, one name one face. Cheap to run against any block.
 - **2026-09-07 18:36** — **1,253 portraits, 1,075/1860 with a face, 785 none, 191 officers without one.** Nothing to land, tree clean, 15 refusals of which fourteen are editor-flagged holds. Launched on the **class composites**, the one genuinely new source class left: WKU programmes deposit annual class plates with the roster as text on the landing page and each portrait carrying its own nameplate, at 4,300 px. One name, one face, no positional reasoning, and far better quality than the newsprint everything else comes from. Only Dental Hygiene and Nursing are known and only one block has been run against them, so the agent is tasked with both halves: find every other programme that deposits composites, and match every roster against all 785 people at once.
+
+### 2026-09-07 19:22 — a source closed three times that was not closed
+
+**1,256 portraits, 1,078/1860 with a face, 782 none, 190 officers without one.** Eight faces from the class composites.
+
+The series turned out to be **four and a half times** what the note claimed — not Dental Hygiene and Nursing 2001-2010 but 1966-2018 across five series and 150 records, 4,429 roster names. Every other WKU record group was swept twice and none deposits class composites: the university photographs a graduating class only where a professional licensing cohort exists. Closed.
+
+**Three of the eight came from the Spirit Masters class booklets, which had been closed three separate times.** All three closures tested the seventy-two executive officers; none tested senators, and one even said in passing that senators might still be worth a look. That is now its own entry in the register: when you close a source, write down WHO you tested it against. An empty result against one population is not an empty source.
+
+**And a caution about trusting a summary.** The run reported five senators missing from years.json. Reading the biographies themselves: two hold up outright, one says 'member' with no seat, and two — Alex Fahnders and Sarah Newton — never mention SGA at all. Recorded for the editor with the exact wording of each, rather than five people added to the archive on a summary line.
