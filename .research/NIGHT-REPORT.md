@@ -18026,3 +18026,118 @@ the Lodmell warning.
 And the bypass, unchanged. While research commits directly to main, no pass of
 this routine can be a gate, because everything it would review is already
 published.
+
+# 8 September 2026, morning — twenty-eight faces off the Talisman grids, checked name by name
+
+No pull request was open; there has not been one for days. Research continues to commit straight
+to `main`, so this pass again audited what is already on the live site rather than gating
+anything. Ten commits landed since the last pass, and between them they published **twenty-eight
+new portraits** and forty-one image files — the largest single addition of faces this project has
+made, and the riskiest category it handles, since CLAUDE.md's rule is that a misidentified face is
+worse than no face.
+
+## The method, and why it survives the obvious objection
+
+Every one of the twenty-eight is a class-portrait grid cell from a *Talisman*, located by counting
+along an alphabetical name block. That is exactly the shape of identification this archive has been
+burned by, and the first read of the published citations made it look worse: they say no more than
+"1974 Talisman, p. 413, freshman class portraits", which is a name in a yearbook and nothing else.
+
+The objection does not survive reading the findings files. Every entry carries an
+`identification_reasoning` field the site never shows, and each one does the two tests that matter:
+it proves the grid cell by the printed row's sex pattern before cutting, and then proves the
+*person* out of the volume's own back index rather than out of the name. The best of them are
+unarguable. **Pat Williams** looked like the wrong-person catch of the night — the caption under
+the cut face reads CHARLES P. WILLIAMS — until the reasoning turned out to be the point: the 1976
+index reads "Williams, Charles Patrick 63, 373", p. 63 is the ASG attendance roll and p. 373 is the
+grid, so the book itself says the ASG member is a man called Charles Patrick and prints him here.
+The two Patricia Williamses in the same index carry no p. 63. **Gayle Sharp** is a man, on the same
+kind of evidence. Neither would have survived a name match.
+
+## Verified at the source
+
+Thirteen claims were opened and read on archive.org, spread across four volumes and both halves of
+the batch. All thirteen hold, several word for word:
+
+- 1976 index, "Williams, Charles Patrick 63, 373", with Patricia Lynn at 306, 373 and no Patricia on p. 63.
+- 1976 index, "Chenault, Sarah Elizabeth 63, 270, 272, 321"; "Parker, Jenny Lu 63, 270";
+  "Palmer, Paul Warren 63"; "Campbell, Patricia Ann 63, 267".
+- 1976 p. 63 is indeed the ASG roll, and it lists Patty Campbell, Sally Chenault and Jane Anne
+  Coverdale among the members; p. 270 names the same three as Associated Student Government
+  representatives.
+- 1973 p. 285, the Kappa Delta page, prints that Janice Berkshire represented the College of
+  Applied Arts to ASG Congress.
+- 1975 p. 284 names Larry Hooks a representative for Ogden College, and its index carries one
+  Larry Hooks against four other Hookses.
+- 1975 index, "Dejarnette, Deborah Jo 249", the Alpha Xi Delta page naming her an ASG representative.
+- 1980 index, "Watson, Debra Elaine 320, 392" — the only Debra, Debbie or Deborah Watson among
+  eleven Watsons, which is the check that carries a common surname; also "Compton, Sheren Lee 344"
+  and "Berryman, Gergory Allen 384".
+
+Nothing was cut. On the traps checklist the batch is clean: no advance notices (these are
+portraits), no chair recorded as an officer, nothing matched on a surname alone, no alias collision
+against `name-aliases.json`, no April election filed forward, nothing touching the settled facts,
+no contributor edit in the diff, and no tool attribution in any of the ten commit messages.
+
+## What was wrong, and is now fixed
+
+**Two people were published straight off the editor's hold list.** `_for-the-editor.md` held
+nineteen frames whose face was proved and whose person was not, to be released one at a time by an
+editor. Sally Chenault and Janice Berkshire were on it, and both went to the live site overnight
+without anyone taking that decision. The right outcome, as it happens: the sweep found the index
+evidence that answers the person question for both, and it is quoted above. But the answer arrived
+by mechanism rather than by decision, and the list was left saying they were still waiting. It now
+records both as closed, with the evidence, so no later pass re-opens them — this is the archive
+that withdrew and restored the LaCivita portrait twice.
+
+**One held image was destroyed.** The new Chenault portrait was written to
+`1975-76-sally-chenault.jpg`, the filename the held Dental Hygiene composite crop already occupied.
+The 220-by-306 composite was gone from disk and its record was describing an image that no longer
+existed. It has been restored from history as `1975-76-sally-chenault-composite.jpg` and the record
+repointed. Nothing is published from it.
+
+**Berkshire's held frame is kept held, and the reason is written down.** The researcher asked the
+editor to choose between the two frames and the merge chose by itself, publishing the smaller. That
+is the right choice and should stay: the held crop is 192 by 275 against the published 74 by 102 and
+a later pass will be tempted by it, but it comes off the WKU Nursing Class of **1971** composite,
+and a woman finishing a nursing class in 1971 is not obviously the senior sitting in 1972-73. That
+tension is why it was held and nothing found since resolves it.
+
+**"(good)" is not a citation.** 114 published portrait credits ended with an internal image-quality
+grade, rendered live as the text of the source link — "1974 Talisman, p. 413, freshman class
+portraits (good)" — which reads as the archive grading its own work in public and tells a reader
+nothing. Stripped from all 114. No fact, label or URL otherwise touched.
+
+Left alone deliberately: 436 credits ending "(only picture found)" and 126 ending "(cropped from a
+group photo)". Both say something true about the image, unlike "(good)", and rewriting 562 public
+credits on one pass's judgement is the sort of unwatched sweep this project has been hurt by before.
+
+## Checks
+
+`build.py` clean. `check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py` returns the same
+six pairs it has returned for weeks: four are an introduction and its later outcome, two are same-day
+1991 bills that CLAUDE.md's own rule keeps apart. Nothing merged.
+
+## Counts
+
+61 years, 1,983 events, 60 people recorded as president. 2,652 terms of office held by 1,811 people,
+2,615 of them (98%) with an account of what the person did. 46 people recorded under more than one
+spelling. 1,284 portrait entries drawing on 1,091 distinct images. 297 documents, 1,111 legislation
+files, 4,966 records in the search index.
+
+## Still open
+
+Seventeen held frames covering sixteen people in `_for-the-editor.md`, down from nineteen and
+eighteen. Each still needs one person with the image open.
+
+The four flagged name pairs from the last pass, unchanged: Staci/Stacy Kitchens, Carleton
+Ruminer/Carlton Rumenier, Brittany Ann/Brittany-Ann Wick, each needing a page opened on
+digitalcommons.
+
+The Hoffmann twins, newly recorded and correctly held: Connie and Astrid, photographed together on
+p. 22 of the 1983 *Talisman* with no left or right in the caption. The routine cited the Lodmell
+warning by name and refused to guess, which is the rule working.
+
+And the bypass, unchanged. While research commits directly to `main`, no pass of this routine can be
+a gate, because everything it would review is already published. Tonight that cost two hold-list
+decisions and one deleted image, all recoverable. It will not always be.
