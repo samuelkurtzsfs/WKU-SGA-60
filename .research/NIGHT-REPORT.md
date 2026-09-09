@@ -1,3 +1,143 @@
+# 9 September 2026 — three faces carried forward, and the source that did not say so
+
+One pull request was open: #392, the rolling photograph branch, thirty-seven
+added lines across `data/photos.json` and `data/photo-finds/_archive-gaps.json`.
+It attached two already-published faces to three further years of the same
+people's service, and logged the run. No events, no new image files, no new
+identification. The standing instruction still names #6, #7 and #8 as stale;
+all three were closed on 18 August and the numbering has run past #390, so that
+part of the instruction stays spent.
+
+Thirty-seven lines is small enough to check whole, so every claim in the diff was
+opened rather than a sample of eight.
+
+## What the diff was really claiming
+
+The practice was not the question. Reusing one portrait across the other years a
+person served is how this archive has always worked: 165 files in `photos.json`
+are already shared between two, three or four year rows. Nor was the identity the
+question. The repository's own `name-aliases.json` already declares `Michael R.
+Klein` and `Michael Klein` one person, and `Edward "Eddie" Myers` and `Eddie
+Myers` one person, and `years.json` carries both links on main with
+contemporaneous sources behind them. What the run added was three rows and a
+sentence of justification for each, and it is the justification that failed.
+
+## The 1993 Talisman index does not confer an office
+
+Both Myers labels said the 1993 *Talisman* index gives Edward Myers as the
+sophomore vice-president in the group photograph on p. 204. The index does not.
+The yearbook's printed index reads `Myers, Edward 204` and nothing else: a page
+number, no office, no class year. The TopSCHOLAR abstract for the volume,
+`dlsc_ua_records/417`, does not name him at all — it lists Student Government
+Association once, among the organisations, with no names under it. Anyone who
+checked the label as written would have found nothing and concluded the archive
+had invented a caption.
+
+The office and the class year are real, but they come from elsewhere, and the
+sentence had quietly welded three documents into one. SGA's minutes of 2 February
+1993 give him the Sophomore Vice-President seat. The *Herald* of 22 April 1993
+reports him a sophomore that spring, and elected junior class president. The
+Talisman index only points at the face. Both labels now say that the index
+identifies the face and leave the identity chain to the minutes that carry it.
+
+That chain is worth stating plainly, because it is stronger than the label was:
+a sophomore in 1992-93 is a senior in 1994-95, and the Fall 1994 membership list
+records him a senior off-campus representative. The correction cost the entry
+nothing and gave it a source that will survive being checked.
+
+## A 1969 portrait described as a 1967 one
+
+The Klein row called the picture his portrait from 1967-68. It is a senior
+portrait from the 1969 *Talisman*, filed in this archive under 1967-68, and the
+label had also dropped the row-position reasoning that makes the face checkable.
+The citation itself holds: TopSCHOLAR describes `dlsc_ua_records/386` as the 1969
+yearbook, pp. 204 to the end, so p. 282 is genuinely inside it. The row now says
+he is the third face in the fifth row and points at the 1967-68 entry, where the
+identification is set out in full against the four names printed there.
+
+## A log line that would have closed a queue that is not closed
+
+The run logged that every one of the 61 years already carries at least one
+photograph. That is true only by way of the leader portraits. Twelve years —
+1993-94 through 1997-98, 2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09 and
+2009-10 — still have no scene photograph of their own in the `years` section of
+`photos.json`. This file reaches no reader; it reaches the next run, which is
+worse in one specific way, because a run that believes the year-photograph queue
+is shut will not reopen it. The line now names the twelve years.
+
+## What held
+
+All four presidents who were missing until August carry a portrait. Every
+president and student regent in `years.json` has a `photos.json` leader entry —
+none missing, checked by cross-reference rather than taken on trust. The Jacob
+Miers dead end is a real dead end: three hits in the full *Herald* index and all
+three are Harriet Miers. Both image files are real JPEGs, correct magic bytes and
+end-of-image markers. The *Herald* issue behind the class-year chain is real,
+dated 22 April 1993, and carries Tungate's election story; TopSCHOLAR notes the
+issue is misnumbered as Vol. 67, No. 54, which is why this archive cites it as
+67:54 — the discrepancy is the printed masthead, not our error.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the five previous nights.
+This diff added no events and created no new pair, and the six stand where they
+stood: four are a proposal and its later vote or defeat, two are separate bills
+taken the same day in September 1991.
+
+## Verdict
+
+Merged, after the three corrections above were pushed to the branch. None of the
+three warranted a deletion. The carry-forwards were right and the reasons given
+for them were wrong, which is the ordinary case for a trim rather than a cut.
+
+## Counts
+
+61 years, 1,984 dated events, 60 people who were president. 2,652 recorded terms
+of office held by 1,811 people, 98% carrying an account of what the person did.
+46 people recorded under more than one spelling. 307 documents and 1,111
+legislation files in the built site, the ten new documents coming from #391
+rather than from tonight's merge.
+
+## Still open
+
+- A lead handed to the 1990s beat, not to photographs: the *Herald* of 22 April
+  1993 has Eddie Myers elected junior class president for 1993-94, unopposed.
+  `years.json` records him that year only as Chairperson of Student Affairs. A
+  sourced office is missing from that organization block.
+- Twelve years want a scene photograph, listed above. The portrait queue is shut;
+  this one is not.
+- Eleven `photos.json` leader rows carry a name that appears nowhere in that year
+  of `years.json`: Tim Irons 1979-80, Marsha Sanner 1980-81, Natalie Croney
+  2003-04, Benjamin Lineweaver and Brittany-Ann Wick 2008-09, Currie Martin and
+  Dave Vickery 2009-10, Lillian Nellans 2017-18, Amanda Harder and Matt Barr
+  2018-19. CLAUDE.md asks for an exact match. None came from this diff and none
+  were touched; they want a pass of their own.
+- The attribution footer is unchanged from the 8 September finding, and this run
+  tested it rather than assuming. The review comment on #392 was written and sent
+  without a footer; the platform appended one anyway. A PATCH of the body still
+  returns 200 and still stores 58 characters more than were sent, with the line
+  back on the end — 4,662 sent, 4,720 stored. **That comment needs the last two
+  lines deleted by hand**, as do the ones on #388, #337 and #340. The merge commit,
+  the branch commits and this log are clean.
+- **This has got worse since the 8th, and the log should say so.** That night
+  recorded the pull request bodies on #388 and #389 as stripped successfully, with
+  only comments resisting. That no longer holds: the body of #393, this report's
+  own pull request, was patched the same way and came back 1,688 characters
+  against 1,630 sent, with the footer and a session link restored. Both surfaces
+  now re-append. Pull request bodies have joined the list that needs a hand:
+  **#393's body wants its last two lines deleted too.** Nothing reaches the
+  published site through either surface, and the commits and this file remain
+  clean, but the claim that bodies can be cleaned from inside these containers is
+  now out of date and should not be relied on by the next run.
+- Carried forward unchanged: the 1997-98 legislation gap; the three flagged name
+  pairs, Staci/Stacy Kitchens, Carleton Ruminer/Carlton Rumenier and Brittany
+  Ann/Brittany-Ann Wick; the Mark Chesnut portrait lead, which still needs the
+  1981 leaf pulled as an image; and the 1987 evaluations entry, which still calls
+  them course evaluations on an inference.
+
+---
+
 # 8 September 2026, evening — one pull request, merged after a closed lead was reopened
 
 One pull request was open: #388, the rolling photograph branch, ten lines adding
