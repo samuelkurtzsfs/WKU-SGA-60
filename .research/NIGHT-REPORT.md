@@ -1,3 +1,105 @@
+# 9 September 2026, midday — the photograph register audited against the Herald's own words
+
+No pull request was open. The photograph branch was merged as #396 at 09:28 and
+reviewed in #397 two minutes later; every other `research-*` branch either has no
+merge base with `main` (the superseded 4 August snapshots, which are not to be
+merged) or is already in. `research-photos` reports two commits ahead of `main`
+only because #396 was squashed; the content diff against it is empty but for the
+night report itself. So there was nothing to merge, and the run went looking for
+work instead.
+
+The previous entry ended with a lesson for the photograph agent: a caption
+verified is not a file verified, and when an article carries several photographs
+the saved file must be checksummed against the frame the caption belongs to.
+That lesson was written from one row. This run applied it to the whole register.
+
+## The method
+
+`data/photos.json` holds 1,307 leader rows. 165 of them cite a bare image file
+rather than an article page, which is a citation a reader cannot check: an image
+URL carries no caption and names nobody. 132 of those are Herald uploads, and the
+Herald's WordPress API returns, for any uploaded image, the caption the paper
+published with it. Every one of the 99 distinct images was queried and its caption
+compared against the name the archive had filed it under.
+
+The first pass looked at the wrong field and appeared to show 54 unsupported
+portraits. That was the method's fault, not the archive's: for images whose
+WordPress title is just the filename, the caption sits in a different field.
+Re-queried properly, the number is four, and all four resolve.
+
+## The result: the register holds
+
+**128 of the 132 rows carry a name that appears in the Herald's own caption.** Of
+the four that did not:
+
+- **Lane Hedrick** and **Logan Hornback** are captioned on a duplicate attachment
+  of the same file. Hedrick's original filename is `web_bosniaportrait_lane_…`
+  and its caption describes her Bosnia internship; Hornback's carries his own
+  quote on being elected a senator. Both single-subject, both confirmed.
+- **Karley Solorzano** is named in the caption, spelled *Soloranzo*. That is a
+  spelling question, not an identification one, and it is flagged below rather
+  than fixed.
+- **Isaac King** shares a frame with Solorzano, and the caption names both, which
+  is what makes two crops of one photograph legitimate here.
+
+## The one repair
+
+Three rows cited a bare image file with the label "(only picture found)" and no
+article, no caption and no name: the portraits of **Katie Stillwell** (2010-11 and
+reused for 2011-12) and **Eric Smiley** (2011-12). Opening the file shows why that
+mattered — it is not a portrait at all but a composite of four studio frames of
+four people in Greek letter apparel, and the archive had cropped two faces out of
+it and published them under two names.
+
+The identifications are correct. The Herald's caption for that composite names all
+four by position, and places Smiley, of Sigma Chi, top left and Stillwell, of Omega
+Pi Alpha, bottom left. The stored crops are those two frames. What was wrong was
+only the citation, which pointed at an image file that proves nothing.
+
+All three now cite the article — 'Greeks comprise more than 40 percent of student
+government', 11 February 2011 — and record the caption's positional evidence, the
+standard the rest of the register already keeps. Nothing was cut. Two portraits
+that a reader could not have checked are now checkable.
+
+## Flagged, not fixed
+
+- **Karley Solorzano / Soloranzo.** The Herald's caption of 19 October 2023 spells
+  the surname *Soloranzo*; `years.json` and the register both read *Solorzano*.
+  One of the two is a typo and the archive's rule is to flag spelling doubts, not
+  to settle them. A second source naming her would close it.
+- **Salvador Leon Golib.** 2022-23 carries *Salvador Leon* as International Senator
+  and *Salvador Leon Golib* as a senate member, as two people, with two portrait
+  files. Both files are crops of the same Herald frame of 24 January 2024 and both
+  labels describe the subject identically, as the only standing figure at the
+  lectern. One photograph cannot hold two people who are each its only standing
+  figure, and the second name reads as the first with a second surname restored.
+  `name-aliases.json` already maps *Salvador Leon* to *Salvador León* but says
+  nothing about *Golib*. This is not merged here: the Lodmell sisters are why this
+  archive does not merge people on a name, and the check wanted is a roster or a
+  Herald report naming both in one breath, or naming only one.
+
+## Still open
+
+The other 33 bare-image citations are WKU directory files keyed by NetID rather
+than Herald uploads, so the API route above does not reach them. Andrew Merritt's,
+checked by hand, is exemplary: its label explains that the university account reads
+*joseph.merritt815* and cites SGA's own archived senate page printing that address
+under his name. The rest were not individually checked this run.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs it reports every night; all six
+were read again and all six stand — four are a proposal and its later vote or
+defeat, two are separate bills taken the same day in September 1991.
+
+## Counts
+
+61 years, 1,984 dated events, 60 people who were president. 2,652 recorded terms of
+office held by 1,811 people, 98% carrying an account of what the person did. 46
+people recorded under more than one spelling. 308 documents and 1,111 legislation
+files.
+
 # 9 September 2026, later — the right article, the wrong frame
 
 One pull request was open: #396, the rolling photograph branch, twelve new rows
