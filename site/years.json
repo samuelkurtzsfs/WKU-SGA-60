@@ -589,6 +589,15 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/1824",
       "file": "1966-67-congress-roster.pdf"
      }
+    },
+    {
+     "file": "1966-67-constitution-as-ratified.pdf",
+     "title": "Constitution of the Associated Students of WKU, 1966",
+     "summary": "The founding constitution, as printed in full in the College Heights Herald of 7 April 1966. President Kelly Thompson had approved it six days earlier, and the student body ratified it 1,812 to 726 on 26 April.",
+     "src": {
+      "label": "TopSCHOLAR, WKU SGA Records: Constitution of the Associated Students of WKU, 1966",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Constitution/1"
+     }
     }
    ]
   },
@@ -8767,7 +8776,18 @@
       }
      ]
     }
-   }
+   },
+   "documents": [
+    {
+     "file": "1976-77-proposed-constitutional-amendments.pdf",
+     "title": "Proposed constitutional amendments, 1976",
+     "summary": "Four proposed amendments on representation, attendance and roll-call votes, from the revision committee ASG created in September 1976.",
+     "src": {
+      "label": "TopSCHOLAR, WKU SGA Records: Proposed constitutional amendments, 1976",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Amendments/1"
+     }
+    }
+   ]
   },
   {
    "id": "1977-78",
@@ -15861,6 +15881,15 @@
       "label": "ASG Meeting Minutes, 2 September 1986",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/38"
      }
+    },
+    {
+     "file": "1986-87-constitution-with-amendments.pdf",
+     "title": "Constitution of the WKU Associated Students with amendments, 1986",
+     "summary": "Twenty years of amendments consolidated into one document, dated 4 August 1986. The only surviving snapshot of how the 1966 framework had been patched across two decades.",
+     "src": {
+      "label": "TopSCHOLAR, WKU SGA Records: Constitution of the WKU Associated Students with amendments, 1986",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Constitution/2"
+     }
     }
    ]
   },
@@ -16491,6 +16520,15 @@
      "src": {
       "label": "ASG Meeting Minutes, 22 September 1987",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/64"
+     }
+    },
+    {
+     "file": "1987-88-proposed-amendments.pdf",
+     "title": "Proposed constitutional amendments, 1987",
+     "summary": "Amendments changing the number of representatives, the vice chairman of the Judicial Council and appointments to committees. Eighty-one students ratified that November.",
+     "src": {
+      "label": "TopSCHOLAR, WKU SGA Records: Proposed constitutional amendments, 1987",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Amendments/2"
      }
     }
    ]
@@ -19587,7 +19625,18 @@
       }
      ]
     }
-   }
+   },
+   "documents": [
+    {
+     "file": "1990-91-constitutional-amendments.pdf",
+     "title": "Constitutional amendments, 1990",
+     "summary": "Amendments on office hours, veto power, representation and student status, from the year ASG also overhauled its by-laws.",
+     "src": {
+      "label": "TopSCHOLAR, WKU SGA Records: Constitutional amendments, 1990",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Amendments/3"
+     }
+    }
+   ]
   },
   {
    "id": "1991-92",
@@ -24722,7 +24771,18 @@
       }
      ]
     }
-   }
+   },
+   "documents": [
+    {
+     "file": "1995-96-bill-96-1-s-bylaw-x.pdf",
+     "title": "Bill 96-1-S, amending Bylaw X, Part A",
+     "summary": "A bill amending the committees section of the bylaws, from the session that also opened the constitution with Bill 96-2-S.",
+     "src": {
+      "label": "TopSCHOLAR, WKU SGA Records: Bill 96-1-S, amending Bylaw X, Part A",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Amendments/4"
+     }
+    }
+   ]
   },
   {
    "id": "1996-97",
@@ -29200,6 +29260,15 @@
       "label": "SGA Records: Bill 98-10-F, 17 Nov 1998",
       "url": "https://digitalcommons.wku.edu/context/sga/article/2102/viewcontent/sga_bill_98_10_f.pdf"
      }
+    },
+    {
+     "file": "1998-99-bill-99-14-s-coordinator-of-committees.pdf",
+     "title": "Bill 99-14-S, duties of the Coordinator of Committees",
+     "summary": "A bill amending the constitution to define the duties of the Coordinator of Committees, the office the 2004 constitution later folded into the Speaker of the Senate.",
+     "src": {
+      "label": "TopSCHOLAR, WKU SGA Records: Bill 99-14-S, duties of the Coordinator of Committees",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Amendments/5"
+     }
     }
    ]
   },
@@ -30379,6 +30448,24 @@
       "label": "SGA Meeting Minutes, 10 April 2001",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/589"
      }
+    },
+    {
+     "file": "2000-01-constitution-as-amended-spring-2001.pdf",
+     "title": "Constitution of the WKU Student Government Association, as amended spring 2001",
+     "summary": "The constitution under the organization's present name, nine years after Bill 92-10-S renamed it.",
+     "src": {
+      "label": "TopSCHOLAR, WKU SGA Records: Constitution of the WKU Student Government Association, as amended spring 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Constitution/4"
+     }
+    },
+    {
+     "file": "2000-01-amendment-article-viii-section-7.pdf",
+     "title": "Amendment to Article VIII, Section 7, 2001",
+     "summary": "An amendment on committee participation.",
+     "src": {
+      "label": "TopSCHOLAR, WKU SGA Records: Amendment to Article VIII, Section 7, 2001",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Amendments/7"
+     }
     }
    ]
   },
@@ -31239,6 +31326,15 @@
      "src": {
       "label": "SGA Meeting Minutes, 9 April 2002",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/835"
+     }
+    },
+    {
+     "file": "2001-02-constitution-as-amended-spring-2002.pdf",
+     "title": "Constitution of the WKU Student Government Association, as amended spring 2002",
+     "summary": "The constitution carrying the Supremacy Clause amendment voters approved in April 2002, and the last one before the 2004 Constitutional Convention rebuilt the body.",
+     "src": {
+      "label": "TopSCHOLAR, WKU SGA Records: Constitution of the WKU Student Government Association, as amended spring 2002",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Constitution/3"
      }
     }
    ]

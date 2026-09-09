@@ -494,6 +494,7 @@ NAV_ITEMS = [("index.html", "The board"), ("search.html", "Search"),
              ("patterns.html", "Patterns"), ("events.html", "What SGA put on"),
              ("irregular.html", "Irregular terms"),
              ("branches.html", "How it was built"),
+             ("documents.html", "Governing documents"),
              ("officers.html", "The officers"),
              ("network.html", "SGA network"),
              ("history.html", "Timeline"),
@@ -6481,6 +6482,334 @@ the <a href="legislation.html">legislation archive</a>.</p>
                  depth=0, current="branches.html")
 
 
+# ---------------------------------------------------------------- governing documents
+# The constitution and the bylaws, as they changed. Student government at
+# Western has been governed by a written constitution since April 1966, and
+# that constitution has been replaced outright at least five times and amended
+# far more often than that. This page follows the documents themselves: what
+# each generation of them set up, when the student body voted on it, and which
+# of the actual files the archive has been able to recover.
+#
+# Nothing here is written by hand twice. The dated entries are the same events
+# that appear on the year pages and the timeline, selected by subject, so the
+# page grows as the research does. Only the era framing below is authored, and
+# every claim in it is carried by an event underneath it.
+DOCUMENTS_CSS = """
+.era{margin:0 0 10px}
+.era>h2{font-size:1.3rem;margin:52px 0 2px;padding-top:16px;
+ border-top:2px solid var(--black);letter-spacing:-.02em}
+.era>.yrs{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--red);margin:0 0 14px}
+.era .sum p{max-width:var(--measure);margin:0 0 14px}
+.recs{margin:16px 0 0;border-top:1px solid var(--line)}
+.recs summary{cursor:pointer;padding:11px 0;font-family:var(--ui);font-size:12px;
+ font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.recs summary::marker{color:var(--red)}
+.recs summary:hover{color:var(--red)}
+.recs ol{margin:2px 0 16px;padding-left:1.4rem;font-size:.9rem;color:var(--ink2)}
+.recs li{margin:0 0 11px;max-width:var(--measure)}
+.recs li b{font-weight:600;color:var(--ink)}
+.recs li .w{font-family:var(--ui);font-size:.76rem;letter-spacing:.06em;
+ text-transform:uppercase;color:var(--red);display:block;margin-bottom:1px}
+.recs li .s{display:block;font-size:.8rem;color:var(--ink3);margin-top:3px}
+.held{margin:56px 0 0;padding-top:16px;border-top:2px solid var(--black)}
+.docwrap{display:grid;gap:26px;margin:20px 0 0}
+.gdoc{border:1px solid var(--line);background:var(--paper2);padding:18px 20px}
+.gdoc h3{font-size:1.02rem;margin:0 0 4px;letter-spacing:-.01em}
+.gdoc .when{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.08em;
+ text-transform:uppercase;color:var(--red);margin:0 0 9px}
+.gdoc p{margin:0 0 11px;font-size:.93rem;color:var(--ink2);max-width:var(--measure)}
+.gdoc .reader{margin:4px 0 0;border-top:1px solid var(--line)}
+.gdoc .reader summary{cursor:pointer;padding:10px 0;font-family:var(--ui);font-size:12px;
+ font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.gdoc .reader summary::marker{color:var(--red)}
+.gdoc .reader summary:hover{color:var(--red)}
+.gdoc .reader .sz{font-weight:400;letter-spacing:.04em;color:var(--ink3);
+ text-transform:none}
+.gdoc .doc-view{width:100%;height:560px;border:1px solid var(--line);background:#fff;
+ margin:0 0 14px}
+.gdoc .foot{margin:11px 0 0;font-size:.86rem;font-family:var(--ui)}
+.gdoc .foot a{margin-right:14px}
+.gapnote{background:var(--paper2);padding:16px 18px;margin:26px 0 0;
+ border-left:3px solid var(--red);max-width:var(--measure)}
+.gapnote h3{font-size:.95rem;margin:0 0 7px}
+.gapnote p{margin:0 0 9px;font-size:.92rem;color:var(--ink2)}
+.gapnote p:last-child{margin-bottom:0}
+"""
+
+# Anything whose subject is the governing documents themselves. Ordinary
+# legislation passed under them is not this page's business, so the test on the
+# dated entries is deliberately narrow: the words constitution, bylaw or charter.
+GOV_RE = re.compile(r"constitution|by-?laws?\b|charter", re.I)
+
+# A file is only in data/documents because somebody put it there deliberately,
+# so the test on the documents themselves can be wider than the one on the
+# events, and has to be: an amendment to the constitution is a governing
+# document whether or not its filename happens to say so.
+GOV_DOC_RE = re.compile(r"constitution|by-?laws?\b|charter|amendment", re.I)
+
+# The generations. Each one opens on a dated event already in the archive, and
+# closes when the next document replaced it. Where a claim is made here it is
+# because an entry in that era's own record carries it.
+ERAS = [
+    ("founding", "The founding constitution", "1966",
+     "Student government at Western begins with a document rather than an election. "
+     "An organizing committee under Reed Morgan drafted a constitution for a body to "
+     "be called the Associated Students; President Kelly Thompson approved it on 1 "
+     "April 1966, the Herald printed it in full six days later, and the student body "
+     "ratified it 1,812 to 726 in a four-day referendum that closed on 26 April. "
+     "Jim Haynes was elected to lead the government it created three weeks after "
+     "that, so the constitution is older than the first presidency.\n"
+     "That referendum drew 2,538 voters, a larger raw turnout than most elections "
+     "the organization has run in the sixty years since."),
+    ("first-rewrite", "Congress reopens it, twice", "1968 to 1972",
+     "The founding document did not last a decade. Congress voted 18 to 1 in "
+     "February 1969 to re-examine it, the Herald backed revision in an editorial the "
+     "week after, and what followed was four years of drafting, stalling and "
+     "referenda. A new constitution was sent back for study in November 1969 and "
+     "work on it halted that January before it resumed.\n"
+     "Two separate constitutions were carried in this period. One passed by "
+     "referendum on 11 December 1970 with 2,094 students voting. The Revision "
+     "Committee reported again the following September, Congress approved a further "
+     "new constitution on 3 March 1972, and the student body approved it on 31 "
+     "March. The archive does not hold the text of the 1972 article, so the vote "
+     "count and the specific changes are not established from it."),
+    ("at-large", "The at-large rewrite", "1976 to 1979",
+     "ASG created a constitutional revision committee in September 1976, sent the "
+     "revision to a referendum by Bill 11 in April 1977, and was still awaiting "
+     "approval of the changes that September. Congress approved a revised "
+     "constitution in November 1978 and the student body ratified it at the April "
+     "1979 general election.\n"
+     "This one changed how people got elected. It broke the representative-at-large "
+     "election into 24 separate races for the 24 at-large seats, a change "
+     "administrative vice president David Young said was meant to force some "
+     "head-to-head competition between candidates. It also redrew the activities "
+     "vice president's duties to match the new university center board."),
+    ("congress-era", "Patching, and then consolidating", "1982 to 1991",
+     "The 1980s are the amendment decade rather than the replacement decade. "
+     "Congress gave a constitutional revision two readings clause by clause in "
+     "March 1983 and approved it that month, over the public objection of Dean "
+     "Charles Keown. The by-laws were worked on separately and repeatedly: "
+     "committees reorganized in 1982, the Finance Committee abolished in 1985, a "
+     "Financial Advisory Council written in during 1986, expulsion rules amended "
+     "that April, and a full overhaul in 1991 that included the veto-override "
+     "procedure.\n"
+     "The single most useful survival from this period is dated 4 August 1986: the "
+     "constitution of the WKU Associated Students with amendments, the only snapshot "
+     "the archive holds of how the 1966 framework had been patched across twenty "
+     "years."),
+    ("renaming", "Associated Students becomes SGA", "1992 to 2003",
+     "The name the organization is known by today was carried as a constitutional "
+     "amendment. Bill 92-10-S, introduced on 1 April 1992, changed Associated "
+     "Student Government to Student Government Association, and students voted on "
+     "the amendments on 14 April, the same day as that spring's presidential "
+     "election. From 1992-93 the archive records the body under its present name.\n"
+     "A new constitution came up for reading in September 1993 and Bill 93-1-F "
+     "carried a set of amendments that the archive holds as a document. Bill 96-2-S "
+     "opened the constitution again in 1996, website guidelines were written into it "
+     "in December 1999, and an amendment establishing a supremacy clause was "
+     "approved by voters in April 2002."),
+    ("convention", "The Constitutional Convention", "2004",
+     "The most consequential rewrite in the record. A convention rebuilt the body "
+     "around three branches, an Executive Cabinet, a Senate and a Judicial Council, "
+     "drawn from the student body at large. Congress approved the new constitution "
+     "on 12 February 2004 on the fifth attempt.\n"
+     "Its quietest clause is its largest: every enrolled student became a member of "
+     "SGA with the right to vote in its elections. The legislature stopped being a "
+     "Congress of class and club representatives and became a Senate. Robert "
+     "Watkins, who wrote the document, was elected the first speaker of the senate "
+     "on 13 April 2004 by 9 votes to 8, and the result was immediately disputed "
+     "because the new constitution was unclear on whether two thirds of eligible "
+     "voters or of total membership was required."),
+    ("overhaul", "Article by article", "2012 to 2017",
+     "The Senate amended the constitution to add regional-campus seats in February "
+     "2013, and adopted a full package of constitutional and bylaw amendments that "
+     "March. Administrative Vice President Cain Alvey said executives had been "
+     "discussing the changes for two to three years and had gone through the "
+     "constitution article by article. The Senate took one piece out before "
+     "passing it, rejecting the bylaw that would have made serving SGA members "
+     "ineligible for SGA-sponsored scholarships.\n"
+     "The Judicial Council was an active party throughout, reviewing and approving "
+     "the package before the senate voted in 2013, striking down the international "
+     "senate seat amendment that September, and hearing the Executive Council void "
+     "an amendment stripping the president's judicial appointments in 2014."),
+    ("modern", "Rewriting under pressure", "2019 to 2023",
+     "Chief Justice Isaac Keller convened a cross-branch rewrite in February 2020, "
+     "telling the council that the executive and legislative branches wanted the "
+     "grey areas eliminated and that three people from each branch would work "
+     "through the changes. Weeks later the pandemic forced a different kind of "
+     "constitutional question: elections were postponed in April 2020 and a clause "
+     "written to keep the sitting officers in place, carried by Bill 8-20-S.\n"
+     "The Judicial Council spent this period settling what the documents actually "
+     "meant. In one term it ruled that the constitution can be amended by ordinary "
+     "bill, held the constitution supreme over the bylaws on the executive veto, and "
+     "got its own first written procedural rules. In April 2023 it ruled that the "
+     "veto of a constitutional amendment can be overridden by two thirds."),
+    ("codify", "Correcting and codifying", "2023 to 2026",
+     "The 23rd Senate turned on its own paperwork in November 2023, passing three "
+     "Legislative Operations bills to fix references to a University Senate that had "
+     "since split into separate Faculty and Staff senates, reconcile bylaws language "
+     "about expelling senators with a constitution that provided only for "
+     "impeachment, and update committee names that had drifted.\n"
+     "In March 2024 fourteen amendments were read together and the Senate lowered "
+     "the bar for changing its own constitution: Bill 22-24-S amended clause 10.1 so "
+     "that amendment requires two thirds of the senators present rather than two "
+     "thirds of the full membership. Bill 23-24-S moved amendment elections to the "
+     "senator elections, citing higher turnout. In April 2025 the student body "
+     "ratified Bill 21-25-S with 88 per cent of the vote, renaming the Diversity, "
+     "Equity and Inclusion Committee the Action and Opportunity Committee. On 24 "
+     "February 2026 the Senate adopted a fully codified rewrite of the bylaws, "
+     "superseding every prior version."),
+]
+
+ERA_BOUNDS = {"founding": (1966, 1967), "first-rewrite": (1968, 1975),
+              "at-large": (1976, 1981), "congress-era": (1982, 1991),
+              "renaming": (1992, 2003), "convention": (2004, 2011),
+              "overhaul": (2012, 2018), "modern": (2019, 2022),
+              "codify": (2023, 2030)}
+
+
+def gov_events(ys):
+    """Every dated entry in the archive whose subject is the governing documents."""
+    out = []
+    for y in ys:
+        for e in (y.get("events") or []):
+            if GOV_RE.search((e.get("title") or "") + " " + (e.get("body") or "")):
+                out.append((y["id"], e))
+    return sorted(out, key=lambda t: (t[1].get("date") or "9999-99-99", t[1].get("title", "")))
+
+
+def gov_documents(ys):
+    """The governing documents themselves, wherever they hang in the data."""
+    seen, out = set(), []
+    for y in ys:
+        for d in (y.get("documents") or []):
+            f = d.get("file") or ""
+            if f and GOV_DOC_RE.search(f + " " + (d.get("title") or "")) and f not in seen:
+                seen.add(f)
+                out.append((y["id"], d))
+        for e in (y.get("events") or []):
+            src = e.get("src") or {}
+            f = src.get("file") or ""
+            if f and GOV_DOC_RE.search(f + " " + (src.get("label") or "")) and f not in seen:
+                seen.add(f)
+                out.append((y["id"], {"file": f, "title": src.get("label", f),
+                                      "src": src, "summary": ""}))
+    return sorted(out, key=lambda t: t[1].get("file", ""))
+
+
+def render_documents(ys):
+    events = gov_events(ys)
+    docs = gov_documents(ys)
+    if not events:
+        return ""
+
+    secs = []
+    placed = set()
+    for eid, title, span, summary in ERAS:
+        lo, hi = ERA_BOUNDS[eid]
+        rows = []
+        for yid, e in events:
+            start = int(str(yid)[:4])
+            if lo <= start <= hi:
+                rows.append((yid, e))
+                placed.add(id(e))
+        paras = "".join(f"<p>{h(t.strip())}</p>"
+                        for t in summary.split("\n") if t.strip())
+        recs = ""
+        if rows:
+            lis = "".join(
+                f'<li><span class="w">{h(yid)}</span>'
+                f'<b>{h(e.get("title", ""))}</b>'
+                + (f' {time_tag(e["date"])}' if e.get("date") else "")
+                + (f'<span class="s">{src_link(e["src"])}</span>' if e.get("src") else "")
+                + '</li>'
+                for yid, e in rows)
+            recs = (f'<details class="recs"><summary>The {len(rows)} entr'
+                    f'{"ies" if len(rows) != 1 else "y"} this rests on</summary>'
+                    f'<ol>{lis}</ol></details>')
+        secs.append(
+            f'<section class="era" id="{h(eid)}">'
+            f'<h2>{h(title)}</h2><p class="yrs">{h(span)}</p>'
+            f'<div class="sum">{paras}</div>{recs}</section>')
+
+    # Each viewer is a full PDF renderer, and five of them opening at once is
+    # enough to lock the tab. The year pages carry one document apiece and can
+    # afford to embed it; this page cannot, so the reader opens the one wanted.
+    cards = []
+    for yid, d in docs:
+        page = f'#page={d["page"]}' if d.get("page") else ""
+        links = [f'<a href="docs/{h(d["file"])}">Open the file</a>']
+        if d.get("src"):
+            links.append(src_link(d["src"]))
+        size = ""
+        f_on_disk = DOCS / d["file"]
+        if f_on_disk.exists():
+            size = f' <span class="sz">{f_on_disk.stat().st_size / 1048576:.1f} MB PDF</span>'
+        cards.append(
+            f'<article class="gdoc"><h3>{h(d.get("title") or d["file"])}</h3>'
+            f'<p class="when">{h(yid)}</p>'
+            + (f'<p>{h(d["summary"])}</p>' if d.get("summary") else "")
+            + f'<details class="reader"><summary>Read it here{size}</summary>'
+              f'<iframe class="doc-view" src="docs/{h(d["file"])}{page}" loading="lazy" '
+              f'title="{h(d.get("title") or d["file"])}"></iframe></details>'
+              f'<p class="foot">{"".join(links)}</p></article>')
+
+    unplaced = sum(1 for _, e in events if id(e) not in placed)
+    n_era = len(ERAS)
+    body = f"""
+<header class="head"><div class="wrap">
+ <p class="kicker">The constitution and the bylaws</p>
+ <h1>Governing documents</h1>
+ <p class="scope">Student government at Western has been governed by a written constitution
+ since April 1966, and the constitution came before the first president: the document was
+ approved, printed and ratified before anybody was elected to work under it. It has been
+ replaced outright at least five times since, renamed the organization once, and been
+ amended far more often than it has been replaced.</p>
+ <p class="scope">This page follows the documents rather than the people. It sets out
+ {n_era} generations of them and lists the {len(events)} dated entries in the archive whose
+ subject is the constitution or the bylaws, each with the source it came from. The
+ {len(docs)} files the project has been able to recover are at the foot of the page, readable
+ here.</p>
+</div></header>
+
+<div class="wrap"><div class="body">
+{"".join(secs)}
+
+<section class="held" id="files">
+<h2>The documents themselves</h2>
+<p class="secnote">What the project has been able to recover, mirrored here from the
+university's own records and ordered oldest first. Every one links back to where it came
+from. This is not the complete set. The constitutions carried in 1970, 1972, 1979, 1983,
+2004 and 2013 are still known only from the reporting of the votes that passed them, and
+several of the amendments below survive as the individual bills that made them rather than
+as the consolidated documents they changed.</p>
+<div class="docwrap">{"".join(cards)}</div>
+</section>
+
+{f'''<div class="gapnote">
+ <h3>What is missing here, and why</h3>
+ <p>{unplaced} dated entr{"ies fall" if unplaced != 1 else "y falls"} outside the
+ {n_era} periods set out above and {"are" if unplaced != 1 else "is"} not shown on this page.
+ They remain on their own year pages and in the timeline.</p>
+</div>''' if unplaced else ''}
+
+<div class="prose" style="margin-top:34px">
+<p>The institutions these documents created, the Congress that became a Senate and the
+judicial body that has ruled on what they mean, are described on
+<a href="branches.html">how it was built</a>. The bills and resolutions passed under them are
+in the <a href="legislation.html">legislation archive</a>, and every entry above also appears
+on its own <a href="history.html">year in the timeline</a>.</p>
+</div>
+
+</div></div>"""
+    desc = ("The constitution and bylaws of student government at Western Kentucky "
+            "University, 1966 to the present: how each generation of the governing "
+            "documents was written, voted on and replaced, with the surviving files.")
+    return shell("Governing documents · SGA 60", desc, body, DOCUMENTS_CSS,
+                 depth=0, current="documents.html")
+
+
 # ---------------------------------------------------------------- the officers
 OFFICERS_CSS = """
 .who-head{padding:44px 0 22px;border-bottom:1px solid var(--line)}
@@ -7630,6 +7959,9 @@ def main():
     _br = render_branches(ys)
     if _br:
         (SITE / "branches.html").write_text(repair_anchors(_br))
+    _gd = render_documents(ys)
+    if _gd:
+        (SITE / "documents.html").write_text(repair_anchors(_gd))
     people = officer_index(ys)
     ODIR = SITE / "o"
     ODIR.mkdir(parents=True, exist_ok=True)
