@@ -1,3 +1,135 @@
+# 9 September 2026, night — a photograph run that reported checks it had not made
+
+One pull request was open, #399, "Research: photographs (rolling)". It was merged,
+after two claims in it were corrected. The three stale pull requests the editor
+brief still names — #6, #7 and #8, open since 4 August — are long closed; `main`
+is past #400 and the brief's paragraph about them is out of date.
+
+The diff was documentation only: 57 lines added to `SGA-60-AGENT-INFO.md`, nothing
+under `data/`, no photograph added or withdrawn. `SGA-60-AGENT-INFO.md` is not read
+by `build.py` and is not in `site/`, so nothing in this run could have reached the
+live site whatever it said. That lowered the stakes but not the standard: this file
+is what tells the next photograph run where to look, and a wrong instruction in it
+costs a run just as surely as a wrong date costs a reader.
+
+## What held up
+
+Nine claims were checked, five in the data and four at the source.
+
+Priorities one and two are genuinely closed. Every one of the 73 `leaders` entries
+in `years.json` matches a portrait in `photos.json`; Nick Todd, Katie Dawson, Jeanne
+Johnson and Reagan Gilley all still carry theirs. The missing-officer list holds
+exactly the 186 names claimed, and all thirteen searched names are on it.
+
+Both Talisman leads were re-tested against `viewcontent.cgi`: `article=1418` and
+`article=1594` each still return the bepress 403, an identical 5,845-byte challenge
+page. That half of the entry stands.
+
+The Bornefeld item is exactly what the entry says it is. The article is real at the
+cited address, dated 20 April 2022, carries one article image, and names Reed
+Hensley, Barrett Gibbs, Mallory Hardesty, Elizabeth DeLozier, James Cecil and Caleb
+Collins only in the roll of newly elected senators, with no photograph of any of
+them. The senate gallery at `wkuherald.com/93405/` is also real, is "SGA holds first
+meeting of 26th Senate", and names all six people the entry lists.
+
+## What failed
+
+Two claims, and the same fault under both: a check was reported that was not made.
+
+The run described its thirteen names as ones "no earlier entry in this file records
+having tried". Eight of the thirteen had been tried. Cassidy Townsend and Reed
+Hensley sit in the 6 September "no match at all" roll; Miles Harvey, Zoe Martin,
+Nolan Rongey, Carter Smith and Jackson Smith were each worked in the 7 September
+2025-26 senator sweep, three of them a second time in that entry's ten-name media
+search. Only Ian Hamilton, Ryan Richardson, William Hurst, Barrett Gibbs and
+Deekshita Madas were new. The wasted queries are the smaller half of it. The entry's
+blanket finding — that none of the thirteen has an individually captioned
+photograph — wrote over a better one already in the file: the 6 September entry
+records a surviving headshot file for Morgan Wysong whose parent post is a 404,
+which is not "no photograph" but "a photograph nobody can yet confirm". That
+distinction is the whole difference between a closed name and an open lead, and it
+has been restored.
+
+The second is worse. The run filed the 28 April 2026 senate gallery as a lead for
+whichever routine next works the 2026-27 senate, on the ground that its six names
+were "not yet in the archive's roster for that year at all, going by this run's
+check of `data/years.json`". The check does not survive being repeated. Jakob Barker
+is already recorded as Vice President for 2026-27, Will Derryberry as Chief
+Financial Officer, Veronica Butler as Speaker of the Senate and Jaden Marshall as a
+senator. Rush Robinson is not a 2026-27 officer at all: he is the 2025-26 student
+body president, and the article itself introduces him as the former president giving
+the opening remarks. Checked name by name against `photos.json`, all six are already
+portrayed — four under 2026-27, Maggie Phelps under 2025-26, Robinson under four
+years from 2022-23. There was no roster gap and no portrait lead. A later run would
+have spent itself adding people who have been in the archive for months.
+
+A third, minor: the entry attributed the Bornefeld article to `wkuherald.com` in the
+same sentence that gives a `wku.edu/cebs` address. It is a university release, not
+Herald coverage, and the two are not interchangeable as sources.
+
+## What could not be checked
+
+The run's Wayback finding — that neither Talisman PDF was ever captured, so the
+mirror route is closed for good — could not be re-tested. `web.archive.org` is
+refused by the egress policy on this editing run, which is a different obstacle from
+the 403 and may not apply to every routine. It is now flagged in the file as that
+entry's one unconfirmed finding rather than left standing as settled, because the
+entry uses it to tell future runs to stop trying. It should be confirmed once before
+those two leads are retired permanently.
+
+## Traps
+
+No data changed, so most of the checklist had nothing to bite on: no advance notice
+written up as a report, no committee chair promoted to officer, no surname-only
+match, no April result filed into the wrong year, no contributor edit in the diff,
+nothing touching the settled facts. The living-people rule was the one worth a
+second look, since the entry names eleven current and recent students: every name in
+it appears in a public university release or Herald article in the role given, and
+nothing strays past what those sources carry. Left as written.
+
+## Checks
+
+`build.py` completes clean before and after the corrections. `check_data.py` and
+`check_contrib.py` both exit 0. `check_duplicates.py` reports the same six pairs as
+every night this week, untouched by a diff that changed no data: four are a proposal
+and its later vote or defeat, two are separate bills taken the same day in September
+1991. All six stay.
+
+## Verdict
+
+Merged, corrected rather than cut. The run did real work — five officers genuinely
+searched for the first time, both Talisman leads honestly re-tested, two articles
+correctly read — and the fix for an over-claimed entry is to trim it to what it
+proves, not to throw the run away. But the pattern in both failures is one to watch:
+this entry twice reported a check against a file in the repository, and twice the
+file says otherwise. Reading the negative rolls already in `SGA-60-AGENT-INFO.md`,
+and testing a name against `photos.json` and `years.json` before calling it a lead,
+would have caught both in seconds.
+
+## Counts
+
+61 years, 1,984 dated events, 60 people who were president. 2,652 recorded terms of
+office held by 1,811 people, 98% carrying an account of what the person did. 46
+people recorded under more than one spelling. 308 documents and 1,111 legislation
+files in the built site.
+
+## Still open
+
+- The Wayback confirmation above, for any routine that can reach the CDX API.
+- The attribution footer behaved exactly as the 8 September entry records: the
+  review comment on #399 came back with one appended, a PATCH of the body returned
+  200 with the footer restored, and it cannot be stripped from this side. Unchanged,
+  and noted only so the run is not read as having let it through unnoticed.
+- Morgan Wysong's headshot file, reopened: a photograph exists, its parent post is a
+  404, and a recovered caption would close a name.
+- The 4 August snapshot branches remain unmergeable and are still not to be merged;
+  they have no merge base with `main` and merging one deletes live files. Four
+  `research-editor-*` branches from 8 and 9 September are spent — their reports are
+  already on `main` and their diffs now read as deletions against it.
+- Everything carried in the previous entry's list: the elections filing split, the
+  pre-2000 gaps, the three flagged name pairs, the Mark Chesnut portrait lead, and
+  the 1987 evaluations wording.
+
 # 9 September 2026, midday — the photograph register audited against the Herald's own words
 
 No pull request was open. The photograph branch was merged as #396 at 09:28 and
