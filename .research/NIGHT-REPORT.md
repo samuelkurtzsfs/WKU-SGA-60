@@ -1,3 +1,92 @@
+# 9 September 2026, night — a photograph run merged, and two Skillmans in one article
+
+One pull request was open, #403, the afternoon photograph run on `research-photos`.
+It was merged after review. The three stale branches named in the standing brief —
+#6, #7 and #8 — have been closed since 18 August and need no further handling; the
+brief should stop naming them.
+
+## What was in it
+
+Nothing that reaches the public site. The run confirmed no new portrait and changed
+no photograph: the whole diff is six new entries in `data/photo-finds/_do-not-use.json`,
+the register of images ruled out, plus the run's write-up in `SGA-60-AGENT-INFO.md`.
+Neither file is rendered into `site/`. That lowers the stakes but not the standard —
+a negative roll is read by later runs as settled, so a name filed against the wrong
+evidence costs as much here as a wrong date on a year page.
+
+## What was verified
+
+Thirteen claims, which is every factual claim the diff makes. All three cited
+`wkuherald.com` articles exist with the dates and titles given (61104, 70591, 71533).
+Article 61104's featured image really is a reused, uncaptioned SGA photograph from
+March 2021, so the run is right that it carries no per-officer portrait. Article
+71533's really is the executive cabinet photographed on 30 August 2022 and credited
+to Sean McInnis, a different date from the election it illustrates, exactly as the
+entry says. The Bornefeld caption quoted in the Goins entry is verbatim from that
+article's featured image. The Coffey, Knight and Bose searches each reproduced the
+result described, Knight's still returning an unrelated sportsman of the same name.
+The portrait sweep was re-run independently and agrees to the number: 73 leader-terms
+across 61 years, none without a portrait. So did the twelve-year list of years with
+no general photograph. Nothing in the diff was found to be false.
+
+## What was cut
+
+Two entries were corrected rather than deleted, and the run was merged with the
+corrections in it.
+
+The **Skillman** entry filed article 61104 under Zachary Skillman without recording
+that the same article separately profiles **Jacob** Skillman, the other
+senator-at-large of that Senate — and describes the two in near-identical terms, both
+juniors majoring in business economics, both Gordon Ford ambassadors, both in the
+Center for Capitalism Book Club. `years.json` carries both men. Zachary is genuinely
+in the article, under the spelling `name-aliases.json` already maps, so the entry was
+not wrong; it was silent about the hazard. This is the Lodmell pattern, and left as
+written it invited a later run to hang one brother's face on the other. The warning
+now sits in the entry. Its parenthetical crediting Zachary's committee chairmanship to
+this article went too: the article calls him a senator and nothing more.
+
+The **Goins** entry quoted that caption at seventeen words, over the fifteen-word
+limit — the same fault the previous entry in this report was written about. It is
+paraphrased down to seven, with the evidence kept whole and the article's three
+interior captions added, which name the Speaker of the Senate and the Judicial
+Council as a body but never Goins.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0, before
+and after the corrections. `check_duplicates.py` reports the same six pairs as the six
+previous nights, untouched by this run, which changes no event: four are a proposal and
+its later vote or defeat, two are separate bills taken the same day in September 1991.
+All six stay. The 1997-98 pair was read once more in full and is three distinct events —
+the bill of 4 November, the Herald's report of 13 November, and the distribution
+announcement of 17 February.
+
+## Counts
+
+61 years, 1,984 dated events, 60 people who were president. 2,652 recorded terms of
+office held by 1,810 people, 98% carrying an account of what the person did. 47 people
+recorded under more than one spelling. 308 documents and 1,111 legislation files in the
+built site. 96 entries now on the do-not-use register.
+
+## Still open
+
+- The archive.org free full-text seam for the *Talisman* is exhausted for every name on
+  the missing list that falls inside 1971-1981 and 1986-87. The remaining 1970s-80s
+  portrait leads need a Herald page image or a UA1C collection search, not another
+  full-text pass. The Mark Chesnut lead (1981 *Talisman*, index page 234, name not
+  repeated in the OCR) is still the clearest of them and still needs the leaf pulled
+  as an image.
+- The twelve-year general-photograph gap — 1993-94 through 1997-98, 2000-01, 2002-03,
+  2003-04, 2005-06, 2006-07, 2008-09, 2009-10 — is confirmed not reachable through
+  `wkuherald.com`, whose WordPress archive returns nothing for SGA across 2005-06.
+- The photograph routine keeps searching names before reading the negative rolls: this
+  run spent its middle third reproducing six negatives already on file. The fix is a
+  standing instruction to read `_do-not-use.json` first, which is now written into the
+  handoff.
+- Carried over: the elections filing split, the pre-2000 gaps (1997-98 legislation,
+  Eddie Myers 1994-95, Jacob A. Miers 2008-09), and the three flagged name pairs
+  Staci/Stacy Kitchens, Carleton Ruminer/Carlton Rumenier, Brittany Ann/Brittany-Ann Wick.
+
 # 9 September 2026, late — the mirrored documents checked as files, and four quotations one word over
 
 No pull request was open. The three stale branches named in the standing brief — #6, #7
