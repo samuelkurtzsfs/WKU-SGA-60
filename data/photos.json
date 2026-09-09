@@ -10622,6 +10622,15 @@
   },
   {
    "year": "2021-22",
+   "name": "Olivia Feck",
+   "file": "2021-22-olivia-feck.jpg",
+   "src": {
+    "label": "College Heights Herald, 18 April 2022, \"SGA voting has begun: What you need to know about the 2022 presidential candidates\"; captioned \"Photo provided by Olivia Feck,\" one of three photos the article ran naming that spring's three presidential ticket leads (Cole Bornefeld, Olivia Feck, Alexis Courtenay) in turn.",
+    "url": "https://wkuherald.com/65784/news/sga-voting-has-begun-what-you-need-to-know-about-the-2022-presidential-candidates/"
+   }
+  },
+  {
+   "year": "2021-22",
    "name": "Parker Raybourne",
    "file": "2021-22-parker-raybourne.jpg",
    "src": {
@@ -10672,6 +10681,15 @@
    "src": {
     "label": "College Heights Herald, 18 Oct 2023. Johnson was confirmed as Director of Information Technology on 30 August 2022 and returned to the same office for 2023-24; no photograph from her first year is on file, so this later portrait is used for both years.",
     "url": "https://wkuherald.com/wp-content/uploads/2023/10/AniyaJohnson3-e1697672022474.jpg"
+   }
+  },
+  {
+   "year": "2022-23",
+   "name": "Annalise Finch",
+   "file": "2023-24-annalise-finch.jpg",
+   "src": {
+    "label": "WKU Student Government Association, 2023-2024 executive branch headshots. This portrait is reused for 2022-23 as no photograph specific to that year is on file.",
+    "url": "https://www.wku.edu/sga/2023-2024-executive/headshots/annalise_finch_min.jpg"
    }
   },
   {
@@ -10811,6 +10829,15 @@
   },
   {
    "year": "2022-23",
+   "name": "Rush Robinson",
+   "file": "2025-26-rush-robinson-solo.jpg",
+   "src": {
+    "label": "WKU News, 2025. This portrait is reused for 2022-23 as no photograph specific to that year is on file.",
+    "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13040"
+   }
+  },
+  {
+   "year": "2022-23",
    "name": "Salvador Leon",
    "file": "2022-23-salvador-leon.jpg",
    "src": {
@@ -10910,6 +10937,15 @@
   },
   {
    "year": "2023-24",
+   "name": "Gabriel Jerdon",
+   "file": "2025-26-gabriel-jerdon.jpg",
+   "src": {
+    "label": "College Heights Herald, 16 October 2025; the caption names Chief Financial Officer Gabriel Jerdon discussing Bill 10-25-F at the weekly SGA meeting in DSU Room 2123. This portrait is reused for 2023-24 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/87819/news/sga-passes-funding-bill-for-campus-organizations/"
+   }
+  },
+  {
+   "year": "2023-24",
    "name": "Garrison Reed",
    "file": "2022-23-garrison-reed.jpg",
    "src": {
@@ -10933,6 +10969,15 @@
    "src": {
     "label": "College Heights Herald, 19 October 2023, presentation of the September Chief Justice's Verdict Award; cropped to the man presenting it (medium)",
     "url": "https://wkuherald.com/wp-content/uploads/2023/10/sga-10-18-photo.jpg"
+   }
+  },
+  {
+   "year": "2023-24",
+   "name": "Jaden Marshall",
+   "file": "2026-27-jaden-marshall.jpg",
+   "src": {
+    "label": "College Heights Herald, 15 April 2026; the caption names Marshall as the presidential candidate waiting to hear senator election results on election night (cropped to Marshall), photographer Jacob Sebastian. This portrait is reused for 2023-24 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/92840/multimedia/multimedia-photos/visuals-lucas-comes-out-on-top-at-high-emotion-election-party/"
    }
   },
   {
@@ -11045,11 +11090,20 @@
   },
   {
    "year": "2024-25",
-   "name": "Annie Finch",
+   "name": "Annalise Finch",
    "file": "2023-24-annalise-finch.jpg",
    "src": {
-    "label": "WKU Student Government Association, 2023-2024 executive branch headshots (the portrait already published in the archive at 2023-24, under the Annalise spelling)",
+    "label": "WKU Student Government Association, 2023-2024 executive branch headshots (the same portrait already published in the archive at 2023-24; the 2024-25 senate record spells her name Annalise)",
     "url": "https://www.wku.edu/sga/2023-2024-executive/headshots/annalise_finch_min.jpg"
+   }
+  },
+  {
+   "year": "2024-25",
+   "name": "Caden Lucas",
+   "file": "2026-27-caden-lucas-solo.jpg",
+   "src": {
+    "label": "WKU News, 2026. This portrait is reused for 2024-25 as no photograph specific to that year is on file.",
+    "url": "https://www.wku.edu/news/articles/index.php?view=article&articleid=13098"
    }
   },
   {
@@ -11059,6 +11113,15 @@
    "src": {
     "label": "College Heights Herald, 17 September 2024, swearing-in at the SGA Chambers; cropped to the only standing figure, hand raised (medium)",
     "url": "https://wkuherald.com/wp-content/uploads/2024/09/09_17_24_SGA_017.jpg"
+   }
+  },
+  {
+   "year": "2024-25",
+   "name": "Cayden Bailey",
+   "file": "2026-27-cayden-bailey.jpg",
+   "src": {
+    "label": "College Heights Herald photo record, frame SAV4629, 25 November 2025; the caption names Outreach and Public Relations Committee Chair Cayden Bailey applauding a senator's committee report at the weekly SGA meeting in the Senate Chambers. This portrait is reused for 2024-25 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/wp-json/wp/v2/media/89297"
    }
   },
   {
@@ -11126,6 +11189,15 @@
   },
   {
    "year": "2024-25",
+   "name": "Gabriel Jerdon",
+   "file": "2025-26-gabriel-jerdon.jpg",
+   "src": {
+    "label": "College Heights Herald, 16 October 2025; the caption names Chief Financial Officer Gabriel Jerdon discussing Bill 10-25-F at the weekly SGA meeting in DSU Room 2123. This portrait is reused for 2024-25 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/87819/news/sga-passes-funding-bill-for-campus-organizations/"
+   }
+  },
+  {
+   "year": "2024-25",
    "name": "Hadley Whipple",
    "file": "2025-26-hadley-whipple.jpg",
    "src": {
@@ -11140,6 +11212,24 @@
    "src": {
     "label": "College Heights Herald, 1 October 2024; the caption names Hermes Olmos last of five new senators sworn in that evening in the SGA Chambers. Cropped to Olmos, rightmost in the original. Photographer Jacob Sebastian",
     "url": "https://wkuherald.com/78720/news/new-sga-senators-sworn-in-3-bills-pass/"
+   }
+  },
+  {
+   "year": "2024-25",
+   "name": "Jaden Marshall",
+   "file": "2026-27-jaden-marshall.jpg",
+   "src": {
+    "label": "College Heights Herald, 15 April 2026; the caption names Marshall as the presidential candidate waiting to hear senator election results on election night (cropped to Marshall), photographer Jacob Sebastian. This portrait is reused for 2024-25 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/92840/multimedia/multimedia-photos/visuals-lucas-comes-out-on-top-at-high-emotion-election-party/"
+   }
+  },
+  {
+   "year": "2024-25",
+   "name": "Jakob Barker",
+   "file": "2026-27-jakob-barker-portrait.jpg",
+   "src": {
+    "label": "College Heights Herald, 15 April 2026; the caption names the newly appointed SGA executive branch, from left Vice President Jakob Barker, President Caden Lucas and Chief Financial Officer Will Derryberry, after the spring election in the Senate Chambers. Cropped to Barker, at left in the original. This portrait is reused for 2024-25 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/92840/multimedia/multimedia-photos/visuals-lucas-comes-out-on-top-at-high-emotion-election-party/"
    }
   },
   {
