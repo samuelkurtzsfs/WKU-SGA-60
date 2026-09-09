@@ -1900,7 +1900,85 @@
      }
     }
    ],
-   "status": "researched"
+   "status": "researched",
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "1968-05-02",
+      "candidates": [
+       {
+        "name": "Bill Straeffer",
+        "votes": 1732,
+        "won": true
+       },
+       {
+        "name": "Charles Whitley",
+        "votes": 1098
+       }
+      ],
+      "src": {
+       "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/527"
+      },
+      "turnout": 2894,
+      "note": "About 34 per cent of a student body of roughly 8,500."
+     },
+     {
+      "office": "Vice president",
+      "date": "1968-05-02",
+      "candidates": [
+       {
+        "name": "Terry Gilpin",
+        "votes": 1516,
+        "won": true
+       },
+       {
+        "name": "Bob Van Corbach",
+        "votes": 1206
+       }
+      ],
+      "src": {
+       "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/527"
+      }
+     },
+     {
+      "office": "Secretary",
+      "date": "1968-05-02",
+      "candidates": [
+       {
+        "name": "Becky Cooper",
+        "won": true
+       },
+       {
+        "name": "Mary Miller"
+       }
+      ],
+      "src": {
+       "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/527"
+      }
+     },
+     {
+      "office": "Treasurer",
+      "date": "1968-05-02",
+      "candidates": [
+       {
+        "name": "Tonii Rizzo",
+        "won": true
+       },
+       {
+        "name": "John Combs"
+       }
+      ],
+      "src": {
+       "label": "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968",
+       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/527"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "1969-70",
@@ -8787,7 +8865,28 @@
       "url": "https://digitalcommons.wku.edu/sga/Constitution/Amendments/1"
      }
     }
-   ]
+   ],
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "1977-04-15",
+      "candidates": [
+       {
+        "name": "Bob Moore",
+        "won": true
+       },
+       {
+        "name": "Tom Blair"
+       }
+      ],
+      "src": {
+       "label": "Herald 52:53, 15 Apr 1977"
+      },
+      "note": "Won by 26 votes, one of the narrowest margins in the record. Moore and Blair had come through a five-way primary."
+     }
+    ]
+   }
   },
   {
    "id": "1977-78",
@@ -10033,7 +10132,68 @@
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/37"
      }
     }
-   ]
+   ],
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "1979-04-19",
+      "candidates": [
+       {
+        "name": "Jamie Hargrove",
+        "votes": 1087,
+        "won": true
+       },
+       {
+        "name": "David Young",
+        "votes": 535
+       }
+      ],
+      "src": {
+       "label": "Herald 54:56, 19 Apr 1979"
+      },
+      "turnout": 1725,
+      "note": "Turnout up from 1,097 the year before."
+     },
+     {
+      "office": "Administrative vice president",
+      "date": "1979-04-19",
+      "candidates": [
+       {
+        "name": "Steve Fuller",
+        "votes": 973,
+        "won": true
+       },
+       {
+        "name": "Tom Jecker",
+        "votes": 574
+       }
+      ],
+      "src": {
+       "label": "Herald 54:56, 19 Apr 1979"
+      }
+     },
+     {
+      "office": "Activities vice president",
+      "date": "1979-04-19",
+      "candidates": [
+       {
+        "name": "Dean Bates",
+        "votes": 785,
+        "won": true
+       },
+       {
+        "name": "Ben Bratcher",
+        "votes": 761
+       }
+      ],
+      "src": {
+       "label": "Herald 54:56, 19 Apr 1979"
+      },
+      "note": "The closest of the four races."
+     }
+    ]
+   }
   },
   {
    "id": "1979-80",
@@ -29270,7 +29430,47 @@
       "url": "https://digitalcommons.wku.edu/sga/Constitution/Amendments/5"
      }
     }
-   ]
+   ],
+   "election": {
+    "races": [
+     {
+      "office": "Vice president of administration",
+      "date": "1999-04-15",
+      "candidates": [
+       {
+        "name": "Brandon Griffey",
+        "votes": 729,
+        "won": true
+       },
+       {
+        "name": "Amanda Kirby",
+        "votes": 652
+       }
+      ],
+      "src": {
+       "label": "Herald 74:51, 15 Apr 1999"
+      }
+     },
+     {
+      "office": "Vice president of public relations",
+      "date": "1999-04-15",
+      "candidates": [
+       {
+        "name": "Matt Bastin",
+        "votes": 806,
+        "won": true
+       },
+       {
+        "name": "Duan Wright",
+        "votes": 570
+       }
+      ],
+      "src": {
+       "label": "Herald 74:51, 15 Apr 1999"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "1999-00",
@@ -29791,7 +29991,30 @@
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8052/"
      }
     }
-   ]
+   ],
+   "election": {
+    "races": [
+     {
+      "office": "Vice president of finance",
+      "date": "1999-04-15",
+      "candidates": [
+       {
+        "name": "Joe Matheis",
+        "votes": 700,
+        "won": true
+       },
+       {
+        "name": "Ryan Morrison",
+        "votes": 688
+       }
+      ],
+      "src": {
+       "label": "Herald 74:51, 15 Apr 1999"
+      },
+      "note": "The campaign's most contentious race. The judicial council put the result under review hours later over a campaign-flier violation, then let it stand."
+     }
+    ]
+   }
   },
   {
    "id": "2000-01",
@@ -30467,7 +30690,51 @@
       "url": "https://digitalcommons.wku.edu/sga/Constitution/Amendments/7"
      }
     }
-   ]
+   ],
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2000-04-14",
+      "candidates": [
+       {
+        "name": "Cassie Martin",
+        "votes": 654,
+        "ticket": "with Leslie Bedo",
+        "won": true
+       },
+       {
+        "name": "Duan Wright",
+        "votes": 541,
+        "ticket": "with Dwight Campbell"
+       }
+      ],
+      "src": {
+       "label": "WKU news release, 14 Apr 2000 (archived)"
+      },
+      "note": "The presidency also carried the student seat on the Board of Regents."
+     },
+     {
+      "office": "Vice president of finance",
+      "date": "2000-04-14",
+      "candidates": [
+       {
+        "name": "Amy Caswell",
+        "votes": 706,
+        "won": true
+       },
+       {
+        "name": "Billy Lyons",
+        "votes": 461
+       }
+      ],
+      "src": {
+       "label": "WKU news release, 14 Apr 2000 (archived)"
+      },
+      "note": "The only other contested race."
+     }
+    ]
+   }
   },
   {
    "id": "2001-02",
@@ -31337,7 +31604,81 @@
       "url": "https://digitalcommons.wku.edu/sga/Constitution/Constitution/3"
      }
     }
-   ]
+   ],
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2002-04-11",
+      "candidates": [
+       {
+        "name": "Jamie Sears",
+        "votes": 1284,
+        "won": true
+       },
+       {
+        "name": "Sam Stinson",
+        "votes": 594
+       }
+      ],
+      "src": {
+       "label": "WKU News, 11 Apr 2002"
+      },
+      "note": "Held in online voting."
+     },
+     {
+      "office": "Executive vice president",
+      "date": "2002-04-11",
+      "candidates": [
+       {
+        "name": "John Bradley",
+        "votes": 1065,
+        "won": true
+       },
+       {
+        "name": "Dana Lockhart",
+        "votes": 730
+       }
+      ],
+      "src": {
+       "label": "WKU News, 11 Apr 2002"
+      }
+     },
+     {
+      "office": "Vice president of finance",
+      "date": "2002-04-11",
+      "candidates": [
+       {
+        "name": "Ross Pruitt",
+        "votes": 1524,
+        "won": true
+       }
+      ],
+      "src": {
+       "label": "WKU News, 11 Apr 2002"
+      },
+      "note": "Ran unopposed."
+     },
+     {
+      "office": "Vice president of public relations",
+      "date": "2002-04-11",
+      "candidates": [
+       {
+        "name": "Anna Coats",
+        "votes": 933,
+        "won": true
+       },
+       {
+        "name": "Holly Skidmore",
+        "votes": 809
+       }
+      ],
+      "src": {
+       "label": "WKU News, 11 Apr 2002"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "2002-03",
@@ -32180,7 +32521,63 @@
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/514"
      }
     }
-   ]
+   ],
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2003-04-08",
+      "candidates": [
+       {
+        "name": "John Bradley",
+        "votes": 1662,
+        "won": true
+       }
+      ],
+      "src": {
+       "label": "Herald, 8 Apr 2003"
+      },
+      "turnout": 2014,
+      "note": "Ran unopposed. Results were read out shortly after 1 a.m. by chief justice Holly Skidmore."
+     },
+     {
+      "office": "Executive vice president",
+      "date": "2003-04-08",
+      "candidates": [
+       {
+        "name": "Patti Johnson",
+        "votes": 1185,
+        "won": true
+       },
+       {
+        "name": "Dana Lockhart",
+        "votes": 685
+       }
+      ],
+      "src": {
+       "label": "Herald, 8 Apr 2003"
+      }
+     },
+     {
+      "office": "Vice president of administration",
+      "date": "2003-04-08",
+      "candidates": [
+       {
+        "name": "Jessica Martin",
+        "votes": 1056,
+        "won": true
+       },
+       {
+        "name": "Shawn Peavie",
+        "votes": 686
+       }
+      ],
+      "src": {
+       "label": "Herald, 8 Apr 2003"
+      }
+     }
+    ]
+   }
   },
   {
    "id": "2003-04",
@@ -33656,6 +34053,29 @@
       }
      ]
     }
+   },
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2005-03-17",
+      "candidates": [
+       {
+        "name": "Katie Dawson",
+        "votes": 1268,
+        "won": true
+       },
+       {
+        "name": "Josh Collins",
+        "votes": 472
+       }
+      ],
+      "src": {
+       "label": "Herald via Wayback, 17 Mar 2005"
+      },
+      "note": "The spring election's only contested race. Dawson was the sitting executive vice president, Collins the senate speaker."
+     }
+    ]
    }
   },
   {
@@ -38118,6 +38538,49 @@
       }
      ]
     }
+   },
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2010-04-01",
+      "candidates": [
+       {
+        "name": "Colton Jessie",
+        "votes": 726,
+        "pct": 63,
+        "won": true
+       },
+       {
+        "name": "Justin Thurman",
+        "votes": 424
+       }
+      ],
+      "src": {
+       "label": "Herald, 1 Apr 2010"
+      },
+      "note": "Jessie ran on sustainability, handicap accessibility and the tailgating policy. Thurman was the sitting administrative vice president."
+     },
+     {
+      "office": "Executive vice president",
+      "date": "2010-04-01",
+      "candidates": [
+       {
+        "name": "Kendrick Bryan",
+        "votes": 731,
+        "won": true
+       },
+       {
+        "name": "Currie Martin",
+        "votes": 415
+       }
+      ],
+      "src": {
+       "label": "Herald, 1 Apr 2010"
+      },
+      "note": "Bryan was re-elected."
+     }
+    ]
    }
   },
   {
@@ -43220,7 +43683,30 @@
       "url": "https://www.wku.edu/sga/executive/twelveonefifteenexecminutes.pdf"
      }
     }
-   ]
+   ],
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2016-04-20",
+      "candidates": [
+       {
+        "name": "Jay Todd Richey",
+        "pct": 64,
+        "won": true
+       },
+       {
+        "name": "Braxton Powell"
+       }
+      ],
+      "src": {
+       "label": "Herald, 20 Apr 2016"
+      },
+      "turnout": 2442,
+      "note": "One of the highest-turnout elections in the association's history. Richey was re-elected. Powell was elected a junior senator the same night."
+     }
+    ]
+   }
   },
   {
    "id": "2016-17",
@@ -47365,6 +47851,44 @@
       }
      ]
     }
+   },
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2019-04-17",
+      "candidates": [
+       {
+        "name": "Will Harris",
+        "ticket": "WGK, with Garrett Edmonds and Kenan Mujkanovic",
+        "won": true
+       },
+       {
+        "name": "Asha McWilliams",
+        "ticket": "with Jacob McAndrews and Symone Whalin"
+       }
+      ],
+      "src": {
+       "label": "Herald, 17 Apr 2019"
+      }
+     },
+     {
+      "office": "Administrative vice president",
+      "date": "2019-04-17",
+      "candidates": [
+       {
+        "name": "Kenan Mujkanovic",
+        "won": true
+       },
+       {
+        "name": "Symone Whalin"
+       }
+      ],
+      "src": {
+       "label": "Herald, 17 Apr 2019"
+      }
+     }
+    ]
    }
   },
   {
@@ -49032,7 +49556,28 @@
      ]
     }
    },
-   "status": "researched"
+   "status": "researched",
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2020-09-29",
+      "candidates": [
+       {
+        "name": "Garrett Edmonds",
+        "won": true
+       },
+       {
+        "name": "MJ Mayo"
+       }
+      ],
+      "src": {
+       "label": "Herald, 6 Oct 2020"
+      },
+      "note": "Balloting ran on TopNet, 28 to 29 September, delayed into the autumn. Edmonds was the sitting executive vice president."
+     }
+    ]
+   }
   },
   {
    "id": "2021-22",
@@ -51185,7 +51730,26 @@
       "url": "https://www.wku.edu/sga/2022-2023-legislative/minutes/minutes_11_8_22.pdf"
      }
     }
-   ]
+   ],
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2023-04-19",
+      "candidates": [
+       {
+        "name": "Sam Kurtz",
+        "ticket": "with Salvador León and Annalise Finch",
+        "won": true
+       }
+      ],
+      "src": {
+       "label": "Herald, 19 Apr 2023"
+      },
+      "note": "Ran unopposed. Results were read at about 12:30 a.m. Kurtz was the outgoing administrative vice president."
+     }
+    ]
+   }
   },
   {
    "id": "2023-24",
@@ -53529,7 +54093,27 @@
       "url": "https://www.wku.edu/sga/2024_2025_judicial/documents/sga_constitution.pdf"
      }
     }
-   ]
+   ],
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2025-04-15",
+      "candidates": [
+       {
+        "name": "Rush Robinson",
+        "ticket": "with Savanna Kurtz and Gabriel Jerdon",
+        "won": true
+       }
+      ],
+      "src": {
+       "label": "Herald, 16 Apr 2025"
+      },
+      "turnout": 966,
+      "note": "Ran unopposed."
+     }
+    ]
+   }
   },
   {
    "id": "2025-26",
@@ -55246,7 +55830,30 @@
      ]
     }
    },
-   "status": "researched"
+   "status": "researched",
+   "election": {
+    "races": [
+     {
+      "office": "President",
+      "date": "2026-04-15",
+      "candidates": [
+       {
+        "name": "Caden Lucas",
+        "ticket": "with Jakob Barker and Will Derryberry",
+        "won": true
+       },
+       {
+        "name": "Jaden Marshall",
+        "ticket": "with Kaden Blankenship and Miles VanRude"
+       }
+      ],
+      "src": {
+       "label": "Herald, April 2026"
+      },
+      "note": "Turnout up 66 per cent on the previous year's uncontested race. Marshall had sought to become the first Black male student body president, and Lucas nominated him as an at-large senator at the first meeting of the new senate."
+     }
+    ]
+   }
   }
  ]
 }

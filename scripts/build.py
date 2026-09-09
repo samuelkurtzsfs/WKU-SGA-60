@@ -498,6 +498,7 @@ NAV_ITEMS = [("index.html", "The board"), ("search.html", "Search"),
              ("officers.html", "The officers"),
              ("network.html", "SGA network"),
              ("history.html", "Timeline"),
+             ("elections.html", "The elections"),
              ("legislation.html", "Legislation"), ("corrections.html", "Corrections"),
              ("sources.html", "Sources"), ("about.html", "About and method")]
 
@@ -6859,6 +6860,220 @@ on its own <a href="history.html">year in the timeline</a>.</p>
                  depth=0, current="documents.html")
 
 
+# ---------------------------------------------------------------- the elections
+# Sixty years of choosing officers, year by year. Three things per year, in the
+# order a reader wants them: who stood against whom and what the count was,
+# then everything else the archive holds about that year's election, then the
+# files themselves.
+#
+# The head-to-head results come out of years.json, where they were written one
+# race at a time by reading the sources. They are not parsed here and not
+# inferred: a year the archive cannot settle simply has no result block, which
+# is the honest state of most of the 1980s and 1990s.
+ELECTIONS_CSS = """
+.elyear{margin:0 0 10px}
+.elyear>h2{font-size:1.55rem;margin:52px 0 2px;padding-top:16px;
+ border-top:2px solid var(--black);letter-spacing:-.03em}
+.elyear>.who{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.09em;
+ text-transform:uppercase;color:var(--red);margin:0 0 16px}
+.race{border:1px solid var(--line);background:var(--paper2);padding:14px 16px;margin:0 0 14px}
+.race h3{font-size:.82rem;font-family:var(--ui);letter-spacing:.09em;text-transform:uppercase;
+ color:var(--ink3);margin:0 0 10px;font-weight:600}
+.race h3 .d{color:var(--ink3);font-weight:400;letter-spacing:.04em;text-transform:none}
+.cand{display:flex;align-items:baseline;gap:10px;padding:5px 0;border-top:1px solid var(--line)}
+.cand:first-of-type{border-top:0}
+.cand .nm{flex:1;font-size:1rem}
+.cand.win .nm{font-weight:700}
+.cand .won{font-family:var(--ui);font-size:.66rem;font-weight:600;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--red);margin-left:9px;vertical-align:.12em}
+.cand .tk{display:block;font-size:.8rem;color:var(--ink3);font-weight:400}
+.cand .v{font-variant-numeric:tabular-nums;font-size:1rem;color:var(--ink2);min-width:4.6em;
+ text-align:right}
+.cand.win .v{color:var(--ink);font-weight:700}
+.cand .pc{font-family:var(--ui);font-size:.76rem;color:var(--ink3);min-width:3.2em;
+ text-align:right}
+.bar{height:3px;background:var(--line);margin:2px 0 0}
+.bar i{display:block;height:3px;background:var(--red)}
+.race .rn{margin:10px 0 0;font-size:.87rem;color:var(--ink2);max-width:var(--measure)}
+.race .rf{margin:8px 0 0;font-size:.8rem;font-family:var(--ui);color:var(--ink3)}
+.race .rf b{font-weight:600;color:var(--ink2)}
+.elev{margin:14px 0 0;border-top:1px solid var(--line)}
+.elev summary{cursor:pointer;padding:11px 0;font-family:var(--ui);font-size:12px;
+ font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.elev summary::marker{color:var(--red)}
+.elev summary:hover{color:var(--red)}
+.elev ol{margin:2px 0 14px;padding-left:1.4rem;font-size:.9rem;color:var(--ink2)}
+.elev li{margin:0 0 10px;max-width:var(--measure)}
+.elev li b{font-weight:600;color:var(--ink)}
+.elev li .s{display:block;font-size:.8rem;color:var(--ink3);margin-top:3px}
+.elfiles{margin:12px 0 0;font-size:.86rem;font-family:var(--ui)}
+.elfiles a{margin-right:14px}
+.jump{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);
+ padding:9px 0;margin:0 0 6px}
+.jump ul{list-style:none;display:flex;flex-wrap:wrap;gap:2px 9px;margin:0;padding:0}
+.jump a{font-family:var(--ui);font-size:11px;font-weight:600;letter-spacing:.03em;
+ color:var(--ink3);text-decoration:none}
+.jump a:hover{color:var(--red)}
+.nores{font-size:.9rem;color:var(--ink3);font-style:italic;margin:0 0 12px;
+ max-width:var(--measure)}
+"""
+
+# The subject is choosing people: elections, ballots, campaigns, referenda and
+# the disputes they produced. Ordinary business is not this page's concern.
+EL_RE = re.compile(
+    r"\belect(?:ion|ed|s|oral)?\b|\bballot|\bcampaign|\bcandidat|\breferend|"
+    r"\bturnout\b|\bran for\b|\bunopposed\b|\brunoff\b|\bprimary\b|\bfiled for\b|"
+    r"\brecount\b|\bpolls?\b|\bvoter", re.I)
+
+
+def el_events(y):
+    out = [e for e in (y.get("events") or [])
+           if EL_RE.search((e.get("title") or "") + " " + (e.get("body") or ""))]
+    return sorted(out, key=lambda e: (e.get("date") or "9999-99-99", e.get("title") or ""))
+
+
+def el_files(y, leg):
+    """Election material for this year: mirrored documents and election legislation."""
+    out = []
+    for d in (y.get("documents") or []):
+        f = d.get("file") or ""
+        if f and EL_RE.search(f + " " + (d.get("title") or "")):
+            out.append((d.get("title") or f, f"docs/{f}"))
+    for e in (y.get("events") or []):
+        s = e.get("src") or {}
+        f = s.get("file") or ""
+        if f and EL_RE.search(f) and not any(u.endswith(f) for _, u in out):
+            out.append((s.get("label") or f, f"docs/{f}"))
+    for e in leg:
+        if e.get("session") == y["id"] and EL_RE.search(e.get("title") or ""):
+            out.append((e["title"], f"legislation/{e['file']}"))
+    seen, uniq = set(), []
+    for label, url in out:
+        if url not in seen:
+            seen.add(url); uniq.append((label, url))
+    return uniq
+
+
+def render_race(r):
+    cands = r.get("candidates") or []
+    top = max([c.get("votes") or 0 for c in cands] or [0])
+    rows = []
+    for c in cands:
+        v = c.get("votes")
+        name = (f'<span class="nm">{h(c["name"])}'
+                + ('<span class="won">won</span>' if c.get("won") else "")
+                + (f'<span class="tk">{h(c["ticket"])}</span>' if c.get("ticket") else "")
+                + "</span>")
+        pct = f'<span class="pc">{c["pct"]}%</span>' if c.get("pct") else ""
+        votes = f'<span class="v">{v:,}</span>' if v else ""
+        bar = (f'<div class="bar"><i style="width:{round(100 * v / top)}%"></i></div>'
+               if v and top else "")
+        rows.append(f'<div class="cand{" win" if c.get("won") else ""}">'
+                    f'{name}{pct}{votes}</div>{bar}')
+    foot = []
+    if r.get("turnout"):
+        foot.append(f'<b>{r["turnout"]:,}</b> voted')
+    if r.get("src"):
+        foot.append(src_link(r["src"]))
+    when = f' <span class="d">{el_date(r["date"])}</span>' if r.get("date") else ""
+    return (f'<article class="race"><h3>{h(r.get("office", "Race"))}{when}</h3>'
+            + "".join(rows)
+            + (f'<p class="rn">{h(r["note"])}</p>' if r.get("note") else "")
+            + (f'<p class="rf">{" &middot; ".join(foot)}</p>' if foot else "")
+            + "</article>")
+
+
+def el_date(iso):
+    try:
+        y, m, d = iso.split("-")
+        months = ("January February March April May June July August September "
+                  "October November December").split()
+        return f"{int(d)} {months[int(m) - 1]} {y}"
+    except Exception:
+        return iso
+
+
+def render_elections(ys, leg=()):
+    years = [y for y in ys if el_events(y) or y.get("election")]
+    if not years:
+        return ""
+    years.sort(key=lambda y: y["id"], reverse=True)
+
+    jump = "".join(f'<li><a href="#e{h(y["id"])}">{h(y["id"])}</a></li>' for y in years)
+    secs = []
+    n_races = n_ev = 0
+    for y in years:
+        races = ((y.get("election") or {}).get("races") or [])
+        evs = el_events(y)
+        files = el_files(y, leg)
+        n_races += len(races); n_ev += len(evs)
+
+        # An election held in April chooses the officers for the *following*
+        # year, and the archive files the event under the year it happened in.
+        # So the person named here is the one who sat in the chair during this
+        # year, not the winner of the race shown below it; the race carries its
+        # own date and the reader should not have to work that out.
+        held = [l["name"] for l in (y.get("leaders") or [])
+                if l.get("role") == "president"]
+        who = ("President that year: " + ", ".join(held)) if held else "&nbsp;"
+
+        body = "".join(render_race(r) for r in races)
+        if not races:
+            body = ('<p class="nores">The archive has not settled a result for this year. '
+                    'What it does hold is below.</p>')
+        recs = ""
+        if evs:
+            lis = "".join(
+                f'<li><b>{h(e.get("title", ""))}</b>'
+                + (f' {time_tag(e["date"])}' if e.get("date") else "")
+                + (f'<br>{h(e["body"])}' if e.get("body") else "")
+                + (f'<span class="s">{src_link(e["src"])}</span>' if e.get("src") else "")
+                + '</li>' for e in evs)
+            recs = (f'<details class="elev"><summary>Everything the archive holds on this '
+                    f'election ({len(evs)})</summary><ol>{lis}</ol></details>')
+        fl = ""
+        if files:
+            fl = ('<p class="elfiles">' + "".join(
+                f'<a href="{h(u)}">{h(l)}</a>' for l, u in files) + '</p>')
+        secs.append(
+            f'<section class="elyear" id="e{h(y["id"])}">'
+            f'<h2>{h(y["id"])}</h2><p class="who">{who}</p>'
+            f'{body}{fl}{recs}</section>')
+
+    body = f"""
+<header class="head"><div class="wrap">
+ <p class="kicker">Sixty years of choosing officers</p>
+ <h1>The elections</h1>
+ <p class="scope">Every election student government has held that the archive can see, year
+ by year: who stood, who won, by how many where the count survives, and what went wrong along
+ the way. The disputes are here with the results, because a fair number of these were decided
+ twice, and one presidency was taken away by the Judicial Council and given back.</p>
+ <p class="scope">{n_races} results across {len(years)} years carry a head-to-head, and
+ {n_ev} dated entries carry the rest. Where a year has no result block it is because the
+ archive has not settled one, not because the election was quiet: the count is often the part
+ of an election that nobody wrote down.</p>
+</div></header>
+
+<div class="wrap">
+<nav class="jump" aria-label="Jump to a year"><ul>{jump}</ul></nav>
+<div class="body">
+{"".join(secs)}
+
+<div class="prose" style="margin-top:34px">
+<p>The people elected here are on the <a href="index.html">board</a> and have their own pages
+under <a href="officers.html">the officers</a>. The rules these elections ran under, the
+election codes and the constitutional clauses that set them, are on
+<a href="documents.html">governing documents</a>.</p>
+</div>
+
+</div></div>"""
+    desc = ("Every election student government at Western Kentucky University has held since "
+            "1966: the candidates, the vote counts where they survive, the recounts, the "
+            "disqualifications and the campaigns.")
+    return shell("The elections · SGA 60", desc, body, ELECTIONS_CSS,
+                 depth=0, current="elections.html")
+
+
 # ---------------------------------------------------------------- the officers
 OFFICERS_CSS = """
 .who-head{padding:44px 0 22px;border-bottom:1px solid var(--line)}
@@ -8011,6 +8226,9 @@ def main():
     _gd = render_documents(ys, leg)
     if _gd:
         (SITE / "documents.html").write_text(repair_anchors(_gd))
+    _el = render_elections(ys, leg)
+    if _el:
+        (SITE / "elections.html").write_text(repair_anchors(_el))
     people = officer_index(ys)
     ODIR = SITE / "o"
     ODIR.mkdir(parents=True, exist_ok=True)
