@@ -6530,6 +6530,14 @@ DOCUMENTS_CSS = """
  margin:0 0 14px}
 .gdoc .foot{margin:11px 0 0;font-size:.86rem;font-family:var(--ui)}
 .gdoc .foot a{margin-right:14px}
+.sess{margin:22px 0 0}
+.sess h3{font-family:var(--ui);font-size:12px;font-weight:600;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--red);margin:0 0 6px;padding-top:12px;
+ border-top:1px solid var(--line)}
+.sess ul{list-style:none;margin:0;padding:0}
+.sess li{margin:0 0 6px;font-size:.92rem;max-width:var(--measure)}
+.sess li .kind{font-family:var(--ui);font-size:.72rem;letter-spacing:.06em;
+ text-transform:uppercase;color:var(--ink3);margin-right:7px}
 .gapnote{background:var(--paper2);padding:16px 18px;margin:26px 0 0;
  border-left:3px solid var(--red);max-width:var(--measure)}
 .gapnote h3{font-size:.95rem;margin:0 0 7px}
@@ -6698,7 +6706,25 @@ def gov_documents(ys):
     return sorted(out, key=lambda t: t[1].get("file", ""))
 
 
-def render_documents(ys):
+def gov_legislation(leg):
+    """Bills and resolutions whose subject is the constitution or the bylaws.
+
+    These were already mirrored by the legislation harvest; this page only has
+    to find them again. Grouped by session, newest session first.
+    """
+    out = {}
+    for e in leg:
+        # everything filed under 'governing' is a governing document by
+        # definition, whatever its title says: the election code and the
+        # Judicial Council's procedures belong here as much as the constitution
+        if e.get("session") == "governing" or GOV_RE.search(e.get("title") or ""):
+            out.setdefault(e.get("session") or "undated", []).append(e)
+    for v in out.values():
+        v.sort(key=lambda e: (e.get("type") or "", e.get("title") or ""))
+    return out
+
+
+def render_documents(ys, leg=()):
     events = gov_events(ys)
     docs = gov_documents(ys)
     if not events:
@@ -6755,6 +6781,27 @@ def render_documents(ys):
               f'title="{h(d.get("title") or d["file"])}"></iframe></details>'
               f'<p class="foot">{"".join(links)}</p></article>')
 
+    acts = gov_legislation(leg)
+    n_acts = sum(len(v) for v in acts.values())
+    acts_html = ""
+    if acts:
+        blocks = []
+        for sess in sorted(acts, key=lambda x: (x == "governing", x), reverse=True):
+            label = "In force now" if sess == "governing" else sess
+            lis = "".join(
+                f'<li><span class="kind">{h(e.get("type", ""))}</span>'
+                f'<a href="legislation/{h(e["file"])}">{h(e["title"])}</a></li>'
+                for e in acts[sess])
+            blocks.append(f'<section class="sess"><h3>{h(label)}</h3><ul>{lis}</ul></section>')
+        acts_html = f"""<section class="held" id="acts">
+<h2>The legislation that changed them</h2>
+<p class="secnote">Every bill and resolution in the archive whose subject is the constitution or
+the bylaws: {n_acts} of them across {len(acts)} sessions, from the 1976 revision committee to
+the present. Each one is the instrument that made a change, where the documents above are the
+result. All are mirrored here and open in full.</p>
+{"".join(blocks)}
+</section>"""
+
     unplaced = sum(1 for _, e in events if id(e) not in placed)
     n_era = len(ERAS)
     body = f"""
@@ -6769,8 +6816,8 @@ def render_documents(ys):
  <p class="scope">This page follows the documents rather than the people. It sets out
  {n_era} generations of them and lists the {len(events)} dated entries in the archive whose
  subject is the constitution or the bylaws, each with the source it came from. The
- {len(docs)} files the project has been able to recover are at the foot of the page, readable
- here.</p>
+ {len(docs)} recovered files are at the foot of the page, readable here, together with the
+ {n_acts} bills and resolutions that amended them.</p>
 </div></header>
 
 <div class="wrap"><div class="body">
@@ -6794,11 +6841,13 @@ as the consolidated documents they changed.</p>
  They remain on their own year pages and in the timeline.</p>
 </div>''' if unplaced else ''}
 
+{acts_html}
+
 <div class="prose" style="margin-top:34px">
 <p>The institutions these documents created, the Congress that became a Senate and the
 judicial body that has ruled on what they mean, are described on
-<a href="branches.html">how it was built</a>. The bills and resolutions passed under them are
-in the <a href="legislation.html">legislation archive</a>, and every entry above also appears
+<a href="branches.html">how it was built</a>. Everything else student government passed is in
+the <a href="legislation.html">legislation archive</a>, and every entry above also appears
 on its own <a href="history.html">year in the timeline</a>.</p>
 </div>
 
@@ -7959,7 +8008,7 @@ def main():
     _br = render_branches(ys)
     if _br:
         (SITE / "branches.html").write_text(repair_anchors(_br))
-    _gd = render_documents(ys)
+    _gd = render_documents(ys, leg)
     if _gd:
         (SITE / "documents.html").write_text(repair_anchors(_gd))
     people = officer_index(ys)
