@@ -18986,3 +18986,164 @@ legislation files in the built site.
 - The 1987 evaluations entry calls them course evaluations where the Herald index
   says only "Required Evaluations". The reading is the natural one but it is an
   inference, and settling it needs the page.
+
+# 9 September 2026, morning — the elections page audited, and a turnout figure with nothing behind it
+
+No pull request was open. The queue has been empty since #394 merged at half past
+three, and the two routines still running, the editor and the photograph agent,
+had both landed their work. The standing instruction still names #6, #7 and #8 as
+stale; all three were closed on 18 August and the numbering has run past #394, so
+that part of the instruction stays spent.
+
+What had reached the live site since the last audit was not a research branch at
+all. Five commits went onto main directly overnight, and the largest of them,
+"The elections, year by year, with the counts that survive", added a new
+`election` block to sixteen years of `years.json` and a page to render it: thirty
+races, with head-to-head vote counts, turnout figures and notes. Nothing had
+reviewed it. That is what this run audited.
+
+## Every race is traceable, but only one carried a link
+
+The thirty races are a summary layer over facts the archive had already cited.
+Every one of them corresponds to an event in the same year that carries a full
+URL, so nothing in the new layer is unsupported by the archive's own record. But
+twenty-nine of the thirty carried a source label with no `url` at all. A reader
+of the elections page saw vote counts with a citation they could not follow,
+while the identical fact on the year page a click away carried a working link.
+
+The twenty-five whose labels match an event source exactly now carry that event's
+URL. Four needed a judgement: two 2019 races whose label matched both the
+election report and an unrelated funding story, resolved to the election report;
+2024-25, dealt with below; and the 2026 race, whose label read only "Herald,
+April 2026" and now reads 15 April 2026 with the article behind it. All thirty
+races now carry a link.
+
+## The one link there was pointed at the wrong document
+
+The 1968 races cited "UA3/3/1 Memo Re: Results of Election, Ron Beck, 3 May 1968"
+at `dlsc_ua_records/527`. Both records were opened. 527 is Kelly Thompson's letter
+to the Organizational Committee approving the constitution — the very document the
+Reed Morgan settled fact turns on. Beck's results memo is 543, which is what the
+year's own event has always cited. Corrected on all four 1968 races.
+
+## Not cut, after all: the 2026 turnout, re-cited
+
+The 2026-27 presidential race carried the note "Turnout up 66 per cent on the
+previous year's uncontested race." Both 2026 Herald articles were opened and
+neither contains a turnout figure, a vote total, or the number 66, and the
+archive's own event for that election says so in terms: the Herald published no
+vote totals. On that reading the sentence was cut.
+
+That was wrong, and it was caught before this went anywhere. The built site
+carries the figure on two other pages, and following it back through `build.py`
+led to an event on the 2025-26 year, dated the same 15 April, sourced not to the
+Herald but to the university's own release: 1,601 students voted in the general
+election of 13 to 15 April 2026. The release was opened and prints exactly that.
+1,601 against 966 the year before is 635 more, a rise of 66 per cent. The claim
+was true and sourced the whole time; only the citation on the race was wrong.
+
+So the sentence is restored, with the figure and the dates the release actually
+gives, and the race now cites the release rather than the Herald story that
+carries the result but not the count. The lesson is the one the handoff already
+teaches about the local Herald index: a miss in the source in front of you is not
+evidence of absence. The archive had the source; the race pointed at the wrong
+one.
+
+## Rescued rather than cut: the 2020 balloting dates
+
+The 2020-21 race said balloting ran on TopNet on 28 and 29 September, citing the
+Herald of 6 October. That article is a photo caption in the present tense about a
+town hall, plus a headline; it names Edmonds, Mayo and the office, and says
+nothing about TopNet or those dates. Neither does its sister story of 30
+September. The dates are real: the Herald of 22 September, already cited in this
+year, prints them. But it prints them as a notice — elections "will be held" —
+which proves the schedule and not the running of it, so both the race note and the
+standing event now say the election was set for TopNet on those days, with the
+results announced at the virtual party on the 30th.
+
+## Rescued: a result the archive itself says was overturned
+
+The 1999-00 race recorded Joe Matheis beating Ryan Morrison 700-688 for vice
+president of finance, and the judicial council letting the result stand after a
+flier complaint. That is where the note ended. The archive's own events for the
+same weeks go further: on 20 April the council overturned the election, and the
+Herald of 27 April reported Morrison winning an SGA election. A reader of the
+elections page was being shown Matheis as the holder of the office. The note now
+carries the overturn and the re-run, and keeps the archive's existing caution that
+no source found independently names the office that re-run race was for.
+
+## The turnout that was true but cited to the wrong page
+
+2024-25 gave Rush Robinson unopposed with a turnout of 966, cited to the Herald of
+16 April 2025. That article confirms the unopposed win and prints no turnout. The
+university's own release of the same date does: 966 students voted in the general
+election held 13 to 15 April. The race now cites the release, which carries both
+the result and the figure.
+
+## Traps
+
+Ten claims were opened at their sources, above the eight the standing instruction
+asks for: the Beck memo, Herald 52:53 for Moore's 26-vote win, Herald 74:51 for the
+1999 executive races, the 2003, 2019, 2025, 2020, 2026 and 2026 senate stories, and
+the 2025 university release. Every vote count checked held: Bradley 1,662
+unopposed on a turnout of 2,014, Johnson 1,185 to Lockhart's 685, Martin 1,056 to
+Peavie's 686, Moore by 26 over Blair, Harris over McWilliams, Robinson unopposed.
+The 1968 figures match the settled fact in CLAUDE.md exactly, 1,732 to 1,098.
+
+One claim was cut and then restored on better evidence, above; one advance notice
+was found and handled. No committee chair was promoted
+to officer and no bill's author made a member. Nobody is matched by surname alone.
+No changed surname created a duplicate. Nothing touches the settled facts except
+the 1968 race, which now cites the document that settles it. The one living-person
+passage added, Marshall's, is his own statement to the Herald about his own
+campaign and stays as the source has it. No contributor commit was in scope.
+
+## Filing, reported and not changed
+
+Eleven of the sixteen years file an election under the year the ballot was held;
+four — 1968-69, 1999-00, 2000-01 and 2026-27 — file it under the year the winners
+served. The 15 April 1999 ballot is split across two year pages by that
+difference, two of its races on 1998-99 and one on 1999-00. No fact is wrong
+either way and the choice belongs to whoever designed the page, so it is recorded
+here rather than changed. Worth noting alongside it: the 1999 presidential result,
+Coates and Martin over Jones and Yeckering by 614 to 611 on a recount, is in the
+archive as an event but has no race block.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the five previous nights,
+unchanged by this run: four are a proposal and its later vote or defeat, two are
+separate bills taken the same day in September 1991. All six stay.
+
+## Verdict
+
+Nothing was waiting to be merged. The audit went to the elections layer that
+reached the live site unreviewed, and it needed the work: one citation fetching
+the wrong document, one result published without the overturn that followed it,
+two figures attached to sources that do not carry them, and twenty-nine races a
+reader could not check by clicking. Nothing was found to be false. Every number
+checked in the new layer held up; what failed was the pointing, not the facts.
+
+## Counts
+
+61 years, 1,984 dated events, 60 people who were president. 2,652 recorded terms
+of office held by 1,811 people, 98% carrying an account of what the person did.
+46 people recorded under more than one spelling. 308 documents and 1,111
+legislation files in the built site. 30 election races across 16 years, all now
+carrying a source and a link.
+
+## Still open
+
+- The filing split above, for whoever owns the elections page. Related: the 15
+  April 2026 election is written up twice, as an event on 2025-26 carrying the
+  turnout and as an event plus a race block on 2026-27. Neither contradicts the
+  other and both are sourced, but they are one election on two year pages.
+- The pre-2000 gaps are unchanged: the 1997-98 legislation gap, Eddie Myers
+  1994-95 and Jacob A. Miers 2008-09.
+- The three flagged name pairs: Staci/Stacy Kitchens, Carleton Ruminer/Carlton
+  Rumenier, Brittany Ann/Brittany-Ann Wick.
+- The Mark Chesnut portrait lead: the 1981 *Talisman* index gives him page 234 but
+  the OCR does not repeat the name, so the leaf has to be pulled as an image.
+- The 1987 evaluations entry calls them course evaluations where the Herald index
+  says only "Required Evaluations".
