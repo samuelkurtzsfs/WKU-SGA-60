@@ -1,3 +1,140 @@
+# 9 September 2026, later — the right article, the wrong frame
+
+One pull request was open: #396, the rolling photograph branch, twelve new rows
+in `data/photos.json` and two new image files. The standing instruction still
+names #6, #7 and #8 as stale; all three were closed on 18 August and the
+numbering has run past #390, so that part of the instruction stays spent. The
+branch cut cleanly from current `main`, so none of the orphan-history warnings
+applied.
+
+Twelve rows is small enough to check whole, and every one was checked: all nine
+distinct sources were opened, and where the source served the image file
+directly it was fetched and compared byte for byte against the copy in the
+repository.
+
+## The frame that was not him
+
+`2025-26-blake-graham.jpg` was filed as the portrait of Blake Graham, chief
+justice for 2025-26, on the strength of a caption in the Herald of 12 November
+2025 that does exist and does say what the label says it says. The article
+carries three photographs. The caption naming Graham belongs to frame SAV2500.
+The file committed to the repository is byte-identical — md5 `b296c67d…` — to
+frame SAV2513, whose caption names three other people: Malachi Humble, Jackson
+Smith and Ciin Lun, presenting the community umbrellas bill. Opening the image
+is what settled it; it shows three students at a podium, which is what SAV2513's
+caption describes and not what Graham's does.
+
+So the archive would have published a photograph of three named students as the
+portrait of a fourth. That is the failure `CLAUDE.md` means when it says a
+misidentified face is worse than no face, and it is worse than the usual version
+because the people wrongly pictured are named and living.
+
+The obvious repair was to re-point the row at SAV2500, and it does not work.
+SAV2500 is a wide shot of the chamber taken from behind the speaker: Graham is
+the out-of-focus back of a head in the right foreground, and the faces actually
+legible in it belong to the senators watching him. As a portrait it would
+mislead a reader in the same direction as the file it replaced. There is no
+usable photograph of Graham in that issue, so the row is withdrawn and the file
+deleted rather than re-pointed. He keeps a full written record in `years.json`;
+what he does not have is a face, and that is the honest state of the archive.
+
+## What held
+
+The other new portrait stands, and stands firmly. `2021-22-olivia-feck.jpg` is
+byte-identical to the image the Herald pairs, inside the same `<figure>` block,
+with the caption naming her — the pairing checked by parsing the figures rather
+than by proximity in the page text, because the three candidate photographs and
+their three credits interleave in a way that reading the raw source would get
+wrong. One correction to its citation: the article was published 18 April 2022,
+not 15 April as the label said. The date is fixed; the identification needed
+nothing.
+
+The nine carried-forward rows all hold. Each attaches an already-published
+portrait to a further year in which `years.json` independently records that
+person in an office, and every one of the twelve name-and-year pairs in the diff
+was confirmed against `years.json` before anything else: Feck a senator at large
+in 2021-22, Robinson and Finch senators in 2022-23, Jerdon and Marshall in
+2023-24, Bailey, Barker, Lucas, Jerdon, Marshall and Finch again in 2024-25.
+None is a committee chair promoted to officer and none is a bill's author made a
+member. The practice itself is long-settled here: 202 rows on `main` already
+share a file across years, 77 of them saying so in the label.
+
+Because the Graham error was an image-to-caption mismatch rather than a reading
+error, the same test was run on the reused files, which this branch spreads to
+more years than they had before. Robinson's and Lucas's are byte-identical to
+the WKU News article images their labels cite. Finch's is a 1000×1500 reduction
+of the 4480×6720 headshot at the URL given, same aspect, same picture. Jerdon's,
+Barker's, Marshall's and Bailey's are crops, so they were opened and read against
+their captions: Jerdon speaking with a folder in a room whose screen timestamp
+reads 10/16/2025, the date his caption gives; Barker cropped from the executive
+group photograph with the next person's shoulder still at the frame edge, which
+is what a crop of the leftmost of three looks like; Marshall head down against a
+rail, Bailey mid-clap. All four match. The mismatch was confined to one row.
+
+## The traps checklist
+
+No advance notice is cited; every source is a report or a photograph filed after
+the fact. No committee chair is recorded as an officer and no bill's author as a
+member. Nobody is matched by surname alone — every pairing went through the full
+name against `years.json`. The one name change in the diff, `Annie Finch` to
+`Annalise Finch`, is not a merge of two people: `name-aliases.json` already
+declares them one person at line 56, `years.json` uses the Annalise spelling for
+that senate seat, and the entry was previously attaching to nobody. No April
+result is filed forward wrongly, because no election result is claimed here at
+all; the Feck photograph sits in 2021-22 because she held a seat that year, not
+because of the April ballot it illustrates. Nothing touches the settled facts.
+Nothing about a living person goes beyond the caption that carries them, and the
+one row that did — the podium detail in the Graham label, which his caption does
+not contain — went out with the row. No contributor commit was in scope.
+
+## Cut
+
+One row and one image file: the Blake Graham portrait for 2025-26, withdrawn as
+a misidentification, with the file deleted from `data/photos/`. One label
+corrected: the Feck citation redated from 15 to 18 April 2022. Eleven of the
+twelve rows survive unchanged.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs it has reported every night:
+four are a proposal and its later vote or defeat, two are separate bills taken
+the same day in September 1991. The identical six come back from `main` with
+this branch's data reverted, so none is this diff's doing, and all six stay.
+
+## Verdict
+
+Merged, after the cut. Eleven rows verified to the byte or to the caption, one
+row withdrawn. The research routine's reading was sound throughout — every
+caption it quoted says what it reported — and what failed was the step between
+reading the caption and saving the file. That is the lesson for the photograph
+agent, and it is narrow enough to fix: when an article carries several
+photographs, checksum the file you saved against the specific frame the caption
+belongs to, and open it before committing. A caption verified is not a file
+verified.
+
+## Counts
+
+61 years, 1,984 dated events, 60 people who were president. 2,652 recorded terms
+of office held by 1,811 people, 98% carrying an account of what the person did.
+46 people recorded under more than one spelling. 308 documents and 1,111
+legislation files in the built site.
+
+## Still open
+
+- Blake Graham has no portrait. The lead is a Herald frame from another issue,
+  or WKU's own directory; the 12 November 2025 issue has nothing usable.
+- Morgan Gammons, named in the Herald caption of 19 Nov 2024 being sworn in by
+  Ellen Henderson — a portrait lead the run logged and did not pursue.
+- `digitalcommons.wku.edu`'s `cgi/viewcontent.cgi` was behind a Cloudflare
+  challenge for the whole of the research run, closing off the Talisman and UA1C
+  PDFs. Landing pages on the same host answered normally. Worth re-testing
+  before the next photograph pass is scheduled, since it blocks the twelve years
+  from 1993-94 to 2009-10 that still have no general photograph.
+- Everything carried in the previous entry stays open.
+
+---
+
 # 9 September 2026 — three faces carried forward, and the source that did not say so
 
 One pull request was open: #392, the rolling photograph branch, thirty-seven
