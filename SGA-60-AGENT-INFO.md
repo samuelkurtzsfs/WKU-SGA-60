@@ -4464,6 +4464,110 @@ single unconfirmed finding rather than as settled, and if a future run can
 reach the CDX API cheaply, confirm it once before the two leads are retired
 for good.
 
+**A second 9 September 2026 run (photograph agent, scheduled, afternoon).**
+Re-checked priorities one and two again before anything else: Nick Todd,
+Katie Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait,
+and a script comparing every `leaders` entry in `data/years.json` against
+`data/photos.json` by year and name found zero presidents or student
+regents without one, out of 73 leader-terms across all 61 years. Both
+priorities remain closed and have been since 21 August.
+
+Spent the middle of the run on priority three, working the six 1970s-80s
+officers this project had already flagged as gaps (`data/photo-finds/
+_officers-truly-missing-2026-09-06.json`) but had not yet written up as
+tried: Vern Pulman (1974-75), David Bass (1977-78), Steve Wilson (1978-79),
+Mark Chesnut (1980-81), Chris Millay and Dwight Austin (1986-87). Worked
+each independently against the archive.org full text of the relevant
+Talisman, without first reading `_do-not-use.json` — and every one of the
+six reproduced a negative already recorded there, in some cases in less
+detail than the existing entry (Wilson's existing entry notes a genuine
+senior class portrait under his name that this run's search missed
+entirely, ruled out only because nothing ties it to the Judicial Council
+chairmanship). No new information. The lesson repeats the one from the
+morning entry: read the negative rolls before choosing names. `_do-not-use
+.json` is the file to check first for this era, not just `_officers-
+truly-missing`, since the latter is only a list of gaps and says nothing
+about what has already been tried against each one.
+
+Confirmed why: archive.org's full text is restricted to 1971-1981 and
+1986-87 for this collection (checked 1994, 1995, 1996, 1997, 1998, 2001,
+2003, 2004, 2006, 2007, 2009 and 2010 directly against the metadata API -
+every one of those items exists but carries no `_djvu.txt` and no `.pdf`,
+lending-only with no full text), and every name on the truly-missing list
+that falls inside the free range already has a `_do-not-use.json` entry.
+The free range is exhausted. A future run gains nothing by re-trying it
+without a new source (a UA1C image collection, a Herald page image) to
+bring.
+
+Also learned, and worth recording since it cost real time: the archive.org
+`fulltext/inside.php` search-inside endpoint, used to translate a name into
+a leaf number for the `/page/nNNN_w<width>.jpg` image endpoint, is not
+reliable for that purpose. It found the David Bass caption one leaf off
+from where it actually sits (page field 38, true leaf 37) and, for Steve
+Wilson, returned a leaf that on inspection held unrelated alphabetically-
+sorted directory content nowhere near the "W" names - the paragraph-to-leaf
+association the API returns does not always match the leaf the image
+endpoint serves. It is a lead worth one nearby-page check, not a citation.
+
+Turned to the modern end for the rest of the run: six officers from the
+untried part of the truly-missing list who had not been touched in the
+morning run's thirteen-name sweep - Sawyer Coffey (2014-15/15-16), Josh
+Knight (2016-17), Abhishek Bose (2016-17), Tribhuwan Singh (2021-22),
+Zachary Skillman (2021-22) and Justin Goins (2022-23) - searched against
+`wkuherald.com`'s own WordPress API (`/wp-json/wp/v2/posts?search=`, full
+browser user agent). None produced an individually captioned photograph;
+detail on each is in the six new entries added to `_do-not-use.json` this
+run. The pattern already documented on 5-9 September held again: articles
+naming the person are easy to find, a photograph captioned with their name
+is not. Also confirmed, and worth recording as its own negative: a
+date-scoped `wkuherald.com` search for "SGA" across 1 Aug 2005-1 Jun 2006
+(the heart of the 2005-06 gap in `data/photos.json`'s `years` array)
+returned zero posts. `wkuherald.com`'s WordPress archive does not reach
+that far back with any real density - the handful of 2002-2003 hits found
+earlier are sparse exceptions, not a usable seam - so the twelve-year
+general-photograph gap (1993-94 through 1997-98, 2000-01, 2002-03, 2003-04,
+2005-06, 2006-07, 2008-09, 2009-10) still rests on Herald PDF issue pages or
+a UA1C collection search, the same conclusion the 6 September entry reached
+for the individual-portrait gaps in the same years.
+
+`build.py` and `check_data.py` both pass clean (61 years, 60 presidents,
+all still portrayed). No files changed under `data/photos/` or
+`data/photos.json` this run; the only data change is the six new entries in
+`data/photo-finds/_do-not-use.json`. Merged `origin/main` (a plain merge,
+real merge base, no conflicts) before starting. Landed on `research-photos`.
+
+**Editor's check on the above, 9 September 2026, before merging.** All six new
+negatives were re-verified against their own citations and all six held: the
+three wkuherald.com articles exist with the dates and titles given, article
+61104's featured image really is a reused and uncaptioned March 2021 SGA
+photograph, article 71533's really is the executive cabinet on 30 August 2022
+credited to Sean McInnis, and the Bornefeld caption is verbatim from that
+article's featured image (media 70593). The Coffey, Knight and Bose searches
+each reproduced the result described, Knight's still returning an unrelated
+sportsman of the same name. The portrait sweep was independently re-run and
+agrees exactly: 73 leader-terms across 61 years, none without a portrait.
+
+Two entries were corrected rather than cut. The **Skillman** entry cited
+article 61104 without recording that the same article profiles *two*
+Skillmans - Zach (the `name-aliases.json` spelling of Zachary) and Jacob, the
+other senator-at-large of that Senate - described in near-identical terms,
+both juniors in business economics, both Gordon Ford ambassadors, both in the
+Center for Capitalism Book Club. `years.json` carries both men separately.
+This is the Lodmell pattern again, and left as written the entry would have
+invited a later run to attach one brother's face to the other; the warning is
+now in the entry itself. Its parenthetical crediting Zachary's committee
+chairmanship to this article was also dropped, the article calling him only a
+senator. The **Goins** entry quoted the Bornefeld caption at seventeen words,
+over the fifteen-word limit; it is paraphrased down, with the caption evidence
+kept whole and the article's three interior captions added, which name the
+Speaker of the Senate and the Judicial Council as a body but never Goins.
+
+The lesson for the photograph routine is the one this file keeps recording
+from the other direction: before filing a negative under a name, check whether
+the source carries a second person of that surname. A negative roll is read by
+later runs as settled, so a name attached to the wrong evidence is as costly
+here as anywhere else in the archive.
+
 ## 9. Restarting a session
 
 ```bash

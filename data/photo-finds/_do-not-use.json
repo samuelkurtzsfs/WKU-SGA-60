@@ -607,5 +607,41 @@
   "year": "2022-23",
   "file": "https://www.wku.edu/img_news/article_images/11877.jpg",
   "reason": "WKU News, 'Gatton Academy Students Present Research at Kentucky Capitol' (articleid=11877), shows seven Gatton Academy students in one group photograph on the Capitol steps, Ray's research among those described in the text. No per-person caption ties any of the seven faces to a name, and the group cannot be told apart by the article text alone. Not used."
+ },
+ {
+  "name": "Sawyer Coffey",
+  "year": "2014-15",
+  "file": "wkuherald.com search, 'Sawyer Coffey' (director of public relations, 2014-15 and 2015-16)",
+  "reason": "The wkuherald.com WordPress search turns up only SGA meeting-coverage articles (colonnade program, a defeated charity-run bill, the Aramark/Garrett discussion) that do not name Coffey in the body text at all, plus an unrelated Guinness World Record piece. None carries a featured image of him. No individually captioned photograph found."
+ },
+ {
+  "name": "Josh Knight",
+  "year": "2016-17",
+  "file": "wkuherald.com search, 'Josh Knight' (academic affairs committee chair 2014-15, director of academic and student affairs 2016-17)",
+  "reason": "The name is too common on wkuherald.com: the search returns WKU baseball/basketball coverage of an unrelated Josh Knight (sports), not the SGA officer. No SGA article naming him carries an individual photograph."
+ },
+ {
+  "name": "Abhishek Bose",
+  "year": "2016-17",
+  "file": "wkuherald.com search, 'Abhishek Bose' (director of information technology)",
+  "reason": "The only hit is a 2017 piece on an Indian student group's cultural celebration, which does not name Bose in the text and carries no photograph tied to him. No SGA-context photograph found."
+ },
+ {
+  "name": "Tribhuwan Singh",
+  "year": "2021-22",
+  "file": "wkuherald.com, 'Newly elected SGA members share goals for the semester', 23 Sep 2021 (article 61104)",
+  "reason": "Singh is quoted at length in this piece on his election as director of enrollment and student experience, but the article carries one generic featured image, not per-officer photographs, and no other wkuherald.com article was found naming him. No individually captioned photograph found."
+ },
+ {
+  "name": "Zachary Skillman",
+  "year": "2021-22",
+  "file": "wkuherald.com, 'Newly elected SGA members share goals for the semester', 23 Sep 2021 (article 61104)",
+  "reason": "The piece profiles him as Zach Skillman, the spelling data/name-aliases.json already maps to Zachary Skillman. WARNING for any run that follows this citation: the same article separately profiles Jacob Skillman, the other senator-at-large of that Senate, and describes the two in near-identical terms - both juniors majoring in business economics, both Gordon Ford College of Business ambassadors, both members of the Center for Capitalism Book Club. They are two people, not one name spelled two ways, and years.json carries both. No photograph in this article may be assigned to either of them on the strength of the surname. In any case, as with Singh in the same article, only one generic featured image runs with it - an uncaptioned SGA photograph from March 2021, reused - not per-officer photographs. The article calls him a senator; his committee chairmanship is recorded elsewhere and is not evidenced here. No individually captioned photograph found elsewhere on wkuherald.com."
+ },
+ {
+  "name": "Justin Goins",
+  "year": "2022-23",
+  "file": "wkuherald.com, 'SGA announces election results', 19 Apr 2023 (article 71533), and 'SGA Judicial Council unanimously votes against censure...', 17 Feb 2023 (article 70591)",
+  "reason": "Both articles name Goins in his role as chief justice reading results or presiding, but neither photograph is captioned with him. The election-results piece runs an uncaptioned-by-name group photograph of the executive cabinet from a different date (30 Aug 2022, credited Sean McInnis). The censure-hearing piece's featured photograph (media 70593) is captioned with the president alone - 'Cole Bornefeld (center) waits to speak' at the hearing - and the three photographs inside the article are captioned for the Speaker of the Senate and for the Judicial Council as a body. Goins presided and may be in one of the frames, but no caption names him or gives a position for anyone but Bornefeld, so no face can be assigned to Goins from any of them. No individually captioned photograph found."
  }
 ]
