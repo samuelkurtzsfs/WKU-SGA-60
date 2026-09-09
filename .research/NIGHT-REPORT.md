@@ -1,3 +1,137 @@
+# 9 September 2026, late — the mirrored documents checked as files, and four quotations one word over
+
+No pull request was open. The three stale branches named in the standing brief — #6, #7
+and #8, the 4 August snapshots — have been closed for weeks, and every `research-*` and
+`editor-*` branch still on origin was re-checked: each is either a superseded snapshot with
+no merge base or squash-merge residue whose content is already on main. `research-photos`
+shows five commits ahead and carries nothing new; measured against main rather than against
+the merge base it is *behind*, missing the night report entry and the Joe Morel spelling
+change from #400. Nothing was waiting.
+
+So the audit went to a layer of the live site that no recent pass has tested as *files*:
+the 308 mirrored documents a reader can open.
+
+## The documents check out as files
+
+Every one of the 151 documents referenced from `years.json` exists on disk, and all 308
+files in `data/documents/` begin with `%PDF`. That is trap 7 in the handoff — a blocked
+download saved as the bot-check HTML page under a `.pdf` name — and there is no instance of
+it in the archive. The trap is not hypothetical: fetching this run's one open question from
+`viewcontent.cgi` returned exactly that, a 5,894-byte HTML challenge page that `curl` wrote
+to a file named `.pdf`. Checked, discarded, not mirrored.
+
+158 files on disk are referenced by no entry — chiefly the 1988-89 minutes series. They are
+mirrored and copied to the site but nothing links them. Recorded, not changed; whether to
+attach or drop them is an editorial choice, not an error.
+
+## One page range that pointed past the end of its own file
+
+Page counts were parsed out of all 308 PDFs three ways and the `page` and `sga_pages` of
+every document tested against them. **One entry failed.** The 1982-83 ASG minutes of
+29 April 1982 told readers `sga_pages` "1-3"; the file has two pages. A reader following
+that citation was sent to a page that does not exist in the document in front of them.
+
+The convention is unambiguous — every other minutes document in the archive whose range
+covers the whole file states it exactly, "1-2" on two pages, "1-4" on four — so this is a
+slip of one, and it is now "1-2".
+
+What could **not** be settled is whether the original is also two pages or whether the
+mirror is short a leaf. The source PDF is behind the bepress 403, retried once after the
+full 90-second backoff and refused again. Either way "1-2" is the honest label for the file
+the reader opens, but if a later run gets through that endpoint, `article=1702` is worth a
+page count. Everything the entry claims is present in the two pages we hold: the committee
+restructuring, the renaming of Communications to Public Relations, the by-law amendments on
+absences, the representatives sworn in and the committee heads — the landing page's own
+description ("reorganization of committees, bylaws, representatives and student government
+workshop") matches, and so does the scan's OCR.
+
+## Four quotations at exactly fifteen words
+
+The rule is a quote *under* fifteen words. A sweep of every event body, profile, leader
+note, document summary and document extract found four spans of exactly fifteen — one over,
+in each case. All four were confirmed genuine verbatim quotations first, not the
+adjacent-quote artefact that has produced false positives on this check before, and all four
+were trimmed rather than cut, so no fact and no attribution is lost:
+
+- **2017-18**, the Senate minutes of 24 October 2017. President Andi Dahmer on a student who
+  wore black face to a Halloween party. Verified against the mirrored scan's own text layer,
+  which reads as the extract did. Now a paraphrase carrying "not acceptable." The student is
+  not named in the archive and was not named here.
+- **2024-25**, Student Regent Sam Kurtz at the Board of Regents retreat. Confirmed word for
+  word against the *Herald* of 8 August 2024, along with the 7.5% cut and the 10% overhead
+  charge around it. Trimmed to six words.
+- **1993-94**, Donald Smith to the *Herald* in 2022. Trimmed to five words; his point that
+  the structure changed and the principle did not is kept.
+- **1975-76**, the Steve Henry note. The quotation is from Wikipedia, and the note's careful
+  flagging of that — a secondary source, identification not fully closed — is untouched.
+  Trimmed to eleven words.
+
+## Extracts tested against the documents themselves
+
+All 119 document extracts were run against the text layer of the file each cites. 95 are
+confirmed in their own PDF. Twenty score low and every one is a paraphrase or OCR noise, not
+a bad claim. Three are verbatim quotations that matched nothing — the 2023-24 constitution,
+the 2025-26 by-laws and a 1999-00 *Herald* page — and all three are subset-font PDFs whose
+bytes this environment cannot decode. Per this project's own lesson, a miss in an extraction
+is not a miss in the document: they are **not** flagged as unsupported.
+
+## Twelve claims opened at their sources
+
+Above the eight required, drawn at random from the live archive:
+
+The 1972-73 Ford appointment (Edds and Embry, the best-yet course evaluation, the $5 car fee
+and ASG filing opening — all four in one issue index); Linda Jones as the first woman ASG
+president, where the *Western Alumnus* caption matches the entry almost word for word;
+Bill 00-4-S; the Free U shutting after two semesters; the 1995-96 drop/add vote; Menser on
+the head fee; McKinney and Watkins taking the 1985 primary with the GPA resolution beside
+it; the 1966-67 report card; the 2024-25 Kurtz quotation; and the 2012-13 senate
+replacements, where all eight names and both resignations are in the *Herald* as recorded.
+
+Two held only to the level of the issue index. The Free U entry names its coordinator and
+the subjects the classes covered, and Bill 00-4-S carries a time of day, Earth Day week and
+community service hours — none of that is on the landing page, and both underlying PDFs are
+behind the same 403. Neither is doubted; neither could be re-confirmed this run.
+
+## Traps
+
+The 1995-96 drop/add entry is the advance-notice rule working: it says SGA *would* vote and
+stops there. No committee chair is promoted to officer — the 2010-11 entry calls Kaylee
+Egerer a committee head, which is what she was. Nobody is matched by surname alone, no
+changed surname has made a second person, and nothing here touches a settled fact. The
+1982-83 minutes name Margaret Ragan as the incoming president, which is consistent with the
+1981-82 document recording her election as vice-president in January 1982. The two
+living-person passages touched, Kurtz's and Smith's, report only what the *Herald* printed.
+No contributor commit was in scope.
+
+## Flagged, not fixed
+
+- The 1966-67 report-card entry calls the *Herald*'s assessment "the first public report
+  card on the year-old government." The headline is confirmed — "Associated Students Leaders
+  Do Well: Lack Communication" — but *first* is the archive's own superlative and no source
+  carries it. Left for a considered decision rather than rewritten on a night pass.
+- The 158 unlinked documents above.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same six pairs as the six previous nights, unchanged by
+this run: four are a proposal and its later vote or defeat, two are separate bills taken the
+same day in September 1991. All six stay.
+
+## Counts
+
+61 years, 1,984 dated events, 60 people who were president. 2,652 recorded terms of office
+held by 1,810 people, 98% carrying an account of what the person did. 47 people recorded
+under more than one spelling. 308 documents and 1,111 legislation files.
+
+## Still open
+
+- `article=1702` — the page count of the 1982-83 minutes at source, if the 403 ever lifts.
+- The Free U and Bill 00-4-S interiors, same endpoint, same reason.
+- Everything carried forward from the morning entry: the elections filing split, the
+  1997-98 legislation gap, Eddie Myers 1994-95 and Jacob A. Miers 2008-09, the three flagged
+  name pairs, the Mark Chesnut portrait lead, and the 1987 evaluations wording.
+
 # 9 September 2026, night — a photograph run that reported checks it had not made
 
 One pull request was open, #399, "Research: photographs (rolling)". It was merged,
