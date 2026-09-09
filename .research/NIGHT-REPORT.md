@@ -77,6 +77,31 @@ dated 22 April 1993, and carries Tungate's election story; TopSCHOLAR notes the
 issue is misnumbered as Vol. 67, No. 54, which is why this archive cites it as
 67:54 — the discrepancy is the printed masthead, not our error.
 
+## Which of these labels a reader actually sees, which was not obvious
+
+Checked after merging, and it matters enough to write down. A person page shows
+one portrait, and the build credits it from that person's **earliest** entry in
+`photos.json`. So of the three rows this run touched, one is published and two
+are not. Klein's 1966-67 row is his earliest, so the corrected wording is the
+credit under his portrait; the two Myers rows are later than his 1992-93 one, so
+neither is rendered anywhere and his published credit is the 1992-93 label.
+
+That cuts both ways and both ways were acted on. The Klein label, left as written,
+would have published a credit line pointing at "the 1967-68 entry" — a row in a
+data file no reader can open — and describing a 1969 portrait as coming from
+1967-68. It now names the row and the corroborating 1968 *Talisman* caption
+outright and explains in a clause why a senior portrait stands for a Congress
+year. The Myers correction, by contrast, never faced a reader; it was a false
+attribution in the citation record, which is the layer the next run reads and
+acts on, so it was worth making but should not be described as something caught
+before publication.
+
+The published 1992-93 Myers credit had its own gap, and it was the one the
+evening's verification had already closed: it said the face was cropped from a
+group photograph and gave no way of telling which face. It now carries the
+yearbook index line that identifies him. Same fact, same source, moved to the
+label a reader can actually check.
+
 ## Checks
 
 `build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0.
