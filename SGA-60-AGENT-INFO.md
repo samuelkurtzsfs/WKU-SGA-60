@@ -4361,6 +4361,63 @@ entry left them.
 `build.py` and `check_data.py` both pass clean with the one new photograph
 (61 years, 60 presidents, all still portrayed). Landed on `research-photos`.
 
+**A 9 September 2026 run (photograph agent, scheduled).** Re-checked
+priorities one and two before anything else, as every run since 21 August
+has: Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all still
+carry a portrait in `data/photos.json`, and a fresh script comparing every
+`leaders` entry in `data/years.json` against `data/photos.json` by name
+found zero presidents or student regents without one. Both remain closed.
+
+Retested `viewcontent.cgi` once against `article=1418` (1993-94 Talisman,
+the same lead the 6-7 September entries left open) with the full
+browser-navigation header set: still the bepress-branded 403. Went further
+than prior runs on the Wayback workaround `_brief.md` documents for this
+endpoint (`web.archive.org/web/<ts>id_/https://digitalcommons.wku.edu/cgi/
+viewcontent.cgi?article=...`): queried the Wayback CDX API directly for any
+snapshot of either open lead, `article=1418` and `article=1594` (2002-03
+Talisman). Both returned an empty result set — not a 403, an empty list.
+Neither PDF was ever captured by Wayback under this URL, so the mirror
+route these two leads were waiting on does not exist to reopen; a future
+run should not retry it against these two specific articles. The other ten
+gap years already have no TopSCHOLAR record at all (6 September entry), so
+all twelve of the twelve-year photo gap now rest solely on Herald issue
+pages or a UA1C collection search, not on any TopSCHOLAR PDF, live or
+archived.
+
+Spent the rest of the run on priority three, drawn from the 186-name list
+in `data/photo-finds/_officers-truly-missing-2026-09-06.json`, picking
+names no earlier entry in this file records having tried: Cassidy
+Townsend, Ian Hamilton, Morgan Wysong, Ryan Richardson, William Hurst,
+Barrett Gibbs, Deekshita Madas, Reed Hensley, Carter Smith, Jackson Smith,
+Miles Harvey, Nolan Rongey and Zoe Martin (13 names, 2016-17 through
+2025-26). None produced a usable portrait. The pattern already documented
+on 5-7 September held again: a text mention of the role is common (all
+thirteen are confirmed as real officers by at least one Herald or wku.edu
+article), an individually captioned photograph is not.
+
+Two searches came close enough to record. `wkuherald.com`'s "Bornefeld
+elected SGA president" coverage (`wku.edu/cebs/news/…articleid=10479`,
+20 Apr 2022) carries one portrait, of Bornefeld alone — already in the
+archive since 2022 (`2022-23-cole-bornefeld.jpg`) — while the same article
+names Reed Hensley, Barrett Gibbs, Mallory Hardesty, Elizabeth DeLozier,
+James Cecil and Caleb Collins only in the roll of newly elected senators,
+with no photograph of any of them. And the 28 April 2026 gallery on
+`wkuherald.com/93405/…` ("SGA holds first meeting of 26th Senate"), whose
+five individually-captioned photographs (read via the `/wp-json/wp/v2/
+media/{id}` `caption.rendered` technique noted 7 September) name Jaden
+Marshall, Maggie Phelps, Veronica Butler, Jakob Barker, Will Derryberry and
+Rush Robinson — all 2026-27 officers, outside every name on the current
+missing list and, going by this run's check of `data/years.json`, not yet
+in the archive's roster for that year at all. Recorded here for whichever
+routine next works the 2026-27 senate rather than chased further by this
+one.
+
+`build.py` and `check_data.py` both pass clean against the unchanged data
+(61 years, 60 presidents, all still portrayed). No files changed under
+`data/photos/` or `data/photos.json` this run. Merged 4 commits from
+`origin/main` (a plain merge, real merge base, no conflicts) before
+starting. Landed as a documentation-only commit on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
