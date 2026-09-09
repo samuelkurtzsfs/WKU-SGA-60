@@ -18685,3 +18685,139 @@ legislation files in the built site.
   2008-09, absent from the local *Herald* index, which proves nothing.
 - The three flagged name pairs: Staci/Stacy Kitchens, Carleton Ruminer/Carlton
   Rumenier, Brittany Ann/Brittany-Ann Wick.
+
+---
+
+# 9 September 2026 — nothing waiting to be published, so the audit went to what is already live
+
+No pull request was open. The four research routines had all landed before
+midnight and the last of them, #390, merged at 21:30 on the 8th. The standing
+instruction still names #6, #7 and #8 as stale and well behind main; they were
+closed on 18 August and the numbering has run past #390, so that part of the
+instruction stays spent. The 4 August branches they were cut from are still on
+origin and were re-checked this run: `git merge-base origin/main` returns nothing
+for any of `research-1966-79`, `research-1980s`, `research-1990s`,
+`research-2000s`, `research-2010s` and `research-2020s`. They have no common
+ancestor with main and merging one would still delete the index, the aliases, the
+contributor layer and the validators. They stay unmerged.
+
+`research-photos`, the one rolling branch, sits ten commits ahead of main and
+carries nothing. Its whole non-`site/` difference is ten lines of
+`data/photo-finds/_archive-gaps.json`, and parsed as JSON the two files are
+entry-for-entry identical: 147 entries each, the last one byte-identical. The
+difference is line-breaking, not content. There was nothing to merge.
+
+## What was audited instead
+
+Ten events drawn at random across the whole archive from the pool that cites
+either TopSCHOLAR or wkuherald.com, and every one opened at its source.
+
+Nine were confirmed at the level the citation claims. The 1972 Ed Jordan profile
+is in the index of Herald 51:47 as Roger Miller's "Ed Jordan's Theme is
+Progressivism". Herald 51:39 carries both halves of the 1972 constitution entry —
+Carter Pence on the Congress vote and the printed text of the proposed executive
+branch. Herald 51:30 carries both halves of the December 1975 entry, the petition
+and the concert appeals. Herald 47:30 carries Ellen Bennett on Straeffer's win
+and the "Elections Illustrate Faults, Indifference" editorial beside it, which is
+the settled 1968 fact standing where it should. Herald 63:19 carries the 1987
+evaluations item, Herald 81:35 the 2006 "Campus CleanUp Today". The 2023 Pink
+Walk entry matches the Herald's report word for fact: fifth meeting of the 23rd
+Senate, Bill 1-23-F, $500 from the scholarship budget, bracelets, ribbons, water
+and raffle prizes, the three authors named in the same order, passed unanimously
+with 28 votes. The 2016 Powerball letter is signed by Richey as chair with nine
+other signatories, and the Kentucky Center for Economic Policy figure it cites is
+in the letter.
+
+The tenth was the one worth the run. The 1978-79 entry on Hargrove's election
+carries nine separate vote figures, and none of them is in the issue index — the
+index is headlines only, so the landing page could not confirm them. The issue is
+mirrored in the archive, so the scan itself was read. Every figure holds: the
+presidency 1,087-535, turnout 1,725 against 1,097 in 1978, Fuller over Jecker
+973-574, Bates over Bratcher 785-761, Thompson over Driver 1,052-517, and — on
+the continuation page, page 6 — Craig over Pierce 937-623. The cover sheet reads
+4-19-1979, Volume 54 No. 56, Paper 3454, matching the citation exactly. The one
+phrase not lifted from the page, "the closest of the four races", is arithmetic
+on the four sourced margins and is true.
+
+The April 1979 result is filed the way this archive files spring elections: the
+event sits in 1978-79, where it happened, and James Hargrove sits in 1979-80,
+where he served. `data/name-aliases.json` already maps the Herald's "Jamie
+Hargrove" to it, so the two spellings have not made two people.
+
+## Added, from a page read at the source
+
+Reading that page turned up two sourced facts the archive did not have.
+
+The existing entry on the ratification of the 1979 constitution was sourced only
+to the *Talisman* and gave no margin. The Herald prints it: 1,343 to 170. The
+figure is now in the entry with the Herald added as a second source.
+
+A recount is now recorded. Thornton said a candidate had called for one in the
+senior class vice president race, which Rhyia Miller won over David Turner
+342-332, and that ASG would go back to the ballots to test whether the counting
+computer had it wrong.
+
+## Traps
+
+The advance-notice sweep across all 1,984 events raised two candidates and
+neither is a violation. The 1975 Natalie Cole entry takes the crowd of 325 and
+the songs from the 1976 *Talisman*, a retrospective, and its label separates that
+from the Herald notice that announced the booking — which is the right way round.
+The 2014 Frankfort entry reports what was said at a meeting, not how a rally
+went. The 2006 Campus CleanUp entry says in terms that the Herald reported the
+day as happening rather than announcing it.
+
+Seventeen apparent over-length quotations were all the same artefact: a matcher
+pairing the close of one short quotation with the open of the next. Read
+individually every quotation in the sample is well under fifteen words. No
+committee chair was promoted to officer and no bill author made a member — the
+Pink Walk entry names its three authors as authors and stops. Nobody is matched
+by surname alone. Nothing touches the settled facts except the Straeffer entry,
+which supports the one it touches. No contributor commit was in scope. Every
+event in the archive has a source with both a label and a URL; the count of
+events without one is nil.
+
+The one living-person passage re-read this run is the 2017-18 final officer
+reports, where a named officer's own disclosure about her year is reported. It
+was said publicly, in an officer's report to the senate, and printed by the
+Herald; it is her own account of her own term and it stays as the source has it.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the four previous nights, and
+all six were read in full again this run rather than taken on trust. All six
+stay: four are a proposal and its later vote or defeat — the designated driver
+cards funded in November 1997 and distributed in February 1998, the student
+regent advisory committee introduced on 28 January 1992 and killed by amendment
+on 6 February, the civil liberties suit reported in February 1972 and endorsed in
+March, the plus/minus grading objection voiced in September 2003 and passed in
+October — and two are genuinely separate bills taken the same day in September
+1991. The two entries added this run created no new pair.
+
+## Verdict
+
+Nothing to merge, and nothing that should have been merged and was not. The
+audit found no false claim on the live site. Two sourced facts were added from a
+document the archive already holds.
+
+## Counts
+
+61 years, 1,984 dated events, 60 people who were president. 2,652 recorded terms
+of office held by 1,811 people, 98% carrying an account of what the person did.
+46 people recorded under more than one spelling. 297 documents and 1,111
+legislation files in the built site.
+
+## Still open
+
+- The pre-2000 gaps are unchanged: the 1997-98 legislation gap, 39 digitised
+  pieces against two written events; Eddie Myers 1994-95 and Jacob A. Miers
+  2008-09, absent from the local *Herald* index, which proves nothing either way.
+- The three flagged name pairs: Staci/Stacy Kitchens, Carleton Ruminer/Carlton
+  Rumenier, Brittany Ann/Brittany-Ann Wick.
+- The Mark Chesnut portrait lead, reopened on the 8th: the 1981 *Talisman* index
+  gives him page 234 but the OCR of that page does not repeat the name, so the
+  leaf has to be pulled as an image and read.
+- The 1987 evaluations entry calls them course evaluations where the Herald index
+  says only "Required Evaluations". The reading is the natural one but it is an
+  inference, and settling it needs the page.
