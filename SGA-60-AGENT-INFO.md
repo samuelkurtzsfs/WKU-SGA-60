@@ -4536,6 +4536,38 @@ all still portrayed). No files changed under `data/photos/` or
 `data/photo-finds/_do-not-use.json`. Merged `origin/main` (a plain merge,
 real merge base, no conflicts) before starting. Landed on `research-photos`.
 
+**Editor's check on the above, 9 September 2026, before merging.** All six new
+negatives were re-verified against their own citations and all six held: the
+three wkuherald.com articles exist with the dates and titles given, article
+61104's featured image really is a reused and uncaptioned March 2021 SGA
+photograph, article 71533's really is the executive cabinet on 30 August 2022
+credited to Sean McInnis, and the Bornefeld caption is verbatim from that
+article's featured image (media 70593). The Coffey, Knight and Bose searches
+each reproduced the result described, Knight's still returning an unrelated
+sportsman of the same name. The portrait sweep was independently re-run and
+agrees exactly: 73 leader-terms across 61 years, none without a portrait.
+
+Two entries were corrected rather than cut. The **Skillman** entry cited
+article 61104 without recording that the same article profiles *two*
+Skillmans - Zach (the `name-aliases.json` spelling of Zachary) and Jacob, the
+other senator-at-large of that Senate - described in near-identical terms,
+both juniors in business economics, both Gordon Ford ambassadors, both in the
+Center for Capitalism Book Club. `years.json` carries both men separately.
+This is the Lodmell pattern again, and left as written the entry would have
+invited a later run to attach one brother's face to the other; the warning is
+now in the entry itself. Its parenthetical crediting Zachary's committee
+chairmanship to this article was also dropped, the article calling him only a
+senator. The **Goins** entry quoted the Bornefeld caption at seventeen words,
+over the fifteen-word limit; it is paraphrased down, with the caption evidence
+kept whole and the article's three interior captions added, which name the
+Speaker of the Senate and the Judicial Council as a body but never Goins.
+
+The lesson for the photograph routine is the one this file keeps recording
+from the other direction: before filing a negative under a name, check whether
+the source carries a second person of that surname. A negative roll is read by
+later runs as settled, so a name attached to the wrong evidence is as costly
+here as anywhere else in the archive.
+
 ## 9. Restarting a session
 
 ```bash
