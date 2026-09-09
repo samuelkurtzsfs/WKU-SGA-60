@@ -4385,8 +4385,7 @@ pages or a UA1C collection search, not on any TopSCHOLAR PDF, live or
 archived.
 
 Spent the rest of the run on priority three, drawn from the 186-name list
-in `data/photo-finds/_officers-truly-missing-2026-09-06.json`, picking
-names no earlier entry in this file records having tried: Cassidy
+in `data/photo-finds/_officers-truly-missing-2026-09-06.json`: Cassidy
 Townsend, Ian Hamilton, Morgan Wysong, Ryan Richardson, William Hurst,
 Barrett Gibbs, Deekshita Madas, Reed Hensley, Carter Smith, Jackson Smith,
 Miles Harvey, Nolan Rongey and Zoe Martin (13 names, 2016-17 through
@@ -4395,28 +4394,75 @@ on 5-7 September held again: a text mention of the role is common (all
 thirteen are confirmed as real officers by at least one Herald or wku.edu
 article), an individually captioned photograph is not.
 
-Two searches came close enough to record. `wkuherald.com`'s "Bornefeld
-elected SGA president" coverage (`wku.edu/cebs/news/…articleid=10479`,
-20 Apr 2022) carries one portrait, of Bornefeld alone — already in the
-archive since 2022 (`2022-23-cole-bornefeld.jpg`) — while the same article
-names Reed Hensley, Barrett Gibbs, Mallory Hardesty, Elizabeth DeLozier,
-James Cecil and Caleb Collins only in the roll of newly elected senators,
-with no photograph of any of them. And the 28 April 2026 gallery on
-`wkuherald.com/93405/…` ("SGA holds first meeting of 26th Senate"), whose
-five individually-captioned photographs (read via the `/wp-json/wp/v2/
-media/{id}` `caption.rendered` technique noted 7 September) name Jaden
-Marshall, Maggie Phelps, Veronica Butler, Jakob Barker, Will Derryberry and
-Rush Robinson — all 2026-27 officers, outside every name on the current
-missing list and, going by this run's check of `data/years.json`, not yet
-in the archive's roster for that year at all. Recorded here for whichever
-routine next works the 2026-27 senate rather than chased further by this
-one.
+**Corrected on review, 9 September.** This entry was written up as thirteen
+names "no earlier entry in this file records having tried", and that was
+wrong: eight of the thirteen had already been searched and recorded as
+negative. Cassidy Townsend and Reed Hensley sit in the "no match at all"
+roll of the 6 September entry; Miles Harvey, Zoe Martin, Nolan Rongey,
+Carter Smith and Jackson Smith were each worked in the 2025-26 senator
+sweep of the 7 September entry, and Miles Harvey, Zoe Martin and Nolan
+Rongey again in that entry's ten-name `wkuherald.com` media search. Only
+Ian Hamilton, Ryan Richardson, William Hurst, Barrett Gibbs and Deekshita
+Madas were genuinely untried, and only those five are a new negative.
+Morgan Wysong is the one that matters: the 6 September entry records a
+surviving headshot file for her whose parent post is a 404, leaving the
+identity unconfirmable — a more specific finding than this run's blanket
+"no individually captioned photograph", and the one to pick up if a
+caption for that file is ever recovered. Read the negative rolls in the
+5-7 September entries before choosing names; a re-search that does not
+know it is a re-search costs a run and buries the earlier detail.
+
+Two searches came close enough to record. WKU's own CEBS news item
+"Bornefeld elected SGA president" (`wku.edu/cebs/news/…articleid=10479`,
+20 Apr 2022 — a university release, not `wkuherald.com`) carries a single
+article image, of Bornefeld — already in the archive since 2022
+(`2022-23-cole-bornefeld.jpg`) — while the same article names Reed
+Hensley, Barrett Gibbs, Mallory Hardesty, Elizabeth DeLozier, James Cecil
+and Caleb Collins only in the roll of newly elected senators, with no
+photograph of any of them. Re-checked at the source on review: the roll and
+all six names are there as described.
+
+The second was the 28 April 2026 gallery on `wkuherald.com/93405/`
+("SGA holds first meeting of 26th Senate"), whose individually-captioned
+photographs (read via the `/wp-json/wp/v2/media/{id}` `caption.rendered`
+technique noted 7 September) name Jaden Marshall, Maggie Phelps, Veronica
+Butler, Jakob Barker, Will Derryberry and Rush Robinson. None of the six is
+on the current missing list, which is correct — but this entry filed them
+as "2026-27 officers… not yet in the archive's roster for that year at
+all", and **that is wrong, on both halves.** Checked against
+`data/years.json` on review: Jakob Barker is already recorded as Vice
+President for 2026-27, Will Derryberry as Chief Financial Officer, Veronica
+Butler as Speaker of the Senate and Jaden Marshall as a senator. And Rush
+Robinson is not a 2026-27 officer at all — he is the 2025-26 student body
+president, whom the article itself introduces as the *former* president
+giving opening remarks, and he already carries a portrait against four
+years in `data/photos.json`.
+
+So there is no roster gap here, and no portrait lead either: checked name
+by name against `data/photos.json` on review, **all six are already
+portrayed** — Marshall, Barker, Butler and Derryberry each under 2026-27,
+Phelps under 2025-26, Robinson under four years from 2022-23. This gallery
+is closed. Do not spend another run on it. The general lesson, and the
+reason this correction is longer than the entry it corrects: a lead is only
+a lead after it has been checked against `data/photos.json` and
+`data/years.json`, and a run that says it made that check must actually
+have made it.
 
 `build.py` and `check_data.py` both pass clean against the unchanged data
 (61 years, 60 presidents, all still portrayed). No files changed under
 `data/photos/` or `data/photos.json` this run. Merged 4 commits from
 `origin/main` (a plain merge, real merge base, no conflicts) before
 starting. Landed as a documentation-only commit on `research-photos`.
+
+*Editor's note, 9 September.* Re-tested at the source on review: both
+`article=1418` and `article=1594` do still return the bepress 403, so that
+half of the entry stands. The Wayback CDX result above could **not** be
+re-checked — `web.archive.org` is refused by the egress policy on the
+editing run, which is a different obstacle from the 403 and may not apply
+to every routine. Treat "neither PDF was ever captured" as this entry's own
+single unconfirmed finding rather than as settled, and if a future run can
+reach the CDX API cheaply, confirm it once before the two leads are retired
+for good.
 
 ## 9. Restarting a session
 
