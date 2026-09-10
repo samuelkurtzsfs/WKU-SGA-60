@@ -1,3 +1,142 @@
+# 10 September 2026, evening — fifteen citations that led to a browse listing, and twenty-two that led to the wrong meeting
+
+Nothing was open. The pull request list came back empty, and every `research-*` and
+`editor-*` branch was measured against `main` by content rather than by commit count: the
+fourteen with a merge base are already merged or empty against it — `research-photos` shows
+six commits ahead and its only difference from `main` is the absence of last night's report
+— and the rest have no merge base at all, being the 4 August snapshots `AGENT-LANDING.md`
+warns about. #6, #7 and #8 have been closed since 18 August. Seventh run to record it.
+
+So the pass went to a defect the validators cannot see: a citation a reader cannot follow.
+
+## Fifteen citations pointed at a browse listing
+
+Every URL in `years.json` — 2,687 distinct, across 6,039 citations — was classified by
+shape. Nineteen did not resolve to a document. Four are `viewcontent.cgi` links, which are
+the document itself and only look untidy. **Fifteen pointed at the front door of a
+collection**: eight at `sga/Documents/Reports`, three at `dlsc_ua_yearbooks/`, two at
+`sga/Constitution/Constitution`, and two at `sga/`, the root of the entire SGA record
+group. A reader checking Amos Gott's presidency landed on a list of 163 items.
+
+The whole SGA collection was harvested through the OAI interface the repository already
+uses for the *Herald* — 1,816 records with title, date and item URL — and each claim
+matched against it. Fourteen of the fifteen resolved, and the dates matched exactly.
+
+| year | claim | now cites |
+|---|---|---|
+| 1966-67 | Thompson approves the constitution | Constitution/1, dated 7 April 1966 |
+| 1986-87 | twenty years of amendments | Constitution/2, dated 4 August 1986 |
+| 1989-90 | extended library hours | Reports/53, 9 Nov 1989, author Gott, Amos |
+| 1989-90 | the DUC flagpole | Reports/50, 22 Jan 1990 |
+| 1993-94 | the fall correspondence run | Reports/65 |
+| 1997-98 | a crosswalk on Dogwood Drive | Reports/16, 22 Oct 1997 |
+| 2005-06 | plus/minus grading | Reports/37 |
+| 2007-08 | the Frankfort reflections | Reports/82 |
+| 1968-69 | three senate members, *Talisman* pp. 95 and 98 | dlsc_ua_records/385 |
+
+Twelve item pages were opened directly, paced three seconds apart. Gott's leader note
+survives intact and is now checkable: the collection holds his correspondence on extended
+library hours (53), the DUC flag pole (50), the WKU press box (55) and Unicorn Pizza (54)
+— "a local pizza vendor dispute", exactly as the note says. The 1997-98 run of letters is
+likewise real: student seating at athletic events, campus safety, ice machines, housing
+scholarships, professors' office hours and food court hours all sit there under their own
+item numbers.
+
+## What the browse listings had been hiding
+
+A citation written off a listing rather than off a document lets unrelated things be
+gathered into one claim. Two entries had done exactly that.
+
+**2005-06 bundled documents three years apart.** The entry said an Institutional Research
+report, a protest broadside, a post-winter-term student survey and an SGA handbook "all
+survive", calling it a campaign documented "from research through to public agitation".
+Opened at source: the report is real, and better than the entry claimed — WKU Institutional
+Research studying the trial of plus/minus grading across January 2005 to December 2006. The
+broadside is real but dated 2007. The survey is dated February 2008 and is about the
+four-week winter term, not grading. The handbook lists members, judicial rulings and
+ballots. Two of the four had nothing to do with the subject, and the narrative arc rested
+on the distance between them. Cut back to the report, which now carries the trial period the
+document itself gives.
+
+**1993-94 claimed a superlative that was nearly right.** "The fullest single-semester record
+in the collection" is false as written — spring 2008 holds fifty items to fall 1993's
+sixteen. But the 2008 items are the Frankfort reflections, which are not correspondence at
+all. Counted properly, fall 1993 holds sixteen of the thirty-four pieces of correspondence
+answering numbered legislation that the archive holds for any semester, three times the next
+best. The superlative was narrowed rather than cut. The range was wrong too: correspondence
+survives for 93-4-F through 93-18-F and 93-20-F, not a clean run, and one of the sixteen is
+a bill. Both now stated.
+
+**"Fifty senators" were forty-nine SGA members.** All forty-nine Frankfort reflection item
+pages were opened: forty-nine items, forty-nine distinct authors, one per person, all dated
+20 February 2008. "Archived one per person" is exactly right; the round number was not. The
+documents name authors, not seats, so "senators" went with it.
+
+## Cut: one citation that supported nothing
+
+Johnathon Boles's leader record opened with "TopSCHOLAR - Frankfort rally reflections". His
+note is about the spring 2008 election, the Red Towel Party and Skylar Jordan's complaint,
+none of which those documents touch — the rally was February 2008, before his term — and
+none of the forty-nine authors is his. Removed. His remaining sources carry the note.
+
+## Twenty-two citations led to the wrong meeting
+
+Found by comparing every citation's stated date against the collection's own date for the
+item it links. Most disagreements are labels naming two sittings and linking one, which is
+the archive's convention. Three were not, and one of those three turned out to be the
+collection's error rather than the archive's.
+
+**The 1993-94 senate roster linked the wrong minutes.** Twenty-two citations, the two
+mirrored PDFs among them, cited "SGA Minutes, 12 Oct 1993" at item 451 and "SGA Minutes,
+29 Mar 1994" at item 500. Item 451 is 31 August 1993; item 500 is 19 April 1994. The right
+items are 465 and 503.
+
+The dates were never wrong — only the links. The mirrored PDFs were read directly, by
+decompressing their content streams, and print "OCTOBER 12, 1993" and "MARCH 29, 1994" on
+their first page. Item 465's description gives the tuition rally, the Plus System and
+parking; the 12 October document reports a rally on tuition increases, a committee meeting
+about the Plus System and the Parking Availability resolution. Item 503's description gives
+Dialogue Day; the 29 March document has President Smith reporting that 6 April is Dialogue
+Day. All twenty-two retargeted, and the roll calls checked against the documents as a
+control: sixteen senate members are recorded absent on one date or the other, and every one
+of the sixteen appears in the right roll call.
+
+**1995-96 was the collection's mistake, not the archive's.** Six citations give "SGA Meeting
+Minutes, 19 Sep 1995" at item 128, which TopSCHOLAR dates 9 September. The mirrored PDF
+prints "SEPTEMBER 19, 1995"; 9 September 1995 was a Saturday where the surrounding items are
+Tuesday sittings; and item 128 falls between the 12 and 26 September items in a series
+numbered by date. Item 128 is the 19 September meeting and the metadata transposed it.
+Nothing was changed, and the case is written down here so that a later pass does not
+"correct" it.
+
+## The one that could not be resolved
+
+Two 1977-78 entries cited the root of the SGA collection for ASG minutes of 3 March, 24
+March and 1 November 1978. **No item bears any of those three dates.** The minutes held for
+that spring are the Tuesday meetings of 21 and 28 February, 7 and 21 March and 18 April; 3
+and 24 March 1978 were both Fridays. The only ASG document dated 1 November 1978 is the ASG
+Link newsletter, which is what a membership list published that November would be, so John
+Perkins's entry now cites it. Steve Parnell's rests on the March sittings alone and still
+points at the collection root: the seat is sourced, the document is not identified, and both
+notes now say so instead of implying a citation that works. Flagged, not fixed.
+
+Parnell's entry also had a 150-character sentence sitting in `src.label`, where the built
+page prints it as the citation's link text — the same field swap #410 corrected for five
+other entries, and missed on this one. Moved into the note.
+
+## Checks
+
+`build.py` run twice to convergence and stable; `check_data.py` and `check_contrib.py` exit
+0. `check_duplicates.py` reports the same six pairs as the ten previous nights and all six
+stand: two are the 1 September 1991 bills, which the rule keeps separate, and the 1997-98
+designated-driver pair is the advance-notice rule working as intended.
+
+Re-running the shape sweep leaves one browse-listing citation in the file — the flagged
+Parnell entry — down from fifteen. No settled fact was touched. No event was added or
+removed, and no person was added, merged or removed.
+
+**61 years, 1,964 dated events, 60 presidents. 2,652 terms held by 1,810 people.**
+
 # 10 September 2026, afternoon — eighty faces carried across years, and the three that could not be
 
 One pull request was open: #413, the photograph agent's, opened at 14:01 the same day.
