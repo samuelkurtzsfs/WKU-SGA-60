@@ -111,6 +111,23 @@ from the same place: a source that says one thing and a note that says more. Thr
 five people concerned are living, and one of them had a family, a hometown and a father
 attributed to him by an archive that had never seen a source for any of it.
 
+## Addendum — a fact cut for its citation, restored under the one that proves it
+
+Chasing the Bill 36-23-S question left open above answered it, and reversed part of the
+Cissell cut. The Hope Harbor X Denim Day bill is **16-24-S**, of 2023-24, and its author
+block names Alex Cissell first, as a WKU student, with Andrea Diaz, Savanna Stinnett and
+Senators at Large Sophia Byrant and Maiah Cisco. So the note's claim that Cissell was
+still authoring SGA legislation two sessions on was true; it was cited to a Herald
+article that does not establish authorship, and through that article to a bill number
+the Herald had printed wrongly. The archive holds 36-23-S correctly as Olivia Feck's
+t-shirt bill of the previous session. The caption is the error, not the record.
+
+The fact is back, under Bill 16-24-S, which proves it. This is the rule the August
+passes wrote down after trimming things for citing the wrong page: a claim cut for its
+citation should come back under the citation that carries it, not stay cut. The
+spelling difference is recorded rather than fixed — the bill prints Byrant, the Herald
+prints Bryant, and the archive follows the Herald with the difference noted.
+
 ## Addendum — the search index is a build behind the roster
 
 Verifying the merge turned up a second defect, in the build rather than the record.
