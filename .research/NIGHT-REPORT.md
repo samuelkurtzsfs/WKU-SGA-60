@@ -1,3 +1,99 @@
+# 10 September 2026, night — nothing to merge, and four elections filed a year late
+
+No pull request was open. Every `research-*` branch on origin is behind `main`: the
+five most recent (`research-editor-0908-footer`, `-0908-night`, `-0909-credits`,
+`-0909-night`, `-0909-review`) carry only content already merged through #392–#404,
+and the twenty-one older ones are the orphan-history snapshots the landing note warns
+about, with no merge base and nothing `main` lacks. So this run reviewed what went
+live yesterday instead, on the principle that a merge is a publication and the last
+line of defence is worth walking twice.
+
+## What was verified
+
+Fourteen claims, drawn across the whole of yesterday's diff — one new event, five
+documents, eight portrait credits.
+
+The single new event, the recount called in the 1979 senior class vice president race,
+holds up in full. The mirrored Herald 54:56 carries an OCR layer, and it gives
+Thornton, David Turner, senior vice president, Rhyia Miller and the count of 342 to
+332, with ASG going back to the ballots to establish whether the machine count was
+faulty. The sibling entry on Hargrove's win is confirmed by the issue's own index
+line, "Jamie Hargrove Easily Wins Associated Student Government President Race", and
+the OCR carries the four other executive races with the opponents named.
+
+Four of the five document entries match their TopSCHOLAR record exactly: the 1966
+constitution is described there as printed in the *Herald* of 7 April 1966, Bill
+96-1-S is dated 20–27 February 1996, Bill 99-14-S 23–30 March 1999, and the proposed
+bylaws January to May 1994. All four sit in the right academic year.
+
+Every one of the eight portrait credits checked out against the caption it cites.
+The Jerdon, Marshall, Barker and Bailey captions match the archive's paraphrase almost
+word for word; the Feck photograph is credited to her in the article that names her as
+a candidate; the Klein and Myers Talisman records exist with the pagination given.
+
+## What was cut, and why
+
+**Four election blocks were filed a year forward.** Sixteen `election` blocks were
+added yesterday, and eight races across four years sat under the year the winner
+served rather than the year the vote was held. `build.py`'s own comment settles the
+convention — the archive files an election under the year it happened, and the page
+prints the sitting president above it so the reader is not misled — and eleven of the
+sixteen followed it. The four that did not produced exactly the confusion the comment
+exists to prevent: the elections page read "President that year: Bill Straeffer" above
+the race Straeffer won, and did the same for Cassie Martin and Caden Lucas. The 15
+April 1999 election was also split, two of its races under 1998-99 and the third under
+1999-00. The blocks were moved back one academic year — 1968-69 to 1967-68, 1999-00
+into 1998-99, 2000-01 to 1999-00, 2026-27 to 2025-26 — and the page now reads Menser
+above Straeffer, Coates above Martin, Robinson above Lucas.
+
+**Two document summaries claimed more than their source.** The 1993-94 proposed bylaws
+were described as "drafted alongside the new constitution that came up for reading in
+September 1993". The year does hold sourced entries on a delayed constitution reading
+of 31 August 1993 and on Bill 93-1-F of 7 September, but nothing cited links them to
+these bylaws, which the archive itself dates January to May 1994. Trimmed to what the
+record carries. The 1998-99 entry for Bill 99-14-S called the Coordinator of Committees
+"the office the 2004 constitution later folded into the Speaker of the Senate". No
+source says so, and the archive's own record cuts against a clean succession: it names
+a Coordinator of Committees on 2 March 2004 and elects the first Speaker on 13 April.
+Trimmed to the bill.
+
+**A portrait credit misdated by a year.** Four Rush Robinson entries cited "WKU News,
+2025". The article is dated 17 April 2026. Corrected to the full date and headline,
+and the reuse note on each entry now names its own year rather than 2022-23 on all four.
+
+## What was checked and found sound
+
+The photograph register was audited for portraits attached to a name no longer in
+their year — nine looked orphaned on a first pass, and all nine resolve: `build.py`
+matches committee chairs through the `chair` field, which the first check missed.
+Tim Irons, Natalie Croney and Dave Vickery are all committee chairs. Nothing is
+silently dropped; 1,307 leader photo entries all attach.
+
+The six duplicate pairs are six real pairs of events. The designated driver cards are
+a bill passed in November 1997 and a distribution announced in February 1998, and the
+February entry says on its face that the archive holds only a contents listing for it.
+The rest are introduction against failure, plan against endorsement, and three separate
+bills of 1 September 1991.
+
+The settled facts were scanned in the merged diff and none was disturbed. The one
+tripwire hit, Bill Straeffer, is the new 1968 election block, and its 1,732 to 1,098
+matches the settled record exactly, sourced to Beck's memo of 3 May 1968.
+
+## Where the counts stand
+
+61 years, 1,984 dated events, 60 people recorded as president. 2,652 terms of office
+held by 1,810 people, 2,615 of them (98%) carrying an account of what the person did,
+and 47 people recorded under more than one spelling. `check_data.py`, `check_contrib.py`
+and `build.py` all pass.
+
+## Still open
+
+The standing brief still names #6, #7 and #8 as stale open pull requests. They have
+been closed since 18 August and there is nothing to merge on them; the brief should
+stop naming them, and should say instead that the research branches are landing
+through the drop box and being merged the same night.
+
+
 # 9 September 2026, night — a photograph run merged, and two Skillmans in one article
 
 One pull request was open, #403, the afternoon photograph run on `research-photos`.
