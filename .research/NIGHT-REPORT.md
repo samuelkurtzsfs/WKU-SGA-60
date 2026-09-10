@@ -20060,3 +20060,151 @@ carrying a source and a link.
   the OCR does not repeat the name, so the leaf has to be pulled as an image.
 - The 1987 evaluations entry calls them course evaluations where the Herald index
   says only "Required Evaluations".
+
+---
+
+# 10 September 2026, morning — the president profiles audited, and three that printed a paragraph twice
+
+## What was reviewed
+
+Nothing was waiting. No pull request was open, and every `research-*` and
+`editor-*` branch on origin was checked by content rather than by commit count:
+`research-photos` is three commits ahead of `main` and carries nothing — the two
+research commits are already on main as #406 and the third is a merge of main, so
+the branch diffs empty against it. The twelve older `research-*` branches have no
+merge base with `main` at all; they are the 4 August snapshots `AGENT-LANDING.md`
+warns about. The stale pull requests the standing brief still names, #6, #7 and
+#8, have been closed since 18 August. That is now the fifth run to record it.
+
+So the audit went to the layer CLAUDE.md calls the heart of the project and no
+pass has ever tested systematically: the **73 president and student regent
+profiles**, 299 paragraphs of narrative prose, the most-read text on the site.
+Profiles carry an explicit, checkable rule — every fact in one must be traceable
+to a source already cited in that year's events, documents or leader sources.
+
+## Three profiles were publishing the same paragraph twice
+
+The duplicate rule has always been enforced on events. It had never been run
+against profiles, and three presidents had a paragraph printed twice on their
+own page:
+
+| year | leader | what was wrong |
+|---|---|---|
+| 2000-01 | Cassie Martin | P3 repeated P0's first two sentences verbatim |
+| 2007-08 | Jeanne Johnson | P5 repeated P3 almost word for word |
+| 2026-27 | Caden Lucas | P4 repeated sentences two to four of P0 |
+
+Martin's and Lucas's repeats carried nothing their originals did not, and were
+cut. Johnson's two copies were **not** identical: P5 alone carried her
+administration arranging extra credit for students who attended the election
+debate. So the pair was combined rather than halved — the fuller text kept, in
+P3's chronological slot ahead of the paragraph about Boles taking the seat, and
+the duplicate dropped. No sourced fact was lost, which is the rule.
+
+That extra-credit detail was confirmed at source before the merge, not assumed:
+the *Herald* of 1 April 2008 has Johnson listing the debate during SGA week,
+"working with administration to provide extra credit to students who attended the
+debate," and the candidate profiles and questionnaires added to the SGA site.
+
+## Ten claims opened at their sources, above the eight the brief asks for
+
+The audit flagged ten profiles carrying a figure that appears nowhere in their
+year's stored summaries. Every one was opened at its cited source. **All ten
+held, several word for word.**
+
+- **Nick Todd's $800**, 2004-05. The *Herald* of 26 Aug 2004 gives the internal
+  auditor's May report, the $872 total of small purchases between August 2003 and
+  May 2004, most under $10 at campus restaurants with no documentation, the
+  separate $71 rental-car charge, and campus police determining no police action
+  was necessary. The profile's "more than $800" is the article's own phrase.
+- **Andi Dahmer's $10,000**, 2017-18. The *Bowling Green Daily News* of 3 Feb 2024
+  quotes WKU's attorney: a nominal settlement of $10,000 paid by the university's
+  insurance carrier, no admission of wrongdoing, after a 25 January settlement
+  conference. Exact.
+- **The $13,000 gazebo**, 2000-01. The *Herald* of 1 Oct 2002 carries the sum, the
+  money going back into the general fund and being spent on computers, and — the
+  part worth checking — names "former presidents Leslie Bedo and Cassie Martin" as
+  partly responsible. Bedo was president in 2001-02, so the archive is not
+  promoting a vice president. The article also refers to "the original legislation
+  passed by the 2001 congress," which supports the profile's wording exactly.
+- **Katie Dawson's 1,797**, 2005-06: the 159th commencement, the Radcliff native,
+  the degree in corporate and organizational communication. Exact.
+- **Stephen Mayer's 2,447**, 2018-19: 2,447 voting overall, 2,378 in the
+  presidential race, 35 to 33 to 32 percent. Exact.
+- **Garrett Edmonds's petition**, 2020-21: over 3,500 signatures in three days.
+  Exact.
+- **Cole Bornefeld's $3,500**, 2022-23: his own words to the *Herald*, 31 Oct 2022.
+- **Caden Lucas's HON 251**, 2026-27: WKU News, 3 Sep 2024, the Honors Teaching
+  Fellowship for HON 251 Citizen and Self and the inaugural Mahurin seat.
+- Robert Watkins's "91.7" is the radio station, Reed Morgan's "66" is 1965-66.
+
+## Checked and found sound
+
+**Profile against note, and profile against event.** Three overlaps surfaced —
+McKinney, Colvin, Jordan. All three are by design: a leader's `note` is a short
+flag at the top of the page and the profile is the narrative below it, and a
+profile has to mention the election the year's events also record. Not
+duplicates, and not cut.
+
+**The settled facts.** Every tripwire in CLAUDE.md was run across the profile
+text. Menser is first regent in April 1968 and non-voting; Straeffer's 2 May 1968
+win is as settled; Norfleet's runoff is 16 February 1982 and inside 1981-82;
+Fiorella 1972-73 and Gregory McKinney 1974-75 are regents, not presidents. Nothing
+disturbed. **Reed Morgan's entry is exemplary** — `role: unresolved`, a note
+saying outright he held neither office, and a case built on the two offices being
+occupied rather than on his absence from the index.
+
+**Surname matching.** Gregory McKinney, the 1974-75 regent, and Mitchell
+McKinney, the 1985-86 president, are correctly two people. So are Robert Watkins
+and Chris Watkins, Timothy Todd and Nick Todd.
+
+**Living people.** Thirty-four profile paragraphs touch a resignation, an
+investigation, a censure or a lawsuit. Every one that reports an allegation also
+reports its outcome: Todd sanctioned with no police action, Dahmer settled, Boka
+disqualified and reinstated, Bornefeld not censured, León censured with no
+further discipline and his rebuttal printed beside it. No accuser is named who
+was not named publicly.
+
+**Spelling.** `Keyanna`/`Keyana` Boka appears in both spellings across the 2012-13
+and 2013-14 profiles. That is CLAUDE.md's flag-do-not-fix case and it was left
+exactly as it stands.
+
+## Checks
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the eight previous nights and
+all six stay. The designated-driver pair was read in full this time rather than
+carried forward: Bill 97-3-F passing in November 1997 and the *Herald* announcing
+distribution in February 1998 are two events, and the second is the advance-notice
+rule working properly — it says the cards would go out the next day and states
+that the archive holds only a contents listing, claiming nothing about how the
+distribution went.
+
+The three edited year pages, and only those three, changed in the built site.
+
+## Verdict
+
+Nothing was waiting to be merged, and the layer that had never been audited turned
+out to need it. Nothing in the profiles was false — every figure checked held at
+its source, several word for word — but three presidents had their own page
+repeat a paragraph at them, and one of those repeats was quietly carrying a fact
+its twin had dropped.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who were president. 2,652 recorded terms
+of office held by 1,810 people, 98% carrying an account of what the person did.
+47 people recorded under more than one spelling. 308 documents and 1,111
+legislation files. 73 leader profiles, now 296 paragraphs.
+
+## Still open
+
+- The standing brief still instructs the editor to handle #6, #7 and #8. They have
+  been closed since 18 August. Fifth run to record it.
+- The 1999-00 Coates profile reports a *Herald* letter questioning SGA's handling
+  of an investigation into racially charged fliers targeting Will Jones. The
+  letter is what the archive cites and what it reports; the investigation's own
+  outcome is not in the record. Worth a look when someone is next in the 1999
+  Herald, which is behind the TopSCHOLAR block from here.
+- Carried forward unchanged: the election filing split, the pre-2000 legislation
+  gaps, the three flagged name pairs, and the 1987 evaluations wording.
