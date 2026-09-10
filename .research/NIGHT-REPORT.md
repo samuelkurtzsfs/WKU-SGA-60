@@ -1,3 +1,142 @@
+# 10 September 2026, afternoon — eighty faces carried across years, and the three that could not be
+
+One pull request was open: #413, the photograph agent's, opened at 14:01 the same day.
+It touched a single file. `data/photos.json` gained 83 entries and nothing else changed:
+no new image, no new year, no event, no profile. Its merge base was the current tip of
+`main`, so nothing had to be merged in first.
+
+## What the diff actually claims
+
+The run's own report describes it as reattachment — 83 officers who already had a
+verified portrait from another year of their SGA career, given that face on the years
+they held office, reusing the file and citation that first identified each. It calls
+this "no new claim of identity."
+
+That last part is not quite right, and it is the whole of the review. Reusing a file is
+not a new claim. Attaching it to a second year is: it says the officer standing in
+1988-89 is the same human as the face captioned in 1986. The original identifications
+were checked on earlier runs and are already published. What arrived on this branch was
+83 assertions that two records are one person, and those had never been tested.
+
+Because the operation is mechanical and uniform, all 83 were tested rather than the
+eight the brief asks for. A sample would have found the Lodmell entries and missed
+Gerard.
+
+## The structural checks, all 83
+
+Every reused file already carried an entry on `main` under the same name — no portrait
+of one person landed on another. Every file exists on disk and passes the JPEG or PNG
+magic-byte check. Every name is a genuine officeholder in that year's `years.json`:
+57 senate officers, 29 executive, 3 committee chairs, 2 senators. Nothing was matched by
+surname alone. No committee chair was promoted to officer and no bill's author to member,
+which is the error section 6 calls the commonest in the project. No event, date or
+living-person claim is touched anywhere in the diff, so the advance-notice rule and the
+April-election filing rule have nothing to bite on.
+
+`same-name.json` holds one name, David Payne, and he is not in this diff. The twins are
+right: Darlene's portrait is p. 9 of the 1996-97 Spirit Masters scrapbook and Carlene's
+is p. 10, and the two new Darlene entries attach only to Darlene's slots. The file that
+would have caught a merge of them was consulted and had nothing to say, which is the
+correct outcome rather than a missing one.
+
+## Identity, tested against the record rather than the names
+
+For each entry, the years between the portrait's year and the year it was being attached
+to were checked for whether the archive holds that person at all. Sixty-eight of the 83
+rest on unbroken documented service — adjacent years, same organization, often the same
+committee. Those needed nothing.
+
+Fifteen span a gap, and twelve of those hold up on evidence already in the file.
+`Matthew D. Bastin` maps to `Matt Bastin` in `name-aliases.json`, and that reattachment
+turns out to repair a portrait that had been matching nobody: the 1998-99 entry on `main`
+is filed under a name string that year's roster does not use, so the face was attaching
+to no one until this run added the 1997-98 slot. Brandon Rucker's 1993-94 note says
+outright that he was elected treasurer in the April 1994 election, which is the link.
+Dwight Campbell's 1999-00 note has him telling the *Herald* in April 2000 that he came
+into Congress in the spring of 1998. India Wilson, Jeff Key and Hollie Hale each carry an
+index argument in the label itself.
+
+Six cited sources were opened to confirm they are the volumes the labels name. All six
+returned 200, paced three seconds apart, and all six matched: `stu_org/329` is the
+1996-97 Spirit Masters scrapbook, `stu_org/563` the 1991-92 one, `dlsc_ua_records/384`
+the 1968 *Talisman*, `414` the 1990, `415` the 1991, and `386` the 1969 volume part 2,
+pp. 204 to the end, which contains the p. 300 the Durham label cites. The 1991-92
+scrapbook's own description names Eric McWilliams and Mark Miller in its member list,
+which confirms from outside the file the two entries in the set whose names looked most
+likely to be a coincidence.
+
+## Cut: three
+
+**Paul Gerard, 1969-70.** The 1967-68 roster note declines, in terms, to establish that
+its Paul Gerard is the Paul Gerard III recorded as student regent from 1968-69, calling
+the hometown and timing only circumstantially consistent. 1969-70 holds both names, and a
+Joe Gerard as well. Carrying the 1967-68 committee member's face into that year risks
+printing it on the regent — the one figure in this stretch the settled facts fix in
+place. The archive declined to merge these men; the photograph layer should not do it by
+another route.
+
+**Charlie Harris, 2007-08 and 2008-09.** The portrait is cited as a *Herald* image file
+of 3 May 2011 and nothing more: no article, no caption naming its subject. The rule for
+pictures is that the subject must be confirmable from the caption or the text beside it,
+and this citation makes no identification at all. Carrying it back three years, across a
+2009-10 he is absent from, rests a common name on evidence the source does not offer.
+
+Abbey Norvell's two entries rest on the same kind of bare image URL and were kept. Her
+service runs unbroken from 2019-20 to 2021-22, Director to Executive Vice President to
+Associate Justice, and the name is distinctive; what is thin there is the caption
+evidence, not the identity.
+
+## Rescued rather than cut: sixty-nine
+
+Only 11 of the 83 said which year the portrait came from. The other 72 would have printed
+a 1986 *Talisman* citation under a 1988-89 officer with nothing to tell the reader why.
+The convention for this already exists in the file — Carlene Lodmell's 1995-96 entry and
+Dwight Campbell's 1998-99 entry both carry it — and it was applied to the 69 that needed
+it and did not already have it: no photograph specific to this year is on file, so this
+portrait, from that year, is reused here. No factual claim was altered. This is the
+difference between reusing a picture and quietly implying it was taken in a year it was
+not.
+
+## Checks
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the nine previous nights and all six
+stay: three separate same-day September 1991 bills, a student-regent advisory bill
+introduced in January and failing on amendment in February, a Civil Liberties Union suit
+planned in February and endorsed in March, and the designated-driver pair read in full on
+a previous night. This diff introduced none of them and touches no events at all.
+
+## Verdict
+
+Eighty of 83 merged. The run's research was sound and its reasoning in the labels was
+often better than it needed to be — the Willoughby and Jeff Key entries argue their
+identifications from the volume index, position in the row and the sex of the neighbours,
+which is the standard the rest of the project should be held to. What it got wrong was
+one word in its own report: calling a cross-year reattachment "no new claim of identity"
+is what let three of them through without evidence, and what left 72 of them silent about
+where the face came from.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who were president. 2,652 recorded terms of office
+held by 1,810 people, 98% carrying an account of what the person did. 47 people recorded
+under more than one spelling. 308 documents and 1,111 legislation files. 1,387 portrait
+entries, 80 of them added tonight.
+
+## Still open
+
+- The standing brief still instructs the editor to handle #6, #7 and #8. They have been
+  closed since 18 August. Sixth run to record it.
+- Two portraits already on `main` are cited to a bare *Herald* image file with no caption
+  naming the subject: `2010-11-charlie-harris.jpg` and `2021-22-abbey-norvell.jpg`. Both
+  need re-sourcing to the article that published them, or withdrawal. Flagged to the
+  photograph routine on #413.
+- 222 officer and year slots still have no portrait, and 12 years still have no general
+  photograph at all. The photograph run's own list; unchanged by this review.
+- Carried forward unchanged: the 1999-00 fliers investigation whose outcome is not in the
+  record, the election filing split, the pre-2000 legislation gaps, the three flagged
+  name pairs, and the 1987 evaluations wording.
+
 # 10 September 2026, midday — the organization layer audited, and a family invented for two living men
 
 No pull request was open. `research-photos` is three commits ahead of `main` but its
