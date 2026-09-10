@@ -1,3 +1,102 @@
+# 10 September 2026, late — two portrait leads followed to the page and closed
+
+One pull request open, #406, the rolling photograph branch, reopened against current
+`main` after the orphan-history copy that used to be #6 was closed. It merged. The
+three stale branches the standing brief still names — #6, #7 and #8 — were all closed
+on 18 August and no longer exist as open work; the brief is out of date on that point.
+
+## What was verified
+
+The diff was thirteen lines across two files in `data/photo-finds/`, a staging
+directory `build.py` never reads, so nothing in it could reach the live site as
+visible text. That lowers the stakes but not the bar, and with only two substantive
+archival claims in the diff there was no reason to sample rather than check both.
+
+Both held, exactly. The 1981 *Talisman* page the Mark Chesnut lead pointed at is a
+Men's Intramurals results table: the volume's own full text gives "Mark Chestnut
+(Sigma Alpha Epsilon)" under badminton singles and "Mark Chestnut/Mitch Gum" under
+racquetball doubles, and the page-marker arithmetic confirms the index line "Chesnut,
+Mark Cameron 234" does land there. No portrait on the page. The 1978 candid is
+likewise as reported: the caption reads "A LIGHT MOMENT IN AN ASG MEETING" and names
+Bob Moore, David Bass, Sharon May and Cathy Murphy, four subjects against three
+visible faces, and the run was right to leave it unpublished rather than guess which
+face is Bass.
+
+The blocked route was reproduced rather than taken on trust. `viewcontent.cgi` returns
+a Cloudflare interstitial and HTTP 403 from this container, so the report that the
+twelve-year queue of year photographs could not be attempted is accurate. The note
+leaves that queue open instead of writing it off, which is the correct reading of the
+rule that a miss proves nothing.
+
+The coverage claims check out: all 73 leader terms across 61 years carry a portrait,
+and all 1,307 portrait files exist and begin FF D8. The three residual names — Jacob
+A. Miers, Lisa M. Kappler, Lane (Caroline) Simpson — each resolve to a person already
+on the closed list, and all three are registered in `name-aliases.json`, so that is
+the repository's own alias register rather than an ad-hoc merge by name.
+
+## What was cut
+
+Two corrections, pushed to the branch before merging.
+
+The Chesnut note said the intramurals table "names him" — asserting that the ASG
+treasurer and the intramural winner are one man, on the strength of a name the page
+spells with a different letter. That is precisely the shape of the Lodmell error. It
+was trimmed rather than cut, because the run had better evidence than it wrote down:
+the yearbook's own index gives "Chesnut, Mark Cameron" for that page, which is a real
+basis for the identification. The note now records the index entry, says the table's
+spelling is probably the yearbook's typo, and leaves the identification open instead
+of asserting it.
+
+Two counts in the run's summary did not reproduce. "72 terms" is 73 terms held by 66
+people. The "~219-row gap" is 293 year-and-name rows across 177 distinct names, and
+219 could not be recovered under any methodology tried. Both were corrected to the
+figures the data gives. The claim these numbers sat inside — that all but three of the
+gap names were already closed — verified exactly at the 177-name level, so the
+conclusion survived its own arithmetic.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the six previous nights, none of
+them touched by this diff, which adds no events at all. All six stay. The 1997-98
+designated-driver pair was read closely again: a November bill funding the cards and a
+February distribution notice, separate dates and separate sources, and the February
+entry correctly writes only what an advance notice proves and says so.
+
+## Verdict
+
+Merged. A run that spends itself proving two leads dead and adds nothing to the site
+is not a wasted run — it is the archive getting smaller in the right direction, and
+both negatives here are documented well enough that a later pass can reopen them on
+evidence rather than on doubt. The two corrections were about how the findings were
+worded and counted, not about whether they were true.
+
+## Counts
+
+61 years, 1,984 dated events, 60 people who were president. 2,652 recorded terms of
+office held by 1,810 people, 98% carrying an account of what the person did. 47 people
+recorded under more than one spelling. 308 documents and 1,111 legislation files in
+the built site.
+
+## Still open
+
+- The twelve-year queue of year photographs (1993-94 through 1997-98, 2000-01,
+  2002-03, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10). Blocked on TopSCHOLAR, and
+  confirmed blocked from this container rather than merely reported so.
+- Worth recording for the next photograph run: `archive.org` item text is reachable
+  and unthrottled from here — `/metadata/<id>`, then the `_djvu.txt` — even while
+  `web.archive.org` and TopSCHOLAR are refused. Both of this run's leads were closable
+  that way. It may open the queue for the volumes archive.org holds.
+- David Bass remains without a portrait; the 1978 candid is a confirmed dead end, but
+  a second photograph of him elsewhere has not been ruled out.
+- Carried forward unchanged: the 1997-98 legislation gap, Eddie Myers 1994-95, Jacob
+  A. Miers 2008-09; the three flagged name pairs Staci/Stacy Kitchens, Carleton
+  Ruminer/Carlton Rumenier, Brittany Ann/Brittany-Ann Wick; the 1987 evaluations entry
+  calling them course evaluations where the Herald index says only "Required
+  Evaluations"; and the 15 April 2026 election written up on two year pages.
+
+---
+
 # 10 September 2026, night — nothing to merge, and four elections filed a year late
 
 No pull request was open. Every `research-*` branch on origin is behind `main`: the
