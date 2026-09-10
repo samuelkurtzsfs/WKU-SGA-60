@@ -1,3 +1,120 @@
+# 10 September 2026, small hours — one election, two year pages, twenty times over
+
+No pull request was open. The photograph run's #406 merged three hours earlier and
+`research-photos` carries nothing beyond it; every other `research-*` branch is either a
+4 August snapshot with no merge base or squash-merge residue already on `main`. The three
+stale pull requests the standing brief still names, #6, #7 and #8, have been closed since
+18 August. Nothing was waiting, so the audit went looking for what the validators cannot see.
+
+## The gap in the duplicate checker
+
+`check_duplicates.py` compares events **within** a year. Nothing in the toolchain compares
+across years, and that is where the archive was publishing the same event twice. Grouping
+every event by its cited source URL and keeping the pairs that sit in different academic
+years within a week of each other turned up 47 candidates. Most were honest: a *Herald*
+issue carries thirty articles and two year pages may legitimately draw different stories
+from one issue. Twenty were not. They were one election, written up once under the year the
+ballot was held and again under the year the winners served, in different words, from the
+same source — precisely the failure the rule in `CLAUDE.md` describes and precisely the one
+matching whole titles never catches.
+
+They ran from 1968 to 2026: Zielke and Porter's incoming administration, Lyne's unopposed
+win, Linda Jones as the first woman president, Fuller, Ragan's primary and her repeated
+election, McKinney and Watkins, Colvin, Falmlen, the turbulent 1999 ballot, the 2000
+insurance story, Martin against Wright, the faculty evaluations, the 2013 debate, Richey's
+re-election, the WGK ticket, the 24th Senate's first meeting and the 2026 town hall.
+
+## The one that contradicted a settled fact
+
+The worst of them was Sandra Norfleet. `CLAUDE.md` settles her term as 1981-82, "not
+1982-83," and says in terms: do not file her forward again. The archive was doing exactly
+that. Her regent runoff sat on the 1981-82 page dated 18 February 1982 **and** on the
+1982-83 page dated 16 February, both from *Herald* 57:41. The 1982-83 copy is gone. The
+surviving entry keeps every fact from both — no majority in the primary of 9 February, the
+runoff won on 16 February, Kevin Francke's byline — and is dated to the runoff rather than
+to the issue that reported it.
+
+## What was merged, and what was checked first
+
+Each pair was combined so no sourced fact from either was lost, the survivor being the copy
+under the year the ballot was held, which is the convention #405 settled. Three pairs
+disagreed about the date, and all three were resolved at the source rather than by picking
+one: the 2013 debate was held on a Wednesday, 27 March, and reported on the 28th, so the
+source label reading 29 March was wrong; the 24th Senate met on Tuesday 23 April 2024 and
+the *Herald* printed it on the 24th; the 2026 town hall was held on Tuesday 7 April and
+reported on the 8th. In each case the archive had one copy carrying the meeting date and
+one carrying the publication date, and the merged entry now carries the meeting date with
+the publication date in its label.
+
+Twelve claims were opened at their sources, above the eight the brief asks for. *Herald*
+57:41 gives Francke on Norfleet; 4936 gives "John Lyne Wins Presidency Before Race Begins"
+beside the legislature dropping the student-regent vote; 5627 gives all three of Galloway
+on Fuller's persistence, Wood on Irons after losing, and Wood on Fuller, Wilson and Zoeller;
+5759 gives McKinney and Watkins riding experience to primary victory and Stan Reagan's
+platform in the same issue; 7752 gives Armes on Falmlen, Weber on the boycott, the immature
+antics editorial and the complaint of biased coverage; 7635 gives Green twice, on Colvin
+and on the activity fee; 8052 gives Clark, Leffler and Lockhart; 543 is confirmed as the
+memo on the results of the ASG and class elections. The three recent stories were read in
+full on wkuherald.com. Every claim held.
+
+## Two corrections found in the merging
+
+A mirrored PDF nearly went with a deleted entry. The 1999-00 copy of the turbulent-election
+story carried `1999-00-herald-74-51-elections.pdf` inside its `src`; the 1998-99 copy that
+survives did not. The file is restored on the survivor, so the reader still gets the issue
+without leaving the archive. And the 26th Senate entry spelled the incoming chief of staff
+"Gabi Pace" where its own cited source spells her Gabby; that follows the source now.
+
+## What was deliberately not done
+
+Removing the duplicates exposed the larger question underneath, and this pass stopped at its
+edge. Fifty-two events are dated outside the academic year they are filed under. Six are the
+1966 founding documents, which have no earlier page to sit on; five are `YYYY-01-01`
+year-only placeholders on the wrong side of the summer. The remaining forty-odd are
+single, unduplicated entries — spring elections filed under the year they produced rather
+than the year they were held. That is the filing split three previous reports have carried
+as open, and it is a design choice about what a year page is for, not an error. One entry
+of mine strayed across that line, moving the 26th Senate's seating off 2026-27; it was put
+back, and only the duplicated red-jacket sentence removed. The count is recorded here so
+whoever owns the decision can make it against a number instead of an impression.
+
+Also left alone: the Joe Murrell to Joe Morel alias added on 9 September rests on the
+project editor's confirmation rather than on a document, and `name-aliases.json` says so
+outright. That is the honest way to record it and it is the only pair in the file so
+justified. Noted, not reversed.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the seven previous nights — four are a
+proposal and its later vote or defeat, two are separate bills taken the same day in
+September 1991 — and all six stay. Re-running the cross-year comparison leaves 21 pairs,
+every one of them a genuinely different article from a shared issue.
+
+## Counts
+
+61 years, 1,964 dated events (1,984 before this pass; twenty duplicate publications
+removed), 60 people who have been president. 2,652 recorded terms of office held by 1,810
+people, 98% carrying an account of what the person did — all three unchanged, so no officer
+record was touched. 47 people recorded under more than one spelling. 308 documents and
+1,111 legislation files in the built site.
+
+## Still open
+
+- The filing split, now quantified: 52 events dated outside their filed year, of which about
+  forty are spring elections filed under the year served. A decision, not a defect.
+- The four stories from the 15 April 1999 *Herald* remain split two and two across 1998-99
+  and 1999-00. No longer duplicated, still divided.
+- Sophie Stirling or Sophie Sterling: the *Herald* of 8 April 2026 spells her one way and
+  the *Herald* of 28 April the other. Flagged, not fixed, per the rule on spelling doubts.
+- Carried over unchanged: the pre-2000 gaps (1997-98 legislation, Eddie Myers 1994-95,
+  Jacob A. Miers 2008-09), the three flagged name pairs Staci/Stacy Kitchens, Carleton
+  Ruminer/Carlton Rumenier and Brittany Ann/Brittany-Ann Wick, and the 1987 evaluations
+  wording.
+- `viewcontent.cgi` still returns a Cloudflare interstitial and 403 from this container.
+  Landing pages answered every request this run, so the abstracts are reachable even when
+  the PDFs are not.
+
 # 10 September 2026, late — two portrait leads followed to the page and closed
 
 One pull request open, #406, the rolling photograph branch, reopened against current
