@@ -1,3 +1,129 @@
+# 10 September 2026, night — thirty Herald reports the reader could not follow
+
+Nothing was open again. `gh` is not installed in this container, so access was proved the
+way `AGENT-LANDING.md` says to: a dry-run push came back `* [new branch] HEAD ->
+access-probe`, and the GitHub tools then returned an empty open-pull-request list. Every
+`research-*` branch was measured against `main` by content: `research-photos` is behind it
+by last night's report and nothing else, and the rest are the 4 August snapshots with no
+merge base. #6, #7 and #8 have been closed since 18 August. Eighth run to record it.
+
+TopSCHOLAR was answering this run, which it has not always been, so the pass went to
+claims that could only be settled by opening the source.
+
+## The defect: a report named, a citation pointing elsewhere
+
+Thirty events tell the reader what the *Herald* reported — a headline, a byline, a date —
+while citing a *Talisman* page, a set of SGA minutes or a piece of legislation. The facts
+were not invented: they came out of `herald-index-full.json` while the entry was being
+written. But the citation attached to the entry does not carry them, so a reader who
+wanted to check the *Herald* had nowhere to click, and nothing in `check_data.py` can see
+it. Three of the thirty already carried the issue as `src2`, correctly. Twenty-seven did
+not.
+
+Every one of the twenty-seven was resolved to its issue and checked. The twenty-seven cite
+twenty-six distinct issues; twenty of those were opened directly on TopSCHOLAR, one at a
+time and three seconds apart, and the issue's own article list read. The remaining six —
+the Spock announcement, the mock election, the Mountain billing, the Stringbean piece, the
+7 February 1980 issue and the 1988 primaries — rest on the local index, whose lines matched
+the entries word for word. Twenty-two landing pages were opened in all, counting two that
+turned out to be cited correctly already. All twenty-seven entries now carry the *Herald*
+issue as `src2`, with the volume, the number, the date, the byline and the headline as the
+archive prints them.
+
+A sample of what the sources actually said:
+
+| entry | the *Herald* issue it now cites |
+|---|---|
+| 1966-67, Thompson approves the constitution | 45:20, 7 Apr 1966 — carries both the approval story and the constitution's full text |
+| 1971-72, Ike and Tina Turner at Homecoming | 51:15, 19 Oct 1971 — the turnout story, Phyllis Sower's letter, and a review the entry does not mention |
+| 1979-80, the 28-college open house survey | 55:9, 27 Sep 1979 — Ken Morris, "Western Last in 28 College Housing Poll" |
+| 1980-81, the survey on who students recognised | 56:7, 18 Sep 1980 — Diane Comer, exactly the byline and line the entry names |
+| 1990-91, the earthquake absences resolution | 66:27, 29 Nov 1990 — both that resolution and the left-handed desks in one issue |
+| 2008-09, the 22 October lockdown | 84:16, 23 Oct 2008 — the gunfire story, the emergency-response piece **and** the timeline of events |
+
+That last row is the local index's limits made visible. `herald-index-full.json` had cached
+nineteen lines for the issue and the timeline was not among them; the landing page carries
+it. A miss in the local file proves nothing, exactly as CLAUDE.md says.
+
+## Read at the page, not the index
+
+Four entries were checked against the printed page rather than a headline.
+
+**John Prine, autumn 1978.** The entry says ASG lost about $2,000 on a sold-out Van Meter
+show where tickets cost more than any mini-concert before, and that Prine's five-man band
+played 25 songs. The 1979 *Talisman*'s OCR loses the whole article body, so the scan itself
+was read: page 79, "Sunshine cont.", carries every one of those figures — the auditorium
+holding slightly more than 1,000, the sellout, the higher prices, the $2,000, the five-man
+band and the 25 songs. Nothing to trim. The song titles come from the caption on the facing
+photograph, which the OCR does keep.
+
+**The three 1979-80 and 1980-81 *Talisman* entries** — the opinion polls and the WKYU
+phone-in, the White House invitation, the 28-school open house survey, the International
+Food Fest, the car pool and the petition to Governor Brown — were read against the
+yearbook's own text on pages 274-275 and 282-283. Every figure held: 250 student leaders,
+28 schools, almost 450 in the car pool, $60,000 to $70,000 transferred to the centre board,
+Osama Sharif on attendance, Fuller on dismissing faculty. Two entries volunteer that the
+yearbook gives no date, which is the right way to say it.
+
+**Steve Fuller in the Board seat.** The 1980-81 entry rests on the 1980 *Talisman*'s Board
+of Regents page, and that page says what the entry says it says: the ASG president sworn in
+as a student regent, in the same passage as the biennial budget, the Campbell and Sheffer
+appointments and $66,000 for the president's home. Its second half — Bush leaving in
+January 1982, the seat going to a campus-wide election, Norfleet's February runoff — matches
+the settled record and was not disturbed.
+
+## Traps, worked
+
+No advance notice was read as a report. The Spock item of 21 September 1971 is an
+announcement and the entry calls it one, taking the crowd of 1,100 from the yearbook
+instead. The Mountain and Black Oak Arkansas billing of 19 November is a booking, and the
+entry uses it for what was booked and the *Talisman* for the cancellation. No committee
+chair became an officer; no one was matched by surname; the April-election filing rule had
+nothing to bite on, since none of the twenty-seven moved a date. Nothing touched a living
+person beyond what its source reported.
+
+## Also checked, and clean
+
+The legislation archive was tested end to end for the failure mode in section 6 of the
+handoff — a blocked download saved as a `.pdf`. All 1,111 indexed files exist, all 1,111
+begin with `%PDF`, none is under 2 KB, and there is not one orphan or one missing file
+between `legislation.json` and the disk.
+
+Fifty events are dated outside the academic year they are filed under, the same population
+the 8 September pass counted and left alone as the owner's decision. Nothing here changed
+it.
+
+## Checks
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the nine previous nights and all six
+stand. Nineteen year pages changed in the built site, together with the decade pages and
+the events index that carry the same entries, and nothing else.
+
+## Verdict
+
+Nothing was waiting to be merged and nothing was cut. Every claim opened this run held at
+its source, which is worth saying plainly: the research was right, the citation was
+incomplete. Thirty *Herald* reports the archive asserted are now thirty *Herald* reports the
+archive links.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who have been president. 2,652 recorded terms of
+office held by 1,810 people, 98% carrying an account of what the person did. 47 people
+recorded under more than one spelling. 308 documents and 1,111 legislation files.
+
+## Still open
+
+- The standing brief still instructs the editor to handle #6, #7 and #8. They have been
+  closed since 18 August. Sixth run to record it.
+- The same defect in its other forms: entries that name a *Talisman* page, a set of minutes
+  or a piece of legislation the citation does not reach. Only the *Herald* form was swept
+  this run.
+- Carried forward unchanged: the election filing split, the 1999-00 Coates investigation
+  outcome, the pre-2000 legislation gaps, the three flagged name pairs and the 1987
+  evaluations wording.
+
 # 10 September 2026, evening — fifteen citations that led to a browse listing, and twenty-two that led to the wrong meeting
 
 Nothing was open. The pull request list came back empty, and every `research-*` and
