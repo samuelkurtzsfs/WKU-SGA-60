@@ -1,3 +1,173 @@
+# 10 September 2026, midday — the organization layer audited, and a family invented for two living men
+
+No pull request was open. `research-photos` is three commits ahead of `main` but its
+three-dot diff against `main` is empty: its content landed in #406 and the branch has
+since merged `main` back. Every other `research-*` branch is a 4 August snapshot with no
+merge base, which AGENT-LANDING.md forbids merging. So nothing was waiting, and the audit
+went to the largest layer the night reports show has never had a pass of its own: the
+organization block, 368 executive entries, 582 senate officers and 1,524 senate members.
+
+## What was checked
+
+The layer's most dangerous claim is the one section 6 of the handoff calls the commonest
+error in the project — a committee chair recorded as an officer, a bill's author recorded
+as a member. Every executive entry whose office named a committee, a chair or a member was
+pulled and read against the document it cites: nineteen of them.
+
+`pdftotext` and PyMuPDF are both absent from this container and `pip` will not run, so the
+cited legislation was read by decompressing the PDFs' content streams and taking only the
+operands of text-showing operators. Two of the files carry subset fonts whose encoding is
+offset by twenty-nine; those were decoded before reading. The method was checked against
+documents whose author lines were already known before it was trusted.
+
+**Every committee-chair title in the layer held at its source, word for word.** Bill 13-22-S
+names Alex Cissell chair of the Student Mental Health and Wellbeing Committee; Resolution
+1-22-S names Shelby Robertson "Committee Chair for Enrollment and Student Experience";
+Resolution 12-22-S names Zachary Skillman chair of Campus Improvements and Sustainability;
+Bill 10-18-S names Ian Hamilton sustainability chair; Bill 36-23-S names Olivia Feck;
+Bill 10-23-F names Meghan Pierce LOC chair; Bill 17-26-S names Jade Ismail chair of the
+Action & Opportunity Committee. Mark Clark's entry is the careful one: the bill's author
+line calls him a senator at large and only its contact line calls him chair of the
+Committee of Diversity and Inclusion, and the entry says exactly that. The research
+routines sourced this layer properly.
+
+The errors were elsewhere.
+
+## What was cut
+
+**The Skillman twins do not exist in any source this archive cites.** The 2021-22 entry for
+Zachary Skillman carried a note calling Jacob Skillman his "identical twin brother", saying
+the two came to WKU together from Katy, Texas, both reading Business Economics with a
+Computer Information Systems minor, and that their father took a WKU degree in 1994. The
+entry's own profile said the opposite in the same breath — "no relation established in the
+sources". The Herald of 23 September 2021, which the entry cites, profiles Jacob Skillman
+and Zach Skillman under separate headings, gives each man's major, ambassadorship and book
+club, and never says they are related. It gives no hometown, no minor and no father. The
+9 September night report's own summary of that article, which called them brothers, read it
+the same wrong way. Every unsourced claim went. What remains is the part the article does
+support and the part that matters editorially: two men of the same surname sat in that
+Senate, described in near-identical terms, so no photograph goes on either without a caption
+naming him. This is the Lodmell rule running the other way — that case is about refusing to
+merge two people the sources keep apart, and this one is about refusing to make a family the
+sources never mention.
+
+**Alex Cissell's note made three claims its sources do not carry**, all about a living
+person. It said Cissell "was still authoring SGA legislation two sessions after her
+committee chairmanship" and "wrote the 2023-24 Hope Harbor X Denim Day funding bill": the
+Herald of 13 March 2024 names five people who teamed up to host that event and calls Cissell
+a WKU senior public relations student, not an author and not an SGA member. It described
+Senator at Large Sophia Bryant as "by then a senior public relations student": the Herald's
+caption attaches that description to Cissell, not to Bryant. And it published the archive's
+own to-do — that the profile's use of "he" "appears to be an unsourced inference and should
+be checked" — on the public page.
+
+It should have been checked rather than published, so it was. **No cited source uses any
+pronoun for Cissell.** The profile said "he" four times and the note said "she"; the note's
+stated reason for "she" was that a Herald photograph "shows a woman", which is an inference
+of exactly the kind this project forbids, so replacing one guess with the other was not
+available. Both are gone. The profile now uses the name, and the note records that no source
+states the pronouns, so the next automated pass does not helpfully put one back.
+
+**Antonina Clementi was published under the heading "The executive".** Bill 16-22-S names
+her, over her own signature, "Member of LOC" — a member of the Legislative Operations
+Committee. A committee member is not an executive officer by any reading, and this is the
+handoff's trap 2 in its plainest form. She has been moved to the senate, keeping her source
+and her document's own wording. She is still in the roster; the counts do not move.
+
+**Larry Ashby's office read "Judicial Committee"** — the committee itself, as though he were
+it. The March 1968 newsletter lists seven members and he is one of them. Corrected to
+Judicial Committee member.
+
+**Five entries had their citation and their evidence in each other's fields.** In 1967-68
+(Ashby), 1977-78 (John Perkins), 1979-80 (Alan Reid) and 1986-87 (Donna Holloway and Naheed
+Shafi), `src.label` held a full prose sentence of evidence and `note` held the actual
+citation. `src.label` is the citation's link text on the built page, so readers were being
+offered a 180-character sentence to click where a source name belongs, and Shafi's was
+truncated mid-word with an ellipsis — the field complaining about what had been put in it.
+Swapped back, with no fact lost from either side.
+
+Alan Reid's entry also quoted the Herald at seventeen words, over the fifteen-word limit.
+Paraphrased down to the margin and a three-word quote.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the nine previous nights and all six
+stand: they are same-day legislative business, an introduction against a failed vote, a
+lawsuit planned against one endorsed, and a bill lined up against the bill passed.
+
+The five edited year pages, the officer pages behind them and the derived indexes, and only
+those, changed in the built site. Cissell's and Skillman's pages were read back after the
+build to confirm what a reader now sees.
+
+Nothing in the settled-facts list was touched.
+
+## Verdict
+
+The research routines are sourcing this layer well — nineteen committee titles read against
+their own documents and nineteen held. What they are not doing is watching the boundary
+between what a document says and what a note says around it. Every cut in this pass came
+from the same place: a source that says one thing and a note that says more. Three of the
+five people concerned are living, and one of them had a family, a hometown and a father
+attributed to him by an archive that had never seen a source for any of it.
+
+## Addendum — a fact cut for its citation, restored under the one that proves it
+
+Chasing the Bill 36-23-S question left open above answered it, and reversed part of the
+Cissell cut. The Hope Harbor X Denim Day bill is **16-24-S**, of 2023-24, and its author
+block names Alex Cissell first, as a WKU student, with Andrea Diaz, Savanna Stinnett and
+Senators at Large Sophia Byrant and Maiah Cisco. So the note's claim that Cissell was
+still authoring SGA legislation two sessions on was true; it was cited to a Herald
+article that does not establish authorship, and through that article to a bill number
+the Herald had printed wrongly. The archive holds 36-23-S correctly as Olivia Feck's
+t-shirt bill of the previous session. The caption is the error, not the record.
+
+The fact is back, under Bill 16-24-S, which proves it. This is the rule the August
+passes wrote down after trimming things for citing the wrong page: a claim cut for its
+citation should come back under the citation that carries it, not stay cut. The
+spelling difference is recorded rather than fixed — the bill prints Byrant, the Herald
+prints Bryant, and the archive follows the Herald with the difference noted.
+
+## Addendum — the search index is a build behind the roster
+
+Verifying the merge turned up a second defect, in the build rather than the record.
+`build.py` makes the search index from `site/roster-people.csv`, but `build_roster.py`,
+which writes that file, does not run until eighty lines later in the same build. Every
+build therefore indexes the previous build's roster. Clementi's search entry still read
+"member of loc" after the record had been corrected, and `git log` shows the index had
+not been rewritten since #408 — so the profiles pass of that morning shipped stale as
+well. The index was regenerated by running the build to convergence and landed
+separately. The ordering in `build.py` was left alone: it is a change to a build that
+auto-deploys on merge and should be made on purpose. Until it is, a pass that changes an
+office must run `build.py` twice.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who were president. 2,652 recorded terms of office
+held by 1,810 people, 98% carrying an account of what the person did. 47 people recorded
+under more than one spelling. 308 documents and 1,111 legislation files. 73 leader profiles
+across 296 paragraphs. The organization layer stands at 2,474 entries.
+
+## Still open
+
+- **The standing brief still instructs the editor to handle #6, #7 and #8.** They have been
+  closed since 18 August. Sixth run to record it, and the first to raise it outside this
+  file, since five entries here have not reached anyone.
+- **Bill 36-23-S has two identities.** The archive holds it as the Counseling Center's
+  Sexual Assault Prevention Month t-shirt bill, authored by Olivia Feck, filed under
+  2022-23. The Herald of 13 March 2024 calls Bill 36-23-S the Hope Harbor X Denim Day
+  funding bill and reports it at the 20th meeting of the 23rd senate. Both cannot be right.
+  Not resolved here, and nothing was written on the strength of either.
+- **A judicial-branch member sits in "The executive" for 1967-68.** Ashby's office string is
+  now honest, but whether the Judicial Committee belongs in that block at all is a question
+  about the 1966 constitution that this pass did not research. Flagged, not answered.
+- **John Perkins's citation points at a collection root**, `digitalcommons.wku.edu/sga/`,
+  not at a document. The note names the minutes of 24 March and 1 November 1978 precisely,
+  so the claim is checkable by hand, but the link should be to the minutes.
+- Carried forward unchanged: the 1999-00 Coates investigation outcome, the election filing
+  split, the pre-2000 legislation gaps, the three flagged name pairs, and the 1987
+  evaluations wording.
+
 # 10 September 2026, small hours — one election, two year pages, twenty times over
 
 No pull request was open. The photograph run's #406 merged three hours earlier and
@@ -20060,3 +20230,151 @@ carrying a source and a link.
   the OCR does not repeat the name, so the leaf has to be pulled as an image.
 - The 1987 evaluations entry calls them course evaluations where the Herald index
   says only "Required Evaluations".
+
+---
+
+# 10 September 2026, morning — the president profiles audited, and three that printed a paragraph twice
+
+## What was reviewed
+
+Nothing was waiting. No pull request was open, and every `research-*` and
+`editor-*` branch on origin was checked by content rather than by commit count:
+`research-photos` is three commits ahead of `main` and carries nothing — the two
+research commits are already on main as #406 and the third is a merge of main, so
+the branch diffs empty against it. The twelve older `research-*` branches have no
+merge base with `main` at all; they are the 4 August snapshots `AGENT-LANDING.md`
+warns about. The stale pull requests the standing brief still names, #6, #7 and
+#8, have been closed since 18 August. That is now the fifth run to record it.
+
+So the audit went to the layer CLAUDE.md calls the heart of the project and no
+pass has ever tested systematically: the **73 president and student regent
+profiles**, 299 paragraphs of narrative prose, the most-read text on the site.
+Profiles carry an explicit, checkable rule — every fact in one must be traceable
+to a source already cited in that year's events, documents or leader sources.
+
+## Three profiles were publishing the same paragraph twice
+
+The duplicate rule has always been enforced on events. It had never been run
+against profiles, and three presidents had a paragraph printed twice on their
+own page:
+
+| year | leader | what was wrong |
+|---|---|---|
+| 2000-01 | Cassie Martin | P3 repeated P0's first two sentences verbatim |
+| 2007-08 | Jeanne Johnson | P5 repeated P3 almost word for word |
+| 2026-27 | Caden Lucas | P4 repeated sentences two to four of P0 |
+
+Martin's and Lucas's repeats carried nothing their originals did not, and were
+cut. Johnson's two copies were **not** identical: P5 alone carried her
+administration arranging extra credit for students who attended the election
+debate. So the pair was combined rather than halved — the fuller text kept, in
+P3's chronological slot ahead of the paragraph about Boles taking the seat, and
+the duplicate dropped. No sourced fact was lost, which is the rule.
+
+That extra-credit detail was confirmed at source before the merge, not assumed:
+the *Herald* of 1 April 2008 has Johnson listing the debate during SGA week,
+"working with administration to provide extra credit to students who attended the
+debate," and the candidate profiles and questionnaires added to the SGA site.
+
+## Ten claims opened at their sources, above the eight the brief asks for
+
+The audit flagged ten profiles carrying a figure that appears nowhere in their
+year's stored summaries. Every one was opened at its cited source. **All ten
+held, several word for word.**
+
+- **Nick Todd's $800**, 2004-05. The *Herald* of 26 Aug 2004 gives the internal
+  auditor's May report, the $872 total of small purchases between August 2003 and
+  May 2004, most under $10 at campus restaurants with no documentation, the
+  separate $71 rental-car charge, and campus police determining no police action
+  was necessary. The profile's "more than $800" is the article's own phrase.
+- **Andi Dahmer's $10,000**, 2017-18. The *Bowling Green Daily News* of 3 Feb 2024
+  quotes WKU's attorney: a nominal settlement of $10,000 paid by the university's
+  insurance carrier, no admission of wrongdoing, after a 25 January settlement
+  conference. Exact.
+- **The $13,000 gazebo**, 2000-01. The *Herald* of 1 Oct 2002 carries the sum, the
+  money going back into the general fund and being spent on computers, and — the
+  part worth checking — names "former presidents Leslie Bedo and Cassie Martin" as
+  partly responsible. Bedo was president in 2001-02, so the archive is not
+  promoting a vice president. The article also refers to "the original legislation
+  passed by the 2001 congress," which supports the profile's wording exactly.
+- **Katie Dawson's 1,797**, 2005-06: the 159th commencement, the Radcliff native,
+  the degree in corporate and organizational communication. Exact.
+- **Stephen Mayer's 2,447**, 2018-19: 2,447 voting overall, 2,378 in the
+  presidential race, 35 to 33 to 32 percent. Exact.
+- **Garrett Edmonds's petition**, 2020-21: over 3,500 signatures in three days.
+  Exact.
+- **Cole Bornefeld's $3,500**, 2022-23: his own words to the *Herald*, 31 Oct 2022.
+- **Caden Lucas's HON 251**, 2026-27: WKU News, 3 Sep 2024, the Honors Teaching
+  Fellowship for HON 251 Citizen and Self and the inaugural Mahurin seat.
+- Robert Watkins's "91.7" is the radio station, Reed Morgan's "66" is 1965-66.
+
+## Checked and found sound
+
+**Profile against note, and profile against event.** Three overlaps surfaced —
+McKinney, Colvin, Jordan. All three are by design: a leader's `note` is a short
+flag at the top of the page and the profile is the narrative below it, and a
+profile has to mention the election the year's events also record. Not
+duplicates, and not cut.
+
+**The settled facts.** Every tripwire in CLAUDE.md was run across the profile
+text. Menser is first regent in April 1968 and non-voting; Straeffer's 2 May 1968
+win is as settled; Norfleet's runoff is 16 February 1982 and inside 1981-82;
+Fiorella 1972-73 and Gregory McKinney 1974-75 are regents, not presidents. Nothing
+disturbed. **Reed Morgan's entry is exemplary** — `role: unresolved`, a note
+saying outright he held neither office, and a case built on the two offices being
+occupied rather than on his absence from the index.
+
+**Surname matching.** Gregory McKinney, the 1974-75 regent, and Mitchell
+McKinney, the 1985-86 president, are correctly two people. So are Robert Watkins
+and Chris Watkins, Timothy Todd and Nick Todd.
+
+**Living people.** Thirty-four profile paragraphs touch a resignation, an
+investigation, a censure or a lawsuit. Every one that reports an allegation also
+reports its outcome: Todd sanctioned with no police action, Dahmer settled, Boka
+disqualified and reinstated, Bornefeld not censured, León censured with no
+further discipline and his rebuttal printed beside it. No accuser is named who
+was not named publicly.
+
+**Spelling.** `Keyanna`/`Keyana` Boka appears in both spellings across the 2012-13
+and 2013-14 profiles. That is CLAUDE.md's flag-do-not-fix case and it was left
+exactly as it stands.
+
+## Checks
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the eight previous nights and
+all six stay. The designated-driver pair was read in full this time rather than
+carried forward: Bill 97-3-F passing in November 1997 and the *Herald* announcing
+distribution in February 1998 are two events, and the second is the advance-notice
+rule working properly — it says the cards would go out the next day and states
+that the archive holds only a contents listing, claiming nothing about how the
+distribution went.
+
+The three edited year pages, and only those three, changed in the built site.
+
+## Verdict
+
+Nothing was waiting to be merged, and the layer that had never been audited turned
+out to need it. Nothing in the profiles was false — every figure checked held at
+its source, several word for word — but three presidents had their own page
+repeat a paragraph at them, and one of those repeats was quietly carrying a fact
+its twin had dropped.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who were president. 2,652 recorded terms
+of office held by 1,810 people, 98% carrying an account of what the person did.
+47 people recorded under more than one spelling. 308 documents and 1,111
+legislation files. 73 leader profiles, now 296 paragraphs.
+
+## Still open
+
+- The standing brief still instructs the editor to handle #6, #7 and #8. They have
+  been closed since 18 August. Fifth run to record it.
+- The 1999-00 Coates profile reports a *Herald* letter questioning SGA's handling
+  of an investigation into racially charged fliers targeting Will Jones. The
+  letter is what the archive cites and what it reports; the investigation's own
+  outcome is not in the record. Worth a look when someone is next in the 1999
+  Herald, which is behind the TopSCHOLAR block from here.
+- Carried forward unchanged: the election filing split, the pre-2000 legislation
+  gaps, the three flagged name pairs, and the 1987 evaluations wording.
