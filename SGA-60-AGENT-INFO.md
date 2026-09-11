@@ -2605,11 +2605,11 @@ each after a correction. The reasoning is in `.research/NIGHT-REPORT.md` under
   - **Savannah Molyneaux, Kara Lowry and Conner Hounshell** (Executive Vice
     President, Administrative Vice President and Chief of Staff, 2017-18) —
     all three from one photo, "Next student body president elected to
-    office" (wkuherald.com/28871, 19 Apr 2017), captioned "(From left to
-    right) Louisville sophomore Savannah Molyneaux, Louisville sophomore Andi
-    Dahmer, La Grange sophomore Kara Lowry and Buckner freshman Conner
-    Hounshell gather for a hug after hearing the election results." All four
-    faces are distinct in the frame despite the hug; the fourth, Andi Dahmer
+    office" (wkuherald.com/28871, 19 Apr 2017). The caption gives the four
+    left to right — Savannah Molyneaux, Andi Dahmer, Kara Lowry, Conner
+    Hounshell — with their home towns and class years, embracing after the
+    result. All four faces are distinct in the frame despite the hug; the
+    fourth, Andi Dahmer
     (the incoming president), already had a portrait, so only the other
     three were added. Lowry's crop keeps a small sliver of Dahmer's hair and
     closed eye at the bottom-left corner — unavoidable given how tightly the
