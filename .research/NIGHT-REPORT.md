@@ -21330,3 +21330,27 @@ said in open session. Carried forward unchanged: the eleven paused routines, Mar
 1999-00 Coates investigation whose outcome is not in the record, the pre-2000 legislation gaps,
 the three flagged name pairs, the 1987 evaluations wording, and the twenty-three correctly
 written advance-notice entries worth corroborating from the *Talisman*.
+
+## Addendum, 11 September — why the pull request list keeps coming up empty
+
+The brief this editor runs from opens by saying four research routines are running around the
+clock and pushing to `research-*` branches. They are not. Checked against the account's own
+schedule this midday, **two routines are enabled and no more**:
+
+- **SGA 60 - editor**, every three hours at :17 — this pass.
+- **SGA 60 - portraits**, every six hours at :52 — the photograph agent, which is what #413,
+  #414 and #418 were.
+
+Nothing else fires. There is no decade routine, no senate routine, no profiles routine; the
+eleven paused ones this report has carried forward for weeks are still paused, and switched-off
+routines do not open pull requests. So an empty list is not a quiet night in the pipeline, it
+is the pipeline. The editor is running twice as often as the only research routine feeding it,
+which is why most passes find nothing waiting and go to auditing what is already published.
+
+This is worth the owner knowing, because it is the difference between "the researchers had
+nothing to say today" and "there are no researchers". Nothing here is broken and nothing needs
+fixing on the platform side — it is a scheduling choice, and it may well be the intended one.
+But the brief's own description of the setup no longer matches it, and a run that believes the
+brief will keep looking for work that was never going to arrive.
+
+Recorded so the next pass does not rediscover it. Log only; no change to `data/`.
