@@ -20887,3 +20887,102 @@ search index carries 4,946 records.
 - Carried forward unchanged: the 1999-00 Coates investigation whose outcome is not in the
   record, the pre-2000 legislation gaps, the three flagged name pairs, and the 1987
   evaluations wording.
+
+---
+
+# 11 September 2026 — seven titles that claimed more than their bills did
+
+## What was open
+
+One pull request, #418, "Research: photographs (rolling)". Its diff against `main` is
+empty: the tree is byte-identical, `git diff --name-only` returns nothing and the GitHub
+API lists no changed files. The photograph run's work had already landed as #413 and #414,
+and the branch's last commit merged `main` back in. The hazard the 10 September report
+recorded — that `research-photos` was four commits behind and would silently revert #415
+and #416 — is gone, resolved by that merge. Nothing to verify and nothing to publish, so
+#418 stays open as the photograph routine's landing place rather than being merged empty.
+
+Nothing has reached `main` since 19:28 on 10 September, so nothing was published unreviewed
+overnight.
+
+## Fifteen citations opened at their sources
+
+With no diff to check, the newest published material was #416's twenty-seven new `src2`
+citations, live on the site since yesterday afternoon. Fifteen were opened at TopSCHOLAR,
+one request at a time: records 4689, 4826, 4836, 5512, 5612, 6810, 7487, 9043, 9044, 2619,
+3716, 7666, 8078, and 3493 and 3505 for the volume question below.
+
+All fifteen held. In every case the record page's own volume and issue number matched the
+label, the publication date matched to the day, the cited headline appeared in the issue's
+article list, and the bylines matched too — Hutcherson, Klausnitzer, LaBelle, Day, Comer.
+Nothing was cut.
+
+## The Herald volume numbering is the archive's, not an error here
+
+Volume 53 appears in this file against both September 1973 and April 1978, which reads like
+a transcription mistake. It is not. TopSCHOLAR's own metadata gives "Vol. 53, No. 4" for
+11 September 1973 and "Vol. 53, No. 59" for 25 April 1978. The labels follow the archive
+faithfully. Recorded here so a later pass does not renumber them.
+
+## Seven titles trimmed to what their sources prove
+
+The five bodies that pair a completed act in the title with a proposal in the text were
+found by scanning every event for that mismatch. The bodies were honest throughout; the
+titles were not, and the title is what a reader scans on a year page, the timeline and the
+search index.
+
+The sharpest was 2006-07: "SGA paid to keep the library open longer during finals week",
+where the cited record, SGA Bill 11-07-S, is described by the archive itself as a bill
+*proposing* SGA funding. Nothing cited says it passed or that any money was spent.
+
+Trimmed, with every sourced fact left in the body:
+
+- 1980-81, 26 Mar 1981 — "Only one polling place was opened" became "was announced". The
+  source is a Herald report that one poll *would* be open: an advance notice, which proves
+  what was planned and not what happened.
+- 1993-94, 9 Nov 1993 — "Bill funded emergency phones" became "A bill proposed".
+- 1994-95, 1 Nov 1994 — "Two bills bought flags" became "requested".
+- 2006-07, 20 Mar 2007 — "Dollies for Dorms bought moving equipment" became "A bill
+  proposed a Dollies for Dorms programme".
+- 2006-07, 20 Mar 2007 — "Senate created Professor and Advisor of the Year awards" became
+  "awards proposed".
+- 2006-07, 17 Apr 2007 — the library title became "A bill proposed SGA funding for longer
+  library hours at finals".
+- 2006-07, 24 Apr 2007 — "Senate bought scantrons and blue books" became "A bill proposed
+  free scantrons". The body keeps the 2009 evidence that the service was still running.
+
+One entry that trips the same scan was read and left alone: 2006-07, 27 March 2007, on the
+study abroad and field trip scholarships, says outright that the application forms survive
+in the archive dated the same day, so the programmes were built and not merely voted. That
+is evidence, and the title stands.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the eleven previous nights and all six
+stay: a bill introduced and the same bill failing, an announcement and a later
+distribution, a planned lawsuit and its endorsement, and three same-day bills of
+1 September 1991, which the rule keeps separate. The seven rewritten titles introduced no
+new pair.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who were president. 2,652 recorded terms of office
+held by 1,810 people, 98% carrying an account of what the person did. 47 people recorded
+under more than one spelling. 308 documents and 1,111 legislation files. The search index
+carries 4,946 records.
+
+## Still open
+
+- The standing brief still instructs the editor to handle #6, #7 and #8 as stale. They have
+  been closed since 18 August. Seventh run to record it.
+- The brief still opens by telling the editor to run `gh auth setup-git`. `gh` is not
+  installed in these containers; git is already credentialed and the GitHub MCP tools serve
+  for pull requests. A run that reads the missing binary as the platform gate would drop
+  into review-only mode for no reason. Worth correcting in the brief.
+- The scan that found these seven is worth repeating on bodies as well as titles. It only
+  compared a title's verb against its own body; an event whose title and body agree but
+  whose source proves less than both would not show up.
+- Carried forward unchanged: the 1999-00 Coates investigation whose outcome is not in the
+  record, the pre-2000 legislation gaps, the three flagged name pairs, and the 1987
+  evaluations wording.
