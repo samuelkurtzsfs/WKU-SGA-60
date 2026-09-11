@@ -1,3 +1,407 @@
+# 10 September 2026, night — thirty Herald reports the reader could not follow
+
+Nothing was open again. `gh` is not installed in this container, so access was proved the
+way `AGENT-LANDING.md` says to: a dry-run push came back `* [new branch] HEAD ->
+access-probe`, and the GitHub tools then returned an empty open-pull-request list. Every
+`research-*` branch was measured against `main` by content: `research-photos` is behind it
+by last night's report and nothing else, and the rest are the 4 August snapshots with no
+merge base. #6, #7 and #8 have been closed since 18 August. Eighth run to record it.
+
+TopSCHOLAR was answering this run, which it has not always been, so the pass went to
+claims that could only be settled by opening the source.
+
+## The defect: a report named, a citation pointing elsewhere
+
+Thirty events tell the reader what the *Herald* reported — a headline, a byline, a date —
+while citing a *Talisman* page, a set of SGA minutes or a piece of legislation. The facts
+were not invented: they came out of `herald-index-full.json` while the entry was being
+written. But the citation attached to the entry does not carry them, so a reader who
+wanted to check the *Herald* had nowhere to click, and nothing in `check_data.py` can see
+it. Three of the thirty already carried the issue as `src2`, correctly. Twenty-seven did
+not.
+
+Every one of the twenty-seven was resolved to its issue and checked. The twenty-seven cite
+twenty-six distinct issues; twenty of those were opened directly on TopSCHOLAR, one at a
+time and three seconds apart, and the issue's own article list read. The remaining six —
+the Spock announcement, the mock election, the Mountain billing, the Stringbean piece, the
+7 February 1980 issue and the 1988 primaries — rest on the local index, whose lines matched
+the entries word for word. Twenty-two landing pages were opened in all, counting two that
+turned out to be cited correctly already. All twenty-seven entries now carry the *Herald*
+issue as `src2`, with the volume, the number, the date, the byline and the headline as the
+archive prints them.
+
+A sample of what the sources actually said:
+
+| entry | the *Herald* issue it now cites |
+|---|---|
+| 1966-67, Thompson approves the constitution | 45:20, 7 Apr 1966 — carries both the approval story and the constitution's full text |
+| 1971-72, Ike and Tina Turner at Homecoming | 51:15, 19 Oct 1971 — the turnout story, Phyllis Sower's letter, and a review the entry does not mention |
+| 1979-80, the 28-college open house survey | 55:9, 27 Sep 1979 — Ken Morris, "Western Last in 28 College Housing Poll" |
+| 1980-81, the survey on who students recognised | 56:7, 18 Sep 1980 — Diane Comer, exactly the byline and line the entry names |
+| 1990-91, the earthquake absences resolution | 66:27, 29 Nov 1990 — both that resolution and the left-handed desks in one issue |
+| 2008-09, the 22 October lockdown | 84:16, 23 Oct 2008 — the gunfire story, the emergency-response piece **and** the timeline of events |
+
+That last row is the local index's limits made visible. `herald-index-full.json` had cached
+nineteen lines for the issue and the timeline was not among them; the landing page carries
+it. A miss in the local file proves nothing, exactly as CLAUDE.md says.
+
+## Read at the page, not the index
+
+Four entries were checked against the printed page rather than a headline.
+
+**John Prine, autumn 1978.** The entry says ASG lost about $2,000 on a sold-out Van Meter
+show where tickets cost more than any mini-concert before, and that Prine's five-man band
+played 25 songs. The 1979 *Talisman*'s OCR loses the whole article body, so the scan itself
+was read: page 79, "Sunshine cont.", carries every one of those figures — the auditorium
+holding slightly more than 1,000, the sellout, the higher prices, the $2,000, the five-man
+band and the 25 songs. Nothing to trim. The song titles come from the caption on the facing
+photograph, which the OCR does keep.
+
+**The three 1979-80 and 1980-81 *Talisman* entries** — the opinion polls and the WKYU
+phone-in, the White House invitation, the 28-school open house survey, the International
+Food Fest, the car pool and the petition to Governor Brown — were read against the
+yearbook's own text on pages 274-275 and 282-283. Every figure held: 250 student leaders,
+28 schools, almost 450 in the car pool, $60,000 to $70,000 transferred to the centre board,
+Osama Sharif on attendance, Fuller on dismissing faculty. Two entries volunteer that the
+yearbook gives no date, which is the right way to say it.
+
+**Steve Fuller in the Board seat.** The 1980-81 entry rests on the 1980 *Talisman*'s Board
+of Regents page, and that page says what the entry says it says: the ASG president sworn in
+as a student regent, in the same passage as the biennial budget, the Campbell and Sheffer
+appointments and $66,000 for the president's home. Its second half — Bush leaving in
+January 1982, the seat going to a campus-wide election, Norfleet's February runoff — matches
+the settled record and was not disturbed.
+
+## Traps, worked
+
+No advance notice was read as a report. The Spock item of 21 September 1971 is an
+announcement and the entry calls it one, taking the crowd of 1,100 from the yearbook
+instead. The Mountain and Black Oak Arkansas billing of 19 November is a booking, and the
+entry uses it for what was booked and the *Talisman* for the cancellation. No committee
+chair became an officer; no one was matched by surname; the April-election filing rule had
+nothing to bite on, since none of the twenty-seven moved a date. Nothing touched a living
+person beyond what its source reported.
+
+## Also checked, and clean
+
+The legislation archive was tested end to end for the failure mode in section 6 of the
+handoff — a blocked download saved as a `.pdf`. All 1,111 indexed files exist, all 1,111
+begin with `%PDF`, none is under 2 KB, and there is not one orphan or one missing file
+between `legislation.json` and the disk.
+
+Fifty events are dated outside the academic year they are filed under, the same population
+the 8 September pass counted and left alone as the owner's decision. Nothing here changed
+it.
+
+## Checks
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the nine previous nights and all six
+stand. Nineteen year pages changed in the built site, together with the decade pages and
+the events index that carry the same entries, and nothing else.
+
+## Verdict
+
+Nothing was waiting to be merged and nothing was cut. Every claim opened this run held at
+its source, which is worth saying plainly: the research was right, the citation was
+incomplete. Thirty *Herald* reports the archive asserted are now thirty *Herald* reports the
+archive links.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who have been president. 2,652 recorded terms of
+office held by 1,810 people, 98% carrying an account of what the person did. 47 people
+recorded under more than one spelling. 308 documents and 1,111 legislation files.
+
+## Still open
+
+- The standing brief still instructs the editor to handle #6, #7 and #8. They have been
+  closed since 18 August. Sixth run to record it.
+- The same defect in its other forms: entries that name a *Talisman* page, a set of minutes
+  or a piece of legislation the citation does not reach. Only the *Herald* form was swept
+  this run.
+- Carried forward unchanged: the election filing split, the 1999-00 Coates investigation
+  outcome, the pre-2000 legislation gaps, the three flagged name pairs and the 1987
+  evaluations wording.
+
+# 10 September 2026, evening — fifteen citations that led to a browse listing, and twenty-two that led to the wrong meeting
+
+Nothing was open. The pull request list came back empty, and every `research-*` and
+`editor-*` branch was measured against `main` by content rather than by commit count: the
+fourteen with a merge base are already merged or empty against it — `research-photos` shows
+six commits ahead and its only difference from `main` is the absence of last night's report
+— and the rest have no merge base at all, being the 4 August snapshots `AGENT-LANDING.md`
+warns about. #6, #7 and #8 have been closed since 18 August. Seventh run to record it.
+
+So the pass went to a defect the validators cannot see: a citation a reader cannot follow.
+
+## Fifteen citations pointed at a browse listing
+
+Every URL in `years.json` — 2,687 distinct, across 6,039 citations — was classified by
+shape. Nineteen did not resolve to a document. Four are `viewcontent.cgi` links, which are
+the document itself and only look untidy. **Fifteen pointed at the front door of a
+collection**: eight at `sga/Documents/Reports`, three at `dlsc_ua_yearbooks/`, two at
+`sga/Constitution/Constitution`, and two at `sga/`, the root of the entire SGA record
+group. A reader checking Amos Gott's presidency landed on a list of 163 items.
+
+The whole SGA collection was harvested through the OAI interface the repository already
+uses for the *Herald* — 1,816 records with title, date and item URL — and each claim
+matched against it. Fourteen of the fifteen resolved, and the dates matched exactly.
+
+| year | claim | now cites |
+|---|---|---|
+| 1966-67 | Thompson approves the constitution | Constitution/1, dated 7 April 1966 |
+| 1986-87 | twenty years of amendments | Constitution/2, dated 4 August 1986 |
+| 1989-90 | extended library hours | Reports/53, 9 Nov 1989, author Gott, Amos |
+| 1989-90 | the DUC flagpole | Reports/50, 22 Jan 1990 |
+| 1993-94 | the fall correspondence run | Reports/65 |
+| 1997-98 | a crosswalk on Dogwood Drive | Reports/16, 22 Oct 1997 |
+| 2005-06 | plus/minus grading | Reports/37 |
+| 2007-08 | the Frankfort reflections | Reports/82 |
+| 1968-69 | three senate members, *Talisman* pp. 95 and 98 | dlsc_ua_records/385 |
+
+Twelve item pages were opened directly, paced three seconds apart. Gott's leader note
+survives intact and is now checkable: the collection holds his correspondence on extended
+library hours (53), the DUC flag pole (50), the WKU press box (55) and Unicorn Pizza (54)
+— "a local pizza vendor dispute", exactly as the note says. The 1997-98 run of letters is
+likewise real: student seating at athletic events, campus safety, ice machines, housing
+scholarships, professors' office hours and food court hours all sit there under their own
+item numbers.
+
+## What the browse listings had been hiding
+
+A citation written off a listing rather than off a document lets unrelated things be
+gathered into one claim. Two entries had done exactly that.
+
+**2005-06 bundled documents three years apart.** The entry said an Institutional Research
+report, a protest broadside, a post-winter-term student survey and an SGA handbook "all
+survive", calling it a campaign documented "from research through to public agitation".
+Opened at source: the report is real, and better than the entry claimed — WKU Institutional
+Research studying the trial of plus/minus grading across January 2005 to December 2006. The
+broadside is real but dated 2007. The survey is dated February 2008 and is about the
+four-week winter term, not grading. The handbook lists members, judicial rulings and
+ballots. Two of the four had nothing to do with the subject, and the narrative arc rested
+on the distance between them. Cut back to the report, which now carries the trial period the
+document itself gives.
+
+**1993-94 claimed a superlative that was nearly right.** "The fullest single-semester record
+in the collection" is false as written — spring 2008 holds fifty items to fall 1993's
+sixteen. But the 2008 items are the Frankfort reflections, which are not correspondence at
+all. Counted properly, fall 1993 holds sixteen of the thirty-four pieces of correspondence
+answering numbered legislation that the archive holds for any semester, three times the next
+best. The superlative was narrowed rather than cut. The range was wrong too: correspondence
+survives for 93-4-F through 93-18-F and 93-20-F, not a clean run, and one of the sixteen is
+a bill. Both now stated.
+
+**"Fifty senators" were forty-nine SGA members.** All forty-nine Frankfort reflection item
+pages were opened: forty-nine items, forty-nine distinct authors, one per person, all dated
+20 February 2008. "Archived one per person" is exactly right; the round number was not. The
+documents name authors, not seats, so "senators" went with it.
+
+## Cut: one citation that supported nothing
+
+Johnathon Boles's leader record opened with "TopSCHOLAR - Frankfort rally reflections". His
+note is about the spring 2008 election, the Red Towel Party and Skylar Jordan's complaint,
+none of which those documents touch — the rally was February 2008, before his term — and
+none of the forty-nine authors is his. Removed. His remaining sources carry the note.
+
+## Twenty-two citations led to the wrong meeting
+
+Found by comparing every citation's stated date against the collection's own date for the
+item it links. Most disagreements are labels naming two sittings and linking one, which is
+the archive's convention. Three were not, and one of those three turned out to be the
+collection's error rather than the archive's.
+
+**The 1993-94 senate roster linked the wrong minutes.** Twenty-two citations, the two
+mirrored PDFs among them, cited "SGA Minutes, 12 Oct 1993" at item 451 and "SGA Minutes,
+29 Mar 1994" at item 500. Item 451 is 31 August 1993; item 500 is 19 April 1994. The right
+items are 465 and 503.
+
+The dates were never wrong — only the links. The mirrored PDFs were read directly, by
+decompressing their content streams, and print "OCTOBER 12, 1993" and "MARCH 29, 1994" on
+their first page. Item 465's description gives the tuition rally, the Plus System and
+parking; the 12 October document reports a rally on tuition increases, a committee meeting
+about the Plus System and the Parking Availability resolution. Item 503's description gives
+Dialogue Day; the 29 March document has President Smith reporting that 6 April is Dialogue
+Day. All twenty-two retargeted, and the roll calls checked against the documents as a
+control: sixteen senate members are recorded absent on one date or the other, and every one
+of the sixteen appears in the right roll call.
+
+**1995-96 was the collection's mistake, not the archive's.** Six citations give "SGA Meeting
+Minutes, 19 Sep 1995" at item 128, which TopSCHOLAR dates 9 September. The mirrored PDF
+prints "SEPTEMBER 19, 1995"; 9 September 1995 was a Saturday where the surrounding items are
+Tuesday sittings; and item 128 falls between the 12 and 26 September items in a series
+numbered by date. Item 128 is the 19 September meeting and the metadata transposed it.
+Nothing was changed, and the case is written down here so that a later pass does not
+"correct" it.
+
+## The one that could not be resolved
+
+Two 1977-78 entries cited the root of the SGA collection for ASG minutes of 3 March, 24
+March and 1 November 1978. **No item bears any of those three dates.** The minutes held for
+that spring are the Tuesday meetings of 21 and 28 February, 7 and 21 March and 18 April; 3
+and 24 March 1978 were both Fridays. The only ASG document dated 1 November 1978 is the ASG
+Link newsletter, which is what a membership list published that November would be, so John
+Perkins's entry now cites it. Steve Parnell's rests on the March sittings alone and still
+points at the collection root: the seat is sourced, the document is not identified, and both
+notes now say so instead of implying a citation that works. Flagged, not fixed.
+
+Parnell's entry also had a 150-character sentence sitting in `src.label`, where the built
+page prints it as the citation's link text — the same field swap #410 corrected for five
+other entries, and missed on this one. Moved into the note.
+
+## Checks
+
+`build.py` run twice to convergence and stable; `check_data.py` and `check_contrib.py` exit
+0. `check_duplicates.py` reports the same six pairs as the ten previous nights and all six
+stand: two are the 1 September 1991 bills, which the rule keeps separate, and the 1997-98
+designated-driver pair is the advance-notice rule working as intended.
+
+Re-running the shape sweep leaves one browse-listing citation in the file — the flagged
+Parnell entry — down from fifteen. No settled fact was touched. No event was added or
+removed, and no person was added, merged or removed.
+
+**61 years, 1,964 dated events, 60 presidents. 2,652 terms held by 1,810 people.**
+
+# 10 September 2026, afternoon — eighty faces carried across years, and the three that could not be
+
+One pull request was open: #413, the photograph agent's, opened at 14:01 the same day.
+It touched a single file. `data/photos.json` gained 83 entries and nothing else changed:
+no new image, no new year, no event, no profile. Its merge base was the current tip of
+`main`, so nothing had to be merged in first.
+
+## What the diff actually claims
+
+The run's own report describes it as reattachment — 83 officers who already had a
+verified portrait from another year of their SGA career, given that face on the years
+they held office, reusing the file and citation that first identified each. It calls
+this "no new claim of identity."
+
+That last part is not quite right, and it is the whole of the review. Reusing a file is
+not a new claim. Attaching it to a second year is: it says the officer standing in
+1988-89 is the same human as the face captioned in 1986. The original identifications
+were checked on earlier runs and are already published. What arrived on this branch was
+83 assertions that two records are one person, and those had never been tested.
+
+Because the operation is mechanical and uniform, all 83 were tested rather than the
+eight the brief asks for. A sample would have found the Lodmell entries and missed
+Gerard.
+
+## The structural checks, all 83
+
+Every reused file already carried an entry on `main` under the same name — no portrait
+of one person landed on another. Every file exists on disk and passes the JPEG or PNG
+magic-byte check. Every name is a genuine officeholder in that year's `years.json`:
+57 senate officers, 29 executive, 3 committee chairs, 2 senators. Nothing was matched by
+surname alone. No committee chair was promoted to officer and no bill's author to member,
+which is the error section 6 calls the commonest in the project. No event, date or
+living-person claim is touched anywhere in the diff, so the advance-notice rule and the
+April-election filing rule have nothing to bite on.
+
+`same-name.json` holds one name, David Payne, and he is not in this diff. The twins are
+right: Darlene's portrait is p. 9 of the 1996-97 Spirit Masters scrapbook and Carlene's
+is p. 10, and the two new Darlene entries attach only to Darlene's slots. The file that
+would have caught a merge of them was consulted and had nothing to say, which is the
+correct outcome rather than a missing one.
+
+## Identity, tested against the record rather than the names
+
+For each entry, the years between the portrait's year and the year it was being attached
+to were checked for whether the archive holds that person at all. Sixty-eight of the 83
+rest on unbroken documented service — adjacent years, same organization, often the same
+committee. Those needed nothing.
+
+Fifteen span a gap, and twelve of those hold up on evidence already in the file.
+`Matthew D. Bastin` maps to `Matt Bastin` in `name-aliases.json`, and that reattachment
+turns out to repair a portrait that had been matching nobody: the 1998-99 entry on `main`
+is filed under a name string that year's roster does not use, so the face was attaching
+to no one until this run added the 1997-98 slot. Brandon Rucker's 1993-94 note says
+outright that he was elected treasurer in the April 1994 election, which is the link.
+Dwight Campbell's 1999-00 note has him telling the *Herald* in April 2000 that he came
+into Congress in the spring of 1998. India Wilson, Jeff Key and Hollie Hale each carry an
+index argument in the label itself.
+
+Six cited sources were opened to confirm they are the volumes the labels name. All six
+returned 200, paced three seconds apart, and all six matched: `stu_org/329` is the
+1996-97 Spirit Masters scrapbook, `stu_org/563` the 1991-92 one, `dlsc_ua_records/384`
+the 1968 *Talisman*, `414` the 1990, `415` the 1991, and `386` the 1969 volume part 2,
+pp. 204 to the end, which contains the p. 300 the Durham label cites. The 1991-92
+scrapbook's own description names Eric McWilliams and Mark Miller in its member list,
+which confirms from outside the file the two entries in the set whose names looked most
+likely to be a coincidence.
+
+## Cut: three
+
+**Paul Gerard, 1969-70.** The 1967-68 roster note declines, in terms, to establish that
+its Paul Gerard is the Paul Gerard III recorded as student regent from 1968-69, calling
+the hometown and timing only circumstantially consistent. 1969-70 holds both names, and a
+Joe Gerard as well. Carrying the 1967-68 committee member's face into that year risks
+printing it on the regent — the one figure in this stretch the settled facts fix in
+place. The archive declined to merge these men; the photograph layer should not do it by
+another route.
+
+**Charlie Harris, 2007-08 and 2008-09.** The portrait is cited as a *Herald* image file
+of 3 May 2011 and nothing more: no article, no caption naming its subject. The rule for
+pictures is that the subject must be confirmable from the caption or the text beside it,
+and this citation makes no identification at all. Carrying it back three years, across a
+2009-10 he is absent from, rests a common name on evidence the source does not offer.
+
+Abbey Norvell's two entries rest on the same kind of bare image URL and were kept. Her
+service runs unbroken from 2019-20 to 2021-22, Director to Executive Vice President to
+Associate Justice, and the name is distinctive; what is thin there is the caption
+evidence, not the identity.
+
+## Rescued rather than cut: sixty-nine
+
+Only 11 of the 83 said which year the portrait came from. The other 72 would have printed
+a 1986 *Talisman* citation under a 1988-89 officer with nothing to tell the reader why.
+The convention for this already exists in the file — Carlene Lodmell's 1995-96 entry and
+Dwight Campbell's 1998-99 entry both carry it — and it was applied to the 69 that needed
+it and did not already have it: no photograph specific to this year is on file, so this
+portrait, from that year, is reused here. No factual claim was altered. This is the
+difference between reusing a picture and quietly implying it was taken in a year it was
+not.
+
+## Checks
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the nine previous nights and all six
+stay: three separate same-day September 1991 bills, a student-regent advisory bill
+introduced in January and failing on amendment in February, a Civil Liberties Union suit
+planned in February and endorsed in March, and the designated-driver pair read in full on
+a previous night. This diff introduced none of them and touches no events at all.
+
+## Verdict
+
+Eighty of 83 merged. The run's research was sound and its reasoning in the labels was
+often better than it needed to be — the Willoughby and Jeff Key entries argue their
+identifications from the volume index, position in the row and the sex of the neighbours,
+which is the standard the rest of the project should be held to. What it got wrong was
+one word in its own report: calling a cross-year reattachment "no new claim of identity"
+is what let three of them through without evidence, and what left 72 of them silent about
+where the face came from.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who were president. 2,652 recorded terms of office
+held by 1,810 people, 98% carrying an account of what the person did. 47 people recorded
+under more than one spelling. 308 documents and 1,111 legislation files. 1,387 portrait
+entries, 80 of them added tonight.
+
+## Still open
+
+- The standing brief still instructs the editor to handle #6, #7 and #8. They have been
+  closed since 18 August. Sixth run to record it.
+- Two portraits already on `main` are cited to a bare *Herald* image file with no caption
+  naming the subject: `2010-11-charlie-harris.jpg` and `2021-22-abbey-norvell.jpg`. Both
+  need re-sourcing to the article that published them, or withdrawal. Flagged to the
+  photograph routine on #413.
+- 222 officer and year slots still have no portrait, and 12 years still have no general
+  photograph at all. The photograph run's own list; unchanged by this review.
+- Carried forward unchanged: the 1999-00 fliers investigation whose outcome is not in the
+  record, the election filing split, the pre-2000 legislation gaps, the three flagged
+  name pairs, and the 1987 evaluations wording.
+
 # 10 September 2026, midday — the organization layer audited, and a family invented for two living men
 
 No pull request was open. `research-photos` is three commits ahead of `main` but its
@@ -20378,3 +20782,108 @@ legislation files. 73 leader profiles, now 296 paragraphs.
   Herald, which is behind the TopSCHOLAR block from here.
 - Carried forward unchanged: the election filing split, the pre-2000 legislation
   gaps, the three flagged name pairs, and the 1987 evaluations wording.
+
+# 11 September 2026 — the two merges nobody had reviewed, opened at their sources
+
+## What was reviewed
+
+Nothing was waiting to be merged. No pull request was open, and every `research-*`
+and `editor-*` branch on origin was judged by content rather than by commit count.
+All of them are behind `main`, none carries anything it lacks.
+
+The 4 August `research-*` branches are still the orphan snapshots AGENT-LANDING.md
+warns about: their diff against `main` runs to roughly 497,000 deletions. They have
+been closed since 18 August and were left alone.
+
+What the sweep did turn up is that `main` had moved twice since the last entry was
+written. The 10 September morning report closed at #414. Two merges landed that
+afternoon and evening — #415, the citations that led to a browse listing, and #416,
+thirty *Herald* reports the archive asserted but did not link — and both went to the
+live site without a recorded review. That is where this run went.
+
+## Eighteen claims opened at their sources
+
+Twelve of the thirty citations added by #416 were opened on TopSCHOLAR, one request
+at a time and three seconds apart. Every one matched on volume, issue number, year
+and headline: 45:20 (1966), 51:7, 51:15, 51:16, 51:24 (1971), 53:27 (1973), 53:59
+(1978), 55:36 (1980), 61:46 (1986), 64:48 (1989), 67:34 (1992), 84:16 (2008).
+
+One of them looked wrong and was not. "Herald 53:59, 25 Apr 1978" breaks the volume
+series — volume 53 is 1973-74 twice over in the same diff — and it was pulled for
+correction. The record itself reads *Vol. 53, No. 59*, dated 1978. The *Herald*'s own
+numbering is irregular there and the label reproduces the archive faithfully. It was
+left exactly as it stands.
+
+Six corrected URLs from #415 were opened too, and all six resolve to the specific
+record their label names rather than to a browse listing: the 1966 constitution and
+the 1986 amended constitution, the Gott library-hours correspondence of November 1989,
+the flag pole correspondence of January 1990, the ASG Link newsletter of November 1978,
+and the 1969 *Talisman* pt. 1 behind the call number UA12/2/2.
+
+## The advance-notice rule, checked where it would have failed
+
+Five of #416's new citations are advance notices — Spock billed to lecture "Thursday",
+Mountain and Black Oak Arkansas "Billed for Dec. 2", ice skating that "May Begin". Each
+sits beside an event carrying a hard number: a crowd of 1,100, a crowd of 12,000, 1,175
+votes, a crowd of 6,000.
+
+Every one of those numbers is attributed in the body to the *Talisman*, which is the
+entry's `src`. The *Herald* notice is the `src2` and is described only as what it
+announced. The rink entry goes further and says outright that nothing in the record says
+it was ever built. The rule held everywhere it was tested.
+
+## Two things that looked stranded and were not
+
+Seven branches carry twenty-five dated events `main` does not have, all of them
+election results. They are pre-#408 snapshots. #408 consolidated twenty ballots that had
+been written up once under the year they were held and again under the year the winners
+served — Norfleet's regent runoff among them, the second copy filed on 1982-83 against
+the settled finding. Merging any of those branches now would put the duplicates back.
+
+Two more, on `research-photos`, survive on `main` under corrected titles: #415 read both
+at the source and made "at least seventeen numbered resolutions" sixteen, and "fifty
+senators" forty-nine SGA members — senators to members being the officer conflation that
+section 6 warns about.
+
+## A hazard worth recording
+
+`research-photos` is the live rolling photograph branch and is four commits behind `main`.
+Its diff against `main` is a clean revert of #415 and #416: it restores the browse-listing
+URLs and strips the thirty `src2` citations. Its own photograph work already landed as
+#413 and #414, and `data/photos.json` is byte-identical to `main`. A run that merges it
+without merging `main` into it first would silently unpublish two nights of citation work.
+Merge `main` in before touching it.
+
+## Checks
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the ten previous nights and all six
+stay: two are a bill introduced and the same bill failing, two are an announcement and a
+later distribution, and three are same-day legislative business on 1 September 1991,
+which the rule says stays separate.
+
+## Verdict
+
+Nothing to merge, and nothing that should have been merged. The two merges that had
+reached the public site unreviewed were the run's real work, and both hold: eighteen
+sources opened, eighteen matched, nothing cut.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who were president. 2,652 recorded terms of
+office held by 1,810 people, 98% carrying an account of what the person did. 47 people
+recorded under more than one spelling. 308 documents and 1,111 legislation files. 73
+leader profiles in 296 paragraphs. 1,387 leader portraits and 61 year photographs. The
+search index carries 4,946 records.
+
+## Still open
+
+- The standing brief still instructs the editor to handle #6, #7 and #8. They have been
+  closed since 18 August. Sixth run to record it.
+- The brief also opens by telling the editor to run `gh auth setup-git`. `gh` is not
+  installed in these containers and AGENT-LANDING.md says so; git is already credentialed
+  and the GitHub MCP tools serve for pull requests. Worth correcting in the brief so a run
+  does not read the missing binary as the platform gate.
+- Carried forward unchanged: the 1999-00 Coates investigation whose outcome is not in the
+  record, the pre-2000 legislation gaps, the three flagged name pairs, and the 1987
+  evaluations wording.

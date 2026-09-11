@@ -66,10 +66,14 @@
     {
      "date": "1966-04-01",
      "title": "President Kelly Thompson approves the constitution",
-     "body": "The proposed constitution of the Associated Students of Western Kentucky University was completed in late March and approved on 1 April. The copy held by WKU Archives is dated 7 April 1966.",
+     "body": "The proposed constitution of the Associated Students of Western Kentucky University was completed in late March and approved on 1 April. The text survives as printed in the College Heights Herald of 7 April 1966.",
      "src": {
-      "label": "TopSCHOLAR - SGA Constitution",
-      "url": "https://digitalcommons.wku.edu/sga/Constitution/Constitution"
+      "label": "TopSCHOLAR, WKU SGA Records: Constitution of WKU Associated Students, 1966",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Constitution/1"
+     },
+     "src2": {
+      "label": "College Heights Herald 45:20, 7 Apr 1966, \"President Kelly Thompson Okays Student Government Association Constitution\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4689"
      }
     },
     {
@@ -1926,8 +1930,8 @@
        "seat": "Member, Associated Students",
        "note": "Named third in the back row of the Associated Students group photograph, between Phil Myers and Steve Stephens. He had held the sophomore class representative seat the year before.",
        "src": {
-        "label": "1969 Talisman, p. 95",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+        "label": "UA12/2/2 1969 Talisman pt. 1, p. 95",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
        }
       },
       {
@@ -1935,8 +1939,8 @@
        "seat": "Member, Associated Students",
        "note": "Named first in the second row of the Associated Students group photograph, a year before the sophomore representative-at-large seat the archive records him in.",
        "src": {
-        "label": "1969 Talisman, p. 95",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+        "label": "UA12/2/2 1969 Talisman pt. 1, p. 95",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
        }
       },
       {
@@ -1944,8 +1948,8 @@
        "seat": "Judicial Council",
        "note": "Sat on the Associated Students Judicial Council with Mark Skillern, Carolyn Cash, Lonnie Jackson, Russell Vertner and Brent Hall, a year before the representative-at-large seat the archive records him in.",
        "src": {
-        "label": "1969 Talisman, p. 98",
-        "url": "https://digitalcommons.wku.edu/dlsc_ua_yearbooks/"
+        "label": "UA12/2/2 1969 Talisman pt. 1, p. 98",
+        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
        }
       }
      ]
@@ -3702,6 +3706,10 @@
      "src": {
       "label": "1972 Talisman, pp. 44-45",
       "url": "https://archive.org/details/talisman1972west"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:7, 21 Sep 1971, \"Dr. Benjamin Spock to Lecture on Campus Thursday\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4819"
      }
     },
     {
@@ -3713,6 +3721,10 @@
      "src": {
       "label": "1972 Talisman, pp. 38-39",
       "url": "https://archive.org/details/talisman1972west"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:15, 19 Oct 1971, \"Concert Lovers Buoyed by Turnout for Ike & Tina Turner\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4826"
      }
     },
     {
@@ -3724,6 +3736,10 @@
      "src": {
       "label": "1972 Talisman, pp. 58-59",
       "url": "https://archive.org/details/talisman1972west"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:16, 22 Oct 1971, \"Tom Emberton Tops Wendell Ford in Mock Election\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4825"
      }
     },
     {
@@ -3768,6 +3784,10 @@
      "src": {
       "label": "1972 Talisman, p. 42",
       "url": "https://archive.org/details/talisman1972west"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:24, 19 Nov 1971, \"Mountain, Black Oak Arkansas Billed for Dec. 2 Associated Students Concert\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/4836"
      }
     },
     {
@@ -5917,6 +5937,10 @@
      "src": {
       "label": "1974 Talisman, Entertainment",
       "url": "https://archive.org/details/talisman1974west"
+     },
+     "src2": {
+      "label": "College Heights Herald 53:4, 11 Sep 1973, Bonnie Merrill, \"Country-western ‘Git-together’ Replaces Bluegrass Festival\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3493"
      }
     },
     {
@@ -5978,6 +6002,10 @@
      "src": {
       "label": "1974 Talisman, Entertainment",
       "url": "https://archive.org/details/talisman1974west"
+     },
+     "src2": {
+      "label": "College Heights Herald 53:27, 7 Dec 1973, Scott Johnston, \"Doobie Brothers Show Was ‘Average’\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3505"
      }
     },
     {
@@ -9141,6 +9169,10 @@
      "src": {
       "label": "1978 Talisman, Opening",
       "url": "https://archive.org/details/talisman1978west"
+     },
+     "src2": {
+      "label": "College Heights Herald 53:59, 25 Apr 1978, Becky Testerman, \"Bluegrass Crowds Relaxed, Casual\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5512"
      }
     },
     {
@@ -9325,11 +9357,11 @@
       {
        "name": "John Perkins",
        "src": {
-        "label": "ASG minutes, 24 March and 1 November 1978",
-        "url": "https://digitalcommons.wku.edu/sga/"
+        "label": "TopSCHOLAR, WKU SGA Records: ASG Link newsletter, November 1978",
+        "url": "https://digitalcommons.wku.edu/sga/Documents/nl/33"
        },
        "office": "Business & Public Affairs representative",
-       "note": "The minutes of 24 March 1978 list him under Colleges, Business & Public Affairs, alongside Dave Roberts, Victor Jackson and Buz Smith; he is named again in the membership list of 1 November 1978."
+       "note": "Listed under Colleges, Business & Public Affairs alongside Dave Roberts, Victor Jackson and Buz Smith, and named again in the ASG membership list published that November. The sitting the archive recorded as 24 March 1978 could not be matched to a document: the ASG minutes held on TopSCHOLAR for that spring are the Tuesday meetings of 21 and 28 February, 7 and 21 March and 18 April, and 24 March 1978 was a Friday."
       }
      ],
      "members": [
@@ -9369,11 +9401,11 @@
       {
        "name": "Steve Parnell",
        "src": {
-        "label": "The Associated Student Government minutes of 3 March 1978 list him under \"Representatives-at-large\", and the minutes of 24 March 1978 repeat the seat.",
+        "label": "ASG minutes, spring 1978",
         "url": "https://digitalcommons.wku.edu/sga/"
        },
        "seat": "Representative-at-large",
-       "note": "ASG minutes, 3 and 24 March 1978."
+       "note": "The Associated Student Government minutes list him under Representatives-at-large. The archive recorded the sittings as 3 and 24 March 1978, and neither could be matched to a document: the minutes held on TopSCHOLAR for that spring are the Tuesday meetings of 21 and 28 February, 7 and 21 March and 18 April, and both 3 and 24 March 1978 were Fridays. The seat stands; the citation is unresolved."
       }
      ]
     }
@@ -10442,6 +10474,10 @@
      "src": {
       "label": "SGA Resolution 79-13, Ice Skating Rink",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/327"
+     },
+     "src2": {
+      "label": "College Heights Herald 55:36, 7 Feb 1980, \"Ice Skating May Begin at Pearce-Ford Tower\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5612"
      }
     },
     {
@@ -10471,6 +10507,10 @@
      "src": {
       "label": "SGA Resolution 79-16, Ultra Extension Support",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/330"
+     },
+     "src2": {
+      "label": "College Heights Herald 55:36, 7 Feb 1980, Michele Wood, \"Associated Student Government Supports Bill for Tenants’ Rights\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5612"
      }
     },
     {
@@ -10557,6 +10597,10 @@
      "src": {
       "label": "1980 Talisman, pp. 274-275, \"Concerting student opinion\"",
       "url": "https://archive.org/details/talisman1980west"
+     },
+     "src2": {
+      "label": "College Heights Herald 55:9, 27 Sep 1979, Ken Morris, \"Western Last in 28 College Housing Poll\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5568"
      }
     },
     {
@@ -11008,6 +11052,10 @@
      "src": {
       "label": "1981 Talisman, pp. 282-283, \"A year of resolutions\"",
       "url": "https://archive.org/details/talisman1981west"
+     },
+     "src2": {
+      "label": "College Heights Herald 56:7, 18 Sep 1980, Diane Comer, \"Survey Shows Students Uninformed About Associated Student Government\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5522"
      }
     },
     {
@@ -12753,6 +12801,10 @@
      "src": {
       "label": "ASG minutes, 15 March 1983",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/348"
+     },
+     "src2": {
+      "label": "College Heights Herald 58:47, 17 Mar 1983, Jamie Morton, \"Constitution Changes Approved by Associated Student Government\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2348"
      }
     }
    ],
@@ -14558,6 +14610,10 @@
      "src": {
       "label": "SGA Bill 86-13-S, Commendation of President",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/35"
+     },
+     "src2": {
+      "label": "College Heights Herald 61:46, 4 Mar 1986, Jackie Hutcherson, \"Mitchell McKinney Pulls from Associated Student Government Race\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6810"
      }
     },
     {
@@ -15181,8 +15237,8 @@
      "title": "Twenty years of amendments consolidated into one document",
      "body": "The constitution of the WKU Associated Students with amendments - the only surviving snapshot of how the 1966 framework had been patched over two decades. A Judicial Council roster for 1986-87 survives alongside it.",
      "src": {
-      "label": "TopSCHOLAR - SGA Constitution",
-      "url": "https://digitalcommons.wku.edu/sga/Constitution/Constitution"
+      "label": "TopSCHOLAR, WKU SGA Records: Constitution of WKU Associated Students with Amendments, 1986",
+      "url": "https://digitalcommons.wku.edu/sga/Constitution/Constitution/2"
      }
     },
     {
@@ -16246,6 +16302,10 @@
      "src": {
       "label": "ASG meeting minutes, 1 March 1988",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/61/"
+     },
+     "src2": {
+      "label": "College Heights Herald 63:50, 31 Mar 1988, Dorren Klausnitzer, \"Shannon Ragland, Scott Whitehouse Win in Associated Student Government Primaries\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7487"
      }
     },
     {
@@ -16909,6 +16969,10 @@
      "src": {
       "label": "ASG meeting minutes, 28 February 1989",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/83/"
+     },
+     "src2": {
+      "label": "College Heights Herald 64:48, 4 Apr 1989, Dresden Wall, \"Oozeball\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7575"
      }
     },
     {
@@ -17693,8 +17757,8 @@
      "note": "The best-documented pre-1992 presidency in the archive. Signed correspondence survives on extended library hours, the DUC flagpole, the stadium press box and a local pizza vendor dispute.",
      "sources": [
       {
-       "label": "TopSCHOLAR - Gott correspondence",
-       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
+       "label": "TopSCHOLAR, WKU SGA Records: Correspondence - Extended Library Hours, 9 Nov 1989 (Amos Gott)",
+       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/53"
       },
       {
        "label": "Herald 64:32, 24 Jan 1989",
@@ -17738,8 +17802,8 @@
      "title": "Extended library hours",
      "body": "Correspondence between President Amos Gott, Howard Bailey, Sally Ann Strickler and Michael Binder. Resolutions went out as letters to named administrators and answers came back.",
      "src": {
-      "label": "TopSCHOLAR - Documents/Reports",
-      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
+      "label": "TopSCHOLAR, WKU SGA Records: Correspondence - Extended Library Hours, 9 Nov 1989",
+      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/53"
      }
     },
     {
@@ -17747,8 +17811,8 @@
      "title": "The Downing University Center flagpole",
      "body": "One item in a working inventory of the job that year: the flagpole, the stadium press box, a dispute involving a local pizza vendor and a proposed budget for the Board of Student Body Presidents.",
      "src": {
-      "label": "TopSCHOLAR - Documents/Reports",
-      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
+      "label": "TopSCHOLAR, WKU SGA Records: Correspondence - Downing University Center Flag Pole, 22 Jan 1990",
+      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/50"
      }
     },
     {
@@ -17948,6 +18012,10 @@
      "src": {
       "label": "ASG meeting minutes, 20 February 1990",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/331/"
+     },
+     "src2": {
+      "label": "College Heights Herald 65:56, 24 Apr 1990, Gary Houchens & Noelle Phillips, \"Earth Day Organizers Hope Public Remains Interested\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7643"
      }
     },
     {
@@ -17997,6 +18065,10 @@
      "src": {
       "label": "SGA correspondence on Unicorn Pizza, 27 October 1989",
       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/54/"
+     },
+     "src2": {
+      "label": "College Heights Herald 65:15, 12 Oct 1989, Travis Green, \"Associated Student Government Wants Weekend Unicorn Pizza\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7613"
      }
     },
     {
@@ -18828,6 +18900,10 @@
      "src": {
       "label": "SGA Legislation, Resolution 90-12-F, \"Excused Absences for Earthquake Prediction\"",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/145"
+     },
+     "src2": {
+      "label": "College Heights Herald 66:27, 29 Nov 1990, \"Associated Student Government Kills Resolution for Excused Absences\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7666"
      }
     },
     {
@@ -19870,6 +19946,10 @@
      "src": {
       "label": "SGA Legislation, Bill #92-01-S, \"Development of Advisory Committee for Student Regent\"",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/158/"
+     },
+     "src2": {
+      "label": "College Heights Herald 67:34, 30 Jan 1992, Nikki Stewart, \"Associated Student Government Plans Regent Committee\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8078"
      }
     },
     {
@@ -21990,11 +22070,11 @@
    "events": [
     {
      "date": "1993-11-01",
-     "title": "At least seventeen numbered resolutions in one semester",
-     "body": "Resolutions 93-4-F through 93-20-F survive in the correspondence files - the fullest single-semester record in the collection, and the best available answer to how much a WKU student senate actually passes in a working term.",
+     "title": "Sixteen pieces of legislation answered in writing in one semester",
+     "body": "The correspondence file for the fall 1993 semester holds the replies to sixteen numbered measures - 93-4-F through 93-18-F and 93-20-F, all resolutions but for Bill 93-10-F. It is the fullest single semester of legislative correspondence in the collection, sixteen of the thirty-four such items the archive holds for any year.",
      "src": {
-      "label": "TopSCHOLAR - Documents/Reports",
-      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
+      "label": "TopSCHOLAR, WKU SGA Records: Correspondence - Resolution 93-6-F, 1 Nov 1993",
+      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/65"
      }
     },
     {
@@ -22341,7 +22421,7 @@
      "page": 1,
      "src": {
       "label": "SGA Minutes, 12 Oct 1993",
-      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/465"
      }
     },
     {
@@ -22353,7 +22433,7 @@
      "page": 1,
      "src": {
       "label": "SGA Minutes, 29 Mar 1994",
-      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
      }
     },
     {
@@ -22633,7 +22713,7 @@
        "note": "Recorded absent at Congress roll call on both 12 October 1993 and 29 March 1994.",
        "src": {
         "label": "SGA Minutes, 12 Oct 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/465"
        }
       },
       {
@@ -22641,7 +22721,7 @@
        "note": "Recorded absent at Congress roll call, 29 March 1994.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       },
       {
@@ -22649,7 +22729,7 @@
        "note": "Recorded absent at Congress roll call, 29 March 1994.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       },
       {
@@ -22657,7 +22737,7 @@
        "note": "Recorded absent at Congress roll call, 29 March 1994.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       },
       {
@@ -22665,7 +22745,7 @@
        "note": "Recorded absent at Congress roll call, 29 March 1994.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       },
       {
@@ -22673,7 +22753,7 @@
        "note": "Voted Congress Member of the Month, 29 March 1994, three weeks before his own election as SGA president for 1994-95.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       },
       {
@@ -22681,7 +22761,7 @@
        "note": "Recorded absent at Congress roll call, 12 October 1993.",
        "src": {
         "label": "SGA Minutes, 12 Oct 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/465"
        }
       },
       {
@@ -22689,7 +22769,7 @@
        "note": "Recorded absent at Congress roll call, 12 October 1993.",
        "src": {
         "label": "SGA Minutes, 12 Oct 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/465"
        }
       },
       {
@@ -22697,7 +22777,7 @@
        "note": "Recorded absent at Congress roll call, 12 October 1993.",
        "src": {
         "label": "SGA Minutes, 12 Oct 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/465"
        }
       },
       {
@@ -22705,7 +22785,7 @@
        "note": "Recorded absent at Congress roll call, 12 October 1993.",
        "src": {
         "label": "SGA Minutes, 12 Oct 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/465"
        }
       },
       {
@@ -22714,7 +22794,7 @@
        "note": "Elected to the open Representative at Large seat, 12 October 1993.",
        "src": {
         "label": "SGA Minutes, 12 Oct 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/465"
        }
       },
       {
@@ -22722,7 +22802,7 @@
        "note": "Recorded absent at Congress roll call, 12 October 1993, the year before she was elected Administrative Vice President.",
        "src": {
         "label": "SGA Minutes, 12 Oct 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/465"
        }
       },
       {
@@ -22730,7 +22810,7 @@
        "note": "Recorded absent at Congress roll call, 29 March 1994.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       },
       {
@@ -22738,7 +22818,7 @@
        "note": "Recorded absent at Congress roll call, 12 October 1993.",
        "src": {
         "label": "SGA Minutes, 12 Oct 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/465"
        }
       },
       {
@@ -22747,7 +22827,7 @@
        "note": "Elected to the open Sophomore Representative seat, 12 October 1993.",
        "src": {
         "label": "SGA Minutes, 12 Oct 1993",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/451"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/465"
        }
       },
       {
@@ -22755,7 +22835,7 @@
        "note": "Recorded absent at Congress roll call, 29 March 1994.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       },
       {
@@ -22763,7 +22843,7 @@
        "note": "Recorded absent at Congress roll call, 29 March 1994. She was elected SGA secretary on 18 April 1995 and served in 1995-96.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       },
       {
@@ -22771,7 +22851,7 @@
        "note": "Recorded absent at Congress roll call, 29 March 1994.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       },
       {
@@ -22780,7 +22860,7 @@
        "note": "Elected Ogden College Representative, 29 March 1994.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       },
       {
@@ -22788,7 +22868,7 @@
        "note": "Recorded absent at Congress roll call, 29 March 1994.",
        "src": {
         "label": "SGA Minutes, 29 Mar 1994",
-        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/500"
+        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/503"
        }
       }
      ]
@@ -24060,6 +24140,10 @@
       "label": "SGA Records: Meeting Minutes, 14 Nov 1995",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/140",
       "file": "1995-96-minutes-1995-11-14.pdf"
+     },
+     "src2": {
+      "label": "College Heights Herald 71:24, 16 Nov 1995, Charbonee LaBelle, \"Student Government Association to Miss Deadline for Evaluations\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9044"
      }
     },
     {
@@ -24069,6 +24153,10 @@
      "src": {
       "label": "TopSCHOLAR - Resolution 95-9-F, Establish an Academic Service Fee",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/78"
+     },
+     "src2": {
+      "label": "College Heights Herald 71:25, 21 Nov 1995, Charbonee LaBelle, \"Student Government Association to Vote on Drop/Add Fee Proposal\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9043"
      }
     },
     {
@@ -26550,8 +26638,8 @@
      "title": "A crosswalk on Dogwood Drive",
      "body": "One of a run of outgoing letters in these years covering student seating at athletic events, ice machines in residence halls, campus safety, professors posting office hours, food court hours, housing scholarships for off-campus students and student health services.",
      "src": {
-      "label": "TopSCHOLAR - Documents/Reports",
-      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
+      "label": "TopSCHOLAR, WKU SGA Records: Letter - Crosswalk on Dogwood Drive, 22 Oct 1997",
+      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/16"
      }
     },
     {
@@ -27930,6 +28018,10 @@
       "label": "SGA Records: Resolution 98-7-F, 6 Oct 1998",
       "url": "https://digitalcommons.wku.edu/context/sga/article/2018/viewcontent/sga_res_98_7_f.pdf",
       "file": "1998-99-resolution-98-7-f.pdf"
+     },
+     "src2": {
+      "label": "College Heights Herald 73 [74]:14, 15 Oct 1998, Holly Goddard, \"Student Government Association Proposal Fails – University Boulevard\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9058"
      }
     },
     {
@@ -29582,6 +29674,10 @@
      "src": {
       "label": "SGA Records: Resolution 99-1-F, 26 Oct 1999",
       "url": "https://digitalcommons.wku.edu/context/sga/article/2123/viewcontent/sga_res_99_11_f_w.pdf"
+     },
+     "src2": {
+      "label": "College Heights Herald 75:19 [20], 4 Nov 1999, Abbey Brown, \"Student Government Association Members Oppose Move – Student Affairs\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/488"
      }
     },
     {
@@ -34001,10 +34097,10 @@
     {
      "date": "2005-01-01",
      "title": "The plus/minus grading fight",
-     "body": "An Institutional Research report on plus and minus grading, a protest broadside, a post-winter-term student survey and an SGA handbook all survive - one of the few academic-policy campaigns documented from research through to public agitation.",
+     "body": "WKU Institutional Research studied the trial of plus and minus grading and reported on it. The study covered January 2005 through December 2006, so the report spans the whole of the trial rather than a single term.",
      "src": {
-      "label": "TopSCHOLAR - Documents/Reports",
-      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
+      "label": "TopSCHOLAR, WKU SGA Records: Report on Plus & Minus Grading, WKU Institutional Research, 2005",
+      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/37"
      }
     },
     {
@@ -35210,6 +35306,10 @@
      "src": {
       "label": "SGA Bill 11-07-S, 17 April 2007",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Bills/118"
+     },
+     "src2": {
+      "label": "College Heights Herald 83:50, 24 Apr 2008, Neil Siders, \"Helm-Cravens Library to Stay Open Later During Finals Week\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2619"
      }
     },
     {
@@ -35953,11 +36053,11 @@
    "events": [
     {
      "date": "2008-02-20",
-     "title": "Fifty senators write down what a lobbying trip felt like",
-     "body": "After a student rally at the Capitol in Frankfort, dozens of SGA members each filed an individual written reflection, archived one per person. The richest first-person source in the entire collection.",
+     "title": "Forty-nine SGA members write down what a lobbying trip felt like",
+     "body": "After a student rally at the Capitol in Frankfort, SGA members each filed an individual written reflection, archived one per person. Forty-nine survive, each under its own author's name - the richest first-person source in the collection.",
      "src": {
-      "label": "TopSCHOLAR - Frankfort rally reflections",
-      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
+      "label": "TopSCHOLAR, WKU SGA Records: Reflections on Frankfort Rally, 20 Feb 2008 (one of forty-nine)",
+      "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/82"
      }
     },
     {
@@ -36129,6 +36229,10 @@
      "src": {
       "label": "SGA executive cabinet minutes, 24 March 2008",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/797"
+     },
+     "src2": {
+      "label": "College Heights Herald 83:42, 27 Mar 2008, Ryan Hunton, \"Gatton Academy of Math & Science Wants Representation, Too\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6705"
      }
     },
     {
@@ -36841,10 +36945,6 @@
      "note": "Confirmed against Herald election coverage. Boles led the \"Red Towel Party\" ticket - with Theodore Harden, Reagan Gilley, Skylar Johnson, Kayla Shelton and Kevin Smiley also on the March 2008 candidate slate - in the spring 2008 SGA election. After the vote, Skylar Jordan filed a complaint against the Red Towel Party; the SGA council took no action on it on 22 April 2008, letting the result stand. In office for the February 2008 Frankfort rally, after which roughly fifty senators each filed a written reflection - the richest first-person source in the collection. The Herald's 2013 retrospective records that Boles resigned in January 2009.",
      "sources": [
       {
-       "label": "TopSCHOLAR - Frankfort rally reflections",
-       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports"
-      },
-      {
        "label": "Herald - SGA drama settled, Apr 2013",
        "url": "https://wkuherald.com/44025/news/sga-drama-settled-what-does-baileys-ruling-mean-for-the-future-of-sga/"
       },
@@ -37140,6 +37240,10 @@
      "src": {
       "label": "SGA senate minutes, 28 October 2008",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/815"
+     },
+     "src2": {
+      "label": "College Heights Herald 84:16, 23 Oct 2008, Michelle Day, \"Gunfire Unconfirmed, Investigation Continues\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3716"
      }
     },
     {
