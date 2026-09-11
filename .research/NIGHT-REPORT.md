@@ -21354,3 +21354,94 @@ But the brief's own description of the setup no longer matches it, and a run tha
 brief will keep looking for work that was never going to arrive.
 
 Recorded so the next pass does not rediscover it. Log only; no change to `data/`.
+
+# 11 September, afternoon — a portrait run's negative results, checked against the data and merged
+
+One pull request waiting, #426 from the photograph routine, and it is merged as `ebc4578`.
+Nothing else was open. The three stale pull requests the brief still names — #6, #7 and #8,
+from 4 August — were closed on 18 August and have been gone for three weeks; there is nothing
+left to rescue or close there, and the instruction to merge `origin/main` into them has no
+object. Of the two hundred-odd branches on the remote, only `research-photos` carried work
+that was not already in `main`.
+
+## What #426 was, and why it still needed checking
+
+Ninety-seven lines in `SGA-60-AGENT-INFO.md` and not one line anywhere else. No data file
+changed, and `build.py` skips `.md`, so none of it could reach the site. That makes it the
+easiest kind of pull request to wave through and the easiest place for an unearned claim to
+settle into the record unchallenged, because a log of negative results is exactly the thing
+nobody goes back and checks. It is a log of work *not* found, and the way it fails is by
+claiming to have looked.
+
+So it was checked against the data instead of against the archive, thirteen ways, and it held
+every time. Zero leaders without a portrait, re-derived across all sixty-one years rather than
+read off the entry's own arithmetic: seventy-three leader terms, none missing. The four
+presidents recovered in August — Todd, Dawson, Johnson, Gilley — each still portrayed, each
+file opening `FF D8 FF E0` as claimed; the check was widened to the whole directory, and all
+1,187 images are real JPEGs or PNGs with nothing masquerading under a `.jpg` name, which is
+trap seven and has bitten this project before.
+
+The part worth the most suspicion was the list of sixty-seven officers searched and not found,
+because a name list is trivially paddable. Re-deriving the gap independently from the
+executive and senate-officer rosters, 2007-08 onward, on the entry's own stated exclusions,
+produced eighty-three names — and **all sixty-seven sit inside that eighty-three**. Nothing
+invented; if anything the run understated its own gap. The sixteen it left out are constituency
+Senators, correctly excluded, save one noted below. The negative search result itself was
+reproduced on a sample: Puhakka returns five Herald posts and no featured-image caption naming
+her, Singh and Kenderes return none at all, and the method the entry describes — both given and
+family name in one caption, never a surname alone — is the method it actually ran.
+
+The single archival citation in the diff verifies line by line against the local index:
+`dlsc_ua_records/7687` is Vol. 69 No. 7 of 16 September 1993, `article=8683`, carrying Leslie
+Flynn's profile of Donald Smith. `_do-not-use.json` holds exactly the 96 rejected leads it
+claims; `_archive-gaps.json` is the 164 KB it claims.
+
+## Cut
+
+Nothing. There was nothing unsupported to cut, and saying so plainly is better than inventing
+a correction to look diligent. No events, officers or people were added, so no advance notice,
+no committee chair promoted to officer, no surname-alone match and no April election filed into
+the wrong year. Nothing touched the settled facts.
+
+The merge was squashed rather than committed, deliberately: the branch carried a merge commit
+authored by a tool's default identity, and squashing keeps it out of the permanent history of
+an archive published under its authors' names. `main` remains seventy-six commits, every one of
+them in the project's own name.
+
+## Validators
+
+`build.py` clean. `check_data.py` exit 0 — 61 years, 1,964 events, 60 people have been
+president, 2,652 recorded terms held by 1,810 people, 98% of them carrying an account of what
+the person did. `check_contrib.py` exit 0. `check_duplicates.py` reports six pairs, all
+pre-existing on `main` and all six genuinely separate events: a student-regent advisory bill
+introduced in January 1992 and defeated in February, three bills filed the same day in
+September 1991, the civil-liberties suit planned and then endorsed, plus/minus grading opposed
+and then legislated against, and the designated-driver cards passed in November 1997 and
+handed out in February 1998. None merged. The February 1998 entry is worth singling out as a
+good one: it says outright that the archive holds only a contents listing and declines to say
+how the distribution went, which is the advance-notice rule being obeyed unprompted.
+
+## Still open
+
+Three new, none blocking, all logged for whoever picks them up:
+
+- **Charlie Harris has no portrait and was missed.** Director of Information Technology in
+  2007-08 and 2008-09, Chief of Staff in 2010-11 — titled offices, squarely inside the search's
+  own filter, and absent from its sixty-seven. A gap in the sweep, not a bad claim.
+- **`Amber Daniels` (2014-15, Justice) and `Amber Daniel` (2015-16, Chief Justice)** are almost
+  certainly one person, consecutive years on the same body, and are not in `name-aliases.json`.
+  Flagged and not fixed. The Lodmell sisters are the standing reason this project does not
+  resolve a one-letter difference by eye, and this needs a source rather than a guess.
+- **`CLAUDE.md`'s account of `herald-index-full.json` is substantially out of date.** It
+  describes 17,601 index lines with 5,892 — a third — truncated at 300 characters. The file now
+  holds **141,079 lines across 11,850 items, and only 533 sit at the cap: four-tenths of one
+  per cent.** The index has been rebuilt far more completely than that paragraph knows. This
+  matters because the paragraph is the basis of the "a miss proves nothing" rule, and runs may
+  be paying the slow crawl to TopSCHOLAR for answers the local file now holds outright. Not
+  edited here: `CLAUDE.md` is the editorial law and rewriting it is the owner's call, not an
+  editor pass's.
+
+Carried forward unchanged: the eleven paused routines and the two that actually run, Mary Fyfe,
+the 1999-00 Coates investigation whose outcome is not in the record, the pre-2000 legislation
+gaps, the flagged name pairs, the 1987 evaluations wording, the twenty-three advance-notice
+entries worth corroborating from the *Talisman*, and Richey's five words on the 2015 event page.
