@@ -1,3 +1,98 @@
+# 11 September 2026, night — what the bill said would happen, written as though it had
+
+One pull request was open, #418, the photograph routine's rolling one, and it is the same
+empty branch the 03:28 pass cleared this morning: its tree still hashes identically to
+`main`, the GitHub API still lists zero changed files, and the portrait work its seven
+commits carry reached the site as #413 and #414. There was nothing to spot-check and
+nothing to merge, so it stays open as that routine's landing place. `gh` is not installed
+in this container; access was proved the way `AGENT-LANDING.md` says to, with a dry-run
+push that came back `* [new branch] HEAD -> access-probe`.
+
+That left the piece of work the 10 September report handed forward. The scan behind #419
+compared each event's title against its own body, and the report noted the gap: an entry
+whose title and body agree with each other, but whose source proves less than both, could
+not show up in it. This run wrote that scan against the bodies.
+
+## The defect: a funding bill read as a report of the event
+
+Sixteen events matched. Nine were real, and they share one shape. SGA's funding bills are
+written wholly in the future tense — "will be used to purchase", "volunteers will
+disperse", "Wednesday will be a day of handing out" — because they are written before the
+thing they fund. Nine entries had converted that future tense into the past, so the
+archive asserted that an event happened, and that money was spent, on the authority of a
+document that only proposed both. Four of the nine rest on bills whose posted form leaves
+the vote line blank, so not even the allocation is established.
+
+Every one was read at its source rather than inferred. Seven of the bills are mirrored in
+`data/legislation/` and were opened directly; the two oldest, Bill 95-3-S and Bill 99-12-S,
+were read from the TopSCHOLAR scans already in the repository, so this pass cost
+TopSCHOLAR nothing. The tenth case is an advance notice rather than a bill and was fetched
+from wkuherald.com.
+
+| entry | what the source actually says |
+|---|---|
+| 1994-95, faculty and staff awards | Bill 95-3-S: the year award "will be in the form of" a plaque. The archive said the winner received one. Passed 11 Apr 1995 |
+| 1998-99, the KASWE conference | Bill 99-12-S of 23 Mar: registrants "will represent" statewide universities. The archive said the conference, held 8–9 Apr, drew them |
+| 2017-18, chalk for Mission: Thank You Veterans | Bill 17-17-F: volunteers "will disperse"; funding "will be used to purchase chalk". Vote line blank. The archive said they wrote the messages and the money bought the chalk |
+| 2017-18, counselling vouchers | Bill 1-18-S: vote line blank. The title said the programme "covered the registration fee" |
+| 2019-20, Bowling Green Pride Festival | Bill 2-19-F passed, but the money "will name SGA as a Silver Sponsor". The archive said it bought the sponsorship |
+| 2021-22, Love The Earth | Bill 8-22-S: first reading only, second reading and vote lines blank. The archive said SGA handed out snacks and collected input |
+| 2021-22, Run on Walmart | Bill 20-22-S: first reading only. The entry said so itself, then said the money bought the vouchers |
+| 2022-23, Safety Awareness Week | Bill 7-22-F passed 37–0, and says "Wednesday will be a day of handing out". The archive gave the week in the past tense, then closed by admitting the bill records only what was planned |
+| 2023-24, World Kindness Day | Bill 6-23-F: vote line blank. The archive said SGA handed out the coffee and doughnuts |
+| 2023-24, DEI Week | Herald, 13 Mar 2024, on a week running 25–28 Mar: "will focus", "will have", "will partner" throughout. The archive gave all four days as things that happened |
+
+Nothing was deleted. All ten were rescued rather than cut, which is why the event count is
+unchanged at 1,964: each was trimmed back to what its document proves, and in six cases the
+trim added a sourced fact the entry had been missing — the passage dates of 95-3-S and
+99-12-S, the blank vote lines on 17-17-F, 1-18-S and 6-23-F, and, on the DEI Week entry,
+the unanimous vote of 12 March and the two partner organisations the *Herald* names for
+28 March. The Safety Awareness Week entry keeps its closing caveat, which now agrees with
+the sentences above it instead of contradicting them.
+
+Six of the sixteen matches were read and left alone. Three are 1979–81 resolutions *asking*
+for something to be installed, where the word sits inside the request and the phrasing is
+already right; one is the 1999 IT Director bill, which says outright that the records do
+not show the post was filled; one is the 1999 suggestion-box bill, which says "provided
+for"; and one is the 2008 Ruckus piece, where the claim that the server would cost nothing
+is reported speech attributed to Smiley in the *Herald*, not an assertion by the archive.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the twelve previous nights and all six
+stay: a bill introduced and the same bill failing, an announcement and a later
+distribution, a planned lawsuit and its endorsement, and three same-day bills of
+1 September 1991. The rewrites introduced no new pair. Re-running the body scan afterwards
+returns seven matches, all of them the six judged above plus the rewritten 1994-95 line,
+whose "to be handed out" is now correct.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who were president. 2,652 recorded terms of office
+held by 1,810 people, 98% carrying an account of what the person did. 47 people recorded
+under more than one spelling. 308 documents and 1,111 legislation files. The search index
+carries 4,946 records.
+
+## Still open
+
+- **A follow-up report for these ten was not ruled out.** wkuherald.com's search returns the
+  same five recent stories for every query, so it could not be used to look for a report of
+  how DEI Week or Safety Awareness Week actually went. That is a broken search, not an
+  absence: if a later *Herald* piece covers either week, the past tense can come back with
+  that citation behind it. Worth a run that has TopSCHOLAR answering.
+- The same scan should be pointed at `profile` paragraphs and at officer `note` fields,
+  which it does not read. A profile built from a bill can over-claim in exactly this way.
+- The standing brief still instructs the editor to handle #6, #7 and #8 as stale. They have
+  been closed since 18 August. Eighth run to record it.
+- The brief still opens by telling the editor to run `gh auth setup-git`. `gh` is not
+  installed in these containers; git is already credentialed and the GitHub MCP tools serve
+  for pull requests. A run that reads the missing binary as the platform gate would drop
+  into review-only mode for no reason. Worth correcting in the brief.
+- Carried forward unchanged: the 1999-00 Coates investigation whose outcome is not in the
+  record, the pre-2000 legislation gaps, the three flagged name pairs, and the 1987
+  evaluations wording.
+
 # 10 September 2026, night — thirty Herald reports the reader could not follow
 
 Nothing was open again. `gh` is not installed in this container, so access was proved the
