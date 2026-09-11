@@ -20986,3 +20986,23 @@ carries 4,946 records.
 - Carried forward unchanged: the 1999-00 Coates investigation whose outcome is not in the
   record, the pre-2000 legislation gaps, the three flagged name pairs, and the 1987
   evaluations wording.
+
+## Addendum, 11 September — the footer, and what merged
+
+#419 merged at the squash commit `c47d1bc3`, authored by `samuelkurtzsfs`. The commit
+message, the merge commit and this log are clean. The pull request body was stripped
+successfully before the merge, as #388 and #389 were.
+
+The comment on #418 carries the attribution footer, joining #337, #340, #349 and #388.
+Behaviour is unchanged from the 8 September finding: a direct REST `PATCH` of the comment
+body returns 200, and the footer is re-appended on the way out, so a clean body is stored
+with the line back on the end. The MCP set still has no tool that edits a comment. **That
+comment needs deleting by hand**, with the four before it.
+
+Worth noting that the version injected now carries the bare `claude.ai/code` address
+rather than a session link, so it is no longer leaking a session URL into the project's
+visible text. It is still a tool-attribution line on a public archive and still against
+the rule.
+
+#418 was left open, not merged: its diff is empty and merging it would close the
+photograph routine's landing place for nothing.
