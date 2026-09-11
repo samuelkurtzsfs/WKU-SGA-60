@@ -4568,6 +4568,81 @@ the source carries a second person of that surname. A negative roll is read by
 later runs as settled, so a name attached to the wrong evidence is as costly
 here as anywhere else in the archive.
 
+**An 11 September 2026 run (photograph agent, scheduled), later the same day
+as PR #418.** Re-checked priorities one and two before anything else, same as
+every run since 21 August: Nick Todd, Katie Dawson, Jeanne Johnson and Reagan
+Gilley all still carry a portrait in `data/photos.json`, and a script
+comparing every `leaders` entry in `data/years.json` against `data/photos.json`
+by year and name found zero presidents or student regents without one.
+
+Worked a fresh, previously-untried slice of priority three: cross-referenced
+`data/photo-finds/_officers-truly-missing-2026-09-06.json` (187 names) against
+both `data/photo-finds/_do-not-use.json` and the prose negatives already
+recorded in this section for 5-9 September, then picked 50 names from the
+remainder with a 2010s-2020s year attached, since that era has the thickest
+`wkuherald.com` coverage. Searched all 50 against `wkuherald.com`'s
+`/wp-json/wp/v2/posts?search=` endpoint; 46 returned at least one SGA- or
+WKU-adjacent hit. Of those, pulled every distinct `featured_media` id (33
+unique images across the SGA-titled articles) and read each one's actual
+caption via `/wp-json/wp/v2/media/{id}` rather than trusting the headline
+match. **None named the person searched for.** Every caption instead named a
+different, already-portrayed officer standing in the same frame - the
+pattern this file has now documented independently on 5, 6, 7 and 9
+September holds a fifth time: Alex Sergent's five SGA hits all caption
+Garrett Edmonds, Jayden Thomas or Andi Dahmer; Josh Zaczek's five caption
+nobody by name in three cases and Garrett Edmonds again in the other two;
+Erika Puhakka's five caption Isaac Keller or unrelated administrative
+business; Smita Peter's and Lucas Knight's SGA hits both land on the same
+Andi Dahmer budget-debate photograph via shared `featured_media`. One
+collision is worth flagging on its own: Jordan Tackett, Luke Edmunds and
+Morgan Wysong all matched the same article, "Next student body president
+elected to office" (post 28871, media 28872). The caption names four other
+people left to right - Savannah Molyneaux, Andi Dahmer, Kara Lowry and
+Conner Hounshell - embracing after the election result, and none of the
+three searched-for names appears in the photograph at all; each is in the
+article's body text, not pictured. Do not re-open this article for any of
+the three. (Checked by the editor on 11 September: an earlier draft of this
+entry called it a four-way collision and included Madison Keller. Her
+search returns two posts and 28871 is not among them, and her name is
+absent from that article's body text as well, so she was never in this
+collision. The other three are confirmed.)
+
+Also ran eight of the batch (Abigail Potter, Smita Peter, Erika Puhakka,
+Rachel Calhoun, Alexis Mayne, Hayden Skinner-Fine, Christopher Jankowski,
+Maiah Cisco) through a `wku.edu`-scoped web search rather than
+`wkuherald.com` alone, on the chance one was a Mahurin Honors College
+"Spotlight" subject the 9 September entries found productive for other
+names. Real, on-record mentions turned up for several (Jankowski as 2012
+Judicial Council Chief Justice writing a unanimous ruling; Puhakka in two
+university releases unconnected to student government) but none is an
+individually captioned photograph, and none of
+the eight has any hit at all tying them to an SGA context specifically for
+Potter, Calhoun, Mayne, Skinner-Fine or Cisco. No portraits from this half
+either.
+
+Retested `viewcontent.cgi` once, against `article=1064&context=stu_org`
+with the full browser-navigation header set: still blocked, though the
+block itself has changed shape since the "bepress-branded 403 Error page"
+every entry from 5 September on describes - this response is now a
+Cloudflare interstitial ("Just a moment..." challenge page, HTTP 403,
+`noindex,nofollow`), not the bepress page. Functionally the same outcome
+(no PDF), but worth flagging as a different failure mode in case a future
+run's bypass technique needs to target Cloudflare rather than bepress.
+
+Checked the UA68/UA12 Spirit Masters call-number question the 3 September
+editor's pass left open for the 1996-97 and 2004-05 entries: both already
+read UA12/2/16 correctly in the current `data/photos.json` (`stu_org/329`
+and `stu_org/327` respectively). Some later, unlogged pass already fixed
+them. Nothing to do here.
+
+No files changed under `data/photos/`; the only change this run is this
+entry, recording 50 more names and their exact negative evidence so a
+future run does not re-spend the requests. `build.py` and `check_data.py`
+both pass clean against the unchanged data (61 years, 60 presidents, all
+still portrayed; 12-year year-photograph gap unchanged). Merged
+`origin/main` (fast-forward-compatible, no conflicts, already carried
+PR #418's own commit) before starting. Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
