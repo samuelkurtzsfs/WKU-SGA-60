@@ -21101,3 +21101,92 @@ the rule.
 
 #418 was left open, not merged: its diff is empty and merging it would close the
 photograph routine's landing place for nothing.
+
+## 11 September, evening — the photograph run's fifty negatives, reviewed and merged
+
+One pull request open, #418, the photograph routine's rolling branch. The three stale
+August ones, #6, #7 and #8, are gone; earlier passes dealt with them and nothing needed
+doing here.
+
+The morning addendum above left #418 open on the grounds that its diff was empty. That
+had stopped being true by the time this pass ran: a push at 08:02 added a 72-line entry
+to `SGA-60-AGENT-INFO.md` recording fifty more officer names checked and found wanting.
+Nothing under `data/`, so none of it reaches the rendered site — but this file is what
+later runs read as settled, and a wrong negative in it costs the same as a wrong fact
+anywhere else, so it was checked as if it were published.
+
+Twelve claims spot-checked against their sources. Ten held. The `viewcontent.cgi`
+observation reproduced exactly: HTTP 403, `cf-mitigated: challenge`, `server: cloudflare`,
+a "Just a moment..." page marked `noindex,nofollow`. The bepress 403 that every entry from
+5 September describes really has been replaced by a Cloudflare challenge, and a future run
+attempting a bypass should aim at the right wall. Media 28872's caption is word for word
+what the entry says it is. Jankowski's 2012 chief justiceship and unanimous ruling are on
+wku.edu. Every portrait claim checked out locally: 61 years, 73 leader entries, no
+president or regent without a face, four real JPEGs, and the twelve-year year-photograph
+gap exactly as listed.
+
+Two failed. The entry recorded a four-way collision on the 2017 election photograph and
+put Madison Keller in it; her search returns two posts, that article is not among them,
+and her name is not in its body text either. Corrected to the three that do match, with
+the error and its evidence left in place rather than quietly removed — a later run should
+be able to see why the number changed. And the officer-hunt list holds 187 names, not 186.
+
+Two more cuts, editorial rather than factual. The entry reproduced about forty words of a
+Herald caption verbatim, against the under-fifteen-words rule, which binds this file as
+much as the site because the repository is public; paraphrased, keeping the four names and
+the embrace, which was all the note needed. And a line recording a living officer's
+academic-honours release and a regional-campus spotlight was trimmed to the fact that
+carried the finding, two university releases unconnected to student government.
+
+What the run got right is worth recording as plainly as what it got wrong. It searched
+fifty names, took the headline matches, and then read each photograph's actual caption
+instead of trusting the match. Not one caption named the officer searched for; every one
+named a colleague already portrayed. Reading the caption is the whole reason this run
+filed thirty-three negatives instead of thirty-three misidentified faces.
+
+Merged as a squash at `13b4511b`. Deliberately squashed: commit `28faf3cd` on that branch
+was authored `Claude <noreply@anthropic.com>`, and a squash kept it out of main's permanent
+history. Main is still authored entirely by `SGA 60` and `samuelkurtzsfs`, and the merged
+commit message is clean.
+
+Traps checklist on the diff: no advance notice leaned on, no committee chair promoted to
+officer, no surname-alone matching — the reverse, headline matches were discarded wherever
+the caption disagreed — no changed-surname duplicate, no April result filed forward into
+the wrong year, nothing touching a settled fact, no contributor edit.
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit clean. `check_duplicates.py`
+reports six pairs, every one pre-existing on main and every one genuinely two events: a
+bill introduced in January and the same bill failing after amendment in February, a
+lawsuit planned in February and endorsed in March, and the three 1 September 1991 bills
+that are exactly the case the rule protects. Nothing merged.
+
+## Counts
+
+61 years, 1,964 events, 60 people recorded as president. 2,652 terms of office held by
+1,810 people, 2,615 of them (98%) carrying an account of what the person did. 308
+documents, 1,111 legislation files, 4,946 records in the search index.
+
+## The footer
+
+The review comment on #418 carries the attribution footer, joining #337, #340, #349, #388
+and the earlier #418 comment. Nothing in this pass authored it; the platform appends it
+after the body is posted. Behaviour unchanged, no tool in the set edits a comment, and
+those comments still need deleting by hand. Nothing in `data/`, in the generated site, or
+in any commit message carries it, which is what the rule protects.
+
+## Still open
+
+Merging #418 closes the photograph routine's rolling pull request. The `research-photos`
+branch is untouched and still on origin, so the next run pushes to it and opens a fresh
+one; no action needed, but worth knowing why the pull request list is empty.
+
+The brief this pass runs from still opens by telling the editor to run `gh auth setup-git`,
+and `gh` is still not installed here. Git is credentialed and the GitHub MCP tools serve
+for pull requests, so nothing was lost, but a run that reads the missing binary as the
+platform gate would drop into review-only mode for no reason. Second pass to record it;
+worth correcting in the brief.
+
+Carried forward unchanged: the eleven paused routines, Mary Fyfe, the 1999-00 Coates
+investigation whose outcome is not in the record, the pre-2000 legislation gaps, the three
+flagged name pairs, the 1987 evaluations wording, and the twenty-three correctly written
+advance-notice entries worth a second look for corroboration from the *Talisman*.
