@@ -20782,3 +20782,108 @@ legislation files. 73 leader profiles, now 296 paragraphs.
   Herald, which is behind the TopSCHOLAR block from here.
 - Carried forward unchanged: the election filing split, the pre-2000 legislation
   gaps, the three flagged name pairs, and the 1987 evaluations wording.
+
+# 11 September 2026 — the two merges nobody had reviewed, opened at their sources
+
+## What was reviewed
+
+Nothing was waiting to be merged. No pull request was open, and every `research-*`
+and `editor-*` branch on origin was judged by content rather than by commit count.
+All of them are behind `main`, none carries anything it lacks.
+
+The 4 August `research-*` branches are still the orphan snapshots AGENT-LANDING.md
+warns about: their diff against `main` runs to roughly 497,000 deletions. They have
+been closed since 18 August and were left alone.
+
+What the sweep did turn up is that `main` had moved twice since the last entry was
+written. The 10 September morning report closed at #414. Two merges landed that
+afternoon and evening — #415, the citations that led to a browse listing, and #416,
+thirty *Herald* reports the archive asserted but did not link — and both went to the
+live site without a recorded review. That is where this run went.
+
+## Eighteen claims opened at their sources
+
+Twelve of the thirty citations added by #416 were opened on TopSCHOLAR, one request
+at a time and three seconds apart. Every one matched on volume, issue number, year
+and headline: 45:20 (1966), 51:7, 51:15, 51:16, 51:24 (1971), 53:27 (1973), 53:59
+(1978), 55:36 (1980), 61:46 (1986), 64:48 (1989), 67:34 (1992), 84:16 (2008).
+
+One of them looked wrong and was not. "Herald 53:59, 25 Apr 1978" breaks the volume
+series — volume 53 is 1973-74 twice over in the same diff — and it was pulled for
+correction. The record itself reads *Vol. 53, No. 59*, dated 1978. The *Herald*'s own
+numbering is irregular there and the label reproduces the archive faithfully. It was
+left exactly as it stands.
+
+Six corrected URLs from #415 were opened too, and all six resolve to the specific
+record their label names rather than to a browse listing: the 1966 constitution and
+the 1986 amended constitution, the Gott library-hours correspondence of November 1989,
+the flag pole correspondence of January 1990, the ASG Link newsletter of November 1978,
+and the 1969 *Talisman* pt. 1 behind the call number UA12/2/2.
+
+## The advance-notice rule, checked where it would have failed
+
+Five of #416's new citations are advance notices — Spock billed to lecture "Thursday",
+Mountain and Black Oak Arkansas "Billed for Dec. 2", ice skating that "May Begin". Each
+sits beside an event carrying a hard number: a crowd of 1,100, a crowd of 12,000, 1,175
+votes, a crowd of 6,000.
+
+Every one of those numbers is attributed in the body to the *Talisman*, which is the
+entry's `src`. The *Herald* notice is the `src2` and is described only as what it
+announced. The rink entry goes further and says outright that nothing in the record says
+it was ever built. The rule held everywhere it was tested.
+
+## Two things that looked stranded and were not
+
+Seven branches carry twenty-five dated events `main` does not have, all of them
+election results. They are pre-#408 snapshots. #408 consolidated twenty ballots that had
+been written up once under the year they were held and again under the year the winners
+served — Norfleet's regent runoff among them, the second copy filed on 1982-83 against
+the settled finding. Merging any of those branches now would put the duplicates back.
+
+Two more, on `research-photos`, survive on `main` under corrected titles: #415 read both
+at the source and made "at least seventeen numbered resolutions" sixteen, and "fifty
+senators" forty-nine SGA members — senators to members being the officer conflation that
+section 6 warns about.
+
+## A hazard worth recording
+
+`research-photos` is the live rolling photograph branch and is four commits behind `main`.
+Its diff against `main` is a clean revert of #415 and #416: it restores the browse-listing
+URLs and strips the thirty `src2` citations. Its own photograph work already landed as
+#413 and #414, and `data/photos.json` is byte-identical to `main`. A run that merges it
+without merging `main` into it first would silently unpublish two nights of citation work.
+Merge `main` in before touching it.
+
+## Checks
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same six pairs as the ten previous nights and all six
+stay: two are a bill introduced and the same bill failing, two are an announcement and a
+later distribution, and three are same-day legislative business on 1 September 1991,
+which the rule says stays separate.
+
+## Verdict
+
+Nothing to merge, and nothing that should have been merged. The two merges that had
+reached the public site unreviewed were the run's real work, and both hold: eighteen
+sources opened, eighteen matched, nothing cut.
+
+## Counts
+
+61 years, 1,964 dated events, 60 people who were president. 2,652 recorded terms of
+office held by 1,810 people, 98% carrying an account of what the person did. 47 people
+recorded under more than one spelling. 308 documents and 1,111 legislation files. 73
+leader profiles in 296 paragraphs. 1,387 leader portraits and 61 year photographs. The
+search index carries 4,946 records.
+
+## Still open
+
+- The standing brief still instructs the editor to handle #6, #7 and #8. They have been
+  closed since 18 August. Sixth run to record it.
+- The brief also opens by telling the editor to run `gh auth setup-git`. `gh` is not
+  installed in these containers and AGENT-LANDING.md says so; git is already credentialed
+  and the GitHub MCP tools serve for pull requests. Worth correcting in the brief so a run
+  does not read the missing binary as the platform gate.
+- Carried forward unchanged: the 1999-00 Coates investigation whose outcome is not in the
+  record, the pre-2000 legislation gaps, the three flagged name pairs, and the 1987
+  evaluations wording.
