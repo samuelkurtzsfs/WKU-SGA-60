@@ -21213,3 +21213,120 @@ is that one violation was found by hand and fixed, and that a real sweep needs a
 that understands where a quotation actually ends. Worth a future pass.
 
 `build.py`, `check_data.py` and `check_contrib.py` all exit clean.
+
+---
+
+# 11 September, midday — the quotation sweep the last pass could not measure
+
+Nothing was waiting. The pull request list was empty: #418 merged at 09:24 this morning,
+#422 and #423 behind it, and nothing has reached `main` since 09:29. So no research diff
+was published unreviewed, and there was none to spot-check.
+
+`gh` is still not installed in these containers — third pass to record it. Git is
+credentialed and pushes fine, and the GitHub tools serve for pull requests, so nothing was
+lost, but the brief still opens by telling the editor to run `gh auth setup-git`, and a run
+that reads that missing binary as the platform gate would drop into review-only mode for no
+reason at all. It is worth correcting in the brief.
+
+## The hazard on `research-photos`, closed
+
+The photograph routine's branch was three commits behind `main` and its diff against it was
+a clean revert of #422 and #423 — the caption paraphrase and the evening report. The next
+photograph run pushing to it would have silently unpublished both. `main` is merged into it
+and pushed; it now carries nothing `main` lacks.
+
+One thing to know before it is merged next time: its history still contains a merge commit
+authored `Claude <noreply@anthropic.com>`, which is why the last pass squashed it. It must
+be squashed again, or that name enters `main`'s permanent history.
+
+## The sweep
+
+The 11 September evening report left a stated piece of unfinished business: a sweep for
+over-long quotations had been attempted and abandoned, because matching quotation marks
+across a whole file paired marks belonging to different sentences and returned runs of a
+thousand words counted as one quote.
+
+The fault was the unit of measurement, not the idea. Pairing marks **within a single string
+field** rather than across a file cannot produce a span that runs past the end of the field
+it lives in, and the nonsense disappears. Run that way over `years.json`, `photos.json`,
+`legislation.json` and `name-aliases.json`, the archive yields 75 quoted spans of fifteen
+words or more.
+
+Most of them are not violations, and saying why matters more than the count:
+
+- **52 are the archive quoting itself.** The portrait-reattachment run of #413 writes a
+  leader's own note into the photograph's citation label, after the words "the archive's
+  record notes". That reproduces nothing belonging to anybody else.
+- **4 are article titles** in citation labels — two for the Dawson/Collins candidacy story,
+  one for the 2023 judicial council report, one for a 2019 re-election piece. A citation
+  that names the article it points at is bibliography, not reproduction, and stripping
+  titles out of citations would leave a reader unable to find the source. They stand, and
+  this is written down so a later pass does not churn them.
+- **11 are group-photograph captions consisting of names in order.** The order is the whole
+  evidence for which face belongs to whom — the same point #423 made when it kept the 2017
+  caption's left-to-right sequence. A list of proper names is fact, not expression.
+
+That leaves **eight genuine reproductions of somebody else's prose**, all now trimmed. None
+was deleted; every sourced fact in all eight survives.
+
+| where | was | now |
+|---|---|---|
+| 1970-71, Thomas Chance | his 1971 *Talisman* senior entry quoted "in full", 17 words | paraphrased, keeping the two office fragments the note analyses |
+| 1972-73, Susan Stuebing | 21 words of the *Talisman*'s Who's Who prose, cut off mid-sentence | a plain citation; the note already carried every fact verbatim |
+| 1972-73, Ed Jordan (portrait) | 15 words of the p. 75 caption | the frame marked "Upper", identified as Jordan, ASG president |
+| 1981-82, Jeffrey Chapman | 16 words of the 7 Dec 1981 minutes | the same five absentees, stated rather than quoted |
+| 1981-82, Maurie McGarvey | the identical 16 words, a second time from one source | likewise |
+| 1994-95, Jason Young | 16 words of a 1993 cheerleading caption | paraphrased; it also named a student unconnected to SGA, now gone |
+| 2014-15, James Line | 21 words of Richey's appointment remarks | both halves paraphrased |
+| 2014-15, Cole McDowell | his 15-word GPA argument | trimmed to a four-word quote |
+
+## What was checked at source
+
+Four of the eight were opened at the page rather than taken on trust, on archive.org, which
+is free and unpaced:
+
+- **Thomas Chance** — the 1971 *Talisman* prints him exactly as the archive had it: Dividing
+  Creek, N.J., mass media, "Pi Kappa Alpha, v.p.; A.S. Rep. at Large." The note's reading,
+  that the "v.p." belongs to the fraternity and not to student government, is right.
+- **Susan Stuebing** — the 1973 Who's Who feature carries every fact the note claims: Sue
+  Stuebing, senior history and economics major from Cincinnati, member of the Associated
+  Students and its academic council. The old quotation broke off at "the", which was hiding
+  that the sentence goes on to the *Talisman* staff; nothing in the archive claimed otherwise.
+- **Ed Jordan** — the p. 75 caption block does mark his frame "Upper" and does call him ASG
+  president.
+- **Jeffrey Chapman and Maurie McGarvey** — the 7 December 1981 minutes are mirrored in
+  `data/documents/`, a real image PDF, so the claim was confirmed against the file already in
+  the repository at no cost to TopSCHOLAR. The text layer garbles the names, exactly as the
+  note says; the reading came from the page image and the rewrite does not disturb it.
+
+One TopSCHOLAR request was made, paced: record 295 returns 1981 minutes on residence-hall
+televisions and resolutions, consistent with the December sitting.
+
+## A lead that came back clean
+
+Jordan's caption closes by calling his election the most widely disputed Western had ever
+known. The archive already has the dispute — Congress voting his opponent onto the ballot
+over an eligibility question, the 1971-72 Weaver ruling and the Judicial Council declining to
+act — so nothing is missing. The yearbook's superlative is the yearbook editorialising and is
+rightly not asserted anywhere. The April 1972 election files forward into 1972-73, correctly.
+
+## Checks
+
+`build.py` completes clean, `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+reports the same six pairs as the fourteen previous nights and all six are genuinely separate
+events: a bill introduced and the same bill failing, an announcement and a later distribution,
+a planned lawsuit and its endorsement, a stance taken and the legislation passing it, and three
+same-day bills of 1 September 1991. The rewrites introduced no new pair. The eight rewritten
+citations were read back off the built pages and all eight render as sentences.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms of office held by
+1,810 people. 308 documents, 1,111 legislation files, 4,946 search records.**
+
+## Still open
+
+The one remaining in-limit quotation worth a second look is Richey's five words on the event
+page for the 2015 appointment, kept because it is under the limit and reports what a president
+said in open session. Carried forward unchanged: the eleven paused routines, Mary Fyfe, the
+1999-00 Coates investigation whose outcome is not in the record, the pre-2000 legislation gaps,
+the three flagged name pairs, the 1987 evaluations wording, and the twenty-three correctly
+written advance-notice entries worth corroborating from the *Talisman*.
