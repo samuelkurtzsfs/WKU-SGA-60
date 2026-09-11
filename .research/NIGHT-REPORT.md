@@ -21190,3 +21190,26 @@ Carried forward unchanged: the eleven paused routines, Mary Fyfe, the 1999-00 Co
 investigation whose outcome is not in the record, the pre-2000 legislation gaps, the three
 flagged name pairs, the 1987 evaluations wording, and the twenty-three correctly written
 advance-notice entries worth a second look for corroboration from the *Talisman*.
+
+## Addendum, 11 September evening — the same quote, one section earlier
+
+Verifying the merge of #418 turned up the twin of the violation it had just cut. The
+photograph section of `SGA-60-AGENT-INFO.md` already reproduced the same 2017 election
+caption verbatim, about thirty-five words of it, at the entry adding portraits for
+Savannah Molyneaux, Kara Lowry and Conner Hounshell. Pre-existing on main, not introduced
+by #418, and the identical breach of the under-fifteen-words rule.
+
+It was doing real work there, which is why it wants trimming rather than deleting: the
+caption's left-to-right order is the whole evidence for which of four overlapping faces
+belongs to which officer, and three portraits rest on it. Paraphrased with the order and
+the four names kept, so the identification still stands on its own and nothing of the
+Herald's sentence is reproduced.
+
+A sweep for other over-long quotations in this file was attempted and is not reported
+here, because the measurement was not trustworthy: matching text between quotation marks
+across a file this size pairs marks that belong to different sentences, and it returned
+obvious nonsense — runs of a thousand words counted as a single quote. The honest position
+is that one violation was found by hand and fixed, and that a real sweep needs a method
+that understands where a quotation actually ends. Worth a future pass.
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit clean.
