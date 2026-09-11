@@ -21445,3 +21445,107 @@ Carried forward unchanged: the eleven paused routines and the two that actually 
 the 1999-00 Coates investigation whose outcome is not in the record, the pre-2000 legislation
 gaps, the flagged name pairs, the 1987 evaluations wording, the twenty-three advance-notice
 entries worth corroborating from the *Talisman*, and Richey's five words on the 2015 event page.
+
+---
+
+# 11 September, late afternoon — fourteen profiles that told the same story twice
+
+Nothing was waiting. The pull request list was empty, `main` had not moved since the afternoon
+report merged at 10:25, and no commit reached the live site unreviewed in between. The two
+routines that actually run had both already landed their work earlier in the day. So this pass
+went where the last several have gone when the pipeline is quiet: to material already published.
+
+## What was reviewed
+
+The president profiles — 73 of them, 296 paragraphs. They are the part of this archive a reader
+is most likely to open, and they are the part assembled by the most hands: a profile grows one
+research pass at a time, and what no pass does is read the paragraphs already there before
+appending its own.
+
+Scanning every profile for paragraph pairs that share vocabulary returned fifteen. Fourteen were
+real, and the pattern was the same in nearly all of them: an early paragraph paired with a late
+one, the seam where a second pass began and retold an election or a term's end in different
+words. 1986-87 was the clearest — Timothy Todd's third paragraph contained his second entirely,
+the same $12,100 budget, the same plan to telephone students, the same retreat with Kern
+Alexander, the later one merely adding the date of the issue that reported them.
+
+## What was cut, and what was kept
+
+Nothing was deleted outright. Every pair was merged, because the late paragraphs were carrying
+something the early ones lacked — the bylines and headlines of Michele Wood, Robert Pillow,
+Jamie Morton, Kevin Francke, Monica Dias, Mack Humphreys, Kevin Knapp and Patrick Richardson.
+All of it is kept. The profiles are about a fifth shorter and no name, number, date or headline
+is gone.
+
+That last claim was not taken on trust. Every capitalised token and every numeral was extracted
+from each profile before and after and the two sets diffed. It caught three facts genuinely
+dropped in the first draft of the merge — the headline over Morton's report of Smith's win, and
+the months of two Herald pieces on Kristen Miller — and all three were restored, the Smith
+headline after confirming against the local index that Morton's 14 April 1983 report and the
+"fifty-eighth volume" reference in the 1984-85 profile are one and the same item.
+
+## Two defects that were not just repetition
+
+**1992-93 contradicted itself.** One paragraph called the *Herald*'s 14 April 1992 endorsement of
+Joe Rains an editorial; another called the same headline a letter. The paper's own index gives
+the piece to India Wilson and marks no genre at all, where two lines above it marks Richardson's
+cartoon plainly as one. The archive had supplied a genre twice, differently, and neither time
+from a source. It now names Wilson's piece without one.
+
+**The same profile asserted a negative its own index disproves.** "The archive does not preserve
+further detail of how the term ended" sat in the middle of the profile with three paragraphs of
+further detail after it. `herald-index-full.json` carries two items bearing directly on how the
+term ended: Tungate's "Student Government President Won't Seek Re-Election" of 11 March 1993 and
+his "Joe Rains Views Year in Student Government Association Positively" of 29 April 1993. The
+sentence is cut. Neither item is written up, because this pass did not read them.
+
+**2008-09 broke the quote rule.** Kayla Shelton's eight words on the Judicial Council were quoted
+in two separate paragraphs of her own profile, from one source. Once, now.
+
+## What was left alone
+
+1978-79 trips the same scan and is right: Thornton's profile deliberately observes that the
+state seat ASG was pressing for in January 1979 is the kind of seat he himself won in March.
+That is a cross-reference doing work, not a repetition. Reagan Gilley's two Board paragraphs
+describe two different meetings in parallel language and likewise stand.
+
+Both settled facts that touch this material were rechecked and neither was disturbed. Reed
+Morgan still carries `role: unresolved` and his profile claims no office. Sandra Norfleet is
+still 1981-82, `role: regent`, `year_confidence: corrected`; the 1982-83 student-leader listing
+her profile mentions is a later list reported as a later list, which is what the settled note
+itself says it is.
+
+## The photograph branch, closed again
+
+`research-photos` was one commit behind `main` and its diff against it was a clean deletion of
+ninety-one lines of this file. The next run pushing to that branch and having it merged would
+have silently unpublished the afternoon report. `main` is merged in and pushed, by a merge commit
+authored in the project's own name, and the branch now carries nothing `main` lacks. This is the
+third consecutive report to record clearing the same hazard on the same branch; it recurs because
+the routine pushes to a long-lived branch and never merges `main` back itself.
+
+## Validators
+
+`build.py` clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py` reports
+the same six pairs as every previous night, all genuinely separate events, and no rewrite
+introduced a new one. Re-running the overlap scan afterwards leaves only the two judged above.
+The rewritten profiles were read back off the built pages and render as sentences.
+
+No event, officer, document or photograph was touched. **61 years, 1,964 dated events, 60 people
+who were president. 2,652 terms held by 1,810 people, 98% of them carrying an account of what
+the person did. 308 documents, 1,111 legislation files, 4,946 search records.**
+
+## Still open
+
+- **Two Herald items on how Joe Rains's term ended**, named above, indexed and unread. The
+  cheapest lead in this report for whoever researches the 1990s next.
+- The attribution footer is still being appended to pull request bodies on the way out, carrying
+  a session link. Stripped by hand again on #428, as on every editor pull request before it.
+- Carried forward unchanged: Charlie Harris's missing portrait; the `Amber Daniels` / `Amber
+  Daniel` pair, flagged and not merged for want of a source; `CLAUDE.md`'s account of
+  `herald-index-full.json`, which describes 17,601 index lines a third truncated when the file
+  now holds 141,079 lines with four-tenths of one per cent at the cap; the eleven paused
+  routines and the two that run; Mary Fyfe; the 1999-00 Coates investigation whose outcome is
+  not in the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the
+  twenty-three advance-notice entries worth corroborating from the *Talisman*; and Richey's five
+  words on the 2015 event page.
