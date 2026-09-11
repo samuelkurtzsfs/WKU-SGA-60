@@ -21549,3 +21549,93 @@ the person did. 308 documents, 1,111 legislation files, 4,946 search records.**
   not in the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the
   twenty-three advance-notice entries worth corroborating from the *Talisman*; and Richey's five
   words on the 2015 event page.
+
+# 11 September 2026, night — the fall 1991 bills read against the documents themselves
+
+## No pull request was open
+
+`gh` is not installed in this container, but git is credentialed and the GitHub tools answer, so
+this was a full-mode run, not a review-only one. There was nothing queued to review: the open-PR
+list came back empty, and the last research merge, #426 on the photograph branch, went in at
+15:23. The three pull requests the standing brief calls stale and open since 4 August — #6
+photographs, #7 the 1980s, #8 the 2020s — have all been closed since 18 August. The brief is out
+of date on that point and can be simplified.
+
+`research-photos` is sixteen commits ahead of `main`, but its tree is byte-identical to `main`:
+every substantive commit on it is already merged and the remainder are merges of `main` back in.
+Nothing was withheld. The other twenty-one `research-*` branches have no merge base with `main`
+at all — they are the superseded-repository snapshots `AGENT-LANDING.md` warns about, and merging
+one would delete the validators and the contributor layer. They were left alone.
+
+## What the run did instead: four bills that were read as doing more than they ask
+
+With no queue to clear, the fall 1991 legislation was read against the mirrored PDFs in
+`data/legislation/1991-92`, which hold the documents themselves and cost the archive nothing to
+open. Four entries did not survive the comparison. All four are now corrected on `main` in #430.
+
+**Bill 91-09-F** was published as *ASG bill funds a "President for a Day" fundraiser*. The bill
+appropriates nothing. It would have required each voting member of congress to sell at least five
+dollars' worth of tickets, at twenty-five cents each or five for a dollar, for an event already
+set for 20 November 1991.
+
+**Bill 91-03-F** was published as *ASG bill funds renovation of its own chambers*. There is no
+money in it and the renovation is one sentence long: paint the letters ASG in red on the left
+side of the wall. The authors' case was that the room carried nothing of the organisation's
+identity beyond the door sign and a display case.
+
+**Resolution 91-7-F** was published as the body passing a resolution *backing the renewal of
+President Thomas Meredith's contract*. The document is titled "Student Picket to Support
+President Meredith" and what it proposes is a student picket at the Board of Regents meeting of
+31 October 1991 at the Agriculture Exposition Center, prompted by a rumour that Meredith might be
+offered the presidency of the University of Central Florida. The contract renewal is a WHEREAS
+setting the scene, not the thing resolved.
+
+**Bill 91-11-F** described its own subject correctly but placed the rename to the Student
+Government Association "in the same fall". The archive's own entry for Bill 92-10-S, itself
+verified against the document, gives the constitutional amendment as introduced 1 April 1992.
+
+On all four forms the First Reading, Second Reading, Pass and Fail boxes are blank, so *passed*
+is not supported for 91-7-F either. The standard was already written down in this same year: the
+92-03-S entry says outright that the file does not show when or whether it passed. These four
+fell short of a rule the year itself demonstrates.
+
+Heather Falmlen's profile carried all four readings in a single paragraph and has been rewritten.
+The same profile still dated Resolution 92-7-S to 4 February 1992 — a date the football entry in
+the same year had already corrected to 2 April on the resolution's own introduction date. A
+correction had been applied to the event and not propagated to the profile; it has been now.
+
+This is the class of defect #419 and #421 were cutting. Those passes worked from titles that
+claimed a purchase; these four hid behind titles that claimed a *funding*, and were missed.
+
+## Validators
+
+`build.py` clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py` fell from
+six pairs to four, because two of the flagged same-day 1991-92 collisions were collisions between
+the over-claimed titles rather than between events. The four that remain are separate events and
+stay: a bill introduced and the same bill failing three weeks later; the Civil Liberties Union
+lawsuit planned and then endorsed a month later; the plus/minus debate and the vote three weeks
+after it; and the designated driver cards, funded in November 1997 and distributed in February
+1998. That last pair was checked for the advance-notice trap and is clean — the February entry
+says only that the Herald reported the cards would be handed out the next day, and states that
+the archive holds the issue as a contents listing and nothing more.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,946 search records.** No photograph, officer or document was touched.
+
+## Still open
+
+- **The rest of the mirrored legislation has never been read against its entries.** Tonight's
+  four came out of one year's folder, checked in minutes because the PDFs are already on disk.
+  There are 1,111 legislation files. Whatever fraction of them carries the same over-claim is
+  still on the site, and finding it needs no network and no crawl budget at all. This is the
+  cheapest unexploited lead in the archive.
+- The attribution footer was appended to #430's body on creation and stripped by hand, as on
+  every editor pull request before it.
+- The standing brief should drop #6, #7 and #8; they were closed on 18 August.
+- Carried forward unchanged: the two Herald items on how Joe Rains's term ended; Charlie Harris's
+  missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account of
+  `herald-index-full.json`; the eleven paused routines and the two that run; Mary Fyfe; the
+  1999-00 Coates investigation whose outcome is not in the record; the pre-2000 legislation gaps;
+  the 1987 evaluations wording; the twenty-three advance-notice entries worth corroborating from
+  the *Talisman*; and Richey's five words on the 2015 event page.
