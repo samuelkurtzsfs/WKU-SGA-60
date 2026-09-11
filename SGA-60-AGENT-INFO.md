@@ -4643,6 +4643,103 @@ still portrayed; 12-year year-photograph gap unchanged). Merged
 `origin/main` (fast-forward-compatible, no conflicts, already carried
 PR #418's own commit) before starting. Landed on `research-photos`.
 
+**A second 11 September 2026 run (photograph agent, scheduled), later the
+same day as PR #422.** Re-checked priorities one and two before anything
+else: Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley each still
+carry a portrait, each file still a real JPEG (`FF D8 FF E0`), and a script
+comparing every `leaders` entry against `data/photos.json` by year and name
+found zero presidents or student regents without one, across all 61 years.
+
+Computed the executive/senate-officer gap independently rather than
+re-reading this section's log by eye: every `organization.executive` and
+`organization.senate.officers` (year, name) pair with no matching
+`photos.json` entry, filtered to titled offices only (excluding plain
+Senator, Associate Justice, and At-Large seats, the same exclusion this
+log has used since 25 August), restricted to 2007-08 onward on the theory
+that `wkuherald.com`'s WP-JSON search is the only fast, unpaced channel
+open today and it does not reach earlier years. That produced 67 unique
+names. Searched all 67 against `/wp-json/wp/v2/posts?search=` with
+`_embed=wp:featuredmedia`, checking each returned post's actual featured-
+image caption for both the person's first and last name together, not
+just a keyword hit on the post text. **Zero of the 67 produced a caption
+naming the searched person.** This is the same result the 5, 6, 7, 9 and
+11 September (PR #418) entries above already recorded for a large,
+overlapping set of names — Erika Puhakka, Justin Goins, Elizabeth
+DeLozier, Zachary Skillman, Turner Reynolds, Josh Zaczek and Tribhuwan
+Singh among them were re-tried here and confirmed negative again, so nothing
+in that overlap is new information. The 67: Aaron Pawley, Abhishek Bose,
+Abigail Potter, Allie Payne, Amber Daniel, Amber Daniels, Art Scisney,
+Blake Graham, Brenna Mathews, Brittany Crowley, Brooke Mitchell, Cacy A.
+Schooler, Cassidy Townsend, Christopher Jankowski, Cody Cox, Cole
+McDowell, Corbin Snardon, Corey Bewley, Dajana Crockett, David Spalding,
+Eliana Martinez, Elizabeth DeLozier, Erika Puhakka, Helen Vickrey, Hope
+Wells, Ian Hamilton, Jackie Stewart, Jacob A. Miers, Jacob Miers, Jason
+Herlick, Jeremy Glass, Jessi Wurth, Jillian Kenney, Josh Zaczek, Justin
+Goins, Justin McDole, Kara Raley, Kasey Glasgow, Kelly Simmons, Lamiaya
+Page, Lisa Kappler, Lisa M. Kappler, Livi Ray, Liz Goddard, Madison
+Keller, Mallory Treece, Mark Clark, Matthew Johnson, Monique Gooch,
+Morgan Wysong, Nathan Cherry, Rachel Keightley, Reed Hensley, Robert
+Bell, Ryan Richardson, Samantha Hughey, Sarah Howell, Sawyer Coffey,
+Smita Peter, Stacey Schepers, Stuart Kenderes, Temple Ricke, Tribhuwan
+Singh, Turner Reynolds, Tyler Scaff, Vanessa Scott, Zachary Skillman.
+(Note on method: matching required both given and family name in the same
+caption, so a caption using only a surname would not have registered —
+deliberately, per this project's rule against matching a person by
+surname alone. A future run could still recheck surname-only hits by eye,
+one at a time, rather than trust the automated filter, but none of that
+was done here.)
+
+One genuinely new route was tried and closed: `_brief.md`, a working
+document found this run under `data/photo-finds/` (a separate, much
+larger portrait-hunt operation this session had not previously seen —
+see the note at the end of this entry), claims the Wayback Machine
+mirrors TopSCHOLAR's `viewcontent.cgi` PDFs and serves them to plain
+`curl` even when `digitalcommons.wku.edu` itself is Cloudflare-blocked:
+`https://web.archive.org/web/2024id_/https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=<N>&context=<collection>`.
+Tested against the 16 September 1993 Herald issue (article 8683,
+`dlsc_ua_records/7687`, chosen for the "Donald Smith Followed
+Grandfather's Lead All the Way to President's Office" profile piece it
+carries): `web.archive.org` itself would not complete a TLS handshake,
+`curl: (35) Recv failure: Connection reset by peer`, on three attempts a
+few seconds apart. This matches the intermittent block on that specific
+hostname §8.1 already documents (last flagged "blocked again" 22 August)
+rather than anything new about the technique — a future run hitting this
+during one of that host's open windows should try it before believing
+`viewcontent.cgi` itself again. `viewcontent.cgi` was not retested
+directly this run; PR #418 already logged four fresh attempts today
+(HTTP 403, Cloudflare "Just a moment..." interstitial) and there is no
+reason to expect the hour to have turned in between. A headless-Chromium
+attempt (Playwright, the pre-installed `/opt/pw-browsers` binary, proxied
+through this session's own egress proxy) was also tried against a plain
+`dlsc_ua_records` landing page rather than the PDF endpoint directly, and
+also failed at the TLS/connection layer (`ws_closed_mid_exchange` in the
+proxy's own status log, ~6-7 seconds into the handshake, both for
+`digitalcommons.wku.edu` and unrelated hosts like `www.google.com` in the
+same window) — inconclusive on whether Cloudflare would have challenged a
+real browser, because the connection never reached that layer this run.
+
+**A separate, much larger portrait-hunt operation already exists in this
+repository, under `data/photo-finds/`, and this run is not part of it.**
+`data/photo-finds/_brief.md` describes a multi-agent "fleet" workflow run
+from outside this cloud sandbox (it references `~/Desktop/SGA60 photo
+hunt/` and macOS-only tools like `ocrmac`), with its own strict
+identification rules, its own scratch files per research block, and an
+"editor" role that alone may write to `data/photos.json`. Its own
+tracking files (`_archive-gaps.json`, 164 KB; `_do-not-use.json`, 96
+rejected leads; `_for-the-editor.md`, 18 faces proved but not yet tied to
+a person, awaiting a human or editor decision) represent a large amount
+of careful work this run did not attempt to duplicate, merge, or judge —
+that is explicitly the editor's job per its own brief, not this routine's.
+Flagging its existence here because nothing in this section's log
+before today mentions it, and a future photograph-agent run should read
+`_brief.md` and `_archive-gaps.json` before re-deriving the same gap by
+hand.
+
+No files changed under `data/photos/` or `data/photos.json` this run.
+`build.py` and `check_data.py` both pass clean against the unchanged
+data (61 years, 60 presidents, all still portrayed; 12-year
+year-photograph gap unchanged). Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
