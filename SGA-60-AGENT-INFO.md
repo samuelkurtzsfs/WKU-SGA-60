@@ -203,6 +203,20 @@ That last line is the argument for never skipping the checker.
 2. **A committee chair is not an officer. A bill's author is not necessarily a
    member.** This is the single commonest error and it killed all 39 "missing
    president" claims.
+2a. **A second reading is not a vote, and a blank Pass line is not proof of one
+   either.** A bill sheet carries First Reading, Second Reading, then Pass / Fail
+   / Other. Entries have repeatedly taken the second-reading date and written it
+   up as the date the measure carried; 2000-01's Meet Your Dean Reception said
+   "It passed on 17 October 2000" off a form whose outcome lines are all blank.
+   Checking this by text search fails three ways. A regex for a mark after `Pass`
+   stops at the letter it is hunting, so `Pass _X_` reads as blank. On the 2000s
+   template the labels and the values are separate text blocks, so `Pass:` is
+   followed in the text stream by `Fail:` and every value is invisible — align
+   label to value by y-coordinate instead. And **a handwritten tick is not in the
+   text layer at all**: bills 03-04-F and 04-07-S read blank and visibly carry
+   one. So a blank cell is a lead, never a finding. Render the page and look at
+   it before changing a word. Nine entries were corrected this way on
+   12 September 2026; 45 others were confirmed to carry a real pass mark.
 3. **A changed surname is not a new president.** Known cases: Christy Vogt /
    Mollozzi, Janet "Nicki" Seay / Nicki Taylor, Amanda Coates / Lich, Steven
    Donte' Reed / Donté Reed.
