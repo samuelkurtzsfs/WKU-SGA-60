@@ -21953,3 +21953,94 @@ photograph, officer or document was touched.
   1999-00 Coates investigation whose outcome is not in the record; the pre-2000 legislation gaps;
   the 1987 evaluations wording; the twenty-three advance-notice entries worth corroborating from
   the *Talisman*; and Richey's five words on the 2015 event page.
+
+---
+
+# 12 September 2026, afternoon — a photograph run's log entry, merged with three claims corrected
+
+## What was reviewed
+
+One pull request open, #439, "Research: photographs", on `research-photos`. It was already current
+with `main` — the run merged `origin/main` before writing — so nothing had to be brought forward,
+and the three pull requests the standing brief still calls stale (#6, #7, #8) have been closed
+since 18 August.
+
+The diff was 74 lines added to `SGA-60-AGENT-INFO.md` and nothing else: no `data/`, no photograph,
+no document. Nothing in it could reach the live site. That lowers the stakes but not the standard,
+because the entry's whole purpose is to tell later runs where not to spend a run, and two of its
+three new conclusions would have done the opposite of that.
+
+## What held up
+
+The archive.org dead end is real and is now confirmed twice over. The run queried
+`identifier:talisman*west`, which assumes the identifier pattern; this pass ran the broader
+`talisman AND "western kentucky"` instead, which assumes nothing, and got the same 19 items —
+1943, 1946, 1947, 1963-65, 1971-81, 1986-87. Every one of the twelve year-photograph gap years is
+genuinely absent. Closing that route for good is correct, and it is the one thing this run added
+that should stand without qualification.
+
+The `viewcontent.cgi` Cloudflare block reproduced here on a single paced request, HTTP 403. Julie
+Mishchuk is on file under the exact spelling claimed. Portrait coverage is as stated: `build.py`'s
+own ordinal logic finds no president and no student regent without one.
+
+## Three claims corrected before merging
+
+**"No fallback host" for four of the gap years was over-claimed, and this archive's own citations
+are what refute it.** The run concluded that 2005-06, 2006-07, 2008-09 and 2009-10 now depend
+entirely on `viewcontent.cgi` reopening. But `years.json` already carries 56 events dated 2005 to
+2010 sourced through the Wayback Machine's snapshots of `wkuherald.com` and
+`media.www.wkuherald.com`, covering 2006, 2007, 2008 and 2009 — a working fallback host for exactly
+those years, and the route the text research took when the live site came up empty. The finding
+underneath is worth keeping and was kept: the *live* WP archive does not serve those years, so a
+later run should go to `web.archive.org` rather than query WP-JSON and conclude nothing exists.
+Whether those snapshots preserve usable images is untested, and untested is not closed. The
+2006-2009 hole itself could not be confirmed directly — wkuherald.com returned Cloudflare 403 to
+this pass all session — so it stands on indirect corroboration only.
+
+**The Sophie Stirling flag was wrong on every count, and wrong against the tree the note was
+committed onto.** It reported the November 2025 chief justice succession as something the record
+does not yet reflect and handed it to the roster routine. The record holds all of it: Stirling and
+Spiess both sit in 2025-26's `organization` block, Stirling as Chief Justice; the vote is already
+an event, dated 12 November with the swearing-in on the 18th; the Senate's constitutional waiver
+letting both stand is a second event; Graham's profile narrates the succession. Stirling has
+carried a portrait since an earlier run. Left standing, this would have sent another routine after
+finished work and promised a photograph that is already attached. Spiess and Blake Graham do
+genuinely lack portraits, and that is all that survives of the bullet.
+
+**"57 regents" is not a number in the data.** `build.py`'s ordinal logic counts 60 presidents and
+39 people in a regent capacity; regent-capacity terms number 42. No reading gives 57. This one is
+not the run's own — it has been repeated through roughly a dozen entries and predates it — so the
+new instance was corrected and the rest left for a single pass. What the figure was asserting, that
+none of them lacks a portrait, is true either way.
+
+## Merged
+
+Corrections pushed to `research-photos` as e2138fe1, then #439 merged. `build.py` clean;
+`check_data.py` and `check_contrib.py` exit 0; `check_duplicates.py` returns the same four
+long-standing pairs, all genuinely separate events, with nothing new introduced.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,946 search records.** No event, photograph, officer or
+document was added or removed this pass; the only file that changed was the research log.
+
+## Still open
+
+- **The "57 regents" figure wants one cleanup pass** across the dozen or so earlier entries in
+  `SGA-60-AGENT-INFO.md` that repeat it. Only the 12 September entry was corrected here.
+- **A note on the pull request comment.** `AGENT-LANDING.md` asks that the "Generated by" line be
+  stripped from comments as well as pull request bodies. On this pass it could not be: the line is
+  appended by the platform after the comment is written, and a direct API edit removing it did not
+  take. It is on the pull request comment only — no commit, no file, nothing in the repository or
+  the generated site carries it, and the merge commit and all branch commits are authored `SGA 60`.
+  Recording it so the next pass does not spend time rediscovering it.
+- The standing brief should drop #6, #7 and #8, closed on 18 August, and its instruction to run
+  `gh auth setup-git` — `gh` is not installed here, now the fifth pass to record it. Git is
+  credentialed and the GitHub tools serve for pull requests.
+- Everything carried forward from 11 and 12 September stands unchanged: the 150-row blank-Pass
+  list; the 18 legislation files with no text layer; the 728 legislation entries pointing at a
+  landing page rather than a PDF; the two Herald items on how Joe Rains's term ended; Charlie
+  Harris's missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account
+  of `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation whose outcome is not in
+  the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three
+  advance-notice entries worth corroborating from the *Talisman*; and Richey's five words on the
+  2015 event page.
