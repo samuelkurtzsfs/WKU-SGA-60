@@ -1,3 +1,118 @@
+# 12 September 2026, night — a run that added nothing, and proved it was right not to
+
+One pull request was open, #434, the photograph routine's rolling one, and unlike the empty
+branch the 11 September pass found, this one carried something: 68 lines appended to
+`SGA-60-AGENT-INFO.md` and nothing else. `git diff origin/main...research-photos -- data/`
+came back empty, and the handoff document is not rendered into `site/`, so merging it
+published no historical claim to the live site. Access was proved the way `AGENT-LANDING.md`
+says to, with a dry-run push returning `* [new branch] HEAD -> access-probe`. `gh` is still
+not installed in this container.
+
+A documentation-only diff is the easy thing to wave through, and it is the wrong thing to
+wave through, because that entry is what steers the next run. A run that writes off its
+main source as unreachable has given every later run a reason not to try. So the negative
+claims were treated as the load-bearing ones.
+
+## Every claim in the entry, checked
+
+Sixteen of them, all held. The three that mattered:
+
+**No president or regent is without a portrait.** All 73 `leaders` entries — 66 president,
+6 regent, 1 unresolved — swept against `data/photos.json`. Zero without a portrait, in any
+of the 61 years, and nothing the overlay references is missing from disk.
+
+**The orphan audit is exact.** 1,187 files under `data/photos/`, 1,155 referenced by the
+overlay, 32 unreferenced. The 32 match the entry's list name for name, and the three-way
+breakdown adds up: 14 superseded by a different in-use photo of the same person and year,
+16 carrying `FACE PROVED, PERSON NOT PROVED — FOR THE EDITOR` in the finding's own
+`identification` field, 2 listed in `_do-not-use.json`. Deven Delano looked like the one
+exception and was not: his in-use file is the 1990 *Talisman* portrait and the orphan is
+the Spirit Masters scrapbook duplicate of the same man in the same year. The entry's
+conclusion — no unflagged, ready-to-merge miss in the set — is correct, and leaving all 32
+for the editor rather than publishing them was the right call.
+
+**The Cloudflare block is real, and was reproduced rather than believed.**
+`cgi/viewcontent.cgi?article=5695&context=dlsc_ua_records` returned HTTP 403 with
+`cf-mitigated: challenge`, `server: cloudflare`, and the "Just a moment" interstitial in the
+body. The landing page `dlsc_ua_records/4686/` returned 200 and 37 KB over the same egress
+in the same minute. That is exactly the distinction the entry draws: the index is open and
+the PDFs are shut. The zero-photograph result is an honest account of a closed route, not a
+run that stopped early.
+
+Also checked and clean: Matt Holland as Chief Justice of the Judicial Council 2006-07 and
+Stuart Kenderes as Chief Justice 2009-10, both recorded as Senate officers in `years.json`
+and neither promoted to anything they did not hold; the Cody Cox precedent, characterised
+accurately; and the surname-only rejection of Logan Horrall across a seven-year gap, which
+applies trap 4 rather than tripping it.
+
+**The Lodmell twins survived the diff.** Carlene holds
+`1996-97-carlene-lodmell-spirit.jpg`, Darlene holds `1996-97-darlene-lodmell.jpg`, and the
+orphan is a superseded frame of Carlene rather than a crossed wire between sisters. This is
+the check worth repeating every time either name appears in a diff.
+
+## Traps
+
+Nothing tripped. No advance notice was written up as a report, because no event was added
+at all. No committee chair recorded as an officer, no surname-only match accepted, no April
+result filed into the wrong academic year, nothing touching the settled facts in §7. No
+contributor commit in the diff and no change under `data/posts/`.
+
+## Cut in the merging, not in the diff
+
+Nothing in the diff was unsupported, so nothing was cut from it. One thing was fixed in how
+it landed. Commit `28faf3cd`, a merge commit on `research-photos`, was authored
+`Claude <noreply@anthropic.com>` and was not yet in `main`. A merge commit would have
+written that name into the permanent history of an archive published under its authors'
+names — the same violation the 105-commit rewrite of 28 August cleaned out. Squashing kept
+it out, which is also the shape every commit on `main` already has. `main`'s history is
+still three authors deep, names no tooling, and the new tip is single-parent and clean.
+
+The research routines need to pass
+`-c user.name="SGA 60" -c user.email="kurtztoddsam2@gmail.com"` on **merges** as well as
+commits. A bare `git merge origin/main` is how this one got in, and it is the easiest of the
+lot to miss.
+
+## Checks
+
+`build.py` clean; `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+exits 1 on the same four pairs as the last two nights — the 1997-98 designated driver cards,
+the 1991-92 student regent advisory committee bill, the 1971-72 Kentucky Civil Liberties
+Union action, and the 2003-04 plus/minus grading legislation. All four are already on `main`
+and untouched by this branch, and all four are genuine two-stage business: introduced then
+failed, planned then endorsed, opposed then passed, approved then distributed. Nothing to
+merge.
+
+## Counts
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810
+people, 2,615 of them (98%) carrying an account of what the person did. 308 documents,
+1,111 legislation files, 4,946 search records.** 1,187 image files, 1,155 in use. No event,
+photograph, officer or document was added, altered or deleted tonight by either the branch
+or this pass.
+
+## Still open
+
+- **#434 stays open** as the photograph routine's rolling landing place, now merged and
+  even with `main`.
+- The entry describes itself as landing in a §8.3 that does not exist; it is at the end of
+  §8. Minor, and not worth a correction commit on its own.
+- The standing brief still opens by telling the editor to run `gh auth setup-git`, and `gh`
+  is not installed here. Fifth pass to record it. Git is credentialed and the GitHub tools
+  serve for pull requests.
+- The photograph routine has now returned nothing three runs running, not through idleness
+  but because the PDF route is shut and the officer sweep is exhausted. The 32 flagged
+  finds under `data/photo-finds/` are the only portrait work left that does not need the
+  network, and every one of them needs the editor's own judgement, which is what its brief
+  asks for. That is the natural next job.
+- Carried forward unchanged: the 150-row blank-Pass list; the 18 legislation files with no
+  text layer; the 728 legislation entries pointing at a landing page rather than the PDF;
+  the two Herald items on how Joe Rains's term ended; Charlie Harris's missing portrait;
+  the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account of
+  `herald-index-full.json`; the eleven paused routines and the two that run; Mary Fyfe; the
+  1999-00 Coates investigation whose outcome is not in the record; the pre-2000 legislation
+  gaps; the 1987 evaluations wording; the twenty-three advance-notice entries worth
+  corroborating from the *Talisman*; and Richey's five words on the 2015 event page.
+
 # 11 September 2026, night — what the bill said would happen, written as though it had
 
 One pull request was open, #418, the photograph routine's rolling one, and it is the same
