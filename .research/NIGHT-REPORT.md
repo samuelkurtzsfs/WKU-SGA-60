@@ -1,3 +1,83 @@
+# 12 September 2026, evening — nine entries that read a second reading as a vote
+
+No pull request was open. Push access was proved the way `AGENT-LANDING.md` says to, with a
+dry-run returning `* [new branch] HEAD -> access-probe`; `gh` is still absent from the
+container, so the GitHub MCP tools did the pull request work. The three stale branches the
+standing brief names, #6, #7 and #8, have been closed for weeks and the repository is now
+past #442.
+
+Every `research-*` branch was compared against `main` directly rather than against the merge
+base, which is the lesson this morning's run paid for. `research-photos` is three commits
+ahead and carries nothing: its Blake Graham work reached `main` at 577285d8 and the only
+textual difference left is the hundred lines of night report `main` has and it does not. The
+older branches from 4 August and late August have no merge base with `main` at all and are
+the superseded lineage `AGENT-LANDING.md` warns against merging. So: nothing to merge, and
+the run was spent on what is already published instead.
+
+## The portrait merged three hours earlier
+
+Blake Graham's portrait was checked because it had reached the live site without a second
+pair of eyes on it. It holds. The file is a real JPEG, 1200x800, which is exactly the
+`SAV2500-1200x800.jpg` derivative the Herald serves, and the caption on
+`wkuherald.com/88699` names him: chief justice, giving his final report at the meeting of
+11 November 2025 in the Senate Chambers, graduating after the fall semester, photographed by
+Jonah Savage. The stored credit paraphrases that and does not exceed it. The file is not
+orphaned — it renders on his person page, the officers page and the 2025-26 year page.
+
+## The blank Pass line, swept rather than met one at a time
+
+Five editor passes in two days have each found the same error singly: an entry that reports
+a vote its own bill sheet does not record. So all 194 legislation-sourced entries were read
+against the 189 bill sheets mirrored locally, and nine were corrected.
+
+Two false starts are worth recording, because both would have produced confident nonsense.
+A plain text search for a mark after `Pass` fails twice over: it stops at the letter it is
+looking for, so bill 97-3-F's `Pass _X_` reads as blank, and on the 2000s template the
+labels and the values sit in separate text blocks, so `Pass:` is followed in the text stream
+by `Fail:` and every value is invisible. Aligning label to value by y-coordinate fixes both.
+What nothing fixes is the third problem: **a handwritten tick is not in the text layer at
+all.** Bills 03-04-F and 04-07-S read blank and visibly carry one. So a blank cell is a lead
+and never a finding, and every correction below was made only after looking at the page
+image.
+
+Nine entries were trimmed to what their documents prove. The clearest is 2000-01's Meet Your
+Dean Reception, which said flatly "It passed on 17 October 2000": the form gives a first
+reading on 10 October and a second on 17 October and leaves pass, fail and other blank, so
+the date had been read off the second-reading line and promoted to a vote. The 2001 health
+fair bill records a first reading and nothing else, and its $582 is now sought rather than
+allocated. The 1999 Camp Fair bill has both readings dated 8 December 1998 and no vote. The
+six others are 2006-07, where the surviving copies are blank across the year and five titles
+asserted outcomes their own bodies had already correctly called proposals — organizational
+aid that "went out", Buy-a-Book that "put $2,000 into students' hands", a team "entered", a
+Dialogue Day "revived", an SGA Week "established". The bodies were right and the titles have
+been brought to them.
+
+Nothing was cut. Every one of the nine keeps its facts, its figures and its source; only the
+claim that the thing was carried has gone. Where an entry had independent evidence that a
+programme actually ran — the 2007 study abroad scholarships, whose application forms survive
+and which SGA still described in 2009 — it was left alone, because that argument rests on
+the forms and not on the vote line.
+
+## What was checked and left alone
+
+The four pairs `check_duplicates.py` reports are all genuinely distinct stages of a sequence:
+the Civil Liberties Union planning action in February 1972 and Associated Students endorsing
+the suit in March; the student regent advisory committee introduced in January 1992 and
+failing after amendment in February; the designated driver cards funded in November 1997 and
+distributed in February 1998; and four separate steps of the 2003-04 plus/minus fight. None
+was merged.
+
+Bills 97-3-F, 03-03-S, 01-1-F, 03-02-F, 03-04-F, 04-07-S, 99-15-F and 99-2-F were all
+confirmed to carry a real pass mark, by date or by tick, and their entries stand as written.
+The 2006-07 resolution on I-A football and bill 99-16-S were flagged by the sweep and needed
+nothing: both already say in their own text that the fields are blank.
+
+`build.py`, `check_data.py` and `check_contrib.py` all complete clean: 61 years, 1,964
+events, 60 presidents, 2,652 recorded terms held by 1,810 people, 1,833 pages.
+
+
+---
+
 # 12 September 2026, morning — nothing to merge, and an editor's own correction withdrawn
 
 No pull request was open at the start of this run. The three stale ones the standing brief
@@ -22158,6 +22238,106 @@ photograph, officer or document was touched. One title changed.
   carries that designator, so the file is either unindexed or named differently. Worth a look.
 - The standing brief should drop #6, #7 and #8 and the `gh auth setup-git` line.
 - Carried forward unchanged: the "57 regents" figure wanting one cleanup pass across
+  `SGA-60-AGENT-INFO.md`; the two Herald items on how Joe Rains's term ended; Charlie Harris's
+  missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account of
+  `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation whose outcome is not in
+  the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three
+  advance-notice entries worth corroborating from the *Talisman*; and Richey's five words on the
+  2015 event page.
+
+# 12 September 2026, evening — a portrait credit that quoted its caption whole
+
+One pull request was open, #441, the photograph routine's `research-photos` carrying a single
+new portrait: Blake Graham, chief justice for 2025-26. It was merged, after one cut.
+
+Access was proved the way `AGENT-LANDING.md` says to, with a dry-run push returning
+`* [new branch] HEAD -> access-probe`. `gh` is still not installed, so the GitHub MCP tools
+did the pull request work. The standing brief's three stale pull requests, #6, #7 and #8,
+were checked once more and are still closed, unmerged, since 18 August; the brief should
+drop them, as the last four reports have now said.
+
+## What was verified
+
+The diff carried exactly one new factual claim, so it was checked entire rather than sampled.
+
+The cited report was opened and read. The caption is verbatim as the routine quoted it, and it
+sits inside the same `<figure id="attachment_88705">` as the image it describes, so it cannot
+be read onto a neighbouring picture. That distinction is not academic here: reading a caption
+onto the wrong frame is exactly how the LaCivita identification went wrong in August, and the
+settled-facts note exists because of it.
+
+The committed file is byte-identical to the frame the paper published, `md5
+e78e4d1598fff1530c3a772c6cf6fa02` for both `data/photos/2025-26-blake-graham.jpg` and the
+Herald's `SAV2500-1200x800.jpg`. A real JPEG, 1200x800. "Blake Graham" matches the 2025-26
+`organization` entry exactly, so the portrait attaches where it should, and that entry rests
+on the executive cabinet minutes of 12 August 2025, not on this photograph. No second Graham
+portrait exists; Johnny Graham of 1967-68 and Steven Graham of 1996-97 are other people,
+already in the file, untouched.
+
+Nothing tripped the traps. The report is a report, not an advance notice — the paper covered a
+meeting that had happened and photographed it. No committee chair was promoted to officer. The
+caption gives a full name and an office, so nothing was matched on a surname. No changed
+surname, no election filed to the wrong academic year, nothing touching the settled facts, no
+contributor commits in the diff. Every commit is authored by `SGA 60` and none carries tool
+attribution.
+
+## What was cut
+
+**The photo credit reproduced the Herald's caption in full, thirty-one words**, against the
+under-fifteen-word limit. This was not a cosmetic point. The credit renders onto the live site
+at `site/o/blake-graham.html`, and it was the only credit of its year doing it: the other forty
+2025-26 entries all paraphrase, in the form "the caption names ...". Rewritten to that house
+form, keeping every identifying fact — who the caption names, in what office, at which meeting,
+and the photographer's credit. The photograph itself is unchanged and its identification was
+never in doubt.
+
+Worth recording for the routine, since it will meet this again: quoting a caption whole is the
+natural thing to do when the caption *is* the evidence of identity. The evidence belongs in the
+pull request report, where the routine did put it. The published credit paraphrases.
+
+**Two article dates in the handoff notes were wrong.** The note dated "SGA supports Go With the
+Flow program" to 11 November; that is the meeting it covers, and the paper published it on the
+12th (`article:published_time 2025-11-12T06:25:14Z`). The succession story it cites, twice, as
+"12 November" published on the 13th (`2025-11-13T06:09:39Z`), reporting the council's vote of
+the 12th — which is how `years.json` already labels it. Left alone, these would have sent a
+later run to the wrong issue. The credit's own date, 12 November, was right.
+
+The Xavier Spiess photograph was correctly held back rather than forced: `check_data.py` refuses
+a portrait for someone with no officer entry, and he has none of his own yet. That is the roster
+routine's to add.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four long-standing pairs — the designated driver cards, the student regent
+advisory committee bill, the Civil Liberties Union lawsuit and plus/minus grading. All four are
+on `main` already, none is this branch's business, and each is a genuinely sequential pair: a
+bill introduced and then failing after amendment, a lawsuit planned and then endorsed, grading
+opposed and then legislated against, cards announced in November and distributed in February.
+Nothing merged.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,946 search records.** One portrait added; no event,
+officer or document touched.
+
+## Still open
+
+- **The attribution footer returns after it is stripped, but the session link does not.**
+  `AGENT-LANDING.md` says to remove the "Generated by Claude Code" line with an update call.
+  Tested both ways this run. On the review comment on #441 and on the body of #442, a direct
+  REST patch removing the line applied — `updated_at` moved — and the bare line came back. It
+  is appended by the platform on every write, not written by the model, and the drop box that
+  would bypass it (`SGA60_SITE`, `SGA60_RESEARCH_TOKEN`) is not configured in this container.
+  **The session link is a different matter and the patch does hold.** #442 was opened carrying
+  `.../claude.ai/code/session_0184Fy...`; after the patch the footer is the bare form with no
+  session identifier, and it stayed bare. Since `CLAUDE.md` names session links specifically,
+  that is the half worth doing, and it is worth doing on every pull request and comment a run
+  opens. The repository itself is clean either way: no commit, no data file and no built page
+  carries attribution. Only the GitHub conversation does. `AGENT-LANDING.md` should be amended
+  to say so — strip the link, expect the line.
+- Carried forward unchanged: the scanned half of the blank-Pass list; the 18 legislation files
+  with no text layer; the 728 legislation entries pointing at landing pages rather than PDFs; the
+  2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure wanting a cleanup pass across
   `SGA-60-AGENT-INFO.md`; the two Herald items on how Joe Rains's term ended; Charlie Harris's
   missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account of
   `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation whose outcome is not in
