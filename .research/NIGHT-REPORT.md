@@ -1,3 +1,83 @@
+# 12 September 2026, evening — nine entries that read a second reading as a vote
+
+No pull request was open. Push access was proved the way `AGENT-LANDING.md` says to, with a
+dry-run returning `* [new branch] HEAD -> access-probe`; `gh` is still absent from the
+container, so the GitHub MCP tools did the pull request work. The three stale branches the
+standing brief names, #6, #7 and #8, have been closed for weeks and the repository is now
+past #442.
+
+Every `research-*` branch was compared against `main` directly rather than against the merge
+base, which is the lesson this morning's run paid for. `research-photos` is three commits
+ahead and carries nothing: its Blake Graham work reached `main` at 577285d8 and the only
+textual difference left is the hundred lines of night report `main` has and it does not. The
+older branches from 4 August and late August have no merge base with `main` at all and are
+the superseded lineage `AGENT-LANDING.md` warns against merging. So: nothing to merge, and
+the run was spent on what is already published instead.
+
+## The portrait merged three hours earlier
+
+Blake Graham's portrait was checked because it had reached the live site without a second
+pair of eyes on it. It holds. The file is a real JPEG, 1200x800, which is exactly the
+`SAV2500-1200x800.jpg` derivative the Herald serves, and the caption on
+`wkuherald.com/88699` names him: chief justice, giving his final report at the meeting of
+11 November 2025 in the Senate Chambers, graduating after the fall semester, photographed by
+Jonah Savage. The stored credit paraphrases that and does not exceed it. The file is not
+orphaned — it renders on his person page, the officers page and the 2025-26 year page.
+
+## The blank Pass line, swept rather than met one at a time
+
+Five editor passes in two days have each found the same error singly: an entry that reports
+a vote its own bill sheet does not record. So all 194 legislation-sourced entries were read
+against the 189 bill sheets mirrored locally, and nine were corrected.
+
+Two false starts are worth recording, because both would have produced confident nonsense.
+A plain text search for a mark after `Pass` fails twice over: it stops at the letter it is
+looking for, so bill 97-3-F's `Pass _X_` reads as blank, and on the 2000s template the
+labels and the values sit in separate text blocks, so `Pass:` is followed in the text stream
+by `Fail:` and every value is invisible. Aligning label to value by y-coordinate fixes both.
+What nothing fixes is the third problem: **a handwritten tick is not in the text layer at
+all.** Bills 03-04-F and 04-07-S read blank and visibly carry one. So a blank cell is a lead
+and never a finding, and every correction below was made only after looking at the page
+image.
+
+Nine entries were trimmed to what their documents prove. The clearest is 2000-01's Meet Your
+Dean Reception, which said flatly "It passed on 17 October 2000": the form gives a first
+reading on 10 October and a second on 17 October and leaves pass, fail and other blank, so
+the date had been read off the second-reading line and promoted to a vote. The 2001 health
+fair bill records a first reading and nothing else, and its $582 is now sought rather than
+allocated. The 1999 Camp Fair bill has both readings dated 8 December 1998 and no vote. The
+six others are 2006-07, where the surviving copies are blank across the year and five titles
+asserted outcomes their own bodies had already correctly called proposals — organizational
+aid that "went out", Buy-a-Book that "put $2,000 into students' hands", a team "entered", a
+Dialogue Day "revived", an SGA Week "established". The bodies were right and the titles have
+been brought to them.
+
+Nothing was cut. Every one of the nine keeps its facts, its figures and its source; only the
+claim that the thing was carried has gone. Where an entry had independent evidence that a
+programme actually ran — the 2007 study abroad scholarships, whose application forms survive
+and which SGA still described in 2009 — it was left alone, because that argument rests on
+the forms and not on the vote line.
+
+## What was checked and left alone
+
+The four pairs `check_duplicates.py` reports are all genuinely distinct stages of a sequence:
+the Civil Liberties Union planning action in February 1972 and Associated Students endorsing
+the suit in March; the student regent advisory committee introduced in January 1992 and
+failing after amendment in February; the designated driver cards funded in November 1997 and
+distributed in February 1998; and four separate steps of the 2003-04 plus/minus fight. None
+was merged.
+
+Bills 97-3-F, 03-03-S, 01-1-F, 03-02-F, 03-04-F, 04-07-S, 99-15-F and 99-2-F were all
+confirmed to carry a real pass mark, by date or by tick, and their entries stand as written.
+The 2006-07 resolution on I-A football and bill 99-16-S were flagged by the sweep and needed
+nothing: both already say in their own text that the fields are blank.
+
+`build.py`, `check_data.py` and `check_contrib.py` all complete clean: 61 years, 1,964
+events, 60 presidents, 2,652 recorded terms held by 1,810 people, 1,833 pages.
+
+
+---
+
 # 12 September 2026, morning — nothing to merge, and an editor's own correction withdrawn
 
 No pull request was open at the start of this run. The three stale ones the standing brief
