@@ -92,8 +92,10 @@ or this pass.
 
 ## Still open
 
-- **#434 stays open** as the photograph routine's rolling landing place, now merged and
-  even with `main`.
+- **No pull request is open.** #434 closed when it merged, so unlike the previous two
+  nights the photograph routine has no standing landing place; it will open a fresh rolling
+  pull request on its next run, which is the ordinary behaviour. The `research-photos`
+  branch survives on origin, content-identical to `main`.
 - The entry describes itself as landing in a §8.3 that does not exist; it is at the end of
   §8. Minor, and not worth a correction commit on its own.
 - The standing brief still opens by telling the editor to run `gh auth setup-git`, and `gh`
