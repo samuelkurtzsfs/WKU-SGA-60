@@ -22044,3 +22044,123 @@ document was added or removed this pass; the only file that changed was the rese
   the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three
   advance-notice entries worth corroborating from the *Talisman*; and Richey's five words on the
   2015 event page.
+
+---
+
+# 12 September 2026, midday — the blank-Pass lead closed for the born-digital era
+
+## What was reviewed
+
+Nothing was waiting. The pull request list is empty; `main` had not moved since #439 merged at
+09:26 and was reviewed the same hour; nothing has reached the live site unreviewed. The three
+pull requests the standing brief still calls stale — #6, #7 and #8 — have been closed since
+18 August, now the sixth pass to record it, along with its instruction to run `gh auth setup-git`
+when `gh` is not installed here. Git is credentialed and the GitHub tools serve for pull requests.
+
+So the pass went to the lead standing at the top of the last three reports: the 150-row blank-Pass
+list, which #432 recorded rather than acted on because a blank vote line means one thing on a
+hand-marked scan and another on a born-digital form, and separating the two eras is the whole job.
+It needs no network.
+
+## A stale clone that reads exactly like a regression
+
+Worth recording first, because it cost this pass twenty minutes and would cost any other pass the
+same. The container's clone carried a local `main` **35 commits behind `origin/main`**, and
+`git checkout main` moves to it silently. Against that tree `check_duplicates.py` returns **six**
+pairs rather than four, and the two extra ones carry the exact over-claimed 1991-92 titles that
+#430 reported rewriting — "ASG bill funds a 'President for a Day' fundraiser" and "ASG bill funds
+renovation of its own chambers". That reads unmistakably as a merged correction reverted on the
+trunk, and it is not: #430 is an ancestor of `origin/main` and its rewrites are intact. The
+archive was never wrong; the clone was old.
+
+Two things made it worse and are worth knowing. A `grep` for a title containing a quoted phrase
+finds nothing in `years.json` unless the pattern allows for JSON's backslash-escaped quotes, so a
+first check appeared to confirm the corrections were present when it was matching nothing at all.
+And `git status` reports a stale checkout as clean, because it is clean — against the wrong base.
+`git rev-list --count main..origin/main` before anything else is the cheap guard. This is the same
+family as the note #437 left about merge-base diffs, and the same answer: compare against
+`origin/main`, not against whatever `main` points at.
+
+## The era split, and what it settles
+
+Separating the two eras turned out not to be a judgement call. Matching event citations to the
+mirrored PDFs by bill designator and session gives 138 events tied one-to-one to a document.
+Measuring what fraction of each document's first page is covered by a single image splits them
+without a borderline case:
+
+| decade | events | full-page scan | born-digital |
+|---|---|---|---|
+| 1980s | 32 | 32 | 0 |
+| 1990s | 47 | 47 | 0 |
+| 2000s | 16 | 16 | 0 |
+| 2010s | 20 | 0 | 20 |
+| 2020s | 23 | 0 | 23 |
+
+Every pre-2010 document in the set is a scan whose text layer is OCR, and the OCR damage is
+visible in the numbers too — 27 of the 32 1980s documents have more than eight per cent of their
+alphabetic tokens broken into single characters. A blank Pass line there proves nothing, exactly
+as #432 judged. Every 2010s and 2020s document is vector text where the Pass line is read as
+printed. That is the actionable half.
+
+**On the born-digital half the archive is clean.** Of 65 modern events citing a bill or resolution
+by designator, 43 match a mirrored document one-to-one, 15 resolve once bill and resolution
+sharing a number are told apart by the citation's own label, and 7 cite sessions never posted on
+wku.edu (2013-14 through 2015-16, and 2020-21 — the gaps `CLAUDE.md` already names). Across all of
+them, **not one entry asserts an outcome that its document fails to record.** Every entry claiming
+passage is backed by a Pass line that carries it — 30-0 for the Power UP forum, "Yes" for the legal
+observer training, "Y" for Greeks Go Green, "YES" for the Black History trivia night — and every
+entry whose document records nothing already says so in its own body. The three earlier passes
+that corrected this class of defect (#419, #421, #430, #432) appear to have cleared the modern era
+between them.
+
+## The one thing that was wrong
+
+**2019-20, Bill 5-20-S.** The body is exact and states its own limit: the posted form gives two
+readings and "carries no vote line, so the archive cannot say it passed." The **title** read
+*Five hundred dollars voted to the 19th Healthy Days Fair* — an outcome the document does not
+record, contradicting the body three words in, on the line a reader scanning the year page and the
+timeline actually sees. Retitled to *Five hundred dollars sought for the 19th Healthy Days Fair*.
+The body is untouched; nothing sourced was lost. Its own sibling from the same day, Bill 7-20-S,
+already carries the correct non-outcome voice, which is what the fix follows.
+
+This is the defect #430 described as bills "sitting behind titles that read as outcomes", and it
+is the reason a scan of bodies alone would not have found it. Three other entries trip the same
+test and were checked and left alone: the 1981 Zacharias resolution, whose body disclaims only who
+organised the rally and not the vote; the 2021-22 amendment vetoed the same day, whose 31-0 is in
+the bill sheet's **Other** field exactly as #432 established; and the 2023-24 DEI Week funding,
+whose disclaimer is the advance-notice caveat about the week itself, not about the money.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four long-standing pairs — the designated driver cards, the student regent
+advisory committee bill, the Civil Liberties Union lawsuit and plus/minus grading — all genuinely
+sequential events, unchanged by the retitling. The corrected entry was read back off the built page.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,946 search records.** No event was added or removed; no
+photograph, officer or document was touched. One title changed.
+
+## Still open
+
+- **The scanned half of the blank-Pass list stands, and should probably stay standing.** The
+  1980s, 1990s and 2000s rows cannot be settled by reading the text layer, because on those
+  documents the vote is written in by hand and the OCR is unreliable. They need the page images
+  read, not a better regex. Recording the era split so no later pass re-derives it.
+- **The 18 legislation files with no text layer**, unchanged: `1978-79/dc_bill_229`,
+  `1979-80/dc_resolution_404`, `1996-97/dc_resolution_396`, `2001-02/dc_bill_245`,
+  `2001-02/dc_resolution_376`, `2003-04/dc_bill_233`, `2006-07/dc_resolution_361`, and eleven in
+  `2012-13`.
+- **728 of the 1,111 legislation entries point at a landing page rather than the PDF.** Resolving
+  those source URLs is still the single change that would widen this check most.
+- **One indexing gap found in passing.** The 2012-13 entry for Resolution 5-13-S cites
+  `data/legislation/2012-13/r5-13-s.pdf` in its own label, but no entry in `legislation.json`
+  carries that designator, so the file is either unindexed or named differently. Worth a look.
+- The standing brief should drop #6, #7 and #8 and the `gh auth setup-git` line.
+- Carried forward unchanged: the "57 regents" figure wanting one cleanup pass across
+  `SGA-60-AGENT-INFO.md`; the two Herald items on how Joe Rains's term ended; Charlie Harris's
+  missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account of
+  `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation whose outcome is not in
+  the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three
+  advance-notice entries worth corroborating from the *Talisman*; and Richey's five words on the
+  2015 event page.
