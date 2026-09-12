@@ -4740,6 +4740,74 @@ No files changed under `data/photos/` or `data/photos.json` this run.
 data (61 years, 60 presidents, all still portrayed; 12-year
 year-photograph gap unchanged). Landed on `research-photos`.
 
+**A 12 September 2026 run (photograph agent, scheduled).** Re-checked
+priorities one and two first: Nick Todd, Katie Dawson, Jeanne Johnson and
+Reagan Gilley each still carry a portrait, and a full sweep of every
+`leaders` entry against `data/photos.json` found zero presidents or
+student regents without one, across all 61 years — same result as every
+run since 24 August.
+
+Independently reconfirmed, rather than taking the last entry's word for
+it, that `digitalcommons.wku.edu/cgi/viewcontent.cgi` is still
+Cloudflare-blocked: tested against three different articles (a
+known-good 1966 Herald PDF already cited in `data/years.json`, and the
+1994 and 2003 Talisman yearbooks), with the documented `Sec-Fetch-*`
+headers, a full browser `User-Agent`, and both a 90-second and a
+150-second backoff between attempts. Every attempt returned HTTP 403
+with the same Cloudflare "Just a moment..." interstitial
+(`cf-mitigated: challenge`, demanding `Sec-CH-UA-*` Client Hints no
+scripted client sends). Also re-tried the `web.archive.org`
+Wayback-mirror route `_brief.md` documents: plain HTTP is refused
+outright by this session's own egress policy, and HTTPS resets
+mid-handshake (`ws_closed_mid_exchange`), matching the 11 September
+entry above and the intermittent block §8.1 already records. Built a
+headless Chromium (Playwright, the pre-installed `/opt/pw-browsers`
+binary) with the session's proxy configured explicitly
+(`--proxy-server`, certificate errors ignored, HTTP/2 disabled) to rule
+out a fixable proxy-flag problem before writing the route off again: it
+could not complete a connection to any host at all, including
+`example.com`, so this is a proxy/browser incompatibility in this
+environment and not something a header or launch flag can fix. The PDF
+route is closed again today.
+
+Went further than the last entry on the `data/photo-finds/` discovery:
+rather than only flagging that operation's existence, audited all 32
+files that exist under `data/photos/` but are not referenced anywhere in
+`data/photos.json` (computed by diffing the directory listing against
+every `file` value in the overlay). Every one resolved to a case that
+operation's own rules already cover: (1) superseded by a different,
+already-published photo of the same person and year — Janice Berkshire,
+Sally Chenault, Dan Knowles, Dwight Adkins, Deanna Mills, Jeff Welch,
+Mark Miller, Mistianna Holcomb, Deven Delano, Jason Loehr, Carlene
+Lodmell, Brent Ditto, Joe Morel and Evelina Petkova all already carry a
+different, in-use portrait for the same (year, name); (2) explicitly
+marked `FACE PROVED, PERSON NOT PROVED — FOR THE EDITOR` in the
+finding's own `identification` field — Debbie Thomas, Frank Miller,
+Crystal Smith, Nicki Jerome, John Chestnut, Grace Hancock, Amy Renigar,
+Kristi Myers, both Lori Doolin frames, Curtis Street, Leigh Bakken, Bill
+Brown, Mark Page, Heather Francis and Keanan Noel Cortney; or (3) listed
+outright in `_do-not-use.json` — Logan Horrall (a surname-only match
+across a seven-year gap, explicitly unproven) and Blake Bowden
+(correctly identified, but the only photograph is from an unrelated
+Herald feature on Black students' hair, the same "identified but out of
+context" reason `_do-not-use.json` already gives for withdrawing Cody
+Cox's photo). No file in this set was a genuine unflagged, ready-to-merge
+miss. Nothing added to `data/photos.json` from this operation, and
+nothing should be without the editor's own review — that is what its own
+brief asks for.
+
+Searched `wkuherald.com`'s WP-JSON API directly for two titled-office
+names the 11 September sweep's list of 67 did not include — Matt Holland
+(Chief Justice, 2006-07) and Stuart Kenderes (Chief Justice, 2009-10) —
+checking full article text and featured-image captions, not just
+keyword hits. Neither produced a photograph naming the person.
+
+No files changed under `data/photos/` or `data/photos.json` this run.
+`build.py` and `check_data.py` both pass clean against the unchanged
+data (61 years, 60 presidents, all still portrayed; 12-year
+year-photograph gap unchanged). Merged `origin/main` before starting.
+Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
