@@ -4811,8 +4811,16 @@ Landed on `research-photos`.
 **A second 12 September 2026 run (photograph agent, scheduled), later the
 same day.** Re-checked priorities one and two first, same as every run
 since 24 August: Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley
-each still carry a portrait, and all 60 presidents and 57 regents across
-61 years still have one. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+each still carry a portrait, and across 61 years no president and no
+student regent lacks one. (Editor's note, 12 September: the portrait
+coverage is confirmed, but the "57 regents" figure this entry originally
+carried, repeated from earlier entries, does not come from the data.
+`build.py`'s own ordinal logic counts 60 presidents and **39** people in
+a regent capacity; regent-capacity terms number 42. Neither reading gives
+57. The figure has drifted through roughly a dozen entries above and
+wants one pass to correct; what it was asserting — that none of them
+lacks a portrait — is true either way.)
+`digitalcommons.wku.edu/cgi/viewcontent.cgi`
 was tested directly at the start and end of this run (two attempts,
 90 seconds apart) and returned the same Cloudflare `cf-mitigated:
 challenge` interstitial both times — the window from the entry directly
@@ -4837,9 +4845,22 @@ off search space rather than opening it:
   three unrelated results for April 2010. The site's archive evidently
   was not backfilled with content from those years when it moved to
   WordPress. That rules out wkuherald.com, not just Herald-on-TopSCHOLAR,
-  as a route to 2005-06, 2006-07, 2008-09 and most of 2009-10 — those four
-  of the twelve gap years now depend entirely on `viewcontent.cgi`
-  reopening, with no fallback host. 2003-04 and 2000-01 remain reachable
+  as a route to 2005-06, 2006-07, 2008-09 and most of 2009-10.
+  **Editor's correction, 12 September: the sentence that followed here —
+  that those four years "now depend entirely on `viewcontent.cgi`
+  reopening, with no fallback host" — was cut as over-claimed, and this
+  archive's own citations are what refute it.** `years.json` carries 56
+  events dated 2005 to 2010 sourced through the Wayback Machine's
+  snapshots of `wkuherald.com` and `media.www.wkuherald.com`, covering
+  2006, 2007, 2008 and 2009 — that is a working fallback host for exactly
+  these years, and it is the route the text research already took when the
+  live site came up empty. What this run established is narrower and still
+  useful: the *live* wkuherald.com WP archive does not serve those years,
+  so a future run should go to `web.archive.org` for them rather than
+  querying the WP-JSON API and concluding nothing exists. Whether those
+  snapshots preserve usable *images* is untested — the text citations
+  prove the host, not the photographs. Untested is not the same as closed.
+  2003-04 and 2000-01 remain reachable
   through wkuherald.com's 2002-2005 coverage in principle, though the
   specific election-week searches run today (see below) found nothing
   usable there either.
@@ -4862,19 +4883,30 @@ inquiry:
   cabinet" with no individual named) or carried no caption at all.
   Nothing added.
 - The Blake Graham (Chief Justice, 2025-26, no portrait) search surfaced
-  a live succession this record does not yet reflect: a wkuherald.com
-  report dated 13 November 2025, "SGA Judicial Council elects new chief
-  justice," with three individually captioned photographs, names
-  **Sophie Stirling** (Associate Justice) elected to succeed Graham as
-  Chief Justice effective 18 November 2025, defeating **Xavier Spiess**
-  (also an Associate Justice) 3-1. Neither Stirling nor Spiess appears
-  anywhere in 2025-26's `organization` block in `data/years.json`, so
-  this run could not attach a photo — `photos.json` entries require a
-  matching name already on record, and this agent does not edit
-  `years.json`. Flagging for whichever routine maintains the current
-  decade's organization roster: once Stirling and/or Spiess are
-  added to 2025-26's senate/judicial officers, both have clean,
-  individually-named portraits ready and waiting.
+  the November 2025 chief justice succession: a wkuherald.com report dated
+  13 November 2025, "SGA Judicial Council elects new chief justice," with
+  three individually captioned photographs, names **Sophie Stirling**
+  (Associate Justice) elected to succeed Graham, sworn in 18 November
+  2025, defeating **Xavier Spiess** (also an Associate Justice) 3-1.
+  **Editor's correction, 12 September: this run filed the succession as
+  something "this record does not yet reflect" and flagged it for the
+  roster routine. That was wrong on every count, and it was wrong against
+  the tree this very note was committed onto** — the run merged
+  `origin/main` before writing it. The record already holds all of it:
+  Stirling and Spiess both appear in 2025-26's `organization` block
+  (Stirling as Chief Justice in the senate officers list, alongside
+  Graham); the vote is already written up as its own event, "Judicial
+  Council elects Stirling chief justice 3-1," dated 12 November 2025 with
+  the swearing-in on the 18th; the Senate's constitutional waiver letting
+  both stand is a second event; and Graham's own profile narrates the
+  succession. Stirling has carried a portrait since an earlier run
+  (`2025-26-sophie-stirling.jpg`, captioned from the Herald of 5 April
+  2026). Nothing here needs adding to the roster, and no routine should
+  spend a run on it. Spiess is on record in the year's events but holds no
+  portrait; that, and Graham's, are the only live items in this bullet.
+  The lesson for future photograph runs is the cheap check this one
+  skipped: grep `years.json` and `photos.json` for a name before
+  reporting it missing.
   (`https://wkuherald.com/88753/news/sga-judicial-council-elects-new-chief-justice/`,
   Jonah Savage, wkuherald.com, 13 Nov 2025.)
 
