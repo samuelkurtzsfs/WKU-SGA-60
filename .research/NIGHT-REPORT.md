@@ -1,3 +1,90 @@
+# 12 September 2026, morning — nothing to merge, and an editor's own correction withdrawn
+
+No pull request was open at the start of this run. The three stale ones the standing brief
+names, #6, #7 and #8, have long since been closed; the repository is now several hundred
+merges past them. Access was proved the way `AGENT-LANDING.md` says to, with a dry-run push
+returning `* [new branch] HEAD -> access-probe`. `gh` is still not installed in this
+container, so the GitHub MCP tools did the pull request work.
+
+`research-photos` looked like it carried 68 unmerged lines. It did not. `git diff
+origin/main...research-photos` is a merge-base diff, and it reports everything added since
+the branches last met, including what `main` has acquired in the meantime by another route.
+The photograph run's entry had already reached `main` as #434, three hours earlier.
+Diffing against `main` directly showed the branch and the trunk identical. That is the first
+lesson of the run, and it is written here because it cost most of it: **compare against
+`main`, not against the merge base, before concluding a branch holds unmerged work.**
+
+## The claims were checked anyway
+
+A documentation-only entry still steers the next run, so the 12 September photograph run's
+claims were checked against the repository even after it became clear there was nothing to
+merge. Sixteen claims, and they held.
+
+The orphan audit is exact: 1,187 files under `data/photos/`, 1,155 referenced by the
+overlay, 32 unreferenced, matching the entry's list name for name. The three-way split adds
+up — 14 superseded, 16 carrying `FACE PROVED, PERSON NOT PROVED — FOR THE EDITOR` in the
+finding's own `identification` field, 2 in `_do-not-use.json`. All 73 `leaders` records
+across 61 years carry a portrait, none missing, and Nick Todd, Katie Dawson, Jeanne Johnson
+and Reagan Gilley each still hold theirs. The Cloudflare block was reproduced rather than
+believed: `cgi/viewcontent.cgi` returned HTTP 403 with the "Just a moment" interstitial.
+Carlene and Darlene Lodmell remain two people with two files, which is the check worth
+repeating every time either name appears in a diff.
+
+## The correction this editor got wrong
+
+One claim looked loose. The entry said all 14 superseded files carry a different in-use
+portrait *for the same (year, name)*, and `1991-92-deven-delano.jpg` appeared to break it:
+the overlay carries Delano only at 1990-91. A commit was written tightening the entry to say
+so, pushed, and opened as #437.
+
+It was wrong, and the entry was right. The finding record in
+`data/photo-finds/1986-1990.json` gives `"year": "1990-91"` for that file. The `1991-92` in
+the name is the **Spirit Masters scrapbook's** year, UA12/2/16, not the archive's — a senior
+in the 1991-92 scrapbook was a junior in 1990-91, which is exactly the year and class the
+archive already records for him. The night report of a few hours earlier had reached the
+right answer and this run talked itself out of it. The commit was reverted, `research-photos`
+was returned to matching `main` exactly, and #437 was closed unmerged with the reasoning on
+it.
+
+The second lesson, then: **a photo filename's year prefix is not the archive year.** It
+records where the frame came from. Read the finding's `year` field.
+
+## Left open for the photograph routine
+
+For Delano the archive publishes the 1990 *Talisman* grid portrait, identified by its
+position in the block and by the sex-alternation of its row. The unused orphan is a studio
+portrait with a printed name block giving name, hometown, class and major. The stronger
+identification is the one not in use. That is a judgement for the routine that hunts
+portraits, not a change to make from the editor's chair, and it is recorded here rather than
+acted on.
+
+## Traps
+
+Nothing tripped, because no event was added anywhere. No advance notice written up as a
+report, no committee chair recorded as an officer, no surname-only match accepted, no April
+result filed into the wrong academic year, nothing touching the settled facts. No
+contributor commit in the diff and no change under `data/posts/`.
+
+`check_duplicates.py` flagged four pairs, all pre-existing and all genuinely sequential:
+a student regent advisory committee bill introduced on 28 January 1992 and failing after
+amendment on 6 February; designated driver cards funded in November 1997 and distributed in
+February 1998; the Civil Liberties Union planning action in February 1972 and Associated
+Students endorsing it in March; and SGA objecting to plus/minus grading in September 2003
+and passing legislation against it in October. None were combined.
+
+## Where the numbers stand
+
+`build.py`, `check_data.py` and `check_contrib.py` all ran clean.
+
+- 61 academic years, 1,964 dated and sourced events, 60 people have been president
+- 2,652 recorded terms of office, held by 1,810 people; 2,615 of them (98%) carry an account
+- 47 people recorded under more than one spelling or name
+- 61 year pages, 7 decade pages, 308 documents, 1,111 legislation files
+- search index 4,946 records
+
+Merged this run: nothing, because nothing needed it. Cut this run: one commit of the
+editor's own.
+
 # 12 September 2026, night — a run that added nothing, and proved it was right not to
 
 One pull request was open, #434, the photograph routine's rolling one, and unlike the empty
