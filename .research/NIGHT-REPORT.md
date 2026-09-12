@@ -21639,3 +21639,113 @@ the archive holds the issue as a contents listing and nothing more.
   1999-00 Coates investigation whose outcome is not in the record; the pre-2000 legislation gaps;
   the 1987 evaluations wording; the twenty-three advance-notice entries worth corroborating from
   the *Talisman*; and Richey's five words on the 2015 event page.
+
+---
+
+# Night report, 12 September: the mirrored legislation read against its entries
+
+Nothing was waiting. The pull request list was empty, `main` had not moved since #431 merged at
+21:29, and nothing reached the live site unreviewed. So this pass took the lead #431 left at the
+top of "Still open": the 1,111 mirrored legislation files have never been read against the entries
+that cite them, and reading them costs no crawl budget. #432 is the result, merged as `3dd7927a`.
+
+## The count was wrong before the check began
+
+Matching the legislation index to the events that cite it returned 1,150 linked events, and the
+first defect scan flagged rows in 1967-68, 1970-71 and 1975-76 that all pointed at the same
+1999-00 bill. That is not a subtle failure and it was the scan, not the archive. 728 of the 1,111
+`source_url` values are TopSCHOLAR landing pages rather than direct file links, and one ends in a
+trailing slash: its basename is the empty string, so every event carrying no URL matched it.
+
+Requiring a real `.pdf` basename gives the true figure. **227 events cite a mirrored legislation
+document**, one document each — 80 in the 1990s, 47 in the 2000s, 34 in the 2020s, 30 in the
+1980s, 26 in the 2010s, 10 in the 1970s. Recorded because the wrong number was the plausible one,
+and a scan that had quietly matched one file to a thousand events would have been believed.
+
+Neither `pdftotext` nor PyMuPDF is installed in these containers. `pip install pymupdf` works but
+times out on a default timeout and needs `--timeout 120`. All 1,111 files gave up a text layer;
+**18 are image scans carrying no text at all** and are beyond any scan of this kind.
+
+## Four entries corrected
+
+All four asserted an outcome their own bill sheet does not record.
+
+**Bill 98-5-F**, the 1998-99 Pride Week coffee house, was said to have *funded* it. It
+appropriates nothing: no sum appears in it, and its purpose and operative clause are both a
+co-sponsorship with the African-American Players. Pass, Fail and Other blank. This is exactly the
+defect #430 found in 1991-92, one session over.
+
+**The 2023-24 fourteen-amendment package** had thirteen bills passing "both the Senate and the
+Executive Cabinet" on 28 March 2024 and a fourteenth tabled. No bill of that session records an
+outcome — the vote lines are blank on all fifty, which is what #421 found independently for World
+Kindness Day.
+
+Cutting it would have cost the substance, so the claim was tested against better evidence: the
+constitution now in force, already mirrored in this repository. Every change the package proposed
+is in it, and each is now cited to its clause — the 2.75 executive floor at 2.2.1, the 2.5 floors
+at 3.5.1 and 4.2.3, removal after a second censure at 4.6.12, documented executive spending at
+8.2, the Speaker's appointment of committee heads at 3.8.1.2, and the Vice President and Chief
+Financial Officer throughout, with no Director of Information Technology anywhere. **Bill 30-24-S,
+the one the archive called tabled, is in the constitution too**, at 3.8.2.5, in the words it
+drafted. The same correction was applied to **22-24-S and 23-24-S**, whose changes stand at 10.1
+and 10.2.1, and to **22-22-S** in 2021-22, which is the version that took effect: 3.8.7.2 carries
+its shorter wording, not the longer clause the vetoed 13-22-S would have kept.
+
+## One that was nearly rewritten and should not have been
+
+**Bill 13-22-S** — "A constitutional amendment passed 31-0 and was vetoed the same day" — is
+right. Its Pass and Fail lines are blank, which is why it was flagged, but its **Other** field
+reads the vote and the veto outright. The entry credits the bill sheet and the bill sheet is where
+it is. A scan that only reads the Pass field would have cut a correct and well-sourced entry.
+
+## Deliberately not acted on
+
+The same test across all 227 returns **150 events** asserting passage against a blank Pass line,
+and that list is not safe to act on as it stands. On the pre-2011 scans the Pass line is filled in
+by hand — 98-3-F reads "Pass 10-12-98", 98-6-F a handwritten X — and OCR catches those
+inconsistently, so a blank field there proves little. On the born-digital PDFs from about 2016 it
+is a real form field and a blank one means something. Separating the two eras is a pass of its
+own. Left as a list rather than a rewrite, because a mass correction off an unreliable signal is
+how wrong facts reach the site.
+
+## Housekeeping
+
+`research-photos` was three commits behind `main` again and its diff against it was a clean revert
+of #428 and #430 — the third consecutive report to clear this same hazard. `main` merged in and
+pushed; it now carries nothing `main` lacks. Its history still contains one merge commit authored
+by the tooling's default identity, so it must be squashed when it is next merged.
+
+The attribution footer was appended to #432's body on creation and stripped by hand. It has
+regressed: the 11 September report noted it had narrowed to a bare `claude.ai/code` address, and
+it is carrying a full session link again.
+
+## Checks
+
+`build.py` clean; `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py` reports the
+same four pairs as last night, all genuinely separate events, and the rewrites introduced no new
+pair. All four corrected entries were read back off the built pages.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,946 search records.** No event was added or deleted; no
+photograph, officer or document was touched.
+
+## Still open
+
+- **The 150-row blank-Pass list**, once the hand-marked scans and the born-digital forms are
+  separated. That separation is the whole job and it needs no network.
+- **The 18 legislation files with no text layer**: `1978-79/dc_bill_229`,
+  `1979-80/dc_resolution_404`, `1996-97/dc_resolution_396`, `2001-02/dc_bill_245`,
+  `2001-02/dc_resolution_376`, `2003-04/dc_bill_233`, `2006-07/dc_resolution_361`, and eleven in
+  `2012-13`. Nothing mechanical will reach these; they need reading.
+- **728 of the 1,111 legislation entries point at a landing page rather than the PDF**, which is
+  why only 227 of them could be matched to an event at all. Resolving those source URLs would
+  widen this check severalfold and is the natural next step.
+- The standing brief should drop #6, #7 and #8; they were closed on 18 August. It also still
+  opens by telling the editor to run `gh auth setup-git`, and `gh` is not installed here — fourth
+  pass to record it. Git is credentialed and the GitHub tools serve for pull requests.
+- Carried forward unchanged: the two Herald items on how Joe Rains's term ended; Charlie Harris's
+  missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account of
+  `herald-index-full.json`; the eleven paused routines and the two that run; Mary Fyfe; the
+  1999-00 Coates investigation whose outcome is not in the record; the pre-2000 legislation gaps;
+  the 1987 evaluations wording; the twenty-three advance-notice entries worth corroborating from
+  the *Talisman*; and Richey's five words on the 2015 event page.
