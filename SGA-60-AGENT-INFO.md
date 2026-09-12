@@ -4808,6 +4808,80 @@ data (61 years, 60 presidents, all still portrayed; 12-year
 year-photograph gap unchanged). Merged `origin/main` before starting.
 Landed on `research-photos`.
 
+**A second 12 September 2026 run (photograph agent, scheduled), later the
+same day.** Re-checked priorities one and two first, same as every run
+since 24 August: Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley
+each still carry a portrait, and all 60 presidents and 57 regents across
+61 years still have one. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+was tested directly at the start and end of this run (two attempts,
+90 seconds apart) and returned the same Cloudflare `cf-mitigated:
+challenge` interstitial both times — the window from the entry directly
+above had not reopened.
+
+Two things this run adds that were not established before, both closing
+off search space rather than opening it:
+
+- **archive.org holds no Talisman for any year in the 12-year
+  photograph gap, and never will without a fresh upload.** Queried
+  `archive.org/advancedsearch.php?q=identifier:talisman*west` directly
+  rather than guessing at identifiers: the only 19 Talisman years on
+  archive.org at all are 1943, 1946, 1947, 1963-65, 1971-81 and 1986-87.
+  Every one of the twelve open years (1993-94 through 2009-10) is absent.
+  This is a different failure than the digitalcommons block — it is not
+  rate-limited or Cloudflare-gated, the items simply do not exist there.
+  Future runs should stop treating the archive.org djvu-text route as a
+  pending option for these years; it is closed for good, not for today.
+- **wkuherald.com's own post archive has a real hole across 2006-2009.**
+  Queried its WP-JSON API for any post at all (no search term) in the
+  April windows of 2006, 2007 and 2009: zero results for each, and only
+  three unrelated results for April 2010. The site's archive evidently
+  was not backfilled with content from those years when it moved to
+  WordPress. That rules out wkuherald.com, not just Herald-on-TopSCHOLAR,
+  as a route to 2005-06, 2006-07, 2008-09 and most of 2009-10 — those four
+  of the twelve gap years now depend entirely on `viewcontent.cgi`
+  reopening, with no fallback host. 2003-04 and 2000-01 remain reachable
+  through wkuherald.com's 2002-2005 coverage in principle, though the
+  specific election-week searches run today (see below) found nothing
+  usable there either.
+
+Used the confirmed-open wkuherald.com WP-JSON route for two other lines of
+inquiry:
+
+- Re-swept a sample of twelve cabinet/senate/judicial officers from
+  2013-14 through 2025-26 who have no portrait (of 109 such names on
+  file), picking higher-profile titles — Chief Justice, Speaker/Secretary
+  of the Senate — on the theory they are more likely to appear in named
+  photo captions than a plain senator seat. Found one image with a
+  specific name in its caption, for the 2022-23 Justin Goins /
+  Bornefeld-censure search: it names Speaker of the Senate **Julie
+  Mishchuk**, not Goins, and turned out to already be in
+  `data/photos.json` from an earlier run under that exact spelling. Every
+  other hit was either an unnamed group photo (the caption for
+  `wp-image-67788`, on the "SGA announces election results" post, reads
+  only "Members of the WKU Student Government Association executive
+  cabinet" with no individual named) or carried no caption at all.
+  Nothing added.
+- The Blake Graham (Chief Justice, 2025-26, no portrait) search surfaced
+  a live succession this record does not yet reflect: a wkuherald.com
+  report dated 13 November 2025, "SGA Judicial Council elects new chief
+  justice," with three individually captioned photographs, names
+  **Sophie Stirling** (Associate Justice) elected to succeed Graham as
+  Chief Justice effective 18 November 2025, defeating **Xavier Spiess**
+  (also an Associate Justice) 3-1. Neither Stirling nor Spiess appears
+  anywhere in 2025-26's `organization` block in `data/years.json`, so
+  this run could not attach a photo — `photos.json` entries require a
+  matching name already on record, and this agent does not edit
+  `years.json`. Flagging for whichever routine maintains the current
+  decade's organization roster: once Stirling and/or Spiess are
+  added to 2025-26's senate/judicial officers, both have clean,
+  individually-named portraits ready and waiting.
+  (`https://wkuherald.com/88753/news/sga-judicial-council-elects-new-chief-justice/`,
+  Jonah Savage, wkuherald.com, 13 Nov 2025.)
+
+Nothing added to `data/photos.json` or `data/photos/` this run. `build.py`
+and `check_data.py` re-run clean against the unmodified tree. Landed this
+note on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
