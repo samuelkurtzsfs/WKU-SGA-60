@@ -4778,9 +4778,14 @@ every `file` value in the overlay). Every one resolved to a case that
 operation's own rules already cover: (1) superseded by a different,
 already-published photo of the same person and year — Janice Berkshire,
 Sally Chenault, Dan Knowles, Dwight Adkins, Deanna Mills, Jeff Welch,
-Mark Miller, Mistianna Holcomb, Deven Delano, Jason Loehr, Carlene
-Lodmell, Brent Ditto, Joe Morel and Evelina Petkova all already carry a
-different, in-use portrait for the same (year, name); (2) explicitly
+Mark Miller, Mistianna Holcomb, Jason Loehr, Carlene Lodmell, Brent
+Ditto, Joe Morel and Evelina Petkova all already carry a different,
+in-use portrait for the same (year, name). Deven Delano belongs with
+them but on a narrower ground, checked by the editor on 12 September:
+the orphan frame is named for 1991-92, and the overlay carries him only
+at 1990-91, which is also the only year the archive records him in
+office. He is portrayed in the year he served; whether the 1991-92 frame
+should be attached to anything is open, not closed. (2) explicitly
 marked `FACE PROVED, PERSON NOT PROVED — FOR THE EDITOR` in the
 finding's own `identification` field — Debbie Thomas, Frank Miller,
 Crystal Smith, Nicki Jerome, John Chestnut, Grace Hancock, Amy Renigar,
