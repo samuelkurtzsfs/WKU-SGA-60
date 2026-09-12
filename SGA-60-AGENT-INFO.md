@@ -4914,6 +4914,58 @@ Nothing added to `data/photos.json` or `data/photos/` this run. `build.py`
 and `check_data.py` re-run clean against the unmodified tree. Landed this
 note on `research-photos`.
 
+**A third 12 September 2026 run (photograph agent, scheduled).** Re-checked
+priorities one and two first, same result as every run since 24 August:
+Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all still carry a
+portrait, and no president or student regent across 61 years lacks one.
+
+Picked up the one open item the run directly above flagged rather than
+re-running its already-closed routes: Blake Graham himself, named in that
+succession story of 13 November 2025 as having stepped down, still had no
+portrait of his own (Stirling and Spiess were the two the prior run's
+search surfaced; Graham wasn't one of them because that story doesn't
+photograph him — he had already left the meeting it covers). Went back one
+day earlier in wkuherald.com's coverage, to "SGA supports Go With the Flow
+program" (published 12 Nov 2025, covering the meeting of 11 Nov,
+https://wkuherald.com/88699/news/sga-supports-go-with-the-flow-program/,
+Jonah Savage), which individually captions him: "Chief Justice Blake Graham
+gives his final report as chief justice during the SGA meeting on Tuesday,
+Nov. 11, 2025 in the Senate Chambers. Graham is graduating after the fall
+semester." He matches 2025-26's `organization.senate.officers` entry under
+this exact name, so the portrait attaches cleanly. Added to
+`data/photos.json` and `data/photos/2025-26-blake-graham.jpg`.
+
+Also re-pulled the Xavier Spiess photograph the prior run described
+(individually captioned in the chief-justice election story of 13 November,
+covering the council's vote of 12 November)
+and confirmed it is still not addable: he has no entry of his own in
+2025-26's `organization` block, only mentions inside Graham's and
+Stirling's `profile` prose, so `check_data.py`'s photo-attachment check
+would refuse a `photos.json` entry naming him. This is the same finding the
+prior run made; recording it again here only to confirm it still holds and
+to spare a third run from re-fetching the article to re-derive it. Whoever
+runs the roster/organization pass should add him as associate justice
+before a photograph run tries again.
+
+Sampled a few more names from the 6 September worklist
+(`data/photo-finds/_officers-truly-missing-2026-09-06.json`) via the same
+wkuherald.com route before stopping: Carter Smith, Jackson Smith, Miles
+Harvey, Nolan Rongey, Tyreesha Morris and Zoe Martin, the six remaining
+2025-26 officers without a portrait. All six were already recorded as "no
+match" by the 11 September sweep (§8.4 above); this run did not re-search
+them, since re-deriving an already-confirmed negative wastes a request
+budget better spent elsewhere. Nobody has actually retried the twelve-year
+Talisman gap or `viewcontent.cgi` this run - that route's Cloudflare block
+was reconfirmed twice already today by the two runs above, and a third
+identical test would add nothing.
+
+`build.py` and `check_data.py` both pass clean with the new photo (61
+years, 60 presidents, all portrayed). The file was verified as a real JPEG
+(`FF D8` magic bytes) before committing. Landed on `research-photos`,
+opened as PR #441 (the rolling PR, #6, has been closed since 18 August;
+each run since has opened and the owner has merged a fresh numbered PR
+rather than reusing it).
+
 ## 9. Restarting a session
 
 ```bash
