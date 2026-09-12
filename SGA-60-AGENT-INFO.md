@@ -4921,12 +4921,13 @@ portrait, and no president or student regent across 61 years lacks one.
 
 Picked up the one open item the run directly above flagged rather than
 re-running its already-closed routes: Blake Graham himself, named in that
-same 12 November 2025 succession story as having stepped down, still had no
+succession story of 13 November 2025 as having stepped down, still had no
 portrait of his own (Stirling and Spiess were the two the prior run's
 search surfaced; Graham wasn't one of them because that story doesn't
 photograph him — he had already left the meeting it covers). Went back one
 day earlier in wkuherald.com's coverage, to "SGA supports Go With the Flow
-program" (11 Nov 2025, https://wkuherald.com/88699/news/sga-supports-go-with-the-flow-program/,
+program" (published 12 Nov 2025, covering the meeting of 11 Nov,
+https://wkuherald.com/88699/news/sga-supports-go-with-the-flow-program/,
 Jonah Savage), which individually captions him: "Chief Justice Blake Graham
 gives his final report as chief justice during the SGA meeting on Tuesday,
 Nov. 11, 2025 in the Senate Chambers. Graham is graduating after the fall
@@ -4935,7 +4936,8 @@ this exact name, so the portrait attaches cleanly. Added to
 `data/photos.json` and `data/photos/2025-26-blake-graham.jpg`.
 
 Also re-pulled the Xavier Spiess photograph the prior run described
-(individually captioned in the 12 November chief-justice election story)
+(individually captioned in the chief-justice election story of 13 November,
+covering the council's vote of 12 November)
 and confirmed it is still not addable: he has no entry of his own in
 2025-26's `organization` block, only mentions inside Graham's and
 Stirling's `profile` prose, so `check_data.py`'s photo-attachment check
