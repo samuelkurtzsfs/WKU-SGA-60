@@ -5058,6 +5058,87 @@ Nothing added to `data/photos.json` or `data/photos/` this run. `build.py`
 and `check_data.py` both pass clean against the unmodified tree. Landed this
 note alone on `research-photos`.
 
+**A second 13 September 2026 run (photograph agent, scheduled): the "gallery
+URL" theory tested and closed, for a reason nobody had checked yet.** Re-checked
+priorities one and two first, as every run since 24 August has: Nick Todd,
+Katie Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait, and
+a fresh sweep of every `leaders` entry against `data/photos.json` found zero
+presidents or student regents across all 61 years without one.
+
+Picked up the concrete next step the run above this one left for the
+2006-2009 College Publisher photograph gap: search the Wayback CDX listing
+for a photo-gallery URL type, on the theory that story pages of that era
+never carried their own images. **That theory was wrong, and the actual
+answer is more useful.** `web.archive.org` was reachable this session too
+(via the proxy's CA bundle: plain `curl` without `--cacert
+/root/.ccr/ca-bundle.crt` fails with `SSL_ERROR_SYSCALL` even though
+`https_proxy` is set — pass the bundle explicitly). A full CDX listing of
+`media.www.wkuherald.com` for 2006-2010 (1,703 captured URLs) turned up no
+separate gallery path at all — but fetching the 18 SGA-tagged story pages
+that captured cleanly showed **several of them do carry an inline,
+individually captioned photograph**, via an `<img name="pictureposition1">`
+tag with the caption in both the `alt` attribute and a following
+`<div class="caption">`. The two the 12/13 September runs had checked
+(`Sga-Chief.Justice.Resigns`, `Sga-Sets.Date.For.Student.Regent.Election`)
+simply happen to be two of the pages that ran text-only that week; most of
+the 18 fetched had no image either, but two did:
+
+- `Gilley.Elected.Student.Regent-3650062.shtml` (26 Feb 2009): "Pineville
+  senior Reagan Gilley celebrates winning the Student Government Association
+  student regent election after midnight on Thursday morning. Gilley won the
+  election by 224 votes." (Media Credit: Ryan Stone) — the same event as
+  Gilley's existing portrait, filed under a different source.
+- `Student.Government.Aims.To.Increase.Voter.Turnout-3294737.shtml` (1 Apr
+  2008): two photographs from a Red Towel Party rally outside Java City.
+  One names three people — "Red Towel Party leaders Kevin Smiley, left, and
+  Reagan Gilley, right, cheer on Student Government Association presidential
+  candidate Tedde Harden, center, as he dances to techno music" (Media
+  Credit: Luke Sharrett) — the other names only a non-officer campaigner.
+  Checked Harden and Smiley against the record: Smiley already carries a
+  portrait (elected president for 2009-10, per the 16 Apr 2009 event); Harden
+  lost this campaign to Johnathon Boles for 2008-09 and never held office, so
+  he needs none. Nothing here fills a gap even where the photo is genuine.
+
+**None of the four referenced image files are retrievable.** Each
+`pictureposition` `src` points at `media.collegepublisher.com/media/
+paper603/stills/<id>.jpg` played back through Wayback's `im_` endpoint, and
+every one of the four (`35i4f194.jpg`, `523ib5ct.jpg`, `6wf7c535.jpg`,
+`6z3532uo.jpg`) returns `im_` HTTP 404 and has **zero rows** in the CDX for
+that exact URL — the story's HTML was crawled, the image asset next to it
+never was. A broader CDX query for every `paper603/stills/*.jpg` capture
+with `mimetype:image/jpeg` and `statuscode:200` (i.e., a real image, not a
+302 placeholder) returns only 36 rows in total across the whole paper603
+run, covering thousands of stories, and none of the four needed here are
+among them. This is not a pacing or blocking problem to retry: the bytes
+were simply never archived, and no request pattern recovers them.
+
+**What this settles for the next run.** Stop seaching for a "gallery URL" —
+it doesn't exist, and even where a College Publisher story page does embed a
+named photograph, checking the CDX for that exact image filename first
+(cheap, one request) will show immediately whether it is worth fetching the
+page at all. Most won't be. This closes the concrete lead the prior run left
+open; the twelve-year year-photograph gap (1993-94 through 2009-10, minus
+2007-08 which already has a photo) is otherwise unchanged, and `viewcontent.cgi`
+was not re-tested this run since nothing new suggested it had reopened.
+
+Also tried five more names from the 2013-2025 officer-portrait gap not
+covered by the run above (`Sawyer Coffey`, `Kasey Glasgow`, `Justin McDole`,
+`Cassidy Townsend`, and `Justin Goins`, Chief Justice 2022-23). Goins is
+confirmed by name in three wkuherald.com stories, including one where "the
+trial [was] presided over by Goins," but the only photographs on any of
+those pages are of Cole Bornefeld or of unnamed "Judicial Council members"
+in a group shot — no individual caption names Goins, so nothing qualifies.
+Townsend's one lead, the featured image on the 2018 election-results story,
+is captioned for the winning campaign ("The Mayer, Edmonds and Anderson
+campaign react...") and does not name any of the senators-at-large elected
+alongside them, Townsend included. Coffey, Glasgow and McDole turned up no
+photograph at all. None of the five should be re-searched by name alone
+again.
+
+Nothing added to `data/photos.json` or `data/photos/` this run. `build.py`
+and `check_data.py` both pass clean against the unmodified tree. Landed this
+note alone on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
