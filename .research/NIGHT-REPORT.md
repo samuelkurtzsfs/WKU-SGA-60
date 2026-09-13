@@ -91,6 +91,17 @@ grading — each a genuinely sequential pair and none merged.
 people. 308 documents, 1,111 legislation files, 4,946 search records.** No event added or
 removed, no photograph, officer or document touched. Four bodies and four titles changed.
 
+## The comment footer, corrected
+
+#442 recorded that the attribution footer appended to pull request bodies "can no longer be
+stripped from these containers" — that the platform re-appends the line after the edit
+applies — and `AGENT-LANDING.md` was left describing a stripping instruction that no longer
+held. On #447 it held. The line was appended on creation, an update with the same body
+minus the footer was applied, and reading the body back afterwards it is gone and stayed
+gone through the merge. So the instruction in `AGENT-LANDING.md` stands after all, at least
+for the pull request body: create, read back, strip. Whether the same is true of a comment
+posted separately was not tested this run.
+
 ## Left for the next pass
 
 - The scanned half of the blank-Pass list still stands, and still needs page images read
