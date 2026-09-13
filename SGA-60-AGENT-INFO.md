@@ -150,7 +150,7 @@ Side files: `data/photos.json` (overlay, keyed by name+year),
 | **Digitised Herald** `digitalcommons.wku.edu/dlsc_ua_records/` | Item pages list every headline in an issue. Thins out after 2004. |
 | **Talisman yearbooks** `archive.org/download/talisman<YEAR>west/talisman<YEAR>west_djvu.txt` | Plain text, **not rate limited, use heavily.** archive.org holds 1971–1981, 1986, 1987. It does **not** hold 1967–1970 or 1982–1985. |
 | **wkuherald.com** | Full text from ~2003. WordPress API: `/wp-json/wp/v2/posts?search=SGA&per_page=100`. |
-| **Wayback** over `wku.edu/Dept/Org/Student/SGA` | Officer pages ~1997–2010. `formersgapres.htm` is SGA's own numbered presidents roster (archived 24 Sep 2001). **`web.archive.org` is blocked outright from the cloud containers — see §8.1.** |
+| **Wayback** over `wku.edu/Dept/Org/Student/SGA` | Officer pages ~1997–2010. `formersgapres.htm` is SGA's own numbered presidents roster (archived 24 Sep 2001). **`web.archive.org` was long recorded as blocked outright from the cloud containers, but it was reached cleanly on 13 September 2026 and again on review the same day. Test it yourself before assuming either way; it may vary by container — see §8.** |
 | **Local legislation** `data/legislation/` | 827 PDFs, 1,038 curated authorship attributions. Free, and needs no network. |
 
 ### Access gotchas that cost real time
@@ -5028,9 +5028,12 @@ do. `dlsc_ua_records/3012`'s `<head>` carries no `og:image` or
 straight back at the blocked endpoint. No bypass exists here.
 
 Spent the rest of the run on priority three: nine 2013-2025 cabinet/senate
-officers with no portrait, picked from the 91 names in
-`data/photo-finds/_officers-truly-missing-2026-09-06.json` that are **not**
-in `_do-not-use.json`, favouring titles a captioned photo is more likely to
+officers with no portrait, picked from the 73 names in
+`data/photo-finds/_officers-truly-missing-2026-09-06.json` that fall in
+2013-2025 and are **not** in `_do-not-use.json` (the file holds 187 names in
+all, 156 of them not in `_do-not-use.json`; this note first read 91, which no
+filter on those two files reproduces, and the figure was corrected on review
+13 September 2026), favouring titles a captioned photo is more likely to
 attach to (Speaker, Secretary of the Senate, Chief Justice, Parliamentarian)
 the same way the 11 September run reasoned. Elizabeth DeLozier (Secretary of
 the Senate, 2021-22), Turner Reynolds (Associate Chief Justice, 2021-22),
