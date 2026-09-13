@@ -1,3 +1,92 @@
+# 13 September 2026, late evening — a caption the paper got wrong, merged after it was flagged
+
+One pull request open, #452, the photograph routine's rolling branch, merged. It was a
+documentation-only diff: 81 lines in `SGA-60-AGENT-INFO.md`, nothing in `data/`, nothing that
+reaches a year page. That lowers the stakes but does not remove them, because the handoff notes
+are what the next run acts on, and a wrong line in them costs a future pass its hours.
+
+The standing brief's stale items recur for an eighth pass: `gh auth setup-git` in a container
+where `gh` is not installed, and #6, #7 and #8 described as stale when they have been closed
+since 18 August and the repository is at #452. Push was proved with the dry run and the GitHub
+tools did the listing and the merge, exactly as `AGENT-LANDING.md` says. The clone again arrived
+**shallow at 93 commits**, as the evening pass warned; here `git fetch origin` alone was enough
+for the merge base against `main` to resolve, so the orphan-branch illusion did not appear.
+
+## What was verified
+
+Thirteen claims, eleven of which held. The load-bearing one was a negative — that the photographs
+behind the 2006-2009 College Publisher pages cannot be retrieved — and negatives are the claims
+worth checking hardest, because a wrong one closes a route for good. It held. All four image files
+return zero CDX rows and `im_` 404, checked one at a time. A sweep of every `paper603/stills`
+capture with a real image mimetype returns **36 distinct files** across the whole run of the paper,
+and none of the four is among them. The bytes were never archived; the lead is rightly closed.
+
+Both captions were confirmed word for word against the archived pages, and the note's reading of
+them was fair, including that the second rally photograph names only a student campaigning in a
+Chewbacca costume. Locally: none of the 73 leader entries across 61 years lacks a portrait. Kevin
+Smiley's 2009-10 presidency, Tedde Harden's loss to Johnathon Boles for 2008-09 and Justin Goins
+as Chief Justice 2022-23 all check out against the record, both April elections are filed forward
+into the following year correctly, and Sawyer Coffey is not conflated with the Chase Coffey who
+also sits in the 2016-17 senate.
+
+## What was cut
+
+**A vote figure the Herald itself got wrong.** The caption on Gilley's regent win of 26 February
+2009 says he won by 224 votes. The article body two paragraphs below it gives Gilley 477 and Nate
+Eaton 224 of 701 cast — so 224 is the loser's total, and the margin was 253. The `2009-02-26`
+event in `years.json` already carries the body's figures and is correct. The note had transcribed
+the caption faithfully; the fault was reproducing it unqualified, where a later run could lift it
+over a verified event. It now records the caption as wrong and says which line to trust. The rule
+this is a case of is one the project already keeps for plaques and officer lists, and it turns out
+to hold inside a single issue: **the derived line loses to the contemporaneous one, even when both
+are printed on the same page.**
+
+**Two captions reproduced whole**, at 28 and 27 words against a 15-word cap, paraphrased down to
+their names and facts. There is precedent in the same file — "A Herald caption reproduced whole in
+the photograph notes, paraphrased", 11 September — and the Gilley caption had already been
+paraphrased once in `photos.json`, so this restored verbatim what an earlier pass had fixed.
+
+**The gap description.** The count of twelve is right; the parenthetical gloss, "1993-94 through
+2009-10, minus 2007-08", is not. Five years inside that span already hold a photograph: 1998-99,
+1999-00, 2001-02, 2004-05 and 2007-08. This is the rows-against-distinct-years miscount §8.4
+corrected once already, returning in a shorter form. The twelve are now enumerated in place. A run
+trusting the gloss would have gone hunting for four photographs the archive already has.
+
+## Checks
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0, both before and after the corrections.
+`check_duplicates.py` returns the same four long-standing pairs, all already on `main` and all
+read again rather than taken on the last pass's word: the driver cards, the student regent advisory
+committee bill, the Civil Liberties Union lawsuit and plus/minus grading. Four sequential pairs,
+not four duplicates. Nothing merged.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,946 search records.** Unchanged: no event, officer,
+portrait or document moved this run.
+
+## Still open
+
+- **For the photograph routine:** when a caption and its own article body disagree, the body wins,
+  and the disagreement is worth writing down rather than silently resolving. And enumerate the gap
+  years — the span shorthand has now produced the same miscount twice.
+- **Mickie Hennig and Chris Gaddis, 1988-89, in the 1989 *Talisman*.** Untouched again; still the
+  next photographs run's first job.
+- **The attribution footer now carries a session link, and this time it stripped clean.** The last
+  two reports recorded the appended "Generated by Claude Code" line as bare, and noted that no
+  session link appeared — the half `CLAUDE.md` names specifically. On #453 it appeared **with**
+  one. A single edit of the pull request body removed it and it did not return, unlike the comment
+  footer on #445, which came straight back. So the body is fixable and the comment is not, and the
+  line wants re-checking on every pass rather than being trusted to stay bare. The repository
+  itself remains clean: no commit, data file or built page carries attribution.
+- Carried forward unchanged: the 18 legislation files with no text layer; the 728
+  legislation entries pointing at landing pages rather than PDFs; the 2012-13 Resolution 5-13-S
+  indexing gap; the "57 regents" figure wanting a cleanup pass; the two Herald items on how Joe
+  Rains's term ended; Charlie Harris's missing portrait; the `Amber Daniels` / `Amber Daniel` pair;
+  `CLAUDE.md`'s stale account of `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates
+  investigation whose outcome is not in the record; the pre-2000 legislation gaps; the 1987
+  evaluations wording; the twenty-three advance-notice entries worth corroborating from the
+  *Talisman*; and Richey's five words on the 2015 event page.
+
 # 13 September 2026, evening — the scanned half of the blank-Pass list, read at last
 
 No pull request was open. `main` had not moved since #450 merged at 03:30 and was reviewed in
