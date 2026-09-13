@@ -1,3 +1,109 @@
+# 13 September 2026 — five entries written out of advance notices
+
+No pull request was open. Push access was proved with the dry run `AGENT-LANDING.md`
+prescribes; `gh` is still absent from the container, so the GitHub MCP tools did the
+listing. The three stale branches the standing brief still names, #6, #7 and #8, have been
+closed since 18 August, and the repository is past #446. Nothing reached the live site
+unreviewed since last night.
+
+Every `research-*` branch was compared against `main` directly. `research-photos` is behind
+by the night report and carries nothing of its own. The three `research-editor-0909-*`
+branches each hold one commit, and all three are already on `main` under a squashed subject
+— "Two portrait credits rewritten to stand on their own" as #394, the two 9 September night
+reports as #393 and 129fb545. The rest have no merge base with `main` and are the superseded
+lineage. So the queue really is empty, for the fourth run running, and the pass was spent on
+what is already published.
+
+## The lead the last pass left, closed
+
+#440 finished with an indexing gap: the 2012-13 entry for Resolution 5-13-S cites
+`data/legislation/2012-13/r5-13-s.pdf` in its own label, and no entry in `legislation.json`
+was said to carry that designator. It does. The file is indexed as "Resolution to Adopt
+Admendments to the Constitution and Bylaws" — the archive keeps the misspelling the document
+itself carries — and the wider check it prompted came back clean in both directions: 1,111
+indexed files, 1,111 PDFs on disk, none indexed but missing, none present but unindexed.
+
+## Trap one, swept for the first time
+
+Five passes have now swept the vote lines on legislation. Nobody had swept the trap that
+stands first in both `CLAUDE.md` and section 6 of the handoff: an outcome written out of an
+advance notice. It is testable without a single request to the archive, because the citation
+usually carries a date. An entry that reports a crowd, a sum or a result, and cites an issue
+printed *before* the thing it describes, is claiming more than its source can hold.
+
+Two sweeps were run over all 1,964 events. The first flagged 75 entries whose outcome
+language sits against a same-day or earlier citation; 71 of those are same-day reports of
+things already past, which is what a newspaper is for. Of the four where the issue strictly
+predates the event, two are already handled correctly and were left alone: the 1975 Natalie
+Cole concert and the 1977 Jimmy Buffett concert both take their crowd and their encores from
+the following year's *Talisman* and name the Herald only as the announcement, which is
+exactly the right shape. The second sweep looked instead at the shape of the cited headline
+— slugs reading "to host", "set for", "will" — against outcome verbs in the entry, and
+flagged 38. Most are false positives of a particular kind worth recording: on
+`wkuherald.com` a headline like "SGA announces X" is a report *of a meeting*, and the
+announcement is the reported fact. Four survived.
+
+Five entries were corrected in the end, all by trimming rather than cutting, and every
+sourced fact in them was kept.
+
+**2023-24, the Red Wave tailgate.** The worst of them. The entry read "SGA closed the year
+with a Red Wave tailgate" and had Kurtz calling "the crowd" to savour it. The article is
+dated 8 April, the tailgate 9 April, and its slug says "to host": SGA *would* partner with
+Red Wave, Patterson *will* DJ at six. There was no crowd being addressed — the quote comes
+from an email Kurtz sent all students on 1 April. What the notice does prove survives, and
+it is most of the entry: the partnership, the South Lawn, four to seven, the Louisville game
+at Nick Denes Field, the Instagram poll held over the previous weekend, and Wilson
+Patterson's first place and $500 scholarship, all of which the article puts in the past
+tense. A search of the Herald for a follow-up found none, so the entry now says the paper
+set the arrangements out and never reported the afternoon.
+
+**2021-22, Mental Health Awareness Week.** Cited to an article of 21 April for a week
+beginning on the 25th. "SGA ran a mental health awareness week" and "the week opened with"
+became the announcement they were. The title also called it SGA's *first*, which the cited
+article does not say anywhere — its only "first" is the first ten people through the door at
+the Zumba class — and nothing else in the archive establishes it either. Being the earliest
+such week on file is not the same as being the first, so the word has gone.
+
+**2011-12, the NCAA viewing party.** Two errors, not one. The meeting cancellation is
+properly reported, but the viewing was not "hosted" — it was planned, and it was planned for
+the *following* evening, since the article of 13 March calls the Dayton game "tomorrow". The
+entry had it on the night of the cancelled meeting.
+
+**2022-23, the Afro-Latinidad event.** A small one. The bill passing on 21 March is
+reported; the event "held on 3 April" and what it "featured" were still twelve days away
+when the paper went out. Set for, and was to feature.
+
+**2014-15, the Student Legal Services Clinic.** The body was already careful — "was set to
+open" — while the title said "opened", which is the same defect #440 found in the Healthy
+Days Fair bill: an outcome asserted on the one line a reader scanning the year page actually
+sees. Retitled to match its own body. Its most checkable claim was checked rather than
+assumed: the twelve volunteer attorneys are really in the article, in Shadoan's own words,
+and stay.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0.
+`check_duplicates.py` returns the same four long-standing pairs — designated driver cards,
+the student regent advisory committee bill, the Civil Liberties Union lawsuit, plus/minus
+grading — each a genuinely sequential pair and none merged.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810
+people. 308 documents, 1,111 legislation files, 4,946 search records.** No event added or
+removed, no photograph, officer or document touched. Four bodies and four titles changed.
+
+## Left for the next pass
+
+- The scanned half of the blank-Pass list still stands, and still needs page images read
+  rather than a better regex.
+- The advance-notice sweep only reaches entries whose citation carries a parseable date or a
+  telltale slug. Pre-2003 Herald entries cited by volume and issue alone are outside it, and
+  the *Talisman* retrospectives — which are reports, and good ones — are the reason most of
+  the concert record survives the test.
+- 728 of the 1,111 legislation entries point at a landing page rather than the PDF.
+- **The standing brief is now materially out of date and it costs a few minutes every run.**
+  It opens with `gh auth setup-git`, and `gh` is not installed in these containers; it names
+  #6, #7 and #8 as open, and they were closed on 18 August. Seven passes have recorded this
+  in a report. It needs changing where it is stored, not here.
 # 12 September 2026, evening — nine entries that read a second reading as a vote
 
 No pull request was open. Push access was proved the way `AGENT-LANDING.md` says to, with a
