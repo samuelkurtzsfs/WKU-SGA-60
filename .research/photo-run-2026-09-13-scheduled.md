@@ -38,14 +38,14 @@ archive.org only holds Talisman plain text for 1943-1981, 1986 and 1987 —
 nothing for 1988-2015. That covers a handful of this run's candidates:
 
 - **David Bass**, ASG activities vice president 1977-78 — found. Talisman
-  1978, p. 34 (scan leaf 38 of `talisman1978west`), caption: *"A LIGHT
-  MOMENT IN AN ASG MEETING brings laughter from president Bob Moore and
-  smiles from activities vice president David Bass, secretary Sharon May
-  and vice president Cathy Murphy."* The photo is a candid four-person
-  group shot with no positional cue (no "left to right," no one facing the
-  camera alone) — I could not tell which of the three visible faces is
-  Bass. **Not used as a portrait** under the "never use a photo whose
-  subject you cannot confirm" rule. It would be legitimate as a *year*
+  1978, p. 34 (scan leaf 38 of `talisman1978west`). The caption describes
+  *"a light moment in an ASG meeting"* and names four people without
+  placing them: president Bob Moore, activities vice president David Bass,
+  secretary Sharon May and vice president Cathy Murphy. The photo is a
+  candid four-person group shot with no positional cue (no "left to
+  right," no one facing the camera alone) — I could not tell which of the
+  three visible faces is Bass. **Not used as a portrait** under the "never
+  use a photo whose subject you cannot confirm" rule. It would be legitimate as a *year*
   photo (1977-78) captioned generically for the group, if a future pass
   wants it — 1977-78 already has other photos, so I left it out rather
   than add a caption that can't name a face.
