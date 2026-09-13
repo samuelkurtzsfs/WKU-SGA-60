@@ -1,3 +1,121 @@
+# 13 September 2026, night — a photograph run merged, and a count that no file produced
+
+One pull request open, #449, the photograph run of this morning. Merged, after one figure in
+it was corrected. `gh` is still absent from the container, as `AGENT-LANDING.md` says it is;
+push was proved with the dry run and the GitHub MCP tools did the listing. The three stale
+branches the standing brief still names, #6, #7 and #8, have been closed since 18 August, and
+the repository is past #448 — that part of the brief has been stale for four weeks now.
+
+## What #449 was, and why the bar was lower than usual
+
+Seventy-five lines added to `SGA-60-AGENT-INFO.md` §8 and nothing else. No `data/` file, no
+photograph, no event. `build.py` does not read the handoff notes and they are not copied into
+`site/`, so nothing in this diff was putting a fact in front of a reader. The branch was
+already level with `main`, so there was no stale-branch reconciliation to do.
+
+That lowers the stakes but not the standard: the handoff notes are where the next four
+routines get their bearings, and a wrong number in them propagates into work nobody has done
+yet.
+
+## Twelve claims sampled, eleven held
+
+Nothing was taken from the report on its word. The portrait claim was re-derived from
+`years.json` against `photos.json` here: seventy-two president and student-regent terms across
+sixty-one years, **none** without a portrait. Todd, Dawson, Johnson and Gilley each confirmed.
+All nine officers named are in `_officers-truly-missing-2026-09-06.json` and none in
+`_do-not-use.json`, and every one of the nine office-and-year pairings matches `years.json` —
+DeLozier Secretary of the Senate 2021-22, Reynolds Associate Chief Justice 2021-22, and so on
+down the list. Not one committee chair promoted to officer, which is the trap a batch of
+cabinet and senate names is most exposed to.
+
+`viewcontent.cgi` was fetched here and returned the Cloudflare challenge and a 403, exactly as
+reported; declining to retry it was right, since that is a challenge page and not the
+burst-volume refusal the pacing rule is written to clear. `dlsc_ua_records/3012` carries no
+`og:image` or `twitter:image`, only `bepress_citation_pdf_url` pointing back at the blocked
+endpoint — the article number in it, 4039, matches the report. The DeLozier gallery post,
+wkuherald.com/65821, carries exactly one image whose `alt` is
+`041922_sgaelections_hendricks_002` and no caption block: an unnamed frame, correctly left
+alone under the caption-or-nothing rule.
+
+Two claims could not be tested. The CDX API answered "Internet Archive: Temporarily Offline"
+all evening, so the twenty-one harvested URLs and the two February 2009 captures stand
+unchecked. That is the Internet Archive's outage and not the run's fault, and the reachability
+claim underneath it did verify.
+
+## The count that no filter reproduces
+
+The note drew its nine names from "the 91 names in
+`_officers-truly-missing-2026-09-06.json` that are not in `_do-not-use.json`". The file holds
+**187** names. **156** of them are absent from `_do-not-use.json`, and **73** of those fall in
+2013-2025. Every year window was tested exhaustively: 91 comes out of ranges like 1970-2015 or
+1966-2009 and never out of the 2013-2025 the sentence describes.
+
+Corrected to 73, with the basis written into the sentence, rather than cut — the reasoning
+around the number was sound and only the denominator was wrong. It matters because a pool
+stated as 91 when it is really 156 makes the remaining portrait work look two-thirds finished.
+The rule for the routines: when a note quotes a count off a file, derive it from the file as
+you write it.
+
+## Section 4 brought into line
+
+§4's source table still told researchers flatly that `web.archive.org` is blocked outright
+from the cloud containers, with the correction living only in §8. §4 is the table a run reads
+first. It was reached cleanly from here twice tonight — a 302 through to a real January 2008
+snapshot — so the entry now records the dispute and tells the reader to test it rather than
+trust either account. Whether it is a reopening or varies by container is still not
+established, and #449 was right to hedge it.
+
+## The footer, a third time
+
+Recorded again because the notes have now flip-flopped twice. #442 said the attribution line
+could no longer be stripped; #448 said it could after all, on the strength of a pull request
+body that stayed clean; this morning's entry said it comes straight back and left comments
+untested. Comments are now tested. The line is re-appended to a separately posted comment on
+every write — three REST patches removing it, three returns — and tonight it was re-appended
+to a pull request **body** as well, twice, which is the case #448 thought it had settled. So
+#448's conclusion does not hold from this container.
+
+The review was moved into #449's body and the duplicate comment deleted, so the conversation
+carries one such line instead of two. No session link appeared, which is the half `CLAUDE.md`
+names outright, and the repository itself stays clean: no commit, data file or built page
+carries attribution. Only the GitHub conversation does, and nothing this end can stop it.
+
+## The duplicate pairs, judged again
+
+`check_duplicates.py` reports the same four pairs, all of them already on `main` and none
+introduced by #449. All four read as sequential events and were left alone: the student regent
+advisory committee bill introduced on 28 January 1992 and failing on 6 February; the Civil
+Liberties Union planning action in February 1972 and Associated Students endorsing it in
+March; SGA objecting to plus/minus grading in September 2003 and passing legislation against
+it in October; the designated driver cards funded in November 1997 and distributed in February
+1998. Four sequential pairs, not four duplicates.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810
+people. 308 documents, 1,111 legislation files, 4,946 search records.** No event, officer,
+portrait or document changed this run. `build.py`, `check_data.py` and `check_contrib.py` all
+clean on `main` after the merge.
+
+## Still open
+
+- **The College Publisher photo galleries, 2006-2009.** #449's concrete next step and the best
+  live lead into the twelve-year year-photograph gap: the story pages of that era carry no
+  article images, so the galleries ran as separate page types. Search the CDX listing for a
+  gallery path rather than a `/news/` story path — when the Internet Archive is back up.
+- **Mickie Hennig and Chris Gaddis, 1988-89, in the 1989 *Talisman*.** Still the next
+  photographs run's first job; untouched again tonight.
+- **The nine officers searched by #449 are closed, not pending.** DeLozier, Reynolds, Mathews,
+  Puhakka, Richardson, Cherry, McDowell, Daniel and Raley are confirmed in office in text with
+  no captioned photograph attached. Do not re-search them by name alone.
+- Carried forward unchanged: the scanned half of the blank-Pass list; the 18 legislation files
+  with no text layer; the 728 legislation entries pointing at landing pages rather than PDFs;
+  the 2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure wanting a cleanup pass
+  across `SGA-60-AGENT-INFO.md`; the two Herald items on how Joe Rains's term ended; Charlie
+  Harris's missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale
+  account of `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation whose
+  outcome is not in the record; the pre-2000 legislation gaps; the 1987 evaluations wording;
+  the twenty-three advance-notice entries worth corroborating from the *Talisman*; and
+  Richey's five words on the 2015 event page.
+
 # 13 September 2026 — five entries written out of advance notices
 
 No pull request was open. Push access was proved with the dry run `AGENT-LANDING.md`
