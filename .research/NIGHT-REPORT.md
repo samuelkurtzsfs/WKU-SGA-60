@@ -1,3 +1,141 @@
+# 13 September 2026, evening — a gift figure off by a factor of ten, and seven events written out of notices
+
+## What was open
+
+Nothing. No pull request was open on any branch, and every `research-*` branch was compared
+against `main` by content rather than by commit count: all twenty-three are either identical to
+`main` or strictly behind it. The eight that read as "ahead" carry only the superseded text that
+#451 and #455 corrected this morning — the Preston Center fee, the 91-3-S and 99-13-S outcomes —
+so merging any of them would reinstate errors already fixed. Nothing is waiting.
+
+The standing brief is wrong again, for the eleventh pass: #6, #7 and #8 were closed on 18 August,
+and `gh` is not installed in these containers. Push was proved with a dry run against a throwaway
+ref; the GitHub tools did the listing.
+
+## What was audited instead
+
+#455 merged at 12:26 and nothing had re-checked it, so it was audited first. Both of its
+corrections hold. Resolution 90-18-S carries `Sponsor: Presidents Board` and `Author: Amos E. Gott`
+as two separate lines, so "authored by Amos E. Gott for the Presidents Board" is right on both
+counts; 91-2-F carries a single `AUTHOR: Student Affairs` and no sponsor line at all, so the
+change from sponsor to author is right. Neither was taken off the text layer alone: both first
+pages were rendered at 200 dpi and looked at, as section 2a requires, and the action lines on both
+are genuinely, visibly blank. 91-2-F's `INTRODUCED:` line is blank too — its September 1991 date
+is an inference from the `91-02-F` designator, and the site correctly renders it as a month rather
+than a day.
+
+## The advance-notice sweep, finally reaching the entries it could not see
+
+#447 swept trap one in the small hours and closed by naming its own blind spot: it dated citations
+by parsing the label text, so any entry whose label carried no readable date fell outside it.
+That gap is closed. `herald-index-full.json` holds an authoritative issue date for every
+`dlsc_ua_records` URL, so a citation can be dated by its URL whatever its label says, and the
+2003-onward `wkuherald.com` entries carry their date in the URL slug's article. Resolving all
+1,964 events this way, and across `src2` as well as `src` — which the first pass of this sweep
+missed, and which is why the Lester Flatt entry looked like a hit until Al Cross's report of
+1 May 1973 turned up attached to it — leaves 33 events every one of whose sources predates the
+event described.
+
+Twenty-five of the 33 are correctly written and were left alone. They are the shape the rule
+asks for: the notice for the booking, a named follow-up for what happened. The Carpenters cite
+Elaine Ayers's review; Supa cites Roger Miller's "Mini-Concert Doesn't Mean Mini-Talent"; Jimmy
+Buffett cites the 1973 *Talisman* on the levis and the two Martin guitars; the 1968 treasurer
+amendment says in terms that the archive does not record how it fared; and the DEI Week entry
+says outright that the report predates the week. Eight were not.
+
+## The eight, every one trimmed rather than cut
+
+Each cited source was fetched and read before anything was changed. Nothing was deleted: the
+event count is unchanged at 1,964, and every sourced fact in all eight survives.
+
+**2025-26, Chandler Hall — a gift figure the source does not contain.** The worst of the eight and
+not really an advance-notice error at all, though that is how it surfaced. The entry had the
+building "named Amy and David Chandler Hall after a **$7.5 million gift**". The regents' release
+of 8 August 2025 states no gift amount anywhere. Its only figure is a **nearly $75 million
+appropriation by the Kentucky General Assembly** — state money for the building, not the couple's
+donation. A public archive was attributing a specific sum to two named living people that their
+university never published, an order of magnitude adrift from the only number on the page, and
+the entry separately called the appropriation a secondary source of funds when the release calls
+it what made the building possible. The figure has gone, the appropriation is stated as the
+release states it, and Caboni's thanks for an unquantified gift stays. The opening was corrected
+with it: the release says the building **will open** on 18 August, so the entry no longer reports
+it as done, and the 19 September dedication has been added.
+
+**2011-12, Campus Clean-up.** The notice of 10 October says the clean-up "will take place", that
+"as of now, 17 senators have volunteered", and quotes Boka's route in the future tense — "we'll be
+starting at Centennial Mall then work our way up the Hill". The entry had the group having
+"worked from Centennial Mall up the Hill to Cherry Hall and back to DUC", and had the seventeen
+senators volunteering *alongside* student athletes when the article says Boka had emailed them.
+Now a sign-up count and a plan. The 3.30–5 p.m. the notice gives has been added; the entry had no
+time at all.
+
+**2011-12, the Campus Safety Walk.** The clearest of them. The notice of 10 April 2012 says
+members "will take notes on whatever seems unsafe, such as an area of campus that is dimly lit or
+blue emergency lights that **may not** be working". The entry reported that "on the walk members
+noted dim areas and blue emergency lights that **were not** working" — the notice's description of
+what the walk is for, converted into findings from an evening a week in the future. Kaylee
+Egerer's remark that the walk had never turned up a drastic hazard, which the notice does carry,
+has been added in its place.
+
+**2011-12, the croakies.** Every verb in the notice of 21 October is future: 250 "will be ordered",
+SGA "will be giving out" croakies on South Lawn. The entry had SGA giving them away. The retreat,
+the comparison with Kentucky and Eastern Kentucky, the 75 cents and the $350 allocation are all
+proven and all stay, with Cody Murphy's plan to hand them out around campus added.
+
+**2012-13, the picnic.** The notice of 17 October 2012 has members "cordially invited" to a picnic
+"held on Oct. 22". The entry had the Ransdells hosting it. Now an invitation. Ransdell's account
+of the idea and Dodds's "it's an SGA tradition" are untouched.
+
+**2016-17, Ride To Vote.** The headline says SGA *discusses* it; the article says SGA "will be
+driving students to and from the polling stations". The entry had the service run on election day.
+Now what the senate was told on 1 November. The three collection points chief of staff James Line
+named — the Kentucky Museum car park, outside Subway at Bates Hall, the Hugh Poland lot — were in
+the source and not in the entry, and have been added.
+
+**2024-25, Giving Thanks November.** The notice of 13 November is three paragraphs and entirely
+prospective: "there will be multiple tables", SGA "will also provide" cupcakes, lemonade and
+Panera. The entry had SGA laying them on. It also carried detail no source in the entry contains:
+the Downing Student Union lobby, 3 to 6 p.m., and raffles for a ninth-generation iPad at $10 a
+ticket and a Spencer's Coffee basket at $5 or $12 for both. Bill 15-24-F is not mirrored here —
+2024-25 is one of the sessions never posted on wku.edu — so those specifics rest on nothing in
+the record and have been lifted out. **They are recorded here verbatim so a later pass that
+reaches the bill can restore them with a citation.** What the article does prove stays, including
+that this was the term's last Potter Children's Home fundraiser and that Spooktober preceded it.
+
+**2023-24, the spring general election.** Not an over-claim: the article of 15 April is a present-
+tense report and the ballot breakdown in the entry is accurate down to the fourteen at-large
+seats. But it says voting "is now open ... until Tuesday at 11:59 p.m.", which makes 16 April the
+day voting closed, and the entry dated the *opening* to it. Moved to 15 April, with the closing
+time added. The date change is recorded here rather than made silently.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py` returns the
+same four pairs it has returned all week — designated driver cards, the student regent advisory
+committee bill, the Civil Liberties Union lawsuit, plus/minus grading — each read again and each
+still a sequence of distinct stages rather than one event told twice. None merged.
+
+61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,946 search records. Eight titles and eight bodies
+changed, one date corrected, no event added or removed, no photograph, officer or document
+touched.
+
+## Left for the next pass
+
+- **The same defect reached through legislation.** This sweep can only see events cited to a dated
+  Herald issue or news article. An event cited to a bill has the same exposure and no date to test
+  it with: a bill authorises a thing before it happens, so an entry that describes the thing
+  happening is claiming past the document. 2025-26's "Happy Holidays from the Hill" is the visible
+  case — it has SGA tabling on 2 and 3 December 2025 and delivering on 4 December, all sourced to
+  Bill 22-25-F, which passed its second reading on 18 November and cannot report any of it. That
+  is one instance of what is probably a class, and the class is worth a sweep of its own rather
+  than a correction at a time.
+- 728 of the 1,111 legislation entries still point at a landing page rather than the PDF.
+- The 2024-25 session's legislation is still unmirrored, which is what cost the Giving Thanks
+  entry its detail.
+
+---
+
 # 13 September 2026, afternoon — a Talisman item-ID map checked page by page, and one personal detail cut
 
 ## What was open
