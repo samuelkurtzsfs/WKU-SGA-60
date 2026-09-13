@@ -5083,17 +5083,23 @@ tag with the caption in both the `alt` attribute and a following
 simply happen to be two of the pages that ran text-only that week; most of
 the 18 fetched had no image either, but two did:
 
-- `Gilley.Elected.Student.Regent-3650062.shtml` (26 Feb 2009): "Pineville
-  senior Reagan Gilley celebrates winning the Student Government Association
-  student regent election after midnight on Thursday morning. Gilley won the
-  election by 224 votes." (Media Credit: Ryan Stone) — the same event as
-  Gilley's existing portrait, filed under a different source.
+- `Gilley.Elected.Student.Regent-3650062.shtml` (26 Feb 2009): the caption
+  names Pineville senior Reagan Gilley celebrating the student regent win,
+  photographed after midnight on the Thursday morning (Media Credit: Ryan
+  Stone) — the same event as Gilley's existing portrait, filed under a
+  different source. **Do not take the vote figure off this caption.** It
+  ends by saying Gilley won by 224 votes, and the paper's own article body
+  two paragraphs below gives Gilley 477 and Eaton 224 of 701 cast, so 224 is
+  the loser's total and the margin was 253. The caption is wrong; the
+  2009-02-26 event already in `years.json` carries the correct numbers from
+  the body. A later or derived line loses to the contemporaneous one even
+  when both are in the same issue.
 - `Student.Government.Aims.To.Increase.Voter.Turnout-3294737.shtml` (1 Apr
   2008): two photographs from a Red Towel Party rally outside Java City.
-  One names three people — "Red Towel Party leaders Kevin Smiley, left, and
-  Reagan Gilley, right, cheer on Student Government Association presidential
-  candidate Tedde Harden, center, as he dances to techno music" (Media
-  Credit: Luke Sharrett) — the other names only a non-officer campaigner.
+  One names three people, left to right — Red Towel Party leaders Kevin
+  Smiley and Reagan Gilley cheering on the party's presidential candidate,
+  Tedde Harden, at the rally (Media Credit: Luke Sharrett) — the other names
+  only a non-officer campaigner.
   Checked Harden and Smiley against the record: Smiley already carries a
   portrait (elected president for 2009-10, per the 16 Apr 2009 event); Harden
   lost this campaign to Johnathon Boles for 2008-09 and never held office, so
@@ -5112,14 +5118,20 @@ run, covering thousands of stories, and none of the four needed here are
 among them. This is not a pacing or blocking problem to retry: the bytes
 were simply never archived, and no request pattern recovers them.
 
-**What this settles for the next run.** Stop seaching for a "gallery URL" —
+**What this settles for the next run.** Stop searching for a "gallery URL" —
 it doesn't exist, and even where a College Publisher story page does embed a
 named photograph, checking the CDX for that exact image filename first
 (cheap, one request) will show immediately whether it is worth fetching the
 page at all. Most won't be. This closes the concrete lead the prior run left
-open; the twelve-year year-photograph gap (1993-94 through 2009-10, minus
-2007-08 which already has a photo) is otherwise unchanged, and `viewcontent.cgi`
-was not re-tested this run since nothing new suggested it had reopened.
+open; the twelve-year year-photograph gap is otherwise unchanged, and
+`viewcontent.cgi` was not re-tested this run since nothing new suggested it
+had reopened. The twelve are 1993-94, 1994-95, 1995-96, 1996-97, 1997-98,
+2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09 and 2009-10, as
+enumerated earlier in this section — **not** the whole 1993-94 to 2009-10
+span less 2007-08, which an earlier draft of this note said and which is
+the same miscount corrected once already above: five years inside that span
+(1998-99, 1999-00, 2001-02, 2004-05 and 2007-08) already hold a photograph
+and are not gaps. Count distinct years, never rows.
 
 Also tried five more names from the 2013-2025 officer-portrait gap not
 covered by the run above (`Sawyer Coffey`, `Kasey Glasgow`, `Justin McDole`,
