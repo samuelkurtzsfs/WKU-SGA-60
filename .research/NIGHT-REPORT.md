@@ -1,3 +1,120 @@
+# 13 September 2026 — five entries written out of advance notices
+
+No pull request was open. Push access was proved with the dry run `AGENT-LANDING.md`
+prescribes; `gh` is still absent from the container, so the GitHub MCP tools did the
+listing. The three stale branches the standing brief still names, #6, #7 and #8, have been
+closed since 18 August, and the repository is past #446. Nothing reached the live site
+unreviewed since last night.
+
+Every `research-*` branch was compared against `main` directly. `research-photos` is behind
+by the night report and carries nothing of its own. The three `research-editor-0909-*`
+branches each hold one commit, and all three are already on `main` under a squashed subject
+— "Two portrait credits rewritten to stand on their own" as #394, the two 9 September night
+reports as #393 and 129fb545. The rest have no merge base with `main` and are the superseded
+lineage. So the queue really is empty, for the fourth run running, and the pass was spent on
+what is already published.
+
+## The lead the last pass left, closed
+
+#440 finished with an indexing gap: the 2012-13 entry for Resolution 5-13-S cites
+`data/legislation/2012-13/r5-13-s.pdf` in its own label, and no entry in `legislation.json`
+was said to carry that designator. It does. The file is indexed as "Resolution to Adopt
+Admendments to the Constitution and Bylaws" — the archive keeps the misspelling the document
+itself carries — and the wider check it prompted came back clean in both directions: 1,111
+indexed files, 1,111 PDFs on disk, none indexed but missing, none present but unindexed.
+
+## Trap one, swept for the first time
+
+Five passes have now swept the vote lines on legislation. Nobody had swept the trap that
+stands first in both `CLAUDE.md` and section 6 of the handoff: an outcome written out of an
+advance notice. It is testable without a single request to the archive, because the citation
+usually carries a date. An entry that reports a crowd, a sum or a result, and cites an issue
+printed *before* the thing it describes, is claiming more than its source can hold.
+
+Two sweeps were run over all 1,964 events. The first flagged 75 entries whose outcome
+language sits against a same-day or earlier citation; 71 of those are same-day reports of
+things already past, which is what a newspaper is for. Of the four where the issue strictly
+predates the event, two are already handled correctly and were left alone: the 1975 Natalie
+Cole concert and the 1977 Jimmy Buffett concert both take their crowd and their encores from
+the following year's *Talisman* and name the Herald only as the announcement, which is
+exactly the right shape. The second sweep looked instead at the shape of the cited headline
+— slugs reading "to host", "set for", "will" — against outcome verbs in the entry, and
+flagged 38. Most are false positives of a particular kind worth recording: on
+`wkuherald.com` a headline like "SGA announces X" is a report *of a meeting*, and the
+announcement is the reported fact. Four survived.
+
+Five entries were corrected in the end, all by trimming rather than cutting, and every
+sourced fact in them was kept.
+
+**2023-24, the Red Wave tailgate.** The worst of them. The entry read "SGA closed the year
+with a Red Wave tailgate" and had Kurtz calling "the crowd" to savour it. The article is
+dated 8 April, the tailgate 9 April, and its slug says "to host": SGA *would* partner with
+Red Wave, Patterson *will* DJ at six. There was no crowd being addressed — the quote comes
+from an email Kurtz sent all students on 1 April. What the notice does prove survives, and
+it is most of the entry: the partnership, the South Lawn, four to seven, the Louisville game
+at Nick Denes Field, the Instagram poll held over the previous weekend, and Wilson
+Patterson's first place and $500 scholarship, all of which the article puts in the past
+tense. A search of the Herald for a follow-up found none, so the entry now says the paper
+set the arrangements out and never reported the afternoon.
+
+**2021-22, Mental Health Awareness Week.** Cited to an article of 21 April for a week
+beginning on the 25th. "SGA ran a mental health awareness week" and "the week opened with"
+became the announcement they were. The title also called it SGA's *first*, which the cited
+article does not say anywhere — its only "first" is the first ten people through the door at
+the Zumba class — and nothing else in the archive establishes it either. Being the earliest
+such week on file is not the same as being the first, so the word has gone.
+
+**2011-12, the NCAA viewing party.** Two errors, not one. The meeting cancellation is
+properly reported, but the viewing was not "hosted" — it was planned, and it was planned for
+the *following* evening, since the article of 13 March calls the Dayton game "tomorrow". The
+entry had it on the night of the cancelled meeting.
+
+**2022-23, the Afro-Latinidad event.** A small one. The bill passing on 21 March is
+reported; the event "held on 3 April" and what it "featured" were still twelve days away
+when the paper went out. Set for, and was to feature.
+
+**2014-15, the Student Legal Services Clinic.** The body was already careful — "was set to
+open" — while the title said "opened", which is the same defect #440 found in the Healthy
+Days Fair bill: an outcome asserted on the one line a reader scanning the year page actually
+sees. Retitled to match its own body. Its most checkable claim was checked rather than
+assumed: the twelve volunteer attorneys are really in the article, in Shadoan's own words,
+and stay.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0.
+`check_duplicates.py` returns the same four long-standing pairs — designated driver cards,
+the student regent advisory committee bill, the Civil Liberties Union lawsuit, plus/minus
+grading — each a genuinely sequential pair and none merged.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810
+people. 308 documents, 1,111 legislation files, 4,946 search records.** No event added or
+removed, no photograph, officer or document touched. Four bodies and four titles changed.
+
+## The comment footer, corrected
+
+#442 recorded that the attribution footer appended to pull request bodies "can no longer be
+stripped from these containers" — that the platform re-appends the line after the edit
+applies — and `AGENT-LANDING.md` was left describing a stripping instruction that no longer
+held. On #447 it held. The line was appended on creation, an update with the same body
+minus the footer was applied, and reading the body back afterwards it is gone and stayed
+gone through the merge. So the instruction in `AGENT-LANDING.md` stands after all, at least
+for the pull request body: create, read back, strip. Whether the same is true of a comment
+posted separately was not tested this run.
+
+## Left for the next pass
+
+- The scanned half of the blank-Pass list still stands, and still needs page images read
+  rather than a better regex.
+- The advance-notice sweep only reaches entries whose citation carries a parseable date or a
+  telltale slug. Pre-2003 Herald entries cited by volume and issue alone are outside it, and
+  the *Talisman* retrospectives — which are reports, and good ones — are the reason most of
+  the concert record survives the test.
+- 728 of the 1,111 legislation entries point at a landing page rather than the PDF.
+- **The standing brief is now materially out of date and it costs a few minutes every run.**
+  It opens with `gh auth setup-git`, and `gh` is not installed in these containers; it names
+  #6, #7 and #8 as open, and they were closed on 18 August. Seven passes have recorded this
+  in a report. It needs changing where it is stored, not here.
 # 12 September 2026, evening — nine entries that read a second reading as a vote
 
 No pull request was open. Push access was proved the way `AGENT-LANDING.md` says to, with a
@@ -22342,5 +22459,90 @@ officer or document touched.
   missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account of
   `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation whose outcome is not in
   the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three
+  advance-notice entries worth corroborating from the *Talisman*; and Richey's five words on the
+  2015 event page.
+
+---
+
+# 12 September 2026, night — an empty pull request, and a yearbook declared missing that is not
+
+## What was open
+
+One pull request, #445, "Research: photographs — queue confirmed empty, PDF proxy blocked this
+run." #6, #7 and #8, the three stale August branches the brief still names, were closed on
+18 August and are not waiting on anyone.
+
+#445 carried nothing. `git diff origin/main origin/research-photos` is empty against the current
+tip: the Blake Graham portrait, the paraphrased credit and the two corrected article dates all
+reached `main` earlier in the day, and what was left on the branch was the merge commit that
+brought `main` back to it. Merging it would have published an empty commit and redeployed the site
+for nothing. Closed rather than merged, with the review on the pull request; the branch stays for
+the next photographs run to reopen.
+
+A caution for whoever scans the branches next. `git diff A...B` measures from the merge base, not
+from the tip, so on this repository — where `main` moves several times a day — it reports a dead
+branch as though it still carried work. It showed `research-editor-0909-credits` holding two
+portrait credits that turned out to be on `main` already, word for word. Use the two-dot form.
+Re-scanned that way, no research branch holds unmerged data: nothing is sitting lost.
+
+## The check that mattered
+
+The report was an account of the state of the archive rather than a set of new claims, so it was
+checked against the repository. All of it holds. 1,188 files in `data/photos/`, none failing the
+JPEG/PNG magic-byte test and none a saved bot-check page; no entry in `photos.json` pointing at a
+file that is not there; no president or regent without a portrait; no year without a photograph;
+and the gap list reproducing exactly at 36 executive and 185 Senate officers.
+
+One premise in it is wrong, and it cost two people a portrait. The report writes off the 1988-89
+officers on the grounds that no *Talisman* was published for those years. That holds for 1996-97
+through 1998-99 — the digitised run is unbroken from 1985 to 1994 and then stops until 2003, which
+fits the known suspension — but **the 1989 *Talisman* exists**. It is *Image in the Making*,
+`dlsc_ua_records/413`, and `photos.json` already cites it thirteen times, nine of them for 1988-89
+people, several read straight off its name index. Mickie Hennig, the 1988-89 secretary, and Chris
+Gaddis, vice-chair of the Judicial Council, were passed over on the strength of a source that was
+never looked for. The 2012 *Talisman*, Vol. 83 (`dlsc_ua_records/8897`), is likewise missing from
+the born-digital list the run tried to reach.
+
+Both were settled from `data/herald-index-full.json` in a second, without a request to TopSCHOLAR.
+That file answers "does this volume exist" outright, and it is the answer to a blocked download
+endpoint far more often than a retry is. A hit in it is evidence; the standing caution is only
+that a miss is not.
+
+The rest of the run's method was sound and is worth recording as such: David Bass left alone
+because a four-person candid with no positional key identifies nobody, Wicks and Young checked
+against the 1979 index rather than guessed at, Mark Chesnut refused on a spelling mismatch that
+leaves real doubt it is the same man. Nothing was forced onto a face.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four long-standing pairs — the designated driver cards, the student regent
+advisory committee bill, the Civil Liberties Union lawsuit and plus/minus grading. All four are on
+`main`, and each was read again rather than taken on the last pass's word: a bill introduced on
+28 January 1992 and failing after amendment on 6 February; a lawsuit planned in February 1972 and
+endorsed in March; grading opposed in September 2003 and legislated against in October; cards
+funded in November 1997 and distributed in February 1998. Four sequential pairs, not four
+duplicates. Nothing merged.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,946 search records.** No event, officer, portrait or
+document changed this run.
+
+## Still open
+
+- **Mickie Hennig and Chris Gaddis, 1988-89, in the 1989 *Talisman*.** The volume and its index
+  are known to hold portraits for that year. This is the next photographs run's first job.
+- **The attribution footer, confirmed a second time.** The bare "Generated by Claude Code" line is
+  appended by the platform on every write to a pull request or comment. A REST patch removing it
+  applied cleanly on the #445 comment and the line came straight back. No session link appeared,
+  which is the half `CLAUDE.md` names specifically, and the repository itself stays clean: no
+  commit, data file or built page carries attribution. Only the GitHub conversation does.
+- Carried forward unchanged: the scanned half of the blank-Pass list; the 18 legislation files with
+  no text layer; the 728 legislation entries pointing at landing pages rather than PDFs; the
+  2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure wanting a cleanup pass across
+  `SGA-60-AGENT-INFO.md`; the two Herald items on how Joe Rains's term ended; Charlie Harris's
+  missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account of
+  `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation whose outcome is not in the
+  record; the pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three
   advance-notice entries worth corroborating from the *Talisman*; and Richey's five words on the
   2015 event page.
