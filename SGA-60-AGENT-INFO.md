@@ -5151,6 +5151,114 @@ Nothing added to `data/photos.json` or `data/photos/` this run. `build.py`
 and `check_data.py` both pass clean against the unmodified tree. Landed this
 note alone on `research-photos`.
 
+### Photograph run of 13 September (third pass): the 1970s-80s officer gap closed, and a map for the next attempt at viewcontent.cgi
+
+Presidents and student regents, all 61 years, still all carry a portrait -
+fourth confirmation today.
+
+`viewcontent.cgi` re-tested four times over the course of this run (initial
+try, after a 90-second backoff, after a further wait, and again near the
+end): every attempt returns Cloudflare's "Just a moment..." challenge page
+under a 403, on both a 240 MB yearbook and a small already-known-good Herald
+PDF. Same as the last two runs today. Also tried Playwright/Chromium against
+the same host through this session's proxy, in case a real browser could
+clear the challenge where curl cannot: it cannot reach the host at all
+through the proxy (`net::ERR_CONNECTION_RESET`, and the proxy's own status
+endpoint logs it as `ws_closed_mid_exchange` against
+`digitalcommons.wku.edu:443`), so that route is not an option here regardless
+of the Cloudflare question. **Contrary to last run's note, `web.archive.org`
+was unreachable this session** - every attempt failed at the proxy layer the
+same way (`ws_closed_mid_exchange`), no CA-bundle workaround changed that.
+The doc's warning that reachability "may vary by container" is confirmed in
+both directions now; test it fresh each run rather than trusting the last
+result.
+
+While `viewcontent.cgi` was down, mapped which `dlsc_ua_records` item ID
+holds which Talisman year, since the browse page at
+`digitalcommons.wku.edu/dlsc_ua_yearbooks/` lists most 1980s-90s volumes by
+theme title only, with no year in the title. The item IDs run sequentially
+by publication year once the 1970s numbered volumes end: fetching each
+landing page's `bepress_citation_date` meta tag (a plain 200, no
+Cloudflare gate - only the file *download* is blocked, not the item page)
+gives:
+
+| item | title | year |
+|---|---|---|
+| 404 | Conversions | 1981 |
+| 405 | An Uphill Battle | 1982 |
+| 406/407 | A Season of Hope, Parts 1/2 | 1983 |
+| 408 | The Touch of Red | 1984 |
+| 409 | What Did You Expect? | 1985 |
+| 410 | A Blend of Tradition & Trend (UA12/2/1, not /2) | 1986 |
+| 411 | Degrees of Exposure | 1987 |
+| 412 | In a Different Light | 1988 |
+| 413 | Image in the Making | 1989 |
+| 414 | Think Big, Think Red | 1990 |
+| 415 | The Western World | 1991 |
+| 416 | A Sense of Place | 1992 |
+| 417 | A New Shade of Red | 1993 |
+| 418 | Against All Odds | 1994 |
+| 594 | 2003 Talisman: About Face | 2003 |
+
+The sequence stops dead after 418 - item 419 is a different publication
+("Xposure"), not a yearbook - and does not resume until 594. So `dlsc_ua_records`
+has no Talisman between the 1994 and 2003 volumes at all, confirming the gap
+is a real hole in what WKU digitised, not a lookup failure. **Item 418
+("Against All Odds") covers 1993-94 and item 594 ("About Face") covers
+2002-03 - two of the twelve year-photograph gaps.** Both are large files
+(241.9 MB and 66.5 MB) behind the same blocked endpoint; when `viewcontent.cgi`
+is next reachable, download these two first rather than re-deriving which
+item ID to use. Neither remaining ten-year span (1994-95 through 1997-98,
+2000-01, 2003-04 through 2009-10 less 2003) has a matching item in this
+series - archive.org's `talisman19*west` search confirms it holds nothing
+past 1987 either (checked via `archive.org/advancedsearch.php`), so a Talisman
+route for those years does not exist on either host and some other kind of
+source will be needed.
+
+Also swept the executive/Senate officer-portrait gap for every year archive.org
+actually covers (1971-72 through 1980-81, 1986-87, 1987-88) - a different set
+of names than the 2013-2025 gap the last two runs checked. Eight names had no
+portrait yet; all eight are now dead ends, not just unsearched:
+
+- **David Bass**, activities vice president 1977-78: pictured once, page 34
+  of the 1978 Talisman, in the four-person "A LIGHT MOMENT IN AN ASG MEETING"
+  photograph - but that photograph is already in `photos.json` as a *year*
+  photo (`1977-78-asg-meeting.jpg`), not a leader portrait, because the
+  caption names four people (Bob Moore, Bass, Sharon May, Cathy Murphy) without
+  saying which figure is which. That was the right call by whoever added it;
+  there is no way to crop Bass out of it with any confidence, and the
+  yearbook's own name index gives him no other page.
+- **David Young**, administrative vice president 1978-79: quoted in the ASG
+  wrap-up article (1979 Talisman) but the name index entry for him carries no
+  page number for a portrait - checked the fulltext search API for both
+  "David Young" and "David Paul Young" and the only hit is that same quote.
+  Not pictured.
+- **Alice Wicks**, secretary 1978-79: index entry `Wicks, Alice Elizabeth`
+  carries no page number at all. Not pictured.
+- **Steve Wilson**, Judicial Council chairman 1978-79: a "Steve Wilson"
+  appears in the 1979 Talisman coordinating Spring Sing and on three further
+  pages per the index, none captioned with any SGA role - too common a name
+  to match on first-plus-last name alone without a role-confirming caption,
+  per trap #4 in §6.
+- **Mark Chesnut** (Talisman spells it "Chestnut"), treasurer 1980-81: the
+  index page for him (234) is a men's-intramurals results list naming him as
+  a badminton and racquetball doubles champion - text, no photograph anywhere
+  on that page.
+- **Vern Pulman**, Senate representative-at-large 1974-75: does not appear in
+  the 1975 Talisman's plaintext at all, by any spelling tried.
+- **Chris Millay** and **Dwight Austin**, Senate parliamentarian and
+  sergeant-at-arms 1986-87: neither name appears anywhere in either the 1986
+  or the 1987 Talisman (the only Millays indexed are Beth Ann and Lori Ann).
+
+None of these eight should be re-searched against archive.org's Talisman
+holdings again without a new source; the plaintext and the index were both
+checked and neither is a truncation artifact like the Herald index's
+300-character cap.
+
+Nothing added to `data/photos.json` or `data/photos/` this run either.
+`build.py` and `check_data.py` both pass clean against the unmodified tree
+(no data files were touched). Landed this note alone on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
