@@ -1,3 +1,115 @@
+# 13 September 2026, evening — the scanned half of the blank-Pass list, read at last
+
+No pull request was open. `main` had not moved since #450 merged at 03:30 and was reviewed in
+that same pass; nothing has reached the live site unreviewed. The three branches the standing
+brief still calls stale, #6, #7 and #8, have been closed since 18 August — the seventh pass to
+record it, along with the brief's instruction to run `gh auth setup-git` in a container where
+`gh` is not installed. Push was proved with the dry run; the GitHub tools did the listing.
+
+One thing worth leaving for the next pass: the clone arrives **shallow**, 92 commits deep. Against
+a shallow clone `git merge-base origin/main <branch>` returns nothing, so every one of the
+twenty-two research branches reads as an orphan with no merge base — which looks exactly like the
+warning in `AGENT-LANDING.md` about the 4 August branches and is not that at all. `git fetch
+--unshallow` first, then the merge bases resolve normally. Its cousin: 126 branches read as "ahead"
+of `main` because their pull requests were squash-merged, and the content diff is what settles it.
+
+## The pass went to the lead the last three reports have carried
+
+With the queue empty the work went to the oldest thing still standing: the scanned half of the
+blank-Pass list. #432 recorded it, #440 and #443 cleared the born-digital era, and the 1980s,
+1990s and 2000s rows were left because the vote on those documents is written in by hand and the
+OCR cannot see it. The note left with them was the right one — *they need the page images read,
+not a better regex*.
+
+So they were read. `poppler` is not installable in this container (the archive 404s), but
+`pip install pymupdf` works and renders a page to PNG in one line. Forty-two events across
+1985-86 to 2006-07 assert that a measure carried and cite legislation this repository mirrors;
+all forty-two first pages were rendered and looked at, plus every second and third page where
+the first carried no mark. The text layer yielded the action line on **none** of the forty-two,
+which is the whole reason the rows survived three passes.
+
+**Twenty-five held.** The marks fall into five kinds, only one of which any text search would
+catch: a typed `ACTION TAKEN BY CONGRESS: Passed unanimously` on the 1980s Summary of Action
+form; a rubber `PASSED` stamp across the page; a date written on the Pass line; a handwritten
+tick or slash on it; and `Pass __X__`, which is the case the handoff notes already name as the
+one a regex stops on.
+
+**Five said the opposite of the entry.** These were live on the site as passed measures:
+
+- **86-21-S**, 1985-86 — the entry read "The congress adopted a revised application process."
+  The Summary of Action reads `Failed 7 - 14`. Rewritten to record the defeat and its numbers.
+  An officer note in the same year repeated the claim and was corrected with it.
+- **91-3-S**, 1990-91 — "ASG votes to join the Hilltopper Athletic Foundation", body "passed
+  Bill #91-3-S". The document is stamped **FAILED** in inch-high letters. Retitled and rewritten.
+- **99-13-S**, 1998-99 — "It passed in the same session as the child care grants." Stamped
+  **FAILED**, Fail line dated 4-6-99. Rewritten. This one is confirmed twice over from inside
+  the archive: an officer note already in `years.json` records a member speaking *against
+  amended Bill 99-13-S on 6 April 1999*, the same date as the Fail line.
+- **99-16-S**, 1998-99 — the entry honestly said its text was not retrievable and its outcome
+  unknown. The text was retrievable, and the outcome is a **FAILED** stamp. Rewritten upward:
+  the bill would have let full-time students who were also WKU staff sit in Congress.
+- **98-7-F**, 1998-99 — flagged by the scan, **already correct**. The body says the Herald
+  reported the University Boulevard proposal had failed, and the stamp confirms it.
+
+**Twelve carried no mark at all.** Eight of those were already hedged properly by #432, #440 and
+#443 — they say in terms that the form records no vote, and the scan only caught them because a
+sentence like "the archive cannot say it passed" contains the word. They were right and were left
+alone. That is the earlier sweeps working, and worth recording as such. Four still asserted
+passage against a blank form:
+
+- **90-18-S**, 1989-90 — two errors in one sentence. The entry said ASG "approved the Board of
+  Regents' increase in the student fee" for the Preston Center. The resolution does the opposite:
+  it *asks the Board of Regents to approve* a four-year $5 increase, and asks for a plaque naming
+  the classes that paid it. Every line on the form is blank. Retitled and rewritten both ways.
+- **92-7-S** (football) and **91-2-F** (shuttle fares), 1991-92 — both said the body passed them;
+  both forms are blank throughout. Trimmed to what the documents prove, with the blank lines
+  stated. A sentence in Heather Falmlen's profile repeating the 91-2-F claim was trimmed with it.
+- **91-6-F**, 1991-92, the Iracane resolution — blank form, but **left standing**. Two
+  contemporaneous sources already in the year corroborate it: the Herald of 31 October 1991 and
+  WKU's *On Campus* of 6 November, which reports the regents re-electing Iracane *despite ASG's
+  resolution*. Rescue rather than cut, exactly as the rule says.
+
+Eight entries changed in all. Nothing was deleted: every one was rewritten to what its document
+actually shows, and the sourced detail in each was kept or added to.
+
+## Also checked
+
+The advance-notice trap was swept across all sixty-one years — sources whose headline reads as a
+notice, bodies asserting a crowd, a review or a financial result. **One** candidate, 2014-15's
+Student Legal Services Clinic, and it is written correctly in the conditional throughout. That
+class is clean after #447.
+
+A fifth independent corroboration of the Lodmell sisters turned up in passing: Resolution 95-7-S
+on roommate selection lists **Carlene Lodmell and Darlene Lodmell as its first two authors**, one
+under the other. Never merge them.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four long-standing pairs, each read again rather than taken on the last pass's
+word, and each still a sequence rather than a duplicate. Nothing merged.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,946 search records.** The event count is unchanged
+because every correction was a rewrite, not a cut.
+
+## Still open
+
+- **The blank-Pass list is now closed** for every event this repository can tie to a mirrored
+  document. What remains of it is the 728 legislation entries whose source URL points at a
+  landing page rather than a PDF: those cannot be matched to a document at all, and resolving
+  them is still the single change that would widen this check most.
+- The standing brief should drop #6, #7 and #8 and the `gh auth setup-git` line, and should say
+  the clone arrives shallow.
+- Carried forward unchanged: the 18 legislation files with no text layer; the 2012-13 Resolution
+  5-13-S indexing gap; the "57 regents" figure wanting a cleanup pass; the two Herald items on how
+  Joe Rains's term ended; Charlie Harris's missing portrait; the `Amber Daniels` / `Amber Daniel`
+  pair; `CLAUDE.md`'s stale account of `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates
+  investigation whose outcome is not in the record; the pre-2000 legislation gaps; the 1987
+  evaluations wording; the twenty-three advance-notice entries worth corroborating from the
+  *Talisman*; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; and Richey's five words on
+  the 2015 event page.
+
 # 13 September 2026, night — a photograph run merged, and a count that no file produced
 
 One pull request open, #449, the photograph run of this morning. Merged, after one figure in
