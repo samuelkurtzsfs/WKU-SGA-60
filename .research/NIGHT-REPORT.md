@@ -1,3 +1,112 @@
+# 13 September 2026, midday — an empty queue, and a money line that outlived its correction
+
+## What was open
+
+Nothing. No pull request is open on the repository, and no research branch is holding work.
+Every remote branch was compared to `main` with the two-dot form, as the 12 September pass
+advised: the ones that report themselves "ahead" are squash-merged editor branches whose commit
+is no longer an ancestor, and every one of them diffs against `main` as deletions only, meaning
+the branch is behind and carries nothing `main` lacks. `research-photos`, the rolling
+photographs branch, is in that state too. The 4 August orphan branches are unchanged and stay
+where they are.
+
+The standing brief's stale items recur for a ninth pass: `gh auth setup-git` in a container
+where `gh` is not installed, and #6, #7 and #8 described as stale when they were closed on
+18 August and the repository is at #454. Push was proved with the dry run; the GitHub tools did
+the listing.
+
+## What was checked instead
+
+With no queue, the review went to what was published to `main` in the last day without a later
+pass over it: #451, which reversed the outcome of five measures from passed to failed and
+turned one resolution's direction around. That is the most consequential kind of change this
+archive makes — it tells a reader that something students were told had happened did not — so
+all seven documents behind it were read from rendered page images rather than the text layer,
+which is the only way section 2a permits. No request to TopSCHOLAR was needed: every one is
+mirrored in `data/legislation/` and every one begins `%PDF`.
+
+Thirteen claims across the seven. Eleven held outright.
+
+- **86-21-S** carries its own Summary of Action sheet reading "Failed 7 - 14", the forwarding,
+  follow-up and administration lines all N/A, and a **FAILED** stamp on the bill itself with the
+  Fail line filled in 7 - 14. The entry and the 1985-86 officer note that repeats it are right.
+- **91-3-S** is stamped **FAILED**. Author Student Athletic Committee, sponsor Julie Wedge, and
+  the donation figure struck through and amended by hand, exactly as the entry says.
+- **99-13-S** is stamped **FAILED** with the Fail line dated 4-6-99, first reading 3/23/99 and
+  second 3/30/99. The three offices it would have seated on the University Center Board are named
+  on the page as the entry names them.
+- **99-16-S** is stamped **FAILED**, first reading 3/30/99 and second 4/06/99. Author Kyle
+  Matthews, sponsor Legislative Research Committee.
+- **90-18-S** reads, in its own Purpose and its Therefore clause, as a request *to* the Board of
+  Regents to approve a $5 fee, not an endorsement of one the regents had made. Its five action
+  lines are blank. Amos E. Gott is the author, the Presidents Board the sponsor, and the plaque
+  for the classes that paid the fee is on page 2. The reversal of direction was right.
+- **92-7-S** and **91-2-F** both have every action line blank, so trimming them back to what the
+  document proves was right, and 92-7-S's 67 football scholarships and 2 April 1992 introduction
+  are on the page.
+
+One caution for the next pass to hold on to: **a FAILED stamp is evidence and a blank line is
+not**, and the two must not be written the same way. #451's own commit message says 99-13-S and
+99-16-S both carry a dated Fail line. Only 99-13-S does; 99-16-S's Pass, Fail and Other lines
+are all empty and the stamp alone carries it. The entries on the site do not repeat that slip —
+both say "stamped FAILED" and only the 99-13-S entry dates the failure — so nothing published
+was wrong, but the message overstated the paperwork by one document.
+
+## What was cut
+
+Two things, both places where a corrected entry left an uncorrected fragment behind.
+
+**The Preston Center money line contradicted its own body.** #451 rewrote the 17 April 1990
+entry to say the resolution asked the regents for the fee and that the document does not record
+whether ASG adopted it. The entry's `money` field still read "student construction fee increase
+approved by the regents" — the exact claim the correction removed — and `money` renders as a
+visible line directly under the body on the year page and again on Amos Gott's officer page. So
+the live site carried the withdrawn claim under the sentence withdrawing it. Trimmed to what the
+document proves: a four-year $5 increase asked of the regents. Whether the regents granted it is
+not established by this source and has not been asserted in its place.
+
+**91-2-F's author was written as its sponsor.** The entry called the shuttle fare resolution
+"sponsored by the Student Affairs committee". The document has one attribution line and it reads
+AUTHOR: Student Affairs. Corrected to authored. Small, but author and sponsor are the pair
+trap 2 is about, and this archive has been wrong about which is which before.
+
+Nothing was deleted. Both entries keep every sourced fact they had.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0.
+`check_duplicates.py` returns the same four long-standing pairs — the designated driver cards,
+the student regent advisory committee bill, the Civil Liberties Union lawsuit and plus/minus
+grading — each a sequential pair of a measure introduced and then resolved, judged so on three
+separate passes now. Nothing merged from them.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,946 search records.** Two event bodies corrected; no
+event, officer, portrait or document added or removed.
+
+## Still open
+
+- **A sweep of `money` fields against the bodies they sit under.** This one was found by looking
+  for entries whose body denies passage while another field asserts it, which caught exactly two
+  and cleared the rest. But `money` is a free-text line that renders as fact and is not covered
+  by `check_data.py`, and the correction passes of the last week rewrote a great many bodies
+  without looking at it. The narrow scan is cheap and is worth widening to every entry whose body
+  was touched since #432.
+- **91-2-F is dated September 1991 on no evidence.** Its Introduced line is blank; the date looks
+  inferred from the F in its number. Left alone rather than guessed at again, but it should
+  either find a source or fall back to the year.
+- Carried forward unchanged: Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; the 18
+  legislation files with no text layer; the 728 legislation entries pointing at landing pages
+  rather than PDFs; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure wanting a
+  cleanup pass across `SGA-60-AGENT-INFO.md`; the two Herald items on how Joe Rains's term ended;
+  Charlie Harris's missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s
+  stale account of `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation whose
+  outcome is not in the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the
+  twenty-three advance-notice entries worth corroborating from the *Talisman*; and Richey's five
+  words on the 2015 event page.
+
+---
+
 # 13 September 2026, late evening — a caption the paper got wrong, merged after it was flagged
 
 One pull request open, #452, the photograph routine's rolling branch, merged. It was a
