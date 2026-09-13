@@ -1,3 +1,107 @@
+# 13 September 2026, afternoon — a Talisman item-ID map checked page by page, and one personal detail cut
+
+## What was open
+
+One pull request, #456, "Research: photographs", opened this morning on the rolling
+`research-photos` branch. Nothing else. The standing brief's instruction to merge #6, #7 and #8
+is wrong for the tenth pass running: those three were closed on 18 August and the repository is
+now past #456. The brief's `gh auth setup-git` is wrong for the tenth time too — `gh` is not
+installed in these containers. Push was proved with the dry run against a throwaway ref, and the
+GitHub tools did the listing and the merge, exactly as `AGENT-LANDING.md` says to.
+
+## What the pull request contained
+
+Research notes and nothing else: 108 lines appended to `SGA-60-AGENT-INFO.md` §8. No file under
+`data/` was touched, by the diff or by any of the branch's twelve commits, and nothing in it
+reaches the built site. The branch carries the Blake Graham portrait commits from earlier runs,
+but that work is already on `main` by another route, so the net diff against `main` is the note
+alone. A photograph run that adds no photographs is the ordinary case now that every president
+and student regent has a face; what it produces instead is a map for the next run, and the map
+is what had to be checked.
+
+## What was verified
+
+The note's substantial new claim is a table matching fifteen `dlsc_ua_records` item IDs to the
+*Talisman* volumes they hold, built because the browse page lists most 1980s and 1990s volumes by
+theme title with no year anywhere on them. Eight of the fifteen were opened directly, one request
+at a time three seconds apart, and read off each landing page's `bepress_citation_date`. All
+eight hold: 404 Conversions 1981, 408 The Touch of Red 1984, 410 A Blend of Tradition & Trend
+1986, 413 Image in the Making 1989, 415 The Western World 1991, 418 Against All Odds 1994, and
+594 About Face 2003. Item 419, which the note says breaks the sequence because it is not a
+yearbook, returns "Xposure — Prejudice: Beyond Black & White". The note's aside that item 410
+carries UA12/2/1 rather than the UA12/2/2 every other volume carries is correct, and it is the
+only one in the run that does.
+
+Four further claims were checked against the repository rather than the archive. Every president
+and student regent carries a portrait — 73 rows, none missing. The year-photograph gaps number
+exactly twelve, and 1993-94 and 2002-03, which the note singles out as reachable through items
+418 and 594, are both among them; the ten it says have no *Talisman* route on either host are the
+ten that remain. All eight officers the note closes out are recorded at the offices and years it
+gives, and none of them holds a portrait.
+
+The reasoning on David Bass is sound and worth keeping in view: the only photograph of him is a
+four-person candid whose caption names Bob Moore, Bass, Sharon May and Cathy Murphy without
+saying which figure is which, so it stays a year photograph and yields no portrait. `viewcontent.cgi`
+was re-tested here against items 418 and 594 and returned 403 both times, which confirms the
+note's operational finding from the outside rather than on its own word.
+
+## What was cut
+
+One line. The Mark Chesnut entry named him an intramural badminton and racquetball doubles
+champion — a living person, and a detail with nothing to do with his term as treasurer. Trimmed
+rather than deleted, because the finding underneath it is real and needed: page 234 is the only
+index page for him and it is a text results list carrying no photograph. That survives intact.
+Committed to the branch before the merge, not after.
+
+## The traps, against this diff
+
+No events were added, so nothing could be written out of an advance notice. No officers and no
+people were added. Steve Wilson was refused on trap #4 rather than matched on a first and last
+name without a role-confirming caption, which is the right call on a name that common. The
+"Chestnut" spelling is flagged and not fixed. No settled fact is touched. No contributor commit
+is in the diff, and every commit is authored `SGA 60`.
+
+## Checks
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four long-standing pairs, all of them already on `main` and none introduced
+here. Each was read again rather than taken on the last pass's word, and each is two events and
+not one: a bill introduced 28 January 1992 and failing after amendment on 6 February; the Civil
+Liberties Union suit planned in February 1972 and endorsed in March; plus/minus grading opposed
+in September 2003 and legislated against in October; designated driver cards funded in November
+1997 and their distribution reported in February 1998. That last entry is the advance-notice rule
+working — it claims nothing beyond the headline and says on its face that the archive holds only
+a contents listing. Nothing merged.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+2,615 of them (98%) with an account of what the person did. 308 documents, 1,111 legislation
+files, 4,946 search records.** No event, officer, portrait or document changed this run; the
+merge moved research notes only.
+
+## Still open
+
+- **Items 418 and 594 are the next photographs run's first job**, ahead of re-deriving anything:
+  1993-94 and 2002-03, two of the twelve year gaps, both behind `viewcontent.cgi` whenever it
+  next opens. The other ten gap years have no *Talisman* route on digitalcommons or archive.org
+  and need a different kind of source altogether.
+- **Mickie Hennig and Chris Gaddis, 1988-89, in the 1989 *Talisman*** — carried forward from the
+  last photographs pass, untouched by this one.
+- **The attribution footer, confirmed a third time.** The bare "Generated by Claude Code" line is
+  appended by the platform to every write to a pull request or comment. A REST patch removing it
+  returned 200 on the #456 comment and the line came back immediately, as it did on #445. No
+  session link appears, which is the half `CLAUDE.md` names specifically, and the repository
+  itself stays clean: no commit, data file or built page carries attribution. Only the GitHub
+  conversation does, and nothing in this session can stop it.
+- Carried forward unchanged: the scanned half of the blank-Pass list; the 18 legislation files
+  with no text layer; the 728 legislation entries pointing at landing pages rather than PDFs; the
+  2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure wanting a cleanup pass across
+  `SGA-60-AGENT-INFO.md`; the two Herald items on how Joe Rains's term ended; Charlie Harris's
+  missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account of
+  `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation whose outcome is not in
+  the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three
+  advance-notice entries worth corroborating from the *Talisman*; and Richey's five words on the
+  2015 event page.
+
 # 13 September 2026, midday — an empty queue, and a money line that outlived its correction
 
 ## What was open
