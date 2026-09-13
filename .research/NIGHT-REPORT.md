@@ -1,3 +1,91 @@
+# 13 September 2026, late night — a photograph run that found nothing, checked anyway
+
+## What was open
+
+One pull request, #459, the photograph agent's standing brief. `gh` is still not in the container,
+as `AGENT-LANDING.md` says; the dry run proved push and the GitHub MCP tools did the rest. #6, #7
+and #8, which the standing brief still calls stale branches open since 4 August, have been closed
+since 18 August. The brief has now been wrong about them for four weeks and is worth correcting at
+the source.
+
+#459 added one file, a 156-line research note, and changed no data and no photograph. That is a
+low bar for damage but not a reason to skim it: a note that misstates what has already been
+searched sends the next run back down the same dead ends.
+
+## What was verified
+
+Eleven claims, all of which held.
+
+Against the data: the four portraits named in the brief are real JPEGs, `FF D8 FF E0` on each.
+There are 73 leader entries and none without a portrait, so 72 of 72 president and regent terms is
+right once Reed Morgan is set aside — he does have a picture on file, from the 1966 *Herald*
+piece, it simply is not a portrait of an officeholder. All 61 years carry an image. The note's own
+filter script, run again here, returns 166 candidates exactly, 137 distinct names between 1977-78
+and 2023-24.
+
+Against the sources, which is the half that mattered: the Talisman 1978 caption is real and
+verbatim at leaf 4726 of `talisman1978west`, and the decision not to use the photograph was
+correct — four people named, no positional key, three faces. The negatives were checked rather than
+taken on trust, and every one of them stood up. Steve Wilson in `talisman1979west` is a Spring Sing
+coordinator and an agriculture senior, a different man. David Young is a bare text mention, Alice
+Wicks an index line, Mark Chesnut an index line pointing at the intramurals page. Chris Millay and
+Dwight Austin are not in `talisman1987west` at all; the Millay hits are Beth Ann and Lori Ann.
+
+The blocked-source claim reproduced under the pacing rule: landing pages return 200, while
+`cgi/viewcontent.cgi` and `do/search/` both return 403 carrying a `challenge-platform`
+interstitial. That is a managed JS challenge and not the rate-limit 403 the pacing rule in
+`CLAUDE.md` is written for, so the diagnosis in the note is sound and so is its conclusion that
+backoff cannot clear it.
+
+## What was cut
+
+One thing. The note reproduced the Talisman caption whole, twenty-nine words against a fifteen-word
+limit. Paraphrased, keeping the four names and offices, because those are the evidence for why the
+photograph cannot serve as a portrait of Bass. This is the second caption in two days trimmed for
+the same reason, which suggests the research routines are treating `CLAUDE.md`'s instruction to
+quote a caption as identification evidence as an exemption from the length rule. It is not one.
+
+Nothing else was removed. No trap was tripped: nothing was added to bite on, and where the run
+could have guessed at a face it declined four times, refusing Chesnut and Wilson on precisely the
+grounds the surname-alone rule exists for.
+
+## Checks
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both 0. `check_duplicates.py` returned the
+same four standing pairs, all already on `main` and all read again rather than waved through: the
+designated driver cards funded in November 1997 and distributed in February 1998, the regent
+advisory committee bill introduced on 28 January 1992 and failing on 6 February, the Civil
+Liberties Union suit planned in February 1972 and endorsed in March, and plus/minus grading opposed
+in September 2003 and legislated against in October. Four sequences, not four duplicates. Nothing
+merged.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+2,615 of them (98%) carrying an account of what the person did. 308 documents, 1,111 legislation
+files, 4,946 search records.** No event, officer, portrait or document changed.
+
+## Still open
+
+- **The standing brief's stale-branch paragraph.** It sends every editorial run to look at #6, #7
+  and #8, closed since 18 August, on a repository now past #459.
+- **The attribution footer, a third confirmation.** The line was deliberately left off the #459
+  comment and the platform appended it anyway. The previous pass established that a REST patch
+  removing it does not hold, so it was not attempted again. No session link appeared, which is the
+  half `CLAUDE.md` names, and the repository stays clean — no commit, data file or built page
+  carries attribution. Only the GitHub conversation does.
+- **Priority 3 on the photographs beat**, now the only open item there: 166 cabinet and Senate
+  officers without a portrait. The note's own suggestion is the right next move — search these
+  names against *election* coverage rather than their in-office coverage, since that is where the
+  four presidents' portraits came from, and Herald meeting recaps caption the chamber rather than
+  the officer.
+- Carried forward unchanged: Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; the scanned
+  half of the blank-Pass list; the 18 legislation files with no text layer; the 728 legislation
+  entries pointing at landing pages; the 2012-13 Resolution 5-13-S gap; the "57 regents" figure;
+  the two Herald items on Joe Rains's term; Charlie Harris's portrait; `Amber Daniels` /
+  `Amber Daniel`; `CLAUDE.md`'s stale account of `herald-index-full.json`; Mary Fyfe; the 1999-00
+  Coates investigation; the pre-2000 legislation gaps; the 1987 evaluations wording; the
+  twenty-three advance-notice entries wanting *Talisman* corroboration; and Richey's five words on
+  the 2015 event page.
+
 # 13 September 2026, evening — a gift figure off by a factor of ten, and seven events written out of notices
 
 ## What was open
