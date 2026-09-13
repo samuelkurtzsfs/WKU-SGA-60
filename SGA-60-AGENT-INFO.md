@@ -150,7 +150,7 @@ Side files: `data/photos.json` (overlay, keyed by name+year),
 | **Digitised Herald** `digitalcommons.wku.edu/dlsc_ua_records/` | Item pages list every headline in an issue. Thins out after 2004. |
 | **Talisman yearbooks** `archive.org/download/talisman<YEAR>west/talisman<YEAR>west_djvu.txt` | Plain text, **not rate limited, use heavily.** archive.org holds 1971–1981, 1986, 1987. It does **not** hold 1967–1970 or 1982–1985. |
 | **wkuherald.com** | Full text from ~2003. WordPress API: `/wp-json/wp/v2/posts?search=SGA&per_page=100`. |
-| **Wayback** over `wku.edu/Dept/Org/Student/SGA` | Officer pages ~1997–2010. `formersgapres.htm` is SGA's own numbered presidents roster (archived 24 Sep 2001). **`web.archive.org` is blocked outright from the cloud containers — see §8.1.** |
+| **Wayback** over `wku.edu/Dept/Org/Student/SGA` | Officer pages ~1997–2010. `formersgapres.htm` is SGA's own numbered presidents roster (archived 24 Sep 2001). **`web.archive.org` was long recorded as blocked outright from the cloud containers, but it was reached cleanly on 13 September 2026 and again on review the same day. Test it yourself before assuming either way; it may vary by container — see §8.** |
 | **Local legislation** `data/legislation/` | 827 PDFs, 1,038 curated authorship attributions. Free, and needs no network. |
 
 ### Access gotchas that cost real time
@@ -4979,6 +4979,84 @@ years, 60 presidents, all portrayed). The file was verified as a real JPEG
 opened as PR #441 (the rolling PR, #6, has been closed since 18 August;
 each run since has opened and the owner has merged a fresh numbered PR
 rather than reusing it).
+
+**A 13 September 2026 run (photograph agent, scheduled).** Re-checked priorities
+one and two first, as every run since 24 August has: Nick Todd, Katie Dawson,
+Jeanne Johnson and Reagan Gilley all still carry a portrait, and a fresh sweep
+of every `leaders` entry across all 61 years against `data/photos.json` found
+zero presidents or student regents without one. Nothing to do there.
+
+Re-tested `viewcontent.cgi` once against the strongest open lead (the 1996-97
+year-photograph gap, article 4039, `dlsc_ua_records/3012`) before touching
+anything else: still a Cloudflare "Just a moment..." JS challenge, HTTP 403,
+same as every prior test since the block first appeared. Did not retry a
+second time — the block is a Cloudflare/WAF challenge page, not the kind of
+burst-volume 403 the pacing rule is written for, and a second identical test
+would only re-confirm what six or more prior runs already have.
+
+**Correction to §4: `web.archive.org` is not blocked outright from this
+session.** `§4` states flatly that it is blocked from cloud containers; that
+was not true of this container. `curl` reached both the live host and its
+CDX API cleanly — `https://web.archive.org/web/2007/http://wkuherald.com/`
+resolved through a normal 302 to a real 2008 snapshot, and
+`https://web.archive.org/cdx/search/cdx?url=media.www.wkuherald.com*&from=2006&to=2010`
+returned real rows. Whether this is a genuine reopening or just varies by
+which container a given run happens to land in is not established; a future
+run should test it directly rather than trust either this note or the old
+one. Used it to pull 21 SGA-related College Publisher-era URLs for
+2006-2009 out of the CDX listing — squarely inside the twelve-year
+year-photograph gap (1993-94 through 2009-10) that `viewcontent.cgi` and
+archive.org's Talisman `djvu.txt` mirror have both been closed on. It did
+not pay off: the one election-result story with a real capture
+(`Rob-Watkins.Elected.Sga.President`) is itself only archived as a 404, and
+the two stories that did capture cleanly (`Sga-Chief.Justice.Resigns`,
+`Sga-Sets.Date.For.Student.Regent.Election`, both Feb 2009) carry no article
+photograph at all in the stored HTML — the only `<img>` tags on either page
+are the site's own logo and alert-icon chrome. The College Publisher
+template of that era evidently ran text stories and photo galleries as
+separate page types, and this run did not find or try a gallery URL. That is
+the concrete next step for whoever picks this gap up again: search the CDX
+listing for a photo-gallery path (not a `/news/` story path) rather than
+assuming a story page will carry its own image, the way a WordPress-era
+wkuherald.com post does.
+
+Also checked digitalcommons for a way around `viewcontent.cgi` entirely —
+the item page's own meta tags, on the theory that a bepress site sometimes
+exposes a cover-page thumbnail for social-media previews the way many CMSs
+do. `dlsc_ua_records/3012`'s `<head>` carries no `og:image` or
+`twitter:image` tag at all, only `bepress_citation_pdf_url`, which points
+straight back at the blocked endpoint. No bypass exists here.
+
+Spent the rest of the run on priority three: nine 2013-2025 cabinet/senate
+officers with no portrait, picked from the 73 names in
+`data/photo-finds/_officers-truly-missing-2026-09-06.json` that fall in
+2013-2025 and are **not** in `_do-not-use.json` (the file holds 187 names in
+all, 156 of them not in `_do-not-use.json`; this note first read 91, which no
+filter on those two files reproduces, and the figure was corrected on review
+13 September 2026), favouring titles a captioned photo is more likely to
+attach to (Speaker, Secretary of the Senate, Chief Justice, Parliamentarian)
+the same way the 11 September run reasoned. Elizabeth DeLozier (Secretary of
+the Senate, 2021-22), Turner Reynolds (Associate Chief Justice, 2021-22),
+Brenna Mathews (Secretary of the Senate, 2019-20 and 2020-21), Erika Puhakka
+(Chief Justice, 2020-21), Ryan Richardson (Speaker, 2017-18), Nathan Cherry
+(Speaker, 2016-17), Cole McDowell (Secretary of the Senate, 2014-15 and
+2015-16), Amber Daniel (Chief Justice, 2015-16) and Kara Raley (Chief
+Justice, 2014-15) were each searched against wkuherald.com's WP-JSON API.
+Every one of them turns up in the text of a genuine SGA meeting story,
+confirming they held the office — but none has an individually captioned
+photograph. DeLozier's one lead, the 2022 election-results gallery post
+(`wkuherald.com/65821`), carries exactly one image, and its `alt` text is
+the photographer's own file-naming convention
+(`041922_sgaelections_hendricks_002`) with no caption naming anyone in the
+frame — the same "unnamed group photo" dead end the 12 September run hit on
+a different gallery post. The rest have no image on the page at all. Nothing
+in this batch is addable under the caption-or-nothing rule, and none of the
+nine should be re-searched by name alone again; they are confirmed text
+matches with no attached photograph, not a research gap.
+
+Nothing added to `data/photos.json` or `data/photos/` this run. `build.py`
+and `check_data.py` both pass clean against the unmodified tree. Landed this
+note alone on `research-photos`.
 
 ## 9. Restarting a session
 
