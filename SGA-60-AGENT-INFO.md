@@ -5241,9 +5241,8 @@ portrait yet; all eight are now dead ends, not just unsearched:
   to match on first-plus-last name alone without a role-confirming caption,
   per trap #4 in §6.
 - **Mark Chesnut** (Talisman spells it "Chestnut"), treasurer 1980-81: the
-  index page for him (234) is a men's-intramurals results list naming him as
-  a badminton and racquetball doubles champion - text, no photograph anywhere
-  on that page.
+  only index page for him (234) is a men's-intramurals results list - text,
+  no photograph anywhere on that page.
 - **Vern Pulman**, Senate representative-at-large 1974-75: does not appear in
   the 1975 Talisman's plaintext at all, by any spelling tried.
 - **Chris Millay** and **Dwight Austin**, Senate parliamentarian and
