@@ -1,3 +1,83 @@
+# 14 September 2026, late — an empty queue, and a branch that would have deleted the evening's report
+
+## What was open
+
+Nothing. No pull request is open on the repository. The evening run merged #461 and #462, and
+those are the last two; the numbering now stands in the 460s. The standing brief's instruction to
+work #6, #7 and #8 oldest first is wrong for the third run running — all three were closed on
+18 August — and the brief's `gh auth setup-git` step is wrong too, since `gh` is not installed in
+these containers. The GitHub tools answered normally, so this was not the platform gate; the queue
+is simply empty.
+
+## What was checked anyway
+
+Every branch on origin was measured against main rather than trusted, because a branch that reports
+itself "ahead" on this repository usually is not. Squash merges leave the source branch with commits
+main does not contain, so the three-dot diff that most checks reach for shows content main already
+has as though it were new. `research-photos` looked like five unmerged commits carrying fifty-seven
+new lines. Compared directly against main, it carried nothing: the whole of it, including both
+caption trims, had landed with #461 and #462 hours earlier.
+
+The other branches measure the same way and worse. Every one of them — the August `editor-night-*`
+series, the `research-*` decade branches, the numbered `editor-2026-09-*` branches — comes back
+showing large deletions against main, some of them two hundred thousand lines. They are the orphan
+snapshots `AGENT-LANDING.md` warns about and the squash-merged remains of work already published.
+Nothing on origin holds research that main lacks.
+
+## What was fixed
+
+`research-photos` had drifted a merge behind main and would have deleted a hundred and one lines of
+this file — the evening's entire report — had it been merged as it stood. That is the concrete
+hazard of the night, and it was live: the branch is the one the photograph routine pushes to, so
+the next run to open a pull request from it would have carried the deletion into the pull request
+without either the routine or a reviewer having any reason to look for it. Main was merged into the
+branch and pushed. The branch now matches main exactly, and the deletion is gone.
+
+## What was verified
+
+The evening's merged content was re-checked against its sources rather than taken on the evening's
+word, since it is on the live site now and a second reading costs little. It held, in every
+particular that could be reproduced.
+
+The counts come back from the data unchanged: sixty-one years, no leader without a portrait, no
+year without a photograph, and the four presidents the photograph run was pointed at — Todd,
+Dawson, Johnson, Gilley — all four already carrying one. The archive.org identifier search returns
+exactly nineteen volumes, and exactly the nineteen named: 1971-1981, 1986-1987, and the six
+pre-1966 years. `viewcontent.cgi` returned 403 for the 1966 Herald item; the landing page for the
+same item returned 200, so the evening's diagnosis that the download endpoint alone is gated is
+still right tonight. The 14 February 2018 Herald article behind the refused Pride Center
+identification exists and is what the note says it is, which matters because the note's value is
+entirely in the refusal.
+
+One figure deserves recording, because checking it the obvious way makes it look wrong. The gap of
+173 officer portraits is 173 only under the definition the note states — officers lacking a portrait
+for the year they served. Counted as officers lacking a portrait anywhere in the file, the answer is
+171, because two officers hold a portrait filed under a different year. Both numbers are right and
+they answer different questions. The note's own reading is the one it claims.
+
+## What was cut
+
+Nothing, because there was nothing new to cut. The two cuts this branch would have made were made
+by the evening run: a twenty-word caption trimmed to a paraphrase, and a "very likely"
+identification of a Mark Clark returned to the refusal the 9 September pass had already entered.
+Both are on main and both read correctly.
+
+## Where it stands
+
+`data/years.json` builds clean: sixty-one years, 1,964 events, sixty people recorded as president,
+2,652 terms of office held by 1,810 people, of which 2,615 — 98% — carry an account of what the
+person did. `check_data.py`, `check_contrib.py` and `build.py` all exit clean. `check_duplicates.py`
+prints four pairs, the same four as the evening: designated driver cards in 1997-98, the student
+regent advisory committee bill in 1991-92, the Civil Liberties Union suit in 1971-72 and plus/minus
+grading in 2003-04. Each pair is two dated events months apart — a bill introduced and a bill
+failing, a suit planned and a suit endorsed. They are not duplicates and should not be merged.
+
+Still open, and unchanged: John Lyne against Larry Zielke for 1970-71, and David Payne for 1982-83.
+The standing photograph gap is the 173 executive and Senate officer portraits, and the route to it
+stays closed while `viewcontent.cgi` is gated, since the Talisman volumes for 1988-1999 are reachable
+by no other path — archive.org holds nothing after 1987 and the Herald's own site carries full text
+only from about 2003.
+
 # 14 September 2026, evening — a photograph run merged, and a name-match the record had already refused
 
 ## What was open
