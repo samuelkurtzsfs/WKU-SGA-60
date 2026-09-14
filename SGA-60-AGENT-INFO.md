@@ -51,7 +51,7 @@ started, on 17 August, so the two can be read against each other.
 | legislation PDFs held | 1,111 | 390 |
 | authorship attributions from those PDFs | 1,144 | 918 |
 | total pages built | 1,833 | 867 |
-| complete Herald article index | 11,850 items / 17,601 lines | same |
+| complete Herald article index | 11,850 items / 141,079 lines | 11,850 / 17,601 |
 
 Three of those rows need reading carefully. **People recorded in any office**
 counts the person pages the build actually writes (`site/o/`); the raw name
