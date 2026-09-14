@@ -1,3 +1,102 @@
+# 14 September 2026, evening — a photograph run merged, and three worked examples that taught the wrong lesson
+
+## What was open
+
+One pull request, #465, the photograph routine's evening run on `research-photos`. Cut cleanly from
+the current tip of main — merge base `94feeb2f`, eight commits ahead, nothing behind — so none of
+the orphan-branch machinery in AGENT-LANDING applied. The stale #6, #7 and #8 the standing brief
+still sends each run to work have been closed since 18 August; this is the fourth run to record it.
+GitHub answered normally. `gh` is still not installed; `git push` and the GitHub tools both work.
+
+## What it contained
+
+Seventy-eight lines added to `SGA-60-AGENT-INFO.md` and nothing else. No data file, no photograph,
+no entry in `photos.json`, nothing reaching the live site. The run searched 77 executive-cabinet and
+Senate-officer names against wkuherald.com and found no usable portrait, and wrote up the dead end
+so the next run would not repeat it.
+
+A documentation-only diff is still worth checking, and this one is the argument for why. A working
+note is what the next run reasons from. A note that records the right refusal for the wrong reason
+teaches a method that will eventually accept a photograph it should refuse.
+
+## Verified
+
+Every claim in the diff, against its source:
+
+- 61 years, no leader-year pair without a portrait, no year without a photograph. Todd, Dawson,
+  Johnson and Gilley all four already carrying one.
+- `viewcontent.cgi` on `article=5695&context=dlsc_ua_records`: 403, Cloudflare "Just a moment...".
+  Fifth straight session. The landing page for the same collection returns 200.
+- archive.org holds exactly the 19 Talisman identifiers claimed — 1971-1981, 1986, 1987, and six
+  pre-1966 (1943, 1946, 1947, 1963, 1964, 1965). Nothing past 1987.
+- The digitalcommons landing page carries two images, both `/assets/md5images/` platform furniture.
+  No page image, no thumbnail. The gated PDF has no substitute.
+- `web.archive.org` answered 302 to a normal capture redirect. Reachable this session.
+- 45 of the 46 names listed are genuine officers holding no portrait; the 46th is the same person
+  under a middle initial, `Cacy A. Schooler`, 2007-08 Secretary of the Senate. None already had one.
+- Both halves of the run's classification reproduce independently. Ten names from the "no hits at
+  all" list: all ten return zero. Ten from the "media hit but no matching caption" list, re-searched
+  with the embedded media: not one featured-image caption names the officer.
+
+## Cut
+
+**The three worked examples.** The note described each discarded newspaper hit as a photograph of a
+different person sharing the officer's name. In none of the three was that so. The November 2020
+chalking photograph is captioned for Chloe O'Bryan, not a "Jessica Williams". The May 2011 Zumba
+photograph is captioned for the instructor Jacquelyn Cline, not a "Kelly Simmons". The March 2012
+WWE caption names nobody, only "performers". In each case the searched name appears only in the
+article's body text, which is why the search returned it and why the caption never reaches the
+officer at all.
+
+That is a different disqualifier from a namesake, and the difference is the whole game. A
+name-collision is settled by looking at the person; a caption-mismatch by noticing that the caption
+never names them. A run carrying the first as its pattern is a run that will one day accept a
+photograph because the namesake theory looked unlikely. Rewritten to what the captions say.
+
+One caption does carry a searched name: a December 2019 climate article captioned "Jessica Williams,
+a junior from Florence". It is not her. SGA's Jessica Williams chaired Academic Affairs in 2005-06,
+fourteen years earlier. The note now gives the date as the disqualifier and cites the Mark Clark
+Pride Center refusal as the standing rule, since a shared name and a plausible year would not have
+been enough either.
+
+The run's refusals were right every time. Only the reasoning recorded for them was wrong. The cut
+also takes an uninvolved third party's political activity out of a note that had misattributed it
+to her to begin with.
+
+**The officer-gap count.** 166 could not be reproduced under any reading of the sentence stating it.
+Counted directly: 187 title/year pairs without a portrait for that year, 161 distinct names, 159
+distinct names holding no portrait anywhere, 176 with the generic Senator seats left in. This is
+#463's 173-against-171 again — every figure correct, each answering a different question. The
+reproducible numbers are now written beside the filter each one answers. Three runs have published
+three different counts for this gap. Write the filter beside the number or write no number.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py` prints the
+same four standing pairs as the last three runs; each is two dated events months apart — a bill
+introduced and a bill failing, a suit planned and a suit endorsed, a stance taken and legislation
+later passed — and none is a duplicate.
+
+61 years, 1,964 events, 60 presidents. 2,652 recorded terms held by 1,810 people, 2,615 of them
+(98%) carrying an account of what the person did. 308 documents, 1,111 legislation files, 4,946
+search records. 47 people recorded under more than one spelling. Unchanged from the last run, no
+data file having been touched by either the research run or this review.
+
+## Still open
+
+The portrait gap for executive-cabinet and Senate officers, which `viewcontent.cgi` is now the only
+route to and which has failed on five consecutive sessions. Roughly 90 of the candidate names have
+been individually searched across three runs with nothing found; the remainder are pre-2003 titles
+that wkuherald.com cannot answer for and that archive.org's 1988-2002 Talisman gap does not cover.
+A future run should not repeat the name-by-name sweep on those without first getting past the
+Cloudflare challenge.
+
+John Lyne against Larry Zielke for 1970-71, and David Payne for 1982-83. Unchanged.
+
+The editor Routine's stored brief is still stale, and no run can fix it from inside: it was created
+through the web API and an agent may only edit Routines it created itself. The corrected text has
+been sitting in `.research/EDITOR-BRIEF.md` since 14 September, ready to paste.
+
 # 14 September 2026, late — an empty queue, and a merge hazard that turned out not to be one
 
 ## What was open
