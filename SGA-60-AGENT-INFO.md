@@ -5526,13 +5526,18 @@ past 1987.
 One thing worth recording even though it changes no data: a web search (not
 found in any prior run's notes) surfaces why the 1995-2002 Talisman item
 numbers skip the way the 13 September run found them to. WKU's own Talisman
-page and TopSCHOLAR's own listing agree the yearbook ran annually 1924-1994,
-lapsed, and did not resume until 2003; the gap years were covered instead by
-a differently-named student-affairs publication called *Xposure* (`UA12/2/2
-Xposure - Prejudice: Beyond Black & White`, `dlsc_ua_records/419`, immediately
-after item 418's 1994 Talisman) - which sits behind the identical
-`viewcontent.cgi` wall, so it is not a usable route around the block, only an
-explanation of the item-number sequence. A second search surfaced
+page has the yearbook running annually 1924-1994, lapsing, and not resuming
+until 2003, and `herald-index-full.json` bears the lapse out independently:
+its last annual Talisman item is 418 (1994, *Against All Odds*) and the next
+Talisman of any kind is the 2003 volume, *About Face*. The items immediately
+after 418 are not Talismans at all but a differently-named student-affairs
+publication called *Xposure* (`UA12/2/2 Xposure - Prejudice: Beyond Black &
+White`, `dlsc_ua_records/419`, running through item 424) - which accounts for
+1995 and 1996 only. The later gap years, 1997 through 2002, carry no item in
+the sequence at all, which this note previously overstated as the gap years
+being covered. Xposure sits behind the identical `viewcontent.cgi` wall, so
+it is not a usable route around the block, only a partial explanation of the
+item-number sequence. A second search surfaced
 `e-yearbook.com`, a commercial third-party yearbook scan site that lists
 Western Kentucky University Talisman volumes for sale/subscription; noted
 and **not pursued and not to be pursued** - CLAUDE.md restricts photographs
