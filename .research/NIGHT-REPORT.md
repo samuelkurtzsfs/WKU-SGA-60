@@ -1,4 +1,4 @@
-# 14 September 2026, late — an empty queue, and a branch that would have deleted the evening's report
+# 14 September 2026, late — an empty queue, and a merge hazard that turned out not to be one
 
 ## What was open
 
@@ -24,14 +24,26 @@ showing large deletions against main, some of them two hundred thousand lines. T
 snapshots `AGENT-LANDING.md` warns about and the squash-merged remains of work already published.
 Nothing on origin holds research that main lacks.
 
-## What was fixed
+## What was tidied, and a claim this report got wrong
 
-`research-photos` had drifted a merge behind main and would have deleted a hundred and one lines of
-this file — the evening's entire report — had it been merged as it stood. That is the concrete
-hazard of the night, and it was live: the branch is the one the photograph routine pushes to, so
-the next run to open a pull request from it would have carried the deletion into the pull request
-without either the routine or a reviewer having any reason to look for it. Main was merged into the
-branch and pushed. The branch now matches main exactly, and the deletion is gone.
+`research-photos` had drifted a merge behind main, and main was merged into it and pushed, which
+aligned the branch. That is housekeeping and nothing more.
+
+This report first called it a rescue, and said the branch would have deleted a hundred and one
+lines of this file — the evening's report — had it been merged as it stood. **That was wrong, and
+it is corrected here.** The deletion appears only in a two-dot diff, `git diff main branch`, which
+answers "how do these two trees differ" and not "what would merging do". A merge is three-way: it
+takes the merge base into account, sees that the branch never touched this file while main added to
+it, and keeps main's version. Merging the branch as it stood was tested directly against the
+evening's main afterwards and changes nothing at all — this file stays at 23,527 lines, and no file
+is touched. There was no hazard, live or otherwise.
+
+The error is worth leaving in the record rather than quietly rewriting, because it is the same
+mistake this report warns about two sections above, made in the same run by the same reader. The
+three-dot diff overstates what a branch adds; the two-dot diff overstates what merging it would
+remove. Neither is a merge preview. The one that answers the question is
+`git merge --no-commit --no-ff`, run against a scratch copy of main, which reports exactly what
+would land — and on this repository it is the only reading of a branch worth acting on.
 
 ## What was verified
 
