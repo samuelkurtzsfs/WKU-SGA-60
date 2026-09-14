@@ -5315,6 +5315,84 @@ since that reopens the Talisman route for 1988-99 officers that
 `wkuherald.com` (full text only from ~2003) and `archive.org` (nothing past
 1987) cannot reach at all.
 
+### Photograph run of 14 September (evening pass): 77 more officer names checked, still nothing new
+
+Confirmed the starting state before searching anything: all four presidents
+named in the standing brief (Todd, Dawson, Johnson, Gilley) already carry a
+portrait, every president and student regent across all 61 years has one,
+and every year has at least one photograph. This matches every run since
+13 September. The only open item is the executive-cabinet and Senate-officer
+gap, 166 named candidates by this run's count of `organization.executive`
+and `organization.senate.officers` entries not already in `photos.json`.
+
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` was tested again directly
+against the same known-good article used in the last two runs
+(`article=5695&context=dlsc_ua_records`) and still returned the Cloudflare
+"Just a moment..." challenge page as a 403. `archive.org`'s Talisman
+holdings are unchanged (the same 19 identifiers as the last three checks;
+nothing digitised past 1987, none of it new). Since both of those had
+already been exhausted against the current 166 candidates by the runs
+of 13 and 14 September, this run worked through 77 more names not yet
+individually searched, batched against `wkuherald.com`'s WordPress API
+(`/wp-json/wp/v2/posts?search="<name>"&_embed=1`, one call per name,
+paced a second apart), checking every hit that carried a featured image
+for a caption naming the person.
+
+None cleared the bar. The pattern already on record held for every
+single name: about half the searched officers never appear on
+wkuherald.com under that name at all (mostly pre-2011 titles - Mark
+Henry, Amelia Bice, Kathleen Hennessey, Jeremy Glass, Samantha Hughey,
+Liz Goddard, Cacy Schooler, Tony Wong, Cory Gerald, Lamiaya Page, Lisa
+Kappler, Monique Gooch, Corey Bewley, Eliana Martinez, Corbin Snardon,
+Devan Richardson, Caroline Simpson, Alexis Mayne, Zachary Skillman,
+Tribhuwan Singh among them), and the rest turn up only as a name
+mentioned in an SGA meeting-recap article whose photograph - when there
+is one - is captioned for somebody else entirely: the president, a
+different senator quoted in that week's story, or an unrelated subject
+the name happens to share a search hit with (a "Jessica Williams" who
+chalked a Black Lives Matter message on Fountain Square, a "Kelly
+Simmons" Zumba instructor, a "Mark Henry" WWE wrestler - none of them
+the SGA officer being searched for). Checked this way with a real
+media hit but no matching caption: Dajana Crockett, Chris Jankowski,
+Mallory Treece, Kelly Simmons, Sawyer Coffey, Cole McDowell, Tyler
+Scaff, Rachel Keightley, Temple Ricke, Amber Daniel, Cody Cox, Madison
+Keller, Helen Vickrey, Morgan Wysong, Ian Hamilton, Cassidy Townsend,
+Josh Zaczek, Brenna Mathews, Jason Herlick, Turner Reynolds, Jillian
+Kenney, Hope Wells, Elizabeth DeLozier, Nicole Massarone, Garrett Baum
+and Reed Hensley. Confirms the 13/14 September finding rather than
+adding to it: this newspaper's SGA coverage individually captions the
+president and, occasionally, a senator quoted arguing a specific bill,
+essentially never a committee chair or judicial council member simply
+because they hold the title.
+
+Two structural checks this run added rather than repeated: the
+`digitalcommons.wku.edu/talisman/` and `dlsc_ua_records/<id>/` landing
+pages, which return a clean 200 under the Cloudflare challenge that
+blocks `viewcontent.cgi`, were checked for any embedded page-image or
+thumbnail that might substitute for the gated PDF - there is none, only
+the platform's own generic UI icons. And `web.archive.org` answered a
+direct request with a normal redirect this session (not the outright
+block some earlier runs recorded), consistent with the 13 September
+note that its reachability may be container-dependent and worth
+testing fresh each run; it was not otherwise useful here since the
+Wayback-held SGA officer pages run from about 1997-2010 and none of
+this run's candidates' names turned up specific search hits worth
+following through it.
+
+Nothing added to `data/photos.json` or `data/photos/`; `build.py` and
+`check_data.py` both pass clean against the unmodified tree. Roughly 90
+of the 166 candidate names have now been individually searched across
+this run and the two before it, all against wkuherald.com and (for the
+dozen from 1977-87) archive.org's Talisman text, with zero portraits
+found. The remaining ~90 are almost entirely pre-2003 titles that
+`wkuherald.com` cannot reach at all and that fall in the 1988-2002 gap
+`archive.org` does not cover either - `viewcontent.cgi` is the only
+route to any of them, and it has now failed identically on four
+separate sessions (9, 13 twice, and 14 September). A future run should
+not repeat the name-by-name wkuherald.com sweep on the remaining
+pre-2003 names without first getting past that Cloudflare challenge;
+searching names it cannot possibly answer for wastes the run.
+
 ## 9. Restarting a session
 
 ```bash
