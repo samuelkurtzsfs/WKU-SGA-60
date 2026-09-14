@@ -5297,14 +5297,16 @@ their name in an SGA capacity. (Several of these searches surfaced this
 project's own PRs and prior notes in the results, since GitHub indexes
 them - worth remembering that a search engine summary mentioning an officer
 "already searched with no portrait found" may just be quoting this file
-back, not reporting anything new.) One near miss: a February 2018
-wkuherald.com photo of the WKU Pride Center is captioned "Junior Mark Clark
-and freshman Kat Tyler work in the new Pride Center relocated in Downing
-Student Union room 2084" - Clark chaired 2017-18's Committee of Diversity
-and Inclusion, so the person is very likely the same, but the photograph
-shows him doing Pride Center volunteer work, not anything in his SGA
-capacity, so it was left out under this project's own portrait rule and
-not added.
+back, not reporting anything new.) One near miss, and it is the same one
+the 9 September run already considered and refused: a wkuherald.com photo
+of the WKU Pride Center, published 14 February 2018, whose caption names a
+junior Mark Clark at work in the centre's new Downing Student Union room.
+A Mark Clark chaired 2017-18's Committee of Diversity and Inclusion, but
+nothing ties the student in the caption to the committee chair beyond the
+shared name and a plausible year, and the photograph shows Pride Center
+volunteer work rather than anything in an SGA capacity. Not added, on both
+counts. Treat this as closed unless a source turns up that actually joins
+the two, rather than as a near-identification a later pass can finish.
 
 Nothing added to `data/photos.json` or `data/photos/`. `build.py` and
 `check_data.py` both pass clean against the unmodified tree. The productive
