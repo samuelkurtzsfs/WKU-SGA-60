@@ -5473,11 +5473,10 @@ this file's traps section already prescribes, not a new kind of error.
 The one near-miss: **Jackson Smith**, Freshman Senator 2025-26, has a
 featured-image caption on the 12 November 2025 Herald article "SGA supports
 Go with the Flow program" (`wkuherald.com/88699/...`, frame `SAV2513.jpg`)
-reading "Campus Improvements and Sustainability Committee members Malachi
-Humble, Jackson Smith and Ciin Lun present a bill that will obtain funding
-for community umbrellas in the SGA Office during the weekly SGA meeting on
-Tuesday, Nov. 11, 2025 in the Senate Chambers." All three named people are
-real 2025-26 officers already in `photos.json` - but the caption gives no
+that names three Campus Improvements and Sustainability Committee members -
+Malachi Humble, Jackson Smith and Ciin Lun - presenting a community-umbrella
+funding bill at the weekly meeting of 11 November 2025 in the Senate
+Chambers. All three are real 2025-26 officers - but the caption gives no
 left/right/centre order for the three-person frame, so which figure is
 Smith cannot be told from the caption alone, the same problem that sank
 David Bass's ASG-meeting photograph on 13 September. Confirmed this is not
