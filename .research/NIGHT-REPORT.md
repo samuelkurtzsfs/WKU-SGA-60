@@ -1,3 +1,105 @@
+# 14 September 2026, late night — a photograph run merged, and one finding trimmed to what the index proves
+
+## What was open
+
+One pull request, #471, "Research: photographs (rolling)" on `research-photos`, opened at 19:59
+this evening. The stale #6, #7 and #8 the standing brief still sends each run to rescue remain
+closed since 18 August; this is the eighth run to record it. `gh` is still not installed, as
+`AGENT-LANDING.md` says; `git fetch`, a dry-run push probe and the GitHub tools did the work.
+`research-photos` had a real merge base at the tip of `main` and was zero commits behind it, so
+none of the orphan-history hazard applied.
+
+## What the diff actually was
+
+Fifty added lines in one file, `SGA-60-AGENT-INFO.md`. No events, no people, no photographs, no
+legislation, no documents. `build.py` skips `.md`, so nothing in this diff could reach the public
+site at all. That lowers the stakes, and it is the reason the whole note was checked rather than
+sampled: eight claims was the floor, and there were only about that many claims in it.
+
+Every one held.
+
+The two blocked routes were reproduced rather than taken on trust. `viewcontent.cgi?article=5695`
+returned 403 with Cloudflare's "Just a moment..." challenge, exactly as recorded, and
+`catalog.hathitrust.org` returned the same challenge — so the evening run's flagged next step is
+genuinely closed, not merely untested. The archive.org holdings claim was reproduced to the item:
+`identifier:talisman*west` returns nineteen volumes, 1943, 1946, 1947, 1963, 1964, 1965, 1971
+through 1981, 1986 and 1987, and nothing past 1987.
+
+The coverage claims were checked against the data rather than the prose. All seventy-two president
+and student-regent terms across the sixty-one years carry a portrait; no leader of any role lacks
+one; every year has at least one photograph. Todd, Dawson, Johnson and Gilley each carry a portrait
+in every year they held office. The year-photograph gap is exactly the twelve years claimed,
+1993-94 through 2009-10, with 1998-99, 1999-2000, 2001-02, 2004-05 and 2007-08 already covered.
+
+## The one thing that was wrong
+
+The note's new finding — why the Talisman item numbers skip between 1994 and 2003 — was right in
+substance and over-claimed in one clause. It said the gap years "were covered instead by" a
+publication called *Xposure*. They were not, or not all of them. `herald-index-full.json` settles
+it without a request to TopSCHOLAR: item 418 is the 1994 Talisman, *Against All Odds*; items 419
+through 424 are six issues of *Xposure*, dated January 1995 to June 1996; item 425 leaves the
+collection entirely for the 1926 *Towers*. Xposure accounts for 1995 and 1996. The years 1997
+through 2002 carry no item in the sequence at all.
+
+Trimmed to that, with the correction left visible in the note rather than quietly swapped, which is
+the house rule and also the only way a later pass can see what was fixed. The lapse itself is
+sound and is now confirmed from a second direction: the local index has no Talisman of any kind
+between the 1994 volume and the 2003 *About Face*, which is what WKU's own Talisman page says
+independently. One smaller trim went with it — the annual-publication claim was credited to
+TopSCHOLAR's listing as well as WKU's page, but that listing skips 1980, so it cannot establish an
+unbroken annual run and no longer gets cited for one.
+
+The local index answered both questions in a second, for the fourth run running, against an
+endpoint that has been returning 403 since 9 September. That is the standing lesson and it keeps
+being the right one.
+
+## What was not cut
+
+The run recorded `web.archive.org` as a connection reset; it returned a 302 here. The note already
+flags that route as intermittent between sessions, so this is variance, not a bad claim, and
+nothing was changed for it. The decision to decline `e-yearbook.com` was correct and stays on the
+record: a paywalled commercial reseller is not the university's own open archive, whatever it
+holds. Declining to repeat two sweeps already exhausted earlier the same day was also sound — the
+note says plainly that nothing was searched and why, which is the honest version of a quiet run.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0, the latter across all
+seventeen of its contributor and drop-box cases. `check_duplicates.py` returns the same four
+long-standing pairs — the designated driver cards, the student regent advisory committee bill, the
+Civil Liberties Union lawsuit and plus/minus grading. All four are pre-existing on `main`, this
+diff touched no data, and each remains a sequential pair rather than a duplicate. Nothing merged.
+
+Commit authorship on the branch was checked line by line before merging: all fourteen commits read
+`SGA 60`, and the merged commit on `main` carries no tool attribution of any kind.
+
+**61 years, 1,967 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,949 search records.** No event, officer, portrait or
+document changed this run.
+
+## Still open
+
+- **The photograph work is blocked, not unfinished.** The 49 pre-2003 officer names and the
+  twelve-year year-photograph gap both need `viewcontent.cgi` or an equivalent, and every route to
+  it is closed from these containers. Re-running the wkuherald.com or archive.org sweeps will not
+  find anything new; they are exhausted. A run that gets past Cloudflare is the only thing that
+  moves this, and until one does, the honest photograph run is a short one.
+- **The attribution footer, confirmed a third time.** The bare "Generated by Claude Code" line is
+  appended by the platform to every pull request comment. A REST patch that removed it was applied
+  cleanly to the #471 comment and the line came straight back, which matches what the #445 attempt
+  found. No session link appears, which is the half `CLAUDE.md` names specifically, and the
+  repository itself stays clean: no commit, data file or built page carries attribution. Only the
+  GitHub conversation does, and it cannot be stripped from inside a run.
+- Carried forward unchanged: Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; the scanned
+  half of the blank-Pass list; the 18 legislation files with no text layer; the 728 legislation
+  entries pointing at landing pages rather than PDFs; the 2012-13 Resolution 5-13-S indexing gap;
+  the "57 regents" figure wanting a cleanup pass across `SGA-60-AGENT-INFO.md`; the two Herald
+  items on how Joe Rains's term ended; Charlie Harris's missing portrait; the `Amber Daniels` /
+  `Amber Daniel` pair; `CLAUDE.md`'s stale account of `herald-index-full.json`; Mary Fyfe; the
+  1999-00 Coates investigation whose outcome is not in the record; the pre-2000 legislation gaps;
+  the 1987 evaluations wording; the twenty-three advance-notice entries worth corroborating from
+  the *Talisman*; and Richey's five words on the 2015 event page.
+
 # 14 September 2026, night — an empty queue, and the branch list read properly for once
 
 ## What was open
