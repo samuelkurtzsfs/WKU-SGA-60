@@ -5500,6 +5500,56 @@ testing hathitrust again independently in a session that gets past it
 elsewhere, since it may hold Talisman-adjacent yearbook scans of its own
 that this run did not otherwise pursue.
 
+### Photograph run of 14 September (night pass): every route re-tested, all still closed; the Talisman gap explained
+
+Confirmed the starting state again before touching anything: all four named
+presidents (Todd, Dawson, Johnson, Gilley) still carry a portrait, every
+president and student regent across all 61 years still has one, and every
+year still has at least a leader portrait even where it has no year-level
+image. Nothing had changed since the last run closed.
+
+Re-tested every blocked route directly rather than trusting the last run's
+record, since reachability has flipped between sessions before:
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` (`article=5695`, the same
+known-good article every run since 9 September has used) - 403, Cloudflare
+"Just a moment...". `catalog.hathitrust.org` - 403, the same challenge page,
+so the 14 September evening run's flagged next step is now closed off too,
+not just untested. `web.archive.org` - connection reset at the proxy layer
+this session (the intermittent failure mode, not the clean redirect some
+13-14 September sessions got). Also tried the platform's own `WebFetch` tool
+directly against the `viewcontent.cgi` URL, on the chance it routes through
+different infrastructure than a bare `curl` - same 403. `archive.org`'s
+Talisman holdings are unchanged, confirmed again via `advancedsearch.php`:
+the same 19 identifiers (1943/46/47/63/64/65, 1971-1981, 1986-1987), nothing
+past 1987.
+
+One thing worth recording even though it changes no data: a web search (not
+found in any prior run's notes) surfaces why the 1995-2002 Talisman item
+numbers skip the way the 13 September run found them to. WKU's own Talisman
+page and TopSCHOLAR's own listing agree the yearbook ran annually 1924-1994,
+lapsed, and did not resume until 2003; the gap years were covered instead by
+a differently-named student-affairs publication called *Xposure* (`UA12/2/2
+Xposure - Prejudice: Beyond Black & White`, `dlsc_ua_records/419`, immediately
+after item 418's 1994 Talisman) - which sits behind the identical
+`viewcontent.cgi` wall, so it is not a usable route around the block, only an
+explanation of the item-number sequence. A second search surfaced
+`e-yearbook.com`, a commercial third-party yearbook scan site that lists
+Western Kentucky University Talisman volumes for sale/subscription; noted
+and **not pursued and not to be pursued** - CLAUDE.md restricts photographs
+to "the university's own open archives or its news pages," and a paywalled
+third-party reseller is neither.
+
+Given every download route is confirmed closed again and the reachable-name
+sweeps (all 110 post-2003 officer names against wkuherald.com, the
+archive.org-covered pre-1988 names) were both already exhausted earlier
+today, this run did not repeat either sweep. Nothing added to
+`data/photos.json` or `data/photos/`; `build.py` and `check_data.py` both
+pass clean against the unmodified tree. The state for the next run is
+unchanged from the evening pass above: the 49 pre-2003 officer names and the
+twelve-year year-photograph gap both need `viewcontent.cgi` or an equivalent
+that is not open from this container, and re-running today's exhausted
+sweeps against wkuherald.com or archive.org would not find anything new.
+
 ## 9. Restarting a session
 
 ```bash
