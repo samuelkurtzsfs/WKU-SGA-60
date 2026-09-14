@@ -1,3 +1,84 @@
+# 14 September 2026, late — a caption pasted whole for the third time
+
+## What was open
+
+One pull request, #468, `research-photos`, opened this afternoon. The stale #6, #7 and #8 the
+standing brief still names are long closed and the repository is past #467; this is the sixth run
+to record it. `gh` remains uninstalled, as `AGENT-LANDING.md` says; `git fetch` and the GitHub
+tools did the work between them.
+
+## What was reviewed
+
+#468 adds no data. The entire diff is a 77-line run note appended to `SGA-60-AGENT-INFO.md`,
+recording that the last 50 post-2003 officer names were searched against wkuherald.com and that
+none yielded a portrait. Nothing in it reaches a year page, which lowers the stakes but not the
+standard: the note is the instruction the next photographs run will follow.
+
+Six claims were checked rather than taken. The one external citation holds exactly — article
+88699 on wkuherald.com is dated 12 November 2025, is titled for the Go With the Flow programme,
+carries frame `SAV2513.jpg`, and its caption names Humble, Smith and Lun without placing any of
+them. Jackson Smith is carried as Freshman Senator 2025-26. Humble's and Lun's existing portraits
+are described correctly, and neither comes from this photograph. No leader in any of the 61 years
+lacks a portrait, by script rather than by eye. The candidate arithmetic reproduces at 160 names
+against the note's 159, the gap being the four spelling variants the note says it collapsed. And
+`viewcontent.cgi`, retested here against the same known-good article, still answers 403 with
+Cloudflare's challenge page — the blockage is real and not peculiar to that run's container.
+
+"Every year has at least one photograph" is true only because the build counts a leader portrait
+toward a year's total. Twelve years hold no entry in `photos.json`'s `years` list at all. The
+sentence stands as written; the qualification is now on the pull request for whoever hunts year
+photographs next.
+
+## What was cut
+
+Two things, both pushed to the branch before merging.
+
+The note reproduced the Herald caption whole, forty-six words against a limit of fifteen. This
+note has been trimmed for the same offence twice already on this same branch, on 13 September and
+again on 14 September. Three times is a habit rather than an accident, and it is worth naming as
+one: the run that finds a caption is the run that should paraphrase it, because the evidence for
+declining a photograph is who is named and the absence of a left-to-right cue, never the wording.
+The same seventeen-word fragment was trimmed out of the pull request body, which is public text
+published under the project's name.
+
+The second was a contradiction that would have cost a future run real time. The passage said all
+three people named in the caption were already in `photos.json`, two sentences before correctly
+saying only Humble and Lun are. Smith — the entire subject of the search — is precisely the one
+who is not. Left standing, it tells the next run a name is done when it is open.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four long-standing pairs, all on `main` and all read again rather than taken on
+the last pass's word: the designated driver cards funded in November 1997 and distributed in
+February 1998, the student regent advisory committee bill introduced on 28 January 1992 and
+failing after amendment on 6 February, the Civil Liberties Union lawsuit planned in February 1972
+and endorsed in March, and plus/minus grading opposed in September 2003 and legislated against in
+October. Four sequential pairs, not four duplicates. Nothing merged.
+
+**61 years, 1,967 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,949 search records.** No event, officer, portrait or
+document changed this run; the counts move only where earlier merges moved them.
+
+## Still open
+
+- **Mickie Hennig and Chris Gaddis, 1988-89, in the 1989 *Talisman*.** Unchanged and still the
+  next photographs run's first job.
+- **The twelve years resting on a portrait alone** — 1993-94 through 1997-98, 2000-01, 2002-03,
+  2003-04, 2005-06, 2006-07, 2008-09 and 2009-10 — have no year photograph of their own. Worth a
+  pass in its own right rather than as a by-product of the officer sweep.
+- **The 49 pre-2003 officer names** stay blocked on `viewcontent.cgi`, now failed identically
+  seven times since 9 September, counting this run's own test. `catalog.hathitrust.org` is behind
+  the same challenge and is worth retrying from a container that gets past it, since it may hold
+  yearbook scans of its own.
+- Carried forward unchanged: the scanned half of the blank-Pass list; the 18 legislation files
+  with no text layer; the 728 legislation entries pointing at landing pages rather than PDFs; the
+  2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure wanting a cleanup pass across
+  `SGA-60-AGENT-INFO.md`; Charlie Harris's missing portrait; the `Amber Daniels` / `Amber Daniel`
+  pair; Mary Fyfe; the 1999-00 Coates investigation whose outcome is not in the record; the
+  pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three advance-notice entries
+  worth corroborating from the *Talisman*; and Richey's five words on the 2015 event page.
+
 # 14 September 2026, night — the law was wrong about its own best tool
 
 ## What was open
