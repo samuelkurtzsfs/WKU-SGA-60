@@ -5424,6 +5424,83 @@ not repeat the name-by-name wkuherald.com sweep on the remaining
 pre-2003 names without first getting past that Cloudflare challenge;
 searching names it cannot possibly answer for wastes the run.
 
+### Photograph run of 14 September (second evening pass): the remaining 50 reachable candidates cleared, one near-miss declined
+
+Confirmed the starting state again before searching: all four presidents named
+in the standing brief (Todd, Dawson, Johnson, Gilley) still carry a portrait,
+every president and student regent across all 61 years has one, and every
+year has at least one photograph.
+
+**Stating the filter with the figure, per the 14 September editor's note.**
+Counting `organization.executive` plus `organization.senate.officers`
+entries across all 61 years that are not already in `data/photos.json`'s
+`leaders` list, and excluding only plain "Senator" and "Senator At-Large"
+seats: 159 distinct names, 49 of them in years before 2003 and 110 in 2003
+or later. `viewcontent.cgi` was re-tested directly against the same
+known-good article (`article=5695&context=dlsc_ua_records`) used by every
+run since 9 September and still returned Cloudflare's "Just a moment..."
+challenge under a 403 - the fifth identical failure. `web.archive.org`
+failed at the proxy layer again this session (`ws_closed_mid_exchange`
+against `web.archive.org:443`, same as the 13 September run, not the 14
+September runs' clean redirect - reachability is confirmed container-
+dependent, not fixed). `archive.org`'s Talisman holdings are unchanged (the
+same 19 identifiers). Also tried digitalcommons's own site search
+(`/do/search/`) and `catalog.hathitrust.org` as alternate routes to the
+pre-2003 names or the 1988-2002 Talisman gap neither existing route
+reaches: both are also behind a Cloudflare challenge. So none of the 49
+pre-2003 names were searched this run - they need `viewcontent.cgi` or an
+equivalent, still not open in this container, and re-attempting them
+against wkuherald.com or archive.org would only repeat work already on
+record as impossible.
+
+Of the 110 post-2003 candidates, roughly 60 had already been individually
+logged as checked by the two earlier runs today. The remaining 50 - every
+name not matched, allowing for spelling/nickname variants, to a name in
+either earlier run's list - were searched this run against wkuherald.com's
+WordPress API (`/wp-json/wp/v2/posts?search="<name>"&per_page=20&_embed=1`,
+one call per name, paced a second apart), checking every returned post's
+featured-media caption, alt text and inline figure captions for a match.
+49 of the 50 produced nothing usable: either zero hits, or hits where the
+name appears only in article body text (a bill author, a quoted senator, a
+committee-roster listing) while any photograph in the same article is
+captioned for someone else. Two hits were false matches on a different
+person entirely sharing the name (a Bowling Green city-commission candidate
+"DeLane Simpson" turning up for "Lane Simpson"; a Civil War re-enactor for
+"Robert Bell"; a "sophomore at Warren Central" quoted on an unrelated
+festival for "Matthew Johnson") - caught on the same date/context check
+this file's traps section already prescribes, not a new kind of error.
+
+The one near-miss: **Jackson Smith**, Freshman Senator 2025-26, has a
+featured-image caption on the 12 November 2025 Herald article "SGA supports
+Go with the Flow program" (`wkuherald.com/88699/...`, frame `SAV2513.jpg`)
+reading "Campus Improvements and Sustainability Committee members Malachi
+Humble, Jackson Smith and Ciin Lun present a bill that will obtain funding
+for community umbrellas in the SGA Office during the weekly SGA meeting on
+Tuesday, Nov. 11, 2025 in the Senate Chambers." All three named people are
+real 2025-26 officers already in `photos.json` - but the caption gives no
+left/right/centre order for the three-person frame, so which figure is
+Smith cannot be told from the caption alone, the same problem that sank
+David Bass's ASG-meeting photograph on 13 September. Confirmed this is not
+an oversight: both Malachi Humble and Ciin Lun already carry portraits in
+`photos.json`, and neither uses this photograph - Humble's is a single-
+subject frame from 24 February 2026, Lun's is a cropped swearing-in photo
+from 1 October 2024. Declining Smith on the same rule, rather than cropping
+a guess out of a three-person group shot.
+
+Nothing added to `data/photos.json` or `data/photos/`. `build.py` and
+`check_data.py` both pass clean against the unmodified tree (checked before
+and after this run; no data files were touched). All 110 post-2003
+candidates identifiable by name have now been searched against
+wkuherald.com across the three runs today, with one photograph declined
+and none confirmed; a future run should not repeat this sweep without a
+new source. The 49 pre-2003 names remain entirely blocked on
+`viewcontent.cgi`, now failed identically six times since 9 September
+across digitalcommons, its own search endpoint, and (this run only)
+hathitrust.org, which shares the same Cloudflare challenge page - worth
+testing hathitrust again independently in a session that gets past it
+elsewhere, since it may hold Talisman-adjacent yearbook scans of its own
+that this run did not otherwise pursue.
+
 ## 9. Restarting a session
 
 ```bash
