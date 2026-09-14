@@ -5258,6 +5258,61 @@ Nothing added to `data/photos.json` or `data/photos/` this run either.
 `build.py` and `check_data.py` both pass clean against the unmodified tree
 (no data files were touched). Landed this note alone on `research-photos`.
 
+### Photograph run of 14 September: all four named gaps already closed, `viewcontent.cgi` still down
+
+Checked the four presidents this run was pointed at first - Nick Todd, Katie
+Dawson, Jeanne Johnson, Reagan Gilley - against `data/photos.json` before
+searching anything. All four already carry a portrait, added by an earlier
+run. Re-ran the full sweep this note's predecessor used: every president and
+student regent across all 61 years still has one, and every year has at
+least one photograph via a leader portrait or a year-level image. The
+remaining gap is entirely executive-cabinet and Senate-officer portraits -
+173 named officers, after excluding plain "Senator" and "Senator At-Large"
+seats - and the 2026-27 slate (Barker, Derryberry, Pace, Bailey, Butler) is
+already fully covered too.
+
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` is still behind Cloudflare's
+"Just a moment..." challenge this session - tested once directly against a
+known-good article ID (`article=5695&context=dlsc_ua_records`, the 1966
+Herald already cited for Jim Haynes) and got a 403, same as the last three
+runs logged above. Landing pages (`dlsc_ua_yearbooks/`, item pages) return a
+clean 200; only the file download endpoint is gated. `archive.org` was
+reachable and behaved exactly as documented - a real 200 with full text and
+a downloadable PDF for `talisman1978west` (confirming the archive.org copy
+is a genuine yearbook PDF, not just OCR text, for any of the 19 years it
+holds), and a 503 for `talisman1988west` and `talisman1994west`, which is
+absence, not a block, since 1978 came back clean at the same moment. An
+`advancedsearch.php` query for `identifier:talisman19*west` still returns
+exactly the same 19 identifiers as the last count (1971-1981, 1986-1987,
+plus 1943/46/47/63/64/65) - nothing new has been digitised there since.
+
+Since Talisman/Herald PDF downloads were closed off, spent the run on
+`wkuherald.com` instead, searching roughly a dozen executive-cabinet and
+Senate-officer names against its WordPress API (`/wp-json/wp/v2/posts`,
+`_embed` for featured-image captions) and checking article bodies for
+inline figures. Nathan Cherry, Ryan Richardson, David Spalding, Stuart
+Kenderes, Justin Goins, Erika Puhakka, Matt Holland, Brittany Crowley, Smita
+Peter and Abhishek Bose: no article carries a photograph captioned with
+their name in an SGA capacity. (Several of these searches surfaced this
+project's own PRs and prior notes in the results, since GitHub indexes
+them - worth remembering that a search engine summary mentioning an officer
+"already searched with no portrait found" may just be quoting this file
+back, not reporting anything new.) One near miss: a February 2018
+wkuherald.com photo of the WKU Pride Center is captioned "Junior Mark Clark
+and freshman Kat Tyler work in the new Pride Center relocated in Downing
+Student Union room 2084" - Clark chaired 2017-18's Committee of Diversity
+and Inclusion, so the person is very likely the same, but the photograph
+shows him doing Pride Center volunteer work, not anything in his SGA
+capacity, so it was left out under this project's own portrait rule and
+not added.
+
+Nothing added to `data/photos.json` or `data/photos/`. `build.py` and
+`check_data.py` both pass clean against the unmodified tree. The productive
+next step for this gap is a session where `viewcontent.cgi` is reachable,
+since that reopens the Talisman route for 1988-99 officers that
+`wkuherald.com` (full text only from ~2003) and `archive.org` (nothing past
+1987) cannot reach at all.
+
 ## 9. Restarting a session
 
 ```bash
