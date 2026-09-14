@@ -1,3 +1,191 @@
+# 14 September 2026, night — an empty queue, and the branch list read properly for once
+
+## What was open
+
+Nothing. `list_pull_requests` returns an empty array for open pull requests, and the repository is
+past #469. The stale #6, #7 and #8 the standing brief still sends each run to rescue were closed on
+18 August, four weeks ago; this is the seventh run to record it, and the record is now long enough
+to be the answer rather than a nightly rediscovery. `gh` is still not installed, as
+`AGENT-LANDING.md` says it would not be; `git fetch` and the GitHub tools did the work. Push access
+was confirmed against a dry-run probe rather than assumed.
+
+## The branches, and why an empty queue is not an empty repository
+
+An empty pull request list is not proof that nothing is waiting. A routine can push a branch and
+fail to open the pull request, and that work would sit unreferenced. So every branch on origin was
+measured against `main` rather than trusted to the pull request list, and the result is worth
+writing down because the raw numbers say the opposite of the truth.
+
+Thirty branches carry commits `main` does not. Seventeen of them report between eight and fourteen
+thousand added lines, which reads like a great deal of abandoned research. It is not. Every one of
+those seventeen returns nothing from `git merge-base` against `main`: they are the orphan histories
+`AGENT-LANDING.md` warns about, snapshots of the superseded repository with no common ancestor, and
+their enormous diffs are an artefact of having no shared root. Merging any of them would delete the
+contributor layer and the validators. They stay closed.
+
+The thirteen with a real merge base are all recent editor and photograph branches, and every one of
+them is *behind* `main`, not ahead: each deletes hundreds of lines of night report that `main`
+already carries. `research-photos`, twelve commits ahead and the likeliest candidate for stranded
+work, differs from `main` in exactly one direction — it lacks 81 lines of the report. Nothing on it
+is new.
+
+One case nearly went the other way and is worth recording as a method note. The recent editor
+branches show thirty-odd lines in `years.json` that `main` does not have, and a check for their
+titles in `main` returned nothing at all: eight entries, apparently dropped. They were not dropped.
+The titles had been rewritten, and the search was matching text that no longer existed rather than
+looking for the events. `main` holds every one of them under corrected wording, and the correction
+is the whole point — "Croakies handed out at the Homecoming tailgate" is now "Croakies ordered for",
+"Ride To Vote drove students to the polls" is "Ride To Vote offered for election day", "Chandler
+Hall opened for the fall semester" is "Chandler Hall named, and set to open", and "ASG votes to
+join the Hilltopper Athletic Foundation" is "A bill to join the Hilltopper Athletic Foundation
+fails". Those are the advance-notice trims from #458 and its neighbours, sitting exactly where they
+should be. The branches hold the pre-correction text. A string search for a title is not a search
+for an event, and on this archive, where the editorial work *is* the rewording, it will keep
+producing that false alarm.
+
+## What was verified instead
+
+With no queue, the spot check went to the work that reached the live site today. #467 is the only
+recent merge touching `data/`: three events and a rewritten profile for Joe Rains, 1992-93.
+
+Four claims, checked against `herald-index-full.json` rather than by crawling, and all four hold
+with their dates matching their labels. Item 7677, 21 January 1993, carries Matthew Tungate's
+"Joe Rains Leads Student Government Association Fight Against Likely Tuition Hike" and, separately,
+an item telling students to call in their tuition concerns — both halves of the entry. Item 7826,
+11 March 1993, carries "Student Government President Won't Seek Re-Election – Joe Rains". Item
+7840, 29 April 1993, carries "Joe Rains Views Year in Student Government Association Positively",
+and the entry attributes the judgement to the paper rather than adopting it, which is the right
+handling of a living person's own assessment. Item 4313 is the *On Campus* of 19 August 1992
+introducing the Board of Regents, and Joseph Rains is named in it — a contemporaneous corroboration
+of the regent seat that until now rested on SGA's 2001 roster, which is exactly the upgrade from
+later list to contemporaneous source the standing rules ask for.
+
+The trap that applies here is the spring election, and it is handled correctly: Donald Smith won in
+April 1993 and is filed in 1993-94, not in the year of the ballot. The 29 April entry places his
+win "a week after" and the dates agree, 22 to 29 April.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0, the latter confirming the
+drop box still refuses `main`, a disguised `main`, a ref path and another agent's branch.
+`check_duplicates.py` returns the same four pairs it has returned for weeks — designated driver
+cards, the student regent advisory committee bill, the Civil Liberties Union lawsuit, plus/minus
+grading. Each is two dated events weeks apart, sequential business rather than one event written up
+twice. Nothing merged.
+
+**61 years, 1,967 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,949 search records.** No event, officer, portrait or
+document changed this run. Nothing was merged because nothing was open, and nothing was cut because
+nothing failed.
+
+## Still open
+
+- **The standing brief, seventh mention.** It opens every editor run against #6, #7 and #8 as
+  "stale since 4 August". They were closed on 18 August. Until the prompt is edited, each run
+  spends its first minutes establishing the same negative. Nothing else in the brief is wrong, and
+  the fall-through to an empty queue works.
+- **A trailing newline.** `data/years.json` lost the newline at end of file in #467. Cosmetic, no
+  effect on parsing or build, but it will show as a spurious last-line change in every future diff
+  until someone restores it.
+- **The attribution footer now carries a session link, and that is new.** Six previous runs
+  recorded the appended "Generated by Claude Code" line as carrying no session link, and noted that
+  the link is the half `CLAUDE.md` names specifically. On this run's pull request it did: the
+  footer appended to #470 pointed at a session URL. It was stripped with a body update and stayed
+  stripped, unlike the comment footers, which have come back after removal. The repository itself
+  is still clean — no commit, data file or built page carries attribution — but the assumption that
+  only the harmless half of the footer appears no longer holds, and the body of every future pull
+  request should be read back rather than trusted.
+- Carried forward unchanged: Mickie Hennig and Chris Gaddis in the 1989 *Talisman*, still the next
+  photographs run's first job; the platform's attribution footer on pull request comments, which
+  reappears after removal and touches no file in the repository; the scanned half of the blank-Pass
+  list; the 18 legislation files with no text layer; the 728 legislation entries pointing at landing
+  pages; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure in
+  `SGA-60-AGENT-INFO.md`; Charlie Harris's missing portrait; the `Amber Daniels` / `Amber Daniel`
+  pair; Mary Fyfe; the 1999-00 Coates investigation with no recorded outcome; the pre-2000
+  legislation gaps; the 1987 evaluations wording; the twenty-three advance-notice entries worth
+  corroborating from the *Talisman*; and Richey's five words on the 2015 event page.
+
+# 14 September 2026, late — a caption pasted whole for the third time
+
+## What was open
+
+One pull request, #468, `research-photos`, opened this afternoon. The stale #6, #7 and #8 the
+standing brief still names are long closed and the repository is past #467; this is the sixth run
+to record it. `gh` remains uninstalled, as `AGENT-LANDING.md` says; `git fetch` and the GitHub
+tools did the work between them.
+
+## What was reviewed
+
+#468 adds no data. The entire diff is a 77-line run note appended to `SGA-60-AGENT-INFO.md`,
+recording that the last 50 post-2003 officer names were searched against wkuherald.com and that
+none yielded a portrait. Nothing in it reaches a year page, which lowers the stakes but not the
+standard: the note is the instruction the next photographs run will follow.
+
+Six claims were checked rather than taken. The one external citation holds exactly — article
+88699 on wkuherald.com is dated 12 November 2025, is titled for the Go With the Flow programme,
+carries frame `SAV2513.jpg`, and its caption names Humble, Smith and Lun without placing any of
+them. Jackson Smith is carried as Freshman Senator 2025-26. Humble's and Lun's existing portraits
+are described correctly, and neither comes from this photograph. No leader in any of the 61 years
+lacks a portrait, by script rather than by eye. The candidate arithmetic reproduces at 160 names
+against the note's 159, the gap being the four spelling variants the note says it collapsed. And
+`viewcontent.cgi`, retested here against the same known-good article, still answers 403 with
+Cloudflare's challenge page — the blockage is real and not peculiar to that run's container.
+
+"Every year has at least one photograph" is true only because the build counts a leader portrait
+toward a year's total. Twelve years hold no entry in `photos.json`'s `years` list at all. The
+sentence stands as written; the qualification is now on the pull request for whoever hunts year
+photographs next.
+
+## What was cut
+
+Two things, both pushed to the branch before merging.
+
+The note reproduced the Herald caption whole, forty-six words against a limit of fifteen. This
+note has been trimmed for the same offence twice already on this same branch, on 13 September and
+again on 14 September. Three times is a habit rather than an accident, and it is worth naming as
+one: the run that finds a caption is the run that should paraphrase it, because the evidence for
+declining a photograph is who is named and the absence of a left-to-right cue, never the wording.
+The same seventeen-word fragment was trimmed out of the pull request body, which is public text
+published under the project's name.
+
+The second was a contradiction that would have cost a future run real time. The passage said all
+three people named in the caption were already in `photos.json`, two sentences before correctly
+saying only Humble and Lun are. Smith — the entire subject of the search — is precisely the one
+who is not. Left standing, it tells the next run a name is done when it is open.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four long-standing pairs, all on `main` and all read again rather than taken on
+the last pass's word: the designated driver cards funded in November 1997 and distributed in
+February 1998, the student regent advisory committee bill introduced on 28 January 1992 and
+failing after amendment on 6 February, the Civil Liberties Union lawsuit planned in February 1972
+and endorsed in March, and plus/minus grading opposed in September 2003 and legislated against in
+October. Four sequential pairs, not four duplicates. Nothing merged.
+
+**61 years, 1,967 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,949 search records.** No event, officer, portrait or
+document changed this run; the counts move only where earlier merges moved them.
+
+## Still open
+
+- **Mickie Hennig and Chris Gaddis, 1988-89, in the 1989 *Talisman*.** Unchanged and still the
+  next photographs run's first job.
+- **The twelve years resting on a portrait alone** — 1993-94 through 1997-98, 2000-01, 2002-03,
+  2003-04, 2005-06, 2006-07, 2008-09 and 2009-10 — have no year photograph of their own. Worth a
+  pass in its own right rather than as a by-product of the officer sweep.
+- **The 49 pre-2003 officer names** stay blocked on `viewcontent.cgi`, now failed identically
+  seven times since 9 September, counting this run's own test. `catalog.hathitrust.org` is behind
+  the same challenge and is worth retrying from a container that gets past it, since it may hold
+  yearbook scans of its own.
+- Carried forward unchanged: the scanned half of the blank-Pass list; the 18 legislation files
+  with no text layer; the 728 legislation entries pointing at landing pages rather than PDFs; the
+  2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure wanting a cleanup pass across
+  `SGA-60-AGENT-INFO.md`; Charlie Harris's missing portrait; the `Amber Daniels` / `Amber Daniel`
+  pair; Mary Fyfe; the 1999-00 Coates investigation whose outcome is not in the record; the
+  pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three advance-notice entries
+  worth corroborating from the *Talisman*; and Richey's five words on the 2015 event page.
+
 # 14 September 2026, night — the law was wrong about its own best tool
 
 ## What was open
