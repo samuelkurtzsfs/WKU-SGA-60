@@ -5325,6 +5325,18 @@ and every year has at least one photograph. This matches every run since
 gap, 166 named candidates by this run's count of `organization.executive`
 and `organization.senate.officers` entries not already in `photos.json`.
 
+**Editor's note, 14 September: state the filter with the figure.** 166
+could not be reproduced from the file under any reading of that sentence.
+Counted directly, excluding only plain "Senator" and "Senator At Large"
+seats, `organization.executive` plus `organization.senate.officers` gives
+187 title/year pairs without a portrait for that year, 161 distinct names,
+and 159 distinct names holding no portrait anywhere in `photos.json`;
+leave the generic seats in and it is 176 distinct names. This is the same
+trap #463 recorded when the officer gap read 173 one way and 171 the other:
+the figures are all correct and they answer different questions. A bare
+number in these notes is unusable by the next run, and three runs have now
+published a different one. Write the filter beside it or write no number.
+
 `digitalcommons.wku.edu/cgi/viewcontent.cgi` was tested again directly
 against the same known-good article used in the last two runs
 (`article=5695&context=dlsc_ua_records`) and still returned the Cloudflare
@@ -5348,11 +5360,30 @@ Devan Richardson, Caroline Simpson, Alexis Mayne, Zachary Skillman,
 Tribhuwan Singh among them), and the rest turn up only as a name
 mentioned in an SGA meeting-recap article whose photograph - when there
 is one - is captioned for somebody else entirely: the president, a
-different senator quoted in that week's story, or an unrelated subject
-the name happens to share a search hit with (a "Jessica Williams" who
-chalked a Black Lives Matter message on Fountain Square, a "Kelly
-Simmons" Zumba instructor, a "Mark Henry" WWE wrestler - none of them
-the SGA officer being searched for). Checked this way with a real
+different senator quoted in that week's story, or, where the article is
+not about SGA at all, a subject unconnected to the search.
+
+Be precise about which of those it is, because the two disqualify a hit
+for different reasons and an earlier draft of this note ran them
+together. In none of the three examples it gave was the photograph a
+picture of a different person with the same name. In each the searched
+name occurs only in the article's body text while the caption names a
+third party outright: the November 2020 chalking photograph is captioned
+for Chloe O'Bryan, and the May 2011 Zumba photograph for the instructor
+Jacquelyn Cline. The March 2012 WWE caption names nobody, only
+"performers". So the search returns these articles on a body-text match,
+and the caption - the only thing this project accepts as an
+identification - never reaches the officer at all.
+
+Where a caption does carry the searched name, the disqualifier is the
+date, and it has to be checked rather than assumed. The one instance
+this run found: a December 2019 photograph captioned "Jessica Williams,
+a junior from Florence" heads an article on a campus climate group. SGA's
+Jessica Williams chaired Academic Affairs in **2005-06**, so a junior in
+2019 cannot be her - fourteen years apart, two people, no portrait. A
+shared name and a plausible year would not have been enough either; that
+is the Mark Clark Pride Center refusal of 9 September, upheld on
+14 September, and it is the standing rule. Checked this way with a real
 media hit but no matching caption: Dajana Crockett, Chris Jankowski,
 Mallory Treece, Kelly Simmons, Sawyer Coffey, Cole McDowell, Tyler
 Scaff, Rachel Keightley, Temple Ricke, Amber Daniel, Cody Cox, Madison
