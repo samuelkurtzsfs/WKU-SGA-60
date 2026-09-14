@@ -85,23 +85,36 @@ following **spring**. If they differ, someone is missing. Mark an acting officeh
 
 ## Search locally before you crawl
 `data/herald-index-full.json` covers the whole digitised collection with no keyword filter:
-11,850 items and 17,601 index lines, 1875 to 2026. Grep it first. It answers most "was X
+11,850 items and 141,079 index lines, 1875 to 2026. Grep it first. It answers most "was X
 president that spring" questions in a second and costs TopSCHOLAR nothing.
-Rebuild with `python3 scripts/harvest_herald_index.py --all` (about 35 minutes, paced).
+Rebuild with `python3 scripts/harvest_herald_index.py --all --refresh` (about 35 minutes, paced).
+**Keep the `--refresh`.** Without it the resume logic skips every item already on disk, so a
+parsing fault already written survives rerun after rerun, each printing "done". That is exactly
+how this file sat truncated for weeks.
 
-**But it is not complete, and a miss in it proves nothing.** Every stored line is cut at 300
-characters; 5,892 of the 17,601 lines (a third) sit exactly at that cap, truncated mid-headline.
-A *Herald* issue page lists thirty or more articles in one abstract, so what survives locally is
-usually the first two or three. Checked on 18 August 2026: the 14 April 1994 issue
-(`dlsc_ua_records/7878`) keeps one headline locally out of the thirty-seven the landing page
-actually carries — and the one that matters, the SGA election story, is among the thirty-six cut.
-So: a **hit** in this file is good evidence. A **miss** is not evidence of absence, and must never
-be the grounds for cutting a claim or writing "no source found". Open the issue's landing page
-before you conclude anything negative.
+**The 300-character truncation is fixed, as of 10 September 2026.** Until then every stored line
+was cut at 300 characters, which kept the first two or three headlines of an issue and threw the
+rest away. The `--all` parser now splits each `<li>` out of the abstract and keeps it whole:
+nothing is capped — 532 lines run past 300 characters, the longest 2,866 — and the 3,588 *Herald*
+issues in the file carry 29.5 index lines apiece on average, which is the issue's whole article
+list rather than its head. The worked example that used to prove the opposite now proves this.
+The 14 April 1994 issue (`dlsc_ua_records/7878`) holds 35 headlines locally, and four of them are
+the SGA election story that was previously among the missing.
+
+**A miss still proves nothing, but for a different reason now.** This is an index, not full text:
+it holds what the archivist itemised, so a person named only in the body of an article is
+invisible in it whatever the parser does. 110 *Herald* issues still carry a single line and 389
+items carry none. (Most other one-line entries are not *Herald* issues at all but photograph
+composites, programmes and newsletters, whose whole description really is one sentence.) So a
+**hit** is good evidence, and now a far likelier one than this file's reputation suggests. A
+**miss** is still not evidence of absence, and must never be the grounds for cutting a claim or
+writing "no source found". Open the issue's landing page before you conclude anything negative.
 
 `data/herald-index.json` is the filtered subset the site renders and is **not** a research tool:
 it keeps only issues whose index mentions student government, so anyone named in a headline that
-does not say SGA, ASG or student government is invisible in it.
+does not say SGA, ASG or student government is invisible in it. The old caps still apply to this
+file by design — at most 12 lines an issue, each cut at 300 characters — which is one more reason
+not to research in it.
 
 ## Sources, in order of usefulness
 1. `digitalcommons.wku.edu/dlsc_ua_records/` — Herald back file, indexed article by article

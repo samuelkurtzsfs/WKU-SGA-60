@@ -1,3 +1,212 @@
+# 14 September 2026, night — the law was wrong about its own best tool
+
+## What was open
+
+Nothing. `mcp__github__list_pull_requests` returns an empty list. The three stale branches the
+standing brief still sends each run at first, #6, #7 and #8, closed on 18 August; this is the
+fifth run to record it, and the repository is past #466. `gh` is still not installed, exactly as
+`AGENT-LANDING.md` says; the push dry run proved write access and the GitHub tools did the listing.
+
+Every research branch was checked by content rather than by commit count. `research-photos` sits
+nine commits ahead of `main` and carries nothing: the only difference is the 99 lines of night
+report that `main` gained after the branch was last merged. Nothing is sitting lost.
+
+## What this run changed
+
+With no pull request to gate, the run went at the standing item that had been carried forward
+unchanged for weeks — `CLAUDE.md`'s account of `herald-index-full.json`. It is wrong, and it has
+been telling every routine that its best local research tool is a third truncated rubbish.
+
+`CLAUDE.md` said the file held 17,601 index lines, every one cut at 300 characters, with 5,892 of
+them sitting at that cap. It holds **141,079 lines**, and the cap is gone: exactly one line is 300
+characters long, by coincidence, while 532 run past it and the longest is 2,866. The `--all`
+parser was fixed on 10 September (`43b7d5f1`) to split each `<li>` out of an issue's abstract and
+keep it whole. Nobody updated the law.
+
+The worked example `CLAUDE.md` cites to prove the file useless now proves the opposite. It says
+the 14 April 1994 issue (`dlsc_ua_records/7878`) keeps one headline out of thirty-seven and that
+the SGA election story is among those cut. That entry now holds 35 headlines, and four of them are
+the election story: the primary tally, the Editor's Hotline item, Mark Brown on the vote mattering,
+and Tonya Root on Scott Sivley not following SGA procedure.
+
+The rewritten paragraphs keep the standing caution, because it is still true, but on its real
+grounds. This is an index, not full text: it holds what the archivist itemised, so anyone named
+only in an article's body is invisible in it whatever the parser does, and 110 *Herald* issues
+still carry a single line while 389 items carry none. A miss is still not proof of absence. It is
+simply far less likely now than the file's reputation suggests. Measured against three landing
+pages opened this run, the index holds 36 of 38 items, 36 of 38, and 33 of 35 — the whole article
+list bar what looks like page furniture. The `--refresh` flag went into the rebuild line too:
+without it the resume logic skips everything already on disk, which is how the truncation survived
+reruns that all printed "done". The stats table in `SGA-60-AGENT-INFO.md` carried the same stale
+figure and now shows both.
+
+## What the fixed index then found
+
+The first thing asked of it was a standing open item: how Joe Rains's term ended, 1992-93. Thirteen
+items name him. Two answer the question, and both were confirmed against their landing pages rather
+than taken from the index.
+
+- **11 March 1993** (Herald 68:44, `dlsc_ua_records/7826`): the student government president would
+  not seek re-election. The term ended by his own choice, not by a resignation.
+- **29 April 1993** (Herald 68:56, `dlsc_ua_records/7840`): a week after Donald Smith won the
+  election to succeed him, the paper carried Rains's account of his year, reported as positive.
+
+A third item was a plain gap in the year: **21 January 1993** (Herald 68:30,
+`dlsc_ua_records/7677`), Rains leading SGA's fight against a likely tuition increase, with a second
+item in the same issue telling students to call in their concerns. Three events added, each written
+to what its headline proves and no further — no vote, no number, no outcome that the headline does
+not carry.
+
+One correction matters more than the additions. Rains's profile asserted that the digitised record
+"does not name him directly in any indexed description." That was a truncation artifact written up
+as a fact about the archive, and it is exactly what `CLAUDE.md` forbids: a miss in a local file
+turned into a published negative claim. Rewritten to what the record actually holds. The minutes
+detail it carried — the 'Just Ask Joe' call-in show, Project Western, President for a Day — was
+kept, since that part was sourced and true.
+
+His student regent seat also stopped resting on a later list. It was carried on SGA's own roster of
+former presidents, archived in 2001, which is the weakest class of source this project recognises.
+*On Campus* of 19 August 1992 (`dlsc_ua_records/4313`), the university's own newsletter, introduced
+the Board of Regents and listed Joseph Rains among its members — contemporaneous, and from the
+university rather than from SGA.
+
+## Also checked, and left alone
+
+The `Amber Daniels` / `Amber Daniel` pair was re-read in full. It needs nothing: both records carry
+the spelling doubt in their notes, neither profile claims the two are one person, and each states
+outright that nothing confirms it. That is "flag, do not fix" working as intended, not a defect
+waiting on an editor. The 2014-15 judicial page spells her Daniels, the Senate minutes of
+2 February 2016 spell her Daniel, and a search of the full index returns nothing either way — which,
+per the rule restated above, settles nothing. It stays open until a third source turns up.
+
+The four pairs `check_duplicates.py` reports are the same four sequences as ever — cards funded and
+later distributed, a bill introduced and later failed, a lawsuit planned and later endorsed, grading
+opposed and later legislated against. Not duplicates. Nothing merged.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four pairs and no new one.
+
+**61 years, 1,967 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,949 search records.**
+
+## Still open
+
+- **The standing brief, sixth time.** It opens every editor run at #6, #7 and #8 and at
+  `gh auth setup-git`. All four have been wrong for four weeks.
+- **A follow-up on Rains worth one fetch.** The Herald of 18 November 1993 (`dlsc_ua_records/7848`)
+  carries an item on him as a former president. The index line reads with a word dropped — "Former
+  Student Government Association Enjoying Student Life" — so it was left out rather than guessed at.
+- **The rest of the `SGA-60-AGENT-INFO.md` stats table.** Only the Herald index row was verified and
+  corrected this run. Several others look stale against today's build and none of them were checked.
+- Carried forward unchanged: the scanned half of the blank-Pass list; the 18 legislation files with
+  no text layer; the 728 legislation entries pointing at landing pages rather than PDFs; the 2012-13
+  Resolution 5-13-S indexing gap; the "57 regents" figure; Charlie Harris's missing portrait; the
+  `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation whose outcome is
+  not in the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three
+  advance-notice entries worth corroborating from the *Talisman*; Mickie Hennig and Chris Gaddis in
+  the 1989 *Talisman*; and Richey's five words on the 2015 event page.
+
+# 14 September 2026, evening — a photograph run merged, and three worked examples that taught the wrong lesson
+
+## What was open
+
+One pull request, #465, the photograph routine's evening run on `research-photos`. Cut cleanly from
+the current tip of main — merge base `94feeb2f`, eight commits ahead, nothing behind — so none of
+the orphan-branch machinery in AGENT-LANDING applied. The stale #6, #7 and #8 the standing brief
+still sends each run to work have been closed since 18 August; this is the fourth run to record it.
+GitHub answered normally. `gh` is still not installed; `git push` and the GitHub tools both work.
+
+## What it contained
+
+Seventy-eight lines added to `SGA-60-AGENT-INFO.md` and nothing else. No data file, no photograph,
+no entry in `photos.json`, nothing reaching the live site. The run searched 77 executive-cabinet and
+Senate-officer names against wkuherald.com and found no usable portrait, and wrote up the dead end
+so the next run would not repeat it.
+
+A documentation-only diff is still worth checking, and this one is the argument for why. A working
+note is what the next run reasons from. A note that records the right refusal for the wrong reason
+teaches a method that will eventually accept a photograph it should refuse.
+
+## Verified
+
+Every claim in the diff, against its source:
+
+- 61 years, no leader-year pair without a portrait, no year without a photograph. Todd, Dawson,
+  Johnson and Gilley all four already carrying one.
+- `viewcontent.cgi` on `article=5695&context=dlsc_ua_records`: 403, Cloudflare "Just a moment...".
+  Fifth straight session. The landing page for the same collection returns 200.
+- archive.org holds exactly the 19 Talisman identifiers claimed — 1971-1981, 1986, 1987, and six
+  pre-1966 (1943, 1946, 1947, 1963, 1964, 1965). Nothing past 1987.
+- The digitalcommons landing page carries two images, both `/assets/md5images/` platform furniture.
+  No page image, no thumbnail. The gated PDF has no substitute.
+- `web.archive.org` answered 302 to a normal capture redirect. Reachable this session.
+- 45 of the 46 names listed are genuine officers holding no portrait; the 46th is the same person
+  under a middle initial, `Cacy A. Schooler`, 2007-08 Secretary of the Senate. None already had one.
+- Both halves of the run's classification reproduce independently. Ten names from the "no hits at
+  all" list: all ten return zero. Ten from the "media hit but no matching caption" list, re-searched
+  with the embedded media: not one featured-image caption names the officer.
+
+## Cut
+
+**The three worked examples.** The note described each discarded newspaper hit as a photograph of a
+different person sharing the officer's name. In none of the three was that so. The November 2020
+chalking photograph is captioned for Chloe O'Bryan, not a "Jessica Williams". The May 2011 Zumba
+photograph is captioned for the instructor Jacquelyn Cline, not a "Kelly Simmons". The March 2012
+WWE caption names nobody, only "performers". In each case the searched name appears only in the
+article's body text, which is why the search returned it and why the caption never reaches the
+officer at all.
+
+That is a different disqualifier from a namesake, and the difference is the whole game. A
+name-collision is settled by looking at the person; a caption-mismatch by noticing that the caption
+never names them. A run carrying the first as its pattern is a run that will one day accept a
+photograph because the namesake theory looked unlikely. Rewritten to what the captions say.
+
+One caption does carry a searched name: a December 2019 climate article captioned "Jessica Williams,
+a junior from Florence". It is not her. SGA's Jessica Williams chaired Academic Affairs in 2005-06,
+fourteen years earlier. The note now gives the date as the disqualifier and cites the Mark Clark
+Pride Center refusal as the standing rule, since a shared name and a plausible year would not have
+been enough either.
+
+The run's refusals were right every time. Only the reasoning recorded for them was wrong. The cut
+also takes an uninvolved third party's political activity out of a note that had misattributed it
+to her to begin with.
+
+**The officer-gap count.** 166 could not be reproduced under any reading of the sentence stating it.
+Counted directly: 187 title/year pairs without a portrait for that year, 161 distinct names, 159
+distinct names holding no portrait anywhere, 176 with the generic Senator seats left in. This is
+#463's 173-against-171 again — every figure correct, each answering a different question. The
+reproducible numbers are now written beside the filter each one answers. Three runs have published
+three different counts for this gap. Write the filter beside the number or write no number.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py` prints the
+same four standing pairs as the last three runs; each is two dated events months apart — a bill
+introduced and a bill failing, a suit planned and a suit endorsed, a stance taken and legislation
+later passed — and none is a duplicate.
+
+61 years, 1,964 events, 60 presidents. 2,652 recorded terms held by 1,810 people, 2,615 of them
+(98%) carrying an account of what the person did. 308 documents, 1,111 legislation files, 4,946
+search records. 47 people recorded under more than one spelling. Unchanged from the last run, no
+data file having been touched by either the research run or this review.
+
+## Still open
+
+The portrait gap for executive-cabinet and Senate officers, which `viewcontent.cgi` is now the only
+route to and which has failed on five consecutive sessions. Roughly 90 of the candidate names have
+been individually searched across three runs with nothing found; the remainder are pre-2003 titles
+that wkuherald.com cannot answer for and that archive.org's 1988-2002 Talisman gap does not cover.
+A future run should not repeat the name-by-name sweep on those without first getting past the
+Cloudflare challenge.
+
+John Lyne against Larry Zielke for 1970-71, and David Payne for 1982-83. Unchanged.
+
+The editor Routine's stored brief is still stale, and no run can fix it from inside: it was created
+through the web API and an agent may only edit Routines it created itself. The corrected text has
+been sitting in `.research/EDITOR-BRIEF.md` since 14 September, ready to paste.
+
 # 14 September 2026, late — an empty queue, and a merge hazard that turned out not to be one
 
 ## What was open
