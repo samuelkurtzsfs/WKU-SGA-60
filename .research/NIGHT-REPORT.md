@@ -1,3 +1,112 @@
+# 14 September 2026, small hours — an empty queue, and five corrections read against the paper
+
+## What was open
+
+Nothing. `mcp__github__list_pull_requests` returns an empty list, and the last
+merge, #459, was reviewed and merged by the run before this one. The standing
+brief's instruction to work #6, #7 and #8 oldest first is still wrong: those were
+closed on 18 August, four weeks and 450 pull requests ago.
+
+Twenty-three research-* branches sit ahead of `main` by the commit count, which
+looks alarming and is not. Four of them — `research-photos`,
+`research-editor-0913-night`, `-blankpass` and `-advance-notices-2` — carry the
+work of #459, #450, #451 and #458, all squash-merged, so their commits are not
+ancestors of `main` even though their content is on it. Compared by content
+rather than ancestry (`git diff origin/main origin/<branch> -- data/ .research/`)
+every one of them is purely behind: deletions only, nothing unlanded. The rest,
+the ones dated 4 August, are the orphan snapshots `AGENT-LANDING.md` warns
+against merging. Nothing is stranded.
+
+## What was audited instead
+
+`main` itself, on the principle recorded in #454 that a merge returning 502 has
+still merged and may have landed without anyone checking it.
+
+`build.py` regenerates `site/` to exactly what is committed. The only drift
+across 88 files is the footer date advancing to 14 September and the matching
+`revised` date in the 61 citation strings — no content moved. That is the check
+worth having: it means every merge since the last rebuild did get built.
+
+Then a spot check of #451, the pass I judged most dangerous of the recent ones,
+because it does not add facts, it *changes* recorded ones — five measures the
+archive said passed, restated as failed or as unrecorded. A wrong correction
+publishes a wrong fact just as surely as a wrong claim. All seven checks held,
+and they were read off the documents themselves rather than the text layer:
+
+- **Bill 86-21-S** — the Summary of Action sheet records Pass 7, Fail 14 and the
+  word FAILED, and the forwarding, follow-up and administration-response lines
+  do all read N/A. The entry's "7 votes to 14" is exact.
+- **Bill 91-3-S** — rendered: a FAILED stamp across the header. Author the
+  Student Athletic Committee, sponsor Julie Wedge, and the $500 struck through
+  with $100 written above it, which is the "sum amended by hand" the entry
+  describes.
+- **Bill 99-13-S** — rendered: a red FAILED stamp, first reading 3/23/99, second
+  3/30/99, and the Fail line filled in by hand 4-6-99. The entry's 6 April date
+  is right.
+- **Bill 99-16-S** — rendered: FAILED stamp, readings 3/30 and 4/06, Pass, Fail
+  and Other all empty. Author Kyle Matthews, sponsor Legislative Research.
+- **Resolution 90-18-S, 92-7-S and 91-2-F** — the three downgraded to "the
+  document does not record whether it was adopted". Rendered and read page by
+  page: the lines really are blank, no tick, no stamp, and none of the three has
+  a Summary of Action sheet carrying a vote elsewhere. The hedge is the correct
+  reading, not a cop-out.
+
+That last group is the one trap 2a exists for, and it cuts both ways: 86-21-S
+proves an outcome can be hiding on a second sheet when page one looks empty, so
+"blank" has to mean blank on every page. It was.
+
+## What was cut
+
+Nothing. No data file changed this run. No event, officer, portrait or document
+was added, altered or removed.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` returns the same four standing pairs and they were read
+again rather than waved through — driver cards funded November 1997 and
+distributed February 1998, the regent advisory committee bill introduced
+28 January 1992 and failing on 6 February, the Civil Liberties Union suit planned
+in February 1972 and endorsed in March, plus/minus grading opposed in September
+2003 and legislated against in October. Four sequences, not four duplicates, as
+before.
+
+**61 years, 1,964 dated events, 60 people who were president. 2,652 terms held by
+1,810 people, 2,615 of them (98%) carrying an account of what the person did.
+308 documents, 1,111 legislation files, 4,946 search records.** Unchanged.
+
+## Still open
+
+- **The standing brief, now with a definite answer.** Correcting it at the source
+  was attempted this run and refused: the Routine was created through the web API
+  by the owner, and an agent may only edit Routines it created itself — it can
+  disable itself and nothing more. So no run can fix this, and it will keep
+  costing every run the same few minutes until Sam pastes in a new one. The
+  corrected text is now in `.research/EDITOR-BRIEF.md`, ready to copy, with the
+  stale-branch paragraph and the "four routines" line rewritten and three things
+  later runs learned folded in: `gh` is not installed, `pdftotext` is not either
+  and returns empty output rather than failing, and what a run should do when the
+  queue is empty.
+- **Two routines enabled, not four.** `SGA 60 - editor` every three hours and
+  `SGA 60 - portraits` every six. The decade, backlog, senate, profiles and
+  legislation routines are all disabled, which is the real reason the queue keeps
+  coming up empty — worth a decision either way rather than leaving the editor
+  running eight times a day over nothing.
+- **The attribution footer, a fourth sighting.** Deliberately left off this run's
+  pull request body and appended by the platform anyway. No session link, the
+  half `CLAUDE.md` names; no commit, data file or built page carries attribution.
+  Only the GitHub conversation does.
+- Carried forward unchanged: priority 3 on the photographs beat, the 166 cabinet
+  and Senate officers without a portrait; Mickie Hennig and Chris Gaddis in the
+  1989 *Talisman*; the scanned half of the blank-Pass list; the 18 legislation
+  files with no text layer; the 728 legislation entries pointing at landing pages;
+  the 2012-13 Resolution 5-13-S gap; the "57 regents" figure; the two Herald items
+  on Joe Rains's term; Charlie Harris's portrait; `Amber Daniels` / `Amber Daniel`;
+  `CLAUDE.md`'s stale account of `herald-index-full.json`; Mary Fyfe; the 1999-00
+  Coates investigation; the pre-2000 legislation gaps; the 1987 evaluations
+  wording; the twenty-three advance-notice entries wanting *Talisman*
+  corroboration; and Richey's five words on the 2015 event page.
+
 # 13 September 2026, late night — a photograph run that found nothing, checked anyway
 
 ## What was open
