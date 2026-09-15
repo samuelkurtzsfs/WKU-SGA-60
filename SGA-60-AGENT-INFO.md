@@ -5644,10 +5644,21 @@ the host rather than believe either verdict. It does not affect anything this
 run concluded, since none of the findings above rest on Wayback.
 
 **A 15 September 2026 run (photograph agent).** Re-checked from scratch rather
-than trusting the note above: still 1,388 leader-photo entries, still zero
-leaders (president, regent, cabinet or Senate) without a portrait, still the
-same twelve year-photograph gap years. Nothing to do on priorities 1, 2 or 4 —
-all three are complete and have been since before this run started.
+than trusting the note above: still 1,388 leader-photo entries, still zero of
+the 73 `leaders` objects in `years.json` — the presidents and student regents —
+without a portrait, still the same twelve year-photograph gap years. Priorities
+1 and 2 are complete in that sense and have been since before this run started.
+
+**Editor's correction, 15 September.** This paragraph first read "zero leaders
+(president, regent, cabinet or Senate) without a portrait," and that is wrong.
+It is true only of the `leaders` array. Cabinet officers, Senate officers and
+committee chairs live in a year's `organization` block, not in `leaders`, and
+they are **not** covered: of 1,055 such name slots across the 61 years, **193
+distinct people have no portrait entry at all** — including all six of the
+2010s cabinet officers this very run went looking for. Priority 2 is therefore
+not finished if it is read to include cabinet and Senate officers, and the
+193 are the standing queue. Check the `organization` block, not just
+`leaders`, before reporting portrait work complete.
 
 `viewcontent.cgi` was tested again against the specific lead this file's own
 "still open" list names for the next run — article 1413, the 1989 *Talisman*
@@ -5680,9 +5691,20 @@ Tried a handful of 2010s cabinet officers against `wkuherald.com`'s WordPress
 API as well (Rachel Keightley, Jessi Wurth, Liz Goddard, Monique Gooch, Aaron
 Pawley, Sawyer Coffey): Keightley's only clean hit
 (`sga-welcomes-new-and-old-members-at-first-meeting-of-the-year`, 2 Sep 2015)
-names her in body text with no image anywhere in the post; Goddard and Gooch
+names her in body text with no photograph of her; Goddard and Gooch
 returned no hits at all; the rest matched only unrelated people or unrelated
 stories. Nothing added.
+
+**Editor's correction, 15 September.** The Keightley sentence first read "no
+image anywhere in the post," which is not so: post 35443 carries a featured
+image (`featured_media` 35444) captioned "Jay Todd Richey, WKU's Student
+Government Association president, speaks to senate members …" It is a
+photograph of Richey, not of Keightley, and Richey already has a portrait on
+file, so the conclusion — nothing to add for Keightley — stands. Recorded
+because the wkuherald WordPress API puts the featured image outside
+`content.rendered`: a run that counts `<img>` tags in the body alone will
+read a captioned, usable photograph as no photograph. Query
+`_fields=featured_media` and resolve it against `/wp/v2/media/<id>`.
 
 `archive.org`'s own download host was reliable today for full PDFs (three
 80-90MB yearbook files fetched cleanly with a resume-and-retry loop, after
