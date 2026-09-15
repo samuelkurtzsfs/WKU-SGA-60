@@ -5555,6 +5555,94 @@ twelve-year year-photograph gap both need `viewcontent.cgi` or an equivalent
 that is not open from this container, and re-running today's exhausted
 sweeps against wkuherald.com or archive.org would not find anything new.
 
+### Photograph run of 15 September: routes re-tested again, unchanged; wkuherald.com's image gap dated precisely
+
+Confirmed the starting state before touching anything: Nick Todd, Katie
+Dawson, Jeanne Johnson and Reagan Gilley all still carry a portrait in
+`data/photos.json` (1,388 leader-photo entries in total now); every
+president and student regent across all 61 years still has one; and the
+`years` overlay carries an entry for all 61 academic years, but only 49
+distinct years — the same twelve still lack a year-level photograph:
+1993-94, 1994-95, 1995-96, 1996-97, 1997-98, 2000-01, 2002-03, 2003-04,
+2005-06, 2006-07, 2008-09, 2009-10.
+
+Re-tested every previously-blocked route fresh rather than trusting
+yesterday's record, since this file's own notes say reachability varies by
+container and by hour: `digitalcommons.wku.edu/cgi/viewcontent.cgi` against
+the standing known-good article (`article=5695`) and against the four
+specific candidate articles the 23 August run left queued for the
+2000-01/2003-04/2005-06/2008-09 gap (`article=9903`, `10372`, `4695`,
+`7740`) — all five 403, Cloudflare's "Just a moment..." challenge, both via
+`curl` with the documented navigation headers and via the platform's own
+`WebFetch` tool. `catalog.hathitrust.org` — 403, same challenge.
+`web.archive.org` — connection reset at the proxy layer (the intermittent
+failure mode some 13-14 September sessions also hit, not the clean redirect
+others got). All three routes are exactly as closed as the 14 September
+night pass found them; nothing has changed.
+
+**New this run: why wkuherald.com's search-by-officer-name sweeps have
+found nothing for these years, established structurally rather than
+name by name.** `wkuherald.com`'s WordPress API does reach 2003-04
+content — a full run of headlines for that year came back clean, including
+the Nick Todd election and investigation coverage (`todd-elected-sga-president`,
+`todd-takes-office-amid-controversy`, `sga-president-elect-under-investigation`,
+`investigation-greets-students-with-disbelief`, `outgoing-sga-prez-sees-future-helping-others-as-minister`,
+and the March 2004 election-week set: `president-candidates`,
+`sga-candidates-debate`, `executive-vp-candidates`, `administrative-vp-candidates`,
+`senate-candidates`). None of it carries a picture: every one of the fifty
+2003-04 posts returned `featured_media: 0` and none has an `<img>` tag
+anywhere in `content.rendered` — these are plain-text imports tagged
+`snocf-article` in their class list, an old student-newspaper CMS migration
+that carried the words across and dropped every photograph. Checked whether
+this is specific to 2004 or general: pulled a full year of posts for 2007,
+2009, 2010, 2011, 2012 and 2013. 2007 and 2009 are 0 for 0 with featured
+images; 2010 is the turn, 16 of 20 sampled posts already carrying one; 2011
+onward stays in the 40-55% range. Narrowed the boundary further inside
+2010 itself — every post from 10 January through 26 April 2010 (i.e., all
+of what would be the tail of the 2009-10 academic year) still reads
+`featured_media: 0`. So the migration's image gap runs through the entire
+2009-10 academic year and clears only after it. **This closes wkuherald.com
+as a photograph source, definitively, for all five of the twelve
+year-photograph-gap years it could otherwise reach by date** (2003-04,
+2005-06, 2006-07, 2008-09, 2009-10) and for any cabinet or Senate officer
+whose only term falls before mid-2010 — not because no photograph of them
+was ever taken or captioned, but because whatever WKU Student Publications
+used to migrate the archive to WordPress never carried images across for
+posts this old. A future run should stop re-running officer-name sweeps
+against wkuherald.com for names whose only years are pre-mid-2010; the site
+has already been asked and its answer is structural, not a miss. The
+remaining 1988-2002 gap (the seven other year-photograph years plus the 49
+pre-2003 officer names) was never reachable by wkuherald.com in the first
+place and is unaffected by this finding — it still needs `viewcontent.cgi`
+or an equivalent this container cannot currently reach.
+
+Nothing added to `data/photos.json` or `data/photos/`; `build.py` and
+`check_data.py` both pass clean against the unmodified tree, checked before
+and after. No candidate lead from the 23 August table remains untested by
+this run or an earlier one.
+
+**Editor's check of the above, 15 September.** Every figure in this note was
+re-derived from the data files rather than taken on trust, and the
+wkuherald.com finding was re-run independently: 1,388 leader entries and no
+leader in any of the 61 years without a portrait; the year overlay's 61
+entries across 49 distinct years, and the same twelve gap years listed above;
+all three named 2004 slugs present with `featured_media: 0`, and
+`todd-elected-sga-president` carrying the `snocf-article` class and not one
+`<img>` in its body; 0 of 50 posts for 2004, 0 of 7 for 2009 and 0 of 9 for
+1 January to 30 April 2010; then 22 of 68 for May to August 2010 and 46 of
+100 for September to December. The boundary is where this note puts it. On
+300-post samples the later years run 45%, 45% and 53% for 2011, 2012 and
+2013, so the 40-55% figure holds — a 50-post sample of 2011 alone reads 36%
+and understates it, which is worth knowing before anyone re-checks this with
+a smaller pull. `viewcontent.cgi` on `article=5695` returned 403 again for
+the editor, with landing pages answering 200 alongside it, so that route is
+closed exactly as described. **The one divergence: `web.archive.org` answered
+for the editor the same night** — 302 then 200 on a real capture — where this
+run hit a reset at the proxy. That is the flip this file has now recorded
+several times, and it is the reason the standing instruction is to re-test
+the host rather than believe either verdict. It does not affect anything this
+run concluded, since none of the findings above rest on Wayback.
+
 ## 9. Restarting a session
 
 ```bash
