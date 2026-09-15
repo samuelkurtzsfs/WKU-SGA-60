@@ -24608,3 +24608,101 @@ And on this pass's own pull request comment: the platform appended a "Generated 
 line to it after posting. It carries no session link this time, and no tool can edit a comment body
 through the interface available here, so it stands. The repository itself is unaffected — no
 commit, data file or built page carries attribution — which is the thing the rule protects.
+
+# 15 September 2026, midday — an empty queue, and the 1970s half of the blank-Pass list
+
+No pull request was open. The 09:29 pass had merged #476 and closed the branch audit, and nothing
+had been pushed since; the four routines had nothing waiting. So the pass went to the oldest thing
+still standing, and found that it was not as closed as the last report said.
+
+## The blank-Pass list was closed for 1985 onward, not for what came before
+
+#432 recorded the list, #440 and #443 cleared the born-digital era, and the 12 September pass read
+forty-two rendered pages from 1985-86 to 2006-07. **Nothing had ever read the rows before 1985.**
+Re-running the match — every event that asserts a measure carried and cites legislation this
+repository mirrors — returns 72 rows, ten of them earlier than 1985-86 and outside every previous
+sweep.
+
+The reason they were missed is worth recording: the sweeps were organised by the *shape of the
+form*, and the 1976-77 form is a shape none of them had. It carries four columns — `INTRODUCED`,
+`ACTION`, `DATE`, `VOTE` — where the later ones carry a single `Status` line. All four values sit
+in the text layer, so no rendering was needed and no regex for a blank line would ever have
+flagged them. They read as clean.
+
+They were not clean. **Three of the four 1976-77 entries were dated to the day the measure was
+introduced and described the day it carried.** That is trap 2a in the handoff file, in a form the
+trap's own description does not cover: not a second reading mistaken for a vote, but an
+introduction date standing in for an action date printed two columns to its right.
+
+- **Bill 2**, constitutional revision committee — introduced 7 September 1976, carried
+  **unanimously on 14 September**. Filed here as 7 September.
+- **Resolution 13**, student minimum wage — introduced 26 October 1976, carried **25 to 1 on
+  9 November**. Filed here as 26 October.
+- **Bill 9**, opposition to a tuition increase — introduced 8 March 1977, carried **16 to 13 with
+  3 abstentions on 29 March**. Filed here as 8 March. The division was close enough to be the
+  most interesting fact about the bill, and the archive did not have it.
+
+None of the three vote counts was anywhere in the archive. All three are now in, with both dates,
+and each event moved to the date it actually carried. Christy Vogt's profile cited the same three
+introduction dates as though they were the dates of passage and was corrected with them.
+
+**Bill 11**, the referendum bill, was already right: introduced and passed 4 April 1977, by
+acclamation, on the one 1976-77 form where the two dates agree. That is why three entries were
+wrong and one was not.
+
+## Two more, from the same pass
+
+- **Resolution 80-1**, permission for room inspection, 1979-80. The entry described the resolution
+  and said nothing about its fate, so a reader would take it as having stood. The page carries a
+  **FAILED** stamp in blue across the status line, under a typed "Failed". Rewritten to record the
+  defeat, and to say what the resolution actually asked for. It reads better for it: the measure
+  argued from the Fourth Amendment and from students renting their rooms, and losing it is the
+  start of the fight that ran through the next academic year.
+- **Resolution 79-18**, public affairs vice-president, 1979-80. The entry asserted the proposal was
+  rejected within a fortnight and attributed it to a Michele Wood report, with no citation for it —
+  the only source on the event was the resolution, whose status line is blank. The report is real:
+  Herald 55:46, 13 March 1980, "Proposal Rejected by Associated Student Government for New Congress
+  Position." Cited now, and the blank status line stated so the reader knows where the failure
+  comes from. A rescue, not a cut.
+- **Resolution 79-16**, the ULTRA extension, was flagged by the same scan and **stands as written**.
+  Its status line is blank too, but the Herald of 7 February 1980 was already cited beside it and
+  reports ASG's support directly. Same rule as the Iracane resolution: corroborated elsewhere in
+  the year, so it stays.
+
+The other seven pre-1985 rows hold. Each carries an explicit mark — `Passed`, `PASSED`,
+`PASSED Unanimously` — and the three 1979-81 forms print one date and one status, so there is no
+second date for an entry to have taken by mistake.
+
+## Also closed
+
+**The designated driver cards**, 1997-98, carried forward as unchecked by the last three reports
+and named there as the shape the blank-Pass trap takes. Checked, and the entry is right. Bill 97-3-F
+reads First Reading 11-4-1997, Second Reading 11-11-97, **Pass X**, with Fail and Other blank — read
+off the rendered page, not the text layer, though in this case the text layer carried it too. "Passed
+on second reading a week later" is exactly what the form says. Struck from the open list.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four long-standing pairs, each a sequence of two events rather than a duplicate.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,945 search records.** The event count is unchanged: every
+correction was a rewrite, and nothing was deleted.
+
+## Still open
+
+- **The pre-1985 sweep should be finished by form, not by year.** Ten rows were read this pass
+  because they assert passage *and* cite a mirrored document. The 1976-77 four-column form is now
+  known; what is not known is how many other entries cite that form's era without asserting
+  passage, and therefore never entered any match. Sweeping by document shape would catch them.
+- Carried forward unchanged: the 728 legislation entries whose source URL points at a landing page,
+  still the single change that would widen this check most; the 18 legislation files with no text
+  layer; the 193 cabinet and Senate officers with no portrait; the 2012-13 Resolution 5-13-S
+  indexing gap; the "57 regents" figure; the two Herald items on how Joe Rains's term ended; the
+  `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; the
+  pre-2003 half of the photograph gap; Mary Fyfe; the 1999-00 Coates investigation outcome; and the
+  pre-2000 legislation gaps.
+- The standing editor brief still names #6, #7 and #8 as stale open pull requests and still tells
+  the run to start with `gh auth setup-git`. All three were closed long ago, `gh` is not in the
+  container, and the clone arrives shallow. Third report to say so.
