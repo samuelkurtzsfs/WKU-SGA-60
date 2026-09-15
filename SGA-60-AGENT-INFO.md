@@ -5735,7 +5735,7 @@ this paragraph instead.
 No photograph was added or removed this run. `build.py`, `check_data.py` and
 `check_duplicates.py` all pass clean on the unmodified tree.
 
-### Photograph run of 15 September (later pass): a full sweep of the 2010-2026 officer gap, and why none of it landed
+### Photograph run of 15 September (later pass): a sweep of the modern officer gap, and why none of it landed
 
 Confirmed the starting state again rather than trust the note above: 1,388
 leader-photo entries, still zero of the 73 `leaders` (president/regent)
@@ -5749,8 +5749,8 @@ challenge (403), and `web.archive.org` is still a connection reset at the
 proxy layer. No change from the pass recorded just above.
 
 **New this run: a complete sweep of `wkuherald.com`'s WordPress search API
-against every one of the 131 cabinet/Senate/committee names in the gap whose
-year is 2010-11 or later** — the part of the 193-name queue this file's
+against 131 of the 193 cabinet/Senate/committee names in the gap, the
+modern slice** — the part of the 193-name queue this file's
 "image gap" finding (the note above titled "routes re-tested again,
 unchanged") says the site can structurally reach. Not attempted before this
 run beyond the six names the prior pass sampled. Searched each full name in
@@ -5766,12 +5766,13 @@ Of 672 posts returned across the 131 searches, 288 distinct photographs, only
 four captions actually named the person being searched for:
 
 - **Cody Cox** (Associate Justice 2015-16, Chief Justice 2016-17) — a single-
-  subject, clearly identified photograph, but of a 2014 feature on students
-  coming out ("In My Skin: Gay students take pride in sexuality"), two years
-  before either of his SGA terms and with nothing to do with SGA. Declined:
-  the brief for this run is photographs of people acting in their student
-  government role, and pairing an unrelated personal disclosure with a public
-  office record is a call this project should not make unilaterally.
+  subject, clearly identified photograph, but from a 2014 *Herald* personal-
+  interest series, two years before either of his SGA terms and with nothing
+  to do with SGA. Declined: not a photograph of him acting in the office.
+  What that series was about is not recorded here and should not be, for the
+  reason set out in the editor's note at the end of this section; a future
+  run that re-finds this photograph should decline it again and leave it at
+  that.
 - **Kayla Distler** (College of Education and Behavioral Sciences Senator,
   2023-24) — a single-subject photograph captioned with her name, but from an
   April 2022 story about a McLean Hall maintenance petition she started as a
@@ -5789,15 +5790,32 @@ four captions actually named the person being searched for:
 - The Cox search also surfaced the same photograph a second time under his
   2015-16 title; not a distinct finding.
 
-Nothing added to `data/photos.json` or `data/photos/`. This closes the
-2010-2026 slice of the 193-name gap as a genuine sweep rather than a sample —
-a future run should not re-run name-by-name wkuherald.com searches for these
-131 people without a new lead, since the site has now actually been asked
-about all of them. What remains open in that gap is the pre-2010 slice (62
-names, 1966-2009), which still needs `viewcontent.cgi` or an equivalent this
-container cannot currently reach, and the un-captioned group photograph
-problem the Jackson Smith case illustrates, which no amount of searching
-fixes.
+Nothing added to `data/photos.json` or `data/photos/`. This was a genuine
+sweep rather than a sample, and 131 of the 193 names were searched.
+
+**Editor's note, 15 September: do not treat "131 swept, 62 open" as a list
+you can reconstruct.** The note as first written described the swept slice as
+the names "whose year is 2010-11 or later" and the remainder as "the pre-2010
+slice (62 names, 1966-2009)". Those two numbers do not come out of a 2010
+boundary. Deriving the gap list from `years.json` and `photos.json` the way
+this note describes gives 99 names in 2010-11 or later and 94 before it; the
+131/62 split matches a **2005-06** boundary exactly and nothing else tested
+(2000, 2003, 2008, 2009, 2010) reproduces both figures. So either the sweep
+covered 2005-06 onward and the label is wrong, or it covered 2010-11 onward
+and the count is wrong, and the log does not record which. The totals it can
+be checked against — 1,388 leader-photo entries, 73 leader records with no
+portrait missing, 193 distinct names across 242 name-slots — all verify
+exactly, so this is a labelling fault in one sentence, not a bad sweep.
+
+The practical consequence: **a future run must re-derive the un-portraited
+list itself and work from that, not from "the 62".** Skipping names on the
+strength of this note risks leaving 2005-2009 officers permanently unsearched
+because a boundary was written down wrong once. Whatever the boundary, what
+is certainly still open is the earliest part of the gap, which needs
+`viewcontent.cgi` or an equivalent this container cannot currently reach, and
+the un-captioned group photograph problem the Jackson Smith case illustrates,
+which no amount of searching fixes. Research routines: state the cutoff you
+actually filtered on, and print the count beside it.
 
 **Also new: six more 1970s-80s officer names checked against archive.org's
 Talisman full text**, the two yearbooks (1978, 1980) already known to be
@@ -5816,6 +5834,30 @@ the next run does not re-download these four PDFs chasing the same six names.
 
 `build.py`, `check_data.py` and `check_duplicates.py` all pass clean on the
 unmodified tree; nothing in `data/` changed this run.
+
+**Editor's note, 15 September: the reason for declining a photograph is
+itself publishable text, and this repository is public.** The Cox bullet
+above originally named the 2014 series the photograph came from and what it
+was about — a first-person disclosure series, on subjects that are nobody's
+business but the subject's, attached to a named living person who at the time
+was a student holding a minor SGA office. The decision to decline the
+photograph was exactly right and the reasoning behind it was sound. Writing
+that reasoning down in full undid it: the detail the photograph would have
+exposed was published anyway, in the project's own permanent record, where it
+is indexed and searchable under his name. CLAUDE.md's living-people rule and
+its instruction to keep to what a source reported about a person's *service*
+both apply to this file, not only to `years.json` and the rendered site.
+
+The rule for every routine, from here on: **a decline is logged in terms of
+the office, never in terms of the thing declined.** "Not a photograph of them
+acting in the office, predates the term, unrelated to SGA" is the whole of
+what a future run needs in order not to re-chase it. If the detail that makes
+a photograph unusable is itself the sensitive detail, that is the strongest
+possible reason to leave it out of the log, not a reason to record it for
+completeness. Benign context stays — the Distler bullet keeps its dorm-
+conditions petition, which is a public civic act a newspaper reported and
+carries no such weight. Sensitivity is the test, not symmetry between
+bullets.
 
 ## 9. Restarting a session
 
