@@ -5643,6 +5643,98 @@ several times, and it is the reason the standing instruction is to re-test
 the host rather than believe either verdict. It does not affect anything this
 run concluded, since none of the findings above rest on Wayback.
 
+**A 15 September 2026 run (photograph agent).** Re-checked from scratch rather
+than trusting the note above: still 1,388 leader-photo entries, still zero of
+the 73 `leaders` objects in `years.json` — the presidents and student regents —
+without a portrait, still the same twelve year-photograph gap years. Priorities
+1 and 2 are complete in that sense and have been since before this run started.
+
+**Editor's correction, 15 September.** This paragraph first read "zero leaders
+(president, regent, cabinet or Senate) without a portrait," and that is wrong.
+It is true only of the `leaders` array. Cabinet officers, Senate officers and
+committee chairs live in a year's `organization` block, not in `leaders`, and
+they are **not** covered: of 1,055 such name slots across the 61 years, **193
+distinct people have no portrait entry at all** — including all six of the
+2010s cabinet officers this very run went looking for. Priority 2 is therefore
+not finished if it is read to include cabinet and Senate officers, and the
+193 are the standing queue. Check the `organization` block, not just
+`leaders`, before reporting portrait work complete.
+
+`viewcontent.cgi` was tested again against the specific lead this file's own
+"still open" list names for the next run — article 1413, the 1989 *Talisman*
+("UA12/2/2 Talisman: Image in the Making," `dlsc_ua_records/413`), sought for
+Mickie Hennig and Chris Gaddis — and was 403 both by `curl` with the
+documented navigation headers and by the platform's `WebFetch` tool. Same
+Cloudflare challenge, same result as every test of this route since late
+August. Nothing new here; recorded only to confirm the lead is still exactly
+where the last run left it.
+
+**A process mistake worth naming so the next run skips it:** spent real time
+re-discovering three dead ends already on file above — David Bass (1977-78,
+ambiguous group photo), David Young (1978-79, quoted with no photograph) and
+Mark Chesnut (1980-81, a name collision with an intramural sports entrant,
+not the ASG treasurer) — by downloading the 1978 and 1980 *Talisman* PDFs
+from archive.org and rendering the pages fresh, before thinking to grep this
+file for the names first. The conclusions came out identical to the ones
+already written up above. **Before spending an archive.org PDF download or a
+`viewcontent.cgi` attempt chasing a missing-portrait name, grep this file for
+the name — a three-second check that would have saved the download here.**
+The technique itself is sound and worth keeping for names genuinely not yet
+tried: download the full yearbook PDF (`archive.org/download/<id>/<id>.pdf`,
+resumable with `curl -L -C - --retry`), open it with PyMuPDF (`pip install
+pymupdf` fresh each session — confirmed again not preinstalled here, matching
+the 3 September note), search page text for the name, and render only the
+matching page at 200 dpi to inspect the actual photograph rather than
+trusting the djvu text's often-garbled OCR of a caption.
+
+Tried a handful of 2010s cabinet officers against `wkuherald.com`'s WordPress
+API as well (Rachel Keightley, Jessi Wurth, Liz Goddard, Monique Gooch, Aaron
+Pawley, Sawyer Coffey): Keightley's only clean hit
+(`sga-welcomes-new-and-old-members-at-first-meeting-of-the-year`, 2 Sep 2015)
+names her in body text with no photograph of her; Goddard and Gooch
+returned no hits at all; the rest matched only unrelated people or unrelated
+stories. Nothing added.
+
+**Editor's correction, 15 September.** The Keightley sentence first read "no
+image anywhere in the post," which is not so: post 35443 carries a featured
+image (`featured_media` 35444) captioned "Jay Todd Richey, WKU's Student
+Government Association president, speaks to senate members …" It is a
+photograph of Richey, not of Keightley, and Richey already has a portrait on
+file, so the conclusion — nothing to add for Keightley — stands. Recorded
+because the wkuherald WordPress API puts the featured image outside
+`content.rendered`: a run that counts `<img>` tags in the body alone will
+read a captioned, usable photograph as no photograph. Query
+`_fields=featured_media` and resolve it against `/wp/v2/media/<id>`.
+
+`archive.org`'s own download host was reliable today for full PDFs (three
+80-90MB yearbook files fetched cleanly with a resume-and-retry loop, after
+one mid-transfer reset each). `web.archive.org` was not: a wildcard capture
+listing answered 200 once, then the next several requests to the same host
+came back as a proxy connection reset, then archive.org's own
+`/wayback/available` and `/cdx/search/cdx` endpoints answered `503`
+("Internet Archive: Temporarily Offline") and then `429 Too Many Requests`
+within the same minute. All three failure shapes are already on file
+separately (reset, 503, and now 429); this run's contribution is only that it
+saw all three from one host inside about ninety seconds, which argues for
+backing off completely rather than retrying through a bad patch.
+
+Checked the three 2004 senate-candidate portraits flagged as a live risk in
+old PR review comments (Jessica Martin, Sarah Cecil, Christina Kayrouz,
+`data/photos/2004-05-*.jpg`) against git history rather than re-downloading
+anything: the caption evidence that resolved the original "which face is
+which" concern for Cecil (checked against Alicia Bachicha's separate,
+adjacent photograph) was quoted in full in commit `6d97fec1` and is intact in
+that commit; the current file's leader entries carry no `caption` field at
+all, on any of the 1,388 of them, which is the documented schema (`CLAUDE.md`
+shows leaders with only `year`/`name`/`file`/`src`; the identifying quote
+belongs in the PR that added the photograph, not in the JSON) rather than a
+regression. Nothing to fix here — flagged only because it took reading three
+commits to be sure, and a future run hitting the same question can start from
+this paragraph instead.
+
+No photograph was added or removed this run. `build.py`, `check_data.py` and
+`check_duplicates.py` all pass clean on the unmodified tree.
+
 ## 9. Restarting a session
 
 ```bash

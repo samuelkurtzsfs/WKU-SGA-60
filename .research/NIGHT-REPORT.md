@@ -24455,3 +24455,124 @@ pre-date this branch. Nothing merged.
   account of `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation outcome; the
   pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three advance-notice entries
   worth corroborating from the *Talisman*; and Richey's five words on the 2015 event page.
+
+# 15 September, second pass — the same pull request, read again and corrected before merging
+
+## What was open
+
+One pull request, #476, "Research: photographs — 15 September run (nothing to add)", on
+`research-photos`. Nothing else. The three branches this routine's standing brief still names as
+stale and open — #6 photographs, #7 the 1980s, #8 the 2020s — were all closed on 18 August and
+have been closed for four weeks; there is nothing there to rescue or to shut down, and the brief
+should stop describing them as rotting.
+
+## What is in it
+
+One commit, one file, seventy lines appended to `SGA-60-AGENT-INFO.md`. No photograph was added,
+moved or removed; `data/` is untouched. The build confirms it: after a full `build.py` the working
+tree shows the one documentation file modified and no change anywhere under `site/`. Nothing in
+this pull request reaches a reader, which sets the standard it has to meet — it is not a claim to
+the public, it is a set of instructions four research routines will act on.
+
+## What was verified
+
+Eight claims taken off the diff and checked against the data or the source itself, not against the
+run's own account of them.
+
+The countable ones held exactly. 1,388 leader-photo entries: 1,388. No leader carrying a `caption`
+field, the point on which the 2004 senate-candidate question turned: zero of 1,388. Sixty-one
+years. All 1,188 files in `data/photos/` begin with real JPEG or PNG magic bytes — no bot-check
+page saved under a `.jpg` name. The twelve-year year-photograph gap is exactly twelve years, runs
+from 1993-94 to 2009-10, and does have the holes the note is careful to admit to: 1998-99,
+1999-2000, 2001-02, 2004-05 and 2007-08 carry photographs inside the range.
+
+The portrait-coverage claim was checked strictly rather than by name. A first pass matched on name
+alone and returned a clean result, which is the error this archive warns about in its own rules;
+re-run on year and name together, against the `id` key the file actually uses, all 73 leader
+objects in `years.json` have a portrait filed under both their year and their name.
+
+Commit `6d97fec1` does hold the Cecil/Bachicha caption evidence the note says it holds. It is worth
+recording that this commit is reachable only from stale `editor-*` branches and is not on `main`,
+and that it is authored `Claude` — a survivor of the pre-rewrite history. `main` itself is clean:
+96 commits, 49 `samuelkurtzsfs` and 47 `SGA 60`, nothing else. A future run citing that hash from a
+fresh clone of `main` will not find it.
+
+Two external claims were checked at the source, one request at a time. `viewcontent.cgi` for
+article 1413 returned 403 here too, while the landing page at `dlsc_ua_records/413` answered and
+identifies itself as "UA12/2/2 Talisman: Image in the Making" — the same asymmetry the note
+describes, described accurately. The Herald article exists at the slug given, dated 2 September
+2015, and names Rachel Keightley as director of Information Technology in its body text.
+
+## What was cut
+
+Two over-claims, both trimmed to what the evidence supports rather than deleted.
+
+The first was the important one. The note opened by reporting "zero leaders (president, regent,
+cabinet or Senate) without a portrait" and concluded that priorities 1, 2 and 4 were complete.
+That is true of the `leaders` array and false of the sentence as written. Cabinet officers, Senate
+officers and committee chairs are not in `leaders`; they sit in each year's `organization` block,
+and of 1,055 such name slots across the 61 years, **193 distinct people have no portrait entry at
+all.** Among them are all six of the 2010s cabinet officers this very run spent its time hunting —
+Keightley, Wurth, Goddard, Gooch, Pawley and Coffey — so the paragraph declaring the work finished
+was contradicted four paragraphs later by the run's own search. Left standing, it would have told
+the next photographs run there was nothing to do. The claim now states what is true of `leaders`,
+names the 193 as the standing queue, and says to read the `organization` block before reporting
+portrait work complete.
+
+The second: the Keightley article was described as carrying "no image anywhere in the post." It
+carries a featured image, `featured_media` 35444, captioned "Jay Todd Richey, WKU's Student
+Government Association president, speaks to senate members …" The conclusion survives — it is a
+photograph of Richey, not of Keightley, and Richey already has a portrait on file — but the reason
+given was wrong, and wrong in a way that would repeat: the WordPress API keeps the featured image
+outside `content.rendered`, so counting `<img>` tags in the body alone reads a captioned, usable
+photograph as no photograph at all. The corrected note says so and gives the query that finds it.
+
+Neither correction touches a fact about a person or a year, and no sourced claim was lost.
+
+## Traps
+
+Most do not apply: a diff that adds no event, person or year cannot misfile an April election,
+promote a committee chair to officer, or split a person across a changed surname. The two that do
+apply are the two that caught something. The advance-notice trap has no purchase here — no crowd
+size, review or financial result is claimed from anything. The over-claim trap caught both cuts
+above. Nothing contradicts the settled facts: the note re-states the Bass, Young and Chesnut dead
+ends exactly as they already stand, including that the 1980 *Talisman* "Mark Chesnut" is an
+intramural sports entrant and not the ASG treasurer, which is a name collision correctly refused.
+No contributor edit is in the diff. The single commit is authored `SGA 60`, and neither the commit
+message nor the diff carries tool attribution.
+
+## Checks
+
+`build.py` completes clean, before and after the corrections. `check_data.py` and
+`check_contrib.py` both exit 0. `check_duplicates.py` returns the same four standing pairs, and
+each was read in full rather than waved through: the student regent advisory committee bill
+introduced 28 January 1992 and failing after amendment on 6 February; the Civil Liberties Union
+action planned in February 1972 and endorsed by Associated Students in March; plus/minus grading
+opposed in September 2003 and legislated against in October; designated driver cards funded by
+Bill 97-3-F in November 1997 and distributed in February 1998. Four sequences of two events each,
+not four duplicates. All four pre-date this branch and none was merged.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,945 search records.**
+
+Merged to `main` after the two corrections above.
+
+## Still open
+
+- **The 193 officers without a portrait.** Newly counted rather than newly true, and now the
+  largest piece of unfinished portrait work in the archive. It is the answer to a photographs run
+  that reports having nothing to do.
+- **Charlie Harris's missing portrait is not missing.** Carried forward on the "still open" list
+  above, but he has had one since a `2010-11` entry sourced to the Herald of 3 May 2011. Struck.
+- **`6d97fec1` is not on `main`.** Evidence cited by commit hash in the handoff file should be
+  quoted in the file, not pointed at, when the commit lives only on a stale branch.
+- **Designated driver cards, 1997-98, "passed on second reading a week later."** Not this branch's
+  doing and not checked this run, but it is the shape the blank-Pass trap takes, and the entry
+  asserts a pass. Worth confirming against the bill sheet image rather than its text layer.
+- Carried forward unchanged: Mickie Hennig and Chris Gaddis in the 1989 *Talisman*, still behind
+  `viewcontent.cgi`; the pre-2003 half of the photograph gap, which has no open route; the scanned
+  half of the blank-Pass list; the 18 legislation files with no text layer; the 728 legislation
+  entries pointing at landing pages; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents"
+  figure; the two Herald items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel`
+  pair; `CLAUDE.md`'s stale account of `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates
+  investigation outcome; and the pre-2000 legislation gaps.
