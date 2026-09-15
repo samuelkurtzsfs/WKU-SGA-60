@@ -24706,3 +24706,223 @@ correction was a rewrite, and nothing was deleted.
 - The standing editor brief still names #6, #7 and #8 as stale open pull requests and still tells
   the run to start with `gh auth setup-git`. All three were closed long ago, `gh` is not in the
   container, and the clone arrives shallow. Third report to say so.
+
+# 15 September, later pass — a photograph run's log, merged after a living-person cut
+
+One open pull request, #478, the rolling photograph branch. One file, `SGA-60-AGENT-INFO.md`,
+eighty-two lines, nothing in `data/`. Merged, after two corrections pushed to the branch first.
+
+The run behind it was good work. It swept 131 of the 193 cabinet and Senate officers who have no
+portrait against the *Herald*'s search API — 672 posts, 288 photographs resolved to their actual
+captions — and found only four captions that named the person being looked for. It declined all
+four and added nothing. The Jackson Smith decline is the one to keep: a genuine SGA photograph of
+a bill being presented on 11 November 2025, refused because the caption names three people in a
+row with no "from left" to tell them apart. That is the rule this archive runs on, applied without
+being asked.
+
+## What I checked
+
+Eleven claims against their sources. The counts the log rests on all verify exactly against the
+data — 1,388 leader-photo entries, 73 leader records with no portrait missing, 193 distinct names
+across 242 name-slots. Both blocked routes verify: `viewcontent.cgi` still returns Cloudflare's
+challenge at 403, `web.archive.org` still resets the connection, while archive.org's download host
+answers. The Smith caption reads verbatim as quoted, and the two other photographs from that
+meeting are of Rush Robinson and Blake Graham, as the log says. The Distler photograph is from
+"McLean Hall students demand compensation for dorm conditions", 13 April 2022, a year before her
+Senate term, as the log says.
+
+## What I cut, and why
+
+**The Cox bullet named the 2014 series its photograph came from, and what that series was about.**
+The photograph was declined, correctly, as nothing to do with his SGA service. Then the reason for
+declining it was written out in full — and that published the detail anyway, under a named living
+person who was at the time a student holding a minor SGA office, in a repository that is public and
+searchable under his name. The decline and the log worked against each other. The bullet now
+records the decline in terms of the office: not a photograph of him acting in it, predates the
+term, unrelated to SGA. That is the whole of what a later run needs in order not to chase it again.
+
+The Distler bullet keeps its dorm-conditions petition. It is a public civic act a newspaper
+reported and it carries no comparable weight. Sensitivity is the test, not symmetry between
+bullets, and cutting benign material to look even-handed is its own kind of editorial failure.
+
+An editor's note now sits at the end of the section stating the rule, so the next photograph run
+does not reconstruct the same passage from scratch: **a decline is logged in terms of the office,
+never in terms of the thing declined.** Where the detail that makes a photograph unusable is itself
+the sensitive detail, that is the strongest reason to leave it out, not a reason to record it for
+completeness.
+
+**The swept slice is relabelled.** The log called the 131 names it searched the ones "whose year is
+2010-11 or later", and the remainder "the pre-2010 slice (62 names, 1966-2009)". Those two figures
+do not come out of a 2010 boundary. Deriving the gap list the way the log describes gives 99 names
+in 2010-11 or later and 94 before it; 131/62 matches a 2005-06 boundary exactly, and none of 2000,
+2003, 2008, 2009 or 2010 reproduces both numbers. Either the sweep ran from 2005-06 and the label
+is wrong, or it ran from 2010-11 and the count is wrong, and the log does not say which.
+
+I did not quietly relabel it 2005. The whole function of that passage is to tell later runs *not*
+to search these names again, so an unfounded boundary there does not cause a wasted hour, it causes
+a permanent silent gap. The note now states the discrepancy plainly and tells the next run to
+re-derive the list rather than trust the split. Everything in the log that could be checked checked
+out, so this is one sentence mislabelled, not a bad sweep.
+
+Merged as a squash, so the cut text is on the branch and never entered main.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four long-standing pairs, none of them in this diff and each a sequence of two
+events rather than a duplicate: a bill introduced against the same bill failing after amendment,
+the Civil Liberties Union planning action against Associated Students endorsing the suit, and SGA
+lining up against plus/minus grading against passing legislation on it.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,945 search records.** Unchanged: this pull request
+touched no data.
+
+## Still open
+
+- **The officer-portrait gap is now of unknown extent, which is worse than knowing it is 62.**
+  Until a run re-derives the un-portraited list and records the cutoff it actually filtered on,
+  nobody can say which of the 193 have been asked about. This is the first thing the next
+  photograph run should fix, and it is cheap.
+- The un-captioned group photograph problem the Smith case illustrates, which no amount of
+  searching fixes.
+- Carried forward unchanged: the 728 legislation entries whose source URL points at a landing
+  page; the 18 legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap;
+  the "57 regents" figure; the two *Herald* items on how Joe Rains's term ended; the
+  `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*;
+  the pre-2003 half of the photograph gap; Mary Fyfe; the 1999-00 Coates investigation outcome;
+  and the pre-2000 legislation gaps.
+- **The standing editor brief is out of date in three places, and this is the fourth report to
+  say so.** It opens with `gh auth setup-git`, and `gh` is not installed in these containers —
+  the GitHub MCP tools work and are what the run should be told to use. It names #6, #7 and #8 as
+  stale open pull requests to rescue or close; all three were closed on 18 August, and #478 is the
+  reopened successor to #6. Neither cost anything this run, but a brief that sends every run
+  through a dead command and a spent instruction will eventually cost one that is less careful.
+
+## Addendum, same run — where the attribution line can and cannot be stripped
+
+AGENT-LANDING.md says a "Generated by Claude Code" line gets appended to a pull request body and
+tells the run to read the body back and strip it. That is still right, and it still happens: #479
+was opened clean and came back carrying one with a session link in it. What the file does not say
+is that the line is appended to **comments** too, and that where it can be removed depends on which
+API is used.
+
+Tested this run, on a public repository where CLAUDE.md forbids the line outright:
+
+- **Pull request body, via the GitHub MCP tools** — strips clean and stays clean. #478 and #479 both
+  verified empty of it afterwards.
+- **Pull request body, via a direct REST `PATCH` with `GH_TOKEN`** — the line is re-appended by the
+  write path. Confirmed by sending a body that provably did not contain it and reading back one that
+  did.
+- **Comment body, either route** — re-appended every time. A `PATCH` to
+  `/issues/comments/{id}` with text known to be clean returns and then stores the line again. A
+  comment cannot be cleaned in place.
+
+So the editor's review for #478 was folded into the pull request body, which holds text cleanly, and
+the comment was deleted. Nothing was lost: the review is in the body verbatim. Commit messages are
+not affected by any of this — `git push` is not intercepted, and main's history is clean.
+
+**The rule that follows: on this repository, post substantive review text in a pull request body and
+edit it through the MCP tools. Do not put it in a comment.** A comment is fine for something
+disposable; it is not fine for anything meant to stay, because it cannot be made to comply. If a
+run has already commented, folding the text into the body and deleting the comment is the repair.
+
+# 15 September 2026, evening — the queue is empty because the research routines are switched off
+
+## What was open
+
+Nothing. `list_pull_requests` returns an empty array. GitHub access was full this run: the MCP
+tools answered and `git push --dry-run` reported `* [new branch] HEAD -> access-probe`, so nothing
+was gated. `gh` is still not installed; `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset.
+
+Every branch on origin carrying commits `main` lacks was measured rather than trusted. The recent
+ones — `research-photos`, `research-editor-0915-april-1992`, `-duplicate-sweep`, `-midday`, and the
+0913 and 0914 editor branches — are all squash-merge leftovers: their pull requests (#469 through
+#478) are closed and merged, and their remaining diff against `main` is stale. The rest have no
+merge base at all, the orphan histories `AGENT-LANDING.md` warns about. Nothing is unlanded.
+
+## Why the queue keeps coming up empty
+
+This is the fourth consecutive empty pass, and the cause is not that the researchers have run out
+of archive. It is that they are not running. Of the sixteen routines on the account, **two are
+enabled**: this editor, every three hours, and `SGA 60 - portraits`, every six. Every routine that
+produces historical research is disabled:
+
+| Routine | Enabled | Last fired |
+|---|---|---|
+| SGA 60 - editor | yes | 15 Sep, every 3h |
+| SGA 60 - portraits | yes | 15 Sep 13:52 |
+| SGA 60 - 1966-1979 | **no** | 5 Aug 12:20 |
+| SGA 60 - the 1980s | **no** | 5 Aug 12:15 |
+| SGA 60 - the 1990s | **no** | 5 Aug 13:04 |
+| SGA 60 - the 2000s | **no** | 5 Aug 13:07 |
+| SGA 60 - the 2010s | **no** | 5 Aug 11:07 |
+| SGA 60 - the 2020s | **no** | 5 Aug 11:06 |
+| SGA 60 - legislation harvest | **no** | 4 Aug 09:10 |
+| SGA 60 - photographs (hourly) | **no** | 5 Aug 12:51 |
+| SGA 60 - backlog | **no** | 25 Aug 20:23 |
+| SGA 60 - senate rolls | **no** | 25 Aug 22:41 |
+| SGA 60 - person profiles | **no** | 24 Aug 14:09 |
+
+Three of those were switched off deliberately and the reasons are in this file: the backlog trigger
+was stale, the senate rolls returned five straight empty passes, and the old hourly photographs
+routine was superseded by `portraits`. The six decade routines and the legislation harvest are
+different. They stopped on 4 and 5 August, the same two days the decade pull requests #6, #7 and #8
+were opened, and nothing in this file records a decision to stop them.
+
+The effect is measurable even inside this container's shallow clone, which reaches back only to
+11 September: **1,964 events then, 1,963 now.** Four days, six editor runs, and the only net change
+is one event fewer, from combining articles the archive had recorded twice. The corrective work of
+the last six weeks has been real and worth doing — the blank-Pass audit, the advance-notice sweep,
+the duplicate merges, the portrait log — but no new history has entered the archive since early
+August, and the editor has been reviewing an empty queue every three hours for it.
+
+I have not re-enabled anything. Turning six around-the-clock routines back on is the owner's call,
+not a decision for a review pass to make on its own initiative, and the reason they stopped is not
+established — a deliberate pause and an accident look identical from here.
+
+## What I checked on `main` instead
+
+With nothing to review, the pass went to the settled facts, which is where this archive has
+regressed before. All four hold:
+
+- **Sandra Norfleet** sits at 1981-82 with `role: regent`. Not filed forward again.
+- **Reed Morgan** is at 1968-69 with `role: unresolved` and a note resting on positive evidence:
+  Straeffer's 1,732-to-1,098 win of 2 May 1968 and Gerard's regent profile of 27 February 1969
+  occupy both offices, leaving no vacancy. The presidency question stays closed.
+- **William Menser** is president 1967-68 with the 4 April 1968 Herald report of his assuming the
+  Board seat. Consistent with Gerard holding it through 1968-69, and with the seat's April 1968
+  creation. No contradiction between the two entries.
+- **Carlene and Darlene Lodmell** appear nowhere in `leaders` as a merged pair.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0.
+
+`check_duplicates.py` returns the same four long-standing pairs. All four are sequences, not
+duplicates, and each was read this pass rather than waved through: a bill introduced against the
+same bill failing after amendment; the Civil Liberties Union planning action against Associated
+Students endorsing the suit; SGA lining up against plus/minus grading against passing legislation
+on it; and the 1997-98 designated-driver pair, which is Bill 97-3-F of 4 November 1997 against the
+Herald's 17 February 1998 notice that the cards would go out the next day. A third entry sits
+between them, the Herald's report of 13 November 1997. Three stages of one scheme, separately
+sourced, and the February entry already says on its face that the archive holds only a contents
+listing and that the headline is all it proves. Nothing to merge.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,945 search records.** This pass touched no data.
+
+## Still open
+
+- **The six decade routines and the legislation harvest, off since 4-5 August.** Everything else in
+  this list is a research question. This one is the reason none of them are being worked on.
+- The standing editor brief is out of date in the same three places the last four reports named: it
+  opens with `gh auth setup-git`, which is not installed; it names #6, #7 and #8 as stale open pull
+  requests, all closed on 18 August; and it describes four research routines as running around the
+  clock when two are, neither of them a decade researcher.
+- Carried forward unchanged: the officer-portrait gap of unknown extent; the un-captioned group
+  photograph problem; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents"
+  figure; the two Herald items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel`
+  pair; Mickie Hennig and Chris Gaddis in the 1989 Talisman; the pre-2003 half of the photograph
+  gap; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
