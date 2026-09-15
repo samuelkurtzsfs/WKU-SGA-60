@@ -5621,6 +5621,28 @@ Nothing added to `data/photos.json` or `data/photos/`; `build.py` and
 and after. No candidate lead from the 23 August table remains untested by
 this run or an earlier one.
 
+**Editor's check of the above, 15 September.** Every figure in this note was
+re-derived from the data files rather than taken on trust, and the
+wkuherald.com finding was re-run independently: 1,388 leader entries and no
+leader in any of the 61 years without a portrait; the year overlay's 61
+entries across 49 distinct years, and the same twelve gap years listed above;
+all three named 2004 slugs present with `featured_media: 0`, and
+`todd-elected-sga-president` carrying the `snocf-article` class and not one
+`<img>` in its body; 0 of 50 posts for 2004, 0 of 7 for 2009 and 0 of 9 for
+1 January to 30 April 2010; then 22 of 68 for May to August 2010 and 46 of
+100 for September to December. The boundary is where this note puts it. On
+300-post samples the later years run 45%, 45% and 53% for 2011, 2012 and
+2013, so the 40-55% figure holds — a 50-post sample of 2011 alone reads 36%
+and understates it, which is worth knowing before anyone re-checks this with
+a smaller pull. `viewcontent.cgi` on `article=5695` returned 403 again for
+the editor, with landing pages answering 200 alongside it, so that route is
+closed exactly as described. **The one divergence: `web.archive.org` answered
+for the editor the same night** — 302 then 200 on a real capture — where this
+run hit a reset at the proxy. That is the flip this file has now recorded
+several times, and it is the reason the standing instruction is to re-test
+the host rather than believe either verdict. It does not affect anything this
+run concluded, since none of the findings above rest on Wayback.
+
 ## 9. Restarting a session
 
 ```bash

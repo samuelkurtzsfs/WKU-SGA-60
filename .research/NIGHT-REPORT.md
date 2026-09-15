@@ -24241,3 +24241,98 @@ document changed this run.
   record; the pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three
   advance-notice entries worth corroborating from the *Talisman*; and Richey's five words on the
   2015 event page.
+
+---
+
+# 15 September — one pull request, a documentation pass, merged
+
+## What was open
+
+One: **#474, `research-photos`**, seventeen commits since 13 September. The three pull requests
+this routine's brief still names as stale — #6 (photographs), #7 (the 1980s), #8 (the 2020s) —
+were closed on 18 August and did not need handling. Nothing else is open.
+
+## What is in it
+
+Nothing in `data/`. The whole diff is sixty-six lines appended to `SGA-60-AGENT-INFO.md`: the
+photograph run's account of a night on which it found no photograph. No event, leader, portrait,
+document or piece of legislation changed, so `main`'s record of the history is untouched by this
+merge and the live site's content is unchanged.
+
+That does not make it a small merge. The note does two things worth having. It re-tests the
+download routes rather than citing yesterday's verdict, which is what this file's own rule asks
+for. And it converts a long run of fruitless officer-name sweeps against `wkuherald.com` into a
+structural finding: the newspaper's WordPress archive reaches back to 2003, but the migration that
+put it there carried the words and dropped the pictures, so posts from before mid-2010 have no
+images at all. That is the difference between a source not yet exhausted and a source that has
+answered. It retires those sweeps for every officer whose only years are pre-mid-2010.
+
+## What was verified
+
+Thirteen claims, every one of them, rather than a sample — the diff is short enough to take whole.
+The counts were re-derived from `data/photos.json` and `data/years.json`: 1,388 leader entries,
+exact; no leader in any of the 61 years without a portrait; 61 overlay entries across 49 distinct
+years; and the twelve year-photograph gap years matching the note's list item for item. Todd,
+Dawson, Johnson and Gilley each carry a portrait, as claimed.
+
+The `wkuherald.com` finding was re-run against the live API rather than read. All three named 2004
+slugs exist, dated correctly, `featured_media: 0`. `todd-elected-sga-president` carries the
+`snocf-article` class and not one `<img>` tag. 0 of 50 posts for 2004, 0 of 7 for 2009, 0 of 9 for
+January to April 2010 — then 22 of 68 for May to August 2010 and 46 of 100 for that autumn. The
+boundary falls exactly where the note puts it.
+
+One figure was worth chasing. "40-55%" for 2011 onward read as an over-claim against a first
+sample of 36%, but that was a 50-post artifact; on 300 posts a year the figures are 45, 45 and 53
+per cent. The note was right and nothing needed trimming. Recorded in the file, because the next
+person to check this with a small pull will hit the same false alarm.
+
+`viewcontent.cgi` on the known-good article returned 403 for the editor too, with landing pages
+answering 200 beside it. One divergence: `web.archive.org` answered here — 302 then 200 on a real
+capture — where the run hit a proxy reset. The note already allows for that flip and nothing in it
+rests on Wayback, so it is recorded rather than corrected.
+
+## What was cut
+
+Nothing. Every claim held. The editor's check above was appended to the note so the next
+photographs run inherits the verification and the 36% trap with the finding.
+
+## Traps
+
+Not applicable, most of them, and that is worth saying rather than passing over: a diff with no
+factual claim about a person or a year cannot misfile an April election, promote a committee chair,
+match by surname or split a person across a changed name. The two that do apply, it passes. The
+note names Nick Todd and the 2004 investigation, but only by quoting the newspaper's own published
+headlines as evidence of what the CMS holds, and it asserts nothing about him; the archive's
+existing account of that investigation states its outcomes — the audit, the sanctions, his denial,
+the resignation — and is not touched here. And no contributor edit is in the diff: every commit is
+authored `SGA 60`, and nothing in the commits or the diff carries tool attribution.
+
+## Checks
+
+`build.py` completes clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py`
+returns the same four standing pairs, each read again rather than waved through: the 1992 student
+regent advisory committee bill introduced on 28 January and failing after amendment on 6 February;
+the Civil Liberties Union action planned in February 1972 and endorsed in March; plus/minus grading
+opposed in September 2003 and legislated against in October; designated driver cards funded in
+November 1997 and distributed in February 1998. Four sequences, not four duplicates. All four
+pre-date this branch. Nothing merged.
+
+**61 years, 1,966 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,948 search records.**
+
+## Still open
+
+- **Mickie Hennig and Chris Gaddis, 1988-89, in the 1989 *Talisman*.** Still the next photographs
+  run's first job, and still blocked behind `viewcontent.cgi`.
+- **The 1988-2002 half of the photograph gap is now the whole of it.** With `wkuherald.com` closed
+  for pre-mid-2010, the seven remaining year-photograph years before 2003 and the 49 pre-2003
+  officer names have no route but `viewcontent.cgi` or an equivalent. A photographs run has little
+  to do until that route opens; better to send it at the *Talisman* full texts on `archive.org`,
+  which are open and not rate limited.
+- Carried forward unchanged: the scanned half of the blank-Pass list; the 18 legislation files with
+  no text layer; the 728 legislation entries pointing at landing pages; the 2012-13 Resolution
+  5-13-S indexing gap; the "57 regents" figure; the two Herald items on how Joe Rains's term ended;
+  Charlie Harris's missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale
+  account of `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation outcome; the
+  pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three advance-notice entries
+  worth corroborating from the *Talisman*; and Richey's five words on the 2015 event page.
