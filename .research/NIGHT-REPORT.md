@@ -1,3 +1,122 @@
+# 15 September 2026, later — an empty queue, and three articles written up twice
+
+## What was open
+
+Nothing again. `list_pull_requests` returns an empty array; #474 merged at 03:25 this morning and
+is on `main` as `382a4b5e`. GitHub access was full this run — the MCP tools answered and a push
+probe succeeded — so nothing was blocked. `gh` is still not installed, and `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still unset, so the drop box was again not available as a fallback.
+
+Every branch on origin was measured rather than trusted. Each one carrying commits `main` lacks
+either has no merge base at all — the orphan histories `AGENT-LANDING.md` warns about — or has a
+merge base and is *behind* `main`, its diff purely deletions of night-report lines. `research-photos`
+is no longer ahead in any direction. Nothing is stranded.
+
+## The convention two night reports disagreed about
+
+#470 recorded that Donald Smith's April 1993 election "is filed in 1993-94". #473, merged six hours
+later, recorded that it "sits in 1992-93, the year it happened", and moved three April 1992 entries
+out of 1992-93 and into 1991-92 on that basis. Both cannot be right, and the archive is the
+tiebreaker: Smith's win is in **1992-93**. #473 was correct and #470's sentence was wrong about the
+data, though it changed nothing, so the error stayed in a night report rather than reaching the site.
+
+Measured across every election-result event in the file: **51 sit in the academic year the vote
+happened in, 8 are filed forward.** The chronological placement is the archive's settled practice,
+and #473 moved with it, not against it.
+
+Trap 5 in the handoff — "Spring elections file forward … an April 1994 result belongs to 1994-95" —
+reads as though it contradicts that, and is what produced #470's sentence. It does not contradict
+it. The rule is about **people**: the winner of an April election is the *next* year's president and
+their leader object files forward. The **event** recording the vote stays in the year the vote
+happened. Both halves are true and the archive follows both. Worth stating plainly here, because the
+wording has now misled one run into writing the opposite.
+
+## What the spot check went to
+
+With nothing open, the check went to #473 — an editor run that wrote to `data/years.json` and merged
+its own work, so no second pair of eyes had seen it. All three of its Herald issues were read against
+`herald-index-full.json` and every claim held:
+
+- 67:51 of 9 April carries Stewart on Holcomb and Rains vying for the presidency, Mann's profile of
+  Susan Mitchell, and Stewart on the referendum to change the name. The entry's refusal to say what
+  office Mitchell sought is right — the index does not say.
+- 67:52 of 14 April carries Hannah's "Students Vote Today", Stewart's "Many Students Won't Vote", an
+  unsigned editorial on electing a responsible president, Richardson's Darth Vader cartoon of Rains,
+  and four bylined opinion pieces favouring Rains, Miller, Holcomb and Jones. No result anywhere in
+  the issue.
+- 67:53 of 16 April carries Stewart's "Joe Rains Wins Big" and Whitely's "1,200 Turn Out to Cast
+  Votes".
+
+So the entry #473 cut — which asserted Rains's win on the strength of the election-day issue — was
+correctly cut, and the two it moved are accurate. The move also created no duplicate: 1991-92's two
+14 April entries are Hannah's news report and the opinion pages, which are different articles.
+
+## What #473 could not have caught, and what it cost
+
+`check_duplicates.py` compares the words in **titles, within one year**. #473's cross-year duplicate
+slipped both halves of that. Re-reading the archive for the same failure by **body overlap on a
+shared date**, and separately for a **source URL reused across two years**, turned up three more
+double write-ups — each one article recorded twice in different words, invisible to title matching,
+all three live on the site until today:
+
+- **1967-68, 29 April 1968.** "Herald analyzes ASG's past performance under Menser" and "Herald
+  reviews the Associated Student Government's record" both quote the same headline, from the same
+  issue, on the same day. One article, Herald 47:28.
+- **1977-78, 6 April 1978.** "Thornton and Johnson contest the presidency; four offices go
+  uncontested" and "ASG elections held with four offices uncontested", both off Herald 53:54.
+- **1984-85, 14 February 1985.** "Apathy as an editorial cartoon" and "An apathy editorial greets a
+  24-hour open house debate", both off Herald 60:38.
+
+Each pair was combined rather than halved, so no sourced fact was lost, and each combined entry was
+rewritten against the index lines rather than against the two bodies:
+
+- The Menser retrospective now records that it carries no byline, and that the campaign coverage
+  beside it ran from the Straeffer-Whitley presidential race down to vice president, treasurer and
+  representative — which the index shows and neither original entry did.
+- The 1978 entry gains Judd's byline, Ed Johnson's "stronger voices" pitch and Gary Johnson's
+  reader's piece backing him, and now says outright that the issue went to press on polling day and
+  carries no result. Both originals were built on an **advance notice** — "Associated Student
+  Government Elections Today" — and one of them opened "Students voted in the … elections". That is
+  the trap the law names first, sitting unnoticed in a year marked researched.
+- The 1985 entry gains the three bylines the index carries — Paul, Knapp and Humphreys — and stops
+  calling Paul's signed column an editorial, which it is not.
+
+Three events fewer, 1,963 from 1,966, and none of the three was a fact lost.
+
+## What did not need touching
+
+The four pairs `check_duplicates.py` reports are the same four it has reported for weeks, and all
+four are sequences, not duplicates: a bill introduced and then failing, a lawsuit planned and then
+endorsed, cards announced and then distributed, a position taken and then legislated. The body-overlap
+sweep leaves twelve same-day pairs, every one of them separate business — different bills, different
+line items — whose similarity is shared boilerplate. The nine cross-year shared-source clusters are
+all one issue covering several stories, which is ordinary.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py` returns the
+same four sequences and no new pair.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people. 308
+documents, 1,111 legislation files, 4,945 search records.**
+
+## Left for whoever runs next
+
+`check_duplicates.py` has now missed four real duplicates in two days, all of the same shape: one
+article, two entries, titles with no words in common. Title matching cannot see it. Comparing event
+**bodies** on a shared date finds all four, and comparing **source URLs across years** finds the
+cross-year case the within-year comparison structurally cannot. That belongs in the script, and this
+run deliberately did not put it there — changing a validator is not a thing to do unreviewed on a
+repository that deploys on merge. It is the single highest-value change available to a run that has
+an empty queue.
+
+The eight election events filed forward against the archive's own practice were left alone for the
+same reason. They are listed here so the next pass can judge them rather than rediscover them:
+1966-67 (Haynes, May 1966), 1968-69 (Straeffer, May 1968), 1972-73 (Jordan, April 1972), 1973-74
+(Yater, April 1973), 1985-86 (McKinney, April 1985), 1999-00 (Matheis, April 1999), 2000-01
+(Martin-Bedo, April 2000) and 2026-27 (Lucas, April 2026). Moving an event between years is a
+correction that has to be recorded as one, not done quietly in a sweep.
+
 # 15 September 2026 — an empty queue, and an election written up twice in two different years
 
 ## What was open
