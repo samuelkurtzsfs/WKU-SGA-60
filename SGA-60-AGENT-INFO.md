@@ -5859,6 +5859,43 @@ conditions petition, which is a public civic act a newspaper reported and
 carries no such weight. Sensitivity is the test, not symmetry between
 bullets.
 
+### Photograph run of 15 September (night pass): baseline re-confirmed, three fresh routes tried and closed
+
+Re-derived every figure from the data files rather than trusting the notes above: 1,388
+leader-photo entries, all 73 `leaders` records (president/regent, all 61 years) still carry a
+portrait, all four named presidents (Todd, Dawson, Johnson, Gilley) still covered, the same
+twelve year-photograph gap years, and 159 distinct executive/Senate-officer names still without
+a portrait once plain "Senator" and "Senator At-Large" seats are excluded — the same figure the
+14 September evening run reached by the same method, confirming that count rather than adding
+to it.
+
+Re-tested the two standing blocks fresh rather than trust an earlier hour: `viewcontent.cgi`
+(`article=5695`) — 403, Cloudflare's "Just a moment..." challenge, with the documented
+navigation headers. `digitalcommons.wku.edu/do/search/` — also 403 under the same challenge,
+confirming rather than adding to the 14 September finding. `web.archive.org` — connection reset
+at the proxy layer (`ws_closed_mid_exchange`), the intermittent failure mode this file has
+recorded several times before.
+
+Three checks not on record from any earlier run, all negative:
+
+- **Article landing pages carry no substitute thumbnail.** Checked `dlsc_ua_records/5695/`'s
+  full HTML for any bepress-generated page-image asset that might stand in for the blocked PDF
+  download — the only embedded images are the platform's own "DC Network" and "TopSCHOLAR" logo
+  files. There is no thumbnail route around `viewcontent.cgi` on this platform.
+- **`wku.edu/news`'s own search does not filter.** `wku.edu/news/?s=<query>` redirects to
+  `wku.edu/news/articles/?s=<query>` but returns the same "Displaying Articles for News: All"
+  listing regardless of the query string — not a results page. The site's real search form posts
+  to `wku.edu/search/index.php`, which reset the connection on every attempt.
+- **A web search for Ian Hamilton** (Sustainability Committee Chair, 2017-18, one of the 159)
+  crossed with WKU and Student Government surfaced nothing about him — only unrelated
+  sustainability-committee documents and a same-named person at a different university.
+
+Nothing added to `data/photos.json` or `data/photos/`; `build.py` and `check_data.py` both pass
+clean. The state for the next run is unchanged from the passes earlier today: the pre-2003 slice
+of the 159-name gap and the twelve year-photograph gap both need `viewcontent.cgi` or an
+equivalent this container cannot currently reach; the post-2003 slice was swept clean against
+wkuherald.com by the runs earlier today and should not be re-swept without a new source.
+
 ## 9. Restarting a session
 
 ```bash
