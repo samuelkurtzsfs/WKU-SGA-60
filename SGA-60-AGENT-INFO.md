@@ -5735,6 +5735,88 @@ this paragraph instead.
 No photograph was added or removed this run. `build.py`, `check_data.py` and
 `check_duplicates.py` all pass clean on the unmodified tree.
 
+### Photograph run of 15 September (later pass): a full sweep of the 2010-2026 officer gap, and why none of it landed
+
+Confirmed the starting state again rather than trust the note above: 1,388
+leader-photo entries, still zero of the 73 `leaders` (president/regent)
+records without a portrait, still the same twelve year-photograph gap years,
+and the `organization` gap unchanged at 193 distinct cabinet/Senate/committee
+names with no portrait entry across 242 name-slots. Re-tested
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` (article 5695, the standing
+known-good test) and `web.archive.org` fresh rather than trust an earlier
+hour's verdict: `viewcontent.cgi` is still Cloudflare's "Just a moment..."
+challenge (403), and `web.archive.org` is still a connection reset at the
+proxy layer. No change from the pass recorded just above.
+
+**New this run: a complete sweep of `wkuherald.com`'s WordPress search API
+against every one of the 131 cabinet/Senate/committee names in the gap whose
+year is 2010-11 or later** — the part of the 193-name queue this file's
+"image gap" finding (the note above titled "routes re-tested again,
+unchanged") says the site can structurally reach. Not attempted before this
+run beyond the six names the prior pass sampled. Searched each full name in
+quotes against `/wp-json/wp/v2/posts`, pulled every post that came back with
+a non-zero `featured_media`, and resolved each distinct media ID (231
+fetches total, wkuherald.com raising no rate limit) to its actual caption —
+not just counting `<img>` tags, per the correction two notes up about where
+WordPress puts the featured image. Also checked each post's body for an
+inline `[caption]` or `<figcaption>` block naming the person, in case the
+photo was inline rather than featured.
+
+Of 672 posts returned across the 131 searches, 288 distinct photographs, only
+four captions actually named the person being searched for:
+
+- **Cody Cox** (Associate Justice 2015-16, Chief Justice 2016-17) — a single-
+  subject, clearly identified photograph, but of a 2014 feature on students
+  coming out ("In My Skin: Gay students take pride in sexuality"), two years
+  before either of his SGA terms and with nothing to do with SGA. Declined:
+  the brief for this run is photographs of people acting in their student
+  government role, and pairing an unrelated personal disclosure with a public
+  office record is a call this project should not make unilaterally.
+- **Kayla Distler** (College of Education and Behavioral Sciences Senator,
+  2023-24) — a single-subject photograph captioned with her name, but from an
+  April 2022 story about a McLean Hall maintenance petition she started as a
+  private student, a year before her Senate term and with no SGA connection
+  in the article. Declined for the same reason as Cox: not a photograph of
+  her acting in the office.
+- **Jackson Smith** (Freshman Senator, 2025-26) — genuinely an SGA photograph
+  (presenting a bill at the 11 November 2025 meeting), but the caption names
+  three people, "Malachi Humble, Jackson Smith and Ciin Lun," with no "from
+  left" or other positional order, and the article's other two photographs
+  from the same meeting (88702, 88705) are of other officers entirely.
+  Checked for a second photograph from the same shoot that might disambiguate
+  the three faces; there isn't one. Declined: no way to confirm which face is
+  which, and a misidentified face is worse than no face.
+- The Cox search also surfaced the same photograph a second time under his
+  2015-16 title; not a distinct finding.
+
+Nothing added to `data/photos.json` or `data/photos/`. This closes the
+2010-2026 slice of the 193-name gap as a genuine sweep rather than a sample —
+a future run should not re-run name-by-name wkuherald.com searches for these
+131 people without a new lead, since the site has now actually been asked
+about all of them. What remains open in that gap is the pre-2010 slice (62
+names, 1966-2009), which still needs `viewcontent.cgi` or an equivalent this
+container cannot currently reach, and the un-captioned group photograph
+problem the Jackson Smith case illustrates, which no amount of searching
+fixes.
+
+**Also new: six more 1970s-80s officer names checked against archive.org's
+Talisman full text**, the two yearbooks (1978, 1980) already known to be
+reachable there plus 1986 and 1987, freshly downloaded rather than assumed
+still cached from an earlier session (archive.org's own download host was
+reliable today, one mid-transfer 500 and one connection reset on first
+attempt, both cleared on retry). Searched for the six committee-chair and
+officer names from those years not already logged as dead ends in this file:
+Alice Wicks and Steve Wilson (1978-79), Alan Jackson and Debbie Thomas
+(1980-81), Chris Millay and Dwight Austin (1986-87). None appear in an SGA or
+ASG context in any of the four yearbooks — the only same-surname hits are
+unrelated people (a class-list "Wicks, Alice Elizabeth" with no photograph or
+caption context at all; a track athlete "Beth Ann Millay"; several unrelated
+Wilsons, Jacksons and Austins in sports and club photos). Recorded here so
+the next run does not re-download these four PDFs chasing the same six names.
+
+`build.py`, `check_data.py` and `check_duplicates.py` all pass clean on the
+unmodified tree; nothing in `data/` changed this run.
+
 ## 9. Restarting a session
 
 ```bash
