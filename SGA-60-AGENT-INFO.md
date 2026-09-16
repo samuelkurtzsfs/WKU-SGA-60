@@ -5923,6 +5923,21 @@ officer names (218 name-slots) still without a portrait — close to but not ide
 "193 names, 242 slots" figure two runs back; the difference is not reconciled here and should not
 be assumed to mean either count is wrong.
 
+*Editor's note, 16 September.* The first three figures in that paragraph were re-derived from the
+data files and are exact: 1,388 leader-photo entries, all 73 `leaders` records carrying a portrait,
+and the same twelve gap years, 1993-94 through 1997-98 plus 2000-01, 2002-03, 2003-04, 2005-06,
+2006-07, 2008-09 and 2009-10. The officer-gap number is the one to treat with care. It is not
+unreconciled — an earlier pass already published the reconciliation, counting 187 title/year pairs
+without a portrait for that year, 161 distinct names, 159 distinct names holding no portrait
+anywhere, and 176 once the generic Senator seats are left in — and it ended with the rule this entry
+should have followed: **write the filter beside the number or write no number.** A bare 176 is not
+comparable with a bare 193. Counting here under two filters stated explicitly gave different figures
+again: excluding offices titled exactly "Senator" / "Senator At Large", 995 slots, 247 title-year
+pairs, 207 distinct names, 179 names with no portrait anywhere; leaving the Senator seats in, 2,579
+slots and 741 names. Note that the data spells the office "Senator At Large" without the hyphen, so
+a filter written against "Senator At-Large" silently fails to exclude 38 slots — which is on its own
+enough to explain a swing of this size. Every future run states its filter or omits the count.
+
 **`digitalcommons.wku.edu` is still closed.** `viewcontent.cgi` and `/do/search/` both still return
 Cloudflare's "Just a moment..." challenge on a plain request with the documented navigation
 headers, tested twice an hour apart. No change from every run since 14 September.
@@ -5958,6 +5973,28 @@ the gap list — but the page's own `<img src="Pics/ProfilePics/exec.jpg">` grou
 at any timestamp (empty CDX result), and the two `e_profiles.html` versions that do have photos
 (December 2004, February 2005 — identical by digest) only picture Katie Dawson and Brittany Fausey,
 both already covered. Declined for lack of any photograph, not for lack of a name or a title.
+
+*Editor's note, 16 September, and the more useful finding.* Every external claim in this entry was
+re-tested against the source and every one held exactly: both TopSCHOLAR paths returned the
+Cloudflare challenge; 2000-05-29 is the earliest capture of that path; `leslie.htm` is titled
+"Leslie Bedo -- President" and carries `alt="Leslie.jpg (151359 bytes)"`; `executive.php`'s earliest
+capture is 26 May 2005 and it does name Henry and Bice in those offices; `exec.jpg` has an empty CDX
+result; the December 2004 and February 2005 `e_profiles.html` captures share digest
+`EAYIQRFS47QZSVVMRZJECBT566ISWII6` and carry exactly two images, `Katie.jpg` and `Brittany.jpg`.
+But the entry stops one question short of the one that matters for the next run. **The bio-page
+portraits were never captured at all.** `images/Leslie.jpg`, `images/Aaron.jpg`, `images/Jamie.jpg`,
+`images/Jamil.jpg` and `images/Mark.jpg` each return an empty CDX result, as does every other image
+under `SGA/images/` bar site furniture — logos, animated GIFs, a loader. So this route is not merely
+redundant because the names happen to be covered already; it could not have yielded a portrait even
+if every name on it had been open. That is the fact that closes it.
+
+The single exception is `Pics/ProfilePics/64aa.jpg`, captured once on 5 November 2004 and still
+retrievable: a real JPEG, 444x264, an outdoor group photograph of roughly twenty-six students by
+water, almost certainly an SGA retreat of that autumn. No caption, no surviving referring page — it
+is not linked from either the site root or the `e_profiles.html` capture of 3 November 2004 — and so
+no way to name anyone in it. Unusable under the rule that a subject must be confirmable, and logged
+here as another instance of the standing un-captioned group photograph problem rather than as a
+lead. If a referring page ever turns up in a later capture, this is the image to come back to.
 
 **One 1977-78 lead resolved as an already-known dead end, independently re-derived.** Archive.org's
 full-text search inside `talisman1978west` turns up the p.34 "A LIGHT MOMENT IN AN ASG MEETING"
