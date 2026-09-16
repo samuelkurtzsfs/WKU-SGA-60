@@ -1,3 +1,90 @@
+# 16 September 2026, morning — a ninth empty queue, and the published week re-checked instead
+
+## What was open
+
+Nothing. `list_pull_requests` returned an empty array for the ninth consecutive pass. Access was
+full: `git push --dry-run` reported `* [new branch] HEAD -> access-probe` and the GitHub MCP tools
+answered, so nothing was gated. `gh` is still not installed and `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still unset; neither was needed.
+
+The branch audit was repeated with the two-dot form the last report established as the correct one.
+Every research branch carrying a merge base is strictly behind `main` — the diffs are pure
+deletions of night-report text `main` already has. The recent editor branches show as "ahead" only
+because their work landed as squashes; each one's subject is on `main` with its pull-request number
+beside it. The remainder are the orphan 4 August histories `AGENT-LANDING.md` warns about. Nothing
+is stranded, and nothing has been stranded for nine consecutive passes.
+
+## The spot check went to what has already published
+
+With no queue to review, the sample was taken from the four merges that changed `data/` in the last
+48 hours and are live on the site now. That is the same test the brief asks for, pointed at what
+went out rather than at what is waiting. Twenty claims were checked against the documents
+themselves. All twenty held, and nothing was cut or trimmed.
+
+The four bill sheets behind #477 were read under PyMuPDF and each matches the entry exactly: Bill 2
+introduced 9/7/76, Passed 9/14/76, Unanimous; Resolution 13 introduced 10/26/76, Passed 11/9/76,
+25 - 1; Bill 9 introduced 3/8/77, Passed 3/29/77, 16 - 13 - 3; Resolution 80-1 introduced 5/6/80
+with its status line stamped FAILED. Resolution 79-18's status line really is blank, which is what
+the entry says, and the entry rests its failure on Michele Wood's Herald report rather than on the
+blank — the right way round under trap 2a.
+
+Bill 97-3-F was re-rendered rather than taken on the previous run's word, because trap 2a says a
+mark on a Pass line is only ever proof when someone has looked at it. At 6x the block reads First
+Reading 11-4-1997, Second Reading 11-11-97, an X on the Pass line, Fail and Other blank. A PASSED
+stamp sits across the lower right of the same frame, which the earlier check did not mention and
+which corroborates it independently.
+
+The three Herald issues behind #473 were read against the local full index. Herald 67:52 of 14 April
+1992 carries Stewart's turnout piece, Hannah's "Students Vote Today", an unsigned editorial and four
+signed endorsements — Wilson for Rains, Linville for Miller, Seiber for Holcomb, Woodring for Jones
+— plus Richardson's Darth Vader cartoon, and no result. The result is in 67:53 two days later,
+under Stewart's "Joe Rains Wins Big", alongside Whitely's 1,200-turnout report. The entry that had
+read the ballot-day issue as a results report was correctly cut. The three combinations in #475 are
+sound as well: 47:28 does carry "Four Candidates Seek Associated Student Representative Posts", so
+the combined entry's "representative posts" is the index's own phrase and not a gloss.
+
+## Traps
+
+None tripped. No advance notice was read as a report — two of the four merges exist precisely to
+undo that error. No committee chair was promoted to officer, no one was matched by surname alone, no
+changed surname produced a duplicate, no April result was filed into the wrong academic year, and
+nothing touched a settled fact. No contributor commit was in range.
+
+## Checks
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py` prints
+its usual four pairs; all four were read and all four are genuinely separate events on separate
+dates — an introduction and its defeat in 1991-92, a planned lawsuit and its endorsement in 1971-72,
+a stated position and the legislation that followed it in 2003-04, and two distinct designated-driver
+items in 1997-98.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,945 search records.** Unchanged: nothing public-facing
+moved this pass.
+
+## Still open
+
+- **The research routines, off since 4-5 August.** This pass read the scheduler directly rather than
+  inferring it: of sixteen Routines on the account, **two are enabled** — `SGA 60 - editor` and
+  `SGA 60 - portraits`. The other fourteen include all six decade researchers, the backlog, the
+  senate rolls, the person profiles and the legislation harvest, every one of them last run on
+  4 or 5 August. That is the whole of the reason the queue has been empty for nine passes and six
+  weeks. Restarting them is the owner's call and no review pass should make it unasked.
+- **The stored brief still cannot be corrected from a run.** `.research/EDITOR-BRIEF.md` holds the
+  finished replacement text. The 14 September attempt to apply it at source was refused because an
+  agent may only edit Routines it created, and that has not changed; this run did not retry, and did
+  not edit its own instructions. It still has to be pasted in by hand. Until it is, every run is told
+  that four researchers are running when none is, and is sent to evaluate pull requests #6, #7 and
+  #8, closed on 18 August on a repository now past #485.
+- Carried forward unchanged: the officer-portrait gap, whose size depends on the filter stated beside
+  it, and the unhyphenated `Senator At Large` that makes filters silently miss 38 slots; the twelve
+  year-photograph gap; the un-captioned group photograph problem; the 728 legislation entries whose
+  source URL points at a landing page; the 18 legislation files with no text layer; the 2012-13
+  Resolution 5-13-S indexing gap; the "57 regents" figure; the two *Herald* items on how Joe Rains's
+  term ended; the `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989
+  *Talisman*; the pre-2003 half of the photograph gap; Mary Fyfe; the 1999-00 Coates investigation
+  outcome; and the pre-2000 legislation gaps.
+
 # 16 September 2026 — an eighth empty queue, and the last blank-Pass lead closed
 
 ## What was open
@@ -25080,3 +25167,113 @@ thing the September blank-Pass audit was built to catch. Worth rendering the pag
   items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig and
   Chris Gaddis in the 1989 Talisman; the pre-2003 half of the photograph gap; Mary Fyfe; the
   1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
+
+---
+
+# 16 September 2026 — a photograph log merged, fifteen claims tested, and a route closed properly
+
+One pull request open, #485, the rolling photograph run's log for 16 September. Merged as
+`603cbb62` after two additions and nothing cut. The queue is empty again behind it.
+
+## What was in it
+
+Sixty-six lines appended to `SGA-60-AGENT-INFO.md` and not a byte of anything else — no event, no
+leader, no photograph, no change to `data/`. The run added no picture and wrote down what it tried
+and why each lead failed, which is the right output for a run that finds nothing. The branch had
+`origin/main` as its merge base, so none of the orphan-history warnings applied.
+
+## Spot check
+
+A research log is all claims and no prose, so every checkable claim was checked rather than a
+sample of eight. Fifteen held, several to the character.
+
+From the data files: 1,388 leader-photo entries; all 73 `leaders` records carrying a portrait, none
+missing; the same twelve year-photograph gap years; Todd, Dawson, Johnson and Gilley each with one.
+Mark Henry and Amelia Bice are genuinely absent from `data/photos.json`, Brittany Fausey is present,
+and every surname the entry lists as already covered has a portrait behind it.
+
+From the sources, one request at a time: `viewcontent.cgi` and `/do/search/` both returned HTTP 403
+behind Cloudflare's challenge page. The earliest capture of `wku.edu/Dept/Org/Student/SGA/` is
+`20000529093536`, the exact date claimed. `leslie.htm` is titled "Leslie Bedo -- President" and
+carries `alt="Leslie.jpg (151359 bytes)"`. `executive.php`'s earliest capture is 26 May 2005 and it
+names Henry as Information Technology Director and Bice as Office Associate; its only image is
+`Pics/ProfilePics/exec.jpg`, whose CDX result is empty. The December 2004 and February 2005
+`e_profiles.html` captures share digest `EAYIQRFS47QZSVVMRZJECBT566ISWII6` and carry exactly two
+images, `Katie.jpg` and `Brittany.jpg`. The 1978 *Talisman* text gives the p.34 caption naming
+Moore, Bass, May and Murphy in that order. `web.archive.org` behaved as described, resets included:
+about one request in six failed here too and succeeded on retry.
+
+Worth recording as corroboration rather than as a finding: the 2004-05 cabinet printed on that 2005
+page matches this archive's `organization` block for 2004-05 name for name and office for office —
+Petkova, Martin, Fausey, Lovan, Henry, Bice. Independent support for the entry's central claim that
+the source was already mined.
+
+## Traps
+
+Nothing to cut. With no data in the diff the advance-notice, committee-chair, surname-match and
+spring-election traps do not arise. No settled fact is touched. Henry and Bice are named with their
+SGA office and nothing further, which is the whole of what the source gives; the page's jokey
+parenthetical beside Bice's title was not carried across, correctly. No contributor edit.
+
+The four duplicate pairs are the same four again and stay separate: two dated stages of one story in
+each case, which is what the rule allows.
+
+## What was added, and why
+
+Nothing was cut. Two things were written down.
+
+The officer-gap count was published bare — "176 distinct names (218 name-slots)" — and called
+unreconciled against an earlier "193 names, 242 slots". It is not unreconciled. An earlier pass
+already counted 187 title/year pairs, 161 distinct names, 159 with no portrait anywhere and 176 with
+the generic Senator seats left in, and closed with the rule that the filter belongs beside the
+number. Counting again here under two filters stated explicitly gave 179 and 741 — different again,
+which is the argument rather than an objection to it. Part of the spread now has a named cause: the
+data spells the office `Senator At Large` with no hyphen, so a filter written against
+`Senator At-Large` silently fails to exclude 38 slots. That is on its own enough to move the total
+by this much. The reconciliation, both counts and the hyphen are now in the log beside the number.
+
+The second addition is the more useful one, and it is the question the entry stopped one short of.
+The entry establishes that the old site's bio pages are redundant because their names are already
+covered. But **the portraits on those pages were never captured at all**: `images/Leslie.jpg`,
+`images/Aaron.jpg`, `images/Jamie.jpg`, `images/Jamil.jpg` and `images/Mark.jpg` each return an
+empty CDX result, as does everything under `SGA/images/` bar logos, animated GIFs and a loader. The
+route could not have produced a portrait even if every name on it had been open. That closes it far
+more firmly than redundancy does, and a future run now reads that instead of re-deriving it.
+
+One image survives and is logged rather than used: `Pics/ProfilePics/64aa.jpg`, captured once on
+5 November 2004 and still retrievable — a real JPEG, 444x264, an outdoor group photograph of about
+twenty-six students by water, almost certainly that autumn's SGA retreat. No caption survives, and
+no referring page links it in the captures checked, so nobody in it can be named. Unusable under the
+rule that a subject must be confirmable, and filed against the standing un-captioned group
+photograph problem in case a referring capture turns up later.
+
+## Checks
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0, run before and after the
+edits. `check_duplicates.py` prints its usual four pairs and they were read, not waved through.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,945 search records.** Unchanged: nothing public-facing
+moved this pass.
+
+## Still open
+
+- **The six decade routines and the legislation harvest, off since 4-5 August.** Six weeks. This is
+  the eighth consecutive pass reviewing an essentially empty queue — one log entry tonight and no
+  history added. Restarting them is the owner's call and no review pass should make it unasked, but
+  it remains the only item here that blocks every other item.
+- The standing editor brief is out of date in the same three places the last six reports have named:
+  it opens with `gh auth setup-git`, and `gh` is not installed in these containers, though plain
+  `git push` and the GitHub MCP tools both work and were used tonight; it names #6, #7 and #8 as
+  stale open pull requests, all three closed on 18 August; and it describes four research routines
+  as running around the clock when two are, neither of them a decade researcher.
+- **New tonight:** any officer-gap count must carry its filter, and `Senator At Large` in this data
+  has no hyphen. Both are now in the log where the next run will read them.
+- Carried forward unchanged: the officer-portrait gap, whose size depends on the filter as above;
+  the twelve year-photograph gap; the un-captioned group photograph problem, now with a specific
+  instance and URL; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents"
+  figure; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel`
+  pair; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; the pre-2003 half of the photograph
+  gap, which now needs a source other than the Wayback Machine; Mary Fyfe; the 1999-00 Coates
+  investigation outcome; and the pre-2000 legislation gaps.
