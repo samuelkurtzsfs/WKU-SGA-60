@@ -5896,6 +5896,23 @@ of the 159-name gap and the twelve year-photograph gap both need `viewcontent.cg
 equivalent this container cannot currently reach; the post-2003 slice was swept clean against
 wkuherald.com by the runs earlier today and should not be re-swept without a new source.
 
+### Bill 97-3-F: the one open blank-Pass lead, closed on the page image, 16 September
+
+The 15 September night report left one lead: the 1997-98 designated-driver entry said Bill 97-3-F
+"passed on second reading a week later", which is the shape trap 2a exists to catch. Checked
+properly and it holds. `data/legislation/1997-98/dc_bill_86.pdf` does carry a text layer — there is
+no `pdftotext` in these containers, which is why it can read as empty; PyMuPDF gets it, and
+`scripts/extract_authors.py` already says so. The form reads First Reading 11-4-1997, Second
+Reading 11-11-97, `Pass _X_`, with Fail and Other blank. Rendered the block at 4x and looked at it
+as trap 2a requires: the X is printed on the Pass line, not handwritten, and the OCR is not
+inventing it.
+
+So the claim was true, and the entry has been rewritten to say what the form says — the second
+reading dated 11 November rather than "a week later", and the Pass mark named — so that a later
+pass can see the evidence instead of re-opening the lead. This is the trap resolving the other way
+for once: a blank cell is a lead, and so is an unexplained "it passed", but both are settled by
+looking at the page, not by assuming which way it goes.
+
 ## 9. Restarting a session
 
 ```bash
