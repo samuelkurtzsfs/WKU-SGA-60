@@ -44,9 +44,12 @@ entries spread 1977-2024. Of those, roughly 114 had not been individually
 tried by name in either of today's earlier reports or the 13 September one.
 Searched essentially all of the 2003-2024 portion (wkuherald.com's
 full-text era, ~80 names) plus a sample of the pre-2003 portion (which has
-no wkuherald.com coverage and no archive.org Talisman text — archive.org
-only holds 1971-1981, 1986 and 1987 — so those names are unreachable this
-session regardless) against the WordPress API, checking every hit's
+no wkuherald.com coverage and no archive.org Talisman text — inside the
+SGA era archive.org holds only 1971-1981, 1986 and 1987; the other WKU
+volumes on it, 1943, 1946, 1947 and 1963-1965, all predate the founding
+of the Associated Students in May 1966, and the `Talisman1995` item there
+is a German PC game, not the yearbook — so those names are unreachable
+this session regardless) against the WordPress API, checking every hit's
 `featured_media` for an actual caption naming the person.
 
 **Result: zero new portraits.** The pattern already documented on 13 and 16
@@ -75,8 +78,9 @@ recording so a future run does not re-walk them:
   on the ballot," "SGA election results announced, Cole Bornefeld wins
   presidency" and "SGA elects committee chairs." All three photos are
   captioned for other people already on file (Sam Kurtz and Cole
-  Bornefeld in the election-night photo; a generic uncaptioned cabinet
-  shot for the other two). None name DeLozier, Baum or Hensley.
+  Bornefeld in the election-night photo; the other two carry a caption
+  but it names nobody, describing a cabinet or a set of senators
+  listening). None name DeLozier, Baum or Hensley.
 - A handful of names returned hits that were plainly a different person by
   date or context and were discarded rather than misattributed: the "Mark
   Henry" hit was a WWE wrestler in a Diddle Arena story, decades off from
@@ -87,16 +91,18 @@ recording so a future run does not re-walk them:
   (`wku.edu/wp-json/...` and `www.wku.edu/wp-json/...` both 404); reached
   a handful of individual named officers this way only via general web
   search, and none of the hits were photographs in an SGA context that
-  named the person (a philanthropy-office staff bio for Zachary Skillman,
-  a legislation PDF for Tribhuwan Singh — neither is an archive photo of
-  the person acting in their SGA role, so per the privacy rule neither
-  was pursued further).
+  named the person. Two 2021-22 officers turned up that way and were
+  declined: one hit was a working-life page carrying no photograph of
+  the person in office, the other a legislation PDF with no photograph
+  at all. Neither is an archive photograph of an officer acting in their
+  SGA role, and the detail that made each unusable is not recorded here
+  for the same reason the Cody Cox bullet's was cut on 15 September.
 
 The underlying pattern, now confirmed across three separate runs and well
 over 90 distinct names: the Herald's SGA meeting-recap, ballot and
-election-night photography almost always uses a generic, uncaptioned
-"cabinet listens" or "senators sworn in" shot, or captions only the
-president. Committee chairs, Senate officers and judicial council members
+election-night photography almost always uses a generic "cabinet listens"
+or "senators sworn in" shot, whose caption names nobody where it is
+present at all, or else captions only the president. Committee chairs, Senate officers and judicial council members
 are named in body text constantly but are essentially never individually
 captioned in a photograph, in either the digitized Herald's index or
 wkuherald.com's full text. This is not a search-technique gap; it is what
