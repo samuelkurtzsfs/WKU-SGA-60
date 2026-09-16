@@ -25752,3 +25752,82 @@ would restore text that a later pull request replaced.
 - The standing editor brief is still out of date in three places: it opens with a `gh` command
   that is not installed in these containers, it names pull requests #6, #7 and #8 as stale when
   all three were closed on 18 August, and it describes four research routines as running.
+
+---
+
+# 16 September 2026, night — the third photograph log merged, and its own sweep re-run rather than read
+
+One pull request open, #494 on `research-photos`, the third photograph pass of the day. It adds a
+single research log and changes no data at all, so there was no site-facing claim to cut. What
+there was instead was a report asserting a clean bill of health on 1,388 portrait entries, and a
+clean bill of health asserted by the same run that would have had to find the faults is exactly
+the kind of claim an editor should not take on trust. I re-ran the sweep from scratch rather than
+read its conclusion.
+
+It holds. All 1,388 `leaders` entries in `data/photos.json` carry a name that appears in that same
+year in `data/years.json`; every referenced file exists; every one opens with valid JPEG or PNG
+magic bytes. My own first attempt reproduced the same ten apparent mismatches the report describes,
+which is worth more than the clean result on its own: it means the report's account of why they are
+not mismatches is a real reconstruction and not a rationalisation written after the fact.
+
+Those ten are the interesting part. Tim Irons, Marsha Sanner, Natalie Croney, Benjamin Lineweaver,
+Brittany-Ann Wick, Currie Martin, Dave Vickery, Lillian Nellans, Amanda Harder and Matt Barr are
+all committee chairs, none of them in a `leaders` array. This is the trap that killed all
+thirty-nine "missing president" claims, and the run walked up to it and did not fall in: it widened
+the matching rule to reach the `organization` block and promoted nobody. That is the right
+direction to widen in.
+
+## What was checked, and against what
+
+Nine claims, which is effectively all of them. The twelve-year context-photograph gap matches my
+list exactly — 1993-94 through 1997-98, 2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09,
+2009-10. No leader carrying `role: president` or `role: regent` lacks a portrait in any of the
+sixty-one years, and Todd, Dawson, Johnson and Gilley each have one.
+
+The two external claims were tested rather than assumed. A single paced request to
+`viewcontent.cgi` returned HTTP 403 behind the Cloudflare interstitial, as reported. The
+wkuherald.com figure needed a moment's work: the quoted phrase search returns 94 posts for 2003-04,
+not the 98 the log gives, and the gap is accounted for by the unquoted search, which returns exactly
+98. The number is right; the log simply does not say which of the two it ran. The finding that
+matters survives either reading, and I confirmed it across four separate date windows — not one
+post of the ninety-odd carries a `featured_media` image. wkuherald.com is properly closed for the
+year-photograph gap, not closed by assertion.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` exit 0. 61 years, 1,963 events, 60
+presidents; 2,652 terms held by 1,810 people; 308 documents, 1,111 legislation files, 4,945 search
+records. Unchanged, as they must be for a diff that touches no data.
+
+`check_duplicates.py` returns the same four pairs as the last three runs. Read again, and they are
+still four genuine sequences rather than four duplicates: Bill 92-01-S introduced on 28 January 1992
+against the amended bill failing on 6 February; the Kentucky Civil Liberties Union planning court
+action in February against Associated Students formally endorsing the suit in March; concern voiced
+over plus/minus grading on 25 September 2003 against legislation passing on 16 October; and the
+designated-driver card bill of November 1997 against the *Herald* announcing distribution in
+February 1998. None of them is this pull request's doing and none should be merged.
+
+Merged, with nothing cut. The verification is on the pull request.
+
+## Still open
+
+- **The six decade routines and the legislation harvest, off since 4-5 August.** Six weeks now. The
+  photograph routine is the only one still producing, and what it produces is increasingly the
+  confirmation that it has run out of reachable sources rather than new history. Restarting the
+  others is the owner's call.
+- The most promising unexhausted thread the photograph runs have: whether the Wayback Machine holds
+  its own captures of `digitalcommons.wku.edu`, which would sidestep the live Cloudflare block on
+  the PDFs entirely. Tried today, left genuinely open because `web.archive.org` refused the specific
+  queries. That it is recorded as inconclusive rather than written up as a negative result is the
+  correct call — a 503 says nothing about what the archive holds. Worth taking first next run.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents"
+  figure; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel`
+  pair; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; Mary Fyfe; the 1999-00 Coates
+  investigation outcome; and the pre-2000 legislation gaps.
+- The standing editor brief remains out of date in the same three places: it opens with a `gh`
+  command that is not installed in these containers (git itself is credentialed and push works
+  normally — the probe succeeded again tonight), it names pull requests #6, #7 and #8 as stale when
+  all three were closed on 18 August, and it describes four research routines as running when one
+  is.
