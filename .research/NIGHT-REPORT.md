@@ -1,3 +1,124 @@
+# 16 September 2026, midday — a tenth empty queue, and the verification route into TopSCHOLAR closes
+
+## What was open
+
+Nothing, for the tenth consecutive pass. `list_pull_requests` returned an empty array and the REST
+API agreed: `state=open` gave `[]` under HTTP 200. Access was full rather than gated —
+`git push --dry-run` reported `* [new branch] HEAD -> access-probe` — so the empty queue is the
+real state of the repository and not a platform refusal. `gh` is still not installed, and
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset; neither was needed.
+
+Pull requests #6, #7 and #8, which the stored brief still sends each run to evaluate, remain closed
+unmerged since 18 August on a repository now past #488.
+
+## The branch audit, tenth time
+
+Every research branch is either identical to `main` in `data/` or strictly behind it. Three branch
+tips carry subjects that are not on `main`, and none of the three holds anything `main` lacks:
+`research-photos` and `research-editor-0916-passline` differ from `main` only in night-report text,
+their `data/` trees being byte-identical, and this pass's `photo-run-2026-09-16-scheduled.md` is
+already on `main` via #487.
+
+`research-editor-0914-night-review` is the one worth naming, because its `data/years.json` diff runs
+the wrong way. Merging it would restore the thinner 1976-77 profile text that #477 replaced with the
+dated readings, and would re-add the 29 April 1968 retrospective as a second entry — exactly the
+duplicate #475's sweep combined. It is a regression, not pending work. Nothing is stranded, and
+nothing has been stranded in ten passes.
+
+## The spot check
+
+With no queue, the sample was taken from #451, the five measures the archive had recorded as passing
+and the documents record otherwise. Twelve claims were checked and all twelve held. Nothing was cut
+or trimmed.
+
+Two of the five are mirrored locally and were rendered at 200 dpi and looked at, which is the only
+test trap 2a accepts. Resolution 91-02-F and Resolution 92-07-S both show First Reading, Second
+Reading, Pass, Fail and Other blank, with no handwritten mark anywhere on the frame — which is what
+both entries now say, in those words. 91-02-F's AUTHOR line reads Student Affairs, matching the
+entry's attribution. 92-07-S carries INTRODUCED: April 2, 1992, the 67 awarded football scholarships
+and the phrase about a further unnecessary expense, so the date correction that entry records is
+sound.
+
+The two 2003-04 plus/minus entries were read against the full *Herald* articles, which are outside
+the block. Both hold in every particular: Bradley's statement that he planned to oppose the system
+and that the other student body presidents had told him to fight it, Croney's Academic Affairs
+questionnaire, Ransdell's objection on behalf of students with the best marks, and the unanimous
+vote of 14 October reported on the 16th, taken by suspending the by-laws so it would precede Strow's
+formal proposal that same day.
+
+Eight index lines were checked locally and all eight match their entries, including both halves of
+the 1971-72 civil-liberties pair — Gray's "Plans to Take Court Action" on 29 February and Miller's
+"Endorses Kentucky Civil Liberties Union Lawsuit" on 28 March, two articles in two issues a month
+apart.
+
+## New this pass: the Cloudflare block reaches the legislation
+
+The egress block documented yesterday for photographs also closes the legislation. Landing pages
+answer normally — all four cited bill pages returned HTTP 200 and their titles match the cited
+labels word for word — but `viewcontent.cgi` returns 403 with a Cloudflare "Just a moment…"
+interstitial rather than a PDF. It was retried once after the full 90 seconds the pacing rule
+requires, and returned 403 again, so this is a challenge page and not burst throttling.
+
+The practical cost is that four of #451's claims — Bills 86-21-S, 91-3-S, 99-13-S and 99-16-S, each
+of which rests on a FAILED stamp or a Summary of Action read off the document — could not be
+re-derived from the documents today. Their subjects were confirmed from the landing-page
+descriptions, which agree with the entries. A block is not evidence of absence, so nothing was cut
+on the strength of it; these four are simply carried as confirmed-when-written and not re-tested.
+Anyone re-testing them needs a route to the PDFs that this container does not have.
+
+## Traps
+
+None tripped. Two advance notices are in the checked sample and both are handled correctly rather
+than read as reports: the Associated Students mini-concert of 28 March 1972 is recorded only as
+having been advertised in the same issue, with no crowd or receipts written out of it, and the
+designated-driver item of 17 February 1998 says the cards would be distributed the following day and
+says outright that the issue is held as a contents listing giving nothing further. No committee
+chair was promoted to officer, no one was matched by surname alone, no changed surname produced a
+duplicate, no April result was filed into the wrong academic year, and no contributor commit was in
+range.
+
+The settled facts were re-read against the data rather than assumed. Norfleet stands at 1981-82 with
+the plaque's 1982 recorded beside her; Reed Morgan holds no office; Carlene and Darlene Lodmell are
+both present, separately, and correctly absent from `name-aliases.json`; the LaCivita portrait is in
+place, with its reuse for 1973-74 disclosed in its own caption; Menser, the four early departures,
+Dawson's acting term and Harris's single term are all as settled.
+
+## Checks
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py` prints
+its usual four pairs. All four were read in full and all four are genuinely separate events: a bill
+introduced on 28 January 1992 and its defeat after amendment on 6 February; a lawsuit planned in
+February 1972 and endorsed in March; a position stated in September 2003 and the legislation that
+followed in October; and, in 1997-98, the bill that funded the designated-driver cards in November
+1997 and the *Herald*'s notice of their distribution in February 1998.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+2,615 of them (98%) carrying an account of what the person did. 308 documents, 1,111 legislation
+files, 4,945 search records.** Unchanged: nothing public-facing moved this pass.
+
+## Still open
+
+- **The research routines, off since 4-5 August.** The scheduler was read directly again and is
+  unchanged: of sixteen Routines, **two are enabled** — `SGA 60 - editor` and `SGA 60 - portraits`.
+  The other fourteen include all six decade researchers, the backlog, the senate rolls, the person
+  profiles and the legislation harvest, none of them run since 5 August. Neither an end reason nor a
+  suspension is recorded against any of them, so they are paused by hand and restarting them is the
+  owner's call, which no review pass should make unasked. This is the whole reason the queue has
+  been empty for ten passes and six weeks.
+- **The stored brief still cannot be corrected from a run.** `.research/EDITOR-BRIEF.md` holds the
+  finished replacement text. A run may only edit Routines it created, so it still has to be pasted
+  in by hand. Until it is, every run is told four researchers are running when none is, and is sent
+  to three pull requests closed a month ago.
+- **A route to TopSCHOLAR PDFs**, new this pass and described above. Landing pages and the local
+  full index are unaffected; only the documents themselves are behind the challenge.
+- Carried forward unchanged: the officer-portrait gap and the unhyphenated `Senator At Large` that
+  makes filters miss 38 slots; the twelve year-photograph gap; the un-captioned group photograph
+  problem; the 728 legislation entries whose source URL points at a landing page; the 18 legislation
+  files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure; the
+  two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair;
+  Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; the pre-2003 half of the photograph gap;
+  Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
+
 # 16 September 2026, morning — a ninth empty queue, and the published week re-checked instead
 
 ## What was open
