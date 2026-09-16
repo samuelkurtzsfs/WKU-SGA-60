@@ -25623,8 +25623,12 @@ as carrying an uncaptioned cabinet shot. Both carry a caption; it simply names n
 difference decides whether a later run re-opens the picture, so the bullets now say which it is.
 
 The tool footer is still appended to pull request comments downstream of the request, as
-recorded at midday. The commits and the merge are clean and were checked; nothing published
-under the project's name carries it.
+recorded at midday, and a PATCH does not hold there. **A pull request body is a different
+case, and `AGENT-LANDING.md` is right about it:** the footer was appended to #491's body on
+creation, stripped with `update_pull_request`, and stayed stripped when both bodies were read
+back — #490 and #491 now carry none. So the midday entry should be read as covering comments
+only. Strip the body; do not spend the run fighting the comment. The commits and both merges
+are clean and were checked.
 
 ## Still open
 
