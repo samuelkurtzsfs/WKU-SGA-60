@@ -25522,3 +25522,126 @@ applying to what a run controls, and a future editor should not spend the run fi
   items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig
   and Chris Gaddis in the 1989 *Talisman*; the pre-2003 half of the photograph gap; Mary Fyfe;
   the 1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
+
+# 16 September 2026, afternoon — a second null-result photograph log, merged with three corrections
+
+## What was open
+
+One pull request, #490, "Research: photographs (rolling)", opened at 14:04 UTC against a main
+half an hour old. Its branch was level with main and merged clean, so there was no stale
+history to carry forward. The queue held nothing else: an eleventh consecutive pass with no
+decade research in it.
+
+`gh` is still not installed in these containers; `git push` and the GitHub MCP tools both
+work and were used throughout, as on the last four passes. The three pull requests the
+standing brief names as stale and open — #6, #7, #8 — have been closed since 18 August.
+
+## What was in it
+
+One file, 126 lines: `.research/photo-run-2026-09-16-second-pass.md`. No event, no leader, no
+portrait, no line of `years.json` or `photos.json`. The second null result of the day, and the
+same reasoning applies as at midday: nothing here reaches the site, but the next run will treat
+it as grounds for not re-walking a route, so its assertions were checked as if they were
+entries.
+
+## Spot check
+
+Against the repository, all re-derived rather than read:
+
+1. No `leaders` entry with role president or regent lacks a `photos.json` portrait. Zero
+   misses across 61 years, matched by `(year, name)`.
+2. Todd, Dawson, Johnson and Gilley resolve to files on disk, each opening `FF D8`.
+3. Twelve years carry no context photograph, and the log's list of them is exactly right:
+   1993-94 through 1997-98, 2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10.
+4. The filter script published in the 13 September log returns **166** candidates, spanning
+   1977-78 to 2023-24. This is the count three earlier runs each gave differently; it
+   reproduces now because the filter is written beside it, which is the whole argument for
+   that habit. 113 of the pairs are 2003 or later, so "~80 names" in the wkuherald era sits
+   inside the hedge.
+5. The five officers named as already covered — Dodds, Richey, Miles, Kurtz, Bornefeld — each
+   hold a portrait.
+
+Against the sources, which is the half that decides anything. Every caption the log declines a
+lead on was opened again at wkuherald.com:
+
+6. 8 Feb 2012, the Frankfort rally: the caption names Cory Dodds and no one else. Jankowski
+   and Treece are named in the body, which is not identification in a frame.
+7. 2 Apr 2015, "SGA election results": caption reads Jay Todd Richey. McDowell is body text.
+8. 25 Sep 2014, "SGA discusses ways to improve campus": caption names Executive Vice President
+   Nolan Miles.
+9. 25 Sep 2019, the judicial council story: empty caption, empty alt text, no image in the
+   body. Correctly called unusable.
+10. 20 Apr 2022, election night: caption names Sam Kurtz and Cole Bornefeld.
+11. The three discarded name collisions hold. "Mark Henry" is a WWE story at Diddle Arena,
+    "Jessica Williams" the Sunshine Movement piece of 3 December 2019, "Robert Bell" a
+    Kentucky Building Civil War item. Refusing all three was right.
+12. digitalcommons: landing page 200, `cgi/viewcontent.cgi` 403 behind a Cloudflare
+    interstitial. The byte count differs from the one recorded because the challenge is
+    regenerated per request; the diagnosis is unaffected.
+
+## Traps
+
+Nothing in the diff to trip most of them: no event, no date, no April result to file forward,
+no person added or merged, no settled fact touched. The one that did apply is the living-person
+rule, and it caught something — below. The log's own refusals were consistently on the right
+side of the identification bar: a name in body text is never a caption, and it declined every
+lead where the two came apart.
+
+## Checks
+
+`build.py` clean — 61 year pages, 1,963 events, 2,652 recorded terms held by 1,810 people.
+`check_data.py` 0. `check_contrib.py` 0. `check_duplicates.py` prints four pairs, all
+pre-existing on main and all read before being left alone: Bill 97-3-F passing in November 1997
+against the designated-driver cards being handed out in February 1998; a regent advisory
+committee bill introduced and then failing on amendment; the KCLU planning an action and ASG
+endorsing it seven weeks later; SGA arguing over plus/minus grading in September and voting on
+it in October. Four genuine pairs of events, nothing merged.
+
+## Merged, and what was cut
+
+#490 merged after three corrections, all to the log, none to data.
+
+**A decline that published what it declined.** The wku.edu bullet gave, as its reason for
+passing over two 2021-22 officers, the working life of one of them. Declining was right. Writing
+the reason out named a living former holder of a minor office in connection with something
+outside their SGA service, in a public repository — which is the same thing the Cody Cox bullet
+was cut for on 15 September. The bullet now records the decline in terms of the office, which
+is all a later run needs in order not to re-chase it. That is twice in three days that a
+photograph run has recorded a refusal correctly and then undone it in the writing-up. The habit
+to fix is not the judgement, which has been sound every time; it is the instinct to show the
+working.
+
+**The archive.org holdings.** The log said the site holds only 1971-1981, 1986 and 1987. It
+also holds 1943, 1946, 1947 and 1963-1965. Every one of those predates the founding of the
+Associated Students in May 1966, so the conclusion stands and no candidate was missed, but the
+line now states the holdings exactly rather than leaving a later run to re-derive them. The
+`Talisman1995` item on archive.org, which a name search will surface, is a German PC game and
+is now named as such so nobody opens it twice.
+
+**Two captions called absent.** The 2021-22 ballot and committee-chair stories were described
+as carrying an uncaptioned cabinet shot. Both carry a caption; it simply names nobody. The
+difference decides whether a later run re-opens the picture, so the bullets now say which it is.
+
+The tool footer is still appended to pull request comments downstream of the request, as
+recorded at midday. The commits and the merge are clean and were checked; nothing published
+under the project's name carries it.
+
+## Still open
+
+- **The six decade routines and the legislation harvest, off since 4-5 August.** Six weeks, and
+  an eleventh consecutive pass over a queue with no dated history in it. Two photograph logs
+  merged today and not one event added to the archive. Restarting them is the owner's call.
+- The 166-name officer-portrait list is now exhausted for every corpus this container can
+  reach. What remains needs the digitalcommons PDF endpoint or the UA1C finding aids, both
+  behind the same Cloudflare block. A photograph run's marginal hour is better spent
+  re-verifying what is already on file, which is the log's own recommendation and is right.
+- The standing editor brief remains out of date in the four places listed at midday: the `gh`
+  instruction, the three closed pull requests, the count of running routines, and the
+  instruction to strip a footer that cannot be stripped from here.
+- Carried forward unchanged: the twelve year-photograph gap; the un-captioned group photograph
+  problem; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57
+  regents" figure; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` /
+  `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; the pre-2003 half
+  of the photograph gap; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000
+  legislation gaps.
