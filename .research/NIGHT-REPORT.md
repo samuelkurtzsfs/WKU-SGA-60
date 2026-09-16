@@ -1,3 +1,90 @@
+# 16 September 2026, morning — a ninth empty queue, and the published week re-checked instead
+
+## What was open
+
+Nothing. `list_pull_requests` returned an empty array for the ninth consecutive pass. Access was
+full: `git push --dry-run` reported `* [new branch] HEAD -> access-probe` and the GitHub MCP tools
+answered, so nothing was gated. `gh` is still not installed and `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still unset; neither was needed.
+
+The branch audit was repeated with the two-dot form the last report established as the correct one.
+Every research branch carrying a merge base is strictly behind `main` — the diffs are pure
+deletions of night-report text `main` already has. The recent editor branches show as "ahead" only
+because their work landed as squashes; each one's subject is on `main` with its pull-request number
+beside it. The remainder are the orphan 4 August histories `AGENT-LANDING.md` warns about. Nothing
+is stranded, and nothing has been stranded for nine consecutive passes.
+
+## The spot check went to what has already published
+
+With no queue to review, the sample was taken from the four merges that changed `data/` in the last
+48 hours and are live on the site now. That is the same test the brief asks for, pointed at what
+went out rather than at what is waiting. Twenty claims were checked against the documents
+themselves. All twenty held, and nothing was cut or trimmed.
+
+The four bill sheets behind #477 were read under PyMuPDF and each matches the entry exactly: Bill 2
+introduced 9/7/76, Passed 9/14/76, Unanimous; Resolution 13 introduced 10/26/76, Passed 11/9/76,
+25 - 1; Bill 9 introduced 3/8/77, Passed 3/29/77, 16 - 13 - 3; Resolution 80-1 introduced 5/6/80
+with its status line stamped FAILED. Resolution 79-18's status line really is blank, which is what
+the entry says, and the entry rests its failure on Michele Wood's Herald report rather than on the
+blank — the right way round under trap 2a.
+
+Bill 97-3-F was re-rendered rather than taken on the previous run's word, because trap 2a says a
+mark on a Pass line is only ever proof when someone has looked at it. At 6x the block reads First
+Reading 11-4-1997, Second Reading 11-11-97, an X on the Pass line, Fail and Other blank. A PASSED
+stamp sits across the lower right of the same frame, which the earlier check did not mention and
+which corroborates it independently.
+
+The three Herald issues behind #473 were read against the local full index. Herald 67:52 of 14 April
+1992 carries Stewart's turnout piece, Hannah's "Students Vote Today", an unsigned editorial and four
+signed endorsements — Wilson for Rains, Linville for Miller, Seiber for Holcomb, Woodring for Jones
+— plus Richardson's Darth Vader cartoon, and no result. The result is in 67:53 two days later,
+under Stewart's "Joe Rains Wins Big", alongside Whitely's 1,200-turnout report. The entry that had
+read the ballot-day issue as a results report was correctly cut. The three combinations in #475 are
+sound as well: 47:28 does carry "Four Candidates Seek Associated Student Representative Posts", so
+the combined entry's "representative posts" is the index's own phrase and not a gloss.
+
+## Traps
+
+None tripped. No advance notice was read as a report — two of the four merges exist precisely to
+undo that error. No committee chair was promoted to officer, no one was matched by surname alone, no
+changed surname produced a duplicate, no April result was filed into the wrong academic year, and
+nothing touched a settled fact. No contributor commit was in range.
+
+## Checks
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py` prints
+its usual four pairs; all four were read and all four are genuinely separate events on separate
+dates — an introduction and its defeat in 1991-92, a planned lawsuit and its endorsement in 1971-72,
+a stated position and the legislation that followed it in 2003-04, and two distinct designated-driver
+items in 1997-98.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,945 search records.** Unchanged: nothing public-facing
+moved this pass.
+
+## Still open
+
+- **The research routines, off since 4-5 August.** This pass read the scheduler directly rather than
+  inferring it: of sixteen Routines on the account, **two are enabled** — `SGA 60 - editor` and
+  `SGA 60 - portraits`. The other fourteen include all six decade researchers, the backlog, the
+  senate rolls, the person profiles and the legislation harvest, every one of them last run on
+  4 or 5 August. That is the whole of the reason the queue has been empty for nine passes and six
+  weeks. Restarting them is the owner's call and no review pass should make it unasked.
+- **The stored brief still cannot be corrected from a run.** `.research/EDITOR-BRIEF.md` holds the
+  finished replacement text. The 14 September attempt to apply it at source was refused because an
+  agent may only edit Routines it created, and that has not changed; this run did not retry, and did
+  not edit its own instructions. It still has to be pasted in by hand. Until it is, every run is told
+  that four researchers are running when none is, and is sent to evaluate pull requests #6, #7 and
+  #8, closed on 18 August on a repository now past #485.
+- Carried forward unchanged: the officer-portrait gap, whose size depends on the filter stated beside
+  it, and the unhyphenated `Senator At Large` that makes filters silently miss 38 slots; the twelve
+  year-photograph gap; the un-captioned group photograph problem; the 728 legislation entries whose
+  source URL points at a landing page; the 18 legislation files with no text layer; the 2012-13
+  Resolution 5-13-S indexing gap; the "57 regents" figure; the two *Herald* items on how Joe Rains's
+  term ended; the `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989
+  *Talisman*; the pre-2003 half of the photograph gap; Mary Fyfe; the 1999-00 Coates investigation
+  outcome; and the pre-2000 legislation gaps.
+
 # 16 September 2026 — an eighth empty queue, and the last blank-Pass lead closed
 
 ## What was open
