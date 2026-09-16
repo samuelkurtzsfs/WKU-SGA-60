@@ -25649,3 +25649,106 @@ are clean and were checked.
   `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; the pre-2003 half
   of the photograph gap; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000
   legislation gaps.
+
+---
+
+# 16 September 2026, evening — two bills dated to a vote that had not happened yet
+
+Full access this pass: `git fetch`, the GitHub tools and a dry-run push all worked. No pull
+request was open. That is the eleventh consecutive pass over an empty queue, and the reason is
+unchanged — of the sixteen routines on the account, two are enabled.
+
+With nothing to review, the pass went at the two traps that have a documented history of putting
+wrong facts on the live site, swept across the whole archive rather than one decade.
+
+## Trap 2a: every surviving "passed at its second reading"
+
+Twenty-nine entries mention a second reading. Five of them state, as fact, that a measure carried
+on its second-reading date — the shape that put nine wrong outcomes on the site before
+12 September. All five bills are mirrored locally, so all five were read off the document rather
+than the index, text layer first and then rendered and looked at where the text layer was
+ambiguous.
+
+| Bill | Form says | Entry |
+|---|---|---|
+| 94-9-F, public forums | 2nd reading 11-22-94; handwritten tick on Pass, Fail and Other blank; PASSED stamp | holds |
+| 95-3-S, faculty and staff recognition | 2nd reading 4-11-95; handwritten tick on Pass; PASSED stamp | holds |
+| 99-12-S, KASWE conference | 2nd reading 3/30/99; **Pass line dated 3/30/99**; Fail and Other blank | holds |
+| 1-19-F, Greeks Go Green | 2nd reading 09/10/19; `Pass: Y`, undated | **corrected** |
+| 3-26-S, Uno tournament | 2nd reading 2/24/2026; `Pass: YES` | holds |
+
+The two 1990s ticks are the case trap 2a warns about in reverse: both read as blank or as junk in
+the text layer (`Pass_-, __` and `Pass v`) and both are plainly marked on the page image. A blank
+cell is still a lead, never a finding, in either direction.
+
+## What was corrected
+
+**Bills 1-19-F and 2-19-F did not pass on 10 September 2019.** Both entries were dated to that
+day and both said so — 1-19-F "passed its second reading on 10 September", 2-19-F "a second
+reading on 10 September and a passing vote". The forms do not support the date. On the 2019
+template the Pass line carries a mark and no date, so the date was inferred from the second
+reading beside it.
+
+The archive already held the evidence against it, in two of its own entries. The *Herald* of
+11 September reports the senate failing to pass the year's budget at the 10 September meeting,
+the executive branch withdrawing it, and the rules requiring a full week before a revised version
+could be voted on. The *Herald* of 19 September then reports the budget carrying at Tuesday's
+meeting — 17 September — and says in terms that the senate's passing of the budget "allowed two
+other bills, 1-19-F (Greeks Go Green) and 2-19-F (SGA funding for Bowling Green Pride), to also be
+passed unanimously". Read against its own source, the archive was asserting that two allocations
+from senate discretionary funding passed on a night its own record says the budget behind them
+failed.
+
+Both entries are re-dated to 17 September and rewritten to say what each source proves and no
+more: first reading 3 September and second reading 10 September from the form, the Pass line
+marked but undated, and the unanimous vote on 17 September from the *Herald*, which is now cited
+as `src2` beside the bill sheet. Each entry records that it was previously dated to the second
+reading. No sourced fact was lost and nothing was cut; this is the over-claimed-but-real case the
+verifiers are told to trim rather than delete.
+
+## Trap 1: advance notices
+
+Forty-six entries cite a source published before the event they describe. Four of those also carry
+outcome language, and all four turned out to be sound — three are sourced to the *Talisman*, with
+the *Herald* named in the label only for the date, which the heuristic misread. The outcome claims
+were checked against the yearbook full texts on archive.org anyway:
+
+- **Natalie Cole, 10 December 1975.** The 1976 *Talisman* gives the crowd of 325, Van Meter, the
+  three songs and Nat King Cole's daughter. Entry matches exactly.
+- **Jimmy Buffett, 27 April 1977.** The 1977 *Talisman* gives the lost money, the three encores,
+  the ninety-minute set, the small crowd, Diddle Arena and all four albums. Matches exactly.
+- **Muskie, 11 December 1973.** The 1974 *Talisman* carries the impeachment call, the Saturday
+  Massacre line and the Harris Poll's 19 per cent on the executive branch. Matches exactly.
+- The 2015 Student Legal Services Clinic entry is written in prospective voice throughout, which
+  is the advance-notice rule applied correctly.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py` returns the
+same four pairs, read again and still four genuine sequences rather than duplicates. 61 years,
+1,963 events, 60 presidents; 2,652 terms held by 1,810 people; 308 documents, 1,111 legislation
+files, 4,945 search records. Counts are unchanged because two entries were re-dated and rewritten,
+not added or removed.
+
+## Branch audit
+
+Nothing stranded. Every `research-*` branch either has no merge base with `main` — the orphan
+4 August snapshots — or is behind it, or reads as ahead only because its work landed as a squash.
+The older editor branches whose two-dot diff shows data changes run the wrong way: merging one
+would restore text that a later pull request replaced.
+
+## Still open
+
+- **The six decade routines and the legislation harvest, off since 4-5 August.** Six weeks. Two
+  corrections today, both to material already published, and no new history has entered the
+  archive since early August. Restarting them is the owner's call.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap, now exhausted for every corpus this container can reach; the 728 legislation
+  entries whose source URL points at a landing page; the 18 legislation files with no text layer;
+  the 2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure; the two *Herald* items on
+  how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig and Chris
+  Gaddis in the 1989 *Talisman*; Mary Fyfe; the 1999-00 Coates investigation outcome; and the
+  pre-2000 legislation gaps.
+- The standing editor brief is still out of date in three places: it opens with a `gh` command
+  that is not installed in these containers, it names pull requests #6, #7 and #8 as stale when
+  all three were closed on 18 August, and it describes four research routines as running.
