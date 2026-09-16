@@ -5913,6 +5913,109 @@ pass can see the evidence instead of re-opening the lead. This is the trap resol
 for once: a blank cell is a lead, and so is an unexplained "it passed", but both are settled by
 looking at the page, not by assuming which way it goes.
 
+### Photograph run of 16 September: `web.archive.org` opened up, and a new route (`wku.edu`'s own old SGA site) turns out to already be fully mined
+
+Confirmed the baseline fresh rather than trust the notes above: 1,388 leader-photo entries, all 73
+`leaders` (president/regent) records covered including all four named presidents (Todd, Dawson,
+Johnson, Gilley — checked first, per the standing instruction, before spending time), the same
+twelve year-photograph gap years, and, by this run's own count, 176 distinct executive/Senate
+officer names (218 name-slots) still without a portrait — close to but not identical to the
+"193 names, 242 slots" figure two runs back; the difference is not reconciled here and should not
+be assumed to mean either count is wrong.
+
+*Editor's note, 16 September.* The first three figures in that paragraph were re-derived from the
+data files and are exact: 1,388 leader-photo entries, all 73 `leaders` records carrying a portrait,
+and the same twelve gap years, 1993-94 through 1997-98 plus 2000-01, 2002-03, 2003-04, 2005-06,
+2006-07, 2008-09 and 2009-10. The officer-gap number is the one to treat with care. It is not
+unreconciled — an earlier pass already published the reconciliation, counting 187 title/year pairs
+without a portrait for that year, 161 distinct names, 159 distinct names holding no portrait
+anywhere, and 176 once the generic Senator seats are left in — and it ended with the rule this entry
+should have followed: **write the filter beside the number or write no number.** A bare 176 is not
+comparable with a bare 193. Counting here under two filters stated explicitly gave different figures
+again: excluding offices titled exactly "Senator" / "Senator At Large", 995 slots, 247 title-year
+pairs, 207 distinct names, 179 names with no portrait anywhere; leaving the Senator seats in, 2,579
+slots and 741 names. Note that the data spells the office "Senator At Large" without the hyphen, so
+a filter written against "Senator At-Large" silently fails to exclude 38 slots — which is on its own
+enough to explain a swing of this size. Every future run states its filter or omits the count.
+
+**`digitalcommons.wku.edu` is still closed.** `viewcontent.cgi` and `/do/search/` both still return
+Cloudflare's "Just a moment..." challenge on a plain request with the documented navigation
+headers, tested twice an hour apart. No change from every run since 14 September.
+
+**`web.archive.org` is open today**, cleanly, for most of this run — a real change from the last
+several "night pass" notes, which logged it as a proxy-layer connection reset. It still resets
+intermittently (roughly one request in six failed with `ws_closed_mid_exchange` or `SSL_ERROR_SYSCALL`
+and succeeded on a two-to-three-second retry), so budget for retries rather than treating a single
+failure as the route being closed. Confirm it fresh next run rather than assume either state holds.
+
+**New finding: `wku.edu` ran its own SGA site at `Dept/Org/Student/SGA/` from roughly 2000 to 2010**
+(the CDX index for that exact path has no capture before 2000-05-29), with individual named officer
+bio pages (`leslie.htm`, `aaron.htm`, `jamie.htm`, `jamil.htm`, `mark.htm`, each titled "*Name* --
+*Office*" with a photo captioned `<Name>.jpg (<bytes> bytes)` in the `alt` attribute) and, from
+2003-04 on, a combined `e_profiles.html`/`executive.php` page with one `<img … alt="Full Name">` per
+officer. This is exactly the kind of caption-confirmed portrait CLAUDE.md wants, and it is a
+**different source from the `wkuherald.com` sweep** two runs back, so it looked genuinely new.
+
+It was not. Checked every name this route turns up against `data/photos.json` before downloading
+anything, and **all of it is already in the archive**: the entire 2001-02 cabinet (Bedo, Sears,
+Spencer, Sewell, Rawlings) and the entire 2000-01 cabinet (Martin, Bedo, Howard, Rawlings, McClard,
+Caswell) from `cab.htm`/`cab9900.htm`/the individual bio pages, and the entire 2019-20 cabinet
+(Edmonds, Mujkanovic, Kelley, Norvell, Brosky, Evans, Harris) and the entire 2022-23, 2023-24 and
+2025-26 cabinets from the modern `wku.edu/sga/*/headshots/` and `*_headshots/` paths turned up by a
+broader `wku.edu/sga*` CDX query — every single name already carries a portrait. A prior run
+plainly used this exact source already, just without leaving a note naming it; this entry exists so
+the next run doesn't spend an hour rediscovering that.
+
+**Two officers were named and titled but no image exists for them anywhere in the Wayback capture.**
+`executive.php` (captured 26 May 2005) lists the full 2004-05 cabinet by name and confirms Mark
+Henry as Information Technology Director and Amelia Bice as Office Associate — both still open in
+the gap list — but the page's own `<img src="Pics/ProfilePics/exec.jpg">` group photo has no capture
+at any timestamp (empty CDX result), and the two `e_profiles.html` versions that do have photos
+(December 2004, February 2005 — identical by digest) only picture Katie Dawson and Brittany Fausey,
+both already covered. Declined for lack of any photograph, not for lack of a name or a title.
+
+*Editor's note, 16 September, and the more useful finding.* Every external claim in this entry was
+re-tested against the source and every one held exactly: both TopSCHOLAR paths returned the
+Cloudflare challenge; 2000-05-29 is the earliest capture of that path; `leslie.htm` is titled
+"Leslie Bedo -- President" and carries `alt="Leslie.jpg (151359 bytes)"`; `executive.php`'s earliest
+capture is 26 May 2005 and it does name Henry and Bice in those offices; `exec.jpg` has an empty CDX
+result; the December 2004 and February 2005 `e_profiles.html` captures share digest
+`EAYIQRFS47QZSVVMRZJECBT566ISWII6` and carry exactly two images, `Katie.jpg` and `Brittany.jpg`.
+But the entry stops one question short of the one that matters for the next run. **The bio-page
+portraits were never captured at all.** `images/Leslie.jpg`, `images/Aaron.jpg`, `images/Jamie.jpg`,
+`images/Jamil.jpg` and `images/Mark.jpg` each return an empty CDX result, as does every other image
+under `SGA/images/` bar site furniture — logos, animated GIFs, a loader. So this route is not merely
+redundant because the names happen to be covered already; it could not have yielded a portrait even
+if every name on it had been open. That is the fact that closes it.
+
+The single exception is `Pics/ProfilePics/64aa.jpg`, captured once on 5 November 2004 and still
+retrievable: a real JPEG, 444x264, an outdoor group photograph of roughly twenty-six students by
+water, almost certainly an SGA retreat of that autumn. No caption, no surviving referring page — it
+is not linked from either the site root or the `e_profiles.html` capture of 3 November 2004 — and so
+no way to name anyone in it. Unusable under the rule that a subject must be confirmable, and logged
+here as another instance of the standing un-captioned group photograph problem rather than as a
+lead. If a referring page ever turns up in a later capture, this is the image to come back to.
+
+**One 1977-78 lead resolved as an already-known dead end, independently re-derived.** Archive.org's
+full-text search inside `talisman1978west` turns up the p.34 "A LIGHT MOMENT IN AN ASG MEETING"
+photograph, captioned with all four names (Moore, Bass, May, Murphy) in order — but the photograph
+itself shows only three people clearly, and the one adult male visible could be read as either
+Moore or Bass with no way to tell which. This matches an earlier run's verdict exactly; recorded
+again here only because this run reached it by a different path (IA's `fulltext/inside.php` search
+API rather than a manual page-by-page read) and the two independent methods agreeing is itself
+worth knowing. David Young (1978-79, named in the 1979 Talisman's text but with no photograph on
+the page), Alice Wicks, Steve Wilson, Mark Chesnut, Chris Millay and Dwight Austin were all
+re-checked against archive.org's Talisman full text this run and confirmed still absent — the same
+verdict the 15 September later pass already recorded for each.
+
+Nothing added to `data/photos.json` or `data/photos/` this run. `build.py` and `check_data.py` both
+pass clean. State for the next run: the pre-2003 slice of the officer gap and the twelve
+year-photograph gap still need `viewcontent.cgi` or an equivalent this container cannot currently
+reach; `web.archive.org`'s `Dept/Org/Student/SGA` and `sga/` paths have both now been swept for
+named, captioned officer photographs and should not be re-swept on the same names without a new
+source — the two-name Mark Henry/Amelia Bice gap inside that source is confirmed closed, not merely
+unchecked.
+
 ## 9. Restarting a session
 
 ```bash
