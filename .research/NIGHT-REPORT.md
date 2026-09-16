@@ -1,3 +1,78 @@
+# 16 September 2026 — an eighth empty queue, and the last blank-Pass lead closed
+
+## What was open
+
+Nothing. `list_pull_requests` returns an empty array. GitHub access was full this run: the MCP
+tools answered and `git push --dry-run` reported `* [new branch] HEAD -> access-probe`, so nothing
+was gated. `gh` is still not installed and `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset,
+so neither the brief's opening command nor the drop box fallback was available; neither was needed.
+
+Every branch on origin was measured rather than assumed, and the measurement was done twice because
+the first pass got it wrong. `git diff main...branch` compares the *merge base* to the branch, so it
+prints a branch's own additions whether or not `main` already carries them — it showed
+`research-photos` adding 37 lines that `main` has had since #482. The two-dot form is the one that
+answers the question. Under it, every research branch with a merge base is strictly behind `main`:
+their diffs are pure deletions. The rest are the orphan 4 August histories `AGENT-LANDING.md` warns
+about. Nothing is stranded, and nothing has been stranded for eight consecutive passes.
+
+## The one lead left on the board
+
+The 15 September night report flagged a single live defect on the published site: the 1997-98
+designated-driver entry said Bill 97-3-F "passed on second reading a week later", which is exactly
+the shape trap 2a exists to catch — a second reading is not a vote. It was checked rather than cut,
+and it holds.
+
+`data/legislation/1997-98/dc_bill_86.pdf` does have a text layer. It reads as empty here only
+because `pdftotext` is not installed in these containers; PyMuPDF reads it, which
+`scripts/extract_authors.py` already knew and this run had to rediscover. The form gives First
+Reading 11-4-1997, Second Reading 11-11-97, `Pass _X_`, Fail and Other blank. Trap 2a says a
+handwritten tick is not in the text layer at all and a rendered look is the only proof, so the block
+was rendered at 4x and read off the image: the X is printed on the Pass line, and the OCR is not
+inventing it.
+
+So the sentence was true. It has been rewritten anyway, to say what the form says — the second
+reading dated to 11 November rather than "a week later", and the Pass mark named — so the evidence
+travels with the claim and a later pass closes the lead by reading it instead of re-opening it. That
+is the whole change to `data/years.json` this run: one sentence, no fact removed, one date added.
+
+## Traps
+
+Nothing to cut, because nothing arrived. The four duplicate pairs `check_duplicates.py` prints are
+the same four the last two passes judged and kept, and they were read again rather than waved
+through: a bill introduced and the scheme distributed three months later; a bill introduced and the
+same bill failing after amendment nine days on; a lawsuit planned and then endorsed; a position
+taken and then voted. Each pair is two stages of one story, separately sourced, and merging any of
+them would lose a date. No settled fact was touched and no living person is named in the diff.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` both exit 0.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,945 search records.** Unchanged: this run corrected a
+sentence, not a count.
+
+## Still open
+
+- **The six decade routines and the legislation harvest have been off since 4-5 August.** Six
+  weeks tomorrow. The editor has now reviewed an empty queue eight passes running, and the archive
+  has gained no new history in that time. Restarting them is the owner's call and no review pass
+  should make it unasked, but nothing else on this list can move until it happens. It is the only
+  item here that blocks every other item.
+- The standing editor brief is out of date in the same three places the last six reports named: it
+  opens with `gh auth setup-git`, which is not installed here; it names #6, #7 and #8 as stale open
+  pull requests, all closed on 18 August; and it describes four research routines as running around
+  the clock when two are, neither of them a decade researcher.
+- The blank-Pass audit is now finished. With 97-3-F settled there is no known unverified pass claim
+  left on the board.
+- Carried forward unchanged: the officer-portrait gap at 159 names; the twelve year-photograph gap;
+  the un-captioned group photograph problem; the 728 legislation entries whose source URL points at
+  a landing page; the 18 legislation files with no text layer; the 2012-13 Resolution 5-13-S
+  indexing gap; the "57 regents" figure; the two Herald items on how Joe Rains's term ended; the
+  `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989 Talisman; the
+  pre-2003 half of the photograph gap; Mary Fyfe; the 1999-00 Coates investigation outcome; and the
+  pre-2000 legislation gaps.
+
 # 15 September 2026, later — an empty queue, and three articles written up twice
 
 ## What was open
@@ -24926,3 +25001,82 @@ listing and that the headline is all it proves. Nothing to merge.
   figure; the two Herald items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel`
   pair; Mickie Hennig and Chris Gaddis in the 1989 Talisman; the pre-2003 half of the photograph
   gap; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
+
+# 15 September, night: one photograph log merged, every figure in it re-derived
+
+One pull request open, #482 on `research-photos`, and it merged. The three decade pull requests the
+standing brief still calls stale — #6, #7 and #8 — have been closed since 18 August, which is now
+the fifth report to say so.
+
+## What #482 was, and why it still got a full check
+
+Documentation only: 37 lines added to `SGA-60-AGENT-INFO.md`, no data file touched. `build.py`
+skips `.md`, so none of it reaches the public site. It was checked as closely as a data change
+anyway, because a handoff note that misreports the baseline is how the next run wastes its hour.
+
+Eleven of its twelve figures reproduced exactly from the data files: 1,388 leader-photo entries;
+73 `leaders` records across 61 years with none missing a portrait; Todd, Dawson, Johnson and
+Gilley each carrying one; and the same twelve years without a year-level photograph, 1993-94
+through 1997-98, 2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09 and 2009-10.
+
+The twelfth, the 159 officer names without a portrait, came out at 158 on my own first pass, and
+the gap is worth recording because it is not an error. Excluding every office whose title *begins*
+"Senator" drops two people who should be counted: a Senator and Fairness Representative, and a
+Senator and Outreach & Student Experience Committee Head. An exact match on "Senator" and
+"Senator At-Large", which is what the run described doing, keeps them. 159 is the right number.
+The method belongs in the note beside it so the next run does not re-derive it twice.
+
+## The routes, re-tested rather than taken on trust
+
+All five claims held, tested one request at a time: `viewcontent.cgi` 403 behind Cloudflare's
+challenge; `do/search/` 403 behind the same; the `dlsc_ua_records/5695/` landing page a clean 200
+whose only embedded images are two platform assets, so there is genuinely no thumbnail route around
+the blocked download; `wku.edu/news/?s=` redirecting to `/news/articles/?s=` and returning the
+unfiltered listing, with no occurrence of the query terms anywhere in 94 KB of response; and
+`web.archive.org` resetting the connection at the proxy.
+
+## Traps
+
+Nothing to cut. No event claims in the diff, so the advance-notice trap and the second-reading trap
+do not arise. Ian Hamilton is named as Sustainability Committee Chair and is not promoted to an
+officer. The same-named person at another university was declined rather than matched, and is not
+identified — the right answer twice over, on evidence and on privacy. No settled fact is touched.
+
+The four duplicate pairs are the same four, and were read again rather than waved through. The
+1997-98 designated-driver pair is the one that would matter if it were wrong, and it is not: three
+separately sourced stages of one scheme — Bill 97-3-F of 4 November, the Herald's report of
+13 November, the distribution notice of 17 February — and the two Herald entries each say on their
+face that the archive holds only a contents listing and that the headline is all it proves. That is
+the advance-notice rule applied properly in the data, not around it.
+
+## One lead for a later pass
+
+The 1997-98 bill entry says 97-3-F "passed on second reading a week later". Trap 2a is explicit
+that a second reading is not a vote, and a handwritten tick is not in the text layer at all. This
+is pre-existing on `main` and outside this diff, so it was not touched, but it is the shape of
+thing the September blank-Pass audit was built to catch. Worth rendering the page and looking at.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` both exit 0.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people.
+308 documents, 1,111 legislation files, 4,945 search records.** No data changed this pass.
+
+## Still open
+
+- **The six decade routines and the legislation harvest, off since 4-5 August.** Six weeks. The
+  archive has gained no new history in that time, and the editor has now reviewed an essentially
+  empty queue for seven consecutive passes. Restarting them is the owner's call and no review pass
+  should make it unasked, but it is the only item on this list that is blocking every other item.
+- The standing editor brief is out of date in the same three places the last five reports named: it
+  opens with `gh auth setup-git`, which is not installed in these containers; it names #6, #7 and
+  #8 as stale open pull requests, all closed on 18 August; and it describes four research routines
+  as running around the clock when two are, neither of them a decade researcher.
+- Carried forward unchanged: the officer-portrait gap, now measured at 159 names with the method
+  above; the twelve year-photograph gap; the un-captioned group photograph problem; the 728
+  legislation entries whose source URL points at a landing page; the 18 legislation files with no
+  text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure; the two Herald
+  items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig and
+  Chris Gaddis in the 1989 Talisman; the pre-2003 half of the photograph gap; Mary Fyfe; the
+  1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
