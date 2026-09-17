@@ -29,9 +29,21 @@ it — see "Not the first to find this" below), this run worked archive.org's ow
   Epsilon fraternity group photograph (p. 288) — he is one name in a caption block that size, not
   identifiable. No individual portrait found in any year checked. Left without a portrait.
 - **Alice Wicks** (Secretary, 1978-79). Indexed in both the 1979 and 1980 Talisman without a page
-  number attached to her name — checked against known cases (e.g. Cathy Murphy's index line reads
-  "Murphy, Cathy Renee 401" when she does have a portrait), a blank page number appears to mean no
-  individual photo that year. Left without a portrait.
+  number attached to her name. In this index a page number in the 360-405 band points at a
+  class-portrait grid — p. 398 of the 1980 volume is a "Freshmen" grid of individual portraits with
+  the names set in a column beside it — and a good many index lines carry no number at all. On
+  p. 425 of the 1980 index, "Murphey, Katherine Jane 389", "Murphy, Daniel 193" and "Murphy,
+  Elizabeth Marie 401" carry numbers while "Murphy, Cathy Renee" and "Murphy, Christopher C."
+  carry none. So a blank page number appears to mean no individual photo that year. Left without
+  a portrait.
+
+  *Editor's note, 17 September.* This paragraph first offered as its control "Cathy Murphy's index
+  line reads 'Murphy, Cathy Renee 401' when she does have a portrait". Checked against the page
+  image of the 1980 index (archive.org, `talisman1980west`, p. 425): the 401 on that line belongs
+  to "Murphree, John Williamson", printed directly above, and Cathy Murphy's line carries no page
+  number in either the 1979 or the 1980 volume. The number was read off the adjacent line. The
+  inference the paragraph draws is sound and the controls above replace the bad one; the reading
+  that produced it was not, and is recorded here rather than quietly deleted.
 - **Mark Chesnut** (Treasurer, 1980-81). Appears by name only in "Men's Intramurals" results
   tables in both the 1980 and 1981 Talismans (badminton/racquetball/tennis winners), never next to
   a photograph of him specifically. His indexed page numbers (1980 Talisman p. 257, 1981 Talisman
@@ -44,7 +56,8 @@ it — see "Not the first to find this" below), this run worked archive.org's ow
   portrait.
 
 Also checked, no result: **Chris Millay** (Parliamentarian, 1986-87) — not found by name in either
-the 1986 or 1987 Talisman (only a different person, Beth Ann Millay, appears in both). **Vern
+the 1986 or 1987 Talisman (only other people of the surname appear: Beth Ann Millay, and Lori Ann
+Millay in the 1987 index). **Vern
 Pulman** (Representative-at-Large, 1974-75) — no hit at all in the 1975 Talisman's OCR text.
 
 ## Not the first to find this: the Wayback-CDX route was already documented this morning
