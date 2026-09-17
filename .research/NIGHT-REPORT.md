@@ -25981,3 +25981,94 @@ Merged, with nothing cut. The verification is on the pull request.
   normally — the probe succeeded again tonight), it names pull requests #6, #7 and #8 as stale when
   all three were closed on 18 August, and it describes four research routines as running when one
   is.
+
+# 17 September — the Wayback route pays off, and two faces land on corrected reasoning
+
+One pull request open, #497 from the photograph routine, the only routine still producing. Merged,
+with two corrections pushed first.
+
+## What was reviewed
+
+The diff was small enough to check rather than sample: two new portraits, both 1988-89, cropped
+from the Associated Student Government group photograph on p. 198 of the 1989 *Talisman* — Lori
+Easton and Honor Logsdon. Everything else in it was the run note, the two image files and a single
+regenerated line of `site/network.html`.
+
+The thread left open in last night's report has been followed through. The Wayback Machine does
+hold its own HTTP-200 captures of the Talisman PDFs served from `digitalcommons.wku.edu`, covering
+1906 to 1995 and in particular 1982-85 and 1988 onward — exactly the stretch archive.org's own
+`talisman19NNwest` items do not reach. The live Cloudflare block on `/cgi/viewcontent.cgi` is
+sidestepped entirely. The query that works, and the traps around it, are written up in
+`.research/photo-run-2026-09-17-wayback-pdfs.md`. That is the most useful thing to come out of the
+photograph routine in some weeks, and it reopens 1988-1993, where archive.org has nothing.
+
+The run also closed the 1994 volume properly: its Organizations section, pp. 178-209, carries no
+SGA or ASG content at all, the volume having given the section over to photo essays on other
+subjects. A genuine negative result, read page by page, not a failed search written up as one.
+
+## What was corrected before merging
+
+**The identifications are right. The reasoning filed with them was not.** The pull request body, the
+commit message and the run note all said that three earlier runs had cropped Amos Gott, Scott
+Whitehouse and Victor Click from this same photograph, and that those three crops established the
+frame's left-to-right order. Checked against `photos.json`, only Whitehouse's portrait came from
+p. 198. Gott's is from the *Herald* of 13 April 1989 and Click's from the junior portrait grid on
+p. 107 of the same yearbook. Two faces would have gone onto the public site resting on a
+corroboration that does not exist.
+
+What does hold it up is now written into both citations, where a reader can check it: the frame
+holds three figures in front and four behind against the caption's three and four names; the back
+row reads one man then three women, as Click, Knights, Easton and Logsdon does; and the front row
+has two anchors — Gott named first and sitting at front left, which his independent *Herald*
+portrait confirms, and Whitehouse named last at front right, with Logsdon's striped top visible
+behind him in his own crop from this frame. That last detail ties the right-hand end of both rows
+together and is the cleanest single confirmation in the photograph.
+
+**The run note also reversed two people.** It placed Mari Knights in the front row and John Seiber
+in the back; the caption has Seiber second in front and Knights second behind. The note flags both
+as open work for a later pass, so left standing it would have sent that pass cropping Amos Gott's
+face for Mari Knights. Fixed in the note.
+
+Nothing was cut. Both portraits are properly sourced to exact-name 1988-89 senate members, each
+tied to ASG minutes — Easton sworn in 25 October 1988, Logsdon on 6 September — and neither name
+appears in `name-aliases.json`, so there is no changed-surname duplicate behind them. The Kim
+Summers near-miss the run reported was checked and was reverted properly: the existing file is
+byte-identical to main and the two Summers entries reuse that one image across two years with no
+duplicate pair. Catching a filename collision that would have silently replaced an already-verified
+portrait, and writing it up instead of burying it, is the run's second real contribution.
+
+## Checks
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both zero, and `site/` regenerates
+byte-identical to what was committed, so nothing in it was hand-edited. `check_duplicates.py`
+reports the same four pairs as last night; all four are on `main` unchanged, this pull request
+touches no events at all, and all four remain genuinely distinct. None merged.
+
+After the merge: 61 years, 1,963 events, 60 people have been president; 2,652 recorded terms held
+by 1,810 people, 2,615 of them (98%) carrying an account of what the person did; 47 people recorded
+under more than one spelling.
+
+## Still open
+
+- **The six decade routines and the legislation harvest remain off, since 4-5 August.** Unchanged,
+  and still the owner's call. The photograph routine continues to be the only one producing, but
+  tonight it produced a genuinely new route rather than another confirmation of exhaustion.
+- **Next for the photograph routine**, on its own note: 1988, 1990, 1991, 1992, 1993 and 1995 are
+  now reachable through the Wayback captures and untried. 1995 is downloaded but unread and, like
+  1994, has almost no OCR layer, so it needs visual page-by-page work. 166 cabinet and Senate
+  leadership names still have no portrait; this run resolved two.
+- **A standing instruction for positional crops.** The better entries in `photos.json` — Adrian
+  Smoot, Hollie Hale, Larry Gumbel — record the figure count and the sex pattern in the label
+  itself. New positional identifications should do the same at the point of writing rather than
+  leave the reasoning in a run note, and a portrait cited as corroboration should have its own
+  `src` opened first to confirm it came from the frame being read. Tonight is the case for it.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents"
+  figure; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel`
+  pair; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; Mary Fyfe; the 1999-00 Coates
+  investigation outcome; and the pre-2000 legislation gaps.
+- The standing editor brief is stale in the same three places as last night, all three confirmed
+  again tonight: `gh` is not installed in these containers and git is credentialed without it, the
+  push probe succeeding as before; pull requests #6, #7 and #8 are named as stale when all three
+  were closed on 18 August; and four research routines are described as running when one is.
