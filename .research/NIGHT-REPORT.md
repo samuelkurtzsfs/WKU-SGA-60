@@ -26292,3 +26292,107 @@ gained a second source.
   regents" figure; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` /
   `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; Mary Fyfe; the
   1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
+
+# 17 September, evening — an empty queue, and every Herald citation in the archive checked against the index
+
+## What was reviewed
+
+Nothing was waiting. `list_pull_requests` returns an empty set for open pull requests, and the
+full list of 501 shows every one closed, the last five merged earlier today. This is the twelfth
+consecutive empty queue. The cause is unchanged and is not a fault: six of the seven research
+routines have been off since 4-5 August and the photograph routine, the only one producing,
+merged its last log this afternoon as #500.
+
+Pull requests #6, #7 and #8, which the standing brief still names as stale and open, were read
+directly again. All three are closed; #6 closed unmerged on 18 August. There is nothing to
+rescue or to shut.
+
+## The clone was on an orphaned history
+
+Local `main` and `origin/main` shared no merge base, the condition AGENT-LANDING warns about.
+The local tip was a 73-commit history ending 11 September; origin's is 98 commits ending
+today. A content diff confirmed origin strictly ahead — three photographs and the `years.json`
+changes of the last six days — and the clone was reset to it rather than merged, which is what
+the warning asks for. No work was lost: nothing local was unpushed.
+
+## Eight claims from the most recent merges, opened at their sources
+
+The queue being empty, the sample was drawn from what reached the live site in the last two
+days instead.
+
+- **Herald 69:38 [39], 22 Feb 1994, "Student, President Trade Roles for Day".** In the index at
+  `dlsc_ua_records/7855`, dated 1994-02-22, under Tonya Root's byline, naming Meredith and
+  Rodriguez. The archivist's own bracketed volume correction is reproduced in the citation
+  exactly. Holds.
+- **Herald 52:29, 16 Jan 1973, "Associated Student Government Sponsors Book Exchange".** In the
+  index at `dlsc_ua_records/4995`, dated 1973-01-16, headline verbatim. Holds.
+- **The 1989 Talisman, `dlsc_ua_records/413`.** Landing page opened: "UA12/2/2 Talisman: Image in
+  the Making", 1989, carrying Associated Student Government. Holds.
+- **Lori Easton and Honor Logsdon, 1988-89.** The two new portraits are the only claims in the
+  sample that rest on inference rather than a caption naming the face, so both were tested
+  against the crops themselves. The reasoning chain is anchored at both ends — Amos Gott at
+  front left against an independent Herald portrait, Scott Whitehouse at front right — and it
+  makes one falsifiable claim: that Logsdon is the striped top standing behind Whitehouse in his
+  own crop from this frame. It is. Her crop and his interlock — the horizontally striped top
+  behind him is hers, and the dark hair cut off at the bottom of her frame is his head. Easton's
+  crop shows a dark top adjacent, matching the dark shape at the left edge of his. Four names in
+  the caption's second row, four figures behind, one man then three women, Click then Knights,
+  Easton, Logsdon. Both hold, and the label states the inference rather than hiding it.
+- **Bills 1-19-F and 2-19-F, re-dated from 10 to 17 September 2019.** The Herald piece the
+  re-dating rests on was opened in full: Brody Rexing, 19 September 2019, reports the budget
+  carrying unanimously with all 13 senators and says the senate's passing of it allowed both
+  bills "to also be passed unanimously", at the meeting of "this Tuesday" — 17 September. The
+  correction is right, and the rewritten bodies now separate the form's undated Pass line from
+  what the newspaper reports. Holds.
+
+Nothing in the sample needed cutting or trimming.
+
+## A new control: citation dates across the whole archive
+
+Last night's sweep tested one class of error — a completed outcome resting on an advance notice.
+This one tests a different one, and mechanically rather than by sample: does the date a citation
+prints actually match the issue the URL points at? Every event in `years.json` citing
+`dlsc_ua_records`, in both `src` and `src2`, was matched to that item in
+`herald-index-full.json` and its label date compared with the index's date for the item.
+
+795 citations, of which 784 print a parseable date. One mismatch came back and it is a false
+positive: 1968-69's "SGA Meeting Minutes, 13 Feb 1969; College Heights Herald 48:18, 20 Feb" is a
+compound label, and the URL resolves to Vol. 48 No. 18 of 20 February 1969, exactly as the second
+half of the label says. Two citations are not keyed in the index because they are direct
+`viewcontent` PDF links rather than landing pages; both print volume, issue and date in full.
+
+So the class is clean: no event in the archive prints a date its cited issue contradicts. Worth
+re-running after any large merge, since it costs nothing and reads the whole file.
+
+## Checks
+
+`build.py` clean, and `site/` regenerated byte-identical to what is committed, so nothing in it
+has been hand-edited. `check_data.py` and `check_contrib.py` both exit zero. `check_duplicates.py`
+reports the same four pairs as the last several nights. All four were read again rather than
+taken on trust, and all four remain distinct: introduced then failed, planned then endorsed,
+opposed then passed, and the designated driver cards — a bill carried on 4 November 1997, a
+Herald report nine days later, and distribution announced the following February, three separately
+sourced stages, each already hedged about what its contents listing can prove.
+
+61 years, 1,963 events, 60 people have been president; 2,652 recorded terms held by 1,810 people,
+2,615 of them (98%) carrying an account of what the person did; 47 people recorded under more than
+one spelling. 308 documents, 1,111 legislation files, search index 4,945 records. Nothing was
+added or removed tonight: this was a review, and the review found nothing to cut.
+
+## Still open
+
+- **Six decade routines and the legislation harvest remain off, since 4-5 August.** Twelve empty
+  queues now. The photograph routine is the only one producing. Still the owner's call, and the
+  only thing standing between this archive and the years it has not swept.
+- The standing editor brief is stale in four places, all re-confirmed tonight: `gh` is not
+  installed and git is credentialed without it; #6, #7 and #8 are named as stale and open when
+  all three closed on 18 August; four routines are described as running when one is; and the
+  brief's REVIEW-ONLY fallback was not needed, GitHub being reachable through the MCP tools.
+- `data/years.json` currently ends without a trailing newline. Cosmetic, harmless to the build,
+  but it makes every future diff of the file's last line noisier than it needs to be.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57
+  regents" figure; the two Herald items on how Joe Rains's term ended; the `Amber Daniels` /
+  `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989 Talisman; Mary Fyfe; the
+  1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
