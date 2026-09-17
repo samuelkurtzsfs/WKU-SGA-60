@@ -63,17 +63,23 @@ Government" group photograph, 1989 Talisman p. 198 (`digitalcommons.wku.edu/dlsc
 recovered via the Wayback capture above). The photograph's own caption reads "FIRST ROW: Amos
 Gott, John Seiber, Scott Whitehouse SECOND ROW: Victor Click, Mari Knights, Lori Easton, Honor
 Logsdon" — this is the same photograph already on file as the year's `1988-89-asg-executive.jpg`
-context photo, and the same one three earlier runs already cropped for Amos Gott, Scott
-Whitehouse and Victor Click's individual portraits. Both `years.json` senate-member entries
+context photo. Of the three people from this frame who already had portraits, only Scott
+Whitehouse's was cropped from it: Amos Gott's comes from the Herald of 13 April 1989, p. 1, and
+Victor Click's from the 1989 Talisman's junior portrait grid on p. 107. The reading order
+therefore does not rest on three prior crops from this frame — it rests on the figure count (three
+in front and four behind against the caption's three and four names), the back row reading one man
+then three women as Click, Knights, Easton and Logsdon does, and two front-row anchors: Gott, named
+first, is the man in glasses at front left, which his independent Herald portrait confirms, and
+Whitehouse, named last, is the man at front right. Both `years.json` senate-member entries
 (`Lori Easton` — "Freshman class officer sworn into ASG"; `Honor Logsdon` — "Potter College
 Alternate, then off-campus representative, then Representative At-Large") give an exact name
 match. Easton is third of four in the back row (the one with dark, voluminous hair); Logsdon is
-fourth (striped shirt, shorter curly hair) — read off the same left-to-right row order the
-existing three crops already established and visually confirmed against the full-page scan
-before cropping either one.
+fourth (striped shirt, shorter curly hair) — read off the left-to-right row order established
+above and visually confirmed against the full-page scan before cropping either one.
 
 **"Mari Knights"** (the caption's spelling) and **John Seiber** are also pictured in this same
-photograph — front-row-left and back-row-first respectively — but neither has a standalone named
+photograph — Knights second in the back row (the blonde in the pale blouse), Seiber second in the
+front row (the man in the patterned sweater), per the caption's own order — but neither has a standalone named
 entry in `data/years.json` for 1988-89 to attach a portrait to. The person actually named in
 `years.json` is "Mary Knights," and only inside another leader's note text (Lori Easton's:
 "Sworn in with Dan Knowles, John Seiber and Mary Knights..."), not as her own list entry; John
