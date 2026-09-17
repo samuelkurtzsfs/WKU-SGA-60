@@ -1,3 +1,120 @@
+# 17 September 2026, afternoon — a photograph log merged, and an index control that read the wrong line
+
+## What was open
+
+One pull request, #500, "Research: photographs — cabinet-officer search log", opened this morning
+against `research-photos` and sitting cleanly on the current tip of `main`. The eleven passes
+before this one found an empty queue; this is the first in some days with something in it.
+
+Access was full, not gated. `gh` is still not installed, as every recent report has said, but git
+is credentialed and `git push --dry-run` reported `* [new branch] HEAD -> access-probe`, and the
+GitHub tools answered normally. The stored brief is still wrong in the same places: it opens with
+a `gh auth setup-git` command that cannot run, and it names #6, #7 and #8 as stale and awaiting
+review when all three were closed unmerged on 18 August. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN`
+remain unset and were not needed.
+
+## What the branch held
+
+A single file, 141 lines, `.research/photo-run-2026-09-17-officer-search.md`. No event, officer,
+document or photograph was touched, and `data/photos.json` and `data/photos/` are unchanged, so
+nothing in it reaches the published site. It is a record of six cabinet and Senate officers
+checked for a portrait and not found, and of one photograph found and deliberately not used.
+
+A log that changes no data still had to be checked properly, because this one is written as a map
+for the next run — it hands a future portrait hunt a volume, a page and a position in a row. A
+wrong map is how a misidentified face gets made, and that is the one failure this project treats
+as worse than an empty year.
+
+## Twelve claims checked, eleven held
+
+The office and year given for all ten named officers match `years.json` exactly. Every leader
+carrying `president` or `regent` across all 61 years has a portrait, so the claim that priorities
+one and two remain satisfied is true on the data as it stands. The caption of the 1988-89 ASG
+photograph names seven other officers and not Mickie Hennig, exactly as the log says.
+
+Against the sources: the 1976 index line for David Bass, the 1978 caption "A LIGHT MOMENT IN AN
+ASG MEETING" on p. 34, Alice Wicks indexed without a page number in both the 1979 and 1980
+volumes, Mark Chesnut's two index pages and their intramural content, David Young quoted in the
+1979 ASG feature, and Vern Pulman's absence from the 1975 volume all hold as written. So do the
+1985 Talisman's book-exchange page and the Wayback route into TopSCHOLAR's blocked file endpoint:
+the CDX query works as documented and article 1409 is the 1985 yearbook.
+
+The near-miss is worth recording in full, because checking it nearly produced a false correction.
+The log says a Chi Omega composite on p. 264 of the 1985 Talisman names Connie Hoffmann seventh of
+nine in its second row, and that the row could not be counted with enough confidence to use. Read
+against the PDF's text layer that looked wrong — the caption was missing from it altogether, and a
+Delta Tau Delta composite from the facing page bled across in its place. Rendering the page
+settled it. Two Chi Omega theatre-seat composites sit at the foot of p. 264; the left caption runs
+FRONT ROW with seven names, SECOND ROW with nine and **Connie Hoffmann seventh among them**, BACK
+ROW with five. The neighbouring composite does name a "Kelly Smith". Every particular is right,
+including which row is countable and which is not. Trap 2a — render the page before changing a
+word — earned its place again, on the reviewing side this time.
+
+Declining that photograph was correct, and so was declining the "Kelly Smith" match on a bare
+name a year out of place.
+
+## The one that did not hold
+
+The log supported its reasoning about Alice Wicks with a control: that Cathy Murphy's index line
+reads "Murphy, Cathy Renee 401" when she does have a portrait, so a blank page number means no
+individual photograph. Checked on the page image of the 1980 index, p. 425, the 401 belongs to
+**"Murphree, John Williamson", printed directly on the line above**. Cathy Murphy's line carries
+no page number in either the 1979 or the 1980 volume. The number was read off the adjacent line,
+which is the same slip this log warns other runs about a few paragraphs earlier.
+
+The inference itself survives, so the paragraph was rescued rather than cut. Page 398 of the 1980
+volume is a "Freshmen" grid of individual portraits with the names set beside it, which confirms
+that a number in the 360-405 band points at a class portrait, and p. 425 shows numbered and
+unnumbered lines sitting side by side. Those replace the bad control. Alice Wicks stays without a
+portrait, which was the right outcome before and after. The wrong reading is kept in an editor's
+note on the paragraph rather than quietly swapped out, so a later pass can see what was corrected.
+
+One smaller fix: the 1987 index carries Lori Ann Millay as well as Beth Ann Millay, so "only a
+different person" was a name short. Chris Millay is still absent, which was the point.
+
+## Merged
+
+Squash-merged as `2c154e2` after the correction was pushed to the branch, with a comment on #500
+setting out what was verified and what was cut. Commit and file both scanned for tool
+attribution: clean, and the pull request body carried none either, which is the first editor pass
+in a while not to have to strip a session link by hand.
+
+## Validators
+
+`build.py` clean before and after the edit. `check_data.py` and `check_contrib.py` exit 0.
+`check_duplicates.py` reports four pairs, all of them predating this branch and all genuinely
+separate events: the designated-driver bill of November 1997 against the cards going out in
+February 1998; the student regent advisory bill introduced on 28 January 1992 against its failure
+after amendment on 6 February; the Civil Liberties Union planning court action in February 1972
+against Associated Students endorsing the suit in March; and SGA voicing opposition to plus/minus
+grading in September 2003 against passing legislation on it in October. Each pair carries two
+dates and two sources. None merged.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,945 search records.**
+
+## Still open
+
+- **The backlog counts in the photograph logs do not reproduce.** This one gives 34 cabinet and
+  184 Senate names without a portrait; counting executives with Senate officers and committee
+  chairs gives 32 and 169, and counting every senator gives 718. The log is honest that it is an
+  estimate, but the figure is quoted from run to run as though it were stable. It should carry
+  its counting rule, or live in a script.
+- `talisman1986west_djvu.txt` on archive.org comes back effectively empty, though
+  `scripts/talisman.py` lists 1986 among the available volumes. The 1986 half of the Millay check
+  could not be confirmed independently, and the gap is worth knowing before that volume is relied
+  on.
+- The photograph routine's own best lesson, in its own words: read `.research/` for same-day
+  reports before re-testing infrastructure. Forty minutes went on Cloudflare dead ends that a
+  five-minute check would have saved.
+- Carried forward unchanged: the two Herald items on how Joe Rains's term ended; Charlie Harris's
+  missing portrait; the `Amber Daniels` / `Amber Daniel` pair; `CLAUDE.md`'s stale account of
+  `herald-index-full.json`; Mary Fyfe; the 1999-00 Coates investigation whose outcome is not in
+  the record; the pre-2000 legislation gaps; the 1987 evaluations wording; the twenty-three
+  advance-notice entries worth corroborating from the *Talisman*; and Richey's five words on the
+  2015 event page.
+
 # 17 September 2026 — an eleventh empty queue, and two photographs on the dead branches weighed again
 
 ## What was open
@@ -26174,4 +26291,108 @@ gained a second source.
   legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57
   regents" figure; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` /
   `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; Mary Fyfe; the
+  1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
+
+# 17 September, evening — an empty queue, and every Herald citation in the archive checked against the index
+
+## What was reviewed
+
+Nothing was waiting. `list_pull_requests` returns an empty set for open pull requests, and the
+full list of 501 shows every one closed, the last five merged earlier today. This is the twelfth
+consecutive empty queue. The cause is unchanged and is not a fault: six of the seven research
+routines have been off since 4-5 August and the photograph routine, the only one producing,
+merged its last log this afternoon as #500.
+
+Pull requests #6, #7 and #8, which the standing brief still names as stale and open, were read
+directly again. All three are closed; #6 closed unmerged on 18 August. There is nothing to
+rescue or to shut.
+
+## The clone was on an orphaned history
+
+Local `main` and `origin/main` shared no merge base, the condition AGENT-LANDING warns about.
+The local tip was a 73-commit history ending 11 September; origin's is 98 commits ending
+today. A content diff confirmed origin strictly ahead — three photographs and the `years.json`
+changes of the last six days — and the clone was reset to it rather than merged, which is what
+the warning asks for. No work was lost: nothing local was unpushed.
+
+## Eight claims from the most recent merges, opened at their sources
+
+The queue being empty, the sample was drawn from what reached the live site in the last two
+days instead.
+
+- **Herald 69:38 [39], 22 Feb 1994, "Student, President Trade Roles for Day".** In the index at
+  `dlsc_ua_records/7855`, dated 1994-02-22, under Tonya Root's byline, naming Meredith and
+  Rodriguez. The archivist's own bracketed volume correction is reproduced in the citation
+  exactly. Holds.
+- **Herald 52:29, 16 Jan 1973, "Associated Student Government Sponsors Book Exchange".** In the
+  index at `dlsc_ua_records/4995`, dated 1973-01-16, headline verbatim. Holds.
+- **The 1989 Talisman, `dlsc_ua_records/413`.** Landing page opened: "UA12/2/2 Talisman: Image in
+  the Making", 1989, carrying Associated Student Government. Holds.
+- **Lori Easton and Honor Logsdon, 1988-89.** The two new portraits are the only claims in the
+  sample that rest on inference rather than a caption naming the face, so both were tested
+  against the crops themselves. The reasoning chain is anchored at both ends — Amos Gott at
+  front left against an independent Herald portrait, Scott Whitehouse at front right — and it
+  makes one falsifiable claim: that Logsdon is the striped top standing behind Whitehouse in his
+  own crop from this frame. It is. Her crop and his interlock — the horizontally striped top
+  behind him is hers, and the dark hair cut off at the bottom of her frame is his head. Easton's
+  crop shows a dark top adjacent, matching the dark shape at the left edge of his. Four names in
+  the caption's second row, four figures behind, one man then three women, Click then Knights,
+  Easton, Logsdon. Both hold, and the label states the inference rather than hiding it.
+- **Bills 1-19-F and 2-19-F, re-dated from 10 to 17 September 2019.** The Herald piece the
+  re-dating rests on was opened in full: Brody Rexing, 19 September 2019, reports the budget
+  carrying unanimously with all 13 senators and says the senate's passing of it allowed both
+  bills "to also be passed unanimously", at the meeting of "this Tuesday" — 17 September. The
+  correction is right, and the rewritten bodies now separate the form's undated Pass line from
+  what the newspaper reports. Holds.
+
+Nothing in the sample needed cutting or trimming.
+
+## A new control: citation dates across the whole archive
+
+Last night's sweep tested one class of error — a completed outcome resting on an advance notice.
+This one tests a different one, and mechanically rather than by sample: does the date a citation
+prints actually match the issue the URL points at? Every event in `years.json` citing
+`dlsc_ua_records`, in both `src` and `src2`, was matched to that item in
+`herald-index-full.json` and its label date compared with the index's date for the item.
+
+795 citations, of which 784 print a parseable date. One mismatch came back and it is a false
+positive: 1968-69's "SGA Meeting Minutes, 13 Feb 1969; College Heights Herald 48:18, 20 Feb" is a
+compound label, and the URL resolves to Vol. 48 No. 18 of 20 February 1969, exactly as the second
+half of the label says. Two citations are not keyed in the index because they are direct
+`viewcontent` PDF links rather than landing pages; both print volume, issue and date in full.
+
+So the class is clean: no event in the archive prints a date its cited issue contradicts. Worth
+re-running after any large merge, since it costs nothing and reads the whole file.
+
+## Checks
+
+`build.py` clean, and `site/` regenerated byte-identical to what is committed, so nothing in it
+has been hand-edited. `check_data.py` and `check_contrib.py` both exit zero. `check_duplicates.py`
+reports the same four pairs as the last several nights. All four were read again rather than
+taken on trust, and all four remain distinct: introduced then failed, planned then endorsed,
+opposed then passed, and the designated driver cards — a bill carried on 4 November 1997, a
+Herald report nine days later, and distribution announced the following February, three separately
+sourced stages, each already hedged about what its contents listing can prove.
+
+61 years, 1,963 events, 60 people have been president; 2,652 recorded terms held by 1,810 people,
+2,615 of them (98%) carrying an account of what the person did; 47 people recorded under more than
+one spelling. 308 documents, 1,111 legislation files, search index 4,945 records. Nothing was
+added or removed tonight: this was a review, and the review found nothing to cut.
+
+## Still open
+
+- **Six decade routines and the legislation harvest remain off, since 4-5 August.** Twelve empty
+  queues now. The photograph routine is the only one producing. Still the owner's call, and the
+  only thing standing between this archive and the years it has not swept.
+- The standing editor brief is stale in four places, all re-confirmed tonight: `gh` is not
+  installed and git is credentialed without it; #6, #7 and #8 are named as stale and open when
+  all three closed on 18 August; four routines are described as running when one is; and the
+  brief's REVIEW-ONLY fallback was not needed, GitHub being reachable through the MCP tools.
+- `data/years.json` currently ends without a trailing newline. Cosmetic, harmless to the build,
+  but it makes every future diff of the file's last line noisier than it needs to be.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57
+  regents" figure; the two Herald items on how Joe Rains's term ended; the `Amber Daniels` /
+  `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989 Talisman; Mary Fyfe; the
   1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
