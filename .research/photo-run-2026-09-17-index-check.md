@@ -59,10 +59,11 @@ volumes, immediately around where each target surname belongs alphabetically, ra
   reattributing the existing Donald Smith portrait to David Smith or cropping his face from the
   group photo under the wrong name.
 - **Mickie Hennig** (1988-89, Secretary): not indexed anywhere in the **1989 Talisman**'s H
-  section — the run from `Helton` through `Hendon, Sondra / Hendricks, Adna / Hendley, Fred` to
-  `Hart, Cynthia` (this volume's index is not perfectly alphabetised column-to-column, but the
-  whole neighbourhood where `Henn-` belongs was read) has no `Hennig` or close variant. Consistent
-  with the 16 September finding that she is absent from the year's own ASG group photograph.
+  section — the run reads `Helton, Dale 241 / Heltsley, Juliana 234 / Hendon, Stephanie 232 /
+  Hendricks, Adna 190 / Hensley, Concheta Ann 145 / Hensley, Fred 68 / Herbert, Cynthia 110, 214`,
+  so the slot between `Hendricks` and `Hensley` where `Hennig` belongs is empty, and the volume
+  carries no `Hennig` or close variant anywhere. Consistent with the 16 September finding that she
+  is absent from the year's own ASG group photograph.
 - **Chris Gaddis** (1988-89, Vice-Chair, Judicial Council): not indexed under that first name. The
   1989 Talisman's G section does carry **"Gaddis, Sherry" (p. 195)** — a different first name, and
   not used for the same reason as the Donald/David Smith case above. No `Chris Gaddis` or `Gaddis,
@@ -84,3 +85,26 @@ volumes, immediately around where each target surname belongs alphabetically, ra
 
 `data/photos.json` and `data/photos/` are unchanged this run. No commit needed for those files.
 `build.py` and `check_data.py` were not re-run since nothing in `data/` changed.
+
+## Editor's check, 17 September
+
+Every conclusion above was re-tested independently before merge, and all four negatives hold. The
+1989 and 1993 Talisman PDFs were pulled again from the Wayback captures and read directly, by
+rendering the index pages rather than trusting their text layer, which on the 1989 volume is bad
+enough to turn `Gaddis` into `Co.ddi`.
+
+Confirmed on the page image: the 1993 Smith run goes `Deborah / Denise / Derrick / Donald /
+Frances / Gary` with no `David`; the 1993 index runs `Luckey / Lucken / Lupy / Lyell` with no
+`Lyda`; `Gaddis, Sherry 195` is in the 1989 index verbatim, filed out of alphabetical order between
+`Ged, Denise` and `Gensheimer, Joseph`, which is why this volume needed reading by eye; and no
+`Hennig` or `Chris Gaddis` appears in either volume. Against `data/years.json` and
+`data/photos.json`: all five officers named here do lack portraits, their offices and years are
+recorded exactly as given, every president and regent in the archive carries a portrait, and
+Donald Smith's existing portrait has not been reattributed.
+
+Four supporting citations were wrong and have been corrected in place: two of Trent Lyda's three
+Herald op-eds carried the wrong volume and issue, only one of the three is about ASG rather than
+all three, and three of the four index neighbours quoted in the Hennig bullet were misread
+(`Hendon, Sondra` is Stephanie, `Hendley, Fred` is Hensley, `Hart, Cynthia` is Herbert). None of
+these reached `data/`. The lesson for the next pass is the one this log already half-states: on
+these volumes, transcribe index neighbours from the rendered page, never from the text layer.
