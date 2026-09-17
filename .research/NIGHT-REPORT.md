@@ -1,3 +1,153 @@
+# 17 September 2026 — an eleventh empty queue, and two photographs on the dead branches weighed again
+
+## What was open
+
+Nothing, for the eleventh consecutive pass. `list_pull_requests` returned an empty array and the
+REST API agreed: `state=open` under HTTP 200 gave `[]` against a repository now past #495. Access
+was full rather than gated — `git push --dry-run` reported `* [new branch] HEAD -> access-probe` —
+so the empty queue is the real state of the repository and not a platform refusal.
+
+The stored brief remains out of date in the same three places the last several passes have named,
+and they are worth repeating only because the brief is what fires each run: it opens with a
+`gh auth setup-git` command, and `gh` is not installed in these containers (git itself is
+credentialed and push works normally); it names pull requests #6, #7 and #8 as stale and awaiting
+review, when all three were closed unmerged on 18 August; and it describes four research routines
+as running, when one is. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, and neither was
+needed.
+
+## The branch audit, eleventh time
+
+`research-photos` is the only live research branch, and it holds nothing `main` lacks. Its `data/`
+tree is byte-identical to `main` — `git diff --name-only origin/main origin/research-photos -- data`
+returns nothing at all — and its single textual difference is 79 deleted lines of night report,
+which is to say the branch is behind `main`, not ahead of it. Its work landed as #494 and #495.
+
+The other five `research-*` branches — `profiles`, `senate`, and the three `roster-*` — are the
+superseded snapshots last touched between 24 and 31 August. Each differs from `main` across roughly
+1,100 files in `data/`, and the direction of that difference is the whole point: merging any one of
+them would delete between 1,083 and 1,147 files that `main` now carries. They remain what
+`AGENT-LANDING.md` warns about, and nothing on them should be merged.
+
+But "do not merge" is not the same as "holds nothing", and this pass checked the second question
+rather than assuming it followed from the first. Across the five branches exactly two files exist
+that `main` does not have, and both are photographs:
+
+- **`data/photos/1974-75-thomas-lacivita.jpg`** (on `research-profiles`). A valid JPEG, 550×990,
+  and the same brick-wall photograph from p. 109 of the 1975 *Talisman* that `main` already
+  publishes as `1974-75-tom-lacivita.jpg` at 445×595. Opened and compared: the branch file is a
+  taller crop of the same frame, showing more of the document the man is holding and more of the
+  dark area at the left edge where the settled fact locates the second person. Nothing is lost by
+  leaving it; `main` has the photograph, correctly identified, under the naming convention the
+  archive settled on. No action.
+- **`data/photos/1984-85-jack-smith.jpg`** (on all five). This one was opened expecting a rescue,
+  because a president's portrait is the most valuable thing this archive can gain and `main` shows
+  1984-85 reusing the 1983-84 frame. It is not a rescue. The branch credits it to "1985 *Talisman*,
+  p. 313 (senior portraits)", and the photograph is a man in a backwards baseball cap, dark
+  sunglasses and a Nike shirt with a bag strap over one shoulder. That is not a senior portrait,
+  and the sunglasses hide the face, so it cannot be compared against the 1984 frame the archive
+  does hold of him.
+
+That second file was withdrawn from `main` by an earlier pass, and the withdrawal is on
+`data/photo-finds/_do-not-use.json` with its reasoning intact. This pass reached the same
+conclusion from the image before finding the register entry, which is the outcome the register
+exists to produce. It stays out. Smith's presidency was never in question and is not affected:
+1984-85 now carries his 1984 *Talisman* portrait with the reuse stated in the credit, which is the
+archive's ordinary convention and not a re-litigation of the cut.
+
+## The one flagged credit, still flagged
+
+The 1984 *Talisman* credit under all three of Jack Smith's years reads "p. 118 (senior portrait)",
+and the do-not-use register puts that volume's class portraits at p. 147 — its Kelly S. Smith entry
+cites "1984 *Talisman*, p. 147, the class portrait". The parenthetical is probably wrong even
+though the photograph itself looks sound, which is exactly how the earlier pass left it.
+
+Settling it needs the page. `viewcontent.cgi` was tried once, paced, and returned HTTP 403 behind
+the Cloudflare interstitial at 5,866 bytes of HTML; retried once after the full 90-second backoff,
+with the same result. archive.org holds the 1971-1981, 1986 and 1987 volumes but not 1984 or 1985,
+so there is no second route. The flag stands, unchanged and uninvented.
+
+## The settled facts, checked against the data rather than assumed
+
+With no diff to review, the useful work was a regression check on the facts most likely to be
+quietly undone by a routine. All hold:
+
+- **Sandra Norfleet** sits at 1981-82, `role: regent`, `year_confidence: corrected`. Not filed
+  forward.
+- **Reed Morgan** sits at 1968-69 with `role: unresolved` — neither president nor regent — and
+  both 1968-69 offices are occupied by other people: Straeffer as president, Paul Gerard III as
+  regent, each `confirmed`.
+- **William Menser** is president of 1967-68, and his note carries the April 1968 regent seat
+  rather than contradicting it. The two facts sit together correctly: he took the first student
+  regent seat inside his presidential year.
+- **The LaCivita portrait** is present and attached, not withdrawn.
+- **Carlene and Darlene Lodmell** remain two people, with two different portraits from two
+  different pages of the same scrapbook — p. 10 and p. 9 — and neither appears in any `leaders`
+  array, which is right, because neither was president. `name-aliases.json` maps neither to the
+  other.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` both exit 0. 61 years, 1,963 events, 60
+people have been president; 2,652 recorded terms of office held by 1,810 people, 2,615 of them
+(98%) carrying an account of what the person did; 308 documents, 1,111 legislation files, 4,945
+search records, 47 people recorded under more than one spelling. Unchanged from the last pass, as
+they must be for a run that adds no data.
+
+`check_duplicates.py` returns the same four pairs as the last four runs, and they are still four
+genuine sequences rather than four duplicates: Bill 92-01-S introduced on 28 January 1992 against
+the amended bill failing on 6 February; the Kentucky Civil Liberties Union planning court action in
+February 1972 against Associated Students formally endorsing the suit in March; concern voiced over
+plus/minus grading on 25 September 2003 against the legislation passing on 16 October; and the
+designated-driver card bill of November 1997 against the *Herald* announcing distribution in
+February 1998. Each is a plan and its outcome, weeks or months apart. None should be merged.
+
+An attribution scan of the built site came back clean. Every apparent hit on "anthropic" is the
+word *philanthropic* in the archive's own prose, and the one "generated with Dall-E" line is
+`data/herald-photos.json` describing what a source image is, not how this archive was made. No
+`Co-Authored-By`, no session link, no tool name in `site/`. The last fifteen commits on `main` are
+authored by `SGA 60` and `samuelkurtzsfs` only.
+
+Nothing was merged, because there was nothing to merge, and nothing was cut, because nothing was
+proposed.
+
+## The attribution footer, split behaviour
+
+Worth recording precisely, because the last several passes disagree with each other and each was
+reporting honestly about a different half. The footer appended to #496 on creation carried the
+session link. A body update stripping it returned HTTP 200 and **the session link stayed gone** —
+it has not come back through three subsequent reads. What came back, immediately and on every
+write, is the bare `_Generated by [Claude Code](https://claude.ai/code)_` line with no session in
+it. Two further strip-and-read-back cycles returned 200 and the bare line was restored both times.
+
+So both earlier findings hold at once: the footer *is* strippable, and it *is* re-appended. The
+distinction is which footer. The session link — the thing CLAUDE.md names outright, and the more
+serious leak, since it points at a transcript — comes off and stays off. The bare line cannot be
+removed from this side. `AGENT-LANDING.md`'s create-read-back-strip instruction is worth keeping
+for exactly that reason, and worth describing as a partial measure rather than a fix.
+
+## Still open
+
+- **A question for the owner, not a cut made.** `data/photo-finds/_overnight-log.md` carries a
+  `claude.ai/settings/usage` link in its entry of 3 September, in an operational note about a spend
+  limit stopping the fleet. It is not published — it reaches no page in `site/` — but CLAUDE.md's
+  no-attribution rule says "repository", not "site". Rewriting a historical operational log to
+  remove a true account of what happened seemed the worse of the two errors, so it is flagged here
+  rather than edited. One line, one file, owner's call.
+- **The six decade routines and the legislation harvest, off since 4-5 August.** Six weeks and
+  three days. The photograph routine is the only one still producing, and what it produces is now
+  mostly the confirmation that it has run out of reachable sources. Restarting the others is the
+  owner's call, and it is the single change that would give this queue anything to review.
+- The Wayback Machine's own captures of `digitalcommons.wku.edu`, which would sidestep the live
+  Cloudflare block on the PDFs, remain the most promising unexhausted thread. Left inconclusive
+  again rather than written up as a negative result.
+- Carried forward unchanged: the twelve year-photograph gap (1993-94 through 1997-98, 2000-01,
+  2002-03, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10); the pre-2003 half of the officer portrait
+  gap; the 728 legislation entries whose source URL points at a landing page; the 18 legislation
+  files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure;
+  the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair;
+  Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; Mary Fyfe; the 1999-00 Coates
+  investigation outcome; and the pre-2000 legislation gaps.
+
 # 16 September 2026, midday — a tenth empty queue, and the verification route into TopSCHOLAR closes
 
 ## What was open
