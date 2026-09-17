@@ -26072,3 +26072,106 @@ under more than one spelling.
   again tonight: `gh` is not installed in these containers and git is credentialed without it, the
   push probe succeeding as before; pull requests #6, #7 and #8 are named as stale when all three
   were closed on 18 August; and four research routines are described as running when one is.
+
+# 17 September, later — an empty queue, and the advance-notice rule tested against the published site
+
+## What was reviewed
+
+Nothing was waiting. There are no open pull requests, `research-photos` is level with `main`
+after last night's merge, and every other `research-*` branch is either already merged or one
+of the 4 August orphan snapshots with no merge base. This is the twelfth empty queue.
+
+With no diff to check, the review was pointed at the live site instead: the published archive
+is what a reader actually meets, and it has had far less spot-checking than the pull requests
+that built it.
+
+## Ten published claims, checked against their sources
+
+TopSCHOLAR answered normally tonight — no Cloudflare challenge on the landing pages, which is
+a change from the last several nights and worth knowing while it lasts. Ten events were drawn
+at random from the 744 that cite the *Herald* back file, spread over 1969 to 1998, and each
+one's cited issue was opened and read.
+
+All ten matched. Every volume and number in a citation matched the issue it pointed at, and in
+each case the index carried the article the entry described. Three entries make claims that go
+beyond their own cited issue, and those were chased separately rather than taken on trust:
+
+- David Porter called vice president in 1969-70 — confirmed, and not by a headline: the
+  Environmental Commission memo of 15 May 1970 is signed by him in that office.
+- The campus speaker policy "settled by the Board of Regents in October 1970" — confirmed by
+  the archive's own entry for 16 October 1970, *Herald* 50:14.
+- Joe Rains and the rename — the referendum of 14 April 1992, the autumn effective date and
+  Rains as the first president under the new name are all carried by other sourced entries in
+  1991-92 and 1992-93.
+
+Worth recording that the April 1992 election coverage sits in 1991-92 while Rains himself is
+filed as the 1992-93 president. That is the correct shape, not a filing error: events belong to
+the year they happened in, and only the officeholder files forward.
+
+## What was corrected
+
+**1993-94, President for a Day.** The entry's title said the programme "swapped a student into
+Meredith's office" — a completed act — on the strength of *Herald* 69:37 of 17 February 1994,
+whose index line is "Student to Switch Places with President". That is an advance notice, and it
+proves only that the swap was arranged. The swap did happen: the local full index carries Tonya
+Root's report of 22 February, "Student, President Trade Roles for Day", and a second piece on
+24 February. The 22 February issue was opened and confirmed. Rescued rather than cut — the body
+now says the *Herald* announced it on 17 February and reported the following week that the two
+had traded roles, with 69:38 added as `src2`.
+
+**1972-73, the book exchange.** The entry closes "the exchange ran at the start of the spring
+semester" while citing only the preview of 8 December 1972, "ASG to Begin Book Exchange". The
+claim is true — the *Herald* of 16 January 1973 carries "Associated Student Government Sponsors
+Book Exchange", and the archive already has that issue as its own separate entry — but the
+December entry showed none of that proof. The January issue is now attached as `src2`, so the
+sentence rests on a source that reports the exchange running.
+
+Neither is a fabrication and neither needed deleting. Both are the same small failure: a true
+sentence left standing on a source that cannot carry it, which is what a later pass eventually
+flags and cuts.
+
+## The sweep behind those two
+
+The advance-notice class was then checked mechanically across the whole archive rather than by
+sampling. Every event citing a *Herald* issue was matched to that issue's index lines in
+`herald-index-full.json`, and flagged where the best-matching lines were all prospective while
+the entry claimed a completed outcome. Four came back. Two were regex false positives — "Congress
+Votes to Hold Referendum" and "Passes Bill to Open Meetings" are both reports of a vote already
+taken. One was the book exchange above. The fourth, 1973-74's Kool and the Gang, turns out to be
+the rule being followed exactly right: it says outright that neither source confirms the concert
+took place, and it should stay as it is.
+
+So the class is close to clean, but not clean: a sample of ten found one, and the sweep found one
+more that the sample missed. The two it caught were both rescuable, which is the argument for
+checking rather than trimming on suspicion.
+
+## Checks
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both zero. Before any edit, `site/`
+regenerated byte-identical to what was committed, so nothing in it has been hand-edited.
+`check_duplicates.py` reports the same four pairs as the last several nights; all four remain
+genuinely distinct, each being a sequence — introduced then failed, planned then endorsed,
+opposed then passed — weeks apart.
+
+61 years, 1,963 events, 60 people have been president; 2,652 recorded terms held by 1,810
+people, 2,615 of them (98%) carrying an account of what the person did; 47 people recorded under
+more than one spelling. The event count is unchanged: nothing was added or removed, two entries
+gained a second source.
+
+## Still open
+
+- **The six decade routines and the legislation harvest remain off, since 4-5 August.** The
+  photograph routine is the only one producing, and it produced nothing new since last night.
+  Still the owner's call.
+- **TopSCHOLAR was reachable tonight.** If the block is genuinely intermittent rather than
+  permanent, the paced crawl is worth retrying while the window holds.
+- The standing editor brief is stale in the same three places, all confirmed again tonight:
+  `gh` is not installed in these containers and git is credentialed without it; pull requests
+  #6, #7 and #8 are named as stale when all three were closed on 18 August; and four research
+  routines are described as running when one is.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57
+  regents" figure; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` /
+  `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in the 1989 *Talisman*; Mary Fyfe; the
+  1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
