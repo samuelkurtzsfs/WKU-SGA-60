@@ -38,10 +38,12 @@ volumes, immediately around where each target surname belongs alphabetically, ra
   `Lunsford, Micah D. ... 177` directly to `Lyle, Keith E. 174` with no `Lyda` between them) or the
   **1993 Talisman** (p. 278's index runs `Luckey, Beth ... / Lucken, Amy ... / Lupy, Susan ...`
   directly to `Lyell, Jenny 178` / `Lyle, Keith 160`, again with no `Lyda` between). Both volumes
-  cover his years as an active ASG figure — he wrote Herald op-eds referencing ASG in this window
-  (Herald 66:53, 5 Apr 1990, "Rude Awakening"; Herald 67:22, 26 Nov 1991, "Sorority Dorms are
-  Discriminatory"; Herald 67:40, 20 Feb 1992, "Associated Student Government: Don't Complain, Get
-  Involved" — found via `data/herald-index-full.json`, not re-crawled) — but neither yearbook
+  cover his years as an active ASG figure — he wrote three signed Herald op-eds in this window, one
+  of them about ASG (Herald 65:51, 5 Apr 1990, "Rude Awakening – Facilities Services",
+  `dlsc_ua_records/7631`; Herald 67:26, 26 Nov 1991, "Sorority Dorms are Discriminatory – Meredith
+  Hall", `dlsc_ua_records/7798`; and the ASG one, Herald 67:40, 20 Feb 1992, "Associated Student
+  Government: Don't Complain, Get Involved", `dlsc_ua_records/8015` — found via
+  `data/herald-index-full.json`, not re-crawled) — but neither yearbook
   pictures or indexes him. The Herald PDF for the 20 Feb 1992 issue (`dlsc_ua_records/8015`,
   article 9020) was checked for a Wayback capture as a possible route to an op-ed column
   photograph; none exists (`web.archive.org`'s CDX has no capture of that specific article, unlike
