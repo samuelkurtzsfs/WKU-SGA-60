@@ -6133,6 +6133,23 @@ information about 1983-84 (the year already had one photo, the beer-poll ballot 
 volume's p. 376) rather than a substitute for the portrait gap. `1983-84-asg-congress-photo.jpg`,
 verified `FF D8` JPEG, cropped from the Wayback-recovered PDF at 2.5x render scale.
 
+**Editor's note, 18 September (review pass).** The crop as first landed held only the *first* of
+the two photographs, plus the top border of the second's heading box, while its caption rostered
+all 33 people in both and said the two ran "side by side". Re-fetched the same Wayback capture
+(`20230815062824`, clean 200 on the first attempt) and re-rendered page 122 at 200 dpi: on the
+printed page the two ASG composites are stacked **one above the other** in the organizations
+column, third and fourth in a run that goes Art Education, Art Guild, ASG, ASG, Association for
+Computing Machinery. Re-cropped to hold both photographs and both captions whole — the old crop's
+left edge also cut the caption mid-word, losing Cindy Stine, Alex Bell and Tony Vick from the
+visible text — and corrected the caption's "side by side" to "one above the other". Face counts in
+the new image are 15 and 18, matching the two rosters exactly. The transcription itself checked out
+name for name against the printed captions, with one exception: the last name in the first photo's
+back row is not resolvable at this scan's resolution (rendering at 1200 dpi only upsamples the same
+scan pixels) and may read Estes or Esters; flagged in the caption rather than silently settled, per
+CLAUDE.md's rule to flag spelling doubts. The citation checked out too — `dlsc_ua_records/408`'s
+own landing page returns `article=1408` and names the 1984 Talisman, *Touch of Red*, and the
+printed page number 238 is visible on the spread.
+
 **Tried the same route against the 2003 Talisman (item 594, *About Face*) and found the lead
 structurally closed, not just unsearched.** The volume downloaded cleanly (69.7 MB, genuine text
 layer, much better OCR than 1984's since it is natively digital) but its table of contents has no

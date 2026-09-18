@@ -27162,3 +27162,108 @@ attribution. The commit here is authored `SGA 60` and the diff was scanned for a
   legislation files with no text layer; the "57 regents" figure; the two Herald items on how Joe
   Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates
   investigation outcome; and the pre-2000 legislation gaps.
+
+---
+
+# Editor pass, 18 September (afternoon)
+
+## What was open
+
+One pull request, not four. **#516, "A second Associated Student Government composite photograph,
+1983-84"** on `research-photos`, opened this afternoon, one commit, clean merge base with `main`.
+
+The stored brief still names #6, #7 and #8 as open and stale since 4 August. They are not: all
+three were closed on 18 August, a month ago, and their branches have not moved since. The brief
+also still opens by instructing `gh auth setup-git`; `gh` is not installed in these containers.
+Both facts are now in seven consecutive reports. Plain git push works, and the GitHub MCP tools
+serve pull requests — that is the route this pass used.
+
+## What the diff claimed
+
+Two "Associated Student Government" composite group photographs found on p. 238 of the 1984
+*Talisman*, recovered through the Wayback Machine after six weeks of `viewcontent.cgi` being shut
+behind Cloudflare, added as one year-level image for 1983-84 with all 33 pictured names rostered in
+the caption, and no individual identified. No events, no leaders, no years.json change at all — the
+diff touched `data/photos.json`, one JPEG, and the method file.
+
+## Spot check
+
+Every claim in it was opened against the source rather than sampled, the diff being small enough to
+take whole. The 46.2 MB PDF came back from the same Wayback capture on the first attempt, so page
+238 could be read directly rather than taken on the run's word.
+
+Held up: the page number, printed on the spread. The volume identity — `dlsc_ua_records/408`'s own
+landing page returns `article=1408` and names the 1984 *Talisman*, *Touch of Red*, matching the
+beer-poll photograph already on `main` from the same volume. The rosters, name for name against
+both printed captions. The counts, 15 and 18, against the faces in the photographs. The decision
+not to name individual figures: the captions really do list by row without stating left to right,
+so the restraint was right and the identification bar was correctly not lowered.
+
+Did not hold up, and was fixed rather than cut:
+
+- **The image held one photograph, not two.** The crop stopped at the top border of the second
+  photograph's heading box. A reader would have seen 15 faces under a caption naming 33 people.
+- **"Side by side" is wrong.** On the page the two composites are stacked one above the other in
+  the organizations column, third and fourth in a run that goes Art Education, Art Guild, ASG, ASG,
+  Association for Computing Machinery.
+- **The old crop cut its own caption mid-word.** The left edge sliced the first caption's
+  continuation lines, so Cindy Stine, Alex Bell and Tony Vick were in the transcription but not in
+  the visible text of the picture it came from.
+
+Re-rendered page 122 at 200 dpi and re-cropped to hold both photographs and both captions whole,
+under the same filename, and rewrote the caption's "side by side" to "one above the other". The
+research was right; the picture did not show it. This is the rescue the brief asks for in place of
+a deletion.
+
+One thing flagged and deliberately not fixed: the last name in the first photograph's back row may
+read **Delmer Estes or Delmer Esters**. The scan will not resolve it — rendering at 1200 dpi only
+upsamples the same pixels — so per CLAUDE.md the doubt is stated in the caption rather than settled
+by picking one. The entry as landed asserted "Estes" flatly.
+
+## Traps checklist
+
+No advance notice: a yearbook composite is a record of a photograph taken, and nothing in the entry
+claims an event. No committee chair promoted to officer and no bill author made a member: the
+caption claims membership of a photograph, not office, which is the correct and modest claim for a
+group shot whose own caption gives no titles. No surname matching — the run explicitly declined to
+attach any of the 33 names to a figure, including the two officers it was sent to find. No
+changed-surname duplicate: nothing was added to the roster at all. No April election in the wrong
+year: no election here. Nothing touches a settled fact. Nothing about a living person beyond what
+the yearbook printed, which is a name in a group caption. No contributor edit in the diff.
+
+The four duplicate pairs `check_duplicates.py` reports are all pre-existing on `main` and all
+genuinely distinct — the 1997-98 pair, on inspection, is three separate things: Bill 97-3-F on
+4 November, a *Herald* report nine days later, and the cards going out the following February.
+
+## Merged
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0, `check_duplicates.py` nothing new.
+#516 merged to `main` with the corrections above.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,945 search records. 73 portraits and 62 year photographs, the second of those up one on this
+merge.**
+
+## Still open
+
+- **Kelly S. Smith and John Holland**, 1983-84's two unphotographed cabinet officers, named in five
+  photograph reports now. This lead is genuinely exhausted — neither is in either composite — but
+  the 1984 *Talisman*'s People section (printed pages ~88-193) is untouched and is where an
+  individual portrait would be. The volume is `article=1408`, capture `20230815062824`, and it came
+  down on the first attempt today.
+- **The spread's own article text is unread research.** The "Touch cont." column beside these
+  photographs carries real 1983-84 ASG material in the vice president's own words: the year's polls
+  and open forums, a stoplight campaign at University and Normal, theft-prevention workshops, and
+  two bills that failed — a retroactive plus/minus grade-scale change and a proposal for on-campus
+  alcohol sales. None of it is in the archive. Left alone deliberately: widening a photograph PR
+  into a year's events is not this pass's call to make.
+- The `Delmer Estes` / `Delmer Esters` reading, above.
+- Carried forward unchanged: the four spellings of the at-large senate seat; the twelve
+  year-photograph gap; the pre-2003 half of the officer portrait gap; the 728 legislation entries
+  whose source URL points at a landing page; the 18 legislation files with no text layer; the
+  "57 regents" figure; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` /
+  `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000
+  legislation gaps.
+- The stored editor brief needs an edit: #6, #7 and #8, and the `gh` instruction.
+- The token flagged for rotation five passes ago is still flagged.
