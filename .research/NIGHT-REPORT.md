@@ -26803,3 +26803,87 @@ says in the body that no report confirms it.
   regents" figure; the two Herald items on how Joe Rains's term ended; the `Amber Daniels` /
   `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000
   legislation gaps.
+
+# 18 September, second pass — one portrait merged, and a photographer's name that came from a filename
+
+## What was open
+
+One pull request, #509, "Research: photographs — Jackson Smith, 2025-26", opened against
+`research-photos` at 02:11 and sitting on the current tip of `main` with no merge base problem
+and nothing behind it. The earlier pass today found the queue empty; this one had something in it.
+
+Access was full. `gh` is still not installed, as every report for a month has said, but git is
+credentialed — `git push --dry-run` reported `* [new branch] HEAD -> access-probe` — and the
+GitHub tools answered normally. The stored brief is wrong in the same two places: it opens with
+a `gh auth setup-git` command that cannot run here, and it names #6, #7 and #8 as stale and
+awaiting review when all three were closed unmerged on 18 August and the repository is now past
+#509. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset and were not needed.
+
+## What the diff held
+
+Less than its length suggests. A 136-line run log, a regenerated `site/network.html` data line,
+the portrait file, and nine lines of `data/photos.json`. `years.json` is untouched, so no year,
+name or term of office moves. That left exactly one new published claim, which was checked
+whole rather than sampled.
+
+It holds. The caption was read off the live article rather than the local index and matches what
+was stored word for word. The photograph was opened and looked at: three people at the podium in
+matching SGA polos, and the crop is unmistakably the middle figure — white cap, navy and red
+polo, khakis, watch on the left wrist. The report rests the identification on the caption's three
+names running left to right as the figures stand, which taken alone is an assumption rather than
+evidence; it survives here for a reason the report does not give, which is that Ciin Lun, named
+third, is the rightmost figure, fixing the order at both ends instead of one. The name matches
+`years.json` exactly, the photographed event is the one Smith's own profile paragraph already
+cites, and no alias entry exists for him.
+
+## The one correction
+
+The entry credited the photograph to `S. Vasquez`. The Herald credits **Jonah Savage**, and this
+archive already credits Savage for two other photographs from the same meeting, one of them from
+this same article. So the stored credit contradicted material already on file.
+
+Where it came from is legible: the image is served as `SAV2513-1200x800.jpg`, and `SAV` was read
+as a surname. The run log names no photographer anywhere, which places the invention at the
+metadata-writing step, after the research was done and after the part of the label that was
+verified had been verified. The report says plainly that the caption was confirmed against the
+live page, and it was — but the credit sits in the same string and was not. That is the lesson
+worth carrying: verify the whole label, not the clause being quoted.
+
+Corrected in `a9343a8d` before merging. `S. Vasquez` now appears nowhere in `data/` or `site/`.
+Small, but it is a working photographer's byline on a public page.
+
+## What was right, and worth saying
+
+The run rejected six leads and two of the rejections were the hard kind. Cody Cox and Mark Clark
+were both confidently identified, with the timelines checked, and both were left out because the
+only photographs available came from personal-identity features unconnected to their student
+government service — a coming-out profile and Pride Center volunteer work. Declining a correct
+identification on those grounds is exactly what the living-people rule asks for and is easier to
+get wrong than right.
+
+## Validators
+
+`build.py` clean. `check_data.py` and `check_contrib.py` exit 0, every case. `check_duplicates.py`
+reports four pairs, all pre-existing in `years.json`, which this diff does not touch, and all four
+genuinely separate events: a bill introduced and later failing, a lawsuit planned and later
+endorsed, a position taken and later legislated, driver cards announced and later distributed.
+No merges warranted. The corrected credit was read back off the built page before pushing.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,945 search records.**
+
+## Still open
+
+- **The 1984 Talisman class-portrait grids**, for Kelly S. Smith and John Holland, both 1983-84.
+  That volume's OCR is too degraded to search and the section needs a page-by-page visual read.
+  Named in two consecutive photograph reports now and still the clearest unstarted job.
+- 166 cabinet and Senate-leadership names carry no portrait. `data/herald-photos.json` is now
+  fully cross-checked against that list, so re-running it without new names will find nothing.
+- The stored editor brief still names #6, #7 and #8 and still opens with `gh auth setup-git`.
+- The token flagged in the previous pass for rotation is still flagged.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the "57 regents" figure; the two Herald items on how Joe
+  Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates
+  investigation outcome; and the pre-2000 legislation gaps.
