@@ -26887,3 +26887,87 @@ No merges warranted. The corrected credit was read back off the built page befor
   legislation files with no text layer; the "57 regents" figure; the two Herald items on how Joe
   Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates
   investigation outcome; and the pre-2000 legislation gaps.
+
+---
+
+# 18 September, third pass — an empty queue, and a caption that was reproduced rather than cited
+
+Nothing was waiting. No pull request is open, and none has been since #510 closed at 03:25,
+about three hours before this pass began. The four research routines are on their usual
+three-hourly cadence and the 06:00 slot had not yet pushed, so an empty queue here is the
+normal state of things rather than a sign that anything has stopped.
+
+The stored brief still sends the editor to `gh auth setup-git` and to pull requests #6, #7
+and #8. `gh` is not installed in these containers, and all three of those pull requests were
+closed on 18 August, a month ago. Git push works normally and the GitHub tools serve the rest.
+This has now been carried in the report for several passes without being acted on.
+
+## What the pass actually did
+
+With no queue, the review went to the newest material on the live site, which is the Jackson
+Smith portrait merged in #509. The previous pass caught an invented photographer credit in it
+and drew the right lesson in writing — verify the whole label, not the clause being quoted.
+Applying that lesson to the same label turns up a second defect the correction did not reach.
+
+The article was opened at wkuherald.com/88699. Everything the last pass asserted holds: the
+page carries the credit to Jonah Savage under both photographs, `Vasquez` appears nowhere in
+it, the three committee names are as stored, the meeting date of 11 November 2025 and the
+article date of 12 November are right, and the file is a real JPEG. The identification needed
+nothing.
+
+The defect is that the `src.label` did not cite the caption, it reproduced it — forty-one
+words of the Herald's own text, rendered verbatim on the public page at `site/o/`. CLAUDE.md
+caps a quote at under fifteen words and asks for paraphrase and a link, and the reason it
+gives is exactly this case: a public site reusing a student newspaper should not reprint its
+text. Trimmed to the thirteen words that do the identifying, the committee name and the three
+names in order, with the descriptive remainder paraphrased. The credit and the middle-figure
+reasoning are untouched, so a reader can still check the face against the source. Merged as
+#511.
+
+## The twelve left alone, deliberately
+
+A sweep of `data/photos.json` for the same fault finds thirteen labels carrying a quote of
+fifteen words or more. Eleven are group-photo name lists — "Front row: …", "BACK ROW: …" —
+from Talisman and Herald captions, and one is a headline. These are rosters of fact, and more
+to the point they are the identification evidence itself: the list of names in caption order
+is what proves which figure in the frame is the subject. Cutting them would take away a
+reader's means of checking the face and would leave the portrait resting on an assertion.
+They stay. The distinction worth holding is between a caption stored as evidence of who is in
+a photograph and a caption stored as prose, and it is the second that the quote rule is aimed
+at.
+
+## Duplicates
+
+`check_duplicates.py` reports the same four pairs as the last two passes. All four are
+genuinely separate events and all four were read in full before that judgement: Bill #92-01-S
+introduced on 28 January 1992 and defeated after amendment on 6 February; the Kentucky Civil
+Liberties Union planning court action on 29 February 1972 and Associated Students formally
+endorsing the suit on 28 March; SGA taking a position against plus/minus grading on 25
+September 2003 and legislating against it unanimously on 16 October; and the designated
+driver cards passed in November 1997 and announced for distribution in February 1998. The
+last of those is an advance notice and is correctly written as one — it claims only that
+distribution was announced for the following day, and says plainly that the archive holds the
+issue as a contents listing and nothing more. No merges warranted.
+
+## Validators
+
+`build.py` clean. `check_data.py` and `check_contrib.py` exit 0, every case. The corrected
+label was read back off the built page before pushing, and the forty-one-word run now appears
+nowhere in `site/`.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810
+people, 98% of them carrying an account of what the person did. 308 documents, 1,111
+legislation files, 4,945 search records.**
+
+## Still open
+
+- **The 1984 Talisman class-portrait grids**, for Kelly S. Smith and John Holland, both
+  1983-84. Named in three photograph reports now and still the clearest unstarted job.
+- The stored editor brief still names #6, #7 and #8 and still opens with `gh auth setup-git`.
+- The token flagged for rotation two passes ago is still flagged.
+- 166 cabinet and Senate-leadership names carry no portrait.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the "57 regents" figure; the two Herald items on how
+  Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00
+  Coates investigation outcome; and the pre-2000 legislation gaps.
