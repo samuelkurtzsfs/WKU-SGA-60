@@ -6046,6 +6046,126 @@ clean on the unmodified tree. `research-photos` had drifted six commits behind a
 `main` (the six commits behind PR #509-512); fast-forwarded and pushed to keep the branch current,
 carrying no content of its own.
 
+### Photograph run of 18 September (afternoon): `viewcontent.cgi` finally cracked via Wayback, one new photo landed, Smith and Holland still not pictured
+
+The mid-morning report today logged eight straight CDX failures and called the network layer, not
+the lead, the blocker. Retried the identical query this afternoon and it came back clean on the
+third attempt (`web.archive.org/cdx/search/cdx?url=digitalcommons.wku.edu%2Fcgi%2Fviewcontent.cgi%3Farticle%3D1408%26context%3Ddlsc_ua_records&output=json`),
+listing four real captures of the 1984 Talisman (`article=1408`), two of them full 200 PDF
+responses. Confirms the standing note that `web.archive.org` reachability is session-dependent and
+must be retried, not assumed closed from one run's failure — but says more than that: **the CDX
+API itself is intermittent even within a single run.** Four more calls at the same query, ~5
+seconds apart, over the next several minutes: two more clean 200s with data, one empty `[]`, one
+timeout. Budget four to five attempts before concluding a query has nothing, not one or two.
+
+Downloaded the capture at the `if_` raw endpoint
+(`web.archive.org/web/20230815062824if_/https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=1408&context=dlsc_ua_records`)
+on the second attempt — 46.2 MB, opens clean in PyMuPDF, 198 pages, genuine scanned-page content
+starting `%PDF-1.7`. **`pymupdf` and `pillow` are not preinstalled in this container** either,
+unlike the CLAUDE.md note about `pdftotext`; `pip3 install pymupdf pillow` pulled both from PyPI
+(in the proxy's no-auth allowlist, so this worked without incident) in under a minute.
+
+**The article number is not derivable by formula — read it off the landing page instead.** The
+1984 volume is `dlsc_ua_records` item 408 but downloads as `article=1408`; tried the same +1000
+offset against item 418 (1994, *Against All Odds*) and item 594 (2003, *About Face*) and it held
+for both (`1418`, `1594`), but this was luck worth checking rather than a rule worth trusting: item
+landing pages (`digitalcommons.wku.edu/dlsc_ua_records/<item>/`) return a clean 200 even while
+`viewcontent.cgi` itself sits behind Cloudflare, and the page's own download link states the real
+article number directly (`grep -o 'viewcontent.cgi?article=[0-9]*'`). Confirmed 1418 and 1594 this
+way rather than assumed. **This is the reusable half of today's finding, independent of whether
+Wayback has crawled a given article**: any `dlsc_ua_records` item's true `article=` number is one
+ungated request away, for every year, not just the three tried today.
+
+**The 1984 Talisman's own OCR text layer is poor — Cloudflare-cyrillic-grade garbled** (`"lIfIiI ATE
+STU..."`-type noise), unlike 2003's. Keyword search for `government`, `ASG`, `associat` across all
+198 pages returned nothing; the actual "Associated Student Government" article was found only by
+searching for the substring `Gove` at position-and-context level and confirmed by rendering the
+page to an image and reading it directly. **Full-text search cannot be trusted on a pre-2000
+Talisman scan; render and read.** The printed-page-to-PDF-page mapping for this volume is
+`printed ≈ 2×(PDF index) − 6` (each PDF page is a two-page spread) — checked against four
+independent data points (`382`, `278`, `286`) and held within a few pages each time; use it to
+jump near a Contents-page target rather than paging through the whole 198 blind.
+
+**Page 238 (PDF index 122) carries two "Associated Student Government" composite photographs**,
+each a posed group shot in Van Meter auditorium seating with a row-by-row name caption — the
+first Talisman-composite ASG photo this project has found for 1983-84 specifically, as opposed to
+the individual senior/junior/class portraits every existing 1983-84 leader photo was sourced from.
+First photo, 15 people: Front Row: Donna Holloway, Kathy Rohleder, Cindy Stine, Teresa Anthony.
+Second row: Lorri Burchett, Alex Bell, Jeff Felty, Bob Shults, Stanly Reagan. Back row: Johnny
+Ragan, Sean Peck, Jack Smith, Tony Vick, Delmer Estes, Anthony Rhea. Second photo, 18 people: Front
+row: Jane Reid, Sheila Wassinger, Kimberly Houk, Aimee Bryan, Suzanne Deputy. Second row: Jessica
+Rappaport, Mitchell McKinney, Sandra Hill, Leisa Ferguson, Tony Whalen, Happy Chandler. Back row:
+Allan Kujala, Chris Watkins, Traci Turner, Claire Groemling, Danny Broderick, Brian Maddox, Michael
+Tolbert. **Neither Kelly S. Smith (treasurer) nor John Holland (public relations vice president)
+appears in either list** — the two names this lead was originally opened to find. Holland's
+absence is not surprising in hindsight: the organization record already notes he succeeded Happy
+Chandler, who is pictured, at an unstated date after the photo season: Holland (as "Jon Holland")
+first appears in the minutes on 6 September 1983 but does not hold the PR VP title until the 28
+February 1984 meeting, so a photo taken for the "Organizations" section (shot in the fall, per every
+other club's copy on the same pages) would have caught Chandler still in the chair. Kelly Smith's
+absence has no such explanation on record; she may simply not have attended photo day. This closes
+the specific Smith/Holland lead — not by finding them, but by exhausting the one source that was
+expected to carry them — without ruling out that one or both have an individual class portrait
+elsewhere in this same volume's People section, which was not searched (see below).
+
+**Did not crop individual portraits from either composite, despite identifying five of the pictured
+names against existing confirmed portraits as a check.** Position-by-gender cross-check held for
+every mixed-gender row tested (photo two's second row alternates F,M,F,F,M,M against Rappaport,
+McKinney, Hill, Ferguson, Whalen, Chandler — an exact match), which supports the ordinary
+yearbook convention that a row's caption order runs left to right. But Tony Whalen's already-confirmed
+portrait (smiling, dark shirt, wavy hair) is a plausible but not decisive match for the position
+his name implies, and Happy Chandler's already-confirmed portrait (glasses, neat side part, no
+facial hair, 1981) does not obviously match the mustached, unbespectacled figure his name's position
+implies three years later. That could easily be three years of appearance change rather than a
+wrong position — but CLAUDE.md's bar is confirmation, not plausibility, and a caption that lists
+names by row without stating left-to-right (unlike the Jackson Smith caption that closed this same
+question on 14 September for a different photo) does not clear it for names with no independent
+portrait to check against. **Declined to name any individual figure in either photo.** This is the
+same call the 16 September run made on the 1981-82 Talisman's own ASG composite (which also names
+a "John Holland" in its third row, worth noting for whoever eventually opens the People-section
+search below, though nothing here establishes it is the same John Holland four years apart) and the
+9 September run made on David Bass's ASG-meeting photo: an orderable-looking group photo is not
+automatically an identified one.
+
+**Added the two composite photographs as one year-level image instead**, captioned with the full
+roster from both captions and stating plainly that no individual is identified — this is new
+information about 1983-84 (the year already had one photo, the beer-poll ballot shot from the same
+volume's p. 376) rather than a substitute for the portrait gap. `1983-84-asg-congress-photo.jpg`,
+verified `FF D8` JPEG, cropped from the Wayback-recovered PDF at 2.5x render scale.
+
+**Tried the same route against the 2003 Talisman (item 594, *About Face*) and found the lead
+structurally closed, not just unsearched.** The volume downloaded cleanly (69.7 MB, genuine text
+layer, much better OCR than 1984's since it is natively digital) but its table of contents has no
+Organizations section at all — by 2003 the Talisman had shifted to a magazine-style "this happened
+on this day" format with no alphabetical club directory or composite photos. The only SGA-adjacent
+finds were incidental: Ross Pruitt (already-recorded VP of Finance) named once as a Homecoming-
+judging committee member in a caption about a different photo subject, not pictured himself; Jamie
+Sears named once as the Greek Life section's "Greek Woman of the Year" (ADPi), a possible but
+wholly unconfirmed connection to SGA president Jamie Sears with no photo attached either way, not
+pursued further; and Jessica Martin (already-recorded Academic Affairs chair) profiled at length as
+a resident assistant with real photographs of her — but every photograph shows her doing RA work
+(a Fisher-Price basketball game, a floor meeting), not anything in an SGA capacity, so none
+qualifies under CLAUDE.md's rule that a subject must be pictured acting in the role. **This closes
+the 2002-03 general-photo gap as a dead end for the Talisman route specifically**; some other
+source would be needed, not a re-read of this volume.
+
+**Left the People section of the 1984 Talisman (individual class portraits, printed pages roughly
+88-193 by the Contents page, PDF index roughly 47-100 by this run's page-mapping formula)
+unsearched.** This is where an individual portrait for Kelly S. Smith or John Holland would have to
+come from if one exists in this volume, following the same method every other confirmed 1983-84
+portrait used (locate the alphabetical name-block, match position to photo). The OCR is too poor
+for keyword search to find the right block (confirmed above), so this requires rendering pages and
+reading alphabetical headers directly — a real next step, not a closed one, but not attempted this
+run for time. Neither PDF was kept; both were downloaded to this container's own scratch space,
+which does not survive between runs, but the article numbers and a working Wayback timestamp for
+each are recorded above so a future run does not have to rediscover them by CDX trial and error:
+1984 is `article=1408`, capture `20230815062824`; 2003 is `article=1594`, capture `20250328121426`;
+1994 (*Against All Odds*, still fully unexamined) is `article=1418`, capture `20230815062906`,
+237 MB.
+
+`build.py` and `check_data.py` both pass clean with the one new photo added. Landed on
+`research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
