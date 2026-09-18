@@ -27267,3 +27267,117 @@ merge.**
   legislation gaps.
 - The stored editor brief needs an edit: #6, #7 and #8, and the `gh` instruction.
 - The token flagged for rotation five passes ago is still flagged.
+
+# Editor pass, 18 September (evening) — an empty queue, and the regent seat stated where the profiles already said it
+
+## What was open
+
+Nothing. No open pull request at all, and `main` sat where the afternoon pass left it, at #516.
+Every `research-*` and `editor-*` branch carrying commits `main` does not have was checked against
+the pull request that carried it: all are squash-merge remnants, already landed. The 4 August
+branches remain the orphan histories `AGENT-LANDING.md` warns about, with no merge base, and were
+left alone.
+
+The stored brief is now wrong in three places, not two. #6, #7 and #8 have been closed a month;
+`gh` is not installed; and the brief's premise that "four research routines are running around the
+clock and pushing work to research-* branches" is not true either. The account's routine list says
+so plainly: **of the seven research routines, none is running.** `SGA 60 - backlog`, `senate rolls`
+and `person profiles` last fired on 24-25 August; the five decade routines and the legislation
+harvest last fired on 4-5 August. Only two routines are enabled — this editor, every three hours,
+and `SGA 60 - portraits`, every six. That is the whole explanation for twelve consecutive empty
+queues, and it is a setting, not a fault: the editor has been reviewing the photograph routine's
+output and nothing else since the start of September.
+
+## What this pass did instead
+
+With no diff to review, the pass audited `main` itself against two rules nobody had swept recently.
+
+**The campus-context tag.** 23 of 1,963 events carry `"campus": true`, 1.2%, and no year is even a
+quarter context. All 23 were read: presidents installed or leaving, the Gulf War vigil, the Autry
+murder trial, the Pearce-Ford lockdown, the ice storm, tuition increases, buildings opening. None
+is SGA's own business mistagged, which is the failure the rule exists to prevent. The 1984 George
+Bush entry is the model: it records that the *Herald* announced the visit, and says outright that
+the index carries no report of the day, so nothing is claimed about it.
+
+**The regent seat.** The handoff flags 21 president records carrying no `also_regent` field at all,
+the seat for their years unstated rather than empty, and names those 21 as the open question. Five
+of them turned out to be answered already inside the archive — their own profiles describe them as
+student regents, in sourced prose, while the structured field stayed absent. That is a data-layer
+gap, not a new claim, and each was checked against its source rather than taken from the prose:
+
+- **Jeanne Johnson, 2007-08.** The Board's own minutes of 18 July 2008, mirrored in
+  `data/documents/`, read against the file itself: she served on the Board from 27 April 2007 to
+  18 July 2008, and Boles took the oath that day to replace her. Her 2006-07 record already carried
+  the flag; 2007-08 did not.
+- **Nicki Taylor, 2014-15.** *Bowling Green Daily News*, 4 February 2015, opened and read: "Taylor
+  also is member of the WKU Board of Regents," beside her abstention on the smoking vote.
+- **Jay Todd Richey, 2016-17.** His own letter in the *Herald* of 19 August 2016, bylined and
+  headed "Student Regent expresses opposition," opened and read.
+- **Sam Kurtz, 2024-25.** *Herald*, 8 August 2024, opened and read: "Student Regent Sam Kurtz,"
+  at the Board's retreat.
+- **Rush Robinson, 2025-26.** WKU's own Board of Regents release of 8 August 2025, opened and read:
+  he took the Oath of Office and "will serve as Student Regent, succeeding Sam Kurtz."
+
+Deliberately not flagged: **Richey's 2015-16 record and Kurtz's 2023-24 record.** Both men certainly
+held the seat in the other year, and the offices had merged by ~2001, so the inference is tempting
+and would have been wrong to make. 2015-16 has Richey reporting to the senate on what the Board
+decided, which is not the same as a source seating him on it, and 2023-24 carries no regent event at
+all. Unstated is the honest value. Sixteen president records still carry no field, down from 21.
+
+**One date corrected.** 2025-26's Chandler Hall entry was dated 18 August 2025, the day the building
+was billed to open, on a source — WKU's release of 8 August — that proves only the Regents' naming
+vote and the plan. This is the shape yesterday's pass corrected in the 2011-12 DUC forum entry, and
+the reasoning there applies unchanged: the 18th is the one day the archive cannot show anything
+happened. Redated to 8 August, the day the Board acted, which is also the day the archive already
+records Robinson taking the seat at that same meeting. The body needed no change: it said "due to
+open" and "set for" already.
+
+## Spot check
+
+Five sources opened and read in full, one of them the mirrored PDF rather than the web page, plus
+the WKU release behind the Chandler entry — six of six held. No claim in this pass rests on a
+search hit or an index line.
+
+## Traps checklist
+
+No advance notice written up as a report; the Chandler correction is the advance-notice rule being
+applied, not broken. No committee chair promoted to officer: the five additions are a Board seat
+evidenced by the Board's minutes, a newspaper naming the officeholder, and the officeholder's own
+signed letter. No surname matching — every one of the five was matched on full name in the source
+text. No changed-surname duplicate: no person was added to the roster, and Nicki Seay / Nicki Taylor
+is the known alias already handled. No April election moved. Nothing touches a settled fact; the
+~2001 merger of the offices was explicitly declined as grounds for the two records left unstated.
+Nothing about a living person beyond what the cited source reported. No contributor edit in the diff.
+
+The four pairs `check_duplicates.py` reports are the same four as yesterday, all pre-existing and all
+genuinely distinct — the closest, 1971-72, is a lawsuit announced in February and endorsed in March.
+
+## Merged
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0, `check_duplicates.py` nothing new.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,945 search records.** The regent floor moves from 39 people to **43**, the first movement in that
+figure since it was measured.
+
+Live site checked after the afternoon merge: `sga60.vercel.app` returns 200 and serves the current
+event count, so the deploy is not stuck.
+
+## Still open
+
+- **The research routines are switched off.** Nothing will reach this queue until they are turned
+  back on. Twelve empty passes have now been spent confirming an empty queue.
+- The sixteen president records whose regent seat is still unstated, now a shorter and better-mapped
+  list than the 21 the handoff describes.
+- Carried forward unchanged: Kelly S. Smith and John Holland, 1983-84's two unphotographed officers,
+  and the 1984 *Talisman* People section that has not been read; the 1983-84 spread's own article
+  text, still unread research; the `Delmer Estes` / `Delmer Esters` reading; the four spellings of
+  the at-large senate seat; the twelve year-photograph gap; the pre-2003 half of the officer portrait
+  gap; the 728 legislation entries whose source URL points at a landing page; the 18 legislation
+  files with no text layer; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels`
+  / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000
+  legislation gaps.
+- The stored editor brief needs an edit: #6, #7 and #8, the `gh` instruction, and now the claim that
+  four research routines are running.
+- The token flagged for rotation six passes ago is still flagged.
