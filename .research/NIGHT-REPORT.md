@@ -27068,3 +27068,97 @@ the record of what has been tried.
   legislation files with no text layer; the "57 regents" figure; the two Herald items on how
   Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00
   Coates investigation outcome; and the pre-2000 legislation gaps.
+
+---
+
+# 18 September, fifth pass — an empty queue, and a figure that four reports had quoted too high
+
+## What was open
+
+Nothing. `git fetch origin` and a listing of open pull requests returned an empty set; the last
+merge was #514 at 09:25 this morning, three hours before this pass began. Every `research-*` and
+`editor-*` branch carrying commits not on `main` was checked rather than assumed: all of them are
+landed or superseded, and each one's diff against `main` is dominated by what it *lacks*, not by
+anything it still holds. No research is stranded on a branch.
+
+Access was full. `gh` is not installed, as ten reports have now said, but git is credentialed —
+`git push --dry-run` reported `* [new branch] HEAD -> access-probe` — and the GitHub tools
+answered normally. #6, #7 and #8, which the stored brief still asks to be rescued or closed, were
+closed unmerged on 18 August. That is the sixth pass to record it.
+
+## The state of what is already published
+
+With no diff to review, the checks were run against `main` itself, which is what the live site is
+built from. `build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0, and
+`check_duplicates.py` reports the same four pairs for the fourth consecutive pass.
+
+All four were read in full again rather than carried on the previous judgement, and all four are
+genuinely two events. The 1997-98 pair is the one worth recording, because reading it turned up a
+third entry the checker does not pair: Bill 97-3-F on 4 November 1997, the *Herald* reporting free
+drinks for sober drivers on 13 November, and the cards being announced for distribution on
+17 February 1998. Three dates, three sources, one scheme. Both *Herald* entries say in their own
+text that the archive holds only a contents listing and neither claims anything the listing does
+not carry — which is the advance-notice rule being obeyed by the entries themselves, not enforced
+after the fact. Nothing merged.
+
+## The 165-against-166 discrepancy, settled
+
+The last two passes carried different figures for the officer portrait gap and neither stated a
+basis, so the fourth pass left it open. Both were right when written. Reconstructing the count at
+every recent commit that touched `data/photos.json` shows it standing at 199 slots and 166 people
+from 14 September, and falling to 198 and 165 at commit `6f6c3933` on 18 September, which added a
+portrait for Jackson Smith, Freshman Senator in 2025-26. One portrait, one slot, one person. There
+was never a contradiction, only two readings taken a day apart with nothing recorded about when.
+
+## The larger thing that came out of settling it
+
+Reproducing the figure meant reconstructing the counting rule, and the rule turns out to be wrong
+in a way that has been quoted forward four times.
+
+The gap is meant to exclude ordinary senate seats, so that it measures cabinet and Senate
+leadership rather than the whole Senate. It excluded them by matching three exact strings:
+`Senator`, `Senator At Large`, `Senator-at-Large`. The archive spells the at-large seat four ways.
+`Senator At-Large` appears eleven times and `Senator At-large` once, and neither is in that list,
+so **twelve ordinary at-large seats have been counted as leadership offices on the strength of a
+hyphen.** Six of them sit in the gap.
+
+Matching on the words instead of the punctuation, the honest figures are **887 qualifying slots,
+192 without a portrait, held by 160 people** — against the 899 / 198 / 165 that four photograph
+reports have carried. The gap is six slots and five people smaller than the number the routines
+have been planning against. Nothing published is affected: no page prints this figure and no
+entry depends on it. What it affected was the size of a job, reported to itself.
+
+Two earlier reports asked for this figure to stop being remembered and start being derived. It now
+lives in `scripts/portrait_gap.py`, which states the rule in its own docstring, matches seat names
+on their words, refuses to count committee chairs as officers unless asked (trap 2), and reports
+without changing anything. Re-derived on any future pass it will be right or it will be visibly
+wrong, which is the whole point.
+
+## Validators
+
+`build.py` clean before and after; `site/` regenerates byte-identical, the new script being the
+only untracked file. `check_data.py` and `check_contrib.py` exit 0, including the two cases that
+matter most — that the drop box cannot reach `main`, and that the commit it writes carries no tool
+attribution. The commit here is authored `SGA 60` and the diff was scanned for attribution: clean.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,945 search records.**
+
+## Still open
+
+- **The four spellings of the at-large senate seat** — `Senator At Large`, `Senator At-Large`,
+  `Senator At-large`, `Senator-at-Large` — are one office in the data under four labels, and
+  anything else keying on the office string will trip on them the same way. Flagged, not fixed:
+  normalising an office label is a data edit and belongs to a pass that can check each against its
+  source.
+- **The 1984 Talisman class-portrait grids**, for Kelly S. Smith and John Holland. Named in four
+  photograph reports. The Wayback route is untested rather than exhausted.
+- The stored editor brief still names #6, #7 and #8 as open and still opens by instructing
+  `gh auth setup-git`. Six passes have now spent minutes on it. The brief needs an edit.
+- The token flagged for rotation four passes ago is still flagged.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the "57 regents" figure; the two Herald items on how Joe
+  Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates
+  investigation outcome; and the pre-2000 legislation gaps.
