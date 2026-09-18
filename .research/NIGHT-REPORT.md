@@ -26971,3 +26971,100 @@ legislation files, 4,945 search records.**
   legislation files with no text layer; the "57 regents" figure; the two Herald items on how
   Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00
   Coates investigation outcome; and the pre-2000 legislation gaps.
+
+---
+
+# 18 September, fourth pass — a report with no history in it, checked against the data it describes
+
+## What was open
+
+One pull request, #513, the mid-morning photograph run, opened at 08:11 and untouched since
+except by the deploy bot. #6, #7 and #8 — the three the stored brief still calls stale and
+still asks to be merged, rescued or closed — were all closed on 18 August, five weeks ago.
+There is nothing at those numbers to act on and there has not been for some time.
+
+## What #513 is
+
+Thirty lines appended to `SGA-60-AGENT-INFO.md` and nothing else. No entry, no leader, no
+portrait, no source citation: `data/` is untouched. That makes most of the review checklist
+inapplicable by construction, and it would be easy to wave through on that basis. The part
+that is not inapplicable is that the report asserts a set of counts about the archive, and
+those counts are what the next photograph run will plan against.
+
+So the spot-check was run against the report's own assertions rather than against cited
+sources. There were fewer than eight, so all of them were checked. All held, and held
+exactly rather than approximately:
+
+- 73 `leaders` records — 73 exactly, being 66 presidents, 6 regents and one unresolved.
+- Every one of them carrying a portrait — none missing.
+- Every year carrying at least one photograph — none uncovered, across all 61.
+- 198 officer name-slots without a portrait, across 165 distinct people — 198 and 165
+  exactly, on the report's stated basis of excluding plain "Senator" and "Senator At Large"
+  seats, out of 899 qualifying slots.
+- Kelly S. Smith and John Holland, both 1983-84, both still without one — both there, Smith
+  as Treasurer and Holland as Public Relations Vice President. Holland also sits in 1984-85,
+  which does not make the claim wrong as written, but a later pass looking for him should
+  know he is in two years and not one.
+
+The two access claims were tested rather than taken on trust, since they are the report's
+argument for why the job is still unstarted. `archive.org/metadata/talisman1984west` returns
+`{}`; `talisman1975west`, run as a control so that an empty answer could be distinguished
+from a broken request, returns a real record. `viewcontent.cgi` returns 403 on a single
+paced request. Both stand.
+
+## The judgement worth recording
+
+The report draws a line between a network failure and a finding, and refuses to log the 1984
+Talisman as a dead end on the strength of eight failed Wayback requests. That is the right
+line and it is the reason to keep the entry rather than merely to allow it. A lead that is
+untested reads identically to a lead that is exhausted once it is written down as "closed",
+and the difference is the whole value of the log to the run that comes next. Nothing was
+cut.
+
+One discrepancy to carry: this pass counts 165 distinct people in the officer portrait gap,
+where the previous entry carried 166. The bases may differ. Neither figure is load-bearing
+for anything published, but they should be reconciled before either is quoted again.
+
+## Duplicates
+
+`check_duplicates.py` reports the same four pairs for the third consecutive pass. All four
+are pre-existing on `main` and none is introduced by this diff, which changes no data at
+all. Read in full again rather than carried on the previous judgement, and all four are
+genuinely two events: Bill 97-3-F passing in November 1997 against the *Herald* reporting
+distribution the following February; Bill #92-01-S introduced on 28 January 1992 against the
+same bill failing after amendment on 6 February; the Kentucky Civil Liberties Union planning
+court action on 29 February 1972 against Associated Students formally endorsing the suit on
+28 March; and SGA voicing opposition to plus/minus grading on 25 September 2003 against
+passing legislation against it on 16 October. No merges warranted.
+
+## Validators
+
+`build.py` clean. `check_data.py` and `check_contrib.py` both exit 0, every case, including
+the two that matter most here — that the drop box cannot reach `main`, and that the commit it
+writes carries no tool attribution. The diff itself was scanned for attribution and is clean,
+and the branch commit is authored `SGA 60`.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810
+people, 98% of them carrying an account of what the person did. 308 documents, 1,111
+legislation files, 4,945 search records.**
+
+## Merged
+
+#513, as a merge commit. The archive's published content is unchanged by it; what changed is
+the record of what has been tried.
+
+## Still open
+
+- **The 1984 Talisman class-portrait grids**, for Kelly S. Smith and John Holland. Now named
+  in four photograph reports. The Wayback route is untested rather than exhausted and should
+  be retried, not written off.
+- The 165-against-166 discrepancy in the officer portrait gap, noted above.
+- The stored editor brief still names #6, #7 and #8 as open and still opens by instructing
+  `gh auth setup-git`, which is not installed in these containers. Both cost a few minutes
+  every pass. The brief needs an edit.
+- The token flagged for rotation three passes ago is still flagged.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the "57 regents" figure; the two Herald items on how
+  Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00
+  Coates investigation outcome; and the pre-2000 legislation gaps.
