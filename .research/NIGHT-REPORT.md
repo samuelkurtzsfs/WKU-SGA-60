@@ -26675,3 +26675,131 @@ or an archive.org search on it. That belongs in the photograph routine's standin
   files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57 regents" figure; the
   two Herald items on how Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mary
   Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
+
+# 18 September — an empty queue, and the ten modern Herald citations opened one by one
+
+## What was open
+
+Nothing. `git fetch origin` and a listing of open pull requests returned an empty set: every
+research branch that carried work has been merged, the most recent being #506 and #507 on the
+evening of 17 September. Of the branches that report as ahead of `main`, all but the 4 August
+orphans are squash-merge remnants, whose content is already published; a file-level diff of the
+recent ones against `main` shows only night-report sections that `main` already carries further
+along. Nothing is sitting unreviewed.
+
+Access was full. `gh` is still not installed, as every recent report has said, but git is
+credentialed and `git push --dry-run` reported `* [new branch] HEAD -> access-probe`, and the
+GitHub tools answered normally. The stored brief is wrong in the same two places it has been
+wrong for a month: it opens with a `gh auth setup-git` command that cannot run in this container,
+and it names #6, #7 and #8 as stale and awaiting review when all three were closed unmerged on
+18 August and the repository is now at #507. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset
+and were not needed.
+
+## What was checked instead
+
+With no queue to review, the hour went on the published record. Earlier passes have swept the
+TopSCHOLAR side hard — every Herald citation read against the index on 17 September, the
+advance-notice rule tested, the blank-Pass lines rendered and looked at. The 534 events cited to
+`wkuherald.com` had never had a pass of their own, so ten were drawn at random across 2004 to
+2025 and each article was opened and read against the entry that cites it.
+
+**All ten held.** Not trimmed, not rescued: held, down to the numbers.
+
+- The 2023 election. Kurtz, León and Finch on an unopposed ticket, TopNet from 17 April, results
+  read at about 12:30 a.m. in the Downing Student Union chambers by Chief Justice Justin Goins,
+  fourteen at-large senators: every element is in the article.
+- The 2010 fall senate election. 847 voters, 25 candidates for the at-large seats, Boka,
+  Broderick and Benton unopposed as freshman senators. The nine at-large winners and the three
+  freshmen make the twelve of the headline.
+- The 2019 scholarship bill. 25-0 on Bill 29-19-S, 27 summer scholarships at $8,100, 18 study
+  and teach abroad at $300 each for $5,400, eight first-generation at $250 each for $2,000. The
+  itemised total is $15,500 and the Herald's headline says $17,000; the entry does not reconcile
+  them, it attributes the $17,000 to the headline and lets the discrepancy stand. That is the
+  right handling and it is worth recording that a previous pass got it right.
+- The 2025 SNAP bill. 645,000 Kentuckians on state data, 24 slips of paper with six starred, one
+  in four aged 18 through 26, introduced at $123 and amended to $750. The arithmetic is the
+  article's own: $123 plus $500 from emergency assistance plus $127 standard.
+- The 2004 Frankfort rally, the 2004 re-election reaction, the 2019 budget and election codes,
+  the 2020 hammock meeting, the 2022 egg hunt and the 2011 DUC forum all matched the same way.
+
+Two entries carry a claim that is not in the article they cite, and both are traceable inside the
+archive as the profile rule requires. "Ambriz, who would run for president that spring" is
+carried by the 2011-04-07 entry in the same year, where Stephens beats him 56 per cent of 1,066.
+The April 2023 election sits in 2022-23 and Kurtz's term in 2023-24, which is the spring
+elections file forward rule applied correctly rather than an entry in the wrong year.
+
+The 2004 re-election entry is the one that touches a living person on a conduct matter, and it
+stays inside its source: it reports that the Dining Dollars investigation and the resignation
+drew varied reactions and that one named student had voted for Todd in March. The article carries
+sharper quotations from named students about whether the allegations were true. None of them were
+taken, and none should be.
+
+## The one correction
+
+`2011-12`, "SGA announced a DUC forum for the day the regents saw the plans", was dated
+**2011-09-30** and is now dated **2011-09-27**.
+
+The entry records an announcement, and its own body names the day: "At the 27 September 2011
+meeting SGA said it would host an unveiling". The source is the *Herald* of 28 September. The
+30th is the Friday of the Board of Regents meeting and the forum that was to follow it, which is
+precisely the day the archive cannot prove anything happened — the body says so itself, that the
+report predates the event and does not say how it went. Two neighbouring entries in the same year
+are dated 2011-09-30 off a 30 September article, which is most likely where the wrong day came
+from. Dating an advance notice onto the day of the thing announced is the quietest form of the
+advance-notice error, and the date field was contradicting its own body.
+
+Four other entries are dated after the date of the source that carries them, and all four were
+read and all four left alone: the 2015 listening tours, the 2015 legal services clinic, the 2024
+DEI Week and the 2024 Potter Children's Home fundraiser. These are programmes, dated to the day
+the programme was scheduled for, each with a body that says in terms that the report predates it
+and does not say how it went. That is a convention rather than a mistake, and it is applied
+consistently. The DUC entry was not of that kind: its subject is the announcement, not a
+programme, and its title says so.
+
+## Checks
+
+`build.py` clean. `check_data.py` and `check_contrib.py` both exit zero. `check_duplicates.py`
+reports the same four pairs as every recent night; all four read again and all four still
+distinct — a bill introduced 28 January 1992 against the same bill failing after amendment on
+6 February, designated driver cards funded in November 1997 against their distribution in
+February 1998, the KCLU planning action of 29 February 1972 against ASG endorsing the suit on
+28 March, and concern over plus/minus grading on 25 September 2003 against the legislation
+passing on 16 October.
+
+61 years, 1,963 events, 60 people have been president; 2,652 recorded terms held by 1,810 people,
+2,615 of them (98%) carrying an account of what the person did; 47 people recorded under more
+than one spelling. 308 documents, 1,111 legislation files, search index 4,945 records. The event
+count is unchanged, as it must be: a date was corrected, nothing was added or removed.
+
+An attribution sweep of `data/`, `site/`, `scripts/` and `api/` returns nothing, and the last
+sixty commits on `main` are authored by `SGA 60` and `samuelkurtzsfs` alone.
+
+Before the rebuild, `site/` differed from the committed copy only in the build-date line, across
+88 files. The committed site is reproducible and nothing in it has been hand-edited.
+
+## Worth acting on
+
+**The wkuherald.com half of the record is in good order.** Ten for ten, on a random draw spanning
+twenty-one years, is the strongest sample this reviewer has taken. The routines' output on the
+modern era can be trusted at the level of numbers, names and vote counts. The remaining risk in
+that half is not accuracy but the dating convention above, which is worth stating explicitly
+somewhere the routines read: an entry whose subject is an announcement takes the date of the
+announcement; an entry whose subject is a programme takes the date the programme was set for, and
+says in the body that no report confirms it.
+
+## Still open
+
+- **Fifteen empty queues.** Two routines of sixteen are on, one of them this reviewer. Still the
+  owner's call, but the names in the earlier reports are the ones to use.
+- The stored editor brief still names #6, #7 and #8 and still opens with `gh auth setup-git`.
+- A GitHub token was printed into an earlier run's transcript by a redaction pattern that did not
+  match its `github_pat_` prefix. Nothing was written to the repository and the token appears in
+  no file, commit or comment, but it is in that session log and should be rotated.
+- `data/years.json` still ends without a trailing newline. Cosmetic, and left alone again so the
+  diff stays one line.
+- Carried forward unchanged: the twelve year-photograph gap; the pre-2003 half of the officer
+  portrait gap; the 728 legislation entries whose source URL points at a landing page; the 18
+  legislation files with no text layer; the 2012-13 Resolution 5-13-S indexing gap; the "57
+  regents" figure; the two Herald items on how Joe Rains's term ended; the `Amber Daniels` /
+  `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000
+  legislation gaps.
