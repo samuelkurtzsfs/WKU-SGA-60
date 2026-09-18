@@ -6016,6 +6016,36 @@ named, captioned officer photographs and should not be re-swept on the same name
 source — the two-name Mark Henry/Amelia Bice gap inside that source is confirmed closed, not merely
 unchecked.
 
+### Photograph run of 18 September (scheduled, mid-morning): both routes tested fresh, both closed
+
+Re-checked the baseline directly from `data/photos.json` and `data/years.json` rather than trust
+the runs above: all 73 `leaders` (president/regent) records, all four named presidents (Todd,
+Dawson, Johnson, Gilley), and at least one photograph in every year are all still true. The
+executive/Senate-officer portrait gap, excluding plain "Senator"/"Senator At Large" seats, is 198
+name-slots across 165 distinct people — Kelly S. Smith and John Holland (both 1983-84) among
+them, still without a portrait.
+
+Picked the lead three consecutive photograph reports have now called the clearest unstarted job:
+the 1984 *Talisman* class-portrait grids for Smith and Holland, reachable only through the
+Wayback capture of `digitalcommons.wku.edu/cgi/viewcontent.cgi?article=1408&context=dlsc_ua_records`
+(archive.org itself holds no `talisman1984west` item — confirmed again, `metadata` returns `{}`).
+Both of that route's legs were closed this session, tested directly rather than assumed:
+
+- **`viewcontent.cgi` directly**: HTTP 403, Cloudflare's challenge (`cf-mitigated: challenge`),
+  with the documented navigation headers. Same as every report since 14 September.
+- **`web.archive.org`'s CDX API**: eight attempts over about four minutes, spaced ~25-50 seconds
+  apart, against the same query the 17 September report used successfully. Two came back
+  `Recv failure` at the TLS layer, three timed out after 25 seconds with zero bytes, one returned
+  a bare `504 Gateway Time-out`, and two returned the archive's own "Internet Archive: Temporarily
+  Offline" page rather than CDX JSON. Zero of eight returned real data.
+
+Nothing in `data/` changed. No new dead end to log for Smith or Holland specifically — this is a
+network-access result, not a finding about the photograph itself, so a future run should retry
+the same query rather than treat this as a closed lead. `build.py` and `check_data.py` both pass
+clean on the unmodified tree. `research-photos` had drifted six commits behind already-merged
+`main` (the six commits behind PR #509-512); fast-forwarded and pushed to keep the branch current,
+carrying no content of its own.
+
 ## 9. Restarting a session
 
 ```bash
