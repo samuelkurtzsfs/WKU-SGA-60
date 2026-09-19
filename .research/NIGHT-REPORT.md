@@ -27987,3 +27987,98 @@ no new fact about who held office.
   installed and the brief should point at git push and the GitHub API, and it claims four routines
   are running where the evidence remains one.
 - The token flagged for rotation nine passes ago is still flagged.
+
+# Editor pass, 19 September (scheduled) — one photograph merged, and a caption that borrowed its sentence
+
+One pull request was waiting, #524 on `research-photos`, opened at 14:19 and carrying a single
+new public claim: a year-scene photograph for 1993-94. Small enough that sampling would have been
+a formality, so the whole of it was checked rather than eight claims out of it.
+
+## What the photograph is, and how far it was checked
+
+The entry says the 1994 *Talisman*, p. 199, and shows a student in a suit taking notes opposite a
+woman in an armchair. Both halves were confirmed at the source rather than from the run's own
+report. The cited record, `dlsc_ua_records/418`, is the 1994 volume, and its PDF is `article=1418`
+as the run's note says. The volume itself was pulled and rendered: it is scanned two printed pages
+to a sheet, PDF page 100 carries the printed 196-197, so the printed 198-199 spread is PDF page
+101. Rendered, it is the right-hand photograph on p. 199 — the same frame as the published JPEG,
+and exactly the page cited.
+
+The caption on that page names Nancy Shreve of Friends of the Lost River Cave and the notes taken
+to pass on to Meredith. The facing p. 198 caption supplies the rest: Meredith traded places with
+an Ecuador senior, Angelo Rodriguez, who won the day in a drawing sponsored by the Student
+Government Association. Every element of the entry is printed on the spread.
+
+The year was then checked independently of the yearbook. `herald-index-full.json` carries three
+lines naming Rodriguez — 17, 22 and 24 February 1994, the first of them filed under "Student
+Government Association" — which puts the event in the spring of 1993-94, where the entry files it,
+and confirms SGA's sponsorship from a second source. The file is a real JPEG, `FF D8`, 1750x1000.
+
+## The correction
+
+The facts held. The sentence did not. The caption as written ran sixteen consecutive words of the
+*Talisman*'s own p. 199 caption — "meets with Nancy Shreve of Friends of the Lost River Cave and
+takes notes to share" — and then a further nine from p. 198. CLAUDE.md allows one quotation, under
+fifteen words, per source; this was over the limit on one page and then did it again on a second,
+with no quotation marks to declare either. Rescued rather than cut, since nothing in it was wrong:
+rewritten so that only the proper names remain, a person's name and an organisation's, which are
+identification rather than borrowed prose. The longest run against either source is now ten words,
+nine of them that name. `1990-91-president-for-a-day.jpg`, the precedent this very entry cites, is
+a clean paraphrase and was the model.
+
+This is the second time in two days. The 18 September third pass found forty-one words of the
+*Herald* reproduced in a `src.label` and swept `photos.json` for more. That sweep looked for
+quotation marks, which is why it did not reach this one: the fault here is unmarked text that
+reads as the archive's own writing and is not. Swept the captions again tonight on the same
+principle and found nothing further — the one hit is a false positive, a regex running between two
+separate quoted strings in the 1983-84 roster caption, where the text between them is this
+archive's prose and a list of names.
+
+## The run's own method claims, reproduced
+
+The note in `data/photo-finds/_archive-gaps.json` corrects several earlier entries that recorded
+the Internet Archive as blocked from these containers, and says the real fault was a plain `http://`
+on the request. That was tested rather than taken on trust, and it is right: `http://web.archive.org`
+is refused by this session's egress before it leaves the container, and the identical URL over
+`https://` returns the file. The rest of the note checks out to the digit — the 1994 volume is 148
+PDF pages carrying 859 characters of text against the claimed "860", and 253,700,936 bytes against
+"~253MB". The queue arithmetic is right too: eleven years still have no scene photograph, and the
+eleven the note lists are the eleven.
+
+`_archive-gaps.json` is not read by `build.py` and does not reach the site, so its negative findings
+about the 2016-17 volume were read but not chased; nothing in them is published.
+
+## Merged
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0. `check_duplicates.py` shows the same four
+pairs as every recent pass; this diff adds no events, so none is new. The closest of them was read
+in full — 1997-98's designated driver cards are a bill of 4 November, a *Herald* report of 13
+November and a distribution notice of 17 February, three events and not one. Commits are authored
+`SGA 60` throughout and carry no tool attribution; the attribution line was stripped from the review
+comment for the same reason. Merged to `main` as #524.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people, 98%
+of them carrying an account of what the person did. 1,391 leader portraits and 63 year photographs,
+308 documents, 1,111 legislation files, 4,945 search records.** One year photograph added; no new
+fact about who held office.
+
+## Still open
+
+- Eleven years still have no scene photograph: 1994-95 through 1997-98, 2000-01, 2002-03, 2003-04,
+  2005-06, 2006-07, 2008-09, 2009-10. The Wayback route over `https://` is now known to work, which
+  is the first new way into TopSCHOLAR's PDFs this queue has had in weeks. It is the obvious next
+  thing to spend a run on.
+- Carried forward unchanged: p. 238 of the 1984 *Talisman* and its unread article text; Kelly S.
+  Smith and John Holland, both closed negative for the 1984 volume; the president records whose
+  regent seat is still unstated; the four spellings of the at-large senate seat; the pre-2003 half
+  of the officer portrait gap; the 728 legislation entries whose source URL points at a landing
+  page; the 18 legislation files with no text layer; the two *Herald* items on how Joe Rains's term
+  ended; the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation
+  outcome; and the pre-2000 legislation gaps.
+- The stored editor brief still needs its edit, now carried for several passes: it opens with
+  `gh auth setup-git`, and `gh` is not installed in these containers; it sends the editor to pull
+  requests #6, #7 and #8, all three closed on 18 August; and it names a drop box through
+  `SGA60_SITE` and `SGA60_RESEARCH_TOKEN`, neither of which is set here. None of that cost this run
+  anything — git push works and the GitHub API serves the rest — but every pass spends its first
+  minutes rediscovering it.
+- The token flagged for rotation ten passes ago is still flagged.
