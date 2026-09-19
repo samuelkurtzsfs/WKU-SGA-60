@@ -1,3 +1,111 @@
+# 19 September 2026 (third pass) — an empty queue, and a census that settles what the brief keeps getting wrong
+
+## What was open
+
+Nothing. `list_pull_requests` returns an empty array for open state, and the repository is at #521.
+The three pull requests the stored brief calls stale and open since 4 August — #6 "Research:
+photographs (rolling)", #7 "Research: the 1980s", #8 "Research: the 2020s" — were closed on
+18 August 2026. #8 was read directly this pass to confirm it rather than trusting the last report:
+closed 2026-08-18T04:57:38Z, unmerged, 14 commits. There was nothing to fetch, rescue, merge or
+close, and no research branch has been pushed to since `research-photos` at 03:26 this morning,
+which the second pass already merged.
+
+Access was full. `gh` is still not installed, so the brief's opening command still fails; the push
+probe and the GitHub tools both work, exactly as `AGENT-LANDING.md` says they do.
+
+## What was checked instead
+
+With no diff to review, the pass audited what is already live, since that is what the brief exists
+to protect.
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0 with all twelve contributor-layer
+guards passing, including the two that matter most here — the drop box still refuses `main`, a
+sneaky `main` and a ref path, and the commit it writes still carries no tool attribution.
+
+`check_duplicates.py` returns the same four pairs it has returned for weeks. All four were read
+again rather than taken on the last pass's word, and all four are two events:
+
+- **1997-98, designated driver cards.** 4 November 1997 is Bill 97-3-F allocating $900 to print
+  them; 17 February 1998 is the *Herald* reporting that they would be distributed the next day.
+  A third entry sits between them, 13 November 1997, Lanter's "Sober Drivers Get Free Drinks".
+  Three stages of one scheme, not one event written three ways.
+- **1991-92**, a regent advisory committee bill introduced 28 January and failing after amendment
+  on 6 February. **1971-72**, the KCLU planning court action on 29 February and Associated Students
+  endorsing the suit on 28 March. **2003-04**, SGA lining up against plus/minus grading on
+  25 September and passing legislation against it on 16 October.
+
+An attribution audit, since nothing else needed doing and this is the rule with the least margin.
+The last 60 commits are authored 34 `SGA 60` and 26 `samuelkurtzsfs`, nothing else. No
+`Co-Authored-By`, no "generated with", no session link in 200 commit messages. `site/` and `data/`
+carry no tool attribution: every grep hit was an ordinary word — *phil-anthropic*, and officers who
+**co-authored** Resolutions 91-6-F and 94-1-1. One real hit, `claude.ai/settings/usage` in
+`data/photo-finds/_overnight-log.md`, is a billing page named in an internal working log that the
+build does not publish; it is an operational note rather than a credit, and cutting someone's
+working log to satisfy a rule about the published site would be the wrong trade. Left, and recorded
+here so the next pass need not re-find it.
+
+## The routine census
+
+Twelve consecutive passes have reported that the brief's "four research routines running around the
+clock" does not match one branch with anything on it. This pass stopped inferring it from branch
+activity and read the routines themselves. Thirteen are stored for this project and **two are
+enabled**:
+
+- `SGA 60 - editor`, `17 0-23/3 * * *`, every three hours — this one.
+- `SGA 60 - portraits`, `52 1-23/6 * * *`, every six hours — which is `research-photos`.
+
+The other eleven are disabled with next-run times frozen in August: `backlog`, `senate rolls`,
+`person profiles`, `legislation harvest`, `photographs`, `the 2020s`, `the 2010s`, `the 2000s`,
+`the 1990s`, `the 1980s`, `1966-1979`. So there is one research routine and one editor, not four
+researchers, and the empty queue is not a fault to investigate — it is the correct and expected
+state two passes out of three. The brief should say so, because a pass that treats an empty queue as
+an anomaly spends its time hunting for work that was never dispatched.
+
+## What was not done, deliberately
+
+The stored brief could not be corrected from inside this run, and this pass chose not to force it.
+The routine is `trig_01PvrVXhHfAAx8xWbvoMYYtL`; the listing carries no `prompt` field, so there is no
+way to read the current text, diff it, or preview a correction — an `update_trigger` call would
+overwrite standing orders blind. Rewriting the instructions the editor runs under is also not the
+editor's call to make unattended, even where the corrections are as clear as these three. It goes to
+the owner instead, with the exact edit, rather than into this file for a thirteenth pass.
+
+## Nothing merged, nothing cut
+
+No data changed this pass. No claim was cut because none was offered. The counts are unchanged from
+the second pass:
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,945 search records, 47 people recorded under more than one spelling.**
+
+## Still open
+
+- **The stored editor brief needs three corrections**, and this is the ninth pass to say so: #6, #7
+  and #8 are closed, not stale open work; `gh auth setup-git` cannot run because `gh` is not
+  installed, and plain `git push` plus the GitHub tools are what work; and one research routine is
+  enabled, not four, so an empty queue is the normal case and the brief should say what to do with
+  one rather than imply it is a fault.
+- **The token is exposed again, and this pass did it.** The access probe was written
+  `${GH_TOKEN:+yes}${GH_TOKEN:-no}`, and because the variable is set, `:-` printed the token itself
+  rather than the word it was meant to print — the same mistake, in the same place, that the second
+  pass recorded. It reached no file, commit or comment, and nothing in the repository carries it,
+  but it is now in a ninth session log. It is a fine-grained personal access token (`github_pat_`)
+  with push rights on this repository. Rotating it on GitHub and updating the routine's environment
+  closes all nine at once. The correct probe is `[ -n "$GH_TOKEN" ] && echo yes`.
+- The 1984 *Talisman* People section is still unread for Kelly S. Smith and John Holland, 1983-84.
+- The redo of the `wkuherald.com` sweep **by surname**, which the second pass added: none of the 41
+  names may be counted as checked until it is done.
+- Carried forward unchanged: the president records whose regent seat is still unstated; the 1983-84
+  spread's own article text; the `Delmer Estes` / `Delmer Esters` reading; the four spellings of the
+  at-large senate seat; the twelve year-photograph gap; the pre-2003 half of the officer portrait
+  gap; the 728 legislation entries whose source URL points at a landing page; the 18 legislation
+  files with no text layer; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels`
+  / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000
+  legislation gaps.
+
+---
+
 # 19 September 2026 (second pass) — one pull request, merged after its Herald negatives were cut back
 
 ## What was open
