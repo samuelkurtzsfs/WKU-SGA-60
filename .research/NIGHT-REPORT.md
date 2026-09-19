@@ -28082,3 +28082,130 @@ fact about who held office.
   anything — git push works and the GitHub API serves the rest — but every pass spends its first
   minutes rediscovering it.
 - The token flagged for rotation ten passes ago is still flagged.
+
+# Editor pass, 19 September (evening) — an empty queue, and two claims that outran their citations
+
+## What was open
+
+Nothing. `list_pull_requests` returns an empty array for open state and the repository is at #525,
+merged at 15:31 today. The three the stored brief still calls stale and open since 4 August — #6,
+#7 and #8 — have been closed since 18 August.
+
+This pass did not take the empty list on trust. Every `research-*` branch on origin was diffed
+against `main` over `data/` and `.research/`, and all 50 of them are behind it: the insertions in
+those diffs are the branches' own older content, and not one carries a file or a line `main` lacks.
+`research-photos`, the most recently active, is 95 lines behind and ahead by nothing. There was no
+unlanded research to rescue.
+
+Access was full. `gh` is still not installed, so the brief's opening command still fails at the
+first line; the push probe and the GitHub tools both work, as `AGENT-LANDING.md` says.
+
+## What was checked instead
+
+Ten sourced events drawn at random, seeded, from the 1,963 that carry a URL, and read against the
+sources themselves rather than against the index alone.
+
+Eight held. Two did not, and both were rescued rather than cut.
+
+**2017-18, Hidden Hacks of the Hill.** Flagged on sight as the advance-notice trap: an event dated
+14 November whose cited article is dated 1 November, under a headline about a different event
+entirely. It is not the trap. The entry carries a `src2` — Singleton, 16 November — and the
+division is exactly right: the funding and the $200 come from the 1 November piece, everything
+about how the morning actually went comes from the report published after it. Correct as written.
+
+**2018-19, the Dahmer litigation.** The sensitive one, and the one most worth checking. The
+23 September entry was read against the *Herald* article word for word: the 19 September filing
+date, the denial of a hostile educational environment, the residence hall director who triggered
+the investigation rather than a report to Title IX, the Student Code of Conduct violations by
+certain SGA members, the $75,000. All of it is in the article and none of it goes beyond. No
+accuser is named who the *Herald* did not name. And the outcome is recorded, which is what the
+living-people rule actually demands: the federal claims dismissed by Judge Hale on 2 March 2021,
+partially revived in 2022, settled in January 2024 for $10,000 paid by the university's insurer
+without admission. An allegation published without its resolution would have been the fault here,
+and it is not present.
+
+**2017-18, the first senate meeting.** Verified in full against the *Herald* of 31 August 2017:
+five proposed constitutional amendments, three passed, and the three named in the entry are the
+three the article names. Bill 5-17-F is correctly attributed to Will Hurst as its author and he is
+correctly left as a committee chair rather than promoted to officer — the commonest error in this
+project, and not made here.
+
+**Two *Herald* citations checked against the index**, both exact to the volume, issue, date, byline
+and headline: 64:39 of 16 February 1989 (Tsimekles on the study day) and 91:5 of 9 February 2016
+(Skipworth on the grade point average amendment). The 2016 entry is a model of how to cite an index
+line — it says outright that the archive holds only the headline and byline and no account of the
+debate or the vote.
+
+## What I corrected
+
+Both faults were the same fault: a sentence resting on a source the entry did not cite.
+
+**1988-89, 16 February 1989.** The entry ends "The proposal followed January efforts to find a way
+to print teacher evaluations." Nothing in the 16 February issue supports that, and the entry cited
+nothing else. The claim is true — `herald-index-full.json` carries "Tsimekles, Diane. Associated
+Student Government Looking for Way to Print Evaluations" in the *Herald* of 10 January 1989, the
+same reporter five weeks earlier — but a reader following the citation would never have found it.
+Added `src2`, Herald 64:29, 10 January 1989, `dlsc_ua_records/7536`.
+
+**1970-71, 9 December 1970.** The title says "Ravi Shankar plays Western" and the only source was
+an advance notice: the 8 December issue putting the sitar player in the concert spotlight for the
+following night. That is the trap in its pure form — a booking cited as proof of a performance. The
+concert is not in doubt, because John Lyne's signed statement in the 1971 *Talisman* says
+retrospectively that names outside the top forty such as Shankar had been brought in, and this
+archive already cites that statement in the next entry along. Added it here as `src2` so the title
+rests on the account written afterwards rather than on the notice written before. Nothing was cut
+and no date moved.
+
+## What I did not cut, and why
+
+The 16 February entry also says the study day was recommended "before exams" and "to the university
+calendar". The index line proves neither; it reads only "Recommends an Extra Study Day". That is
+not grounds to touch it. CLAUDE.md is explicit that a miss in the index is never grounds for cutting
+a claim, because the file holds what the archivist itemised and not the article body, and the
+landing page for the issue was opened to be sure rather than concluding anything negative from the
+local copy — it carries the identical line and nothing further. The page image would settle it. The
+PDF was refused 403 twice, once after the full 90-second backoff, so the route is closed this run.
+Carried forward rather than resolved or removed.
+
+## A sweep that found nothing
+
+Since one uncited cross-reference had turned up by random sample, the same fault was hunted
+systematically: every single-source event citing a *Herald* index page whose body reaches across to
+another date. 131 matched the pattern and were read. Almost all are cross-references inside the
+cited issue itself — "the same issue reported" — which are properly sourced by the one citation.
+The Shankar entry was the one real hit, and it is fixed above. No third case.
+
+## Merged
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0. The build touched exactly the two year
+pages edited and their indexes, which is the confirmation that the change landed where it was aimed
+and nowhere else. `check_duplicates.py` reports the same four pairs as every recent pass; this diff
+adds no events, so none is new, and the closest of them remains three genuinely separate events.
+Event count is unchanged at 1,963 — two citations were added, no claim was.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people, 98%
+of them carrying an account of what the person did. 308 documents, 1,111 legislation files, 4,945
+search records.** No new fact about who held office.
+
+## Still open
+
+- The page image of *Herald* 64:39, 16 February 1989, which would settle whether the study day was
+  recommended "before exams" and to the calendar. `viewcontent.cgi` returned 403 twice tonight;
+  the landing page serves fine, so the block is on the download endpoint, not the item.
+- Eleven years still have no scene photograph: 1994-95 through 1997-98, 2000-01, 2002-03, 2003-04,
+  2005-06, 2006-07, 2008-09, 2009-10. The Wayback route over `https://` is still the best lead.
+- Carried forward unchanged: p. 238 of the 1984 *Talisman*; Kelly S. Smith and John Holland; the
+  four spellings of the at-large senate seat; the pre-2003 half of the officer portrait gap; the 728
+  legislation entries whose source URL points at a landing page; the 18 legislation files with no
+  text layer; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` /
+  `Amber Daniel` pair, which both entries still correctly refuse to merge; Mary Fyfe; the 1999-00
+  Coates investigation outcome; and the pre-2000 legislation gaps.
+- The stored editor brief still needs its edit, now carried for several passes: it opens with
+  `gh auth setup-git`, and `gh` is not installed here; it sends the editor to #6, #7 and #8, all
+  closed on 18 August; and it names a drop box through `SGA60_SITE` and `SGA60_RESEARCH_TOKEN`,
+  neither of which is set in this container. Nothing was lost to it — push works and the GitHub API
+  serves the rest — but every pass spends its first minutes rediscovering the same three things.
+- The token flagged for rotation eleven passes ago is still flagged, and this pass has its own
+  reason to repeat it: the value was printed into this run's log while probing the environment. It
+  reached no file and no commit, but that is one more place it exists, and it argues for rotating
+  rather than carrying it.
