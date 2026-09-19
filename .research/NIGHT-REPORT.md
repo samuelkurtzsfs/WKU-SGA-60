@@ -1,3 +1,114 @@
+# 19 September 2026 (second pass) — one pull request, merged after its Herald negatives were cut back
+
+## What was open
+
+One pull request, #518, "Research: photographs (rolling)", the same branch the last two passes
+reviewed. It had been pushed to since: the 19 September photograph run landed a report in
+b19fadd9. Nothing else was open. The three pull requests the stored brief calls stale and open —
+#6, #7 and #8 — were all closed on 18 August 2026, a month ago, and there was nothing to rescue,
+merge or close.
+
+## What was in it
+
+No data change at all. `git diff origin/main...origin/research-photos` was a single new file,
+`.research/photo-run-2026-09-19-scheduled.md`. `data/photos.json` and `data/photos/` are untouched,
+so nothing in this merge reaches a year page. The report is the deliverable, and the next run reads
+it, so it was checked as though it were a year page.
+
+## What held
+
+The Talisman collection work, which is the valuable half, and every falsifiable claim in it.
+Fetched one at a time, three seconds apart. `digitalcommons.wku.edu/talisman/` does return 404 and
+`dlsc_ua_yearbooks/` does return 200 as a real un-gated browse page. The article-to-landing-page
+offset of exactly 1000 holds in both directions: `dlsc_ua_records/408/` is *The Touch of Red*,
+dated 1984, its own PDF link reading `article=1408`; `/417/` is *A New Shade of Red*, 1993,
+`article=1417`. And the 1997-2002 publishing gap is real — the collection listing runs 1365 (1950)
+consecutively through 1424 (*Xposure*, Summer 1996) and then jumps straight to 1594, the 2003
+*About Face*, with nothing in between. So the Wayback miss for that stretch is an absence and not a
+search failure, which is the most useful thing this run produced.
+
+On the data: 72 leader records carry `role` president or regent across all 61 years and not one is
+without a portrait. Priority 4 is true as the report words it, since every year carries a
+president's portrait, but stated precisely there are still twelve years with no year-level
+photograph: 1993-94, 1994-95, 1995-96, 1996-97, 1997-98, 2000-01, 2002-03, 2003-04, 2005-06,
+2006-07, 2008-09, 2009-10.
+
+## What was cut
+
+The `wkuherald.com` sweep. The report said five of its 41 names — Skillman, Zaepfel, Vuleta, Gunnar
+Robinson and Singh — returned no Herald search results at all, with nothing the paper's own search
+could find mentioning them by name. That is wrong for four of the five, and the method is what made
+it wrong: the sweep searched the full name as this archive holds it, and the Herald does not print
+these people under those names. By surname, reading the given-name form out of each article body,
+the paper carries **Zach** Skillman in three SGA pieces (15 and 23 September 2021, 20 April 2022),
+**Makism** Zaepfel — the Herald's own spelling, flagged rather than reconciled — in the election
+results of 20 April 2022, **Daniel** Vuleta in three posts including the four-bill meeting of
+9 November 2023, and **Trib** Singh in both September 2021 pieces. Only Gunnar Robinson stands:
+twenty posts for the surname and not one with that given name.
+
+Two things made this worth more than a footnote. The 20 April 2022 item is a gallery post, so the
+failure cost the run a photograph lead and not just a citation, which is the run's actual job. And
+the same matcher produced the headline "zero caption hits" across all 41, so that result is
+unestablished too — a caption reading `Zach Skillman` was never going to be found by a search for
+`Zachary`. None of the 41 may be counted as checked and the backlog was not reduced by this run.
+
+The report was rewritten in 0deacf60: the false negatives replaced with what the surname searches
+show, the "backlog is closer to 170" line withdrawn, a redo of the sweep by surname added to the
+next run's list, and the second person on that surname — Jacob Skillman, distinct from Zach —
+noted so no later pass folds them together. The incidental WKU-news detail about Zachary Skillman's
+family was declined correctly on the privacy reasoning, and the detail itself was dropped from the
+report, which did not need to repeat a living person's family circumstances to record that it
+declined them.
+
+## Traps checklist
+
+No advance notice: nothing dated was added anywhere. No committee chair promoted to officer. The
+surname trap is the whole of this finding, running the other way from the usual: the failure was
+matching on a *full* name the source does not use, where the standing warning is against matching
+on a surname alone. Both halves of it are now in the report. No changed-surname duplicate. No April
+election moved. Nothing touches a settled fact. No contributor edit in the diff. The one living-
+person detail was cut. The three Talisman index negatives — Hennig in 1989, David Smith and Trent
+Lyda in 1993 — were not re-read: the 1993 volume is not on archive.org under the naming pattern
+that works elsewhere, and re-OCRing a 24 MB scan to confirm an absence that cuts nothing was not
+worth the run. They are flagged in the report as leads rather than settled absences, since the same
+flaw applies to them — an index read for `Smith, David` will not show a `Smith, Dave`.
+
+## Merged
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0. `check_duplicates.py` prints the same
+four pairs as the last several passes, all pre-existing on `main`, none introduced here, and all
+introduce-then-resolve pairs on separate dates. `site/` was regenerated to confirm the only change
+was the build date and reverted rather than committed. #518 merged in c4dd46dc; the history stays
+clean, with the merge authored by `samuelkurtzsfs` and the correction by `SGA 60`, and no tool
+named anywhere in it.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,945 search records.** Unchanged by this pass, which published no history — only a corrected
+research note.
+
+## Still open
+
+- **Redo the 41-name Herald sweep by surname.** It is the one concrete piece of work this pass
+  created, and until it is done those 41 names are unchecked rather than cleared.
+- The 1984 *Talisman* People section is still unread for Kelly S. Smith and John Holland, 1983-84,
+  flagged for a fifth pass running.
+- The 1996-97 to 2002-03 window now has a proven cause and no Talisman route at all. Wayback
+  captures of `wku.edu`'s own SGA officer pages are the untried option for Roadcap, Faught, Fite,
+  Cole, Bailey and the 1997-99 Senate lists.
+- Carried forward unchanged: the president records whose regent seat is still unstated; the
+  1983-84 spread's own article text; the `Delmer Estes` / `Delmer Esters` reading; the four
+  spellings of the at-large senate seat; the twelve year-photograph gap listed above; the pre-2003
+  half of the officer portrait gap; the 728 legislation entries whose source URL points at a
+  landing page; the 18 legislation files with no text layer; the two *Herald* items on how Joe
+  Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates
+  investigation outcome; and the pre-2000 legislation gaps.
+- The stored editor brief still needs the same edit, and this pass confirmed all of it: #6, #7 and
+  #8 have been closed since 18 August and are not stale open work; `gh` is not installed in these
+  containers, so the brief's first instruction fails and plain `git push` plus the GitHub tools are
+  what work; and the queue has been one rolling routine, not four, for a twelfth consecutive pass.
+- The token flagged for rotation eight passes ago is still flagged.
+
 # 19 September 2026 — a twelfth empty queue, and last night's cut checked against the volume itself
 
 ## What was open
