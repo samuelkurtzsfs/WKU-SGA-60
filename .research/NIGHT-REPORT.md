@@ -28209,3 +28209,122 @@ search records.** No new fact about who held office.
   reason to repeat it: the value was printed into this run's log while probing the environment. It
   reached no file and no commit, but that is one more place it exists, and it argues for rotating
   rather than carrying it.
+
+# Editor pass, 19 September (night) — one photograph PR, verified in full and merged with two counts corrected
+
+## What was open
+
+One pull request, #527 "Research: photographs", pushed to `research-photos` at 20:23 and reviewed
+about an hour later. Its branch was already current with `main` — the merge base was `801ae8f8`,
+`main`'s own tip — so none of the stale-branch reconciliation the brief describes was needed.
+
+The diff was small and, unusually for this queue, entirely internal: a run report in `.research/`
+and one appended entry in `data/photo-finds/_archive-gaps.json`. Neither path is read by `build.py`
+or `check_data.py`, and neither is rendered, so nothing in this pull request could reach the
+published site. `years.json`, `photos.json` and `data/photos/` were untouched, exactly as the run
+claimed. No portrait landed.
+
+## What was verified
+
+Eleven source claims, every external one in the diff, opened individually rather than sampled.
+
+The December 2001 capture of `cab9900.htm` reads "Photo by Sheryl Hagan-Booth" and "From L-R: Mark
+Rawlings, Jamie Sears, Leslie Bedo, Jamil Sewell, & Aaron Spencer", word for word as the entry
+quotes it, over `2001-2002 Officers/Group2.jpg`. Its second table pairs each of the five to an
+office, and those five pairings match `years.json`'s 2001-02 `organization.executive` exactly, name
+for name — Bedo president, Sears executive VP, Sewell administration, Spencer finance, Rawlings
+public relations. The corroboration the run claims is real, and it comes from the organization's
+own contemporary website.
+
+The CDX listing of `Pics/ProfilePics/` returns exactly one row, `64aa.jpg` at `20041105091947`,
+the timestamp right to the second. `e_profiles.html` carries exactly two content images, `Katie.jpg`
+and `Brittany.jpg`, and the markup around the second reads "Director of Academic and Student
+Affairs / Name: Brittany Fausey" — which is `years.json`'s 2004-05 roster exactly. The
+identification is as firm as the run says; the bytes really are absent, and the entry is right to
+flag rather than drop it.
+
+`64aa.jpg` was downloaded and looked at rather than taken on description: an uncaptioned outdoor
+group photograph by water, roughly twenty-five people, no names anywhere. Correctly declined.
+`cab.htm` has three captures across 2000-2002 and the May 2001 one does read the literal
+`<<Insert Picture Here>>`.
+
+All five *Herald* posts were read at the media level, where the captions actually live rather than
+in the article body. `/65821` names Sam Kurtz and Cole Bornefeld and nobody else; `/65850` and
+`/73655` carry generic meeting and oath descriptions; `/60866` describes the meeting; `/61104` has
+no caption at all. None of Skillman, Singh, Zaepfel or Vuleta is individually captioned in any of
+them. The run reports this as narrowing the lead and not closing it, which is the right reading and
+the right restraint — thirty-five of the forty-one names are still unchecked at the image level.
+
+The Wayback profiles page carries student e-mail addresses and a good deal of personal trivia. The
+run reproduced none of it, taking only Fausey's name and her SGA office. That is the living-people
+rule working as intended.
+
+## What I corrected
+
+Nothing was cut. Two counts, both internal arithmetic rather than a misread source, did not survive
+checking against the repository's own data.
+
+The officer backlog was written as 216. A fresh count gives 220 rows, or 211 deduplicated by
+person-year; 216 is not reachable by any method I tried. The run's own report says 220 and breaks it
+down by decade — 1960s 5, 1970s 5, 1980s 9, 1990s 37, 2000s 45, 2010s 73, 2020s 46 — which sums to
+220 and matches my count exactly. So the data file disagreed with the report filed beside it, and
+the report was right.
+
+More consequential: the entry said all sixty-one years still carry at least one photograph, without
+qualification. That is true only if leader portraits count. Eleven years still have no year-scene
+photograph of their own, and they are precisely the eleven the entry immediately above this one in
+the same file had left in the Priority 4 queue that morning. Left as written, the next photograph
+run would have read its own file and concluded the queue was closed. Rewritten to give both figures.
+
+Also fixed: the 2004-05 capture range, where the first of the five captures falls in 2003-04; and
+two *Herald* posts labelled by the date of the photograph they carry rather than the date of the
+post. The file had lost its trailing newline as well.
+
+## Merged
+
+`#527` merged as `9a954194` after the corrections were pushed to the branch. `build.py` runs clean
+on `main` and leaves `site/` byte-identical. `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same four pairs as every recent pass; this diff adds no events, so
+none is new, and all four are genuinely separate events on reading them — a bill introduced against
+the same bill failing after amendment; $900 voted for designated driver cards against the *Herald*
+reporting their distribution three months later; the Civil Liberties Union planning court action
+against Associated Students formally endorsing the suit a month on; and SGA voicing opposition to
+plus/minus grading against passing legislation on it three weeks later. No merges.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people, 98%
+of them carrying an account of what the person did. 308 documents, 1,111 legislation files, 4,945
+search records.** Unchanged in every figure: this pass published no new fact, which is the correct
+outcome for a run that found none.
+
+## Still open
+
+- Priority 4 is not closed, and now says so in its own file: 1994-95 through 1997-98, 2000-01,
+  2002-03, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10 have no scene photograph.
+- Brittany Fausey's 2004-05 portrait is identified but unrecoverable. The folder listing is complete
+  and static; re-running that CDX search will not change the answer.
+- Thirty-five of the forty-one *Herald* names are unchecked at the image level, and the six checked
+  were checked against one post each rather than the full result set.
+- The 2016-17 and 2017-18 officer gap has no *Talisman* route and now no `wku.edu`-site route.
+  `wkuherald.com` at scale is what is left.
+- Carried forward unchanged from the evening pass: the 1989 *Herald* page image; p. 238 of the 1984
+  *Talisman*; Kelly S. Smith and John Holland; the at-large senate seat spellings; the 728
+  legislation entries pointing at landing pages; the 18 files with no text layer; Joe Rains's term;
+  the `Amber Daniels` / `Amber Daniel` pair, still correctly unmerged; Mary Fyfe; the 1999-00 Coates
+  investigation outcome; and the pre-2000 legislation gaps.
+- The stored editor brief still needs the edit three passes have now asked for. It opens with
+  `gh auth setup-git` and `gh` is not installed here; it sends the editor to #6, #7 and #8 as stale
+  and open, and all three were closed on 18 August, confirmed again this pass; and it routes the
+  fallback through `SGA60_SITE` and `SGA60_RESEARCH_TOKEN`, neither of which is set in this
+  container. Nothing was lost — the GitHub API over the token serves everything the brief needs —
+  but each pass spends its opening minutes rediscovering the same three facts.
+- The token flagged for rotation is still flagged, and this pass adds the same blemish the last one
+  reported: probing the environment printed its value into this run's log. It reached no file and no
+  commit. It is still one more place the value has existed, and still an argument for rotating it.
+- A new one, found while cleaning up after this pass: the platform appends a "Generated by Claude
+  Code" line to every pull request body and every comment it posts, which `AGENT-LANDING.md` already
+  warns about for bodies and `CLAUDE.md` forbids outright. A body can be cleaned — #528's was, and
+  stayed clean. A **comment cannot**: the line is re-appended server-side on write, including on a
+  direct `PATCH` to the comments API, so the review comment on #527 carries one that three attempts
+  could not remove. Commits and the repository itself are unaffected and the published site never
+  sees it, but until the platform changes, every editor comment on a pull request will carry a line
+  the project's own rules prohibit. Worth the owner knowing it is not an oversight by the pass.
