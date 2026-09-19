@@ -1,3 +1,104 @@
+# 19 September 2026 — a twelfth empty queue, and last night's cut checked against the volume itself
+
+## What was open
+
+One pull request, #518, "Research: photographs (rolling)", the same one last night's pass
+reviewed. Nothing has been pushed to it since; the only activity on it since 21:23 yesterday is
+the Vercel deployment bot. No other pull request is open.
+
+Access was full. `gh` is still not installed, exactly as the last several reports have said, so
+the brief's opening command still cannot run; git is credentialed and
+`git push --dry-run` reported `* [new branch] HEAD -> access-probe`, and the GitHub tools
+answered normally. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` remain unset and were not needed.
+
+## Nothing to merge
+
+#518 has no net change against `main`. The branch adds the 1980-81 Thomas portrait in 4ebdf236
+and withdraws it again in e7d2aaef, then adds the night report in c1c9383d and removes it in
+c591a55b. `git diff origin/main...origin/research-photos` is empty in both directions. There is
+nothing in it to publish and nothing in it to cut.
+
+It was one commit behind `main` — the night report merged as #519 — so `main` was merged into it
+and pushed as 37abde0f, leaving the rolling branch level rather than a commit adrift. It stays
+open to go on collecting the portrait hunt.
+
+## Last night's cut, checked independently
+
+A cut costs the archive a real photograph if it is wrong, so the withdrawal was re-checked from
+the source rather than taken on the previous pass's word. The 1981 *Talisman* plain text
+(`archive.org/download/talisman1981west/talisman1981west_djvu.txt`) confirms every leg of it:
+
+- The index reads `Thomas, Deborah Lynn 356` — that page and no other.
+- The line immediately below reads `Thomas, Debra Ann`, with no page number. Debbie is the
+  ordinary diminutive of both names, so the collision the pull request ruled out is real and is
+  one line further down the index than the line it read.
+- No Debbie, Deborah or Debra Thomas appears anywhere else in the volume's text. The single hit
+  is `DEBORAH L. THOMAS, Glasgow` in the class-portrait caption block on p. 356.
+- The p. 282 Associated Student Government caption names 28 people across four rows — Patti
+  Davis, Cristy Sisk, Diane Olson, Marsha Sanner, Debbie Ray, Anne McKee, Lonnie Sears, Tammy
+  Kaufman, Bridgett Wyatt, Ricky Hardesty, Allison Boyd, Kevin Strader, Kevin Grace, James
+  Buckner, Perry Hines, Kevin Kinne, Craig Hoffer, Jeffrey Morris, Greg Zoeller, Margaret Ragan,
+  Paul Solverson, David Sturgeon, Charles Bussell, Mark Wilson, Steve Fuller, Allen Norvell,
+  Michael Alvey, Jeff Rice — and not a Thomas among them. The `Debbie Ray` in the front row is
+  the nearest thing to the name in the whole ASG photograph.
+- The second leg the previous pass called required is visible in the index itself: Alvey, Arnold,
+  Atkins, Baker, Bakker, Berry, Berryman, Boyd, Buckner, Bussell, Davis, Deom, Grace, Graham,
+  Handy, Hardesty, Hines, Hoffer, Hoots, Kaufman, Kinne, Morris, Norvell and Pruitt all carry
+  282. Deborah Lynn Thomas does not.
+
+So the only thing tying that face to the Complaint and Suggestion chairwoman was the name, and
+a second student in the same volume answered to it. The withdrawal was correct.
+
+## The four duplicate pairs, judged again rather than inherited
+
+`check_duplicates.py` prints the same four pairs it printed last night. All four are on `main`
+already and none was introduced by #518, but they were read rather than waved through:
+
+- **1997-98**, designated driver cards. 4 November 1997 is Bill 97-3-F allocating $900 of Campus
+  Improvement funds, with a first reading, a second reading of 11 November and an X on its Pass
+  line. 17 February 1998 is the *Herald* reporting the cards would go out the following day.
+  A bill and a distribution three months later are two events. The 1998 entry is also correctly
+  written down to what an advance notice proves — it says outright that the archive holds the
+  issue as a contents listing and claims nothing about the scheme beyond the headline.
+- **1991-92**, a bill introduced on 28 January 1992 and the same bill failing after amendment on
+  6 February.
+- **1971-72**, the Kentucky Civil Liberties Union planning court action on 29 February 1972 and
+  Associated Students endorsing the suit on 28 March.
+- **2003-04**, SGA voicing opposition to plus/minus grading on 25 September 2003, with a
+  questionnaire in preparation, and passing legislation against it unanimously on 16 October.
+
+Four introduce-then-resolve pairs. None should be combined.
+
+## Checks
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0, `check_duplicates.py` nothing new.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,945 search records.** Unchanged by this pass, which published nothing.
+
+## Still open
+
+- The 1984 *Talisman* People section is still unread for Kelly S. Smith and John Holland,
+  1983-84. It needs page-by-page visual reading; the OCR on that volume is too poor to search.
+- Carried forward unchanged: the president records whose regent seat is still unstated; the
+  1983-84 spread's own article text; the `Delmer Estes` / `Delmer Esters` reading; the four
+  spellings of the at-large senate seat; the twelve year-photograph gap; the pre-2003 half of the
+  officer portrait gap; the 728 legislation entries whose source URL points at a landing page; the
+  18 legislation files with no text layer; the two *Herald* items on how Joe Rains's term ended; the
+  `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and
+  the pre-2000 legislation gaps.
+- The stored editor brief still needs the same edit: #6, #7 and #8 were closed unmerged on
+  18 August and are named in it as stale and awaiting review; the `gh auth setup-git` command it
+  opens with cannot run; and it describes four routines running around the clock when twelve
+  consecutive passes have found one branch with anything on it.
+- **The token flagged for rotation eight passes ago is still flagged, and this pass put it
+  through a session log again.** An access probe written as `${GH_TOKEN:-no}` printed the token
+  itself instead of the word it was meant to print. It reached no file, commit or comment, and
+  nothing in the repository carries it, but it is in this session's log as well as the earlier
+  ones. It is a fine-grained personal access token (a `github_pat_` prefix, not a classic `ghp_` one) with push rights on this repository. Rotating it
+  on GitHub and updating the routine's environment closes all eight exposures at once.
+
 # 17 September 2026, afternoon — a photograph log merged, and an index control that read the wrong line
 
 ## What was open
