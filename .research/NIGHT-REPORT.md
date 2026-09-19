@@ -27785,3 +27785,106 @@ is left open to go on collecting the rolling hunt.
 - The stored editor brief still needs the same edit: #6, #7 and #8, the `gh` instruction, and the
   claim that four routines are running when the evidence is one.
 - The token flagged for rotation seven passes ago is still flagged.
+
+# Editor pass, 19 September — a second portrait withdrawn, this one on a middle initial
+
+## What was open
+
+One pull request, #523, the rolling photograph hunt on `research-photos`, opened this morning. Its
+merge base is the current tip of `main`, so none of the orphan-history warnings applied. The stale
+#6, #7 and #8 the stored brief still names have been closed since 18 August; the brief needs that
+edit, as the last several passes have also said. `gh` is not installed in this container, as
+`AGENT-LANDING.md` says; git push and the GitHub API both work, so this was a full pass, not a
+review-only one.
+
+## What the diff claimed
+
+Two commits, five files. One new fact: a portrait for Kelly S. Smith, treasurer 1983-84, cut from
+the junior class grid on p. 147 of the 1984 *Talisman*. Everything else was prose — a completeness
+census, three checked negatives (Holland, Pulman, Wicks), leads for the 2013-2019 volumes — plus the
+regenerated `site/`.
+
+## Spot check
+
+The whole of the new claim, since there was only one, and the census figures behind it.
+
+The Wayback capture the run worked from serves the complete 46 MB PDF, not only rendered pages, so
+the volume was read whole here, back index included. That is what decided it.
+
+The grid reading was correct and is now confirmed twice over. The Smith block lists five names in
+first-name alphabetical order against a five-wide row, and the row's direction was fixed from two
+control rows on the same page rather than assumed: Michael Sibio is the only man in the
+Shore-to-Slaughter row and sits second, and Thomas Smith, Kim Snider and Alain Solagan run man,
+woman, man in the Smith-to-Stafford row. Position three is that block's Kelly Smith, and the crop
+was position three.
+
+The person in it is not the treasurer. The volume's back index prints full middle names and reads
+"Smith, Kelly Annette 147, 268". SGA's own minutes of 30 August and 4 October 1983 give the
+treasurer as Kelly **S.** Smith, which is what `years.json` carries. Hers is the only Kelly Smith in
+the index, so this is not a case of choosing wrongly between two. Her second page, 268, is Psi Chi,
+the psychology honour society. Associated Student Government is indexed at 49 and 238 and she is on
+neither: p. 238 carries two ASG group photographs captioned with every member named, including
+president Jack Smith, secretary Teresa Anthony, administrative vice president Tony Whalen and public
+affairs vice president Happy Chandler — four of the five officers this archive already records for
+that year — and no Kelly Smith in either.
+
+The argument recorded beside it was wrong on its own terms as well. The `src` label told readers she
+was "the only clearly female face among four men's". The row carries two women; the index gives
+position four as "Smith, Shawn Jeannine 147". A sex check cannot separate positions three and four
+on that page, and it was published as though it could.
+
+Withdrawn in 1c12032, entry and image together, with the reasoning kept in §8 and on the pull
+request so a later pass can act on it rather than rediscover it.
+
+Checked and upheld: zero of 73 leaders without a portrait, and exactly 216 of 950 officer slots
+without one — both figures correct to the number. John Holland's absence is correct and was
+understated: the index carries no Holland at all, running straight from "Holcomb, Pamela Gaye 238"
+to "Hollenbeck, Frank 219". He is missing from the whole volume, not just its two class sections.
+That stronger reading is now recorded. Pulman, Wicks and the 2013-2019 leads were not re-checked
+and give no reason for doubt.
+
+## Traps checklist
+
+No advance notice: nothing dated was added. No committee chair promoted to officer. The surname trap
+is again the whole of this finding, and again one step past the usual: the match was on full given
+name and surname and was still insufficient, because the middle initial contradicted it. That is the
+second pass running to withdraw a portrait resting on a name, and the fix is the same both times —
+read the back index, which prints middle names and every page a person appears on, before writing
+the entry. It is already this archive's documented standard; the Howie Pincus entry cites it
+outright. No changed-surname duplicate. No April election moved. Nothing touches a settled fact. No
+living person's detail beyond a cited source. No contributor edit in the diff.
+
+`check_duplicates.py` reports the same four pairs as the last several passes, all pre-existing on
+`main`, none introduced here, all weeks apart and all genuinely distinct events.
+
+## Not merged
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0, `check_duplicates.py` nothing new. The
+run failed its spot check on the one claim it made, so the branch was not merged. The correction is
+pushed and the branch now stands level with `main` in substance, carrying the three negatives, the
+census and a new lead; it is left open for the owner's call and to go on collecting.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people, 98%
+of them carrying an account of what the person did. 308 documents, 1,111 legislation files, 4,945
+search records.** Unchanged by this pass, which published nothing.
+
+## Still open
+
+- p. 238 of the 1984 *Talisman* is the best untouched seam for 1983-84 officer portraits: two
+  captioned ASG group photographs naming thirty-three people between them, president Jack Smith
+  among them. Logged in §8 with both rosters.
+- Kelly S. Smith, treasurer 1983-84, has no portrait and, on this volume's evidence, is not in it.
+  A different source is needed; do not re-propose the p. 147 frame.
+- John Holland, 1983-84, is closed negative for the 1984 volume and needs no further searching there.
+- Carried forward unchanged: the president records whose regent seat is still unstated; the
+  1983-84 spread's own article text; the `Delmer Estes` / `Delmer Esters` reading, which p. 238's
+  caption bears on and which someone should now settle; the four spellings of the at-large senate
+  seat; the twelve year-photograph gap; the pre-2003 half of the officer portrait gap; the 728
+  legislation entries whose source URL points at a landing page; the 18 legislation files with no
+  text layer; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` /
+  `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000
+  legislation gaps.
+- The stored editor brief still needs the same edit, now asked for across several passes: #6, #7 and
+  #8 are long closed, `gh` is not installed and the brief should point at git push and the GitHub
+  API instead, and it claims four routines are running where the evidence remains one.
+- The token flagged for rotation eight passes ago is still flagged.
