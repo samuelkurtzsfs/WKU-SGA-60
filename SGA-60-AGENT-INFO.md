@@ -6092,7 +6092,7 @@ first Talisman-composite ASG photo this project has found for 1983-84 specifical
 the individual senior/junior/class portraits every existing 1983-84 leader photo was sourced from.
 First photo, 15 people: Front Row: Donna Holloway, Kathy Rohleder, Cindy Stine, Teresa Anthony.
 Second row: Lorri Burchett, Alex Bell, Jeff Felty, Bob Shults, Stanly Reagan. Back row: Johnny
-Ragan, Sean Peck, Jack Smith, Tony Vick, Delmer Estes, Anthony Rhea. Second photo, 18 people: Front
+Ragan, Sean Peck, Jack Smith, Tony Vick, Delmer Esters, Anthony Rhea. Second photo, 18 people: Front
 row: Jane Reid, Sheila Wassinger, Kimberly Houk, Aimee Bryan, Suzanne Deputy. Second row: Jessica
 Rappaport, Mitchell McKinney, Sandra Hill, Leisa Ferguson, Tony Whalen, Happy Chandler. Back row:
 Allan Kujala, Chris Watkins, Traci Turner, Claire Groemling, Danny Broderick, Brian Maddox, Michael
@@ -6145,8 +6145,12 @@ visible text — and corrected the caption's "side by side" to "one above the ot
 the new image are 15 and 18, matching the two rosters exactly. The transcription itself checked out
 name for name against the printed captions, with one exception: the last name in the first photo's
 back row is not resolvable at this scan's resolution (rendering at 1200 dpi only upsamples the same
-scan pixels) and may read Estes or Esters; flagged in the caption rather than silently settled, per
-CLAUDE.md's rule to flag spelling doubts. The citation checked out too — `dlsc_ua_records/408`'s
+scan pixels). It was flagged in the caption rather than silently settled, per CLAUDE.md's rule to
+flag spelling doubts, and was settled at editorial review on 19 September 2026 on positive
+evidence rather than on the letters: the volume's back index reads "Esters, Delmer Lenard 157,
+238, 255, 276" and so puts him on this very page, while the only two Estes entries in that index,
+"Estes, Deborah Jo 245" and "Estes, Ronald Henry 178", are indexed nowhere near it. The reading
+is **Esters**. The citation checked out too — `dlsc_ua_records/408`'s
 own landing page returns `article=1408` and names the 1984 Talisman, *Touch of Red*, and the
 printed page number 238 is visible on the spread.
 
@@ -6223,7 +6227,7 @@ closed negative and holds; the Treasurer half was proposed, reviewed and withdra
   he did not sit for a photograph in either class that year. This is now a checked negative, not an
   unsearched one. Confirmed a second way at editorial review, 19 September 2026, and more strongly:
   the volume's back personal-name index carries **no Holland at all**, running straight from
-  "Holcomb, Pamela Gaye 238" to "Hollenbeck, Frank 219", where Holland would sort between them. He
+  "Holcomb, Pamela Gaye 238" to "Hollenbeck, Frank 215", where Holland would sort between them. He
   is absent from the whole 1984 volume, not only from its class sections.
 - **A Kelly Smith portrait was proposed from the Junior section and has been withdrawn on review,
   19 September 2026. Do not add it again without new evidence.** The grid reading itself was
@@ -6247,7 +6251,7 @@ closed negative and holds; the Treasurer half was proposed, reviewed and withdra
   Associated Student Government group photographs, both captioned with every member named. The first
   reads "Front Row: Donna Holloway, Kathy Rohleder, Cindy Strine, Teresa Anthony. Second row: Lorri
   Burchett, Alex Bell, Jeff Felty, Bob Shults, Stanly Reagan. Back row: Johnny Regan, Sean Peck, Jack
-  Smith, Tony Vick, Delmar Estes, Anthony Rhea." The second names Jane Reid, Sheila Wassinger, Kimberly
+  Smith, Tony Vick, Delmer Esters, Anthony Rhea." The second names Jane Reid, Sheila Wassinger, Kimberly
   Houk, Aimee Bryan, Suzanne Deputy, Jessica Rappaport, Mitchell McKinney, Sandra Hill, Lesa Ferguson,
   Tony Whalen, Happy Chandler, Allan Kujala, Chris Watkins, Traci Turner, Claire Groening, Danny
   Broderick, Brian Maddox and Michael Tolbert. President Jack Smith, secretary Teresa Anthony,

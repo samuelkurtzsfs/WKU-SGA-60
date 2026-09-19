@@ -27839,7 +27839,7 @@ request so a later pass can act on it rather than rediscover it.
 Checked and upheld: zero of 73 leaders without a portrait, and exactly 216 of 950 officer slots
 without one — both figures correct to the number. John Holland's absence is correct and was
 understated: the index carries no Holland at all, running straight from "Holcomb, Pamela Gaye 238"
-to "Hollenbeck, Frank 219". He is missing from the whole volume, not just its two class sections.
+to "Hollenbeck, Frank 215". He is missing from the whole volume, not just its two class sections.
 That stronger reading is now recorded. Pulman, Wicks and the 2013-2019 leads were not re-checked
 and give no reason for doubt.
 
@@ -27877,8 +27877,7 @@ search records.** Unchanged by this pass, which published nothing.
   A different source is needed; do not re-propose the p. 147 frame.
 - John Holland, 1983-84, is closed negative for the 1984 volume and needs no further searching there.
 - Carried forward unchanged: the president records whose regent seat is still unstated; the
-  1983-84 spread's own article text; the `Delmer Estes` / `Delmer Esters` reading, which p. 238's
-  caption bears on and which someone should now settle; the four spellings of the at-large senate
+  1983-84 spread's own article text; the four spellings of the at-large senate
   seat; the twelve year-photograph gap; the pre-2003 half of the officer portrait gap; the 728
   legislation entries whose source URL points at a landing page; the 18 legislation files with no
   text layer; the two *Herald* items on how Joe Rains's term ended; the `Amber Daniels` /
@@ -27888,3 +27887,103 @@ search records.** Unchanged by this pass, which published nothing.
   #8 are long closed, `gh` is not installed and the brief should point at git push and the GitHub
   API instead, and it claims four routines are running where the evidence remains one.
 - The token flagged for rotation eight passes ago is still flagged.
+
+# Editor pass, 19 September (later) — the withdrawal upheld, two transcriptions corrected, a spelling settled
+
+## What was open
+
+The same single pull request, #523 on `research-photos`, left open by the earlier pass of this
+date with its one proposed portrait already withdrawn. Merge base is the tip of `main`, so no
+orphan-history warning applied. `gh` is not installed in this container, as `AGENT-LANDING.md`
+says; git push and the GitHub API both work, so this was a full pass.
+
+## What the diff claimed by the time I saw it
+
+No data change at all. `data/` is byte-identical to `main`: the portrait proposed at 4d2e01a was
+withdrawn at 1c12032, and what remains is prose — the completeness census, three checked negatives
+(Holland, Pulman, Wicks), the p. 238 lead — plus a regenerated `site/` whose only change is the
+build and citation date moving from 18 to 19 September. Nothing in the branch reaches a reader as
+a fact about the history.
+
+## Spot check
+
+Because the branch makes no data claim, the claims worth checking are the prose ones a later run
+is told to act on. Ten were checked against the volume itself, not against the earlier pass's
+account of it. The Wayback capture the run used serves the whole 46 MB file; its scan is about
+96 dpi across a two-page spread, which is why the OCR is unusable and why the earlier pass was
+right to read pages rather than search text.
+
+Upheld, every one:
+
+- "Smith, Kelly Annette 147, 268" is the index's exact wording, and the Smith run goes Jerry Lee,
+  Kelly Annette, Linda Jean — one Kelly Smith in the volume, not two.
+- "Smith, Shawn Jeannine 147" is exact, so the Smith block on p. 147 does carry a second woman and
+  the withdrawn entry's sex argument could not have separated positions three and four.
+- p. 268 is Psi Chi, its caption naming a Kelly Smith among psychology students, which is what
+  the index's second page number points at.
+- No Holland anywhere in the index: it runs Holcomb straight into Hollenbeck.
+- p. 238 carries two captioned Associated Student Government photographs, 15 and 18 people, 33
+  between them, and the first caption's roster matches name for name.
+- "Smith, Jack Daniel 118, 238, 276" puts the president on the ASG page, and the index entry
+  "Associated Student Government 49, 238" is exact.
+- The census holds to the number: 73 leaders and student regents, none without a portrait; 950
+  recorded officer slots, 216 of them held by people with no portrait anywhere in the archive;
+  12 years with no year-level photograph, the same twelve.
+
+The withdrawal was therefore right, and right for the reason given. Pulman and Wicks were not
+re-checked this pass either and give no reason for doubt; they are negatives, and they stay
+labelled as one pass's reading, not two.
+
+## What I corrected
+
+Two transcription errors, both in prose the branch adds, both fixed on the branch rather than cut:
+
+- The index reads "Hollenbeck, Frank **215**", not 219. The number was quoted as evidence in both
+  the night report and §8, and a figure offered as evidence has to be the figure.
+- §8's new paragraph quoted the p. 238 caption as giving "Delmar Estes" — a third spelling, wrong
+  in both halves, presented inside quotation marks as a verbatim reading. Corrected to
+  **Delmer Esters**.
+
+## A question closed while checking one
+
+The `Delmer Estes` / `Delmer Esters` reading has been carried as open for several passes, flagged
+in the caption rather than guessed at, because the scan will not resolve the letters however far
+it is magnified. It does not have to. The volume's back index reads "Esters, Delmer Lenard 157,
+238, 255, 276" and so puts him on p. 238, the ASG page; the only two Estes in that index, Deborah
+Jo at 245 and Ronald Henry at 178, are indexed nowhere near it. That is the same instrument that
+decided the Kelly Smith question three paragraphs earlier, used the same way, and it settles this
+one positively rather than by preference. The reading is Esters. `data/photos.json` now says so
+and says why, in place of the sentence recording the doubt, and §8's flag records it as settled.
+
+## Merged
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0. `check_duplicates.py` reports the same
+four pairs as the last several passes and exits 1 as it always does when it has pairs to show;
+all four are pre-existing on `main`, none introduced here, and all four are genuinely separate
+events weeks apart — a bill introduced and the same bill failing after amendment are two events,
+not one. Merged to `main`.
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,945 search records.** The counts are unchanged: this pass published one corrected caption and
+no new fact about who held office.
+
+## Still open
+
+- p. 238 of the 1984 *Talisman* remains the best untouched seam for 1983-84 officer portraits, and
+  is now doubly worth taking: its article text, still unread, carries ASG's own account of the
+  year — a beer poll on on-campus liquor, co-ed housing, a stoplight at University and Normal, a
+  grade-scale bill that failed. Both rosters are logged in §8.
+- Kelly S. Smith, treasurer 1983-84, has no portrait and is not in this volume. Do not re-propose
+  the p. 147 frame.
+- John Holland, 1983-84, is closed negative for the whole 1984 volume, index included.
+- Carried forward unchanged: the president records whose regent seat is still unstated; the four
+  spellings of the at-large senate seat; the twelve year-photograph gap; the pre-2003 half of the
+  officer portrait gap; the 728 legislation entries whose source URL points at a landing page; the
+  18 legislation files with no text layer; the two *Herald* items on how Joe Rains's term ended;
+  the `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome;
+  and the pre-2000 legislation gaps.
+- The stored editor brief still needs its edit: #6, #7 and #8 are long closed, `gh` is not
+  installed and the brief should point at git push and the GitHub API, and it claims four routines
+  are running where the evidence remains one.
+- The token flagged for rotation nine passes ago is still flagged.
