@@ -6183,6 +6183,71 @@ each are recorded above so a future run does not have to rediscover them by CDX 
 `build.py` and `check_data.py` both pass clean with the one new photo added. Landed on
 `research-photos`.
 
+**A 19 September run (photograph agent, scheduled), priorities 1-2 already clear, priority 3
+closed the 1983-84 Holland/Smith lead.** Checked before anything else: all four presidents named
+in the routine's own stored prompt (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) already
+carry a portrait, and a full sweep of every `leaders` entry in `data/years.json` against
+`data/photos.json` found **zero** presidents or student regents without one — priorities 1 and 2 in
+CLAUDE.md's own order are both fully clear, not just for the four named people.
+
+Priority 3, cabinet and Senate officers, is a much bigger gap: **216 of 950 recorded officer slots
+have no portrait**, concentrated in the 2010s-2020s (119) and 1990s-2000s (80), mostly rank-and-file
+senators. The archive.org-covered Talisman years (1971-1981, 1986, 1987) contribute only 8 of the
+216 and every one of those 8 had already been individually checked and declined by the 18 September
+run (PR #518) — David Bass, David Young, Mark Chesnut, Alan Jackson, Steve Wilson, Chris Millay,
+Dwight Austin — except Vern Pulman and Alice Wicks, checked fresh this run: Pulman does not appear
+in the 1975 Talisman's index at all, and Wicks is indexed in the 1979 Talisman with no page number
+(`Wicks, Alice Elizabeth` printed with a blank space where every photographed classmate's page
+number sits), meaning neither sat for a class portrait. That closes the archive.org route for now;
+every other candidate needs digitalcommons.
+
+`viewcontent.cgi` was Cloudflare-challenged for the whole session on direct requests — four attempts
+spaced 60-100 seconds apart against two different leads (the 2017 *Talisman: Well Being*, article
+9670, aimed at the large 2016-17 officer gap; and the WKU Archives SGA-photographs finding aid,
+article 1619 under `dlsc_ua_fin_aid`, still never opened by any run) all came back the same 403
+challenge page. Landing pages stayed open throughout, matching every prior run's finding that the
+block is specific to the PDF endpoint.
+
+**But the Wayback Machine route worked this session**, unlike several prior runs that found it
+connection-reset — confirming again that its availability really does vary run to run and is worth
+testing fresh rather than assuming closed. Used it to open the 1984 Talisman capture a previous run
+had already logged but not used (`article=1408`, capture `20230815062824`, `dlsc_ua_records/408`)
+and finally closed out the standing 1983-84 Treasurer/PR VP lead left open since PR #518:
+
+- **John Holland is confirmed absent from both the Senior and Junior class portraits.** His name
+  sits, alphabetically, between Hoffman and Holliday in the Senior section and between Hofsass and
+  Hollowell in the Junior section — checked by rendering both pages and reading the printed name
+  blocks directly, since this volume's OCR is too poor for keyword search (confirmed again this
+  run). Both times the row simply skips from the name before his to the name after with no gap, so
+  he did not sit for a photograph in either class that year. This is now a checked negative, not an
+  unsearched one.
+- **Kelly S. Smith did have one, in the Junior section** — the 1983-84 Talisman photographed her as
+  a junior, not a senior, which is why the Senior-section-only search in PR #518 missed her. The
+  Smith block on that page reads "Derrick Smith, White House, Tenn. / Gary Smith, Philpot / Kelly
+  Smith, Owensboro / Shawn Smith, Versailles / Stephen Smith, Evansville, Ind." — five names in
+  strict first-name alphabetical order, fixing her as the third (middle) portrait, and she is the
+  only clearly female face among four men's, matching the "she" the archive's existing profile
+  already uses for her (drawn from SGA's own 30 August 1983 minutes). Added to `data/photos.json`
+  and `data/photos/1983-84-kelly-smith.jpg`. This is the first new officer portrait since PR #513
+  closed the direct 1984-Talisman route as unreachable; the fix was the class, not the source.
+
+**For whoever picks up the officer backlog next:** the 2010s-2020s Talisman years (2013-2019) are
+real and on TopSCHOLAR — `digitalcommons.wku.edu/dlsc_ua_yearbooks/` lists 2013 through 2019 as a
+run of magazine-style volumes (*Identity*, *Power*, *Well Being*, *Grit*, *Balance*, *Paradise* and
+others), 17-150 MB each, structurally different from the older single annual yearbook and never
+tried via Wayback specifically (only `viewcontent.cgi` direct, which failed this run). Given the
+Wayback route just worked for a 1984 article number a prior run had logged but never used, it is
+worth logging capture timestamps for these 2013-2019 article numbers on the next open window rather
+than only retrying `viewcontent.cgi` — the landing-page article numbers for 2016-17/2017-18, the
+densest years in the missing-officer list, are `9666`/`9667` (2016), `9669`/`9670` (2017), `9671`
+(2018 *Grit*), all under `context=dlsc_ua_records`. No year-level photograph work was attempted this
+run (priority 4 in the routine's own order); the 12 years still without one are unchanged from
+§8.4's list: 1993-94, 1994-95, 1995-96, 1996-97, 1997-98, 2000-01, 2002-03, 2003-04, 2005-06,
+2006-07, 2008-09, 2009-10.
+
+`build.py` and `check_data.py` both pass clean with the one new photo added. Landed on
+`research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
