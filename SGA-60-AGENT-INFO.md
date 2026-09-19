@@ -6092,7 +6092,7 @@ first Talisman-composite ASG photo this project has found for 1983-84 specifical
 the individual senior/junior/class portraits every existing 1983-84 leader photo was sourced from.
 First photo, 15 people: Front Row: Donna Holloway, Kathy Rohleder, Cindy Stine, Teresa Anthony.
 Second row: Lorri Burchett, Alex Bell, Jeff Felty, Bob Shults, Stanly Reagan. Back row: Johnny
-Ragan, Sean Peck, Jack Smith, Tony Vick, Delmer Estes, Anthony Rhea. Second photo, 18 people: Front
+Ragan, Sean Peck, Jack Smith, Tony Vick, Delmer Esters, Anthony Rhea. Second photo, 18 people: Front
 row: Jane Reid, Sheila Wassinger, Kimberly Houk, Aimee Bryan, Suzanne Deputy. Second row: Jessica
 Rappaport, Mitchell McKinney, Sandra Hill, Leisa Ferguson, Tony Whalen, Happy Chandler. Back row:
 Allan Kujala, Chris Watkins, Traci Turner, Claire Groemling, Danny Broderick, Brian Maddox, Michael
@@ -6145,8 +6145,12 @@ visible text — and corrected the caption's "side by side" to "one above the ot
 the new image are 15 and 18, matching the two rosters exactly. The transcription itself checked out
 name for name against the printed captions, with one exception: the last name in the first photo's
 back row is not resolvable at this scan's resolution (rendering at 1200 dpi only upsamples the same
-scan pixels) and may read Estes or Esters; flagged in the caption rather than silently settled, per
-CLAUDE.md's rule to flag spelling doubts. The citation checked out too — `dlsc_ua_records/408`'s
+scan pixels). It was flagged in the caption rather than silently settled, per CLAUDE.md's rule to
+flag spelling doubts, and was settled at editorial review on 19 September 2026 on positive
+evidence rather than on the letters: the volume's back index reads "Esters, Delmer Lenard 157,
+238, 255, 276" and so puts him on this very page, while the only two Estes entries in that index,
+"Estes, Deborah Jo 245" and "Estes, Ronald Henry 178", are indexed nowhere near it. The reading
+is **Esters**. The citation checked out too — `dlsc_ua_records/408`'s
 own landing page returns `article=1408` and names the 1984 Talisman, *Touch of Red*, and the
 printed page number 238 is visible on the spread.
 
@@ -6181,6 +6185,99 @@ each are recorded above so a future run does not have to rediscover them by CDX 
 237 MB.
 
 `build.py` and `check_data.py` both pass clean with the one new photo added. Landed on
+`research-photos`.
+
+**A 19 September run (photograph agent, scheduled), priorities 1-2 already clear, priority 3
+closed the 1983-84 Holland/Smith lead.** Checked before anything else: all four presidents named
+in the routine's own stored prompt (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) already
+carry a portrait, and a full sweep of every `leaders` entry in `data/years.json` against
+`data/photos.json` found **zero** presidents or student regents without one — priorities 1 and 2 in
+CLAUDE.md's own order are both fully clear, not just for the four named people.
+
+Priority 3, cabinet and Senate officers, is a much bigger gap: **216 of 950 recorded officer slots
+have no portrait**, concentrated in the 2010s-2020s (119) and 1990s-2000s (80), mostly rank-and-file
+senators. The archive.org-covered Talisman years (1971-1981, 1986, 1987) contribute only 8 of the
+216 and every one of those 8 had already been individually checked and declined by the 18 September
+run (PR #518) — David Bass, David Young, Mark Chesnut, Alan Jackson, Steve Wilson, Chris Millay,
+Dwight Austin — except Vern Pulman and Alice Wicks, checked fresh this run: Pulman does not appear
+in the 1975 Talisman's index at all, and Wicks is indexed in the 1979 Talisman with no page number
+(`Wicks, Alice Elizabeth` printed with a blank space where every photographed classmate's page
+number sits), meaning neither sat for a class portrait. That closes the archive.org route for now;
+every other candidate needs digitalcommons.
+
+`viewcontent.cgi` was Cloudflare-challenged for the whole session on direct requests — four attempts
+spaced 60-100 seconds apart against two different leads (the 2017 *Talisman: Well Being*, article
+9670, aimed at the large 2016-17 officer gap; and the WKU Archives SGA-photographs finding aid,
+article 1619 under `dlsc_ua_fin_aid`, still never opened by any run) all came back the same 403
+challenge page. Landing pages stayed open throughout, matching every prior run's finding that the
+block is specific to the PDF endpoint.
+
+**But the Wayback Machine route worked this session**, unlike several prior runs that found it
+connection-reset — confirming again that its availability really does vary run to run and is worth
+testing fresh rather than assuming closed. Used it to open the 1984 Talisman capture a previous run
+had already logged but not used (`article=1408`, capture `20230815062824`, `dlsc_ua_records/408`)
+and reopened the standing 1983-84 Treasurer/PR VP lead left open since PR #518. The PR VP half
+closed negative and holds; the Treasurer half was proposed, reviewed and withdrawn:
+
+- **John Holland is confirmed absent from both the Senior and Junior class portraits.** His name
+  sits, alphabetically, between Hoffman and Holliday in the Senior section and between Hofsass and
+  Hollowell in the Junior section — checked by rendering both pages and reading the printed name
+  blocks directly, since this volume's OCR is too poor for keyword search (confirmed again this
+  run). Both times the row simply skips from the name before his to the name after with no gap, so
+  he did not sit for a photograph in either class that year. This is now a checked negative, not an
+  unsearched one. Confirmed a second way at editorial review, 19 September 2026, and more strongly:
+  the volume's back personal-name index carries **no Holland at all**, running straight from
+  "Holcomb, Pamela Gaye 238" to "Hollenbeck, Frank 215", where Holland would sort between them. He
+  is absent from the whole 1984 volume, not only from its class sections.
+- **A Kelly Smith portrait was proposed from the Junior section and has been withdrawn on review,
+  19 September 2026. Do not add it again without new evidence.** The grid reading itself was
+  sound and was confirmed independently at review: the Smith block on p. 147 lists five names in
+  first-name alphabetical order against a five-wide row, and the row's direction was fixed twice
+  over from control rows on the same page — Michael Sibio is the only man in the Shore-to-Slaughter
+  row and sits second, and Thomas Smith, Kim Snider and Alain Solagan run man, woman, man in the
+  Smith-to-Stafford row. Position three really is the Kelly Smith of that block.
+- **The person in it is not the Treasurer.** The volume's back index, which prints full middle
+  names, reads "Smith, Kelly Annette 147, 268" — middle initial A, against the Kelly **S.** Smith
+  that SGA's own minutes of 30 August and 4 October 1983 give for the Treasurer. Hers is the only
+  Kelly Smith in the whole index, so there is no second entry to fall back on. Her other page, 268,
+  is **Psi Chi**, the psychology honour society, not student government; the caption there reads
+  "Front row: Ruth Miller, Lori Rose, Kelly Smith, Tina Thomas, Melinda Overstreet." The identification
+  was a match on given name and surname alone, which is what the hard rule in CLAUDE.md forbids, and
+  the middle initial is positive evidence against it rather than merely absent evidence for it.
+- The supporting argument recorded with it was also wrong on its face: the Smith row carries **two**
+  women, not one. The index gives position four as "Smith, Shawn Jeannine 147". A sex check cannot
+  separate positions three and four here, so it should not have been offered as corroboration.
+- **A lead this turned up, for whoever takes 1983-84 next:** p. 238 of the same volume carries two
+  Associated Student Government group photographs, both captioned with every member named. The first
+  reads "Front Row: Donna Holloway, Kathy Rohleder, Cindy Strine, Teresa Anthony. Second row: Lorri
+  Burchett, Alex Bell, Jeff Felty, Bob Shults, Stanly Reagan. Back row: Johnny Regan, Sean Peck, Jack
+  Smith, Tony Vick, Delmer Esters, Anthony Rhea." The second names Jane Reid, Sheila Wassinger, Kimberly
+  Houk, Aimee Bryan, Suzanne Deputy, Jessica Rappaport, Mitchell McKinney, Sandra Hill, Lesa Ferguson,
+  Tony Whalen, Happy Chandler, Allan Kujala, Chris Watkins, Traci Turner, Claire Groening, Danny
+  Broderick, Brian Maddox and Michael Tolbert. President Jack Smith, secretary Teresa Anthony,
+  administrative vice president Tony Whalen and public affairs vice president Happy Chandler are all
+  there and identifiable; **no Kelly Smith is in either photograph**, which is a further reason the
+  class-portrait match should not have been made. These are captioned group photographs, so portraits
+  cut from them are identifiable on the archive's usual terms — the richest untouched seam for
+  1983-84 officers.
+
+**For whoever picks up the officer backlog next:** the 2010s-2020s Talisman years (2013-2019) are
+real and on TopSCHOLAR — `digitalcommons.wku.edu/dlsc_ua_yearbooks/` lists 2013 through 2019 as a
+run of magazine-style volumes (*Identity*, *Power*, *Well Being*, *Grit*, *Balance*, *Paradise* and
+others), 17-150 MB each, structurally different from the older single annual yearbook and never
+tried via Wayback specifically (only `viewcontent.cgi` direct, which failed this run). Given the
+Wayback route just worked for a 1984 article number a prior run had logged but never used, it is
+worth logging capture timestamps for these 2013-2019 article numbers on the next open window rather
+than only retrying `viewcontent.cgi` — the landing-page article numbers for 2016-17/2017-18, the
+densest years in the missing-officer list, are `9666`/`9667` (2016), `9669`/`9670` (2017), `9671`
+(2018 *Grit*), all under `context=dlsc_ua_records`. No year-level photograph work was attempted this
+run (priority 4 in the routine's own order); the 12 years still without one are unchanged from
+§8.4's list: 1993-94, 1994-95, 1995-96, 1996-97, 1997-98, 2000-01, 2002-03, 2003-04, 2005-06,
+2006-07, 2008-09, 2009-10.
+
+`build.py` and `check_data.py` pass clean. The one photograph this run proposed was withdrawn at
+editorial review before it reached `main`, so the run's standing result is three checked negatives
+(Holland, Pulman, Wicks), the completeness census above, and the p. 238 lead. Landed on
 `research-photos`.
 
 ## 9. Restarting a session
