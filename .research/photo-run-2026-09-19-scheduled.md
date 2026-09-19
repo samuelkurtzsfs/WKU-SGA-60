@@ -1,4 +1,7 @@
-# Photograph run, 19 September (scheduled) — nothing added, three negative searches worth recording
+# Photograph run, 19 September (scheduled) — nothing added, the Talisman mapping worth keeping
+
+> Edited in editorial review on 19 September. The Talisman collection work below was checked and
+> holds. The Herald sweep's negatives did not: see the correction in that section.
 
 ## Starting state, re-confirmed
 
@@ -96,13 +99,40 @@ Caleb Collins, Trevor Clark, Juan Tomas, Barrett Gibbs, Reed Hensley, Brooke Mit
 Maiah Cisco, Connor Ferguson, Joel Hornback, Miles Harvey, Zoe Martin, Tyreesha Morris, Nolan
 Rongey, James Cecil, Abi Canter, Caroline Simpson, Cassidy Townsend, Tribhuwan Singh.
 
-Zero caption hits. Five of the 41 (Skillman, Zaepfel, Vuleta, Gunnar Robinson, Singh) return zero
-Herald search results at all — not just no photo, no article mentioning them by name anything the
-Herald's own search can find. Spot-checked one incidental lead this turned up anyway: a WKU-news
-search result described Zachary Skillman in a February 2022 feature about attending college
-alongside his brother — unconnected to his SGA committee-chair role, so per the same privacy
-reasoning the 18 September report applied to Cody Cox and Mark Clark, this would not be usable
-even if pulled up directly. Did not chase it further.
+Zero caption hits.
+
+**Corrected in editorial review, 19 September. The sweep searched the full name, and the Herald
+does not print these people under their full names, so the negatives it returned are not
+negatives.** The paragraph that stood here reported that five of the 41 — Skillman, Zaepfel,
+Vuleta, Gunnar Robinson and Singh — returned no Herald search results at all, and that nothing
+the Herald's own search can find mentioned them by name. That is wrong for four of the five.
+Searching the surname alone, and reading the name forms out of each article body:
+
+- **Zach Skillman**, not Zachary. `"Zachary Skillman"` returns nothing; `Skillman` returns five
+  posts, three of them SGA coverage naming him — swearing-in of 15 September 2021
+  (wkuherald.com/60866/), goals of the new members, 23 September 2021 (wkuherald.com/61104/),
+  and the scholarship and planetarium allocations of 20 April 2022 (wkuherald.com/65850/).
+  A second, distinct **Jacob Skillman** appears in the same articles: two people, not one.
+- **Makism Zaepfel** — that is the Herald's own spelling, beside `Maksim` in this archive; flagged,
+  not reconciled. Named in the SGA election results gallery of 20 April 2022
+  (wkuherald.com/65821/).
+- **Daniel Vuleta**, not Danny. Three posts, including SGA approving four bills, 9 November 2023
+  (wkuherald.com/73655/), and the same 20 April 2022 election gallery.
+- **Trib Singh**, not Tribhuwan. Named in both the 15 September 2021 swearing-in and the
+  23 September 2021 goals piece.
+- **Gunnar Robinson** is the one that stands. The surname returns twenty posts and not one of
+  them carries that given name.
+
+The 20 April 2022 item is a **gallery** post, so the method's failure cost this run a photograph
+lead and not only a citation. Treat "zero caption hits" across all 41 as unestablished on the same
+grounds: a caption reading `Zach Skillman` would have been missed by a matcher hunting `Zachary`.
+The sweep is worth redoing by surname, reading the given-name forms out of the body, before any
+of these 41 is recorded as checked.
+
+An incidental WKU-news result about Zachary Skillman's family was declined as unconnected to his
+SGA service, per the privacy reasoning the 18 September report applied to Cody Cox and Mark Clark.
+That judgement was right and stands; the detail itself has been left out of this report, which did
+not need to repeat it.
 
 ## Nothing added
 
@@ -125,6 +155,14 @@ rebuild to reflect). No commit was needed for the data side; this report is the 
   status as every report this week, flagged again rather than reattempted at real cost for a
   fourth time.
 - 39 more 1990s-2020s cabinet/Senate names remain entirely unchecked against the Talisman-gap-era
-  or newer-era sources; this run's 41-name Herald sweep and two Talisman-index checks did not
-  overlap with most of the 34+183 total, so the backlog's true size is closer to 170+ after
-  today's negatives are subtracted out as "checked, not just missing."
+  or newer-era sources.
+- **Redo the 41-name Herald sweep by surname.** The full-name matching this run used is what
+  produced its four false negatives, so none of the 41 may be counted as checked and the backlog
+  has not been reduced by this run at all. Read the given-name form out of each article body
+  rather than searching for the one this archive holds, and watch for a second person sharing the
+  surname, as Jacob Skillman does with Zach.
+- The three Talisman index negatives above — Hennig in 1989, David Smith and Trent Lyda in 1993 —
+  were not re-read in the 19 September editorial review, and the same caution now applies to them:
+  an index read for `Smith, David` will not show a `Smith, Dave`, and a person indexed under a
+  diminutive is invisible to a check hunting the formal name. They cut nothing and nothing rests
+  on them, but they are leads rather than settled absences.
