@@ -11,7 +11,11 @@ Re-checked the four standing priorities fresh:
 - **Priorities 1 and 2 (presidents and regents): still fully satisfied.** All four named presidents
   (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) and every other `leaders` entry with
   `role: "president"` or `role: "regent"` has a portrait.
-- **Priority 4: still satisfied at the minimum bar.** Every year has at least one photograph.
+- **Priority 4: NOT closed.** Every year carries at least one photograph once leader portraits are
+  counted, but eleven years still have no year-scene photograph of their own — 1994-95 through
+  1997-98, 2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09, 2009-10. That is the same eleven
+  the earlier run the same day left in the queue. (Corrected on editorial review; this line first
+  read "still satisfied at the minimum bar", which would have told the next run the queue was done.)
 - **Priority 3, computed fresh rather than trusted from an earlier count**: 220 executive/Senate rows
   across `organization.executive` and `organization.senate.officers` have no matching entry in
   `photos.json`'s `leaders` list. By decade: 1960s 5, 1970s 5, 1980s 9, 1990s 37, 2000s 45, 2010s 73,
@@ -35,7 +39,8 @@ public relations. All five already carry a portrait from another source, so this
 but it is an independent confirmation of five identifications already on file, from the organization's
 own contemporary website.
 
-**`e_profiles.html`** (five captures, all inside the 2004-05 academic year) is the Executive Officers'
+**`e_profiles.html`** (five captures — 6 Jan 2004, 6 Sep 2004, 3 Nov 2004, 25 Dec 2004, 8 Feb 2005;
+four inside 2004-05, the first inside 2003-04) is the Executive Officers'
 Profiles page, and it embeds an individual headshot for two of its nine listed officers: Katie Dawson
 (already covered) and — new to this archive — **Brittany Fausey**, Director of Academic and Student
 Affairs 2004-05, pictured directly beside her own name, e-mail and biography in the page's own table.
@@ -105,3 +110,17 @@ content this run produced is this report and the new entry in `data/photo-finds/
   — and now has no obvious `wku.edu`-site route either, since the Wayback captures of that domain this
   run found run out around 2010. `wkuherald.com`'s live search is the only source left untried at
   scale for this specific cohort.
+
+## Editorial review, 19 September 2026
+
+Spot-checked against the sources themselves: the `cab9900.htm` caption and photo credit, its office
+table against `years.json`'s 2001-02 executive (exact match, name for name), the `Pics/ProfilePics/`
+CDX result (one file, `64aa.jpg`, captured 20041105091947), the `Brittany.jpg` and `Katie.jpg` embeds
+on `e_profiles.html`, Fausey's office against `years.json`'s 2004-05 executive, the `cab.htm`
+placeholder text, `64aa.jpg` itself (an uncaptioned outdoor group photograph, correctly declined),
+and the captions on all five Herald posts. Every one held.
+
+Corrected: the Priority 4 line above; the officer backlog in `_archive-gaps.json`, which read 216
+against the 220 this report gives and the 220 a fresh count produces; the 2004-05 capture range; and
+two Herald posts labelled by the date of the photograph they carry rather than the date of the post.
+Nothing in this run reached `years.json`, `photos.json` or the published site.
