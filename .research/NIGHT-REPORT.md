@@ -28730,3 +28730,131 @@ over-claimed against the checks above.
 - This pass repeated the blemish the last two recorded: probing the environment printed the token's
   value into the run log. It reached no file, no commit and no comment, and it remains one more place
   the value has existed.
+
+# Editor pass, 20 September (midday) — an empty queue, and a justice citing the wrong year's source
+
+## What was open
+
+Nothing. `list_pull_requests` returns an empty array for open state. The repository stands at #534,
+merged at 09:36 UTC, and no branch on origin has been pushed since 09:33. Both of the morning's
+merges, #533 and #534, were verified by the pass that made them. There was no diff to review.
+
+Access was full through the GitHub API. `gh` is still not installed, so the stored brief still fails
+on its first word, and `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset.
+
+## The sweep: spring results filed forward
+
+The one real defect in the last merge was a spring election result filed to the year of the election
+rather than the year served — the Kevin Smiley portrait, captioned as president of 2008-09 off an
+April 2009 win. So this pass swept that trap across the whole archive rather than a branch.
+
+**The leader layer is clean.** Every leader whose dated sources all fall in February to May of the
+academic year's *end* calendar year was pulled out, since that is the shape the error takes. Two
+came back, and both are correct on purpose: Sandra Norfleet at 1981-82, whose whole two-month term
+sat in that spring, and Jay Todd Richey at 2016-17, who was serving his second term when the March
+and May 2017 pieces were written. Nothing else in sixty-one years rests only on spring-of-end-year
+coverage.
+
+**The photograph layer is clean too, on the harder test.** `check_data.py` already refuses a portrait
+whose subject is not in the archive for that year, but it cannot read a *role* claim inside a caption,
+which is what the Smiley caption got wrong. All thirty-seven year-photograph captions that assert an
+office were checked name by name against the roster of the year they are filed under. Every one holds,
+including the two that look most like the trap and are not: the 2003-04 election-night photograph,
+correctly filed to the year the election happened and captioned for the 2004-05 officers it elected,
+and the 2026-27 Jakob Barker picture, correctly filed forward from the April 2026 election. The
+corrected Smiley caption now states the position accurately.
+
+One caption spells the 1979-80 president "Jamie Hargrove" where `years.json` names him James. That is
+not a defect: the Herald spelled him Jamie throughout the year, `name-aliases.json` maps the short form
+to the recorded person, and the year's own note flags the discrepancy rather than silently fixing it,
+which is what the project rule asks for.
+
+## What was verified
+
+With no diff to review, the pass sampled the layer no previous pass has audited: the officer rows.
+950 of them carry a source URL, and ten were drawn at random and read against the source itself rather
+than against the index. The mirrored PDFs in `data/documents/` made this possible without touching
+TopSCHOLAR for eight of the ten.
+
+- **Stephanie McCarty, Coordinator of Committees, 1995-96.** The minutes of 5 September 1995 name her
+  in the office twice.
+- **Mark Rawlings, Vice President of Public Relations, 2001-02.** The minutes of 28 August 2001 carry
+  his report under that title. The scan's OCR mangles the surname to "Ibwlings", which is why a plain
+  text search misses him. The same page corroborates the whole 2001-02 executive — Bedo, Sears,
+  Spencer, Rawlings, Sewell — independently of the cabinet photograph that already names all five.
+- **Leigh Ann Sears, Campus Improvements chair, 1996-97.** The minutes of 22 April 1997 name her as
+  committee chair, and the same page carries the 1997-98 slate that makes her vice president.
+- **Greg Elder, Administrative Vice-President, 1985-86.** The minutes of 15 April 1986 record him
+  with no report, exactly as the note says. The same page confirms every name and office in the
+  1985-86 group-photograph caption: McKinney, Richards, Wassom, Zimmerman, Peck, Pack, Todd, Scott.
+- **Kara Lowry, Secretary of the Senate, 2016-17.** Named in the senate minutes of 13 September 2016.
+  The same minutes show Amy Wyer sworn in as Academic Affairs chair, which is the autumn half of the
+  note attached to Stephen Mayer.
+- **Stephen Mayer, Academic Affairs chair, 2016-17.** Bill 29-17-S carries his name and title.
+- **Dennis Reeves, Representative of Departmental Clubs, 1966-67.** The roster of the first Congress
+  prints names and offices in separate columns; aligned by position, the eighth name is Reeves and the
+  eighth office is the one recorded.
+- **Barrett Greenwell, Director of Academic and Student Affairs, 2014-15.** The executive cabinet
+  minutes of 26 August 2014 list him among the officers present at the orientation the note describes.
+  That document also separates "Officers Present" from the committee chairs listed under "Also
+  Present", and the archive follows the same line.
+
+Three internal cross-references in those notes were checked against the roster and hold: Mayer as
+president for 2018-19, Sears as vice president for 1997-98, and Rawlings at Vice President of Finance
+for 2000-01.
+
+## What I corrected
+
+**Kara Raley, Justice of the Judicial Council, 2013-14, was citing the wrong year's source.** Her four
+colleagues on that council each cite SGA's own judicial page as archived on 27 September 2013. Hers
+cited the Herald of 13 February 2013 instead — an article about a senate meeting that falls inside
+2012-13, not 2013-14. The note carried the fact that actually places her in the year, that she was
+"listed on SGA's judicial branch page as it stood in September 2013", but that page was nowhere in
+her citation, so a reader following the link would have landed a year early.
+
+She is in the right year. The 27 September 2013 capture, last modified 27 August, lists five justices
+— Church as chief, then Payne, Stewart, Raley and McDole — which is this archive's 2013-14 council
+exactly. So this is a rescue, not a cut: the citation now points at that roster, and the note keeps the
+February appointment and says plainly which year the Herald article belongs to. Nothing was lost by the
+swap, because that article is already cited three times under 2012-13 — for the Study Away bill passed
+at the same meeting, and for the two senators seated at it.
+
+The citation count falls by one, 2,659 to 2,658, which is the correct direction: the year has stopped
+citing a source that belongs to the year before it.
+
+## Still open, and not acted on
+
+- **Raley's 2012-13 term is not recorded.** The Herald article the archive already cites says she was
+  appointed an associate justice on 12 February 2013, which is service inside 2012-13, and the only
+  2012-13 judicial roster on file is the capture of 21 October 2012, taken before she was appointed.
+  Two senators seated at that same meeting are recorded under 2012-13; she is not. Adding the term is
+  a sourced and straightforward addition, but it is an addition, and this is an editor's pass. Left
+  for the research routine.
+- **The 1979-80 treasurer's margin cannot be checked in this container.** Terri Craig's row cites
+  Herald 54:56 of 19 April 1979 for a 937-623 win over Darell Pierce. The mirrored scan is the right
+  issue — its own cover metadata confirms volume, number and date — and the headline "Hargrove easily
+  wins ASG president race" confirms the story, but the OCR of the newsprint body is too degraded to
+  read any vote count; it renders Hargrove's own total as "1,017" where the archive records 1,087, and
+  mangles nearly every surrounding word. No renderer is installed here, so the page image could not be
+  looked at. A miss in a bad text layer is not evidence, so nothing was cut. Her office is corroborated
+  anyway: the ASG minutes of 24 April 1979 record the new 1979-80 officers sworn in, Craig moving the
+  resolution the note describes, and Craig making out the new budget. Carried forward.
+- **Committee chairs sit in `senate.officers` rather than `senate.committees`.** 2014-15 is the example
+  checked: five committee chairs are filed as senate officers and the `committees` list is empty. No
+  one is mis-titled — every row says "Committee Chair" plainly, so the commonest trap is not tripped —
+  but the schema has a slot built for this and the officer counts absorb the chairs. Structural, not
+  factual; changing it is a schema-wide job, not an editor's cut.
+- The long-standing gaps are unchanged: John Lyne against Larry Zielke for 1970-71, David Payne for
+  1982-83, who held the regent seat before Norfleet's February 1982 runoff, the outcome of the 1999-00
+  Coates investigation, and the pre-2000 legislation on TopSCHOLAR.
+
+## The numbers
+
+`build.py` clean and idempotent on main before the edit — `site/` came back byte-identical.
+`check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` returns the same four pairs as
+every recent pass — the 1997-98 designated driver cards, the 1991-92 regent advisory committee bill,
+the 1971-72 KCLU suit and the 2003-04 plus/minus fight — each an introduction and its outcome on
+different dates, and none merged.
+
+61 years, 1,963 events, 60 people have been president. 2,652 recorded terms of office held by 1,810
+people. Every figure unchanged, which is right for a pass that moved a citation and no claim.
