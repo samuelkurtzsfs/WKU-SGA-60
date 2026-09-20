@@ -6280,12 +6280,11 @@ editorial review before it reached `main`, so the run's standing result is three
 (Holland, Pulman, Wicks), the completeness census above, and the p. 238 lead. Landed on
 `research-photos`.
 
-### Photograph run of 20 September (scheduled): no photograph landed, but a live lead identified
-and a whole route closed
+### Photograph run of 20 September (scheduled): no photograph landed, but a live lead identified and a whole route closed
 
 Re-ran the completeness census after merging `origin/main` in: **priorities 1 and 2 are still
 fully clear** (all four named presidents, and every president/regent in the archive, already has
-a portrait). Of the 216 missing officer portraits, 172 are non-generic named offices (not plain
+a portrait). Of the missing officer portraits, most are non-generic named offices (not plain
 "Senator At Large"); a year-level general photograph is still missing for only **6** years now,
 down from the 12 the 19 September run listed — 1994-95, 1995-96, 2000-01, 2005-06, 2006-07,
 2008-09 — apparently narrowed by other routines' work merged from `main` since then, not by
@@ -6335,16 +6334,24 @@ run happened to already know about. Two pages, both archived once, in early 2004
 - `j_profiles.html` ("Justices' Profiles", captured 15 Jan 2004, for 2003-04): five photos, each
   `<img alt="Full Name">` — chief.png=Troy Ransdell, j1.png=Scott Broadbent, j2.png=Josh Collins
   (all three already have portraits from other sources), **j3.png=Gretchen Light** (Justice,
-  Judicial Council, 2003-04 — currently missing), j4.png=Kristin Hartley (not in `years.json` at
-  all, so nothing to attach a photo to even if recovered — a roster question, not a photo one).
+  Judicial Council, recorded in *both* 2003-04 and 2004-05, and a senate member in 2002-03 —
+  currently missing a portrait for either year, so a recovered photo would close two),
+  j4.png=Kristin Hartley. **Editor's correction, 20 September: the claim that she is "not in `years.json` at all" is wrong.** A
+  Kristin Hartley is recorded there as chair of the Senior Recognition committee in 2002-03. She
+  is not recorded in 2003-04, the year of this page, and whether the justice on it is the same
+  person is a name-only match and unverified — so treat this as a roster question about 2003-04,
+  not as an absence from the file.
 - `l_profiles.html` ("Congress Members' Profiles", captured 6 Jan 2004, for 2003-04): nine
   photos, same `alt="Full Name"` pattern — rw.png=Robert Watkins, 1.png=Scott Wolfe,
   2.png=Stacey Adkisson, 3.png=Natalie Croney, 4.png=Katie Dawson, 5.png=Brittany Fausey,
   **6.png=Tim Howard**, 7.png=Shawn Peavie, 8.png=Evelina Petkova. Only Tim Howard is a new find;
   everyone else already has a portrait. He is recorded as a 2003-04 Congress *member* (not
   officer) in `years.json`, so this photo can't attach there, but he holds the identical office
-  ("Co-Chair, Student Affairs Committee", alongside Katie Dawson) as a 2004-05 senate *officer*
-  in the existing record — currently missing a portrait — which this photo, one year earlier,
+  ("Co-Chair, Student Affairs Committee") as a 2004-05 senate *officer*. **Editor's correction,
+  20 September: his 2004-05 co-chair was Christina Kayrouz, not Katie Dawson.** The archive's own
+  entry pairs him with Dawson in 2003 — Congress approved him as co-chair alongside her on
+  29 January 2003, and the committee's 2 December 2003 report names them together. That 2004-05
+  officer entry is currently missing a portrait, which this photo, one year earlier,
   would close on the same reused-portrait-with-a-note pattern the archive already uses for Scott
   Wolfe's and Scott Broadbent's photos (see their existing `photos.json` entries: a portrait
   confirmed for one year, explicitly noted and reused for an adjacent year the same person held
@@ -6360,7 +6367,7 @@ that closed out this run. **This is the concrete next step for whoever picks up 
 run next**: retry CDX for those two paths specifically (and the other seven, since a bulk answer
 is one query away once the Archive is stable) with patience, on a run where `web.archive.org` is
 confirmed healthy first. If the CDX comes back genuinely empty, this specific lead is closed, but
-the name identifications above (especially Kristin Hartley, who isn't in `years.json` at all) are
+the name identifications above (especially Kristin Hartley — see the correction above) are
 worth keeping on record for the officer-roster routines regardless of whether a photo ever turns
 up.
 
