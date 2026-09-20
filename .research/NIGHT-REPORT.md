@@ -28527,3 +28527,111 @@ recorded under more than one spelling.
 - The token flagged for rotation is still flagged, and this pass repeats the previous one's blemish:
   probing the environment printed its value into this run's log. It reached no file and no commit,
   and it is still one more place the value has existed.
+
+# Editor pass, 20 September (morning) — an empty queue, and the 4 August branches settled on positive evidence
+
+## What was open
+
+Nothing. `list_pull_requests` returns an empty array for open state; the repository stands at #531,
+merged at 03:28 UTC this morning. No branch on origin has been pushed since 03:27, and the two most
+recent, `editor-pass-0920` and `research-photos`, are both wholly contained in main. There was no
+diff to review and nothing to merge.
+
+Access was full. The push probe returns `* [new branch] HEAD -> access-probe` and the GitHub API
+answers. `gh` is still not installed, so the stored brief still fails on its first word, and
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset — the drop box was not needed.
+
+## The 4 August branches, checked properly
+
+Previous passes have reported that every `research-*` branch is behind main on content and that the
+diffs "run one way, deletions only". That is not quite right, and this pass stopped repeating it.
+The six orphan branches from 4 August each carry between 147 and 154 event titles whose text appears
+nowhere in main. Title text is not the test — this archive re-titles events freely — so each branch
+was compared against main by event date and by source URL instead. That narrows to between four and
+seven candidates per branch, and every one of them was run to ground:
+
+- **The 1975 concert loss.** The branch has "Big concert, big loss" at 19 September 1975, the date of
+  the Herald's report, tagged `campus: true`. Main carries the same facts at 17 September, the date of
+  the concert itself, names the acts (Loggins and Messina, with the Amazing Rhythm Aces), attributes
+  the explanation to activities vice president Rick Kelley, and does not tag it — correctly, since an
+  ASG concert is ASG's own business and not the world around it. Main's version is the better one on
+  every count.
+- **The disputed speaker vote of April 2004.** In main, with the 9-8 margin, the two-thirds ambiguity
+  and Brittany Fausey's withdrawal of her name on 13 April.
+- **The plus-minus tabling of February 2013.** In main at 19 February, the meeting date, against the
+  branch's 20 February taken from a 21 February report.
+- **The Caboni selection and the 2019 special projects fund.** Both in main, the latter with the
+  three-part compromise and Bill 3-20-S that the branch entry stops short of.
+- **The committee chairs of 12 November 2019.** In main's people layer rather than as an event, and
+  fuller there: it seats Matt Barr at Campus Improvements alongside Jillian Kenney at Sustainability
+  and Hope Wells at SAVES.
+- **The Division I-A resolution.** This is the one worth recording. The branch says the senate
+  "unanimously passed" it on 2 November 2006, sourced to a Wayback capture of the Herald's front page.
+  Main refuses that claim on purpose: it records Resolution 06-06-F's first reading of 31 October with
+  the second-reading and pass/fail fields blank, states that the archive cannot confirm from the
+  document that it passed, "still less that it did so unanimously", and notes that the very Wayback
+  capture the branch cites could not be loaded. The branch version is the over-claim; main's is the
+  correction. A previous pass considered this and decided against it.
+
+One item on the branches is genuinely absent from main: a senator asking ten colleagues to join the
+Sunrise Movement's 6 December 2019 climate walkout. It stays absent. A senator inviting colleagues to
+a third party's protest is not SGA deciding, debating or voting anything, and it falls below the
+campus-context bar.
+
+So the conclusion the earlier reports reached is right, but it now rests on evidence rather than on a
+line count: the 4 August branches hold nothing this archive lacks, and #6, #7 and #8 lost nothing when
+they were closed on 18 August.
+
+## The sweeps
+
+With no diff to review, the trap checklist was run across the whole live archive rather than a branch:
+
+- Advance notice written up as a result — an entry whose title or citation reads as a pre-event notice
+  while its body asserts a crowd, a review or a financial outcome: **none**.
+- Events carrying no source: **none**.
+- Events tagged `campus: true` where SGA is the actor in the body: **none**. 23 of 1,963 events are
+  tagged, 1.2 per cent, which keeps the tag meaning what it says.
+- Quotations over fifteen words: **none**.
+
+The settled facts were re-checked rather than assumed. Sandra Norfleet sits at 1981-82 with the plaque's
+1982 printed beside her. Reed Morgan is filed at 1968-69 with the role `unresolved` and a note that
+states positively he was neither president nor regent, with Straeffer's 1,732-to-1,098 margin and
+Gerard's regent seat both named. William Menser is at 1967-68 carrying the Board seat, Michael Fiorella
+at 1972-73 and Gregory McKinney at 1974-75. Vogt, Hargrove, Coates and Taylor follow the settled
+spellings with Mollozzi, Hargroave, Lich and Seay mapped as aliases rather than published as people.
+Carlene and Darlene Lodmell remain two women, nine mentions each, absent from `name-aliases.json` and
+described in the text as the sisters they were. The LaCivita portrait is on file for both 1973-74 and
+1974-75 and has not been withdrawn again.
+
+## The numbers
+
+`build.py` clean: 61 year pages, 7 decade pages, 308 documents, 1,111 legislation files, a 4,945-record
+search index. 2,652 recorded terms of office held by 1,810 people, 2,615 of them (98 per cent) carrying
+an account of what the person did; 47 people recorded under more than one spelling. `check_data.py`
+exit 0 — 61 years, 1,963 events, 60 people have been president. `check_contrib.py` exit 0 with every
+guard passing. `check_duplicates.py` returns the same four pairs as for weeks past — the 1997-98
+designated driver cards, the 1991-92 regent advisory committee bill, the 1971-72 KCLU suit and the
+2003-04 plus/minus fight. Each is two events, an introduction and its outcome or a plan and its
+endorsement, on different dates with different facts. None was merged.
+
+Nothing was merged, because nothing was open. Nothing was cut, because nothing in the live archive
+over-claimed against the checks above.
+
+## Still open
+
+- The research routines have pushed nothing since 03:27 UTC, and the census of 19 September explains
+  why: two routines are enabled, this editor and `SGA 60 - portraits`, and the other eleven have been
+  disabled with their next-run times frozen in August. This pass read the routines again rather than
+  taking that on trust, and it holds — `portraits` last succeeded at 02:15 this morning, the decade
+  routines, `legislation harvest`, `photographs`, `backlog`, `senate rolls` and `person profiles` are
+  all off. So the brief's "four research routines running around the clock" describes one research
+  routine and one editor. An empty queue is the expected state, not a fault to chase.
+- The long-standing gaps are unchanged: John Lyne against Larry Zielke for 1970-71, David Payne for
+  1982-83, who held the regent seat before Norfleet's February 1982 runoff, the outcome of the 1999-00
+  Coates investigation, and the pre-2000 legislation on TopSCHOLAR.
+- The stored brief still opens with `gh auth setup-git`, still sends the editor to #6, #7 and #8 as
+  open when all three closed on 18 August, and still routes its fallback through two variables that
+  are not set here. Each pass spends its first minutes rediscovering this.
+- This pass repeated the blemish the last two recorded: probing the environment printed the token's
+  value into the run log. It reached no file, no commit and no comment, and it remains one more place
+  the value has existed.
