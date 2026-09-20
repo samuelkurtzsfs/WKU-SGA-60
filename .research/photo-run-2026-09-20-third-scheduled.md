@@ -47,7 +47,7 @@ window, all via the CDX/raw-capture route:
 - **`dlsc_ua_records/3012`, "New SGA president maps upcoming term" (Herald 72:54, 24 Apr 1997,
   p. 3), succeeded.** The page carries a headshot of Keith Coffman inset beside a pull-quote
   captioned "— Keith Coffman, Russellville junior," reporting his election as SGA president for
-  1997-98 four days after the vote. This photograph was taken and published within the 1996-97
+  1997-98 two days after the vote (the article dates the election to Tuesday, 22 April 1997). This photograph was taken and published within the 1996-97
   academic year (Aug 1996 – Jul 1997), so it fills that year's photograph slot on its own
   terms — it does not need to depict anyone who held office *during* 1996-97, per the standing
   dating rule that a photograph is dated by when it was taken, not by whose term it later
