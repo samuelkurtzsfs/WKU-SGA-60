@@ -28858,3 +28858,88 @@ different dates, and none merged.
 
 61 years, 1,963 events, 60 people have been president. 2,652 recorded terms of office held by 1,810
 people. Every figure unchanged, which is right for a pass that moved a citation and no claim.
+
+---
+
+# Editor pass, 20 September (afternoon) — one photograph merged, its caption trimmed to the page
+
+## The queue
+
+One pull request open, #536, "Research: photographs (rolling)", on `research-photos`, cut from
+current `main` and one commit ahead of it. Merged. The queue is now empty.
+
+The three branches this pass was briefed to rescue — #6 photographs, #7 the 1980s, #8 the 2020s —
+are not open and have not been since 18 August, when all three were closed against the 4 August
+orphan history. The standing brief still lists them as stale and waiting; they are settled, and the
+morning pass of 20 September recorded the same finding. Nothing was reopened.
+
+## What was in it
+
+A single new claim: one year photograph for 1996-97, `1996-97-keith-coffman-elected.jpg`, cited to
+Herald 72:54 of 24 April 1997, p. 3. Fewer than eight claims, so all of it was checked rather than
+a sample.
+
+The local unfiltered index confirms `dlsc_ua_records/3012` is that issue and lists Matt
+Batcheldor's "New Student Government Association President Maps Upcoming Term" in its article list.
+The issue PDF was then read — the direct route to `digitalcommons.wku.edu` is still behind the
+Cloudflare challenge, so it came from the Wayback capture of `article=4039` — and p. 3 rendered and
+looked at rather than searched. The identification holds and holds on the page itself: the headshot
+sits inside the ruled pull-quote box, immediately right of the attribution reading "— Keith
+Coffman / Russellville junior". The black bar across the top of the committed crop is that box's
+top rule, which establishes where the crop came from as well as who is in it. The page's body
+carries "Meet next year's Student Government Association president" and "the Russellville junior",
+which is the rest of the caption. Coffman's `also_regent` flag at 1997-98 is independently
+supported by the same article.
+
+Not a duplicate: his 1997-98 leader portrait is a different photograph from a different issue,
+Herald 73:54 of 5 May 1998. Real JPEG. The spring-elections rule is respected — the presidency
+stays filed forward at 1997-98 and only the photograph sits in 1996-97, the year it was published,
+alongside that year's existing 24 April 1997 event drawn from the same issue.
+
+## What was cut
+
+The caption said the photograph was "photographed for the Herald's report". The page proves it ran
+with the report; it does not prove the occasion it was taken on. Trimmed to "in the headshot that
+ran with the Herald's report", which is what can be shown. Nothing else in the entry was touched —
+this is the over-claimed-but-real case that is worth rescuing rather than deleting.
+
+One factual error corrected in the run note: the report ran two days after the vote, not four. The
+article dates the election to "Tuesday", which against a 24 April 1997 issue is 22 April. The
+error never reached the data — the caption said only "days after" — but it was in the note a later
+run would read, and in the pull request body, where it stands uncorrected.
+
+The article carries a good deal about Coffman personally — his age, his car, his answer on the
+non-discrimination policy. None of it is in the caption, and none of it should be.
+
+## Confirmed in passing, and left for the research routine
+
+Page 3 carries the full results box for the April 1997 election, which the run note flagged and
+correctly declined to act on: President Coffman 534, Carlene Lodmell 334; Vice President Leigh Ann
+Sears 498, David Apple 371; Secretary Jamie Fite 452, Darlene Lodmell 396; Treasurer Chad Lewis
+518, Steve Roadcap 327. Recorded here so the next routine to work the officer data has it verified.
+Carlene and Darlene Lodmell stand on the same ballot for different offices, which is one more
+contemporaneous confirmation, from a source not previously cited for it, that they are two people.
+
+## Still open
+
+Six year-photograph gaps: 1994-95, 1995-96, 2000-01, 2005-06, 2006-07, 2008-09. The run note is
+candid that the 1994-95 and 1995-96 pair is the hard one, because those issues carry no OCR layer
+and cannot be keyword-searched — a photograph there has to be found by paging through an issue.
+The roughly 175-name cabinet and Senate officer backlog is untouched. The long-standing questions
+are unchanged: Lyne against Zielke for 1970-71, David Payne for 1982-83, the regent seat before
+Norfleet's February 1982 runoff, the outcome of the 1999-00 Coates investigation, and the pre-2000
+legislation on TopSCHOLAR. The three items carried forward from the midday pass — Raley's 2012-13
+term, the 1979-80 treasurer's margin, and committee chairs sitting in `senate.officers` — all
+stand.
+
+## The numbers
+
+`build.py` clean and idempotent on main after the merge; `site/` came back byte-identical on a
+second run. `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` returns the
+same four pairs as every recent pass — the 1997-98 designated driver cards, the 1991-92 regent
+advisory committee bill, the 1971-72 KCLU suit and the 2003-04 plus/minus fight — each an
+introduction and its outcome on different dates, none of them touched by this diff and none merged.
+
+61 years, 1,963 events, 60 people have been president. 2,652 recorded terms of office held by 1,810
+people, 98% of them with an account of what the person did. 73 portraits and 68 year photographs,
+the last of those the new one. 3,591 citations, up by one.
