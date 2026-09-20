@@ -1,3 +1,98 @@
+# 20 September 2026 — an empty queue, the last five merges re-verified, and the stored brief now readable
+
+## What was open
+
+Nothing. `list_pull_requests` returns an empty array for open state and the repository is at #528.
+The three pull requests the stored brief still calls stale and open since 4 August were read directly
+rather than taken from the last report: #6 "Research: photographs (rolling)" closed 2026-08-18T04:57:35Z
+unmerged, 11 commits; #7 "Research: the 1980s" closed 2026-08-18T04:57:37Z unmerged, 10 commits. #8 was
+confirmed closed by the pass of 19 September. Every `research-*` branch on origin is behind main on
+content — the diffs run one way, deletions only — so there is nothing unlanded anywhere. The last push
+to a research branch was `research-photos` at 21:33 UTC on 19 September and the same evening's editor
+pass merged it as #528 four minutes later.
+
+Access was full: the push probe returns `* [new branch] HEAD -> access-probe` and the GitHub tools
+answer. `gh` is still not installed, so the brief's opening command still fails on its first word.
+
+## What was checked instead
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0 with all its guards passing.
+`check_duplicates.py` returns the same four pairs it has returned for weeks — the 1997-98 designated
+driver cards, the 1991-92 regent advisory committee bill, the 1971-72 KCLU suit and the 2003-04
+plus/minus grading fight. All four are two events apiece and the reasoning is already on file; nothing
+was merged.
+
+With no diff to review, the pass took the last five merges — #524 through #528, everything published
+since the previous editor ran — and spot-checked eleven claims across them against their sources.
+All eleven held.
+
+- **The 1971 Talisman statement (#526).** Read the volume's own text at archive.org rather than the
+  citation. The statement is on printed pp. 66-67 and signed "—John Lyne, president", and every element
+  the archive draws from it is there: entertainment expanded into a cultural programmes concept, big-name
+  concerts continuing but names outside the top forty such as Ravi Shankar, theatrical events including
+  the co-sponsorship of "1776", a student-run lecture series as the year's significant addition, the
+  student discount programme with local merchants maintained, and work towards a legal service including
+  a legal defence fund and a student advocates' corps. The Ravi Shankar entry's second source is exactly
+  what it claims to be.
+- **The 1989 study day (#526).** Herald 64:39, 16 Feb 1989 carries Diane Tsimekles, "Associated Student
+  Government Recommends an Extra Study Day"; the new second source, Herald 64:29 of 10 Jan 1989, carries
+  the same reporter on "Associated Student Government Looking for Way to Print Evaluations". That the
+  evaluations were teacher evaluations is not read into the January headline: the ASG minutes of
+  28 November 1988, already cited in the year, name the teacher evaluations work directly.
+- **The 1973 book exchange and the 1994 President for a Day (#526).** Herald 52:29 of 16 Jan 1973 carries
+  "Associated Student Government Sponsors Book Exchange". The 1994 pair is the advance-notice trap handled
+  correctly: Herald 69:37 [38] of 17 February is Tonya Root's announcement that Angelo Rodriguez would
+  switch places with President Meredith, and the entry's new second source, Herald 69:38 [39] of
+  22 February, is Root's report that they did. The same 17 February issue does carry the security phones
+  item and Sherry Wilson on the retake-C proposal killed in committee, as the body says.
+- **The five regent statements (18 September).** Johnson, Taylor and Robinson each have the Board seat
+  stated in the profile the flag was drawn from. Richey's says he represented students on the Board over
+  his two terms. Sam Kurtz's 2024-25 profile does not mention it, so the flag was checked against the year
+  instead and is sound: the year carries a sourced event of 8 August 2024 naming Student Regent Sam Kurtz
+  pressing administrators at the Board retreat. His 2023-24 term is left unflagged, and Richey's 2015-16
+  likewise, which is the right side to err on.
+- **Two re-datings.** The 2011 DUC forum moved to 27 September, the day it was announced, and Chandler
+  Hall to 8 August 2025, the day the Regents approved the naming. Both now agree with their own bodies.
+
+## What was cut, and what was fixed
+
+Nothing was cut. Nothing in the five merges over-claimed, mismatched a citation, matched a person by
+surname, filed a spring election into the wrong year or touched the settled facts.
+
+One defect was found and fixed. `data/years.json` lost its trailing newline at #499 on 17 September and
+has been missing it for five commits, alone among the data files. It is restored here, so the file stops
+printing "\ No newline at end of file" into every future diff.
+
+## The stored brief can now be corrected precisely
+
+The pass of 19 September reported that the editor routine's prompt could not be read, so a correction
+could not be prepared without overwriting standing orders blind. That is no longer true: the prompt is
+stored under `derived_state.prompt` in the `list_triggers` result and reads back in full. The three
+things it gets wrong can now be quoted and replaced exactly, by the owner, who is the one to decide
+what the editor's standing orders say.
+
+They are: the opening command, `gh auth setup-git && gh pr list`, which cannot run because `gh` is not
+installed in these containers — `AGENT-LANDING.md` already gives the working probe and the brief should
+use it, because as written a failing first command reads as the platform gate and sends the run into
+review-only mode when access is in fact full; the three stale pull requests, closed 18 August 2026 and
+reported closed by a dozen passes since; and "four research routines running around the clock", which the
+routine list does not bear out.
+
+The census was re-read this pass rather than carried over. Sixteen triggers are stored, of which three
+are spent `send_later` reminders from 4 August. Two are enabled: `SGA 60 - editor` on `17 0-23/3 * * *`,
+which is this one, and `SGA 60 - portraits` on `52 1-23/6 * * *`, which is `research-photos`. The other
+eleven — backlog, senate rolls, person profiles, legislation harvest, photographs, the 2020s, the 2010s,
+the 2000s, the 1990s, the 1980s, 1966-1979 — are disabled with next-run times frozen in August. One
+researcher and one editor, firing on a three-hour cycle against a six-hour one, means an empty queue is
+the expected state two passes in three and not a fault to go hunting for.
+
+## Counts
+
+**61 years, 1,963 dated events, 60 people who were president. 2,652 terms held by 1,810 people, 98% of
+them carrying an account of what the person did. 308 documents, 1,111 legislation files, 4,945 search
+records, 47 people recorded under more than one spelling.** Unchanged: no claim was added or removed
+this pass.
+
 # 19 September 2026 (third pass) — an empty queue, and a census that settles what the brief keeps getting wrong
 
 ## What was open
