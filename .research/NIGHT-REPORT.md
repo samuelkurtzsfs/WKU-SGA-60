@@ -29050,3 +29050,64 @@ that cut a term and no event. 2,651 recorded terms of office, down one, held by 
 unchanged, because Bailey keeps the seat he actually held. 73 portraits and 68 year photographs,
 unchanged. 3,590 citations, down one: the withdrawn row's, the same source still cited twice over
 in the year it was cut from.
+
+## 20 September — one pull request, merged after two corrections
+
+One research pull request was open, #539, the rolling photograph hunt on `research-photos`. The
+three stale August pull requests named in the editor's standing brief — #6 photographs, #7 the
+1980s, #8 the 2020s — were all closed unmerged on 18 August and no longer exist to review; the
+brief should stop naming them.
+
+#539 was a notes-only change: 100 added lines in `SGA-60-AGENT-INFO.md` and nothing else. `data/`
+was byte-identical to main and `site/` unchanged, so nothing in it reached the published site. It
+records a run that landed no photograph but closed a route and opened a lead — the magazine-style
+Talisman volumes (2003, 2013-2019) carry no club-composite section as a matter of format, so
+there is nothing in them to find; the Cloudflare block on `viewcontent.cgi` survives a real
+Chromium browser, not just `curl`; and the old `wku.edu/Dept/Org/Student/SGA` site had per-branch
+profile pages whose officer photographs are tagged with their subjects' names, two of which would
+close portrait gaps if the Internet Archive ever serves the images.
+
+Eleven of its claims were checked against the archive itself. Nine held: every one of the 73
+leader terms carries a portrait keyed on the exact year-and-name pair rather than on a name
+alone; exactly six years lack a year-level photograph and they are exactly the six listed; the
+nine names on the congress profile page were checked one at a time and only Tim Howard is a new
+find; the reused-portrait-with-a-note pattern the note leans on is real and correctly described.
+The claimed Internet Archive outage was real — every request from here reset, while TopSCHOLAR
+answered cleanly in the same window — and a cited Herald volume and number matched its landing
+page exactly.
+
+Two failed, and were corrected rather than cut. The note recorded Kristin Hartley as absent from
+`years.json` and sent the roster routines after the gap; she is in the file, as chair of the
+Senior Recognition committee in 2002-03. She is not recorded in 2003-04, the year of the page the
+photograph comes from, and whether that justice is the same person is a name-only match that
+nothing yet supports, so the note now says so instead. The note also paired Tim Howard with Katie
+Dawson in the 2004-05 Student Affairs co-chairship; his co-chair that year was Christina Kayrouz,
+and the Dawson pairing belongs to 2003, which the archive's own entry for him already had right.
+A census line was softened as well: "216 missing officer portraits, 172 non-generic" does not
+reproduce — a recount gives 219, and the second figure lands between 168 and 192 depending on
+what counts as generic — so the unreproducible numbers are out and the six-year figure, which
+reproduces exactly, stays.
+
+Both failures share a shape worth naming for the photograph routine: each was an assertion about
+what our own data contains, made without querying it, in a run that had the file on disk
+throughout. The note for it is that `years.json` keys its years on `id`, not `year`, so a
+carelessly written lookup returns nothing and reads as confirmation.
+
+Nothing else tripped the checklist. No events were added, so no advance notice could be written
+up as a report and no April result could be filed into the wrong year. The member-versus-officer
+distinction was drawn correctly. No settled fact was touched. "Howard" appears in
+`name-aliases.json` only as Tara Higdon's married name, unrelated to Tim Howard and not conflated
+with him. The living people named appear only as searches that returned no usable caption.
+
+`build.py` completed cleanly and idempotently, `check_data.py` and `check_contrib.py` both exited
+0. `check_duplicates.py` reported four pairs, every one of them already on main and none
+introduced here; all four are genuine two-stage sequences — a stance then a vote, a bill
+introduced then defeated, a suit planned then endorsed, driver cards announced then distributed —
+and none should be combined.
+
+61 years, 1,963 events, 60 people have been president. 2,651 recorded terms of office held by
+1,810 people, 98% of them carrying an account of what the person did. 73 leader portraits and 68
+year photographs. All unchanged, which is right for a pass that published no new fact.
+
+Still open: nothing. The lead on the two 2004 profile pages is live but blocked on the Internet
+Archive recovering, and is recorded in the handoff with the exact paths to retry.
