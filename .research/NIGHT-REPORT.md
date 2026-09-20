@@ -1,3 +1,98 @@
+# 20 September 2026 (second pass) — a photograph run merged, a presidency taken back off the wrong year
+
+## What was open
+
+One pull request, #533, "Research: photographs — four new year photographs", opened at 08:35 UTC on
+the `research-photos` branch and four hours old. The stored brief still names #6, #7 and #8 as stale
+and open since 4 August; all three were closed unmerged on 18 August and the brief should stop
+carrying them. Access was full — the push probe returns `* [new branch] HEAD -> access-probe` and the
+GitHub tools answer. `gh` is still not installed, so the brief's opening command still fails on its
+first word.
+
+The branch's merge base was main's own tip, so no stale-branch reconciliation was needed. Both
+commits on it were authored by `SGA 60` and carried no tool attribution.
+
+## What was verified
+
+Four entries, so all four were checked rather than a sample, and each at the page itself rather than
+its landing page. `viewcontent.cgi` was still Cloudflare-gated on a direct request all pass; every PDF
+came through the Wayback raw-capture route the run's own report documents, which failed three times
+and cleared on retry every time.
+
+- **1997-98** — Herald 73:53, 30 Apr 1998, p. 8. The scan carries no text layer, so the page was
+  rendered and read. Caption exact as transcribed, credit Catherine Cull, and the picture is as dark
+  as the entry says. Same page reports Stephanie Cosby winning the presidency.
+- **2002-03** — Herald 78:49, 8 Apr 2003, p. 1. Caption exact, credit Justin Fowler, alongside
+  "Johnson, Martin win contested SGA election races".
+- **2003-04** — Herald 78:47, 18 Mar 2004, p. 1. Confirmed as the front-page lead, credit James
+  Branaman. The printed caption also carries vote shares the entry had not used — Todd 65 percent over
+  Jessica Martin, Petkova 59 percent over Josh Collins — now added.
+- **2009-10**, filed as 2008-09 — Herald 84:52, 7 May 2009, p. 7B. Feature confirmed and the answer
+  about student voice accurately paraphrased.
+
+All four files are real JPEGs. Identifications all come from printed captions giving full names and
+home towns, so nothing rests on a surname. No officer was promoted from a committee chair, no advance
+notice was written up as a report, and no living person's entry goes past what the Herald printed
+about their SGA service.
+
+## What was corrected before merging
+
+**A presidency was filed to a year its holder did not serve.** The 7 May 2009 ten-questions portrait
+of Kevin Smiley was filed to 2008-09 and captioned "SGA President Kevin Smiley". He was not the
+2008-09 president. Kayla Shelton took the office when Johnathon Boles resigned on 30 January 2009 and
+held it through the rest of that year; Smiley won the regular election of 16 April 2009 for the
+2009-10 term, and the Board's roll call of 31 July 2009 first lists him as student regent. The
+Herald's headline does read "SGA President Kevin Smiley" — that was checked, not assumed — but the
+feature body names no term, and the headline is the looser thing.
+
+The cost of leaving it would have been higher than a single wrong caption. Shelton's own record notes
+her plate "had been filed under 2009-10, overlapping Kevin Smiley there; moved to 2008-09". Captioning
+Smiley as the 2008-09 president would have rebuilt that collision from the other side, against a
+correction already made once.
+
+Moved to 2009-10 and recaptioned to state the election he won, noting the headline's usage. 2009-10
+had no year photograph at all — the gap this run's own report flagged as still open after the Colton
+Jessie lead turned out to belong to 2010-11 — so the correction also fills it. Filing forward to the
+term served is what main already does with post-election photographs of incoming officers: 1999-00
+from 15 April 1999, 2004-05 from the 16 March 2004 election guide, 2026-27 from 15 April 2026.
+
+**Three captions reproduced the Herald's printed captions verbatim, at 21, 25 and 25 words.** The
+limit is a quote under 15 words, once per source, because this site republishes a student newspaper.
+None of the 63 year photographs already on main breaks it; these three would have been the first.
+Paraphrased, with no sourced fact lost and the 2004 vote shares gained. The 18 March 2004 citation
+also gained the archive's own masthead correction, "Vol. 78, No. 47 [Vol. 79]".
+
+Nothing was cut. Both problems were rescues.
+
+## What was merged
+
+#533, as a merge commit, after the corrections were pushed to its branch. `build.py` clean,
+`check_data.py` exit 0, `check_contrib.py` exit 0 with all guards passing. `check_duplicates.py`
+returns the same four pairs it returns on main and has returned for weeks — the 1997-98 designated
+driver cards, the 1991-92 regent advisory committee bill, the 1971-72 KCLU suit and the 2003-04
+plus/minus grading fight. Each is two events, and this diff touched no events at all.
+
+Counts after the merge: 61 years, 1963 events, 60 people have been president. 2652 recorded terms of
+office held by 1810 people, 2615 of them (98%) carrying an account of what the person did, 47 people
+under more than one spelling. 308 documents and 1111 legislation files.
+
+## Still open
+
+No pull requests. Year-photograph gaps are now 1994-95, 1995-96, 1996-97, 2000-01, 2005-06, 2006-07
+and 2008-09 — 2009-10 closed by the move above, and 2008-09 opened by it. The run also closed the
+2013-2019 Talisman avenue for the officer-portrait backlog, and closed negative the 1996 swearing-in
+story, the 2005 speaker election story and the 2001 election piece.
+
+A note for the research routine, left on the pull request as well: a caption that quotes the source at
+length is not the careful choice, it is the one thing the sourcing rules forbid outright — transcribe
+the printed caption into the run report as evidence, then paraphrase for `photos.json`. And check a
+person against `years.json` before giving them an office in a caption. Dating a year photograph by
+when the picture was taken is a reasonable convention and both election-night photographs were left
+where it put them, since each caption says plainly which year's officers it shows. But it breaks when
+the subject is captioned with a title: a portrait on the 2008-09 page calling its subject SGA
+president reads as a claim about 2008-09 whatever the date rule says. Where the two pull apart, the
+office wins.
+
 # 20 September 2026 — an empty queue, the last five merges re-verified, and the stored brief now readable
 
 ## What was open
