@@ -28858,3 +28858,195 @@ different dates, and none merged.
 
 61 years, 1,963 events, 60 people have been president. 2,652 recorded terms of office held by 1,810
 people. Every figure unchanged, which is right for a pass that moved a citation and no claim.
+
+---
+
+# Editor pass, 20 September (afternoon) — one photograph merged, its caption trimmed to the page
+
+## The queue
+
+One pull request open, #536, "Research: photographs (rolling)", on `research-photos`, cut from
+current `main` and one commit ahead of it. Merged. The queue is now empty.
+
+The three branches this pass was briefed to rescue — #6 photographs, #7 the 1980s, #8 the 2020s —
+are not open and have not been since 18 August, when all three were closed against the 4 August
+orphan history. The standing brief still lists them as stale and waiting; they are settled, and the
+morning pass of 20 September recorded the same finding. Nothing was reopened.
+
+## What was in it
+
+A single new claim: one year photograph for 1996-97, `1996-97-keith-coffman-elected.jpg`, cited to
+Herald 72:54 of 24 April 1997, p. 3. Fewer than eight claims, so all of it was checked rather than
+a sample.
+
+The local unfiltered index confirms `dlsc_ua_records/3012` is that issue and lists Matt
+Batcheldor's "New Student Government Association President Maps Upcoming Term" in its article list.
+The issue PDF was then read — the direct route to `digitalcommons.wku.edu` is still behind the
+Cloudflare challenge, so it came from the Wayback capture of `article=4039` — and p. 3 rendered and
+looked at rather than searched. The identification holds and holds on the page itself: the headshot
+sits inside the ruled pull-quote box, immediately right of the attribution reading "— Keith
+Coffman / Russellville junior". The black bar across the top of the committed crop is that box's
+top rule, which establishes where the crop came from as well as who is in it. The page's body
+carries "Meet next year's Student Government Association president" and "the Russellville junior",
+which is the rest of the caption. Coffman's `also_regent` flag at 1997-98 is independently
+supported by the same article.
+
+Not a duplicate: his 1997-98 leader portrait is a different photograph from a different issue,
+Herald 73:54 of 5 May 1998. Real JPEG. The spring-elections rule is respected — the presidency
+stays filed forward at 1997-98 and only the photograph sits in 1996-97, the year it was published,
+alongside that year's existing 24 April 1997 event drawn from the same issue.
+
+## What was cut
+
+The caption said the photograph was "photographed for the Herald's report". The page proves it ran
+with the report; it does not prove the occasion it was taken on. Trimmed to "in the headshot that
+ran with the Herald's report", which is what can be shown. Nothing else in the entry was touched —
+this is the over-claimed-but-real case that is worth rescuing rather than deleting.
+
+One factual error corrected in the run note: the report ran two days after the vote, not four. The
+article dates the election to "Tuesday", which against a 24 April 1997 issue is 22 April. The
+error never reached the data — the caption said only "days after" — but it was in the note a later
+run would read, and in the pull request body, where it stands uncorrected.
+
+The article carries a good deal about Coffman personally — his age, his car, his answer on the
+non-discrimination policy. None of it is in the caption, and none of it should be.
+
+## Confirmed in passing, and left for the research routine
+
+Page 3 carries the full results box for the April 1997 election, which the run note flagged and
+correctly declined to act on: President Coffman 534, Carlene Lodmell 334; Vice President Leigh Ann
+Sears 498, David Apple 371; Secretary Jamie Fite 452, Darlene Lodmell 396; Treasurer Chad Lewis
+518, Steve Roadcap 327. Recorded here so the next routine to work the officer data has it verified.
+Carlene and Darlene Lodmell stand on the same ballot for different offices, which is one more
+contemporaneous confirmation, from a source not previously cited for it, that they are two people.
+
+## Still open
+
+Six year-photograph gaps: 1994-95, 1995-96, 2000-01, 2005-06, 2006-07, 2008-09. The run note is
+candid that the 1994-95 and 1995-96 pair is the hard one, because those issues carry no OCR layer
+and cannot be keyword-searched — a photograph there has to be found by paging through an issue.
+The roughly 175-name cabinet and Senate officer backlog is untouched. The long-standing questions
+are unchanged: Lyne against Zielke for 1970-71, David Payne for 1982-83, the regent seat before
+Norfleet's February 1982 runoff, the outcome of the 1999-00 Coates investigation, and the pre-2000
+legislation on TopSCHOLAR. The three items carried forward from the midday pass — Raley's 2012-13
+term, the 1979-80 treasurer's margin, and committee chairs sitting in `senate.officers` — all
+stand.
+
+## The numbers
+
+`build.py` clean and idempotent on main after the merge; `site/` came back byte-identical on a
+second run. `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` returns the
+same four pairs as every recent pass — the 1997-98 designated driver cards, the 1991-92 regent
+advisory committee bill, the 1971-72 KCLU suit and the 2003-04 plus/minus fight — each an
+introduction and its outcome on different dates, none of them touched by this diff and none merged.
+
+61 years, 1,963 events, 60 people have been president. 2,652 recorded terms of office held by 1,810
+people, 98% of them with an account of what the person did. 73 portraits and 68 year photographs,
+the last of those the new one. 3,591 citations, up by one.
+
+---
+
+# Editor pass, 20 September (evening) — an empty queue, and a correction that was written but never finished
+
+## The queue
+
+Empty, for the fourth pass running. `git fetch origin` and a listing of open pull requests return
+nothing: there is no research PR awaiting review. The three branches this pass was briefed to
+rescue — #6 photographs, #7 the 1980s, #8 the 2020s — are still closed, as they have been since
+18 August, when all three were closed against the 4 August orphan history. The morning and
+afternoon passes of 20 September recorded the same finding. Nothing was reopened.
+
+GitHub was reachable this run: `gh` is not installed in this container, as AGENT-LANDING.md says,
+but git push is credentialed and the GitHub tools answer. This was a full pass, not a review-only
+one.
+
+The two branches that still carry commits, `research-photos` and `research-night-report-0920pm`,
+were checked by content rather than by commit count, because the merges are squashed and a squashed
+branch stays nominally "ahead". Neither holds anything main lacks: `research-night-report-0920pm`
+is identical to main outside `site/`, and `research-photos` differs only by *missing* 85 lines of
+this file. Nothing to merge.
+
+## The sweep: committee chairs recorded as officers
+
+With no queue, this pass took the item the midday pass left open — committee chairs sitting in
+`senate.officers` — and swept the factual half of it, which had never been done. The midday pass
+looked at 2014-15 and found the rows honestly titled; the question it did not ask is whether
+anywhere in the 61 years a committee chair is recorded under a real officer's title, which is trap
+§6.2 and the error that killed all 39 "missing president" claims.
+
+Every office title in `senate.officers` (582 rows) and `executive` (368 rows) was tallied and read.
+**The trap is not tripped.** Every chair row says chair, chairman, chairperson, head or co-chair
+plainly; not one is dressed as Speaker, Secretary or a vice presidency. The structural complaint
+stands — the chairs do sit in the officer list rather than in `committees` — but it remains
+structural, and it is still a schema-wide job rather than an editor's cut.
+
+Thirteen committee-chair rows do sit in `executive` rather than the Senate list. Those were read
+individually and left alone: in the modern SGA a committee chair genuinely is cabinet, and several
+of the rows (Ashby's, McDivitt's) carry notes that are candid to the point of arguing against
+themselves. Being candid about a weak source is not an error to cut.
+
+## What I cut
+
+The sweep turned up one row that was not honest, and it is the one this pass exists for.
+
+**Mitchell Bailey was listed twice in 1998-99** — once in the Senate list as "Pearce-Ford Tower
+Representative, Congress", and once in the *executive* list under the title "Officer (title not
+specified in the archive)". The second row rested on nothing but his having issued the Executive
+Council's written response to an anonymous complaint about the tone of SGA meetings. Issuing a
+body's written response is not a statement of office; it is trap §6.2 in its subtler form, an
+author read as an officer.
+
+The correction had already been found. The Senate row's own note read "A correction: the archive
+lists him among the executive officers with an unstated title... he held no executive office that
+the minutes record." A research pass worked it out, wrote it down, added the corrected row — and
+never removed the wrong one. So the live site has been carrying both: a man listed as an executive
+officer of SGA, and, three inches down its own year page, a note saying he held no executive
+office. That is a self-contradiction published under the project's name, and it is exactly what an
+editor is for.
+
+Verified against the primary source before cutting, not against the note. The minutes of
+17 November 1998 are already mirrored in `data/documents/`, so no crawl was needed; the text layer
+was extracted locally and read. It records that "PFT representative Mitchell Bailey spoke to
+Congress", with his remarks attached — PFT being Pearce-Ford Tower. The same minutes carry the
+officer reports of the whole executive that night, Cosby, Lewis, Ruminer, Sweatt and Bastin, which
+match the archive's executive list for 1998-99 exactly, and Bailey is not among them. The
+contemporaneous source names his seat and excludes him from the executive.
+
+The executive row was removed. Nothing sourced was lost with it: the fact it carried — that he
+issued the response — survives in the year's event of 10 November 1998, which states it carefully
+and never claims an office, and its source, SGA Documents/Reports/28, is now carried on the
+surviving Senate row as `src2` as well. The note and profile were rewritten so the correction still
+reads as a correction after the removal, rather than describing a row that no longer exists, and so
+they no longer say the two sources "disagree on his role": they do not. One names his seat; the
+other names no office at all.
+
+## What I did not do
+
+Raley's 2012-13 term and the 1979-80 treasurer's margin are both still open and both still
+additions rather than cuts, so both stay with the research routine.
+
+One new observation for that routine, and it is bigger than it first looked.
+`data/documents/1998-99-minutes-1998-11-17.pdf` — the document that settles this correction — is
+mirrored on disk but referenced nowhere in `years.json`, so no reader can reach it from the site.
+Checking the rest: **98 of the 308 mirrored documents are orphaned the same way**, very nearly a
+third. They are copied into `site/docs/` on every build and linked from nothing. Most are runs of
+ASG and SGA minutes, 1988-89 and 1989-90 among them — primary sources of the best kind, already
+downloaded, already paid for in crawl time, and invisible.
+
+This is not an editor's cut and it is not a research question; it is a matter of attaching files
+that are already in the repository to the years they belong to. It is the largest piece of work
+this pass found and it is worth a routine of its own.
+
+## The numbers
+
+`build.py` clean and idempotent — built twice, and the second run left `site/` byte-identical by
+checksum. `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` returns the same
+four pairs as every recent pass — the 1997-98 designated driver cards, the 1991-92 regent advisory
+committee bill, the 1971-72 KCLU suit and the 2003-04 plus/minus fight — each an introduction and
+its outcome on different dates, none touched by this diff and none merged.
+
+61 years, 1,963 events, 60 people have been president: all unchanged, which is right for a pass
+that cut a term and no event. 2,651 recorded terms of office, down one, held by 1,810 people —
+unchanged, because Bailey keeps the seat he actually held. 73 portraits and 68 year photographs,
+unchanged. 3,590 citations, down one: the withdrawn row's, the same source still cited twice over
+in the year it was cut from.
