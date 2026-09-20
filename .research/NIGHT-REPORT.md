@@ -29025,10 +29025,17 @@ other names no office at all.
 Raley's 2012-13 term and the 1979-80 treasurer's margin are both still open and both still
 additions rather than cuts, so both stay with the research routine.
 
-One new observation for that routine: `data/documents/1998-99-minutes-1998-11-17.pdf` is mirrored
-on disk but referenced nowhere in `years.json`, so no reader can reach it from the site. It is the
-document that settles this correction. Attaching it — and checking how many of the 308 mirrored
-documents are orphaned the same way — is worth a pass of its own.
+One new observation for that routine, and it is bigger than it first looked.
+`data/documents/1998-99-minutes-1998-11-17.pdf` — the document that settles this correction — is
+mirrored on disk but referenced nowhere in `years.json`, so no reader can reach it from the site.
+Checking the rest: **98 of the 308 mirrored documents are orphaned the same way**, very nearly a
+third. They are copied into `site/docs/` on every build and linked from nothing. Most are runs of
+ASG and SGA minutes, 1988-89 and 1989-90 among them — primary sources of the best kind, already
+downloaded, already paid for in crawl time, and invisible.
+
+This is not an editor's cut and it is not a research question; it is a matter of attaching files
+that are already in the repository to the years they belong to. It is the largest piece of work
+this pass found and it is worth a routine of its own.
 
 ## The numbers
 
