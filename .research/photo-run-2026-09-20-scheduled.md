@@ -17,8 +17,12 @@ Re-checked the four standing priorities fresh against current `data/years.json` 
   portrait; a scripted cross-check of every leader name against `photos.json`'s `leaders` array
   came back with zero missing presidents or regents. The four named files, and a further sample,
   all check out as real JPEGs (`ffd8ffe0`).
-- **Priority 4 (a photo for every year): still satisfied at the minimum bar.** All 61 years carry
-  at least one photograph in `photos.json`'s `years` array.
+- **Priority 4 (a photo for every year): satisfied only in the loose sense.** All 61 years carry
+  at least one photograph of some kind, but that is made up by leader portraits. Eleven years
+  carry no general year photograph in `photos.json`'s `years` array at all: 1994-95, 1995-96,
+  1996-97, 1997-98, 2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09 and 2009-10. (Corrected
+  by the editor pass of 20 September; the run originally recorded this priority as fully
+  satisfied, which contradicted its own closing note about the 1995-96/1996-97 gap.)
 - **Priority 3 (cabinet/Senate officers): still the open queue**, unchanged in scale — roughly 175
   executive-cabinet and Senate-officer/committee-chair names still carry no portrait, spanning
   1977-78 through 2023-24.
@@ -58,7 +62,12 @@ were two captions that turned out to identify different people entirely:
   Jerdon** being sworn in, not Elizabeth Gannon.
 
 Both Lun and Jerdon (as "Gabriel Jerdon", matching `years.json`) already have portraits in this
-archive, including ones drawn from these exact two photographs — so this was a useful check
+archive, though drawn from *different* photographs, not these two: Lun's portrait comes from the
+Herald of 1 October 2024 (`wkuherald.com/78720/`) and Jerdon's from 16 October 2025
+(`wkuherald.com/87819/`). (Corrected by the editor pass of 20 September; the run originally
+claimed the existing portraits came from these same two frames.) Both captions above are
+nonetheless usable identifications in their own right, should a future run want a second frame
+for either person — so this was a useful check
 against gaps in `years.json`'s `organization.senate` coverage, not a wasted one, but it produced no
 new work either way. Reynolds, Tomas and Cisco are common enough surnames that the returned posts
 were dominated by unrelated sports and campus coverage; none of the SGA-flavored results among
@@ -96,9 +105,11 @@ archive.org paths) were unaffected by either block and worked normally throughou
 ## Nothing added
 
 `data/photos.json` and `data/photos/` are unchanged. `python3 scripts/build.py` and
-`python3 scripts/check_data.py` both pass clean on the unmodified data; `site/` was regenerated,
-found identical to the committed copy, and left alone (nothing to revert). This report is the only
-new file this run produces.
+`python3 scripts/check_data.py` both pass clean on the unmodified data; `site/` was regenerated
+and left alone. This report is the only new file this run produces. (Editor's note, 20 September:
+a rebuild is not byte-identical to the committed copy — the build stamps the current date, so 88
+files differ on their "revised"/"Built" line and nothing else. The committed `site/` was built on
+18 September.)
 
 ## Left for the next run
 
