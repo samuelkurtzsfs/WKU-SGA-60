@@ -28943,3 +28943,103 @@ introduction and its outcome on different dates, none of them touched by this di
 61 years, 1,963 events, 60 people have been president. 2,652 recorded terms of office held by 1,810
 people, 98% of them with an account of what the person did. 73 portraits and 68 year photographs,
 the last of those the new one. 3,591 citations, up by one.
+
+---
+
+# Editor pass, 20 September (evening) — an empty queue, and a correction that was written but never finished
+
+## The queue
+
+Empty, for the fourth pass running. `git fetch origin` and a listing of open pull requests return
+nothing: there is no research PR awaiting review. The three branches this pass was briefed to
+rescue — #6 photographs, #7 the 1980s, #8 the 2020s — are still closed, as they have been since
+18 August, when all three were closed against the 4 August orphan history. The morning and
+afternoon passes of 20 September recorded the same finding. Nothing was reopened.
+
+GitHub was reachable this run: `gh` is not installed in this container, as AGENT-LANDING.md says,
+but git push is credentialed and the GitHub tools answer. This was a full pass, not a review-only
+one.
+
+The two branches that still carry commits, `research-photos` and `research-night-report-0920pm`,
+were checked by content rather than by commit count, because the merges are squashed and a squashed
+branch stays nominally "ahead". Neither holds anything main lacks: `research-night-report-0920pm`
+is identical to main outside `site/`, and `research-photos` differs only by *missing* 85 lines of
+this file. Nothing to merge.
+
+## The sweep: committee chairs recorded as officers
+
+With no queue, this pass took the item the midday pass left open — committee chairs sitting in
+`senate.officers` — and swept the factual half of it, which had never been done. The midday pass
+looked at 2014-15 and found the rows honestly titled; the question it did not ask is whether
+anywhere in the 61 years a committee chair is recorded under a real officer's title, which is trap
+§6.2 and the error that killed all 39 "missing president" claims.
+
+Every office title in `senate.officers` (582 rows) and `executive` (368 rows) was tallied and read.
+**The trap is not tripped.** Every chair row says chair, chairman, chairperson, head or co-chair
+plainly; not one is dressed as Speaker, Secretary or a vice presidency. The structural complaint
+stands — the chairs do sit in the officer list rather than in `committees` — but it remains
+structural, and it is still a schema-wide job rather than an editor's cut.
+
+Thirteen committee-chair rows do sit in `executive` rather than the Senate list. Those were read
+individually and left alone: in the modern SGA a committee chair genuinely is cabinet, and several
+of the rows (Ashby's, McDivitt's) carry notes that are candid to the point of arguing against
+themselves. Being candid about a weak source is not an error to cut.
+
+## What I cut
+
+The sweep turned up one row that was not honest, and it is the one this pass exists for.
+
+**Mitchell Bailey was listed twice in 1998-99** — once in the Senate list as "Pearce-Ford Tower
+Representative, Congress", and once in the *executive* list under the title "Officer (title not
+specified in the archive)". The second row rested on nothing but his having issued the Executive
+Council's written response to an anonymous complaint about the tone of SGA meetings. Issuing a
+body's written response is not a statement of office; it is trap §6.2 in its subtler form, an
+author read as an officer.
+
+The correction had already been found. The Senate row's own note read "A correction: the archive
+lists him among the executive officers with an unstated title... he held no executive office that
+the minutes record." A research pass worked it out, wrote it down, added the corrected row — and
+never removed the wrong one. So the live site has been carrying both: a man listed as an executive
+officer of SGA, and, three inches down its own year page, a note saying he held no executive
+office. That is a self-contradiction published under the project's name, and it is exactly what an
+editor is for.
+
+Verified against the primary source before cutting, not against the note. The minutes of
+17 November 1998 are already mirrored in `data/documents/`, so no crawl was needed; the text layer
+was extracted locally and read. It records that "PFT representative Mitchell Bailey spoke to
+Congress", with his remarks attached — PFT being Pearce-Ford Tower. The same minutes carry the
+officer reports of the whole executive that night, Cosby, Lewis, Ruminer, Sweatt and Bastin, which
+match the archive's executive list for 1998-99 exactly, and Bailey is not among them. The
+contemporaneous source names his seat and excludes him from the executive.
+
+The executive row was removed. Nothing sourced was lost with it: the fact it carried — that he
+issued the response — survives in the year's event of 10 November 1998, which states it carefully
+and never claims an office, and its source, SGA Documents/Reports/28, is now carried on the
+surviving Senate row as `src2` as well. The note and profile were rewritten so the correction still
+reads as a correction after the removal, rather than describing a row that no longer exists, and so
+they no longer say the two sources "disagree on his role": they do not. One names his seat; the
+other names no office at all.
+
+## What I did not do
+
+Raley's 2012-13 term and the 1979-80 treasurer's margin are both still open and both still
+additions rather than cuts, so both stay with the research routine.
+
+One new observation for that routine: `data/documents/1998-99-minutes-1998-11-17.pdf` is mirrored
+on disk but referenced nowhere in `years.json`, so no reader can reach it from the site. It is the
+document that settles this correction. Attaching it — and checking how many of the 308 mirrored
+documents are orphaned the same way — is worth a pass of its own.
+
+## The numbers
+
+`build.py` clean and idempotent — built twice, and the second run left `site/` byte-identical by
+checksum. `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` returns the same
+four pairs as every recent pass — the 1997-98 designated driver cards, the 1991-92 regent advisory
+committee bill, the 1971-72 KCLU suit and the 2003-04 plus/minus fight — each an introduction and
+its outcome on different dates, none touched by this diff and none merged.
+
+61 years, 1,963 events, 60 people have been president: all unchanged, which is right for a pass
+that cut a term and no event. 2,651 recorded terms of office, down one, held by 1,810 people —
+unchanged, because Bailey keeps the seat he actually held. 73 portraits and 68 year photographs,
+unchanged. 3,590 citations, down one: the withdrawn row's, the same source still cited twice over
+in the year it was cut from.
