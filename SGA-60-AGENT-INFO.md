@@ -6280,6 +6280,106 @@ editorial review before it reached `main`, so the run's standing result is three
 (Holland, Pulman, Wicks), the completeness census above, and the p. 238 lead. Landed on
 `research-photos`.
 
+### Photograph run of 20 September (scheduled): no photograph landed, but a live lead identified
+and a whole route closed
+
+Re-ran the completeness census after merging `origin/main` in: **priorities 1 and 2 are still
+fully clear** (all four named presidents, and every president/regent in the archive, already has
+a portrait). Of the 216 missing officer portraits, 172 are non-generic named offices (not plain
+"Senator At Large"); a year-level general photograph is still missing for only **6** years now,
+down from the 12 the 19 September run listed — 1994-95, 1995-96, 2000-01, 2005-06, 2006-07,
+2008-09 — apparently narrowed by other routines' work merged from `main` since then, not by
+anything this run did.
+
+**The 2013-2019 "magazine-style" Talisman volumes are a closed route for officer portraits, not
+an untried one.** The 19 September run flagged these (article numbers `9666`-`9673`, `6164`,
+`6167`, `9683` under `context=dlsc_ua_records`, all findable directly off the
+`dlsc_ua_yearbooks` collection index page with no Wayback needed) as worth trying for the dense
+2016-17/2017-18 officer gap. Got the 2018 *Grit* volume (article `9671`, 23.2 MB) via Wayback
+(capture `20240708102546`, `if_` raw endpoint, clean 46MB→24.3MB `%PDF-1.7`, 99 pages) and
+full-text-searched it for every 2017-18 missing officer name and for "government", "senat", "SGA"
+and "Associated Student Government" generally: **zero hits, anywhere in the volume.** Combined
+with the 18 September run's identical finding for the 2003 *About Face* volume (no Organizations
+section at all, magazine format), this establishes the whole run of magazine-style Talismans
+(2003, 2013-2019) lacks club-composite coverage as a matter of format, not content — there is
+nothing in any of them to find, and this route should not be retried without a new reason to
+think a specific volume differs.
+
+**`viewcontent.cgi` was tried against a real (non-headless-detection-proof) browser this run, for
+the first time, and still failed.** Launched actual Chromium (Playwright, at
+`/opt/pw-browsers/chromium-1194`, `--ignore-certificate-errors` for the proxy's CA) rather than
+`curl`, on the theory that Cloudflare's managed challenge might pass a genuine browser engine even
+headless. It did not: 403 "Just a moment..." with the title unchanged after a 10-second wait,
+same as every `curl` attempt with full navigation headers. This is worth recording so a future run
+doesn't re-spend time on the same idea — the block is Cloudflare's own bot-fingerprinting, not
+missing headers, and headless-Chromium fingerprints as a bot too. Direct landing pages
+(`/dlsc_ua_records/<id>/`) remain open throughout, as always.
+
+**`web.archive.org` was confirmed, directly, to be in a genuine outage for stretches of this run**
+— not merely this container's usual intermittency. A plain fetch of `https://web.archive.org/`
+returned the Archive's own "Internet Archive: Temporarily Offline" page outright, more than once,
+interspersed with clean 200s and successful `if_` raw fetches minutes apart (the 2018 Talisman
+download above went through cleanly in this same window). By the end of the run it had gone
+fully unresponsive (connection resets/timeouts on every request, roughly a dozen in a row). This
+matches and sharpens the standing note in §4: budget many retries, spaced well apart, and do not
+conclude a route is closed on the strength of one bad stretch — but also accept that a run can
+end while the outage is still ongoing, as this one did.
+
+**A genuinely new, not-previously-logged lead: the old `wku.edu/Dept/Org/Student/SGA` site had
+per-branch profile pages with individually name-`alt`-tagged officer photographs, separate from
+`e_profiles.html` (which prior runs already mined for 2004-05 executive text bios).** Found via
+CDX prefix search (`url=wku.edu/Dept/Org/Student/SGA*&output=json`, https not http — http got
+`Blocked by egress policy` from this container's proxy) which is worth remembering as a technique
+in its own right: it lists every path the old site ever had captured, not just the ones a prior
+run happened to already know about. Two pages, both archived once, in early 2004:
+- `j_profiles.html` ("Justices' Profiles", captured 15 Jan 2004, for 2003-04): five photos, each
+  `<img alt="Full Name">` — chief.png=Troy Ransdell, j1.png=Scott Broadbent, j2.png=Josh Collins
+  (all three already have portraits from other sources), **j3.png=Gretchen Light** (Justice,
+  Judicial Council, 2003-04 — currently missing), j4.png=Kristin Hartley (not in `years.json` at
+  all, so nothing to attach a photo to even if recovered — a roster question, not a photo one).
+- `l_profiles.html` ("Congress Members' Profiles", captured 6 Jan 2004, for 2003-04): nine
+  photos, same `alt="Full Name"` pattern — rw.png=Robert Watkins, 1.png=Scott Wolfe,
+  2.png=Stacey Adkisson, 3.png=Natalie Croney, 4.png=Katie Dawson, 5.png=Brittany Fausey,
+  **6.png=Tim Howard**, 7.png=Shawn Peavie, 8.png=Evelina Petkova. Only Tim Howard is a new find;
+  everyone else already has a portrait. He is recorded as a 2003-04 Congress *member* (not
+  officer) in `years.json`, so this photo can't attach there, but he holds the identical office
+  ("Co-Chair, Student Affairs Committee", alongside Katie Dawson) as a 2004-05 senate *officer*
+  in the existing record — currently missing a portrait — which this photo, one year earlier,
+  would close on the same reused-portrait-with-a-note pattern the archive already uses for Scott
+  Wolfe's and Scott Broadbent's photos (see their existing `photos.json` entries: a portrait
+  confirmed for one year, explicitly noted and reused for an adjacent year the same person held
+  the same role).
+
+**Neither photo was recoverable this run — the images themselves 404 on Wayback while the HTML
+pages that reference them fetch clean.** This may be a genuine gap in the 2004 crawl (old sites
+often got their HTML captured without embedded images) or it may be more of the same-session
+outage described above; every attempt to tell the two apart with a clean CDX lookup on the exact
+image paths (`.../Pics/Judicial/j3.png`, `.../SGA/6.png`, and the other seven for completeness)
+hit connection resets or timeouts, not a clean populated-or-empty answer, in the outage window
+that closed out this run. **This is the concrete next step for whoever picks up the photograph
+run next**: retry CDX for those two paths specifically (and the other seven, since a bulk answer
+is one query away once the Archive is stable) with patience, on a run where `web.archive.org` is
+confirmed healthy first. If the CDX comes back genuinely empty, this specific lead is closed, but
+the name identifications above (especially Kristin Hartley, who isn't in `years.json` at all) are
+worth keeping on record for the officer-roster routines regardless of whether a photo ever turns
+up.
+
+**wkuherald.com sweep of a dozen 2019-2023 exec/judicial-council gaps found nothing usable.**
+Checked via the WP REST API (`?search=<name>&_embed`, reading featured-image captions and
+in-body `<figcaption>` blocks): Tribhuwan Singh, Zachary Skillman, Danny Vuleta and Alexis Mayne
+returned zero hits; Elizabeth DeLozier, Justin Goins, Brenna Mathews, Erika Puhakka, Turner
+Reynolds, Josh Zaczek, Nicole Massarone, Garrett Baum and Livi Ray all returned hits but no
+caption naming the searched person — captions on these articles consistently name whichever
+president, speaker or other headline officer is the story's actual subject, never a rank-and-file
+senator or associate justice mentioned only in body text. This matches the pattern already logged
+repeatedly elsewhere in this file for the 2016-2023 gap and should be read as confirming it again
+rather than as a new negative worth re-checking the same way.
+
+No file was added to `data/photos.json` this run — every lead either closed negative or is
+blocked on Wayback recovering, not on anything left undone. `build.py` and `check_data.py` both
+pass clean (nothing to break; the only change is this note plus the routine `main` merge). Landed
+on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
