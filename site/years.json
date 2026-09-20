@@ -28425,15 +28425,6 @@
       }
      },
      {
-      "office": "Officer (title not specified in the archive)",
-      "name": "Mitchell Bailey",
-      "note": "Issued the Executive Council's written response to an anonymous congress member's complaint about the tone of SGA meetings, November 1998.",
-      "src": {
-       "label": "TopSCHOLAR - SGA Documents/Reports/28",
-       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/28"
-      }
-     },
-     {
       "office": "Vice President of Public Relations",
       "name": "Brad Sweatt",
       "note": "Elected in the spring 1998 general election after leading the primary with 140 votes. He launched SGA's new web page, thanked Jeff Baynham for designing it, and read the year's Congress theme at the first meeting.",
@@ -28543,13 +28534,18 @@
       {
        "office": "Pearce-Ford Tower Representative, Congress",
        "name": "Mitchell Bailey",
-       "note": "A correction: the archive lists him among the executive officers with an unstated title. The minutes of 17 November 1998 describe him as the Pearce-Ford Tower representative, addressing Congress with remarks attached to the minutes; he held no executive office that the minutes record.",
+       "note": "A correction, 20 September 2026: the archive had also listed him among the year's executive officers under an unstated title, inferred from his having issued the Executive Council's written response to an anonymous complaint. That row has been removed. SGA's minutes of 17 November 1998 call him the Pearce-Ford Tower representative, addressing Congress with his remarks attached, and the officer reports in those same minutes run through the whole executive without him.",
        "profile": [
-        "Mitchell Bailey represented Pearce-Ford Tower in SGA's Congress for 1998-99. The archive's two sources on him disagree on his role: one credits him with issuing the Executive Council's written response to an anonymous Congress member's complaint about the tone of SGA meetings in November 1998, while the Congress minutes of 17 November 1998 record him only as the Pearce-Ford Tower representative, addressing Congress with remarks attached to the minutes, and note he held no executive office. Both describe the same November 1998 episode over the complaint about meeting tone."
+        "Mitchell Bailey represented Pearce-Ford Tower in SGA's Congress for 1998-99. The minutes of 17 November 1998 record that \"PFT representative Mitchell Bailey spoke to Congress\", with his remarks attached. Those same minutes carry the officer reports of the full executive that night — President Stephanie Cosby, Executive Vice President Chad Lewis, and the vice presidents of finance, public relations and administration — and he is not among them.",
+        "Earlier that month he issued the Executive Council's written response to an anonymous Congress member's complaint about the tone of SGA meetings. The archive had read that as evidence of an executive office; the document records him issuing the response and names no office for him."
        ],
        "src": {
         "label": "SGA Meeting Minutes, 17 Nov 1998",
         "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/189"
+       },
+       "src2": {
+        "label": "TopSCHOLAR - SGA Documents/Reports/28",
+        "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/28"
        }
       },
       {
