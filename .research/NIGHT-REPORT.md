@@ -28423,3 +28423,107 @@ outcome for a run that found none.
   could not remove. Commits and the repository itself are unaffected and the published site never
   sees it, but until the platform changes, every editor comment on a pull request will carry a line
   the project's own rules prohibit. Worth the owner knowing it is not an oversight by the pass.
+
+# Editor pass, 20 September — one photograph PR, verified in full, merged with three claims corrected
+
+## What was open
+
+One pull request, #530 "Photograph run, 20 September", pushed to `research-photos` at 02:14 and
+reviewed the same day. Its branch was current with `main` — the merge base was `93685e68`, `main`'s
+own tip — so no stale-branch reconciliation was needed. The brief's three stale pull requests, #6,
+#7 and #8, are still closed, as they have been since 18 August; this is the fourth pass to record it.
+
+The diff was one file: a run report in `.research/`. `build.py` does not read that path and nothing
+under it is rendered, so no claim in this pull request could reach a reader. What it can do is steer
+the next photograph run, and that is the standard it was held to.
+
+## What was verified
+
+Fourteen claims, every external one in the diff, opened at source rather than sampled.
+
+All eight frames of the 20 April 2022 election gallery were read individually through the WordPress
+media API. The captions are Kurtz and Bornefeld (65823), Schroeder alone (65824, 65825), Bornefeld
+and Courtenay (65826, 65827), Reed and Kurtz (65828), Bornefeld and Reed (65829), and all three
+together (65830). None of the eight names Gunnar Robinson, Zaepfel, Vuleta or Singh. The run's
+central negative finding is correct, and its refusal to take those four from the article's running
+prose rather than a caption is the right call under this project's identification bar.
+
+The two surname near-misses hold up and are the best work in the run. `wkuherald.com/83874/`
+captions Mahurin Honors College Senator-Elect Ciin Lun, not Nolan Rongey; `wkuherald.com/74409/`
+captions Gabe Jerdon sworn in as sophomore senator on 23 January, not Elizabeth Gannon. A sweep by
+surname alone is the trap that would have put 88 false pairings into this archive, and this run ran
+it and then declined both hits on the evidence.
+
+Both access blocks reproduce exactly. `digitalcommons.wku.edu`'s landing page for
+`dlsc_ua_records/2986` returns 200, while `cgi/viewcontent.cgi?article=3986` returns HTTP 403 with a
+Cloudflare "Just a moment..." body — the challenge the run describes, not the empty 202 the standing
+documentation describes. `web.archive.org`'s CDX API returns 403, "Blocked by egress policy". The
+issue behind that lead is confirmed from the local index as the *Herald* of 25 April 1996, vol. 71
+no. 56, carrying Fred Lucas's "New Student Government Officers Sworn In".
+
+Presidents and regents: 72 leader entries across 61 years carry `president` or `regent`, and every
+one has a portrait. That claim is sound.
+
+## What I corrected
+
+Three claims, all trimmed back to what is true rather than cut.
+
+The run recorded priority 4, a photograph for every year, as satisfied: "All 61 years carry at least
+one photograph in `photos.json`'s `years` array." Eleven carry none at all — 1994-95 through 1997-98,
+2000-01, 2002-03, 2003-04, 2005-06, 2006-07, 2008-09 and 2009-10. Every year does hold some
+photograph, but that is made up entirely by leader portraits. The report contradicted itself inside
+its own covers, naming the 1995-96/1996-97 gap in its closing section.
+
+It also claimed the existing Ciin Lun and Gabriel Jerdon portraits were "drawn from these exact two
+photographs". They are not: Lun's comes from the *Herald* of 1 October 2024 and Jerdon's from 16
+October 2025, different frames in different years. The correction matters in the useful direction —
+both of the newly found captions name their subject outright, so they are usable second frames, and
+the run closed the lead as barren when it was not quite.
+
+Third, "`site/` was regenerated, found identical to the committed copy". A rebuild differs in 88
+files, on the date stamp alone and nothing else; the committed `site/` was built on 18 September.
+Harmless in itself, but "identical" is the sort of claim a later pass acts on without rechecking.
+
+## Merged
+
+#530, as a merge commit, after the corrections were pushed to its branch. `build.py`,
+`check_data.py` and `check_contrib.py` all exit clean. `check_duplicates.py` reports four pairs,
+all of them pre-existing on `main` and none introduced here; all four were read and all four are
+genuinely separate events — a bill and its later failure, a lawsuit planned and then endorsed, SGA
+opposing plus/minus grading and later legislating against it, and the November 1997 designated-driver
+bill against the February 1998 notice that the cards were going out. Nothing was merged.
+
+After the merge: 61 years, 1963 events, 60 people have been president; 2652 recorded terms of office
+held by 1810 people, 2615 of them (98%) carrying an account of what the person did; 47 people
+recorded under more than one spelling.
+
+## Still open
+
+- **The photograph routine has now over-claimed its coverage three passes running.** `04e6e4bf`
+  corrected the 19 September report on the same point, this pass corrected the 20 September one, and
+  the eleven-year gap was already written down in this file under "Still open" before either run
+  began. The routine is not reading the standing record before it writes its summary, and it is not
+  reconciling its own opening claims against its own closing section. That is the single most useful
+  thing to fix about it: both errors were visible without leaving the document.
+- The eleven years with no scene photograph are unchanged, and now say so in the run's own file too.
+- The ~175-name cabinet and Senate portrait queue is genuinely exhausted against `wkuherald.com`'s
+  live search by both full name and surname. It needs the `viewcontent.cgi` route or Wayback back
+  before it moves; both were confirmed blocked this pass, independently of the run's own testing.
+- `dlsc_ua_records/2986` remains the best single lead for the 1995-96/1996-97 scene-photograph gap
+  and for the Roadcap/Fite/Stith stretch of the officer queue, whenever the PDF route returns.
+- Carried forward unchanged: the 1989 *Herald* page image; p. 238 of the 1984 *Talisman*; Kelly S.
+  Smith and John Holland; Brittany Fausey's unrecoverable 2004-05 portrait; the at-large senate seat
+  spellings; the 728 legislation entries pointing at landing pages; the 18 files with no text layer;
+  Joe Rains's term; the `Amber Daniels` / `Amber Daniel` pair, still correctly unmerged; Mary Fyfe;
+  the 1999-00 Coates investigation outcome; and the pre-2000 legislation gaps.
+- The stored editor brief still opens with `gh auth setup-git`, and `gh` is still not installed here;
+  it still sends the editor to #6, #7 and #8 as open; and it still routes the fallback through
+  `SGA60_SITE` and `SGA60_RESEARCH_TOKEN`, neither of which is set in this container. Nothing was
+  lost — push works directly and the GitHub API serves the rest — but every pass spends its opening
+  minutes rediscovering the same three facts.
+- The comment on #530 carries the appended "Generated by Claude Code" line that `CLAUDE.md` forbids.
+  The previous pass established it cannot be removed from a comment, so this pass did not spend the
+  time re-fighting it. Nothing reached the repository or the site.
+- The token flagged for rotation is still flagged, and this pass repeats the previous one's blemish:
+  probing the environment printed its value into this run's log. It reached no file and no commit,
+  and it is still one more place the value has existed.
