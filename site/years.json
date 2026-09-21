@@ -28869,17 +28869,17 @@
      }
     },
     {
-     "date": "1998-12-08",
+     "date": "1998-12-01",
      "title": "The Kappa Alpha aid vote failed, loudly",
-     "body": "SGA voted the aid down 20 to 22 at its meeting of 1 December, the minutes recording debate on both sides and a defeated amendment to raise the sum from $250 to $1,000. The Herald reported that week that some SGA members were upset after the vote, and a companion letter said SGA had 'abandoned' the Kappa Alphas. Letters defending and attacking the decision ran for the rest of the semester.",
+     "body": "Bill 98-10-F came back for its second reading on 1 December 1998 and SGA voted the aid down, 20 to 22. The minutes record members speaking on both sides and a defeated amendment to raise the sum from $250 to $1,000. The Herald reported the following week that some SGA members were upset after the vote, and a companion letter said SGA had abandoned the Kappa Alphas; letters defending and attacking the decision ran for the rest of the semester.",
      "src": {
-      "label": "Herald 74:27, 8 Dec 1998",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9052"
-     },
-     "src2": {
       "label": "SGA minutes, 1 Dec 1998, TopSCHOLAR",
       "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/187",
       "file": "1998-99-minutes-1998-12-01.pdf"
+     },
+     "src2": {
+      "label": "Herald 74:27, 8 Dec 1998",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9052"
      }
     },
     {
@@ -29177,6 +29177,16 @@
       "label": "Herald 74:50, 13 Apr 1999",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8051"
      }
+    },
+    {
+     "date": "1999-02-02",
+     "title": "The vice president of finance resigned mid-year",
+     "body": "Executive Vice President Chad Lewis told Congress on 2 February 1999 that Vice President of Finance Carleton Ruminer had resigned, effective immediately. The minutes list the office as open for the rest of that meeting and record no reason for the resignation. Lewis gave the finance report in Ruminer's place, putting the account at $23,074.84 after $374.70 of expenditure for the week.",
+     "src": {
+      "label": "SGA minutes, 2 Feb 1999, TopSCHOLAR",
+      "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/202",
+      "file": "1998-99-minutes-1999-02-02.pdf"
+     }
     }
    ],
    "status": "researched",
@@ -29219,9 +29229,9 @@
      {
       "office": "Vice President of Finance",
       "name": "Carleton Ruminer",
-      "note": "Presented the 1998-99 budget to Congress on 1 September 1998 against a balance of $41,783, and reported weekly through the autumn. His goals for the year included extending library hours and creating a book exchange. The surname appears as Rumenier and Rumienier in the 1997 minutes.",
+      "note": "Presented the 1998-99 budget to Congress on 1 September 1998 against a balance of $41,783, and reported weekly through the autumn. His goals for the year included extending library hours and creating a book exchange. The surname appears as Rumenier and Rumienier in the 1997 minutes. He resigned effective immediately on 2 February 1999; the minutes of that meeting list the office as open.",
       "profile": [
-       "Carleton Ruminer served as vice president of finance under Stephanie Cosby, presenting the 1998-99 budget to Congress on 1 September 1998 against a balance of $41,783 and reporting on it weekly through the fall semester. His stated goals for the year included extending library hours and creating a book exchange. His surname appears as Rumenier and Rumienier in SGA's 1997 minutes."
+       "Carleton Ruminer served as vice president of finance under Stephanie Cosby, presenting the 1998-99 budget to Congress on 1 September 1998 against a balance of $41,783 and reporting on it weekly through the fall semester. His stated goals for the year included extending library hours and creating a book exchange. His surname appears as Rumenier and Rumienier in SGA's 1997 minutes. He resigned effective immediately on 2 February 1999, and the minutes of that meeting list the vice presidency of finance as open."
       ],
       "src": {
        "label": "SGA Meeting Minutes, 1 Sep 1998",
@@ -30439,7 +30449,7 @@
     {
      "file": "1998-99-minutes-1999-02-02.pdf",
      "title": "SGA minutes, 2 February 1999",
-     "summary": "Cosby reported from the Board of Regents that both proposed student fee increases had passed, and that she had voted against them. Bills 99-1-S on Faculty Appreciation Day, 99-2-S on reference materials and 99-3-S on a paper shredder all passed on second reading, and Bill 99-4-S implementing an Excellence in Teaching Award was read.",
+     "summary": "Cosby reported from the Board of Regents that both proposed student fee increases had passed, and that she had voted against them. Executive Vice President Chad Lewis announced that Vice President of Finance Carleton Ruminer had resigned effective immediately, and the officer list for the night shows the office open. Bills 99-1-S on Faculty Appreciation Day, 99-2-S on reference materials and 99-3-S on a paper shredder all passed on second reading, and Bill 99-4-S implementing an Excellence in Teaching Award was read.",
      "extract": "Both student fee increases passed at the Regents, and Cosby reported she had voted against them.",
      "sga_pages": "1-3",
      "page": 1,

@@ -1,3 +1,111 @@
+# 21 September 2026 (second pass) — an empty queue, and ten of the new document summaries audited
+
+## What was open
+
+Nothing. No pull request is open on the repository. The photograph run's #542 and the night report
+#543 both landed before 03:31 UTC and are in main; `research-photos` and `research-night-report-0921`
+point at commits main already contains. Every branch the four routines write to is either merged or
+unchanged since its last merge.
+
+The stored brief still names #6, #7 and #8 as stale and open since 4 August. They were closed unmerged
+on 18 August 2026, more than a month ago, and the 20 September pass said the same thing. The brief
+should stop carrying them; a run that follows it literally goes looking for three pull requests that
+have not existed for five weeks.
+
+Access was full. `gh` is still not installed, so the brief's opening command still fails on its first
+word, but the push probe returns `* [new branch] HEAD -> access-probe` and the GitHub tools answer.
+
+## What was verified
+
+With no queue, the pass audited the largest thing published since the last editor run: commit
+f72011e6 of 20 September, which attached 98 mirrored runs of ASG and SGA minutes to their years and
+added 1,239 lines to `years.json`. Those summaries are detailed and specific, they went live on merge,
+and nothing had checked them independently.
+
+Ten of the 98 were sampled at random and each checked three ways — the TopSCHOLAR landing page, the
+archivist's own description of the item, and the text of the mirrored PDF itself. All ten hold.
+
+- Every mirrored file is a real PDF and carries an OCR text layer, so the claims could be read rather
+  than inferred. The meeting date printed in each document's own header matches the date in its title
+  exactly, in all ten cases: 21 Oct 1997, 11 Nov 1997 (Executive Council), 10 Oct 1989, 3 Nov 1998,
+  3 Apr 1990, 6 Dec 1988, 9 Apr 1991, 2 Feb 1999, 27 Feb 2007, 10 Apr 1990.
+- The content claims hold at the level of the individual bill number. The 9 April 1991 summary is the
+  hardest of the ten and the most exact: 91-19-S and 91-20-S on constitutional amendments, 91-21-S on
+  shuttle stops, 91-22-S on larger diplomas and 91-23-S on a fall break all carried; 91-14-S and
+  91-18-S failed for lack of being presented; 91-24-S was amended on first reading and Bill 91-10-S
+  for Phi Beta Lambda had its first. The minutes say each of those things.
+- The 27 February 2007 summary's two checkable structural facts — the eighteenth meeting of the fifth
+  Senate, 24 of 35 senators present — are the document's own opening line, and the special meeting it
+  attributes to the Speaker is Boles announcing it in his own words at the foot of the last page.
+- No advance notice was written up as a report: all ten sources are minutes of meetings that had
+  happened. No committee chair appears as an officer, no person is matched by surname alone, no April
+  result is filed to the year it was held in, and nothing touches the settled facts.
+
+## What was added
+
+**The 1998-99 vice presidency of finance now has the date it fell vacant.** The minutes of 2 February
+1999 record Executive Vice President Chad Lewis announcing that Vice President of Finance Carleton
+Ruminer had resigned, effective immediately; the officer list for that night carries the office as
+open, and Lewis gave the finance report himself. The archive already had Ruminer reporting "weekly
+through the autumn" and Ryan Morrison giving the finance report "by 13 April 1999" — a two-month
+vagueness that this document closes at one end. The minutes give no reason for the resignation, and
+the entry says so rather than guessing. Morrison's entry is unchanged: the 2 February minutes do not
+name a successor, and the date he was appointed is still not established.
+
+Added as an event on 1999-02-02, folded into the document's summary, and noted on Ruminer's executive
+entry and profile. This is a fact from a document already mirrored in the repository and already cited
+by the year — nothing new was crawled for it.
+
+## What was corrected
+
+**The Kappa Alpha aid vote was filed a week after it was taken.** The event headed "The Kappa Alpha
+aid vote failed, loudly" carried the date 1998-12-08 while its own first sentence said the vote was
+taken on 1 December. The date was the Herald's report date, not the vote's. The minutes of 1 December
+1998, mirrored in the repository, settle it: Bill 98-10-F came back for second reading that night,
+Rick Malek moved to raise the sum from $250 to $1,000, the amendment was spoken against, debate was
+closed and the bill failed 20 to 22. Moved to 1998-12-01, with the minutes as the first source and the
+Herald of 8 December kept as the second for the aftermath it reported. The body is unchanged in
+substance; it now reads in step with its date, and the vote sits in the timeline on the night it
+happened rather than after the letters about it.
+
+A second batch of six summaries was sampled while the checks ran, and those six hold too — the
+16 January 1990, 20 March 1990, 2 September 1997, 9 December 1997, 8 September 1998 and 1 December
+1998 minutes, each with the meeting date printed in its own header matching its title. Sixteen of the
+98 are now audited.
+
+## What was cut
+
+Nothing. Sixteen summaries audited and sixteen held, which is the first sample in this report's
+history to come back clean.
+
+## Duplicates
+
+`check_duplicates.py` reports the same four pairs as before and all four are genuinely two events:
+
+- **1997-98** — Bill 97-3-F passing on 4 November 1997 and the Herald reporting on 17 February 1998
+  that the cards would go out the next day. Three and a half months apart.
+- **1991-92** — the student regent advisory committee bill introduced on 28 January 1992 and failing
+  after amendment on 6 February.
+- **1971-72** — the Kentucky Civil Liberties Union planning court action on 29 February 1972 and
+  Associated Students endorsing the suit on 28 March.
+- **2003-04** — SGA voicing opposition to plus/minus grading on 25 September 2003 and passing
+  legislation against it unanimously on 16 October.
+
+## Counts after the build
+
+61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by 1,810
+people, 2,614 of them (98%) carrying an account of what the person did, and 47 people recorded under
+more than one spelling or name. 308 documents and 1,111 legislation files. `build.py` completes
+clean, `check_data.py` and `check_contrib.py` both exit 0.
+
+## Still open
+
+- The brief's three stale pull requests, which no longer exist.
+- 82 of the 98 newly attached document summaries are still unaudited. Sixteen at random all held, which
+  is good evidence the pass was careful, but it is a sample.
+- Ryan Morrison's appointment date as vice president of finance, somewhere between 2 February and
+  13 April 1999.
+
 # 20 September 2026 (second pass) — a photograph run merged, a presidency taken back off the wrong year
 
 ## What was open
