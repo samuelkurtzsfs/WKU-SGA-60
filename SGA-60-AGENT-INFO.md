@@ -6518,15 +6518,20 @@ three standing Herald leads for the year-photo gap (`article=9903` 2000-01, `art
 `article=7740` 2008-09), 3 seconds apart with full navigation headers: three `HTTP 403` Cloudflare
 challenge pages, byte-for-byte the same 5,995-byte challenge body each time. Confirmed independently
 through the platform's own `WebFetch` tool against `article=9903` — same 403. `web.archive.org` was
-in a **confirmed, sustained outage for the entire session**, not just a bad stretch: the CDX API
-returned the Archive's own "Internet Archive: Temporarily Offline" page, a bare `503`, a connection
-reset, and two more timeouts across six attempts spread over several minutes (three separate rounds,
-15-45 seconds apart), and a plain fetch of `https://web.archive.org/` itself returned the same
-offline page. `WebFetch` against a Wayback URL failed outright with "Claude Code is unable to fetch
-from web.archive.org." No CDX query and no `if_` raw fetch succeeded even once. This closes out the
-session for that route entirely — a future run should still retry it fresh rather than assume it,
-per the standing note that reachability varies run to run, but this run's own six-for-six failure
-rate is stronger than "one bad stretch."
+**unreachable for the entire session, six attempts for six failures**: the CDX API returned the
+Archive's own "Internet Archive: Temporarily Offline" page, a bare `503`, a connection reset, and
+two more timeouts across six attempts spread over several minutes (three separate rounds, 15-45
+seconds apart), and a plain fetch of `https://web.archive.org/` itself returned the same offline
+page. `WebFetch` against a Wayback URL failed outright with "Claude Code is unable to fetch from
+web.archive.org." No CDX query and no `if_` raw fetch succeeded even once.
+
+Only the "Temporarily Offline" page is positive evidence of an outage at the Archive's end; the
+resets and timeouts are indistinguishable, from inside this container, from a failure on the
+egress path. **The editor's re-check the same day drew a connection reset attributed to the
+container's own proxy — not the offline page — so the cause is not settled and should not be
+recorded as one.** What is established is that the route returned nothing usable this session. A
+future run should retry it fresh rather than assume either diagnosis, per the standing note that
+reachability varies run to run.
 
 **Two genuinely new hosts were tried, surfaced by a plain web search for the WKU Archives
 photograph collection rather than anything already logged in this file, and both closed:**
