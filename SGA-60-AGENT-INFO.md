@@ -6651,6 +6651,124 @@ No file was added to or removed from `data/photos.json`; `build.py` and `check_d
 clean on the unmodified tree. Merged `origin/main` (real merge base, no conflicts) before starting.
 Landed on `research-photos`.
 
+### Photograph run of 21 September (fourth pass): `viewcontent.cgi` bypassed entirely — archive.org serves Talisman page images directly, no Cloudflare, no rate limit
+
+Re-confirmed the baseline before touching anything: still zero of 61 `leaders` entries without a
+portrait, still the same 6 years with no year-photo (1994-95, 1995-96, 2000-01, 2005-06, 2006-07,
+2008-09), still 216 named executive/Senate officer slots without one. `viewcontent.cgi` retested
+fresh, same Cloudflare 403 challenge page every prior run this month has logged. But
+`web.archive.org` itself answered real snapshots on this attempt (a `formersgapres.htm` fetch
+returned `HTTP 200` with real content) even while its CDX search API returned "Temporarily
+Offline" — so treat the two as separate services with independent uptime, not one route, when a
+future run judges "is Wayback open."
+
+**The actual find: archive.org does not put its 19 Talisman scans behind `viewcontent.cgi` at
+all.** `digitalcommons.wku.edu/cgi/viewcontent.cgi` is a *TopSCHOLAR* front door and it is the one
+Cloudflare gates. The archive.org items this file already identified (1943, 1946, 1947, 1963-65,
+1971-1981, 1986, 1987 — nothing 1988-1994 or later) are hosted independently of TopSCHOLAR and
+carry their own full page-image files, reachable straight from archive.org with no gate this run
+could find:
+
+- `https://archive.org/metadata/<identifier>` lists every file archive.org holds for the item.
+  For a Talisman this includes a full `.pdf` (100+ MB, direct `archive.org/download/` link, `HTTP
+  302` redirecting to the real host — follow it, plain `curl` without `-L` reports a false `HTTP
+  302 size=0`) **and** a `Single Page Processed JP2 ZIP`, which is what the next endpoint reads from.
+- `https://iiif.archive.org/iiif/<identifier>$<leaf>/full/full/0/default.jpg` returns one page as
+  a full-resolution JPEG (3000-3200px wide) — real `FF D8` JPEG bytes, confirmed on
+  talisman1975west, 1978west, 1979west and 1981west, no Cloudflare challenge, no pacing needed
+  beyond ordinary courtesy, no login. **Use `curl -L`.** This endpoint answers `HTTP 302` and
+  redirects to the image host; a plain `curl` without `-L` writes a 499-byte HTML stub under your
+  `.jpg` name and reports success, which is §6.7's failure mode exactly. Check `FF D8` before you
+  believe you have a page. `<leaf>` is the scan's physical leaf number, and it is **one more than**
+  the `n` in the item's own `/details/<id>#page/n<N>/mode/1up` viewer URL, which counts images
+  from zero. Confirmed against CLAUDE.md's already-settled LaCivita citation: `talisman1975west`
+  `$113` is printed page 109, carrying the brick-wall photo and the caption naming LaCivita
+  "(right)" with treasurer Ricky Johnson that the settled note describes — so the note's `n112`
+  and this endpoint's `$113` are the same physical page. **This is the way to actually see a
+  Talisman page image for any of the 19 covered years, full stop** — no need to fight
+  `viewcontent.cgi` or Wayback for these years ever again.
+- `https://<server>/fulltext/inside.php?item_id=<id>&doc=<id>&path=<dir>&q=<query>` full-text
+  searches inside the scan and returns matched passages with a `page` number per match, plus
+  bounding boxes. Get `<server>` and `<dir>` from the metadata call's `server`/`dir` fields.
+  **The `page` field this returns is the physical leaf number, matching `iiif.archive.org`'s
+  `$<leaf>` directly — it is not the printed page number.** This run first misread it as a printed
+  page and fetched the wrong page twice before the mistake became obvious (a "David Young" hit
+  reported as "page 291" was actually leaf 291 = printed page 289; the printed-page-234 guess for
+  "Mark Chesnut" that follows was a separate, correct use of the *other* mapping below). Don't
+  make the same mistake: match `inside.php`'s `page` straight to `iiif`'s `$leaf`, no conversion.
+- `https://archive.org/download/<identifier>/<identifier>_page_numbers.json` separately maps
+  leaf number to *printed* page number, for when a source (like this file's own citations, or the
+  index at the back of a Talisman) names a printed page rather than giving a quote to search for.
+  **Trust only entries where `confidence` is a real number.** Entries with `confidence: null`
+  are unreliable guesses — its entry for 1978 printed page "38" points at leaf 42, and leaf 42 is
+  really printed page 36. The page wanted that time was reached instead by going straight back to
+  the `inside.php` hit and fetching its leaf number as `$leaf`.
+  **Do not bracket with nearby high-confidence entries and count.** That is the trap, not the way
+  out of it: in `talisman1978west` leaves 35, 36, 37 and 39 all carry `confidence: 100` and all
+  read printed = leaf − 4, and counting that run forward gives leaf 42 = printed 38 — wrong by
+  two, because unnumbered section-opener leaves sit in between. Counting only propagates the
+  error. Verified against the page images themselves, 21 September 2026: leaf 38 is printed 34
+  (the ASG spread) and leaf 42 is printed 36 ("Computers on the Hill"). **Fetch the leaf and read
+  the printed number off the page.** It is one request and it is the only answer that holds.
+
+**What this bought this run: nothing landed, but the route is now proven and it is fast.** All 8
+named executive/Senate officers still missing a portrait who fall in an archive.org-covered
+year were checked by name through `inside.php` and by eye on the resulting page:
+
+- **Vern Pulman** (Representative-at-Large, 1974-75) — no hit anywhere in `talisman1975west`,
+  by either `grep` on the plain djvu text or `inside.php`. Not pictured or not captioned by this
+  name in this volume.
+- **David Bass** (Activities Vice President, 1977-78) — found, `talisman1978west` leaf 38 (printed
+  page 34), captioned "A LIGHT MOMENT IN AN ASG MEETING brings laughter from president Bob Moore
+  and smiles from activities vice president David Bass, secretary Sharon May and vice president
+  Cathy Murphy," over a photo of four people. **Declined**: the caption gives no left-right order
+  and three of the four named people are described only as smiling, so there is no way to say
+  which pictured face is Bass rather than May or Murphy. A future run with a second, independent
+  source naming his face specifically could still use this page.
+- **David Young** (Administrative Vice President, 1978-79) — the only hit in `talisman1979west`
+  is a body-text quote ("David Young, administrative vice president, said this was done to..."),
+  on a page (leaf 291, printed 289) whose two photos are captioned for other subjects entirely.
+  No portrait on this page.
+- **Alice Wicks** (Secretary, 1978-79) — no hit in `talisman1979west` beyond the plain surname
+  index line already known from `grep`. Not captioned by full name anywhere findable.
+- **Steve Wilson** (Judicial Council Chairman, 1978-79) — `talisman1979west` has a "STEVE WILSON,
+  agriculture" line in what reads as the individual senior-portrait section (leaf/page ~381) and
+  two unrelated Spring Sing mentions. **Declined**: nothing ties this Steve Wilson to student
+  government, and Wilson is exactly the kind of common surname §6.4 warns never to match alone —
+  an agriculture major captioned with no other detail is not enough to claim he is the ASG
+  officer of the same name.
+- **Mark Chesnut** (Treasurer, 1980-81) — `talisman1981west` printed page 234 (leaf 238, a
+  the volume's own index line points at printed 234 and leaf 238 is the page carrying the name,
+  which is what ties the two together; the leaf itself prints no page number) is the intramural
+  sports results page, listing "Mark Chestnut (Sigma Alpha Epsilon)" as a Badminton and doubles
+  Racquetball winner. No photo is captioned with his name; the page's one large photo is an
+  unrelated football/rugby action shot. Also worth flagging: this source spells him **Chestnut**,
+  not Chesnut — the index line `grep` found separately does too ("Chesnut, Mark Cameron 234" is
+  actually itself an OCR misread; the printed spelling on the page is "Chestnut"). Not acted on
+  since it's outside this run's job, but a future roster pass on 1980-81 should check which
+  spelling the SGA-side sources use.
+- **Chris Millay** (Parliamentarian, 1986-87) and **Dwight Austin** (Sergeant-at-Arms, 1986-87)
+  — no hit for either full name in `talisman1987west`. The only Millays and Austins findable are
+  unrelated people (a graduating Beth Ann/Lori Ann Millay, an Austin Peay opponent, unrelated
+  students named Austin).
+
+No file was added to or removed from `data/photos.json`; the only change this run makes is this
+section. `build.py` and `check_data.py` both pass clean on the unmodified data tree. Merged
+`origin/main` (fast-forward, no conflicts) before starting. Landed on `research-photos`.
+
+**Editor's check, 21 September 2026.** The route above was re-walked independently before this
+section was merged, and it works: `metadata` lists the files, `iiif` returned real page images
+for 1975, 1978 and 1981, and `inside.php` told a true zero (Pulman, 0 matches) from a real hit
+set (LaCivita, 11) — so its negatives are negatives, not §6.7 silent failures. `$113` of
+`talisman1975west` is printed page 109 and carries the LaCivita brick-wall photo and its caption,
+which corroborates CLAUDE.md's settled note rather than disturbing it. Three things in this
+section were corrected in the same pass: the `iiif` endpoint 302-redirects and needs `curl -L`;
+the viewer's `n` is one less than `$leaf`, not equal to it; and the "bracket with high-confidence
+neighbours and count" advice was removed, because counting is what produces the leaf 42 error it
+was meant to avoid. The eight declined identifications were all checked against the page images
+and all eight declines are right — the 1978 caption names four people in a four-person photograph
+with no left-right order, and nothing ties the 1979 "Steve Wilson" to student government.
+
 ## 9. Restarting a session
 
 ```bash
