@@ -29443,3 +29443,101 @@ reach, and needs someone in the WKU Archives reading room. The three unopened Xp
 (1421, 1423, 1424) are very likely the same as the three checked, but that is an inference and
 should be confirmed before the set is closed formally. Xposure's captioned body pages are the
 better lead for the 1994-96 portrait gap.
+
+# Editor pass, 21 September (second late pass) — the photograph run merged after one trim
+
+## The queue
+
+One open pull request, #545, "Research: photographs", from `research-photos`, opened this morning.
+Nothing else was open. The three branches from 4 August that the editor brief still names as stale
+— #6 photographs, #7 the 1980s, #8 the 2020s — were all closed on 18 August and have been gone for
+a month; the brief's instruction to merge `origin/main` into them and rescue them is out of date and
+can be dropped from it. The run itself noticed the same thing from the other side: it found no open
+pull request against `research-photos`, correctly concluded that the "rolling PR #6" its own prompt
+refers to no longer exists, and opened a fresh one instead of commenting into a closed number.
+
+GitHub was reachable this pass. `gh` is not installed in these containers, as `AGENT-LANDING.md`
+says, but the API answers directly with the token already in the environment, and `git push` works.
+The merge base was current `main`, so this was an ordinary branch and not one of the orphan 4 August
+snapshots.
+
+## What the pull request contained
+
+No data. Sixty-eight lines of research log appended to `SGA-60-AGENT-INFO.md`, one file, nothing
+under `data/` touched and nothing reaching a page in `site/`. A pass that found no photograph and
+said so plainly, at length, with the routes it eliminated. That is the right shape for a negative
+result: the six remaining year-photo gaps are not going to be closed by a run that invents a lead,
+and a route written down as closed is not re-spent next week.
+
+## How it was verified
+
+The census claims were recomputed from `data/years.json` and `data/photos.json` rather than taken on
+trust, and all three came back exact: 73 of 73 president and regent entries carry a portrait, so
+none is without; six years lack a general photograph and the list matches to the year — 1994-95,
+1995-96, 2000-01, 2005-06, 2006-07 and 2008-09; and 119 executive and Senate officer slots from
+2010-11 onward still lack one. Three numbers, three exact matches, against files the run could have
+paraphrased from an earlier entry and did not.
+
+The reachability claims were re-tested independently, one request at a time three seconds apart.
+All three standing Herald leads — `article=9903`, `4695` and `7740` — returned HTTP 403, and the
+body is a Cloudflare "Just a moment" challenge, as claimed. The challenge measured 5,888 bytes here
+against the 5,995 the run reported; that is a difference in request headers, not a different gate.
+`files01.core.ac.uk` returned 522. The PastPerfect record link was closed. `web.archive.org` was
+unreachable from here too.
+
+## What was cut
+
+One claim, trimmed rather than deleted. The run recorded `web.archive.org` as being in "a confirmed,
+sustained outage for the entire session." Six failures across six attempts is what was observed and
+it stays. The cause is not established: only the Archive's own "Temporarily Offline" page is
+evidence of a fault at its end, and the connection resets and timeouts are indistinguishable, from
+inside a container, from a failure on the egress path. The editor's own re-check hours later drew a
+reset attributed to this container's proxy rather than the offline page. Rewritten to record the
+route as unreachable, to say which single observation supports an outage and which do not, and to
+tell a future run to retry rather than assume either diagnosis.
+
+It is not a fact about the archive and no reader would ever have seen it. It was worth an edit all
+the same, because a run that reads "the Archive was down" stops looking, and a run that reads "six
+failures, cause open" tries again. Diagnosis is most of what this file is for.
+
+Nothing else was cut. The traps checklist had little to bite on with no events in the diff: no
+advance notice, no officer taken from a committee chair, no April result filed forward, no changed
+surname. The one place it applied, the run was already ahead of it — offered a same-surname match
+on Kevin Smiley against a present-day WKU faculty page, it declined and recorded why. That decline
+is worth keeping in the log so the same search is not bought twice.
+
+The attribution rule was checked and is not breached. The note names `WebFetch` and quotes an error
+message naming Claude Code, but `SGA-60-AGENT-INFO.md` is the agent handoff file and its own third
+line has read "Everything a new Claude Code session needs to pick this project up cold" for months.
+No session link appears anywhere in the diff, which is the half `CLAUDE.md` names outright, and the
+file reaches no page in `site/`.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, all re-run after the trim. 61
+years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by 1,810
+people, 98% of them with an account of what the person did; 47 people recorded under more than one
+spelling. 308 mirrored documents and 1,111 legislation files. 68 year photographs, no leader
+without a portrait.
+
+`check_duplicates.py` returned the same four pairs as every recent pass, none of them introduced
+here, all read again and all genuinely two-stage: a bill for a student regent advisory committee
+introduced on 28 January 1992 and failing after amendment on 6 February; designated driver cards
+funded by Bill 97-3-F in November 1997 and distributed in February 1998; the Kentucky Civil
+Liberties Union planning suit in February 1972 and Associated Students endorsing it a month later;
+and SGA voicing opposition to plus/minus grading in September 2003 and passing legislation against
+it in October. No merges.
+
+## Still open
+
+The six year-photograph gaps, unchanged, and the 119 officer portraits from 2010-11 on. Every live
+route to the first six is currently closed from this container: TopSCHOLAR's `viewcontent.cgi`
+behind Cloudflare, the Wayback Machine unreachable, core.ac.uk's mirror host timing out, PastPerfect
+shut to every URL shape tried. The run's own suggestion is the sound one — retry `files01.core.ac.uk`
+against the `dlsc_ua_records` article IDs directly on a day it answers, since it failed with an
+origin timeout rather than a bot block and is the only one of the four not confirmed dead. Xposure's
+captioned body pages remain the better lead for the 1994-96 portrait gap, and the F247 1990-91
+executive committee folder still needs someone physically in the WKU Archives reading room.
+
+The editor brief itself needs one correction: its instruction to rescue pull requests #6, #7 and #8
+has been dead for a month and sends each pass looking for branches that are not there.
