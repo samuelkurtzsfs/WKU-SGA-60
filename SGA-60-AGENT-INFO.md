@@ -6570,6 +6570,67 @@ No file was added to or removed from `data/photos.json`; `build.py` and `check_d
 clean on the unmodified tree. Opened a fresh pull request from `research-photos` (none was open) and
 landed this note there.
 
+### Photograph run of 21 September (third pass, scheduled): the same two live routes retested a third time, and the archive.org Talisman boundary now confirmed by a real catalog search rather than by guessing identifiers
+
+Re-verified the completeness census from the data files before touching anything, per standing
+practice: **zero** of the 61 `leaders` entries lack a portrait (Nick Todd, Katie Dawson, Jeanne
+Johnson and Reagan Gilley all still covered — priorities 1-2 fully clear), the year-photo overlay
+is still missing exactly the same 6 years as every run since 20 September (1994-95, 1995-96,
+2000-01, 2005-06, 2006-07, 2008-09), and 216 named executive/Senate officer slots across the whole
+record lack a portrait (119 of them from 2010-11 onward, matching the last two runs' count exactly).
+Both prior 21 September PRs (#542, #545) were already merged and closed by an editor pass before
+this run started, so this opens a fresh one rather than assuming either is still live.
+
+**Both routes this file has retried most this month were tested again, fresh, and both are still
+closed exactly as before.** `viewcontent.cgi` against a Talisman PDF (`article=1000&context=talisman`,
+paced with full navigation headers) returned the same Cloudflare `HTTP 403` "Just a moment..."
+challenge page (5,974 bytes) every prior run has logged. `web.archive.org` returned its own
+"Internet Archive: Temporarily Offline" page (`HTTP 503`) on a CDX query, and a bare fetch of
+`https://web.archive.org/` itself failed with a connection reset via the agent proxy — the same
+symptom pattern the 21 September second-pass run logged as unresolved between "Archive-side outage"
+and "container egress issue." This run's CDX attempt returning the actual "Temporarily Offline" HTML
+(not just a reset or timeout) is positive evidence for the Archive-side explanation, for whatever
+that is worth to the next run deciding whether to retry.
+
+**The archive.org Talisman collection's year coverage is now settled by an actual catalog search,
+not by guessing identifiers and checking HTTP status.** Earlier entries in this file state the
+collection holds 1971-1981, 1986 and 1987, and separately that it does not hold 1967-1970 or
+1982-1985 — but nothing had checked 1988-1994, the run of years right before the 2003 Talisman gap,
+where several currently-missing officer portraits (1988-89 Secretary Mickie Hennig and Vice-Chair
+Judicial Council Chris Gaddis; 1992-93 David Smith and Trent Lyda; 1993-94 Derrek Duncan) would fall
+if a scan existed. Guessing `talisman<year>west` identifiers for 1988-1994 and checking `/metadata/`
+returns `HTTP 200` for every one of them — but that is a **false positive**: archive.org's metadata
+endpoint returns `200` with an empty `metadata` object and no files for an identifier that does not
+exist, rather than a `404`. A proper `advancedsearch.php` query for `title:(talisman) AND
+creator:(western)` returns the authoritative list instead: exactly 19 items — 1943, 1946, 1947,
+1963, 1964, 1965, 1971 through 1981, 1986, 1987. **1988 through 1994 are confirmed absent from
+archive.org entirely**, not merely untried. This closes the archive.org route for those five named
+officers and for the whole 1988-1994 window generally; any future attempt at this specific window
+needs a different host. (The tempting-looking `HTTP 200`-from-`/metadata/` trap is worth a future
+run remembering before it re-opens this exact question the same wrong way.)
+
+**Two smaller negative findings, both new:**
+
+- `wku.edu/news/articles/?s=<query>` (the actual search path after the `?s=` redirect from
+  `/news/?s=`) does **not** filter by the query string at all — a request for `?s=SGA` returned the
+  same generic "most recent articles" listing (Geoscience grad students, a Gatton Academy award, a
+  concert announcement) that an empty or nonsense query would. This is a genuinely different failure
+  mode from the "no articles reach back far enough" conclusion the 21 September second-pass run
+  drew from a single headline search — the search parameter itself is not doing anything, so this
+  host cannot be used as a name-search surface at all, for any year, until a working query mechanism
+  is found. Recorded so a future run does not spend time phrasing better search terms into a
+  parameter that is not being read.
+- A `dlsc_ua_records` item landing page (tested against `9820`, "Talisman: Connection") carries only
+  a small generic cover thumbnail (`/assets/md5images/<hash>.png`, no more than a few KB) and no
+  embedded page-image viewer of any kind — so there is no way to see an individual yearbook page,
+  portrait or caption from a digitalcommons landing page without going through the Cloudflare-gated
+  `viewcontent.cgi` PDF download. This forecloses the idea (not previously written down as tried)
+  that a landing page might expose page thumbnails the PDF route does not.
+
+No file was added to or removed from `data/photos.json`; `build.py` and `check_data.py` both pass
+clean on the unmodified tree. Merged `origin/main` (real merge base, no conflicts) before starting.
+Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
