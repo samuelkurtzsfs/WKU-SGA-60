@@ -6497,6 +6497,74 @@ standing conclusion in the 6 September and 9 September entries above.
 nothing added or removed from `data/photos.json`). Merged `origin/main` (real merge base, no
 conflicts) before starting. Landed on `research-photos`.
 
+### Photograph run of 21 September (second pass, scheduled): both live routes closed again, two genuinely new hosts tried and closed, no PR was open to update
+
+Re-ran the completeness census from the data files rather than trusting the note above, since it is
+the routine's own standing practice: **zero** of the `leaders` entries (president/regent) across all
+61 years lack a portrait — Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley included — and
+the year-photo overlay is still missing exactly the same **6** years as every run since 20 September:
+1994-95, 1995-96, 2000-01, 2005-06, 2006-07, 2008-09. 119 executive/Senate officer slots from
+2010-11 onward still lack a portrait, unchanged. Priorities 1-2 remain fully clear.
+
+**No pull request was open against `research-photos`** (`list_pull_requests` for this repo returned
+`[]`, open or otherwise, at the start of this run) — the standing "rolling PR #6" this routine's
+prompt refers to has apparently already been merged or closed by an editor pass. This run opens a
+fresh one rather than assuming #6 still exists; a future run should check the same way before
+trying to comment on a PR number that may no longer be open.
+
+**Both routes this file has spent the most retries on this month were tested again, fresh, and both
+came back exactly as closed as every recent run has found them.** `viewcontent.cgi` against all
+three standing Herald leads for the year-photo gap (`article=9903` 2000-01, `article=4695` 2005-06,
+`article=7740` 2008-09), 3 seconds apart with full navigation headers: three `HTTP 403` Cloudflare
+challenge pages, byte-for-byte the same 5,995-byte challenge body each time. Confirmed independently
+through the platform's own `WebFetch` tool against `article=9903` — same 403. `web.archive.org` was
+in a **confirmed, sustained outage for the entire session**, not just a bad stretch: the CDX API
+returned the Archive's own "Internet Archive: Temporarily Offline" page, a bare `503`, a connection
+reset, and two more timeouts across six attempts spread over several minutes (three separate rounds,
+15-45 seconds apart), and a plain fetch of `https://web.archive.org/` itself returned the same
+offline page. `WebFetch` against a Wayback URL failed outright with "Claude Code is unable to fetch
+from web.archive.org." No CDX query and no `if_` raw fetch succeeded even once. This closes out the
+session for that route entirely — a future run should still retry it fresh rather than assume it,
+per the standing note that reachability varies run to run, but this run's own six-for-six failure
+rate is stronger than "one bad stretch."
+
+**Two genuinely new hosts were tried, surfaced by a plain web search for the WKU Archives
+photograph collection rather than anything already logged in this file, and both closed:**
+
+- **`core.ac.uk`**, an open-access aggregator that mirrors full text from many institutional
+  repositories including `digitalcommons.wku.edu`, on the theory that its own file-serving host
+  might not carry TopSCHOLAR's Cloudflare gate. Its search UI (`core.ac.uk/search`) is itself behind
+  a Cloudflare "Just a moment..." challenge. Its direct file-mirror host
+  (`files01.core.ac.uk/download/<id>.pdf`, found via the same web search, serving a WKU Archives
+  finding-aid PDF unrelated to the three Herald leads) returned Cloudflare's own `522` ("connection
+  timed out" between Cloudflare and the origin) twice, five seconds apart — a transient-looking
+  origin failure rather than a bot block, but not one this run could wait out. Nothing about this
+  route is confirmed dead for good; a future run finding `files01.core.ac.uk` responsive could try
+  it against the WKU `dlsc_ua_records` article IDs directly, but it bought nothing this run.
+- **`westernkentuckyuniversity.pastperfectonline.com`**, WKU Special Collections' own PastPerfect
+  Online catalog, already logged as closed by the 3 September run (a bare fetch of the search page
+  redirects to `Home/ContactAdmin`). That run's note left open whether a *specific* record's direct
+  archive link (`/archive/<guid>`, the kind Google indexes and surfaces in search results, as
+  opposed to the search form itself) might behave differently. Tested one such link, surfaced by
+  this run's own web search, directly: it redirects to the identical `Home/ContactAdmin` page. The
+  3 September finding holds for this URL shape too, not just the search form; there is no remaining
+  untried way to reach this catalog's contents from this container.
+
+**`wku.edu/news`, current and reachable, was checked for the first time as a possible photo source
+for the gap years and is not one.** A web search for the 2008-09 lead's own headline ("All Smiles,
+Kevin Smiley Wins...") surfaced only a same-surname false positive — a WKU sociology faculty
+webpage for a different, present-day Kevin Smiley — which was not used, per the standing rule
+against matching people by name alone. `wku.edu/news/articles/index.php?view=article&articleid=`
+does serve real archived articles with real photographs (checked against `articleid=12496`, a clean
+2025 SGA election story with an attached photo), but CLAUDE.md's own source list already scopes this
+host to "the recent decades," and nothing in this run's searching turned up an article number
+reaching back to 2005-2009 specifically. Not pursued further; recorded so a future run does not
+re-spend a search on the same headline.
+
+No file was added to or removed from `data/photos.json`; `build.py` and `check_data.py` both pass
+clean on the unmodified tree. Opened a fresh pull request from `research-photos` (none was open) and
+landed this note there.
+
 ## 9. Restarting a session
 
 ```bash
