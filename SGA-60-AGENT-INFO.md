@@ -6435,9 +6435,15 @@ which redirects to `article=2817&context=sga`, a 1967 item titled simply "Photo 
 prior run's notes mention having opened. Recovered via the same Wayback `if_` pattern (capture
 `20240817134456`, 25 MB, clean `%PDF-1.6`, 71 pages). **It is exactly what the finding aid's folder
 descriptions promised and no more**: candid, uncaptioned snapshots of SGA-sponsored campus
-entertainment — a large outdoor concert, an indoor dance with a live band, backstage shots of The
-Temptations and (per the finding aid's own subject list) the Four Tops, a Miss Western pageant with
-contestants in evening gowns and swimsuits, more musicians and a stand-up comedian. Checked a
+entertainment — a large outdoor concert, an indoor dance with a live band, groups of performers on
+stage, a Miss Western pageant with contestants in evening gowns and swimsuits, more musicians and a
+stand-up comedian. **No performer is named anywhere in the album itself.** The only names attached
+to these folders are in the finding aid's subject lists, which give "Four Tops" for F4168 and, in
+the same list, "The Temptations of Eve(?)" — the archivist's own spelling and the archivist's own
+question mark, which is not the group The Temptations and is not a confident identification of
+anyone. An earlier draft of this entry read "backstage shots of The Temptations"; that was the
+album's own uncaptioned stage photographs being matched to a subject list by guesswork, and it is
+corrected here so no later run lifts it into a caption. Checked a
 spread across all 71 pages (roughly every tenth), not just the front matter. **Not one photograph
 in the sampled pages carries any caption, page label, or handwritten name anywhere on the album
 page.** This matches CLAUDE.md's bar exactly: a crowd of unidentified students at a 1967 concert is
