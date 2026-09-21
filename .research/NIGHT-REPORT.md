@@ -1,3 +1,94 @@
+# 21 September 2026 (evening) — an empty queue, the six new photographs audited, one caption trimmed
+
+## What was open
+
+Nothing, for the third pass running. No pull request is open. `research-photos` last landed as #547
+at 15:28 UTC and points at a commit main already contains; every other routine branch is merged or
+unchanged. Main is at e82179c9.
+
+The stored brief still sends this run at #6, #7 and #8 as stale and open since 4 August. They were
+closed unmerged on 18 August 2026. This is the third consecutive pass to record that, and the brief
+should stop carrying them.
+
+Access was full: `gh` is still not installed, so the brief's opening command fails on its first word,
+but the push probe returns `* [new branch] HEAD -> access-probe` and the GitHub tools answer.
+
+## What was verified
+
+With no queue, the pass audited what had reached the live site in the last two days and had not been
+checked by anyone but the routine that wrote it: the six new photographs of 20 September, and the
+three corrections of 21 September. Nineteen claims were opened against their sources.
+
+Eleven claims out of the mirrored minutes, read from the PDFs themselves rather than from the index:
+
+- 7 Feb 1989 — the local bid on the bus shelters $4,000 under the New York one, and Congress electing
+  Robin Kinman secretary after the candidates spoke. Both printed in the minutes, the second under
+  Unfinished Business. Her election is minuted at the same meeting where the officers' report already
+  styles her Secretary; the archive's summary claims only what the document records.
+- 24 Jan 1989 — Adrian Smoot reading Mickie Hennig's letter of resignation, and Kinman accepted as
+  Business College Alternate the same night. Both present. The vacancy the archive attaches to
+  Kinman's election is sourced, not inferred.
+- 6 Dec 1988 — Martin Luther King Jr's birthday observed on campus, ASG credited with helping. Present.
+- 21 Nov 1989 — the motion to accept 89-07-F failing, and 89-09-F carried the same night after the
+  bylaws were suspended. Both present, in those words.
+- 24 Oct 1989 — Heather Falmlen chosen Sophomore Class President; the Unicorn trial hours from
+  11 November. Both present.
+- 1 Dec 1998 — the Kappa Alpha aid bill failing 20 to 22. Present, and the trim made this morning is
+  right: Rick Malek moved the amendment from $250 to $1,000, Morel and Bogard spoke against it, and
+  then debate ended and the vote was taken on the bill. No vote on the amendment is minuted. Calling
+  it defeated was an inference the document does not carry, and it is gone.
+- 2 Feb 1999 — Chad Lewis announcing Carleton Ruminer's resignation as vice president of finance,
+  effective immediately, the account at $23,074.84 after $374.70 for the week, and the office carried
+  through the rest of the meeting as "Vice President of Finance, Open - No Report". Every figure holds,
+  and the minutes give no reason, which is what the entry says.
+
+Six photograph citations, checked against the unfiltered index. All six resolve to the right item and
+the right issue: Herald 72:54 of 24 Apr 1997 (Coffman), 73:53 of 30 Apr 1998 (Sweatt), 78:49 of
+8 Apr 2003, 78:47 [Vol. 79] of 18 Mar 2004, 84:52 of 7 May 2009, and the 1994 Talisman. The odd
+`[Vol. 79]` in the 2004 label is the archivist's own and is reproduced exactly, not a slip. The
+outcome each caption asserts is corroborated by the issue's own index: Coffman taking charge, Cosby
+rolling to a huge victory, Johnson and Martin winning the two contested races, Todd elected, and the
+ten-questions feature styling Smiley president while Shelton still held the office.
+
+One citation needed disambiguating. `dlsc_ua_records/418` is the 1994 Talisman; a 1926 Ogden College
+programme carries the same number in the `stu_org` collection. The photograph cites the right one.
+
+## What was cut
+
+The 2003-04 election-night caption said the printed caption recorded Todd taking 65 percent and
+Petkova 59 percent. The photograph run's own transcription of that caption, in
+`.research/photo-run-2026-09-20-second.md`, does not carry the percentages — it ends at Josh Collins
+being named at right. The figures themselves are sound: the archive's own event for that election,
+independently sourced to wkuherald.com, gives Todd 772 votes to Martin's 424, which is the 65 percent.
+What could not be verified is that the caption is where they come from, and the issue PDF is behind
+the 403 this run could not get past. The sentence now states the result and attributes to the caption
+only what the run recorded it saying. No fact was lost.
+
+Nothing else was cut. The four standing duplicate pairs were read again and are still four separate
+events: a bill introduced in January 1992 and the same bill failing in February; driver cards funded
+in November 1997 and distributed in February 1998; concern voiced over plus/minus grading in
+September 2003 and legislation against it passed in October; the Civil Liberties Union planning suit
+in February 1972 and Associated Students endorsing it in March.
+
+## Still open
+
+- archive.org is unreachable from these containers — an error page under a 200, then a 503. The
+  photograph routine's own note that the Wayback failure is "unreachable, not a confirmed outage" is
+  the right way to have recorded it. The Talisman full texts are not usable this way for now.
+- TopSCHOLAR serves landing pages but refuses `viewcontent.cgi` with a 403 even after the 90-second
+  backoff, so page images could not be pulled this run. The blocked download saves the bot-check page
+  under a `.pdf` name, exactly as trap 7 says; check the first five bytes before believing a download.
+- The Kevin Smiley photograph is filed under 2009-10, the term he was elected to, while the two
+  election-night photographs are filed under the year they were taken. Both choices are defensible and
+  the captions state their dates plainly, but the two conventions sit side by side in the same file.
+
+## Counts after the build
+
+61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by 1,810
+people, 2,614 of them (98%) carrying an account of what the person did; 47 people recorded under more
+than one spelling or name. 308 documents and 1,111 legislation files. `build.py`, `check_data.py` and
+`check_contrib.py` all clean.
+
 # 21 September 2026 (second pass) — an empty queue, and ten of the new document summaries audited
 
 ## What was open
