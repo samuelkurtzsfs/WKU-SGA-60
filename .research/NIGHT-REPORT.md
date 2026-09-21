@@ -1,3 +1,92 @@
+# 21 September 2026 (fourth pass) — one photograph PR merged, and the method note's own advice disproved
+
+## What was open
+
+One pull request: #549, "Research: photographs (rolling)", opened at 20:06 UTC on `research-photos`.
+Merge base clean against main, one commit, correctly authored, no tool attribution. Nothing else in
+the queue.
+
+The stored brief still sends this run at #6, #7 and #8 as stale and open since 4 August. They were
+closed unmerged on 18 August 2026. That is now four consecutive passes recording it, and the brief
+should stop carrying them.
+
+## What the pull request was
+
+No history at all: one file, `SGA-60-AGENT-INFO.md`, and nothing under `data/`. The run found that
+archive.org serves its own nineteen Talisman scans as full page images through a IIIF endpoint,
+entirely apart from the Cloudflare-gated `viewcontent.cgi` front door that every run this month has
+found shut, and wrote the route down. `build.py` excludes `.md` from the site copy, so nothing here
+reaches a reader. That lowers the stakes without removing them: a method note is what the next run
+acts on, and a wrong one costs a run.
+
+## What was verified
+
+The route was re-walked rather than taken on trust. `metadata` returns the file list and the
+`server`/`dir` fields the next call needs. The IIIF endpoint returned real page images for 1975,
+1978 and 1981 — `FF D8`, around 3,100 pixels wide. `inside.php` told a true zero from a real hit,
+Pulman at nothing against LaCivita at eleven, so this run's negative findings are negatives and not
+the silent-failure shape of §6.7.
+
+Three pages were opened and read. `talisman1975west$113` is printed page 109, carrying the
+brick-wall portrait and the caption naming LaCivita "(right)" with treasurer Ricky Johnson: the
+settled note of 28 August is corroborated, not disturbed. `talisman1978west$38` is printed page 34
+and carries the four-person ASG meeting caption. `talisman1981west$238` is the intramurals results
+page, printing the treasurer's surname as **Chestnut**.
+
+All eight officer titles match `years.json` exactly, so no committee chair has been promoted into an
+office, and all eight of the run's declined identifications are right — the 1978 caption names four
+people over a four-person photograph with no left-right order, and nothing ties the 1979 "Steve
+Wilson, agriculture" to student government. Declining all eight was the correct call, and flagging
+the Chesnut/Chestnut spelling without acting on it is what the flag-do-not-fix rule asks.
+
+## What was corrected
+
+Five things, none of them a false claim about the history, all of them a wrong instruction to the
+next run. The IIIF endpoint answers 302 and needs `curl -L`; without it you get a 499-byte HTML stub
+under a `.jpg` name and an exit code of zero, which is §6.7 exactly. "The real page 38 was leaf 38"
+was wrong, and contradicted by the same section two paragraphs later — leaf 38 is printed page 34.
+The viewer's `n` is one less than the leaf, not equal to it, and as written it pointed at the wrong
+page of the one citation this project has already settled twice.
+
+The fourth is the one worth keeping. The note advised bracketing a null-confidence entry with
+high-confidence neighbours and counting. Following that advice produced the very error it was
+offered to avoid: in the 1978 volume leaves 35, 36, 37 and 39 all carry confidence 100 and all read
+printed = leaf − 4, so counting forward gives leaf 42 = printed 38. Leaf 42 was fetched and looked
+at. It is printed page 36, "Computers on the Hill"; two unnumbered section-opener leaves sit in
+between and counting only propagates the error. The run's own warning about null confidence was
+right and the editor's arithmetic was wrong. The advice is now to fetch the leaf and read the number
+off the page, which is one request and the only answer that holds. The fifth correction follows from
+it: the 1981 page number rested on that counting, and now rests on the volume's own index line,
+since leaf 238 prints no page number at all.
+
+Two things were left alone and recorded instead. The caption quote runs past the fifteen-word limit,
+but the same caption already stands twice in this file from earlier runs and the rule is aimed at
+the published site; it wants one cleanup pass across the whole file, not a cut in the newest section.
+The "216 officer slots" figure is carried over from the previous run's section — the count is 211
+unique year/name pairs, or 219 raw slots, depending on dedup. Neither is a claim about the history.
+
+## The duplicate pairs
+
+The same four as every recent pass, none introduced here, since this diff touches no data. Read
+again and all four are genuinely separate events on different dates citing different sources. No
+merges.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, `check_duplicates.py` four
+pairs and no action, all re-run after the corrections. 61 years, 1,964 events, 60 people have been
+president. 2,651 recorded terms of office held by 1,810 people, 98% carrying an account of what the
+person did; 47 people under more than one spelling. 1,111 legislation files, 308 mirrored documents.
+No leader without a portrait. Merged as b9a70c42.
+
+## Still open
+
+Unchanged, and not an editor's to close: the six year-photograph gaps (1994-95, 1995-96, 2000-01,
+2005-06, 2006-07, 2008-09), the officer portraits from 2010-11 on, and the F247 1990-91 executive
+committee folder that needs someone in the WKU Archives reading room. The archive.org route is now
+proven and corrected, and it is the first live way into Talisman page images in weeks — the next
+photograph run should spend itself there rather than on `viewcontent.cgi`.
+
 # 21 September 2026 (evening) — an empty queue, the six new photographs audited, one caption trimmed
 
 ## What was open
