@@ -6387,6 +6387,110 @@ blocked on Wayback recovering, not on anything left undone. `build.py` and `chec
 pass clean (nothing to break; the only change is this note plus the routine `main` merge). Landed
 on `research-photos`.
 
+### Photograph run of 21 September: the never-opened finding aid finally read, the j3.png/6.png lead closed negative, and the Xposure magazine era confirmed to carry no SGA content
+
+Checked priorities 1-2 before anything else, as every run since 21 August has: all four named
+presidents (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) and every other president or
+student regent in `years.json` still carry a portrait. Still 6 years with no year-level general
+photograph (1994-95, 1995-96, 2000-01, 2005-06, 2006-07, 2008-09) and 119 executive/Senate officer
+slots from 2010-11 onward without one, unchanged from the 20 September count. No file was added to
+`data/photos.json` this run either, but four specific standing leads were closed with positive
+evidence rather than left open for the next run to re-try:
+
+**The `j3.png`/`6.png` lead from 20 September is now closed negative, not just unresolved.** That
+run found two `alt="Full Name"`-tagged officer photographs on the old `wku.edu/Dept/Org/Student/SGA`
+site (`j_profiles.html`'s `j3.png` = Gretchen Light, `l_profiles.html`'s `6.png` = Tim Howard) but
+couldn't tell, mid-outage, whether the images themselves were ever crawled. A direct CDX query
+against each exact image path today (`web.archive.org/cdx/search/cdx?url=...&output=json`, Archive
+confirmed healthy first — root page and other CDX queries this run all returned clean) came back
+`[]` for both: genuinely never captured, not merely inaccessible. Confirmed this isn't a truncated
+prefix result either — a full `matchType=prefix` CDX listing of the whole `.../SGA` path (272 URLs
+total, well under any pagination limit) contains no entry for either filename at all, at any
+timestamp. Both photographs are lost; this specific lead needs no further retrying.
+
+**The UA1C4/10 "SGA-photographs" finding aid (`article=1619`, `context=dlsc_ua_fin_aid`) was
+finally opened** — flagged as a lead on 24 August and re-listed as "still never opened" on every
+photograph run since, most recently 19 September. `viewcontent.cgi` is Cloudflare-gated as always,
+but the Wayback `if_` raw endpoint (capture `20240708133145`) served a clean 160 KB text-layer PDF
+on the second CDX attempt (first one timed out — budget retries as always). It is a 5-page WKU
+Archives catalog of the *physical* photo collection, not a set of scans: an administrative history
+of SGA's founding (1956 Student Advisory Council through the 1966 constitution vote and 1992 name
+change) followed by a folder-by-folder container list running 1961 through 1990-91, each folder's
+typed subject list naming everyone identifiable in it. Two folders' subject lists corroborate
+already-settled facts rather than open anything new — Bill Straeffer appears in folder F322
+(1968-69) matching his confirmed 2 May 1968 election, and Reed Morgan appears in folder F320
+(1965-1968) among a long list of other names, consistent with committee-level involvement rather
+than officeholding and not a reason to reopen his settled non-presidency. Folder F334 (1962-1973)
+lists both John Lyne and Larry Zielke together as subjects of the same folder, which does not
+settle the standing 1970-71 Lyne-vs-Zielke question (a shared photo folder spanning eleven years is
+not a same-year pairing) but is worth the roster routines knowing about. **Folder F247, "Executive
+Committee 1990-91"**, names seven people — Jack Britt, Judson Jenkins, Bryan Lowe, Neal Markham,
+Albert Shelby, Kelly Sutherland, Pattye Thomason — with no digitized copy linked anywhere in the
+finding aid; this is a physical-only lead an in-person WKU Archives visit could follow up on, not
+one this container can reach.
+
+**Two of the finding aid's folders (F4167-F4170, 1967-68) do link out to a digitized source** —
+"Images removed from photo album D7390" at `digitalcommons.wku.edu/sga/Documents/Reports/164`,
+which redirects to `article=2817&context=sga`, a 1967 item titled simply "Photo Album" that no
+prior run's notes mention having opened. Recovered via the same Wayback `if_` pattern (capture
+`20240817134456`, 25 MB, clean `%PDF-1.6`, 71 pages). **It is exactly what the finding aid's folder
+descriptions promised and no more**: candid, uncaptioned snapshots of SGA-sponsored campus
+entertainment — a large outdoor concert, an indoor dance with a live band, backstage shots of The
+Temptations and (per the finding aid's own subject list) the Four Tops, a Miss Western pageant with
+contestants in evening gowns and swimsuits, more musicians and a stand-up comedian. Checked a
+spread across all 71 pages (roughly every tenth), not just the front matter. **Not one photograph
+in the sampled pages carries any caption, page label, or handwritten name anywhere on the album
+page.** This matches CLAUDE.md's bar exactly: a crowd of unidentified students at a 1967 concert is
+not a portrait of anyone, however good the photograph. No individual in this album can be named
+with the confidence the project requires, and no general "year" photograph was pulled from it
+either, since without a caption there is no way to state which specific concert or date it shows
+without guessing. This closes the finding aid and its one digitized offshoot as a real, examined
+dead end for portraits — not a re-listed "never opened" line for the next run.
+
+**The Xposure-era magazine gap (1994-95, 1995-96) is now confirmed closed for the Talisman route,
+not merely presumed closed by analogy to 2003.** Earlier entries in this file (see the 5 September
+and 18 September runs above) established that the traditional Talisman stopped after the 1994
+volume and did not resume until 2003, with six quarterly *Xposure* magazine issues (`article=1419`
+through `1424`) filling the gap, and separately that the 2003 "About Face" *volume* has no
+Organizations section because it uses a magazine format with no club-composite pages at all — but
+no run had actually opened an *Xposure* issue itself to check whether the same held for it. Did
+so this run for three of the six (`1419` "Prejudice: Beyond Black & White", `1420` "Rites of
+Passage", `1422` "Fall 1995"; all three recovered via Wayback `if_` raw captures after CDX
+retries, 24-86 MB each, no text layer so contents pages were rendered and read directly). **All
+three carry the identical Features/Special-Section/Culture/Literary/Sports structure with no
+government, politics-on-campus, or student-organization section of any kind** — the closest either
+issue comes is Fall 1995's "Politics? Who Cares!" feature, which is about national and gubernatorial
+politics and the campus Young Democrats/College Republicans clubs, not SGA. **No individual
+missing-officer name for 1994-95 or 1995-96 was searched for in these three issues' body pages**
+(the poor/absent OCR makes that a page-by-page render-and-read job, not attempted this run for
+time), so this does not close the individual-portrait gaps for those two years the way it closes
+the general-year-photograph one. The other three issues (`1421` "Canvas Flesh", `1423` "Spring
+1996", `1424` "Summer 1996") were not downloaded this run; given the identical design team, page
+count range, and formula across all three checked so far, they are very likely the same, but that
+is an inference, not a finding — a future run should still confirm rather than assume before
+closing the whole set formally in CLAUDE.md-grade terms.
+
+**A native-search sweep of `wkuherald.com`, different from every prior WP-JSON attempt, found
+nothing new.** Prior runs (5, 9, 20 September) searched `wkuherald.com`'s WordPress REST API
+(`/wp-json/wp/v2/posts?search=`), which only surfaces an article's single "featured image" caption.
+This run instead queried the site's own public search page (`wkuherald.com/?s=<name>+SGA`) for all
+119 officer names still missing a portrait from 2010-11 onward, and read the `alt` attribute of
+every thumbnail image in the results listing (average 7.4 images per query, confirming the method
+returns real data rather than empty pages) — a wider net, since a search-results teaser can surface
+images from articles the WP-JSON search misses and the `alt` text on this site is written as a full
+descriptive caption, not a bare filename. **Zero genuine matches across all 119 names.** One
+apparent hit (Robert Bell, 2014-15 Judicial Council, matched on a caption mentioning
+"Campbellsville") was a false positive from the substring "bell" inside a place name, not the
+surname, caught by reading the full caption rather than trusting the substring match. This is a
+stronger negative than the prior WP-JSON sweeps covered the same ground with, and the 2010s-2020s
+officer gap should now be considered exhausted for `wkuherald.com`'s own search surface specifically
+— a future run should look to full Herald PDF issue pages or the UA1C collections instead, per the
+standing conclusion in the 6 September and 9 September entries above.
+
+`build.py` and `check_data.py` both pass clean (61 years, 60 presidents, all still portrayed;
+nothing added or removed from `data/photos.json`). Merged `origin/main` (real merge base, no
+conflicts) before starting. Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
