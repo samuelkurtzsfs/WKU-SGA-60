@@ -29243,3 +29243,95 @@ person did. 73 leader portraits and 68 year photographs, unchanged. **Documents 
 rise from 131 to 229, and `data/documents` holds no orphaned file at all.**
 
 Still open: nothing in the queue. The research routines have the six leads above.
+
+# Editor pass, 21 September (late) — the photograph run reviewed and merged, one named performer cut
+
+## The queue
+
+One open pull request, #542, "Research: photographs — finding aid opened, two leads closed
+negative", pushed to `research-photos` at 02:19 and reviewed here. It is the successor to #539 on
+the same rolling branch. Nothing else was open. GitHub was reachable — `gh` is still absent from
+the container, as AGENT-LANDING.md says it is, but git push is credentialed and the GitHub tools
+answer — so this was a full pass and the pull request was merged rather than left for the owner.
+
+The three August pull requests the standing brief still names — #6 photographs, #7 the 1980s,
+#8 the 2020s — were closed unmerged on 18 August. This is the second pass to record that. The
+brief should stop naming them.
+
+## What the pull request contained
+
+One commit, one file, 104 lines added to `SGA-60-AGENT-INFO.md`. No `data/` change of any kind:
+no event, no leader, no photograph, no document. Nothing in it reaches a reader, so the question
+was not whether a wrong fact would be published but whether a later run could be misled by these
+notes into publishing one.
+
+## How it was verified
+
+Four counts were checked against the files rather than taken from the summary, and all four were
+exact: 61 years; no leader anywhere without a portrait; year-level photographs missing for exactly
+the six years named; and exactly 119 executive and Senate officer slots from 2010-11 on without
+one.
+
+The `j3.png`/`6.png` negative was re-run. The first CDX query written here was malformed and
+returned an empty result, which would have read as confirmation of the very claim under test —
+worth recording, because an empty result from a broken query looks identical to an empty result
+from a genuine absence. Re-run correctly, the prefix listing of the old `wku.edu` SGA path returns
+271 URLs, including both profile pages and 44 image files, and neither filename appears at any
+timestamp. The claim holds.
+
+The UA1C4/10 finding aid was opened at the capture cited and is what the run says: five pages,
+WKU Archives, Subseries 10. Every folder claim matched verbatim — Straeffer in F322, Reed Morgan
+among eighteen names in F320, Lyne and Zielke together in F334's eleven-year span, and exactly the
+seven names given for F247's Executive Committee 1990-91. The run's refusals to over-read any of
+these are correct and consistent with section 7.
+
+The 1967 photo album was downloaded and examined rather than trusted. It has 71 pages and a
+zero-character text layer across every one of them, which means "uncaptioned" could not be
+established from the text layer at all — the same shape as the handwritten-tick trap in section 6.
+Pages 1, 30 and 50 were rendered and looked at: candid dance and concert snapshots, a stage shot,
+the Miss Western pageant. No caption, no label, no handwriting.
+
+The Xposure check needed correcting before it could be confirmed. These issues sit in
+`dlsc_ua_records`, not `talisman`; the talisman URL 404s. Fetched from the right collection, the
+Fall 1995 issue is UA12/2/2, volume 73 issue 1, 40 pages, and its contents page carries features,
+culture, literary and sports with no government or organizations section at all. "Politics? Who
+Cares!" was read on the page: the governor's race, the 1992 presidential vote, the Young Democrats,
+the College Republicans and the College Patriots, and no SGA. The run's conclusion stands, and its
+care in *not* closing the individual-portrait gap for 1994-96 on this evidence was right — Xposure
+captions its photographs with name, hometown and class year, so its body pages remain a live lead.
+
+## What was cut
+
+One line. The run described the album as holding "backstage shots of The Temptations", two
+sentences before establishing that nothing in the album is captioned at all. The finding aid's own
+subject list for F4168 reads "Four Tops" and "The Temptations of Eve(?)" — the archivist's
+spelling, the archivist's question mark, and not the group The Temptations. Naming an act was an
+uncaptioned stage photograph matched to a subject list by guesswork. Rewritten to carry the subject
+list's uncertainty, with the old wording left visible in the entry so the correction stays in the
+history rather than vanishing from it.
+
+## What could not be verified
+
+`wkuherald.com` returns 403 to this container, so the sweep of 119 officer names against its own
+search page could not be independently re-run. That is an unconfirmed negative, not a confirmed
+one. It neither adds nor removes anything, so it did not block the merge, and it is recorded here
+as unchecked rather than as checked. The run's own catch of the "Campbellsville" false positive on
+the substring "bell" is exactly the discipline trap 4 asks for.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, all re-run after the
+correction. `check_duplicates.py` returns the same four pairs as every recent pass — the 1997-98
+designated driver cards, the 1991-92 regent advisory committee bill, the 1971-72 KCLU suit and the
+2003-04 plus/minus fight. None was introduced here, because this pass added no events, and all four
+were read again and remain genuine two-stage sequences. No merges.
+
+61 years, 1,963 events, 60 people have been president: unchanged, correctly, for a pass that added
+no event. 2,651 recorded terms of office held by 1,810 people, 98% with an account of what the
+person did. 68 year photographs and no leader without a portrait, both unchanged.
+
+Still open: the F247 1990-91 executive committee folder is a physical-archive lead no container can
+reach, and needs someone in the WKU Archives reading room. The three unopened Xposure issues
+(1421, 1423, 1424) are very likely the same as the three checked, but that is an inference and
+should be confirmed before the set is closed formally. Xposure's captioned body pages are the
+better lead for the 1994-96 portrait gap.
