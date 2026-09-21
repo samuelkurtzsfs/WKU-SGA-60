@@ -6674,15 +6674,19 @@ could find:
   302` redirecting to the real host — follow it, plain `curl` without `-L` reports a false `HTTP
   302 size=0`) **and** a `Single Page Processed JP2 ZIP`, which is what the next endpoint reads from.
 - `https://iiif.archive.org/iiif/<identifier>$<leaf>/full/full/0/default.jpg` returns one page as
-  a full-resolution JPEG (3000-3200px wide) directly — `HTTP 200`, real `FF D8` JPEG bytes,
-  confirmed on talisman1975west, 1978west, 1979west and 1981west this run, no Cloudflare
-  challenge, no pacing needed beyond ordinary courtesy, no login. `<leaf>` is the scan's physical
-  leaf number, the same number the item's own `/details/<id>#page/n<leaf>/mode/1up` viewer URL
-  uses (confirmed against CLAUDE.md's already-settled LaCivita citation: `talisman1975west` leaf
-  113 is printed page 109, the exact brick-wall photo and caption the settled note describes, and
-  leaf 112 the page before it — `n112` in that note is the same leaf count). **This is the way to
-  actually see a Talisman page image for any of the 19 covered years, full stop** — no need to
-  fight `viewcontent.cgi` or Wayback for these years ever again.
+  a full-resolution JPEG (3000-3200px wide) — real `FF D8` JPEG bytes, confirmed on
+  talisman1975west, 1978west, 1979west and 1981west, no Cloudflare challenge, no pacing needed
+  beyond ordinary courtesy, no login. **Use `curl -L`.** This endpoint answers `HTTP 302` and
+  redirects to the image host; a plain `curl` without `-L` writes a 499-byte HTML stub under your
+  `.jpg` name and reports success, which is §6.7's failure mode exactly. Check `FF D8` before you
+  believe you have a page. `<leaf>` is the scan's physical leaf number, and it is **one more than**
+  the `n` in the item's own `/details/<id>#page/n<N>/mode/1up` viewer URL, which counts images
+  from zero. Confirmed against CLAUDE.md's already-settled LaCivita citation: `talisman1975west`
+  `$113` is printed page 109, carrying the brick-wall photo and the caption naming LaCivita
+  "(right)" with treasurer Ricky Johnson that the settled note describes — so the note's `n112`
+  and this endpoint's `$113` are the same physical page. **This is the way to actually see a
+  Talisman page image for any of the 19 covered years, full stop** — no need to fight
+  `viewcontent.cgi` or Wayback for these years ever again.
 - `https://<server>/fulltext/inside.php?item_id=<id>&doc=<id>&path=<dir>&q=<query>` full-text
   searches inside the scan and returns matched passages with a `page` number per match, plus
   bounding boxes. Get `<server>` and `<dir>` from the metadata call's `server`/`dir` fields.
@@ -6696,10 +6700,16 @@ could find:
   leaf number to *printed* page number, for when a source (like this file's own citations, or the
   index at the back of a Talisman) names a printed page rather than giving a quote to search for.
   **Trust only entries where `confidence` is a real number.** Entries with `confidence: null`
-  are unreliable guesses — one such entry this run (1978, printed page "38") pointed at leaf 42,
-  which is actually printed page 36; the real page 38 was leaf 38, found by going back to the
-  `inside.php` search hit instead. Where confidence is null, either bracket the target with
-  nearby high-confidence entries and count, or just fetch a small range of leaves and look.
+  are unreliable guesses — its entry for 1978 printed page "38" points at leaf 42, and leaf 42 is
+  really printed page 36. The page wanted that time was reached instead by going straight back to
+  the `inside.php` hit and fetching its leaf number as `$leaf`.
+  **Do not bracket with nearby high-confidence entries and count.** That is the trap, not the way
+  out of it: in `talisman1978west` leaves 35, 36, 37 and 39 all carry `confidence: 100` and all
+  read printed = leaf − 4, and counting that run forward gives leaf 42 = printed 38 — wrong by
+  two, because unnumbered section-opener leaves sit in between. Counting only propagates the
+  error. Verified against the page images themselves, 21 September 2026: leaf 38 is printed 34
+  (the ASG spread) and leaf 42 is printed 36 ("Computers on the Hill"). **Fetch the leaf and read
+  the printed number off the page.** It is one request and it is the only answer that holds.
 
 **What this bought this run: nothing landed, but the route is now proven and it is fast.** All 8
 named executive/Senate officers still missing a portrait who fall in an archive.org-covered
@@ -6728,7 +6738,8 @@ year were checked by name through `inside.php` and by eye on the resulting page:
   an agriculture major captioned with no other detail is not enough to claim he is the ASG
   officer of the same name.
 - **Mark Chesnut** (Treasurer, 1980-81) — `talisman1981west` printed page 234 (leaf 238, a
-  high-confidence run of neighboring leaf/page pairs makes this mapping solid) is the intramural
+  the volume's own index line points at printed 234 and leaf 238 is the page carrying the name,
+  which is what ties the two together; the leaf itself prints no page number) is the intramural
   sports results page, listing "Mark Chestnut (Sigma Alpha Epsilon)" as a Badminton and doubles
   Racquetball winner. No photo is captioned with his name; the page's one large photo is an
   unrelated football/rugby action shot. Also worth flagging: this source spells him **Chestnut**,
@@ -6744,6 +6755,19 @@ year were checked by name through `inside.php` and by eye on the resulting page:
 No file was added to or removed from `data/photos.json`; the only change this run makes is this
 section. `build.py` and `check_data.py` both pass clean on the unmodified data tree. Merged
 `origin/main` (fast-forward, no conflicts) before starting. Landed on `research-photos`.
+
+**Editor's check, 21 September 2026.** The route above was re-walked independently before this
+section was merged, and it works: `metadata` lists the files, `iiif` returned real page images
+for 1975, 1978 and 1981, and `inside.php` told a true zero (Pulman, 0 matches) from a real hit
+set (LaCivita, 11) — so its negatives are negatives, not §6.7 silent failures. `$113` of
+`talisman1975west` is printed page 109 and carries the LaCivita brick-wall photo and its caption,
+which corroborates CLAUDE.md's settled note rather than disturbing it. Three things in this
+section were corrected in the same pass: the `iiif` endpoint 302-redirects and needs `curl -L`;
+the viewer's `n` is one less than `$leaf`, not equal to it; and the "bracket with high-confidence
+neighbours and count" advice was removed, because counting is what produces the leaf 42 error it
+was meant to avoid. The eight declined identifications were all checked against the page images
+and all eight declines are right — the 1978 caption names four people in a four-person photograph
+with no left-right order, and nothing ties the 1979 "Steve Wilson" to student government.
 
 ## 9. Restarting a session
 
