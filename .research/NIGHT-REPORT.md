@@ -56,10 +56,27 @@ Added as an event on 1999-02-02, folded into the document's summary, and noted o
 entry and profile. This is a fact from a document already mirrored in the repository and already cited
 by the year — nothing new was crawled for it.
 
+## What was corrected
+
+**The Kappa Alpha aid vote was filed a week after it was taken.** The event headed "The Kappa Alpha
+aid vote failed, loudly" carried the date 1998-12-08 while its own first sentence said the vote was
+taken on 1 December. The date was the Herald's report date, not the vote's. The minutes of 1 December
+1998, mirrored in the repository, settle it: Bill 98-10-F came back for second reading that night,
+Rick Malek moved to raise the sum from $250 to $1,000, the amendment was spoken against, debate was
+closed and the bill failed 20 to 22. Moved to 1998-12-01, with the minutes as the first source and the
+Herald of 8 December kept as the second for the aftermath it reported. The body is unchanged in
+substance; it now reads in step with its date, and the vote sits in the timeline on the night it
+happened rather than after the letters about it.
+
+A second batch of six summaries was sampled while the checks ran, and those six hold too — the
+16 January 1990, 20 March 1990, 2 September 1997, 9 December 1997, 8 September 1998 and 1 December
+1998 minutes, each with the meeting date printed in its own header matching its title. Sixteen of the
+98 are now audited.
+
 ## What was cut
 
-Nothing. Ten summaries audited and ten held, which is the first sample in this report's history to
-come back clean.
+Nothing. Sixteen summaries audited and sixteen held, which is the first sample in this report's
+history to come back clean.
 
 ## Duplicates
 
@@ -84,8 +101,8 @@ clean, `check_data.py` and `check_contrib.py` both exit 0.
 ## Still open
 
 - The brief's three stale pull requests, which no longer exist.
-- 88 of the 98 newly attached document summaries are still unaudited. Ten at random all held, which is
-  good evidence the pass was careful, but it is a sample.
+- 82 of the 98 newly attached document summaries are still unaudited. Sixteen at random all held, which
+  is good evidence the pass was careful, but it is a sample.
 - Ryan Morrison's appointment date as vice president of finance, somewhere between 2 February and
   13 April 1999.
 
