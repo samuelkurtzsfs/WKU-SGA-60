@@ -29655,3 +29655,84 @@ needs someone in the WKU Archives reading room. And the research routines have a
 the 20 September pass — the 1989-90 invalid primary, the 1989-90 constitutional rewrite, the
 1998-99 bill that drew 38 votes and failed, the University Boulevard crossing across two minute
 books — none of which is an editor's to write up.
+
+---
+
+# 21 September 2026, third editor pass
+
+One pull request open: #547, `research-photos`, the third scheduled photograph run of the day.
+Nothing else was waiting. The three branches this pass was told to expect as stale — #6
+photographs, #7 the 1980s, #8 the 2020s — were all closed on 18 August and needed nothing.
+
+## What #547 contained
+
+A single commit touching a single file, `SGA-60-AGENT-INFO.md`, sixty-one lines added and none
+removed. No `data/` file was touched, no photograph added, no person added or moved. The run found
+no portrait that cleared the identification bar and said so plainly, which is the right outcome to
+report rather than pad. Because the handoff document is not rendered into `site/`, nothing in this
+merge reaches the public site.
+
+## What was verified
+
+Sixteen claims were checked rather than the eight required, the census ones against the data and
+the rest against the live hosts.
+
+The completeness census is exact on all three counts: no leader record lacks a portrait, the
+year-photograph gap is precisely the six years named (1994-95, 1995-96, 2000-01, 2005-06, 2006-07,
+2008-09), and 216 executive and Senate officer slots lack one, 119 of them from 2010-11 onward. All
+five officers named as falling in the 1988-1994 window are recorded as stated and are portrait-less:
+Mickie Hennig and Chris Gaddis in 1988-89, David Smith and Trent Lyda in 1992-93, Derrek Duncan in
+1993-94. Each was matched on full name, year and office, never on a surname.
+
+The archive.org boundary holds, and on a second method. The catalog search returns exactly nineteen
+volumes — 1943, 1946, 1947, 1963-65, 1971-1981, 1986, 1987 — and an identifier-prefix sweep of 283
+items returns the same nineteen and no others. So 1988 through 1994 really are absent. The
+false-positive trap the run documented is real and worth the space it was given: the metadata
+endpoint answers `HTTP 200` with a two-byte empty object for an identifier that does not exist,
+against ninety kilobytes and twenty-two files for one that does.
+
+The two closed routes are still closed. `viewcontent.cgi` returns the Cloudflare challenge at
+`HTTP 403`. A `dlsc_ua_records` landing page carries only a cover thumbnail and no page-image
+viewer of any kind. And the claim about the university news search is if anything understated: the
+`?s=` parameter returns byte-identical pages, same checksum, for a real query, a nonsense one and an
+empty one, so it is certainly not being read.
+
+## What was cut
+
+One inference, trimmed rather than deleted. The run reported reaching an "Internet Archive:
+Temporarily Offline" page on a CDX query and read that as positive evidence that the Archive itself
+was down rather than this container's egress. On recheck an hour later there was no such page:
+both the CDX query and the root failed with a connection reset before any body arrived, and the
+agent proxy logged both as relay-side tunnel closures, eleven seconds in, 517 bytes out and 39 back.
+That points at the egress path, not at the Archive. The observation stands as an observation; the
+inference is withdrawn in the file, and the open question now leans egress. The practical
+consequence is the reverse of what the note implied, which is why it was worth correcting rather
+than leaving: this is not an outage to sit out.
+
+One thing was added in the other direction. A 1988 Talisman does exist on archive.org, but it is
+San Marcos High School's, and there are three more yearbooks from other schools under similar
+identifiers. A future run searching that window by title and year instead of by the `west` suffix
+will find a 1988 "Talisman" and be wrong about it. Recorded next to the boundary it threatens.
+
+## The duplicate pairs
+
+The same four as every recent pass, none introduced here, since this diff touches no data. The
+1997-98 pair was read in full again and is two events, not one: Bill 97-3-F funding the designated
+driver cards on 4 November 1997, and the Herald reporting their distribution the following February.
+That second entry states outright that the archive holds only a contents listing, which is an
+advance notice handled the right way. No merges.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, `check_duplicates.py` four
+pairs and no action, all re-run after the trim. 61 years, 1,964 events, 60 people have been
+president. 2,651 recorded terms of office held by 1,810 people, 98% carrying an account of what the
+person did; 47 people under more than one spelling. 1,111 legislation files, 308 mirrored documents.
+No leader without a portrait. Merged.
+
+## Still open
+
+Unchanged, and not an editor's to close: the six year-photograph gaps, the 119 officer portraits
+from 2010-11 on, and the F247 1990-91 executive committee folder that needs someone in the WKU
+Archives reading room. Every live route out of this container is still shut, and the standing
+research list from 20 September is still with the routines.

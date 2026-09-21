@@ -6588,9 +6588,20 @@ challenge page (5,974 bytes) every prior run has logged. `web.archive.org` retur
 "Internet Archive: Temporarily Offline" page (`HTTP 503`) on a CDX query, and a bare fetch of
 `https://web.archive.org/` itself failed with a connection reset via the agent proxy — the same
 symptom pattern the 21 September second-pass run logged as unresolved between "Archive-side outage"
-and "container egress issue." This run's CDX attempt returning the actual "Temporarily Offline" HTML
-(not just a reset or timeout) is positive evidence for the Archive-side explanation, for whatever
-that is worth to the next run deciding whether to retry.
+and "container egress issue." The run read its CDX attempt as positive evidence for the
+Archive-side explanation; **that inference is withdrawn — see the editor's note below.**
+
+*Editor's note, 21 September.* The `web.archive.org` diagnosis did not survive a recheck and has
+been trimmed back to what the evidence supports. On a recheck a little over an hour later, neither
+the CDX query nor a bare fetch of the root returned any "Temporarily Offline" page: both failed with
+a connection reset (`curl` error 35) before any response body arrived. The agent proxy's own status
+endpoint recorded the two attempts as relay-side tunnel closures — `ws_closed_mid_exchange`, tunnel
+closed code 1006 after 11 seconds, 517 bytes sent and 39 bytes received — which points at the egress
+path, not at the Internet Archive. What the run saw at the time stands as an observation, but it is
+not grounds for preferring the Archive-side explanation, so the question the second pass left open
+between "Archive-side outage" and "container egress issue" stays open, and now leans egress. The
+practical consequence for the next run is the opposite of what the inference implied: this is not an
+outage to wait out.
 
 **The archive.org Talisman collection's year coverage is now settled by an actual catalog search,
 not by guessing identifiers and checking HTTP status.** Earlier entries in this file state the
@@ -6608,6 +6619,15 @@ archive.org entirely**, not merely untried. This closes the archive.org route fo
 officers and for the whole 1988-1994 window generally; any future attempt at this specific window
 needs a different host. (The tempting-looking `HTTP 200`-from-`/metadata/` trap is worth a future
 run remembering before it re-opens this exact question the same wrong way.)
+
+*Editor's note, 21 September.* Confirmed independently, and with one addition. An identifier-prefix
+sweep (`identifier:talisman*`, 283 items) returns the same nineteen `talisman<year>west` volumes and
+no others, so the boundary holds on a second method. The addition is a trap sitting directly next to
+it: a 1988 Talisman **does** exist on archive.org — `talisman1988sanm` — but it belongs to San Marcos
+High School in California, and `talisman1979sanm`, `talisman1981abil` and `talisman1987abil` are
+likewise other schools' yearbooks. A run hunting the 1988-1994 window by title and year alone, rather
+than by the `west` identifier suffix or the Western Kentucky University creator field, will find a
+1988 "Talisman" and be wrong about it.
 
 **Two smaller negative findings, both new:**
 
