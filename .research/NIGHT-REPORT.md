@@ -29111,3 +29111,135 @@ year photographs. All unchanged, which is right for a pass that published no new
 
 Still open: nothing. The lead on the two 2004 profile pages is live but blocked on the Internet
 Archive recovering, and is recorded in the handoff with the exact paths to retry.
+
+---
+
+# Editor pass, 21 September — an empty queue, and ninety-eight documents given their years
+
+## The queue
+
+Empty, for the fifth pass running. `git fetch origin` and a listing of open pull requests both
+return nothing: no research pull request is awaiting review, and nothing has been pushed to a
+`research-*` branch since the photograph run merged as #539 at 21:24 on 20 September. Every
+branch that still shows commits ahead of main is a squashed merge, not unmerged work; checked by
+content rather than by commit count, none of them holds anything main lacks. The three August
+pull requests the standing brief still names — #6 photographs, #7 the 1980s, #8 the 2020s — were
+closed unmerged on 18 August and no longer exist to rescue. The brief should stop naming them.
+
+GitHub was reachable: `gh` is not installed in this container, as AGENT-LANDING.md says, but git
+push is credentialed and the GitHub tools answer. This was a full pass.
+
+## What this pass did instead
+
+The evening pass of 20 September found the largest outstanding piece of work in the repository
+and declined it as neither a cut nor a research question: **98 of the 308 mirrored documents in
+`data/documents` were attached to nothing**, copied into `site/docs/` on every build and linked
+from no page a reader could reach. They are almost entirely runs of ASG and SGA minutes — the
+best primary sources this project has, already downloaded, already paid for in crawl time, and
+invisible. With the queue empty for a fifth pass there was no one else to do it. All 98 are now
+attached to their years, and `data/documents` has no orphans left.
+
+Each attachment carries a title, a two-or-three-sentence summary and an extract, all read off the
+document itself rather than off the archivist's description, and a citation to the TopSCHOLAR
+item. The years that gained them: 1988-89 (10), 1989-90 (15), 1990-91 (5), 1991-92 (3),
+1995-96 (4), 1997-98 (32), 1998-99 (21), 2004-05 (1) and 2006-07 (7).
+
+## How the citations were verified
+
+`.research/minutes-index.json` records a date and a TopSCHOLAR item number for 830 meetings, and
+the 91 minutes already cited in `years.json` agree with it on every one — no disagreements, no
+gaps. That is good internal evidence but not proof, so every one of the 97 SGA items was checked
+against its own landing page, one request at a time, three seconds apart, per the pacing rule.
+**All 97 matched: the Start Date on the page is the date in the filename in every case, and the
+page's title distinguishes Congress minutes from Executive Council minutes exactly as the
+filenames do.** The 98th, the Board of Regents minutes of 22 July 2005, is not in the SGA
+collection; its URL was already cited twice in this archive and its landing page description
+matches the file.
+
+Eight finished entries were then re-checked at random against the landing pages after the fact.
+All eight held, and in several the archivist's own description corroborates the summary written
+from the document — the 27 January 1998 page names the conversion of the intramural fee to an SGA
+programming fee, which is what Coffman's report that night is about.
+
+## What the documents turned out to be, and one trap they set
+
+**Four of the files are agendas, not minutes, and were named as minutes.** TopSCHOLAR catalogues
+items 375, 373, 366 and 386 as Meeting Agenda, the sheets themselves are headed AGENDA, and the
+contents are the printed order of business. They are renamed `-asg-agenda-` and described as
+agendas. This matters: an agenda proves what was scheduled and never what was decided, and a pass
+citing `1990-91-asg-minutes-1990-09-18.pdf` in good faith would have written up planned business
+as transacted. That is trap §6.1 wearing a filename.
+
+The 30 October 1990 agenda is worse, and better. It is a working copy, ticked off and annotated
+in pen during the meeting, and the annotator has written "pass" beside four second readings and
+one first reading. That is trap §6.2a exactly: a handwritten mark that is not in the text layer,
+on a paper that is not the minutes. The entry says what the marks are — one person's notes on a
+working paper — and does not record any of those measures as carried.
+
+Three files have no text layer at all and were read as page images instead: the ASG minutes of
+11 September 1990, 3 September 1991 and 15 October 1991, and the Senate minutes of 17 October
+2006. All four are genuine scans, not the bot-check page saved under a `.pdf` name that trap §6.7
+warns about.
+
+## The one factual correction
+
+The archive carried the Kappa Alpha aid fight from the *Herald*'s report of 8 December 1998 and
+dated the entry to the report. The minutes of 1 December settle it: **Bill 98-10-F failed 20 votes
+to 22**, after at least nine members spoke on both sides and an amendment to raise the sum from
+$250 to $1,000. The entry now carries the vote, its true date and the margin, with the minutes
+cited beside the *Herald*. Nothing sourced was lost; a second source was gained.
+
+## What the run turned up and did not act on
+
+These are for the research routines, not for an editor to write up as events.
+
+- **1989-90: the spring primary was declared invalid.** On 10 April 1990 Rules and Elections told
+  Congress the primary election was invalid; Congress suspended the bylaws and left it to the
+  primary's candidates to decide whether to run it again or put every candidate into the general.
+  There is no entry for this in the archive.
+- **1989-90: the constitution was rewritten.** The amendments as passed are attached to the
+  minutes of 27 March 1990 — an Executive Council veto over bills passed by Congress, the
+  Community College Representative elected by community college students, five representatives
+  from each of the four classes.
+- **1998-99: Cosby's regent vote is corroborated.** She reported to Congress on 2 February 1999
+  that both student fee increases passed at the Regents and that she voted against them. The
+  archive already records her as holding the seat; this is a contemporaneous second source for it.
+- **1998-99: a bill that won 38 votes and still failed.** Bill 99-8-S on executive office
+  qualifications was defeated 38-6-4 on 6 April 1999, two short of the two-thirds of the *full
+  membership* of Congress it needed.
+- **1997-98: the University Boulevard crossing has a beginning, a middle and an end** across the
+  1997-98 and 1998-99 minute books, from the first meeting with the state highway department to
+  the speed limit cut from 35 to 25, lights flashing around the clock and rumble strips fifty feet
+  out, to three more students hit the following autumn.
+- **`also_regent` is absent, not false, for nineteen of the post-2001 presidents** whose offices
+  had merged. The 20 September pass set it for five where it was specifically evidenced. Dawson
+  2005-06 was not among them although her own profile says she held the seat, and the Board of
+  Regents minutes of 22 July 2005 now attached record her taking the oath for it. Setting it for
+  her alone would be arbitrary; setting it for all nineteen needs per-person evidence and is a
+  roster job, not an editor's cut. Left alone deliberately.
+
+## What was cut
+
+Nothing, because nothing published was wrong. Two things were held back rather than written.
+The minutes of 10 February 1998 give a reason for Coffman's absence that is personal and has
+nothing to do with his service; the entry says only that the vice-president chaired in his
+absence, because the rule on living people bars personal detail unconnected to SGA service. And the motion to
+accept Resolution 91-3-F of 15 October 1991, and the motion on 89-10-F of 5 December 1989, are
+both recorded without an outcome; neither is written up as having passed.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` returns
+the same four pairs as every recent pass — the 1997-98 designated driver cards, the 1991-92 regent
+advisory committee bill, the 1971-72 KCLU suit and the 2003-04 plus/minus fight. None was
+introduced here, because this pass added no events. All four remain genuine two-stage sequences,
+and the 1997-98 pair is now better supported than before: the minutes of 4 November 1997 carry the
+first reading of the designated driver bill and those of 10 February 1998 set Designated Driver
+day for the 18th, which is two events and not one.
+
+61 years, 1,963 events, 60 people have been president: unchanged, correctly, for a pass that added
+no event. 2,651 recorded terms of office held by 1,810 people, 98% with an account of what the
+person did. 73 leader portraits and 68 year photographs, unchanged. **Documents attached to years
+rise from 131 to 229, and `data/documents` holds no orphaned file at all.**
+
+Still open: nothing in the queue. The research routines have the six leads above.
