@@ -29541,3 +29541,117 @@ executive committee folder still needs someone physically in the WKU Archives re
 
 The editor brief itself needs one correction: its instruction to rescue pull requests #6, #7 and #8
 has been dead for a month and sends each pass looking for branches that are not there.
+
+# Editor pass, 21 September (midday) — an empty queue, and the 98-document layer checked to the last number
+
+## The queue
+
+Nothing open. `list_pull_requests` returns an empty array for `state=open`, and a branch-by-branch
+walk of every `research-*` ref on origin finds nothing carrying data that `main` does not already
+have. Six branches sit one commit ahead — `research-editor-0917-second-night`,
+`0918-night`, `0918-second-pass`, `0919-night`, `0919-third-pass` and `research-night-report-0920pm`
+— and each of the six adds only its own night-report section, every one of which is already on
+`main` under its exact heading. `research-photos` and `research-night-report-0921` are ahead by
+nothing at all. So the queue is empty in substance and not merely in the pull-request list.
+
+GitHub was reachable. `gh` is not installed, as `AGENT-LANDING.md` says; the probe it prescribes
+(`git push --dry-run`) returned a new-branch line, and the API tools answered.
+
+`main` has been rewritten again: it is 113 commits and has **no merge base** with any branch older
+than 17 September. That is the orphan-history situation `AGENT-LANDING.md` warns about, now
+covering a month rather than the 4 August snapshots alone. Nothing was merged across that gap, and
+nothing should be.
+
+The brief's three stale pull requests — #6, #7, #8 — remain closed and gone. This is the third pass
+to record it.
+
+## What was audited instead
+
+The bulk merge of 20-21 September attached **98 mirrored documents** with written summaries. Earlier
+passes checked their *citations* — all 97 SGA landing pages matched their filenames on date and
+title — and read roughly 26 of the summaries. The summaries themselves are the layer that reaches a
+reader, and most had never been read against the document they describe. That is what this pass did,
+with `pymupdf` installed into the container so the mirrored files could be read locally at no cost
+to TopSCHOLAR.
+
+**Integrity first.** All 100 files added in that merge begin with `%PDF-`. None is the bot-check page
+saved under a `.pdf` name that trap §7 warns about.
+
+**Fourteen summaries were read in full against their documents, and all fourteen held.** The sample
+was weighted to falsifiable claims — vote counts, money, resignations, named outcomes — rather than
+drawn flat:
+
+- 6 Dec 1988: the King holiday "with the help of ASG", and under budget. Both verbatim.
+- 7 Feb 1989: the local bus-shelter bid $4,000 under New York's; Kinman voted secretary. The entry
+  correctly records 89-1-S as tabled and does **not** say it passed.
+- 27 Mar 1990: the four constitutional amendments, including the Executive Council veto requiring
+  all members present, match the amendment sheet attached at pages 4-5.
+- 10 Apr 1990: the primary declared invalid and the bylaws suspended to let its candidates choose.
+  The summary declines to name the member sworn in, where OCR is unreliable. Right call.
+- 30 Oct 1990: **rendered and looked at.** The annotator wrote "pass" beside the four second
+  readings and beside Bill 90-5-F only — not beside the microwave bill. Exactly as described, and
+  described as one person's margin note rather than a vote. Trap §6.2a handled correctly.
+- 15 Oct 1991 and 17 Oct 2006: no text layer at all, so both were rendered and read as images. Webb
+  and Bond addressing Congress; the motion on 91-3-F recorded with no outcome and written up that
+  way; Whitaker's point of order and the 5:40 adjournment. All confirmed.
+- 5 Mar 1996: every amendment passed except the 2.5 GPA requirement; over 175 signatures. Confirmed.
+- 4 Nov 1997, 10 Feb 1998, 1 Dec 1998, 2 Feb 1999, 6 Apr 1999: first readings, election dates, the
+  Kappa Alpha vote, the Ruminer resignation and the 38-6-4 defeat, all verbatim.
+- 22 Jul 2005: Dawson's oath and Johnson's August 2004 - July 2005 term, both verbatim.
+
+**Then every number in all 98 summaries was swept against its own document.** Eighteen tokens did
+not match on a literal comparison; under OCR-tolerant matching, and then by reading each remaining
+case on the page, **all eighteen resolve to scanner substitutions** — `D8-4-F` for 88-4-F,
+`9~-IO-F` for 98-10-F, `2S mph` for 25, `$SOO` for $500, `vOle of35-IS` for 35-15, `90 - !3 - S`
+for 90-13-S, `September 1B` for 18. Not one number in the document layer is unsupported.
+
+## The one thing cut
+
+The 1998-99 entry on the Kappa Alpha vote said the minutes record "a defeated amendment to raise the
+sum from $250 to $1,000." They do not. They record Rick Malek moving the amendment, Eddie Schwab
+seconding it, Joe Morel and Matt Bogard speaking against it, and then a vote **on the bill**, which
+failed 20-22. No vote on the amendment is minuted. That the bill was voted at $250 makes the
+amendment's failure a fair inference, but an inference is not what the minutes carry, and writing an
+unrecorded outcome as a recorded one is trap §6.2a in miniature.
+
+Trimmed rather than deleted, to what the document proves: moved, spoken against, no vote recorded.
+The archive's own summary of the same file had it right — "moved and opposed" — so the entry was
+also inconsistent with the document description sitting beside it. The 20-22 margin, the speakers
+and the *Herald* aftermath are untouched.
+
+## Two things noticed and deliberately not acted on
+
+- The minutes of 28 November 1988 are headed 28 November and open "The November 29 meeting". The
+  inconsistency is the document's own; TopSCHOLAR's Start Date agrees with the filename, and nothing
+  here needs changing.
+- The Board of Regents roll of 22 July 2005 includes **Larry Zielke** as a sitting regent. The
+  1970-71 Lyne/Zielke question is still open, and a man of that name on the Board in 2005 is a lead
+  worth someone's time — but it is a lead, not a finding, and trap §4 is about exactly this kind of
+  match. Recorded for the research routines; not written up.
+
+## The duplicate pairs
+
+`check_duplicates.py` returns the same four pairs as every recent pass, none introduced here. All
+four were read again in full and all four are genuine two-stage sequences: Bill 97-3-F funding the
+designated driver cards on 4 November 1997 against their distribution on 18 February 1998; the
+regent advisory committee bill introduced 28 January 1992 and failing after amendment on 6 February;
+the KCLU planning suit in February 1972 and Associated Students endorsing it in March; and SGA
+voicing opposition to plus/minus grading in September 2003 and passing legislation against it in
+October. No merges.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, all re-run after the trim.
+61 years, 1,964 events, 60 people have been president. 2,651 recorded terms of office held by 1,810
+people, 98% with an account of what the person did; 47 people under more than one spelling. 229
+documents attached to years, 308 mirrored files, 1,111 legislation files. 68 year photographs, no
+leader without a portrait.
+
+## Still open
+
+The six year-photograph gaps and the 119 officer portraits from 2010-11 on, unchanged, with every
+live route out of this container still closed. The F247 1990-91 executive committee folder still
+needs someone in the WKU Archives reading room. And the research routines have a standing list from
+the 20 September pass — the 1989-90 invalid primary, the 1989-90 constitutional rewrite, the
+1998-99 bill that drew 38 votes and failed, the University Boulevard crossing across two minute
+books — none of which is an editor's to write up.
