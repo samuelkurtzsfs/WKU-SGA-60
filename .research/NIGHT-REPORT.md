@@ -30312,3 +30312,113 @@ itself an open question, and the first thing the next photograph run should sett
 query that produces its list. The F247 1990-91 executive committee folder still needs someone in the
 WKU Archives reading room. The six decade routines and the legislation harvest remain off, as they
 have been since early August; the photograph routine is still the only one producing.
+
+---
+
+# Editor pass, 22 September (midday) — an empty board, and the minutes layer audited after the fact
+
+Nothing was open. Not one pull request, on any branch, at any age. Main stood at #556, merged at
+09:24 UTC, and the four routines had pushed nothing since.
+
+So the first job was to establish that the empty board was real rather than a routine that had
+researched and failed to land. Every `research-*` and `editor-*` branch on origin was diffed
+against main across `data/` and `.research/`: every one of them resolves to deletions only, which
+is what a branch looks like after its work has been squashed onto main and main has moved on.
+Nothing is sitting unmerged. The queue is empty because the work landed, not because it was lost.
+
+## What was audited instead
+
+An empty queue is not an empty run. Main auto-deploys, so everything merged since the last editor
+pass is already public and has been read by whoever visited. That material is still in scope for
+this desk, just after the fact rather than before it, and the largest of it was `f72011e6` — the
+ninety-eight mirrored ASG minutes attached to their academic years.
+
+Nine claims were drawn from it and checked against the mirrored PDFs themselves, not against the
+summaries that were written from them. All nine held, several of them word for word:
+
+- 28 Nov 1988 — Whitehouse on committees as the most important part of ASG, the two basketball
+  coaches' letter asking organisations to sponsor games, Ron Beck on ASG's purpose, and the motion
+  seating Bill Engle as Business College Representative. All present. `88-4-F` is `D8-4-F` in the
+  scan, which is the OCR, not a different bill.
+- 6 Dec 1988 — Smoot on the King holiday, credited to ASG in the minutes' own words, and Gumbel
+  reporting under budget.
+- 17 Jan 1989 — the shuttle-stop shelter and the escort service named as the semester's aims, Dean
+  Bailey's memo read out, the hotline needing work and publicity.
+- 7 Feb 1989 — the local bid $4,000 under the New York one, the photographs shown to Congress,
+  Robin Kinman voted secretary after the candidates spoke.
+- 14 Feb 1989 — 89-2-S accepted as amended on second reading; 89-3-S carried through first reading,
+  a suspension of the rules and a second reading in one sitting.
+- 14 Mar 1989 — the finals-week study room in DUC, the banquet set for 18 April.
+- 28 Mar 1989 — "Resolutions 89-7-S and 89-8-S both had their second readings. Discussion occurred
+  and both passed."
+- 10 Oct 1989 — 89-01-F accepted, 89-02-F read for the first time, and the motion placing the
+  shuttle shelter by Tate C. Page Hall.
+- 24 Oct 1989 — 89-03-F's first reading and Heather Falmlen chosen Sophomore Class President.
+
+Three of the cited URLs were opened as well. `sga/Meetings/Minutes/91` and `/72` return 1988 and
+1989 meeting minutes, and `dlsc_ua_records/3610` returns "UA3/3 Commemorative Program in Observance
+of the Official Date of University Status", 1966, which is the label word for word.
+
+Nothing was cut, because nothing needed cutting.
+
+## The trap that was handled correctly before it got here
+
+Trap 2a is the one this layer was most exposed to, ninety-eight sets of minutes full of second
+readings. It was handled properly. The 7 February entry records that 89-1-S had a second reading
+and that a motion to table it carried — a tabling written up as a tabling, not as a vote. The 28
+March entry does claim both resolutions passed, and the minutes say exactly that in a sentence of
+their own. The 24 October claim that the constitutional amendments were accepted as amended sits in
+a passage the text layer mangles; it is on page 4 and reads "It was moved and seconded to accept
+the constitutional amendments as amended. Motion passed."
+
+The other one worth naming is a negative. The 28 March minutes record a motion to move "Eric" to
+Sophomore Vice-President and give no surname. The entry says "Eric" and stops there. Leaving a name
+half-finished because the source left it half-finished is the right instinct, and rarer than it
+should be.
+
+## A diff that reads worse than it is
+
+`83098dfa` shows ten portrait credits in `data/photos.json` with their reuse year changed, and the
+hunks align so that each change looks like a correct year being replaced by a wrong one — "reused
+for 1994-95" becoming "reused for 1995-96" under a label that says the person held office in
+1994-95. It is not what happened. The leaders array is 1,391 entries before and after, and these
+are the second, reuse entries, each attached to a different year from the one the portrait was
+taken in. Their labels previously repeated the year the person held office, which contradicted the
+year the entry was filed under; they now name their own year. The commit message says so plainly.
+Recording it here because the next pass to read that diff will see the same alarming shape.
+
+## The duplicate pairs
+
+The same four, and the same judgement: designated driver cards announced in November 1997 and
+distributed in February 1998; the regent advisory committee bill introduced in January 1992 and
+failed in February; the KCLU suit and ASG's endorsement of it; plus/minus grading opposed in
+September 2003 and legislated against in October. Four two-stage sequences, not four repeats. No
+action.
+
+## A note on the container
+
+`pdftotext` and `pdftoppm` are not installed and `apt-get` cannot reach a mirror, so the usual route
+into a scanned PDF is closed. `pypdf` is installed but fails to import until `cffi` is repaired with
+`pip install --upgrade cffi`; after that `extract_text(extraction_mode='layout')` recovers passages
+that the default mode scrambles, which is how the 24 October amendment vote was finally read. Worth
+knowing before a future run concludes a claim is unverifiable.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, `check_duplicates.py` the four
+pairs above. 61 years, 1,964 events, 60 people have been president. 2,651 recorded terms held by
+1,810 people, 98% carrying an account of what the person did; 47 people under more than one
+spelling. 308 mirrored documents, 1,111 legislation files, search index 4,946 records. Data
+unchanged by this pass.
+
+## Still open
+
+Unchanged: the six year-photograph gaps, the officer portraits from 2010-11 on and the disputed
+count behind them, and the F247 1990-91 executive committee folder that needs someone in the WKU
+Archives reading room. The six decade routines and the legislation harvest remain off; the
+photograph routine is still the only one producing, and it produced nothing this pass.
+
+The stored brief again opens by sending this run at #6, #7 and #8 as stale and open since 4 August.
+They were all closed on 18 August. That is the sixth consecutive pass to write this sentence, and
+the brief is now also wrong about the shape of the job: it describes a board with three stale pull
+requests on it, and the board is empty.
