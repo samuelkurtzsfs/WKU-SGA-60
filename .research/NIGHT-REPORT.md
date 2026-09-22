@@ -30127,3 +30127,113 @@ without a portrait.
 Unchanged. The six year-photograph gaps, the 119 officer portraits from 2010-11 on, and the F247 1990-91
 executive committee folder that needs someone in the WKU Archives reading room. The research routines have
 pushed nothing since 21 September; the standing list from the 20 September pass is still with them.
+
+---
+
+# Editor pass, 22 September (second) — the archive's least-used sources swept as a class
+
+No pull request was open. `git fetch origin` and a listing of open pull requests return nothing:
+everything through #553 was merged by 03:27 this morning, and no research branch has been pushed to
+since. The three branches the standing brief still names as stale and open — #6 photographs, #7 the
+1980s, #8 the 2020s — have been closed since 18 August; every other `research-*` tip that reads as
+"ahead" of main is a night-report snapshot from the orphan history, carrying nothing main lacks.
+`gh` is not installed in this container, as the brief has been told before; git is credentialed
+without it, and the GitHub tools serve the pull requests.
+
+With no diff to review, the pass went at the published site. The morning's pass had already read the
+spring-election filing, the vote arithmetic and fourteen wkuherald citations, so this one took a
+slice nobody has swept as a class: **the sources the archive leans on least**. Every citation
+outside the two big runs of Herald back file and wkuherald.com was listed and opened — the four
+events resting on WKU's own SGA history page, and the four one-off sources (WKMS, the Talisman, the
+underground *Expatriate*, a University Senate resolution). These are the archive's thinnest-trodden
+ground, and CLAUDE.md names the wku.edu history page explicitly as a later list to be distrusted.
+
+Eleven claims were opened against their sources. Seven held. Four did not, and all four are
+corrected here.
+
+## What held
+
+The history page carries three of its four claims word for word: the four-day referendum of
+26–29 April 1966 ratifying the constitution 1,812 to 726 (2,538 votes, and the archive's own figures
+bear out the comparison the entry draws — of thirty-seven turnout figures recorded since, exactly one
+genuine election turnout is larger); Jim Haynes elected the organisation's first president on
+18 May 1966; and the rename of 7 April 1992, ratified by referendum on 14 April and taking effect
+that autumn. The 13 April 2004 speaker vote was read against both the minutes mirrored on this site
+and the *Herald* of 15 April, and every element of it holds: Watkins nine votes to Fausey's eight,
+17 of 20 members voting, the two-thirds ambiguity, the three members barred by the judicial council's
+ruling, Martin's warning, Fausey declining to challenge, and the authorship of the constitution. The
+WKMS entry on Ransdell's response to the racist notes and the carved slur is exact. The *Expatriate*
+and University Senate entries are both properly hedged about what they cannot establish.
+
+## What was cut
+
+**A Tucker Carlson interview that its source does not mention.** The entry for Ransdell's rejection
+of the reparations resolution had "National wire coverage followed, along with a Tucker Carlson
+interview with Ambam and a wave of fabricated headlines." Its only source is FactCheck.org, which
+carries the fabricated headlines in detail and says nothing whatever about wire coverage or a
+television interview — the words Carlson, Fox, wire and interview appear nowhere in it. Both claims
+are gone. What the article does support is now what the entry says: Ransdell's statement that the
+resolution was not an official university position, the false headlines circulating for months, and
+both authors calling the measure a way to start a dialogue. The date moves from 21 to 20 April,
+which is where the source puts it — two days after the vote of 18 April.
+
+**A constitutional convention written out of a page that never mentions one.** The 2003-04 entry
+"The Constitutional Convention rebuilds the body" named three branches — Executive Cabinet, Senate
+and Judicial Council — and a clause making every enrolled student a member. Its source was the SGA
+history page, which has no convention, no branches and no such clause; it mentions "constitutional
+conventions" once, in the plural, across sixty years. The claims may well be true, but the 2004
+constitution is not among the four in TopSCHOLAR's constitution series and nothing in the archive
+carries its text. Rather than delete a real event, it has been rewritten onto the contemporaneous
+source already cited in the same year: the *Herald* of 15 April 2004, which reports that Watkins,
+chair of the legislative research committee, wrote the constitution, that it passed in a student
+referendum the previous month, and exactly what powers it gave the new speaker of the senate. Dated
+to March 2004 accordingly. The three-branch structure needs the constitution itself before it can
+be published again.
+
+**A town hall SGA did not hold, in a room the source does not name.** The entry for 24 September 2020
+said "SGA held a town hall debate in the DSU auditorium." The Talisman's voter's guide calls it the
+Herald Town Hall three times over; SGA did not run it, and neither DSU nor an auditorium appears
+anywhere in the piece, which describes an hour-long debate before a small in-person audience and a
+livestream.
+
+**An office Nathan Terrell never sought, caught by the archive contradicting itself.** The same entry
+had Terrell as "Edmonds's original running mate for administrative vice president," dropped from the
+ticket "and replaced by Abbey Norvell." The archive's own entry for the day before, sourced to the
+*Herald*, has it right: Terrell was speaker of the senate and a candidate for **executive vice
+president**, and removed himself from the "Garrett-Nathan-Abbey" ticket. Norvell was already on that
+ticket as the candidate for administrative vice president and replaced nobody. The voter's guide
+confirms it from the other end — Norvell is its administrative vice-presidential candidate, and it
+states plainly that no candidate was running for executive vice president. Two adjacent events in
+the same year disagreed, and the one resting on a later guide was the one that was wrong. Corrected,
+and the citation's date fixed from 28 to 26 September, which is the guide's own byline.
+
+## One claim given the source it was resting on
+
+The Haynes entry dated WKU's change from college to university to 16 June 1966 with nothing behind
+it. The local index turned it up at no cost to TopSCHOLAR: UA3/3, the President's Office's
+commemorative programme "in Observance of the Official Date of University Status," published
+16 June 1966 and held in Box 33, Folder 15 of Kelly Thompson's papers. Opened and confirmed, and
+added as a second source.
+
+## The duplicate pairs
+
+The same four as every recent pass, none introduced here: the designated driver cards, the regent
+advisory committee bill introduced then failed, the KCLU suit and its endorsement, and the two
+plus/minus grading votes. All two-stage sequences. No merges.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, `check_duplicates.py` four pairs
+and no action, all re-run after the corrections. 61 years, 1,964 events, 60 people have been
+president. 2,651 recorded terms of office held by 1,810 people, 98% carrying an account of what the
+person did; 47 people under more than one spelling. 308 mirrored documents, 1,111 legislation files,
+search index 4,946 records. No leader without a portrait.
+
+## Still open
+
+Unchanged, and none of it an editor's to close: the six year-photograph gaps, the 119 officer
+portraits from 2010-11 on, and the F247 1990-91 executive committee folder that needs someone in the
+WKU Archives reading room. The six decade routines and the legislation harvest are still off, as
+they have been since 4-5 August; the photograph routine remains the only one producing, and it has
+pushed nothing since this morning. The three-branch structure of the 2004 constitution is now a
+standing research item: it needs the document itself.
