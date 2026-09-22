@@ -30648,3 +30648,104 @@ The stored brief again opens by sending this run at #6, #7 and #8 as stale and o
 They were all closed on 18 August. That is the sixth consecutive pass to write this sentence, and
 the brief is now also wrong about the shape of the job: it describes a board with three stale pull
 requests on it, and the board is empty.
+
+---
+
+# 22 September 2026, late — editor pass
+
+One pull request open, one merged, nothing cut.
+
+## What was reviewed
+
+#563, "Research: photographs", the photograph routine's fourth pass of the day. The diff is 38
+lines added to `SGA-60-AGENT-INFO.md` and nothing else. The branch's three earlier commits — the
+two 1980-81 ASG composite crops and the editorial pass over them — had already reached `main` by
+way of #558, so the only new content was the run note. No data file changed, and
+`SGA-60-AGENT-INFO.md` is not copied into `site/`, so the merge published nothing to the live
+site.
+
+That makes this a negative result written down, which is the shape a closed lead should take. The
+Alan Jackson question has been sitting open across passes as "the obvious next thing for whoever
+picks up 1980-81". It is now answered, and answered in a way that stops the next run paying for
+the same search.
+
+## The spot check
+
+Five checkable claims, all five opened at the source rather than taken from the report.
+
+The 1980 *Talisman* back-of-book index does read "Jackson, Alan Lawrence 124, 423", verbatim, in
+the item's full text on archive.org. The photograph on printed page 423 does carry the caption the
+report quotes, about helping children with their social studies at McNeill Elementary School as
+part of a sophomore Alan Jackson's contribution to his fraternity's tutoring. Nothing in it
+touches student government, so it cannot carry the identification across to the Minority Affairs
+chair of the following year. The run declined it on that ground even though the name matched in
+full, which is the stricter reading and the right one.
+
+The 1981 index entry was the one worth checking hardest, because an OCR dropout and a genuinely
+blank page reference look identical. It is genuine. `Jackson, Alan Lawrence` carries no number,
+while `Jackson, Charles Neal` two lines below carries 290 and 362 and `Jackson, Dawn O.` carries
+303 and 332. The blank is the book's own convention, not the scanner's.
+
+The two coverage figures hold exactly. Seventy-three leader entries in `data/years.json`, and all
+seventy-three matched to a portrait in `data/photos.json`: no president and no student regent is
+without one. Six years still have no year-level photograph, and they are the same six —
+1994-95, 1995-96, 2000-01, 2005-06, 2006-07, 2008-09.
+
+## The one number that did not reconcile
+
+The note gives 240 officer and committee slots without a portrait, held by 192 distinct people.
+Counting executive officers, Senate officers and committee chairs across every year gives 270
+slots and 220 people. This is the same disputed count the last pass left standing, and it is
+almost certainly a difference in counting rule rather than in data — most likely whether someone
+who already appears as a leader elsewhere is excluded. Nothing was cut for it and no published
+claim depends on it. But it is a progress metric, and a progress metric nobody can reproduce is
+one a later run will adopt as a baseline and then report movement against. The photograph routine
+has been asked, on the pull request, to state the counting rule next to the figure.
+
+## Traps
+
+Nothing tripped. No event was added, so the advance-notice trap had no surface. The chair-as-officer
+trap appeared in its useful direction: the run refused to promote a yearbook Alan Jackson into an
+SGA chairmanship on a name alone. No surname-only match, no changed-surname duplicate, no April
+result filed into the wrong year, nothing touching the settled facts, no contributor commit in the
+diff. All four commits are authored `SGA 60` and neither the pull request body nor the run note
+names any tooling.
+
+## The duplicate pairs
+
+The same four as the last several passes, and the same judgement. Designated driver cards passed
+in November 1997 and distributed in February 1998; the student regent advisory committee bill
+introduced on 28 January 1992 and failed, altered, on 6 February; the Kentucky Civil Liberties
+Union planning court action in February 1972 and Associated Students endorsing the suit in March;
+plus/minus grading opposed at a meeting in September 2003 and legislated against in October. Four
+two-stage sequences. Nothing combined.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, `check_duplicates.py` the
+four pairs above. 61 years, 1,964 events, 60 people have been president. 2,651 recorded terms held
+by 1,809 people, 98% carrying an account of what the person did; 48 people recorded under more
+than one spelling. 308 mirrored documents, 1,111 legislation files, search index 4,945 records.
+Data unchanged by this pass, and `site/` regenerated identically.
+
+## Housekeeping
+
+Seven `research-*` branches still sit on origin carrying nothing but superseded drafts of this
+file, from the drop-box route. Their content has long since reached `main` through editor
+branches. They are harmless but they make the branch list unreadable, and they are safe to delete
+whenever someone is in a tidying mood.
+
+## Still open
+
+Unchanged: the six year-photograph gaps, the officer portraits from 2010-11 on and the count
+behind them, and the F247 1990-91 executive committee folder that needs a person in the WKU
+Archives reading room. The six decade routines and the legislation harvest remain off. The
+photograph routine is the only one producing.
+
+The stored brief opened again by sending this run at #6, #7 and #8 as stale and open since
+4 August. All three were closed on 18 August — this is the seventh consecutive pass to write that
+sentence. Worth adding, since a future pass may be told to merge `origin/main` into them: if any
+of those three is ever reopened, it must not be merged. `AGENT-LANDING.md` records that the
+4 August branches share no root commit with `main`, and merging one would delete
+`herald-index-full.json`, `name-aliases.json` and the whole contributor layer. They would have to
+be compared file by file onto a branch cut from current `main`.
