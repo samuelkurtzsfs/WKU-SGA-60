@@ -1,3 +1,106 @@
+# 22 September 2026 — the photograph PR merged, and a carried-forward count finally recounted
+
+## What was open
+
+One pull request: #552, "Research: photographs (rolling)", opened at 02:12 UTC on
+`research-photos`. Clean merge base against main, one commit, authored `SGA 60`, no tool
+attribution in the commit or the body. Nothing else in the queue.
+
+The stored brief again sends this run at #6, #7 and #8 as stale and open since 4 August. All
+three are closed — #8 unmerged on 18 August 2026. That is now five consecutive passes recording
+it. The brief should stop carrying them.
+
+## What the pull request was
+
+A run log and nothing else: one new file, `.research/photo-run-2026-09-22-scheduled.md`, 84
+lines, with `data/photos.json`, `data/photos/` and `data/years.json` byte-identical to main.
+`build.py` excludes `.md` from the site copy, so nothing here reaches a reader. The stakes are
+low but not nil, for the reason the fourth pass gave: a method note is what the next run acts on.
+
+The run landed no portrait, and was right not to. It reconfirmed the president and regent
+portraits complete, independently re-derived the same eight executive-officer declines the
+previous evening had logged, and found a fresh lead for the 1995-96 year-photograph gap blocked
+by an Internet Archive outage.
+
+## What was verified
+
+Twelve claims checked, eleven sound.
+
+Scripted against the data: 72 president and regent leader slots, **zero without a portrait**. The
+four named presidents — Todd, Dawson, Johnson, Gilley — resolve to files on disk beginning
+`ffd8ffe0`. The computed year-photograph gap list is exactly the six the report names. The branch
+contains main with nothing behind. `build.py`, `check_data.py` and `check_contrib.py` all exit 0.
+
+Opened from the archive: `dlsc_ua_records/9035` is the Herald of 12 October 1995, `article=10017`,
+its index carrying Alfina Mami's "Associated Student Government Reaches Tenth Anniversary". The
+report describes the lead accurately and claims nothing about its contents, which is correct for an
+article nobody has yet read.
+
+The outage was rechecked and has moved. `https://web.archive.org/` is serving again, HTTP 200,
+while the **CDX search endpoint still times out**. That is the report's own central distinction —
+CDX search and the download/iiif endpoints are separate services with separate uptime — now
+visible with one up and the other down. The lead is untried, not closed negative. The recheck was
+written into the merged file so the next run does not have to re-derive it.
+
+## What I corrected
+
+One number, rescued rather than cut.
+
+**The 216 officer-portrait figure does not reproduce.** Executive and Senate officer slots in
+`years.json` with no portrait anywhere come to **208**, or **226** counting committee chairs. No
+basis tried — unique names, excluding leaders, with or without chairs — reaches 216. The report
+stated it as matching the fourth-pass entry *exactly*, and that exactness is what made it a
+finding rather than a quibble.
+
+This is the third pass to disprove the same number. It is already recorded in this file that "216
+is not reachable by any method I tried," and it was carried forward again regardless. The line now
+gives both reproducible counts, says the figure is unreachable from the data, and says the count
+moves as officers are added so it must be re-derived each run. The instruction back to the
+photograph routine is narrow and worth repeating: **recount from `years.json` every run and state
+the counting basis; do not copy the figure between reports.** The PR body still carries 216 and
+was left as filed.
+
+## The traps
+
+Nothing tripped. Two were handled well rather than merely avoided. No event was written up at all,
+so no advance notice could become a report — the one lead is recorded as untried with no content
+claimed for it. The Steve Wilson decline rests on the right ground, that a common surname with
+nothing tying the hit to student government is not an identification. No people, offices or events
+were added, so the chair-as-officer, changed-surname, spring-election and settled-facts traps do
+not arise; the eight re-derived declines are framed as independent confirmation, not as reopening
+anything. No contributor edits, nothing in `data/posts/`.
+
+## The duplicate pairs
+
+The same four as recent passes, none introduced here, since the diff touches no data. Read again
+and all four are separate events on separate dates citing separate sources. No merges. The
+designated driver cards are a November 1997 funding bill and a February 1998 distribution report
+three and a half months apart; the student regent advisory committee is a bill introduced on
+28 January and the same bill failing after amendment on 6 February; the Civil Liberties Union pair
+is the union planning action in February and Associated Students endorsing the suit in March, which
+the second entry already cross-references; and plus/minus grading is concern voiced in September
+against legislation passing unanimously in October.
+
+## The numbers
+
+61 years, 1,964 events, 60 people recorded as president. 2,651 terms of office held by 1,810
+people, 2,614 of them (98%) carrying an account of what the person did, and 47 people recorded
+under more than one spelling or name. 308 documents and 1,111 legislation files. The search index
+builds to 4,946 records.
+
+Portrait coverage: every president and regent has one. Six years still have no year-photograph
+(1994-95, 1995-96, 2000-01, 2005-06, 2006-07, 2008-09), and 208 executive and Senate officer slots
+lack one, 226 including committee chairs.
+
+## Still open
+
+Nothing in the review queue. The 1995-96 tenth-anniversary lead is live again the moment Internet
+Archive's CDX search answers, and the main site being back suggests that is close. The other five
+year-photograph gaps still need a photo-credit-first or visual approach rather than keyword search,
+the mid-1990s and 2000s issues having no OCR text layer.
+
+---
+
 # 21 September 2026 (fourth pass) — one photograph PR merged, and the method note's own advice disproved
 
 ## What was open
