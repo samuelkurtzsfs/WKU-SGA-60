@@ -6863,6 +6863,57 @@ No file was added to or removed from `data/photos.json`; the only change this ru
 section. `build.py` and `check_data.py` both pass clean on the unmodified data tree. Merged
 `origin/main` (fast-forward, no conflicts) before starting. Landed on `research-photos`.
 
+### Photograph run of 22 September (further pass): the two names still missing from the already-worked 1980-81 ASG composite
+
+Confirmed the baseline first: the four named presidents (Todd, Dawson, Johnson, Gilley) and all
+61 `leaders` entries still carry a portrait, so the whole job was priorities 3 and 4. A fresh count
+of `organization.executive` / `senate.officers` / `senate.committees` names against `photos.json`
+turned up 272 slots (220 distinct people) still without one — up from the 216 the log recorded on
+21-22 September, because other routines had added new officer names to `years.json` in the
+meantime that nobody had checked for a photograph yet. That gap, not another sweep of the routes
+this file had already closed, is where this run found something.
+
+Cross-referencing the newly-added 1979-80/1980-81 committee chairs against years already covered
+by archive.org's Talisman holdings turned up Kevin Kinne and Margaret Ragan, both chairing
+committees in 1980-81. Both, it turned out, are already named in the 1981 Talisman's Associated
+Student Government group photograph (p. 282) that this project has been mining since at least
+6 September — the same photograph that already supplied Marsha Sanner, Perry Hines, Jeffrey
+Morris, Greg Zoeller and Craig Hoffer. Of the third row's eight names, only Kinne (third) had
+never been attempted; Ragan (seventh) had already been *located* — the archive's Perry Hines entry
+has read "the third row's only woman, Margaret Ragan, standing seventh" since it was written — but
+no one had actually cropped and committed her face. Fetched the page fresh via
+`iiif.archive.org/iiif/talisman1981west$286/full/full/0/default.jpg` (leaf 286, printed p. 282;
+`inside.php` full-text search on "Kevin Kinne" is what supplied that leaf number) rather than
+trusting the lower-resolution `data/photos/1980-81-asg-group-photo.jpg` already sitting in the
+tree, since the fresh fetch turned out visibly sharper.
+
+Kinne's crop sits directly between two positions the archive already holds from this same photo —
+Hines (second) to his left, Hoffer (fourth) to his right — which is a stronger anchor than the
+first researcher to reach position 2 had. Ragan's crop was checked against the archive's other,
+already-confirmed Ragan portrait (Herald 58:2, 26 Aug 1982, from her year as ASG president): same
+dark complexion, same full dark hairstyle. Both src notes say plainly that the identification
+rests on row position and count-matching, not on a feature-by-feature face match, which is the
+same standard this photograph's other five crops were already held to.
+
+One near-identical name from the same batch of newly-added committee chairs, Alan Jackson
+(Minority Affairs, 1980-81) and Debbie Thomas (Complaint and Suggestion, 1980-81, succeeded by
+Ragan), do **not** appear in this composite's caption at all, so this photograph has nothing more
+to give for this year. Debbie Thomas already has an unresolved, correctly-uncommitted candidate
+sitting in `data/photo-finds/n8087.json` from 6 September — a junior-class-portrait cell for a
+"Deborah Lynn Thomas" the note itself flags as one of two women enrolled under that name that
+year, "FACE PROVED, PERSON NOT PROVED." Nothing found for it changes that; it stays out of
+`photos.json`. Mark Chesnut (Treasurer, 1980-81) was searched and declined for the same reason on
+6 September (indexed twice, both times to an intramural-sports table, never a photograph) and
+Alan Jackson was not searched further this run — a name search of the 1980 and 1981 Talisman
+indexes for him is the obvious next step for a future pass.
+
+Two new files: `data/photos/1980-81-kevin-kinne.jpg`, `data/photos/1980-81-margaret-ragan.jpg`,
+both real JPEGs (`FF D8` checked). `build.py` and `check_data.py` both pass clean. Landed on
+`research-photos`, restarted from `origin/main` since the prior PR (#555) had already been folded
+into main by the editor under a `state: closed`/`merged: false` GitHub status, the pattern this
+project's editor routine leaves behind when it merges by direct git push rather than GitHub's
+merge button.
+
 ## 9. Restarting a session
 
 ```bash
