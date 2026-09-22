@@ -6756,6 +6756,34 @@ No file was added to or removed from `data/photos.json`; the only change this ru
 section. `build.py` and `check_data.py` both pass clean on the unmodified data tree. Merged
 `origin/main` (fast-forward, no conflicts) before starting. Landed on `research-photos`.
 
+**Editor's check of the above, 22 September.** Re-ran every claim in this section that can be
+tested. The archive.org coverage list is exactly right: a catalog search returns 19 items and
+they are precisely the years named, and `talisman1983west`, `1968west` and `1990west` do each
+answer `200` with an empty `{}` body, so the warning about reading the body rather than the
+status code holds. `viewcontent.cgi` still returns the Cloudflare 403. The `www.wku.edu/news`
+`?s=` search really does redirect to `/news/articles/?s=` and return page chrome with no result
+list. The William Hurst false positive is exactly as described: the 2022 Veterans Day post
+carries nine captions, one of them naming Col. William E. Houston, and the string `Hurst`
+appears nowhere in that post.
+
+Three corrections to this section:
+
+- The portrait check is right but the number is mislabelled. 61 is the count of **year
+  records**; there are **73 leader entries** across them. None of the 73 lacks a portrait, so
+  the finding stands.
+- **The 216 and 92 figures do not reproduce.** Counting executive, Senate-officer and
+  committee-chair slots keyed on year plus name gives 272 slots and 220 distinct people without
+  a portrait; keyed on whether the person has a portrait under any year at all it gives 240
+  slots and 192 people, of whom 95 have an earliest office in 2010-11 or later. The 216 is
+  inherited from earlier passes in this file rather than introduced here, so the convention
+  behind it is what needs recovering. This matters because the section tells a future run to
+  **stop** sweeping wkuherald.com "for this list" — an instruction to close a route should rest
+  on a population that can be rebuilt from the data. Before relying on that instruction, rebuild
+  the list and check the 3 to 15 people the sweep may not have covered.
+- **web.archive.org was reachable when this was reviewed** (`HTTP 302`, answering normally).
+  The section is right that the failure is intermittent, but the Wayback route is not closed and
+  should not harden into a standing negative on the strength of one reset.
+
 **Editor's check, 21 September 2026.** The route above was re-walked independently before this
 section was merged, and it works: `metadata` lists the files, `iiif` returned real page images
 for 1975, 1978 and 1981, and `inside.php` told a true zero (Pulman, 0 matches) from a real hit
@@ -6768,6 +6796,72 @@ neighbours and count" advice was removed, because counting is what produces the 
 was meant to avoid. The eight declined identifications were all checked against the page images
 and all eight declines are right — the 1978 caption names four people in a four-person photograph
 with no left-right order, and nothing ties the 1979 "Steve Wilson" to student government.
+
+### Photograph run of 22 September: all three live routes retested and found no better, a systematic wkuherald.com officer sweep run for the first time and it came back clean
+
+Re-confirmed the starting state before touching anything: all four of the named presidents
+(Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) still carry a portrait, and the wider
+check holds too — zero of the 61 `leaders` entries lack one. So this run's whole job was
+priorities 3 and 4: the 216 named executive/Senate/committee officer slots without a portrait,
+and the same six years still carrying no year-level photograph (1994-95, 1995-96, 2000-01,
+2005-06, 2006-07, 2008-09).
+
+**Route status, retested fresh rather than trusted from the log:**
+- `digitalcommons.wku.edu/cgi/viewcontent.cgi` — still the Cloudflare "Just a moment..." 403
+  challenge, tested against the standing known-good article (`article=5695`) with the documented
+  navigation headers. Unchanged from every pass this month.
+- `web.archive.org` — connection reset at the proxy layer this run (`ws_closed_mid_exchange`),
+  the same intermittent failure some earlier sessions have hit. Plain `archive.org` (metadata,
+  `iiif.archive.org`, `inside.php` — the 21 September find) is a separate host and answered
+  normally throughout; do not conflate the two when judging whether "archive.org is open."
+- `archive.org`'s own Talisman coverage was re-verified by an actual catalog search
+  (`advancedsearch.php?q=identifier:talisman*west`) rather than by guessing identifiers again:
+  it holds exactly `talisman1943west`, `1946west`, `1947west`, `1963`–`1965west`,
+  `1971`–`1981west`, `1986west`, `1987west` and nothing else in the `<year>west` pattern.
+  `talisman1982west` through `1985west`, `1988west`–`1990west`, `1966west`–`1970west` all
+  return `HTTP 200` from `/metadata/<id>` with an **empty `{}` body** — archive.org answers 200
+  for a nonexistent identifier too, so the body has to be checked, not the status code. This
+  matches what the file already said and closes the question for good: there is no untried
+  Talisman year hiding under a slightly different identifier. Every currently-missing officer
+  name that falls in a covered year (1974-75 Pulman, 1977-78 Bass, 1978-79 Young/Wicks/Wilson,
+  1980-81 Chesnut, 1986-87 Millay/Austin) was already checked and declined or found-with-no-hit
+  on 21 September; none of the other missing names fall in a covered year at all, so this route
+  has nothing left to try until a new year gets added to the missing list.
+
+**New this run: a systematic wkuherald.com sweep, run for the first time across every 2010-11+
+officer name rather than name by name.** Built the full list of the 92 distinct people missing a
+portrait whose earliest office falls in 2010-11 or later (wkuherald.com's featured-image gap,
+per the 15 September finding, runs through all of 2009-10 and clears only after it — so anyone
+earlier is not reachable here regardless). Queried the WordPress API
+(`/wp-json/wp/v2/posts?search=<name>`) for each, kept only hits carrying a real featured image
+**and** mentioning SGA/Student Government in the body: 169 of the 92 names' combined hits passed
+that filter. Then checked every one of those 169 for the actual test CLAUDE.md sets — the
+person's name inside an image caption or WordPress `[caption]` block next to that image, not
+just somewhere in the article. **Exactly one candidate cleared the caption filter, and it is a
+false positive**: a search for Senator William Hurst (2016-17) matched a 2022 photo essay on a
+Veterans Day ROTC ceremony because one of nine unrelated photo captions in that post names a
+different person, "Col. William E. Houston" — the filter's substring match on "William" alone,
+not "Hurst," pulled it in, and the post has nothing to do with SGA's William Hurst. Looked at it
+directly to be sure rather than trusting the script's flag. Nothing else in the 169 had the
+person's name anywhere near an image. This is a structural answer, not 169 individual misses:
+wkuherald.com's post text frequently mentions "SGA" in an unrelated sentence of an otherwise
+unrelated article (student senators, city council members and unrelated students sharing common
+first or last names with SGA officers), and when it does carry a real photograph of an SGA
+officer, the archive's existing 1,391 leader-photo entries and its officer portraits already
+account for essentially all of them. **A future run should not re-run a bare name-search sweep
+against wkuherald.com for this list again** — the sweep has now been done exhaustively once,
+structurally, and it is clean. The value left in wkuherald.com for this project is in reading
+specific known SGA-election or SGA-coverage articles by hand for a name already strongly
+expected to be there, not in searching 92 names cold.
+- Also tried `www.wku.edu/news` site search for recent SGA officers; its search results page
+  does not return a usable listing for `?s=` style queries through this route (the fetched page
+  carries no result list, only the site chrome) — not pursued further this run, and this is a
+  new negative worth recording rather than reproducing the same fetch again next time without
+  reason to expect a different answer.
+
+No file was added to or removed from `data/photos.json`; the only change this run makes is this
+section. `build.py` and `check_data.py` both pass clean on the unmodified data tree. Merged
+`origin/main` (fast-forward, no conflicts) before starting. Landed on `research-photos`.
 
 ## 9. Restarting a session
 
