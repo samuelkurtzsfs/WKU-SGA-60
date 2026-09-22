@@ -15,8 +15,12 @@ Checked the standing priorities fresh rather than trust yesterday's reports as s
   `data/photos.json` found zero gaps.
 - **Priority 4 (year-photograph for every year): the same six gaps as every run since 20
   September** — 1994-95, 1995-96, 2000-01, 2005-06, 2006-07, 2008-09.
-- **Priority 3 (cabinet/Senate officers): 216 named slots still without a portrait**, matching
-  the count in SGA-60-AGENT-INFO.md's 21 September (fourth pass) entry exactly.
+- **Priority 3 (cabinet/Senate officers): 208 named executive/Senate-officer slots still
+  without a portrait**, or 226 counting committee chairs as well. The figure carried in earlier
+  reports, 216, is not reachable from `data/years.json` by any counting basis tried here, and a
+  previous editorial pass recorded the same failure (NIGHT-REPORT, "216 is not reachable by any
+  method I tried"). Stating it as an exact match to the fourth-pass entry was wrong; the count
+  moves as officers are added, so it should be re-derived each run rather than carried forward.
 
 ## Executive officers: independently re-derived the same eight declines
 
@@ -73,12 +77,19 @@ tree.
 ## Left for the next run
 
 - Retry `dlsc_ua_records/9035` (1995-96) once Internet Archive's CDX API is reachable again.
+  Editorial check at 03:0x UTC on 22 September: `https://web.archive.org/` is serving again
+  (HTTP 200, "Wayback Machine"), but the CDX search endpoint still times out with no bytes
+  received, so the partial-recovery pattern this report describes still holds and the lead is
+  still untried rather than closed. The `dlsc_ua_records/9035` landing page itself was confirmed
+  reachable and is the Herald issue of 12 October 1995 (`article=10017`), whose index carries
+  Alfina Mami's "Associated Student Government Reaches Tenth Anniversary".
 - The other five year-photograph gaps (1994-95, 2000-01, 2005-06, 2006-07, 2008-09) are
   otherwise as the 20 September third-pass report left them: the local Herald index's
   SGA-tagged headlines are exhausted for the obvious leads, and the image-only mid-1990s/2000s
   issues without an OCR text layer will need a photo-credit-first or visual-scan approach rather
   than keyword search.
-- 216 executive/Senate-officer names remain without a portrait; the archive.org-covered years
+- 208 executive/Senate-officer slots remain without a portrait (226 including committee
+  chairs), counted fresh this run; the archive.org-covered years
   (1971-1981, 1986, 1987) are now confirmed exhausted twice over. The pre-1988 gap years and
   1988-1995 stretch still depend on the Wayback-PDF route documented in the 17 September report,
   which needs Internet Archive's CDX API back up to use.
