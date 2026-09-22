@@ -1,3 +1,100 @@
+# 22 September 2026 (evening) — a good photograph merged, and a president's portrait nearly lost to it
+
+## What was open
+
+One pull request: #558, "Research: photographs — two faces from the 1980-81 ASG composite", on
+`research-photos`. Clean merge base against current main, one commit, authored `SGA 60`, no tool
+attribution in the commit or the body. Nothing else in the queue.
+
+The stored brief again sends this run at #6, #7 and #8 as stale and open since 4 August. All three
+have been closed for over a month. That is now six consecutive passes recording it, and the brief
+should stop carrying them.
+
+## What the pull request was
+
+Two portraits cropped from the Associated Student Government group photograph on p. 282 of the
+1981 Talisman — Kevin Kinne and Margaret Ragan, both committee chairs in 1980-81 — from the same
+composite that has already given this archive Sanner, Hines, Morris, Zoeller and Hoffer.
+
+## What was verified
+
+Thirteen checks, run against the sources rather than against the report.
+
+The caption was compared word for word with the full text of `talisman1981west` on archive.org.
+It is verbatim: the third row reads Buckner, Hines, **Kinne**, Hoffer, Morris, Zoeller, **Ragan**,
+Solverson. The yearbook's own index corroborates both entries independently of the caption, and
+does it with middle names — `Kinne, Kevin Robert 282`, `Ragan, Margaret Katherine 282` — so
+nothing here rests on a surname.
+
+The page image was rendered at full resolution and the rows counted by hand: 6, 7, 8 and 7 heads
+in four bands, matching the caption's four name lists. The third row's position 3 is the one
+full-bearded man and position 7 is the row's only woman, which is what the two crops show. The
+prose above the photograph names Kinne chairman of the student opinion poll committee, matching
+his committee-chair record in `years.json` and confirming the identification by a second route.
+
+It is a report, not an advance notice: the survey is given with its results, 29, 31, 28 and 74
+per cent. `page/n285` matches the eight entries already merged from this photograph, and IIIF
+leaf 286 is printed p. 282. Both files are real JPEGs. `johnny-ragan.html` carries no portrait,
+so nothing leaked onto the 1983-84 Johnny Ragan the record deliberately keeps apart from
+Margaret Ragan, and the `Kevin Kinne` → `Kevin Kinnie` alias resolves without creating a second
+person.
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. `check_duplicates.py` reports the
+same four pairs as before the branch, all of them in `years.json`, which this diff never touches;
+each is two events and stays two.
+
+## What was cut
+
+**The Margaret Ragan crop, withdrawn.** The identification was sound and I confirmed it myself.
+What was wrong was the effect. A person page shows one portrait and `build.py:7244` takes the
+earliest term that carries one. Ragan's terms are 1980-81, as a committee chair, and 1982-83, as
+president. So a new 1980-81 picture displaced her presidential portrait — the captioned headshot
+from Herald 58:2 — in favour of a 125-pixel figure cut out of a group composite, and appeared
+nowhere else on the site. That displacement was its entire visible effect. The run had set out to
+work the officer backlog, having checked that every president already had a portrait, and never
+saw it happen.
+
+The withdrawn entry, kept here so it can be restored in one step:
+
+```json
+{"year": "1980-81", "name": "Margaret Ragan", "file": "1980-81-margaret-ragan.jpg",
+ "src": {"label": "1981 Talisman, p. 282, the same Associated Student Government group
+ photograph. Ragan is seventh of the third row's eight names and the only woman among them.",
+ "url": "https://archive.org/details/talisman1981west/page/n285/mode/1up"}}
+```
+
+The crop is position 7 of the third row, between Zoeller sixth and Solverson eighth, and is
+consistent with her 1982-83 portrait.
+
+**The Kinne note, rewritten rather than cut.** It had carried the whole caption verbatim and a
+second 17-word sentence of the yearbook's prose, where the Hines and Hoffer notes from this same
+photograph summarise the row counts instead. All of the evidence survives in paraphrase. The
+comparison to his 1976 portrait went too: it called that picture a senior-year photo three years
+earlier, when the two volumes are five years apart and nothing established it as a senior
+portrait. The note now says only that an earlier portrait exists and was not compared feature by
+feature.
+
+## What is still open
+
+**Which portrait represents a person.** The earliest-term rule means every earlier-year crop
+added for someone who later became president will displace their presidential portrait. I tested
+the obvious fix — prefer a portrait from a term in office — and did not apply it: it moves 13
+pages, Menser's, Vogt's and Fiorella's among them, and not all of those are improvements, since
+Amos Gott swaps to a spirit-squad photo and Jamie Sears to a poster. That is a decision about
+what a person page is for, not a side effect a photograph run should carry. Until it is settled,
+a run adding a portrait should check whether the subject already has a later one.
+
+Two smaller things noticed in passing and left alone, both predating this branch. `photos.json`
+holds `Marsha Sanner` and `Marsha L. Sanner` as separate leader entries pointing at one file. And
+the 1980-81 Housing committee object in `years.json` carries two `chair` keys, so `Shawn Bryant`
+is silently discarded on parse and only `Debbie Thomas` survives.
+
+## Counts after the merge
+
+61 years, 1,964 events, 60 people recorded as president. 2,651 terms of office held by 1,810
+people, 2,614 of them (98%) carrying an account of what the person did, and 47 people recorded
+under more than one spelling. 308 documents and 1,111 legislation files.
+
 # 22 September 2026 — the photograph PR merged, and a carried-forward count finally recounted
 
 ## What was open
