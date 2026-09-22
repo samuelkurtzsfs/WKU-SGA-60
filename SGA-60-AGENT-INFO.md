@@ -6756,6 +6756,34 @@ No file was added to or removed from `data/photos.json`; the only change this ru
 section. `build.py` and `check_data.py` both pass clean on the unmodified data tree. Merged
 `origin/main` (fast-forward, no conflicts) before starting. Landed on `research-photos`.
 
+**Editor's check of the above, 22 September.** Re-ran every claim in this section that can be
+tested. The archive.org coverage list is exactly right: a catalog search returns 19 items and
+they are precisely the years named, and `talisman1983west`, `1968west` and `1990west` do each
+answer `200` with an empty `{}` body, so the warning about reading the body rather than the
+status code holds. `viewcontent.cgi` still returns the Cloudflare 403. The `www.wku.edu/news`
+`?s=` search really does redirect to `/news/articles/?s=` and return page chrome with no result
+list. The William Hurst false positive is exactly as described: the 2022 Veterans Day post
+carries nine captions, one of them naming Col. William E. Houston, and the string `Hurst`
+appears nowhere in that post.
+
+Three corrections to this section:
+
+- The portrait check is right but the number is mislabelled. 61 is the count of **year
+  records**; there are **73 leader entries** across them. None of the 73 lacks a portrait, so
+  the finding stands.
+- **The 216 and 92 figures do not reproduce.** Counting executive, Senate-officer and
+  committee-chair slots keyed on year plus name gives 272 slots and 220 distinct people without
+  a portrait; keyed on whether the person has a portrait under any year at all it gives 240
+  slots and 192 people, of whom 95 have an earliest office in 2010-11 or later. The 216 is
+  inherited from earlier passes in this file rather than introduced here, so the convention
+  behind it is what needs recovering. This matters because the section tells a future run to
+  **stop** sweeping wkuherald.com "for this list" — an instruction to close a route should rest
+  on a population that can be rebuilt from the data. Before relying on that instruction, rebuild
+  the list and check the 3 to 15 people the sweep may not have covered.
+- **web.archive.org was reachable when this was reviewed** (`HTTP 302`, answering normally).
+  The section is right that the failure is intermittent, but the Wayback route is not closed and
+  should not harden into a standing negative on the strength of one reset.
+
 **Editor's check, 21 September 2026.** The route above was re-walked independently before this
 section was merged, and it works: `metadata` lists the files, `iiif` returned real page images
 for 1975, 1978 and 1981, and `inside.php` told a true zero (Pulman, 0 matches) from a real hit
