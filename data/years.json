@@ -102,6 +102,10 @@
      "src": {
       "label": "WKU SGA history",
       "url": "https://www.wku.edu/sga/about/history.php"
+     },
+     "src2": {
+      "label": "WKU Administration Documents UA3/3, Commemorative Program in Observance of the Official Date of University Status, 16 Jun 1966",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3610"
      }
     },
     {
@@ -33678,12 +33682,12 @@
    ],
    "events": [
     {
-     "date": "2004-01-01",
-     "title": "The Constitutional Convention rebuilds the body",
-     "body": "Three branches - Executive Cabinet, Senate and Judicial Council - drawn from the student body at large. The most consequential clause is the quietest: every enrolled student became a member of SGA with the right to vote in its elections.",
+     "date": "2004-03-01",
+     "title": "A new constitution passes in a student referendum",
+     "body": "SGA's new constitution was written by Robert Watkins, chair of the legislative research committee, and passed in a student referendum in March 2004. It created the post of speaker of the senate, who would preside over SGA meetings, serve as coordinator of committees, call special meetings, establish special committees, notify the judicial council of members with excessive absences and preside over impeachment proceedings for judicial council members.",
      "src": {
-      "label": "WKU SGA history",
-      "url": "https://www.wku.edu/sga/about/history.php"
+      "label": "Herald, 15 Apr 2004",
+      "url": "https://wkuherald.com/55330/news/questions-cloud-speaker-vote/"
      }
     },
     {
@@ -44919,11 +44923,11 @@
      }
     },
     {
-     "date": "2017-04-21",
+     "date": "2017-04-20",
      "title": "President Ransdell rejects the resolution",
-     "body": "National wire coverage followed, along with a Tucker Carlson interview with Ambam and a wave of fabricated headlines claiming WKU had granted free tuition. Ransdell stated within days that it was not a university position. Both authors described it as a conversation starter.",
+     "body": "Two days after the resolution passed, Ransdell said it was not an official position of the university and that WKU would not adopt such a policy. Fabricated headlines claiming WKU had granted Black students free tuition circulated online for months afterwards. Both authors told the student newspaper the measure was mostly a way to start a dialogue.",
      "src": {
-      "label": "FactCheck.org",
+      "label": "FactCheck.org, 13 Sep 2017",
       "url": "https://www.factcheck.org/2017/09/false-headline-free-tuition"
      }
     },
@@ -50004,9 +50008,9 @@
     {
      "date": "2020-09-24",
      "title": "Town hall debate pitted the sitting EVP against a senator",
-     "body": "SGA held a town hall debate in the DSU auditorium between presidential candidates Garrett Edmonds, the sitting executive vice president, and senator MJ Mayo. Edmonds's original running mate for administrative vice president, Nathan Terrell, had dropped off the Edmonds-Norvell ticket and was replaced by Abbey Norvell; the debate covered WKU's COVID-19 response and the summer's Black Lives Matter protests on campus.",
+     "body": "The College Heights Herald held a town hall debate between presidential candidates Garrett Edmonds, the sitting executive vice president, and MJ Mayo, senator for Potter College of Arts and Letters, with Abbey Norvell, the candidate for administrative vice president, also taking questions. It ran an hour before a small in-person audience and a livestream. The candidates were asked about Nathan Terrell's departure from the ticket the day before, WKU's COVID-19 response and the summer's Black Lives Matter protest on campus. No candidate was running for executive vice president.",
      "src": {
-      "label": "WKU Talisman, Voter's Guide, 28 Sep 2020",
+      "label": "WKU Talisman, Voter's Guide, 26 Sep 2020",
       "url": "http://wkutalisman.com/voters-guide-2020-sga-election/"
      }
     },
