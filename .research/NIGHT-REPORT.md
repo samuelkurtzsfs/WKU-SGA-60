@@ -29916,3 +29916,111 @@ Unchanged, and not an editor's to close: the six year-photograph gaps, the 119 o
 from 2010-11 on, and the F247 1990-91 executive committee folder that needs someone in the WKU
 Archives reading room. Every live route out of this container is still shut, and the standing
 research list from 20 September is still with the routines.
+
+---
+
+# Editor pass, 22 September — an empty queue, and a crosswalk resolution given sponsors the Herald never named
+
+No pull request was open. `git fetch origin` and a listing of open pull requests return nothing: everything
+through #550 was merged by 21:30 on 21 September, and the newest branch tip on origin, `research-photos`,
+is the one merged as #549. The three branches this pass is told to expect as stale — #6 photographs, #7 the
+1980s, #8 the 2020s — have been closed since 18 August and needed nothing again.
+
+Nothing has been pushed to any research branch since. With no diff to review, the pass went at the published
+site instead, on the principle that what is already live is the only thing a reader can be misled by.
+
+## Two archive-wide controls, both clean
+
+**Spring elections filing forward.** Eighty-five events dated March to June name an election and a president
+or a regent. Every one of them was read against the leaders recorded for its own academic year and for the
+next. In all eighty-five the winner is filed forward, as SGA's April elections require: Steve Henry's April
+1975 win sits in 1974-75 and Henry sits in 1975-76; Jay Todd Richey's 2016 re-election shows him in both
+years, which is what a re-election should look like; Katie Dawson appears twice — in 2004-05 as the
+acting president of that summer and in 2005-06 as the elected one, which is the settled account. No event
+has an April result filed into the year of the vote.
+
+**Vote arithmetic.** Forty events give a turnout or a count of ballots cast alongside candidate totals. No
+pair of candidate figures exceeds its stated turnout, in any year. Nothing to correct.
+
+## Fourteen published claims opened against their sources
+
+A random sample of fourteen events citing wkuherald.com, across 2005 to 2026, was checked by opening each
+article. Twelve held exactly as written, including the ones easiest to get wrong: the 7-0 removal of three
+senators in November 2024 with the bylaw and constitution sections it cites; the 12-17 defeat of the clean
+DREAM Act resolution; the February 2014 amendment that the Executive Council voided on attendance, which the
+entry already explains correctly as a quorum finding rather than a presidential veto; the April 2005 Campus
+Cleanup Day down to the $1,000 voted on 1 March and the 300 pairs of gloves; and Lisa Kappler's resignation
+of February 2009, read through the Wayback copy after two attempts.
+
+Two did not, and both are corrected here.
+
+## What was cut
+
+**A crosswalk resolution given two sponsors it does not have.** The entry for the meeting of 2 April 2026 had
+Senator Jakob Barker, "with Senator Ethan Vietze," sponsoring Resolution 7-26-S for a crosswalk at Alumni
+Avenue and Kentucky Street, and quoted "Barker's resolution" on students stepping into traffic. The Herald's
+report of 5 April names no sponsor for 7-26-S at all. What it does carry is a photograph caption showing
+Barker and Vietze presenting a *different* measure, the student experience survey resolution, and Vietze
+presenting the lab goggles bill. This is trap §2 in its exact form — the two names were read off a caption
+onto the resolution beside it. The entry now attributes the crosswalk resolution to nobody, keeps everything
+the article does support, and records the survey resolution to Barker and Vietze where it belongs. The
+Board of Regents line was tightened at the same time: the regents approved a pre-development agreement on
+11 December 2025, which the entry had rendered as provisional approval to design and build.
+
+**Eight thousand dollars allocated, not spent.** The 30 September 2011 entry was headed "SGA spent $8,000 on
+Cage the Elephant concert." The Herald of that day reports $5,000 from executive discretionary money and a
+$3,000 senate bill passed after the concert — but also that SGA ended up using only about $2,500 of the
+senate allocation. The headline now reads that SGA put $8,000 toward the concert, and the body carries the
+$2,500. Everything else in the entry, including Stephens saying there was no rush because CAB had paid up
+front, is confirmed word for word.
+
+## Two entries trimmed to one quotation each
+
+CLAUDE.md allows one quotation of under fifteen words per source. Thirty-four events carry two or more
+quoted runs; most are song titles, film titles or headlines, which are names rather than reproduced prose,
+and they stay. Two reproduced a source's prose three times over and have been trimmed:
+
+- The DREAM Act entry quoted Sergent, Hurst and Nellans. Sergent's and Hurst's remarks are now paraphrased —
+  faithfully: Hurst told the senate it served the majority and could not know whether most students backed
+  the resolution, which is what he said — and Nellans's line is kept as the one quotation.
+- The final officer reports of 25 April 2018 quoted Molyneaux twice and Wyer once. Molyneaux's words are
+  paraphrased in the body, with 'absolute hell' remaining in the headline, and Amy Wyer's own description of
+  what happened to her that year is kept in her words rather than put into ours. That is the living-person
+  rule pulling the same way as the quotation rule: her disclosure was made in an officer's report and
+  reported by the Herald, and her framing of it is not ours to rewrite.
+
+## Ten portrait credits that named the wrong year
+
+A later run extended ten portraits to a third year by copying the credit from the second, including the
+sentence that names the year the portrait is reused for. So the 1995-96 credit for Tara Higdon said the
+picture was reused for 1994-95, Seth Church's 2012-13 credit said 2013-14, and eight more. Every one of the
+ten people is properly recorded in the year the entry was added to — Higdon as president in 1995-96, Church
+as chief justice in 2012-13, Stevenson as parliamentarian in 2003-04 — so the extensions themselves are
+sound and only the sentence was stale. Each now names its own year. Five of the ten render on a person page,
+where the old text read as an incomplete truth rather than a falsehood; the other five were data-only.
+
+Seth Church's portrait was checked at the same time, because it comes from a 2023 Herald feature on LGBTQ+
+alumni rather than a yearbook. The article's caption reads "Seth Church at the 2015 Lavender Graduation
+ceremony," he is a named subject of the piece telling his own story, and the identification is as firm as a
+Talisman caption. It stays.
+
+## The duplicate pairs
+
+The same four as every recent pass, none introduced here: the designated driver cards of November 1997
+against their distribution in February 1998, the regent advisory committee bill introduced in January 1992
+and failing in February, the KCLU suit and Associated Students endorsing it, and the two plus/minus grading
+votes of autumn 2003. All four are two-stage sequences. No merges.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, `check_duplicates.py` four pairs and no
+action, all re-run after the corrections. 61 years, 1,964 events, 60 people have been president. 2,651
+recorded terms of office held by 1,810 people, 98% with an account of what the person did; 47 people under
+more than one spelling. 308 mirrored documents, 1,111 legislation files, 68 year photographs, no leader
+without a portrait.
+
+## Still open
+
+Unchanged. The six year-photograph gaps, the 119 officer portraits from 2010-11 on, and the F247 1990-91
+executive committee folder that needs someone in the WKU Archives reading room. The research routines have
+pushed nothing since 21 September; the standing list from the 20 September pass is still with them.
