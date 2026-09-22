@@ -82,9 +82,23 @@ body is visible text published under the project's name. Older pull requests
 still carry one — #8 is the example — so this is not hypothetical.
 
 Read the body back after opening the pull request and, if the line is there,
-strip it with `mcp__github__update_pull_request`. Do the same for any comment
-you post. The archive is published under its authors' names; nothing that
-names the tooling belongs on it.
+strip it with `mcp__github__update_pull_request`. That works: the body stays
+clean once patched. The archive is published under its authors' names; nothing
+that names the tooling belongs on it.
+
+**Comments are a different matter, and you cannot win this one (22 September).**
+The same line is appended to issue and pull request comments, but there it is
+injected *in transit*, on every write, before GitHub stores it. Patching the
+comment returns a body with the footer already back in the response, so a
+re-read finds it and a second patch changes nothing. The GraphQL
+`updateIssueComment` mutation, which would be the way round it, answers 403
+here. Deleting and re-posting only earns a fresh footer.
+
+So: clean the pull request body, and do not spend a run fighting the comment.
+A footer on a GitHub comment is thread metadata, not repository or site
+content, and no part of it reaches the published archive. Leave the comment —
+the review in it is worth more than the line costs — and do not delete a good
+review to be rid of a footer you cannot remove.
 
 ## Beware: main is an orphan history
 
