@@ -1,3 +1,132 @@
+# 22 September 2026 (night) — an empty queue, and three standing identity questions worked
+
+## What was open
+
+Nothing. No open pull requests at all. The four research routines had all landed earlier in the
+day and the last of them, #559, merged at 15:35.
+
+The stored brief sends this run at #6, #7 and #8 as stale and open since 4 August. All three have
+been closed since 18 August. That is now seven consecutive passes recording it.
+
+## What the pass did instead
+
+With no queue, the pass went looking for assertions already on the live site that nothing in the
+repository backs. The most dangerous class is a portrait shared between two names, because
+attaching one face to two records asserts they are one human, and CLAUDE.md forbids making that
+claim without verification. Twenty-seven files in `photos.json` are attached to more than one
+spelling. Twenty-four of those pairs are asserted in `name-aliases.json`. Three were not:
+Staci/Stacy Kitchens, Carleton Ruminer/Carlton Rumenier, Brittany Ann/Brittany-Ann Wick.
+
+They turned out to be the same three the alias file's own note names, recorded there as
+deliberately unmapped "until someone reads the page", the reading having been blocked by
+digitalcommons refusing requests. So the work was already specified; it just needed doing.
+
+## Carlton Rumenier is Carleton Ruminer
+
+The pages needed no request. They were already mirrored in `data/documents/`, where the earlier
+attempt should have looked before giving up on the network. Reading all thirty-odd 1997-98
+minutes files, the year's meetings render this one Congress member's surname three ways:
+`Rumenicr` on 9 September 1997, `Rumenier` on 30 September and 18 November, and `Ruminer` on
+14 October 1997 and 3 February 1998. The 14 October minutes read "Carlton Ruminer" and the
+3 February minutes "Carleton Ruminer", so both given-name forms sit on the attested surname
+inside one year's records. The OCR in that document set also gives `CotTman` for Coffman and
+`auorney` for attorney, which is the noise level `Rumenicr` belongs to.
+
+`Ruminer` is the only spelling the *Herald* uses, across all three of its items on him — the
+14 April 1998 treasurer race that supplied his portrait, his resignation reported 4 February
+1999, and the editorial that followed. `Rumenier` appears nowhere else in the 11,850-item index.
+
+Mapped. His record is now continuous: Congress member 1997-98, Vice President of Finance
+1998-99, resigned February 1999. The 1997-98 roster still prints the source's own spelling, per
+the archive's rule that the data keeps each source's spelling, and the link resolves to one
+person page.
+
+## What was cut
+
+**The Kitchens portrait, withdrawn from both years it was attached to.** Its own label stated the
+basis: the match "rests on an uncommon surname and the class year rather than on any caption
+tying her to student government."
+
+The surname is not uncommon in this archive. The *Herald* index carries Harold Kitchens (1981),
+James and Jim Kitchens (1983), Staci Kitchens (1990), Tina Kitchens (1990, three items) and
+Calvin Kitchens (1993-95) — five distinct people. The single stated ground for the identification
+is false, and the label itself concedes there is no caption.
+
+The companion entry then called the matter closed — "identity and spelling confirmed from 1991
+Talisman, p. 185, ASG group photograph … spelling resolved" — while citing the Spirit Masters
+scrapbook's URL rather than a Talisman one, and while the first entry says in the same file that
+the spelling difference "is flagged rather than resolved". The 1991 *Talisman* is not among the
+nineteen volumes archive.org holds, so the claim cannot be checked by the route this project
+uses. This is the second time in two days that a photograph's published reasoning has not
+survived being read back against its own sources.
+
+Nothing sourced was lost. Stacy Kitchens keeps her page and her record of being sworn into
+Congress on 13 November 1990. The image file stays in `data/photos/`, so restoring this is one
+step. Both withdrawn entries, verbatim:
+
+```json
+{"year": "1990-91", "name": "Stacy Kitchens", "file": "1991-92-stacy-kitchens.jpg",
+ "src": {"label": "WKU Spirit Masters scrapbook for 1991-92, UA12/2/16, \"Meet our group\" pages,
+ where each member's portrait carries a printed block giving name, hometown, class and major.
+ A junior in 1991-92 was a sophomore in 1990-91, the year the archive records her in Congress.
+ The scrapbook spells the given name Staci and the archive's roster reads Stacy; that difference
+ is flagged rather than resolved, and the match rests on an uncommon surname and the class year
+ rather than on any caption tying her to student government.",
+ "url": "https://digitalcommons.wku.edu/stu_org/563"}}
+
+{"year": "1991-92", "name": "Staci Kitchens", "file": "1991-92-stacy-kitchens.jpg",
+ "src": {"label": "WKU Spirit Masters scrapbook 1991-92, UA12/2/16 (portrait already in the
+ archive); identity and spelling confirmed from 1991 Talisman, p. 185, ASG group photograph
+ (existing file, spelling resolved)",
+ "url": "https://digitalcommons.wku.edu/stu_org/563"}}
+```
+
+The strongest untried lead for whoever restores it: the index carries `Kitchens, Staci` writing a
+*Herald* letter on 12 April 1990 headlined "Dwight Adkins Is a True Leader – Student Government
+Association". That is a Staci Kitchens demonstrably close to SGA at the right moment, and nobody
+in this chain appears to have used it. It is still not a caption, and on its own it would not be
+enough.
+
+## What is still open
+
+**Brittany Ann / Brittany-Ann Wick.** The 26 August 2008 minutes returned 403 twice, including
+after the full 90-second backoff, and what came down was the bot-check page rather than a PDF —
+trap 7, caught by checking the first bytes. The internal case is strong: both entries give the
+same office, Chair of Academic Affairs, in the same year, citing the same minutes, and differ
+only by a hyphen. But the alias file's standing instruction is to leave these until someone reads
+the page, and the page was not readable this run. Left flagged.
+
+**Which portrait represents a person**, carried over from the evening pass and untouched here.
+The earliest-term rule still means an earlier-year crop displaces a later presidential portrait.
+
+**A note for the photograph routine.** Before concluding that a document on digitalcommons cannot
+be read, check `data/documents/` — 308 files are already mirrored there, and the Ruminer question
+sat open for a fortnight behind a network refusal while the answer was on disk the whole time.
+
+Two smaller things left alone. `photos.json` still holds `Marsha Sanner` and `Marsha L. Sanner`
+as separate leader entries pointing at one file; that pair is mapped in `name-aliases.json`, so
+it is the house pattern rather than a fault, and the other twenty-three shared-file pairs are the
+same. A sweep of every label in `photos.json` for weak-identification language found the Kitchens
+entry to be the only bad case: Faulk, Skillman, Breunig and the Talisman row-position crops all
+state their reasoning honestly and hold up.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0, "the archive checks out against its own rules".
+`check_contrib.py` exit 0. `check_duplicates.py` reports the same four pairs as before the
+branch, none of them in anything this diff touched; each is two events separated by weeks or
+months — designated driver cards introduced November 1997 and distributed February 1998, the
+student regent advisory committee bill introduced 28 January and failed 6 February, the Kentucky
+Civil Liberties Union suit planned 29 February and endorsed 28 March, plus/minus grading opposed
+25 September and legislated against 16 October. All stay as two.
+
+## Counts after the merge
+
+61 years, 1,964 events, 60 people recorded as president. 2,651 terms of office held by 1,809
+people — one fewer than this morning, which is the Ruminer merge — 2,614 of them (98%) carrying
+an account of what the person did, and 48 people recorded under more than one spelling. 308
+documents and 1,111 legislation files.
+
 # 22 September 2026 (evening) — a good photograph merged, and a president's portrait nearly lost to it
 
 ## What was open
