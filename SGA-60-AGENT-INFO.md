@@ -6914,6 +6914,44 @@ into main by the editor under a `state: closed`/`merged: false` GitHub status, t
 project's editor routine leaves behind when it merges by direct git push rather than GitHub's
 merge button.
 
+### Photograph run of 22 September (fourth pass, scheduled): the standing Alan Jackson lead closed negative
+
+Confirmed the baseline again before starting: all four named presidents (Todd, Dawson, Johnson,
+Gilley) and all 73 leader entries still carry a portrait — priorities 1-2 fully clear. A fresh
+count against the merged `data/years.json` (which had gained the Kinne/Ragan photos and nothing
+else since the last pass) held at 240 officer/committee slots (192 distinct people, 98 with an
+earliest office in 2010-11 or later) without a portrait, and the same 6 years without a
+year-level photograph.
+
+Picked up the one specific open lead the previous pass left for "whoever picks up 1980-81
+next": Alan Jackson, Minority Affairs chair, searched in both the 1980 and 1981 Talisman
+indexes. **Closed negative on two independent grounds, not just one.** The 1980 volume's
+back-of-book name index gives "Jackson, Alan Lawrence 124, 423" (confirmed via the
+`inside.php` full-text search, which returns leaf numbers directly — leaf 423 for the index
+entry itself, cross-checked against a known offset of leaf = printed page + 4 established by
+locating the index's own printed page number, 419, at leaf 423). Printed page 124 (leaf 128) is
+the Halloween-party feature already logged by an earlier run as unrelated to SGA. Printed page
+423 (leaf 427) turned out to be a different, previously unchecked photograph: a "Student
+teacher" feature captioned "HELPING KIDS with their social studies at McNeill Elementary School
+is part of sophomore Alan Jackson's contribution to tutoring efforts for his fraternity." The
+caption does name an Alan Jackson, but (1) the story is about fraternity tutoring, with no tie
+to SGA or Minority Affairs, so it cannot establish that this is the same Alan Jackson who chaired
+that committee the following year — the identical problem CLAUDE.md's name-matching rule and this
+file's Mark Chesnut precedent (6 September) already cover; and (2) checked at full resolution, the
+photograph itself does not clear the bar regardless: the presumed tutor is shown from behind and
+in a turned-away profile, head bent over the desk, with no usable view of his face. Even a
+confirmed identification would not have produced a portrait from this specific image. The 1981
+volume's index lists "Jackson, Alan Lawrence" with no page number at all (same convention as the
+already-declined Alice Wicks entry: no number means no class portrait that year), so the
+1980-81 academic year itself has nothing further to check for him on the Talisman route. This
+closes the lead the last run flagged as the obvious next step; no further Talisman search for
+this name is worth repeating without a new source turning up a different page reference.
+
+No file was added to or removed from `data/photos.json` this run. `build.py` and
+`check_data.py` both pass clean on the unmodified data tree (the merge from `origin/main` at the
+start of the run, which brought in editor-branch cleanup unrelated to photographs, is the only
+change in the tree). Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
