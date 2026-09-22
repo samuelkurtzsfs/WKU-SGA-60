@@ -13247,12 +13247,12 @@
    "source_url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/149/"
   },
   {
-   "person": "Carlton Rumenier",
+   "person": "Carleton Ruminer",
    "name_as_recorded": "Carlton Rumenier",
    "year": "1997-98",
    "body": "Senate",
    "office": "Congress member, per the year's absence lists (seat not stated)",
-   "what_they_did": "OCR also renders the surname 'Rumenicr' (9 Sep 1997).",
+   "what_they_did": "The year's minutes render this surname three ways: 'Rumenicr' (9 Sep 1997), 'Rumenier' (30 Sep, 18 Nov 1997) and 'Ruminer' (14 Oct 1997, 3 Feb 1998), in a document set whose OCR also gives 'CotTman' for Coffman. The 14 October minutes read 'Carlton Ruminer' and the 3 February minutes 'Carleton Ruminer'. Mapped in name-aliases.json to Carleton Ruminer, Vice President of Finance the following year; the source's own spelling is kept here.",
    "source": "SGA Meeting Minutes, 9 Sep 1997",
    "source_url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/152/"
   },
@@ -30329,28 +30329,15 @@
   },
   {
    "person": "Carleton Ruminer",
-   "also_recorded_as": "",
-   "first_year": "1998-99",
-   "last_year": "1998-99",
-   "years_served": 1,
-   "years": "1998-99",
-   "most_senior_office": "Vice President of Finance",
-   "all_offices": "Vice President of Finance (1998-99)",
-   "what_they_did": "Carleton Ruminer served as vice president of finance under Stephanie Cosby, presenting the 1998-99 budget to Congress on 1 September 1998 against a balance of $41,783 and reporting on it weekly through the fall semester. His stated goals for the year included extending library hours and creating a book exchange. His surname appears as Rumenier and Rumienier in SGA's 1997 minutes. He resigned effective immediately on 2 February 1999, and the minutes of that meeting list the vice presidency of finance as open.",
-   "sources": "SGA Meeting Minutes, 1 Sep 1998",
-   "same_name": ""
-  },
-  {
-   "person": "Carlton Rumenier",
-   "also_recorded_as": "",
+   "also_recorded_as": "Carlton Rumenier",
    "first_year": "1997-98",
-   "last_year": "1997-98",
-   "years_served": 1,
-   "years": "1997-98",
-   "most_senior_office": "Congress member, per the year's absence lists (seat not stated)",
-   "all_offices": "Congress member, per the year's absence lists (seat not stated) (1997-98)",
-   "what_they_did": "OCR also renders the surname 'Rumenicr' (9 Sep 1997).",
-   "sources": "SGA Meeting Minutes, 9 Sep 1997",
+   "last_year": "1998-99",
+   "years_served": 2,
+   "years": "1997-98; 1998-99",
+   "most_senior_office": "Vice President of Finance",
+   "all_offices": "Vice President of Finance (1998-99); Congress member, per the year's absence lists (seat not stated) (1997-98)",
+   "what_they_did": "The year's minutes render this surname three ways: 'Rumenicr' (9 Sep 1997), 'Rumenier' (30 Sep, 18 Nov 1997) and 'Ruminer' (14 Oct 1997, 3 Feb 1998), in a document set whose OCR also gives 'CotTman' for Coffman. The 14 October minutes read 'Carlton Ruminer' and the 3 February minutes 'Carleton Ruminer'. Mapped in name-aliases.json to Carleton Ruminer, Vice President of Finance the following year; the source's own spelling is kept here. Carleton Ruminer served as vice president of finance under Stephanie Cosby, presenting the 1998-99 budget to Congress on 1 September 1998 against a balance of $41,783 and reporting on it weekly through the fall semester. His stated goals for the year included extending library hours and creating a book exchange. His surname appears as Rumenier and Rumienier in SGA's 1997 minutes. He resigned effective immediately on 2 February 1999, and the minutes of that meeting list the vice presidency of finance as open.",
+   "sources": "SGA Meeting Minutes, 1 Sep 1998; SGA Meeting Minutes, 9 Sep 1997",
    "same_name": ""
   },
   {
