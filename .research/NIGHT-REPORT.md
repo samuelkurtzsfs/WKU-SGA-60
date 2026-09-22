@@ -30237,3 +30237,78 @@ WKU Archives reading room. The six decade routines and the legislation harvest a
 they have been since 4-5 August; the photograph routine remains the only one producing, and it has
 pushed nothing since this morning. The three-branch structure of the 2004 constitution is now a
 standing research item: it needs the document itself.
+
+---
+
+# 22 September, late — one PR open, merged after three corrections
+
+The board was almost empty. #555, the rolling photograph PR reopened after #6 was closed, was the
+only thing waiting, and #6, #7 and #8 — the three branches described as stale since 4 August — were
+all closed on 18 August and need nothing further.
+
+## What #555 actually was
+
+Sixty-six lines of research log added to `SGA-60-AGENT-INFO.md` and not one byte of `data/`. No
+event, no person, no portrait, so nothing in it could reach the site. That is a lower-stakes diff
+than most, but not a lower standard: this section tells future runs which routes to stop trying,
+and a wrong negative in it costs a photograph nobody will go looking for again.
+
+So every testable claim in it was re-run rather than read. Eight held.
+
+The archive.org coverage list is exactly right — a catalog search returns nineteen Talisman volumes
+and they are precisely the years named, 1943, 1946, 1947, 1963-65, 1971-81, 1986 and 1987. The
+warning underneath it is the more useful half and it also holds: `talisman1983west`, `1968west` and
+`1990west` each answer HTTP 200 with an empty body, so a run that trusts the status code will
+believe in volumes that do not exist. `viewcontent.cgi` still returns the Cloudflare challenge.
+The `wku.edu/news` search really does redirect to `/news/articles/?s=` and hand back ninety-four
+kilobytes of page furniture with no results in it.
+
+The one worth naming is the rejection. The run swept wkuherald.com for officers missing a portrait
+and found a single candidate clearing its caption filter — and threw it out, because the hit was a
+2022 Veterans Day photo essay matching Senator William Hurst on the word "William" alone, by way of
+a caption naming Col. William E. Houston. Opened it: nine captions, one of them Houston's, and the
+string "Hurst" nowhere in the post. Rejected for the right reason and written up in the right
+words. A run that discards its only find and says so plainly is doing the job.
+
+## Three corrections, pushed rather than cut
+
+The research was sound; the bookkeeping around it was not, in three places, and all three were
+fixed on the branch before merging rather than being made grounds for refusal.
+
+The portrait check said "zero of the 61 `leaders` entries." Sixty-one is the count of year records.
+There are seventy-three leader entries, and none of them lacks a portrait, so the finding survives
+its own arithmetic.
+
+The population figures do not reproduce, and this is the one that matters. Counting executive,
+Senate-officer and committee-chair slots by year and name gives 272 slots and 220 people without a
+portrait; counting by whether a person has a portrait under any year at all gives 240 and 192, of
+whom 95 first held office in 2010-11 or later. The section says 216 and 92. The 216 is inherited
+from earlier passes in this file rather than invented here, so it is the older convention that has
+gone missing, not this run's sum — and last night's report in this same file says 119. Three
+numbers for one set. It would be a footnote except that the section uses that set to tell a future
+run to **stop** sweeping wkuherald.com for it, and an instruction closing a route has to rest on a
+population that can be rebuilt. Somewhere between three and fifteen people may sit outside the list
+that was swept.
+
+And web.archive.org answered normally on review, HTTP 302. The section is honest that the reset it
+hit is intermittent, but one reset must not harden into a standing negative; the Wayback route
+stays open.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0 across all its assertions,
+`check_duplicates.py` the same four pairs as every recent pass and no action — the driver cards, the
+regent advisory committee bill introduced then failed, the KCLU suit and its endorsement, the two
+plus/minus grading votes, every one of them a two-stage sequence rather than a repeat. 61 years,
+1,964 events, 60 people have been president. 2,651 recorded terms held by 1,810 people, 98% carrying
+an account of what the person did; 47 people under more than one spelling. 308 mirrored documents,
+1,111 legislation files, search index 4,946 records. No leader without a portrait. Data unchanged
+from this morning, as it should be for a documentation-only merge.
+
+## Still open
+
+The six year-photograph gaps, and the officer portraits from 2010-11 on — whose true count is now
+itself an open question, and the first thing the next photograph run should settle by printing the
+query that produces its list. The F247 1990-91 executive committee folder still needs someone in the
+WKU Archives reading room. The six decade routines and the legislation harvest remain off, as they
+have been since early August; the photograph routine is still the only one producing.
