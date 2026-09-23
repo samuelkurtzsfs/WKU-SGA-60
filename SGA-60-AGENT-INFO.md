@@ -7005,6 +7005,65 @@ No file was added to or removed from `data/photos.json`. `data/photo-finds/_do-n
 gained the two Kitchens entries. `build.py` and `check_data.py` both pass clean. Landed on
 `research-photos`.
 
+### Photograph run of 23 September (scheduled, second pass): one year photograph landed for 2005-06, and a live lead left open for 2006-07
+
+The stored brief for this trigger is still the frozen one naming Nick Todd, Katie Dawson, Jeanne
+Johnson and Reagan Gilley as portraitless — confirmed once more, and once more untrue: all four
+and all 73 `leaders` entries already carry a portrait, so priorities 1 and 2 were clear before this
+run touched anything. `merge_photo_finds.py` (no `--write`) was run first and reported nothing new
+beyond the standing Kitchens pair, which `_do-not-use.json` already carries and which stays
+withheld for the reason recorded there (the 1991 Talisman page that would settle it is unreachable
+by every route this project has open).
+
+Retested the three blocked routes fresh rather than trusting the log: `digitalcommons.wku.edu/cgi/
+viewcontent.cgi` is still the Cloudflare "Just a moment..." 403 challenge (tested against
+`article=5695` with full navigation headers). `web.archive.org` answered normally at the start of
+this run — plain HTML fetches and its CDX API both worked without incident for the first twenty
+minutes or so — then failed on every request, HTML and image alike, with the connection reset
+partway through (`ws_closed_mid_exchange` at the proxy) that earlier sessions have already logged
+as an intermittent failure of this specific route rather than a host that is down outright; it did
+not recover before this run's time ran out.
+
+While it was open, the CDX index for `wku.edu/Dept/Org/Student/SGA*` (1997-2010, 281 rows) gave a
+map of every officer/photo page the department's old site ever carried, which is worth keeping for
+future runs rather than rebuilding: `executive.php` (2004-05), `executive.html` (2003-04 and
+2007-08), `c_profiles.html` (2004 candidate bios, text only, no images), `cab.htm` (2000-01
+cabinet page — its HTML literally reads "<<Insert Picture Here>>", so there was never a photo on
+it to find), `cab9900.htm` (despite the filename, its byline-credited photo and named cabinet —
+Bedo, Sears, Sewell, Spencer, Rawlings — match 2001-02 in `years.json` exactly, and all five
+already carry a portrait, so this frame has nothing left to give), and `2001election.html` (2001-02
+candidates, text only). None of the 1999-2002 officers this branch of the CDX touches are missing
+a portrait; that era's officer-photo gap is already closed.
+
+One page did give something new: `Site/Welcome.html`, captured 23 June 2006 (2005-06, one of the
+six years with no year-level photograph at all), carries a group photograph of SGA members on an
+outdoor deck and calls 2005-06 the organization's fortieth-anniversary year in the surrounding
+text — consistent, since SGA's constitution was ratified in April 1966. Nobody in the photograph is
+named or captioned anywhere on the page, so it cannot supply an identified portrait, but it is a
+genuine, sourced photograph of the organization in a year that had none, which is exactly what
+priority 4 asks for. Saved as `data/photos/2005-06-sga-group-photo.jpg` (a real JPEG, `FF D8`
+checked, 700x400) and added to `data/photos.json`'s `years` array, captioned to say plainly that no
+individual in it is identified.
+
+`Site/Who is SGA.html`, captured 6 September 2006 (2006-07, another of the six gap years), is a
+live lead left for whoever gets a working window next: its own text reads "Pictures of the people
+who serve you — Coming Soon," but it already links four camera-file images (`DSC04432.jpg`,
+`DSCF1188.png`, `DSCF1194.png`, `DSCF1197.png`) sitting in its `_files` folder despite the page's
+own claim that they were not ready yet. None of the four could be fetched — the `web.archive.org`
+connection reset on every attempt, including on the exact URL that had just worked minutes earlier
+for the Welcome.html page, which is what confirms this is the same intermittent failure and not a
+missing capture. The next run with an open window should go straight to these four URLs rather
+than re-deriving the lead:
+`https://web.archive.org/web/20060906135949im_/http://www.wku.edu/Dept/Org/Student/SGA/Site/Who%20is%20SGA_files/<file>`
+for each of the four filenames above. 2000-01 was also checked and has no lead: its only
+period-specific page (`cab.htm`) never had a photograph, and its full cabinet (Cassie Martin,
+Leslie Bedo, Adam Howard, Mark Rawlings, Leslie McClard, Amy Caswell) already carries a portrait
+from elsewhere. 1994-95 and 1995-96 were not reachable this run — `web.archive.org`'s coverage of
+this site does not reach back that far in the CDX pulled here — and remain open with no live lead.
+
+One file added to `data/photos.json` and one to `data/photos/`; nothing else in `data/` changed.
+`build.py` and `check_data.py` both pass clean. Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
