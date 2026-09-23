@@ -7192,6 +7192,27 @@ No file was added to or removed from `data/photos.json` or `data/photos/`, and
 reverted in the same run). `build.py` and `check_data.py` both pass clean. Landed on
 `research-photos`.
 
+**Editor's note, 23 September: the two closed routes were both open again within the hour, and the
+dead end is about holdings, not access.** Checked before merging the pass above, because a network
+condition recorded in this file reads to a later run as settled state, and this one would have told
+the next photograph pass not to bother. `web.archive.org` returned `200` on a known-good snapshot
+(the 2001 former-presidents roster this archive already cites), and `archive.org` returned `200` and
+252 KB on `talisman1981west`. Neither reset, neither timed out. The refusals the pass above logged
+were real when it logged them and transient.
+
+That makes the route status worth stating in the durable terms instead. With `archive.org` up, the
+five years still lacking a year-level photograph — 1994-95, 1995-96, 2000-01, 2005-06 and 2008-09 —
+were re-tested against the volumes that would cover them on this file's own `Y-1`-`Y` mapping:
+`talisman1995west`, `talisman1996west`, `talisman2001west`, `talisman2006west` and
+`talisman2009west` all return `404`. The volumes are not there to fetch. So the pass above reaches
+the right conclusion, and it now rests on the stronger reason: not that the host was refusing, but
+that `archive.org` does not hold these five volumes at all. A future pass should retest the host
+rather than trust either finding, and should not spend the run re-checking those five identifiers.
+
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` is the one route confirmed still shut: `403` behind the
+Cloudflare "Just a moment..." challenge on `article=5695`, tested independently. That is where
+2005-06 and 2008-09 remain.
+
 ## 9. Restarting a session
 
 ```bash
