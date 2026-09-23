@@ -31237,3 +31237,94 @@ mine to make.
 
 The stored brief opened again by sending this pass at #6, #7 and #8 as stale and open since
 4 August. All three were closed on 18 August. That is nine consecutive passes.
+
+---
+
+# 23 September 2026 — the editor's fifth report: one PR, documentation only, merged after one trim
+
+One pull request was open, #571, the photograph routine's rolling branch. It is merged. The board
+is empty again.
+
+## What was actually in it
+
+Less than the body suggested, and that is worth stating plainly, because two of the branch's four
+commits were already on `main` through #569 earlier today. The net diff against `main` was a single
+documentation entry appended to `SGA-60-AGENT-INFO.md`. Not one event, person, officer, date or
+photograph changed. `data/years.json` and `data/photos.json` were untouched, and so was `data/`
+entirely.
+
+That collapses most of the traps checklist for want of a surface. There was no advance notice to
+mistake for a report, no committee chair to promote into an officer, nobody matched by surname,
+no changed surname to duplicate a person, and no April result to file into the wrong academic
+year. Nothing went near a settled fact. No contributor commit was in the range, and every commit
+in it is authored `SGA 60` with no tool attribution in any message or in the pull request body.
+
+## The spot check
+
+Twelve claims, opened against their own sources rather than taken from the report. All twelve
+held.
+
+The entry's central claim is that the *Talisman* gap for 1994-95, 1995-96 and 2000-01 is a real
+publication gap rather than a failed search. WKU Libraries' own yearbooks index carries the
+sentence verbatim: the *Talisman* was published annually 1924-1994, then 2003 onward, and
+`Xposure` ran quarterly 1995-1996. The page's own item list says the same thing a second way,
+independently of the summary sentence — it runs up to a 1994 volume, then `Xposure` in 1996, then
+jumps to 2003 with nothing in between. The archive.org figure is exact too: a direct catalogue
+query for `talisman*west` returns 19 identifiers and precisely the years claimed, 1943, 1946-47,
+1963-65, 1971-81 and 1986-87, with nothing between 1988 and 2003.
+
+Both closed routes reproduce from here. `viewcontent.cgi` answers 403 with a Cloudflare
+`cf-mitigated: challenge` header on the same canary item the earlier passes use, and
+`web.archive.org` resets the connection outright. The local numbers match the write-up exactly:
+five year-level photograph gaps, 1994-95, 1995-96, 2000-01, 2005-06 and 2008-09, and 73 `leaders`
+entries of which none lacks a portrait.
+
+## What was trimmed
+
+One sentence, rescued rather than cut. The entry said the merge dry run "reported nothing beyond
+the standing barred Kitchens pair". Run here, it ends with 17 standing held candidates flagged for
+the editor as well as that single refusal. The operative claim was true — nothing was merged and
+no photograph was added — so the fix was to say what the run proves instead of deleting a sound
+finding. The entry now names the held pool and says plainly that it is the undecided queue earlier
+passes left for a person, not anything this run turned up. The risk in the original phrasing was
+that a later pass reads the log as an empty editor queue and stops looking.
+
+One discrepancy is left standing on purpose. The entry records `pastperfectonline.com` returning a
+302 to a contact-admin page; from this container the same URL answers 403. The request leaves
+through an egress proxy that can produce a 403 of its own, so the difference cannot be cleanly
+attributed to the site, and a first-hand observation should not be overwritten by a confounded
+one. What both agree on, and what the log exists to record, is that the object is gated and not
+worth retrying without a different entry point.
+
+## Why the negative is worth having
+
+The find is a negative, and a good one. Three of the five remaining photo-gap years have no
+yearbook to search at all, ever, rather than no lead yet found. That retires them as open leads
+instead of leaving them to be re-opened by every future run. 2005-06 and 2008-09 are the opposite
+case and stay genuinely open: both fall inside the *Talisman*'s active years, and only the
+Cloudflare challenge stands between this project and those volumes.
+
+## The numbers
+
+Build clean, and it reproduces the committed `site/` with no working-tree drift. 61 year pages, 7
+decade pages, 308 documents, 1,111 legislation files, a search index of 4,945 records. 1,964
+events across 61 years, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 2,614 of them (98%) carrying an account of what the person did, and 48 people
+recorded under more than one spelling. `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same four pairs as the last nine passes — 1971-72, 1991-92,
+1997-98 and 2003-04 — all genuinely separate events, already judged, and none of them touched by
+this diff.
+
+## Still open
+
+Unchanged, and none of it is this run's to close: the two real year-photograph gaps behind the
+Cloudflare challenge, the officer portraits from 2010-11 on, and the F247 1990-91 executive
+committee folder that needs somebody in the WKU Archives reading room. The 17 held photograph
+candidates are still a decision for a person, as is the hold note in
+`data/photo-finds/_for-the-editor.md`. The six decade routines and the legislation harvest are
+still off.
+
+The stored brief opened again by sending this pass at #6, #7 and #8 as stale and open since
+4 August. All three were closed on 18 August; #6 was checked directly again this run and reads
+closed, 18 August 2026. That is ten consecutive passes. The trigger still wants pointing at this
+file instead of a frozen copy of an old backlog.
