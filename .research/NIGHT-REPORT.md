@@ -1,3 +1,94 @@
+# 23 September 2026 (editor, fourth pass) — an empty board, and the photograph bar audited from the outside
+
+## What was open
+
+Nothing. No pull request is open on the repository. `research-photos` still stands two commits
+ahead of `main`, but the two trees are byte-identical: `git diff origin/main origin/research-photos`
+is empty across every path including `site/`. That work is the group photograph merged as #569 this
+morning, which reached `main` as its own commit rather than by fast-forward, so the branch reads
+"ahead" while carrying nothing `main` lacks. There was no diff to sample and no claim to check.
+
+The stored brief again opened by sending this pass at #6, #7 and #8 as stale and open since
+4 August. All three were closed on 18 August. That is ten consecutive passes.
+
+## What I checked instead, and one thing I got wrong on the way
+
+With no queue, the useful work was auditing what is already public. The defect the third pass
+found this morning — a barred identification still being served at a URL that was itself the
+identification — is the kind that a validator does not catch, so I went at it from outside the
+build rather than trusting the fix.
+
+Collecting every image filename mentioned anywhere in `data/photo-finds/_do-not-use.json` and
+intersecting it with what is deployed returns six files, all of them referenced by live entries:
+Keyanna Boka, John Winstead, Brian Anderson, Shantel Pettway, Elias Thompson, Kaison Barton. Read
+as bars that would be six faces on the site against the register, five of them living people.
+
+They are not bars, and the reading was mine, not the archive's. In each of those six entries the
+`file` field names a *Herald frame* in prose — "Herald 1 Oct 2019, canvassing for the Beshear
+campaign" — and the published filename appears only inside `reason` or `resolved`, where it names
+the replacement that was approved. Winstead's entry is the clearest: it refuses a columnist's mug
+and then records that the 2016 *Talisman* senior portrait was published in its place. Sweeping the
+prose of a register that argues with itself finds the conclusions and reads them as the charges.
+
+Matched the way the register is actually keyed, on the `file` field against files on disk, the
+whole register resolves to **one** barred image, `1991-92-stacy-kitchens.jpg`, under two entries
+for the two spellings of the name. It is withdrawn from `site/photos` and referenced by nothing.
+The build's keep-set is neither over- nor under-withdrawing, and this morning's fix holds when it
+is checked by something that is not the build.
+
+## The rest of the audit
+
+All 1,167 photographs `photos.json` references are deployed; nothing referenced is missing, so no
+page carries a broken image. 1,200 files sit in `data/photos` and 1,199 are deployed, the gap being
+the single barred file.
+
+Thirty-two deployed files are referenced by no entry and linked from no page. They are unchanged
+from previous passes, they are held candidates rather than barred ones, and one of them is
+`1996-97-carlene-lodmell.jpg`, which touches a settled fact. I left all thirty-two alone. The
+standing argument for leaving them reachable — that the photograph routine reviews them at those
+addresses — is a decision for the project editor and has been recorded as such for several passes;
+it is not mine to settle on a scheduled run, and an unlinked file is not a published face.
+
+## What I could not verify
+
+The source behind #569 — the Wayback capture of 22 February 2007 that the merged caption cites.
+`web.archive.org` refused every request from this container, resetting the connection at the relay
+on four attempts including the CDX API, while `archive.org` and `digitalcommons.wku.edu` both
+answered normally from the same shell. It is a host-level network fault here, not a bad citation,
+and a failure to reach a source is not evidence against it. The third pass opened that URL and
+documented the redirect in detail, so the claim is not resting on nothing. Recorded so a later
+pass with a working route confirms the bytes rather than assuming them.
+
+## The numbers
+
+Build clean. 61 year pages, 7 decade pages, 308 documents, 1,111 legislation files, a search index
+of 4,945 records. 61 years and 1,964 events; 60 people have been president. 2,651 recorded terms of
+office held by 1,809 people, 2,614 of them (98%) carrying an account of what the person did, and 48
+people recorded under more than one spelling. `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same four pairs, and they are the same four separate events the
+last pass judged: the Civil Liberties Union suit and its endorsement a month later, Bill #92-01-S
+introduced and then failing after amendment, the designated driver cards paid for and then
+distributed, and the two stages of the plus/minus grading fight. No merges.
+
+## Still open
+
+Unchanged: the six year-photograph gaps, the officer portraits from 2010-11 on, the F247 1990-91
+executive committee folder that needs somebody in the reading room, and the hold note on a living
+person in `data/photo-finds/_for-the-editor.md`. The six decade routines and the legislation
+harvest are still off, so nothing is arriving to review — the empty board is the routines being
+off, not the archive being finished.
+
+One thing for the project editor, because ten passes of recording it in this file have not moved
+it. The stored brief opens by telling the run to establish access with `gh auth setup-git && gh pr
+list`, and to fall back to review-only mode, which cannot merge, if that fails. `gh` is not
+installed in these containers, so that command fails with "command not found" — which reads like
+the platform gate it describes. `AGENT-LANDING.md` says the opposite, correctly: do not reach for
+`gh`, test `git push --dry-run` and use the GitHub tools for pull requests. Push access works fine
+here and was proven before anything else this run. But a pass that follows the brief's first
+instruction instead of the landing file will conclude it cannot merge when it can, and verified
+research will sit unmerged for it. Two lines in the stored prompt, the stale #6/#7/#8 paragraph and
+the `gh` probe, are worth correcting.
+
 # 23 September 2026 (editor, third pass) — one photograph merged, eight months later than it was filed
 
 ## What was open
