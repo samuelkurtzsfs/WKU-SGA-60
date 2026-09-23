@@ -668,6 +668,12 @@ def held_both(l, y):
 # once, at their first term, so a second term does not make a second holder.
 ORDINAL = {"president": {}, "regent": {}}
 
+# The same two lines of succession, keyed by the name the officer pages are
+# filed under rather than the spelling a given year happens to use. Without it
+# a leader recorded as "J. Garrett Edmonds" has no place in the line on the
+# page that lives at o/garrett-edmonds.html.
+ORDINAL_CANON = {"president": {}, "regent": {}}
+
 
 def seat_gaps(ys):
     """Years since the seat was created in which the archive cannot name whoever
@@ -680,6 +686,7 @@ def seat_gaps(ys):
 def index_offices(ys):
     for k in ORDINAL:
         ORDINAL[k].clear()
+        ORDINAL_CANON[k].clear()
     for y in ys:
         for l in y["leaders"]:
             if l["role"] == "president" and l["name"] not in ORDINAL["president"]:
@@ -687,6 +694,12 @@ def index_offices(ys):
             if (l["role"] == "regent" or held_both(l, y)) \
                     and l["name"] not in ORDINAL["regent"]:
                 ORDINAL["regent"][l["name"]] = len(ORDINAL["regent"]) + 1
+    # Mirror the numbering onto the canonical name. First term wins, exactly as
+    # above, so this never renumbers anyone: it only makes the existing number
+    # reachable from the officer page.
+    for k in ORDINAL:
+        for name, n in ORDINAL[k].items():
+            ORDINAL_CANON[k].setdefault(canonical(name), n)
 
 
 def nth(n):
@@ -695,6 +708,19 @@ def nth(n):
     else:
         suf = {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
     return f"{n}{suf}"
+
+
+def place_phrase(pnum, rnum, mark=None):
+    """Where a person stands in the two lines of succession, as one phrase.
+    `mark` wraps each ordinal so a page can colour it the way the board does."""
+    def one(n, cls):
+        return mark(nth(n), cls) if mark else nth(n)
+    parts = []
+    if pnum:
+        parts.append(f'the {one(pnum, "pres")} president')
+    if rnum:
+        parts.append(f'the {one(rnum, "reg")} student regent')
+    return " and ".join(parts)
 
 
 def role_word(l, y=None):
@@ -772,13 +798,10 @@ def render_leader(l, y, also):
     head = f'{h(l["name"])} <span class="r">{role_word(l, y)}, {h(y["id"])}</span>'
     facts = [("Office", role_word(l, y).capitalize()),
              ("Term recorded here", h(y["id"]))]
-    place = []
-    if ORDINAL["president"].get(l["name"]):
-        place.append(f'the {nth(ORDINAL["president"][l["name"]])} president')
-    if ORDINAL["regent"].get(l["name"]):
-        place.append(f'the {nth(ORDINAL["regent"][l["name"]])} student regent')
+    place = place_phrase(ORDINAL["president"].get(l["name"]),
+                         ORDINAL["regent"].get(l["name"]))
     if place:
-        facts.append(("Place in the line", h(" and ".join(place))))
+        facts.append(("Place in the line", h(place)))
     if l.get("plaque_term") and l["plaque_term"] != y["id"]:
         facts.append(("On the plaque", h(l["plaque_term"])))
     line = confidence_line(l, y["id"])
@@ -7080,6 +7103,10 @@ OFFICERS_CSS = """
 .who-head{padding:44px 0 22px;border-bottom:1px solid var(--line)}
 .who-head h1{font-size:2rem;letter-spacing:-.03em;margin:6px 0 0}
 .who-head .roles{margin:12px 0 0;color:var(--ink2);max-width:var(--measure)}
+.who-head .place{color:var(--ink)}
+.who-head .place b{font-variant-numeric:tabular-nums;font-weight:600}
+.who-head .place b.pres{color:var(--red)}
+.who-head .place b.reg{color:var(--ink)}
 .who-head .portrait{float:right;margin:0 0 16px 24px}
 @media(max-width:640px){.who-head .portrait{float:none;margin:0 0 16px}}
 .termline{display:grid;grid-template-columns:7rem 1fr;gap:0 22px;padding:14px 0;
@@ -7600,8 +7627,23 @@ def render_officer(person, ys, leg=()):
 
     lead = ""
     if person["president"]:
-        lead = ('<p class="roles">Also served as president or student regent; that record is '
-                'on the year pages linked below.</p>')
+        # The board has carried each president's and each regent's place in the
+        # line since it was built; the person's own page did not, so the one
+        # page a reader lands on from a search never said it.
+        place = place_phrase(
+            ORDINAL_CANON["president"].get(person["name"]),
+            ORDINAL_CANON["regent"].get(person["name"]),
+            mark=lambda word, cls: f'<b class="{cls}">{word}</b>')
+        # A name two people share letter for letter cannot carry a place in the
+        # line. The header below already drops the span and the counts rather
+        # than read one career out of two people, and an ordinal here would put
+        # them straight back together.
+        if place and person["name"] not in SAME_NAME:
+            lead = (f'<p class="roles place">{place[0].upper()}{place[1:]}. '
+                    f'The year pages linked below carry the terms themselves.</p>')
+        else:
+            lead = ('<p class="roles">Also served as president or student regent; that record is '
+                    'on the year pages linked below.</p>')
 
     # Two people can carry one name, and a reader has no way of telling from
     # the page that the archive holds another of them. Say so, and say which
