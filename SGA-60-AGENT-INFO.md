@@ -7089,6 +7089,53 @@ Wayback URL, and check the CDX for the image file itself rather than for the pag
 A page capture and a resource capture are different dates, and on this site they were eight months
 apart.
 
+### Photograph run of 23 September (third pass, scheduled): the Talisman publication gap confirmed as a real fact, not a search failure, and every live route still closed
+
+Confirmed the baseline again before touching anything: all four named presidents (Todd, Dawson,
+Johnson, Gilley), all 73 `leaders` entries and all 61 years still hold at least what the two earlier
+passes today left them with. `merge_photo_finds.py` (no `--write`) proposed no new photograph to
+add: its run ends with 17 standing held candidates flagged for the editor and one refusal, the
+barred Kitchens pair, which `_do-not-use.json` already carries with its full history. The held
+candidates are the same undecided pool earlier passes left for a person to rule on, not anything
+this run surfaced; none was merged. Five years still carry no year-level photograph:
+1994-95, 1995-96, 2000-01, 2005-06, 2008-09.
+
+Retested the two routes this file has logged as closed all month, fresh, several times each, spaced
+out rather than hammered: `digitalcommons.wku.edu/cgi/viewcontent.cgi` answered `403` with
+`cf-mitigated: challenge` on every attempt (tested against `article=5695`, the same item earlier
+passes use as a canary). `web.archive.org` reset the connection on every single attempt this run,
+`ws_closed_mid_exchange` at the proxy every time, including a final retry after an extra wait —
+unlike the second pass earlier today, it never opened at all in this window. Neither is a burst-rate
+problem; this run made one request at a time with pacing throughout.
+
+**New this run: the Talisman gap for 1994-95, 1995-96 and 2000-01 is now a settled fact, not an
+absence of search results.** WKU Libraries' own yearbooks index page
+(`digitalcommons.wku.edu/dlsc_ua_yearbooks/`, reachable — it is a landing page, not a PDF) states
+plainly: "WKU *Talisman* published annually 1924-1994; 2003+." The Talisman stopped after the
+volume covering 1993-94 and did not resume until the volume covering 2002-03. `Xposure`, a quarterly
+that ran 1995-1996 per the same page, was already confirmed by the 21 September pass to carry no SGA
+content. So three of this project's five photo-gap years — 1994-95, 1995-96, 2000-01 — have **no
+Talisman volume to search, ever**, on top of already having no live lead from the old `wku.edu/SGA`
+site (checked and confirmed empty for 2000-01 on the second pass today) or from `archive.org`'s own
+catalog, which was queried directly this run and holds exactly 19 `talisman*west` identifiers — 1943,
+1946-47, 1963-65, 1971-81, 1986-87 — nothing between 1988 and 2003. A future run should not keep
+re-opening these three years looking for a Talisman photograph; if one ever surfaces for them it will
+have to come from a digitised Herald page image or a WKU Archives `UA1C` photograph collection item,
+both presently behind the same `viewcontent.cgi` challenge. 2005-06 and 2008-09 are different: both
+fall inside the Talisman's active years, so a portrait almost certainly exists for them in the 2006
+and 2009 volumes respectively — it is only `viewcontent.cgi`'s challenge standing between this
+project and those pages, not a publication gap.
+
+One new dead end, logged so it is not retried: a web search surfaced
+`westernkentuckyuniversity.pastperfectonline.com` as a second host for WKU Archives Talisman items
+(distinct from `digitalcommons.wku.edu` and `archive.org`). Its item pages (e.g.
+`/Library/EADE176A-C6C2-40CA-A87D-341654682891`, titled "Talisman - Part 1") return an HTTP 302 to
+`/Home/ContactAdmin` rather than any content — access to the object itself is gated behind something
+this project cannot get past. Not worth trying again without a different entry point into that site.
+
+No file was added to or removed from `data/photos.json` or `data/photos/`. This run's only change is
+to this file. `build.py` and `check_data.py` both pass clean. Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
