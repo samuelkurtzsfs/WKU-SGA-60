@@ -30648,3 +30648,228 @@ The stored brief again opens by sending this run at #6, #7 and #8 as stale and o
 They were all closed on 18 August. That is the sixth consecutive pass to write this sentence, and
 the brief is now also wrong about the shape of the job: it describes a board with three stale pull
 requests on it, and the board is empty.
+
+---
+
+# 22 September 2026, late — editor pass
+
+One pull request open, one merged, nothing cut.
+
+## What was reviewed
+
+#563, "Research: photographs", the photograph routine's fourth pass of the day. The diff is 38
+lines added to `SGA-60-AGENT-INFO.md` and nothing else. The branch's three earlier commits — the
+two 1980-81 ASG composite crops and the editorial pass over them — had already reached `main` by
+way of #558, so the only new content was the run note. No data file changed, and
+`SGA-60-AGENT-INFO.md` is not copied into `site/`, so the merge published nothing to the live
+site.
+
+That makes this a negative result written down, which is the shape a closed lead should take. The
+Alan Jackson question has been sitting open across passes as "the obvious next thing for whoever
+picks up 1980-81". It is now answered, and answered in a way that stops the next run paying for
+the same search.
+
+## The spot check
+
+Five checkable claims, all five opened at the source rather than taken from the report.
+
+The 1980 *Talisman* back-of-book index does read "Jackson, Alan Lawrence 124, 423", verbatim, in
+the item's full text on archive.org. The photograph on printed page 423 does carry the caption the
+report quotes, about helping children with their social studies at McNeill Elementary School as
+part of a sophomore Alan Jackson's contribution to his fraternity's tutoring. Nothing in it
+touches student government, so it cannot carry the identification across to the Minority Affairs
+chair of the following year. The run declined it on that ground even though the name matched in
+full, which is the stricter reading and the right one.
+
+The 1981 index entry was the one worth checking hardest, because an OCR dropout and a genuinely
+blank page reference look identical. It is genuine. `Jackson, Alan Lawrence` carries no number,
+while `Jackson, Charles Neal` two lines below carries 290 and 362 and `Jackson, Dawn O.` carries
+303 and 332. The blank is the book's own convention, not the scanner's.
+
+The two coverage figures hold exactly. Seventy-three leader entries in `data/years.json`, and all
+seventy-three matched to a portrait in `data/photos.json`: no president and no student regent is
+without one. Six years still have no year-level photograph, and they are the same six —
+1994-95, 1995-96, 2000-01, 2005-06, 2006-07, 2008-09.
+
+## The one number that did not reconcile
+
+The note gives 240 officer and committee slots without a portrait, held by 192 distinct people.
+Counting executive officers, Senate officers and committee chairs across every year gives 270
+slots and 220 people. This is the same disputed count the last pass left standing, and it is
+almost certainly a difference in counting rule rather than in data — most likely whether someone
+who already appears as a leader elsewhere is excluded. Nothing was cut for it and no published
+claim depends on it. But it is a progress metric, and a progress metric nobody can reproduce is
+one a later run will adopt as a baseline and then report movement against. The photograph routine
+has been asked, on the pull request, to state the counting rule next to the figure.
+
+## Traps
+
+Nothing tripped. No event was added, so the advance-notice trap had no surface. The chair-as-officer
+trap appeared in its useful direction: the run refused to promote a yearbook Alan Jackson into an
+SGA chairmanship on a name alone. No surname-only match, no changed-surname duplicate, no April
+result filed into the wrong year, nothing touching the settled facts, no contributor commit in the
+diff. All four commits are authored `SGA 60` and neither the pull request body nor the run note
+names any tooling.
+
+## The duplicate pairs
+
+The same four as the last several passes, and the same judgement. Designated driver cards passed
+in November 1997 and distributed in February 1998; the student regent advisory committee bill
+introduced on 28 January 1992 and failed, altered, on 6 February; the Kentucky Civil Liberties
+Union planning court action in February 1972 and Associated Students endorsing the suit in March;
+plus/minus grading opposed at a meeting in September 2003 and legislated against in October. Four
+two-stage sequences. Nothing combined.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, `check_duplicates.py` the
+four pairs above. 61 years, 1,964 events, 60 people have been president. 2,651 recorded terms held
+by 1,809 people, 98% carrying an account of what the person did; 48 people recorded under more
+than one spelling. 308 mirrored documents, 1,111 legislation files, search index 4,945 records.
+Data unchanged by this pass, and `site/` regenerated identically.
+
+## Housekeeping
+
+Seven `research-*` branches still sit on origin carrying nothing but superseded drafts of this
+file, from the drop-box route. Their content has long since reached `main` through editor
+branches. They are harmless but they make the branch list unreadable, and they are safe to delete
+whenever someone is in a tidying mood.
+
+## Still open
+
+Unchanged: the six year-photograph gaps, the officer portraits from 2010-11 on and the count
+behind them, and the F247 1990-91 executive committee folder that needs a person in the WKU
+Archives reading room. The six decade routines and the legislation harvest remain off. The
+photograph routine is the only one producing.
+
+The stored brief opened again by sending this run at #6, #7 and #8 as stale and open since
+4 August. All three were closed on 18 August — this is the seventh consecutive pass to write that
+sentence. Worth adding, since a future pass may be told to merge `origin/main` into them: if any
+of those three is ever reopened, it must not be merged. `AGENT-LANDING.md` records that the
+4 August branches share no root commit with `main`, and merging one would delete
+`herald-index-full.json`, `name-aliases.json` and the whole contributor layer. They would have to
+be compared file by file onto a branch cut from current `main`.
+
+## Addendum, same pass: the attribution footer on comments cannot be stripped
+
+`AGENT-LANDING.md` has told every run to read a pull request back after opening it and strip the
+"Generated by Claude Code" line, and to do the same for any comment. Half of that instruction is
+no longer achievable, and it is better to know it than to have each future run rediscover it.
+
+The pull request **body** behaves as documented. #564 was opened with a clean body, the platform
+appended the line with a session link, and `mcp__github__update_pull_request` removed it. It
+stayed removed.
+
+A **comment** does not. The line is appended to the review comment on #563, and it is injected in
+transit on every write rather than stored and editable: the response to a PATCH already carries
+the footer back, so the write never lands clean and a re-read finds it again. Three attempts, same
+result each time. The GraphQL `updateIssueComment` mutation, which would be the way around a REST
+rewrite, answers 403 from this container. Deleting and re-posting would only earn a fresh one.
+
+Left as it is, deliberately. A footer on a GitHub comment is thread metadata; it is not in the
+repository, not in `site/`, and nothing about it reaches the published archive, so CLAUDE.md's
+rule is not breached where that rule is aimed. Deleting a spot-check review to be rid of a line
+that would come straight back would cost more than it saves. `AGENT-LANDING.md` has been corrected
+to say so, so that the next run cleans the body, leaves the comment, and spends its time on the
+archive instead.
+
+# 23 September 2026 — editor pass
+
+## What was reviewed
+
+Nothing was waiting. `git fetch origin` brings back no open pull request at all, and nothing has
+been pushed to any branch since `main`'s own tip at 21:28 UTC on 22 September. The last research
+push was the photograph routine's, merged the same evening as #563. The four routines have been
+quiet for twenty-six hours.
+
+Push access is working in this container. `gh` is still not installed, as `AGENT-LANDING.md`
+says; the dry-run probe and the GitHub MCP tools both answer normally, so this was a full pass
+and not a review-only one.
+
+Every `research-*` branch showing as "ahead" of `main` was checked rather than assumed. All of
+them are superseded: the diffs run the wrong way, restoring the Kitchens duplicate portraits and
+dropping the Rumenier alias that #559 and #562 settled. Nothing on origin carries work `main`
+lacks.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, `check_duplicates.py` the
+same four pairs. 61 years, 1,964 events, 60 people have been president. 2,651 recorded terms held
+by 1,809 people, 98% carrying an account of what the person did; 48 people recorded under more
+than one spelling. 308 mirrored documents, 1,111 legislation files, search index 4,945 records.
+Identical to the last pass in every figure. `site/` regenerated with nothing but the build date
+changing, so the published site is in step with `data/`.
+
+## The duplicate pairs
+
+The same four, read again and judged the same way. Designated driver cards funded by Bill 97-3-F
+in November 1997 and distributed in February 1998; the student regent advisory committee bill
+introduced on 28 January 1992 and failed, altered, on 6 February; the Kentucky Civil Liberties
+Union planning court action in February 1972 and Associated Students endorsing the suit in March;
+plus/minus grading opposed at a meeting in September 2003 and legislated against in October. Four
+two-stage sequences, each stage separately sourced. Nothing combined.
+
+## The officer-portrait count, reconciled
+
+Two passes have now left this standing, and it is a counting rule, exactly as the last pass
+guessed. Both figures are right and they answer different questions.
+
+**270 slots held by 220 people** counts an officer slot as unillustrated when no portrait is filed
+for *that person in that year*. **240 slots held by 192 people** counts it as unillustrated only
+when the archive holds no portrait of that person *in any year*.
+
+The gap is 30 slots and 28 people, and every one of them is somebody the archive already has a
+face for, filed under a neighbouring year: Paul Gerard in 1969-70 pictured from 1967-68, Margaret
+Ragan in 1980-81 pictured from 1982-83, Nick Todd and three other 2002-03 chairs pictured from
+2003-04, and so on.
+
+Neither number should be retired. 240/192 is the photograph routine's workload — how many people
+still need a face found anywhere — and is the right figure for it to report progress against.
+270/220 is how many officer slots on the site show no face, which is the site-completeness figure.
+A future pass should name which of the two it means rather than reconcile them again.
+
+## Traps
+
+Nothing tripped, because nothing was submitted. No event was added or changed by this pass, so the
+advance-notice and chair-as-officer traps had no surface. Nothing touched the settled facts, no
+contributor commit was in play, and the single commit here is authored `SGA 60`.
+
+## Two things found in the published site, neither of them cut
+
+Both are flagged rather than fixed. Neither is a wrong fact and neither is mine to settle alone.
+
+**Held candidate portraits are being served.** `build.py` copies the whole of `data/photos` into
+`site/photos`, so 33 image files that `photos.json` deliberately does not reference are live at
+their own addresses — among them every crop in the "faces proved, people not" queue that
+`data/photo-finds/_for-the-editor.md` is holding for a decision. They are linked from no page, but
+the filename is the identification, the naming convention is documented, and the archive's whole
+reason for holding them is that the person is unproven.
+
+This is the same defect the build already fixed once in the other direction. The comment at
+`scripts/build.py:8305` says a withdrawn portrait "went on being served at its own address after
+its metadata was cut" and deletes anything `data/photos` no longer holds. The gap it does not
+close is between `photos.json` and `data/photos`: a file with no metadata is still deployed. The
+fix is to build the keep-set from the filenames `photos.json` references rather than from the
+directory listing, which leaves every held file safely on disk and takes it off the site. It is
+left for a person because the photograph routine may be relying on those URLs to review its own
+candidates, and this pass has no way to know.
+
+**A living person's hold note is in a public repository.** The repository is public.
+`data/photo-finds/_for-the-editor.md` sets out, to explain why one 2016-17 officer's portrait is
+held, a personal detail about him that the *Herald* put on its front page in 2014 and that the
+archive has rightly declined to republish. The site is clean: everything published about him is
+his SGA service, the election codes, the complaint he reported in October 2016 and the Judicial
+Council's veto ruling. Nothing personal reaches a page. But the note reasoning about it sits in a
+public file, and a redaction now would not remove it from the history in any case. The note itself
+says the decision belongs to the project editor, which is why this pass has not touched it.
+
+## Still open
+
+Unchanged: the six year-photograph gaps, the officer portraits from 2010-11 on, and the F247
+1990-91 executive committee folder that needs a person in the WKU Archives reading room. The six
+decade routines and the legislation harvest remain off, and with the photograph routine quiet for
+a day the queue is empty from end to end.
+
+The stored brief again opened by sending this run at #6, #7 and #8 as stale and open since
+4 August. All three were closed on 18 August. This is the eighth consecutive pass to write that
+sentence, and it is the one line of the brief that has never matched the repository.
