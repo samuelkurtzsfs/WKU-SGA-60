@@ -1,3 +1,96 @@
+# 23 September 2026 (editor, third pass) — one photograph merged, eight months later than it was filed
+
+## What was open
+
+One pull request, #569, "Research: photographs". The stored brief still sends this run at #6, #7
+and #8 as stale and open since 4 August; all three have been closed since 18 August, and this is
+the ninth consecutive pass to record it.
+
+#569 was small enough to check exhaustively rather than sample: one commit, eight files, and
+exactly one new claim about the archive's history — a group photograph added to `data/photos.json`
+as a year photograph for **2005-06**, a year that had no year-level photograph. The rest of the
+diff was the run log and the pages `build.py` regenerates from it. There were fewer than eight new
+claims, so all of them were opened against their source.
+
+## The claim, and what the source actually proves
+
+The entry cited the Wayback Machine's capture of the old SGA site's welcome page,
+`wku.edu/Dept/Org/Student/SGA/Site/Welcome.html`, taken **23 June 2006**, and captioned the
+photograph as it appeared on that page "during 2005-06."
+
+Three parts of that held on inspection. The page carries exactly one image, at
+`Welcome_files/photo-filtered.jpg`, sized 700x400, which is the size of the committed file. Its
+text ends "Forty years and counting", which supports reading the page against a constitution
+ratified in April 1966. And the photograph is what the caption says it is: about thirty people on
+a wooden deck, nobody named, no caption on the page — the run was right to add it as a record of
+the organization and not as an identification of anyone.
+
+The year did not hold. Asking `web.archive.org` for an image through a timestamp it has no capture
+for does not fail; it redirects forward to the nearest capture it does hold and serves those bytes
+under the address you asked for. Following the redirect on the run's own URL lands on
+`/web/20070222094902im_/` — **22 February 2007**. The CDX index confirms there is nothing else to
+find: the entire `Welcome_files/` folder, image and `Welcome.css` and `Welcome.js` alike, was
+crawled exactly once, on that one day in February 2007, and the photograph has no other capture
+between 2004 and 2010. The file committed to the branch is byte-identical to that 2007 copy
+(md5 `ab63a41df9fe1309bd0573eb79535c2f`).
+
+So the June 2006 page capture proves that the welcome page *referenced* an image at that address.
+It does not preserve, and cannot prove, what the file contained on that date. The only date the
+photograph itself can be fixed to is 22 February 2007, which is inside 2006-07. It may well have
+been the same picture eight months earlier — the page was plainly not rebuilt often — but that is
+an inference, and the rule here is that a year needs a source rather than a likelihood. A page
+capture and a resource capture are two different dates, and on this site they were eight months
+apart.
+
+## What was changed rather than cut
+
+Rescued, not deleted. The photograph is genuine, it is from the university's own site, and the
+archive has no reason to lose it over a date the run got wrong rather than invented.
+
+- Re-filed from 2005-06 to **2006-07**, which was itself one of the six years with no year
+  photograph — so the gap the run set out to close is closed, one year over.
+- File renamed `2005-06-sga-group-photo.jpg` to `2006-07-sga-group-photo.jpg`.
+- `src` re-pointed from the page capture to the **image's own** capture, so a reader checking the
+  citation lands on the thing being cited and can see its date.
+- Caption rewritten to claim only February 2007, to say that the address was referenced as early
+  as June 2006, and to say plainly that when the photograph was taken is not recorded and nobody
+  in it is named. 2005-06 goes back to having no year photograph.
+
+The correction and the redirect trap behind it are written into `SGA-60-AGENT-INFO.md` beside the
+run's own log, which is left intact. Future photograph runs should cite an image's own Wayback URL
+and check the CDX for the image file, not for the page that embeds it.
+
+## The rest of the checklist
+
+No events were added, so advance notices, chair-as-officer and April-election filing do not arise —
+though the fault found here is that same error wearing different clothes: a dated artefact filed to
+the year someone expected rather than the year its source supports. Nobody is named anywhere in the
+diff, so no surname match and no changed-surname duplicate was possible. The withheld Stacy/Staci
+Kitchens pair was left withheld and the diff does not touch `_do-not-use.json` or the photo-finds.
+Nothing contradicts the settled facts. No living person is described beyond what the source carries.
+No contributor edits in the diff. The commit is authored `SGA 60` and carries no tool attribution.
+
+`check_duplicates.py` reports the same four pairs the earlier pass judged this morning — designated
+driver cards 1997-98, the regent advisory committee bill 1991-92, the civil liberties suit 1971-72
+and plus/minus grading 2003-04. They remain four separate events, and this PR adds no events, so
+nothing there changed.
+
+## Merged
+
+`build.py` clean, `check_data.py` clean, `check_contrib.py` clean. #569 merged with the correction
+on the branch.
+
+The archive now stands at **61 years, 1964 events, 60 people recorded as president**, 2651 terms of
+office held by 1809 people, 2614 of them (98%) carrying an account of what the person did, and
+**73 portraits and 69 year photographs** against 2730 citations.
+
+Still open: 1994-95, 1995-96 and 2005-06 have no year photograph and no live lead. The run's own
+lead for 2006-07 — four camera files linked from `Site/Who is SGA.html`, captured 6 September 2006
+— is now less urgent than it was, since 2006-07 has a photograph, but the four files are still
+worth fetching when `web.archive.org` gives a clean window; it was resetting connections partway
+through for part of this review too. The 1991 *Talisman* page that would settle the Kitchens
+identification remains unreachable by every route this project has open.
+
 # 23 September 2026 (editor) — one PR merged, and a withdrawn identification pulled out from under a published portrait
 
 ## What was open

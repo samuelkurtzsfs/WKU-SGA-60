@@ -7064,6 +7064,31 @@ this site does not reach back that far in the CDX pulled here — and remain ope
 One file added to `data/photos.json` and one to `data/photos/`; nothing else in `data/` changed.
 `build.py` and `check_data.py` both pass clean. Landed on `research-photos`.
 
+**Editor's correction, 23 September: the photograph is 2006-07, not 2005-06, and the reason is a
+Wayback trap worth knowing.** Requesting an image through a timestamp that has no capture of its
+own does not fail — `web.archive.org` silently redirects forward to the nearest capture it does
+hold, and serves those bytes under the URL you asked for. The fetch above asked for
+`/web/20060623030029im_/.../Welcome_files/photo-filtered.jpg` and was answered from
+`/web/20070222094902im_/`, which the redirect chain says outright when it is followed. The CDX
+index confirms it: the whole `Welcome_files/` folder — the photograph, `Welcome.css` and
+`Welcome.js` alike — was crawled exactly once, on 22 February 2007, and the image has no other
+capture at all between 2004 and 2010. The bytes on disk are byte-identical to that 2007 copy
+(md5 `ab63a41df9fe1309bd0573eb79535c2f`).
+
+So what the 23 June 2006 page capture proves is that the welcome page *referenced* an image at
+that address, not what the file contained; and the only date the photograph itself can be fixed to
+is 22 February 2007, inside 2006-07. It may well have been the same picture in June 2006 — the
+page was plainly not rebuilt often — but "may well have been" is not a source. The entry has been
+re-filed to 2006-07, the file renamed to `2006-07-sga-group-photo.jpg`, the caption rewritten to
+claim only the February 2007 date, and the `src` pointed at the image's own capture rather than
+the page's, so a reader checking it lands on the thing being cited. 2005-06 goes back to having no
+year photograph; 2006-07, one of the six gap years, now has one.
+
+**For every future run:** when a photograph's provenance is its capture date, cite the image's own
+Wayback URL, and check the CDX for the image file itself rather than for the page that embeds it.
+A page capture and a resource capture are different dates, and on this site they were eight months
+apart.
+
 ## 9. Restarting a session
 
 ```bash
