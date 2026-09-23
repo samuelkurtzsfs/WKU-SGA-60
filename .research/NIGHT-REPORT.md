@@ -30960,3 +30960,96 @@ a day the queue is empty from end to end.
 The stored brief again opened by sending this run at #6, #7 and #8 as stale and open since
 4 August. All three were closed on 18 August. This is the eighth consecutive pass to write that
 sentence, and it is the one line of the brief that has never matched the repository.
+
+# 23 September 2026 — editor pass, second
+
+## What was reviewed
+
+No pull request was open. The board was empty at the start of this pass and empty at the end,
+and no research branch carries anything unmerged: `research-photos`, the only branch any routine
+has touched in the last day, is an ancestor of `main` rather than ahead of it.
+
+One merge had landed since the previous pass wrote its report, and no editor had seen it. #567
+went into `main` at 03:25 UTC; the night report before it was merged at 00:30. So this pass
+reviewed #567 after the fact, which is the wrong order but better than not at all.
+
+#567 is four files and one substantive data change. It withdraws the corroboration the Maryann
+O'Daniello portrait was resting on, and bars both Kitchens candidates in
+`data/photo-finds/_do-not-use.json`. It adds nothing and claims nothing new. Checked against the
+find entry it came from (`data/photo-finds/n8892.json`) and against the withdrawal it follows:
+the reasoning holds, and the direction is the right one. The 1991 *Talisman* group photograph on
+p. 185 has ten people in two rows and a caption naming ten. The back row is fixed left to right
+twice over — the caption's two women then three men matches the picture, and the second figure
+matches a Mary Susan Bunce portrait the archive already holds from p. 88 of the same volume. The
+front row is five women, so the sex of the figures proves nothing there, and the face match that
+used to prove it was the Kitchens one, now withdrawn. The revised label says exactly that: the
+front row is read in the direction the back row fixes, and the withdrawn match is not relied on.
+That is an inference about how a caption is ordered rather than a proof, and the label now says
+so where a reader can see it. Nothing to cut.
+
+Nothing else in the diff touches a claim. The 87 lines added to this file and the 53 to
+`SGA-60-AGENT-INFO.md` are the run's own account of itself.
+
+## Traps
+
+Nothing tripped. No event was added or changed anywhere in the diff, so the advance-notice trap
+and the chair-as-officer trap had no surface to catch. Nobody was matched by surname — the point
+of the merge is that somebody had been, and the finding was withdrawn for it. No April result
+moved. Nothing touched a settled fact. No contributor commit was in play, and every commit in the
+range is authored `SGA 60`.
+
+## The duplicate pairs
+
+Four, the same four as yesterday, and all four are genuinely separate events. 1971-72 is the
+Kentucky Civil Liberties Union planning court action on 29 February and Associated Students
+endorsing the suit a month later on 28 March, two issues of the *Herald* apart. 1991-92 is Bill
+#92-01-S introduced on 28 January and the same subject failing on 6 February after amendment, one
+sourced to the bill sheet and one to Nikita Stewart's report. 1997-98 is the bill that paid for
+the designated driver cards in November 1997 and the *Herald* reporting their distribution in
+February 1998. 2003-04 is SGA objecting to plus/minus grading on 25 September and passing
+legislation against it on 16 October, two of five entries tracking that fight to the University
+Senate vote in November. Each pair's entries already cross-reference each other. No merges.
+
+## A withdrawn face that was still on the public site
+
+Found and fixed. This is the defect the build already fixed once, in the other direction, and it
+is the half the earlier fix did not close.
+
+`build.py` mirrors `data/photos` into `site/photos` and deletes anything the mirror no longer
+holds, which is what stopped six withdrawn portraits being served at their own addresses after
+their metadata was cut. The gap left open is between `data/photos` and `photos.json`. A barred
+identification keeps its file on disk deliberately, so the photograph routine can go on reviewing
+it — and the file is named for the person. So #567 cut the Kitchens entry out of `photos.json`
+this morning and `1991-92-stacy-kitchens.jpg` went on being served, at a public address whose
+filename is the identification the same merge had just barred. A misidentified face is worse than
+no face, and a URL asserts the name as plainly as a page does.
+
+The fix is narrow on purpose: the build's keep-set now excludes anything named in
+`_do-not-use.json`, matched against the files actually on disk, since most entries in that file
+name a source rather than an image. One file is affected. It is off the site and still in
+`data/photos`, where the routine can reach it.
+
+What this deliberately does not do is settle the wider question the previous pass left to a
+person. Thirty-two held candidates are still deployed and still linked from no page. Those are
+undecided, not barred, and the argument for leaving them reachable — that the photograph routine
+may be reviewing them at those URLs — is untouched by this. Only the barred one moved.
+
+## The numbers
+
+Build clean. 61 year pages, 7 decade pages, 308 documents, 1,111 legislation files, a search
+index of 4,945 records. 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%)
+carrying an account of what the person did, and 48 people recorded under more than one spelling.
+1,964 events across 61 years, 60 people have been president. `check_data.py` and
+`check_contrib.py` both exit 0; `check_duplicates.py` reports the four pairs judged above. All
+1,166 photographs `photos.json` references are deployed, and nothing referenced went missing.
+
+## Still open
+
+Unchanged: the six year-photograph gaps, the officer portraits from 2010-11 on, and the F247
+1990-91 executive committee folder that needs somebody in the WKU Archives reading room. The six
+decade routines and the legislation harvest are still off. The hold note on a living person in
+`data/photo-finds/_for-the-editor.md` is still a decision for the project editor, and still not
+mine to make.
+
+The stored brief opened again by sending this pass at #6, #7 and #8 as stale and open since
+4 August. All three were closed on 18 August. That is nine consecutive passes.
