@@ -27,6 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "years.json"
 DOCS = ROOT / "data" / "documents"
 PHOTOS = ROOT / "data" / "photos"
+BARRED = ROOT / "data" / "photo-finds" / "_do-not-use.json"
 LEG = ROOT / "data" / "legislation"
 LEGMETA = ROOT / "data" / "legislation.json"
 POSTS = ROOT / "data" / "posts"
@@ -8306,16 +8307,35 @@ def main():
     # after its metadata was cut: six of them were, including faces withdrawn
     # because the identification was wrong. A withdrawal has to take the file
     # down too, so anything here that data/photos no longer holds is deleted.
+    # That rule closed the gap between site/photos and data/photos, but not the
+    # one between data/photos and photos.json. A barred identification keeps its
+    # file on disk so the photograph routine can go on reviewing it, and the
+    # file is named for the person, so the withdrawn name went on being served
+    # at a public address after the metadata was cut. Anything named in
+    # _do-not-use.json is therefore kept out of the site as well. Candidates
+    # that are merely held, and not barred, are untouched.
+    barred = set()
+    if BARRED.is_file():
+        try:
+            held = {f.name for f in PHOTOS.iterdir() if f.is_file()} if PHOTOS.is_dir() else set()
+            for e in json.loads(BARRED.read_text()):
+                name = (e or {}).get("file")
+                if name in held:
+                    barred.add(name)
+        except (ValueError, OSError) as exc:
+            print(f"  could not read {BARRED.name}, publishing nothing from it: {exc}")
+            barred = set()
+
     nstale = 0
     if PHOTOS.is_dir():
         shutil.copytree(PHOTOS, SITE / "photos", dirs_exist_ok=True)
-        keep = {f.name for f in PHOTOS.iterdir() if f.is_file()}
+        keep = {f.name for f in PHOTOS.iterdir() if f.is_file()} - barred
         for f in (SITE / "photos").iterdir():
             if f.is_file() and f.name not in keep:
                 f.unlink()
                 nstale += 1
         if nstale:
-            print(f"  withdrew {nstale} photograph(s) the archive no longer holds")
+            print(f"  withdrew {nstale} photograph(s) the archive no longer holds or has barred")
     print(f'built the board, {len(ys)} year pages, the timeline and {len(DECADES)} decade '
           f'pages, the legislation archive, corrections and about '
           f'+ {ndocs} documents + {len(leg)} legislation files -> {SITE}')
