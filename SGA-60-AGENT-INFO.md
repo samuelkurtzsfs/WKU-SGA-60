@@ -6952,6 +6952,59 @@ No file was added to or removed from `data/photos.json` this run. `build.py` and
 start of the run, which brought in editor-branch cleanup unrelated to photographs, is the only
 change in the tree). Landed on `research-photos`.
 
+### Photograph run of 23 September (scheduled): the standing Kitchens re-add closed off, the rest of this section re-derived independently and found to already hold
+
+Confirmed the baseline before touching anything, the same way every pass in this section does:
+all four named presidents (Todd, Dawson, Johnson, Gilley) and all 73 `leaders` entries still carry
+a portrait, and every one of the 61 years carries at least one photograph. Priorities 1, 2 and 4
+are fully clear, as they have been since before this section starts.
+
+Before researching anything new, ran `python3 scripts/merge_photo_finds.py` (no `--write`) to see
+what the drop-box queue itself was carrying. It reported exactly two pending additions — both
+`1991-92-stacy-kitchens.jpg`, one for "Stacy Kitchens" at 1990-91 and one for "Staci Kitchens" at
+1991-92 — and eighteen refused findings, all still correctly carrying a researcher's own "FACE
+PROVED, PERSON NOT PROVED" flag (Heather Francis, Keanan Noel Cortney, George Carlson, David
+Young, Debbie Thomas, Frank Miller, Crystal Smith, Nicki Jerome, Amy Renigar, Curtis Street, Grace
+Hancock, John Chestnut, Kristi Myers, Lori Doolin ×2, Bill Brown, Leigh Bakken, Mark Page). Those
+eighteen are exactly `.research/`'s own `_for-the-editor.md` list and were left untouched.
+
+**The two pending Kitchens additions are the same pair `.research/NIGHT-REPORT.md` records
+withdrawing on 22 September, for citing a scrapbook page with no caption tying her to student
+government while a companion entry claimed the identification was independently confirmed by the
+1991 Talisman's own Associated Student Government photograph caption at printed p. 185.** That
+withdrawal pulled both entries out of `photos.json` but never barred them in
+`data/photo-finds/_do-not-use.json`, so the source files (`1986-1990.json`, `n8892.json`) still
+carry the original findings untouched and the merge script keeps re-proposing them — precisely
+the failure mode the script's own `barred()` docstring warns about ("Two withdrawn faces were
+back this morning"). This run tried to settle it rather than just leave it rediscovered a third
+time: the 1991 Talisman is not one of the 19 volumes `archive.org` holds (confirmed again against
+the same catalog search this file already trusts), and `digitalcommons.wku.edu/cgi/viewcontent.cgi?article=1415&context=dlsc_ua_records`
+(the 1991 volume's own PDF, found via its `dlsc_ua_records/415` landing page) returned the same
+Cloudflare "Just a moment..." 403 challenge this file has logged against `viewcontent.cgi` every
+time it has been tried this month, on a plain `GET` with full navigation headers and a 90-second
+wait between the landing-page fetch and the PDF fetch. So the one thing that could resolve this
+either way — reading p. 185 for real — is still not reachable by any route this project has open.
+Added the pair to `_do-not-use.json` with the full history, so a fourth pass does not spend its
+own hour rediscovering the same withdrawal. **Left withdrawn.**
+
+With that closed, spent the rest of the run re-deriving this section's own findings from scratch,
+independently, before discovering they were already here: David Bass, David Young, Alice Wicks
+and Steve Wilson (1978-79), Mark Chesnut/Chestnut (1980-81) and Alan Jackson (1980-81) were each
+searched again this run — same Talisman pages, same captions, same conclusions the 21 and 22
+September passes already recorded. A `wkuherald.com` `/wp-json/wp/v2/posts?search=` check against
+a handful of 2013-2026 names (Nathan Cherry, Josh Zaczek, Tyler Scaff, Trevor Huffman, Fatin Yaro,
+Rachel Keightley, Abhishek Bose, Smita Peter, Kara Raley, Amber Daniel) also came back clean, which
+the 22 September systematic sweep already established for the whole 92-name cohort and already
+said not to repeat. **Read this section fully before researching, not just CLAUDE.md's own
+"Pictures" heading and §4/§6 of this file** — the stored brief that starts a scheduled run points
+at those alone, and a run that follows only the brief re-walks ground this section has already
+covered in detail. The one thing that was not already here going in was the Kitchens closure
+above; everything else this run tried was redundant with what is already written.
+
+No file was added to or removed from `data/photos.json`. `data/photo-finds/_do-not-use.json`
+gained the two Kitchens entries. `build.py` and `check_data.py` both pass clean. Landed on
+`research-photos`.
+
 ## 9. Restarting a session
 
 ```bash

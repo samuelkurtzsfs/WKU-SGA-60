@@ -1,3 +1,90 @@
+# 23 September 2026 (editor) — one PR merged, and a withdrawn identification pulled out from under a published portrait
+
+## What was open
+
+One pull request, #567, "Research: photographs, 23 September". The stored brief again sends this
+run at #6, #7 and #8 as stale and open since 4 August. All three have been closed since 18 August.
+That is now eight consecutive passes recording it, and the brief still has not been corrected.
+
+## What #567 contained, and what it did not
+
+Two files, 65 insertions, no deletions: two entries added to `data/photo-finds/_do-not-use.json`
+and a run log appended to `SGA-60-AGENT-INFO.md`. Neither file is read by `build.py`, so nothing
+in the diff reached the public site. The diff asserts no new fact about SGA's history. Its whole
+effect is to *bar* an identification the 22 September pass had already withdrawn — the
+Stacy/Staci Kitchens portrait, which the merge script kept re-proposing because the withdrawal
+pulled it from `photos.json` without barring it at source.
+
+Verified rather than taken on trust:
+
+- `scripts/merge_photo_finds.py` now reports **zero** pending additions where it previously
+  re-proposed the Kitchens pair, and the same eighteen editor-flagged refusals plus one withdrawn
+  frame. The bar does what the PR says it does.
+- The 1991 *Talisman* is genuinely not among the volumes this project can reach.
+  `data/photo-finds/_talisman-index.json` covers 1971-1981, 1986 and 1987 only.
+- The PDF endpoint the run reports as blocked is blocked. A single request to
+  `viewcontent.cgi?article=1415&context=dlsc_ua_records` returned HTTP 403 with a Cloudflare
+  "Just a moment..." interstitial, not a PDF. The run correctly checked the first bytes rather
+  than trusting the filename — trap 7, applied properly.
+- No 1991 *Talisman* is mirrored in `data/documents/`, so the 22 September note to check disk
+  before declaring a document unreachable was answered, even though this run did not cite it.
+- Commits are authored `SGA 60` and carry no tool attribution. No contributor edits in the diff.
+
+The traps checklist finds nothing to fix. No events were added, so advance notices, chair-as-officer
+and April-election filing do not arise. The one name question in the diff is handled the right way
+round: the PR bars an identification *because* it rested on a surname and a class year rather than
+a caption, which is trap 4 applied correctly rather than violated. Stacy and Staci Kitchens remain
+deliberately unmerged.
+
+## What was cut
+
+**A withdrawn identification was still propping up a published portrait.** The Kitchens withdrawal
+of 22 September left `photos.json` clean of Kitchens as a subject, but not clean of Kitchens as
+*evidence*. The leader portrait of **Maryann O'Daniello, 1990-91**, cropped from the same 1991
+*Talisman* group photograph, carried a label telling readers that the front row's order was
+"proved" because its third figure matched the Spirit Masters portrait of Staci Kitchens. That is
+the exact match the archive withdrew the day before. A live page was citing as proof a thing the
+project had already decided it could not prove.
+
+The portrait itself survives, because its other leg is independent and holds: the back row's names
+run two women then three men, the pictured back row reads the same, and its second figure matches a
+Mary Susan Bunce portrait the archive holds from p. 88 of the same volume. That fixes the caption's
+direction on its own. So the sentence was trimmed rather than the portrait pulled — the label now
+says the front row reads in the direction the back row fixes, and records that the corroborating
+match was withdrawn on 22 September and is not relied on. `photos.json` now contains no reference
+to Kitchens at all. She keeps her officer page and her record of being sworn into Congress on
+13 November 1990, both of which rest on minutes and were never in question.
+
+This is the third day running that a photograph's published reasoning has not survived being read
+back against its own sources, and the first where the failure was in a *different* entry than the
+one under review. A withdrawal that removes a subject is not finished until the labels that cited
+that subject as evidence have been swept too.
+
+## What is still open
+
+**The Kitchens identification itself**, unchanged and correctly barred. The strongest untried lead
+is the one the 22 September pass named and nobody has used: the index carries `Kitchens, Staci`
+writing a *Herald* letter of 12 April 1990 about student government. It is still not a caption.
+Settling this needs p. 185 of the 1991 *Talisman* read directly, and no route to that page is
+currently open.
+
+**The eighteen "FACE PROVED, PERSON NOT PROVED" findings** in the merge queue, untouched and
+correctly left for a human.
+
+**The four duplicate pairs** `check_duplicates.py` reports are the same four as before this branch,
+none of them in anything this diff touched. Each is two genuinely separate events weeks apart — a
+bill introduced and then failed, a suit planned and then endorsed, cards announced and then
+distributed. Left alone.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0, "the archive checks out against its own rules".
+`check_contrib.py` exit 0. `check_duplicates.py` reports the same four known pairs.
+Current counts: **61 years, 1964 events, 60 people have been president**; 2651 recorded terms of
+office held by 1809 people, 2614 of them (98%) carrying an account of what the person did.
+
+Merged #567.
+
 # 22 September 2026 (night) — an empty queue, and three standing identity questions worked
 
 ## What was open
