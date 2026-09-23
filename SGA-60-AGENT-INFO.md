@@ -7136,6 +7136,83 @@ this project cannot get past. Not worth trying again without a different entry p
 No file was added to or removed from `data/photos.json` or `data/photos/`. This run's only change is
 to this file. `build.py` and `check_data.py` both pass clean. Landed on `research-photos`.
 
+### Photograph run of 23 September (fourth pass, scheduled): both live routes retested and still closed, a fresh host lead (`wkutalisman.com`) checked and empty, and the Kitchens bar's own limit confirmed rather than assumed
+
+Confirmed the baseline before touching anything, same as every pass in this section: all four
+named presidents (Todd, Dawson, Johnson, Gilley), all 73 `leaders` entries and all 61 years still
+carry at least a leader-level portrait. Rebuilt the officer/chair gap against the current
+`data/years.json` (not the last pass's saved figure) restricted to the years `archive.org` actually
+holds a Talisman for — correcting the publication-year-to-academic-year offset in the process,
+since a naive `Y` → `Y-(Y+1)` mapping puts `talisman1987west` at 1987-88 when the file's own prior
+entries (the Kinne crop from `talisman1981west`, filed at 1980-81) establish it is `Y-1`-`Y`. On the
+corrected mapping the covered-year officer/chair gap is exactly the ten names this file has already
+logged as checked and declined: Pulman, Bass, Wicks, Young, Wilson (1978-79 shows twice under two
+spellings of the same search), Jackson, Thomas, Chesnut, Millay, Austin. Nothing new to attempt
+there.
+
+**Route status, retested fresh:** `digitalcommons.wku.edu/cgi/viewcontent.cgi` — Cloudflare "Just a
+moment..." 403 challenge, tested against `article=5695`. `web.archive.org` — `HTTP 302` on the bare
+page request, then `curl: (35) Recv failure: Connection reset by peer` on `-L` and on a direct
+`im_` image fetch after a 15-second wait, and `curl: (28) Connection timed out` on a third attempt.
+Both exactly where every pass since mid-September has left them.
+
+**Tried a route not in this file before: a web search rather than another direct fetch, aimed at
+finding a second host for the 2006 or 2009 Talisman (the two gap years whose yearbook exists but
+sits behind `viewcontent.cgi`) or for the WKU Archives SGA-photos finding aid PDF
+(`article=1619&context=dlsc_ua_fin_aid`) this file has flagged as never opened.** Neither turned up
+anything. `wkutalisman.com` is real and answers `200`, but it is the current *Talisman* student
+magazine's own site (`article:modified_time` on its homepage reads 2022), not a yearbook archive —
+its markup contains the word "yearbook" exactly once and no link to any dated volume, 2005-06 or
+otherwise. A search crossing "Talisman," "2006," and each of HathiTrust, Google Books and Internet
+Archive returned nothing past the 19 identifiers this file already has from `archive.org`'s own
+catalog search. `westernkentuckyuniversity.pastperfectonline.com`, the dead end the 23 September
+third pass logged, did not resurface as a live option either. No new lead for 2005-06, 2008-09 or
+the finding aid; nothing to retry here without a different search term.
+
+**Checked, rather than repeated, why the barred Kitchens pair still shows up in every
+`merge_photo_finds.py` dry run despite being written into `_do-not-use.json` on 22 September.**
+Tried adding the pair's actual source URL (`https://digitalcommons.wku.edu/stu_org/563`, read off
+the two original finding files, `1986-1990.json` and `n8892.json`) to the `_do-not-use.json`
+entries, expecting it to make the bar bite the way `barred()`'s own docstring describes. It does
+not, and reading the script explains why rather than leaving it a mystery: `frame_level()` refuses
+any URL matching `digitalcommons\.[^/]+/[a-z_]+/\d+/?$` as a whole-item landing page rather than a
+single photograph, precisely to stop one register entry from barring every other picture cut from
+the same source — and `stu_org/563` (the WKU Spirit Masters scrapbook's own item page, not a
+per-image address) matches that pattern exactly. There is no frame-level URL to give it; the
+underlying source is a scrapbook with no page-level addressing. So the prose-only entry already in
+the file is correctly advisory by the script's own design, not an unfinished bar — reverted the
+URL addition rather than leave a field in the file that looks like it does something it does not.
+**A future pass should not try this again**: the fix this file's 23 September note implicitly asked
+for (make the withdrawal actually bind) is not available for this particular finding without a more
+specific source URL than the register has ever had for it, and the standing instruction — read the
+`reason` field and do not `--write` the pair — is the right and only mechanism here.
+
+No file was added to or removed from `data/photos.json` or `data/photos/`, and
+`data/photo-finds/_do-not-use.json` ends the run unchanged (the URL fields were added and then
+reverted in the same run). `build.py` and `check_data.py` both pass clean. Landed on
+`research-photos`.
+
+**Editor's note, 23 September: the two closed routes were both open again within the hour, and the
+dead end is about holdings, not access.** Checked before merging the pass above, because a network
+condition recorded in this file reads to a later run as settled state, and this one would have told
+the next photograph pass not to bother. `web.archive.org` returned `200` on a known-good snapshot
+(the 2001 former-presidents roster this archive already cites), and `archive.org` returned `200` and
+252 KB on `talisman1981west`. Neither reset, neither timed out. The refusals the pass above logged
+were real when it logged them and transient.
+
+That makes the route status worth stating in the durable terms instead. With `archive.org` up, the
+five years still lacking a year-level photograph — 1994-95, 1995-96, 2000-01, 2005-06 and 2008-09 —
+were re-tested against the volumes that would cover them on this file's own `Y-1`-`Y` mapping:
+`talisman1995west`, `talisman1996west`, `talisman2001west`, `talisman2006west` and
+`talisman2009west` all return `404`. The volumes are not there to fetch. So the pass above reaches
+the right conclusion, and it now rests on the stronger reason: not that the host was refusing, but
+that `archive.org` does not hold these five volumes at all. A future pass should retest the host
+rather than trust either finding, and should not spend the run re-checking those five identifiers.
+
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` is the one route confirmed still shut: `403` behind the
+Cloudflare "Just a moment..." challenge on `article=5695`, tested independently. That is where
+2005-06 and 2008-09 remain.
+
 ## 9. Restarting a session
 
 ```bash
