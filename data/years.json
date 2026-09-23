@@ -1583,7 +1583,8 @@
       "label": "Herald 48:30 [31], 22 May 1969",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2111",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3112&context=dlsc_ua_records"
-     }
+     },
+     "campus": true
     },
     {
      "date": "1968-09-26",
@@ -9456,7 +9457,8 @@
      "src": {
       "label": "WKU Timeline: Dero Downing",
       "url": "https://digitalcommons.wku.edu/wku_timeline/367"
-     }
+     },
+     "campus": true
     },
     {
      "date": "1978-09-28",
@@ -12570,6 +12572,11 @@
       "label": "Herald 58:47, 17 Mar 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2348",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3350&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "College Heights Herald 58:49, 24 Mar 1983, Jamie Morton, \"Charles Keown Questions Associated Student Government Revisions\" and \"68 File for Associated Student Government Positions\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2350",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3352&context=dlsc_ua_records"
      }
     },
     {
