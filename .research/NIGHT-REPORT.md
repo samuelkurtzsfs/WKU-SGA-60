@@ -30772,3 +30772,104 @@ rule is not breached where that rule is aimed. Deleting a spot-check review to b
 that would come straight back would cost more than it saves. `AGENT-LANDING.md` has been corrected
 to say so, so that the next run cleans the body, leaves the comment, and spends its time on the
 archive instead.
+
+# 23 September 2026 — editor pass
+
+## What was reviewed
+
+Nothing was waiting. `git fetch origin` brings back no open pull request at all, and nothing has
+been pushed to any branch since `main`'s own tip at 21:28 UTC on 22 September. The last research
+push was the photograph routine's, merged the same evening as #563. The four routines have been
+quiet for twenty-six hours.
+
+Push access is working in this container. `gh` is still not installed, as `AGENT-LANDING.md`
+says; the dry-run probe and the GitHub MCP tools both answer normally, so this was a full pass
+and not a review-only one.
+
+Every `research-*` branch showing as "ahead" of `main` was checked rather than assumed. All of
+them are superseded: the diffs run the wrong way, restoring the Kitchens duplicate portraits and
+dropping the Rumenier alias that #559 and #562 settled. Nothing on origin carries work `main`
+lacks.
+
+## The numbers
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, `check_duplicates.py` the
+same four pairs. 61 years, 1,964 events, 60 people have been president. 2,651 recorded terms held
+by 1,809 people, 98% carrying an account of what the person did; 48 people recorded under more
+than one spelling. 308 mirrored documents, 1,111 legislation files, search index 4,945 records.
+Identical to the last pass in every figure. `site/` regenerated with nothing but the build date
+changing, so the published site is in step with `data/`.
+
+## The duplicate pairs
+
+The same four, read again and judged the same way. Designated driver cards funded by Bill 97-3-F
+in November 1997 and distributed in February 1998; the student regent advisory committee bill
+introduced on 28 January 1992 and failed, altered, on 6 February; the Kentucky Civil Liberties
+Union planning court action in February 1972 and Associated Students endorsing the suit in March;
+plus/minus grading opposed at a meeting in September 2003 and legislated against in October. Four
+two-stage sequences, each stage separately sourced. Nothing combined.
+
+## The officer-portrait count, reconciled
+
+Two passes have now left this standing, and it is a counting rule, exactly as the last pass
+guessed. Both figures are right and they answer different questions.
+
+**270 slots held by 220 people** counts an officer slot as unillustrated when no portrait is filed
+for *that person in that year*. **240 slots held by 192 people** counts it as unillustrated only
+when the archive holds no portrait of that person *in any year*.
+
+The gap is 30 slots and 28 people, and every one of them is somebody the archive already has a
+face for, filed under a neighbouring year: Paul Gerard in 1969-70 pictured from 1967-68, Margaret
+Ragan in 1980-81 pictured from 1982-83, Nick Todd and three other 2002-03 chairs pictured from
+2003-04, and so on.
+
+Neither number should be retired. 240/192 is the photograph routine's workload — how many people
+still need a face found anywhere — and is the right figure for it to report progress against.
+270/220 is how many officer slots on the site show no face, which is the site-completeness figure.
+A future pass should name which of the two it means rather than reconcile them again.
+
+## Traps
+
+Nothing tripped, because nothing was submitted. No event was added or changed by this pass, so the
+advance-notice and chair-as-officer traps had no surface. Nothing touched the settled facts, no
+contributor commit was in play, and the single commit here is authored `SGA 60`.
+
+## Two things found in the published site, neither of them cut
+
+Both are flagged rather than fixed. Neither is a wrong fact and neither is mine to settle alone.
+
+**Held candidate portraits are being served.** `build.py` copies the whole of `data/photos` into
+`site/photos`, so 33 image files that `photos.json` deliberately does not reference are live at
+their own addresses — among them every crop in the "faces proved, people not" queue that
+`data/photo-finds/_for-the-editor.md` is holding for a decision. They are linked from no page, but
+the filename is the identification, the naming convention is documented, and the archive's whole
+reason for holding them is that the person is unproven.
+
+This is the same defect the build already fixed once in the other direction. The comment at
+`scripts/build.py:8305` says a withdrawn portrait "went on being served at its own address after
+its metadata was cut" and deletes anything `data/photos` no longer holds. The gap it does not
+close is between `photos.json` and `data/photos`: a file with no metadata is still deployed. The
+fix is to build the keep-set from the filenames `photos.json` references rather than from the
+directory listing, which leaves every held file safely on disk and takes it off the site. It is
+left for a person because the photograph routine may be relying on those URLs to review its own
+candidates, and this pass has no way to know.
+
+**A living person's hold note is in a public repository.** The repository is public.
+`data/photo-finds/_for-the-editor.md` sets out, to explain why one 2016-17 officer's portrait is
+held, a personal detail about him that the *Herald* put on its front page in 2014 and that the
+archive has rightly declined to republish. The site is clean: everything published about him is
+his SGA service, the election codes, the complaint he reported in October 2016 and the Judicial
+Council's veto ruling. Nothing personal reaches a page. But the note reasoning about it sits in a
+public file, and a redaction now would not remove it from the history in any case. The note itself
+says the decision belongs to the project editor, which is why this pass has not touched it.
+
+## Still open
+
+Unchanged: the six year-photograph gaps, the officer portraits from 2010-11 on, and the F247
+1990-91 executive committee folder that needs a person in the WKU Archives reading room. The six
+decade routines and the legislation harvest remain off, and with the photograph routine quiet for
+a day the queue is empty from end to end.
+
+The stored brief again opened by sending this run at #6, #7 and #8 as stale and open since
+4 August. All three were closed on 18 August. This is the eighth consecutive pass to write that
+sentence, and it is the one line of the brief that has never matched the repository.
