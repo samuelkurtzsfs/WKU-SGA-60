@@ -7093,9 +7093,11 @@ apart.
 
 Confirmed the baseline again before touching anything: all four named presidents (Todd, Dawson,
 Johnson, Gilley), all 73 `leaders` entries and all 61 years still hold at least what the two earlier
-passes today left them with. `merge_photo_finds.py` (no `--write`) reported nothing beyond the
-standing barred Kitchens pair, which `_do-not-use.json` already carries with its full history and
-was correctly left refused. Five years still carry no year-level photograph:
+passes today left them with. `merge_photo_finds.py` (no `--write`) proposed no new photograph to
+add: its run ends with 17 standing held candidates flagged for the editor and one refusal, the
+barred Kitchens pair, which `_do-not-use.json` already carries with its full history. The held
+candidates are the same undecided pool earlier passes left for a person to rule on, not anything
+this run surfaced; none was merged. Five years still carry no year-level photograph:
 1994-95, 1995-96, 2000-01, 2005-06, 2008-09.
 
 Retested the two routes this file has logged as closed all month, fresh, several times each, spaced
