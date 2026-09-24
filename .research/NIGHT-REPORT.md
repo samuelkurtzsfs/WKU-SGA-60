@@ -32314,3 +32314,97 @@ recorded under more than one spelling. 1,202 photographs served.
 
 The sixtieth year is now on the record through 23 September, trimmed to what the *Herald* actually
 reports.
+
+# 24 September 2026, late evening — #586 merged after three corrections to its own account of itself
+
+## The board on arrival
+
+One pull request open, #586, "Research: photographs (rolling)", pushed about an hour earlier. The
+three branches the stored brief still asks every run to rescue — #6, #7 and #8 — have been closed
+since 18 August, for the fifth pass running. The brief should stop naming them.
+
+## #586 — a housekeeping pass, verified line by line
+
+The branch sits directly on the current tip of main, so there was nothing to merge in first and
+none of the orphan-history problem AGENT-LANDING.md warns about. Three files, 126 insertions: a
+run log, a note appended to the handoff, and a prune of the TopSCHOLAR photograph want-list from
+32 entries to 15. `data/years.json` is untouched, no image was added or removed, and `build.py`
+reads nothing from `data/photo-finds/` except `_do-not-use.json`. Nothing in this diff reaches a
+year page, so no claim in it is published as history. That lowered the stakes but not the bar.
+
+Everything the branch asserts was re-tested here rather than taken on trust.
+
+The prune is sound, which was the thing most worth checking, because a prune that drops a live
+lead loses research silently. All fifteen names removed from the queue — Forsythe, Nitzken, Redmon,
+Martin, Wingate, Starkey, Vasilijevic-Klingler, Mitchell, Jury, Shaw, Jeter, Sutton, and Alyson
+Manley and Brenna Duncan, the two the branch covered only with "and the rest" — carry a portrait in
+`data/photos.json` today. Every one of the fifteen entries kept still has at least one unresolved
+name in it. Nothing was dropped that still needed doing.
+
+The three routing claims hold exactly as reported. `viewcontent.cgi` answers 403 with Cloudflare's
+"Just a moment..." interstitial. `web.archive.org` reset the connection after 11.3 seconds, which
+is the 10-11 seconds the branch describes. Plain `archive.org` returned a 1.7 MB file in under two
+seconds. The two hosts do fail independently, and the branch is right to tell the next run to test
+the bypass fresh rather than believe either report.
+
+The portrait baseline holds: no president or regent in the archive lacks a portrait, all four
+originally-named presidents carry one, and the five-year general-photograph gap is exactly
+1994-95, 1995-96, 2000-01, 2005-06 and 2008-09 — no more and no fewer.
+
+## Corrected before merging
+
+Three things the branch got wrong about itself, all in its own prose rather than in the data:
+
+- **"18 held FACE-PROVED-PERSON-NOT-PROVED candidates" is 17.** The script prints seventeen, on
+  this branch and on main alike, so it was a miscount and not a change. It mattered enough to fix
+  because the figure had been written into `SGA-60-AGENT-INFO.md`, which is what the next run
+  reads as fact. Corrected in the handoff and in the run log.
+- **The stated reason for keeping the Bewley and Gilliam entries was wrong.** Both the pull request
+  body and the run log say those entries were retained because they "share a source item with an
+  unresolved name". They do not: `dlsc_ua_records/6720` names only Bewley and `/6238` names only
+  Gilliam. The run log compounded it by pointing at Jacob Turner as the unresolved name holding
+  6720 open; Turner already has a portrait, and the entry he appears in, 6721, is open for Lisa M.
+  Kappler instead. Keeping the two as do-not-retry markers is the right call — it stops a future
+  run re-deriving a dead end — but the file now says that is what they are.
+- **The pruned JSON lost its trailing newline.** Restored.
+
+The findings themselves — that Bewley's article ran with no photograph, and that Gilliam's only
+lead is four years off his recorded service — stand, and the second is the surname-alone trap being
+correctly refused rather than a gap in the work.
+
+## The traps checklist
+
+Nothing to catch. No event was added, so there is no advance notice written up as a report; no
+roster changed, so no committee chair became an officer; no election moved; no person was matched
+by surname, and the one place the question arose it was answered the right way; nothing touches the
+settled facts. No contributor commit is in the diff. The commit is authored `SGA 60`, its message
+is in plain editorial voice, and neither it nor the pull request body carries tool attribution.
+
+`check_duplicates.py` returns the same four long-standing pairs and no new one, as it must — this
+branch does not touch `years.json`.
+
+## Merged
+
+#586 merged to main with the three corrections pushed to the branch first. Main rebuilt clean.
+
+## Still open
+
+- **The stored editor brief still instructs every run to rescue and merge #6, #7 and #8**, closed
+  since 18 August. Five passes have now spent time establishing the same thing. Removing those
+  three lines from the brief is a one-minute edit that would pay back every three hours.
+- **Eleven of the thirteen research routines remain dormant since early August.** Unchanged, and
+  still the single thing most worth the owner's attention.
+- The 15 genuinely open photograph leads are all blocked behind the two closed routes, so the
+  portrait beat has nothing it can reach until one of them reopens. The 17 held
+  FACE-PROVED-PERSON-NOT-PROVED candidates need an editor's eye, not another research run.
+- The five year-photograph gaps, Sophie Stirling / Sterling, Gabi / Gabby Pace, and the hold note
+  in `data/photo-finds/_for-the-editor.md` are all unchanged.
+
+## The numbers
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` both exit 0.
+
+61 year pages, 7 decade pages, 308 documents, 1,111 legislation files, search index 4,955 records.
+61 years and 1,974 events; 60 people have been president. 2,650 recorded terms of office held by
+1,809 people, 2,613 of them (98%) carrying an account of what the person did, and 48 people
+recorded under more than one spelling.

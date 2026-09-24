@@ -11,7 +11,7 @@ Re-checked the four originally-named presidents (Nick Todd, Katie Dawson, Jeanne
 Gilley) before spending time: all four already carry a portrait. A scripted cross-check of every
 `role: "president"` / `role: "regent"` leader against `data/photos.json` found zero gaps —
 priorities 1 and 2 are fully satisfied. `merge_photo_finds.py` (dry run) proposes nothing new: 0
-additions, 18 held FACE-PROVED-PERSON-NOT-PROVED candidates already flagged for the editor, none
+additions, 17 held FACE-PROVED-PERSON-NOT-PROVED candidates already flagged for the editor, none
 of them mine to resolve.
 
 ## The bypass window closed again by evening
@@ -57,8 +57,9 @@ worklist file itself.
 - Mallory Treece (`dlsc_ua_records/5160`)
 - Lisa M. Kappler (`dlsc_ua_records/6721`)
 - Corey Bewley (`dlsc_ua_records/6720`) — **already ruled out** this morning: the named article ran
-  with no photograph at all. Left in the queue only because the entry's other name (Jacob Turner,
-  via 6721) is unresolved; Bewley himself needs no further attempt.
+  with no photograph at all. Entry 6720 names no one else, so it is kept as a do-not-retry marker,
+  not a live lead; Bewley himself needs no further attempt. (Jacob Turner, named in the separate
+  entry 6721, already carries a portrait; that entry stays open for Lisa M. Kappler.)
 - Mitchell Stevens (`dlsc_ua_records/6220`)
 - Timothy Gilliam (`dlsc_ua_records/6238`) — **already ruled out** this morning: the only lead is
   four years off his recorded SGA service, too large a gap for an ordinary name to carry alone.

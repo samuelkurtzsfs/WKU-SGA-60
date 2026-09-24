@@ -7229,7 +7229,7 @@ and received 39 bytes back. That's a hard shut, not this morning's roughly-50/50
 independently — don't infer one's state from the other.
 
 Baseline reconfirmed first, as always: all four named presidents, every president/regent in the
-archive, all still carry a portrait; `merge_photo_finds.py` proposes nothing new (18 held
+archive, all still carry a portrait; `merge_photo_finds.py` proposes nothing new (17 held
 FACE-PROVED-PERSON-NOT-PROVED candidates, unchanged, not resolvable from this end).
 
 Pruned `data/photo-finds/_topscholar-wanted.json` from 32 entries to 15, removing everything this
@@ -7239,8 +7239,8 @@ The 15 that remain are genuinely still open and still blocked by the closed rout
 Lisa Kappler, Mitchell Stevens, Kelly Johnson/Brooke Smith/Kristin Hartley, Emilee Bishop/Lucas
 Humble/Matt Holland/Tim Hill, Alex Wimsatt, Emilee England/Cacy Schooler/Jacob Miers, Katherine
 Smith, a 25-name `talisman/` collection lead, and the 2015-16–2019-20 senate/justice worklist.
-Corey Bewley and Timothy Gilliam are also still listed (their entries share a source item with an
-unresolved name) but are already ruled out — Bewley's article ran with no photograph, Gilliam's
+Corey Bewley and Timothy Gilliam are also still listed — their entries name no one else, and are
+kept as do-not-retry markers rather than as live leads — but both are already ruled out — Bewley's article ran with no photograph, Gilliam's
 only lead is four years off his recorded service — so neither needs another attempt.
 
 **For the next run:** test the `web.archive.org` bypass fresh at the start of the session rather
