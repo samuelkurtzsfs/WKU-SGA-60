@@ -1,3 +1,110 @@
+# 24 September 2026 (editor, third pass) — an empty board, and a guard on the 1,111 files nobody was checking
+
+## What was open
+
+Nothing. No pull request is open, and no branch on origin carries anything `main` lacks.
+`research-photos` diffs against `main` at 117 deletions and nothing else — it is behind on the
+night report, not ahead on anything. The six 4 August branches (`research-profiles`,
+`research-senate`, the three rosters, and the five decade branches) all still have **no merge
+base** with `main` and diff hugely negative, which is the orphan-history hazard `AGENT-LANDING.md`
+describes; none was touched.
+
+#6, #7 and #8 were again named in the brief as stale and open. All three closed on 18 August.
+Twelfth consecutive pass.
+
+## The spot check, run against published claims
+
+With no diff to sample, the sample came from the site. The archive carries 86 events that cite a
+*Talisman* full text on archive.org **and** assert a hard number — a crowd, a gate, a loss. That
+route is the one CLAUDE.md says is not rate limited, and it held up: six volumes fetched, ten
+claims opened against the yearbook's own words.
+
+Nine confirmed verbatim:
+
+- Stevie Wonder, Feb 1973 — "only 3,850 were on hand, and the ASG lost between $4,000 and $5,000."
+  The entry says "draws 3,850 and costs ASG up to $5,000." Correctly hedged on the range.
+- Chicago, Oct 1976 — "grossed $53,092."
+- Linda Ronstadt, Nov 1975 — "$4,300 profit for ASG."
+- Loggins and Messina, 17 Sep 1975 — "a major loss of $7,000 resulted."
+- The 1974-75 entertainment budget — "$42,000 for all forms of entertainment, the ASG set aside
+  $27,000 for two free concerts."
+- Ike and Tina Turner, Oct 1971 — "estimated crowd of 12,000 in Diddle Arena."
+- The Oct 1971 mock election — "only 1,175 of Western's" students voted.
+- Steve Fuller, 1980-81 — "Associated Student Government President Steve Fuller was also sworn in
+  as a student regent," in the same passage as the $66,000 for the president's home. Both halves
+  of the entry, including the two regent appointments, are on the page.
+- Heart, Feb 1979 — "Western made about $5,200 from the February concert."
+
+**A settled fact re-confirmed from the source rather than from this file.** The 1979 *Talisman*
+states the change outright: the Board of Regents approved it on 31 March and "funded $80,000 to
+the center board for programming," moving lectures and concerts that "had been run by Associated
+Student Government" to a rebuilt University Center Board from fall 1979, with ASG's president and
+activities vice president sitting on the new committees. §7 has it exactly right, and the
+1978-79 concerts the archive still attributes to ASG — Prine, Heart, the cancelled Outlaws date —
+all precede it, so the attribution is right too.
+
+**Three claims could not be confirmed, and none was cut.** The 1979 volume's concert spread is
+OCR-damaged past reading: the John Prine $2,000 loss, the Outlaws' 242 tickets and Heart's 5,821
+attendance are not recoverable from it, though the surrounding fragments match the entries in
+every readable particular — Prine's sellout at Van Meter and all four song titles read verbatim,
+and "Tim N", "ager heard" and "spot" sit where the Outlaws entry says Nemeth and the manager
+should be. A tenth claim, the Doobie Brothers' 6,000, could not be reached at all: archive.org
+answers 500 for `talisman1974west_djvu.txt` while listing it in the item's own metadata, a
+host-side fault. A miss is not evidence of absence and is never grounds for a cut.
+
+## What this pass added
+
+**The legislation archive had no validator.** `check_data.py` has guarded `data/documents/`
+against a blocked download landing as a `.pdf` since the day that happened, and guards the
+photographs the same way. `data/legislation/` — 1,111 PDFs, the largest mirrored surface on the
+site, rendered onto every year page — was checked by nothing at all, despite being rewritten by
+a harvester every semester. That is trap 7's exact habitat.
+
+Audited by hand first, and it is clean: 1,111 entries, 1,111 files, every one real (`%PDF`), no
+missing file, no orphan on disk, no file named by two entries, and all 721 dated entries falling
+inside their own session. So the guard is added over a surface already in good order, which is
+the only safe time to add one.
+
+`check_legislation` now checks seven things: file present, file genuinely a PDF, every required
+field non-empty, the session a year the archive knows or `governing`, the file stored under its
+own session folder, no file claimed twice, and no PDF on disk that no entry names — a harvest
+that fetched and never indexed, which reads as success at the time.
+
+Each of the seven was fault-injected and confirmed to fire before the tree was restored. A
+validator that has never failed is trap 7 wearing the uniform of the thing it guards against.
+
+## Also swept, nothing found
+
+- **Every event date against its academic year.** 48 events sit before their year opened and 3
+  after it closed. The 48 are the archive's settled convention and not an error: the April
+  election that chose a president is filed with the year they served, which is where a reader
+  looks for it. Read individually rather than in bulk; no misfiling found.
+- **Legislation sessions against the spring-election trap.** All 721 dated pieces sit inside the
+  session that passed them. Zero out by a year.
+
+## Checks
+
+`build.py` clean and leaves no drift in `data/`. `check_data.py` and `check_contrib.py` exit 0.
+`check_duplicates.py` returns the same four pairs as every recent pass — 1971-72, 1991-92,
+1997-98, 2003-04 — untouched here and still four genuine two-stage sequences.
+
+61 years, 1,964 events, 60 presidents. 2,650 recorded terms held by 1,809 people, 2,613 (98%)
+carrying an account of what the person did; 48 people under more than one spelling. 308 documents,
+1,111 legislation files, search index 4,945 records. No count moved: nothing was cut, because
+nothing was proposed and nothing published failed.
+
+## For the owner
+
+The stored brief is stale in the same four places, now for the twelfth pass: `gh` is not installed
+in these containers, and `git` is credentialed without it (pushes and the GitHub tools both work
+this pass, so REVIEW-ONLY was not needed); #6, #7 and #8 closed on 18 August; four research
+routines are described as running when one is; and the REVIEW-ONLY drop box's `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are both absent from this environment, so that fallback would fail if a
+pass ever reached for it.
+
+The research pipeline is still the thing that is stopped. The review pipeline is healthy and has
+now spent several consecutive passes auditing a site that nothing new is arriving at.
+
 # 23 September 2026 (editor, fourth pass) — an empty board, and the photograph bar audited from the outside
 
 ## What was open

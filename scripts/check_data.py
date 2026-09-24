@@ -262,6 +262,68 @@ def check_photos(ys):
              + (" ..." if len(missing) > 8 else ""))
 
 
+def check_legislation(ys):
+    """The legislation archive is the biggest pile of mirrored files the site
+    serves - 1,111 PDFs rendered onto the year pages and into legislation.html -
+    and until now nothing looked at it. data/documents/ has been guarded against
+    a blocked download landing as a .pdf since the day that happened; this is the
+    same guard on the larger surface, plus the two failures peculiar to an index
+    that a harvester rewrites every semester. A file on disk that no entry names
+    is a harvest that fetched and never indexed; an entry naming a file that is
+    not there is the reverse. Both read as success at the time."""
+    index = ROOT / "data" / "legislation.json"
+    if not index.exists():
+        bad("data/legislation.json is missing")
+        return
+    entries = json.loads(index.read_text()).get("entries") or []
+    root = ROOT / "data" / "legislation"
+    ids = {y["id"] for y in ys}
+    named = Counter()
+
+    for e in entries:
+        f = e.get("file")
+        where = f"legislation {f or e.get('title', '?')[:40]}"
+        for field in ("session", "type", "title", "file", "source_url"):
+            if not str(e.get(field, "")).strip():
+                bad(f"{where}: no {field}")
+        if not f:
+            continue
+        named[f] += 1
+        path = root / f
+        if not path.exists():
+            bad(f"{where}: file missing")
+        elif not is_pdf(path):
+            bad(f"{where}: not a PDF. A blocked download saves the bot-check "
+                f"page under the right name")
+        # A session is an academic year the archive knows, or the undated
+        # governing documents. Anything else renders onto no year page.
+        s = e.get("session")
+        if s and s != "governing" and s not in ids:
+            bad(f"{where}: session {s!r} is not a year in the archive")
+        elif s and not f.startswith(f"{s}/"):
+            bad(f"{where}: filed under {s} but stored at {f}")
+        # SGA legislates within the session that passed it. A date outside it
+        # is the spring-election trap wearing different clothes: the session
+        # runs July to June, and April belongs to the session still sitting.
+        d = e.get("date")
+        if d and s and s != "governing":
+            if not DATE.match(str(d)):
+                bad(f"{where}: date {d!r} is not YYYY-MM-DD")
+            else:
+                start = int(s[:4])
+                if not (f"{start}-07-01" <= d <= f"{start + 1}-06-30"):
+                    bad(f"{where}: dated {d}, outside session {s}")
+
+    for f, n in named.items():
+        if n > 1:
+            bad(f"legislation: {n} entries name the same file {f}")
+    on_disk = {str(q.relative_to(root)) for q in root.rglob("*.pdf")}
+    for f in sorted(on_disk - set(named)):
+        bad(f"legislation: {f} is on disk but no entry names it, so it reaches "
+            f"no page. A harvest that fetched and never indexed looks like this")
+    note(f"{len(entries)} pieces of legislation, every file present and a real PDF")
+
+
 def check_counts(ys):
     n_ev = sum(len(y["events"]) for y in ys)
     pres = {l["name"] for y in ys for l in y["leaders"] if l["role"] == "president"}
@@ -279,7 +341,8 @@ def main(argv):
     data = json.loads((ROOT / "data" / "years.json").read_text())
     ys = data["years"]
     for fn in (check_years, check_events, check_leaders, check_seat,
-               check_files, check_photos, check_counts):
+               check_files, check_photos, check_legislation,
+               check_counts):
         fn(ys)
 
     if not quiet:
