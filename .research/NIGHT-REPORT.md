@@ -31990,3 +31990,75 @@ rather than a blocked one. Most of the TopSCHOLAR queue is untried under the Way
 the `_topscholar-wanted.json` file still lists nine names other routines have since portrayed.
 The F247 1990-91 executive committee folder still needs somebody in the reading room, and the
 hold note on a living person in `data/photo-finds/_for-the-editor.md` still stands.
+
+# 24 September 2026, midday — the editor's pass: an empty board, and main checked from the outside
+
+## The board
+
+Nothing to review. No pull request is open, and none of the branches any routine still feeds
+carries anything `main` lacks. `research-photos` is level with `main` to the commit. The last
+merge was #581 at 09:26 this morning, and it went in with a full editorial review attached —
+six portrait claims opened one by one, one correction pushed before the merge, nothing cut.
+I re-read that review against the merged diff rather than take it on trust, and it holds.
+
+Since nothing needed the spot-check, I spent the pass proving the published site is what the
+data says it is.
+
+## What I checked instead
+
+`build.py` is reproducible: rebuilding from a clean checkout leaves `site/` byte-identical to
+what is committed, so nothing has drifted between the data and the pages Vercel serves.
+`check_data.py`, `check_contrib.py` and `build.py` all exit clean.
+
+`check_duplicates.py` reports the same four pairs it has reported for days — the designated
+driver cards, Bill #92-01-S and its failure, the Civil Liberties Union suit and its endorsement,
+the two stages of the plus/minus grading fight. All four are separate events weeks or months
+apart. No merges.
+
+**The photograph bar works end to end.** The build withdrew one photograph, and I traced it
+rather than trusting the count: `1991-92-stacy-kitchens.jpg`, barred on 22 September because the
+identification rested on an uncommon surname and a class year and no caption. The file is still
+on disk in `data/photos` so the portraits routine can go on reviewing it, it is named in
+`_do-not-use.json`, and it is not served. Nothing in `photos.json` points at a file the site does
+not carry, so the bar costs the site no broken image.
+
+**All 1,202 served photographs are real images.** I read the magic bytes of every file under
+`site/photos`: every one opens `FF D8` or `89 50 4E 47`, none is under a kilobyte. This is the
+check that catches a blocked download saved as a `.jpg`, which has happened on this project
+before, and it is clean.
+
+The previous pass left one suggestion for this one: that a portrait taken from a composite of a
+different year should say in its label that the identification is a name match across years. I
+read the four entries it was aimed at. The Forsythe and Nitzken labels already give the year gap
+and already say the identification rests on the printed name label under the face. They are
+honest as they stand, and rewriting merged, verified text without a new source is churn. Left
+alone.
+
+## Merged, and cut
+
+Nothing merged, because nothing was open. Nothing cut.
+
+## Still open
+
+Unchanged from this morning. The five year-photograph gaps (1994-95, 1995-96, 2000-01, 2005-06,
+2008-09). The F247 1990-91 executive committee folder, which needs somebody in the WKU Archives
+reading room. The hold note on a living person in `data/photo-finds/_for-the-editor.md`. Most of
+the 32-item `_topscholar-wanted.json` queue is still untried under the Wayback method that
+reopened yesterday.
+
+**Nine of the eleven routines are still off, as they have been since 4-5 August — seven weeks.**
+Read from the scheduler, not inferred: only **editor** (every three hours) and **portraits**
+(every six) are enabled. The six decade routines, the legislation harvest, the backlog, the
+senate rolls and the person profiles are all disabled. That is the whole reason the board keeps
+coming up empty, and it is why the editor wakes eight times a day to find nothing to do. The
+portraits routine did break a long dry run this morning with three new faces, so the one routine
+still running is producing again. Whether to switch the research routines back on, or to slow the
+editor to match the work that actually arrives, is the owner's call and it has been sitting
+unasked for seven weeks.
+
+## The numbers
+
+61 year pages, 7 decade pages, 308 documents, 1,111 legislation files, a search index of 4,945
+records. 61 years and 1,964 events; 60 people have been president. 2,650 recorded terms of office
+held by 1,809 people, 2,613 of them (98%) with an account of what the person did, and 48 people
+recorded under more than one spelling. 1,202 photographs served.
