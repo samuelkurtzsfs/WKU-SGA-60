@@ -7213,6 +7213,42 @@ rather than trust either finding, and should not spend the run re-checking those
 Cloudflare "Just a moment..." challenge on `article=5695`, tested independently. That is where
 2005-06 and 2008-09 remain.
 
+### Photograph run of 24 September (third pass, scheduled): this morning's `web.archive.org` bypass closed again by evening
+
+PR #581, merged this morning (~09:26 UTC), found that fetching a `digitalcommons.wku.edu`
+`viewcontent.cgi` URL through a `web.archive.org` snapshot returns the real file, bypassing
+Cloudflare, and used it to land four portraits (Eileen Forsythe, Shelby Nitzken, Ben Redmon, plus
+a better-sourced Jeanne Johnson photograph). This run, several hours later, tried to continue
+through the rest of `data/photo-finds/_topscholar-wanted.json` with the same method and could not
+reach `web.archive.org` at all: eight attempts, spaced 30 seconds to several minutes apart, across
+three different URL shapes, every one `curl: (35) Recv failure: Connection reset by peer`, the
+agent-proxy's own log showing the tunnel dying at 10-11 seconds every time having sent the request
+and received 39 bytes back. That's a hard shut, not this morning's roughly-50/50 intermittency.
+`viewcontent.cgi` direct is still the same Cloudflare 403 it has been all month. Plain
+`archive.org` (not the Wayback host) stayed open the whole run, confirming the two hosts fail
+independently — don't infer one's state from the other.
+
+Baseline reconfirmed first, as always: all four named presidents, every president/regent in the
+archive, all still carry a portrait; `merge_photo_finds.py` proposes nothing new (18 held
+FACE-PROVED-PERSON-NOT-PROVED candidates, unchanged, not resolvable from this end).
+
+Pruned `data/photo-finds/_topscholar-wanted.json` from 32 entries to 15, removing everything this
+morning's run and earlier routines already resolved from other sources (Forsythe, Nitzken, Redmon,
+Martin, Wingate, Starkey, Vasilijevic-Klingler, Mitchell, Jury, Shaw, Jeter, Sutton, and the rest).
+The 15 that remain are genuinely still open and still blocked by the closed routes: Mallory Treece,
+Lisa Kappler, Mitchell Stevens, Kelly Johnson/Brooke Smith/Kristin Hartley, Emilee Bishop/Lucas
+Humble/Matt Holland/Tim Hill, Alex Wimsatt, Emilee England/Cacy Schooler/Jacob Miers, Katherine
+Smith, a 25-name `talisman/` collection lead, and the 2015-16–2019-20 senate/justice worklist.
+Corey Bewley and Timothy Gilliam are also still listed (their entries share a source item with an
+unresolved name) but are already ruled out — Bewley's article ran with no photograph, Gilliam's
+only lead is four years off his recorded service — so neither needs another attempt.
+
+**For the next run:** test the `web.archive.org` bypass fresh at the start of the session rather
+than trusting either this note or this morning's — it is opening and closing within hours, the
+same pattern `viewcontent.cgi`'s own Cloudflare gate has shown all month. Full detail in
+`.research/photo-run-2026-09-24-third.md`. `data/years.json` untouched; `build.py` and
+`check_data.py` both pass clean.
+
 ## 9. Restarting a session
 
 ```bash
