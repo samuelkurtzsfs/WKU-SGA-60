@@ -31541,3 +31541,141 @@ was added to or removed from `data/` this pass.
   Joe Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig and Chris Gaddis
   in the 1989 *Talisman*; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000
   legislation gaps.
+
+# 24 September 2026 — the editor's pass: an empty board, the officer layer audited for the first time, one duplicate off the site
+
+No pull request was open. The board has been clear since #576 merged last night, and no branch on
+origin carries anything `main` lacks — the six decade branches and `research-photos` all diff
+*negative* against `main` (627,000 deletions apiece for the decade ones, which are the orphan
+4 August snapshots `AGENT-LANDING.md` warns against merging, and 97 deletions for `research-photos`,
+which is simply behind on this file). Nothing arrived to review, so this pass audited what is
+already published.
+
+## The stratum nobody had checked
+
+Previous passes have audited the events (ten hard claims re-opened on 23 September), the leader
+layer, the photograph register and the ordinals. The **officer layer** had only ever been checked
+for portrait coverage, never for whether the offices themselves are what their sources say. It is
+the largest unaudited surface on the site: 949 officer slots across the executive and senate
+arrays, and `CLAUDE.md`'s own trap list calls a committee chair recorded as an officer "the single
+commonest error", the one that killed all 39 false missing-president claims.
+
+It holds up well. All 949 slots carry a `src` — not one is unsourced. The committee titles in
+`senate.officers` are recorded verbatim as chairmanships ("Chairman, Judicial Committee",
+"Chairman, Rules and Elections Committee") rather than dressed up as offices, which is the
+discipline the trap asks for.
+
+**Nine chair claims sit in the `executive` array sourced to a PDF, and eight were testable against
+the mirrored file.** PyMuPDF is not installed in these containers, which is why
+`scripts/extract_authors.py` exits on a missing import; installing it took a minute and made the
+text layer readable. All eight hold, in the document's own words:
+
+- Mark Clark — "CONTACTS: Mark Clark, Chair of the Committee of Diversity and Inclusion" (7-18-S)
+- Ian Hamilton — "AUTHOR: Ian Hamilton, Sustainability Committee Chair" (10-18-S)
+- Zachary Skillman — "Zachary Skillman, Campus Improvements and Sustainability Chair" (res 12-22-S)
+- Alex Cissell — "Alex Cissell, Student Mental Health and Wellbeing Committee Chair" (13-22-S)
+- Shelby Robertson — "Shelby Robertson, Committee Chair for Enrollment and Student Experience" (res 1-22-S)
+- Olivia Feck — "Olivia Feck, Student Mental Health and Wellbeing Committee Chair" (36-23-S)
+- Meghan Pierce — "Meghan Pierce, LOC Chair" (10-23-F)
+- Jade Ismail — "Jade Ismail, Chair of the Action & Opportunity Committee" (17-26-S)
+
+Robertson's is worth naming because his entry looked like the trap and was not it. His `note`
+records only that he authored three pieces of legislation, which under trap 2 is no evidence of a
+chairmanship at all — a bill's author is not necessarily a member, let alone the chair. But the
+resolution he is cited to names him chair on its own author line. The note undersells its own
+evidence; the office is right. Nothing to cut, and `data/legislation-authors.json` cannot settle
+this class of question either way: it records `author` (1,080) and `sponsor` (46) and no chair role,
+so the chairmanships have to be read off the documents.
+
+## The one thing that had to come off the site
+
+The ninth claim, Ashley Cox as "CASA Chair" in 2017-18, is sourced to the senate minutes of
+12 September 2017. That document does not contain the string "CASA" — not once. What it carries is
+a committee-report line, "Student Affairs – Ashley Cox: No report."
+
+That turned out not to be a bad citation but a duplicate. Sweeping the whole officer layer for the
+same person and office recorded twice in one year returns **exactly one pair in 949 slots**: Cox
+appeared as "CASA Chair" in both the `executive` array and `senate.officers` for 2017-18. The
+published 2017-18 page named her three times — twice as CASA Chair in adjacent blocks, once
+correctly as Student Affairs Chair in the committee list — and the first of the two carried no
+explanation at all, so a reader met the unexplained title first.
+
+The `executive` copy is the one cut. Before cutting it, both copies were compared field by field
+and the cut asserted against loss: the two `profile` arrays are identical word for word, both
+sources (Bill 27-17-F and the 12 September minutes) appear in both entries, and the mirrored PDF
+`2017-18-senate-minutes-09-12-17.pdf` travels with the minutes citation in both. The surviving
+`senate.officers` copy is a strict superset — same profile, same two sources, plus the `note` that
+explains the two titles: Student Affairs in the August minutes, CASA in the autumn legislation,
+after the previous year's merger of Academic Affairs and Student Affairs. Both names are in SGA's
+own records for the same year, which is why the entry keeps both rather than choosing.
+
+A committee chair also belongs in the senate officers, not the executive. 2017-18 had a genuine
+executive **Director of Academic and Student Affairs** — the office the senate spent three meetings
+failing to fill in September 2018 — and a CASA chairmanship sitting in the same array invites
+exactly that conflation.
+
+The year page now names her twice: once as chair among the senate officers, once in the committee
+list. No source was lost; the year still cites 103.
+
+## The other sweeps, all negative
+
+- **Advance notices.** Eighteen events cite a source dated *before* the event while asserting
+  something hard. Every one is handled correctly. Several say so in terms — DEI Week 2024 ends
+  "the Herald's report predates the week and does not say how it went", and Giving Thanks November
+  the same; the 1971 Spock entry credits the *Herald* only with the booking and the 1972 *Talisman*
+  with the crowd of 1,100; the 1988 mock election and the 1991 freshman election each carry a
+  second source from the week *after*, reporting the result. The sweep found nothing to trim.
+- **The quote rule.** Zero quotations over 15 words anywhere in event titles or bodies.
+- **Campus context.** 25 of 1,964 events tagged, 1.3%. The six whose bodies mention SGA are all
+  cases where SGA is not the actor — two university presidents resigning, a centennial, two
+  building openings — which is what the tag is for.
+- **Stan McDivitt, 1974-75.** Still the one office title whose own note concedes the point: it
+  records him as Student Affairs Chairperson while saying the archive has no source for when or how
+  he came into the post, its cited *Talisman* fraternity page proving only his election to Congress.
+  `data/herald-index-full.json` returns no hit for McDivitt, McDevitt or any spacing variant. Under
+  this project's own rule a miss in an index is not evidence of absence, so this is flagged forward
+  rather than cut — a prior pass already withdrew the unsourced appointment account and left the
+  title standing with the gap declared, and there is no new evidence to overturn that judgement.
+
+## Checks
+
+`build.py` clean and idempotent — run twice, the second run leaves `data/` untouched.
+`check_data.py` and `check_contrib.py` exit 0. `check_duplicates.py` returns the same four pairs as
+every recent pass, 1971-72, 1991-92, 1997-98 and 2003-04, untouched by this edit and still four
+genuine two-stage sequences. `search.html` and the roster agree at 1,809 people, so the search
+layer did not go stale behind the edit this time.
+
+61 years, 1,964 events, 60 people have been president. **2,650 recorded terms held by 1,809 people**
+— down one from 2,651, which is the duplicate and nothing else; no person left the record. 2,613
+terms (98%) carry an account of what the person did. 48 people under more than one spelling. 308
+documents, 1,111 legislation files, search index 4,945 records.
+
+## Still open
+
+- **Nine of eleven routines have been off since 4-5 August — seven weeks.** Read from the scheduler
+  again this pass. Two are enabled: the editor, every three hours, and portraits, every six. The
+  portraits routine has now closed five or six consecutive passes without adding a photograph,
+  because the two routes that supply images are shut. So the editor is running every three hours
+  over a board that is empty because almost nothing is left to fill it. That is the state worth a
+  person's attention: the review pipeline is healthy and the research pipeline is stopped.
+- The stored editor brief is stale in the same four places, a thirteenth consecutive pass: it opens
+  with `gh auth setup-git`, and `gh` is not installed here (git is credentialed, `GH_TOKEN` is
+  present, and the push path works); it sends the run at #6, #7 and #8 as stale and open, all three
+  closed 18 August; it describes four research routines as running, when one is; and its
+  REVIEW-ONLY fallback names a drop box whose `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both
+  absent from this environment, so that fallback would not work if it were needed. It was not
+  needed. Rewriting the stored prompt is the owner's call.
+- 2005-06 and 2008-09 still sit behind the `viewcontent.cgi` challenge. 1994-95, 1995-96 and
+  2000-01 are retired as leads — no *Talisman* volume exists to search.
+- The 17 held photograph candidates in `data/photo-finds/_for-the-editor.md`, unchanged: each a
+  face proved and a person not, which under this archive's identification rule no editor publishes
+  on judgement alone.
+- Carried forward unchanged: the pre-2003 officer portrait gap; the 728 legislation entries whose
+  source URL points at a landing page; the 18 legislation files with no text layer; the 2012-13
+  Resolution 5-13-S indexing gap; the "57 regents" figure; the two *Herald* items on how Joe
+  Rains's term ended; the `Amber Daniels` / `Amber Daniel` pair; Mickie Hennig and Chris Gaddis in
+  the 1989 *Talisman*; Mary Fyfe; the 1999-00 Coates investigation outcome; and the pre-2000
+  legislation gaps.
+- New, small: PyMuPDF is absent from these containers, so `scripts/extract_authors.py` cannot run
+  as shipped and the legislation text layer is unreadable until someone installs it. Worth a line
+  in the setup script if the legislation work resumes.
