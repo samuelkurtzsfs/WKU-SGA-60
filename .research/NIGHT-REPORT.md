@@ -32187,3 +32187,130 @@ president. 2,650 recorded terms of office held by 1,809 people, 2,613 of them (9
 of what the person did, 48 people under more than one spelling. 1,202 photographs served.
 Every president and every student regent carries a profile, a portrait, a verified name and a
 source; there is no gap left in the layer this project calls its heart.
+
+# 24 September 2026, evening — two pull requests opened, verified and merged
+
+## The board on arrival
+
+Two open, both from today: **#583**, the ten autumn-2026 entries, and **#584**, the afternoon's
+citation audit and report. #6, #7 and #8 — which the stored brief still sends every run to rescue
+and merge — have been closed since 18 August. I confirmed the date from #8's own `closed_at`
+rather than from the last pass's word for it. That instruction has been chasing nothing for five
+weeks and should come out of the brief.
+
+## #583 — merged after two cuts
+
+I opened all five cited *Herald* articles and read them against all ten entries rather than the
+sample of eight the brief asks for. Ten entries, five sources, every factual claim checked.
+
+**Eight entries hold exactly.** Budget figures, the nine sworn-in chairs name by name, the
+Organizational Aid terms down to the thirty-point scale and the ten-person committee, the poster
+rules at twenty inches and two to a floor, amendment 10.1.2, Resolution 4.6 F's unanimity and its
+authorship, the syllabus statement, Carter Smith's seat on a curriculum committee that had just
+doubled its student representation. The handling of the raffle discrepancy — 1,744 in the meeting
+report, 1,174 in the editorial board interview, both given, both cited — is exactly the right
+instinct, and both figures are where the entry says they are.
+
+**Two entries had gone past their sources.**
+
+The **Constitution Fest** entry was titled "marks two signings" and had the festival marking SGA's
+own founding constitution of 1966 alongside the 1787 signing, as part of the sixtieth-year
+programme. I checked the 19 September article for 1966, for SGA's constitution, and for the
+anniversary separately. None of the three is in it. The article is about Constitution Day and the
+1787 signing. The sixtieth year is true of SGA this autumn and is sourced elsewhere in the year,
+which is exactly what makes the error easy to make and worth catching: a true fact attached to an
+event whose source does not support the attachment is still an invention. Cut. The same entry made
+the Department of Political Science a co-host, where Lasley describes it as having partnered with
+SGA and the American Democracy Project, and the hosting sentence names SGA and the ADP alone.
+The painted canvas turned out to be *better* sourced than the entry claimed — the design was
+donated by the artist Craig Lonas — so that one gained a name rather than losing a clause.
+
+The **fall election** entry carried three facts that are in no source: voting opening **on TopNet**,
+results **to be read in the chambers and streamed on Instagram**, and **six seats contested, three
+of them freshman seats**. The 23 September report gives opening and closing times and four
+candidate counts and nothing else; no platform, no announcement arrangements, no seat count
+anywhere. This is the advance-notice trap wearing a different coat. The entry was scrupulous about
+the thing everyone watches for — it refused to write a result for an election still open, and the
+pull request flagged that refusal — and then furnished the mechanics of that same unfinished
+election from somewhere other than the page. The discipline was applied to the headline risk and
+not to the sentence beside it. Worth the researching routines' attention: *the entry you have
+consciously held back is the one whose neighbouring clauses need reading twice.*
+
+The 28-candidate figure stands; it is 20 + 6 + 1 + 1 from the article's own counts, which is
+arithmetic on the source rather than an addition to it.
+
+One wording fix: the Organizational Aid entry opened "to the Herald's editorial board" and then
+called it "the same meeting". It is the editorial board's sit-down with SGA leaders in the DSU
+conference room, not a senate meeting. Now "the same session".
+
+Traps otherwise clean. Nothing was added to `organization`, so the nine committee chairs stay in
+the event text where they belong. Carter Smith and Jackson Smith are correctly held apart and both
+are confirmed separately in the sources. No April result sits in the wrong year. No settled fact is
+touched. The rebuke to named senators was deliberately left out, and Lucas's "single parent is
+leadership" line was not used — both right calls about living people. No contributor edit in the
+diff.
+
+**Stirling / Sterling and Gabi / Gabby Pace stay flagged and unmapped.** That is correct under the
+standing rule. The *Herald* prints both spellings itself, in born-digital copy, so this is not OCR
+doubt; adding a pair to `name-aliases.json` asserts that two names are one human, and the file's own
+note demands that be done deliberately. It remains open.
+
+## #584 — merged after one correction
+
+No `data/` in the diff, so nothing here touches the archive's factual layer. It does carry
+checkable numbers, and I checked them instead of trusting them.
+
+The herald-index claims are exact: **9,965 `dlsc_ua_records` items** inside a file of 11,850 entries
+and 141,079 index lines, matching CLAUDE.md to the digit. **Sixteen triggers, two enabled** — exact.
+#6, #7, #8 closed 18 August — exact.
+
+One number was wrong, and it was the one the owner is most likely to act on. The entry said
+**"nine of eleven routines have been off since 4-5 August"** and, four lines later, that **"of
+sixteen triggers only two are enabled"**. Both cannot hold. Sixteen triggers, less three spent
+one-shot reminders from 4 August, leaves **thirteen standing research routines: two enabled,
+eleven dormant.** The undercount understated the dormancy by two beats. Corrected in the entry.
+The same "nine of eleven" figure appears in at least one earlier entry in this file; past entries
+are a dated log and I have not rewritten them, but the true figure has been eleven of thirteen
+throughout.
+
+The AGENT-LANDING.md correction stands. #583's body carried the attribution footer when I read it
+through the API, and my own comment on #583 went up with a footer included and did not stack —
+both consistent with in-transit injection. Patch once for the session link, then leave it.
+
+## The afternoon pass's judgement not to self-merge was right, and it paid for itself
+
+#583 was written and held open deliberately, on the grounds that the pass which writes an entry
+should not be the pass that clears it. Two entries in it had gone past their sources. A run that
+had cleared its own work would have put a 1966 constitution and a TopNet ballot on the live site
+this afternoon. The two-reader method is not ceremony; it caught something today.
+
+## Still open
+
+- **Eleven of the thirteen research routines have been dormant since 4-5 August — seven weeks.**
+  Only the editor (three-hourly) and portraits (six-hourly) run. This is why the board is empty
+  every pass, and it is why the live site's own current year sat five months behind while the
+  *Herald* published on SGA every week. The editor beat cannot substitute for eleven research
+  beats, and today's gap was found only because a pass went looking for work instead of waiting
+  for it. **This is the single thing most worth the owner's attention.**
+- The stored editor brief still instructs every run to rescue and merge #6, #7 and #8. They have
+  been closed since 18 August. The instruction should be removed so runs stop spending time on it.
+- `web.archive.org` is refused by this environment's network policy, leaving 107 citations
+  unverifiable from here. Plain `archive.org` is allowed and all 150 of its citations pass.
+- Sophie Stirling / Sterling and Gabi / Gabby Pace, unresolved by design.
+- The five year-photograph gaps (1994-95, 1995-96, 2000-01, 2005-06, 2008-09), the F247 1990-91
+  executive committee folder, and the hold note in `data/photo-finds/_for-the-editor.md` are all
+  unchanged.
+
+## The numbers
+
+Both merged; main rebuilt clean. `check_data.py` and `check_contrib.py` exit 0.
+`check_duplicates.py` returns the same four long-standing pairs and no new one — each is an
+introduction and its outcome, or a plan and its endorsement, and they stay separate.
+
+61 year pages, 7 decade pages, 308 documents, 1,111 legislation files, search index 4,955 records.
+61 years and **1,974 events**; 60 people have been president. 2,650 recorded terms of office held
+by 1,809 people, 2,613 of them (98%) carrying an account of what the person did, and 48 people
+recorded under more than one spelling. 1,202 photographs served.
+
+The sixtieth year is now on the record through 23 September, trimmed to what the *Herald* actually
+reports.
