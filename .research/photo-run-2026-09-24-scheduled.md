@@ -27,11 +27,18 @@ Checked the standing priorities fresh:
 of staff. The same person served as SGA's Director of Information Technology in 2007-08 and
 2008-09 (SGA Senate minutes, 29 Jan 2008 and 26 Aug 2008), and those two years had no portrait.
 Re-read the 2011 article in full to make sure the two office-holders were the same man and not a
-namesake: it is explicitly the same Charlie Harris, and the article itself recounts his IT
-director service as part of the same "legacy" story. No earlier photograph of him exists in the
-archive, so the 2010-11 file is now also attached to 2007-08 and 2008-09, with a source note
-saying plainly that it is a later portrait of the same person and that no contemporaneous
-photograph has been found. This follows the precedent already set for Nick Todd, Katie Dawson,
+namesake. **Corrected by the editor, 24 September: this run's report originally said the article
+"recounts his IT director service as part of the same 'legacy' story". It does not.** The article
+contains no mention of information technology, a website or a blog; it describes his early service
+only as a senator. What it does give is the chronology, and the chronology is what carries the
+identification: Harris is a Morganfield senior in May 2011, so his freshman year is 2007-08, and
+the article has him an SGA senator from that freshman year, resigning during his sophomore year —
+which is 2008-09, the year the archive already records the IT director's office falling vacant at
+the Senate's 28 October 2008 meeting. Full name, four-year span and the manner of his leaving all
+agree, and this is a chronological fit rather than the surname match §6.4 warns against, but the
+article does not itself name the office. No earlier photograph of him exists in the archive, so
+the 2010-11 file is now also attached to 2007-08 and 2008-09, with a source note saying plainly
+that it is a later portrait, what the article does establish and what it does not. This follows the precedent already set for Nick Todd, Katie Dawson,
 Jeanne Johnson and Reagan Gilley, whose portraits are also dated to a different year than the one
 they are filed under. No new image file was needed; only two `leaders` entries were added to
 `data/photos.json`, both pointing at the existing `2010-11-charlie-harris.jpg`.

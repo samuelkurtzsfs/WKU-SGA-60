@@ -9,15 +9,23 @@ const path = require('path');
 // This ran only on a local Mac before; a cloud container has no such app.
 // Fall back through an env var, then whatever Chromium a container actually
 // ships (Playwright's own download, or a system chromium-browser).
+// A stale or wrong PLAYWRIGHT_BROWSERS_PATH must not crash the lookup: an
+// unreadable directory means no candidates, not a thrown ENOENT in place of
+// the clear "set CHROME_PATH" error below.
+function playwrightChromiums() {
+  const root = process.env.PLAYWRIGHT_BROWSERS_PATH;
+  if (!root) return [];
+  let entries;
+  try { entries = fs.readdirSync(root); } catch { return []; }
+  return entries
+    .filter(d => /^chromium(?!_headless_shell)/.test(d))
+    .map(d => path.join(root, d, 'chrome-linux', 'chrome'));
+}
 function findChrome() {
   const candidates = [
     process.env.CHROME_PATH,
     '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-    ...(process.env.PLAYWRIGHT_BROWSERS_PATH
-      ? require('fs').readdirSync(process.env.PLAYWRIGHT_BROWSERS_PATH)
-          .filter(d => /^chromium(?!_headless_shell)/.test(d))
-          .map(d => path.join(process.env.PLAYWRIGHT_BROWSERS_PATH, d, 'chrome-linux', 'chrome'))
-      : []),
+    ...playwrightChromiums(),
     '/usr/bin/chromium-browser', '/usr/bin/chromium', '/usr/bin/google-chrome',
   ].filter(Boolean);
   for (const c of candidates) if (fs.existsSync(c)) return c;
