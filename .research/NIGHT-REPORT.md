@@ -1,3 +1,110 @@
+# 24 September 2026 (editor, third pass) — an empty board, and a guard on the 1,111 files nobody was checking
+
+## What was open
+
+Nothing. No pull request is open, and no branch on origin carries anything `main` lacks.
+`research-photos` diffs against `main` at 117 deletions and nothing else — it is behind on the
+night report, not ahead on anything. The six 4 August branches (`research-profiles`,
+`research-senate`, the three rosters, and the five decade branches) all still have **no merge
+base** with `main` and diff hugely negative, which is the orphan-history hazard `AGENT-LANDING.md`
+describes; none was touched.
+
+#6, #7 and #8 were again named in the brief as stale and open. All three closed on 18 August.
+Twelfth consecutive pass.
+
+## The spot check, run against published claims
+
+With no diff to sample, the sample came from the site. The archive carries 86 events that cite a
+*Talisman* full text on archive.org **and** assert a hard number — a crowd, a gate, a loss. That
+route is the one CLAUDE.md says is not rate limited, and it held up: six volumes fetched, ten
+claims opened against the yearbook's own words.
+
+Nine confirmed verbatim:
+
+- Stevie Wonder, Feb 1973 — "only 3,850 were on hand, and the ASG lost between $4,000 and $5,000."
+  The entry says "draws 3,850 and costs ASG up to $5,000." Correctly hedged on the range.
+- Chicago, Oct 1976 — "grossed $53,092."
+- Linda Ronstadt, Nov 1975 — "$4,300 profit for ASG."
+- Loggins and Messina, 17 Sep 1975 — "a major loss of $7,000 resulted."
+- The 1974-75 entertainment budget — "$42,000 for all forms of entertainment, the ASG set aside
+  $27,000 for two free concerts."
+- Ike and Tina Turner, Oct 1971 — "estimated crowd of 12,000 in Diddle Arena."
+- The Oct 1971 mock election — "only 1,175 of Western's" students voted.
+- Steve Fuller, 1980-81 — "Associated Student Government President Steve Fuller was also sworn in
+  as a student regent," in the same passage as the $66,000 for the president's home. Both halves
+  of the entry, including the two regent appointments, are on the page.
+- Heart, Feb 1979 — "Western made about $5,200 from the February concert."
+
+**A settled fact re-confirmed from the source rather than from this file.** The 1979 *Talisman*
+states the change outright: the Board of Regents approved it on 31 March and "funded $80,000 to
+the center board for programming," moving lectures and concerts that "had been run by Associated
+Student Government" to a rebuilt University Center Board from fall 1979, with ASG's president and
+activities vice president sitting on the new committees. §7 has it exactly right, and the
+1978-79 concerts the archive still attributes to ASG — Prine, Heart, the cancelled Outlaws date —
+all precede it, so the attribution is right too.
+
+**Three claims could not be confirmed, and none was cut.** The 1979 volume's concert spread is
+OCR-damaged past reading: the John Prine $2,000 loss, the Outlaws' 242 tickets and Heart's 5,821
+attendance are not recoverable from it, though the surrounding fragments match the entries in
+every readable particular — Prine's sellout at Van Meter and all four song titles read verbatim,
+and "Tim N", "ager heard" and "spot" sit where the Outlaws entry says Nemeth and the manager
+should be. A tenth claim, the Doobie Brothers' 6,000, could not be reached at all: archive.org
+answers 500 for `talisman1974west_djvu.txt` while listing it in the item's own metadata, a
+host-side fault. A miss is not evidence of absence and is never grounds for a cut.
+
+## What this pass added
+
+**The legislation archive had no validator.** `check_data.py` has guarded `data/documents/`
+against a blocked download landing as a `.pdf` since the day that happened, and guards the
+photographs the same way. `data/legislation/` — 1,111 PDFs, the largest mirrored surface on the
+site, rendered onto every year page — was checked by nothing at all, despite being rewritten by
+a harvester every semester. That is trap 7's exact habitat.
+
+Audited by hand first, and it is clean: 1,111 entries, 1,111 files, every one real (`%PDF`), no
+missing file, no orphan on disk, no file named by two entries, and all 721 dated entries falling
+inside their own session. So the guard is added over a surface already in good order, which is
+the only safe time to add one.
+
+`check_legislation` now checks seven things: file present, file genuinely a PDF, every required
+field non-empty, the session a year the archive knows or `governing`, the file stored under its
+own session folder, no file claimed twice, and no PDF on disk that no entry names — a harvest
+that fetched and never indexed, which reads as success at the time.
+
+Each of the seven was fault-injected and confirmed to fire before the tree was restored. A
+validator that has never failed is trap 7 wearing the uniform of the thing it guards against.
+
+## Also swept, nothing found
+
+- **Every event date against its academic year.** 48 events sit before their year opened and 3
+  after it closed. The 48 are the archive's settled convention and not an error: the April
+  election that chose a president is filed with the year they served, which is where a reader
+  looks for it. Read individually rather than in bulk; no misfiling found.
+- **Legislation sessions against the spring-election trap.** All 721 dated pieces sit inside the
+  session that passed them. Zero out by a year.
+
+## Checks
+
+`build.py` clean and leaves no drift in `data/`. `check_data.py` and `check_contrib.py` exit 0.
+`check_duplicates.py` returns the same four pairs as every recent pass — 1971-72, 1991-92,
+1997-98, 2003-04 — untouched here and still four genuine two-stage sequences.
+
+61 years, 1,964 events, 60 presidents. 2,650 recorded terms held by 1,809 people, 2,613 (98%)
+carrying an account of what the person did; 48 people under more than one spelling. 308 documents,
+1,111 legislation files, search index 4,945 records. No count moved: nothing was cut, because
+nothing was proposed and nothing published failed.
+
+## For the owner
+
+The stored brief is stale in the same four places, now for the twelfth pass: `gh` is not installed
+in these containers, and `git` is credentialed without it (pushes and the GitHub tools both work
+this pass, so REVIEW-ONLY was not needed); #6, #7 and #8 closed on 18 August; four research
+routines are described as running when one is; and the REVIEW-ONLY drop box's `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are both absent from this environment, so that fallback would fail if a
+pass ever reached for it.
+
+The research pipeline is still the thing that is stopped. The review pipeline is healthy and has
+now spent several consecutive passes auditing a site that nothing new is arriving at.
+
 # 23 September 2026 (editor, fourth pass) — an empty board, and the photograph bar audited from the outside
 
 ## What was open
@@ -31679,3 +31786,120 @@ documents, 1,111 legislation files, search index 4,945 records.
 - New, small: PyMuPDF is absent from these containers, so `scripts/extract_authors.py` cannot run
   as shipped and the legislation text layer is unreadable until someone installs it. Worth a line
   in the setup script if the legislation work resumes.
+
+# 24 September 2026 (editor, second pass) — one photograph branch merged, and a source that did not say what the report said it did
+
+## What was open
+
+One pull request, #578, "Research: photographs", opened at 02:19 this morning against current
+`main`. It has a proper merge base — this is an ordinary branch cut from today's `main`, not one
+of the 4 August orphans — so it was reviewed and merged normally. The board is empty again behind
+it.
+
+The stored brief opened, for the eleventh consecutive pass, by sending this run at #6, #7 and #8
+as "stale and open since 4 August". They are not open. I checked #6 directly rather than trust
+ten previous reports saying so: closed 18 August 2026 at 04:57, never merged. The instruction is
+dead and every pass spends a little of its run disproving it again.
+
+## The diff, and the one thing wrong with it
+
+Five files, 222 insertions. Small enough that I checked every new claim in it rather than a
+sample of eight. Two of those files were the run's own notes and a browser helper; the archive's
+own data gained exactly one thing, a portrait attached to two more years, and lost two entries
+from a candidate queue.
+
+**The photograph holds.** `data/photos.json` now carries the 3 May 2011 *Herald* portrait of
+Charlie Harris at 2007-08 and 2008-09 as well as 2010-11. I opened the article: it is real, it is
+dated 3 May 2011, it is titled as cited, and the page itself references the image file the entry
+names, so the file is genuinely the photograph published with that piece. The caption reads
+"Morganfield senior Charlie Harris is a political science major," and the frame is credited to
+Dorothy Edwards. The published crop is a valid JPEG. Carrying one portrait across several years is
+not a liberty this run invented: 217 files in `photos.json` already do it, and of the four
+precedents the report named, Jeanne Johnson's 2007 portrait already stands at 2005-06.
+
+**But the reason given for it was false.** The run report said the article "recounts his IT
+director service as part of the same 'legacy' story." It does not. The article contains no
+occurrence of "information technology", "IT director", "technology", "website", "blog" or
+"computer". It describes his early service only as a senator. That was the stated basis for
+attaching the portrait to two years it supposedly covered, so it had to be either withdrawn or
+rebuilt on what the page actually says.
+
+It rebuilds. The article has Harris an SGA senator from his freshman year, resigning during his
+sophomore year, and returning as chief of staff as a senior in May 2011 — which puts his freshman
+year at 2007-08 and his sophomore year at 2008-09, and the archive already records the IT
+director's office falling vacant at the Senate's meeting of 28 October 2008. That is the same
+resignation seen from the other side. Full name, a four-year span that fits exactly, and the
+manner of his leaving all agree; this is a chronological identification, not the surname match
+§6.4 warns against. So the entry was trimmed rather than cut. Both new citations now point at the
+article instead of the bare `wp-content` image URL, name the photographer, and say in the label
+what the article establishes and what it does not. A reader can check the caption now; against an
+image URL they could not. The report's sentence is corrected in place and marked as an editor's
+correction, so the next pass inherits the reasoning instead of a silent edit.
+
+This is the third time this month a run has been right about a fact and wrong about why. The
+photograph was always going to survive; what needed cutting was the claim about the source.
+
+## The queue cleanup was right
+
+The two Stacy/Staci Kitchens findings leave `data/photo-finds/`. `_do-not-use.json` bars both by
+filename, and `name-aliases.json` states outright that the two spellings "remain unmapped" until
+someone reads the 1991 *Talisman* page, which is still behind a bot challenge. Removing the
+candidate entries stops `merge_photo_finds.py` re-proposing a pair an editor already refused. The
+crop stays withdrawn and the two women stay unmerged, which is the whole point. The underlying
+defect the run diagnosed — `barred()` only recognising a withdrawal keyed to something beginning
+`http`, so a bar keyed to a bare filename is invisible to it — is still there and still worth
+fixing at the function rather than by clearing each stale entry as it resurfaces.
+
+## The browser helper
+
+`chromefetch.js` was hard-coded to a Mac path and cannot run in a container at all; the fix makes
+it find a Chromium. I grepped the whole file for `ignore-certificate`, `rejectUnauthorized`,
+`NODE_TLS_REJECT` and SPKI pinning and found none, so the report's account of what it refused to
+do is accurate. One defect the change introduced: `readdirSync` on `PLAYWRIGHT_BROWSERS_PATH` was
+unguarded and runs at module load, so a stale path threw `ENOENT` in place of the intended "set
+CHROME_PATH" message. Guarded, and verified it now gives the intended error.
+
+## What I left alone
+
+The pre-existing 2010-11 Harris entry still cites the bare image URL rather than the article. It
+is the same source and the same one-line fix, but it is not this branch's work and widening a PR
+to tidy neighbouring data is how diffs stop being reviewable. Recorded here instead.
+
+The eight name matches the run rejected — Cody Cox, Mark Clark, Chris Jankowski, Jessica Williams,
+Kayla Distler among them — publish nothing and so carry no risk to the site. The reasoning is
+sound, and refusing Jankowski on common-name risk rather than taking the hit is the right instinct.
+
+## Checks
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, CI `build` green on the head
+commit before merge. `check_duplicates.py` reports the same four pairs as every recent pass — the
+designated driver cards paid for and then distributed, Bill #92-01-S introduced and then failing
+after amendment, the Civil Liberties Union suit and its endorsement a month later, and the two
+stages of the plus/minus grading fight. All four are genuinely separate events weeks or months
+apart, none of them introduced by this diff, which added no events at all. No merges.
+
+## The numbers
+
+61 year pages, 7 decade pages, 308 documents, 1,111 legislation files, a search index of 4,945
+records. 61 years and 1,964 events; 60 people have been president, and all 72 president and regent
+leader entries carry a portrait — I re-derived that rather than take the PR's word for it. 2,650
+recorded terms of office held by 1,809 people, 2,613 of them (98%) carrying an account of what the
+person did, and 48 people recorded under more than one spelling.
+
+## Still open
+
+Unchanged, and none of it moved today: the five year-photograph gaps (1994-95, 1995-96, 2000-01,
+2005-06, 2008-09), 217 executive and Senate officer slots without a portrait, the F247 1990-91
+executive committee folder that needs somebody in the reading room, and the hold note on a living
+person in `data/photo-finds/_for-the-editor.md`.
+
+Three routes are still shut. TopSCHOLAR's `viewcontent.cgi` answers the 32-item
+`_topscholar-wanted.json` queue with a Cloudflare challenge, and the browser that would get past it
+cannot trust this container's TLS-interception proxy — that is a platform limit, not a script bug,
+and a future run should not spend itself re-attempting it. `web.archive.org` has now failed four
+days running, which still blocks the 1995-96 year-photograph lead at `dlsc_ua_records/9035`. And
+`archive.org`'s *Talisman* coverage is confirmed exhausted for the officer names it can reach, for
+the third independent time.
+
+The board being empty is the six decade routines and the legislation harvest being off, not the
+archive being finished.
