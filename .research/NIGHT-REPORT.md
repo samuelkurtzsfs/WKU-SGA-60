@@ -31903,3 +31903,90 @@ the third independent time.
 
 The board being empty is the six decade routines and the legislation harvest being off, not the
 archive being finished.
+
+# 24 September, evening: PR #581, four portraits, and a headline that belonged to somebody else
+
+One pull request open, #581 "Research: photographs" on `research-photos`, opened this morning
+after an earlier run closed #578 on the same branch. It has a proper merge base with `main`, so
+none of the 4 August orphan-history warning applies. `data/years.json` is untouched; the whole
+diff is `data/photos.json`, three new image files, one removed, and the build output.
+
+## What I verified
+
+Six changed portrait claims, which is fewer than eight, so I opened the source behind every one
+of them rather than sampling.
+
+The Phi Mu chapter composite, `stu_org/375`, is what it is cited as. The archive's own title for
+it reads UA1C11/105/35, matching the call number in the entries and the run of numbers the
+existing composites on `main` already follow, and its description lists the chapter row by row:
+Eileen Forsythe fourth row, first from left; Shelby Nitzken seventh row, second from left. Both
+crops on the branch carry the printed name under the oval, so the identification rests on a name
+in type and on the archivist's positional list agreeing with it, not on either alone. Forsythe
+sat in the Senate in 2008-09 and chaired Legislative Research in 2009-10, Nitzken sat in 2013-14;
+a 2011-12 composite falls inside a normal undergraduate span for both. The year gap is disclosed
+in each entry.
+
+The 2008 commencement edition, `dlsc_ua_records/6729`, is catalogued UA12/2/1 "Walk the Line."
+Its index names both columns this diff draws on. I pulled the file itself through a Wayback
+snapshot and read its text layer: page 6C of the issue of 1 May 2008 carries both portraits,
+captioned "JEANNE JOHNSON, President, Student Government Association" and "BEN REDMON, President,
+Interfraternity Council," both credited to Briana Scroggins. Date, page and caption are exactly
+as the entries claim, and Redmon's recorded 2005-06 Senate seat and Campus Improvements
+vice-chairmanship match too.
+
+## What I corrected
+
+"Leaving the Party at 10:30" is Ben Redmon's column. All three Jeanne Johnson entries — 2005-06,
+2006-07 and 2007-08 — cited it as the source of her portrait. Hers is headed "It Was the Most
+Unbelievable Experience," which is what the archive's index says and what the type under her
+photograph reads. Two of those three entries are president years, so the misattribution would
+have published a stranger's headline on a president's page. I rewrote all four entries from that
+issue to name the edition by its catalogued title and each column by its own, and left the
+photographs and every other fact in place. Nothing was cut.
+
+The replacement of Johnson's Homecoming Queen photograph is sound. The old one never captioned
+her SGA role; this one names the office in print.
+
+## The traps
+
+No events were added, so no advance notice could be written up as a report. The three new
+portraits render on their own person pages and on the network graph, never as a year's leader, so
+no senator has been lifted into an officer's place. Every name is a full name confirmed against
+its printed label and its service years, none matched on a surname. Nothing in
+`data/name-aliases.json` touches these four. No settled fact is disturbed. The commits are
+authored "SGA 60" throughout and carry no tool attribution. No contributor edit in the diff.
+
+`check_duplicates.py` reports the same four pairs as yesterday — the designated driver cards, Bill
+#92-01-S and its failure, the Civil Liberties Union suit and its endorsement, and the two stages
+of the plus/minus grading fight. All four are separate events weeks or months apart and none was
+introduced by this diff. No merges.
+
+## Merged
+
+`build.py`, `check_data.py` and `check_contrib.py` all clean. Merged #581 to `main`.
+
+## Worth recording
+
+`web.archive.org` is answering again after four days down, and the branch's own report is right
+that fetching a TopSCHOLAR `viewcontent.cgi` URL through a Wayback snapshot returns the real file
+rather than the Cloudflare challenge the live endpoint serves. I used it myself to read the 2008
+issue. Check the CDX `length` column and take the largest capture: the same URL has a truncated
+2022 record beside two good ones. This reopens the 32-item `_topscholar-wanted.json` queue that
+was closed as unreachable this morning.
+
+## The numbers
+
+61 year pages, 7 decade pages, 308 documents, 1,111 legislation files, a search index of 4,945
+records. 61 years and 1,964 events; 60 people have been president. 2,650 recorded terms of office
+held by 1,809 people, 2,613 of them (98%) with an account of what the person did, and 48 people
+recorded under more than one spelling.
+
+## Still open
+
+The five year-photograph gaps (1994-95, 1995-96, 2000-01, 2005-06, 2008-09) are unchanged; the
+1995-96 lead at `dlsc_ua_records/9035` was fetched today and turned out to be a Homecoming
+retrospective whose only photograph is a 1956 bonfire, so that one is now a checked dead end
+rather than a blocked one. Most of the TopSCHOLAR queue is untried under the Wayback method, and
+the `_topscholar-wanted.json` file still lists nine names other routines have since portrayed.
+The F247 1990-91 executive committee folder still needs somebody in the reading room, and the
+hold note on a living person in `data/photo-finds/_for-the-editor.md` still stands.
