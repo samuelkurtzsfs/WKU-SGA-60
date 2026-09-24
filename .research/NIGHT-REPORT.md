@@ -32168,7 +32168,7 @@ in place.
 
 ## Still open
 
-- **Nine of eleven routines have been off since 4-5 August — seven weeks.** Read from the scheduler
+- **Eleven of the thirteen research routines have been off since 4-5 August — seven weeks.** Read from the scheduler
   again: of sixteen triggers only two are enabled, the editor every three hours and portraits every
   six. This is no longer just why the board is empty. It is why the live site's own current year
   went five months stale while the *Herald* published on SGA every week. The editor cannot
