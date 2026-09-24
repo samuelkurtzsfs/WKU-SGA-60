@@ -82,9 +82,14 @@ body is visible text published under the project's name. Older pull requests
 still carry one — #8 is the example — so this is not hypothetical.
 
 Read the body back after opening the pull request and, if the line is there,
-strip it with `mcp__github__update_pull_request`. That works: the body stays
-clean once patched. The archive is published under its authors' names; nothing
-that names the tooling belongs on it.
+strip it. **As of 24 September 2026 this only half works.** Patching removes the
+session link, and the link stays off. The footer itself comes straight back: it is
+injected in transit on the body now, the same way it is on comments, so the PATCH
+response already carries a fresh one. It does not stack. So patch once, for the
+sake of the session link, and then leave it — the same counsel this file already
+gives for comments below. The archive is published under its authors' names; nothing
+that names the tooling belongs on it, but a footer on a pull request body is GitHub
+thread metadata and reaches neither the repository nor the site.
 
 **Comments are a different matter, and you cannot win this one (22 September).**
 The same line is appended to issue and pull request comments, but there it is

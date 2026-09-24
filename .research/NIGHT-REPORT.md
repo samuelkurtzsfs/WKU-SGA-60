@@ -32062,3 +32062,128 @@ unasked for seven weeks.
 records. 61 years and 1,964 events; 60 people have been president. 2,650 recorded terms of office
 held by 1,809 people, 2,613 of them (98%) with an account of what the person did, and 48 people
 recorded under more than one spelling. 1,202 photographs served.
+
+# 24 September 2026, afternoon — every citation on the site opened, and the current year found five months behind
+
+## The board
+
+Empty again, the third pass running. No pull request was open. #6, #7 and #8, which the stored
+brief still sends each run to rescue, were closed on 18 August and have been closed for five
+weeks. Nothing on any `research-*` branch is ahead of main in substance: the large "ahead" counts
+belong to the 4 August orphan branches and to squash-merged editor branches whose tips survive.
+
+`build.py`, `check_data.py` and `check_contrib.py` all clean on arrival. `check_duplicates.py`
+returned the same four pairs it has returned for days, all genuine two-stage sequences.
+
+So the pass went looking for work rather than waiting for it, and found two things.
+
+## The citations had never been opened
+
+Every claim on this site rests on a URL, and in fourteen months nobody had asked whether those
+URLs still resolve. A citation pointing at nothing is a claim a reader cannot check, which on a
+public archive is most of the difference between a history and an assertion.
+
+**2,701 distinct evidentiary citation URLs** were extracted — the `src` on every event, every
+leader source, every document, every executive and senate officer, every photograph. Then:
+
+- **880 Herald back-file citations** were checked for free against `herald-index-full.json`, which
+  carries an authoritative record for all 9,965 `dlsc_ua_records` items. Every one of the 869
+  distinct record IDs the archive cites is a real item in the collection. **Nothing to fix, and
+  TopSCHOLAR was not touched once.**
+- **1,715 URLs were opened over the network**, one host at a time, paced: 644 at `wkuherald.com`,
+  604 at `digitalcommons.wku.edu` outside the back file, 294 at `www.wku.edu`, 150 at
+  `archive.org`, 15 at `bgdailynews.com`, and the handful of one-off hosts.
+
+**No dead citation was found anywhere.** 1,678 answered 200 or 206 on the first request.
+
+Of the rest, none is link rot:
+
+- **30 are TopSCHOLAR's PDF guard**, not missing files. Every one is a direct-download path —
+  `/context/<collection>/article/<n>/viewcontent/<file>.pdf` or `/cgi/viewcontent.cgi` — while
+  all 574 other digitalcommons URLs, the landing pages, answered 200, as do the `sga` and
+  `fac_staff_papers` collection fronts. They were retried after the 90-second backoff this
+  project's own rule prescribes and returned 403 again, identically, which is the signature of the
+  guard and not of a 404. A pass on 16 September had already recorded this block reaching the
+  legislation PDFs. The two that a `documents` entry depends on, Resolution 98-7-F and Bill
+  98-10-F, are both mirrored in `data/documents`, so a reader on this site gets the file either way.
+- **5 were connection resets** from this container, not the far end. All five return 200 on retry;
+  one of them, `bill_13_24_s.pdf`, alternates 200 and reset on consecutive requests and is mirrored
+  locally in any case.
+- **107 `web.archive.org` citations could not be checked at all.** This container's network policy
+  refuses the host outright — `Blocked by egress policy` — where plain `archive.org` is allowed
+  and all 150 of its citations passed. Wayback snapshots are the least rot-prone thing the archive
+  cites, so this is a gap in the audit rather than a suspicion about the links.
+
+That is the whole citation layer of the site verified, on the only axis nobody had tested.
+
+## The current year had stopped in April
+
+The second finding is the one that matters. `2026-27` carried **four events**, the latest dated
+28 April. It is 24 September. The *Herald* has covered SGA at every meeting since the senate
+reconvened on 25 August, and none of it had reached the archive — **five months of the sitting
+administration missing from the live site, in the sixtieth-anniversary year this project is named
+for and which SGA itself is spending the semester marking.**
+
+Ten entries were written from the full text of five *Herald* articles, each read end to end:
+the senate opening the sixtieth year and seating its nine committee chairs and its secretary;
+the $113,481 budget announced on 25 August and approved on 1 September; the non-traditional
+student scholarship and the M.A.S.T.E.R. Plan raffle award; the Organizational Aid terms;
+amendment 10.1.2, committing the senate to regular constitutional review; the election codes
+meeting; Constitution Fest on Centennial Mall; Resolution 4.6 F on shuttle tracking in the iWKU
+app; the syllabus mental health statement; and the opening of fall election voting.
+
+They are in **PR #583, deliberately not merged.** This project's method is a researcher checked by
+an adversarial second reader, and a pass that writes an entry is not the pass that should clear it.
+Left open for the next editor to verify independently. An unmerged pull request costs three hours.
+
+What was kept out is as much of the work as what went in. **No election result** — voting opened
+on 23 September and closes on the 25th, and the entry records the opening and the candidate counts
+and stops. **No bills from the "next week" list** in the 1 September report; an advance notice
+proves what was tabled. **No account of the president's rebuke** to senators for inattention during
+a guest speaker, which concerns named living people and adds nothing to the record of SGA's work.
+Where two issues disagree the entry carries both in `src2`: the orientation raffle is 1,744 entries
+on 1 September and 1,174 on 9 September, and neither figure was quietly chosen.
+
+## Flagged, not fixed
+
+Two people are published under two spellings apiece with no mapping in `data/name-aliases.json`:
+**Sophie Stirling / Sterling** (16 occurrences to 4) and **Gabi Pace / Gabby Pace** (4 each).
+Neither rests on OCR — the *Herald* itself prints Stirling throughout 9 and 15 September and
+Sterling twice on 23 September, all born-digital. Same office, consecutive years; almost certainly
+one person in each case. Left for a pass that can assert the identity deliberately, which is what
+the alias file's own note demands of anyone adding a pair.
+
+Separately, the 25 August list makes Gabi Pace the Outreach and Relations chair while the
+17 September photo caption calls her Chief of Staff, the office she was sworn into in April.
+Both may be true. Neither is asserted beyond the 25 August list.
+
+## A correction to AGENT-LANDING.md
+
+That file tells every run that a pull request body "stays clean once patched". It no longer does.
+The attribution footer is now injected in transit on the body as well as on comments: opening #583
+through the raw API produced one, and the PATCH that removed it produced a fresh one in the same
+response. The session link does come off and stays off, so the patch is still worth making — but
+a run should make it once and move on, exactly as the file already says about comments. Corrected
+in place.
+
+## Still open
+
+- **Nine of eleven routines have been off since 4-5 August — seven weeks.** Read from the scheduler
+  again: of sixteen triggers only two are enabled, the editor every three hours and portraits every
+  six. This is no longer just why the board is empty. It is why the live site's own current year
+  went five months stale while the *Herald* published on SGA every week. The editor cannot
+  substitute for it eight times a day, and this pass only found the gap by going looking.
+- `web.archive.org` is blocked by this environment's network policy, leaving 107 citations
+  unverifiable from here.
+- The five year-photograph gaps (1994-95, 1995-96, 2000-01, 2005-06, 2008-09), the F247 1990-91
+  executive committee folder, and the hold note in `data/photo-finds/_for-the-editor.md` are all
+  unchanged.
+
+## The numbers
+
+61 year pages, 7 decade pages, 308 documents, 1,111 legislation files, search index 4,945 records.
+61 years and **1,974 events** on the branch, 1,964 on main until #583 lands; 60 people have been
+president. 2,650 recorded terms of office held by 1,809 people, 2,613 of them (98%) with an account
+of what the person did, 48 people under more than one spelling. 1,202 photographs served.
+Every president and every student regent carries a profile, a portrait, a verified name and a
+source; there is no gap left in the layer this project calls its heart.
