@@ -6,7 +6,33 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 
-const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+// This ran only on a local Mac before; a cloud container has no such app.
+// Fall back through an env var, then whatever Chromium a container actually
+// ships (Playwright's own download, or a system chromium-browser).
+// A stale or wrong PLAYWRIGHT_BROWSERS_PATH must not crash the lookup: an
+// unreadable directory means no candidates, not a thrown ENOENT in place of
+// the clear "set CHROME_PATH" error below.
+function playwrightChromiums() {
+  const root = process.env.PLAYWRIGHT_BROWSERS_PATH;
+  if (!root) return [];
+  let entries;
+  try { entries = fs.readdirSync(root); } catch { return []; }
+  return entries
+    .filter(d => /^chromium(?!_headless_shell)/.test(d))
+    .map(d => path.join(root, d, 'chrome-linux', 'chrome'));
+}
+function findChrome() {
+  const candidates = [
+    process.env.CHROME_PATH,
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    ...playwrightChromiums(),
+    '/usr/bin/chromium-browser', '/usr/bin/chromium', '/usr/bin/google-chrome',
+  ].filter(Boolean);
+  for (const c of candidates) if (fs.existsSync(c)) return c;
+  throw new Error('no Chrome/Chromium binary found; set CHROME_PATH');
+}
+const CHROME = findChrome();
+const NEEDS_NO_SANDBOX = process.getuid && process.getuid() === 0;
 // One debug port per process: the whole fleet may run this at once,
 // and a second Chrome on a taken port attaches to the first one's
 // tabs instead of its own, which corrupts both downloads.
@@ -53,6 +79,9 @@ const log = (...a) => console.log(new Date().toTimeString().slice(0, 8), ...a);
     '--no-default-browser-check', '--disable-extensions', '--mute-audio',
     '--window-size=1200,900', '--window-position=-3000,-3000',
     '--disable-blink-features=AutomationControlled',
+    ...(NEEDS_NO_SANDBOX ? ['--no-sandbox', '--disable-setuid-sandbox'] : []),
+    ...(process.env.HTTPS_PROXY || process.env.https_proxy
+      ? [`--proxy-server=${process.env.HTTPS_PROXY || process.env.https_proxy}`] : []),
     `--user-data-dir=${profile}`, `--remote-debugging-port=${PORT}`, 'about:blank'],
     { stdio: 'ignore' });
 
