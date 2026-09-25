@@ -7249,6 +7249,57 @@ same pattern `viewcontent.cgi`'s own Cloudflare gate has shown all month. Full d
 `.research/photo-run-2026-09-24-third.md`. `data/years.json` untouched; `build.py` and
 `check_data.py` both pass clean.
 
+### Photograph run of 25 September (scheduled): baseline confirmed, both TopSCHOLAR routes closed this session, `wkuherald.com` re-swept for the densest recent-year officer gaps with no new usable frame
+
+The stored brief for this trigger is still the frozen one naming Nick Todd, Katie Dawson, Jeanne
+Johnson and Reagan Gilley as portraitless. Checked directly against `data/photos.json` rather than
+trusting the note: all four, and all 73 leader records, already carry a portrait. `merge_photo_finds.py`
+(no `--write`) confirms every findings file already on disk has been fully merged — 0 portraits
+would be added, 0 replaced, the same 18 FACE-PROVED-PERSON-NOT-PROVED holds unchanged, awaiting the
+editor. Every leader (president/regent) in `data/years.json` has a portrait; four years still carry
+no year-level photograph (1994-95, 1995-96, 2000-01, 2008-09, unchanged from the 23 September
+entries above); and 217 executive/senate officer records across 45 years still lack one, concentrated
+in 1997-98, 1998-99, 2007-08, 2014-15 through 2023-24.
+
+Retested both routes this file logs as closed, fresh, before doing anything else. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+answered `403` with the Cloudflare "Just a moment..." challenge (tested against article 7724, a
+live lead for Lisa Kappler/Jacob Turner). `web.archive.org` did not reset this time — it returned
+a clean `403 Blocked by egress policy` from this session's own proxy, a different failure from
+every prior entry in this section, which all describe either a TLS reset or a Cloudflare challenge
+from the far end. Worth recording precisely because it changes the diagnosis: this was not
+WKU's CDN refusing the request, it never left this container. `archive.org` (no `www.`, the plain
+host, not the Wayback subdomain) and `wkuherald.com` were both open the whole session. Re-confirmed
+`archive.org`'s Talisman holdings by querying its own search API directly rather than trusting the
+standing list: exactly the same 19 `talisman*west` identifiers this file has logged since August,
+1943 through 1987 with the known gaps, nothing added. Neither 2008-09 (needs `viewcontent.cgi`) nor
+the 2015 Talisman `_topscholar-wanted.json` wants (needs the `talisman/` collection on
+`digitalcommons.wku.edu`) had an open route this session.
+
+With TopSCHOLAR shut, spent the run on the open route instead: `wkuherald.com`'s `/wp-json/wp/v2/`
+search, against the densest still-missing officer cohorts (2016-17, 2017-18, 2021-22, 2022-23),
+checking specifically for names not already covered by the 22 September sweep's 92-name cohort —
+Turner Reynolds, Elizabeth DeLozier, Zachary Skillman, Garrett Baum, Maksim Zaepfel, Alexis Mayne,
+Nicole Massarone, Tribhuwan Singh, Cody Cox, Ryan Richardson, Smita Peter, Mark Clark. Genuine hits
+came back for several, and two were worth opening in full: an April 2022 election-night gallery
+(`wkuherald.com/65821`, nine individually captioned frames — "Cole Bornefeld, Sam Kurtz and
+Garrison Reed hug after winning...", "SGA Chief Justice Holden Schroeder addresses the members...")
+and a September 2021 nominations story. Every person these captions actually name — Bornefeld,
+Kurtz, Reed, Holden Schroeder, Alexis Courtenay — already carries a portrait in `data/photos.json`,
+so the gallery confirms existing sourcing rather than adding to it. The remaining hits (Garrett
+Baum, Elizabeth DeLozier, Mark Clark, Smita Peter) all resolved to the same September 2022
+executive-cabinet group photo already on file from an earlier pass or to un-captioned images with
+no name in the caption or surrounding text — per the standing rule, an uncaptioned frame is not
+usable whatever it appears to show, so none of these were added. Zachary Skillman, Maksim Zaepfel,
+Alexis Mayne and Tribhuwan Singh returned zero hits on `wkuherald.com` at all. Nothing tried this
+run overlapped with a route the file already marks closed by publication gap (1994-95, 1995-96,
+2000-01's Talisman absence) or by pre-2011 index coverage (2008-09 is before `wkuherald.com`'s
+WordPress-era search, confirmed again by the complete absence of pre-2011 hits across every name
+searched this run, consistent with every prior entry in this section).
+
+No file was added to or removed from `data/photos.json` or `data/photos/`. This run's only change
+is to this file. `build.py` and `check_data.py` both pass clean (61 years, 60 presidents, all
+still portrayed). Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
