@@ -32758,3 +32758,67 @@ summer." It now reads the summer of 2024.
 Landed as **#592**. Build, `check_data.py` and `check_contrib.py` all exit 0, and both the year page
 and Lucas's officer page were re-fetched from the live site afterwards and carry none of the old
 wording. Three fixes across #590 and #592, not two.
+
+---
+
+## 25 September 2026 — the editor's late pass: a primary that never happened
+
+One pull request open, **#594**, the rolling photograph run's second pass of the day. Small,
+careful work, and correct in almost every particular: the crop of three captioned headshots it
+landed for 2005-06 is exactly what it claims to be. `dlsc_ua_records/3684` was fetched directly
+and is *College Heights Herald* Vol. 81, No. 36 of 14 March 2006; its own viewcontent link gives
+article 4689, confirming the landing-page/article-id mismatch the run documented; the index line
+reads "Three Candidates Run for President"; and the image, read at full size, prints **Josh
+McCubbins**, **Kara Ratliff** and **Robert Watkins** under their own faces. 2005-06 was one of
+five years with no photograph at all. Four remain: 1994-95, 1995-96, 2000-01, 2008-09.
+
+**What was cut.** The caption described the three as "the candidates in SGA's April 2006
+presidential primary." There was no April 2006 presidential primary. The *Herald* of 30 March
+2006 (`dlsc_ua_records/3682`) ran "Student Government Association Primary Vote Canceled" beside
+"Spring Elections Postponed", and this archive's own entry of 13 April 2006 has Watkins beating
+Ratliff in the general election, McCubbins unmentioned in the result.
+
+This is the advance-notice trap in a shape the standing warning does not quite cover. The rule as
+written guards against writing a crowd size or a result out of a notice printed beforehand. Here
+nothing about the outcome was claimed. What was claimed was the *shape of the race* — that it
+would be run as a primary — and that came from a story printed sixteen days before the machinery
+changed. A notice proves what was announced, and an announcement about how a thing will be done
+can be overtaken exactly as an announcement about what will happen can be.
+
+Trimmed, not deleted. The caption now says the three declared for president in March 2006 and
+stops there; the sentence on Watkins winning that April and resigning that November stands on the
+13 April *Herald* report and the Senate minutes of 28 November 2006, both already in the record.
+The source label was corrected to the article's real headline, the file renamed off the word
+primary, and both research notes fixed with the 30 March citation written in, so the next
+photograph run does not inherit the error. Landed as **#594**.
+
+**A flag closed rather than left open.** The run flagged the 15 March 2005 date on the McCubbins
+and Ratliff portraits as a possible transcription slip, a year earlier than it expected. It is
+not a slip: `dlsc_ua_records/8961` is a *Herald* special edition of that date devoted to the SGA
+election and names them both. They had each run for office a year before the presidential race.
+Written into the notes so that a later pass does not "correct" a correct date.
+
+**Also checked and cleared.** Robert Watkins carries a portrait filed under 2003-04 as well as
+2006-07, which reads at a glance like a duplicate person or a stray. It is neither: he was
+Speaker of the Senate in 2003-04, and the column beside the crop says so. None of the three are
+in `name-aliases.json` and none needed to be. The branch's single commit is authored `SGA 60`
+and carries no tool attribution.
+
+**Elsewhere.** `research-2026-27-fall` holds two commits that are not on main by ancestry, but
+its 2026-27 record is identical to main's fourteen entries: already landed through #591, nothing
+outstanding. The five large `research-*` branches — profiles, senate, backlog and the three
+rosters — still have **no merge base** with main. They are the 4 August snapshots of the
+superseded repository, and merging one would delete the full *Herald* index, the alias file and
+the contributor layer. Left alone, as the landing notes require.
+
+**The lesson worth keeping.** The cancellation was already in this repository. It sits in
+`herald-index-full.json` under 30 March 2006, two issues past the one being worked on, and a
+sweep of the weeks either side of a dated source would have surfaced it in a second at no cost to
+TopSCHOLAR. The local index is not only for finding things; it is for finding out what happened
+next.
+
+Counts after the merge: 61 years, **1974 sourced events**, 60 people recorded as president,
+2650 terms of office held by 1809 people, 2613 of them (98%) with an account of what the person
+did, 73 portraits and **70 year photographs**, 1111 pieces of legislation with every file present
+and a real PDF, 308 documents. `build.py` clean, `check_data.py` and `check_contrib.py` both
+exit 0, `check_duplicates.py` four pairs, all pre-existing and all genuinely separate events.
