@@ -77,7 +77,8 @@
    "Alex Wimsatt",
    "Amanda B. Allen",
    "Cherieth L. Lineweaver"
-  ]
+  ],
+  "note": "CLOSED, 25 September 2026. The landing page's own viewcontent link gives article=4689, not 3684 as the record-page URL number wrongly suggests (a trap: the landing-page slug and the viewcontent.cgi article id are different numbering systems on TopSCHOLAR and must not be assumed equal - confirmed again here after 7666/7724 and 6645/7666 showed the same mismatch pattern). Fetched article 4689 whole via the web.archive.org id_ bypass (3.9 MB, opens cleanly). Page 9 ('SGA: Elections held in April') carries three clean, individually captioned headshots - Josh McCubbins, Kara Ratliff, Robert Watkins - the three presidential primary candidates; all three already have portraits in photos.json from other sources, so this added no new officer coverage, but the crop was landed as the 2005-06 year-scene photograph (a Priority 4 gap) since it is SGA's own election. Alex Wimsatt is not named anywhere in this issue (checked visually, page 1 and page 9; the text layer is too garbled to trust a search on its own). Amanda Allen and Cherieth Lineweaver appear only in running text (declared candidates for administrative vice president in a separate paragraph) with no accompanying photograph. This issue is exhausted; do not refetch it for Wimsatt, Allen or Lineweaver."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6645",
@@ -89,7 +90,8 @@
    "Jessica VanWinkle",
    "Cacy A. Schooler",
    "Jacob Miers"
-  ]
+  ],
+  "note": "Fetched whole, 25 September 2026 (article 7666, 20.9 MB via the web.archive.org id_ bypass, opens cleanly, 17 pages of real text). This issue's SGA coverage is the presidential-result story ('Johnson keeps presidency') with a captioned photo of Jeanne Johnson (already has a portrait) and one of losing candidate Kendrick Bryan; no senate-candidate mugshot grid anywhere in it and none of Fisher, Eclov, England, Schooler or Miers appear by name. The senate-candidate grid this entry was hoping for is not in this issue; do not refetch 6645 for these six names."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6644",
@@ -99,7 +101,8 @@
    "Drew Eclov",
    "Emilee England",
    "Jessica VanWinkle"
-  ]
+  ],
+  "note": "Fetched whole, 25 September 2026 (article 7667, 23.3 MB via the web.archive.org id_ bypass; curl reported an HTTP/2 stream warning but the full byte count arrived and the PDF opens, with a handful of individual objects throwing 'not a stream' errors that did not block extraction). This issue covers a bookstore-deadline SGA resolution and a mock gubernatorial election; no senate-election result story and none of Fisher, Eclov, England or VanWinkle (as a subject rather than byline) appear. Not the right issue for this cohort; do not refetch 6644 for these four names."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/8633",
