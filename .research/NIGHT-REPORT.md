@@ -32968,3 +32968,104 @@ Counts after the merge, unchanged from the morning because nothing in `data/` mo
 2613 of them (98%) with an account of what the person did, 1111 pieces of legislation with every
 file present and a real PDF, 308 documents. `build.py` clean and reproducible — the tree is
 unchanged after a rebuild — `check_data.py` and `check_contrib.py` both exit 0.
+
+## 25 September, the editor's night pass: one meeting written up twice, nine times over
+
+**What was open.** Nothing. `gh` is not installed in these containers, as the landing notes say,
+so access was probed the way that file prescribes: `git push --dry-run` returned a clean
+`[new branch]`, which is write access, and the GitHub tools listed the board. Open pull
+requests: none. The stored brief still names #6, #7 and #8 as stale branches wanting rescue.
+They were closed on 18 August and the numbering is now in the 590s; that paragraph has been
+wrong for five weeks and every run since has said so.
+
+No branch was carrying unlanded work either. `research-photos` has a zero content diff against
+main outside `site/`, and every other `research-*` branch is *behind* main rather than ahead of
+it — already merged, now stale. The five large ones from 4 August still have no merge base and
+were left alone, as the landing notes require.
+
+**So the queue was empty, and the pass went to what is already published.** A run on 24 September
+opened every citation on the site and found them resolving. That is a different question from
+whether the source says what the entry says, and a different question again from whether the
+archive says the same thing twice.
+
+**Nine pairs, one event each.** `check_duplicates.py` compares the words in two titles. Its own
+docstring explains why whole-title matching fails; the same argument defeats word matching, and
+it had been defeating it in plain sight. "Three senators removed for excessive absences" and
+"Three senators removed from the Senate after second censure" are the near miss. "DEI Week
+funded, a different theme for each day" and "Four bills fund a month of events, and one of them
+takes a fight" share no word at all. Both pairs were one meeting, told twice.
+
+The tell is not the wording, it is the citation. Two entries drawn from the same single article,
+dated a day or two apart, are one pass filing under the date the meeting was held and another
+filing under the date the *Herald* printed it. Twenty-three such pairs were dated the same day,
+which is normal — several bills at one meeting are several events, and the rule protecting that
+is not in doubt. Twenty-three more were dated one to three days apart. Reading the bodies rather
+than the titles separated them: eight carried the same bill number, sum or vote tally in both
+halves and were the same business, and the rest were genuinely different items from one meeting.
+
+Merged, each into the entry whose date the source actually supports, with every sourced fact from
+both kept:
+
+- **2012-13** the athletic-fee resolution (25 and 26 April 2013)
+- **2020-21** the outreach and safe-driving signs (9 and 11 February 2021)
+- **2023-24** the fire-drill resolution (14 and 15 November 2023)
+- **2023-24** the four March funding bills (13 and 25 March 2024)
+- **2024-25** the school safety bill and the swearing-in (1 and 2 October 2024)
+- **2024-25** the Gordon Wilson elevator (25 and 26 February 2025)
+- **2024-25** the three senators removed (6 and 7 November 2024)
+- **2025-26** the Gilbane housing partnership (2 and 5 April 2026)
+
+**Three errors fell out of the merging, which is the argument for doing it by hand.**
+
+The fire-drill pair disagreed about the building. One entry had the drills at DSU, the other in
+the residence halls. The source (wkuherald.com/73874) says neither: it says "the fire drill time"
+and names no building at all. DSU appears in that article exactly once, as DSU 2045, the SGA
+office where toy-drive donations were to be dropped off. Both entries had specified a place the
+*Herald* did not, and one of them had borrowed it from a sentence about wrapping paper. The
+merged entry says fire drill time and stops.
+
+The athletic-fee pair disagreed about the year. One had WKU joining Conference USA "that July",
+meaning 2013; the other had 1 July 2014. The article gives 1 July 2014, and the first reading was
+simply wrong. Opening it also settled the date both entries had missed: the story, published
+Friday 26 April 2013, says the resolution passed "on Tuesday", which is **23 April 2013**. Neither
+25 nor 26 April was the meeting. The merged entry is filed under the 23rd, with the resolution's
+own figures — $80,000 paid into the Sun Belt against $40,000 returned, and Todd Stewart's
+expectation of $1m to $1.5m a year in Conference USA — which only one of the two halves carried.
+
+The 2020-21 pair overclaimed. Its title said the QR-code and safe-driving signs "went up round
+campus"; the source reports the senate *funding* them. Nothing in it says anything was installed.
+The merged entry says the bills passed, which is what the article proves.
+
+**One date aligned, no merge.** 2022-23's election-reform roundup was filed under 22 March 2023,
+the day it was printed; it reports the meeting of Tuesday the 21st, where the Afro-Latinidad
+entry already sits. Moved to the 21st. Both entries stay: bills 39-23-S and 41-23-S are real
+business that the dedicated entry does not cover, and same-meeting legislation stays separate.
+
+**The detector now catches this without an editor.** `check_duplicates.py` has a second pass that
+ignores wording entirely and reads the citation: same single article, dates one to three days
+apart, a shared bill number, sum of money or vote tally. Run against main as it stood this
+morning it flags eight of the nine pairs above. Run against the corrected file it flags one, the
+2026-27 pair sharing only "Jakob Barker" and "Vice President" — a syllabus statement on 22
+September against voting opening on the 23rd, genuinely two things, left alone. It reports; the
+editor still judges. The ninth pair, the March 2024 DEI week, sat twelve days apart and is outside
+that window; it surfaced from a sweep for advance notices instead, and the honest reading is that
+the citation test catches the common shape of this error and not all of it.
+
+**Also checked and clear.** The advance-notice sweep turned up thirteen entries whose source label
+reads like a notice and whose text carries a number or an outcome. Twelve are sound, and several
+are models of the thing done right: the Pure Prairie League, Natalie Cole and Jimmy Buffett
+concerts source the *announcement* to the *Herald* and the *outcome* to the following year's
+*Talisman*, which is a retrospective and may report how the night went. The thirteenth was the DEI
+week, merged above. Presidential verification is unchanged and sound: 73 leader records, one
+unverified, and that one is Reed Morgan, whose entry correctly records him as neither president
+nor regent. The two questions `CLAUDE.md` still lists as open are not open — Lyne against Zielke
+was settled by moving Zielke to 1969-70, and David Payne is filed in 1981-82 where the Board
+minutes put him. That line in `CLAUDE.md` should come down.
+
+**Counts after the merge:** 61 years, **1966 sourced events** (1974 before, eight fewer because
+eight pairs became eight entries), 60 people recorded as president, 2650 terms of office held by
+1809 people, 2613 of them (98%) with an account of what the person did, 1111 pieces of legislation
+with every file present and a real PDF, 308 documents. `build.py` clean and reproducible,
+`check_data.py` and `check_contrib.py` both exit 0, `check_duplicates.py` four title pairs — the
+same four as every pass since September, all genuinely separate — and one same-source pair, judged
+and left.

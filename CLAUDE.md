@@ -81,7 +81,7 @@ following **spring**. If they differ, someone is missing. Mark an acting officeh
   names one under the other. Never merge them, and never let a
   portrait of one attach to the other. **They are twin sisters**, which is what the *Herald*
   of 25 April 1996 (71:56) says outright, and it is why every similarity check flags them.
-- Still open: John Lyne vs Larry Zielke 1970-71, David Payne 1982-83.
+- **The two pairs this file used to list as open are closed.** Larry Zielke's term is **1969-70**, not the 1970-71 the plaque gives: the *Herald* has him against Frank Genzianelli in the special election edition of 25 March 1969, and on 22 May 1969 has him and running mate David Porter setting out their incoming administration. John Lyne won the 1970 election unopposed and holds 1970-71 alone. **David Payne is 1981-82**, filed there on the Board of Regents minutes of 30 January 1982 as the administrative vice president who succeeded Marcel Bush on his resignation of 14 January 1982; Margaret Ragan, elected that April, has 1982-83. Both were settled before September 2026 and the entries carry their sources. Do not reopen either without a contemporaneous source that moves them.
 
 ## Search locally before you crawl
 `data/herald-index-full.json` covers the whole digitised collection with no keyword filter:
