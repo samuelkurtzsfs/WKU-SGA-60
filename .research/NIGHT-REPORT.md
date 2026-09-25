@@ -33116,3 +33116,66 @@ cohort: genuine coverage, no usable frame.
 No file was added to or removed from `data/photos.json` or `data/photos/`. `build.py` and
 `check_data.py` both pass clean (61 years, 60 presidents, all still portrayed). Landed on
 `research-photos`.
+
+## 25 September, the editor's pass: one research PR merged after a cut, and a settled fact found published wrong
+
+One research pull request was open, #599, the second photograph pass of the day. It was
+documentation only — 63 added lines across this file and §8 of `SGA-60-AGENT-INFO.md`, nothing
+under `data/`. Its merge base was exactly `origin/main`'s tip, so none of the orphan-history
+hazard applied, and all seven commits were authored `SGA 60` with no tool attribution in any
+message. `build.py` clean, `check_data.py` and `check_contrib.py` both 0, `check_duplicates.py`
+reporting the same four title pairs and one same-source pair as every pass since September, all
+genuinely separate business and none merged.
+
+Thirteen claims were spot-checked and twelve held. The archive-state figures are all correct,
+including the one that looks wrong: **57 in the line of regents** is `role == "regent" or
+held_both(...)` in `build.py`'s own `index_offices`, not a count of `also_regent`, which reads as
+44 if checked the obvious way. 61 years, 73 leader records, none without a portrait, 60 in the
+line of presidents. Both closed routes were retested rather than taken on trust: `viewcontent.cgi`
+answered 403 behind the Cloudflare challenge, and `web.archive.org` reset at 11.3 seconds with
+exactly the reported `curl: (35) Recv failure`. `wkuherald.com` answered 200 and the 2015-09-02
+article is where the entry says it is.
+
+The one cut: both files listed **Colton Hushell** among the people a captioned frame was passed
+over for because they already carry a portrait. He carries none, and holds no office anywhere in
+`years.json`, so he was never a portrait target and the reason given was wrong in both directions.
+The name itself is real and that is the part worth keeping — the Herald's caption to the results
+announcement of 20 April 2016 prints it, and the frame is already assessed and rejected in
+`data/photo-finds/_do-not-use.json`, kept there for Kate Hart, whose face is turned outward
+against his chest mid-hug. Rescued rather than deleted: the sentence now says what is true and
+records what it said before. The run's conclusion, that no usable frame was found and nothing was
+added, is untouched. Merged as #599.
+
+## The more serious find was already on the site
+
+Not #599's doing. `site/about.html` named **Sandra Norfleet under 1982-83**, which CLAUDE.md
+settles at **1981-82** with an explicit instruction not to file her forward again. `years.json`
+has had her right since August; the error was a hardcoded sentence at `build.py:3676` the
+correction never reached. The page contradicted itself two paragraphs apart — the statistics
+paragraph calls 1982-83 the one year since the seat was created for which the archive has no name
+at all, and then the settled-facts paragraph supplied one.
+
+That move had also left its links behind: the February runoff and the voided April election both
+live on 1981-82 and the prose pointed at 1982-83. Checking the rest found eight more hardcoded
+links resolving to nothing, ten in all, each new target verified against the built page rather
+than guessed. The cause is worth remembering. `_yhref` already repairs a stale anchor, first to
+another entry the same day and then by dropping the fragment, and 37 short-form refs rely on that
+and are fine; these ten were written as raw `href="y/…#e-…"` and bypass the repair entirely, so
+they rotted silently. Routing hardcoded links through `_yhref` would stop it recurring.
+
+One of those links turned up a second published error. The prose had the congress passing Bill
+85-15-F in October 1985 and ordering its own discount card. SGA's own record dates 85-15-F to
+**3 December 1985**, the same night as Resolution 85-14-F, and says it *asked that* ASG produce
+the card after the outside printer's failures that autumn. How it was voted on is nowhere in the
+archive — trap 2a exactly — so the sentence no longer claims a vote.
+
+Last, `scripts/patch_regents.py` writes `years.json` directly and still carries Norfleet under
+1982-83 along with other superseded readings; running it would revert her and several others. It
+now refuses without `--force`, with the reason in its docstring, and its table is left as it was
+so the record of what the migration did stays legible. All of it merged as #600.
+
+Counts after both merges, unchanged by either: 61 years, 1966 events, 60 people have been
+president, 1111 pieces of legislation with every file present and a real PDF, 308 documents,
+2650 recorded terms of office held by 1809 people, 2613 of them (98%) with an account of what the
+person did, 48 people recorded under more than one spelling. 0 of 114 hardcoded event links now
+broken, down from 10. Nothing else is open.
