@@ -32408,3 +32408,127 @@ branch does not touch `years.json`.
 61 years and 1,974 events; 60 people have been president. 2,650 recorded terms of office held by
 1,809 people, 2,613 of them (98%) carrying an account of what the person did, and 48 people
 recorded under more than one spelling.
+
+# 25 September 2026, early morning — an empty board, and an office given to the wrong man
+
+## The board on arrival
+
+Nothing open. `list_pull_requests` returns an empty set, and every branch on origin that carries
+real content is already in `main`: the branches still showing commits ahead of it are either the
+4 August orphan snapshots AGENT-LANDING.md warns about, which have no merge base and must never be
+merged, or single-commit branches whose commit is already on main under a squash. #586 was the last
+thing to land, at 21:25 yesterday. Main is at 7658083f and builds clean.
+
+The stored brief still opens by telling the run to check GitHub with `gh`, and still names #6, #7
+and #8 as three stale pull requests to rescue. `gh` is not installed in these containers and has
+not been; the probe that does work is `git push --dry-run`, which reported write access, so this
+run was a full one and not review-only. #6, #7 and #8 have been closed since 18 August. That is
+the sixth pass to establish it.
+
+## What was audited instead
+
+With no queue, the newest published history is the best target, so this pass re-read the fourteen
+entries of 2026-27 — the sixtieth year, landed yesterday in #583 — against their own sources.
+All ten cited articles were opened: nine on wkuherald.com, one on wku.edu/news, plus the WKU News
+release behind the leader's note, eleven fetches in all, every one answering 200.
+
+Thirteen of the fourteen entries hold on every checkable particular. The budget line ($113,481,
+stipends $27,000, scholarships $23,000), the nine committee chairs sworn in on 25 August, the
+Organizational Aid terms ($500 a group inside $10,000 a semester, a thirty-point scale, a
+ten-person committee of the chief financial officer and nine senators, applications closing
+29 September at 5 p.m.), amendment 10.1.2, the election-code rules, Resolution 4.6 F, the
+homecoming nomination, the syllabus statement and the 28 fall candidates across four
+constituencies all match what the Herald printed. The leader's turnout figure of 1,601 is WKU
+News's own number, and "up 66% on the previous year" is right against the 966 recorded for
+2025-26.
+
+Two things deserve saying because they are the traps being handled correctly rather than sprung.
+The 1 September entry reports that the Herald put the orientation raffle at 1,744 entries and that
+Lucas gave it as 1,174 a week later; both figures were confirmed in their own articles, and
+carrying the disagreement rather than choosing a side is the right treatment. And the 23 September
+entry says voting "was set to close" at 4 p.m. on 25 September. That is an advance notice written
+down as what was scheduled, with no result claimed — which is the rule, and worth noting because
+the result was still not in when this pass ran.
+
+## Corrected before it sat any longer
+
+**Caden Lucas was not a junior senator.** The 15 April entry and the first paragraph of his profile
+both called him one. Junior Senator is a specific office, and in the April 2026 election it went to
+Cayden Bailey, Veronica Butler and Evan Tuck — the Herald's own results list prints all three under
+that heading. Lucas held a different seat: he entered SGA in September 2024 as the Mahurin Honors
+College's first student senator, which the profile states correctly in the sentence immediately
+before. He was also, separately, a junior by class standing, which is where the confusion came
+from; both WKU News releases call him "a junior from Harned". The cited Herald election story
+describes him only as a WKU Spiritmaster, chairman of the Hilltoppers Vote Coalition and an
+employee of Bowling Green's Downtown Development Division, and never as a senator of any kind.
+The event body is now trimmed to those three, and the profile reads "A junior," which is what the
+sources support. This is trap two in its quieter form: not a committee chair promoted to officer,
+but a class year fused to an office that belonged to three other people.
+
+**Lucas now states the Board seat instead of leaving it to be guessed.** His leader object carried
+no `also_regent`, though WKU News says it twice — "In addition to being Student Body President,
+Lucas will serve as Student Regent on the WKU Board of Regents" in the election release, and again
+in the Truman announcement — and his own profile already describes him being sworn in as student
+regent. Both prior presidents, Kurtz and Robinson, carry the field. The site was already showing
+him as the 57th student regent, because `build.py` guesses the merged seat for any post-1968 year
+with exactly one leader, so this changed no rendered count. It matters anyway: this is the current
+year, and if a mid-year succession were ever added to it the guess would turn false and the Board
+seat would quietly vanish from the page. Stated beats inferred.
+
+Three checks that looked like findings and were not, recorded so the next pass does not re-open
+them. Isaiah Wilson's co-authorship of Resolution 4.6 F is not in the 23 September article the
+entry leads with, but the entry already carries a `src2` pointing at the 15 September issue, which
+has it. Molly Ricke / Molly Ricky, the third spelling pair in this year's sources, is already in
+`data/name-aliases.json`. And Sophie Stirling / Sterling and Gabi / Gabby Pace, left unresolved by
+design, split no one in two: the officer layer holds one spelling for each and only the event prose
+follows each source's own, which is the flag-don't-fix rule working.
+
+One entry is left standing with a question against it rather than cut. The 24 April Truman Scholar
+item is accurate in every particular and says nothing its source does not, and it omits the family
+details the release prints, which is the living-people rule observed. But a national award to an
+individual is not SGA acting, deciding, debating or being formally part of anything, and it is not
+news that shaped the year for students, so by the letter of the campus-context bar it is a
+president's biography rather than the organisation's history — and it already appears, properly, in
+his profile. Whether it earns a place in the year's events is the owner's call, not a sourcing
+failure, so it stays for now.
+
+## The traps checklist
+
+No advance notice written up as a report. No committee chair recorded as an officer, and the one
+office wrongly attributed has been removed. No one matched by surname alone. No changed surname
+creating a duplicate. No April result filed into the wrong year: the 13-15 April election sits in
+2026-27, which is the year its winners serve. Nothing touches the settled facts. No contributor
+commit in the diff. The commit is authored `SGA 60`, in plain editorial voice, and carries no tool
+attribution.
+
+`check_duplicates.py` returns the same four long-standing pairs and no new one — designated driver
+cards, the regent advisory committee bill, the Civil Liberties Union lawsuit and plus/minus grading
+— each an introduction and its outcome, or a plan and its endorsement. They stay separate.
+
+## Still open
+
+- **Eleven of the thirteen research routines are still paused**, and this pass read the fleet rather
+  than inferring it: only `SGA 60 - editor` and `SGA 60 - portraits` are enabled. Backlog, senate
+  rolls and person profiles stopped in the last week of August; legislation harvest, photographs and
+  all six decade beats stopped on 4-5 August. None carries an `ended_reason`, which means they were
+  paused rather than disabled by any fault of their own. This is why the sixtieth year sat five
+  months behind while the Herald published on SGA every week, and it remains the single thing most
+  worth the owner's attention. Two beats cannot cover sixty years.
+- **The stored brief should stop naming #6, #7 and #8, and stop opening with `gh`.** Six passes have
+  now spent time on branches closed since 18 August and on a binary that is not installed. Left for
+  the owner deliberately: a run should not rewrite its own instructions.
+- The 15 open photograph leads remain blocked behind `viewcontent.cgi` and `web.archive.org`, and
+  the 17 held FACE-PROVED-PERSON-NOT-PROVED candidates still need an editor's eye rather than
+  another research run.
+- The five year-photograph gaps (1994-95, 1995-96, 2000-01, 2005-06, 2008-09), the F247 1990-91
+  executive committee folder, and the hold note in `data/photo-finds/_for-the-editor.md` are
+  unchanged.
+
+## The numbers
+
+`build.py` completes clean; `check_data.py` and `check_contrib.py` both exit 0.
+
+61 year pages, 7 decade pages, 308 documents, 1,111 legislation files, search index 4,955 records,
+1,202 photographs served. 61 years and 1,974 events; 60 people have been president. 2,650 recorded
+terms of office held by 1,809 people, 2,613 of them (98%) carrying an account of what the person
+did, and 48 people recorded under more than one spelling.
