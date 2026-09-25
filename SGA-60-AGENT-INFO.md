@@ -7323,9 +7323,13 @@ Swept `wkuherald.com` for the six officer-gap years the morning pass had not rea
 2015-16, 2018-19, 2019-20, 2020-21, 2023-24, 28 names with no `photos.json` match under any year.
 Genuine SGA coverage came back for most of them, but every `_embed`ded featured-image caption
 opened (plus the 2015-09-02 "SGA welcomes new and old members" article's full body text) named
-someone who already has a portrait — Jay Todd Richey, Hannah Neeper, Kate Hart, Colton Hushell,
-Caden Lucas, Jakob Barker, Will Derryberry — or carried no caption at all. No new portrait. Full
-detail in `.research/NIGHT-REPORT.md`'s matching entry.
+someone who already has a portrait — Jay Todd Richey, Hannah Neeper, Kate Hart, Caden Lucas,
+Jakob Barker, Will Derryberry — or carried no caption at all. No new portrait. Colton Hushell was
+in this list when the run wrote it and has been taken out by the editor: he carries no portrait and
+holds no office in `years.json`, so he was never a portrait target. His name is real — the Herald's
+caption to the 20 April 2016 results announcement prints it — and the frame is already rejected in
+`data/photo-finds/_do-not-use.json`, where it is kept for Kate Hart. Full detail in
+`.research/NIGHT-REPORT.md`'s matching entry.
 
 No file was added to or removed from `data/photos.json` or `data/photos/`. `build.py` and
 `check_data.py` both pass clean. Landed on `research-photos`.

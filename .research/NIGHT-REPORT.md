@@ -33099,9 +33099,16 @@ Scaff, Robert Bell, Abigail Potter and several others all turn up genuine SGA co
 the specific articles by `_embed`ded featured-media caption, plus the 2015-09-02 "SGA welcomes new
 and old members" piece read in full for its body text, turned up no photograph captioned with any
 of the 28 names. Every captioned frame found instead names someone who already carries a portrait —
-Jay Todd Richey, Hannah Neeper, Kate Hart, Colton Hushell, Caden Lucas, Jakob Barker, Will
-Derryberry — and two articles in the search results (Kara Raley's Study Away bill, Jason Herlick's
-judicial council piece) carry no featured image or an uncaptioned one. Per the standing rule, a
+Jay Todd Richey, Hannah Neeper, Kate Hart, Caden Lucas, Jakob Barker, Will Derryberry — and two
+articles in the search results (Kara Raley's Study Away bill, Jason Herlick's judicial council
+piece) carry no featured image or an uncaptioned one. The editor's pass of 25 September corrected
+one name in this list: Colton Hushell was written down among those who already carry a portrait,
+and he does not. He holds no office anywhere in `years.json` and has no entry in `photos.json`,
+so he was never a portrait target. He is a real name, printed in the Herald's caption to the
+results announcement of 20 April 2016, and the frame he appears in was assessed and rejected on
+the record long before this run: `data/photo-finds/_do-not-use.json` keeps it for Kate Hart, whose
+face is turned outward against his chest and distorted mid-hug. The conclusion the list supports
+is unchanged; the reason given for one of its names was wrong. Per the standing rule, a
 frame that does not caption the person is not usable whatever it appears to show, so nothing was
 added. This is the same pattern the morning pass already recorded for a different eight-name
 cohort: genuine coverage, no usable frame.
