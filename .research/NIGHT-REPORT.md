@@ -32724,3 +32724,37 @@ photograph" line is the barred-photo guard working as designed, not a fault.
   `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and
   the pre-2000 legislation gaps.
 - The token flagged for rotation eight passes ago is still flagged.
+
+### Addendum, same pass: the correction was incomplete
+
+The entry above recorded two corrections and treated the pass as finished. It was not. Checking the
+deployed page rather than the diff, **the live 2026-27 page served both the corrected Truman
+sentence and an uncorrected copy of the same error** a few paragraphs down: the same claim, in
+different words, in Caden Lucas's `profile` as well as in the event. #590 had fixed one of the two.
+`"Days after taking"` is now gone from `years.json` entirely, and the profile matches the event.
+
+Worth carrying forward as a method note, because it is a general fault and not a one-off: **a fact
+in this archive can live in two places at once** — an event body and its leader's profile — worded
+differently enough that no title match, no duplicate check and no reading of the diff will pair
+them. Correcting the entry is not correcting the claim. The check that caught it was fetching the
+built page and grepping for the old phrasing; that is now the last step of a correction, not an
+optional one.
+
+While in the paragraph the rest of it was checked against the three WKU News articles the leader
+already cites, and holds: the ODK ideals it lists are the society's own five word for word, the
+good-citizen quote is exact and inside the limit, and the major follows the 2026 article, which
+gives strategic communications where the 2024 one gave international affairs. **"In May" was nearly
+cut and should not have been.** The only date the first read found on the ODK page was 24 September
+2026, which would have made it wrong — but that is a sidebar news card about an agriculture event,
+carried on the Truman page too. The article's own date is 11 May 2026, in a different element. A
+near miss worth recording: a date scraped off a WKU News page is as likely to belong to the sidebar
+as to the article.
+
+One real fault in the paragraph beyond the duplicated error. "He had spent that summer" followed a
+sentence about April 2026 and so pointed at the summer of 2026, but the centre it describes opened
+on 30 October 2024 and WKU News of that date has him working to establish it "since this past
+summer." It now reads the summer of 2024.
+
+Landed as **#592**. Build, `check_data.py` and `check_contrib.py` all exit 0, and both the year page
+and Lucas's officer page were re-fetched from the live site afterwards and carry none of the old
+wording. Three fixes across #590 and #592, not two.
