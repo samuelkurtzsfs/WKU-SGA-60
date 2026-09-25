@@ -7307,6 +7307,33 @@ No file was added to or removed from `data/photos.json` or `data/photos/`. This 
 is to this file. `build.py` and `check_data.py` both pass clean (61 years, 60 presidents, all
 still portrayed). Landed on `research-photos`.
 
+### Photograph run of 25 September, second pass (scheduled trigger fired again same day): same baseline, same two routes closed, six more officer-gap years swept on `wkuherald.com` with no new usable frame
+
+Same stale brief, same four already-portrayed names, reconfirmed directly against
+`data/photos.json` rather than trusted from the note above. `research-photos` merged cleanly
+against `origin/main` (one conflict in `.research/NIGHT-REPORT.md`'s append point, resolved by
+keeping both sides) and carried no unlanded content, matching the 24 September editor's finding
+that the branch tracks main exactly outside `site/`.
+
+`digitalcommons.wku.edu/cgi/viewcontent.cgi` still `403`s behind Cloudflare; `web.archive.org`
+still resets the TLS handshake after 10-15 seconds (`curl: (35) Recv failure`), the same flaky
+failure this section has logged all week. `archive.org` and `wkuherald.com` stayed open.
+
+Swept `wkuherald.com` for the six officer-gap years the morning pass had not reached — 2014-15,
+2015-16, 2018-19, 2019-20, 2020-21, 2023-24, 28 names with no `photos.json` match under any year.
+Genuine SGA coverage came back for most of them, but every `_embed`ded featured-image caption
+opened (plus the 2015-09-02 "SGA welcomes new and old members" article's full body text) named
+someone who already has a portrait — Jay Todd Richey, Hannah Neeper, Kate Hart, Caden Lucas,
+Jakob Barker, Will Derryberry — or carried no caption at all. No new portrait. Colton Hushell was
+in this list when the run wrote it and has been taken out by the editor: he carries no portrait and
+holds no office in `years.json`, so he was never a portrait target. His name is real — the Herald's
+caption to the 20 April 2016 results announcement prints it — and the frame is already rejected in
+`data/photo-finds/_do-not-use.json`, where it is kept for Kate Hart. Full detail in
+`.research/NIGHT-REPORT.md`'s matching entry.
+
+No file was added to or removed from `data/photos.json` or `data/photos/`. `build.py` and
+`check_data.py` both pass clean. Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash

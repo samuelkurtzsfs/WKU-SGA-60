@@ -33069,3 +33069,50 @@ with every file present and a real PDF, 308 documents. `build.py` clean and repr
 `check_data.py` and `check_contrib.py` both exit 0, `check_duplicates.py` four title pairs — the
 same four as every pass since September, all genuinely separate — and one same-source pair, judged
 and left.
+
+## 25 September, a second photograph pass: same trigger firing again the same day, no new portrait
+
+The scheduled brief that starts this run is the same frozen one every prior photograph run has
+already logged as stale, still naming Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley as
+portraitless. This is also the second photograph run recorded on today's date alone — the entry
+immediately above this one in §8 of `SGA-60-AGENT-INFO.md` already covered a scheduled pass this
+morning. Checked the baseline directly against `data/photos.json` before anything else, as every
+run since 20 August has: all four named people, and all 73 leader records (60 presidents, 57
+regents), already carry a portrait. `research-photos` merged cleanly against `origin/main` (one
+conflict, in this file's own append point, resolved by keeping both entries in order); the branch
+carried no unlanded content of its own, matching the finding this file's editor recorded on 24
+September.
+
+Retested the two routes this file has logged as closed. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+answered `403` behind the Cloudflare challenge, tested directly (article 7724). `web.archive.org`
+failed the same way this file's 25 September morning entry describes: the CONNECT tunnel opens,
+TLS begins, and the connection resets after about 10-15 seconds with a handful of bytes received —
+`curl: (35) Recv failure: Connection reset by peer` — not a clean refusal, the same flaky failure
+mode logged all month. `archive.org` (plain host) and `wkuherald.com` were both open the whole
+session.
+
+With TopSCHOLAR shut, extended this morning's `wkuherald.com` sweep to the six officer-gap years it
+had not yet reached: 2014-15, 2015-16, 2018-19, 2019-20, 2020-21 and 2023-24 (28 names drawn
+directly from `data/organization.executive`/`.senate.officers` with no `photos.json` match under
+that name in any year). Real hits came back for most of them — Sawyer Coffey, Cole McDowell, Tyler
+Scaff, Robert Bell, Abigail Potter and several others all turn up genuine SGA coverage — but opening
+the specific articles by `_embed`ded featured-media caption, plus the 2015-09-02 "SGA welcomes new
+and old members" piece read in full for its body text, turned up no photograph captioned with any
+of the 28 names. Every captioned frame found instead names someone who already carries a portrait —
+Jay Todd Richey, Hannah Neeper, Kate Hart, Caden Lucas, Jakob Barker, Will Derryberry — and two
+articles in the search results (Kara Raley's Study Away bill, Jason Herlick's judicial council
+piece) carry no featured image or an uncaptioned one. The editor's pass of 25 September corrected
+one name in this list: Colton Hushell was written down among those who already carry a portrait,
+and he does not. He holds no office anywhere in `years.json` and has no entry in `photos.json`,
+so he was never a portrait target. He is a real name, printed in the Herald's caption to the
+results announcement of 20 April 2016, and the frame he appears in was assessed and rejected on
+the record long before this run: `data/photo-finds/_do-not-use.json` keeps it for Kate Hart, whose
+face is turned outward against his chest and distorted mid-hug. The conclusion the list supports
+is unchanged; the reason given for one of its names was wrong. Per the standing rule, a
+frame that does not caption the person is not usable whatever it appears to show, so nothing was
+added. This is the same pattern the morning pass already recorded for a different eight-name
+cohort: genuine coverage, no usable frame.
+
+No file was added to or removed from `data/photos.json` or `data/photos/`. `build.py` and
+`check_data.py` both pass clean (61 years, 60 presidents, all still portrayed). Landed on
+`research-photos`.
