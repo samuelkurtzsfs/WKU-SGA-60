@@ -32532,3 +32532,87 @@ cards, the regent advisory committee bill, the Civil Liberties Union lawsuit and
 1,202 photographs served. 61 years and 1,974 events; 60 people have been president. 2,650 recorded
 terms of office held by 1,809 people, 2,613 of them (98%) carrying an account of what the person
 did, and 48 people recorded under more than one spelling.
+
+---
+
+## 25 September, the editor's scheduled pass
+
+One pull request in the queue and one merged. The routines are not off after all: **#588,
+"Research: photographs (rolling)", was opened at 02:15 this morning**, which ends the run of
+twelve empty passes the last entry recorded. Only the photograph routine has reported; the other
+three beats are still silent.
+
+GitHub was reachable this pass. `gh` is not installed in these containers, as `AGENT-LANDING.md`
+says, but git is credentialed and the push probe came back clean, so this was a full pass rather
+than a review-only one.
+
+### Merged: #588, the photograph run
+
+The run changed two files and neither of them reaches the site: the research log, and the
+accumulated `_archive-gaps.json`. Underscore-prefixed files in `data/photo-finds/` are the drop
+box's own bookkeeping and `merge_photo_finds.py` excludes them by design; `.research/` is not
+rendered at all. `photos.json`, `years.json`, `data/photos/` and `_topscholar-wanted.json` are
+byte-identical to main. Nothing published. But a wrongly-closed dead end costs the next run real
+hours, so the findings were checked as though they did publish.
+
+Thirteen claims opened at source; thirteen held. The five coverage claims reproduce exactly against
+the data: four named presidents with portraits, zero gaps across every president and regent in all
+61 years, no year without a photograph, and the year-scene gap standing at precisely the five years
+claimed. The five dead ends were re-opened by the routes the log names and every one came back as
+recorded — **David Bass**'s caption sits on leaf 38 of the 1978 *Talisman* word for word, and the
+page image bears out the reason for refusing it: the caption names four people, the frame shows
+three faces and a fourth figure turned away, and there is no left-to-right key. **Alice Wicks**
+really is in the index alone with no page number. **Mark Chesnut**'s only hits are a Berea senior of
+the same surname and an index line. The 2016-17 SGA roster page really does carry no photograph of
+anyone. And `dlsc_ua_records/6721` really is *Herald* 84:22, carrying both stories the log
+describes.
+
+The run's central claim — that the Wayback route into TopSCHOLAR is open but keeps cutting off —
+reproduced by accident: two of my own fetches died with a connection reset before the third
+returned a whole page. That is the intermittency described, and it is the argument for the run's
+own recommendation to retry articles 7666, 7667 and 6164 several times spaced apart rather than
+writing them off.
+
+**Nothing was cut, because nothing was over-claimed.** The log is careful exactly where it would
+have been easiest not to be: it holds those three articles open as leads rather than closing them
+off a transport failure, and it says why. Worth recording as the good case. One correction pushed:
+the branch had dropped the trailing newline on `_archive-gaps.json`, restored as `9563d778`.
+
+On the traps: no events, people or portraits were added, so most of the checklist does not apply.
+Of what does — the officer list was filtered to cabinet and Senate-leadership titles rather than
+committee chairs, which is the commonest error avoided deliberately; no one was matched by surname
+alone, and the verification pass turned up `tower-cherry-trees.jpg` as a "Cherry" hit on that
+roster page, which is what surname matching looks like when it goes wrong; the two living people
+named are described only as the subjects of stories that did or did not carry a photograph, with
+nothing personal and nothing past the cited index.
+
+### Checks
+
+`build.py` clean. `check_data.py` exit 0, `check_contrib.py` exit 0 on all cases.
+`check_duplicates.py` reported four pairs, all pre-existing on main and all genuinely distinct:
+the Civil Liberties Union planning suit against Associated Students endorsing it a month later;
+the regent advisory committee bill introduced in January 1992 against its defeat after amendment
+in February; Bill 97-3-F funding the designated driver cards against their distribution three
+months on; and the four stages of the plus/minus grading fight through autumn 2003. None merged —
+these are the process sequences the rule exists to protect.
+
+**61 years, 1,974 dated events, 60 people who were president. 2,650 terms held by 1,809 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,955 search records.**
+
+### Still open
+
+- **#6, #7 and #8 do not exist as open work and have not since 18 August**, when all three were
+  closed. The stored editor brief still describes them as stale and open, still instructs a
+  `gh auth setup-git` that cannot run, and still says four routines are running when only the
+  photograph beat has reported. This is the third pass to flag the brief; it wants an edit.
+- The three *Herald* and *Talisman* captures that truncated at one megabyte — articles 7666, 7667
+  and 6164 — carrying Cacy A. Schooler, Jacob Miers and Mallory Treece. Open leads, not dead ends.
+- Carried forward unchanged: the sixteen president records whose regent seat is unstated; Kelly S.
+  Smith and John Holland; the 1984 *Talisman* People section; the `Delmer Estes` / `Delmer Esters`
+  reading; the four spellings of the at-large senate seat; the five-year year-photograph gap; the
+  pre-2003 officer portrait gap; the 728 legislation entries pointing at landing pages; the 18
+  legislation files with no text layer; the two items on how Joe Rains's term ended; the
+  `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and
+  the pre-2000 legislation gaps.
+- The token flagged for rotation seven passes ago is still flagged.
