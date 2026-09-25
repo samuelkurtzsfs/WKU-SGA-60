@@ -7255,19 +7255,26 @@ The stored brief for this trigger is still the frozen one naming Nick Todd, Kati
 Johnson and Reagan Gilley as portraitless. Checked directly against `data/photos.json` rather than
 trusting the note: all four, and all 73 leader records, already carry a portrait. `merge_photo_finds.py`
 (no `--write`) confirms every findings file already on disk has been fully merged — 0 portraits
-would be added, 0 replaced, the same 18 FACE-PROVED-PERSON-NOT-PROVED holds unchanged, awaiting the
+would be added, 0 replaced, the same 18 refused unchanged — 17 FACE-PROVED-PERSON-NOT-PROVED
+holds plus the withdrawn Blake Bowden frame — awaiting the
 editor. Every leader (president/regent) in `data/years.json` has a portrait; four years still carry
 no year-level photograph (1994-95, 1995-96, 2000-01, 2008-09, unchanged from the 23 September
-entries above); and 217 executive/senate officer records across 45 years still lack one, concentrated
+entries above); and 217 executive/senate officer records across 42 years still lack one, concentrated
 in 1997-98, 1998-99, 2007-08, 2014-15 through 2023-24.
 
 Retested both routes this file logs as closed, fresh, before doing anything else. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
 answered `403` with the Cloudflare "Just a moment..." challenge (tested against article 7724, a
-live lead for Lisa Kappler/Jacob Turner). `web.archive.org` did not reset this time — it returned
-a clean `403 Blocked by egress policy` from this session's own proxy, a different failure from
-every prior entry in this section, which all describe either a TLS reset or a Cloudflare challenge
-from the far end. Worth recording precisely because it changes the diagnosis: this was not
-WKU's CDN refusing the request, it never left this container. `archive.org` (no `www.`, the plain
+live lead for Lisa Kappler/Jacob Turner). `web.archive.org` was unreachable for the whole
+session and the run recorded the refusal as a `403 Blocked by egress policy` from this session's
+own proxy. **The editor's pass of 25 September could not reproduce that, and the diagnosis drawn
+from it does not stand.** Retested at 15:24 the same day, the host returns no 403 and no
+`x-block-reason` header at all: the CONNECT tunnel is established, TLS begins, and the connection
+dies mid-handshake. The proxy's own `__agentproxy/status` logs it as `ws_closed_mid_exchange`
+("tunnel closed (code 1006, Connection ended) after 11s; 517 B sent, 39 B received") and reports
+`selective: false`, meaning no host allowlist is in force for this container. So the request did
+leave the container, and this is the same connection-reset failure every prior entry in this
+section describes — not a new egress-policy block. Treat `web.archive.org` as flaky and worth
+retrying, not as administratively closed. `archive.org` (no `www.`, the plain
 host, not the Wayback subdomain) and `wkuherald.com` were both open the whole session. Re-confirmed
 `archive.org`'s Talisman holdings by querying its own search API directly rather than trusting the
 standing list: exactly the same 19 `talisman*west` identifiers this file has logged since August,

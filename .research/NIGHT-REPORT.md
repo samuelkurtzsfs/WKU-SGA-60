@@ -32906,3 +32906,65 @@ Counts after the merge: 61 years, **1974 sourced events**, 60 people recorded as
 did, 73 portraits and **70 year photographs**, 1111 pieces of legislation with every file present
 and a real PDF, 308 documents. `build.py` clean, `check_data.py` and `check_contrib.py` both
 exit 0, `check_duplicates.py` four pairs, all pre-existing and all genuinely separate events.
+
+## 25 September, the editor's evening pass: one documentation PR, three claims trimmed
+
+**What was open.** One pull request, #597, "Research: photographs", on `research-photos`. The
+stored brief still names #6, #7 and #8 as stale branches wanting rescue; all three were closed on
+18 August and no longer exist as open work. Nothing else was open.
+
+**What #597 actually changed.** Fifty-one lines appended to `SGA-60-AGENT-INFO.md` and nothing
+else. No `data/`, no `site/`, no `scripts/`. The branch carries four commits, two of which add and
+then correct the 2005-06 three-candidate photograph, but main already holds that work — it landed
+through #596 as `c80cfd47` and `ad62dfcc` — so against main the branch is a log entry and no more.
+The traps checklist has almost no purchase on a diff that adds no claim about any person: no
+officer read off a committee chair, no surname match, no election filed in the wrong academic
+year, no living person described beyond a cited source, no contributor edit. The four commits are
+all authored `SGA 60` and none carries tool attribution.
+
+**Spot check: fourteen claims opened, eleven exact.** Every count in the entry reproduces against
+the files: 73 leader records with a portrait apiece and none missing; Nick Todd, Katie Dawson,
+Jeanne Johnson and Reagan Gilley all portrayed, as the entry says and against what the frozen
+trigger brief still claims; four years without a year-level photograph, being exactly 1994-95,
+1995-96, 2000-01 and 2008-09; 217 officer records still unportrayed; `merge_photo_finds.py` dry
+run at 0 added and 0 replaced. The external sources hold too. `wkuherald.com/65821` is the April
+2022 election-night story and carries exactly nine individually captioned frames — they are
+lazy-loaded and invisible in the page source, which is worth knowing, and they sit on the REST
+media endpoint under `?parent=`. Both captions the entry quotes are verbatim correct, and all five
+people they name already carry a portrait, so the entry's conclusion that the gallery confirms
+existing sourcing rather than adding to it is right. `viewcontent.cgi` answers 403 behind the
+Cloudflare challenge on article 7724, as described. `archive.org` holds exactly the 19
+`talisman*west` volumes claimed, 1943 to 1987 with the known gaps.
+
+**What was cut.** Three trims, all to the entry, all rescues rather than deletions.
+
+The real one: the entry's most emphasised finding was that `web.archive.org` had returned a clean
+`403 Blocked by egress policy`, and it drew a diagnosis from that — that the request never left
+the container, and the route is administratively shut rather than refused at the far end. It does
+not reproduce. Retested, the host returns no 403 and no `x-block-reason` header; the tunnel opens,
+TLS starts and the connection dies mid-handshake, which the proxy logs as `ws_closed_mid_exchange`
+with 517 bytes sent, and it reports no host allowlist in force. The request did leave the
+container, and this is the same reset every earlier entry in that section describes. The claim is
+rewritten to say what was seen, to record that it could not be reproduced, and to tell the next
+run to treat the route as flaky and retry it rather than write it off. A wrong diagnosis in the
+handoff file is worth catching precisely because the handoff file is what the next run trusts.
+
+The other two are precision. Those 217 officer records span 42 years, not the 45 claimed. And the
+18 refusals from `merge_photo_finds.py` are 17 FACE-PROVED-PERSON-NOT-PROVED holds plus the
+withdrawn Blake Bowden frame, not 18 holds.
+
+**Merged.** With those three corrections pushed to the branch, #597 met the test and went to main.
+
+**Duplicates.** Four pairs, unchanged from the last pass and all pre-existing, since this diff
+touched no data. All four are genuinely separate events and none should be combined: a bill
+introduced in January 1992 against the same bill failing after amendment in February; $900 voted
+for designated driver cards in November 1997 against the cards being distributed the following
+February; the Civil Liberties Union planning action in February 1972 against Associated Students
+endorsing the suit a month later; and SGA objecting to plus/minus grading in September 2003
+against it passing legislation three weeks on.
+
+Counts after the merge, unchanged from the morning because nothing in `data/` moved: 61 years,
+1974 sourced events, 60 people recorded as president, 2650 terms of office held by 1809 people,
+2613 of them (98%) with an account of what the person did, 1111 pieces of legislation with every
+file present and a real PDF, 308 documents. `build.py` clean and reproducible — the tree is
+unchanged after a rebuild — `check_data.py` and `check_contrib.py` both exit 0.
