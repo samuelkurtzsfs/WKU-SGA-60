@@ -1,3 +1,87 @@
+# 25 September 2026 (editor, late pass) — an election written up twice, in two consecutive years
+
+## What was open
+
+Nothing. No pull request is open on the repository, and every branch on origin that is not an
+ancestor of `main` was merged by squash, so its content is already published. The two branches
+carrying this morning's photograph work — `research-photos` and `editor-2026-09-25-photo-primary` —
+diff against `main` at 64 deletions in the night report and nothing else: they are behind on the
+report, not ahead on any data. The 4 August branches still have no merge base with `main` and were
+not touched, per `AGENT-LANDING.md`.
+
+#6, #7 and #8 were again named in the brief as stale and open. All three closed on 18 August.
+Thirteenth consecutive pass.
+
+## The spot check, run against published claims
+
+With no diff to sample, the sample came from what reached the live site today, and from a sweep of
+the traps that can be tested mechanically across all 1,974 events.
+
+Today's one photograph and one prose change both held up:
+
+- **2005-06, the three presidential candidates.** The cited issue
+  (`dlsc_ua_records/3684`) is *Herald* Vol. 81, No. 36, and its index carries Katie Brandenburg's
+  "Three Candidates Run for President". The caption, already trimmed this morning from a claim
+  about a primary that the *Herald* of 30 March reports as cancelled, now says only that three
+  students declared. It adds that Watkins won that April and resigned the following November,
+  which is settled fact 7. Confirmed.
+- **Caden Lucas's Truman paragraph.** The correction from "days after taking office" to nine days
+  after winning and before taking office is right on the archive's own dates: he won 15 April 2026
+  and took office 28 April.
+
+**Two mechanical sweeps, both clean.** No event pairs advance-notice wording with an outcome claim
+— the trap that has cost this project the most. No spring presidential result is filed into the
+academic year that is already ending.
+
+## What was cut
+
+One title, in 1967-68.
+
+Straeffer's election was written up twice, in two academic years, from two sources. 1968-69 carries
+the authoritative record — "Straeffer elected president, 1,732 to 1,098; turnout 34 percent", off
+Ron Beck's results memo of 3 May 1968 (`dlsc_ua_records/543`), which is where a spring result
+belongs. 1967-68 carried a second entry headed "Bill Straeffer wins the presidency; the Herald
+calls the election a failure", so a reader moving between the two years met the same win announced
+twice.
+
+The entry itself is sound and its source verified: *Herald* 47:30 of 9 May 1968
+(`dlsc_ua_records/9010`) does carry both Ellen Bennett's report of the win and the editorial
+"Elections Illustrate Faults, Indifference". Only the title over-claimed, by leading with a result
+recorded with better numbers elsewhere. Retitled to **"The Herald calls the spring election a
+failure"**. No sourced fact was lost; the body is untouched.
+
+**Why no script caught it.** `check_duplicates.py` compares titles within a single year, so a pair
+split across two years is invisible to it. Written as a cross-year scan, it still misses this one:
+the two titles share only the surname, a Jaccard overlap of about 0.08, far below any usable
+threshold. This is the failure CLAUDE.md names — "matching whole titles never catches it". What
+found it was a different question entirely: which spring election results sit in which academic
+year. A future pass wanting these should ask that, not ask about titles.
+
+## Flagged, not fixed
+
+The retitled entry's body ends "the second contested election the organisation ever held." That is
+not in the cited index. It is consistent with this archive's own record — 1967-03-16 carries "Two
+vie for the presidency" and 1966 was the first election — but it rests on those entries, not on the
+issue cited beside it. Left standing; worth a source of its own.
+
+## The state of the build
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0, `check_duplicates.py` reports
+4 pairs, all four judged and all four genuinely distinct: a bill and its later failure, a lawsuit
+planned and then endorsed, an anti-plus/minus position and the vote that followed it three weeks
+later, and the designated-driver cards funded in November 1997 and distributed in February 1998.
+Nothing merged.
+
+61 years, 1,974 events, 60 people have been president. 2,650 recorded terms of office held by 1,809
+people, 98% of them carrying an account of what the person did. 1,111 pieces of legislation, every
+file present and a real PDF. 308 documents.
+
+The photograph the build withdraws each run is the barred Kitchens file. Working as designed: the
+metadata is already out of `photos.json`, nothing in the built site references it, and the bar
+keeps the file itself off a public address. Not a regression.
+
+---
+
 # 24 September 2026 (editor, third pass) — an empty board, and a guard on the 1,111 files nobody was checking
 
 ## What was open
