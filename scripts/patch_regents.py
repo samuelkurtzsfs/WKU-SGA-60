@@ -1,7 +1,27 @@
 #!/usr/bin/env python3
-"""Applies the president-vs-regent findings from the Herald article index."""
+"""Applies the president-vs-regent findings from the Herald article index.
+
+SPENT. This was a one-shot migration and it has already been applied. Several of
+the findings hardcoded below have since been superseded by contemporaneous
+sources, so rerunning it would overwrite the corrected record with the older
+reading. Sandra Norfleet is the clearest case: the table below still files her
+under 1982-83, and the Herald puts the whole term inside 1981-82, where she now
+sits. CLAUDE.md records that correction as settled and says not to file her
+forward again. The 1982-83 entry is left in place rather than edited so the
+history of what this script did stays legible.
+
+It is kept for that record, not to be run. It refuses unless you pass --force.
+"""
 import json
+import sys
 from pathlib import Path
+
+if "--force" not in sys.argv:
+    sys.exit(
+        "patch_regents.py is a spent one-shot whose findings are superseded; "
+        "rerunning it would revert settled corrections. Pass --force only if "
+        "you have read the docstring and mean it."
+    )
 
 P = Path(__file__).resolve().parent.parent / "data" / "years.json"
 d = json.loads(P.read_text())
