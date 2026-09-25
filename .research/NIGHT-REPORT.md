@@ -32616,3 +32616,111 @@ these are the process sequences the rule exists to protect.
   `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and
   the pre-2000 legislation gaps.
 - The token flagged for rotation seven passes ago is still flagged.
+
+---
+
+## 25 September, the editor's later scheduled pass
+
+An empty board. **No open pull requests at all** — #588 and the photograph pass that verified it
+both merged this morning, and nothing has been opened since. #6, #7 and #8 remain what the last
+three entries have said they are: closed unmerged since 18 August. GitHub was reachable, `gh` still
+absent but git credentialed, so this was a full pass.
+
+With nothing in the queue to gate, the pass went to the freshest material already published rather
+than to a fourteenth confirmation that the board is empty. **2026-27** was merged yesterday in #583
+and is the current year: thirteen events, every one of them about a student serving right now. That
+is where a wrong fact would do the most damage and where the site has had the least time to catch
+one.
+
+### All thirteen entries opened at source; all thirteen held
+
+Not a sample — all ten cited sources fetched and every claim in every entry checked. The nine
+committee chairs of 25 August matched name for name and committee for committee, though only after
+looking past the article's prose into its list markup, where the names actually live; a prose-only
+read would have called them unsourced and cut nine correct facts. The 9-9 speaker tie, the chief
+justice's ruling that neither constitution nor bylaws covered it and Whipple's re-vote; the
+$113,481 budget with stipends at $27,000 and scholarships at $23,000; the two at-large seats left
+open; Organizational Aid at $500 a group inside $10,000 a semester, its ten-person committee and
+thirty-point scale; amendment 10.1.2; the campaign poster rules to the inch; Resolution 4.6 F; the
+28 fall candidates across four constituencies, whose four figures sum correctly; the Craig Lonas
+canvas donation and the officers grilling at Constitution Fest, both of which sit in a quote and a
+photo caption rather than the body text. Every one as written.
+
+The **1,744 against 1,174** raffle figures are a real conflict in the sources — the *Herald* of 1
+September against Lucas himself a week later — and the entry gives both with attribution instead of
+choosing. Left exactly as it stands. That is the right answer to a source disagreement and it is
+worth recording as the good case.
+
+### Corrected
+
+**The Truman Scholarship entry gave Lucas an office he did not yet hold.** It read "Days after
+taking SGA's top office." He won on 15 April and was named on 24 April, but the *Herald* of 28
+April still calls him "newly elected" and reports Rush Robinson handing over the red jacket at that
+meeting — he was president-elect. Rewritten to nine days after winning the presidency and before he
+took office. The compressed "chosen from 781 candidates at 305 colleges" also became what WKU News
+states: one of 55 rising seniors chosen from 198 finalists, out of 781 candidates nominated by 305
+colleges. Rescued, not cut; every other fact in it was sound.
+
+**The 2026-27 senate note's spelling reasoning was out of date.** It argued that the lone *Herald*
+"Sterling" of 28 April post-dated every "Stirling" and so might be a correction rather than an
+error. This pass disproves that: the *Herald* of 15 September gives Stirling throughout its
+election-codes report and the *Herald* of 23 September gives Sterling swearing in Carter Smith,
+eight days apart in the same paper. That is the paper's own inconsistency, and the record stays on
+SGA's minutes, which give Stirling twice. Flagged in the note, not silently fixed. The same note
+still claimed no committee chairs had been reported; nine were, on 25 August, and are in this
+year's events, so the sentence now names what is genuinely outstanding instead.
+
+Both corrections went out as **#590**, merged.
+
+### The traps checklist
+
+No advance notice written up as a report — the closest call is the fall election entry, which says
+voting "was set to close," which is exactly what an advance notice proves and no more. No committee
+chair recorded as an officer: the organization block holds five executives and one senate officer,
+all of them sourced office-holders, and the nine chairs are correctly absent from it. No surname
+matching — Gabriel Jerdon is kept clear of the unrelated Ed, Edward and Skylar Jordans, and the
+*Herald*'s own "Gabriel Jordan" slip is not followed into the record. No changed-surname duplicate:
+Gabi Pace is one person whose roster note already carries the "Gabby Pace" variant. The April 2026
+election sits in 2026-27, which is where an April election belongs. Nothing touches a settled fact.
+Nothing about a living person goes past its source — WKU News names Lucas's parents and the entry
+rightly does not. No contributor edit in the diff.
+
+`check_duplicates.py` reported the same four pairs as the last three passes, all genuinely distinct
+and three of them already cross-referencing each other in their own body text. None merged.
+
+### Checks
+
+`build.py` clean. `check_data.py` exit 0, `check_contrib.py` exit 0. The build's "withdrew 1
+photograph" line is the barred-photo guard working as designed, not a fault.
+
+**61 years, 1,974 dated events, 60 people who were president. 2,650 terms held by 1,809 people,
+98% of them carrying an account of what the person did. 308 documents, 1,111 legislation files,
+4,955 search records, 48 people recorded under more than one spelling.**
+
+### Still open
+
+- **2026-27's `organization` block is thinner than its own events.** `committees` is empty and
+  `size` unset, yet the nine chairs, Secretary of the Senate Molly Ricke and Chief Justice Sophie
+  Stirling are all named in the year's event text. All nine chairs are verbatim-sourced in the 25
+  August *Herald* report and ready to be lifted in. Left for a research pass rather than built out
+  here.
+- Sophie Stirling's roster entry still shows a 2025-26 term only, though she is the sitting chief
+  justice through September 2026. Molly Ricke is named in three 2026-27 entries and has no roster
+  record at all.
+- **The fall senate election closed at 4 p.m. today.** Results were to be announced in the senate
+  chambers immediately and livestreamed; 28 candidates and the outcome are the obvious next entry,
+  and it is the sixtieth year's own election. Note the two sources disagree on the closing time,
+  4:30 p.m. in the 15 September report against 4 p.m. on 23 September; the entry follows the later
+  one, correctly.
+- **The stored editor brief still needs an edit** — fourth pass to flag it. It describes #6, #7 and
+  #8 as open, instructs a `gh auth setup-git` that cannot run, and says four routines are running
+  when only the photograph beat has reported in weeks.
+- Carried forward unchanged: the three truncated captures carrying Cacy A. Schooler, Jacob Miers
+  and Mallory Treece; the sixteen president records whose regent seat is unstated; Kelly S. Smith
+  and John Holland; the 1984 *Talisman* People section; the `Delmer Estes` / `Delmer Esters`
+  reading; the four spellings of the at-large senate seat; the five-year year-photograph gap; the
+  pre-2003 officer portrait gap; the 728 legislation entries pointing at landing pages; the 18
+  legislation files with no text layer; the two items on how Joe Rains's term ended; the
+  `Amber Daniels` / `Amber Daniel` pair; Mary Fyfe; the 1999-00 Coates investigation outcome; and
+  the pre-2000 legislation gaps.
+- The token flagged for rotation eight passes ago is still flagged.
