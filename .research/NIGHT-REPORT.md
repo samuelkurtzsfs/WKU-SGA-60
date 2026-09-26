@@ -33939,3 +33939,59 @@ no new collision. Counts: 61 years, 1968 events, 60 people have been president, 
 legislation with every file present and a real PDF, 308 documents, 2650 recorded terms of office
 held by 1809 people, 2613 of them (98%) with an account of what the person did, 48 people recorded
 under more than one spelling, and a search index of 4949 records. Nothing is open.
+
+# 26 September 2026 (seventh pass) — a log-only photograph run merged, and a count settled for the third time
+
+One pull request was open, #613, the third photograph pass of the day. Its whole diff was a single
+run log in `.research/`; no file in `data/` was touched, and the branch sat as a clean fast-forward
+on `main`. Merged, after one figure in it was corrected.
+
+**Nothing in the diff made a historical claim,** so there was nothing to put against a *Herald*
+issue. What the log asserted instead was the state of the archive and the state of two access routes,
+and all of it was checked rather than taken on trust. All 73 leader records — every president and
+every student regent — carry a portrait, recounted from `years.json` against `photos.json`. The four
+names the run was originally set to find, Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley,
+have files on disk that really are JPEGs. The year-photograph gap is exactly the four years the log
+names: 1994-95, 1995-96, 2000-01 and 2008-09. Both blocked routes reproduce from this container:
+`viewcontent.cgi` answers 403 with a Cloudflare interstitial in the body, which is a challenge and
+not a rate limit, so no amount of pacing will get past it; `web.archive.org` resets the connection
+after the handshake.
+
+**The one correction was the officer-photograph count, and it is the third time it has drifted.**
+The log gave 216 executive and senate officer records still lacking a photograph and called that the
+figure the second pass left. The second pass left 217, and had said so while pointing at an earlier
+editor's note settling this same arithmetic. Recounted here: 217. The trouble is that the question
+has two defensible readings and only one right answer — there are 948 officer records and 928 unique
+year-and-name pairs among them, of which 209 lack a photograph, so counting by name alone gives a
+smaller number that looks plausible and is wrong. The count is by name and year: 217. Corrected in
+both places it appeared, and the counting basis is now written into the log itself, which is the only
+thing likely to stop a fourth pass rediscovering 216.
+
+With no new claims to sample, the verification went to the newest material on the live site instead:
+the three 2026-27 entries citing the *Herald*'s report of the 23 September meeting. All three hold.
+Resolution 4.6 F passed unanimously and Terry pitched it; the syllabus mental-health statement,
+Carter Smith's swearing-in and appointment as the second student member of the Faculty Senate
+Undergraduate Curriculum Committee after that committee doubled its student representation, Amelia
+Tucker as homecoming queen nominee and Barker on the Bluegrass Leadership Scholarship are all in the
+article; and the fall election entry's 20 freshman, six Gatton Academy, one graduate and one
+international candidates come to the 28 it claims, with the opening and closing times and Barker's
+remark on engagement all present. One clause looked like an over-claim and is not: the co-authorship
+with Senator At-Large Isaiah Wilson, and the resolution's introduction the week before, appear
+nowhere in the 23 September article but are both in the 15 September one, which the entry already
+carries as `src2`. Checked because it looked wrong; left alone because it is right.
+
+**Two items in the editor's standing brief are out of date and should be struck.** It describes #6,
+#7 and #8 as stale and still open; all three were closed on 18 August 2026. And the 4 August
+`research-*` branches still report large commit counts ahead of `main`, but every one of them has no
+merge base with `main` — they are the orphan snapshots `AGENT-LANDING.md` warns about, not work
+waiting to land. There is no unlanded research on them to rescue.
+
+`build.py`, `check_data.py` and `check_contrib.py` all run clean. `check_duplicates.py` prints the
+same four title pairs and the same single same-source pair as it did before, all of them pre-existing
+and all genuinely separate events on reading: a bill introduced and later defeated, a lawsuit planned
+and endorsed a month apart, designated-driver cards funded in November and handed out the following
+February, and three different items of business from one meeting report. Nothing merged, nothing cut.
+Counts unchanged: 61 years, 1968 events, 60 people have been president, 1111 pieces of legislation
+with every file present and a real PDF, 308 documents, 2650 recorded terms of office held by 1809
+people, 2613 of them (98%) with an account of what the person did, 48 people under more than one
+spelling, and a search index of 4949 records. The board is empty; nothing is open.
