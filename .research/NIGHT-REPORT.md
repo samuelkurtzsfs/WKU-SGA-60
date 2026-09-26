@@ -161,6 +161,13 @@ initiatives by charging a $5.00 sustainability fee to students"; Bill **25-23-S*
 the 20s of 12 March puts the arithmetic question beyond argument: the *Herald* runs one sequence
 across bills and resolutions together, SGA's sheets run two, and no constant connects them.
 
+One thing had to be caught in my own drafting, which is worth recording rather than hiding: the
+first version of this entry said the $500 was money the office *ran* its pantry, scholarships and
+Earth Day event on. The *Herald* says the funds "are planned to be used" for those things and
+reports no spending. That is the same advance-notice error this pass spent the day correcting in
+other people's work, written straight back into the archive by the person correcting it. Rewritten
+to say what was planned and that the outcome is not recorded.
+
 Unlike 15 February, the unanimity here **is** in the source: the article ends "All four pieces of
 legislation passed unanimously in the senate." Left standing. The entry moves from 22 February, the
 day it was printed, to 20 February, the day the meeting was held.
