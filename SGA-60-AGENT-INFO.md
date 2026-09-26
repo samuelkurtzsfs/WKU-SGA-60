@@ -7334,6 +7334,69 @@ caption to the 20 April 2016 results announcement prints it — and the frame is
 No file was added to or removed from `data/photos.json` or `data/photos/`. `build.py` and
 `check_data.py` both pass clean. Landed on `research-photos`.
 
+### Photograph run of 26 September (third pass, scheduled): both routes retested clean, a genuinely new pre-1970 lookup came back empty, and `wku.edu/sga`'s live directories checked and ruled out
+
+The stored brief for this trigger is still the frozen one naming Nick Todd, Katie Dawson, Jeanne
+Johnson and Reagan Gilley as portraitless. Checked directly against `data/photos.json` rather than
+trusting the note: all four, and all 73 `leaders` records, already carry a portrait, and have for
+over a month. `merge_photo_finds.py` (no `--write`) proposes nothing new: 0 to add, 0 to replace,
+the same 18 standing refusals, all already awaiting the editor. Those 18 are 17
+FACE-PROVED-PERSON-NOT-PROVED holds plus Blake Bowden's 2016-17 frame, a good single-subject
+Herald portrait whose caption and gallery never mention student government. The barred
+Stacy/Staci Kitchens pair is **not** among the 18: both sit in
+`data/photo-finds/_do-not-use.json`, which the merge script does not re-propose from, so a run
+counting them into the refusal list will not find them there. `research-photos` fast-forwarded
+cleanly onto `origin/main` (a real merge base, no conflicts).
+
+Retested both routes fresh before doing anything else. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
+answered `403` behind the Cloudflare "Just a moment..." challenge (`cf-mitigated: challenge`,
+tested against article 5695 with full navigation headers). `web.archive.org` reset the TLS
+handshake on two attempts fifteen seconds apart (`ws_closed_mid_exchange` at the proxy, `curl: (35)
+Recv failure`). Both exactly where every pass this month has left them; not retried further, per
+the pacing rule.
+
+Rebuilt the executive/senate officer-gap list directly from `data/years.json` against
+`data/photos.json`'s `leaders` array rather than trusting last month's saved figures: 217 records
+across 42 years, unchanged from the 25 September count. One entry in that list was a false
+positive worth recording so nobody re-flags it: 1969-70's organization block lists "Paul Gerard"
+(Senior Class President) with no suffix, while `photos.json` carries his portrait under "Paul
+Gerard, III" for that year — same person, same portrait already on file, the mismatch is a bare
+string comparison artefact and not a real gap.
+
+**Tried three names never before searched in this file: Carla Dotson, Pat Smith and Patricia
+Lanning, all 1966-67 Campus/Panhellenic/Women's-Residence-Hall representatives on the founding
+Congress roster, plus Mike McDaniel, a 1967-68 Campus Representative At Large.** All four are
+sourced in `years.json` only from the text roster (`UA3/3/1`, `dlsc_ua_records/1824` and `/508`),
+which carries no photograph. `data/herald-index-full.json` was grepped for all four names: the one
+"Pat Smith" hit is a different person entirely (a 1934 *Teachers College Heights* piece), and the
+"Mike McDaniel" hit is a sportswriter byline in the 2 March 1967 issue, not a subject. No hit for
+Dotson or Lanning at all. Even a hit would not have closed this out this session: 1966-67 and
+1967-68 are two of the years `archive.org`'s Talisman catalog does not hold (it runs 1971-81,
+1986-87 and a handful of older single volumes; nothing between 1966 and 1970), so a photograph for
+any of these four, if one exists, sits in the 1967 or 1968 Talisman on `digitalcommons.wku.edu`
+alone, behind the same closed `viewcontent.cgi`. Nothing to retry here without that route open.
+Confirmed positively on review, 26 September: `archive.org` itself answers (its advanced-search
+API returned `200`), and it holds Talisman 1943, 1946-47, 1963-65, 1971-81, 1986 and 1987 — nineteen
+volumes, none of them between 1966 and 1970. `archive.org/metadata/talisman1966west` through
+`talisman1970west` each answer `200` with an empty object, which is how that site reports an item
+that does not exist. So the gap is the catalogue's, not the route's: only `web.archive.org` is
+unreachable, and no future run should expect a 1966-70 Talisman to appear there.
+
+**Tried a route not in this file before: `www.wku.edu/sga`'s own live directories, on the theory
+that a still-hosted old cabinet page might carry headshots without needing Wayback at all.** The
+current homepage still links three 2018-2019 subdirectories by name
+(`2018-2019-executive/meetingrequest.php`, `2018-2019-judicial/`, `2018-2019-legislative/`), which
+answered `200` for the linked pages, `403` for a bare directory listing, and `404` for guessed
+sibling filenames (`index.php`, `cabinet.php`, `officers.php`) — there is no photo page in this
+directory to find, only the one linked administrative form. `/sga/about/history.php` (a live page,
+`200`) is a text history with no photographs at all, not even decorative ones — checked its `<img>`
+tags directly, all six are site chrome (logos, tracking pixels). Neither closes any gap; recorded
+so a future run does not re-guess the same filenames.
+
+No file was added to or removed from `data/photos.json` or `data/photos/`. `build.py` and
+`check_data.py` both pass clean (61 years, 1968 events, 60 presidents, all still portrayed). Landed
+on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
