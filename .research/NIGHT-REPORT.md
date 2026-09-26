@@ -33847,3 +33847,95 @@ nothing merged: 61 years, 1968 events, 60 people have been president, 1111 piece
 with every file present and a real PDF, 308 documents, 2650 recorded terms of office held by 1809
 people, 2613 of them (98%) with an account of what the person did, 48 people recorded under more
 than one spelling, and a search index of 4949 records. Nothing is open.
+
+# 26 September 2026 (sixth pass) — seven meetings in 2003-04 restored to the day they happened
+
+No pull request was open, and nothing has been pushed for review since the photograph run merged
+as #611 at half past three. The standing brief still names #6, #7 and #8 as stale and open; they
+have been closed since 18 August. Sixty-odd `research-*` branches remain on the remote, and the
+four most recent were opened rather than assumed dead: `research-editor-0926-fifth` and
+`research-editor-0923-sixth` differ from `main` only in holding earlier copies of this report,
+`research-photos` only in an earlier copy of the handoff, and `research-2026-27-fall` is the
+already-merged #583 of 24 September. None holds a sourced fact the archive does not have.
+
+With no diff to sample, the spot check went to the four duplicate pairs that `check_duplicates.py`
+has printed every night for weeks. Successive passes have recorded that they "stand where earlier
+passes left them" without saying why, so they were adjudicated this time and are set down here so
+the next pass need not defer them again. All four are genuinely two events:
+
+- **1997-98.** Bill 97-3-F, first read 4 November 1997 and carrying an X on its Pass line, is the
+  legislation. The *Herald* of 17 February 1998 reports the cards going out the next day. Three
+  months and two sources apart, and the February entry already says the archive holds that issue
+  only as a contents listing, which is the right limit for what is an advance notice.
+- **1991-92.** Bill #92-01-S introduced 28 January, from SGA's own legislation; the bill failing
+  after amendment on 6 February, from the *Herald*. Introduction and defeat are not one event.
+- **1971-72.** The Kentucky Civil Liberties Union planning court action, *Herald* 51:40 of
+  29 February, and Associated Students formally endorsing the suit, *Herald* 51:44 of 28 March.
+  A month apart, two issues.
+- **2003-04.** Concern voiced over plus/minus grading, and the unanimous vote against it three
+  weeks later. Both were read in full text this pass and are distinct.
+
+Reading those two 2003-04 articles end to end turned up something larger. Both are dated in this
+archive to the Thursday the *Herald* printed them, while both say in their first sentence that the
+business happened at Tuesday's meeting. A scan for the pattern found sixteen entries across eight
+years whose body names a weekday meeting the entry date contradicts, and seven of the sixteen are
+in 2003-04 alone — the whole of that year's *Herald*-sourced congress reporting.
+
+This cuts against the convention the archive follows everywhere else, and which the fourth pass of
+this same day settled on the Uber voucher entry: an event is dated when it happened, not when it
+was reported. `main` already holds 2024-02-13 citing the *Herald* of 15 February, and 2024-03-05
+citing the issue of 6 March. The date is the meeting; the `src` label is the issue that carried it.
+
+All seven were checked against the full text of their own article before anything was moved. Every
+one is published on a Thursday and speaks of the Tuesday just gone in the past tense — "at its
+Tuesday meeting", "at Tuesday night's congress meeting", "during its meeting Tuesday" — so the
+meeting is the Tuesday immediately before, and no date was inferred from arithmetic alone:
+
+| was | now | entry |
+|---|---|---|
+| 2003-09-18 | 2003-09-16 | IT vice president asks SGA to cut directory data |
+| 2003-09-25 | 2003-09-23 | SGA lines up against plus/minus grading |
+| 2003-10-16 | 2003-10-14 | SGA unanimously passes legislation against plus/minus grading |
+| 2003-10-30 | 2003-10-28 | Congress urged students to vote as the grading petition circulated |
+| 2003-11-20 | 2003-11-18 | SGA resolution seeks advance notice of class cancellations |
+| 2004-02-05 | 2004-02-03 | SGA budget frozen as Western absorbed $5.6 million in cuts |
+| 2004-02-26 | 2004-02-24 | SGA budget to fall by up to $17,000 |
+
+Every `src` label was left pointing at the issue that reported the meeting, which is what it is for.
+
+Twenty-two claims in those seven entries were put against the articles at the same time and all
+twenty-two held: the 350 signatures and the Homecoming tent on the Downing University Center south
+lawn; Watkins moving to suspend the by-laws; the $65,309.52 in the 2003-04 budget and the $7,400 in
+an Aramark contract and two foundation accounts the freeze did not touch; the $5.6 million ordered
+by Governor Fletcher's administration; Ransdell's "penalizing those who score the best"; Croney's
+committee questionnaire; Kirchmeyer's directory recommendation and the entry's care not to claim
+SGA adopted it; and the hour and a half of notice the cancellation resolution asked for.
+
+**One thing was rewritten rather than moved.** The 26 February entry made Nick Todd "SGA vice
+president", which in a year with an executive vice president of its own is the wrong office. The
+*Herald* calls him vice president of finance on 5 February and again on 26 February, and the entry
+now says so. He is the same Nick Todd elected president that March, and the correction matters
+because the office is how a reader tells the two roles apart.
+
+Nine of the sixteen entries are **not** touched and are left for a pass that can read their sources.
+They are single entries in 2005-06, 2011-12 (two), 2013-14 (two), 2015-16, 2019-20 (two) and
+2023-24, they come from several different sources rather than one year's newspaper, and at least one
+is a false positive of the scan rather than a fault: the 2011-12 entry dated to a Tuesday names a
+Friday because the Friday is the forum it was announcing, not the meeting that announced it. Dating
+those by arithmetic without reading the articles would be guessing, which is worse than the
+inconsistency.
+
+**The four commits carrying a `Co-authored-by` trailer are still on `main`,** unchanged from what
+the fourth pass recorded: `4af498ce`, `f88237c8`, `ed9347a8` and `841f8721`, all squash merges of
+#590 to #593 on 25 September. CLAUDE.md forbids the trailer and `AGENT-LANDING.md` records 105 of
+them being rewritten out of the history on 28 August, so this is that regression. It reaches the
+repository only: commit messages are not published and the generated `site/` is clean. Taking them
+out means rewriting four published commit messages and force-pushing `main`, which this routine is
+told never to do, so it stays for the owner. Today's own commits, this one included, are clean.
+
+`build.py`, `check_data.py` and `check_contrib.py` all run clean. `check_duplicates.py` prints the
+same four pairs and the same single same-source pair as before the change, so the re-dating created
+no new collision. Counts: 61 years, 1968 events, 60 people have been president, 1111 pieces of
+legislation with every file present and a real PDF, 308 documents, 2650 recorded terms of office
+held by 1809 people, 2613 of them (98%) with an account of what the person did, 48 people recorded
+under more than one spelling, and a search index of 4949 records. Nothing is open.
