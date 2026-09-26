@@ -52,9 +52,11 @@ read every caption on the page. None of the ten is a new dead end; all were alre
 
 One genuine near-miss, caught before it became a mistake. A Herald story on the SGA Judicial Council's
 February 2023 censure hearing of President Bornefeld captions a photograph "Speaker of the Senate
-Julie Mischuck" — a real, individually-identified officer photograph, for **Julie Mishchuk** (the
-Herald's caption spells it with one fewer letter than the Herald's own body text and than SGA's Senate
-minutes; the archive already follows the minutes' spelling). This looked like a new find until
+Julie Mischuck" — a real, individually-identified officer photograph, for **Julie Mishchuk** (both of
+the story's photograph captions spell the surname "Mischuck", where its own body text spells it
+"Mishchuk" throughout, as SGA's Senate minutes do; the two spellings run to eight letters each, so
+they differ in the letters and not in the length; the archive already follows the minutes' spelling).
+This looked like a new find until
 `check_data.py`-equivalent duplicate checking (the build's own consistency check) caught it: **this
 exact photograph, same article, same crop rationale, was already added to `photos.json` earlier the
 same day** (line ~10823, crediting the identical source with a note about the caption's spelling
