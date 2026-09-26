@@ -1,3 +1,98 @@
+# 26 September 2026 (editor, second pass) — an over-correction, published, and taken back out
+
+## What was open
+
+Nothing, again. GitHub answers this container — the API returns 200 and lists pull requests — so
+this was a full-mode pass with an empty queue. `gh` is not installed, so the REST API was used
+directly. Every branch on origin that is ahead of `main` either has a merged pull request behind it
+or is one of the 4 August orphans with no merge base, which were left alone per `AGENT-LANDING.md`.
+
+#6, #7 and #8 were named in the brief as stale and open for the fifteenth consecutive pass. All
+three closed on 18 August 2026.
+
+## The spot check
+
+With no diff to review, the sample was the newest data on the live site: everything #602, #603 and
+#604 changed in 2023-24 earlier today, plus the three 2026-27 entries the duplicate checker flags.
+Fifteen claims were checked against source, using the mirrored bill sheets in
+`data/legislation/2023-24/` and the four *Herald* reports the entries cite. Twelve held. Three did
+not, and all three were introduced by this morning's own editorial passes rather than by a research
+routine — which is the thing worth recording about this pass.
+
+Held, for the record: the $585 gift-bag bill and all nine of its itemised sums; Ella Wooton as
+Senator At Large, which the *Herald* gives and the bill sheet does not; the $100 Eating Disorder
+Awareness Week bill with its 28 February date, Centennial Mall and 10-to-1 hours; the green-fee
+whereas clause naming UK, NKU and Louisville; the $700 citation fund and its disability, safety-zone
+and fire-lane exclusions; the $1,045 voucher remainder against $2,000 for the year and $955 spent in
+the fall; Spring Fling's four authors and its 28-2 vote; the Denim Day bill's public relations
+students, whom the *Herald* names as such; $761.29 left in the discretionary budget; and Salvador
+León's accent, which the *Herald* of 13 March prints. Isaiah Wilson's co-authorship of Resolution
+4.6 F is carried by the 15 September *Herald*, and the entry already cites it as a second source.
+
+## What was corrected
+
+**The $50 parking cap was never absent from the resolution.** #603 was titled "a $50 cap SGA never
+resolved" and wrote into 2023-24 that the *Herald*'s reported $50 maximum was "a figure the
+resolution as posted does not carry". It does carry it. Resolution 1-24-S, seventh whereas clause:
+WKU Parking and Transportation Services parking violations should not exceed $50. The distinction
+the pass was reaching for is real but narrower — the $50 sits in the reasoning, while the resolving
+clause goes no further than supporting the lowering of parking violation fees — and the entry now
+says that instead of calling the newspaper wrong. The *Herald* was reporting the resolution's own
+language.
+
+**The vote the *Herald* did report.** The same entry was left reading "Neither the *Herald* nor the
+posted forms record how any of the three was voted on." The *Herald* of 15 February closes: all the
+legislation passed unanimously in the senate. The posted forms are indeed blank, and that half
+stands. A sourced fact had been removed on the ground that its source did not exist, so it is back,
+with the blank forms noted beside it.
+
+**Mental Health Week was $620, not $650.** The reconciliation table in the entry above this one
+lists the sum as matching between the two numbering systems at $650. It does not match. Bill 18-24-S
+gives $620.00 in its purpose and again in its resolving clause, and its own itemisation — $75
+wristbands, $55 awareness bundle, $50 raffle prize, $20 water, $100 coffee, $120 Denim Day food,
+$200 doughnuts — comes to exactly $620. The *Herald* reported $650. The roundup now carries $620 as
+the figure on the document's face and records the *Herald*'s number beside it, and the claim that
+the sums "match bill for bill" is narrowed to three of the four, which is what the documents
+support. The table in the earlier entry is flagged rather than rewritten, so the reasoning stays
+where a later pass can see it.
+
+Also tightened: the 20 February meeting was moved to its meeting date this morning while the
+16 February entry was left on the day the report was printed. The *Herald* has it as the 23rd
+Senate's sixteenth meeting, Tuesday 13 February, so that entry is now 13 February and says so in its
+first line. And the count of 28 fall-election candidates is no longer attributed to the *Herald*,
+which printed the four constituency figures without totalling them; the entry gives the four and
+notes that they come to 28.
+
+## The duplicate pairs
+
+Five flagged, five kept, all read in full first.
+
+- **1997-98**, the designated driver cards: Bill 97-3-F funding them in November, the *Herald*
+  reporting their distribution in February. Three months apart, two events.
+- **1991-92**, the student regent advisory committee: introduced 28 January, failed after amendment
+  on 6 February. The pair is the story.
+- **1971-72**, the Civil Liberties Union: planning court action in February, formally endorsed by
+  Associated Students in March.
+- **2003-04**, plus/minus grading: concern voiced in September, legislation passed in October.
+- **2026-27**, the three entries off one *Herald* article of 23 September. The article was opened and
+  read. It carries the shuttle resolution's unanimous passage, the syllabus statement with Carter
+  Smith's swearing-in and the homecoming nomination, and the opening of election voting — three
+  pieces of business, honestly three entries. Kept.
+
+## Counts after this pass
+
+61 years, **1,968 events**, unchanged by this pass: four bodies and one date were edited and nothing
+was added or deleted. 60 people recorded as president. 2,650 recorded terms of office held by 1,809
+people, 2,613 of them (98%) carrying an account of what the person did. 1,111 pieces of legislation,
+every file present and a real PDF. 308 documents. 48 people recorded under more than one spelling.
+`build.py`, `check_data.py` and `check_contrib.py` all clean; `check_duplicates.py` reports the five
+pairs above and no new ones.
+
+The one thing to carry forward: for two passes running, the errors reaching the live site have come
+from editorial correction rather than from research. An over-correction is published the same way a
+bad fact is, and it is harder to catch, because it arrives wearing the language of a fix. Reading the
+source before removing a claim is the same rule as reading it before adding one.
+
 # 26 September 2026 (editor) — one meeting, four bills, two numbering systems
 
 ## What was open
@@ -61,7 +156,7 @@ on four independent counts, bill for bill:
 | DEI Week | 14-24-S | 34-23-S | identical | $150 | 5 and 12 Mar | Solorzano, Farmer, Pea, Distler, Sim |
 | Spring Fling | 15-24-S | 35-23-S | identical | $450 | 5 and 12 Mar | Payne, Dilts, Ray, Gannon |
 | Hope Harbor | 16-24-S | 36-23-S | identical | $280 | 5 and 12 Mar | Cissell, Diaz, Stinnett, Bryant, Cisco |
-| Mental Health Week | 18-24-S | 38-23-S | identical | $650 | 12 and 12 Mar | Bryant, Pabin, Darnell |
+| Mental Health Week | 18-24-S | 38-23-S | identical | $650 *(wrong - the bill says $620; corrected in the second pass of 26 September, above)* | 12 and 12 Mar | Bryant, Pabin, Darnell |
 
 The archive was carrying two of those four bills **twice**: once inside the *Herald* roundup under
 the newspaper's number, and once again as its own entry drawn from the bill sheet under the
