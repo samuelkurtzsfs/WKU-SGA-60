@@ -192,18 +192,18 @@ events**. Two entries were added this pass and none was removed.
 
 ## Flagged, not fixed
 
-- **Two entries still to match**, both in 2023-24: 6 February and 9 February, which both cite
-  22-23-S for the bill at the centre of the León censure; and 11 April, citing 55-23-S. The method
-  above is proven three times over and the documents are on disk; what is left is the work. The fall
+- **Three entries still to match**, all in 2023-24: 6 February and 9 February, which both cite
+  22-23-S for the bill at the centre of the León censure, and 11 April, citing 55-23-S. Counted off
+  the file rather than from memory — an earlier draft of this paragraph said two. The method above
+  is proven three times over and the documents are on disk; what is left is the work. The fall
   entries (`-23-F`) are not affected — both counts agree there.
-- **The spring 2024 offset is not uniform.** Across the 12 March meeting the *Herald*'s number is
-  exactly the document's plus twenty, but that does not extend backwards: the *Herald*'s 18-23-S,
-  19-23-S, 25-23-S and 26-23-S of February 2024 cannot be the documents' numbers minus twenty.
-  Whatever the newspaper was counting, it was not counting with a fixed offset. Eight 2023-24
-  entries cite a spring `-23-S` number in all; the follow-up passes above reconciled 15 and
-  20 February and leave two still to match. None of them is wrong on its facts — the February entries were not re-verified this pass —
-  but none has been matched to a bill sheet either. That match is a clean, bounded job for a later
-  pass, and `data/legislation/2023-24/` already holds the documents to do it with.
+- **The offset is not uniform, and now there is a reason for it.** This bullet was written after
+  the first instalment, when all that was known was that 12 March ran at plus twenty and February
+  would not. Working February settled it: the gaps run 17, 17, 18 on the 13th and 23, 19, 20, 20 on
+  the 20th. The *Herald* keeps **one** running count across bills and resolutions together; SGA's
+  sheets keep **two**, one per type, each restarting in the spring. No constant can connect them,
+  and every match in this pass was made on title and sum instead. Ten 2023-24 entries now cite a
+  spring `-23-S` number, the two added today included; seven are reconciled and three are not.
 - **Two bill sheets are filed under the wrong name on wku.edu.** `bill_24_23_s.pdf` contains Bill
   24-24-S and `bill_33_23_s.pdf` contains Bill 33-24-S. The documents are right and the filenames
   are wrong, at the source. Nothing to fix here — `source_url` must keep pointing at the path the
