@@ -102,14 +102,17 @@ the bill.
 Also corrected: one entry spelled Salvador León without the accent, against every other entry in
 the year.
 
-## Counts after the pass
+## Counts after this first instalment
 
-61 years, **1,966 events**, unchanged. No entry was deleted: the duplication here was inside the
-entries rather than between them, two bills described a second time within a roundup that also
-covers two bills of its own, so removing it changed three bodies and no count. 60 people recorded
-as president, 2,650 recorded terms of office held
+61 years, **1,966 events**, unchanged at this point in the pass. No entry was deleted: the
+duplication here was inside the entries rather than between them, two bills described a second time
+within a roundup that also covers two bills of its own, so removing it changed three bodies and no
+count. 60 people recorded as president, 2,650 recorded terms of office held
 by 1,809 people, 2,613 of them (98%) with an account of what the person did, 1,111 pieces of
 legislation with every file present and a real PDF, 308 documents.
+
+*(The pass went on. The final figure is **1,968 events**, the two additions being the 20 February
+bills in the third instalment below. Everything else in this paragraph is unchanged.)*
 
 `build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py` reports
 the same four title pairs as every pass since September, all four read again this pass and all four
