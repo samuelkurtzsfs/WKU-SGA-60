@@ -33392,3 +33392,62 @@ president, 1111 pieces of legislation with every file present and a real PDF, 30
 2650 recorded terms of office held by 1809 people, 2613 of them (98%) with an account of what the
 person did, 48 people recorded under more than one spelling. 0 of 114 hardcoded event links now
 broken, down from 10. Nothing else is open.
+
+# 26 September 2026 — one photograph branch merged, its own arithmetic corrected
+
+One pull request open, #605, the photograph routine's run of the same morning on `research-photos`.
+It changed no `data/` file at all: the whole diff is a single new research log,
+`.research/photo-run-2026-09-26-scheduled.md`, recording a run that closed nothing new. That is a
+thin thing to publish but a right one to keep, because the log's value is stopping the next run
+repeating searches this one already made.
+
+The branch needed no merge from main — it already carried `origin/main`'s tip as its merge base, so
+the stale-branch warning in `AGENT-LANDING.md` did not apply.
+
+Because the diff makes no historical claim, the spot check fell on the report's account of itself,
+which is checkable line by line and was checked that way rather than taken on trust. Nine claims,
+all of which held: 61 years; 73 leader records with 0 lacking a portrait; 70 year-level photograph
+entries; the year-photograph gap standing at exactly 1994-95, 1995-96, 2000-01 and 2008-09; 216
+executive and senate officer records without a portrait; the Mishchuk file at 39,524 bytes; the
+`photos.json` entry at line 10823 already carrying the caption-spelling note; no `data/` file
+differing from main; and `build.py` with `check_data.py` clean. The 216 is worth a note for whoever
+checks it next, because a plausible way of counting gives 217: a person pictured in one year is
+pictured, so the count has to match on the name rather than on year-and-name.
+
+The Herald story behind the near-duplicate was opened rather than trusted, and says what the report
+says it says: both photograph captions spell the Speaker's surname "Mischuck", the body text spells
+it "Mishchuk" twenty-eight times, and Sean McInnis took the picture.
+
+One thing in the report was wrong, and is now right. It had the caption spelling the surname "with
+one fewer letter" than the body text. Both spellings run to eight letters — the difference is two
+c's against two h's, not a dropped letter. Corrected in place rather than cut, since the
+observation underneath it is sound and the arithmetic was the only false part.
+
+Two loose ends found while judging, neither this branch's doing and neither fixed here. Carter
+Smith was sworn into the senate on 22 September 2026 and appointed to the Faculty Senate
+Undergraduate Curriculum Committee, but appears in no `organization` block for 2026-27; he is
+recorded only under 2025-26, correctly, on the legislation he authored. And the fall election whose
+opening the archive records closed at 4 p.m. on 25 September, so a result now exists that the
+archive does not hold. Both are leads for the research routines, not corrections.
+
+`Mishchuk`/`Mischuck` has no entry in `data/name-aliases.json`. Left alone deliberately: CLAUDE.md
+says to flag a spelling doubt rather than fix it, and the discrepancy is already documented in full
+at the point where it matters, in the photograph's own source label.
+
+The five pairs `check_duplicates.py` prints were judged and all five stand as separate entries. Two
+are a bill's life rather than one event — the student regent advisory committee introduced on
+28 January 1992 and failing after amendment on 6 February, and the designated driver cards funded in
+November 1997 and distributed in February 1998. One is a month apart and a different actor, the
+Civil Liberties Union planning court action in February 1972 and Associated Students endorsing the
+suit in March. One is three weeks and two Herald articles, SGA objecting to plus/minus grading in
+September 2003 and passing legislation against it in October. The last is three 2026-27 entries
+sharing one article, which report three separate pieces of business. Nothing merged, nothing cut.
+
+The three branches this routine's standing brief still calls stale and open — #6 photographs, #7 the
+1980s, #8 the 2020s — have all been closed since 18 August. The brief is out of date on that point
+and no longer needs to carry it.
+
+Counts after the merge, unchanged by it: 61 years, 1968 events, 60 people have been president, 1111
+pieces of legislation with every file present and a real PDF, 308 documents, 1111 legislation files,
+2650 recorded terms of office held by 1809 people, 2613 of them (98%) with an account of what the
+person did, 48 people recorded under more than one spelling. Nothing else is open.
