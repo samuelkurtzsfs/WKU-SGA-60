@@ -1,3 +1,85 @@
+# 26 September 2026 (editor, fifth pass) — the photograph run merged after one arithmetic slip, and a blocked route shown to be a catalogue gap instead
+
+## What was open
+
+One pull request, #610, "Photograph run, 26 September (third pass)", on `research-photos`. Full mode:
+the GitHub API answers this container, `git push --dry-run` to a throwaway ref confirmed write
+access, and `gh` is not installed here as `AGENT-LANDING.md` says, so the MCP tools were used.
+
+#6, #7 and #8 were named in the brief as stale and open for the seventeenth consecutive pass. All
+three closed on 18 August 2026. That line in the brief has been wrong for six weeks.
+
+## What was reviewed
+
+#610 was documentation only: 53 lines added to `SGA-60-AGENT-INFO.md` and nothing whatever in
+`data/`, confirmed with an empty `git diff origin/main -- data/`. No new claim reached the public
+site by way of this branch. It had a real merge base on `main` and fast-forwarded.
+
+Eighteen of the run's claims were opened and checked rather than taken on its own report, and
+seventeen held exactly. All 73 `leaders` records carry a portrait, computed from the two files
+rather than read off the note; the four presidents the frozen trigger brief still calls portraitless
+all have one. The merge script's dry run reproduced to the number: nothing to add, nothing to
+replace, eighteen refusals. Both closed routes answered as described — `viewcontent.cgi` with a
+Cloudflare `403` carrying `cf-mitigated: challenge`, `web.archive.org` with a connection reset. The
+four founding-Congress names came back from the Herald index exactly as reported: nothing at all for
+Carla Dotson or Patricia Lanning, one Pat Smith in a 1934 *Teachers College Heights* piece who is
+plainly someone else, and one Mike McDaniel who is a byline on a sports story of 2 March 1967 rather
+than its subject. Both rejections are the trap discipline working: a hit that is a different person
+and a hit that is a writer, neither written up. The officer-gap figure reproduced at 217 records
+across 42 years, and 1969-70's single entry in it is the false positive the run flagged — the senate
+block lists "Paul Gerard" where `photos.json` files his portrait under "Paul Gerard, III". The
+`wku.edu/sga` directories answered 200, 403 and 404 where the run said, and the history page carries
+six images, every one of them site furniture.
+
+## What was corrected
+
+One claim did not hold. The run described the eighteen standing refusals as seventeen
+face-proved-person-not-proved holds "plus the barred Kitchens pair," which cannot add up and is not
+what the script prints. The eighteenth refusal is Blake Bowden's 2016-17 frame, a good single-subject
+*Herald* portrait whose caption and gallery never mention student government. Stacy and Staci
+Kitchens are barred somewhere else entirely, in `data/photo-finds/_do-not-use.json`, which the merge
+script does not re-propose from, so the pair is not in the refusal list at all.
+
+Rescued rather than cut: the paragraph now names Bowden as the eighteenth and says plainly that the
+Kitchens pair sits outside the count. Left alone it would have sent a later run hunting a Kitchens
+entry among the eighteen and finding none, or reading Bowden as cleared.
+
+## What was added
+
+The run's conclusion about 1966-68 rested on archive.org not holding those Talisman volumes, which
+it could not check with Wayback down. It is checkable, and it checks out. Archive.org itself answers
+— only `web.archive.org` is unreachable — and its Talisman holdings are 1943, 1946-47, 1963-65,
+1971-81, 1986 and 1987: nineteen volumes, none of them between 1966 and 1970. The metadata endpoint
+for `talisman1966west` through `talisman1970west` answers with an empty object in each case, which is
+how that site reports an item it does not have. So the gap belongs to the catalogue and not to a shut
+door, the run's conclusion now rests on positive evidence, and no later run need retry it.
+
+## Merged
+
+#610, squashed, after the correction was pushed to the branch. `build.py`, `check_data.py` and
+`check_contrib.py` all exit 0. `check_duplicates.py` printed the same four pairs and the one
+same-source trio as yesterday, against byte-identical data, and they stand: the designated-driver
+cards funded in November 1997 against their distribution the following February; the student regent
+advisory committee bill introduced on 28 January 1992 against its defeat after amendment on
+6 February; the Civil Liberties Union planning action in February 1972 against Associated Students
+endorsing the suit in March; the plus/minus grading fight across autumn 2003; and the three separate
+pieces of business in the *Herald* report of 23 September 2026. None merged.
+
+## Still open, and still not this routine's to fix
+
+The four commits on `main` from 25 September carrying a `Co-authored-by: Claude` trailer are still
+there, unchanged: `4af498ce`, `f88237c8`, `ed9347a8` and `841f8721`. They remain the only four in the
+history, today's merge is clean, and the generated `site/` is clean — every match for "anthropic" in
+it is the word "philanthropic". Taking them out means rewriting published commit messages and
+force-pushing `main`, which this routine is told never to do. It is the owner's call.
+
+## Counts after the merge
+
+61 years, 1968 events, 60 people have been president. 1111 pieces of legislation, every file present
+and a real PDF. 308 documents. 2650 recorded terms of office held by 1809 people, 2613 of them (98%)
+with an account of what the person did. 48 people recorded under more than one spelling or name. A
+search index of 4949 records. Nothing is open.
+
 # 26 September 2026 (editor, third pass) — this morning's corrections checked against the documents that prompted them
 
 ## What was open
