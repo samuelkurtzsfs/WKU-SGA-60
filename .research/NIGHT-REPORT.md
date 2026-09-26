@@ -149,19 +149,47 @@ Gained from the documents in the same edit: the $1,045 is the spring remainder o
 voucher allocation, $955 of it spent in the fall — which the entry now says — and Anne-Marie Wright
 joins Reed as an author the entry had not named.
 
+## A third pass: 20 February, and two bills nobody had written up
+
+The method held again, and this time it found a hole rather than an error.
+
+**2024-02-22** cited two Robinson measures by the *Herald*'s numbers. Both match a bill sheet
+verbatim: Resolution **26-23-S** is **Resolution 3-24-S**, "Resolution to encourage sustainability
+initiatives by charging a $5.00 sustainability fee to students"; Bill **25-23-S** is **Bill
+6-24-S**, "Funding for the Office of Sustainability", $500. Both carry a second reading of
+20 February 2024. The gaps this time are **23 and 19**, which with the 17, 17, 18 of 13 February and
+the 20s of 12 March puts the arithmetic question beyond argument: the *Herald* runs one sequence
+across bills and resolutions together, SGA's sheets run two, and no constant connects them.
+
+Unlike 15 February, the unanimity here **is** in the source: the article ends "All four pieces of
+legislation passed unanimously in the senate." Left standing. The entry moves from 22 February, the
+day it was printed, to 20 February, the day the meeting was held.
+
+**"All four" is the point.** The entry covered two of the four bills passed that night. The other
+two had no entry anywhere in the archive, though both are documented on disk and both were reported:
+
+- **Bill 7-24-S** (*Herald* 27-23-S), $585 for gift bags handed out at SGA tabling, itemised on the
+  bill sheet down to $19.99 of fidgets and $34.95 of packaging. Robinson and senator at large Ella
+  Wooton.
+- **Bill 10-24-S** (*Herald* 30-23-S), $100 for National Eating Disorder Awareness Week tabling in
+  Centennial Mall on 28 February, 10 a.m. to 1 p.m. — affirmation keychains, NEDA ribbons and
+  bracelets. Livi Ray, Savanna Kurtz and Chloe Ralston.
+
+Both written up from the bill sheet with the *Herald* beside it. That takes the archive to **1,968
+events**. Two entries were added this pass and none was removed.
+
 ## Flagged, not fixed
 
-- **Four entries still to match**, all in 2023-24: 6 February and 9 February, which both cite
-  22-23-S for the bill at the centre of the León censure; 22 February, citing 25-23-S and 26-23-S
-  for the sustainability fee and the Office of Sustainability grant; and 11 April, citing 55-23-S.
-  The method above is proven and the documents are on disk; what is left is the work. The fall
+- **Two entries still to match**, both in 2023-24: 6 February and 9 February, which both cite
+  22-23-S for the bill at the centre of the León censure; and 11 April, citing 55-23-S. The method
+  above is proven three times over and the documents are on disk; what is left is the work. The fall
   entries (`-23-F`) are not affected — both counts agree there.
 - **The spring 2024 offset is not uniform.** Across the 12 March meeting the *Herald*'s number is
   exactly the document's plus twenty, but that does not extend backwards: the *Herald*'s 18-23-S,
   19-23-S, 25-23-S and 26-23-S of February 2024 cannot be the documents' numbers minus twenty.
   Whatever the newspaper was counting, it was not counting with a fixed offset. Eight 2023-24
-  entries cite a spring `-23-S` number in all; the follow-up pass above reconciled 15 February and
-  leaves four still to match. None of them is wrong on its facts — the February entries were not re-verified this pass —
+  entries cite a spring `-23-S` number in all; the follow-up passes above reconciled 15 and
+  20 February and leave two still to match. None of them is wrong on its facts — the February entries were not re-verified this pass —
   but none has been matched to a bill sheet either. That match is a clean, bounded job for a later
   pass, and `data/legislation/2023-24/` already holds the documents to do it with.
 - **Two bill sheets are filed under the wrong name on wku.edu.** `bill_24_23_s.pdf` contains Bill
