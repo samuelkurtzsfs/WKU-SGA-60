@@ -1,3 +1,137 @@
+# 26 September 2026 (editor, third pass) — this morning's corrections checked against the documents that prompted them
+
+## What was open
+
+Nothing. The GitHub API answers this container, so this was a full-mode pass with an empty queue:
+`list_pull_requests` returns an empty array, and a `git push --dry-run` to a throwaway ref confirms
+write access. `gh` is not installed here, as `AGENT-LANDING.md` says; the MCP GitHub tools were used
+instead.
+
+#6, #7 and #8 were named in the brief as stale and open for the sixteenth consecutive pass. All
+three closed on 18 August 2026.
+
+Four branches on origin sit ahead of `main` by commit count. None carries anything main lacks.
+`research-2026-27-fall` looks like ten unlanded autumn entries under a three-dot diff, but that diff
+only shows the branch side of an old merge base: compared tree to tree, main already holds all ten,
+landed by another route, and the branch is otherwise behind. The other three —
+`research-editor-0922-midday`, `research-editor-0923-sixth` and
+`research-night-report-2026-09-22-evening` — are stale snapshots whose night-report entries are
+already on main, and which would delete between 2,005 and 3,124 lines of it. Left alone. The rest of
+the `research-*` branches have no merge base with main and are the 4 August orphans
+`AGENT-LANDING.md` warns about.
+
+## The spot check
+
+Two samples, both of the newest material on the live site, since there was no diff to review.
+
+**The autumn of 2026, all ten entries, against six *Herald* articles.** This is the sixtieth year's
+own record and the newest writing in the archive, and it had not been checked end to end. Every one
+of the ten held. The eight committee chairs and the Secretary of the Senate sworn in on 25 August,
+all nine names and posts; the $100 budget increase to $113,481 and the vote set for the following
+week; the budget's approval with $27,000 in stipends and $23,000 in scholarships, five sworn in,
+three of them new senators, two senator-at-large seats left empty; the university's definition of a
+non-traditional student and the four scholarships sharing one application form; Bryce Combs, freshman
+meteorology major, and his $1,000; Organizational Aid at $500 a group inside $10,000 a semester, the
+29 September deadline, the ten-person committee and the thirty-point scale; the lending and voucher
+lists down to the spikeball sets; amendment 10.1.2 passing unanimously and Cayden Bussell sworn in;
+the counselling centre fully staffed under budget and able to work preventively; the election codes
+in detail — 4.30 p.m. on 16 September, two posters a floor at 20 inches square, chalk that washes
+off, five days to clear up; Constitution Fest's 250-odd pocket constitutions, its four outside
+tables and Craig Lonas's donated canvas; Resolution 4.6 F passing unanimously with Isaiah Wilson's
+co-authorship carried by the 15 September issue as a second source; the syllabus statement from the
+spring, Carter Smith's appointment as the second student member, Amelia Tucker for homecoming queen;
+and the fall election's four constituency figures.
+
+Two entries deserve a note for having been written honestly rather than smoothly. The raffle entry
+records that the *Herald* gave 1,744 one week and 1,174 the next, and prints both. And the fall
+election entry no longer claims the *Herald* counted 28 candidates, because it did not; it gives the
+four figures and says they come to 28. Neither is a defect.
+
+**This morning's three corrections, against the primary documents.** The second pass of today made
+them; this pass checked them as published, which the pass that wrote them could not do. All three
+hold on the face of the documents.
+
+- Resolution 1-24-S, seventh whereas clause: WKU Parking and Transportation Services parking
+  violations should not exceed $50. The resolving clause goes no further than supporting the
+  lowering of parking violation fees. Authors Sydney Denney and Donte Reed, second reading 2/13/24,
+  Pass, Fail and Other all blank in the text layer.
+- Bill 18-24-S: $620.00 in the purpose, $620.00 in the resolving clause, and an itemisation of
+  $75, $55, $50, $20, $100, $120 and $200 that sums to exactly $620. The *Herald* reported $650.
+- The *Herald* of 15 February 2024 does report the vote. It calls the meeting the 23rd Senate's
+  sixteenth, on Tuesday 13 February, and closes by saying all the legislation passed unanimously.
+  The move of that entry to 13 February is right, and the second reading falling on the same day is
+  a coincidence of the calendar rather than the reasoning behind the date.
+
+## What was cut
+
+One numeric claim, trimmed to what the document resolves.
+
+The 13 February 2024 entry had the third measure of the night putting "the $1,045 left in the
+legislative voucher programme" into Dental Hygiene Center and ID Center vouchers. Bill 5-24-S says
+$1,045 is the remainder, but its resolving clause splits $1,040 of it — $650 to the Dental Hygiene
+Clinic, $390 to the ID Center — and sends the odd $5 back to the legislative discretionary budget.
+Five dollars is not much, but the operative clause is the operative clause, and the entry now
+carries the split and the returned $5. Nothing else in the entry changed. The $2,000 for the year
+and the $955 spent in the fall are both on the bill sheet and stand.
+
+## Flagged, not changed
+
+**The *Herald*'s $50 is not quite the resolution's $50.** The newspaper's sentence reads that the
+resolution would allow SGA to support the lowering of student parking fees to a maximum of $50. The
+resolution's seventh whereas puts the $50 on violations. The entry now says the whereas clause
+carries "the maximum the *Herald* reported", which quietly settles an ambiguity the *Herald* left
+open — a cap on the pass, or a cap on the fine. Nothing on the site is false as it stands, and this
+entry has already been rewritten twice today, so it is recorded here with the newspaper's wording in
+hand rather than churned a third time. A later pass can decide with the sentence in front of it.
+
+**Gabi Pace holds two titles in 2026-27, each sourced.** The 25 August entry swears her in as chair
+of Outreach and Relations, which is what that day's *Herald* prints. The year's executive table has
+her as Chief of Staff, which the *Herald* photograph caption of 19 September also gives. Both halves
+are cited and the year page shows both. No officer has been invented out of a chairmanship, which is
+the trap that runs the other way, but a reader sees the two and cannot tell whether she moved or one
+report is loose. It needs the intervening minutes, not a guess.
+
+**2026-27 records no committee chairs.** Eight are named, with their committees, in the 25 August
+entry off a solid source, and the year's `organization.senate` block carries no `committees` list at
+all and no `size`. That is a filling job with the sourcing already done, and the likeliest piece of
+work available in the sixtieth year.
+
+**Bill 2-24-S excludes two zones, not three.** Its eighth whereas bars students cited for parking in
+disability parking or a fire lane. The entry also says safety zones, which is what the *Herald*
+prints. The entry cites the *Herald*, so it follows its source and stands; the discrepancy is
+between the newspaper and the bill sheet, not inside the archive.
+
+## The duplicate pairs
+
+Five flagged, five kept. Each pair was read in full before judging, and these are the same five the
+last pass judged.
+
+- **1997-98**, the designated driver cards: Bill 97-3-F funding them in November, the *Herald*
+  reporting their distribution in February. Two events, three months apart. The February entry is
+  also careful to say the archive holds that issue only as a contents listing.
+- **1991-92**, the student regent advisory committee: Bill #92-01-S introduced 28 January, failed
+  after amendment on 6 February. Introduction and defeat are the story.
+- **1971-72**, the Civil Liberties Union: planning court action in February, formally endorsed by
+  Associated Students in March, a month apart and in different issues.
+- **2003-04**, plus/minus grading: concern voiced on 25 September, legislation passed unanimously on
+  16 October.
+- **2026-27**, two entries off the *Herald* of 23 September: the syllabus statement with Carter
+  Smith's appointment and the homecoming nomination, and the opening of election voting. Different
+  business from one meeting report.
+
+## Merged
+
+Nothing. There was nothing open to merge.
+
+## Counts after this pass
+
+61 years, **1,968 events**, unchanged: one body was edited and nothing added or removed. 60 people
+recorded as president. 2,650 recorded terms of office held by 1,809 people, 2,613 of them (98%)
+carrying an account of what the person did. 1,111 pieces of legislation, every file present and a
+real PDF. 308 documents. 48 people recorded under more than one spelling. 4,949 search records.
+`build.py`, `check_data.py` and `check_contrib.py` all clean; `check_duplicates.py` reports the five
+pairs above and no new ones.
+
 # 26 September 2026 (editor, second pass) — an over-correction, published, and taken back out
 
 ## What was open
