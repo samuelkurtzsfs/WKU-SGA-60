@@ -11,9 +11,10 @@ one open.
 Re-verified programmatically rather than by trusting the prior reports: **0 of the 73 leader records
 (every president and every student regent, including the four originally-named targets — Nick Todd,
 Katie Dawson, Jeanne Johnson, Reagan Gilley) lack a portrait.** All four target files confirmed
-present on disk and starting `FF D8 FF E0`. Priorities 1 and 2 are fully done. 216 executive/senate
+present on disk and starting `FF D8 FF E0`. Priorities 1 and 2 are fully done. 217 executive/senate
 officer records and 4 years (1994-95, 1995-96, 2000-01, 2008-09) still lack a photograph — the same
-counts the second pass left.
+counts the second pass left. (217, counting by name and year, is the figure the second pass recorded
+and the editor's earlier note settled; this log first read 216 and was corrected on review.)
 
 ## Both long-blocked access routes, tested fresh this session, both still shut
 
@@ -57,5 +58,5 @@ does not spend a request finding that out again.
   flipped open and shut across different container instances within the same week — but a third
   identical test within the same day adds nothing once two runs have already confirmed the same
   signature.
-- Nothing else in the four-year year-photograph gap or the 216-record officer gap changed hands this
+- Nothing else in the four-year year-photograph gap or the 217-record officer gap changed hands this
   run.
