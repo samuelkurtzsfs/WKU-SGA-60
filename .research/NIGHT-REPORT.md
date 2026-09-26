@@ -1,3 +1,85 @@
+# 26 September 2026 (editor, fifth pass) — the photograph run merged after one arithmetic slip, and a blocked route shown to be a catalogue gap instead
+
+## What was open
+
+One pull request, #610, "Photograph run, 26 September (third pass)", on `research-photos`. Full mode:
+the GitHub API answers this container, `git push --dry-run` to a throwaway ref confirmed write
+access, and `gh` is not installed here as `AGENT-LANDING.md` says, so the MCP tools were used.
+
+#6, #7 and #8 were named in the brief as stale and open for the seventeenth consecutive pass. All
+three closed on 18 August 2026. That line in the brief has been wrong for six weeks.
+
+## What was reviewed
+
+#610 was documentation only: 53 lines added to `SGA-60-AGENT-INFO.md` and nothing whatever in
+`data/`, confirmed with an empty `git diff origin/main -- data/`. No new claim reached the public
+site by way of this branch. It had a real merge base on `main` and fast-forwarded.
+
+Eighteen of the run's claims were opened and checked rather than taken on its own report, and
+seventeen held exactly. All 73 `leaders` records carry a portrait, computed from the two files
+rather than read off the note; the four presidents the frozen trigger brief still calls portraitless
+all have one. The merge script's dry run reproduced to the number: nothing to add, nothing to
+replace, eighteen refusals. Both closed routes answered as described — `viewcontent.cgi` with a
+Cloudflare `403` carrying `cf-mitigated: challenge`, `web.archive.org` with a connection reset. The
+four founding-Congress names came back from the Herald index exactly as reported: nothing at all for
+Carla Dotson or Patricia Lanning, one Pat Smith in a 1934 *Teachers College Heights* piece who is
+plainly someone else, and one Mike McDaniel who is a byline on a sports story of 2 March 1967 rather
+than its subject. Both rejections are the trap discipline working: a hit that is a different person
+and a hit that is a writer, neither written up. The officer-gap figure reproduced at 217 records
+across 42 years, and 1969-70's single entry in it is the false positive the run flagged — the senate
+block lists "Paul Gerard" where `photos.json` files his portrait under "Paul Gerard, III". The
+`wku.edu/sga` directories answered 200, 403 and 404 where the run said, and the history page carries
+six images, every one of them site furniture.
+
+## What was corrected
+
+One claim did not hold. The run described the eighteen standing refusals as seventeen
+face-proved-person-not-proved holds "plus the barred Kitchens pair," which cannot add up and is not
+what the script prints. The eighteenth refusal is Blake Bowden's 2016-17 frame, a good single-subject
+*Herald* portrait whose caption and gallery never mention student government. Stacy and Staci
+Kitchens are barred somewhere else entirely, in `data/photo-finds/_do-not-use.json`, which the merge
+script does not re-propose from, so the pair is not in the refusal list at all.
+
+Rescued rather than cut: the paragraph now names Bowden as the eighteenth and says plainly that the
+Kitchens pair sits outside the count. Left alone it would have sent a later run hunting a Kitchens
+entry among the eighteen and finding none, or reading Bowden as cleared.
+
+## What was added
+
+The run's conclusion about 1966-68 rested on archive.org not holding those Talisman volumes, which
+it could not check with Wayback down. It is checkable, and it checks out. Archive.org itself answers
+— only `web.archive.org` is unreachable — and its Talisman holdings are 1943, 1946-47, 1963-65,
+1971-81, 1986 and 1987: nineteen volumes, none of them between 1966 and 1970. The metadata endpoint
+for `talisman1966west` through `talisman1970west` answers with an empty object in each case, which is
+how that site reports an item it does not have. So the gap belongs to the catalogue and not to a shut
+door, the run's conclusion now rests on positive evidence, and no later run need retry it.
+
+## Merged
+
+#610, squashed, after the correction was pushed to the branch. `build.py`, `check_data.py` and
+`check_contrib.py` all exit 0. `check_duplicates.py` printed the same four pairs and the one
+same-source trio as yesterday, against byte-identical data, and they stand: the designated-driver
+cards funded in November 1997 against their distribution the following February; the student regent
+advisory committee bill introduced on 28 January 1992 against its defeat after amendment on
+6 February; the Civil Liberties Union planning action in February 1972 against Associated Students
+endorsing the suit in March; the plus/minus grading fight across autumn 2003; and the three separate
+pieces of business in the *Herald* report of 23 September 2026. None merged.
+
+## Still open, and still not this routine's to fix
+
+The four commits on `main` from 25 September carrying a `Co-authored-by: Claude` trailer are still
+there, unchanged: `4af498ce`, `f88237c8`, `ed9347a8` and `841f8721`. They remain the only four in the
+history, today's merge is clean, and the generated `site/` is clean — every match for "anthropic" in
+it is the word "philanthropic". Taking them out means rewriting published commit messages and
+force-pushing `main`, which this routine is told never to do. It is the owner's call.
+
+## Counts after the merge
+
+61 years, 1968 events, 60 people have been president. 1111 pieces of legislation, every file present
+and a real PDF. 308 documents. 2650 recorded terms of office held by 1809 people, 2613 of them (98%)
+with an account of what the person did. 48 people recorded under more than one spelling or name. A
+search index of 4949 records. Nothing is open.
+
 # 26 September 2026 (editor, third pass) — this morning's corrections checked against the documents that prompted them
 
 ## What was open
@@ -33765,3 +33847,95 @@ nothing merged: 61 years, 1968 events, 60 people have been president, 1111 piece
 with every file present and a real PDF, 308 documents, 2650 recorded terms of office held by 1809
 people, 2613 of them (98%) with an account of what the person did, 48 people recorded under more
 than one spelling, and a search index of 4949 records. Nothing is open.
+
+# 26 September 2026 (sixth pass) — seven meetings in 2003-04 restored to the day they happened
+
+No pull request was open, and nothing has been pushed for review since the photograph run merged
+as #611 at half past three. The standing brief still names #6, #7 and #8 as stale and open; they
+have been closed since 18 August. Sixty-odd `research-*` branches remain on the remote, and the
+four most recent were opened rather than assumed dead: `research-editor-0926-fifth` and
+`research-editor-0923-sixth` differ from `main` only in holding earlier copies of this report,
+`research-photos` only in an earlier copy of the handoff, and `research-2026-27-fall` is the
+already-merged #583 of 24 September. None holds a sourced fact the archive does not have.
+
+With no diff to sample, the spot check went to the four duplicate pairs that `check_duplicates.py`
+has printed every night for weeks. Successive passes have recorded that they "stand where earlier
+passes left them" without saying why, so they were adjudicated this time and are set down here so
+the next pass need not defer them again. All four are genuinely two events:
+
+- **1997-98.** Bill 97-3-F, first read 4 November 1997 and carrying an X on its Pass line, is the
+  legislation. The *Herald* of 17 February 1998 reports the cards going out the next day. Three
+  months and two sources apart, and the February entry already says the archive holds that issue
+  only as a contents listing, which is the right limit for what is an advance notice.
+- **1991-92.** Bill #92-01-S introduced 28 January, from SGA's own legislation; the bill failing
+  after amendment on 6 February, from the *Herald*. Introduction and defeat are not one event.
+- **1971-72.** The Kentucky Civil Liberties Union planning court action, *Herald* 51:40 of
+  29 February, and Associated Students formally endorsing the suit, *Herald* 51:44 of 28 March.
+  A month apart, two issues.
+- **2003-04.** Concern voiced over plus/minus grading, and the unanimous vote against it three
+  weeks later. Both were read in full text this pass and are distinct.
+
+Reading those two 2003-04 articles end to end turned up something larger. Both are dated in this
+archive to the Thursday the *Herald* printed them, while both say in their first sentence that the
+business happened at Tuesday's meeting. A scan for the pattern found sixteen entries across eight
+years whose body names a weekday meeting the entry date contradicts, and seven of the sixteen are
+in 2003-04 alone — the whole of that year's *Herald*-sourced congress reporting.
+
+This cuts against the convention the archive follows everywhere else, and which the fourth pass of
+this same day settled on the Uber voucher entry: an event is dated when it happened, not when it
+was reported. `main` already holds 2024-02-13 citing the *Herald* of 15 February, and 2024-03-05
+citing the issue of 6 March. The date is the meeting; the `src` label is the issue that carried it.
+
+All seven were checked against the full text of their own article before anything was moved. Every
+one is published on a Thursday and speaks of the Tuesday just gone in the past tense — "at its
+Tuesday meeting", "at Tuesday night's congress meeting", "during its meeting Tuesday" — so the
+meeting is the Tuesday immediately before, and no date was inferred from arithmetic alone:
+
+| was | now | entry |
+|---|---|---|
+| 2003-09-18 | 2003-09-16 | IT vice president asks SGA to cut directory data |
+| 2003-09-25 | 2003-09-23 | SGA lines up against plus/minus grading |
+| 2003-10-16 | 2003-10-14 | SGA unanimously passes legislation against plus/minus grading |
+| 2003-10-30 | 2003-10-28 | Congress urged students to vote as the grading petition circulated |
+| 2003-11-20 | 2003-11-18 | SGA resolution seeks advance notice of class cancellations |
+| 2004-02-05 | 2004-02-03 | SGA budget frozen as Western absorbed $5.6 million in cuts |
+| 2004-02-26 | 2004-02-24 | SGA budget to fall by up to $17,000 |
+
+Every `src` label was left pointing at the issue that reported the meeting, which is what it is for.
+
+Twenty-two claims in those seven entries were put against the articles at the same time and all
+twenty-two held: the 350 signatures and the Homecoming tent on the Downing University Center south
+lawn; Watkins moving to suspend the by-laws; the $65,309.52 in the 2003-04 budget and the $7,400 in
+an Aramark contract and two foundation accounts the freeze did not touch; the $5.6 million ordered
+by Governor Fletcher's administration; Ransdell's "penalizing those who score the best"; Croney's
+committee questionnaire; Kirchmeyer's directory recommendation and the entry's care not to claim
+SGA adopted it; and the hour and a half of notice the cancellation resolution asked for.
+
+**One thing was rewritten rather than moved.** The 26 February entry made Nick Todd "SGA vice
+president", which in a year with an executive vice president of its own is the wrong office. The
+*Herald* calls him vice president of finance on 5 February and again on 26 February, and the entry
+now says so. He is the same Nick Todd elected president that March, and the correction matters
+because the office is how a reader tells the two roles apart.
+
+Nine of the sixteen entries are **not** touched and are left for a pass that can read their sources.
+They are single entries in 2005-06, 2011-12 (two), 2013-14 (two), 2015-16, 2019-20 (two) and
+2023-24, they come from several different sources rather than one year's newspaper, and at least one
+is a false positive of the scan rather than a fault: the 2011-12 entry dated to a Tuesday names a
+Friday because the Friday is the forum it was announcing, not the meeting that announced it. Dating
+those by arithmetic without reading the articles would be guessing, which is worse than the
+inconsistency.
+
+**The four commits carrying a `Co-authored-by` trailer are still on `main`,** unchanged from what
+the fourth pass recorded: `4af498ce`, `f88237c8`, `ed9347a8` and `841f8721`, all squash merges of
+#590 to #593 on 25 September. CLAUDE.md forbids the trailer and `AGENT-LANDING.md` records 105 of
+them being rewritten out of the history on 28 August, so this is that regression. It reaches the
+repository only: commit messages are not published and the generated `site/` is clean. Taking them
+out means rewriting four published commit messages and force-pushing `main`, which this routine is
+told never to do, so it stays for the owner. Today's own commits, this one included, are clean.
+
+`build.py`, `check_data.py` and `check_contrib.py` all run clean. `check_duplicates.py` prints the
+same four pairs and the same single same-source pair as before the change, so the re-dating created
+no new collision. Counts: 61 years, 1968 events, 60 people have been president, 1111 pieces of
+legislation with every file present and a real PDF, 308 documents, 2650 recorded terms of office
+held by 1809 people, 2613 of them (98%) with an account of what the person did, 48 people recorded
+under more than one spelling, and a search index of 4949 records. Nothing is open.
