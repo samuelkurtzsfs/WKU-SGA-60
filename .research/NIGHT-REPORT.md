@@ -115,8 +115,47 @@ legislation with every file present and a real PDF, 308 documents.
 the same four title pairs as every pass since September, all four read again this pass and all four
 genuinely separate events, and the one same-source pair in 2026-27, also genuinely two things.
 
+## A second pass over the same defect, after the merge
+
+Having established that the two counts exist, the obvious next question is how many other entries
+are affected. Eight entries in 2023-24 cite a spring `-23-S` number. Three of those are the March
+ones just reconciled, which now carry both counts deliberately. That leaves five, and working the
+first of them turned up an over-claim.
+
+**2024-02-15** cited three measures by the *Herald*'s numbers. All three match a bill sheet on title
+and sum: Resolution **18-23-S** is **Resolution 1-24-S**, "Resolution to Support Lowering Parking
+Fees Incurred by Students", word for word; Bill **19-23-S** is **Bill 2-24-S**, "Funding to Pay for
+Student Parking Fees", $700; Bill **23-23-S** is **Bill 5-24-S**, "Funding for vouchers for the WKU
+Dental Hygiene Center and ID Center". All three carry a second reading of 13 February 2024.
+
+The gaps between the two counts are **17, 17 and 18** — against 20 at the March meeting. So the
+offset is not a constant and cannot be computed. **The match has to be made on title and sum, one
+bill at a time.** That is the method for the four still outstanding, and it works.
+
+Two corrections fell out of making it, which is the argument for doing it by hand:
+
+- **"All the legislation passed unanimously" was not in the source.** The *Herald* of 15 February
+  says only "legislation was passed during the meeting" and gives no vote count anywhere in the
+  article; the posted forms leave Pass, Fail and Other blank on all three. Cut to the fact that
+  three measures passed, with a line saying neither source records how they were voted on. This is
+  trap 2a in its plainest form and it had been live since the entry was written.
+- **The $50 cap is the newspaper's figure, not SGA's.** The *Herald* reported the resolution as
+  supporting "a maximum of $50". Resolution 1-24-S contains no such figure: its resolving clause
+  supports "the lowering of parking violation fees incurred by students" and stops. The entry had
+  the $50 as SGA's own position. Rewritten to attribute it to the *Herald* and to say what the
+  resolution actually resolves.
+
+Gained from the documents in the same edit: the $1,045 is the spring remainder of a $2,000 annual
+voucher allocation, $955 of it spent in the fall — which the entry now says — and Anne-Marie Wright
+joins Reed as an author the entry had not named.
+
 ## Flagged, not fixed
 
+- **Four entries still to match**, all in 2023-24: 6 February and 9 February, which both cite
+  22-23-S for the bill at the centre of the León censure; 22 February, citing 25-23-S and 26-23-S
+  for the sustainability fee and the Office of Sustainability grant; and 11 April, citing 55-23-S.
+  The method above is proven and the documents are on disk; what is left is the work. The fall
+  entries (`-23-F`) are not affected — both counts agree there.
 - **The spring 2024 offset is not uniform.** Across the 12 March meeting the *Herald*'s number is
   exactly the document's plus twenty, but that does not extend backwards: the *Herald*'s 18-23-S,
   19-23-S, 25-23-S and 26-23-S of February 2024 cannot be the documents' numbers minus twenty.
