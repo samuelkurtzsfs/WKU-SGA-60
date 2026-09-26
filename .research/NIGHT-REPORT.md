@@ -161,10 +161,12 @@ initiatives by charging a $5.00 sustainability fee to students"; Bill **25-23-S*
 the 20s of 12 March puts the arithmetic question beyond argument: the *Herald* runs one sequence
 across bills and resolutions together, SGA's sheets run two, and no constant connects them.
 
-One thing had to be caught in my own drafting, which is worth recording rather than hiding: the
+Two things had to be caught in my own drafting, which is worth recording rather than hiding. The
 first version of this entry said the $500 was money the office *ran* its pantry, scholarships and
-Earth Day event on. The *Herald* says the funds "are planned to be used" for those things and
-reports no spending. That is the same advance-notice error this pass spent the day correcting in
+Earth Day event on, and the first version of the Eating Disorder Awareness entry said the $100
+*bought* keychains and ribbons. The *Herald* says the sustainability funds "are planned to be used"
+and reports no spending; the NEDA bill says its money "will be used to purchase" and the archive
+holds nothing on how the day went. That is the same advance-notice error this pass spent the day correcting in
 other people's work, written straight back into the archive by the person correcting it. Rewritten
 to say what was planned and that the outcome is not recorded.
 
