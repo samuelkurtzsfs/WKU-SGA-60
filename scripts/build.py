@@ -2732,7 +2732,7 @@ student seat integrated the Board of Regents before the governor did.</p>
 organization became something else. It ran a Free University of no-cost evening courses, a
 housing survey, paper recycling, and it booked Senate Watergate chairman Sam Ervin to speak in
 April 1974. It also became a concert promoter. In September 1975 a show
-<a href="y/1975-76.html#e-19750919-1">drew 4,300 people and lost $7,000</a>. Fund misuse
+<a href="y/1975-76.html#e-19750917-1">drew 4,300 people and lost $7,000</a>. Fund misuse
 charges were aired in October. Quorum failure had already halted business twice in a single
 week the previous February, and a <cite>Herald</cite> editorial said the confusion signalled a
 need for change. Congress member Gerard Faulk faced impeachment hearings in March 1976 and was
@@ -2793,9 +2793,9 @@ in April 1981. Marcel Bush resigned the presidency
 finished the term, which the Board of Regents minutes of 30 January confirm and the plaque
 does not. That February the student regency became a campus-wide elected office for the first
 time: five students filed, the 9 February vote produced no majority, and Sandra Norfleet
-<a href="y/1982-83.html#e-19820216-1">won the runoff</a> into a term that ran about two months.
+<a href="y/1981-82.html#e-19820216-1">won the runoff</a> into a term that ran about two months.
 In April the general election results were voided, a decision the paper said disgusted the
-candidates, and <a href="y/1982-83.html#e-19820420-1">the whole thing was run again</a> on 20
+candidates, and <a href="y/1981-82.html#e-19820420-1">the whole thing was run again</a> on 20
 April. Margaret Ragan won the do-over.</p>
 
 <p class="pq">Govern, the paper said, rather than market cards.
@@ -2805,8 +2805,9 @@ April. Margaret Ragan won the do-over.</p>
 <cite>Herald</cite> told it to govern instead; and on 8 September the paper reported that ASG
 <a href="y/1983-84.html#e-19830908-1">would pay its own members a commission</a> on card sales,
 drawing columns headed &#8220;Cheap Shots&#8221; and &#8220;And Old Tricks.&#8221; The body did
-not settle the question. In October 1985 the congress passed Bill 85-15-F ordering production
-of <a href="y/1985-86.html#e-19851012-1">its own discount card</a> anyway. Around it sat the
+not settle the question. On 3 December 1985 Bill 85-15-F asked that ASG produce
+<a href="y/1985-86.html#e-19851203-1">its own discount card</a>, after the outside printer&#8217;s
+failures that autumn; the archive does not record how it was voted on. Around it sat the
 rest of the catalogue: a shuttle to the mall, a student book exchange, change machines in the
 dorms, cable television in dorm rooms, weekend pizza from the Unicorn, microwaves in the
 cafeterias, a left-handed desk in every classroom.</p>
@@ -2910,7 +2911,7 @@ sequence.</p>
 
 <p>Joe Rains took office that autumn as the first president under the new name, having been
 elected in a race the <cite>Herald</cite> covered with a
-<a href="y/1992-93.html#e-19920414-1">cartoon drawing him as Darth Vader</a>. His year&#8217;s
+<a href="y/1991-92.html#e-19920414-2">cartoon drawing him as Darth Vader</a>. His year&#8217;s
 minutes appear under both titles, which is the only physical trace of the changeover. He pushed
 an escort service, ran a call-in radio programme called Just Ask Joe, and went to Frankfort to
 argue against cuts to higher education, for which the University Senate formally commended
@@ -2943,7 +2944,7 @@ campaign fliers left overnight on classroom desks. A letter to the editor report
 circulating in dorms that attached the word racism to Will Jones, described as the first Black
 candidate for the presidency in years, and questioned whether SGA&#8217;s investigation was
 following proper procedure rather than assuming his involvement. The archive records plainly
-that <a href="y/1999-00.html#e-19990415-5">no source found says how, or whether, that
+that <a href="y/1999-00.html#e-19990415-2">no source found says how, or whether, that
 investigation was resolved</a>.</p>
 
 <p>Out of that election came Amanda Coates, whose signature project was publishing faculty
@@ -2982,7 +2983,7 @@ document is the one WKU still recognises. Only
 <a href="y/2003-04.html#e-20040316-1">132 of about 18,000 students voted to ratify it</a>.
 Within weeks it failed its own first test: its author was elected the first speaker of the
 senate 9 votes to 8, and the result was
-<a href="y/2003-04.html#e-20040415-1">immediately contested</a> because the new text was
+<a href="y/2003-04.html#e-20040413-1">immediately contested</a> because the new text was
 unclear on whether two-thirds meant of those eligible or of total membership.</p>
 
 <p class="pq">&#8220;The turmoil within the organization.&#8221;
@@ -3103,7 +3104,7 @@ coverage, a cable television interview and fabricated headlines claiming WKU had
 tuition. Ransdell stated within days that it was not a university position. The substantive act
 had come five months earlier: $750, matched by $100 from the Center
 for Citizenship and Social Justice, for a
-<a href="y/2016-17.html#e-20161130-2">scholarship memorializing Jonesville</a>, the Black
+<a href="y/2016-17.html#e-20161130-1">scholarship memorializing Jonesville</a>, the Black
 community WKU bought and demolished for under $200,000 in the late 1960s.</p>
 
 <p class="pq">&#8220;Almost toxic in nature.&#8221;
@@ -3182,7 +3183,7 @@ against a past average of about 40.</p>
 <p>None of that made it independent. After the January 2025 executive order on federal
 diversity programmes, the chief justice said the constitution might need amending, and Bill
 21-25-S restructured the Diversity, Equity and Inclusion Committee as the Action and
-Opportunity Committee. It <a href="y/2024-25.html#e-20250404-2">passed only after absent
+Opportunity Committee. It <a href="y/2024-25.html#e-20250404-1">passed only after absent
 senators were phoned onto Zoom</a> to make the two-thirds quorum, and was then ratified by 88
 per cent of voters in April. On 1 October 2025 General Counsel Andrea Anderson
 <a href="y/2025-26.html#e-20251001-1">told the senate</a> that Kentucky&#8217;s House Bill 4
@@ -3370,7 +3371,7 @@ Severinsen Homecoming concert in October 1974. Within days the <cite>Herald</cit
 committee that came out of it wanted the activities vice president to negotiate with acts, and
 settled for an advisory role because Kentucky law barred a student from controlling the funds.
 ASG&#8217;s answer, in operation from 2 December 1975, was a
-<a href="y/1975-76.html#e-19751202-1">Student Activities Committee</a> of seventeen members chosen
+<a href="y/1975-76.html#e-19760101-1">Student Activities Committee</a> of seventeen members chosen
 from 63 applicants: seven for concerts, five for lectures, five for publicity.</p>
 
 <h3 class="sub">31 March 1979</h3>
@@ -3673,7 +3674,7 @@ reading is kept and printed beside the corrected one on the year page and on the
 <h2 class="sec">What is settled</h2>
 <div class="prose">
 <p>{h(meta.get("student_regent_history", ""))}</p>
-<p>Michael Fiorella in 1972-73, Gregory McKinney in 1974-75 and Sandra Norfleet in 1982-83
+<p>Michael Fiorella in 1972-73, Gregory McKinney in 1974-75 and Sandra Norfleet in 1981-82
 are confirmed as regents rather than presidents. By about 2001 the two offices had merged;
 after that, a second name in a year means a mid-year succession.</p>
 </div>
@@ -4155,7 +4156,7 @@ STANDING = [
     "Bill 4-16-F created SGA&#8217;s first scholarships for students with disabilities, "
     "passing unanimously after a sophomore told senators his ADHD and dyslexia had cost him "
     "merit money."),
-   ("2016", "2016-17#e-20161130-2",
+   ("2016", "2016-17#e-20161130-1",
     "$750, matched by $100, created the Jonesville Memorial Scholarship for the Black "
     "community WKU bought and displaced."),
    ("2018", "2018-19#e-20181024-2",
@@ -4523,7 +4524,7 @@ STANDING = [
    ("2024", "2023-24#e-20240329-1",
     "The student group For the People told the senate that 40 per cent of it belonged to "
     "Greek life and that SGA had a disconnect with cultural communities."),
-   ("2025", "2024-25#e-20250404-2",
+   ("2025", "2024-25#e-20250404-1",
     "Bill 21-25-S renamed the Diversity, Equity and Inclusion Committee the Action and "
     "Opportunity Committee, after a federal executive order. Students ratified it with 88 "
     "per cent."),
@@ -4627,7 +4628,7 @@ VERDICTS = [
    ("1992", "1991-92#e-19920130-2",
     "Patrick Richardson&#8217;s &#8220;Ventriloquist&#8217;s Dummy&#8221; took president "
     "Heather Falmlen as its subject."),
-   ("1992", "1992-93#e-19920414-1",
+   ("1992", "1991-92#e-19920414-2",
     "On election day the same cartoonist drew Joe Rains as Darth Vader."),
    ("1995", "1994-95#e-19950425-1",
     "A Stacy Curtis cartoon put student government in a glass box, paired with an editorial "
@@ -5167,7 +5168,7 @@ FIGHTS = [
    ("2020", "2019-20#e-20200205-1",
     "Senators and committee chairs had quietly vacated their positions since the autumn; two "
     "committee chairs were empty."),
-   ("2025", "2024-25#e-20250404-2",
+   ("2025", "2024-25#e-20250404-1",
     "The meeting to pass the DEI amendment initially lacked the 21 members needed for a "
     "two-thirds vote, so absent members were phoned onto Zoom to reach quorum."),
   ]},
@@ -5181,7 +5182,7 @@ FIGHTS = [
            "predecessor&#8217;s contract. By the 2010s the fight was over whether SGA members "
            "might take SGA&#8217;s own scholarship money.",
   "inst": [
-   ("1975", "1975-76#e-19750919-1",
+   ("1975", "1975-76#e-19750917-1",
     "A September concert drew 4,300 people and lost $7,000."),
    ("1976", "1976-77#e-19761109-1",
     "The Seals and Crofts concert set the organization back $3,800."),
@@ -5304,7 +5305,7 @@ FIGHTS = [
    ("2024", "2024-25#e-20240903-1",
     "Bill 50-23-S, reaffirming SGA as nonpartisan and stating a duty to put forward only "
     "nonpartisan legislation, passed unanimously."),
-   ("2025", "2024-25#e-20250404-2",
+   ("2025", "2024-25#e-20250404-1",
     "The diversity committee was renamed under a federal executive order, ratified by 88 per "
     "cent of voters."),
   ]},
@@ -5337,7 +5338,7 @@ SHAPE = [
    ("2016", "2016-17#e-20161116-1",
     "MyCampusToo was made a permanent standing committee and simultaneously renamed the "
     "Committee for Diversity and Inclusion."),
-   ("2025", "2024-25#e-20250404-2",
+   ("2025", "2024-25#e-20250404-1",
     "Bill 21-25-S renamed the Diversity, Equity and Inclusion Committee the Action and "
     "Opportunity Committee and retitled its officers."),
   ]},
@@ -5539,7 +5540,7 @@ SHAPE = [
    ("2021", "2021-22#e-20211006-2",
     "A bill barred the Speaker of the Senate from voting on legislation, alongside two bills "
     "scrubbing obsolete 2007-era bylaws."),
-   ("2025", "2024-25#e-20250404-2",
+   ("2025", "2024-25#e-20250404-1",
     "The DEI committee rename. A co-author called the change mostly a formality; the chair "
     "said the committee at its core was not changing."),
   ]},
