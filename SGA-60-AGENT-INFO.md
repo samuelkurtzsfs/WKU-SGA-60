@@ -7340,9 +7340,13 @@ The stored brief for this trigger is still the frozen one naming Nick Todd, Kati
 Johnson and Reagan Gilley as portraitless. Checked directly against `data/photos.json` rather than
 trusting the note: all four, and all 73 `leaders` records, already carry a portrait, and have for
 over a month. `merge_photo_finds.py` (no `--write`) proposes nothing new: 0 to add, 0 to replace,
-the same 18 standing refusals (17 FACE-PROVED-PERSON-NOT-PROVED holds plus the barred Kitchens
-pair), all already awaiting the editor. `research-photos` fast-forwarded cleanly onto `origin/main`
-(a real merge base, no conflicts).
+the same 18 standing refusals, all already awaiting the editor. Those 18 are 17
+FACE-PROVED-PERSON-NOT-PROVED holds plus Blake Bowden's 2016-17 frame, a good single-subject
+Herald portrait whose caption and gallery never mention student government. The barred
+Stacy/Staci Kitchens pair is **not** among the 18: both sit in
+`data/photo-finds/_do-not-use.json`, which the merge script does not re-propose from, so a run
+counting them into the refusal list will not find them there. `research-photos` fast-forwarded
+cleanly onto `origin/main` (a real merge base, no conflicts).
 
 Retested both routes fresh before doing anything else. `digitalcommons.wku.edu/cgi/viewcontent.cgi`
 answered `403` behind the Cloudflare "Just a moment..." challenge (`cf-mitigated: challenge`,
@@ -7371,6 +7375,12 @@ Dotson or Lanning at all. Even a hit would not have closed this out this session
 1986-87 and a handful of older single volumes; nothing between 1966 and 1970), so a photograph for
 any of these four, if one exists, sits in the 1967 or 1968 Talisman on `digitalcommons.wku.edu`
 alone, behind the same closed `viewcontent.cgi`. Nothing to retry here without that route open.
+Confirmed positively on review, 26 September: `archive.org` itself answers (its advanced-search
+API returned `200`), and it holds Talisman 1943, 1946-47, 1963-65, 1971-81, 1986 and 1987 — nineteen
+volumes, none of them between 1966 and 1970. `archive.org/metadata/talisman1966west` through
+`talisman1970west` each answer `200` with an empty object, which is how that site reports an item
+that does not exist. So the gap is the catalogue's, not the route's: only `web.archive.org` is
+unreachable, and no future run should expect a 1966-70 Talisman to appear there.
 
 **Tried a route not in this file before: `www.wku.edu/sga`'s own live directories, on the theory
 that a still-hosted old cabinet page might carry headshots without needing Wayback at all.** The
