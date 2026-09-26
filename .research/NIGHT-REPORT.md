@@ -1,3 +1,137 @@
+# 26 September 2026 (editor) — one meeting, four bills, two numbering systems
+
+## What was open
+
+Nothing. `gh` is not installed in this container, but the GitHub tools answer, and the repository
+has no open pull request. Every branch on origin that is not an ancestor of `main` was merged by
+squash or is behind it; `research-photos`, the only branch with commits ahead, diffs against `main`
+at deletions in the night report and nothing else. The 4 August branches still have no merge base
+with `main` and were not touched, per `AGENT-LANDING.md`.
+
+#6, #7 and #8 were again named in the brief as stale and open. All three closed on 18 August.
+Fourteenth consecutive pass.
+
+## The spot check
+
+With no diff to sample, the sample came from the most recent data work to reach the live site: the
+eight pairs merged yesterday in #598. A merge is where a sourced fact goes missing, and that one
+was merged by the routine that made it, so it had not been read by anyone else. Eight articles were
+opened and read against the entries drawn from them.
+
+All eight held.
+
+- **2012-13, the athletic fee** (`wkuherald.com/44093`). Tuesday's passage, the 1 July 2014 C-USA
+  date, the $80,000 paid into the Sun Belt against $40,000 returned, and Todd Stewart's $1m–$1.5m
+  expectation are all in the article, as is Mark Reeves as senator and executive vice
+  president-elect. Yesterday's correction of the date to 23 April 2013 is right.
+- **2023-24, the fire drill** (`wkuherald.com/73874`). 5 a.m. to 2 a.m., Resolution 6-23-F, the
+  Mental Health and Wellness Committee, and the four groups of students named. The article names no
+  building, and the entry no longer does either. Yesterday's cut holds.
+- **2024-25, three senators removed** (`wkuherald.com/80158`). The 7-0 decision, the three names, at
+  least six unexcused absences each, Section 2.2 of the bylaws and Section 4.6.12 of the
+  constitution — all verbatim in the report.
+- **2024-25, school safety** (`wkuherald.com/78720`). Bill 4-24-F, Annalise Finch, mandatory
+  training and posted emergency exits; five senators sworn in, three freshman, one international,
+  one Gatton Academy, named one by one.
+- **2020-21, outreach and safe driving** (`wkuherald.com/11364`). Fifty laminated QR-coded signs on
+  Craighead's bill, passed unanimously; twelve parking-lot signs on Thomas's; the Naming and Symbols
+  bill held to the following week. The article says the signs *will* go up. Yesterday's trim of the
+  claim that they had gone up was right, and the entry now claims only the funding.
+- **2024-25, the Gordon Wilson elevator** (`wkuherald.com/82565`). Resolution 2-25-S, Kiersten
+  Washington as author and honorary member, the dance appreciation class on the third floor of a
+  1927 building with no elevator, Megan Farmer's quote, and Resolution 1-25-S by Barker and Bailey.
+- **2025-26, Gilbane** (`wkuherald.com/92425`). The legislature's approval announced at Thursday's
+  meeting, the Board's pre-development agreement of 11 December 2025, Douglas Keen and Hugh Poland
+  as the halls to be replaced, renderings on 20 February 2026.
+- **2023-24, the four March bills** (`wkuherald.com/75688`). Every detail of the DEI week checks
+  out. Reading it turned up the thing below.
+
+## What was cut
+
+Two entries, in 2023-24, and the reason is worth setting down.
+
+The *Herald* of 13 March 2024 reported four funding bills passed at the 23rd Senate's twentieth
+meeting and numbered them **34-23-S, 35-23-S, 36-23-S and 38-23-S**. SGA's own bill sheets for that
+same meeting, mirrored in `data/legislation/2023-24/`, head the same four measures **14-24-S,
+15-24-S, 16-24-S and 18-24-S**. They are the same four bills. The identity is not a guess; it holds
+on four independent counts, bill for bill:
+
+| | document | *Herald* | title | sum | readings | authors |
+|---|---|---|---|---|---|---|
+| DEI Week | 14-24-S | 34-23-S | identical | $150 | 5 and 12 Mar | Solorzano, Farmer, Pea, Distler, Sim |
+| Spring Fling | 15-24-S | 35-23-S | identical | $450 | 5 and 12 Mar | Payne, Dilts, Ray, Gannon |
+| Hope Harbor | 16-24-S | 36-23-S | identical | $280 | 5 and 12 Mar | Cissell, Diaz, Stinnett, Bryant, Cisco |
+| Mental Health Week | 18-24-S | 38-23-S | identical | $650 | 12 and 12 Mar | Bryant, Pabin, Darnell |
+
+The archive was carrying two of those four bills **twice**: once inside the *Herald* roundup under
+the newspaper's number, and once again as its own entry drawn from the bill sheet under the
+document's number. A reader met the Spring Fling as 35-23-S and again as 15-24-S, and the Hope
+Harbor Denim Day event as 36-23-S and again as 16-24-S, with no indication that either pair was one
+measure. That is the rule in CLAUDE.md against writing an event up twice, and it is also a plain
+factual error: the archive published two different numbers for one bill and asserted both.
+
+Merged, with nothing dropped:
+
+- **Spring Fling** now leads with 15-24-S and the bill sheet's own breakdown — $250 of tailgate food
+  from Gordon Food Service, $200 for two $100 scholarships, South Lawn on 27 March, proceeds to Kids
+  Cancer Alliance — and takes from the *Herald* what the document cannot give. The posted form
+  leaves the Pass line blank; the *Herald* reports the bill passed **28-2 after debate over the
+  amount**, the only one of the four not carried unanimously. That is trap 2a resolved the right way
+  round: a blank cell is a lead, and here the newspaper closes it.
+- **Hope Harbor Denim Day** now leads with 16-24-S and gains from the *Herald* the event's date,
+  24 April, its place in Sexual Assault Prevention Month, and what the money bought.
+- **The roundup** keeps the two bills that have no entry of their own, DEI Week and Mental Health
+  Week, under their document numbers, and records the two numbering systems once, plainly, so the
+  next reader who meets a `-23-S` number in a *Herald* report knows what they are looking at. It is
+  retitled and moved from 13 March, the day it was printed, to 12 March, the day the meeting was
+  held — the convention #598 set yesterday.
+
+Which number is right is not something this pass settled, and the entry does not pretend otherwise.
+It says the documents and the newspaper count differently, and that this archive follows the
+documents, because a bill sheet is the bill and a report of it is not.
+
+**Why no script caught it.** `check_duplicates.py` could not. Its title pass finds nothing: "Spring
+Fling, a tailgate on South Lawn for Kids Cancer Alliance" and "Four bills fund a month of events"
+share no word that matters. Its same-source pass finds nothing either, because the two entries do
+not share a source — that is the whole point of them, one is the newspaper and one is the document
+— and the shared-number test it gained yesterday is defeated by the very fact at issue: the numbers
+are not shared. A detector keyed to agreement cannot see a disagreement. What found it was reading
+the cited article for a spot check and noticing that a bill number in it did not match the one on
+the bill.
+
+Also corrected: one entry spelled Salvador León without the accent, against every other entry in
+the year.
+
+## Counts after the pass
+
+61 years, **1,966 events**, unchanged. No entry was deleted: the duplication here was inside the
+entries rather than between them, two bills described a second time within a roundup that also
+covers two bills of its own, so removing it changed three bodies and no count. 60 people recorded
+as president, 2,650 recorded terms of office held
+by 1,809 people, 2,613 of them (98%) with an account of what the person did, 1,111 pieces of
+legislation with every file present and a real PDF, 308 documents.
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py` reports
+the same four title pairs as every pass since September, all four read again this pass and all four
+genuinely separate events, and the one same-source pair in 2026-27, also genuinely two things.
+
+## Flagged, not fixed
+
+- **The spring 2024 offset is not uniform.** Across the 12 March meeting the *Herald*'s number is
+  exactly the document's plus twenty, but that does not extend backwards: the *Herald*'s 18-23-S,
+  19-23-S, 25-23-S and 26-23-S of February 2024 cannot be the documents' numbers minus twenty.
+  Whatever the newspaper was counting, it was not counting with a fixed offset, and eleven other
+  2023-24 entries still cite `-23-S` numbers taken from *Herald* reports without a document beside
+  them. None of them is wrong on its facts — the February entries were not re-verified this pass —
+  but none has been matched to a bill sheet either. That match is a clean, bounded job for a later
+  pass, and `data/legislation/2023-24/` already holds the documents to do it with.
+- **Two bill sheets are filed under the wrong name on wku.edu.** `bill_24_23_s.pdf` contains Bill
+  24-24-S and `bill_33_23_s.pdf` contains Bill 33-24-S. The documents are right and the filenames
+  are wrong, at the source. Nothing to fix here — `source_url` must keep pointing at the path the
+  university actually serves — but it is worth knowing before someone trusts a filename.
+- **2023-24 has no entry for Bill 17-24-S**, the Afrolatinidad event funded at that same 12 March
+  meeting. A gap, not an error.
+
 # 25 September 2026 (editor, late pass) — an election written up twice, in two consecutive years
 
 ## What was open
