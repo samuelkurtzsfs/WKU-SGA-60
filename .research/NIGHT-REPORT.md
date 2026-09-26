@@ -33680,3 +33680,88 @@ Counts after the merge, unchanged by it: 61 years, 1968 events, 60 people have b
 pieces of legislation with every file present and a real PDF, 308 documents, 1111 legislation files,
 2650 recorded terms of office held by 1809 people, 2613 of them (98%) with an account of what the
 person did, 48 people recorded under more than one spelling. Nothing else is open.
+
+# 26 September 2026 (fourth pass) — an empty board, the day's own work checked against the documents
+
+No pull request was open. Nothing had been pushed for review since the third pass merged as #608,
+so there was nothing to merge, nothing to cut and nothing to hold. The standing brief still names
+#6, #7 and #8 as stale and open; they have been closed since 18 August, as the third pass of
+25 September already recorded.
+
+Four branches still sit ahead of `main` and all four were opened and read rather than assumed
+dead. Three are this routine's own from earlier today — `editor-2026-09-26-bill-numbers`,
+`editor-2026-09-26-february-numbers` and `editor-2026-09-26-feb20` — and they landed as #602, #603
+and #604. What still differs between them and `main` is not work that was lost but work that was
+afterwards improved, in every one of the three cases by #606 or by the commit that followed it.
+`research-2026-27-fall`, two commits from 24 September, is a full duplicate: its fourteen 2026-27
+events match `main`'s date for date and title for title. None of the four carries a sourced fact
+the archive does not already hold, so none was rescued.
+
+With no diff to sample, the spot check fell on what this project actually published today, which
+is the better target anyway: the day's merges changed money, dates and vote language in the
+2023-24 record, and three of those figures had already been changed twice. Twelve claims were put
+against their sources, and for once the sources were mostly the primary documents rather than the
+newspaper, because SGA's own bill sheets for that session are mirrored in this repository.
+
+All twelve held.
+
+- Resolution 1-24-S carries the $50 in its seventh whereas clause — "parking violations should not
+  exceed $50" — and its resolving clause goes no further than support for lowering the fees. That
+  is exactly what `main` now says, and it means #606 was right to take this morning's
+  over-correction back out. The same document gives the $10–$600 range and the two authors.
+- Bill 18-24-S allocates $620.00 to Mental Health Week in its purpose and its resolving clause, and
+  its own itemisation adds to the same figure: 75 + 55 + 50 + 20 + 100 + 120 + 200. The Herald's
+  $650 is the outlier, and the entry is right to say so.
+- Bill 5-24-S sets out the whole arithmetic the last commit of the day added: $2,000 for the year,
+  $955 spent in the fall, $1,045 left, split $650 to the Dental Hygiene Clinic and $390 to the ID
+  Center for $1,040, and the odd five dollars back to the discretionary budget in the resolving
+  clause itself.
+- Bill 2-24-S gives the $700, the grading against the scholarship procedures, and the exclusions.
+- The four bills of 12 March are 14, 15, 16 and 18-24-S, and all four carry a second reading of
+  3/12/24 on their faces, with the Spring Fling and Denim Day measures recorded separately as the
+  entry says.
+- The Herald of 15 February 2024 numbers the same three measures 18-23-S, 19-23-S and 23-23-S,
+  reports 450 Uber vouchers at $10, and says all the legislation passed unanimously.
+
+Two of those checks settled a question a stale branch had answered the other way, and in both the
+published version is the correct one. On the date: `editor-2026-09-26-feb20` dated the Uber voucher
+meeting 15 February 2024, which is when the Herald printed it. Bills 2-24-S and 5-24-S both carry a
+reading of 2/13/24, and the Herald's own report names Tuesday 13 February as the meeting. The event
+is dated when it happened, not when it was reported, and `main` has it right. On the count: the
+fall election entry now says the Herald listed 20 freshmen, six from the Gatton Academy, one
+graduate and one international candidate, "which come to 28." The article gives the four numbers
+and never states the total, so the addition is this archive's and the entry is correct to say so
+rather than to put the 28 in the Herald's mouth, as the branch version did.
+
+One wrinkle found and deliberately not cut. Bill 2-24-S excludes two categories, disability parking
+and fire lanes; the entry lists three, "disability spaces, safety zones or fire lanes." That is the
+Herald's wording verbatim, and the entry cites the Herald, so it reports its source accurately. The
+posted form is narrower than the newspaper. Worth recording here for whoever writes the bill up
+from the document rather than the report.
+
+The 2026-27 material of the last few days was checked at the same time and holds: voting opened at
+8 a.m. on 23 September and closed at 4 p.m. on the 25th, Barker's line about engagement is a fair
+paraphrase, the mental health clause reaches syllabi from the spring, and Resolution 4.6 F asks for
+a live bus icon on the iWKU map and passed unanimously.
+
+`check_duplicates.py` printed the same four pairs and the one same-source pair as yesterday, and
+they stand where earlier passes left them. The same-source pair was re-read against the article
+this time rather than taken on the earlier judgement: the syllabus clause, the shuttle resolution
+and the election opening are three pieces of business in one report, and three entries is right.
+
+**One thing is wrong in the repository and this pass could not fix it.** Four commits on `main`,
+all from 25 September and all this routine's own, carry a `Co-authored-by: Claude` trailer in their
+message bodies: `4af498ce`, `f88237c8`, `ed9347a8` and `841f8721`. CLAUDE.md forbids exactly this,
+and `AGENT-LANDING.md` records that 105 such commits were rewritten out of the history on 28 August
+to be rid of it. This is that regression starting again. It reaches the repository only and not the
+site — commit messages are not published, and the generated `site/` is clean, the only matches for
+"anthropic" in it being the word "philanthropic". Taking the trailers out means rewriting four
+published commit messages and force-pushing `main`, which this routine is told never to do, so it
+is left for the owner. Today's own commits are clean, and the whole of the rest of the 93-commit
+history is clean.
+
+`build.py`, `check_data.py` and `check_contrib.py` all run clean. Counts, unchanged today because
+nothing merged: 61 years, 1968 events, 60 people have been president, 1111 pieces of legislation
+with every file present and a real PDF, 308 documents, 2650 recorded terms of office held by 1809
+people, 2613 of them (98%) with an account of what the person did, 48 people recorded under more
+than one spelling, and a search index of 4949 records. Nothing is open.
