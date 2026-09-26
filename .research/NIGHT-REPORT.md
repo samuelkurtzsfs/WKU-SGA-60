@@ -159,9 +159,9 @@ joins Reed as an author the entry had not named.
 - **The spring 2024 offset is not uniform.** Across the 12 March meeting the *Herald*'s number is
   exactly the document's plus twenty, but that does not extend backwards: the *Herald*'s 18-23-S,
   19-23-S, 25-23-S and 26-23-S of February 2024 cannot be the documents' numbers minus twenty.
-  Whatever the newspaper was counting, it was not counting with a fixed offset, and eleven other
-  2023-24 entries still cite `-23-S` numbers taken from *Herald* reports without a document beside
-  them. None of them is wrong on its facts — the February entries were not re-verified this pass —
+  Whatever the newspaper was counting, it was not counting with a fixed offset. Eight 2023-24
+  entries cite a spring `-23-S` number in all; the follow-up pass above reconciled 15 February and
+  leaves four still to match. None of them is wrong on its facts — the February entries were not re-verified this pass —
   but none has been matched to a bill sheet either. That match is a clean, bounded job for a later
   pass, and `data/legislation/2023-24/` already holds the documents to do it with.
 - **Two bill sheets are filed under the wrong name on wku.edu.** `bill_24_23_s.pdf` contains Bill
