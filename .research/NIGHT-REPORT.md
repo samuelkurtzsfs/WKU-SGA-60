@@ -34234,3 +34234,86 @@ legislation with every file present and a real PDF, 308 documents, 2651 recorded
 held by 1809 people, 2614 of them (98%) with an account of what the person did, 48 people under
 more than one spelling, and a search index of 4949 records. One portrait published, refiled a year
 forward; one rating and nothing sourced cut; no pull request left open.
+
+# 27 September 2026 (editor's third pass) — one empty pull request closed, and the day's newest portrait checked against its caption
+
+## What was open
+
+One pull request, #619, "Research: photographs (rolling)", on `research-photos`. Full mode: the
+token holds and `git push --dry-run` reports write access, so nothing was gated this pass. `gh` is
+not installed in these containers, as `AGENT-LANDING.md` says; the GitHub REST API over curl does
+everything the run needed.
+
+The scheduled prompt still names #6, #7 and #8 as stale and open. They were closed on
+18 August 2026 and remain closed. That instruction has now outlived its facts by six weeks.
+
+## The pull request carried nothing
+
+`git diff origin/main...origin/research-photos` is empty. GitHub agrees: three commits, 0 changed
+files, 0 additions, 0 deletions. The portrait the branch was opened to land — Carter Smith,
+2026-27 — reached main as #616 earlier in the day, and the branch's own merge of main brought the
+rest across, so the sync the body asked for had already happened on origin before this pass began.
+
+Closed rather than merged. Merging would have written a merge commit describing nothing onto a
+history whose commit messages are meant to describe the history that changed, and would have
+redeployed an identical site. The branch is untouched and sits level with main, which is the state
+the next photograph run wants; it can open a fresh pull request when it has a portrait to land.
+
+## What was checked instead
+
+An empty diff leaves no sample, so the spot check went to the newest material the branch's own work
+has just published. The Herald of 23 September 2026 (`wkuherald.com/97612`), read in full, against
+four claims now on the site:
+
+- The portrait's identification. The caption names its subject outright — Carter Smith sworn in as
+  a sophomore senator at SGA's fourth meeting of the fall, 22 September 2026, photograph by Natasha
+  Gomez. It confirms the refiling as well as the face: the archive has him a freshman senator in
+  2025-26 and a sophomore senator in 2026-27, and the photograph belongs to the later term, where
+  #616 moved it. The file is a real JPEG, 2001 by 1334, and renders on the officers and network
+  pages.
+- The mental-health statement on every syllabus from the spring. Confirmed; announced by Lucas off
+  the Mental Health Committee's work with faculty and administrators.
+- Fall election voting opening with 28 candidates. Confirmed, and the arithmetic is the article's
+  own: 20 freshman, six Gatton Academy, one international, one graduate.
+- Resolution 4.6 F, shuttle buses in the iWKU map. Confirmed, and the article records it passing
+  unanimously.
+
+All four held. Nothing was cut this pass, because nothing was proposed and nothing published was
+found over-claimed.
+
+## The traps checklist
+
+Nothing to trip in a diff that does not exist, so the checklist was run over the published material
+above. No advance notice written up as a report — the election entry claims only that voting
+opened, which the article states in the present tense, and does not reach for a turnout. No
+committee chair promoted to officer. No surname-only match. No April result filed forward into the
+wrong year. Nothing near the settled facts. Nothing about a living person beyond what the Herald
+printed.
+
+## The rest of the board
+
+Every other `research-*` branch was compared against main by content, not by commit count, in case
+a routine had left verified work stranded without a pull request. Three differ. None is at risk:
+`research-2026-27-fall` holds the autumn 2026 entries, all fourteen of which are already on main,
+one of them under a title main has since improved; `research-editor-0923-sixth` and
+`research-editor-0926-fifth` hold night reports whose headings are already in the file on main.
+Nothing is stranded.
+
+## The duplicate pairs
+
+`check_duplicates.py` raises four title pairs and one same-source pair. All five were read and all
+five are genuinely separate business. The closest, 1997-98's designated driver cards at 0.6, is a
+bill adopted on 4 November and a distribution announced the following February — and the February
+entry is already written down to what a contents listing proves, which is the headline and nothing
+else. The 1991-92, 1971-72 and 2003-04 pairs are each a measure introduced and then decided. The
+2026-27 same-source pair is one Herald report of one meeting that transacted two different pieces
+of business.
+
+## The numbers
+
+Unchanged from this morning, nothing having been published since: 61 years, 1968 events, 60 people
+have been president, 1111 pieces of legislation with every file present and a real PDF, 308
+documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%) carrying an
+account of what the person did, 48 people recorded under more than one spelling, and a search index
+of 4949 records. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. No pull
+request left open.
