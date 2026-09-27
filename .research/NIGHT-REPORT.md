@@ -1,3 +1,103 @@
+# 27 September 2026 (editor, second pass) — an empty board, and the archive's own grading vocabulary found printed under 128 photographs
+
+## What was open
+
+Nothing. `gh` is not installed in this container, as `AGENT-LANDING.md` says, so the GitHub MCP
+tools were used; `git push --dry-run` to a throwaway ref confirmed write access. Full mode. No open
+pull requests and no open issues.
+
+Every `research-*` branch was checked rather than assumed. `research-photos` is two commits ahead of
+`main` but its content is already merged: the only difference between the two trees is the 65-line
+night-report entry `main` gained afterwards. `research-2026-27-fall`, `research-editor-0926-fifth`
+and `research-editor-0923-sixth` are all behind `main` on content. The 4 August branches still have
+no merge base with `main`. Nothing was waiting, and nothing reached `main` outside a pull request —
+no commit in the last sixty carries a `Contributed-By` trailer.
+
+The brief again names #6, #7 and #8 as stale and open. They closed on 18 August 2026. That is the
+eighteenth consecutive pass to record it.
+
+## What was reviewed
+
+With no queue, the review went to what has just been published. Fourteen claims across the 2026-27
+entries — the newest year on the site — were checked by opening their sources rather than reading
+the archive's own summary of them, and **thirteen held exactly**: the $113,481 budget with its
+$27,000 stipend and $23,000 scholarship lines; the $100 rise the CFO reported the week before; the
+eight M.A.S.T.E.R. Plan events; all nine committee chairs with their exact committees; Resolution
+4.6 F passed unanimously on Landon Terry's sponsorship; the syllabus mental-health statement from
+the spring; the fall election's 8 a.m. opening and its 20 freshmen, six Gatton, one graduate and one
+international candidate totalling 28; the 9-9 speaker tie, Whipple's re-vote and Butler's election;
+the Truman Scholarship's 55 scholars from 198 finalists and 781 candidates; Constitution Fest's date,
+its 250-odd pocket constitutions, Lasley's title, Budziak's presentation and Lonas's canvas; and the
+Organizational Aid terms down to the ten-person committee of the CFO and nine senators.
+
+Two things the archive did right are worth recording, because both are the kind of thing a pass
+looking for errors would flag as one. The 1 September entry gives the M.A.S.T.E.R. Plan raffle as
+1,744 entries and says the Herald's own interview a week later gave 1,174 — both figures, neither
+resolved, which is what the sources support. And the chief justice's surname appears as Stirling in
+twelve places and Sterling in two: the 2026-27 note explains that the Herald alternates between the
+spellings eight days apart in its own pages, that SGA's minutes of 14 April 2026 twice give Stirling,
+and that the record follows the minutes while the prose quoting the 28 April report keeps that
+report's spelling. Molly Ricke / Molly Ricky is documented the same way in `name-aliases.json`.
+Neither is a duplicated person: the roster holds one Stirling.
+
+Spring filing was checked against the whole archive rather than the rule alone. Nineteen other years
+carry the March or April events of the election that chose their incoming administration, so 2026-27
+holding the April 2026 debate, result, Truman announcement and first meeting of the 26th Senate
+follows the established convention.
+
+## What was cut
+
+**One over-claim, in a headline.** The 9 September entry was titled "Organizational Aid capped at
+$500 a group, with senators visiting the groups that apply". Its own body says what the source says:
+that organisations *could invite* SGA members to observe how they operate, new this year and at the
+organisation's choice. The title turned an optional invitation into something that follows from
+applying, and a title is what a reader sees on the year page. The body was already right, so the
+entry was rescued rather than deleted and the title now reads "Organizational Aid capped at $500 a
+group, graded on a thirty-point scale", which the source proves outright.
+
+**Eighty-three citations carrying this project's internal grading vocabulary.** Under 83 photographs
+the public credit ended in a bare `(medium)`, `(low)` or `(good)` — 35 person pages showing one, 20
+showing another, 3 the third. These are the researcher's grade for the frame, and they tell a reader
+nothing: a credit reading "photograph by Marc Piscotty (medium)" is the archive talking to itself in
+front of the reader. The substantive part of each label — "cropped to the left-hand figure", the
+index entry that pins the identification — was already there and is untouched. Nothing but the grade
+came off: 1,396 leader entries and 70 year entries before and after, every field except the label
+byte-identical, no entry gained or lost. Last night's pass cut one `(good)` on this reasoning and
+named the rest as a separate pass. This is that pass.
+
+**The cause is fixed, not just the symptom.** `merge_photo_finds.py` appended the quality mark
+through `QUALITY.get(q.lower(), q)`, whose default prints whatever it was given. The map is
+deliberately short — `soft`, `small`, `masked`, `group crop` translate into a phrase that tells a
+reader this is the only surviving frame — and everything else fell through it and went to the site
+verbatim. A `quality_note()` helper now returns a phrase only for a mark the map covers, matching on
+the leading clause so that "small; cropped from a group photograph … no upscaling" still counts as
+`small`, and an unmapped mark yields nothing and is reported: the dry run now prints "208 quality
+mark(s) kept out of the citation; they stay in the finding record". The marks are not lost — they
+stay in `data/photo-finds/`, where the proof that a frame was not upscaled or fabricated belongs.
+The merge still proposes 0 additions and 0 replacements, so the change is inert on what is on file.
+
+## Left open, deliberately
+
+**Forty-five citations carry a technical provenance note and were not touched.** These read like
+"453x681 as embedded in the WKU PDF; extracted, not upscaled or re-cropped", "Source frame is
+500x360; the crop is 284x360, not upscaled", "very low resolution: his head is about 90 pixels tall
+in the source frame". They are the researcher's proof of honest handling, written for an editor, and
+under the rule now in the code a new finding's note would not be printed. But some of them do tell a
+reader something real — that this is a small newsprint crop and not a portrait — and cutting or
+rewriting 45 published credits is a style decision on live text that no pass has ruled on. A routine
+nobody is watching should not make that call on its own, so they stand, named here, for the owner or
+a later pass. The pile has stopped growing either way.
+
+## The state of the board
+
+`build.py`, `check_data.py` and `check_contrib.py` all run clean. `check_duplicates.py` prints output
+byte-identical to `main`'s, so neither change introduced a pair; the five it reports are the same
+five as last night and all read as genuinely distinct. Zero grade words remain anywhere in the
+rendered site. Counts unchanged by this pass: 61 years, 1968 events, 60 people have been president,
+1111 pieces of legislation with every file present and a real PDF, 308 documents, 2651 recorded terms
+of office held by 1809 people, 2614 of them (98%) with an account of what the person did, 48 people
+under more than one spelling, and a search index of 4949 records.
+
 # 26 September 2026 (editor, fifth pass) — the photograph run merged after one arithmetic slip, and a blocked route shown to be a catalogue gap instead
 
 ## What was open

@@ -40,6 +40,35 @@ QUALITY = {
 }
 
 
+def quality_note(q):
+    """The reader-facing phrase for a finding's quality mark, or None.
+
+    Only the marks above translate. Everything else a researcher writes in
+    this field is written for an editor, not a reader: a bare grade
+    ("medium", "low", "good") is this project's own vocabulary and tells a
+    reader nothing, and a technical note ("453x681 as embedded in the PDF,
+    not upscaled") is the proof that the frame was not fabricated or
+    enlarged, which belongs in the finding record and not under the
+    photograph. Both used to fall through a dict lookup's default and print
+    verbatim: 83 citations carrying a bare grade and 45 carrying a technical
+    note reached the public site that way. So an unmapped mark now yields
+    nothing, and the caller says what it dropped rather than dropping it
+    silently.
+
+    A mark often leads with one of the keys and then explains itself --
+    "small; cropped from a group photograph ... no upscaling" -- and that
+    still counts as the key, because the signal the map exists to give is
+    in the first word.
+    """
+    q = str(q or "").strip().lower()
+    if not q:
+        return None
+    if q in QUALITY:
+        return QUALITY[q]
+    lead = re.split(r"[,;:]", q, 1)[0].strip()
+    return QUALITY.get(lead)
+
+
 def fold(s):
     """For telling a near miss from a real one when a name does not match."""
     s = unicodedata.normalize("NFKD", str(s or ""))
@@ -275,7 +304,7 @@ def main():
               f"one that supersedes, or failing that the largest frame")
     finds = list(best.values())
 
-    added, improved, refused = [], [], []
+    added, improved, refused, dropped = [], [], [], []
     for origin, rec in finds:
         why = check(rec, known, no)
         if why:
@@ -292,8 +321,11 @@ def main():
         # citation the site already prints, and nowhere new.
         label = rec["src"]["label"]
         q = str(rec.get("quality") or "").strip()
-        if q and q.lower() not in label.lower():
-            label = f"{label} ({QUALITY.get(q.lower(), q)})"
+        note = quality_note(q)
+        if note and note.lower() not in label.lower():
+            label = f"{label} ({note})"
+        elif q and not note:
+            dropped.append((rec.get("name", "?"), rec["year"], q))
         entry = {"year": rec["year"], "name": recorded, "file": rec["file"],
                  "src": {"label": label, "url": rec["src"]["url"]}}
         old = have.get(key)
@@ -343,6 +375,12 @@ def main():
         print(f"{len(refused)} refused")
         for origin, name, why in sorted(refused):
             print(f"  {origin}: {name} - {why}")
+    if dropped:
+        print()
+        print(f"{len(dropped)} quality mark(s) kept out of the citation; they "
+              f"stay in the finding record")
+        for name, yr, q in sorted(dropped):
+            print(f"  {yr}  {name:26s} {q[:80]}")
 
     if not args.write:
         print("\nthis was a dry run. add --write to apply it.")
