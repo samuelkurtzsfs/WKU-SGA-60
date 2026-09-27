@@ -34069,3 +34069,68 @@ articles and is two events, concern voiced in September and legislation passed i
 present and a real PDF, 308 documents, 2650 recorded terms of office held by 1809 people, 2613 of
 them (98%) with an account of what the person did, 48 people under more than one spelling, and a
 search index of 4949 records. One entry corrected and published; nothing cut; nothing left open.
+
+# 27 September 2026 (editor's second pass) — a portrait filed a year before the photograph was taken
+
+One pull request open, #616, the rolling photograph branch, with one new claim in it. So it was
+checked entire rather than sampled, and merged after a correction.
+
+**The claim held; the filing did not.** The photograph is a *Herald* staff frame of Carter Smith
+taking the senator's oath, and the article was opened and read rather than trusted: the caption
+names him alone, credits Natasha Gomez, and dates the oath to the senate's fourth meeting of the
+fall semester, 22 September 2026. Single subject, named in full, no ambiguity — the standard
+`_do-not-use.json` exists to hold photographs to, and nothing in that file bars this one. The image
+is a real JPEG. The 1,729 lines of churn in `photos.json` are a re-sort of the array and nothing
+else: compared canonically the file gains exactly one entry and loses none.
+
+But the frame was filed under 2025-26, and the caption puts it in the 2026 fall semester and calls
+him a *sophomore* senator. That is 2026-27. He sat as a freshman senator in 2025-26, and that was
+the only year his name then resolved in, so `merge_photo_finds.py` — which will only accept a year
+whose roster already holds the name — had nowhere else to put it. The pull request body disclosed
+this in parentheses. Disclosing a misfiling is not filing it correctly: the site would have shown a
+September 2026 photograph against his freshman year while the archive's own event for that same
+meeting, citing the same URL, already sat in 2026-27.
+
+So the portrait was refiled to 2026-27 and the image renamed with it, and the sophomore-senator
+term was recorded in `years.json` to carry it. That last is not a new claim. The 2025-26 note
+already read that he was elected a sophomore senator in the spring 2026 election, and the 2026-27
+event already carried the swearing-in and the appointment to the Faculty Senate Undergraduate
+Curriculum Committee. The count is the proof it merged no one: 1809 people before and 1809 after,
+one more term, not one more person. `data/photo-finds/photo-run-0927.json` was corrected to match,
+which is the part that makes the fix hold — the merge keys on year and name, so the uncorrected
+finding would have been re-proposed as a fresh 2025-26 entry on the next run, the way the Stacy
+Kitchens withdrawal came back in September. A dry run now reports nothing to add and nothing to
+replace, and the editorial prose in the citation survives.
+
+Two things cut. `(good)` came off the reader-facing citation, and the photographer went on. The
+quality map is deliberately built to translate only *poor* ratings, so that a reader looking at a
+bad frame is told it is the only one there is; a rating that falls through unmapped is not
+information for a reader, and 38 citations reading `(medium)` and 22 reading `(low)` are already
+public. Those are a separate pass, not this one.
+
+**Neither validator could have caught this, and that is the finding worth keeping.** `check_data.py`
+and `merge_photo_finds.py` both passed clean on the original, because 2025-26 is a real year for
+that name. The test they apply is whether the name resolves; the test that was needed is whether
+the year is the one the photograph shows. For a term the roster has not caught up with — which is
+every current-year term — those two answers come apart, and only reading the caption tells them
+apart.
+
+**The standing brief is out of date in the same place the last two passes named.** #6, #7 and #8
+were closed on 18 August 2026. There is nothing stale to rescue and nothing to close. The many
+`research-*` branches still on the remote have no merge base with `main`: they are superseded
+snapshots of the old repository, not pending work, and were left alone.
+
+One untidiness found and fixed here rather than left: `site/search-index.json` as committed was one
+record behind the data, showing Smith with his freshman term only. It does not reach the live site,
+which Vercel regenerates from `data/` at deploy, but the committed tree should not disagree with
+itself.
+
+`build.py`, `check_data.py` and `check_contrib.py` all run clean. `check_duplicates.py` prints
+output byte-identical to main's, so nothing merged today introduced a pair; the five it reports are
+all pre-existing and all read as genuinely distinct, the 2026-27 same-article pair included, where
+the meeting business of 22 September and the election opening of 23 September are two different
+stories in one report. Counts: 61 years, 1968 events, 60 people have been president, 1111 pieces of
+legislation with every file present and a real PDF, 308 documents, 2651 recorded terms of office
+held by 1809 people, 2614 of them (98%) with an account of what the person did, 48 people under
+more than one spelling, and a search index of 4949 records. One portrait published, refiled a year
+forward; one rating and nothing sourced cut; no pull request left open.
