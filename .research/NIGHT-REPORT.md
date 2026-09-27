@@ -34234,3 +34234,203 @@ legislation with every file present and a real PDF, 308 documents, 2651 recorded
 held by 1809 people, 2614 of them (98%) with an account of what the person did, 48 people under
 more than one spelling, and a search index of 4949 records. One portrait published, refiled a year
 forward; one rating and nothing sourced cut; no pull request left open.
+
+# 27 September 2026 (editor's third pass) — one empty pull request closed, and the day's newest portrait checked against its caption
+
+## What was open
+
+One pull request, #619, "Research: photographs (rolling)", on `research-photos`. Full mode: the
+token holds and `git push --dry-run` reports write access, so nothing was gated this pass. `gh` is
+not installed in these containers, as `AGENT-LANDING.md` says; the GitHub REST API over curl does
+everything the run needed.
+
+The scheduled prompt still names #6, #7 and #8 as stale and open. They were closed on
+18 August 2026 and remain closed. That instruction has now outlived its facts by six weeks.
+
+## The pull request carried nothing
+
+`git diff origin/main...origin/research-photos` is empty. GitHub agrees: three commits, 0 changed
+files, 0 additions, 0 deletions. The portrait the branch was opened to land — Carter Smith,
+2026-27 — reached main as #616 earlier in the day, and the branch's own merge of main brought the
+rest across, so the sync the body asked for had already happened on origin before this pass began.
+
+Closed rather than merged. Merging would have written a merge commit describing nothing onto a
+history whose commit messages are meant to describe the history that changed, and would have
+redeployed an identical site. The branch is untouched and sits level with main, which is the state
+the next photograph run wants; it can open a fresh pull request when it has a portrait to land.
+
+## What was checked instead
+
+An empty diff leaves no sample, so the spot check went to the newest material the branch's own work
+has just published. The Herald of 23 September 2026 (`wkuherald.com/97612`), read in full, against
+four claims now on the site:
+
+- The portrait's identification. The caption names its subject outright — Carter Smith sworn in as
+  a sophomore senator at SGA's fourth meeting of the fall, 22 September 2026, photograph by Natasha
+  Gomez. It confirms the refiling as well as the face: the archive has him a freshman senator in
+  2025-26 and a sophomore senator in 2026-27, and the photograph belongs to the later term, where
+  #616 moved it. The file is a real JPEG, 2001 by 1334, and renders on the officers and network
+  pages.
+- The mental-health statement on every syllabus from the spring. Confirmed; announced by Lucas off
+  the Mental Health Committee's work with faculty and administrators.
+- Fall election voting opening with 28 candidates. Confirmed, and the arithmetic is the article's
+  own: 20 freshman, six Gatton Academy, one international, one graduate.
+- Resolution 4.6 F, shuttle buses in the iWKU map. Confirmed, and the article records it passing
+  unanimously.
+
+All four held. Nothing was cut this pass, because nothing was proposed and nothing published was
+found over-claimed.
+
+## The traps checklist
+
+Nothing to trip in a diff that does not exist, so the checklist was run over the published material
+above. No advance notice written up as a report — the election entry claims only that voting
+opened, which the article states in the present tense, and does not reach for a turnout. No
+committee chair promoted to officer. No surname-only match. No April result filed forward into the
+wrong year. Nothing near the settled facts. Nothing about a living person beyond what the Herald
+printed.
+
+## The rest of the board
+
+Every other `research-*` branch was compared against main by content, not by commit count, in case
+a routine had left verified work stranded without a pull request. Three differ. None is at risk:
+`research-2026-27-fall` holds the autumn 2026 entries, all fourteen of which are already on main,
+one of them under a title main has since improved; `research-editor-0923-sixth` and
+`research-editor-0926-fifth` hold night reports whose headings are already in the file on main.
+Nothing is stranded.
+
+## The duplicate pairs
+
+`check_duplicates.py` raises four title pairs and one same-source pair. All five were read and all
+five are genuinely separate business. The closest, 1997-98's designated driver cards at 0.6, is a
+bill adopted on 4 November and a distribution announced the following February — and the February
+entry is already written down to what a contents listing proves, which is the headline and nothing
+else. The 1991-92, 1971-72 and 2003-04 pairs are each a measure introduced and then decided. The
+2026-27 same-source pair is one Herald report of one meeting that transacted two different pieces
+of business.
+
+## The numbers
+
+Unchanged from this morning, nothing having been published since: 61 years, 1968 events, 60 people
+have been president, 1111 pieces of legislation with every file present and a real PDF, 308
+documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%) carrying an
+account of what the person did, 48 people recorded under more than one spelling, and a search index
+of 4949 records. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. No pull
+request left open.
+
+# 27 September 2026 (editor's fourth pass) — seven re-dated meetings checked against the paper, and one sentence left pointing at the wrong day
+
+## What was open
+
+Nothing. `gh` is not installed in this container, as `AGENT-LANDING.md` says, so the GitHub MCP
+tools were used; a dry-run push to a throwaway ref confirmed write access. Full mode.
+
+Every `research-*` branch was read rather than assumed. The recent editor branches show as one
+commit ahead of `main` only because the merges are squashes. Compared tip to tip, `research-photos`
+and `research-editor-0927-third` are identical to `main` outside the night report;
+`research-editor-0923-sixth` and `research-editor-0926-fifth` are behind it, and neither carries a
+line of `data/` or `scripts/` that `main` lacks. `research-2026-27-fall` is sixty-one commits behind, and each of the ten
+autumn-2026 entries it was opened for — the $113,481 budget, Constitution Fest, Resolution 4.6 F,
+the 28 candidates, the Organizational Aid cap — is already on `main`. The 4 August branches still
+have no merge base. Nothing is stranded.
+
+The brief again names #6, #7 and #8 as stale and open. They closed on 18 August 2026. That is the
+nineteenth consecutive pass to record it.
+
+## The settled facts, checked for drift
+
+These have regressed before — Norfleet was refiled forward once, the LaCivita portrait was
+withdrawn twice — so they were tested against the data rather than trusted. All hold. Norfleet is
+1981-82; Zielke 1969-70 and Lyne alone in 1970-71; Payne 1981-82 and Ragan 1982-83; Fiorella
+1972-73 and McKinney 1974-75 as regents; Menser president in 1967-68 with the regent seat from
+April 1968; Bush, Todd, Dawson acting in 2004-05, and Jeanne Johnson all present. Reed Morgan is
+carried with role `unresolved` and a note saying he held neither office, which is the settled
+finding and not a regression. Carlene and Darlene Lodmell are two separate people in two separate
+offices. The LaCivita portrait is on file and its caption still records that Johnson is the figure
+cropped out of the printed frame.
+
+## What was reviewed
+
+With no queue, the review went to what has just been published.
+
+**The 83 rewritten photograph citations (#618) hold up.** This was a mechanical sweep across 83
+labels, which is where a regex quietly eats a fact, so it was diffed entry by entry rather than
+sampled: 1,466 entries before and after, none gained or lost, and in all 83 cases the only change
+is the removal of a trailing `(low)`, `(medium)` or `(good)`. Every other field is byte-identical
+and no label lost a word of its substance — the index entry that pins an identification, the note
+that a frame is a crop, all still there. The claim that the marks survive in the finding record is
+also true, not merely asserted: 771 of them are still in `data/photo-finds/` under `quality`.
+
+**The seven re-dated 2003-04 meetings (#612) are right, and were checked one by one.** Each entry
+had been filed on the Thursday the Herald printed it and was moved back two days to the Tuesday
+SGA met. All seven articles were opened. Every one dates itself to the Thursday in the citation and
+puts the business at "Tuesday's meeting" in its own text, so all seven re-datings are correct:
+16 and 23 September, 14 and 28 October and 18 November 2003, and 3 and 24 February 2004. Ten
+further facts inside them held exactly: Richard Kirchmeyer as vice president
+for Information Technology on the campus directory and identity theft; Brian Strow as the economics
+professor behind plus/minus grading and John Bradley as the president opposing it, including his
+report that the state's other student body presidents told him to fight it; Natalie Croney chairing
+Academic Affairs; the $5.6 million Gov. Ernie Fletcher's administration ordered Western to cut and
+the freeze pending Gary Ransdell's plan; the $15,000-to-$17,000 fall in the 2004-05 budget landing
+on campus improvements and organizational aid; the hour and a half of notice asked for cancelled
+classes; and Robert Watkins moving to suspend the by-laws for the Nov. 4 voting resolution, with
+the 350 signatures on the grading petition and the Homecoming tent on the Downing south lawn.
+
+The one substantive correction #612 made to prose is also right. Nick Todd announced the budget cut
+as **vice president of finance**, which is what the Herald of 26 February 2004 calls him, and not
+the bare "vice president" the entry had carried. That is the committee-chair trap caught in the
+right direction.
+
+## What was cut
+
+**One sentence, re-pointed.** The re-dating broke a relative date it did not touch. The 14 October
+entry closed "Brian Strow was to formally propose the system to the University Senate that day."
+That was true when the entry sat on 16 October, because the Herald of that morning says the system
+"will be officially proposed to the University Senate today". Moved back to the Tuesday, "that day"
+now claimed the formal proposal happened on 14 October, two days before it did. The sentence now
+names 16 October outright, so no later re-dating can move it again. Nothing else was cut: this is
+the only casualty found in the seven.
+
+## For the owner: four commits on `main` carry a tool-attribution trailer
+
+Found while checking whether any contributor edit had landed unreviewed. None had — no commit in
+`main`'s 87 carries a `Contributed-By` trailer — but the same sweep turned up four that carry
+`Co-authored-by: Claude <noreply@anthropic.com>` in the message body:
+
+- `4af498ce` The editor's pass for 25 September (#590)
+- `f88237c8` The editor's later report for 25 September (#591)
+- `ed9347a8` The same Truman error a second time (#592)
+- `841f8721` Night-report addendum for 25 September (#593)
+
+All four are from 25 September and they are the only four in the whole history; every other commit
+message is clean, and the authorship line is clean throughout — 51 `samuelkurtzsfs` and 36
+`SGA 60`, nothing else. Nothing reaches the site: these are trailers inside commit messages, not
+repository or page content. But `CLAUDE.md` names commit messages specifically, and
+`AGENT-LANDING.md` records that 105 commits carrying the same trailer were rewritten out of the
+history on 28 August 2026, so this is the rule the project has already paid once to enforce.
+
+**This pass did not fix it, deliberately.** Taking four trailers out of published history means
+rewriting those commits and force-pushing `main`, which breaks every existing clone and every
+research branch cut from it, and `CLAUDE.md` tells cloud agents never to push to `main`. That is
+the owner's call, not an editor's. It is recorded here so the next run does not have to find it
+again, and so it is not lost if nobody acts this week.
+
+## The duplicate pairs
+
+Four title pairs and one same-source pair, and all five are genuinely separate business. Two were
+settled against the sources rather than by reading: the 2003-04 plus/minus pair is concern voiced
+at the meeting of 23 September, reported 25 September, and the unanimous vote of 14 October,
+reported 16 October — two meetings, two articles. The 1997-98 designated driver pair is a bill
+carrying a first reading, a second reading and a mark on its Pass line in November 1997, against a
+Herald announcement of distribution in February 1998 that the entry itself says is a contents
+listing and nothing more. The 1991-92 and 1971-72 pairs are each a measure introduced and then
+decided, and both say plainly that the archive does not hold the article's text. The 2026-27
+same-source group is one Herald report of one meeting carrying three different pieces of business.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people recorded under more than one
+spelling, and a search index of 4949 records. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0. No pull request left open.
