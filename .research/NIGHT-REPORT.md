@@ -34528,3 +34528,141 @@ present and a real PDF, 308 documents, 2651 recorded terms of office held by 180
 them (98%) carrying an account of what the person did, 48 people recorded under more than one
 spelling, and a search index of 4949 records. `build.py` clean, `check_data.py` exit 0,
 `check_contrib.py` exit 0. No pull request left open.
+
+# 27 September 2026 (editor's fifth pass) — nine meetings filed on the day the paper printed them, and a week's slip in 2023-24
+
+## What was open
+
+Nothing. `gh` is not installed in this container, as `AGENT-LANDING.md` says, so the GitHub MCP
+tools did the work; a dry-run push to a throwaway ref confirmed write access. Full mode.
+
+Every `research-*` branch was read rather than assumed. `research-photos` is behind `main` and
+tree-identical outside the night report. `research-editor-0927-third` is behind it and its one
+differing line of `data/` is the older version of the sentence #621 re-pointed.
+`research-2026-27-fall` needed more care: eleven of its event titles are absent from `main`, which
+reads like stranded work. It is not. Four are titles `main` has since rewritten, and the other
+seven were checked **by source URL rather than by date**, because `main` has been re-dating this
+material — every one of the seven is on `main` under a new date and new wording, one of them split
+into three entries. The branch carries nothing `main` lacks. The 4 August branches still have no
+merge base, and their diff would delete `herald-index-full.json` and the validators. Nothing is
+stranded.
+
+The brief again names #6, #7 and #8 as stale and open. They closed on 18 August 2026, unmerged.
+That is the twentieth consecutive pass to record it.
+
+## The spot check went to the dating question, because it is the largest one open
+
+#615 left the record with 227 events that cite `wkuherald.com`, describe a meeting and do not sit
+on a Tuesday, and called it an upper bound rather than a defect count, needing each article opened.
+So this pass opened eleven of them. **Every factual claim in all eleven held. Nothing was cut.**
+Three of the eleven were checked precisely because they looked wrong and were not:
+
+- The 9 November 2023 entry credits Bill 5-23-F to Salvador León. An out-of-order read of the
+  article makes that look like the next bill's authors; in the article's own order the sentence
+  "The bill was written by León" sits directly under 5-23-F. It also lists exactly 20 organisations,
+  as the entry says.
+- The 1 February 2023 entry puts Ethan Huffaker's lone nay on the poetry-mic bill. The article's
+  "spoke against this bill" does refer to it, and the roll call is the paragraph after.
+- The 23 April 2025 entry names **Maggie Yelton** chief of staff where that Herald article prints
+  "Maggie Yates". The archive is right and the paper is wrong: Yelton is the surname on SGA's own
+  bill text in `legislation-authors.json`, and the Herald's own report of 4 February 2025 calls her
+  Yelton. Her spelling note now records the "Yates" variant so no later pass "corrects" a name a
+  primary document settles.
+
+## Cut
+
+Nothing. Nine dates moved and four sentences re-pointed; no sourced fact was removed.
+
+## Nine meetings dated to the day they happened
+
+Eight entries sat on the day the *Herald* printed the article rather than the day SGA met. Each was
+established from the article's own words — "passed Tuesday night", "at Tuesday's meeting", a photo
+caption giving the weekday and date — never from arithmetic alone, and every `src` label is
+unchanged, as #612 established for 2003-04.
+
+    2023-02-22 -> 2023-02-21   menstrual product legislation (body already said "Feb. 21")
+    2023-09-20 -> 2023-09-19   the 23rd Senate's first bill, the Pink Walk
+    2023-11-09 -> 2023-11-07   $10,000 of organizational aid among 20 groups
+    2024-01-24 -> 2024-01-23   midyear resignations reshuffle the cabinet
+    2025-02-05 -> 2025-02-04   the chief justice on a possible DEI amendment
+    2025-04-23 -> 2025-04-22   Whipple elected speaker, the 25th Senate convenes
+    2025-10-01 -> 2025-09-30   general counsel on House Bill 4
+    2026-03-11 -> 2026-03-10   organizational aid split among 33 groups
+
+**The ninth was found by collision, and was out by a week.** Moving the resignations entry onto
+23 January 2024 put it on a date already holding "Spring committee heads sworn in", which is
+sourced to the *Herald* of 31 January. That article says SGA "met Tuesday night" — the 30th — and
+its photograph is reused file art from the 23rd, captioned as such. So the committee-heads entry
+was a week early and its opening clause, "At the spring semester's first meeting", described a
+meeting the other entry already covers. It now reads "At its meeting of 30 January 2024", and the
+two entries are two meetings again.
+
+**Two dates were checked and left alone, which is the point of opening the articles.** The
+6 November 2024 censure sits on a Wednesday because the Judicial Council met that Wednesday, not
+at the Tuesday senate meeting, and the article says so. The 16 October 2025 funding meeting sits on
+a Thursday because SGA met on the Thursday that week, in three photo captions. A sweep that assumed
+Tuesday would have broken both.
+
+**One was left unmoved for want of proof.** The 1 February 2023 voucher entry is almost certainly
+the meeting of 31 January, but that article never names a weekday for the meeting it reports, and
+its only dated caption is file art from the *earlier* 24 January meeting. A lead, not a finding, so
+the date stands.
+
+## Four sentences the re-dating would have left pointing at the wrong day
+
+This is the failure #621 caught once already: moving an event breaks prose elsewhere that cites the
+old date. All four were found by searching the prose for each old date before committing.
+
+- Anne-Marie Wright's profile had Bill 1-23-F passing 28-0 on 20 September; it passed at the
+  19 September meeting.
+- Ryan Dilts's profile dated a co-authored bill to 9 November; it was taken on the 7th.
+- Maggie Yelton's note put the 25th Senate's first meeting on 23 April 2025.
+- Preston Jenkins's note did the same, two clauses after correctly dating his own reappointment to
+  22 April — the sentence contradicted itself, which is independent corroboration of the 22nd.
+
+## Two blank vote lines closed
+
+Trap 2a says a blank Pass line is a lead, never a finding. Bills 6-23-F and 7-23-F both ended "the
+posted form leaves the vote line blank", and the *Herald*'s report of that same meeting — now
+cited on both as `src2` — says all four measures before it passed unanimously. Both entries record
+that, and both record that the *Herald* numbers these bills one higher than SGA's own forms do
+(7-23-F and 8-23-F against 6-23-F and 7-23-F). The 5K entry also notes the paper gives the race as
+4 to 6 p.m. where the form says 5 to 7; the sum, venue and date match, so the disagreement is
+recorded rather than resolved by picking one.
+
+## Flagged, not fixed
+
+The Queer Student Union president quoted in the 21 February 2023 entry is "Alistar Flowers" here.
+That article prints **both** spellings — "Alastair" in a photo caption, "Alistar" in the body — so
+the doubt is the source's own. Not corrected, per the spelling rule.
+
+## The settled facts hold
+
+Tested against the data rather than trusted, because these have regressed before. Norfleet is
+1981-82; Zielke 1969-70 and Lyne alone in 1970-71; Payne 1981-82 and Ragan 1982-83; Fiorella and
+McKinney as regents; Menser with the seat from April 1968; Reed Morgan carried as holding neither
+office; Carlene and Darlene Lodmell two people; the LaCivita portrait on file with its caption.
+
+## The duplicate pairs
+
+Byte-identical to `main`'s output: the same four title pairs and one same-source pair, none
+introduced by the nine re-datings. The four are separate business for the reasons earlier passes
+recorded. **The same-source pair is now settled rather than deferred again.** Both entries rest on
+the *Herald* of 23 September 2026; the syllabus statement belongs to the Tuesday meeting of the
+22nd, and the election entry to the 23rd because the article says "Elections opened at 8 a.m.
+today". Two items, two days, one article, correctly dated.
+
+## The 227 are now 218, and the method is settled
+
+Nine came off the list this pass and the remaining ones still need the same treatment: open the
+article, take the weekday from its own words, and leave the date alone where the meeting really was
+not a Tuesday. Two of the eleven checked here were correct as filed, so the residue is not a defect
+count and a mechanical fix would introduce errors. It stays a decade-at-a-time job.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people recorded under more than one
+spelling, and a search index of 4949 records — every figure unchanged, since nine dates moved and
+nothing was added or removed. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
