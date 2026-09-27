@@ -34666,3 +34666,106 @@ present and a real PDF, 308 documents, 2651 recorded terms of office held by 180
 them (98%) carrying an account of what the person did, 48 people recorded under more than one
 spelling, and a search index of 4949 records — every figure unchanged, since nine dates moved and
 nothing was added or removed. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+
+# 27 September 2026 (editor's sixth pass) — a documentation-only pass merged, and the wall confirmed to be on the request, not the route
+
+One pull request was open: **#624, "Research: photographs (27 September, afternoon)"**, the rolling
+photograph branch reopened after #622 merged this morning. It is merged, squashed to `main` as
+`0d4529d`. Nothing was cut, because nothing in it was unsupported.
+
+## What it was, and what that changed about reviewing it
+
+A documentation-only pass. The diff is two files — `.research/photo-run-2026-09-27-afternoon.md`
+and the running log in `SGA-60-AGENT-INFO.md` — and `git diff origin/main...HEAD -- data/ site/`
+returns nothing at all. So there is no new event, no new date, no officer, no person and no
+election result anywhere in it, and nothing in it reaches a year page.
+
+That makes the usual sample the wrong instrument. Eight of N new facts is the right test for a
+research pass; here there were no historical claims to sample, only claims about what the run did
+and what the archive refused. So every checkable claim was checked instead of a sample of them.
+Eleven held, with no exceptions.
+
+The portrait baseline was recomputed from `years.json` against `photos.json` rather than read off
+the run's own note: all 73 leader records carry a portrait, none missing, Todd, Dawson, Johnson and
+Gilley among them. `merge_photo_finds.py` on a dry run proposes 0 to add and 0 to replace against
+18 standing refusals, exactly as reported.
+
+## The wall, tested rather than taken on trust
+
+`viewcontent.cgi` was opened directly: `article=5695&context=talisman` returned HTTP 403 and a body
+that is Cloudflare's `Just a moment...` challenge. The run's central new claim — that a fetch path
+with no relationship to this container's proxy hits the same 403 — reproduces: the WKU Archives
+finding aid at `article=1619`, which has never opened by any route, returned 403 with no body from
+that separate path. `archive.ph` and `web.archive.org` both reset the connection at the proxy.
+
+The claim worth keeping is the negative one, and it holds: the item **landing** pages are not
+behind the wall. `dlsc_ua_records/2464/` returned HTTP 200 and 34 KB minutes after the 403 on its
+own `viewcontent.cgi` link, and that page carries no `og:image`, no `twitter:image` and no image or
+PDF href — the only content link on it is the blocked one. So there is no route around the script
+from the landing page, and the block is on what the request looks like rather than where it comes
+from. A future pass gains nothing from a different container.
+
+That test paid a dividend it was not aimed at. The index of `dlsc_ua_records/2464` reads "Student
+Regent's 2-month Term Nears End – Sandra Norfleet", which is first-hand support for the settled
+filing of Norfleet at **1981-82** rather than the plaque's 1982. Read at first hand, not inferred.
+
+## Cuts
+
+None. One imprecision flagged instead of cut, because it is in a dead-end note and touches no
+published claim: the log says the searches found `wku.edu/news` pieces titled "Robinson elected as
+SGA president" and "Lucas elected as SGA president" and that these "are already the cited source"
+for the two portraits. The conclusion is right — both men are portrayed from `wku.edu/news`, so
+neither is a new lead — but the Robinson portrait is cited to "SGA President Rush Robinson Connects
+Philosophy and Student Leadership", which is not an election story. Two different articles were
+collapsed into one. It costs nothing here. It is the motion that produces a wrong citation when it
+happens in `years.json`, so it was named on the pull request rather than let past.
+
+Also asked for, for next time: the WNKY-TV retrospective and the `bgdailynews.com` search are
+recorded as dead ends with no URLs. A dead end is worth as much as a hit in this log, but only if
+the next run can re-check it without repeating the search.
+
+## On the tool names in the diff
+
+The two files name a fetch tool and a vendor. Left as they are: the internal handoff and
+research-log layer already does so 57 times on `main` across those same two paths, neither file is
+rendered into `site/`, and cutting one mention while the rest stand would be theatre. The built
+output was re-checked with a word-boundary grep and contains no attribution anywhere — every
+apparent hit is the substring inside "philanthropic". The branch commit is authored `SGA 60`, the
+squash commit by the repository owner, and neither carries a trailer or a session link.
+
+## The three stale pull requests are not stale — they are gone
+
+The standing brief still names #6 "Research: photographs (rolling)", #7 "Research: the 1980s" and
+#8 "Research: the 2020s" as open since 4 August and well behind `main`. All three were **closed on
+18 August 2026** and none was merged. There was nothing to rescue, resolve or close this pass. The
+brief should stop naming them.
+
+## The duplicate pairs
+
+`check_duplicates.py` reports the same four title pairs and one same-source pair and exits 1. None
+is introduced by #624, which changes no data. Judged again rather than waved through, and none
+should be merged. 1991-92 is a bill introduced on 28 January and defeated on 6 February. 1971-72 is
+the KCLU planning action and Associated Students endorsing it a month later. 2003-04 is a position
+taken in September and legislation passed in October. The 2026-27 same-source pair is two items of
+business from one meeting report, already settled last pass.
+
+The 1997-98 designated-driver pair, highest at 0.6, is worth recording properly: it is three
+entries on one scheme, not two — Bill 97-3-F passing on 4 November, the *Herald* reporting the
+cards in use on 13 November, and distribution announced on 17 February. Each carries its own
+source. Each says plainly that the archive holds only a contents listing rather than inventing the
+article's detail, and the February entry, which is an advance notice, is written to exactly what
+the notice proves and no further. That is the rule working, not a duplicate.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people recorded under more than one
+spelling, and a search index of 4949 records — every figure unchanged, because nothing was added,
+removed or moved. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. The build
+withdrew one photograph the archive no longer holds, as it did before this pass and as it will
+until that file is dealt with.
+
+## Still open
+
+Nothing. No pull request is open against `main` as this pass ends.
