@@ -1,33 +1,6 @@
 {
  "leaders": [
   {
-   "year": "2005-06",
-   "name": "Ben Redmon",
-   "file": "2005-06-ben-redmon.jpg",
-   "src": {
-    "label": "College Heights Herald, special commencement edition (WKU Archives UA12/2/1 \"Walk the Line\"), 1 May 2008, p. 6C. His graduating-senior column, \"Leaving the Party at 10:30,\" runs under a portrait captioned \"Ben Redmon, President, Interfraternity Council\" (photograph by Briana Scroggins/Herald). Not an SGA caption, and not specific to 2005-06, his year as an SGA senator and Campus Improvements Committee vice-chair, but the only portrait of him on file.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6729"
-   }
-  },
-  {
-   "year": "2008-09",
-   "name": "Eileen Forsythe",
-   "file": "2008-09-eileen-forsythe.jpg",
-   "src": {
-    "label": "WKU Archives UA1C11/105/35 Phi Mu Composite, 2011-2012, 4th row, 1st from left. No photograph specific to 2008-09, her recorded year as an SGA senator, is on file, so this later composite portrait is used instead; each face on the composite carries its own printed name label, and hers reads \"Eileen Forsythe.\"",
-    "url": "https://digitalcommons.wku.edu/stu_org/375"
-   }
-  },
-  {
-   "year": "2013-14",
-   "name": "Shelby Nitzken",
-   "file": "2013-14-shelby-nitzken.jpg",
-   "src": {
-    "label": "WKU Archives UA1C11/105/35 Phi Mu Composite, 2011-2012, 7th row, 2nd from left. Not the same year as her recorded 2013-14 SGA senate service, but the nearest composite reachable; each face carries its own printed name label, and hers reads \"Shelby Nitzken.\"",
-    "url": "https://digitalcommons.wku.edu/stu_org/375"
-   }
-  },
-  {
    "year": "1966-67",
    "name": "Carmen Ann Willoughby",
    "file": "1966-67-carmen-willoughby.jpg",
@@ -173,20 +146,20 @@
   },
   {
    "year": "1966-67",
-   "name": "Michael R. Klein",
-   "file": "1967-68-michael-klein.jpg",
-   "src": {
-    "label": "1969 Talisman pt. 2, p. 282, senior portraits. The page prints eight labelled rows of four; he is the third face in the fifth row, and that row checks out as three men then a woman against the four names printed for it. He is named again in the Associated Students group caption on p. 153 of the 1968 Talisman. No photograph of him from either of his Congress years has been found, so his senior portrait stands for them.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/386/"
-   }
-  },
-  {
-   "year": "1966-67",
    "name": "Marshall Peace",
    "file": "1966-67-marshall-peace.jpg",
    "src": {
     "label": "1967 Talisman pt. 1, p. 136, Associated Students officers; six people, three standing for the three names in Second Row and three seated for the three in First Row. He is named third and last in the standing row, so he is the man standing at the right. The reading is fixed at two points: Carmen Willoughby, the only woman named, is last in the seated row and the only woman in the photograph sits at the right, and Bucky Lanning, named second standing, is the fair-haired man in the middle, fair-haired again in the Student Activities photograph on the facing page (cropped from a group photo)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/382/"
+   }
+  },
+  {
+   "year": "1966-67",
+   "name": "Michael R. Klein",
+   "file": "1967-68-michael-klein.jpg",
+   "src": {
+    "label": "1969 Talisman pt. 2, p. 282, senior portraits. The page prints eight labelled rows of four; he is the third face in the fifth row, and that row checks out as three men then a woman against the four names printed for it. He is named again in the Associated Students group caption on p. 153 of the 1968 Talisman. No photograph of him from either of his Congress years has been found, so his senior portrait stands for them.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/386/"
    }
   },
   {
@@ -749,6 +722,15 @@
   },
   {
    "year": "1969-70",
+   "name": "Mike Durham",
+   "file": "1968-69-mike-durham.jpg",
+   "src": {
+    "label": "1969 Talisman, p. 300, Junior Class Officers (cropped from a group photo). No photograph specific to 1969-70 is on file, so this portrait, from 1968-69, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/386"
+   }
+  },
+  {
+   "year": "1969-70",
    "name": "Pat Riley",
    "file": "1969-70-pat-riley.jpg",
    "src": {
@@ -772,6 +754,15 @@
    "src": {
     "label": "1969 Talisman pt. 1, p. 52",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/385"
+   }
+  },
+  {
+   "year": "1969-70",
+   "name": "Phil Myers",
+   "file": "1970-71-phil-myers.jpg",
+   "src": {
+    "label": "1971 Talisman, p. 140, senior portraits; seven rows of four faces against twenty-eight names in order, so PHILIP S. MYERS, the first name on the page, is the first face in the first row. No photograph specific to 1969-70 is on file, so this portrait, from 1970-71, is reused here.",
+    "url": "https://archive.org/details/talisman1971west"
    }
   },
   {
@@ -3197,6 +3188,15 @@
   },
   {
    "year": "1980-81",
+   "name": "Kevin Kinne",
+   "file": "1980-81-kevin-kinne.jpg",
+   "src": {
+    "label": "1981 Talisman, p. 282, the Associated Student Government group photograph. The caption names six in the front row, seven in the second, eight in the third and seven in the back, and the frame holds exactly 6, 7, 8 and 7 heads in four bands. Kinne is third of the third row's eight names, and the crop is the one full-bearded face in that band, sitting between two positions the archive already holds from this same photograph: Perry Hines (second) to his left and Craig Hoffer (fourth) to his right. The article printed above the photograph names him chairman of the student opinion poll committee and reports his comment on the committee's first survey, which matches his committee-chair record for this year. The archive holds one other Kevin Kinne portrait, from the 1976 Talisman, p. 392; the two were not compared feature by feature, and this identification rests on the row position, not on a face match. (cropped from a group photo)",
+    "url": "https://archive.org/details/talisman1981west/page/n285/mode/1up"
+   }
+  },
+  {
+   "year": "1980-81",
    "name": "Kevin Strader",
    "file": "1980-81-kevin-strader.jpg",
    "src": {
@@ -4673,6 +4673,33 @@
   },
   {
    "year": "1988-89",
+   "name": "Hollie Hale",
+   "file": "1986-87-hollie-hale.jpg",
+   "src": {
+    "label": "1987 Talisman, p. 114, Associated Student Government group photograph (left of two). Fifteen names in three rows of five against fifteen faces in three rows of five; the back row is two men then three women, matching Lynn Ritter and Donald Herron ahead of Martha Wilson, Caroline Miller and Laura Dibert, which fixes the reading. Checked against two people in the same frame who already have portraits from elsewhere: Carol Sue Norcia at front-left and Kimberly Summers, third in the front row, whose face came independently from the 1987 sophomore class grid. (cropped from a group photo). No photograph specific to 1988-89 is on file, so this portrait, from 1986-87, is reused here.",
+    "url": "https://archive.org/details/talisman1987west/page/n117/mode/1up"
+   }
+  },
+  {
+   "year": "1988-89",
+   "name": "Honor Logsdon",
+   "file": "1988-89-honor-logsdon.jpg",
+   "src": {
+    "label": "1989 Talisman, p. 198, \"Associated Student Government\" group photograph; fourth and last of the four names the caption lists in the second row, after Victor Click, Mari Knights and Lori Easton. The frame holds three figures in front and four behind, matching the caption's three front-row and four second-row names exactly, and the back row shows one man ahead of three women. The rows read left to right: Amos Gott, the caption's first front-row name, is the man in glasses at front left, checked against his portrait from the Herald of 13 April 1989, and Scott Whitehouse, its last, is the man at front right; the striped top behind him in his own crop from this frame is this subject, at the right-hand end of the back row. (cropped from a group photo)",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413/"
+   }
+  },
+  {
+   "year": "1988-89",
+   "name": "Jeff Key",
+   "file": "1986-87-jeff-key.jpg",
+   "src": {
+    "label": "1986 Talisman, p. 265, the lower of two Sigma Alpha Epsilon group photographs on the Greeks spread. The three printed rows count 6, 7 and 6 figures, exactly matching the caption's 6, 7 and 6 names, so the positions line up; Key is the fourth of the seven in the second row. The volume's index lists him once, as Key, Jeffrey Len, p. 265 and nowhere else, and the only other Key in the book is Julius Irvin Key. (cropped from a group photo). No photograph specific to 1988-89 is on file, so this portrait, from 1986-87, is reused here.",
+    "url": "https://archive.org/details/talisman1986west/page/n268/mode/1up"
+   }
+  },
+  {
+   "year": "1988-89",
    "name": "Joey Nunn",
    "file": "1988-89-joey-nunn.jpg",
    "src": {
@@ -4750,6 +4777,15 @@
    "src": {
     "label": "1987 Talisman, p. 160, Alpha Delta Pi (cropped from a group photo)",
     "url": "https://archive.org/details/talisman1987west"
+   }
+  },
+  {
+   "year": "1988-89",
+   "name": "Lori Easton",
+   "file": "1988-89-lori-easton.jpg",
+   "src": {
+    "label": "1989 Talisman, p. 198, \"Associated Student Government\" group photograph; caption reads \"SECOND ROW: Victor Click, Mari Knights, Lori Easton, Honor Logsdon,\" third of four in that row. The frame holds three figures in front and four behind, matching the caption's three front-row and four second-row names exactly, and the back row shows one man ahead of three women, matching Click before Knights, Easton and Logsdon. The rows read left to right: the caption's first front-row name, Amos Gott, is the man in glasses at front left, checked against his portrait from the Herald of 13 April 1989, and its last, president Scott Whitehouse, is the man at front right. (cropped from a group photo)",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413/"
    }
   },
   {
@@ -5105,11 +5141,29 @@
   },
   {
    "year": "1990-91",
+   "name": "Eddie Smith",
+   "file": "1989-90-eddie-smith-spirit.jpg",
+   "src": {
+    "label": "WKU Spirit Masters Scrapbook, 1989-90, class composite board (WKU Archives UA12/2/16, Student Organizations), p. 4 of the scanned volume (only picture found). No photograph specific to 1990-91 is on file, so this portrait, from 1989-90, is reused here.",
+    "url": "https://digitalcommons.wku.edu/stu_org/321/"
+   }
+  },
+  {
+   "year": "1990-91",
    "name": "Eric McWilliams",
    "file": "1991-92-eric-mcwilliams.jpg",
    "src": {
     "label": "WKU Spirit Masters scrapbook for 1991-92, UA12/2/16, \"Meet our group\" pages, where each member's portrait carries a printed block giving name, hometown, class and major. Sophomore in 1991-92 fits the Herald calling him a junior when he ran for the student government presidency in March 1993 (Vol. 68), and fits his 1990-91 term as an at-large representative in his freshman year.",
     "url": "https://digitalcommons.wku.edu/stu_org/563"
+   }
+  },
+  {
+   "year": "1990-91",
+   "name": "Greg Willoughby",
+   "file": "1989-90-greg-willoughby.jpg",
+   "src": {
+    "label": "1990 Talisman, p. 129, underclassmen portraits (Wil-Zin). The names run in blocks of six down the right-hand column, one block per row of six portraits, left to right; Willoughby is second of six in the first block and second in the top row. The row checks out by sex: positions 1 and 2 are the only men, matching John Williamson and Willoughby, and 3 to 6 are Julia, Leslie and Sabrina Wilson and Felicia Wingler. The index reads \"Willoughby, Gregory - 129, 162, 172, 174\", and p. 162 is the Associated Student Government group photograph whose back row names Gregory L. Willoughby, so the portrait is the Congress member and not a namesake. No photograph specific to 1990-91 is on file, so this portrait, from 1989-90, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414"
    }
   },
   {
@@ -5141,6 +5195,15 @@
   },
   {
    "year": "1990-91",
+   "name": "Jason Stevens",
+   "file": "1989-90-jason-stevens.jpg",
+   "src": {
+    "label": "1990 Talisman, p. 124, underclassmen portraits (Robertson-Swim); indexed \"Stevens, Jason - 124\" (only picture found). No photograph specific to 1990-91 is on file, so this portrait, from 1989-90, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414/"
+   }
+  },
+  {
+   "year": "1990-91",
    "name": "Jeff Welch",
    "file": "1990-91-jeff-welch-spirit.jpg",
    "src": {
@@ -5164,6 +5227,15 @@
    "src": {
     "label": "WKU Spirit Masters scrapbook for 1991-92, UA12/2/16, \"Meet our group\" pages, where each member's portrait carries a printed block giving name, hometown, class and major. A junior in 1991-92 was a sophomore in 1990-91, the year the archive records her as an at-large representative. The spelling Juli, unusual and matching the archive's roster exactly, is what ties the two records together; nothing in the scrapbook names her office.",
     "url": "https://digitalcommons.wku.edu/stu_org/563"
+   }
+  },
+  {
+   "year": "1990-91",
+   "name": "Julie Fleming",
+   "file": "1989-90-julie-fleming.jpg",
+   "src": {
+    "label": "1990 Talisman, p. 162, Associated Student Government group photograph. The caption gives three rows, four names in the front and five in each of the middle and back, and the photograph shows exactly that: four figures in front, five behind them and five standing at the back. Counting the front row left to right, Fleming is third of four. The row is confirmed independently by its fourth figure, Van C. Hodge Jr., whose separate class portrait on p. 114 of the same volume is the same man, and by Gregory L. Willoughby, second in the back row and the man in glasses whose class portrait is on p. 129. (only picture found). No photograph specific to 1990-91 is on file, so this portrait, from 1989-90, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414"
    }
   },
   {
@@ -5321,6 +5393,15 @@
   },
   {
    "year": "1990-91",
+   "name": "Shannon Montgomery",
+   "file": "1989-90-shannon-montgomery.jpg",
+   "src": {
+    "label": "1990 Talisman, p. 162, Associated Student Government (cropped from a group photo). No photograph specific to 1990-91 is on file, so this portrait, from 1989-90, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414/"
+   }
+  },
+  {
+   "year": "1990-91",
    "name": "Todd Geon",
    "file": "1990-91-todd-geon.jpg",
    "src": {
@@ -5461,6 +5542,15 @@
    "src": {
     "label": "Herald, Apr 2, 1991",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7756/"
+   }
+  },
+  {
+   "year": "1991-92",
+   "name": "India Wilson",
+   "file": "1989-90-india-wilson.jpg",
+   "src": {
+    "label": "1991 Talisman, p. 120, underclassmen portraits (Swa-Wya). The names run in blocks of five down the left-hand column, one block per row of five portraits, left to right; Wilson is second of five in the fifth block and second in the fifth row. The row checks out by sex: Timothy S. Williams, Wilson, Jeannie R. Wilson, LauraLee Wilson, Melissa A. Wise, and the row shows one man only, in position 1. She is the only India Wilson in the volumes covering these years, indexed \"Wilson, India C. - 213\" in 1990 and \"Wilson, India C. 120\" in 1991. (only picture found). No photograph specific to 1991-92 is on file, so this portrait, from 1989-90, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/415"
    }
   },
   {
@@ -5663,6 +5753,15 @@
   },
   {
    "year": "1992-93",
+   "name": "Andrea Wilson",
+   "file": "1993-94-andrea-wilson.jpg",
+   "src": {
+    "label": "1994 Talisman, p. 63, Phi Mu portraits (only picture found). No photograph specific to 1992-93 is on file, so this portrait, from 1993-94, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
+   }
+  },
+  {
+   "year": "1992-93",
    "name": "Ashley Means",
    "file": "1992-93-ashley-means.jpg",
    "src": {
@@ -5788,24 +5887,6 @@
    }
   },
   {
-   "year": "1993-94",
-   "name": "Eddie Myers",
-   "file": "1992-93-eddie-myers.jpg",
-   "src": {
-    "label": "1993 Talisman, p. 204, Student Government Association (cropped from a group photo); the yearbook's printed index reads \"Myers, Edward 204\", which is what identifies the face. No photograph from his year chairing Student Affairs is on file, so the portrait filed under 1992-93 is used here too.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
-   }
-  },
-  {
-   "year": "1994-95",
-   "name": "Edward \"Eddie\" Myers",
-   "file": "1992-93-eddie-myers.jpg",
-   "src": {
-    "label": "1993 Talisman, p. 204, Student Government Association (cropped from a group photo); the yearbook's printed index reads \"Myers, Edward 204\", which is what identifies the face. No photograph from his year chairing the Student Athletic Committee is on file, so the portrait filed under 1992-93 is used here too.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
-   }
-  },
-  {
    "year": "1992-93",
    "name": "Emily Brown",
    "file": "1992-93-emily-brown.jpg",
@@ -5821,6 +5902,15 @@
    "src": {
     "label": "1993 Talisman, p. 33, senior portraits (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
+   }
+  },
+  {
+   "year": "1992-93",
+   "name": "Eric McWilliams",
+   "file": "1991-92-eric-mcwilliams.jpg",
+   "src": {
+    "label": "WKU Spirit Masters scrapbook for 1991-92, UA12/2/16, \"Meet our group\" pages, where each member's portrait carries a printed block giving name, hometown, class and major. Sophomore in 1991-92 fits the Herald calling him a junior when he ran for the student government presidency in March 1993 (Vol. 68), and fits his 1990-91 term as an at-large representative in his freshman year. No photograph specific to 1992-93 is on file, so this portrait, from 1991-92, is reused here.",
+    "url": "https://digitalcommons.wku.edu/stu_org/563"
    }
   },
   {
@@ -5969,6 +6059,15 @@
   },
   {
    "year": "1992-93",
+   "name": "Mark Miller",
+   "file": "1991-92-mark-miller.jpg",
+   "src": {
+    "label": "WKU Spirit Masters scrapbook for 1991-92, UA12/2/16, \"Meet our group\" pages, where each member's portrait carries a printed block giving name, hometown, class and major. Sophomore in 1991-92 means freshman in 1990-91, which is when the Herald of 2 October 1990 (Vol. 66 No. 12) reported Mark Miller elected freshman class president, the year the archive records him on the Organizational Aid and Campus Improvement committees. No photograph specific to 1992-93 is on file, so this portrait, from 1991-92, is reused here.",
+    "url": "https://digitalcommons.wku.edu/stu_org/563"
+   }
+  },
+  {
+   "year": "1992-93",
    "name": "Matt Anderson",
    "file": "1992-93-matt-anderson.jpg",
    "src": {
@@ -6059,6 +6158,15 @@
   },
   {
    "year": "1993-94",
+   "name": "Bert Blevins",
+   "file": "1992-93-bert-blevins.jpg",
+   "src": {
+    "label": "1993 Talisman, p. 48, junior class portraits (only picture found). No photograph specific to 1993-94 is on file, so this portrait, from 1992-93, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
+   }
+  },
+  {
+   "year": "1993-94",
    "name": "Brandon Rucker",
    "file": "1993-94-brandon-rucker.jpg",
    "src": {
@@ -6077,11 +6185,38 @@
   },
   {
    "year": "1993-94",
+   "name": "Deanna Mills",
+   "file": "1991-92-deanna-mills.jpg",
+   "src": {
+    "label": "WKU Spirit Masters scrapbook for 1991-92, UA12/2/16, \"Meet our group\" pages, where each member's portrait carries a printed block giving name, hometown, class and major. Sophomore in 1991-92 puts her in the class of 1994, which is how the Herald described her in September 1994 (Vol. 70), and matches the archive's record of her on the Judicial Council in 1993-94, her senior year. She also wrote a letter to the Herald of 2 April 1991 backing Dan Knowles for the presidency. No photograph specific to 1993-94 is on file, so this portrait, from 1991-92, is reused here.",
+    "url": "https://digitalcommons.wku.edu/stu_org/563"
+   }
+  },
+  {
+   "year": "1993-94",
    "name": "Donald Smith",
    "file": "1993-94-donald-smith.jpg",
    "src": {
     "label": "Herald 69:7, 16 Sept 1993, p. 8",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7687"
+   }
+  },
+  {
+   "year": "1993-94",
+   "name": "Eddie Myers",
+   "file": "1992-93-eddie-myers.jpg",
+   "src": {
+    "label": "1993 Talisman, p. 204, Student Government Association (cropped from a group photo); the yearbook's printed index reads \"Myers, Edward 204\", which is what identifies the face. No photograph from his year chairing Student Affairs is on file, so the portrait filed under 1992-93 is used here too.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+   }
+  },
+  {
+   "year": "1993-94",
+   "name": "Emily Brown",
+   "file": "1992-93-emily-brown.jpg",
+   "src": {
+    "label": "1994 Talisman, p. 31, McLean Hall portraits; indexed \"Brown, Emily, 31\" (only picture found). No photograph specific to 1993-94 is on file, so this portrait, from 1992-93, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
    }
   },
   {
@@ -6095,6 +6230,15 @@
   },
   {
    "year": "1993-94",
+   "name": "Greg Edmonds",
+   "file": "1992-93-greg-edmonds.jpg",
+   "src": {
+    "label": "1993 Talisman, p. 65, freshman class portraits; indexed \"Edmonds, Greg 65, 204\" (low). No photograph specific to 1993-94 is on file, so this portrait, from 1992-93, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+   }
+  },
+  {
+   "year": "1993-94",
    "name": "Heather Hall",
    "file": "1993-94-heather-hall.jpg",
    "src": {
@@ -6104,11 +6248,29 @@
   },
   {
    "year": "1993-94",
+   "name": "Huma Ahsan",
+   "file": "1992-93-huma-ahsan.jpg",
+   "src": {
+    "label": "1993 Talisman, p. 56, sophomore portraits (Adler-Crabtree); indexed \"Ahsan, Huma 56, 168, 204\" (only picture found). No photograph specific to 1993-94 is on file, so this portrait, from 1992-93, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+   }
+  },
+  {
+   "year": "1993-94",
    "name": "Jason Embry",
    "file": "1993-94-jason-embry.jpg",
    "src": {
     "label": "1994 Talisman, p. 69, Sigma Alpha Epsilon portraits (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
+   }
+  },
+  {
+   "year": "1993-94",
+   "name": "Jennifer Raffaelli",
+   "file": "1992-93-jennifer-raffaelli.jpg",
+   "src": {
+    "label": "1994 Talisman, p. 28, Central Hall portraits; indexed \"Raffaelli, Jennifer, 28\" (only picture found). No photograph specific to 1993-94 is on file, so this portrait, from 1992-93, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
    }
   },
   {
@@ -6266,6 +6428,15 @@
   },
   {
    "year": "1994-95",
+   "name": "Edward \"Eddie\" Myers",
+   "file": "1992-93-eddie-myers.jpg",
+   "src": {
+    "label": "1993 Talisman, p. 204, Student Government Association (cropped from a group photo); the yearbook's printed index reads \"Myers, Edward 204\", which is what identifies the face. No photograph from his year chairing the Student Athletic Committee is on file, so the portrait filed under 1992-93 is used here too.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+   }
+  },
+  {
+   "year": "1994-95",
    "name": "Erik L. Turner",
    "file": "1994-95-erik-l-turner.jpg",
    "src": {
@@ -6280,6 +6451,15 @@
    "src": {
     "label": "College Heights Herald 71:7, 14 September 1995, p. 4, People Poll (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9021"
+   }
+  },
+  {
+   "year": "1994-95",
+   "name": "Greg Edmonds",
+   "file": "1992-93-greg-edmonds.jpg",
+   "src": {
+    "label": "1993 Talisman, p. 65, freshman class portraits; indexed \"Edmonds, Greg 65, 204\" (low). No photograph specific to 1994-95 is on file, so this portrait, from 1992-93, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
    }
   },
   {
@@ -6356,6 +6536,15 @@
   },
   {
    "year": "1994-95",
+   "name": "Jennifer Raffaelli",
+   "file": "1992-93-jennifer-raffaelli.jpg",
+   "src": {
+    "label": "1994 Talisman, p. 28, Central Hall portraits; indexed \"Raffaelli, Jennifer, 28\" (only picture found). No photograph specific to 1994-95 is on file, so this portrait, from 1992-93, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
+   }
+  },
+  {
+   "year": "1994-95",
    "name": "Kenny May",
    "file": "1993-94-kenny-may.jpg",
    "src": {
@@ -6388,6 +6577,15 @@
    "src": {
     "label": "Herald 69:52, 21 Apr 1994, p. 1",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7879/"
+   }
+  },
+  {
+   "year": "1994-95",
+   "name": "Stephanie McCarty",
+   "file": "1993-94-stephanie-mccarty.jpg",
+   "src": {
+    "label": "1994 Talisman, p. 36, Poland Hall portraits (only picture found). No photograph specific to 1994-95 is on file, so this portrait, from 1993-94, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
    }
   },
   {
@@ -6428,6 +6626,15 @@
   },
   {
    "year": "1995-96",
+   "name": "Brandon Rucker",
+   "file": "1993-94-brandon-rucker.jpg",
+   "src": {
+    "label": "1994 Talisman, p. 37, Poland Hall portraits (only picture found). No photograph specific to 1995-96 is on file, so this portrait, from 1993-94, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
+   }
+  },
+  {
+   "year": "1995-96",
    "name": "Carlene Lodmell",
    "file": "1996-97-carlene-lodmell-spirit.jpg",
    "src": {
@@ -6446,11 +6653,29 @@
   },
   {
    "year": "1995-96",
+   "name": "Darlene Lodmell",
+   "file": "1996-97-darlene-lodmell.jpg",
+   "src": {
+    "label": "WKU Spirit Masters Scrapbook, 1996-97, member portrait board (WKU Archives UA12/2/16, Student Organizations), p. 9 of the scanned volume. No photograph specific to 1995-96 is on file, so this portrait, from 1996-97, is reused here.",
+    "url": "https://digitalcommons.wku.edu/stu_org/329/"
+   }
+  },
+  {
+   "year": "1995-96",
    "name": "David Apple",
    "file": "1995-96-david-apple.jpg",
    "src": {
     "label": "1993 Talisman, p. 200, Sigma Phi Epsilon; indexed \"Apple, David 200\" (cropped from a group photo)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+   }
+  },
+  {
+   "year": "1995-96",
+   "name": "Erin Schepman",
+   "file": "1996-97-erin-schepman.jpg",
+   "src": {
+    "label": "WKU Spirit Masters Scrapbook, 1996-97, member portrait board (WKU Archives UA12/2/16, Student Organizations), p. 13 of the scanned volume. No photograph specific to 1995-96 is on file, so this portrait, from 1996-97, is reused here.",
+    "url": "https://digitalcommons.wku.edu/stu_org/329/"
    }
   },
   {
@@ -6536,11 +6761,29 @@
   },
   {
    "year": "1995-96",
+   "name": "Stephanie McCarty",
+   "file": "1993-94-stephanie-mccarty.jpg",
+   "src": {
+    "label": "1994 Talisman, p. 36, Poland Hall portraits (only picture found). No photograph specific to 1995-96 is on file, so this portrait, from 1993-94, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
+   }
+  },
+  {
+   "year": "1995-96",
    "name": "Tara (Higdon) Howard",
    "file": "1995-96-tara-howard.jpg",
    "src": {
     "label": "Herald 70:54, 20 Apr 1995",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7934"
+   }
+  },
+  {
+   "year": "1995-96",
+   "name": "Tara Higdon",
+   "file": "1993-94-tara-higdon.jpg",
+   "src": {
+    "label": "1993 Talisman, p. 66, freshman portraits (Gentry-Hughes); indexed \"Higdon, Tara 66\" (only picture found). Tara Higdon held Administrative Vice President in 1994-95; the archive's record notes: “A Slaughters junior; succeeded Evans as president and as student regent the following year.” This portrait, from 1993-94, is reused for 1995-96 as no photograph specific to that year is on file.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
    }
   },
   {
@@ -6644,10 +6887,28 @@
   },
   {
    "year": "1996-97",
+   "name": "Jeff Yan",
+   "file": "1995-96-jeff-yan.jpg",
+   "src": {
+    "label": "College Heights Herald 70:53, 18 April 1995, p. 6, Higdon and Yan campaign advertisement. No photograph specific to 1996-97 is on file, so this portrait, from 1995-96, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8003"
+   }
+  },
+  {
+   "year": "1996-97",
    "name": "Joe Mathis",
    "file": "1996-97-joe-mathis.jpg",
    "src": {
     "label": "College Heights Herald 73:49, 14 April 1998, p. 12 (only picture found)",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7979"
+   }
+  },
+  {
+   "year": "1996-97",
+   "name": "Josh Detre",
+   "file": "1997-98-josh-detre.jpg",
+   "src": {
+    "label": "College Heights Herald 73:49, 14 April 1998, p. 10. No photograph specific to 1996-97 is on file, so this portrait, from 1997-98, is reused here.",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7979"
    }
   },
@@ -6824,6 +7085,24 @@
   },
   {
    "year": "1997-98",
+   "name": "Darlene Lodmell",
+   "file": "1996-97-darlene-lodmell.jpg",
+   "src": {
+    "label": "WKU Spirit Masters Scrapbook, 1996-97, member portrait board (WKU Archives UA12/2/16, Student Organizations), p. 9 of the scanned volume. No photograph specific to 1997-98 is on file, so this portrait, from 1996-97, is reused here.",
+    "url": "https://digitalcommons.wku.edu/stu_org/329/"
+   }
+  },
+  {
+   "year": "1997-98",
+   "name": "David Apple",
+   "file": "1995-96-david-apple.jpg",
+   "src": {
+    "label": "1993 Talisman, p. 200, Sigma Phi Epsilon; indexed \"Apple, David 200\" (cropped from a group photo). David Apple held Chairperson, Academic Affairs Committee in 1996-97; the archive's record notes: “He continued as Academic Affairs chair into the following year, named again to the post at the SGA meeting of 27 August 1996.” This portrait, from 1995-96, is reused for 1997-98 as no photograph specific to that year is on file.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
+   }
+  },
+  {
+   "year": "1997-98",
    "name": "Derek Durbin",
    "file": "1997-98-derek-durbin.jpg",
    "src": {
@@ -6932,11 +7211,29 @@
   },
   {
    "year": "1997-98",
+   "name": "Matt Bastin",
+   "file": "1998-99-matt-bastin.jpg",
+   "src": {
+    "label": "College Heights Herald 74:49, 8 April 1999, p. 6 (only picture found). No photograph specific to 1997-98 is on file, so this portrait, from 1998-99, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8050"
+   }
+  },
+  {
+   "year": "1997-98",
    "name": "Michael Hardin",
    "file": "1997-98-michael-hardin.jpg",
    "src": {
     "label": "College Heights Herald 72:33, 30 January 1997, p. 4 (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3032"
+   }
+  },
+  {
+   "year": "1997-98",
+   "name": "Ryan Boyer",
+   "file": "1996-97-ryan-boyer.jpg",
+   "src": {
+    "label": "College Heights Herald 71:1, 22 August 1995, printed p. 4, People Poll (only picture found). No photograph specific to 1997-98 is on file, so this portrait, from 1996-97, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9013"
    }
   },
   {
@@ -7148,6 +7445,15 @@
   },
   {
    "year": "1998-99",
+   "name": "Heather Rogers",
+   "file": "1997-98-heather-rogers.jpg",
+   "src": {
+    "label": "College Heights Herald 73:52, 28 April 1998, p. 5 (only picture found). No photograph specific to 1998-99 is on file, so this portrait, from 1997-98, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7981"
+   }
+  },
+  {
+   "year": "1998-99",
    "name": "Jason Chilton",
    "file": "1998-99-jason-chilton.jpg",
    "src": {
@@ -7193,6 +7499,15 @@
   },
   {
    "year": "1998-99",
+   "name": "Josh Detre",
+   "file": "1997-98-josh-detre.jpg",
+   "src": {
+    "label": "College Heights Herald 73:49, 14 April 1998, p. 10. No photograph specific to 1998-99 is on file, so this portrait, from 1997-98, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7979"
+   }
+  },
+  {
+   "year": "1998-99",
    "name": "Joshua Hampton",
    "file": "1998-99-joshua-hampton.jpg",
    "src": {
@@ -7234,6 +7549,15 @@
    "src": {
     "label": "College Heights Herald 74:52, 20 April 1999, p. 4 (PDF p. 5) (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/477"
+   }
+  },
+  {
+   "year": "1998-99",
+   "name": "Laura Hancock",
+   "file": "1997-98-laura-hancock.jpg",
+   "src": {
+    "label": "College Heights Herald 73:50, 16 April 1998, p. 3, \"Race for SGA vice presidency heats up\" (only picture found). No photograph specific to 1998-99 is on file, so this portrait, from 1997-98, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7980"
    }
   },
   {
@@ -7535,6 +7859,15 @@
   },
   {
    "year": "2001-02",
+   "name": "Dwight Campbell",
+   "file": "1999-00-dwight-campbell.jpg",
+   "src": {
+    "label": "College Heights Herald 75:51, 11 April 2000, p. 14 (only picture found). No photograph specific to 2001-02 is on file, so this portrait, from 1999-00, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8113"
+   }
+  },
+  {
+   "year": "2001-02",
    "name": "Holly Skidmore",
    "file": "2000-01-holly-skidmore.jpg",
    "src": {
@@ -7616,6 +7949,15 @@
   },
   {
    "year": "2002-03",
+   "name": "Anna Coats",
+   "file": "2001-02-anna-coats.jpg",
+   "src": {
+    "label": "College Heights Herald 77:48, 2 April 2002, p. 3 (only picture found). No photograph specific to 2002-03 is on file, so this portrait, from 2001-02, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9172"
+   }
+  },
+  {
+   "year": "2002-03",
    "name": "Ashley Bishop",
    "file": "2002-03-ashley-bishop.jpg",
    "src": {
@@ -7630,6 +7972,24 @@
    "src": {
     "label": "College Heights Herald, Vol. 77, No. 47, 28 March 2002, p. 11 (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9184"
+   }
+  },
+  {
+   "year": "2002-03",
+   "name": "Dwight Campbell",
+   "file": "1999-00-dwight-campbell.jpg",
+   "src": {
+    "label": "College Heights Herald 75:51, 11 April 2000, p. 14 (only picture found). No photograph specific to 2002-03 is on file, so this portrait, from 1999-00, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8113"
+   }
+  },
+  {
+   "year": "2002-03",
+   "name": "Eddie Schwab",
+   "file": "1998-99-eddie-schwab.jpg",
+   "src": {
+    "label": "College Heights Herald 73:30, 27 January 1998, p. 4 (only picture found). No photograph specific to 2002-03 is on file, so this portrait, from 1998-99, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7962"
    }
   },
   {
@@ -7684,6 +8044,15 @@
    "src": {
     "label": "College Heights Herald, Vol. 77, No. 47, 28 March 2002, p. 11 (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9184"
+   }
+  },
+  {
+   "year": "2002-03",
+   "name": "Sam Stinson",
+   "file": "2001-02-sam-stinson.jpg",
+   "src": {
+    "label": "College Heights Herald 74:6, 15 September 1998, p. 11 (only picture found). No photograph specific to 2002-03 is on file, so this portrait, from 2001-02, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9084"
    }
   },
   {
@@ -7796,6 +8165,15 @@
   },
   {
    "year": "2003-04",
+   "name": "Mason Stevenson",
+   "file": "2005-06-mason-stevenson.jpg",
+   "src": {
+    "label": "College Heights Herald, SGA election special, 15 March 2005, p. 3C (only picture found). Mason Stevenson held Chair, Legislative Research Committee in 2004-05; the archive's record notes: “Mason Stevenson, a Princeton junior double-majoring in broadcasting and political science, joined SGA as parliamentarian in fall 2003, a non-voting post he said taught him parliamentary procedure; he had previously served as treasurer of the Southwest Hall Council and was a resident assistant at Bemis Lawrence Hall, and had earlier helped start a College Republicans chapter at Paducah Community College.” This portrait, from 2005-06, is reused for 2003-04 as no photograph specific to that year is on file.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8961"
+   }
+  },
+  {
+   "year": "2003-04",
    "name": "Natalie Croney",
    "file": "2003-04-natalie-croney.jpg",
    "src": {
@@ -7828,6 +8206,24 @@
    "src": {
     "label": "WKU Board of Regents page, Sept 2006 (Wayback)",
     "url": "http://web.archive.org/web/20060910115217/http://www.wku.edu/regents.html"
+   }
+  },
+  {
+   "year": "2003-04",
+   "name": "Scott Broadbent",
+   "file": "2004-05-scott-broadbent.jpg",
+   "src": {
+    "label": "College Heights Herald, Vol. 80, No. 7, 2004-09-16, p. 1 (only picture found). No photograph specific to 2003-04 is on file, so this portrait, from 2004-05, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9401"
+   }
+  },
+  {
+   "year": "2003-04",
+   "name": "Scott Wolfe",
+   "file": "2001-02-scott-wolfe.jpg",
+   "src": {
+    "label": "College Heights Herald, Vol. 77, No. 47, 28 March 2002, p. 11 (only picture found). No photograph specific to 2003-04 is on file, so this portrait, from 2001-02, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9184"
    }
   },
   {
@@ -7900,6 +8296,15 @@
    "src": {
     "label": "UA12/2/16 Spirit Masters Scrapbook 2004-2005, WKU Archives",
     "url": "https://digitalcommons.wku.edu/stu_org/327"
+   }
+  },
+  {
+   "year": "2004-05",
+   "name": "Jessica Martin",
+   "file": "2003-04-jessica-martin.jpg",
+   "src": {
+    "label": "College Heights Herald, Decision 2004 election section, 16 March 2004, p. 2 (only picture found). No photograph specific to 2004-05 is on file, so this portrait, from 2003-04, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"
    }
   },
   {
@@ -8008,6 +8413,15 @@
    "src": {
     "label": "College Heights Herald, Vol. 81, No. 40, 6 April 2006, p. 7 (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3694"
+   }
+  },
+  {
+   "year": "2005-06",
+   "name": "Ben Redmon",
+   "file": "2005-06-ben-redmon.jpg",
+   "src": {
+    "label": "College Heights Herald, special commencement edition (WKU Archives UA12/2/1 \"Walk the Line\"), 1 May 2008, p. 6C. His graduating-senior column, \"Leaving the Party at 10:30,\" runs under a portrait captioned \"Ben Redmon, President, Interfraternity Council\" (photograph by Briana Scroggins/Herald). Not an SGA caption, and not specific to 2005-06, his year as an SGA senator and Campus Improvements Committee vice-chair, but the only portrait of him on file.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6729"
    }
   },
   {
@@ -8197,6 +8611,15 @@
    "src": {
     "label": "College Heights Herald, SGA election special, 15 March 2005, p. 2C (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8961"
+   }
+  },
+  {
+   "year": "2005-06",
+   "name": "Tori Theiss",
+   "file": "2006-07-tori-theiss.jpg",
+   "src": {
+    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA12/2/16, Student Organizations), p. 33 of the scanned volume. No photograph specific to 2005-06 is on file, so this portrait, from 2006-07, is reused here.",
+    "url": "https://digitalcommons.wku.edu/stu_org/328/"
    }
   },
   {
@@ -8408,11 +8831,29 @@
   },
   {
    "year": "2007-08",
+   "name": "Charlie Harris",
+   "file": "2010-11-charlie-harris.jpg",
+   "src": {
+    "label": "College Heights Herald, 3 May 2011, \"Harris graduating with a legacy on the Hill\", photograph by Dorothy Edwards. A senior-year portrait carried back to an earlier term: the article traces his SGA service from his freshman year, 2007-08, through his resignation as a sophomore to his return as chief of staff, but it does not name the IT directorship, and no contemporaneous photograph of him in that office has been found.",
+    "url": "https://wkuherald.com/51517/news/harris-graduating-with-a-legacy-on-the-hill/"
+   }
+  },
+  {
+   "year": "2007-08",
    "name": "Chase Goff",
    "file": "2007-08-chase-goff.jpg",
    "src": {
     "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA12/2/16, Student Organizations), p. 30 of the scanned volume",
     "url": "https://digitalcommons.wku.edu/stu_org/328/"
+   }
+  },
+  {
+   "year": "2007-08",
+   "name": "Cherieth L. Lineweaver",
+   "file": "2006-07-cherieth-l-lineweaver.jpg",
+   "src": {
+    "label": "College Heights Herald 82:42, 29 March 2007, p. 7A, SGA Candidate Profiles - Election 2007 (only picture found). No photograph specific to 2007-08 is on file, so this portrait, from 2006-07, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6646"
    }
   },
   {
@@ -8476,6 +8917,15 @@
    "src": {
     "label": "College Heights Herald, 16 April 2010, p. 10 (Vol. 85, No. 47); photograph by Armando L. Sanchez (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6628"
+   }
+  },
+  {
+   "year": "2007-08",
+   "name": "Kayla W. Shelton",
+   "file": "2008-09-kayla-shelton.jpg",
+   "src": {
+    "label": "Herald, Apr 2009. No photograph specific to 2007-08 is on file, so this portrait, from 2008-09, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6748"
    }
   },
   {
@@ -8579,11 +9029,29 @@
   },
   {
    "year": "2008-09",
+   "name": "Charlie Harris",
+   "file": "2010-11-charlie-harris.jpg",
+   "src": {
+    "label": "College Heights Herald, 3 May 2011, \"Harris graduating with a legacy on the Hill\", photograph by Dorothy Edwards. A senior-year portrait carried back to an earlier term: the article traces his SGA service from his freshman year, 2007-08, through his resignation as a sophomore to his return as chief of staff, but it does not name the IT directorship, and no contemporaneous photograph of him in that office has been found.",
+    "url": "https://wkuherald.com/51517/news/harris-graduating-with-a-legacy-on-the-hill/"
+   }
+  },
+  {
+   "year": "2008-09",
    "name": "Danial Shaw",
    "file": "2008-09-danial-shaw.jpg",
    "src": {
     "label": "College Heights Herald 84:30 [29], 5 February 2009, p. 2, students lobbying in Frankfort (photograph by Albert Cesare) (only picture found)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6725"
+   }
+  },
+  {
+   "year": "2008-09",
+   "name": "Eileen Forsythe",
+   "file": "2008-09-eileen-forsythe.jpg",
+   "src": {
+    "label": "WKU Archives UA1C11/105/35 Phi Mu Composite, 2011-2012, 4th row, 1st from left. No photograph specific to 2008-09, her recorded year as an SGA senator, is on file, so this later composite portrait is used instead; each face on the composite carries its own printed name label, and hers reads \"Eileen Forsythe.\"",
+    "url": "https://digitalcommons.wku.edu/stu_org/375"
    }
   },
   {
@@ -8795,6 +9263,15 @@
   },
   {
    "year": "2009-10",
+   "name": "Eric Smiley",
+   "file": "2011-12-eric-smiley.jpg",
+   "src": {
+    "label": "College Heights Herald, 11 February 2011, 'Greeks comprise more than 40 percent of student government'; a composite of four studio portraits of SGA members who led Greek chapters. The caption identifies each by position: Smiley, of Sigma Chi, is the top-left frame, which is the one cropped here. No photograph specific to 2009-10 is on file, so this portrait, from 2011-12, is reused here.",
+    "url": "https://wkuherald.com/52960/news/greeks-comprise-more-than-40-percent-of-student-government/"
+   }
+  },
+  {
+   "year": "2009-10",
    "name": "Jonathon Tabor",
    "file": "2009-10-jonathon-tabor.jpg",
    "src": {
@@ -8881,24 +9358,6 @@
    "src": {
     "label": "Herald, 15 Apr 2011",
     "url": "https://wkuherald.com/51759/news/stephens-already-an-experienced-leader/"
-   }
-  },
-  {
-   "year": "2007-08",
-   "name": "Charlie Harris",
-   "file": "2010-11-charlie-harris.jpg",
-   "src": {
-    "label": "College Heights Herald, 3 May 2011, \"Harris graduating with a legacy on the Hill\", photograph by Dorothy Edwards. A senior-year portrait carried back to an earlier term: the article traces his SGA service from his freshman year, 2007-08, through his resignation as a sophomore to his return as chief of staff, but it does not name the IT directorship, and no contemporaneous photograph of him in that office has been found.",
-    "url": "https://wkuherald.com/51517/news/harris-graduating-with-a-legacy-on-the-hill/"
-   }
-  },
-  {
-   "year": "2008-09",
-   "name": "Charlie Harris",
-   "file": "2010-11-charlie-harris.jpg",
-   "src": {
-    "label": "College Heights Herald, 3 May 2011, \"Harris graduating with a legacy on the Hill\", photograph by Dorothy Edwards. A senior-year portrait carried back to an earlier term: the article traces his SGA service from his freshman year, 2007-08, through his resignation as a sophomore to his return as chief of staff, but it does not name the IT directorship, and no contemporaneous photograph of him in that office has been found.",
-    "url": "https://wkuherald.com/51517/news/harris-graduating-with-a-legacy-on-the-hill/"
    }
   },
   {
@@ -9047,6 +9506,15 @@
   },
   {
    "year": "2011-12",
+   "name": "Kendrick Bryan",
+   "file": "2009-10-kendrick-bryan.jpg",
+   "src": {
+    "label": "College Heights Herald 85:39, 23 March 2010, p. 5 (black and white, cut from a newspaper page scan). Kendrick Bryan held Executive Vice President in 2010-11; the archive's record notes: “Re-elected unopposed to a second term as EVP for 2011-12.” This portrait, from 2009-10, is reused for 2011-12 as no photograph specific to that year is on file.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6757"
+   }
+  },
+  {
+   "year": "2011-12",
    "name": "Rachel Calhoun",
    "file": "2011-12-rachel-calhoun.jpg",
    "src": {
@@ -9061,6 +9529,15 @@
    "src": {
     "label": "2014 Talisman: Reckoning, Part II, p. 296, underclassmen portraits (WKU Archives UA12/2/2)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5162"
+   }
+  },
+  {
+   "year": "2011-12",
+   "name": "Travis Taylor",
+   "file": "2012-13-travis-taylor.jpg",
+   "src": {
+    "label": "College Heights Herald, 26 Mar 2015, feature on Nicki and Travis Taylor, photographed in the SGA senate chambers (very low resolution: his head is about 90 pixels tall in the source frame, so the crop is small and soft). No photograph specific to 2011-12 is on file, so this portrait, from 2012-13, is reused here.",
+    "url": "https://wkuherald.com/wp-content/uploads/2015/03/1120ed8f54d05c57d7e2ff91da8e39a5.jpg"
    }
   },
   {
@@ -9155,6 +9632,15 @@
   },
   {
    "year": "2012-13",
+   "name": "Seth Church",
+   "file": "2014-15-seth-church.jpg",
+   "src": {
+    "label": "College Heights Herald, 15 Nov 2023, 'LGBTQ+ WKU Alumni share stories from the Hill' (archival photograph, 2015 Lavender Graduation). Seth Church held Chief Justice in 2013-14; the archive's record notes: “Church proposed the Cultural and Diversity Affairs Committee with President Nicki Taylor and chaired it in its first term, taking it into the Campus Pride Index and into work with Housing and Residence Life on gender-neutral housing and on letting applicants identify as transgender. He opposed the smoke-free campus resolution, arguing it was unfair to students required to live on campus for two years, and signed the executive cabinet's veto of it in November 2014; he then wrote with senator J. William Berry the limited-smoking resolution that passed 13-11 in February 2015. He authored the resolution on private space for breastfeeding students, brought to him by a non-traditional student, which passed unanimously in March 2015; co-authored with senator Zach Jones a resolution to publish SGA's attendance and voting records; and argued against the $10 million parking structure resolution on the ground that regional campus students would pay the $30 fee without using it. In April 2015 he wrote to the Judicial Council opposing the disqualification of president-elect Jay Todd Richey over misplaced campaign posters.” This portrait, from 2014-15, is reused for 2012-13 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/73883/news/lgbtq-wku-alumni-share-stories-from-the-hill/"
+   }
+  },
+  {
+   "year": "2012-13",
    "name": "Taylor Ruby",
    "file": "2012-13-taylor-ruby.jpg",
    "src": {
@@ -9200,6 +9686,15 @@
   },
   {
    "year": "2013-14",
+   "name": "Barrett Greenwell",
+   "file": "2015-16-barrett-greenwell.jpg",
+   "src": {
+    "label": "2016 Talisman: Life More Life, p. 241, seniors portraits (WKU Archives UA12/2/2). No photograph specific to 2013-14 is on file, so this portrait, from 2015-16, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
+   }
+  },
+  {
+   "year": "2013-14",
    "name": "Brad Cockrel",
    "file": "2013-14-brad-cockrel.jpg",
    "src": {
@@ -9241,6 +9736,15 @@
    "src": {
     "label": "2014 Talisman: Reckoning, Part II, p. 299, underclassmen portraits (WKU Archives UA12/2/2)",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5162"
+   }
+  },
+  {
+   "year": "2013-14",
+   "name": "Julia Payne",
+   "file": "2012-13-julia-payne.jpg",
+   "src": {
+    "label": "UA12/2/2 Talisman, Vol. 83 (2012), p. 362, underclassmen portrait grid. No photograph specific to 2013-14 is on file, so this portrait, from 2012-13, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8897"
    }
   },
   {
@@ -9335,11 +9839,47 @@
   },
   {
    "year": "2013-14",
+   "name": "Paige Settles",
+   "file": "2015-16-paige-settles.jpg",
+   "src": {
+    "label": "College Heights Herald, 22 Sep 2015. Paige Settles held Legislative Research Committee Chair in 2014-15; the archive's record notes: “Rendered \"Paige Settle\" on the senate leadership page and \"Paige Settles\" in the cabinet minutes. She was Speaker of the Senate the following year.” This portrait, from 2015-16, is reused for 2013-14 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/wp-content/uploads/2015/09/77c586e79692fb054940233f31197892.jpg"
+   }
+  },
+  {
+   "year": "2013-14",
+   "name": "Sarah Hazelip",
+   "file": "2012-13-sarah-hazelip.jpg",
+   "src": {
+    "label": "UA12/2/2 Talisman, Vol. 83 (2012), p. 356, underclassmen portrait grid. No photograph specific to 2013-14 is on file, so this portrait, from 2012-13, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8897"
+   }
+  },
+  {
+   "year": "2013-14",
    "name": "Seth Church",
    "file": "2014-15-seth-church.jpg",
    "src": {
     "label": "College Heights Herald, 15 Nov 2023, 'LGBTQ+ WKU Alumni share stories from the Hill' (archival photograph, 2015 Lavender Graduation). Seth Church held Chief Justice in 2013-14; the archive's record notes: “Church proposed the Cultural and Diversity Affairs Committee with President Nicki Taylor and chaired it in its first term, taking it into the Campus Pride Index and into work with Housing and Residence Life on gender-neutral housing and on letting applicants identify as transgender. He opposed the smoke-free campus resolution, arguing it was unfair to students required to live on campus for two years, and signed the executive cabinet's veto of it in November 2014; he then wrote with senator J. William Berry the limited-smoking resolution that passed 13-11 in February 2015. He authored the resolution on private space for breastfeeding students, brought to him by a non-traditional student, which passed unanimously in March 2015; co-authored with senator Zach Jones a resolution to publish SGA's attendance and voting records; and argued against the $10 million parking structure resolution on the ground that regional campus students would pay the $30 fee without using it. In April 2015 he wrote to the Judicial Council opposing the disqualification of president-elect Jay Todd Richey over misplaced campaign posters.” This portrait, from 2014-15, is reused for 2013-14 as no photograph specific to that year is on file.",
     "url": "https://wkuherald.com/73883/news/lgbtq-wku-alumni-share-stories-from-the-hill/"
+   }
+  },
+  {
+   "year": "2013-14",
+   "name": "Shelby Nitzken",
+   "file": "2013-14-shelby-nitzken.jpg",
+   "src": {
+    "label": "WKU Archives UA1C11/105/35 Phi Mu Composite, 2011-2012, 7th row, 2nd from left. Not the same year as her recorded 2013-14 SGA senate service, but the nearest composite reachable; each face carries its own printed name label, and hers reads \"Shelby Nitzken.\"",
+    "url": "https://digitalcommons.wku.edu/stu_org/375"
+   }
+  },
+  {
+   "year": "2014-15",
+   "name": "Barrett Greenwell",
+   "file": "2015-16-barrett-greenwell.jpg",
+   "src": {
+    "label": "2016 Talisman: Life More Life, p. 241, seniors portraits (WKU Archives UA12/2/2). No photograph specific to 2014-15 is on file, so this portrait, from 2015-16, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
    }
   },
   {
@@ -9394,6 +9934,15 @@
    "src": {
     "label": "College Heights Herald, 19 March 2014, portrait feature on a student outside the two-party structure; single-subject frame cropped to the head and shoulders (medium)",
     "url": "https://wkuherald.com/wp-content/uploads/2014/03/a7679228d1f6f867768d146b99305205.jpg"
+   }
+  },
+  {
+   "year": "2014-15",
+   "name": "James Line",
+   "file": "2016-17-james-line.jpg",
+   "src": {
+    "label": "College Heights Herald, 5 April 2017, \"SGA approves legislation to lower GPA requirement, announces executive candidates\"; the caption to the same photograph places \"James Line (right)\" beside Zach Jones, proposing bill 21-17-S at the SGA meeting of 3 April 2017 (cropped to Line, at right, wearing an SGA-monogrammed shirt at the podium). James Line held Chief of Staff in 2015-16; the archive's record notes: “In his second year as chief of staff Line ran SGA's voter work: Richey gave him the job of registering students and getting them to the polls, and on 8 November 2016 he ran the Ride To Vote shuttle from three campus pick-up points. He authored the bill co-sponsoring the 2016 Presidential Debate Fest, the constitutional amendment lowering SGA's membership requirement from a 2.5 to a 2.0 grade point average, which passed 24-7, the organizational aid inclusivity pledge, and, with administrative vice president Hannah Neeper, the resolution asking WKU to put faculty salaries ahead of new construction.” This portrait, from 2016-17, is reused for 2014-15 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/28868/news/sga-approves-legislation-to-lower-gpa-requirement-announces-executive-candidates/"
    }
   },
   {
@@ -9488,6 +10037,15 @@
   },
   {
    "year": "2014-15",
+   "name": "Sarah Hazelip",
+   "file": "2012-13-sarah-hazelip.jpg",
+   "src": {
+    "label": "UA12/2/2 Talisman, Vol. 83 (2012), p. 356, underclassmen portrait grid. No photograph specific to 2014-15 is on file, so this portrait, from 2012-13, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8897"
+   }
+  },
+  {
+   "year": "2014-15",
    "name": "Seth Church",
    "file": "2014-15-seth-church.jpg",
    "src": {
@@ -9547,6 +10105,15 @@
    "src": {
     "label": "2016 Talisman: Life More Life, p. 285, underclassmen portraits (Pope-Reynolds), UA12/2/2",
     "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
+   }
+  },
+  {
+   "year": "2015-16",
+   "name": "Hannah Neeper",
+   "file": "2014-15-hannah-neeper.jpg",
+   "src": {
+    "label": "WKU faculty/staff photograph directory, file hannah_neeper918.jpg. The handle is WKU's own: its SGA executive branch page for 2016-2017 lists 'Hannah Neeper, Administrative Vice President, Hannah.neeper918@topper.wku.edu' (web.archive.org/web/20161230150409/http://www.wku.edu/sga/executive/), and WKU renders these files on its own department pages with the person's name as the img title. (only picture found). No photograph specific to 2015-16 is on file, so this portrait, from 2014-15, is reused here.",
+    "url": "https://www.wku.edu/img_facstaff/hannah_neeper918.jpg"
    }
   },
   {
@@ -9785,6 +10352,15 @@
   },
   {
    "year": "2016-17",
+   "name": "Hannah Neeper",
+   "file": "2014-15-hannah-neeper.jpg",
+   "src": {
+    "label": "WKU faculty/staff photograph directory, file hannah_neeper918.jpg. The handle is WKU's own: its SGA executive branch page for 2016-2017 lists 'Hannah Neeper, Administrative Vice President, Hannah.neeper918@topper.wku.edu' (web.archive.org/web/20161230150409/http://www.wku.edu/sga/executive/), and WKU renders these files on its own department pages with the person's name as the img title. (only picture found). No photograph specific to 2016-17 is on file, so this portrait, from 2014-15, is reused here.",
+    "url": "https://www.wku.edu/img_facstaff/hannah_neeper918.jpg"
+   }
+  },
+  {
+   "year": "2016-17",
    "name": "Hizareth Linares",
    "file": "2016-17-hizareth-linares.jpg",
    "src": {
@@ -9808,6 +10384,24 @@
    "src": {
     "label": "Herald, Mar 2017",
     "url": "https://wkuherald.com/29658/news/graduating-sga-president-reflects-on-two-terms/"
+   }
+  },
+  {
+   "year": "2016-17",
+   "name": "Jody Dahmer",
+   "file": "2014-15-jody-dahmer.jpg",
+   "src": {
+    "label": "College Heights Herald, 23 April 2015, the author's mug published with his letter to the editor signed 'Jody Dahmer, SGA Senator' (low). No photograph specific to 2016-17 is on file, so this portrait, from 2014-15, is reused here.",
+    "url": "https://wkuherald.com/wp-content/uploads/2015/04/934ebc49a26b14a37547b31ad3979ecd.jpg"
+   }
+  },
+  {
+   "year": "2016-17",
+   "name": "Josh Knight",
+   "file": "2014-15-josh-knight.jpg",
+   "src": {
+    "label": "2015 Talisman: Resurgence, p. 332, WKU College Youth in Government, UA12/2/2; cropped from the group photograph, whose printed caption keys the faces by row and places him fourth from the left in the back row of seven. The volume's index carries one Josh Knight, at this page, and four officers this archive records in the same years stand beside him in that key. No photograph specific to 2016-17 is on file, so this portrait, from 2014-15, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8679"
    }
   },
   {
@@ -9938,6 +10532,15 @@
   },
   {
    "year": "2017-18",
+   "name": "Ashley Cox",
+   "file": "2015-16-ashley-cox.jpg",
+   "src": {
+    "label": "2016 Talisman: Life More Life, p. 267, underclassmen portraits (Cook-Curry), UA12/2/2. No photograph specific to 2017-18 is on file, so this portrait, from 2015-16, is reused here.",
+    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
+   }
+  },
+  {
+   "year": "2017-18",
    "name": "Ashlyn Jones",
    "file": "2017-18-ashlyn-jones.jpg",
    "src": {
@@ -10006,6 +10609,15 @@
    "src": {
     "label": "College Heights Herald, 19 Apr 2017, \"Next student body president elected to office\"; the same left-to-right caption places Lowry third in the group hug (cropped to her; Hounshell, fourth in the caption's order, is partly visible in profile beside her).",
     "url": "https://wkuherald.com/28871/news/next-student-body-president-elected-to-office/"
+   }
+  },
+  {
+   "year": "2017-18",
+   "name": "Kenan Mujkanovic",
+   "file": "2019-20-kenan-mujkanovic.jpg",
+   "src": {
+    "label": "College Heights Herald, 17 April 2019; the caption names Kenan Mujkanovic, Will Harris and Garrett Edmonds, left to right, celebrating their Student Government Association election win in the Senate Chambers. Cropped to Mujkanovic at left; the centre and right figures match the verified portraits of his WGK running mates Harris and Edmonds, which fixes the caption’s order at both ends. Photographer Kendall Warner. No photograph specific to 2017-18 is on file, so this portrait, from 2019-20, is reused here.",
+    "url": "https://wkuherald.com/20294/uncategorized/kmw_8078-jpg/"
    }
   },
   {
@@ -10096,6 +10708,15 @@
    "src": {
     "label": "College Heights Herald, 13 November 2018, SGA meeting on the Colonnade textbook library bill; single-subject frame cropped to the head and shoulders (medium)",
     "url": "https://wkuherald.com/wp-content/uploads/2018/11/7d37c562abf5fa56d0b7de77a8c1df12.jpg"
+   }
+  },
+  {
+   "year": "2018-19",
+   "name": "Annalicia Carlson",
+   "file": "2016-17-annalicia-carlson.jpg",
+   "src": {
+    "label": "WKU faculty/staff photograph directory, file annalicia_carlson560.jpg. The handle is WKU's own: its SGA Judicial Council page for 2018-2019 lists 'Annalicia Carlson, Associate Justice, annalicia.carlson560@topper.wku.edu' (web.archive.org/web/20190720073043/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php), and WKU renders these files on its own department pages with the person's name as the img title. (only picture found). Annalicia Carlson held Chief Justice in 2017-18; the archive's record notes: “Carlson returned to the council as an associate justice for 2018-19.” This portrait, from 2016-17, is reused for 2018-19 as no photograph specific to that year is on file.",
+    "url": "https://www.wku.edu/img_facstaff/annalicia_carlson560.jpg"
    }
   },
   {
@@ -10240,6 +10861,15 @@
    "src": {
     "label": "WKU faculty/staff photograph directory, file yasmine_sadrinia100.jpg. The handle is WKU's own: its SGA Judicial Council page for 2018-2019 lists 'Yasmine Sadrinia, Associate Justice, yasmine.sadrinia100@topper.wku.edu' (web.archive.org/web/20190720073043/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php), and WKU renders these files on its own department pages with the person's name as the img title. (only picture found)",
     "url": "https://www.wku.edu/img_facstaff/yasmine_sadrinia100.jpg"
+   }
+  },
+  {
+   "year": "2019-20",
+   "name": "Abbey Norvell",
+   "file": "2021-22-abbey-norvell.jpg",
+   "src": {
+    "label": "College Heights Herald, 30 Oct 2021. No photograph specific to 2019-20 is on file, so this portrait, from 2021-22, is reused here.",
+    "url": "https://wkuherald.com/wp-content/uploads/2021/10/B3_6044.jpg"
    }
   },
   {
@@ -10433,6 +11063,15 @@
   },
   {
    "year": "2020-21",
+   "name": "Abbey Norvell",
+   "file": "2021-22-abbey-norvell.jpg",
+   "src": {
+    "label": "College Heights Herald, 30 Oct 2021. No photograph specific to 2020-21 is on file, so this portrait, from 2021-22, is reused here.",
+    "url": "https://wkuherald.com/wp-content/uploads/2021/10/B3_6044.jpg"
+   }
+  },
+  {
+   "year": "2020-21",
    "name": "Ashlynn Evans",
    "file": "2019-20-ashlynn-evans.jpg",
    "src": {
@@ -10483,6 +11122,15 @@
    "src": {
     "label": "WKU Student Government Association, executive branch headshots directory, file kody.jpg",
     "url": "https://www.wku.edu/sga/executive/headshots/kody.jpg"
+   }
+  },
+  {
+   "year": "2020-21",
+   "name": "Matt Barr",
+   "file": "2018-19-matt-barr.jpg",
+   "src": {
+    "label": "WKU Student Government Association, executive branch headshots directory, file matt.jpg (good). Matt Barr also held Campus Improvements Committee Head in 2019-20; no photograph specific to 2019-20 is on file, so this portrait, from 2018-19, is reused for both years.",
+    "url": "https://www.wku.edu/sga/executive/headshots/matt.jpg"
    }
   },
   {
@@ -10613,6 +11261,33 @@
   },
   {
    "year": "2021-22",
+   "name": "Jamison Moorehead",
+   "file": "2019-20-jamison-moorehead.jpg",
+   "src": {
+    "label": "College Heights Herald, 26 Feb 2020, photograph run with \"SGA confirms 5 senators, 4 voted in unanimously\". The frame shows two men shaking hands; the caption names only Moorehead. The bearded figure in the red windbreaker on the right is 2019-20 president Will Harris, the same man as the archive's own confirmed Harris portrait (2019-20-will-harris.jpg), and the article names Harris as president, so the younger left-hand figure being congratulated is Moorehead. The quarantined crop is taken from this frame: a sliver of Harris's red sleeve survives at its right edge. Jamison Moorehead held Director of Information Technology in 2020-21; the archive's record notes: “Handled absence excuses in October and November 2020, reminding senators that an absence without an excuse form went to the Judicial Council. He held the secretaryship and the Director of Information Technology post together on 19 January 2021; Brenna Mathews was secretary again by 2 February 2021.” This portrait, from 2019-20, is reused for 2021-22 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/16659/news/sga-confirms-5-senators-4-voted-in-unanimously/"
+   }
+  },
+  {
+   "year": "2021-22",
+   "name": "Kat Howard",
+   "file": "2019-20-kat-howard.jpg",
+   "src": {
+    "label": "College Heights Herald, 26 February 2020, SGA meeting confirming five senators; cropped to the only figure in focus (medium). No photograph specific to 2021-22 is on file, so this portrait, from 2019-20, is reused here.",
+    "url": "https://wkuherald.com/wp-content/uploads/2020/02/28cff5c33535efa44202200ef502d770.jpg"
+   }
+  },
+  {
+   "year": "2021-22",
+   "name": "Lauren Willett",
+   "file": "2022-23-lauren-willett.jpg",
+   "src": {
+    "label": "WKU Student Government Association, 2022-2023 executive branch page. No photograph specific to 2021-22 is on file, so this portrait, from 2022-23, is reused here.",
+    "url": "https://www.wku.edu/sga/2022-2023-executive/exec_headshots/willett_lauren_headshot.jpg"
+   }
+  },
+  {
+   "year": "2021-22",
    "name": "Margaret Glaser",
    "file": "2021-22-margaret-glaser.jpg",
    "src": {
@@ -10667,6 +11342,15 @@
   },
   {
    "year": "2021-22",
+   "name": "Preston Romanov",
+   "file": "2023-24-preston-romanov.jpg",
+   "src": {
+    "label": "College Heights Herald, 30 Aug 2023. Preston Romanov held Director of Public Relations in 2022-23; the archive's record notes: “Romanov returned as director of public relations for 2023-24, when he arranged headshots for the executive cabinet at the start of the year and ordered polo shirts for SGA members, including the Judicial Council.” This portrait, from 2023-24, is reused for 2021-22 as no photograph specific to that year is on file.",
+    "url": "https://wkuherald.com/wp-content/uploads/2023/08/0829_SGA_pj001.jpg"
+   }
+  },
+  {
+   "year": "2021-22",
    "name": "Reed Breunig",
    "file": "2021-22-reed-breunig.jpg",
    "src": {
@@ -10681,6 +11365,15 @@
    "src": {
     "label": "Herald, Aug 2024",
     "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
+   }
+  },
+  {
+   "year": "2021-22",
+   "name": "Shelby Robertson",
+   "file": "2020-21-shelby-robertson.jpg",
+   "src": {
+    "label": "WKU Office of Admissions, Admissions Ambassadors page, headshot labelled Shelby Robertson, Russell County, Biology/Pre-Med (file shelby_robertson092.jpg). Taken as the SGA officer on three joins: the same page carries Brenna Mathews and Savannah Molyneaux, both SGA figures, and Brenna Matthews was Robertson's opponent in the October 2020 speaker election (Herald, 7 Oct 2020); the SGA Robertson proposed a scholarship for rural students in October 2021 (Herald, 6 Oct 2021), and the ambassador Robertson is from rural Russell County. (250x315, the size WKU publishes these headshots at; not upscaled.). No photograph specific to 2021-22 is on file, so this portrait, from 2020-21, is reused here.",
+    "url": "https://www.wku.edu/admissions/student_staff/shelby_robertson092"
    }
   },
   {
@@ -10838,6 +11531,24 @@
   },
   {
    "year": "2022-23",
+   "name": "Megan Farmer",
+   "file": "2024-25-megan-farmer.jpg",
+   "src": {
+    "label": "College Heights Herald, 4 November 2024, SGA's Topper Chef cooking class; single-subject frame cropped to the head and shoulders (medium). No photograph specific to 2022-23 is on file, so this portrait, from 2024-25, is reused here.",
+    "url": "https://wkuherald.com/wp-content/uploads/2024/11/11_04_topperchef_AL_0001.jpg"
+   }
+  },
+  {
+   "year": "2022-23",
+   "name": "Meghan Pierce",
+   "file": "2021-22-meghan-pierce.jpg",
+   "src": {
+    "label": "WKU Department of Modern Languages student profile, \"Meghan Pierce, International Affairs and Arabic, Class of 2024\", written spring 2022. The profile runs two pages and carries exactly one photograph of a person. Identification is by name plus fit: the profile's Pierce is a Bowling Green Gatton Academy graduate in her second year in spring 2022 and class of 2024, which matches the SGA member's run of 2021-22 to 2023-24, and explains her sitting as Senior Senator in 2021-22, Gatton graduates entering WKU with junior standing. (453x681 as embedded in the WKU PDF; extracted, not upscaled or re-cropped.). No photograph specific to 2022-23 is on file, so this portrait, from 2021-22, is reused here.",
+    "url": "https://www.wku.edu/modernlanguages/student_profiles/pierce-morgan-2024-finalfinal.pdf"
+   }
+  },
+  {
+   "year": "2022-23",
    "name": "Olivia Feck",
    "file": "2022-23-olivia-feck.jpg",
    "src": {
@@ -10888,6 +11599,15 @@
    "src": {
     "label": "Herald, Aug 2024",
     "url": "https://wkuherald.com/77384/news/news-campus-government/sga-leaders-share-thoughts-new-academic-year-with-herald-editorial-board/"
+   }
+  },
+  {
+   "year": "2022-23",
+   "name": "Sarah Vincent",
+   "file": "2024-25-sarah-vincent.jpg",
+   "src": {
+    "label": "College Heights Herald, 21 Nov 2024, article feature photograph: the Homecoming Queen award at the WKU Homecoming football game, 16 Nov 2024. The Herald's caption names Sarah Vincent; she is the woman at left, wearing the Homecoming corsage. The same article records her as SGA speaker of the senate. No photograph specific to 2022-23 is on file, so this portrait, from 2024-25, is reused here.",
+    "url": "https://wkuherald.com/80796/life/i-didnt-think-i-had-a-shot-sarah-vincent-crowned-2024-wku-homecoming-queen/"
    }
   },
   {
@@ -10964,6 +11684,15 @@
   },
   {
    "year": "2023-24",
+   "name": "Ellen Henderson",
+   "file": "2024-25-ellen-henderson.jpg",
+   "src": {
+    "label": "WKU faculty/staff photograph directory, file ellen_henderson345.jpg, keyed to the NetID WKU's own SGA Judicial Council page gives for her (Wayback capture, 13 November 2024) (only picture found). No photograph specific to 2023-24 is on file, so this portrait, from 2024-25, is reused here.",
+    "url": "https://www.wku.edu/img_facstaff/ellen_henderson345.jpg"
+   }
+  },
+  {
+   "year": "2023-24",
    "name": "Gabriel Jerdon",
    "file": "2025-26-gabriel-jerdon.jpg",
    "src": {
@@ -11023,6 +11752,24 @@
    "src": {
     "label": "WKU Student Government Association, 2023-2024 executive branch headshots, wku.edu. Filename recovered from the Internet Archive CDX index of wku.edu/sga/2023-2024-executive/headshots/*, file retrieved from the live WKU server 1 September 2026. (studio portrait, full resolution original 4480x6720, downscaled only)",
     "url": "https://www.wku.edu/sga/2023-2024-executive/headshots/lyndsey_kelley_min.jpg"
+   }
+  },
+  {
+   "year": "2023-24",
+   "name": "Megan Farmer",
+   "file": "2024-25-megan-farmer.jpg",
+   "src": {
+    "label": "College Heights Herald, 4 November 2024, SGA's Topper Chef cooking class; single-subject frame cropped to the head and shoulders (medium). No photograph specific to 2023-24 is on file, so this portrait, from 2024-25, is reused here.",
+    "url": "https://wkuherald.com/wp-content/uploads/2024/11/11_04_topperchef_AL_0001.jpg"
+   }
+  },
+  {
+   "year": "2023-24",
+   "name": "Meghan Pierce",
+   "file": "2021-22-meghan-pierce.jpg",
+   "src": {
+    "label": "WKU Department of Modern Languages student profile, \"Meghan Pierce, International Affairs and Arabic, Class of 2024\", written spring 2022. The profile runs two pages and carries exactly one photograph of a person. Identification is by name plus fit: the profile's Pierce is a Bowling Green Gatton Academy graduate in her second year in spring 2022 and class of 2024, which matches the SGA member's run of 2021-22 to 2023-24, and explains her sitting as Senior Senator in 2021-22, Gatton graduates entering WKU with junior standing. (453x681 as embedded in the WKU PDF; extracted, not upscaled or re-cropped.). No photograph specific to 2023-24 is on file, so this portrait, from 2021-22, is reused here.",
+    "url": "https://www.wku.edu/modernlanguages/student_profiles/pierce-morgan-2024-finalfinal.pdf"
    }
   },
   {
@@ -11108,20 +11855,20 @@
   },
   {
    "year": "2024-25",
-   "name": "Anne-Marie Wright",
-   "file": "2024-25-anne-marie-wright.jpg",
-   "src": {
-    "label": "College Heights Herald, 24 Sep 2024; the caption names Student Body Vice President Donté Reed, Chief of Staff Anne-Marie Wright and Sophomore Senator Savanna Kurtz proposing a bill in the Senate Chambers. The three stand in that order across the photograph, and Wright is the centre figure, in a WKU Student Government Association polo. Photographer Gabriel Milby",
-    "url": "https://wkuherald.com/78528/news/news-campus-government/sga-votes-to-fund-pink-walk-passes-2-other-bills/"
-   }
-  },
-  {
-   "year": "2024-25",
    "name": "Annalise Finch",
    "file": "2023-24-annalise-finch.jpg",
    "src": {
     "label": "WKU Student Government Association, 2023-2024 executive branch headshots (the same portrait already published in the archive at 2023-24; the 2024-25 senate record spells her name Annalise)",
     "url": "https://www.wku.edu/sga/2023-2024-executive/headshots/annalise_finch_min.jpg"
+   }
+  },
+  {
+   "year": "2024-25",
+   "name": "Anne-Marie Wright",
+   "file": "2024-25-anne-marie-wright.jpg",
+   "src": {
+    "label": "College Heights Herald, 24 Sep 2024; the caption names Student Body Vice President Donté Reed, Chief of Staff Anne-Marie Wright and Sophomore Senator Savanna Kurtz proposing a bill in the Senate Chambers. The three stand in that order across the photograph, and Wright is the centre figure, in a WKU Student Government Association polo. Photographer Gabriel Milby",
+    "url": "https://wkuherald.com/78528/news/news-campus-government/sga-votes-to-fund-pink-walk-passes-2-other-bills/"
    }
   },
   {
@@ -11431,6 +12178,15 @@
    }
   },
   {
+   "year": "2026-27",
+   "name": "Carter Smith",
+   "file": "2026-27-carter-smith.jpg",
+   "src": {
+    "label": "Herald, 23 Sep 2026 - SGA hears guest speaker, moves forward with improved bus tracking resolution; photograph by Natasha Gomez",
+    "url": "https://wkuherald.com/97612/news/news-campus-government/sga-hears-guest-speaker-moves-forward-with-improved-bus-tracking-resolution/"
+   }
+  },
+  {
    "year": "2025-26",
    "name": "Cayden Bailey",
    "file": "2026-27-cayden-bailey.jpg",
@@ -11527,6 +12283,15 @@
    "src": {
     "label": "College Heights Herald, 11 November 2025, SGA meeting in the Senate Chambers; cropped to the right-hand figure the caption names",
     "url": "https://wkuherald.com/wp-content/uploads/2025/11/SAV2487.jpg"
+   }
+  },
+  {
+   "year": "2025-26",
+   "name": "Jackson Smith",
+   "file": "2025-26-jackson-smith.jpg",
+   "src": {
+    "label": "Herald, \"SGA supports Go With the Flow program,\" 12 Nov 2025, photo by Jonah Savage. The caption names \"Campus Improvements and Sustainability Committee members Malachi Humble, Jackson Smith and Ciin Lun\" presenting a community-umbrellas bill at the SGA meeting of 11 November 2025 in the Senate Chambers. Three people stand at a podium in SGA polo shirts; the caption's three names read left to right, matching the three figures in frame, and this subject is the middle figure in the white cap. (cropped from a group photo)",
+    "url": "https://wkuherald.com/88699/news/sga-supports-go-with-the-flow-program/"
    }
   },
   {
@@ -11797,762 +12562,6 @@
    "src": {
     "label": "College Heights Herald, 15 April 2026; the caption names the newly appointed SGA executive branch, from left Vice President Jakob Barker, President Caden Lucas and Chief Financial Officer Will Derryberry, after the spring election in the Senate Chambers. Cropped to Derryberry, at right in the original.",
     "url": "https://wkuherald.com/92840/multimedia/multimedia-photos/visuals-lucas-comes-out-on-top-at-high-emotion-election-party/"
-   }
-  },
-  {
-   "year": "1969-70",
-   "name": "Mike Durham",
-   "file": "1968-69-mike-durham.jpg",
-   "src": {
-    "label": "1969 Talisman, p. 300, Junior Class Officers (cropped from a group photo). No photograph specific to 1969-70 is on file, so this portrait, from 1968-69, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/386"
-   }
-  },
-  {
-   "year": "1969-70",
-   "name": "Phil Myers",
-   "file": "1970-71-phil-myers.jpg",
-   "src": {
-    "label": "1971 Talisman, p. 140, senior portraits; seven rows of four faces against twenty-eight names in order, so PHILIP S. MYERS, the first name on the page, is the first face in the first row. No photograph specific to 1969-70 is on file, so this portrait, from 1970-71, is reused here.",
-    "url": "https://archive.org/details/talisman1971west"
-   }
-  },
-  {
-   "year": "1988-89",
-   "name": "Jeff Key",
-   "file": "1986-87-jeff-key.jpg",
-   "src": {
-    "label": "1986 Talisman, p. 265, the lower of two Sigma Alpha Epsilon group photographs on the Greeks spread. The three printed rows count 6, 7 and 6 figures, exactly matching the caption's 6, 7 and 6 names, so the positions line up; Key is the fourth of the seven in the second row. The volume's index lists him once, as Key, Jeffrey Len, p. 265 and nowhere else, and the only other Key in the book is Julius Irvin Key. (cropped from a group photo). No photograph specific to 1988-89 is on file, so this portrait, from 1986-87, is reused here.",
-    "url": "https://archive.org/details/talisman1986west/page/n268/mode/1up"
-   }
-  },
-  {
-   "year": "1988-89",
-   "name": "Hollie Hale",
-   "file": "1986-87-hollie-hale.jpg",
-   "src": {
-    "label": "1987 Talisman, p. 114, Associated Student Government group photograph (left of two). Fifteen names in three rows of five against fifteen faces in three rows of five; the back row is two men then three women, matching Lynn Ritter and Donald Herron ahead of Martha Wilson, Caroline Miller and Laura Dibert, which fixes the reading. Checked against two people in the same frame who already have portraits from elsewhere: Carol Sue Norcia at front-left and Kimberly Summers, third in the front row, whose face came independently from the 1987 sophomore class grid. (cropped from a group photo). No photograph specific to 1988-89 is on file, so this portrait, from 1986-87, is reused here.",
-    "url": "https://archive.org/details/talisman1987west/page/n117/mode/1up"
-   }
-  },
-  {
-   "year": "1990-91",
-   "name": "Shannon Montgomery",
-   "file": "1989-90-shannon-montgomery.jpg",
-   "src": {
-    "label": "1990 Talisman, p. 162, Associated Student Government (cropped from a group photo). No photograph specific to 1990-91 is on file, so this portrait, from 1989-90, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414/"
-   }
-  },
-  {
-   "year": "1990-91",
-   "name": "Eddie Smith",
-   "file": "1989-90-eddie-smith-spirit.jpg",
-   "src": {
-    "label": "WKU Spirit Masters Scrapbook, 1989-90, class composite board (WKU Archives UA12/2/16, Student Organizations), p. 4 of the scanned volume (only picture found). No photograph specific to 1990-91 is on file, so this portrait, from 1989-90, is reused here.",
-    "url": "https://digitalcommons.wku.edu/stu_org/321/"
-   }
-  },
-  {
-   "year": "1990-91",
-   "name": "Julie Fleming",
-   "file": "1989-90-julie-fleming.jpg",
-   "src": {
-    "label": "1990 Talisman, p. 162, Associated Student Government group photograph. The caption gives three rows, four names in the front and five in each of the middle and back, and the photograph shows exactly that: four figures in front, five behind them and five standing at the back. Counting the front row left to right, Fleming is third of four. The row is confirmed independently by its fourth figure, Van C. Hodge Jr., whose separate class portrait on p. 114 of the same volume is the same man, and by Gregory L. Willoughby, second in the back row and the man in glasses whose class portrait is on p. 129. (only picture found). No photograph specific to 1990-91 is on file, so this portrait, from 1989-90, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414"
-   }
-  },
-  {
-   "year": "1990-91",
-   "name": "Greg Willoughby",
-   "file": "1989-90-greg-willoughby.jpg",
-   "src": {
-    "label": "1990 Talisman, p. 129, underclassmen portraits (Wil-Zin). The names run in blocks of six down the right-hand column, one block per row of six portraits, left to right; Willoughby is second of six in the first block and second in the top row. The row checks out by sex: positions 1 and 2 are the only men, matching John Williamson and Willoughby, and 3 to 6 are Julia, Leslie and Sabrina Wilson and Felicia Wingler. The index reads \"Willoughby, Gregory - 129, 162, 172, 174\", and p. 162 is the Associated Student Government group photograph whose back row names Gregory L. Willoughby, so the portrait is the Congress member and not a namesake. No photograph specific to 1990-91 is on file, so this portrait, from 1989-90, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414"
-   }
-  },
-  {
-   "year": "1990-91",
-   "name": "Jason Stevens",
-   "file": "1989-90-jason-stevens.jpg",
-   "src": {
-    "label": "1990 Talisman, p. 124, underclassmen portraits (Robertson-Swim); indexed \"Stevens, Jason - 124\" (only picture found). No photograph specific to 1990-91 is on file, so this portrait, from 1989-90, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/414/"
-   }
-  },
-  {
-   "year": "1991-92",
-   "name": "India Wilson",
-   "file": "1989-90-india-wilson.jpg",
-   "src": {
-    "label": "1991 Talisman, p. 120, underclassmen portraits (Swa-Wya). The names run in blocks of five down the left-hand column, one block per row of five portraits, left to right; Wilson is second of five in the fifth block and second in the fifth row. The row checks out by sex: Timothy S. Williams, Wilson, Jeannie R. Wilson, LauraLee Wilson, Melissa A. Wise, and the row shows one man only, in position 1. She is the only India Wilson in the volumes covering these years, indexed \"Wilson, India C. - 213\" in 1990 and \"Wilson, India C. 120\" in 1991. (only picture found). No photograph specific to 1991-92 is on file, so this portrait, from 1989-90, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/415"
-   }
-  },
-  {
-   "year": "1992-93",
-   "name": "Eric McWilliams",
-   "file": "1991-92-eric-mcwilliams.jpg",
-   "src": {
-    "label": "WKU Spirit Masters scrapbook for 1991-92, UA12/2/16, \"Meet our group\" pages, where each member's portrait carries a printed block giving name, hometown, class and major. Sophomore in 1991-92 fits the Herald calling him a junior when he ran for the student government presidency in March 1993 (Vol. 68), and fits his 1990-91 term as an at-large representative in his freshman year. No photograph specific to 1992-93 is on file, so this portrait, from 1991-92, is reused here.",
-    "url": "https://digitalcommons.wku.edu/stu_org/563"
-   }
-  },
-  {
-   "year": "1992-93",
-   "name": "Mark Miller",
-   "file": "1991-92-mark-miller.jpg",
-   "src": {
-    "label": "WKU Spirit Masters scrapbook for 1991-92, UA12/2/16, \"Meet our group\" pages, where each member's portrait carries a printed block giving name, hometown, class and major. Sophomore in 1991-92 means freshman in 1990-91, which is when the Herald of 2 October 1990 (Vol. 66 No. 12) reported Mark Miller elected freshman class president, the year the archive records him on the Organizational Aid and Campus Improvement committees. No photograph specific to 1992-93 is on file, so this portrait, from 1991-92, is reused here.",
-    "url": "https://digitalcommons.wku.edu/stu_org/563"
-   }
-  },
-  {
-   "year": "1992-93",
-   "name": "Andrea Wilson",
-   "file": "1993-94-andrea-wilson.jpg",
-   "src": {
-    "label": "1994 Talisman, p. 63, Phi Mu portraits (only picture found). No photograph specific to 1992-93 is on file, so this portrait, from 1993-94, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
-   }
-  },
-  {
-   "year": "1993-94",
-   "name": "Bert Blevins",
-   "file": "1992-93-bert-blevins.jpg",
-   "src": {
-    "label": "1993 Talisman, p. 48, junior class portraits (only picture found). No photograph specific to 1993-94 is on file, so this portrait, from 1992-93, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417"
-   }
-  },
-  {
-   "year": "1993-94",
-   "name": "Deanna Mills",
-   "file": "1991-92-deanna-mills.jpg",
-   "src": {
-    "label": "WKU Spirit Masters scrapbook for 1991-92, UA12/2/16, \"Meet our group\" pages, where each member's portrait carries a printed block giving name, hometown, class and major. Sophomore in 1991-92 puts her in the class of 1994, which is how the Herald described her in September 1994 (Vol. 70), and matches the archive's record of her on the Judicial Council in 1993-94, her senior year. She also wrote a letter to the Herald of 2 April 1991 backing Dan Knowles for the presidency. No photograph specific to 1993-94 is on file, so this portrait, from 1991-92, is reused here.",
-    "url": "https://digitalcommons.wku.edu/stu_org/563"
-   }
-  },
-  {
-   "year": "1993-94",
-   "name": "Huma Ahsan",
-   "file": "1992-93-huma-ahsan.jpg",
-   "src": {
-    "label": "1993 Talisman, p. 56, sophomore portraits (Adler-Crabtree); indexed \"Ahsan, Huma 56, 168, 204\" (only picture found). No photograph specific to 1993-94 is on file, so this portrait, from 1992-93, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
-   }
-  },
-  {
-   "year": "1993-94",
-   "name": "Jennifer Raffaelli",
-   "file": "1992-93-jennifer-raffaelli.jpg",
-   "src": {
-    "label": "1994 Talisman, p. 28, Central Hall portraits; indexed \"Raffaelli, Jennifer, 28\" (only picture found). No photograph specific to 1993-94 is on file, so this portrait, from 1992-93, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
-   }
-  },
-  {
-   "year": "1993-94",
-   "name": "Emily Brown",
-   "file": "1992-93-emily-brown.jpg",
-   "src": {
-    "label": "1994 Talisman, p. 31, McLean Hall portraits; indexed \"Brown, Emily, 31\" (only picture found). No photograph specific to 1993-94 is on file, so this portrait, from 1992-93, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
-   }
-  },
-  {
-   "year": "1993-94",
-   "name": "Greg Edmonds",
-   "file": "1992-93-greg-edmonds.jpg",
-   "src": {
-    "label": "1993 Talisman, p. 65, freshman class portraits; indexed \"Edmonds, Greg 65, 204\" (low). No photograph specific to 1993-94 is on file, so this portrait, from 1992-93, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
-   }
-  },
-  {
-   "year": "1994-95",
-   "name": "Greg Edmonds",
-   "file": "1992-93-greg-edmonds.jpg",
-   "src": {
-    "label": "1993 Talisman, p. 65, freshman class portraits; indexed \"Edmonds, Greg 65, 204\" (low). No photograph specific to 1994-95 is on file, so this portrait, from 1992-93, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
-   }
-  },
-  {
-   "year": "1994-95",
-   "name": "Stephanie McCarty",
-   "file": "1993-94-stephanie-mccarty.jpg",
-   "src": {
-    "label": "1994 Talisman, p. 36, Poland Hall portraits (only picture found). No photograph specific to 1994-95 is on file, so this portrait, from 1993-94, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
-   }
-  },
-  {
-   "year": "1994-95",
-   "name": "Jennifer Raffaelli",
-   "file": "1992-93-jennifer-raffaelli.jpg",
-   "src": {
-    "label": "1994 Talisman, p. 28, Central Hall portraits; indexed \"Raffaelli, Jennifer, 28\" (only picture found). No photograph specific to 1994-95 is on file, so this portrait, from 1992-93, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418/"
-   }
-  },
-  {
-   "year": "1995-96",
-   "name": "Tara Higdon",
-   "file": "1993-94-tara-higdon.jpg",
-   "src": {
-    "label": "1993 Talisman, p. 66, freshman portraits (Gentry-Hughes); indexed \"Higdon, Tara 66\" (only picture found). Tara Higdon held Administrative Vice President in 1994-95; the archive's record notes: “A Slaughters junior; succeeded Evans as president and as student regent the following year.” This portrait, from 1993-94, is reused for 1995-96 as no photograph specific to that year is on file.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
-   }
-  },
-  {
-   "year": "1995-96",
-   "name": "Brandon Rucker",
-   "file": "1993-94-brandon-rucker.jpg",
-   "src": {
-    "label": "1994 Talisman, p. 37, Poland Hall portraits (only picture found). No photograph specific to 1995-96 is on file, so this portrait, from 1993-94, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
-   }
-  },
-  {
-   "year": "1995-96",
-   "name": "Erin Schepman",
-   "file": "1996-97-erin-schepman.jpg",
-   "src": {
-    "label": "WKU Spirit Masters Scrapbook, 1996-97, member portrait board (WKU Archives UA12/2/16, Student Organizations), p. 13 of the scanned volume. No photograph specific to 1995-96 is on file, so this portrait, from 1996-97, is reused here.",
-    "url": "https://digitalcommons.wku.edu/stu_org/329/"
-   }
-  },
-  {
-   "year": "1995-96",
-   "name": "Stephanie McCarty",
-   "file": "1993-94-stephanie-mccarty.jpg",
-   "src": {
-    "label": "1994 Talisman, p. 36, Poland Hall portraits (only picture found). No photograph specific to 1995-96 is on file, so this portrait, from 1993-94, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/418"
-   }
-  },
-  {
-   "year": "1995-96",
-   "name": "Darlene Lodmell",
-   "file": "1996-97-darlene-lodmell.jpg",
-   "src": {
-    "label": "WKU Spirit Masters Scrapbook, 1996-97, member portrait board (WKU Archives UA12/2/16, Student Organizations), p. 9 of the scanned volume. No photograph specific to 1995-96 is on file, so this portrait, from 1996-97, is reused here.",
-    "url": "https://digitalcommons.wku.edu/stu_org/329/"
-   }
-  },
-  {
-   "year": "1996-97",
-   "name": "Jeff Yan",
-   "file": "1995-96-jeff-yan.jpg",
-   "src": {
-    "label": "College Heights Herald 70:53, 18 April 1995, p. 6, Higdon and Yan campaign advertisement. No photograph specific to 1996-97 is on file, so this portrait, from 1995-96, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8003"
-   }
-  },
-  {
-   "year": "1996-97",
-   "name": "Josh Detre",
-   "file": "1997-98-josh-detre.jpg",
-   "src": {
-    "label": "College Heights Herald 73:49, 14 April 1998, p. 10. No photograph specific to 1996-97 is on file, so this portrait, from 1997-98, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7979"
-   }
-  },
-  {
-   "year": "1997-98",
-   "name": "Ryan Boyer",
-   "file": "1996-97-ryan-boyer.jpg",
-   "src": {
-    "label": "College Heights Herald 71:1, 22 August 1995, printed p. 4, People Poll (only picture found). No photograph specific to 1997-98 is on file, so this portrait, from 1996-97, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9013"
-   }
-  },
-  {
-   "year": "1997-98",
-   "name": "David Apple",
-   "file": "1995-96-david-apple.jpg",
-   "src": {
-    "label": "1993 Talisman, p. 200, Sigma Phi Epsilon; indexed \"Apple, David 200\" (cropped from a group photo). David Apple held Chairperson, Academic Affairs Committee in 1996-97; the archive's record notes: “He continued as Academic Affairs chair into the following year, named again to the post at the SGA meeting of 27 August 1996.” This portrait, from 1995-96, is reused for 1997-98 as no photograph specific to that year is on file.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/417/"
-   }
-  },
-  {
-   "year": "1997-98",
-   "name": "Darlene Lodmell",
-   "file": "1996-97-darlene-lodmell.jpg",
-   "src": {
-    "label": "WKU Spirit Masters Scrapbook, 1996-97, member portrait board (WKU Archives UA12/2/16, Student Organizations), p. 9 of the scanned volume. No photograph specific to 1997-98 is on file, so this portrait, from 1996-97, is reused here.",
-    "url": "https://digitalcommons.wku.edu/stu_org/329/"
-   }
-  },
-  {
-   "year": "1997-98",
-   "name": "Matt Bastin",
-   "file": "1998-99-matt-bastin.jpg",
-   "src": {
-    "label": "College Heights Herald 74:49, 8 April 1999, p. 6 (only picture found). No photograph specific to 1997-98 is on file, so this portrait, from 1998-99, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8050"
-   }
-  },
-  {
-   "year": "1998-99",
-   "name": "Heather Rogers",
-   "file": "1997-98-heather-rogers.jpg",
-   "src": {
-    "label": "College Heights Herald 73:52, 28 April 1998, p. 5 (only picture found). No photograph specific to 1998-99 is on file, so this portrait, from 1997-98, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7981"
-   }
-  },
-  {
-   "year": "1998-99",
-   "name": "Laura Hancock",
-   "file": "1997-98-laura-hancock.jpg",
-   "src": {
-    "label": "College Heights Herald 73:50, 16 April 1998, p. 3, \"Race for SGA vice presidency heats up\" (only picture found). No photograph specific to 1998-99 is on file, so this portrait, from 1997-98, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7980"
-   }
-  },
-  {
-   "year": "1998-99",
-   "name": "Josh Detre",
-   "file": "1997-98-josh-detre.jpg",
-   "src": {
-    "label": "College Heights Herald 73:49, 14 April 1998, p. 10. No photograph specific to 1998-99 is on file, so this portrait, from 1997-98, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7979"
-   }
-  },
-  {
-   "year": "2001-02",
-   "name": "Dwight Campbell",
-   "file": "1999-00-dwight-campbell.jpg",
-   "src": {
-    "label": "College Heights Herald 75:51, 11 April 2000, p. 14 (only picture found). No photograph specific to 2001-02 is on file, so this portrait, from 1999-00, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8113"
-   }
-  },
-  {
-   "year": "2002-03",
-   "name": "Anna Coats",
-   "file": "2001-02-anna-coats.jpg",
-   "src": {
-    "label": "College Heights Herald 77:48, 2 April 2002, p. 3 (only picture found). No photograph specific to 2002-03 is on file, so this portrait, from 2001-02, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9172"
-   }
-  },
-  {
-   "year": "2002-03",
-   "name": "Dwight Campbell",
-   "file": "1999-00-dwight-campbell.jpg",
-   "src": {
-    "label": "College Heights Herald 75:51, 11 April 2000, p. 14 (only picture found). No photograph specific to 2002-03 is on file, so this portrait, from 1999-00, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8113"
-   }
-  },
-  {
-   "year": "2002-03",
-   "name": "Eddie Schwab",
-   "file": "1998-99-eddie-schwab.jpg",
-   "src": {
-    "label": "College Heights Herald 73:30, 27 January 1998, p. 4 (only picture found). No photograph specific to 2002-03 is on file, so this portrait, from 1998-99, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7962"
-   }
-  },
-  {
-   "year": "2002-03",
-   "name": "Sam Stinson",
-   "file": "2001-02-sam-stinson.jpg",
-   "src": {
-    "label": "College Heights Herald 74:6, 15 September 1998, p. 11 (only picture found). No photograph specific to 2002-03 is on file, so this portrait, from 2001-02, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9084"
-   }
-  },
-  {
-   "year": "2003-04",
-   "name": "Mason Stevenson",
-   "file": "2005-06-mason-stevenson.jpg",
-   "src": {
-    "label": "College Heights Herald, SGA election special, 15 March 2005, p. 3C (only picture found). Mason Stevenson held Chair, Legislative Research Committee in 2004-05; the archive's record notes: “Mason Stevenson, a Princeton junior double-majoring in broadcasting and political science, joined SGA as parliamentarian in fall 2003, a non-voting post he said taught him parliamentary procedure; he had previously served as treasurer of the Southwest Hall Council and was a resident assistant at Bemis Lawrence Hall, and had earlier helped start a College Republicans chapter at Paducah Community College.” This portrait, from 2005-06, is reused for 2003-04 as no photograph specific to that year is on file.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8961"
-   }
-  },
-  {
-   "year": "2003-04",
-   "name": "Scott Wolfe",
-   "file": "2001-02-scott-wolfe.jpg",
-   "src": {
-    "label": "College Heights Herald, Vol. 77, No. 47, 28 March 2002, p. 11 (only picture found). No photograph specific to 2003-04 is on file, so this portrait, from 2001-02, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9184"
-   }
-  },
-  {
-   "year": "2003-04",
-   "name": "Scott Broadbent",
-   "file": "2004-05-scott-broadbent.jpg",
-   "src": {
-    "label": "College Heights Herald, Vol. 80, No. 7, 2004-09-16, p. 1 (only picture found). No photograph specific to 2003-04 is on file, so this portrait, from 2004-05, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9401"
-   }
-  },
-  {
-   "year": "2004-05",
-   "name": "Jessica Martin",
-   "file": "2003-04-jessica-martin.jpg",
-   "src": {
-    "label": "College Heights Herald, Decision 2004 election section, 16 March 2004, p. 2 (only picture found). No photograph specific to 2004-05 is on file, so this portrait, from 2003-04, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9505"
-   }
-  },
-  {
-   "year": "2005-06",
-   "name": "Tori Theiss",
-   "file": "2006-07-tori-theiss.jpg",
-   "src": {
-    "label": "WKU Spirit Masters Scrapbook, 2007-08, member display board (WKU Archives UA12/2/16, Student Organizations), p. 33 of the scanned volume. No photograph specific to 2005-06 is on file, so this portrait, from 2006-07, is reused here.",
-    "url": "https://digitalcommons.wku.edu/stu_org/328/"
-   }
-  },
-  {
-   "year": "2007-08",
-   "name": "Cherieth L. Lineweaver",
-   "file": "2006-07-cherieth-l-lineweaver.jpg",
-   "src": {
-    "label": "College Heights Herald 82:42, 29 March 2007, p. 7A, SGA Candidate Profiles - Election 2007 (only picture found). No photograph specific to 2007-08 is on file, so this portrait, from 2006-07, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6646"
-   }
-  },
-  {
-   "year": "2007-08",
-   "name": "Kayla W. Shelton",
-   "file": "2008-09-kayla-shelton.jpg",
-   "src": {
-    "label": "Herald, Apr 2009. No photograph specific to 2007-08 is on file, so this portrait, from 2008-09, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6748"
-   }
-  },
-  {
-   "year": "2009-10",
-   "name": "Eric Smiley",
-   "file": "2011-12-eric-smiley.jpg",
-   "src": {
-    "label": "College Heights Herald, 11 February 2011, 'Greeks comprise more than 40 percent of student government'; a composite of four studio portraits of SGA members who led Greek chapters. The caption identifies each by position: Smiley, of Sigma Chi, is the top-left frame, which is the one cropped here. No photograph specific to 2009-10 is on file, so this portrait, from 2011-12, is reused here.",
-    "url": "https://wkuherald.com/52960/news/greeks-comprise-more-than-40-percent-of-student-government/"
-   }
-  },
-  {
-   "year": "2011-12",
-   "name": "Kendrick Bryan",
-   "file": "2009-10-kendrick-bryan.jpg",
-   "src": {
-    "label": "College Heights Herald 85:39, 23 March 2010, p. 5 (black and white, cut from a newspaper page scan). Kendrick Bryan held Executive Vice President in 2010-11; the archive's record notes: “Re-elected unopposed to a second term as EVP for 2011-12.” This portrait, from 2009-10, is reused for 2011-12 as no photograph specific to that year is on file.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/6757"
-   }
-  },
-  {
-   "year": "2011-12",
-   "name": "Travis Taylor",
-   "file": "2012-13-travis-taylor.jpg",
-   "src": {
-    "label": "College Heights Herald, 26 Mar 2015, feature on Nicki and Travis Taylor, photographed in the SGA senate chambers (very low resolution: his head is about 90 pixels tall in the source frame, so the crop is small and soft). No photograph specific to 2011-12 is on file, so this portrait, from 2012-13, is reused here.",
-    "url": "https://wkuherald.com/wp-content/uploads/2015/03/1120ed8f54d05c57d7e2ff91da8e39a5.jpg"
-   }
-  },
-  {
-   "year": "2012-13",
-   "name": "Seth Church",
-   "file": "2014-15-seth-church.jpg",
-   "src": {
-    "label": "College Heights Herald, 15 Nov 2023, 'LGBTQ+ WKU Alumni share stories from the Hill' (archival photograph, 2015 Lavender Graduation). Seth Church held Chief Justice in 2013-14; the archive's record notes: “Church proposed the Cultural and Diversity Affairs Committee with President Nicki Taylor and chaired it in its first term, taking it into the Campus Pride Index and into work with Housing and Residence Life on gender-neutral housing and on letting applicants identify as transgender. He opposed the smoke-free campus resolution, arguing it was unfair to students required to live on campus for two years, and signed the executive cabinet's veto of it in November 2014; he then wrote with senator J. William Berry the limited-smoking resolution that passed 13-11 in February 2015. He authored the resolution on private space for breastfeeding students, brought to him by a non-traditional student, which passed unanimously in March 2015; co-authored with senator Zach Jones a resolution to publish SGA's attendance and voting records; and argued against the $10 million parking structure resolution on the ground that regional campus students would pay the $30 fee without using it. In April 2015 he wrote to the Judicial Council opposing the disqualification of president-elect Jay Todd Richey over misplaced campaign posters.” This portrait, from 2014-15, is reused for 2012-13 as no photograph specific to that year is on file.",
-    "url": "https://wkuherald.com/73883/news/lgbtq-wku-alumni-share-stories-from-the-hill/"
-   }
-  },
-  {
-   "year": "2013-14",
-   "name": "Sarah Hazelip",
-   "file": "2012-13-sarah-hazelip.jpg",
-   "src": {
-    "label": "UA12/2/2 Talisman, Vol. 83 (2012), p. 356, underclassmen portrait grid. No photograph specific to 2013-14 is on file, so this portrait, from 2012-13, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8897"
-   }
-  },
-  {
-   "year": "2013-14",
-   "name": "Barrett Greenwell",
-   "file": "2015-16-barrett-greenwell.jpg",
-   "src": {
-    "label": "2016 Talisman: Life More Life, p. 241, seniors portraits (WKU Archives UA12/2/2). No photograph specific to 2013-14 is on file, so this portrait, from 2015-16, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
-   }
-  },
-  {
-   "year": "2013-14",
-   "name": "Paige Settles",
-   "file": "2015-16-paige-settles.jpg",
-   "src": {
-    "label": "College Heights Herald, 22 Sep 2015. Paige Settles held Legislative Research Committee Chair in 2014-15; the archive's record notes: “Rendered \"Paige Settle\" on the senate leadership page and \"Paige Settles\" in the cabinet minutes. She was Speaker of the Senate the following year.” This portrait, from 2015-16, is reused for 2013-14 as no photograph specific to that year is on file.",
-    "url": "https://wkuherald.com/wp-content/uploads/2015/09/77c586e79692fb054940233f31197892.jpg"
-   }
-  },
-  {
-   "year": "2013-14",
-   "name": "Julia Payne",
-   "file": "2012-13-julia-payne.jpg",
-   "src": {
-    "label": "UA12/2/2 Talisman, Vol. 83 (2012), p. 362, underclassmen portrait grid. No photograph specific to 2013-14 is on file, so this portrait, from 2012-13, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8897"
-   }
-  },
-  {
-   "year": "2014-15",
-   "name": "Barrett Greenwell",
-   "file": "2015-16-barrett-greenwell.jpg",
-   "src": {
-    "label": "2016 Talisman: Life More Life, p. 241, seniors portraits (WKU Archives UA12/2/2). No photograph specific to 2014-15 is on file, so this portrait, from 2015-16, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
-   }
-  },
-  {
-   "year": "2014-15",
-   "name": "Sarah Hazelip",
-   "file": "2012-13-sarah-hazelip.jpg",
-   "src": {
-    "label": "UA12/2/2 Talisman, Vol. 83 (2012), p. 356, underclassmen portrait grid. No photograph specific to 2014-15 is on file, so this portrait, from 2012-13, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8897"
-   }
-  },
-  {
-   "year": "2014-15",
-   "name": "James Line",
-   "file": "2016-17-james-line.jpg",
-   "src": {
-    "label": "College Heights Herald, 5 April 2017, \"SGA approves legislation to lower GPA requirement, announces executive candidates\"; the caption to the same photograph places \"James Line (right)\" beside Zach Jones, proposing bill 21-17-S at the SGA meeting of 3 April 2017 (cropped to Line, at right, wearing an SGA-monogrammed shirt at the podium). James Line held Chief of Staff in 2015-16; the archive's record notes: “In his second year as chief of staff Line ran SGA's voter work: Richey gave him the job of registering students and getting them to the polls, and on 8 November 2016 he ran the Ride To Vote shuttle from three campus pick-up points. He authored the bill co-sponsoring the 2016 Presidential Debate Fest, the constitutional amendment lowering SGA's membership requirement from a 2.5 to a 2.0 grade point average, which passed 24-7, the organizational aid inclusivity pledge, and, with administrative vice president Hannah Neeper, the resolution asking WKU to put faculty salaries ahead of new construction.” This portrait, from 2016-17, is reused for 2014-15 as no photograph specific to that year is on file.",
-    "url": "https://wkuherald.com/28868/news/sga-approves-legislation-to-lower-gpa-requirement-announces-executive-candidates/"
-   }
-  },
-  {
-   "year": "2015-16",
-   "name": "Hannah Neeper",
-   "file": "2014-15-hannah-neeper.jpg",
-   "src": {
-    "label": "WKU faculty/staff photograph directory, file hannah_neeper918.jpg. The handle is WKU's own: its SGA executive branch page for 2016-2017 lists 'Hannah Neeper, Administrative Vice President, Hannah.neeper918@topper.wku.edu' (web.archive.org/web/20161230150409/http://www.wku.edu/sga/executive/), and WKU renders these files on its own department pages with the person's name as the img title. (only picture found). No photograph specific to 2015-16 is on file, so this portrait, from 2014-15, is reused here.",
-    "url": "https://www.wku.edu/img_facstaff/hannah_neeper918.jpg"
-   }
-  },
-  {
-   "year": "2016-17",
-   "name": "Hannah Neeper",
-   "file": "2014-15-hannah-neeper.jpg",
-   "src": {
-    "label": "WKU faculty/staff photograph directory, file hannah_neeper918.jpg. The handle is WKU's own: its SGA executive branch page for 2016-2017 lists 'Hannah Neeper, Administrative Vice President, Hannah.neeper918@topper.wku.edu' (web.archive.org/web/20161230150409/http://www.wku.edu/sga/executive/), and WKU renders these files on its own department pages with the person's name as the img title. (only picture found). No photograph specific to 2016-17 is on file, so this portrait, from 2014-15, is reused here.",
-    "url": "https://www.wku.edu/img_facstaff/hannah_neeper918.jpg"
-   }
-  },
-  {
-   "year": "2016-17",
-   "name": "Josh Knight",
-   "file": "2014-15-josh-knight.jpg",
-   "src": {
-    "label": "2015 Talisman: Resurgence, p. 332, WKU College Youth in Government, UA12/2/2; cropped from the group photograph, whose printed caption keys the faces by row and places him fourth from the left in the back row of seven. The volume's index carries one Josh Knight, at this page, and four officers this archive records in the same years stand beside him in that key. No photograph specific to 2016-17 is on file, so this portrait, from 2014-15, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8679"
-   }
-  },
-  {
-   "year": "2016-17",
-   "name": "Jody Dahmer",
-   "file": "2014-15-jody-dahmer.jpg",
-   "src": {
-    "label": "College Heights Herald, 23 April 2015, the author's mug published with his letter to the editor signed 'Jody Dahmer, SGA Senator' (low). No photograph specific to 2016-17 is on file, so this portrait, from 2014-15, is reused here.",
-    "url": "https://wkuherald.com/wp-content/uploads/2015/04/934ebc49a26b14a37547b31ad3979ecd.jpg"
-   }
-  },
-  {
-   "year": "2017-18",
-   "name": "Ashley Cox",
-   "file": "2015-16-ashley-cox.jpg",
-   "src": {
-    "label": "2016 Talisman: Life More Life, p. 267, underclassmen portraits (Cook-Curry), UA12/2/2. No photograph specific to 2017-18 is on file, so this portrait, from 2015-16, is reused here.",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8677"
-   }
-  },
-  {
-   "year": "2017-18",
-   "name": "Kenan Mujkanovic",
-   "file": "2019-20-kenan-mujkanovic.jpg",
-   "src": {
-    "label": "College Heights Herald, 17 April 2019; the caption names Kenan Mujkanovic, Will Harris and Garrett Edmonds, left to right, celebrating their Student Government Association election win in the Senate Chambers. Cropped to Mujkanovic at left; the centre and right figures match the verified portraits of his WGK running mates Harris and Edmonds, which fixes the caption’s order at both ends. Photographer Kendall Warner. No photograph specific to 2017-18 is on file, so this portrait, from 2019-20, is reused here.",
-    "url": "https://wkuherald.com/20294/uncategorized/kmw_8078-jpg/"
-   }
-  },
-  {
-   "year": "2018-19",
-   "name": "Annalicia Carlson",
-   "file": "2016-17-annalicia-carlson.jpg",
-   "src": {
-    "label": "WKU faculty/staff photograph directory, file annalicia_carlson560.jpg. The handle is WKU's own: its SGA Judicial Council page for 2018-2019 lists 'Annalicia Carlson, Associate Justice, annalicia.carlson560@topper.wku.edu' (web.archive.org/web/20190720073043/https://www.wku.edu/sga/2018-2019-judicial/judicial-council.php), and WKU renders these files on its own department pages with the person's name as the img title. (only picture found). Annalicia Carlson held Chief Justice in 2017-18; the archive's record notes: “Carlson returned to the council as an associate justice for 2018-19.” This portrait, from 2016-17, is reused for 2018-19 as no photograph specific to that year is on file.",
-    "url": "https://www.wku.edu/img_facstaff/annalicia_carlson560.jpg"
-   }
-  },
-  {
-   "year": "2019-20",
-   "name": "Abbey Norvell",
-   "file": "2021-22-abbey-norvell.jpg",
-   "src": {
-    "label": "College Heights Herald, 30 Oct 2021. No photograph specific to 2019-20 is on file, so this portrait, from 2021-22, is reused here.",
-    "url": "https://wkuherald.com/wp-content/uploads/2021/10/B3_6044.jpg"
-   }
-  },
-  {
-   "year": "2020-21",
-   "name": "Abbey Norvell",
-   "file": "2021-22-abbey-norvell.jpg",
-   "src": {
-    "label": "College Heights Herald, 30 Oct 2021. No photograph specific to 2020-21 is on file, so this portrait, from 2021-22, is reused here.",
-    "url": "https://wkuherald.com/wp-content/uploads/2021/10/B3_6044.jpg"
-   }
-  },
-  {
-   "year": "2020-21",
-   "name": "Matt Barr",
-   "file": "2018-19-matt-barr.jpg",
-   "src": {
-    "label": "WKU Student Government Association, executive branch headshots directory, file matt.jpg (good). Matt Barr also held Campus Improvements Committee Head in 2019-20; no photograph specific to 2019-20 is on file, so this portrait, from 2018-19, is reused for both years.",
-    "url": "https://www.wku.edu/sga/executive/headshots/matt.jpg"
-   }
-  },
-  {
-   "year": "2021-22",
-   "name": "Shelby Robertson",
-   "file": "2020-21-shelby-robertson.jpg",
-   "src": {
-    "label": "WKU Office of Admissions, Admissions Ambassadors page, headshot labelled Shelby Robertson, Russell County, Biology/Pre-Med (file shelby_robertson092.jpg). Taken as the SGA officer on three joins: the same page carries Brenna Mathews and Savannah Molyneaux, both SGA figures, and Brenna Matthews was Robertson's opponent in the October 2020 speaker election (Herald, 7 Oct 2020); the SGA Robertson proposed a scholarship for rural students in October 2021 (Herald, 6 Oct 2021), and the ambassador Robertson is from rural Russell County. (250x315, the size WKU publishes these headshots at; not upscaled.). No photograph specific to 2021-22 is on file, so this portrait, from 2020-21, is reused here.",
-    "url": "https://www.wku.edu/admissions/student_staff/shelby_robertson092"
-   }
-  },
-  {
-   "year": "2021-22",
-   "name": "Jamison Moorehead",
-   "file": "2019-20-jamison-moorehead.jpg",
-   "src": {
-    "label": "College Heights Herald, 26 Feb 2020, photograph run with \"SGA confirms 5 senators, 4 voted in unanimously\". The frame shows two men shaking hands; the caption names only Moorehead. The bearded figure in the red windbreaker on the right is 2019-20 president Will Harris, the same man as the archive's own confirmed Harris portrait (2019-20-will-harris.jpg), and the article names Harris as president, so the younger left-hand figure being congratulated is Moorehead. The quarantined crop is taken from this frame: a sliver of Harris's red sleeve survives at its right edge. Jamison Moorehead held Director of Information Technology in 2020-21; the archive's record notes: “Handled absence excuses in October and November 2020, reminding senators that an absence without an excuse form went to the Judicial Council. He held the secretaryship and the Director of Information Technology post together on 19 January 2021; Brenna Mathews was secretary again by 2 February 2021.” This portrait, from 2019-20, is reused for 2021-22 as no photograph specific to that year is on file.",
-    "url": "https://wkuherald.com/16659/news/sga-confirms-5-senators-4-voted-in-unanimously/"
-   }
-  },
-  {
-   "year": "2021-22",
-   "name": "Preston Romanov",
-   "file": "2023-24-preston-romanov.jpg",
-   "src": {
-    "label": "College Heights Herald, 30 Aug 2023. Preston Romanov held Director of Public Relations in 2022-23; the archive's record notes: “Romanov returned as director of public relations for 2023-24, when he arranged headshots for the executive cabinet at the start of the year and ordered polo shirts for SGA members, including the Judicial Council.” This portrait, from 2023-24, is reused for 2021-22 as no photograph specific to that year is on file.",
-    "url": "https://wkuherald.com/wp-content/uploads/2023/08/0829_SGA_pj001.jpg"
-   }
-  },
-  {
-   "year": "2021-22",
-   "name": "Kat Howard",
-   "file": "2019-20-kat-howard.jpg",
-   "src": {
-    "label": "College Heights Herald, 26 February 2020, SGA meeting confirming five senators; cropped to the only figure in focus (medium). No photograph specific to 2021-22 is on file, so this portrait, from 2019-20, is reused here.",
-    "url": "https://wkuherald.com/wp-content/uploads/2020/02/28cff5c33535efa44202200ef502d770.jpg"
-   }
-  },
-  {
-   "year": "2021-22",
-   "name": "Lauren Willett",
-   "file": "2022-23-lauren-willett.jpg",
-   "src": {
-    "label": "WKU Student Government Association, 2022-2023 executive branch page. No photograph specific to 2021-22 is on file, so this portrait, from 2022-23, is reused here.",
-    "url": "https://www.wku.edu/sga/2022-2023-executive/exec_headshots/willett_lauren_headshot.jpg"
-   }
-  },
-  {
-   "year": "2022-23",
-   "name": "Meghan Pierce",
-   "file": "2021-22-meghan-pierce.jpg",
-   "src": {
-    "label": "WKU Department of Modern Languages student profile, \"Meghan Pierce, International Affairs and Arabic, Class of 2024\", written spring 2022. The profile runs two pages and carries exactly one photograph of a person. Identification is by name plus fit: the profile's Pierce is a Bowling Green Gatton Academy graduate in her second year in spring 2022 and class of 2024, which matches the SGA member's run of 2021-22 to 2023-24, and explains her sitting as Senior Senator in 2021-22, Gatton graduates entering WKU with junior standing. (453x681 as embedded in the WKU PDF; extracted, not upscaled or re-cropped.). No photograph specific to 2022-23 is on file, so this portrait, from 2021-22, is reused here.",
-    "url": "https://www.wku.edu/modernlanguages/student_profiles/pierce-morgan-2024-finalfinal.pdf"
-   }
-  },
-  {
-   "year": "2022-23",
-   "name": "Megan Farmer",
-   "file": "2024-25-megan-farmer.jpg",
-   "src": {
-    "label": "College Heights Herald, 4 November 2024, SGA's Topper Chef cooking class; single-subject frame cropped to the head and shoulders (medium). No photograph specific to 2022-23 is on file, so this portrait, from 2024-25, is reused here.",
-    "url": "https://wkuherald.com/wp-content/uploads/2024/11/11_04_topperchef_AL_0001.jpg"
-   }
-  },
-  {
-   "year": "2022-23",
-   "name": "Sarah Vincent",
-   "file": "2024-25-sarah-vincent.jpg",
-   "src": {
-    "label": "College Heights Herald, 21 Nov 2024, article feature photograph: the Homecoming Queen award at the WKU Homecoming football game, 16 Nov 2024. The Herald's caption names Sarah Vincent; she is the woman at left, wearing the Homecoming corsage. The same article records her as SGA speaker of the senate. No photograph specific to 2022-23 is on file, so this portrait, from 2024-25, is reused here.",
-    "url": "https://wkuherald.com/80796/life/i-didnt-think-i-had-a-shot-sarah-vincent-crowned-2024-wku-homecoming-queen/"
-   }
-  },
-  {
-   "year": "2023-24",
-   "name": "Meghan Pierce",
-   "file": "2021-22-meghan-pierce.jpg",
-   "src": {
-    "label": "WKU Department of Modern Languages student profile, \"Meghan Pierce, International Affairs and Arabic, Class of 2024\", written spring 2022. The profile runs two pages and carries exactly one photograph of a person. Identification is by name plus fit: the profile's Pierce is a Bowling Green Gatton Academy graduate in her second year in spring 2022 and class of 2024, which matches the SGA member's run of 2021-22 to 2023-24, and explains her sitting as Senior Senator in 2021-22, Gatton graduates entering WKU with junior standing. (453x681 as embedded in the WKU PDF; extracted, not upscaled or re-cropped.). No photograph specific to 2023-24 is on file, so this portrait, from 2021-22, is reused here.",
-    "url": "https://www.wku.edu/modernlanguages/student_profiles/pierce-morgan-2024-finalfinal.pdf"
-   }
-  },
-  {
-   "year": "2023-24",
-   "name": "Ellen Henderson",
-   "file": "2024-25-ellen-henderson.jpg",
-   "src": {
-    "label": "WKU faculty/staff photograph directory, file ellen_henderson345.jpg, keyed to the NetID WKU's own SGA Judicial Council page gives for her (Wayback capture, 13 November 2024) (only picture found). No photograph specific to 2023-24 is on file, so this portrait, from 2024-25, is reused here.",
-    "url": "https://www.wku.edu/img_facstaff/ellen_henderson345.jpg"
-   }
-  },
-  {
-   "year": "2023-24",
-   "name": "Megan Farmer",
-   "file": "2024-25-megan-farmer.jpg",
-   "src": {
-    "label": "College Heights Herald, 4 November 2024, SGA's Topper Chef cooking class; single-subject frame cropped to the head and shoulders (medium). No photograph specific to 2023-24 is on file, so this portrait, from 2024-25, is reused here.",
-    "url": "https://wkuherald.com/wp-content/uploads/2024/11/11_04_topperchef_AL_0001.jpg"
-   }
-  },
-  {
-   "year": "1988-89",
-   "name": "Lori Easton",
-   "file": "1988-89-lori-easton.jpg",
-   "src": {
-    "label": "1989 Talisman, p. 198, \"Associated Student Government\" group photograph; caption reads \"SECOND ROW: Victor Click, Mari Knights, Lori Easton, Honor Logsdon,\" third of four in that row. The frame holds three figures in front and four behind, matching the caption's three front-row and four second-row names exactly, and the back row shows one man ahead of three women, matching Click before Knights, Easton and Logsdon. The rows read left to right: the caption's first front-row name, Amos Gott, is the man in glasses at front left, checked against his portrait from the Herald of 13 April 1989, and its last, president Scott Whitehouse, is the man at front right. (cropped from a group photo)",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413/"
-   }
-  },
-  {
-   "year": "1988-89",
-   "name": "Honor Logsdon",
-   "file": "1988-89-honor-logsdon.jpg",
-   "src": {
-    "label": "1989 Talisman, p. 198, \"Associated Student Government\" group photograph; fourth and last of the four names the caption lists in the second row, after Victor Click, Mari Knights and Lori Easton. The frame holds three figures in front and four behind, matching the caption's three front-row and four second-row names exactly, and the back row shows one man ahead of three women. The rows read left to right: Amos Gott, the caption's first front-row name, is the man in glasses at front left, checked against his portrait from the Herald of 13 April 1989, and Scott Whitehouse, its last, is the man at front right; the striped top behind him in his own crop from this frame is this subject, at the right-hand end of the back row. (cropped from a group photo)",
-    "url": "https://digitalcommons.wku.edu/dlsc_ua_records/413/"
-   }
-  },
-  {
-   "year": "2025-26",
-   "name": "Jackson Smith",
-   "file": "2025-26-jackson-smith.jpg",
-   "src": {
-    "label": "Herald, \"SGA supports Go With the Flow program,\" 12 Nov 2025, photo by Jonah Savage. The caption names \"Campus Improvements and Sustainability Committee members Malachi Humble, Jackson Smith and Ciin Lun\" presenting a community-umbrellas bill at the SGA meeting of 11 November 2025 in the Senate Chambers. Three people stand at a podium in SGA polo shirts; the caption's three names read left to right, matching the three figures in frame, and this subject is the middle figure in the white cap. (cropped from a group photo)",
-    "url": "https://wkuherald.com/88699/news/sga-supports-go-with-the-flow-program/"
-   }
-  },
-  {
-   "year": "1980-81",
-   "name": "Kevin Kinne",
-   "file": "1980-81-kevin-kinne.jpg",
-   "src": {
-    "label": "1981 Talisman, p. 282, the Associated Student Government group photograph. The caption names six in the front row, seven in the second, eight in the third and seven in the back, and the frame holds exactly 6, 7, 8 and 7 heads in four bands. Kinne is third of the third row's eight names, and the crop is the one full-bearded face in that band, sitting between two positions the archive already holds from this same photograph: Perry Hines (second) to his left and Craig Hoffer (fourth) to his right. The article printed above the photograph names him chairman of the student opinion poll committee and reports his comment on the committee's first survey, which matches his committee-chair record for this year. The archive holds one other Kevin Kinne portrait, from the 1976 Talisman, p. 392; the two were not compared feature by feature, and this identification rests on the row position, not on a face match. (cropped from a group photo)",
-    "url": "https://archive.org/details/talisman1981west/page/n285/mode/1up"
    }
   }
  ],
