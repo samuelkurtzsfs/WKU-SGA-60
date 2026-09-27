@@ -34434,3 +34434,97 @@ present and a real PDF, 308 documents, 2651 recorded terms of office held by 180
 them (98%) carrying an account of what the person did, 48 people recorded under more than one
 spelling, and a search index of 4949 records. `build.py` clean, `check_data.py` exit 0,
 `check_contrib.py` exit 0. No pull request left open.
+
+# 27 September 2026 (editor's fifth pass) — a log-only photograph run merged, and the Cloudflare wall found narrower than reported
+
+## What was on the board
+
+One open pull request, #622, "Research: photographs (27 September, scheduled)", on
+`research-photos`. The three branches this routine's brief still names as stale since 4 August —
+#6 photographs, #7 the 1980s, #8 the 2020s — are all closed and have been since 18 August, so
+there was nothing to rescue or close there. Worth correcting in the brief: it sends every run
+looking for three pull requests that no longer exist.
+
+#622 has a clean merge base with current `main` and a diff of exactly one new file,
+`.research/photo-run-2026-09-27-scheduled.md`, 98 lines. Nothing in `data/`, nothing in `site/`.
+The two Carter Smith commits in its history are already on `main` by content, which is why the
+three-dot diff shows only the log. So nothing in this pull request could reach a reader, and the
+review is about whether the log tells the next run the truth.
+
+## Spot check: ten claims, eight clean, two overstated
+
+Every claim in the log is either a statement about what this container can reach or a dead end
+against archive.org's Talisman holdings. Both kinds are checkable, so both were checked, from
+scratch rather than by reading the report.
+
+Confirmed against the source, quoting the volume's own text:
+
+- **David Bass**, 1978 Talisman. The caption is exactly as reported — a light moment in an ASG
+  meeting bringing laughter from president Bob Moore and smiles from Bass, Sharon May and Cathy
+  Murphy. Four people named against three or fewer distinguishable faces and no positional cue.
+  Correctly left alone.
+- **David Young**, 1979 Talisman p. 289. Body text in an ASG feature on the 24 at-large races, not
+  a caption. No portrait.
+- **Alice Wicks**, 1979 Talisman index. Her entry carries no page number while both neighbours
+  do. Nothing to find in the volume.
+- **Steve Wilson**, 1979 Talisman. Index gives 296, 318, 320 and 336, the four pages reported, and
+  p. 296 is a Pre-Law Club group captioned by initial only. Too weak to identify an officer, and
+  the log says so.
+- **Mark Chesnut**, 1981 Talisman. Index gives 234; p. 234 is the intramural all-sports results
+  table, badminton through racquetball. A results box, not a photograph.
+- **M. A. Baker**, 1981 Talisman. Index gives 36, and p. 36 opens a feature on making the best of
+  hard times with a near-textless image page. He is quoted in that feature's body two pages on.
+  No caption identifies him anywhere in it.
+- **Chris Millay** and **Dwight Austin**, 1987 Talisman. Neither name appears in the volume at
+  all, index included. The only Millays indexed are Beth Ann and Lori Ann and the only Dwight is a
+  Dwight Anthony Scott. Confirmed absent, not merely unfound.
+- **73 leader records, 0 without a portrait.** Recounted from `years.json` against
+  `photos.json` rather than taken on trust, both by name and by name-and-year, and it holds both
+  ways. The four named files are on disk and all four open `FF D8 FF E0`.
+
+Two needed correcting, and were corrected on the branch before it was merged:
+
+- **The Cloudflare wall is on the file, not the site.** The log's own body scopes the block to
+  `cgi/viewcontent.cgi`, which reproduces here exactly — a `Just a moment...` challenge under a
+  403. But its headline and its note to the next run both read as the host being shut, and that is
+  not what this container sees. The item landing page for `dlsc_ua_records/2464` returned HTTP 200
+  and the whole page, index lines and all, seconds before the same item's PDF was refused. That
+  matters because the landing page is precisely what `CLAUDE.md` requires a run to open before it
+  concludes anything negative, and a run that believes the host is gone will stop opening them.
+  Incidentally it also re-confirmed a settled fact for free: that item's index carries "Student
+  Regent's 2-month Term Nears End", 15 April 1982, which is the line Sandra Norfleet's 1981-82
+  filing rests on.
+- **Maura Fleenor's row is not established.** The 1981 Talisman's index does give her one page,
+  304, and p. 304 does carry a large Chi Omega composite captioned front row to back row, so the
+  finding itself stands and the reasoning for not using it — a freeform composite that size cannot
+  be cropped reliably from a row description — is exactly right. But the log quoted her out of the
+  fourth row, and her name is nowhere in this volume's text layer except that index entry. The
+  caption's OCR breaks down mid-row into junk, so the row cannot be read at present. The note now
+  says the page image is needed and that the quoted row was claiming more than the text supports.
+
+Nothing else in the diff trips the checklist. No events, no officers, no people and no portraits
+were added, so there is no advance notice to catch, no chair promoted to officer, no surname match
+and no April result filed forward. Nothing contradicts section 7. No contributor commit is in the
+diff, and all five commits are authored `SGA 60` with no tool attribution in any message.
+
+## The duplicate pairs
+
+Four title pairs and one same-source pair, all of them already published on `main` and none
+introduced here. All five are separate business and stay separate: the 1997-98 designated driver
+pair is three months apart, the 1991-92 and 1971-72 pairs are each a measure introduced and then
+decided, the 2003-04 plus/minus pair is concern voiced at one meeting and a unanimous vote at
+another, and the 2026-27 pair is one Herald report of one meeting carrying two different items.
+
+## Merged
+
+#622 merged to `main` with the three corrections above committed to the branch first. A log-only
+pull request is still worth merging: the log is how the next photograph run avoids re-spending a
+cycle, and it is now right about what it can reach.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people recorded under more than one
+spelling, and a search index of 4949 records. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0. No pull request left open.

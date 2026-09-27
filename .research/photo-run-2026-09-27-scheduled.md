@@ -29,6 +29,13 @@ route is closed for a different reason than the curl route, and neither is fixab
 session. **Not worth retrying with a browser again** — record this so the next run doesn't spend a
 cycle rediscovering it.
 
+**The wall is on the PDF route only, and the editor's check of 27 September found the item landing
+pages still serving normally** — `dlsc_ua_records/2464/` returned HTTP 200 and the full item page,
+index lines and all, from the same container that got `Just a moment...` on that item's
+`viewcontent.cgi`. So "digitalcommons is walled" must be read as the file download being walled, not
+the site. The landing pages are what `CLAUDE.md` requires a run to open before concluding anything
+negative, and that route is open.
+
 `web.archive.org` was not retested this run; the last two runs already established it as a standing
 block in this container (connection reset / `hostname_blocked` depending on scheme).
 
@@ -69,11 +76,16 @@ nobody repeats them:
 
 - **M. A. Baker** (1980-81 Congress member) — the one indexed page (36) is an uncaptioned moped
   photograph with no connection to this person.
-- **Maura Fleenor** (1980-81 Congress member) — appears once, by name, in a roughly 60-person Chi
-  Omega composite photograph (1981 Talisman p. 304, "Fourth row: ... Maura Fleenor ..."). Unlike the
-  senior-grid portraits this archive already uses (uniform individual cells keyed to a printed name
-  block), a freeform sorority composite this size has no reliable way to crop the right face to the
-  right name from the row/position description alone. Not used.
+- **Maura Fleenor** (1980-81 Congress member) — the 1981 Talisman's own index gives her one page,
+  304, and the only thing on that page that names people is a large Chi Omega composite whose
+  caption runs front row to back row. Unlike the senior-grid portraits this archive already uses
+  (uniform individual cells keyed to a printed name block), a freeform sorority composite this size
+  has no reliable way to crop the right face to the right name from a row description alone. Not
+  used. **Which row she stands in is not established**: the OCR of that caption is badly broken
+  (rows trail off mid-name into junk) and her name survives in this volume's text only in the index
+  entry, so an earlier draft of this note that quoted her out of the fourth row was stating more
+  than the page can currently be read to say. Anyone reopening this needs the page image, not the
+  text layer.
 
 Current-decade names (Rachel Keightley, Sawyer Coffey, Tribhuwan Singh) were spot-checked against
 web search rather than re-scraped from wkuherald.com directly, to avoid re-spending a crawl on leads
@@ -88,9 +100,12 @@ No file in `data/` changed this run.
 ## For the next run
 
 - Priorities 1 and 2 remain fully done.
-- The digitalcommons Cloudflare wall is confirmed closed to both curl-with-headers and a real
-  browser; the browser route additionally cannot be fixed from inside a session (proxy CA trust).
-  Don't spend a cycle re-trying either.
+- The digitalcommons **PDF route** (`cgi/viewcontent.cgi`) is confirmed closed to both
+  curl-with-headers and a real browser; the browser route additionally cannot be fixed from inside a
+  session (proxy CA trust). Don't spend a cycle re-trying either. **The item landing pages are not
+  blocked** and were serving on 27 September, so a claim can still be checked against an item's own
+  page and index lines even while the file itself cannot be mirrored. Never write a negative finding
+  without opening the landing page first.
 - The ten pre-1990 names above (the original eight plus Baker and Fleenor) are now closed dead ends
   against archive.org's holdings specifically. A fresh source outside archive.org and digitalcommons
   — a Herald PDF reachable some other way, or a family/alumni source — would be needed to move any
