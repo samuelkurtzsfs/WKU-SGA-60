@@ -7397,6 +7397,27 @@ No file was added to or removed from `data/photos.json` or `data/photos/`. `buil
 `check_data.py` both pass clean (61 years, 1968 events, 60 presidents, all still portrayed). Landed
 on `research-photos`.
 
+### Photograph run of 27 September (afternoon, scheduled): `viewcontent.cgi` confirmed blocked from a second, independent network path, not just this container's
+
+Baseline reconfirmed programmatically rather than trusted from this morning's note (which had
+already landed via PR #622): all 73 leader records, including the four named presidents, still
+carry a portrait; the 8-name officer gap inside `archive.org`'s Talisman coverage is unchanged and
+already exhausted (David Bass, David Young, Alice Wicks, Steve Wilson, Mark Chesnut, Chris Millay,
+Dwight Austin, Vern Pulman). `digitalcommons.wku.edu/cgi/viewcontent.cgi` and `web.archive.org`
+were retested and are still closed by curl, exactly as this morning left them.
+
+**New fact: the WebFetch tool, which runs through a completely separate fetch path from this
+container's own proxy, was pointed at the same `viewcontent.cgi` URLs and got the identical HTTP
+403 Cloudflare block.** That rules out this container's specific network position as the cause —
+the block is on the request itself, not on where it comes from — so a future run gains nothing by
+retrying from a different container or a different curl configuration. `archive.ph` was tried for
+the first time as a possible mirror and failed at the proxy the same way `web.archive.org` does;
+not a route in. Full detail, including the officer-gap recheck and two open-web searches that
+turned up nothing new (a WNKY-TV retrospective with no photographs, and confirmation that the
+`wku.edu/news` Robinson and Lucas articles are already this archive's cited sources), is in
+`.research/photo-run-2026-09-27-afternoon.md`. No file in `data/` changed. Landed on
+`research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
