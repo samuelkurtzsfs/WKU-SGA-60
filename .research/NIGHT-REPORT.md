@@ -33995,3 +33995,77 @@ Counts unchanged: 61 years, 1968 events, 60 people have been president, 1111 pie
 with every file present and a real PDF, 308 documents, 2650 recorded terms of office held by 1809
 people, 2613 of them (98%) with an account of what the person did, 48 people under more than one
 spelling, and a search index of 4949 records. The board is empty; nothing is open.
+
+# 27 September 2026 — an empty board, and a meeting filed on the day the paper came out
+
+No pull request was open. Everything through #614 is merged, and every `research-*` branch that
+still reports commits ahead of `main` either has no merge base with it or carries only deletions,
+which is to say it is behind. Push access works from this container; `gh` is not installed, so the
+GitHub tools did the reading, as `AGENT-LANDING.md` says they should.
+
+**The sample went to the newest published material: the thirteen claims the 26 September passes
+put on the site.** Twelve held exactly. All seven of the 2003-04 re-datings are right, and right
+for the stated reason rather than by arithmetic: each article was opened and each says in its own
+first sentence that the business happened at Tuesday's meeting. The plus/minus concern of
+23 September 2003 carries Bradley's intention to oppose, the Board of Student Body Presidents
+urging him to fight it, Croney's questionnaire and Chief Justice Ransdell on penalising the
+students who score best; the unanimous legislation of 14 October was indeed passed the day before
+Strow formally proposed the system to the University Senate; the budget freeze of 3 February 2004
+carries the $5.6 million, the $65,309.52 and the $7,400 in Aramark and foundation money exactly;
+Kirchmeyer's directory proposal is 16 September; Watkins's get-out-the-vote resolution and the
+350 signatures are 28 October; the class-cancellation resolution is 18 November. The correction
+making Nick Todd vice president of finance rather than vice president is the paper's own wording
+on 26 February 2004.
+
+The February 2024 money work holds against the bill sheets themselves. Resolution 1-24-S does
+carry the $50 in its seventh whereas clause and does resolve no further than supporting a
+lowering of parking violation fees, so the narrower distinction the third pass settled on is the
+right one; the $10-to-$600 range, the authorship by Denney and Reed and the blank vote lines are
+all on the form. Bill 5-24-S splits $1,040 of the $1,045 — $650 and $390 — and sends the odd five
+dollars back, as the entry now says. Bill 7-24-S's nine itemised sums add to the $585 claimed,
+every one of them to the cent. Bill 10-24-S is $100, Centennial Mall, 28 February, 10 to 1, by
+Ray, Kurtz and Ralston. The *Herald* of 22 February confirms all four measures of the 20 February
+meeting passed unanimously and confirms its own numbering, 25, 26, 27 and 30-23-S, against SGA's
+3, 6, 7 and 10-24-S. Rush Robinson is a sophomore senator and Ella Wooton a senator at large in
+the paper's own words, so those titles are sourced and not inferred.
+
+**The one entry that did not hold was the calculator meeting, and it was filed on the wrong day.**
+It sat at 28 February 2024, which is the day the *Herald* printed the story; the article opens by
+saying the senate met Tuesday night, and SGA's own sheet for Bill 9-24-S records its second
+reading on 27 February. Moved to the 27th, which is also where the archive already files the
+Dress for Success bill from that same meeting — so one meeting had been appearing on the site
+under two different dates. Three further repairs to the same entry. It gave the bill's number as
+"2923-S", which is the *Herald*'s own hyphen-less printing and not an identifier SGA ever used;
+it is Bill 9-24-S, and the paper's rendering is now named as the paper's. It said nothing about
+the money, so the claim that the Center for Innovative Teaching and Learning's ten calculators
+brought the total to fifteen could not be checked; the bill allocates $550, being $500 for five
+calculators and $50 for batteries, five plus ten is the fifteen, and the bill sheet is now cited
+beside the article. And the Topper Transit resolution is Resolution 2-24-S, whose form records a
+second reading on 20 February, a week before the meeting the *Herald* describes it passing at.
+Two contemporaneous records disagree and neither is a later list, so the entry now says they
+disagree rather than picking one. Nothing was cut: the entry is longer and every sentence in it
+is now traceable to a document on disk.
+
+**The standing brief is out of date in the same two places the last pass named.** #6, #7 and #8
+were closed on 18 August 2026 and there is nothing stale to rescue on the 4 August branches.
+
+**One thing found and deliberately not fixed, because fixing it blind would be worse than leaving
+it.** The dating convention the 26 September pass applied to 2003-04 has never been applied
+anywhere else. Across the archive 379 events cite `wkuherald.com` and describe a meeting, a senate
+or a congress; 152 of them sit on a Tuesday and 227 do not, spread over every year from 2002 to
+2026 and heaviest in 2011 through 2024 at ten to eighteen a year. That 227 is an upper bound, not
+a defect count — many are elections, resignations, forums and letters that never happened at a
+Tuesday meeting at all, and the only way to tell is to open each article and see whether it
+reports a meeting in the past tense. The 26 September pass got this right by reading all seven
+articles in full before moving anything, and said so. It is a decade-at-a-time job for the
+research routines, not a find-and-replace, and it is the largest known open question on the
+record.
+
+`build.py`, `check_data.py` and `check_contrib.py` all run clean after the change.
+`check_duplicates.py` prints the same four title pairs and the same one same-source pair as
+before, and no new pair: the 2003-04 plus/minus pair it flags was read this time against both
+articles and is two events, concern voiced in September and legislation passed in October. Counts:
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2650 recorded terms of office held by 1809 people, 2613 of
+them (98%) with an account of what the person did, 48 people under more than one spelling, and a
+search index of 4949 records. One entry corrected and published; nothing cut; nothing left open.
