@@ -1,166 +1,171 @@
 [
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/5160",
-  "why": "2014 Talisman: Reckoning, Part I. Feature 'stories to tell - warren county regional jail, sandra zemter, brittany eldridge, mallory treece' by Jordan Kassel. A named subject in a photo-led Talisman feature.",
-  "who": [
-   "Mallory Treece"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6721",
-  "why": "College Heights Herald 84:22 [32], 17 February 2009. Two separate items: a full profile, 'puzzle expert looks to future outside kentucky - jacob turner' by Mike Stunson, which is the kind of single-subject feature the Herald always photographed; and 'student government association chief justice resigns - lisa kappler' by Mary Barczak.",
-  "who": [
-   "Jacob Turner",
-   "Lisa M. Kappler"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6720",
-  "why": "College Heights Herald 84:33, 19 February 2009: 'student government association approves new chief justice - corey bewley' by Mary Barczak. Bewley is the successor Chief Justice named in the worklist and this is the story of his approval.",
-  "who": [
-   "Corey Bewley"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6220",
-  "why": "College Heights Herald 85:13, 23 October 2009: 'three student government association senators resign - michel stephens, daniel shaw, emmett stephens' by Shakia Harris. Note this frame is tied to a resignation, so it is a last resort under the archive's own rule, but it is the only located photograph opportunity for Shaw.",
-  "who": [
-   "Daniel Shaw",
-   "Danial Shaw",
-   "Mitchell Stevens"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6238",
-  "why": "College Heights Herald 85:20, 17 November 2009: 'western students work for politicians - timothy morris, monique braun, timothy gilliam' by Spencer Jenkins. Three named students in a feature; needs a caption check to tell which figure is Gilliam.",
-  "who": [
-   "Timothy Gilliam"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/9223",
-  "why": "College Heights Herald 78:47, 20 March 2003 - the spring 2003 election coverage, one candidate profile per person with a mugshot above it. The archived web version of one of these pieces proves the format: the photograph carries alt text and a caption bar with the candidate's name. Thirty people on the n0207 list first served in 2002-03 and sixteen in 2003-04, and no Talisman covers either year.",
-  "who": [
-   "Kelly Johnson",
-   "Brooke Smith",
-   "Kristin Hartley",
-   "Stacey Adkisson",
-   "Natalie Croney"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/9224",
-  "why": "College Heights Herald 78:46, 18 March 2003. The other half of the spring 2003 election coverage (Martin, Peavie, Todd profiles are indexed in it), same mugshot-per-candidate format.",
-  "who": [
-   "Kelly Johnson",
-   "Brooke Smith",
-   "Kristin Hartley"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/3695",
-  "why": "College Heights Herald 81:39, 4 April 2006, 'Student Government Association Candidates Agree on Many Issues'. The spring 2006 election produced the 2006-07 senate, which is the largest cohort on the n0207 list with no portrait at all - forty-six people. The 2004 and 2005 election sections both printed a mugshot grid of every senate candidate, and that grid is what is wanted here.",
-  "who": [
-   "Amanda B. Allen",
-   "Cherieth L. Lineweaver",
-   "Emilee Bishop",
-   "Lucas Humble",
-   "Matt Holland",
-   "Nate Eaton",
-   "Tim Hill"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/3684",
-  "why": "College Heights Herald 81:36, 14 March 2006, 'Three Candidates Run for President'. Start of the spring 2006 campaign coverage; a three-way race is normally illustrated with a headshot of each candidate, and the senate candidate profiles run alongside.",
-  "who": [
-   "Alex Wimsatt",
-   "Amanda B. Allen",
-   "Cherieth L. Lineweaver"
-  ],
-  "note": "CLOSED, 25 September 2026. The landing page's own viewcontent link gives article=4689, not 3684 as the record-page URL number wrongly suggests (a trap: the landing-page slug and the viewcontent.cgi article id are different numbering systems on TopSCHOLAR and must not be assumed equal - confirmed again here after 7666/7724 and 6645/7666 showed the same mismatch pattern). Fetched article 4689 whole via the web.archive.org id_ bypass (3.9 MB, opens cleanly). Page 9 ('SGA: Elections held in April') carries three clean, individually captioned headshots - Josh McCubbins, Kara Ratliff, Robert Watkins - the three declared presidential candidates (NOT primary candidates: the primary vote was cancelled, Herald 30 Mar 2006, dlsc_ua_records/3682); all three already have portraits in photos.json from other sources, so this added no new officer coverage, but the crop was landed as the 2005-06 year-scene photograph (a Priority 4 gap) since it is SGA's own election. Alex Wimsatt is not named anywhere in this issue (checked visually, page 1 and page 9; the text layer is too garbled to trust a search on its own). Amanda Allen and Cherieth Lineweaver appear only in running text (declared candidates for administrative vice president in a separate paragraph) with no accompanying photograph. This issue is exhausted; do not refetch it for Wimsatt, Allen or Lineweaver."
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6645",
-  "why": "College Heights Herald 82:44 [43], 5 April 2007. Spring 2007 election week, which produced the 2007-08 senate - thirty-six people on the n0207 list with no portrait. The index lines for the April 2007 issues are truncated at 300 characters so the election items do not show locally, but the date is right and the Herald ran candidate profiles with mugshots in every other year of this period.",
-  "who": [
-   "Brian Fisher",
-   "Drew Eclov",
-   "Emilee England",
-   "Jessica VanWinkle",
-   "Cacy A. Schooler",
-   "Jacob Miers"
-  ],
-  "note": "Fetched whole, 25 September 2026 (article 7666, 20.9 MB via the web.archive.org id_ bypass, opens cleanly, 17 pages of real text). This issue's SGA coverage is the presidential-result story ('Johnson keeps presidency') with a captioned photo of Jeanne Johnson (already has a portrait) and one of losing candidate Kendrick Bryan; no senate-candidate mugshot grid anywhere in it and none of Fisher, Eclov, England, Schooler or Miers appear by name. The senate-candidate grid this entry was hoping for is not in this issue; do not refetch 6645 for these six names."
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6644",
-  "why": "College Heights Herald 82:44, 10 April 2007 - the issue after the spring 2007 vote, which normally carries the result story with photographs of the winners. Same cohort as 6645.",
-  "who": [
-   "Brian Fisher",
-   "Drew Eclov",
-   "Emilee England",
-   "Jessica VanWinkle"
-  ],
-  "note": "Fetched whole, 25 September 2026 (article 7667, 23.3 MB via the web.archive.org id_ bypass; curl reported an HTTP/2 stream warning but the full byte count arrived and the PDF opens, with a handful of individual objects throwing 'not a stream' errors that did not block extraction). This issue covers a bookstore-deadline SGA resolution and a mock gubernatorial election; no senate-election result story and none of Fisher, Eclov, England or VanWinkle (as a subject rather than byline) appear. Not the right issue for this cohort; do not refetch 6644 for these four names."
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/8633",
-  "why": "UA77/1 WKU Spirit, 2007. The contents list a profile headed 'Scholarship Recipient Katherine Smith'. A donor magazine runs a photograph of the student with that kind of profile. Katherine Smith is a common name, so this one is only usable if the piece also gives a detail that ties her to the Katherine Smith who sat in the 2007-08 senate; worth a look rather than a certainty.",
-  "who": [
-   "Katherine Smith"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/talisman/",
-  "why": "The 2015 Talisman is the last print yearbook that can carry a captioned student-government group photograph for the 2014-15 SGA. Thirty-two of the n1419 worklist have 2014-15 as their only year and the College Heights Herald photo library holds a captioned frame for almost none of them, so the yearbook is the only remaining route to a face for most of that cohort. Wanted: the student government spread and any numbered key beside it.",
-  "who": [
-   "Abigail Potter",
-   "Allie Payne",
-   "Amber Daniels",
-   "Ben Beam",
-   "Beth McGrew",
-   "Brandon Mudd",
-   "Cameron Hubbard",
-   "Carter Jackson",
-   "Courtney Hamilton",
-   "Dedais Hudgins",
-   "Elicia Tillis",
-   "Emily Pride",
-   "Gretchen Mosby",
-   "Haley Jones",
-   "Hannah Neeper",
-   "Joe Hunter",
-   "Josh Knight",
-   "Kasey Glasgow",
-   "Laryn Hilderbrandt",
-   "Liz Koehler",
-   "Lucas Knight",
-   "Madison Keller",
-   "Nathan Cherry",
-   "Nolan Calhoun",
-   "Robert Bell",
-   "Ryan Puckett",
-   "Sawyer Coffey",
-   "Sophie Whorf",
-   "Stacey Schepers",
-   "Thomas Poole",
-   "Tony Piedmonte",
-   "William Berry"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/talisman/",
-  "why": "Same request for any Talisman volume covering 2015-16 through 2019-20, if the collection holds one. The SGA senate and judicial council group plates with printed name keys would settle identifications that no single Herald frame can.",
-  "who": [
-   "2015-16 through 2019-20 senators and justices on _worklist-n1419.json"
-  ]
- },
- {
-  "want": "https://digitalcommons.wku.edu/dlsc_ua_fin_aid/620",
-  "why": "UA1C4/10 Student Government Association Photos - the WKU Archives' own SGA photograph collection, described as 'Images of Student Government Association members and activities at Western Kentucky University'. The record page reads fine over plain HTTP; the finding aid PDF behind it (context/dlsc_ua_fin_aid/article/1619/viewcontent/auto_convert.pdf) is the only thing that lists what is actually in the collection, and that file 403s like every other TopSCHOLAR download. This is the single most relevant unread document in the archive for the whole portrait project, not just one block: an item-level inventory of SGA photographs would give dates, subjects and names for decades that no other source covers, and 2004-2011 in particular has no Talisman at all.",
-  "who": [],
-  "file_url": "https://digitalcommons.wku.edu/context/dlsc_ua_fin_aid/article/1619/viewcontent/auto_convert.pdf",
-  "note": "Found by harvesting TopSCHOLAR's OAI-PMH feed, which is open to plain HTTP and is not the blocked search page. digitalcommons.wku.edu/do/oai/?verb=ListRecords&metadataPrefix=oai_dc&set=publication:<set> returns every record's title, date, description and both URLs, in bulk, with no rate limiting beyond ordinary politeness. Record pages answer 200 to Python urllib (curl is TLS-fingerprint blocked); only /context/.../viewcontent file downloads are hard-403. So metadata is fully reachable from a script and files are not."
- }
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/5160",
+    "why": "2014 Talisman: Reckoning, Part I. Feature 'stories to tell - warren county regional jail, sandra zemter, brittany eldridge, mallory treece' by Jordan Kassel. A named subject in a photo-led Talisman feature.",
+    "who": [
+      "Mallory Treece"
+    ]
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6721",
+    "why": "College Heights Herald 84:22 [32], 17 February 2009. Two separate items: a full profile, 'puzzle expert looks to future outside kentucky - jacob turner' by Mike Stunson, which is the kind of single-subject feature the Herald always photographed; and 'student government association chief justice resigns - lisa kappler' by Mary Barczak.",
+    "who": [
+      "Jacob Turner",
+      "Lisa M. Kappler"
+    ]
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6720",
+    "why": "College Heights Herald 84:33, 19 February 2009: 'student government association approves new chief justice - corey bewley' by Mary Barczak. Bewley is the successor Chief Justice named in the worklist and this is the story of his approval.",
+    "who": [
+      "Corey Bewley"
+    ],
+    "note": "CLOSED, 28 September 2026. Landing page's viewcontent id is article=7725 (not the record-page number). Fetched whole via the web.archive.org id_ bypass (25.4 MB, opens cleanly, 11 pages). Page 3 carries the full story ('SGA approves new chief justice', Mary Barczak) confirming Bewley's nomination and exemption, but the page carries no photograph at all - checked the rendered page image directly, not just the text layer. Do not refetch 6720/7725 for Bewley."
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6220",
+    "why": "College Heights Herald 85:13, 23 October 2009: 'three student government association senators resign - michel stephens, daniel shaw, emmett stephens' by Shakia Harris. Note this frame is tied to a resignation, so it is a last resort under the archive's own rule, but it is the only located photograph opportunity for Shaw.",
+    "who": [
+      "Daniel Shaw",
+      "Danial Shaw",
+      "Mitchell Stevens"
+    ]
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6238",
+    "why": "College Heights Herald 85:20, 17 November 2009: 'western students work for politicians - timothy morris, monique braun, timothy gilliam' by Spencer Jenkins. Three named students in a feature; needs a caption check to tell which figure is Gilliam.",
+    "who": [
+      "Timothy Gilliam"
+    ],
+    "note": "CLOSED, 28 September 2026. Landing page's viewcontent id is article=7243 (not the record-page number). Fetched whole via the web.archive.org id_ bypass (15.0 MB, opens cleanly, 15 pages). Page 12 ('Western students work for politicians', Spencer Jenkins) does name Gilliam and quote him, exactly as expected, but it is a pure text feature with no photograph anywhere on the page - checked the rendered page image directly. Do not refetch 6238/7243 for Gilliam."
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/9223",
+    "why": "College Heights Herald 78:47, 20 March 2003 - the spring 2003 election coverage, one candidate profile per person with a mugshot above it. The archived web version of one of these pieces proves the format: the photograph carries alt text and a caption bar with the candidate's name. Thirty people on the n0207 list first served in 2002-03 and sixteen in 2003-04, and no Talisman covers either year.",
+    "who": [
+      "Kelly Johnson",
+      "Brooke Smith",
+      "Kristin Hartley",
+      "Stacey Adkisson",
+      "Natalie Croney"
+    ],
+    "note": "CLOSED, 28 September 2026. Landing page's viewcontent id is article=10212 (not the record-page number). Fetched whole via the web.archive.org id_ bypass (24.7 MB, 11 pages, almost no text layer so every page was rendered and read as an image). This issue's SGA coverage ('Johnson supports one-stop billing' and 'Lockhart wants comfortable atmosphere', both p.6/'Page 6') carries individually captioned photographs of Patti Johnson and Dana Lockhart, plus a mention of John Bradley (no photo) in an unrelated forum story - none of them Kelly Johnson, Brooke Smith, Kristin Hartley, Stacey Adkisson or Natalie Croney, all of whom are absent from this issue by name. Patti Johnson already has a portrait in photos.json (from Herald 80:5, 9 Sept 2004, carried back to 2003-04); this issue's photo is not needed and was not used. No new coverage for the five wanted names from this issue."
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/9224",
+    "why": "College Heights Herald 78:46, 18 March 2003. The other half of the spring 2003 election coverage (Martin, Peavie, Todd profiles are indexed in it), same mugshot-per-candidate format.",
+    "who": [
+      "Kelly Johnson",
+      "Brooke Smith",
+      "Kristin Hartley"
+    ],
+    "note": "CLOSED, 28 September 2026. Landing page's viewcontent id is article=10211 (not the record-page number). Fetched whole via the web.archive.org id_ bypass (5.0 MB, 9 pages, real text layer). The issue's 'SGA Candidates' profile series (p.3 and p.5) individually captions Jessica Martin, Shawn Peavie, Nick Todd and Abby Lovan - all four already covered in photos.json - and does not mention Kelly Johnson, Brooke Smith or Kristin Hartley anywhere. Companion issue 9223/10212 (see above) is the same result for the same three names. Both halves of the spring 2003 election coverage this entry originally pointed at are now exhausted for Johnson/Smith/Hartley; a face for any of the three, if one exists, is in a Herald issue neither this entry nor 9223 anticipated."
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/3695",
+    "why": "College Heights Herald 81:39, 4 April 2006, 'Student Government Association Candidates Agree on Many Issues'. The spring 2006 election produced the 2006-07 senate, which is the largest cohort on the n0207 list with no portrait at all - forty-six people. The 2004 and 2005 election sections both printed a mugshot grid of every senate candidate, and that grid is what is wanted here.",
+    "who": [
+      "Amanda B. Allen",
+      "Cherieth L. Lineweaver",
+      "Emilee Bishop",
+      "Lucas Humble",
+      "Matt Holland",
+      "Nate Eaton",
+      "Tim Hill"
+    ],
+    "note": "CLOSED, 28 September 2026. Landing page's viewcontent id is article=4692 (not the record-page number, matching the same trap logged elsewhere in this file). Fetched whole via the web.archive.org id_ bypass (3.3 MB, 15 pages, garbled OCR text layer so read visually). The issue's only SGA content is the presidential/administrative-VP debate story (p.1, continued p.3): a captioned debate photograph of Kara Ratliff, Robert Watkins and Amanda Allen, all three already covered in photos.json from other sources. No senate-candidate mugshot grid anywhere in the issue, and none of Emilee Bishop, Lucas Humble, Matt Holland, Nate Eaton (already covered elsewhere), Tim Hill or the article's own named subjects appear. Do not refetch 3695/4692 for this cohort."
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/3684",
+    "why": "College Heights Herald 81:36, 14 March 2006, 'Three Candidates Run for President'. Start of the spring 2006 campaign coverage; a three-way race is normally illustrated with a headshot of each candidate, and the senate candidate profiles run alongside.",
+    "who": [
+      "Alex Wimsatt",
+      "Amanda B. Allen",
+      "Cherieth L. Lineweaver"
+    ],
+    "note": "CLOSED, 25 September 2026. The landing page's own viewcontent link gives article=4689, not 3684 as the record-page URL number wrongly suggests (a trap: the landing-page slug and the viewcontent.cgi article id are different numbering systems on TopSCHOLAR and must not be assumed equal - confirmed again here after 7666/7724 and 6645/7666 showed the same mismatch pattern). Fetched article 4689 whole via the web.archive.org id_ bypass (3.9 MB, opens cleanly). Page 9 ('SGA: Elections held in April') carries three clean, individually captioned headshots - Josh McCubbins, Kara Ratliff, Robert Watkins - the three declared presidential candidates (NOT primary candidates: the primary vote was cancelled, Herald 30 Mar 2006, dlsc_ua_records/3682); all three already have portraits in photos.json from other sources, so this added no new officer coverage, but the crop was landed as the 2005-06 year-scene photograph (a Priority 4 gap) since it is SGA's own election. Alex Wimsatt is not named anywhere in this issue (checked visually, page 1 and page 9; the text layer is too garbled to trust a search on its own). Amanda Allen and Cherieth Lineweaver appear only in running text (declared candidates for administrative vice president in a separate paragraph) with no accompanying photograph. This issue is exhausted; do not refetch it for Wimsatt, Allen or Lineweaver."
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6645",
+    "why": "College Heights Herald 82:44 [43], 5 April 2007. Spring 2007 election week, which produced the 2007-08 senate - thirty-six people on the n0207 list with no portrait. The index lines for the April 2007 issues are truncated at 300 characters so the election items do not show locally, but the date is right and the Herald ran candidate profiles with mugshots in every other year of this period.",
+    "who": [
+      "Brian Fisher",
+      "Drew Eclov",
+      "Emilee England",
+      "Jessica VanWinkle",
+      "Cacy A. Schooler",
+      "Jacob Miers"
+    ],
+    "note": "Fetched whole, 25 September 2026 (article 7666, 20.9 MB via the web.archive.org id_ bypass, opens cleanly, 17 pages of real text). This issue's SGA coverage is the presidential-result story ('Johnson keeps presidency') with a captioned photo of Jeanne Johnson (already has a portrait) and one of losing candidate Kendrick Bryan; no senate-candidate mugshot grid anywhere in it and none of Fisher, Eclov, England, Schooler or Miers appear by name. The senate-candidate grid this entry was hoping for is not in this issue; do not refetch 6645 for these six names."
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6644",
+    "why": "College Heights Herald 82:44, 10 April 2007 - the issue after the spring 2007 vote, which normally carries the result story with photographs of the winners. Same cohort as 6645.",
+    "who": [
+      "Brian Fisher",
+      "Drew Eclov",
+      "Emilee England",
+      "Jessica VanWinkle"
+    ],
+    "note": "Fetched whole, 25 September 2026 (article 7667, 23.3 MB via the web.archive.org id_ bypass; curl reported an HTTP/2 stream warning but the full byte count arrived and the PDF opens, with a handful of individual objects throwing 'not a stream' errors that did not block extraction). This issue covers a bookstore-deadline SGA resolution and a mock gubernatorial election; no senate-election result story and none of Fisher, Eclov, England or VanWinkle (as a subject rather than byline) appear. Not the right issue for this cohort; do not refetch 6644 for these four names."
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_records/8633",
+    "why": "UA77/1 WKU Spirit, 2007. The contents list a profile headed 'Scholarship Recipient Katherine Smith'. A donor magazine runs a photograph of the student with that kind of profile. Katherine Smith is a common name, so this one is only usable if the piece also gives a detail that ties her to the Katherine Smith who sat in the 2007-08 senate; worth a look rather than a certainty.",
+    "who": [
+      "Katherine Smith"
+    ]
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/talisman/",
+    "why": "The 2015 Talisman is the last print yearbook that can carry a captioned student-government group photograph for the 2014-15 SGA. Thirty-two of the n1419 worklist have 2014-15 as their only year and the College Heights Herald photo library holds a captioned frame for almost none of them, so the yearbook is the only remaining route to a face for most of that cohort. Wanted: the student government spread and any numbered key beside it.",
+    "who": [
+      "Abigail Potter",
+      "Allie Payne",
+      "Amber Daniels",
+      "Ben Beam",
+      "Beth McGrew",
+      "Brandon Mudd",
+      "Cameron Hubbard",
+      "Carter Jackson",
+      "Courtney Hamilton",
+      "Dedais Hudgins",
+      "Elicia Tillis",
+      "Emily Pride",
+      "Gretchen Mosby",
+      "Haley Jones",
+      "Hannah Neeper",
+      "Joe Hunter",
+      "Josh Knight",
+      "Kasey Glasgow",
+      "Laryn Hilderbrandt",
+      "Liz Koehler",
+      "Lucas Knight",
+      "Madison Keller",
+      "Nathan Cherry",
+      "Nolan Calhoun",
+      "Robert Bell",
+      "Ryan Puckett",
+      "Sawyer Coffey",
+      "Sophie Whorf",
+      "Stacey Schepers",
+      "Thomas Poole",
+      "Tony Piedmonte",
+      "William Berry"
+    ]
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/talisman/",
+    "why": "Same request for any Talisman volume covering 2015-16 through 2019-20, if the collection holds one. The SGA senate and judicial council group plates with printed name keys would settle identifications that no single Herald frame can.",
+    "who": [
+      "2015-16 through 2019-20 senators and justices on _worklist-n1419.json"
+    ]
+  },
+  {
+    "want": "https://digitalcommons.wku.edu/dlsc_ua_fin_aid/620",
+    "why": "UA1C4/10 Student Government Association Photos - the WKU Archives' own SGA photograph collection, described as 'Images of Student Government Association members and activities at Western Kentucky University'. The record page reads fine over plain HTTP; the finding aid PDF behind it (context/dlsc_ua_fin_aid/article/1619/viewcontent/auto_convert.pdf) is the only thing that lists what is actually in the collection, and that file 403s like every other TopSCHOLAR download. This is the single most relevant unread document in the archive for the whole portrait project, not just one block: an item-level inventory of SGA photographs would give dates, subjects and names for decades that no other source covers, and 2004-2011 in particular has no Talisman at all.",
+    "who": [],
+    "file_url": "https://digitalcommons.wku.edu/context/dlsc_ua_fin_aid/article/1619/viewcontent/auto_convert.pdf",
+    "note": "Found by harvesting TopSCHOLAR's OAI-PMH feed, which is open to plain HTTP and is not the blocked search page. digitalcommons.wku.edu/do/oai/?verb=ListRecords&metadataPrefix=oai_dc&set=publication:<set> returns every record's title, date, description and both URLs, in bulk, with no rate limiting beyond ordinary politeness. Record pages answer 200 to Python urllib (curl is TLS-fingerprint blocked); only /context/.../viewcontent file downloads are hard-403. So metadata is fully reachable from a script and files are not."
+  }
 ]
