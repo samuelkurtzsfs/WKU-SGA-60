@@ -9538,6 +9538,10 @@
       "label": "Herald 54:11, 28 Sep 1978",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3423",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4423&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "Herald 54:9, 21 Sep 1978",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3400"
      }
     },
     {
@@ -10339,11 +10343,15 @@
     {
      "date": "1980-04-17",
      "title": "Fuller and Irons win the presidential primary",
-     "body": "Steve Fuller and Tim Irons emerged as victors in the ASG presidential primary, from a field of three that also included David Rue. Candidates had been certified earlier in the month.",
+     "body": "Steve Fuller and Tim Irons emerged as victors in the ASG presidential primary. A week earlier the Herald had named the whole field of three: Fuller, Irons and David Rue. The same issue reported that a bill to raise the spending limit for candidates had been beaten.",
      "src": {
       "label": "Herald 55:53, 17 Apr 1980",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5629",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6631&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "Herald 55:51, 10 Apr 1980",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5631"
      }
     },
     {
@@ -12113,6 +12121,10 @@
       "label": "College Heights Herald 57:58, 27 April 1982",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2467",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3470&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "Herald 56:37, 10 Feb 1981",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5639"
      }
     },
     {
@@ -12131,6 +12143,20 @@
      "src": {
       "label": "Herald 57:55, 15 Apr 1982",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2464"
+     }
+    },
+    {
+     "date": "1982-04-01",
+     "title": "ASG endorses William Natcher",
+     "body": "The Herald reported that the Associated Student Government had backed William Natcher. The same issue previewed the ASG presidential primary, which it said would be held the following Tuesday. The paper editorialized against the endorsement in its next issue, of 6 April, arguing that endorsing was not wise for ASG.",
+     "src": {
+      "label": "Herald 57:51, 1 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2459",
+      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3462&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "Herald 57:52, 6 Apr 1982",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2461"
      }
     }
    ],
@@ -12617,16 +12643,6 @@
       "label": "Herald 58:59, 28 Apr 1983",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2360",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3362&context=dlsc_ua_records"
-     }
-    },
-    {
-     "date": "1982-04-01",
-     "title": "ASG endorses William Natcher",
-     "body": "The Herald reported that the Associated Student Government had backed William Natcher. The same issue previewed the ASG presidential primary set for the following Tuesday, and five days later the paper editorialized that endorsing was not wise for ASG.",
-     "src": {
-      "label": "Herald 57:51, 1 Apr 1982",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2459",
-      "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3462&context=dlsc_ua_records"
      }
     },
     {
@@ -24325,7 +24341,7 @@
     {
      "date": "1996-03-14",
      "title": "Longer visitation hours",
-     "body": "SGA asked the university for longer residence hall visitation hours, one of the quality-of-life requests that defined the organization's agenda that spring.",
+     "body": "SGA asked the university for longer residence hall visitation hours, one of several quality-of-life requests it made that spring.",
      "src": {
       "label": "Herald 71:47, 14 Mar 1996",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2969",
