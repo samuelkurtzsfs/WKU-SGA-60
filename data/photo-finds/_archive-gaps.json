@@ -1076,5 +1076,25 @@
     "url": "https://wkuherald.com/65821/news/gallery-sga-results-announced-cole-bornefeld-wins-presidency/"
    }
   ]
+ },
+ {
+  "kind": "28 September 2026, late-evening run: routes reconfirmed closed, one local PDF checked clean",
+  "name": "",
+  "year": "",
+  "detail": "Re-verified the standing priorities fresh against the current data rather than trusting the log: all four named presidents (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) carry a portrait; every leaders[] entry in years.json (73 terms, all president/regent roles) resolves to a photos.json leader record; every one of the 61 years has at least one photograph once leader portraits count. The year-scene-photograph queue (Priority 4) still stands at exactly four years with no dedicated years[] entry: 1994-95, 1995-96, 2000-01, 2008-09 - unchanged from the 28 September afternoon count.\nConfirmed this session's network state directly rather than assuming last session's held: digitalcommons.wku.edu/cgi/viewcontent.cgi answers 403 to a full browser header set on a plain test article; https://web.archive.org/web/<ts>id_/<url> resets the TLS connection before any HTTP response (proxy status endpoint's recentRelayFailures logs it as ws_closed_mid_exchange against web.archive.org:443, both on a HEAD and a GET, repeated 5 s apart) - the same wall the afternoon run met, not the 'http:// vs https://' mistake the 19 September entry corrected. Both PDF routes are closed for this container tonight. archive.org's own item store (not the Wayback historical-capture host) is fully reachable and unpaced: re-ran the identifier search for the WKU Talisman collection (identifier:talisman19*west OR identifier:talisman20*west) and got exactly the same 19 volumes already on file - 1943, 1946, 1947, 1963-65, 1971-81, 1986, 1987 - confirming again that none of the four target years has a Talisman on archive.org to search.\nTried wkuherald.com's WordPress API as a route into 2000-01 and 2008-09 specifically, since it had not been checked against those two academic years by date filter before. X-WP-Total reads 0 for both /wp-json/wp/v2/posts?after=2000-08-01&before=2001-08-01 and ...after=2008-08-01&before=2009-08-01 - the site's own indexed archive does not reach back that far (its earliest indexed post found by search is 20 August 2002); it is not a usable route for either year and can be crossed off rather than retried.",
+  "src": {
+   "label": "",
+   "url": ""
+  }
+ },
+ {
+  "kind": "lead closed: local PDF read directly, no photograph exists",
+  "name": "Paul Gerard",
+  "year": "1969-70",
+  "detail": "Only remaining un-logged officer-portrait gap this run's fresh cross-reference of organization.executive/senate.officers against photos.json turned up outside the three already-known open rows (Jacob A. Miers and Lisa M. Kappler 2008-09, Lane (Caroline) Simpson 2016-17 - all already covered elsewhere in this file). Gerard's only source, the spring 1969 ASG election result sheet, is already mirrored locally at data/documents/1969-70-asg-election-result.pdf, so this cost no network request. Opened with PyMuPDF: three pages, each a single full-page scanned image of a typewritten tally sheet (1220x1605 at 2x render). Page 3 carries his name - 'Senior Class President ~Paul Gerard 739', elected unopposed - but the page is a results list, not a photograph; there is no image on it that could be a face. No further document is cited for his term. Source exhausted; no portrait is recoverable from this document.",
+  "src": {
+   "label": "UA3/3/1 Associated Student Government Election, spring 1969 result sheet",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/566"
+  }
  }
 ]
