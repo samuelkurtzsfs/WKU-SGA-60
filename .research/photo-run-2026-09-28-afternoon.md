@@ -51,7 +51,9 @@ as impractical on 25 September and was not re-attempted). Notes added to each en
 - **6238/7243** (Herald 85:20, 17 Nov 2009) - wanted for Timothy Gilliam. "Western students work
   for politicians" names and quotes him as expected; it is a pure text feature, no photograph
   anywhere on the page.
-- **9223/10212** and **9224/10211** (Herald 78:46 and 78:47, 18 and 20 March 2003) - wanted for
+- **9223/10212** and **9224/10211** (Herald 78:47 of 20 March 2003 and 78:46 of 18 March 2003
+  respectively - the issue labels were transposed in the first draft of this note, and the
+  landing-page numbers do not run in date order) - wanted for
   Kelly Johnson, Brooke Smith, Kristin Hartley (both issues) and Stacey Adkisson, Natalie Croney
   (9223 only; both already covered elsewhere). 10211's "SGA Candidates" series individually
   captions Jessica Martin, Shawn Peavie, Nick Todd and Abby Lovan - all four already on file - and

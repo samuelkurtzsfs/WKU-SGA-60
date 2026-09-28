@@ -35209,3 +35209,123 @@ The 1980s spring-election dating cluster, unchanged from last night's report: th
 entries are dated to the Thursday the *Herald* printed them rather than the day students voted, and
 they should move as a set or not at all. That is the research routine's job, not a correction to
 make piecemeal.
+
+# 28 September 2026 — the editor's midday pass: the 1990s read against the bills themselves
+
+An empty board again. No pull request open against `main`. `research-photos` is tree-identical to
+`main` outside `site/`, `research-2026-27-fall` carries nothing `main` lacks, and the 4 August
+branches still have no merge base. **#6, #7 and #8 are named as stale and open in the standing
+brief for the twenty-second consecutive pass. All three closed on 18 August 2026, unmerged.**
+
+## What reached the site without a second reader
+
+#629, merged at 09:30, is the only thing published since the last pass. It is bookkeeping: six
+`_topscholar-wanted.json` entries closed, two run notes, and no line of `data/photos.json`,
+`data/photos/` or `data/years.json`. That was checked rather than taken on trust — the diff against
+`main` for those three paths is empty, exactly as the report claimed.
+
+With no historical claims in it, a sample of eight was again the wrong instrument, so every
+checkable claim in it was checked instead, and all of them held:
+
+- All 73 `leaders` records carry a portrait, recomputed from `years.json` against `photos.json`.
+  33 executive and 184 senate-officer records still lack one, the figures the run reported.
+- `merge_photo_finds.py` dry run: 0 to add, 0 to replace, 18 refused, as reported.
+- Three of the five issue labels (81:39, 84:33, 85:20) match the records their URLs open, and
+  **all five `viewcontent.cgi` article ids are right** — 3695→4692, 6720→7725, 6238→7243,
+  9223→10212, 9224→10211. That mapping is checkable offline: `herald-index-full.json` carries each
+  item's real `pdf` link, so the landing-page-number trap this run logged never needs a fetch.
+
+**One defect, in the run notes rather than the data.** The note pairs records 9223 and 9224 with
+"Herald 78:46 and 78:47, 18 and 20 March 2003" in that order. It is the other way round: 9223 is
+78:47 of 20 March and 9224 is 78:46 of 18 March. The index settles it outright — 9223 carries
+"Patti Johnson Supports One-stop Billing" and "Dana Lockhart Wants Comfortable Atmosphere", 9224
+the Martin, Peavie, Todd and Lovan profiles, which is exactly the content the run attached to each
+number. So the run read the right pages and filed the right findings; only the labels in its prose
+were transposed, and the `why` fields in `_topscholar-wanted.json` had them right all along.
+**Nothing published was affected**: the Dana Lockhart portrait cites record 9223 as "Herald 78:47,
+20 March 2003, p. 6", which is correct. The note is fixed and says why.
+
+The run's one identification claim that could have cost the archive a face is also sound. The
+Johnson pictured in 9223 is **Patti** Johnson, not the Kelly Johnson the entry was fetched for —
+the index line names her in full, independently of the page read. Patti Johnson's portrait stands
+where it was, on Herald 80:5 of 9 September 2004.
+
+## The spot check: ten 1990s claims, read against the legislation itself
+
+The 1990s had never been sampled. Ten events citing TopSCHOLAR were drawn at random from the 317 in
+that decade and all nine distinct landing pages opened live, paced three seconds apart; every one
+returned HTTP 200. Then, better than the landing pages: **PyMuPDF was installed and the bills and
+resolutions read directly out of `data/legislation/`, which mirrors them.** That turns a check of
+the archivist's one-line description into a check against the document SGA itself signed.
+
+**Nine of the ten held exactly.** The organizational-aid bill is worth naming because it is the
+kind of entry that invites invention and contains none: Bill 94-2-S's own sheet gives first reading
+1 March 1994, second reading 8 March, a PASSED stamp, the $2,250 figure, the committee's "over four
+hours in three meetings", and all thirteen recipients at the sums the entry prints — Phi Beta Sigma
+$350 down to the International Club, S.O.T.A. and the Topperettes at $100. Every figure matches.
+So do Bill 98-4-F's $300 for the second annual W.O.W. Conference and its keynote-and-workshops
+programme, Bill 94-4-F's quota of 25 students a week, and Resolution 95-10-F's scanners for the
+library and Public Safety.
+
+**Two suspicions were raised and both were wrong, which is the point of opening the documents.**
+The Detrex Field entry says the Associated Student Government *passed* Resolution 91-7-S, where the
+landing page says only "Resolution requesting improvements". The resolution carries a PASSED stamp.
+And the claim that Bill 94-9-F established SGA's series of public forums rested on a Pass line that
+reads blank in the text layer — trap 2a exactly. Rendered at 5x, the page carries **both a
+handwritten tick on the Pass line and a PASSED stamp**. The entry is right; a text search would
+have cut a true fact.
+
+## Corrected
+
+**One entry, 1999-02-16, trimmed to what its own document says.** It read: "Congress ordered its own
+legislation filed in the library … It called for a set of SGA resolutions to be kept on file at
+Helm Library." Resolution 99-2-S says something both narrower and larger. SGA cannot order a
+university library to do anything, and it did not try to: the document twice says *request*. And it
+is not "a set of SGA resolutions" but **all adopted SGA legislation since 1990**, kept in the
+reference section. The entry had faithfully followed the archivist's one-line description, which is
+looser than the paper it describes — the contemporaneous document beats the later summary, which is
+this project's rule for names and is no different for verbs. The entry now says what SGA requested,
+of whom, and that the sheet carries a second reading and a pass line of 23 February.
+
+**One entry, 1997-10-22, given its own subject back.** "A crosswalk on Dogwood Drive" described a
+run of outgoing letters and never said a word about the letter it cites. Its landing page names
+both ends of it, so the body now opens with secretary Jamie Fite writing to university president
+Gary Ransdell, and keeps the run of letters as context. Fite is confirmed as the year's secretary
+in its own executive roster and in three sibling letter entries, so this is not a name matched off
+a description.
+
+## Cut
+
+Nothing. Both defects were a wrong word and a missing one; trimming the over-claim and adding the
+sourced particulars cost the archive no fact.
+
+## The settled facts hold
+
+Checked against the data rather than assumed: Norfleet 1981-82; Zielke 1969-70 with Lyne alone in
+1970-71; Payne 1981-82 and Ragan 1982-83; Fiorella and McKinney as regents; Menser with the seat
+from April 1968; Reed Morgan in neither office; the Lodmells two people; the LaCivita portrait on
+file. This pass rewrote two bodies and one title, and touched no leader, year or date.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling, and
+a search index of 4949 records. Every figure unchanged: nothing was added or removed.
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` reports
+the same four title pairs and one same-source pair it has for days, none introduced here, all
+judged before and none to be merged.
+
+## Still open
+
+The 1980s spring-election dating cluster, unchanged for a third night: the spring 1982 entries are
+dated to the Thursday the *Herald* printed them rather than the day students voted, and they should
+move as a set or not at all.
+
+**New, and worth a routine's time:** `data/legislation/` mirrors 1111 bills and resolutions, and
+this pass shows they can be read directly with PyMuPDF — first and second readings, the pass line,
+the stamp, the authors and sponsors, and the full purpose text. Every 1990s entry checked against
+the document was richer in the document than in the entry. That is the cheapest unworked source in
+the repository: it needs no network, no crawl budget, and it cannot be rate-limited. Trap 2a's
+warning stands — render the page before believing a blank Pass line, as 94-9-F proves again.
