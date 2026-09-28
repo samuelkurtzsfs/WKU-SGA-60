@@ -34769,3 +34769,131 @@ until that file is dealt with.
 ## Still open
 
 Nothing. No pull request is open against `main` as this pass ends.
+
+---
+
+# 28 September 2026 — the editor's pass: an April 1982 endorsement filed a year forward, and four true facts that cited nothing
+
+An empty board again. No pull request is open against `main`, and no `research-*` branch carries a
+line of `data/` or `scripts/` that `main` lacks. The three pull requests the standing brief still
+calls stale and open — #6, #7 and #8 — closed on 18 August 2026, unmerged, and this is the
+twenty-first consecutive pass to record it.
+
+With nothing in the queue the review went where prior passes have not been. #618 checked 2026-27,
+#612 and #621 the 2003-04 re-datings, #623 the 2020s meeting dates. The whole Herald back file
+before 2000 had not been sampled. It carries 608 of the archive's events.
+
+## The spot check: ten claims, 1970 to 1999
+
+Drawn at random from those 608 and checked against the cited issue, first in
+`herald-index-full.json` and then by opening eight landing pages live, paced three seconds apart.
+All eight returned HTTP 200; `viewcontent.cgi` was not needed, because an issue's own index is
+enough to test a headline claim.
+
+**Every citation label matched its item exactly** — volume, issue number and date, in all ten. That
+is the part of a citation a reader uses to find the thing, and it is sound.
+
+**Every claim held substantively.** Three were checked precisely because they read as if they might
+not be:
+
+- The 28 September 1978 entry calls David Rue's eleven-vote win the **freshman** presidency, where
+  the index line says only "David Rue Elected President by 11 Votes". The archive is right, and the
+  run-up proves it: a freshman primary trailed on 14 September, "Freshmen Vote Today" on the 19th,
+  "95 Vote in Freshman Primary" on the 21st, and "Associated Student Government Freshman Election
+  Today" on the 26th. Read carelessly that headline would have made Rue a student body president
+  and invented a fifty-ninth. It did not.
+- The same issue carries "ASG Tables Open House Bill", written up under Steven Thornton, who is
+  indeed the 1978-79 president in the record.
+- Rue then appears in the April 1980 presidential field, which is consistent rather than confused:
+  the *Herald* of 10 April 1980 names all three candidates in full — Fuller, Rue, Irons.
+
+## Refiled: an endorsement that sat in the wrong academic year
+
+**"ASG endorses William Natcher", 1 April 1982, was filed in 1982-83. It is 1981-82 business and has
+been moved there.**
+
+1981-82 already holds the whole of that spring, the election included: the primary on 8 April, the
+general election voided on the 15th, Margaret Ragan winning the repeat on the 20th, and the
+Marsupial Awards on the 27th. 1982-83 opens, correctly, with Ragan's new Congress reorganising its
+committees on 29 April. So the convention this archive actually follows is that the session year
+keeps its own spring and the incoming year begins with the incoming Congress.
+
+Against that boundary the Natcher entry was the only thing in 1982-83 dated before 29 April. It is
+also not an election result, which is the one category the file-forward rule covers: it is a
+congressional endorsement voted by the sitting body, three weeks before that body's successor was
+chosen. The paper's own reply confirms which session was being argued with — the editorial
+"Endorsing is Not Wise for Associated Student Government" ran on 6 April, in the next issue.
+
+1981-82 now holds 34 events and 1982-83 holds 24. The total is unchanged at 1968.
+
+## Rescued: four facts that were true and cited nothing
+
+None of these was a fabrication. Each was a real fact drawn from an adjacent issue that the entry
+never pointed at, which makes it uncheckable by a reader — the defect that matters on a public
+archive. Each now carries the issue that proves it, as `src2`.
+
+| entry | the claim | now cited |
+|---|---|---|
+| 1981-82, 1 Apr 1982 | the paper editorialised against the endorsement five days later | Herald 57:52, 6 Apr 1982 |
+| 1981-82, 27 Apr 1982 | M. A. Baker had been the subject of a February 1981 feature | Herald 56:37, 10 Feb 1981 |
+| 1979-80, 17 Apr 1980 | the primary field was three, including David Rue | Herald 55:51, 10 Apr 1980 |
+| 1978-79, 28 Sep 1978 | only 95 students voted in the freshman primary the week before | Herald 54:9, 21 Sep 1978 |
+
+The 1 April 1982 body also now names the date of the editorial instead of counting days, so a later
+re-dating cannot leave "five days later" pointing at the wrong issue. That is #621's lesson applied
+before it costs anything.
+
+## Cut
+
+**One clause, for want of a third source slot.** The 17 April 1980 entry ended "Candidates had been
+certified earlier in the month." That is true — "Associated Student Government Candidates
+Certified", Herald 55:50, 8 April 1980 — but an event carries `src` and `src2` and nothing more, and
+the field-of-three claim is the one worth the second slot. The clause is gone and its source is
+recorded here, so a later pass can restore it if the schema ever gains a third. In its place the
+entry gained a fact the already-cited issue proves outright: the bill to raise candidates' spending
+limit was beaten.
+
+**One over-claim, trimmed rather than deleted.** The 14 March 1996 visitation entry called itself
+"one of the quality-of-life requests that defined the organization's agenda that spring". The
+request is in the headline; "defined" is not in any source. The year's own record does show a run of
+such requests that spring — the pedestrian skywalk in February, a campus store and the dean's-list
+certificates in March, a test-free week before finals in April — so the entry now reads "one of
+several quality-of-life requests it made that spring", which those events support and the flourish
+did not.
+
+## Flagged, not fixed: the spring 1982 election cluster is dated to the printer, not the ballot
+
+The 6 April 1982 issue's own headline reads "Associated Student Government Primary Today", and
+6 April 1982 was a Tuesday. The primary therefore happened on the 6th; the entry recording its
+result sits on 8 April, the Thursday the *Herald* printed it. The voided general election and
+Ragan's repeat vote almost certainly sit the same way.
+
+This is not corrected here, deliberately. It is one instance of the class #623 measured and left as
+a decade-at-a-time job, and the 1982 cluster should move as a set or not at all — a half-re-dated
+spring is worse than a consistently printer-dated one, and #621 showed that moving a date breaks
+relative prose elsewhere. The evidence is recorded so the 1980s routine can do it in one piece.
+
+## The settled facts hold
+
+Tested against the data, not trusted. Norfleet 1981-82; Zielke 1969-70 with Lyne alone in 1970-71;
+Payne 1981-82 and Ragan 1982-83; Fiorella and McKinney as regents; Menser with the seat from April
+1968; Reed Morgan holding neither office; the Lodmells two people; the LaCivita portrait on file.
+The refiling above moves an event into 1981-82 and touches none of its leaders, so Norfleet and
+Payne stand exactly where the file puts them.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people recorded under more than one
+spelling, and a search index of 4949 records. Every figure unchanged: one event moved between two
+years and nothing was added or removed.
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` output
+is byte-identical to `main`'s — the same four title pairs and one same-source pair, none introduced
+here, all judged before and none to be merged. The build withdrew one photograph the archive no
+longer holds, as it has every pass until that file is dealt with.
+
+## Still open
+
+The 1980s spring-election dating cluster described above, for the research routine. Nothing else.
