@@ -56,15 +56,16 @@ a single-subject captioned photograph in any wkuherald.com SGA article.
 
 Checked wku.edu/sga's live pages for the five current-year (2025-26) senate names still missing a
 portrait: Tyreesha Morris, Carter Smith, Miles Harvey, Nolan Rongey, Zoe Martin. The live
-`senate/legislative/senate_committees.php` page names all of them as committee chairs or vice
-chairs but carries no images anywhere on the page - unlike the Executive Cabinet's own template,
+`legislative/senate_committees.php` page names three of them - Morris as a committee chair, Smith
+and Harvey as vice chairs - and carries no images anywhere on the page; Rongey and Martin are not
+named on it at all. Unlike the Executive Cabinet's own template,
 which does serve current headshots at a predictable path,
 `/sga/<year>_executive/headshots_website/<firstlast>.jpg` (this is how Hannah Hash and Sophie
 Stirling, both already in `photos.json` for 2025-26, are sourced). That headshot path does not
 exist for the Senate at all.
 
 Worth recording for a future run: tried the equivalent Executive Cabinet page for every year before
-2025-26 (`2019_2020_executive` through `2024_2025_executive`) and every one 404s. `wku.edu`
+2025-26 (`2019_2020_executive` through `2024_2025_executive`); none serves a headshot, answering 404 or 403. `wku.edu`
 overwrites the SGA site's content each year rather than archiving it, which is exactly why this
 project has depended on Wayback copies for historical officer pages - and exactly why tonight's
 `web.archive.org` block matters more than a single run's bad luck.
