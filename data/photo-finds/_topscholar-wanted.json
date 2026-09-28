@@ -19,7 +19,8 @@
   "why": "College Heights Herald 84:33, 19 February 2009: 'student government association approves new chief justice - corey bewley' by Mary Barczak. Bewley is the successor Chief Justice named in the worklist and this is the story of his approval.",
   "who": [
    "Corey Bewley"
-  ]
+  ],
+  "note": "CLOSED, 28 September 2026. Landing page's viewcontent id is article=7725 (not the record-page number). Fetched whole via the web.archive.org id_ bypass (25.4 MB, opens cleanly, 11 pages). Page 3 carries the full story ('SGA approves new chief justice', Mary Barczak) confirming Bewley's nomination and exemption, but the page carries no photograph at all - checked the rendered page image directly, not just the text layer. Do not refetch 6720/7725 for Bewley."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6220",
@@ -35,7 +36,8 @@
   "why": "College Heights Herald 85:20, 17 November 2009: 'western students work for politicians - timothy morris, monique braun, timothy gilliam' by Spencer Jenkins. Three named students in a feature; needs a caption check to tell which figure is Gilliam.",
   "who": [
    "Timothy Gilliam"
-  ]
+  ],
+  "note": "CLOSED, 28 September 2026. Landing page's viewcontent id is article=7243 (not the record-page number). Fetched whole via the web.archive.org id_ bypass (15.0 MB, opens cleanly, 15 pages). Page 12 ('Western students work for politicians', Spencer Jenkins) does name Gilliam and quote him, exactly as expected, but it is a pure text feature with no photograph anywhere on the page - checked the rendered page image directly. Do not refetch 6238/7243 for Gilliam."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/9223",
@@ -46,7 +48,8 @@
    "Kristin Hartley",
    "Stacey Adkisson",
    "Natalie Croney"
-  ]
+  ],
+  "note": "CLOSED, 28 September 2026. Landing page's viewcontent id is article=10212 (not the record-page number). Fetched whole via the web.archive.org id_ bypass (24.7 MB, 11 pages, almost no text layer so every page was rendered and read as an image). This issue's SGA coverage ('Johnson supports one-stop billing' and 'Lockhart wants comfortable atmosphere', both p.6/'Page 6') carries individually captioned photographs of Patti Johnson and Dana Lockhart, plus a mention of John Bradley (no photo) in an unrelated forum story - none of them Kelly Johnson, Brooke Smith, Kristin Hartley, Stacey Adkisson or Natalie Croney, all of whom are absent from this issue by name. Patti Johnson already has a portrait in photos.json (from Herald 80:5, 9 Sept 2004, carried back to 2003-04); this issue's photo is not needed and was not used. No new coverage for the five wanted names from this issue."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/9224",
@@ -55,7 +58,8 @@
    "Kelly Johnson",
    "Brooke Smith",
    "Kristin Hartley"
-  ]
+  ],
+  "note": "CLOSED, 28 September 2026. Landing page's viewcontent id is article=10211 (not the record-page number). Fetched whole via the web.archive.org id_ bypass (5.0 MB, 9 pages, real text layer). The issue's 'SGA Candidates' profile series (p.3 and p.5) individually captions Jessica Martin, Shawn Peavie, Nick Todd and Abby Lovan - all four already covered in photos.json - and does not mention Kelly Johnson, Brooke Smith or Kristin Hartley anywhere. Companion issue 9223/10212 (see above) is the same result for the same three names. Both halves of the spring 2003 election coverage this entry originally pointed at are now exhausted for Johnson/Smith/Hartley; a face for any of the three, if one exists, is in a Herald issue neither this entry nor 9223 anticipated."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/3695",
@@ -68,7 +72,8 @@
    "Matt Holland",
    "Nate Eaton",
    "Tim Hill"
-  ]
+  ],
+  "note": "CLOSED, 28 September 2026. Landing page's viewcontent id is article=4692 (not the record-page number, matching the same trap logged elsewhere in this file). Fetched whole via the web.archive.org id_ bypass (3.3 MB, 15 pages, garbled OCR text layer so read visually). The issue's only SGA content is the presidential/administrative-VP debate story (p.1, continued p.3): a captioned debate photograph of Kara Ratliff, Robert Watkins and Amanda Allen, all three already covered in photos.json from other sources. No senate-candidate mugshot grid anywhere in the issue, and none of Emilee Bishop, Lucas Humble, Matt Holland, Nate Eaton (already covered elsewhere), Tim Hill or Cherieth L. Lineweaver appears anywhere in it. The only faces the issue carries for this cohort are Ratliff, Watkins and Allen in the debate photograph, all three already on file. Do not refetch 3695/4692 for this cohort."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/3684",

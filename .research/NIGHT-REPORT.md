@@ -1,3 +1,116 @@
+# 28 September 2026 (editor, second pass) — five photographic dead ends, two of them reopened and read
+
+## What was open
+
+One pull request: #629, `research-photos`, "Research: photographs". The three branches this pass
+was told to rescue — #6 photographs, #7 the 1980s, #8 the 2020s — were all closed on 18 August and
+need nothing further; the instruction to merge `main` into them is out of date.
+
+Push access was probed with a dry run and works, so this was a full pass with a merge at the end.
+
+## What the pull request contained
+
+Nothing that reaches the site. Two files changed: the run's own notes in `.research/`, and five
+closing notes added to `data/photo-finds/_topscholar-wanted.json`, which is a research worklist.
+`build.py` reads only `_do-not-use.json` out of that directory. No portrait was added, no event was
+written, `data/years.json` and `data/photos.json` are untouched, and the built site is byte for
+byte what it was.
+
+The five entries are all **negative** findings — an issue fetched, read, and found not to carry the
+face it was fetched for. That is the one class of claim this archive's own rule says proves
+nothing, so the test applied was not "is the absence proved" but "is what the run says it read
+actually what is on those pages."
+
+## The spot check
+
+Fewer than eight new claims, so all of them were checked rather than a sample.
+
+**The article-id mapping, five for five.** Every closing note asserts that the landing-page number
+and the `viewcontent.cgi` article id are different numbers, and gives the pair. `herald-index-full.json`
+carries the real `viewcontent.cgi` link for each record and confirms all five independently:
+9224→10211, 9223→10212, 3695→4692, 6720→7725, 6238→7243. Every issue number and date matches too
+— 78:46 of 18 March 2003, 78:47 of 20 March 2003, 81:39 of 4 April 2006, 84:33 of 19 February 2009,
+85:20 of 17 November 2009 — as does every story the notes name.
+
+**Two of the five negatives were reopened and read at the page image, not taken on trust.**
+`viewcontent.cgi` returned 403 on a direct request here as well, and the `web.archive.org` id_
+bypass worked, once past one `ws_closed_mid_exchange` reset — the same instability the run
+describes.
+
+- *Herald* 78:46 (article 10211): nine pages, real text layer, 5.0 MB, all as reported. The "SGA
+  candidates" series runs on printed pages 3 and 5 and carries individually captioned profiles of
+  Jessica Martin, Shawn Peavie, Nick Todd and Abby Lovan, all four already on file. Kelly Johnson,
+  Brooke Smith and Kristin Hartley return zero hits anywhere in the issue — not a garbled-OCR zero
+  either; the text layer is clean and finds the other four 49 times between them.
+- *Herald* 81:39 (article 4692): fifteen pages, 3.3 MB, OCR badly garbled exactly as the run warns,
+  so printed pages 1 and 3 were rendered and read as images. Page one carries "SGA candidates agree
+  on many issues" under a photograph captioned with the three names the run reports, in the order it
+  reports them: Kara Ratliff (far left), Robert Watkins (far right), Amanda Allen (centre). Page
+  three carries the continuation and no photograph of a candidate. There is no senate-candidate
+  mugshot grid in the issue, which is the thing that was wanted, and none of the seven names on the
+  worklist appears.
+
+**The trap this run was most exposed to, it avoided.** Entry 9223 was opened hunting Kelly Johnson
+and found a captioned candidate photograph of a Johnson. The run did not take it. The unfiltered
+index settles it in the archive's favour: 78:47 indexes "Patti Johnson Supports One-stop Billing",
+and Patti Johnson is a different person who already has a portrait, from *Herald* 80:5 of
+9 September 2004 carried back to 2003-04. A surname match would have put the wrong face on the
+wrong woman. `name-aliases.json` conflates no Johnson, and none was added.
+
+Collateral claims checked and sound: Ratliff, Watkins, Allen, Martin, Peavie, Todd, Lovan, Adkisson,
+Croney and Eaton all already carry portraits; Kelly Johnson, Brooke Smith, Kristin Hartley, Emilee
+Bishop, Lucas Humble, Matt Holland, Tim Hill, Corey Bewley and Timothy Gilliam still carry none,
+which is what a run that added nothing should leave behind.
+
+## Cut
+
+One sentence, and no fact with it. The closing note on 3695 ended by saying that neither the wanted
+senate cohort "or the article's own named subjects appear" — which contradicts its own previous
+sentence, where the article's named subjects are Ratliff, Watkins and Allen, photographed and
+captioned. Left standing it would have told a later run that an issue holds no faces when it holds
+three. Rewritten to say what the page shows: the grid is absent, the five senate names and Cherieth
+L. Lineweaver are absent, and the three faces the issue does carry are already on file. Lineweaver
+was on the worklist for that entry and the note had not accounted for her at all.
+
+Nothing else was cut. No entry was over-claimed, because no entry was made.
+
+## The traps checklist
+
+No advance notice was written up as a report, because no event was written at all. No committee
+chair became an officer and no bill's author became a member. No one was matched by surname alone —
+the one place it was possible, the run refused it. No changed surname created a duplicate. No April
+result moved into the wrong academic year. Nothing touches the settled facts. The two living people
+named, Bewley and Gilliam, appear only as the subjects of stories the *Herald* printed about their
+SGA service and a class project, with nothing added. No contributor commit is in the diff; all seven
+commits are authored `SGA 60` and carry no tool attribution.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) with an account of what the person did, 48 people under more than one spelling, a search
+index of 4949 records. Unchanged in every figure, as a run that adds no fact should be.
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` reports
+the same four title pairs and the one same-source pair it has reported for days; none is introduced
+here and all were judged before — the designated driver cards three months apart, a bill and its
+failure, a lawsuit and its endorsement, two stages of the plus/minus fight, and two distinct items
+of 2026-27 business out of one meeting report. None is to be merged. The "withdrew 1 photograph"
+line is the barred-photo guard on `1991-92-stacy-kitchens.jpg` working as designed.
+
+Merged.
+
+## Still open
+
+Two worklist entries are genuinely unexhausted: 5160 for Mallory Treece, behind a 356 MB capture
+that is impractical in this container, and 8633 for Katherine Smith, a common-name lead never
+attempted. Both large Talisman spreads, for the 2014-15 and 2016-17 cohorts, are untouched. Kelly
+Johnson, Brooke Smith and Kristin Hartley have now been looked for in both issues this project ever
+proposed for them and are in neither; if a face exists it is in an issue nobody has thought of yet,
+so the next attempt should be a fresh index search, not a refetch.
+
+The 1980s spring-election dating cluster is unchanged and still the research routine's job.
+
 # 28 September 2026 (editor) — a photograph run with nothing to publish, and a false negative caught in its own log
 
 ## What was open
