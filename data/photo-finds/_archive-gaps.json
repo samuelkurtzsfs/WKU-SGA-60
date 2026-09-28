@@ -1076,5 +1076,25 @@
     "url": "https://wkuherald.com/65821/news/gallery-sga-results-announced-cole-bornefeld-wins-presidency/"
    }
   ]
+ },
+ {
+  "kind": "28 September 2026, late-evening run: routes reconfirmed closed, one local PDF checked clean",
+  "name": "",
+  "year": "",
+  "detail": "Re-verified the standing priorities fresh against the current data rather than trusting the log: all four named presidents (Nick Todd, Katie Dawson, Jeanne Johnson, Reagan Gilley) carry a portrait; every leaders[] entry in years.json (73 terms: 72 president or regent, plus Reed Morgan's unresolved 1968-69 plate) resolves to a photos.json leader record; every one of the 61 years has at least one photograph once leader portraits count. The year-scene-photograph queue (Priority 4) still stands at exactly four years with no dedicated years[] entry: 1994-95, 1995-96, 2000-01, 2008-09 - unchanged from the 28 September afternoon count.\nConfirmed this session's network state directly rather than assuming last session's held: digitalcommons.wku.edu/cgi/viewcontent.cgi answers 403 to a full browser header set on a plain test article; https://web.archive.org/web/<ts>id_/<url> resets the TLS connection before any HTTP response (proxy status endpoint's recentRelayFailures logs it as ws_closed_mid_exchange against web.archive.org:443, both on a HEAD and a GET, repeated 5 s apart) - the same wall the afternoon run met, not the 'http:// vs https://' mistake the 19 September entry corrected. Both PDF routes are closed for this container tonight. archive.org's own item store (not the Wayback historical-capture host) is fully reachable and unpaced: re-ran the identifier search for the WKU Talisman collection (identifier:talisman19*west OR identifier:talisman20*west) and got exactly the same 19 volumes already on file - 1943, 1946, 1947, 1963-65, 1971-81, 1986, 1987 - confirming again that none of the four target years has a Talisman on archive.org to search.\nTried wkuherald.com's WordPress API as a route into 2000-01 and 2008-09 specifically, since it had not been checked against those two academic years by date filter before. X-WP-Total reads 0 for both /wp-json/wp/v2/posts?after=2000-08-01&before=2001-08-01 and ...after=2008-08-01&before=2009-08-01 - the site's own indexed archive does not reach back that far (its earliest indexed post found by search is 20 August 2002); it is not a usable route for either year and can be crossed off rather than retried.",
+  "src": {
+   "label": "",
+   "url": ""
+  }
+ },
+ {
+  "kind": "lead closed: local PDF read directly, no photograph in this document",
+  "name": "Paul Gerard",
+  "year": "1969-70",
+  "detail": "One officer-portrait gap of many, closed at no network cost. (Editor's correction, 28 September: this was filed as the only un-logged officer-portrait gap left outside three known open rows, and it is not. Cross-referencing organization.executive and senate.officers against photos.json leaves 217 officer rows with no portrait at the exact year and name, 142 of them named nowhere in this file, 20 of those executive. The queue is long; this entry closes one document in it.) Gerard's only source, the spring 1969 ASG election result sheet, is already mirrored locally at data/documents/1969-70-asg-election-result.pdf, so this cost no network request. Opened with PyMuPDF: three pages - page 1 the TopSCHOLAR cover sheet, carrying its own text layer and the repository logo, and pages 2 and 3 single full-page scanned images of a typewritten tally sheet (1220x1605 at 2x render). Page 3 carries his name - 'Senior Class President ~Paul Gerard 739', elected unopposed - but the page is a results list, not a photograph; there is no image on it that could be a face. No further document is cited for this officer row. No portrait is recoverable from this document - but do not read that as Gerard being unphotographed. photos.json already holds a 'Paul Gerard' portrait at 1967-68 (1968 Talisman p. 155, Rules and Elections Committee) and a 'Paul Gerard, III' portrait at 1968-69 and 1969-70 (1969 Talisman pt. 1, p. 52). This officer row shows none only because the build matches on exact year and exact name, and the row reads 'Paul Gerard' while the 1969-70 leader row reads 'Paul Gerard, III'. Whether the Senior Class President and the student regent are the same man is an identity question, not a source question, and it is unsettled: the two are not paired in name-aliases.json, whose own rule is that adding a pair asserts they are one human and wants a document first. The lead to take up here is the identity, not this PDF.",
+  "src": {
+   "label": "UA3/3/1 Associated Student Government Election, spring 1969 result sheet",
+   "url": "https://digitalcommons.wku.edu/dlsc_ua_records/566"
+  }
  }
 ]
