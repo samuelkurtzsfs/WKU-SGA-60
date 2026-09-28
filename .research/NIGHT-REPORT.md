@@ -1,3 +1,105 @@
+# 28 September 2026 (editor) — a photograph run with nothing to publish, and a false negative caught in its own log
+
+## What was open
+
+One pull request: #627, `research-photos`, "Research: photographs (rolling)". `gh` is not installed
+in this container, as `AGENT-LANDING.md` says it is not, so the GitHub MCP tools were used and
+`git push --dry-run` to a throwaway ref confirmed write access first. Full mode.
+
+The three branches the standing brief still calls stale — #6 photographs, #7 the 1980s, #8 the
+2020s — were all closed unmerged on 18 August 2026 and need no further handling. The brief's
+paragraph about rescuing them is out of date and can be dropped.
+
+#627 has a merge base at `main`'s own tip, so it is an ordinary descendant and not one of the
+4 August orphan branches `AGENT-LANDING.md` warns about. Its three commits are authored `SGA 60`
+and carry no tool attribution.
+
+## What it changed, and what that meant for the review
+
+Nothing in `data/`. The whole diff is one new file, `.research/photo-run-2026-09-28.md`, 111 lines
+of run log recording that the run found no photograph clearing the archive's bar. `build.py` reads
+only two files out of `.research/` — `branches-checked.json` and `branches-unverified.json` — so
+nothing in this diff reaches the published site. `data/years.json` is the same blob as `main`'s,
+byte for byte, which is the strongest available proof that no fact on the site moved.
+
+That makes the log's own accuracy the thing worth reviewing, because the next photograph run reads
+it and acts on it. It was checked claim by claim against the data files and against the sources.
+
+## What held
+
+The run's research conclusions all stand, and the load-bearing ones were re-verified from the
+primary sources rather than from the log:
+
+- All 73 leader records in `years.json` resolve to a portrait; zero missing. Nick Todd, Katie
+  Dawson, Jeanne Johnson and Reagan Gilley each carry one.
+- 33 executive records without a portrait: exact.
+- The four years with no year-photograph are exactly 1994-95, 1995-96, 2000-01 and 2008-09.
+- All fifteen names tried against `wkuherald.com` are genuinely officers lacking a portrait.
+- `viewcontent.cgi` still answers 403 with full browser headers.
+- `web.archive.org` is reachable again, which the log is right to flag as a change.
+- The archived `e_profiles.html` of 3 November 2004 carries no `<img>` tag outside the Wayback
+  toolbar, and three `<td valign="TOP" width="144">` photo cells its own authors left empty.
+- The 1978 *Talisman* caption naming David Bass is real, and the refusal to use the frame is right:
+  it names four officers and the photograph does not let you tell them apart.
+- David Young is quoted in the 1979 *Talisman* with no photograph on the page, and Alice Wicks
+  appears only as a name-index entry which, unlike its neighbours, carries no page number at all.
+
+## What was cut or corrected
+
+Seven things, all in the log:
+
+- **A false negative, and the one correction that mattered.** The log said the archived SGA site
+  page names a 2004-05 president, administrative vice president and public relations director who
+  were "none of them a name currently in `data/years.json`", and flagged that as a roster gap for a
+  later run. All three are already on file, in exactly those offices: Patti Johnson as president,
+  Evelina V. Petkova as administrative vice president, Abby Lovan as director of public relations.
+  Left standing it would have sent the next run hunting a gap that does not exist. Rewritten the
+  other way up, which is what the evidence actually supports: a contemporaneous page independently
+  corroborating a roster this archive already holds.
+- A named living officer was tied to a harassment complaint inside SGA, unsourced and with no
+  outcome recorded, in the course of explaining why a photograph was rejected. Cut. The operative
+  reason — the image carries no caption, so it would need identifying by face — stands on its own.
+- A 28-word verbatim *Talisman* caption, over the 15-word ceiling. Paraphrased.
+- "All 73 `leaders` records in `data/photos.json`" — wrong file. 73 is the leader count in
+  `years.json`; `photos.json` holds 1,396 portrait entries across every rank.
+- 182 senate-officer records without a portrait: the recount gives 184.
+- "nine of the 2010s officer names" against a list of fifteen, and "Four" against a list of six.
+  The name lists were right and the numerals wrong: fifteen tried, six returning nothing, nine
+  returning articles that quote the officer without captioning the picture.
+- "re-checked three of them" against four people described. Four.
+
+## The settled facts hold
+
+Nothing in the diff touches a leader, a year or an event, so none of section 7 was in play. Checked
+anyway against the data: Norfleet 1981-82, Zielke 1969-70 with Lyne alone in 1970-71, Payne 1981-82
+with Ragan 1982-83, Reed Morgan holding neither office, the Lodmells two people, the LaCivita
+portrait on file. The 2004-05 correction above adds no name and moves no year; it records that the
+three already there are confirmed from outside.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people recorded under more than one
+spelling, and a search index of 4949 records. Every figure unchanged from `main`, as it must be
+when no data file moved.
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` output is
+byte-identical to `main`'s: the same four title pairs and one same-source pair, none introduced here.
+Judged again and none is to be merged — the 1991-92 regent advisory committee bill is introduced in
+January and fails in February, the 1971-72 lawsuit is planned in February and endorsed in March, the
+2003-04 grading measure is opposed in September and passed in October, the 1997-98 driver cards are
+three months apart, and the 2026-27 pair reports two different items of business out of one article.
+The build withdrew one photograph the archive no longer holds, as it has on every pass until that
+file is dealt with.
+
+## Still open
+
+The 1980s spring-election dating cluster from #626, for the research routine. The photograph run's
+own next steps, which its log now states correctly: `wkuherald.com` captions are worth trying
+per-name against roughly 200 unchecked officer records, and the `e_profiles.html` route is a dead
+end not worth re-crawling.
+
 # 27 September 2026 (editor, second pass) — an empty board, and the archive's own grading vocabulary found printed under 128 photographs
 
 ## What was open
