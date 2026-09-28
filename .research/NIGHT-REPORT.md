@@ -1,3 +1,123 @@
+# 28 September 2026 (editor, third pass) — a lead closed on a queue that was never counted
+
+## What was open
+
+One pull request: #633, `research-photos`, "Research: photographs (rolling)", opened this evening
+against current `main` after #631 merged earlier in the day. The branch had one commit and a clean
+merge base at the tip of `main`, so nothing needed rescuing. The three branches this instruction
+still names as stale — #6, #7, #8 — have been closed since 18 August; the repository is at #633 now
+and that paragraph of the standing brief is out of date.
+
+`gh` is not installed in this container, but the token in the environment answers the GitHub API
+directly, so this was a full pass with a merge at the end.
+
+## What the pull request contained
+
+One file: two new entries in `data/photo-finds/_archive-gaps.json`, which is a research log.
+`merge_photo_finds.py` skips every file in that directory whose name begins with an underscore, and
+`build.py` reads only `_do-not-use.json` out of it. Nothing here reaches a reader. That was
+confirmed rather than assumed: after the corrections below, a full rebuild left `site/` untouched,
+with `git status` showing the log file alone as modified.
+
+No portrait was added. `years.json` and `photos.json` were not touched. The run's own summary of
+itself was honest about that.
+
+## The spot check
+
+Fifteen claims checked, all of them, rather than a sample of eight.
+
+**The six arithmetic claims, all exact.** 61 years; 73 leader terms; all 73 resolving to a
+`photos.json` leader record; every one of the 61 years carrying at least one photograph once leader
+portraits count; the four named presidents — Todd, Dawson, Johnson, Gilley — each carrying a
+portrait; and the year-scene queue standing at exactly four bare years, 1994-95, 1995-96, 2000-01
+and 2008-09. Every figure recomputed from the data and every one correct.
+
+**The four network claims, all reproduced.** `digitalcommons.wku.edu/cgi/viewcontent.cgi` answered
+403 to a full browser header set on the same test article. `web.archive.org`'s raw-capture host
+reset the connection before any HTTP response — curl 35, "Recv failure: Connection reset by peer" —
+while `archive.org`'s own item store answered 200 to a control request in the same minute, exactly
+the split the run described. The Talisman identifier search returned 19 volumes and the same 19
+the run listed: 1943, 1946, 1947, 1963-65, 1971-81, 1986, 1987, with nothing in the four bare
+years. `wkuherald.com`'s own post archive returned `X-WP-Total: 0` for both the 2000-01 and the
+2008-09 windows, and its earliest indexed post is 20 August 2002, which is the date the run gave.
+
+**The document claim, read directly.** `1969-70-asg-election-result.pdf` is three pages. Page 3
+carries "Senior Class President ~Paul Gerard 739" with no opposing candidate under that office,
+and the page is a scanned tally sheet with no photograph on it. The run's conclusion about the
+document is right, and page 2 of the same sheet independently corroborates a settled fact: it
+prints the 1969 presidential race with Zielke and Genzianelli, which is where this archive already
+files Zielke's term.
+
+## What was cut
+
+Two claims in the log failed, and both were trimmed rather than deleted, because the finding
+underneath each is sound.
+
+**"The only remaining un-logged officer-portrait gap" is not.** The entry filed Paul Gerard as the
+last officer-portrait gap outside three known open rows. Cross-referencing `organization.executive`
+and `senate.officers` against `photos.json` leaves 217 officer rows with no portrait at the exact
+year and name, 142 of them named nowhere in the log file, 20 of those executive. No narrower
+reading of the cross-reference rescues the sentence: filtering to rows carrying a profile still
+leaves 122. The sentence now says what it is — one document closed out of a long queue — with the
+real figures beside it. A log that tells the next run the queue is empty is how a queue stops being
+worked.
+
+**"Source exhausted" was the wrong conclusion about the right document.** The PDF is exhausted.
+Gerard is not. `photos.json` already holds a "Paul Gerard" portrait at 1967-68, from the 1968
+Talisman's Rules and Elections Committee page, and a "Paul Gerard, III" portrait at 1968-69 and
+1969-70 from the 1969 Talisman. The officer row shows no face only because the build matches on
+exact year and exact name, and the row omits the suffix the leader row carries. So the open
+question is whether the Senior Class President and the student regent are one man, which is an
+identity question wanting a document, not a source question already settled. The two are not paired
+in `name-aliases.json`, and that file's own rule is that adding a pair asserts they are one human.
+Flagged in the log for a researcher, deliberately not fixed here.
+
+Two smaller corrections went with them: the leader-term count was written as all president or
+regent when one of the 73 is Reed Morgan's unresolved plate, and the election sheet was described
+as three pages of tally when its first page is the repository's own cover sheet.
+
+## Judged and left alone
+
+`check_duplicates.py` reports the same four title pairs and one same-source pair it reports on
+`main`, none of them this branch's doing. Read again: the designated driver cards are a November
+1997 bill with an X on its Pass line and a February 1998 Herald notice of distribution, four months
+and two sources apart; the regent advisory bill and its failure after amendment are nine days
+apart; the Civil Liberties Union suit and its endorsement are a month apart; the plus/minus grading
+pair is a stated position and then a passed resolution; and the 2026 pair is two items of different
+business from one meeting report. None to merge. The February 1998 entry is also a model of the
+advance-notice rule working — it says outright that the archive holds only a contents listing and
+claims nothing beyond the headline.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling, and
+a search index of 4949 records. Every figure unchanged from the second pass: this run published no
+fact and this review removed none, it corrected a log. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0. The "withdrew 1 photograph" line is the barred-photo guard working as
+designed.
+
+Merged, with the corrections, as #633.
+
+## Still open
+
+The four bare year-scene years — 1994-95, 1995-96, 2000-01 and 2008-09 — now have three routes
+documented as closed against them rather than untried, which is worth more than another attempt at
+the same three. The Talisman volumes for those years are not on archive.org at all, so the route
+that remains is TopSCHOLAR's own page images, and that depends on the `viewcontent.cgi` wall.
+
+The 217-row officer-portrait queue is the real standing gap, and it is now countable from the log
+rather than hidden behind a sentence saying there was one row left.
+
+The Paul Gerard identity question is new and small: one document putting the Senior Class President
+and the student regent in the same frame, or naming the suffix either way, would settle it.
+
+The 1980s spring-election dating cluster is unchanged, a sixth night. It remains the research
+routine's job.
+
+---
+
 # 28 September 2026 (editor, second pass) — five photographic dead ends, two of them reopened and read
 
 ## What was open
