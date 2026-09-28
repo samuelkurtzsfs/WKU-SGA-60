@@ -35419,3 +35419,112 @@ priorities that matter are already complete — every leader has a portrait — 
 lost while this holds, but the run is spending its budget confirming the walls are still up. The
 unworked seam named in the midday pass is the better use of it: `data/legislation/` mirrors 1111
 PDFs that read cleanly with PyMuPDF, need no network, and cannot be rate-limited.
+
+# 28 September 2026 — the editor's night pass: a chief of staff the Herald named two ways
+
+## The board
+
+Empty again, for the fourth pass running. No pull request is open against `main`, and every
+research branch that carried work has landed: `research-photos` is tree-identical to `main`. The
+standing brief still names #6, #7 and #8 as stale and open since 4 August; all three were closed on
+18 August 2026, six weeks ago, and the brief should stop pointing a run at them.
+
+The five branches that remain unmerged — `research-profiles`, `research-roster-1970s-80s`,
+`research-roster-2010s`, `research-roster-2020s`, `research-senate` — are the orphan-history
+snapshots AGENT-LANDING.md warns about. `git merge-base` against `main` is empty for all five, and
+the data diff for each is roughly 197,000 deletions: merging one would take out
+`herald-index-full.json`, the contributor layer and the validators. Their tips are 24 to 31 August.
+They are not a review queue and nothing was done to them.
+
+## What was checked instead
+
+With nothing to gate, the pass was spent on what is already live, which is what auto-deploys.
+
+An archive-wide sweep for the advance-notice trap — a source headline in the booked-in-advance form
+crossed against a body asserting a crowd, a review or a financial result — returns one candidate,
+and it is clean: the March 2024 funding entry reports bills that passed, under an article headlined
+"upcoming events". No advance notice in this archive is carrying an outcome it cannot prove.
+
+The settled facts of section 7 all hold on `main`: Norfleet at 1981-82, Zielke at 1969-70, Payne at
+1981-82, Lyne alone at 1970-71 with the regent seat, Ragan at 1982-83, Fiorella 1972-73, Gregory
+McKinney 1974-75, Reed Morgan filed `unresolved` and in no office. Menser sits at 1967-68 as
+president with `also_regent`, on the Herald of 4 April 1968 reporting he assumed the Regent seat —
+consistent with the settled April 1968 date, and correct.
+
+The portrait layer was read for misattached faces. 26 files serve more than one spelling of a name;
+23 of those spellings are recorded in `name-aliases.json`, and the three that are not — Edward
+"Eddie" Myers, Brittany Ann Wick, Donté Reed — are formatting variants of names the file already
+carries. Reuse of one portrait across the several years a person served is the established design
+and is not a duplicate. Nothing is attached to the wrong person.
+
+## Spot check
+
+Ten claims opened against their sources, across four decades and three source types.
+
+Verified exactly, to the figure: Bill 7-24-S ($585, Liquid IV $113.94, lip balm $104.97, gum
+$74.95, Legislative Discretionary Budget) and Bill 10-24-S ($100, Centennial Mall, 28 February,
+10:00–1:00, affirmation keychains), both read from the PDFs mirrored in `data/legislation/` at no
+network cost; the 2004 budget freeze ($5.6 million ordered by the Fletcher administration,
+$65,309.52 held, $7,400 in unaffected accounts, Bradley on legislation still passing); the 2013
+athletic-fee resolution ($80,000 paid into the Sun Belt against $40,000 returned, Todd Stewart's
+$1 million to $1.5 million, Conference USA from 1 July 2014); Bill 39-23-S failing 19-15 short of
+two-thirds, with Dance Big Red rejected and no vote count claimed for it; Whipple winning the
+speakership over Lucas and Bryant with Vincent swearing the Senate in; and Jenkins reappointed on
+22 April 2025 and later confirmed unanimously.
+
+The 1982 Natcher endorsement, refiled by an earlier pass, was checked against the local index
+rather than the network: issue 57:51 of 1 April 1982 carries both "Associated Student Government
+Backs William Natcher" and the primary preview, and the entry claims of that preview only what an
+advance notice proves. Its third sentence describes the editorial of 6 April, and the entry already
+carries a `src2` pointing at `dlsc_ua_records/2461`, Vol. 57 No. 52 — which is where the index puts
+"Endorsing is Not Wise for Associated Student Government". Correctly filed and correctly sourced.
+
+## The one correction
+
+The entry for the 25th Senate's opening meeting, 22 April 2025, named Maggie Yelton chief of staff
+while citing the Herald of 23 April 2025 — which prints the name as Maggie Yates. A reader
+following the citation to check the archive found a different surname and nothing to account for
+it.
+
+Yelton is right. Two later Herald reports, of 11 September 2025 and 17 February 2026, give "Chief
+of Staff Maggie Yelton", both read directly from the pages rather than from the archive's own
+summary of them. The April report appears to have crossed her with Senator Caroline Yates, who is a
+different person and separately recorded here. So the fact stands and the citation was the problem:
+the entry now records that the cited issue printed Yates and that the later reports give Yelton,
+which is how this archive already handles the plaque. Rescued, not cut, and the name was not
+quietly changed in either direction.
+
+## Judged and left alone
+
+Two same-meeting overlaps were read and deliberately not merged. Bill 40-23-S has its own entry for
+21 March 2023 and is also named in the round-up entry for that meeting; Jenkins's reappointment
+appears both inside the 22 April 2025 round-up and as its own entry, the latter carrying the
+unanimous confirmation from a second source. Both are the pattern CLAUDE.md protects — same-day
+business is genuinely several events — and combining either would lose a sourced fact to tidiness.
+They are noted here so a later pass does not rediscover them as defects.
+
+`check_duplicates.py` reports the same four title pairs and one same-source pair as it does on
+`main`: the designated driver cards four months apart, the regent advisory bill and its failure,
+the Civil Liberties Union suit and its endorsement, the two stages of the plus/minus grading fight,
+and two items of different business from one 2026 article. Read again, judged again, none to merge.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling, and
+a search index of 4949 records. Every figure unchanged: this pass adds no fact, it makes one
+citation honest. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. The
+"withdrew 1 photograph" line is the barred-photo guard on `1991-92-stacy-kitchens.jpg` working as
+designed.
+
+## Still open
+
+The 1980s spring-election dating cluster, a fifth night unchanged. It remains the research
+routine's job and is not to be corrected piecemeal.
+
+`wkuherald.com` refuses plain `curl` with a LiteSpeed 403 but serves a full browser User-Agent
+without complaint, and the fetch tool reaches it either way. That is worth knowing: a run that
+concludes the site is blocked has tested it wrong. The `digitalcommons.wku.edu` `viewcontent.cgi`
+wall is unchanged, but the local index answered every question asked of it this pass without a
+single request to TopSCHOLAR.
