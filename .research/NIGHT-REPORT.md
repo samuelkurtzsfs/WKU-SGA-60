@@ -34999,3 +34999,100 @@ longer holds, as it has every pass until that file is dealt with.
 ## Still open
 
 The 1980s spring-election dating cluster described above, for the research routine. Nothing else.
+
+---
+
+# 28 September 2026 — the editor's pass on an empty queue
+
+No pull request was open. The research branches carry nothing main does not already have:
+`research-photos` is content-identical to `main` after #627, and `research-profiles`,
+`research-senate` and the three `research-roster-*` branches are the August snapshots with no merge
+base, which would delete the Herald index, the contributor layer and the validators if merged. They
+are not rescuable and they are not pull requests, so there is nothing to close. The three stale
+pull requests named in the standing instructions — #6, #7 and #8 — were closed long ago; the
+numbering now runs past 627.
+
+So the pass went where the risk actually is. The last two merges reached the live site without a
+second reader: #626 refiled an endorsement and added four second sources, and #627 was
+documentation only. #626 is the one that changed what the site says, so it got the spot check.
+
+## Verified
+
+Thirteen claims from #626 and its neighbours, every one opened at its cited landing page on
+TopSCHOLAR. Twelve held exactly as written.
+
+| Claim | Source checked | Result |
+| --- | --- | --- |
+| 95 students voted in the freshman primary | Herald 54:9, 21 Sep 1978 | "95 Vote in Freshman Primary" — holds |
+| Field of three named a week before the primary | Herald 55:51, 10 Apr 1980 | names Fuller, Rue and Irons outright — holds |
+| Fuller and Irons won the primary | Herald 55:53, 17 Apr 1980 | holds |
+| The candidates' spending-limit bill was beaten | Herald 55:53, 17 Apr 1980 | fact holds, **attributed to the wrong issue** — corrected below |
+| ASG endorsed William Natcher | Herald 57:51, 1 Apr 1982 | holds |
+| The same issue previewed the primary as Tuesday's | Herald 57:51, 1 Apr 1982 | holds |
+| The paper editorialized against endorsing, next issue | Herald 57:52, 6 Apr 1982 | "Endorsing is Not Wise for Associated Student Government" — holds |
+| Marsupial Awards went to both ASG and the Herald | Herald 57:58, 27 Apr 1982 | holds, and Robert Carter is the author of record |
+| Baker's letter calling ASG a joke, same issue | Herald 57:58, 27 Apr 1982 | holds |
+| Baker profiled as fighting the system inside ASG | Herald 56:37, 10 Feb 1981 | holds |
+| SGA asked for longer visitation | Herald 71:47, 14 Mar 1996 | holds; the trim #626 made to this entry was the right one |
+| Dresden Wall's Oozeball piece | Herald 64:48, 4 Apr 1989 | holds |
+| The presidential field to be shaved by two | Herald 64:48, 4 Apr 1989 | holds |
+
+Every volume-and-number label was checked against the record its URL actually opens. All nine
+distinct issues matched. That is the check that catches a citation whose label and link have drifted
+apart, and none had.
+
+## Corrected
+
+**One sentence pointing at the wrong issue, 1980-04-17.** The entry read: Fuller and Irons won the
+primary; "A week earlier the Herald had named the whole field of three"; then "The same issue
+reported that a bill to raise the spending limit for candidates had been beaten." The only issue
+"the same issue" can name there is the 10 April one just mentioned. The spending-limit story is not
+in it — the 10 April index runs to 26 items and carries no such line. It is in the 17 April issue,
+which the entry already cites as its first source: "Bill to Raise Spending for Candidates Beaten",
+Herald 55:53.
+
+So the fact is true and was already sourced correctly; only the prose sent the reader to the wrong
+place. The entry now names both issues by date instead of leaning on "the same issue" and "a week
+earlier", and nothing sourced was lost. This is the #621 lesson exactly — a relative reference
+survives the edit that moves what it points at — and it arrived in the same pull request whose own
+report had applied that lesson to the 1 April 1982 body two entries away.
+
+**The class is not systemic.** 178 entries use "the same issue" or a variant; only five of those
+also carry a second source, which is the only way the phrase can go wrong. Four of the five name
+their issue explicitly a clause earlier — the 1974 Ervin lecture, the 1982 Marsupial Awards, the
+1982 Natcher endorsement and the 1989 Oozeball entry — and all four were read and are sound. The
+1980 entry was the one bad one, and it is fixed.
+
+## Cut
+
+Nothing. The one defect was a misdirection, not an over-claim, and rewriting it cost the archive no
+fact.
+
+## The settled facts hold
+
+Checked against the data rather than assumed: Norfleet 1981-82; Zielke 1969-70 and Lyne alone in
+1970-71; Payne 1981-82 with Ragan 1982-83; Fiorella and McKinney as regents; Menser with the seat
+from April 1968; Reed Morgan in neither office; the Lodmells two people; the LaCivita portrait on
+file. This pass changed one sentence of one body and touched no leader, no year and no date.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people recorded under more than one
+spelling, and a search index of 4949 records. Every figure unchanged: nothing was added or removed.
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` reports
+the same four title pairs and one same-source pair it has reported for days — the designated driver
+cards, the student regent advisory committee bill and its failure, the Civil Liberties Union suit
+and its endorsement, the two stages of the plus/minus grading fight, and the two 2026-27 entries
+sharing one wkuherald article. All were judged before, none is introduced here, and none is to be
+merged. The build's "withdrew 1 photograph" line is the barred-photo guard on
+`1991-92-stacy-kitchens.jpg` working as designed.
+
+## Still open
+
+The 1980s spring-election dating cluster, unchanged from last night's report: the spring 1982
+entries are dated to the Thursday the *Herald* printed them rather than the day students voted, and
+they should move as a set or not at all. That is the research routine's job, not a correction to
+make piecemeal.
