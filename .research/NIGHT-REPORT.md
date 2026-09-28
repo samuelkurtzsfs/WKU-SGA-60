@@ -35329,3 +35329,93 @@ the stamp, the authors and sponsors, and the full purpose text. Every 1990s entr
 the document was richer in the document than in the entry. That is the cheapest unworked source in
 the repository: it needs no network, no crawl budget, and it cannot be rate-limited. Trap 2a's
 warning stands — render the page before believing a blank Pass line, as 94-9-F proves again.
+
+# 28 September 2026 — the editor's afternoon pass: a live page that named three, written up as naming five
+
+One pull request open, #631, "Research: photographs (rolling)", on `research-photos`. The three
+branches that sat stale since 4 August — #6, #7 and #8 — are closed and no longer open business;
+#631 is the successor to #6 and is cut from current `main`, with a real merge base, so none of the
+orphan-history warning applies to it.
+
+## What the branch carried
+
+Two files and 112 added lines: a run report in `.research/` and one entry appended to
+`data/photo-finds/_archive-gaps.json`. No `years.json`, no `photos.json`, no image files, no
+events. `_archive-gaps.json` is not read by `build.py` — only `_do-not-use.json` is — so nothing
+in this diff reaches the published site. Rebuilding on the branch reproduced `site/` byte for
+byte against `main`. The risk here was never to the site; it was that a wrong note in the research
+log sends the next photograph run down a road that does not exist.
+
+## Verified
+
+Thirteen claims opened and checked, ten of them against the live sources rather than the branch's
+own account:
+
+- All 73 `leaders` records carry a portrait, and none is missing — counted from `years.json`
+  against `photos.json` directly.
+- All 61 years carry at least one photograph, and exactly four — 1994-95, 1995-96, 2000-01,
+  2008-09 — lack a dedicated year-scene photograph. The branch names the same four.
+- Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley each resolve to a portrait.
+- `merge_photo_finds.py` reports 0 to add, 0 to replace, 18 refused — the branch's figures exactly.
+- `web.archive.org` is refused at the network layer from this container, while `archive.org`'s own
+  item store answers 200. That is the split the branch describes, and it holds.
+- `digitalcommons.wku.edu/dlsc_ua_records/6721` serves its landing page, and the article id behind
+  it really is 7724, as the branch resolved. `viewcontent.cgi` for that article answers 403.
+- The *Herald* gallery of 20 April 2022 exists under the cited title, and its single photo caption
+  names Sam Kurtz and Cole Bornefeld and nobody else. Caleb Collins appears once, in a plain
+  running-text list of senators-at-large, with no image attached — which is what the branch says.
+- The 2025-26 executive headshot path serves Hannah Hash and Sophie Stirling at the stated
+  address. No equivalent path resolves for any earlier year: every 2024-25 and 2023-24 name tried
+  returned nothing.
+- `senate_committees.php` carries no portrait anywhere on it.
+
+## Cut
+
+One over-claim, trimmed rather than deleted. The branch wrote that the live Senate Committees page
+"names all of them as committee chairs or vice chairs", of five 2025-26 senators. It names three:
+Tyreesha Morris as a committee chair, Carter Smith and Miles Harvey as vice chairs. Nolan Rongey
+and Zoe Martin are not on that page at all — not their names, not their surnames. The negative
+finding the branch drew is untouched and if anything stronger for those two, but an unsourced
+roster claim about who chairs what is the beginning of the error that has cost this project most,
+and it does not go into the research log uncorrected. Both copies fixed, in the markdown report
+and in the `_archive-gaps.json` entry.
+
+Also corrected: the report gave the page's path as `senate/legislative/senate_committees.php`,
+which 404s; the working path, and the one its own `src` cites, is `legislative/senate_committees.php`.
+And "every one 404s", of the older executive pages, is now "serves no headshot, answering 404 or
+403" — 2024-25 answers 403, not 404, and the distinction is the sort a later run would waste time
+on. The substance, that no prior-year headshot is recoverable, I confirmed myself.
+
+## The settled facts hold
+
+Nothing in the diff touches a leader, a year, a date or an office, so there was nothing to
+re-litigate. Checked anyway that the four named presidents carry the roles section 7 gives them.
+No contributor commit in this diff; every commit on the branch is authored `SGA 60`, and neither
+new file carries tool attribution.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling, and
+a search index of 4949 records. Every figure unchanged from last pass: this merge adds no fact to
+the archive, it corrects the log that guides the next search.
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` reports
+the same four title pairs and one same-source pair as it does on `main`, none introduced here. Read
+again and judged again: an introduced bill and its failure after amendment, a planned lawsuit and a
+later endorsement of it, a stand against plus/minus grading and the legislation passed three weeks
+after it, designated driver cards three months apart, and two items of business from one meeting.
+Five genuine pairs of events, none to be merged.
+
+## Still open
+
+The 1980s spring-election dating cluster, a fourth night unchanged.
+
+The photograph routine is now searching against two closed doors. `web.archive.org` is blocked
+from this container and `digitalcommons.wku.edu` refuses `viewcontent.cgi` to every header
+combination tried, which between them is every route to a Herald or Talisman page image. Both
+priorities that matter are already complete — every leader has a portrait — so nothing is being
+lost while this holds, but the run is spending its budget confirming the walls are still up. The
+unworked seam named in the midday pass is the better use of it: `data/legislation/` mirrors 1111
+PDFs that read cleanly with PyMuPDF, need no network, and cannot be rate-limited.
