@@ -35952,3 +35952,91 @@ and is not to be corrected piecemeal.
 Nothing has reached the research queue for three passes. The photograph routine's last two runs
 added nothing, and the decade routines are not running at all. That is worth someone knowing: the
 editor's pass is finding its own work now, and there is a limit to how long that lasts.
+
+---
+
+# 29 September 2026, fourth pass — a negative result, verified as strictly as a positive one
+
+## What was open
+
+One pull request, #639, "Research: photographs, 29 September (second pass) — new mirror hosts
+closed", on `research-photos`. The three pull requests the standing instructions still call stale,
+#6, #7 and #8, remain closed; the numbering is past 639 and there is nothing there to rescue or
+shut.
+
+## What #639 actually contained
+
+Nothing that reaches the site. Against `origin/main` the branch carried two files, and one of them
+— `.research/photo-run-2026-09-29.md` — was already on main byte for byte from this morning's pass,
+so the real delta was a single new research log. `build.py` reads two JSON bookkeeping files out of
+`.research/` and none of the markdown, so no word of this pull request is published. That lowers
+the stakes; it does not lower the standard, because a log that misstates the queue sends the next
+run down the wrong road.
+
+## The claims, and how each was checked
+
+The log makes no historical claim — no person, no date, no election, no office. What it asserts is
+the state of the repository and the state of four archive routes, so that is what was tested, ten
+claims in all, none taken on trust:
+
+Against the data: all 73 leader records carry a portrait — confirmed, zero without. 61 years —
+confirmed. Exactly four years carry no dedicated scene photograph, and the log names them; the data
+gives 1994-95, 1995-96, 2000-01 and 2008-09, the same four.
+
+Against the network, one request at a time and three seconds apart: `viewcontent.cgi` on article
+7724 returned 403 behind Cloudflare's "Just a moment..." page; `web.archive.org` reset the
+connection before the exchange completed; `core.ac.uk` redirected and then returned 403;
+`base-search.net` returned 200 carrying a proof-of-work bot challenge rather than results, and the
+log's identification of it as an Anubis challenge is right down to the vendor path in the markup;
+`catalog.hathitrust.org` returned 403 behind the same Cloudflare challenge; `archive.org`'s
+search API and `wkuherald.com`'s returned 200. Every one of the ten reproduced exactly as written.
+A run that spends its window proving three doors are shut and says so plainly is worth more than
+one that reports motion.
+
+## What was cut
+
+Nothing was cut, because nothing was over-claimed. One thing was corrected. The log's closing
+paragraph enumerated the standing queue and called it "the entire remaining queue", but listed
+seven of the nine open items: it dropped `dlsc_ua_records/6645` and `6644`, the two spring-2007
+election issues that are the only located photograph opportunity for Brian Fisher, Drew Eclov,
+Emilee England, Jessica VanWinkle, Cacy A. Schooler and Jacob Miers. A handoff note that quietly
+loses two live leads is how leads die, so the paragraph was rewritten to the full nine, against the
+queue file itself, and left with a line saying what it had said before.
+
+## The duplicate pairs
+
+The same four title pairs and one same-source pair as every night this week. This branch changes no
+data at all — after merging main, its diff is one markdown file — so all five are pre-existing and
+none is this pull request's. Read again: the designated driver cards four months apart, the regent
+advisory bill and the vote that killed it, the Civil Liberties Union suit and the endorsement a
+month later, the plus/minus grading fight at debate and at passage, and two items of different
+business out of one 2026 article. Separate events, every one. None merged.
+
+## The decision
+
+Merged. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, every spot-checked
+claim held, and nothing in the diff trips the traps checklist — there is no advance notice in it,
+no officer inferred from a committee chair, no surname match, no April result filed into the wrong
+year, and nothing about a living person beyond names already standing in the queue file.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling, and
+a search index of 4949 records. Unchanged, as expected of a pass that adds no fact. The "withdrew 1
+photograph" line remains the barred-photo guard on `1991-92-stacy-kitchens.jpg` working as designed.
+
+## Still open
+
+The photograph queue is nine items and every one of them sits behind `viewcontent.cgi` or
+`web.archive.org`, both shut again tonight. Three mirror hosts have now been tried and closed, so
+that route is exhausted rather than unexplored; the honest position is that this queue is blocked,
+not merely unfinished, and it will stay blocked until one of those two doors reopens.
+
+The 1980s spring-election dating cluster is unchanged, a seventh night. It is the research
+routine's job.
+
+And the thing worth someone knowing, said for the second night: the decade routines are not
+running. The photograph routine's last three passes have added no photograph, correctly, because
+there is nothing reachable left for it to add. The editor's passes are finding their own work.

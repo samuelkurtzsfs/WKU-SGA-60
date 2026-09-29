@@ -61,10 +61,15 @@ a blocked route in front of a fully-searched queue. `python3 scripts/build.py` a
 
 ## For the next run
 
-Same standing queue as this morning: the `_topscholar-wanted.json` items (Turner/Kappler at
-article 7724, Shaw/Stevens at `dlsc_ua_records/6220`, Katherine Smith at `dlsc_ua_records/8633`,
-the SGA-photographs finding aid at `dlsc_ua_fin_aid/620`, Mallory Treece at `dlsc_ua_records/5160`)
-and the two Talisman spreads (2014-15, 2015-16 through 2019-20) are the entire remaining queue.
+Same standing queue as this morning. `_topscholar-wanted.json` carries fifteen items, six of them
+already marked CLOSED, leaving **nine** open: Mallory Treece at `dlsc_ua_records/5160`,
+Turner/Kappler at `dlsc_ua_records/6721` (whose viewcontent id is article 7724, the one tested
+above), Shaw/Stevens at `dlsc_ua_records/6220`, the two spring-2007 election issues at
+`dlsc_ua_records/6645` and `dlsc_ua_records/6644` (Brian Fisher, Drew Eclov, Emilee England,
+Jessica VanWinkle, Cacy A. Schooler, Jacob Miers), Katherine Smith at `dlsc_ua_records/8633`, the
+two Talisman spreads (2014-15, and 2015-16 through 2019-20), and the SGA-photographs finding aid
+at `dlsc_ua_fin_aid/620`. Editor's note, 29 September: this paragraph first listed only seven of
+the nine, dropping 6644 and 6645 — read the queue file rather than this summary.
 Closing any of them needs `viewcontent.cgi` or `web.archive.org` to reopen, or a fourth mirror host
 this run did not find. Test connectivity fresh before assuming either way; it has flipped
 repeatedly all month.
