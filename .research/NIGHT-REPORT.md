@@ -1,3 +1,94 @@
+# 29 September 2026 (editor, fourth pass) — one photograph run reviewed and merged, two citations trimmed
+
+## What was open
+
+One pull request: **#641, "Research: photographs (rolling)"**, the standing photograph PR that
+replaced #6 after that one was closed unmerged. The token answered the API and the push went
+through, so this was a full pass with the power to merge.
+
+The standing brief again names #6, #7 and #8 as stale since 4 August. All three have been closed
+unmerged since 18 August, which is now the fourth consecutive entry here to record it. Nothing on
+those branches needed rescuing or closing tonight.
+
+## What the diff contained
+
+One file, `.research/photo-run-2026-09-29-third.md`, and no data at all: no events, no leaders, no
+years, no photographs. The run added nothing because both routes to the nine-item photograph queue
+are still shut. So most of the traps checklist had nothing to catch — no advance notice, no
+committee chair written up as an officer, no surname match, no April result filed to the wrong
+academic year, no contributor edit, nothing touching a living person or the settled facts. What
+there was to check was the report's own claims, and those were checked rather than trusted.
+
+## What held
+
+The baseline was re-derived from `data/years.json` and `data/photos.json` rather than read off the
+note, and holds exactly: 73 leader records, every one carrying a portrait, Nick Todd, Katie Dawson,
+Jeanne Johnson and Reagan Gilley among them; 61 years, every one carrying at least one photograph;
+and precisely the four years the report names — 1994-95, 1995-96, 2000-01 and 2008-09 — with only a
+leader portrait and no year-scene photograph.
+
+Both access findings were retested independently and both stand. `web.archive.org` resets after
+about eleven seconds for `curl` and for `python3 urllib.request` alike, with the proxy's own failure
+log naming the host. On `digitalcommons.wku.edu` the landing page for item 6721 returns 200 while
+`viewcontent.cgi` for article 7724 returns 403 behind a Cloudflare interstitial — the split the
+report describes, confirmed to the letter.
+
+## What was cut
+
+Three things, none of them about the history, all of them the kind of over-claim that the next run
+would have inherited as settled.
+
+The officer figure read 176; the data gives 174 unique named executive and Senate officers without a
+portrait, at this branch's merge base and at current `main` alike, so it was not drift from main
+moving. Restated.
+
+Two citations claimed more than their sources support. The proxy README does not describe a tunnel
+cut mid-exchange as the signature of a network-policy denial: it assigns those to a clean 403 or
+407, and describes a bare mid-transfer reset only as the relay aborting a tunnel it had already
+opened. That places the cut on this side of the tunnel rather than at Internet Archive, which is
+worth knowing, but it does not name the cause. And the environment documentation page answers
+whichever situation its caller names, so having asked it about a blocked host, the run got back the
+standing guidance for a policy denial and read it as confirmation of one. It is not. Both passages
+were rewritten to claim that much and no more, and the heading, which carried the un-evidenced
+version of the same conclusion, with them.
+
+The run's own recommendation survives untouched and is still worth acting on: checking the
+environment's Network access setting either opens the route or rules the theory out cleanly. The
+only change is that the route is now recorded as not yet diagnosed instead of diagnosed. The report
+was right to raise the strongest fact against its own theory — that the same host was fetching
+3-25 MB items cleanly as recently as 25-28 September, which a static policy denial would not explain
+— and that paragraph was left exactly as written.
+
+## Checks
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. `check_duplicates.py` reports four
+title pairs and one same-source pair, every one of them pre-existing on `main` and none introduced
+by this diff, which adds no events. Judged rather than waved through: the 1991-92 regent advisory
+committee bill introduced on 28 January and failing after amendment on 6 February, the 1971-72 civil
+liberties pair a month apart, the 2003-04 plus/minus grading position and then its formal passage,
+and the 1997-98 driver cards three months apart are each genuinely two events. The 2026-27 pair
+reports different business out of one Herald article and stays two entries. Nothing to combine. The
+"withdrew 1 photograph" line in the build output is likewise pre-existing: a clean `main` build
+prints it too.
+
+Current counts, from the build on the merged tree: **61 years, 1,968 events, 60 people have been
+president**; 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an
+account of what the person did; 1,111 pieces of legislation, every file present and a real PDF;
+1,302 citations naming a volume and number, each opening that issue; 308 documents; 48 people
+recorded under more than one spelling or name.
+
+## Still open
+
+Nothing. #641 is merged at `e7340cc4` and no pull request is open on the repository.
+
+The photograph queue is unchanged and unblocked by anything this pass could do: `dlsc_ua_records`
+5160, 6721, 6220, 8633, 6645 and 6644, the 2014-15 and 2015-16-through-2019-20 Talisman spreads, and
+the SGA photographs finding aid at `dlsc_ua_fin_aid/620`. Every name behind them has been searched
+against every reachable source; what is missing is a route, not a lead. The one action that might
+open half of it sits outside the repository, in the cloud environment's Network access setting.
+
+---
+
 # 29 September 2026 (editor, third pass) — an empty queue, and a dating fault found underneath it
 
 ## What was open
