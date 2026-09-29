@@ -1,3 +1,93 @@
+# 29 September 2026 (editor, third pass) — an empty queue, and a dating fault found underneath it
+
+## What was open
+
+Nothing. `mcp__github__list_pull_requests` returned an empty list and the REST API agreed: zero open
+pull requests on the repository. The token answered the API and `git push --dry-run` reported write
+access, so this was a full pass with the power to merge, and there was nothing to merge.
+
+The standing brief still names #6, #7 and #8 as stale since 4 August. They have been closed since
+18 August, as the last three entries here have each recorded. That paragraph has now been wrong for
+six weeks.
+
+Every `research-*` and `editor-*` branch on the remote was checked for unlanded work, not assumed
+clean: 31 branches sit ahead of `main` by a commit or more, and all 31 are post-squash-merge tips
+whose content is already on `main` — each diffs against `main` as a pure deletion, or carries only
+the pre-correction text of a line `main` has since fixed. Nothing has been left behind by a routine
+that pushed and failed to open a pull request, which is the failure this check exists for.
+
+## What the pass did instead
+
+With no diff to police, the pass audited what is already published. `check_data.py` now machine-checks
+all 1,302 volume-and-number citations, so the gap a reader can still fall into is a body that does not
+say what its source says. Ten events drawn at random from the 582 sourced to `wkuherald.com` were read
+back against the article, plus the three citations corrected in #638 earlier today.
+
+The #638 correction holds. `dlsc_ua_records/6757` is catalogued "College Heights Herald, Vol. 85,
+No. 39", so 84:41 was wrong and 85:39 is right, and the record's own article list carries "Candidates
+Face Off for Student Government Association Offices – Colton Jessie, Justin Thurman", which is the
+coverage the three labels claim.
+
+Of the ten sampled entries, eight hold exactly. Two are worth naming as good practice rather than
+error: the 1998 designated-driver entry states in its own body that the archive holds only a contents
+listing and refuses to say how distribution went, which is the advance-notice trap correctly declined;
+and the 2025 Pearce Ford Tower entry follows the Herald's published correction — 29 of more than 600
+residents relocating — rather than the erroneous sentence the paper first printed and then retracted.
+
+## What was cut, and what was corrected
+
+Nothing was cut. One fault was found and fixed, and it is systematic.
+
+SGA meets on Tuesday. The 2016-17 entry for the senate seat left vacant all summer was dated
+21 September 2016, and its article says the meeting was "on Tuesday, Sept. 20". Pulling that thread
+found seven more of the same shape: meeting business dated to the day the Herald printed the story
+rather than the day the senate sat, always exactly one day late. All eight are now corrected, each
+against the wording of its own article:
+
+  2011-09-21 -> 2011-09-20   faculty regent term limits
+  2012-05-02 -> 2012-05-01   transgender resolution, 18-5
+  2016-09-07 -> 2016-09-06   first disability scholarships
+  2016-09-21 -> 2016-09-20   the seat left vacant all summer
+  2016-10-12 -> 2016-10-11   the SAVES committee
+  2016-10-26 -> 2016-10-25   the 2.0 GPA bill and housing diversity
+  2017-10-25 -> 2017-10-24   the clean D.R.E.A.M. Act resolution, failed 12-17
+  2018-03-28 -> 2018-03-27   the Lavender Recognition Ceremony vote
+
+Only entries whose article states in its own words when the senate sat were moved. Two candidates
+were deliberately left alone, and they are the reason this cannot be swept by rule. The two SGA
+members who resigned in October 2016 stay on Wednesday 12 October, because that article says they
+resigned on a Wednesday morning and it is right. The first bill of 2020-21, dated Wednesday
+28 October 2020, was left because its article never names the day and the senate was meeting over
+Zoom that autumn, so the Tuesday assumption is not safe.
+
+## What is still open
+
+The fault is wider than the eight. Across the archive 166 events sourced to `wkuherald.com` fall on a
+Wednesday against 231 on a Tuesday, and 2016-17 alone runs 16 to 4 — a distribution that has no
+innocent explanation for an organisation that meets on Tuesday. Every one of those 166 is a candidate.
+They are not corrected here because a date is only worth moving when the article states it, and
+reading 166 articles at a polite pace is a pass of its own. That is the next piece of work, and it
+belongs to whichever routine takes the 2010s: read the article, move the date only when the article
+says the day, and leave the ones that genuinely fell on another day.
+
+The five pairs `check_duplicates.py` reports are the same five, read again and judged again as
+separate business: a bill adopted in November 1997 and its cards distributed the following February;
+a bill introduced and the same bill failing nine days later; a lawsuit planned and then endorsed a
+month later; a position taken in September 2003 and the vote in October; and three items of distinct
+business from one meeting write-up in September 2026. Correcting the SAVES date incidentally pulled
+it off 12 October, where it had been sharing a day with the resignations it has nothing to do with.
+
+## The numbers
+
+61 years, 1,968 events, 60 people have been president, 1,111 pieces of legislation with every file
+present and a real PDF, 1,302 volume-and-number citations each opening the issue it names, 308
+documents, 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an
+account of what the person did, 48 people under more than one spelling, and a search index of 4,949
+records. The event count is unchanged: this pass moved eight dates and added and removed nothing.
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+
+---
+
 # 29 September 2026 (editor, second pass) — a photograph run that added nothing, checked as though it had
 
 ## What was open
