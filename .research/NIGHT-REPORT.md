@@ -1,3 +1,94 @@
+# 29 September 2026 (editor, fourth pass) — one photograph run reviewed and merged, two citations trimmed
+
+## What was open
+
+One pull request: **#641, "Research: photographs (rolling)"**, the standing photograph PR that
+replaced #6 after that one was closed unmerged. The token answered the API and the push went
+through, so this was a full pass with the power to merge.
+
+The standing brief again names #6, #7 and #8 as stale since 4 August. All three have been closed
+unmerged since 18 August, which is now the fourth consecutive entry here to record it. Nothing on
+those branches needed rescuing or closing tonight.
+
+## What the diff contained
+
+One file, `.research/photo-run-2026-09-29-third.md`, and no data at all: no events, no leaders, no
+years, no photographs. The run added nothing because both routes to the nine-item photograph queue
+are still shut. So most of the traps checklist had nothing to catch — no advance notice, no
+committee chair written up as an officer, no surname match, no April result filed to the wrong
+academic year, no contributor edit, nothing touching a living person or the settled facts. What
+there was to check was the report's own claims, and those were checked rather than trusted.
+
+## What held
+
+The baseline was re-derived from `data/years.json` and `data/photos.json` rather than read off the
+note, and holds exactly: 73 leader records, every one carrying a portrait, Nick Todd, Katie Dawson,
+Jeanne Johnson and Reagan Gilley among them; 61 years, every one carrying at least one photograph;
+and precisely the four years the report names — 1994-95, 1995-96, 2000-01 and 2008-09 — with only a
+leader portrait and no year-scene photograph.
+
+Both access findings were retested independently and both stand. `web.archive.org` resets after
+about eleven seconds for `curl` and for `python3 urllib.request` alike, with the proxy's own failure
+log naming the host. On `digitalcommons.wku.edu` the landing page for item 6721 returns 200 while
+`viewcontent.cgi` for article 7724 returns 403 behind a Cloudflare interstitial — the split the
+report describes, confirmed to the letter.
+
+## What was cut
+
+Three things, none of them about the history, all of them the kind of over-claim that the next run
+would have inherited as settled.
+
+The officer figure read 176; the data gives 174 unique named executive and Senate officers without a
+portrait, at this branch's merge base and at current `main` alike, so it was not drift from main
+moving. Restated.
+
+Two citations claimed more than their sources support. The proxy README does not describe a tunnel
+cut mid-exchange as the signature of a network-policy denial: it assigns those to a clean 403 or
+407, and describes a bare mid-transfer reset only as the relay aborting a tunnel it had already
+opened. That places the cut on this side of the tunnel rather than at Internet Archive, which is
+worth knowing, but it does not name the cause. And the environment documentation page answers
+whichever situation its caller names, so having asked it about a blocked host, the run got back the
+standing guidance for a policy denial and read it as confirmation of one. It is not. Both passages
+were rewritten to claim that much and no more, and the heading, which carried the un-evidenced
+version of the same conclusion, with them.
+
+The run's own recommendation survives untouched and is still worth acting on: checking the
+environment's Network access setting either opens the route or rules the theory out cleanly. The
+only change is that the route is now recorded as not yet diagnosed instead of diagnosed. The report
+was right to raise the strongest fact against its own theory — that the same host was fetching
+3-25 MB items cleanly as recently as 25-28 September, which a static policy denial would not explain
+— and that paragraph was left exactly as written.
+
+## Checks
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. `check_duplicates.py` reports four
+title pairs and one same-source pair, every one of them pre-existing on `main` and none introduced
+by this diff, which adds no events. Judged rather than waved through: the 1991-92 regent advisory
+committee bill introduced on 28 January and failing after amendment on 6 February, the 1971-72 civil
+liberties pair a month apart, the 2003-04 plus/minus grading position and then its formal passage,
+and the 1997-98 driver cards three months apart are each genuinely two events. The 2026-27 pair
+reports different business out of one Herald article and stays two entries. Nothing to combine. The
+"withdrew 1 photograph" line in the build output is likewise pre-existing: a clean `main` build
+prints it too.
+
+Current counts, from the build on the merged tree: **61 years, 1,968 events, 60 people have been
+president**; 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an
+account of what the person did; 1,111 pieces of legislation, every file present and a real PDF;
+1,302 citations naming a volume and number, each opening that issue; 308 documents; 48 people
+recorded under more than one spelling or name.
+
+## Still open
+
+Nothing. #641 is merged at `e7340cc4` and no pull request is open on the repository.
+
+The photograph queue is unchanged and unblocked by anything this pass could do: `dlsc_ua_records`
+5160, 6721, 6220, 8633, 6645 and 6644, the 2014-15 and 2015-16-through-2019-20 Talisman spreads, and
+the SGA photographs finding aid at `dlsc_ua_fin_aid/620`. Every name behind them has been searched
+against every reachable source; what is missing is a route, not a lead. The one action that might
+open half of it sits outside the repository, in the cloud environment's Network access setting.
+
+---
+
 # 29 September 2026 (editor, third pass) — an empty queue, and a dating fault found underneath it
 
 ## What was open
@@ -36130,3 +36221,112 @@ routine's job.
 And the thing worth someone knowing, said for the second night: the decade routines are not
 running. The photograph routine's last three passes have added no photograph, correctly, because
 there is nothing reachable left for it to add. The editor's passes are finding their own work.
+
+---
+
+# 29 September 2026 (editor, fifth pass) — the Wednesday cluster worked through, eighty dates moved to the day the senate sat
+
+## What was open
+
+Nothing. `list_pull_requests` returned an empty list and the REST API agreed. `git push --dry-run`
+reported write access, so this was a full pass with the power to merge and nothing to merge.
+
+The standing brief still names #6, #7 and #8 as stale and open since 4 August. They closed
+unmerged on 18 August 2026, and this is the twenty-fourth consecutive pass to record that the
+paragraph is wrong.
+
+Every `research-*` branch was checked for work a routine pushed without opening a pull request.
+Sixty-nine sit ahead of `main` by a commit or more and every one is a post-squash-merge tip whose
+content is already published: `research-photos`, the only branch touched today, diffs against
+`main` as a pure deletion of ninety-one lines of this file, which is to say it is behind, not
+ahead. Nothing has been left behind.
+
+## What the pass did instead
+
+It took the work the third pass named and left: the Wednesday cluster. That pass corrected eight
+meeting dates that sat one day late, established that the fault is systematic, and counted 166
+further candidates — events sourced to `wkuherald.com` and dated to a Wednesday, for an
+organisation that meets on Tuesday. It left them because a date is only worth moving when the
+article states the day, and reading them all is a pass of its own. It assigned the job to
+whichever routine took the 2010s. The decade routines are not running, so the editor took it.
+
+All 158 remaining Wednesday-dated entries were enumerated — 166 less the eight already fixed, which
+is the arithmetic check that the set is the same one. Each article was fetched, one request at a
+time and two seconds apart, and read for a statement of when the business actually happened. 155
+came back 200; the three that did not are the two 2009-10 entries citing `web.archive.org`, which
+this container's network policy still refuses, and one 2022-23 page.
+
+## What was corrected
+
+**Eighty dates moved back one day.** Every one of the eighty lands on a Tuesday, which is the
+strongest check available that the correction is the right one and not an off-by-one applied
+blindly. Each was moved only on the article's own words — "passed Tuesday night at the SGA's
+regular weekly meeting", "met on Tuesday, Sept. 28", "held its second meeting of the year on
+Tuesday, Sept. 6" — and the words are recorded against each entry in the pass notes.
+
+Sixty-two came from the plain reading. Eighteen more were found only by looking again at entries
+the first reading had cleared, because a sentence announcing the *next* meeting outranked the
+sentence dating this one: 2016-03-02, 2017-04-12 and 2021-03-03 each state the Tuesday plainly and
+were nearly missed that way. The eighteen also include five that are not senate meetings at all —
+the 2012 and 2018 Frankfort rallies, the 2012 swearing-in banquet, the 2016 Frankfort lobbying trip
+and Richey's 2015 budget posting — all reported on the Tuesday and filed on the Thursday print day.
+
+## What was deliberately left alone
+
+This is the part that cannot be swept by rule, and three entries prove it.
+
+The two SGA members who resigned in October 2016 stay on Wednesday 12 October. The article names a
+Tuesday meeting in its fourth paragraph, which is what an automated check sees, but it says in its
+second that the two resigned Wednesday morning. The third pass left this entry for that reason and
+it was right; it was read again from the page and left again.
+
+The 2017 Safe Ride service cut stays on 8 February. Its article reports the decision as a fact and
+never says when SGA took it; a Tuesday meeting is mentioned only for an unrelated confirmation.
+
+The senate's 17-15 vote to cancel a meeting stays on 2 October 2019. The only Tuesday its article
+names is 8 October, the meeting being cancelled.
+
+Beyond those three, 75 Wednesday-dated entries were read and left because no article states a day —
+among them six whose only day reference is the following week's meeting, and four that name
+Wednesday and mean it: Ransdell's 2015 email to faculty, the 2017 election closing after midnight,
+the 2018 Campus Safety Panel and the 2024 censure meeting that removed three senators. A further
+entry, Ransdell's October 2011 visit to SGA, says "tonight" and never names the weekday; inference
+would have moved it and inference is not evidence, so it stands.
+
+## The duplicate pairs
+
+`check_duplicates.py` output is byte-identical to `main`'s: the same four title pairs and the same
+single same-source pair, all judged before and none introduced here. The two 2016-03-23 entries
+both moved to 22 March and now share a date, correctly — they are the Judicial Council's election
+codes and the chief of staff's report, distinct business from one meeting, and they cite different
+articles, so the same-source check does not and should not flag them.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 1302 volume-and-number citations each opening the issue it names, 308
+documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%) carrying an
+account of what the person did, 48 people under more than one spelling, and a search index of 4949
+records. The event count is unchanged: this pass moved eighty dates and added and removed nothing.
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+
+The distribution that prompted the work has inverted, which is the outcome to check it by. Events
+sourced to `wkuherald.com` ran 239 Tuesday to 158 Wednesday before this pass and run 319 to 78
+after it. The 78 are the residue: entries whose article never names a day, and entries that really
+happened on a Wednesday.
+
+## Still open
+
+The 1980s spring-election dating cluster, an eighth night. The spring 1982 entries are dated to the
+Thursday the *Herald* printed them rather than the day students voted, and they should move as a
+set or not at all. It is the same fault this pass has just cleared out of the 2010s, in a decade
+whose sources are page images rather than full text, so it needs the *Herald* back file and a
+slower read than tonight's had room for.
+
+The photograph queue is nine items and every one sits behind `viewcontent.cgi` or
+`web.archive.org`. Both were shut again tonight, from this container, on the same network policy.
+Three mirror hosts have been tried and closed. That queue is blocked, not unfinished.
+
+And the thing worth someone knowing, said for the third night: the decade routines are not
+running. Tonight's eighty corrections were work a research routine was assigned nine days ago and
+has not touched. The editor's passes are now the only thing moving.
