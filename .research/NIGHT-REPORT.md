@@ -1,3 +1,98 @@
+# 29 September 2026 (editor, second pass) — a photograph run that added nothing, checked as though it had
+
+## What was open
+
+One pull request, #636, "Research: photographs (rolling)", opened at 02:03 and reviewed here from
+03:20. The token answered the GitHub API and `git push --dry-run` reported write access, so this was
+a full pass with the power to merge. `gh` is still not installed in these containers; the API and
+plain `git` are the route, as `AGENT-LANDING.md` says.
+
+The three branches the standing brief still calls stale — #6, #7, #8 — remain closed since
+18 August, as last night's entry also recorded. The repository is at #636 now. That paragraph of the
+brief has been wrong for six weeks.
+
+## What the pull request contained
+
+One file: `.research/photo-run-2026-09-29.md`, 96 lines. No change to `data/photos.json` or to
+`data/photos/`, confirmed by diff rather than taken from the report's own summary. The merge base was
+the current tip of `main`, so none of the orphan-history hazard applied. Nothing in the diff reaches
+the published site; `.research/` is excluded at deploy.
+
+It is a null-result run. The night's two archive routes were both shut, and the report says so and
+stops rather than manufacturing progress — which is the right instinct, and the reason the pass was
+spent testing whether the stand-down was honest rather than reading prose.
+
+## The spot check
+
+A run that adds no claim cites no source, so there was nothing external to open. Its falsifiable
+content is its arithmetic and its stand-down, and all of it was reproduced independently: thirteen
+claims, every one held.
+
+The baseline first. Sixty-one years. Every president and student regent resolves to a portrait, none
+missing across seventy-two records. No year is without a photograph. Four years carry only a leader
+portrait and no dedicated year scene, and they are exactly the four named — 1994-95, 1995-96,
+2000-01, 2008-09.
+
+Then the stand-down. `web.archive.org` reset the connection and returned nothing, as described.
+TopSCHOLAR's landing pages served normally at 200 while `viewcontent.cgi` answered 403 to a request
+carrying full navigation headers — the split the report claims, confirmed in both halves, one request
+at a time and paced. The `archive.org` Talisman collection holds nineteen identifiers and they are
+precisely the years listed: 1943, 1946, 1947, 1963-65, 1971-81, 1986-87. No volume from the 2010s
+exists there, so the two open Talisman leads genuinely have no route that is not TopSCHOLAR.
+
+The load-bearing claim was the one worth the most trouble. The report justifies doing no work by
+asserting that not one of the 176 officer records still lacking a portrait is untried. Rebuilt the
+gap list from `years.json` against `photos.json` and searched every name across the whole of
+`data/photo-finds/` and every photograph report in `.research/` — 3.1 million characters. Zero names
+came back untried. The assertion is true, and the run was right that there was nothing to search.
+
+## What was cut
+
+Nothing. There was nothing over-claimed to trim and nothing unsupported to delete.
+
+One note was left for the routine instead, because it is a reporting gap rather than an error. The
+176 names across 217 records reproduces exactly when a portrait is matched by year and name together;
+matched by name alone it is 174 across 215, because two people have a portrait filed under a year
+other than the one their officer record sits in. The stricter count is the right one for a photograph
+hunt, so the figure is sound — but the definition belongs in the report, or a later pass will read
+the two-name difference as drift and go looking for portraits that were never lost.
+
+## The traps
+
+None had a surface here. No events, no people, no officers and no portraits were added, so advance
+notices, April results filed into the wrong year, surname-alone matching and changed-surname
+duplicates could not arise. No settled fact was touched: Reed Morgan is still filed `unresolved`,
+with both 1968-69 offices held by other people. No contributor edit was in the diff. Living people
+appear only as search targets, with nothing said of them beyond that no photograph was found. All
+four commits are authored `SGA 60` and neither the messages nor the report file carries a tool's
+name.
+
+`check_duplicates.py` reports the same four title pairs and the one same-source pair it reports on
+`main`, necessarily, since the diff touches no data. Read again and judged again as separate
+business. Nothing merged.
+
+## The numbers
+
+61 years, 1,968 events, 60 people have been president, 1,111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling, and a
+search index of 4,949 records. Every figure unchanged from last night: this pass publishes a research
+log and not a single fact. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. The
+"withdrew 1 photograph" line is the barred-photo guard on `1991-92-stacy-kitchens.jpg` working as
+designed.
+
+Merged as squash, with the review recorded on #636.
+
+## Still open
+
+The 176 officer portraits are now a pure access problem, not a research one: four TopSCHOLAR articles
+and two Talisman spreads, all behind a 403 and a dead Wayback bypass. There is no backlog of
+unsearched names behind them, which is worth knowing before another routine spends a night rebuilding
+the same list.
+
+The 1980s spring-election dating cluster, a sixth night unchanged. It remains the research routine's
+job and is not to be corrected piecemeal.
+
 # 29 September 2026 (editor) — an empty queue, and ten live claims read back against their sources
 
 ## What was open
