@@ -324,6 +324,79 @@ def check_legislation(ys):
     note(f"{len(entries)} pieces of legislation, every file present and a real PDF")
 
 
+ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5,
+         "VI": 6, "VII": 7, "VIII": 8, "IX": 9, "X": 10}
+RECORD = re.compile(r"/dlsc_ua_records/(\d+)")
+# "69:52", "73 [74]:14", "75:19 [20]" - the bracket is the archive's correction
+# of a number the paper misprinted, and either reading is a fair citation.
+CITE = re.compile(r"(\d+)(?:\s*\[(\d+)\])?\s*:\s*(\d+)(?:\s*\[(\d+)\])?")
+
+
+def _issue_pairs(issue):
+    """Every (volume, number) a catalogue title legitimately denotes.
+
+    The catalogue is not uniform. It writes "No 49" and "No,. 38" as well as
+    "No. 38"; it numbers some 1995 issues in Roman; and where the paper
+    misprinted its own masthead it records both, as "Vol. 78, No. 38 [Vol. 79]".
+    All of those are the same issue, so all of them are accepted.
+    """
+    s = issue.replace("No,.", "No.")
+    s = re.sub(r"\bNo\b(?!\.)", "No.", s)
+    vols = set(re.findall(r"Vol\.\s*(\d+)", s))
+    nos = {str(ROMAN[n]) if n in ROMAN else n
+           for n in re.findall(r"No\.\s*([0-9IVX]+)", s)}
+    if not vols or not nos:
+        return None
+    return {(v, n) for v in vols for n in nos}
+
+
+def check_citations(ys):
+    """A citation whose label and link have drifted apart.
+
+    The label carries the volume and number a reader checks against; the URL
+    carries the record they actually land on. Nothing makes the two agree, so
+    a slip in either is invisible until somebody follows the link. Three
+    sources pointed at the Herald of 23 March 2010 while calling it 84:41,
+    which is a real issue of a year earlier. Only labels that name a volume
+    and number, and only links that resolve to a catalogued issue, are judged.
+    """
+    path = ROOT / "data" / "herald-index-full.json"
+    if not path.exists():
+        return
+    catalogued = {}
+    for e in json.loads(path.read_text())["entries"]:
+        m = RECORD.search(e.get("url", ""))
+        if m:
+            catalogued[m.group(1)] = (_issue_pairs(e.get("issue", "")),
+                                      e.get("issue", ""))
+
+    seen = 0
+    for path_name in ("years.json", "photos.json", "legislation.json"):
+        f = ROOT / "data" / path_name
+        if not f.exists():
+            continue
+        stack = [json.loads(f.read_text())]
+        while stack:
+            n = stack.pop()
+            if isinstance(n, dict):
+                url, label = n.get("url"), n.get("label") or n.get("title")
+                m = RECORD.search(url or "")
+                if m and label:
+                    pairs, issue = catalogued.get(m.group(1), (None, ""))
+                    lm = CITE.search(label)
+                    if pairs and lm:
+                        seen += 1
+                        vols = {x for x in (lm.group(1), lm.group(2)) if x}
+                        nos = {x for x in (lm.group(3), lm.group(4)) if x}
+                        if not ({(v, x) for v in vols for x in nos} & pairs):
+                            bad(f"{path_name}: a citation reads "
+                                f"\"{label[:60]}\" but its link opens {issue}")
+                stack.extend(n.values())
+            elif isinstance(n, list):
+                stack.extend(n)
+    note(f"{seen} citations name a volume and number; each opens that issue")
+
+
 def check_counts(ys):
     n_ev = sum(len(y["events"]) for y in ys)
     pres = {l["name"] for y in ys for l in y["leaders"] if l["role"] == "president"}
@@ -342,7 +415,7 @@ def main(argv):
     ys = data["years"]
     for fn in (check_years, check_events, check_leaders, check_seat,
                check_files, check_photos, check_legislation,
-               check_counts):
+               check_citations, check_counts):
         fn(ys)
 
     if not quiet:
