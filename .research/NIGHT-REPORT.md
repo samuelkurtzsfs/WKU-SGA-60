@@ -36221,3 +36221,112 @@ routine's job.
 And the thing worth someone knowing, said for the second night: the decade routines are not
 running. The photograph routine's last three passes have added no photograph, correctly, because
 there is nothing reachable left for it to add. The editor's passes are finding their own work.
+
+---
+
+# 29 September 2026 (editor, fifth pass) — the Wednesday cluster worked through, eighty dates moved to the day the senate sat
+
+## What was open
+
+Nothing. `list_pull_requests` returned an empty list and the REST API agreed. `git push --dry-run`
+reported write access, so this was a full pass with the power to merge and nothing to merge.
+
+The standing brief still names #6, #7 and #8 as stale and open since 4 August. They closed
+unmerged on 18 August 2026, and this is the twenty-fourth consecutive pass to record that the
+paragraph is wrong.
+
+Every `research-*` branch was checked for work a routine pushed without opening a pull request.
+Sixty-nine sit ahead of `main` by a commit or more and every one is a post-squash-merge tip whose
+content is already published: `research-photos`, the only branch touched today, diffs against
+`main` as a pure deletion of ninety-one lines of this file, which is to say it is behind, not
+ahead. Nothing has been left behind.
+
+## What the pass did instead
+
+It took the work the third pass named and left: the Wednesday cluster. That pass corrected eight
+meeting dates that sat one day late, established that the fault is systematic, and counted 166
+further candidates — events sourced to `wkuherald.com` and dated to a Wednesday, for an
+organisation that meets on Tuesday. It left them because a date is only worth moving when the
+article states the day, and reading them all is a pass of its own. It assigned the job to
+whichever routine took the 2010s. The decade routines are not running, so the editor took it.
+
+All 158 remaining Wednesday-dated entries were enumerated — 166 less the eight already fixed, which
+is the arithmetic check that the set is the same one. Each article was fetched, one request at a
+time and two seconds apart, and read for a statement of when the business actually happened. 155
+came back 200; the three that did not are the two 2009-10 entries citing `web.archive.org`, which
+this container's network policy still refuses, and one 2022-23 page.
+
+## What was corrected
+
+**Eighty dates moved back one day.** Every one of the eighty lands on a Tuesday, which is the
+strongest check available that the correction is the right one and not an off-by-one applied
+blindly. Each was moved only on the article's own words — "passed Tuesday night at the SGA's
+regular weekly meeting", "met on Tuesday, Sept. 28", "held its second meeting of the year on
+Tuesday, Sept. 6" — and the words are recorded against each entry in the pass notes.
+
+Sixty-two came from the plain reading. Eighteen more were found only by looking again at entries
+the first reading had cleared, because a sentence announcing the *next* meeting outranked the
+sentence dating this one: 2016-03-02, 2017-04-12 and 2021-03-03 each state the Tuesday plainly and
+were nearly missed that way. The eighteen also include five that are not senate meetings at all —
+the 2012 and 2018 Frankfort rallies, the 2012 swearing-in banquet, the 2016 Frankfort lobbying trip
+and Richey's 2015 budget posting — all reported on the Tuesday and filed on the Thursday print day.
+
+## What was deliberately left alone
+
+This is the part that cannot be swept by rule, and three entries prove it.
+
+The two SGA members who resigned in October 2016 stay on Wednesday 12 October. The article names a
+Tuesday meeting in its fourth paragraph, which is what an automated check sees, but it says in its
+second that the two resigned Wednesday morning. The third pass left this entry for that reason and
+it was right; it was read again from the page and left again.
+
+The 2017 Safe Ride service cut stays on 8 February. Its article reports the decision as a fact and
+never says when SGA took it; a Tuesday meeting is mentioned only for an unrelated confirmation.
+
+The senate's 17-15 vote to cancel a meeting stays on 2 October 2019. The only Tuesday its article
+names is 8 October, the meeting being cancelled.
+
+Beyond those three, 75 Wednesday-dated entries were read and left because no article states a day —
+among them six whose only day reference is the following week's meeting, and four that name
+Wednesday and mean it: Ransdell's 2015 email to faculty, the 2017 election closing after midnight,
+the 2018 Campus Safety Panel and the 2024 censure meeting that removed three senators. A further
+entry, Ransdell's October 2011 visit to SGA, says "tonight" and never names the weekday; inference
+would have moved it and inference is not evidence, so it stands.
+
+## The duplicate pairs
+
+`check_duplicates.py` output is byte-identical to `main`'s: the same four title pairs and the same
+single same-source pair, all judged before and none introduced here. The two 2016-03-23 entries
+both moved to 22 March and now share a date, correctly — they are the Judicial Council's election
+codes and the chief of staff's report, distinct business from one meeting, and they cite different
+articles, so the same-source check does not and should not flag them.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 1302 volume-and-number citations each opening the issue it names, 308
+documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%) carrying an
+account of what the person did, 48 people under more than one spelling, and a search index of 4949
+records. The event count is unchanged: this pass moved eighty dates and added and removed nothing.
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+
+The distribution that prompted the work has inverted, which is the outcome to check it by. Events
+sourced to `wkuherald.com` ran 239 Tuesday to 158 Wednesday before this pass and run 319 to 78
+after it. The 78 are the residue: entries whose article never names a day, and entries that really
+happened on a Wednesday.
+
+## Still open
+
+The 1980s spring-election dating cluster, an eighth night. The spring 1982 entries are dated to the
+Thursday the *Herald* printed them rather than the day students voted, and they should move as a
+set or not at all. It is the same fault this pass has just cleared out of the 2010s, in a decade
+whose sources are page images rather than full text, so it needs the *Herald* back file and a
+slower read than tonight's had room for.
+
+The photograph queue is nine items and every one sits behind `viewcontent.cgi` or
+`web.archive.org`. Both were shut again tonight, from this container, on the same network policy.
+Three mirror hosts have been tried and closed. That queue is blocked, not unfinished.
+
+And the thing worth someone knowing, said for the third night: the decade routines are not
+running. Tonight's eighty corrections were work a research routine was assigned nine days ago and
+has not touched. The editor's passes are now the only thing moving.
