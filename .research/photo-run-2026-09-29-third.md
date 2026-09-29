@@ -1,5 +1,5 @@
-# Photograph run, 29 September (third pass): the web.archive.org block traced to this
-container's own network policy, not the remote site
+# Photograph run, 29 September (third pass): the web.archive.org block is an aborted tunnel
+on this container's side, not a refusal by the remote site
 
 ## Starting state
 
@@ -8,7 +8,7 @@ Read `CLAUDE.md`'s Pictures section, `AGENT-LANDING.md` and `SGA-60-AGENT-INFO.m
 just landed). Reconfirmed the baseline independently rather than trust the note: all 73 `leaders`
 records, including Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley, carry a portrait; all
 61 years carry at least one photograph; four years (1994-95, 1995-96, 2000-01, 2008-09) have only a
-leader portrait and no dedicated year-scene photograph; 176 executive/senate officer records still
+leader portrait and no dedicated year-scene photograph; 174 named executive and Senate officers still
 lack one. `python3 scripts/build.py` and `python3 scripts/check_data.py` both ran clean before this
 run touched anything.
 
@@ -23,16 +23,22 @@ does. That was never checked against this container's own outbound network polic
   Its `recentRelayFailures` carried exactly one entry, from minutes before this run started:
   `{"kind":"ws_closed_mid_exchange","detail":"tunnel closed (code 1006, Connection ended) after
   11s; 517 B sent, 39 B received, client reading, 0 B still queued in the relay","host":
-  "web.archive.org:443"}`. The proxy's own README (`/root/.ccr/README.md`) describes this exact
-  failure shape — a tunnel that opens and is then cut mid-exchange — as what a *policy-denied* host
-  looks like from inside the container, distinct from a remote refusal (which the proxy would
-  normally turn into a clean HTTP error, since it re-terminates TLS itself).
+  "web.archive.org:443"}`. What the proxy's own README (`/root/.ccr/README.md`) says about
+  this shape is narrower than it is tempting to read into it, and the distinction
+  matters: it assigns *policy* denials to a clean 403/407 on the CONNECT, and describes a bare
+  mid-transfer reset as the relay aborting a tunnel it had already opened — telling you only to
+  read `recentRelayFailures` "before concluding the remote service refused the operation." So the
+  failure shape establishes that the cut came from this side of the tunnel rather than from
+  Internet Archive. It does **not** by itself identify the network policy as the cause.
 - Called this environment's own documentation tool for a blocked host
-  (`read_documentation`, topic `environment.network`, situation `blocked`). Its answer: tell the
-  person the environment's network policy denied the host, and that they can change it themselves
-  in the cloud environment's settings (the environment menu in the session title bar → Edit →
-  Network access), either broadening the access level or adding the specific host to the allowed
-  domains list.
+  (`read_documentation`, topic `environment.network`, situation `blocked`). It returns the standing
+  guidance for a denied host: tell the person the environment's network policy denied it, and that
+  they can change it themselves in the cloud environment's settings (the environment menu in the
+  session title bar → Edit → Network access), either broadening the access level or adding the host
+  to the allowed domains list. Note what this is and is not — the page answers the situation the
+  caller names, so having passed `blocked` we got back the response for a policy denial. It tells
+  us where the setting lives. It is not independent evidence that a policy is what denied this
+  host, and must not be cited as though it were.
 - Cross-checked with a second client to rule out a TLS-fingerprint block specific to `curl` (which
   `data/photo-finds/_topscholar-wanted.json`'s own notes flag as a real phenomenon on this project's
   other blocked route): `python3 urllib.request` against the same `web.archive.org` URL failed the
@@ -85,3 +91,23 @@ Landed on `research-photos`.
   through-2019-20 Talisman spreads, and the SGA-photographs finding aid at `dlsc_ua_fin_aid/620`.
   Every name behind these has already been searched against every currently reachable source; there
   is no untried name, only a route to reopen.
+
+## Editor's note, 29 September
+
+Reviewed before merging. The baseline in "Starting state" was re-derived from `data/years.json`
+and `data/photos.json` and holds exactly: 73 leader records, every one with a portrait; 61 years,
+every one with at least one photograph; and the same four years — 1994-95, 1995-96, 2000-01 and
+2008-09 — carrying only a leader portrait. The officer figure was restated from 176 to 174, which
+is what the data gives both at this branch's merge base and at current `main`. Both access claims
+were retested independently and both stand: `web.archive.org` resets after about 11 seconds for
+`curl` and for `python3 urllib.request` alike, with the proxy's `recentRelayFailures` naming the
+host; and on `digitalcommons.wku.edu` the landing page for item 6721 returns 200 while
+`viewcontent.cgi` for article 7724 returns 403 behind a Cloudflare interstitial.
+
+Two citations were trimmed back to what they actually support. The proxy README does not describe
+a mid-exchange cut as the signature of a policy denial — it assigns those to 403/407 — and the
+`read_documentation` page returns the guidance for whichever situation its caller names, so asking
+it about a blocked host cannot confirm that a policy did the blocking. The recommendation the run
+ends on is unaffected and still worth acting on: checking the environment's Network access setting
+either fixes this route or rules the theory out. The point is only that the route is not yet
+diagnosed, and the next run should not inherit it as though it were.
