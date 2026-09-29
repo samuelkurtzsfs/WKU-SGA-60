@@ -1,3 +1,98 @@
+# 29 September 2026 (editor, second pass) — a photograph run that added nothing, checked as though it had
+
+## What was open
+
+One pull request, #636, "Research: photographs (rolling)", opened at 02:03 and reviewed here from
+03:20. The token answered the GitHub API and `git push --dry-run` reported write access, so this was
+a full pass with the power to merge. `gh` is still not installed in these containers; the API and
+plain `git` are the route, as `AGENT-LANDING.md` says.
+
+The three branches the standing brief still calls stale — #6, #7, #8 — remain closed since
+18 August, as last night's entry also recorded. The repository is at #636 now. That paragraph of the
+brief has been wrong for six weeks.
+
+## What the pull request contained
+
+One file: `.research/photo-run-2026-09-29.md`, 96 lines. No change to `data/photos.json` or to
+`data/photos/`, confirmed by diff rather than taken from the report's own summary. The merge base was
+the current tip of `main`, so none of the orphan-history hazard applied. Nothing in the diff reaches
+the published site; `.research/` is excluded at deploy.
+
+It is a null-result run. The night's two archive routes were both shut, and the report says so and
+stops rather than manufacturing progress — which is the right instinct, and the reason the pass was
+spent testing whether the stand-down was honest rather than reading prose.
+
+## The spot check
+
+A run that adds no claim cites no source, so there was nothing external to open. Its falsifiable
+content is its arithmetic and its stand-down, and all of it was reproduced independently: thirteen
+claims, every one held.
+
+The baseline first. Sixty-one years. Every president and student regent resolves to a portrait, none
+missing across seventy-two records. No year is without a photograph. Four years carry only a leader
+portrait and no dedicated year scene, and they are exactly the four named — 1994-95, 1995-96,
+2000-01, 2008-09.
+
+Then the stand-down. `web.archive.org` reset the connection and returned nothing, as described.
+TopSCHOLAR's landing pages served normally at 200 while `viewcontent.cgi` answered 403 to a request
+carrying full navigation headers — the split the report claims, confirmed in both halves, one request
+at a time and paced. The `archive.org` Talisman collection holds nineteen identifiers and they are
+precisely the years listed: 1943, 1946, 1947, 1963-65, 1971-81, 1986-87. No volume from the 2010s
+exists there, so the two open Talisman leads genuinely have no route that is not TopSCHOLAR.
+
+The load-bearing claim was the one worth the most trouble. The report justifies doing no work by
+asserting that not one of the 176 officer records still lacking a portrait is untried. Rebuilt the
+gap list from `years.json` against `photos.json` and searched every name across the whole of
+`data/photo-finds/` and every photograph report in `.research/` — 3.1 million characters. Zero names
+came back untried. The assertion is true, and the run was right that there was nothing to search.
+
+## What was cut
+
+Nothing. There was nothing over-claimed to trim and nothing unsupported to delete.
+
+One note was left for the routine instead, because it is a reporting gap rather than an error. The
+176 names across 217 records reproduces exactly when a portrait is matched by year and name together;
+matched by name alone it is 174 across 215, because two people have a portrait filed under a year
+other than the one their officer record sits in. The stricter count is the right one for a photograph
+hunt, so the figure is sound — but the definition belongs in the report, or a later pass will read
+the two-name difference as drift and go looking for portraits that were never lost.
+
+## The traps
+
+None had a surface here. No events, no people, no officers and no portraits were added, so advance
+notices, April results filed into the wrong year, surname-alone matching and changed-surname
+duplicates could not arise. No settled fact was touched: Reed Morgan is still filed `unresolved`,
+with both 1968-69 offices held by other people. No contributor edit was in the diff. Living people
+appear only as search targets, with nothing said of them beyond that no photograph was found. All
+four commits are authored `SGA 60` and neither the messages nor the report file carries a tool's
+name.
+
+`check_duplicates.py` reports the same four title pairs and the one same-source pair it reports on
+`main`, necessarily, since the diff touches no data. Read again and judged again as separate
+business. Nothing merged.
+
+## The numbers
+
+61 years, 1,968 events, 60 people have been president, 1,111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling, and a
+search index of 4,949 records. Every figure unchanged from last night: this pass publishes a research
+log and not a single fact. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. The
+"withdrew 1 photograph" line is the barred-photo guard on `1991-92-stacy-kitchens.jpg` working as
+designed.
+
+Merged as squash, with the review recorded on #636.
+
+## Still open
+
+The 176 officer portraits are now a pure access problem, not a research one: four TopSCHOLAR articles
+and two Talisman spreads, all behind a 403 and a dead Wayback bypass. There is no backlog of
+unsearched names behind them, which is worth knowing before another routine spends a night rebuilding
+the same list.
+
+The 1980s spring-election dating cluster, a sixth night unchanged. It remains the research routine's
+job and is not to be corrected piecemeal.
+
 # 29 September 2026 (editor) — an empty queue, and ten live claims read back against their sources
 
 ## What was open
@@ -35755,3 +35850,105 @@ without complaint, and the fetch tool reaches it either way. That is worth knowi
 concludes the site is blocked has tested it wrong. The `digitalcommons.wku.edu` `viewcontent.cgi`
 wall is unchanged, but the local index answered every question asked of it this pass without a
 single request to TopSCHOLAR.
+
+---
+
+# 29 September 2026, third pass — every volume-and-number citation in the archive, checked by machine
+
+No pull request was open, and none has been for three passes. The numbering now runs past 637, so
+the three "stale" pull requests the standing instructions still name — #6, #7 and #8 — remain what
+the 28 September pass found them to be: closed long ago, and nothing to rescue or shut. The
+research branches carry nothing `main` lacks: `research-1980s` and `research-2020s` are the 4 August
+snapshots, 53 and 57 commits behind with no shared history, and merging either would delete the
+Herald index, the contributor layer and the validators. They are not pull requests and they are not
+mergeable; they stay where they are.
+
+So this pass took the one check the archive had only ever done by hand.
+
+## What was checked, and why it is worth checking
+
+A citation carries two things that have to agree and nothing that makes them: the label, which gives
+the volume, number and date a reader checks against, and the link, which is the record they actually
+land on. Either can slip, and the slip is invisible until somebody follows the link. The
+28 September pass caught one such drift by reading nine issues by hand and wrote that this "is the
+check that catches a citation whose label and link have drifted apart". Nine is not the archive.
+
+Every source in `years.json`, `photos.json` and `legislation.json` whose link resolves to a
+TopSCHOLAR record was matched against what the local index says that record is. 7,658 sources were
+read; 1,302 of them name a volume and number against a catalogued issue and could be judged. That
+covers the whole back file at no cost to TopSCHOLAR — not one request was made.
+
+Three things had to be taught to the check before it could be believed, and each was a false alarm
+it raised first:
+
+- **The catalogue is not uniform.** It writes "No 49", "No,. 38" and "No. 38" for the same field,
+  and numbers some 1995 issues in Roman — "Vol. 71, No. VII" is this archive's 71:7.
+- **The paper misprinted its own masthead.** Through spring 2004 the Herald kept running "Vol. 78"
+  into what was volume 79, and the catalogue records both: "Vol. 78, No. 38 [Vol. 79]". Two
+  `photos.json` citations were flagged for reading 79:38 and 79:45, and both are right — they use
+  the corrected volume. Nothing was changed.
+- **This archive already brackets the same way.** Twelve labels read "69:52 [51]" or "73 [74]:14",
+  printed number first and the archive's correction beside it. All twelve are sound.
+
+## The one real drift
+
+Three sources gave **84:41 for the Herald of 23 March 2010**. The record they link to is Vol. 85,
+No. 39, and 84:41 is a real issue of a year earlier — 31 March 2009. A reader following the link to
+check the archive would have found a masthead that did not match the citation, and no bracket or
+misprint to account for it: the catalogue's entry for this issue is plain, so the paper and the
+archive agree it is 85:39.
+
+The facts the three sources support were read against the issue's own index before anything was
+touched, and all three hold exactly:
+
+| Claim | What the 23 March 2010 index carries |
+| --- | --- |
+| Thurman ran for president against Colton Jessie | "Candidates Face Off for Student Government Association Offices – Colton Jessie, Justin Thurman" |
+| Bryan stood for EVP and wrote his own election piece | "Candidates for ... Executive Vice President – Kendrick Bryan, Currie Martin"; Bryan, "Vote for an Organization You Can Stand Up & Cheer For" |
+| Pierce ran unopposed for AVP | "Candidate for ... Administrative Vice President – Wade Pierce" — singular, as an unopposed race would be |
+
+So nothing was cut. The volume and number were corrected to 85:39 in all three labels, in
+2009-10's executive record for Justin Thurman and 2010-11's for Kendrick Bryan and Wade Pierce. No
+fact changed; a pointer that sent the reader to the wrong issue now sends them to the right one.
+
+## The check is now permanent
+
+Doing this by hand once does not stop it recurring, so it is in `check_data.py` as
+`check_citations`, and the deploy gate now fails on it. It judges only labels that name a volume and
+number against links that resolve to a catalogued issue, and it accepts every legitimate reading
+above — the punctuation variants, the Roman numerals, the paper's misprinted mastheads and this
+archive's own brackets. Tested both ways: it exits 1 on the 2010 labels as they stood this morning
+and 0 on them as they stand now. On the whole corpus it reports 1,302 citations checked and nothing
+wrong.
+
+## The settled facts hold
+
+Read against the data, not assumed: Norfleet 1981-82; Zielke 1969-70 with Lyne alone in 1970-71;
+Payne 1981-82 and Ragan 1982-83; Fiorella and McKinney as regents; Menser with the seat from
+April 1968; Reed Morgan in neither office; the Lodmells two people; the LaCivita portrait on file.
+This pass touched three citation labels and one script. It moved no leader, no year and no date.
+
+## The duplicate pairs
+
+The same four title pairs and one same-source pair as every night this week — the designated driver
+cards four months apart, the regent advisory bill and its failure, the Civil Liberties Union suit
+and its endorsement, the two stages of the plus/minus grading fight, and two items of different
+business from one 2026 article. Read again, judged again, none to merge.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling, and
+a search index of 4949 records. Every figure unchanged: this pass adds no fact and removes none.
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. The "withdrew 1 photograph"
+line is the barred-photo guard on `1991-92-stacy-kitchens.jpg` working as designed.
+
+## Still open
+
+The 1980s spring-election dating cluster, a sixth night unchanged. It is the research routine's job
+and is not to be corrected piecemeal.
+
+Nothing has reached the research queue for three passes. The photograph routine's last two runs
+added nothing, and the decade routines are not running at all. That is worth someone knowing: the
+editor's pass is finding its own work now, and there is a limit to how long that lasts.
