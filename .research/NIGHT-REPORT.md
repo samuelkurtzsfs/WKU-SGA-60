@@ -1,3 +1,230 @@
+# 29 September 2026 (editor) — an empty queue, and ten live claims read back against their sources
+
+## What was open
+
+Nothing. `gh` is not installed in this container, but the token answers the GitHub API directly and
+`git push --dry-run` reported write access, so this was a full pass with the power to merge — there
+was simply nothing waiting. No open pull requests at all. The last merge was #634 at 21:31 on
+28 September; this run began at 00:19 on 29 September, in the gap between research batches, which
+have been arriving about every three hours.
+
+Every branch was checked for content rather than trusted to its commit count. Thirty-odd `research-*`
+and `editor-*` branches sit ahead of `main` by one or two commits, but that is the shape squash-merges
+leave behind: diffed against `main` over `data/` and `.research/`, the recent ones carry nothing that
+is not already published. The branches that do differ are the 4 August snapshots and the August
+editor branches, which are the superseded histories `AGENT-LANDING.md` warns against merging.
+
+The three branches the standing brief still names as stale — #6, #7, #8 — have been closed since
+18 August. The repository is at #634 now. That paragraph of the brief has been out of date for six
+weeks and can go.
+
+## What was done instead
+
+With no queue, the pass was spent on the material that reached the live site in the last two days
+without an independent reader: ten claims, opened against their cited sources. All ten held. Nothing
+was cut, and nothing needed trimming.
+
+**Resolution 99-2-S, Legislation to be Filed at Helm Library (1998-99).** The mirrored PDF carries a
+typed `Pass 2/23/99` with Fail and Other blank, so the entry's pass line is real and not the blank
+form trap. Its purpose and resolving clauses match the entry's description of what was requested —
+adopted legislation since 1990, kept in the Helm reference section, readable in normal library hours.
+
+**Bills 7-24-S and 10-24-S (2023-24), the trap-prone pair.** Both bill sheets have Pass, Fail and
+Other blank in the text layer, so both pages were rendered at 5x and looked at: genuinely blank, no
+handwritten tick. The entries do not rest a pass on those forms. Both carry a second source, the
+Herald of 22 February 2024, which reports the senate passing Bill 27-23-S and Bill 30-23-S and closes
+"All four pieces of legislation passed unanimously in the senate." The $585 itemisation matches the
+bill line for line; the $100, the Centennial Mall tabling on 28 February and the three named authors
+match; the readings match both sheets; and the Herald's own numbering, 27-23-S and 30-23-S against
+SGA's 7-24-S and 10-24-S, is what the entries print beside them. The method here is right: the
+document for the content, the contemporaneous report for the outcome.
+
+**The meeting of 12 March 2024.** The Herald confirms the 23rd Senate's twentieth meeting, the $150
+DEI week, all four daily initiatives with their partners, the unanimous votes, and Administrative
+Vice President Salvador León's closing report of $761.29 left in the legislative discretionary
+budget. The entry puts Mental Health Week at $620 where the Herald printed $650, and says so in the
+open; bill 18-24-S carries $620.00 in both its purpose and its resolving clause, so the archive is
+right to follow the document and right to show its working. The entry also states plainly that the
+Herald report predates every event in it and says nothing about how any of them went.
+
+**Organizational Aid, 9 September 2026.** The $500 per organization, the $10,000 semester ceiling,
+the 29 September deadline, the ten-person committee of Chief Financial Officer Will Derryberry and
+nine senators, the thirty-point scale: all four match the Herald's account of the editorial-board
+meeting. The entry records the terms set out and claims no outcome, which is correct for a piece
+written before the applications closed.
+
+**The Natcher endorsement, April 1982.** The local index for Herald 57:51 of 1 April 1982 carries
+"Associated Student Government Backs William Natcher" and, in the same issue, Kevin Francke's
+"Associated Student Government Presidential Primary to be Tuesday". The next issue, 57:52 of
+6 April, carries "Endorsing is Not Wise for Associated Student Government". All three of the entry's
+claims are supported, the primary is reported as the advance notice it is, and the entry sits in
+1981-82 — the session that voted the endorsement — which is where an April measure belongs. Filing
+forward is for election results.
+
+## The settled facts
+
+Swept in full rather than sampled. Norfleet is still 1981-82 and has not been filed forward. Ragan
+holds 1982-83, Zielke 1969-70, Lyne 1970-71 alone. Straeffer has the 1968-69 presidency and Gerard
+the regent seat; Reed Morgan is present in that year at role `unresolved`, which is neither office,
+as settled. Menser is president of 1967-68 with a note recording that he assumed the Regents seat in
+April 1968 as the first student regent — consistent, not in conflict with Gerard the following year.
+McKinney holds 1974-75. The LaCivita portrait is on file with the full reasoning for its restoration
+preserved in its source label. No Lodmell has been merged into the other.
+
+## The validators
+
+`build.py` completed cleanly. `check_data.py` and `check_contrib.py` both exited 0. The one line in
+the build worth reading twice — "withdrew 1 photograph the archive no longer holds or has barred" —
+is the barring mechanism working as designed, keeping a file named in `_do-not-use.json` out of
+`site/` as well as out of the metadata.
+
+`check_duplicates.py` printed four title pairs and one same-source pair. All five were read and all
+five kept:
+
+- 1997-98, the designated driver cards. Bill 97-3-F funding the printing in November 1997, and the
+  Herald reporting the distribution in February 1998. Two events, three months apart, two sources.
+- 1991-92, the student regent advisory committee bill introduced on 28 January and failing after
+  amendment on 6 February. An introduction and a defeat are not one event.
+- 1971-72, the Kentucky Civil Liberties Union planning court action in February and Associated
+  Students endorsing the suit in March.
+- 2003-04, SGA lining up against plus/minus grading in September and passing legislation against it
+  three weeks later.
+- 2026-27, two pieces of business from one Herald article a day apart — the syllabus mental health
+  statement and the opening of fall election voting. Different business, honestly sharing a source.
+
+## Where the archive stands
+
+61 years, 1968 events, 60 people have been president. 2,651 recorded terms of office held by 1,809
+people, 2,614 of them — 98 percent — carrying an account of what the person did. 48 people recorded
+under more than one spelling or name. 1,111 pieces of legislation, every file present and a real
+PDF. 308 documents mirrored. The search index holds 4,949 records.
+
+## Still open
+
+Nothing from this pass. No corrections were needed, so no branch carries editorial cuts tonight.
+The standing brief's stale-pull-request paragraph remains the one thing in the instructions that
+should be rewritten.
+
+# 28 September 2026 (editor, third pass) — a lead closed on a queue that was never counted
+
+## What was open
+
+One pull request: #633, `research-photos`, "Research: photographs (rolling)", opened this evening
+against current `main` after #631 merged earlier in the day. The branch had one commit and a clean
+merge base at the tip of `main`, so nothing needed rescuing. The three branches this instruction
+still names as stale — #6, #7, #8 — have been closed since 18 August; the repository is at #633 now
+and that paragraph of the standing brief is out of date.
+
+`gh` is not installed in this container, but the token in the environment answers the GitHub API
+directly, so this was a full pass with a merge at the end.
+
+## What the pull request contained
+
+One file: two new entries in `data/photo-finds/_archive-gaps.json`, which is a research log.
+`merge_photo_finds.py` skips every file in that directory whose name begins with an underscore, and
+`build.py` reads only `_do-not-use.json` out of it. Nothing here reaches a reader. That was
+confirmed rather than assumed: after the corrections below, a full rebuild left `site/` untouched,
+with `git status` showing the log file alone as modified.
+
+No portrait was added. `years.json` and `photos.json` were not touched. The run's own summary of
+itself was honest about that.
+
+## The spot check
+
+Fifteen claims checked, all of them, rather than a sample of eight.
+
+**The six arithmetic claims, all exact.** 61 years; 73 leader terms; all 73 resolving to a
+`photos.json` leader record; every one of the 61 years carrying at least one photograph once leader
+portraits count; the four named presidents — Todd, Dawson, Johnson, Gilley — each carrying a
+portrait; and the year-scene queue standing at exactly four bare years, 1994-95, 1995-96, 2000-01
+and 2008-09. Every figure recomputed from the data and every one correct.
+
+**The four network claims, all reproduced.** `digitalcommons.wku.edu/cgi/viewcontent.cgi` answered
+403 to a full browser header set on the same test article. `web.archive.org`'s raw-capture host
+reset the connection before any HTTP response — curl 35, "Recv failure: Connection reset by peer" —
+while `archive.org`'s own item store answered 200 to a control request in the same minute, exactly
+the split the run described. The Talisman identifier search returned 19 volumes and the same 19
+the run listed: 1943, 1946, 1947, 1963-65, 1971-81, 1986, 1987, with nothing in the four bare
+years. `wkuherald.com`'s own post archive returned `X-WP-Total: 0` for both the 2000-01 and the
+2008-09 windows, and its earliest indexed post is 20 August 2002, which is the date the run gave.
+
+**The document claim, read directly.** `1969-70-asg-election-result.pdf` is three pages. Page 3
+carries "Senior Class President ~Paul Gerard 739" with no opposing candidate under that office,
+and the page is a scanned tally sheet with no photograph on it. The run's conclusion about the
+document is right, and page 2 of the same sheet independently corroborates a settled fact: it
+prints the 1969 presidential race with Zielke and Genzianelli, which is where this archive already
+files Zielke's term.
+
+## What was cut
+
+Two claims in the log failed, and both were trimmed rather than deleted, because the finding
+underneath each is sound.
+
+**"The only remaining un-logged officer-portrait gap" is not.** The entry filed Paul Gerard as the
+last officer-portrait gap outside three known open rows. Cross-referencing `organization.executive`
+and `senate.officers` against `photos.json` leaves 217 officer rows with no portrait at the exact
+year and name, 142 of them named nowhere in the log file, 20 of those executive. No narrower
+reading of the cross-reference rescues the sentence: filtering to rows carrying a profile still
+leaves 122. The sentence now says what it is — one document closed out of a long queue — with the
+real figures beside it. A log that tells the next run the queue is empty is how a queue stops being
+worked.
+
+**"Source exhausted" was the wrong conclusion about the right document.** The PDF is exhausted.
+Gerard is not. `photos.json` already holds a "Paul Gerard" portrait at 1967-68, from the 1968
+Talisman's Rules and Elections Committee page, and a "Paul Gerard, III" portrait at 1968-69 and
+1969-70 from the 1969 Talisman. The officer row shows no face only because the build matches on
+exact year and exact name, and the row omits the suffix the leader row carries. So the open
+question is whether the Senior Class President and the student regent are one man, which is an
+identity question wanting a document, not a source question already settled. The two are not paired
+in `name-aliases.json`, and that file's own rule is that adding a pair asserts they are one human.
+Flagged in the log for a researcher, deliberately not fixed here.
+
+Two smaller corrections went with them: the leader-term count was written as all president or
+regent when one of the 73 is Reed Morgan's unresolved plate, and the election sheet was described
+as three pages of tally when its first page is the repository's own cover sheet.
+
+## Judged and left alone
+
+`check_duplicates.py` reports the same four title pairs and one same-source pair it reports on
+`main`, none of them this branch's doing. Read again: the designated driver cards are a November
+1997 bill with an X on its Pass line and a February 1998 Herald notice of distribution, four months
+and two sources apart; the regent advisory bill and its failure after amendment are nine days
+apart; the Civil Liberties Union suit and its endorsement are a month apart; the plus/minus grading
+pair is a stated position and then a passed resolution; and the 2026 pair is two items of different
+business from one meeting report. None to merge. The February 1998 entry is also a model of the
+advance-notice rule working — it says outright that the archive holds only a contents listing and
+claims nothing beyond the headline.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling, and
+a search index of 4949 records. Every figure unchanged from the second pass: this run published no
+fact and this review removed none, it corrected a log. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0. The "withdrew 1 photograph" line is the barred-photo guard working as
+designed.
+
+Merged, with the corrections, as #633.
+
+## Still open
+
+The four bare year-scene years — 1994-95, 1995-96, 2000-01 and 2008-09 — now have three routes
+documented as closed against them rather than untried, which is worth more than another attempt at
+the same three. The Talisman volumes for those years are not on archive.org at all, so the route
+that remains is TopSCHOLAR's own page images, and that depends on the `viewcontent.cgi` wall.
+
+The 217-row officer-portrait queue is the real standing gap, and it is now countable from the log
+rather than hidden behind a sentence saying there was one row left.
+
+The Paul Gerard identity question is new and small: one document putting the Senior Class President
+and the student regent in the same frame, or naming the suffix either way, would settle it.
+
+The 1980s spring-election dating cluster is unchanged, a sixth night. It remains the research
+routine's job.
+
+---
+
 # 28 September 2026 (editor, second pass) — five photographic dead ends, two of them reopened and read
 
 ## What was open
