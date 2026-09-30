@@ -1,3 +1,89 @@
+# 30 September 2026 (editor, fifth pass) — one portrait verified to the page, and a worklist that sent the next run to volumes it had already read
+
+## What was open
+
+One pull request, #655, `research-photos`, opened at 20:33. Its branch sat on the current tip of
+`main`, so no merge was needed before reading it. Five files, 58 insertions: a single new
+photograph and a large rewrite of the photograph routine's standing worklist.
+
+The brief's instruction to rescue or close #6, #7 and #8 is wrong for the eighth consecutive
+entry. All three were closed unmerged on 18 August and numbering now runs past #655. The line
+should be struck from the brief, along with the "four research routines pushing around the clock"
+premise: only the photograph routine has pushed anything this week.
+
+## What was verified
+
+The diff carried exactly one claim that reaches the public site — the portrait of **Tony
+Piedmonte**, senator, 2014-15 — so the whole of it was checked rather than a sample, and checked
+to the page image rather than to the routine's account of it.
+
+The volume was fetched whole, 519,281,395 bytes, through the `web.archive.org` `id_` bypass, and
+its own recommended citation reads "Paper 5162", matching the URL in the credit. Its title page
+gives "UA12/2/2 2014 Talisman: Reckoning, Part II". Piedmonte's name falls on PDF leaf 68, whose
+printed folio reads `306 UNDERCLASSMEN 307`; he is in the right-hand column, which is the recto,
+307. The credit's page number is therefore right.
+
+The identification holds, and it holds on the page's own structure rather than on trust. The
+grid runs four portraits across with the four names printed beside the row, and the sequence is
+alphabetical: Phelps, Phillips, Piedmonte, Pointer. Reading left to right puts Piedmonte third.
+Three of the four rows on that page carry an unambiguous check on the direction — Reece, Reed,
+Reynolds, Richards against a man, two women and a man, in that order — and all three agree. The
+third cell, rendered at 220 dpi, is the file in the repository: the same young man in glasses and
+a red Potter College shirt against the same grey backdrop, the same crop. Published as
+`2014-15-tony-piedmonte.jpg`.
+
+The routine's restraint elsewhere was the right call and is worth recording. It found Mallory
+Treece in a photo feature and declined her, because no caption fixes her to a figure; it found a
+clean captioned photograph of Jacob Turner and declined that too, because the frame is a
+dorm-room personal-interest feature with no connection to his service. Both are the standard this
+archive already applies, and both were correctly applied without being asked.
+
+## What was cut
+
+Nothing that reaches the site. The correction is to `data/photo-finds/_topscholar-wanted.json`,
+which is not published but which tells the next photograph run where to go — and as written it
+would have sent that run to volumes this archive has already drawn faces from.
+
+Three claims were wrong:
+
+- The note said the other three names cleared in this volume "already had portraits on file from
+  this same volume". None of the three did. Hannah Neeper's comes from the WKU faculty/staff
+  photograph directory, Josh Knight's from the 2015 *Talisman* p. 332, Liz Koehler's from the
+  2016 *Talisman* p. 245. As written it overstated what volume 5162 yielded.
+- The 2015 *Talisman: Resurgence* (record 8679) was filed "NOT YET ATTEMPTED". Two portraits in
+  `photos.json` are already sourced to it: Josh Knight, p. 332, and Laura Harper, p. 328.
+- The nine 2016-2020 volumes were filed as none "has been opened yet". Fourteen portraits are
+  already sourced to the 2016 "Life More Life" volume and one to the 2019 "Balance".
+
+Three names on the 8679 worklist — Emily Pride, Haley Jones, Joe Hunter — already have portraits
+from other sources and were struck from it. Each correction says in the file that it is a
+correction and what the text used to say, so the next pass can see what was changed rather than
+inheriting a quietly tidied record.
+
+The record and article numbers the entry added were checked against `herald-index-full.json` and
+are right: 5160/6164, 5162/6167, 8679/9665, 8677/9667. The route the entry documents is real and
+is the run's most useful bequest — the *Talisman* volumes are filed under `dlsc_ua_records`, not
+the `/talisman/` path that 404s, and they are reachable.
+
+## Merged
+
+#655, squashed. `build.py`, `check_data.py` and `check_contrib.py` all exit clean:
+61 years, 1968 events, 60 people have been president, 2651 recorded terms held by 1809 people,
+1111 pieces of legislation, 1303 quoted spans and none reaching fifteen words.
+`check_duplicates.py` reports four pairs and one same-source pair — the same five `main` reports,
+unchanged, because this run added no events at all.
+
+## Still open
+
+The Thursday cluster, unchanged and still the largest known fault on the live site: 114 events
+sourced to `wkuherald.com` and dated to a Thursday, from years when the *Herald* printed Tuesday
+and Thursday while SGA met on Tuesday. Neither Wednesday sweep touched them.
+
+The research routines are still off, for an eighth entry. Two of sixteen are enabled — this editor
+and `SGA 60 - portraits`. The six decade routines and the legislation harvest last fired on 4 and
+5 August. Re-enabling them is the owner's call, not a review pass's, but the effect is now plain:
+the archive gained one face tonight, and could gain nothing else, because nothing else is looking.
+
 # 30 September 2026 (editor, fourth pass) — an empty queue, the newest portraits re-derived, and the gate closed on photograph credits
 
 ## What was open
