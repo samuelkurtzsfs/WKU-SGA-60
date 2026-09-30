@@ -400,6 +400,24 @@ def check_citations(ys):
 QUOTED = re.compile(r"[\u201c\"]([^\u201c\u201d\"]{2,600})[\u201d\"]")
 QUOTE_MAX = 15
 
+# A photograph credit that reads `the archive's record notes: "..."` is the
+# archive quoting its own years.json note back into the caption, not the
+# yearbook or the Herald. The rule exists so that a university collection and a
+# student newspaper are paraphrased and linked rather than reproduced, and the
+# project's own prose is neither, so that one construction is exempt. Nothing
+# else is: a group-photograph caption is the Talisman's text however useful its
+# row order is as evidence, and a headline is the Herald's.
+SELF_QUOTE = "archive's record notes:"
+
+
+def _quote_spans(text):
+    """Every quoted span in `text`, as (words, span, exempt)."""
+    s = str(text or "")
+    for m in QUOTED.finditer(s):
+        q = m.group(1).strip()
+        exempt = s[:m.start()].rstrip().endswith(SELF_QUOTE)
+        yield len(q.split()), q, exempt
+
 
 def check_quotes(ys):
     """No verbatim span of 15 words or more.
@@ -416,39 +434,60 @@ def check_quotes(ys):
 
     Titles are not exempt either. A headline that runs to fifteen words is
     being reproduced, not cited, whichever it is.
+
+    Citation labels are read too, in years.json and in the photograph overlay.
+    They were not until 30 September 2026, and they are the one prose surface
+    the reader sees that nothing was gating: a photograph credit carries the
+    group-photograph caption that identifies the face, which is exactly the
+    text most easily reproduced whole. Twelve were, and are now paraphrased.
     """
     n = 0
     over = 0
+
+    def scan(text, where):
+        nonlocal n, over
+        for words, q, exempt in _quote_spans(text):
+            if exempt:
+                continue
+            n += 1
+            if words >= QUOTE_MAX:
+                over += 1
+                bad(f"{where}: quotes {words} words. The rule is "
+                    f"under {QUOTE_MAX}: \"{q[:60]}...\"")
+
+    def scan_labels(node, where):
+        """Every src.label reachable under `node`, at any depth."""
+        if isinstance(node, dict):
+            if isinstance(node.get("label"), str):
+                scan(node["label"], f"{where} citation")
+            for v in node.values():
+                scan_labels(v, where)
+        elif isinstance(node, list):
+            for v in node:
+                scan_labels(v, where)
+
     for y in ys:
         for e in y["events"]:
-            where = f"{y['id']} \"{e.get('title', '')[:48]}\""
-            for m in QUOTED.finditer(str(e.get("body") or "")):
-                n += 1
-                q = m.group(1).strip()
-                if len(q.split()) >= QUOTE_MAX:
-                    over += 1
-                    bad(f"{where}: quotes {len(q.split())} words. The rule is "
-                        f"under {QUOTE_MAX}: \"{q[:60]}...\"")
+            scan(e.get("body"), f"{y['id']} \"{e.get('title', '')[:48]}\"")
         for l in y["leaders"]:
             for i, para in enumerate(l.get("profile") or []):
-                for m in QUOTED.finditer(str(para or "")):
-                    n += 1
-                    q = m.group(1).strip()
-                    if len(q.split()) >= QUOTE_MAX:
-                        over += 1
-                        bad(f"{y['id']} {l.get('name', '?')} profile para {i + 1}: "
-                            f"quotes {len(q.split())} words. The rule is under "
-                            f"{QUOTE_MAX}: \"{q[:60]}...\"")
+                scan(para, f"{y['id']} {l.get('name', '?')} profile para {i + 1}")
         for d in y.get("documents") or []:
             for field in ("extract", "summary"):
-                for m in QUOTED.finditer(str(d.get(field) or "")):
-                    n += 1
-                    q = m.group(1).strip()
-                    if len(q.split()) >= QUOTE_MAX:
-                        over += 1
-                        bad(f"{y['id']} document \"{str(d.get('title'))[:40]}\" "
-                            f"{field}: quotes {len(q.split())} words. The rule is "
-                            f"under {QUOTE_MAX}: \"{q[:60]}...\"")
+                scan(d.get(field), f"{y['id']} document "
+                                   f"\"{str(d.get('title'))[:40]}\" {field}")
+        scan_labels(y, y["id"])
+
+    path = ROOT / "data" / "photos.json"
+    if path.exists():
+        overlay = json.loads(path.read_text())
+        for arr in ("leaders", "years"):
+            for e in overlay.get(arr) or []:
+                who = e.get("name") or e.get("file") or "?"
+                where = f"photos.json {e.get('year', '?')} {who}"
+                scan(e.get("caption"), f"{where} caption")
+                scan((e.get("src") or {}).get("label"), f"{where} credit")
+
     if over:
         note(f"{n} quoted spans, {over} of them {QUOTE_MAX} words or longer")
     else:
