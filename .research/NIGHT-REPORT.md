@@ -36416,3 +36416,101 @@ re-proving a known negative. The `talisman/` leads for 2014-15 and 2015-16 throu
 blocked endpoint at all, and that is where a blocked photograph routine should be pointed until
 `viewcontent.cgi` or `web.archive.org` reopens. The 1980s spring-election dating cluster is still
 waiting on a decade routine that has not run in ten days.
+
+---
+
+# 30 September 2026 — the photograph routine finds a door that opens
+
+## What was reviewed
+
+One open pull request, #646, the photograph routine's fifth pass in two days. The three stale
+branches the standing brief still names — #6, #7 and #8, open since 4 August — are long closed; this
+repository is six hundred pull requests past them and the instruction to rescue them is out of date.
+
+## Merged
+
+**#646, after correction.** The run added nothing to `data/`, so nothing in it reaches the site, and
+it was merged for the route it documents rather than for any fact. The file is short, so all
+fourteen of its checkable claims were tested rather than a sample of eight.
+
+The coverage figures are exact: 61 years, 73 leader records, every one carrying a portrait, and
+1994-95, 1995-96, 2000-01 and 2008-09 the only four years with a leader portrait and no year-scene
+photograph. All eight officers hold, in `years.json`, precisely the offices claimed for them. The
+`talisman*west` listing returns 19 items and exactly the years named. The four thin years'
+identifiers are genuinely empty.
+
+**The route works, and that is the first new thing the photograph routine has produced in five
+passes.** `iiif.archive.org` returned full-resolution page scans from the 1975 and 1978 *Talisman*,
+and a region request cropped a single photograph off a page of four. It reaches 1971-81 and 1986-87
+without touching the blocked `viewcontent.cgi` at all. Four consecutive passes re-proved a known
+negative; this one found a door that opens.
+
+## What was corrected, and what was cut
+
+Nothing was cut. Three of the run's stated reasons were wrong or thin and were corrected in an
+editor's note appended to the run log, so a later pass keeps the reasoning rather than inheriting a
+silent deletion.
+
+The IIIF URL as the run wrote it **returns HTTP 302, not an image**. Fetched without following
+redirects it yields a 499-byte HTML stub, which saved under a `.jpg` name is trap 7 of section 6
+exactly — the shape that once saved a bot-check page as a PDF. That correction is the most valuable
+thing in this pass: it would have cost a future run a whole session.
+
+"Every Austin hit is the university Austin Peay plays" is **not true**. The 1987 volume carries
+personal-name Austins besides the place in Texas, so the surname was not the sweep that sentence
+describes. The decline itself holds on narrower ground — no "Dwight Austin" occurs anywhere in the
+book, and the only Dwight in it is a Dwight Scott.
+
+"Not even a confirmed spelling match" **undersells** the Chesnut evidence: the yearbook's own index
+carries the spelling `years.json` uses and points at the page where the results box prints the other
+one. The identification is reasonable. What is absent is a photograph, that page being an intramural
+results box, and that is the real reason there is no portrait.
+
+One further guard was added: `archive.org/metadata/<id>` answers HTTP 200 with an empty object for an
+item that does not exist, not 404, so a check written against the status code reads every absent
+*Talisman* as present.
+
+## The one photograph that was nearly used
+
+A 1978 *Talisman* frame captioned as a light moment in an ASG meeting names four officers, David Bass
+among them. The run declined it. Checked here against the page image rather than the text layer, as
+the LaCivita entry in CLAUDE.md requires: the caption sits in the right-hand column beneath the
+top-right photograph, so it is correctly matched to its frame and this is not a repeat of the
+stairway error. The frame holds four people, the caption names four in a bare list, and there is no
+positional cue of any kind. Which figure is Bass cannot be settled, and it was correctly not used.
+The discipline on all eight declines was right; the identification bar was held where it should be.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 1302 volume-and-number citations each opening the issue it names, 308
+documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%) carrying an account
+of what the person did, 48 people under more than one spelling, a search index of 4949 records.
+Unchanged from last night in every figure, which is the honest result of a second consecutive run
+that added a research log and nothing else. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0.
+
+`check_duplicates.py` reported four title pairs and one same-source pair. All five are standing
+state on `main` rather than anything this run introduced, and all five were judged genuinely
+separate events: a bill introduced and a bill defeated, a suit planned and a suit endorsed, a
+position taken and a bill passed, and two pieces of distinct business from one *wkuherald.com*
+article. None merged.
+
+## Still open
+
+Nothing. The queue is empty.
+
+## Said for a fifth night
+
+The decade routines are still not running. Of the last twenty pull requests on this repository,
+every research branch is `research-photos` and every other one is an `editor-*` branch. Not one
+decade pull request in three days. The 1980s spring-election dating cluster has now been waiting on
+a routine that has not run in eleven days.
+
+The complaint made for four nights — that the photograph routine was re-proving a known negative —
+is partly answered tonight, and should be recorded as answered: it went looking for a different door
+and found one. The right next step is to point it at that door rather than back at the shut ones.
+The IIIF pair reaches 1971-81 and 1986-87 and roughly two hundred executive and Senate officers fall
+inside that window with no portrait on file. The `talisman/` leads for 2014-15 and 2015-16 through
+2019-20 still need no blocked endpoint at all. Neither of those is waiting on `viewcontent.cgi`
+reopening, and neither needs another pass establishing that it has not.
