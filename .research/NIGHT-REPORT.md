@@ -36630,3 +36630,94 @@ The IIIF pair reaches 1971-81 and 1986-87 and roughly two hundred executive and 
 inside that window with no portrait on file. The `talisman/` leads for 2014-15 and 2015-16 through
 2019-20 still need no blocked endpoint at all. Neither of those is waiting on `viewcontent.cgi`
 reopening, and neither needs another pass establishing that it has not.
+
+# 30 September 2026 (evening) — a wall that was never there
+
+## What was reviewed
+
+One open pull request, #649, "Research: photographs (rolling)", on `research-photos`. Merged.
+
+The three pull requests the standing brief still describes as stale since 4 August — #6 photographs,
+#7 the 1980s, #8 the 2020s — were all closed unmerged on 18 August and need no further handling. The
+brief should stop naming them.
+
+## Merged
+
+**#649** carried one commit and one file, `.research/photo-run-2026-09-30-afternoon.md`. Nothing in
+`data/` was touched: no event, no leader, no portrait, no document. The run tried `wkuherald.com`
+against the 2016-23 officer-portrait gap, found no captioned individual photograph, and added
+nothing. That was the right call, and the second consecutive run to end in an honest nothing.
+
+With no data surface for the traps checklist to bite on, the report's own assertions were verified
+instead. A run log that misdiagnoses a source steers every run after it, which is how the claim
+corrected below survived several passes.
+
+Twelve of thirteen claims held exactly. All 73 leader records carry a portrait; 1994-95, 1995-96,
+2000-01 and 2008-09 are the only years with a portrait and no year-scene photograph; 217 officer
+records lack one, with 2022-23 at 16, 2016-17 at 15, 2017-18 at 14 and 2021-22 at 14; and exactly
+eight in-window records lack one, which is what makes the remaining 209 correct. All five named
+officers carry the titles given them. All three *Herald* articles were opened: post 19382's featured
+image has an empty caption and empty alt text under a hash filename, post 31220 has no featured image
+at all, and post 71533's image is captioned as the executive cabinet in a meeting room on 30 August
+2022. Declining all three was correct. The blocked routes re-tested as described, and so did
+`wku.edu/news`, down to the two press releases the report names.
+
+## What was corrected
+
+One claim failed, and it was rescued rather than cut. The report recorded
+`digitalcommons.wku.edu/talisman/` as behind the same Cloudflare wall as `viewcontent.cgi`. It is
+behind nothing. The path returns a plain 404, as do `talisman_yearbooks`, `talisman-yearbook`,
+`wku_talisman` and `talisman/1975`, while on the same pass `dlsc_ua_records/4686/` answered 200 in
+37 KB — so the host is reachable and only the PDF endpoint is walled. TopSCHOLAR's own communities
+index lists 469 collection slugs and not one matches talisman, yearbook, annual or album. No
+photograph citation anywhere in `data/` has ever used such a URL.
+
+The premise that the 2010s-2020s Talisman volumes live on TopSCHOLAR is therefore unsupported. It has
+been carried in prose — CLAUDE.md's source table included — and never exercised. The paragraph now
+says that, with the evidence, rather than naming a wall that is not there.
+
+This correction reaches further than one log. These reports have been pointing the next run at
+"`talisman/` leads for 2014-15 and 2015-16 through 2019-20" that "need no blocked endpoint at all."
+There is no such route. **The 2016-23 officer gap has no Talisman route at all**, and establishing
+where those volumes actually live is the next photograph run's first job, ahead of re-testing
+anything. Said plainly so it stops being repeated: a lead nobody has opened is not a lead.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 1302 volume-and-number citations each opening the issue it names, 308
+documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%) carrying an account
+of what the person did, 48 people under more than one spelling, a search index of 4949 records.
+Unchanged in every figure for a third consecutive run, which is the honest result of three runs that
+added research logs and no history. `build.py` clean, `check_data.py` exit 0, `check_contrib.py`
+exit 0.
+
+`check_duplicates.py` exits 1, reports only, and its output is byte-identical on `main` — #649
+introduced no pair. All five were judged again and all five are genuinely separate events: a bill
+introduced and the same bill defeated after amendment, a KCLU suit planned and endorsed, a position
+taken on plus/minus grading and legislation passed against it, a $900 card allocation and the *Herald*
+reporting distribution three months later, and two pieces of distinct business from one article. None
+merged.
+
+## Still open
+
+Nothing. The queue is empty.
+
+## Said for a sixth night
+
+The decade routines are still not running. Every research branch in recent memory is
+`research-photos`; everything else is an `editor-*` branch. The 1980s spring-election dating cluster
+has now been waiting twelve days on a routine that has not fired.
+
+Three consecutive photograph runs have now added no history, and that is no longer a discipline
+problem — the discipline has been right each time. It is a supply problem. Two of the three routes
+the photograph queue is meant to use are shut, and the third, as of tonight, is known not to exist.
+The routine is being asked to fill a 2016-23 portrait gap with no source that covers 2016-23. Either
+that gap needs a source nobody has found yet, or the routine's time is better spent on the four thin
+years and the decades that are not running.
+
+## One note on method
+
+When a path fails, record the status code, not a theory about why it failed. "Behind Cloudflare" and
+"404" send the next run to opposite places, and the difference has now cost this project several
+passes.
