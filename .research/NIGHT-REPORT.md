@@ -36330,3 +36330,89 @@ Three mirror hosts have been tried and closed. That queue is blocked, not unfini
 And the thing worth someone knowing, said for the third night: the decade routines are not
 running. Tonight's eighty corrections were work a research routine was assigned nine days ago and
 has not touched. The editor's passes are now the only thing moving.
+
+# 30 September — one PR open, and it added nothing
+
+One pull request was open tonight, #644, the photograph routine's fourth pass at 29 September. It
+is merged. Nothing was cut.
+
+## What was in it
+
+One file: `.research/photo-run-2026-09-29-fourth.md`. No `data/`, no `scripts/`, no `site/`. A
+negative-findings report, and nothing in it reaches the published archive.
+
+That makes most of the traps checklist inapplicable — no events, no officers, no names matched, no
+April result filed forward, no settled fact touched. The one photograph the run examined it
+declined to use, because the two people in it are archives staff at a desk and cannot be
+identified. Declining it was correct, and is the rule working rather than a gap.
+
+## Checked as though it had added something
+
+A report that adds nothing still gets read against its sources. Fifteen claims re-tested from this
+container rather than read back off the last log, and all fifteen held: the 61 years and 73 leader
+records, every one carrying a portrait; the four years with a portrait but no year-scene photograph,
+which are exactly 1994-95, 1995-96, 2000-01 and 2008-09; Todd, Dawson, Johnson and Gilley all
+holding portraits; the seven leads in `_topscholar-wanted.json` that no `note` marks closed, four
+records, two `talisman/` entries and the finding aid, the count and the careful wording both right;
+Turner's portrait from elsewhere and Kappler's absence, so that lead is open only for Kappler;
+`viewcontent.cgi?article=7724` at 403 behind Cloudflare's interstitial; `web.archive.org` resetting
+on the plain fetch and on the `id_` bypass at `20240721095749`, while `archive.org`'s own
+availability API answered cleanly in under a second and confirmed that snapshot exists; the finding
+aid at 200; and its embedded JPEG down to the byte — 3,333,046 bytes, `FF D8`, 2670x3877.
+
+Nothing failed. This routine's reports have been accurate to the byte four passes running.
+
+## Two notes added, neither a correction
+
+`_topscholar-wanted.json`'s own note records that record pages answer 200 to Python `urllib` where
+`curl` is TLS-fingerprint blocked. That reads like a route around the block. It is not one: tried
+against `viewcontent.cgi?article=7724`, `urllib` returns 403 as well. The difference holds for
+landing pages, which already load, and not for the PDF endpoint, which is the one that matters. So
+the report's claim that the queue has no untried routes survives, and is now proved rather than
+assumed. Better to have shut that door here than to have a future run spend a pass on it.
+
+And the network diagnosis wants softening. The proxy does name `web.archive.org:443`, but as
+`ws_closed_mid_exchange` — the tunnel closing after eleven seconds with bytes moving in both
+directions — and it reports no per-host allowlist in force. That is the relay dropping the
+connection mid-exchange rather than a domain being refused, so adding the host to an allowed-domains
+list may not by itself reopen it. The third pass's commit message, which says the block was "traced
+to the container's own network policy", is firmer than the evidence supports. Worth the owner's
+attention, but not settled.
+
+## The duplicate pairs
+
+`check_duplicates.py` output is byte-identical to `main`'s, as it must be when no data file moved.
+The four title pairs and the one same-source pair are all pre-existing and all read as separate
+business: a bill introduced and the same bill failing nine days later, a lawsuit planned and
+endorsed a month apart, a position taken against plus/minus grading and the legislation passed three
+weeks after it, designated-driver cards adopted in November and distributed in February, and two
+distinct items from one *wkuherald.com* article. None merged.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 1302 volume-and-number citations each opening the issue it names, 308
+documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%) carrying an
+account of what the person did, 48 people under more than one spelling, a search index of 4949
+records. Unchanged from last night in every figure, which is the honest result of a run that added
+a research log and nothing else. `build.py` clean, `check_data.py` exit 0, `check_contrib.py`
+exit 0.
+
+## Still open
+
+Nothing. The queue is empty as of this pass.
+
+## Said for a fourth night, and now with the count
+
+The decade routines are not running. Of the last eighteen pull requests on this repository, every
+research branch is `research-photos` — the photograph routine, four passes in a day — and every
+other one is an `editor-*` branch, which is this pass and its predecessors. Not one decade PR in
+two days. The editor is still the only thing moving the archive forward, and the single research
+routine that does run is blocked on two doors and has now spent four consecutive passes
+establishing that they are still shut.
+
+Those passes are honest and accurate; that is not the complaint. The complaint is that they are
+re-proving a known negative. The `talisman/` leads for 2014-15 and 2015-16 through 2019-20 need no
+blocked endpoint at all, and that is where a blocked photograph routine should be pointed until
+`viewcontent.cgi` or `web.archive.org` reopens. The 1980s spring-election dating cluster is still
+waiting on a decade routine that has not run in ten days.
