@@ -36721,3 +36721,141 @@ years and the decades that are not running.
 When a path fails, record the status code, not a theory about why it failed. "Behind Cloudflare" and
 "404" send the next run to opposite places, and the difference has now cost this project several
 passes.
+
+# 30 September 2026 (midday) — a sweep that stopped one column short
+
+## What was reviewed
+
+Nothing was open. `list_pull_requests` returns an empty array for the seventh consecutive run.
+GitHub access was full: the MCP tools answered and `git push --dry-run` reported
+`* [new branch] HEAD -> access-probe`. `gh` is still not installed, which is what
+`AGENT-LANDING.md` says to expect; git was credentialed by hand from `GH_TOKEN` instead.
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, so the drop box was unavailable and
+not needed.
+
+Every branch on origin was measured rather than trusted. `research-photos` is level with `main`.
+The `research-profiles`, `research-senate` and three `research-roster-*` branches have no merge
+base at all — the orphan histories `AGENT-LANDING.md` warns about. The `editor-*` branches that
+report commits ahead are squash-merge leftovers whose remaining diff against `main` is stale, and
+their pull requests are closed. Nothing is unlanded.
+
+The standing brief still names #6, #7 and #8 as stale since 4 August. As last night's report
+said, all three were closed unmerged on 18 August. The brief should stop naming them.
+
+## Merged
+
+**#651**, this pass's own corrections. With nothing to review, the pass went at live content, and
+the sample found something.
+
+A stratified random sample of fourteen sourced events, two per decade, was checked against its
+cited sources. Eleven held exactly. The five *Herald* items were confirmed line by line in
+`herald-index-full.json` — including the Seals and Crofts concert loss of $3,800, which is the
+sort of financial result the advance-notice rule exists for and which passes it: the issue of
+9 November 1976 carries both Don Minton's headline naming the figure and a separate review of the
+night, so it is a report and not a booking. The three sampled bills were read out of their
+mirrored PDFs and match to the dollar and the date, 98-7-F's thirty ashtrays and $500 cap
+included.
+
+One claim is partly unconfirmed and was **not** cut. The minutes of 14 November 1989 confirm
+adjournment at 5.30 p.m., but the scan's text carries no call-to-order time, so the entry's "from
+five o'clock" is unverified. The OCR on that document is poor and a miss is not evidence of
+absence; it wants a reading of the page image, not a deletion. One citation was unreachable, a
+`web.archive.org` capture this container's network policy refuses, as it refused two others.
+
+## What was corrected
+
+The one sampled claim that failed was a date, and chasing it opened a cluster.
+
+The 2023-24 entry on Kurtz seating his Judicial Council was dated 30 August 2023. Its article was
+published Wednesday 30 August and says the senate "hosted their first meeting of the fall semester
+on Tuesday" — 29 August. That is exactly the fault the passes of 29 September were built to fix,
+and it had survived them.
+
+Those passes moved eighty dates and closed by describing the seventy-eight they left as "entries
+whose article names no day, and entries that really fell on a Wednesday." All seventy-eight were
+opened again this pass, seventy-six of them successfully, and that description turned out to be
+right about most and wrong about seven. Their moved table runs from 2011-09-14 to 2023-03-01;
+every one of the seven misses falls at or after January 2023. The first sweep's coverage thinned
+at the recent end rather than stopping, which is a more useful thing to know than that it missed
+one.
+
+Seven dates moved, each on wording quoted in `.research/wednesday-dates-2026-09-30.md`. Two of
+the seven had already stated the right day in their own prose while the `date` field said
+otherwise — the 24th Senate's final meeting reads "met for the last time on April 15" — and an
+entry whose body contradicts its own date is the cheapest of all of these to find. Worth a check
+of its own by a later pass.
+
+One over-claim was trimmed rather than cut. Bill 02-08-F provided that organisations attending the
+November 2002 campus clean-up *would* receive community service hours. The entry said they did. A
+bill is a forward-looking document and proves what was authorised, not what happened, so the
+sentence now says what the bill says.
+
+## What was left alone, and why
+
+Four things an automated sweep would have moved and should not:
+
+- **The Narcan resolution, 15 February 2023.** The article is a follow-up, not a meeting write-up.
+  It dates the vote to 7 February, as the entry's body already does, then adds material that only
+  exists on 15 February — Housing and Residence Life asking to delay installation to 1 August.
+  Moving the date would make that later material anachronistic.
+- **The 23rd Senate's final meeting, 17 April 2024.** The article reads "Tuesday, April 17". The
+  17th was a Wednesday, and the companion article puts the election results at "midnight
+  Wednesday, April 17". The source contradicts itself. Tuesday the 16th is the likely answer and
+  inference is not evidence, so the date stands and the reasoning is on the record instead.
+- **1 February 2023**, whose photograph caption naming Tuesday 24 January is reused from the
+  previous week and describes none of the business in the article. A caption dates a meeting only
+  where the body agrees, which is the difference between this entry and the one that moved.
+- **5 October 2011.** Last night's log recorded that it says "tonight" and names no weekday.
+  Confirmed from the page: its only weekday is an upcoming clean-up.
+
+## The numbers
+
+61 years, 1968 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 1302 volume-and-number citations each opening the issue it names, 308
+documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%) carrying an
+account of what the person did, 48 people under more than one spelling, a search index of 4949
+records. The event count is unchanged, which is right: seven dates moved and one sentence was
+trimmed, and nothing was added or removed. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0.
+
+`check_duplicates.py` reports only, and its output is byte-identical to `main` before this change.
+All five standing pairs were judged separate again. The 2026-27 same-source pair was settled from
+the article rather than from precedent this time: the meeting was Tuesday 22 September, and
+"Elections opened at 8 a.m. today" was written for Wednesday the 23rd, so the mental-health
+syllabus statement and the opening of voting are two events on two days that honestly share one
+article.
+
+Moving 2023-11-29 onto 2023-11-28 puts it beside an entry citing the same article and covering
+three Legislative Operations Committee bills from the same meeting. Same-day legislative business
+is genuinely several events, so both stand, but the three bills are a subset of the eight the
+other entry counts, and the two overlap more than two entries should. Flagged for a merge
+decision, not merged, because nothing in either is unsourced.
+
+## Still open
+
+The Thursday cluster, which is this pass's main bequest. Both Wednesday sweeps looked at one
+column of the week. Events sourced to `wkuherald.com` now run 326 Tuesday, 114 Thursday, 71
+Wednesday, 43 Friday, 21 Monday. The *Herald* printed twice a week for much of the 2000s and early
+2010s, Tuesday and Thursday, while SGA met on Tuesday — so a Thursday-dated meeting write-up from
+those years is the same error, and 114 of them have never been read for a stated day. That is a
+larger set than either Wednesday pass handled and it is sitting on the live site.
+
+## Said for a seventh night, with the cause named exactly
+
+The research routines are switched off, and the trigger list rather than the pull request history
+says so. Of sixteen routines on the account, thirteen recur and **two are enabled**: this editor
+every three hours, and `SGA 60 - portraits` every six. The eleven disabled ones carry no
+`ended_reason` and no `suspension_reason`, which means paused by hand rather than stopped by any
+fault of their own. The six decade routines and the legislation harvest last fired on 4 and 5
+August — eight weeks ago. `person profiles` last fired 24 August, `backlog` and `senate rolls`
+on 25 August.
+
+Three of the eleven were switched off deliberately and the reasons are in this file. The six
+decade routines and the legislation harvest are the ones nothing explains, and they are the ones
+that produce history.
+
+Nothing has been re-enabled. Turning six around-the-clock routines back on is the owner's call and
+not a decision for a review pass, and a deliberate pause and an accident still look identical from
+here. But the effect is now measurable and worth stating plainly: the last four passes have
+corrected dates, trimmed over-claims and audited logs, all of which was worth doing, and not one
+of them has added a fact to the archive, because no routine is looking for one.
