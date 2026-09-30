@@ -1,3 +1,70 @@
+# 30 September 2026 (editor, third pass) — three portraits read back to the page, and one withdrawn on the index
+
+## What was open
+
+One pull request, #653, "Research: photographs (rolling)", on `research-photos`: a single commit,
+authored `SGA 60`, level with `main` and sharing its merge base, adding three Talisman portraits.
+The brief's instruction to rescue or close #6, #7 and #8 is wrong for the sixth consecutive entry —
+all three were closed unmerged on 18 August, numbering now runs past #653, and the line should be
+struck from the brief.
+
+## What was verified
+
+All three claims, there being fewer than eight, read back against the page images themselves rather
+than the citation. The 1975 and 1976 Talisman full texts were pulled from archive.org, and each
+photograph was opened through `iiif.archive.org` and looked at.
+
+**Tom Hayes, 1974-75, kept.** p. 406 carries two people on a rock wall and a caption naming Jay
+Keffer president "(right)" and Hayes vice-president, both holding the freshmen seats on the
+Associated Student Government. The left figure is therefore Hayes, and the crop is that figure. The
+feature's opening lines describe the pair as one white and one black; the cropped man is the Black
+of the two. The back index settles it a third way: `Hayes, Thomas Vernon, Jr. 406, 412` and
+`Keffer, James Thomas 154, 406, 413`.
+
+**John Evans, 1975-76, kept, and strengthened.** The Young Democrats front row on p. 308 is five
+people seated on the ground against three standing rows, matching the caption's five names, and its
+leftmost figure is the group's one Black man — Hayes, named first, which is what fixes the row as
+running left to right and Evans as its fifth and last. The research routine rested that step on its
+own sibling entry; it now rests on the 1975 volume's prose instead. Two checks the routine did not
+have were found and added to the citation: the 1976 index lists exactly one
+`Evans, John David Jr. 63, 308, 378`, p. 63 being the ASG attendance roll that puts him in Congress,
+and p. 378 carries an individual captioned portrait of `JOHN D. EVANS, Prestonsburg` showing the
+same bearded man. The identification is independently corroborated, not inferred.
+
+**Pam Stewart, 1974-75, withdrawn.** The crop is read correctly — p. 344 names senior officers Mike
+Inman and Pam Stewart, the article makes Inman president and Stewart vice-president, and the frame
+holds one man and one woman. What is not established is *which* Pam Stewart, and the archive
+publishes her as one person across two years. The 1975 volume indexes two: Pamela Gail Stewart at
+244, 250, 256, 377, and Pamela Anne Stewart with no page references at all. The archive's existing
+portrait, `1973-74-pam-stewart.jpg`, is Pamela Gail, from the senior grid at p. 377 and tied to the
+secretaryship through the 1974 volume's index. p. 344 is not among Pamela Gail's pages, and that
+index demonstrably reaches p. 344, because it lists `Inman, Michael Thomas 95, 303, 314-315, 344,
+361`. The one finding aid that could tie the woman on p. 344 to the ASG secretary declines to. Read
+off the index page itself, p. 453, not only the OCR. A misidentified face is worse than no face, and
+the 1973-74 entry says in terms that the two Pamelas are not merged here. Barred in
+`_do-not-use.json`, now 99 entries, with the file kept on disk for review.
+
+## What was cut or corrected
+
+Three citation URLs, every one off by a single leaf: `n409` for p. 406, `n347` for p. 344, `n311`
+for p. 308. archive.org's own `scandata.xml` gives leaf 410, 348 and 312, and a reader clicking
+through was landing one page early on all three. Corrected to `n410` and `n312`; the third went out
+with Stewart.
+
+Two labels reproduced 26 and 31 words of yearbook caption verbatim, against the rule that a quote
+runs under fifteen. Paraphrased down, with a one-word quoted fragment kept where the positional
+marker "(right)" is the evidence. This is worth recording as a gap rather than a lapse:
+`check_quotes` in `check_data.py` reads event bodies, leader profile paragraphs and document
+extracts, and does not read `src.label` at all — so photograph credits are the one prose surface on
+the site that the deploy gate never sees. The routine reported both scripts clean and was right to.
+
+## Where it stands
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` reports
+the same four title pairs and one same-source pair as every night this week; none falls in this
+diff, and all were read again and judged separate business. Merged to `main` with two portraits of
+the three, both now rendering on their officer pages. Nothing is left open.
+
 # 30 September 2026 (editor, second pass) — an empty queue, and the quote rule given a check at last
 
 ## What was open
