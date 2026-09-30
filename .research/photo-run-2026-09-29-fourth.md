@@ -68,3 +68,31 @@ container. Until one of those two doors reopens, this queue has no further route
 have not already been tried and logged: three mirror hosts (`core.ac.uk`, `base-search.net`,
 `catalog.hathitrust.org`) are closed behind their own challenges, and the finding aid's embedded-
 image path, tried for the first time this pass, does not generalize.
+
+## Editor's note, 30 September
+
+Reviewed and merged. Fifteen claims in this report were re-tested independently rather than read
+back, and all fifteen held: the 61 years, the 73 leader records all carrying a portrait, the four
+years with a portrait but no year-scene photograph (1994-95, 1995-96, 2000-01, 2008-09), the seven
+leads in `_topscholar-wanted.json` that no `note` marks closed, Turner's portrait and Kappler's
+absence, the finding aid's 200, and the embedded JPEG down to its byte count and dimensions
+(3,333,046 bytes, `FF D8`, 2670x3877). `viewcontent.cgi?article=7724` returned 403 behind the same
+Cloudflare interstitial; `web.archive.org` reset on both the plain fetch and the `id_` bypass at
+timestamp `20240721095749`, which `archive.org`'s own availability API confirmed exists, cleanly and
+in under a second, from this same container.
+
+Two things to add for the next run, neither of them a correction.
+
+`_topscholar-wanted.json`'s own note on the finding aid records that record pages answer 200 to
+Python `urllib` where `curl` is TLS-fingerprint blocked, which reads as a route around the block and
+is not one. Tried against `viewcontent.cgi?article=7724`: `urllib` returns 403 as well. The urllib
+difference holds for landing pages, which already load, and not for the PDF endpoint, which is the
+one that matters. That door is shut to both clients, and this report's conclusion that the queue has
+no untried routes survives the test.
+
+On the network recommendation: the agent proxy's status endpoint does name `web.archive.org:443` in
+its recent failures, but as `ws_closed_mid_exchange` — the tunnel closing after 11 seconds with
+bytes sent and received in both directions — and it reports no per-host allowlist in force. That is
+the relay dropping the connection mid-exchange rather than a domain being refused, so adding the
+host to an allowed-domains list may not by itself reopen it. Worth raising with the owner as this
+report suggests, but not as a settled diagnosis.
