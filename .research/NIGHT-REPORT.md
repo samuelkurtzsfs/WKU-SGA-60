@@ -1,3 +1,119 @@
+# 30 September 2026 (editor, second pass) — an empty queue, and the quote rule given a check at last
+
+## What was open
+
+Nothing. No open pull request, and for the first time this week that is not a figure of speech: the
+API answered, the token pushed, and `gh pr list` — or rather the API behind it, since `gh` is not
+installed in this container — returned an empty set. Numbering runs to #647, merged at 03:32 this
+morning.
+
+The standing brief still names #6, #7 and #8 as stale since 4 August and instructs that they be
+merged, rescued or closed. All three were closed unmerged on 18 August. This is the fifth
+consecutive entry to record it, and the instruction has now been wrong for longer than it was ever
+right. It costs a few minutes a pass to re-establish, and it should be struck from the brief.
+
+Every `research-*` branch was checked for unlanded work rather than assumed empty, because the
+commit counts invite exactly that mistake: `research-roster-2010s` reports 1,144 commits ahead of
+`main`, `research-senate` 980, `research-backlog` 972, and all six decade branches between 50 and
+58. Every one of those is a squash-merge artifact. The content diff against `main` is empty for all
+of them — the branch commits never entered `main`'s history, so the merge base sits at the fork
+point and `rev-list` counts history that landed long ago by another route. Five `research-editor-*`
+branches do carry a real diff, each one entry in this file, and all five were confirmed present in
+`main` by matching their dated headings, not their generic subheadings. Nothing anywhere needs
+rescuing. Nothing needs closing.
+
+## What was checked instead
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` reports
+the same four title pairs and one same-source pair as every night this week, read again and judged
+again as separate business: an introduction is not its own defeat, a plan for a lawsuit is not its
+endorsement, and the two 2026-27 entries sharing one article report a syllabus statement and the
+opening of voting.
+
+The build's one live signal was followed rather than noted: it withdraws a photograph on every run,
+and the withdrawal is correct. `1991-92-stacy-kitchens.jpg` is barred in
+`data/photo-finds/_do-not-use.json` — 98 entries, every one carrying its reason — because the
+identification rested on an uncommon surname and a class year with no caption tying her to student
+government. That is the surname-alone trap, caught and held. The file stays on disk so the
+photograph routine can go on reviewing it, and is kept out of `site/` because it is named for the
+person. `photos.json` makes no claim on it, and the four pages in the built site that match
+`stacy-kitchens` are her own officer page's slug, not a picture: she was a Congress member in
+1990-91 and belongs in the record. No dangling reference.
+
+## The quote rule
+
+With the queue empty the pass went to the rule with the most at stake and the least enforcement.
+The archive gates a deploy on citations, on dates, on files, on legislation and on the Board seat.
+It did not gate on this one: *quote under 15 words, once per source, maximum* — the rule that keeps
+a public site reusing a university collection and a student newspaper on the right side of reuse.
+It had only ever been kept by hand.
+
+It is being kept. **391 quoted spans across every event body, leader profile, document extract and
+document summary. Not one reaches fifteen words.** The longest sit at thirteen, and they are the
+ones that ought to be quoted: a regent on the Gilbane housing deal, a senator on the Jonesville
+scholarship as atonement, a senator calling the Confederate marker compromise what it was.
+
+The "once per source" half looked worse than it is and was read rather than counted. Thirty-nine
+source URLs carry more than one quoted span, but the count is dominated by titles: sixteen from the
+1979 *Talisman* alone, every one a song on a concert bill — "Barracuda," "Crazy on You," "Sam
+Stone." A song title is an identifier, not reproduced prose, and neither is a headline quoted
+beside its citation, which is how this file's own settled-facts section cites the *Herald*.
+Filtering to prose leaves twelve sources with more than one fragment and two whose fragments total
+more than fifteen words across all of them. Both were opened and read, and both are sound. The
+2005-06 pair is the Herald editorial's own title plus one nine-word phrase from its body. The
+2017-18 pair is two different speakers on two different pieces of business — a senator explaining a
+vote against the Lavender Graduation stoles, and the Speaker on a committee-chair bill that failed
+26-2 — eight words each, each attributable, each reported.
+
+**Nothing was cut, because nothing needed cutting.** The finding is that the rule holds.
+
+## The check
+
+The length half is flat enough to gate a deploy, so `check_quotes` now does, in `check_data.py`
+beside `check_citations`. It reads event bodies, leader profiles and document extracts and
+summaries, and fails on any verbatim span of fifteen words or more, naming the entry and the first
+sixty characters so the editor can act. Titles are not exempt: a headline running to fifteen words
+is being reproduced rather than cited, whichever it is.
+
+"Once per source" is deliberately not checked, and the docstring says why. Counting spans per
+source reports song titles and citations, not reproduced text, and a check that fails a deploy over
+"Barracuda" would be worse than no check. That half stays a matter of reading.
+
+Tested both ways, as the citation check was: exit 1 on a sixteen-word span injected into a 1966-67
+event body, exit 1 again with two violations in two different places at once — one in an event, one
+in a profile — and exit 0 on the archive as it stands. One fault was found in the first draft and
+fixed: the note printed "none reaching 15 words" while the run was failing on a span that did
+reach it, which is precisely the script that reports success while producing something wrong that
+this file's docstring is about. It now counts what it found and says so.
+
+## Counts on the merged tree
+
+61 years, 1,968 events, 60 people have been president. 2,651 recorded terms of office held by 1,809
+people, 2,614 of them (98%) with an account of what the person did; 48 people recorded under more
+than one spelling. 1,111 pieces of legislation, every file present and a real PDF. 1,302 citations
+naming a volume and number, each opening that issue. 391 quoted spans, none reaching fifteen words.
+308 documents. Search index 4,949 records.
+
+Every figure but the last two is unchanged from last night, which is the honest result of a pass
+that found nothing to review. No event was added, moved or cut; no leader, year or date touched;
+the settled facts were not reopened.
+
+## For whoever owns the routines
+
+Fifth consecutive entry on the same point, and it is now the only thing wrong with this project that
+an editor cannot fix from here. **The four research routines are not producing.** Of the last
+twenty pull requests, every research branch is `research-photos` and every other is an `editor-*`
+branch. Not one decade PR since 28 September. The photograph routine is running and reporting
+honestly, but it has been blocked on the same two closed routes for a week and its last four passes
+added a research log and no photographs; the one genuinely new thing it has found, the archive.org
+IIIF route merged this morning in #646, is worth a run of its own against the four open leads.
+
+The decade routines — the 1980s, the 1990s, the 2000s, the 2010s, the 2020s — have not opened a
+pull request in two days, and their branches carry nothing unlanded. Either they are not firing or
+they are finding nothing and not saying so. An editor with an empty queue can audit what is
+published, and has now done that five nights running, but it cannot research the years that are
+still thin. That is the bottleneck, and it is upstream of here.
+
 # 29 September 2026 (editor, fourth pass) — one photograph run reviewed and merged, two citations trimmed
 
 ## What was open

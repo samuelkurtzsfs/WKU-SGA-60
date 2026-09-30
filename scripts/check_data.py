@@ -397,6 +397,64 @@ def check_citations(ys):
     note(f"{seen} citations name a volume and number; each opens that issue")
 
 
+QUOTED = re.compile(r"[\u201c\"]([^\u201c\u201d\"]{2,600})[\u201d\"]")
+QUOTE_MAX = 15
+
+
+def check_quotes(ys):
+    """No verbatim span of 15 words or more.
+
+    The archive reuses a university collection and a student newspaper, and the
+    rule it keeps is to paraphrase and link rather than reproduce: a quote runs
+    under fifteen words, once per source. The length half of that is flat enough
+    to gate a deploy, and nothing else here was watching it. The "once per
+    source" half is not checked, and deliberately: a year's concert entries
+    carry song titles, and an entry that cites a Herald issue usually quotes its
+    headline as well as a phrase from the body, so counting spans per source
+    reports titles and citations rather than reproduced text. Judge that one by
+    reading.
+
+    Titles are not exempt either. A headline that runs to fifteen words is
+    being reproduced, not cited, whichever it is.
+    """
+    n = 0
+    over = 0
+    for y in ys:
+        for e in y["events"]:
+            where = f"{y['id']} \"{e.get('title', '')[:48]}\""
+            for m in QUOTED.finditer(str(e.get("body") or "")):
+                n += 1
+                q = m.group(1).strip()
+                if len(q.split()) >= QUOTE_MAX:
+                    over += 1
+                    bad(f"{where}: quotes {len(q.split())} words. The rule is "
+                        f"under {QUOTE_MAX}: \"{q[:60]}...\"")
+        for l in y["leaders"]:
+            for i, para in enumerate(l.get("profile") or []):
+                for m in QUOTED.finditer(str(para or "")):
+                    n += 1
+                    q = m.group(1).strip()
+                    if len(q.split()) >= QUOTE_MAX:
+                        over += 1
+                        bad(f"{y['id']} {l.get('name', '?')} profile para {i + 1}: "
+                            f"quotes {len(q.split())} words. The rule is under "
+                            f"{QUOTE_MAX}: \"{q[:60]}...\"")
+        for d in y.get("documents") or []:
+            for field in ("extract", "summary"):
+                for m in QUOTED.finditer(str(d.get(field) or "")):
+                    n += 1
+                    q = m.group(1).strip()
+                    if len(q.split()) >= QUOTE_MAX:
+                        over += 1
+                        bad(f"{y['id']} document \"{str(d.get('title'))[:40]}\" "
+                            f"{field}: quotes {len(q.split())} words. The rule is "
+                            f"under {QUOTE_MAX}: \"{q[:60]}...\"")
+    if over:
+        note(f"{n} quoted spans, {over} of them {QUOTE_MAX} words or longer")
+    else:
+        note(f"{n} quoted spans, none reaching {QUOTE_MAX} words")
+
+
 def check_counts(ys):
     n_ev = sum(len(y["events"]) for y in ys)
     pres = {l["name"] for y in ys for l in y["leaders"] if l["role"] == "president"}
@@ -415,7 +473,7 @@ def main(argv):
     ys = data["years"]
     for fn in (check_years, check_events, check_leaders, check_seat,
                check_files, check_photos, check_legislation,
-               check_citations, check_counts):
+               check_citations, check_quotes, check_counts):
         fn(ys)
 
     if not quiet:
