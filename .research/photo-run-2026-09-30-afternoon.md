@@ -57,10 +57,23 @@ tree (61 years, every leader portrait present, every year with at least one phot
 
 The 209 missing officer records outside the archive.org Talisman window are concentrated in
 2016-23, and a plain per-person Herald search is not the way in — try the Talisman itself for those
-years instead. `digitalcommons.wku.edu/talisman/` (where the physical yearbook PDFs for 2010s-2020s
-volumes are actually hosted) is behind the same Cloudflare wall as `viewcontent.cgi` and was not
-reachable this session either, so this queue stays blocked on the same access problem the morning
-run already flagged, not on a new one. wku.edu/news was also tried this run: its search parameter
+years instead. But the route named for it does not exist, and this is worth getting on the record
+precisely, because the wrong version of it would send the next run to knock on a wall that is not
+there. `digitalcommons.wku.edu/talisman/`, the path CLAUDE.md gives, returns a plain **404** — not a
+Cloudflare challenge — as do `talisman_yearbooks`, `talisman-yearbook`, `wku_talisman` and
+`talisman/1975`. The host itself is reachable on the same pass: the collection landing page
+`dlsc_ua_records/4686/` answered **200** in 37 KB, and only the PDF endpoint `viewcontent.cgi` is
+walled (403, `cf-mitigated: challenge`, 6,016 bytes). Going further, TopSCHOLAR's own communities
+index lists **469 collection slugs and not one of them matches talisman, yearbook, annual or album**;
+the closest things to it are `dlsc_ua`, `dlsc_ua_records`, `dlsc_ua_wku_gov` and `dlsc_wku_hist`. No
+photograph citation anywhere in `data/` uses a `digitalcommons.wku.edu/talisman/` URL either. So the
+claim that the 2010s-2020s Talisman volumes are hosted on TopSCHOLAR is **unsupported**: the path has
+been carried in prose and never exercised. Until someone establishes where those volumes actually
+live, the archive.org mirror (1971-81, 1986-87) remains the only confirmed Talisman route, and the
+2016-23 officer gap has no Talisman route at all. All paths above were checked on review,
+30 September, one request at a time 3 seconds apart.
+
+wku.edu/news was also tried this run: its search parameter
 (`/news/?s=...`) 301-redirects to `/news/articles/?s=...`, which returns 200 but ignores the query
 entirely — a request for `SGA president` came back with unrelated recent press releases (a Mesonet
 ribbon-cutting, parking updates), not search results. Name-by-name searching does not work against
