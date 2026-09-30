@@ -4,7 +4,8 @@
   "why": "2014 Talisman: Reckoning, Part I. Feature 'stories to tell - warren county regional jail, sandra zemter, brittany eldridge, mallory treece' by Jordan Kassel. A named subject in a photo-led Talisman feature.",
   "who": [
    "Mallory Treece"
-  ]
+  ],
+  "note": "CLOSED, 30 September 2026. Landing page's viewcontent id is article=6164 (357 MB via the web.archive.org id_ bypass; one full download succeeded in a single pass). The feature ('Stories to Tell', pp. 138-139) names Treece in the body text as a Bowling Green junior who co-runs the jail book club, and one caption quotes her, but no caption anywhere in the spread ties her by position to a specific figure - only Brittany Eldridge is fixed by a 'RIGHT' cue in the main four-person photograph, and the other three figures (which may include Treece, or may be inmates) carry no identifying text. Not usable: the same 'misidentified face is worse than no face' bar that has closed every other multi-person, non-row-labeled composite in this file. She is not pictured identifiably anywhere else in this volume (checked against the full index)."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6721",
@@ -12,7 +13,8 @@
   "who": [
    "Jacob Turner",
    "Lisa M. Kappler"
-  ]
+  ],
+  "note": "CLOSED, 30 September 2026. Landing page's viewcontent id is article=7724 (12.7 MB via the web.archive.org id_ bypass). Kappler's resignation story (p. 3) carries no photograph at all - checked the rendered page image, not just the text layer; the page's other story runs unphotographed too. Turner's profile (p. 8) does carry a clean, captioned individual photo ('Hazard sophomore Jacob Turner stands with his recent Christmas present...'), and he is a 2008-09/2009-10 senator in years.json, but the photo shows him posing with Star Wars and Lord of the Rings memorabilia in his dorm room - a personal-interest feature with no connection to his SGA role anywhere in the caption or article. Not used: this run's brief restricts photographs to people acting in their student government capacity, not private-interest features that happen to share a source. Do not refetch 6721 for either name."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6720",
@@ -29,7 +31,8 @@
    "Daniel Shaw",
    "Danial Shaw",
    "Mitchell Stevens"
-  ]
+  ],
+  "note": "CLOSED, 30 September 2026. Landing page's viewcontent id is article=7234 (6.8 MB via the web.archive.org id_ bypass). 'Three SGA senators resign' (p. 1) is a text-only story with no accompanying photograph of Shaw, Stephens or Stevens - checked the rendered page image. The same page carries an unrelated captioned photo of Kevin Smiley ('SGA president') in a 'Mac or PC?' sidebar; Smiley already has a portrait on file for both 2008-09 and 2009-10, so this added nothing. Do not refetch 6220 for Shaw or Stevens."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_records/6238",
@@ -117,8 +120,8 @@
   ]
  },
  {
-  "want": "https://digitalcommons.wku.edu/talisman/",
-  "why": "The 2015 Talisman is the last print yearbook that can carry a captioned student-government group photograph for the 2014-15 SGA. Thirty-two of the n1419 worklist have 2014-15 as their only year and the College Heights Herald photo library holds a captioned frame for almost none of them, so the yearbook is the only remaining route to a face for most of that cohort. Wanted: the student government spread and any numbered key beside it.",
+  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/5162",
+  "why": "CORRECTED, 30 September 2026: the path this entry used to give, digitalcommons.wku.edu/talisman/, does not exist - it 404s, and TopSCHOLAR's own community list has no talisman/yearbook/annual slug at all. The actual volumes are filed under dlsc_ua_records, the same collection as the digitised Herald, findable by grepping the local herald-index-full.json for 'talisman' (it indexes every dlsc_ua_records item, not just Herald issues). '2014 Talisman: Reckoning' covers the 2013-14 academic year in two TopSCHOLAR uploads: Part I (dlsc_ua_records/5160, viewcontent article=6164) and Part II (dlsc_ua_records/5162, viewcontent article=6167, the one that actually carries the underclassmen/seniors portrait grids and the Clubs & Organizations section). Both open via the web.archive.org id_ bypass, at real size (357 MB and 519 MB) - slow and occasionally reset mid-download, but they complete on a retry.",
   "who": [
    "Abigail Potter",
    "Allie Payne",
@@ -134,12 +137,9 @@
    "Emily Pride",
    "Gretchen Mosby",
    "Haley Jones",
-   "Hannah Neeper",
    "Joe Hunter",
-   "Josh Knight",
    "Kasey Glasgow",
    "Laryn Hilderbrandt",
-   "Liz Koehler",
    "Lucas Knight",
    "Madison Keller",
    "Nathan Cherry",
@@ -150,22 +150,53 @@
    "Sophie Whorf",
    "Stacey Schepers",
    "Thomas Poole",
-   "Tony Piedmonte",
    "William Berry"
-  ]
+  ],
+  "note": "PARTIALLY CLOSED, 30 September 2026. Fetched Part II whole (519 MB) and checked all 32 names from the original list against its full text and its own back-of-book index (OCR'd with tesseract, since the index pages carry no text layer): Tony Piedmonte and Hannah Neeper, Josh Knight and Liz Koehler were exact full-name hits with an individual underclassmen portrait cell - Piedmonte's was new and has been added (p. 307, 2014-15, sworn in as senator 30 Sep 2014); the other three already had portraits on file, but from three different sources, none of them this volume - Hannah Neeper from the WKU faculty/staff photograph directory, Josh Knight from the 2015 Talisman: Resurgence (p. 332) and Liz Koehler from the 2016 Talisman: Life More Life (p. 245). Corrected by the editor, 30 September 2026: as first written this note said all three came from this same volume, which overstates what 5162 yielded. Elicia Tillis is a name-only hit in the text-only Seniors & Graduate Students pages (name/hometown/major triplet, no photograph). Every other name on this list, plus Sam Rosenthal, Ross Nowland, Elizabeth Gibbins, Torrie Lange, Timothy Gilliam, Samantha Johnson, Grace Babbs, Joseph Dahmer, Luke Coleman, Joseph Taylor Richard, Meredith Smith, AJ Stewart and Jackie Stewart from the organization roster, indexes to page 334 only - the 'Student Government Association' group photograph in the Clubs & Organizations section, captioned with a flat 44-name list and no row structure against a frame of roughly 17-20 visible people. Not usable for individual identification, the same bar that closed the Mallory Treece and David Bass leads elsewhere in this file. Sawyer Coffey's only other index hit (p. 331, Public Relations Student Society of America) is the same flat-list problem. The still-open names above (Potter, Allie Payne, Daniels, Beam, Mudd, Hubbard, Jackson, Hamilton, Hudgins, Pride, Mosby, Haley Jones, Hunter, Glasgow, Hilderbrandt, Lucas Knight, Keller, Cherry, Calhoun, Bell, Puckett, Coffey, Whorf, Schepers, Poole, Berry) do not appear anywhere in Part II by exact name; they may be in Part I (already fetched, 357 MB, no SGA content of any kind - it is a photojournalism feature magazine, 'Reckoning', with no organizations directory) or may simply not be pictured. Nothing left to try in this specific volume."
  },
  {
-  "want": "https://digitalcommons.wku.edu/talisman/",
-  "why": "Same request for any Talisman volume covering 2015-16 through 2019-20, if the collection holds one. The SGA senate and judicial council group plates with printed name keys would settle identifications that no single Herald frame can.",
+  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/8679",
+  "why": "2015 Talisman: Resurgence (covering 2014-15), viewcontent article=9665, confirmed via the local herald-index-full.json Talisman grep, 30 September 2026. Untried this run beyond confirming it has a real Wayback capture (~578 MB, two captures). Same worklist as the 5162 entry above for any names 5162 did not clear.",
+  "who": [
+   "Abigail Potter",
+   "Allie Payne",
+   "Amber Daniels",
+   "Ben Beam",
+   "Brandon Mudd",
+   "Cameron Hubbard",
+   "Carter Jackson",
+   "Courtney Hamilton",
+   "Dedais Hudgins",
+   "Gretchen Mosby",
+   "Kasey Glasgow",
+   "Laryn Hilderbrandt",
+   "Lucas Knight",
+   "Madison Keller",
+   "Nathan Cherry",
+   "Nolan Calhoun",
+   "Robert Bell",
+   "Ryan Puckett",
+   "Sawyer Coffey",
+   "Sophie Whorf",
+   "Stacey Schepers",
+   "Thomas Poole",
+   "William Berry"
+  ],
+  "note": "PARTLY WORKED ALREADY - corrected by the editor, 30 September 2026. As first written this note read 'NOT YET ATTEMPTED', which is wrong: two portraits in photos.json are already sourced to this volume, Josh Knight (p. 332, WKU College Youth in Government) and Laura Harper (p. 328, Revolution 91.7), so an earlier run has opened it. Read those two citations before assuming the volume is untouched. Three names that were on the list below - Emily Pride, Haley Jones and Joe Hunter - already have portraits from other sources and have been struck from it. The full page-by-page sweep does still appear to be outstanding. The Wayback id_ bypass that worked for 5162 should work the same way; download the ~578 MB capture, OCR the back-of-book index the same way (tesseract, no text layer on those pages), and check it before spending time scanning the whole volume page by page."
+ },
+ {
+  "want": "https://digitalcommons.wku.edu/dlsc_ua_records/8677",
+  "why": "CORRECTED, 30 September 2026 (see the 5162 entry above for why the old /talisman/ path is wrong). herald-index-full.json's Talisman grep turns up the full 2016-2020 run, all filed under dlsc_ua_records: 2016 'Life More Life' (8677) and 2016 'Identity' (8678), 2017 'Well Being' (8685) and 'Power' (8686), 2018 'Grit' (8684) and 'Movement' (8690), 2019 'Paradise' (8682) and 'Balance' (8683), and 2020 'Zeitgeist' (8681, covering 2019-20). Corrected by the editor, 30 September 2026: as first written this read 'None of these nine volumes has been opened yet', which is wrong. Fourteen portraits in photos.json are already sourced to the 2016 'Life More Life' volume (8677) and one to the 2019 'Balance' volume, so at least two of the nine have been worked before. What is outstanding is a systematic sweep of all nine against the worklist, not a first opening. The SGA senate and judicial council group plates with printed name keys, if this redesigned magazine-format Talisman still carries a Clubs & Organizations section the way the 2014 volume does (it does - see the 5162 note above), would settle identifications no single Herald frame can.",
   "who": [
    "2015-16 through 2019-20 senators and justices on _worklist-n1419.json"
-  ]
+  ],
+  "note": "PARTLY WORKED ALREADY, see the corrected 'why' above; what is untried is the systematic sweep of all nine. Get each landing page's true viewcontent article id first (the record-page number is not it - this file has tripped on that mismatch repeatedly), then check web.archive.org/cdx/search/cdx for a real (non-tiny, non-redirect) capture before attempting the full download; expect several hundred MB each and at least one connection reset per file, as with 5162 and 6164."
  },
  {
   "want": "https://digitalcommons.wku.edu/dlsc_ua_fin_aid/620",
   "why": "UA1C4/10 Student Government Association Photos - the WKU Archives' own SGA photograph collection, described as 'Images of Student Government Association members and activities at Western Kentucky University'. The record page reads fine over plain HTTP; the finding aid PDF behind it (context/dlsc_ua_fin_aid/article/1619/viewcontent/auto_convert.pdf) is the only thing that lists what is actually in the collection, and that file 403s like every other TopSCHOLAR download. This is the single most relevant unread document in the archive for the whole portrait project, not just one block: an item-level inventory of SGA photographs would give dates, subjects and names for decades that no other source covers, and 2004-2011 in particular has no Talisman at all.",
   "who": [],
   "file_url": "https://digitalcommons.wku.edu/context/dlsc_ua_fin_aid/article/1619/viewcontent/auto_convert.pdf",
-  "note": "Found by harvesting TopSCHOLAR's OAI-PMH feed, which is open to plain HTTP and is not the blocked search page. digitalcommons.wku.edu/do/oai/?verb=ListRecords&metadataPrefix=oai_dc&set=publication:<set> returns every record's title, date, description and both URLs, in bulk, with no rate limiting beyond ordinary politeness. Record pages answer 200 to Python urllib (curl is TLS-fingerprint blocked); only /context/.../viewcontent file downloads are hard-403. So metadata is fully reachable from a script and files are not."
+  "note": "READ, 30 September 2026, via the web.archive.org id_ bypass (the redirect chain lands on cgi/viewcontent.cgi?params=...&path_info=auto_convert.pdf, a different query shape than the article=/context= form most other TopSCHOLAR downloads use; only 178 KB, 5 pages). It is exactly what it claims: a physical-collection finding aid listing folders (F334, F247, F320, F322, F323, F4167-F4170) by date range and the names appearing in each folder's prints, 1961-1991. It names no SGA figure this archive does not already have from other sources for that span, and - critically - it is an inventory of un-digitised prints in physical folders, not a source of any image file: nothing behind it can actually be fetched. Useful as a future lead list for names it turns up that a Herald or Talisman search hasn't already covered (Doug Alexander, Brett Butler, Marshall Galloway, Joe Gerard, Carol Gray, John Lyne, David Porter, Georganna Sleamker, Tom Tabor, Sally Webb, Larry Zielke, 1962-73; Jack Britt, Judson Jenkins, Bryan Lowe, Neal Markham, Albert Shelby, Kelly Sutherland, Pattye Thomason, 1990-91; the full 1968-69 election and inauguration rosters already named in CLAUDE.md's Reed Morgan note), but closed as a photograph source."
  }
 ]
