@@ -1,3 +1,88 @@
+# 30 September 2026 (editor, fourth pass) — an empty queue, the newest portraits re-derived, and the gate closed on photograph credits
+
+## What was open
+
+Nothing. No pull request is open on the repository. `research-photos` is two commits ahead of
+`main` by count but content-identical to it (`git diff origin/main origin/research-photos` is
+empty), #653 having been squash-merged at 15:39. Every other `research-*` branch ahead of main is
+one of the superseded 4 August snapshots or a spent editor branch.
+
+The brief's instruction to rescue or close #6, #7 and #8 is wrong for the seventh consecutive
+entry. All three were closed unmerged on 18 August; numbering now runs past #653. The line should
+be struck from the brief, along with the "four research routines pushing around the clock" premise
+— only the photograph routine has pushed anything this week.
+
+## What was verified
+
+With no queue, the newest published material was re-derived rather than read: #653's two portraits,
+merged three hours earlier and reviewed by the pass that merged them. Taking that pass at its word
+would have defeated the point, so both were taken back to the page images through
+`iiif.archive.org`, which the previous pass established as the working route.
+
+**Tom Hayes, 1974-75, holds.** p. 406 of the 1975 volume carries two men on a stone wall. The
+caption names Keffer president, marked "(right)", and Hayes vice-president, both holding the
+freshmen seats on the Associated Student Government; the feature's opening line describes the pair
+as one white and one black. On the page image the right-hand figure is the seated white man, so
+Hayes is the standing Black man at left, and the crop is that figure — same afro, leather jacket
+and white V-neck, with the other man's leg at the right edge of the frame. The back index reads
+`Hayes, Thomas Vernon, Jr. 406, 412` and `Keffer, James Thomas 154, 406, 413`.
+
+**John Evans, 1975-76, holds, and the inference is stronger than the citation claims.** The
+citation fixes the front row's order from the 1975 volume's prose: Hayes, named first, is the row's
+one Black man, so the row runs left to right and Evans is fifth and last. The page image gives that
+a second, independent confirmation the citation does not mention — the seated row is five, and the
+only woman in it is third, matching Patricia Cook, named third of five. The order is settled twice
+over. The 1976 index was read off the page rather than the OCR, at p. 431: the Evans column runs
+Janice Fay Smith, then `Evans, John David Jr. 63, 308, 378`, and the facing page resumes at Kermit
+Lee, so there is exactly one John, and the Pam Stewart ambiguity that sank the third portrait has
+no counterpart here. p. 378 carries the individual portrait `JOHN D. EVANS, Prestonsburg`, third of
+nine in a row whose name block runs Emmitt, Epple, Evans — the same bearded man, in the same dark
+shirt with a light collar. Confirmed five ways.
+
+The leaf mapping in the volume's own `scandata.xml` confirms the previous pass's citation
+corrections: printed p. 308 is leaf 312 and p. 406 is leaf 410, as the entries now say.
+
+## What was cut or corrected
+
+The previous pass recorded, and did not act on, a gap: `check_quotes` in `check_data.py` read event
+bodies, leader profile paragraphs and document extracts, and never read `src.label`. That left
+photograph credits as the one prose surface on the site with no gate on it at all. Swept, and the
+gap was not theoretical — **twelve credits reproduced a source caption whole**, all of them
+rendering live, because `site/o/` is gitignored but rebuilt on every deploy:
+
+- the 1976 Panhellenic caption in Susan Hurley's credit, 37 words of it;
+- the 1981 Associated Student Government caption, front row and third row, across four credits
+  (Zoeller, Morris, Sanner twice);
+- the 1981 Kentucky Civil Liberties Union caption in Paul Deom's credit;
+- the 1986 Associated Student Government back row, across five credits (Pack, Scott twice, Peck,
+  Todd);
+- a 15-word Herald headline in Julie Mishchuk's credit.
+
+All twelve paraphrased into the archive's own sentences. Not one name or row position was dropped:
+the row order *is* the evidence for these identifications, so it is all still there, as reported
+fact rather than as the Talisman's text. Three citation labels in `years.json` reproduced a
+15-word headline; each is trimmed to the identifying phrase with the rest moved outside the quote.
+
+`check_quotes` now reads every `src.label` in `years.json` at any depth, and both the captions and
+the credits in `photos.json`. The count of gated spans goes from 391 to 1,303. The gate was tested
+rather than assumed — a reproduced caption and an over-length citation label were injected and the
+script failed on both and exited 1.
+
+One construction is exempt, and narrowly: a credit reading `the archive's record notes: "..."` is
+the archive quoting its own `years.json` note back into the caption, which is neither the yearbook
+nor the Herald. That exemption was checked rather than trusted — all 53 exempted spans were matched
+against `years.json` and every one of them appears in it verbatim. Nothing else is exempt: a group
+caption is the Talisman's text however useful its row order is, and a headline is the Herald's.
+
+## Where it stands
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` reports
+the same four title pairs and one same-source pair as every night this week; none is in this diff,
+and all five were read again and judged separate business — an introduction and a defeat, a scheme
+and its distribution, a suit and its endorsement, a position and the legislation, and two items of
+business out of one article. 61 years, 1,968 events, 60 presidents, 2,651 terms held by 1,809
+people. Nothing is left open.
+
 # 30 September 2026 (editor, third pass) — three portraits read back to the page, and one withdrawn on the index
 
 ## What was open
