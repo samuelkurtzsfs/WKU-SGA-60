@@ -1,3 +1,186 @@
+# 1 October 2026 (editor, third pass) — three report-only branches merged, and the Talisman path in CLAUDE.md found to be a dead URL
+
+## What was open
+
+Three pull requests, all opened this morning, all carrying run reports and nothing else.
+
+- **#657** `editor-2026-10-01`, the 00:28 night report. One commit, 121 lines of this file.
+- **#658** `research-photos`, the 02:00 photograph run. Eight commits, one new file,
+  `.research/photo-run-2026-10-01-scheduled.md`, 68 lines.
+- **#659** `research-editor-1001-second`, the 03:28 second pass. 139 further lines of this file,
+  and a merge of #658 into it.
+
+None of the three touches `years.json`, `photos.json`, `legislation.json`, `data/photos/` or
+`data/documents/`. Every `site/` change in all three is the build date moving from 30 September to
+1 October — the citation line and the footer, 150 lines of it, nothing else. So no new statement
+about the past reached a reader in any of them.
+
+#6, #7 and #8 were closed unmerged on 18 August 2026. Confirmed again from the API. The brief's
+instruction to rescue or close them is wrong for the eleventh consecutive entry.
+
+## What was verified, first-hand rather than taken on the second pass's word
+
+#659 arrives carrying a verification record of #657 and #658. A review that accepts that record
+is not a review, so every claim in it was re-tested from source.
+
+**The fifteen substantive claims in the newest 2026-27 entries all hold.** These are the three
+entries sharing Herald 97612, the newest material on `main` and the ground both earlier reports
+stand on. Both articles were fetched and read in full. The resolution passed unanimously; it asks
+for a bus icon on the iWKU map in place of timetables Terry called inaccurate; Landon Terry,
+sophomore senator, pitched it; SGA turns next to the TopNet interface; Lucas announced the mental
+health and well-being statement for all syllabi from the spring; Carter Smith was sworn in and
+appointed the second student member of the Faculty Senate Undergraduate Curriculum Committee,
+that committee having voted to raise its student representation to two; Amelia Tucker was chosen
+unanimously as homecoming queen nominee; Barker announced the Bluegrass Leadership Scholarship for
+Warren County-area students; voting opened at 8 a.m. and was to close 4 p.m. on 25 September; and
+the four constituencies — 20 freshmen, six Gatton Academy, one international, one graduate — come
+to 28. The co-authorship with Senator at Large Isaiah Wilson and the introduction a week earlier
+are not in 97612 and are not claimed from it: the entry's `src2`, Herald 97229 of 15 September,
+states both outright — "Landon Terry, a sophomore senator, and Isaiah Wilson, a Senator At-Large,
+authored the resolution." Correctly double-sourced, nothing to trim.
+
+The 00:28 report said Smith was sworn in by chief justice Sophie Sterling. The article does say so,
+in a line a paragraph-level extraction misses. The entry itself does not name the swearer, so there
+is no over-claim either way. None of the three entries quotes the paper at all; all three
+paraphrase.
+
+**The six access findings in #658 all hold, re-probed here.**
+`digitalcommons.wku.edu/talisman/` answers a plain 404, with and without the trailing slash.
+`cgi/viewcontent.cgi` answers 403 with `cf-mitigated: challenge` — a Cloudflare bot wall on the
+PDF endpoint. An item landing page, `dlsc_ua_records/7966/`, is a clean 200, so the walling is the
+PDF endpoint and not the host. `web.archive.org` resets at the TLS handshake. `wku.edu/news/tag/sga/`
+301s to `www.` and the `www.` URL is a 404, so it is a 404 at the end of the redirect and not only
+at the start; `/news/category/sga/` is a 404 too. And the archive.org false-200 is real:
+`metadata/talisman1975west` returns 22 files and the title "Talisman (1975)", where
+`metadata/talisman1990west` returns the two characters `{}`. A 200 from that endpoint is not a find.
+
+**The counts were recomputed, not copied.** 73 top-level leader records, every one carrying a
+portrait, none missing. 57 of 61 years hold a year-scene photograph; the four without are 1994-95,
+1995-96, 2000-01 and 2008-09, exactly as reported. 948 executive and senate-officer records, of
+which 217 lack a portrait. Build and `check_data.py` give 61 years, 1,968 events, 60 people have
+been president, 2,651 terms held by 1,809 people, 2,614 of them (98%) with an account of what the
+person did, 48 people under more than one spelling, 308 documents, 1,111 pieces of legislation
+with every file present and a real PDF, 1,302 citations naming a volume and number, 1,303 quoted
+spans and none reaching fifteen words, 4,949 search records. Every figure in both reports matches.
+
+**The barring register holds.** `data/photo-finds/_do-not-use.json` carries 99 entries, two of them
+pointing at `1991-92-stacy-kitchens.jpg` — one filed Stacy Kitchens 1990-91, one Staci Kitchens
+1991-92, barred 22 September because the identification rested on an uncommon surname and a class
+year with no caption tying her to student government. The build withdraws both and the file is
+absent from `site/photos`. The surname-alone trap, caught and held out.
+
+**The attribution scan's hits are false positives, and narrower than reported.** Every match in
+`site/` is the word "philanthropic". The only genuine matches anywhere are three lines in
+`data/herald-photos.json`, captions in which the *Herald* records that its own illustration of
+Cherry Hall was made with Dall-E — the paper describing its own artwork. Those captions do not
+reach `site/` at all. Nothing in the repository or the generated site advertises any tooling, and
+all eleven commits across the three branches are authored `SGA 60` with no trailer.
+
+**The routine census holds, checked against the trigger API directly.** Thirteen SGA routines
+exist. Two are enabled: `editor`, every three hours at :17, and `portraits`, every six at :52. The
+other eleven are off. The six decade routines, the legislation harvest and a second, separate
+`photographs` routine last fired 4 and 5 August; `person profiles` 24 August; `backlog` and
+`senate rolls` 25 August. Not one carries an `ended_reason` or a `suspension_reason`.
+
+## The new finding: CLAUDE.md sends every photograph run to a 404
+
+CLAUDE.md's photograph section lists, first of four places to hunt, "The Talisman yearbooks on
+TopSCHOLAR (`digitalcommons.wku.edu/talisman/`) - every yearbook has a student government section
+with names in the captions. The best source for portraits, decade after decade."
+
+That path does not exist and has not for as long as anyone has checked it. It is a plain 404. The
+photograph routine has reported it closed across several runs and the second pass confirmed it
+again this morning, but each time the finding has been written into a run report while the
+instruction that produced it stayed in the editorial law. A routine that follows CLAUDE.md as
+written begins at a dead URL every time it looks for a portrait.
+
+The collection it is reaching for is on TopSCHOLAR, under a different path. 775 of this archive's
+own photograph citations are labelled from the *Talisman*, and they resolve to
+`digitalcommons.wku.edu/dlsc_ua_records/` — the 1967 volume is items 382 and 383, the 1968 volume
+item 384 — alongside 412 from `archive.org/details/`, whose confirmed window is 1971-1981 and
+1986-87. So the yearbooks are reachable and this archive has been reading them for months; only
+the address in CLAUDE.md is wrong.
+
+Correcting the editorial law is the owner's call, not a review pass's, so nothing in CLAUDE.md has
+been touched. But it is the one change that would make the next photograph run cheaper than the
+last eleven, and it is recorded here rather than in a run report so that it stops being rediscovered.
+
+## What was cut
+
+Nothing. There was nothing unsupported to cut. All three branches are report-only and all three
+reports are accurate.
+
+## One correction to both earlier reports
+
+Both say `check_contrib.py` passes "all sixteen guards". It prints 29. The suite has grown and the
+figure has been carried forward unchecked from an earlier entry. The exit code is 0 either way and
+nothing turns on it, but a number repeated without being recounted is the habit this file exists
+to catch, so it is corrected here.
+
+A smaller one, not a defect: the 2003-04 plus/minus entry calls the president "Bradley" on first
+and only mention. It resolves — John Bradley is the year's president and is named as such on the
+same page — but a reader meeting the surname cold has to look for it. Worth a word on a future
+pass, not a cut.
+
+## The duplicate pairs, judged again
+
+`check_duplicates.py` exits 1 by design and reports five clusters. Read independently of both
+earlier passes, the judgement is the same. No merges.
+
+- **1997-98**, designated driver cards. Bill 97-3-F put $900 of Campus Improvement funds to
+  printing them, first reading 4 November 1997; the *Herald* of 17 February 1998 reported them
+  going out the following day. Funding and distribution, three months apart. The second entry is a
+  model of advance-notice handling: it says the cards *would be* distributed and states outright
+  that the archive holds the issue as a contents listing giving nothing beyond the headline. No
+  crowd, no result, no review. The first entry clears trap 2a explicitly, recording an X on the
+  bill's Pass line rather than reading adoption off a second reading.
+- **1991-92**, the student regent advisory committee. Bill #92-01-S introduced 28 January, failed
+  after amendment 6 February. An introduction and a defeat, and the second declines to guess at
+  the amendment that killed it.
+- **1971-72**, the Kentucky Civil Liberties Union. The union planning court action 29 February;
+  Associated Students endorsing the suit 28 March. A month apart, two issues.
+- **2003-04**, plus/minus grading. Concern voiced 23 September, legislation passed unanimously
+  14 October. A stance and then a vote. The $19,000 Organizational Aid bill of the same 14 October
+  is separate same-day legislative business and stays.
+- **2026-27**, the three entries from Herald 97612 — the resolution, the syllabus statement with
+  the inductions, and the opening of fall voting. Different business from one meeting write-up,
+  which this file's own rule allows.
+
+## What merged, and how
+
+All three. On the brief's test every condition held: `build.py` completes cleanly, `check_data.py`
+and `check_contrib.py` both exit 0, every claim sampled held against its source, and nothing in any
+diff trips the traps checklist.
+
+Before merging, the three were merged locally onto current `main` in order — no conflicts, a real
+merge base for each — and the result rebuilt. The rebuild left the working tree clean, which is the
+check worth recording: the committed `site/` is exactly what a fresh build produces, so no stale
+HTML was published alongside the reports.
+
+#659's tree proved byte-identical to that verified local merge, and it carries the head commits of
+#657 and #658 as ancestors. So it was merged with a real merge commit rather than a squash, which
+publishes precisely the tree that was verified and closed the other two as merged by ancestry
+rather than leaving them to be tidied. Main is at 579d4d79. The queue is empty.
+
+The second pass recorded its merge being refused by its session's permission layer and left a
+verdict of MERGE AS IS on both branches instead. That gate did not appear in this pass: the merge
+was accepted on the first attempt through the same REST API that served the review. So it was a
+condition of that session and not a standing one, and the work it staged has landed intact — which
+is the outcome that staging was for.
+
+## The standing item, now eight weeks old
+
+Eleven of thirteen routines have been dark since early August. The archive is checked, dated and
+tidied every three hours and looked at for portraits every six; nothing is looking for a new fact.
+Six consecutive editor passes have now added none, because none has arrived.
+
+No routine carries an `ended_reason` or a `suspension_reason`. From inside a review pass a
+deliberate pause and a silent failure look identical, and this is the fourth entry to say so.
+Re-enabling them changes the project's output and is the owner's decision, so nothing has been
+switched on. But the brief this pass runs from still opens "Four research routines are running
+around the clock and pushing work to research-* branches," and that has not been true since
+5 August. The archive is being kept honest. It is not being extended.
+
 # 1 October 2026 (editor, second pass) — two report-only branches verified against their sources, and the merge gate closed
 
 ## What was open
