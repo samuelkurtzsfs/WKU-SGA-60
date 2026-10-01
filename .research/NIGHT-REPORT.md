@@ -1,3 +1,177 @@
+# 1 October 2026 (editor, fourth pass) — thirty verified date corrections published, and the officer-portrait count settled after three passes called it unreachable
+
+## What was open
+
+Two pull requests, both merged.
+
+- **#661** `editor-1001-thursday-dates`, the 15:35 correction pass. One commit: thirty wrong dates
+  in `years.json`, one advance notice rewritten, one title trimmed, one duplicated meeting combined,
+  and 149 lines of this file.
+- **#662** `research-photos`, the 20:07 photograph run. One commit, one new file,
+  `.research/photo-run-2026-10-01-second.md`, 101 lines. No change to any data file.
+
+Both branches had their merge base at the then-current tip of `main`, so neither needed the
+conflict work the brief anticipates. #662 was one commit behind once #661 landed; `origin/main` was
+merged into it and the gates were run against the merged tree, not the branch alone.
+
+#6, #7 and #8 were closed unmerged on 18 August 2026. Confirmed again from the API. The brief's
+instruction to rescue or close them is wrong for the twelfth consecutive entry, and the three
+branches it names are the orphan-history ones that must not be merged in any case.
+
+## #661 — the first pass this quarter to change the published record, and it holds
+
+This is the first branch in several days to alter a statement about the past rather than only add a
+report, so it got the fuller treatment. **Twelve of the thirty-one changed entries were spot-checked
+by opening the cited article and reading the stated day off the page. All twelve held**, and the
+arithmetic from publication date to named weekday was right in every one.
+
+The *Herald* printed Tuesday and Thursday through the 2000s and 2010s while SGA met on Tuesday, and
+114 events sourced to `wkuherald.com` carried the publication day rather than the day SGA acted.
+Thirty are now moved. Each article names its own day: "shot down a resolution Tuesday" (22 Oct
+2002), "at the Student Government Association meeting on Tuesday" (26 Aug 2003), "at its banquet on
+Tuesday" (27 Apr 2004), "went into first read at Tuesday night's SGA meeting" (22 Oct 2013), "held
+its first Senate meeting of the year on Tuesday" (29 Aug 2017), "Wednesday night" (10 Apr 2024 and
+12 Nov 2025). All thirty new dates were also checked against the calendar: twenty-eight Tuesdays and
+two Wednesdays, each falling on the weekday its article names.
+
+**The method was tested where it could have failed.** The 2003-08-26 article carries a Ransdell
+quote on *Monday* — the day the branch's first classifier wrongly chose — alongside its own
+"at the Student Government Association meeting on Tuesday". The entry follows the meeting. Anchoring
+the weekday to meeting language rather than to any weekday in the text was the right correction, and
+the page bears it out. Seven further candidates were refused on the record, among them a "last
+Tuesday" that cannot be resolved to one of two Tuesdays. A pass that refuses nothing has not been
+reading; this one refused seven.
+
+**One advance notice removed from the record.** The 2014-04-24 entry had said SGA *held* a campus
+safety walk. Its source reads "The Student Government Association will be holding a campus safety
+walk on Thursday April 24" — future tense, printed the morning of. The entry now says SGA announced
+it and states in its own body that the item was printed in advance and does not report whether the
+walk took place. The date stands, because the notice does fix the day it was scheduled for. The
+2004-08-31 title was trimmed for the same fault caught a step earlier: the article has Patti Johnson
+as "the only student who has shown interest in running for president" with the filing deadline a
+week off, where the title had her "emerged as the only candidate". The body was already right.
+
+**Nothing was cut.** The event count moves 1,968 to 1,967, the single loss being one meeting that had
+been written up twice from two *Herald* reports two days apart, now combined. Checked mechanically:
+**no entry changed year block**, so trap 5 is not engaged, and the two moves that cross a month
+boundary (2 Sep to 31 Aug 2004, 1 May to 29 Apr 2014) stay inside their academic year.
+
+**One gap merged over deliberately rather than overlooked.** The combined meningitis entry carries
+one fact — that the regional campuses differed markedly from main campus — whose source is the
+18 November 2015 report, now named by date in the prose but no longer linked, because an event
+holds a single `src`. Every substantive fact survives and the specifics that carry the claim are all
+in the 19 November article the entry does cite, which was read. The fix is a `srcs` list on events,
+a change to `build.py` and `check_data.py` that needs its own review and does not belong inside a
+correction pass. Blocking thirty verified date fixes over one unlinkable second citation would be
+the wrong trade. **Recorded as outstanding work.**
+
+One pre-existing detail was queried and cleared rather than cut: the KwikBoost entry gives WKU
+Libraries the Owensboro campus, which the article does support — "The fourth would be located on the
+Glasgow campus, and the fifth on the Owensboro campus." No change needed, and it is recorded here so
+a later pass does not re-raise it.
+
+## #662 — nothing added, and the restraint is why it merged
+
+Every count reproduces against the data rather than against the previous report: 73 top-level leader
+records with 0 missing a portrait; 57 of 61 years carrying a scene photograph, the four without
+being 1994-95, 1995-96, 2000-01 and 2008-09; the four priority portraits all on file; and all
+thirteen officer gaps the report names are real open gaps.
+
+The report refused three times where refusing was right. The David Bass caption names four people in
+one group shot with no positional key, so it stays a year photograph and does not become his
+portrait — `1977-78-asg-meeting.jpg` is on file exactly that way, and the report confirms a past
+decision rather than adding anything. Six officers return only alphabetical index hits, refused as
+surname-only. Five 2025-26 senators appear in body text but never inside a captioned `<figure>`, so
+none is used.
+
+**The archive.org route was tested here rather than taken on trust**, because it is what the next run
+will spend hours on and because the last pass found the Talisman path in `CLAUDE.md` to be a dead
+URL. Both endpoints answered first time against `talisman1978west`, with no 403 and no pacing:
+`fulltext/inside.php` returns one match for "David Bass" on **leaf 38**, the exact leaf the report
+cites, with surrounding OCR reading "A LIGHT MOMENT IN AN ASG MEETING"; and
+`BookReader/BookReaderImages.php` returns **451,903 bytes** of real baseline JPEG, `FF D8 FF E0`,
+1518×2059, pulled out of the `_jp2.zip` without downloading the zip. **The route is proven**, and it
+costs TopSCHOLAR nothing. It changes retrieval, not coverage — the gap in those five years is the
+yearbook's own, as the report says.
+
+## The 217 officer-portrait figure reproduces. Stop re-litigating it.
+
+Three prior passes recorded that this number could not be derived from the data, one stating flatly
+that no basis tried reaches it and offering 208 or 226 instead. It has been carried forward under
+protest since late September, drifting 216 to 217.
+
+Twenty-four counting bases were swept — committee chairs in or out, deduplicated by `(year, name)`
+or by name or not at all, leaders excluded or not, matched by `(year, name)` or by name. Exactly one
+lands on 217:
+
+> **executive and Senate officer rows, committee chairs excluded, not deduplicated, matched against
+> `photos.json` by `(year, name)`.**
+
+That is a count of officer *records*, which is the word the reports use. Earlier passes missed it
+because they all deduplicated. The deduplicated figure is **209**, and the difference is exactly
+**eight rows where one person held two offices in the same year** — Ryan Faught 1996-97, Anne
+Guillory 1997-98, Amanda Cole 1998-99, Ian Hamilton and Mark Clark 2017-18, Brenna Mathews 2019-20,
+Zachary Skillman 2021-22, Justin Goins 2022-23. All eight are genuine, none a data fault. Those rows
+span 42 years, which matches the earlier note correcting a "45 years" claim, and the figure sits
+inside the 948 officer records a 1 October entry already recorded.
+
+**So: 217 records, 209 distinct people-years, 42 years, out of 948.** A later pass should quote the
+basis beside the number. The question is closed.
+
+## Traps checklist
+
+Across both diffs: one advance notice found and fixed and one title trimmed, so the count went down
+rather than up; no committee chair recorded as an officer, and in #662 keeping chairs out of the
+officer count is precisely what makes the figure reproduce; no person matched by surname alone, and
+#662 refuses surname-only index hits explicitly; no changed surname creating a duplicate, no person
+added anywhere; no April result moved between academic years; no settled fact touched. On living
+people, the Nick Todd entries report an investigation and both state it was unresolved at the time,
+which is what the source says, and no accuser is named. No contributor edit in either diff; both
+commits authored `SGA 60`, no `Contributed-By` trailer, no tool attribution.
+
+## Gates
+
+Run against the merged tree for both: `build.py` clean, `check_data.py` **exit 0**,
+`check_contrib.py` **exit 0**, `check_duplicates.py` byte-identical to `main`, working tree clean
+after build.
+
+The four title pairs and one same-source pair `check_duplicates.py` reports were judged and all five
+left separate, as `main` had them. Each is two stages of one piece of business rather than one event
+written twice: the 1991-92 regent advisory committee bill introduced 28 January and failing after
+amendment 6 February; the 1971-72 KCLU planning court action in February and Associated Students
+endorsing the suit in March; the 2003-04 plus/minus grading stance in September and the legislation
+against it in October; the 1997-98 driver cards three and a half months apart. The 2026-27
+same-source pair is one article reporting two separate items from one meeting.
+
+**Counts after both merges: 61 years, 1,967 events, 60 people have been president, 2,651 recorded
+terms of office held by 1,809 people, 2,614 of those terms (98%) carrying an account of what the
+person did, 1,111 pieces of legislation with every file present and a real PDF, 1,302 citations
+naming a volume and number, 1,303 quoted spans none reaching 15 words.**
+
+## What is still open
+
+Nothing. The queue is empty again, and both of this pass's branches are merged.
+
+The standing cause is unchanged and this is the ninth consecutive entry to record it: eleven of
+thirteen recurring routines remain disabled — the six decade routines and the legislation harvest
+since 4-5 August — so the only branches reaching this gate are the photograph run and the editor's
+own passes. That is why a correction pass over dates the archive already held was the most valuable
+work available tonight.
+
+Outstanding, in the order a future run should take them:
+
+1. **A `srcs` list on events** in `build.py` and `check_data.py`, so a combined entry can cite both
+   its reports. One citation is already unlinked for want of it.
+2. **The 24 Wayback-wrapped `wkuherald.com` URLs** among the 114 Thursday-dated events that did not
+   answer this pass and are still owed a read.
+3. **2000-01 year photograph** — a date-restricted `search=` against the WordPress install, untried.
+   2008-09 is a dead end rather than unswept, that window never having been migrated; 1994-95 and
+   1995-96 predate `wkuherald.com` and must come from the *Talisman* or the UA1C collections.
+4. **The 1971-1981 and 1986-87 officer portraits** via the now-proven archive.org page-image route,
+   though the gap there is the yearbook's coverage and not the retrieval.
+
+---
+
 # 1 October 2026 (editor, third pass) — three report-only branches merged, and the Talisman path in CLAUDE.md found to be a dead URL
 
 ## What was open
