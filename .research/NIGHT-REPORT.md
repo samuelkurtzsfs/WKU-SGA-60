@@ -37540,3 +37540,152 @@ not a decision for a review pass, and a deliberate pause and an accident still l
 here. But the effect is now measurable and worth stating plainly: the last four passes have
 corrected dates, trimmed over-claims and audited logs, all of which was worth doing, and not one
 of them has added a fact to the archive, because no routine is looking for one.
+
+---
+
+# 1 October 2026, fourth pass — the Thursday cluster, worked
+
+## What there was to review
+
+Nothing. No pull request is open, and none was opened since the third pass merged its
+three report-only branches. GitHub is reachable this run: `gh`'s GraphQL path is refused
+in this container, but the REST path answers, and `pulls?state=open` returns an empty list.
+So the merge gate was never the constraint tonight — there was simply nothing arriving.
+
+The three pull requests this routine's brief still names as stale, #6, #7 and #8, were
+closed by an earlier pass. They need no further handling.
+
+## Why nothing is arriving, confirmed a second way
+
+The routine census was re-read from the trigger list rather than carried over from last
+night's entry. Of sixteen routines, thirteen recur and **two are enabled**: this editor
+every three hours, and `SGA 60 - portraits` every six. The eleven disabled ones carry no
+`ended_reason` and no `suspension_reason`. The six decade routines and the legislation
+harvest last fired on 4 and 5 August; `person profiles` on 24 August; `backlog` and
+`senate rolls` on 25 August.
+
+This is the eighth consecutive pass to record it. The brief this routine runs under opens
+"Four research routines are running around the clock and pushing work to research-* branches."
+That sentence is not true and has not been true since August, which is the whole reason these
+passes keep finding an empty queue.
+
+## The six orphaned decade branches are correctly abandoned
+
+`research-1966-79`, `research-1980s`, `research-1990s`, `research-2000s`, `research-2010s`
+and `research-2020s` all sit 50 to 58 commits ahead of a lineage `main` no longer shares —
+`git diff origin/main...` on each reports "no merge base", the mark of the 28 August history
+rewrite. Each carries about 800 events against main's 1,967.
+
+They were checked rather than assumed dead. Of the entries whose title and source URL are
+both absent from main, every one sampled is present on main **retitled and re-dated**, and in
+three cases re-filed to the correct academic year: Linda Jones's April 1971 election now sits
+in 1970-71, Michael Colvin's April 1990 in 1989-90, Joe Rains's April 1992 in 1991-92. The
+branches hold the pre-correction versions. Merging any of them would reintroduce the
+spring-elections-file-forward error that section 6 of the handoff lists as trap 5. Leave them
+closed.
+
+## The Thursday cluster, which was the last pass's bequest
+
+Last night's entry left 114 events sourced to `wkuherald.com` and dated to a Thursday, in
+years when the *Herald* printed Tuesday and Thursday while SGA met on Tuesday, none of them
+ever read for a stated day. All 114 were pulled and 90 came back; the remaining 24 are
+Wayback-wrapped `wkuherald.com` URLs that did not answer and are still owed a read.
+
+**Thirty dates were wrong and are corrected.** In every one the entry had been filed on the
+date the *Herald* published rather than the date SGA acted, and in every one the article says
+which day that was — "shot down a resolution Tuesday", "approved legislation Tuesday night",
+"held its first Senate meeting of the year on Tuesday", "voted Wednesday night to elect".
+Several of the entries already said "on Tuesday" in their own body while carrying a Thursday
+date, so the file contradicted itself on its face.
+
+The corrected entries run 2002-10-22, 2002-12-03, 2003-08-26, 2003-12-02, 2004-03-16,
+2004-04-20, 2004-04-27, 2004-08-31, 2012-03-20, 2012-09-04, 2013-09-10, 2013-09-24,
+2013-10-22, 2013-10-29, 2014-02-04, 2014-04-29, 2014-11-18, 2014-12-02, 2015-09-08,
+2015-11-17, 2016-01-26, 2017-08-29, 2017-11-28, 2018-09-18, 2018-12-04, 2019-09-17,
+2019-11-05, 2021-11-16, 2024-04-10 and 2025-11-12.
+
+## An advance notice that had been written up as a report
+
+The worst thing the sweep turned up is not a date. The entry at 2014-04-24 read "SGA **held**
+a campus safety walk starting at Centennial Mall at 6:30 p.m." Its source says "The Student
+Government Association **will be holding** a campus safety walk on Thursday April 24." It is
+a notice printed in advance, and the archive had been asserting on the strength of it that the
+walk happened. Rewritten to say SGA announced the walk, with the limit of the source stated in
+the entry: the item does not report whether it took place or who attended. The date stands,
+because the notice does fix the day the walk was scheduled for.
+
+One title was trimmed the same way. "Patti Johnson emerged as the only candidate in the special
+election" rested on an article saying she "is the only student who has shown interest in running
+for president" with the filing deadline still a week off. The body had it right and the title
+overreached; the title now follows the body.
+
+## A duplicate the correction exposed
+
+Moving 2015-11-19 onto 2015-11-17 landed it on an entry already there: the same Resolution
+6-15-F on meningitis vaccination and the same Bill 10-15-F amending the bylaws, one meeting
+written up twice from two *Herald* reports two days apart. Dating one of them to publication is
+what had hidden the pair from `check_duplicates.py`, which compares within a year. Combined so
+that no fact from either is lost — the merged entry keeps the three named regional campuses and
+Glasgow's full-time security officer from one and the comparison with main campus from the
+other.
+
+**One citation was dropped doing it, and that needs the owner's eye.** An event carries a single
+`src`, so the merged entry cites the 19 November report and the 18 November one
+(`wkuherald.com/34232`) is now named in the entry's prose but no longer linked. CLAUDE.md asks
+for both sources cited when two entries are combined, and the event schema cannot hold two. The
+honest fix is a `srcs` list on events in `build.py`, which is a change to the renderer and not a
+review pass's call to make.
+
+## What was looked at and deliberately left
+
+Seven candidates the sweep raised and this pass refused, each for a reason worth keeping so a
+later pass does not re-raise them:
+
+- **2002-08-22**, record enrollment. The only weekday in the article is the Friday the Regents
+  approved a tuition increase, which is not what the entry is about.
+- **2004-04-08**, SGA racing to spend $45,000. A standing-situation piece. The Tuesday mention
+  is Todd advising committees in passing, not a dated decision.
+- **2003-11-20**, the plus/minus petition. The University Senate vote was "3:30 p.m. **today**",
+  so publication day is the right day. The Tuesday in it is only where Bradley spoke. The entry
+  also hedges the vote correctly as expected rather than carried, which is right.
+- **2003-09-11**, the campus safety commission. "announced at **last Tuesday's** meeting" — which
+  of two Tuesdays that means is not decidable from the page, and inference is not evidence.
+- **2014-02-13**, the voided judicial-appointments amendment. The amendment passed on the Tuesday
+  but the entry's headline event is the Executive Council voiding it "after review", which the
+  article does not date.
+- **2015-11-12**, the pub-naming ballot. The entry dates its own key fact to 5 November; the
+  Tuesday in the article belongs to other business.
+- **2025-09-11**, Swipe it Forward. The Monday and Wednesday in the article are candidate code
+  meetings, nothing to do with the entry.
+
+## A method fault worth recording
+
+The first classifier written for this ran on a verb whitelist and picked the wrong weekday on
+2003-08-28, reading a Ransdell quote on Monday over the article's own "at the Student Government
+Association meeting on Tuesday". Rewritten to anchor the weekday to meeting language instead.
+Even then, roughly half of what it proposed was wrong and was caught only by reading the
+article: unrelated weekdays, "last Tuesday", and on four of the newer pages the extractor had
+pulled the site's "most read" sidebar into the article body. **Nothing here was applied from the
+classifier's verdict.** Every one of the thirty moves was read on the page first, which is the
+only reason the seven refusals above are refusals. That matches the handoff's note that all
+fifteen branch histories needed correction before publishing.
+
+## Still open
+
+- **24 Thursday-dated entries never read**, all Wayback-wrapped `wkuherald.com` URLs that did
+  not answer this run. They are the remainder of this cluster.
+- **67 Wednesday-dated and 39 Friday-dated** `wkuherald.com` events. Two earlier passes looked at
+  Wednesday; neither read for a stated day the way this pass did for Thursday, and the Thursday
+  rate was 30 wrong in 90 read. The same test should be run on both.
+- **A `srcs` list for events**, so a merge of two write-ups of one meeting can cite both.
+- The eleven paused routines. Turning them back on is the owner's call and not a review pass's.
+
+## The numbers
+
+61 years, **1967 events** (1,968 before: thirty dates moved, one pair merged, nothing added and
+nothing cut), 60 people have been president, 1111 pieces of legislation with every file present
+and a real PDF, 1302 volume-and-number citations each opening the issue it names, 308 documents,
+2651 recorded terms of office held by 1809 people, 2614 of them (98%) carrying an account of what
+the person did, 48 people under more than one spelling, a search index of 4949 records.
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, and `check_duplicates.py`
+byte-identical to `main` once the merge above was done.
