@@ -1,3 +1,124 @@
+# 1 October 2026 (editor) — an empty queue, and the census that explains it
+
+## What was open
+
+Nothing. No open pull requests at all: `pulls?state=open` returns an empty list, and numbering
+now runs to #656, merged at 00:0x this morning. This is the first pass in this file's recent run
+to find the queue genuinely empty rather than holding one photograph branch.
+
+The brief's instruction to rescue or close #6, #7 and #8 is wrong for the ninth consecutive
+entry. All three were closed unmerged on 18 August 2026. The line should be struck.
+
+`research-photos` still shows five commits ahead of `main` and is the one branch worth checking
+rather than assuming. It is not stranded work. A tip-to-tip diff against `main` carries a single
+difference — 86 lines of this file that the branch lacks — so every fact it holds, the Piedmonte
+portrait included, is already published. The five commits are squash-merge residue. Nothing was
+lost by there being no pull request for them.
+
+## What was verified
+
+With no diff to sample, the spot-check went to the newest material on `main` instead: the three
+entries of 22 and 23 September 2026 that `check_duplicates.py` flags as one meeting written up
+more than once. Twelve claims were read against the two Herald articles, fetched and read in
+full.
+
+Eleven held on the first article (97612). Resolution 4.6 F passed unanimously; Landon Terry,
+sophomore senator, pitched it; SGA turns next to the TopNet interface; the mental health and
+well-being statement goes onto all syllabi from the spring; Carter Smith sworn in by chief
+justice Sophie Sterling and appointed the second student member of the Faculty Senate
+Undergraduate Curriculum Committee, that committee having voted to double its student
+representation; Amelia Tucker chosen unanimously as homecoming queen nominee; Barker on the
+Bluegrass Leadership Scholarship; voting open at 8 a.m. and closing 4 p.m. on 25 September; and
+the four constituencies that come to 28 — 20 freshmen, six from the Gatton Academy, one
+international and one graduate candidate.
+
+Two claims in the Resolution 4.6 F entry are not in that article: the co-authorship with Senator
+at Large Isaiah Wilson, and the introduction a week earlier. Both are carried by the entry's
+`src2`, the Herald of 15 September (97229), which states them outright — Terry and Wilson
+authored it, sponsored by the Community Relations and Action and Opportunity committees, proposed
+that week to be voted on the next. The entry is correctly double-sourced and nothing in it needed
+trimming. Recorded here because a reader checking only the first citation would think it
+over-claimed, and the next pass should not cut it on that reading.
+
+One apparent discrepancy is not one. The entry names the body the Mental Health and Well-Being
+Committee where the Herald writes "SGA Mental Health Committee"; the longer name is the
+committee's own and is attested 23 times elsewhere in `years.json`. The paper's is shorthand. The
+file is inconsistent between "Well-Being" (4) and "Wellbeing" (19); flagged, not fixed.
+
+## What was cut
+
+Nothing. There was nothing unsupported to cut.
+
+## The duplicate pairs, judged
+
+Five clusters, none of them a duplicate, no merges made.
+
+- **1997-98**, designated driver cards. Bill 97-3-F put $900 of Campus Improvement funds to
+  printing them on 4 November 1997; the Herald reported them going out on 18 February 1998.
+  Funding and distribution, three months apart. Both stay. The second entry says in terms that
+  the archive holds only a contents listing and claims nothing beyond the headline, which is the
+  right handling of an advance notice.
+- **1991-92**, the student regent advisory committee. Bill #92-01-S introduced 28 January;
+  failed after amendment 6 February. Introduction and defeat are two events, and the second
+  already cross-references the first and declines to guess at the amendment.
+- **1971-72**, the Kentucky Civil Liberties Union. The union planning court action, 29 February;
+  Associated Students formally endorsing the suit, 28 March. A month apart, two Herald issues.
+  The 28 March 'Vote Yes' entry notes a mini-concert advertised in the same issue and correctly
+  writes nothing about the night.
+- **2003-04**, plus/minus grading. Concern voiced at the 23 September meeting; legislation
+  passed unanimously on 14 October. A stance and then a vote.
+- **2026-27**, the three entries above. Different business from one meeting write-up, which this
+  file's own rule allows.
+
+## The state of the record
+
+Build clean. `check_data.py` exit 0 — 1,111 pieces of legislation with every file present and a
+real PDF, 1,302 citations naming a volume and number, 1,303 quoted spans and none reaching
+fifteen words. `check_contrib.py` exit 0, all sixteen guards passing. `check_duplicates.py`
+exits 1 by design and reports only.
+
+61 years, 1,968 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 2,614 of them (98%) carrying an account of what the person did. 48 people recorded
+under more than one spelling or name. 308 documents, 1,111 legislation files, 4,949 search
+records.
+
+The barring register is doing its work: the build withdrew two entries, both pointing at
+`1991-92-stacy-kitchens.jpg`, and the file is absent from `site/photos`. It was barred on
+22 September because the identification rested on an uncommon surname and a class year with no
+caption tying her to student government — the surname-alone trap, caught and held out.
+
+No tool attribution anywhere in `site/` or `data/`. The three apparent hits are a false positive
+each: "philanthropic", three real people named Claude in the Herald photograph index — Jarman,
+Carriere and a former WKU professor named Evard — and a Herald caption recording that the paper's
+own illustration was made with Dall-E. All legitimate archive content.
+
+## Why the queue was empty
+
+Two of sixteen routines are enabled: `SGA 60 - editor`, every three hours, and
+`SGA 60 - portraits`, every six. The other fourteen are off, none carrying an `ended_reason` or
+`suspension_reason`, which means paused by hand rather than stopped by any fault.
+
+The six decade routines and the legislation harvest last fired on 4 and 5 August — eight weeks
+ago. `person profiles` last fired 24 August; `backlog` and `senate rolls` on 25 August.
+
+This is the second entry to say so and the first in which it produced an entirely empty queue.
+The brief this pass runs from still opens "Four research routines are running around the clock
+and pushing work to research-* branches." That has not been true since August. The effect is now
+unambiguous: the archive is being checked, dated and tidied on a three-hour cycle, and nothing is
+looking for a new fact. Five passes have added none.
+
+Nothing has been re-enabled. Switching six around-the-clock routines back on is the owner's
+decision and not a review pass's, and a deliberate pause still looks identical from here to an
+accident. But an editor with nothing to edit is the cost of leaving it unanswered.
+
+## Standing item
+
+The push token is a fine-grained personal access token with write rights on this repository, and
+earlier entries recommended rotating it because it had reached a ninth session log. It has now
+reached another: this pass printed it to its own transcript while testing for its presence, which
+was careless. It is in no file, and `git grep` for its value across the tree returns nothing. The
+recommendation stands rather than being new.
+
 # 30 September 2026 (editor, fifth pass) — one portrait verified to the page, and a worklist that sent the next run to volumes it had already read
 
 ## What was open
