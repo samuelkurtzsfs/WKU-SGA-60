@@ -37863,3 +37863,110 @@ and a real PDF, 1302 volume-and-number citations each opening the issue it names
 the person did, 48 people under more than one spelling, a search index of 4949 records.
 `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, and `check_duplicates.py`
 byte-identical to `main` once the merge above was done.
+
+# 2 October 2026 (editor, scheduled) — a report-only branch, checked at its sources rather than taken on trust
+
+## What there was to review
+
+One open pull request, #664, `research-photos`, "photographs — 2 October run, ten more officer
+names exhausted". 89 changed files, 237 insertions and 150 deletions, which reads like a
+substantial branch and is not one. The three branches the standing brief still names as stale —
+#6 photographs, #7 the 1980s, #8 the 2020s — were already closed unmerged before this run. They
+need no further action and the brief can stop carrying them.
+
+## The branch adds nothing to the archive, established mechanically
+
+Not read off the run's own summary. No file under `data/` is touched at all; `data/photos.json`
+and `data/photos/` are byte-identical to `main`; and the whole of the 88-file `site/` diff is one
+string, the build date `1 October 2026` turning into `2 October 2026`. Filtering the date lines
+out of the site diff leaves an empty set. `build.py` then regenerated `site/` with zero diff
+against what was committed, so the tree is real build output and nobody hand-edited it. Real merge
+base, branch current with `main`, both commits authored `SGA 60`, no tool attribution in either
+message.
+
+## Its own counts, checked against the data instead of the note
+
+The log asserts figures that are cheap to confirm and were confirmed: 61 years; 73 top-level
+leader records with none missing a portrait; 217 executive and Senate officer records still
+without one; and exactly four years carrying no scene photograph, 1994-95, 1995-96, 2000-01 and
+2008-09. All four match. `check_data.py` independently prints the same spine the note claims —
+61 years, 1967 events, 60 people have been president.
+
+## The negative findings, verified at source
+
+On a report-only branch the claims that carry weight are the ones about what is *not* there, and a
+run that says it searched and found nothing is the easiest kind of run to fake. Each was retested:
+
+- `viewcontent.cgi?article=7642` answers 403 while a plain landing page on the same host answers
+  301, so the wall is on that one route and the host is otherwise reachable, exactly as described.
+- `web.archive.org` returns `curl: (35) Recv failure: Connection reset by peer`, verbatim.
+- The five archive.org Talismans said to be absent — 1994, 1995, 1996, 2001, 2009 — all return
+  `{}`. One request reset mid-sweep, so rather than treat an empty object as proof a control was
+  established first: `talisman1975west` returns a populated object on three attempts, and 1996
+  returns `{}` on retry. `{}` means "no such item" here, so the finding rests on a tested signal
+  and not on transport noise.
+- `wkuherald.com`'s earliest post is 20 August 2002, the floor claimed.
+- The 2008-09 window returns zero posts for `search=SGA` **and** zero posts of any kind, while a
+  2015-16 control returns SGA posts normally. That is a migration gap rather than a tagging
+  artifact, which is the note's own reasoning and the right ground for closing a gap year.
+- Full-name searches for Stefanie Sharpensteen, Jenna Haugen and Andy Vandiver return nothing, and
+  ShyAnte'e Williams nothing under either spelling tried.
+
+## Merged, with nothing cut, and two notes that are not grounds for a cut
+
+"Zero hits of any kind" is overstated for **Josh Fries**: a full-name search returns one 2020
+athletics honour-roll listing. It is not the 2006-07 officer and carries no photograph, so the
+operative finding stands. It is worth recording because the discipline around it was right. Bare
+`Vandiver` returns three unrelated items and bare `Fries` returns mostly fried potatoes — late
+night cravings, a ranking of the eateries in the Commons. Matching either on surname alone would
+have hung a food listicle on a student government officer, which is trap four in the handoff
+almost to the letter. The run refused that, and refused the Judicial Council image whose caption
+names nobody and the LinkedIn profile that is not a usable source here, for the same reason. The
+second note is smaller: the earliest-post id reads 58031 in the log where the API gives 58010 for
+20 August 2002. The date is the load-bearing half and it is exact.
+
+## The duplicate pairs, judged
+
+`check_duplicates.py` reports four title pairs and one same-source pair. All five are pre-existing
+on `main` — this branch changes no data — and all five are separate events. A bill for a student
+regent advisory committee introduced on 28 January 1992 and the same bill failing after amendment
+on 6 February. The Kentucky Civil Liberties Union planning court action in February 1972 and
+Associated Students formally endorsing the suit a month later. SGA voicing concern over plus/minus
+grading on 23 September 2003 and passing legislation against it on 14 October. Bill 97-3-F funding
+designated-driver cards in November 1997 and the *Herald* reporting their distribution in February
+1998 — and that second entry states plainly that the archive holds only a contents listing, which
+is the advance-notice rule being obeyed rather than breached. The 2026-27 pair reports two items of
+business out of one meeting write-up. Nothing merged.
+
+The build's "withdrew 2 photograph(s)" line is `_do-not-use.json` working: barred surname-only
+identifications kept off the site.
+
+## No research is sitting unlanded
+
+Every `research-*` branch was checked for content absent from `main`, not just for commit counts,
+because a branch can sit two thousand commits ahead and differ in nothing. Four do differ —
+`research-editor-0927-sixth`, `-0927-third`, `-0929-fourth`, `-0929-scheduled` — each by one
+append to this file. All four are already on `main` by another route; their headings are here
+word for word. Nothing is lost, and no decade or roster branch holds an unmerged fact.
+
+## Still open
+
+- The four year-photograph gaps (1994-95, 1995-96, 2000-01, 2008-09) are closed to every open
+  route. Only `viewcontent.cgi` and the Wayback officer pages could move them, and both were shut
+  again this run. They have reopened briefly before, so they are worth a cold retry each run.
+- The 217 officer portraits, which the run reasonably asks be treated as exhausted on
+  `wkuherald.com` absent a new source.
+- Inherited and untouched by this pass: the 24 unread Thursday-dated entries, the 67 Wednesday and
+  39 Friday `wkuherald.com` events awaiting the same stated-day test, a `srcs` list so a merged
+  write-up can cite both articles, and the eleven paused routines, which remain the owner's call.
+
+## The numbers
+
+61 years, 1967 events, 60 people have been president, 1111 pieces of legislation with every file
+present and a real PDF, 1302 volume-and-number citations each opening the issue it names, 1303
+quoted spans none reaching 15 words, 308 documents, 2651 recorded terms of office held by 1809
+people, 2614 of them (98%) carrying an account of what the person did, 48 people under more than
+one spelling, a search index of 4948 records. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0 on all seventeen checks, `check_duplicates.py` reporting the five
+pre-existing pairs judged above. Nothing was added to the archive and nothing was cut from it;
+the live site changes by one date.
