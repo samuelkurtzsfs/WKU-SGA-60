@@ -37970,3 +37970,177 @@ one spelling, a search index of 4948 records. `build.py` clean, `check_data.py` 
 `check_contrib.py` exit 0 on all seventeen checks, `check_duplicates.py` reporting the five
 pre-existing pairs judged above. Nothing was added to the archive and nothing was cut from it;
 the live site changes by one date.
+
+# 2 October 2026 (editor, scheduled) — an empty queue, and the Wednesday and Friday date clusters worked
+
+## What there was to review
+
+Nothing. `gh` reaches GitHub on the REST path (GraphQL answers 403 here, which is a tooling
+limit and not the platform gate), and the open pull request list is empty. Every `research-*`
+branch was checked for content absent from `main` rather than for commit counts: `research-photos`
+has a real merge base and a zero diff, and the six 4 August decade branches plus `research-senate`
+and `research-profiles` have **no merge base at all** — they are snapshots of the superseded
+repository, and a three-dot diff against them silently reports nothing, which is how a run could
+talk itself into believing they hold unlanded work. Compared file by file they differ in the 2,498
+files of that old tree, not in research. The brief's #6, #7 and #8 were closed unmerged long ago.
+`main` was already current: the three commits on it since the last pass are that pass.
+
+So the run was spent on the fault the last pass named as its bequest: **67 Wednesday-dated and 39
+Friday-dated `wkuherald.com` events that had never been read for a stated day**, after the Thursday
+sweep found 30 wrong in 90.
+
+## The method, which is the same one and for the same reason
+
+116 candidates (73 Wednesday, 43 Friday) were pulled through the paper's WordPress API, which
+returns the article body and its true publication time. 112 came back. The four that did not are
+Wayback-wrapped URLs, and `web.archive.org` still answers `Recv failure: Connection reset by
+peer` — the same wall that holds the 24 unread Thursday entries.
+
+A classifier surfaced the 48 articles carrying a weekday next to meeting language. **Nothing was
+applied from its verdict.** Every one of the moves below was read on the page first, which is the
+only reason the refusals are refusals.
+
+The test applied, stated so a later pass can hold to it: a date moves only where the article names
+the day — a weekday or a calendar date — **for the entry's own headline event**. Where the day is
+only deducible, from the weekly cadence or from a forward reference like "SGA will meet again next
+Tuesday", the publication date stands and the entry is listed below instead. A date is a claim, and
+inference is not evidence.
+
+## Twenty-three dates were wrong and are corrected
+
+In every case the paper published on one day and SGA had acted on another, and the article says so:
+"At Tuesday's Student Government Association meeting", "passed Tuesday night at the SGA's regular
+weekly meeting", "during a Wednesday, Feb. 7 censure hearing", "met Thursday, March 28".
+
+Nine of the entries **already contained the right date in their own prose** while carrying the wrong
+one in the date field: 2010-11-19 said "at its Nov. 16 meeting", 2010-12-10 said "at the Dec. 7
+meeting", 2019-04-17 said "announced at SGA's election party on 16 April", 2024-02-09 opened "At a
+Feb. 7 hearing", 2023-04-13 opened "At the April 11 meeting". The file contradicted itself on its
+face, and the site published both halves.
+
+Moved: 2010-11-19 to 11-16, 2010-12-10 to 12-07, 2011-05-06 to 05-03, 2011-09-30 to 09-27,
+2012-02-24 to 02-21, 2012-09-26 to 09-25, 2013-02-08 to 02-05, 2014-09-03 to 09-02, 2015-11-10 to
+10-20, 2018-10-03 to 10-02, 2019-01-30 to 01-29, 2019-04-17 to 04-16, 2019-09-04 to 09-03,
+2021-01-20 to 01-19, 2023-04-13 to 04-11, 2023-11-01 to 10-31, 2024-02-09 to 02-07, 2024-03-29 to
+03-28, 2025-03-26 to 03-25, 2025-04-04 to 04-03, 2025-04-18 to 04-17, 2025-11-12 to 11-11 and
+2026-02-04 to 02-03. A twenty-fourth, 2018-01-30, moved to the 29th and was then merged into the
+sibling entry already sitting there, so it is counted among the merges below and not here.
+
+Two were worse than a two-day slip. **2015-11-10 was out by three weeks**: Richey announced the
+regional-campus listening tours in the meeting of Tuesday 20 October, and the entry had been filed
+on 10 November, the date of the first tour. **2018-01-30 moved to the 29th** on the article's own
+opening sentence, which dates the Judicial Council's emergency meeting to Jan. 29, and landing there
+exposed the duplicate described below.
+
+Three of the moves rest on internal consistency rather than a stated weekday, and are marked as
+such because the ground is weaker: 2012-09-26, 2021-01-20 and 2023-04-13 each sat on a different
+date from a sibling entry drawn from the identical article about the identical meeting, so the
+archive was asserting one meeting on two days. Each was brought onto the date its sibling already
+carried, which is the Tuesday the senate sat. Nothing new is claimed by doing it.
+
+## Four duplicates the corrections exposed, and why no checker had them
+
+Dating one write-up of a meeting to publication day hides it from `check_duplicates.py`, which is
+the 2015-11-19 lesson from September repeating four more times. Each pair was combined so that no
+sourced fact from either is lost.
+
+- **The 2011 tobacco vote.** Two *Herald* reports, 14 and 16 September, of one Tuesday vote. The
+  merged entry keeps Egerer's "if and only if", the unanimity without abstentions, and that of the
+  three bodies Ransdell named SGA alone attached the housing condition.
+- **The 2013 constitution overhaul.** Both entries cited the **same URL**, three days apart. Merged,
+  keeping Alvey's article-by-article account, the 19 February first presentation and the
+  regional-campus guarantee he liked most.
+- **The 2013 short meeting.** Merged into the correctly dated 15 October entry, keeping Resolution
+  3-13-F, Laura Harper as its introducer, Bill 2-13-F and the two bills in first read.
+- **The 2018 emergency hearing.** Two entries, one article, one hearing. Merged, keeping sections
+  2.7.3 and 2.7.5, Wyer's argument that a referendum is not an election, Hurst's 119 against 117
+  and 116, Houston's counter, the finding that the board had complied, the censure of Hurst and
+  its confirmation by the senate on 6 February.
+
+`check_duplicates.py` reported none of the four, and its design is the reason rather than a bug: a
+same-source pair is surfaced only when it also shares a bill number, a sum, a vote tally or two
+named people. A pair that shares nothing but the URL slips through. Widening that gate is a change
+to a validator and not a review pass's call, so it is recorded here and not made. The archive-wide
+scan behind this finding is worth keeping: of 41 `wkuherald.com` articles cited by more than one
+entry, all but these were genuinely several items of business from one meeting.
+
+## One citation was pointing at the wrong article
+
+The worst thing the sweep turned up is not a date. **2017-11-14, Hidden Hacks of the Hill** asserted
+that WKU hosted the event, named the three offices that had booths and quoted what a senator said
+there — and cited the *Herald* of 1 November, which is the bill's funding story and says only that
+the booths "will have" a presence at an event thirteen days off. On that source alone the entry was
+an advance notice written up as a report, trap one almost to the letter.
+
+It was rescued rather than cut, because the research was sound and only the citation was wrong. The
+real report exists: Singleton, "Students learn the hidden hacks of the Hill", 16 November 2017
+(`wkuherald.com/27004`). It confirms every detail — the event hosted Tuesday morning in Downing
+Student Union, the Writing Center, the Counseling and Testing Center and the WKU Food Pantry
+represented, Gangavelli on the White, Red and Purple lines and on the Grise Hall lift. The entry now
+cites it, and the funding article is named in the prose so both halves stay traceable.
+
+One over-claim was trimmed the same way: the title "Safe Ride ran a booth at **Homecoming**
+tailgating" rested on an article that says "home football game" and never says Homecoming.
+
+## What was looked at and deliberately left
+
+Ten candidates refused, each for a reason worth keeping so a later pass does not re-raise them. In
+every one the article names a weekday that is not the entry's event, or names none at all:
+
+- **2012-11-14**, retention. "Reconvening after Election Day"; the only weekdays are a cancelled
+  future meeting and a Glasgow session.
+- **2013-02-08**, Safe Rides returning. The Tuesday is only where Rowland spoke.
+- **2012-11-30**, Glasgow's constitution. "SGA will vote on the resolution on Tuesday" is future.
+- **2019-02-13** and **2019-02-20**, the study abroad bill. Both name only the *next* meeting.
+- **2019-10-02**, the cancelled meeting. Dates the meeting it cancelled, not the one that voted.
+- **2020-09-25**, the town hall. "Tonight" in a piece filed at 15:45 does not fix a day.
+- **2020-09-30**, the virtual election party, and **2021-01-20** before it was moved on other
+  grounds, and **2020-10-28**, the first bill. Each is deducible — "no SGA meeting next Tuesday due
+  to Election Day" pins 2020-10-28's meeting to 27 October about as firmly as a forward reference
+  can — and none is stated. They are the strongest of the refusals and the first place a pass with
+  SGA's own minutes should look.
+
+Nine more were read and confirmed **right as they stood**, which is worth recording because the
+weekday in the article is not always the answer: 2015-03-04, 2016-10-12, 2020-03-11, 2020-09-23,
+2023-02-17, 2023-04-19, 2023-10-18, 2024-04-10, 2024-11-06, 2025-11-12 twice, 2026-06-05 and
+2026-09-23. **2024-04-17 is the instructive one**: the article reads "Tuesday, April 17" and April 17
+was a Wednesday, so the paper's own weekday is wrong and the date field is right. A sweep driven by
+weekdays would have moved it.
+
+2026-09-23 was also checked claim by claim after a first careless probe suggested its source did not
+support it. The probe was at fault: the article carries the 8 a.m. opening, the 4 p.m. close on
+Sept. 25, the 20 freshman, six Gatton, one international and one graduate candidate, and Barker's
+line about engagement. The entry is sound, and its arithmetic to 28 is its own and said to be.
+
+## The living-person entries in this diff
+
+Four of the corrections touch conduct cases — the León censure, the Hurst hearing, the 2016
+resignations and the 2020 resignation over a slur video. Each was re-read against its source. All
+four report only what the paper reported, name no accuser who was not named publicly, and state an
+outcome: the 6-0 censure with no further action, the finding that the board had complied, the
+investigation dropped because those involved had left SGA, and the candidate's own confirmation and
+statement. Nothing was added to any of them.
+
+## Still open
+
+- **The four Wayback-wrapped Wednesday and Friday entries** (2009-09-04, 2009-10-14, 2009-12-11,
+  2010-01-27) join the 24 unread Thursday ones. `web.archive.org` is still refusing connections.
+  One of them, 2010-01-27, cites a `/tag/sga/` listing page rather than an article, which is a weak
+  citation on its own terms and worth replacing when the host answers.
+- **The ten refusals above**, which SGA's own minutes could close where the *Herald* cannot.
+- **A `srcs` list for events**, inherited and now wanted twice over: the 2011 merge leaves the
+  16 September report named in prose but no longer linked.
+- **The same-source gate in `check_duplicates.py`**, described above.
+- Inherited and untouched: the 217 officer portraits, the four year-photograph gaps, and the eleven
+  paused routines, which remain the owner's call.
+
+## The numbers
+
+61 years, **1963 events** (1,967 before: 23 dates moved, one citation repointed, four duplicate
+write-ups merged away, nothing added to the archive and no sourced fact cut from it), 60 people have been president, 1111 pieces of legislation with every
+file present and a real PDF, 1302 volume-and-number citations each opening the issue it names, 1304
+quoted spans none reaching 15 words, 308 documents, 2651 recorded terms of office held by 1809
+people, 2614 of them (98%) carrying an account of what the person did, 48 people under more than one
+spelling, a search index of 4944 records. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0 on all seventeen checks, `check_duplicates.py` reporting the same five
+pre-existing pairs as `main` and no new ones, all five judged separate events.
