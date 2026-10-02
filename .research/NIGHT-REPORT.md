@@ -38591,3 +38591,125 @@ volume-and-number citations each opening the issue it names, 1304 quoted spans n
 words, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%)
 carrying an account of what the person did, 48 people under more than one spelling, a search index
 of 4944 records.
+
+---
+
+# 2 October 2026, editor pass (scheduled, fifth of the day) — the queue cleared to empty, and the landing half of the routine working again
+
+## What was open, and what happened to it
+
+Four pull requests, all four now resolved and nothing left open.
+
+- **#667 `research-photos`** — three photograph run logs for 2 October (morning, afternoon,
+  evening), 268 lines across three new files under `.research/`. **Merged.** Nothing cut.
+- **#670 `editor-1002-sixth`** — the day's four night-report entries carried on one branch.
+  **Merged.** Nothing cut.
+- **#668 `editor-1002-photo-review`** and **#669 `editor-1002-fifth`** — closed by GitHub the
+  moment #670 landed, their heads being ancestors of it. Both were verified first as fully
+  contained in `main` rather than taken on the strength of #670's claim to carry them. Nothing of
+  either is lost; #669 records as merged, #668 as closed, and the text of both is in the file above.
+
+**The merge gate is open again.** The four passes before this one each cleared #667 and each
+recorded that the merge call was refused at the session's permission layer. This pass issued the
+same call against the same auto-deploying `main` and it went through both times. What was refused
+here instead was two *read-only* verification scripts, under the same "merge without review" label
+— the opposite way round. A later pass should not read the earlier entries as proof that merging is
+permanently gated: it is intermittent, and the refusals do not track the action they name. Both
+denials this pass were worked around by relying on figures already derived first-hand, not by
+retrying.
+
+## What was verified, and how
+
+#667 changes no data file, so there is no historical claim in it to check against a source. Two
+questions matter instead: can any of it reach a reader, and are the numbers the next run inherits
+true?
+
+**It cannot reach a reader.** `build.py` reads exactly two paths under `.research/`, both JSON;
+a new `.md` there is invisible to the site. Proved a second way after merging: rebuilding the tree
+left the working tree completely clean, so `site/` is byte-identical to what `main` already
+publishes.
+
+**The repo-state numbers are true, every one recomputed from `years.json` and `photos.json`
+rather than read back from the prior report.** 61 years. 73 top-level leader records, every one
+carrying a portrait, none missing. 948 officer records in the `organization` blocks, 215 of them
+without a portrait, with the decade breakdown the evening report gives matching exactly — 1960s 4,
+1970s 5, 1980s 9, 1990s 36, 2000s 43, 2010s 73, 2020s 45. Four years without a scene photograph,
+and they are precisely 1994-95, 1995-96, 2000-01 and 2008-09.
+
+**The afternoon run's central finding holds, and the cited page was opened first-hand.** The
+Talisman publishing gap is confirmed identifier-for-identifier in the local index: the last volume
+before the hole is *Against All Odds* (1994), then the six *Xposure* issues of 1995-96 at
+`dlsc_ua_records/419` through `424` and nothing else, then the single 2003 *About Face* at `594`,
+then nothing until *Talisman, Vol. 83* at `8897` in 2012. `dlsc_ua_records/594` was then fetched
+directly (HTTP 200, paced to the crawl rule): its table of contents runs 83 lines, names no
+student government officer or office anywhere, and carries the September 11 material the report
+describes, including a Guthrie Bell Tower memorial item. No *Xposure* issue's contents mention
+student government, SGA or ASG in any line. The conclusion the report draws from this — that for
+1996-97 through 2001-02 and 2003-04 through 2010-11 the yearbook was never printed, so no reopened
+route will ever produce one — is sound, and the instruction it leaves the next run is the right one.
+
+**Eight of the nineteen name hits were re-derived from the index and all eight match the report's
+characterisation of them.** Pat Smith resolves to a 1934 feature, John Holland to John Hollander
+the poet, Mike McDaniel to a byline — each a different person or a non-photograph, exactly as
+described. Mallory Treece's single hit is a group byline on "Stories to Tell" that does not even
+print her name in the line. Jenna Haugen's is a headline in an SGA item, not a caption. David Bass
+matches the two 1977 *Herald* reports of his becoming ASG vice president, consistent with the
+group photograph already on file. Deekshita Madas and Hayden Skinner-Fine return nothing locally,
+as the report says. The run declined to use a current professional headshot of Skinner-Fine from
+her present employer's staff directory: that was the correct call under this project's sourcing and
+living-people rules, and it is worth recording as the right instinct rather than a missed chance.
+
+## Two imprecisions noted and deliberately not cut
+
+The afternoon report counts "117 `UA12/2/2`-prefixed items" in the local index; the figure is 116
+matched as a substring and 112 on an exact prefix, the difference being neighbouring call numbers
+such as `UA12/2/22` and `UA12/2/25`. It also gives the 2003 volume "82-line contents" where the
+page carries 83. Neither number bears on the finding either sentence is making, and the finding
+itself is confirmed twice over, so both were left as written rather than rescued into precision.
+
+## The 215-versus-217 question, settled by basis rather than by arithmetic
+
+Both figures are right and they count different things. Matched on name alone, 215 officer records
+lack a portrait. On the basis settled on 1 October — year-and-name pairs, chairs excluded,
+undeduplicated — the same data gives 217. This pass reproduced the 215 independently and the 948
+total with it. #670's prescription is the correct one and should become the habit: quote the basis
+beside the number, because the bare figure has now cost four passes an investigation each.
+
+## Gates
+
+`build.py` **exit 0**. `check_data.py` **exit 0** — 1,111 pieces of legislation with every file
+present and a real PDF, 1,302 citations each opening the issue it names, 1,304 quoted spans none
+reaching fifteen words, 61 years, 1,963 events, 60 people have been president. `check_contrib.py`
+**exit 0** on all seventeen checks, including that the commit it writes carries no tool
+attribution. `check_duplicates.py` **exit 1** on output byte-identical to `main`: four
+title-similar pairs and one same-source pair, no new ones, all five read and all five left as
+separate business.
+
+The build reports 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents and 1,111
+legislation files.
+
+## The branch sweep: nothing stranded
+
+`research-photos` is level with `main` after the merge. The other thirteen `research-*` branches
+have **no merge base with `main` at all** and are the superseded August snapshots `AGENT-LANDING.md`
+warns about: their content diffs run to 614,000 deleted lines apiece, and merging any one would
+strip most of the archive. `research-2026-27-fall`, the only small one, was checked file by file
+and adds nothing `main` lacks — it is purely behind, and would delete four portraits and a
+photograph log. None of them is to be merged, and none holds unlanded work.
+
+## For the next pass
+
+- The brief's instruction to rescue or close **#6, #7 and #8** is wrong for the thirteenth
+  consecutive entry. They were closed unmerged on 18 August 2026 and the repository is at #670.
+  Work the live list from the API, as this pass did.
+- Two pre-existing duplicate pairs are worth a proper look when a pass has data time, neither
+  introduced by anything merged today: the 1997-98 designated driver cards entries of 4 November
+  1997 and 17 February 1998, which may be one scheme announced twice or two distinct steps; and
+  the 2026-27 pair of 22 and 23 September 2026, which share a single *Herald* article one day
+  apart. The second is legitimate on its face — one meeting report can carry two items of
+  business — but one of the two dates may be the publication day rather than the day SGA acted,
+  which is the exact fault the 1 October pass corrected thirty times elsewhere.
+- The photograph routine has now exhausted its gap list against every route open to it. Until
+  `viewcontent.cgi` or `web.archive.org` reopens there is no forward motion in it, and the next
+  photograph run should test both cold and then stop rather than re-sweep 215 searched names.
