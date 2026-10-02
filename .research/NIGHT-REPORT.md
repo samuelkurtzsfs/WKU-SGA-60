@@ -38144,3 +38144,78 @@ people, 2614 of them (98%) carrying an account of what the person did, 48 people
 spelling, a search index of 4944 records. `build.py` clean, `check_data.py` exit 0,
 `check_contrib.py` exit 0 on all seventeen checks, `check_duplicates.py` reporting the same five
 pre-existing pairs as `main` and no new ones, all five judged separate events.
+
+---
+
+# 2 October 2026, editor pass (scheduled) — one PR reviewed, cleared, not merged
+
+## What was reviewed
+
+One open pull request, **#667 `research-photos`, "Research: photographs (rolling)"**. It was the
+only one open. The stored prompt this run fires from still describes #6, #7 and #8 as stale since
+4 August; the repository is at #667 and those three are long closed, so that paragraph is dead
+text and was ignored in favour of the live list.
+
+Every other `research-*` and `editor-*` branch on origin was checked for unlanded work. Twenty-five
+still show a content diff against `main`, but every one of them belongs to a pull request that is
+already merged — the diffs are later revisions on `main` to the same lines, not work left behind.
+Nothing is stranded.
+
+## The verdict on #667: sound, and merged by nobody
+
+The PR adds one file, `.research/photo-run-2026-10-02-morning.md`, 66 lines, no deletions. It adds
+no event, no leader, no portrait and no historical claim, so the ordinary spot-check of eight cited
+sources had nothing to bite on. Two things were checked in its place.
+
+**Whether it can reach the public site: it cannot.** `build.py` reads exactly two paths under
+`.research/` — `branches-checked.json` and `branches-unverified.json`. A new `.md` file there is
+read by neither the build nor the `site/` output. Confirmed by grep rather than assumed.
+
+**Whether the repo-state numbers the next run will inherit are true: all six are.** Recomputed
+from `years.json` and `photos.json` rather than read back from the prior report. 61 years; 73
+top-level leader records, none missing a portrait; 217 of 948 officer records without one; four
+years with no scene photograph, and exactly the four named — 1994-95, 1995-96, 2000-01, 2008-09;
+Todd, Dawson, Johnson and Gilley all carrying portraits.
+
+The access claims were re-tested first-hand, paced to the crawl rule, because they are what tell
+the next run whether to bother: `viewcontent.cgi` **403**; an ordinary item page **301**, so the
+block really is specific to that one path; `web.archive.org` **connection reset at the handshake**,
+the report's wording verbatim; `archive.org` **200**. The report is accurate in every particular.
+
+Nothing in it trips the traps checklist — there is no claim for a trap to catch — nothing
+contradicts §7, the commit author is `SGA 60`, and the commit message carries no tool attribution.
+
+**It was not merged.** This session's sandbox refuses the merge call as a production deploy, since
+`main` auto-deploys. The refusal is about the action, not the PR: the review cleared it as **merge
+as is, no cuts**, and that verdict is posted on the thread. It needs one click from the owner.
+
+## What was cut
+
+Nothing. There was nothing unsupported to cut, and nothing over-claimed to trim back.
+
+## A note on the photograph routine
+
+This was the second photograph run of 2 October and the second to land only a log. Both routes it
+depends on have been shut for days, and the run report itself now states that the 217-name gap list
+is fully searched short of a new source. The routine is being honest about finding nothing, which is
+the right behaviour — but at present it costs a run and a pull request per firing to re-confirm two
+403s. Dropping its cadence until a route reopens is the owner's call, and worth making.
+
+## Still open
+
+- **#667 itself**, cleared and waiting on a merge this session could not perform.
+- Inherited and untouched: the 217 officer portraits, the four year-photograph gaps, the 24 unread
+  Thursday entries and four Wayback-wrapped ones behind a host that is still refusing connections,
+  and the eleven paused routines, which remain the owner's call.
+
+## The numbers
+
+Unchanged from the last pass, this PR having altered no data: 61 years, 1963 events, 60 people have
+been president, 1111 pieces of legislation with every file present and a real PDF, 1302
+volume-and-number citations each opening the issue it names, 1304 quoted spans none reaching 15
+words, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%)
+carrying an account of what the person did, 48 people under more than one spelling, a search index
+of 4944 records. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0,
+`check_duplicates.py` exit 1 on output byte-identical to `main` — four title-similar pairs and one
+same-source pair, all judged separate business, the same-source pair being two different items of
+one 22-23 September 2026 meeting, which `CLAUDE.md` expressly allows.
