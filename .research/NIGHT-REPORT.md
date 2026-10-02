@@ -38452,3 +38452,142 @@ identical to `main` — four title-similar pairs and one same-source pair, all f
 business: an introduction and a later failure, a plan and a later endorsement, a stated position and
 a later formal passage, a programme and its later distribution, and two different items from one
 22-23 September 2026 meeting, which `CLAUDE.md` expressly allows.
+
+---
+
+# 2 October 2026, editor pass (scheduled, fourth of the day) — the Talisman publishing gap confirmed at source a second way, four PRs cleared, none landed
+
+## What was open
+
+Four pull requests. **#667 `research-photos`**, the rolling photograph branch, now two files and
+196 lines. **#668 `editor-1002-photo-review`**, **#669 `editor-1002-fifth`** and
+**#670 `editor-1002-sixth`**, the morning, midday and evening editor passes' own night reports.
+The three editor branches are a stack: #670 contains #669's commit, which contains #668's. So two
+merges land all four, and this entry is appended to #670 rather than opening a fifth branch, so the
+pile stops growing.
+
+The stored prompt still asks for #6, #7 and #8 to be rescued or closed as stale since 4 August. All
+three were closed unmerged on 18 August 2026. This is the fourth consecutive run to rediscover it
+and the thirteenth entry in this file to record it; the paragraph is dead text and should come out
+of the prompt.
+
+## #667 re-verified from scratch, not inherited
+
+Three earlier passes cleared this PR, the last one from its current two-file tip. Accepting a prior
+clearance is not a review, so every checkable claim in both files was re-derived. Twelve were
+tested; ten held outright, and the two that did not resolve in the reports' favour on a closer look.
+
+**Verified from the repository, recomputed rather than read back:** 61 years; 73 top-level leader
+records with none missing a portrait; 948 officer records; 57 of 61 years carrying a scene
+photograph and the four without being precisely 1994-95, 1995-96, 2000-01 and 2008-09; the local
+index at 11,850 items and 141,079 lines; the three Talisman gap boundary identifiers exactly as
+cited — `dlsc_ua_records/424` (Xposure, Summer 1996), `594` (2003 Talisman, *About Face*) and
+`8897` (Talisman Vol. 83, 2012); and the claim that neither stand-in publication names a student
+government officer or office, which holds against all six Xposure tables of contents and all 82
+lines of *About Face* on a search for SGA, ASG, student government, regent and president.
+
+**Verified at source, paced one request at a time:** the yearbook series' OAI feed returns
+`completeListSize` **156**, the afternoon report's figure to the record. Both pages were fetched
+this pass, which matters, because page one alone shows the series resuming at 2013 and would make
+the report's "nothing again until 2012" look wrong — the single 2012 volume sits on page two. Read
+whole, the 156 publication dates give exactly two modern holes, **1997-2002** and **2004-2011**,
+broken only by the single 2003 volume, then continuous 2012 through 2025. The afternoon report's
+central new finding is right, and this is now the second independent confirmation of it.
+`archive.org` returns **nineteen** Talisman identifiers and the same nineteen named — 1943, 1946,
+1947, 1963-65, 1971-81, 1986, 1987 — none of them covering a year the open gaps need.
+`cgi/viewcontent.cgi` **403**; `web.archive.org` **connection reset at the handshake**, the
+report's wording verbatim.
+
+**The two that needed a second look, and the lesson in them.** A name-only match against
+`photos.json` gives 215 officer records without a portrait, not 217, and 156 after 2003 rather than
+157. Both figures are nonetheless right: the 1 October fourth pass settled the basis as officer
+*records* matched by year-and-name pair, chairs excluded, undeduplicated, and on that basis the
+file returns 217, 209 distinct, 157 after 2003, out of 948 — reproduced here independently. This
+is the fourth pass to arrive at 215 by the obvious route and the second to be rescued by the
+recorded basis. **Quote the basis beside the number**, as that entry asked.
+
+The afternoon report's "117 `UA12/2/2`-prefixed items" remains wrong — the file holds 112 on a
+strict prefix, 116 if the match also catches the unrelated `UA12/2/22` and similar call numbers.
+The evening pass already caught this and recorded it rather than cutting it, which was the right
+call: the error is confined to the sentence stating the total and the gap boundaries it draws are
+exact. Noting it a second time only so the number is not propagated.
+
+## The traps checklist, and what was cut
+
+**Nothing was cut, from any of the four.** No diff touches `data/`, `site/`, `scripts/` or `api/`.
+Between them the four PRs add two log files and 308 appended lines of this report, all under
+`.research/`, and `build.py` reads exactly two paths there — `branches-checked.json` and
+`branches-unverified.json`. Checked by grep across `scripts/` this pass. **Proved a second way as
+well:** the merged tree was rebuilt and left the working tree completely clean, so `site/` is
+byte-identical to what `main` already publishes. Nothing in any of the four can reach a reader.
+
+With no event, leader, portrait or historical claim anywhere in the four diffs the checklist has
+little to bite on, and nothing trips it. No advance notice cited as a report. No committee chair
+promoted to officer — and in #667 keeping chairs out is exactly what makes the officer count
+reproduce. No surname-only match: the nineteen index hits the afternoon report discusses are all
+*negative* identifications, each rejected because the office or the year does not line up, which
+is §6.4 applied rather than breached. No changed-surname duplicate and no person added anywhere.
+No April result filed into the wrong academic year. Nothing bearing on §7 or on the settled facts
+in `CLAUDE.md`. On living people, the only mentions are officers whose portrait search returned
+nothing, with no personal detail attached; the brewery, football and poetry hits are named as
+different people, which is the reasoning for the rejection and not a claim about the officer. All
+six commits are authored `SGA 60` and no message carries tool attribution.
+
+## Gates
+
+Run against a tree with both #667 and #670 merged onto `main`: `build.py` **exit 0**,
+`check_data.py` **exit 0** ("the archive checks out against its own rules"), `check_contrib.py`
+**exit 0** on all seventeen checks, `check_duplicates.py` **exit 1** on output identical to
+`main` — the same four title-similar pairs and one same-source pair, no new ones.
+
+All five judged and all five left separate, as `main` has them. The 1997-98 designated driver cards
+are three and a half months apart, the card and its later distribution. The 1991-92 regent advisory
+committee bill is an introduction on 28 January and a failure after amendment on 6 February. The
+1971-72 pair is the Civil Liberties Union planning a suit in February and Associated Students
+endorsing it in March. The 2003-04 pair is a stated position in September and the legislation
+carrying it in October. The 2026-27 same-source pair is two different items of one meeting — a
+syllabus mental health statement and the opening of fall voting — which `CLAUDE.md` expressly
+allows from one article.
+
+## None of the four could be merged, for the fourth consecutive pass
+
+The merge call is refused at this session's permission layer as a merge without review. `main`
+auto-deploys to Vercel, so any merge reads as a production publish and is stopped. The refusal is
+about the action and not about the PRs: all four are cleared on the merits, and in this instance
+the deploy would produce byte-identical `site/` output, which was not asserted this pass but
+demonstrated by rebuilding the merged tree and finding nothing to commit.
+
+Three passes have now said the reviewing half of this routine works and the landing half does not.
+A fourth says it, and adds one thing the earlier three could not: a push to a `research-*` or
+`editor-*` branch succeeds from this session, so the gate is specifically on merging to `main` and
+nothing else. Re-reviewing will not move it. Either the editor routine is granted the merge
+permission it was written to exercise, or a cleared verdict on a thread is the owner's signal to
+click. Four firings have now been spent to stand still on the same two clicks.
+
+## What the owner needs to do, in order
+
+1. **Merge #667.** Cleared four times, nothing cut, site output unchanged.
+2. **Merge #670.** It carries the morning, midday, evening and this pass's entries together.
+3. **Close #668 and #669** once #670 lands. Their content is inside it verbatim; nothing is lost.
+
+## Still open
+
+- **The merge permission**, which is now the only thing between four cleared PRs and the archive.
+- **The dead #6/#7/#8 paragraph** in the editor routine's stored prompt, costing a run per firing.
+- **The photograph routine's cadence.** Three earlier passes recommended slowing it. A fourth
+  agrees, with the same qualification the evening pass made: the afternoon run produced a genuinely
+  useful negative result, so slow it rather than stop it. Its own report now says the 217-name gap
+  list is fully searched against both `wkuherald.com` and the complete local index, and for 1996-97
+  to 2001-02 and 2003-04 to 2010-11 the yearbook it depends on was never printed.
+- Inherited and untouched: the 217 officer portraits, the four year-photograph gaps, the 24 unread
+  Thursday entries and four Wayback-wrapped ones behind a host still refusing connections, the
+  `srcs` list for events, and the eleven paused routines, which remain the owner's call.
+
+## The numbers
+
+Unchanged, no data having been altered by any of the four PRs: 61 years, 1963 events, 60 people
+have been president, 1111 pieces of legislation with every file present and a real PDF, 1302
+volume-and-number citations each opening the issue it names, 1304 quoted spans none reaching 15
+words, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%)
+carrying an account of what the person did, 48 people under more than one spelling, a search index
+of 4944 records.
