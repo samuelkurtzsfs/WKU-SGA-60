@@ -38219,3 +38219,93 @@ of 4944 records. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` ex
 `check_duplicates.py` exit 1 on output byte-identical to `main` — four title-similar pairs and one
 same-source pair, all judged separate business, the same-source pair being two different items of
 one 22-23 September 2026 meeting, which `CLAUDE.md` expressly allows.
+
+---
+
+# 2 October 2026, editor pass (scheduled, second of the day) — two PRs cleared, neither mergeable
+
+## What was reviewed
+
+Both open pull requests: **#667 `research-photos`** and **#668 `editor-1002-photo-review`**, the
+latter being the morning editor pass's own night report. Nothing else was open.
+
+The stored prompt still asks for #6, #7 and #8 to be rescued or closed as stale since 4 August.
+They are long closed and the repository is at #668, so that paragraph was ignored again in favour
+of the live list. It has now cost two consecutive runs the same rediscovery and should come out of
+the prompt.
+
+## Both verdicts: merge as is, nothing cut
+
+Neither PR touches `data/`. Between them they add one new log file and 75 appended lines to this
+report, both under `.research/`, and `build.py` reads exactly two paths there —
+`branches-checked.json` and `branches-unverified.json`. Nothing in either diff can reach a page.
+That was confirmed by grep across `scripts/`, not inherited from the morning pass.
+
+Because neither carries an event, a leader, a portrait or any historical claim, there was no
+citation to open and the eight-source spot-check had nothing to work on. Sixteen factual claims
+were checked in its place, and the morning pass's conclusions were re-derived from the data rather
+than read back from its report. **All sixteen held.** The six repo-state numbers are exact: 61
+years, 73 top-level leader records with none missing a portrait, 217 of 948 officer records without
+one, 57 of 61 years carrying a scene photograph and the four without being precisely 1994-95,
+1995-96, 2000-01 and 2008-09, and portraits present for Todd, Dawson, Johnson and Gilley. The four
+access results all reproduce, paced one request at a time three seconds apart: `viewcontent.cgi`
+403 behind a Cloudflare challenge and still 403 after the full 90-second backoff, an ordinary item
+page 301 so the block is specific to that one path, `web.archive.org` reset at the handshake in the
+report's own words, `archive.org` 200. The Talisman count is right to the identifier: nineteen, and
+the same nineteen named — 1943, 1946, 1947, 1963-65, 1971-81, 1986, 1987 — with nothing covering
+the years the open gaps need.
+
+#668's claim that no work is stranded also holds, and the mechanism is worth recording because it
+will come up again. Twenty-four branches besides the two open ones still show a content diff
+against `main`; every one belongs to a merged pull request, each checked individually (#615, #617,
+#618, #620, #621, #623, #625, #626, #628, #630, #632, #634, #635, #637, #638, #640, #642, #643,
+#648, #651, #652, #654, #656, #660). They look unmerged in git only because this repository
+squash-merges, which replays the content onto `main` as a new commit and leaves the branch tip
+outside its history. A future pass should not read those diffs as lost research.
+
+## What was cut
+
+Nothing, from either PR. There was nothing unsupported and nothing over-claimed. The traps
+checklist had nothing to catch in either diff: no advance notice cited, no chair promoted to
+officer, no surname-only match, no changed-surname duplicate, no April result filed forward into
+the wrong year, nothing about a living person beyond the fact of a portrait, and nothing bearing on
+the settled facts. Both commits are authored `SGA 60` and neither message carries tool attribution.
+
+## Neither was merged, and this is now the pattern
+
+The merge call is refused at this session's permission layer as a merge without review. `main`
+auto-deploys to the live site, so the classifier treats any merge as a production publish and stops
+it. That refusal is about the action and not about either PR; both are cleared on the merits, and
+in this particular case the deploy would have produced byte-identical `site/` output, since the
+build reads no `.md` under `.research/`.
+
+This is the second consecutive pass to clear #667 and be unable to land it, and the review is now
+posted twice on the same thread. The reviewing half of this routine works; the landing half does
+not, and no amount of re-reviewing will change that. Either the editor routine needs the merge
+permission it was written to exercise, or the owner needs to treat a cleared verdict on a thread as
+the signal to click. Worth settling, because a routine that re-verifies the same cleared PR every
+few hours is spending runs to stand still.
+
+## Still open
+
+- **#667**, cleared twice, waiting on a merge.
+- **#668**, cleared, waiting on a merge. The entry above sits on top of its own, so landing this
+  branch carries #668's content with it and #668 can simply be closed.
+- Inherited and untouched, all of them the owner's call or blocked on a closed route: the 217
+  officer portraits, the four year-photograph gaps, the 24 unread Thursday entries and four
+  Wayback-wrapped ones, and the eleven paused routines.
+- The photograph routine is still costing a run and a pull request per firing to re-confirm two
+  403s, and its own report now says the 217-name gap list is fully searched short of a new source.
+  The morning pass recommended dropping its cadence until a route reopens. Repeating that
+  recommendation, having watched it land a third log in a day.
+
+## The numbers
+
+Unchanged, no data having been altered by either PR: 61 years, 1963 events, 60 people have been
+president, 1111 pieces of legislation with every file present and a real PDF, 1302
+volume-and-number citations each opening the issue it names, 1304 quoted spans none reaching 15
+words, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%)
+carrying an account of what the person did, 48 people under more than one spelling, a search index
+of 4944 records. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0 on all
+seventeen checks, `check_duplicates.py` exit 1 on output byte-identical to `main` — four
+title-similar pairs and one same-source pair, all five judged separate business.
