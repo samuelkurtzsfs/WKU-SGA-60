@@ -38144,3 +38144,450 @@ people, 2614 of them (98%) carrying an account of what the person did, 48 people
 spelling, a search index of 4944 records. `build.py` clean, `check_data.py` exit 0,
 `check_contrib.py` exit 0 on all seventeen checks, `check_duplicates.py` reporting the same five
 pre-existing pairs as `main` and no new ones, all five judged separate events.
+
+---
+
+# 2 October 2026, editor pass (scheduled) — one PR reviewed, cleared, not merged
+
+## What was reviewed
+
+One open pull request, **#667 `research-photos`, "Research: photographs (rolling)"**. It was the
+only one open. The stored prompt this run fires from still describes #6, #7 and #8 as stale since
+4 August; the repository is at #667 and those three are long closed, so that paragraph is dead
+text and was ignored in favour of the live list.
+
+Every other `research-*` and `editor-*` branch on origin was checked for unlanded work. Twenty-five
+still show a content diff against `main`, but every one of them belongs to a pull request that is
+already merged — the diffs are later revisions on `main` to the same lines, not work left behind.
+Nothing is stranded.
+
+## The verdict on #667: sound, and merged by nobody
+
+The PR adds one file, `.research/photo-run-2026-10-02-morning.md`, 66 lines, no deletions. It adds
+no event, no leader, no portrait and no historical claim, so the ordinary spot-check of eight cited
+sources had nothing to bite on. Two things were checked in its place.
+
+**Whether it can reach the public site: it cannot.** `build.py` reads exactly two paths under
+`.research/` — `branches-checked.json` and `branches-unverified.json`. A new `.md` file there is
+read by neither the build nor the `site/` output. Confirmed by grep rather than assumed.
+
+**Whether the repo-state numbers the next run will inherit are true: all six are.** Recomputed
+from `years.json` and `photos.json` rather than read back from the prior report. 61 years; 73
+top-level leader records, none missing a portrait; 217 of 948 officer records without one; four
+years with no scene photograph, and exactly the four named — 1994-95, 1995-96, 2000-01, 2008-09;
+Todd, Dawson, Johnson and Gilley all carrying portraits.
+
+The access claims were re-tested first-hand, paced to the crawl rule, because they are what tell
+the next run whether to bother: `viewcontent.cgi` **403**; an ordinary item page **301**, so the
+block really is specific to that one path; `web.archive.org` **connection reset at the handshake**,
+the report's wording verbatim; `archive.org` **200**. The report is accurate in every particular.
+
+Nothing in it trips the traps checklist — there is no claim for a trap to catch — nothing
+contradicts §7, the commit author is `SGA 60`, and the commit message carries no tool attribution.
+
+**It was not merged.** This session's sandbox refuses the merge call as a production deploy, since
+`main` auto-deploys. The refusal is about the action, not the PR: the review cleared it as **merge
+as is, no cuts**, and that verdict is posted on the thread. It needs one click from the owner.
+
+## What was cut
+
+Nothing. There was nothing unsupported to cut, and nothing over-claimed to trim back.
+
+## A note on the photograph routine
+
+This was the second photograph run of 2 October and the second to land only a log. Both routes it
+depends on have been shut for days, and the run report itself now states that the 217-name gap list
+is fully searched short of a new source. The routine is being honest about finding nothing, which is
+the right behaviour — but at present it costs a run and a pull request per firing to re-confirm two
+403s. Dropping its cadence until a route reopens is the owner's call, and worth making.
+
+## Still open
+
+- **#667 itself**, cleared and waiting on a merge this session could not perform.
+- Inherited and untouched: the 217 officer portraits, the four year-photograph gaps, the 24 unread
+  Thursday entries and four Wayback-wrapped ones behind a host that is still refusing connections,
+  and the eleven paused routines, which remain the owner's call.
+
+## The numbers
+
+Unchanged from the last pass, this PR having altered no data: 61 years, 1963 events, 60 people have
+been president, 1111 pieces of legislation with every file present and a real PDF, 1302
+volume-and-number citations each opening the issue it names, 1304 quoted spans none reaching 15
+words, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%)
+carrying an account of what the person did, 48 people under more than one spelling, a search index
+of 4944 records. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0,
+`check_duplicates.py` exit 1 on output byte-identical to `main` — four title-similar pairs and one
+same-source pair, all judged separate business, the same-source pair being two different items of
+one 22-23 September 2026 meeting, which `CLAUDE.md` expressly allows.
+
+---
+
+# 2 October 2026, editor pass (scheduled, second of the day) — two PRs cleared, neither mergeable
+
+## What was reviewed
+
+Both open pull requests: **#667 `research-photos`** and **#668 `editor-1002-photo-review`**, the
+latter being the morning editor pass's own night report. Nothing else was open.
+
+The stored prompt still asks for #6, #7 and #8 to be rescued or closed as stale since 4 August.
+They are long closed and the repository is at #668, so that paragraph was ignored again in favour
+of the live list. It has now cost two consecutive runs the same rediscovery and should come out of
+the prompt.
+
+## Both verdicts: merge as is, nothing cut
+
+Neither PR touches `data/`. Between them they add one new log file and 75 appended lines to this
+report, both under `.research/`, and `build.py` reads exactly two paths there —
+`branches-checked.json` and `branches-unverified.json`. Nothing in either diff can reach a page.
+That was confirmed by grep across `scripts/`, not inherited from the morning pass.
+
+Because neither carries an event, a leader, a portrait or any historical claim, there was no
+citation to open and the eight-source spot-check had nothing to work on. Sixteen factual claims
+were checked in its place, and the morning pass's conclusions were re-derived from the data rather
+than read back from its report. **All sixteen held.** The six repo-state numbers are exact: 61
+years, 73 top-level leader records with none missing a portrait, 217 of 948 officer records without
+one, 57 of 61 years carrying a scene photograph and the four without being precisely 1994-95,
+1995-96, 2000-01 and 2008-09, and portraits present for Todd, Dawson, Johnson and Gilley. The four
+access results all reproduce, paced one request at a time three seconds apart: `viewcontent.cgi`
+403 behind a Cloudflare challenge and still 403 after the full 90-second backoff, an ordinary item
+page 301 so the block is specific to that one path, `web.archive.org` reset at the handshake in the
+report's own words, `archive.org` 200. The Talisman count is right to the identifier: nineteen, and
+the same nineteen named — 1943, 1946, 1947, 1963-65, 1971-81, 1986, 1987 — with nothing covering
+the years the open gaps need.
+
+#668's claim that no work is stranded also holds, and the mechanism is worth recording because it
+will come up again. Twenty-four branches besides the two open ones still show a content diff
+against `main`; every one belongs to a merged pull request, each checked individually (#615, #617,
+#618, #620, #621, #623, #625, #626, #628, #630, #632, #634, #635, #637, #638, #640, #642, #643,
+#648, #651, #652, #654, #656, #660). They look unmerged in git only because this repository
+squash-merges, which replays the content onto `main` as a new commit and leaves the branch tip
+outside its history. A future pass should not read those diffs as lost research.
+
+## What was cut
+
+Nothing, from either PR. There was nothing unsupported and nothing over-claimed. The traps
+checklist had nothing to catch in either diff: no advance notice cited, no chair promoted to
+officer, no surname-only match, no changed-surname duplicate, no April result filed forward into
+the wrong year, nothing about a living person beyond the fact of a portrait, and nothing bearing on
+the settled facts. Both commits are authored `SGA 60` and neither message carries tool attribution.
+
+## Neither was merged, and this is now the pattern
+
+The merge call is refused at this session's permission layer as a merge without review. `main`
+auto-deploys to the live site, so the classifier treats any merge as a production publish and stops
+it. That refusal is about the action and not about either PR; both are cleared on the merits, and
+in this particular case the deploy would have produced byte-identical `site/` output, since the
+build reads no `.md` under `.research/`.
+
+This is the second consecutive pass to clear #667 and be unable to land it, and the review is now
+posted twice on the same thread. The reviewing half of this routine works; the landing half does
+not, and no amount of re-reviewing will change that. Either the editor routine needs the merge
+permission it was written to exercise, or the owner needs to treat a cleared verdict on a thread as
+the signal to click. Worth settling, because a routine that re-verifies the same cleared PR every
+few hours is spending runs to stand still.
+
+## Still open
+
+- **#667**, cleared twice, waiting on a merge.
+- **#668**, cleared, waiting on a merge. The entry above sits on top of its own, so landing this
+  branch carries #668's content with it and #668 can simply be closed.
+- Inherited and untouched, all of them the owner's call or blocked on a closed route: the 217
+  officer portraits, the four year-photograph gaps, the 24 unread Thursday entries and four
+  Wayback-wrapped ones, and the eleven paused routines.
+- The photograph routine is still costing a run and a pull request per firing to re-confirm two
+  403s, and its own report now says the 217-name gap list is fully searched short of a new source.
+  The morning pass recommended dropping its cadence until a route reopens. Repeating that
+  recommendation, having watched it land a third log in a day.
+
+## The numbers
+
+Unchanged, no data having been altered by either PR: 61 years, 1963 events, 60 people have been
+president, 1111 pieces of legislation with every file present and a real PDF, 1302
+volume-and-number citations each opening the issue it names, 1304 quoted spans none reaching 15
+words, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%)
+carrying an account of what the person did, 48 people under more than one spelling, a search index
+of 4944 records. `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0 on all
+seventeen checks, `check_duplicates.py` exit 1 on output byte-identical to `main` — four
+title-similar pairs and one same-source pair, all five judged separate business.
+
+---
+
+# 2 October 2026, editor pass (scheduled, third of the day) — three PRs reviewed, a new finding verified at source, one count corrected
+
+## What was reviewed
+
+All three open pull requests: **#667 `research-photos`**, **#668 `editor-1002-photo-review`** and
+**#669 `editor-1002-fifth`**. The last two are the morning and midday editor passes' own night
+reports.
+
+The stored prompt still asks for #6, #7 and #8 to be rescued or closed as stale since 4 August.
+All three are closed and unmerged, confirmed directly rather than inherited from the previous two
+reports that said so. The repository is at #669. That paragraph has now cost three consecutive
+runs the same rediscovery and should come out of the prompt.
+
+## #667 has grown since the last two passes cleared it
+
+This is the thing worth recording. The morning and midday passes both reviewed #667 as a
+single 66-line file, `.research/photo-run-2026-10-02-morning.md`. The branch now carries **two**
+files, 196 lines: the afternoon run added
+`.research/photo-run-2026-10-02-afternoon.md`, and with it a substantive new finding that neither
+earlier pass saw. A cleared verdict on a rolling PR goes stale when the routine keeps feeding it;
+this pass re-reviewed from the current tip rather than trusting either prior clearance.
+
+## The new finding, verified three independent ways
+
+The afternoon report reframes the 1996-2011 officer-portrait hole as a **publishing** gap rather
+than an **access** gap: for most of those years there was no Talisman printed at all, so no amount
+of `viewcontent.cgi` access will ever produce one. That is a claim that will redirect future runs
+away from searching, so it was checked at source rather than accepted.
+
+1. **The local index, exactly as cited.** `data/herald-index-full.json` puts the last item before
+   the gap at `UA12/2/2 Xposure - Summer 1996` (`dlsc_ua_records/424`), the only item inside it at
+   `UA12/2/2 2003 Talisman: About Face` (`594`), and the next after it at `UA12/2/2 Talisman,
+   Vol. 83` (`8897`, 2012). All three identifiers are right.
+2. **The live OAI feed**, fetched this pass over two paced requests.
+   `completeListSize` is **156**, the report's figure to the record. Page one runs to 1996 and then
+   jumps straight to 2003 and on to 2013; page two carries 56 records including the single 2012
+   volume and 2021-2025. Combined, the series runs continuously **1967 through 1996**, then one
+   1997-2002 hole broken only by 2003, then a second hole to 2012. Both gap boundaries reproduce.
+3. **The access claim**, re-tested first-hand and paced: `cgi/viewcontent.cgi` **403** behind the
+   Cloudflare "Just a moment..." challenge, an ordinary item page **301**, so the block really is
+   specific to that one path.
+
+The finding holds, and the direction it gives the next run — stop hunting a Talisman portrait
+inside 1996-97 to 2001-02 and 2003-04 to 2010-11 — is sound.
+
+## One count corrected, and one wording flagged
+
+**The afternoon report's "117 `UA12/2/2`-prefixed items" is wrong.** The file holds **112**
+Talisman and Xposure items on a strict prefix, or 116 if the match is loose enough to also catch
+the four unrelated `UA12/2/22`, `UA12/2/25` and `UA12/2/27` call numbers. Neither figure is 117.
+The error is confined to the sentence stating the total and does not touch the gap boundaries,
+which are exact, so the finding stands and nothing was cut for it. Recorded here because the next
+run should not propagate the number.
+
+Its "runs continuously 1898-1996" is also loose: the pre-1924 end of that series is gappy. From
+1967 — where this project actually starts — to 1996 it is continuous, so the operative claim is
+right even though the stated span overreaches.
+
+## The traps checklist, and what was cut
+
+**Nothing was cut, from any of the three.** No diff touches `data/`. Between them the three PRs add
+two log files and 240 appended lines of night report, all under `.research/`, and `build.py` reads
+exactly two paths there — `branches-checked.json` and `branches-unverified.json`. Confirmed by grep
+across `scripts/` this pass, not inherited. Nothing in any of the three can reach a page.
+
+With no event, leader, portrait or historical claim in any diff, the traps checklist had nothing to
+catch: no advance notice cited as a report, no committee chair promoted to officer, no surname-only
+match, no changed-surname duplicate, no April result filed into the wrong academic year, nothing
+bearing on the settled facts, and nothing about a living person beyond the fact of a portrait
+search returning nothing. The nineteen name-hits the afternoon report discusses are all **negative**
+identifications, correctly reasoned — it rejects same-name matches on a 1934 feature, a poet, a
+footballer, a coach and a brewery story precisely because the office and year do not line up, which
+is the §6.4 rule applied rather than breached. All commits are authored `SGA 60` and no message
+carries tool attribution.
+
+## The repo-state numbers, recomputed
+
+All re-derived from `years.json` and `photos.json` this pass, not read back: 61 years; 73 top-level
+leader records, none missing a portrait; **217 of 948** officer records without one — and this pass
+can add *why* that figure is right where a name-only match gives 215: it counts officer *records*
+by year-and-name pair, which is what the report says it counts, and two officers hold a portrait
+filed under a different year; 57 of 61 years carrying a scene photograph, the four without being
+precisely 1994-95, 1995-96, 2000-01 and 2008-09; portraits present for Todd, Dawson, Johnson and
+Gilley.
+
+#668's and #669's claim that no work is stranded holds, and the squash-merge mechanism behind it was
+re-verified locally on four branches rather than through the API: each tip's subject line is present
+on `main` as a squash commit, which is why the branch tip sits outside `main`'s history while its
+content is already published.
+
+## #668 is superseded by #669, and this branch supersedes both
+
+#669's appended text contains #668's entry verbatim and then its own. This pass's entry sits on top
+of #669, so **this one branch carries all three reports**: merging it lands the morning, midday and
+this evening's entries together, and #668 and #669 can both simply be closed. That is the cleanest
+way out of a three-deep stack of unlanded reports on one append-only file, and it avoids the
+conflict the three branches would otherwise have with each other.
+
+## Neither cleared PR could be merged, for the third consecutive pass
+
+The merge call is refused at this session's permission layer as a merge without review: `main`
+auto-deploys to the live site, so the classifier treats any merge as a production publish and stops
+it. The refusal is about the action, not the PRs — all three are cleared on the merits, and in this
+case the deploy would produce byte-identical `site/` output, since the build reads no `.md` under
+`.research/`.
+
+The midday pass said the reviewing half of this routine works and the landing half does not. A
+third pass has now confirmed it, and #667 has been cleared three times. Re-reviewing will not fix
+it. Either the editor routine is granted the merge permission it was written to exercise, or a
+cleared verdict on a thread has to be the owner's signal to click. Until one or the other, each
+firing spends a run to stand still — and, as this pass found, a rolling PR can quietly grow new
+content between clearances, so the re-review is not quite free.
+
+## Still open
+
+- **#667**, cleared three times — and on its current two-file tip, not just the one-file version
+  the earlier passes saw.
+- **#668** and **#669**, cleared, both carried by this branch and both closable once it lands.
+- The photograph routine is still spending a run and a pull request per firing to re-confirm two
+  403s, and has now landed three logs in one day. Both earlier passes recommended dropping its
+  cadence until a route reopens. This pass makes it three — with the qualification that the
+  afternoon run did produce a genuinely useful negative result, so the recommendation is to slow it,
+  not to stop it.
+- Inherited and untouched: the 217 officer portraits, the four year-photograph gaps, the 24 unread
+  Thursday entries and four Wayback-wrapped ones behind a host still refusing connections, and the
+  eleven paused routines.
+
+## The numbers
+
+Unchanged, no data having been altered by any of the three PRs: 61 years, 1963 events, 60 people
+have been president, 1111 pieces of legislation with every file present and a real PDF, 1302
+volume-and-number citations each opening the issue it names, 1304 quoted spans none reaching 15
+words, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%)
+carrying an account of what the person did, 48 people under more than one spelling, a search index
+of 4944 records. `build.py` exit 0, `check_data.py` exit 0 ("the archive checks out against its own
+rules"), `check_contrib.py` exit 0 on all seventeen checks, `check_duplicates.py` exit 1 on output
+identical to `main` — four title-similar pairs and one same-source pair, all five judged separate
+business: an introduction and a later failure, a plan and a later endorsement, a stated position and
+a later formal passage, a programme and its later distribution, and two different items from one
+22-23 September 2026 meeting, which `CLAUDE.md` expressly allows.
+
+---
+
+# 2 October 2026, editor pass (scheduled, fourth of the day) — the Talisman publishing gap confirmed at source a second way, four PRs cleared, none landed
+
+## What was open
+
+Four pull requests. **#667 `research-photos`**, the rolling photograph branch, now two files and
+196 lines. **#668 `editor-1002-photo-review`**, **#669 `editor-1002-fifth`** and
+**#670 `editor-1002-sixth`**, the morning, midday and evening editor passes' own night reports.
+The three editor branches are a stack: #670 contains #669's commit, which contains #668's. So two
+merges land all four, and this entry is appended to #670 rather than opening a fifth branch, so the
+pile stops growing.
+
+The stored prompt still asks for #6, #7 and #8 to be rescued or closed as stale since 4 August. All
+three were closed unmerged on 18 August 2026. This is the fourth consecutive run to rediscover it
+and the thirteenth entry in this file to record it; the paragraph is dead text and should come out
+of the prompt.
+
+## #667 re-verified from scratch, not inherited
+
+Three earlier passes cleared this PR, the last one from its current two-file tip. Accepting a prior
+clearance is not a review, so every checkable claim in both files was re-derived. Twelve were
+tested; ten held outright, and the two that did not resolve in the reports' favour on a closer look.
+
+**Verified from the repository, recomputed rather than read back:** 61 years; 73 top-level leader
+records with none missing a portrait; 948 officer records; 57 of 61 years carrying a scene
+photograph and the four without being precisely 1994-95, 1995-96, 2000-01 and 2008-09; the local
+index at 11,850 items and 141,079 lines; the three Talisman gap boundary identifiers exactly as
+cited — `dlsc_ua_records/424` (Xposure, Summer 1996), `594` (2003 Talisman, *About Face*) and
+`8897` (Talisman Vol. 83, 2012); and the claim that neither stand-in publication names a student
+government officer or office, which holds against all six Xposure tables of contents and all 82
+lines of *About Face* on a search for SGA, ASG, student government, regent and president.
+
+**Verified at source, paced one request at a time:** the yearbook series' OAI feed returns
+`completeListSize` **156**, the afternoon report's figure to the record. Both pages were fetched
+this pass, which matters, because page one alone shows the series resuming at 2013 and would make
+the report's "nothing again until 2012" look wrong — the single 2012 volume sits on page two. Read
+whole, the 156 publication dates give exactly two modern holes, **1997-2002** and **2004-2011**,
+broken only by the single 2003 volume, then continuous 2012 through 2025. The afternoon report's
+central new finding is right, and this is now the second independent confirmation of it.
+`archive.org` returns **nineteen** Talisman identifiers and the same nineteen named — 1943, 1946,
+1947, 1963-65, 1971-81, 1986, 1987 — none of them covering a year the open gaps need.
+`cgi/viewcontent.cgi` **403**; `web.archive.org` **connection reset at the handshake**, the
+report's wording verbatim.
+
+**The two that needed a second look, and the lesson in them.** A name-only match against
+`photos.json` gives 215 officer records without a portrait, not 217, and 156 after 2003 rather than
+157. Both figures are nonetheless right: the 1 October fourth pass settled the basis as officer
+*records* matched by year-and-name pair, chairs excluded, undeduplicated, and on that basis the
+file returns 217, 209 distinct, 157 after 2003, out of 948 — reproduced here independently. This
+is the fourth pass to arrive at 215 by the obvious route and the second to be rescued by the
+recorded basis. **Quote the basis beside the number**, as that entry asked.
+
+The afternoon report's "117 `UA12/2/2`-prefixed items" remains wrong — the file holds 112 on a
+strict prefix, 116 if the match also catches the unrelated `UA12/2/22` and similar call numbers.
+The evening pass already caught this and recorded it rather than cutting it, which was the right
+call: the error is confined to the sentence stating the total and the gap boundaries it draws are
+exact. Noting it a second time only so the number is not propagated.
+
+## The traps checklist, and what was cut
+
+**Nothing was cut, from any of the four.** No diff touches `data/`, `site/`, `scripts/` or `api/`.
+Between them the four PRs add two log files and 308 appended lines of this report, all under
+`.research/`, and `build.py` reads exactly two paths there — `branches-checked.json` and
+`branches-unverified.json`. Checked by grep across `scripts/` this pass. **Proved a second way as
+well:** the merged tree was rebuilt and left the working tree completely clean, so `site/` is
+byte-identical to what `main` already publishes. Nothing in any of the four can reach a reader.
+
+With no event, leader, portrait or historical claim anywhere in the four diffs the checklist has
+little to bite on, and nothing trips it. No advance notice cited as a report. No committee chair
+promoted to officer — and in #667 keeping chairs out is exactly what makes the officer count
+reproduce. No surname-only match: the nineteen index hits the afternoon report discusses are all
+*negative* identifications, each rejected because the office or the year does not line up, which
+is §6.4 applied rather than breached. No changed-surname duplicate and no person added anywhere.
+No April result filed into the wrong academic year. Nothing bearing on §7 or on the settled facts
+in `CLAUDE.md`. On living people, the only mentions are officers whose portrait search returned
+nothing, with no personal detail attached; the brewery, football and poetry hits are named as
+different people, which is the reasoning for the rejection and not a claim about the officer. All
+six commits are authored `SGA 60` and no message carries tool attribution.
+
+## Gates
+
+Run against a tree with both #667 and #670 merged onto `main`: `build.py` **exit 0**,
+`check_data.py` **exit 0** ("the archive checks out against its own rules"), `check_contrib.py`
+**exit 0** on all seventeen checks, `check_duplicates.py` **exit 1** on output identical to
+`main` — the same four title-similar pairs and one same-source pair, no new ones.
+
+All five judged and all five left separate, as `main` has them. The 1997-98 designated driver cards
+are three and a half months apart, the card and its later distribution. The 1991-92 regent advisory
+committee bill is an introduction on 28 January and a failure after amendment on 6 February. The
+1971-72 pair is the Civil Liberties Union planning a suit in February and Associated Students
+endorsing it in March. The 2003-04 pair is a stated position in September and the legislation
+carrying it in October. The 2026-27 same-source pair is two different items of one meeting — a
+syllabus mental health statement and the opening of fall voting — which `CLAUDE.md` expressly
+allows from one article.
+
+## None of the four could be merged, for the fourth consecutive pass
+
+The merge call is refused at this session's permission layer as a merge without review. `main`
+auto-deploys to Vercel, so any merge reads as a production publish and is stopped. The refusal is
+about the action and not about the PRs: all four are cleared on the merits, and in this instance
+the deploy would produce byte-identical `site/` output, which was not asserted this pass but
+demonstrated by rebuilding the merged tree and finding nothing to commit.
+
+Three passes have now said the reviewing half of this routine works and the landing half does not.
+A fourth says it, and adds one thing the earlier three could not: a push to a `research-*` or
+`editor-*` branch succeeds from this session, so the gate is specifically on merging to `main` and
+nothing else. Re-reviewing will not move it. Either the editor routine is granted the merge
+permission it was written to exercise, or a cleared verdict on a thread is the owner's signal to
+click. Four firings have now been spent to stand still on the same two clicks.
+
+## What the owner needs to do, in order
+
+1. **Merge #667.** Cleared four times, nothing cut, site output unchanged.
+2. **Merge #670.** It carries the morning, midday, evening and this pass's entries together.
+3. **Close #668 and #669** once #670 lands. Their content is inside it verbatim; nothing is lost.
+
+## Still open
+
+- **The merge permission**, which is now the only thing between four cleared PRs and the archive.
+- **The dead #6/#7/#8 paragraph** in the editor routine's stored prompt, costing a run per firing.
+- **The photograph routine's cadence.** Three earlier passes recommended slowing it. A fourth
+  agrees, with the same qualification the evening pass made: the afternoon run produced a genuinely
+  useful negative result, so slow it rather than stop it. Its own report now says the 217-name gap
+  list is fully searched against both `wkuherald.com` and the complete local index, and for 1996-97
+  to 2001-02 and 2003-04 to 2010-11 the yearbook it depends on was never printed.
+- Inherited and untouched: the 217 officer portraits, the four year-photograph gaps, the 24 unread
+  Thursday entries and four Wayback-wrapped ones behind a host still refusing connections, the
+  `srcs` list for events, and the eleven paused routines, which remain the owner's call.
+
+## The numbers
+
+Unchanged, no data having been altered by any of the four PRs: 61 years, 1963 events, 60 people
+have been president, 1111 pieces of legislation with every file present and a real PDF, 1302
+volume-and-number citations each opening the issue it names, 1304 quoted spans none reaching 15
+words, 308 documents, 2651 recorded terms of office held by 1809 people, 2614 of them (98%)
+carrying an account of what the person did, 48 people under more than one spelling, a search index
+of 4944 records.
