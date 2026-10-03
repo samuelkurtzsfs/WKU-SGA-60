@@ -39251,3 +39251,199 @@ legislation files, across 61 years and 1,967 events.
 - Unchanged: four years carry no year-level photograph, the officer portrait gap is unmoved, and
   the constitutional convention opened by Referendum 10.2.1 is the thing in the current year most
   worth following. SGA returns **13 October**.
+
+## 3 October, evening — the editor pass
+
+One pull request open, **#678**, the afternoon's third photograph pass. Merged. It changed no data:
+its whole diff was 66 lines appended to the research log recording what the run retried and ruled
+out, so nothing in it could reach a year page. That makes it cheap to merge and easy to merge
+carelessly, which is the reason to read it properly — the log is what the next four runs act on,
+and a wrong line in it costs more than a wrong line in a year that a reader can check against a
+citation.
+
+Twenty-two claims verified, against the eight the brief asks for. Every factual claim held.
+
+The baseline reproduces to the digit, checked by script against the current files rather than read
+off the note: 61 years, 73 `leaders` records, **none** missing a portrait, the officer gap at
+215 records / 174 distinct names / 41 years, the four year-photo gaps where they were.
+
+The one claim in the note carrying evidentiary weight is the David Bass photograph, and it is
+confirmed at the source rather than taken on the run's word. The caption is real, on leaf 38 of
+`talisman1978west`, and the volume's own back index prints `Bass, David Eugene 34`, which settles
+the page. The page image was fetched and looked at: three figures clear, a fourth mostly cropped at
+the left edge, and **no left-to-right order in the caption**. The refusal is right. It does not
+disturb the LaCivita settled fact either, which turns on a caption that says "(right)" where this
+one says nothing — and the photograph is already barred in `_do-not-use.json` on main, so the run
+reached the conclusion the archive had already reached. All four people the caption names are real
+1977-78 officers at those exact offices, and `name-aliases.json` already carries Bob Moore as
+Robert Moore, so the familiar form invented nobody.
+
+Both closed routes reproduce: the Cloudflare challenge on `viewcontent.cgi`, the reset on
+`web.archive.org`. One thing the note had too wide, now narrowed on the branch — it is the **whole
+Wayback host** that resets, bare root included, not the `if_` form of the URL, while plain
+`archive.org/download/...` answered 200 in the same minutes. The Talisman reading depends on that
+second route, and a future run skimming the bullet could have read it as archive.org being shut.
+
+**Three cuts, all one rule, none factual.** The 1978 caption was reproduced verbatim at 29 words in
+a public repository; the limit is under 15, once per source. Two further full copies were already in
+the log from earlier passes, so the file carried three. All three are paraphrased down to the names
+and offices — those are facts and are kept, the yearbook's wording is not. The passage loses
+nothing: its point is that the caption names four people without saying which is which, and that
+survives intact.
+
+Worth recording why it got through. `check_data.py` enforces this rule and reports 1,305 quoted
+spans with none reaching 15 words — but it reads `data/`, not `.md`. The research log is precisely
+where archive text gets pasted while a run is thinking out loud, and nothing checks it. Until
+something does, quote short in the log by hand.
+
+Credit where it is due on the harder rule: the run found a staff directory carrying a serving
+officer's university email and telephone number, wrote down only that it had found it and would not
+use it, and reproduced neither. That is the correct handling of a living person and the correct
+thing to leave in the log for the next run.
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py` exits 1
+on four same-day pairs and one shared-source pair, every one of them identical on `main` and none
+introduced here; judged and left alone, since each is genuinely two pieces of business — a bill
+introduced and the same bill defeated, a position taken and the legislation that followed it, and
+two items out of one meeting write-up, which is the case the script's own closing line says to
+expect. The two photographs the build withdraws, Pam Stewart and Stacy Kitchens, carry no `leaders`
+entry, so no president or regent portrait is held back from the built site.
+
+The build reports 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents and 1,111
+legislation files, across 61 years and 1,967 events. Sixty people have been president, all portrayed.
+
+## For the next pass
+
+- **The standing brief is wrong in the same two places for a fourth pass.** It still names #6, #7
+  and #8 as stale and open, all three closed on 18 August, and it still reads a `gh pr list` 403 as
+  the platform gate when the 403 is GraphQL-only and `gh api repos/.../pulls` answers normally. Four
+  passes have now spent a check on this. No run can fix the brief from inside the session; it needs
+  editing where it is stored.
+- A gap in the checks, not in anyone's work: nothing enforces the quote limit outside `data/`.
+  Three copies of one yearbook caption accumulated in the log across three passes before this one
+  noticed. If `check_data.py` grew a pass over the `.md` files it would catch the next one for free.
+- The photograph routine is now returning confirmations rather than finds, which is what exhaustion
+  looks like and is not a complaint — this run re-walked eight names from source and reproduced the
+  standing answer exactly, which is worth knowing. The officer portrait gap is unmoved at 174 names,
+  four years still carry no year-level photograph, and the constitutional convention opened by
+  Referendum 10.2.1 remains the live thing in the current year. SGA returns **13 October**.
+
+## 3 October, late — the editor pass
+
+**No pull request open, and none closed unread.** The queue is empty, and this time the branches
+were checked rather than assumed: every `research-*` and `editor-*` branch on origin either has no
+merge base with `main` — the superseded 4 August snapshots, which must never be merged — or is
+strictly behind it. Nothing anywhere on origin carries a sourced fact that `main` lacks. The four
+research routines' work is all landed.
+
+So the pass went where the risk actually is. An empty queue does not mean the site is clean; it
+means nothing new is arriving, and everything already published was last read by the pass that
+merged it.
+
+## What was verified, from the source rather than from the previous pass
+
+Twenty claims, against the eight the brief asks for, all of them in the newest material — the two
+senate meetings of 22 and 29 September, which are the most recently published and the least
+re-read. Both *Herald* articles were opened and searched.
+
+Everything held, to the digit. Referendum 10.2.1 and the Judicial Council's power to amend; the
+constitutional convention of two cabinet members and six senators; the six senators sworn in, with
+their names and all four constituencies; the twelve dental hygiene vouchers at $300 and the
+twenty-four already spent; Organizational Aid closing at 52 submissions; the Bluegrass scholarship
+widening to Illinois and Indiana; the 28 candidates across four constituencies, which add up; the
+8 a.m. opening and the 4 p.m. close of 25 September; Barker on the fall election's engagement;
+Resolution 4.6 F passing unanimously; the Counseling Center at full staff under budget.
+
+Two of those are worth naming because they are the shape of error this archive is most prone to,
+and in both cases the research routine had already got it right:
+
+- **Isaiah Wilson's co-authorship of the bus resolution is not in the article the entry leads with.**
+  It is in the 15 September article, which the entry carries as `src2`: "Landon Terry, a sophomore
+  senator, and Isaiah Wilson, a Senator At-Large, authored the resolution." A second source was
+  attached for a second claim rather than letting one citation cover both. That is the rule working.
+- **The election-opening entry refuses to fix a date its source does not fix.** The *Herald* printed
+  the meeting of the 22nd in an issue of the 23rd and dated the opening only as "today". The entry
+  says so in the body instead of picking a day and looking confident, and cites the 29 September
+  issue separately for the close. Dates were checked against the calendar: 22 and 29 September 2026
+  are both Tuesdays, 25 September a Friday, exactly as the reporting has them.
+
+The chief justice's name now appears a fourth way. The 29 September report gives **Sophia Stirling**
+— the first time the forename has varied — and the organization note already records it, correctly
+observing that the surname there agrees with SGA's own minutes. The record still follows the minutes.
+
+## The four corrections made
+
+**Three campus-context events were missing the tag, including the two CLAUDE.md names as the type
+case.** The December 2021 tornado, the March 2020 COVID closure and the April 1994 campus storm
+damage are all events in which SGA was not the actor — the body of the tornado entry says so
+outright, that the disaster "shaped SGA relief efforts the following semester" — and none carried
+`campus: true`. Twenty-five events carried the tag and these three did not, which is the wrong way
+round: the tag tells a reader "this is the world around student government," and it is worth least
+when the clearest instances in sixty years are the ones missing it. Each now renders exactly one
+tag, on the right entry, checked on the built page.
+
+Worth saying why this was invisible. The forty-two events whose wording trips a disaster search are
+almost all SGA's own business that merely mentions one — a bill *killed*, money raised for the Red
+Cross, the senate taking up a lockdown. Those are correctly untagged, and the rule is explicit that
+SGA's own business must never be tagged. The three real ones were a minority inside a false
+positive set, which is exactly the shape of thing a pass reading one pull request at a time cannot
+see.
+
+**The 1980-81 note had the two offices separating in the wrong decade.** It said that after Steve
+Fuller held both, "the two offices were separated during the next session." The student regent was a
+separately elected office from April 1968 — a settled fact — so what changed in 1981-82 is not that
+the offices were separated but that they stopped being held by one person. Rewritten to say that,
+and nothing else in the entry moved: Fuller's dual office, Bush's resignation of January 1982, the
+campus-wide election and Norfleet's February runoff all stand on their existing sources. Marcel
+Bush's `also_regent` flag was deliberately left alone — it is `name_verified`, and re-opening it is
+what the settled-facts rule forbids.
+
+## Gates
+
+`build.py` clean. `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py` exits 1
+on four same-day pairs and one shared-source pair — identical to `main` before this pass, none
+introduced here. Judged and left: a bill introduced in January 1992 and the same bill defeated in
+February; the Civil Liberties Union planning action and ASG endorsing the suit a month later;
+concern voiced over plus/minus grading and the legislation that followed three weeks on; designated
+driver cards funded in November 1997 and announced for distribution in February 1998; and three
+pieces of distinct business out of the 22 September meeting. Each is two events, not one written
+twice.
+
+Photograph integrity checked rather than assumed: all 1,175 files named in `photos.json` are present
+on disk and served, nothing named is missing, 34 candidates are held unpublished, and the two the
+build withdraws are barred identifications kept on disk for review and off the public site. No
+`leaders` portrait is held back. No event anywhere in the file is dated in the future.
+
+Baseline after the pass: 2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents, 1,111
+legislation files, 61 years, 1,967 events. Sixty people have been president, all portrayed.
+
+## For the next pass
+
+- **Three things were found and deliberately not changed**, because each is a judgement an editor
+  should make knowingly rather than a defect:
+  - The April 1994 storm-damage entry sits in **1994-95**, justified in its body as "the same week
+    as the SGA election". The election files forward by rule because it chose that year's officers;
+    a tornado does not. It arguably belongs in 1993-94. Left where it is because the body is
+    transparent about why, and moving a campus event out of the year whose coverage it accompanies
+    changes editorial intent.
+  - The 2026-27 mental-health entry names the **"Mental Health and Well-Being Committee"**; the
+    23 September article calls it the "SGA Mental Health Committee". The fuller name is attested in
+    this archive from 2021-22, so this is normalisation across years rather than invention, but it
+    is a name the cited source does not use.
+  - The 1988-89 General Education entry calls itself "one of the earliest surviving examples of
+    student government intervening in curriculum" — an unsourced claim about the archive's own
+    holdings rather than about the document.
+- **The standing brief is wrong in the same two places for a fifth pass.** It names #6, #7 and #8 as
+  stale and open; all three closed on 18 August. And it reads a `gh pr list` 403 as the platform
+  gate, when the 403 is GraphQL-only: `gh api repos/{owner}/{repo}/pulls` answers normally and push,
+  pull-request and merge rights all work. A run that follows the brief literally drops into
+  review-only mode for no reason, and the drop box it then reaches for is not configured in this
+  environment — `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both unset, so that fallback would lose
+  the work rather than land it. This cannot be fixed from inside a session; it needs editing where
+  the prompt is stored.
+- The quote-limit gap outside `data/` noted by the previous pass is still open; nothing checks the
+  `.md` files.
+- SGA does not sit again until **13 October** — fall break falls on 6 and 7 October. The
+  constitutional convention opened by Referendum 10.2.1 is still the live thing in the current year.
