@@ -7496,6 +7496,63 @@ No file was added to or removed from `data/photos.json` or `data/photos/`; the w
 clean (61 years, 60 presidents, all still portrayed). This run's only change is to this file.
 Landed on `research-photos`.
 
+### Photograph run of 3 October (scheduled, second): the Talisman/Xposure publication gap mapped and ruled out for two of the four year-photo gaps, `viewcontent.cgi` and the `web.archive.org` bypass both closed again
+
+Baseline reconfirmed first, as every run now does: Todd, Dawson, Johnson and Gilley (the four
+named presidents) and all 73 `leaders` records still carry a portrait; the four year-photo gaps
+(1994-95, 1995-96, 2000-01, 2008-09) and the 215/217-record officer gap are unchanged. Access was
+retested cold and is closed on both routes this run: `cgi/viewcontent.cgi` still answers the
+Cloudflare "Just a moment..." 403 challenge, and `web.archive.org` resets at the TLS handshake
+(`curl: (35) Recv failure`) rather than opening the `if_` bypass the 3 October (first) run found.
+
+**New fact, worth recording because it closes off two of the four year-photo gaps for good:**
+`digitalcommons.wku.edu/dlsc_ua_yearbooks/` — the yearbook collection's own landing page, which is
+an ordinary page and not gated by Cloudflare like `cgi/viewcontent.cgi` — lists every cataloged
+Talisman/Xposure item with the year it was added. Read cold (no PDF fetch needed):
+
+- The last traditional yearbook before a hiatus is **"Talisman: Against All Odds"**
+  (`dlsc_ua_records/418`, 1994 — i.e. the 1993-94 academic year, already photographed from other
+  sources).
+- In its place, WKU Student Affairs published a quarterly magazine called **Xposure**: *Rites of
+  Passage* (419), *Prejudice: Beyond Black & White* (420), *Canvas Flesh* (421) in 1995, then *Fall
+  1995* (422), *Spring 1996* (423) and *Summer 1996* (424) — six issues covering very roughly
+  1994-95 through 1995-96. **Each issue's landing page carries its full table of contents as the
+  page abstract, and none of the six mentions SGA, Student Government, ASG, the Senate, student
+  regent or an election in any of roughly 150 listed articles.** This is a stronger negative than
+  the usual Herald-index miss this file warns about elsewhere (trap 1): it is not an item the
+  archivist condensed to one line, it is the complete contents list of the publication. **Xposure
+  is ruled out as a photo source for 1994-95 and 1995-96 on this evidence, not absence of searching.**
+- Nothing at all is cataloged between "Talisman: Against All Odds" (1994) and **"2003 Talisman:
+  About Face"** (`dlsc_ua_records/594`) — confirmed independently by the Daily News' WNKY
+  retrospective ("Throwback Thursday — 95 Years of WKU Student Publications, Part 2: Talisman",
+  wnky.com): *"From 1996 to 2001, the Talisman was not published. It was reborn in 2002."* That
+  settles **2000-01 as a true gap, not a digitization gap: no yearbook of any kind exists for that
+  year**, on or off TopSCHOLAR. (1995-96 falls one year inside the "not published" window by this
+  account too, which is consistent with Xposure being the stand-in that year rather than a real
+  Talisman.)
+- **2008-09 is a different kind of gap.** The next item cataloged after "2003 Talisman: About
+  Face" is "Talisman, Vol. 83" (`dlsc_ua_records/8897`), whose own landing-page description opens
+  "2012 Talisman" — so despite the Vol. 83 label, nothing between the 2003 and 2012 editions is on
+  TopSCHOLAR at all, 2008-09 included. Unlike 2000-01, the yearbook almost certainly *was*
+  published every year in this span (the WNKY piece has it continuing unbroken from 2002 onward);
+  it is simply not digitized here. Nothing to rule out — just confirmation that Talisman is a dead
+  end for 2008-09 specifically on TopSCHOLAR, same conclusion the officer-gap searches already
+  reached by a different route.
+
+**For the next run, once a PDF route reopens:** `data/herald-index-full.json` was re-read for
+2008-09 (1 Aug 2008 – 1 Jun 2009) and returns 27 SGA-related issues with full headline lists, none
+previously flagged as containing a photograph because none has been opened as a PDF yet. The
+likeliest candidates for an actual photograph, by subject, are the two election-result issues —
+Herald 84:35 (26 Feb 2009, `dlsc_ua_records/6718`, "Reagan Gilley Elected Student Regent" — already
+the source of Gilley's portrait, so check it for a *second*, different frame rather than reusing
+the one on file) and Herald 84:46 (16 Apr 2009, `dlsc_ua_records/6747`, "All Smiles, Kevin Smiley
+Wins Student Government Association Election") — election-night stories in this index have
+produced usable crowd/candidate photographs before. Neither has been opened this run; both are
+blocked behind the same closed `cgi/viewcontent.cgi` as everything else.
+
+No file in `data/photos.json` or `data/photos/` changed. `build.py` and `check_data.py` both pass
+clean. Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
