@@ -7424,12 +7424,18 @@ Baseline reconfirmed directly against `data/photos.json` before anything else: a
 presidents (Todd, Dawson, Johnson, Gilley), all 73 `leaders` records and all 61 years still carry
 at least a leader-level portrait. `merge_photo_finds.py` (no `--write`) proposes nothing new — 0 to
 add, 0 to replace, the same 18 standing FACE-PROVED-PERSON-NOT-PROVED/withdrawn refusals. Four
-years still carry no year-level photograph (1994-95, 1995-96, 2000-01, 2008-09), and 217
-executive/senate officer records across 42 years still lack one, unchanged from 25-26 September.
-(Editor, 3 October: this run first wrote 215. The figure is 217, which is what the 25-26 September
-entry above records and what an independent recount gives, so "unchanged" is right and the number
-was a transcription slip. `scripts/portrait_gap.py` counts the narrower cabinet-and-Senate-leadership
-slice and gives 189 of 885; the 217 is of all 948 officer slots. Quote whichever, but say which.)
+years still carry no year-level photograph (1994-95, 1995-96, 2000-01, 2008-09), and 215
+executive/senate officer records across 41 years still lack one, unchanged from 25-26 September.
+(Editor, 3 October, correcting an earlier note of my own that called the 215 a slip: it is not.
+Both figures are right on different bases, as the night report settled on 1 October, and this pass
+reproduced both off the current file. Matched on **name alone** — an officer counts as portrayed if
+that name carries a portrait in any year — it is **215 records across 41 years**. On
+**year-and-name pairs**, the basis the 25-26 September entry used, the same data gives **217 across
+42 years**. Both are out of 948 officer slots; `scripts/portrait_gap.py` counts a narrower
+cabinet-and-Senate-leadership slice and gives 189 of 885. What this run actually got wrong was
+smaller and easier to repeat: it put the name-alone figure, 215, beside the year-and-name year
+count, 42. Quote the basis beside the number, which is what #670 prescribed and what the bare
+figure has now cost five passes an investigation each.)
 
 **`web.archive.org` was open for the whole session**, not flaky: `curl` against a known snapshot
 and against five `viewcontent.cgi` article URLs (4039, 8979, 9903, 7642, 7724) all returned real
