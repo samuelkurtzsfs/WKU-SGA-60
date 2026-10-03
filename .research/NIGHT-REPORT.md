@@ -38824,3 +38824,131 @@ legislation files.
   current year. When it is called, its membership and what it changes should be followed closely.
 - The photograph routine remains exhausted against every open route; nothing in this pass changes
   that.
+
+# 3 October 2026, editor pass (scheduled, second of the day) — one photograph PR verified end to end and merged, and an editor correction that had to be corrected
+
+## What was open
+
+One pull request: **#673, `research-photos`**, "Research: photographs, 3 October — three leads
+closed, bypass route confirmed open". One commit, 68 added lines, **one file changed** and that
+file `SGA-60-AGENT-INFO.md`. No `data/` path in the diff at all: `git diff origin/main
+origin/research-photos -- data/` is empty, so nothing in it could reach the published site. The
+three branches the standing brief still names as stale — #6 photographs, #7 the 1980s, #8 the
+2020s — are **all three closed already** and need no further handling; that line in the brief is
+out of date.
+
+## What was checked against its source
+
+Fifteen claims, which was every checkable claim in the diff rather than a sample of eight.
+
+The four *Herald* article IDs the note turns on are `viewcontent.cgi?article=` numbers, not
+`dlsc_ua_records/` landing-page numbers — different namespaces, and reading one as the other sends
+you to a 1920-21 course catalogue and a baseball media guide. Resolved against
+`herald-index-full.json`, **all four are exactly what the note says they are**: 4039 is Herald
+72:54, 24 April 1997, carrying "Keith Coffman Takes Charge" and "New Student Government
+Association President Maps Upcoming Term"; 8979 is Herald 73:53, 30 April 1998, carrying "Stephanie
+Cosby Rolls to Huge Victory"; 9903 is Herald 76:52, 17 April 2001, carrying "Student Government
+Association Election Produces Low Voter Turnout"; 7724 is Herald 84:22, 17 February 2009, carrying
+"Student Government Association Chief Justice Resigns – Lisa Kappler", and its landing page is
+`dlsc_ua_records/6721`, which is the cross-reference the note itself makes.
+
+The one positive find was opened and read. Article 4039 downloaded as a real PDF, 21 pages, cover
+sheet dated 4-24-1997. Printed page 3 carries the headline "New SGA president maps upcoming term"
+and, in OCR, both the pull-quote and the words that give the caption its "Russellville junior".
+**The portrait is there and the note describes it correctly.**
+
+The near-miss matters more than the find, and it held up. The note reports overwriting Coffman's
+existing 522x816 portrait with a 200x421 crop and catching it before commit. `data/` is
+byte-identical between `main` and the branch, and `data/photos/1997-98-keith-coffman.jpg` is
+**FF D8, 522x816** — the original. `photos.json` carries **one** Coffman entry, not two, so the
+duplicate was removed as reported. The revert was real.
+
+The route claims reproduce. `viewcontent.cgi` direct is **HTTP 403**, the Cloudflare challenge.
+The same URL through `web.archive.org/web/2024if_/` returns **HTTP 200, `application/pdf`,
+magic bytes `%PDF`** — and did it on the second attempt after one `Connection reset by peer`,
+which is the same intermittent reset the note logs rather than a closed route.
+
+The negative sweep is clean and, more to the point, did not fall into surname matching.
+`Lamiaya Page`, `Cory Gerald`, `Tony Wong`, `Stuart Kenderes`, `Dajana Crockett`, `Art Scisney`,
+`Kenderes` and `Scisney` all return **zero** hits in `herald-index-full.json`. "Dajana" returns
+one — **Dajana Vasilijevic**, a different surname on a Congress roster, and the run correctly did
+not read it as Dajana Crockett. "Miers" returns exactly the **three Harriet Miers op-eds** of 2005
+the note describes.
+
+The baseline reproduces exactly: **four** years with no year-level photograph, and they are
+1994-95, 1995-96, 2000-01 and 2008-09; **73 of 73** leader records carry a portrait, Todd, Dawson,
+Johnson and Gilley among them; `merge_photo_finds.py` with no `--write` proposes **0 to add, 0 to
+replace, 18 refused**.
+
+## Traps
+
+Nothing tripped. No event was added, so there was no advance notice to mistake for a report, no
+committee chair promoted to officer, no April result filed into the wrong year, and nothing
+touching the settled facts. Nobody was matched by surname alone — the Vasilijevic hit is the proof
+that the run was reading full names. On living people the note stays inside what its cited sources
+printed: Kappler's resignation is already in the archive from the *Herald* story of the week it
+happened, Coffman's hometown and class year come off a published caption, and nothing strays into
+personal detail unconnected to SGA service. No contributor commit in the diff.
+
+The judgement I most wanted to check is the one the run made by **leaving something out**. The
+strongest photograph in the 2001 issue is a front-page picture of Tiffany performing at WKU Day,
+and 2000-01 is one of the four years with no photograph — the temptation was real. Nothing ties WKU
+Day to SGA, a teen-pop concert does not clear CLAUDE.md's bar for context, and the run left the gap
+open. That is the right call and it is worth saying so, because a gap left honestly open is the
+harder thing to file.
+
+## My own correction, and then the correction to it
+
+The note put **215** officer records lacking a portrait beside **42 years** and called the figure
+unchanged from late September, where the entry on file reads 217. I recounted, got 217, wrote the
+215 off as a transcription slip, committed that, and merged it. That was wrong, and the night
+report had already said why 38,000 lines above: **both figures are right and count different
+things**, settled on 1 October, at the cost of an investigation a pass ever since. Reproduced off
+the current file, both come straight back — **215 records across 41 years** matched on name alone,
+**217 across 42 years** on year-and-name pairs, both out of 948 slots, against
+`portrait_gap.py`'s narrower 189 of 885.
+
+So the research routine had not slipped a digit. What it actually did was **mix the two bases** —
+the name-alone count beside the year-and-name year count — which is a smaller error, and the exact
+one #670's prescription exists to stop. The entry now carries both bases, both year counts, and the
+instruction to quote the basis beside the number. I have left my own wrong note visible in the
+history rather than quietly replacing it, on the same principle this archive applies to a corrected
+plaque year: the correction is part of the record. Five passes have now spent time on this number.
+It should be the last.
+
+## Gates
+
+`build.py` **exit 0**. `check_data.py` **exit 0** — 1,111 pieces of legislation with every file
+present and a real PDF, 1,302 citations each opening the issue it names, 1,305 quoted spans none
+reaching fifteen words, **61 years, 1,967 events, 60 people have been president**.
+`check_contrib.py` **exit 0** on all seventeen checks, the no-tool-attribution check among them.
+`check_duplicates.py` **exit 1** on output byte-identical to `main`'s — the same four title-similar
+pairs and the same one same-source pair, none introduced here, since the branch changes no data.
+All five read again and all five left as separate business: the 1991-92 bill introduced and then
+failed, the 1971-72 suit planned and then endorsed, the 2003-04 stance taken and then legislated,
+the 1997-98 driver cards three months apart, and the two pieces of 2026-27 business reported in one
+article.
+
+The build reports 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents and 1,111
+legislation files.
+
+## What merged
+
+**#673, squashed.** Verified against its sources, nothing cut, one figure corrected and then that
+correction corrected. Commit author `SGA 60`, no tool attribution in the message or the body.
+
+## For the next pass
+
+- The standing brief still lists #6, #7 and #8 as stale and open. **All three are closed.** The
+  instruction should be dropped so it stops costing a check each run.
+- The 215/217 figure now carries its own basis in the handoff. If a pass finds itself recounting it
+  a sixth time, read the entry before recounting.
+- The photograph routine's own advice from this run is the useful one: **grep the specific name in
+  `data/photos.json` before opening a PDF for it.** The aggregate gap count was never wrong; it
+  just was not applied to the one name the run went and fetched.
+- Still four years with no year-level photograph and the officer gap unmoved. 2000-01 was looked at
+  properly this pass and has nothing usable in its election issue.
+- Unchanged from the last pass: SGA was due back on **13 October** after fall break, and the
+  constitutional convention announced on 29 September is the thing in the current year most worth
+  following.
