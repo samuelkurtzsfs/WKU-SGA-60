@@ -39251,3 +39251,80 @@ legislation files, across 61 years and 1,967 events.
 - Unchanged: four years carry no year-level photograph, the officer portrait gap is unmoved, and
   the constitutional convention opened by Referendum 10.2.1 is the thing in the current year most
   worth following. SGA returns **13 October**.
+
+## 3 October, evening — the editor pass
+
+One pull request open, **#678**, the afternoon's third photograph pass. Merged. It changed no data:
+its whole diff was 66 lines appended to the research log recording what the run retried and ruled
+out, so nothing in it could reach a year page. That makes it cheap to merge and easy to merge
+carelessly, which is the reason to read it properly — the log is what the next four runs act on,
+and a wrong line in it costs more than a wrong line in a year that a reader can check against a
+citation.
+
+Twenty-two claims verified, against the eight the brief asks for. Every factual claim held.
+
+The baseline reproduces to the digit, checked by script against the current files rather than read
+off the note: 61 years, 73 `leaders` records, **none** missing a portrait, the officer gap at
+215 records / 174 distinct names / 41 years, the four year-photo gaps where they were.
+
+The one claim in the note carrying evidentiary weight is the David Bass photograph, and it is
+confirmed at the source rather than taken on the run's word. The caption is real, on leaf 38 of
+`talisman1978west`, and the volume's own back index prints `Bass, David Eugene 34`, which settles
+the page. The page image was fetched and looked at: three figures clear, a fourth mostly cropped at
+the left edge, and **no left-to-right order in the caption**. The refusal is right. It does not
+disturb the LaCivita settled fact either, which turns on a caption that says "(right)" where this
+one says nothing — and the photograph is already barred in `_do-not-use.json` on main, so the run
+reached the conclusion the archive had already reached. All four people the caption names are real
+1977-78 officers at those exact offices, and `name-aliases.json` already carries Bob Moore as
+Robert Moore, so the familiar form invented nobody.
+
+Both closed routes reproduce: the Cloudflare challenge on `viewcontent.cgi`, the reset on
+`web.archive.org`. One thing the note had too wide, now narrowed on the branch — it is the **whole
+Wayback host** that resets, bare root included, not the `if_` form of the URL, while plain
+`archive.org/download/...` answered 200 in the same minutes. The Talisman reading depends on that
+second route, and a future run skimming the bullet could have read it as archive.org being shut.
+
+**Three cuts, all one rule, none factual.** The 1978 caption was reproduced verbatim at 29 words in
+a public repository; the limit is under 15, once per source. Two further full copies were already in
+the log from earlier passes, so the file carried three. All three are paraphrased down to the names
+and offices — those are facts and are kept, the yearbook's wording is not. The passage loses
+nothing: its point is that the caption names four people without saying which is which, and that
+survives intact.
+
+Worth recording why it got through. `check_data.py` enforces this rule and reports 1,305 quoted
+spans with none reaching 15 words — but it reads `data/`, not `.md`. The research log is precisely
+where archive text gets pasted while a run is thinking out loud, and nothing checks it. Until
+something does, quote short in the log by hand.
+
+Credit where it is due on the harder rule: the run found a staff directory carrying a serving
+officer's university email and telephone number, wrote down only that it had found it and would not
+use it, and reproduced neither. That is the correct handling of a living person and the correct
+thing to leave in the log for the next run.
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py` exits 1
+on four same-day pairs and one shared-source pair, every one of them identical on `main` and none
+introduced here; judged and left alone, since each is genuinely two pieces of business — a bill
+introduced and the same bill defeated, a position taken and the legislation that followed it, and
+two items out of one meeting write-up, which is the case the script's own closing line says to
+expect. The two photographs the build withdraws, Pam Stewart and Stacy Kitchens, carry no `leaders`
+entry, so no president or regent portrait is held back from the built site.
+
+The build reports 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents and 1,111
+legislation files, across 61 years and 1,967 events. Sixty people have been president, all portrayed.
+
+## For the next pass
+
+- **The standing brief is wrong in the same two places for a fourth pass.** It still names #6, #7
+  and #8 as stale and open, all three closed on 18 August, and it still reads a `gh pr list` 403 as
+  the platform gate when the 403 is GraphQL-only and `gh api repos/.../pulls` answers normally. Four
+  passes have now spent a check on this. No run can fix the brief from inside the session; it needs
+  editing where it is stored.
+- A gap in the checks, not in anyone's work: nothing enforces the quote limit outside `data/`.
+  Three copies of one yearbook caption accumulated in the log across three passes before this one
+  noticed. If `check_data.py` grew a pass over the `.md` files it would catch the next one for free.
+- The photograph routine is now returning confirmations rather than finds, which is what exhaustion
+  looks like and is not a complaint — this run re-walked eight names from source and reproduced the
+  standing answer exactly, which is worth knowing. The officer portrait gap is unmoved at 174 names,
+  four years still carry no year-level photograph, and the constitutional convention opened by
+  Referendum 10.2.1 remains the live thing in the current year. SGA returns **13 October**.
