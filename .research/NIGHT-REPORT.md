@@ -39328,3 +39328,122 @@ legislation files, across 61 years and 1,967 events. Sixty people have been pres
   standing answer exactly, which is worth knowing. The officer portrait gap is unmoved at 174 names,
   four years still carry no year-level photograph, and the constitutional convention opened by
   Referendum 10.2.1 remains the live thing in the current year. SGA returns **13 October**.
+
+## 3 October, late — the editor pass
+
+**No pull request open, and none closed unread.** The queue is empty, and this time the branches
+were checked rather than assumed: every `research-*` and `editor-*` branch on origin either has no
+merge base with `main` — the superseded 4 August snapshots, which must never be merged — or is
+strictly behind it. Nothing anywhere on origin carries a sourced fact that `main` lacks. The four
+research routines' work is all landed.
+
+So the pass went where the risk actually is. An empty queue does not mean the site is clean; it
+means nothing new is arriving, and everything already published was last read by the pass that
+merged it.
+
+## What was verified, from the source rather than from the previous pass
+
+Twenty claims, against the eight the brief asks for, all of them in the newest material — the two
+senate meetings of 22 and 29 September, which are the most recently published and the least
+re-read. Both *Herald* articles were opened and searched.
+
+Everything held, to the digit. Referendum 10.2.1 and the Judicial Council's power to amend; the
+constitutional convention of two cabinet members and six senators; the six senators sworn in, with
+their names and all four constituencies; the twelve dental hygiene vouchers at $300 and the
+twenty-four already spent; Organizational Aid closing at 52 submissions; the Bluegrass scholarship
+widening to Illinois and Indiana; the 28 candidates across four constituencies, which add up; the
+8 a.m. opening and the 4 p.m. close of 25 September; Barker on the fall election's engagement;
+Resolution 4.6 F passing unanimously; the Counseling Center at full staff under budget.
+
+Two of those are worth naming because they are the shape of error this archive is most prone to,
+and in both cases the research routine had already got it right:
+
+- **Isaiah Wilson's co-authorship of the bus resolution is not in the article the entry leads with.**
+  It is in the 15 September article, which the entry carries as `src2`: "Landon Terry, a sophomore
+  senator, and Isaiah Wilson, a Senator At-Large, authored the resolution." A second source was
+  attached for a second claim rather than letting one citation cover both. That is the rule working.
+- **The election-opening entry refuses to fix a date its source does not fix.** The *Herald* printed
+  the meeting of the 22nd in an issue of the 23rd and dated the opening only as "today". The entry
+  says so in the body instead of picking a day and looking confident, and cites the 29 September
+  issue separately for the close. Dates were checked against the calendar: 22 and 29 September 2026
+  are both Tuesdays, 25 September a Friday, exactly as the reporting has them.
+
+The chief justice's name now appears a fourth way. The 29 September report gives **Sophia Stirling**
+— the first time the forename has varied — and the organization note already records it, correctly
+observing that the surname there agrees with SGA's own minutes. The record still follows the minutes.
+
+## The four corrections made
+
+**Three campus-context events were missing the tag, including the two CLAUDE.md names as the type
+case.** The December 2021 tornado, the March 2020 COVID closure and the April 1994 campus storm
+damage are all events in which SGA was not the actor — the body of the tornado entry says so
+outright, that the disaster "shaped SGA relief efforts the following semester" — and none carried
+`campus: true`. Twenty-five events carried the tag and these three did not, which is the wrong way
+round: the tag tells a reader "this is the world around student government," and it is worth least
+when the clearest instances in sixty years are the ones missing it. Each now renders exactly one
+tag, on the right entry, checked on the built page.
+
+Worth saying why this was invisible. The forty-two events whose wording trips a disaster search are
+almost all SGA's own business that merely mentions one — a bill *killed*, money raised for the Red
+Cross, the senate taking up a lockdown. Those are correctly untagged, and the rule is explicit that
+SGA's own business must never be tagged. The three real ones were a minority inside a false
+positive set, which is exactly the shape of thing a pass reading one pull request at a time cannot
+see.
+
+**The 1980-81 note had the two offices separating in the wrong decade.** It said that after Steve
+Fuller held both, "the two offices were separated during the next session." The student regent was a
+separately elected office from April 1968 — a settled fact — so what changed in 1981-82 is not that
+the offices were separated but that they stopped being held by one person. Rewritten to say that,
+and nothing else in the entry moved: Fuller's dual office, Bush's resignation of January 1982, the
+campus-wide election and Norfleet's February runoff all stand on their existing sources. Marcel
+Bush's `also_regent` flag was deliberately left alone — it is `name_verified`, and re-opening it is
+what the settled-facts rule forbids.
+
+## Gates
+
+`build.py` clean. `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py` exits 1
+on four same-day pairs and one shared-source pair — identical to `main` before this pass, none
+introduced here. Judged and left: a bill introduced in January 1992 and the same bill defeated in
+February; the Civil Liberties Union planning action and ASG endorsing the suit a month later;
+concern voiced over plus/minus grading and the legislation that followed three weeks on; designated
+driver cards funded in November 1997 and announced for distribution in February 1998; and three
+pieces of distinct business out of the 22 September meeting. Each is two events, not one written
+twice.
+
+Photograph integrity checked rather than assumed: all 1,175 files named in `photos.json` are present
+on disk and served, nothing named is missing, 34 candidates are held unpublished, and the two the
+build withdraws are barred identifications kept on disk for review and off the public site. No
+`leaders` portrait is held back. No event anywhere in the file is dated in the future.
+
+Baseline after the pass: 2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents, 1,111
+legislation files, 61 years, 1,967 events. Sixty people have been president, all portrayed.
+
+## For the next pass
+
+- **Three things were found and deliberately not changed**, because each is a judgement an editor
+  should make knowingly rather than a defect:
+  - The April 1994 storm-damage entry sits in **1994-95**, justified in its body as "the same week
+    as the SGA election". The election files forward by rule because it chose that year's officers;
+    a tornado does not. It arguably belongs in 1993-94. Left where it is because the body is
+    transparent about why, and moving a campus event out of the year whose coverage it accompanies
+    changes editorial intent.
+  - The 2026-27 mental-health entry names the **"Mental Health and Well-Being Committee"**; the
+    23 September article calls it the "SGA Mental Health Committee". The fuller name is attested in
+    this archive from 2021-22, so this is normalisation across years rather than invention, but it
+    is a name the cited source does not use.
+  - The 1988-89 General Education entry calls itself "one of the earliest surviving examples of
+    student government intervening in curriculum" — an unsourced claim about the archive's own
+    holdings rather than about the document.
+- **The standing brief is wrong in the same two places for a fifth pass.** It names #6, #7 and #8 as
+  stale and open; all three closed on 18 August. And it reads a `gh pr list` 403 as the platform
+  gate, when the 403 is GraphQL-only: `gh api repos/{owner}/{repo}/pulls` answers normally and push,
+  pull-request and merge rights all work. A run that follows the brief literally drops into
+  review-only mode for no reason, and the drop box it then reaches for is not configured in this
+  environment — `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both unset, so that fallback would lose
+  the work rather than land it. This cannot be fixed from inside a session; it needs editing where
+  the prompt is stored.
+- The quote-limit gap outside `data/` noted by the previous pass is still open; nothing checks the
+  `.md` files.
+- SGA does not sit again until **13 October** — fall break falls on 6 and 7 October. The
+  constitutional convention opened by Referendum 10.2.1 is still the live thing in the current year.
