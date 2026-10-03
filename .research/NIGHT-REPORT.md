@@ -1,3 +1,125 @@
+# 3 October 2026 (editor, scheduled pass) — an empty queue, the week's five live entries verified at their two sources, and the chief justice's own ruling returned to her page
+
+## What was open
+
+Nothing. `GET /repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returns `[]`. The four research
+routines' most recent branches — `research-photos`, `research-editor-1003-second` and
+`research-editor-2026-10-03` — were each checked against `origin/main` with `git diff`: the first is
+byte-identical to main and the other two are strictly behind it. All three were squash-merged as
+#676, #675 and #674 earlier today, which is why `git rev-list` still counts them "ahead". Nothing is
+stranded on a branch and nothing was lost.
+
+#6, #7 and #8, which the brief still names as stale and open since 4 August, were closed unmerged on
+18 August 2026. This is the thirteenth consecutive entry to record that. They are the orphan-history
+branches `AGENT-LANDING.md` warns must never be merged in any case.
+
+`gh pr list` answers 403 here because it is a GraphQL call. The REST API is open and was used
+throughout; this is not the platform gate, and the merge path works.
+
+## Main's own gates, run before anything was touched
+
+`build.py` clean; `check_data.py` exit 0; `check_contrib.py` exit 0. `check_duplicates.py` exits 1
+whenever it has pairs to report — it only reports, and that exit is its normal state on an untouched
+`main`, confirmed by stashing this pass's edit and running it again on the bare tip.
+
+The build's line `withdrew 2 photograph(s)` was chased down rather than assumed. It is correct
+behaviour: `1991-92-stacy-kitchens.jpg` and `1974-75-pam-stewart.jpg` are named in
+`data/photo-finds/_do-not-use.json` and kept on disk so the photograph routine can go on reviewing
+them, and the build deliberately keeps a barred identification out of `site/`. Nothing is broken.
+
+## The five entries published today, verified at source
+
+The queue being empty, the pass went to what reached the live site in the last twenty-four hours
+without a prior editor spot-check: four events added to 2026-27 from the *Herald*'s report of the
+senate meeting of 29 September, plus the rewritten entry for the fall election opening. Both cited
+articles were opened and read in full. **Fifteen separate claims were checked and all fifteen held.
+Nothing was cut.**
+
+From the report of 29 September (`wkuherald.com/97897`): the six senators sworn in, named and placed
+in the right constituency — Will Smith, Evan Sears and Max Fisher as freshmen, Joshua Gillespie
+graduate, Bryson Baker international, Samantha Brown Gatton; the passage of Referendum 10.2.1 opening
+the constitution to the Judicial Council; the convention of two cabinet members and six senators;
+twelve further dental hygiene vouchers at $300 against twenty-four already used; Organizational Aid
+closing on 52 submissions, attributed to Chief Financial Officer Will Derryberry as the article
+attributes it; and the Bluegrass Leadership Scholarship widening to Illinois and Indiana.
+
+From the report of 23 September (`wkuherald.com/97612`): "Elections opened at 8 a.m. today and will
+last until Sept. 25 at 4 p.m.", which is exactly what the entry claims and no more; the four
+constituencies that come to 28; Barker's remark on engagement; Resolution 4.6 F passing unanimously;
+and the mental health statement for all syllabi from the spring.
+
+**The advance-notice trap was the live risk here and the record handles it correctly.** The election
+times rest on a notice printed before voting closed, which proves only what was scheduled. The entry
+does not write an outcome out of it: it cites the 29 September report for the close actually
+happening, and that report says the election "concluded on Friday" without naming the hour. The close
+and its hour therefore sit on two sources, each carrying what it can. Every stated weekday was also
+checked against the calendar: 25 September 2026 is a Friday, and 22 and 29 September are the Tuesdays
+SGA meets.
+
+No committee chair has been written up as an officer — every title in these five entries is the title
+its own article gives. No one is matched by surname alone. Nothing touches a living person beyond
+what the *Herald* reported of their SGA service; President Lucas's rebuke of members for inattention
+during a guest's speech is in the article and deliberately not in the archive.
+
+## What was fixed: one ruling that reached seven pages and not the eighth
+
+`data/name-aliases.json` gains its 89th pair, `Sophie Sterling` → `Sophie Stirling`.
+
+The *Herald* alternates the two spellings for one chief justice inside a single year — Stirling on 5
+and 8 April, 15 September and 29 September 2026, Sterling on 28 April and 23 September — and gave the
+forename a third way, "Sophia", on 29 September. The 25th Senate's own minutes of 14 April 2026 give
+Stirling twice, and the archive follows them. All of that was already settled in the note on the
+2026-27 organization block and none of it is reopened here.
+
+What had gone unnoticed is the cost of it. The archive keeps each source's own spelling in the entry
+text, which is right, so the body of the 28 April 2026 event — the 26th Senate's first meeting, where
+she ruled that neither the constitution nor the bylaws addressed a tie for speaker, and the speaker's
+chair turned on that ruling — carries "Sterling". With no alias to carry the identification, that
+event gathered onto the pages of the seven other officers it names, Butler, Bailey, Phelps, Ricke,
+Marshall, Tucker and Whipple, and not onto hers. The chief justice's own ruling was missing from the
+chief justice's page.
+
+The pair meets the file's own standard rather than a resemblance of names, and the precedent is
+exact: Molly Ricke was mapped on the same footing, the *Herald* alternating while SGA's minutes
+decide. No OCR is involved on either side here — born-digital *Herald* copy against typed minutes —
+which is why this pair is mapped where Staci/Stacy Kitchens is still, correctly, left flagged.
+
+After the rebuild the ruling reaches her page, there is still exactly one page for her, and the
+totals are unmoved: 1,809 people, 2,651 terms. No person was created and none merged away.
+
+## The duplicate pairs, judged
+
+Five, and all five are genuinely distinct. None merged.
+
+- **1997-98** — Bill 97-3-F allocating $900 to print designated driver cards (4 Nov 1997) against the
+  *Herald* reporting the cards would be handed out the next day (17 Feb 1998). The funding and the
+  distribution, three months apart, on different sources. The February entry also states plainly that
+  the archive holds only a contents listing and claims nothing past the headline, which is the right
+  handling of a thin index line.
+- **1991-92** — Bill #92-01-S introduced (28 Jan) against the same bill failing after amendment
+  (6 Feb). Two legislative stages. The second says outright that the amendment which killed it is not
+  established.
+- **1971-72** — the Kentucky Civil Liberties Union planning court action (29 Feb) against Associated
+  Students formally endorsing the suit (28 Mar). A month apart, and the second entry already cites the
+  first as prior.
+- **2003-04** — concern voiced at the meeting of 23 September against legislation passed unanimously
+  on 14 October. Debate and vote, three weeks and two meetings apart.
+- **2026-27** — the mental health statement and the election opening, both off the report of
+  23 September. One article, two pieces of business, which is what that article in fact carries; both
+  were read today.
+
+## Where the record stands
+
+61 years, 1,967 events, 60 presidents. 1,111 pieces of legislation, every file present and a real
+PDF. 1,302 citations naming a volume and number, each opening its issue. 1,305 quoted spans, none
+reaching fifteen words. 2,651 terms of office held by 1,809 people, 98% of them carrying an account of
+what the person did. 48 people recorded under more than one spelling.
+
+2026-27 is current to the day. The *Herald* of 29 September closes by saying SGA does not sit again
+until 13 October, WKU's fall break falling on 6 and 7 October, so there is no meeting between that
+report and this pass for the record to be missing.
+
+
 # 1 October 2026 (editor, fourth pass) — thirty verified date corrections published, and the officer-portrait count settled after three passes called it unreachable
 
 ## What was open
