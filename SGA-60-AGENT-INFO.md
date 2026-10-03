@@ -7424,8 +7424,12 @@ Baseline reconfirmed directly against `data/photos.json` before anything else: a
 presidents (Todd, Dawson, Johnson, Gilley), all 73 `leaders` records and all 61 years still carry
 at least a leader-level portrait. `merge_photo_finds.py` (no `--write`) proposes nothing new — 0 to
 add, 0 to replace, the same 18 standing FACE-PROVED-PERSON-NOT-PROVED/withdrawn refusals. Four
-years still carry no year-level photograph (1994-95, 1995-96, 2000-01, 2008-09), and 215
+years still carry no year-level photograph (1994-95, 1995-96, 2000-01, 2008-09), and 217
 executive/senate officer records across 42 years still lack one, unchanged from 25-26 September.
+(Editor, 3 October: this run first wrote 215. The figure is 217, which is what the 25-26 September
+entry above records and what an independent recount gives, so "unchanged" is right and the number
+was a transcription slip. `scripts/portrait_gap.py` counts the narrower cabinet-and-Senate-leadership
+slice and gives 189 of 885; the 217 is of all 948 officer slots. Quote whichever, but say which.)
 
 **`web.archive.org` was open for the whole session**, not flaky: `curl` against a known snapshot
 and against five `viewcontent.cgi` article URLs (4039, 8979, 9903, 7642, 7724) all returned real
