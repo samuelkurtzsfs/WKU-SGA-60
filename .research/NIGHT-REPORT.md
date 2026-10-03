@@ -38952,3 +38952,104 @@ correction corrected. Commit author `SGA 60`, no tool attribution in the message
 - Unchanged from the last pass: SGA was due back on **13 October** after fall break, and the
   constitutional convention announced on 29 September is the thing in the current year most worth
   following.
+
+---
+
+# Editor pass, 3 October (scheduled): an empty queue, and the one article behind yesterday's history verified from scratch
+
+## The queue
+
+**No pull request was open.** The repository has 0 open pull requests; #674 was squashed onto `main`
+earlier the same day and nothing has been pushed since. The merge decision this pass is therefore
+vacuous, and the run was spent on the two things that are not vacuous: proving nothing is stranded,
+and independently checking what reached the live site in the last day.
+
+## Nothing is stranded, and the check that says so was itself checked
+
+A sweep of every branch on `origin` for content `main` lacks came back empty on its first run. That
+empty result was **not trusted**: trap 7 is scripts that report success while producing nothing, and
+a loop that prints nothing looks identical to a loop that never ran. Re-tested against a control —
+the 4 August orphan `research-2020s`, which must differ and does (2,307 files, 498,450 deletions) —
+the method proved sound, and the first sweep proved to have died when it was moved to the background.
+Re-run properly over the 49 branches touched since 26 September:
+
+- The three branches dated 3 October — `research-photos`, `research-editor-2026-10-03`,
+  `editor-1003-scheduled` — carry **nothing** `main` lacks.
+- Every one of the 49 maps to a pull request that was opened. None was pushed and forgotten.
+- Two read as closed-unmerged. `research-photos` is the rolling branch and its unmerged row is #6,
+  from August. The other is **#668** (`editor-1002-photo-review`), closed unmerged on 2 October.
+
+**#668 was the one real question of this pass, and it is answered: nothing was lost.** It holds two
+lines `main` does not, and `main`'s versions of both are strictly better. Its senate-spelling note is
+a subset of `main`'s, which adds the third variant 'Sophia Stirling'. Its fall-election body is the
+shorter draft; `main` keeps every fact in it and adds the caveat that the *Herald* dated the opening
+only as "today" in an issue published the day after the meeting, so which of the two days voting
+opened is not fixed. The closed pull request cost the archive nothing.
+
+## What was verified, from the source rather than from the previous pass
+
+Of the three merges of the last 24 hours, **#673 and #674 changed no data at all** — a report-only
+photograph run and a report-only editor pass. The whole of yesterday's new history is **#672's 44
+lines**, five entries in 2026-27 resting on a single article, the *Herald* of 29 September
+(`wkuherald.com/97897`). That article was fetched and every claim in all five entries read against
+it. All of it holds:
+
+- The six senators sworn in, with the right constituency on each name: freshmen Will Smith, Evan
+  Sears and Max Fisher, graduate Joshua Gillespie, international Bryson Baker, Gatton Samantha Brown.
+- Referendum 10.2.1 passed, opening the constitution to the Judicial Council; the convention of two
+  cabinet members and six senators to be called soon. The entry paraphrases the chief justice calling
+  the constitution old rather than quoting her, which is the right side of the quotation rule.
+- Twelve further dental hygiene vouchers for $300, the twenty-four of 2025-26 having been used.
+- Organizational Aid closed on 52 submissions, per Chief Financial Officer Will Derryberry; the
+  Bluegrass Leadership Scholarship opened to Illinois and Indiana, per Vice President Jakob Barker.
+- The spelling note is right, and now right on the page as well as in the file: the 29 September
+  report does give **'Sophia Stirling'**, varying the forename for the first time while the surname
+  agrees with SGA's own minutes.
+
+Nothing in the five entries overstates its source, no committee chair appears as an officer, no one is
+matched by surname alone, no April result sits in the wrong year, and nothing touches section 7.
+
+## The one correction made
+
+The 29 September entry states the election closed **at 4 p.m. on Friday 25 September**. Its own cited
+article says only "concluded on Friday". The time and the date are real and are in this year's record,
+but they come from the *Herald* of 23 September, so a reader checking the claim against the citation
+beside it would not find them. The 23 September article is added as a second citation on that entry.
+The fact was already traceable within the year; it is now traceable from the entry. Nothing was cut
+this pass, because nothing needed cutting.
+
+Also noted and deliberately **not** written up: the same article closes by saying SGA would reconvene
+on 13 October after fall break. That is an advance notice. It stays out of the record until a report
+of the meeting exists.
+
+## Gates
+
+`build.py` **exit 0**. `check_data.py` **exit 0** — 1,111 pieces of legislation with every file present
+and a real PDF, 1,302 citations each opening the issue it names, 1,305 quoted spans none reaching
+fifteen words, **61 years, 1,967 events, 60 people have been president**. `check_contrib.py` **exit 0**
+on all seventeen checks, the no-tool-attribution check among them. `check_duplicates.py` **exit 1** on
+output byte-identical to the output before this pass's edit: the same four title-similar pairs and the
+same one same-source pair, none introduced here. All five read again and all five left as separate
+business, for the fifth pass running — the 1991-92 bill introduced and then failed, the 1971-72 suit
+planned and then endorsed, the 2003-04 stance taken and then legislated, the 1997-98 driver cards three
+months apart, and the two pieces of 2026-27 business reported in one article.
+
+The build reports 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents and 1,111
+legislation files.
+
+## For the next pass
+
+- **The standing brief is now wrong in a second place.** It still names #6, #7 and #8 as stale and
+  open — all three closed on 18 August, as the last pass also recorded — and it still instructs the
+  editor to merge `origin/main` into them. Two passes have now spent a check on this. The brief needs
+  the paragraph cut; no run can do it from inside the session.
+- The brief's `gh pr list` gate is also misleading. It returns **403 on this repository**, but the
+  failure is GraphQL-only and is not the platform gate the brief describes: `gh api repos/.../pulls`
+  answers normally and the full editor route is open. A run that reads the 403 at face value will drop
+  into review-only mode for no reason. Use `gh api`, not `gh pr list`.
+- The 215/217 figure was not recounted this pass, per the standing instruction. It still holds its
+  own basis in the handoff.
+- Unchanged: four years carry no year-level photograph, the officer portrait gap is unmoved, and the
+  constitutional convention opened by Referendum 10.2.1 is the thing in the current year most worth
+  following. SGA returns **13 October**.
