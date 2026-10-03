@@ -7496,6 +7496,86 @@ No file was added to or removed from `data/photos.json` or `data/photos/`; the w
 clean (61 years, 60 presidents, all still portrayed). This run's only change is to this file.
 Landed on `research-photos`.
 
+### Photograph run of 3 October (scheduled, second): the Talisman/Xposure publication catalog mapped year-group by year-group, confirming (not newly establishing) that Xposure carries no SGA content; `viewcontent.cgi` closed, the Wayback route intermittent
+
+Baseline reconfirmed first, as every run now does: Todd, Dawson, Johnson and Gilley (the four
+named presidents) and all 73 `leaders` records still carry a portrait; the four year-photo gaps
+(1994-95, 1995-96, 2000-01, 2008-09) and the 215/217-record officer gap are unchanged. Access was
+retested cold and is closed on both routes this run: `cgi/viewcontent.cgi` still answers the
+Cloudflare "Just a moment..." 403 challenge (re-confirmed 403 by the editor pass of 3 October).
+`web.archive.org` returned `curl: (35) Recv failure` at the TLS handshake during this run rather
+than opening the `if_` bypass the 3 October (first) run found — but the editor pass hours later got
+an ordinary `HTTP 302` from the same host. **Treat the Wayback route as intermittent, not closed,
+and always retry it:** two runs the same day disagreed about it, so a flat "closed" here would stop
+a later run trying a route that may well be open.
+
+**What is actually new here is the catalog map, not the Xposure finding.** The editor pass of
+3 October checked this against the rest of this file: all six Xposure issues were **already ruled
+out on 22 August** (see the Talisman sweep table above, the 1994-95 and 1995-96 rows), and a later
+run went further still, recovering three of the six as full scans through Wayback and reading their
+rendered contents pages directly. That is stronger evidence than the abstract scan below, which
+re-derives the same conclusion by a weaker method. So this run **confirms** an existing ruling-out;
+it does not close a gap, and no year-photo gap is closed by it — ruling out one candidate source
+leaves the gap exactly where it was. What is genuinely new is the year-group structure of the
+collection page, which is worth having because it is cheap to read and bounds what TopSCHOLAR holds:
+`digitalcommons.wku.edu/dlsc_ua_yearbooks/` — the yearbook collection's own landing page, which is
+an ordinary page and not gated by Cloudflare like `cgi/viewcontent.cgi` — lists every cataloged
+Talisman/Xposure item with the year it was added. Read cold (no PDF fetch needed):
+
+- The last traditional yearbook before a hiatus is **"Talisman: Against All Odds"**
+  (`dlsc_ua_records/418`, 1994 — i.e. the 1993-94 academic year, already photographed from other
+  sources).
+- In its place, WKU Student Affairs published a quarterly magazine called **Xposure**:
+  *Prejudice: Beyond Black & White* (419), *Rites of Passage* (420), *Canvas Flesh* (421) and
+  *Fall 1995* (422) in the 1995 group, then *Spring 1996* (423) and *Summer 1996* (424) — six
+  issues covering very roughly 1994-95 through 1995-96. (419 and 420 were the wrong way round when
+  this note was first written; the collection page and this file's own table at the 1994-95 row
+  both give 419 as *Prejudice*.) **Each issue's landing page carries its full table of contents as
+  the page abstract, and none of the six mentions SGA, Student Government, ASG, the Senate, student
+  regent, congress or an election in any of the 239 listed articles** (counted item by item from
+  the six abstracts' `<li>` lists: 54, 39, 31, 36, 44 and 35). This is a stronger negative than
+  the usual Herald-index miss this file warns about elsewhere (trap 1): it is not an item the
+  archivist condensed to one line, it is the complete contents list of the publication. **Xposure
+  is ruled out as a photo source for 1994-95 and 1995-96 on this evidence, not absence of searching.**
+- No *Talisman* is cataloged between "Talisman: Against All Odds" (1994) and **"2003 Talisman:
+  About Face"** (`dlsc_ua_records/594`); the six Xposure issues above do sit in that interval, in
+  the collection's 1995 and 1996 year groups, so this is a gap in the yearbook proper, not an empty
+  stretch of catalog. The collection page carries no year group at all for 1997 through 2002.
+  A WNKY News 40 Television retrospective ("Throwback Thursday — 95 Years of WKU Student
+  Publications, Part 2: Talisman",
+  https://www.wnky.com/throwback-thursday-95-years-of-wku-student-publications-part-2-talisman/)
+  says: *"From 1996 to 2001, the Talisman was not published. It was reborn in 2002."* **On that
+  source 2000-01 has no Talisman.** Two cautions, because this is the one conclusion here resting
+  on a single secondary source: WNKY is a television station's later retrospective — the "later
+  list" class this file says to treat as a claim to verify, not a fact to copy — and it speaks only
+  to the *Talisman*, not to every possible yearbook or photo source. So 2000-01 is **very probably
+  a true publication gap rather than a digitization gap, not proven to be one**, and a
+  contemporaneous source would still be worth having. Note also that the quoted window (from 1996)
+  and the catalog (nothing after the 1994 Talisman) do not line up exactly: no 1995 or 1996
+  Talisman is cataloged either. That discrepancy is unresolved — do not smooth it over.
+- **2008-09 is a different kind of gap.** The next item cataloged after "2003 Talisman: About
+  Face" is "Talisman, Vol. 83" (`dlsc_ua_records/8897`), whose own landing-page description opens
+  "2012 Talisman" — so despite the Vol. 83 label, nothing between the 2003 and 2012 editions is on
+  TopSCHOLAR at all, 2008-09 included. Unlike 2000-01, the yearbook almost certainly *was*
+  published every year in this span (the WNKY piece has it continuing unbroken from 2002 onward);
+  it is simply not digitized here. Nothing to rule out — just confirmation that Talisman is a dead
+  end for 2008-09 specifically on TopSCHOLAR, same conclusion the officer-gap searches already
+  reached by a different route.
+
+**For the next run, once a PDF route reopens:** `data/herald-index-full.json` was re-read for
+2008-09 (1 Aug 2008 – 1 Jun 2009) and returns 27 SGA-related issues with full headline lists, none
+previously flagged as containing a photograph because none has been opened as a PDF yet. The
+likeliest candidates for an actual photograph, by subject, are the two election-result issues —
+Herald 84:35 (26 Feb 2009, `dlsc_ua_records/6718`, "Reagan Gilley Elected Student Regent" — already
+the source of Gilley's portrait, so check it for a *second*, different frame rather than reusing
+the one on file) and Herald 84:46 (16 Apr 2009, `dlsc_ua_records/6747`, "All Smiles, Kevin Smiley
+Wins Student Government Association Election") — election-night stories in this index have
+produced usable crowd/candidate photographs before. Neither has been opened this run; both are
+blocked behind the same closed `cgi/viewcontent.cgi` as everything else.
+
+No file in `data/photos.json` or `data/photos/` changed. `build.py` and `check_data.py` both pass
+clean. Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash

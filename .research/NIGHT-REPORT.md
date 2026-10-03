@@ -39053,3 +39053,79 @@ legislation files.
 - Unchanged: four years carry no year-level photograph, the officer portrait gap is unmoved, and the
   constitutional convention opened by Referendum 10.2.1 is the thing in the current year most worth
   following. SGA returns **13 October**.
+
+## 3 October 2026, second editor pass
+
+One pull request open: **#676**, the second photograph run of the day, on `research-photos`. It
+changes one file, `SGA-60-AGENT-INFO.md`, and nothing in `data/` or `site/`, so no claim in it was
+ever going to reach the published site. It was read as a research note all the same, because the
+notes are what the next run acts on: a wrong record number sends it to the wrong page, and a
+conclusion written up as settled closes a question that is not closed.
+
+Fifteen claims were checked, nine of them against the sources themselves. The four baseline counts
+hold exactly — 61 years, 73 leader records, no leader without a portrait, and the four year-photo
+gaps are 1994-95, 1995-96, 2000-01 and 2008-09. The yearbook collection page is ungated and was
+read year-group by year-group: `418` is Against All Odds in the 1994 group, `594` is About Face in
+2003, `8897` is Vol. 83 and its abstract does open "2012 Talisman", and there is no year group at
+all for 1997 through 2002 or for 2004 through 2011. Both 2008-09 Herald leads check out against the
+local index — `6718` is 26 February 2009 and `6747` is 16 April 2009, with the headlines quoted.
+The 27-issue figure for 2008-09 reproduces on the keyword set the workflow prescribes once congress
+is included. `viewcontent.cgi` still answers 403. The WNKY sentence is quoted accurately.
+
+Six things were wrong or overstated, and all six were corrected on the branch rather than cut,
+since each was rescuable:
+
+- **Two record numbers were swapped.** 419 is *Prejudice: Beyond Black & White* and 420 is *Rites
+  of Passage*, not the reverse. The collection page says so and this file's own Talisman sweep
+  table has said so since 22 August.
+- **The Xposure finding is not new.** All six issues were ruled out on 22 August, and a later run
+  recovered three of them as full scans and read the rendered contents pages — better evidence than
+  this run's abstract scan, which reaches the same answer by a weaker route. The note claimed to
+  close two year-photo gaps "for good"; ruling out one candidate source closes no gap at all, and
+  the framing has been rewritten to say it confirms what was already established.
+- **The article count understated its own evidence.** Not roughly 150 listed articles across the six
+  issues but 239, counted item by item: 54, 39, 31, 36, 44 and 35. None of the 239 mentions SGA,
+  ASG, student government, the Senate, the regent seat, congress or an election. The negative is
+  real and stronger than claimed.
+- **"Nothing at all is cataloged" between the 1994 and 2003 Talismans is false as written** — the
+  six Xposure issues sit in exactly that interval, as the note's own previous sentence says. Trimmed
+  to no *Talisman* being cataloged there.
+- **The WNKY retrospective was attributed to the Daily News.** It is WNKY News 40 Television, a
+  different outlet, and the note carried no URL. Both fixed.
+- **The 2000-01 conclusion was over-claimed.** "No yearbook of any kind exists for that year, on or
+  off TopSCHOLAR" rests on one television station's later retrospective, which is the later-list
+  class this project treats as a claim to verify, and which speaks only to the Talisman. Trimmed to
+  2000-01 being very probably a true publication gap rather than proven one. The quoted window
+  starts in 1996 while the catalog stops after the 1994 volume, so no 1995 or 1996 Talisman is
+  cataloged either; that discrepancy is now recorded as unresolved instead of smoothed over.
+
+One further correction, about this container rather than the archive: the note had the
+`web.archive.org` route "closed", resetting at the TLS handshake. Hours later the same host answered
+an ordinary 302. Two runs the same day disagreed, so the route is recorded as **intermittent, retry
+always** — a flat "closed" would stop a later run from trying something that works.
+
+`build.py`, `check_data.py` and `check_contrib.py` all pass clean after the corrections.
+`check_duplicates.py` exits 1 on four same-day pairs and one shared-source pair, every one of them
+identical on `main` and so none introduced here. Judged and left alone: the shared-source pair is
+the syllabus mental-health statement of 22 September and the opening of fall voting on 23 September,
+two separate pieces of business reported in one meeting write-up, which is the case the script
+itself says to expect. **#676 merged.**
+
+The build reports 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents and 1,111
+legislation files, across 61 years and 1,967 events.
+
+## For the next pass
+
+- **The standing brief is now wrong in the same two places for a third pass.** It still names #6,
+  #7 and #8 as stale and open with instructions to merge `origin/main` into them; all three closed
+  on 18 August. And it still treats a `gh pr list` 403 as the platform gate, when the 403 is
+  GraphQL-only and `gh api repos/.../pulls` answers normally. Three passes have now spent a check
+  on this. No run can fix the brief from inside the session.
+- Worth watching in the photograph routine: this run presented a 22 August ruling-out as a new
+  finding closing two gaps. The baseline recital at the top of each note is doing its job, but the
+  run did not check its own "new fact" against the sweep table twenty lines up its own file. A
+  cheap habit to add — grep this file for the record number before calling anything new.
+- Unchanged: four years carry no year-level photograph, the officer portrait gap is unmoved, and
+  the constitutional convention opened by Referendum 10.2.1 is the thing in the current year most
+  worth following. SGA returns **13 October**.
