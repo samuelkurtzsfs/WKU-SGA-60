@@ -38713,3 +38713,114 @@ photograph log. None of them is to be merged, and none holds unlanded work.
 - The photograph routine has now exhausted its gap list against every route open to it. Until
   `viewcontent.cgi` or `web.archive.org` reopens there is no forward motion in it, and the next
   photograph run should test both cold and then stop rather than re-sweep 215 searched names.
+
+# 3 October 2026, editor pass (scheduled) — an empty queue worked as a carry-over list, and the 29 September meeting found missing from the current year
+
+## What was open
+
+Nothing. `GET /repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returns `[]`, and every live branch
+on origin is level with `main`: `research-photos`, `research-editor-1002-scheduled` and
+`editor-1002-seventh` are all 0 ahead. The thirteen other `research-*` branches have no merge base
+with `main` and are the superseded August snapshots `AGENT-LANDING.md` warns about; none holds
+unlanded work. `gh pr list` is not usable here — GraphQL answers 403 — but the REST route works and
+the token carries admin, so this pass could merge and did.
+
+The brief's instruction to rescue or close **#6, #7 and #8** is wrong for the fourteenth consecutive
+entry. They were closed unmerged on 18 August 2026 and the repository is past #671.
+
+## The two duplicate pairs the last pass left, both judged and both kept apart
+
+**1997-98, the designated driver cards.** Not one event written twice. The 4 November 1997 entry is
+Bill 97-3-F itself; its TopSCHOLAR landing page gives a start date of 4 November and an end date of
+11 November, which is exactly the first and second reading the entry describes, and the page's own
+description matches the entry's account of the scheme. The 17 February 1998 entry is a *Herald*
+headline three and a half months later saying the cards were about to be distributed. Different
+sources, different business, three months apart. The second is an advance notice and already says so
+in terms — it claims nothing beyond the headline and explicitly records that the archive holds the
+issue only as a contents listing. Left as two entries, unaltered.
+
+**2026-27, 22 and 23 September.** Also not a duplicate: three entries share one *Herald* article
+because that article reports one senate meeting plus the election, and they divide the business
+cleanly. But the last pass was right to be suspicious of the date, and the suspicion turned out to be
+better founded than a simple publication-day error.
+
+The senate sat Tuesday 22 September. The article was published at 03:22 UTC on 24 September, which is
+22:22 local on Wednesday the 23rd. In it the reporter writes that elections opened at 8 a.m. "today"
+— and "today" cannot be resolved. Read as the reporter's writing day it means the 23rd; read from the
+meeting floor, where the chief communications officer described a voting-promotion post that had
+already gone live at 8 a.m., it means the 22nd. The article argues both ways within four paragraphs
+of itself, and no second source settles it: the *Herald* of 29 September confirms the close ("the
+election concluded on Friday", 25 September) and says nothing about the opening.
+
+So the date was **not** moved. Moving it would have been a guess, and the 1 October sweep's thirty
+corrections were all cases where the day SGA acted was known. What was wrong was the entry asserting
+a bare fact the source does not carry. It now says what the report says and what the report leaves
+open, and cites the 29 September article for the close. Rescued rather than cut.
+
+## A gap in the current year, filled
+
+Checking that second article for the close turned up something the archive did not have at all: the
+senate meeting of **29 September 2026** was missing, and the record for 2026-27 stopped at the 23rd.
+Four entries added, every one of them from a source read in full:
+
+- the fall election closed 4 p.m. Friday 25 September and six senators were sworn in — freshmen Will
+  Smith, Evan Sears and Max Fisher, graduate senator Joshua Gillespie, international senator Bryson
+  Baker and Gatton Academy senator Samantha Brown — the first meeting since the year's open seats
+  were filled;
+- **Referendum 10.2.1** passed, letting the Judicial Council amend the constitution, with a revising
+  convention of two executive cabinet members and six senators to be called;
+- a resolution funding twelve further dental hygiene vouchers for $300, the twenty-four bought in
+  2025-26 having been used;
+- Organizational Aid closed with 52 applications, and the Bluegrass Leadership Scholarship opened to
+  students from Illinois and Indiana.
+
+The meeting's two guest speakers and the fall-break scheduling note were left out deliberately:
+prior practice in this year does not write up guest addresses, and neither is business SGA decided.
+
+## A third spelling of the chief justice, flagged and not fixed
+
+The 29 September article gives **"Sophia Stirling"**. The archive had already settled the surname on
+SGA's own minutes against the *Herald*'s alternation between Stirling and Sterling, and that
+reasoning stands untouched; but the forename had never varied before. One sentence added to the
+existing note recording it, so the next pass does not meet it cold and take it for a new person. No
+name in the data changed.
+
+## What was checked against its source
+
+Every new claim, and the ones already published that the pairs turned on. Bill 97-3-F read at its
+TopSCHOLAR landing page (readings of 4 and 11 November 1997 confirmed). The 23 September article read
+in full, which confirmed the resolution entry's account of Resolution 4.6 F passing unanimously, the
+mental health statement, Carter Smith's swearing-in and appointment as the second student member of
+the Faculty Senate Undergraduate Curriculum Committee, Amelia Tucker's nomination for homecoming
+queen and the Bluegrass announcement. The resolution entry's second source, the *Herald* of 15
+September, read and confirmed exactly: Landon Terry a sophomore senator and Isaiah Wilson a Senator
+At-Large authored it, proposed that week for a vote the next. The 29 September article read in full
+for the four new entries. Nothing failed, and nothing had to be cut.
+
+## Gates
+
+`build.py` **exit 0**. `check_data.py` **exit 0** — 1,111 pieces of legislation with every file
+present and a real PDF, 1,302 citations each opening the issue it names, 1,305 quoted spans none
+reaching fifteen words, 61 years, **1,967 events** (four added), 60 people have been president.
+`check_contrib.py` **exit 0** on all seventeen checks. `check_duplicates.py` **exit 1** on output
+byte-identical to `main`'s: the same four title-similar pairs and the same one same-source pair, no
+new ones introduced by the four additions. All five read; all five are separate business.
+
+The build reports 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents and 1,111
+legislation files.
+
+## For the next pass
+
+- The 1991-92, 1971-72 and 2003-04 title-similar pairs are each a two-stage process — introduced
+  then failed, planned then endorsed, opposed then legislated — and have now been read and left by
+  several passes running. They are worth marking as settled so they stop consuming a judgement each
+  time rather than being re-read indefinitely.
+- 2026-27 is a live year and the *Herald* is publishing weekly. SGA was due to reconvene on
+  **13 October** after fall break on the 6th and 7th; the meetings of 6 October (if any) and 13
+  October will need picking up. The category page at `wkuherald.com/category/news/news-campus-government/`
+  lists the SGA stories in order and is the cheapest way to find what is new.
+- The constitutional convention announced on 29 September is the most consequential thing in the
+  current year. When it is called, its membership and what it changes should be followed closely.
+- The photograph routine remains exhausted against every open route; nothing in this pass changes
+  that.

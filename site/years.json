@@ -56931,10 +56931,50 @@
     {
      "date": "2026-09-23",
      "title": "Fall election voting opens with 28 candidates",
-     "body": "Voting in the fall senate election opened at 8 a.m. and was set to close at 4 p.m. on 25 September. The Herald listed candidates in four constituencies - 20 freshmen, six from the Gatton Academy, one graduate student and one international candidate - which come to 28. Vice President Jakob Barker told the senate it was the most engagement he had seen in a fall election in his time at WKU.",
+     "body": "The Herald's report of the 22 September meeting said voting in the fall senate election had opened at 8 a.m. that day and would run until 4 p.m. on 25 September. The paper carried the meeting of the 22nd in an issue published on the 23rd and dated the opening only as \"today\", so which of the two days voting opened is not fixed by the report; the close is confirmed, the Herald reporting on 29 September that the election had concluded on the Friday. The Herald listed candidates in four constituencies - 20 freshmen, six from the Gatton Academy, one graduate student and one international candidate - which come to 28. Vice President Jakob Barker told the senate it was the most engagement he had seen in a fall election in his time at WKU.",
      "src": {
       "label": "Herald, 23 Sep 2026",
       "url": "https://wkuherald.com/97612/news/news-campus-government/sga-hears-guest-speaker-moves-forward-with-improved-bus-tracking-resolution/"
+     },
+     "src2": {
+      "label": "Herald, 29 Sep 2026",
+      "url": "https://wkuherald.com/97897/news/sga-senate-complete-following-fall-election/"
+     }
+    },
+    {
+     "date": "2026-09-29",
+     "title": "The fall election fills the senate's open seats",
+     "body": "The fall senate election closed at 4 p.m. on Friday 25 September, and at the senate's next meeting the chief justice swore in the six senators it returned: freshmen Will Smith, Evan Sears and Max Fisher, graduate senator Joshua Gillespie, international senator Bryson Baker and Gatton Academy senator Samantha Brown. It was the first meeting since the seats left open at the start of the academic year were filled.",
+     "src": {
+      "label": "Herald, 29 Sep 2026",
+      "url": "https://wkuherald.com/97897/news/sga-senate-complete-following-fall-election/"
+     }
+    },
+    {
+     "date": "2026-09-29",
+     "title": "Referendum 10.2.1 opens the constitution to revision",
+     "body": "The chief justice announced to the senate that Referendum 10.2.1 had passed, allowing the Judicial Council to amend the SGA constitution, which she described to members as old. She said a constitutional convention would be called soon to revise it, made up of two members of the executive cabinet and six senators.",
+     "src": {
+      "label": "Herald, 29 Sep 2026",
+      "url": "https://wkuherald.com/97897/news/sga-senate-complete-following-fall-election/"
+     }
+    },
+    {
+     "date": "2026-09-29",
+     "title": "Twelve more dental hygiene vouchers funded",
+     "body": "The senate passed a resolution buying twelve further dental hygiene vouchers for a total of $300. The twenty-four bought during the 2025-26 year had all been used.",
+     "src": {
+      "label": "Herald, 29 Sep 2026",
+      "url": "https://wkuherald.com/97897/news/sga-senate-complete-following-fall-election/"
+     }
+    },
+    {
+     "date": "2026-09-29",
+     "title": "Organizational Aid closes with 52 applications, and the Bluegrass scholarship widens",
+     "body": "Chief Financial Officer Will Derryberry told the meeting that SGA's Organizational Aid application had closed, having received 52 submissions. Vice President Jakob Barker said the Bluegrass Leadership Scholarship, whose return he had announced the previous week, would now also be open to students from Illinois and Indiana.",
+     "src": {
+      "label": "Herald, 29 Sep 2026",
+      "url": "https://wkuherald.com/97897/news/sga-senate-complete-following-fall-election/"
      }
     }
    ],
@@ -57019,7 +57059,7 @@
        ]
       }
      ],
-     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026 and Herald, 5 Apr 2026, the latter quoting her 2 Apr 2026 weekly report to the 25th Senate) in Herald reporting; the official 25th Senate minutes of 14 Apr 2026 (in 2025-26's documents) twice give 'Sophie Stirling'. The Herald has gone on alternating between the two spellings since: its report of 15 Sep 2026 on the election codes meeting gives 'Stirling' throughout, and its report of 23 Sep 2026 gives 'Sterling' swearing in Carter Smith, eight days apart in the same paper. The 28 Apr 'Sterling' therefore reads as that paper's own inconsistency rather than a correction, and SGA's own minutes remain the better authority; the record follows them. The 26th Senate's nine committee chairs were reported on 25 August 2026 and are recorded in this year's events; they are not yet broken out in this organization block.",
+     "note": "Maggie Phelps was sworn to the Judicial Council and defeated presidential candidate Jaden Marshall was seated as an at-large senator, both at the 26th Senate's first meeting, 28 April 2026. The chief justice's name appears as both 'Sophie Sterling' (Herald, 28 Apr 2026) and 'Sophie Stirling' (Herald, 8 Apr 2026 and Herald, 5 Apr 2026, the latter quoting her 2 Apr 2026 weekly report to the 25th Senate) in Herald reporting; the official 25th Senate minutes of 14 Apr 2026 (in 2025-26's documents) twice give 'Sophie Stirling'. The Herald has gone on alternating between the two spellings since: its report of 15 Sep 2026 on the election codes meeting gives 'Stirling' throughout, and its report of 23 Sep 2026 gives 'Sterling' swearing in Carter Smith, eight days apart in the same paper. Its report of 29 Sep 2026 gives the name a third way, 'Sophia Stirling', the first time the forename has varied; the surname there agrees with the minutes. The 28 Apr 'Sterling' therefore reads as that paper's own inconsistency rather than a correction, and SGA's own minutes remain the better authority; the record follows them. The 26th Senate's nine committee chairs were reported on 25 August 2026 and are recorded in this year's events; they are not yet broken out in this organization block.",
      "members": [
       {
        "name": "Jaden Marshall",
