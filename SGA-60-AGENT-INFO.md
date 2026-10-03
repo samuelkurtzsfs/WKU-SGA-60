@@ -3275,11 +3275,11 @@ split does not cleanly match a 4-and-3 row count the way the 1986 theater
 photos did. Left alone; **Carol Gray (1970-71 secretary) is still without
 a portrait**, and this is a case where the row caption alone was not
 enough — a different kind of caution than an unlabeled composite, worth
-distinguishing in the log. A 1978 Talisman p. 34 candid pair ("ASG
-COMMITTEE CHAIRMEN Brad Ford and Gene Saunders talk with representative
-Kevin Kinne" and "A LIGHT MOMENT IN AN ASG MEETING brings laughter from
-president Bob Moore and smiles from activities vice president David Bass,
-secretary Sharon May and vice president Cathy Murphy") names four more
+distinguishing in the log. A 1978 Talisman p. 34 candid pair — one captioned
+for ASG committee chairmen Brad Ford and Gene Saunders with
+representative Kevin Kinne, the other for a light moment in an ASG
+meeting naming president Bob Moore, activities vice president David Bass,
+secretary Sharon May and vice president Cathy Murphy — names four more
 1977-78/1978-79 officers, but both are candid shots with no row or
 position order — left alone for the same reason.
 
@@ -6719,9 +6719,9 @@ year were checked by name through `inside.php` and by eye on the resulting page:
   by either `grep` on the plain djvu text or `inside.php`. Not pictured or not captioned by this
   name in this volume.
 - **David Bass** (Activities Vice President, 1977-78) — found, `talisman1978west` leaf 38 (printed
-  page 34), captioned "A LIGHT MOMENT IN AN ASG MEETING brings laughter from president Bob Moore
-  and smiles from activities vice president David Bass, secretary Sharon May and vice president
-  Cathy Murphy," over a photo of four people. **Declined**: the caption gives no left-right order
+  page 34), under a caption naming four people at a light moment in an ASG meeting — president
+  Bob Moore, activities vice president David Bass, secretary Sharon May and vice president
+  Cathy Murphy — over a photo of four people. **Declined**: the caption gives no left-right order
   and three of the four named people are described only as smiling, so there is no way to say
   which pictured face is Bass rather than May or Murphy. A future run with a second, independent
   source naming his face specifically could still use this page.
@@ -7575,6 +7575,75 @@ blocked behind the same closed `cgi/viewcontent.cgi` as everything else.
 
 No file in `data/photos.json` or `data/photos/` changed. `build.py` and `check_data.py` both pass
 clean. Landed on `research-photos`.
+
+### Photograph run of 3 October (afternoon, third pass): both routes retested and closed again; the archive.org-covered officer gap independently re-walked from source rather than trusted; a wider open-web sweep on four recent names still turns up nothing
+
+Baseline reconfirmed directly against `data/photos.json` and `data/years.json` before anything
+else, by script rather than by note: all four named presidents (Todd, Dawson, Johnson, Gilley),
+all 73 `leaders` records and all 61 years carry a leader-level portrait — zero president or regent
+missing one. The officer gap is unchanged at 215 records / 174 distinct names / 41 years (name
+basis), matching #673 and #676 exactly off the current file, and the four year-photo gaps
+(1994-95, 1995-96, 2000-01, 2008-09) are unchanged.
+
+Retested both PDF routes cold, as this file's own standing instruction says to do every run rather
+than trust the last one's verdict:
+
+- `cgi/viewcontent.cgi` (`article=7717`, `context=dlsc_ua_records`) — `curl` with full browser
+  navigation headers gets the Cloudflare "Just a moment..." 403 challenge, 6,016 bytes of
+  challenge HTML. The platform's own `WebFetch` tool, a separate fetch path, got the same 403 with
+  no body — consistent with the 27 September finding that this is a block on the request, not the
+  network position.
+- `web.archive.org`'s `.../web/<timestamp>if_/<url>` bypass — three `curl` attempts six seconds
+  apart against a known-good article (7642) all failed identically with `curl: (35) Recv failure:
+  Connection reset by peer` at the TLS layer (confirmed at the proxy, not just the client: the
+  agent proxy's own status endpoint logged the same `ws_closed_mid_exchange` tunnel failure).
+  `WebFetch` against the same URL returned a flat "unable to fetch from web.archive.org" rather
+  than relaying a status code. Closed this run, in the intermittent way this file already
+  documents — not evidence the bypass is gone for good, just not open in this session. Narrowed on
+  the editor pass the same afternoon: `https://web.archive.org/` itself resets identically, so it
+  is the whole Wayback host that is unreachable in this session and not the `if_` form of the URL.
+  Plain `archive.org/download/...` answered 200 in the same minutes, which is why the Talisman
+  pulls below worked — do not read this bullet as archive.org being closed.
+
+With both routes closed, spent the rest of the run on two things that do not need `viewcontent.cgi`:
+
+**Independently re-walked the 8-name archive.org-covered officer gap from source** (Vern Pulman
+1974-75, David Bass 1977-78, David Young/Alice Wicks/Steve Wilson 1978-79, Mark Chesnut 1980-81,
+Chris Millay/Dwight Austin 1986-87) rather than taking this file's "exhausted" note on faith —
+downloaded each year's own `_djvu.txt` fresh from `archive.org` (not rate-limited, confirmed
+again) and the `ia*.us.archive.org/fulltext/inside.php` search-inside index for each name, then
+opened the one genuinely new-looking hit as a page image. Reproduces the standing conclusion
+exactly, with one hit examined in more depth than the existing note records: **the David Bass
+photograph, Talisman 1978 p. 34** (leaf 38, fetched via `BookReaderImages.php` and viewed
+directly) **is a four-person group shot**. Its caption names four people at a light moment in an
+ASG meeting — president Bob Moore, activities vice president David Bass, secretary Sharon May and
+vice president Cathy Murphy — over a frame that clearly shows three figures with a fourth mostly
+cropped at the left edge, and gives no left-to-right order to say which figure is Bass. Confirms the existing refusal rather than overturning it: a four-name caption
+over an ambiguous three-visible-person frame is exactly the "cannot confirm from the caption"
+case CLAUDE.md bars, the same shape of problem as the Jackson Smith near-miss of 13 September. The
+other seven names turned up nothing beyond what is already on file (an index-only page reference
+for Wicks and Chesnut, a different David Young entirely in the one on-topic paragraph, a Steve
+Wilson senior portrait with no SGA context in its caption, zero hits for Pulman, Millay and
+Austin). No new route found; this closes the question of whether a fresh pull from source would
+find something the written notes missed — it would not.
+
+**Tried a wider open-web search, not just the wkuherald.com WordPress API this file's prior
+sweeps used, on four names from the post-2003 gap already marked exhausted**: Justin Goins (Chief
+Justice, 2022-23), Nathan Cherry (Speaker of the Senate, 2016-17), Elizabeth DeLozier (Secretary
+of the Senate, 2021-22), Zachary Skillman (senator, 2021-22). Domain-filtered web search plus a
+direct fetch of every plausible article turned up bios and quotes for all four but a captioned
+photograph of none. One search result surfaced a WKU staff-directory listing with Goins' university
+email and phone number; noted here only to say it was not used for anything and should not be —
+not a photo source, and not the kind of contact information this archive touches. One near-adjacent
+find: the "SGA Judicial Council elects new chief justice" wkuherald.com article (12 Nov 2025) has a
+clean single-subject captioned photograph, but of **Sophie Stirling**, not Goins — already covered
+in `data/photos.json` from an earlier, different Herald photograph, so not a new addition, just
+confirmation that this search method can surface a real portrait when one exists and correctly
+turned up nothing for the four names that don't have one.
+
+No file in `data/photos.json` or `data/photos/` changed. `build.py` and `check_data.py` both pass
+clean (61 years, 60 presidents, all still portrayed). This run's only change is this note.
+Landed on `research-photos`.
 
 ## 9. Restarting a session
 
