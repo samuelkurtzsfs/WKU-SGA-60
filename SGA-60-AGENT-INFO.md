@@ -7418,6 +7418,78 @@ turned up nothing new (a WNKY-TV retrospective with no photographs, and confirma
 `.research/photo-run-2026-09-27-afternoon.md`. No file in `data/` changed. Landed on
 `research-photos`.
 
+### Photograph run of 3 October (scheduled): the `web.archive.org` bypass was open all session, three specific leads were run down and closed out with no usable frame, and a near-miss is recorded so the next run doesn't repeat it
+
+Baseline reconfirmed directly against `data/photos.json` before anything else: all four named
+presidents (Todd, Dawson, Johnson, Gilley), all 73 `leaders` records and all 61 years still carry
+at least a leader-level portrait. `merge_photo_finds.py` (no `--write`) proposes nothing new — 0 to
+add, 0 to replace, the same 18 standing FACE-PROVED-PERSON-NOT-PROVED/withdrawn refusals. Four
+years still carry no year-level photograph (1994-95, 1995-96, 2000-01, 2008-09), and 217
+executive/senate officer records across 42 years still lack one, unchanged from 25-26 September.
+(Editor, 3 October: this run first wrote 215. The figure is 217, which is what the 25-26 September
+entry above records and what an independent recount gives, so "unchanged" is right and the number
+was a transcription slip. `scripts/portrait_gap.py` counts the narrower cabinet-and-Senate-leadership
+slice and gives 189 of 885; the 217 is of all 948 officer slots. Quote whichever, but say which.)
+
+**`web.archive.org` was open for the whole session**, not flaky: `curl` against a known snapshot
+and against five `viewcontent.cgi` article URLs (4039, 8979, 9903, 7642, 7724) all returned real
+PDFs on the `.../web/<timestamp>if_/<url>` form (the `if_` modifier skips the Wayback toolbar
+injection, which matters for a binary file), confirmed by magic bytes on every download. One
+fetch (7724) needed a single retry after a `curl: (35) Recv failure` — the same intermittent reset
+this file has logged for weeks — but succeeded immediately after. `digitalcommons.wku.edu`'s own
+`viewcontent.cgi` is still the Cloudflare "Just a moment..." 403 challenge directly; the bypass is
+still the only way in.
+
+With the route open, ran down three specific leads already on file rather than re-discovering
+them:
+
+- **Article 4039 (1996-97/1997-98, Keith Coffman) opened a clean, captioned portrait of him** —
+  "New SGA president maps upcoming term," Herald 72:54, 24 Apr 1997, p. 3, a boxed pull-quote
+  photograph captioned directly beneath it, "— Keith Coffman / Russellville junior." **Checking
+  `data/photos.json` before cropping or writing anything would have shown he already carries one**
+  (`1997-98-keith-coffman.jpg`, sourced to Herald 73:54, 5 May 1998) — this run checked the
+  president/regent gap programmatically at the start and got zero missing, which was correct, but
+  then chased an individually-named lead from an old note without re-checking that specific name
+  against the file first. The crop was made, written to the existing filename (overwriting the
+  real 522x816 portrait with a 200x421 one), added to `photos.json`, and caught before commit by
+  diffing the working tree against `HEAD` — `git checkout HEAD -- data/photos/1997-98-keith-coffman.jpg`
+  restored the original file, and the duplicate `photos.json` entry was removed by hand. Working
+  tree confirmed clean against `origin/research-photos` afterward. **For the next run: grep the
+  specific name in `data/photos.json` before opening a PDF for it, not just the aggregate gap
+  count** — the aggregate count was never wrong, this run just didn't apply it to the one name it
+  went and fetched.
+- **Article 8979 (Stephanie Cosby, 1998-99)**: the Herald 73:53, 30 Apr 1998 issue does carry
+  "Cosby Rolls to Huge Victory" and its page-8 continuation, "Cosby: Banners up against
+  regulations," but neither carries a photograph of her — every image on both the front page and
+  page 8 is of someone else (cheerleading tryouts, a different candidate's campaign photo) or is
+  advertising. Checked all nine editorial/news pages of the issue by rendering each one, not just
+  the two that mention her by name. No portrait in this issue; ruled out.
+- **Article 7724 (Lisa Kappler, 2007-08/2008-09)**: Herald 84:22, 17 Feb 2009, "SGA chief justice
+  resigns," is pure text — no photograph accompanies the story, and this is a text-layer PDF
+  (not a scan), so the absence is not a parser artifact. Ruled out; matches what her other cited
+  source (`dlsc_ua_records/6721`) already implied by not citing a photo either.
+- **Article 9903 (2000-01 year-photo gap)**: Herald 76:52, 17 Apr 2001, is the SGA spring election
+  issue ("SGA election produces low voter turnout," Mark Rawlings winning VP of public relations
+  unopposed). Read all seven news pages. The one strong photograph on the issue — a front-page
+  "Blast from the Past" concert picture of Tiffany performing at WKU Day — is captioned and
+  sourced well enough to use, but nothing in this issue or `data/years.json` ties WKU Day to SGA,
+  and a single teen-pop concert during a themed campus day does not clear the "major news that
+  shaped the year" bar CLAUDE.md sets for context photographs either. Left out rather than
+  stretched to fill the gap. No usable frame for 2000-01 from this issue.
+
+Also tried the Herald index directly for four under-researched judicial-council names from the
+officer gap (Jacob Miers/Cacy Schooler's fellow 2007-08/2008-09 officers Lamiaya Page, Cory
+Gerald, Tony Wong, Stuart Kenderes, Dajana Crockett, Art Scisney) plus "Miers" itself: zero hits
+for all of them in `data/herald-index-full.json` except three unrelated 2005 Harriet Miers op-eds.
+Consistent with this file's standing point that judicial council appointees, as opposed to elected
+officers, are rarely covered in news copy at all — a miss here is weaker evidence than usual, not
+stronger, but there was no positive lead to chase further this run.
+
+No file was added to or removed from `data/photos.json` or `data/photos/`; the working tree matches
+`origin/research-photos` exactly apart from this note. `build.py` and `check_data.py` both pass
+clean (61 years, 60 presidents, all still portrayed). This run's only change is to this file.
+Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
