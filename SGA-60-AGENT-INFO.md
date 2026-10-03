@@ -3275,11 +3275,11 @@ split does not cleanly match a 4-and-3 row count the way the 1986 theater
 photos did. Left alone; **Carol Gray (1970-71 secretary) is still without
 a portrait**, and this is a case where the row caption alone was not
 enough — a different kind of caution than an unlabeled composite, worth
-distinguishing in the log. A 1978 Talisman p. 34 candid pair ("ASG
-COMMITTEE CHAIRMEN Brad Ford and Gene Saunders talk with representative
-Kevin Kinne" and "A LIGHT MOMENT IN AN ASG MEETING brings laughter from
-president Bob Moore and smiles from activities vice president David Bass,
-secretary Sharon May and vice president Cathy Murphy") names four more
+distinguishing in the log. A 1978 Talisman p. 34 candid pair — one captioned
+for ASG committee chairmen Brad Ford and Gene Saunders with
+representative Kevin Kinne, the other for a light moment in an ASG
+meeting naming president Bob Moore, activities vice president David Bass,
+secretary Sharon May and vice president Cathy Murphy — names four more
 1977-78/1978-79 officers, but both are candid shots with no row or
 position order — left alone for the same reason.
 
@@ -6719,9 +6719,9 @@ year were checked by name through `inside.php` and by eye on the resulting page:
   by either `grep` on the plain djvu text or `inside.php`. Not pictured or not captioned by this
   name in this volume.
 - **David Bass** (Activities Vice President, 1977-78) — found, `talisman1978west` leaf 38 (printed
-  page 34), captioned "A LIGHT MOMENT IN AN ASG MEETING brings laughter from president Bob Moore
-  and smiles from activities vice president David Bass, secretary Sharon May and vice president
-  Cathy Murphy," over a photo of four people. **Declined**: the caption gives no left-right order
+  page 34), under a caption naming four people at a light moment in an ASG meeting — president
+  Bob Moore, activities vice president David Bass, secretary Sharon May and vice president
+  Cathy Murphy — over a photo of four people. **Declined**: the caption gives no left-right order
   and three of the four named people are described only as smiling, so there is no way to say
   which pictured face is Bass rather than May or Murphy. A future run with a second, independent
   source naming his face specifically could still use this page.
@@ -7599,7 +7599,11 @@ than trust the last one's verdict:
   agent proxy's own status endpoint logged the same `ws_closed_mid_exchange` tunnel failure).
   `WebFetch` against the same URL returned a flat "unable to fetch from web.archive.org" rather
   than relaying a status code. Closed this run, in the intermittent way this file already
-  documents — not evidence the bypass is gone for good, just not open in this session.
+  documents — not evidence the bypass is gone for good, just not open in this session. Narrowed on
+  the editor pass the same afternoon: `https://web.archive.org/` itself resets identically, so it
+  is the whole Wayback host that is unreachable in this session and not the `if_` form of the URL.
+  Plain `archive.org/download/...` answered 200 in the same minutes, which is why the Talisman
+  pulls below worked — do not read this bullet as archive.org being closed.
 
 With both routes closed, spent the rest of the run on two things that do not need `viewcontent.cgi`:
 
@@ -7611,11 +7615,10 @@ again) and the `ia*.us.archive.org/fulltext/inside.php` search-inside index for 
 opened the one genuinely new-looking hit as a page image. Reproduces the standing conclusion
 exactly, with one hit examined in more depth than the existing note records: **the David Bass
 photograph, Talisman 1978 p. 34** (leaf 38, fetched via `BookReaderImages.php` and viewed
-directly) **is a four-person group shot** — "A LIGHT MOMENT IN AN ASG MEETING brings laughter from
-president Bob Moore and smiles from activities vice president David Bass, secretary Sharon May and
-vice president Cathy Murphy" — over a frame that only clearly shows three people, one of them
-mostly cropped by the page edge, with no left-to-right order given in the caption to say which
-figure is Bass. Confirms the existing refusal rather than overturning it: a four-name caption
+directly) **is a four-person group shot**. Its caption names four people at a light moment in an
+ASG meeting — president Bob Moore, activities vice president David Bass, secretary Sharon May and
+vice president Cathy Murphy — over a frame that clearly shows three figures with a fourth mostly
+cropped at the left edge, and gives no left-to-right order to say which figure is Bass. Confirms the existing refusal rather than overturning it: a four-name caption
 over an ambiguous three-visible-person frame is exactly the "cannot confirm from the caption"
 case CLAUDE.md bars, the same shape of problem as the Jackson Smith near-miss of 13 September. The
 other seven names turned up nothing beyond what is already on file (an index-only page reference
