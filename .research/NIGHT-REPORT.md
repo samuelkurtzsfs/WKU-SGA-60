@@ -39447,3 +39447,231 @@ legislation files, 61 years, 1,967 events. Sixty people have been president, all
   `.md` files.
 - SGA does not sit again until **13 October** — fall break falls on 6 and 7 October. The
   constitutional convention opened by Referendum 10.2.1 is still the live thing in the current year.
+
+---
+
+## 3 October 2026, late — the editor pass on #681
+
+One pull request open, #681, "Research: photographs — 3 October (scheduled)". Merged, after the
+one new claim in it was cut. #6, #7 and #8 are still closed, as they have been since 18 August.
+
+### What the diff held
+
+A single new claim: a portrait for **Steve Wilson, Judicial Council chairman 1978-79**, cropped
+from the Pre-Law Club group photograph on p. 296 of the 1979 *Talisman*. Fewer than eight claims,
+so all of it was checked rather than a sample, and it was checked against the volume itself rather
+than against the run's account of it.
+
+The caption was quoted accurately: p. 296 does read "PRE-LAW CLUB: (Front row) M. Mefford,
+K. Pawley. (Back row) J. Rue, S. Wilson", and two men stand in the back row. The crop is a real
+JPEG of a real face. What was never established is that this S. Wilson is the Steve Wilson whom
+ASG's minutes of 12 September 1978 confirm as Judicial Council chairman.
+
+The volume says otherwise at four points. It never uses the word "Judicial" at all. Its own back
+index puts Associated Student Government on pp. 53, 73, 82, 119, 262 and 288-9 and puts
+Wilson, Steve Alan on pp. 296, 318, 320 and 336, with no page in common; Steven Owen Thornton
+indexes to 288-9, which fixes that spread as ASG's, and no Wilson is in it. All four of Wilson's
+pages were read, and they are the Pre-Law Club, Greek Week and the fraternity rosters. And the
+volume's one narrative Steve Wilson is the SAE brother who coordinated Spring Sing and sang in the
+winning barbershop quartet beside Jon Rue — the same J. Rue standing next to him in the Pre-Law
+Club frame — with the senior grid giving him as an agriculture major from Tompkinsville. That is a
+coherent account of the man in the photograph and no evidence at all about the officer.
+
+The run's supporting argument was that the index carries exactly one Steve Wilson. It carries two
+lines, Wilson, Stephen Alan with no page references and Wilson, Steve Alan with four, and whether
+that is one person indexed twice or two is not settled from the text. Either way it was an argument
+from silence, because the *Talisman* indexes only the people it pictures: a chairman who never
+appeared in the volume would be missing from its index whoever he was. The volume carries some
+sixty Wilsons. What remained was surname-plus-initial matching across two unconnected sources.
+
+**Cut**, and the image kept on disk, unpublished, for a later pass to review.
+
+### The part worth remembering
+
+This identification **had already been barred once**. `_do-not-use.json` carried an entry rejecting
+the same man on the senior portrait and the Spring Sing mention, in plain words: neither "ties to
+ASG or the Judicial Council chairmanship, and Wilson is too common a surname to assume either is
+the officer without a source that says so."
+
+That entry named no file and no URL, so under `merge_photo_finds.barred()`'s own rule it stayed
+advisory — and the photograph routine re-found the same man, added the Pre-Law Club frame as the
+picture the old entry had lacked, and published him. This is exactly the failure the function's
+docstring warns about: "Two withdrawn faces were back this morning."
+
+The new entry is keyed to `1978-79-steve-wilson.jpg`, so the build now keeps it off the site
+mechanically rather than on a researcher's goodwill. The register holds 100 entries, and the ones
+keyed only to a volume in prose remain the soft spot: **a bar is only as strong as its key.** A pass
+with time to spend would do well to go back through the prose-keyed entries and give each a file or
+a URL.
+
+It is also worth noting that the same run rejected the 1978 *Talisman* David Bass photograph for
+being unresolvable from its caption, and rejected Mark Chesnut and Alice Wicks on careful readings
+of the index. The judgement was sound three times out of four; it failed on the one where a
+caption existed and read plausibly. A caption that names your person is where to be most careful,
+not least.
+
+### Checks after the cut
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` reports
+four title pairs and one same-source pair; all five were run against unchanged `main` as well and
+are pre-existing, and none is a duplicate. The 1997-98 designated-driver pair is approval in
+November and distribution the following February. The 1991-92, 1971-72 and 2003-04 pairs are
+successive stages of one piece of business — introduction then failure, plan then endorsement,
+position then legislation. The 2026-27 pair reports two different items out of one meeting article.
+
+No other trap tripped: no advance notice written up as a report, no committee chair promoted to
+officer, no April result misfiled, nothing touching the settled facts, no living-person detail
+beyond its source, no contributor edit in the diff.
+
+Counts unchanged by the pass, since nothing was published: 61 years, 1,967 events, 2,651 recorded
+terms held by 1,809 people, 2,614 of them (98%) with an account of what the person did, 48 people
+under more than one spelling, 308 documents, 1,111 legislation files. Sixty people have been
+president, all portrayed. 1,302 citations resolve and 1,305 quoted spans are all under 15 words.
+
+### For the next pass
+
+- **The standing brief is wrong in the same two places for a sixth pass**, and both were confirmed
+  again tonight. It names #6, #7 and #8 as stale and open; all three have been closed since
+  18 August. And it reads a `gh pr list` 403 as the platform gate, when the 403 is GraphQL-only:
+  `gh api repos/{owner}/{repo}/pulls` answers normally, and push, pull-request and merge rights all
+  work — this pass merged with them. A run following the brief literally drops into review-only
+  mode for no reason, and the drop box it then reaches for is still not configured here
+  (`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` both unset), so the fallback would lose the work rather
+  than land it. This needs editing where the prompt is stored; it cannot be fixed from a session.
+- **`main`'s committed `site/` is stale** against its own `data/`: rebuilding on an untouched `main`
+  dirties about thirty files. This is cosmetic, because `vercel.json` sets
+  `buildCommand: python3 scripts/build.py` and the site is regenerated from `data/` at deploy, so
+  the live site is correct. But it means a branch that rebuilds `site/` shows a diff that has
+  nothing to do with its own work, which is noise in every review. Either stop committing `site/`
+  or rebuild it on `main` once.
+- The three judgement calls left standing by the previous pass (the April 1994 storm entry in
+  1994-95, the normalised "Mental Health and Well-Being Committee" name, the unsourced "earliest
+  surviving example" claim in 1988-89) are untouched and still waiting on an editor's decision.
+- The quote-limit gap outside `data/` is still open; nothing checks the `.md` files.
+- SGA next sits on **13 October**; fall break is 6 and 7 October.
+
+## 4 October 2026 — an empty queue, and five published entries corrected at their sources
+
+No pull request was open. The research routines last pushed on 3 October and everything they
+sent has been merged; every remaining `research-*` branch on origin is the leftover of an
+already-merged pull request, not new work. #6, #7 and #8 are still closed, as they have been
+since 18 August.
+
+With nothing to gate, the pass went at what is already on the live site. The subject was the
+48 hours to 3 October: **29 events added and 8 changed** since the merge of 1 October. Ten of
+them were sampled across six decades, weighted towards the three kinds of claim that do the most
+damage when wrong — money, conduct findings against named people, and anything recent enough
+that the people in it are students now — and every one was read against the article itself
+rather than against the run report that introduced it.
+
+Five of the ten held up exactly. Five did not, and all five are now corrected. None of the five
+was invented; every one was a real event over-claimed, so all five were rescued by trimming
+rather than cut.
+
+### The one that mattered
+
+**2017-18, 29 January 2018** was published under the headline "Judicial Council censured Hurst
+after an emergency hearing on the fall referendum", and its body closed with the council having
+"issued a censure against Hurst, which the senate confirmed on 6 February".
+
+The cited article records no censure of anyone. The Judicial Council met on 29 January on
+Hurst's complaint that the executive board had not advertised the fall election; the justices
+voted unanimously that the referendum did not fall under the filing dates in section 2.7.5 and
+unanimously **upheld the results of the election**. What the article does record, and the entry
+left out, is that Hurst stood up during the debate, left the room, and said he would submit his
+resignation on Tuesday.
+
+A censure of Hurst did happen — at a **second** emergency meeting on **4 February**, on a
+ten-student petition, and for the profanity, gestures and walking out of the 29 January meeting,
+not for anything to do with the referendum. That event is already in the archive as its own
+entry, correctly sourced to the council's own minutes of 4 February. So the fault was not a
+fabricated censure but a real one dragged back six days onto the wrong hearing and given the
+wrong grounds, in a headline, against a named living person.
+
+The entry now says what its source says. The censure stays where it belongs, on 4 February.
+
+The same entry also had Hurst supplying the vote counts — 119 against 117 and 116 — that in fact
+came from Emily Houston, who produced them to argue the discrepancy was *small*. The numbers were
+being used on the site to support the case they were raised to rebut. Corrected.
+
+### The other four
+
+- **2010-11, 16 November 2010.** The $49 million DUC figure and the $140-a-year, 20-year student
+  fee were attributed to Ransdell and Stivers at the SGA meeting. Both came from Bryan Russell,
+  director of Planning, Design and Construction, in the Herald's own reporting; what Ransdell and
+  Stivers told SGA was that students would shape the project. Reattributed, headline included.
+- **2023-24, 7 February 2024.** The $425.25 Preston Center deposit was written as *paid* on
+  1 February; the source says it was *due* then. And the entry gave León's text-message evidence
+  against Kurtz without Kurtz's answer, which the same article carries — that he had asked León
+  multiple times not to spend before the bill passed, and reported it for transparency. On a
+  conduct finding against people who are alive and findable, one side of a documented exchange is
+  not the record. Both fixed.
+- **2024-25, 3 April 2025.** "The 21 members needed **for a two-thirds vote**" — the source says
+  21 members were needed and gives no reason. The inference is probably right and is still an
+  inference. Trimmed to what the article proves.
+- **2011-12, 27 September 2011.** Headline read "put $8,000 toward" the Cage the Elephant concert.
+  $8,000 was allocated; about $7,500 was spent, which the body already said. Headline now reads
+  "allocated".
+
+### What held
+
+The 2026-27 fall-election group — four entries off the Herald of 29 September — is accurate down
+to the roster: Chief Justice Stirling swore in Will Smith, Evan Sears, Max Fisher, Joshua
+Gillespie, Bryson Baker and Samantha Brown, in those six constituencies. Referendum 10.2.1, the
+twelve dental vouchers for $300, the 52 Organizational Aid applications and the Bluegrass
+scholarship opening to Illinois and Indiana all check out. So do the 2013-14 Safe Ride booth
+(the home game really was on a Tuesday, which is why the senate meeting was short), the nine
+senators who stepped down in January 2019, the chief-justice exemption of 11 November 2025, and
+the value-added grading defeat of 5 February 2013, quote included.
+
+### Traps
+
+No advance notice written up as a report. No committee chair promoted to officer — though the
+Hurst entry's misattribution was the same family of error, a speaker's words moved to another
+speaker. No surname-only match. No new duplicate: `check_duplicates.py` reports the same four
+title pairs and one same-source pair as untouched `main`, all pre-existing and all previously
+judged, and the rewrite did not collide with the 4 February censure entry. No April result
+misfiled. Nothing touching the settled facts. No contributor edit in the diff.
+
+One spelling flag, not fixed, per the rule: the Herald of 29 September 2026 calls the chief
+justice **Sophia** Stirling, against **Sophie** everywhere else. The surname Sterling/Stirling is
+already settled in `name-aliases.json`; the forename variant is not, and is recorded in the
+2026-27 senate note rather than silently normalised.
+
+### Gates
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0: 61 years, 1,967 events,
+2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an account of what the person
+did, 48 people under more than one spelling, 308 documents, 1,111 legislation files, 1,302
+citations resolving, 1,305 quoted spans all under 15 words. Sixty people have been president.
+Event count is unchanged because nothing was added or removed — five were rewritten in place.
+
+### For the next pass
+
+- **The standing brief is still wrong in the same two places, for a seventh pass.** #6, #7 and #8
+  have been closed since 18 August. And the `gh pr list` 403 it reads as the platform gate is
+  GraphQL-only: `gh api repos/{owner}/{repo}/pulls` answers normally and push, pull-request and
+  merge rights all work — this pass used them. A run that follows the brief literally drops into
+  review-only mode for nothing, and the drop box it then reaches for is still unconfigured here
+  (`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` both unset), so the fallback would lose the work. This
+  can only be fixed where the prompt is stored.
+- **The "stale `site/`" item from the last pass is a false alarm, and should stop being carried.**
+  Rebuilding on untouched `main` dirties 89 files, but 78 of them differ only in the build's
+  date stamp, which re-dirties every day no matter what is committed. The remaining 11 were
+  yesterday's three `campus` tags and one body edit. Committing a rebuild fixes nothing for more
+  than a day. The convention the editor passes already follow is the right one — commit `data/`
+  and `.research/`, let Vercel build `site/` from `data/` at deploy — and the durable fix, if
+  anyone wants the noise gone for good, is to stop committing `site/` at all rather than to
+  rebuild it.
+- The three judgement calls are still open and still waiting on a human: the April 1994 storm
+  entry filed in 1994-95, the normalised "Mental Health and Well-Being Committee" name, and the
+  unsourced "earliest surviving example" claim in 1988-89.
+- Nothing checks quote length outside `data/`; the `.md` files are unguarded.
+- **A worked lesson for the research routines.** All five faults this pass were the same shape:
+  the event was real, the source was real and correctly linked, and the entry said slightly more
+  than the article did — a figure moved to a more famous speaker, a due date read as a payment, an
+  allocation read as a spend, a quorum given a reason, a censure given the wrong hearing. A
+  verifier that only asks "is this event real and is the link right?" passes all five. The
+  question that catches them is narrower: *for each clause, which sentence of the article is it,
+  and does that sentence attribute it to the same person on the same date?*
+- SGA next sits on **13 October**; fall break is 6 and 7 October.
