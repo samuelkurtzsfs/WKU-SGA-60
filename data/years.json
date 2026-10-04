@@ -16740,7 +16740,7 @@
     {
      "date": "1988-01-01",
      "title": "A formal reaction to the General Education Task Force",
-     "body": "ASG filed a written response to a proposed overhaul of general education requirements - one of the earliest surviving examples of student government intervening in curriculum rather than campus life.",
+     "body": "ASG filed a written response to a proposed overhaul of general education requirements. TopSCHOLAR dates the report to 1988 and gives no month, so which academic year it belongs to is not established.",
      "src": {
       "label": "TopSCHOLAR - Documents/Reports/11",
       "url": "https://digitalcommons.wku.edu/sga/Documents/Reports/11"
@@ -22538,6 +22538,16 @@
      }
     },
     {
+     "date": "1994-04-19",
+     "title": "Campus assesses storm damage",
+     "body": "The Herald reported that WKU's campus suffered less damage than the surrounding city after a tornado, the same week as the SGA election.",
+     "src": {
+      "label": "Herald 69:51 [52], 19 Apr 1994, \"Storm; Campus Suffered Less Damage than City\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7984"
+     },
+     "campus": true
+    },
+    {
      "date": "1994-04-21",
      "title": "Evans and Higdon ready to lead",
      "body": "The Herald closed the election season with \"Rob Evans & Tara Higdon Ready to Lead Students.\" The same issue carried letters both defending the organization and, from future president Kristen Miller, a piece headlined \"Student Government Association Defends Itself.\"",
@@ -23327,7 +23337,7 @@
        "url": "https://digitalcommons.wku.edu/bor/1995/quarterly/3"
       },
       {
-       "label": "Herald 69:52 [51], 19 Apr 1994, election-day coverage",
+       "label": "Herald 69:51 [52], 19 Apr 1994, election-day coverage",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7984"
       },
       {
@@ -23402,21 +23412,15 @@
     {
      "date": "1994-04-19",
      "title": "Evans defeats Sivley for the SGA presidency",
-     "body": "Rob Evans faced Scott Sivley at the polls on election day; the Herald reported the same day that Sivley had been warned by SGA for violating the organization's campaign policies. Evans and running mate Tara Higdon won.",
+     "body": "Rob Evans faced Scott Sivley at the polls on election day. The same issue reported that Sivley had been warned by SGA for violating the organization's campaign policies, and carried a campaign advertisement for Evans and running mate Tara Higdon. The issue was printed on polling day and records no result; the Herald of 21 April reported Evans and Higdon ready to lead.",
      "src": {
-      "label": "Herald 69:52 [51], 19 Apr 1994, \"Student Government Association Elections: Scott Sivley vs. Rob Evans at Polls Today\"",
-      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7984"
-     }
-    },
-    {
-     "date": "1994-04-19",
-     "title": "Campus assesses storm damage",
-     "body": "The Herald reported that WKU's campus suffered less damage than the surrounding city after a tornado, the same week as the SGA election.",
-     "src": {
-      "label": "Herald 69:52 [51], 19 Apr 1994, \"Storm; Campus Suffered Less Damage than City\"",
+      "label": "Herald 69:51 [52], 19 Apr 1994, \"Student Government Association Elections: Scott Sivley vs. Rob Evans at Polls Today\"",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7984"
      },
-     "campus": true
+     "src2": {
+      "label": "Herald 69:52, 21 Apr 1994, \"Rob Evans & Tara Higdon Ready to Lead Students\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/7879"
+     }
     },
     {
      "date": "1994-11-01",
@@ -36621,7 +36625,7 @@
        "url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/699"
       },
       "src2": {
-       "label": "Herald 80:47, 15 Mar 2005 (special SGA election edition)",
+       "label": "Herald special SGA election issue, 15 Mar 2005",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8961"
       },
       "src3": {
