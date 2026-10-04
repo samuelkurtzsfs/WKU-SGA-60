@@ -1,3 +1,153 @@
+# 4 October 2026 (editor, later scheduled pass) — an empty queue, and the bracketed Herald number swept to a conclusion
+
+## What was open
+
+Nothing. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls` returns `[]`: the queue is empty for the
+first time this week. #685 and #686, which the previous entry left for the owner, are both merged
+and on `main` as `5abca1b` and `c162c9d`. Every `research-*` branch on origin was checked against
+`main` and every one of them is *behind* it — the content differences all run the wrong way, main
+holding the corrected text and the branch the superseded version. There was nothing to review and
+nothing to rescue. #6, #7 and #8 remain closed since 18 August; this is the fifteenth consecutive
+entry to say so, and the standing brief still names them.
+
+`gh pr list` answers 403 here because it is a GraphQL call. `gh api repos/{owner}/{repo}/pulls`
+answers normally, and push access was confirmed by dry run before anything else. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still unset, so the review-only fallback the brief describes would have
+posted this nowhere.
+
+## The bracketed Herald number: not reversed, anywhere
+
+The previous pass handed forward a worry that a bracketed issue number "may be reversed throughout"
+and did not sweep it. It is now swept, and the answer is no.
+
+TopSCHOLAR's own convention is *printed number first, the archive's correction in brackets* —
+`Vol. 69, No. 51 [52]`. Sixteen labels in `years.json` carry a bracket; all fourteen distinct
+records behind them were opened at source and every label matches its record title exactly,
+including the awkward one where the bracket sits on the volume rather than the number
+(`Vol. 73 [74], No. 14`, written here as `73 [74]:14`).
+
+The sweep then went wider, and offline. `herald-index-full.json` stores each record's own title in
+its `issue` field, so all 721 distinct *Herald* records cited anywhere in `years.json` with a
+volume-and-number label — 803 labels in all — were checked against the archive's own titles at no
+cost to TopSCHOLAR. **Zero mismatches.** No label's leading volume and number disagrees with the
+record it points at. Four records are cited two ways, and in each case the two forms agree on the
+number and differ only in whether the bracketed correction is carried.
+
+The specific collision the previous entry feared does not exist either. It believed this file
+labelled record 7984 "69:52 [51]"; it does not, and current `main` reads `69:51 [52]`, which is the
+record's own title. The three April 1994 issues run 7878 = No. 50 (14 Apr), 7984 = No. 51 (19 Apr),
+7879 = No. 52 (21 Apr) — consecutive, and consistent with their dates. Nothing to fix.
+
+## What this pass corrected
+
+One label, and it was a real error rather than a style one.
+
+- **2006-07, Jeanne Johnson's executive entry.** Its second citation read
+  `Herald 80:47, 15 Mar 2005 (special SGA election edition)`. Record 8961 is not a numbered issue
+  at all: TopSCHOLAR files it under *WKU Administration Documents*, by WKU Student Affairs, titled
+  `UA12/2/1 Student Government Association Elections`, with no volume and no number. The index
+  describes it as a special edition of the *Herald* about the SGA election, so the attribution is
+  sound — but `80:47` is not. On 15 March 2005 the numbered *Herald* was Vol. 80, No. 43 [45]
+  (record 8930); `80:47` is the issues of 7 and 12 April 2005, three to four weeks later. The label
+  is now `Herald special SGA election issue, 15 Mar 2005`, which is the form the two other citations
+  of the same record in 2005-06 already use. Trimmed to what the record proves, not cut: Johnson is
+  named in the record's own index, so the citation still carries its weight.
+
+Nothing else was changed. The 29 labels that omit a bracketed correction TopSCHOLAR does give are
+a style inconsistency, not an error — the leading numbers are right and the entries resolve to the
+right issue — and normalising them is a separate sweep, not something to half-do here.
+
+## Spot verification — eleven claims, all held
+
+No diff to sample, so the sample was taken from what reached the live site in the last
+twenty-four hours, under #683 to #686.
+
+- **The April 1994 cluster**, against the archive's own index for records 7984 and 7879. All five
+  headlines the entries name are there: the polling-day election story, Sivley's campaign-policy
+  warning, the Evans/Higdon advertisement, the storm report, and the 21 April "Ready to Lead".
+  The advance-notice discipline is exactly right — the 19 April entry says the issue "records no
+  result" and hands the outcome to a `src2` from the 21st.
+- **Placement**, per the file-forward rule: the storm (campus context, SGA not the actor, correctly
+  tagged `campus: true`) sits in 1993-94 where it happened; the election *result* sits in 1994-95,
+  the term it elects. Both correct.
+- **2010-11, the $49m DUC renovation.** Every figure verbatim: the cost, "funded partially through
+  agency bonds", about $140 a year for up to 20 years, Bryan Russell's title, Ransdell and Stivers,
+  "students will be involved in every decision", Colton Jessie on the two resolutions and the
+  21 January Regents date. The entry dates the meeting 16 November; the article says only
+  "Tuesday" and ran on Friday the 19th, so the inference is right.
+- **2011-12, Cage the Elephant.** The title's "$8,000" is the sum *allocated* ($5,000 executive
+  discretionary plus a $3,000 senate bill), and the body says plainly that about $2,500 of the
+  senate share was used. Allocated and spent are kept apart, which is the distinction that usually
+  goes wrong. The companion concert entry is a report published the morning after, not a notice,
+  and its crowd figure is carried as the promoter's own estimate rather than asserted.
+- **2017-18, the Judicial Council's emergency meeting.** The vote counts (119 against 117 and 116),
+  Houston's argument that the whole PR committee would have failed the duty equally, the two
+  unanimous votes, Hurst leaving the room, Dahmer's reaction — all confirmed. "Fall election" is
+  the article's own wording.
+- **2023-24, the León censure.** $425.25, the 1 February deadline, the split across two budgets,
+  Bill 22-23-S reaching the senate on the 6th, the text-message replies, the 6-0 vote, no further
+  disciplinary action. The living-people rule holds: the outcome is stated, not just the
+  allegation, and the quoted spans are two and three words.
+- **2024-25, the DEI committee rename.** Bill 21-25-S, the two new titles, the unanimous vote,
+  Robinson's motion to table, the Zoom quorum, Gammons as co-author, the 13-15 April referendum,
+  and the executive order the article itself names as the cause.
+
+One wording note, not a cut: the 9 February 2024 article calls Sydney Denney "Speaker of the
+House". The archive calls her Speaker of the Senate and sources that title independently to the
+Herald of 15 February 2024, so the entry is not quietly restyling its own source.
+
+## Traps checklist
+
+Advance notices: clean, and the two places it could have gone wrong (19 April 1994, and the
+1998 designated-driver distribution notice) both say in terms what their source does and does not
+prove. Committee chairs as officers: none; Will Hurst is named as a committee chair and nothing
+more. Surname-only matching: none. Changed surnames: none added. April results in the wrong year:
+checked above, correct. Settled facts: untouched — nothing in this pass goes near Norfleet,
+Morgan, LaCivita, the Lodmells, Zielke or Payne. Living people: the two conduct cases sampled both
+carry their outcomes. Contributor edits: none in this window.
+
+## The duplicate checker's five pairs — all judged, none merged
+
+- **1997-98**, designated driver cards. Bill 97-3-F funding the printing (4 Nov 1997) against the
+  Herald's distribution notice (17 Feb 1998): three months and two sources apart.
+- **1991-92**, the student regent advisory committee bill introduced 28 January and failing after
+  amendment on 6 February.
+- **1971-72**, the KCLU announcing court action on 29 February and Associated Students endorsing
+  the suit on 28 March.
+- **2003-04**, SGA lining up against plus/minus grading on 23 September and passing legislation
+  against it on 14 October.
+- **2026-27**, the one-article pair: a syllabus mental-health statement and the opening of fall
+  election voting are different business reported in the same write-up.
+
+## Gates
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, before the edit and after it.
+61 years, **1,967 events**, 2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents, 1,111
+legislation files, 1,303 citations naming a volume and number and each opening that issue, 1,306
+quoted spans all under 15 words, 60 people have been president. The counts are unchanged from the
+previous pass, as they should be: one citation label was rewritten and no claim was added or removed.
+
+## For the next pass
+
+- **The bracket question is closed.** Do not re-open it. 803 labels against 721 record titles, zero
+  mismatches, verified offline from `herald-index-full.json`. If a future pass wants the remaining
+  29 labels to carry the bracketed correction TopSCHOLAR gives, that is a cosmetic normalisation and
+  should be done in one sweep or not at all.
+- **A cross-year near-duplicate the checker cannot see.** The 1994 election outcome is told twice:
+  "Evans defeats Sivley" in 1994-95 and "Evans and Higdon ready to lead" in 1993-94, and record 7879
+  is cited by both. `check_duplicates.py` compares within a year, so it will never flag this.
+  The split is defensible — the result files forward to the term, the 21 April report sits in the
+  year it was printed — and it was made deliberately yesterday under #685, so it was left alone
+  rather than reversed on a second opinion. Worth a decision, not a quiet edit.
+- **Seven record titles in the index cannot be parsed for a volume and number**, because TopSCHOLAR
+  mistyped them: `No 49`, `Vol. 59 No. 38`, `No,. 38`, `No 55`, and vol. 71 numbering two issues
+  `No. I` and `No. V`. All seven labels in this file read them correctly, roman numerals included.
+  They are listed here so the next sweep does not treat them as gaps.
+- **Still flagged, still not fixed.** The mental health committee's four spellings, and Amber Daniel
+  against Amber Daniels in the officer gap list. Unchanged from the previous pass.
+- SGA next sits on **13 October**; fall break is 6 and 7 October.
+
 # 4 October 2026 (editor, scheduled pass) — two pull requests merged, and a transposed Herald number settled by the archive's own convention
 
 ## What was open
