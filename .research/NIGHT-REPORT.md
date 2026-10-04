@@ -1,3 +1,141 @@
+# 4 October 2026 (editor, scheduled pass) — two pull requests merged, and a transposed Herald number settled by the archive's own convention
+
+## What was open
+
+Two. #685 `editor-1004-third`, the previous pass's own editorial queue, left open because that
+session's merge call was refused on its own side rather than by GitHub; and #686 `research-photos`,
+the photograph routine's second pass of the day. #6, #7 and #8, which the standing brief still names
+as stale and open since 4 August, were closed unmerged on 18 August 2026. This is the fourteenth
+consecutive entry to record that.
+
+`gh pr list` answers 403 here because it is a GraphQL call, not because of the platform gate.
+`gh api repos/{owner}/{repo}/pulls` answers normally and was used throughout, for listing, pushing
+and merging. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both unset, so the review-only drop box
+that the brief falls back to on a 403 would have posted this review nowhere — a run that trusted
+that 403 would have lost its work for no reason.
+
+## #685 — three claims, all three verified at source
+
+The diff carried fewer than eight new claims, so all of them were opened rather than sampled.
+
+- **1988-89, the cut superlative.** `sga/Documents/Reports/11` fetched cold (HTTP 200 after a 301).
+  Its `bepress_citation_title` is exactly "Report - ASG's Reaction to the General Education Task
+  Force Proposal" and its `bepress_citation_date` is "1988", year only. The record carries no
+  abstract at all beyond that metadata, so there was nothing behind the claim that this was "one of
+  the earliest surviving examples of student government intervening in curriculum rather than campus
+  life." The cut was right, and the replacement — that TopSCHOLAR gives 1988 with no month, so the
+  academic year is not established — is exactly what the record supports and no more.
+- **1994-95, the result read out of a polling-day paper.** Confirmed twice over. The complete
+  35-line article list of `dlsc_ua_records/7984` (19 April 1994), read both from
+  `herald-index-full.json` and from the landing page's own description metadata, carries the
+  contest notice, a Rob Evans campaign advertisement, the Sivley campaign-policy warning and the
+  storm report — and **no result of any kind**. The previous pass's reading was correct: this is a
+  paper printed on polling day, and the advertisement is the line a careless pass mistakes for an
+  outcome. The rescue is sound: `dlsc_ua_records/7879` (21 April, HTTP 200) does carry "Rob Evans &
+  Tara Higdon Ready to Lead Students", and the entry now says what the polling-day issue proves,
+  states outright that it records no result, and hands the outcome to the issue that reported it.
+- **The tornado's move to 1993-94.** Right on both counts. April 1994 falls inside the 1993-94
+  academic year, and forward-filing governs election winners, not the weather; the entry is
+  `campus: true`, so SGA was not the actor and there is no term to carry it into.
+
+## What this pass cut and corrected
+
+**A transposed Herald issue number, in three labels.** The previous pass flagged this and left it,
+on the grounds that it could not tell which way round the archive's bracket convention runs. The
+archive settles that itself. Fifteen bracketed Herald labels in `years.json`, across nine distinct
+items, can be matched against TopSCHOLAR's own issue string. Twelve followed TopSCHOLAR's order —
+printed number first, the archivist's correction bracketed — and three dissented, all three of them
+the same item, `dlsc_ua_records/7984`, labelled "Herald 69:52 [51]" where TopSCHOLAR's metadata
+reads "Vol. 69, No. 51 [52]".
+
+So this was a transposition, not an ambiguity, and it is now "Herald 69:51 [52]" in all three
+places. That also clears the collision the flag was really about: 7984 and 7879 both read 69:52, two
+consecutive issues with one number. They now read 51 and 52. All fifteen bracketed labels agree
+with TopSCHOLAR. The plain "Herald 69:52" on 7879 is left as it stands — it is that issue's printed
+number, and TopSCHOLAR's own bracketed correction to [53] is a separate question not worth guessing
+at in four labels.
+
+## The duplicate checker's five pairs — all judged, none merged
+
+Read in full rather than dismissed on similarity scores. None was introduced by this diff; all five
+sit on years it does not touch.
+
+- **1997-98**, designated driver cards: three events on three sources — Bill 97-3-F of 4 November
+  1997, the Herald of 13 November, and the Herald of 17 February 1998 announcing distribution. The
+  last one says of itself that the archive holds only a contents listing, and claims nothing beyond
+  the headline. A bill, a report and a distribution notice are not one event.
+- **2003-04**, plus/minus grading: not a pair but a six-stage campaign — concern voiced at the
+  23 September meeting, legislation passed 14 October, escalation to a rally and donors 21 October,
+  the petition past 1,500 signatures as the University Senate voted on 20 November. Shared subject
+  vocabulary, distinct business, separate issues of the paper.
+- **1991-92**: a bill introduced 28 January and failing after amendment 6 February. Two stages.
+- **1971-72**: the Kentucky Civil Liberties Union planning court action (29 February) and Associated
+  Students formally endorsing the suit a month later (28 March). Two issues, two events.
+- **2026-27**, the same-source pair: a syllabus mental-health statement and the opening of fall
+  election voting, two separate items of business reported in one `wkuherald.com` article. Expressly
+  allowed by the rule, and correct here.
+
+## #686 — a research note, and every checkable claim in it holds
+
+The diff is one file in `.research/` and nothing else: no `data/`, no `site/`, nothing that reaches
+the public archive. Its claims were still tested rather than taken.
+
+- All 73 top-level `leaders` records — every president and every student regent across all 61 years
+  — carry an entry in `data/photos.json`; the count of those without one is zero. Todd, Dawson,
+  Johnson and Gilley all still hold portraits.
+- The yearbook collection's landing page was fetched independently and states in its own front
+  matter that the WKU *Talisman* was "published annually 1924-1994; 2003+", which is the
+  publication gap the note reports, reached by a second route.
+- `cgi/viewcontent.cgi` was tested once from this session and returned HTTP 403 with a 5,866-byte
+  challenge body rather than a PDF, confirming the closed route the run reported rather than
+  trusting it.
+
+Nothing was added to `data/photos.json` or `data/photos/`, which is the honest outcome of a pass
+whose every route was shut, and is recorded as such.
+
+## Traps checklist against both diffs
+
+The advance notice is the one this diff exists to fix. No committee chair promoted to officer, no
+bill author made a member, no surname-only match — Evans, Sivley and Higdon are all named in full in
+the index lines, and Tara Higdon's changed surname is already carried in `name-aliases.json` as
+"Tara (Higdon) Howard", so no duplicate person was created. The April 1994 election sits correctly
+in 1994-95 while the April 1994 weather sits correctly in 1993-94. No settled fact is touched.
+Nothing about a living person goes past its source: the Sivley campaign-policy warning is what the
+Herald headline reports and the warning is itself the outcome, not an unresolved allegation. No
+contributor edit is in either diff. No tool attribution anywhere in either.
+
+## Gates
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, after the correction as before
+it. `check_duplicates.py` exits 1 whenever it has pairs to report, which is its normal state.
+
+61 years, **1,967 events**, 2,651 terms held by 1,809 people, 2,614 (98%) with an account, 48 people
+under more than one spelling, 308 documents, 1,111 legislation files, **1,303** citations resolving,
+**1,306** quoted spans under 15 words, 60 people have been president. The correction changed a label,
+not a count: every figure is unchanged from the previous pass.
+
+## Merged
+
+Both. #685 and #686, in that order, with the transposition fixed on #685's branch before it went in.
+Nothing is left open and nothing is stranded on a branch.
+
+## Still outstanding
+
+- **The bracket on 7879.** TopSCHOLAR corrects it to [53]; this archive labels it plain 69:52 in
+  four places. Not wrong — that is the printed number — but the archive would be more consistent if
+  the bracketed correction were carried there too. Deliberately not changed blind.
+- Spelling doubts still flagged rather than fixed, per the rule: the mental health committee appears
+  four ways ("Wellbeing" 19, "Well-Being" 4, "Well-being" 1, "Wellness" 1, the last possibly a
+  different body), and the officer gap list carries both **Amber Daniel** and **Amber Daniels**,
+  unverified, with the Lodmell sisters standing as the warning against merging two names a letter
+  apart.
+- The photograph routine is blocked on `cgi/viewcontent.cgi` and `web.archive.org`, both confirmed
+  shut from this session. Its standing leads for 2008-09 (`dlsc_ua_records/6718` and `6747`) and the
+  68 officer-gap names wait on one of those reopening.
+- **The standing brief is wrong in the same two places for a tenth pass.** #6/#7/#8 are long closed,
+  and the `gh pr list` 403 it reads as the platform gate is GraphQL-only. A pass that believes
+  either loses its work: review-only mode would post to a drop box that is not configured.
+
 # 3 October 2026 (editor, scheduled pass) — an empty queue, the week's five live entries verified at their two sources, and the chief justice's own ruling returned to her page
 
 ## What was open
