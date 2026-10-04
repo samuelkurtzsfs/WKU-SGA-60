@@ -10,13 +10,22 @@ Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all still carry a port
 `research-photos` was merged onto the current `origin/main` tip (`ad750140`) with no conflicts.
 `python3 scripts/build.py` runs clean.
 
-## Access routes re-tested; two are worse than the last report left them
+## Access routes re-tested; one is worse than the last report left them
 
-- `digitalcommons.wku.edu` — not just `cgi/viewcontent.cgi` (the PDF endpoint, long known to
-  403 with a Cloudflare challenge). The **landing pages are now blocked too**: `talisman/`
-  returns a plain 404, and a direct fetch of the same URL through the WebFetch tool returns the
-  same 404. The 2 October reports could still reach landing pages and only lost the PDF route;
-  this session cannot reach the host at all.
+- `digitalcommons.wku.edu` — **the landing pages are reachable. Corrected by the editor on
+  4 October**; the claim this report first carried, that the host could not be reached at all,
+  was wrong and is struck. What is blocked is only `cgi/viewcontent.cgi`, the PDF endpoint,
+  which has 403'd for weeks and 403'd again on test with a referer sent from its own record
+  page. The landing pages answer normally: `dlsc_ua_records/2464/` returns 200 and 34 KB of the
+  real record for Herald 57:55, `stu_org/321/` returns 200 and the Spirit Masters Scrapbook
+  record, and `sga/` returns 200. The 301 seen on `dlsc_ua_records/2464` was the missing
+  trailing slash and nothing more.
+- The `talisman/` 404 that the original claim rested on is a wrong path, not a wall. TopSCHOLAR
+  serves its own repository page there with no challenge of any kind, and this archive has never
+  cited a `talisman/` collection: all 695 digitalcommons citations in `data/photos.json` sit
+  under `dlsc_ua_records`, `stu_org` and `home_queen`. A Talisman volume has to be reached
+  through its `dlsc_ua_records` or `stu_org` record, which is open. Do not read a 404 on one
+  guessed path as the host refusing the session.
 - `web.archive.org` — HTTPS resets at the TLS handshake (`curl: (35) Recv failure: Connection
   reset by peer`); HTTP gets a flat 403. The separate `archive.org/wayback/available` lookup API
   (a different host) still answers normally and resolves a snapshot timestamp, but the snapshot
@@ -30,13 +39,15 @@ Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all still carry a port
 - `wkuherald.com`'s WordPress REST API still answers normally and was the only usable route this
   run.
 
-## The officer-portrait gap list has 68 names never searched before
+## The officer-portrait gap list has 68 records never searched before
 
 Rebuilt the gap list fresh from `data/years.json` against `data/photos.json`: 217 executive and
 Senate-officer records without a portrait, the same count the 2 October evening report used.
-Cross-checked all 217 against every `.research/photo-run-*.md` report on file (38 of them) rather
+Cross-checked all 217 against every `.research/photo-run-*.md` report on file (40 of them) rather
 than trust that report's claim that the whole list had already been searched once. It had not:
-**68 names turn out never to appear in any prior report.** All 68 are concentrated in committee
+**68 of the 217 gap records turn out never to appear in any prior report**, held by 60 distinct
+people; a few of them carry a gap in two different years, which is why the record count runs ahead
+of the name count. All 68 are concentrated in committee
 chairs, Judicial Council justices and senators-at-large — offices that other research branches
 (the senate and roster passes) have been adding to `organization` on `main` since the last
 exhaustive photograph sweep, so the gap list grew with real new entries rather than staying the
@@ -72,12 +83,28 @@ could reach was checked and did not identify a usable photograph. `data/photos.j
 
 ## For the next run
 
-- The 68 newly-surfaced names are now searched once each on `wkuherald.com` and came up empty;
-  they still need the Talisman/digitalcommons route this session could not reach at all (not even
-  landing pages), or a working `web.archive.org`.
+- The 68 newly-surfaced gap records are now searched once each on `wkuherald.com` and came up
+  empty; they still need a Talisman volume, which means a `dlsc_ua_records` or `stu_org` record
+  page. That route is **open**, so this is the first thing the next run should spend its time on.
+  Only the PDF endpoint behind it is shut, so work from the record page and its description
+  rather than the download.
 - Re-test `digitalcommons.wku.edu` and `web.archive.org` from scratch rather than trusting this
   report — both have swung between reachable and walled across different sessions on this
   project, sometimes within the same week.
 - The four years with no *general* year photograph (1994-95, 1995-96, 2000-01, 2008-09, all with
   a leader portrait already) remain open for the same reason: no route to a Talisman volume or a
   digitalcommons-hosted Herald page for those years was available this session.
+
+## Editor's note, 4 October
+
+Reviewed before merge. The local arithmetic in this report reproduces exactly: 61 years and all 73
+top-level president and regent records carry a portrait, the executive and Senate-officer gap is
+217 records, and 68 of those appear in none of the 40 earlier photograph reports. The 2017 lead was
+re-checked at source and is correctly ruled out: media 28872's caption names Savannah Molyneaux,
+Andi Dahmer, Kara Lowry and Conner Hounshell in a stated left-to-right order and none of the three
+senators, and all four already hold a portrait. The Wayback findings were reproduced as written —
+HTTPS resets at the handshake, the availability API still resolves a snapshot, `archive.org/details`
+answers 200.
+
+The digitalcommons verdict did not survive the check and has been corrected above. Nothing in this
+report reached `data/`, so no claim of it was ever on the site.
