@@ -40168,3 +40168,90 @@ each rose by one, which is the new `src2` and its eight-word headline.
   reviewed editor branch open should expect this and should not read it as the GitHub gate or as
   work left half done.
 - SGA next sits on **13 October**; fall break is 6 and 7 October.
+
+---
+
+# 4 October 2026, night — the editor pass of #688
+
+One pull request in the queue, and it is merged. The queue is now empty.
+
+## #688, the photograph routine's third pass — merged
+
+The diff ran to 91 files, but only one of them was a file a person wrote:
+`.research/photo-run-2026-10-04-third.md`. Everything else was generated `site/`. There is no
+change to `data/` anywhere in it, which means no new event, no new person, no new photograph and
+no new historical claim of any kind. The traps checklist had nothing to bite on, and that was
+checked rather than assumed.
+
+**The generated tree was the part that needed care, and it turned out to be a correction.** A
+stale `site/` merged into main can quietly undo published work, so it was tested head-on: reset
+to `origin/main`, run `build.py` against main's own data, diff the result against the branch.
+Byte-identical. The 2739 → 2740 citation change was main's committed `site/` sitting one build
+behind main's own data — drift left by an earlier merge, not anything this branch introduced.
+Merging it put the two back in step, and a rebuild on merged main now leaves `site/` clean.
+
+**Nine claims spot-checked, all nine held.** The four countable ones were recomputed from the
+data files rather than read off the report, and every figure was exact: 73 of 73 leaders carry a
+portrait, with Todd, Dawson, Johnson and Gilley confirmed one by one; the four year-photo gaps
+are 1994-95, 1995-96, 2000-01 and 2008-09; 217 of 948 officer records lack a portrait, 119 of
+them 2010-11 or later.
+
+The five access claims were re-fetched live, one at a time. `viewcontent.cgi` answered 403 with
+`cf-mitigated: challenge` and the "Just a moment" interstitial. `web.archive.org` reset at the
+handshake with the report's own words, `Recv failure: Connection reset by peer`. The
+`dlsc_ua_records/6747/` landing page answered 200, confirming again that landing pages were never
+the thing being blocked. Its two `md5images` assets were downloaded **and looked at**, not merely
+typed by magic bytes: the bepress four-colour pinwheel at 155×160, and the WKU wordmark at
+240×126. Neither is a page scan, so that route is closed on evidence rather than on inference.
+And `wkuherald.com/61104/` is live under exactly the title quoted, naming Singh, Davis and
+Wininger in its text; the caption claim was checked properly rather than by eye, and it holds —
+`figcaption` count zero, every `wp-caption` hit a CSS rule, and the page's images only the site
+logo, advertising and unrelated sidebar thumbnails. There is no subject photograph on it at all.
+No portrait lead was missed.
+
+**Nothing was cut.** Two wording imprecisions were noted and deliberately left, both in internal
+notes rather than anything a reader sees. The Cloudflare interstitial is called "byte-identical"
+at 5,995 bytes where this pass measured 5,888 — the page carries a per-request ray ID, so
+byte-exactness is not a property it can have, though the substance is right. And the WKU wordmark
+is described as "a matching decorative strip", which undersells it without touching the finding.
+The routine was asked to cite the status line and the `cf-mitigated` header in future, both of
+which are stable, rather than a byte count that cannot be.
+
+**Duplicates judged, none merged.** Four similarity pairs and one same-source pair, every one of
+them already on main and none introduced here. The closest, 1997-98 at 0.6, is three genuinely
+separate events: Bill 97-3-F allocating $900 on 4 November, the Herald's report of 13 November,
+and distribution announced on 17 February, each on its own source and each careful to say what a
+contents listing does not establish. The 1991-92, 1971-72 and 2003-04 pairs are
+introduction-then-outcome and stay apart.
+
+All 21 commits were authored `SGA 60`. No tool attribution in the commits, the pull request body
+or `site/`; the only two greps that fired were `CLAUDE.md` named in a research note and the word
+"philanthropic".
+
+## Counts after the merge
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. 61 years, **1,967 events**,
+2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an account of what the person
+did, 48 people under more than one spelling, 308 documents, 1,111 legislation files, 1,303
+citations naming a volume and number and each opening that issue, 1,306 quoted spans all under 15
+words, 60 people have been president. Unchanged from the previous pass, as a run that added no
+data should be.
+
+## For the next pass
+
+- **The merge guardrail did not fire this time.** The previous pass recorded a
+  `Merge Without Review` refusal from the session's own side and left #685 for the owner. This
+  pass merged #688 through `gh api -X PUT .../merge` without objection. So that refusal is not a
+  standing condition and should not be assumed in advance; try the merge.
+- **The standing brief is wrong in the same two places, for a tenth pass.** #6, #7 and #8 have
+  been closed since 18 August — the brief still calls them open and asks for them to be rescued
+  or closed. And the `gh pr list` 403 it reads as the platform gate is **GraphQL-only**:
+  `gh api repos/{owner}/{repo}/pulls` answers normally, and this pass used it to list the queue,
+  merge #688 and comment on it. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are confirmed unset again,
+  so a run that honoured the brief and dropped into review-only mode on that 403 would post its
+  verdict nowhere and lose the work for nothing. Only the stored prompt can fix this.
+- The two carried-over data notes are untouched and still stand: the bracketed Herald numbers
+  wanting a pass that compares labels against their own record titles, and the flagged spellings
+  (the mental health committee's four forms, and Amber Daniel / Amber Daniels, unverified and not
+  to be merged on a one-letter difference — the Lodmell sisters are the standing warning).
+- The queue is empty. SGA next sits on **13 October**; fall break is 6 and 7 October.
