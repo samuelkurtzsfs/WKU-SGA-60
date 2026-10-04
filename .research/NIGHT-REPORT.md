@@ -39771,3 +39771,105 @@ nothing behind it, and `data/` was never touched.
   and **Amber Daniels**. Both are on `main` already and neither is in this diff; whether they are
   one person is unverified and was not guessed at here.
 - SGA next sits on **13 October**; fall break is 6 and 7 October.
+
+## 4 October 2026, third pass — an empty queue, and three carried-forward items settled from source
+
+No pull request was open. `research-photos`, the only branch any routine has touched this week,
+holds nothing `main` lacks: `git diff origin/main origin/research-photos` is empty. #684 was
+reviewed and merged by the 03:30 pass, it added one file in `.research/` and no `data/` at all, and
+its one damaging claim — that TopSCHOLAR cannot be reached from these sessions — was corrected
+before it went in. There was nothing to gate.
+
+So this pass spent its time on the queue the last four reports have been carrying forward, and on
+the live site rather than on a diff. Three of those items were settled from their own sources. Two
+are left flagged, because settling them needs evidence this pass did not find and guessing at them
+is worse than leaving them.
+
+## What the sources actually said
+
+**The 1988-89 general education entry carried a superlative no source supports.** The body called
+ASG's written response to the General Education Task Force "one of the earliest surviving examples
+of student government intervening in curriculum rather than campus life." The cited record
+(`sga/Documents/Reports/11`, HTTP 200, 28 KB) is titled "Report - ASG's Reaction to the General
+Education Task Force Proposal" and described as "Associated Student Government's Reaction to the
+General Education Task Force Proposal." It says nothing about curriculum against campus life, and
+nothing about the report being early. The clause was the project's own editorial opinion written in
+the voice of a sourced fact, which is the plainest form of the invention rule's target. Cut.
+
+The same record also settles the date question the entry never raised: its **Start Date is 1988**,
+with no month — the "Jan 1st" on the page is Digital Commons' own placeholder for a year-only date.
+The entry's `1988-01-01` is therefore right by this file's convention, but the *year page* is a
+guess: a document dated only 1988 could belong to 1987-88 or to 1988-89. The entry now says so
+instead of letting 1988-89 read as established.
+
+**An April 1994 tornado had been filed forward into 1994-95.** The forward-filing rule is about
+election winners — SGA elects in April and the winner serves the following year — and it has no
+purchase on the weather. The entry is marked `campus: true`, meaning SGA was not the actor, so
+there is no term for it to be carried into. A storm of 19 April 1994 happened in **1993-94**, which
+is where the rest of that month's Herald coverage already sits. Moved. Event count is unchanged at
+1,967: it moved, it was not duplicated.
+
+**And the entry it had been sitting beside reported a result out of an advance notice.** 1994-95
+carried "Evans defeats Sivley for the SGA presidency", ending "Evans and running mate Tara Higdon
+won", on `dlsc_ua_records/7984`. The local index gives that issue's 35 lines, and its SGA items are:
+"Student Government Association Elections: Scott Sivley vs. Rob Evans at Polls Today", "Vote Rob
+Evans, Tara Higdon", "Scott Sivley Gets Warning for Violating Student Government Association's
+Campaign Policies", and the storm. That is a paper printed **on polling day**: a notice, a campaign
+advertisement, and a warning. It carries no result, and the advertisement is exactly the line a
+careless pass would read as one.
+
+Rescued, not cut, because the result is true and is sourced elsewhere. `dlsc_ua_records/7879`
+(21 April, HTTP 200) carries "Rob Evans & Tara Higdon Ready to Lead Students", and it is now the
+entry's `src2`. The body states what the polling-day issue proves, says outright that it records no
+result, and hands the outcome to the issue that reported it. 1993-94's own 21 April entry already
+carried that headline, and the 1994-95 leader record names Robert Evans president, so nothing in the
+archive rested on the notice alone once this was done.
+
+## Judged and left alone
+
+The duplicate checker's four pairs and one same-source pair are the same five as yesterday, all
+already on `main` and none introduced here. The **1997-98** pair the last pass dismissed on time
+distance is sound on better grounds than that: it is three events on three separate sources — Bill
+97-3-F of 4 November 1997, whose form carries a real X on the Pass line and is written up as such;
+the Herald's report of 13 November that sober drivers were getting free drinks; and the Herald of
+17 February 1998 announcing distribution the next day. The third labels itself an advance notice and
+says the archive holds only a contents listing, which is how that trap is supposed to be handled.
+
+The build's "withdrew 3 photograph(s)" line is the barring mechanism working, not a fault. The three
+are Kitchens, Stewart and Wilson, all deliberate editor withdrawals; `data/photos.json` holds no
+reference to any of them and none is present in `site/photos`.
+
+## Gates
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, after the edits as before.
+61 years, **1,967 events**, 2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents, 1,111
+legislation files, **1,303** citations naming a volume and number and each opening that issue,
+**1,306** quoted spans all under 15 words, 60 people have been president. Citations and quoted spans
+each rose by one, which is the new `src2` and its eight-word headline.
+
+## For the next pass
+
+- **A bracketed Herald number may be reversed throughout.** TopSCHOLAR titles
+  `dlsc_ua_records/7984` "Vol. 69, No. 51 [52]" and `dlsc_ua_records/7879` "Vol. 69, No. 52 [53]",
+  printed number first and the archive's correction in brackets. This file labels 7984
+  "Herald 69:52 [51]" — corrected number first, printed number bracketed — and labels 7879 plain
+  "Herald 69:52", so the two consecutive issues both read 69:52. `check_data.py` tests that a label
+  names a volume and number and that the URL opens, not that the bracket order matches the record.
+  Not guessed at here and not swept: it wants a pass that compares bracketed labels against their
+  own record titles. The new `src2` deliberately reuses the label this archive already gives 7879
+  rather than inventing a third style.
+- **Still flagged, still not fixed, because the rule says flag spelling doubts rather than fix
+  them.** The mental health committee appears as "Mental Health and Wellbeing Committee" (19),
+  "Mental Health and Well-Being Committee" (4), "Mental Health and Well-being Committee" (1) and
+  "Mental Health and Wellness Committee" (1) — the last possibly a different body rather than a
+  spelling. And the officer gap list still carries both **Amber Daniel** and **Amber Daniels**;
+  whether they are one person is unverified, and the Lodmell sisters are this project's standing
+  warning against merging two names that differ by one letter.
+- The standing brief is wrong in the same two places, for a ninth pass. #6, #7 and #8 have been
+  closed since 18 August; the queue is at #684. The `gh pr list` 403 it reads as the platform gate
+  is **GraphQL-only** — `gh api repos/{owner}/{repo}/pulls` answers normally, and push, pull request
+  and merge rights all work, as this pass used them. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are
+  unset, so a run that drops into review-only mode on that 403 would post its verdict nowhere and
+  lose the work for nothing. Only the stored prompt can fix this.
+- SGA next sits on **13 October**; fall break is 6 and 7 October.
