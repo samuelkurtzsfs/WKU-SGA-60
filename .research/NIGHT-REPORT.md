@@ -39549,3 +39549,129 @@ president, all portrayed. 1,302 citations resolve and 1,305 quoted spans are all
   surviving example" claim in 1988-89) are untouched and still waiting on an editor's decision.
 - The quote-limit gap outside `data/` is still open; nothing checks the `.md` files.
 - SGA next sits on **13 October**; fall break is 6 and 7 October.
+
+## 4 October 2026 — an empty queue, and five published entries corrected at their sources
+
+No pull request was open. The research routines last pushed on 3 October and everything they
+sent has been merged; every remaining `research-*` branch on origin is the leftover of an
+already-merged pull request, not new work. #6, #7 and #8 are still closed, as they have been
+since 18 August.
+
+With nothing to gate, the pass went at what is already on the live site. The subject was the
+48 hours to 3 October: **29 events added and 8 changed** since the merge of 1 October. Ten of
+them were sampled across six decades, weighted towards the three kinds of claim that do the most
+damage when wrong — money, conduct findings against named people, and anything recent enough
+that the people in it are students now — and every one was read against the article itself
+rather than against the run report that introduced it.
+
+Five of the ten held up exactly. Five did not, and all five are now corrected. None of the five
+was invented; every one was a real event over-claimed, so all five were rescued by trimming
+rather than cut.
+
+### The one that mattered
+
+**2017-18, 29 January 2018** was published under the headline "Judicial Council censured Hurst
+after an emergency hearing on the fall referendum", and its body closed with the council having
+"issued a censure against Hurst, which the senate confirmed on 6 February".
+
+The cited article records no censure of anyone. The Judicial Council met on 29 January on
+Hurst's complaint that the executive board had not advertised the fall election; the justices
+voted unanimously that the referendum did not fall under the filing dates in section 2.7.5 and
+unanimously **upheld the results of the election**. What the article does record, and the entry
+left out, is that Hurst stood up during the debate, left the room, and said he would submit his
+resignation on Tuesday.
+
+A censure of Hurst did happen — at a **second** emergency meeting on **4 February**, on a
+ten-student petition, and for the profanity, gestures and walking out of the 29 January meeting,
+not for anything to do with the referendum. That event is already in the archive as its own
+entry, correctly sourced to the council's own minutes of 4 February. So the fault was not a
+fabricated censure but a real one dragged back six days onto the wrong hearing and given the
+wrong grounds, in a headline, against a named living person.
+
+The entry now says what its source says. The censure stays where it belongs, on 4 February.
+
+The same entry also had Hurst supplying the vote counts — 119 against 117 and 116 — that in fact
+came from Emily Houston, who produced them to argue the discrepancy was *small*. The numbers were
+being used on the site to support the case they were raised to rebut. Corrected.
+
+### The other four
+
+- **2010-11, 16 November 2010.** The $49 million DUC figure and the $140-a-year, 20-year student
+  fee were attributed to Ransdell and Stivers at the SGA meeting. Both came from Bryan Russell,
+  director of Planning, Design and Construction, in the Herald's own reporting; what Ransdell and
+  Stivers told SGA was that students would shape the project. Reattributed, headline included.
+- **2023-24, 7 February 2024.** The $425.25 Preston Center deposit was written as *paid* on
+  1 February; the source says it was *due* then. And the entry gave León's text-message evidence
+  against Kurtz without Kurtz's answer, which the same article carries — that he had asked León
+  multiple times not to spend before the bill passed, and reported it for transparency. On a
+  conduct finding against people who are alive and findable, one side of a documented exchange is
+  not the record. Both fixed.
+- **2024-25, 3 April 2025.** "The 21 members needed **for a two-thirds vote**" — the source says
+  21 members were needed and gives no reason. The inference is probably right and is still an
+  inference. Trimmed to what the article proves.
+- **2011-12, 27 September 2011.** Headline read "put $8,000 toward" the Cage the Elephant concert.
+  $8,000 was allocated; about $7,500 was spent, which the body already said. Headline now reads
+  "allocated".
+
+### What held
+
+The 2026-27 fall-election group — four entries off the Herald of 29 September — is accurate down
+to the roster: Chief Justice Stirling swore in Will Smith, Evan Sears, Max Fisher, Joshua
+Gillespie, Bryson Baker and Samantha Brown, in those six constituencies. Referendum 10.2.1, the
+twelve dental vouchers for $300, the 52 Organizational Aid applications and the Bluegrass
+scholarship opening to Illinois and Indiana all check out. So do the 2013-14 Safe Ride booth
+(the home game really was on a Tuesday, which is why the senate meeting was short), the nine
+senators who stepped down in January 2019, the chief-justice exemption of 11 November 2025, and
+the value-added grading defeat of 5 February 2013, quote included.
+
+### Traps
+
+No advance notice written up as a report. No committee chair promoted to officer — though the
+Hurst entry's misattribution was the same family of error, a speaker's words moved to another
+speaker. No surname-only match. No new duplicate: `check_duplicates.py` reports the same four
+title pairs and one same-source pair as untouched `main`, all pre-existing and all previously
+judged, and the rewrite did not collide with the 4 February censure entry. No April result
+misfiled. Nothing touching the settled facts. No contributor edit in the diff.
+
+One spelling flag, not fixed, per the rule: the Herald of 29 September 2026 calls the chief
+justice **Sophia** Stirling, against **Sophie** everywhere else. The surname Sterling/Stirling is
+already settled in `name-aliases.json`; the forename variant is not, and is recorded in the
+2026-27 senate note rather than silently normalised.
+
+### Gates
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0: 61 years, 1,967 events,
+2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an account of what the person
+did, 48 people under more than one spelling, 308 documents, 1,111 legislation files, 1,302
+citations resolving, 1,305 quoted spans all under 15 words. Sixty people have been president.
+Event count is unchanged because nothing was added or removed — five were rewritten in place.
+
+### For the next pass
+
+- **The standing brief is still wrong in the same two places, for a seventh pass.** #6, #7 and #8
+  have been closed since 18 August. And the `gh pr list` 403 it reads as the platform gate is
+  GraphQL-only: `gh api repos/{owner}/{repo}/pulls` answers normally and push, pull-request and
+  merge rights all work — this pass used them. A run that follows the brief literally drops into
+  review-only mode for nothing, and the drop box it then reaches for is still unconfigured here
+  (`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` both unset), so the fallback would lose the work. This
+  can only be fixed where the prompt is stored.
+- **The "stale `site/`" item from the last pass is a false alarm, and should stop being carried.**
+  Rebuilding on untouched `main` dirties 89 files, but 78 of them differ only in the build's
+  date stamp, which re-dirties every day no matter what is committed. The remaining 11 were
+  yesterday's three `campus` tags and one body edit. Committing a rebuild fixes nothing for more
+  than a day. The convention the editor passes already follow is the right one — commit `data/`
+  and `.research/`, let Vercel build `site/` from `data/` at deploy — and the durable fix, if
+  anyone wants the noise gone for good, is to stop committing `site/` at all rather than to
+  rebuild it.
+- The three judgement calls are still open and still waiting on a human: the April 1994 storm
+  entry filed in 1994-95, the normalised "Mental Health and Well-Being Committee" name, and the
+  unsourced "earliest surviving example" claim in 1988-89.
+- Nothing checks quote length outside `data/`; the `.md` files are unguarded.
+- **A worked lesson for the research routines.** All five faults this pass were the same shape:
+  the event was real, the source was real and correctly linked, and the entry said slightly more
+  than the article did — a figure moved to a more famous speaker, a due date read as a payment, an
+  allocation read as a spend, a quorum given a reason, a censure given the wrong hearing. A
+  verifier that only asks "is this event real and is the link right?" passes all five. The
+  question that catches them is narrower: *for each clause, which sentence of the article is it,
+  and does that sentence attribute it to the same person on the same date?*
+- SGA next sits on **13 October**; fall break is 6 and 7 October.
