@@ -85,7 +85,7 @@ following **spring**. If they differ, someone is missing. Mark an acting officeh
 
 ## Search locally before you crawl
 `data/herald-index-full.json` covers the whole digitised collection with no keyword filter:
-11,850 items and 141,079 index lines, 1875 to 2026. Grep it first. It answers most "was X
+11,852 items and 146,441 index lines, 1875 to 2026. Grep it first. It answers most "was X
 president that spring" questions in a second and costs TopSCHOLAR nothing.
 Rebuild with `python3 scripts/harvest_herald_index.py --all --refresh` (about 35 minutes, paced).
 **Keep the `--refresh`.** Without it the resume logic skips every item already on disk, so a
@@ -95,11 +95,27 @@ how this file sat truncated for weeks.
 **The 300-character truncation is fixed, as of 10 September 2026.** Until then every stored line
 was cut at 300 characters, which kept the first two or three headlines of an issue and threw the
 rest away. The `--all` parser now splits each `<li>` out of the abstract and keeps it whole:
-nothing is capped — 532 lines run past 300 characters, the longest 2,866 — and the 3,588 *Herald*
-issues in the file carry 29.5 index lines apiece on average, which is the issue's whole article
+nothing is capped — 535 lines run past 300 characters, the longest 2,866 — and the 3,588 *Herald*
+issues in the file carry 30.6 index lines apiece on average, which is the issue's whole article
 list rather than its head. The worked example that used to prove the opposite now proves this.
 The 14 April 1994 issue (`dlsc_ua_records/7878`) holds 35 headlines locally, and four of them are
 the SGA election story that was previously among the missing.
+
+**A second fault in the same parser was fixed on 4 October 2026, and it had been dropping whole
+headlines.** The splitter that broke the abstract into lines cut on a full stop followed by two
+spaces, which is how TopSCHOLAR spaces some headlines after the author's name. The cut landed
+inside the `<li>`, leaving an unclosed opening tag in one fragment and an orphan closing tag in
+the next, and because both fragments still held other complete `<li>` pairs the prose fallback
+never ran: **both halves were discarded without trace.** It also glued the tail of one headline
+onto the next author's name, so the file carried 331 mangled lines like "Du Pruess - 37 Kaufman,
+Herbert." The parser now lifts the `<li>` items off the whole description first and splits only
+the prose that is left. The rebuild recovered 5,690 lines and retired the 331 mangled ones.
+
+The cost of this one was not hypothetical. Of 407 headlines across 13 issue pages checked against
+their landing pages, 2 carried the double space and **both were missing locally** — one of them
+"Francke, Kevin. Margaret Ragan Wins Presidency" in *Herald* 57:57 of 22 April 1982, which is the
+only headline in that issue this archive cites. An editor checking that citation against the
+local index alone would have read a correct entry as unsupported.
 
 **A miss still proves nothing, but for a different reason now.** This is an index, not full text:
 it holds what the archivist itemised, so a person named only in the body of an article is
