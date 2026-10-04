@@ -10,7 +10,7 @@ Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all still carry a port
 `research-photos` was merged onto the current `origin/main` tip (`ad750140`) with no conflicts.
 `python3 scripts/build.py` runs clean.
 
-## Access routes re-tested; one is worse than the last report left them
+## Access routes re-tested; one is worse than the last report left it, one is better
 
 - `digitalcommons.wku.edu` — **the landing pages are reachable. Corrected by the editor on
   4 October**; the claim this report first carried, that the host could not be reached at all,
@@ -36,8 +36,8 @@ Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley all still carry a port
   1984, 1995, 1996, 1997, 2001, 2009, 2017 and 2018 all come back with no item on file (503 from
   the download URL, zero hits from the search API). None of the years still carrying an
   officer-portrait gap fall inside the covered window, so this route cannot reach any of them.
-- `wkuherald.com`'s WordPress REST API still answers normally and was the only usable route this
-  run.
+- `wkuherald.com`'s WordPress REST API still answers normally and was the only route this run
+  actually searched in. It was not the only one open, which is the point of the correction above.
 
 ## The officer-portrait gap list has 68 records never searched before
 
