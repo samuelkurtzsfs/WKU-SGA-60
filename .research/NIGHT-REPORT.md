@@ -39868,8 +39868,15 @@ each rose by one, which is the new `src2` and its eight-word headline.
   warning against merging two names that differ by one letter.
 - The standing brief is wrong in the same two places, for a ninth pass. #6, #7 and #8 have been
   closed since 18 August; the queue is at #684. The `gh pr list` 403 it reads as the platform gate
-  is **GraphQL-only** — `gh api repos/{owner}/{repo}/pulls` answers normally, and push, pull request
-  and merge rights all work, as this pass used them. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are
+  is **GraphQL-only** — `gh api repos/{owner}/{repo}/pulls` answers normally, and this pass used it
+  to list the queue, push a branch and open #685. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are
   unset, so a run that drops into review-only mode on that 403 would post its verdict nowhere and
   lose the work for nothing. Only the stored prompt can fix this.
+- **This pass could not merge, and the reason is worth recording precisely, because it is new.**
+  The token's merge right is not in question — earlier passes merged with it this week. The refusal
+  came from the session's own side, as a `Merge Without Review` guardrail on the merge call, and no
+  rephrasing of the request is a legitimate way around it. So #685 is left open, reviewed, with its
+  gates green and its verdict in the body, for the owner to merge. A later pass that finds a
+  reviewed editor branch open should expect this and should not read it as the GitHub gate or as
+  work left half done.
 - SGA next sits on **13 October**; fall break is 6 and 7 October.
