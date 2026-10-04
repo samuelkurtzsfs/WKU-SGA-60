@@ -39675,3 +39675,99 @@ Event count is unchanged because nothing was added or removed — five were rewr
   question that catches them is narrower: *for each clause, which sentence of the article is it,
   and does that sentence attribute it to the same person on the same date?*
 - SGA next sits on **13 October**; fall break is 6 and 7 October.
+
+## 4 October 2026, later — #684 merged, and a route the run had written off
+
+One pull request open, #684, the scheduled photograph run on `research-photos`: thirteen commits,
+one new file, `.research/photo-run-2026-10-04-scheduled.md`, and not a line of `data/`. Nothing in
+it had ever been on the site, so the review was about whether its findings can be trusted by the
+run that reads them next, which is the only thing a report in `.research/` is for.
+
+### What held
+
+Every figure in it reproduces from the files themselves. All 61 years and all 73 top-level
+president and student-regent records carry a portrait in `data/photos.json`, so the top two
+priority tiers really are closed. The executive and Senate-officer gap is 217 records, exactly as
+claimed, and 217 is what the offices add up to: 48 Judicial Council seats, 27 senators, the
+committee chairs and the rest. Of those, 68 appear in none of the 40 earlier photograph reports.
+
+The one positive lead was re-checked at source and the run was right to rule it out. Media 28872
+behind the Herald's "Next student body president elected to office" (28871, 19 April 2017) names
+four people in a stated left-to-right order — Molyneaux, Dahmer, Lowry, Hounshell — and not one of
+the three senators-at-large the article's body mentions; all four already hold portraits. The
+Wayback findings reproduced exactly: HTTPS resets at the handshake, the availability API still
+resolves a snapshot, `archive.org/details` answers 200.
+
+### What did not
+
+The report declared `digitalcommons.wku.edu` unreachable — "this session cannot reach the host at
+all" — and told the next run so twice. That is wrong, and it was the one claim in the file capable
+of doing damage, because TopSCHOLAR holds the Talisman volumes that are the best portrait source
+this project has. Tested at source: `dlsc_ua_records/2464/` returns 200 and 34 KB of the real
+record for Herald 57:55, `stu_org/321/` returns the Spirit Masters Scrapbook record, `sga/` returns
+200. Only `cgi/viewcontent.cgi`, the PDF endpoint, is shut, and it 403'd again on test with a
+referer sent from its own record page.
+
+The whole claim rested on a 404 at `talisman/` — a path this archive has never once cited. All 695
+digitalcommons citations in `data/photos.json` sit under `dlsc_ua_records`, `stu_org` and
+`home_queen`. TopSCHOLAR serves its own repository page at `talisman/` with no challenge of any
+kind. A 404 on a guessed path is not a host refusing the session, and it should not have been read
+as one.
+
+Corrected rather than cut: the access section now says what the routes do, the two "for the next
+run" lines now point at the open route instead of away from it, "68 names" is given as 68 records
+held by 60 people, and the count of prior reports is 40, not 38. The findings themselves are the
+run's and are untouched. Merged with the correction on it.
+
+### Gates
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0, before and after the edit:
+61 years, 1,967 events, 2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents, 1,111
+legislation files, 1,302 citations resolving, 1,305 quoted spans all under 15 words, 60 people have
+been president. Unchanged throughout, as they should be: nothing touched `data/`.
+
+`check_duplicates.py` reports four pairs and one same-source pair, every one of them already on
+`main` and none introduced here. Judged, none merged: the 1991-92 pair is a bill introduced on 28
+January and the same bill failing on 6 February, the 1971-72 pair is the KCLU planning suit and
+Associated Students endorsing it a month later, the 2003-04 pair is a position taken in September
+and legislation passed in October, the 1997-98 pair is three months apart, and the 2026-27
+same-source pair is two different items of business from one meeting write-up.
+
+### Traps checklist
+
+No advance notice written up as a report. No committee chair promoted to officer and no bill author
+turned into a member. No surname-only match. No changed surname merged into a duplicate. No April
+result misfiled — no election result in the diff at all. Nothing touching the settled facts.
+Nothing about a living person beyond what a cited source carries: the report names officers only in
+their offices and only to say whether a photograph of them exists. No contributor edit in the diff.
+All thirteen commits authored `SGA 60`, no tool attribution anywhere in them or in the file.
+
+Site churn discarded, per the convention the last pass argued for: a rebuild dirtied 90 files with
+nothing behind it, and `data/` was never touched.
+
+### For the next pass
+
+- **The open TopSCHOLAR route is the next run's best use of its time.** 68 officer gap records are
+  now exhausted on `wkuherald.com` and need a Talisman volume, reached through its
+  `dlsc_ua_records` or `stu_org` record page. Work from the record page and its description; the
+  download behind it stays shut. The four years still wanting a general photograph — 1994-95,
+  1995-96, 2000-01, 2008-09 — are reachable the same way.
+- **Re-test a route before writing it off, and test the path you doubt against a path you know
+  works.** This run's error was a single guessed URL generalised to a whole host, and three
+  earlier reports had already taught the opposite lesson about these two hosts swinging between
+  reachable and walled. A negative access claim is worth as little as a negative search result
+  unless the probe was sound.
+- **The standing brief is wrong in the same two places, for an eighth pass.** #6, #7 and #8 have
+  been closed since 18 August. The `gh pr list` 403 it reads as the platform gate is GraphQL-only:
+  `gh api repos/{owner}/{repo}/pulls` answers normally, and push, pull-request and merge rights all
+  work — this pass used them to merge. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, so
+  a run that drops into review-only mode on that 403 would lose its work for nothing. Only the
+  stored prompt can fix this.
+- The three judgement calls carried from earlier passes are still open and still waiting on a
+  human: the April 1994 storm entry filed in 1994-95, the normalised "Mental Health and Well-Being
+  Committee" name, and the unsourced "earliest surviving example" claim in 1988-89.
+- A pre-existing flag, not fixed, per the rule: the officer gap list carries both **Amber Daniel**
+  and **Amber Daniels**. Both are on `main` already and neither is in this diff; whether they are
+  one person is unverified and was not guessed at here.
+- SGA next sits on **13 October**; fall break is 6 and 7 October.
