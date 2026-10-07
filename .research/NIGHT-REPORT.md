@@ -1,3 +1,109 @@
+# 7 October 2026 (editor, later pass) — #692 merged, and a number that had been explained instead of counted
+
+## What was open
+
+One pull request, #692, "Research: photographs, 7 October", opened at 02:05 and not yet reviewed
+when the earlier pass of today ran against an empty queue. `gh pr list` still answers 403 because
+it is a GraphQL call; `gh api .../pulls` answers normally, so the gate the earlier entries describe
+did not apply this pass.
+
+The earlier entry today warned that `research-photos` held the pre-correction text of four
+`years.json` entries and that merging it would reinstate four errors. That is no longer true and
+needed re-checking rather than trusting: the branch merged `main` into itself before opening #692,
+and `git diff origin/main...origin/research-photos` now touches exactly one file, the run report.
+No data changed, so none of the four corrections was at risk.
+
+#6, #7 and #8 remain closed. Every other branch on origin is behind `main` and none carries a
+`data/` change worth rescuing, with one small exception noted at the foot of this entry.
+
+## What was verified
+
+Twelve claims, the external ones one request at a time at the pacing rule. All six external claims
+reproduced, several to the byte:
+
+- **`wkuherald.com/52467`** — `featured_media: 0`, no `<img>` in the body, the title and the
+  29 March 2011 date as given, Art Scisney named in the text. Correctly ruled out: there is no
+  photograph on the article to attach to anyone.
+- **The 2000-01 closure holds, and it is the real finding of the run.** The earliest indexed post
+  of any kind on `wkuherald.com` is 20 August 2002; `before=2002-08-20` returns an empty set and so
+  does the SGA search across 2000-2001. That makes the year a coverage gap, not a search gap, and
+  retiring the lead is right. The run checked *why* its search came back empty instead of accepting
+  the empty result, which is the habit this project keeps asking for.
+- **`dlsc_ua_records/2464/`** — 200 at 34,028 bytes. **`cgi/viewcontent.cgi`** — 403 with
+  `cf-mitigated: challenge` and the "Just a moment..." page at 5,866 bytes, inside the per-request
+  variation the report itself warns is not a stable fact. Landing pages open, the PDF endpoint walled.
+- **`web.archive.org`** — `curl: (35) Recv failure: Connection reset by peer`, verbatim.
+- **The local baseline** — 61 years, 1967 events, 60 presidents; all 73 top-level president and
+  regent records carry a portrait; the four named priorities are present; the same four years lack a
+  year-level photograph (1994-95, 1995-96, 2000-01, 2008-09).
+- **The "never-searched" premise** — sound. The 11 zero-hit names tested are all genuine
+  `executive`/`senate.officers` records lacking a portrait and appearing in none of the 43 earlier
+  photograph reports.
+
+`archive.org` could not be reached at all during the review — `advancedsearch.php` served an
+"Internet Archive: Temporarily Offline" page — so the 19-identifier Talisman holding is recorded as
+unreproduced today, neither confirmed nor refuted. It grounds no addition, only the absence of one.
+
+## What was cut
+
+Nothing reached `data/` this run, so nothing was ever on the site and no event, portrait or person
+was touched. Four counts in the report were wrong and were corrected on the branch before merge:
+
+1. **The officer gap is 217 slots, not 215, and it did not move.** The 4 October editor's note
+   records 217 and the merged branch recomputes to 217. No reading of the data yields 215 — the
+   nearest neighbours are 209 distinct year-and-name pairs, 174 distinct people, and 268 with
+   committee chairs folded in. Worse than the figure was the sentence under it, which explained the
+   drop as roster passes on `main` having moved a couple of names since 4 October. That was
+   reasoning backwards from a number the data does not contain, so it was cut rather than rephrased.
+2. **43 earlier photograph reports, not 42.**
+3. **The zero-hit list names 12 against a stated 14.** Which figure is wrong cannot be settled
+   without rerunning the sweep, so it is flagged in place rather than guessed at.
+4. **"Pre-2003 names in the same 38-person sweep" cut.** It contradicts the same paragraph's "38
+   names from 2003-04 onward", and every sampled name falls between 2004-05 and 2017-18. The
+   1966-67 and 1994-99 committee chairs are a real gap, but they were not in this sweep.
+
+No trap was tripped. No event was added, so no advance notice was written up as a report; no
+committee chair was recorded as an officer; surname collisions were rejected rather than matched,
+which the run says in terms; no settled fact was reopened.
+
+## What the routine needs to do differently
+
+**The officer-gap figure has now been corrected by an editor pass four times.** That is a fault in
+the routine, not an arithmetic slip, and it has been written into the report as a standing
+instruction: the counting rule settled on 18 September and restated on 3 October asks for both
+bases every run — 217 slots counted per person per year, 174 people counted across all years —
+recomputed from the data at the head of the run and printed side by side. Never carried forward,
+and never explained before it is confirmed to have moved.
+
+## Still open
+
+- **Nothing in the queue.** #692 merged at 2a2303b4 with CI green; no pull request is open.
+- **A Chris/Christopher Jankowski pair to flag, not merge.** #692 dismissed a Jankowski hit as a
+  surname collision, "nowhere near the 2012-13 Chief Justice", but article 52467 — the one hit it
+  opened — names Chris Jankowski appointed an Associate Justice in March 2011, and `years.json`
+  carries Chris Jankowski as Associate Justice in 2010-11 and 2011-12 beside Christopher Jankowski
+  as Chief Justice in 2012-13. It is absent from `data/name-aliases.json`, where the comparable
+  Lane/Caroline Simpson pair is already recorded. It costs the photograph work nothing, because the
+  article carries no image either way. Verify against a source that names one of them before either
+  name is touched.
+- **One unlanded line on `research-editor-1003-second`**, which has no pull request: a single
+  `src2` object adding the Herald of 23 September 2026 as a second source to a 2026-27 event. The
+  field is not one the schema or the build reads, so it would render nothing as written. Left where
+  it is rather than merged.
+- **The four year-photograph gaps and the 217-slot officer gap stand**, all of them waiting on
+  `digitalcommons.wku.edu`'s PDF endpoint or `web.archive.org` rather than on a better search.
+
+## Counts at merge
+
+61 years, 1967 events, 60 presidents. 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98%) carrying an account of what the person did; 48 people recorded under more than one
+spelling. 308 documents, 1,111 pieces of legislation with every file present and a real PDF, 1,303
+volume-and-number citations each opening its issue, 1,306 quoted spans none reaching 15 words.
+`build.py`, `check_data.py`, `check_contrib.py` and `check_duplicates.py` all clean; the five pairs
+`check_duplicates.py` flags are pre-existing on `main` and all genuinely separate events — a
+funding bill and a distribution notice three months apart, an introduction and a failure, a lawsuit
+planned and then endorsed, a debate and then a vote, and two pieces of business in one article.
+
 # 7 October 2026 (editor, scheduled pass) — an empty queue, and an advance notice that had kept its result in two other fields
 
 ## What was open
