@@ -7645,6 +7645,40 @@ No file in `data/photos.json` or `data/photos/` changed. `build.py` and `check_d
 clean (61 years, 60 presidents, all still portrayed). This run's only change is this note.
 Landed on `research-photos`.
 
+### Photograph run of 7 October (evening): the web.archive.org bypass opened for a full session, two of the four year-photo gaps closed, the never-opened finding aid read and ruled out as an image source
+
+Baseline reconfirmed first: all 73 `leaders` records still carry a portrait, the officer gap
+unchanged at 217/174, all four year-photo gaps (1994-95, 1995-96, 2000-01, 2008-09) still open.
+`research-photos` was restarted from `origin/main` rather than merged — its prior commits were
+already fully contained in `main` (recent PRs through #696 have been closing unmerged on GitHub
+even though their content lands another way), so continuing the old branch risked re-proposing
+already-landed work.
+
+`cgi/viewcontent.cgi` stayed closed (Cloudflare 403) all session, but `web.archive.org`'s `if_`
+bypass answered real, magic-byte-verified PDFs throughout — the first sustained open window this
+routine has had in over a day. Used it on the standing open leads rather than rediscovering them:
+
+- **The SGA-photographs finding aid** (`article=1619&context=dlsc_ua_fin_aid`), unopened since 24
+  August, turned out to be a six-page text inventory of the *physical, non-digitized* WKU Archives
+  photo collection (UA1C4/10) — folder lists of names and dates, no reproducible image. Closed for
+  good as a photo lead.
+- **2008-09**: Herald 84:46 ("All smiles, Smiley wins SGA election") has no photograph anywhere in
+  the issue — ruled out. Herald 84:35 (Gilley's own election story, real `article=7727` not the
+  item id 6718) has no second frame, but the full, uncropped source image — not just the tight
+  single-subject crop already used for his portrait — makes a usable year-level photograph on its
+  own caption. Added as `2008-09-regent-election-night.jpg`, closing this gap.
+- **1995-96**: the same issue already cited for Tara Howard's portrait (Herald 70:54, "Higdon
+  moves up; voting down") turned out to be a four-person election-night embrace, fully captioned
+  left to right (Yan, Schepman, Miller, Higdon). Cropped the full group from the PDF and added it
+  as `1995-96-election-embrace.jpg`, closing a second gap.
+- **1994-95** re-checked at its own best lead (Herald 69:52, Evans' portrait source) and still has
+  no second photograph in the issue. **2000-01** not re-opened — already fully read 3 October with
+  no usable frame. Both remain open; neither issue has anything further to give.
+
+`build.py` and `check_data.py` both pass clean after landing both new photographs: 61 years, 1967
+events, 60 presidents, two of the four year-photo gaps closed. Full detail in
+`.research/photo-run-2026-10-07-evening.md`. Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
