@@ -667,5 +667,29 @@
   "year": "1978-79",
   "file": "1978-79-steve-wilson.jpg",
   "reason": "Withdrawn by the editor on 3 October 2026, before it reached the site. This is the SECOND time this identification has been barred: the entry above, keyed only to the volume in prose, already rejected the senior-portrait and Spring Sing mentions as untied to ASG. Because that entry names no URL and no file it stayed advisory, and the photograph routine re-found the same man, added the Pre-Law Club frame as the picture, and published him. This entry is keyed to the file so the bar bites. The caption is read correctly as far as it goes: the 1979 Talisman, p. 296, captions the Pre-Law Club photograph \"(Front row) M. Mefford, K. Pawley. (Back row) J. Rue, S. Wilson\", and two men stand in the back row. What is still not established is that this S. Wilson is the Steve Wilson whom ASG's minutes of 12 September 1978 confirm as Judicial Council chairman. The volume never uses the word \"Judicial\" at all, and its own back index puts Associated Student Government on pp. 53, 73, 82, 119, 262 and 288-9 while putting Wilson, Steve Alan on pp. 296, 318, 320 and 336, with no page in common. Those pages were read: 296 is the Pre-Law Club, 318 is Greek Week, 336 is the fraternity rosters. The body text names its Steve Wilson as the SAE brother who coordinated Spring Sing and sang in the winning barbershop quartet beside Jon Rue, the same J. Rue standing next to him in the Pre-Law Club frame, and the senior grid gives STEVE WILSON, agriculture, Tompkinsville. That is a consistent portrait of a Greek agriculture senior, and it is evidence about the man in the frame, not about the Judicial Council chairman. The finding also claimed the index carries exactly one Steve Wilson; it carries two lines, Wilson, Stephen Alan with no page references and Wilson, Steve Alan with four, and whether that is one person indexed twice or two people is not settled from the text. Either way it was an argument from silence: the Talisman indexes only the people it pictures, so a Judicial Council chairman who never appeared in it would be missing from the index whoever he was. This is surname-plus-initial matching across two unconnected sources. Do not publish it unless a source puts a Steve Wilson in both the Pre-Law Club and ASG, or an ASG photograph from 1978-79 captions him directly."
+ },
+ {
+  "name": "Big Red mascot concept (synthetic image, not a photograph)",
+  "year": "2023-24",
+  "file": "https://wkuherald.com/wp-content/uploads/2024/03/dalle-big-red.jpg",
+  "url": "https://wkuherald.com/wp-content/uploads/2024/03/dalle-big-red.jpg",
+  "logged": "2026-10-07",
+  "reason": "Barred by the editor on 7 October 2026, before it was ever proposed: this is not a photograph. The Herald published it as a synthetic illustration, and its own caption says so. It sits in data/herald-photos.json among 21,304 harvested Herald images with nothing to mark it off from the real ones, so a sweep hunting Big Red or a mascot could land it as a picture of the thing it depicts. A misidentified face is worse than no face; an invented one is worse still, because no part of it is evidence of anything. Keyed to the url so the bar bites rather than staying advisory. Herald caption: \u201cThis image was created by prompting DALL-E, an AI image generator to generate an image of a mascot inspired by Big Red.\u201d"
+ },
+ {
+  "name": "Statue \u201cAI Interpretation\u201d (synthetic image, not a photograph)",
+  "year": "2023-24",
+  "file": "https://wkuherald.com/wp-content/uploads/2024/04/dalle-statue.jpg",
+  "url": "https://wkuherald.com/wp-content/uploads/2024/04/dalle-statue.jpg",
+  "logged": "2026-10-07",
+  "reason": "Barred by the editor on 7 October 2026, before it was ever proposed: this is not a photograph. The Herald published it as a synthetic illustration, and its own caption says so. It sits in data/herald-photos.json among 21,304 harvested Herald images with nothing to mark it off from the real ones, so a sweep hunting the Guthrie Bell tower or a campus statue could land it as a picture of the thing it depicts. A misidentified face is worse than no face; an invented one is worse still, because no part of it is evidence of anything. Keyed to the url so the bar bites rather than staying advisory. Herald caption: \u201cAI Interpretation\u201d The caption alone would not give it away, but the file is named dalle-statue.jpg and it ran on 4 April 2024 beside the Cherry Hall image barred below, from the same set."
+ },
+ {
+  "name": "Cherry Hall with tour guides (synthetic image, not a photograph)",
+  "year": "2023-24",
+  "file": "https://wkuherald.com/wp-content/uploads/2024/04/Screenshot-2024-04-04-at-3.39.20\u202fPM.png",
+  "url": "https://wkuherald.com/wp-content/uploads/2024/04/Screenshot-2024-04-04-at-3.39.20\u202fPM.png",
+  "logged": "2026-10-07",
+  "reason": "Barred by the editor on 7 October 2026, before it was ever proposed: this is not a photograph. The Herald published it as a synthetic illustration, and its own caption says so. It sits in data/herald-photos.json among 21,304 harvested Herald images with nothing to mark it off from the real ones, so a sweep hunting Cherry Hall, campus tours or the statue could land it as a picture of the thing it depicts. A misidentified face is worse than no face; an invented one is worse still, because no part of it is evidence of anything. Keyed to the url so the bar bites rather than staying advisory. Herald caption: \u201cThis image was generated with Dall-E using a description of Cherry Hall and tour guides standing around the statue.\u201d"
  }
 ]
