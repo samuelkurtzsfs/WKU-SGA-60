@@ -11,6 +11,26 @@
 > identifications rather than force-fitting them — were right, and are why this report passed
 > review. The merge itself was refused by the run's own permission gate, not by the review; the
 > branch is cleared to merge as it stands.
+>
+> **Second editor's note, 7 October 2026 (night).** Reviewed again independently before the merge
+> that the first pass could not make, and everything above was re-tested rather than taken on
+> trust. All of it holds: the figures recompute exactly (61 years, 1967 events, 60 presidents, 73
+> leader records all carrying a portrait, the four year-photo gaps, 217 officer slots over 174
+> people with Carter Smith and Paul Gerard the two the per-year count of 176 adds), the eight
+> names, years and offices match `years.json` exactly, and thirteen source claims were reopened at
+> `archive.org` and `wkuherald.com` and all thirteen held word for word. The 2008-09 correction is
+> right: the empty window returns `x-wp-total: 0`, and the widened window returns seven posts
+> running 4 September to 4 December 2009, so the gap does not reach into 2009-10.
+>
+> What this pass added is two corrections of its own, both from opening page images the first
+> review read only as text. The Bass frame carries four figures, not three — the fourth cropped at
+> the lower left edge. And the Spring Sing paragraph was wrong twice over: the text naming the
+> quartet *is* the photograph's caption, complete and legible, not a separate block beside a
+> truncated one, and the frame holds five figures rather than four. That matters because the
+> report's closing advice sent the next run hunting for a clearer scan of a caption that is
+> already clear and never carried a left-to-right key at all. Both are corrected in place below
+> and the lead is now closed rather than left pending. Nothing was deleted; every correction is a
+> rescue. No data file is touched by this branch, and nothing in it reaches the built site.
 
 ## What was checked before doing anything
 
@@ -61,11 +81,16 @@ resolution, not just skimmed from OCR context. None produced an addable portrait
   34-35) carries a candid photograph whose caption ("A LIGHT MOMENT IN AN ASG MEETING") reports
   laughter from president Bob Moore and smiles from three officers it names in turn: activities
   vice president David Bass, secretary Sharon May and vice president Cathy Murphy — read back
-  against the page text on 7 October, word for word. The photograph itself shows one standing
-  man (laughing) and two partly-visible seated women — three figures for four named people. Bob
-  Moore, also male, is the one explicitly described as laughing and is the more likely match for
-  the standing figure, which leaves no figure in the frame confirmably identifiable as Bass. Not
-  used.
+  against the page text on 7 October, word for word. The caption sits on p. 34, the feature text
+  on p. 35. The photograph itself shows one standing man (laughing), a seated woman in
+  sunglasses, a second woman smiling at the right edge, and a fourth head cropped at the lower
+  left edge — four figures for four named people, not the three this report first counted, but
+  the fourth is a partial crop that carries no readable face. Bob Moore, also male, is the one
+  explicitly described as laughing and is the more likely match for the standing figure, which
+  leaves no figure in the frame confirmably identifiable as Bass. Not used. (The page image was
+  reopened by the editor on 7 October; the figure count is corrected here because a person
+  cropped at a frame's edge is exactly what the LaCivita portrait in `CLAUDE.md` turns on, and a
+  report that undercounts one teaches the opposite lesson.)
 - **Young** — appears in the body text of the **1979** Talisman's ASG feature, not the 1978 one
   Bass's caption comes from; the two volumes each carry a feature, and Young is 1978-79. Its
   continuation (p. 289, where the index places him) quotes him as administrative vice president
@@ -77,17 +102,24 @@ resolution, not just skimmed from OCR context. None produced an addable portrait
 - **Wilson** — the fullest lead of the eight, and still not usable. The back index lists
   "Wilson, Steve Alan" at four pages (296, 318, 320, 336), and the text on p. 320 names him
   directly: SAE's barbershop quartet "composed of Scott Neel, Jon Rue, Kreis McGuire and Steve
-  Wilson" won Spring Sing, ending Lambda Chi Alpha's 13-year title. A photograph of a four-man
-  barbershop quartet in full costume sits directly below that text — but its own caption (cut
-  off at the column edge, crediting only the photographer) gives no left-to-right order, so which
-  of the four figures is Wilson cannot be read from the page. P. 296 carries a second, weaker
+  Wilson" won Spring Sing, ending Lambda Chi Alpha's 13-year title. A photograph of the quartet
+  in full costume runs across the foot of the same page. **The editor reopened the page image on
+  7 October and two things in this paragraph were wrong.** That naming text is not separate from
+  the photograph's caption — it *is* the caption, set in the left-hand column in the volume's
+  standard caption style, complete and fully legible; the "— Mark Tucker" line beneath the
+  photograph is a photographer credit, not a truncated caption. And the frame holds five figures,
+  not four: the four costumed singers plus a fifth, moustached man at the microphone behind them.
+  The caption names four people in running prose and gives no left-to-right order, so which
+  figure is Wilson cannot be read from the page. P. 296 carries a second, weaker
   lead: "S. Wilson" in the back row of a Pre-Law Club photograph, but the volume's own index
   lists six different Wilsons whose first name begins with S (Scott Samuel, Stephen Alan, Steve
   Alan, Stevie Joe, Stuart Kevin, Susan Dell), so the initial alone does not identify him. Pages
   318 and 336 are a Greek Week section divider and an unopened lead respectively; neither
   carries a name. Not used.
-- **Chesnut** — "Mark Chestnut" appears only as a badminton-singles intramural winner in a
-  results table (p. 234 of the 1981 Talisman), not in a photograph.
+- **Chesnut** — the 1981 index gives "Chesnut, Mark Cameron 234", and p. 234 is an intramural
+  results table, not a photograph. He is in it twice, as badminton-singles champion and, with
+  Mitch Gum, in the racquetball-doubles row; both for Sigma Alpha Epsilon. The table spells the
+  surname "Chestnut" where the index spells it "Chesnut".
 - **Millay, Austin** — neither appears in the 1987 Talisman's index at all. The only Millays
   indexed are Lori Ann and Beth Ann; no Austin is indexed as a student name (every hit for
   "Austin" is the university Austin Peay).
@@ -134,7 +166,12 @@ events, 60 presidents, clean, both before and after this run.
 - 2008-09 joins 2000-01 as a closed `wkuherald.com` lead. 1994-95 and 1995-96 were already known
   to predate the archive entirely. All four year-photo gaps now wait on `digitalcommons.wku.edu`
   or `web.archive.org` opening, not on a better search anywhere else.
-- The Steve Wilson Spring Sing photograph (1979 Talisman p. 320) is worth a second look if a
-  clearer scan or a caption on a facing/following page ever turns up a left-to-right key for the
-  quartet — the identification is otherwise sound (the index places him at exactly this page),
-  only the which-face-is-which question is open.
+- **The Steve Wilson Spring Sing photograph (1979 Talisman p. 320) is closed, not pending.** An
+  earlier draft of this report sent the next run looking for "a clearer scan or a caption on a
+  facing/following page" that would key the quartet left to right. That advice is withdrawn: the
+  caption is already complete and fully legible on the page, and it simply never printed an
+  order, so no better scan can produce one. The volume keys its group photographs explicitly when
+  it keys them at all — the Alpha Delta Pi roster two pages later runs "(Front row) S. Mooney, D.
+  Travis, K. Bean..." — and this caption does not. Only a separately captioned photograph of
+  Wilson, or an outside source naming where he stood, could ever settle it. Do not spend another
+  run on the scan.

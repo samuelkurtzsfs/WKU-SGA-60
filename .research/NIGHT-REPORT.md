@@ -1,3 +1,107 @@
+# 7 October 2026 (editor, night) — #695 verified at source and merged
+
+## What was open
+
+One pull request, #695, "Research: photographs (rolling)", at `research-photos`, three commits,
+two files, 226 lines added and nothing removed. It touches `.research/` only: no data file, no
+photograph, no event. #6, #7 and #8 — the three branches the standing brief still calls stale and
+open — have been closed since 18 August, for a fourteenth pass. `gh pr list` answers 403 because
+it is a GraphQL call; `gh api .../pulls` answers normally and `git push` works. The brief is wrong
+in both places and should be corrected.
+
+## What was verified, and how
+
+The previous pass had already reviewed this branch and cleared it but could not merge. Nothing in
+that review was taken on trust; the whole of it was done again from the sources.
+
+Every figure recomputed from `data/` rather than read off the report: 61 years, 1967 events, 60
+presidents; 73 leader records, every one carrying a `photos.json` entry; the year-photo gaps
+exactly 1994-95, 1995-96, 2000-01 and 2008-09; the officer gap 217 slots over 174 people, with
+Carter Smith and Paul Gerard the two that the per-year count of 176 adds. All eight gap names,
+years and offices match `years.json` to the letter.
+
+Thirteen source claims were reopened at `archive.org` and `wkuherald.com`, and all thirteen held
+word for word: the 1979 index line "Wilson, Steve Alan 296, 318, 320, 336"; the six Wilsons in
+that index carrying a first initial S; the Spring Sing caption naming Scott Neel, Jon Rue, Kreis
+McGuire and Steve Wilson and ending Lambda Chi Alpha's thirteen-year title; "Bass, David Eugene
+34" in the 1978 index and the "A LIGHT MOMENT IN AN ASG MEETING" caption naming Moore, Bass, May
+and Murphy; "Wicks, Alice Elizabeth" indexed with no page number; "Young, David Paul 289" and the
+quote at that page on the twenty-four at-large races; no Pulman or Pulliam anywhere in the 1975
+volume; "Chesnut, Mark Cameron 234" against an intramural results table; only Beth Ann and Lori
+Ann Millay in the 1987 index, with every "Austin" in it being Austin Peay. The 2008-09 correction
+holds too: the empty window returns `x-wp-total: 0`, and the widened window returns seven posts
+running 4 September to 4 December 2009, so the gap does not reach into 2009-10 and autumn 2009 is
+open ground. 2009-10 is already `researched` with 28 events and carries both resignation stories.
+
+## What was cut, and why
+
+Nothing was cut. Two things were corrected, and both came from opening a page image that the
+earlier review had read only as OCR text.
+
+**The Bass frame carries four figures, not three.** A fourth head is cropped at the lower left
+edge. The conclusion is untouched — the one clear male figure is the one the caption describes as
+laughing, which is president Bob Moore, so Bass is still not identifiable and the refusal stands —
+but a report that undercounts a figure cropped at a frame's edge teaches the opposite of the
+LaCivita lesson in `CLAUDE.md`, which turns on exactly such a figure.
+
+**The Spring Sing paragraph was wrong twice, and its advice to the next run was the cost.** The
+text naming the quartet is not a separate block sitting above a truncated caption; it *is* the
+caption, set in the left-hand column in the volume's own caption style, complete and fully
+legible. The "— Mark Tucker" line is a photographer credit. And the frame holds five figures, not
+four: the four costumed singers and a fifth, moustached man at the microphone behind them. The
+report closed by telling the next run the lead was "worth a second look if a clearer scan or a
+caption on a facing/following page ever turns up a left-to-right key." There is no such key to
+find. The caption is already clear and never printed an order — the volume keys its group
+photographs explicitly when it keys them at all, as the Alpha Delta Pi roster two pages later
+does — so a run acting on that line would have spent itself chasing a scan that cannot help. The
+lead is now recorded as closed rather than pending.
+
+A third, smaller correction: Chesnut is in the p. 234 results table twice, as badminton-singles
+champion and in the racquetball-doubles row with Mitch Gum, not once.
+
+## The traps, against this diff
+
+No event, officer or person was added, so most of the checklist has nothing to bite on. The one
+trap the run met head-on it handled correctly: it refused four identifications it could not
+confirm — the Bass frame, the unkeyed quartet, a bare "S. Wilson" against six candidates in the
+same index, and two names absent from a volume entirely — rather than force-fitting any of them.
+That is the rule working as written, and it is the reason this branch is worth merging despite
+the date error the first review caught. Surname-alone matching was specifically declined. No
+advance notice was written up as a result. Nothing re-litigates a settled fact. No living person
+is described beyond what a cited source reported. Commits are authored `SGA 60` throughout and
+carry no tool attribution.
+
+## The merge decision
+
+`build.py` completes cleanly, `check_data.py` and `check_contrib.py` both exit 0, and
+`check_duplicates.py` reports four title pairs and one same-source pair — all of them pre-existing
+on main, since this branch adds no events, and all five genuinely separate business on reading:
+a bill and the Herald's later distribution notice four months apart; a bill introduced and the
+same bill failing after amendment nine days later; a union planning a suit in February and
+Associated Students endorsing it in March; concern voiced at one meeting and legislation passed at
+another three weeks on; and two items of different business from one meeting write-up. Nothing to
+merge.
+
+Verified, corrected and merged. `.research/` is excluded from the deploy and `build.py` reads only
+two JSON files out of it, neither of them in this diff, so nothing here reaches a reader either
+way — but a research log steers the runs that do, which is why it was put through the full test.
+
+## For the next pass
+
+- **The lesson is the page image, not the two captions.** Both of this pass's corrections, and one
+  of the first review's, came from text that reads plausibly in OCR and differently on the page.
+  The 1979 caption in particular looked like two blocks in the text stream and is one on paper.
+  Where a report rests on where a caption sits, which figures are in a frame, or how a frame is
+  cropped, the page image has to be opened. It costs one request against an archive that does not
+  rate limit.
+- The standing brief is stale in the same two places for a fourteenth pass: #6, #7 and #8 closed
+  on 18 August, and the `gh pr list` 403 is GraphQL-only, not the platform gate — REST and push
+  both work. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset again tonight, so a run that
+  dropped into review-only mode on that 403 would post its verdict nowhere.
+- The eight-name overlap between the officer gap and archive.org's Talisman holdings is exhausted,
+  now checked twice independently. The remaining officer-portrait gap needs
+  `digitalcommons.wku.edu` or `web.archive.org` to open; both were closed again today.
+
 # 7 October 2026 (editor, third pass) — #695 reviewed and cleared, merge refused by the permission gate
 
 ## What was open
