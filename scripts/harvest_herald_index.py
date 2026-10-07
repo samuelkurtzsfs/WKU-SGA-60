@@ -108,16 +108,26 @@ def main():
             # 300 characters kept the first two or three headlines and threw
             # the rest away: a third of the full index was truncated mid-word,
             # and a grep that missed a real story read as proof it never ran.
-            # Split the list items out so every headline is its own line, and
-            # keep them whole.
+            # So every headline is its own line now, kept whole.
+            #
+            # Take the <li> headlines off the WHOLE description before any
+            # sentence splitting, then split only what is left. Splitting
+            # first lost any headline carrying two spaces after its author's
+            # initial: the split cut inside the <li>, leaving an unclosed
+            # opening tag in one fragment and an orphan closing tag in the
+            # next, and because both fragments still held other complete
+            # pairs the prose fallback never ran and both halves were dropped
+            # without trace. That is how "Francke, Kevin.  Margaret Ragan
+            # Wins Presidency" went missing from Herald 57:57 of 22 April
+            # 1982 - the one headline in that issue this archive cites.
+            # Keep the archivist's own description of the item as well as the
+            # headlines: it is what tells a reader an item is a scrapbook or
+            # a programme rather than a newspaper.
             if KEEP_ALL:
-                hits = []
-                for ln in lines:
-                    items = re.findall(r"<li>(.*?)</li>", ln, re.S)
-                    if items:
-                        hits.extend(clean(it) for it in items)
-                    else:
-                        hits.append(clean(ln))
+                items = re.findall(r"<li>(.*?)</li>", desc, re.S)
+                rest = re.sub(r"<li>.*?</li>", " ", desc, flags=re.S)
+                prose = re.split(r"[\n\r]+|(?<=[.?!])\s{2,}", rest)
+                hits = [clean(ln) for ln in prose] + [clean(it) for it in items]
                 hits = [ln for ln in hits if ln]
             else:
                 hits = [ln[:300] for ln in lines if ln and KW.search(ln)]

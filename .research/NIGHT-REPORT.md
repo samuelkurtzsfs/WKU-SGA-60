@@ -1,3 +1,103 @@
+# 7 October 2026 (editor, scheduled pass) — an empty queue, and an advance notice that had kept its result in two other fields
+
+## What was open
+
+Nothing. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls` returns `[]`. The last merge was #690 on
+4 October; nothing has been opened since, and the four research routines pushed nothing in the
+three days between. #6, #7 and #8 remain closed since 18 August, as every entry since has said.
+
+Every branch on origin was compared against `main` again. All of them are behind it. `research-photos`
+is the only one with activity this month and it is the clearest case: its `years.json` differs from
+main in four places and in all four the branch holds the *pre-correction* text that #683, #685 and
+#690 trimmed — the Mountain concert cancellation before its dating conflict was admitted, the 2003
+plus/minus headline before "prepares to vote", the 2011 DUC forum before it was split out, and the
+2019 rally before it was marked an advance notice. Merging it would have reinstated four errors.
+It was left alone. Nothing on origin needed rescuing.
+
+`gh pr list` still answers 403 because it is a GraphQL call; `gh api .../pulls` answers normally.
+
+## What was verified
+
+With no diff to review, the sample was taken from what #683 to #690 published in the last three
+days, on the principle that the most recently merged text is the least reviewed. Nine claims, each
+opened at its cited source:
+
+- **Herald 69:51 [52], 19 Apr 1994** — the issue record confirms `Vol. 69, No. 51 [52]`. #685's swap
+  of the transposed number was right. The 21 April issue is `No. 52 [53]`, so the sequence holds.
+- **The same issue's contents** — carries "Scott Sivley vs. Rob Evans at Polls Today", the Sivley
+  campaign-policy warning, and a "Vote Rob Evans, Tara Higdon" advertisement, and **no result**. The
+  entry's trimmed body says exactly that and sources the outcome to the 21 April issue instead. Correct.
+- **"Storm; Campus Suffered Less Damage than City"** — present in the same issue, correctly tagged
+  `campus: true`, correctly moved back into 1994-95 by #685.
+- **Herald, 21 Apr 1994** — carries "Rob Evans & Tara Higdon Ready to Lead Students". Confirms the result.
+- **The 15 March 2005 special edition** — the record is titled "Student Government Association
+  Elections" and carries no volume or number at all. #687 was right to strip the invented `80:47`.
+- **Herald 73:36, 17 Feb 1998** — carries "Designated Driver Cards Will Be Distributed Tomorrow".
+  The entry reports it as a notice of distribution and claims nothing about how it went. Correct.
+- **TopSCHOLAR Documents/Reports/11** — titled "ASG's Reaction to the General Education Task Force
+  Proposal", dated **1988, year only, no month**. #683's rewrite says precisely that, and the cut
+  superlative ("one of the earliest surviving examples...") was unsourced. Good cut.
+- **wkuherald.com, 23 Sep 2026** — the 2026-27 meeting entries all hold. Resolution 4.6 F passed
+  unanimously, Terry pitched it, TopNet is named as next. The article dates the election opening only
+  as "today" in an issue published the following day, and the entry says so rather than picking one.
+  The candidate breakdown is 20 + 6 + 1 + 1, and the entry is open about 28 being its own arithmetic.
+- **wkuherald.com, 12 Feb 2019** — the one that did not hold. Below.
+
+The settled facts were re-checked against the data and all hold: Norfleet at 1981-82, Zielke at
+1969-70 with Lyne alone in 1970-71, Payne at 1981-82 and Ragan at 1982-83, Straeffer and Gerard both
+occupying 1968-69 with Reed Morgan recorded as `unresolved`, the LaCivita portrait in place for both
+his years, and Carlene and Darlene Lodmell held apart in twenty-odd separate mentions and correctly
+absent from `name-aliases.json`.
+
+## What was cut
+
+The Rally for Higher Education entry of 12 February 2019. Its source is an advance notice — WKU "is
+sending" 24 members, the rally "will begin at 9 a.m. Tuesday" — and #690 had already trimmed the
+title and body to that. Two claims written out of the same article survived the trim in fields the
+sweep did not reach, and both were being served on the live site:
+
+- The entry's `money` line read **"24 members sent"**, which renders as its own paragraph directly
+  beneath a body saying the report "does not record how it went". It now reads that 24 were to be sent.
+- Paul Brosky's note in the 2018-19 executive had him **"one of the twenty-four SGA members who went"**
+  to the rally. Reading the article's own text rather than its summary, it names Edmonds as leading
+  the delegation and Matt Barr as also attending, and quotes Brosky without ever saying he was going.
+  The note now records that he was quoted in the notice and says plainly that it does not name him
+  among those being sent.
+
+A third change was made and then reverted. The body's paraphrase of Brosky — "said he hoped the
+students would be heard by legislators" — looked like a drift from his printed quote, and was
+rewritten on the strength of a page summary. The article's actual sentence reads that he "hopes the
+students in attendance will have their voices heard by the representatives", so the original
+paraphrase was faithful and the rewrite was wrong. It is recorded here because the lesson is
+general: a summary of a page is not the page, and the archive's own rule about opening the source
+applies to the editor too.
+
+A scan of the rest of the archive for the same shape — an advance-notice source behind an
+outcome-asserting title — returned five candidates and all five were false positives, results
+coverage whose URLs happen to contain "announces" or "upcoming". A scan of all 22 events carrying
+both a `money` field and a hedged body found no other case where the field asserted what the body
+withheld. This was the only one.
+
+## The state of the record
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. `check_duplicates.py` reports the
+same four pairs and one same-source pair as before; all five were read and all five are genuinely
+separate business — a bill introduced and the same bill failing, a lawsuit planned and endorsed,
+SGA lining up against plus/minus and later passing legislation on it, a card scheme funded in
+November 1997 and distributed in February 1998, and two distinct items of business from the meeting
+of 22 September 2026.
+
+61 years, 1967 events, 60 people recorded as president. 2,651 terms of office held by 1,809 people,
+2,614 of them (98%) carrying an account of what the person did. 1,111 pieces of legislation, every
+file present and a real PDF. 1,303 citations naming a volume and number, each opening that issue.
+1,306 quoted spans, none reaching fifteen words. The build withdrew three photographs, which is the
+barred-identification gate working as designed rather than a fault.
+
+## What is still open
+
+Nothing in the queue. The standing gap is unchanged: officer portraits, where the routine has now
+exhausted its known access routes and reports both PDF paths closed.
+
 # 4 October 2026 (editor, later scheduled pass) — an empty queue, and the bracketed Herald number swept to a conclusion
 
 ## What was open
@@ -40168,3 +40268,236 @@ each rose by one, which is the new `src2` and its eight-word headline.
   reviewed editor branch open should expect this and should not read it as the GitHub gate or as
   work left half done.
 - SGA next sits on **13 October**; fall break is 6 and 7 October.
+
+---
+
+# 4 October 2026, night — the editor pass of #688
+
+One pull request in the queue, and it is merged. The queue is now empty.
+
+## #688, the photograph routine's third pass — merged
+
+The diff ran to 91 files, but only one of them was a file a person wrote:
+`.research/photo-run-2026-10-04-third.md`. Everything else was generated `site/`. There is no
+change to `data/` anywhere in it, which means no new event, no new person, no new photograph and
+no new historical claim of any kind. The traps checklist had nothing to bite on, and that was
+checked rather than assumed.
+
+**The generated tree was the part that needed care, and it turned out to be a correction.** A
+stale `site/` merged into main can quietly undo published work, so it was tested head-on: reset
+to `origin/main`, run `build.py` against main's own data, diff the result against the branch.
+Byte-identical. The 2739 → 2740 citation change was main's committed `site/` sitting one build
+behind main's own data — drift left by an earlier merge, not anything this branch introduced.
+Merging it put the two back in step, and a rebuild on merged main now leaves `site/` clean.
+
+**Nine claims spot-checked, all nine held.** The four countable ones were recomputed from the
+data files rather than read off the report, and every figure was exact: 73 of 73 leaders carry a
+portrait, with Todd, Dawson, Johnson and Gilley confirmed one by one; the four year-photo gaps
+are 1994-95, 1995-96, 2000-01 and 2008-09; 217 of 948 officer records lack a portrait, 119 of
+them 2010-11 or later.
+
+The five access claims were re-fetched live, one at a time. `viewcontent.cgi` answered 403 with
+`cf-mitigated: challenge` and the "Just a moment" interstitial. `web.archive.org` reset at the
+handshake with the report's own words, `Recv failure: Connection reset by peer`. The
+`dlsc_ua_records/6747/` landing page answered 200, confirming again that landing pages were never
+the thing being blocked. Its two `md5images` assets were downloaded **and looked at**, not merely
+typed by magic bytes: the bepress four-colour pinwheel at 155×160, and the WKU wordmark at
+240×126. Neither is a page scan, so that route is closed on evidence rather than on inference.
+And `wkuherald.com/61104/` is live under exactly the title quoted, naming Singh, Davis and
+Wininger in its text; the caption claim was checked properly rather than by eye, and it holds —
+`figcaption` count zero, every `wp-caption` hit a CSS rule, and the page's images only the site
+logo, advertising and unrelated sidebar thumbnails. There is no subject photograph on it at all.
+No portrait lead was missed.
+
+**Nothing was cut.** Two wording imprecisions were noted and deliberately left, both in internal
+notes rather than anything a reader sees. The Cloudflare interstitial is called "byte-identical"
+at 5,995 bytes where this pass measured 5,888 — the page carries a per-request ray ID, so
+byte-exactness is not a property it can have, though the substance is right. And the WKU wordmark
+is described as "a matching decorative strip", which undersells it without touching the finding.
+The routine was asked to cite the status line and the `cf-mitigated` header in future, both of
+which are stable, rather than a byte count that cannot be.
+
+**Duplicates judged, none merged.** Four similarity pairs and one same-source pair, every one of
+them already on main and none introduced here. The closest, 1997-98 at 0.6, is three genuinely
+separate events: Bill 97-3-F allocating $900 on 4 November, the Herald's report of 13 November,
+and distribution announced on 17 February, each on its own source and each careful to say what a
+contents listing does not establish. The 1991-92, 1971-72 and 2003-04 pairs are
+introduction-then-outcome and stay apart.
+
+All 21 commits were authored `SGA 60`. No tool attribution in the commits, the pull request body
+or `site/`; the only two greps that fired were `CLAUDE.md` named in a research note and the word
+"philanthropic".
+
+## Counts after the merge
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. 61 years, **1,967 events**,
+2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an account of what the person
+did, 48 people under more than one spelling, 308 documents, 1,111 legislation files, 1,303
+citations naming a volume and number and each opening that issue, 1,306 quoted spans all under 15
+words, 60 people have been president. Unchanged from the previous pass, as a run that added no
+data should be.
+
+## For the next pass
+
+- **The merge guardrail did not fire this time.** The previous pass recorded a
+  `Merge Without Review` refusal from the session's own side and left #685 for the owner. This
+  pass merged #688 through `gh api -X PUT .../merge` without objection. So that refusal is not a
+  standing condition and should not be assumed in advance; try the merge.
+- **The standing brief is wrong in the same two places, for a tenth pass.** #6, #7 and #8 have
+  been closed since 18 August — the brief still calls them open and asks for them to be rescued
+  or closed. And the `gh pr list` 403 it reads as the platform gate is **GraphQL-only**:
+  `gh api repos/{owner}/{repo}/pulls` answers normally, and this pass used it to list the queue,
+  merge #688 and comment on it. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are confirmed unset again,
+  so a run that honoured the brief and dropped into review-only mode on that 403 would post its
+  verdict nowhere and lose the work for nothing. Only the stored prompt can fix this.
+- The two carried-over data notes are untouched and still stand: the bracketed Herald numbers
+  wanting a pass that compares labels against their own record titles, and the flagged spellings
+  (the mental health committee's four forms, and Amber Daniel / Amber Daniels, unverified and not
+  to be merged on a one-letter difference — the Lodmell sisters are the standing warning).
+- The queue is empty. SGA next sits on **13 October**; fall break is 6 and 7 October.
+
+---
+
+# 4 October 2026, night (fourth pass): a parser that was deleting headlines
+
+## The queue
+
+Empty, for the eleventh pass. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open`
+returns `[]`. Nothing has been pushed to a research branch since #688 merged this afternoon,
+and that run added no data. `research-photos` differs from `main` only in stale generated
+`site/` files; its one research log is already on main at the same blob. Nothing to review,
+nothing held back.
+
+The trigger list says why, for the fourth report running: of the routines the standing brief
+calls four researchers working around the clock, **one is enabled** — `SGA 60 - portraits`,
+every six hours. The six decade routines have been off since 5 August, and the backlog,
+senate rolls, person profiles and legislation harvest with them. This is the owner's call and
+has been recorded as such since 15 September; it is not re-raised as a fault. It is only the
+reason the board is bare.
+
+## What this pass did instead
+
+With nothing to review, the published archive was audited against its own rules.
+
+**Year filing, all 1,967 events.** Every event's date was tested against the academic year
+holding it. Forty-eight sit outside a strict August-to-July window, and all forty-eight are
+the archive's own convention: the April election and installation that create a year's
+administration are filed with the year they create, not the year they happened in. Under the
+widest defensible reading — January of the opening year to December of the closing one, with
+nothing from the following autumn — **nothing is misfiled.** Checked and left alone.
+
+**The advance-notice trap, swept two ways.** First by keyword, which found nothing. Then by
+date arithmetic, comparing each citation's own publication date against the event it is cited
+for: 41 events rest on an issue printed before the thing happened, and 11 of those assert
+something that reads like an outcome. Nine were correctly hedged and survive untouched — the
+Natalie Cole crowd of 325 is attributed to the 1976 *Talisman* and not to the notice that
+announced the concert, which is exactly right. Two did not, and were trimmed. The same test
+was run against all 581 modern `wkuherald.com` citations using the article slugs: 22 matched,
+20 of them because a bill genuinely passed to fund an event still upcoming, or because the
+body already said in plain words that the report predates the event and does not say how it
+went. The 13 September sweep did thorough work here; this pass mostly confirmed it.
+
+## What was cut
+
+- **1971-72, Mountain and Black Oak Arkansas.** The entry said the Herald billed the concert
+  for 2 December *and* that 2 December was the day before the engagement. Both came from its
+  two sources and they disagree: the *Herald* of 19 November billed 2 December, and the 1972
+  *Talisman* (read at source, archive.org) dates the cancellation 2 December while calling
+  that the eve. The contemporaneous source beats the later one on the billed date, so the
+  entry now records the discrepancy and says plainly that whether the show was called off on
+  the day or on its eve is not established. Title no longer asserts the eve.
+- **2018-19, the Rally for Higher Education.** Said SGA *sent* 24 members. The cited Herald
+  piece, opened and read, is printed the morning of the rally and says WKU *is sending* 24,
+  led by EVP Garrett Edmonds. Trimmed to that, and the entry now says the report does not
+  record how it went. A previous pass had already noticed it was a notice and said so in the
+  last sentence while leaving the first in the past tense.
+- **2011-12, the DUC renovation forum.** Reported as hosted in one entry and, correctly, as
+  only announced in a second entry drawn from the same article. The over-claim is gone; the
+  forum keeps its hedged entry, so no sourced fact is lost.
+- **2003-04, plus/minus.** Title had the University Senate voting; the source has the vote
+  expected that afternoon. Retitled. The body was already hedged throughout.
+
+## The parser fault, which is the real finding
+
+The spot-check turned into something larger. The 1981-82 editorial entry cites *Herald* 57:57
+of 22 April 1982 and says it ran in the issue reporting Margaret Ragan's win.
+`herald-index-full.json` holds 32 lines for that issue and **none of them is an election
+report** — and it does hold a letter headed "Results Not Printed", which pointed the wrong
+way entirely. CLAUDE.md's rule saved the entry: open the landing page before concluding
+anything negative. The page carries a 33rd line the local file does not —
+**"Francke, Kevin.  Margaret Ragan Wins Presidency"** — with two spaces after the author's
+name.
+
+Those two spaces are the bug. The `--all` parser split each abstract on a full stop followed
+by two or more spaces *before* pulling the `<li>` headlines out. On this headline the cut
+landed inside the `<li>`, leaving an unclosed opening tag in one fragment and an orphan
+closing tag in the next; and because both fragments still held other complete pairs, the
+prose fallback never ran and **both halves were discarded silently.** Reproduced from a
+four-item list: four in, three out. The same cut also glued one headline's tail onto the next
+author's name, which is where the file's 331 lines like "Du Pruess - 37 Kaufman, Herbert."
+came from.
+
+Measured before fixing, politely paced: across 13 issue landing pages and 407 headlines, 2
+carried the double space (0.49%) and **both were missing locally** — the Ragan line and
+"Younkin, Linda. Instructor Leads Double Life" in the Herald of 22 February 1979.
+
+The parser now lifts the `<li>` items off the whole description and splits only the prose
+that remains. The first attempt at the fix was wrong in the other direction and was caught
+before it went anywhere: keeping only the list items threw away 2,900 lines of the
+archivist's own descriptions — "Scrapbook 6 1/2" x 8" in Composition notebook", "Single sheet
+newspaper printed in Louisville, Kentucky" — which is how a reader knows an item is a
+scrapbook and not a newspaper. The index was restored from backup and rebuilt again with
+both kept.
+
+After the rebuild, verified line by line against the backup: **5,690 lines gained, and the
+331 mangled lines retired and replaced by clean ones.** Item 9585 shows the shape of it: it
+had "Du Pruess - 37 Kaufman, Herbert." and was missing "Kaufman, Herbert. A Chance for
+Everybody But a Quitter - 38" altogether; it now carries both properly separated. 146,441
+lines against 141,079, and the *Herald* issues average 30.6 index lines where they averaged
+29.5. No item lost a real line. CLAUDE.md's figures and its account of the index were
+updated to match, and the new fault is written up there beside the truncation one.
+
+The script's own guard refuses to write a harvest more than a tenth smaller than what is on
+disk, which is why a line-count regression needed catching by hand. It counts items, not
+lines.
+
+## Counts after the merge
+
+`build.py` clean and reproducible, `check_data.py` exit 0, `check_contrib.py` exit 0.
+61 years, **1,967 events**, 2,651 recorded terms held by 1,809 people, 2,614 of them (98%)
+with an account of what the person did, 48 people under more than one spelling, 308
+documents, 1,111 legislation files, 1,303 citations naming a volume and number and each
+opening that issue, 1,306 quoted spans all under 15 words, 60 people have been president.
+Event count unchanged: this pass trimmed entries, it did not add or remove any.
+
+`check_duplicates.py` reports the same five pairs as the last four passes, and all five were
+read rather than carried forward. All are genuinely separate business: Bill 97-3-F funding
+the designated driver cards in November 1997 against the Herald reporting their distribution
+three months later; the student regent advisory committee bill introduced on 28 January 1992
+and failing after amendment on 6 February; the Civil Liberties Union planning court action in
+February 1972 and Associated Students formally endorsing the suit a month later; SGA voicing
+concern at plus/minus in September 2003 and passing legislation against it in October; and
+two items of 2026-27 senate business reported in one article.
+
+## For the next pass
+
+- **The local index is a better tool tonight than it was this morning, and still not a
+  negative.** It is an index, not full text. But the specific failure it had — a headline
+  present in the archive and absent from the file for a reason no researcher could have
+  guessed — is fixed, and the rule that caught it stands: open the landing page before
+  writing "no source found".
+- **The filtered `herald-index.json` still has the same splitter on its own path.** It greps
+  the sentence-split fragments, so a headline with the double space can be cut in half there
+  too. CLAUDE.md already says that file is not a research tool and keeps its caps by design,
+  so it was left alone deliberately rather than missed.
+- The standing brief is still wrong in the same two places, for an eleventh pass. #6, #7 and
+  #8 have been closed since 18 August; and the `gh pr list` 403 it reads as the platform gate
+  is GraphQL-only — `gh api repos/{owner}/{repo}/pulls` answers normally and was used to list
+  the queue tonight. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset again, so a run that
+  dropped into review-only mode on that 403 would post its verdict nowhere.
+- The two carried-over data notes still stand: the flagged spellings (the mental health
+  committee's four forms, and Amber Daniel / Amber Daniels — both held separate, with the
+  uncertainty stated in both notes, which is the right treatment until a source settles it;
+  the Lodmell sisters are the standing warning), and the bracketed Herald issue numbers,
+  which #687 reports as concluded.
+- The queue is empty. SGA next sits on **13 October**; fall break is 6 and 7 October.
