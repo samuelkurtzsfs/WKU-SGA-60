@@ -1,3 +1,149 @@
+# 7 October 2026 (editor, scheduled, later) — an empty queue, nine entries read at source, three synthetic images barred
+
+## What was open
+
+Nothing. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returns `[]`. The last merge
+was #696 at 06:36 UTC and `main` stands at 946e325.
+
+More usefully: no research branch is carrying unlanded work. Every `research-*` branch on origin
+was diffed against `main` over `data/` and all ten come back empty — the six decade branches and
+`research-photos`, `research-profiles`, `research-senate` and `research-backlog`. The large
+"commits ahead" counts those branches show are an artefact of squash merging, not unmerged
+research. Nothing is sitting unpublished tonight.
+
+#6, #7 and #8 — which the standing brief still describes as open and stale — have been closed
+since 18 August, for a sixteenth pass. And for a sixteenth pass: `gh pr list` answers 403 because
+it is a GraphQL call, while `gh api .../pulls` answers normally and `git push --dry-run` creates a
+branch. A run that reads that 403 as the platform gate drops into review-only mode, finds
+`SGA60_SITE` and `SGA60_RESEARCH_TOKEN` unset — as they are again tonight — and posts its verdict
+nowhere. **The brief is wrong in both places.** This is the second consecutive night it has cost a
+run its opening minutes.
+
+## What was verified, and how
+
+With no diff to review, the work went to what is already published, because `main` deploys on
+merge and an unverified claim on the live site is the risk the queue was protecting against.
+Nine entries were reopened at their cited sources across all three source systems. Every one held.
+
+The four newest entries in the archive, all 2026-09-29, against
+`wkuherald.com/97897`: Referendum 10.2.1 and the Judicial Council's power to amend the
+constitution, the convention of two cabinet members and six senators, the chief justice's
+description of the constitution as old; Organizational Aid closing at 52 submissions, attributed
+to Chief Financial Officer Will Derryberry; the Bluegrass Leadership Scholarship opening to
+Illinois and Indiana; twelve further dental hygiene vouchers at $300 with the previous
+twenty-four spent. And the six senators sworn in, each with the right constituency — Will Smith,
+Evan Sears and Max Fisher as freshmen, Joshua Gillespie graduate, Bryson Baker international,
+Samantha Brown for the Gatton Academy — which the article carries as a list the page's prose does
+not repeat, under "Chief Justice Sophia Stirling swore in". Verbatim on every point.
+
+The three entries that share `wkuherald.com/97612`, which the duplicate checker flags every run as
+one article written up three times. They are not: the article reports a single meeting of 22
+September across distinct business, and each entry takes a different part of it. Resolution 4.6 F,
+the mental health statement with Carter Smith's swearing-in and the homecoming nomination, and the
+fall election. All three hold. The 4.6 F entry's two claims that the 23 September article does not
+carry — Isaiah Wilson's co-authorship and the introduction a week earlier — are in its `src2`,
+`wkuherald.com/97229`, which names "Landon Terry, a sophomore senator, and Isaiah Wilson, a Senator
+At-Large" as the authors and says the resolution "was proposed this week and will be voted on next
+week". Properly cited, not over-claimed.
+
+Two older entries, chosen because recent passes had rewritten them. The 2019 Rally for Higher
+Education entry, trimmed by #691 to "SGA was to send twenty-four members": the source is headlined
+"set to attend", is future-tense throughout, and 12 February 2019 was itself the Tuesday of the
+rally, so the entry's closing line — that the report was printed on the morning of the rally and
+does not record how it went — is exactly right. The 24 members, the executive board and selected
+senators, Garrett Edmonds leading and Paul Brosky's hope, all confirmed. And the April 1994 storm
+entry, moved by #685 out of 1994-95 and into 1993-94: the landing page is titled "Vol. 69, No. 51
+[52]", matching the bracketed citation the #687 pass settled, dated 4-19-1994, and its index
+carries both "Wilson, Sherry. Storm; Campus Suffered Less Damage than City" and the SGA election
+at the polls that same day. The year move is right — an April event belongs to the academic year
+it happened in, whatever the election that month files forward to.
+
+## Settled facts, re-checked
+
+All hold on current `main`. Norfleet at 1981-82 and not filed forward. Zielke 1969-70, Lyne
+1970-71 alone, Payne 1981-82, Ragan 1982-83 and carrying the Board seat. Fiorella 1972-73 and
+Gregory McKinney 1974-75 as regents rather than presidents. Reed Morgan present at 1968-69 with
+the role `unresolved` — neither president nor regent — with Straeffer and Gerard occupying both
+offices that year, so no vacancy has reopened. Nick Todd and Katie Dawson both in 2004-05, Dawson
+marked acting. Will Harris in 2019-20 only. Carlene and Darlene Lodmell both present as separate
+people, unmerged. The Tom LaCivita portrait is still on disk and still attached, and he is
+correctly recorded as activities vice president in the organization layer rather than as a leader —
+which is why a name search of `leaders` alone does not find him, and is not a withdrawal.
+
+The two name pairs that look like duplicates are not. Christy Vogt has one leader record, at
+1976-77, with the plaque's "Mollozzi" flagged in the note; James Hargrove has one, at 1979-80,
+with "Hargroave" flagged and "Jamie Hargrove" mapped to him in `name-aliases.json`.
+
+## Traps swept across the whole archive, not just a diff
+
+- **Advance notices carrying results.** Source labels bearing notice language were crossed against
+  bodies claiming crowds, takings or verdicts. One hit, and it was "non-profit" matching the
+  pattern. The 2023-24 funding entries handle both this trap and the blank-Pass-line trap in their
+  own text, saying outright that the Herald's report predates every event and that the bills'
+  outcome lines are blank.
+- **Campus context.** 28 of 1,967 events carry `campus: true`, 1.4%, and every one is the second
+  category — dorm and building openings, four university presidencies changing hands, the Gulf War
+  vigil, September 11, the Katie Autry verdict, the 2021 tornado, the COVID shutdown, a tuition
+  increase, a lockdown, an ice storm. SGA is the actor in none of them. No SGA business is tagged.
+- **Quotes, citations, legislation.** `check_data.py` green: 1,303 citations each opening the issue
+  they name, 1,306 quoted spans none reaching fifteen words, 1,111 legislation files all real PDFs.
+- **Tool attribution.** Clean. The only matches in `data/`, `site/` and `scripts/` are the word
+  "philanthropic", the line in `check_contrib.py` that tests for attribution, and a Herald caption
+  quoted below. The last 25 commits on `main` are authored by `SGA 60` and `samuelkurtzsfs` only.
+- **Duplicate pairs.** Five reported, five judged, none merged. Three are a measure at two stages
+  (a bill introduced in January 1992 and failing after amendment in February; concern voiced over
+  plus/minus grading in September 2003 and legislation passing in October; the KCLU planning
+  action in February 1972 and Associated Students endorsing it in March). One is a scheme funded
+  in November 1997 and its cards distributed in February 1998. The fifth is the 97612 article
+  above.
+- **Committee chair recorded as an officer.** One real finding, below.
+
+## What changed
+
+Three images barred, in `data/photo-finds/_do-not-use.json`. `data/herald-photos.json` holds
+21,304 harvested Herald images, and three of them are not photographs: a DALL-E Big Red mascot
+concept, a DALL-E statue filed by the Herald as "AI Interpretation", and a DALL-E Cherry Hall with
+tour guides whose caption says so in as many words. Nothing marks them off from the real images in
+that file. None had been proposed yet, which is the reason to bar them now rather than after a
+sweep hunting Big Red or Cherry Hall lands one. Each is keyed to its url, and the bars were tested
+against `merge_photo_finds.barred()` — 47 urls enforced now, up from 44 — so they bite rather than
+staying advisory, which is the lesson the Steve Wilson entry paid for twice.
+
+A misidentified face is worse than no face. An invented one is worse again, because no part of it
+is evidence of anything.
+
+Nothing was cut from the site. No entry in the sample needed trimming.
+
+## Flagged, not fixed
+
+Eleven records put a committee chair in `organization.executive`, where the schema puts chairs
+under `senate.committees`. Ten are mis-filed but harmless: the title is accurate, the chairmanship
+is real, and in those years `senate.committees` is empty, so nothing is doubled. The 1990-91 case
+is defensible outright — a Judicial Council chairman is a branch officer, and that year files its
+senate committee chairs under `senate.officers` correctly.
+
+**2023-24 is a genuine duplicate.** Meghan Pierce renders three times on the year page: as "LOC
+Chair" under Executive, as "Senator" under the senate, and as chair of the Legislative Operations
+Committee under Committees. The first and third are the same role — LOC is that committee — and she
+is the only one of the year's seven committee chairs to hold an executive slot, which marks it as a
+merge artefact rather than a judgement. The senator record is properly separate.
+
+This was left in place deliberately. The `executive` record is the rich one: it carries her
+two-paragraph profile and six sources, where the committees record carries a chairmanship and a
+legislation note. Deleting it would lose more than the duplication costs, and the committees block
+has no field to move a profile into, so the correct fix is a schema decision about where a
+committee chair's profile lives — not something to take on inside a spot-check. The office label
+"LOC Chair", with its note reading "Named on the document as loc chair", should be expanded
+whenever that is settled.
+
+## Where the archive stands
+
+61 years, 1,967 events, 60 presidents. 2,651 recorded terms of office held by 1,809 people, 2,614
+of them (98%) carrying an account of what the person did. 48 people recorded under more than one
+spelling. 308 documents, 1,111 pieces of legislation, a 4,948-record search index.
+`build.py`, `check_data.py` and `check_contrib.py` all exit clean.
+
+
 # 7 October 2026 (editor, scheduled) — #696 verified at source, two corrections, merged
 
 ## What was open
