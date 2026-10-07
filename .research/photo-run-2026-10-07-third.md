@@ -8,7 +8,9 @@
 > side of the 2008-09 `wkuherald.com` window (see that section — the gap does not reach into
 > 2009-10), and the volume Young's quote comes from. A caption quote was trimmed to a paraphrase
 > to stay inside the 15-word limit. The run's own judgement calls — refusing four unconfirmable
-> identifications rather than force-fitting them — were right, and are the reason this merged.
+> identifications rather than force-fitting them — were right, and are why this report passed
+> review. The merge itself was refused by the run's own permission gate, not by the review; the
+> branch is cleared to merge as it stands.
 
 ## What was checked before doing anything
 

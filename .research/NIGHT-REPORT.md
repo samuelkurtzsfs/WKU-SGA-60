@@ -1,3 +1,89 @@
+# 7 October 2026 (editor, third pass) — #695 reviewed and cleared, merge refused by the permission gate
+
+## What was open
+
+One pull request, #695, "Research: photographs (rolling)", opened at 08:07 and carrying a single
+commit. `gh pr list` answers 403 again because it is a GraphQL call; `gh api .../pulls` answers
+normally, as the last two entries record. #6, #7 and #8 are still closed, for a thirteenth pass.
+The standing brief should be corrected on both points.
+
+## What was reviewed
+
+The diff is one file, `.research/photo-run-2026-10-07-third.md`, 107 lines, no data touched.
+`vercel.json` excludes `.research/` from the deploy and `build.py` reads only two JSON files out
+of it, so nothing in this diff reaches readers. It was still put through the full test, because a
+research log steers the runs that do reach readers.
+
+Every figure was recomputed from `data/` rather than taken on trust: 61 years, 1967 events, 60
+presidents; 73 leader records, every one carrying a `photos.json` entry; the four year-photo gaps
+exactly 1994-95, 1995-96, 2000-01 and 2008-09; the officer gap 217 slots and 174 people. That
+last number is the one four editor passes have now corrected, and it is right this time on the
+rule settled 18 September — 174 is people holding no portrait in any year, where a per-year count
+gives 176, the two being Carter Smith and Paul Gerard. All eight gap names, years and offices
+match the file exactly.
+
+All four Talisman volumes were reopened at the page text on archive.org. The 1979 index carries
+`Wilson, Steve Alan 296, 318, 320, 336` and the 1978 index `Bass, David Eugene 34`, both
+verbatim; the Spring Sing caption and the "A LIGHT MOMENT IN AN ASG MEETING" caption read word
+for word as the report gives them; the 1975 volume holds no Pulman under any spelling; Mark
+Chestnut is the badminton-singles intramural winner in a results table, not a photograph; and the
+1987 index holds only Beth Ann and Lori Ann Millay, with every "Austin" being Austin Peay.
+
+## What was cut and why
+
+**The 2008-09 closure stands; the reading either side of it did not.** The empty window is real —
+`x-wp-total: 0` for 1 August 2008 to 1 June 2009, re-run and confirmed — and that is what closes
+the lead. But 4 December 2009 is the *latest* of the seven posts in the widened window, not the
+earliest: the run read the last row of an ordered list as its first. The earliest two are dated
+4 September 2009 and four more fall in October, so the gap does not reach into 2009-10 and that
+part of the claim is withdrawn. One of the seven is an SGA story, three senators resigning on
+22 October 2009. The record loses nothing by it — 2009-10 is already `researched` with 28 events
+and carries both resignation stories from the printed *Herald* — but a run reading the
+uncorrected note would have skipped autumn 2009 on the strength of it.
+
+Three smaller corrections: David Young's quote on the twenty-four at-large races belongs to the
+1979 Talisman's own ASG feature, not to "the same ASG feature" as Bass's caption, which is the
+1978 volume — Moore was president in 1977-78 and Thornton in 1978-79, and conflating them would
+have sent a later run to the wrong book. Six Wilsons in that index carry a first initial S, not
+the four the note claimed while listing five. And a 27-word caption quote was trimmed to a
+paraphrase keeping every name, to stay inside the 15-word rule, which `check_data.py` does not
+reach because it reads `data/` only.
+
+Nothing was deleted. Every correction was a rescue.
+
+## What the run got right
+
+Four separate leads were refused rather than force-fitted: the Bass frame with three figures for
+four named people, the quartet photograph with no left-to-right key, the bare "S. Wilson" against
+six candidates, and the two unindexed names. That is the rule working exactly as written, and it
+is why the report passed review despite the date errors. A run that will not name a face it
+cannot confirm is worth more than a run that finds one.
+
+## What is still open
+
+**#695 is reviewed, corrected and cleared to merge, and was not merged.** The merge call was
+refused by this run's own permission gate — "Merge Without Review" — which is a harness
+restriction on the editor session, not the platform GitHub gate the standing brief describes and
+not anything an owner needs to repair on GitHub. Pushing to the branch worked normally; only the
+merge is blocked. The branch is `research-photos` at f1b02f1 and needs one click. Nothing about
+the merge decision is outstanding: `build.py`, `check_data.py` and `check_contrib.py` are clean,
+`check_duplicates.py` reports five pairs that are all pre-existing on main and all genuinely
+separate business, and this PR adds no events.
+
+## For the next pass
+
+- **The date-reading slip is the lesson, not the two dates.** Both errors came from reading an
+  ordered list from the wrong end, with a sound source underneath. When a query returns a list, a
+  report should state the sort order and quote the first and last rows rather than one date. This
+  is cheap to do and would have caught both.
+- The standing brief is wrong in the same two places for a thirteenth pass: #6, #7 and #8 have
+  been closed since 18 August, and the `gh pr list` 403 is GraphQL-only. `SGA60_SITE` and
+  `SGA60_RESEARCH_TOKEN` are unset again tonight, so a run that dropped into review-only mode on
+  that 403 would post its verdict nowhere.
+- The eight-name overlap between the officer gap and archive.org's Talisman holdings is genuinely
+  exhausted now, checked independently. The remaining officer-portrait gap needs
+  `digitalcommons.wku.edu` or `web.archive.org` to open, both of which were closed again today.
+
 # 7 October 2026 (editor, later pass) — #692 merged, and a number that had been explained instead of counted
 
 ## What was open
