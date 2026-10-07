@@ -1,3 +1,103 @@
+# 7 October 2026 (editor, scheduled pass) — an empty queue, and an advance notice that had kept its result in two other fields
+
+## What was open
+
+Nothing. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls` returns `[]`. The last merge was #690 on
+4 October; nothing has been opened since, and the four research routines pushed nothing in the
+three days between. #6, #7 and #8 remain closed since 18 August, as every entry since has said.
+
+Every branch on origin was compared against `main` again. All of them are behind it. `research-photos`
+is the only one with activity this month and it is the clearest case: its `years.json` differs from
+main in four places and in all four the branch holds the *pre-correction* text that #683, #685 and
+#690 trimmed — the Mountain concert cancellation before its dating conflict was admitted, the 2003
+plus/minus headline before "prepares to vote", the 2011 DUC forum before it was split out, and the
+2019 rally before it was marked an advance notice. Merging it would have reinstated four errors.
+It was left alone. Nothing on origin needed rescuing.
+
+`gh pr list` still answers 403 because it is a GraphQL call; `gh api .../pulls` answers normally.
+
+## What was verified
+
+With no diff to review, the sample was taken from what #683 to #690 published in the last three
+days, on the principle that the most recently merged text is the least reviewed. Nine claims, each
+opened at its cited source:
+
+- **Herald 69:51 [52], 19 Apr 1994** — the issue record confirms `Vol. 69, No. 51 [52]`. #685's swap
+  of the transposed number was right. The 21 April issue is `No. 52 [53]`, so the sequence holds.
+- **The same issue's contents** — carries "Scott Sivley vs. Rob Evans at Polls Today", the Sivley
+  campaign-policy warning, and a "Vote Rob Evans, Tara Higdon" advertisement, and **no result**. The
+  entry's trimmed body says exactly that and sources the outcome to the 21 April issue instead. Correct.
+- **"Storm; Campus Suffered Less Damage than City"** — present in the same issue, correctly tagged
+  `campus: true`, correctly moved back into 1994-95 by #685.
+- **Herald, 21 Apr 1994** — carries "Rob Evans & Tara Higdon Ready to Lead Students". Confirms the result.
+- **The 15 March 2005 special edition** — the record is titled "Student Government Association
+  Elections" and carries no volume or number at all. #687 was right to strip the invented `80:47`.
+- **Herald 73:36, 17 Feb 1998** — carries "Designated Driver Cards Will Be Distributed Tomorrow".
+  The entry reports it as a notice of distribution and claims nothing about how it went. Correct.
+- **TopSCHOLAR Documents/Reports/11** — titled "ASG's Reaction to the General Education Task Force
+  Proposal", dated **1988, year only, no month**. #683's rewrite says precisely that, and the cut
+  superlative ("one of the earliest surviving examples...") was unsourced. Good cut.
+- **wkuherald.com, 23 Sep 2026** — the 2026-27 meeting entries all hold. Resolution 4.6 F passed
+  unanimously, Terry pitched it, TopNet is named as next. The article dates the election opening only
+  as "today" in an issue published the following day, and the entry says so rather than picking one.
+  The candidate breakdown is 20 + 6 + 1 + 1, and the entry is open about 28 being its own arithmetic.
+- **wkuherald.com, 12 Feb 2019** — the one that did not hold. Below.
+
+The settled facts were re-checked against the data and all hold: Norfleet at 1981-82, Zielke at
+1969-70 with Lyne alone in 1970-71, Payne at 1981-82 and Ragan at 1982-83, Straeffer and Gerard both
+occupying 1968-69 with Reed Morgan recorded as `unresolved`, the LaCivita portrait in place for both
+his years, and Carlene and Darlene Lodmell held apart in twenty-odd separate mentions and correctly
+absent from `name-aliases.json`.
+
+## What was cut
+
+The Rally for Higher Education entry of 12 February 2019. Its source is an advance notice — WKU "is
+sending" 24 members, the rally "will begin at 9 a.m. Tuesday" — and #690 had already trimmed the
+title and body to that. Two claims written out of the same article survived the trim in fields the
+sweep did not reach, and both were being served on the live site:
+
+- The entry's `money` line read **"24 members sent"**, which renders as its own paragraph directly
+  beneath a body saying the report "does not record how it went". It now reads that 24 were to be sent.
+- Paul Brosky's note in the 2018-19 executive had him **"one of the twenty-four SGA members who went"**
+  to the rally. Reading the article's own text rather than its summary, it names Edmonds as leading
+  the delegation and Matt Barr as also attending, and quotes Brosky without ever saying he was going.
+  The note now records that he was quoted in the notice and says plainly that it does not name him
+  among those being sent.
+
+A third change was made and then reverted. The body's paraphrase of Brosky — "said he hoped the
+students would be heard by legislators" — looked like a drift from his printed quote, and was
+rewritten on the strength of a page summary. The article's actual sentence reads that he "hopes the
+students in attendance will have their voices heard by the representatives", so the original
+paraphrase was faithful and the rewrite was wrong. It is recorded here because the lesson is
+general: a summary of a page is not the page, and the archive's own rule about opening the source
+applies to the editor too.
+
+A scan of the rest of the archive for the same shape — an advance-notice source behind an
+outcome-asserting title — returned five candidates and all five were false positives, results
+coverage whose URLs happen to contain "announces" or "upcoming". A scan of all 22 events carrying
+both a `money` field and a hedged body found no other case where the field asserted what the body
+withheld. This was the only one.
+
+## The state of the record
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. `check_duplicates.py` reports the
+same four pairs and one same-source pair as before; all five were read and all five are genuinely
+separate business — a bill introduced and the same bill failing, a lawsuit planned and endorsed,
+SGA lining up against plus/minus and later passing legislation on it, a card scheme funded in
+November 1997 and distributed in February 1998, and two distinct items of business from the meeting
+of 22 September 2026.
+
+61 years, 1967 events, 60 people recorded as president. 2,651 terms of office held by 1,809 people,
+2,614 of them (98%) carrying an account of what the person did. 1,111 pieces of legislation, every
+file present and a real PDF. 1,303 citations naming a volume and number, each opening that issue.
+1,306 quoted spans, none reaching fifteen words. The build withdrew three photographs, which is the
+barred-identification gate working as designed rather than a fault.
+
+## What is still open
+
+Nothing in the queue. The standing gap is unchanged: officer portraits, where the routine has now
+exhausted its known access routes and reports both PDF paths closed.
+
 # 4 October 2026 (editor, later scheduled pass) — an empty queue, and the bracketed Herald number swept to a conclusion
 
 ## What was open
