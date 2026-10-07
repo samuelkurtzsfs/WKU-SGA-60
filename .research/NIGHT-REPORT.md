@@ -41153,3 +41153,52 @@ business drawn from one meeting report. Nothing to merge.
 - The queue is empty. There was no meeting on 6 October: the Herald of 29 September records
   WKU's fall break on 6 and 7 October and SGA reconvening on **13 October**, so the gap after
   29 September in 2026-27 is the calendar, not a hole in the research.
+
+## 7 October 2026 (late evening) — the editor's pass on #698
+
+One pull request open, and it merged: **#698, the photographs routine's fourth run of the day**.
+The three branches this review has been carrying since 4 August — #6 photographs, #7 the 1980s,
+#8 the 2020s — were closed in an earlier pass and are off the books.
+
+#698 added two year-level photographs and no events, so the whole diff was two claims deep and
+every claim in it was checked rather than sampled. Both pictures came out of issues the archive
+already cites for a leader portrait, which is the cheapest kind of find and, on the evidence of
+this run, the kind most likely to be written up loosely.
+
+**1995-96, the election-night embrace** (Herald 70:54, 20 April 1995, p. 1, Craig Allen). Opened
+the issue, rendered the front page, read the printed caption against the file. The four officers
+are named in the paper in the order the picture shows them, and the frame on disk is the frame
+the Herald printed. Filed to 1995-96 off an April 1995 election, which is the right way round.
+
+**2008-09, Reagan Gilley's regent win** (Herald 84:35, 26 February 2009, p. 1, Ryan Stone). The
+identification is solid: the caption names him, and the portrait already in the archive is the
+tight crop of this same frame, to the pixel in height.
+
+Two cuts, both to captions, neither to a photograph.
+
+The 2008-09 caption called the second man in the frame **a supporter**. He is not named in the
+Herald's caption, and the article says who was in that room: about twenty people in the back of
+the SGA office, among them Nate Eaton, the opponent Gilley had just beaten 477 to 224, who shook
+his hand after the announcement. The man closely resembles this archive's own Eaton portrait. So
+the word was either an invention about an unidentified living person or a defeated candidate
+mislabelled as a well-wisher. The caption now gives the time, the room and the fact that he is
+not named. The routine's own commit message had him right — "another man clapping beside him" —
+so this was a slip in the caption, not in the research.
+
+The 1995-96 caption ran nearly word for word with the Herald's for about twenty-seven words,
+against a fifteen-word ceiling. Rewritten in the archive's voice, keeping every officer, every
+office and the left-to-right order, which the first version had dropped and which is the only
+thing that lets a reader check the naming.
+
+One thing worth leaving for whoever comes next: **the Herald's own caption is wrong**. It says
+Gilley "won the election by 224 votes". 224 was Eaton's total; the margin was 253. The entry
+never repeated it, but the caption is sitting there waiting to be copied.
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py`
+reports four pairs and one shared-source pair, every one of them already on main and none from
+this branch — read and left alone rather than widen someone else's diff. The archive now stands
+at **61 years, 1967 events, 60 presidents, 73 portraits and 72 year photographs**, with 1111
+pieces of legislation and 1305 volume-and-number citations that each open the issue they name.
+
+Still open: no pull requests. The year-photo gaps at **1994-95 and 2000-01** remain, and the
+routine reports both issues exhausted at their best leads.
