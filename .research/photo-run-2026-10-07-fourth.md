@@ -6,8 +6,14 @@ Merged `origin/main` into `research-photos` (already fast-forward; no new commit
 the third run today). `build.py` and `check_data.py` both run clean: 61 years, 1,967 events, 60
 presidents. All 73 `leaders` records (every president, every student regent) carry a matching
 `data/photos.json` entry — Nick Todd, Katie Dawson, Jeanne Johnson and Reagan Gilley included.
-The officer-portrait gap is unchanged at 215 slots / 174 distinct names / 41 years (recomputed
-directly from `years.json` against `photos.json`, not carried over from a note). The four
+The officer-portrait gap is unchanged, on both of the bases the counting rule asks for: **217
+slots**, counted per person per year, and **174 people**, counted across all years, over 42 years
+of the file. (Editor's correction, 7 October: the figures filed with this run read 215 slots / 174
+distinct names / 41 years. Recomputing cabinet and Senate leadership in `data/years.json` against
+`data/photos.json` gives 217 and 174, the same pair the 4 October note and the first run of
+7 October recorded, and 268 slots with committee chairs folded in. 215 is not a reading the data
+yields; 174 is the all-years people count, not the number of distinct names in the slots, which is
+176.) The four
 year-photo gaps are unchanged: 1994-95, 1995-96, 2000-01, 2008-09.
 
 ## Access routes retested fresh
@@ -46,9 +52,9 @@ Queried `wkuherald.com`'s WordPress REST API by name, then opened every post it 
 - **Devan Richardson** — zero results.
 - **Abhishek Bose** — one result, about an Indian student group's cultural celebration, no SGA
   content and no photograph of him.
-- **Jillian Kenney** — two results; one is Bowling Green's Pride festival, the other is a Bowling
-  Green City Commission fairness-ordinance story that has nothing to do with SGA's committee of
-  the same name — a false match from the search term, not a lead.
+- **Jillian Kenney** — two results, neither about SGA and neither carrying a photograph of her.
+  Both are city-government stories the search matched on a committee name SGA happens to share;
+  false matches from the search term, not leads.
 - **Madison Keller, Smita Peter, Morgan Wysong, Connor Ferguson** — each returned genuine
   SGA-election or SGA-meeting stories, but every one checked carries either no image at all, or a
   featured photograph captioned for someone else entirely (Dahmer/Molyneaux/Lowry/Hounshell in
