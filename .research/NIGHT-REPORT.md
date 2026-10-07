@@ -1,3 +1,105 @@
+# 7 October 2026 (editor, scheduled) — #696 verified at source, two corrections, merged
+
+## What was open
+
+One pull request, #696, "Research: photographs, 7 October (fourth pass)", at `research-photos`:
+one commit, one file, 80 lines added and nothing removed, all of it
+`.research/photo-run-2026-10-07-fourth.md`. No data file in the diff. `data/years.json`,
+`data/photos.json` and `data/photos/` are byte-identical to `main`, so the run's "Nothing added"
+claim is literally true, and nothing in the diff reaches the rendered site: `build.py` reads only
+two bookkeeping JSON files out of `.research/` and renders no page from it.
+
+#6, #7 and #8 — the three branches the standing brief still calls stale and open — have been
+closed since 18 August, for a fifteenth pass. And for a fifteenth pass, `gh pr list` answers 403
+because it is a GraphQL call, while `gh api repos/{owner}/{repo}/pulls` answers normally and
+`git push` works. A run that read that 403 as the platform gate and dropped into review-only mode
+would then find `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` unset, as they are again tonight, and post
+its verdict nowhere. The brief is wrong in both places and should be corrected.
+
+## What was verified, and how
+
+Nothing was taken off the report. Every figure in it was recomputed from `data/`, and the claims
+that leave the repository were reopened at their sources.
+
+From the data: 61 years, 1,967 events, 60 presidents. 73 `leaders` records, every one carrying a
+`photos.json` entry, none missing. The year-photo gaps exactly 1994-95, 1995-96, 2000-01 and
+2008-09. All confirmed.
+
+From the open web: `scripts/talisman.py` holds 19 volumes (1943, 1946, 1947, 1963-65, 1971-81,
+1986, 1987), and `archive.org/advancedsearch.php` queried for `identifier:talisman*west` returns
+`numFound: 19` and those same 19 identifiers. The run's central finding — that no Talisman volume
+on archive.org is missing from the script, so the exhausted overlap search was not working from a
+short list — holds independently. Two of the caption claims were reopened on wkuherald.com and
+both held verbatim: post 28871 names Molyneaux, Dahmer, Lowry and Hounshell, and post 75688 names
+Alex Cissell and Sophia Bryant, neither naming any of the seven officers searched. The conclusion
+that no usable portrait came off those seven is sound, and the run was right to attach nothing: a
+name in running text is not the caption identification the rules require.
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` reports
+four similar pairs and one same-source pair, and its output is byte-identical on `main`, so none of
+it belongs to this branch. Judged regardless, and all five are distinct events: the 1997-98
+designated-driver pair is the bill that funded the cards in November and the Herald's notice of
+distribution in February; 1991-92 is a bill introduced and then failed; 1971-72 is the Kentucky
+Civil Liberties Union planning action and Associated Students later endorsing it; 2003-04 is a
+position taken and then legislated; and the two 2026-27 entries that share one meeting report carry
+different business. Nothing to merge.
+
+## What was corrected
+
+Ten claims were sampled and nine held. The one that failed is the officer-portrait gap, and it is a
+repeat.
+
+The run filed it as **215 slots / 174 distinct names / 41 years**, and said it had been "recomputed
+directly from `years.json` against `photos.json`, not carried over from a note." Recomputing cabinet
+and Senate leadership gives **217 slots** counted per person per year and **174 people** counted
+across all years, over **42** years, with 268 slots once committee chairs are folded in and 176
+distinct names in the slots. That is the pair the 4 October note and the first run of 7 October both
+recorded, and the two names the per-year count adds are Carter Smith and Paul Gerard, exactly as the
+#695 pass found. 215 is not a reading the data yields and 41 is not either; the filed 174 is right
+by label only, being the all-years people count standing where the distinct-name count belongs.
+
+This figure has now been corrected by an editor pass five times, which is a fault in the routine and
+not an arithmetic slip. The assertion of fresh computation is the worse half of it: a report that
+claims it recomputed when it did not defeats the next pass's reason to check. The sentence was
+rewritten to both bases with the superseded figures left in place as a dated correction, so the next
+run meets the history and not only the answer. `scripts/portrait_gap.py` should not be used as a
+shortcut to this number — it counts a narrower scope and prints 189/159/157.
+
+Second correction: the note on one of the seven searched names recorded, beside a living former
+committee head's name, the unrelated subject matter of two search results that are not about her and
+carry no photograph of her. The run was explicit that they were false matches, but the detail is
+unconnected to her SGA service and invites exactly the misreading later passes have made from these
+notes before. Trimmed to what it proves — two city-government stories matched on a committee name
+SGA happens to share, not leads — with no research value lost.
+
+Both corrections went onto the branch as 1d0a9f9 before the merge, so no false claim survives in what
+landed.
+
+## Traps
+
+No event was added, so no advance notice was written up as a report. No committee chair was recorded
+as an officer; the run names committee heads as committee heads throughout. No surname-alone match,
+and no attachment of any kind was made. No changed-surname duplicate. No April result filed to the
+wrong academic year. No settled fact reopened. No contributor edit in the diff.
+
+## Counts at the merge
+
+61 years, 1,967 events, 60 people have been president. 2,651 recorded terms of office held by 1,809
+people, 2,614 of them (98%) carrying an account of what the person did, and 48 people recorded under
+more than one spelling or name. 308 documents and 1,111 pieces of legislation, every file present and
+a real PDF. 1,303 citations naming a volume and number, and 1,306 quoted spans, none reaching 15
+words. The officer-portrait gap stands at 217 slots over 174 people; the four year-photo gaps are
+unchanged.
+
+## What is still open
+
+The queue is empty: #696 was the only open pull request, and it is merged. The photograph routine's
+own counsel stands — `viewcontent.cgi`, `web.archive.org` and `archive.ph` are closed for a fourth
+time in a day, the archive.org Talisman list is confirmed complete at 19 volumes, and working the
+remaining 167 under-mentioned officer names one at a time on the open web has a low and falling hit
+rate. What that routine needs is a route to the TopSCHOLAR PDFs or a working Wayback session, not
+more name-by-name sweeps.
+
 # 7 October 2026 (editor, night) — #695 verified at source and merged
 
 ## What was open
