@@ -1,5 +1,15 @@
 # 7 October 2026, third run (photograph routine, scheduled)
 
+> **Editor's note, 7 October 2026.** Reviewed before merge. Every figure in this report was
+> recomputed from the data and every Talisman claim was reopened at the page text on
+> archive.org: the officer gap (217 slots / 174 people), the four year-photo gaps, all eight
+> names and offices, the Wilson and Young index entries, the Bass caption, and the four negative
+> findings all hold. Two readings did not, and are corrected in place below: the dates either
+> side of the 2008-09 `wkuherald.com` window (see that section — the gap does not reach into
+> 2009-10), and the volume Young's quote comes from. A caption quote was trimmed to a paraphrase
+> to stay inside the 15-word limit. The run's own judgement calls — refusing four unconfirmable
+> identifications rather than force-fitting them — were right, and are the reason this merged.
+
 ## What was checked before doing anything
 
 Merged `origin/main` into `research-photos` (fast-forward, four commits: the 7 October
@@ -46,16 +56,20 @@ resolution, not just skimmed from OCR context. None produced an addable portrait
   the volume at all. Consistent with the thin paper trail already noted in his `years.json`
   entry (a single mid-year committee appointment, "no further record" of his time in the seat).
 - **Bass** — found. The 1978 Talisman's ASG feature ("Little action after much controversy," pp.
-  34-35) carries a candid photograph captioned "A LIGHT MOMENT IN AN ASG MEETING brings laughter
-  from president Bob Moore and smiles from activities vice president David Bass, secretary
-  Sharon May and vice president Cathy Murphy." The photograph itself shows one standing man
-  (laughing) and two partly-visible seated women — three figures for four named people. Bob
+  34-35) carries a candid photograph whose caption ("A LIGHT MOMENT IN AN ASG MEETING") reports
+  laughter from president Bob Moore and smiles from three officers it names in turn: activities
+  vice president David Bass, secretary Sharon May and vice president Cathy Murphy — read back
+  against the page text on 7 October, word for word. The photograph itself shows one standing
+  man (laughing) and two partly-visible seated women — three figures for four named people. Bob
   Moore, also male, is the one explicitly described as laughing and is the more likely match for
   the standing figure, which leaves no figure in the frame confirmably identifiable as Bass. Not
   used.
-- **Young** — appears in the body text of the same ASG feature's continuation (p. 289, quoted
-  explaining the new constitution's 24 at-large Congress seats) but the spread carries no
-  photograph of him, only of president Steve Thornton and representative Victor Jackson.
+- **Young** — appears in the body text of the **1979** Talisman's ASG feature, not the 1978 one
+  Bass's caption comes from; the two volumes each carry a feature, and Young is 1978-79. Its
+  continuation (p. 289, where the index places him) quotes him as administrative vice president
+  explaining that the new constitution set 24 separate races for the 24 representative-at-large
+  Congress seats, to force competition between candidates. The spread carries no photograph of
+  him, only of president Steve Thornton and representative Victor Jackson.
 - **Wicks** — indexed with no page number at all next to her name, which in this volume's index
   means no photograph on file for her.
 - **Wilson** — the fullest lead of the eight, and still not usable. The back index lists
@@ -66,9 +80,10 @@ resolution, not just skimmed from OCR context. None produced an addable portrait
   off at the column edge, crediting only the photographer) gives no left-to-right order, so which
   of the four figures is Wilson cannot be read from the page. P. 296 carries a second, weaker
   lead: "S. Wilson" in the back row of a Pre-Law Club photograph, but the volume's own index
-  lists four different Wilsons with a first initial S. (Steve Alan, Stephen Alan, Scott Samuel,
-  Susan Dell, Stuart Kevin), so the initial alone does not identify him. Pages 318 and 336 are a
-  Greek Week section divider and an unopened lead respectively; neither carries a name. Not used.
+  lists six different Wilsons whose first name begins with S (Scott Samuel, Stephen Alan, Steve
+  Alan, Stevie Joe, Stuart Kevin, Susan Dell), so the initial alone does not identify him. Pages
+  318 and 336 are a Greek Week section divider and an unopened lead respectively; neither
+  carries a name. Not used.
 - **Chesnut** — "Mark Chestnut" appears only as a badminton-singles intramural winner in a
   results table (p. 234 of the 1981 Talisman), not in a photograph.
 - **Millay, Austin** — neither appears in the 1987 Talisman's index at all. The only Millays
@@ -78,12 +93,26 @@ resolution, not just skimmed from OCR context. None produced an addable portrait
 ## 2008-09's year-photo gap has a confirmed cause now, not just a closed search
 
 Queried `wkuherald.com`'s WordPress REST API for any post at all — no search term, just a date
-window — between 1 August 2008 and 1 June 2009: `x-wp-total: 0`. Widening to January 2007
-through January 2010 returns exactly seven posts, the earliest dated 4 December 2009. The
-archive's indexed run has a real gap covering essentially all of 2008-09 and the first two
-months of 2009-10, the same character of gap the 7 October morning report established for
-2000-01 (an empty WordPress install, not an unsearched one). This closes 2008-09 as a
-`wkuherald.com` lead for any future run, the same way 2000-01 was closed this morning.
+window — between 1 August 2008 and 1 June 2009: `x-wp-total: 0`. Re-run by the editor on
+7 October against the same window: `x-wp-total: 0` again. That part is solid, and it is what
+closes 2008-09 as a `wkuherald.com` lead for any future run, the same way 2000-01 was closed
+this morning — a real coverage gap, an empty WordPress install rather than an unsearched one.
+
+**The reading either side of that window was wrong and is corrected here.** Widening to
+1 January 2007 – 1 January 2010 does return exactly seven posts, but 4 December 2009 is the
+**latest** of the seven, not the earliest: the run read the last row of the list as its first.
+The earliest two are dated 4 September 2009, and four more fall in October 2009. So the gap
+does **not** extend into 2009-10, and the claim that it covered that year's first two months
+is withdrawn. September and October 2009 are both present on `wkuherald.com`, and one of the
+seven posts is an SGA story — "Three SGA senators resign", 22 October 2009
+(wkuherald.com/55154/news/three-sga-senators-resign/). A future run must not treat autumn 2009
+as covered by the 2008-09 closure.
+
+Nothing is missing from the archive on account of this: 2009-10 is already `researched` with 28
+events, and both resignation stories are in it (20 October 2009, three senators over the
+publications committee appointment; 27 October 2009, Skylar Jordan a week later), carried from
+the printed *Herald* rather than from this post. The correction is to the lead-closure note, not
+to the record.
 
 ## Nothing added
 
@@ -98,6 +127,8 @@ events, 60 presidents, clean, both before and after this run.
   new name inside 1971-72 through 1980-81 or 1986-87/1987-88.
 - `viewcontent.cgi` and `web.archive.org` are closed for a third time today, re-tested fresh each
   time rather than assumed. Keep retrying cold.
+- Autumn 2009 is **not** closed, whatever the heading above may suggest at a glance: 4 September
+  and October 2009 both carry `wkuherald.com` posts. Only 2008-09 itself is empty.
 - 2008-09 joins 2000-01 as a closed `wkuherald.com` lead. 1994-95 and 1995-96 were already known
   to predate the archive entirely. All four year-photo gaps now wait on `digitalcommons.wku.edu`
   or `web.archive.org` opening, not on a better search anywhere else.
