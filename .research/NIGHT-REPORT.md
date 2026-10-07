@@ -40607,3 +40607,111 @@ two items of 2026-27 senate business reported in one article.
   the Lodmell sisters are the standing warning), and the bracketed Herald issue numbers,
   which #687 reports as concluded.
 - The queue is empty. SGA next sits on **13 October**; fall break is 6 and 7 October.
+
+# 7 October 2026 — an empty queue, the week's newest entries read at source, and a superlative cut
+
+## What was open
+
+Nothing. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returns `[]`. The last
+merge was #693 at 03:33 this morning, carrying the night report of the #692 photograph review,
+and no research branch holds data that main lacks: every `research-*` tip is either an
+ancestor of main or a squash-merged snapshot whose content is already in. Checked branch by
+branch rather than assumed, by comparing `data/` directly against main on each.
+
+## What the spot check went to
+
+With nothing open, the check went to the newest material on the live site: the 2026-27 entries
+for 22, 23 and 29 September, which are the three most recent additions to the current year and
+came in through passes that merged their own work. All three Herald articles were read in full
+from wkuherald.com and sixteen claims were checked against them.
+
+All sixteen held. Resolution 4.6 F passing unanimously, its content, Landon Terry pitching it
+and the turn next to TopNet; the mental health and well-being statement reaching all syllabi
+from the spring; Carter Smith sworn in and appointed the second student member of the Faculty
+Senate Undergraduate Curriculum Committee after that committee doubled its student
+representation; Amelia Tucker chosen unanimously as homecoming nominee; the Bluegrass
+Leadership Scholarship announced and then widened to Illinois and Indiana; voting open at
+8 a.m. and closing 4 p.m. on 25 September; the candidate arithmetic (20 freshmen, six Gatton,
+one graduate, one international — 28); Barker on fall engagement; Referendum 10.2.1 and the
+convention of two cabinet members and six senators; twelve dental hygiene vouchers at $300
+against twenty-four used; Organizational Aid closing on 52 submissions. The six senators
+sworn in on 29 September — Will Smith, Evan Sears, Max Fisher, Joshua Gillespie, Bryson Baker
+and Samantha Brown — are printed in a list element rather than a paragraph, which is why a
+paragraph-only read of that page appears to omit them; all six names and constituencies match.
+
+Two things worth recording about how those entries are built. The 23 September entry on the
+election opening does not take the paper's forward-looking "today" as a fact: it states that
+the issue of the 23rd carried the meeting of the 22nd, that which day voting opened is
+therefore not fixed, and confirms the close against the report of 29 September. That is the
+advance-notice rule applied properly rather than worked around. And the Resolution 4.6 F entry
+names Isaiah Wilson as co-author and says the resolution was introduced the previous week —
+neither of which is in the article it leads with. Both are in its `src2`, the Herald of
+15 September, which says outright that Terry and Wilson authored it and that it was proposed
+that week for a vote the next. Wilson is independently confirmed as a senator-at-large by WKU
+News of 15 April 2026. The entry is correctly cited at both sources; a reader checking only
+the first would wrongly think it unsupported.
+
+## What was cut
+
+One entry, in 2025-26. "Turnout jumps 66% in a contested race" ended with a sentence calling
+the figure "the clearest evidence in the whole record that WKU turnout tracks whether there is
+an actual contest." Its source, WKU News of 15 April 2026, says nothing of the kind, and the
+claim is a superlative about the whole archive that no source supports — and that the record
+does not obviously bear, 2,014 having voted in 2003. The sentence is gone.
+
+Everything sourced in it was kept and the entry is stronger for the trim. WKU News gives 1,601
+voting in a general election held 13 to 15 April, which is now stated; the 966 of the year
+before is the archive's own sourced figure from the 2024-25 entry on Robinson's election, and
+635 is the difference, so the 66% in the title stands. The contest the title turns on was the
+one thing the cited source did not establish, so the Herald's report of Lucas defeating Jaden
+Marshall's ticket was added as `src2`. One cut, one citation added, no fact lost.
+
+## Counts after the change
+
+`build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. 61 years, **1,967
+events**, 2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an account of
+what the person did, 48 people under more than one spelling, 308 documents, 1,111 legislation
+files, 1,303 citations naming a volume and number and each opening that issue, 1,306 quoted
+spans all under 15 words, 60 people have been president. The event count is unchanged: this
+pass trimmed a sentence, it added and removed nothing.
+
+`check_duplicates.py` reports the same five pairs as the last five passes. All five were read
+in full again rather than carried forward, and all five remain genuinely separate business:
+Bill 97-3-F funding the designated driver cards in November 1997 against the Herald reporting
+their distribution three months later — and that second entry states plainly that the archive
+holds the issue only as a contents listing, which is the advance-notice rule honoured; the
+student regent advisory committee bill introduced on 28 January 1992 and failing after
+amendment on 6 February; the Civil Liberties Union planning court action in February 1972 and
+Associated Students endorsing the suit a month later; concern at plus/minus grading in
+September 2003 and legislation against it in October; and three items of 2026-27 senate
+business drawn from one meeting report. Nothing to merge.
+
+## For the next pass
+
+- **The eight election events filed forward are now seven, plus one that can never move.**
+  The measurement stands — 51 election events sit in the year the vote happened, 8 file
+  forward — and so does the reading that settles it: the rule in trap 5 is about people, whose
+  leader object files forward, not about the event recording the vote. Of the eight listed on
+  15 September, seven have their target year present in the file and could be moved. Haynes
+  cannot: he was elected in May 1966, which falls in 1965-66, and the archive begins at
+  1966-67. So full consistency on this point is unreachable without creating a year, which is
+  an argument for leaving all eight where they are rather than for moving seven. Either way it
+  is a correction to be recorded as one, and not a job for an unattended run on a repository
+  that deploys on merge.
+- **The standing brief is wrong in the same two places, for a twelfth pass.** #6, #7 and #8
+  have been closed since 18 August. The `gh pr list` 403 it reads as the platform gate is
+  GraphQL-only: `gh api repos/{owner}/{repo}/pulls` answers normally, and REST reports admin
+  and push rights on this repository. A run that took that 403 at face value and dropped into
+  review-only mode would then find `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` unset, as they are
+  again tonight, and post its verdict nowhere.
+- The carried-over data notes stand: the mental health committee's four written forms (its
+  full name is sourced at the swearing-in of 25 August 2026, so the long form in the
+  22 September entry is right and the Herald's "SGA Mental Health Committee" is the paper's
+  shorthand), and Amber Daniel / Amber Daniels, both held separate with the uncertainty
+  stated. The chief justice's surname is the live instance of the same thing: the Herald gives
+  Stirling on 15 September and Sterling on 23 September, eight days apart, and the archive
+  already carries a note recording both against the minutes. Flagged, not fixed, which is the
+  rule.
+- The queue is empty. There was no meeting on 6 October: the Herald of 29 September records
+  WKU's fall break on 6 and 7 October and SGA reconvening on **13 October**, so the gap after
+  29 September in 2026-27 is the calendar, not a hole in the research.
