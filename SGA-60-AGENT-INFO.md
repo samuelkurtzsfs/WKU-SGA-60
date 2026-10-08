@@ -7679,6 +7679,28 @@ routine has had in over a day. Used it on the standing open leads rather than re
 events, 60 presidents, two of the four year-photo gaps closed. Full detail in
 `.research/photo-run-2026-10-07-evening.md`. Landed on `research-photos`.
 
+### Photograph run of 8 October (afternoon): the Wayback window open again, four pre-2003 items pulled, all four reproducing existing dead ends rather than extending them
+
+Baseline reconfirmed by script: all 73 `leaders` records (the four named presidents included)
+still carry a portrait, the officer gap is unchanged at 189 slots / 159 people on
+`portrait_gap.py`'s rule, and the two year-photo gaps (1994-95, 2000-01) are unchanged.
+
+`web.archive.org`'s `if_` bypass was open for a sustained window this session (one cold reset at
+the start, then clean on retry throughout), so this run spent it rather than re-confirming access
+and stopping. Pulled the 1984 *Talisman* (article 1408) to re-check the two standing 1983-84
+officer gaps, John Holland and Kelly S. Smith: found the Associated Student Government composite
+at book pp. 238-239 by reading rendered pages rather than text-searching (this volume's OCR layer
+is badly garbled), but it turned out to be the photograph already on file as
+`1983-84-asg-congress-photo.jpg` — neither name is in either roster, matching the index read a
+prior run already did on this same volume. Then tried three more 1994-95 Herald issues picked for
+sounding visual (70:42's 150-person clean-up, 70:12's bookstore story, 70:9's queen-candidate
+item) against the standing year-photo gap: all three read in full, none carries a photograph. The
+1994-95 gap is now checked at five specific issues with no usable frame at any of them, out of 50
+SGA-related issues the local Herald index carries for that academic year — a narrower miss than
+before, not a closed question. No file in `data/photos.json` or `data/photos/` changed; this
+run's only output is this note and `.research/photo-run-2026-10-08-afternoon.md`.
+`build.py` and `check_data.py` both pass clean. Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash
