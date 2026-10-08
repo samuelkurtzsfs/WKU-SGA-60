@@ -99,3 +99,49 @@ still open across 175 people (one slot closed, David Bass), both year-photo gaps
 - The year-photo gap stays at two: 1994-95 and 2000-01, both already read at their best leads
   with nothing further to find there. A new lead, not another look at the same two issues, is
   what either one needs.
+
+---
+
+## Editor's note, 8 October 2026 — the David Bass portrait was cut before merge
+
+The crop was withdrawn and `data/photos/1977-78-david-bass.jpg` deleted. The reasoning is
+kept here so a later pass can act on it rather than repeat it.
+
+The printed caption on p. 34 of the 1978 *Talisman* reads, in full: "A LIGHT MOMENT IN AN
+ASG MEETING brings laughter from president Bob Moore and smiles from activities vice
+president David Bass, secretary Sharon May and vice president Cathy Murphy." It names four
+people and gives **no positional cue** — no left-to-right, no "(right)", nothing tying a
+name to a figure. Checked against the volume's own text, not a paraphrase.
+
+Two of the four are identifiable anyway. Moore is the standing figure, because the caption
+credits the laughter to him alone and he is the only one laughing. Murphy is the woman at
+the right, whose long straight centre-parted hair matches her senior portrait on p. 370,
+already on file. That leaves Bass and May unplaced.
+
+The run placed Bass on the seated figure in sunglasses by elimination: of the three named
+as smiling only Bass is a man, and that figure was read as "the only other clearly visible
+male face." Examined at the page image itself, enlarged, that premise does not hold:
+
+- **The frame holds more people than the caption names.** Besides the four, there is a
+  seated figure in a striped top in the middle ground behind Moore, and a further hand at
+  the lower left. So "the only other male face in the frame" need not belong to anyone the
+  caption names, and the elimination has nothing to stand on.
+- **The sunglasses figure's sex is not determinable.** Long feathered hair past the jaw,
+  large sunglasses, a slight build. It reads at least as plausibly female as male, and the
+  figure is the one holding a pencil over the papers — which, if anything, points at the
+  secretary.
+- **The fourth figure's face is not visible at all**, turned away at the lower left, so it
+  cannot be ruled in or out either.
+
+Neither Bass nor May has another photograph in the volume to break the tie: the 1978 index
+gives "Bass, David Eugene 34" and "May, Sharon Gay 34", one page each, this one.
+
+This is the same objection the run itself accepted two entries further down, where it
+declined to crop Kelly S. Smith out of the 1983-84 composite because the yearbook gave no
+left-to-right order within a row. The standard that governed there governs here. CLAUDE.md:
+never use a photograph whose subject cannot be confirmed from the caption or context — a
+misidentified face is worse than no face.
+
+Do not restore this crop without a source that names which figure is Bass. The year-level
+photograph `1977-78-asg-meeting.jpg` is unaffected and stays: its caption names the four
+without claiming to place them.
