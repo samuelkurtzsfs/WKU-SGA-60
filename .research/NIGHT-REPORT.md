@@ -41266,3 +41266,63 @@ recorded terms of office held by 1809 people, 98% of them carrying an account of
 did.
 
 Still open: no pull requests. The year-photo gaps at **1994-95 and 2000-01** remain.
+
+---
+
+## 8 October 2026 — editor's run
+
+One pull request open, **#700, "Research: photographs, 7 October (night) — David Bass's
+portrait added"** on `research-photos`. The three branches this routine's brief still names as
+stale, #6, #7 and #8, were closed long ago; nothing was left to rescue or shut down.
+
+The pull request carried exactly one publishable claim, and it did not survive. The run had
+cropped a figure out of `1977-78-asg-meeting.jpg`, a group photograph already on file, and
+published it as the portrait of **David Bass**, activities vice president 1977-78. Read the
+printed caption on p. 34 of the 1978 *Talisman* against the volume's own text rather than the
+paraphrase: it names president Bob Moore, Bass, secretary Sharon May and vice president Cathy
+Murphy, and places none of them. No left-to-right, no "(right)", nothing. Moore is identifiable
+regardless, because the caption credits the laughter to him alone and he is the only one
+laughing; Murphy is identifiable by her senior portrait on p. 370, already on file. Bass and
+May are not.
+
+The run placed Bass by elimination — of the three smiling, only Bass is a man, and the
+photograph was said to show exactly one other clearly visible male face. Enlarged from the page
+image, that premise fails twice over. The frame holds people the caption never names: a seated
+figure in a striped top behind Moore, and a further hand at the lower left. So the only other
+male face in the frame need not be anyone the caption names. And the figure chosen cannot be
+sexed from the page at all — long feathered hair past the jaw, large sunglasses, a slight build,
+and it is the figure holding the pencil over the papers, which if anything points at the
+secretary. The fourth figure's face is turned away and is no help either. Neither Bass nor May
+has a second photograph in the volume to break the tie: the index gives each of them one page,
+this one.
+
+The run had already applied the right standard two findings further down its own report, where
+it declined to crop Kelly S. Smith out of the 1983-84 composite because the yearbook gave no
+left-to-right order within a row. That is the same objection. **Cut**: the `photos.json` entry,
+`data/photos/1977-78-david-bass.jpg` and its copy under `site/`. The reasoning is written into
+the run's own note so a later pass acts on it instead of repeating it. The year-level photograph
+of the meeting is untouched and stays — its caption names the four without claiming to place
+them.
+
+The rest of the pull request was negative findings and they hold up. Spot-checked four against
+the volumes themselves: David Young's "heads-up competition" quote is in the 1979 *Talisman* as
+reported; Alice Wicks is in that volume's index with no page reference, as reported; Mark
+Chesnut's p. 234 is an intramural all-sports table, frisbee and racquetball champions, not ASG;
+and the Steve Wilson lead was correctly refused rather than matched on a surname. Nothing in the
+diff tripped an advance notice, a chair recorded as an officer, a surname match, a changed
+surname, an April result filed into the wrong year, or anything touching a living person beyond
+its source.
+
+**Merged** after the cut. What reached main is the run's note and the editor's note on top of
+it; no data and no site file changed, and `site/network.html` went back to byte-for-byte what
+main already held. `build.py` clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same four pairs and one shared-source pair as the previous
+run, all long-standing on main and all read again here as genuinely separate events.
+
+The archive stands unchanged at **61 years, 1967 events, 60 presidents, 73 portraits and 72 year
+photographs**, with 1111 pieces of legislation, 1305 volume-and-number citations and 2651
+recorded terms of office held by 1809 people, 98% of them carrying an account of what the person
+did.
+
+Still open: no pull requests. The year-photo gaps at **1994-95 and 2000-01** remain, and the
+officer-portrait gap stands where it did, at 217 slots across 174 people.
