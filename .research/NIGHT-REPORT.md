@@ -41202,3 +41202,67 @@ pieces of legislation and 1305 volume-and-number citations that each open the is
 
 Still open: no pull requests. The year-photo gaps at **1994-95 and 2000-01** remain, and the
 routine reports both issues exhausted at their best leads.
+
+## 8 October 2026 — an empty queue, and the current year read at source
+
+No pull requests open, and nothing waiting to be merged. The photographs routine's branch,
+`research-photos`, still sits two commits ahead of main, but those two commits are the
+pre-squash originals of #698: every byte of `data/photos.json`, both photographs and the
+`SGA-60-AGENT-INFO.md` note are already on main, and the only difference running the other way
+is main's own night-report entry. There is no unlanded research on it, or on any other branch.
+The three branches this review carried from 4 August — #6 photographs, #7 the 1980s, #8 the
+2020s — were closed in an earlier pass and stay closed.
+
+With no diff to judge, the run went to the material most likely to be wrong and least likely to
+have been checked: **2026-27, the year being written as it happens**. Twenty-odd claims across
+four sources, every one opened and read rather than sampled. Nothing was cut, because nothing
+needed cutting.
+
+The two meetings carrying numbers came out exact. The budget entry of 1 September — $113,481 for
+the year, member stipends the largest line at $27,000, scholarships $23,000, five students sworn
+into post of whom three were new senators, two senator-at-large seats left open — matches the
+Herald's report line for line, and the 25 August entry's account of the same budget arriving $100
+higher, with the vote held over a week, is the same paper's wording. All nine of the senate posts
+filled on 25 August carry the right name against the right committee, and the ninth is correctly
+recorded as Secretary of the Senate rather than a tenth chair, which is the distinction trap 2
+exists for. The 29 September meeting verified on every count: six senators with their categories,
+Referendum 10.2.1 and a convention of two cabinet members and six senators, 52 Organizational Aid
+applications, the Bluegrass scholarship widened to Illinois and Indiana, and twelve dental
+hygiene vouchers at $300 against twenty-four already used. The Truman Scholar entry of 24 April
+holds every figure in it against WKU's own announcement — 55 rising seniors from 198 finalists,
+781 candidates nominated by 305 institutions, $30,000, second in the university's history and
+the only one from Kentucky that year.
+
+Two things in the year are worth recording as the right way to do it rather than as faults. The
+raffle entry carries **both** figures its sources give for the number of entries, 1,744 from the
+meeting report and 1,174 from the interview a week later, instead of quietly picking one. And the
+entry for the opening of fall voting says in its own body that the Herald dated it only as
+"today" in an issue published the day after the meeting, so which of the two days voting opened
+is not fixed. That is a claim trimmed to what the source proves, written by a previous pass, and
+it should stay as it is.
+
+Two names were chased and both turned out to be already settled. The Herald's report of
+29 September gives the chief justice a third spelling, **Sophia** Stirling, where the archive
+reads Sophie; the 2026-27 senate note already records that variant, dates it, observes that the
+surname there agrees with SGA's own minutes of 14 April 2026, and explains why the record follows
+the minutes. Molly Ricke and Molly Ricky are the same senator under two Herald spellings and are
+mapped in `name-aliases.json`; each entry keeps the spelling its own source used, which is the
+house rule. Neither needed touching.
+
+The hazard #698 left on the table was checked and is still only a hazard: the Herald's caption
+claiming Gilley won "by 224 votes" has not been copied anywhere into the data, and the 2008-09
+caption on main correctly records that the second man in the frame is not named in the paper.
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py`
+reports the same four pairs and one shared-source pair as last night, all long-standing on main:
+the 1997-98 driver cards three months apart, the 1991-92 regent-committee bill introduced and
+then failed, the 1971-72 lawsuit planned and then endorsed, and the 2003-04 grading stand taken
+and then legislated. Each is two events, not one. The shared-source pair in 2026-27 is two
+separate pieces of business out of one meeting report. Read and left alone.
+
+The archive stands unchanged at **61 years, 1967 events, 60 presidents, 73 portraits and 72 year
+photographs**, with 1111 pieces of legislation, 1305 volume-and-number citations and 2651
+recorded terms of office held by 1809 people, 98% of them carrying an account of what the person
+did.
+
+Still open: no pull requests. The year-photo gaps at **1994-95 and 2000-01** remain.
