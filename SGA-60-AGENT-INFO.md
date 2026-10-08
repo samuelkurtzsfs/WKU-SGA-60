@@ -7679,6 +7679,37 @@ routine has had in over a day. Used it on the standing open leads rather than re
 events, 60 presidents, two of the four year-photo gaps closed. Full detail in
 `.research/photo-run-2026-10-07-evening.md`. Landed on `research-photos`.
 
+### Photograph run of 8 October (afternoon): the Wayback window open again, four pre-2003 items pulled, all four reproducing existing findings rather than extending them
+
+Baseline reconfirmed by script: all 73 `leaders` records still carry a portrait, the four people the
+brief names among them — Nick Todd, Katie Dawson, Jeanne Johnson, and Reagan Gilley, who held the
+regent seat in 2008-09 rather than the presidency. The officer gap is unchanged at 189 slots / 159 people on
+`portrait_gap.py`'s rule, and the two year-photo gaps (1994-95, 2000-01) are unchanged.
+
+`web.archive.org`'s `if_` bypass was open for a sustained window this session (one cold reset at
+the start, then clean on retry throughout), so this run spent it rather than re-confirming access
+and stopping. Pulled the 1984 *Talisman* (article 1408) to re-check the two standing 1983-84
+officer gaps, John Holland and Kelly S. Smith: found the Associated Student Government composite
+at book pp. 238-239 by reading rendered pages rather than text-searching (this volume's OCR layer
+is badly garbled), but it turned out to be the photograph already on file as
+`1983-84-asg-congress-photo.jpg` — neither name is in either roster, matching the index read a
+prior run already did on this same volume. **That negative covers the 1984 volume only.** This run's
+own note first extended it to the 1985 *Talisman* as "the same negative result"; it is not. For the
+1985 volume `data/photo-finds/n8087-notes.json` files Holland as found in the book and lost to a
+scan defect — named in the text at printed pp. 202-203, with his class portrait falling on printed
+p. 322, blank edge to edge in the only reachable digitisation though the index proves that page had
+content. It is logged there as the nearest miss on the block, worth a run if a second copy of the
+1985 volume is ever scanned, and it stays open. Then tried three more 1994-95 Herald issues picked for
+sounding visual (70:42's 150-person clean-up, 70:12's bookstore story, 70:9's queen-candidate
+item) against the standing year-photo gap: all three read in full, none carries a photograph. The
+1994-95 gap is now checked at five specific issues with no usable frame at any of them, out of the
+low forties of SGA-related issues the local Herald index carries for that academic year — a narrower
+miss than before, not a closed question. (This entry first said 50; the figure could not be
+reproduced on review — 41 on a strict keyword count for Aug 1994-Jun 1995, 45 counting student-regent
+items — so recount it rather than quoting it.) No file in `data/photos.json` or `data/photos/` changed; this
+run's only output is this note and `.research/photo-run-2026-10-08-afternoon.md`.
+`build.py` and `check_data.py` both pass clean. Landed on `research-photos`.
+
 ## 9. Restarting a session
 
 ```bash

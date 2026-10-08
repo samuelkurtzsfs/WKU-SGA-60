@@ -41437,3 +41437,76 @@ terms of office held by 1809 people, 98% of them carrying an account of what the
 
 Still open: no pull requests. The eighteen later-issue entries listed above. The twenty-four
 organization portraits that never render. The year-photo gaps at **1994-95 and 2000-01**.
+
+## 8 October 2026 — editor's run, third pass: one photograph PR, merged after three corrections
+
+One pull request open, **#703 "Research: photographs (rolling)"** on `research-photos`, cut from
+the current tip of main with a real merge base and nothing stale behind it. The three pull
+requests this routine's brief still names as stale since 4 August — #6, #7 and #8 — are all
+closed already; nothing was left to rescue or shut.
+
+It is a run that found nothing and said so, which is the right outcome honestly reported: two
+files, 86 added lines, **no change to any data file and none to `site/`**. Nothing in it reaches
+the published site. That narrowed the review to whether the account it leaves behind for the next
+run is true, because a photograph routine's notes are what the following run believes.
+
+**Verified, thirteen claims.** All 73 `leaders` records carry a portrait, with none missing, and
+the four people the brief names are among them. `portrait_gap.py` reproduces 189 slots / 159
+people / 157 with no portrait in any year exactly. The 1983-84 composite is on file as claimed,
+with the row-order caveat already recorded in its caption. The Holland index read checks out
+verbatim, Holcomb to Hollenbeck at printed p. 373. All four citations resolve: they give the
+`viewcontent.cgi?article=` parameter rather than the item number, and every one lands where it
+says — 8920 on Herald 70:42 of 28 Feb 1995, 8903 on 70:12 of 4 Oct 1994, 8889 on 70:9 of
+22 Sep 1994, 1408 on the 1984 *Talisman*. All four landing pages were opened at TopSCHOLAR and
+all three headlines read back word for word off the page.
+
+**Three corrections before merging.**
+
+A **live lead had been written up as a dead end.** The run reported Holland and Smith checked off
+the 1984 and 1985 volumes alike "with the same negative result", concluding it "confirms rather
+than extends the existing dead end". For 1985 that is not what the file it cites says.
+`n8087-notes.json` files Holland there as found in the book and lost to a scan defect: named in
+the text at printed pp. 202-203, his class portrait falling on printed p. 322, blank edge to edge
+in the only reachable scan while the index independently proves that page carried content. The
+prior run logged it as the nearest miss on the block, worth a run if a second copy of the 1985
+volume is ever scanned. Flattening that into a dead end is how a project stops looking at the one
+lead it still has. Both files now say the negative covers 1984 only and that the 1985 lead is open.
+
+**Reagan Gilley was called a president.** He held the regent seat in 2008-09, not the presidency,
+and `years.json` has him as `regent` in that year and nowhere else. The handoff has always been
+careful here, saying "all four named people"; this entry introduced the conflation. Corrected in
+both files, with the office named.
+
+**A count that could not be reproduced.** The run put 50 SGA-related issues in the Herald index
+for 1994-95 and derived a remainder of 46 from it. Counting Herald issues dated Aug 1994 to
+Jun 1995 whose index lines mention student government gives 41, or 45 counting student-regent
+items; no rule tried reached 50, and 50 minus the five read does not give 46 either. The figure is
+gone from both files, replaced by the measurable range and an instruction to recount.
+
+**A fourth correction, to a pre-existing error this run's work disproved.**
+`data/photo-finds/_archive-gaps.json` has told every run that "the 1984 Talisman has NO ASG group
+photograph and no roster at all", and that this is why the 1983-84 cohort resists every method.
+That is false, and it is false in the direction that stops people looking. The volume carries two
+composites at printed p. 238, each captioned "Associated Student Government" with full rosters by
+row, and the archive has held the photograph from that exact page all along;
+`_do-not-use.json` refers to the same spread. This run relocated it independently by rendering
+pages, the volume's OCR being too garbled to search — and then filed the finding without noticing
+it contradicted the note it had just read. The entry now records what actually defeats the
+1983-84 cohort, which is narrower: the rosters give rows without left-to-right order, so no face
+in either composite can be placed, and neither Holland nor Smith is in either roster.
+
+**Merged.** `build.py` clean, `check_data.py` and `check_contrib.py` both exit 0 after the
+corrections, `check_duplicates.py` byte-identical to untouched main — the same four pairs and one
+shared-source pair every recent run has judged and left alone, none of them this branch's doing.
+No advance notice was written up as a report: the clean-up story's "nearly 150 workers" is a
+report, not a notice, and no crowd figure was published from it in any case. No committee chair
+promoted to officer, no surname-only match, no April result filed into the wrong year, nothing
+touching a living person, no settled fact reopened, no contributor edit in the diff.
+
+The archive stands at **61 years, 1967 events, 60 presidents**, with 1111 pieces of legislation,
+1306 volume-and-number citations and 2651 recorded terms of office held by 1809 people, 98% of
+them carrying an account of what the person did. Unchanged by this merge, as it should be.
+
+Still open: nothing. The year-photo gaps at **1994-95 and 2000-01** stand, 1994-95 now with five
+specifically-read misses. The 1985 *Talisman* Holland portrait is the best single lead on the
+board and needs a second scan of that volume, not another run at the one we have.
