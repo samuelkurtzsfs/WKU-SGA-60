@@ -41588,3 +41588,10 @@ Unchanged by this pass, which touched one internal note and no published page.
 
 Still open: the year-photo gaps at **1994-95 and 2000-01**, and the 1985 *Talisman* Holland
 portrait, which needs a second scan of that volume rather than another run at the one we have.
+
+This pass could not land its own correction. The review, the cut and this report are pushed to
+`editor-1008-john-evans-bar` and opened as **#704**, with the whole review in the pull request
+body, but the merge was refused as a self-approval: the same run may not both open a pull request
+and merge it. Nothing is lost and nothing needs redoing — #704 needs one click from the owner, or
+the next editor pass can merge a branch it did not open. Everything in it is verified and the
+validators pass on it.
