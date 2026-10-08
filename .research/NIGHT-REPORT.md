@@ -41370,9 +41370,16 @@ poll notice and nothing else of the three, and 5648 carries "Four Associated Stu
 Candidates Get Surprise" and "Few Candidates Will Sweat Out Associated Student Government
 Elections". So 56:49 was **added as `src2`**, which rescues two claims at headline level, and the
 "Who Cares?" sentence was **cut**, because it rested on an uncited third issue and because the
-year page renders only `src` and `src2` — a `src3` validates but never reaches a reader. The
-column is real and is in 56:54 (dlsc_ua_records/5669) for a 1980s pass to write up from the
-article, not from its headline.
+year page renders only `src` and `src2` — a `src3` validates but never reaches a reader.
+**That cut lost nothing at all, and the reason is worth recording.** The column already has its
+own entry in the same year, dated 16 April 1981 and cited to 56:54, which carries the swearing-in,
+the column by name, its argument about the election winning no award for organisation, and the
+Bloss cartoon beside it. So the same column had been written up twice: once correctly, and once
+folded uncited into the body of a notice three weeks earlier. No 1980s pass is needed for it.
+`check_duplicates.py` cannot see a repeat of this shape, because it compares titles and the
+second copy had no title of its own — it was a sentence inside another entry. Entries that
+swallow a later event into their body are a duplicate class the checker is blind to by
+construction, and the only thing that finds them is reading the year.
 
 The other eighteen are listed below for the decade routines. Each needs its later issue read and
 carried as a second citation, or the sentence trimmed. Seven candidates were dropped from the
@@ -41428,6 +41435,5 @@ The archive stands at **61 years, 1967 events, 60 presidents and 72 year photogr
 pieces of legislation, 1306 volume-and-number citations, 229 mirrored documents and 2651 recorded
 terms of office held by 1809 people, 98% of them carrying an account of what the person did.
 
-Still open: no pull requests. The nineteen later-issue entries above, less the one fixed. The
-twenty-four organization portraits that never render. The year-photo gaps at **1994-95 and
-2000-01**.
+Still open: no pull requests. The eighteen later-issue entries listed above. The twenty-four
+organization portraits that never render. The year-photo gaps at **1994-95 and 2000-01**.
