@@ -41153,3 +41153,116 @@ business drawn from one meeting report. Nothing to merge.
 - The queue is empty. There was no meeting on 6 October: the Herald of 29 September records
   WKU's fall break on 6 and 7 October and SGA reconvening on **13 October**, so the gap after
   29 September in 2026-27 is the calendar, not a hole in the research.
+
+## 7 October 2026 (late evening) — the editor's pass on #698
+
+One pull request open, and it merged: **#698, the photographs routine's fourth run of the day**.
+The three branches this review has been carrying since 4 August — #6 photographs, #7 the 1980s,
+#8 the 2020s — were closed in an earlier pass and are off the books.
+
+#698 added two year-level photographs and no events, so the whole diff was two claims deep and
+every claim in it was checked rather than sampled. Both pictures came out of issues the archive
+already cites for a leader portrait, which is the cheapest kind of find and, on the evidence of
+this run, the kind most likely to be written up loosely.
+
+**1995-96, the election-night embrace** (Herald 70:54, 20 April 1995, p. 1, Craig Allen). Opened
+the issue, rendered the front page, read the printed caption against the file. The four officers
+are named in the paper in the order the picture shows them, and the frame on disk is the frame
+the Herald printed. Filed to 1995-96 off an April 1995 election, which is the right way round.
+
+**2008-09, Reagan Gilley's regent win** (Herald 84:35, 26 February 2009, p. 1, Ryan Stone). The
+identification is solid: the caption names him, and the portrait already in the archive is the
+tight crop of this same frame, to the pixel in height.
+
+Two cuts, both to captions, neither to a photograph.
+
+The 2008-09 caption called the second man in the frame **a supporter**. He is not named in the
+Herald's caption, and the article says who was in that room: about twenty people in the back of
+the SGA office, among them Nate Eaton, the opponent Gilley had just beaten 477 to 224, who shook
+his hand after the announcement. The man closely resembles this archive's own Eaton portrait. So
+the word was either an invention about an unidentified living person or a defeated candidate
+mislabelled as a well-wisher. The caption now gives the time, the room and the fact that he is
+not named. The routine's own commit message had him right — "another man clapping beside him" —
+so this was a slip in the caption, not in the research.
+
+The 1995-96 caption ran nearly word for word with the Herald's for about twenty-seven words,
+against a fifteen-word ceiling. Rewritten in the archive's voice, keeping every officer, every
+office and the left-to-right order, which the first version had dropped and which is the only
+thing that lets a reader check the naming.
+
+One thing worth leaving for whoever comes next: **the Herald's own caption is wrong**. It says
+Gilley "won the election by 224 votes". 224 was Eaton's total; the margin was 253. The entry
+never repeated it, but the caption is sitting there waiting to be copied.
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py`
+reports four pairs and one shared-source pair, every one of them already on main and none from
+this branch — read and left alone rather than widen someone else's diff. The archive now stands
+at **61 years, 1967 events, 60 presidents, 73 portraits and 72 year photographs**, with 1111
+pieces of legislation and 1305 volume-and-number citations that each open the issue they name.
+
+Still open: no pull requests. The year-photo gaps at **1994-95 and 2000-01** remain, and the
+routine reports both issues exhausted at their best leads.
+
+## 8 October 2026 — an empty queue, and the current year read at source
+
+No pull requests open, and nothing waiting to be merged. The photographs routine's branch,
+`research-photos`, still sits two commits ahead of main, but those two commits are the
+pre-squash originals of #698: every byte of `data/photos.json`, both photographs and the
+`SGA-60-AGENT-INFO.md` note are already on main, and the only difference running the other way
+is main's own night-report entry. There is no unlanded research on it, or on any other branch.
+The three branches this review carried from 4 August — #6 photographs, #7 the 1980s, #8 the
+2020s — were closed in an earlier pass and stay closed.
+
+With no diff to judge, the run went to the material most likely to be wrong and least likely to
+have been checked: **2026-27, the year being written as it happens**. Twenty-odd claims across
+four sources, every one opened and read rather than sampled. Nothing was cut, because nothing
+needed cutting.
+
+The two meetings carrying numbers came out exact. The budget entry of 1 September — $113,481 for
+the year, member stipends the largest line at $27,000, scholarships $23,000, five students sworn
+into post of whom three were new senators, two senator-at-large seats left open — matches the
+Herald's report line for line, and the 25 August entry's account of the same budget arriving $100
+higher, with the vote held over a week, is the same paper's wording. All nine of the senate posts
+filled on 25 August carry the right name against the right committee, and the ninth is correctly
+recorded as Secretary of the Senate rather than a tenth chair, which is the distinction trap 2
+exists for. The 29 September meeting verified on every count: six senators with their categories,
+Referendum 10.2.1 and a convention of two cabinet members and six senators, 52 Organizational Aid
+applications, the Bluegrass scholarship widened to Illinois and Indiana, and twelve dental
+hygiene vouchers at $300 against twenty-four already used. The Truman Scholar entry of 24 April
+holds every figure in it against WKU's own announcement — 55 rising seniors from 198 finalists,
+781 candidates nominated by 305 institutions, $30,000, second in the university's history and
+the only one from Kentucky that year.
+
+Two things in the year are worth recording as the right way to do it rather than as faults. The
+raffle entry carries **both** figures its sources give for the number of entries, 1,744 from the
+meeting report and 1,174 from the interview a week later, instead of quietly picking one. And the
+entry for the opening of fall voting says in its own body that the Herald dated it only as
+"today" in an issue published the day after the meeting, so which of the two days voting opened
+is not fixed. That is a claim trimmed to what the source proves, written by a previous pass, and
+it should stay as it is.
+
+Two names were chased and both turned out to be already settled. The Herald's report of
+29 September gives the chief justice a third spelling, **Sophia** Stirling, where the archive
+reads Sophie; the 2026-27 senate note already records that variant, dates it, observes that the
+surname there agrees with SGA's own minutes of 14 April 2026, and explains why the record follows
+the minutes. Molly Ricke and Molly Ricky are the same senator under two Herald spellings and are
+mapped in `name-aliases.json`; each entry keeps the spelling its own source used, which is the
+house rule. Neither needed touching.
+
+The hazard #698 left on the table was checked and is still only a hazard: the Herald's caption
+claiming Gilley won "by 224 votes" has not been copied anywhere into the data, and the 2008-09
+caption on main correctly records that the second man in the frame is not named in the paper.
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. `check_duplicates.py`
+reports the same four pairs and one shared-source pair as last night, all long-standing on main:
+the 1997-98 driver cards three months apart, the 1991-92 regent-committee bill introduced and
+then failed, the 1971-72 lawsuit planned and then endorsed, and the 2003-04 grading stand taken
+and then legislated. Each is two events, not one. The shared-source pair in 2026-27 is two
+separate pieces of business out of one meeting report. Read and left alone.
+
+The archive stands unchanged at **61 years, 1967 events, 60 presidents, 73 portraits and 72 year
+photographs**, with 1111 pieces of legislation, 1305 volume-and-number citations and 2651
+recorded terms of office held by 1809 people, 98% of them carrying an account of what the person
+did.
+
+Still open: no pull requests. The year-photo gaps at **1994-95 and 2000-01** remain.
