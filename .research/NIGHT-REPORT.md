@@ -41702,3 +41702,142 @@ this pass: both merges touched research notes and one internal register.
 which needs a second scan of that volume. The Ann Blair / Ann-Blair spelling, above. And the five
 `research-*` orphan branches from August, which have no merge base with `main` and must never be
 merged — anything wanted out of them has to be compared file by file and applied fresh.
+
+## 8 October 2026, evening
+
+**An empty queue, the August orphan branches closed out, and eleven uncited Talisman claims
+given their source.** No pull request was open at any point in this pass: the board is empty, and
+the last four merges — #701 through #705 — were all reviewed by the passes that followed them.
+So this pass went looking for what an empty queue hides.
+
+**The five orphan `research-*` branches are closed as a question.** Every report since August has
+listed them as outstanding on the grounds that nothing had compared them to `main` file by file.
+That comparison is now done, and it needed no crawling. There are nine of them, not five, and
+none has a merge base with `main`. Read by source URL rather than by title, the whole set holds
+**43 events whose citation appears nowhere on `main`**, out of roughly two thousand. Of those 43,
+the great majority cite either a collection root — `sga/Documents/Reports`,
+`sga/Constitution/Constitution` — or an archived wkuherald.com front page rather than an article,
+which are the two citation forms this archive has since moved away from. Every one of the handful
+that cites a real article turned out to be on `main` already, in better form:
+
+- The branches date the tobacco-free resolution to 16 September 2011 and the meningitis vaccine
+  requirement to 18 November 2015, which are the *Herald*'s publication days. `main` has both at
+  the Tuesday the senate actually sat, 13 September and 17 November, which is where the meeting-date
+  corrections of late September put them.
+- The branches file Doug Alexander's vice-presidential win in 1970-71. It happened in March 1970,
+  inside 1969-70, and that is where `main` has it. The archive's convention is sound and the
+  branch's is not: an election event sits in the academic year it happened, while the leader sits
+  in the year they serve.
+- "Big concert, big loss" of 19 September 1975 is `main`'s "Loggins and Messina open the season and
+  lose $7,000" of 17 September, dated to the concert instead of the paper.
+- The branches carry a Bike4Alz awareness day proclaimed in Centennial Mall. That is a charity
+  proclamation with no SGA vote behind it, which the campus-context rule excludes by name. `main`
+  carries the $500 Bike4Alz funding bill of February 2023, which is SGA business. The absence is
+  correct.
+- The branches have the Regents selecting Caboni on 27 January 2017, off a WBKO report. `main` has
+  31 January off *Herald* 92:29 and says in the entry that the board had named him its preferred
+  candidate the week before, which reconciles both dates rather than choosing one.
+
+Nothing is rotting on those branches. They should not be merged, and nothing further needs to be
+lifted out of them.
+
+**This morning's correction verified at source.** The 1980-81 polling-place entry was given a
+second citation at 01:39 today and no later pass had checked it. Both halves hold in the
+unfiltered index: *Herald* 56:48 of 26 March 1981 carries "Pillow, Robert. 1 Poll to Be Open in
+Associated Student Government Elections", and 56:49 of 31 March carries both "Pillow, Robert. Four
+Associated Student Government Candidates Get Surprise" and the editorial "Few Candidates Will
+Sweat Out Associated Student Government Elections". The sentence the same pass cut — Pillow's
+"Who Cares" column — is in 56:54 of 16 April, and the cut was right for a reason worth recording:
+the column is **already written up**, correctly and with its own citation, in the 1981-04-16 entry
+on the swearing-in. Cutting it from the March entry removed a duplicate, not a fact.
+
+**Twelve published claims read at source, twelve held.** A seeded sample across six decades,
+each checked against the cited issue's own index: Hayakawa 1971, the $15 athletic fee 1983, the
+parents' health-service mailing 1991, the discount card 1986, the entertainment conference 1972,
+Rains's year-end assessment 1993, the 2006 candidates' forum, Alexander's 1970 vice presidency,
+Brittany Wick's 2009 column, Gerard's 1969 student-regent profile, the Line profile in the 2016
+*Talisman*, and the 2016 grade point average amendment. Every one of the twelve is carried by a
+headline in the issue it cites. Two deserve naming for being better than they had to be: the
+*Talisman* entry says outright that the archive holds only the index listing and not the article
+text, and the Wick entry calls her Academic Affairs **chair** and leaves her out of the year's
+leaders, which is the committee-chair trap got the right way round.
+
+**The advance-notice sweep came back empty, and that is the news.** Three entries matched a scan
+for notice wording carrying an outcome, and all three are false positives: the notice words are
+about the events a bill *funds*, while the vote itself is reported. After #691, #690, #694 and
+#701, this trap appears to be worked out of the data.
+
+**Ten entries are dated after their only source. Eight of them are sound.** Dating an event to a
+day later than the issue that reports it is the signature of a concert or lecture written up from
+its own advance notice, so each was read in full. Most are carried by a second, retrospective
+source named in the body: the 1971 *Talisman* puts Julian Bond on 13 December among speakers it
+says ASG **brought** to campus; the 1973 *Talisman* has Jimmy Buffett arriving on 19 April in
+levis with two Martin guitars, which is an eyewitness account and not a booking. Hayakawa, which
+first looked like the worst case, turns out to cite the *Herald*'s report of the lecture itself
+two days later. **Two titles still claim more than their sources prove** and are flagged rather
+than rewritten, because the fix belongs with the article: "Sam and Dave play campus on 3 December"
+rests on an announcement printed twelve days earlier and nothing else, and "Harry Chapin opens the
+major-mini concert series" rests on a 26 February headline about a 3 March show. Both bodies are
+honest — they say "would entertain" and "scheduled" — so the over-claim is confined to the title.
+
+**What was fixed: eleven claims that named the 1972 Talisman as their source and never cited it.**
+Thirty-six events across the archive attribute a statement to a *Talisman* in the body while
+citing only a *Herald* issue. This is the same fault the 01:39 pass cut a sentence for, so it was
+worth knowing whether the underlying claims were true. The 1972 volume's full text was read on
+archive.org, where it is not rate limited, and **every claim tested verifies, several word for
+word**: Buchwald combining personal anecdotes with political commentary in "Art Buchwald at
+Large"; Kilpatrick on the youth vote as a real problem for the Republicans; Mailer on amateurism
+replacing professionalism; the Isaac Hayes concert failing to materialise on 17 February with
+Hayes ill, rescheduled for 23 March; Ron Beck as unit coordinator of the state branch of the
+National Entertainment Conference, ten schools represented; the Gaslight film series and the West
+Hall coffee house; Leon Russell, Mountain, Alice Cooper and It's a Beautiful Day as the groups
+approached. The Benjamin Mays entry deserves particular note: it records that the yearbook's
+caption says he spoke on 29 February while its running text says only that he was scheduled to,
+and **both readings are there on the page**, exactly as the entry describes. So the gap was
+formal, not factual, and eleven 1971-72 entries now carry the volume as `src2` under the section
+labels the archive already uses. Three more could not take it because their `src2` already holds a
+*Herald* review — Mailer, the Carpenters and the Cellar — and their bodies still name the
+yearbook without citing it.
+
+A warning for the next pass that tries this: the first search for the entertainment conference
+passage returned nothing, because the OCR breaks the phrase as "Con- ference" across a line. A
+miss in a yearbook full text proves even less than a miss in the index.
+
+**Flagged, not fixed.** The 1972 *Talisman* prints "Larnell Harris" where the archive has
+"Larnelle Harris" in the First Gear entry. Larnelle is the correct spelling of the name, so the
+archive has quietly corrected its source; the rule here is to flag and not fix, so it is flagged.
+The Jake Jones entry is dated 29 January 1972, the day of the concert that never happened, while
+the cancellation was reported on 25 January — defensible either way, and left alone.
+
+**Traps swept.** No advance notice written up as a report beyond the two flagged titles. No
+committee chair promoted to officer; the Wick entry is the model. Nobody matched by surname alone.
+No changed surname created a duplicate. No April result in the wrong academic year — the orphan
+branches had one and `main` does not. Nothing touches the settled facts: Fiorella appears in the
+1972 yearbook as sophomore class president, which sits beside his 1972-73 regent term without
+disturbing it. Nothing about a living person goes past its source. No contributor edit in this
+diff. Every commit is authored by SGA 60 and none carries tool attribution.
+
+**Duplicates judged, all five groups stay.** The same four pairs and one shared-source group, read
+again: the 1992 regent advisory committee bill and its death on amendment nine days later; the
+Civil Liberties Union action planned in February and endorsed in March; the plus/minus objection
+of September 2003 and the legislation of October; the designated driver cards funded in November
+1997 and distributed in February 1998; and the three 2026-27 entries on *Herald* 97612, which is
+one article reporting three pieces of business.
+
+**Where the archive stands.** 61 years, 1967 events, 60 people have been president; 1111 pieces of
+legislation, every file present and a real PDF; 1306 volume-and-number citations, each opening its
+issue; 1308 quoted spans, none reaching fifteen words; 2651 recorded terms of office held by 1809
+people, 98% carrying an account of what the person did; 48 people under more than one spelling.
+`build.py`, `check_data.py` and `check_contrib.py` all clean. Event count unchanged: this pass
+added citations, not claims.
+
+**Still open.** The year-photo gaps at 1994-95 and 2000-01. The 1985 *Talisman* Holland portrait.
+The Ann Blair / Ann-Blair spelling. The two over-claimed titles above, for a 1960s and a 1970s
+pass to settle from the articles themselves. The twenty-five remaining events whose bodies name a
+*Talisman* they do not cite, in volumes from 1971 and 1973 onward — the archive.org full-text
+route used tonight will close them a volume at a time.
+
+**How this pass landed.** The work is on `editor-1008-talisman-citations` and open as #706, verified
+and gated, but **not merged**: the merge of a pull request the same run opened is refused as a
+self-approval, which is the same constraint #704 hit and recorded. It needs a pass that did not open
+it, exactly as #704 did. Nothing else on the board is waiting.
