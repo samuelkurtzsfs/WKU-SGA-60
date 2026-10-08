@@ -41595,3 +41595,110 @@ body, but the merge was refused as a self-approval: the same run may not both op
 and merge it. Nothing is lost and nothing needs redoing — #704 needs one click from the owner, or
 the next editor pass can merge a branch it did not open. Everything in it is verified and the
 validators pass on it.
+
+## 8 October 2026 — editor's run, fifth pass: two pull requests merged, and a bar reason that was false on every ground
+
+**Both open pull requests were reviewed and both are merged.** The queue the fourth pass found
+empty had refilled by the evening. GitHub answered normally this run once the route was right:
+`gh pr list` fails here because it goes through GraphQL, which is refused, but the REST endpoints
+work and merge. A GraphQL 403 is not the platform gate and should not be read as one.
+
+**#705, the photograph run of 8 October (evening), merged as is.** It is a negative-findings note
+and it adds no claim to the archive: no change to `photos.json` or `data/photos/`. Its method is
+new and worth keeping — querying the *Herald*'s WP-JSON posts endpoint with embedded figures and
+scanning each caption for the candidate's full name — and it was run against 30 officer-gap names
+from 2004-05 to 2021-22 for no individually captioned photograph. Every count in it was
+recomputed here and every one is exact: 73 leader records, all carrying a portrait; 189 officer
+slots with no portrait across 159 people, 157 of them with no portrait in any year; year-photo
+gaps at 1994-95 and 2000-01. Its one near-hit was opened at source. The *Herald*'s censure-hearing
+report of 17 February 2023 does carry three photographs, two captioned to Speaker of the Senate
+Julie Mishchuk and one an unkeyed group of Judicial Council members, and Justin Goins, the Chief
+Justice the run was looking for, is named in the article text but in none of the captions. The
+note is right to refuse it. The captions print the surname Mischuck twice against the article's
+own 28 uses of Mishchuk, exactly as the published portrait's source note already records.
+
+**#704, the John Evans bar, merged after one correction of my own.** The pass that opened it could
+not merge it — the same run may not both open a pull request and merge it — so it waited for a
+pass that did not open it. Its own work is sound and was checked at the source rather than taken
+on trust. Twelve claims were opened; the load-bearing ones all held. The 1976 *Talisman*'s own
+full text carries the Young Democrats caption at p. 308 word for word, front row Tom Hayes, Steve
+Smith, Patricia Cook, Rickie Johnson and John David Evans, placing him fifth and last; the
+volume's index reads Evans, John David Jr. at 63, 308 and 378; p. 63 is the ASG attendance roll
+headed effective as of April 6, 1976 and introduced by Nancy Wilk as ASG Secretary, and John Evans
+is on it, as is Tim Leigh, who seconded the motion the 1977 minutes record; p. 378 carries an
+individually captioned junior portrait of John D. Evans of Prestonsburg. The minutes cited for
+19 April 1977 are the right sitting: TopSCHOLAR records Meetings/Minutes/17 as 19-4-1977, 4:30 to
+5:20 PM. So the correction #704 was opened to make is right, the bar on the unplaced p. 339 crop
+stands, and the false sentence it replaced — that the name appears nowhere in `years.json` — is
+gone.
+
+**What was cut: the Ann Blair Thornton bar reason, which was false on every ground it gave.**
+This is the same fault #704 was opened to fix, one entry further down the same register, and the
+fourth pass's report listed it among its verified claims and called the bar right. The bar is
+right. Its reasons were not, and all four are now corrected in place with the old wording kept
+beside them, because they were wrong in the direction that invites a later run to withdraw the
+*published* 2009-10 portrait on the same reasoning.
+
+- It said no caption ties the face to her. One does. The *Herald*'s own media record for that
+  file, id 50735 of 1 September 2011, names Ann-Blair Thornton, then Miss Kentucky and a WKU
+  student, returning to Bowling Green for a Chamber of Commerce gathering, and hangs on article
+  50734. The bare `wp-content` URL in the source note is the image, not the whole of what the
+  paper printed, and the caption is one query away.
+- It said the year contradicts the record. It does not. She was sworn to the Student Senate on
+  23 September 2008, inside 2008-09, on SGA's own minutes of that sitting, which TopSCHOLAR
+  records as 23-9-2008, 5:00 to 5:41 PM.
+- It said the archive names her once, as public relations chair in 2010-11. It names her three
+  times: Senator in 2008-09, Secretary of the Senate in 2009-10, and public relations chair in
+  the Focus Fridays entry of 12 November 2010.
+- It invoked the chair-is-not-an-officer trap. That trap does not reach 2008-09, where she held a
+  sworn Senate seat and not a committee chair, and the data already honours the rule by carrying
+  her as a senate member rather than among the year's leaders.
+
+The bar stands on the one ground that survives, and it is a plain one: the archive already
+publishes this photograph. `2009-10-ann-blair-thornton.jpg` is a 270x450 crop of the same frame,
+filed where she was Secretary of the Senate; the barred file is a 435x544 crop of it. A second
+crop of one photograph under a second year shows a reader the same face twice and adds nothing.
+It is withdrawn at build as it was before — five photographs withdrawn, the count unchanged — and
+the published 2009-10 portrait is untouched and properly captioned.
+
+**Flagged, not fixed.** The archive carries her as Ann Blair Thornton in 2008-09 and Ann-Blair
+Thornton in 2009-10, and the *Herald* spells it Ann-Blair across all three of its 2011 and 2012
+media records. The 2009-10 profile has her serving both as a senator and as Secretary of the
+Senate, so the archive already reads the two as one person, but no alias is recorded. Adding one
+would move the roster counts, and the spelling rule here is to flag and not fix, so it is flagged.
+
+**Traps swept against both diffs.** No advance notice was written up as a report; neither diff
+makes an event claim at all. No committee chair recorded as an officer — the correction above
+turns on exactly that distinction and gets it the right way round. Nobody matched by surname
+alone: the Evans identification runs on a full-name index entry and a printed caption, and it
+keeps its own caution that this man is not established as the John David Evans who lost the 1976
+Activities Vice President election to Tom Blair, who is himself on the same 1976 roll. No changed
+surname created a duplicate person, and `name-aliases.json` carries no Evans entry because none
+is claimed. No April result sits in the wrong academic year; no election result is filed in either
+diff. Nothing touches the settled facts. Nothing about a living person goes past what its source
+reported or strays into anything unconnected to SGA service. No contributor edit is in either
+diff: no commit carries a `Contributed-By` trailer. Every commit in both is authored by SGA 60 and
+none carries tool attribution, and neither diff touches `site/`.
+
+**Duplicates judged, and all five groups stay as they are.** The same four pairs and one
+shared-source group recent passes have seen, read in full rather than by title this time. The
+1992 student regent advisory committee was introduced on 28 January under Bill #92-01-S and died
+amended on 6 February under a *Herald* report; the Civil Liberties Union action was reported
+planned on 29 February and formally endorsed on 28 March, in different issues a month apart; the
+plus/minus grading objection was voiced on 23 September and passed as legislation on 14 October,
+three weeks and two separate articles apart; the designated driver cards were funded by Bill
+97-3-F in November 1997 and distributed in February 1998. The three 2026-27 entries on *Herald*
+article 97612 report the bus-tracking resolution, the syllabus mental health statement and the
+opening of fall voting — one write-up, three pieces of business.
+
+**Where the archive stands.** 61 years, 1967 events, 60 people have been president; 1111 pieces
+of legislation, every file present and a real PDF; 1306 volume-and-number citations, each opening
+its issue; 1308 quoted spans, none reaching fifteen words; 2651 recorded terms of office held by
+1809 people, 98% carrying an account of what the person did; 48 people under more than one
+spelling. `build.py`, `check_data.py` and `check_contrib.py` all clean. No published page changed
+this pass: both merges touched research notes and one internal register.
+
+**Still open.** The year-photo gaps at 1994-95 and 2000-01. The 1985 *Talisman* Holland portrait,
+which needs a second scan of that volume. The Ann Blair / Ann-Blair spelling, above. And the five
+`research-*` orphan branches from August, which have no merge base with `main` and must never be
+merged — anything wanted out of them has to be compared file by file and applied fresh.
