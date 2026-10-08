@@ -41510,3 +41510,81 @@ them carrying an account of what the person did. Unchanged by this merge, as it 
 Still open: nothing. The year-photo gaps at **1994-95 and 2000-01** stand, 1994-95 now with five
 specifically-read misses. The 1985 *Talisman* Holland portrait is the best single lead on the
 board and needs a second scan of that volume, not another run at the one we have.
+
+## 8 October 2026 — editor's run, fourth pass: an empty queue, and a bar note corrected
+
+**Nothing to merge, and nothing left to rot.** No pull request is open. The three that had been
+open since 4 August — #6 photographs, #7 the 1980s, #8 the 2020s — are all closed, so the earlier
+pass that judged them beyond rescue did the closing rather than leaving them. Every research
+pull request this archive has received is merged, the most recent being #703 earlier today.
+
+**Five `research-*` branches still sit on origin and none of them is work to land.**
+`research-profiles`, `research-roster-1970s-80s`, `research-roster-2010s`, `research-roster-2020s`
+and `research-senate` have tips dated 24 to 31 August and, every one of them, **no merge base with
+`main`** — `git merge-base` returns nothing. These are the orphan snapshots `AGENT-LANDING.md`
+warns about, not forks of the current repository, and merging one would delete the Herald index,
+the name aliases, the contributor layer and the validators. They are left alone deliberately. A
+later pass that wants anything out of them must compare file contents and apply it as a fresh
+commit, never merge.
+
+**Main was put through the same test a pull request gets, because main is what is live.**
+`build.py` completes clean, `check_data.py` and `check_contrib.py` both exit 0.
+`check_duplicates.py` reports the same four pairs and one shared-source group every recent pass
+has judged. All five are genuinely separate events and stay separate: the 1992 regent advisory
+committee was introduced on 28 January under its own bill document and died amended on 6 February
+under a *Herald* report; the Civil Liberties Union action was reported planned on 29 February and
+formally endorsed a month later on 28 March, in different issues; the plus/minus grading objection
+was voiced on 23 September and passed as legislation on 14 October, three weeks and two articles
+apart; and the designated driver cards were funded by Bill 97-3-F in November 1997 and distributed
+in February 1998. The three 2026-27 entries sharing *Herald* article 97612 report the bus-tracking
+resolution, the syllabus mental health statement and the opening of fall voting — one meeting
+write-up, three pieces of business, which is the case that rule exists to allow.
+
+**Two things were checked for faults and found sound.** Recording both so no one spends a run
+re-checking them. The chief justice of 2025-26 and 2026-27 appears as *Sophie Sterling* in the
+28 April 2026 entry and *Sophie Stirling* everywhere else; this is not a slip but a mapping made
+on 3 October, documented in `name-aliases.json`, which follows the 25th Senate's own minutes of
+14 April 2026 against a *Herald* that alternates the two spellings within one year. The variant
+stays in the event body as the paper printed it. Separately, today's re-serialisation of
+`_do-not-use.json` appeared in the diff to replace the narrow no-break space in the barred
+DALL-E Cherry Hall URL with an ordinary space, which would have silently unbarred a synthetic
+image in a photograph archive. It did not: the bytes are `e2 80 af`, the character itself written
+raw where it had been an escape, and the real harvested URL still resolves against the bar. The
+whole diff was an `ensure_ascii=False` pass.
+
+**What was cut.** One claim, and the frame it was written to bar stays barred. The 8 October entry
+refusing the 1976-77 John Evans portrait rested partly on the statement that the name "appears
+nowhere in `years.json`, in any year, in leaders or in organization", and that the portrait
+therefore "has no person in the record to attach to". Both are false. John Evans is on the
+Associated Student Government's Congress roll in **1975-76 and 1976-77**, with a sourced note and
+profile citing the minutes of 19 April 1977 — where he reported the Student Affairs Committee and
+moved to waive the rules on Bill No. 12, carried 31-0-1 — and the printed attendance roll effective
+6 April 1976. He also already has a published portrait, the 1975-76 crop from the Young Democrats
+group at p. 308 of the 1976 *Talisman*. That caption was read against the volume's own full text
+this run and matches the source note word for word: "(Front row) Tom Hayes, Steve Smith, Patricia
+Cook, Rickie Johnson, John David Evans", placing him fifth and last, exactly as the note claims.
+The bar stands, on better ground than it had — the p. 339 senior-portrait grid still records no
+left-to-right order, so the crop cannot say whose face it is, and the archive loses nothing by
+refusing a second portrait of a man who has a placed one. A caution was added for whoever reads
+p. 339: the record declines to link this man to the John David Evans who lost the 1976 Activities
+Vice President election to Tom Blair, so a senior portrait alone would not settle which he is.
+The old wording was wrong in the direction that invites a later run to waste a pass, the same
+fault the 1984 *Talisman* note carried until this morning.
+
+**Verified at source.** Twelve claims were opened rather than taken on trust, among them the
+1976 *Talisman* front-row caption above; the 1984 *Talisman* ASG composites, held on disk and in
+`photos.json` sourced to the page the corrected note now names; Ann Blair Thornton, named once in
+the archive as public relations chair in 2010-11 under the *Herald* of 19 November 2010 and
+nowhere in the 2008-09 her barred portrait was filed under, which is the chair-is-not-an-officer
+trap and the bar is right; and today's cut to the 26 March 1981 polling notice, which had
+attributed Robert Pillow's *Who Cares* column to a pre-vote issue. That column is written up
+correctly under its own issue, *Herald* 56:54 of 16 April 1981, so the cut lost no sourced fact
+and took an advance notice back to what it proves.
+
+The archive stands at **61 years, 1967 events, 60 presidents**, with 1111 pieces of legislation,
+1306 volume-and-number citations, 1308 quoted spans none reaching fifteen words, and 2651 recorded
+terms of office held by 1809 people, 98% of them carrying an account of what the person did.
+Unchanged by this pass, which touched one internal note and no published page.
+
+Still open: the year-photo gaps at **1994-95 and 2000-01**, and the 1985 *Talisman* Holland
+portrait, which needs a second scan of that volume rather than another run at the one we have.
