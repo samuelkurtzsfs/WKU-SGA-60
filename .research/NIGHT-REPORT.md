@@ -41836,3 +41836,8 @@ The Ann Blair / Ann-Blair spelling. The two over-claimed titles above, for a 196
 pass to settle from the articles themselves. The twenty-five remaining events whose bodies name a
 *Talisman* they do not cite, in volumes from 1971 and 1973 onward — the archive.org full-text
 route used tonight will close them a volume at a time.
+
+**How this pass landed.** The work is on `editor-1008-talisman-citations` and open as #706, verified
+and gated, but **not merged**: the merge of a pull request the same run opened is refused as a
+self-approval, which is the same constraint #704 hit and recorded. It needs a pass that did not open
+it, exactly as #704 did. Nothing else on the board is waiting.
