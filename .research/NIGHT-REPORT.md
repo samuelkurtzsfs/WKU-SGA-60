@@ -41326,3 +41326,108 @@ did.
 
 Still open: no pull requests. The year-photo gaps at **1994-95 and 2000-01** remain, and the
 officer-portrait gap stands where it did, at 217 slots across 174 people.
+
+---
+
+## 8 October 2026 — editor's run, second pass
+
+**No pull requests open.** The queue is empty, and the three branches this routine's brief still
+names as stale — #6 photographs, #7 the 1980s, #8 the 2020s — were closed long ago; the
+numbering is past 700. GitHub's GraphQL endpoint answers 403 from these sessions, which is what
+`gh pr list` uses and what has made earlier runs report a gate that is not there. The REST route
+and `git push` both work, so this run merged normally.
+
+Two branches, `research-editor-1003-second` and `research-editor-1007-evening`, still show a
+`data/` difference against main. Both are squash-merge artifacts: the trimmed turnout body and
+the bus-tracking second citation are already on main, checked by grep against the file rather
+than by reading the diff, and the superlative those passes cut is gone from it. There is no
+unlanded research on any branch.
+
+With no diff to review, the run swept the whole archive for the traps the checklist names
+instead of sampling one PR. Two of the sweeps came back clean and are worth recording as such:
+**no event is dated outside its own academic year**, and all **28 `campus: true` entries** are
+genuinely the world around student government rather than SGA's own business. The one entry the
+check flagged, 1993-94's storm damage of 19 April 1994, mentions the SGA election only to date
+itself; the tornado is the actor and the tag is right.
+
+The **advance-notice sweep** found 23 entries whose titles carry advance-notice phrasing, and the
+house style is holding: almost every one says in its own body that it is the notice and not the
+event, and declines to give a result. 1993-94's Weekend in the Woods records that the minutes say
+nothing about who went or what it cost; 2006-07's campus clean-up says no later minutes report
+the day; 1984-85's Bush visit says the index carries the notice and no report, so nothing is
+written about the visit. 2014-15's legal services clinic reads as an exception but is not: its
+twelve volunteer attorneys were recruited before opening and are what the notice proves.
+
+**A fault class the previous sweeps had not named, and one of them fixed.** Nineteen entries
+cite a single dated *Herald* issue and then attribute a report, an editorial or a column to a
+*later* issue that is nowhere cited. The clearest was **1980-81's "One polling place was
+announced for the ASG election"**, dated 26 March 1981 and citing only 56:48 of that day. Its
+body also carried the four candidates' surprise and the editorial on candidates not having to
+sweat out the result — both in 56:49 of 31 March — and Pillow's post-vote column "Who Cares?",
+which is in 56:54 of 16 April. The 26 March issue cannot report any of it. Both later issues were
+confirmed at their own landing pages rather than from the local index alone: 5649 carries the
+poll notice and nothing else of the three, and 5648 carries "Four Associated Student Government
+Candidates Get Surprise" and "Few Candidates Will Sweat Out Associated Student Government
+Elections". So 56:49 was **added as `src2`**, which rescues two claims at headline level, and the
+"Who Cares?" sentence was **cut**, because it rested on an uncited third issue and because the
+year page renders only `src` and `src2` — a `src3` validates but never reaches a reader. The
+column is real and is in 56:54 (dlsc_ua_records/5669) for a 1980s pass to write up from the
+article, not from its headline.
+
+The other eighteen are listed below for the decade routines. Each needs its later issue read and
+carried as a second citation, or the sentence trimmed. Seven candidates were dropped from the
+list on reading, because a cited issue may perfectly well report something due to happen the
+following week: 1968-69's constitution vote already names the later issue in its own label,
+and 1973-74's regent election, 1982-83's shuttle vote, 1984-85's Bush visit and 1997-98's driver
+cards are all forward-looking statements made in the issue cited.
+
+- 1971-72 12 Oct 1971, finances and scheduling · 1971-72 26 Jan 1972, King Kong
+- 1974-75 31 Jan 1975, ASG studies itself · 1976-77 28 Jan 1977, Volunteer Bureau
+- 1979-80 4 Mar 1980, activities officer's duties · 1980-81 25 Nov 1980, inactivity and image
+- 1980-81 12 Feb 1981, open house bill · 1981-82 11 Feb 1982, ASG and the UCB ask for money
+- 1983-84 1 Sep 1983, discount card · 1983-84 26 Jan 1984, student rights
+- 1987-88 10 Sep 1987, intercollegiate legislature · 1987-88 3 Dec 1987, impeachment dropped
+- 1987-88 23 Feb 1988, empty seats · 1988-89 3 Nov 1988, open slots and shuttle shelters
+- 1989-90 15 Feb 1990, Anti-Apathy Week · 1991-92 14 Apr 1992, the ballot issue
+- 1994-95 10 Nov 1994, resident assistant housing · 1998-99 22 Apr 1999, final rush of legislation
+- 2007-08 8 Apr 2008, the Red Towel Party complaint
+
+**A silent portrait gap, and two identifications barred before they could be published.**
+`photos.json` holds 1,399 leader portrait attachments over 1,113 distinct image files, but the
+about page's figure of 73 portraits counts only the year-page leader slots. Checking every
+portrait file against every reference in the built site, **27 attachments never render at all**.
+Twenty-four of them name people the record keeps in `organization` rather than in `leaders`, and
+the year page gives a portrait slot only to the latter — a rendering gap, not a data fault, and
+twenty-four sourced faces sitting unseen for the photograph routine or the build to take up.
+
+Three matched no person in their year in either place, and two of those are now **barred** in
+`data/photo-finds/_do-not-use.json`, which keeps the file on disk for review but out of the
+site. **John Evans, 1976-77**: its own source note admits the page is fixed, p. 339 of the 1977
+senior portraits, but that which face in the grid is his is not recorded — the same objection
+that kept Kelly S. Smith out of the 1983-84 composite, and the one the LaCivita portrait only
+survived because its caption placed him. **Ann Blair Thornton, 2008-09**: the source is a bare
+wp-content image URL from the *Herald* of 1 September 2011 with no article and no caption behind
+it, so no printed name ties the face to her, and the archive names her once only, as public
+relations chair in 2010-11 in the Focus Fridays entry of 12 November 2010 — a committee chair,
+not an officer, and not in the year the portrait is filed under. Neither had ever reached the
+site; both were unbarred and so sat ready to be re-proposed by the next merge, which is exactly
+how the Stacy Kitchens finding came back. **Tom Hayes, 1975-76** was left alone: a named
+sophomore portrait page is a sound identification route and nothing suggests the face is wrong,
+but he appears nowhere in years.json, so the year's record needs his service recorded or the
+portrait withdrawn.
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. Citations rose 1305 to
+1306 with the new `src2`, and `check_data.py` confirms it opens the issue it names. The build now
+withholds 5 photographs rather than 3. `check_duplicates.py` exits 1 whenever it has pairs to
+judge, which it does on untouched main too; it reports the same four pairs and one shared-source
+pair as every recent run — the 1997-98 driver cards three months apart, the 1991-92 regent
+committee bill introduced and then failed, the 1971-72 lawsuit planned and then endorsed, and the
+2003-04 grading stand taken and then legislated. Each is two events. Read again and left alone.
+
+The archive stands at **61 years, 1967 events, 60 presidents and 72 year photographs**, with 1111
+pieces of legislation, 1306 volume-and-number citations, 229 mirrored documents and 2651 recorded
+terms of office held by 1809 people, 98% of them carrying an account of what the person did.
+
+Still open: no pull requests. The nineteen later-issue entries above, less the one fixed. The
+twenty-four organization portraits that never render. The year-photo gaps at **1994-95 and
+2000-01**.
