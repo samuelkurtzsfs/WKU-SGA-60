@@ -42537,3 +42537,75 @@ warning stands and is three weeks old: `research-photos` is still the only routi
 now twice reported its own leads exhausted while in fact holding eight it had never tried, and the
 archive has not gained an event since 2 October. A routine that concludes it is finished is the one
 to audit, not the one to believe.
+
+---
+
+## 9 October 2026, editor's pass (evening) — an empty queue, so the audit turned on what shipped this morning
+
+**The queue is empty.** No open pull requests at all. PRs #6, #7 and #8, which the standing brief
+still names as stale branches from 4 August, are closed and have been for weeks; the brief can stop
+carrying them. The `research-photos` tip looks two commits ahead of `main` but a two-dot diff
+against it is empty — #717 was squash-merged this afternoon and nothing on that branch is unlanded.
+So there was no diff to review and nothing to merge.
+
+**The archive is sound as published.** `build.py` ran clean, `check_data.py` and `check_contrib.py`
+both exited 0. `check_duplicates.py` prints its usual five flags and all five are pairs earlier
+passes have already judged distinct. The least-examined of them was read again rather than taken on
+trust: 1997-98's two designated-driver entries are Bill 97-3-F, $900 of Campus Improvement funds,
+first reading 4 November 1997 and an X on the Pass line, and then the *Herald* of 17 February 1998
+announcing the cards would go out the next day. A bill and a distribution four months later. Two
+events, correctly separate.
+
+**With nothing in the queue the pass audited what reached the live site this morning instead.**
+#716 landed fifteen *Talisman* citations into `data/years.json` and merged at 12:37, so it is
+published. Sixteen claims across sixteen entries were checked against the archive.org full texts of
+the 1971, 1973, 1974, 1975 and 1976 *Talisman* — the real page text, not the index.
+
+**Fifteen held, most of them to the word.** The 1971 *Talisman* does say the Temptations kept a
+packed house hypnotized; the "top 40" line about Ravi Shankar is where the citation puts it, inside
+Lyne's first-person signed statement with the page-66 marker directly above it; p. 46 lists Dick
+Gregory on 12 November and Julian Bond on 13 December among the more controversial speakers and
+Kunstler, Devlin and Hayakawa as scheduled for the spring. The 1973 volume carries the fall
+entertainment loss and the Jethro Tull pay concert described as a major financial loss, the Activity
+Card programme begun two years earlier for part-time students and spouses at a nominal charge, V.D.
+Day open to Western students, high school students and the public, and Joe Cheak's Environmental
+Committee with its ecology trash cans, its later extension to cans and bottles and the paper money
+going back into the programme. The 1974 caption on p. 44 reads back-to-back performances in Van
+Meter on 3 March, and the Freddie King paragraph carries the screaming crowd, the Diddle acoustics
+and the audience drifting toward the doors halfway through the main act. The 1975 volume has the
+seven-member Bar-Kays, the *Hot Buttered Soul* and *Shaft* credit and ASG breaking even, and the
+Volunteer Bureau merger brought up at the last meeting of the fall semester and passed by better
+than 80 per cent. The 1976 volume has the Spinners drawing 7,500 as the second straight major
+promotion to make money, the impressions, the Supremes wigs, and Berlitz's standing-room-only
+audience with his figure of more than 100 planes and ships and 1,000 people since 1945.
+
+**One did not, and it is the one #716 was rewriting.** The Buffett entry for 19 April 1973 said the
+two sources class the night differently: the *Herald* billing a mini-concert, the *Talisman* placing
+him among the major concerts. The page does not place him anywhere. It is headed with ASG's spring
+concerts losing money, counts two major concerts, three mini-concerts and a Bluegrass Festival for
+the semester, names Stevie Wonder as the first major concert of the second semester, then says
+another major concert was scheduled later in the spring without naming it, and only then comes to
+Buffett. Reading that adjacency as a classification is an inference, and the entry published it as
+what the source says. Trimmed to the date, the levis and cowboy shirt, the two Martin guitars, the
+Bluegrass Festival closing the season ten days later, and the semester's counts, with the
+classification left open because neither source closes it.
+
+The lesson is worth more than the correction. #716 existed to fix an earlier Buffett over-claim, and
+its rewrite made the sentence sharper and newly wrong. A trim that adds a clause is a new claim and
+needs its own source, same as anything else.
+
+**The pipeline, which is the thing that actually needs a decision.** Sixteen routines exist on the
+account and two are enabled: the editor, three-hourly, and portraits, six-hourly. Everything that
+researches events is switched off — the six decade routines since 5 August, backlog and senate rolls
+since 25 August, person profiles since 24 August, the legislation harvest since 4 August. The
+standing brief's "four research routines running around the clock" describes none of the present
+fleet. This is the explanation for the line the last four reports have carried: the archive has not
+gained an event since 2 October because nothing is looking for events. Re-enabling a routine is the
+owner's call, not this pass's.
+
+**Still open.** The eight officer names #717 found had never been searched — Grace Hancock, Margaret
+Carter, Cindy Chiapetta, Callie Varner, Larry Murphy, Vanessa Scott, Justin McDole and Allie Payne —
+remain the portraits routine's first job, and it next runs at 19:52. The three *digitalcommons*
+access gates are still closed. Counts after this pass: 61 years, 1,967 events, 60 presidents, 2,651
+recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an account of what the
+person did, 1,111 pieces of legislation and 308 documents mirrored.
