@@ -1619,12 +1619,16 @@
     },
     {
      "date": "1968-12-03",
-     "title": "Sam and Dave play campus on 3 December",
-     "body": "Gail Barton reported in the Herald of 21 November that Sam and Dave would entertain on 3 December 1968. The same issue announced an Associated Students dance that Friday night and carried Bruce Tucker arguing that the lectures lacked spark and needed a student forum.",
+     "title": "Sam and Dave booked to play campus on 3 December",
+     "body": "Gail Barton reported in the Herald of 21 November that Sam and Dave would entertain on 3 December 1968. The same issue announced an Associated Students dance that Friday night and carried Bruce Tucker arguing that the lectures lacked spark and needed a student forum. Only the announcement has been read here: the Herald of 5 December, two days after the date, carried Linda Connelly and Gail Barton on what Sam and Dave said about soul music, but the archive holds the index entry for that item and not its text, so whether the pair played is not established.",
      "kind": "concert",
      "src": {
       "label": "Herald 48:11, 21 Nov 1968",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2092/"
+     },
+     "src2": {
+      "label": "Herald 48:12, 5 Dec 1968",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/2093/"
      }
     },
     {
@@ -6109,12 +6113,16 @@
     {
      "date": "1974-03-03",
      "title": "Harry Chapin opens the major-mini concert series",
-     "body": "ASG scheduled the folk singer and balladeer Harry Chapin for two shows in Van Meter on 3 March 1974. Activities vice president Tom LaCivita called it the first example of his new concept of major-mini concerts, in which medium-priced performers were brought in, sometimes free and sometimes as a pay event.",
+     "body": "ASG scheduled the folk singer and balladeer Harry Chapin for two shows in Van Meter on 3 March 1974. Activities vice president Tom LaCivita called it the first example of his new concept of major-mini concerts, in which medium-priced performers were brought in, sometimes free and sometimes as a pay event. The 1974 Talisman repeats the booking in the same terms in its running text, but its photograph of Chapin on p. 44 is captioned as showing him during two consecutive performances in Van Meter Auditorium on 3 March, which records the shows themselves and not the booking.",
      "kind": "concert",
      "src": {
       "label": "College Heights Herald 53:42, 26 Feb 1974",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/3525",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=4534&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "1974 Talisman, p. 44",
+      "url": "https://archive.org/details/talisman1974west"
      }
     },
     {

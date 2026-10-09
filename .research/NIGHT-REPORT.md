@@ -42152,3 +42152,117 @@ radio-programme page, and the twenty-four *Talisman* references still lacking th
 Added to it: the three flagged items above. The research pipeline observation from this morning
 stands — `research-photos` is still the only routine pushing, and this run of it produced eight
 attachments and no new photograph.
+
+## 9 October 2026, later — an empty queue, and the two flagged concert titles settled
+
+**Nothing to merge.** No pull request is open. Numbering is at #711, so the #6, #7 and #8 the
+standing brief calls stale were closed long ago and are not waiting on anything. `gh pr list`
+answers 403 because GitHub's GraphQL endpoint is closed to these sessions, not because access is
+gated: the REST routes work, and this pass used them throughout. Full mode, with nothing in the
+queue to gate.
+
+**The current year read at source, ten claims across five articles.** With no diff to review, the
+sample was taken from the live record instead, and all ten held. The four entries drawn from the
+*Herald* of 29 September verify line for line: the six senators the chief justice swore in and
+their constituencies, Referendum 10.2.1 and the convention of two cabinet members and six senators
+it provides for, the twelve further dental hygiene vouchers at $300 against twenty-four already
+spent, and Organizational Aid closing on 52 applications with the Bluegrass Leadership Scholarship
+widened to Illinois and Indiana. The three entries on *Herald* 97612 verify likewise, and reading
+them side by side confirms what the duplicate checker's same-source flag has been judged to be
+every night: one article reporting three separate pieces of business. The $113,481 budget of
+1 September is the figure the paper gives, with stipends at $27,000 and scholarships at $23,000 the
+two lines the entry names, and the two senator-at-large seats it records as unfilled are unfilled
+in the article's own last paragraph. Constitution Fest checks out to the paragraph, Lasley's 250-odd
+pocket constitutions included, and the officers really were grilling.
+
+Two entries deserve their own note for being better than they had to be. The 23 September entry on
+the opening of voting refuses to fix the day, because the paper dated it only as "today" in an
+issue published the morning after the meeting it reports; it says so in the body and leaves the
+reader the ambiguity rather than resolving it silently. The non-traditional scholarship entry
+records that the *Herald* put the orientation raffle at 1,744 entries and an interview a week later
+at 1,174, and declines to choose. That is the house style working as intended.
+
+**A sourcing gap I thought I had found was not there.** Two late-September entries carry facts
+their first citation does not hold — Isaiah Wilson's co-authorship of Resolution 4.6 F, and the
+4 p.m. Friday close of the fall election. Both already carry the second source that does hold them,
+the *Herald* of 15 September and of 23 September respectively. The entries are correct as they
+stand and nothing was changed.
+
+**The two over-claimed concert titles are settled, and they settle in opposite directions.**
+Both have been flagged and left twice. The 1973-74 Harry Chapin title is **right**, on evidence
+found tonight: the 1974 *Talisman*, read in full text on archive.org, prints a photograph of him on
+p. 44 captioned as taken during two consecutive performances in Van Meter Auditorium on 3 March,
+and the volume's own index puts him on that page. The shows happened; the title stands, the
+yearbook is now cited beside the *Herald* notice, and the body says plainly that the caption
+records the performance while the running text repeats only the booking. It is the same split
+between caption and running text the Benjamin Mays entry already records.
+
+The 1968-69 Sam and Dave title was **wrong**, and is now trimmed to the booking it rests on. The
+complete unfiltered index holds exactly one line for the act in sixty years of the paper, and it is
+Gail Barton's announcement of 21 November 1968, printed twelve days ahead. What the index does hold
+is a strong lead the flag had missed: the issue of 5 December, two days after the date, carries
+Linda Connelly and Gail Barton on what Sam and Dave said about soul music. That is a retrospective
+item and very likely the report, but only its index line can be read here, so the entry now cites
+it as a lead and says in terms that whether the pair played is not established. A later pass with
+the article in hand can restore the stronger title in one edit.
+
+**The PDF route is still shut.** The *Herald* of 5 March 1974, which carries Scott Johnston's
+"Good Things Come in Threes for Concert-goers" two days after the Chapin shows and is the obvious
+report, could not be read: `viewcontent.cgi` answers 403 behind a Cloudflare challenge, retried
+once after ninety seconds as the pacing rule requires. The landing pages themselves serve fine.
+The archive.org full-text route is the one that worked, and it is worth saying that it carries only
+1973, 1974, 1975, 1977, 1981 and 1987 of the WKU volumes — there is no 1969, which is why Sam and
+Dave could not be closed the same way Chapin was.
+
+**Two photograph credits corrected.** Amy Wyer's credit named a photographer, Camryn Deskins, in
+two of its three year entries. The attribution is in neither the cited article nor the paper's
+media record for the frame, and the name appears nowhere else in the archive except those two
+labels; the article pages byline Jack Dobbs. The clause is cut from both. The identification itself
+is sound and untouched: the caption names Wyer being sworn in as SAVES chair, the article body has
+the SAVES chair position filled by her, and the page carries the paper's own note that an earlier
+version of the caption gave the wrong position and was corrected — the corrected wording is what
+the archive quotes.
+
+Kaylee Egerer's 2011-12 credit cited a bare upload path with the label "only picture found". A JPEG
+carries no caption, so a reader following it had no way to check anything. It now cites the article
+the same file's 2010-11 credit cites, verified tonight: the caption names her as Campus Improvements
+Chair celebrating the DUC renovation resolution, and the credit now discloses, as every other reuse
+in `photos.json` does, that the portrait is the 2010-11 one and that she was Speaker of the Senate
+in the year it is reused into.
+
+**Flagged, not fixed.** The 22 February 2011 date both Egerer credits and two 2010-11 event
+citations give for that article is a day before the date the page displays, which reads February 23;
+the page's own machine-readable timestamp, converted to Central time, falls on 22 February, so the
+paper disagrees with itself and the archive's existing label is defensible. Left as it is rather
+than changed on one pass's reading. Brigid Stakelum's spelling and the Egerer photographer credit
+noted this morning are unaffected by tonight's changes.
+
+**Traps swept.** The only two entries whose titles claimed more than a notice proves are the two
+settled above, and the sweep of the current year found no third. No committee chair promoted to
+officer: Egerer is recorded as Campus Improvements chair in 2010-11 and Speaker in 2011-12, which is
+what the sources say, and Wyer stays a committee chair. Nobody matched by surname alone. No changed
+surname merged. No April result in the wrong academic year. Nothing touches the settled facts;
+LaCivita appears here as 1973-74 activities vice president, which sits beside the 1974-75 portrait
+ruling without disturbing it. Nothing about a living person goes past its source, and the one
+unsupported personal attribution in the diff — a photographer's name — is cut. No contributor edit
+in this diff.
+
+**Duplicates judged, all five groups stay.** The same four title pairs and one same-source group,
+and the 2026-27 group was this time read at the article rather than taken on trust.
+
+**Where the archive stands.** 61 years, 1967 events, 60 people have been president; 1111 pieces of
+legislation, every file present and a real PDF; 1307 volume-and-number citations, each opening its
+issue; 1315 quoted spans, none reaching fifteen words; 2651 recorded terms of office held by 1809
+people, 98% carrying an account of what the person did; 48 people under more than one spelling.
+`build.py`, `check_data.py` and `check_contrib.py` all clean. Event count unchanged: this pass
+changed two titles and added two citations, and invented nothing.
+
+**Still open.** The year-photo gaps at 1994-95 and 2000-01. The 1985 *Talisman* Holland portrait.
+The Ann Blair / Ann-Blair spelling. The four uncitable 1971-volume entries. The twenty-four
+*Talisman* references still lacking the volume they name — the archive.org route closes these a
+volume at a time, and 1974 was read tonight for the Chapin caption, so that volume's references are
+the cheapest next ones. The 5 March 1974 *Herald* report on the Chapin shows and the 5 December 1968
+report on Sam and Dave, both blocked only by the PDF gate. The research pipeline observation stands:
+`research-photos` is still the only routine pushing, and it has pushed nothing since #710.
+2026-27 is current and not behind — SGA did not meet on 6 October because of fall break, and the
+*Herald* of 29 September says the senate reconvenes on 13 October.
