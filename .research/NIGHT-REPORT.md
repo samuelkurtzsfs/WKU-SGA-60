@@ -42266,3 +42266,93 @@ report on Sam and Dave, both blocked only by the PDF gate. The research pipeline
 `research-photos` is still the only routine pushing, and it has pushed nothing since #710.
 2026-27 is current and not behind — SGA did not meet on 6 October because of fall break, and the
 *Herald* of 29 September says the senate reconvenes on 13 October.
+
+## 9 October 2026, later still — the photograph note merged after a recount, and one committee brought to one spelling
+
+**Reviewed:** one open pull request, #713 "Research: photographs (rolling)". The three branches this
+routine was told to expect as stale — #6, #7 and #8, open since 4 August — are already closed
+unmerged, so there was nothing to rescue or close there. Nothing else is open. The GraphQL endpoint
+answers 403 in this container, which is not the platform gate: REST works, `git push` works, and both
+merges below went through, so this was a full pass and not a review-only one.
+
+**#713, merged after one correction.** The diff was a single research note in `.research/` — no
+`data/` change, no new historical claim, no new citation. `.research/` is excluded from the Vercel
+deploy and `build.py` reads only `branches-checked.json` and `branches-unverified.json` out of it, so
+nothing in this diff could reach the published site. The traps checklist had no purchase on it: no
+advance notice written up as a report, no committee chair promoted to officer, no surname-only match,
+no April result filed forward wrongly, nothing touching the settled facts, no living-person detail
+past its source, no contributor edit.
+
+Its claims are operational, so they were checked as such rather than waved through. Against the data,
+all confirmed: priority 1's four portraits (Todd 2004-05, Dawson 2004-05 and 2005-06, Johnson 2006-07
+and 2007-08, Gilley 2008-09) are all present; priority 2's "zero missing" holds exactly, 73 leader
+records and none without a `photos.json` entry; priority 4's two years, 1994-95 and 2000-01, are
+indeed the only two absent from the `years` list. The three gates were retested cold and all three
+reports are accurate: `viewcontent.cgi` returned 403 under full navigation headers, and both
+`web.archive.org` and `archive.ph` reset mid-handshake with the same `ws_closed_mid_exchange` the
+note names. The caption sweep was confirmed to be working, which matters when the finding is a
+negative — the positive control returns Mishchuk's captions, and of the twelve names Hughey returned
+no posts and Crowley ten, both as reported.
+
+**What was corrected.** The priority 3 paragraph read 215 slots across 174 names, "101 of them
+already barred". The recount gives 217 slots and 176 names, which is an immaterial difference, but
+the 101 was a misread: it is the number of distinct names in `_do-not-use.json` altogether, not the
+overlap with the faceless set. Seventy-four of those barred names either hold a portrait from another
+source or sit in no counted officer slot, so only **27** of the 176 carry a bar. As written the note
+implied 73 names remained that no bar closes off, when the figure is **149** — understating the
+remaining queue by half, which is how a run skips names that were never tried. Corrected in place
+with the reasoning left visible, and the denominator in the "for the next run" section moved to 176.
+Two looser phrasings were left but flagged: priority 4 called "years with no photograph at all" when
+both years do carry leader portraits, and Mishchuk's portrait described as coming from "exactly this
+kind of caption" when it in fact rests on a different article than the search surfaces, whose top
+hits for her are photographer credits rather than depictions — a distinction worth keeping sharp
+while main is cutting credit-based identifications.
+
+**One thing found by spot-checking, and fixed on its own branch (#714).** Verifying the three 2026-27
+entries that share the 23 September meeting article turned up a committee rendered two ways. All
+three entries themselves held up at the article: the unanimous passage of Resolution 4.6 F, Terry's
+pitch and his TopNet remark, Smith sworn in and appointed as the second student member of a committee
+that had just doubled its student representation, Tucker as homecoming-queen nominee, Barker on the
+Bluegrass Leadership Scholarship and on the fall election's engagement, and the candidate arithmetic
+— twenty freshmen, six from Gatton, one graduate and one international — coming to 28. The two
+details not in that article, Isaiah Wilson's co-authorship and the previous week's introduction, are
+carried on `src2` and were confirmed at the 15 September report, which names both authors and says
+the resolution would be voted the following week. The date ambiguity on the election entry is handled
+honestly in the entry itself and needed nothing.
+
+What did need something: the Mental Health and Wellbeing Committee appeared nineteen times as
+"Wellbeing" and four as "Well-Being", and in both 2021-22 and 2026-27 under both spellings inside the
+same year, so one body read two ways on one site. The four were brought to the dominant form across
+Cissell's profile, Pierce's profile, the 30 January 2024 appointment of Sophia Bryant, and the
+22 September 2026 syllabus entry. No claim, date, person or source moved. The official spelling is
+**not** settled by this and is not claimed to be: the *Herald* of 23 September 2026 calls the body the
+"SGA Mental Health Committee" and writes "well-being" only of the statement it produced, so the source
+behind the newest of the four supports neither form. A run that can reach the committee list on
+wku.edu/sga should settle it — and if it proves hyphenated, that flips the other nineteen, not these
+four.
+
+**Duplicates judged, all five groups stay, and this time each was read rather than assumed.** The
+1997-98 pair is the $900 funding bill of 4 November against the Herald's report that the cards would
+go out on 18 February, three and a half months apart. The 1991-92 pair is Bill #92-01-S introduced on
+28 January against its defeat after amendment on 6 February. The 1971-72 pair is the Civil Liberties
+Union planning court action on 29 February against Associated Students endorsing the suit a month
+later. The 2003-04 pair is the September meeting where members lined up against plus/minus grading
+against the unanimous vote three weeks on, under different sources. The 2026-27 same-source group is
+three pieces of genuinely different business from one meeting report. Nothing to merge.
+
+**Where the archive stands.** 61 years, 1967 events, 60 people have been president; 1111 pieces of
+legislation, every file present and a real PDF; 1307 volume-and-number citations, each opening its
+issue; 1315 quoted spans, none reaching fifteen words; 2651 recorded terms of office held by 1809
+people, 98% carrying an account of what the person did; 48 people under more than one spelling.
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. Event count unchanged: this pass
+corrected a count in a research note and a committee's spelling in four places, and invented nothing.
+
+**Still open.** Everything the previous pass listed, unchanged by this one: the year-photo gaps at
+1994-95 and 2000-01, the 1985 *Talisman* Holland portrait, the Ann Blair / Ann-Blair spelling, the
+four uncitable 1971-volume entries, the twenty-four *Talisman* references still lacking their volume
+with 1974 the cheapest next, and the two *Herald* reports blocked only by the PDF gate. Added
+tonight: the Mental Health and Wellbeing Committee's official spelling, pending a look at
+wku.edu/sga. On the pipeline, `research-photos` remains the only routine pushing, and what it pushed
+tonight was a note rather than a portrait — the officer-portrait gap now stands at 217 slots across
+176 names with 149 of them untouched by any bar, and the 1990s and early 2000s part of that has no
+local avenue at all while TopSCHOLAR and Wayback stay shut.
