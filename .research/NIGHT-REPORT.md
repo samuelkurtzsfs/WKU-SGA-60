@@ -42473,3 +42473,67 @@ spelling, the third citation slot, and the *Talisman* citation gap, which is dow
 the six that were never gaps plus the one Kunstler photograph. On the pipeline, the warning from the
 last three passes stands and is now a fortnight old: `research-photos` is the only routine pushing,
 it reports its own leads exhausted, and the archive has not gained an event since 2 October.
+
+---
+
+## 9 October 2026, editor's pass (evening) — #717 merged after a correction; a "worked queue" that was eight names short
+
+**What was open.** One pull request, #717, `research-photos`, the photograph routine's second pass of
+the day. PRs #6, #7 and #8 — the three 4 August branches named as stale in the standing brief — are
+already closed and unmerged; nothing is rotting there and the brief can stop carrying them.
+
+**What was in it.** A single file, `.research/photo-run-2026-10-09-second.md`, 69 lines, and nothing
+else. No change to `data/years.json`, `data/photos.json` or `data/photos/`. So nothing in this
+diff could reach the public site, and the review was a review of a working note rather than of a
+published claim — which does not make it optional, because a working note is what tells the next
+run where to look.
+
+**What held up.** Everything checkable, and it was checked rather than taken on trust. The officer
+gap: `portrait_gap.py` re-run on the branch returns 189 slots short a face, 159 people, 157 with no
+portrait anywhere — the note's figures to the digit. Priorities 1 and 2: Nick Todd, Katie Dawson,
+Jeanne Johnson and Reagan Gilley all still carry a portrait, and all 73 `leaders` records across the
+61 years carry one for their own year, 66 distinct people. The first access gate, retested cold from
+this session: `digitalcommons.wku.edu/cgi/viewcontent.cgi` on article 7642 answered HTTP 403 with
+Cloudflare's "Just a moment..." challenge, 5,931 bytes against the note's 6,038 — the same block,
+and the note is honest about it.
+
+**What did not.** The note's central conclusion. It reported that 158 of the 159 gap names had
+already been searched and that "there is no untried name left," and restated it as a worked queue
+whose only remaining route was a closed gate. Matching all 159 names from `portrait_gap.py --list`
+against the 53 `photo-run-*.md` logs and `NIGHT-REPORT.md`, with accents and apostrophes normalised
+so a spelling variant could not hide a hit, the figure is 151, not 158. Eight names have no recorded
+photograph search anywhere: Grace Hancock (1994-95), Margaret Carter and Cindy Chiapetta (1995-96),
+Callie Varner (1997-98), Larry Murphy (1998-99), Vanessa Scott (2008-09), Justin McDole (2012-13 and
+2013-14) and Allie Payne (2014-15). All eight do appear elsewhere under `.research/` — in
+`officers-eras.json`, `profiles-done.txt` and the 2003-09 senate rolls — which is roster and profile
+work, not a photograph search, and is what a plain grep of the directory mistakes for one. None has
+an entry in `data/name-aliases.json`, so no alias was masking an earlier attempt. Three of the eight
+sit in 2008-09 and later, the wkuherald.com era, and wkuherald.com answered HTTP 200 from this
+session while all three gates were shut — so the note's "only a gate reopening can close more of
+this" was wrong about the route as well as about the names. A search there for McDole, Payne and
+Scott returned nothing parseable, which under this project's own rule proves nothing either way and
+is not recorded as a negative.
+
+**What was done about it.** Rescued, not rejected: the verified three-quarters of the note is worth
+keeping and the overclaim was one section. The passage now carries the real figure, a table of the
+eight names with their years and offices, the reason a grep of `.research/` reads them as searched,
+and an instruction to search them before anyone calls the queue finished. The headline carries an
+editor's note saying which conclusion failed. The leader-portrait line, which read "61 leader
+portraits across 73 `leaders` records" — two different counts in one breath — now reads what the
+data says. Then merged.
+
+**Where the archive stands.** Unchanged, as it must be for a diff that touched no data: 61 years,
+1967 events, 60 people have been president; 1111 pieces of legislation, every file present and a
+real PDF; 1307 volume-and-number citations; 1315 quoted spans, none reaching fifteen words; 2651
+recorded terms of office held by 1809 people, 98% with an account of what the person did; 48 people
+under more than one spelling. `build.py`, `check_data.py` and `check_contrib.py` all exit 0.
+`check_duplicates.py` prints the same four pairs and one same-source pair as last pass, all of them
+judged distinct before and all pre-existing on main: this branch added no events, so it could not
+add a duplicate.
+
+**Still open.** Everything the last pass listed, unchanged, plus the eight unsearched names above,
+which are now the photograph routine's first job and do not need a gate to start. The pipeline
+warning stands and is three weeks old: `research-photos` is still the only routine pushing, it has
+now twice reported its own leads exhausted while in fact holding eight it had never tried, and the
+archive has not gained an event since 2 October. A routine that concludes it is finished is the one
+to audit, not the one to believe.
