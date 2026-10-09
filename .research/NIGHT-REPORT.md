@@ -42356,3 +42356,120 @@ wku.edu/sga. On the pipeline, `research-photos` remains the only routine pushing
 tonight was a note rather than a portrait — the officer-portrait gap now stands at 217 slots across
 176 names with 149 of them untouched by any bar, and the 1990s and early 2000s part of that has no
 local avenue at all while TopSCHOLAR and Wayback stay shut.
+
+## 9 October 2026 — editor's run, midday: an empty queue, fifteen Talisman citations landed, and the third citation slot opened
+
+**Nothing to merge.** `gh`'s GraphQL path is refused here, but the REST path answers, so the queue
+could be read properly rather than guessed at: no pull request is open. The three branches this
+routine's brief still names as stale — #6 photographs, #7 the 1980s, #8 the 2020s — were closed on
+18 August and need nothing. Of the fourteen `research-*` branches on origin, thirteen are the
+orphan August snapshots with no merge base against `main`, and `research-photos`, the only routine
+still pushing, is level with `main` after #713. `build.py`, `check_data.py` and `check_contrib.py`
+all exit 0 on `main` as it stands.
+
+**The committee spelling is settled, and on SGA's own authority.** The previous pass brought four
+stray "Well-Being" renderings to the dominant "Wellbeing" and said plainly that the official form
+was *not* thereby settled — the *Herald* of 23 September 2026 supports neither. SGA's own senate
+committee page, read today at `wku.edu/sga/legislative/senate_committees.php`, names the body the
+**Student Mental Health and Wellbeing Committee** four times over, unhyphenated. The twenty-three
+entries already standing are right and nothing needed changing. Two things are worth leaving on the
+record. The current name carries a leading "Student" the archive does not use; that is not
+retroactively imposed here, because what the body was called in 2021-22 is a question for
+2021-22's sources, not for a page published in 2026. And the chair there today is Tyreesha Morris,
+which is 2026-27 roster material for whichever routine next works that year.
+
+**Fifteen entries that named a *Talisman* now cite one.** Twenty-four entries attributed a fact to a
+yearbook they did not link. Six of those are not citation gaps at all — the *Talisman* appearing as a
+student publication coming to SGA for money, or as a name on a 1979 history page. Of the rest, every
+single claim was read against the volume's own full text on archive.org, which is not rate limited,
+and every one held:
+
+- **1972-73, four entries, the 1973 volume's Associated Students section.** The activity card
+  "begun two years ago" admitting part-time students and spouses at a nominal charge; the monetary
+  loss on fall entertainment, carried with no figure, exactly as the entry says; "V.D. Day", run with
+  Operation Venus and open to Western students, high school students and the public; and the paper
+  recycling, with the ecology trash cans, the later extension to cans and bottles, and Joe Cheak
+  heading the Environmental Committee. The symposium took two passes to find because the volume
+  spells it "veneral".
+- **1973-74, three entries, the 1974 volume's Entertainment section.** Seals and Crofts before one of
+  the largest crowds ever to see a show in Diddle Arena, the best campus concert in more than a year
+  and the first free one since the fall of 1972, scheduling and money having prevented it — all four
+  clauses are in the volume. Freddie King the biggest crowd pleaser, back for encores, Diddle's
+  acoustics against Marshall Tucker and the crowd drifting doorwards halfway through the main act.
+  Kool and the Gang **scheduled** to close the year, which is how the entry already had it.
+- **1974-75, two entries, the 1975 volume.** The bluegrass festival of 28 August moved to Van Meter
+  by rain under Lester Flatt and the Clinch Mountain Clan; Severinsen at Homecoming on 11 October;
+  America free on 7 November, named there as the year's first free concert. The picket figure checks
+  out from an unexpected direction: the volume's narrative says only "a small group", but Severinsen
+  thanked the audience for braving the lines and granted "the 30 or so demonstrators" their
+  privilege, so the entry's "about 30" is sourced.
+- **1975-76 and 1986-87.** James Taylor, where the volume both lists him among the year's concerts
+  and, before the night, records only that he was scheduled — which is precisely the distinction the
+  entry draws. And the Downing University Center hangout, one of the two main projects the 1987
+  volume credits ASG with, the other being campus lighting.
+
+**The third citation slot is open now, and three 1971-volume entries used it.** Events rendered
+`src` and `src2` only; the organization layer has rendered three all along, which is why 236 `src3`
+sources sit in that layer and none in events. Three identical two-line additions to `build.py` close
+the gap, additively — no event carried a `src3` before this pass, so nothing moved until the
+citations were added. On the way to that I briefly thought those 236 org citations were not
+rendering at all; they are. My first test matched raw labels against escaped HTML, so every label
+containing a quotation mark read as missing. Re-run with the escaping handled, 30 out of 30 sampled
+labels render. Worth recording because the false positive was convincing.
+
+So Dick Gregory, dated to 12 November by the volume against the *Herald*'s start of the month, and
+Hayakawa, listed there with Kunstler and Devlin as the spring speakers Associated Students had
+scheduled, both now cite p. 46, which is the revised-speaker-policy page itself. The '1776'
+co-sponsorship cites Lyne's own signed statement on pp. 66-67, where he writes of entertainment
+expanding into a cultural programmes concept and gives '1776' as his example. **The fourth of that
+set stays uncited on purpose.** The Kunstler entry says the volume *shows* Lyne hosting him — a
+photograph, not a sentence, and a photograph is not in the text layer. It is left alone rather than
+given a page I would be guessing at.
+
+**One title cut back to what its sources prove.** "Jimmy Buffett played an ASG mini-concert" took its
+classification from the *Herald* of 17 April 1973, printed two days before the night — an advance
+billing. The retrospective volume disagrees: it counts two major concerts, three mini-concerts and a
+Bluegrass Festival for the spring and puts Buffett among the major ones, following Stevie Wonder.
+The title now reads "Jimmy Buffett played for ASG on 19 April", which both sources support, and the
+body states the disagreement instead of silently taking the advance notice's side. No fact lost.
+
+**One event written up twice, now written up once.** `check_duplicates.py` compares title words and
+so never saw this: two 1972-73 entries dated 19 September 1972, off the same *Herald* issue, both
+carrying the activity card. "Funds fly as Chicago is booked" listed it third among a grab-bag of that
+issue's business while "ASG activity card goes on sale" is about it and now cites the yearbook too.
+The clause is gone from the composite; the fact is wholly carried by the dedicated entry, from the
+same source. Titles untouched.
+
+**Traps swept on my own diff.** No advance notice written up as a report — the one advance notice in
+play is the Buffett billing, and it is the thing this pass stopped treating as a finding. No
+committee chair promoted to officer: Joe Cheak is named as heading the Environmental Committee and
+is recorded as nothing else, and Tyreesha Morris's chairmanship is left in this report rather than
+written into a roster. Nobody matched by surname alone. No changed surname merged. No April result
+moved. Nothing touches the settled facts. No living person's detail goes past its source. No
+contributor edit in the diff.
+
+**Duplicates judged, all five groups stay,** and each was read again rather than carried over:
+designated driver cards funded in November 1997 and distributed three and a half months later; the
+regent advisory committee bill introduced 28 January 1992 and killed on amendment on 6 February; the
+Civil Liberties Union action planned in February 1972 and endorsed a month on; the plus/minus
+objection of September 2003 and the unanimous vote of October under different sources; and the two
+2026-27 entries sharing *Herald* 97612, which is one meeting report covering two different pieces of
+business.
+
+**Where the archive stands.** 61 years, 1967 events, 60 people have been president; 1111 pieces of
+legislation, every file present and a real PDF; 1307 volume-and-number citations, each opening its
+issue; 1315 quoted spans, none reaching fifteen words; 2651 recorded terms of office held by 1809
+people, 98% carrying an account of what the person did; 48 people under more than one spelling.
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. Event count unchanged, and the
+volume-and-number counter is unchanged too, correctly: a yearbook section is not a volume-and-number
+citation. This pass added fifteen citations, corrected one title and removed one duplicated clause,
+and invented nothing.
+
+**Still open.** The year-photo gaps at 1994-95 and 2000-01. The 1985 *Talisman* Holland portrait. The
+Ann Blair / Ann-Blair spelling, still with no alias recorded. The two over-claimed 1971-72 titles.
+The radio-programme page. The two *Herald* reports blocked only by the PDF gate. The Kunstler
+photograph above, which needs a pass that can render page images. Closed tonight: the committee
+spelling, the third citation slot, and the *Talisman* citation gap, which is down from twenty-four to
+the six that were never gaps plus the one Kunstler photograph. On the pipeline, the warning from the
+last three passes stands and is now a fortnight old: `research-photos` is the only routine pushing,
+it reports its own leads exhausted, and the archive has not gained an event since 2 October.
