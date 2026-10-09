@@ -42070,3 +42070,85 @@ Ann-Blair spelling, still with no alias recorded. The two over-claimed 1971-72 t
 radio-programme page. And the entries that still name a *Talisman* they do not cite in the 1972,
 1973, 1974, 1975, 1976 and 1987 volumes — twenty-four remain, of which about ten are not citation
 gaps at all but references to the *Talisman* as a student publication coming to SGA for money.
+
+## 9 October 2026 — editor's run, second pass: one photograph PR merged, four duplicate files out
+
+**#710 merged, after four corrections.** The only open pull request, and the first research push
+since the morning's empty queue. It attached eight officers to portraits across eight years. Every
+one of the eight names an office the archive already records for that person in that year, so the
+findings themselves were sound and all eight stand. What needed work was the files and the credits.
+
+**The run had re-downloaded four photographs the archive already held.** `2018-19-amy-wyer.jpg`,
+`2017-18-jayden-thomas.jpg`, `2019-20-brigid-stakelum.jpg` and `2022-23-griffin-plumb.jpg` are all
+on `main`, cropped to the subject. The run found the same four frames in the Herald photo cache and
+pulled them again at full size under four new filenames. The new copies were the uncropped 1501px
+frames with other people in them, so each was the worse portrait as well as the second one: Plumb's
+existing file is a 440×500 head and shoulders, the new one a 1501×930 frame carrying two other
+people. The four entries now point at the copies already on disk and the duplicates are deleted.
+The merged diff adds no image file at all — 72 lines of `data/photos.json` and nothing else.
+
+The cause is worth recording because it will recur. The gap list was built from officers lacking a
+portrait *in a given year*, which is the right question to ask. But having found a frame, the run
+never checked whether that frame, or any portrait of that person, was already in `photos.json`.
+All four people already had one. The existing entries cite the same four image URLs the run
+downloaded from, so a check keyed on the URL would have caught every case. `check_data.py` cannot:
+its duplicate rule is one name, one year, one entry, and these were four different years.
+
+**Three credits claimed more than their source.** Brigid Stakelum's said the frame matched the
+chairmanship recorded for her in 2018-19. The photograph is of 12 February 2020 and names the
+Public Relations chairmanship she held in 2019-20 — she held it both years, so the entry survives,
+but it now says which year the frame is from. Jayden Thomas's gave no sign that a frame of 28 March
+2018 falls in 2017-18, where every other reuse in the run disclosed its year, and it carried a
+detail about his personal life that did nothing to establish who was in the picture; cut, on the
+living-people rule and because a credit line's job is identification. Amy Wyer's cited the bare
+`.jpg` in place of the article page her existing entry cites.
+
+**Every citation now opens on something that carries the caption it quotes.** Three of the four new
+credits cited bare upload paths. A JPEG has no caption, so a reader following the URL to check the
+quoted words finds an image and no way to verify it. `wp-json/wp/v2/media?search=<filename-stem>`
+resolves an upload path to the paper's media record, which returns the caption as text; it worked
+for all four (ids 21468, 25088, 16574, 70142). Wyer now cites the article page, the other three the
+media record, which is what the Savanna Kurtz entry already did.
+
+**Spot check: all eight, opened at source.** Egerer's article was read in full and is the strongest
+entry in the run — the caption gives "Kaylee Egerer, Campus Improvements Chair" and the page
+independently confirms the $49,128,545 cap this year's events already carry. Kurtz's media record
+returns its caption verbatim. The four new frames' captions were checked word for word against
+`data/herald-photos.json` and then against the live paper. Both claims made from reading an image
+were checked by opening it: Plumb's printed name card does read his name and Senator at Large
+directly below him, and Wyer is the only person taking the oath in her frame. Both held. Boka and
+Seay are reuses of established portraits, disclosed as such, and Seay attaches correctly through
+the Nicki Taylor alias.
+
+**Traps swept.** No advance notice written up as a report — this diff carries no events. Committee
+chairs are recorded as committee chairs and not promoted to officers; all eight subjects are chairs
+or a vice president and the overlay attaches them through the chair path, not the leaders path.
+Nobody matched by surname alone: every identification is a full name in an SGA-captioned frame.
+No changed surname merged, and Savanna Kurtz is not conflated with Sam Kurtz, who is the 2024-25
+president on the same ticket. No April result in the wrong academic year. Nothing touches the
+settled facts. The one personal detail about a living person is cut. No contributor edit in this
+diff.
+
+**Flagged, not fixed.** Wyer's existing credit on `main` names photographer Camryn Deskins; the
+article page bylines Jack Dobbs and does not mention Deskins in its text, so the attribution did
+not verify from the page and may sit in gallery metadata. The 12 February 2020 caption spells
+*Brigid* Stakelum, which is a contemporaneous source for the spelling 2018-19's committee note
+still calls unverified against the minutes — left for a pass that owns `years.json`. Egerer's older
+2011-12 entry still cites the bare image rather than the article URL now verified for 2010-11.
+
+**Where the archive stands.** 61 years, 1967 events, 60 people have been president; 1111 pieces of
+legislation, every file present and a real PDF; 1306 volume-and-number citations, each opening its
+issue; 1314 quoted spans, none reaching fifteen words; 2651 recorded terms of office held by 1809
+people, 98% carrying an account of what the person did; 48 people under more than one spelling.
+`build.py`, `check_data.py` and `check_contrib.py` all clean. `check_duplicates.py` reports the
+same four title pairs and one same-source pair as this morning, all judged again and all kept:
+this pass changed no events. All eight portraits confirmed rendering on their officer pages after
+rebuild.
+
+**Still open.** Everything the morning pass listed, unchanged, since no event moved: the four
+uncitable 1971-volume entries, the year-photo gaps at 1994-95 and 2000-01, the 1985 *Talisman*
+Holland portrait, the Ann Blair / Ann-Blair spelling, the two over-claimed 1971-72 titles, the
+radio-programme page, and the twenty-four *Talisman* references still lacking the volume they name.
+Added to it: the three flagged items above. The research pipeline observation from this morning
+stands — `research-photos` is still the only routine pushing, and this run of it produced eight
+attachments and no new photograph.
