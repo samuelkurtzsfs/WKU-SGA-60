@@ -8,11 +8,17 @@ portrait in `data/photos.json`. Settled since August; nothing to do.
 **Priority 2** (any other president or student regent without a portrait): every `leaders`
 record in every year still has a matching `photos.json` entry. Zero missing.
 
-The real gap remains entirely in priority 3 (officer portraits): 215 cabinet/Senate officer
-slots short a face, across 174 distinct names, 101 of them already barred in
-`data/photo-finds/_do-not-use.json` with a documented reason. Priority 4 (years with no
-photograph at all) is still just 1994-95 and 2000-01, both outside the archive.org Talisman
-holdings (1971-1981, 1986, 1987 only) and both needing a TopSCHOLAR PDF to close.
+The real gap remains entirely in priority 3 (officer portraits): 217 cabinet/Senate officer
+slots short a face, across 176 distinct names, of which 27 carry a bar in
+`data/photo-finds/_do-not-use.json` with a documented reason. (Editor's correction, 9 October:
+this paragraph first read 215 slots across 174 names "101 of them already barred". The 101 is
+the number of distinct names in `_do-not-use.json` altogether, not the overlap with the
+faceless set: 74 of those barred names hold a portrait from another source or sit in no counted
+officer slot, so only 27 of the 176 are barred. The next run should treat 149, not 73, as the
+names a bar does not already close off.) Priority 4 is still just 1994-95 and 2000-01 — the two
+years with no entry in `photos.json`'s `years` list, though both do carry leader portraits —
+both outside the archive.org Talisman holdings (1971-1981, 1986, 1987 only) and both needing a
+TopSCHOLAR PDF to close.
 
 ## The three blocked gates, retested cold rather than assumed
 
@@ -55,8 +61,8 @@ always. `build.py` and `check_data.py` both exit clean. This run's only change i
 
 ## For the next run
 
-- 135 of the 174 missing officer names are still genuinely untried by any method (the local
-  Herald photo-cache sweep from 8 October covered all 174 at once and found nothing new beyond
+- 135 of the 176 missing officer names are still genuinely untried by any method (the local
+  Herald photo-cache sweep from 8 October covered all 176 at once and found nothing new beyond
   two names since barred; the live wkuherald caption sweep has now covered roughly 50 of them,
   this session's twelve included, all empty). The untried majority skews toward the 1990s and
   early 2000s, before wkuherald.com's full text coverage and before the 2010-2026 photo cache —
