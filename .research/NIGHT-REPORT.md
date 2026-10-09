@@ -42609,3 +42609,65 @@ remain the portraits routine's first job, and it next runs at 19:52. The three *
 access gates are still closed. Counts after this pass: 61 years, 1,967 events, 60 presidents, 2,651
 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an account of what the
 person did, 1,111 pieces of legislation and 308 documents mirrored.
+
+---
+
+## 9 October 2026, late — #719 reviewed and corrected, and the merge button out of reach
+
+One pull request open, #719, the portraits routine reporting on the eight officer names #717 found
+had never been searched. It changes no data: one file in `.research/`, and `build.py` on the branch
+regenerates `site/` with no diff at all, which is the cleanest proof available that `data/` is
+untouched. Nothing in it could reach the live site. So the review went to the only thing that was
+at stake — whether the note's reasoning is safe to steer the next run by, because a wrong "we
+checked, it's empty" is how a gap becomes permanent.
+
+**The evidence held, and held precisely.** All eight names are genuinely searched and negative.
+The Talisman publication gap is real: the yearbooks collection index states it in its own header
+note, annually 1924-1994 and then 2003 onward, which is better than the inference from an empty
+listing the note had been resting on. The 2013, 2014 and 2015 volume sizes are exact to the
+decimal, all four of them. `cgi/viewcontent.cgi` answers 403 with a bot-check page while the
+ordinary collection pages return 200 on plain `curl`, so the gate really is specific to the PDF
+endpoint. The 1978 Talisman caption for David Bass is verbatim where the note puts it, and names
+four people without a positional marker, exactly as reported. The Chesnut/Chestnut call is right:
+the name index reads Chesnut, page 234 reads Chestnut, and page 234 is intramural badminton and
+racquetball results. Nine checks of eleven passed without qualification. The surname trap, which is
+the one this diff actually engages, is handled correctly four separate times.
+
+**Two of its justifications overstated, and one mattered.** The note dismissed all ten Hancock
+lines in the *Herald* index as one reporter, Catherine Hancock. Nine are. The tenth is Laura
+Hancock, who ran for the SGA vice presidency in 1998 — not the Grace Hancock being looked for, so
+the negative finding stands, but a blanket "all a reporter" is a line a later pass reads once and
+never reopens, and it would have sent that pass past an SGA figure the archive does cover. Carter
+was the same shape: eleven of thirteen are the reporter Carter Pence, the others Robert Carter and
+Caitlin Carter. The officer-gap count was wrong in the other direction, understating itself: 182
+counted Senate officer terms alone while the sentence claimed it included committee chairs, leaving
+23 chair terms out of a figure meant to hold them. The real gap is 205 Senate terms, 238 in all.
+And the note described the 1977-78 group photograph as captioned without naming anyone, when the
+caption names all four; the entry is filed correctly, it is the account of it that was wrong. All
+three corrected on the branch rather than cut, along with a 28-word Talisman quote trimmed to
+seven.
+
+**One route the note closed off is still open, and it came out of the note's own evidence.** The
+same collection index that carries the Talisman gap lists *Xposure*, a Student Affairs quarterly
+running Fall 1995, Spring 1996 and Summer 1996, at 16 to 30 MB against the 340-900 MB volumes that
+defeated the run. That is the year Margaret Carter and Cindy Chiapetta served, two of the five
+names declared to have no yearbook route at all. It is recorded as a lead and nothing more, because
+nobody has opened these issues, a student magazine need not photograph student government, and it
+meets the same shut gate. But a missing yearbook is not a missing source, and the note read as
+though it were.
+
+**What did not happen.** #719 was not merged. The squash-merge was refused by a session permission
+gate on merging without human review — not the platform GitHub gate the research routines hit, and
+not a credential problem: the branch pushed normally, the review posted normally. The corrections
+are on `research-photos` at 89f9c5c and the branch is clean against every validator. The merge
+itself needs the owner. This is the first time this gate has stopped a merge on this project, and
+if it is permanent the editor routine's brief needs rewriting around it, because a reviewer that
+cannot merge is doing half a job.
+
+**Still open.** #719, reviewed and ready, waiting on one click. The *Xposure* lead for 1995-96.
+The 230 remaining officer terms with no portrait. The three *digitalcommons* gates, two open and
+`viewcontent.cgi` still shut. And the pipeline question the last five reports have carried: nothing
+that researches events is enabled, so the archive has not gained an event since 2 October. Counts
+after this pass, unchanged because this pass changed no data: 61 years, 1,967 events, 60 presidents,
+2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an account of
+what the person did, 1,111 pieces of legislation and 308 documents mirrored.
