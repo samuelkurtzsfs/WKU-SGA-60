@@ -41968,3 +41968,105 @@ route used tonight will close them a volume at a time.
 and gated, but **not merged**: the merge of a pull request the same run opened is refused as a
 self-approval, which is the same constraint #704 hit and recorded. It needs a pass that did not open
 it, exactly as #704 did. Nothing else on the board is waiting.
+
+## 9 October 2026 — an empty queue, the 1971 volume closed as far as the schema allows
+
+**Nothing to merge, and nothing withheld.** There are no open pull requests. Numbering is at #708,
+so the #6, #7 and #8 the standing brief calls stale were closed long ago and are not waiting on
+anyone. Every rolling research branch — photographs, profiles, senate, the three roster branches
+and the six original decade branches — is identical in content to `main`. There is no unlanded
+research anywhere on origin.
+
+**So the newest work on `main` was read at its source instead.** The last substantive pass was
+#706's eleven 1971-72 citations and #707's two photograph bars. Fifteen claims went to the 1972
+*Talisman*'s own full text on archive.org and all fifteen held. Spock drew "a crowd of about 1,100
+on September 23" and the caption has him "sponsored by Associated Students" attacking the U.S. role
+in Vietnam. Ike and Tina played to an "estimated crowd of 12,000 in Diddle Arena at the Homecoming
+concert", backed by the "eight member Kings of Rhythm". Only 1,175 of Western's 11,000 students
+voted in the 21 October mock election, they elected Emberton, and Ford took the state on 2 November.
+Mountain was cancelled on 2 December, which the volume itself calls the day before the engagement,
+over Felix Pappalardi's illness. Ron Beck was unit coordinator for the state branch of the National
+Entertainment Conference, ten schools were represented, the body met on campus in both semesters,
+and the three mini-concerts a semester were the result — all four exact. Buchwald's "Art Buchwald
+at Large", Kilpatrick on the youth vote, Mailer on amateurism, the Cellar as a coffee house in West
+Hall, the Gaslight film series, Larnell Harris of First Gear, and the Leon Russell / Mountain /
+Alice Cooper / It's a Beautiful Day list all confirmed.
+
+**Two of those needed the volume to be read rather than searched.** The Isaac Hayes reschedule date
+is in the caption, but the OCR renders it `March ‘23.°'`, so a literal search for "March 23" finds
+nothing and would have read a correct citation as unsupported. "Two Decades of Human Rights" is
+wrapped across two lines and misses the same way. A miss in a yearbook full text proves even less
+than a miss in the index, and this is twice now that it has been written down.
+
+**The one body #706 rewrote was right to rewrite.** The volume says the mini-concerts were "offered
+in an attempt to give the students top quality entertainment" and says nothing about cost, so
+striking "at less cost" from the Emme Kemp entry removed a phrase the source does not carry.
+Nothing was cut this pass; there was nothing to cut.
+
+**The 1971 volume is now closed as far as the schema allows.** All seven 1970-71 entries that named
+the 1971 *Talisman* without citing it were checked against that volume and all seven are true: the
+Temptations "kept a packed house hypnotized"; "Julian Bond on Dec. 13" sits among the "more
+controversial speakers" the Associated Students brought, with Gregory on "Nov. 12" in the same
+sentence; "In the spring Neil Diamond and the Trinidad—Tripoli Steel Band entertained on campus";
+Lyne is shown hosting Kunstler; Hayakawa is listed with Kunstler and Devlin as scheduled for the
+spring; and '1776' was "presented as part of the Homecoming activities". Three had a free second
+citation slot and now carry it. The Gregory entry's note that the yearbook's 12 November conflicts
+with the *Herald*'s contemporaneous start-of-month coverage is correct and stays as it is.
+
+**The other four cannot be cited, and a later pass needs to know why.** Gregory, Kunstler, Hayakawa
+and '1776' already spend `src2` on a *Herald* review, and `build.py` renders only `src` and `src2`.
+A `src3` is accepted by the file, passes every validator, and is silently dropped at build — a pass
+that adds one will report success and publish nothing, which is the failure mode this project has
+hit four times. Either the third slot gets built or those four stay as they are. Do not add `src3`
+and believe it landed.
+
+**Checked in passing.** Lyne's signed statement is exactly where the archive cites it, pp. 66-67,
+bracketed by page markers 65, 66 and 67, and all six of its claims are in the volume: the cultural
+programmes concept, names outside the "top 40" such as Ravi Shankar, the co-sponsorship of '1776',
+the student-run lecture series as the year's significant addition, the maintained merchant discount
+programme, and the legal defence fund and student advocates' corps.
+
+**Flagged, not fixed.** The weekly radio programme entry cites "1971 Talisman, p. 46". Page 46 is
+the speakers page; the radio programme caption sits in the Lyne personality profile, a different
+spread. The page markers in that part of the OCR are too sparse and run out of order, so the right
+page cannot be established from the text alone. Left alone for a pass that can render the page
+images.
+
+**Traps swept.** No advance notice written up as a report: every crowd figure checked traces either
+to the retrospective yearbook or to a review printed after the night, not to a notice. No committee
+chair promoted to officer — the two new photograph bars enforce that rule rather than breaking it,
+refusing a 1997-98 Hillraisers chair and a 2005-06 Academic Affairs chair. Nobody matched by
+surname alone; both bars are refusals of exactly that. No changed surname merged. No April result
+in the wrong academic year. Nothing touches the settled facts. Nothing about a living person goes
+past its source, and the personal detail in the bar reasons stays internal: `build.py` reads only
+the filename out of `_do-not-use.json` and publishes none of the prose. Both barred files,
+`1976-77-john-evans.jpg` and `2008-09-ann-blair-thornton.jpg`, are on disk and absent from
+`site/photos`, while the sourced 2009-10 Thornton crop is served. No contributor edit in this diff.
+
+**The research pipeline is the thing worth raising.** Only `research-photos` has pushed since
+August. `research-profiles` last moved on 24 August, `research-senate` and `research-backlog` on
+25 August, the three roster branches on 31 August, `research-2026-27-fall` on 24 September, and the
+six original decade branches on 4 August. Every research pull request merged in the last fortnight
+came off `research-photos`, and that routine now reports its own leads exhausted — portraits
+complete, routes reconfirmed closed, nothing confirmable. The archive has not gained an event since
+2 October, and those four came from an editor pass rather than a research routine. 1967 events have
+stood for a week. The editing is keeping up because there is almost nothing arriving to edit.
+
+**Where the archive stands.** 61 years, 1967 events, 60 people have been president; 1111 pieces of
+legislation, every file present and a real PDF; 1306 volume-and-number citations, each opening its
+issue; 1308 quoted spans, none reaching fifteen words; 2651 recorded terms of office held by 1809
+people, 98% carrying an account of what the person did; 48 people under more than one spelling.
+`build.py`, `check_data.py` and `check_contrib.py` all clean. The five duplicate groups were read
+again and all five stay: the designated driver cards funded in November 1997 and distributed in
+February 1998, the regent advisory committee bill and its death on amendment nine days later, the
+Civil Liberties Union action planned in February and endorsed in March, the plus/minus objection of
+September 2003 and the legislation of October, and the two 2026-27 entries on *Herald* 97612, which
+is one article reporting two different pieces of business. Event count unchanged: this pass added
+citations, not claims.
+
+**Still open.** The four uncitable 1971-volume entries above, pending a third citation slot. The
+year-photo gaps at 1994-95 and 2000-01. The 1985 *Talisman* Holland portrait. The Ann Blair /
+Ann-Blair spelling, still with no alias recorded. The two over-claimed 1971-72 titles. The
+radio-programme page. And the entries that still name a *Talisman* they do not cite in the 1972,
+1973, 1974, 1975, 1976 and 1987 volumes — twenty-four remain, of which about ten are not citation
+gaps at all but references to the *Talisman* as a student publication coming to SGA for money.
