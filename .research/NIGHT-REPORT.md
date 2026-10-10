@@ -42845,3 +42845,68 @@ researches events is enabled, so the archive is being polished rather than exten
 this pass, unchanged because this pass changed no data: 61 years, 1,967 events, 60 presidents,
 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an account of
 what the person did, 1,111 pieces of legislation and 308 documents mirrored.
+
+---
+
+## 10 October 2026, morning — an empty queue, and the reason the archive stopped growing
+
+No pull requests open, nothing stranded on a branch, and `main` clean on every check. So this pass
+went looking for why the queue keeps coming up empty, and found it. The answer is not in the data.
+
+**The review queue.** Nothing open. `research-photos`, the one research branch with a real merge
+base against `main`, is fully landed: its only difference from `main` is 103 lines of this report
+that `main` already carries. Every other `research-*` branch showing commits "ahead" is one of the
+4 August orphan snapshots with no merge base, which AGENT-LANDING.md warns against merging and
+which were closed unmerged on 18 August. Nothing was lost and nothing is waiting.
+
+**`main` audited in its own right, since there was no diff to audit.** `build.py` completes
+cleanly, `check_data.py`, `check_contrib.py` and `check_duplicates.py` all exit 0. The duplicate
+checker's four title pairs and one same-source pair are the same five last night's pass judged,
+unchanged and still genuinely separate events; nothing to combine.
+
+Two sweeps were run over the whole published record rather than over a diff. First the
+advance-notice trap, the commonest publishing error here: 21 events carry advance-notice phrasing
+in the title, and every one of them is confined to what the notice proves. The single body that
+tripped the outcome-language filter is the 2014-15 Student Legal Services Clinic, and it is a
+false positive — "already drew on about twelve volunteer attorneys" is the clinic's staffing as
+the notice reported it, not an outcome, and the whole paragraph stays inside *was set to*, *was to
+be open*, *would charge*. Nothing to cut.
+
+Then the settled facts of CLAUDE.md, checked against live data one by one. All hold. Sandra
+Norfleet is at 1981-82 as regent, not 1982-83. David Payne is at 1981-82 with Marcel Bush, and
+Margaret Ragan has 1982-83 alone. Larry Zielke is at 1969-70 and John Lyne holds 1970-71 by
+himself. Fiorella and McKinney are recorded as regents, not presidents. Carlene and Darlene
+Lodmell are two separate people, standing side by side in 1995-96 as chairs of Legislative
+Research and Student Affairs and again in 1996-97 as Vice President and Secretary, exactly as the
+minutes have them. Reed Morgan appears once, in 1968-69, as `role: unresolved` with
+`name_verified: false` and a note that establishes positively that he held neither office; the
+label is right and the question stays closed. Menser is president 1967-68 and takes the new regent
+seat in April 1968 at the end of that year, which is consistent with Gerard holding the seat
+through 1968-69 — no conflict between the two, though the arithmetic invites one.
+
+**Why the archive has stopped growing, settled.** The event total has been 1,967 since 3 October,
+and previous passes have recorded that as a standing worry without being able to name the cause.
+It is not the data and not the review process. Of the thirteen SGA 60 routines on the account, two
+are enabled: this editor, every three hours, and the portrait hunter, every six. **The other
+eleven are disabled.** The six decade researchers and the legislation harvester have been off
+since 4 and 5 August; person profiles since 24 August; the backlog and senate-rolls routines since
+25 August. Nothing that adds history to this archive has run in roughly seven weeks.
+
+That also corrects this routine's own brief, which opens by stating that four research routines are
+running around the clock and pushing work to `research-*` branches. None of them is. The editor has
+been reviewing an empty queue every three hours because there is nothing upstream producing work,
+and the portrait hunter's negatives are the only new material reaching review. Re-enabling them is
+the owner's call and no part of it was changed from here.
+
+**Nothing was cut this pass,** because nothing failed. One thing worth recording on the credit
+side: all 66 president terms now carry a portrait entry in `photos.json`, which holds 1,407 leader
+portraits and 72 year photographs. The build still withdraws 5 photographs the archive no longer
+serves or has barred, which is the mechanism working as intended rather than a fault.
+
+**Still open.** The eleven disabled routines, which is now the only thing standing between this
+archive and more history. The *Xposure* quarterlies of Fall 1995, Spring 1996 and Summer 1996,
+waiting on the TopSCHOLAR PDF gate. The 230 officer terms with no portrait. Counts, unchanged
+because this pass changed no data: 61 years, 1,967 events, 60 people have been president, 2,651
+recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an account of what the
+person did, 1,111 pieces of legislation with every file present and a real PDF, and 308 documents
+mirrored.
