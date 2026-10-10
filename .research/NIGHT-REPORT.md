@@ -42910,3 +42910,96 @@ because this pass changed no data: 61 years, 1,967 events, 60 people have been p
 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an account of what the
 person did, 1,111 pieces of legislation with every file present and a real PDF, and 308 documents
 mirrored.
+
+---
+
+## 10 October 2026, 09:17 — one PR, reviewed hard and merged; the last producing routine reports its method exhausted
+
+**Reviewed and merged: #725, "Research: photographs (rolling)".** One file, no data:
+`.research/photo-run-2026-10-10-morning.md`. The merge base was main's own tip, so there was no
+conflict and none of the orphan-history risk AGENT-LANDING warns about. Nothing in `data/` or
+`data/photos/` changed, so nothing in this merge reaches the published site.
+
+**Nothing was cut, because nothing failed.** Twenty claims were opened against their sources and
+all twenty held. The ten article caption claims were checked against `wkuherald.com` directly and
+every one is exactly as the note describes it: Wayne Simpson of Career Development on 87022,
+Jackson Smith on 88699, De'Anasia Johnson of Black Women of Western on 90099, Athletic Director
+Todd Stewart on both 86647 and 82327, Eli Carter on 90713, Kelci Murphy of the WKU Restaurant
+Group on 90387, Cayden Bailey on 82565, and the Cole and Reed hits on 65821 resolving to Cole
+Bornefeld and Garrison Reed, both already on file from that gallery. Article 92840 carries twelve
+`wp-image` ids and no `data-photoids`, so the format claim stands: that article really was
+invisible to any check reading only the gallery shortcode.
+
+The counts were re-derived rather than taken on trust. `portrait_gap.py` gives 189 slots held by
+159 people, 157 with no portrait in any year, matching the note exactly. All four priority-one
+portraits are on file. All 73 leader records carry a portrait. All three access gates were
+retested cold: `cgi/viewcontent.cgi` answers 403 behind the Cloudflare challenge while ordinary
+landing pages still return 200; `web.archive.org` resets the connection; the `archive.org`
+`_djvu.txt` route works through its redirect and returned 1.35 MB of the 1975 *Talisman*.
+
+**The negative was tested rather than accepted,** which is the only way a note that closes leads
+out is worth anything, and this routine has had to correct its own negatives before. Every SGA
+person named in the captions this run fetched was cross-checked against the gap list — Lucas,
+Barker, Derryberry, Carter, Marshall, Lee, Smith, Bailey, Butler, VanRude, Ismail, Thomas, Graham,
+Taylor, Robinson, Humble, Lun. Every one already has a portrait and none is in the gap. The
+"nothing found" conclusion is real and not a missed face.
+
+The structural reading holds up too, though not for the reason a quick look suggests: 126 of the
+189 gap slots do fall inside the wkuherald photo era, so the gap is not simply pre-photographic.
+The offices are the explanation. Forty-eight of the slots are justices — 21 Judicial Council, 17
+associate, 10 chief — and most of the rest are Secretary of the Senate, Parliamentarian, Director
+of Information Technology and committee chairpersons. Meeting coverage photographs the speaker and
+whoever is quoted, not a justice sitting in the gallery.
+
+**Three things the photograph routine should do differently,** none of them grounds to hold the
+merge. First and worst: the note tells the next run to cast a wider net of search terms but never
+records which eighteen it used, and it left the sweep logs and the 186-article list in `/tmp`,
+which does not survive the container. The next run cannot widen a net whose edge is unrecorded
+without redoing this run's work to find it. Those terms and ids are the finding, not scaffolding,
+and belong in the note. Second, the priority 4 paragraph says every year has a photograph and then
+names 1994-95 and 2000-01 as gaps; both statements are true of different things — both years carry
+leader portraits, neither carries a year-photograph — but it should say which it is counting.
+Third, 88699 calls Jackson Smith a senator where the caption calls him a committee member; it
+changed nothing here because no officer claim was written, but it is trap 2's exact shape.
+
+One note on a source: 82565's caption reads "Monday, March 24, 2025" while the post itself is
+dated 25 February, a Tuesday. The note inherited the caption's date. Immaterial to a negative
+finding, but that article's internal dates should not be cited without a second source.
+
+**The branch survey.** No other PR is open. `research-photos` is now level with main. The two
+editor branches carrying unmerged `data/` changes turned out to hold nothing outstanding: the
+3 October and 7 October passes' work, including the turnout entry trimmed off its over-claim, is
+already on main with its second source, and those branches are now merely behind it — merging
+either would delete 6,108 lines and a photograph. Nothing to rescue. The large `research-*`
+branches (profiles, the roster branches, senate, the September report branches) still have no
+merge base with main and must not be merged, exactly as AGENT-LANDING says.
+
+**The archive still has no path to growth, and today that got worse.** The morning pass established
+that eleven of the thirteen routines are disabled; that was confirmed again here against the
+account's own trigger list. Only this editor, every three hours, and the portrait hunter, every
+six, are enabled. The six decade researchers and the legislation harvester have been off since
+4 and 5 August, person profiles since 24 August, the backlog and senate-rolls routines since
+25 August. The new fact this pass is that the portrait hunter — the one remaining routine that
+produces anything — now reports its own method worked through and closed negative, and its
+remaining leads all sit behind the two shut PDF gates. So both enabled routines are now producing
+no new history, and the event total has been 1,967 since 3 October for that reason. Re-enabling
+the eleven is the owner's call and nothing was changed from here.
+
+This also still contradicts this routine's own brief, which opens by stating that four research
+routines are pushing work to `research-*` branches. None of them is.
+
+**Still open.** The eleven disabled routines, which remain the only thing between this archive and
+more history. The *Xposure* quarterlies of Fall 1995, Spring 1996 and Summer 1996, and the 2010s
+*Talisman* volumes, all waiting on the TopSCHOLAR PDF gate. The officer portrait gap: 189 slots
+held by 159 people on the cabinet-and-Senate-leadership rule, or 232 slots held by 197 people when
+committee chairs are counted in — both figures from `portrait_gap.py`, recorded with their rule so
+the number stops drifting between passes.
+
+**Counts, unchanged because this pass changed no data:** 61 years, 1,967 events, 60 people have
+been president, 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying
+an account of what the person did, 1,111 pieces of legislation with every file present and a real
+PDF, 308 documents mirrored, and 1,407 leader portraits with 72 year photographs. The build still
+withdraws 5 photographs the archive no longer serves or has barred, which is the mechanism working
+rather than a fault. `build.py` clean, `check_data.py` and `check_contrib.py` both exit 0,
+`check_duplicates.py` showing only the four pre-existing title pairs and one same-source pair,
+none of which is a double-written event.
