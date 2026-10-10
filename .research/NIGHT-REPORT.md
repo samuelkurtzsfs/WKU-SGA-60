@@ -43125,3 +43125,112 @@ producing routine reported its method exhausted; the photograph run's gallery ro
 `data-photoids` in the article HTML, captions from `wp-json/wp/v2/media/<id>` — is written into its
 note as the next move and has not yet been worked. Nothing merged this pass, because there was
 nothing to merge, and nothing was cut, because nothing failed.
+
+# 10 October 2026 (editor, scheduled, afternoon) — both open pull requests verified at source and merged, nothing cut, and a 404 of my own that nearly became a correction
+
+## What was open, and what landed
+
+Two, both merged.
+
+**#727, the midday editor's own night report** (`editor-1010-midday`), and **#728, the afternoon
+photograph run** (`research-photos`). Each is a single file under `.research/` — a report and a
+research note. Neither touches `data/`, so no claim in either reaches a year page. That changes
+where the review has to point: at the notes' own assertions, because those are what the next
+routine acts on, and a wrong negative is worse than no finding, since it closes a route that was
+never really tested.
+
+Twenty-two claims were checked, every one of them re-derived locally or opened at source rather
+than read off the note. All twenty-two held. **Nothing was cut from either, and nothing was
+changed.**
+
+## #727, the midday report
+
+The counts all match a clean build: 61 years, 1,967 events, 60 presidents; 2,651 terms held by
+1,809 people, 2,614 of them (98%) with an account; 48 people under more than one spelling; 1,111
+pieces of legislation, 1,307 citations naming a volume and number, 1,315 quoted spans none reaching
+15 words, 308 documents, 1,407 portraits, 72 year photographs, 5 withdrawals.
+
+Its most useful finding is exactly right, and is the one to carry forward: **126 events carry
+`src2` and 3 carry `src3`, and the site renders all of them.** The Dub the Pub entry does hold a
+`src2` pointing at the Herald of 5 November 2015, so a screen reading only `src` manufactures a
+sourcing fault in a correctly cited entry and then recommends a cut — the dangerous direction.
+
+Its three 1976-77 outcome claims were read off the mirrored PDFs, not the note: Resolution 13
+`INTRODUCED 10/26/76 · Passed · 11/9/76 · 25 - 1`; Bill 9 `3/8/77 · Passed · 3/29/77 · 16 - 13 - 3`;
+Bill 8 `3/8/77 · Passed · 3/29/77 · Acclamation`. All three outcome lines are typed and filled, so
+trap 2a is not in play, and the two published events state them exactly, abstentions included.
+
+**Its advance-notice conclusion was re-screened from scratch rather than accepted**, with a
+different regex and reading all three source slots. 134 events assert something only a report can
+prove; 5 rest entirely on sources predating the event. All five read by hand: the two 1976-77 bill
+sheets, where the sheet records its own later outcome, and Spock, Natalie Cole and Jimmy Buffett,
+each of which attributes the announcement to the Herald notice and every outcome element — the
+crowd, the three encores, the money the Buffett night lost, the song lists — to the retrospective
+*Talisman*. None is a violation. The counts differ from the note's 171 and 8 because the screens
+differ; the finding is the same one.
+
+## #728, the photograph run
+
+Its structural claims hold exactly: all four priority-1 presidents carry a portrait; all 73
+leader-year slots have one; no year is without a photograph of any kind, the two standing
+*year-photo* gaps being 1994-95 and 2000-01, which hold 27 and 11 leader portraits between them;
+and `portrait_gap.py` reports 189 slots held by 159 people, 157 with no portrait anywhere.
+
+Both gates were retested cold from this session. `cgi/viewcontent.cgi` answers 403 with the
+Cloudflare `Just a moment...` challenge. **The `Range: bytes=0-1023` idea gets the identical 403
+challenge, not a partial PDF** — independently reproduced, so that idea is properly closed and the
+block is on the path rather than keyed to response size. `web.archive.org` resets the connection.
+One difference, and it is session-time rather than error: **plain `archive.org/details/` answers 200
+right now**, where the run saw it reset, so the `_djvu.txt` route is open at the moment.
+
+The new method was reproduced end to end. `dlsc_ua_records/8679`, the 2015 *Talisman: Resurgence*
+landing page, answers 200 — it is not behind the gate — and carries a 2,610-character description
+holding the issue's whole contents list in the `Byline (Last, First). Title – Subject` form the note
+describes, including `Brian Chism for President – Student Government Association` verbatim. Run
+against the ten 2014-15 officer-gap names it gives **zero full-name matches, zero inverted-byline
+matches and exactly one surname-only false positive** (`Potter`): the note's false-positive pattern,
+reproduced on a different sample. Its negative stands, and a name sweep of this index is not a route
+to the group-photo gaps.
+
+## The mistake worth recording
+
+I appended an item id to the *collection* path, `dlsc_ua_yearbooks/8679`, got a 404, and for a
+few minutes had a correction half-written on the view that the note had the path wrong. It does
+not. `dlsc_ua_yearbooks/` is the collection index and answers 200; the items it links to live at
+`dlsc_ua_records/<id>`, which is what the note says two paragraphs earlier. **No correction was
+needed and none was made.** This is the same failure the midday report warns about in its own
+screen — an audit manufacturing a fault in correct work and proposing a remedy for it — arriving
+from a different direction. Reproduce a note's method by its own stated route before concluding the
+route is wrong.
+
+## The state of the record
+
+Unchanged by both merges, as it should be: `build.py` clean, `check_data.py` and `check_contrib.py`
+both exit 0 before and after, `check_duplicates.py` reporting only the four pre-existing title
+pairs and the one same-source pair. Those were judged again and all stand as separate business — a
+bill introduced and the same bill failing after amendment, a lawsuit planned and then endorsed,
+$900 allocated in November 1997 and the cards distributed in February 1998, a syllabus statement and
+an election opening written from one article. 61 years, 1,967 events, 60 presidents.
+
+No traps checklist item is tripped in either diff. No committee chair recorded as an officer, no
+surname-only match, no April result filed forward wrongly, nothing touching the settled facts,
+nothing about a living person beyond its source, and no contributor edit in scope. Both commits are
+authored `SGA 60` and neither the commits nor the content carries tool attribution.
+
+## Still open
+
+Nothing. The queue is empty as of this pass, and #6, #7 and #8 — which the standing brief still
+names as open and stale — have been closed since 18 August 2026; this is the twentieth pass to
+record it.
+
+**Two operational notes for whoever reads this next.** `gh pr list` answers 403 here and **that is
+not the platform gate**: it is a GraphQL call and GraphQL is refused in these sessions.
+`gh api repos/{owner}/{repo}/pulls?state=open` answers normally and merging over REST works, as
+both merges this pass show. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both still unset, so a run
+that reads that 403 as the gate drops into review-only mode and has nowhere to put its verdict.
+
+The open work is research, not editorial: eleven of thirteen routines remain disabled, and the
+photograph run has now closed the magazine-era *Talisman* index as a route alongside the
+`wkuherald.com` keyword and gallery-caption methods. What is left for the 2012-2025 span is a page
+image behind the PDF gate, and 189 officer slots / 159 people / 157 with no portrait anywhere
+remains the live count.
