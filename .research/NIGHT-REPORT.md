@@ -1,3 +1,106 @@
+# 10 October 2026 (editor, scheduled) — #722 merged after two trims, and a rule withdrawn that would have closed a working route
+
+## What was open
+
+One, #722 `research-photos`, the photograph run's scheduled pass of this morning. It is now on
+`main` as 0626e4e4 and the board is empty behind it. #6, #7 and #8, which the standing brief still
+names as open and stale, have been closed since 18 August; this is the eighteenth pass to record
+it. `gh pr list` answered 403 again, as it always does, because it is a GraphQL call —
+`gh api repos/.../pulls` answered normally and `git push` worked, so this was a full-mode pass, not
+a gated one. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, which matters only to a run
+that mistakes that 403 for the platform gate.
+
+## #722 — merged, after two trims
+
+The diff was one file, `.research/photo-run-2026-10-10-scheduled.md`, 127 lines, and no `data/`
+change at all. `build.py` reads only two JSON files out of `.research/`, so a note in it reaches no
+page on the site. That bounds the risk but does not remove the point of checking: later runs steer
+by these notes, and a wrong one sends them the wrong way.
+
+**The research holds.** Thirty executive and Senate officer names from 2021-22 to 2025-26, searched
+for a captioned photograph and closed negative. Six of the "no results" verdicts were reproduced
+against `wkuherald.com/wp-json/wp/v2/posts?search=` — Vuleta, Zaepfel, Skillman, Singh, Robinson,
+Mayne — and every one came back nought. Four of the "no individually captioned photo" verdicts were
+reproduced too, and returned exactly the articles the note names; DeLozier and Hardesty sit in those
+articles' senator lists, in running text, never in a caption. The lead caption of article 65821 reads
+for Sam Kurtz and Cole Bornefeld only, as the note said it did. All twenty-nine checkable name, year
+and office claims in the table match `years.json`, nil mismatches, and the thirtieth matched as well
+once the note's straight apostrophe was reconciled with the file's curly one. The internal claims
+checked out programmatically: 61 years, 60 presidents, 1,967 events, no `leaders` record without a
+portrait, no year without a photograph, all four of the once-missing presidents still on file, and
+Sophia Bryant already carried from the 2024-25 *Herald*, so rightly never on the missing list.
+
+**The first trim is the one worth the pass.** The note closed by raising its thirty negatives into a
+rule: that a 2003-and-later Senate seat almost never has an identifiable photograph on
+wkuherald.com, *because* the coverage photographs the room or the winning ticket rather than the
+person being quoted. The negatives support no such thing, because the one route that bears on it was
+never tested. These articles carry photo galleries, and each attachment holds a caption of its own.
+In article 65821 — the note's own example, which it read as carrying a single captioned photograph —
+there are eight, and attachment 65825 captions SGA Chief Justice Holden Schroeder as a single
+subject while 65828 names Garrison Reed and Sam Kurtz left and right. The ids are in the article
+HTML as `data-photoids` and the captions come back from `wp-json/wp/v2/media/<id>`.
+
+Nothing had to be cut: Schroeder, Reed and Kurtz are all on file already, so not one of the thirty
+negatives is disturbed. The cost was entirely prospective, and that is the reason to act on it. A
+note reading "almost never" is an instruction to the next pass to stop looking, and it would have
+closed a route that demonstrably returns individually captioned faces. What the searches do prove is
+kept and stated narrowly — a keyword search of article text and titles does not turn these up — the
+causal half is withdrawn as unsupported, and the gallery route is written into the note as the next
+run's first move.
+
+**The second trim is arithmetic.** The note put the missing-officer list at 199 names, 33 executive
+and 166 Senate. Counted against `years.json` and `photos.json` it is 31 and 166, so 197 terms, held
+by 190 distinct people once the 7 who hold both an executive and a Senate office are counted once.
+The Senate figure was exact; the executive one was out by two. Corrected in place, because later
+runs read this number as their progress marker.
+
+Both trims went up as 3b94170e and the pull request was squashed to `main`.
+
+## Traps checklist
+
+No trips. Nothing was added that could be filed into the wrong academic year, since no event, person
+or year assignment was added at all. No advance notice stood behind an outcome. No surname-alone
+matching: full names throughout, and Livi Ray was flagged as too common a name to search this way
+rather than guessed at — the right instinct, and the same one behind this branch's earlier commit
+about a reporter named Hancock. Committee roles stayed committee roles and were not promoted to
+officerships. No settled fact was reopened. The thirty living people named carry only the SGA office
+already in `years.json` and a negative search result, with no personal detail and no allegation. No
+`Contributed-By` trailer in the diff. All eight commits are authored `SGA 60` and nothing in the
+diff or the messages names a tool.
+
+`check_duplicates.py` exits 1, as it does on `main`, reporting four title pairs and one same-source
+pair. All five are pre-existing and all five are genuinely separate events. The weakest-looking one
+was read in full: the 1997-98 designated-driver pair is Bill 97-3-F passing in November 1997 and the
+*Herald* reporting distribution in February 1998, three months and two sources apart, and the
+February entry is careful in exactly the way the standing brief asks — it says the archive holds the
+issue only as a contents listing and claims nothing about the distribution itself.
+
+## Flagged, not fixed
+
+The graduate senator of 2022-23 appears in `years.json` under four spellings: `ShyAnte’e Williams`
+in the organization, `Shy'Ante Williams` and `ShyAntye'e Williams` in two election write-ups, and
+`ShyAnte Williams` as a co-author of Bill 6-23-F. There is no entry for any of them in
+`data/name-aliases.json`. Same office, overlapping years, so this is almost certainly one person
+rendered four ways rather than a shared name. Pre-existing on `main` and none of #722's doing, and
+the brief says to flag a spelling doubt rather than fix it, so it is flagged here for the roster
+routine.
+
+## Counts after the merge
+
+61 years, 1,967 events, 60 people have been president. 1,111 pieces of legislation, every file
+present and a real PDF. 1,307 citations naming a volume and number, each opening that issue. 1,315
+quoted spans, none reaching 15 words. 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98%) carrying an account of what the person did. 48 people recorded under more than one
+spelling or name — 49 if the Williams variants above are one person, which is the reason to flag
+them. `build.py` clean, `check_data.py` 0, `check_contrib.py` 0.
+
+## Still open
+
+Nothing. The queue is empty. The photograph run's own next move is written into its note: test the
+article galleries against the missing-portrait list before closing any more names negative. The
+`cgi/viewcontent.cgi` gate is still shut on every pass that has tested it, which continues to block
+the 2010s *Talisman* volumes and the 1995-96 *Xposure* issues.
+
 # 8 October 2026 (editor, scheduled) — both open pull requests merged, a cost claim the yearbook does not make cut, and the merge route that actually works
 
 ## What was open
