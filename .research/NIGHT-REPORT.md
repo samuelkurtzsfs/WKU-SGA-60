@@ -42609,3 +42609,136 @@ remain the portraits routine's first job, and it next runs at 19:52. The three *
 access gates are still closed. Counts after this pass: 61 years, 1,967 events, 60 presidents, 2,651
 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an account of what the
 person did, 1,111 pieces of legislation and 308 documents mirrored.
+
+---
+
+## 9 October 2026, late — #719 reviewed and corrected, and the merge button out of reach
+
+One pull request open, #719, the portraits routine reporting on the eight officer names #717 found
+had never been searched. It changes no data: one file in `.research/`, and `build.py` on the branch
+regenerates `site/` with no diff at all, which is the cleanest proof available that `data/` is
+untouched. Nothing in it could reach the live site. So the review went to the only thing that was
+at stake — whether the note's reasoning is safe to steer the next run by, because a wrong "we
+checked, it's empty" is how a gap becomes permanent.
+
+**The evidence held, and held precisely.** All eight names are genuinely searched and negative.
+The Talisman publication gap is real: the yearbooks collection index states it in its own header
+note, annually 1924-1994 and then 2003 onward, which is better than the inference from an empty
+listing the note had been resting on. The 2013, 2014 and 2015 volume sizes are exact to the
+decimal, all four of them. `cgi/viewcontent.cgi` answers 403 with a bot-check page while the
+ordinary collection pages return 200 on plain `curl`, so the gate really is specific to the PDF
+endpoint. The 1978 Talisman caption for David Bass is verbatim where the note puts it, and names
+four people without a positional marker, exactly as reported. The Chesnut/Chestnut call is right:
+the name index reads Chesnut, page 234 reads Chestnut, and page 234 is intramural badminton and
+racquetball results. Nine checks of eleven passed without qualification. The surname trap, which is
+the one this diff actually engages, is handled correctly four separate times.
+
+**Two of its justifications overstated, and one mattered.** The note dismissed all ten Hancock
+lines in the *Herald* index as one reporter, Catherine Hancock. Nine are. The tenth is Laura
+Hancock, who ran for the SGA vice presidency in 1998 — not the Grace Hancock being looked for, so
+the negative finding stands, but a blanket "all a reporter" is a line a later pass reads once and
+never reopens, and it would have sent that pass past an SGA figure the archive does cover. Carter
+was the same shape: eleven of thirteen are the reporter Carter Pence, the others Robert Carter and
+Caitlin Carter. The officer-gap count was wrong in the other direction, understating itself: 182
+counted Senate officer terms alone while the sentence claimed it included committee chairs, leaving
+23 chair terms out of a figure meant to hold them. The real gap is 205 Senate terms, 238 in all.
+And the note described the 1977-78 group photograph as captioned without naming anyone, when the
+caption names all four; the entry is filed correctly, it is the account of it that was wrong. All
+three corrected on the branch rather than cut, along with a 28-word Talisman quote trimmed to
+seven.
+
+**One route the note closed off is still open, and it came out of the note's own evidence.** The
+same collection index that carries the Talisman gap lists *Xposure*, a Student Affairs quarterly
+running Fall 1995, Spring 1996 and Summer 1996, at 16 to 30 MB against the 340-900 MB volumes that
+defeated the run. That is the year Margaret Carter and Cindy Chiapetta served, two of the five
+names declared to have no yearbook route at all. It is recorded as a lead and nothing more, because
+nobody has opened these issues, a student magazine need not photograph student government, and it
+meets the same shut gate. But a missing yearbook is not a missing source, and the note read as
+though it were.
+
+**What did not happen.** #719 was not merged. The squash-merge was refused by a session permission
+gate on merging without human review — not the platform GitHub gate the research routines hit, and
+not a credential problem: the branch pushed normally, the review posted normally. The corrections
+are on `research-photos` at 89f9c5c and the branch is clean against every validator. The merge
+itself needs the owner. This is the first time this gate has stopped a merge on this project, and
+if it is permanent the editor routine's brief needs rewriting around it, because a reviewer that
+cannot merge is doing half a job.
+
+**Still open.** #719, reviewed and ready, waiting on one click. The *Xposure* lead for 1995-96.
+The 230 remaining officer terms with no portrait. The three *digitalcommons* gates, two open and
+`viewcontent.cgi` still shut. And the pipeline question the last five reports have carried: nothing
+that researches events is enabled, so the archive has not gained an event since 2 October. Counts
+after this pass, unchanged because this pass changed no data: 61 years, 1,967 events, 60 presidents,
+2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an account of
+what the person did, 1,111 pieces of legislation and 308 documents mirrored.
+
+---
+
+## 10 October 2026 — the queue cleared: #719 and #720 both merged, nothing cut
+
+Two pull requests open, both from yesterday evening, and both now on `main`. Neither touched a
+data file, so nothing in this pass changed what the site says. The whole of it went to whether the
+reasoning in two research notes is safe to steer the next run by, which is the only thing that was
+ever at stake in them — a wrong "we checked, it was empty" is how a gap becomes permanent.
+
+**#719, the photograph run's third pass, merged as is at e2d68dd.** Yesterday's pass had already
+reviewed this note and corrected three statements in it. That review was not taken on trust,
+because its own corrections were part of what needed checking: fifteen claims were opened against
+their sources afresh, and all fifteen held. The precise ones are worth recording. The Talisman
+publication gap is stated verbatim in the yearbooks collection header — published annually
+1924-1994, then 2003 onward — so it rests on the archive's own word rather than on an inference
+from an empty listing. Seven file sizes are exact to the decimal, the four Talisman volumes that
+defeated the run and the three *Xposure* issues offered as a way round it. The 1978 Talisman
+caption for David Bass names all four officers without a positional marker, exactly as reported,
+which is why no face can be assigned and why the image is correctly filed as a year photograph.
+The Chesnut/Chestnut call is right down to the page: the name index reads Chesnut and page 234
+reads Chestnut, and page 234 is intramural badminton and racquetball. And the correction yesterday
+made to the Hancock line is right — nine of the ten index lines are the reporter Catherine
+Hancock, the tenth is Laura Hancock, who stood for the vice presidency in 1998, confirmed on the
+*Herald*'s own landing page for 73:50 and not merely in the local index.
+
+Two things learned in the checking that are worth keeping. The surname counts in that note are
+exact, but only on the filter it names: surname crossed with SGA, ASG or "Student Government". A
+bare unfiltered sweep of the same index returns a hundred Hancock lines and twenty-one Carter
+ones, so a future count should say which filter it is quoting or it will read as a contradiction
+of this one. And the whole of the officer-gap arithmetic verifies, including yesterday's
+correction of it: 33 executive terms, 182 Senate officer terms, 23 committee-chair terms, 205 and
+238, held by 31 and 166 people by distinct name.
+
+**Nothing was cut from either note.** The one discrepancy found was not worth a change: the note
+gives the bot-check page as 5,986 bytes where it measures 5,930, and that page carries a
+per-request nonce, so its length moves. The substantive claim is exact, and the gate was retested
+cold this pass and is still shut — 403 with a Cloudflare challenge where a PDF should be, while
+ordinary collection pages answered 200 all session.
+
+**#720, yesterday's night report, merged at e5d7dce.** Its counts all confirm, and so does the
+concern it has now carried for six nights: the event total moved from 1,963 to 1,967 on 2 October
+and has not moved since, so everything merged in the eight days after it has been correction and
+citation work rather than new history. That is accurately stated and remains the standing problem.
+One thing it left open resolves in its favour. It recorded, properly hedged, that the merge was
+refused by a session permission gate and that the editor's brief might need rewriting around it.
+It did not: both pull requests merged normally this pass with no gate at all. It was a transient
+session state, not a standing condition, and a later pass reading that paragraph should not plan
+around a constraint that has lifted.
+
+**The duplicate checker and the three stale branches.** `check_duplicates.py` reports four title
+pairs and one same-source pair, every one of them identical on `main` and so none of this work's
+doing. All five were judged on the entries themselves and all five are genuinely separate events:
+a bill passed in November 1997 against cards distributed the following February; a bill introduced
+against the same bill defeated after amendment; the Civil Liberties Union planning court action
+against Associated Students endorsing the suit a month later; concern voiced at one meeting
+against legislation carried three weeks on; and two pieces of business from one 2026 meeting
+report, which the rule allows and which sets out its own date ambiguity rather than papering over
+it. Nothing to combine. Separately, the three branches this routine's brief still lists as stale
+and open since 4 August — #6, #7 and #8 — have been closed unmerged since 18 August. They are the
+orphan-history snapshots, with no merge base against `main`, and closing them was right; the brief
+is simply out of date on that point.
+
+**Still open.** Nothing in the review queue for the first time in some days. The *Xposure*
+quarterly of Fall 1995, Spring 1996 and Summer 1996, small enough to fetch whole and covering two
+of the five names the Talisman gap strands, waiting only on the PDF gate reopening. The 230
+officer terms with no portrait. And the pipeline question, now eight days old: nothing that
+researches events is enabled, so the archive is being polished rather than extended. Counts after
+this pass, unchanged because this pass changed no data: 61 years, 1,967 events, 60 presidents,
+2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying an account of
+what the person did, 1,111 pieces of legislation and 308 documents mirrored.
