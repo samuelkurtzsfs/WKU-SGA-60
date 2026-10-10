@@ -43234,3 +43234,170 @@ photograph run has now closed the magazine-era *Talisman* index as a route along
 `wkuherald.com` keyword and gallery-caption methods. What is left for the 2012-2025 span is a page
 image behind the PDF gate, and 189 officer slots / 159 people / 157 with no portrait anywhere
 remains the live count.
+
+# 10 October 2026 (editor, scheduled, evening) — an empty queue, and eleven committee chairs taken out of the cabinet
+
+## What was open
+
+Nothing. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returns `[]`, and the board has
+been clear since #729 merged at 15:30. #6, #7 and #8, which the standing brief still names as open
+and stale, have been closed since 18 August 2026; this is the twenty-first pass to record it.
+
+Not a gated run. `gh pr list` answered 403 again — it is a GraphQL call and GraphQL is refused in
+these sessions, not the platform gate. REST answers normally and `git push` works. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are both still unset, so a run that mistakes that 403 for the gate drops into
+review-only mode and has nowhere to put its verdict.
+
+## The audit: trap 2, swept structurally for the first time
+
+With no diff to review the pass turned on trap 2 — a committee chair recorded as an officer — which
+the handoff calls the single commonest error on this project and which killed all 39 "missing
+president" claims. It had never been swept across the whole file.
+
+The archive's own convention is unambiguous once counted: **170 chair-titled records sit in
+`senate.officers`, and 11 sat in `organization.executive`.** Those 11 were the outliers, and the
+documents behind them say so. Bill 7-18-S names Mark Clark in its CONTACTS line as chair of the
+Committee of Diversity and Inclusion, but in its AUTHORS line as *Senator at Large*. Bill 10-18-S
+gives Ian Hamilton only as Sustainability Committee Chair. Resolution 12-22-S has Zachary Skillman
+as Campus Improvements and Sustainability Chair beside a senator-at-large co-author; Resolution
+1-22-S has Shelby Robertson as committee chair for Enrollment and Student Experience; Bill 13-22-S
+has Alex Cissell as Student Mental Health and Wellbeing Committee Chair. Not one of the five
+documents puts its man in the executive. The profiles already in the file say the same thing in
+prose: Olivia Feck was "elected a senior class senator" and then voted committee chair that
+September, Meghan Pierce was a college senator before she chaired the LOC, Jade Ismail was elected
+senator-at-large and "chaired the Action & Opportunity Committee that year."
+
+The 1990-91 case settled itself. Amos Gott sat in the executive as Judicial Council Chairman while
+the four members of his own council — Eddie Smith, Paul Sagun, Julie Fleming and Jeff Welch — sat
+in the senate block of the same year, and every other judicial officer in sixty years, 1970-71's
+committee chairman through 2003-04's chief justice, sits there too.
+
+**All eleven were moved from `organization.executive` to `organization.senate.officers`.** Nothing
+was deleted: 366 executive records became 355, 582 senate officer records became 593, and events,
+leaders and senate members are untouched. What changes on the site is that a senator who chaired a
+committee is no longer presented beside the vice presidents and the directors as a member of the
+cabinet.
+
+## One office withdrawn as unsourced
+
+The oldest of the eleven was not a placement error but an unsupported claim, and its own note
+admitted it: 1974-75 carried **Stan McDivitt as "Student Affairs Chairperson"** with the
+acknowledgement that "the archive has not found a source confirming when or how he came into that
+post."
+
+The cited source was opened. The 1975 *Talisman*'s Sigma Alpha Epsilon chapter page
+(archive.org/details/talisman1975west, full text) says one thing about him: that Steve Henry and
+Stan McDivitt were elected as members of the Associated Student Government. It gives him no office.
+The Herald issue of 7 February 1975 once cited for the chairmanship does not name him in its index,
+and an earlier account of an appointment on 4 February 1975 had already been withdrawn.
+
+So the office is withdrawn and the man is kept. His record now reads **ASG Congress Member**, which
+is what the source proves and which is the office string 1974-75 already uses for Marc Levy from the
+same volume. The note records what the entry used to say and why it no longer says it.
+
+## One cross-year duplicate trimmed
+
+`check_duplicates.py` compares entries within a year, so a meeting written up twice either side of
+a year boundary is invisible to it. A screen over all 1,967 events for pairs in *different* years
+within ten days sharing a source URL or half their title words returned 26 candidates. Twenty-five
+are one Herald issue correctly split — the election report filed in the year being elected, the
+unrelated campus story filed in the year that was running — which is the archive working as
+intended, not duplication.
+
+One was real. The first meeting of the 26th Senate, 28 April 2026, is written up three times from
+one *Herald* article, and 2025-26's "The red suit jacket changes hands" ended by naming Gabby Pace,
+Cayden Bailey, Maggie Phelps and Jaden Marshall as sworn in that night — which 2026-27's entry on
+the same meeting already records in full, with each of their offices. The sentence was cut from the
+jacket entry. No sourced fact is lost, the fuller account is the one that survives, and the
+swearing-in of incoming officers now sits only in the year they serve.
+
+## Claims opened at source this pass
+
+Thirteen, across five of them that bear directly on the edits above.
+
+- **Bills 7-18-S and 10-18-S, Resolutions 12-22-S and 1-22-S, Bill 13-22-S** — read from the
+  mirrored PDFs. Every chair title is faithful to its document; only the placement was wrong. All
+  five also carry blank Second Reading, Pass, Fail and Other lines, and no entry in the file claims
+  an outcome for any of them, so trap 2a is not tripped.
+- **Herald 66:33, 17 Jan 1991** (dlsc_ua_records/7730) — the index carries Anya Armes, "Two
+  Associated Student Government Officers Step Down – Amos Gott, Van Hodge." Gott's departure and
+  Hodge's are confirmed. The *reason* given in the record, a part-time university staff job making
+  him ineligible, is body text the index cannot show either way; it is left standing, because a miss
+  in an index is not evidence of absence.
+- **Herald 69:52, 21 Apr 1994** (7879) — Tonya Root, "Rob Evans & Tara Higdon Ready to Lead
+  Students"; Kristen Miller, "Student Government Association Defends Itself"; Patty Randolph,
+  "Student Government Association Helps Us All." The 1993-94 entry is exact, letters included.
+- **Herald 69:51, 19 Apr 1994** (7984) — "Scott Sivley vs. Rob Evans at Polls Today", Root's report
+  of Sivley's warning for violating campaign policies, Andrea Cailloe's advertisement for Evans and
+  Higdon, and Sherry Wilson's storm story that 1993-94 cites separately. The entry's own statement
+  that the issue was printed on polling day and records no result is correct, and is how trap 1
+  should be handled.
+- **The 1975 Talisman** — above.
+- **The Herald of 28 April 2026** (wkuherald.com/93405) — four separate checks. The 9-9 tie between
+  Amelia Tucker and Veronica Butler, Chief Justice Sophie Sterling's finding that neither
+  constitution nor bylaws covered it, Hadley Whipple's re-vote and Butler's election: all as
+  written. Savanna Kurtz on every 2025-26 scholarship awarded and two of the 15 Blue Grass Community
+  Foundation recipients: confirmed. Gabriel Jerdon's $100 of organizational aid and the zeroed-out
+  accounts: confirmed, and the record's gloss that the $100 was a reserve for groups in need is
+  **supported** — the article says the fund can go to any organization that needs it. Rush
+  Robinson's jacket and his twelve-word line about it: confirmed.
+
+Two could not be opened, and neither is a finding against the entry.
+`web.archive.org` is unreachable from this container, which leaves the Wayback-cited WKU news
+release of 14 April 2000 and its vote totals unchecked this pass. And **the TopSCHOLAR PDF gate is
+still shut**: the landing page for Herald 74:51 (8052) answers 200, but
+`viewcontent.cgi?article=9054` answers 403. That matters, because four entries drawn from that one
+issue carry vote counts — Coates and Martin's 616-611 narrowed by recount to 614-611, Griffey's
+729-652, Bastin's 806-570, Matheis's 700-688 — and the issue's index itemises only three SGA
+headlines, none of them numeric. The numbers are in the body of Ryan Clark's "Turbulent Elections
+Complete", where an index cannot follow. **Nothing is cut on that basis.** Whoever next gets through
+the PDF gate should read that issue and confirm the five figures.
+
+## Flagged, not fixed
+
+Two things a later pass should weigh, neither of them a wrong fact.
+
+**The 1999 election is split down the middle.** Five entries come out of Herald 74:51 of 15 April
+1999. The declaration of the result, the recount, and Griffey's and Bastin's wins sit in 1998-99;
+Matheis's contested finance race and the letter about the racially charged fliers sit in 1999-00 —
+and Griffey, Bastin and Matheis were all elected to the same 1999-2000 executive. The archive files
+election coverage both ways by established practice (92 spring-election events sit in the year that
+was running, 12 in the year being elected, and both readings are defensible), so this is a
+convention to settle deliberately, not an error to patch on one pass.
+
+**One entry writes "No source found reports how, or whether, the investigation was resolved."**
+That is 1999-00's letter about fliers reading "Vote for Will Jones in Racism". The living-people
+rule is handled properly — the allegation is attributed to the letter, Jones's denial is recorded,
+and the absence of a resolution is stated rather than implied. But CLAUDE.md asks that an index miss
+never become the grounds for writing "no source found", and this is the phrasing that rule names.
+The honest form of the sentence is that the archive holds no report of the outcome. Left as it
+stands this pass, because it is a question of wording on a correctly handled entry and not a claim
+to cut.
+
+## The state of the record
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0 before and after the edits, and
+`check_duplicates.py` reports only the four pre-existing title pairs and the one same-source pair.
+Those were read again and all stand as separate business: $900 allocated in November 1997 and the
+cards distributed in February 1998, a bill introduced and the same bill failing after amendment, a
+lawsuit planned and then endorsed, a position taken in September 2003 and legislation passed in
+October, and a syllabus statement and an election opening written from one 2026 article.
+
+61 years, 1,967 events, 60 presidents. 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98 per cent) carrying an account of what the person did, and 48 people recorded under more than
+one spelling. 1,111 pieces of legislation, every file present and a real PDF; 1,307 citations naming
+a volume and number; 1,315 quoted spans, none reaching 15 words; 308 documents mirrored; a search
+index of 4,948 records. The build still withdraws 5 photographs, which is the bar working as
+designed.
+
+No other traps checklist item is tripped. No surname-only match, no April result filed forward
+wrongly, nothing touching the settled facts, nothing about a living person beyond what its source
+reported, and no contributor edit in scope, there being no diff to review. Every commit is authored
+`SGA 60`, and neither the commits nor the content carries tool attribution.
+
+## Still open
+
+The research side, as before: eleven of thirteen routines remain disabled and the photograph run
+reports its methods exhausted, with a page image behind the PDF gate the only route left for the
+2012-2025 span. Editorially, the two items flagged above, and the five 1999 vote counts waiting on
+the PDF gate.

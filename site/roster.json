@@ -2637,16 +2637,6 @@
    "source_url": "https://archive.org/details/talisman1975west"
   },
   {
-   "person": "Stan McDivitt",
-   "name_as_recorded": "Stan McDivitt",
-   "year": "1974-75",
-   "body": "Executive",
-   "office": "Student Affairs Chairperson",
-   "what_they_did": "Stan McDivitt was elected to the Associated Student Government Congress, the 1975 Talisman's Sigma Alpha Epsilon chapter pages record, alongside fraternity brother Steve Henry, who went on to be ASG president in 1975-76.",
-   "source": "1975 Talisman, Sigma Alpha Epsilon",
-   "source_url": "https://archive.org/details/talisman1975west"
-  },
-  {
    "person": "Marc Levy",
    "name_as_recorded": "Marc Levy",
    "year": "1974-75",
@@ -2685,6 +2675,16 @@
    "what_they_did": "Vogt sat in the ASG Congress in 1974-75 and resigned from it on 28 January 1975. The Herald reported that both the student affairs chairpersonship and a representative-at-large seat were vacated by her resignation and were filled the following week by presidential appointment. She returned the next year as administrative vice president, and the archive already records that term.",
    "source": "Herald 50:35, 7 Feb 1975, 'ASG congress hears treasurer's budget explanation'",
    "source_url": "https://digitalcommons.wku.edu/dlsc_ua_records/5048"
+  },
+  {
+   "person": "Stan McDivitt",
+   "name_as_recorded": "Stan McDivitt",
+   "year": "1974-75",
+   "body": "Senate officer",
+   "office": "ASG Congress Member",
+   "what_they_did": "Stan McDivitt was elected a member of the Associated Student Government, the 1975 Talisman's Sigma Alpha Epsilon chapter pages record, alongside fraternity brother Steve Henry, who went on to be ASG president in 1975-76. The archive has found no source for the student affairs chairmanship this record once carried.",
+   "source": "1975 Talisman, Sigma Alpha Epsilon",
+   "source_url": "https://archive.org/details/talisman1975west"
   },
   {
    "person": "Jo Ann Ballance",
@@ -7779,16 +7779,6 @@
    "source_url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/369"
   },
   {
-   "person": "Amos Gott",
-   "name_as_recorded": "Amos Gott",
-   "year": "1990-91",
-   "body": "Executive",
-   "office": "Judicial Council Chairman",
-   "what_they_did": "After his term as ASG president ended in 1990, Amos Gott returned to Congress as chairman of the Judicial Council. He resigned in January 1991, when a new part-time university staff job made him ineligible for office under the ASG constitution. The Herald reported his departure, alongside that of public relations vice president Van Hodge, on 17 January 1991 under the headline \"Two Associated Student Government Officers Step Down.\"",
-   "source": "Herald 66:33, 17 Jan 1991, \"Two Associated Student Government Officers Step Down\"",
-   "source_url": "https://digitalcommons.wku.edu/dlsc_ua_records/7730"
-  },
-  {
    "person": "Van Hodge",
    "name_as_recorded": "Van Hodge",
    "year": "1990-91",
@@ -7907,6 +7897,16 @@
    "what_they_did": "Jason Stevens was approved as chairman of the Academic Affairs committee on 28 August 1990, having been accepted as an Ogden College alternate to Congress that February. The archive holds no further record of his time in the office.",
    "source": "ASG Minutes, 28 Aug 1990",
    "source_url": "https://digitalcommons.wku.edu/sga/Meetings/Minutes/378"
+  },
+  {
+   "person": "Amos Gott",
+   "name_as_recorded": "Amos Gott",
+   "year": "1990-91",
+   "body": "Senate officer",
+   "office": "Judicial Council Chairman",
+   "what_they_did": "After his term as ASG president ended in 1990, Amos Gott returned to Congress as chairman of the Judicial Council. He resigned in January 1991, when a new part-time university staff job made him ineligible for office under the ASG constitution. The Herald reported his departure, alongside that of public relations vice president Van Hodge, on 17 January 1991 under the headline \"Two Associated Student Government Officers Step Down.\"",
+   "source": "Herald 66:33, 17 Jan 1991, \"Two Associated Student Government Officers Step Down\"",
+   "source_url": "https://digitalcommons.wku.edu/dlsc_ua_records/7730"
   },
   {
    "person": "Allyson Adams",
@@ -20311,16 +20311,6 @@
    "source_url": "https://wkuherald.com/42891/news/student-government-association-budget-finalized/"
   },
   {
-   "person": "Barrett Greenwell",
-   "name_as_recorded": "Barrett Greenwell",
-   "year": "2013-14",
-   "body": "Executive",
-   "office": "Student Affairs Committee Chair",
-   "what_they_did": "As student affairs chair Greenwell reported to the senate in February 2014 that the library would soon carry hard-copy study materials for the MCAT, LSAT and CLEP. He also worked with Kelly Cannon of WKU's Students for Sensible Drug Policy chapter on a resolution asking the university to extend its medical amnesty policy to drug emergencies as well as alcohol; the senate passed it at the last meeting of the spring, and Judicial Affairs rewrote the published policy that October.",
-   "source": "Herald, 26 Feb 2014",
-   "source_url": "https://wkuherald.com/41395/news/sga-releases-budget-report/"
-  },
-  {
    "person": "Paige Settles",
    "name_as_recorded": "Paige Settles",
    "year": "2013-14",
@@ -20389,6 +20379,16 @@
    "what_they_did": "",
    "source": "WKU SGA site, judicial branch, 27 Sep 2013 (archived)",
    "source_url": "https://web.archive.org/web/20130927014139/http://wku.edu/sga/judicial/"
+  },
+  {
+   "person": "Barrett Greenwell",
+   "name_as_recorded": "Barrett Greenwell",
+   "year": "2013-14",
+   "body": "Senate officer",
+   "office": "Student Affairs Committee Chair",
+   "what_they_did": "As student affairs chair Greenwell reported to the senate in February 2014 that the library would soon carry hard-copy study materials for the MCAT, LSAT and CLEP. He also worked with Kelly Cannon of WKU's Students for Sensible Drug Policy chapter on a resolution asking the university to extend its medical amnesty policy to drug emergencies as well as alcohol; the senate passed it at the last meeting of the spring, and Judicial Affairs rewrote the published policy that October.",
+   "source": "Herald, 26 Feb 2014",
+   "source_url": "https://wkuherald.com/41395/news/sga-releases-budget-report/"
   },
   {
    "person": "Alexis Baker",
@@ -22317,16 +22317,6 @@
    "source_url": "https://www.wku.edu/sga/accountability/legislation-2017-2018/bill-1-17-f.pdf"
   },
   {
-   "person": "Mark Clark",
-   "name_as_recorded": "Mark Clark",
-   "year": "2017-18",
-   "body": "Executive",
-   "office": "Chair of the Committee of Diversity and Inclusion",
-   "what_they_did": "Clark was a senator in fall 2017, later confirmed as a senator at large by early 2018, co-authoring Resolution 7-17-F with Lily Nellans and student Francisco Serrano, backing a proposed Bowling Green Fairness Ordinance protecting LGBTQ residents from discrimination; it was sponsored through the Committee for Diversity and Inclusion and read 14-28 November 2017. He co-authored Bill 5-18-S with Administrative Vice President Kara Lowry in February 2018, proposing funding for a recycled computer for the Pride Center. He became chair of the Committee of Diversity and Inclusion in February 2018, replacing Corey Newsome, who had stepped down over scheduling conflicts. The same week, on 13 February, the senate unanimously passed Resolution 1-18-S, which Clark co-authored with Chief of Staff Conner Hounshell and Kara Lowry, supporting an integrated LGBTQ-health curriculum at WKU. As chair, he authored Bill 7-18-S, funding food for CDI's first spring meeting, and co-authored Bill 13-18-S with Hounshell and Jayden Thomas, funding $250 in stoles for the Lavender Recognition Ceremony honoring LGBTQ graduates; it passed 28-5 on 20 March 2018. After Senator Dallas McKinney cited his reading of the Bible as his reason for voting against the bill, LGBTQ students and SGA members addressed the senate on 3 April, and Clark, speaking as Diversity and Inclusion chair, told the meeting that people in the room had demonstrated discrimination towards the LGBTQ community while a harmless funding bill was being passed.",
-   "source": "SGA Bill 7-18-S, Funding for the First Meeting of the Committee of Diversity and Inclusion",
-   "source_url": "https://www.wku.edu/sga/accountability/bill-7-18-s.pdf"
-  },
-  {
    "person": "Smita Peter",
    "name_as_recorded": "Smita Peter",
    "year": "2017-18",
@@ -22355,16 +22345,6 @@
    "what_they_did": "Wyer chaired SGA's Academic Affairs committee in 2016-17 before serving as Director of Public Relations in 2017-18. Senate minutes that fall show her taking photos and video for SGA's social media and coordinating tabling at basketball games. At the Senate's final meeting in April 2018 Wyer used her officer report to answer claims circulating that SGA was taking money from Greek organisations, telling senators those organisations were funded by their own members and that SGA had no power over their money. She then spoke about the importance of intervening when a bystander sees something wrong, and disclosed something of her own experience that year; the archive leaves what she said in the Herald's account rather than repeating it here. She stayed in SGA after her term as an officer ended, taking the SGA SAVES chair in the spring of 2019 after the seat had stood vacant since January.",
    "source": "SGA Senate minutes, 12 Sep 2017",
    "source_url": "https://www.wku.edu/sga/legislative/leg_minutes_2017_18/smm_09_12_17.pdf"
-  },
-  {
-   "person": "Ian Hamilton",
-   "name_as_recorded": "Ian Hamilton",
-   "year": "2017-18",
-   "body": "Executive",
-   "office": "Sustainability Committee Chair",
-   "what_they_did": "Ian Hamilton was a WKU SGA senator for 2016-17 and 2017-18. He authored a bill at the Senate's April 2017 meeting to move the power to appoint Senate committee heads from the SGA president to the speaker of the Senate; President Jay Todd Richey argued the change would compromise the speaker's meant-to-be-impartial role, and the bill failed 15-3. Hamilton was elected a senator-at-large for 2017-18 in that spring's election. As chair of the Sustainability Committee once it became a permanent SGA committee that fall, Hamilton co-authored Bill 10-17-F, funding a \"No-Shave November\" beard-growing contest; he amended its budget down from $250 to $100 at the September 2017 meeting, and it passed 25-3. He also co-authored Bill 16-17-F, funding an Interfaith Workshop on Sustainability and Social Justice, which passed unanimously, and, with Senator Garrett Edmonds, Bill 17-17-F, funding a chalk campaign for Mission: Thank You Veterans. The following February he authored Bill 10-18-S, funding the 2018 Earth Day Festival. At the Senate's 24 January 2018 meeting, called amid a dispute over a postponed appointment and a reported \"irregularity\" in that year's SGA election, Hamilton was one of four students who addressed the chamber; he read aloud a letter from former senate member Luke Edmonds, who could not attend, expressing condolences after the shooting at Marshall County High School.",
-   "source": "SGA legislation: Bill 10-18-S, Funding for the 2018 Earth Day Festival hosted by the SGA Sustainability Committee",
-   "source_url": "https://www.wku.edu/sga/accountability/bill-10-18-s.pdf"
   },
   {
    "person": "Ryan Richardson",
@@ -22605,6 +22585,26 @@
    "what_they_did": "Lily Nellans was a senator in WKU SGA's 2016-17 session. With senators Brian Anderson, James Line and Jay Todd Richey, she co-authored Bill 20-17-S, \"Bill to Encourage Inclusivity in Student Organizations,\" requiring student organizations to commit to inclusivity before receiving Organizational Aid funding, written in response to a Kentucky law signed 20 March 2017 that let campus organizations discriminate when it aligned with their beliefs. The bill passed 17-9-1 on second reading, 28 March 2017. In the April 2017 SGA election, Nellans ran for student body president and placed third, with 212 of 1,579 votes cast, behind winner Andi Dahmer (930 votes) and Kenan Mujkanovic (305 votes). In the same election she was elected one of twelve senators-at-large for 2017-18. That session, with senator Mark Clark and WKU student Francisco Serrano, she co-authored Resolution 7-17-F, \"Resolution to Support Our LGBTQ Students,\" calling on the Bowling Green City Commission to pass a Fairness Ordinance protecting residents from discrimination based on sexual orientation or gender identity; it passed second reading 28 November 2017.",
    "source": "SGA legislation: Resolution 7-17-F, Resolution to Support Our LGBTQ Students",
    "source_url": "https://www.wku.edu/sga/accountability/resolution-7-17-f.pdf"
+  },
+  {
+   "person": "Mark Clark",
+   "name_as_recorded": "Mark Clark",
+   "year": "2017-18",
+   "body": "Senate officer",
+   "office": "Chair of the Committee of Diversity and Inclusion",
+   "what_they_did": "Clark was a senator in fall 2017, later confirmed as a senator at large by early 2018, co-authoring Resolution 7-17-F with Lily Nellans and student Francisco Serrano, backing a proposed Bowling Green Fairness Ordinance protecting LGBTQ residents from discrimination; it was sponsored through the Committee for Diversity and Inclusion and read 14-28 November 2017. He co-authored Bill 5-18-S with Administrative Vice President Kara Lowry in February 2018, proposing funding for a recycled computer for the Pride Center. He became chair of the Committee of Diversity and Inclusion in February 2018, replacing Corey Newsome, who had stepped down over scheduling conflicts. The same week, on 13 February, the senate unanimously passed Resolution 1-18-S, which Clark co-authored with Chief of Staff Conner Hounshell and Kara Lowry, supporting an integrated LGBTQ-health curriculum at WKU. As chair, he authored Bill 7-18-S, funding food for CDI's first spring meeting, and co-authored Bill 13-18-S with Hounshell and Jayden Thomas, funding $250 in stoles for the Lavender Recognition Ceremony honoring LGBTQ graduates; it passed 28-5 on 20 March 2018. After Senator Dallas McKinney cited his reading of the Bible as his reason for voting against the bill, LGBTQ students and SGA members addressed the senate on 3 April, and Clark, speaking as Diversity and Inclusion chair, told the meeting that people in the room had demonstrated discrimination towards the LGBTQ community while a harmless funding bill was being passed.",
+   "source": "SGA Bill 7-18-S, Funding for the First Meeting of the Committee of Diversity and Inclusion",
+   "source_url": "https://www.wku.edu/sga/accountability/bill-7-18-s.pdf"
+  },
+  {
+   "person": "Ian Hamilton",
+   "name_as_recorded": "Ian Hamilton",
+   "year": "2017-18",
+   "body": "Senate officer",
+   "office": "Sustainability Committee Chair",
+   "what_they_did": "Ian Hamilton was a WKU SGA senator for 2016-17 and 2017-18. He authored a bill at the Senate's April 2017 meeting to move the power to appoint Senate committee heads from the SGA president to the speaker of the Senate; President Jay Todd Richey argued the change would compromise the speaker's meant-to-be-impartial role, and the bill failed 15-3. Hamilton was elected a senator-at-large for 2017-18 in that spring's election. As chair of the Sustainability Committee once it became a permanent SGA committee that fall, Hamilton co-authored Bill 10-17-F, funding a \"No-Shave November\" beard-growing contest; he amended its budget down from $250 to $100 at the September 2017 meeting, and it passed 25-3. He also co-authored Bill 16-17-F, funding an Interfaith Workshop on Sustainability and Social Justice, which passed unanimously, and, with Senator Garrett Edmonds, Bill 17-17-F, funding a chalk campaign for Mission: Thank You Veterans. The following February he authored Bill 10-18-S, funding the 2018 Earth Day Festival. At the Senate's 24 January 2018 meeting, called amid a dispute over a postponed appointment and a reported \"irregularity\" in that year's SGA election, Hamilton was one of four students who addressed the chamber; he read aloud a letter from former senate member Luke Edmonds, who could not attend, expressing condolences after the shooting at Marshall County High School.",
+   "source": "SGA legislation: Bill 10-18-S, Funding for the 2018 Earth Day Festival hosted by the SGA Sustainability Committee",
+   "source_url": "https://www.wku.edu/sga/accountability/bill-10-18-s.pdf"
   },
   {
    "person": "Matthew Barr",
@@ -24163,36 +24163,6 @@
    "source_url": "https://www.wku.edu/sga/2018-2019-legislative/minutes/senate_minutes_8_31_21.docx"
   },
   {
-   "person": "Zachary Skillman",
-   "name_as_recorded": "Zachary Skillman",
-   "year": "2021-22",
-   "body": "Executive",
-   "office": "Campus Improvements and Sustainability Committee Chair",
-   "what_they_did": "Zachary Skillman was elected a WKU SGA senator-at-large in September 2021, one of two Skillmans (with fellow business economics junior Jacob Skillman, no relation established in the sources) sworn in on 14 September. A junior majoring in business economics and a Gordon Ford College of Business ambassador, he said Matthew Wininger had encouraged him to run and that he wanted to continue the recycling and sustainability initiatives Wininger had started as head of the sustainability committee, including off-campus recycling, a used-WKU-apparel recycling program and an adopt-a-highway effort. By 2021-22 Skillman chaired the renamed Campus Improvements and Sustainability Committee. In April 2022 he won Senate approval of $570.02 for an e-waste recycling bin on WKU's main campus, saying the project would earn WKU 0.25 credits toward Gold certification from the Association for the Advancement of Sustainability in Higher Education. He also co-authored Resolution 12-22-S, adding benches to South Lawn, and authored Bill 41-22-S, funding an Earth Day tie-dye tabling event.",
-   "source": "SGA legislation: Resolution 12-22-S, Resolution to Support the Addition of Benches on South Lawn",
-   "source_url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_12_22_s.pdf"
-  },
-  {
-   "person": "Alex Cissell",
-   "name_as_recorded": "Alex Cissell",
-   "year": "2021-22",
-   "body": "Executive",
-   "office": "Student Mental Health and Wellbeing Committee Chair",
-   "what_they_did": "Alex Cissell chaired SGA's Student Mental Health and Wellbeing Committee for 2021-22. Cissell co-authored Bill 5-21-F, requiring Title IX training for all collegiate members of SGA, with Senators Kat Howard and Olivia Feck, and Bill 13-22-S, amending the SGA constitution to set out the committee's duties, with Senior Senator Emily Bunning; the senate passed 13-22-S 31-0 on 22 February 2022 and it was vetoed the same day. In April 2022 Cissell announced a week of Mental Health Awareness Week programming, including an April 25 kickoff at Centennial Mall, saying in a press release that the week was meant \"to shed light and reduce stigmas of mental illnesses.\" By March 2024, signing as a WKU student rather than a senator and by then a senior public relations student, Cissell was first-named author of Bill 16-24-S, funding a Denim Day event with the nonprofit Hope Harbor to raise awareness of sexual assault, written with two other students and Senators at Large Sophia Bryant and Maiah Cisco, and presented it to the senate on 12 March 2024.",
-   "source": "SGA legislation: Bill 13-22-S, A Bill to Amend the Student Government Association Constitution",
-   "source_url": "https://www.wku.edu/sga/legislative/2021_22_legislation/13_22_s.pdf"
-  },
-  {
-   "person": "Shelby Robertson",
-   "name_as_recorded": "Shelby Robertson",
-   "year": "2021-22",
-   "body": "Executive",
-   "office": "Student Enrollment and Experience Committee Chair",
-   "what_they_did": "Named as an author on three pieces of SGA legislation in the 2021-22 session: Resolution 1-22-S (Resolution to Support the implementation of Barnes & Noble First Day Complete); Bill 9-22-S (Funding for vouchers for free teeth cleanings for WKU Students through the WKU Dental Hygiene Program); Bill 18-22-S (Funding for the Diversity & Inclusion Mahurin Honors College Membership Fee Scholarship).",
-   "source": "SGA legislation: Resolution 1-22-S, Resolution to Support the implementation of Barnes & Noble First Day Complete",
-   "source_url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_1_22_s.pdf"
-  },
-  {
    "person": "Alexis Courtenay",
    "name_as_recorded": "Alexis Courtenay",
    "year": "2021-22",
@@ -24473,6 +24443,36 @@
    "source_url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_7_21_f.pdf"
   },
   {
+   "person": "Zachary Skillman",
+   "name_as_recorded": "Zachary Skillman",
+   "year": "2021-22",
+   "body": "Senate officer",
+   "office": "Campus Improvements and Sustainability Committee Chair",
+   "what_they_did": "Zachary Skillman was elected a WKU SGA senator-at-large in September 2021, one of two Skillmans (with fellow business economics junior Jacob Skillman, no relation established in the sources) sworn in on 14 September. A junior majoring in business economics and a Gordon Ford College of Business ambassador, he said Matthew Wininger had encouraged him to run and that he wanted to continue the recycling and sustainability initiatives Wininger had started as head of the sustainability committee, including off-campus recycling, a used-WKU-apparel recycling program and an adopt-a-highway effort. By 2021-22 Skillman chaired the renamed Campus Improvements and Sustainability Committee. In April 2022 he won Senate approval of $570.02 for an e-waste recycling bin on WKU's main campus, saying the project would earn WKU 0.25 credits toward Gold certification from the Association for the Advancement of Sustainability in Higher Education. He also co-authored Resolution 12-22-S, adding benches to South Lawn, and authored Bill 41-22-S, funding an Earth Day tie-dye tabling event.",
+   "source": "SGA legislation: Resolution 12-22-S, Resolution to Support the Addition of Benches on South Lawn",
+   "source_url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_12_22_s.pdf"
+  },
+  {
+   "person": "Alex Cissell",
+   "name_as_recorded": "Alex Cissell",
+   "year": "2021-22",
+   "body": "Senate officer",
+   "office": "Student Mental Health and Wellbeing Committee Chair",
+   "what_they_did": "Alex Cissell chaired SGA's Student Mental Health and Wellbeing Committee for 2021-22. Cissell co-authored Bill 5-21-F, requiring Title IX training for all collegiate members of SGA, with Senators Kat Howard and Olivia Feck, and Bill 13-22-S, amending the SGA constitution to set out the committee's duties, with Senior Senator Emily Bunning; the senate passed 13-22-S 31-0 on 22 February 2022 and it was vetoed the same day. In April 2022 Cissell announced a week of Mental Health Awareness Week programming, including an April 25 kickoff at Centennial Mall, saying in a press release that the week was meant \"to shed light and reduce stigmas of mental illnesses.\" By March 2024, signing as a WKU student rather than a senator and by then a senior public relations student, Cissell was first-named author of Bill 16-24-S, funding a Denim Day event with the nonprofit Hope Harbor to raise awareness of sexual assault, written with two other students and Senators at Large Sophia Bryant and Maiah Cisco, and presented it to the senate on 12 March 2024.",
+   "source": "SGA legislation: Bill 13-22-S, A Bill to Amend the Student Government Association Constitution",
+   "source_url": "https://www.wku.edu/sga/legislative/2021_22_legislation/13_22_s.pdf"
+  },
+  {
+   "person": "Shelby Robertson",
+   "name_as_recorded": "Shelby Robertson",
+   "year": "2021-22",
+   "body": "Senate officer",
+   "office": "Student Enrollment and Experience Committee Chair",
+   "what_they_did": "Named as an author on three pieces of SGA legislation in the 2021-22 session: Resolution 1-22-S (Resolution to Support the implementation of Barnes & Noble First Day Complete); Bill 9-22-S (Funding for vouchers for free teeth cleanings for WKU Students through the WKU Dental Hygiene Program); Bill 18-22-S (Funding for the Diversity & Inclusion Mahurin Honors College Membership Fee Scholarship).",
+   "source": "SGA legislation: Resolution 1-22-S, Resolution to Support the implementation of Barnes & Noble First Day Complete",
+   "source_url": "https://www.wku.edu/sga/legislative/2021_22_legislation/res_1_22_s.pdf"
+  },
+  {
    "person": "Garrett Baum",
    "name_as_recorded": "Garrett Baum",
    "year": "2021-22",
@@ -24655,16 +24655,6 @@
    "what_they_did": "Willett was elected the Senate's transfer and non-traditional student senator in the April 2022 elections, and by the 2022-23 term had become the executive's chief of staff. That September she was nominated by Administrative Vice President Sam Kurtz as SGA's homecoming queen candidate. Lauren Willett was chief of staff of SGA for 2022-23. She authored Bills 25-22-F, 27-23-S and 28-23-S, funding textbook, dental-hygiene, ID Center and Preston Center voucher programs, and reported a 660 percent rise in the use of dental vouchers. Bill 28-23-S, passed at a Senate meeting on 31 January 2023, funded free teeth cleanings at the WKU Dental Health Clinic; Willett said it would help both the students needing the cleaning and the dental students completing their coursework.",
    "source": "Wayback capture, wku.edu/sga cabinet, 4 Feb 2023",
    "source_url": "https://web.archive.org/web/20230204125153/https://www.wku.edu/sga/executive/index.php"
-  },
-  {
-   "person": "Olivia Feck",
-   "name_as_recorded": "Olivia Feck",
-   "year": "2022-23",
-   "body": "Executive",
-   "office": "Student Mental Health and Wellbeing Committee Chair",
-   "what_they_did": "Olivia Feck was elected a WKU SGA senator in fall 2021. In April 2022 she ran for student body president on a platform centered on mental health awareness, equity for students with disabilities and student engagement; she said her campaign reflected personal experience with the difficulty of college, and she worked in the Students' Support Services Disabilities Program. She placed third in the election announced 20 April 2022 with 11 percent of the vote, behind Alexis Courtenay's 40 percent and winner Cole Bornefeld's 49 percent, and was elected a senior class senator in the same election. That September the Senate unanimously voted her chair of the Student Mental Health and Wellbeing Committee. She was a named contact on Bill 46-23-S, funding Mental Health Awareness Week events in April 2023, and authored Bill 36-23-S, funding T-shirts for the Counseling Center's Sexual Assault Prevention Month.",
-   "source": "SGA legislation: Bill 36-23-S, Funding for the Counseling Center\u2019s Sexual Assault Prevention Month T-Shirts",
-   "source_url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_36_23_s.pdf"
   },
   {
    "person": "Preston Romanov",
@@ -25017,6 +25007,16 @@
    "source_url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_46_23_s.pdf"
   },
   {
+   "person": "Olivia Feck",
+   "name_as_recorded": "Olivia Feck",
+   "year": "2022-23",
+   "body": "Senate officer",
+   "office": "Student Mental Health and Wellbeing Committee Chair",
+   "what_they_did": "Olivia Feck was elected a WKU SGA senator in fall 2021. In April 2022 she ran for student body president on a platform centered on mental health awareness, equity for students with disabilities and student engagement; she said her campaign reflected personal experience with the difficulty of college, and she worked in the Students' Support Services Disabilities Program. She placed third in the election announced 20 April 2022 with 11 percent of the vote, behind Alexis Courtenay's 40 percent and winner Cole Bornefeld's 49 percent, and was elected a senior class senator in the same election. That September the Senate unanimously voted her chair of the Student Mental Health and Wellbeing Committee. She was a named contact on Bill 46-23-S, funding Mental Health Awareness Week events in April 2023, and authored Bill 36-23-S, funding T-shirts for the Counseling Center's Sexual Assault Prevention Month.",
+   "source": "SGA legislation: Bill 36-23-S, Funding for the Counseling Center\u2019s Sexual Assault Prevention Month T-Shirts",
+   "source_url": "https://www.wku.edu/sga/2022-2023-legislative/legislation/bill_36_23_s.pdf"
+  },
+  {
    "person": "Adan Canizalez",
    "name_as_recorded": "Adan Canizalez",
    "year": "2022-23",
@@ -25209,16 +25209,6 @@
    "what_they_did": "Romanov was already director of public relations by the 2022-23 year; at the Senate's 30 August 2022 meeting he outlined plans to grow SGA's social media reach on Instagram, TikTok and Linktree. He was one of seven signers of the bill funding SGA's 2022-23 budget, which the Senate passed 29-0 on 6 September 2022, and he later co-authored Bill 33-23-S funding SGA's Bike4Alz Team 11. In February 2024, the Executive Cabinet's complaint seeking a Judicial Council censure hearing against Administrative Vice President Salvador Le\u00f3n said Le\u00f3n had pushed Romanov to promote Neurodiversity Week on SGA's social media before that week's funding bill had passed, ahead of the Senate's own vote on it. The council heard the complaint on 7 February 2024 and voted 6-0 to censure Le\u00f3n, recommending no further disciplinary action. Nothing in the record suggests Romanov was himself the subject of the complaint. Romanov returned as director of public relations for 2023-24, when he arranged headshots for the executive cabinet at the start of the year and ordered polo shirts for SGA members, including the Judicial Council.",
    "source": "WKU SGA, Executive Cabinet minutes, 29 Aug 2023",
    "source_url": "https://www.wku.edu/sga/2023-2024-executive/minutes/exec_minutes_8_29_23.pdf"
-  },
-  {
-   "person": "Meghan Pierce",
-   "name_as_recorded": "Meghan Pierce",
-   "year": "2023-24",
-   "body": "Executive",
-   "office": "LOC Chair",
-   "what_they_did": "Meghan Pierce served WKU SGA as a senior senator in 2021-22 and was elected the Potter College of Arts & Letters senator for 2022-23 in that April's election. At the senate's meeting of 24 January 2023 she spoke in support of confirming Adan Canizalez as chair of student enrollment and experience, telling the chamber he was qualified and had done the job well as acting chair the previous semester; his was one of five nominations confirmed unanimously that night. Pierce was elected an at-large senator for fall 2023 and became chair of the Legislative Operations Committee that August. That fall she authored or co-authored bills updating the SGA constitution and bylaws: correcting outdated references to the University Senate after it split into separate Faculty and Staff Senates, clarifying that the constitution provided only for impeachment and not for the Bylaws' separate expulsion process, and renaming the Committee of Enrollment and Student Experience. She also spoke in affirmation of Sophia Bryant's appointment as Student Mental Health and Wellbeing Committee chair at the Senate's swearing-in meeting in January 2024.",
-   "source": "SGA legislation: Bill 10-23-F, A Bill to Amend the Constitution of the Student Government Association of Western Kentucky University",
-   "source_url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_10_23_f.pdf"
   },
   {
    "person": "Sydney Denney",
@@ -25449,6 +25439,16 @@
    "what_they_did": "Named as an author on two pieces of SGA legislation in the 2023-24 session: Resolution 1-23-F (Resolution to Support the Alteration of Fire Drill Times); Bill 6-23-F (Funding for the National Kindness Day Tabling Event).",
    "source": "SGA legislation: Resolution 1-23-F, Resolution to Support the Alteration of Fire Drill Times",
    "source_url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/res_1_23_f.pdf"
+  },
+  {
+   "person": "Meghan Pierce",
+   "name_as_recorded": "Meghan Pierce",
+   "year": "2023-24",
+   "body": "Senate officer",
+   "office": "LOC Chair",
+   "what_they_did": "Meghan Pierce served WKU SGA as a senior senator in 2021-22 and was elected the Potter College of Arts & Letters senator for 2022-23 in that April's election. At the senate's meeting of 24 January 2023 she spoke in support of confirming Adan Canizalez as chair of student enrollment and experience, telling the chamber he was qualified and had done the job well as acting chair the previous semester; his was one of five nominations confirmed unanimously that night. Pierce was elected an at-large senator for fall 2023 and became chair of the Legislative Operations Committee that August. That fall she authored or co-authored bills updating the SGA constitution and bylaws: correcting outdated references to the University Senate after it split into separate Faculty and Staff Senates, clarifying that the constitution provided only for impeachment and not for the Bylaws' separate expulsion process, and renaming the Committee of Enrollment and Student Experience. She also spoke in affirmation of Sophia Bryant's appointment as Student Mental Health and Wellbeing Committee chair at the Senate's swearing-in meeting in January 2024.",
+   "source": "SGA legislation: Bill 10-23-F, A Bill to Amend the Constitution of the Student Government Association of Western Kentucky University",
+   "source_url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_10_23_f.pdf"
   },
   {
    "person": "Geoffrey Aberle",
@@ -26199,16 +26199,6 @@
    "source_url": "https://web.archive.org/web/20251215185802/https://www.wku.edu/sga/executive/index.php"
   },
   {
-   "person": "Jade Ismail",
-   "name_as_recorded": "Jade Ismail",
-   "year": "2025-26",
-   "body": "Executive",
-   "office": "Chair of the Action & Opportunity Committee",
-   "what_they_did": "Jade Ismail was elected a senator-at-large in WKU SGA's April 2025 election, for the 2025-26 term. She chaired the Action & Opportunity Committee that year and co-authored Bill 3-26-S, funding a STEMPOWERMENT and SGA Uno Tournament fundraiser, with Grace Ekrikpo, and Bill 17-26-S, funding the \"Textbooks for Toppers\" reimbursement program, with Jacob Thomas. In the April 2026 election she was elected the First Generation senator for 2026-27.",
-   "source": "SGA legislation: Bill 17-26-S, Funding for the \"Textbooks for Toppers\" Reimbursement Program",
-   "source_url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_17_26_s.pdf"
-  },
-  {
    "person": "Preston Jenkins",
    "name_as_recorded": "Preston Jenkins",
    "year": "2025-26",
@@ -26547,6 +26537,16 @@
    "what_they_did": "Tuck was elected a senator-at-large in the spring 2025 general election. In April 2026 he and fellow senator-at-large Amelia Tucker co-authored a bill to purchase three spikeball nets for students to check out from the Senate office, similar to its existing hammock-lending program, which passed unanimously. In the spring 2026 election he was returned to the Senate as a junior senator.",
    "source": "SGA legislation: Resolution 2-26-S, Resolution to Support the Repeal of the Previous Set of SGA Bylaws and Adopt the Amended Executive and Legislative Bylaws",
    "source_url": "https://www.wku.edu/sga/2025_2026_legislative/senate_resolution/resolution_2_26_s.pdf"
+  },
+  {
+   "person": "Jade Ismail",
+   "name_as_recorded": "Jade Ismail",
+   "year": "2025-26",
+   "body": "Senate officer",
+   "office": "Chair of the Action & Opportunity Committee",
+   "what_they_did": "Jade Ismail was elected a senator-at-large in WKU SGA's April 2025 election, for the 2025-26 term. She chaired the Action & Opportunity Committee that year and co-authored Bill 3-26-S, funding a STEMPOWERMENT and SGA Uno Tournament fundraiser, with Grace Ekrikpo, and Bill 17-26-S, funding the \"Textbooks for Toppers\" reimbursement program, with Jacob Thomas. In the April 2026 election she was elected the First Generation senator for 2026-27.",
+   "source": "SGA legislation: Bill 17-26-S, Funding for the \"Textbooks for Toppers\" Reimbursement Program",
+   "source_url": "https://www.wku.edu/sga/2025_2026_legislative/senate_bills/bill_17_26_s.pdf"
   },
   {
    "person": "Andrew Adegoju",
@@ -35900,7 +35900,7 @@
    "years": "2016-17; 2017-18",
    "most_senior_office": "Sustainability Committee Chair",
    "all_offices": "Sustainability Committee Chair (2017-18); Chair, Sustainability (2017-18); Gordon Ford College of Business Senator (2016-17); Senator At Large (2017-18)",
-   "what_they_did": "Named on the document as gordon ford college of business senator. Ian Hamilton was a WKU SGA senator for 2016-17 and 2017-18. He authored a bill at the Senate's April 2017 meeting to move the power to appoint Senate committee heads from the SGA president to the speaker of the Senate; President Jay Todd Richey argued the change would compromise the speaker's meant-to-be-impartial role, and the bill failed 15-3. Hamilton was elected a senator-at-large for 2017-18 in that spring's election. As chair of the Sustainability Committee once it became a permanent SGA committee that fall, Hamilton co-authored Bill 10-17-F, funding a \"No-Shave November\" beard-growing contest; he amended its budget down from $250 to $100 at the September 2017 meeting, and it passed 25-3. He also co-authored Bill 16-17-F, funding an Interfaith Workshop on Sustainability and Social Justice, which passed unanimously, and, with Senator Garrett Edmonds, Bill 17-17-F, funding a chalk campaign for Mission: Thank You Veterans. The following February he authored Bill 10-18-S, funding the 2018 Earth Day Festival. At the Senate's 24 January 2018 meeting, called amid a dispute over a postponed appointment and a reported \"irregularity\" in that year's SGA election, Hamilton was one of four students who addressed the chamber; he read aloud a letter from former senate member Luke Edmonds, who could not attend, expressing condolences after the shooting at Marshall County High School. Hamilton chaired sustainability. He funded the committee's No-Shave November promotion ($100), the interfaith workshop on sustainability and social justice ($200), the 2018 spring movie series ($50) and the 2018 Earth Day festival ($50), and wrote the constitutional amendment changing how committee heads were appointed. His Bill 32-17-F took the first reading of legislation out of the bylaws so that bills could pass on a single reading. Hamilton's committee met weekly and, he told the Herald in August 2017, had about twenty members and wanted more. It ran No-Shave November, a spring film series and the 2018 Earth Day festival, each funded by a bill he wrote.",
+   "what_they_did": "Named on the document as gordon ford college of business senator. Hamilton chaired sustainability. He funded the committee's No-Shave November promotion ($100), the interfaith workshop on sustainability and social justice ($200), the 2018 spring movie series ($50) and the 2018 Earth Day festival ($50), and wrote the constitutional amendment changing how committee heads were appointed. His Bill 32-17-F took the first reading of legislation out of the bylaws so that bills could pass on a single reading. Ian Hamilton was a WKU SGA senator for 2016-17 and 2017-18. He authored a bill at the Senate's April 2017 meeting to move the power to appoint Senate committee heads from the SGA president to the speaker of the Senate; President Jay Todd Richey argued the change would compromise the speaker's meant-to-be-impartial role, and the bill failed 15-3. Hamilton was elected a senator-at-large for 2017-18 in that spring's election. As chair of the Sustainability Committee once it became a permanent SGA committee that fall, Hamilton co-authored Bill 10-17-F, funding a \"No-Shave November\" beard-growing contest; he amended its budget down from $250 to $100 at the September 2017 meeting, and it passed 25-3. He also co-authored Bill 16-17-F, funding an Interfaith Workshop on Sustainability and Social Justice, which passed unanimously, and, with Senator Garrett Edmonds, Bill 17-17-F, funding a chalk campaign for Mission: Thank You Veterans. The following February he authored Bill 10-18-S, funding the 2018 Earth Day Festival. At the Senate's 24 January 2018 meeting, called amid a dispute over a postponed appointment and a reported \"irregularity\" in that year's SGA election, Hamilton was one of four students who addressed the chamber; he read aloud a letter from former senate member Luke Edmonds, who could not attend, expressing condolences after the shooting at Marshall County High School. Hamilton's committee met weekly and, he told the Herald in August 2017, had about twenty members and wanted more. It ran No-Shave November, a spring film series and the 2018 Earth Day festival, each funded by a bill he wrote.",
    "sources": "Herald, 23 Aug 2017; SGA legislation: Bill 10-18-S, Funding for the 2018 Earth Day Festival hosted by the SGA Sustainability Committee; SGA legislation: Bill 16-17-F, Funding for the Interfaith Workshop on Sustainability and Social Justice; SGA legislation: Bill 25-17-S, A Bill to Amend the Constitution of the Student Government Association of Western Kentucky University",
    "same_name": ""
   },
@@ -42361,7 +42361,7 @@
    "years": "2017-18; 2018-19; 2019-20",
    "most_senior_office": "Chair of the Committee of Diversity and Inclusion",
    "all_offices": "Chair of the Committee of Diversity and Inclusion (2017-18); Chair, Diversity and Inclusion (2018-19); Senator At Large (2017-18); Senator (2019-20)",
-   "what_they_did": "Clark was a senator in fall 2017, later confirmed as a senator at large by early 2018, co-authoring Resolution 7-17-F with Lily Nellans and student Francisco Serrano, backing a proposed Bowling Green Fairness Ordinance protecting LGBTQ residents from discrimination; it was sponsored through the Committee for Diversity and Inclusion and read 14-28 November 2017. He co-authored Bill 5-18-S with Administrative Vice President Kara Lowry in February 2018, proposing funding for a recycled computer for the Pride Center. He became chair of the Committee of Diversity and Inclusion in February 2018, replacing Corey Newsome, who had stepped down over scheduling conflicts. The same week, on 13 February, the senate unanimously passed Resolution 1-18-S, which Clark co-authored with Chief of Staff Conner Hounshell and Kara Lowry, supporting an integrated LGBTQ-health curriculum at WKU. As chair, he authored Bill 7-18-S, funding food for CDI's first spring meeting, and co-authored Bill 13-18-S with Hounshell and Jayden Thomas, funding $250 in stoles for the Lavender Recognition Ceremony honoring LGBTQ graduates; it passed 28-5 on 20 March 2018. After Senator Dallas McKinney cited his reading of the Bible as his reason for voting against the bill, LGBTQ students and SGA members addressed the senate on 3 April, and Clark, speaking as Diversity and Inclusion chair, told the meeting that people in the room had demonstrated discrimination towards the LGBTQ community while a harmless funding bill was being passed. Clark authored or co-authored the year's LGBTQ legislation: the resolution backing a Bowling Green fairness ordinance, which he wrote with Lily Nellans and Francisco Serrano and which passed 34-2 at the meeting of 28 November 2017; the resolution for an integrated LGBTQ+ health curriculum in medical education; $150 for a recycled computer in the Pride Center; $250 for the stoles at WKU's first Lavender Graduation, passed 28-5 on 20 March 2018, a figure the Herald printed the morning after the vote and again a week later, though its recap of 4 April gave it as 26-5; and $150 for the first meeting of the new Committee of Diversity and Inclusion, which he chaired. Clark had set up the Committee of Diversity and Inclusion as its first chair in spring 2018 and took the chair again in October 2018. In September 2019 he co-authored the bill that put $500 into the Bowling Green Pride Festival, which passed on its second reading on 10 September. Named on the document as senator.",
+   "what_they_did": "Clark authored or co-authored the year's LGBTQ legislation: the resolution backing a Bowling Green fairness ordinance, which he wrote with Lily Nellans and Francisco Serrano and which passed 34-2 at the meeting of 28 November 2017; the resolution for an integrated LGBTQ+ health curriculum in medical education; $150 for a recycled computer in the Pride Center; $250 for the stoles at WKU's first Lavender Graduation, passed 28-5 on 20 March 2018, a figure the Herald printed the morning after the vote and again a week later, though its recap of 4 April gave it as 26-5; and $150 for the first meeting of the new Committee of Diversity and Inclusion, which he chaired. Clark was a senator in fall 2017, later confirmed as a senator at large by early 2018, co-authoring Resolution 7-17-F with Lily Nellans and student Francisco Serrano, backing a proposed Bowling Green Fairness Ordinance protecting LGBTQ residents from discrimination; it was sponsored through the Committee for Diversity and Inclusion and read 14-28 November 2017. He co-authored Bill 5-18-S with Administrative Vice President Kara Lowry in February 2018, proposing funding for a recycled computer for the Pride Center. He became chair of the Committee of Diversity and Inclusion in February 2018, replacing Corey Newsome, who had stepped down over scheduling conflicts. The same week, on 13 February, the senate unanimously passed Resolution 1-18-S, which Clark co-authored with Chief of Staff Conner Hounshell and Kara Lowry, supporting an integrated LGBTQ-health curriculum at WKU. As chair, he authored Bill 7-18-S, funding food for CDI's first spring meeting, and co-authored Bill 13-18-S with Hounshell and Jayden Thomas, funding $250 in stoles for the Lavender Recognition Ceremony honoring LGBTQ graduates; it passed 28-5 on 20 March 2018. After Senator Dallas McKinney cited his reading of the Bible as his reason for voting against the bill, LGBTQ students and SGA members addressed the senate on 3 April, and Clark, speaking as Diversity and Inclusion chair, told the meeting that people in the room had demonstrated discrimination towards the LGBTQ community while a harmless funding bill was being passed. Clark had set up the Committee of Diversity and Inclusion as its first chair in spring 2018 and took the chair again in October 2018. In September 2019 he co-authored the bill that put $500 into the Bowling Green Pride Festival, which passed on its second reading on 10 September. Named on the document as senator.",
    "sources": "SGA Bill 7-18-S, Funding for the First Meeting of the Committee of Diversity and Inclusion; SGA Senate minutes, 23 Oct 2018; SGA legislation: Bill 13-18-S, Funding for Lavender Graduation Stoles; SGA legislation: Bill 2-19-F, Funding for the Bowling Green Pride Festival",
    "same_name": ""
   },
@@ -43180,7 +43180,7 @@
    "years": "2021-22; 2022-23; 2023-24",
    "most_senior_office": "LOC Chair",
    "all_offices": "LOC Chair (2023-24); Chair, Legislative Operations Committee (2023-24); Senior Senator (2021-22); Parliamentarian (2022-23); Senator (2023-24)",
-   "what_they_did": "Named as an author on three pieces of SGA legislation in the 2021-22 session: Bill 6-21-F (Funding for SGA Tabling at the BG Pride Festival); Resolution 7-21-F (Resolution to Support Critical Race Theory). Bill 4-21-F amended SGA's constitution or bylaws. Sat as PCAL senator. Asked the Senate to take a refresher course on Robert's Rules, and on 17 January 2023 moved the chamber out of the bylaws so that the chief justice election could be taken before the sixth order of business. Meghan Pierce served WKU SGA as a senior senator in 2021-22 and was elected the Potter College of Arts & Letters senator for 2022-23 in that April's election. At the senate's meeting of 24 January 2023 she spoke in support of confirming Adan Canizalez as chair of student enrollment and experience, telling the chamber he was qualified and had done the job well as acting chair the previous semester; his was one of five nominations confirmed unanimously that night. Pierce was elected an at-large senator for fall 2023 and became chair of the Legislative Operations Committee that August. That fall she authored or co-authored bills updating the SGA constitution and bylaws: correcting outdated references to the University Senate after it split into separate Faculty and Staff Senates, clarifying that the constitution provided only for impeachment and not for the Bylaws' separate expulsion process, and renaming the Committee of Enrollment and Student Experience. She also spoke in affirmation of Sophia Bryant's appointment as Student Mental Health and Wellbeing Committee chair at the Senate's swearing-in meeting in January 2024. Named on the document as senator. Named as an author on eighteen pieces of SGA legislation in the 2023-24 session: Bill 2-23-F (Funding for Student Activities \"Shark Tank\" Event). Seventeen of them amended SGA's constitution or bylaws (Bill 8-23-F, Bill 9-23-F, Bill 10-23-F, Bill 19-24-S and 13 more).",
+   "what_they_did": "Named as an author on three pieces of SGA legislation in the 2021-22 session: Bill 6-21-F (Funding for SGA Tabling at the BG Pride Festival); Resolution 7-21-F (Resolution to Support Critical Race Theory). Bill 4-21-F amended SGA's constitution or bylaws. Sat as PCAL senator. Asked the Senate to take a refresher course on Robert's Rules, and on 17 January 2023 moved the chamber out of the bylaws so that the chief justice election could be taken before the sixth order of business. Named on the document as senator. Meghan Pierce served WKU SGA as a senior senator in 2021-22 and was elected the Potter College of Arts & Letters senator for 2022-23 in that April's election. At the senate's meeting of 24 January 2023 she spoke in support of confirming Adan Canizalez as chair of student enrollment and experience, telling the chamber he was qualified and had done the job well as acting chair the previous semester; his was one of five nominations confirmed unanimously that night. Pierce was elected an at-large senator for fall 2023 and became chair of the Legislative Operations Committee that August. That fall she authored or co-authored bills updating the SGA constitution and bylaws: correcting outdated references to the University Senate after it split into separate Faculty and Staff Senates, clarifying that the constitution provided only for impeachment and not for the Bylaws' separate expulsion process, and renaming the Committee of Enrollment and Student Experience. She also spoke in affirmation of Sophia Bryant's appointment as Student Mental Health and Wellbeing Committee chair at the Senate's swearing-in meeting in January 2024. Named as an author on eighteen pieces of SGA legislation in the 2023-24 session: Bill 2-23-F (Funding for Student Activities \"Shark Tank\" Event). Seventeen of them amended SGA's constitution or bylaws (Bill 8-23-F, Bill 9-23-F, Bill 10-23-F, Bill 19-24-S and 13 more).",
    "sources": "Herald, 30 Aug 2023 - SGA selects Judicial Council, committee heads; SGA Resolution 7-21-F, 2021-22 session; SGA legislation: Bill 10-23-F, A Bill to Amend the Constitution of the Student Government Association of Western Kentucky University; SGA legislation: Bill 19-24-S, A Bill to Amend the Constitution of the Student Government Association of Western Kentucky University; WKU SGA, Senate minutes, 17 Jan 2023",
    "same_name": ""
   },
@@ -47780,9 +47780,9 @@
    "last_year": "1975-76",
    "years_served": 2,
    "years": "1974-75; 1975-76",
-   "most_senior_office": "Student Affairs Chairperson",
-   "all_offices": "Student Affairs Chairperson (1974-75); member, Associated Student Government (1975-76)",
-   "what_they_did": "Stan McDivitt was elected to the Associated Student Government Congress, the 1975 Talisman's Sigma Alpha Epsilon chapter pages record, alongside fraternity brother Steve Henry, who went on to be ASG president in 1975-76. Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
+   "most_senior_office": "ASG Congress Member",
+   "all_offices": "ASG Congress Member (1974-75); member, Associated Student Government (1975-76)",
+   "what_they_did": "Stan McDivitt was elected a member of the Associated Student Government, the 1975 Talisman's Sigma Alpha Epsilon chapter pages record, alongside fraternity brother Steve Henry, who went on to be ASG president in 1975-76. The archive has found no source for the student affairs chairmanship this record once carried. Named on the ASG's own printed \"Attendance Roll: Effective as of April 6, 1976,\" a roster of Congress members with a meetings-missed count, introduced by a quote from Nancy Wilk, ASG Secretary, on the policy of removing a member from Congress after four absences.",
    "sources": "1975 Talisman, Sigma Alpha Epsilon; 1976 Talisman, ASG Attendance Roll, p. 62-63",
    "same_name": ""
   },
@@ -50291,7 +50291,7 @@
    "years": "2021-22",
    "most_senior_office": "Campus Improvements and Sustainability Committee Chair",
    "all_offices": "Campus Improvements and Sustainability Committee Chair (2021-22); Senator At Large (2021-22)",
-   "what_they_did": "Zachary Skillman was elected a WKU SGA senator-at-large in September 2021, one of two Skillmans (with fellow business economics junior Jacob Skillman, no relation established in the sources) sworn in on 14 September. A junior majoring in business economics and a Gordon Ford College of Business ambassador, he said Matthew Wininger had encouraged him to run and that he wanted to continue the recycling and sustainability initiatives Wininger had started as head of the sustainability committee, including off-campus recycling, a used-WKU-apparel recycling program and an adopt-a-highway effort. By 2021-22 Skillman chaired the renamed Campus Improvements and Sustainability Committee. In April 2022 he won Senate approval of $570.02 for an e-waste recycling bin on WKU's main campus, saying the project would earn WKU 0.25 credits toward Gold certification from the Association for the Advancement of Sustainability in Higher Education. He also co-authored Resolution 12-22-S, adding benches to South Lawn, and authored Bill 41-22-S, funding an Earth Day tie-dye tabling event. Named on the document as senator at large.",
+   "what_they_did": "Named on the document as senator at large. Zachary Skillman was elected a WKU SGA senator-at-large in September 2021, one of two Skillmans (with fellow business economics junior Jacob Skillman, no relation established in the sources) sworn in on 14 September. A junior majoring in business economics and a Gordon Ford College of Business ambassador, he said Matthew Wininger had encouraged him to run and that he wanted to continue the recycling and sustainability initiatives Wininger had started as head of the sustainability committee, including off-campus recycling, a used-WKU-apparel recycling program and an adopt-a-highway effort. By 2021-22 Skillman chaired the renamed Campus Improvements and Sustainability Committee. In April 2022 he won Senate approval of $570.02 for an e-waste recycling bin on WKU's main campus, saying the project would earn WKU 0.25 credits toward Gold certification from the Association for the Advancement of Sustainability in Higher Education. He also co-authored Resolution 12-22-S, adding benches to South Lawn, and authored Bill 41-22-S, funding an Earth Day tie-dye tabling event.",
    "sources": "SGA legislation: Bill 3-21-F, A Bill to Amend the Student Government Association Bylaws; SGA legislation: Resolution 12-22-S, Resolution to Support the Addition of Benches on South Lawn",
    "same_name": ""
   },
