@@ -43003,3 +43003,125 @@ withdraws 5 photographs the archive no longer serves or has barred, which is the
 rather than a fault. `build.py` clean, `check_data.py` and `check_contrib.py` both exit 0,
 `check_duplicates.py` showing only the four pre-existing title pairs and one same-source pair,
 none of which is a double-written event.
+
+# 10 October 2026 (editor, scheduled, midday) — an empty queue, and ten outcome claims opened at source across five decades
+
+## What was open
+
+Nothing. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returns `[]`. The last merge was
+#726 at 09:33, the night report for #725, and the board has been clear since. The standing brief
+still names #6, #7 and #8 as open and stale; they have been closed since 18 August, and this is the
+nineteenth pass to record it.
+
+**This was not a gated run.** `gh pr list` answered 403 again, and it will go on doing so, because
+it is a GraphQL call and GraphQL is refused here. `gh api repos/.../pulls` answers normally and
+`git push` works. A run that reads that 403 as the platform gate will drop into review-only mode
+for no reason and post its verdict into a drop box that is not configured — `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are both still unset.
+
+## Nothing is stranded on a branch
+
+With no queue, the first question is whether any finished research is sitting unlanded. It is not.
+Origin carries 404 heads, 80 of them `research-*`. Seventy-four have no merge base with `main` at
+all: they are snapshots of the superseded repository from before the 28 August history rewrite, and
+their "ahead by 1,900 commits" counts measure that divergence, not unpublished work. The six that do
+share a merge base are each ahead by exactly one squash-merged commit, and a tip-to-tip diff against
+`main` for every one of them is deletions only — `main` holds strictly more. No finding is stranded.
+
+## The state of the record
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0, `check_duplicates.py`
+reporting only the four pre-existing title pairs and the one same-source pair. 61 years, 1,967
+events, 60 presidents. 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%)
+carrying an account of what the person did, and 48 people recorded under more than one spelling.
+1,111 pieces of legislation, every file present and a real PDF; 1,307 citations naming a volume and
+number; 1,315 quoted spans, none reaching 15 words; 308 documents mirrored; 1,407 leader portraits
+and 72 year photographs. The build still withdraws 5 photographs, which is the bar working: all five
+are named in `photo-finds/_do-not-use.json` and held on disk so the photograph routine can keep
+reviewing them, and the withdrawal keeps the file off a public address as well as out of the
+metadata.
+
+## The audit: advance notices, swept structurally and then by hand
+
+With nothing to review, the pass turned on the live site, and on trap 1 — an outcome written out of
+an advance notice — because it is the one that most easily survives a verifier.
+
+Two screens over all 1,967 events. The first picked out every event whose body asserts something
+only a report can prove: a turnout, a vote count, a crowd, a sum raised. 171 do. The second asked
+which of those rest on a source that *predates the event*, which is the structural signature of the
+trap. Eight do, and all eight were read by hand. **None is a violation.** Five are written in
+scrupulously prospective voice — "was to open", "were to note", "had been chosen" — and the three
+that state an outcome flat attribute it to a retrospective source named in the same citation.
+
+Ten claims were then opened at source. All ten held; nothing was cut.
+
+- **Resolution 13, minimum wage.** The mirrored sheet reads `INTRODUCED 10/26/76 · Passed ·
+  11/9/76 · 25 - 1 -`. The entry's "introduced on 26 October 1976 and carried on 9 November by 25
+  votes to 1" is exact.
+- **Bill 9, opposition to a tuition increase.** `INTRODUCED 3/8/77 · Passed · 3/29/77 · 16 - 13 - 3`.
+  Exact, three weeks to the day.
+- **Bill 8, the Complaint Committee**, cited by the Bill 9 entry as coming out of the same March
+  docket: introduced 3/8/77, the same day, and carried 3/29/77 by acclamation. Confirmed.
+  Neither of the two vote counts is a trap-2a case: both outcome lines are typed and filled, not
+  blank and not a handwritten tick.
+- **Natalie Cole in Van Meter, 10 December 1975.** The 1976 *Talisman* gives the crowd twice and the
+  two passages disagree: p. 44 says "over 300 people", p. 46 "an estimated crowd of 325". The entry
+  took the more specific of two compatible figures, kept the volume's own word "estimated", and drew
+  its song list from both passages — every song it names is in one or the other. Venue, date and the
+  Nat King Cole line all confirmed.
+- **Benjamin Spock, 23 September 1971.** The 1972 *Talisman*, p. 45: "drew a crowd of about 1,100 on
+  September 23", first lecturer of the year, sponsored by Associated Students, attacked the U.S.
+  role in Vietnam. Every element of the entry, the crowd figure included, and the date confirmed
+  from the same sentence. The entry does not lean on the Herald advance notice of 21 September for
+  any of it, and says so in its own text.
+- **Dine with Decision Makers, 7 December 2010.** "About 50 students attended the event, Executive
+  Vice President Kendrick Bryan said." The entry attributes the figure to Bryan rather than stating
+  it flat, which is the right handling of a number only one officer vouches for. Grayson, the dozen
+  officials, the Cupola Room and Wade Pierce at Grayson's table all confirmed, and "new light" is
+  paraphrased rather than quoted.
+- **The Confucius Institute contract, 29 September 2015.** The Regents' decision of 25 September not
+  to revisit it, the twelve-word quote, and the fall in state appropriations from 47 per cent of the
+  operating budget in 1998 to 18 per cent for 2015-16 — all four figures as printed.
+- **Dub the Pub.** The longest entry in the sample and the one that looked worst before it was
+  checked: it ends on a final vote result, 480 of 2,132 ballots, cited to an article headlined
+  "uproar … continues". The 12 November article carries that result outright, along with Spirit
+  Masters in second place when it was struck and Chase Coffey's objections. The 5 November article
+  carries the rest — the field cut from 12 to 11, the 50 names the cabinet worked from, and Sawyer
+  Coffey's "out of respect for the organization".
+
+## A warning for the next pass that writes a screen
+
+The Dub the Pub entry was flagged by this pass's own screen as having four claims its citation did
+not cover, and the flag was wrong. The entry carries `src2`, pointing at precisely the 5 November
+article the flag said was missing; the screen read only `src` and never saw it. The second article
+was tracked down from scratch before the field was noticed.
+
+**126 events carry `src2` and 3 carry `src3`, and the site renders all of them.** Any screen,
+verifier or audit that reads only `src` will mis-flag every one, and the failure mode is the
+dangerous direction: it manufactures a sourcing fault in an entry that is correctly cited, and the
+remedy it suggests is a cut. Both screens were rewritten to read all three slots before any
+conclusion was drawn from them, and the counts above are the corrected ones. Read all three slots.
+
+## Traps checklist
+
+Nothing tripped. No committee chair recorded as an officer: Chase Coffey, titled "Senator" in the
+2015-16 entry, is independently a senator in the record and is grouped with "other SGA senators" by
+the article itself. No surname-only match. No April result filed in the wrong year. Nothing touching
+the settled facts. Nothing about a living person beyond what its source reported. No contributor
+edit in scope, there being no diff.
+
+The four title pairs and the one same-source pair were judged again and all stand as separate
+events. The closest, at 0.6, is 1997-98's designated driver cards, and it is three events across
+three months, not one written twice: Bill 97-3-F allocating $900 on 4 November 1997, the Herald's
+report of 13 November that sober drivers were getting free drinks, and the announcement of
+17 February 1998 that the cards would go out the next day. Both Herald entries state on their face
+that the archive holds those issues only as contents listings, which is the discipline this file
+asks for.
+
+## Still open
+
+The research side, not the editorial one. Eleven of thirteen routines remain disabled and the last
+producing routine reported its method exhausted; the photograph run's gallery route —
+`data-photoids` in the article HTML, captions from `wp-json/wp/v2/media/<id>` — is written into its
+note as the next move and has not yet been worked. Nothing merged this pass, because there was
+nothing to merge, and nothing was cut, because nothing failed.
