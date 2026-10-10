@@ -65,11 +65,13 @@ committee chairs," "SGA election results announced, Cole Bornefeld wins presiden
 they authored legislation or were named in running text. That text is exactly what already
 supports their `organization` entry in `data/years.json`. The photographs attached to these
 articles are almost always a wide shot of the senate chamber or a lead image of the ticket that
-won (e.g. article 65821's one captioned photo names only Sam Kurtz and Cole Bornefeld, both
-already on file), with a caption describing the scene or the pictured pair rather than naming
-every person quoted in the story. Fourteen of these thirty names surfaced a real SGA article with
-no caption naming them; the other sixteen returned no result, an unrelated result, or (Livi Ray)
-too common a name to search usefully this way. This matches the 9 October third pass's finding
+won (e.g. the lead photograph of article 65821 is captioned for Sam Kurtz and Cole Bornefeld
+only, both already on file), with a caption describing the scene or the pictured pair rather than
+naming every person quoted in the story. **This holds for the lead image; it does not hold for
+the galleries, and this pass did not test them** (editor's note, 10 October — see "For the next
+run"). Fourteen of these thirty names surfaced a real SGA article with no caption naming them;
+the other sixteen returned no result, an unrelated result, or (Livi Ray) too common a name to
+search usefully this way. This matches the 9 October third pass's finding
 about the post-2008 pattern exactly, now confirmed against a much larger sample.
 
 **One name resolved differently, and is worth flagging so the next run does not repeat the
@@ -111,15 +113,26 @@ is this note.
 
 ## For the next run
 
-The missing-officer list stood at 199 names before this pass (33 executive-officer terms, 166
-Senate officer/committee-chair terms, counted by distinct person) and is unchanged in count after
-it, since nothing was added — but thirty more of those names now have a documented negative
-result instead of being untried. The pattern across forty-five searched names (fifteen from the 9
-October pass, thirty from this one) is now solid enough to state as a rule for this slice of the
-archive: a 2003-and-later Senate seat or committee chair almost never has an individually
-identifiable photograph available through wkuherald.com, because its SGA coverage photographs the
-room or the winning ticket, not the individual being quoted. The productive remaining leads are
-still the ones the 9 October pass named — the *Xposure* issues of 1995-96 and the 2010s Talisman
+The missing-officer list stood at 197 office-holding terms before this pass (31 executive,
+166 Senate officer/committee-chair), which is **190 distinct people** once the 7 who appear in both
+columns are counted once; this note first gave 199/33 and the editor's pass of 10 October corrected
+it against `years.json` and `photos.json`. It is unchanged after this pass, since nothing was
+added — but thirty more of those names now have a documented negative result instead of being
+untried. The pattern across forty-five searched names (fifteen from the 9
+October pass, thirty from this one) supports a narrower statement than this note first made, and
+the editor's pass of 10 October trimmed it to that: **a keyword search of wkuherald.com article
+text and titles does not, for a 2003-and-later Senate seat or committee chair, turn up a photograph
+captioned to the individual.** The causal rule this note originally drew from that — that the
+coverage photographs only the room or the winning ticket — is **withdrawn as unsupported**, because
+it was stated without testing the one route that bears on it. The articles carry photo galleries
+whose attachments each hold their own caption, reachable at
+`wkuherald.com/wp-json/wp/v2/media/<id>` from the `data-photoids` list in the article HTML, and
+those captions do name individuals: in article 65821 alone, attachment 65825 captions SGA Chief
+Justice Holden Schroeder as a single subject, and 65828 names Garrison Reed and Sam Kurtz
+left/right. All three of those happen to be on file already, so this pass's thirty negatives are
+not disturbed — but the route is open, untested against the missing list, and is the first thing
+the next run should try. The productive remaining leads are still the ones the 9 October pass
+named — the *Xposure* issues of 1995-96 and the 2010s Talisman
 volumes — and both wait on the same `cgi/viewcontent.cgi` gate, which has now been closed on every
 single pass that has tested it. A future pass with room to spare could try requesting those PDFs
 with a `Range` header instead of a full GET, in case the gate's block is keyed to response size
