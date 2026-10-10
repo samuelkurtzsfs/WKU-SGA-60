@@ -1,3 +1,126 @@
+# 10 October 2026 (editor, scheduled, night) — both pull requests merged after thirteen claims opened at source, and a withdrawn office caught surviving in the search index
+
+## What was open
+
+Two. #730 `editor-1010-evening`, the evening editor pass that swept trap 2 across the whole file for
+the first time, and #731 `research-photos`, the photograph run's evening note. Both are now on
+`main`, as be47bdfa / c982a8be and 9324822f, and the board is empty behind them. #6, #7 and #8,
+which the standing brief still names as open and stale, have been closed unmerged since
+18 August; this is the nineteenth pass to record it. `gh pr list` answered 403 again, as it always
+does, because it is a GraphQL call — `gh api repos/.../pulls` answered normally and `git push`
+worked, so this was a full-mode pass. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset,
+which matters only to a run that mistakes that 403 for the platform gate.
+
+## #730 — eleven committee chairs out of the cabinet
+
+The arithmetic reconciles exactly, which is the first thing worth saying about a diff of 549 lines
+in `years.json`. Executive 366 to 355, senate officers 582 to 593, events at 1,967 and leaders at 73
+untouched. Chair-titled records in `organization.executive` went from 11 to 0 and in
+`senate.officers` from 170 to 180 — ten rather than eleven, because the eleventh title was withdrawn
+altogether and is no longer a chair string. The ten moved records are byte-identical across the
+move: office, note, profile and source all carried over, nothing quietly rewritten in transit.
+
+The classification evidence was read in SGA's own legislation rather than taken from the pass's
+summary of it, and all nine documents hold. Bill 7-18-S names Mark Clark "Senator at Large" in its
+AUTHORS line and "Chair of the Committee of Diversity and Inclusion" in its CONTACTS line, so both
+halves of the claim stand at once. Bill 10-18-S gives "Ian Hamilton, Sustainability Committee
+Chair"; Resolution 12-22-S "Zachary Skillman, Campus Improvements and Sustainability Chair";
+Bill 13-22-S "Alex Cissell, Student Mental Health and Wellbeing Committee Chair"; Resolution 1-22-S
+"Shelby Robertson, Committee Chair for Enrollment and Student Experience"; Bill 36-23-S
+"Olivia Feck, Student Mental Health and Wellbeing Committee Chair"; Bill 10-23-F "Meghan Pierce,
+LOC Chair"; Bill 17-26-S "Jade Ismail, Chair of the Action & Opportunity Committee". Bill 1-22-S,
+read as a cross-check, independently gives "Zach Skillman, Sustainability Committee Chair". In every
+case the chairmanship is printed beside the name, so the office claim rests on the title and not on
+bare authorship, which is the distinction trap 2 exists to protect. Greenwell was confirmed on the
+cited Herald page, which reads "student affairs committee chair Barrett Greenwell" and carries the
+MCAT/LSAT/CLEP report his note paraphrases; Gott on Herald 66:33 of 17 January 1991, "Two Associated
+Student Government Officers Step Down - Amos Gott, Van Hodge", found in the local index without
+troubling TopSCHOLAR.
+
+The 1974-75 withdrawal is right and its replacement is sourced. The 1975 *Talisman* full text reads
+that Steve Henry and Stan McDivitt were elected members of the Associated Student Government —
+members, with nothing about a chairmanship — and the volume's ten other mentions of student affairs
+are all deans and the dean's office, none of them McDivitt. An office whose own note already
+conceded no source has gone, and only what the page proves is left.
+
+The red-jacket trim loses nothing. The cut sentence named four officers sworn in to their new roles;
+2026-27's entry on the same meeting and the same article already records each with their actual
+office, which the Herald gives as Gabby Pace chief of staff, Cayden Bailey chief communications
+officer, Maggie Phelps to the judicial council and Jaden Marshall senator at-large. The surviving
+text is strictly more precise than what was removed, and the quote kept beside it is verbatim on the
+page at seven words.
+
+## What was corrected before merging
+
+`site/search-index.json` as committed was stale. It still carried McDivitt as "Student Affairs
+Chairperson, 1974-75" — the office that very pass had withdrawn — while every other regenerated
+page had moved on. One record out of 4,948, but it was the withdrawn claim surviving in the one file
+a reader searches. Regenerated from the data and pushed to the branch as c982a8be before the merge.
+
+It never had a route to the live site: `vercel.json` sets `buildCommand` to `python3 scripts/build.py`,
+so the deploy rebuilds `site/` from `data/` and never serves the committed copy, and the CI workflow
+rebuilds rather than diffing the committed output, which is why neither caught it. That makes this a
+repository-consistency fault rather than a publishing one. It is worth a `git status` after the final
+build all the same, because the next generated file to drift might not be one the deploy regenerates.
+
+## #731 — the photograph run's note
+
+One file in `.research/`, no `data/` and no `site/`, so nothing in it could reach the archive. It was
+still checked, because a negative recorded wrongly costs the next pass its budget. The three figures
+are exact: `portrait_gap.py` reports 189 officer slots with no portrait, held by 159 people, 157 of
+them with no portrait in any year. Checked independently, all 73 leader records carry a portrait and
+none of the 61 years lacks a photograph of any kind, and the note's two-year caveat is stated
+precisely rather than rounded up to full coverage: 1994-95 and 2000-01 have only the leader portrait
+and no year photograph. The PDF gate was retested cold and answered 403 with a Cloudflare challenge,
+as reported. The run's own negative is drawn the right way round — a limit of Google's index of this
+collection, not evidence the archive lacks the material — and the one near-match is correctly set
+aside as an author list rather than a caption, which is the whole difference between a lead and a
+wrong portrait.
+
+## The state of the record
+
+`build.py` clean on both branches; `check_data.py` and `check_contrib.py` exit 0 before and after;
+`check_duplicates.py` reports only the four pre-existing title pairs and the one same-source pair,
+none of them introduced by either diff. All five were read again and all stand as separate business:
+driver cards decided in November 1997 and distributed in February 1998, a bill introduced on
+28 January 1992 and defeated on 6 February, a lawsuit planned in February 1972 and endorsed in March,
+a position taken in September 2003 and legislated in October, and one 2026 article honestly
+reporting both a syllabus statement and the opening of voting.
+
+61 years, 1,967 events, 60 presidents. 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98 per cent) carrying an account of what the person did, and 48 people recorded under more than
+one spelling. 355 executive records and 593 senate officers after the sweep. 1,111 pieces of
+legislation, every file present and a real PDF; 1,307 citations naming a volume and number; 1,315
+quoted spans, none reaching 15 words; 308 documents mirrored; a search index of 4,948 records. The
+build still withdraws 5 photographs, which is the bar working as designed.
+
+No other traps checklist item is tripped. Neither diff adds an event, so no advance notice could be
+written up as a report; #730 is net subtractive. No surname-only match — `name-aliases.json` already
+maps "Zach Skillman" to "Zachary Skillman", and Jacob Skillman stays a separate person with his own
+source and the standing warning against attaching a photograph to either man. No changed-surname
+duplicate. No April result filed forward wrongly; the red-jacket trim in fact removes 2026-27
+business that had leaked back into 2025-26. Nothing touches the settled facts, and nothing new is
+said about a living person, both edits being removals. No contributor edit in scope: no
+`Contributed-By` trailer and `data/posts/` untouched. Every commit is authored `SGA 60`, and neither
+the commits nor the content carries tool attribution.
+
+## Still open
+
+Two loose ends from #730, both flagged rather than fixed. The sweep took chair-titled records, so
+Larry Ashby's 1967-68 "Judicial Committee member" is now the one judicial record left in `executive`
+against 144 in the senate block — outside that pass's scope, but the remaining outlier. And McDivitt
+now sits in `senate.officers` as "ASG Congress Member", a plain member in a bucket named for
+officers; that follows Marc Levy, who already sat there with the same office string in the same
+year, so it is pre-existing practice rather than anything introduced, but the taxonomy is loose and
+a deliberate decision about where a bare member belongs would retire both.
+
+Carried forward unchanged: the 1999 election split across 1998-99 and 1999-00, which is a convention
+to settle rather than an error to patch; the "No source found reports..." phrasing on the 1999-00
+fliers entry, correct on the living-people rule but using the words CLAUDE.md asks writers to avoid;
+and the five 1999 vote counts still waiting on the PDF gate. On the research side, eleven of thirteen
+routines remain disabled and the photograph run reports its methods exhausted, with a page image
+behind the PDF gate the only route left for the 2012-2025 span.
+
 # 10 October 2026 (editor, scheduled) — #722 merged after two trims, and a rule withdrawn that would have closed a working route
 
 ## What was open
