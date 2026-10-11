@@ -43971,3 +43971,103 @@ reaches a reader.
 - One routine produces research at present, the portrait pass every six hours. An empty or one-item
   queue is the expected state, not a fault.
 - SGA sits next on **13 October**.
+
+# 11 October 2026 (editor, scheduled, evening) — one photograph note reviewed at source, merged after two corrections, and a jump page the sweep had not followed
+
+## What was open
+
+One pull request, #736, "Research: photographs (rolling)", opened this morning on
+`research-photos`. A single commit adding one file,
+`.research/photo-run-2026-10-11-wayback-reopened.md`, 139 lines. Nothing under `data/`.
+
+The brief's stale trio is still closed: #6, #7 and #8 went on 18 August and nothing reopened them.
+The `gh pr list` 403 remains GraphQL-only; `gh api repos/{owner}/{repo}/pulls` answers normally, and
+`git push` works, so this was a full-mode pass rather than a review-only one.
+
+## Why a note with no data in it was still reviewed at source
+
+`scripts/build.py` reads two files out of `.research/`, `branches-checked.json` and
+`branches-unverified.json`, and no `.md` at all, so a dated note cannot reach a reader. What it can
+do is tell later runs which leads are spent. This one ends by naming four Herald articles and saying
+not to reopen them. A wrong negative there costs a lead quietly and for a long time, so the note was
+checked as if it were going on the site.
+
+## What held
+
+Every local claim reproduced exactly. All four priority-1 presidents carry portraits; no president
+or student regent is without one; `portrait_gap.py` prints 189 slots, 159 people, 157 with no
+portrait anywhere; 1994-95 and 2000-01 genuinely carry no entry in the `years` array of
+`photos.json`. `check_data.py` reports the same 61 years, 1,967 events and 60 presidents the note
+claims.
+
+Externally: `cgi/viewcontent.cgi` answered a cold, fully-headed request with 403 and the Cloudflare
+challenge, as the note says. The Wayback `id_` bypass served article 9903 as a real 8.2 MB
+`%PDF-1.7`, and the file's own title confirms *Herald* 76:52, 17 April 2001. Printed page 1 was
+rendered and read by eye: a single full-page scan, its only photograph the Tiffany concert frame,
+no officer pictured. Two of three magazine-era Talisman CDX queries came back truly empty, which
+supports the note's Wayback-absence finding.
+
+## The two corrections
+
+The note had Mark Rawlings winning vice president of public relations **unopposed**. The front page
+says the reverse: his was the only *contested* office, won 343-315 against Holly Skidmore, while the
+presidency (Leslie Bedo) and the three other executive offices went unopposed. An inversion about a
+named living person, in a note that would have been read as settled.
+
+The note also said no page but the front mentions the story. It runs on to printed page 7, reached
+by the front page's own "See Election, Page 7" line. That page was read on review and carries no
+photograph — only an advertisement — so the conclusion for the 2000-01 gap survives and now rests on
+the whole story rather than on part of it.
+
+Both were corrected on the branch and the note's reasoning left visible, rather than cut. #736 then
+merged.
+
+## The method lesson, which is the part worth keeping
+
+The miss came from a sweep that listed pages matching `SGA` and read those. A jump page is reached
+by a "See ... Page N" line, not by a repeat of the keyword, so it was never in the list. A line
+saying so was added to the note's own "For the next run".
+
+Trap 7 caught this reviewer too, before it caught anything else. A CDX query that returns empty
+because the connection was reset is indistinguishable, in a shell, from one that returns empty
+because nothing is archived; the first check written here reported "not archived" off a
+`Recv failure`. Redone with exit codes and retries, two of the three were genuine and the third was
+the Internet Archive serving a "Temporarily Offline" page with a 200 — which a naive check reads as
+a hit. Check the exit code and look at the body before recording either an absence or a presence.
+
+## Judged and left alone
+
+`check_duplicates.py` reports four title pairs and one same-source pair. All five predate this diff
+and none is touched by it. The 2026-27 pair sharing the Barker article reports different business, a
+syllabus statement and the opening of voting, and stays two entries.
+
+The committed `site/` is stale against main — it lacks the Natalie Cole citation split from #735 —
+and that does not matter: `vercel.json` sets `buildCommand` to `python3 scripts/build.py` with
+`outputDirectory: site`, so the deploy regenerates the directory and committed output never reaches
+a reader. The build churn from this pass, 89 files of build date, was discarded rather than
+committed, as the branch's own convention has it.
+
+`editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` were left untouched, carried
+forward as before.
+
+## Counts
+
+61 years, 1,967 events, 60 people have been president. 1,111 pieces of legislation, every file
+present and a real PDF. 1,308 citations naming a volume and number, 1,316 quoted spans, none
+reaching 15 words. 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%) carrying
+an account of what the person did, 48 people under more than one spelling. 5 photographs withdrawn
+as not held or barred. 189 officer slots without a portrait, held by 159 people, 157 of them with no
+portrait anywhere.
+
+## For the next pass
+
+- **Follow the jump line.** The sweep that reads only keyword-matching pages will miss a
+  continuation every time. This is now in the photograph note as well as here.
+- **Verify an absence before you record it.** Exit code first, body second, retry third. Both the
+  Wayback route and the Internet Archive itself were intermittent through this pass.
+- **The four Herald leads are genuinely spent** — 9903 confirmed by eye at the page, including its
+  jump page. 4695, 10372 and 7740 were not independently re-opened this pass; the note's method for
+  them is sound but only 9903 was checked at source here.
+- **1994-95 and 2000-01 still carry no scene photograph.** Priority 4's narrow queue, unchanged.
+- The brief's stale trio (#6, #7, #8) has been closed since 18 August, for a fifteenth pass. The
+  drop-box variables remain unset, so review-only mode would still have nowhere to post.
