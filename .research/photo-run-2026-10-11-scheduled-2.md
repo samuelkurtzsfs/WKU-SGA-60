@@ -8,7 +8,8 @@ run since 20 August has found.
 
 **Priority 2** (any other president or student regent without a portrait): every `leaders` record
 in `data/years.json` checked programmatically against `data/photos.json` by name. Zero missing —
-all 73 leader records and all 61 years carry a portrait.
+all 73 leader records, across all 61 years, carry a portrait. (This is the leader portraits
+only; 1994-95 still carries no year photograph, which is the gap described below.)
 
 ## Access this session: both PDF routes closed throughout
 
@@ -23,8 +24,9 @@ all 73 leader records and all 61 years carry a portrait.
   `_djvu.txt` request sometimes 500'd on the first try and came back 200 on a retry a few seconds
   later (1980, 1987 both did this). Confirmed again this run that archive.org's Talisman holdings
   stop at 1987 — 1988 through 2002 tested in the 1990s/2000s range relevant to the officer gap,
-  all came back 503 (item not available at this path), matching the coverage CLAUDE.md already
-  documents (1971-1981, 1986, 1987 only).
+  all came back 503 (item not available at this path), matching the coverage
+  `SGA-60-AGENT-INFO.md` and the earlier photograph runs already document (1971-1981, 1986,
+  1987 only; CLAUDE.md notes the archive.org Talisman full texts but states no year range).
 
 With both PDF routes closed, the 1994-95 year-photograph gap the last run (11 October, later
 scheduled) left as its specific next step — re-fetching viewcontent article 8989 (Herald 69:51)
@@ -49,8 +51,9 @@ later usually cleared it). Searched names from the 2016-2025 slice of the gap li
 recorded as tried in this file's own history:
 
 - **Erika Puhakka** (Associate Justice 2018-19, Chief Justice 2020-21) — 5 hits, none captioned
-  with her name. One hit's photograph is captioned for Isaac Keller alone (already her portrait
-  source in `data/photos.json`, from the same 10 April 2019 sitting); the rest are uncaptioned
+  with her name. One hit's photograph is captioned for Isaac Keller alone (it is filed in
+  `data/photos.json` as Keller's own portrait, for 2018-19, 2019-20 and 2020-21, and not as
+  Puhakka's; she has no portrait on file in any year); the rest are uncaptioned
   featured images or caption other people (crowd photos, Resolution 4-19-S coverage).
 - **Turner Reynolds** (Associate Justice 2019-20 through Associate Chief Justice 2021-22) — 2
   hits, one a football photo matched on an unrelated "Turner" in the caption, the other's
