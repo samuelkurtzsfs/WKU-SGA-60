@@ -43819,3 +43819,155 @@ regenerates it at deploy.
   reviews it. Four of the six routines have been disabled since late August, so an empty or
   one-item queue is the expected state rather than a fault.
 - SGA sits next on **13 October**.
+
+# 11 October 2026 (editor, scheduled, 06:31) — an empty queue, twelve concert and roster claims opened at source, and one citation split so its notice can be read
+
+## What was open
+
+Nothing. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returned an empty list, and the
+board has been clear since #734 merged at 03:26 this morning. The 03:29 pass had already reviewed
+it, so there was no research to adjudicate.
+
+`gh pr list` answered 403 again. It is a GraphQL call and always will be; `gh api
+repos/{owner}/{repo}/pulls` answered normally and `git push` reported write access, so this ran in
+full mode. **The standing brief is wrong in the same two places for a fourteenth pass**: #6, #7 and
+#8 are not open and stale since 4 August, they were closed unmerged on 18 August, and the 403 is
+not the platform gate. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset, so a run that mistook
+that 403 for the gate would have dropped into review-only mode and posted its verdict nowhere.
+
+## Where the audit went, and why
+
+With no queue, the audit turned on the archive's own standing weakness rather than on last night's
+merge, which two passes have already read. A scan of every event for the shape of trap 1 — a
+citation whose headline is an advance notice, in an entry that nonetheless asserts an outcome —
+returned **five candidates out of 1,967 events**. None was a violation, which is itself the
+finding. Three correctly attribute the outcome to a retrospective source and say so in the body: the
+Spock and Natalie Cole entries credit the figure to the *Talisman* while citing the *Herald* only
+for the announcement, and the Campus Clean-up entry credits a meeting round-up whose headline
+happens to sit on a different item. The remaining two label themselves previews in their own text,
+one of them in as many words: "the archive holds no later report of how it went." Trap 1 has been
+worked out of this file.
+
+So the claims worth opening were the outcome figures themselves, which no validator can check.
+Twelve were read at source and **all twelve held, to the word**.
+
+- **Spock, 23 Sep 1971, "about 1,100".** 1972 *Talisman*: "drew a crowd of about 1,100 on September
+  23", and separately that he "attacked the U.S. role in Vietnam" and was the first A.S.-sponsored
+  speaker. All three as written.
+- **Ike and Tina Turner, Homecoming 1971, 12,000.** Caption: "perform before an estimated crowd of
+  12,000 in Diddle Arena at the Homecoming concert." The entry's "eight-member Kings of Rhythm" is
+  the volume's "the eight member Kings of Rhythm".
+- **Benjamin Mays, 29 Feb 1972.** The entry records that the yearbook's caption says he spoke on
+  29 February while its running text says he was scheduled to. Both passages are there, exactly as
+  described. This is trap 6 answered in the record itself.
+- **Loggins and Messina, 17 Sep 1975.** "ASG lost approximately $7,000 due to poor attendance";
+  "The crowd of 4,300"; and Rick Kelley, named with his exact title, "said the small crowd was the
+  result of a lack of student body support."
+- **Linda Ronstadt, 1 Nov 1975.** $4,300 profit, confirmed twice, and the entry's note that the
+  yearbook contradicts itself on the crowd is right: the concerts section reads "Approximately
+  6,500", the Homecoming section "approximately 6,300". Opened with "Colorado", as cited.
+- **Natalie Cole, 10 Dec 1975, "estimated crowd of 325".** Verbatim, with all four songs.
+- **The Spinners and Wet Willie, 30 Jan 1976, 7,500.** "attracted 7,500, making it the second
+  straight major promotion of Associated Student Government to make money", and the two encores.
+- **LAMB, 11 Sep 1975.** The MC 272 explanation is the volume's own: "well attended, due perhaps to
+  required attendance by many students with writing assignments for MC 272 classes."
+- **Campus Clean-up, 19 Oct 2010, "around 35".** Confirmed on the live page, which also re-confirms
+  last night's gate finding: canonical `wkuherald.com` slugs return 200. Kaylee Egerer is "Campus
+  Improvements Committee head" in the article and a committee head in the archive — trap 2 not
+  tripped.
+- **The 1976 ASG attendance roll, pp. 62-63.** The roll is real, printed as a two-column
+  "Meetings / Name / Missed" table in the ASG section. All twelve sampled names are on it, and the
+  volume's index puts Cashdollar and Keffer on page 63, which is the cited range. The "Effective as
+  of April 6, 1976" header and the Wilk quote are not in the OCR text layer, consistent with notes
+  read from the page image.
+- **David Payne's 1976 identification.** The index reads "Payne, David Charles 63, 283, 382" and the
+  junior portrait "DAVID C. PAYNE, Owensboro", both exactly as cited; the "simple record keeping"
+  quote is his, and three words long.
+- **The 39 names at 1971-72.** The two Congress group captions name 23 and 16 people, which is the
+  thirty-nine the note claims, with Reed Morgan among the second group.
+
+Separately, every one of the **143 records citing the 1972 or 1976 *Talisman*** was tested for a
+proper name absent from the volume text it names. Three flagged, all three my own regex catching
+quoted *Herald* headlines — "Concert Lovers", "King Kong", "Speaks Tonight". **No citation in that
+set points at the wrong volume.** The fifteen *Talisman* citations landed on 9 October hold.
+
+## The one change made
+
+The Natalie Cole entry packed two sources into one label — "1976 Talisman, Concerts; announced in
+College Heights Herald 51:29, 9 Dec 1975" — behind a single URL pointing at the *Talisman* only. The
+sponsorship claim rests on that *Herald* notice, and a reader could not open it. Every comparable
+entry in the same year splits the two, so the citation now does: `src` the *Talisman*, `src2` the
+issue, at `dlsc_ua_records/5123`, with the notice's real headline, "Associated Student Government to
+Sponsor Jazz Vocalist". The issue was confirmed at source before the URL was written — the landing
+page returns 200 as Vol. 51, No. 29, dated 12-9-1975, and carries that headline. Nothing was cut;
+one citation became readable. Citation count 1307 → 1308.
+
+The entry's `money` field reads "attendance about 325", which looked like a misfiled value and is
+not: the field carries a result of any kind across all 230 uses, attendance figures among them
+("attendance 6,000", "attendance about 3,000"). Left alone.
+
+## Flagged, deliberately not acted on
+
+**The reason the 1971-72 note gives for withholding the thirty-ninth name no longer describes what
+the build can do.** That note holds back the Reed Morgan in the 1972 Congress caption because "the
+site builds one person page per name, so recording this one would silently merge the two into a
+single person shown as serving from 1968-69 to 1971-72." `data/same-name.json` now exists for
+exactly that problem — it is the documented inverse of `name-aliases.json`, and its own note says a
+name listed in it "keeps its one page... but the page stops asserting that the terms belong to one
+person." It works in production: the David Payne page carries four terms across 1974-82 under one
+name and states outright that the archive has not established they are the same man, with each
+portrait tied to its term. The file currently holds that one name.
+
+This is recorded, not acted on, and the distinction matters. Adding a 1971-72 Congress member is
+**not** reopening the presidency question that CLAUDE.md settles — the settled fact bars putting
+Reed Morgan in an office without a source, and a Congress caption is a source for Congress
+membership and nothing more. But it is a new person record on the one name in this archive that
+carries the most history of being got wrong, and an empty-queue audit is not the place to make that
+call unilaterally. The editorial point for whoever does: the note's conclusion may well still be
+right, but the reason printed under it is now out of date, and a future pass will read that reason
+as a standing technical bar when it is not one.
+
+## Judged and left alone
+
+`check_duplicates.py` reports the same 4 title pairs and 1 same-source pair as the last several
+passes, none introduced here, and all five are genuinely separate events: a bill introduced and then
+defeated after amendment; a lawsuit planned and then endorsed; opposition stated and then
+legislated; driver cards approved and then distributed three months later; and the two 2026-27
+entries that share one meeting article but report different business. No merges made.
+
+## Counts
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. 61 years and 1,967 events, 60 people
+have been president, 1,111 pieces of legislation with every file present and a real PDF, 308
+documents, **1,308** citations naming a volume and number, **1,316** quoted spans none reaching
+fifteen words, and a search index of 4,948 records. The roster is 2,651 terms held by 1,809 people,
+2,614 of them (98%) carrying an account of what the person did, 48 people under more than one
+spelling. 5 photographs withdrawn as not held or barred.
+
+The `site/` churn was discarded rather than committed: 89 files, 160 lines, and all of it the build
+date plus the one citation. `vercel.json` sets `buildCommand` to `python3 scripts/build.py` with
+`outputDirectory: site`, so the deploy regenerates the whole directory and committed output never
+reaches a reader.
+
+## For the next pass
+
+- **The brief's two errors stand, for a fourteenth pass.** #6, #7, #8 closed since 18 August. The
+  `gh pr list` 403 is GraphQL-only; use `gh api repos/{owner}/{repo}/pulls`. Both drop-box variables
+  are unset, so review-only mode has nowhere to post.
+- **Trap 1 is clean across all 1,967 events** as of this pass, and the scan is cheap to repeat. The
+  five entries it surfaces are correct and should keep surfacing; they are not a queue.
+- **The 1971-72 Reed Morgan note needs its reason revisited**, per above. `same-name.json` is the
+  mechanism; the judgment is the owner's.
+- **1994-95 and 2000-01 still carry no scene photograph** — priority 4's narrow queue, open.
+  Priority 3 remains 189 slots / 159 people / 157 with no portrait anywhere.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Carried
+  forward untouched.
+- The 1976 *Talisman* index prints **"Payne, David Earl"** directly beneath "Payne, David Charles".
+  Two David Paynes in the one volume, which independently supports keeping the 1970s treasurer and
+  the 1981-82 president apart. The treasurer is David Charles Payne of Owensboro; that is the thread
+  to pull if anyone wants to settle the identity.
+- Carried data notes still stand: the mental health committee's four spellings, Amber Daniel /
+  Amber Daniels held apart with the uncertainty stated, the Lodmell sisters as the standing warning.
+- One routine produces research at present, the portrait pass every six hours. An empty or one-item
+  queue is the expected state, not a fault.
+- SGA sits next on **13 October**.

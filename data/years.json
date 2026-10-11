@@ -7800,8 +7800,12 @@
      "kind": "concert",
      "money": "attendance about 325",
      "src": {
-      "label": "1976 Talisman, Concerts; announced in College Heights Herald 51:29, 9 Dec 1975",
+      "label": "1976 Talisman, Concerts",
       "url": "https://archive.org/details/talisman1976west"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:29, 9 Dec 1975, \"Associated Student Government to Sponsor Jazz Vocalist\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5123"
      }
     },
     {
