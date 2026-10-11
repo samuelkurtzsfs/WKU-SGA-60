@@ -43693,3 +43693,129 @@ discarded rather than committed, this pass having changed no data.
   research at present, and the editor reviews it. An empty queue is the expected state, not a
   fault, and it will stay the expected state until somebody re-enables the other four.
 - SGA sits next on **13 October**.
+
+---
+
+# 11 October 2026 (editor, scheduled, later) — one note merged, and a gate finding narrowed from the whole site to a single URL form
+
+## The queue
+
+One open pull request, #734, `research-photos`, the 11 October photograph run. Up to date with
+`main` at review time, no merge needed before evaluating. #6, #7 and #8 are still closed, as they
+have been since 18 August, and the standing brief is still wrong about them for a thirteenth pass.
+The `gh pr list` 403 the brief reads as the platform gate is still GraphQL-only: `gh api
+repos/{owner}/{repo}/pulls` answered normally, `git push --dry-run` reported write access, and this
+pass ran in full mode. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset again, so review-only mode
+would have had nowhere to post.
+
+## What the diff was, and what it could reach
+
+One new file, `.research/photo-run-2026-10-11-scheduled.md`, 79 lines. No `data/` change, no new
+historical claim, no new citation, no photograph. Nothing in it could reach the published site:
+`.research/` is excluded from the Vercel function bundle and `build.py` reads only
+`branches-checked.json` and `branches-unverified.json` out of that directory. The traps checklist
+had no purchase — no advance notice written up as a report, no committee chair promoted to officer,
+no surname-only match, no changed-surname duplicate, no April result filed forward, nothing
+touching the settled facts, no living-person detail past its source, no contributor edit. All three
+commits were authored `SGA 60` and the diff carried no tool attribution.
+
+A note that cannot reach the site is still worth checking properly, because the next run believes
+it. Both things corrected tonight would have cost a future pass real time.
+
+## Spot verification: every checkable claim in the note, and two did not hold as written
+
+The note's claims are operational rather than historical, so they were checked as such. Against the
+data, all confirmed: priority 1's four portraits (Todd, Dawson, Johnson, Gilley) present; priority
+2's "zero missing" exact, at 73 leader records and 66 distinct names with no gap; priority 3's
+figures reproducing precisely from `scripts/portrait_gap.py` at 948 officer slots, 189 without a
+portrait, 159 people, 157 with no portrait in any year. Crockett and Scisney are both genuinely on
+the 2009-11 gap list and both recorded as Chief Justice in 2010-11, which is what makes the
+resignation-and-appointment story the note followed the right lead to have followed; Nathan Cherry
+is Speaker of the Senate 2016-17 as described.
+
+The three gates were retested cold and all three reports are accurate. `viewcontent.cgi` returned
+403 with the Cloudflare interstitial under full navigation headers, while the ordinary landing page
+`dlsc_ua_records/2464/` returned 200 — exactly the split the note draws. `web.archive.org` reset
+with the same `curl: (35) Recv failure: Connection reset by peer` the note quotes. The
+`wkuherald.com` REST API returned normal JSON at 200.
+
+## The correction that mattered: a standing gate, but on one URL form, not on the site
+
+The note's new finding was that a `wkuherald.com` article permalink came back as a Cloudflare
+challenge, which no prior photo-run note records. The observation is real and is now **reproduced**:
+`?p=52195` returned the same 403 from this container a run later, so it is a standing gate and not
+the intermittent one-off the note hedged about. To that extent the note understated itself.
+
+The inference drawn from it was too wide, and is withdrawn. The gate sits on the `?p=<id>`
+short-link form, which resolves by redirect — not on article pages as such. A canonical slug
+permalink taken from the REST API's own `link` field returned **200, a real 354 KB page, with
+`wp-image-` present in the markup**. So the 10 October gallery-caption method is not broken and
+needs no fallback: it built its 186-post list from the search API, which hands back canonical `link`
+values, and fetching those still works. The note had recommended building a fallback that reads
+captions a different way. Left standing, that paragraph would have sent the next run to build a
+fallback for a method that works, or to abandon the only image-side route this beat has. Replaced
+with the one-line habit the evidence actually supports: resolve posts through the REST API's `link`
+field and never hand-build a `?p=` URL. The note's title carried the same over-claim and was
+narrowed to match.
+
+The general lesson, and it is the one to carry: when a single negative result turns up, test the
+adjacent case before writing the recommendation. One canonical-URL fetch was the whole distance
+between "a third source has closed" and "one URL form has closed".
+
+## The correction that was precedent: "zero missing" without its method
+
+Priority 4 read that every one of the 61 years has at least one photograph, "zero missing". That is
+true, but only once officer portraits are counted alongside the `years` array, and the method
+sentence the 10 October note carried had been dropped. **1994-95 and 2000-01 have no entry in the
+`years` array at all**; both clear the test on their officer composites alone, 27 leader portraits
+for 1994-95 and 11 for 2000-01. Both are `researched` years with full event records, 37 and 19
+events, so they are not thin years but photographed years missing a scene.
+
+This exact looseness was flagged on this beat once before and left standing. It was not left
+standing tonight: the method sentence is restored and the note records the narrow queue as open,
+because "zero missing" without the method is not a reviewable claim, and it is how a run talks
+itself past a real gap.
+
+## Judged and left alone
+
+`check_duplicates.py` reported 4 title pairs and 1 same-source pair, every one of them pre-existing
+on `main` and none introduced by this diff. All five are genuinely separate events: the 1991-92
+regent advisory committee bill introduced on 28 January and defeated after amendment on 6 February;
+the 1972 Civil Liberties Union court action planned in February and endorsed in March; the 2003-04
+plus/minus grading opposition in September and the legislation passed in October; the 1997-98
+designated driver cards three months apart at approval and distribution; and the two 2026-27
+entries sharing one meeting article, which report different business. No merges made.
+
+## Counts
+
+`build.py` exits 0, `check_data.py` exits 0, `check_contrib.py` exits 0. The archive is 61 years and
+1,967 events, 60 people have been president, 1,111 pieces of legislation with every file present and
+a real PDF, 308 documents, 1,307 citations naming a volume and number, 1,315 quoted spans none
+reaching fifteen words, and a search index of 4,948 records. The roster is 2,651 recorded terms held
+by 1,809 people, 2,614 of them (98%) carrying an account of what the person did, with 48 people
+recorded under more than one spelling. The build withdrew 5 photographs the archive no longer holds
+or has barred. Unchanged in every figure, which is correct for a pass that merged no data.
+
+The `site/` churn was discarded rather than committed: the rebuild rewrote 88 files with 150 changed
+lines and every one was the "Built 10 October" footer becoming "Built 11 October". Vercel
+regenerates it at deploy.
+
+## For the next pass
+
+- **The standing brief is wrong in the same two places, for a thirteenth pass.** #6, #7 and #8 are
+  closed. The `gh pr list` 403 is GraphQL-only; use `gh api repos/{owner}/{repo}/pulls`. A run that
+  takes that 403 for the platform gate drops into review-only mode and posts its verdict nowhere,
+  because both drop-box variables are unset.
+- **`wkuherald.com`: the `?p=` form is gated, canonical slugs are open.** Resolve through the REST
+  API's `link` field. Do not rebuild the caption method.
+- **Priority 4's narrow queue is open**, not closed: 1994-95 and 2000-01 carry no scene photograph.
+  Priority 3 remains 189 slots / 159 people / 157 with no portrait anywhere.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Carried from
+  the previous pass; untouched tonight.
+- The carried-over data notes still stand: the mental health committee's four spellings, Amber
+  Daniel / Amber Daniels held separate with the uncertainty stated, and the Lodmell sisters as the
+  standing warning.
+- One routine produces research at present, the portrait pass every six hours, and this editor pass
+  reviews it. Four of the six routines have been disabled since late August, so an empty or
+  one-item queue is the expected state rather than a fault.
+- SGA sits next on **13 October**.
