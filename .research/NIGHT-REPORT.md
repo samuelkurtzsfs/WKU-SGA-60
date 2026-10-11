@@ -44071,3 +44071,115 @@ portrait anywhere.
 - **1994-95 and 2000-01 still carry no scene photograph.** Priority 4's narrow queue, unchanged.
 - The brief's stale trio (#6, #7, #8) has been closed since 18 August, for a fifteenth pass. The
   drop-box variables remain unset, so review-only mode would still have nowhere to post.
+
+# 11 October 2026 (editor, scheduled, night) — an empty queue, three spent leads re-opened, and one of them was not spent
+
+No pull request was open at the start of this pass and none opened during it. `gh api
+repos/{owner}/{repo}/pulls` returned `[]`; the brief's stale trio (#6, #7, #8) has been closed since
+18 August, for a sixteenth pass, and the numbering now stands at #737. The GraphQL 403 is unchanged
+and affects `gh pr list` only, so this was a full-mode pass rather than a review-only one. Both
+drop-box variables are still unset.
+
+With nothing in the queue, this pass took the item the evening report had left explicitly open: of
+the four Herald leads the photograph note declared spent, only 9903 had been checked at source by
+the reviewer who merged it. The other three were re-opened here, independently, by page image.
+
+## Article 10372 was not spent, and the note that said so was wrong on the point that matters
+
+*Herald* 79:53, 20 April 2004, landing page `dlsc_ua_records/9387`. The note recorded its front page
+as a **continuation** of the Todd story carrying **no photograph**. Both halves are wrong. Printed
+page 1 is where the story begins — "SGA president-elect under investigation", by Ashlee Clark — and
+it runs a head-and-shoulders portrait captioned **Nick Todd** in the middle of the lead, jumping
+outward to page 5 on its own "See SGA, Page 5" line. Page 5 was re-read too, and there the note is
+right: advertisements and pull-quote graphics, no photograph.
+
+The lead's **conclusion survives**. Todd already carries a portrait (`2004-05-nick-todd.jpg`, the
+Election Guide of 16 March 2004), and Gretchen Light, Matthew Pava and Cameron Yancey — the names
+the lead was logged against — are not in the issue at all. Nothing here fills a gap. But a note
+telling later runs not to re-open an article, on the stated ground that it holds no photograph, is
+a lead killed on a false premise, and that is worth more than the portrait would have been. The
+note has been corrected on both points with its original reasoning left standing, so a later pass
+can see how the miss happened: the page was read for names on the gap list, and a captioned
+portrait of a president who already had one did not register as a photograph at all.
+
+## Article 7740's negative held, but by luck rather than by method
+
+*Herald* 84:46, 16 April 2009. The note read printed pages 1 and 5. The front page carries three
+jump lines — "See I WON'T GIVE UP, page 7", "See PAIN, page 9", "See SUFFER, page 9" — and printed
+page 9 holds the continuation of an SGA budget story quoting President Kayla Shelton and
+Administrative Vice President Reagan Gilley. That page was not among the ones the note read. It was
+rendered and read here: two jump columns, a state-appropriations map, three advertisements, and the
+only photograph in them a band publicity shot inside a bar's advertisement. No officer pictured, so
+the negative stands.
+
+What does not stand is the method. This is the same issue whose own front page printed the line
+that would have found the page, in a note that had recorded "follow the jump line" as its lesson
+one section earlier. Article 4695 (*Herald* 81:42/46, 13 April 2006) was re-opened as well and its
+judicial-council page confirmed plain text, with no photograph and no gap-list name.
+
+## A second-hand title that the archive's own records contradicted
+
+Reading 10372's front page against the entries citing it turned up the trap-2 error. The *Herald*
+calls Josh Collins, who drafted the articles of impeachment against Todd's finance vice presidency,
+**an SGA member**. Two passages in `years.json` called him **Senator** Josh Collins at that date —
+in the 2004-05 event on the impeachment bid, and in Patti Johnson's profile. The archive's own
+sourced record for 2003-04 has him as **Justice of the Judicial Council**, sworn in on 2 September
+2003, and his own profile in the same file says so. A justice had been promoted to senator,
+seemingly by backfill from a role he genuinely held later.
+
+Both were trimmed rather than cut: the event now mirrors the source's own words, and the profile
+names him without a title. The two remaining "Senator Josh Collins" readings are in 2004-05 and
+were left alone — there the senate membership is sourced, the *Herald* of 17 March 2005 calling him
+Senate Speaker and the archived SGA page listing him as chair of Academic Affairs.
+
+## An outcome the archive had been missing
+
+The archive carried the disputed 9-8 speaker vote of 13 April 2004 and Martin's warning of a
+"semester of frustration" if it went unsettled, but not how it was settled. Page 5 of the issue
+reports it: the judicial council upheld Robert Watkins as speaker at its meeting that Thursday,
+ruled that a speaker should be elected by a majority of a quorum — the question the constitution
+Watkins himself wrote had left open — and ruled that the limit confining the vote to members
+inducted before the semester's fifth meeting had been provisional. One event added, 15 April 2004,
+cited to the issue's landing page.
+
+Worth recording about the index: the headline is in `herald-index-full.json` as "Clark, Ashlee.
+Robert Watkins Upheld as Speaker – Student Government Association", among 23 lines for that issue.
+A local grep would have found this outcome at any point. The miss was not the index's.
+
+## Judged and left alone
+
+`check_duplicates.py` reports the same four title pairs and one same-source pair as the last pass.
+All five were read in full here rather than inherited: the 1997-98 pair is a bill and its
+distribution three months later, the 1991-92 pair an introduction and a defeat nine days apart, the
+1971-72 pair a lawsuit reported and an endorsement a month later, the 2003-04 pair a debate and a
+vote three weeks later, and the 2026-27 same-source pair reports two pieces of business from one
+meeting article. All stay as they are. The script exits 1 whenever it has pairs to show, on
+pristine `main` as well as here; that is not a failure signal.
+
+The build churn under `site/` was discarded rather than committed, as the convention has it.
+`editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` were left untouched again.
+
+## Counts
+
+61 years, **1,968 events**, 60 people have been president. 1,111 pieces of legislation, every file
+present and a real PDF. **1,309** citations naming a volume and number, 1,316 quoted spans, none
+reaching 15 words. 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%)
+carrying an account of what the person did, 48 people under more than one spelling. 5 photographs
+withdrawn. 189 officer slots without a portrait, held by 159 people, 157 with no portrait anywhere.
+
+## For the next pass
+
+- **A spent lead is spent for the names it was logged against, not for every question.** The
+  10372 correction is the case in point: the article was a dead end for Gretchen Light and a live
+  front-page portrait of a president at the same time. When retiring a lead, write down what it
+  was tested for.
+- **Three of the four leads are now checked by a second pair of eyes**; 9903 was checked on the
+  evening pass. All four negatives hold for their gap-list names.
+- **Grep `herald-index-full.json` before concluding an outcome is unrecorded.** The Watkins ruling
+  was in it the whole time.
+- **1994-95 and 2000-01 still carry no scene photograph.** Priority 4's narrow queue, unchanged.
+  Priority 3 remains 189 slots / 159 people / 157 with no portrait anywhere.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Carried
+  forward untouched again.
+- The brief's stale trio has been closed since 18 August, for a sixteenth pass, and the drop-box
+  variables remain unset.
