@@ -44183,3 +44183,96 @@ withdrawn. 189 officer slots without a portrait, held by 159 people, 157 with no
   forward untouched again.
 - The brief's stale trio has been closed since 18 August, for a sixteenth pass, and the drop-box
   variables remain unset.
+
+# 11 October 2026 (editor, scheduled, later night) — the 2000-01 scene photograph merged, with two seated figures taken back out of the candidate count
+
+One pull request was open at the start of this pass: **#739, "Research: photographs"**, on
+`research-photos`, a single commit of +329/-195 across 97 files. It is merged, as `2e6583a`, after
+one trim. The queue is empty again.
+
+The brief's stale trio (#6, #7, #8) has been closed since 18 August, for a seventeenth pass. The
+`gh pr list` 403 is still GraphQL-only — `gh api repos/{owner}/{repo}/pulls` answers normally and
+listed the queue again tonight — so this was a full-mode pass. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are both still unset, so a pass that read that 403 as the platform gate and
+dropped into review-only mode would have had nowhere to post its verdict.
+
+## What the diff actually was
+
+Three files, under all the build output: one new photograph, one entry in `data/photos.json`, and
+the run report. `data/years.json` is **byte-identical to main**, and `scripts/build.py` reproduces
+the branch's committed `site/` with zero drift, so none of the other 94 files was hand-edited. That
+left exactly one new claim, so it was checked whole rather than sampled.
+
+## The claim held, and the photograph identifies itself
+
+*Herald* 75:52, 13 April 2000, landing page `dlsc_ua_records/8114`, viewcontent article 9118. The
+live endpoint is still Cloudflare-gated (403, as the run report predicted). The CDX listing showed
+exactly the hazard that report had just logged — two snapshots at about 1.018 MB and one at
+10.6 MB — and the large one came down whole in a single request, 10,945,952 bytes, `%PDF-` to
+`%%EOF`, needing none of the byte-range chunking the report warned about.
+
+Printed page 1 confirms every part of the citation: the masthead reads Volume 75, Number 52,
+Thursday, April 13, 2000; the display headline over the photo package reads **A Friendly Debate**;
+the credit reads **Jonathan Miano/Herald**; and the printed caption gives the session name and the
+Downing University Center location, neither of which is visible in the photograph itself. The
+archived JPEG is a faithful crop of the printed frame. The identification is stronger than a
+caption: the photograph labels its own subjects, with nameplates on the two lecterns reading
+*Cassie Martin* and *Duan Wright*.
+
+## What was cut
+
+The caption ended `two other candidates are seated between them`. The Herald names only the two
+standing figures; the seated pair is identified nowhere on the page. Worse than unsupported, the
+page gives a positive reason to doubt it — the vice presidential candidates are Dwight Campbell and
+Leslie Bedo, who appear **together** in the second photograph lower on the same page, and both
+seated figures in this frame read as men.
+
+Trimmed rather than cut, to `two other people are seated at a table between them`, which is what
+the photograph plainly shows. Pushed as `8348706` before the merge.
+
+That is the whole of the correction, and it is the familiar shape: a photograph whose subjects are
+confirmed beyond doubt, with one clause of scene-setting around them that the source never said.
+
+## Traps
+
+The April 2000 campaign files forward correctly to 2000-01, where Cassie Martin won and is this
+archive's president. No officer claim, so no chair-as-officer risk; both names are full names off a
+nameplate, so no surname match; `name-aliases.json` holds nothing for Martin, Wright, Cassie or
+Duan, and this is a `years` scene entry rather than a `leaders` one, so Martin's existing portrait
+is not duplicated. Nothing touches a settled fact. No contributor edit and no `Contributed-By`
+trailer; commit author is `SGA 60` and no tool attribution appears anywhere in the diff.
+
+On the advance-notice trap: the entry does not trip it — the photograph reports a debate that had
+already happened on the Tuesday, and claims no crowd size, review or result. But the same front
+page does carry `SGA elections set for today`, which is an advance notice in the classic form.
+Nothing in this diff draws on it, and nothing later should draw an outcome from it either.
+
+## Counts after the merge
+
+`build.py` clean and reproducible on main, `check_data.py` exit 0, `check_contrib.py` exit 0.
+61 years, **1,968 events**, 2,651 recorded terms held by 1,809 people, 2,614 of them (98%) with an
+account of what the person did, 48 people under more than one spelling, 308 documents, 1,111
+legislation files, 1,310 citations naming a volume and number and each opening that issue, 1,317
+quoted spans all under 15 words, 60 people have been president. The event count is unchanged by
+this pass, which added a photograph and no events.
+
+`check_duplicates.py` exits 1 with the same four title pairs and one same-source pair as the recent
+passes. **None belongs to #739** — it does not touch `years.json`, and the identical report comes
+off current main — so they were left for a pass actually editing those years, where the last full
+reading found all five to be genuinely separate business.
+
+## For the next pass
+
+- **2000-01's scene-photograph gap is closed.** Priority 4's narrow queue is now **1994-95 alone**.
+  Priority 3 is unchanged at 189 slots / 159 people / 157 with no portrait anywhere.
+- **1994-95's lead is live, not spent.** Article 8989 (*Herald* 69:51, 19 April 1994) had its
+  printed pages 6-8 render blank off a chunk-reassembled download, next to a page that rendered
+  with a visible corruption block. That is not a negative. Re-fetch and re-render pages 6-9. Note
+  that single-shot fetching worked cleanly at 10.9 MB tonight, so try it before chunking.
+- **A power-of-two byte count on a Wayback `id_` fetch means truncated.** Confirmed again from the
+  CDX listing here: pick another snapshot timestamp rather than trust the short file's page count.
+- **Say who the people in a photograph are only where the caption says it.** The nameplates made
+  two subjects certain and that certainty spread to two figures the caption never named.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin; carried forward untouched again.
+- The brief's stale trio has been closed since 18 August, and the drop-box variables remain unset.
