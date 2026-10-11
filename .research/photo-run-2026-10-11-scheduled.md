@@ -1,4 +1,4 @@
-# Photograph run, 11 October (scheduled) — both gates retested cold, a third source (wkuherald.com direct page fetch) found newly challenged mid-run, no new leads from an office-title Google search or from the one SGA Notes item the gap list pointed at
+# Photograph run, 11 October (scheduled) — both gates retested cold, wkuherald.com's `?p=` short-link form found newly gated (its article pages are open; corrected by the editor), no new leads from an office-title Google search or from the one SGA Notes item the gap list pointed at
 
 ## Priorities 1, 2 and 4, reconfirmed before anything else
 
@@ -10,7 +10,14 @@ portrait in `data/photos.json`. Nothing to do.
 missing.
 
 **Priority 4** (years with no photograph at all): every one of the 61 years has at least one
-photograph in `data/photos.json`. Zero missing.
+photograph in `data/photos.json` **once leader portraits are counted alongside the `years`
+array** — zero years carry neither. *Editor's correction, 11 October:* as first written this
+paragraph said only "zero missing", which reads as though the scene-photograph queue were closed.
+It is not. **1994-95 and 2000-01 have no entry in the `years` array at all**; both clear the test
+only on their officer composites (27 leader portraits for 1994-95, 11 for 2000-01). The same
+looseness was flagged on this beat once before and the method sentence the 10 October note carried
+is restored here deliberately, because "zero missing" without it is how a run talks itself past a
+real gap.
 
 So this pass's whole job was priority 3, same as every run since mid-September:
 `scripts/portrait_gap.py` reports 189 officer slots with no portrait, held by 159 distinct
@@ -24,7 +31,7 @@ people, 157 of them with no portrait anywhere in the file. Unchanged.
   (`dlsc_ua_records/<n>/`) are still open (HTTP 200) — only the PDF download itself is gated.
 - `web.archive.org` — `curl: (35) Recv failure: Connection reset by peer`. Not open this session.
 
-## A new, narrower finding: wkuherald.com's own article pages can return a Cloudflare challenge too
+## A new, narrower finding, corrected by the editor: it is the `?p=` short-link form that is challenged, not wkuherald.com's article pages
 
 Prior notes (8-10 October) treated `wkuherald.com` as open, using its `/wp-json/wp/v2/` REST API
 and that API stayed open this run (confirmed: `?search=SGA` returns normal JSON, HTTP 200). But a
@@ -33,11 +40,24 @@ Cloudflare "Just a moment..." challenge page, HTTP 403, with two different brows
 strings tried 5 seconds apart. This is new: no prior photo-run note records the plain article
 page itself, as opposed to the PDF gates, being challenged. It did not block this run, because
 the REST API's `content.rendered` field carries the same article text without touching the
-challenged path, but it is worth flagging for whoever next relies on the "fetch the HTML page to
-read `wp-image-` and `data-photoids` attributes" method documented in the 10 October morning
-note — that method fetches the rendered page directly, not the API, and would have hit this wall
-today. Whether it is a standing new gate or an intermittent flag on one request is not established
-from a single hit; retest before concluding either way.
+challenged path.
+
+*Editor's correction, 11 October.* The retest this note asked for was run, and it splits the
+finding in two. The **observation holds and is now reproduced**: `wkuherald.com/?p=52195` returned
+the same Cloudflare "Just a moment..." challenge, HTTP 403, from a second container a run later,
+so this is a standing gate on that URL form and not an intermittent flag on one request.
+
+The **inference drawn from it does not hold, and is withdrawn.** The gate is on the `?p=<id>`
+short-link form, which resolves by redirect — not on article pages as such. A canonical slug
+permalink taken from the REST API's own `link` field
+(`wkuherald.com/97897/news/sga-senate-complete-following-fall-election/`) returned **HTTP 200, a
+real 354 KB page, with `wp-image-` present in the markup**. So the 10 October morning
+caption method is not broken and needs no fallback: it built its 186-post list from the search
+API, which hands back canonical `link` values, and fetching those still works. The rule for the
+next run is narrower than this note first drew it — **resolve posts through the REST API's `link`
+field and never hand-build a `?p=` URL** — and that is a one-line habit, not a method rewrite.
+Left uncorrected, this paragraph would have sent a run to build a fallback for a method that works,
+or to abandon the only image-side route the beat has.
 
 ## What was actually tried this run, and why none of it produced a portrait
 
@@ -68,12 +88,16 @@ note.
 ## For the next run
 
 - Retry both PDF gates cold, as always.
-- Retest whether the wkuherald.com article-permalink Cloudflare challenge found this run is a
-  standing gate or a one-off; if it has hardened, the gallery-caption method from 10 October
-  morning (which depends on fetching the rendered page, not the REST API) needs a fallback that
-  reads captions a different way, since the REST API's `content.rendered` does not appear to
-  carry gallery attachment IDs for the shortcode format.
+- This retest is **done, not owed** (see the editor's correction above). The `?p=` short-link form
+  is a standing gate; canonical slug permalinks are open and carry `wp-image-`. The gallery-caption
+  method needs no fallback. Resolve posts through the REST API's `link` field and never hand-build
+  a `?p=` URL.
 - The office-title-plus-year Google strategy is now tried-and-negative for this archive; current
   wku.edu/sga pages keep surfacing in its place, which are out of scope (this project's own
   organization data, not photographs, and not this routine's business to update).
-- 189 officer slots / 159 people / 157 with no portrait anywhere remains the live count.
+- 189 officer slots / 159 people / 157 with no portrait anywhere remains the live count. Verified
+  independently by the editor against `scripts/portrait_gap.py`: 948 officer slots in the file,
+  189 without a portrait, held by 159 people, 157 of them with no portrait in any year.
+- Priority 4's narrow queue is **open, not closed**: 1994-95 and 2000-01 carry no scene
+  photograph in the `years` array. Both are `researched` years with full event records (37 and 19
+  events), so they are not thin years — they are photographed years missing a scene.
