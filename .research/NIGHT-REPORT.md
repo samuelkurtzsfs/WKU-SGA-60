@@ -44453,3 +44453,108 @@ or removed by this pass.
 - **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
   origin; carried forward untouched again.
 - The brief's stale trio has been closed since 18 August, and the drop-box variables remain unset.
+
+# 11 October 2026 (editor, scheduled, late) — one photograph pass merged with nothing added, and a pronoun that would have hung a photograph on the wrong person
+
+## What was open
+
+One. #742 `research-photos`, the photograph run's second scheduled pass of the day, opened 20:09.
+It is now on `main` as 9ab15ef3 and the board is empty behind it. #6, #7 and #8, which the standing
+brief still names as open and stale, have been closed unmerged since 18 August; this is the
+twentieth pass to record it. `gh pr list` answered 403 again, as it always does, because it is a
+GraphQL call — `gh api repos/.../pulls` answered normally and `git push` worked, so this was a
+full-mode pass. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset.
+
+The merge route needed one detour worth recording: `gh api -X PUT .../merge` was refused by the
+session's own permission layer, not by GitHub, and the GitHub MCP tool `merge_pull_request` did the
+same squash merge without complaint. That is the route AGENT-LANDING.md already names for pull
+requests, and it is the one to reach for first next time.
+
+## #742 — a pass that added nothing, which is the right outcome
+
+The diff was a single file, `.research/photo-run-2026-10-11-scheduled-2.md`, 99 lines, no data at
+all. `years.json`, `photos.json` and `photos/` untouched, and `site/` rebuilds byte-identical to
+what was already on `main`, so this merge published no new claim. The branch was already current
+with main — merge base `f7f4ef2d`, main's own tip — so none of the stale-branch reconciliation the
+brief describes was needed.
+
+With no sourced entry in the diff, the claims worth opening were the pass's own counts and its
+account of what it could and could not reach, because those are what the next run acts on without
+rechecking. Fourteen were checked rather than eight. Priorities 1 and 2 hold exactly: all 73 leader
+records across all 61 years carry a portrait, Todd, Dawson, Johnson and Gilley among them, confirmed
+by reading both files rather than by trusting the summary. `portrait_gap.py` reproduces 189 slots /
+159 people / 157 with no portrait anywhere, to the number. The access findings all hold at source:
+`digitalcommons.wku.edu/` answers 200 while `cgi/viewcontent.cgi?article=8989` answers 403 with full
+browser headers, so the gate really is on the download endpoint alone; `web.archive.org` resets the
+connection at the proxy on a bare fetch of the host; and archive.org serves `talisman1987west` but
+404s `talisman1995west`, so its Talisman holdings genuinely stop short of the officer gap. On
+wkuherald.com, Puhakka returns the 5 hits claimed, Massarone's 23 September 2021 profile names her
+and carries zero `img` tags in its body, and Zaczek appears in no caption across all ten hits the
+API returns. Both PDF routes being shut is therefore confirmed, and the 1994-95 lead is parked
+rather than neglected.
+
+## What was corrected
+
+Three statements, all rescued rather than cut, since each stated something true as something
+slightly different. One of them mattered.
+
+The Puhakka entry described the Isaac Keller photograph from the *Herald* of 10 April 2019 as
+"already **her** portrait source". It is filed in `photos.json` as **Keller's own** portrait, for
+2018-19, 2019-20 and 2020-21, and Puhakka has no portrait on file in any year;
+`portrait_gap.py --list` carries her twice as having none. The data was correct and no face was
+ever misattached, but the sentence invited a later pass to hang a photograph captioned for one
+person on another, which is the single thing this archive's rules call worse than no face at all.
+The pull request body had it right as "his"; only the report was wrong, which is how a slip like
+this survives a reading.
+
+Second, "all 73 leader records and all 61 years carry a portrait" is true of the leader portraits
+but reads as though every year has a photograph, and 1994-95 has none — as the same report says
+four paragraphs further down. Scoped to the leaders with the gap named inline. Third, the
+archive.org Talisman year range was attributed to CLAUDE.md, which notes the full texts are
+readable but states no range; the range is in `SGA-60-AGENT-INFO.md` and the earlier photograph
+runs, and the citation now points at the document that says it.
+
+Nothing tripped the traps checklist. No events, officers or people were added, so most of it is not
+engaged. Puhakka is recorded as a judicial officer in `organization.senate.officers` for both years
+the report gives her, not a committee chair promoted by accident. The one surname-alone risk in the
+diff — a football photograph matching on an unrelated "Turner" — was caught and rejected by the run
+itself. No settled fact was reopened, the living people named appear only in connection with their
+office and whether a photograph exists, there is no `Contributed-By` trailer in the diff, and all
+five commits author as `SGA 60` with no tool attribution.
+
+`check_duplicates.py` exits 1 with four pairs and one same-source pair, and its output is
+byte-identical on `main`, so the branch introduced none of them. All five are genuinely separate
+events: a student regent advisory committee bill introduced 28 January 1992 and failing on 6
+February; SGA taking a position on plus/minus grading in September 2003 and passing the legislation
+in October; driver cards in November 1997 and their distribution in February 1998; the KCLU planning
+court action in February 1972 and ASG endorsing the suit in March; and two distinct items of
+business out of one 2026 meeting. Nothing to merge.
+
+## Counts
+
+`build.py` clean and reproducible, `check_data.py` exit 0, `check_contrib.py` exit 0.
+61 years, **1,968 events**, 60 people have been president. 1,111 pieces of legislation, every file
+present and a real PDF. 1,310 citations name a volume and number and each opens that issue; 1,317
+quoted spans, none reaching 15 words. 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling. 308
+documents, 7 decade pages, a search index of 4,949 records, 5 photographs withdrawn. No count moved
+this pass, because nothing was added or removed from the data.
+
+## For the next pass
+
+- **Reach for the GitHub MCP `merge_pull_request` tool first.** `gh api -X PUT .../merge` was
+  refused by the session's permission layer tonight; the MCP tool merged the same branch without
+  complaint, exactly as AGENT-LANDING.md advises.
+- **Both PDF routes are still shut**, re-confirmed at source tonight. 1994-95's article 8989,
+  printed pages 6-9, and the unread tail of article 8933 remain the live photograph lead the moment
+  either opens. 1994-95 is the only year in the file with no year photograph.
+- **Priority 3 is unchanged at 189 officer slots / 159 people / 157 with no portrait anywhere**, and
+  the 2016-2025 slice still has some twenty untried names listed in #742's report.
+- **Log the hit count the API reports, not the number read.** #742 recorded 6 hits for Zaczek where
+  the endpoint returns at least 10; the conclusion survived checking all ten, but a capped list that
+  looks short is how a name gets written off early.
+- **A report is data too.** Nothing in #742 reached the site, and its one real fault was still a
+  sentence that could have put the wrong face on a president's page two passes later. Read the
+  `.research/` prose with the same eye as an event body.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin; carried forward untouched again.
