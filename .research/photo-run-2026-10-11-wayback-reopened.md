@@ -73,6 +73,22 @@ by a text-layer artifact.
   (those pages are a step-dance competition recap and a baseball brief; no occurrence of "Gretchen"
   anywhere in the document). **Does not support the Gretchen Light / Matthew Pava / Cameron Yancey
   lead this article was logged against.**
+  - **Corrected on review, 11 October (second editorial pass): the front page is not a
+    continuation and it does carry a photograph.** Printed page 1 is where the story
+    *starts* — "SGA president-elect under investigation", by Ashlee Clark — and it runs a
+    head-and-shoulders portrait captioned **Nick Todd** in the middle of the lead, jumping to
+    page 5 on its own "See SGA, Page 5" line. The sentence above, "no photograph on either
+    page", is wrong for page 1 and right for page 5, which was re-read this pass and carries
+    only advertisements and pull-quote graphics. The reasoning is left standing rather than cut
+    so a later pass can see how the miss happened: the page was read for the names on the gap
+    list, and a captioned portrait of a president already holding one did not register as a
+    photograph at all.
+  - The lead's **conclusion is unchanged**: Nick Todd already carries a portrait in
+    `data/photos.json` (`2004-05-nick-todd.jpg`, Election Guide 2004, 16 Mar 2004, p. 2B), and
+    Gretchen Light, Matthew Pava and Cameron Yancey are still not in this issue. Nothing here
+    fills a gap. But the article is **no longer a spent negative on the photograph question** —
+    it holds a dated, captioned front-page portrait of a president, which is worth knowing if the
+    existing Todd portrait is ever withdrawn.
 - **Article 7740** (Herald 84:46, 16 Apr 2009): the richest of the four — a full front-page SGA
   election story ("All smiles, Smiley wins SGA election," with a vote-tally graphic for Kevin
   Smiley/Kayla Shelton) and a page-5 "Regent falls short on office hours" story quoting Chief
@@ -82,6 +98,14 @@ by a text-layer artifact.
   plain text with one pull-quote graphic, no portrait. "Vanessa Scott" does not appear anywhere in
   this issue; the one text match on "Scott" was Missouri gubernatorial spokesman Scott Holste, an
   unrelated person in an unrelated wire story.
+  - **Two pages was not all of them (noted on review, 11 October).** The front page carries three
+    jump lines — "See I WON'T GIVE UP, page 7", "See PAIN, page 9" and "See SUFFER, page 9" — and
+    printed page 9 holds the continuation of an SGA budget story quoting President Kayla Shelton
+    and Administrative Vice President Reagan Gilley. It was not among the pages this note read.
+    It was rendered and read on review: two jump columns, a state-appropriations map and three
+    advertisements, the only photograph in them being a band publicity shot in a bar's
+    advertisement. **The negative holds**, but it held by luck rather than by method, in the same
+    issue whose own front page printed the line that would have found the page.
 
 **All four of this file's standing Herald leads for the 2000-01/2003-04/2005-06/2008-09 gaps are
 now exhausted by direct page image, not just by text search.** This is a stronger negative than
@@ -130,8 +154,15 @@ output is this note.
 - The Wayback `id_` bypass works and is worth retrying on a transient failure rather than treating
   one timeout as the route being shut.
 - The four standing Herald leads for 2000-01/2003-04/2005-06/2008-09 are now exhausted by direct
-  page image, not just text search. Do not re-open 9903, 4695, 10372 or 7740 without a new reason
-  to think a page was missed.
+  page image, not just text search, **for the gap-list names they were logged against** — which is
+  a narrower claim than this line first made. Three of the four were re-opened independently on
+  11 October (second editorial pass): 10372's front page turned out to carry a captioned Nick Todd
+  portrait this note had recorded as absent (corrected above), 4695's judicial-council page was
+  confirmed plain text, and 7740's budget jump on printed page 9 — which this note never read —
+  was rendered and carries no officer photograph. Do not re-open them for Gretchen Light, Matthew
+  Pava, Cameron Yancey, Jenna Haugen, Jessica Williams, Hunter Sprowles or Vanessa Scott, none of
+  whom are in these issues. Do re-open them if the question is a named officer who already holds a
+  portrait, because this note did not record those.
 - **Follow the jump line, not just the keyword hits.** The editorial review of 11 October found
   this note had missed the continuation of the 9903 election story on printed page 7, because the
   sweep listed pages matching `SGA` and read those, and the jump page was reached by a "See
