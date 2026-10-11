@@ -7800,8 +7800,12 @@
      "kind": "concert",
      "money": "attendance about 325",
      "src": {
-      "label": "1976 Talisman, Concerts; announced in College Heights Herald 51:29, 9 Dec 1975",
+      "label": "1976 Talisman, Concerts",
       "url": "https://archive.org/details/talisman1976west"
+     },
+     "src2": {
+      "label": "College Heights Herald 51:29, 9 Dec 1975, \"Associated Student Government to Sponsor Jazz Vocalist\"",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5123"
      }
     },
     {
@@ -34182,6 +34186,15 @@
       "label": "College Heights Herald 78:37 [Vol. 79], 12 Feb 2004, index (TopSCHOLAR)",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9374"
      }
+    },
+    {
+     "date": "2004-04-15",
+     "title": "Judicial council upheld Watkins as speaker and fixed the rule for electing one",
+     "body": "SGA's judicial council upheld Robert Watkins's election as speaker of the senate at its meeting on Thursday, two days after the disputed vote in which he beat Brittany Fausey nine votes to eight. The council ruled that the speaker should be elected by a majority of a quorum, settling the question the new constitution, which Watkins had written, had left unclear. It also ruled that the limit confining the speaker vote to members inducted before the semester's fifth meeting was provisional, so that any member of the legislative branch could vote in future speaker elections from the following semester.",
+     "src": {
+      "label": "Herald 79:53, 20 Apr 2004",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/9387"
+     }
     }
    ],
    "status": "researched",
@@ -34763,7 +34776,7 @@
       }
      ],
      "profile": [
-      "Patti Johnson, a senior from Marion, had been active in SGA for over three years and served on committees including public relations and athletics before becoming executive vice president in 2003-04. Nick Todd, the vice president of finance, was elected president for 2004-05 in March 2004, but before the new officers were sworn in on April 27, SGA's judicial council fielded an allegation that $611 was missing from the SGA Dining Dollars account, an account that had started the year with $5,000. Senator Josh Collins drafted articles of impeachment against Todd's vice presidency, but the judicial council ruled a two-week impeachment process could not finish before he left that office anyway. Johnson had not planned to run for president herself, but after Todd's resignation that July she entered the September 2004 special election as the only candidate to show interest, saying she stayed on because of \"the turmoil within the organization\" and that she knew \"what it takes to get the job done.\"",
+      "Patti Johnson, a senior from Marion, had been active in SGA for over three years and served on committees including public relations and athletics before becoming executive vice president in 2003-04. Nick Todd, the vice president of finance, was elected president for 2004-05 in March 2004, but before the new officers were sworn in on April 27, SGA's judicial council fielded an allegation that $611 was missing from the SGA Dining Dollars account, an account that had started the year with $5,000. Josh Collins drafted articles of impeachment against Todd's vice presidency, but the judicial council ruled a two-week impeachment process could not finish before he left that office anyway. Johnson had not planned to run for president herself, but after Todd's resignation that July she entered the September 2004 special election as the only candidate to show interest, saying she stayed on because of \"the turmoil within the organization\" and that she knew \"what it takes to get the job done.\"",
       "Johnson ran unopposed for president and student regent in the Sept. 14-15 online election, the group having been without an elected president since July. She said she was disappointed that students would not \"really get to make a decision,\" but still planned light campaigning, and she wanted to continue reviewing the plus/minus grading proposal and to make faculty evaluations available to students.",
       "Johnson received 1,291 votes in the two-day uncontested election and was sworn in as president at SGA's fall reception on Sept. 23, 2004, one week after her election. She said committees had been formed and members had begun proposing legislation, and she looked forward to being sworn in as student regent at the Oct. 29 Board of Regents meeting, declaring it was \"back to business.\" She served through the year until Katie Dawson was elected to succeed her in the March 2005 spring election.",
       "Johnson served as the Board of Regents' student member from August 2004 to July 2005, a term confirmed by the resolution of appreciation the board read into its July 22, 2005 minutes when Katie Dawson, the executive vice president who had served alongside her all year, was sworn in to replace her. Dawson had come up through the cabinet as Todd's running mate in the original March 2004 election and had acted as interim president during the summer vacancy before Johnson's win."
@@ -34857,7 +34870,7 @@
     {
      "date": "2004-04-20",
      "title": "SGA judicial council fielded impeachment bid against president-elect Todd",
-     "body": "Days before new officers were due to be sworn in on April 27, SGA's judicial council found that $611 was missing from the SGA Aramark Dining Dollars account, which had started the academic year with $5,000 and had about $1,200 left. Senator Josh Collins drafted articles of impeachment against Todd's outgoing vice presidency of finance, but the council ruled a two-week impeachment process could not be completed before he left that office regardless. Only Todd, outgoing president John Bradley and adviser Charley Pride held cards to the account.",
+     "body": "Days before new officers were due to be sworn in on April 27, SGA's judicial council found that $611 was missing from the SGA Aramark Dining Dollars account, which had started the academic year with $5,000 and had about $1,200 left. Josh Collins, an SGA member, drafted articles of impeachment against Todd's outgoing vice presidency of finance, but the council ruled a two-week impeachment process could not be completed before he left that office regardless. Only Todd, outgoing president John Bradley and adviser Charley Pride held cards to the account.",
      "src": {
       "label": "Herald, 20 Apr 2004 - \"SGA President-Elect Under Investigation\" (Wayback)",
       "url": "https://web.archive.org/web/20210730065202/https://wkuherald.com/55298/news/sga-president-elect-under-investigation/"
