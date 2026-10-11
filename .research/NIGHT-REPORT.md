@@ -44276,3 +44276,180 @@ reading found all five to be genuinely separate business.
 - **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
   origin; carried forward untouched again.
 - The brief's stale trio has been closed since 18 August, and the drop-box variables remain unset.
+
+# 11 October 2026 (editor, scheduled, overnight) — an empty queue, and the live year read end to end at source
+
+No pull request was open at the start of this pass and none opened during it. `gh api
+repos/{owner}/{repo}/pulls` returned `[]`. The brief's stale trio (#6, #7, #8) has been closed since
+18 August, for an eighteenth pass, and the numbering now stands at #740. The `gh pr list` 403 is
+still GraphQL-only and `gh api` answers normally, and a dry-run push to a throwaway ref was
+accepted, so this was a full-mode pass. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both still
+unset.
+
+## The queue really is empty, including the branch that looks ahead of main
+
+`research-photos` sits two commits ahead of `origin/main` and last took a push at 15:27 today, which
+reads at a glance like unreviewed work. It is not. #739 was squash-merged, so the branch keeps its
+own two commits while their content is already on main: `git diff origin/main origin/research-photos`
+excluding `site/` is empty, and the 2000-01 debate caption on the branch is the trimmed version the
+last pass wrote. Nothing there is waiting. Every other `research-*` branch is one of the 4 August
+orphan snapshots — `git merge-base` reports no common ancestor for any of them — and they were closed
+as pull requests in August.
+
+A branch ahead of main after a squash merge is worth stating plainly, because the count alone invites
+a pass to go hunting for work that has already been published.
+
+## What was audited instead: 2026-27, the live year, in full
+
+With nothing to gate, this pass took the year a reader is most likely to have been present for.
+2026-27 carries 18 events, every one of them from the Herald or WKU News, all born-digital and all
+reachable. **Sixteen claims were opened at source and read against their entries. All sixteen held;
+nothing was cut and nothing was trimmed.**
+
+Verified in full, with the figure or name each turns on:
+
+- **28 April 2026, the 26th Senate's first meeting.** Four swearings-in, the four speeches, the 9-9
+  tie between Tucker and Butler, the chief justice's ruling that neither constitution nor bylaws
+  addressed a tie, and Whipple's re-vote electing Butler.
+- **25 August 2026.** Eight events during orientation week, the sixtieth year opened, April named as
+  the founding month with the marking carried through the fall, and the budget risen by $100 to
+  $113,481 with the vote a week out. All nine senate posts confirmed name by name.
+- **1 September 2026.** The budget passed at $113,481, stipends the largest line at $27,000,
+  scholarships $23,000, five roles sworn, three of them new senators, two at-large seats left open.
+- **1 September 2026, the non-traditional scholarship.** The university's definition, Lucas on
+  rubrics missing the students most in need, the single application form, and Bryce Combs, freshman
+  meteorology major, taking the $1,000 raffle.
+- **9 September 2026, Organizational Aid.** $500 a group, $10,000 a semester, applications closing
+  29 September, a ten-person committee of the chief financial officer and nine senators, a 30-point
+  scale, and the lending and voucher list.
+- **15 September 2026.** Amendment 10.1.2 passed unanimously, Cayden Bussell sworn in at large, and
+  the Counseling Center at full staffing under budget.
+- **15 September 2026, the election codes.** Two posters a floor at 20 inches square, none in
+  classrooms or computer labs, yard signs anywhere on campus, washable chalk, no touching a rival's
+  material, everything down within five days.
+- **17 September 2026, Constitution Fest.** Over 250 pocket constitutions, Lasley as political
+  science chair, the tabling organisations, Budziak's presentation in Downing, officers grilling,
+  and the "We the People" canvas drawn by Craig Lonas as a donation.
+- **22 September 2026.** Resolution 4.6 F passed unanimously, Terry's pitch, the TopNet work coming
+  next; the syllabus mental health statement from the spring, Smith appointed the second student
+  member of the Undergraduate Curriculum Committee, Tucker the homecoming nominee, and the Bluegrass
+  scholarship's return.
+- **23 September 2026, the fall election opening.** 20 freshmen, six from Gatton, one graduate and
+  one international candidate, which is 28, and Barker on the engagement.
+- **29 September 2026.** Six senators sworn by name, Referendum 10.2.1 and the convention of two
+  cabinet members and six senators, twelve dental hygiene vouchers at $300 against the 24 spent, and
+  Organizational Aid closing at 52 submissions with the Bluegrass scholarship widening to Illinois
+  and Indiana.
+- **24 April 2026, the Truman Scholarship**, on WKU News: 55 of 198 finalists from 781 candidates at
+  305 institutions, $30,000, second in WKU's history, the only one from Kentucky.
+
+## Two false alarms this pass raised against itself, and why they are worth writing down
+
+Both came from reading a scrape rather than the page, and both would have been published as cuts by
+a pass that trusted its own tooling.
+
+**The nine committee chairs of 25 August looked unsourced.** A paragraph-only extraction returned
+"the meeting neared an end with the nomination and swearing-in of the senate's new committee chairs"
+and no names at all, against an entry naming nine people and their committees. The names are there:
+the Herald sets the list in styled `div`s rather than paragraphs, and all nine appear verbatim in the
+raw HTML, spelled exactly as the entry has them, Gabi Pace and Molly Ricke included.
+
+**The Gatton senator of 29 September looked like an invented sixth name.** The entry swears in six
+senators; the extraction returned five and stopped at the international senator, which is the precise
+signature of a name added to round a list out to the number of seats contested. It is not that
+either: "Gatton Senator Samantha Brown" is the next line in the source, and an advertisement `div`
+sitting inside the list is what truncated the scrape.
+
+The lesson is the one this file keeps relearning in other costumes: **a negative produced by tooling is
+not a negative.** A missing name, like a blank page or an empty index line, is a lead to check against
+the page itself, never grounds for a cut.
+
+## A conflict in the sources, flagged rather than resolved
+
+Two Herald reports disagree on when campaigning opened for the fall 2026 election. The editorial-board
+interview of 9 September puts the campaigning period at 5 p.m. on 16 September; the report of the
+codes meeting on 15 September puts it at 4.30 p.m. on the 16th, which is also the time the second
+orientation meeting began that day. The entry follows the codes meeting, which is the better source —
+the rules read out at the meeting that existed to read them out — and is accurate to the article it
+cites. No change made. Recording it because this archive elsewhere prints a disagreement rather than
+choosing silently: the M.A.S.T.E.R. Plan raffle entry carries both 1,744 and 1,174 with each figure
+attributed, and a later pass may decide this one deserves the same treatment.
+
+## What could not be re-verified, and exactly how far it was checked
+
+The only new assertion to reach main in the last 24 hours is the 2004-04-15 event added by #738, the
+judicial council upholding Robert Watkins as speaker. Its **citation was verified at source**: the
+landing page `dlsc_ua_records/9387` gives "Vol. 79, No. 53" with a publication date of 4-20-2004,
+matching the entry's label exactly, and its index carries "Clark, Ashlee. Robert Watkins Upheld as
+Speaker – Student Government Association" among 23 lines, which is also what the local
+`herald-index-full.json` holds for that issue.
+
+The body's two rule findings — election by a majority of a quorum, and the fifth-meeting limit held
+provisional — rest on printed page 5, which **this pass could not re-read**. The live `viewcontent`
+endpoint is Cloudflare-gated (403 confirmed on article 10372) and every route to the Wayback copy
+failed: `archive.org/wayback/available` answered 429, and the CDX endpoint reset the tunnel on six
+attempts, the proxy recording `ws_closed_mid_exchange` against `web.archive.org:443` each time. So
+the claim stands on the previous pass's page read, which that report describes in specific terms, and
+is not in doubt; it is simply not independently confirmed. A later pass with Wayback available should
+render page 5 of article 10372 and close this.
+
+## Spelling, checked and left alone
+
+Three variant pairs appear in the audited material and all three are already handled the way CLAUDE.md
+requires. `name-aliases.json` maps Sophie Sterling to Sophie Stirling, added 3 October on the Herald's
+own alternation and the 25th Senate's minutes, and Molly Ricke to Molly Ricky. Gabby and Gabi Pace are
+not mapped, and should not be silently merged — but the record already flags them: Gabi Pace's own
+roster note says the Herald rendered her name "Gabby Pace" at the April meeting and calls the
+discrepancy unresolved. Nothing to fix.
+
+## Traps
+
+Nothing in the audited material trips the checklist. No committee chair is recorded as an officer —
+the 25 August entry says "nine senate posts" and means eight chairs plus the senate's secretary,
+which is what the source lists, and the chairs stay out of the cabinet where the pass of 10 October
+put them. No person is matched by surname alone. The April 2026 election files forward to 2026-27,
+where Lucas is president. No settled fact is touched. No advance notice is written up as a report: the
+23 September entry refuses to fix which of two days voting opened, because its source dates the
+opening only as "today", and says so in the body. Nothing about a living person goes past what the
+cited source reported. No contributor edit in range, and nothing anywhere in the audited data names a
+tool.
+
+## Judged and left alone
+
+`check_duplicates.py` reports the same four title pairs and one same-source pair as the recent passes,
+off pristine main. The last pass read all five in full and found each to be separate business; this
+pass edited none of those years, so they are left as they stand. The script exits 1 whenever it has
+pairs to show, which is not a failure signal.
+
+`build.py` reproduces main's committed `site/` with no drift at all — `git status` came back clean
+after the run — so there is no churn to discard this time.
+
+## Counts
+
+`build.py` clean and reproducible, `check_data.py` exit 0, `check_contrib.py` exit 0.
+61 years, **1,968 events**, 60 people have been president. 1,111 pieces of legislation, every file
+present and a real PDF. 1,310 citations name a volume and number and each opens that issue; 1,317
+quoted spans, none reaching 15 words. 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling. 308
+documents, 7 decade pages, a search index of 4,949 records, 5 photographs withdrawn. Nothing was added
+or removed by this pass.
+
+## For the next pass
+
+- **The live year is clean to the sources as of tonight.** 2026-27's next entries will come off the
+  13 October meeting, the first after fall break, which the Herald of 29 September flagged.
+- **Do not read a scrape's silence as a source's silence.** Two entries looked unsupported in this
+  pass purely because the Herald sets lists in styled `div`s and drops advertisement `div`s inside
+  them. Read the raw HTML before cutting a name.
+- **A single 403 from wkuherald.com is not rate limiting.** Article 97229 refused `curl` on four
+  separate attempts, spaced out and with a browser user agent, while its neighbours served normally
+  both before and after; it reads fine through `WebFetch`. Try the other route before concluding an
+  article is unreachable.
+- **Wayback was unusable tonight** — 429 from the availability API, tunnel resets from CDX. Page 5 of
+  article 10372 (*Herald* 79:53) is the one outstanding re-read, and 1994-95's article 8989 pages 6-9
+  is still the live photograph lead from the earlier passes.
+- **Priority 4's queue is 1994-95 alone** and Priority 3 is unchanged at 189 officer slots / 159
+  people / 157 with no portrait anywhere.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin; carried forward untouched again.
+- The brief's stale trio has been closed since 18 August, and the drop-box variables remain unset.
