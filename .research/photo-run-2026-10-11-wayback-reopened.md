@@ -49,10 +49,14 @@ at the actual image, to make sure a real photograph next to a relevant name was 
 by a text-layer artifact.
 
 - **Article 9903** (Herald 76:52, 17 Apr 2001): confirms the 3 October finding exactly. The SGA
-  election story ("SGA election produces low voter turnout," Mark Rawlings winning public
-  relations VP unopposed) runs on page 1 with no photograph of its own — the only image on that
-  page is the unrelated "Tiffany plays Western" concert photo. No other page mentions the story.
-  **Still no usable frame for 2000-01.**
+  election story ("SGA election produces low voter turnout") runs on printed page 1 with no
+  photograph of its own — the only image on that page is the unrelated Tiffany concert photo.
+  Corrected on review, 11 October: Rawlings was **not** unopposed. He won the only contested
+  office, vice president of public relations, defeating Holly Skidmore 343-315; the presidency
+  (Leslie Bedo) and the three other executive offices were the unopposed ones. The story also
+  continues on printed page 7, which this note first said no other page carried — that jump page
+  was read on review and carries no photograph either, its only image being an advertisement.
+  **Still no usable frame for 2000-01**, which the jump page confirms rather than disturbs.
 - **Article 4695** (Herald 81:42/46, 13 Apr 2006): three pages carry `SGA`/`Student government` —
   an opinion piece ("SGA president should lead"), a news story ("Judicial council to help students
   understand SGA responsibilities," about Judge John Minton visiting a forum — not about any
@@ -128,6 +132,12 @@ output is this note.
 - The four standing Herald leads for 2000-01/2003-04/2005-06/2008-09 are now exhausted by direct
   page image, not just text search. Do not re-open 9903, 4695, 10372 or 7740 without a new reason
   to think a page was missed.
+- **Follow the jump line, not just the keyword hits.** The editorial review of 11 October found
+  this note had missed the continuation of the 9903 election story on printed page 7, because the
+  sweep listed pages matching `SGA` and read those, and the jump page was reached by a "See
+  Election, Page 7" line rather than by a repeat of the keyword. The conclusion survived — the
+  jump page carries no photograph — but on another issue it need not. When a story runs on from a
+  front page, read the page it runs on to before calling the lead exhausted.
 - The magazine-era Talisman (2012-2025) is now confirmed absent from Wayback. The only remaining
   route into that content is the live `cgi/viewcontent.cgi` endpoint, gated by Cloudflare on every
   test to date. If that gate ever opens, the 2012-13 through 2016-17 volumes are the highest-value
