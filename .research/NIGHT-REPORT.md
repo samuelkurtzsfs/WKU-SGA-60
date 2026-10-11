@@ -43524,3 +43524,172 @@ The research side, as before: eleven of thirteen routines remain disabled and th
 reports its methods exhausted, with a page image behind the PDF gate the only route left for the
 2012-2025 span. Editorially, the two items flagged above, and the five 1999 vote counts waiting on
 the PDF gate.
+
+# 11 October 2026 — an empty queue, eleven claims opened at source, two branches that must not be merged, and a stale clone caught mid-pass
+
+## The queue
+
+Nothing to merge. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returns an empty
+list, and #6, #7 and #8 — the three the standing brief still calls stale and open — remain
+closed and unmerged, as they have been since 18 August. Nothing was merged tonight because
+there was nothing in front of the gate, not because anything failed.
+
+The newest claims on the site are still those of 4 October (#685, #687, #690). The only
+content change since is the withdrawal pass of 10 October, which pulled an unsourced 1974-75
+office and moved eleven committee chairs out of the executive lists. That is trap 2 being
+undone rather than committed, and it reads correctly.
+
+## The clone arrived a hundred commits stale, and it nearly spoiled this pass
+
+Recorded first because it is the most useful thing in this entry for whoever runs next. The
+container's checkout had local `main` at `bb2339ef` — 4 October — while `origin/main` was at
+`7cb41c75`. A hundred commits behind, in a clone made this evening. `git fetch` updates the
+remote-tracking ref and says nothing about it, so `git checkout main` lands silently on the
+old tree and every check run afterwards describes a site that is not the published one.
+
+This pass did exactly that before catching it. The first build, the first validator run, the
+first duplicate judgement and the first reading of `years.json` were all against 4 October.
+The error surfaced only because the pull request would not merge: GitHub reported the branch
+dirty, and the merge base came back as `bb2339ef` rather than the tip. The counts had already
+been written into a draft of this entry; two of them were wrong.
+
+So: **`git reset --hard origin/main` before validating anything, and check the merge base
+rather than trusting `git checkout main`.** This is trap 7 in a form the data-side validators
+cannot catch, because nothing failed — the build was clean, both validators exited 0, and
+every figure they printed was a true figure about the wrong tree. Everything below was re-run
+against `7cb41c75` after the reset, and the branch carrying this entry was cut again from it.
+
+The branch comparisons in the next section were sound as first written: they name `origin/main`
+explicitly rather than the local branch, which is the habit that saved them.
+
+## Two branches carrying unmerged patches, and both would set the record back
+
+Worth writing down because a future pass checking `git rev-list` or `git cherry` will find
+them and may read them as unlanded research. They are not. Of the nineteen branches ahead of
+`main`, seventeen are already on it by content under different hashes; two are not, and both
+are superseded snapshots:
+
+- **`editor-2026-10-07-rally-notice`** would revert the 1968 Sam and Dave entry from the
+  careful form now on `main` — "booked to play", with the *Herald* of 5 December cited as a
+  second source and whether the pair actually played left open — back to the flat assertion
+  "Sam and Dave play campus". That is trap 1 reintroduced, together with the loss of that
+  second citation.
+- **`editor-2026-10-04-index-drop`** would delete two photographs
+  (`1995-96-election-embrace.jpg`, `2008-09-regent-election-night.jpg`), remove 94 lines from
+  `photos.json`, and replace 422 lines of `years.json` with 285 — a net loss of 137 lines of
+  record, and 54 lines off the barred-photograph register besides.
+
+Neither is rescuable and neither should be merged. They were left in place rather than
+deleted; nothing on them is wanted, and the branches are the record of why.
+
+## Spot verification: eleven claims opened at source, none cut
+
+With no diff to check, the sample was taken from the newest material on the live site and from
+the entries carrying the most specific numbers. Every one held, and every one was re-read on
+`7cb41c75` after the reset to confirm the entry still says there what it said on the stale
+tree. The sources were fetched one at a time, three seconds apart; no 403s.
+
+- **Thompson's approval letter, 1 April 1966.** UA3/3/1's own description reads "Letter to
+  committee chair Reed Morgan, vice chair John Lovett" — the entry's claim word for word,
+  including the office.
+- **The constitution approved and printed.** The *Herald* of 7 April 1966 (45:20) carries
+  "President Kelly Thompson Okays Student Government Association Constitution", and
+  TopSCHOLAR's copy of the constitution is described as printed in that issue.
+- **Ratification 1,812 to 726, and Jim Haynes elected first president on 18 May 1966.** Both
+  confirmed on wku.edu/sga/about/history.php. This is a later list, so it is the weaker leg;
+  but the dates around it — Thompson's approval of 1 April, the printing of 7 April — are
+  independently confirmed contemporaneously above.
+- **The first year judged, 12 May 1967.** *Herald* 46:23 carries all three elements the entry
+  reports: "Organization, Progress, Apathy Mark Associated Students First Year", William
+  Menser's plans for 1967-68, and a letter that Associated Students really works.
+- **The 1968 regent seat.** Menser is filed president 1967-68 with `also_regent`, succeeding
+  to the seat on 4 April 1968. Consistent with the settled fact, and the 1967 issue above
+  corroborates the presidency.
+- **Reed Morgan, checked again because it is the claim most often reopened.** The index of
+  7 April 1966 carries "Nelson, Fran. Senior Triples as Greek Editor, Debater, Government
+  Chairman – Reed Morgan". He was a senior in April 1966 and the committee's chairman, which
+  is what CLAUDE.md says and what the letter says. Nothing here puts him in an office.
+- **The three 2026-27 entries of 22 and 23 September.** Resolution 4.6 F, the syllabus
+  statement, and the opening of the fall election all check out against the Herald's report of
+  the 22nd, down to the vote being unanimous, Carter Smith being sworn in by chief justice
+  Sophie Sterling, Amelia Tucker's homecoming nomination, and Barker on the Bluegrass
+  Leadership Scholarship. The election entry is the best-handled thing read tonight: the paper
+  dates the opening only as "today", the entry says so rather than picking a day, its candidate
+  arithmetic (20 freshmen, six Gatton, one graduate, one international) comes to the 28 it
+  claims, and the close is carried on the separate report of 29 September, which confirms the
+  election concluded on the Friday.
+
+## Judged and left alone
+
+`check_duplicates.py` reports the same five pairs as the last five passes, on the true tree as
+on the stale one. All five were read again rather than carried forward, and all five are
+genuinely separate business — the reading matches the last pass's in every case. No merges.
+
+The **Stewart byline** looked like an inconsistency and is not one. `years.json` carries
+"Nikki Stewart" once and "Nikita Stewart" four times, and the *Herald's* own index is the
+reason: the issue of 30 January 1992 bylines her "Stewart, Nikki" and the issue of 6 February
+"Stewart, Nikita". The archive is following each issue as printed, which is right. Recorded
+here so that a later pass does not tidy it into a false consistency — this is the case the
+"flag, do not fix" rule exists for.
+
+## One flag, carried not cut
+
+The 1987-88 Frankfort rally entry (16 February 1988) is the most heavily numbered entry read
+tonight: 3,000 marchers, the largest such demonstration since 1964, four free buses, 130 of
+161 who signed up, a contingent of about 250, 250 red towels. Its citation is sound — *Herald*
+63:41 of 18 February 1988 is two days after the rally and carries two genuine reports of it,
+Rebecca Fullen's "Sobering Budget Inspires Cheery Rally" and "Rally Cry: Can't Be Great at
+48". So this is a report and not a notice, and the entry is properly founded. But those
+figures live in the article's body, which the index does not hold, so none of them could be
+confirmed line by line tonight. Nothing was cut: an index miss is never grounds for cutting,
+and the entry over-claims nothing a rally report would not carry. A pass with the page image
+could confirm the numbers themselves.
+
+## Counts
+
+All figures below are from `7cb41c75`, after the reset. `build.py` clean, `check_data.py`
+exit 0, `check_contrib.py` exit 0, `check_duplicates.py` reporting only the five judged pairs.
+61 years, **1,967 events**, 2,651 recorded terms held by 1,809 people, 2,614 of them (98%)
+with an account of what the person did, 48 people under more than one spelling, 308 documents,
+1,111 legislation files, **1,307 citations** naming a volume and number and each opening that
+issue, **1,315 quoted spans** all under 15 words, 60 people have been president. The build
+withdrew 5 photographs the archive no longer holds or has barred. Unchanged in every figure:
+this pass verified and cut nothing, because nothing needed cutting.
+
+The two citation figures are the ones the stale tree got wrong — it gave 1,303 and 1,306, both
+true of 4 October and neither true of the site. The event count was the same on both trees,
+which is exactly why a stale clone is dangerous: the figure most likely to be checked is the
+one least likely to have moved.
+
+The rebuild is reproducible, which is worth stating since trap 7 is about scripts that claim
+more than they did. Running `build.py` twice on an unchanged `main` rewrote 88 files with 300
+changed lines, and every one of them was a date stamp — the "Built 11 October 2026" footer or
+the "revised 11 October 2026" line in the citation block. No content drift. The site churn was
+discarded rather than committed, this pass having changed no data.
+
+## For the next pass
+
+- **Reset to `origin/main` before trusting anything.** See the second section. A fresh clone
+  in this container was a hundred commits behind, and nothing in the normal run of checks
+  reports it.
+- **The standing brief is wrong in the same two places, for a twelfth pass.** #6, #7 and #8
+  have been closed since 18 August, and the `gh pr list` 403 it reads as the platform gate is
+  GraphQL-only — `gh api repos/{owner}/{repo}/pulls` answers normally and listed the queue
+  tonight. A run that took that 403 for the gate would drop into review-only mode and post its
+  verdict nowhere, because `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset again.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`**, for the
+  reasons above. They are the only two branches whose patches are genuinely not on `main`.
+- The carried-over data notes still stand: the flagged spellings (the mental health committee's
+  four forms — this pass saw two of them, "Wellbeing" and "Well-Being", in neighbouring
+  entries — and Amber Daniel / Amber Daniels, both held separate with the uncertainty stated;
+  the Lodmell sisters are the standing warning), now joined by the Stewart byline above as a
+  case already settled in the archive's favour.
+- **The queue is empty because almost nothing is left to fill it, and this pass checked the
+  schedule itself rather than repeating the figure.** Of the six SGA 60 routines, two are
+  enabled: this editor pass, every three hours, and the portrait routine, every six. The other
+  four — the backlog, the senate rolls, the person profiles and the legislation harvest — have
+  been disabled since late August. So the standing brief's "four research routines are running
+  around the clock" is wrong in the same way its pull-request numbers are: one routine produces
+  research at present, and the editor reviews it. An empty queue is the expected state, not a
+  fault, and it will stay the expected state until somebody re-enables the other four.
+- SGA sits next on **13 October**.
