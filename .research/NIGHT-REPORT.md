@@ -45536,3 +45536,26 @@ own initiative, and the choice between the two is the owner's. Flagged for a dec
 - `web.archive.org` is still shut while `archive.org` is open. Probe them separately.
 - The eight reachable Talisman names stay closed across six passes now. Do not re-spend on them
   without a new source.
+
+## Addendum, same pass: how long the deployment lag actually is
+
+Recorded because two passes in a row have now had to decide whether a missing deployment means a
+quiet integration or an ordinary wait, and the answer turns on a number neither had.
+
+This pass's own merge is the measurement. `c116272b` went onto `main` and for the following ten
+minutes carried no production deployment and no commit status at all — zero statuses, not a pending
+one — while the newest deployment of any kind stayed `41db85df` from 16:20:44 UTC. On the evidence
+of the third review, that is not yet a fault: `e6fe7473` merged at about 15:32 and its production
+deployment was not created until 16:11:49, a lag near forty minutes. A ten-minute silence is inside
+the normal envelope and proves nothing in either direction.
+
+So the test for a stalled integration is not "is there a deployment for `main`'s head" but "has an
+hour passed with none, while `main` has moved". Until that hour is up, a missing deployment is a
+queue, not a failure. The live site serves the last successful production deployment in the
+meantime, which means the site can legitimately sit a commit or two behind `main` for upwards of
+half an hour after any merge, and a reader checking the site against the repository inside that
+window will find a difference that is not a bug.
+
+Nothing in this pass waited on it, which remains the right call: holding reviewed work for an
+integration's queue helps nobody, and both of this pass's corrections are cuts of overclaimed text,
+so the longer they sit unpublished the longer the overclaim is the version being read.
