@@ -44670,3 +44670,118 @@ October 2026", and `y/2000-01.html` serves the debate photograph, so everything 
   known reason.
 - **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
   origin; carried forward untouched again.
+
+---
+
+# 12 October 2026, afternoon review
+
+## What was reviewed
+
+One open pull request, #745, `research-photos`, "Research: photographs, 12 October — officer-gap
+slice exhausted, no portrait to add". Merge base is the current tip of `main` (`f67bb7e8`), so this
+is an ordinary descendant and none of the orphan-history warnings apply. **Merged.**
+
+The diff is one new file, `.research/photo-run-2026-10-12-afternoon.md`, and nothing else. No change
+to `data/years.json`, `data/photos.json`, `data/photos/` or `data/legislation/`. `.research/` is not
+published — `build.py` reads only `branches-checked.json` and `branches-unverified.json` out of it
+and copies nothing from it into `site/` — so this merge publishes no new claim to the live site. It
+adds a research log, and it was judged as one.
+
+## Spot verification
+
+Fifteen claims checked, which is every testable claim the note makes. Fourteen held exactly.
+
+Verified against the data, each reproduced rather than taken from the note: all four priority-1
+names (Todd, Dawson, Johnson, Gilley) carry a portrait; all 73 leader records across 61 years carry
+one, with zero missing on an exact-name check; 1994-95 is the only year with no scene photograph,
+which also confirms 2000-01 closed; `portrait_gap.py` reports 189 slots / 159 people / 157 with no
+portrait in any year, to the digit; Morris and Smith are the two 2025-26 names in the gap list, and
+are senators (First Generation, Freshman) as the note treats them; all five of the 2026-27 cabinet
+already carry a portrait; Robinson is 2025-26's president and Lucas 2026-27's, which is what makes
+the stale `alt` attribute legible as stale.
+
+Verified at source: `wku.edu/sga/executive/index.php` carries the five headshots under exactly the
+filenames given (`caden.jpg`, `jakobbarker.jpg`, `will.jpg`, `gabipace2.jpg`, `caydenbayley.jpg`),
+each beside a visible card naming the officer and their title, and the `alt` on Lucas's image does
+read "A headshot image of Student Body President Rush Robinson." — "Rush Robinson" occurs exactly
+once on the page, in that attribute, so the note's reading that the visible text is unambiguous is
+right. `cgi/viewcontent.cgi?article=8989` answers a Cloudflare 403; `web.archive.org` resets the
+connection with `ws_closed_mid_exchange` at the proxy, verbatim what the note reports.
+
+The one correction: the directory gives Lucas as "Student Body President, Student Regent", not
+"Student Body President". This strengthens the note rather than undermining it, and the archive
+already carries `also_regent: true` for Lucas, Robinson and Kurtz, so nothing is missing. Recorded
+as an addendum on the note so a later run does not mistake the shorter form for the page's wording.
+
+**What could not be verified, and why it did not block the merge.** The per-name `wkuherald.com`
+sweep — articles 74403, 90387, 88370, 97612, 87022 and the search-hit counts — could not be opened.
+The site closed behind a Cloudflare managed challenge between the run and this review: 403 to `curl`
+with full browser headers, 403 to the container's own Chromium under Playwright with the challenge
+given 40 seconds to clear, 403 to a plain fetch, while `digitalcommons.wku.edu` landing pages
+answered 200 in the same minutes. Every one of those claims is a **negative** finding — no caption
+names the person, nothing to add — so none of them puts anything on the site, and under CLAUDE.md a
+miss is never grounds for cutting a claim in the first place. An unverifiable negative that adds
+nothing is not the same risk as an unverified assertion, and this diff contains no assertion.
+
+## Traps
+
+Clean, and most of the checklist is not engaged: the diff adds no event, person, office, portrait or
+piece of legislation. No advance notice is written up as a report, because nothing is written up as
+a report. No office is asserted — the note takes Morris's and Smith's titles from `portrait_gap.py`,
+and the officer names it quotes from Herald captions are quoted as captions. Nobody is matched by
+surname alone. No changed surname creates a duplicate; `name-aliases.json` is untouched. No April
+result is filed, so nothing files into the wrong academic year. No settled fact is reopened. The
+living people named appear only in connection with their SGA service and whether a photograph of
+them exists; the note records that the directory prints university emails beside the photographs and
+correctly does not reproduce them. No `Contributed-By` trailer. Every commit on the branch is
+authored `SGA 60 <kurtztoddsam2@gmail.com>`, and no commit message, note or site file carries tool
+attribution.
+
+`check_duplicates.py` reports the same four pairs and one same-source pair as the last three nights,
+byte-identical to `main`'s output, which is expected since no data changed. Re-judged rather than
+waved through: 1997-98's two designated-driver entries are a November 1997 bill allocating $900 and
+a February 1998 Herald report that the cards would be distributed the next day — three months and
+two sources apart. 1991-92's advisory-committee pair is an introduction and a failure; 1971-72's is
+the KCLU planning action and Associated Students endorsing it a month later; 2003-04's is a stated
+position and the legislation that later carried. The 2026-27 same-source pair is two distinct pieces
+of business — a syllabus statement and voting opening — from one meeting report, which CLAUDE.md
+expressly allows. Nothing to merge.
+
+## Counts
+
+`build.py` completes cleanly, `check_data.py` exit 0, `check_contrib.py` exit 0. 61 years,
+**1,968 events**, 60 people have been president. 1,111 pieces of legislation, every file present and
+a real PDF. 1,310 citations name a volume and number and each opens that issue; 1,317 quoted spans,
+none reaching 15 words. 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%)
+carrying an account of what the person did, 48 people under more than one spelling. 308 documents,
+7 decade pages, a search index of 4,949 records, 5 photographs withdrawn. No count moved, which is
+the expected result of a diff that touches no data.
+
+## Still open
+
+Nothing. The queue is empty after this merge.
+
+## For the next pass
+
+- **`wkuherald.com` is a third intermittent route, not a reliably open one.** It was open to the
+  photograph run this afternoon and closed to this review a few hours later, behind the same kind of
+  Cloudflare managed challenge as `cgi/viewcontent.cgi`. The container's own Chromium does not clear
+  it. Test it fresh; do not plan a run around it being open, and do not record it as permanently shut
+  either.
+- **`web.archive.org` is still an egress-policy denial**, unchanged from last night. Ask for it
+  rather than retrying it.
+- **The 1994-95 gap's next step is unchanged**: `article=8989` printed pages 6-9, and the unread tail
+  of `article=8933`, the moment a PDF route opens. Page 5 of article 10372 also remains open.
+- **Priority 3 has no fresh slice.** The 2016-2026 untried list is exhausted. What is left of the
+  159-person gap is pre-2011 names behind the closed Talisman route. A photograph run that finds all
+  three routes shut has little to do beyond checking for new officer announcements, and should say so
+  early rather than re-walking closed ground.
+- **The standing brief is still out of date in the same two places**, independently reconfirmed this
+  pass: it names #6, #7 and #8 as open since 4 August, when all three closed on 18 August 2026, and
+  it has the GitHub gate backwards. `gh` is installed and the REST API answers with full push and
+  merge rights; only the GraphQL endpoint is refused, so `gh pr list` fails while
+  `gh api repos/.../pulls` succeeds. AGENT-LANDING.md's claim that `gh` is not installed is also
+  wrong. Neither error costs a run yet, but both will eventually send a pass into review-only mode
+  that does not need to be there.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin, carried forward untouched.
