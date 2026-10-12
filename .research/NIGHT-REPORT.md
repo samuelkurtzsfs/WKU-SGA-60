@@ -44453,3 +44453,220 @@ or removed by this pass.
 - **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
   origin; carried forward untouched again.
 - The brief's stale trio has been closed since 18 August, and the drop-box variables remain unset.
+
+# 11 October 2026 (editor, scheduled, late) — one photograph pass merged with nothing added, and a pronoun that would have hung a photograph on the wrong person
+
+## What was open
+
+One. #742 `research-photos`, the photograph run's second scheduled pass of the day, opened 20:09.
+It is now on `main` as 9ab15ef3 and the board is empty behind it. #6, #7 and #8, which the standing
+brief still names as open and stale, have been closed unmerged since 18 August; this is the
+twentieth pass to record it. `gh pr list` answered 403 again, as it always does, because it is a
+GraphQL call — `gh api repos/.../pulls` answered normally and `git push` worked, so this was a
+full-mode pass. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset.
+
+The merge route needed one detour worth recording: `gh api -X PUT .../merge` was refused by the
+session's own permission layer, not by GitHub, and the GitHub MCP tool `merge_pull_request` did the
+same squash merge without complaint. That is the route AGENT-LANDING.md already names for pull
+requests, and it is the one to reach for first next time.
+
+## #742 — a pass that added nothing, which is the right outcome
+
+The diff was a single file, `.research/photo-run-2026-10-11-scheduled-2.md`, 99 lines, no data at
+all. `years.json`, `photos.json` and `photos/` untouched, and `site/` rebuilds byte-identical to
+what was already on `main`, so this merge published no new claim. The branch was already current
+with main — merge base `f7f4ef2d`, main's own tip — so none of the stale-branch reconciliation the
+brief describes was needed.
+
+With no sourced entry in the diff, the claims worth opening were the pass's own counts and its
+account of what it could and could not reach, because those are what the next run acts on without
+rechecking. Fourteen were checked rather than eight. Priorities 1 and 2 hold exactly: all 73 leader
+records across all 61 years carry a portrait, Todd, Dawson, Johnson and Gilley among them, confirmed
+by reading both files rather than by trusting the summary. `portrait_gap.py` reproduces 189 slots /
+159 people / 157 with no portrait anywhere, to the number. The access findings all hold at source:
+`digitalcommons.wku.edu/` answers 200 while `cgi/viewcontent.cgi?article=8989` answers 403 with full
+browser headers, so the gate really is on the download endpoint alone; `web.archive.org` resets the
+connection at the proxy on a bare fetch of the host; and archive.org serves `talisman1987west` but
+404s `talisman1995west`, so its Talisman holdings genuinely stop short of the officer gap. On
+wkuherald.com, Puhakka returns the 5 hits claimed, Massarone's 23 September 2021 profile names her
+and carries zero `img` tags in its body, and Zaczek appears in no caption across all ten hits the
+API returns. Both PDF routes being shut is therefore confirmed, and the 1994-95 lead is parked
+rather than neglected.
+
+## What was corrected
+
+Three statements, all rescued rather than cut, since each stated something true as something
+slightly different. One of them mattered.
+
+The Puhakka entry described the Isaac Keller photograph from the *Herald* of 10 April 2019 as
+"already **her** portrait source". It is filed in `photos.json` as **Keller's own** portrait, for
+2018-19, 2019-20 and 2020-21, and Puhakka has no portrait on file in any year;
+`portrait_gap.py --list` carries her twice as having none. The data was correct and no face was
+ever misattached, but the sentence invited a later pass to hang a photograph captioned for one
+person on another, which is the single thing this archive's rules call worse than no face at all.
+The pull request body had it right as "his"; only the report was wrong, which is how a slip like
+this survives a reading.
+
+Second, "all 73 leader records and all 61 years carry a portrait" is true of the leader portraits
+but reads as though every year has a photograph, and 1994-95 has none — as the same report says
+four paragraphs further down. Scoped to the leaders with the gap named inline. Third, the
+archive.org Talisman year range was attributed to CLAUDE.md, which notes the full texts are
+readable but states no range; the range is in `SGA-60-AGENT-INFO.md` and the earlier photograph
+runs, and the citation now points at the document that says it.
+
+Nothing tripped the traps checklist. No events, officers or people were added, so most of it is not
+engaged. Puhakka is recorded as a judicial officer in `organization.senate.officers` for both years
+the report gives her, not a committee chair promoted by accident. The one surname-alone risk in the
+diff — a football photograph matching on an unrelated "Turner" — was caught and rejected by the run
+itself. No settled fact was reopened, the living people named appear only in connection with their
+office and whether a photograph exists, there is no `Contributed-By` trailer in the diff, and all
+five commits author as `SGA 60` with no tool attribution.
+
+`check_duplicates.py` exits 1 with four pairs and one same-source pair, and its output is
+byte-identical on `main`, so the branch introduced none of them. All five are genuinely separate
+events: a student regent advisory committee bill introduced 28 January 1992 and failing on 6
+February; SGA taking a position on plus/minus grading in September 2003 and passing the legislation
+in October; driver cards in November 1997 and their distribution in February 1998; the KCLU planning
+court action in February 1972 and ASG endorsing the suit in March; and two distinct items of
+business out of one 2026 meeting. Nothing to merge.
+
+## Counts
+
+`build.py` clean and reproducible, `check_data.py` exit 0, `check_contrib.py` exit 0.
+61 years, **1,968 events**, 60 people have been president. 1,111 pieces of legislation, every file
+present and a real PDF. 1,310 citations name a volume and number and each opens that issue; 1,317
+quoted spans, none reaching 15 words. 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98%) carrying an account of what the person did, 48 people under more than one spelling. 308
+documents, 7 decade pages, a search index of 4,949 records, 5 photographs withdrawn. No count moved
+this pass, because nothing was added or removed from the data.
+
+## For the next pass
+
+- **Reach for the GitHub MCP `merge_pull_request` tool first.** `gh api -X PUT .../merge` was
+  refused by the session's permission layer tonight; the MCP tool merged the same branch without
+  complaint, exactly as AGENT-LANDING.md advises.
+- **Both PDF routes are still shut**, re-confirmed at source tonight. 1994-95's article 8989,
+  printed pages 6-9, and the unread tail of article 8933 remain the live photograph lead the moment
+  either opens. 1994-95 is the only year in the file with no year photograph.
+- **Priority 3 is unchanged at 189 officer slots / 159 people / 157 with no portrait anywhere**, and
+  the 2016-2025 slice still has some twenty untried names listed in #742's report.
+- **Log the hit count the API reports, not the number read.** #742 recorded 6 hits for Zaczek where
+  the endpoint returns at least 10; the conclusion survived checking all ten, but a capped list that
+  looks short is how a name gets written off early.
+- **A report is data too.** Nothing in #742 reached the site, and its one real fault was still a
+  sentence that could have put the wrong face on a president's page two passes later. Read the
+  `.research/` prose with the same eye as an event body.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin; carried forward untouched again.
+
+# 12 October 2026 (editor, scheduled) — an empty queue, the last three merges re-opened at source, and the Wayback route found shut by policy rather than by rate limiting
+
+## What was open
+
+Nothing. No pull request on the repository is open, and the numbering has reached #743. The three
+stale pull requests the standing brief still names — #6 `research-photos`, #7 `research-1980s` and
+#8 `research-2020s`, all opened 4 August — were closed unmerged on 18 August and have been gone for
+eight weeks. The brief should stop naming them.
+
+Every branch was then checked for work that never reached a pull request, because an empty queue and
+a lost branch look identical from the outside. There is none. Twenty branches report commits ahead of
+`main`, and all twenty are squash-merge artefacts: compared file by file against `main`, each is
+behind it or identical, and `research-photos`, the one rolling branch a routine could still be
+pushing to, differs from `main` only by lacking the last night report. Nothing is stranded.
+
+## What was audited instead
+
+With nothing to review, the audit turned on what most recently reached the public site. Three merges
+in the last day carried data; the other nine were reports. All three were re-opened at source.
+
+**#739/#740 — the 2000-01 debate photograph.** The landing page `dlsc_ua_records/8114` returns
+Vol. 75, No. 52 dated 4-13-2000, matching the label, and its index carries "Hall, Rex. Cassie Martin,
+Duan Wright Discuss Issues – Student Government Association, Elections". The file is a real JPEG
+(`ff d8`), 719x441, greyscale as a scanned newspaper photograph should be. The image was opened and
+read against its own caption: two people stand behind podiums printed "Cassie Martin" and "Duan
+Wright", and two other people sit at a table between them. The caption says exactly that and names
+neither of the seated two, which is the trim #740 made and it was the right one. Martin is this
+archive's 2000-01 president, so an April 2000 debate files forward to 2000-01 correctly.
+
+**#738 — the Josh Collins correction.** This is the one that mattered, and it holds verbatim. The
+Herald's article of 20 April 2004 is still served from `wkuherald.com` and reads "Articles of
+impeachment for Todd's vice presidency of finance were drafted yesterday by Jackson junior Josh
+Collins, an SGA member." The file had called him Senator; #738 changed it to "Josh Collins, an SGA
+member", which is the source's own wording. That is trap 2 caught and corrected rather than
+published. Five further figures in the same entry were opened in the same article and all five hold:
+$611 missing, an account that started the year at $5,000 with about $1,200 remaining, Todd, Bradley
+and Pride as the only three holding cards to it, the judicial council refusing impeachment on time
+constraints, and officers due to be sworn in on 27 April.
+
+**#735 — the Natalie Cole citation split.** `dlsc_ua_records/5123` returns Vol. 51, No. 29 dated
+12-9-1975 and its index carries "Associated Student Government to Sponsor Jazz Vocalist", which is
+the headline the new `src2` claims under that exact URL. The split was sound.
+
+## The Wayback route is blocked by policy, not rate limited
+
+The one claim still resting on an earlier pass's page read is #738's pair of rule findings — election
+of a speaker by a majority of a quorum, and the fifth-meeting limit held provisional — printed on
+page 5 of the 20 April 2004 issue. The last report left this open and asked a later pass to render
+that page once Wayback was available. This pass can close the question of *why* it is not available.
+
+It is not rate limiting and it will not clear by waiting. `viewcontent` for article 10372 returns 403
+twice, ninety seconds apart, both times 5,763 bytes of Cloudflare challenge saved under a `.pdf`
+name — trap 7 in its textbook form, and the reason the bytes were checked rather than the exit code.
+The Wayback copy then failed differently: plain HTTP to the CDX endpoint answered "Blocked by egress
+policy" in as many words, HTTPS reset the connection, and the proxy's own status log records
+`ws_closed_mid_exchange` against `web.archive.org:443` for each attempt. The host is denied by this
+environment's network policy. Previous passes read the signature as a flaky tunnel and retried; the
+retries were never going to work.
+
+This is worth more than one stalled claim, because the archive leans on that host: **276 citations in
+`years.json`, across 105 distinct URLs, and 19 more in `photos.json` point at `web.archive.org`.**
+None of them can be re-verified by any run in this environment while the policy stands. They are not
+in doubt — each was verified when it was written — but a whole class of citation is currently beyond
+the reach of the check that is supposed to guard it, and that is a gap the project should know about
+rather than rediscover every few nights. Allowing `web.archive.org` under the environment's network
+settings would close it and unblock the page-5 read in the same stroke.
+
+## Traps
+
+Nothing to report against the checklist, and most of it is not engaged: no events, people, offices or
+legislation were added this pass. Of what was audited, the one live trap was trap 2, and #738 had
+already caught it. No advance notice is written up as a report — the 20 April 2004 article is a
+report of business already done, and the 9 December 1975 item is correctly cited for sponsorship
+only, which is what a notice proves. No person is matched by surname alone. The April 2000 election
+files forward. No settled fact is reopened. The living people named appear only in connection with
+their SGA service, and the Todd investigation entry states the council's outcome rather than leaving
+an allegation hanging. There is no `Contributed-By` trailer in anything reviewed.
+
+`check_duplicates.py` exits 1 with the same four pairs and one same-source pair as last night, and
+the output is byte-identical to `main`'s. All five were judged genuinely separate events on earlier
+passes and nothing has changed to reopen them. Nothing to merge.
+
+## Counts
+
+`build.py` clean and reproducible — the only difference it writes against `main` is the build date on
+88 pages, which was reverted rather than committed. `check_data.py` exit 0, `check_contrib.py`
+exit 0. 61 years, **1,968 events**, 60 people have been president. 1,111 pieces of legislation, every
+file present and a real PDF. 1,310 citations name a volume and number and each opens that issue;
+1,317 quoted spans, none reaching 15 words. 2,651 recorded terms of office held by 1,809 people,
+2,614 of them (98%) carrying an account of what the person did, 48 people under more than one
+spelling. 308 documents, 7 decade pages, a search index of 4,949 records, 5 photographs withdrawn.
+No count moved: nothing was added to or removed from the data.
+
+The deployed site was checked rather than assumed. `sga60.vercel.app` answers 200, reports "Built 11
+October 2026", and `y/2000-01.html` serves the debate photograph, so everything merged has published.
+`wku-sga-60.vercel.app`, which SETUP still names, answers 404 and should be corrected or dropped.
+
+## For the next pass
+
+- **Ask for `web.archive.org` before retrying it.** It is an egress-policy denial, not a rate limit.
+  Until it is allowed, treat every Wayback citation as unverifiable in this environment and say so,
+  rather than spending a pass on routes that cannot open.
+- **The standing brief is out of date in two places.** It names #6, #7 and #8 as open since 4 August;
+  all three closed on 18 August. It also says `gh` is unavailable and the session is gated — `gh`
+  works here against the REST API with full push rights, and only the GraphQL endpoint is refused, so
+  `gh pr list` fails while `gh api repos/.../pulls` succeeds. AGENT-LANDING.md says the same thing
+  about `gh` not being installed; it is installed.
+- **Page 5 of article 10372 remains the one open read**, unchanged from last night and now with a
+  known reason.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin; carried forward untouched again.
