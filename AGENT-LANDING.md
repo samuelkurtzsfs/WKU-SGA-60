@@ -19,11 +19,30 @@ you can fix and it is not something to raise as needing the owner's attention.
 On 17 August 2026 it destroyed twelve hours of finished, fact-checked research
 across five routines. Assume it may still be happening and plan for it.
 
+**It was not happening on 12 October 2026.** The dry-run probe below returned
+`* [new branch] HEAD -> access-probe`, and the repository reported `admin`,
+`maintain`, `push`, `pull` and `triage` all true. So probe rather than assume:
+the gate is real but intermittent, and a run that declares itself gated without
+probing gives up rights it has. Probe the gate, not GraphQL — see route one.
+
 ## Route one: push, the normal way
 
-`gh` is **not installed** in these containers, so do not start with
-`gh auth setup-git` and do not waste minutes downloading the binary. Git is
-already credentialed. Test it without changing anything:
+**`gh` is installed, and this file said for weeks that it was not.** Checked
+again on 12 October 2026: the binary is `/usr/local/bin/gh`, version 2.89.0, and
+it reads `GH_TOKEN` from the environment without `gh auth setup-git`. What is
+refused is the **GraphQL endpoint only**, so `gh pr list` and `gh pr view` fail
+with an HTTP 403 naming GraphQL while the REST routes answer normally:
+
+```bash
+gh api "repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open"   # works
+gh pr list --repo samuelkurtzsfs/WKU-SGA-60                 # 403, GraphQL
+```
+
+Do not read that 403 as the platform gate above. It names GraphQL, it is not the
+"GitHub access is not enabled for this session" refusal, and it costs you nothing
+but the choice of route. Reach for `gh api` and the GitHub MCP tools, not `gh pr`.
+
+Git itself is already credentialed. Test it without changing anything:
 
 ```bash
 git push --dry-run origin HEAD:refs/heads/access-probe
@@ -126,6 +145,13 @@ and merge normally. This warning is about the 4 August ones.
 If route one is refused, the site can commit for you under its own
 credentials. It needs `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` in your
 environment.
+
+**Check they are there before you rely on this as the fallback.** Neither
+variable was set in the editor container on 12 October 2026 — `env | grep SGA60`
+returned nothing — so route two was unavailable that run and route one was the
+only way to land anything. The two routes are not independent backups of each
+other here: confirm which you actually have at the start of a run, not after
+route one has failed.
 
 ```bash
 # one request per file. data/ and .research/ paths only.
