@@ -44785,3 +44785,153 @@ Nothing. The queue is empty after this merge.
   that does not need to be there.
 - **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
   origin, carried forward untouched.
+
+# 12 October 2026 (editor, scheduled, evening) — an empty queue, eleven live citations opened at source, and the brief's own tooling error corrected one paste short of becoming permanent
+
+## What was reviewed
+
+**No open pull requests.** `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returns an
+empty list. The three the standing brief sends each run to evaluate — #6 `research-photos`,
+#7 `research-1980s`, #8 `research-2020s` — were all closed on 18 August 2026, and the repository is
+now past #745.
+
+`research-photos`, the one live branch, is **nine commits ahead of `main` and byte-identical to it**.
+The three-dot diff shows 267 added lines across `NIGHT-REPORT.md` and `photo-run-2026-10-12-afternoon.md`,
+which is the merge base being older than `main`'s tip and nothing else: the tip-to-tip diff is empty,
+`site/` included, and both files match line for line (44,787 each). Confirmed by content, not by
+ancestry, which is the only test that works on a squash-merged branch. Nothing awaiting merge.
+
+The other fourteen `research-*` branches on origin have **no merge base** with `main` and were not
+touched. They are the 4 August orphan snapshots AGENT-LANDING.md warns about.
+
+## Spot verification, applied to live data
+
+With no diff to sample, the brief's step 3 was applied to what is already published. Eleven events
+were drawn at random (seed 1012) from the 744 citing `dlsc_ua_records` and the 581 citing
+`wkuherald.com`, and every cited page was opened. Both routes were open this run, at one request
+every three seconds. **All eleven held up.** The compound bodies were checked on both halves, not
+just the headline claim:
+
+- **1981-04-14, ASG recounts.** Herald 56:53 confirmed by `bepress_citation_title` as Vol. 56 No. 53.
+  Its index carries both halves: "Close Races Prompt Associated Student Government Recounts" and
+  "Mitchell, Cyndi. Council on Higher Education Approves Tuition Increase". The tuition clause is
+  from the same issue, as the entry says.
+- **1972-03-03, constitution.** Vol. 51 No. 41, "Congress Approves New Constitution". The entry's
+  statement that the archive does not hold the article's text, so the vote count is not established,
+  is the correct shape for an index-only hit.
+- **1972-02-17, Isaac Hayes cancelled.** Vol. 51 No. 37, "Pence, Carter. Isaac Hayes Concert
+  Cancelled" — byline confirmed. The flu and the reschedule are carried on `src2`, the 1972 Talisman.
+- **1983-02-17, free game admission.** Vol. 58 No. 42, "Morton, Jamie. Associated Student Government
+  Supports Plan for Free Admission", and separately "Support Grows for Free Game Admission". The
+  "companion piece in the same issue" is real.
+- **1974-04-08, Marshall Tucker.** Vol. 53 No. 52, "Wethington, Jay. Marshall Tucker Band Gets Down,
+  Lets Down" — printed five days *after* the concert, so a report and not a notice. The Freddie King
+  encores and the drifting crowd sit on `src2`, the 1974 Talisman.
+- **1995-04-20, Tara Higdon.** Vol. 70 No. 54, "Gagliardi, Melissa. Tara Higdon Moves Up; Voting
+  Down – Student Government Association". The body quotes that headline exactly.
+- **1967-11-02, Four Tops.** Vol. 47 No. 10 carries all three strands: "Four Tops Concert Billed
+  Here Tuesday", "Associated Student Government Sponsors Dance Friday", "Groups Need Opportunity for
+  Money-Making Events".
+- **2018-10-16, Greek defunding bill.** Bill 10-18-F, Amy Wyer's authorship, Alpha Gamma Delta, the
+  Alabama Machine, the 1914 figure and the ten-word quote all confirmed. The tally reads "narrowly
+  struck down with **16 in favor and 17 against**", so the entry's "defeated 16-17" is right.
+- **2015-09-29, Confucius Institute.** Richey, the Sept. 25 Regents decision not to revisit the
+  contract, and the thirteen-word "done deal" quote all present.
+- **2022-02-01, Debra Maggart.** Alumna, former Tennessee representative, lobbyist, the urging to get
+  involved, and all four senate nominees — Hopkins, Willet, Galloway, Brown — confirmed.
+- **2025-11-11, chief justice exemption.** Blake Graham, Stirling, Spiess, the unserved associate year
+  and the senate's exemption all confirmed.
+
+## The traps checklist, on live data
+
+**No advance notice is written up as a report.** The 1967 Four Tops entry is the test case and it
+passes: the index line is "Four Tops Concert Billed Here Tuesday", an advance notice, and the entry
+claims only that the concert was announced and booked — no crowd, no review, no takings. The 1974
+Marshall Tucker entry does carry a review, and is entitled to: its Herald citation postdates the
+concert and the crowd detail is attributed to the Talisman on a second source.
+
+**No office invented from a chairmanship or an authorship.** Amy Wyer appears in the 2018 entry as
+the bill's author and is nowhere in `leaders`. Blake Graham appears as Judicial Council chair, not as
+an officer.
+
+**Spring elections still file forward.** The April 1995 election is filed in 1994-95, where it
+happened, and Tara Higdon sits at 1995-96 as president. The entry's closing line — that the election
+closed out the 1994-95 administration — is the distinction stated correctly.
+
+**No duplicate from a changed surname.** Higdon is recorded as "Tara (Higdon) Howard", one person
+under the alias convention rather than two plates.
+
+**Nothing re-litigates a settled fact.** Checked Norfleet directly while the route was open:
+`dlsc_ua_records/2464` is Herald 57:55 and carries "Student Regent's 2-Month Term Nears End". She
+stays at 1981-82.
+
+**Nothing strays past its source on a living person.** Every detail in the four modern entries is
+SGA business reported in the cited article. No contributor commits in range; `check_contrib.py`
+passes all its refusals.
+
+`check_duplicates.py` reports the same four pairs and one same-source pair as the last four nights,
+byte-identical, as expected when no data has changed. Re-judged, not waved through, and all five
+stand as separate events for the reasons recorded on 12 October afternoon.
+
+## What was cut
+
+Nothing. There was nothing in the queue to cut, and the eleven live claims sampled all held at
+source. Two documentation errors were corrected instead.
+
+## What was corrected
+
+**The brief's own tooling instruction, one paste short of permanence.** `.research/EDITOR-BRIEF.md`
+exists to be pasted into the Routine by hand, and the brief it offered told the editor that `gh` is
+not installed. It is installed — `/usr/local/bin/gh`, version 2.89.0 — and it reads `GH_TOKEN`
+without `gh auth setup-git`. Only the **GraphQL endpoint** is refused, which is why `gh pr list`
+fails with a 403 naming GraphQL while `gh api repos/.../pulls` answers normally. Three previous
+passes flagged this in the night report; none of them fixed the paste-ready text, where it mattered
+most. Corrected now, with the probe rewritten to the two commands that actually work and a note that
+an empty PR list is the common case rather than a failure.
+
+**AGENT-LANDING.md, the same error at its source.** Its route one opened by telling every research
+run not to reach for `gh`. Corrected, with the GraphQL distinction spelled out so the 403 is not
+mistaken for the platform gate. Its gate section now also records that the gate was open this run:
+the dry-run probe returned `* [new branch] HEAD -> access-probe` and the repository reports `admin`,
+`maintain`, `push`, `pull` and `triage` all true. The gate is real but intermittent — probe it,
+do not assume it.
+
+**Route two is not a standing fallback in this container.** Neither `SGA60_SITE` nor
+`SGA60_RESEARCH_TOKEN` was set this run; `env | grep SGA60` returned nothing. Had route one been
+refused, review-only mode's drop box would have been refused too and the review would have had
+nowhere to go but the run report. AGENT-LANDING.md now says to check both at the start of a run
+rather than discovering it after a push fails.
+
+## Counts
+
+`build.py` completes cleanly, `check_data.py` exit 0, `check_contrib.py` exit 0. 61 years,
+**1,968 events**, 60 people have been president. 1,111 pieces of legislation, every file present and
+a real PDF. 1,310 citations name a volume and number and each opens that issue; 1,317 quoted spans,
+none reaching 15 words. 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%)
+carrying an account of what the person did, 48 people under more than one spelling. 308 documents,
+7 decade pages, a search index of 4,949 records, 5 photographs withdrawn. No count moved: this pass
+changed no data, only two documents about how runs land their work.
+
+## Still open
+
+Nothing in the queue.
+
+## For the next pass
+
+- **Both source routes were open this evening**, which is worth knowing because the last pass found
+  `wkuherald.com` shut. Four fetches succeeded and one returned 403, cleared by the 90-second
+  backoff. `digitalcommons.wku.edu` landing pages answered every time, but **only with the trailing
+  slash followed** — a bare `/dlsc_ua_records/2464` returns a 301, which a script that does not
+  follow redirects will read as a dead citation. Use `curl -L`.
+- **`gh pr list` will keep failing and it is not the gate.** Use
+  `gh api "repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open"`. Both briefs now say so.
+- **The stored Routine prompt is still the one thing a run cannot fix.** It still names #6, #7 and #8
+  as open since 4 August and still has the GitHub gate backwards. `.research/EDITOR-BRIEF.md` now
+  holds a corrected brief that is right on all three counts and is ready to paste in; correcting the
+  Routine from inside a run was refused on 14 September because an agent can only edit Routines it
+  created itself, and that has not changed.
+- **The 1994-95 gap's next step is unchanged**: `article=8989` printed pages 6-9, and the unread tail
+  of `article=8933`, the moment a PDF route opens. Page 5 of article 10372 also remains open.
+- **`web.archive.org` is still an egress-policy denial.** Ask for it rather than retrying it.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin, carried forward untouched.
