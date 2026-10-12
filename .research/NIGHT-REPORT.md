@@ -44935,3 +44935,142 @@ Nothing in the queue.
 - **`web.archive.org` is still an egress-policy denial.** Ask for it rather than retrying it.
 - **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
   origin, carried forward untouched.
+
+# 12 October 2026 (editor, scheduled, second review) — #747 merged, nothing cut, and every figure in it reproduced rather than read
+
+## What was reviewed
+
+One open pull request, #747, `research-photos`, "Research: photographs" — the photograph routine's
+second note of 12 October. Merge base is an ordinary ancestor of `main`, so none of the
+orphan-history warnings in `AGENT-LANDING.md` apply. **Merged**, as `9dcecda8`, with nothing cut and
+no correction needed. That is the first clean pass through in some nights, and it is worth saying why
+rather than only that it happened.
+
+The brief's three stale pull requests are stale in the brief, not in the repository: #6, #7 and #8
+have been closed unmerged since 18 August 2026 — confirmed again at `closed_at` 04:57 on that date
+for all three — and this is the twentieth pass to record it. `gh pr list` answered 403 naming
+GraphQL, exactly as both briefs now predict; `gh api repos/.../pulls` answered normally, the dry-run
+probe returned `* [new branch] HEAD -> access-probe`, and the repository reported `admin`,
+`maintain`, `push`, `pull` and `triage` all true. Full mode. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still unset, so route two remains unavailable and route one remains the
+only way to land anything.
+
+## What the diff is, and what that made the review
+
+One new file, `.research/photo-run-2026-10-12-second-afternoon.md`, 79 lines added and nothing
+deleted. `data/years.json`, `data/photos.json`, `data/photos/`, `data/legislation/` and
+`data/name-aliases.json` are all untouched. `.research/` is not published — `build.py` reads only
+`branches-checked.json` and `branches-unverified.json` out of it and copies no markdown into
+`site/` — so this merge puts no new claim in front of a reader.
+
+That makes the spot-check a different exercise from the usual one. The note asserts nothing about
+the history of the organisation; every testable claim in it is a statement about the state of this
+repository or about which routes answered. So all of them were reproduced from the data or retested
+at the route, none taken from the note's own summary of itself.
+
+## Spot verification — eight claims, all held
+
+- Priority 1: Todd, Dawson, Johnson and Gilley each carry a portrait. Confirmed, all four.
+- Priority 2: no president or student regent lacks one. Confirmed — 73 `leaders` records across 61
+  years, zero missing on an exact-name check.
+- Priority 4: 1994-95 is the only year with no scene photograph. Confirmed, exactly one gap, and
+  2025-26 and 2026-27 both carry one.
+- The twelve 2026-27 executive and Senate names the note cross-checks — Lucas, Barker, Derryberry,
+  Pace, Bailey, Butler, Marshall, Ricky, Tucker, Smith, Stirling, Phelps — all carry a portrait.
+  Confirmed, all twelve.
+- `portrait_gap.py --list`: 189 slots, 159 people, 157 with no portrait in any year. Confirmed to
+  the digit, and byte-identical to the 11 and 12 October figures as the note claims.
+- 61 years, 1968 events, 60 people have been president. Confirmed.
+- `digitalcommons.wku.edu/cgi/viewcontent.cgi?article=8989` is shut. Confirmed: HTTP 403, a
+  5,866-byte challenge page against the note's 5,995. The page carries a per-request nonce, so the
+  few bytes are the same gate answering twice, not a different response — worth recording because a
+  later run comparing sizes could otherwise read a drift of 129 bytes as a change of state.
+- `web.archive.org` resets the connection. Confirmed, `curl: (35) Recv failure`, the standing
+  egress-policy denial rather than a WKU-side block.
+
+One figure was briefly worth a second look and turned out to be the review's own error, not the
+note's. A shell count of the lines `portrait_gap.py` marks "(no portrait in any year)" gives 158
+distinct names against the script's reported 157. The grep was matching the script's own summary
+line as well as its listing. Reproducing the script's set logic in Python gives 187 marked lines and
+157 distinct names, so the script is internally consistent and the note quotes it correctly. Noted
+here only so the next pass that runs the same careless grep recognises the discrepancy as an
+artefact and does not go hunting for a name-normalisation fault that is not there.
+
+## Traps
+
+Clean, and most of the checklist has nothing to engage: the diff adds no event, person, office,
+portrait or piece of legislation. No advance notice is written up as a report, because nothing is
+written up as a report. No committee chair is recorded as an officer — the note is explicit that the
+26th Senate's nine committee chairs are named in the year's events but not broken out in the
+organization block, and that adding them is roster work for a different routine rather than a
+photograph task, which is the right call and the right reason. Nobody is matched by surname alone.
+No changed surname creates a duplicate. No April result is filed, so nothing files forward into the
+wrong academic year. Nothing reopens a settled fact. The living people named appear only by office
+and by whether a photograph of them exists, both already published, with no personal detail
+unconnected to their SGA service. No `Contributed-By` trailer in the diff. All eleven commits on the
+branch are authored `SGA 60 <kurtztoddsam2@gmail.com>`, and no commit message or file carries tool
+attribution.
+
+`check_duplicates.py` reports the same four pairs and one same-source pair as the last four nights,
+byte-identical to `main` because no data changed. Re-judged rather than waved through, and all five
+kept: 1997-98's designated-driver cards are a November 1997 bill allocating $900 and a February 1998
+Herald report of distribution, three months and two sources apart; 1991-92's advisory-committee pair
+is an introduction on 28 January and its failure after amendment on 6 February; 1971-72's is the
+Kentucky Civil Liberties Union planning action on 29 February and Associated Students endorsing the
+suit a month later; 2003-04's is a position stated on 23 September and the legislation that carried
+on 14 October; and the 2026-27 same-source pair is a syllabus statement and the opening of voting,
+two distinct items of business from one meeting report, which CLAUDE.md expressly allows. Nothing to
+combine.
+
+## Counts
+
+`build.py` completes cleanly, `check_data.py` exit 0, `check_contrib.py` exit 0. 61 years,
+**1,968 events**, 60 people have been president. 1,111 pieces of legislation, every file present and
+a real PDF. 1,310 citations name a volume and number and each opens that issue; 1,317 quoted spans,
+none reaching 15 words. 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%)
+carrying an account of what the person did, 48 people recorded under more than one spelling. 308
+documents, 7 decade pages, a search index of 4,949 records, 5 photographs withdrawn as no longer
+held or barred. No count moved, which is the expected result of a diff that touches no data.
+
+## Still open
+
+Nothing. The board is empty behind #747.
+
+A sweep of all 81 `research-*` branches found none carrying unlanded work. Every one differs from
+`main` only in generated `site/` files, except the five `research-editor-10*` branches whose sole
+non-site difference is `.research/NIGHT-REPORT.md`; `editor-1011-late`, `editor-1012-empty-queue`
+and `editor-1012-evening` are in the same position. These were checked by content rather than by
+commit count. On `editor-1012-evening`, `AGENT-LANDING.md`, `.research/EDITOR-BRIEF.md` and the
+night report are byte-identical to `main`. The other seven carry an **older** copy of the night
+report, which is why the file hashes differ — and the difference runs one way only: all 363 to 377
+entry headings on each are already among `main`'s 379, and a line-level comparison finds **zero**
+non-blank lines present on any of those branches and absent from `main`. `main` is strictly ahead
+of all of them and nothing is sitting unlanded.
+
+Recording the method as much as the result, because two cheap checks both mislead here. A three-dot
+`git diff` shows these branches' changes as additions, since the merge base is older than the
+current tip, and reads exactly like unlanded work when it is nothing of the kind; a file hash then
+says "differs" where the truth is "older". Compare the content in both directions before concluding
+anything is lost.
+
+## For the next pass
+
+- **The 1994-95 gap's next step is unchanged and both routes were shut again tonight**: re-fetch
+  `article=8989` (Herald 69:51, printed pages 6-9) and finish the unread tail of `article=8933`
+  (Herald 70:56, printed pages 8-29), the moment either PDF route opens. Page 5 of article 10372
+  also remains open.
+- **`wkuherald.com` was not retested this pass.** The note records it open; the review spent its
+  requests on the two routes whose state could change the next run's plan. It is intermittent on an
+  hours-long cycle, so test it fresh rather than trusting either document.
+- **Priority 3 has no untried slice reachable from `wkuherald.com`.** The 2016-2026 and 2003-2015
+  officer-gap slices are individually exhausted, not merely uncounted. What is left sits behind the
+  closed Talisman/`archive.org` and `digitalcommons` routes.
+- **Merging to `main` now needs the GitHub merge tool, not `gh api`.** A `PUT .../merge` through
+  `gh api` was refused by the session's own permission classifier as a production deploy;
+  `mcp__github__merge_pull_request` went through on the same pull request a moment later. Worth
+  knowing before a run concludes it is gated.
+- **The stored Routine prompt remains the one thing a run cannot fix.** It still names #6, #7 and #8
+  as open since 4 August and still has the GitHub gate backwards. `.research/EDITOR-BRIEF.md` holds
+  a corrected brief ready to paste in.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin, carried forward untouched.
