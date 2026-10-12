@@ -45219,3 +45219,343 @@ anything is lost.
   a corrected brief ready to paste in.
 - **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
   origin, carried forward untouched.
+
+# 12 October 2026 (editor, scheduled, third review) — #750 merged with nothing cut, and Vercel found to have stopped deploying this repository entirely
+
+## What was reviewed
+
+One open pull request, #750, `research-photos`, "Research: photographs" — the photograph routine's
+third note of 12 October. **Merged** as `e6fe7473`, squashed, with nothing cut and no correction
+needed. Two clean passes through in a row now.
+
+The brief's three stale pull requests are stale in the brief, not in the repository: #6, #7 and #8
+have been closed unmerged since 04:57 on 18 August 2026, confirmed again at `closed_at`, and this is
+the twenty-first pass to record it. The brief should stop naming them.
+
+Access was full. `gh pr list` answered 403 naming GraphQL exactly as both briefs predict; `gh api
+repos/.../pulls` answered normally; the dry-run probe returned `* [new branch] HEAD ->
+access-probe`. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, so route two remains
+unavailable and route one remains the only way to land anything.
+
+## The branch sweep, by content
+
+Eighty-two `research-*` branches on origin. Every one was diffed against `main` by content rather
+than by commit count, because commit count lies badly here — `research-2026-27-fall` reads 1,986
+commits ahead and differs from `main` by nothing at all. Excluding `site/`, which is regenerated at
+deploy, **all but six differ from `main` by zero files**. Five of the six
+(`research-editor-1009-night`, `-1010-morning`, `-1010-night`, `-1010-night-review`,
+`-1010-scheduled`) each add one thing: their own entry to `NIGHT-REPORT.md` from the night they ran.
+`main` already carries entries for all of those nights from the parallel runs that did land, so
+nothing is lost by leaving them. The sixth was `research-photos`, now merged. **No archive data is
+stranded on any branch.**
+
+## What the diff was, and what that made the review
+
+One new file, `.research/photo-run-2026-10-12-afternoon-third.md`, 77 lines added, nothing deleted.
+No `data/` path touched. `.research/` is published nowhere — `build.py` reads only
+`branches-checked.json` and `branches-unverified.json` out of it, and `vercel.json` excludes the
+directory from the function bundle — so the merge put no new claim in front of a reader.
+
+The note asserts nothing about the history of the organisation. Every testable claim in it is a
+statement about the state of this repository or about which routes answered, so all of them were
+reproduced from the data or retested at the route, and none was taken from the note's own account of
+itself.
+
+## Spot verification — nine claims, all held
+
+- Priorities 1, 2 and 4: Todd, Dawson, Johnson and Gilley each carry a portrait; no president or
+  student regent across 61 years lacks one; 1994-95 is the only year with no scene photograph.
+  Confirmed, all three, by exact-name check against `photos.json`.
+- The eight archive.org-reachable officer-gap names: reproduced from `portrait_gap.py --list`
+  filtered to the covered years, and the script returns exactly those eight, in those years, with
+  those offices. No ninth name, none misfiled.
+- `portrait_gap.py` totals: 189 slots, 159 people, 157 with no portrait in any year. Confirmed to
+  the digit.
+- The Bass group photograph: present as a 1977-78 `years` entry, captioned from the 1978 *Talisman*
+  p. 34 and naming four people at once, which is precisely why no face can be matched to the name.
+  Declining to crop a portrait out of it is the right call and the right reason.
+- 61 years, 1968 events, 60 people have been president. Confirmed.
+- `archive.org` open (302 to mirror, then 200); `web.archive.org` closed (`curl: (35)`, the standing
+  egress-policy reset); `cgi/viewcontent.cgi` closed (403). Three of three as the note has them.
+
+`wkuherald.com` answered **200** here where the note logged 403 an hour earlier. That is not a
+correction to the note: the note flags the host as intermittent and says so outright rather than
+claiming it settled. Finding it open confirms what it describes. The usable lesson is that host
+deserves a retry on every run and never a single probe.
+
+One apparent discrepancy was this review's own error and is recorded so the next pass does not
+repeat it. `dlsc_ua_records/8989` answers 200 and resolves to a 2015-16 Track and Field record book,
+which briefly looked like it broke the note's "article 8989 (*Herald* 69:51)". It does not.
+`viewcontent.cgi?article=` and the `/dlsc_ua_records/NNNN/` landing path are different numbering
+spaces on Digital Commons, and the 8989 to *Herald* 69:51 identification was made from a pass that
+actually opened the file. **The landing page is not a cheap substitute for the article id**, and a
+future pass that treats it as one will manufacture a contradiction out of nothing.
+
+## Traps
+
+Clean, and most of the checklist has nothing to engage, because the diff adds no event, person,
+office, portrait, citation or piece of legislation. No advance notice written up as a report. No
+committee chair recorded as an officer and no bill author as a member. Nobody matched by surname
+alone. No changed surname creating a duplicate. No April result filed, so nothing files forward into
+the wrong academic year. Nothing reopens a settled fact. The eight living people named appear only
+by office and by whether a photograph of them exists, both already published, with no personal
+detail unconnected to their SGA service. No `Contributed-By` trailer. Every commit authored
+`SGA 60 <kurtztoddsam2@gmail.com>`, and no commit message or file carries tool attribution.
+
+`build.py` clean; `check_data.py`, `check_contrib.py` and `check_duplicates.py` all exit 0.
+`check_duplicates.py` reports the same four pairs and one same-source pair as the last several
+nights, byte-identical to `main` because no data changed. Re-judged rather than waved through, and
+all five are genuinely separate events: the 1997-98 designated-driver trio is a bill passing on
+4 November, a *Herald* report nine days later and a distribution announcement the following
+February, on three sources; the 1991-92 pair is a bill introduced on 28 January and the same bill
+failing after amendment on 6 February; the 1971-72 pair is the KCLU planning action in February and
+Associated Students endorsing it in March; the 2003-04 pair is a position taken in September and
+legislation passed in October; the 2026-27 same-source pair is two distinct items of business
+reported in one article. Nothing to combine.
+
+## The finding of this pass: Vercel has stopped deploying
+
+The branch was 5 commits behind `main`, so `origin/main` was merged in before evaluation
+(`d4fb3fa8`, authored `SGA 60`) and the validators were run on the merged tree.
+
+The original head `5f945d3e` carried `Vercel=failure` — "Deployment has failed", no further detail.
+That failure was established as not this pull request's rather than assumed: the repository's own
+`build` check passed on it; `main` is green on Vercel at the merge base and at every commit since;
+the preview for `213e166f` ninety minutes earlier succeeded on the same tree shape; `.research/*.md`
+is read by neither `build.py` nor the function bundle; and the local build of the merged tree was
+clean. Every Vercel failure in this report's history has been deployment rate limiting rather than a
+build error.
+
+What came next is the part worth recording. **Since the base merge was pushed, Vercel has created no
+deployment at all** — not a failed one, none. The `build` check went green on the new head, GitHub
+reported the pull request `clean`, the merge to `main` went through, and `main`'s head `e6fe7473`
+likewise has **no production deployment and no commit status**. The last deployment of any kind on
+this repository is the failed preview of 14:04 UTC; the last successful production deployment is
+`cda0d988` at 12:33.
+
+So the live site is currently serving `cda0d988` and is behind `main` by two commits. This is the
+condition the 23 August entry describes, in its more complete form: not a refusal with a message,
+but an integration that has gone quiet. Nothing wrong is stranded by it — both commits waiting are
+reviewed, and one of them publishes nothing to a reader in any case — and it was not a reason to
+hold a reviewed note. But a quiet `main` must not be read as a published one.
+
+## For the next pass
+
+- **Check whether Vercel has resumed before assuming a merge published.** Compare the newest entry
+  in `repos/.../deployments` against `main`'s head. If the gap is still open, say so plainly and
+  keep merging anyway; the backlog drains itself when the integration recovers, and holding reviewed
+  work helps nobody.
+- The brief's #6, #7 and #8 have been closed since 18 August. Twenty-one passes have now said so.
+- **`archive.org` and `web.archive.org` are different gates** and must be probed separately — this
+  pass confirmed the first open and the second shut at the same moment, as the note warned.
+- The eight reachable Talisman names are closed, not merely unchecked, across five passes now
+  (13 September, 7, 9, 10 and 12 October). A future run should not re-spend time on them without a
+  new source.
+- 1994-95's next step is unchanged: `cgi/viewcontent.cgi` against article 8989, the moment that
+  route opens. No *Talisman* was published for that year, so `archive.org` cannot help.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin, carried forward untouched.
+
+# 12 October 2026 (editor, scheduled, fourth review) — an empty queue, two overclaimed legislation entries cut, and Vercel found to have resumed
+
+## What was reviewed
+
+No open pull requests. `gh api repos/.../pulls?state=open` returned `[]`, confirmed against a
+second listing of all states: the newest ten are #742 to #751, every one closed, the last of them
+merged at 15:36 UTC. The brief's #6, #7 and #8 have been closed since 18 August 2026; this is the
+twenty-second pass to record it.
+
+Nothing was stranded outside a pull request either. `research-photos` reads two commits ahead of
+`main` and is the only research branch with a merge base, but the two-dot diff against `main`'s tip
+is a single deletion — the branch simply lacks the night report. Its content landed with #750 as the
+squash commit `e6fe7473`, and `.research/photo-run-2026-10-12-afternoon-third.md` is on `main`. The
+other `research-*` branches are the 4 August orphan histories AGENT-LANDING.md warns about: no merge
+base, and merging one would delete the validators and the contributor layer. Left alone.
+
+Route one was the route. `git push --dry-run` offered `* [new branch]`, and the repository reports
+`admin`, `maintain`, `push`, `pull`, `triage` all true. The drop box was not available: `env` holds
+neither `SGA60_SITE` nor `SGA60_RESEARCH_TOKEN`, as on 12 October's earlier passes. The `gh` 403
+naming GraphQL appeared as documented and cost nothing; `gh api` answered throughout.
+
+## Vercel has resumed, and the gap the last pass left open is closed
+
+The third review ended with the integration gone quiet: `main`'s head `e6fe7473` had no production
+deployment and no commit status, and the live site was serving `cda0d988`, two commits behind. That
+has recovered on its own, as that pass predicted the backlog would. Production deployment
+`7018443491` was created at 16:20:44 UTC for `41db85df`, which is `main`'s head, and its status
+reads `success`. `e6fe7473` has a production deployment too, at 16:11:49. All three of `41db85df`,
+`e6fe7473` and `cda0d988` now carry `Vercel:success`. Nothing was lost by merging through the quiet
+window, which is the right lesson to keep: do not hold reviewed work for a silent integration.
+
+## Spot verification — fourteen claims, thirteen opened, two cut
+
+With no diff to sample, the sample was drawn from what is already live: a seeded random draw of two
+events per decade, fourteen in all, every one with a cited URL. Eleven held exactly. One could not
+be reached. Two were overclaimed and are cut below.
+
+Verified against `herald-index-full.json`, each matching its cited volume, number and date:
+Bruce Tucker's profile of Paul Gerard as student regent and the constitution-revision committee
+(48:19, 27 Feb 1969); the book exchange (52:28, 8 Dec 1972); "Re-Evaluation: Survey of Courses is
+Postponed Till Fall" (50:52, 27 Apr 1971); "Bill Schilling Out After Residence Hall Association
+Denies Leave" with "Associated Student Government to Get Tough on Absenteeism" in the same issue
+(63:18, 27 Oct 1987); and Nikita Stewart's "Altered Bill Fails in Associated Student Government"
+(67:36, 6 Feb 1992).
+
+Opened at source: the Gerard issue's landing page, which prints Vol. 48, No. 19, publication date
+2-27-1969, and both headlines — an independent reconfirmation of Gerard in the regent seat, which is
+the positive ground on which Reed Morgan is ruled out. The 1966 constitution's TopSCHOLAR record,
+described as the text "as printed in the College Heights Herald April 7, 1966"; the entry's "six
+days after" Kelly Thompson's approval of 1 April and "nineteen days before" the ratification of
+26 April are both arithmetic against settled dates. The 2018 election report, which carries Mayer at
+35 percent, Hounshell 33, Mujkanovic 32, 2,378 voting, the 16 April disqualification over a Pepe the
+Frog chalk meme and the Judicial Council's reversal to a suspension — every figure as filed. The
+2012 transgender resolution, "18-to-5 in favor, with four senators abstaining" at the final meeting
+of the year, gender-neutral housing and restrooms in all university buildings, non-members attending
+to watch, and a debate covering safety, cost and isolation. The 2020 signage bill, $2,334.45 and
+"28 'yes' votes and 2 'no'", Norvell's three appointments to the faculty senate, Edmonds on his
+quarantine and the provost search.
+
+The mirrored PDFs were read rather than trusted, which is the strongest check available and costs
+TopSCHOLAR nothing: Resolution 82-1, "Introduced 09/21/82", status PASSED, calling on Public Safety
+to carry injured or temporarily handicapped students, by Connie Hoffmann — the first numbered
+resolution of Margaret Ragan's session, as filed; and Resolution 95-3-F, "Pave Creason Lot",
+17 October 1995, "the Creason Lot behind Egypt be paved".
+
+**Not reached:** the 2005 Provide-A-Ride entry, cited to a Wayback capture. `web.archive.org` reset
+the connection, exactly as the last pass warned — `archive.org` and `web.archive.org` are separate
+gates. The entry is left as it stands; a miss is not evidence against a claim.
+
+## What was cut, and why
+
+Both cuts are the same fault: a past-tense account of an event written out of the legislation that
+only scheduled it. This is the advance-notice trap wearing legislation's clothes, and it is worth
+naming as its own shape, because a bill is a booking as surely as "Mini-Concert Set Thursday" is.
+
+**2000-01, Bill 01-7-S, the Spring Bash.** The entry read that SGA "provided food, entertainment
+and information" at a Spring Bash on the DUC south lawn on 29 March 2001. The bill is prospective in
+every line: "Be it affirmed that we ... sponsor a Spring Bash on March 29, 2001", and "SGA would be
+providing food, entertainment, and information". It is the only source in the archive for the party;
+2000-01 holds no other mention of it, and the Herald index carries none. Rescued rather than
+deleted: the entry now says what the bill committed SGA to, keeps the hour, the lawn, the date and
+the timing before the elections of 10 and 11 April, and gains the passage on second reading of
+13 March 2001 that the file's own stamp records. Its title no longer asserts the party happened.
+Authorship checked and correct — the bill reads "AUTHORS: Cassie Martin", and Martin was the
+president, so this is not a bill's author recorded as a member.
+
+**1998-99, Bill 99-4-S, the Excellence in Teaching Award.** The entry had students nominating
+professors and the awards "presented at the 11 March reception". The bill reads that a student "will
+nominate a professor by filling out a Nomination Form" due 1 March 1999 at 4 p.m., and that the
+award "shall be presented on March 11 at a reception at the faculty house". Both are now conditional.
+The entry also now credits Bill 98-5-S with having created the award, which the bill states in its
+own first whereas. No corroboration exists for the reception: no event in 1998-99 or 1999-00 reports
+it, and the Herald index holds nothing on the award in March or April 1999.
+
+A third candidate was examined and left alone. Bill 94-9-F's entry says it "set the pattern for the
+forum programme SGA ran for the next decade", which no single bill can prove — but the archive
+carries sourced forum events in 1995-96, 1996-97, 1998-99, 2003-04, 2004-05, 2005-06, 2009-10,
+2011-12 and 2013-14, each with its own citation. That is a synthesis resting on the record, which is
+what a profile or a closing sentence is allowed to be, not an unsourced fact.
+
+## Traps
+
+A scan of all 1968 events for the shape of the two cuts — an event sourced only to legislation whose
+body asserts the authorized act was carried out — returned 24 candidates, 22 of them false. The
+archive's house phrasing is "asked for X to be installed", "requested that", "proposed", and it holds
+that line decade after decade: the book drop, the change machines, the stall doors, the window chains,
+the Sunday matinee, the crosswalk, the track, the handrail and the phone-book listing are all
+correctly prospective. The discipline is real; the two that slipped are the exception.
+
+No event in the archive lacks a `src`. No advance notice written up as a report beyond the two cut.
+Nobody matched by surname alone — and the 2024 results article names a **Savanna Kurtz** as sophomore
+senator beside Sam Kurtz as president, which is precisely the collision that rule exists for;
+`name-aliases.json` holds no Kurtz entry and the two names stay separate pages. The 1987-88 pair is
+the same discipline working: "A member loses his seat" of 22 October is Nick Hicks, named in the
+headline, and Schilling's own loss is the 27 October report, kept distinct rather than merged.
+
+Settled facts re-checked against section 7 and all intact: Norfleet at 1981-82 against a plaque
+reading 1982; Zielke at 1969-70 against a plaque reading 1970-71; Lyne alone at 1970-71; Payne at
+1981-82 with Ragan at 1982-83; Menser president 1967-68 with his note recording that he assumed the
+board seat in April 1968 as its first student regent; Gerard holding the regent seat across 1968-69
+and 1969-70; Reed Morgan held at `role: unresolved` with the full positive case in his note and no
+claim on either office. Nothing reopens any of them.
+
+Living people: the fourteen-claim sample and the two cuts touch recent students. The 1987-88
+Schilling thread is the one conduct matter in it, and it is handled as the rule requires — the
+impeachment process of 19 November is recorded, and so is its outcome, the request dropped on
+3 December. Nothing in the cuts adds a personal detail unconnected to SGA service. No
+`Contributed-By` trailer in anything reviewed. Both commits authored `SGA 60`, and no file or message
+carries tool attribution.
+
+`build.py` clean. `check_data.py`, `check_contrib.py` and `check_duplicates.py` all exit 0.
+`check_duplicates.py` reports the same four pairs and one same-source pair as the preceding nights,
+re-judged and all genuinely separate: the 1997-98 designated-driver trio spans a bill, a report nine
+days later and a distribution the following February; the 1991-92 pair is a bill introduced on
+28 January and the same bill failing after amendment on 6 February; the 1971-72 pair is the KCLU
+planning action and Associated Students endorsing the suit a month later; the 2003-04 pair is a
+position in September and legislation in October; the 2026-27 same-source pair is two items of
+business in one article. Nothing to combine.
+
+## Counts
+
+61 years, 1968 events, 60 people have been president. 2,651 recorded terms of office held by 1,809
+people, 2,614 of them (98%) carrying an account of what the person did; 48 people recorded under more
+than one spelling or name. 1,111 pieces of legislation, every file present and a real PDF. 1,310
+citations naming a volume and number, each opening that issue. 1,317 quoted spans, none reaching 15
+words. 308 documents. Search index 4,949 records. Five photographs withdrawn at build as no longer
+held or barred by the archive.
+
+## An inconsistency worth a decision, not a silent fix
+
+Election events are filed in two different places depending on the decade, and the difference is not
+a factual error in either. The older entries put the April result in the year the winner *serves*:
+Haynes's May 1966 election sits in 1966-67, Straeffer's of 2 May 1968 in 1968-69, and the
+Martin-Bedo win of 14 April 2000 in 2000-01. The recent entries put it in the year it was *held*:
+the Kurtz ticket's win of 19 April 2023 sits in 2022-23, the re-election of 17 April 2024 in 2023-24,
+and Robinson's of 15 April 2025 in 2024-25. Both conventions keep the leader in the right year, so
+the trap the brief names is avoided throughout — nobody is made president of the year they were
+elected in. But a reader comparing two decades finds the election in different places.
+
+Not fixed here. Moving events across years in bulk is a large change to live content on an editor's
+own initiative, and the choice between the two is the owner's. Flagged for a decision.
+
+## Still open
+
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged**, and
+  remain on origin. Carried forward untouched for the eighth pass.
+- 1994-95 still needs `cgi/viewcontent.cgi` against article 8989 the moment that route opens. No
+  *Talisman* was published for that year, so `archive.org` cannot substitute.
+- The 2005 Provide-A-Ride citation is unverified for want of `web.archive.org`, not for any doubt.
+
+## For the next pass
+
+- **The legislation-as-notice shape is worth scanning for by hand**, not by regex. The scan that
+  found these two threw 22 false positives out of 24, because correct prospective phrasing uses the
+  same verbs. What distinguishes a fault is tense on the *outcome*, not the verb.
+- Vercel is deploying again; check the newest deployment against `main`'s head rather than assuming
+  either state.
+- `web.archive.org` is still shut while `archive.org` is open. Probe them separately.
+- The eight reachable Talisman names stay closed across six passes now. Do not re-spend on them
+  without a new source.
+
+## Addendum, same pass: how long the deployment lag actually is
+
+Recorded because two passes in a row have now had to decide whether a missing deployment means a
+quiet integration or an ordinary wait, and the answer turns on a number neither had.
+
+This pass's own merge is the measurement. `c116272b` went onto `main` and for the following ten
+minutes carried no production deployment and no commit status at all — zero statuses, not a pending
+one — while the newest deployment of any kind stayed `41db85df` from 16:20:44 UTC. On the evidence
+of the third review, that is not yet a fault: `e6fe7473` merged at about 15:32 and its production
+deployment was not created until 16:11:49, a lag near forty minutes. A ten-minute silence is inside
+the normal envelope and proves nothing in either direction.
+
+So the test for a stalled integration is not "is there a deployment for `main`'s head" but "has an
+hour passed with none, while `main` has moved". Until that hour is up, a missing deployment is a
+queue, not a failure. The live site serves the last successful production deployment in the
+meantime, which means the site can legitimately sit a commit or two behind `main` for upwards of
+half an hour after any merge, and a reader checking the site against the repository inside that
+window will find a difference that is not a bug.
+
+Nothing in this pass waited on it, which remains the right call: holding reviewed work for an
+integration's queue helps nobody, and both of this pass's corrections are cuts of overclaimed text,
+so the longer they sit unpublished the longer the overclaim is the version being read.
