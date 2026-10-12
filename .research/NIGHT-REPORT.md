@@ -45355,3 +45355,184 @@ hold a reviewed note. But a quiet `main` must not be read as a published one.
   route opens. No *Talisman* was published for that year, so `archive.org` cannot help.
 - **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
   origin, carried forward untouched.
+
+# 12 October 2026 (editor, scheduled, fourth review) — an empty queue, two overclaimed legislation entries cut, and Vercel found to have resumed
+
+## What was reviewed
+
+No open pull requests. `gh api repos/.../pulls?state=open` returned `[]`, confirmed against a
+second listing of all states: the newest ten are #742 to #751, every one closed, the last of them
+merged at 15:36 UTC. The brief's #6, #7 and #8 have been closed since 18 August 2026; this is the
+twenty-second pass to record it.
+
+Nothing was stranded outside a pull request either. `research-photos` reads two commits ahead of
+`main` and is the only research branch with a merge base, but the two-dot diff against `main`'s tip
+is a single deletion — the branch simply lacks the night report. Its content landed with #750 as the
+squash commit `e6fe7473`, and `.research/photo-run-2026-10-12-afternoon-third.md` is on `main`. The
+other `research-*` branches are the 4 August orphan histories AGENT-LANDING.md warns about: no merge
+base, and merging one would delete the validators and the contributor layer. Left alone.
+
+Route one was the route. `git push --dry-run` offered `* [new branch]`, and the repository reports
+`admin`, `maintain`, `push`, `pull`, `triage` all true. The drop box was not available: `env` holds
+neither `SGA60_SITE` nor `SGA60_RESEARCH_TOKEN`, as on 12 October's earlier passes. The `gh` 403
+naming GraphQL appeared as documented and cost nothing; `gh api` answered throughout.
+
+## Vercel has resumed, and the gap the last pass left open is closed
+
+The third review ended with the integration gone quiet: `main`'s head `e6fe7473` had no production
+deployment and no commit status, and the live site was serving `cda0d988`, two commits behind. That
+has recovered on its own, as that pass predicted the backlog would. Production deployment
+`7018443491` was created at 16:20:44 UTC for `41db85df`, which is `main`'s head, and its status
+reads `success`. `e6fe7473` has a production deployment too, at 16:11:49. All three of `41db85df`,
+`e6fe7473` and `cda0d988` now carry `Vercel:success`. Nothing was lost by merging through the quiet
+window, which is the right lesson to keep: do not hold reviewed work for a silent integration.
+
+## Spot verification — fourteen claims, thirteen opened, two cut
+
+With no diff to sample, the sample was drawn from what is already live: a seeded random draw of two
+events per decade, fourteen in all, every one with a cited URL. Eleven held exactly. One could not
+be reached. Two were overclaimed and are cut below.
+
+Verified against `herald-index-full.json`, each matching its cited volume, number and date:
+Bruce Tucker's profile of Paul Gerard as student regent and the constitution-revision committee
+(48:19, 27 Feb 1969); the book exchange (52:28, 8 Dec 1972); "Re-Evaluation: Survey of Courses is
+Postponed Till Fall" (50:52, 27 Apr 1971); "Bill Schilling Out After Residence Hall Association
+Denies Leave" with "Associated Student Government to Get Tough on Absenteeism" in the same issue
+(63:18, 27 Oct 1987); and Nikita Stewart's "Altered Bill Fails in Associated Student Government"
+(67:36, 6 Feb 1992).
+
+Opened at source: the Gerard issue's landing page, which prints Vol. 48, No. 19, publication date
+2-27-1969, and both headlines — an independent reconfirmation of Gerard in the regent seat, which is
+the positive ground on which Reed Morgan is ruled out. The 1966 constitution's TopSCHOLAR record,
+described as the text "as printed in the College Heights Herald April 7, 1966"; the entry's "six
+days after" Kelly Thompson's approval of 1 April and "nineteen days before" the ratification of
+26 April are both arithmetic against settled dates. The 2018 election report, which carries Mayer at
+35 percent, Hounshell 33, Mujkanovic 32, 2,378 voting, the 16 April disqualification over a Pepe the
+Frog chalk meme and the Judicial Council's reversal to a suspension — every figure as filed. The
+2012 transgender resolution, "18-to-5 in favor, with four senators abstaining" at the final meeting
+of the year, gender-neutral housing and restrooms in all university buildings, non-members attending
+to watch, and a debate covering safety, cost and isolation. The 2020 signage bill, $2,334.45 and
+"28 'yes' votes and 2 'no'", Norvell's three appointments to the faculty senate, Edmonds on his
+quarantine and the provost search.
+
+The mirrored PDFs were read rather than trusted, which is the strongest check available and costs
+TopSCHOLAR nothing: Resolution 82-1, "Introduced 09/21/82", status PASSED, calling on Public Safety
+to carry injured or temporarily handicapped students, by Connie Hoffmann — the first numbered
+resolution of Margaret Ragan's session, as filed; and Resolution 95-3-F, "Pave Creason Lot",
+17 October 1995, "the Creason Lot behind Egypt be paved".
+
+**Not reached:** the 2005 Provide-A-Ride entry, cited to a Wayback capture. `web.archive.org` reset
+the connection, exactly as the last pass warned — `archive.org` and `web.archive.org` are separate
+gates. The entry is left as it stands; a miss is not evidence against a claim.
+
+## What was cut, and why
+
+Both cuts are the same fault: a past-tense account of an event written out of the legislation that
+only scheduled it. This is the advance-notice trap wearing legislation's clothes, and it is worth
+naming as its own shape, because a bill is a booking as surely as "Mini-Concert Set Thursday" is.
+
+**2000-01, Bill 01-7-S, the Spring Bash.** The entry read that SGA "provided food, entertainment
+and information" at a Spring Bash on the DUC south lawn on 29 March 2001. The bill is prospective in
+every line: "Be it affirmed that we ... sponsor a Spring Bash on March 29, 2001", and "SGA would be
+providing food, entertainment, and information". It is the only source in the archive for the party;
+2000-01 holds no other mention of it, and the Herald index carries none. Rescued rather than
+deleted: the entry now says what the bill committed SGA to, keeps the hour, the lawn, the date and
+the timing before the elections of 10 and 11 April, and gains the passage on second reading of
+13 March 2001 that the file's own stamp records. Its title no longer asserts the party happened.
+Authorship checked and correct — the bill reads "AUTHORS: Cassie Martin", and Martin was the
+president, so this is not a bill's author recorded as a member.
+
+**1998-99, Bill 99-4-S, the Excellence in Teaching Award.** The entry had students nominating
+professors and the awards "presented at the 11 March reception". The bill reads that a student "will
+nominate a professor by filling out a Nomination Form" due 1 March 1999 at 4 p.m., and that the
+award "shall be presented on March 11 at a reception at the faculty house". Both are now conditional.
+The entry also now credits Bill 98-5-S with having created the award, which the bill states in its
+own first whereas. No corroboration exists for the reception: no event in 1998-99 or 1999-00 reports
+it, and the Herald index holds nothing on the award in March or April 1999.
+
+A third candidate was examined and left alone. Bill 94-9-F's entry says it "set the pattern for the
+forum programme SGA ran for the next decade", which no single bill can prove — but the archive
+carries sourced forum events in 1995-96, 1996-97, 1998-99, 2003-04, 2004-05, 2005-06, 2009-10,
+2011-12 and 2013-14, each with its own citation. That is a synthesis resting on the record, which is
+what a profile or a closing sentence is allowed to be, not an unsourced fact.
+
+## Traps
+
+A scan of all 1968 events for the shape of the two cuts — an event sourced only to legislation whose
+body asserts the authorized act was carried out — returned 24 candidates, 22 of them false. The
+archive's house phrasing is "asked for X to be installed", "requested that", "proposed", and it holds
+that line decade after decade: the book drop, the change machines, the stall doors, the window chains,
+the Sunday matinee, the crosswalk, the track, the handrail and the phone-book listing are all
+correctly prospective. The discipline is real; the two that slipped are the exception.
+
+No event in the archive lacks a `src`. No advance notice written up as a report beyond the two cut.
+Nobody matched by surname alone — and the 2024 results article names a **Savanna Kurtz** as sophomore
+senator beside Sam Kurtz as president, which is precisely the collision that rule exists for;
+`name-aliases.json` holds no Kurtz entry and the two names stay separate pages. The 1987-88 pair is
+the same discipline working: "A member loses his seat" of 22 October is Nick Hicks, named in the
+headline, and Schilling's own loss is the 27 October report, kept distinct rather than merged.
+
+Settled facts re-checked against section 7 and all intact: Norfleet at 1981-82 against a plaque
+reading 1982; Zielke at 1969-70 against a plaque reading 1970-71; Lyne alone at 1970-71; Payne at
+1981-82 with Ragan at 1982-83; Menser president 1967-68 with his note recording that he assumed the
+board seat in April 1968 as its first student regent; Gerard holding the regent seat across 1968-69
+and 1969-70; Reed Morgan held at `role: unresolved` with the full positive case in his note and no
+claim on either office. Nothing reopens any of them.
+
+Living people: the fourteen-claim sample and the two cuts touch recent students. The 1987-88
+Schilling thread is the one conduct matter in it, and it is handled as the rule requires — the
+impeachment process of 19 November is recorded, and so is its outcome, the request dropped on
+3 December. Nothing in the cuts adds a personal detail unconnected to SGA service. No
+`Contributed-By` trailer in anything reviewed. Both commits authored `SGA 60`, and no file or message
+carries tool attribution.
+
+`build.py` clean. `check_data.py`, `check_contrib.py` and `check_duplicates.py` all exit 0.
+`check_duplicates.py` reports the same four pairs and one same-source pair as the preceding nights,
+re-judged and all genuinely separate: the 1997-98 designated-driver trio spans a bill, a report nine
+days later and a distribution the following February; the 1991-92 pair is a bill introduced on
+28 January and the same bill failing after amendment on 6 February; the 1971-72 pair is the KCLU
+planning action and Associated Students endorsing the suit a month later; the 2003-04 pair is a
+position in September and legislation in October; the 2026-27 same-source pair is two items of
+business in one article. Nothing to combine.
+
+## Counts
+
+61 years, 1968 events, 60 people have been president. 2,651 recorded terms of office held by 1,809
+people, 2,614 of them (98%) carrying an account of what the person did; 48 people recorded under more
+than one spelling or name. 1,111 pieces of legislation, every file present and a real PDF. 1,310
+citations naming a volume and number, each opening that issue. 1,317 quoted spans, none reaching 15
+words. 308 documents. Search index 4,949 records. Five photographs withdrawn at build as no longer
+held or barred by the archive.
+
+## An inconsistency worth a decision, not a silent fix
+
+Election events are filed in two different places depending on the decade, and the difference is not
+a factual error in either. The older entries put the April result in the year the winner *serves*:
+Haynes's May 1966 election sits in 1966-67, Straeffer's of 2 May 1968 in 1968-69, and the
+Martin-Bedo win of 14 April 2000 in 2000-01. The recent entries put it in the year it was *held*:
+the Kurtz ticket's win of 19 April 2023 sits in 2022-23, the re-election of 17 April 2024 in 2023-24,
+and Robinson's of 15 April 2025 in 2024-25. Both conventions keep the leader in the right year, so
+the trap the brief names is avoided throughout — nobody is made president of the year they were
+elected in. But a reader comparing two decades finds the election in different places.
+
+Not fixed here. Moving events across years in bulk is a large change to live content on an editor's
+own initiative, and the choice between the two is the owner's. Flagged for a decision.
+
+## Still open
+
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged**, and
+  remain on origin. Carried forward untouched for the eighth pass.
+- 1994-95 still needs `cgi/viewcontent.cgi` against article 8989 the moment that route opens. No
+  *Talisman* was published for that year, so `archive.org` cannot substitute.
+- The 2005 Provide-A-Ride citation is unverified for want of `web.archive.org`, not for any doubt.
+
+## For the next pass
+
+- **The legislation-as-notice shape is worth scanning for by hand**, not by regex. The scan that
+  found these two threw 22 false positives out of 24, because correct prospective phrasing uses the
+  same verbs. What distinguishes a fault is tense on the *outcome*, not the verb.
+- Vercel is deploying again; check the newest deployment against `main`'s head rather than assuming
+  either state.
+- `web.archive.org` is still shut while `archive.org` is open. Probe them separately.
+- The eight reachable Talisman names stay closed across six passes now. Do not re-spend on them
+  without a new source.
