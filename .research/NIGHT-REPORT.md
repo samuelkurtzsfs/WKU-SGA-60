@@ -45559,3 +45559,70 @@ window will find a difference that is not a bug.
 Nothing in this pass waited on it, which remains the right call: holding reviewed work for an
 integration's queue helps nobody, and both of this pass's corrections are cuts of overclaimed text,
 so the longer they sit unpublished the longer the overclaim is the version being read.
+
+# 12 October 2026, late editor pass — one photograph PR reviewed and merged
+
+One pull request was open: **#754, the rolling photograph run**, reopened after #6 closed unmerged.
+The three stale 4 August branches named in this pass's standing brief — #6 photographs, #7 the
+1980s, #8 the 2020s — are all **closed already**, by earlier passes, so there was nothing to
+rescue or close this time. Push access was live: the dry-run probe returned
+`* [new branch] HEAD -> access-probe` and the REST routes answered throughout. Only GraphQL is
+refused, which is the ordinary state of these containers and not the platform gate. Neither
+`SGA60_SITE` nor `SGA60_RESEARCH_TOKEN` was set, so the drop box was not available as a fallback;
+route one was the only way to land anything, and it worked.
+
+#754's diff was a single entry appended to `data/photo-finds/_archive-gaps.json` — a research log
+the build reads only for `_do-not-use.json`, so nothing in it reaches the public site. It made no
+historical claim at all: no event, leader, portrait or photograph was added or changed. That makes
+the traps checklist short, and it was genuinely short rather than waved through. No events, so no
+advance notice written up as a report and no April result filed to the wrong academic year. No
+officer or member records, so no committee chair promoted to officer and no surname-alone match.
+No person added or merged; the three variant-form names in the entry are name-form notes, not
+merges. Nothing touches a settled fact. Nothing about a living person beyond portrait-search
+status. Not a contributor edit.
+
+What the entry does carry is a set of countable assertions that will steer later runs, and those
+were worth checking rather than trusting. Every one was re-derived from the data or re-tested
+against the live hosts. **Ten of eleven held exactly:** 61 years and 73 `leaders[]` entries with
+none missing a portrait; all four named presidents carrying one; 1994-95 the sole year without a
+dedicated scene photograph; 174 distinct officer names missing, with 171 logged in exact form and
+precisely three (Miers, Simpson, Kappler) logged only under variant forms, which is what the run
+said and which closes the queue; the `merge_photo_finds.py` dry run at 0 to add, 1 cosmetic
+replacement, 18 refusals, 47 withdrawn, 15 duplicates; `dlsc_ua_fin_aid/620` resolving to UA1C4/10
+Student Government Association Photos with no `og:image`; `viewcontent.cgi` answering 403 behind a
+Cloudflare challenge while landing pages load over plain curl; `web.archive.org` resetting the
+connection; `wkuherald.com`'s WP-JSON answering 403 `error code: 1006`; and `archive.org` holding
+exactly those 19 Talisman volumes — 1943, 1946, 1947, 1963-65, 1971-81, 1986, 1987.
+
+**One figure was wrong and was corrected rather than cut.** The officer queue's row count read
+"293 year-rows" and is **215** under the entry's own stated method: 30 executive rows and 185
+senate-officer rows missing a portrait. Including committee chairs it would be 238, and no
+combination of the organization fields produces 293. The distinct-name count of 174 — the figure
+the queue actually turns on — was right and stands, so the entry's conclusion was never in doubt;
+only the parenthetical was. The correction went onto the branch with the re-derivation recorded
+beside it, so a later run can see the number was checked rather than guessed at a second time.
+
+Gates on the corrected branch: `build.py` clean, `check_data.py` 0, `check_contrib.py` 0. The
+repo's own `build` check went green on the head commit before the merge rather than after it.
+`check_duplicates.py` exits 1 by design as a reporter; its output was **byte-identical to the
+report on `main`**, so #754 introduced none of the pairs. All five were judged and left standing as
+genuinely separate events: a bill introduced and then failed after amendment (1991-92), the KCLU
+planning action and ASG later endorsing the suit (1971-72), SGA taking a stance and then passing
+legislation (2003-04), designated driver cards three months apart (1997-98), and two distinct items
+of business sharing one article (2026-27).
+
+Counts after the merge, from the build itself: 61 year pages, 1968 events, 60 people recorded as
+president, 2651 terms of office held by 1809 people, 2614 of those terms (98%) carrying an account
+of what the person did, 48 people under more than one spelling, 308 documents, 1111 pieces of
+legislation with every file present and a real PDF, 1310 citations naming a volume and number,
+1317 quoted spans and none reaching 15 words, and a search index of 4949 records. The build also
+withdrew 5 photographs the archive no longer holds or has barred.
+
+Nothing is left open. **The photograph queue is finished pending archive access, not failing:**
+priorities 1 and 2 are closed and stay closed unless a new leader enters `years.json`, the drop box
+in `data/photo-finds/` is drained, and every name in the officer queue has been searched at least
+once. The single remaining Priority 4 gap is 1994-95's year photograph, and the three hosts that
+could close it were all shut this pass, independently confirmed. The run's own instinct to flag
+`wkuherald.com` as uncertain rather than permanently blocked was right: it now has a second
+independent 403, but still following a burst, so the next pass should test it with one paced
+request before concluding either way.
