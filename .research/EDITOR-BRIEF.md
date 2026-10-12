@@ -19,9 +19,16 @@ What is wrong with the stored brief:
    each run the time it takes to discover that again.
 
 Below is the corrected brief, ready to paste into the Routine, with those two
-passages rewritten and three things later runs learned folded in: that `gh` is
-not installed, that `pdftotext` fails silently here, and what an empty queue run
-should actually do.
+passages rewritten and three things later runs learned folded in: how the GitHub
+access probe should actually read, that `pdftotext` fails silently here, and what
+an empty queue run should actually do.
+
+3. This file itself carried a third error until 12 October 2026, in the brief
+   below: it told the editor `gh` is not installed. `gh` **is** installed
+   (`/usr/local/bin/gh`, 2.89.0) and only the GraphQL endpoint is refused. That
+   mattered more than the other two, because this is the text meant to be pasted
+   into the Routine — the error was one paste away from becoming permanent.
+   Corrected below and in AGENT-LANDING.md, both on evidence gathered in-run.
 
 ---
 
@@ -31,11 +38,12 @@ Main auto-deploys to the live site on Vercel the moment anything merges. Treat e
 
 FIRST: read CLAUDE.md in full (the editorial law you are enforcing), then AGENT-LANDING.md, then SGA-60-AGENT-INFO.md sections 5, 6 and 7 (method, traps, settled facts). Then `git fetch origin` and list the open pull requests.
 
-BEFORE ANYTHING ELSE, find out whether you can reach GitHub at all. `gh` is NOT installed in these containers and downloading it wastes the run; AGENT-LANDING.md is right about this. Test git directly and use the GitHub MCP tools for pull requests:
+BEFORE ANYTHING ELSE, find out whether you can reach GitHub at all. `gh` IS installed (`/usr/local/bin/gh`, 2.89.0) and reads GH_TOKEN from the environment, but the GraphQL endpoint is refused, so `gh pr list` returns a 403 naming GraphQL while the REST routes answer normally. Do not mistake that 403 for the platform gate, and do not run `gh auth setup-git` — it is unnecessary. Probe with these two:
 
   git push --dry-run origin HEAD:refs/heads/access-probe
+  gh api "repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open&per_page=30" --jq '.[] | "\(.number) \(.head.ref) \(.title)"'
 
-A line reading `* [new branch] HEAD -> access-probe` means you have write access; load `mcp__github__list_pull_requests` and friends with ToolSearch. If the probe returns 403 or "GitHub access is not enabled for this session", you are behind the platform gate and YOU CANNOT MERGE THIS RUN. Do not waste the run fighting it and do not report it as something needing anyone's attention. Switch to REVIEW-ONLY MODE, described at the bottom. Otherwise carry on in full.
+A line reading `* [new branch] HEAD -> access-probe` means you have write access, and the second command lists the open PRs (an empty result means the queue is empty, which is the common case — not a failure). `gh api repos/samuelkurtzsfs/WKU-SGA-60 --jq .permissions` confirms the rights you hold. Only if these return "GitHub access is not enabled for this session" are you behind the platform gate, in which case YOU CANNOT MERGE THIS RUN. Do not waste the run fighting it and do not report it as something needing anyone's attention. Switch to REVIEW-ONLY MODE, described at the bottom. Note that REVIEW-ONLY MODE's drop box needs SGA60_SITE and SGA60_RESEARCH_TOKEN, which were absent from the editor container on 12 October 2026 — check with `env | grep SGA60` rather than assuming the fallback exists. Otherwise carry on in full.
 
 FULL MODE. For each open research PR, oldest first:
 
