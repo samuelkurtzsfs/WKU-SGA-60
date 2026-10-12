@@ -45219,3 +45219,139 @@ anything is lost.
   a corrected brief ready to paste in.
 - **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
   origin, carried forward untouched.
+
+# 12 October 2026 (editor, scheduled, third review) — #750 merged with nothing cut, and Vercel found to have stopped deploying this repository entirely
+
+## What was reviewed
+
+One open pull request, #750, `research-photos`, "Research: photographs" — the photograph routine's
+third note of 12 October. **Merged** as `e6fe7473`, squashed, with nothing cut and no correction
+needed. Two clean passes through in a row now.
+
+The brief's three stale pull requests are stale in the brief, not in the repository: #6, #7 and #8
+have been closed unmerged since 04:57 on 18 August 2026, confirmed again at `closed_at`, and this is
+the twenty-first pass to record it. The brief should stop naming them.
+
+Access was full. `gh pr list` answered 403 naming GraphQL exactly as both briefs predict; `gh api
+repos/.../pulls` answered normally; the dry-run probe returned `* [new branch] HEAD ->
+access-probe`. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, so route two remains
+unavailable and route one remains the only way to land anything.
+
+## The branch sweep, by content
+
+Eighty-two `research-*` branches on origin. Every one was diffed against `main` by content rather
+than by commit count, because commit count lies badly here — `research-2026-27-fall` reads 1,986
+commits ahead and differs from `main` by nothing at all. Excluding `site/`, which is regenerated at
+deploy, **all but six differ from `main` by zero files**. Five of the six
+(`research-editor-1009-night`, `-1010-morning`, `-1010-night`, `-1010-night-review`,
+`-1010-scheduled`) each add one thing: their own entry to `NIGHT-REPORT.md` from the night they ran.
+`main` already carries entries for all of those nights from the parallel runs that did land, so
+nothing is lost by leaving them. The sixth was `research-photos`, now merged. **No archive data is
+stranded on any branch.**
+
+## What the diff was, and what that made the review
+
+One new file, `.research/photo-run-2026-10-12-afternoon-third.md`, 77 lines added, nothing deleted.
+No `data/` path touched. `.research/` is published nowhere — `build.py` reads only
+`branches-checked.json` and `branches-unverified.json` out of it, and `vercel.json` excludes the
+directory from the function bundle — so the merge put no new claim in front of a reader.
+
+The note asserts nothing about the history of the organisation. Every testable claim in it is a
+statement about the state of this repository or about which routes answered, so all of them were
+reproduced from the data or retested at the route, and none was taken from the note's own account of
+itself.
+
+## Spot verification — nine claims, all held
+
+- Priorities 1, 2 and 4: Todd, Dawson, Johnson and Gilley each carry a portrait; no president or
+  student regent across 61 years lacks one; 1994-95 is the only year with no scene photograph.
+  Confirmed, all three, by exact-name check against `photos.json`.
+- The eight archive.org-reachable officer-gap names: reproduced from `portrait_gap.py --list`
+  filtered to the covered years, and the script returns exactly those eight, in those years, with
+  those offices. No ninth name, none misfiled.
+- `portrait_gap.py` totals: 189 slots, 159 people, 157 with no portrait in any year. Confirmed to
+  the digit.
+- The Bass group photograph: present as a 1977-78 `years` entry, captioned from the 1978 *Talisman*
+  p. 34 and naming four people at once, which is precisely why no face can be matched to the name.
+  Declining to crop a portrait out of it is the right call and the right reason.
+- 61 years, 1968 events, 60 people have been president. Confirmed.
+- `archive.org` open (302 to mirror, then 200); `web.archive.org` closed (`curl: (35)`, the standing
+  egress-policy reset); `cgi/viewcontent.cgi` closed (403). Three of three as the note has them.
+
+`wkuherald.com` answered **200** here where the note logged 403 an hour earlier. That is not a
+correction to the note: the note flags the host as intermittent and says so outright rather than
+claiming it settled. Finding it open confirms what it describes. The usable lesson is that host
+deserves a retry on every run and never a single probe.
+
+One apparent discrepancy was this review's own error and is recorded so the next pass does not
+repeat it. `dlsc_ua_records/8989` answers 200 and resolves to a 2015-16 Track and Field record book,
+which briefly looked like it broke the note's "article 8989 (*Herald* 69:51)". It does not.
+`viewcontent.cgi?article=` and the `/dlsc_ua_records/NNNN/` landing path are different numbering
+spaces on Digital Commons, and the 8989 to *Herald* 69:51 identification was made from a pass that
+actually opened the file. **The landing page is not a cheap substitute for the article id**, and a
+future pass that treats it as one will manufacture a contradiction out of nothing.
+
+## Traps
+
+Clean, and most of the checklist has nothing to engage, because the diff adds no event, person,
+office, portrait, citation or piece of legislation. No advance notice written up as a report. No
+committee chair recorded as an officer and no bill author as a member. Nobody matched by surname
+alone. No changed surname creating a duplicate. No April result filed, so nothing files forward into
+the wrong academic year. Nothing reopens a settled fact. The eight living people named appear only
+by office and by whether a photograph of them exists, both already published, with no personal
+detail unconnected to their SGA service. No `Contributed-By` trailer. Every commit authored
+`SGA 60 <kurtztoddsam2@gmail.com>`, and no commit message or file carries tool attribution.
+
+`build.py` clean; `check_data.py`, `check_contrib.py` and `check_duplicates.py` all exit 0.
+`check_duplicates.py` reports the same four pairs and one same-source pair as the last several
+nights, byte-identical to `main` because no data changed. Re-judged rather than waved through, and
+all five are genuinely separate events: the 1997-98 designated-driver trio is a bill passing on
+4 November, a *Herald* report nine days later and a distribution announcement the following
+February, on three sources; the 1991-92 pair is a bill introduced on 28 January and the same bill
+failing after amendment on 6 February; the 1971-72 pair is the KCLU planning action in February and
+Associated Students endorsing it in March; the 2003-04 pair is a position taken in September and
+legislation passed in October; the 2026-27 same-source pair is two distinct items of business
+reported in one article. Nothing to combine.
+
+## The finding of this pass: Vercel has stopped deploying
+
+The branch was 5 commits behind `main`, so `origin/main` was merged in before evaluation
+(`d4fb3fa8`, authored `SGA 60`) and the validators were run on the merged tree.
+
+The original head `5f945d3e` carried `Vercel=failure` — "Deployment has failed", no further detail.
+That failure was established as not this pull request's rather than assumed: the repository's own
+`build` check passed on it; `main` is green on Vercel at the merge base and at every commit since;
+the preview for `213e166f` ninety minutes earlier succeeded on the same tree shape; `.research/*.md`
+is read by neither `build.py` nor the function bundle; and the local build of the merged tree was
+clean. Every Vercel failure in this report's history has been deployment rate limiting rather than a
+build error.
+
+What came next is the part worth recording. **Since the base merge was pushed, Vercel has created no
+deployment at all** — not a failed one, none. The `build` check went green on the new head, GitHub
+reported the pull request `clean`, the merge to `main` went through, and `main`'s head `e6fe7473`
+likewise has **no production deployment and no commit status**. The last deployment of any kind on
+this repository is the failed preview of 14:04 UTC; the last successful production deployment is
+`cda0d988` at 12:33.
+
+So the live site is currently serving `cda0d988` and is behind `main` by two commits. This is the
+condition the 23 August entry describes, in its more complete form: not a refusal with a message,
+but an integration that has gone quiet. Nothing wrong is stranded by it — both commits waiting are
+reviewed, and one of them publishes nothing to a reader in any case — and it was not a reason to
+hold a reviewed note. But a quiet `main` must not be read as a published one.
+
+## For the next pass
+
+- **Check whether Vercel has resumed before assuming a merge published.** Compare the newest entry
+  in `repos/.../deployments` against `main`'s head. If the gap is still open, say so plainly and
+  keep merging anyway; the backlog drains itself when the integration recovers, and holding reviewed
+  work helps nobody.
+- The brief's #6, #7 and #8 have been closed since 18 August. Twenty-one passes have now said so.
+- **`archive.org` and `web.archive.org` are different gates** and must be probed separately — this
+  pass confirmed the first open and the second shut at the same moment, as the note warned.
+- The eight reachable Talisman names are closed, not merely unchecked, across five passes now
+  (13 September, 7, 9, 10 and 12 October). A future run should not re-spend time on them without a
+  new source.
+- 1994-95's next step is unchanged: `cgi/viewcontent.cgi` against article 8989, the moment that
+  route opens. No *Talisman* was published for that year, so `archive.org` cannot help.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin, carried forward untouched.
