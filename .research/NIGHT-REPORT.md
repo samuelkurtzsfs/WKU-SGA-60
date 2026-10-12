@@ -44558,3 +44558,115 @@ this pass, because nothing was added or removed from the data.
   `.research/` prose with the same eye as an event body.
 - **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
   origin; carried forward untouched again.
+
+# 12 October 2026 (editor, scheduled) — an empty queue, the last three merges re-opened at source, and the Wayback route found shut by policy rather than by rate limiting
+
+## What was open
+
+Nothing. No pull request on the repository is open, and the numbering has reached #743. The three
+stale pull requests the standing brief still names — #6 `research-photos`, #7 `research-1980s` and
+#8 `research-2020s`, all opened 4 August — were closed unmerged on 18 August and have been gone for
+eight weeks. The brief should stop naming them.
+
+Every branch was then checked for work that never reached a pull request, because an empty queue and
+a lost branch look identical from the outside. There is none. Twenty branches report commits ahead of
+`main`, and all twenty are squash-merge artefacts: compared file by file against `main`, each is
+behind it or identical, and `research-photos`, the one rolling branch a routine could still be
+pushing to, differs from `main` only by lacking the last night report. Nothing is stranded.
+
+## What was audited instead
+
+With nothing to review, the audit turned on what most recently reached the public site. Three merges
+in the last day carried data; the other nine were reports. All three were re-opened at source.
+
+**#739/#740 — the 2000-01 debate photograph.** The landing page `dlsc_ua_records/8114` returns
+Vol. 75, No. 52 dated 4-13-2000, matching the label, and its index carries "Hall, Rex. Cassie Martin,
+Duan Wright Discuss Issues – Student Government Association, Elections". The file is a real JPEG
+(`ff d8`), 719x441, greyscale as a scanned newspaper photograph should be. The image was opened and
+read against its own caption: two people stand behind podiums printed "Cassie Martin" and "Duan
+Wright", and two other people sit at a table between them. The caption says exactly that and names
+neither of the seated two, which is the trim #740 made and it was the right one. Martin is this
+archive's 2000-01 president, so an April 2000 debate files forward to 2000-01 correctly.
+
+**#738 — the Josh Collins correction.** This is the one that mattered, and it holds verbatim. The
+Herald's article of 20 April 2004 is still served from `wkuherald.com` and reads "Articles of
+impeachment for Todd's vice presidency of finance were drafted yesterday by Jackson junior Josh
+Collins, an SGA member." The file had called him Senator; #738 changed it to "Josh Collins, an SGA
+member", which is the source's own wording. That is trap 2 caught and corrected rather than
+published. Five further figures in the same entry were opened in the same article and all five hold:
+$611 missing, an account that started the year at $5,000 with about $1,200 remaining, Todd, Bradley
+and Pride as the only three holding cards to it, the judicial council refusing impeachment on time
+constraints, and officers due to be sworn in on 27 April.
+
+**#735 — the Natalie Cole citation split.** `dlsc_ua_records/5123` returns Vol. 51, No. 29 dated
+12-9-1975 and its index carries "Associated Student Government to Sponsor Jazz Vocalist", which is
+the headline the new `src2` claims under that exact URL. The split was sound.
+
+## The Wayback route is blocked by policy, not rate limited
+
+The one claim still resting on an earlier pass's page read is #738's pair of rule findings — election
+of a speaker by a majority of a quorum, and the fifth-meeting limit held provisional — printed on
+page 5 of the 20 April 2004 issue. The last report left this open and asked a later pass to render
+that page once Wayback was available. This pass can close the question of *why* it is not available.
+
+It is not rate limiting and it will not clear by waiting. `viewcontent` for article 10372 returns 403
+twice, ninety seconds apart, both times 5,763 bytes of Cloudflare challenge saved under a `.pdf`
+name — trap 7 in its textbook form, and the reason the bytes were checked rather than the exit code.
+The Wayback copy then failed differently: plain HTTP to the CDX endpoint answered "Blocked by egress
+policy" in as many words, HTTPS reset the connection, and the proxy's own status log records
+`ws_closed_mid_exchange` against `web.archive.org:443` for each attempt. The host is denied by this
+environment's network policy. Previous passes read the signature as a flaky tunnel and retried; the
+retries were never going to work.
+
+This is worth more than one stalled claim, because the archive leans on that host: **276 citations in
+`years.json`, across 105 distinct URLs, and 19 more in `photos.json` point at `web.archive.org`.**
+None of them can be re-verified by any run in this environment while the policy stands. They are not
+in doubt — each was verified when it was written — but a whole class of citation is currently beyond
+the reach of the check that is supposed to guard it, and that is a gap the project should know about
+rather than rediscover every few nights. Allowing `web.archive.org` under the environment's network
+settings would close it and unblock the page-5 read in the same stroke.
+
+## Traps
+
+Nothing to report against the checklist, and most of it is not engaged: no events, people, offices or
+legislation were added this pass. Of what was audited, the one live trap was trap 2, and #738 had
+already caught it. No advance notice is written up as a report — the 20 April 2004 article is a
+report of business already done, and the 9 December 1975 item is correctly cited for sponsorship
+only, which is what a notice proves. No person is matched by surname alone. The April 2000 election
+files forward. No settled fact is reopened. The living people named appear only in connection with
+their SGA service, and the Todd investigation entry states the council's outcome rather than leaving
+an allegation hanging. There is no `Contributed-By` trailer in anything reviewed.
+
+`check_duplicates.py` exits 1 with the same four pairs and one same-source pair as last night, and
+the output is byte-identical to `main`'s. All five were judged genuinely separate events on earlier
+passes and nothing has changed to reopen them. Nothing to merge.
+
+## Counts
+
+`build.py` clean and reproducible — the only difference it writes against `main` is the build date on
+88 pages, which was reverted rather than committed. `check_data.py` exit 0, `check_contrib.py`
+exit 0. 61 years, **1,968 events**, 60 people have been president. 1,111 pieces of legislation, every
+file present and a real PDF. 1,310 citations name a volume and number and each opens that issue;
+1,317 quoted spans, none reaching 15 words. 2,651 recorded terms of office held by 1,809 people,
+2,614 of them (98%) carrying an account of what the person did, 48 people under more than one
+spelling. 308 documents, 7 decade pages, a search index of 4,949 records, 5 photographs withdrawn.
+No count moved: nothing was added to or removed from the data.
+
+The deployed site was checked rather than assumed. `sga60.vercel.app` answers 200, reports "Built 11
+October 2026", and `y/2000-01.html` serves the debate photograph, so everything merged has published.
+`wku-sga-60.vercel.app`, which SETUP still names, answers 404 and should be corrected or dropped.
+
+## For the next pass
+
+- **Ask for `web.archive.org` before retrying it.** It is an egress-policy denial, not a rate limit.
+  Until it is allowed, treat every Wayback citation as unverifiable in this environment and say so,
+  rather than spending a pass on routes that cannot open.
+- **The standing brief is out of date in two places.** It names #6, #7 and #8 as open since 4 August;
+  all three closed on 18 August. It also says `gh` is unavailable and the session is gated — `gh`
+  works here against the REST API with full push rights, and only the GraphQL endpoint is refused, so
+  `gh pr list` fails while `gh api repos/.../pulls` succeeds. AGENT-LANDING.md says the same thing
+  about `gh` not being installed; it is installed.
+- **Page 5 of article 10372 remains the one open read**, unchanged from last night and now with a
+  known reason.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still on
+  origin; carried forward untouched again.
