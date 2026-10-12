@@ -126,3 +126,27 @@ This run's only output is this note.
   again after each election, since it should update to the newest cabinet before the Herald
   covers them — but note its `alt` attributes are not reliable (see Lucas/Robinson above); use the
   visible name/title card text next to each photo instead.
+
+---
+
+## Editor's addendum, 12 October (review of this run)
+
+Verified at source on review: the five `wku.edu/sga/executive/index.php` headshots and their
+filenames, the stale `alt` attribute on Lucas's image, the `cgi/viewcontent.cgi` 403 on article
+8989, and the `web.archive.org` connection reset. All as described above.
+
+One correction of detail, which strengthens rather than weakens the note: the directory gives
+Lucas's title as "Student Body President, Student Regent", not "Student Body President". The
+archive already records this — his `leaders` entry carries `also_regent: true`, as do Robinson's
+and Kurtz's — so there is no gap here, but a future run reading this note should not take the
+shorter title as the page's wording.
+
+**`wkuherald.com` closed after this run finished and is a third blocked route, not a second.**
+The per-name sweep above could not be re-checked at source: the site now answers every request
+with a Cloudflare managed challenge ("Just a moment...", `cType: managed`). Tested three ways —
+`curl` with full browser headers (403), the container's own Chromium driven by Playwright with the
+challenge given 40 seconds to clear (403, title never changed), and a plain page fetch (403). The
+`digitalcommons.wku.edu` landing pages still answer 200 in the same minutes, so this is specific to
+`wkuherald.com` and is not the agent proxy. It was open to this run a few hours earlier, so treat it
+as intermittent on the same pattern as the two PDF routes, and test it fresh rather than assuming
+either state.
