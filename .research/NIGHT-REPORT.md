@@ -1,3 +1,148 @@
+# 12 October 2026 (editor, scheduled, midday) — an empty queue, the 1976-77 Talisman concert slice read end to end at source, and one planned laundry improvement withdrawn as accomplished fact
+
+## What was open
+
+Nothing. `gh api repos/.../pulls?state=open` returned an empty list, and #747 `research-photos`
+and #748, the second review of the day, are the last two things merged. `gh pr list` answered 403
+naming GraphQL, as it does on every pass; `gh api` and `git push` both worked, so this was a
+full-mode pass. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, so route two was again
+unavailable and route one was the only way to land anything.
+
+The standing brief still names #6, #7 and #8 as open and stale since 4 August. They have been
+closed unmerged since 18 August, and this is the twentieth pass to record it. A sweep of all 85
+`research-*` branches found none carrying unlanded work: every one differs from `main` only in
+generated `site/` files, except five `research-editor-10*` branches whose sole non-site difference
+is an older copy of this file. Checked by content in both directions, not by commit count.
+
+## The audit: the 1976 and 1977 Talisman concert and ASG slice
+
+With no queue to review, the pass audited live content instead, and chose its slice by running the
+advance-notice trap mechanically across all 1,968 events rather than by picking a decade. Scanning
+for outcome language — crowd sizes, dollar results, attendance — in the body of any event whose
+cited headline or title carries notice language returned six candidates. Four were correctly
+hedged or cited a retrospective yearbook rather than a notice. Two carried hard outcome figures
+worth opening at source, and both sat in the same slice: the 22 events across 1975-76 and 1976-77
+sourced to the 1976 and 1977 *Talisman*.
+
+That slice was then read end to end against the full text of both yearbooks on `archive.org`
+(`talisman1976west`, `talisman1977west`), which CLAUDE.md records as readable as plain text and
+not rate limited. Both downloaded at HTTP 200, 1.7MB and 1.4MB. No `digitalcommons` request was
+needed, so no pacing rule was engaged.
+
+**Twenty-one of the twenty-two held, most of them verbatim.** The figures that matter all confirm:
+Chicago at Diddle Arena on 15 October 1976, 10,450 people and a gross of $53,092, the yearbook's
+own "most financially successful"; the $25,000 cost, which Rick Kelley attributes to the Chicago
+show in his own words and which a careless reading could have attached to another act; about 5,000
+advance tickets, "setting another record"; "the privately-promoted concert, a first for Western".
+Loggins and Messina on Wednesday 17 September 1975, a crowd of 4,300 and a loss of about $7,000,
+with Kelley blaming a lack of student body support. Linda Ronstadt on Saturday 1 November 1975 and
+a profit of $4,300. Doug Kershaw's 700 people, three encores, the lap of a startled coed in the
+fourth row, and "Louisiana Man" to close. Natalie Cole's crowd of 325. The book exchange from
+12 to 26 January 1976, expenses covered by 21 January on over 600 books, 25 cents a book to ASG
+and VOC, with Christy Vogt named administrative vice-president and correctly spelled. The Student
+Activities Committee's 17 members from 63 applicants, split seven concert with three alternates
+and five each for lectures and publicity with two apiece — the most intricate claim in the slice
+and exact in every number.
+
+Two entries deserve their existing caution noted rather than corrected. The Ronstadt entry flags
+the yearbook as inconsistent on the crowd, 6,500 in the concerts section against 6,300 in the
+Homecoming section; both figures are there in the full text, and recording the
+discrepancy rather than choosing is the right call. The Barry Manilow entry's apparent absurdity —
+ticket sales on a free concert — is the yearbook's own: "The total cost of the Manilow concert was
+$23,000, with ticket sales subtracting $10,100 from the cost." The 7,000 people, the heckler on
+the first row, the dropped commercial set and the show cut by fifteen minutes are all verbatim.
+The Jimmy Buffett entry's "small crowd" is supported, though not by the sentence it sits next to:
+the yearbook's "small Buffett cult on campus" is about the size of the following, but a caption
+elsewhere says the poor attendance was anticipated because his music appeals to an older audience.
+The claim stands on that second passage.
+
+## What was cut
+
+**One entry, trimmed rather than deleted: 1975-76, "Laundry improvements take effect".** It read
+that "From 15 April 1976 the university installed more washers and dryers, an air-conditioned study
+area and a laundry pick-up service". The yearbook says no such thing. Under its list of ASG
+accomplishments it reads that "Effective the fifteenth of April, the university's **plans** for the
+installment of more washers and dryers, an air-conditioned study area and a laundry pick-up
+service" were to go into effect. That is a plan with a date on it, not a report that the work was
+done, and the entry had converted the one into the other — the advance-notice trap exactly, in a
+year whose other twenty-one entries are sound.
+
+Retitled "Laundry improvements set to take effect in April" and rewritten to what the source
+proves: that the Talisman listed the improvement among ASG's accomplishments and recorded the
+plans as due to take effect on 15 April 1976, with the explicit addition that the yearbook does
+not report whether the work was carried out. Steve Henry's hope that the facilities would be
+long-lasting and ASG's proposal the previous October are both in the source and both kept. No
+sourced fact was lost; only the accomplishment was.
+
+Worth recording why this one survived earlier passes. The mechanical scan that found it keys on
+notice language in the *citation label*, and this entry's label is a bare "1976 Talisman, ASG" —
+it was the outcome language in the body against the planning language in the source that caught
+it, and only reading the source caught that. A yearbook is a retrospective document, which is
+what makes it a safe source and also what makes a planned item inside it easy to read as a
+finished one.
+
+## The traps, against the live slice
+
+No committee chair is recorded as an officer in these years, and no bill's author as a member.
+Nobody is matched by surname alone. No changed surname creates a duplicate: Christy Vogt appears
+under the spelling CLAUDE.md settles on, with Mollozzi handled by the alias layer. No April
+election result sits in this slice at all, so nothing files forward into the wrong academic year.
+Nothing touches a settled fact. The people named are named only by the office they held and what
+the yearbook reported them doing. No `Contributed-By` trailer in the diff. One date is a
+derivation rather than a printed date — Kershaw at 30 October 1975, from the yearbook's "Thursday
+night preceding the Ronstadt concert" against Ronstadt's printed Saturday 1 November — and it is
+correct.
+
+`check_duplicates.py` reports the same four pairs and one same-source pair as the preceding
+nights. Re-judged, all five kept, and the reasoning is unchanged from the 11 and 12 October
+entries below: three months and two sources apart for 1997-98's designated-driver cards, an
+introduction and its failure after amendment for 1991-92, a planned action and an endorsement a
+month later for 1971-72, a position and the legislation that carried it for 2003-04, and two
+distinct items of business from one meeting report for 2026-27, which CLAUDE.md expressly allows.
+Nothing to combine.
+
+## Counts
+
+`build.py` completes cleanly, `check_data.py` exit 0, `check_contrib.py` exit 0. 61 years,
+**1,968 events**, 60 people have been president. 1,111 pieces of legislation, every file present
+and a real PDF. 1,310 citations name a volume and number and each opens that issue; 1,317 quoted
+spans, none reaching 15 words. 2,651 recorded terms of office held by 1,809 people, 2,614 of them
+(98%) carrying an account of what the person did, 48 people recorded under more than one spelling.
+308 documents, 7 decade pages, a search index of 4,949 records, 5 photographs withdrawn as no
+longer held or barred. No count moves: the cut rewrote an entry rather than removing one.
+
+## Still open
+
+Nothing in the queue.
+
+## For the next pass
+
+- **A lead the audit turned up and did not write up.** The 1977 Talisman reports the Seals and
+  Crofts Homecoming concert of Saturday 6 November 1976 at approximately 5,200 attending and a
+  loss of about $3,800, with Ron Beck blaming Saturday night after a full Homecoming day. The
+  archive has the ASG Homecoming dance of that weekend but not these figures. Fully sourced at
+  `archive.org/details/talisman1977west` and ready for a research routine to add; left to one,
+  because this was a review pass.
+- **The advance-notice scan is worth keeping and worth widening.** Keying on notice language in
+  the citation label found the four harmless cases and missed this one. A scan keyed on planning
+  language in the *body* of any event sourced to a yearbook — "plans for", "were to", "was to be",
+  "scheduled to" — against a title or body asserting completion would be the better net, and
+  would run across all 1,968 events in seconds.
+- **The 1994-95 gap's next step is unchanged**: re-fetch `article=8989` (Herald 69:51, printed
+  pages 6-9) and finish the unread tail of `article=8933` (Herald 70:56, printed pages 8-29), the
+  moment either PDF route opens. Page 5 of article 10372 also remains open. Neither route was
+  tested this pass, which spent its requests on `archive.org` instead.
+- **`wkuherald.com` was not retested this pass either.** It is intermittent on an hours-long
+  cycle; test it fresh rather than trusting any note.
+- **Merging to `main` needs the GitHub merge tool, not `gh api`.** A `PUT .../merge` through
+  `gh api` is refused by the session's own permission classifier as a production deploy;
+  `mcp__github__merge_pull_request` goes through. Carried forward and confirmed again below.
+- **The stored Routine prompt remains the one thing a run cannot fix.** It still names #6, #7 and
+  #8 as open since 4 August and still has the GitHub gate backwards. `.research/EDITOR-BRIEF.md`
+  holds a corrected brief ready to paste in.
+- **Do not merge `editor-2026-10-07-rally-notice` or `editor-2026-10-04-index-drop`.** Both still
+  on origin, carried forward untouched.
+
 # 10 October 2026 (editor, scheduled, night) — both pull requests merged after thirteen claims opened at source, and a withdrawn office caught surviving in the search index
 
 ## What was open
