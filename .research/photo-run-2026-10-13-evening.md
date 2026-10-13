@@ -37,7 +37,7 @@ the pp. 6-9 range earlier notes had flagged as the target: the front page's own 
 story carries no photograph of its own (the accompanying photo is an unrelated "clean sweep"
 campus-maintenance picture), pp. 6-9 hold a judicial-council story, a Banshee rugby-party photo
 feature, storm-damage coverage and a women's-studies appointment, none of them SGA's business
-with a usable photograph. Page 11 does: a full-column paid campaign advertisement, "ELECT Rob
+with a usable photograph. Page 11 does: a full-column campaign advertisement, "ELECT Rob
 Evans President / Tara Higdon Vice-President," carries a photograph of both candidates together,
 captioned by the ad copy itself rather than a Herald caption — their names and the offices they
 were seeking are printed directly beside the photograph, which is the same identification bar
@@ -52,7 +52,7 @@ printed beside it, which run on in the source and are not part of the image) and
 copying into the repository. Added to `data/photos.json`'s `years` array — not `leaders`, since
 both Evans and Higdon already carry individual leader portraits from other sources and this is
 general documentation of the year, specifically an election-season artifact rather than a news
-photograph. The caption says plainly that it is a paid advertisement, not Herald photojournalism,
+photograph. The caption says plainly that it is an advertisement, not Herald photojournalism,
 so a reader is not misled about what kind of document it is.
 
 This was the only year left without a year-level photograph; `portrait_gap.py`'s separate officer
@@ -88,3 +88,33 @@ on this branch.
 - The pre-2016 officer-gap Talisman slice (Priority 3) is still the only work item this routine
   has open, and it is still entirely behind `cgi/viewcontent.cgi`, which did not reopen this
   session.
+
+## Editor's check, 13 October
+
+The issue PDF was pulled again from the same `web.archive.org` copy and read independently:
+27,977,595 bytes, `%PDF-1.7`, 21 PDF pages. The advertisement is on **printed page 11**, which
+is PDF page 12 — the file carries a one-page offset, and PDF page 11 is printed page 10
+(ping-pong club, Service One, Ho-Jo's). The citation's "p. 11" is correct as a printed page
+number, which is the archive's convention.
+
+The page carries "ELECT", "Rob Evans / President" boxed at the left, "Tara Higdon /
+Vice-President" boxed at the right, "The Right Choice For The Student Voice" between them, and
+"VOTE TODAY!!!!" with the DUC Lobby polling hours beneath. The photograph sits in the middle,
+a man at the left and a woman at the right, matching the order of the two name boxes. The
+credentials column visible in the saved crop — Senior Class Vice-President, 1990-91 SGA
+Treasurer, Author Fall Break Legislation, Organizational Aid Founder — is the ad's left-hand
+column, and the archive independently records Rob Evans as SGA treasurer in 1990-91, which
+corroborates the crop's origin.
+
+Two trims on review:
+
+- **"paid" cut from the caption and from this note.** The page is plainly a display campaign
+  advertisement, but nothing on it says "paid for by" and the issue index attributes the item
+  to a named person. The commercial arrangement is not in the source, and "campaign
+  advertisement" tells a reader everything "paid" was there to tell them.
+- **Citation aligned to "Herald 69:51 [52]".** That is the archive's own title for this issue
+  and the form every other citation of it in `years.json` already uses.
+
+`data/photos.json` was also re-serialised with `ensure_ascii=False`, which is what
+`scripts/merge_photo_finds.py` writes. The branch had re-dumped the whole file with ASCII
+escapes, which changed no content but rewrote 210 lines of unrelated entries.
