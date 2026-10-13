@@ -45929,3 +45929,108 @@ legislation, every file present and a real PDF. 1,310 citations naming a volume 
 - The photograph gap is unchanged: 157 people with no portrait anywhere, and the two closed
   routes remain the better prospects if either opens — article 8989 for the 1994-95 year
   photograph, and the pre-2011 slice of the officer gap.
+
+---
+
+# 13 October, third scheduled editor pass: #760 merged, eighteen claims checked, three corrected
+
+## What was open
+
+One pull request: #760, `research-photos`, "Research: photographs (rolling)", opened 08:08 UTC.
+It merged at its own head after corrections, and the queue is empty again.
+
+Full mode. `gh pr list` answered 403 naming GraphQL, as it has on every pass; `gh api
+repos/.../pulls` listed the queue normally and `git push` landed without complaint. `SGA60_SITE`
+and `SGA60_RESEARCH_TOKEN` are unset again, so the drop box was not available and route one was
+the only way to land anything. **The standing brief is wrong in the same two places for a
+fourteenth pass:** #6, #7 and #8 have been closed since 18 August, and the GraphQL 403 is not
+the platform gate. A run that read it as the gate this pass would have had nowhere to post.
+
+## What was in it
+
+105 added lines in one file, `.research/photo-run-2026-10-13-scheduled-later.md`, and no data
+file at all. That put a floor under the risk: `build.py` reads only `branches-checked.json` and
+`branches-unverified.json` out of `.research/`, and `vercel.json` excludes the whole directory
+from the deployment, so nothing in this diff could reach the rendered site whatever it said. The
+note was held to the sourcing rule regardless, because a run note is what the next pass builds on.
+
+## Spot check: eighteen claims, fifteen held
+
+Against the repository: all four priority-1 portraits present; zero presidents or student regents
+without a portrait for their own year, computed across all 61 years rather than taken on the
+note's word; 1994-95 still the only year with no scene photograph, and it carries 27 portraits;
+Carter Smith on file for 2026-27 and a real JPEG; Holden Schroeder already holding a portrait;
+66 prior `photo-run-*.md` notes; `portrait_gap.py` at 189 / 159 / 157 exactly.
+
+At source, paced: article 65656's title, the caption naming Kayla Distler and the
+`Screen-Shot-2022-04-13-at-2.10.08-PM.png` filename are all exact, and ruling the image out as a
+screenshot of a petition rather than a face was the right call. Media 97546 carries the Carter
+Smith swearing-in caption word for word. All three access claims stand: `cgi/viewcontent.cgi`
+still 403 on article 8989, `web.archive.org` still `Recv failure: Connection reset by peer`,
+plain `archive.org` answering 200 on the 1979 Talisman. The negative result they support is real.
+
+## What failed, and what was corrected
+
+1. **The count was 36 and is 33.** Thirty names in the checked list, three near-misses set out
+   separately. "Daniel Vuleta" is the election story's spelling of Danny Vuleta and is one name;
+   Hardesty, Hensley and Vuleta recur in the gallery paragraph but were already counted.
+2. **John "Jack" McKinney had been searched before.** He was named among four people a grep of
+   the 66 prior notes was said to show as never tried. `photo-run-2026-10-02.md` searched him on
+   the same host and recorded the outcome — one wkuherald.com hit and one general-web hit, both a
+   later Judicial Council cohort rather than the 2016-17 officer the record wants. His name is
+   verbatim in that file, so the grep missed him. The other three are genuinely new. **This is
+   the one error in a run note that costs a later pass real time:** a false "never searched"
+   invites the work to be done twice, or trusted as closed when it is not.
+3. **The 65821 gallery identifies a fifth person.** The note said the eight photographs covered
+   only Kurtz, Bornefeld, Courtenay and Schroeder. Garrison Reed is named in the captions of
+   65828, 65829 and 65830. No find was lost, Reed already carrying a portrait under 2022-23 and
+   reused for 2023-24, but the sentence was wrong, and 65829 had resolved during the run, so the
+   caption was in hand when it was written. Both images the note recorded as refused answered on
+   a retry: all eight read, which is this file's own advice about this host confirmed again.
+
+Nothing was deleted. Three sentences were rewritten to what the evidence supports and what they
+replaced is set out at the foot of the note, so a later pass sees the reasoning and not just the
+result.
+
+## Traps and the duplicate pairs
+
+Nothing else tripped. No event entries, so no advance notice read as a report and no April result
+filed into the wrong year; no officer records, so no committee chair promoted; no person added,
+so no alias collision — and the run kept Reed Hensley, Garrison Reed and Donté Reed apart, which
+is the surname trap exactly, `name-aliases.json` mapping only the Donté variants. Nothing
+re-litigated from the settled facts. No contributor commit; every commit authored `SGA 60` and
+clean of tool attribution.
+
+`check_duplicates.py` printed four pairs and one same-source pair, all pre-existing on main and
+all genuinely separate business: a student regent advisory committee bill introduced on
+28 January 1992 and the same bill failing on 6 February; the Kentucky Civil Liberties Union
+planning court action in February 1972 and Associated Students endorsing the suit in March; a
+grading position taken in September 2003 and passed into legislation in October; and a syllabus
+statement and the opening of fall voting reported a day apart out of one article. None merged.
+
+## Counts after the merge
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. 61 years, 1968 events,
+60 people have been president. 2,651 recorded terms of office held by 1,809 people, 2,614 of them
+(98%) carrying an account of what the person did. 1,111 pieces of legislation, every file a real
+PDF. 1,310 citations naming a volume and number. 1,317 quoted spans, none reaching 15 words.
+308 documents. Photograph gap unchanged: 189 officer slots without a portrait, 159 people,
+157 of them with no portrait in any year.
+
+## For the next pass
+
+- **The queue is empty.** Nothing open, nothing unmerged. A sweep of every branch on origin found
+  none carrying unlanded work: `ed-report-1012-late` and `ed-review-1012-late` differ from main in
+  `data/years.json` but are nought commits ahead, and the difference is main's own later trim
+  (#756) sitting on the other side. The orphan-history branches still read as thousands of
+  commits "ahead"; that is the artefact this file has recorded before, not a backlog.
+- **Check the grep before writing a conclusion on it.** The McKinney error was not a sourcing
+  failure but a search-history failure, and it is the kind this archive is least equipped to
+  catch later: a name recorded as untried looks like work waiting to be done. A note that claims
+  a name was never searched should quote the grep that proves it.
+- A 403 from wkuherald.com's media endpoint means retry, not closed. Two images this run recorded
+  as refused answered within seconds on a second attempt, and the ids that failed were different
+  ones on the review pass — the intermittency is per-request, not per-record.
+- The two closed routes are still the better prospects than more name-by-name search. The open
+  route has now been worked through the standing post-2011 gap list once, with no hits, and the
+  run's own reading of its hit rate as near zero is supported by what it found.
