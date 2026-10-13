@@ -45929,3 +45929,268 @@ legislation, every file present and a real PDF. 1,310 citations naming a volume 
 - The photograph gap is unchanged: 157 people with no portrait anywhere, and the two closed
   routes remain the better prospects if either opens — article 8989 for the 1994-95 year
   photograph, and the pre-2011 slice of the officer gap.
+
+---
+
+# 13 October, third scheduled editor pass: #760 merged, eighteen claims checked, three corrected
+
+## What was open
+
+One pull request: #760, `research-photos`, "Research: photographs (rolling)", opened 08:08 UTC.
+It merged at its own head after corrections, and the queue is empty again.
+
+Full mode. `gh pr list` answered 403 naming GraphQL, as it has on every pass; `gh api
+repos/.../pulls` listed the queue normally and `git push` landed without complaint. `SGA60_SITE`
+and `SGA60_RESEARCH_TOKEN` are unset again, so the drop box was not available and route one was
+the only way to land anything. **The standing brief is wrong in the same two places for a
+fourteenth pass:** #6, #7 and #8 have been closed since 18 August, and the GraphQL 403 is not
+the platform gate. A run that read it as the gate this pass would have had nowhere to post.
+
+## What was in it
+
+105 added lines in one file, `.research/photo-run-2026-10-13-scheduled-later.md`, and no data
+file at all. That put a floor under the risk: `build.py` reads only `branches-checked.json` and
+`branches-unverified.json` out of `.research/`, and `vercel.json` excludes the whole directory
+from the deployment, so nothing in this diff could reach the rendered site whatever it said. The
+note was held to the sourcing rule regardless, because a run note is what the next pass builds on.
+
+## Spot check: eighteen claims, fifteen held
+
+Against the repository: all four priority-1 portraits present; zero presidents or student regents
+without a portrait for their own year, computed across all 61 years rather than taken on the
+note's word; 1994-95 still the only year with no scene photograph, and it carries 27 portraits;
+Carter Smith on file for 2026-27 and a real JPEG; Holden Schroeder already holding a portrait;
+66 prior `photo-run-*.md` notes; `portrait_gap.py` at 189 / 159 / 157 exactly.
+
+At source, paced: article 65656's title, the caption naming Kayla Distler and the
+`Screen-Shot-2022-04-13-at-2.10.08-PM.png` filename are all exact, and ruling the image out as a
+screenshot of a petition rather than a face was the right call. Media 97546 carries the Carter
+Smith swearing-in caption word for word. All three access claims stand: `cgi/viewcontent.cgi`
+still 403 on article 8989, `web.archive.org` still `Recv failure: Connection reset by peer`,
+plain `archive.org` answering 200 on the 1979 Talisman. The negative result they support is real.
+
+## What failed, and what was corrected
+
+1. **The count was 36 and is 33.** Thirty names in the checked list, three near-misses set out
+   separately. "Daniel Vuleta" is the election story's spelling of Danny Vuleta and is one name;
+   Hardesty, Hensley and Vuleta recur in the gallery paragraph but were already counted.
+2. **John "Jack" McKinney had been searched before.** He was named among four people a grep of
+   the 66 prior notes was said to show as never tried. `photo-run-2026-10-02.md` searched him on
+   the same host and recorded the outcome — one wkuherald.com hit and one general-web hit, both a
+   later Judicial Council cohort rather than the 2016-17 officer the record wants. His name is
+   verbatim in that file, so the grep missed him. The other three are genuinely new. **This is
+   the one error in a run note that costs a later pass real time:** a false "never searched"
+   invites the work to be done twice, or trusted as closed when it is not.
+3. **The 65821 gallery identifies a fifth person.** The note said the eight photographs covered
+   only Kurtz, Bornefeld, Courtenay and Schroeder. Garrison Reed is named in the captions of
+   65828, 65829 and 65830. No find was lost, Reed already carrying a portrait under 2022-23 and
+   reused for 2023-24, but the sentence was wrong, and 65829 had resolved during the run, so the
+   caption was in hand when it was written. Both images the note recorded as refused answered on
+   a retry: all eight read, which is this file's own advice about this host confirmed again.
+
+Nothing was deleted. Three sentences were rewritten to what the evidence supports and what they
+replaced is set out at the foot of the note, so a later pass sees the reasoning and not just the
+result.
+
+## Traps and the duplicate pairs
+
+Nothing else tripped. No event entries, so no advance notice read as a report and no April result
+filed into the wrong year; no officer records, so no committee chair promoted; no person added,
+so no alias collision — and the run kept Reed Hensley, Garrison Reed and Donté Reed apart, which
+is the surname trap exactly, `name-aliases.json` mapping only the Donté variants. Nothing
+re-litigated from the settled facts. No contributor commit; every commit authored `SGA 60` and
+clean of tool attribution.
+
+`check_duplicates.py` printed four pairs and one same-source pair, all pre-existing on main and
+all genuinely separate business: a student regent advisory committee bill introduced on
+28 January 1992 and the same bill failing on 6 February; the Kentucky Civil Liberties Union
+planning court action in February 1972 and Associated Students endorsing the suit in March; a
+grading position taken in September 2003 and passed into legislation in October; and a syllabus
+statement and the opening of fall voting reported a day apart out of one article. None merged.
+
+## Counts after the merge
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. 61 years, 1968 events,
+60 people have been president. 2,651 recorded terms of office held by 1,809 people, 2,614 of them
+(98%) carrying an account of what the person did. 1,111 pieces of legislation, every file a real
+PDF. 1,310 citations naming a volume and number. 1,317 quoted spans, none reaching 15 words.
+308 documents. Photograph gap unchanged: 189 officer slots without a portrait, 159 people,
+157 of them with no portrait in any year.
+
+## For the next pass
+
+- **The queue is empty.** Nothing open, nothing unmerged. A sweep of every branch on origin found
+  none carrying unlanded work: `ed-report-1012-late` and `ed-review-1012-late` differ from main in
+  `data/years.json` but are nought commits ahead, and the difference is main's own later trim
+  (#756) sitting on the other side. The orphan-history branches still read as thousands of
+  commits "ahead"; that is the artefact this file has recorded before, not a backlog.
+- **Check the grep before writing a conclusion on it.** The McKinney error was not a sourcing
+  failure but a search-history failure, and it is the kind this archive is least equipped to
+  catch later: a name recorded as untried looks like work waiting to be done. A note that claims
+  a name was never searched should quote the grep that proves it.
+- A 403 from wkuherald.com's media endpoint means retry, not closed. Two images this run recorded
+  as refused answered within seconds on a second attempt, and the ids that failed were different
+  ones on the review pass — the intermittency is per-request, not per-record.
+- The two closed routes are still the better prospects than more name-by-name search. The open
+  route has now been worked through the standing post-2011 gap list once, with no hits, and the
+  run's own reading of its hit rate as near zero is supported by what it found.
+
+# 13 October 2026 (editor, fourth scheduled pass) — an empty queue, the advance-notice rule swept across the whole record, and a near-miss of my own stopped by a second citation
+
+## What was open
+
+Nothing. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returned `[]` twice, and there
+are no open issues. The three pull requests this pass was sent to rescue — #6 "Research:
+photographs (rolling)", #7 "Research: the 1980s", #8 "Research: the 2020s" — were **closed
+unmerged on 18 August 2026**, eight weeks ago. The repository is at #761. Three editor passes had
+already run today (#758, #759, #761), and the last of them recorded the same empty queue. Nothing
+was merged this pass because there was nothing to merge, and nothing was cut because nothing
+failed.
+
+So this was a pass spent on what is already published, which is where the risk now lives.
+
+## The advance-notice rule, swept across all 1,968 events
+
+This file has caught entries reading a result out of an advance notice one at a time — the Buffett
+billing (#716, #718), a laundry improvement withdrawn as accomplished fact (#749), two legislation
+entries (#752). It had never been swept as a class, so it was this pass.
+
+Every event was matched against the index lines of the issue it cites, and flagged where the
+best-matching headline reads prospectively ("Set", "Slated", "to be", "Planned", "Tonight") while
+the body states an outcome. **43 candidates. No fault in any of them.**
+
+- **12 hand the outcome to a retrospective second source**, which is this archive's answer to the
+  problem working exactly as CLAUDE.md prescribes: the following week's *Herald* or that year's
+  *Talisman* in a `src2`. Mailer's lecture is billed on 11 February by "Norman Mailer was Divinely
+  Drafted"; the Cellar's opening notice is answered by "Cellar-Dwellers" of 25 January 1972;
+  Berlitz's standing-room audience comes from the 1976 *Talisman*, p. 52, not from the notice the
+  *Herald* ran that morning.
+- **The rest are hedged in their own words.** Several say so outright — the 1979 opinion-poll entry
+  ends "it proves what was set up, not what came back"; the 1996 ride-plan entry calls itself the
+  notice of Provide-a-Ride's start "rather than a report of how it ran".
+- Three I checked individually were faults in my own heuristics, not the record. The 1983
+  incomplete-grade headline reads "Associated Student Government **Passes** Incomplete Deadline" —
+  a result, caught only because my pattern treats "deadline" as prospective. Two entries claiming
+  their cited issue carried a second item both verify in the index: 22 May 1969 does carry
+  "Tucker, Bruce. President Kelly Thompson Resigns", and 11 September 1986 does carry
+  "Jessie, Lisa. Associated Student Government **Approves** $12,100 Budget" alongside the phone
+  outreach and the Kern Alexander retreat.
+
+## The mistake I nearly made
+
+The sweep flagged one entry as a title overclaiming its source: 1994-95's "Evans defeats Sivley
+for the SGA presidency", whose `src` is the 19 April 1994 issue — "Scott Sivley vs. Rob Evans at
+**Polls Today**" — and whose own body says the issue "was printed on polling day and records no
+result". A title asserting a result its body says the source does not record. I had the retitle
+drafted.
+
+It was wrong, and what stopped it was reading the entry's raw JSON instead of my scan's output.
+**The entry carries a `src2`**: Herald 69:52 of 21 April 1994, "Rob Evans & Tara Higdon Ready to
+Lead Students", record 7879. My scan read `src` and never looked at `src2`, so it reported an
+unsourced claim that is in fact sourced twice over. The rescue was done deliberately under #685
+and this file recorded it; the previous pass to look at it wrote "worth a decision, not a quiet
+edit", and a quiet edit is exactly what a scan reading only `src` invites. 127 of the 1,968 events
+carry a `src2`. **Any check written against this record has to read both, or it will propose
+cutting correctly sourced work.**
+
+Re-run accounting for `src2`, the count of titles asserting an outcome their body disclaims and no
+second source carrying it is **nought**.
+
+## A blind spot in check_duplicates.py, and the evidence it is currently empty
+
+`check_duplicates.py` says in its own first line that it reports events "in the same year", and
+both of its comparisons iterate within one year's events. **A single event written up twice in two
+adjacent years is structurally invisible to it.** That is not hypothetical here: spring election
+coverage straddles the year boundary by design.
+
+Run its own comparison functions across adjacent years over all 1,968 events: **28 candidate
+pairs, and every one is separate business** — a candidacy against a result, a recount against a
+different race's win, two stories out of one election-week issue. The highest title similarity is
+0.22, against the 0.45 the in-year check requires. Nothing is in it now. The one pair this file
+previously recorded as a cross-year near-duplicate is the Evans entry and 1993-94's own 21 April
+entry, which is the deliberate split described above.
+
+## A convention split, reported rather than fixed
+
+Spring elections are filed by two different rules. **27 sit in the academic year they happened**,
+naming the president who would serve the next year — Lyne in 1969-70, Vogt in 1975-76, Richey in
+2014-15, Kurtz in 2022-23. **Six sit in the year the winner served**: Straeffer (2 May 1968 under
+1968-69), Yater (April 1973 under 1973-74), McKinney (April 1985 under 1985-86), Evans (April 1994
+under 1994-95), Caden Lucas (April 2026 under 2026-27), and the 1982 reorganisation under 1982-83.
+Haynes in May 1966 is unavoidable, there being no earlier year to hold it.
+
+Neither placement is an error, and that is the point: a year object is a plain calendar-year span
+(`start: 1984, end: 1985`), so April 1985 falls inside both 1984-85 and 1985-86 and the data model
+does not disambiguate by month at all. What it costs a reader is that one April's coverage can
+split across two year pages — April 1980 has "Three seek the ASG presidency" on 1980-81 and "Steve
+Fuller elected ASG president" on 1979-80, two weeks apart.
+
+Not fixed, deliberately. No fact is wrong, one of the six is bound up with a settled fact that is
+not to be re-litigated, and moving events across sixty years of other passes' editorial judgement
+is not a thing one unsupervised run should do on its own reading. **It wants a decision, not a
+sweep.**
+
+## Traps, settled facts and the duplicate pairs
+
+The settled facts all hold on the live data: Norfleet **1981-82**, Zielke **1969-70** with Lyne
+holding 1970-71 alone, Payne **1981-82** with Ragan 1982-83, Menser first in 1967-68, Fiorella
+1972-73 and Gregory McKinney 1974-75 as regents, Straeffer president and Gerard regent in 1968-69,
+and **Reed Morgan present with his role recorded as `unresolved`** — in the file, claimed for
+neither office, which is what the evidence supports. Carlene and Darlene Lodmell appear nine times
+each with no alias mapping between them. The changed-surname people are each counted once: Vogt,
+Taylor, Coates, Hargrove.
+
+`check_duplicates.py` printed four pairs and one same-source pair. The previous pass's prose
+judged three of the four and the same-source pair; **the highest-similarity pair of all, 0.60, it
+did not mention.** It is 1997-98's designated driver cards, and it is three entries rather than
+two, each on its own source and its own business: Bill 97-3-F of 4 November 1997 allocating $900
+(the form carries both readings and an X on its Pass line), Charlie Lanter's report of 13 November
+that sober drivers were getting free drinks, and the 17 February 1998 notice that the cards would
+be distributed the next day — which labels itself a notice and says the issue is held only as a
+contents listing. Separate. None merged.
+
+Portraits: all **1,407** `photos.json` leaders entries resolve to a named person in that year,
+through the overlay's fallback to cabinet, Senate officers, members and committee chairs. **Zero
+orphans** — none attaching to nobody and silently publishing nothing. All 1,178 referenced image
+files are present and begin with real JPEG or PNG magic bytes.
+
+One claim verified at source, the newest data change on the site: the 2003-04 budget freeze,
+rewritten yesterday under #756. Ashlee Clark's report of 5 February 2004 on wkuherald.com carries
+the informal freeze, the $5.6 million ordered by Gov. Ernie Fletcher's administration, the Tuesday
+congress meeting, the $65,309.52, and the $7,400 of Aramark and foundation money. Yesterday's
+correction is right: the article attributes the funds decision to Nick Todd, SGA vice president of
+finance, and names Charley Pride as the director who would make it.
+
+## Counts
+
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. 61 years, 1,968 events, 60
+people have been president. 2,651 recorded terms of office held by 1,809 people, 2,614 of them
+(98%) carrying an account of what the person did. 1,111 pieces of legislation, every file a real
+PDF. 1,310 citations naming a volume and number. 1,317 quoted spans, none reaching 15 words. 308
+documents. 48 people recorded under more than one spelling. Photograph gap unchanged: 189 officer
+slots without a portrait, held by 159 people, 157 of them with no portrait in any year.
+
+No data file changed this pass. Nothing was cut and nothing was added.
+
+## Routes
+
+`GH_TOKEN` present; `git push --dry-run` returned `* [new branch]`, and REST answered throughout.
+`gh pr list` still 403s naming GraphQL only — not the platform gate, as this file has said since
+12 October. **The drop box was unavailable again**: `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are
+both unset, the third pass running to find it so. TopSCHOLAR's `viewcontent` route refused twice,
+95 seconds apart, so it is still closed.
+
+## For the next pass
+
+- **Read `src2`.** 127 events carry one. A check that reads only `src` will report sourced work as
+  unsourced, and the one it would have had me cut this pass was a rescue a previous pass had
+  already done properly.
+- **The forward-filing convention wants a decision**, set out above. Six events against twenty-seven.
+  Either rule is defensible; the archive currently holds both, and only a reader notices.
+- **`check_duplicates.py` cannot see across years** and nothing is in that gap today. If a pass
+  wants to close it, adjacent-year comparison on its existing functions is about fifteen lines.
+- The 1987 statewide-conference entry states $400–$500 for hosting, $18 registration and 50
+  expected against 65 at the first conference. None of that detail is in the index line, and
+  `viewcontent` is closed, so **it is the one figure-bearing claim this pass could not confirm
+  independently.** It asserts no outcome and its title says "prepared to host", so it is not a
+  notice read as a report; it is simply unverified. Worth opening when the route reopens.
