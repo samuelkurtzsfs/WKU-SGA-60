@@ -1,4 +1,4 @@
-# Photograph run, 13 October (afternoon): priorities 1/2/4 reconfirmed at zero, three more genuinely-untried officer names checked and ruled out, both gated routes still closed
+# Photograph run, 13 October (afternoon): priorities 1/2/4 reconfirmed at zero, three more officer names checked and ruled out, two of them untried, both gated routes still closed
 
 ## Priorities 1, 2 and 4: reconfirmed against the current file, unchanged
 
@@ -8,8 +8,9 @@
 **Priority 2** (any other president or student regent without a portrait): zero missing,
 reconfirmed across all 61 years.
 
-**Priority 4** (years with no photograph at all): still only **1994-95**, blocked by the same
-closed route as every pass since late September.
+**Priority 4** (years carrying no year-level photograph): still only **1994-95**, blocked by the
+same closed route as every pass since late September. It holds 27 leader portraits; what it lacks
+is a photograph of the year itself.
 
 ## Access this session
 
@@ -20,15 +21,22 @@ closed route as every pass since late September.
 - `wkuherald.com` — open, with the same short-lived intermittent 403s every recent note
   describes (cleared on a retry within 10-60 seconds each time this session).
 
-## Priority 3: three genuinely untried officer names checked, none usable
+## Priority 3: three more officer names checked, none usable
 
 Before picking names, grepped all `.research/photo-run-*.md` files for each remaining name in
 `portrait_gap.py --list`'s pre-2016 slice to separate "actually searched, zero hit" from "only
 ever named in a future-target list." Justin McDole, Tyler Scaff, Robert Bell, Cole McDowell,
 Jackie Stewart, Kara Raley and Amber Daniel/Daniels had all already been individually searched in
-earlier runs with no usable result. Three names in that same list had never actually been queried
-— they had only appeared once each, inside a single sentence in `photo-run-2026-10-11-wayback-reopened.md`
-naming future Talisman targets, not a search record:
+earlier runs with no usable result. Three names in that same list had no search record in any
+`photo-run-*.md` — they had only appeared once each, inside a single sentence in
+`photo-run-2026-10-11-wayback-reopened.md` naming
+future Talisman targets, not a search record. **Two of the three were genuinely untried; the third
+was not.** That grep covered only `.research/photo-run-*.md`, which cannot see a search logged in
+`NIGHT-REPORT.md`, and Abigail Potter was searched there: the late-September `wkuherald.com` sweep
+of six officer-gap years ran 28 names drawn from `data/organization.executive`/`.senate.officers`,
+2014-15 among them, and found no captioned frame for any of them. That entry also calls her hits
+"genuine SGA coverage," which the reading below does not bear out. All three were searched again
+this run regardless:
 
 - **Stacey Schepers** (Justice, Judicial Council, 2014-15) — zero hits in the local
   `data/herald-photos.json` caption index (21,304 captions) and zero posts from
@@ -41,11 +49,16 @@ naming future Talisman targets, not a search record:
   body. Text naming an officer without a photograph beside it does not meet CLAUDE.md's
   identification bar.
 - **Abigail Potter** (Justice, Judicial Council, 2014-15) — zero hits in the local caption index.
-  Six live hits on the bare name, none about SGA, student government, or a Judicial Council
-  (PCAL cultural programming, the folk studies program closure, a building-namesake debate, an
-  art exhibit, a speaker series, a campus band performance) — checked each post's full body text
-  for "SGA," "Student Government" or "Judicial Council" and found none. This is a different
-  Abigail Potter, not the 2014-15 officer.
+  Six live hits, none about SGA, student government, or a Judicial Council (PCAL cultural
+  programming, the folk studies program closure, a building-namesake debate, an art exhibit, a
+  speaker series, a campus band performance) — checked each post's full body text for "SGA,"
+  "Student Government" or "Judicial Council" and found none. **None of the six carries the name
+  Abigail Potter at all.** The query was unquoted, so it matched "Abigail" and "Potter"
+  separately: the Abigails are Abigail Baker, Abigail Washburn and Abigail Turner, and the Potter
+  in four of them is Potter College of Arts & Letters. This is therefore a null result for the
+  officer, not an identification of a namesake — nothing in the six names her, and nothing in
+  them names anyone else of that name either. Five of the six bodies were read directly on the
+  editor's check of 13 October; the sixth (`69699`) answered 403 on three attempts.
 
 All three ruled out on their own terms, not on a closed route. `portrait_gap.py` still reports
 189 slots / 159 people / 157 with no portrait in any year, unchanged.
@@ -66,6 +79,9 @@ since build output is not committed to this branch.
   somewhere in `.research/photo-run-*.md`, with zero portraits produced. The only path left into
   this slice is the 2012-13 through 2016-17 Talisman volumes behind the still-closed
   `cgi/viewcontent.cgi`.
+- When separating "already searched" from "never searched," grep `.research/NIGHT-REPORT.md` as
+  well as `.research/photo-run-*.md`. The editor's own passes log searches into the night report,
+  and a grep confined to the photo-run notes read one already-searched name as untried this run.
 - Both gated routes (`cgi/viewcontent.cgi`, `web.archive.org`) were tested directly this session,
   not assumed closed from memory, and both answered the same way they have since late September.
   Test them again before assuming either way, per this file's own standing advice — but do not
