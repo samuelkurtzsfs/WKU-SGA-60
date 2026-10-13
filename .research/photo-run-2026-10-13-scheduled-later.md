@@ -1,4 +1,4 @@
-# Photograph run, 13 October (later scheduled pass): priorities 1, 2 and 4 reconfirmed at zero; wkuherald.com open and worked through 36 names in the officer gap, none usable
+# Photograph run, 13 October (later scheduled pass): priorities 1, 2 and 4 reconfirmed at zero; wkuherald.com open and worked through 33 names in the officer gap, none usable
 
 ## Priorities 1, 2 and 4: reconfirmed against the current file
 
@@ -25,7 +25,7 @@ same closed route as every pass since late September (see below).
   description of this host's intermittency. This was the one open route worth spending the
   session on.
 
-## Priority 3: 36 names searched on wkuherald.com, none produced a usable portrait
+## Priority 3: 33 names searched on wkuherald.com, none produced a usable portrait
 
 Picked up where the 13 October scheduled note left off — the standing list of untried
 post-2011 officer-gap names, plus a check of several 2011-2021 names that a `grep` across all
@@ -59,11 +59,14 @@ Two near-misses, checked in detail and ruled out:
 One gallery fully worked through for completeness: article 65821 ("SGA election results
 announced, Cole Bornefeld wins presidency") links an 8-photo gallery (media 65823-65830).
 Fetched each media record's own caption rather than relying on the one embedded in the post.
-Six of the eight resolved (two, 65828 and 65830, returned 403 on their own media endpoint);
-none names Mallory Hardesty, Reed Hensley or Daniel/Danny Vuleta, all three of whom the same
-article's body text lists among the new senators. The photographs cover only Sam Kurtz, Cole
-Bornefeld, Alexis Courtenay and Chief Justice Holden Schroeder (Schroeder already has a
-portrait in `data/photos.json`).
+All eight resolve, though not on one pass: 65826 and 65828 each returned a single 403 on
+their own media endpoint and answered on a short retry, so a 403 here means try again rather
+than that the record is closed. None of the eight names Mallory Hardesty, Reed Hensley or
+Daniel/Danny Vuleta, all three of whom the same article's body text lists among the new
+senators. The faces the captions do identify are Sam Kurtz, Cole Bornefeld, Alexis Courtenay,
+Chief Justice Holden Schroeder, and — in 65828, 65829 and 65830 — Garrison Reed. Schroeder and
+Reed both already carry a portrait in `data/photos.json` (Reed under 2022-23, reused for
+2023-24), so the gallery adds no face the archive lacks.
 
 Also checked figure-by-figure (not just the featured image) on three multi-photo articles that
 the body-text search flagged as mentioning a gap name: 90387 (6 figures, Tyreesha Morris named
@@ -88,9 +91,13 @@ events, 60 presidents, "the archive checks out against its own rules." `site/` w
 - wkuherald.com's WP-JSON API (`/wp-json/wp/v2/posts?search=...&_embed=1` and
   `/wp-json/wp/v2/media/{id}`) is the one open route, and this pass worked through essentially
   the whole standing post-2011 gap list without a hit — the hit rate really is close to zero
-  now, not just in this run's small sample. The few names from 2011-2021 that a cross-check of
-  all 66 prior `.research/photo-run-*.md` files showed as never searched (Temple Ricke, John
-  (Jack) McKinney, Chase Coffey, Lucas Knight) are now checked too, with the same result.
+  now, not just in this run's small sample. The names from 2011-2021 that a cross-check of
+  all 66 prior `.research/photo-run-*.md` files showed as never searched are three, not four:
+  Temple Ricke, Chase Coffey and Lucas Knight, now checked, with the same result. John "Jack"
+  McKinney does **not** belong on that list — `photo-run-2026-10-02.md` had already searched
+  him on this same host and recorded the outcome (one wkuherald.com hit and one general-web
+  hit, both about a later Judicial Council cohort rather than the 2016-17 officer this record
+  wants). The grep that produced the never-searched list missed him.
 - A featured image's filename alone (`Screen-Shot-...png`) is a useful tell that it is not a
   face photograph even before spending a download attempt on it — Kayla Distler's case is the
   worked example.
@@ -103,3 +110,29 @@ events, 60 presidents, "the archive checks out against its own rules." `site/` w
   web.archive.org routes. There is very little low-hanging fruit left on the open route; the
   next real gain is more likely to come from one of the two closed routes opening than from
   further wkuherald.com name-by-name search.
+
+## Corrected on editorial review, 13 October
+
+Three claims in this note as first written did not survive a check against the repository and
+against the cited pages. The corrections are in the text above; what they were is recorded here
+so a later pass can see the reasoning rather than just the result.
+
+- **The name count was 36 and is 33.** The list of names checked without a usable portrait holds
+  30; the three near-misses set out separately (Kayla Distler, Carter Smith, John "Jack"
+  McKinney) bring it to 33. "Daniel Vuleta" is the election story's spelling of Danny Vuleta and
+  is one name, not two; Mallory Hardesty, Reed Hensley and Vuleta appear again in the gallery
+  paragraph but were already counted in the 30.
+- **John "Jack" McKinney had been searched before.** He was listed among four names a grep of the
+  66 prior run notes was said to show as never searched. `photo-run-2026-10-02.md` searched him
+  on wkuherald.com and wrote the result down. The other three on that list are genuinely new.
+- **The 65821 gallery identifies a fifth person.** Garrison Reed is named in the captions of
+  65828, 65829 and 65830; the note said the photographs covered only four people. No portrait
+  was lost to the error — Reed already has one — but the sentence was wrong. Both images the note
+  reported as refused answered on a retry, so all eight captions are readable.
+
+Verified unchanged in the same pass: all four priority-1 portraits present; zero presidents or
+student regents without a portrait for their own year; 1994-95 still the only year with no
+scene photograph; `portrait_gap.py` at 189 slots / 159 people / 157 people with no portrait in
+any year; the Kayla Distler and Carter Smith captions word for word against their media records;
+`cgi/viewcontent.cgi` still 403 on article 8989 and `web.archive.org` still resetting, with
+plain `archive.org` answering 200.
