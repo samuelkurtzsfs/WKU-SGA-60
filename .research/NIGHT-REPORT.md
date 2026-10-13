@@ -45836,3 +45836,96 @@ both exit 0, on the merged tree.
   whose hit rate across the names tried since 7 October is zero. The two closed routes remain
   the better prospects if either opens — article 8989 for the 1994-95 year photograph, and the
   pre-2011 slice of the officer gap.
+
+---
+
+# 13 October, second scheduled editor pass: #758 merged, seventeen claims checked, nothing cut
+
+One pull request in the queue and it is merged. **#758, "Night report, 13 October scheduled
+review"**, the night report of this morning's own editor pass. The queue is empty again.
+
+## What was in it
+
+Eighty-six lines appended to `.research/NIGHT-REPORT.md`, and nothing else — no event, no
+portrait, no officer, no change to `years.json` or `photos.json`. `build.py` reads
+`branches-checked.json` and `branches-unverified.json` out of that directory and no markdown, so
+nothing in this merge reaches a reader. The review was therefore of the note's accuracy as a
+record, not of anything going on the site.
+
+## Spot check: seventeen claims, seventeen held
+
+The diff being small enough to take whole, everything checkable was checked rather than sampled.
+
+The counts are exact against the tree: 61 years, 1,968 events, 60 presidents; 2,651 terms of
+office held by 1,809 people with 2,614 of them (98%) carrying an account; 1,111 pieces of
+legislation; 1,310 citations naming a volume and number; 1,317 quoted spans and none reaching
+fifteen words. The portrait claims are exact too — all four of the once-missing presidents carry
+one, zero of the 73 leader records across the 61 years lack one, 1994-95 is still the only year
+with no entry in `photos.json`'s `years` array, and `portrait_gap.py` reports 189 slots, 159
+people, 157 with no portrait in any year.
+
+All four access claims were reconfirmed against the live routes rather than taken on trust.
+`cgi/viewcontent.cgi` on article 8989 answers 403 behind a Cloudflare challenge;
+`web.archive.org` resets at the TLS layer while plain `archive.org` returns 200; and the
+`wku.edu/news` Student Government Association category returns HTTP 200 and a real page reading
+"No News Articles Found", which confirms the one genuinely new finding of the morning pass — an
+empty category, not a block, and so a permanent dead end no future pass need retry as an access
+question. The officer searches resolve exactly as reported: one wkuherald hit for Herlick, two
+for Banales, the same titles.
+
+The morning pass's one correction checks out in every particular. Post 19382 carries no `<img>`
+in its body but does carry `featured_media` 19383, and that media record has empty `alt_text`,
+an empty caption, the hash title `148fbba2660a7e4d0599e56cb93c6b48-1` and an upload date of
+25 September 2019. So the reason it replaced was wrong and the conclusion it kept was right, and
+trimming rather than cutting was the correct repair.
+
+## Traps and the duplicate pairs
+
+With no event, person or photograph added, the advance-notice, chair-as-officer, surname-matching,
+changed-surname and April-election traps cannot arise, and no settled fact is touched. The two
+living people named carry their SGA roles and the fact that no portrait was found; post 19382
+does name Herlick in running text alongside Collins, Reynolds and Schroeder, so the public
+naming is confirmed at the source rather than assumed.
+
+`check_duplicates.py` exits 1 whenever it finds pairs — its design, not a failure. Its five were
+judged independently this pass and none merged. 1991-92 is a bill introduced on 28 January and
+defeated on 6 February, nine days and two sources apart, and the second entry is careful not to
+assert the two are the same bill. 1971-72 is a lawsuit the union was reported planning in
+February and the organisation formally endorsed a month later. 2003-04 is a debate in September
+and a unanimous vote three weeks after it, on two separate Herald articles. The three 2026-27
+entries drawn from one meeting report carry genuinely different business — a resolution, a
+syllabus statement with a swearing-in, and the opening of the fall election. And the 1997-98
+pair is a bill adopted in November against a distribution announced the following February, where
+the February entry is a model of correct advance-notice handling: it claims only that the cards
+were to go out the next day and says outright that the archive holds nothing but a contents
+listing.
+
+## Counts after the merge
+
+61 years, 1,968 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 98% of those terms with an account of what the person did. 1,111 pieces of
+legislation, every file present and a real PDF. 1,310 citations naming a volume and number,
+1,317 quoted spans and none reaching fifteen words. `build.py` clean, `check_data.py` and
+`check_contrib.py` both exit 0, on the merged tree.
+
+## For the next pass
+
+- **The queue is empty.** Nothing is open and nothing is left unmerged.
+- The standing brief is wrong in the same two places, now for a thirteenth pass. #6, #7 and #8
+  have been closed since 18 August. And the `gh pr list` 403 it reads as the platform gate names
+  GraphQL only: `gh api repos/{owner}/{repo}/pulls` listed the queue normally this run, while
+  `git push --dry-run` returned `* [new branch]`. A run that took that 403 at face value would
+  have dropped into review-only mode and posted its verdict nowhere, `SGA60_SITE` and
+  `SGA60_RESEARCH_TOKEN` being unset again. **Probe both routes at the start of a run; neither
+  is a backup for the other here.**
+- **A fresh clone makes dead branches look like a backlog.** `research-roster-2010s`,
+  `research-roster-2020s` and `research-senate` showed as new branches on fetch this pass and as
+  "ahead" of main. All three share no merge base with main and all three had their work merged
+  long ago — #296, #297, and thirty pull requests up to #225. The ahead-count is an artefact of
+  the orphan history. Do not read it as pending work, and do not merge one into main.
+- wkuherald's intermittency is worth budgeting for rather than treating as a block: three
+  requests this pass answered 403 and cleared on retry within about a minute. Back off and retry
+  before recording a name as unreachable.
+- The photograph gap is unchanged: 157 people with no portrait anywhere, and the two closed
+  routes remain the better prospects if either opens — article 8989 for the 1994-95 year
+  photograph, and the pre-2011 slice of the officer gap.
