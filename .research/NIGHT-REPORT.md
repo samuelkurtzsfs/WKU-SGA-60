@@ -46270,3 +46270,185 @@ every file present and a real PDF. 1,310 citations naming a volume and number. `
 Nothing. The queue is empty after this merge. The standing block is unchanged: the only route left
 into the pre-2016 officer gap, and into 1994-95's missing year photograph, is the Talisman volumes
 behind `cgi/viewcontent.cgi`, which has been closed since late September.
+
+# 13 October 2026 (editor, sixth scheduled pass) — an empty queue, the settled facts checked back one by one, and a year of slippage the validators cannot see
+
+## What was open
+
+Nothing. `gh api repos/.../pulls?state=open` returned `[]`, and #763 `research-photos` and #764, the
+fifth review of the day, are the last two things merged. `gh pr list` answered 403 naming GraphQL,
+as it does on every pass; `gh api` answered normally and `git push --dry-run` reported
+`* [new branch] HEAD -> access-probe`, so this was a full-mode pass. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still unset, so route two was again unavailable and route one was the
+only way to land anything.
+
+The standing brief still names #6, #7 and #8 as open and stale since 4 August. They have been
+closed unmerged since 18 August, and this is at least the twenty-first pass to record it.
+
+All thirteen `research-*` branches were checked by content rather than by commit count, which is
+the only way to read them. `research-photos` is content-identical to `main` across `data/`: it
+differs by 76 lines of this file and nothing else, so #763 took everything it held. The other
+twelve have **no merge base with `main`** — they are the superseded 4 August snapshots
+AGENT-LANDING.md warns about, and the warning is exact. Merging any one of them would delete
+around 200,000 lines of `data/`: `research-roster-2020s` alone shows 204,107 deletions against
+3,652 insertions. They were left alone. Nothing anywhere carries unlanded research.
+
+## The live record, checked rather than assumed
+
+With no queue, the pass audited `main` itself.
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0 — verified by capturing the exit
+status directly, not through a pipe, which is worth saying because a `| tail` in front of
+`echo $?` reports the status of `tail` and will cheerfully call a failing script clean.
+`check_duplicates.py` exits 1 by design on the four title pairs and one same-source pair it
+reports; all five are pre-existing and all five are genuinely separate business, which is the
+same judgement the fourth pass reached. The withdrawal of five photographs on every build is
+`_do-not-use.json` working as intended: barred identifications keep their files on disk for the
+photograph routine and are kept out of the site.
+
+**Every settled fact in CLAUDE.md was read back out of the data, one by one.** Norfleet is
+1981-82 and has not been filed forward again. Menser is 1967-68, president and regent both.
+Fiorella 1972-73, McKinney 1974-75, Zielke 1969-70, Lyne 1970-71 alone, Payne 1981-82, Ragan
+1982-83. Reed Morgan carries the role `unresolved` in 1968-69 and is claimed as neither president
+nor regent, which is what the record supports. Carlene and Darlene Lodmell appear separately,
+two mentions and three, and `name-aliases.json` contains the string "Lodmell" zero times, so
+nothing has merged the sisters. The 1974-75 LaCivita portrait is present, is a real JPEG
+(`ff d8 ff e0`), is absent from the barred list and is served at `site/photos`. It has not been
+withdrawn a third time.
+
+Two of those checks first came back ABSENT and were the checker's fault, not the archive's:
+LaCivita is recorded as "Thomas LaCivita", and the Lodmell sisters sit in the officer layer
+rather than in `leaders`. Worth recording, because a name-shaped check that greps for the wrong
+string reports a clean miss in exactly the voice of a real finding.
+
+## Spot verification: eight entries, every claim at its source
+
+No diff to sample, so the sample was taken from the live record, weighted to the newest and most
+exposed content and to the cluster the audit below turned up. Every claim held; nothing was cut.
+
+- **2000-01, the Martin-Bedo result**, against WKU's own release of 14 April 2000 on the Wayback
+  Machine. Six claims, six confirmed, several verbatim: "a Glasgow junior", the regent seat that
+  came with the presidency, 654-541 over Wright and Campbell "in Thursday's election", Caswell
+  over Lyons 706-461, Howard and McClard unopposed. 13 April 2000 was a Thursday.
+- **1999-00, "Martin elected; faculty evaluations move forward"**, against the index of *Herald*
+  75:53. All three claims sit in the issue's own article list, the editorial under its printed
+  title "Cassie Martin Must Stand Up on Tough Issues" and the evaluations under "Student
+  Government Association to Conduct, Publish Faculty Evaluations Next Fall".
+- **2026-27, the 1 September budget**: $113,481 approved, stipends the largest line at $27,000,
+  scholarships $23,000, five roles sworn. All four verbatim in the *Herald* of 1 September.
+- **2026-27, the non-traditional scholarship** of the same meeting: the university's definition,
+  Lucas on rubrics missing the students most in need, the raffle awarded. Confirmed.
+- **2026-27, the Truman Scholarship**: WKU's second, Kentucky's only recipient, one of 55 rising
+  seniors from 198 finalists, 781 candidates, 305 institutions. Every figure exact, and the
+  entry's "nine days after winning" is right — 15 to 24 April.
+- **2026-27, Resolution 4.6 F**: passed unanimously, pitched by sophomore senator Landon Terry,
+  moving icons against timetables the authors called inaccurate. Confirmed.
+- **2026-27, the syllabus statement**: the committee's work with faculty and administrators, from
+  the spring semester, Carter Smith sworn in at the same meeting. Confirmed. The entry names the
+  "Mental Health and Wellbeing Committee" where this article abbreviates it to "SGA Mental Health
+  Committee"; the longer form is the committee's established name across the archive and in
+  *Herald* photograph captions, so the entry is right and the article is short, not the reverse.
+- **2026-27, "Fall election voting opens with 28 candidates"**, the best-made entry in the sample.
+  28 is nowhere in the source: the *Herald* prints 20 freshmen, six from the Gatton Academy, one
+  international and one graduate candidate, and the entry says so and then says "which come to
+  28", showing its arithmetic instead of hiding it. It also records that the paper dated the
+  opening only as "today" in an issue published the day after the meeting, so the opening date is
+  not fixed, while the close — 4 p.m. on 25 September — is. That is the standard.
+
+One article, the *Herald* of 29 September, answered 403 to four attempts across two user agents
+while other articles on the same site answered 200, and the Wayback availability API answered 429.
+Its four entries were therefore not opened at source this pass. They are not unsupported — the
+fifth pass of 11 October checked the dental-voucher figures against this article — but they were
+not re-checked here, and a later pass should open them.
+
+## The audit: a year of slippage neither validator can see
+
+`check_data.py` tests that an event's **year** falls inside `start .. start + 2`. It never looks at
+the month. So an event dated April 1981 passes inside 1981-82, although April 1981 belongs to
+1980-81: a full academic year of slippage is invisible to it. And `check_duplicates.py` compares
+events only **within** one year, so an election written up once in the year it was held and again
+in the year its winner went on to serve is invisible to that too, however close the titles.
+
+Swept mechanically, **43 events sit outside the academic year that holds them**, plus five dated
+`YYYY-01-01`, which is this file's way of dating to the year alone and not a fault. Most of the 43
+are deliberate and should stay: the founding of the organisation in spring 1966 under 1966-67, a
+schedule published in June 1976 for the year it covers, Nick Todd resigning in July 2004 in the
+year he was elected to.
+
+But the sweep found the archive running **two conventions at once** for spring elections. Of 67
+election-result events dated March to May, **54 sit in the academic year the vote happened in**
+and **13 are filed forward**, with the administration the vote produced. Four calendar months end
+up with election results under two academic years at the same time. Judged one by one:
+
+- **April 1972** and **April 1979** are false positives of my own detector, and I have left the
+  wording that produced them in the script rather than tune it blind: "six votes won on a
+  university council" is not a presidential election, and Hargrove's swearing-in a week after
+  Hargrove's election is a second event, not a second telling.
+- **April 1999** is a real inconsistency. Three results from one issue, *Herald* 74:51 of 15 April,
+  are split across two years: the presidential recount and "Griffey and Bastin win the remaining
+  executive seats" sit in 1998-99, while the vice president of finance race sits in 1999-00. The
+  word "remaining" is doing work the pages cannot support, because the race it implies is complete
+  is on the other year's page.
+- **April 2000 is one vote reported twice.** 1999-00 carries "Martin elected; faculty evaluations
+  move forward" from the *Herald* of 18 April; 2000-01 carries "Martin-Bedo ticket won SGA
+  presidency" from the university's release of 14 April. Both are accurate — both were opened at
+  source this pass and every claim in them held — and both report the same election. A reader of
+  either page sees a vote the other page also claims.
+
+**Nothing was moved, and that is a decision rather than an omission.** CLAUDE.md's remedy for one
+event written twice is to combine the entries so no sourced fact is lost and cite both sources.
+Applying it here means choosing which year the April 2000 election belongs to, and that choice is
+the convention question itself. Combining into 1999-00 would follow the majority convention and
+would also rule, for one case out of thirteen, that forward-filing is wrong — leaving the other
+twelve standing and the record *less* consistent than either wholehearted choice. Thirteen entries
+across six decades need one decision applied to all of them, and an unattended pass is the wrong
+place to take it. CLAUDE.md's "never silently change a year" points the same way.
+
+**The recommendation, for the owner:** file every election in the academic year the vote happened,
+which is already what 54 of 67 do, and move the 13; then combine the April 2000 pair into the
+1999-00 entry, keeping the release's vote counts and full slate and citing both sources. The
+alternative — forward-filing everywhere — would move 54 entries and break the run of a year's
+business across its own page. Either way the April 1999 "remaining" wording needs rewriting once
+its races sit together.
+
+## What was added
+
+`scripts/check_year_filing.py`, which reports both blind spots: events dated outside the year that
+holds them, and one election's results reported under two academic years. It is modelled on
+`check_duplicates.py` — it reports and the editor judges — and it **always exits 0**, so it can
+never gate a build, and CI does not run it. Its docstring says plainly that the 43 are mostly
+deliberate and not a defect list, because a future pass that reads them as a worklist and moves
+them unexamined would do real damage. The four split months above are recorded here with their
+judgements so that work is not repeated.
+
+## The traps checklist
+
+No diff to run it against, so it was run against what the pass touched. No advance notice was
+written up as a result: the one derived figure in the sample, the 28 candidates, shows its
+arithmetic and cites the four constituencies it adds. No committee chair recorded as an officer and
+no bill author as a member. Nobody matched by surname alone. No changed surname merged anyone —
+the Lodmell check above is the hard case and it holds. The April-election trap is the subject of
+the audit and is reported, not silently fixed. Nothing contradicts a settled fact; all eleven were
+read back. Nothing about a living person goes beyond its source: the Truman entry still omits the
+family detail its release prints, and the 1999 flier and racially-charged-flier entries still name
+only what the *Herald* named and still say outright that no source reports how the investigation
+ended. No contributor edit was in scope.
+
+The 24 April Truman entry is still standing with the fourth pass's question against it — a
+national award to an individual is not SGA acting, and it already appears in Lucas's profile.
+That was left as the owner's call and is not re-argued here.
+
+### Counts
+
+61 years, 1,968 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 2,614 of them (98%) carrying an account of what the person did. 48 people recorded
+under more than one spelling or name. 1,111 pieces of legislation, every file present and a real
+PDF. 1,310 citations naming a volume and number. 1,317 quoted spans, none reaching 15 words.
+308 documents, 4,949 search records, 61 year pages and 7 decade pages built.
+
+### Still open
+
+Nothing in the queue. Two things want a person: the spring-election filing convention above, and
+the standing block on the pre-2016 officer gap and 1994-95's missing year photograph, which still
+needs the Talisman volumes behind `cgi/viewcontent.cgi`, closed since late September. The
+*Herald* of 29 September should be re-opened at source when it stops answering 403.
