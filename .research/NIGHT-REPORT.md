@@ -46452,3 +46452,132 @@ Nothing in the queue. Two things want a person: the spring-election filing conve
 the standing block on the pre-2016 officer gap and 1994-95's missing year photograph, which still
 needs the Talisman volumes behind `cgi/viewcontent.cgi`, closed since late September. The
 *Herald* of 29 September should be re-opened at source when it stops answering 403.
+
+# 13 October 2026 (editor, seventh scheduled pass) — #766 merged after two trims, a word cut that the page does not support, and 210 lines of churn sent back
+
+## What was open
+
+One pull request, #766, "Research: photographs", opened this evening by the photograph routine.
+The queue held nothing else.
+
+The brief names #6, #7 and #8 as three stale pull requests standing open since 4 August. They
+are not open. All three were closed on 18 August 2026 and have been closed ever since. That
+line in the brief has been wrong for nearly two months and should come out of it.
+
+## #766 — merged as c17046f9
+
+The diff claimed 94 files and 368 insertions. Underneath that it was one new entry: a single
+photograph in `data/photos.json`'s `years` array, closing 1994-95, which was the last academic
+year in the file with no year-level photograph. Everything else was a site rebuild and a
+re-serialisation.
+
+Because the diff held one new claim rather than eight, all of it was opened rather than a sample.
+
+The issue PDF was pulled again from the same `web.archive.org` copy the run used: 27,977,595
+bytes, `%PDF-1.7`, 21 PDF pages, matching the run's own figures exactly. The landing page at
+`dlsc_ua_records/7984` gives the issue as Vol. 69, No. 51 [52], 19 April 1994, and its index
+carries both "Scott Sivley vs. Rob Evans at Polls Today" and "Vote Rob Evans, Tara Higdon".
+
+The advertisement is on printed page 11, which is PDF page 12. The file runs one page out and
+PDF page 11 is printed page 10, which holds the ping-pong club, Service One and a Ho-Jo's
+advertisement. The citation's "p. 11" is correct as a printed page number, which is the
+convention here, but the next run should know the offset before it goes looking.
+
+The page carries ELECT, "Rob Evans / President" boxed at the left, "Tara Higdon /
+Vice-President" boxed at the right, the photograph between them with a man at the left and a
+woman at the right in the same order as the two boxes, and VOTE TODAY with the DUC Lobby
+polling hours beneath. The credentials column that survives in the saved crop — Senior Class
+Vice-President, 1990-91 SGA Treasurer, Author Fall Break Legislation, Organizational Aid
+Founder — is the advertisement's left-hand column, and this archive independently records Rob
+Evans as SGA treasurer in 1990-91. That is what fixes the crop to this advertisement and not
+another one in the issue.
+
+Filing it under `years` rather than `leaders` was the right call and it stands. No face is
+identified, so the one risk that matters with a two-person photograph never arises.
+
+## What was cut
+
+**The word "paid", from the caption and from the run note.** The page is plainly a display
+campaign advertisement, but nothing on it says "paid for by", and the issue index attributes
+the item to a named person rather than leaving it unattributed as an advertisement. The
+commercial arrangement is not in the source. The run's own stated reason for the word was so
+that a reader is not misled about what kind of document it is, and "campaign advertisement"
+does that without asserting anything the page does not say.
+
+**The citation, aligned to "Herald 69:51 [52]".** The entry had it as plain 69:51. The bracket
+is the archive's own title for this issue and the form every other citation of it in
+`years.json` already uses. Dropping it quietly settles an issue number the archive itself
+leaves open.
+
+Neither was a reason to hold the pull request. Both are the ordinary trim back to what the
+source proves.
+
+## Sent back to the routine
+
+`data/photos.json` arrived re-dumped with ASCII escapes, every em dash and curly quote rewritten
+as `\uXXXX`. Not one character of content changed, but it rewrote 210 lines of unrelated entries
+and turned a nine-line addition into a 211-line diff. `scripts/merge_photo_finds.py` writes this
+file as `json.dumps(overlay, indent=1, ensure_ascii=False)`; the routine needs to match it. The
+file was restored before merging, so what landed is the nine lines it should have been.
+
+This one is worth naming because of what it costs rather than what it breaks. A reviewer who
+cannot see the claim through the churn is a reviewer who is likelier to wave it through.
+
+## The traps, against this diff
+
+- **Advance notice.** The sharpest risk here and the entry passes it. The source is an
+  election-day advertisement and the entry writes no result out of it. "Evans went on to win"
+  rests on the *Herald* of 21 April, the 2001 roster and the Board minutes of 15 August 1994,
+  all already cited on this year. The event already on main for the same issue is careful in
+  the same way: it records that the issue was printed on polling day and carries no result.
+- **Spring elections file forward.** April 1994 vote, filed 1994-95. Correct.
+- **Committee chair as officer, bill author as member, surname-only matching, a changed
+  surname making a second person.** None in play. The diff adds no person.
+- **Living people.** The caption covers candidacy and outcome, both public SGA service, and
+  nothing else.
+- **Settled facts.** Nothing in section 7 is touched.
+- **Contributor edits.** None in this diff.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py`
+reports four title pairs and one same-source pair, every one of them already on main and none
+from this diff. All five were read: a student regent advisory bill introduced on 28 January
+1992 and the same bill failing on 6 February; the Civil Liberties Union planning action in
+February 1972 and Associated Students endorsing it in March; SGA taking a position on
+plus/minus grading in September 2003 and passing legislation on it three weeks later;
+designated driver cards in November 1997 and their distribution the following February; and two
+pieces of business from one 2026 meeting write-up. Separate events in every case. Nothing
+merged.
+
+## Counts after the merge
+
+61 years, 1,968 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 2,614 of them (98%) carrying an account of what the person did. 1,111 pieces of
+legislation, every file present and a real PDF. 1,311 citations naming a volume and number.
+1,317 quoted spans, none reaching fifteen words. 48 people recorded under more than one
+spelling.
+
+## The branch estate, swept
+
+Every `research-*` branch on origin was compared with main outside `site/`. Of 84 branches, 76
+differ from main by nothing at all — the commit counts run into the thousands but the content
+is identical, an artefact of the August history rewrite rather than unlanded work.
+
+Seven editor branches each add a block to `.research/NIGHT-REPORT.md` and nothing else:
+`1009-night`, `1010-morning`, `1010-night`, `1010-night-review`, `1010-scheduled`,
+`1013-scheduled` and `1013-second-scheduled`. Every added line on all seven is already present
+on main, word for word. They are stale re-additions of entries that landed by another route,
+not stranded research, and merging any of them would duplicate an entry. Nothing is lost by
+leaving them, and they can be deleted whenever someone wants the list shorter.
+
+So: no unlanded research anywhere on the remote tonight, and the one thing that was open is in.
+
+## Still open
+
+- The pre-2016 cabinet and Senate officer gap, 157 of 159 officers with no portrait anywhere.
+  Still entirely behind `cgi/viewcontent.cgi`, which answered 403 again this evening.
+- The spring-election filing convention, raised by the sixth pass and still undecided: 54
+  results sit in the year the vote happened and 13 are filed forward. `check_year_filing.py`
+  reports it. It needs one decision applied to all thirteen, and it is the owner's to make.
+- The brief's reference to #6, #7 and #8 as open. They have been closed since 18 August.
