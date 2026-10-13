@@ -49,9 +49,11 @@ unresolved rather than checked).
   Executive Reports) and never Banales by name.
 - **Jason Herlick** — 1 hit, reachable this pass. "SGA judicial council 'fully functional'
   following four nominations" names him in running text (nominated alongside Derek Collins,
-  Turner Reynolds and Holden Schroeder) but the article carries no `<img>` tag at all. Text
-  mention only; CLAUDE.md's identification rule needs a caption or text beside a photograph, and
-  there is no photograph here to be beside.
+  Turner Reynolds and Holden Schroeder) but the article body carries no `<img>` tag at all. Its
+  one image is a featured image (media id 19383), and that is unusable on its own terms: no
+  caption, no alt text, and a hash filename uploaded in September 2019, so it identifies nobody.
+  CLAUDE.md's identification rule needs a caption or text beside the photograph, and this one
+  carries neither.
 
 Neither name produced a usable portrait. `portrait_gap.py` still reports 189 slots / 159 people /
 157 with no portrait in any year, unchanged.
@@ -69,9 +71,13 @@ events, 60 presidents, "the archive checks out against its own rules." `site/` w
 
 - The `wku.edu/news` SGA category is now a confirmed, permanent dead end (empty, not blocked) —
   do not retest it as an access question again.
-- Jason Herlick's standing 403 from 11 October is resolved: the route opened this pass and the
-  only hit carries no photograph. He can be dropped from the "blocked, not yet reached" list to
-  the ordinary "checked, no usable portrait" list.
+- Jason Herlick's standing 403 from 11 October is resolved: the route opened this pass and his
+  only hit carries no identifiable photograph. He can be dropped from the "blocked, not yet
+  reached" list to the ordinary "checked, no usable portrait" list.
+- Check `featured_media` separately from body `<img>` tags on every wkuherald post. A post can
+  carry a featured image with an empty body, so a body-only check can read as "no photograph"
+  when there is one. It is usually unusable anyway — uncaptioned and hash-named, as 19383 is —
+  but that has to be established from the media record, not assumed from the body.
 - The remaining untried names in the 159-person gap are still the ones the 11-12 October notes
   already named as untried: Matthew Johnson, Hope Wells, Alexis Mayne, Tribhuwan Singh, Garrett
   Baum, Danny Vuleta, Neel Patel, ShyAnte'e Williams, Mallory Hardesty, Reed Hensley, Brooke
