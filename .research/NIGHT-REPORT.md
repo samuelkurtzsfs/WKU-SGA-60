@@ -46194,3 +46194,79 @@ both unset, the third pass running to find it so. TopSCHOLAR's `viewcontent` rou
   `viewcontent` is closed, so **it is the one figure-bearing claim this pass could not confirm
   independently.** It asserts no outcome and its title says "prepared to host", so it is not a
   notice read as a report; it is simply unverified. Worth opening when the route reopens.
+
+---
+
+## 13 October, the editor's fifth scheduled review: #763 merged after two reasoning errors were corrected
+
+One pull request open, #763 on `research-photos`, the rolling portrait hunt. The three branches
+the scheduled brief still names as stale since 4 August — #6, #7 and #8 — have all been closed
+for weeks; the brief is frozen and should not be read as a queue. GitHub answered normally over
+REST this run, GraphQL aside, so the review ran in full and the merge landed.
+
+The diff was one new `.research` note and nothing else: no change to `years.json`,
+`photos.json` or `data/photos/`, so no claim in it reaches the published site. A negative-result
+run, and the sort that still deserves checking, because what a photograph note records as
+exhausted is what the next run skips.
+
+Fifteen claims checked, eleven of them against something other than the note. Priority 1's four
+names all carry portraits; priority 2 is genuinely at zero, computed across every leader in the
+file; 1994-95 is still the only year without a year-level photograph. `portrait_gap.py` returns
+189 slots, 159 people and 157 without a portrait anywhere, to the digit. `herald-photos.json`
+holds 21,304 captions, also to the digit, and the three names really are absent from it — the
+112 "Glasgow" hits are the Kentucky town and the four "Kasey" hits are two other people. Kasey
+Glasgow's article is exactly what the note says it is: post 39087 of 3 September 2014, naming her
+for Student Affairs in running text, carrying no featured image and no image in the body, and
+correctly refused on the identification bar rather than written up from the text. Stacey Schepers
+returns nothing even on the bare surname. All three offices match `years.json` and
+`officers-eras.json`, and all three are described as committee or judicial posts, not as officers.
+Both gated routes were retested here and answered as reported: 403 behind the Cloudflare
+interstitial on `viewcontent.cgi`, a connection reset mid-handshake on `web.archive.org`.
+
+Two things failed, both in the note's reasoning rather than its observations, and both were
+corrected on the branch before the merge.
+
+The first was the surname trap, arrived at from the other direction. The note read six
+`wkuherald.com` hits on Abigail Potter as belonging to a different person of the same name. None
+of the six carries that name at all. The query was unquoted, so it matched the forename and the
+surname separately: the Abigails are Abigail Baker, Abigail Washburn and Abigail Turner twice
+over, and the Potter in four of them is Potter College of Arts & Letters. Five bodies were read
+directly for this check and the sixth answered 403 three times. The note's observation was sound
+and its outcome stands, but "a different Abigail Potter" asserts a second person of that name
+that nothing in the record shows, so it now reads as what it is — a null result for the officer.
+An unquoted two-word query against a university paper will match a college name sooner or later;
+this is the first time it has done so in a way that produced a conclusion about a person.
+
+The second was the claim that all three names were untried. `NIGHT-REPORT.md` records a
+late-September sweep of six officer-gap years, 28 names drawn from the organization layer with
+2014-15 among them, and names Abigail Potter in it. Two of the three were untried, not three. The
+run's grep covered `.research/photo-run-*.md` alone, which cannot see a search logged in this
+file — which is where the editor's own passes go. The note now says so, and tells the next run to
+grep both.
+
+Worth recording for whoever meets it next: that September entry called her hits "genuine SGA
+coverage," and this check does not bear that out. The same forename-plus-college match, described
+too generously the first time and inherited unexamined since. The "fully exhausted" verdict on the
+pre-2016 slice of the officer gap survives both corrections, and now rests on a search record for
+every name in it rather than on a novelty claim.
+
+Nothing else tripped the checklist. No events were added, so there was no advance notice to catch;
+no April result to misfile; nobody merged, split or created; no contributor edit in the diff; and
+nothing said about a living person beyond its source once the Potter line was trimmed. The four
+title pairs and one same-source pair `check_duplicates.py` reports are all pre-existing on main
+and all genuinely separate business — a bill introduced and the same bill failing after amendment,
+a lawsuit planned and then endorsed, a position taken and legislation passed three weeks later,
+and two items from one meeting write-up.
+
+### Counts after the merge
+
+61 years, 1,968 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 98% of them carrying an account of what the person did. 1,111 pieces of legislation,
+every file present and a real PDF. 1,310 citations naming a volume and number. `build.py`,
+`check_data.py` and `check_contrib.py` all clean.
+
+### Still open
+
+Nothing. The queue is empty after this merge. The standing block is unchanged: the only route left
+into the pre-2016 officer gap, and into 1994-95's missing year photograph, is the Talisman volumes
+behind `cgi/viewcontent.cgi`, which has been closed since late September.
