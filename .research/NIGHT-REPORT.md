@@ -45626,3 +45626,127 @@ could close it were all shut this pass, independently confirmed. The run's own i
 `wkuherald.com` as uncertain rather than permanently blocked was right: it now has a second
 independent 403, but still following a burst, so the next pass should test it with one paced
 request before concluding either way.
+
+# 13 October 2026, editor pass — an empty queue, and three live entries trimmed to their sources
+
+No pull request was open. The three branches this pass's standing brief names as stale and open —
+#6 photographs, #7 the 1980s, #8 the 2020s — have been **closed since 18 August 2026**, and the
+brief should stop carrying them forward. `research-photos`, the one routine pushing lately, is
+level with `main` at zero commits ahead, so nothing was waiting anywhere: the queue is genuinely
+empty rather than unreachable. Push access was live throughout — the dry-run probe returned
+`* [new branch] HEAD -> access-probe` and the repository reported `admin`, `maintain`, `push`,
+`pull` and `triage` all true. Only GraphQL is refused, which is the ordinary state of these
+containers and not the platform gate; the REST routes answered every time. Neither `SGA60_SITE`
+nor `SGA60_RESEARCH_TOKEN` was set, so the drop box was again unavailable and route one was the
+only way to land anything.
+
+With nothing to review, the pass audited what is already published, which is the same duty applied
+to the live site. The gates were clean on `main` before anything was touched: `build.py` complete,
+`check_data.py` 0, `check_contrib.py` 0, and `check_duplicates.py` reporting the same five pairs
+previous passes have judged and left standing.
+
+**The presidential spine was audited end to end first**, since CLAUDE.md puts it above everything
+else. All 73 `leaders[]` entries across 61 years carry at least one source and a profile; none is
+missing either. Exactly one name is not `name_verified`, and it is Reed Morgan, correctly carried
+at `role: unresolved` as the settled facts require. One officeholder is marked acting, Katie Dawson
+in 2004-05, which matches the settled record of Nick Todd's departure that July. Nothing in the
+spine needed touching.
+
+**Twelve live event citations were then drawn at random across six decades and opened at source** —
+five on wkuherald.com, five on TopSCHOLAR, one SGA minutes record and one *Talisman* full text.
+**Nine held exactly. Three were over-claimed and have been trimmed to what their cited source
+proves.** Each cut is a rescue: no entry was deleted, and every sourced fact in all three survives.
+
+- **1978-79, ASG approves revised constitution.** The cited issue (Herald 54:28, 30 Nov 1978)
+  carries Catherine Hancock's "Associated Student Government Approves Revised Constitution" and
+  proves the first sentence. It does not support the second, "a fall in which ASG also pushed
+  teacher evaluations and parking rezoning," and neither does any sibling entry in the year. The
+  sentence was cut. Half of it is true but was filed to the wrong actor: the only fall-1978
+  teacher-evaluation items are **Faculty** Senate business — "Faculty Senate Rejects Proposal to
+  Fund Faculty Evaluation" (54:16, 17 Oct) and "Senate Supports Teacher Evaluation" (54:24,
+  14 Nov), both by the same reporter, David Whitaker, and neither naming ASG. In 1978 ASG's own
+  body was a *congress*, as the entry itself says, so "Senate" there is not ASG. This is trap 2.
+- **2003-04, SGA budget frozen.** Every figure held — the informal freeze on SGA and CAB, the
+  $5.6 million ordered by Gov. Fletcher's administration, the wait on Ransdell's plan, the
+  $65,309.52 and the $7,400 in the Aramark contract and foundation accounts. One attribution was
+  wrong: the entry had President John Bradley saying the director of student activities would
+  decide whether funds were available. Bradley said congress could still pass legislation needing
+  money; it was **Nick Todd, vice president of finance**, who named the director as the one who
+  would decide. The sentence now gives each man his own words.
+- **1972-73, Chicago plays a free concert.** The date, the free concert, ASG as presenter, the
+  quoted phrase and Jethro Tull's arrival three weeks later all hold against the 1973 *Talisman*.
+  "Pianist Robert Lamm fronting the horn section" does not: the caption says only "Pianist Robert
+  Lamm." The clause was trimmed to Lamm performing.
+
+The nine that held held in detail, not approximately. Herald 71:56 of 25 April 1996 carries both
+the swearing-in and Dwaine Short's column under the exact title the entry quotes. Herald 63:5 of
+10 September 1987 carries the ASG intercollegiate-legislature story and the Interhall Council
+warning, and the editorial the entry attributes to the following week is real — 63:6 of
+15 September. The 2006 minutes record's own description matches its entry almost word for word and
+the page carries the date 2006-03-07. The 2025 election report confirms Bill 21-25-S, the 88%, the
+Farmer quote, the unopposed Robinson ticket and the 31 seats. The 2012 iPad entry is accurate down
+to Keyana Boka's spelling as her own paper printed it.
+
+**Two entries deserve note for being better than they had to be.** The 2026-27 election entry
+records that the Herald dated the opening of voting only as "today" in an issue published the day
+after the meeting, and declines to fix which of the two days it was. The 2026-27 scholarship entry
+reports the raffle at 1,744 entries and says outright that an interview a week later gave 1,174.
+Both are the right instinct: the archive is more trustworthy for saying where its sources disagree.
+
+**The 1996 Homecoming date is not an error, and a later pass should not "fix" it.** The TopSCHOLAR
+record is titled "Homecoming 10.26.96" while the entry dates it 24 October. The page's own
+Publication Date is 10-24-1996 and its abstract calls the file a section *for* the Homecoming of
+the 26th. The entry is right; the title names the game, not the issue.
+
+**wkuherald.com is not blocked.** It was carried as uncertain after two 403s, both following
+bursts. A single paced request returned 200, and the two pages that did 403 inside a burst this
+pass both returned 200 on retry after a twenty-second gap. It rate-limits bursts exactly as
+TopSCHOLAR does and should be paced, not avoided.
+
+## Gates
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0 after the cuts. `check_duplicates.py`
+exits 1 by design as a reporter and its output is **byte-identical to the report on `main`**, so these cuts
+introduced no pairs. The five standing pairs were judged again and all left standing. The 2026-27
+same-source pair is now settled on a reading of the article rather than an assumption: wkuherald
+97612 genuinely reports both items of business — Lucas announcing the syllabus mental-health
+statement from the spring, and the fall election opening with the 28 candidates broken down by
+constituency. Two entries, one meeting report, correctly separate.
+
+Counts after the cuts, from the build: 61 year pages, 1968 events, 60 people recorded as president,
+2651 terms of office held by 1809 people, 2614 of those terms (98%) carrying an account of what the
+person did, 48 people under more than one spelling, 308 documents, 1111 pieces of legislation with
+every file present and a real PDF, 1310 citations naming a volume and number, 1317 quoted spans and
+none reaching 15 words, and a search index of 4949 records. The build withdrew the same 5
+photographs the archive no longer holds or has barred. The event count is unchanged at 1968
+because all three corrections were trims, not deletions.
+
+## Leads this audit turned up, for the research routines
+
+- **ASG sought parking rezoning, Herald 54:19, 26 October 1978**, confirmed at source:
+  "Associated Student Government Seeks Parking Rezoning" (Catherine Hancock),
+  digitalcommons.wku.edu/dlsc_ua_records/3422. Real ASG business in a year that has no entry for
+  it. It is the sourced half of the sentence cut above and belongs in 1978-79 as its own event.
+  Note 54:24 of 2 November, "Parking Zones to be Enforced," as the possible outcome.
+- **The 1987 intercollegiate-legislature question has an ending nobody has written up.** Herald
+  63:7, 17 September 1987: "Kentucky Intercollegiate Student Legislature Committee Kept; Spending
+  Now Watched" (Jill Duff), digitalcommons.wku.edu/dlsc_ua_records/6852. The archive records ASG
+  considering dropping it and the editorial urging it be kept, but not that it was kept.
+- **The 1973 Talisman is richer on the ASG concert season than 1972-73 reflects.** Its own text
+  says Jethro Tull on 26 October was a pay concert and "a major financial loss for ASG," that the
+  Beach Boys on 3 November disappointed a crowd wanting the old songs, that ASG took a monetary
+  loss on its fall entertainment overall, and that the Activity Committee under Mike Fiorella
+  presented five big-name concerts plus seven mini concerts and the Cellar Coffee House. Readable
+  as plain text at archive.org/details/talisman1973west, unrated and not rate limited.
+
+## Still open
+
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and
+  remain on origin. Carried forward untouched for the ninth pass.
+- The **election-year filing convention** is still a decision for the owner, not an error: older
+  entries file an April result in the year the winner serves, recent ones in the year it was held.
+  Both keep the leader in the right year. Flagged for the fourth pass running.
+- 1994-95 still needs `cgi/viewcontent.cgi` against article 8989 when that route opens; it answered
+  403 behind a Cloudflare challenge again this pass while landing pages loaded over plain curl.
+- The 2005 Provide-A-Ride citation is unverified for want of `web.archive.org`, which is still shut
+  while `archive.org` itself is open. Probe them separately.
