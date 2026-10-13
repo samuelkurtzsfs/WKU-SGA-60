@@ -45750,3 +45750,89 @@ because all three corrections were trims, not deletions.
   403 behind a Cloudflare challenge again this pass while landing pages loaded over plain curl.
 - The 2005 Provide-A-Ride citation is unverified for want of `web.archive.org`, which is still shut
   while `archive.org` itself is open. Probe them separately.
+
+---
+
+# 13 October, scheduled editor pass: #757 merged, one reason corrected
+
+One pull request in the queue and it is merged. **#757, "Research: photographs, 13 October"**,
+the only thing open. The three branches the standing brief still calls stale — #6, #7 and #8 —
+have been closed since 18 August, for a twelfth pass.
+
+## What was in it
+
+A single run note in `.research/`, and nothing else: no event, no portrait, no officer, no
+change to `years.json` or `photos.json`. The build does not publish that directory — `build.py`
+reads two JSON files out of it and no markdown — so nothing in this merge reaches a reader. The
+review was therefore of the note's accuracy as a record the photograph routine will act on
+tomorrow, not of anything going on the site.
+
+## Spot check: twelve claims, twelve held
+
+Everything checkable was checked rather than sampled, the diff being small enough to take whole.
+The three priority claims are exact against the current files: all four of the once-missing
+presidents carry a portrait; no leader in any of the 61 years lacks one, across 73 leader
+records; and 1994-95 is still the only year with no photograph at all. `portrait_gap.py` reports
+189 slots, 159 people, 157 with no portrait in any year, as the note says. The counts in its
+validation section are the real ones.
+
+All four access claims were reconfirmed against the live routes. `cgi/viewcontent.cgi` on
+article 8989 answers 403 and `web.archive.org` resets at the TLS layer, both as described. The
+genuinely new finding stands up: `wku.edu/news`'s own Student Government Association category
+returns HTTP 200 and a real page reading "No News Articles Found", so it is an empty category
+and not a block — a permanent dead end that no future pass needs to retry as an access
+question. The two officer names resolve exactly as reported: one wkuherald hit for Herlick, two
+for Banales, and the same titles.
+
+## The one correction
+
+The note said the only article naming Jason Herlick "carries no `<img>` tag at all" and that
+"there is no photograph here to be beside." The body is imageless, but the post carries a
+featured image, media 19383, which a body-only check does not see. Its media record settles it:
+no caption, no alt text, a hash filename uploaded in September 2019, identifying nobody. So the
+note's conclusion — no usable portrait — was right and its reason was wrong. Trimmed to what is
+proven rather than cut, which is the cheaper repair, and the note now tells the next pass to
+read `featured_media` separately from the body. The Banales entry in the same list did check its
+featured image, so this was one entry being inconsistent and not the method being blind.
+
+## Traps and the duplicate pairs
+
+The checklist had little to bite on: with no events, people or photographs added, advance
+notices, committee chairs promoted to officers, surname-only matching, changed-surname
+duplication and April elections filed backwards cannot arise, and no settled fact is touched.
+The two living people named carry their SGA roles and the fact that no portrait was found,
+from the Herald report that named them publicly among their fellow nominees.
+
+`check_duplicates.py` exits 1 whenever it finds pairs — that is its design, not a failure — and
+the data being byte-identical to main, its five pairs are the same five the pass of 4 October
+judged. Re-read and merged none; all are separate business, and the reasoning in that earlier
+entry still holds. Noted in passing that the designated-driver entry of 17 February 1998 is an
+advance notice handled correctly: it reports only that the cards were to be distributed the
+next day and says outright that the archive holds nothing but a contents listing.
+
+## Counts after the merge
+
+61 years, 1,968 events, 60 people have been president. 2,651 recorded terms of office held by
+1,809 people, 98% of them with an account of what the person did. 1,111 pieces of legislation,
+every file present and a real PDF. 1,310 citations naming a volume and number, 1,317 quoted
+spans and none reaching fifteen words. `build.py` clean, `check_data.py` and `check_contrib.py`
+both exit 0, on the merged tree.
+
+## For the next pass
+
+- **The queue is empty.** Nothing is open and nothing is left unmerged.
+- The standing brief is wrong in the same two places as every pass since 2 October: #6, #7 and
+  #8 are long closed, and the `gh pr list` 403 it reads as the platform gate names GraphQL
+  only. `gh api repos/{owner}/{repo}/pulls` answers normally and listed the queue tonight. A
+  run that took that 403 at face value and dropped into review-only mode would have posted its
+  verdict nowhere, because `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are unset again.
+- **Eighty-odd `research-*` branches are still on origin and all but one are dead.** They share
+  no merge base with main, so their "ahead" counts are an artefact of the orphan history rather
+  than pending work, and every one of them has had its work landed or closed. They are clutter
+  and a trap for any pass that reads an ahead-count as a backlog. Worth a deliberate sweep by
+  the owner; not something to delete unasked.
+- The photograph routine's remaining gap is unchanged and the note names it honestly: 157
+  people with no portrait anywhere, reachable mostly through wkuherald's intermittent search,
+  whose hit rate across the names tried since 7 October is zero. The two closed routes remain
+  the better prospects if either opens — article 8989 for the 1994-95 year photograph, and the
+  pre-2011 slice of the officer gap.
