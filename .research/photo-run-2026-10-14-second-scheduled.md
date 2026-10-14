@@ -46,18 +46,23 @@ which is most of the collection the gap list needs — 2012, 2014-2017 among the
 had hoped to reach for Brittany Crowley, Sawyer Coffey, Rachel Keightley, Abhishek Bose and Smita
 Peter's SGA-era coverage. Confirmed again this pass that those years are not mirrored on
 `archive.org` either (`https://archive.org/metadata/talisman<year>west` returns an empty `files`
-list for every one of 1996-1999, 2004-2005, 2008-2010, 2013, 2015-2018 and 2022 — the whole
-2004-2011 span plus 1997-2002 has no Talisman at all, per WKU's own publication-history note that
-the yearbook stopped in 1994 and restarted in 2003).
+list for every one of 1996-1999, 2004-2005, 2008-2010, 2013, 2015-2018 and 2022). What that
+proves is only that `archive.org` does not mirror those years. It is **not** evidence that no
+Talisman was published for them, and an earlier draft of this note said so on the strength of a
+publication-history summary it did not cite. Dropped: the archive's own `photos.json` already
+cites a 2012 Talisman, and the digitalcommons `talisman/` collection path answered 404 when
+checked on 14 October, so what the collection holds for 1996-2022 is currently unestablished from
+this container. A future run wanting those years should establish the holdings first rather than
+treat this span as empty.
 
 Re-confirmed the archive.org Talisman slice itself needs no further work: 1978, 1979 and 1981 were
 read page-by-page again this pass (via `archive.org`'s `BookReaderImages.php`, which is not
 Cloudflare-gated and not rate-limited the way digitalcommons is) chasing David Bass (1977-78,
 Activities VP), David Young (1978-79, Administrative VP) and Alice Wicks (1978-79, Secretary). All
-three turn up only in unlabelled multi-person group-photo captions ("A LIGHT MOMENT IN AN ASG
-MEETING brings laughter from president Bob Moore and smiles from activities vice president David
-Bass, secretary Sharon May and vice president Cathy Murphy" over a photo with no per-person
-position cues) or, for Wicks, no photo credit in the yearbook's index at all. None clears the
+three turn up only in unlabelled multi-person group-photo captions — the 1978 ASG meeting
+caption, for instance, runs the president, the activities vice president, the secretary and a
+vice president together over a photograph with no per-person position cues, so it names Bass
+without placing him — or, for Wicks, no photo credit in the yearbook's index at all. None clears the
 identification bar. This matches what the 12 October third pass already closed these names on;
 not re-litigated past confirming it still holds.
 

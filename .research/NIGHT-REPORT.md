@@ -46949,3 +46949,117 @@ carrying an account.
   text layer. Three defects came out of one mirrored file.
 - **189 officer portrait slots** (159 people) still empty.
 - **The standing brief.** #6, #7 and #8 have not been open for twenty-three passes.
+
+# 14 October 2026 (editor, scheduled, fourth pass) — #771 merged on the page images, #772 merged after one over-claim was trimmed
+
+## Routes
+
+Full mode. `GH_TOKEN` present, `gh auth setup-git` silent, `git push --dry-run` returned
+`* [new branch] HEAD -> access-probe`, and the REST route listed the open pull requests normally.
+`gh pr list` was not used; it answers 403 naming GraphQL, as every pass records. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still absent from the editor container, so route two remained
+unavailable and route one was the only way to land anything. #6, #7 and #8 have not been open for
+twenty-four passes.
+
+## #771 — three defects in the 1999 election record. Merged, nothing cut.
+
+Verified against the source itself rather than the landing page. The issue the PR rests on is
+mirrored here as `data/documents/1999-00-herald-74-51-elections.pdf`, so pages 2-4 were rendered
+at 150 and 600 dpi and read directly. The cover sheet's text layer gives UA12/2/1, Vol. 74 No. 51,
+4-15-1999, and `dlsc_ua_records/8052` returned 200 with the same volume, number and date, so the
+`src2` the PR adds points where it says it does.
+
+Twelve claims checked, all held. The results box is headed "SGA election winners" and names the
+office in full — V.P. of Finance, Matheis over Morrison 700-688 — and the article's own sentence
+names it again, so the disclaimer the PR removes was false and the entry's old citation of
+`.research/fillins-1985-2000.json` was circular. "Two hours later, that race was under judicial
+review" matches the page. Coates and Martin over Jones and Yeckering 616-611, the recount that
+night at 614-611, Griffey over Kirby 729-652, Bastin over Wright 806-570 all match the live
+entries exactly. 1,436 students voted on the Tuesday, in an election the paper says decided the
+officers for 1999-2000.
+
+**Drew Harrell** was confirmed at 600 dpi on the printed line, where the double r and the -ell are
+unambiguous, and corroborated by two of this repository's own files that had it right all along:
+`.research/officers-eras.json` and the 1996-97 senator rosters. "Harvill" was the single outlier
+anywhere in the project. Correcting rather than flagging is right — a transcription error against
+a source in hand is not a doubt between two attested spellings.
+
+The third defect was the worst of them. Harrell's actual remark is that the election was, in terms
+of politics, the most accurate he had seen in comparison to real life. "Most contentious" is the
+reporter's phrase about the finance race, and it had been put in a named living person's mouth.
+The rewrite is faithful. John Crowe is named chief justice on the same page and the paraphrase of
+him is accurate.
+
+No trap tripped: a report of a completed vote, not an advance notice; no chair promoted to
+officer; no surname-only match; no person added, so no duplicate; settled facts untouched;
+everyone named appears only in their SGA role, and the flier dispute keeps the outcome the paper
+recorded; no contributor edit.
+
+**A standing question closed rather than deferred again.** The PR calls the split of this election
+across 1998-99 and 1999-00 "the standing filing-convention question" and the owner's call. It is
+neither, and future passes should stop raising it. Across the file, 90 of 99 spring election
+events are filed in the academic year during which the vote happened, against 9 filed forward. The
+rule that elections file forward governs where the **leader** goes, not the event: Stephanie Cosby
+holds 1998-99 and Amanda Coates, elected that April, holds 1999-00. The April 1999 events belong
+in 1998-99, where they are.
+
+**One thing for a later pass.** `.research/branches-checked.json` claims the re-run was won 346 to
+99. That figure is nowhere in `years.json`, carries no source, and two live passages say no source
+records the re-run's count. The data is consistent; the research file is what needs checking.
+
+## #772 — photograph run, second scheduled pass. Merged after one trim.
+
+No data changes at all: `data/photos.json`, `data/photos/` and `data/years.json` are untouched and
+the whole diff is one `.research/` note. The branch's merge base is the current main tip, so this
+is an ordinary descendant and not one of the 4 August orphan snapshots.
+
+Its checkable claims were checked and held. Every `leaders` record across all 61 years has a
+portrait in `photos.json` and every year has a general photograph — zero missing, confirmed
+programmatically here, not taken from the report. Nick Todd, Katie Dawson, Jeanne Johnson and
+Reagan Gilley each carry a file that exists on disk and opens with `FF D8 FF E0`.
+`scripts/portrait_gap.py` run here returns 189 slots / 159 people / 157 with no portrait anywhere,
+the figures the note gives. The `archive.org` mirror claim was spot-checked at source:
+`talisman1979west` has 21 files, `talisman2005west` and `talisman2013west` have none.
+
+**What was trimmed.** The note argued from those empty `archive.org` responses to the much larger
+claim that "the whole 2004-2011 span plus 1997-2002 has no Talisman at all", on the strength of a
+publication-history summary it did not cite — and the sentence contradicted itself, since a
+yearbook said to have restarted in 2003 cannot also be absent for 2004-2011. An empty mirror
+proves only that `archive.org` does not hold those years. Left standing it would have steered
+future runs off a source that may well exist: this archive's own `photos.json` already cites a
+2012 Talisman. Rewritten to what the evidence proves, with the open question named — the
+digitalcommons `talisman/` collection path answered 404 when checked today, so the holdings for
+1996-2022 are simply unestablished from this container and a future run should establish them
+before treating the span as empty.
+
+Also trimmed: a 27-word Talisman caption quoted whole. The photographs section of CLAUDE.md asks
+for an identifying caption as evidence, but the hard rule caps a quote at 15 words and this
+repository is public, so the passage now describes what the caption does — runs four officers
+together with no per-person position cues, naming Bass without placing him — which is the whole of
+its evidential value.
+
+The note's account of the network block was left as it stands. It is a diagnosis of this
+container, not a claim about the archive, and it is the useful kind: the egress proxy refuses the
+Cloudflare challenge host by policy, so pacing and retries cannot open `cgi/viewcontent.cgi` and a
+future run should not spend itself trying.
+
+## Checks
+
+Run on the merged result of both branches. `build.py` clean. `check_data.py` exit 0 — 61 years,
+1,968 events, 60 presidents, 1,111 pieces of legislation each present and a real PDF, 1,312
+citations each opening its issue, 1,317 quoted spans none reaching 15 words. `check_contrib.py`
+exit 0. `check_duplicates.py` reports the same four title pairs and one same-source pair as prior
+passes — designated driver cards, the 1992 regent advisory bill, the 1972 Civil Liberties Union
+suit, plus/minus grading, and the September 2026 pair sharing one article. None comes from either
+diff and each is separate business; judged separate again. Roster unchanged at 2,651 terms held by
+1,809 people, 98% carrying an account.
+
+## What is still open
+
+- **189 officer portrait slots** (159 people, 157 with no portrait in any year), unchanged.
+- **`cgi/viewcontent.cgi` and `web.archive.org` both closed from these containers**, the first by
+  this container's own egress policy on the Cloudflare challenge host.
+- **The digitalcommons `talisman/` collection path returned 404 today.** Worth establishing what
+  that collection actually holds before another run reasons about missing yearbook years.
+- **The 346-to-99 figure in `.research/branches-checked.json`**, unsourced and contradicted by the
+  live text.
