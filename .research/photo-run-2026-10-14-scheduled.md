@@ -68,11 +68,14 @@ What came back:
   image's own caption names the street festival, not any person in it. It fails both rules at
   once — Coffey is not pictured acting in a student government role, and nobody in the caption is
   named — so it was not used.
-- **Smita Peter** (2017-18, Director of Information Technology) — the search match (article
-  24584, "SGA executives share final words to Senate") does not actually name her anywhere in the
-  text; re-read in full, it quotes Executive Vice President Savannah Molyneaux and Director of
-  Public Relations Amy Wyer and never mentions Peter. A false positive from the search index, not
-  a lead.
+- **Smita Peter** (2017-18, Director of Information Technology) — **this entry was wrong as first
+  written and was corrected on editorial review, 14 October.** It said article 24584, "SGA
+  executives share final words to Senate," never mentions Peter and was a false positive from the
+  search index. It is not. The article names her by office — "SGA Director of Information
+  Technology Smita Peter" — and quotes her on the Senate judging people by gender, which confirms
+  her title and year independently of the roster. The post does carry a featured image, so it was
+  worth looking at; the image has an empty caption and empty alt text, names nobody, and so fails
+  the identification bar. No portrait taken, for that reason rather than the one first given.
 - Jeremy Glass, Samantha Hughey, Liz Goddard, Monique Gooch, Rachel Keightley, Abhishek Bose,
   Tribhuwan Singh, Amelia Bice, Dajana Crockett — zero relevant hits, or hits that are plainly a
   different context (Abhishek Bose's one hit is about an unrelated Indian student group).
@@ -100,8 +103,19 @@ without a photograph). This run's only output is this note.
 - **Use `wkuherald.com/wp-json/wp/v2/posts?search=...&_embed=1` instead of the themed site.** Same
   content, a gentler Cloudflare gate, and `_embed=1` returns any photo and caption in one request
   instead of a second fetch per post.
-- The seventeen names checked this pass are exhausted on this route as of today; re-querying them
-  without a new source turning up would just repeat this note.
+- The seventeen names checked this pass are exhausted on this route as of today **for portraits**;
+  re-querying them without a new source turning up would just repeat this note. They are not
+  exhausted as officer citations — the Peter correction above is one such citation found while
+  hunting a photograph, and the Crowley and Pawley hits are others.
+
+## Checked on editorial review, 14 October
+
+Four of this note's claims were re-run against the live API before the branch was merged. The
+`wp-json/wp/v2/posts` route answered 200, with the same intermittent 403s the note describes (two
+of three calls failed on first attempt and succeeded on a bare retry). Brittany Crowley's five
+article ids and Aaron Pawley's 52467 came back exactly as listed; Sarah Howell's hits are the
+golf player of 2015-2023, so the collision is read correctly. The Smita Peter paragraph did not
+hold and has been rewritten above. Nothing in this branch touches `data/`.
 - `cgi/viewcontent.cgi` and `web.archive.org` were both closed throughout this session. The
   pre-2011 officer-gap names behind the first, and anything that depends on the Wayback Machine,
   remain untried until one of those reopens.
