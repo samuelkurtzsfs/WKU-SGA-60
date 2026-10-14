@@ -47255,3 +47255,157 @@ the legislation later passed, and two pieces of business from one 2026 meeting w
 - The archive.org Talisman holdings are worth reading in full rather than name-searching. This
   pass found a real index entry that a name search could not see, because the index inverts the
   name and adds a middle name. That failure mode will have cost earlier passes finds too.
+
+# 14 October 2026 (editor, scheduled, sixth pass) — an empty queue, and a $2,000 appropriation that only ever existed in a headline
+
+## Routes
+
+Full mode, and nothing to merge. `GH_TOKEN` present; the repository reports `admin`, `maintain`,
+`push`, `pull` and `triage` all true; the REST route answers normally. `gh pr list` returns 403
+naming GraphQL, as every pass since September records. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN`
+are still absent from the editor container, so route two remains unavailable and route one is the
+only way to land anything.
+
+**The queue is empty.** `pulls?state=open` returns `[]`. Nothing was merged this pass because
+there was nothing open to merge: #774 was the last to land and it closed the photograph branch's
+third pass of the day.
+
+**The standing brief on #6, #7 and #8 is discharged for a thirteenth pass and should be dropped
+from the instructions.** All three have been closed, unmerged, since 18 August. There is no stale
+branch to merge main into, no conflict to resolve and no closing comment to write. The brief also
+still describes them as "open since 4 August and stale", which has not been true for two months.
+
+## The audit: a figure in a title that its own body disclaims
+
+With no queue, the pass went to live content on the one trap in the brief that no validator tests.
+`check_data.py` tests citations, quote lengths and legislation files; none of them reads a title
+against the body beneath it.
+
+Swept all 1,968 events for the advance-notice trap in the only form that can be caught
+mechanically: a **title asserting a figure that appears nowhere in its own body**. Eleven events
+matched. Ten are sound and were left alone — nine are arithmetic the body shows the working for
+($450 and $450 making the $900 Holi Festival title, $300 and $350 making $650 of vouchers, $5,000
+executive and $3,000 senate making the $8,000 Cage the Elephant title, 635 more votes on 966
+making the 66% turnout jump) or figures the body spells out in words ("one hundred dollars",
+"three dollar", "one hundred cholesterol tests"). The Straeffer count, 1,732 to 1,098, is a
+settled fact in CLAUDE.md and was not reopened; its 2,894-vote turnout exceeds the presidential
+race's 2,830 because 64 voters did not vote in that race, which is ordinary.
+
+**The eleventh was a real defect, and it was published.** The 2005-06 page carried:
+
+> Senate put $2,000 toward SGA's 40th anniversary party
+
+The body underneath it read, and still reads, that "only the headline of that report survives in
+the archive, so what the senate voted and spent on the party is not recorded here." The title
+asserted two things the entry itself disclaimed — that the senate voted, and that it appropriated
+$2,000.
+
+Checked at source rather than taken from the body's word. The cited issue is *Herald* 81:37 of
+16 March 2006 (`dlsc_ua_records/3683`), and the local full index holds its complete article list:
+24 lines, of which exactly one concerns student government — "Brandenburg, Katie. Student
+Government Association Plans Anniversary Party". No vote, no sum, no senate. The headline is an
+advance notice of a party, and a notice cannot carry a financial result. Where the $2,000 came
+from is not recoverable: `git log -S` puts the title and its disclaiming body in the same commit,
+152400a3, so the figure was never separately sourced in this file's history. The verifier that
+wrote that body trimmed the claim honestly and left the title standing above it.
+
+**Rescued rather than deleted**, which is what the brief asks for where an entry can be trimmed
+back to what the source proves. The title now reads "SGA planned a party for the organisation's
+fortieth anniversary". The body is unchanged, because it was already right. The April 2006
+anniversary banquet survives separately in Seth Norman's officer note, where it is sourced to the
+minutes, so nothing was lost.
+
+That is the only cut this pass, and the only change to published data.
+
+## What was re-checked and found sound
+
+- **Campus-context discipline.** 28 of 1,968 events carry `campus: true`, 1.4%, and not one of
+  them names SGA as the actor in its title. The tag still means what CLAUDE.md says it should.
+- **The duplicate pairs.** `check_duplicates.py` reports the same four title pairs and one
+  same-source pair as every prior pass — designated driver cards, the 1992 regent advisory bill,
+  the 1972 Civil Liberties Union suit, plus/minus grading, and the September 2026 pair sharing one
+  article. My edit introduced none and changed none. Judged separate again: a bill introduced and
+  the same bill failing after amendment are two events, as are a suit planned and then endorsed.
+- **The advance-notice discipline in the recent decades is better than its reputation.** Of the ten
+  events citing a notice-shaped headline, several say outright that the report predates the event
+  and does not say how it went — the 2024 funding bills, the 2016 poster allocation, the 2011 DUC
+  forum, the 1996 Provide-a-Ride start. That is the rule being applied correctly by the routines,
+  not by the editor after the fact.
+
+## A second sweep: citation dates, and one place where TopSCHOLAR is wrong and this archive is right
+
+`check_citations` in `check_data.py` tests a label's **volume and number** against the record its
+link opens. It never reads the **date** in the label, so a citation can name the right issue and
+the wrong day and pass. Swept all three data files: 1,472 citation labels carry a full date and
+link a catalogued issue, and 13 disagree with the catalogued date.
+
+Twelve are my detector's own false positives and no change is warranted. Ten are *Talisman*
+labels, where the catalogued date is a synthetic `YYYY-06-01` for a yearbook that has no issue
+date and the date my regex caught belongs to the caption's subject, not to the volume. One is a
+composite label naming minutes of 13 February 1969 and the *Herald* of 20 February that reported
+them, where the detector compared the first date to the second's issue. One is the 2016 *Talisman*,
+same synthetic-date pattern.
+
+**The thirteenth is a real disagreement, and the archive has it right.** `photos.json` cites
+"Herald 67:25, 21 Nov 1991" for the "Trading places" picture on page 1. TopSCHOLAR catalogues
+that record, `dlsc_ua_records/7776`, as **21 October 1991**. The volume's own sequence settles it
+three ways. 67:24 is catalogued 19 November and 67:26 is 26 November, so the gap 67:25 belongs in
+is the week of 21 November, not a month earlier. The *Herald* published Tuesdays and Thursdays
+throughout volume 67 — of the 55 issues catalogued in it, 28 fall on a Thursday and 26 on a
+Tuesday, and the one remaining is 67:25's 21 October, which was a **Monday**. And 21 November
+1991 was a Thursday, falling exactly between the Tuesdays of the 19th and the 26th. The
+catalogue's date for that record is wrong; the label in this repository is correct.
+
+Nothing was changed for it, and that is the point of recording it. A future pass running this same
+sweep will see the mismatch and be tempted to "correct" the label to match the index. It should
+not. The lesson is narrower than it looks and worth keeping: the local index is excellent evidence
+for *what* an issue contained, and its **dates** are ordinary metadata that can be wrong like any
+other. The issue-number sequence and the Tuesday/Thursday pattern are the checks that caught it.
+
+## What was deliberately not touched
+
+**The election-year filing convention**, flagged for the owner four passes running and now a
+fifth. `check_year_filing.py` still reports four election months whose results sit under two
+academic years at once, and 13 of 67 spring results filed forward with the administration the vote
+produced against 54 filed in the year of the vote. The prior pass worked all four through at
+source, found every claim in them accurate, and declined to move any of them: the remedy requires
+choosing the convention, and one decision applied to 13 entries across six decades is not an
+unattended pass's to take. CLAUDE.md's "never silently change a year" points the same way. I read
+that reasoning back and agree with it; nothing was moved. The April 1999 "remaining executive
+seats" wording still needs rewriting once its races sit together, whichever way the decision goes.
+
+## Counts after the change
+
+- **61 years, 1,968 events, 60 presidents.** 2,651 recorded terms of office held by 1,809 people;
+  2,614 of them (98%) carry an account of what the person did. 48 people recorded under more than
+  one spelling or name.
+- 1,111 pieces of legislation, every file present and a real PDF. 308 documents mirrored. 1,312
+  citations naming a volume and number, each opening that issue; 1,317 quoted spans, none reaching
+  15 words. Search index 4,949 records. Five photographs withdrawn at build as no longer held or
+  barred.
+- `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+- **189 officer portrait slots** (159 people, 157 with no portrait in any year) still empty,
+  unchanged since 13 October.
+
+## Still open
+
+- The **election-year filing convention** needs the owner's decision. Fifth pass carrying it.
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and
+  remain on origin. Untouched again.
+- `cgi/viewcontent.cgi` is still shut from these containers behind a Cloudflare challenge the
+  egress proxy cannot answer, and `web.archive.org` still resets the connection. The officer
+  portrait gap is bounded by that, not by research effort. The 1994-95 issue (article 8989) and
+  the 2005 Provide-A-Ride citation both wait on those two routes.
+- The 1999 re-run vote count stays unrecorded unless *Herald* 74:54 of 27 April 1999 is read.
+- **`dlsc_ua_records/7776` is catalogued a month early by TopSCHOLAR.** *Herald* 67:25 is dated
+  21 October 1991 in the index and belongs to 21 November 1991. This repository's label is the
+  correct one; do not "fix" it to match the index.
+- *Talisman* 1995-2002 and 2004-2011 are absent from TopSCHOLAR and have no known home.
+
+## For the next pass
+
+A title is not covered by any validator, and this pass found a published financial claim living in
+one. The sweep that found it is three lines of arithmetic over `years.json` and is worth repeating
+whenever a research branch lands: **a figure in a title that does not appear in the body beneath
+it is either arithmetic or a leak.** Ten of eleven were arithmetic. The eleventh had been on the
+live site since 10 October.
