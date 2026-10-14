@@ -46710,3 +46710,124 @@ fifteen words. 48 people recorded under more than one spelling.
 - The pre-2016 cabinet and Senate officer gap, 157 of 159 officers with no portrait anywhere,
   still behind `cgi/viewcontent.cgi`.
 - The brief's reference to #6, #7 and #8 as open. Closed since 18 August.
+
+# 14 October 2026 (editor, scheduled, second pass) — two pull requests merged, one claim trimmed and one research note corrected
+
+## What was open
+
+Two. `#768`, the first pass's own election-date corrections on `ed-1014-election-day`, left open
+because that pass would not self-approve. And `#769`, the photograph agent's rolling branch, one
+new note on it. Both are now merged; the queue is empty and nothing is unlanded anywhere on origin.
+
+Access: `gh pr list` answered 403 naming GraphQL as it always does, `gh api` and
+`git push --dry-run` both worked, so this was a full-mode pass. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still unset, so route two remains unavailable. The standing brief still
+describes #6, #7 and #8 as open and stale since 4 August; they have been closed unmerged since
+18 August 2026, and this is the twenty-second pass to write that down. **The brief needs editing;
+no pass can fix it from here.**
+
+## #768 — merged after one trim
+
+The diff was three one-line rewrites, each taking a *Herald* issue that an entry had dated before
+an election and moving it onto polling day. Two verified, one not.
+
+**1999 verified directly at the page.** Page 2 of the mirrored `1999-00-herald-74-51-elections.pdf`
+rendered at 150dpi and read as an image. Masthead: Vol. 74 No. 51, Thursday, April 15, 1999. Under
+"Turbulent elections complete / Coates wins SGA presidency by 3 votes," Ryan Clark's byline, the
+text reports that on Tuesday 1,436 students voted in the SGA general election, which decided the
+officers for the 1999-2000 school year. 13 April 1999 was a Tuesday, so the issue of that date went
+out on polling morning. The correction stands, and the same page re-confirms two figures already
+live on that year — the 1,436 turnout and Coates's three-vote margin.
+
+**1991 verified from the local index.** 66:52 of 4 April carries the primary result, 66:53 of
+9 April the smear report, 66:54 of 11 April the general result. "Two days before the vote" would
+have placed the vote on the day the result was printed. Dropping the interval instead of replacing
+it was right.
+
+**2000 trimmed.** The correction rested on a WKU news release of 14 April 2000 reporting
+"Thursday's election." That source could not be opened. `web.archive.org` resets every connection
+from this container — `curl: (35) Recv failure`, confirmed in the agent proxy's own failure log as
+a tunnel closing mid-exchange, and independently reported closed by the photograph run on #769, so
+this is the container and not the archive. The Wayback availability API answers 200 and says the
+snapshot exists, so the citation itself is sound; only the content is out of reach. The *Herald*
+issue that would fix the polling day independently (75:53 of 18 April, "Cassie Martin, Leslie Bedo
+End Long Day as Student Government Association Leaders") sits behind `cgi/viewcontent.cgi`, which
+returned 403 twice, the second time after the full 90-second backoff.
+
+So the interval came out of both the title and the body rather than being swapped for another one
+no reachable source gives — the same rescue the first pass applied to 1991. The entry keeps Rex
+Hall, both candidates and the substance; it loses only a claim about which morning. If a later run
+reaches the release and it does say Thursday, restoring it is one line.
+
+## #769 — merged after a correction to the note
+
+The branch's entire diff against main was one file, `.research/photo-run-2026-10-14-scheduled.md`.
+No photograph, no `data/` change, nothing that could reach the site. The run's own discipline was
+good: it declined Sawyer Coffey's one captioned image because the caption names a street festival
+and no person, and it read the Sarah Howell hits correctly as the golf player of 2015-2023 rather
+than the 2009-10 officer, which is trap 4 being caught instead of tripped.
+
+Four claims were re-run against the live API. The `wp-json/wp/v2/posts` route is genuinely open and
+genuinely intermittent — two of three calls 403'd and succeeded on a bare retry seconds later,
+exactly as the note describes. Crowley's five article ids and Pawley's 52467 came back as listed.
+
+**The Smita Peter paragraph did not hold.** The note called article 24584 a search-index false
+positive that "does not actually name her anywhere in the text." Fetched and read in full, it names
+her by office — "SGA Director of Information Technology Smita Peter" — and quotes her on the Senate
+judging people by gender. That is an independent confirmation of her title and year. The outcome was
+right for the wrong reason: the post does carry a featured image, and `_embed=1` returns it with an
+empty caption and empty alt text, so it names nobody and fails the bar. But the reason as written
+would have sent the next run past a real officer citation, and the "seventeen names are exhausted"
+line inherited the error. Both are corrected on the branch, marked as corrections rather than
+quietly swapped, with the exhaustion claim now scoped to portraits.
+
+The useful thing to carry forward is the route itself: `wkuherald.com/wp-json/wp/v2/posts` answers
+while the themed site does not, and the Peter case shows it is worth running for **officer
+confirmations** as well as portraits. A name with no usable photograph can still return a sourced
+title.
+
+## Traps, against both diffs
+
+- **Advance notice.** #768 is this rule applied to itself. Nothing in either diff writes an outcome,
+  a turnout or a figure out of a notice.
+- **Spring elections file forward.** Nothing moved between years. The open question — 54 election
+  results filed in the year of the vote against 13 filed forward — is still the owner's, and the
+  first pass was right to leave it. One thing found tonight bears on it: the *Herald* of 15 April
+  1999 describes that vote in its own words as having "decided the officers for the 1999-2000
+  school year," which is a contemporaneous source siding with CLAUDE.md's written rule against the
+  prevailing practice. Still one sentence in one year, and still not grounds for an editor to
+  re-file 54 entries alone.
+- **Committee chair as officer, bill author as member, surname-only matching, a changed surname
+  making a second person.** None in play. Neither diff adds a person. The one surname collision
+  that appeared (Howell) was handled correctly by the research run before it reached me.
+- **Living people.** Knowles, Matheis, Martin, Wright, Peter, Crowley, Pawley and Coffey are named
+  only in their student government roles or as candidates in published reports. The Knowles entry
+  keeps its statement that no source found records who made the accusation or how it resolved.
+  Nothing personal and unconnected to SGA service was added anywhere.
+- **Settled facts (section 7).** Untouched by both.
+- **Contributor edits.** None in either diff.
+
+## Checks, on the merge result
+
+`build.py` clean. `check_data.py` exit 0: 61 years, 1,968 events, 60 presidents, 1,111 pieces of
+legislation each present and a real PDF, 1,311 citations that open their issue, 1,317 quoted spans
+none reaching 15 words. `check_contrib.py` exit 0. `check_duplicates.py` reports the same four title
+pairs and one same-source pair that were on main already — a bill introduced and the same bill
+failing, a lawsuit planned and then endorsed, an intention and its legislation, a card scheme and
+its distribution, and two separate items of business from one 2026 meeting report. Read again and
+judged separate, as previous passes did. Nothing from either diff.
+
+Roster totals unchanged: 2,651 terms of office held by 1,809 people, 98% carrying an account of
+what the person did.
+
+## What is still open
+
+- **The filing convention.** Unchanged and still the owner's call. Five entries citing one issue,
+  *Herald* 74:51, are split across 1998-99 and 1999-00; 1979 splits a single election between two
+  years with the reasoning applied to the primary and not the general.
+- **`web.archive.org` is closed from this container.** This is new and it costs real verification:
+  it is the cited source for at least one live entry, and tonight it was the reason a correct-
+  looking correction had to be trimmed rather than confirmed. Worth knowing before a run plans
+  around the Wayback Machine.
+- **189 officer portrait slots** (159 people) still empty, most behind `cgi/viewcontent.cgi`.
+- **The standing brief.** Twenty-two passes have now recorded that #6, #7 and #8 are not open.
