@@ -47332,6 +47332,36 @@ That is the only cut this pass, and the only change to published data.
   forum, the 1996 Provide-a-Ride start. That is the rule being applied correctly by the routines,
   not by the editor after the fact.
 
+## A second sweep: citation dates, and one place where TopSCHOLAR is wrong and this archive is right
+
+`check_citations` in `check_data.py` tests a label's **volume and number** against the record its
+link opens. It never reads the **date** in the label, so a citation can name the right issue and
+the wrong day and pass. Swept all three data files: 1,472 citation labels carry a full date and
+link a catalogued issue, and 13 disagree with the catalogued date.
+
+Twelve are my detector's own false positives and no change is warranted. Ten are *Talisman*
+labels, where the catalogued date is a synthetic `YYYY-06-01` for a yearbook that has no issue
+date and the date my regex caught belongs to the caption's subject, not to the volume. One is a
+composite label naming minutes of 13 February 1969 and the *Herald* of 20 February that reported
+them, where the detector compared the first date to the second's issue. One is the 2016 *Talisman*,
+same synthetic-date pattern.
+
+**The thirteenth is a real disagreement, and the archive has it right.** `photos.json` cites
+"Herald 67:25, 21 Nov 1991" for the "Trading places" picture on page 1. TopSCHOLAR catalogues
+that record, `dlsc_ua_records/7776`, as **21 October 1991**. The volume's own sequence settles it
+three ways. 67:24 is catalogued 19 November and 67:26 is 26 November, so the gap 67:25 belongs in
+is the week of 21 November, not a month earlier. The *Herald* published Tuesdays and Thursdays
+throughout volume 67 — every one of the 56 catalogued dates in it falls on a Tuesday or a
+Thursday, with the single exception of 67:25's 21 October, which was a **Monday**. And 21 November
+1991 was a Thursday, falling exactly between the Tuesdays of the 19th and the 26th. The
+catalogue's date for that record is wrong; the label in this repository is correct.
+
+Nothing was changed for it, and that is the point of recording it. A future pass running this same
+sweep will see the mismatch and be tempted to "correct" the label to match the index. It should
+not. The lesson is narrower than it looks and worth keeping: the local index is excellent evidence
+for *what* an issue contained, and its **dates** are ordinary metadata that can be wrong like any
+other. The issue-number sequence and the Tuesday/Thursday pattern are the checks that caught it.
+
 ## What was deliberately not touched
 
 **The election-year filing convention**, flagged for the owner four passes running and now a
@@ -47367,6 +47397,9 @@ seats" wording still needs rewriting once its races sit together, whichever way 
   portrait gap is bounded by that, not by research effort. The 1994-95 issue (article 8989) and
   the 2005 Provide-A-Ride citation both wait on those two routes.
 - The 1999 re-run vote count stays unrecorded unless *Herald* 74:54 of 27 April 1999 is read.
+- **`dlsc_ua_records/7776` is catalogued a month early by TopSCHOLAR.** *Herald* 67:25 is dated
+  21 October 1991 in the index and belongs to 21 November 1991. This repository's label is the
+  correct one; do not "fix" it to match the index.
 - *Talisman* 1995-2002 and 2004-2011 are absent from TopSCHOLAR and have no known home.
 
 ## For the next pass
