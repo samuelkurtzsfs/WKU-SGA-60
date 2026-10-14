@@ -29331,10 +29331,14 @@
     {
      "date": "1999-04-26",
      "title": "A voided vice president of finance race was re-run",
-     "body": "The Herald reported on 27 April 1999 that Ryan Morrison had won a Student Government Association election. This followed the Judicial Council's 20 April decision overturning an election tied to candidate Joe Matheis, whom the Council had already questioned in an article printed 13 April. No source found independently names the office Morrison and Matheis contested; this repository's own research file identifies it as vice president of finance, but that specific claim is not otherwise sourced.",
+     "body": "The Herald reported on 27 April 1999 that Ryan Morrison had won a Student Government Association election. This followed the Judicial Council's 20 April decision overturning an election tied to candidate Joe Matheis, whom the Council had already questioned in an article printed 13 April. The contested office was vice president of finance: the Herald of 15 April reported Matheis beating Morrison 700-688 for it, with the race under judicial review within two hours of the count. The 27 April headline does not itself name the office, and no source found records the re-run's vote count.",
      "src": {
-      "label": "Herald 74:54, 27 Apr 1999, \"Ryan Morrison Wins Student Government Association Election\"; repository file .research/fillins-1985-2000.json",
+      "label": "Herald 74:54, 27 Apr 1999, \"Ryan Morrison Wins Student Government Association Election\"",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8054"
+     },
+     "src2": {
+      "label": "Herald 74:51, 15 Apr 1999",
+      "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8052/"
      }
     },
     {
@@ -30745,7 +30749,7 @@
        "label": "Herald 74:51, 15 Apr 1999",
        "url": "https://digitalcommons.wku.edu/dlsc_ua_records/8052/"
       },
-      "note": "The campaign's most contentious race. The judicial council put the result under review hours later over a campaign-flier violation, then let it stand; Morrison disputed that decision. On 20 April the council overturned the election, and the Herald reported on 27 April that Morrison had won an SGA election. No source found independently names the office that re-run race was for."
+      "note": "The campaign's most contentious race. The judicial council put the result under review hours later over a campaign-flier violation, then let it stand; Morrison disputed that decision. On 20 April the council overturned the election, and the Herald reported on 27 April that Morrison had won an SGA election. The Herald of 15 April names the contested office as vice president of finance; the 27 April headline does not itself name it, and no source found records the re-run's vote count."
      }
     ]
    }
@@ -31217,7 +31221,7 @@
      }
     ],
     "senate": {
-     "note": "Judicial council chief justice John Crowe presided over the election disputes; council member Drew Harvill called the 1999 race the most contentious he had seen. Archive does not preserve a full senate officer or committee list for this year.",
+     "note": "Judicial council chief justice John Crowe presided over the election disputes, telling the Herald of 15 April 1999 that the council would meet to clear up what was left of the election. Council member Drew Harrell said in the same report that the race had been, in political terms, the most true to life he had seen. The archive does not preserve a full senate officer or committee list for this year.",
      "officers": [
       {
        "office": "Chairperson, Legislative Research Committee",

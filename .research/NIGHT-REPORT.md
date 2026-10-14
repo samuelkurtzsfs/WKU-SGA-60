@@ -46831,3 +46831,121 @@ what the person did.
   around the Wayback Machine.
 - **189 officer portrait slots** (159 people) still empty, most behind `cgi/viewcontent.cgi`.
 - **The standing brief.** Twenty-two passes have now recorded that #6, #7 and #8 are not open.
+
+# 14 October 2026 (editor, scheduled, third pass) — an empty queue, and three defects in the 1999 election record found by reading the mirrored issue
+
+## What was open
+
+Nothing. `gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returned an empty list. #768,
+#769 and the night report #770 are the last three things merged, all of them early this morning.
+`gh pr list` answered 403 naming GraphQL, as it always does; the REST route and `git push
+--dry-run` both answered normally, so this was a full-mode run and not a gated one.
+
+`origin/research-photos` is 15 commits ahead of main, but its whole content diff against main is
+`.research/photo-run-2026-10-14-scheduled.md`, and that file is byte-identical to the copy main
+already carries from the #769 squash. The branch holds nothing main lacks. The other `research-*`
+branches ahead of main are the 4 August orphan-history snapshots and the spent editor branches,
+unchanged.
+
+## Routes
+
+`web.archive.org` is still closed from this container — the connection is reset, not refused, which
+is the same symptom last night recorded. `digitalcommons.wku.edu` landing pages answer. Its
+`cgi/viewcontent.cgi` is still behind Cloudflare: two attempts 90 seconds apart both returned 403,
+and both wrote the 5,664-byte bot-check page to the `.pdf` filename, which is trap 7 exactly. The
+magic bytes were checked and the file discarded. `wkuherald.com/wp-json/wp/v2/posts` answers.
+
+## What was reviewed, with no diff to review
+
+With the queue empty the pass went at live content instead, on the April 1999 election, which is
+the densest contested year in the file and whose source issue is **mirrored in this repository**
+as `data/documents/1999-00-herald-74-51-elections.pdf`. That matters: the mirror made it possible
+to read the page images at source while `viewcontent.cgi` was refusing everything. The PDF carries
+no text layer, so pages 1-4 were rendered and read.
+
+Everything the archive takes from that issue held, to the vote:
+
+- Front page, "Turbulent elections complete / Coates wins SGA presidency by 3 votes", Ryan Clark:
+  1,436 students voted **on Tuesday**, in an election the paper says decided the officers for the
+  1999-2000 school year.
+- The jump on page 3 carries the results box: Coates and Martin over Jones and Yeckering 616-611,
+  Matheis over Morrison 700-688 for vice president of finance, Griffey over Kirby 729-652,
+  Bastin over Wright 806-570. All four match the live entries exactly.
+- The recount: asked for by the winning ticket, held that night, 614-611. Matches.
+- The flier review, the council letting the result stand the next day, and Morrison's complaint.
+  All match.
+
+That also settles #768's 1999 correction, merged four hours earlier, at source rather than by
+inference: 13 April 1999 was a Tuesday, the paper says the vote was Tuesday, so the issue of
+13 April did appear on polling day and "on the morning of the general election" is right.
+
+## Three defects, all corrected
+
+**1. A "no source found" that was false, in two places.** The 1998-99 entry of 26 April 1999 said
+no source independently names the office Morrison and Matheis contested, and cited this
+repository's own research file, `.research/fillins-1985-2000.json`, for the claim that it was vice
+president of finance. The officer note on the same race said the same thing. Both are wrong. The
+issue names the office twice — in the results box and in the article's own sentence about the
+vice president of finance race — and the archive not only cites that issue in two other live
+entries, it mirrors the file. A citation of the project's own working file is circular, and the
+disclaimer would have sent the next run hunting for a source already on disk. This is the same
+failure mode as last night's Smita Peter paragraph, a week apart and in the opposite direction.
+Both passages now name Herald 74:51, the research-file citation is gone, and the entry carries
+74:51 as a second source. The honest hedge that remains is the true one: the 27 April headline
+does not itself name the office, and no source records the re-run's vote count.
+
+**2. A surname spelled two ways.** The 1999-00 senate note called the judicial council member
+"Drew Harvill". The 1998-99 Judicial Council roster, on SGA's own executive council minutes of
+18-19 July 1998, has **Drew Harrell**. The page was zoomed and read: the Herald prints Harrell.
+"Harvill" appears in no source anywhere — one occurrence in `years.json` and nothing in the index.
+This is not a spelling doubt between two attested forms, which CLAUDE.md says to flag rather than
+fix; it is a transcription error against a source in hand, so it is corrected.
+
+**3. A quote that was not what the man said.** The same note had Harrell calling the 1999 race
+"the most contentious he had seen". He did not. What he told the Herald was that the election was,
+in terms of politics, the most accurate he had seen in comparison to real life — a remark about
+the race resembling real politics, not about its nastiness. The "most contentious" framing is the
+reporter's, about the finance race, and it had been put in a named person's mouth. Rewritten to
+what he said, paraphrased, with the issue named inline.
+
+While reading, John Crowe was confirmed as SGA chief justice in April 1999 ("Said SGA Chief Justice
+John Crowe"), which sits beside rather than against the 1998-99 row giving Ryan Morrison as chief
+justice on the minutes of 1 September 1998 — that row's own note bounds him to September–January,
+and Morrison was a candidate in the race the council was judging. Left as it stands.
+
+## Traps, against the corrections
+
+- **Advance notice.** Not in play; the issue read is a report of a completed vote.
+- **Committee chair as officer, bill author as member.** Not in play.
+- **Surname-only matching.** The Harrell correction is the opposite case — one person recorded
+  under two spellings — and it was resolved on the printed page plus SGA's own minutes, not on
+  similarity.
+- **Spring elections file forward.** Nothing re-filed. The paper's own words, that the vote
+  decided the officers for 1999-2000, are a second contemporaneous source for the written rule,
+  after the one the last pass found. The split of this election across 1998-99 and 1999-00 is the
+  standing filing-convention question and is still the owner's call.
+- **Settled facts.** Untouched.
+- **Living people.** Matheis, Morrison, Coates, Martin, Harrell and Crowe are named only in their
+  SGA roles and in what the Herald published about the election. The flier dispute keeps the
+  outcome the paper recorded. Nothing personal and unconnected to SGA service was added.
+- **Contributor edits.** None.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0: 61 years, 1,968 events, 60 presidents, 1,111 pieces of
+legislation each present and a real PDF, 1,312 citations that open their issue (one more than last
+night, the added 74:51), 1,317 quoted spans none reaching 15 words. `check_contrib.py` exit 0.
+`check_duplicates.py` reports the same four title pairs and one same-source pair as before, none
+from this diff, judged separate again. Roster unchanged: 2,651 terms held by 1,809 people, 98%
+carrying an account.
+
+## What is still open
+
+- **The filing convention**, unchanged and still the owner's call, now with a second
+  contemporaneous line supporting the written rule.
+- **`web.archive.org` closed and `viewcontent.cgi` behind Cloudflare.** Both were retested tonight.
+  The lesson worth carrying: where an issue has been mirrored into `data/documents/`, it can be
+  read at source with no network at all, and rendering the page images is the way past a missing
+  text layer. Three defects came out of one mirrored file.
+- **189 officer portrait slots** (159 people) still empty.
+- **The standing brief.** #6, #7 and #8 have not been open for twenty-three passes.
