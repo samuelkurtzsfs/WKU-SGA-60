@@ -47351,8 +47351,8 @@ same synthetic-date pattern.
 that record, `dlsc_ua_records/7776`, as **21 October 1991**. The volume's own sequence settles it
 three ways. 67:24 is catalogued 19 November and 67:26 is 26 November, so the gap 67:25 belongs in
 is the week of 21 November, not a month earlier. The *Herald* published Tuesdays and Thursdays
-throughout volume 67 — every one of the 56 catalogued dates in it falls on a Tuesday or a
-Thursday, with the single exception of 67:25's 21 October, which was a **Monday**. And 21 November
+throughout volume 67 — of the 55 issues catalogued in it, 28 fall on a Thursday and 26 on a
+Tuesday, and the one remaining is 67:25's 21 October, which was a **Monday**. And 21 November
 1991 was a Thursday, falling exactly between the Tuesdays of the 19th and the 26th. The
 catalogue's date for that record is wrong; the label in this repository is correct.
 
