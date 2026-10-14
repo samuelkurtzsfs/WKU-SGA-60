@@ -47063,3 +47063,96 @@ diff and each is separate business; judged separate again. Roster unchanged at 2
   that collection actually holds before another run reasons about missing yearbook years.
 - **The 346-to-99 figure in `.research/branches-checked.json`**, unsourced and contradicted by the
   live text.
+
+# 14 October 2026 (editor, scheduled, fifth pass) — an empty queue, the 1999 election read at source, and the 346-to-99 figure run down
+
+## Routes
+
+Full mode. `GH_TOKEN` present, `gh auth setup-git` silent, `git push --dry-run` returned
+`* [new branch] HEAD -> access-probe`. `gh pr list` answers 403 naming GraphQL, as every pass
+records; the REST route answered normally. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still
+absent from the editor container, so route two remained unavailable. #6, #7 and #8 have not been
+open for twenty-five passes and are closed unmerged; the standing instruction to merge them is
+long spent.
+
+**The queue is empty.** No open pull requests. Every `research-*` and `editor-*` branch on origin
+either has no merge base with main — the 4 August orphan snapshots AGENT-LANDING warns about — or
+is behind main in content, so nothing is waiting to land. Main is at 518dc224.
+
+## What was verified instead
+
+With nothing to review, #771's 1999 election corrections were re-checked independently at source.
+The TopSCHOLAR PDF route (`cgi/viewcontent.cgi`) is still shut from this container: HTTP 403
+behind a Cloudflare challenge, tested twice 90 seconds apart, the body a "Just a moment..." page
+of 5,664 bytes saved under a `.pdf` name — trap 7 exactly. Landing pages answer 200 normally. The
+way through is this repository's own mirror, `data/documents/1999-00-herald-74-51-elections.pdf`,
+whose cover sheet reads UA12/2/1, Vol. 74 No. 51, 4-15-1999. Pages rendered at 150 dpi.
+
+Everything held. The results box headed "SGA election winners" names V.P. of Finance and gives
+Matheis over Morrison 700-688; the article says the race was under judicial review two hours
+later. Coates and Martin over Jones and Yeckering 616-611, the recount that night 614-611,
+Griffey over Kirby 729-652, Bastin over Wright 806-570, 1,436 voting on the Tuesday in an election
+the paper says decided the officers for 1999-2000 — all match the live entries. The printed line
+reads **Drew Harrell**, and his remark is that the election was, in terms of politics, the most
+accurate he had seen in comparison to real life. "Most contentious" is the reporter's phrase about
+the finance race. John Crowe is named chief justice on the same page. #771 was correctly merged
+and nothing in it needs trimming.
+
+## The 346-to-99 figure, closed
+
+The previous pass left this for a later one. It is worse than an unsourced number.
+`.research/branches-checked.json` carried it twice, in contradiction. The profiles verdict had
+**rejected** it outright as a figure no cited fact carries. But item 7 of the same file asserted
+that Ryan Morrison won the re-run "by 346 to 99", that this was **already in years.json**, that it
+had been marked `already_in_archive`, and that the editor might want it raised into a dated event
+of its own.
+
+Every part of that was false. The figure appears nowhere in years.json — then or now; both live
+passages say in terms that no source found records the re-run's count. Left standing, item 7 was
+not a dormant error but an instruction: it invited a future run to plant an invented vote count as
+a dated event, presented as archive fact a verifier had already cleared. Item 7 is rewritten to
+say what is true and to forbid the addition. The verifier's rejection stays where it is.
+
+What the record does support is now recorded with it: the 700-688 first count from the mirrored
+issue, and the re-run's date of 26 April resting on the index line for 74:53 of 22 April, "Vote
+Ryan Morrison on Monday", the Monday following being the 26th. The count itself is genuinely
+unrecorded in what this project can reach — Herald 74:54 of 27 April is not mirrored and the PDF
+route is shut.
+
+Two stale spellings of **Harvill** for Harrell in the same file, in items 2 and 3, were corrected
+with the reason noted. The three remaining "Harvill" strings elsewhere in the repository are
+`Bobbie Harville`, a reporter, in harvested index lines — a different person and a fair
+illustration of why surnames are never matched alone. The index is source data and was not
+touched.
+
+## The Talisman collection question, closed
+
+The previous pass asked a future run to establish what the `talisman/` collection actually holds
+before reasoning about missing yearbook years. It holds nothing: `digitalcommons.wku.edu/talisman/`
+answers 404 because there is no such collection. The Talisman is catalogued under **UA12/2/2
+inside `dlsc_ua_records`**, the same collection as the Herald, which is why the local full index
+covers it. That index carries 111 Talisman items spanning 1906 to 2025, and the gap is specific:
+continuous to **1994**, then **2003** alone, then **2012 onward**. Missing are 1995-2002 and
+2004-2011. The photograph routine should search `dlsc_ua_records`, not a `talisman/` path, and
+should treat only those two spans as absent.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0 — 61 years, 1,968 events, 60 presidents, 1,111 pieces of
+legislation each present and a real PDF, 1,312 citations each opening its issue, 1,317 quoted
+spans none reaching 15 words. `check_contrib.py` exit 0. `check_duplicates.py` reports the same
+four title pairs and one same-source pair as every prior pass — designated driver cards, the 1992
+regent advisory bill, the 1972 Civil Liberties Union suit, plus/minus grading, and the September
+2026 pair sharing one article. None is new and each is separate business; judged separate again.
+Roster unchanged at 2,651 terms held by 1,809 people, 98% carrying an account. No published data
+changed this pass: the corrections are to a research file.
+
+## What is still open
+
+- **189 officer portrait slots** (159 people, 157 with no portrait in any year), unchanged.
+- **`cgi/viewcontent.cgi` is shut from these containers** by a Cloudflare challenge the egress
+  proxy cannot answer. The mirrors in `data/documents/` are the way round it, and the case for
+  mirroring the issue behind every event is now a practical one, not just a courtesy to readers.
+- **The 1999 re-run vote count** is unrecorded and should stay that way unless Herald 74:54 of
+  27 April 1999 is read. It is not mirrored.
+- **Talisman 1995-2002 and 2004-2011** are absent from TopSCHOLAR and have no known home.
