@@ -46581,3 +46581,132 @@ So: no unlanded research anywhere on the remote tonight, and the one thing that 
   results sit in the year the vote happened and 13 are filed forward. `check_year_filing.py`
   reports it. It needs one decision applied to all thirteen, and it is the owner's to make.
 - The brief's reference to #6, #7 and #8 as open. They have been closed since 18 August.
+
+# 14 October 2026 (editor, scheduled) — an empty queue, and an election-morning paper that three entries had printed before the vote
+
+## What was open
+
+Nothing. `gh api repos/.../pulls?state=open` returned an empty list. `gh pr list` answered 403
+naming GraphQL, as it does on every pass; `gh api` and `git push --dry-run` both worked, so this
+was a full-mode pass. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, so route two was
+again unavailable and route one was the only way to land anything.
+
+`research-photos` is the only branch on origin carrying live commits, and it carries nothing main
+lacks: its photograph work is on main already as the squash of #766, and compared tip to tip the
+branch is simply missing 129 lines of this file. No branch anywhere on origin has been touched
+since yesterday evening. The standing brief still names #6, #7 and #8 as open and stale since
+4 August; they have been closed unmerged since 18 August, and this is the twenty-first pass to
+record it.
+
+## The audit: the cross-year election splits
+
+With no queue, the pass audited live content, and took its slice from the one validator whose
+output nobody has worked through — `check_year_filing.py`, which reports four election months
+whose results are filed under two academic years at once, "a reader of either page sees a vote
+the other page also claims."
+
+Reading those four months end to end turned up something better than a filing quarrel. **Three
+entries, in three different decades, describe a *Herald* issue as appearing a fixed number of
+days before an election, when the archive's own record of the result makes that interval
+impossible.** All three are one mistake made three times: an election-morning preview read as a
+day-before preview. The *Herald* published Tuesdays and Thursdays, SGA polled on a publication
+day, and the paper that went out that morning previewed the vote being held as it was read.
+
+**1999, settled at source.** The front page of *Herald* 74:51, Thursday 15 April 1999, reports
+under Ryan Clark's byline that students voted on Tuesday in the general election, on a turnout of
+1,436, and that it decided the officers for the 1999-2000 school year. The vote was therefore
+Tuesday 13 April 1999, and the issue of 13 April was printed on polling morning. The entry in
+1998-99 had it appearing two days before the vote. The issue is mirrored in this repository as
+`1999-00-herald-74-51-elections.pdf`; it has no text layer, so the page was rendered and read as
+an image. The same front page independently confirms two figures already live on that year: the
+1,436 turnout, and Coates's win by three votes.
+
+**2000, settled at source.** WKU's own news release of Friday 14 April 2000, archived at
+`web.archive.org`, reports the result of "Thursday's election". 14 April 2000 was a Friday, so the
+vote fell on Thursday 13 April — the morning the *Herald* ran Rex Hall's piece on the two
+candidates. The entry in 2000-01 had that issue appearing on the eve of the vote, in its title and
+in its body. Read for the spot check, the release also confirms every figure in that year's
+election entry exactly: Martin and Bedo over Wright and Campbell 654-541, Caswell over Lyons
+706-461, Howard and McClard unopposed, Martin named to the Board of Regents seat.
+
+**1991, corrected downward rather than redated.** The result was printed in the *Herald* of
+11 April 1991, so the vote cannot have fallen two days after the issue of 9 April, as the
+1991-92 entry had it. The local index bounds the vote without fixing it — the primary report on
+4 April, the result on 11 April — so the false interval was dropped rather than replaced with one
+no source gives.
+
+A sweep of all 1,968 events for the same construction turned up 52 entries using day-before,
+eve-of or week-before language. The other 49 are sound: most are ordinary intervals between two
+dated reports, and several are the archive being careful on purpose, including the 1971-72
+Mountain cancellation, which records outright that the *Talisman* and the *Herald* disagree on
+whether the show was called off on the day or on its eve.
+
+## What was not touched, and why
+
+**The filing convention.** The sixth pass of 13 October raised it and the seventh left it open:
+54 spring-election results sit in the year the vote happened and 13 are filed forward, while
+CLAUDE.md's trap 5 says plainly that an April result belongs to the following year. Two things
+found tonight sharpen it rather than settle it, and both are the owner's call, not an editor's:
+
+- **Five entries citing one issue, split across two year pages.** All five cite *Herald* 74:51 of
+  15 April 1999 and the same mirrored PDF. Three sit in 1998-99 and two in 1999-00. There is no
+  principled line between them; whichever convention wins, they belong together.
+- **1979 splits a single election down the middle.** The primary of 12 April is filed in 1979-80
+  carrying an explicit note that it was "previously misfiled under 1978-79" because it elected the
+  1979-80 officers. The general election result of 19 April, which elected the same officers, sits
+  in 1978-79, as do both 17 April polling-day entries. The reasoning was applied to the primary
+  and not to the general.
+
+Worth recording for whoever decides: the *Herald* of 15 April 1999 describes that April's vote in
+its own words as the election "which decided the officers for the 1999-2000 school year". That is
+a contemporaneous source siding with the written rule against the prevailing practice. It is one
+sentence in one year and not grounds for an editor to re-file 54 entries unilaterally, which is
+why nothing was moved tonight.
+
+## Landing
+
+The corrections are on `ed-1014-election-day` as #768. **It is open, not merged.** The merge was
+refused as a self-approval: the pass that wrote the change cannot also be the one that publishes
+it, and since main auto-deploys to the live site, that guardrail is doing its job here. The
+diff is four lines of `data/years.json` plus the site rebuild, and it needs one look from the
+owner. Nothing in it adds a person, moves a year, or touches a settled fact.
+
+## The traps, against this diff
+
+- **Advance notice.** This diff is the advance-notice rule applied to itself: three previews had
+  been dated as though they preceded a vote they were printed into. No outcome is written out of
+  a notice anywhere in it.
+- **Spring elections file forward.** Deliberately untouched, as above. The diff moves nothing
+  between years.
+- **Committee chair as officer, bill author as member, surname-only matching, a changed surname
+  making a second person.** None in play; the diff adds no person.
+- **Living people.** Matheis, Knowles, Martin and Wright are named only as candidates in
+  published *Herald* reports of their SGA campaigns. No allegation was added, and the Knowles
+  entry keeps its existing statement that no source found records who made the accusation or how
+  it was resolved.
+- **Settled facts.** Nothing in section 7 is touched.
+- **Contributor edits.** None in this diff.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py` reports
+four title pairs and one same-source pair, every one already on main, none from this diff, and all
+five read and judged separate by the seventh pass last night.
+
+## Counts
+
+61 years, 1,968 events, 60 people have been president — unchanged, as tonight's work rewrote three
+entries rather than adding any. 2,651 recorded terms of office held by 1,809 people, 2,614 of them
+(98%) carrying an account of what the person did. 1,111 pieces of legislation, every file present
+and a real PDF. 1,311 citations naming a volume and number. 1,317 quoted spans, none reaching
+fifteen words. 48 people recorded under more than one spelling.
+
+## Still open
+
+- **#768, awaiting the owner.** Four lines, described above.
+- The spring-election filing convention, now with two concrete examples rather than a count: the
+  five 1999 entries from one issue, and the 1979 primary-and-general split. Still the owner's
+  decision, and still the largest editorial inconsistency on the live site.
+- The pre-2016 cabinet and Senate officer gap, 157 of 159 officers with no portrait anywhere,
+  still behind `cgi/viewcontent.cgi`.
+- The brief's reference to #6, #7 and #8 as open. Closed since 18 August.
