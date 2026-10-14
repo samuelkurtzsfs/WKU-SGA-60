@@ -47156,3 +47156,102 @@ changed this pass: the corrections are to a research file.
 - **The 1999 re-run vote count** is unrecorded and should stay that way unless Herald 74:54 of
   27 April 1999 is read. It is not mirrored.
 - **Talisman 1995-2002 and 2004-2011** are absent from TopSCHOLAR and have no known home.
+
+# 14 October 2026 (editor, scheduled, fifth pass) — #774 merged after three misdescriptions of the Talisman evidence were corrected
+
+## Routes
+
+Full mode. `GH_TOKEN` present, `git push --dry-run` returned `* [new branch] HEAD -> access-probe`,
+and the REST route listed the open pull requests normally. `gh pr list` answers 403 naming GraphQL,
+as every pass records; `gh auth setup-git` is unnecessary but harmless. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still absent from the editor container, so route two remained
+unavailable and route one was the only way to land anything.
+
+**The standing brief on #6, #7 and #8 is discharged and should be dropped from the instructions.**
+All three are closed — `research-photos`, `research-1980s` and `research-2020s`, each closed
+unmerged. No stale branch needed merging, conflict resolution or a closing comment this pass.
+
+## #774 — the photograph branch. Merged, nothing deleted, three statements corrected.
+
+The diff was a single file, `.research/photo-run-2026-10-14-third-scheduled.md`. No `data/`
+path was touched: no event, no leader, no portrait, no document. Nothing in it reaches the
+rendered site, so the publishing risk was nil and the review was about the editorial record,
+which is where the cost of a wrong note actually falls — a future pass reads these notes to
+decide what not to search again.
+
+Checked the structural claims first, independently rather than by reading the note's own
+summary. All held: 61 years in `years.json`; zero leader records without a portrait in
+`photos.json`; zero years without a photograph; `portrait_gap.py` at exactly **189 officer slots
+/ 159 people / 157 with no portrait in any year**. The four once-missing presidents (Nick Todd,
+Katie Dawson, Jeanne Johnson, Reagan Gilley) each carry a real JPEG — `FF D8` at every path,
+every entry with a source label. The build's "withdrew 5 photograph(s)" line is the
+`_do-not-use.json` bar working as designed, not a coverage gap.
+
+Every network claim was re-probed rather than taken on trust, and every one held:
+`viewcontent.cgi` returns 403 with a 5,664-byte "Just a moment..." challenge saved under the
+requested name (the trap-7 pattern exactly); `digitalcommons.wku.edu/talisman/` returns 404;
+`web.archive.org` resets the connection before any response; `talisman1975west_djvu.txt` returns
+200 in 3.3 seconds for 1.35 MB; 1967 and 1968 both return 503.
+
+**The five names were then checked against the volumes themselves**, which is what this review
+could do that the note's own verifier had not: the plain-text Talisman for 1975, 1979, 1981,
+1986 and 1987 was pulled and read. Every one of the note's five conclusions holds — none of
+these officers can be identified in an SGA role in those volumes, so none should be added. But
+three of its descriptions of the evidence were wrong, and all three are corrected rather than cut:
+
+- **The pass's own count.** Five names were checked and called four throughout, title included.
+  The officer-gap arithmetic then subtracted that count from the slot total to reach 185. Those
+  figures do not subtract at all: 189 is slots, 159 is people. Restated as 184 of 189 untried.
+- **Steve Wilson's third appearance** in the 1979 volume was called the surname index. It is a
+  second Spring Sing credit, in an SAE barbershop quartet. There *is* a surname index entry, and
+  a search for "Steve Wilson" never reaches it, because it reads "Wilson, Steve Alan 296, 318,
+  320, 336". Following it strengthens the finding: his four pages run 296 to 336, the Associated
+  Student Government pages are indexed to 53, and "Judicial Council" does not occur anywhere in
+  the volume. The note now says so.
+- **"The only Millay in either volume is Beth Ann Millay" is false.** The 1987 index also carries
+  "Millay, Lori Ann 52". Neither is Chris Millay, so the name stays cleared, but a note written
+  to stop a future pass repeating a search has to be right about what it found. Her graduation
+  year, a personal detail about someone with no SGA service, came out at the same time; the
+  "track athlete" description stays, because that is the evidence that she is a different person.
+- A fourth, smaller: the archive.org holdings note (1971-1981, 1986, 1987) was cited to
+  CLAUDE.md. It is in SGA-60-AGENT-INFO.md section 4.
+
+Dwight Austin's absence was confirmed the hard way, against both volumes' indexes — Alan Earl,
+Robin Renae and Samantha Andora in 1986, Lee Ann and Sherian Salome in 1987, no Dwight. Mark
+Chesnut's single index line is accurate as stated; the two other Chesnut hits in 1981 are a
+William, a different person. Vern Pulman is absent from the 1975 volume, variants included.
+
+No trap tripped: no event was written, so no advance notice could be mistaken for a report; the
+five offices are copied from `years.json` exactly, with no chair promoted to officer (verified
+name by name); no surname-only match — the note distinguishes Chris Millay from Beth Ann by
+first name, and Steve Wilson 1978-79 is not the Mark Wilson of 1980-81; the only Wilson in
+`name-aliases.json` is India Hooks / India Wilson, unrelated, so no duplicate person; settled
+facts untouched; no contributor edit and no tool attribution in any of the 21 commits.
+
+`check_duplicates.py` reports the same four pairs and one same-source pair as `main`, exits 1 on
+both, and introduced nothing. Judged and left alone: a bill introduced and the same bill failing
+after amendment are two events, as are a lawsuit planned and then endorsed, a position taken and
+the legislation later passed, and two pieces of business from one 2026 meeting write-up.
+
+## Counts after the merge
+
+- **61 years, 1,968 events, 60 presidents.** 2,651 recorded terms of office held by 1,809 people;
+  2,614 of them (98%) carry an account of what the person did. 48 people under more than one
+  spelling or name.
+- 1,111 pieces of legislation, every file present and a real PDF. 308 documents mirrored.
+  1,312 citations name a volume and number and each opens that issue; 1,317 quoted spans, none
+  reaching 15 words.
+- **189 officer portrait slots** (159 people, 157 with no portrait in any year) still empty —
+  unchanged since 13 October.
+- `build.py` clean, `check_data.py` 0, `check_contrib.py` 0.
+
+## Still open
+
+- The officer gap is now bounded by network policy, not by research effort. The 1995-2002 and
+  2004-2011 spans need the `digitalcommons` PDF route, which this container's egress refuses at
+  the Cloudflare stage, and `web.archive.org`, which it resets. Neither yields to pacing.
+- A standing correction for future photograph passes: query `wkuherald.com`'s WordPress route by
+  name alone. A name-plus-keyword query drew a 403 this pass where single terms answer cleanly.
+- The archive.org Talisman holdings are worth reading in full rather than name-searching. This
+  pass found a real index entry that a name search could not see, because the index inverts the
+  name and adds a middle name. That failure mode will have cost earlier passes finds too.
