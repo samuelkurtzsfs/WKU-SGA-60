@@ -59,11 +59,20 @@ eight captioned photos) and any other gap name tied to a gallery story going for
 
 ## Names checked this pass against wkuherald.com, nothing usable
 
-Searched `/wp-json/wp/v2/posts?search=<name>` for twelve still-open gap names and read every
+Searched `/wp-json/wp/v2/posts?search=<name>` for eleven still-open gap names and read every
 hit's content (and, for the one gallery, every photo's own caption via the method above):
 
-- **Danny Vuleta** (First Generation Senator, 2022-23): zero search hits. Fully exhausted on this
-  source now; no lead remains to try here.
+- **Danny Vuleta** (First Generation Senator, 2022-23): no usable photograph, but **not** for the
+  reason first written here. A search on "Danny Vuleta" returns nothing because the *Herald* prints
+  him as **Daniel** Vuleta; a search on the surname returns three hits. All three were opened on
+  review: 73551 ("Veterans and ROTC cadets share experiences on the Hill", 10 Nov 2023) is a
+  feature carrying three photographs, but every one is captioned **William Stanley**, not Vuleta;
+  73655 (9 Nov 2023) quotes him on a bill and carries no body image; 65821 is the election gallery
+  above, whose eight captions are known and do not include him. The conclusion stands, the reason
+  does not. **Search the surname, and search "Daniel", before recording this name as exhausted.**
+  Note also that 73551 and 73655 describe a Daniel Vuleta who is the ROTC Cadet Battalion
+  Commander. That he is the senator of the same name is likely but **not established**, and must
+  not be treated as settled by a later pass.
 - **Reed Hensley** (Organizational Aid Board, 2022-23): two hits. One, the gallery above, checked
   photo-by-photo — not among the eight captioned subjects. The other is a text-only Narcan story
   with no image.
@@ -80,8 +89,11 @@ hit's content (and, for the one gallery, every photo's own caption via the metho
   confirmed text-only above) names him only in running text with no accompanying photo anywhere
   in the piece.
 - **Neel Patel** (2022-23 Gatton Academy Senator): three hits, all text-only or with unrelated
-  featured images; the most promising (68255) stayed 403 for this pass's whole remaining window
-  after two retries spaced apart, so it is unresolved rather than closed — worth a cold retry.
+  featured images. The most promising (68255) stayed 403 for this pass's whole remaining window;
+  it answered on a cold retry during review and carries **no image in its body at all**, so the
+  lead is closed, not merely unresolved. (The article, "SGA fall election results announced,
+  VP Reed appointed to Council on Postsecondary Education", 21 Sept 2022, does confirm in running
+  text that Patel won the Gatton Academy seat.)
 - **Mallory Hardesty** (2022-23 Junior Senator): two hits, one the same Bornefeld-election gallery
   (checked photo-by-photo, not among the eight), the other a text-only trivia-night bill story.
 - **Tyreesha Morris** (2025-26 First Generation Senator): four hits, all generic SGA-meeting
@@ -89,8 +101,8 @@ hit's content (and, for the one gallery, every photo's own caption via the metho
 
 ## What is still open
 
-The 189-slot gap is unchanged in count. One lead (Neel Patel, article 68255) is unresolved rather
-than closed, held up by wkuherald's intermittent 403s rather than by the content. Every other name
+The 189-slot gap is unchanged in count. The one lead left hanging by wkuherald's 403s (Neel Patel,
+article 68255) was retried on review and is now closed: the article carries no image. Every name
 checked this pass is now exhausted against wkuherald's search and, where applicable, its galleries
 via the newly-confirmed media-caption method. The routes that would likely carry the pre-2011
 names' photographs (`cgi/viewcontent.cgi`, `web.archive.org`) stayed closed for this session's
@@ -101,3 +113,31 @@ whole window, consistent with every pass since 13 October.
 `python3 scripts/build.py` then `python3 scripts/check_data.py`: 61 years, clean, 60 presidents,
 no missing leader portrait, no year without a photograph. No file in `data/photos/` or entry in
 `data/photos.json` changed this pass.
+
+## Checked on review, 15 October
+
+Sixteen claims in this note were opened at source before it was merged.
+
+Holding as written: all eight gallery captions (media IDs 65823–65830, fetched individually and
+matching this note word for word); article 65821's title and date; the `data-photo-ids` attribute,
+which really does print those eight IDs — though only in the **rendered page HTML**, not in the
+`wp-json` post object's `content.rendered`, so a future pass must fetch the article page itself to
+read it; Hensley and Hardesty appearing in 65821 only in a running-text roster of elected senators
+and in none of the eight captions; Padgett's 73874 and Baum's 67791 both carrying no body image;
+and `portrait_gap.py`'s 189 / 159 / 157, which reproduces exactly.
+
+Corrected above: the name count (eleven, not twelve), the Vuleta entry, and the Patel entry.
+
+Not verified: the Tyreesha Morris search, which returned 403 on two attempts during review. The
+rate-limiting this note describes is real and was hit again.
+
+**An open question this pass turned up, for the roster rather than the photograph routine.** The
+*Herald*'s election report of 20 April 2022 states that Tramaine Hawkins won the first generation
+seat and Daniel Vuleta the Intercultural Student Engagement seat — the reverse of the seats the
+archive records for the two, which come from SGA's own bill sheets (Bill 27-23-S names "Danny
+Vuleta, First Generation Senator"; Bill 8-22-F names "Tramaine Hawkins, ISEC Senator"). Both
+sources are contemporaneous and neither is obviously wrong: the bills are from inside the 2022-23
+session and name each author's own seat, so the likeliest reading is that the two seats changed
+hands between the April election and the session. Nothing was altered in `years.json` on the
+strength of this. It is recorded so that a later pass does not flip the entries back and forth
+without resolving it.
