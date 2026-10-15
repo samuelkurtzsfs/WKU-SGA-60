@@ -48035,3 +48035,106 @@ they carry paste-ready JSON addressed to a later routine that will copy it witho
 A wrong date in a research note that no one will act on costs nothing. **A wrong date in a template
 is a wrong date on the site, one pass later.** Read the paste-ready blocks in a note as closely as
 you would read the diff, because that is what they become.
+
+---
+
+# 15 October 2026 (editor, scheduled, fifth review) — an empty queue, and four measures that never carried written up as things ASG did
+
+No pull request was open. #783 and #784 are merged, `main` is at 882f9289, and nothing is waiting. The
+three branches the standing instruction still names as stale — #6, #7 and #8 — were closed on
+18 August 2026 and are not open work; the run that keeps re-reading that line should stop expecting them.
+`research-photos` sits 32 commits "ahead" of main, which is merge topology, not stranded research: its
+only difference against main is night-report text main already carries.
+
+With nothing to review I audited live content. A random sample of twelve events was drawn across the
+whole record and each one opened at its cited source. Eight held exactly: the charity 5K defeat and the
+Pakistan Day appropriation, the priority-registration forum, the Big Red Backpack exchange, Caboni on
+community bathrooms, the 29-1 sexual assault resolution, the four February 2016 money bills and the
+2011 renaming editorial. The 2013-14 entry whose citation slug reads "parking structure" while its title
+reads "priority registration" is sound — one article covered both items of business that night.
+
+## What was wrong
+
+**Four measures that failed, were tabled, or have no recorded outcome were written up as things the
+congress did.** All four are now corrected against the documents themselves, and in three cases against
+the rendered page image rather than the text layer.
+
+- **Resolution 86-22-S, attendance of regents at meetings.** The entry said the congress asked Board of
+  Regents members to attend and speak once a year. The form carries "Fail: Voice Vote", a FAILED status
+  stamp, and N/A on every forwarding line. It failed. Nothing went to the Board.
+- **Resolution 86-23-S, a chain on Pearce-Ford Tower windows.** The entry said the congress asked for the
+  chains. The form records "Tabled: Viva Voice", with Pass and Fail blank and no status stamp. It was
+  tabled. Worth noting for anyone citing it: TopSCHOLAR files this document as Bill 86-26-S, but the form
+  itself is numbered Resolution 86-23-S, and a second, different document also carries the number 86-26-S.
+- **Bill 86-8-S, voting by proxy.** The entry was neutral but silent on the outcome. The form reads
+  "Fail 4 - 28" and carries a FAILED stamp. The entry now records that it failed by 4 votes to 28.
+- **Bill 92-06-S, a permanent voter registration booth.** The entry said the bill "committed ASG to
+  keeping" a booth. Both reading lines and all three of Pass, Fail and Other are blank. Rendered at 130
+  dpi and read by eye, they are genuinely blank — no handwritten tick. The outcome is not established,
+  and the entry now says so instead of promoting the resolving clause to fact.
+
+The common fault is one error, made four times: reading a bill's THEREFORE clause as the record of what
+happened. The clause says what the measure would do if adopted. Whether it was adopted is on the cover
+sheet, and on these forms the cover sheet often disagrees with the clause. The entry directly above the
+regents one in the same year, 86-21-S, reads the Summary of Action correctly and records "failed, 7 votes
+to 14" — so the method was known and simply not applied to its neighbours. Ten other 1985-86 entries citing
+bill PDFs were swept the same way and all ten hold: the passed ones really say passed, with forwarding
+dates and names where the entries claim them.
+
+**A fifth entry, 1996-97's 4 February 1997 meeting, described a meeting that is not in its source.** It
+said an Executive Council "met an hour later on memorial trees, a Judicial Council vacancy and Coming
+Home". The cited document is four pages, fully extracted, and is the Congress minutes alone: called to
+order by Vice President Carlene Lodmell, adjourned at 5:43, signed by Secretary Darlene Lodmell. There is
+no Executive Council in it. Two of the three subjects are real but belong to the Congress meeting itself —
+the Judicial Council nomination of Jeff Oliver was New Business, and Coming Home was the PR director
+reporting it postponed. "Memorial trees" does not appear anywhere in the document; it belongs to the
+22 April 1997 meeting, which is the next-but-one entry in the same year. The body that did meet after
+adjournment was the Residence Hall Task Force, at 6:00. The entry is rewritten to the eight items the
+minutes actually record, with the treasurer's $28,026.38 in place of the vague "budget". The adjacent
+items 612 and 614 were checked in case a separate Executive Council document had been meant; both are
+2001, so that collection is not date-ordered and no such document was found near it.
+
+Incidentally, that same document is a fifth independent confirmation of a settled fact: Carlene Lodmell
+presides as Vice President on page one and Darlene Lodmell signs as Secretary on page four, in one
+four-page file. Anyone whose name-similarity check flags them as one person has the answer in a single
+document.
+
+## What held
+
+The 1997-98 designated-driver trio that `check_duplicates.py` reports every pass is three distinct
+events, and each entry already states plainly that the archive holds its Herald issue only as a contents
+listing. Nothing to merge. The 1998-99 resignation of Vice President of Finance Carleton Ruminer checks
+out line for line against the mirrored minutes — the figures, the office left open, and the absence of
+any recorded reason, which the entry says outright. That is the living-person rule working as intended.
+
+## Checks
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. **61 years, 1,968 events, 60 people have
+been president** — unchanged, because all five defects were rewrites, not cuts. 2,651 recorded terms of
+office held by 1,809 people, 2,614 of them (98%) carrying an account of what the person did; 48 people
+recorded under more than one spelling. 1,317 quoted spans, none reaching 15 words. 308 documents and
+1,111 legislation files. `check_duplicates.py` reports the same four title pairs and one same-source pair
+as every recent pass, all genuinely distinct business.
+
+## Still open
+
+- The **election-year filing convention** still needs the owner's decision. Tenth pass carrying it.
+- **Xavier Spiess** waits on a roster entry, not a photograph; the paste-ready entry is correct and ready.
+- The p. 379 **Steve Wilson** portrait is still blocked on which of three men of that name held the
+  1978-79 office.
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and remain
+  on origin. Untouched again.
+- The 2021 remand of Dahmer's negligence claims to Warren Circuit Court is still unadded — incompleteness,
+  not error.
+
+## For the next pass
+
+The outcome sweep done here covered 1985-86 only, and it found three bad entries in fourteen. The same
+cover-sheet test is cheap wherever legislation PDFs are mirrored locally — `data/legislation/` holds 1,111
+of them and `legislation.json` maps every `source_url` to its file, so the whole thing runs offline with
+no crawling at all. **The next pass should run it across another session.** The test is: extract the
+Pass / Fail / Tabled / Other line and the STATUS stamp, and compare them against the verb in the entry.
+Entries that say "asked", "sought" or "pushed for" are the ones to look at hardest, because those verbs
+read naturally off a THEREFORE clause and say nothing about whether it carried. And where the cover sheet
+is blank, render the page before writing a word — three of the four corrections here were confirmed on the
+image, and the fourth was confirmed blank on the image, which is the only way that finding could be made.
