@@ -47831,3 +47831,109 @@ finding a new one. #778's $6 reconciliation was sitting in the article it alread
 outcome was sitting in a leader source listed under her name. **The cheapest unworked seam in this
 project is the second half of an article we already cite.** A pass with an empty queue should go
 back through the sources already in the file before it goes looking for new ones.
+
+# 15 October 2026 (editor, scheduled, third review) — one sentence, read twice, and merged
+
+## What was open
+
+One pull request, #780, and it was the previous pass's own work, held back deliberately rather than
+merged: a change to the archive's most sensitive passage, left for someone who did not write it. Its
+body said as much and asked the next pass to verify and merge, or say why not. That is what this pass
+did.
+
+The three branches the standing brief still names as stale — #6 `research-photos`, #7
+`research-1980s`, #8 `research-2020s` — have been **closed since 18 August** and need no further
+handling. The brief's instruction to merge main into them and rescue or close them is out of date and
+can come out of it.
+
+## What I verified
+
+The diff is one sentence in Andi Dahmer's 2017-18 profile, so "a sample of at least eight claims, or
+all of them if fewer" meant all of them. I opened the *Bowling Green Daily News* report of
+8 March 2021 — already a leader source for the year — and read the ruling account end to end rather
+than taking the author's note on trust. Every element reproduced: Hale dismissed the retaliation
+charge involving Caboni; he did so on the finding that she had received a letter of recommendation for
+the Rhodes from Lawrence Snyder Jr.; the report gives Snyder's title as dean of Potter College of Arts
+and Letters in those words; and she was eventually awarded the Truman Scholarship, which the paper
+calls the first for a WKU graduate. The entry attributes that superlative to the paper instead of
+asserting it, which is the correct handling of a claim a single 2021 newspaper is the only authority
+for. The source calls the letter "strong"; the entry drops the intensifier and quotes nothing, so the
+quoted-span count is unmoved at 1,317.
+
+Because the sentence sits inside a named living person's litigation, I re-read the whole paragraph
+against both of its sources rather than only the changed span. Against the same 2021 report and the
+settlement report of 3 February 2024: the four named defendants and Anderson's title, the 2018 filing,
+the harassment and negligence claims, the March 2021 summary judgment on deliberate indifference and
+severity, the Sixth Circuit's partial revival in 2022 and the pre-February 2018 question it remanded,
+the January 2024 settlement, the $10,000 paid by WKU's insurance carrier, and counsel's description of
+it as nominal and without admission of wrongdoing. Eleven claims, all holding. Nothing in the passage
+needed correcting.
+
+Three internal cross-checks came back clean. Caden Lucas's 2026-27 entry calls him WKU's **second**
+Truman Scholar on WKU News's authority, so naming Dahmer the first makes two independent sources agree
+inside the record rather than only outside it. Snyder is independently recorded in `years.json` as
+Potter College dean, asked to resign in a later year, so his title here is corroborated and not merely
+copied across. And the 2022-23 event already recorded the Sixth Circuit **upholding** the dismissal of
+this same retaliation claim, so the new sentence supplies the 2021 basis for a disposition half of
+which the archive had already published. It closes a seam instead of opening one.
+
+## Traps
+
+No advance notice: a court report of a ruling already issued is a report. No officer or committee-chair
+change, and no person added to any roster — Snyder appears in prose only. No surname-alone match; both
+men are named in full with titles in the source. No alias collision, no election filing, no settled
+fact from section 7 disturbed, no contributor edit in the diff. On the living-people rule the change
+runs the protective way: it records the specific outcome of an allegation against a named living
+person, which is what CLAUDE.md asks for, and names Snyder only in his official capacity and
+favourably, exactly as the source has him.
+
+## Merged
+
+**#780, squash-merged to main.** Nothing cut, nothing trimmed. This is the first thing merged in
+several passes that needed no correction at all, and the reason is worth recording: it was written by
+a pass that then refused to merge it, so it had already been read twice by the time it reached a
+decision.
+
+## Counts after the merge
+
+- **61 years, 1,968 events, 60 presidents.** 2,651 recorded terms of office held by 1,809 people;
+  2,614 of them (98%) carry an account of what the person did. 48 people recorded under more than one
+  spelling or name.
+- 1,111 pieces of legislation, every file present and a real PDF. 308 documents mirrored. 1,312
+  citations naming a volume and number; 1,317 quoted spans, none reaching 15 words. Search index
+  4,949 records. Five photographs withdrawn at build as barred or no longer held.
+- `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0. `check_duplicates.py` reports
+  the same four title pairs and one same-source pair as every prior pass, all pre-existing and none
+  touched by this diff. Judged separate again, the 2026-27 trio included: a bus-tracking resolution, a
+  syllabus statement with a swearing-in, and the election voting window are three pieces of business
+  off one meeting write-up, not one meeting written three times.
+
+## Still open
+
+- **Nothing is awaiting a merge.** The queue is empty as of this pass, and unlike the two passes
+  before it, this one had the rights to merge: push, admin and maintain all returned true and the
+  squash went through. The platform gate was not up. Earlier reports of being unable to merge should
+  be read as that session's condition, not a standing fact — probe it.
+- `research-photos` is **one commit behind main** and holds nothing main lacks; its 15 October
+  photograph run is already in via #779. Merging it in its present state would delete 142 lines of
+  this report and revert the Dahmer sentence. Leave it to pick main up on its next run.
+- The **election-year filing convention** still needs the owner's decision. Eighth pass carrying it.
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and
+  remain on origin. Untouched again.
+- The p. 379 Steve Wilson portrait in the 1979 *Talisman* is still a live lead, blocked on which of
+  three men of that name held the 1978-79 office.
+- **189 officer portrait slots** still empty, unchanged since 13 October.
+- A new lead, small: the 2021 report says the remaining **negligence claims were remanded to Warren
+  Circuit Court**, which Dahmer's profile does not mention. The profile does not claim Hale decided
+  them, so this is incompleteness rather than error, and it was outside #780's diff. A later pass can
+  add it from a source already cited.
+
+## For the next pass
+
+The useful thing here is procedural. A pass wrote a correct, well-sourced change to the most sensitive
+prose in the archive and then declined to merge its own work, leaving the decision to a reader who had
+not written it. That cost one cycle and bought a genuinely independent reading of a passage naming a
+living person, a federal suit and a sum of money — and the reading was not a formality, since it meant
+opening both reports again and re-checking eleven claims rather than one. **On the living-people
+passages, keep doing this.** Everywhere else the standing rule holds: verify and merge in the same
+pass, because an unmerged correction leaves the wrong version live.
