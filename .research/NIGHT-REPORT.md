@@ -48138,3 +48138,126 @@ Entries that say "asked", "sought" or "pushed for" are the ones to look at harde
 read naturally off a THEREFORE clause and say nothing about whether it carried. And where the cover sheet
 is blank, render the page before writing a word — three of the four corrections here were confirmed on the
 image, and the fourth was confirmed blank on the image, which is the only way that finding could be made.
+
+---
+
+# 15 October 2026 (editor, scheduled, sixth review) — #786 closed as empty, and six events that were one event twice
+
+Full mode. The `gh pr list` 403 is still GraphQL-only, `gh api` answers normally, and a dry-run
+push to a throwaway ref was accepted. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both still
+unset, so route two remains unavailable and route one was the only way to land anything. The
+brief's stale trio (#6, #7, #8) has been closed since 18 August, for a twenty-second pass; the
+numbering now stands at #787. Of the four routines the brief describes, the portrait run is still
+the only one enabled, which is why the queue holds one pull request and not four.
+
+## #786: reviewed in full, closed, nothing lost
+
+`Research: photographs (rolling)`, opened 14:06. **Its diff against main is zero files.** The 33
+commits ahead are the ones squash-merged this morning as #779 and #783, so their content is
+already published and the branch tree is byte-identical to main's. The PR body says so itself.
+
+Every state claim in it was checked against the repository rather than taken on trust, and each is
+exact: 73 leader entries (66 presidents, 6 regents, 1 unresolved) with **none** lacking a portrait;
+61 years with **none** lacking a photograph; all four priority-1 portraits on disk and genuine
+JPEGs. The Nathan Cherry dead end holds — wkuherald.com posts 29775, 30199, 31220 and 32227 each
+return `featured_media: 0`, and the one SGA-election article in that search that does carry a
+featured image is the Richey results frame, already barred for naming four people in no stated
+order. Its other dead ends were already in `data/photo-finds/_do-not-use.json` from earlier passes.
+
+**One correction was sent back to the routine.** The body gives 215 officer entries without a
+portrait and calls it the real gap. The figure is reproducible — it is an exact-name match over all
+948 `organization` slots — but it is not the project's figure. `scripts/portrait_gap.py` reports
+189 slots, 159 people, 157 of them with no portrait in any year, counted over the 885 cabinet and
+Senate-leadership slots and resolved through `name-aliases.json`. On an archive that records 48
+people under more than one spelling, a gap count that skips the alias file will sooner or later
+send a run hunting for a portrait already on file under the other name.
+
+## The outcome sweep, carried on from the fifth review
+
+The last pass asked for the cover-sheet test to be run across another session. It was run across
+**all of them**, offline, against the 1,111 mirrored PDFs: 207 events cite SGA legislation, 196
+have their PDF on disk.
+
+The test only works with the labels aligned to their values by y-coordinate. In the text stream the
+labels are one block and the values another, so `Pass:` is followed by `Fail:` and every value
+reads blank — which is how the handoff describes it, and it is exactly what a first, naive pass
+produced here before the coordinates were used: four "mismatches", every one of them a label that
+had swallowed the next label's text.
+
+Aligned properly: 45 marked Pass, 7 Fail, 12 Other, 1 Tabled, and **124 with nothing in the text
+layer at all**. Thirty-seven of those 124 carry an entry asserting the measure passed. Most already
+say outright that the form records no vote. The three that assert a specific vote on a blank form
+were rendered to page images and read:
+
+- **Bill 94-9-F**, public forums: handwritten tick on Pass, PASSED stamp, second reading 11-22-94.
+- **Bill 95-3-S**, faculty and staff recognition: tick on Pass, PASSED stamp, second reading 4-11-95.
+- **Bill 92-05-F**, forums with hall governments: Pass line reads UNANIMOUSLY, PASSED stamp,
+  second reading 10-13-92.
+
+All three entries are right. The 1976-77 sheets use an older template that types ACTION, DATE and
+VOTE outright: Resolution #13 reads Passed, 11/9/76, 25-1, and Bill #9 reads Passed, 3/29/77,
+16-13-3, both matching their entries to the figure. **No entry in the sweep claims a passage its
+document contradicts.** Trap 2a is doing its work: a blank cell is a lead, and every blank one here
+resolved in the entry's favour once the image was opened.
+
+## What the sweep did find: six events written up twice
+
+`check_duplicates.py` misses these by design. It compares titles, and successive passes gave the
+same event two unlike titles. They were found instead by looking for same-date events sharing a
+cited URL and then reading the pairs.
+
+- **1968-69, Herald 48:3.** Two real articles — Alana White on the committees, Ellen Bennett on the
+  booking problems — but each entry also re-reported the other's. Each now covers its own.
+- **1975-76.** One *Student Insight* supplement, two entries. Combined, keeping every item from
+  both and attributing the pieces to the authors who signed them.
+- **1979-80.** One Hargrove profile, two entries. Combined.
+- **1986-87.** The telephone-outreach entry said nothing the $12,100 budget entry did not already
+  say. Dropped.
+- **1990-91.** The left-handed desk entry also reported the excused-absences defeat, which has its
+  own fuller entry a few lines away. Trimmed to its own resolution — which the form records only as
+  a stamp, the reading and pass lines being blank.
+- **1992-93.** The thinner account of the 25 August minutes folded into the fuller one, keeping the
+  committee assignments and the note that the minutes appear under both names.
+
+## One citation that did not support its claim
+
+The 1979-80 entry put ASG hearing its 1979-80 budget and discussing its delegate policy "a week
+later", citing *Herald* 55:2 of 30 August 1979. A 30 August issue cannot report the following week.
+The local index settles it without a single request: the business is Ken Morris and Bill Estep in
+**55:3 of 6 September 1979**, now cited as `src2`. The fact was true; the citation was not. This is
+the cheapest class of error to find and the easiest to publish — the reader who checks the citation
+finds a correct fact unsupported, which is the same damage as a wrong one.
+
+## Checks
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. **61 years, 1,964 events, 60 people
+have been president** — four fewer events than this morning, all four of them the duplicate halves,
+and no sourced fact went with them. 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98%) carrying an account of what the person did; 48 people recorded under more than one
+spelling. 1,318 quoted spans, none reaching 15 words; 1,311 volume-and-number citations, each
+opening its issue. 308 documents and 1,111 legislation files. `check_duplicates.py` reports the
+same four title pairs and one same-source pair as every recent pass, all read again and all
+genuinely distinct business.
+
+## Still open
+
+- The **election-year filing convention** still needs the owner's decision. Eleventh pass carrying it.
+- **Xavier Spiess** still waits on a roster entry, not a photograph.
+- The p. 379 **Steve Wilson** portrait is still blocked on which of three men of that name held the
+  1978-79 office.
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and
+  remain on origin. Untouched again.
+- The 2021 remand of Dahmer's negligence claims to Warren Circuit Court is still unadded.
+
+## For the next pass
+
+The same-date-shared-source read found six duplicates that title matching never would, and it is
+cheap: 181 same-date pairs share a cited URL, of which 26 share enough content words to be worth
+reading. Six of the ones read were defects. **The remaining 20 have not been read**, and that is
+the first thing to pick up. The detector misses as well as it finds — the 1990-91 pair scored below
+the threshold and was caught only by reading the entry beside it — so the threshold is a way of
+ordering the work, never a filter to trust.
+
+Worth adding to `check_duplicates.py` eventually: it already knows about same-source pairs within
+three days, but only flags them when they share a named person. Dropping that condition for pairs
+on the *same* date would have caught four of the six found here.
