@@ -47937,3 +47937,101 @@ living person, a federal suit and a sum of money — and the reading was not a f
 opening both reports again and re-checking eleven claims rather than one. **On the living-people
 passages, keep doing this.** Everywhere else the standing rule holds: verify and merge in the same
 pass, because an unmerged correction leaves the wrong version live.
+
+# 15 October 2026 (editor, scheduled, fourth review) — #783 merged, and a publication date corrected before a later pass could copy it onto the site
+
+## What was open
+
+One pull request, #783, `research-photos`, opened at 08:03 by the photograph routine. `gh pr list`
+answered 403 naming GraphQL, as on every pass; `gh api` and `git push` both worked, so this was a
+full-mode pass. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, so route two remained
+unavailable and route one was the only way to land anything.
+
+The three branches the standing brief still names as stale — #6 `research-photos`, #7
+`research-1980s`, #8 `research-2020s` — have been closed since 18 August. Fourth pass to record
+it; the brief is simply out of date on this point and needs no action.
+
+## #783 — merged, after one correction
+
+The whole diff was a single research note, `.research/photo-run-2026-10-15-second-scheduled.md`.
+No `data/` file, no image, no site content. The routine found a cleanly identified portrait of
+**Xavier Spiess**, associate justice in 2025-26, and correctly declined to attach it: he carries no
+`organization.senate.officers` entry for that year, so `photos.json` cannot hold him without
+`check_data.py` detaching the portrait. That restraint was right, and it was tested rather than
+assumed — I reproduced the failure myself, adding the entry and the image and getting the stated
+error verbatim, then reverted.
+
+**The one defect was a date, and it mattered more than a log entry usually would.** The note gave
+the Herald article as "published 12 November 2025". The article was published **13 November**
+(`article:published_time` reads `2025-11-13T06:09:39+00:00`; the dateline reads November 13).
+12 November is the date of the meeting it describes, and of the photograph. On its own that is a
+slip in a research note. But the note also carried a paste-ready `photos.json` entry, written for a
+later roster pass to copy once Spiess has a roster slot, and that entry's `src.label` led with the
+same wrong date. Copied as instructed, it would have put a wrong publication date on a live page.
+The label is rewritten in the house style the Sophie Stirling entry already follows, which names the
+publication date and the photograph date separately. Two smaller corrections in the same commit: the
+quoted caption restored to the newspaper's own capitalisation, and the count of passages naming
+Spiess in the 2025-26 record corrected from three to four.
+
+Everything else in the note held. Verified against source: the caption word for word, the Jonah
+Savage byline, the image as a real JPEG at 1200x924, `portrait_gap.py` at 189/159/157 exactly, all
+three covered priorities at zero, and the network state — `viewcontent.cgi` 403, landing pages on
+the same host 301, `web.archive.org` resetting the connection — reproducing precisely. The note's
+Brooke Mitchell finding is the surname trap avoided correctly: the only hit is a softball report
+about a different person, and the routine declined it.
+
+Traps checklist clean. The cited article reports a meeting already held, so nothing is written out
+of an advance notice. No committee chair promoted to officer — the note does the opposite and
+declines to invent the roster slot it needs. No surname-alone match, no changed-surname duplicate,
+no April result filed forward, nothing touching the settled facts. Spiess is a living person and the
+note reports only his candidacy and the caption, both sourced. No contributor commit in the diff.
+
+## Checks
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. **61 years, 1,968 events, 60 people
+have been president.** 2,651 recorded terms of office held by 1,809 people, 2,614 of them (98%)
+carrying an account of what the person did; 48 people recorded under more than one spelling. 1,317
+quoted spans, none reaching 15 words. 308 documents and 1,111 legislation files. The portrait gap
+stands at **189 officer slots held by 159 people**, 157 of whom have no portrait in any year —
+unchanged since 13 October.
+
+`check_duplicates.py` exits 1, as it does every pass; it reports rather than judges. Four title
+pairs and one same-source pair, all pre-existing on main and all genuinely distinct business: a
+bill's introduction and its failure, an approval and a distribution, two items of business from one
+meeting. Nothing to merge.
+
+## Still open
+
+- **The queue is empty.** #783 is merged and nothing else is open.
+- **Xavier Spiess waits on a roster entry, not a photograph.** The portrait exists, is identified,
+  and the paste-ready entry now carries the right date. Whichever pass next touches
+  `organization.senate.officers` for 2025-26 can land both in one move. Same shape as the Steve
+  Wilson case, and now the second portrait blocked this way.
+- The p. 379 Steve Wilson portrait in the 1979 *Talisman* is still blocked on which of three men of
+  that name held the 1978-79 office.
+- The **election-year filing convention** still needs the owner's decision. Ninth pass carrying it.
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and
+  remain on origin. Untouched again.
+- The Reed Hensley gallery lead is neither confirmed nor refuted: the gallery URL returned 403 to
+  this pass, so the note's "captions load by script" reading could not be tested. It is a method
+  note, not a published claim.
+- The 2021 remand of Dahmer's negligence claims to Warren Circuit Court is still unadded. Carried
+  from the last pass; still incompleteness rather than error.
+
+## For the next pass
+
+I spot-checked the recent editor branches that still show a `data/` difference against main —
+`ed-1014-election-day`, `editor-1013-source-audit`, `editor-1015-profile-figures` and the rest —
+on the suspicion that a correction had been left behind on one of them. None had. In every case the
+branch's own change was already on main and the difference ran the other way: main had moved ahead.
+A three-dot diff makes a squash-merged branch look like it is still holding work, and a two-dot diff
+against main's tip is what tells you whether it actually is. Worth knowing before a future pass
+spends a run "rescuing" branches that have nothing on them. This was a sample, not an audit of all
+four hundred.
+
+The substantive lesson is narrower and worth keeping. A research note is not site content, and it is
+tempting to read one loosely for that reason. But this project's notes are written to be *acted on*:
+they carry paste-ready JSON addressed to a later routine that will copy it without re-deriving it.
+A wrong date in a research note that no one will act on costs nothing. **A wrong date in a template
+is a wrong date on the site, one pass later.** Read the paste-ready blocks in a note as closely as
+you would read the diff, because that is what they become.
