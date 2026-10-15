@@ -47667,6 +47667,11 @@ introduced none.
 
 ## Still open
 
+- **#778 is open and awaiting the owner's merge.** Both corrections, and this report, are on
+  `editor-1015-profile-figures`. Every merge condition in the brief is met — `build.py` clean,
+  `check_data.py` and `check_contrib.py` exit 0, every spot-checked claim holding, no trap tripped —
+  but this pass could not merge its own pull request, so main is untouched and the live site still
+  carries the 1.69 per cent sentence until someone clicks merge. Nothing is lost: the work is pushed.
 - The **election-year filing convention** still needs the owner's decision. Seventh pass carrying it.
 - `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and
   remain on origin. Untouched again.
