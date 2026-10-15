@@ -34,18 +34,18 @@ up one new, cleanly identified photograph, in the course of checking an article 
 gap name (Justin Goins, Chief Justice 2022-23/2023-24):
 
 **"SGA Judicial Council elects new chief justice"**
-(`https://wkuherald.com/88753/news/sga-judicial-council-elects-new-chief-justice/`, published 12
+(`https://wkuherald.com/88753/news/sga-judicial-council-elects-new-chief-justice/`, published 13
 November 2025, photographs by Jonah Savage) carries four individually captioned photographs from
-the 12 November 2025 Judicial Council meeting. One of its captions reads: "Associate Justice
-Xavier Spiess gives a speech on why he should be elected as the next Chief Justice of the
-Judicial Council on Wednesday, Nov. 12, 2025 in the SGA Office." The photograph
+the Judicial Council meeting of 12 November 2025, the day before. One of its captions reads:
+"Associate Justice Xavier Spiess gives a speech on why he should be elected as the next Chief
+Justice of the judicial council on Wednesday, Nov. 12, 2025 in the SGA Office." The photograph
 (`wkuherald.com/wp-content/uploads/2025/11/SAV2655-1200x924.jpg`) is a clean, single-subject,
 chest-up shot of one young man in a WKU SGA polo, named nowhere else in the frame — downloaded,
 verified as a real JPEG (`FF D8` magic bytes, 1200x924), and visually a usable portrait.
 
 Xavier Spiess is a real, sourced figure in this archive already: `data/years.json`'s 2025-26
-events and profile text name him three times as the losing candidate in the 3-1 Judicial Council
-vote that made Sophie Stirling chief justice (whose own portrait, from a different Herald photo,
+events and profile text name him in four passages as the losing candidate in the 3-1 Judicial
+Council vote that made Sophie Stirling chief justice (whose own portrait, from a different Herald photo,
 is already in `photos.json`). But he does not appear in `organization.senate.officers` for
 2025-26, or in any other year — the 2025-26 organization record lists only Kaden Blankenship as
 Associate Justice. Adding the portrait to `photos.json` therefore fails `check_photos()` in
@@ -65,7 +65,7 @@ Associate Justice (or equivalent) entry for Xavier Spiess, sourced to the events
 
 ```json
 {"year": "2025-26", "name": "Xavier Spiess", "file": "2025-26-xavier-spiess.jpg",
- "src": {"label": "College Heights Herald, 12 November 2025, photographed by Jonah Savage; the caption names Associate Justice Xavier Spiess giving a speech on why he should be elected the next Chief Justice of the Judicial Council, in the SGA Office on the date of the photograph.",
+ "src": {"label": "College Heights Herald, published 13 November 2025, photographed by Jonah Savage; the caption names Associate Justice Xavier Spiess giving a speech on why he should be elected the next chief justice of the judicial council, in the SGA Office on 12 November 2025, the date of the photograph.",
          "url": "https://wkuherald.com/88753/news/sga-judicial-council-elects-new-chief-justice/"}}
 ```
 
