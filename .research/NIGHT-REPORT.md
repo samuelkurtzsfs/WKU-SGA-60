@@ -47542,3 +47542,150 @@ and recommended to four other routines without the URL in it ever being fetched.
 and careful everywhere it reported a *finding*; the defect was in the part nobody treats as a
 finding. **Run the recipe before you publish it.** One `curl` would have caught this, and the cost
 of not running it would have been paid by every routine that trusted the note.
+
+# 15 October 2026 (editor, scheduled) — an empty queue, and a published percentage that cannot be true
+
+No pull requests open. The queue was empty for the second scheduled pass running: `gh api` returns
+`[]` for open pull requests, and the highest number on the repository is #777, merged yesterday
+evening. The three stale branches the brief still names — #6, #7 and #8 — were closed unmerged on
+18 August and have been gone for eight weeks; there is nothing left to rescue or shut there, and
+the brief should stop sending passes to look.
+
+I checked the research branches directly rather than trusting the absence of pull requests. Eighty-odd
+`research-*` refs sit on origin and almost all of them report as "ahead" of main, which is the
+orphan-history warning in AGENT-LANDING.md showing through: a two-dot diff against `data/` and
+`.research/` shows every one of them *behind* main, carrying deletions rather than additions. The
+recent ones — `research-photos`, the three 13 October editor branches, `research-editor-1010-night-review`
+— hold nothing main lacks. Nothing is stranded.
+
+GitHub answered on REST throughout, and `git push --dry-run` returned `* [new branch]`, so route one
+was open. Route two was unavailable again: neither `SGA60_SITE` nor `SGA60_RESEARCH_TOKEN` is set in
+this container, the fourth scheduled pass in a row with only one way to land work.
+
+## The audit: figures in profile prose
+
+With nothing to review I turned on the live site, and on the one rule in CLAUDE.md that has no
+validator behind it: every fact in a president's profile must be traceable to a source already cited
+in that year's events, documents or leader sources. Profiles are the richest prose in the archive —
+73 leaders, 275 paragraphs — and the place where a number is least likely to be challenged, because
+nothing recomputes them and `check_data.py` reads profiles only for quote length.
+
+The screen: every figure in profile prose that appears nowhere else in its own year's data. Forty
+turned up. Six are my detector's own false positives and want no action — a radio frequency
+(Revolution 91.7), a course number (HON 251), a timestamp (12:17 a.m.), and three small counts
+reading as prose. The rest are real figures resting on the leader's own cited sources rather than
+on an event body, which is permitted, so each is a candidate and not a finding.
+
+Nine claims were then opened at source, chosen for consequence rather than at random — living
+people, money, and litigation first. Eight reproduced exactly.
+
+- **Dahmer's election.** 1,579 votes cast, 930 to Dahmer against Mujkanovic's 305 and Nellans' 212;
+  both running mates, the committee chairmanship, and all three legislative aims. Word for word.
+- **Dahmer's settlement**, which is the highest-stakes sentence in the archive: a named living
+  person, a federal suit, a sum. The Daily News of 3 February 2024 carries WKU's attorney calling it
+  "a nominal economic settlement of $10,000 paid by WKU's insurance carrier", with no admission of
+  wrongdoing. The profile's wording is exact, and it states the outcome rather than leaving an
+  allegation hanging — which is what the living-people rule asks for.
+- **Todd's audit.** More than $800 in questioned purchases, $872 in total between August 2003 and
+  May 2004, mostly sub-$10 buys at campus restaurants with no receipts, plus $71 on the purchasing
+  card after a rental car was returned. The source says the vehicle was "rented in March during
+  spring break", so even the profile's "spring break" is the paper's own. Campus police found no
+  action necessary. All confirmed.
+- **The September sanctions dispute** in Todd's profile is not in his leader sources, so I chased it
+  down: it traces to the year's own 21 September 2004 event with its own citation. Traceable, as the
+  rule requires, and the archive carries both sides — Bailey saying Todd was sanctioned, Todd saying
+  the card was the only reprimand.
+- **Martin and the gazebo.** The Herald of 1 October 2002 has finance vice president Ross Pruitt
+  saying "the $13,000 SGA put toward a gazebo mistakenly went back into the organization's general
+  fund", spent on other things including computers, and naming former presidents Bedo and Martin as
+  partly responsible. The profile is exact, including the attribution of blame.
+- **Dawson's commencement.** 159th commencement, 1,797 undergraduates, Radcliff native, corporate
+  and organizational communication, the five qualities, and a 14-word quote. Exact.
+- **The two tuition events**, which is where the pass earned itself.
+
+## What I corrected
+
+**A percentage that cannot be true, asserted in the archive's own voice.** The 5 June 2026 event
+read "a $204 tuition increase, of 1.69 per cent, taking tuition to $6,240 a semester". Those cannot
+all hold: $204 on a $6,036 semester is 3.38 per cent, and 1.69 per cent is what $204 comes to against
+the *annual* figure of $12,072.
+
+The archive did not invent it. The Herald of 5 June prints both — "raising tuition by $204, a 1.69%
+increase" and "from $6,036 to $6,240 per semester" — so the entry was faithful to its source. But the
+paper's percentages do not survive contact with each other either: its 2 June story calls the
+proposed $210 rise "a 1.85% increase", and 1.85 and 1.69 are not in the ratio 210:204. The dollar
+figures across both stories are consistent and mutually confirming; the percentages are not. An
+archive that asserts the percentage in its own voice hands a reader an arithmetic impossibility and
+no way to tell who erred.
+
+Rescued rather than cut. The figure stays, attributed: the event now reports the rise from $6,036 to
+$6,240 and says the *Herald* reported it as 1.69 per cent. I also added the detail that explains the
+pair, which was sitting unused in the same article — the approved figure came in **$6 below the
+agenda circulated before the meeting**, which is precisely why a $210 proposal became a $204
+increase. Two events that read as a loose end now read as one story. Nothing sourced was lost.
+Note that the sibling 2 June event had already handled this correctly by omitting the percentage; the
+inconsistency was within the archive's own practice, not only the paper's.
+
+**Bill 01-23-S names no sum, and now says so.** Chasing the gazebo figure, I read the mirrored bill
+rather than the reporting about it. It allocates "the remainder of its funds at the ending of the
+2000-2001 academic year" together with money previously set aside for a stage — no dollar amount
+anywhere on the sheet. This matters because the archive holds two sourced figures for that money:
+"about $5,000" from the petitioners in the Herald of 19 September 2002, and $13,000 from the finance
+vice president's accounting on 1 October. They are not contradictory — they are successive states of
+knowledge, each carried with its own citation — but a future pass running a consistency sweep will
+see two figures for one bill and be tempted to reconcile them by writing one into the bill's entry.
+The entry now records what the bill actually directs, and that it names no sum, so there is nothing
+to reconcile. Its outcome line is typed and filled — first reading 10 April 2001, carried 17 April —
+so this is not a trap-2a case; I checked the line rather than assuming it.
+
+## Traps
+
+Nothing in my own diff trips them. No advance notice carries an outcome: the two tuition events are a
+proposal and the vote that followed it, each dated to its own article, and the 2 June entry claims
+nothing about the result. No committee chair promoted to officer, no one matched on a surname, no
+April result filed into the wrong year — the June 2026 board meeting correctly sits in 2025-26, where
+Robinson still held the seat, not in Lucas's year. No settled fact disturbed. Nothing about a living
+person beyond what a cited source reported, and the two living-people passages I read hardest, Todd's
+and Dahmer's, both state outcomes.
+
+`check_duplicates.py` reports the same four title pairs and one same-source pair as every prior pass,
+all pre-existing and all judged separate again: a bill introduced and the same bill failing after
+amendment are two events, as are a suit planned and then endorsed. My edits changed no title and
+introduced none.
+
+## Counts after the change
+
+- **61 years, 1,968 events, 60 presidents.** 2,651 recorded terms of office held by 1,809 people;
+  2,614 of them (98%) carry an account of what the person did. 48 people recorded under more than one
+  spelling or name.
+- 1,111 pieces of legislation, every file present and a real PDF. 308 documents mirrored. 1,312
+  citations naming a volume and number; 1,317 quoted spans, none reaching 15 words. Search index
+  4,949 records. Five photographs withdrawn at build as barred or no longer held.
+- `build.py` clean, `check_data.py` exit 0, `check_contrib.py` exit 0.
+- **189 officer portrait slots** (159 people, 157 with no portrait in any year) still empty,
+  unchanged since 13 October.
+
+## Still open
+
+- **#778 is open and awaiting the owner's merge.** Both corrections, and this report, are on
+  `editor-1015-profile-figures`. Every merge condition in the brief is met — `build.py` clean,
+  `check_data.py` and `check_contrib.py` exit 0, every spot-checked claim holding, no trap tripped —
+  but this pass could not merge its own pull request, so main is untouched and the live site still
+  carries the 1.69 per cent sentence until someone clicks merge. Nothing is lost: the work is pushed.
+- The **election-year filing convention** still needs the owner's decision. Seventh pass carrying it.
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and
+  remain on origin. Untouched again.
+- The p. 379 Steve Wilson portrait in the 1979 *Talisman* is still a live lead, blocked on which of
+  three men of that name held the 1978-79 office.
+- `cgi/viewcontent.cgi` and `web.archive.org` remain shut from these containers.
+- `dlsc_ua_records/7776` is still catalogued a month early by TopSCHOLAR; this repository's
+  21 November 1991 label is the correct one. Do not "fix" it.
+
+## For the next pass
+
+A figure can be faithfully copied and still be false on the page. Both corrections this pass are the
+same shape: the archive reported exactly what its source said, and what the source said did not
+survive arithmetic or did not describe the document it was about. Faithfulness to a source is the
+floor, not the ceiling — **where a source's own numbers contradict each other, attribute the figure
+instead of asserting it**, and where reporting describes a document the archive already mirrors, read
+the document. One bill PDF settled a question that three newspaper articles had left open.
