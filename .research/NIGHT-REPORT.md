@@ -48417,3 +48417,97 @@ Tightening it to index-only entries would cut the noise.
 The more useful question is whether the routines should keep running four times a day to reconfirm
 a gap that cannot move until a blocked route reopens. That is the owner's call, and it is the one
 thing in this file that a decision would actually change.
+
+---
+
+# 15 October, eighth scheduled review: one PR, merged after three corrections
+
+## What came in
+
+One open pull request, **#792** (`research-photos`), the rolling photograph PR. Net diff against
+main was a single new research note and not one line of data — no change to `data/photos.json`,
+`data/photos/`, or `years.json`. The three branches this routine's brief still names as stale
+since 4 August, #6, #7 and #8, were closed out long ago; nothing of the sort is open now.
+
+## What was verified
+
+Sixteen claims in the note were opened at source. Thirteen held exactly as written: all eight
+gallery captions behind article 65821, fetched one media ID at a time and matching the note word
+for word; the article's title and date; the `data-photo-ids` attribute carrying those eight IDs;
+Hensley and Hardesty appearing in that article only in a running-text roster of elected senators
+and in none of the eight captions; Padgett's 73874 and Baum's 67791 each carrying no image in the
+body; and `portrait_gap.py`'s 189 / 159 / 157, which reproduces exactly.
+
+The note's central claim is a method, and the method is real: `/wp-json/wp/v2/media/{id}` returns
+a gallery photograph's caption as plain JSON, no rendering, which reopens every gallery lead
+earlier passes wrote off as unreachable. One correction to how it is described — the
+`data-photo-ids` attribute sits in the rendered article HTML and **not** in the `wp-json` post
+object, whose `content.rendered` reads empty. A pass that looks only at the REST response will
+conclude the gallery has no photographs in it.
+
+## What was cut or corrected
+
+Three claims did not survive, and all three were rescued rather than deleted.
+
+The **Vuleta** entry said "zero search hits. Fully exhausted on this source now; no lead remains
+to try here." The *Herald* prints him as **Daniel**, not the Danny this archive stores, and the
+surname returns three articles. All three were read on review: the three photographs in the ROTC
+feature are every one captioned **William Stanley**, the bill story carries no body image, and the
+third is the known election gallery. The conclusion — no portrait — was right; the reason was not,
+and a sentence instructing future passes that a name is finished had to come out. Searching the
+archive's own familiar form of a name is not the same as searching the name.
+
+The **Patel** lead was recorded as unresolved behind a 403 and worth a cold retry. It answered on
+retry during the review and carries no image at all, so it is closed. And eleven names were
+searched, not the twelve both the note and the PR body claimed.
+
+## What was merged
+
+#792, squashed to main at `840ddff4`, after the corrections were pushed to the branch at
+`e8985407`. `build.py` clean, `check_data.py` and `check_contrib.py` both exit 0. The four pairs
+`check_duplicates.py` prints are all pre-existing on main and all read as genuinely separate
+business — a bill introduced and the same bill failing eight days later are two events, not one.
+
+## A seat conflict, recorded and not acted on
+
+The *Herald*'s election report of 20 April 2022 states that Tramaine Hawkins won the first
+generation seat and Daniel Vuleta the Intercultural Student Engagement seat. The archive records
+the reverse for both, on SGA's own bill sheets: 27-23-S names "Danny Vuleta, First Generation
+Senator" and 8-22-F names "Tramaine Hawkins, ISEC Senator". Both sources are contemporaneous and
+neither is obviously wrong — the bills come from inside the 2022-23 session and name each author's
+own seat, so the likeliest reading is that the two seats changed hands between the April election
+and the session beginning. Nothing was altered in `years.json`. It is written into the photograph
+note so that a later pass does not reverse the entries, and then reverse them back, without
+settling the question.
+
+## Counts after this pass
+
+61 years, **1964 events**, 60 presidents, 2,651 recorded terms of office held by 1,809 people,
+2,614 of them (98%) carrying an account, 48 people under more than one spelling, 308 documents,
+1,111 pieces of legislation, 4,945 search records. 5 photographs withdrawn at build as no longer
+held or barred. Officer-portrait gap unchanged at 189 slots / 159 people / 157 with no portrait
+in any year.
+
+## Still open
+
+Everything carried by the seventh review stands unchanged — the **election-year filing
+convention** and the **2013-14 publication-date filing** both still waiting on the owner, **Xavier
+Spiess**'s roster entry, the **Steve Wilson** portrait behind its three-men-of-one-name problem,
+the unadded 2021 Dahmer remand, and `editor-2026-10-07-rally-notice` and
+`editor-2026-10-04-index-drop`, which are not to be merged and were not touched.
+
+Added to that list: the **Hawkins / Vuleta seat conflict** above, which is a roster question and
+not a photograph one.
+
+## For the next pass
+
+The Vuleta miss is worth generalising. Twelve names went out against wkuherald and twelve came
+back negative, which is what a thin seam looks like and also what a wrong query looks like — and
+one of these was the second kind. Where this archive holds a familiar or shortened form of a
+name, the surname alone is the safer query, and a negative recorded against a full name that the
+source never prints is not a negative at all. It is the cheapest correction available to the
+photograph routine and it costs one extra request per name.
+
+The larger question from the seventh review is unchanged and is still the only one in this file
+that a decision would move: whether four routines a day should keep reconfirming a gap that cannot
+close until a blocked route reopens. This pass added one genuine method and no photographs.
