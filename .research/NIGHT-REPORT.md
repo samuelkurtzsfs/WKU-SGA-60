@@ -48138,3 +48138,282 @@ Entries that say "asked", "sought" or "pushed for" are the ones to look at harde
 read naturally off a THEREFORE clause and say nothing about whether it carried. And where the cover sheet
 is blank, render the page before writing a word — three of the four corrections here were confirmed on the
 image, and the fourth was confirmed blank on the image, which is the only way that finding could be made.
+
+---
+
+# 15 October 2026 (editor, scheduled, sixth review) — #786 closed as empty, and six events that were one event twice
+
+Full mode. The `gh pr list` 403 is still GraphQL-only, `gh api` answers normally, and a dry-run
+push to a throwaway ref was accepted. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are both still
+unset, so route two remains unavailable and route one was the only way to land anything. The
+brief's stale trio (#6, #7, #8) has been closed since 18 August, for a twenty-second pass; the
+numbering now stands at #787. Of the four routines the brief describes, the portrait run is still
+the only one enabled, which is why the queue holds one pull request and not four.
+
+## #786: reviewed in full, closed, nothing lost
+
+`Research: photographs (rolling)`, opened 14:06. **Its diff against main is zero files.** The 33
+commits ahead are the ones squash-merged this morning as #779 and #783, so their content is
+already published and the branch tree is byte-identical to main's. The PR body says so itself.
+
+Every state claim in it was checked against the repository rather than taken on trust, and each is
+exact: 73 leader entries (66 presidents, 6 regents, 1 unresolved) with **none** lacking a portrait;
+61 years with **none** lacking a photograph; all four priority-1 portraits on disk and genuine
+JPEGs. The Nathan Cherry dead end holds — wkuherald.com posts 29775, 30199, 31220 and 32227 each
+return `featured_media: 0`, and the one SGA-election article in that search that does carry a
+featured image is the Richey results frame, already barred for naming four people in no stated
+order. Its other dead ends were already in `data/photo-finds/_do-not-use.json` from earlier passes.
+
+**One correction was sent back to the routine.** The body gives 215 officer entries without a
+portrait and calls it the real gap. The figure is reproducible — it is an exact-name match over all
+948 `organization` slots — but it is not the project's figure. `scripts/portrait_gap.py` reports
+189 slots, 159 people, 157 of them with no portrait in any year, counted over the 885 cabinet and
+Senate-leadership slots and resolved through `name-aliases.json`. On an archive that records 48
+people under more than one spelling, a gap count that skips the alias file will sooner or later
+send a run hunting for a portrait already on file under the other name.
+
+## The outcome sweep, carried on from the fifth review
+
+The last pass asked for the cover-sheet test to be run across another session. It was run across
+**all of them**, offline, against the 1,111 mirrored PDFs: 207 events cite SGA legislation, 196
+have their PDF on disk.
+
+The test only works with the labels aligned to their values by y-coordinate. In the text stream the
+labels are one block and the values another, so `Pass:` is followed by `Fail:` and every value
+reads blank — which is how the handoff describes it, and it is exactly what a first, naive pass
+produced here before the coordinates were used: four "mismatches", every one of them a label that
+had swallowed the next label's text.
+
+Aligned properly: 45 marked Pass, 7 Fail, 12 Other, 1 Tabled, and **124 with nothing in the text
+layer at all**. Thirty-seven of those 124 carry an entry asserting the measure passed. Most already
+say outright that the form records no vote. The three that assert a specific vote on a blank form
+were rendered to page images and read:
+
+- **Bill 94-9-F**, public forums: handwritten tick on Pass, PASSED stamp, second reading 11-22-94.
+- **Bill 95-3-S**, faculty and staff recognition: tick on Pass, PASSED stamp, second reading 4-11-95.
+- **Bill 92-05-F**, forums with hall governments: Pass line reads UNANIMOUSLY, PASSED stamp,
+  second reading 10-13-92.
+
+All three entries are right. The 1976-77 sheets use an older template that types ACTION, DATE and
+VOTE outright: Resolution #13 reads Passed, 11/9/76, 25-1, and Bill #9 reads Passed, 3/29/77,
+16-13-3, both matching their entries to the figure. **No entry in the sweep claims a passage its
+document contradicts.** Trap 2a is doing its work: a blank cell is a lead, and every blank one here
+resolved in the entry's favour once the image was opened.
+
+## What the sweep did find: six events written up twice
+
+`check_duplicates.py` misses these by design. It compares titles, and successive passes gave the
+same event two unlike titles. They were found instead by looking for same-date events sharing a
+cited URL and then reading the pairs.
+
+- **1968-69, Herald 48:3.** Two real articles — Alana White on the committees, Ellen Bennett on the
+  booking problems — but each entry also re-reported the other's. Each now covers its own.
+- **1975-76.** One *Student Insight* supplement, two entries. Combined, keeping every item from
+  both and attributing the pieces to the authors who signed them.
+- **1979-80.** One Hargrove profile, two entries. Combined.
+- **1986-87.** The telephone-outreach entry said nothing the $12,100 budget entry did not already
+  say. Dropped.
+- **1990-91.** The left-handed desk entry also reported the excused-absences defeat, which has its
+  own fuller entry a few lines away. Trimmed to its own resolution — which the form records only as
+  a stamp, the reading and pass lines being blank.
+- **1992-93.** The thinner account of the 25 August minutes folded into the fuller one, keeping the
+  committee assignments and the note that the minutes appear under both names.
+
+## One citation that did not support its claim
+
+The 1979-80 entry put ASG hearing its 1979-80 budget and discussing its delegate policy "a week
+later", citing *Herald* 55:2 of 30 August 1979. A 30 August issue cannot report the following week.
+The local index settles it without a single request: the business is Ken Morris and Bill Estep in
+**55:3 of 6 September 1979**, now cited as `src2`. The fact was true; the citation was not. This is
+the cheapest class of error to find and the easiest to publish — the reader who checks the citation
+finds a correct fact unsupported, which is the same damage as a wrong one.
+
+## Checks
+
+`build.py`, `check_data.py` and `check_contrib.py` all exit 0. **61 years, 1,964 events, 60 people
+have been president** — four fewer events than this morning, all four of them the duplicate halves,
+and no sourced fact went with them. 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98%) carrying an account of what the person did; 48 people recorded under more than one
+spelling. 1,318 quoted spans, none reaching 15 words; 1,311 volume-and-number citations, each
+opening its issue. 308 documents and 1,111 legislation files. `check_duplicates.py` reports the
+same four title pairs and one same-source pair as every recent pass, all read again and all
+genuinely distinct business.
+
+## Still open
+
+- The **election-year filing convention** still needs the owner's decision. Eleventh pass carrying it.
+- **Xavier Spiess** still waits on a roster entry, not a photograph.
+- The p. 379 **Steve Wilson** portrait is still blocked on which of three men of that name held the
+  1978-79 office.
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and
+  remain on origin. Untouched again.
+- The 2021 remand of Dahmer's negligence claims to Warren Circuit Court is still unadded.
+
+## For the next pass
+
+The same-date-shared-source read found six duplicates that title matching never would, and it is
+cheap: 181 same-date pairs share a cited URL, of which 26 share enough content words to be worth
+reading. Six of the ones read were defects. **The remaining 20 have not been read**, and that is
+the first thing to pick up. The detector misses as well as it finds — the 1990-91 pair scored below
+the threshold and was caught only by reading the entry beside it — so the threshold is a way of
+ordering the work, never a filter to trust.
+
+Worth adding to `check_duplicates.py` eventually: it already knows about same-source pairs within
+three days, but only flags them when they share a named person. Dropping that condition for pairs
+on the *same* date would have caught four of the six found here.
+
+# 15 October 2026 (editor, scheduled, seventh review) — an empty queue, eleven published claims read at source, and three entries that described the wrong article
+
+## What was open
+
+Nothing. `gh api repos/.../pulls?state=open` returned an empty list, and #788, the sixth review of
+the day, was the last thing merged. `gh pr list` answered 403 naming GraphQL, as it does on every
+pass; `gh api` and `git push --dry-run` both worked, so this was a full-mode pass. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still unset, so route two was again unavailable and route one was the
+only way to land anything.
+
+The standing brief still names #6, #7 and #8 as open and stale since 4 August. They have been
+closed unmerged since 18 August 2026, and this is the twenty-first pass to record it.
+
+A sweep of every `research-*` branch again found none carrying unlanded work. `research-photos` sits
+33 commits ahead of `main` and its content diff against `main` is **empty** — all merge commits and
+work already landed. The three `research-editor-1013-*` branches differ from `main` only in holding
+an older copy of this file. Checked by content, not by commit count.
+
+## The research routines have stopped producing new material
+
+Worth recording plainly, because six reviews today have merged nothing but their own corrections.
+Counting the archive at the last commit of each day:
+
+| | 11 Oct | 12 Oct | 13 Oct | 14 Oct | 15 Oct |
+|---|---|---|---|---|---|
+| events | 1968 | 1968 | 1968 | 1968 | 1964 |
+| leader portraits | 1407 | 1407 | 1407 | 1407 | 1407 |
+| year photographs | 73 | 73 | 74 | 74 | 74 |
+
+In five days the four routines have added **one year photograph** — the 1994-95 Evans/Higdon
+campaign advertisement, on 13 October — and no events and no portraits at all. The fall in events
+is this editor's duplicate merges, not research. The routines are not failing; they are finishing.
+Every photograph note since 13 October reports the same thing in different words: priorities
+reconfirmed at zero, the open routes exhausted, the gap unchanged.
+
+## The blocked routes, tested rather than believed
+
+The photograph routine has reported two closed routes since 13 October. Tested from this container
+before accepting the account built on them:
+
+- `digitalcommons.wku.edu` landing pages: **200** after redirect, open
+- `digitalcommons.wku.edu/cgi/viewcontent.cgi`: **403**, and **403** again after a 92-second backoff
+- `web.archive.org`: **connection reset**, both attempts
+- `archive.org` and `wkuherald.com`: **200**, open
+
+All four claims are accurate, and so is the conclusion drawn from them: the 189-slot officer
+portrait gap needs the PDF route or the Wayback Machine, and neither opened. The routine's own
+spot check of its weakest "already searched" name (Lucas Knight, nine articles, no photograph)
+was also sound. Nothing in those notes needed correcting.
+
+## The audit: eleven published claims, all eleven held
+
+With no queue, the pass audited the live site. A random sample of events citing `wkuherald.com`,
+drawn across 2003 to 2026, each read against its source:
+
+2003-04's 55 pieces of legislation (the Revolution 91.7 referendum and the 9 May Regents vote both
+exact); 2010-11's Dine with Decision Makers; 2015-16's meningitis resolution (6-15-F and 10-15-F
+both exact); 2016-17's Ride To Vote; 2017-18's LGBTQ activists; 2020-21's $2,334.45 of signage
+(28-2); 2022-23's five nominations and $39,460.76 remaining; 2023-24's Pink Walk (28-0, $500);
+2024-25's final 24th Senate meeting (295 applications against a ~40 average); and the two 2026
+entries re-dated below.
+
+Three deserve recording because they are the traps the checklist names and the entries avoided them:
+
+- **Ride To Vote** is sourced to a 1 November meeting announcing a service for 8 November. The entry
+  claims only that SGA said it *would* run it, and reports no turnout. An advance notice handled right.
+- **The Pink Walk bill** credits Donte Reed, Rush Robinson and Anne-Marie Wright as the bill's
+  *authors*. Reed was director of enrollment and student experience, not a senator, and the entry
+  does not make him one.
+- **The LGBTQ activists entry** names a living person. Senator Dallas McKinney was named by the
+  Herald itself, the verses and the vote on Bill 13-18-S are as the paper reported them, and the
+  entry omits the two speakers' self-disclosed sexuality that the article carries. Within the rule.
+
+One checked claim was an inference rather than a quotation and survived on the archive's own
+evidence: 2010-11's entry calls it the **second** Dine with Decision Makers, which its article does
+not say. The chain holds — a first in December 2009, the Herald itself calling the 2011 event the
+third, and "bigger than last year" in the 2010 report.
+
+## Merged
+
+**#789**, two Herald citations given the day they were published. Two events cited
+`Herald, April 2026` where sibling entries from the same two articles carried exact dates. Both
+articles were opened and dated from their bylines: wkuherald.com/92855 is 16 April 2026,
+wkuherald.com/93405 is 28 April 2026. No claim cut.
+
+**#790**, four 1960s and 1970s entries whose bodies described the wrong article. This picked up the
+task the sixth review handed forward — the unread same-date shared-source pairs — but took it a
+different way. Reading the top of that band turned up one defect, and the defect had a signature
+worth scanning for instead of reading 151 pairs: an index-only entry that puts a Herald headline in
+its title and then fills its body with the *other* articles in the issue. The pair detector lights
+up because two such entries each describe the other; the real fault is that the entry never states
+the fact its own title claims. Nine bodies open `The same issue...`; six state their own fact later
+and are merely awkward; three did not.
+
+- **`1968-02-29`** lobbying entry never said Western sent lobbyists, and closed with "This is the
+  origin of the student regent seat", which the archive's own `1967-11-02` entry contradicts by
+  putting Herald coverage of the proposal months earlier.
+- **`1968-02-29`** discussion-group entry restated the lobbying, mirroring the one above. Trimmed.
+- **`1972-02-25`** 'Chaos Reigns at Associated Students Meeting' never mentioned the meeting, and
+  had sharpened the index twice: a petition to *promote* visitation became one to force it, and
+  "Student Interest Down" became interest having collapsed. Both back to the index.
+- **`1968-02-08`** had Western sending lobbyists "earlier that month". Nothing establishes that, and
+  the index runs the other way: bill in committee on 8 February, lobbying reported on 29 February.
+  The entry now dates the Herald's report, not the act.
+
+Every headline was confirmed verbatim in `data/herald-index-full.json`, which held the full article
+list for both issues — the repaired parser doing exactly what it was fixed to do, and no
+`digitalcommons` request needed beyond the reachability test.
+
+## Judged and left alone
+
+`check_duplicates.py` reports the same four title pairs and one same-source pair as every prior
+pass — designated driver cards, the 1992 regent advisory bill, the 1972 Civil Liberties Union suit,
+plus/minus grading, and the September 2026 trio sharing one meeting report. All separate business.
+Not re-litigated. Also left: `2023-11-07`'s three entries are bills 5-23-F, 6-23-F and 7-23-F and
+same-day legislative business stays separate; `1972-02-29`'s four entries are four different
+articles, and its Benjamin Mays entry is a model of the advance-notice rule, recording that the
+yearbook's caption and its running text disagree on whether he actually spoke.
+
+## Counts after this pass
+
+61 years, **1964 events**, 60 presidents, 2,651 recorded terms of office held by 1,809 people,
+2,614 of them (98%) carrying an account, 48 people under more than one spelling, 308 documents,
+1,111 pieces of legislation, 4,945 search records. 5 photographs withdrawn at build as no longer
+held or barred. `check_data.py` and `check_contrib.py` both exit 0.
+
+## Still open
+
+- The **election-year filing convention** still needs the owner's decision. Twelfth pass carrying it.
+- A second filing question now sits beside it: several **2013-14 entries are dated to their
+  article's publication day** while their bodies describe events up to two weeks earlier — the
+  `2013-12-03` pair covers business of 19, 21 and 29 November. It affects many entries and was not
+  touched unilaterally.
+- **Xavier Spiess** still waits on a roster entry, not a photograph.
+- The p. 379 **Steve Wilson** portrait is still blocked on which of three men of that name held the
+  1978-79 office.
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and
+  remain on origin. Untouched again.
+- The 2021 remand of Dahmer's negligence claims to Warren Circuit Court is still unadded.
+
+## For the next pass
+
+The research side is done to the limit of what it can reach, and the editor side is now the only
+one adding value. Two things follow from that.
+
+The signature scan is reusable and cheap, and it found in one pass what reading 151 pairs would
+have taken several to find. The six `The same issue...` bodies that *do* state their own fact are a
+readability job, not a factual one, and can wait. Worth generalising: an entry whose body shares no
+substantive word with its own title is the same fault in a different dress, and a crude version of
+that test returns 34 candidates, nearly all false positives because titles legitimately paraphrase.
+Tightening it to index-only entries would cut the noise.
+
+The more useful question is whether the routines should keep running four times a day to reconfirm
+a gap that cannot move until a blocked route reopens. That is the owner's call, and it is the one
+thing in this file that a decision would actually change.
