@@ -47409,3 +47409,136 @@ one. The sweep that found it is three lines of arithmetic over `years.json` and 
 whenever a research branch lands: **a figure in a title that does not appear in the body beneath
 it is either arithmetic or a leak.** Ten of eleven were arithmetic. The eleventh had been on the
 live site since 10 October.
+
+# 14 October 2026 (editor, scheduled, seventh pass) — #776 merged after a dead endpoint it recommended to every other routine was replaced
+
+One pull request open, #776, the photograph branch's fourth scheduled pass. It changes one file and
+no data: a research note in `.research/`, 101 lines, nothing reaching `years.json`, `photos.json` or
+the site. The three stale branches the brief names, #6, #7 and #8, are all closed already; nothing
+was left to rescue or shut there.
+
+GitHub answered on REST throughout. `gh pr list` returned the familiar GraphQL 403, which is not the
+platform gate, and `gh api` worked for every call this pass needed, as AGENT-LANDING.md says it
+should. Route two was unavailable again — neither `SGA60_SITE` nor `SGA60_RESEARCH_TOKEN` is set in
+this container — so route one was the only way to land anything, for the second scheduled pass in a
+row.
+
+## What I checked
+
+Fifteen claims, against the sources rather than against the note. Eleven reproduced exactly:
+
+- `portrait_gap.py` at 189 slots / 159 people / 157 with no portrait in any year, to the number.
+- 61 years, every leader carrying a portrait, every year carrying a photograph, and the four
+  once-missing presidents — Todd, Dawson, Johnson, Gilley — each with one. Queried out of the two
+  files rather than taken from the note.
+- Moore, May and Murphy carrying portraits sourced independently of the 1978 group shot: a 1977
+  *Herald* candidate profile and two class-portrait pages. This is what makes the note's refusal to
+  name Bass by elimination the right call rather than an overcautious one.
+- The 1978 *Talisman* p. 34 caption, word for word as the note gives it, four officers named over
+  one photograph.
+- Pulman absent from the whole 1975 volume; "Chesnut, Mark Cameron 234" the only index entry for
+  him in 1981, with the other three "treasurer" captions belonging to Sigma Alpha Epsilon, Sigma Chi
+  and Alpha Gamma Rho exactly as the note says; Millay in 1987 only as Beth Ann and Lori Ann, and
+  Austin in 1987 only as Lee Ann and Sherian Salome.
+- The 1979 index entry for Associated Student Government at "53, 73, 82, 119, 262, 288-9", verbatim.
+- Both blockers, fresh: `cgi/viewcontent.cgi` returning 403 behind a Cloudflare interstitial, and
+  `web.archive.org` resetting the connection. Unchanged for the fifth day.
+- The page-to-leaf mapping, which is the part of the note's new method that works: printed page 108
+  is leaf 112 and page 334 is leaf 338 in the 1975 volume, a four-leaf front-matter offset inside
+  the note's stated three to four.
+- The holdings boundary, checked item by item rather than inferred: 1971 through 1981, 1986 and 1987
+  return metadata; 1982, 1983, 1984, 1985 and 1988 return an empty object.
+
+## What I corrected
+
+Four things, none of them a reason to delete a finding and all of them pushed to the branch before
+merging.
+
+**The endpoint the note recommended does not exist.** This is the one that mattered. The note's
+central claim — that archive.org serves the scanned page images, ungated and unthrottled, where the
+digitalcommons PDF route is shut — is true, and I reproduced it. But the URL it published for the
+purpose, `BookReader/BookReaderImages.php`, is retired: it answers 404 from both of an item's nodes
+and hands back Internet Archive's generic "Page Not Found" page. The note ends that section by
+telling every other routine on this project to use it, since they have all been treating these
+volumes as text-only. A routine that copied it would have read a dead endpoint as an empty archive
+and recorded another absence. Replaced with the two routes that do serve the images —
+`archive.org/download/{id}/page/n{leaf}.jpg` and the IIIF endpoint — both verified down to the
+`FF D8` magic bytes, and both of which answer 302 first, so a fetch that does not follow redirects
+reports a failure where there is none. That last detail is worth as much as the URLs.
+
+**The 1979 volume does photograph a Steve Wilson.** The note said no photograph anywhere in it names
+Young, Wicks or Wilson. Page 379 carries a class portrait captioned for a Steve Wilson of
+Tompkinsville. The decision not to use it was right and stands, but not for the stated reason: the
+volume indexes three separate men of that name, and every other name in that portrait run is indexed
+at 379 as well, which fixes the portrait as Stevie Joe Wilson. None of the three is indexed to any
+ASG page. So the note now records a portrait that exists and cannot yet be attached, which tells a
+later pass what to settle — which of three men held the office — instead of telling it there is
+nothing in the book.
+
+**Two smaller ones.** The 1981 ASG group caption names 28 people across four rows, not the eighteen
+the note claimed; I counted them off the caption. And David Young's remark was given with a word
+changed from what the volume prints, so it is now summarised rather than quoted.
+
+I also recorded Alice Wicks's index entry, which carries no page number where the entries either
+side of her do — a small positive fact in place of a bare absence.
+
+## Judgement calls
+
+`check_duplicates.py` exits 1 by design and reported five pairs. All five are genuinely separate
+events and all five predate this branch, which changed no data at all: a 1997 bill against the
+1998 *Herald* notice that the cards would go out; a 1992 bill introduced against the same bill
+failing nine days later; the Civil Liberties Union planning suit against Associated Students
+endorsing it a month on; a 2003 position against the vote that followed it three weeks later; and
+three items of business from one 2026 meeting report. Nothing merged.
+
+The February 1998 entry is worth naming as the right handling of an advance notice: it reports that
+the cards were to be distributed the next day and claims nothing whatever about how that went,
+saying outright that the archive holds the issue only as a contents listing. That is the rule
+working.
+
+Nothing in the diff tripped the traps. No data changed, so nothing site-facing was at risk; no
+committee chair was promoted to officer, no one matched on a surname, no April result filed into the
+wrong year, no settled fact disturbed, and nothing about a living person beyond what a yearbook
+caption prints of their SGA office. The note's own refusal to identify Bass by eliminating three
+named people from a three-face photograph is the standard this archive is supposed to hold, arrived
+at unprompted.
+
+## Merged
+
+#776 squashed to main with my five corrections on top. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0, all re-run after the corrections. Every commit on the branch authored as
+SGA 60; no tool attribution in the history or the note.
+
+## Counts
+
+- **61 years, 1,968 events, 60 presidents.** 2,651 recorded terms of office held by 1,809 people;
+  2,614 (98%) carry an account of what the person did. 48 people recorded under more than one
+  spelling or name.
+- 1,111 pieces of legislation, every file present and a real PDF. 308 documents mirrored. 1,312
+  citations naming a volume and number, each opening that issue; 1,317 quoted spans, none reaching
+  15 words. Search index 4,949 records. Five photographs withdrawn at build as barred or no longer
+  held — the `_do-not-use.json` mechanism working as designed, not a fault.
+- **189 officer portrait slots** (159 people, 157 with no portrait in any year) still empty,
+  unchanged since 13 October.
+
+## Still open
+
+- The **election-year filing convention** still needs the owner's decision. Sixth pass carrying it.
+- `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are **not to be merged** and
+  remain on origin. Untouched again.
+- The p. 379 Steve Wilson portrait in the 1979 *Talisman* is a live lead, blocked on identifying
+  which of three men of that name held the 1978-79 office. That is a *Herald* and minutes question,
+  not a yearbook one.
+- `cgi/viewcontent.cgi` and `web.archive.org` both still shut from these containers. The portrait
+  gap is bounded by that and not by effort — but less of it than was thought: the 1971-1981, 1986
+  and 1987 volumes are now reachable as page images, which is a route no routine here was using.
+- *Talisman* 1982-1985, 1988 onward, and the pre-1971 volumes remain outside archive.org, so the
+  1966-70 names in the gap still wait on the digitalcommons route.
+
+## For the next pass
+
+A method is a claim like any other, and this pass found one that had been written up, reasoned from,
+and recommended to four other routines without the URL in it ever being fetched. The note was honest
+and careful everywhere it reported a *finding*; the defect was in the part nobody treats as a
+finding. **Run the recipe before you publish it.** One `curl` would have caught this, and the cost
+of not running it would have been paid by every routine that trusted the note.
