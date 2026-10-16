@@ -82,8 +82,29 @@ statically — the related-story card on the *other* article is what exposed it.
 
 That is a method, not a one-off: a related-story preview card republishes another article's lead
 photograph with its full caption in `alt`, which reaches captions that the owning article hides
-behind `data-photo-ids`. It has not been used on this gap. The next pass should attach this
-portrait and then sweep related-story cards across the SGA-tagged articles already on file.
+behind `data-photo-ids`. The next pass should sweep related-story cards across the SGA-tagged
+articles already on file.
+
+**Second editor's correction, 16 October (12:21 pass).** The instruction to attach this portrait
+was itself stale: **it was already attached on 12 October** and has been on the site since.
+`data/photos.json` carries a `leaders` entry for Carter Smith in 2026-27 pointing at
+`2026-27-carter-smith.jpg`, cited to this same article, added in "Photograph run, 12 October: the
+untried officer-gap slice exhausted, no portrait to add" (`afb4525d`, #745) — a commit whose own
+subject line says no portrait was added. The file on disk is 235,070 bytes, begins `FF D8`, and
+measures **2001 x 1334**, which is exactly what `wp-json` reports for `092226_sga_NG_12.jpg`. It
+is the same photograph, by the same route, already landed. Do not attach it again.
+
+The caption was read this pass from the authoritative route rather than from an `alt` attribute:
+
+    https://wkuherald.com/wp-json/wp/v2/media?search=092226_sga_NG_12
+
+returns media id 97546 with the full caption rendered — Carter Smith sworn in as a sophomore
+senator at SGA's fourth meeting of the 2026 fall semester, Tuesday 22 September 2026, in the SGA
+Chambers — and the true pixel dimensions. **Prefer this to scraping `alt` text.** It is one
+request, it needs no related article to be loaded first, it gives the caption whether or not any
+page renders it statically, and `?search=<filename-stem>` resolves a photograph whose article is
+known. The related-story card is a way of noticing a photograph exists; `wp-json` is the way of
+identifying it.
 
 Also opened the one wkuherald gallery already on file for this project's other open names
 (article 65821, the 2022 election-night gallery) to check how its captions are actually
@@ -111,18 +132,25 @@ yesterday's report:
   close any part of this gap.
 - Xavier Spiess's identified portrait (found 15 October) is still waiting on an
   `organization.senate.officers` entry for 2025-26 that this agent's rules do not let it add
-  itself, since all photo metadata is confined to `data/photos.json`.
+  itself, since all photo metadata is confined to `data/photos.json`. This one is still genuinely
+  open — unlike the Carter Smith portrait above, it was checked against `data/photos.json` this
+  pass and no entry for him exists.
 
 Everyone else checked this pass stays open for lack of an individually captioned photograph or a
 usable route to one, not for lack of searching.
 
 This note originally advised the next pass to prioritise checking whether `cgi/viewcontent.cgi`
-had reopened over searching further names on wkuherald.com. The editor's correction above
-withdraws that advice: a usable portrait was sitting on a wkuherald page this very pass had
-loaded, so wkuherald is not exhausted and the related-story route is open now, whereas
-`viewcontent.cgi` depends on a block lifting that is outside this project's control. Attach the
-Carter Smith portrait and work the related-story cards first; re-test `viewcontent.cgi` as well,
-since the remaining gap is still concentrated in decades only that route can reach.
+had reopened over searching further names on wkuherald.com. The first editor's correction
+withdrew that advice on the grounds that a usable portrait was sitting unattached on a wkuherald
+page. That grounds is now gone: the portrait was already on the site. What survives is the weaker
+and still useful point that wkuherald captions are reachable by a route this gap has not been
+swept with. Work the `wp-json` media route across the SGA-tagged articles already on file, and
+re-test `viewcontent.cgi` as well, since the remaining gap is still concentrated in decades only
+that route can reach.
+
+The standing lesson is the one CLAUDE.md already states and this note twice failed to apply:
+check `data/photos.json` for the name before reporting a portrait as missing or as waiting to be
+attached. Both of this pass's claimed discoveries were about a file the archive already held.
 
 ## Checks
 

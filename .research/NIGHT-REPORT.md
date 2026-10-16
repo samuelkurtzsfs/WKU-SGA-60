@@ -48955,3 +48955,166 @@ The cadence question the last three reports closed on is answered for this pass 
 queue did not mean an idle run: the thing worth catching was in the research layer, written three
 hours earlier by this same routine, and it was a wrong presidential year waiting for a run diligent
 enough to act on a note it had every reason to trust.
+
+---
+
+# Night report, 16 October, fourth scheduled review
+
+An empty queue again — no pull request has been open since #799 and #800 merged this morning — so
+the pass went looking for defects the validators cannot see. It found one wrong date on the live
+site and one stale instruction that would have cost the next photograph run a wasted pass.
+
+## The queue
+
+`gh api repos/samuelkurtzsfs/WKU-SGA-60/pulls?state=open` returns `[]`. The three branches the
+standing brief names as stale since 4 August — #6, #7 and #8 — are long closed; pull request
+numbers are in the 800s now and nothing from that estate is open. The `research-*` branches still
+on origin are the orphan-history snapshots AGENT-LANDING.md warns about, all 110 commits behind and
+with no merge base, plus `research-photos`, which is fully merged and sits at zero ahead. Nothing
+to review, nothing to merge.
+
+`gh pr list` still answers 403 naming GraphQL, and the REST routes still answer normally. That is
+the documented split, not the platform gate.
+
+## A publication day the source does not give
+
+`check_data.py` already tests that a citation's volume and number match the record its link opens.
+It does not test the **date** in the label, and that is where this one was hiding.
+
+Checking every citation's label date against the date of the record it opens turns up one Herald
+citation that is wrong, in 1969-70:
+
+- The entry "Voting on the constitutional amendments runs until four o'clock" cited
+  **"Herald 49:50, 1 May 1970"** and its body opened "Tom Todd reported in the Herald of
+  **1 May 1970**".
+- TopSCHOLAR's landing page for that issue (`dlsc_ua_records/4944`) gives the publication date as
+  **"5-1970"** — month and year, no day. The archive had turned a month into a day and then
+  asserted it twice.
+- It is not merely unsupported, it is wrong. Issue 48 of the same volume is 12 May 1970 and issue
+  51 is 14 July, so issue 50 cannot precede 12 May. The issue's own article list settles it
+  independently: it carries a letter deploring the **Kent State shootings**, which were on 4 May
+  1970, alongside commencement and cap-and-gown items. And 1 May 1970 is the date of issue **45**,
+  which the archive also cites — the day had been borrowed from the wrong issue.
+
+The citation and the article are otherwise sound: "Voting Continues Until 4 P.M. for Cheerleaders,
+Amendments," by Tom Todd, is in that issue's list, and the entry's closing line that the archive
+holds no report of the result is correct and properly cautious for what is an advance notice.
+
+So the entry was rescued rather than cut. The label now reads "Herald 49:50, May 1970", the body no
+longer names a day, and it states what is actually known about the dating and why. The event keeps
+the date `1970-05-01`, which is CLAUDE.md's own convention for a month without a day.
+
+**The defect is isolated, and that was tested rather than assumed.** Twenty-one Herald records are
+dated the first of a month in the index and cited with an explicit day-one label — exactly the
+shape that would hide this error. Each was checked against its own volume's publication rhythm:
+**twenty of the twenty-one fall precisely where the Tuesday/Thursday or Tuesday/Friday sequence
+puts them**, between the issue before and the issue after, so they are genuine first-of-the-month
+issues. Only 4944 breaks its sequence, and only 4944 lacks a day at source.
+
+## A wrong date in the research tool, and the archive was right
+
+The same sweep flagged `photos.json`'s "Herald 67:25, 21 Nov 1991" against an index that dates that
+record to **21 October 1991**. Here the archive is right and the tool is wrong, which is worth
+recording because the instinct would be to "correct" the label.
+
+Volume 67 runs Tuesday/Thursday without exception for all fifty-odd issues. No. 24 is Tuesday
+19 November and No. 26 is Tuesday 26 November, so No. 25 is Thursday **21 November**. The indexed
+10-21-1991 is a Monday — the only non-Tuesday/Thursday date in the whole volume — and TopSCHOLAR's
+own landing page carries the same wrong figure, so our harvest is faithful and the error is
+upstream. Nothing was changed. A run that trusted `herald-index-full.json` over the archive here
+would have introduced an error, and a run grepping that file for November 1991 will not find this
+issue at all.
+
+Eleven further index records sit outside the date order their issue numbers imply and carry a
+citation here. All were examined; none is a defect in this archive. Most are TopSCHOLAR reusing a
+volume number across two series (Vol. 78 covers both 2003 and 2004, which is why this archive's
+labels carry the "[Vol. 79]" bracket) or duplicating an issue number — Vol. 64 has two No. 49s, and
+the one dated 13 April 1989 that carries the Amos Gott election is almost certainly No. 51, since
+No. 51 is missing and 13 April is the Thursday that follows No. 50's Tuesday. The dates are what
+the source states and the links open the right issues, so the labels stand: a label carrying a
+number TopSCHOLAR does not use would be harder to check, not easier.
+
+## A hundred and seven headlines, read against the issues they cite
+
+Where an entry quotes a headline, that headline can be checked against the article list of the
+issue it cites without touching the network. 107 were checked; 22 did not match, and every one of
+the 22 was examined by hand. **None is a defect.** They are quotations of article text rather than
+headlines ("faster than Domino's pizza"), or prose cross-references to a second issue the entry
+names in the open. The two that looked worst — a Reischauer lecture entry quoting "The
+Fantasticks", and a King Kong film-series entry quoting "The Flying Ace" — both check out: the
+Reischauer issue really does carry "Associated Students to Present Fantasticks" and "Herald Salutes
+Associated Students" beside "Former Ambassador to Speak Here Tonight", and the Flying Ace line is
+explicitly attributed in the body to the Herald of 2 May. The sweep is better read as a positive
+result: a hundred-odd citations confirmed to open an issue that really contains the article
+described.
+
+## A portrait reported missing that the archive has held since 12 October
+
+This morning's photograph note recorded an "editor's correction" announcing a Carter Smith portrait
+found on a wkuherald page and told the next pass to attach it. **It was already attached.**
+
+`data/photos.json` has carried a `leaders` entry for Carter Smith in 2026-27 since 12 October,
+cited to the same article, added by `afb4525d` — a commit whose subject line reads "no portrait to
+add". The file is a real JPEG, 235,070 bytes, and measures **2001 x 1334**, which is exactly what
+the Herald's own media record gives for `092226_sga_NG_12.jpg`. Same photograph, same route,
+already on the site.
+
+The identification itself is sound, and it was confirmed here from the authoritative route rather
+than from scraped `alt` text: `wp-json/wp/v2/media?search=092226_sga_NG_12` returns media id 97546
+with the caption rendered in full — Carter Smith sworn in as a sophomore senator at SGA's fourth
+meeting of the 2026 fall semester, Tuesday 22 September 2026, in the SGA Chambers.
+
+The note has been corrected on all three counts: the instruction to attach the portrait is
+withdrawn, the `wp-json` route is written down as the thing to prefer over `alt`-scraping, and the
+Xavier Spiess item beside it is confirmed still genuinely open, having been checked against
+`photos.json` this pass rather than taken on trust. Left as it stood, that note would have sent the
+next photograph run to re-attach a file the archive already holds — the second time in one day the
+photograph layer reported as a discovery something it already had.
+
+## The traps, against this diff
+
+The one substantive change trims a claim back to what its source proves, which is the advance-notice
+rule applied rather than tripped. No committee chair recorded as an officer and no bill's author as
+a member. Nobody matched by surname alone — the Carter Smith check was made on an exact name and a
+file's byte size and pixel dimensions, not on a name resembling another. No changed surname merged.
+No April result moved between years. Nothing here touches a settled fact. Carter Smith is a living
+person and nothing is recorded of him beyond what the Herald's caption reported of his SGA service.
+No `Contributed-By` trailer in the diff.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py` reports
+the same four pairs and one same-source pair as the standing baseline, all still genuinely separate
+business. The same-source pair was judged against the article this time rather than on the previous
+reading: article 97612 does carry both the syllabus mental-health clause and the election-voting
+push, so the two entries report different business from one meeting and stay separate.
+
+## Counts after this pass
+
+61 years, **1964 events**, 60 presidents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1111 pieces
+of legislation, 4945 search records, 1407 leader portraits and 74 year photographs. 5 photographs
+withdrawn at build as no longer held or barred. 1311 citations name a volume and number and each
+opens that issue; 1318 quoted spans, none reaching 15 words. No count moves: the pass corrected a
+label and a body and added nothing.
+
+## Still open
+
+Everything the earlier passes of today left open stands, and none of it is this pass's to decide:
+the election-year filing convention and the 2013-14 publication-date filing; the Boka spelling, now
+with two contemporaneous sources against the plaque and wanting a decision rather than more
+searching; Xavier Spiess's roster entry, confirmed still open above; the Steve Wilson portrait and
+its three-men-of-one-name problem; the unadded 2021 Dahmer remand; and the Hawkins / Vuleta seat
+conflict. `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are not to be merged
+and were not touched.
+
+Two things are added to that list by this pass, both of them observations rather than requests:
+
+- **`check_data.py` does not test the date in a citation label.** It tests the volume and number.
+  The 1969-70 error above sat behind a correct volume and number for as long as the entry existed,
+  and the test that caught it is twenty lines. It is worth building in, with the caveat the 67:25
+  case proves: where the label and the index disagree, the index is not automatically right.
+- **The photograph routine has added nothing to `data/photos.json` for several days** and has now
+  twice in one day reported as newly found a portrait the archive already held. The gap it reports
+  is real and the routes into it are genuinely blocked; the failure is in checking the archive's own
+  holdings before reporting, which costs a pass each time.
