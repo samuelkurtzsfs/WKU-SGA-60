@@ -20,7 +20,7 @@ Nothing to do on any of the three; both are unchanged from the three earlier pas
 `python3 scripts/portrait_gap.py --list` reports the same figure as the three earlier passes
 today: 189 officer slots, 159 people, 157 with no portrait anywhere. Rather than re-pick names at
 random from that list and risk re-walking ground already covered, this pass wrote a short script
-to diff the full 189-slot list against the text of all 90 prior `.research/photo-run-*.md`
+to diff the full 189-slot list against the text of all 79 prior `.research/photo-run-*.md`
 reports and surface only the names that had never been typed into any of them. Thirteen such
 names existed:
 
@@ -61,21 +61,43 @@ downloaded and no entry was added for any of these eight.
 Searched `wkuherald.com`'s `wp-json/wp/v2/posts` endpoint for Blake Napper, Tim Howard and Cory
 Gerald directly. Tim Howard and Cory Gerald returned no posts earlier than 2013 — consistent with
 the finding above that the site's indexed archive does not reach 2004-08 at all. Blake Napper
-returned one hit, but from February 2003: "Student's not in love with Cupid," a Valentine's Day
-vox-pop piece quoting a Louisville freshman named Blake Napper on why he dislikes the holiday. A
-freshman in February 2003 would be entering his junior year by 2004-05, so the name is plausibly
-the same person who later co-chaired Campus Improvements — but the article is unrelated to SGA,
+returned two hits, one a 2011 football roster item and one from February 2003: "Student's not in
+love with Cupid," a Valentine's Day vox-pop piece that quotes a Louisville freshman of that name
+on a subject unconnected to student government. A freshman in February 2003 would be entering his
+junior year by 2004-05, so the name is plausibly the same person who later co-chaired Campus
+Improvements — but the article is unrelated to SGA,
 carries no photograph (`wp-json/wp/v2/media?parent=57154` returns an empty list), and even a
 confirmed identity would have no image to attach. No file was downloaded and no entry was added.
 
-### ShyAnte'e Williams: retried, genuinely zero hits this time
+### ShyAnte'e Williams: retried, no portrait, but the name is not absent from the paper
 
 The 16 October second pass left this name open rather than closed, after a `wp-json` lookup
 403'd mid-check. Retried this pass with the special character stripped from the query
 (`ShyAntee`) rather than the literal name, since an apostrophe can break a WordPress search term
-outright: the request returned HTTP 200 with an empty result array, not a block. Genuinely zero
-posts on `wkuherald.com` mention her under any spelling this pass tried. Closing this one as
-checked-and-empty rather than leaving it open on an old network error.
+outright: the request returned HTTP 200 with an empty result array, not a block.
+
+**That empty result was the query's fault, not the archive's**, and the editorial pass of
+16 October caught it. `ShyAntee` matches nothing because the paper prints the name with a
+typographic apostrophe inside it, and the *Herald* does not print it one way twice: the shorter
+stem `ShyAnte` returns four posts, two of which name her, under two spellings. The issue of
+19 September 2022, "SGA fall elections open for voting", lists the candidates for graduate
+student senator as Arpana Lakhmani and ShyAnte'e Williams; the issue of 21 September 2022
+reporting the results gives the seat to "Shy'Ante Williams", apostrophe moved.
+
+Worse, this archive already held both of those citations. Her entry under
+`organization.senate.officers` in 2022-23 carries them as `src2` and `src3`, and her profile
+paragraph is written out of them — so the file this pass read the name out of was carrying, two
+keys below the name, the evidence that the name is in the paper. **Read the roster entry's own
+sources before reporting a name as absent from a publication.** That costs one look at the JSON
+and it is the cheapest check in this whole routine.
+
+None of it is a portrait, so the conclusion survives even though the reasoning did not. Neither
+article has an image of her: the election piece carries a group photograph of the executive
+cabinet listening to senate nominees on 30 August 2022, credited to Sean McInnis, whose caption
+names no individual in the frame, and the results piece has no attached media at all. The
+portrait lead therefore stays **open** — searched without success, not searched out. Whoever
+picks it up next should try a stem shorter than the whole given name on any name carrying an
+apostrophe, an accent or a hyphen, and should search the second spelling as well as the first.
 
 ## Network state, retested fresh this session
 
@@ -101,7 +123,7 @@ Wicks, Mark Chesnut) using the exact same `archive.org` Talisman route those rep
 walked, down to fetching the same page images, before noticing the prior reports and the
 diff script described above. That work reached the same dead ends the 13-14 October passes
 already recorded and added nothing new. **Grep `.research/photo-run-*.md` for a name before
-spending time on it** — with 90-plus reports now on file, a name search of the existing reports
+spending time on it** — with 80 reports now on file, a name search of the existing reports
 is faster than re-deriving the same negative result, and it is the only way to find the small,
 shrinking set of names, like the thirteen above, that genuinely have not been tried.
 
@@ -110,7 +132,9 @@ shrinking set of names, like the thirteen above, that genuinely have not been tr
 The 189-slot gap is unchanged in count after this pass, as it has been for several days running.
 Every name checked this pass — the twelve genuinely untried ones, plus the retried ShyAnte'e
 Williams — stayed open for lack of a reachable source or a captioned image, not for lack of
-searching. The structural blockers are unchanged from the three earlier passes today:
+searching. ShyAnte'e Williams in particular is open, not closed: see the correction in her
+section above, where the paper does name her and the only image in the article is an
+unidentified group shot. The structural blockers are unchanged from the three earlier passes today:
 `cgi/viewcontent.cgi` is still the only route into 1990s Talisman pages and it is still closed;
 `web.archive.org` was additionally unreachable this specific session. Xavier Spiess's withheld
 portrait (identified 15 October, needs a `years.json` roster entry this agent's scope does not
