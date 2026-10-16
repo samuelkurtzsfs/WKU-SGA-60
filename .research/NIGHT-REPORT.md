@@ -48640,3 +48640,99 @@ editor fires eight times a day and the portrait routine four, against a gap that
 finding of this pass, not a hedge — and reconfirming it every three hours is the expensive way to
 learn nothing. Two things would each be worth more than a cadence change: a decision on the two
 filing conventions above, and someone opening the PDF route.
+
+# 16 October 2026 (editor, scheduled) — one PR merged after a correction, and the Wayback Machine is open
+
+## What was open
+
+One pull request, #795, "Research: photographs (rolling)", opened at 02:08 UTC, an hour before this
+pass. #6, #7 and #8 — the three the brief still names as stale since 4 August — are closed and were
+closed by earlier runs; the brief's paragraph about rescuing them is spent and can come out.
+
+The diff was one research note, 108 lines in `.research/`, and no change to `data/` at all. Nothing
+in it reached the rendered site. That lowers the stakes without lowering the standard: a note that
+records a route as closed steers every later run away from it, which is how a wrong observation in
+`.research/` turns into research nobody goes back for.
+
+## What was verified
+
+Thirteen claims sampled, twelve held exactly.
+
+Re-derived locally rather than taken on the report's word: `portrait_gap.py` reproduces 189 slots /
+159 people / 157 with no portrait in any year, to the number; 61 years and 73 leader entries with
+zero missing a portrait and zero years missing a photograph; all four priority presidents carrying
+one; all eighteen officer roles matching `years.json`; and Xavier Spiess genuinely absent from
+`organization.senate.officers` for 2025-26, so withholding that portrait was right. One scare that
+was not one: ShyAnte'e Williams reads as absent under a straight apostrophe and present under the
+curly one. She is in the gap list as the note says.
+
+Read at source: `cgi/viewcontent.cgi` still 403 with the full navigation-header set. The archive.org
+Talisman probe confirmed, and confirmed better than the note ran it — 1975, 1981 and 1986 return
+real metadata of 22, 22 and 23 files while 1995, 2005 and 2015 return `{}`, so the empty response
+means absent holdings and not a dead API. Three Herald captions read verbatim: media 28869 is Zach
+Jones and James Line, not Cody Cox; 28872 names Molyneaux, Dahmer, Lowry and Hounshell, not Ryan
+Richardson; 67788 names nobody at all. Every lead was correctly refused under the rule against a
+face attached on a guess. The wkuherald rate-limiting was confirmed the hard way, by a Cloudflare
+1006 on this pass's own follow-up that a 30-second backoff did not clear.
+
+A free trap check fell out of media 28872: it reports Dahmer winning the April 2017 election, and
+the archive files her at 2017-18. Spring elections file forward correctly here.
+
+## The claim that failed, and the standing question it answers
+
+The note recorded `web.archive.org` as closed on a connection reset, "Unchanged", the fourth day
+running. It is open. Re-tested at 03:22 UTC, seventy minutes after the run: the playback path
+answered 302 and served the 12 January 2011 capture of the SGA site in full, 31,891 bytes, and
+`/sga/executive/` from that capture came back at 25,118 bytes carrying the 2010-11 executive roster
+as text — Cory Dodds as Student Body President & Student Regent, the three elected and four
+appointed offices listed. Only the CDX search API timed out. The playback path did not.
+
+The method error is worth naming because it costs nothing to repeat: one connection reset is a
+dropped tunnel, not a closed host. Every other route in that note was retested properly; this one
+was recorded closed on a single failed request and then carried forward three more days.
+
+This matters beyond the one note. The last three reviews have closed on a standing question whose
+premise was that the officer gap cannot move until `viewcontent.cgi` or the Wayback Machine
+reopens. Half of that premise is now false. It is a names-and-offices route rather than a portrait
+route — the 2011 capture carries no officer photographs, only the university logo — so it does not
+shift the 189-slot portrait gap by itself. But it is exactly the route for the organization data the
+Spiess entry has been waiting on, and that gap is the thing three reports have called unmovable.
+
+Two cautions are in the corrected note for whoever works it. The branch pages are not where a
+guessed path puts them: `/sga/branches/executive.php` is not archived and `/sga/executive/` is, so
+take the links out of the captured HTML rather than building them. And those pages print the
+officers' personal mobile numbers and university email addresses. Those are living people's contact
+details and no part of them belongs in `years.json`, `photos.json` or the site. Take the name and
+the office; leave the rest on the page.
+
+## What was merged, and what was cut
+
+Nothing was cut. No claim needed trimming and nothing was deleted — eighteen names searched, every
+lead run down to its caption, nothing attached, which is the right outcome and worth more to this
+archive than one face attached on a guess. The `web.archive.org` bullet and the closing paragraph
+were corrected in place on the branch, pushed, and #795 squash-merged with the correction in it.
+`build.py` clean, `check_data.py` and `check_contrib.py` both exit 0, `check_duplicates.py`'s four
+pairs and one same-source pair the pre-existing ones, all still genuinely separate business.
+
+## Counts after this pass
+
+61 years, 1964 events, 60 presidents, 2,651 recorded terms of office held by 1,809 people, 2,614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1,111 pieces
+of legislation, 4,945 search records, 1,407 leader portraits and 74 year photographs. 5 photographs
+withdrawn at build as no longer held or barred. Every figure identical to the overnight pass, which
+is correct: the merge changed no data.
+
+## Still open
+
+Everything the overnight review carried stands, less one. The election-year filing convention and
+the 2013-14 publication-date filing both still wait on the owner; Xavier Spiess's roster entry; the
+Steve Wilson portrait behind its three-men-of-one-name problem; the unadded 2021 Dahmer remand; the
+Hawkins / Vuleta seat conflict; and `editor-2026-10-07-rally-notice` and
+`editor-2026-10-04-index-drop`, which are not to be merged and were not touched.
+
+The standing question about cadence is no longer the only thing here a decision would move, and the
+honest reading is that this pass earned its run. Not by merging — the merge was 108 lines of
+`.research/` that touch nothing readers see — but by catching a route this project had written off
+for four days. The next photograph run should spend itself on the Wayback playback path and the old
+SGA officer pages rather than re-testing what is already known closed, and the two filing
+conventions are still the two decisions worth more than any amount of further sweeping.
