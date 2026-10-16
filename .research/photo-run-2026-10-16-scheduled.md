@@ -28,18 +28,62 @@ the prior finding forward unverified:
   **Editor's correction, 16 October 03:22 UTC: this route is open, and the finding above did not
   survive re-testing seventy minutes later.** `web.archive.org/web/2010/http://www.wku.edu/sga/`
   answered 302 and then served the 12 January 2011 capture in full (31,891 bytes), and the
-  `/sga/executive/` page from that capture came back at 25,118 bytes carrying the 2010-11 executive
-  roster as text — Cory Dodds named as Student Body President & Student Regent, the three elected
-  and four appointed offices listed. Only the CDX search API (`/cdx/search/cdx`) timed out; the
-  playback path did not. A single connection reset is a dropped tunnel, not a closed host, and
-  this report read one as the other. Retry the playback path before recording this route closed
-  again.
+  `/sga/executive/` page linked from it came back at 25,118 bytes carrying a full executive
+  roster as text — the three elected and four appointed offices listed. Only the CDX search API
+  (`/cdx/search/cdx`) timed out; the playback path did not. A single connection reset is a dropped
+  tunnel, not a closed host, and this report read one as the other. Retry the playback path before
+  recording this route closed again.
+
+  **Second editor's correction, 16 October 06:30 UTC: that roster is 2012-13, not 2010-11, and the
+  page is not part of the January 2011 capture at all.** The correction above named Cory Dodds as
+  Student Body President and called the page "the 2010-11 executive roster". It is neither. Re-run
+  from this container: the root `/sga/` page is a genuine 12 January 2011 capture
+  (`/web/20110112033042/`), but following its own link to `/sga/executive/` lands on
+  `/web/20121021145546/` — a **21 October 2012** capture, twenty-one months later. The page says so
+  throughout: "FY 2012-2013 Budget", "Fall 2012 Registration Guide", "Spring 2013 Registration
+  Guide", "Western Kentucky University © 2013". Its roster is Dodds as president with Keyana Boka
+  as Executive Vice President, Cain Alvey as Administrative Vice President, Travis Taylor as Chief
+  of Staff and Brittany Crowley as Director of Academic and Student Affairs — which is this
+  archive's **2012-13** executive, not its 2010-11 one. 2010-11 is Colton Jessie, and Dodds was
+  that year's Director of Information Technology; he was elected president on 30 March 2012 and
+  served 2012-13, exactly as `years.json` files him.
+
+  **The trap, which is the part worth carrying forward: the Wayback playback path silently serves
+  the nearest capture it holds, and the date you asked for is not the date you get.** Requests for
+  2009, 2011 and 2012 against `/sga/executive/` all return the same 21 October 2012 page; only
+  2013 (`/web/20131022060106/`) and 2015 (`/web/20151105172940/`) return distinct captures. So
+  never date a roster from the timestamp in the URL you requested. Read the timestamp back out of
+  the final URL after redirects, and confirm it against the page's own internal evidence — the
+  footer year, the "Last Modified" line, the registration-guide and budget links. Had the first
+  correction been acted on as written, a later run would have filed Dodds as president of 2010-11
+  on the strength of SGA's own website, displacing a correctly sourced president and putting an
+  April-elected officer a year and a half early — the April-election trap arriving by a new road.
+
   Two cautions for whoever works it. The branch pages are not where a guessed path puts them —
   `/sga/branches/executive.php` is not archived and Wayback says so plainly, while `/sga/executive/`
   is; take the links out of the captured HTML rather than constructing them. And these pages print
   the officers' personal mobile numbers and university email addresses. Those are living people's
   contact details and no part of them belongs in `years.json`, `photos.json` or the site: take the
   name and the office, leave the rest on the page.
+
+  **What the route is actually worth, tested rather than assumed.** Read end to end and checked
+  against `years.json`, the two captures corroborate thirteen published officer claims and
+  contradict none. The 21 October 2012 capture confirms six of the seven 2012-13 executive offices
+  (Dodds, Boka, Alvey, Taylor, Crowley, and Sarah Hazelip as Director of Information Technology,
+  which the archive already cites to this same capture); only Drew Mitchell as Director of Public
+  Relations is absent, and he is separately sourced to the Herald of 7 December 2012, later than
+  the capture. The 22 October 2013 capture ("Last Modified 9/3/13") confirms **all seven** 2013-14
+  executive offices — Keyana Boka, Mark Reeves, Nikki Seay, Brad Cockrel, Hannah Garland, Sarah
+  Hazelip, Laura Harper. So this is a sound corroborating route for executive rosters, and it is
+  SGA's own account of itself during the term rather than a later list. It carries no officer
+  photographs — the only images on these pages are the university logo — so it does not move the
+  189-slot portrait gap by itself, and that should not be read as a reason to leave it alone.
+
+  **One service caution.** `web.archive.org` returned HTTP 503 "Internet Archive services are
+  temporarily offline" at 06:33 UTC, eight minutes after serving these captures cleanly. The route
+  is open; the service is intermittent. That cuts both ways against this note's original finding:
+  one failed request is not grounds for recording the host closed, and one success is not grounds
+  for promising the next run it will be up. Retry, and read the status line.
 - `archive.org` metadata API (not `web.archive.org`): open. Queried fifteen Talisman yearbook
   identifiers for years in the 1990s–2010s that would bear on open officer-portrait gaps
   (`talisman1995west` through `talisman2015west`, selected years); every one came back with an
