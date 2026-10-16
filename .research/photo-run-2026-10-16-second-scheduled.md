@@ -1,4 +1,4 @@
-# Photograph run, 16 October (second scheduled pass): no new portrait; gap confirmed fully mined
+# Photograph run, 16 October (second scheduled pass): no new portrait attached; a missed one found on review
 
 ## Priorities 1, 2 and 4: reconfirmed, unchanged
 
@@ -55,24 +55,42 @@ single prior passes actually found, rather than add a sixth identical attempt:
   individually captioned photograph.
 - **Amarah Reed** (2016-17) — the only hits found are for other people who share part of her
   name (Garrison Reed, a different "Reed"); no portrait of her specifically.
-- **Hayden Skinner-Fine** (2016-17) — a general web search turns up a current staff-directory
-  headshot at her present employer, outside this project's university-archive/news sourcing rule
-  and outside its privacy rule; correctly not used.
+- **Hayden Skinner-Fine** (2016-17) — a general web search turns up only a headshot from outside
+  the university's archives and news pages, which this project's sourcing rule and its rule on
+  living people both bar; correctly not used.
 
 Tried one new angle rather than re-running old searches: checked wkuherald.com's most recent SGA
 coverage (the fifteen latest posts tagged SGA, back to 7 July 2026) for anything that might
 caption a current officer still in the gap — Tyreesha Morris or Carter Smith, both 2025-26
 senators with no portrait on file. "SGA senate complete following fall election" (29 Sept 2026)
-names Carter Smith in its text but carries only one photograph, of a guest dean addressing the
-Senate, with no senator pictured. Nothing else in the batch mentions either name. No usable
-image.
+names Carter Smith in its text but carries only one photograph in the story body, of a guest dean
+addressing the Senate, with no senator pictured. Nothing else in the batch mentions either name.
+
+**Editor's correction, 16 October.** The conclusion drawn from that page — "no usable image" —
+was wrong, and the picture was on the page the pass had already loaded. Below the story body,
+inside the `sno-story-related-content` block, a `related-story preview-card` for "SGA hears guest
+speaker, moves forward with improved bus tracking resolution" carries its lead photograph with
+the whole caption in the `alt` attribute: it names Carter Smith as a sophomore senator being
+sworn in at SGA's fourth meeting of the 2026 fall semester on 22 September 2026, in the SGA
+Chambers. The file is
+`https://wkuherald.com/wp-content/uploads/2026/09/092226_sga_NG_12-1200x800.jpg`, a real JPEG at
+1200x800, and the frame holds one person with his right hand raised, so the identification is not
+ambiguous. The article it belongs to,
+`https://wkuherald.com/97612/news/news-campus-government/sga-hears-guest-speaker-moves-forward-with-improved-bus-tracking-resolution/`,
+is already cited three times in 2026-27, and its own page does not render that caption
+statically — the related-story card on the *other* article is what exposed it.
+
+That is a method, not a one-off: a related-story preview card republishes another article's lead
+photograph with its full caption in `alt`, which reaches captions that the owning article hides
+behind `data-photo-ids`. It has not been used on this gap. The next pass should attach this
+portrait and then sweep related-story cards across the SGA-tagged articles already on file.
 
 Also opened the one wkuherald gallery already on file for this project's other open names
 (article 65821, the 2022 election-night gallery) to check how its captions are actually
 delivered, since an earlier report (15 October) described the mechanism as unreadable without a
 script-rendering tool it did not have. The first of the gallery's eight photos carries its
-caption directly in the static page HTML (`sam Kurtz (left) and Cole Bornefeld call their moms...
-in WKU's Student Government Association's chamber`); the remaining seven are referenced only by
+caption directly in the static page HTML (it opens `sam Kurtz (left) and Cole Bornefeld call
+their moms` and places them in the SGA chamber); the remaining seven are referenced only by
 numeric ID (`data-photo-ids`) with no caption text anywhere in the static page, consistent with
 captions for photos 2-8 being fetched by script on demand. This confirms, rather than overturns,
 what prior reports already worked out by a different method (the `wp-json/wp/v2/media/{id}`
@@ -95,11 +113,16 @@ yesterday's report:
   `organization.senate.officers` entry for 2025-26 that this agent's rules do not let it add
   itself, since all photo metadata is confined to `data/photos.json`.
 
-Everyone checked this pass stays open for lack of an individually captioned photograph or a
-usable route to one, not for lack of searching. Given how thoroughly the current 189-slot list has
-been worked across more than a week of passes with every open route, whoever next picks this up
-should prioritize checking whether `cgi/viewcontent.cgi` has reopened over searching further names
-on wkuherald.com — the remaining gap is concentrated in decades that route alone can reach.
+Everyone else checked this pass stays open for lack of an individually captioned photograph or a
+usable route to one, not for lack of searching.
+
+This note originally advised the next pass to prioritise checking whether `cgi/viewcontent.cgi`
+had reopened over searching further names on wkuherald.com. The editor's correction above
+withdraws that advice: a usable portrait was sitting on a wkuherald page this very pass had
+loaded, so wkuherald is not exhausted and the related-story route is open now, whereas
+`viewcontent.cgi` depends on a block lifting that is outside this project's control. Attach the
+Carter Smith portrait and work the related-story cards first; re-test `viewcontent.cgi` as well,
+since the remaining gap is still concentrated in decades only that route can reach.
 
 ## Checks
 
