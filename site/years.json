@@ -42055,7 +42055,7 @@
      "name_verified": true,
      "missing_from_plaque": false,
      "current": false,
-     "note": "Appears in the WKU Archives regents index as student regent, 2013. Plaque spells the first name KEYANNA; the archives index reads Boka, Keyana - confirm which is correct.",
+     "note": "Appears in the WKU Archives regents index as student regent, 2013. Plaque spells the first name KEYANNA; the archives index reads Boka, Keyana - confirm which is correct. SGA's own website, captured during her term on 22 October 2013 and last modified 3 September 2013, spells it Keyana Boka and names her Student Body President & Student Regent. Two sources contemporaneous with the term now read Keyana against the plaque's KEYANNA; the spelling in this record is left as it stands pending the editor's decision.",
      "sources": [
       {
        "label": "Herald, 4 Apr 2013",
@@ -42068,6 +42068,10 @@
       {
        "label": "Herald, 16 Apr 2013",
        "url": "https://wkuherald.com/44216/news/sga-decides-not-to-contest-baileys-decision-in-emergency-meeting/"
+      },
+      {
+       "label": "WKU SGA site, executive branch, archived 22 Oct 2013 (last modified 3 Sep 2013)",
+       "url": "https://web.archive.org/web/20131022060106/http://wku.edu/sga/executive/"
       }
      ],
      "profile": [
