@@ -48511,3 +48511,132 @@ photograph routine and it costs one extra request per name.
 The larger question from the seventh review is unchanged and is still the only one in this file
 that a decision would move: whether four routines a day should keep reconfirming a gap that cannot
 close until a blocked route reopens. This pass added one genuine method and no photographs.
+
+# 16 October 2026 (editor, scheduled, overnight) — an empty queue, twenty claims read at source, and a stale premise in this routine's own brief corrected
+
+## What was open
+
+Nothing. `gh api` lists zero open pull requests. The eighth review of 15 October cleared the queue
+at 21:30 and this pass ran at 00:17, so an empty queue is the expected state at this hour rather
+than a fault.
+
+Two things were checked before accepting that:
+
+- **The three branches this brief still calls stale were closed on 18 August 2026.** #6
+  "Research: photographs (rolling)", #7 "Research: the 1980s" and #8 "Research: the 2020s" are all
+  `state=closed`. The instruction to merge `origin/main` into each and rescue or close them has had
+  nothing to act on for two months. The brief is wrong on this and a run cannot fix it.
+- **No research branch is holding unmerged work.** Every `research-*` branch that reports commits
+  ahead of main except `research-photos` has **no merge base** with main — they are the 4 August
+  snapshots of a superseded repository that `AGENT-LANDING.md` warns must never be merged, and the
+  commit counts they report are an artefact of that orphan history. `research-photos` has a real
+  merge base and its content diff against main is a single file, `NIGHT-REPORT.md`, on which the
+  branch is 94 lines *behind*. Nothing is stranded.
+
+## What was verified
+
+With no diff to review, the pass was spent on what is already published.
+
+**Twenty claims read against their sources.** The three 2026-27 entries that `check_duplicates.py`
+flags as one article written up three times were taken first, and the flag is a false positive:
+the Herald's report of the 22 September meeting carries the bus-tracking resolution, the officer
+reports and the election opening as separate business, and three entries is the honest number. The
+article was fetched and read in full. Every claim held — Resolution 4.6 F passing unanimously,
+Terry's authorship, the mental health statement from the spring, Carter Smith sworn in and
+appointed as the second student member of a committee that had just doubled its student
+representation, Amelia Tucker's nomination, the Bluegrass scholarship, the 8 a.m. opening, the
+28 candidates across four constituencies, and Barker's remark about engagement.
+
+Two claims in the resolution entry — that Isaiah Wilson co-wrote it and that it had been introduced
+the previous week — are in neither the cited article nor any other record of the year, and were on
+their way to being cut. They are carried by the entry's **`src2`**, the Herald of 15 September,
+which prints both outright: Terry and Wilson named as the authors, the resolution "proposed this
+week and will be voted on next week". The entry was right and a reading that looked only at `src`
+was wrong. Recorded because the same mistake is available to any later pass that samples `src`
+alone; **this archive's events carry two citations 517 times.**
+
+**The one photograph added since 13 October was verified.** The 1994-95 Evans/Higdon campaign
+advertisement is a valid JPEG, live on the site, and the local index confirms the issue to the
+bracketed number — Vol. 69, No. 51 [52], 19 April 1994 — and carries the advertisement itself,
+"Cailloe, Andrea. Vote Rob Evans, Tara Higdon". The cropped image does **not** name either of them,
+so the identification rests entirely on the page around it, which is where it should rest and does.
+The caption's one outcome claim, that Evans went on to win, is not provable from an election-day
+issue and is not asked to be: the year's own record carries the 21 April report and the Board of
+Regents minutes of 15 August 1994 swearing him in. Filed in 1994-95 for an April 1994 election,
+which is the right way round.
+
+**774 event-citation pairs screened for the wrong-article fault.** Each event citing a digitised
+Herald issue was scored against that issue's own index lines, hunting the fault four entries carried
+until 15 October — a body describing a different article in the same issue. The fourteen weakest
+were read by hand and all fourteen are false positives: an editor titling an event in their own
+words shares no vocabulary with an archivist's headline. The Straeffer entry, which touches a
+settled fact, cites Ron Beck's results memo of 3 May 1968 exactly as `CLAUDE.md` requires. No
+wrong-article body survives in the archive.
+
+**The surname traps hold.** Carlene and Darlene Lodmell are held apart and their offices match the
+settled record year for year. The four changed-surname cases each appear exactly once as president
+— Vogt 1976-77, Hargrove 1979-80, Coates 1999-00, Taylor 2014-15 — against 60 distinct presidents,
+which is consistent with Sam Kurtz as the 58th and two successors since.
+
+## A premise in this routine's brief that is no longer true
+
+This brief opens by saying four research routines are running around the clock. **Three of them
+have been disabled in the scheduler since 24 and 25 August** — person profiles, senate rolls and
+the backlog — and only the portrait pass still fires, every six hours.
+
+Earlier reports read the flat output as the routines "finishing". That reading is right, and the
+scheduler is the evidence for it rather than against it. Their own briefs are what is stale:
+
+| the brief says | the archive holds |
+|---|---|
+| 806 people named, 73 with a profile | 730 named, **708 with a profile (97%)** |
+| **zero** rank and file senate members | **1,525** members across 60 years |
+| a backlog of unverified names and moments | every `.research` queue file at **0 items** |
+
+So nothing was switched off mid-task and no work is stranded behind the three disabled routines.
+Worth stating plainly because the opposite reading — that the project's top-priority research was
+silently turned off seven weeks ago — is the obvious one to reach from an empty queue, and it is
+wrong.
+
+## The blocked routes, retested rather than inherited
+
+Tested from this container rather than carried forward from the photograph routine's account:
+
+- `digitalcommons.wku.edu` landing pages: **200**, open
+- `digitalcommons.wku.edu/cgi/viewcontent.cgi`: **403**, and **403** again after a 92-second backoff
+- `web.archive.org`: **no connection**
+- `archive.org` Talisman full text: **200**, 1.35 MB, open and not rate limited
+
+Unchanged since 15 October. The officer-portrait gap needs page images, the PDF route is the way to
+them, and it is shut. `archive.org` gives text, which finds the page a person is on and cannot
+yield a face.
+
+## What was merged, and what was cut
+
+Nothing, and nothing. No pull request was open and no published claim failed. `build.py` clean,
+`check_data.py` and `check_contrib.py` both exit 0. The four pairs `check_duplicates.py` prints are
+the pre-existing ones and all four remain genuinely separate business — a bill introduced and the
+same bill failing eight days later are two events.
+
+## Counts after this pass
+
+61 years, **1964 events**, 60 presidents, 2,651 recorded terms of office held by 1,809 people,
+2,614 of them (98%) carrying an account, 48 people under more than one spelling, 308 documents,
+1,111 pieces of legislation, 4,945 search records, 1,407 leader portraits and 74 year photographs.
+5 photographs withdrawn at build as no longer held or barred. Every figure identical to the eighth
+review of 15 October, which is what an empty queue should look like.
+
+## Still open
+
+Everything the eighth review carried stands: the election-year filing convention and the 2013-14
+publication-date filing, both waiting on the owner; Xavier Spiess's roster entry; the Steve Wilson
+portrait behind its three-men-of-one-name problem; the unadded 2021 Dahmer remand; the Hawkins /
+Vuleta seat conflict; and `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop`,
+which are not to be merged and were not touched.
+
+The standing question is now three reviews old and is the only one here a decision would move: the
+editor fires eight times a day and the portrait routine four, against a gap that cannot close until
+`viewcontent.cgi` or the Wayback Machine reopens. The archive is in good order — that is the
+finding of this pass, not a hedge — and reconfirming it every three hours is the expensive way to
+learn nothing. Two things would each be worth more than a cadence change: a decision on the two
+filing conventions above, and someone opening the PDF route.
