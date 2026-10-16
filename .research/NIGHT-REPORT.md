@@ -49118,3 +49118,111 @@ Two things are added to that list by this pass, both of them observations rather
   twice in one day reported as newly found a portrait the archive already held. The gap it reports
   is real and the routes into it are genuinely blocked; the failure is in checking the archive's own
   holdings before reporting, which costs a pass each time.
+
+---
+
+# 16 October 2026, fourth scheduled review
+
+One pull request open, #802, "Research: photographs", from the photograph routine's third pass of
+the day. Merged. The three stale pull requests the editor brief still names — #6 photographs, #7
+the 1980s, #8 the 2020s — were all closed before this run and needed nothing.
+
+## What was in it
+
+A single file: `.research/photo-run-2026-10-16-third-scheduled.md`, 101 lines, no deletions.
+Nothing under `data/`. `git diff --stat origin/main...research-photos -- data/` came back empty,
+and the build reads only `branches-checked.json` and `branches-unverified.json` out of `.research/`,
+so no part of this merge reaches the published site. It is a record of what was checked and ruled
+out, which is worth keeping precisely because the routine keeps re-treading the same exhausted
+ground and the note is how the next pass knows not to.
+
+## What was verified
+
+Sixteen claims opened and checked, every one of them held.
+
+The four priority portrait files were read off disk rather than taken from the note: all four carry
+`ff d8 ff e0` and the exact byte counts claimed — Todd 53,122, Dawson 9,825, Johnson 270,664,
+Gilley 154,011. None is a saved bot-check page. The coverage counts were recomputed independently
+against `years.json`: 61 years, 73 leader entries, none without a portrait, no year absent from the
+photographs file. `portrait_gap.py` gives 189 slots / 159 people / 157 with no portrait anywhere,
+as reported.
+
+The wkuherald caption sweep was re-fetched from the live `wp-json` media API, six of the seven
+cited articles, and every caption the note quotes is there word for word: Edmonds as executive vice
+president in 13485; Howard, Moorehead and Hardin in 16659; León's censure hearing in 74786; Gammons
+swearing in senators and Kurtz's opening statement in 81839; Robinson's report in 92550; Lucas
+speaking to the chambers in 97612. All ten already hold an entry in `photos.json`. The sweep is a
+real method and it genuinely closes clean.
+
+The two closed routes were probed once each, paced: `cgi/viewcontent.cgi` 403, `do/search` 403.
+Still shut, as every pass since 13 October has found.
+
+Xavier Spiess was confirmed blocked for the structural reason given rather than by oversight. He
+appears in 2025-26 only inside two event bodies — the 11 November exemption vote and the 12
+November 3–1 chief justice election he lost — and holds no slot in the executive, the senate
+officers, the senate members or any committee chair, so the build has no name to hang a portrait
+on. Correctly left to the roster routine.
+
+## Traps
+
+Nothing to catch. The diff asserts no event, no officeholder and no year attribution, so most of
+the checklist has no surface to bite on. No advance notice written up as a report. No committee
+chair promoted to officer — the note is careful the other way, recording Howard and Moorehead as
+committee chairs exactly as their captions do. No surname match, no changed-surname duplicate, no
+April result in the wrong year, nothing touching a settled fact, no `Contributed-By` trailer. The
+only living-person detail anywhere in it is a public SGA role lifted from a published caption and
+already on the site.
+
+## Cut
+
+Nothing. One wording slip was recorded in the merge comment rather than cut: the note says "every
+person named in those captions" already holds a portrait, and post 97612's second caption also
+names Melinda Grimsley of the Office of Scholar Development, who has no portrait and should not
+have one — she is a staff guest speaker, not an SGA officer. The conclusion is untouched; the
+sentence is just looser than the sweep it describes. Worth tightening to "every SGA officer named"
+next pass, so a later run reading this note as a record of what was ruled out does not have to
+re-derive the distinction.
+
+The standing complaint from the previous pass can be marked as answered. That pass noted the
+photograph routine had twice in one day reported as newly found a portrait the archive already
+held. This pass checked every name against `data/photos.json` before treating any of them as a
+lead, and says so. The behaviour was corrected.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py` exits 1
+by its reporting convention and flags the same four pairs and one same-source pair as the standing
+baseline. All five are pre-existing on main — the diff touches no data, so none was introduced
+here — and all five are genuinely separate business: the 1997 driver-card bill against the Herald's
+distribution report three months later; Bill #92-01-S introduced against the amended bill failing
+nine days on; the KCLU planning court action against Associated Students endorsing the suit a month
+later; concern voiced at the September 2003 meeting against the legislation passed unanimously in
+October; and article 97612's two pieces of business from one meeting. Nothing merged.
+
+## Counts after this pass
+
+61 years, 1964 events, 60 presidents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1111 pieces
+of legislation, 4945 search records, 1407 leader portraits and 74 year photographs. 5 photographs
+withdrawn at build as no longer held or barred. 1311 citations name a volume and number and each
+opens that issue; 1318 quoted spans, none reaching 15 words. No count moves: the pass added a
+research note and nothing else.
+
+## Still open
+
+Everything the earlier passes of today left open stands, none of it this pass's to decide: the
+election-year filing convention and the 2013-14 publication-date filing; the Boka spelling, which
+now has two contemporaneous sources against the plaque and wants a decision rather than more
+searching; Xavier Spiess's roster entry, reconfirmed open above and needing a `years.json` edit the
+photograph routine is not allowed to make; the Steve Wilson portrait and its three-men-of-one-name
+problem; the unadded 2021 Dahmer remand; and the Hawkins / Vuleta seat conflict. The suggestion
+that `check_data.py` should test the date in a citation label, not only the volume and number,
+stands unbuilt. `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are not to be
+merged and were not touched.
+
+The 189-slot portrait gap did not move, for the fourth time today. The blocker is not the
+routine's effort: `cgi/viewcontent.cgi` and `do/search` are the only route into the Talisman pages
+and pre-2011 Herald scans where most of the 157 live, and both are closed. The routine has now
+swept wkuherald's media API across every cited article and found nothing further. Until the
+digitalcommons routes reopen there is little for this routine to do but confirm that, and it should
+be allowed to say so briefly rather than re-run exhausted searches.
