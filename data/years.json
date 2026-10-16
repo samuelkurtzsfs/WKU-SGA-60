@@ -250,8 +250,8 @@
     },
     {
      "date": "1966-05-01",
-     "title": "The first Congress of Associated Students is seated",
-     "body": "The first Congress of Associated Students was elected in May 1966, per the roster WKU Archives holds as UA3/3/1. The record's online description gives only that fact.",
+     "title": "The first Congress of Associated Students elects its officers",
+     "body": "The officers of the first Congress of Associated Students were elected in May 1966. The record is a document in WKU Archives' UA3/3/1 Kelly Thompson Correspondence/Subject File, Box 17, Folder 3, and its online description gives only that one fact: it names neither the officers nor a day within the month.",
      "src": {
       "label": "UA3/3/1 Congress of Associated Students, 1966",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/1824"
@@ -8591,6 +8591,10 @@
       "label": "College Heights Herald 52:13, 8 Oct 1976",
       "url": "https://digitalcommons.wku.edu/dlsc_ua_records/5305",
       "pdf": "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=6320&context=dlsc_ua_records"
+     },
+     "src2": {
+      "label": "1977 Talisman, Lectures, p. 92",
+      "url": "https://archive.org/details/talisman1977west"
      }
     },
     {
@@ -23817,6 +23821,10 @@
      "src": {
       "label": "TopSCHOLAR - Resolution 95-3-S, Dogwood Avenue Crosswalk",
       "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/72"
+     },
+     "src2": {
+      "label": "TopSCHOLAR - Resolution 95-4-S, Big Red Way Trash Cans",
+      "url": "https://digitalcommons.wku.edu/sga/Legislation/Resolutions/71"
      }
     },
     {
@@ -53477,6 +53485,10 @@
      "src": {
       "label": "SGA Bills 22-24-S and 23-24-S",
       "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_22_24_s.pdf"
+     },
+     "src2": {
+      "label": "SGA Bill 23-24-S, amending section 10.2.1",
+      "url": "https://www.wku.edu/sga/2023_2024_legislative/legislation/bill_23_24_s.pdf"
      }
     },
     {

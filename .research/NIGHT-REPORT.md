@@ -1,3 +1,179 @@
+# 16 October 2026 (editor, fifth review) — an empty queue, fourteen claims read at source, and the archive's PDF route is the only thing closed
+
+## What was open
+
+Nothing. `gh api repos/.../pulls?state=open` returned `[]`. The last research work landed at 14:06
+and its report at 15:28, both already merged as #802 and #803, and no routine has pushed since.
+`gh pr list` answered 403 naming GraphQL, as always; `gh api` and `git push` both worked, so this
+was a full-mode pass with nothing to merge. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still
+unset, so route two stays unavailable and route one was again the only way to land anything.
+
+The brief still names #6, #7 and #8 as stale since 4 August. They have been closed unmerged since
+18 August and were not touched. Every remote branch was checked: `research-photos` carries one
+commit not on main but no `data/` difference at all, so its content is already published. The five
+`research-*` branches fetched fresh this pass — `research-profiles`, the three `research-roster-*`
+and `research-senate` — all report no merge base against main. They are the 4 August snapshots
+AGENT-LANDING.md warns about, not forks of main, and merging one would delete the contributor layer
+and the validators. Left alone.
+
+## The one thing worth carrying forward: landing pages are open, PDFs are not
+
+Four passes today recorded the digitalcommons routes as closed and the 189-slot portrait gap as
+blocked on them. That is half right, and the half that is wrong matters for every verification pass
+that follows.
+
+**Landing pages answer normally.** Fourteen were fetched this pass at one request every three
+seconds and every one returned 200: `dlsc_ua_records` issue records, `sga/Legislation/Bills` and
+`sga/Legislation/Resolutions` sheets alike. The *Herald* index on a landing page is the whole
+itemised article list, which is enough to confirm a headline, an author, a volume and a date. The
+Norfleet citation this file calls settled was read back off `dlsc_ua_records/2464` in passing:
+"Francke, Kevin. Student Regent's 2-month Term Nears End – Sandra Norfleet" is there in Vol. 57
+No. 55, where the settled note says it is.
+
+**`cgi/viewcontent.cgi` is what is closed.** It returned 403 on a clean URL, and again on the
+retry after a 90-second wait. So the PDF behind a landing page cannot be opened, and the body of
+an article cannot be read this way.
+
+The practical consequence: a verification pass is not blocked, only a full-text pass is. A claim's
+number, title, date and the archivist's one-line description are all checkable right now. For the
+*Talisman*, archive.org is not merely a substitute but the better route — `talisman1977west_djvu.txt`
+and `talisman1986west_djvu.txt` both downloaded whole, unthrottled, and settled two claims below
+that the cited source could not.
+
+## Fourteen claims read at source
+
+With no queue, the pass audited what is already published. Fourteen claims were drawn across all
+seven decades, chosen from the 1,964 sourced events by asserting a number or an outcome, which is
+where over-claiming lives. Every one was opened at its cited source. Eleven held up exactly, two
+were accurate but under-cited, and one was over-claimed.
+
+Confirmed in full, with nothing to change: the 1969-70 constitution story (*Herald* 49:11 index
+carries Neumayer's headline, and the February revision committee the body refers to is separately
+sourced in 1968-69 off the SGA minutes of 13 February 1969); the 1986-87 year-end verdict
+(Eagleston's "Conflicts, Walkouts Finish Off Associated Student Government Year", *Herald* 62:56);
+the 1985-86 Glasgow conference, which the 1986 *Talisman* supports phrase for phrase, including the
+hundred members, the Frankfort rally and McKinney's three seats; the 1976-77 Frye lecture, capacity
+crowd and Klein's 700 both; the 2018-19 Confederate marker vote, 29–1 with one abstention, the
+three authors, the relocation amendment and the $1,000 for Mock Trial, every element in the Herald's
+report; the 2019-20 AXiD meeting, Keller's symbolic-resolution advice, the Title IX and Kentucky
+Human Rights Commission routes, Harris on the absence of a formal charge, and Wells on cut library
+hours and CAPE's 101 programmes; and the 2021-22 and 2023-24 bill sheets, on which see below.
+
+Three legislation entries — 1993-94's Book Exchanger, 2001-02's WWHR-FM upgrade and 2000-01's
+Saturday shuttle — had their bill number, title, date and description confirmed on the landing page.
+Their interior detail sits in the PDF and could not be reached this pass. That is a blocked route,
+not an absent source, and nothing was cut for it.
+
+Two entries are worth naming for getting a hard thing right. 2021-22's Love The Earth bill says in
+terms that the form "records a first reading on 8 February 2022 and leaves the second reading and
+vote lines blank", and the sheet reads exactly that. 2023-24's constitutional amendments say neither
+bill sheet records a vote and then argue from the constitution now in force instead — and
+`governing/sga_constitution.pdf` does read "a two-thirds (2/3) vote of the present senators" at 10.1
+and "during the Fall and Spring senator elections" at 10.2.1, in the words the bills drafted. Both
+entries are trap 2a handled properly: a blank Pass line treated as a lead and never as a finding.
+
+## Cut and corrected
+
+**One over-claim, trimmed rather than deleted. 1966-67, the first Congress.** The record's whole
+online description is one sentence: "First Congress of Associated Students officers elected in May
+1966." The entry read "The first Congress of Associated Students is seated" and said the Congress
+"was elected in May 1966, per the roster WKU Archives holds as UA3/3/1". Two things were not in the
+source. The description has the *officers* elected, not the Congress, and says nothing about anyone
+being seated; and the record is not a roster — the comments field places it in the Kelly Thompson
+Correspondence/Subject File, Box 17, Folder 3, and gives no indication of what the document is.
+Retitled to "The first Congress of Associated Students elects its officers" and the body cut back
+to the officers, the file location, and an explicit statement that the description names neither the
+officers nor a day within the month. This is the founding year of the whole archive, so the
+distinction is worth the care.
+
+**Two accurate entries that were under-cited, rescued by adding the source.**
+
+1994-95's "A painted crosswalk and six trash cans" described two resolutions and cited one. The
+trash cans, the number six, Big Red Way and the ground between the parking structure and Smith
+Stadium were all unsupported by the cited sheet. They are, however, entirely correct: Resolution
+95-4-S, "Big Red Way Trash Cans", requests "six trash cans be placed between parking garage and
+Smith Stadium" and carries the same 31 January 1995 date as 95-3-S. Found at
+`sga/Legislation/Resolutions/71` and added as a second source. The claim needed a citation, not a cut.
+
+2023-24's "Senate lowers the bar for changing its own constitution" carried the label "SGA Bills
+22-24-S and 23-24-S" over a URL pointing only at 22-24-S. 23-24-S was read from the repository's
+own mirror and confirms section 10.2.1, the turnout argument and the second reading of 28 March
+2024. Added as a second source so the label and the links agree.
+
+**One citation repaired where the facts had outrun it.** 1976-77's Woodward entry cites the
+*Herald* 52:13 index, which confirms only that Don Minton's "Bob Woodward Cancels Lecture for Work"
+exists. Everything else in it — Bernstein booked to open the season, pneumonia a few weeks out,
+Woodward announced as substitute, the cancelled Western and Kentucky dates, promoters paying the
+advertising, the bull's-eye drawn on the publicity poster in the ASG office, and the appearance in
+early April — is in the 1977 *Talisman*, p. 92, almost phrase for phrase, down to "only six months
+late" in the entry's own title. The entry was right and its source was the thinner of the two. The
+*Talisman* added as a second source, which also means a reader can now check the claim, where the
+Herald PDF the entry links is behind the 403.
+
+## Checked and not changed
+
+Two things looked like defects and are not, and are recorded so the next pass does not "fix" them.
+
+The `money` field on the 1976-77 Frye entry reads "Klein drew about 700", which is not money. It is
+established practice, not a slip: 44 entries use the field for a figure that is not currency —
+crowd sizes, turnout, "amount not stated in the Herald's article index" — and `build.py` renders it
+as a plain line with no currency mark prepended. Left alone.
+
+## Flagged, not fixed
+
+Two date questions that are conventions rather than errors, and belong to the owner or to
+`check_data.py` rather than to a pass acting alone.
+
+**2000-01's Saturday shuttle is dated 5 April 2001; its bill sheet is not.** TopSCHOLAR gives
+Bill 01-18-S a start date of 3 April 2001 and an end date of 10 April. The other three legislation
+entries sampled all take the start date exactly — 9 November 1993, 31 January 1995, 19 February
+2002 — so this one is the outlier in its own convention. The 5th may be a pass date written on the
+sheet, which is unreadable while `viewcontent.cgi` is closed, or it may be a slip. Worth one look
+by whichever routine next has the PDF open; not worth guessing at now.
+
+**1976-77's Frye lecture is dated 15 September 1976 and the source says "mid-September".** The
+body is honest and says "mid-September 1976"; the date field asserts a day. `-15` is not a
+mid-month convention in this file — 147 events use `-01` for a month-only date, while `-15` is used
+74 times, in line with ordinary days like the 28th and 29th. So either the day came from a source
+not cited here, or the precision is invented. The same shape of fault would be caught mechanically:
+`check_data.py` could flag a body saying "early", "mid" or "late" against a date field claiming a
+day. That joins the standing suggestion that it should test the date in a citation label and not
+only the volume and number.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0: 1,111 pieces of legislation with every file present and a
+real PDF, 1,311 citations naming a volume and number and each opening its issue, 1,318 quoted spans
+and none reaching 15 words. `check_contrib.py` exit 0. `check_duplicates.py` exits 1 by its
+reporting convention and flags the same four pairs and one same-source pair as the standing
+baseline, all five pre-existing and all five genuinely separate business. The 1966-67 retitle
+created no new pair. No contributor commit in anything reviewed.
+
+## Counts after this pass
+
+61 years, 1964 events, 60 presidents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1111 pieces
+of legislation, 4945 search records, 1407 leader portraits and 74 year photographs. 5 photographs
+withdrawn at build as no longer held or barred. No count moves: the pass added two second sources,
+rewrote one entry and cut nothing.
+
+## Still open
+
+Everything the four earlier passes of today left open stands, none of it this pass's to decide: the
+election-year filing convention and the 2013-14 publication-date filing; the Boka spelling, which
+has two contemporaneous sources against the plaque and wants a decision rather than more searching;
+Xavier Spiess's roster entry, which needs a `years.json` edit the photograph routine may not make;
+the Steve Wilson portrait and its three-men-of-one-name problem; the unadded 2021 Dahmer remand;
+and the Hawkins / Vuleta seat conflict. The two new flags above join them.
+
+The 189-slot portrait gap did not move, and this pass did not try to move it — but the finding above
+narrows the blocker. It is `cgi/viewcontent.cgi` that is shut, not the archive, and for the
+*Talisman* decades archive.org serves full text unthrottled. The photograph routine should be
+pointed there rather than asked to confirm an exhausted search a fifth time.
+
+`editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are not to be merged and were
+not touched.
+
 # 16 October 2026 (editor, scheduled, third review) — #799 merged after a portrait the pass had on screen and read as absent
 
 ## What was open
@@ -49118,3 +49294,111 @@ Two things are added to that list by this pass, both of them observations rather
   twice in one day reported as newly found a portrait the archive already held. The gap it reports
   is real and the routes into it are genuinely blocked; the failure is in checking the archive's own
   holdings before reporting, which costs a pass each time.
+
+---
+
+# 16 October 2026, fourth scheduled review
+
+One pull request open, #802, "Research: photographs", from the photograph routine's third pass of
+the day. Merged. The three stale pull requests the editor brief still names — #6 photographs, #7
+the 1980s, #8 the 2020s — were all closed before this run and needed nothing.
+
+## What was in it
+
+A single file: `.research/photo-run-2026-10-16-third-scheduled.md`, 101 lines, no deletions.
+Nothing under `data/`. `git diff --stat origin/main...research-photos -- data/` came back empty,
+and the build reads only `branches-checked.json` and `branches-unverified.json` out of `.research/`,
+so no part of this merge reaches the published site. It is a record of what was checked and ruled
+out, which is worth keeping precisely because the routine keeps re-treading the same exhausted
+ground and the note is how the next pass knows not to.
+
+## What was verified
+
+Sixteen claims opened and checked, every one of them held.
+
+The four priority portrait files were read off disk rather than taken from the note: all four carry
+`ff d8 ff e0` and the exact byte counts claimed — Todd 53,122, Dawson 9,825, Johnson 270,664,
+Gilley 154,011. None is a saved bot-check page. The coverage counts were recomputed independently
+against `years.json`: 61 years, 73 leader entries, none without a portrait, no year absent from the
+photographs file. `portrait_gap.py` gives 189 slots / 159 people / 157 with no portrait anywhere,
+as reported.
+
+The wkuherald caption sweep was re-fetched from the live `wp-json` media API, six of the seven
+cited articles, and every caption the note quotes is there word for word: Edmonds as executive vice
+president in 13485; Howard, Moorehead and Hardin in 16659; León's censure hearing in 74786; Gammons
+swearing in senators and Kurtz's opening statement in 81839; Robinson's report in 92550; Lucas
+speaking to the chambers in 97612. All ten already hold an entry in `photos.json`. The sweep is a
+real method and it genuinely closes clean.
+
+The two closed routes were probed once each, paced: `cgi/viewcontent.cgi` 403, `do/search` 403.
+Still shut, as every pass since 13 October has found.
+
+Xavier Spiess was confirmed blocked for the structural reason given rather than by oversight. He
+appears in 2025-26 only inside two event bodies — the 11 November exemption vote and the 12
+November 3–1 chief justice election he lost — and holds no slot in the executive, the senate
+officers, the senate members or any committee chair, so the build has no name to hang a portrait
+on. Correctly left to the roster routine.
+
+## Traps
+
+Nothing to catch. The diff asserts no event, no officeholder and no year attribution, so most of
+the checklist has no surface to bite on. No advance notice written up as a report. No committee
+chair promoted to officer — the note is careful the other way, recording Howard and Moorehead as
+committee chairs exactly as their captions do. No surname match, no changed-surname duplicate, no
+April result in the wrong year, nothing touching a settled fact, no `Contributed-By` trailer. The
+only living-person detail anywhere in it is a public SGA role lifted from a published caption and
+already on the site.
+
+## Cut
+
+Nothing. One wording slip was recorded in the merge comment rather than cut: the note says "every
+person named in those captions" already holds a portrait, and post 97612's second caption also
+names Melinda Grimsley of the Office of Scholar Development, who has no portrait and should not
+have one — she is a staff guest speaker, not an SGA officer. The conclusion is untouched; the
+sentence is just looser than the sweep it describes. Worth tightening to "every SGA officer named"
+next pass, so a later run reading this note as a record of what was ruled out does not have to
+re-derive the distinction.
+
+The standing complaint from the previous pass can be marked as answered. That pass noted the
+photograph routine had twice in one day reported as newly found a portrait the archive already
+held. This pass checked every name against `data/photos.json` before treating any of them as a
+lead, and says so. The behaviour was corrected.
+
+## Checks
+
+`build.py` clean. `check_data.py` exit 0. `check_contrib.py` exit 0. `check_duplicates.py` exits 1
+by its reporting convention and flags the same four pairs and one same-source pair as the standing
+baseline. All five are pre-existing on main — the diff touches no data, so none was introduced
+here — and all five are genuinely separate business: the 1997 driver-card bill against the Herald's
+distribution report three months later; Bill #92-01-S introduced against the amended bill failing
+nine days on; the KCLU planning court action against Associated Students endorsing the suit a month
+later; concern voiced at the September 2003 meeting against the legislation passed unanimously in
+October; and article 97612's two pieces of business from one meeting. Nothing merged.
+
+## Counts after this pass
+
+61 years, 1964 events, 60 presidents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1111 pieces
+of legislation, 4945 search records, 1407 leader portraits and 74 year photographs. 5 photographs
+withdrawn at build as no longer held or barred. 1311 citations name a volume and number and each
+opens that issue; 1318 quoted spans, none reaching 15 words. No count moves: the pass added a
+research note and nothing else.
+
+## Still open
+
+Everything the earlier passes of today left open stands, none of it this pass's to decide: the
+election-year filing convention and the 2013-14 publication-date filing; the Boka spelling, which
+now has two contemporaneous sources against the plaque and wants a decision rather than more
+searching; Xavier Spiess's roster entry, reconfirmed open above and needing a `years.json` edit the
+photograph routine is not allowed to make; the Steve Wilson portrait and its three-men-of-one-name
+problem; the unadded 2021 Dahmer remand; and the Hawkins / Vuleta seat conflict. The suggestion
+that `check_data.py` should test the date in a citation label, not only the volume and number,
+stands unbuilt. `editor-2026-10-07-rally-notice` and `editor-2026-10-04-index-drop` are not to be
+merged and were not touched.
+
+The 189-slot portrait gap did not move, for the fourth time today. The blocker is not the
+routine's effort: `cgi/viewcontent.cgi` and `do/search` are the only route into the Talisman pages
+and pre-2011 Herald scans where most of the 157 live, and both are closed. The routine has now
+swept wkuherald's media API across every cited article and found nothing further. Until the
+digitalcommons routes reopen there is little for this routine to do but confirm that, and it should
+be allowed to say so briefly rather than re-run exhausted searches.
