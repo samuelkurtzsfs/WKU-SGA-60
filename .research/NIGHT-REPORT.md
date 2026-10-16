@@ -1,3 +1,78 @@
+# 16 October 2026 (editor, scheduled, third review) — #799 merged after a portrait the pass had on screen and read as absent
+
+## What was open
+
+One pull request, #799 `research-photos`, "Research: photographs (rolling)". `gh pr list` answered
+403 naming GraphQL as it always does; `gh api` and `git push` both worked, so this was a full-mode
+pass. `SGA60_SITE` and `SGA60_RESEARCH_TOKEN` are still unset, so route two remains unavailable and
+route one was again the only way to land anything.
+
+The brief still names #6, #7 and #8 as stale since 4 August. They have been closed unmerged since
+18 August. A sweep of every remote branch found nothing stranded: all six decade branches are clean
+against main, and the recent editor branches are superseded, the newest of them byte-identical to
+main's `years.json`.
+
+## #799, merged
+
+The diff was one file, a research note, and no change to `data/` at all. Nothing in it could reach
+the board, so the risk was a misleading note steering the next pass rather than a wrong fact on the
+site.
+
+Fifteen claims were opened against their sources and fourteen held exactly: the 189/159/157
+portrait gap, all four priority-1 portraits, zero leaders and zero years without a photograph, the
+count of prior notes, the Spiess portrait's reason for staying unattached, the merge-conflict
+resolution, and Carter Smith and Tyreesha Morris as 2025-26 senate officers. The six network
+claims were retested one request at a time and all reproduced: `viewcontent.cgi` and `do/search`
+403, item landing pages 200, Wayback 302, the archive.org metadata API open, and wkuherald's
+intermittent limit clearing after a wait.
+
+The fifteenth did not hold, and finding it was worth the pass. The note set out to find a captioned
+photograph of Tyreesha Morris or Carter Smith, read the Herald's report of 29 September, and
+concluded there was no usable image. The picture was on the page it had already loaded. The story
+body does carry only the one photograph of a guest dean, which is what the note says. But below the
+body a related-story card republishes the lead photograph of the 22 September meeting report with
+its whole caption in the `alt` attribute, naming Carter Smith sworn in as a sophomore senator in
+the SGA Chambers. The file is a real JPEG at 1200x800 and holds one person with his right hand
+raised, so the subject is not in doubt. He is one of the 189 open slots and one of the two names
+the pass was hunting.
+
+The owning article is cited three times in 2026-27 already, and its own page does not render that
+caption statically. So this is a route rather than a lucky hit: a related-story card republishes
+another article's lead photograph with its full caption in `alt`, reaching captions the owning
+article hides behind `data-photo-ids`. It has not been used against this gap.
+
+The portrait was not attached here. `photos.json` belongs to the photograph routine and the rules
+keep it there so the agents do not collide. The note now carries the file, the caption, both
+article URLs and the method, so the next pass lands it in one step.
+
+## What was cut
+
+The note's closing advice, which told the next pass to prefer re-testing a closed digitalcommons
+route over searching wkuherald, was wrong in the direction that buries the find and is withdrawn;
+the heading claiming the gap was fully mined went with it. A caption quoted to exactly fifteen
+words was trimmed to nine — the rule allows under fifteen, and `check_data.py` enforces it on the
+data but does not scan `.research/`, so nothing caught it. And the Skinner-Fine entry named a
+living person's present employer while correctly refusing the headshot found there; the refusal is
+worth recording, her current employment is not connected to her SGA service, and it is now stated
+as the reason alone.
+
+## Checks
+
+`build.py` clean, `check_data.py` 0, `check_contrib.py` 0, re-run after the cuts and again before
+the merge, with the repository's `build` check green on the merged head. 61 years, 1964 events, 60
+presidents, 1111 pieces of legislation, 2651 recorded terms held by 1809 people, 1318 quoted spans
+none reaching fifteen words.
+
+`check_duplicates.py` returns 1 whenever pairs exist to judge, identically on main, so it is a
+prompt and not a failure. All five were judged and none merged: the 1997-98 designated-driver pair
+is a bill in November and distribution in February, three months and two sources apart; the
+1991-92, 1971-72 and 2003-04 pairs are each a measure and its later outcome; and the three 2026-27
+entries sharing the 22 September meeting report carry different business.
+
+No events, officers or people were added, so most of the traps have no surface here. Nothing
+touches the settled facts and there was no contributor edit in the diff. The note's own refusal of
+hits that merely share part of Amarah Reed's name is the surname trap correctly avoided.
+
 # 12 October 2026 (editor, scheduled, midday) — an empty queue, the 1976-77 Talisman concert slice read end to end at source, and one planned laundry improvement withdrawn as accomplished fact
 
 ## What was open
