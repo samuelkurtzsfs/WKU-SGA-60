@@ -48736,3 +48736,147 @@ honest reading is that this pass earned its run. Not by merging — the merge wa
 for four days. The next photograph run should spend itself on the Wayback playback path and the old
 SGA officer pages rather than re-testing what is already known closed, and the two filing
 conventions are still the two decisions worth more than any amount of further sweeping.
+
+# 16 October 2026 (editor, scheduled, second pass) — a Wayback capture dated twenty-one months wrong, and the president it would have displaced
+
+## What was open
+
+Nothing. `gh api repos/.../pulls?state=open` returned an empty list; #795 and #796 merged at 03:28
+and 03:33, and this pass ran at 06:19. `gh pr list` answered 403 naming GraphQL as it does every
+pass, `gh api` and `git push --dry-run` both worked, so this was a full-mode pass. `SGA60_SITE` and
+`SGA60_RESEARCH_TOKEN` are still unset, so route two was again unavailable and route one was the
+only way to land anything.
+
+Checked before accepting the empty queue: #6, #7 and #8, which this routine's brief still names as
+open and stale since 4 August, are closed and have been since 18 August. And no `research-*` branch
+holds unlanded work — `research-photos` is the only one with a real merge base, and its sole content
+difference from main is a `NIGHT-REPORT.md` that is 96 lines behind. Nothing is stranded.
+
+## The defect, which was in the note this routine wrote three hours earlier
+
+The 03:22 pass corrected the photograph routine's finding that `web.archive.org` was closed. That
+correction was right about the route and wrong about what it found there. It recorded
+`/sga/executive/` as part of the **12 January 2011** capture of SGA's website, called its roster
+"the 2010-11 executive roster", and named Cory Dodds as Student Body President & Student Regent.
+
+It is a **21 October 2012** capture and the roster is **2012-13**. Re-run from this container: the
+root `/sga/` page is a genuine 12 January 2011 capture (`/web/20110112033042/`), but following its
+own link to `/sga/executive/` lands on `/web/20121021145546/`, twenty-one months later. The page
+says so in four places — "FY 2012-2013 Budget", "Fall 2012 Registration Guide", "Spring 2013
+Registration Guide", "Western Kentucky University © 2013" — and its roster is Dodds, Keyana Boka,
+Cain Alvey, Travis Taylor and Brittany Crowley, who are this archive's 2012-13 executive to the
+office.
+
+2010-11 is Colton Jessie. Dodds was that year's Director of Information Technology, was elected
+president on 30 March 2012, and served 2012-13, exactly as `years.json` files him. **The archive was
+right and this routine's own note was wrong**, which is the useful part: the error was in the
+research layer, pointed at the next four runs, and would have arrived on the site as SGA's own
+website contradicting a correctly sourced president. Acted on as written it would have put an
+April-elected officer a year and a half early — the April-election trap arriving by a road the
+checklist does not watch.
+
+## The cause, and the rule now in the note
+
+**The Wayback playback path serves the nearest capture it holds, and the date you ask for is not the
+date you get.** Requests for 2009, 2011 and 2012 against `/sga/executive/` all return the same
+October 2012 page. Only 2013 (`/web/20131022060106/`) and 2015 (`/web/20151105172940/`) return
+distinct captures. The note now carries the rule: read the timestamp back out of the final URL after
+redirects, and confirm it against the page's own internal evidence — the footer year, the "Last
+Modified" line, the registration-guide and budget links. A requested timestamp is not a citation.
+
+This is worth more than the one correction. Three reports running have pointed the next runs at this
+route for the officer rosters the Spiess entry and the 189-slot gap have been waiting on. Pointed at
+it with the date silently floating by up to three years, that route manufactures wrong years faster
+than any run can check them.
+
+## What was verified — thirteen claims, all held
+
+Read against the captures in the course of correcting the note, and all of it corroboration rather
+than correction:
+
+- **2012-13, six of seven executive offices** from the 21 October 2012 capture: Dodds as President &
+  Student Regent, Boka as Executive Vice President, Alvey as Administrative Vice President, Taylor
+  as Chief of Staff, Crowley as Director of Academic and Student Affairs, and Sarah Hazelip as
+  Director of Information Technology, which the archive already cites to this same capture and cites
+  correctly. Only Drew Mitchell as Director of Public Relations is absent from the page, and he is
+  separately sourced to the *Herald* of 7 December 2012, later than the capture.
+- **2013-14, all seven** from the 22 October 2013 capture ("Last Modified 9/3/13"): Keyana Boka,
+  Mark Reeves, Nikki Seay, Brad Cockrel, Hannah Garland, Sarah Hazelip, Laura Harper.
+
+So the route is sound for executive rosters, and it is SGA's own account of itself during the term
+rather than a later list. It carries no officer photographs — the only image on these pages is the
+university logo — so it does not move the portrait gap by itself, and that is not a reason to leave
+it alone.
+
+## The systemic check the defect called for, and it came back clean
+
+Because the fault is a mis-dated capture, every Wayback citation in `years.json` was checked offline,
+the date in the label against the timestamp in the URL: **167 distinct citations, 162 matching
+exactly.** The five that differ are all one legitimate pattern — the label gives the *document's*
+publication date and the URL the capture date, as in "WKU news release, 14 Apr 2000 (archived)"
+captured on 2 September 2000. **The fault never reached `years.json`. It existed only in the research
+note.** The 14 April 2000 release was opened to confirm that reading, and the April-election filing
+with it: it sits in 2000-01 and its body says "SGA president for 2000-2001", which is the right way
+round.
+
+## What was cut, and the one data change
+
+Nothing was cut. No published claim failed and nothing was deleted.
+
+One data change, six lines. The 22 October 2013 capture bears on the `Keyanna` / `Keyana` Boka
+spelling that CLAUDE.md records as still unverified and that her own entry's note asks someone to
+"confirm which is correct". SGA's own site, last modified during her term, spells it **Keyana** and
+names her Student Body President & Student Regent. That is now two sources contemporaneous with the
+term reading Keyana — this and the WKU Archives regents index — against the plaque's KEYANNA, and
+CLAUDE.md is explicit that the plaque is a claim to verify rather than a fact to copy and that a
+contemporaneous source beats a later list every time.
+
+**The spelling is left exactly as it stands.** The rule is to flag and not fix, and renaming a
+president is not a pass's call. The evidence is recorded in her note with the capture added as a
+source. It is the one thing here a decision would move, and it is now a decision with evidence under
+it rather than an open question.
+
+## The traps, against this diff
+
+No committee chair recorded as an officer, no bill's author as a member. Nobody matched by surname
+alone. No changed surname duplicated: `Nicki Seay` → `Nicki Taylor` is in `name-aliases.json`, and
+the capture's "Nikki Seay" is flagged here rather than merged or fixed. The April-election filings
+checked above are correct. Nothing touches a settled fact — the Dodds correction defends one. The
+living people on these pages have their personal mobile numbers and university email addresses
+printed beside their names; none of it is in this diff, in `years.json` or on the site, and the
+note's caution to leave it on the page is kept and restated. No `Contributed-By` trailer in the diff.
+
+## The routes, retested
+
+- `web.archive.org` playback: open, and then **HTTP 503 "services are temporarily offline" at 06:33
+  UTC**, eight minutes after serving these captures cleanly. The route is open; the service is
+  intermittent. That cuts both ways against the 03:22 correction's framing — one failed request is
+  not grounds for recording a host closed, and one success is not grounds for promising the next run
+  it will be up. Retry, and read the status line.
+- `digitalcommons.wku.edu/cgi/viewcontent.cgi`: not retested this pass; recorded 403 at 03:22 and
+  nothing here depended on it.
+
+## Counts after this pass
+
+61 years, **1964 events**, 60 presidents, 2651 recorded terms of office held by 1809 people, 2614 of
+them (98%) carrying an account, 48 people under more than one spelling, 308 documents, 1111 pieces of
+legislation, 4945 search records, 1407 leader portraits and 74 year photographs. 5 photographs
+withdrawn at build as no longer held or barred. `build.py` clean, `check_data.py` exit 0,
+`check_contrib.py` exit 0, `check_duplicates.py` the same four pairs and one same-source pair as the
+baseline, all still genuinely separate business. One figure moves: citations 2741 to 2742, the source
+added to Boka's entry.
+
+## Still open
+
+Everything the two earlier passes of today carried stands: the election-year filing convention and
+the 2013-14 publication-date filing, both waiting on the owner; Xavier Spiess's roster entry; the
+Steve Wilson portrait behind its three-men-of-one-name problem; the unadded 2021 Dahmer remand; the
+Hawkins / Vuleta seat conflict; and `editor-2026-10-07-rally-notice` and
+`editor-2026-10-04-index-drop`, which are not to be merged and were not touched. Added to that list:
+**the Boka spelling, which now has two contemporaneous sources against the plaque and wants a
+decision rather than more searching.**
+
+The cadence question the last three reports closed on is answered for this pass at least. An empty
+queue did not mean an idle run: the thing worth catching was in the research layer, written three
+hours earlier by this same routine, and it was a wrong presidential year waiting for a run diligent
+enough to act on a note it had every reason to trust.
