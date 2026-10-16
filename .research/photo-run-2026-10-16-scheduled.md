@@ -24,7 +24,22 @@ the prior finding forward unverified:
   (`Sec-Fetch-Dest: document`, `Sec-Fetch-Mode: navigate`, `Upgrade-Insecure-Requests: 1`).
   Closed for PDFs. Unchanged.
 - `web.archive.org`: connection reset by peer on the first request (no second attempt needed to
-  confirm — the agent proxy itself reported the tunnel closing mid-exchange). Closed. Unchanged.
+  confirm — the agent proxy itself reported the tunnel closing mid-exchange). Closed.
+  **Editor's correction, 16 October 03:22 UTC: this route is open, and the finding above did not
+  survive re-testing seventy minutes later.** `web.archive.org/web/2010/http://www.wku.edu/sga/`
+  answered 302 and then served the 12 January 2011 capture in full (31,891 bytes), and the
+  `/sga/executive/` page from that capture came back at 25,118 bytes carrying the 2010-11 executive
+  roster as text — Cory Dodds named as Student Body President & Student Regent, the three elected
+  and four appointed offices listed. Only the CDX search API (`/cdx/search/cdx`) timed out; the
+  playback path did not. A single connection reset is a dropped tunnel, not a closed host, and
+  this report read one as the other. Retry the playback path before recording this route closed
+  again.
+  Two cautions for whoever works it. The branch pages are not where a guessed path puts them —
+  `/sga/branches/executive.php` is not archived and Wayback says so plainly, while `/sga/executive/`
+  is; take the links out of the captured HTML rather than constructing them. And these pages print
+  the officers' personal mobile numbers and university email addresses. Those are living people's
+  contact details and no part of them belongs in `years.json`, `photos.json` or the site: take the
+  name and the office, leave the rest on the page.
 - `archive.org` metadata API (not `web.archive.org`): open. Queried fifteen Talisman yearbook
   identifiers for years in the 1990s–2010s that would bear on open officer-portrait gaps
   (`talisman1995west` through `talisman2015west`, selected years); every one came back with an
@@ -95,10 +110,13 @@ None of these eighteen produced a usable portrait. No file was downloaded; no en
 The 189-slot gap is unchanged in count. Xavier Spiess's portrait (identified 15 October, correctly
 withheld because `organization.senate.officers` for 2025-26 has no entry for him) is still waiting
 on whoever next edits `years.json`'s organization data for that year — this agent's rules confine
-it to `photos.json` and it cannot add that entry itself. The routes that would most likely open
-the pre-2011 names in this gap — `cgi/viewcontent.cgi` for Talisman PDFs and `web.archive.org` for
-the old SGA website's officer pages — were closed for this session's entire window, the fourth
-day running. Everyone checked this pass stays open for lack of an individually captioned
+it to `photos.json` and it cannot add that entry itself. Of the two routes that would most likely open
+the pre-2011 names in this gap, `cgi/viewcontent.cgi` for Talisman PDFs was closed for this
+session's entire window, the fourth day running. `web.archive.org` for the old SGA website's
+officer pages was recorded closed here and is not: see the correction above. It is a route for
+names and offices rather than portraits — the 2011 capture carries no officer photographs, only
+the university logo — so it does not shift the 189-slot portrait gap by itself, but it is open,
+and it bears on exactly the organization data the Spiess note above is waiting on. Everyone checked this pass stays open for lack of an individually captioned
 photograph, not for lack of searching.
 
 ## Checks
