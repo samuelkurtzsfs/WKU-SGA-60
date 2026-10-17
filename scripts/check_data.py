@@ -350,6 +350,13 @@ MONTHS = {m: i for i, m in enumerate(
 #   Every issue of Vol. 67 from No. 20 to No. 29 falls on a Tuesday or a
 #   Thursday; 21 Oct 1991 is a Monday and 21 Nov 1991 is a Thursday, sitting
 #   exactly between No. 24 and No. 26. The archivist typed 10 for 11.
+#   The issue dates itself, independently of the numbering: its own article
+#   list carries "Huffs & Puff Aren't Cool Today - Great American Smokeout",
+#   and the Smokeout falls on the third Thursday of November, which in 1991
+#   was 21 November. A paper reporting it as happening "Today" was printed
+#   that day. Checked 17 Oct 2026 against the record's own abstract; the
+#   same abstract carries a final basketball exhibition and an annual
+#   tournament, both late-November business and neither October's.
 # Mapped to the date this archive should carry, not merely skipped: an
 # exception that only suppresses a failure is a blind spot, and would let a
 # later pass quietly file the catalogue's wrong date instead.
